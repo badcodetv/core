@@ -1,0 +1,216 @@
+{
+ "_about": "GPOM opening recut storyboard, 17 Oct 2026, from Kai's picks (opening-recut-picks.md). Build: python3 scripts/gpom/build-opening-storyboard.py",
+ "acts": [
+  {
+   "id": "news",
+   "title": "The news: workers out",
+   "beats": "0:10-0:23"
+  },
+  {
+   "id": "money",
+   "title": "The money",
+   "beats": "0:23-0:46"
+  },
+  {
+   "id": "push",
+   "title": "The push",
+   "beats": "0:46-1:02"
+  },
+  {
+   "id": "drop",
+   "title": "The drop",
+   "beats": "1:02-1:14"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "news",
+   "beat": "news",
+   "title": "The swap, from above",
+   "look": "news",
+   "line": "two hundred thousand office workers were made redundant today",
+   "stills": [
+    "ST4-c"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "news",
+   "beat": "news",
+   "title": "Rain and server cabinets (kept)",
+   "look": "kept",
+   "line": "",
+   "stills": [
+    "KEEP-rain"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "news",
+   "beat": "news",
+   "title": "One desk, one box",
+   "look": "news",
+   "line": "",
+   "stills": [
+    "DB1-b"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "money",
+   "beat": "money",
+   "title": "The email that wrote itself",
+   "look": "news",
+   "line": "the chief executive called it the hardest email he has ever asked an AI to write",
+   "stills": [
+    "TO2"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "money",
+   "beat": "money",
+   "title": "The headcount toast",
+   "look": "news",
+   "line": "",
+   "stills": [
+    "TO1T-a",
+    "TO1T-b"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "money",
+   "beat": "money",
+   "title": "The trillion",
+   "look": "news",
+   "line": "the treasury has printed another trillion to keep the markets calm",
+   "stills": [
+    "MK3P-a",
+    "MK3P-b",
+    "MK3P-c"
+   ],
+   "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "money",
+   "beat": "money",
+   "title": "The price of bread",
+   "look": "news",
+   "line": "the price of bread is up nine percent",
+   "stills": [
+    "BR1"
+   ],
+   "anim": 7
+  },
+  {
+   "n": 8,
+   "act": "money",
+   "beat": "money",
+   "title": "Shares in bread",
+   "look": "news",
+   "line": "the price of shares in bread is up ninety",
+   "stills": [
+    "MK5-b"
+   ],
+   "anim": 8
+  },
+  {
+   "n": 9,
+   "act": "money",
+   "beat": "money",
+   "title": "Laughing traders (kept)",
+   "look": "kept",
+   "line": "",
+   "stills": [
+    "KEEP-laughing"
+   ],
+   "anim": 9
+  },
+  {
+   "n": 10,
+   "act": "push",
+   "beat": "push",
+   "title": "After the push: the ownership text",
+   "look": "text",
+   "line": "developers ain't fixing shit, the compiler is stuck on sixteen bit",
+   "stills": [
+    "TX1",
+    "TX2",
+    "TX3",
+    "TX4a",
+    "TX4b"
+   ],
+   "anim": 10
+  },
+  {
+   "n": 11,
+   "act": "drop",
+   "beat": "drop",
+   "title": "Inside the well",
+   "look": "opera",
+   "line": "git push origin master, this code is a fucking disaster",
+   "stills": [
+    "WL1-b"
+   ],
+   "anim": 11
+  },
+  {
+   "n": 12,
+   "act": "drop",
+   "beat": "drop",
+   "title": "The face in the well (optional)",
+   "look": "opera",
+   "line": "",
+   "stills": [
+    "WL3-a",
+    "WL3-b"
+   ],
+   "anim": 12
+  },
+  {
+   "n": 13,
+   "act": "drop",
+   "beat": "drop",
+   "title": "Out of the well: the army and the ship",
+   "look": "opera",
+   "line": "",
+   "stills": [
+    "WL2-b"
+   ],
+   "anim": 13
+  },
+  {
+   "n": 14,
+   "act": "drop",
+   "beat": "drop",
+   "title": "The eye on the mountain",
+   "look": "eye",
+   "line": "developers ain't fixing shit, the compiler is stuck on sixteen bit",
+   "stills": [
+    "EY1-b"
+   ],
+   "anim": 14
+  },
+  {
+   "n": 15,
+   "act": "drop",
+   "beat": "drop",
+   "title": "The eye, zoomed out",
+   "look": "eye",
+   "line": "",
+   "stills": [
+    "EY4-a",
+    "EY4-c"
+   ],
+   "anim": 15
+  }
+ ]
+}

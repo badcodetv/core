@@ -1,0 +1,828 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Every shot is built in layers. Veo animates the world with the camera locked; Premiere does every camera move, cut and grade; ffmpeg draws every piece of on-screen text, the ownership lines, the email, the prices and the travelling red dot that must hit a word.",
+   "why": "Locking Veo's camera stops it redrawing things; Premiere's moves are rigid and exact; Premiere's API cannot write text. 'Veo' means Flow's video model, Omni Flash by Jack's standing ruling. Never pin an end frame; chain last frame into first frame when a beat needs more than one clip.",
+   "source": "docs/video-fx/hybrid-method.md §1-§2, §4, §5; docs/flow/video-prompting.md (Omni Flash ruling 2026-08-25)"
+  },
+  {
+   "rule": "The bulletins stay real; the drop goes operatic. Frames 1-9 are grounded news realism (rain, offices, a shop) with small, sure motion. At 1:02 the register breaks to the choir and the eye, with big world motion: light blasting, haze, dust.",
+   "why": "Kai's War of the Worlds brief: story, then opera. The contrast is the drop. Kai asked for dramatic animation, not vague twinkle.",
+   "source": "Kai 17 Oct; memory: dramatic-video-animation (Kai, 2026-09-13)"
+  },
+  {
+   "rule": "Design out what Omni cannot do before spending a credit: no more than three people moving in a shot, no two people moving one load, no 'reach a state' moments, no small readable text, no camera travel past rows of identical things (the robot tiers, the army). Count 1 per roll.",
+   "why": "Every clip called slop on The Bank Robbery asked for one of these. Two takes on a locked plate come back nearly identical.",
+   "source": "docs/google-flow/README.md (what Omni cannot do); memory: flow-video-count-one"
+  },
+  {
+   "rule": "Run the photosensitivity check on every flash: the floodlight pulses, the iris swell and the red dot chase.",
+   "why": "Beat-synced flashing is the one thing here that can fail delivery.",
+   "source": "docs/video-fx/delivery.md"
+  },
+  {
+   "rule": "Seconds are estimates from the current gpom-s01 slots. The music is fixed, so the cut points follow the song: the drop lands at 1:02:13.",
+   "why": "This is a music video, unlike the narrated back half: picture fits the track.",
+   "source": "gpom-s01 timeline, 17 Oct"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Show the swap at scale: people out, machines in, in one wide.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked overhead, rain and drift",
+     "idea": "Camera locked straight down. The rain does the work: umbrellas drift apart slowly, one cabinet trolley rolls across the gap, rain streaks and puddles ripple.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Rain falls hard, puddles ripple, umbrellas sway and drift a little, one trolley of cabinets rolls slowly toward the doors."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "None, or a 5% eased push over 3s."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grain to match the kept rain shot."
+      }
+     ],
+     "veo_prompt": "Top-down view, the camera does not move. Heavy rain falls across the wet plaza, puddles ripple. The umbrellas sway and drift slowly. One trolley carrying a black server cabinet rolls slowly toward the doors. The camera does not move.",
+     "cut": "In: hard cut from the London screen. Out: cut on the trolley reaching the doors, into the kept rain shot.",
+     "seconds": "3",
+     "risk": "Many small figures: Omni struggles past three walkers. Keep the people mostly standing and give the motion to the rain and one trolley.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2; docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "b",
+     "label": "Slow drone rise",
+     "idea": "Veo raises the camera straight up a little, away from the plaza, so the crowd shrinks: the city swallowing them.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A straight vertical rise, no turn."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Trim to the clean seconds."
+      }
+     ],
+     "veo_prompt": "The camera rises slowly straight up, looking down on the rainy plaza. Rain falls, umbrellas sway. Every building keeps its exact shape.",
+     "cut": "In: hard cut. Out: cut while rising, into the kept rain shot.",
+     "seconds": "3",
+     "risk": "Rising past repeated windows and umbrellas can make Veo redraw them; check at 4 fps.",
+     "source": "docs/flow/physics-and-motion.md §7"
+    },
+    {
+     "id": "c",
+     "label": "Held still with rain layer",
+     "idea": "No Veo. Hold the still, add a falling-rain overlay and grain in ffmpeg.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Held plate, light shake."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Rain overlay, grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: hard cut.",
+     "seconds": "2",
+     "risk": "Reads as a photograph past 2s.",
+     "source": "docs/cinematography/stills.md §4"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Rain and one rolling trolley are cheap, sure motion; the crowd stays still where Omni is weak."
+   }
+  },
+  {
+   "n": 2,
+   "job": "The shot the new ones are measured against.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Keep as it is",
+     "idea": "Already a clip on the timeline (e03-pass, 0:20). Nothing to make.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Stays where it is."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "Unchanged.",
+     "seconds": "3",
+     "risk": "None.",
+     "source": "Kai's vote: keep"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Kai keeps it; it is the reference the other street shots match."
+   }
+  },
+  {
+   "n": 3,
+   "job": "Make the swap personal: one person out, one machine in.",
+   "options": [
+    {
+     "id": "a",
+     "label": "She walks, the cabinet is already in",
+     "idea": "She walks toward camera with her box; the cabinet behind her is already in place with its lights blinking. One walker, nothing else moves except lights and rain.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The woman walks slowly toward camera carrying her box; blue lights blink on the cabinets; rain runs down the windows."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "None."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grade to match."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The woman walks slowly toward the camera carrying her cardboard box. Behind her the black server cabinets blink with small blue lights. Rain runs down the windows. The technicians stand still.",
+     "cut": "In: hard cut from the kept rain shot. Out: cut as she nears camera, into the email.",
+     "seconds": "3",
+     "risk": "Two technicians pushing one cabinet is 'two people, one load' — keep them still, or the cabinet morphs.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "b",
+     "label": "Push in on the empty chair",
+     "idea": "No walking. Lock on the room, a slow Premiere push toward her empty chair against the cabinet as the blue lights blink.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Blinking lights, rain on glass, the woman a still shape in the background."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Eased 10% push toward the chair."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Blue lights blink on the black server cabinets. Rain runs down the windows. Nobody moves.",
+     "cut": "In: hard cut. Out: cut on arrival at the chair.",
+     "seconds": "3",
+     "risk": "Safest; loses her walking out, which is the story.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2"
+    },
+    {
+     "id": "c",
+     "label": "Two-shot chain",
+     "idea": "Clip 1: she walks. Clip 2 chained from its last frame: the technicians slide the cabinet the last foot into her space.",
+     "lanes": [
+      {
+       "lane": "Veo locked x2",
+       "does": "Chain last frame to first frame."
+      }
+     ],
+     "veo_prompt": "Clip 2: The camera does not move. The two technicians give the black cabinet one last push into place beside the empty chair.",
+     "cut": "In: hard cut. Out: the cabinet settles.",
+     "seconds": "2+2",
+     "risk": "Clip 2 asks Omni to 'reach a state' (the cabinet arriving); likely to fail.",
+     "source": "docs/video-fx/hybrid-method.md §4; docs/google-flow/README.md (what Omni cannot do)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "One walker and the swap already shown in frame: the story with no impossible motion."
+   }
+  },
+  {
+   "n": 4,
+   "job": "The decision is one keypress and a bottle already on ice.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Cursor and condensation",
+     "idea": "Almost still: the cursor blinks, he presses one key, the champagne bucket drips. Text on the screen is added in ffmpeg.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "He lifts one finger and taps a key; condensation runs down the bottle; rain on the window."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Readable email text on the laptop: subject 'Restructuring', AI panel 'Draft complete'."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow 8% push toward the screen."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The man taps one key on the laptop. Condensation runs down the champagne bottle in the ice bucket. Rain runs down the window. Everything else is still.",
+     "cut": "In: hard cut from the desk. Out: cut on the keypress, into the toast.",
+     "seconds": "3",
+     "risk": "Small readable text: never ask Veo for it; draw it in ffmpeg.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "b",
+     "label": "His reflection",
+     "idea": "Lock on the window: his faint reflection, rain running, the city lights flickering. The keypress is heard, not seen.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Rain runs, lights flicker."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Rain runs down the window over the city lights. The man's faint reflection stays still.",
+     "cut": "In: hard cut. Out: hard cut.",
+     "seconds": "2",
+     "risk": "Less clear what he's doing without the screen.",
+     "source": "docs/cinematography/motion-and-cutting.md"
+    },
+    {
+     "id": "c",
+     "label": "Held still",
+     "idea": "Hold the plate with a slow push; ffmpeg types the email live on the screen.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Held plate."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Push to the screen."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Typed-out text."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: hard cut.",
+     "seconds": "3",
+     "risk": "Can read as a photo; the typing text carries it.",
+     "source": "docs/cinematography/stills.md §4"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The keypress is the decision; ffmpeg makes the email readable."
+   }
+  },
+  {
+   "n": 5,
+   "job": "Who won: the toast, paid for by the last two shots.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Glasses up, graph climbs",
+     "idea": "They lift their glasses together; the graph line on the screen keeps climbing (drawn in ffmpeg so the numbers stay clean).",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The executives raise their glasses and clink; bubbles rise."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Replace the screen: the line draws upward, HEADCOUNT -200,000 stays sharp."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The executives raise their champagne glasses together and clink them. Bubbles rise in the glasses. The screen behind them stays the same.",
+     "cut": "In: hard cut from the keypress. Out: cut on the clink, hard cut to the banknote hall.",
+     "seconds": "2.5",
+     "risk": "Nine people moving is over Omni's limit of three. Fallback: only the front two raise glasses, the rest hold still.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "b",
+     "label": "Only the front pair move",
+     "idea": "Cast the motion to the two nearest people: they clink; everyone else is a held pose.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Front two clink; the others stay still."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The two executives nearest the camera clink their glasses. Everyone else stays still.",
+     "cut": "In: hard cut. Out: on the clink.",
+     "seconds": "2",
+     "risk": "Safe; less celebratory.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "c",
+     "label": "Push to the screen",
+     "idea": "Locked people, slow push past them to the HEADCOUNT screen.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "10% push to the screen."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Graph line draws upward."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: hard cut.",
+     "seconds": "2.5",
+     "risk": "Pushing past rows of people is fine in Premiere (it's rigid).",
+     "source": "docs/video-fx/hybrid-method.md §1-§2"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "Two movers is the safe count; the drawn graph gives the rest of the frame life."
+   }
+  },
+  {
+   "n": 6,
+   "job": "Money appears from nowhere, at speed.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Sheets race past",
+     "idea": "The conveyor runs fast; sheets of notes stream past; the official stays still on the gantry.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Fast conveyor, sheets flutter."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "None — the conveyor is the motion."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The conveyor races and sheets of new banknotes stream past at high speed. The official on the gantry stands still.",
+     "cut": "In: hard cut from the toast. Out: hard cut to the bread.",
+     "seconds": "2",
+     "risk": "Repeated sheets can smear; at speed that reads as motion blur, which is fine.",
+     "source": "memory: dramatic-video-animation (Kai, 2026-09-13)"
+    },
+    {
+     "id": "b",
+     "label": "Speed ramp",
+     "idea": "Generate at normal speed, then speed it up 2-3x in Premiere so it rushes.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "As (a)."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Speed ramp."
+      }
+     ],
+     "veo_prompt": "(as a)",
+     "cut": "In: hard cut. Out: hard cut.",
+     "seconds": "1.5",
+     "risk": "None new.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Dramatic world motion with a locked camera: exactly what Veo does well."
+   }
+  },
+  {
+   "n": 7,
+   "job": "One loaf, one mother: the cost of the money.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Card reader, then her face",
+     "idea": "Locked. She holds the loaf, looks at the reader; the toddler stirs. The price is drawn in ffmpeg.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "She looks down at the reader and back; the toddler shifts in sleep; rain on the window."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "The reader's screen: price, then DECLINED."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The tired woman holds the loaf and looks down at the card reader, then up. Her toddler stirs in the pushchair. Rain runs down the window behind.",
+     "cut": "In: hard cut from the banknotes. Out: hard cut to the trader.",
+     "seconds": "3",
+     "risk": "Small readable text: draw the price in ffmpeg.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "b",
+     "label": "Slow push to her face",
+     "idea": "As (a) but Premiere pushes in slowly on her face.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Eased 10% push."
+      }
+     ],
+     "veo_prompt": "(as a)",
+     "cut": "In: hard cut. Out: on her look up.",
+     "seconds": "3",
+     "risk": "None new.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "The push lands on her face, the emotional cost of the trillion just shown."
+   }
+  },
+  {
+   "n": 8,
+   "job": "Same bread, other side of the counter.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The chart climbs",
+     "idea": "He talks on the phone; the chart on the screen keeps climbing (redrawn in ffmpeg so the numbers stay sharp).",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "He talks into the phone, nods."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Replace the chart window: the line climbs, BREAD +90%."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The trader talks into the phone and nods. The screens flicker with prices.",
+     "cut": "In: hard cut from the mother. Out: hard cut to the laughing traders (kept).",
+     "seconds": "2.5",
+     "risk": "Speech: one speaker, no words needed.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The cut from her loaf to his chart is the joke; ffmpeg makes '+90%' readable."
+   }
+  },
+  {
+   "n": 9,
+   "job": "The laugh before the push.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Keep as it is",
+     "idea": "Already a clip (04-trading-floor, 0:36). The zoom into the tower (0:40) also stays.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Stays."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "Unchanged.",
+     "seconds": "3.7",
+     "risk": "None.",
+     "source": "Kai's vote: keep"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Kai keeps it."
+   }
+  },
+  {
+   "n": 10,
+   "job": "The push hands the keys to a new master. Two lines, no more.",
+   "options": [
+    {
+     "id": "a",
+     "label": "On the old monitor",
+     "idea": "The two lines type out under the command on the CRT in green, letter by letter, then the cut to servers and LED.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Type-on text tracked to the CRT screen, scan lines and glow."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Keep the existing terminal, servers and LED clips."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: Enter pressed. Out: hard cut to servers on 'developers'.",
+     "seconds": "2 + kept clips",
+     "risk": "The CRT shot zooms in; text must be composited before the Premiere move, or tracked.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2 §5"
+    },
+    {
+     "id": "b",
+     "label": "Over the servers and the LED",
+     "idea": "ACQUIRING RESOURCE LOCK types over the server hall; NEW OWNERSHIP TRANSFERRED arrives over the LED, on the beat of 'sixteen bit'.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Two text layers, one per clip, timed to the words."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Existing clips stay."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut from the terminal. Out: the drop.",
+     "seconds": "2.7 + 2.9",
+     "risk": "None: pure ffmpeg.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2 §5"
+    },
+    {
+     "id": "c",
+     "label": "Progress bar then red",
+     "idea": "Option (b) with a filling progress bar on the servers and the red line on the LED.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Bar fills to the beat; red text lands on the last word."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In/out as (b).",
+     "seconds": "2.7 + 2.9",
+     "risk": "A progress bar can read as a UI gag; Kai's 'subtle' note argues against.",
+     "source": "Kai's note: subtle"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "Kai asked for the text over those two video shots; (a) is the subtler fallback."
+   }
+  },
+  {
+   "n": 11,
+   "job": "The choir in its well, struck by the light: the operatic moment begins.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The light hits, they lift",
+     "idea": "The drop lands as the ship's floodlight blasts down the shaft; vapour rolls; the hooded singers tilt their heads back together.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Light pulses down the shaft, haze rolls, heads tilt up in unison."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "None — the next shot is the move."
+      }
+     ],
+     "veo_prompt": "The camera does not move. A blinding white floodlight blasts down the shaft from the ship above. Haze rolls through the beam. The hooded robots on every tier slowly tilt their heads back toward the light.",
+     "cut": "In: hard cut on the drop. Out: chain into #13's rise.",
+     "seconds": "3",
+     "risk": "Thousands of figures moving: keep it to one slow shared head tilt; it may still smear. Mouths singing is not promised; the music carries the singing.",
+     "source": "docs/google-flow/README.md (what Omni cannot do); memory: dramatic-video-animation (Kai, 2026-09-13)"
+    },
+    {
+     "id": "b",
+     "label": "Veo rises up the shaft",
+     "idea": "Veo moves the camera straight up the well toward the ship, the tiers sliding past.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "Straight vertical rise."
+      }
+     ],
+     "veo_prompt": "The camera rises slowly straight up the shaft toward the ship and its light. The hooded robots stand still on every tier.",
+     "cut": "In: hard cut on the drop. Out: becomes #13.",
+     "seconds": "4",
+     "risk": "Rising past repeated tiers of identical robots is exactly what makes Veo redraw them.",
+     "source": "docs/flow/physics-and-motion.md §7"
+    },
+    {
+     "id": "c",
+     "label": "Light strobes on the beat",
+     "idea": "Locked plate; the floodlight flashes on each beat of the chant, done as a brightness pulse in ffmpeg.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Haze only."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Brightness pulses on the beats."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Haze drifts slowly through the white light. Nothing else moves.",
+     "cut": "In/out as (a).",
+     "seconds": "3",
+     "risk": "Run the photosensitivity check on any flashing.",
+     "source": "docs/video-fx/delivery.md"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Big world motion with a locked camera; the beat-synced flashes from (c) can be layered on top."
+   }
+  },
+  {
+   "n": 12,
+   "job": "A face for the choir. Kai has not voted on it yet.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Eyes flare on the beat",
+     "idea": "Close-up; the red eyes brighten and the jaw opens on the word 'master'.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Jaw opens, eyes flare, vapour."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Cut to land on 'master'."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The hooded robot's jaw opens wide as if singing a long note, its red eyes brighten. Haze drifts past.",
+     "cut": "In: hard cut from #11. Out: hard cut to #13.",
+     "seconds": "1.5",
+     "risk": "One singer is fine; the jaw may not hold a shape.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "b",
+     "label": "Skip it",
+     "idea": "Go straight from #11 to #13.",
+     "lanes": [],
+     "veo_prompt": "",
+     "cut": "—",
+     "seconds": "0",
+     "risk": "None.",
+     "source": "Kai: no vote yet"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "A face between two wides gives the scale a person to read; drop it if the rise works alone."
+   }
+  },
+  {
+   "n": 13,
+   "job": "The reveal: the choir is an army, and the ship is shining down on it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Premiere rise and tilt",
+     "idea": "Locked Veo clip of the world (beams sweep, haze, ship lights pulse); Premiere does a slow eased push-in and tilt-down to feel like we've risen out.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Floodlights sweep, haze billows from the well, ship lights pulse."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Eased push and slight tilt, 4s."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The ship's floodlights pour down into the well and sweep slowly. Haze billows up out of the shaft. The lights under the ship pulse. The army stands still.",
+     "cut": "In: chain from #11 (or hard cut from #12). Out: hard cut to the eye on 'developers'.",
+     "seconds": "4",
+     "risk": "None new: the army stands, which Omni does well.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2"
+    },
+    {
+     "id": "b",
+     "label": "Veo pulls up and back",
+     "idea": "Veo itself pulls the camera up and back from the well to reveal the army.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "Pull back and up, no turn."
+      }
+     ],
+     "veo_prompt": "The camera pulls slowly up and back from the glowing well, revealing the army standing round it and the ship above. Every robot keeps its place.",
+     "cut": "In: chain from #11. Out: hard cut.",
+     "seconds": "4",
+     "risk": "Repeated robots + camera travel = redraw risk; check at 4 fps.",
+     "source": "docs/flow/physics-and-motion.md §7"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Kai's 'start inside the well, emerge' move, with Premiere doing the camera so the army stays put."
+   }
+  },
+  {
+   "n": 14,
+   "job": "The machine we pushed to: a Sauron eye, speaking.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The dot travels round the ring",
+     "idea": "Veo animates the world (dust rolling, beam sweeping) with the camera locked; ffmpeg lights the red rim dots one after another, one per syllable, so a dot travels round the ring.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Dust rolls round the base; the beam sweeps slowly; clouds move."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Glow points on each rim light, lit in sequence to the vocal; composited before any camera move."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow 8% push toward the eye."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Dust rolls round the base of the ring. The white light at its centre flares and its beam sweeps slowly across the mountains. Clouds drift. The red lights on the rim stay steady.",
+     "cut": "In: hard cut on 'developers'. Out: cut to the scale shot on 'sixteen bit'.",
+     "seconds": "3.5",
+     "risk": "Veo will not time lights to a vocal, so the dot chase is post work. Put it on before the push so it moves with the picture.",
+     "source": "Kai's note 17 Oct (the travelling dot); docs/video-fx/hybrid-method.md §1-§2 §5"
+    },
+    {
+     "id": "b",
+     "label": "Veo lights the dots",
+     "idea": "Ask Veo to light the rim lights in turn. Cheap to try, unlikely to land on the beat.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Rim lights flicker in sequence."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small red lights around the rim switch on one after another, travelling round the ring. Dust rolls round the base.",
+     "cut": "As (a).",
+     "seconds": "3.5",
+     "risk": "Timing is random; may light several at once.",
+     "source": "docs/google-flow/README.md (what Omni cannot do)"
+    },
+    {
+     "id": "c",
+     "label": "Iris pulse",
+     "idea": "The central light swells on each beat (ffmpeg brightness), as well as the dot chase.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Brightness swell + dot chase."
+      }
+     ],
+     "veo_prompt": "(as a)",
+     "cut": "As (a).",
+     "seconds": "3.5",
+     "risk": "Photosensitivity check.",
+     "source": "docs/video-fx/delivery.md"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Exactly Kai's idea, done in the lane that can hit a word."
+   }
+  },
+  {
+   "n": 15,
+   "job": "The same eye, zoomed out: how big it is, and that nobody is left under it. Same mountain, same sunset as #14 (Kai, 17 Oct).",
+   "options": [
+    {
+     "id": "a",
+     "label": "Beam sweeps the empty ranges",
+     "idea": "Locked wide: the beam sweeps slowly across the empty mountain ranges; dust rolls off the summit; the same dot chase continues from #14. No town: the humans have gone.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Beam sweeps over the empty ranges; dust rolls off the summit."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Dot chase continues from #14."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The white beam from the ring sweeps slowly across the empty mountain ranges. Dust rolls off the summit and drifts down the slopes. The sun sinks slowly on the horizon.",
+     "cut": "In: hard cut on 'sixteen bit'. Out: into the next bulletin.",
+     "seconds": "3.5",
+     "risk": "None new: no people, one slow beam.",
+     "source": "memory: dramatic-video-animation (Kai, 2026-09-13)"
+    },
+    {
+     "id": "b",
+     "label": "Slow pull-back",
+     "idea": "Premiere pulls back slowly from the eye to the whole range.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Eased pull-back 10%."
+      }
+     ],
+     "veo_prompt": "(as a)",
+     "cut": "As (a).",
+     "seconds": "3.5",
+     "risk": "Pull-back needs the plate rendered larger than the frame.",
+     "source": "docs/video-fx/hybrid-method.md §1-§2"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The beam searching empty mountains says the humans are gone; the dot chase ties it to #14."
+   }
+  }
+ ]
+}
