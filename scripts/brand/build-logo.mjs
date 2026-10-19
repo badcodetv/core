@@ -10,12 +10,12 @@ const sharp = createRequire(join(root, 'package.json'))('sharp')
 const OUT = join(root, 'docs/brand/logo')
 mkdirSync(OUT, { recursive: true })
 
-// Bench save b0dhojp15efdyw7rboj6, 2026-10-15 14:06 — Kai: "record this as the canonical logo".
-// The name's o is the icon (ring + triangle), the bench's "Ring + red triangle" o — Kai, 2026-10-15: a bare
-// triangle "reads as an A" (badcade), a solid dot is superseded.
+// Bench save 2f6bogo164mzzi4lzz00 ("Saved version 5"), 2026-10-19 14:40 — Kai: "I'm just going to say that's our logo".
+// The ring is 15% (was 8% on save b0dhojp15efdyw7rboj6, 2026-10-15); the name's o is the bench's "Solid red o" —
+// a solid red circle, not a bare triangle (it "reads as an A") and no longer the ring + triangle.
 // The ring-with-dot it replaced is in docs/brand/archive/2026-09-29-dot/ (generator: archive/build-logo-dot.mjs).
 const SET = {
-  ring: 0.08,    // ring line thickness, as a fraction of the ring's radius
+  ring: 0.15,    // ring line thickness, as a fraction of the ring's radius
   tSize: 0.36,   // triangle size: centre to corner, as a fraction of the ring's radius
   tPush: 0.61,   // how far off centre: 0 = centre, 1 = touching the inside of the ring
   tAngle: 55,    // which way it sits: degrees clockwise from 12 o'clock (about 2 o'clock)
@@ -61,8 +61,8 @@ function word(x0, base, r, ink) {
     if (ch === 'd') L.push(ring(cx), stem(cx + r, top, base + w / 2))
     if (ch === 'c') L.push(arc(cx, 42, -42))
     if (ch === 'e') L.push(arc(cx, 38, 0), `<line x1="${f(cx - r)}" y1="${f(cy)}" x2="${f(cx + r + w / 2)}" y2="${f(cy)}"/>`)
-    // the o is the icon itself: the ring drawn at the letters' line weight, the red triangle inside (Kai, 2026-10-15)
-    if (ch === 'o') { const Ro = r + w / 2; o = icon(cx, cy, Ro, ink, 0, 0, w / Ro) }
+    // the o is a solid red circle, the letters' full outer size (Kai, 2026-10-19, bench save 5)
+    if (ch === 'o') o = `<circle cx="${f(cx)}" cy="${f(cy)}" r="${f(r + w / 2)}" fill="${SET.red}"/>`
   })
   const svg = `<g fill="none" stroke="${ink}" stroke-width="${f(w)}">${L.join('')}</g>${o}`
   return { svg, box: [x0, top, x0 + 7 * step - r * SET.tr - k, base + w / 2] }
