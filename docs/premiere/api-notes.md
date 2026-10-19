@@ -6,7 +6,8 @@ what actually happened, and what to do instead.
 
 Ground truth for signatures is the type declarations that ship with the npm package:
 `node_modules/@adobe/premierepro/src/premierepro.d.ts` (4,675 lines, v26.3.0). Read them
-rather than guessing — Adobe's web docs lag the package.
+rather than guessing — Adobe's web docs lag the package. **26.5 and the 27.0 beta changed the
+API** — see [What changed since 26.3](#-what-changed-in-premiere-and-its-uxp-api-since-263-researched-2026-10-19) at the end.
 
 ---
 
@@ -28,7 +29,8 @@ The panel connected and ran real code inside Premiere. These are measured, not a
 
 The type declarations show `Application: Application` with `readonly version: string`, and the
 plan's tool table specified `ppro.Application.version` for `premiere_status`. **It returns
-`null` at runtime.** Do not use it.
+`null` at runtime.** Do not use it. *(2026-10-19: the 26.5 types make it a `Promise<string>` and
+27.0 beta drops `Application` entirely — see the end of this file.)*
 
 **Use the UXP host object instead** — verified returning `26.3.2` in the same probe:
 
@@ -1921,3 +1923,115 @@ builder now writes its per-clip files as `.mov` with PCM sound.
   to check nothing used them, then remove the stale bin with `FolderItem.cast(root).createRemoveItemAction(bin)`.
   This worked with the Link Media dialog still open. **Rule: rebuild into a fresh folder, never `rm` inside a folder
   Premiere has imported.**
+
+## 🆕 What changed in Premiere and its UXP API since 26.3 (researched 2026-10-19)
+
+**Tier: read, not run.** Everything below comes from Adobe's own posts and from diffing the
+`@adobe/premierepro` type files (26.3.0 → 26.5.1 → 27.0.0-beta.57). None of it has been called
+from our panel yet.
+
+🔴 **Measured 2026-10-19 on Jack's machine (bank robbery project open): `host.version` = `25.6.6`,
+59 `ppro` exports** — not the 26.3.2 / 70 exports of 2026-08-21. So the open app was the older
+**Premiere Pro 2025** line, and *none* of the APIs below exist in it: `WorkAreaUtils`,
+`MediaManager`, `C2PAService`, `MogrtText`, `ObjectMaskUtils`, `ProjectConverter`,
+`Transcript.transcribeClipProjectItem` and `host.applicationPath` are all `undefined`;
+`MarkerColor` still has only `MAGNETA`. **Two apps are installed side by side** (Creative Cloud,
+2026-10-19): **"Premiere" v26.5.2** and **"Premiere Pro" v25.6.6**, plus Media Encoder 26.5.2 and UXP
+Developer Tools 2.3.0. Jack works in **Premiere Pro 25.6.6 by choice**. "Premiere" 26 is not a lite
+edition — Adobe dropped "Pro" from the name in January 2026 and 26.x is the current line; 25.6 is
+last year's version kept installed. Everything below needs the app called "Premiere". The bridge
+ran the Bank Robbery cuts fine on it, so our tools work on 25.6. **Always check `host.version`
+before reaching for anything in this section.**
+
+### Where Premiere is
+
+| Version | Out | What matters to us |
+| --- | --- | --- |
+| **26.3** | Jun/Jul 2026 | The build we wrote the bridge on. API post 2026-07-10 |
+| 26.3.2 | Aug 2026 | Fixes an MKV-import crash. Nothing else |
+| 26.4 | — | No release notes found. It looks skipped, but this is unverified |
+| **26.5** | Sep 2026 (types 2026-09-08) | Generative Media Tool (text → video clip or sound effect on the timeline, uses Firefly + partner models); **Paper Edit** (rough cut from transcript selections in the Text panel); Object Mask Sharp/Smooth modes + Sharpness slider + more detectable objects; Generative Extend 360p–4K, any aspect; **Lens Flare rebuilt**, Twirl more precise, Mosaic softness better; Match Source now matches audio channels + sample rate; 4:2:2 10-bit MXF decode on NVIDIA Blackwell. API post 2026-09-10 |
+| 26.5.1 / 26.5.2 | Sep/Oct 2026 | Bug fixes. Users report Audio Meters dying until a restart, and 26.5.2 freezing for 2–3 min. Both unconfirmed by Adobe |
+| **27.0** | **Beta only** (beta types 2026-09-14 → 09-23) | Audio time-stretch modes (re-time dialogue/music without chipmunking); **Color Mode** (a dedicated grading workspace); colour labels on track headers; **the Lumetri *panel* is retired** (the Lumetri Color *effect* stays — our grades use the effect, so they should be unaffected, unverified); Wide-Gamut colour pipeline; **Intel Macs dropped** (irrelevant to us, we're on Windows) |
+
+🟡 **After a 26.5 update, re-harvest `effects-catalogue.md`.** Lens Flare, Twirl and Mosaic changed and
+their params may have new indices. The catalogue was harvested on 26.3.2.
+
+### New in the API — 26.3 (we never recorded these)
+
+- 🔴 **Breaking: `create*Action` must be called inside `project.lockedAccess(() => …)`.** Adobe says this was
+  not enforced consistently before. Our evals already do this.
+- 🔴 **Breaking: `Sequence.setSelection` is synchronous** and returns a `boolean`. Do not `await` it.
+- `ClipProjectItem.createSubClipAction` — make a subclip from code.
+- `Project.createSequenceWithPresetPath` — a sequence from a `.sqpreset` file.
+- `AudioTrack` / `VideoTrack` / `CaptionTrack.createSetNameAction` — rename a track ("V2 dubs").
+- `EncoderManager.launchEncoder`, `startBatchEncode`, `setEmbeddedXMPEnabled`, `setSidecarXMPEnabled`.
+- `ProjectConverter.exportAAF` + `AAFExportOptions` — hand a cut to an audio suite.
+- `Marker.guid`, `SourceMonitor.setPosition`, `ObjectMaskUtils`, `Transcript.querySupportedLanguages` /
+  `hasTranscript`.
+- Tooling: `@adobe/eslint-plugin-premierepro` lints wrong `Action` use. Not installed here.
+
+### New in the API — 26.5
+
+- **`WorkAreaUtils`** — `getWorkAreaInPoint/OutPoint(seq)`, `setWorkAreaInPoint/OutPoint(seq, t)`,
+  `setWorkAreaInOutPoints(seq, in, out)`. Synchronous. **This could let `premiere_export_sequence`
+  render a range** instead of the whole sequence. Untested.
+- **`MediaManager.purgeMediaCache()`** — flush the media cache from code. Worth trying the next time a
+  long session goes slow or crashes ([the 2026-10-05 crash](#2026-10-05-send-crash-report-on-opening-money-for-something-memory-not-the-panel)).
+- **`Transcript.transcribeClipProjectItem(item)`** resolves when transcription finishes, and
+  `Transcript.isLanguagePackAvailable(code)`. Premiere's own speech-to-text from code — a second way
+  to verify a cut against the script, next to our Gemini transcription. Untested.
+- **`C2PAService.getManifest(path, validate)`** — reads Content Credentials from a file (embedded,
+  sidecar or cloud). Relevant to the AI-disclosure work in `docs/using-ai.md`: Flow output may carry a
+  manifest. Untested.
+- `Media.getStart()` / `Media.getDuration()` — synchronous; the async `Media.start` / `Media.duration`
+  properties are **deprecated**.
+- UXP `host.applicationPath` (path to Premiere.exe) and `host.getBackgroundColor()`.
+- `Constants.MarkerColor.MAGENTA` added; the misspelt **`MAGNETA` is deprecated** — switch any code using it.
+- Fixed: `ClipProjectItem.createSetInPointAction` / `createSetOutPointAction` no longer throw;
+  `ComponentParam.getValueAtTime()` with no argument now rejects instead of hanging forever;
+  `Markers.getMarkers` filtering works; `importAEComps` without a bin lands in the root bin.
+- Types only: `ClipProjectItem.getComponentChain` returns a component chain, not a string;
+  constructors documented for `TickTime`, `Color`, `PointF`, `Guid`, etc.
+
+🟢 **This explains [`Application.version` returning `null`](#-pproapplicationversion-returns-null).**
+In 26.5 the types change it to `Promise<string>`, so it was always a promise we read synchronously.
+In 27.0 beta **`Application` is gone from the types altogether**. Keep using `host.version`.
+
+### New in the API — 27.0 beta (may change before release)
+
+- 🔑 **`MogrtText` — a MOGRT's text parameter can be read and SET**: `getText()`/`setText()`, font
+  name, font size, all caps, small caps, faux bold/italic, each with an `is…Editable()` check. Passed
+  through the normal `param.createKeyframe(mogrtText)` → `createSetValueAction`. Also `MogrtComment`
+  (read-only). **This is the first time Premiere's API can write an on-screen string** — it would
+  overturn "ffmpeg is the only lane that can write text" (`docs/video-fx/hybrid-method.md`) **once
+  27.0 ships and it works**.
+  - 🔴 **It does not work reliably yet.** A bug report on beta build 57 (2026-09-24): after one
+    `setText` transaction (which returned `true`), the MOGRT vanished from the Program Monitor, the
+    Template panel still showed the old text, and every later `getStartValue()` rejected with the
+    string `"MogrtText is encoded in a format that is not supported by this version of the API."`
+    No Adobe reply. **Do not move text work off ffmpeg on the strength of this.**
+- `TickTime.timeToTimecode(t, frameRate, timeDisplay)` / `timecodeToTime(tc, …)` — timecode strings
+  without our own maths.
+- `Constants.ProjectItemType` (BIN, CLIP, COMPOUND, FILE, ROOT, STYLE) — `item.type` is now typed.
+- 🔴 **Breaking:** `Project.getSequence(guid)` becomes `Promise<Sequence | null>` (it was synchronous).
+  `ComponentParam.getValueAtTime()` now resolves to `{ value }`, not the bare value. `Keyframe.value`
+  and `PointKeyframe.value` are gone from the types. **Check `premiere_get_sequence`,
+  `premiere_set_param` and `premiere_describe_effect` against these before running the bridge on 27.0.**
+
+### UXP platform (all Adobe apps)
+
+- **UXP 9.3** ships in Premiere 26.3: plugin command results are stringified by default; WebView
+  `uxpHost` is main-document only; media `timeUpdate` no longer fires while paused.
+- **UXP 9.4** (the 27.0 beta runs `uxp-9.4.0`): `queueMicrotask`; opt-in capture of uncaught
+  exceptions and unhandled rejections via `featureFlags` (`uncaughtException`, `unhandledRejection`)
+  in `manifest.json` — **would stop a thrown eval from vanishing silently**. Worth adding to the
+  panel manifest when we are on 9.4. Not in a stable Premiere yet as far as Adobe's matrix shows.
+
+**Sources:** [Premiere 26.3 API updates](https://forums.creativeclouddeveloper.com/t/premiere-26-3-api-updates/12009) ·
+[Premiere 26.5 API updates](https://forums.creativeclouddeveloper.com/t/premiere-26-5-api-updates/12159) ·
+[What's new in Premiere 26.5](https://community.adobe.com/announcements-727/what-s-new-in-adobe-premiere-26-5-september-2026-1641187) ·
+[UXP changelog + support matrix](https://blog.developer.adobe.com/en/publish/2026/07/uxp-changelog-and-support-matrix) ·
+[MogrtText write-back bug (27.0 b57)](https://community.adobe.com/bug-reports-733/mogrttext-write-back-causes-getstartvalue-to-reject-previously-readable-text-1643631) ·
+[Color Mode (beta)](https://helpx.adobe.com/premiere/desktop/correct-color/color-mode-fundamentals/color-mode-basics.html) ·
+`npm pack @adobe/premierepro@{26.3.0,26.5.1,27.0.0-beta.57}` diffed by hand.

@@ -28,7 +28,7 @@ If you are choosing an effect, you are in the wrong folder.
 | [`recipes.md`](./recipes.md) | 🟢 **The cookbook.** Concrete tool-call sequences for the jobs that come up — build a cut, push in, dissolve, grade, composite a Flow element, export and look. Plus the things that flatly do not work, so you stop looking | **Someone says "put these clips in Premiere and…"** |
 | [`effects-catalogue.md`](./effects-catalogue.md) | **What this machine can actually do** — all 106 effects and 118 transitions, harvested live and grouped by what you would ask for, with the BadCode register called out | Choosing an effect or a transition |
 | [`setup.md`](./setup.md) | 🔴 **One-time machine setup** — media root, UXP Developer Tool, developer mode, loading the panel, and every way the connection fails | First time on a machine, or the panel won't go green |
-| [`api-notes.md`](./api-notes.md) | Hard-won facts about Premiere's UXP API — match names, param indices, what isn't undoable, what the docs get wrong | A call behaves oddly, or before guessing at an API |
+| [`api-notes.md`](./api-notes.md) | Hard-won facts about Premiere's UXP API — match names, param indices, what isn't undoable, what the docs get wrong | A call behaves oddly, or before guessing at an API. **Its last section is what Premiere 26.5 and the 27.0 beta changed** (2026-10-19) — read it before updating Premiere |
 | [`bridge-protocol.md`](./bridge-protocol.md) | The wire protocol between server and panel: frames, ids, error codes | You are changing `@badcode/premiere-mcp` |
 
 The tool reference itself lives with the code, in

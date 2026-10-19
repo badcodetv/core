@@ -597,3 +597,144 @@ being printed, there should be more of it".
   - Render: `renders\bank robbery short - cut 6b-20261018.mp4` (2:20). The scene runs 0:48–1:10.
   - Premiere: `bank robbery short - cut 6`, cleared and re-laid from bin `short cut 6b`. The pieces were copied to
     `clips/short6b`, so Premiere reads fresh files.
+
+## Cut 7 (2026-10-19): Jack's four notes on cut 6b
+
+Jack: "at 9 seconds, the camera goes all over the place still, instead of simply zooming out of it revealing the cafe.
+20 secs she stops talking but the narrater keeps talking. 26 seconds his phone morphs into a mug, please change it. the two
+clips at 1 min 20 secs and 1 mins 24 secs of the people protesting, i want to keep the vibe of it and the camera angles,
+however there are a lot of duplicate faces, please diversify both crowds ... please watch and listen to fix a lot of the
+problems, but only once you have added the new clips".
+
+| Jack's note | Cause | Done |
+| --- | --- | --- |
+| 0:09, the camera all over the place | Not the café clip (it is steady). The zoom was centred on the painting, which touches the top of the frame, so the crop was clamped and slid sideways while it shrank | One zoom out about a fixed point (`anchorzoom`): the painting shrinks in place and the room opens round it. Edit only, no new footage |
+| 0:20, Denise stops, the voice keeps going | Her mouth says two phrases with a 2 s pause; the dub was one continuous take laid over both | `dubtalk` now cuts the take at its own pauses and lays each phrase on its run of mouth movement. The same fault at 0:28 (`c03b`) and in The Ex's line got the same fix |
+| 0:26, the phone morphs into a mug | The start frame had the phone in his hand and the prompt asked him to drink | New still `c02p-barry`: phone already on the table, both hands already round the mug. New clip `c02p-barry7` (Frames, the line in the prompt, no drink). Read at 4 fps: no morph |
+| 1:20 / 1:24, duplicate faces | Both stills cast one face over and over | New stills `pr-a7-chant`, `pr-b7c-reply`: each front-row person written as a different individual (clothes, what they carry, one face feature); everyone further back hooded or under umbrellas; **no reference to the old still**. Same camera and light text. The reply took three rounds: take 1 went eye-level and symmetrical, take 2 (camera clause moved first) got the angle but went flat afternoon light, take 3 (after dark, one floodlight) is used |
+
+**Found on the watch-and-listen pass, and fixed:**
+- Denise's 0:28 take has a sentence her mouth never says ("Put mine up twice this year"). That sentence now plays over a
+  cutaway of Barry listening: the last second of his own new clip at half speed, mouth shut, mug still in his hands.
+- The dub takes ranged from −11.7 to −19.7 LUFS, so some lines sank under the music. Every take is now levelled to −16 LUFS
+  before it is cut up; the +6 dB special case on the last two lines is gone.
+- Barry's new line split in four phrases (one per sentence) after a two-way split crammed 5 s of voice into 2.5 s of mouth.
+- Two transition pieces were one video frame short (11 frames of picture, 12 of sound) and left one-frame gaps in Premiere.
+  Patched with padded copies (`x-010-fade-p`, `x-027-fade-p`); the builder now renders every transition with a spare frame.
+
+**Checked:** contact sheets of the whole cut at 2 fps; every new clip at 4 fps; a faster-whisper transcript (every line
+present, in order); two passes of the listening model (`docs/listening/log/2026-10-19-092736-*`, `-093459-*`; the second
+found nothing). Listener claims that measurement disproved: a gap at 0:12–0:16 (none) and a clipped onset at 0:41 (it rises
+cleanly). Delivery check: −14.7 LUFS, true peak −1.4; the one fail (full-range content in a limited tag, grain pixels) is
+identical on cut 6b.
+
+- **Render:** `renders\bank robbery short - cut 7-20261019.mp4` (2:20.4).
+- **Premiere:** `bank robbery short - cut 7` (cut 6 untouched), bin `short cut 7`: V1/A1 54 pieces with no gaps; A2 narrator
+  +2 dB; A3 voices +4 dB (crowd tail 0); A4/A5 music; A6 press bed −2 dB; A7 the reply crowd (it overlaps the chant). Saved.
+- **Rebuild:** `python3 scripts/bank-robbery/build-short7.py --preview`. Prompts: `brs7-stills.json`, `brs7-clips.json`
+  (runner `brs7-clips.mjs`). Stills `images\short7\`, clips `vids\short7\`. Flow project `63d22c4b`, Nano Banana 2, Omni 1.1 Flash.
+
+### 🔴 For Jack
+
+1. **Unwatched by a human.** Only machines have looked and listened.
+2. **0:41, "At least something's still cheap"** still sounds a little smeared: the take is slowed to 0.8× to fill the Freddo
+   clip's long mouth movement. Playing it at normal speed would leave his mouth moving after the voice stops, which is the
+   0:20 fault, so it was left.
+3. **The reply crowd:** the security guard's jacket lettering garbles mid-clip, and the lad in the overalls reads young.
+4. **The chant and reply crowds are now ethnically and age mixed on both sides.** The cut 6b crowds were all white on both sides.
+
+## Cut 7b (2026-10-19, later): lips, and megaphones
+
+Jack on cut 7: "at 20 secs she speaks but her lips dont move ... the cafe scene is not lip synced correctly, they speak
+when their mouths are closed ... the protesters shouting at each other must change it sounds terrible, maybe they use
+megaphones and only hear the rest of the crowds background noise, so either side has one megaphone".
+
+**Cause of the lip sync:** every dub since cut 2 was timed to the faster-whisper word times of the Omni clip's **own
+audio**, and Omni's speech track does not follow its own picture. Denise's 0:16 clip "says" its second phrase at 5.5 s
+while her mouth is shut (checked by eye on a close-up sheet). So the lips are now measured from the picture.
+
+| Jack's note | Done |
+| --- | --- |
+| 0:20, she speaks and her lips don't move; the café speaks with mouths shut | New `lips.py`: MediaPipe Face Landmarker on a 2x crop round the face (the faces are too small for it at 720p), the inner-lip gap per frame, runs where it keeps changing. New `lipsync()` in the builder: each line opens on its speaker as the lips start; the face stays up while they move; whatever the voice still has to say carries over a cutaway of the listener with a shut mouth (spans read off the same data, each used once), and comes back to the face only if a later lip run can carry a whole sentence. Voices at natural speed (at most 1.15x), so the 0:40 smear is gone |
+| The protest sounds terrible | New stills and clips with ONE megaphone a side, held over the mouth from the first frame (`pr-a7m2-chant`, `pr-b7m-reply`; same faces brief, same cameras and light; Barry's sign passed to the woman in pink beside him). One TTS voice a side through the megaphone filter, levelled to −14 LUFS; under it the wide's wordless roar run on backwards, at −5 dB. Omni sang its own chants into both new clips ("We will not be moved!"), so their sound is muted. The chant shot starts at 3.0 s: the police officer in the foreground punches the air at 1.5–2.6 s |
+
+**Measured:** share of voiced time on a face where the lips are moving, cut 7 → cut 7b: Denise 0:16 53% → 80%, 0:28 59% →
+79% and 70%, 0:37 66% → 90%; Barry's 10p Freddo 51% → 88%; the rest 69–88%. Mr Red's toast reads 32% in both: it is a high
+shot from above with small faces and the tracker is not reliable there.
+
+**Checked:** contact sheets of the café and the protest; a transcript (every line, in order; "At least something's still
+cheap" now transcribes correctly); no two voices overlap (sound spans, not file lengths); the listening model on the
+protest (`docs/listening/log/2026-10-19-102835-*`: both megaphones intelligible, "skint" clear, crowd wordless). Its first
+pass caught the megaphones at −34 LUFS, unheard; fixed. Delivery check: −14.8 LUFS, true peak −1.3; the same one range fail
+as cut 6b.
+
+- **Render:** `renders\bank robbery short - cut 7b-20261019.mp4` (2:18.6).
+- **Premiere:** `bank robbery short - cut 7b` (cut 7 untouched), bin `short cut 7b`, 65 V1 pieces, no gaps; A2 narrator +2 dB,
+  A3 voices and megaphones +4, A6 press −2, A7 crowd −5. Saved.
+- **Rebuild:** `python3 scripts/bank-robbery/build-short7.py --preview` (pieces in `clips\short7j`); lip data cached in
+  `scripts/bank-robbery/lips-short.json` (`lips.py` needs `~/.cache/badcode-lips/venv` with mediapipe 1.1.1 and
+  `face_landmarker.task`).
+- **Spare folders:** `clips\short7b` to `short7i` hold abandoned test builds, never imported into Premiere. Safe to delete.
+
+### 🔴 For Jack
+
+1. **More cuts in the café.** Lines now cut to the listener when the speaker's lips stop, so the café has about 16 shots where
+   it had 10. If it feels busy, the alternative is new talking clips, which Omni can't promise to lip-sync either.
+2. **Barry's side of the protest:** his mouth shows past the megaphone at that angle while he shouts; it is continuous
+   shouting, so it reads.
+3. **Unwatched by a human.**
+
+## Cut 7c (2026-10-19, evening): why some lines synced and others didn't, and the fix
+
+Jack on cut 7b: "the two clips of barry at 18 and 19 seconds have his lips moving but denise is talking, maybe in shots
+where it is easy to lip sync, just show panning shots of the cafe as they are talking. lip syncing is off at 27 secs. for
+some clips you have matched the lip syncing perfectly and some are completly messed around, please research ... why ...
+56 secs, please remove the flashing black screen thing ... 1 min 14 secs the whole crowd are white people ... when they
+put the money in, it looks unrealistic ... make quick cuts".
+
+### Why (measured, n = 11 clips + 7 remakes)
+
+Every cut 4 talking clip was prompted with exactly its dub line, so wording was not the difference. What was: **does the
+clip's OWN generated speech say the dub's words, and does it sit on the moving lips?** Scored by MediaPipe lip motion
+against faster-whisper on the clip's own audio:
+
+| Group | Clips | Own speech on moving lips |
+| --- | --- | --- |
+| Synced | `c02p-barry7` (**Frames**), `c02c-barry4`, `m3-ex-lamp`, `m4-red-blue-toast` | 86–100% |
+| Not synced | all Denise clips, `c02a`, both Freddo clips (Ingredients) | 45–77%; several said other words ("How much?") |
+
+Re-made in **Frames mode with the exact line**, all seven say the right words; five then pass. When a clip passes, its own
+speech is the timing map. Research (`docs/video-fx/2026-10-19-lip-sync-for-dubbed-ai-clips.md`) agrees: match the words,
+then align; late audio is far less visible than early (about 125 ms against 45 ms).
+
+### The fix (`build-short7.py`, `dtwsync.py`, `lips.py`)
+
+- **`ownsync()`**: the take is time-warped onto the clip's own speech (MFCC dynamic time warping, cut at the take's quiet
+  points, each piece stretched by ffmpeg's rubberband 0.75–1.33x), or shifted and evenly stretched if that matches the
+  clip's speech envelope better; the measured audio-to-lips lag on top; a breath of room reverb. Sync score per face shot
+  (voice against lip motion): **0.57–0.90**, every one at its best shift ±0.12 s. The clips' own voices score 0.54–0.80.
+- **`cafepans()`** for the lines with no passing clip (Denise 0:27, "Bloody landlord"): the line at its own speed over slow
+  pans across four new café details with no people (`cd1`–`cd4`: painting, tea urn, empty table, rainy window). The window
+  shows the bank, so it comes after the narrator's reveal. No listener cutaways any more, so no moving lips under the
+  wrong voice (Jack's 0:18).
+- **0:56 flicker**: removed (the press-lamp dip).
+- **1:14 wide**: re-made with a mixed crowd (`pr-w7-wide`); Flow refused the first motion prompt ("reputational risk or
+  misrepresent current events"), the softer one (no "surge", no "police line braces") went through. The old wide's
+  wordless roar plays under it.
+- **The vault**: five stills, no faces, 0.8–1.6 s each with a small exact push: the trolley through the vault door, from
+  above, gloved hands on the shelf, the packed aisle, the door shutting. Under them the old vault clips' room sound.
+- The Ex and Mr Red keep cut 7b's timing (both own-speech searches hit their limits there; Jack didn't flag them).
+
+**Checked:** contact sheets of the café, printing, wide and vault; transcript in order; the listening model
+(`docs/listening/log/2026-10-19-113846-*`): no warble, clipping or overlaps in the café, the megaphones clear, no repeats.
+Delivery check: −15.2 LUFS, true peak −1.1; the old range fail only.
+
+- **Render:** `renders\bank robbery short - cut 7c-20261019.mp4` (2:22). **Premiere:** `bank robbery short - cut 7c`, bin
+  `short cut 7c`, 58 V1 pieces, no gaps. Saved. **Rebuild:** `build-short7.py --preview` (pieces in `clips\short7t`).
+- **Spare folders** `clips\short7b`–`short7s`: abandoned test builds, never imported. Safe to delete.
+
+### 🔴 For Jack
+
+1. **Denise's long line (0:27) and "Bloody landlord" are now voice over the café.** Neither of her clips for them passed,
+   even re-made. One more Frames re-roll each could put her face back.
+2. **Unwatched by a human.**

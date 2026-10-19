@@ -2660,3 +2660,21 @@ Grade: our own clips, Omni 1.1 Flash, one batch of nine café talking clips. Led
   clip's own sound is thrown away for a TTS dub, that no longer matters.
 - 🔴 **`FRAME_SOURCE_NOT_FOUND` after an Ingredients run of the same plate:** the runner's "already uploaded" marker
   skipped the upload, and Frames could not find the image by name. Deleting the marker (re-uploading) fixed it at once.
+
+## 🔴 Omni's speech audio does not follow its own picture (observed 2026-10-19, The Bank Robbery cut 7b)
+
+A talking clip's own soundtrack can "say" a phrase while the mouth on screen is shut. Denise's clip (`c03a-denise4`,
+Ingredients) speaks "The café and the flat" at 5.5 s; her lips move only at 2.6–3.5 s (checked by eye at 6 fps on a
+close-up crop, and by MediaPipe). So **never time a dub to a transcript of the clip's own audio.** Measure the lips from
+the picture (`scripts/bank-robbery/lips.py`, MediaPipe Face Landmarker on a 2x face crop) and cut away to a listener when
+the line outlasts them. Same day, both Frames-mode protest clips came back with invented chants ("We will not be moved!")
+despite "Sound: ... no clear words" in the prompt: mute a crowd clip's own sound when its words matter.
+
+## ✅ Talking clips for dubbing: Frames mode + the exact line (measured 2026-10-19, The Bank Robbery cut 7c)
+
+Of 11 Ingredients/Frames talking clips, the ones whose own speech said the prompted words AND sat on the moving lips were
+the ones that dubbed cleanly; Ingredients clips often improvised (Freddo clip: "How much?" for "Twenty p? Bloody boats").
+All seven re-made in **Frames mode with the exact dub line** said the right words; five of seven then passed the lip test.
+Recipe and numbers: `docs/stories/bank-robbery/short-shots.md` "Cut 7c". Also: a protest clip with "surge" and "the police
+line braces" was refused ("reputational risk or misrepresent current events"); "people shout and point across the road"
+went through from the same still.
