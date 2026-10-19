@@ -137,6 +137,27 @@ narrator audition). Everything here is ✅ seen unless marked.
   RP, Zubenelgenubi Brixton, Puck RP) he picked **Zubenelgenubi + British (Brixton)**, with every
   other box empty. One line only; not yet tested on a second line.
 
+## 🆕 READ 2026-10-19 — Voice Design on 3.8 is in the API, and it changes how to prompt
+
+⬜ **Read, not tried.** From Google's [Voice design guide](https://ai.google.dev/gemini-api/docs/voice-design),
+the [3.8 model card](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts) and
+[Philipp Schmid's walkthrough](https://www.philschmid.de/gemini-3-8-tts):
+
+- `POST /v1beta/voices` with `type: "prompted"`, `gender`, `language_code`, `display_name` and
+  `prompted.input` (the description) makes a **saved voice** (`store: true`, kept one year, 200 per
+  project). The response carries a preview (`sample_audio`, base64 WAV).
+- **The description is one or two sentences of permanent traits:** age, gender, timbre, regional
+  accent, baseline delivery. Google: contradictory or long paragraphs do worse. Google's examples:
+  *"A warm, thoughtful astronomer in his late 60s with a gentle British accent, speaking with quiet
+  wonder."*
+- **Per-line emotion goes in `speech_metadata.style`** at generation time ("whispered urgently"),
+  not in the description. Google: replace long Audio Profile / Director's Notes blocks with a designed
+  voice and short or empty style strings; long profiles now cause drift.
+- **Inline sound events use angle brackets** on 3.8 (`<laugh>`, `<short pause>`), and everything in
+  the input text is spoken.
+- 🔴 Still a stop gate in the UI (3 Oct: "Link a paid API key"). The API path would bill Kai's paid
+  project. First use: Karen's narrator, [`../stories/karen/narration/voice.md`](../stories/karen/narration/voice.md).
+
 ## 💳 UPDATE 2026-09-30 — we now use a PAID key (Kai's call)
 
 - Kai: *"it's excellent"* — so `GEMINI_API_KEY` in `.env` is now a key from the **WebKit Servers** Google Cloud project (billing attached; AI Studio → Create API key → *Import project*). The old free key is kept as `GEMINI_API_KEY_FREE`.

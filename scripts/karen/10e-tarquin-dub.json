@@ -1,0 +1,78 @@
+{
+ "_note": "Karen 10e (2026-10-19): Tarquin's whole line re-shot as three Omni clips (1-a from 0.417, 2-b, 3-a to 3.6 s), each phrase placed on the mouth opening read from the picture (relative mouth strip + close-up frame strips), 0.03 s late. Clip-time offsets: clip1 x-0.417, clip2 7.583+y-0.042, clip3 15.541+z-0.042. \"at\" = mouth opening + 0.03 s minus the slice's own lead-in silence (measured by place-dub on the first build).",
+ "duration": 19.125,
+ "phrases": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 0.0,
+   "to": 0.62,
+   "at": 0.683,
+   "tempo": 1.0,
+   "text": "Karen!",
+   "mouth": 0.913
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 1.22,
+   "to": 1.92,
+   "at": 1.613,
+   "tempo": 1.3,
+   "text": "Is that you?",
+   "mouth": 1.733
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 2.52,
+   "to": 4.66,
+   "at": 3.313,
+   "tempo": 1.16,
+   "text": "I have an urgent message for you.",
+   "mouth": 3.403
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 5.3,
+   "to": 6.66,
+   "at": 8.891,
+   "tempo": 1.3,
+   "text": "For fuck's sake, listen!",
+   "mouth": 8.921
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 7.22,
+   "to": 8.76,
+   "at": 10.141,
+   "tempo": 1.17,
+   "text": "I have seen what happens if",
+   "mouth": 10.191
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 8.76,
+   "to": 10.42,
+   "at": 12.471,
+   "tempo": 1.3,
+   "text": "we do not take action!",
+   "mouth": 12.491
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t02-end2-b.wav",
+   "from": 2.12,
+   "to": 2.52,
+   "at": 17.029,
+   "tempo": 1.0,
+   "text": "Christ,",
+   "mouth": 17.049
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t02-end2-b.wav",
+   "from": 2.52,
+   "to": 3.36,
+   "at": 17.629,
+   "tempo": 0.9,
+   "text": "are you even there?",
+   "mouth": 17.599
+  }
+ ]
+}

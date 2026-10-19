@@ -446,3 +446,12 @@ beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
     then crept forward. The two takes are near-identical, so the cast changed nothing visible. The fix is the
     prompt: describe a move that starts from where the plate has the subject.
 
+## 2026-10-19: Karen ending, video harvest
+
+- 🔴 **`flow_generate_video` timed out waiting for its own tile twice in a row** (`locator('flow-video-tile').filter({ has:
+  img[src=…] })`, 30 s), the item-20 fault again, on a chained start frame. Both runs had **finished**: the grid showed four
+  "Man speaking on phone" clips. Harvest by hand: `node scripts/flow/.tmp/grab-videos.mjs <port> <n> <prefix>` hovers the newest
+  `n` video tiles, reads each `<video src>` and fetches it in-page (2 of 2 came back as 1280×720 8 s mp4 with audio; the third
+  tile's fetch threw). Retrying the generation spends credits again; look at the grid first.
+- The `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash` first-call glitch hit on 3 of 3 fresh projects; an identical
+  immediate retry worked every time.

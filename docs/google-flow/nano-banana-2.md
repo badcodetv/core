@@ -2305,3 +2305,16 @@ Nano Banana 2 in Flow, one candidate each.
   no wall"). And that painting, attached to the next still as "the painting from the reference image in a cheap
   chipped gilt frame", came back on the café wall recognisably the same picture, cropped a little.
 Record: `docs/stories/bank-robbery/short-shots.md`.
+
+## Web delta, 2026-10-19 (Karen ending): three small additions `[practitioner]`
+
+A web sweep for the Karen ending found the repo already held nearly everything. New, all **untested here**:
+
+- **Give the lens a vantage point** ("a 35mm lens from waist height a few steps behind him"), not a focal length alone, which
+  leaves camera distance unstated (Morphic, Nano Banana 2.1 guide, https://morphic.com/resources/how-to/nano-banana-2-1-guide).
+- **Repeat the aspect ratio at the end of the prompt** as well as in the UI (Fliki, https://fliki.ai/blog/nano-banana-2-prompting-guide).
+- **Video, Omni:** past about four edits in a chain drift creeps in; re-anchor with "keep all details exactly as they are, only
+  change X" (Morphic, Omni 1.1 guide, https://morphic.com/resources/how-to/gemini-omni-flash-1-1-guide).
+
+Used on Karen 10a/10b (2026-10-19), 2 candidates each: both stills came back with the occluding foreground, off-centre
+subject and single warm practical as asked; one candidate per shot was clearly better. n=2, observed not established.

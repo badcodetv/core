@@ -81,3 +81,117 @@ voice. Say `studio quality` and you get dry and close for free.
 ---
 
 **Voice name once saved:** `# TODO`
+
+---
+
+# 🆕 The same narrator in Google AI Studio (2026-10-19)
+
+> Jack, 2026-10-19: recreate this ElevenLabs voice in the AI Studio text-to-speech we use now. Built
+> from the prompt above, the house AI Studio notes ([`docs/ai-studio/README.md`](../../../ai-studio/README.md))
+> and Google's own docs. ⬜ **Nothing below has been generated or heard yet.**
+
+## What changes in translation
+
+| ElevenLabs prompt said | AI Studio version | Why |
+| --- | --- | --- |
+| *Native American English* | *American* | Read literally, "Native American" is a different accent |
+| *Perfect audio quality, studio quality* | Dropped | No quality field on this engine; studio words risk a room sound (trap in the house notes) |
+| *A mid-range baritone… Never booming, never deep* | *His voice sits in the middle of his range* | `baritone` / `deep` summon a movie-trailer read, and a "never" puts the word in the prompt |
+| *Speaks slowly… unhurried… letting the pauses carry the joke* | Gone | Measured on this engine: slow and pause words came back **"boring"** and **"way too slow"** |
+| *Warm, amused, deadpan* | **Anger held down, sarcasm as a weapon** | The 15 Oct ruling (direct and aggressive), and the house finding that deadpan needs pressure under it |
+| The four real-actor references | Still never named | Same rule as ElevenLabs |
+| Tags `[understated]`, `[matter-of-fact]`, `[drawn out]` | `[sarcastic]`, `[serious]`, `[slow]` | Custom emotion tags are weak on this engine; use the documented ones |
+
+The **timbre is kept as written**: late fifties, light sandy rasp, lived-in but clear, faint Western ease.
+
+## Route A 🥇 — Voice Design on Gemini 3.8 (the true equivalent)
+
+Google's newer model (`gemini-3.8-flash-tts`) has **Voice Design**: a one- or two-sentence description
+becomes a **saved voice** (kept a year), the same thing we did on ElevenLabs. Google's rules: permanent
+traits only (age, gender, timbre, accent, baseline delivery) in the description; per-line emotion goes
+in a short **style** field at generation time; long Audio Profile blocks now cause drift.
+⚠️ Runs on the **paid** key (Kai's project), and the AI Studio page asked to link billing on 3 Oct.
+Untried here.
+
+Settings: Model `gemini-3.8-flash-tts` · Type: prompted · Gender: male · Language: `en-US` · Name: `Karen narrator`
+
+**Voice Design → description**
+```
+A dry, wry American storyteller in his late fifties with a faint Western ease, a mid-range voice with a light sandy rasp, lived-in and weathered but clear and crisp, who talks straight to the listener with anger held tightly in check.
+```
+
+**Style, per chunk** (pick one; leave empty when the line carries itself)
+```
+dry and certain, contempt barely held back
+```
+```
+sarcastic, cutting
+```
+```
+serious and pointed, slower
+```
+
+On 3.8, sound events in the transcript use angle brackets (`<short pause>`, `<sigh>`), not square ones.
+
+## Route B — Gemini 3.1 Composer with a prebuilt voice (the tested house route)
+
+The route every house narrator so far was made on. It cannot design a voice: the **voice name owns the
+timbre**, and the prose only steers delivery. Expect about one take in ten to drift; re-roll twice
+before changing a word.
+
+Settings: Model `gemini-3.1-flash-tts-preview` · Mode: Composer · Voice: **Algenib** (gravelly, lower: the
+nearest to the sandy rasp) · fallback **Charon**, then **Iapetus** · Accent dropdown: **Neutral** (the
+accent is in the prose once; don't vote twice) · Style and Pace dropdowns empty
+
+**Speaker settings → Voice Direction**
+```
+A dry, wry storyteller in his late fifties, a voice from the future that has already seen how all of this ends. American, with a faint Western ease. His voice sits in the middle of his range with a light sandy rasp, lived-in and weathered but clear and crisp. He talks straight to the listener, conversational and completely certain, with real pressure under the dryness: anger banked down and held in check, sarcasm used as a weapon, tightening rather than getting louder when it matters. He lands the dry asides cleanly and moves on.
+```
+
+**Scene**
+```
+Late at night, telling one person a story he is tired of being right about.
+```
+
+**Sample Context**
+```
+The narrator of a dark satirical comedy, hired for voice-over with a bite.
+```
+
+## The audition script (both routes)
+
+Two takes per voice. The first is Jack's new line (the film's point); the second is the old ElevenLabs
+audition line, which had to land flat and amused and now should land with contempt.
+
+**Speech block / transcript, take 1**
+```
+People like Susan lay in bed all day, doing nothing about AI taking everyone's jobs. Karen, well... she rolls her sleeves up and actually does something about it.
+```
+
+**Speech block / transcript, take 2**
+```
+[sarcastic] Who the fuck decides to vote that way. Anyway.
+```
+
+**Pass:** sounds like a person, not AI; American, not a cartoon; the anger is felt but he never shouts.
+**Fail and fix:** wrong timbre → change the voice, never the prose. Too slow → join short sentences with
+commas. Shouting → take "anger" out of the style field and leave it in the description only.
+
+## Route B auditions — rendered 2026-10-19, unheard by a human
+
+12 takes (Algenib, Charon, Iapetus × the two lines × two rolls), the boxes above exactly, the API
+route (`scripts/aistudio-tts.py`, paid key). Files: Jack's Desktop
+`Youtube Vids\animation\Karen\narrator-auditions\<voice>-line<n>-<a|b>.wav`, and imported into
+`Karen vid.prproj`, bin **narrator auditions 2026-10-19**. Each take was checked by the listen tool
+(Gemini; logs in `docs/listening/log/2026-10-19-11*`). ⬜ **Machine notes, not a judgement:**
+
+| Voice | Line 1 (Susan) | Line 2 (vote) | Machine's read |
+| --- | --- | --- | --- |
+| **Algenib** | 15.0s / 13.2s, complete | 4.4s / 4.7s, complete | Most contempt; low, gravelly; slowest; line 2 is a hushed growl |
+| **Charon** | 13.3s / 13.3s, complete | 4.4s / 4.8s, complete | Most even and documentary; milder contempt on line 1; line 2-b the angriest of all |
+| **Iapetus** | 13.0s / 14.0s, complete | 5.7s / 5.6s, complete | 1-b heard as *"subtle rural inflection"*, the nearest to the Western ease; 🔴 1-b peaks at **+0.8 dBTP** (clips), lower its gain |
+
+All twelve: General American, heard as human, no shouting. Several read "well" as *"Karen? Well,"*
+(a question) rather than *"Karen, well…"*.
+
+**Voice name once chosen:** ✅ **Algenib** (Route B boxes above, unchanged) — Jack, 2026-10-19: "algenib is the winner".

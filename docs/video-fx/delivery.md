@@ -206,3 +206,31 @@ All **19 live beats PASS**, general and red. Worst cases: `HK-b3-pushin` and `B6
 **2 general flashes/second** against a limit of 3, and **zero red flashes anywhere** — including
 the red-alert beat, because it was built as two slow beacon sweeps that never reach black rather
 than as a strobe. The thing that made it a better shot also made it safe.
+
+## 2026-10-19: Karen v2 upload: the range fix on ffmpeg 6.1, and a check that fails on grain
+
+- 🔴 **On ffmpeg 6.1 the documented fix was a silent no-op** for an untagged Premiere render (yuv420p in, yuv420p out): the
+  file came back tagged `tv` with content still 0–247. What worked: tell the frames they are full range first, then convert,
+  then re-tag every frame:
+  `-vf "setparams=range=pc,scale=in_range=pc:out_range=tv:flags=accurate_rnd+full_chroma_int,format=yuv420p,lutyuv=y='clip(val,20,233)',setparams=range=tv:colorspace=bt709:color_primaries=bt709:color_trc=bt709" -pix_fmt yuv420p -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709`.
+  Measured by `signalstats=stat=brng` (share of pixels outside 16–235): **1.63% before, 0.0071% after** (worst frame 5.79% → 0.21%).
+- ⚠️ **`delivery-qc.sh` still says FAIL on that file**, because it tests the single darkest and brightest pixel in the whole film
+  (YMIN 0, YMAX 241). On this film's deliberate grain and dust specks the encoder's rounding always leaves a few dozen pixels per
+  frame just outside the range, even with a 20–233 clamp and crf 10. A whole-film out-of-range share is the fairer test;
+  the rule has not been changed (the gate's owner should decide).
+- Loudness for upload: two-pass `loudnorm=I=-14:TP=-1.5` (−18.25 → −14.3 LUFS, true peak −1.3 dBFS). crf 14 gives 12 Mbps,
+  clearing YouTube's 8 Mbps 1080p guidance.
+
+### Superseded the same evening: Jack rejected the ffmpeg re-encode ("weird and blurry"); export from Premiere
+
+- The upload was a 1080p downscale of the 4K sequence plus a second lossy pass, and the range conversion + clamp changed the
+  blacks. **Jack's rule from 2026-10-19: the final file comes out of Premiere; ffmpeg never re-encodes the finished film.**
+- Premiere export used: `YouTube 2160p 4K.epr` from the **2025** install (Jack runs 25.6): 3840×2160, 41 Mbps, SAR 1:1.
+- **Why Premiere's file reads "untagged full range":** the Karen source clips themselves are full range and untagged
+  (`new clips/36.mp4`, `45.mp4`: Y 0–255, `color_range=unknown`); Premiere passes those values straight through. The newer
+  Flow clips are tagged `tv` and sit at 7–237. ~1.5% of pixels end up outside 16–235.
+- **Video Limiter (`AE.ADBE DigitalVideoLimiter`) at its default `Clip Level` = 1 changed nothing measurable** on all 59 clips
+  (1.4847% → 1.4789% out of range, same 60 s at native 4K). Its enum labels are unreadable through the API. Untested: other
+  `Clip Level` values, Lumetri, or Premiere 25's colour-management override per clip.
+- Loudness in Premiere is the Export window's **Effects → Loudness Normalization** (−14 LUFS, true peak −1.5): not reachable
+  through the bridge; a human ticks it, or saves a custom preset with it once.
