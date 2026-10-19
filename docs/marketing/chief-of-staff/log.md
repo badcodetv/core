@@ -3,6 +3,17 @@
 Every ruling and every weekly review, newest first. One entry per event, a few lines each.
 Format: `## YYYY-MM-DD — what` then who said what, in their words where possible.
 
+## 2026-10-19 — Kai: checked against other chief-of-staff prompts; three fixes applied
+
+Kai asked whether ours is the best chief-of-staff pattern going. Compared with loganhc's
+claude-chief-of-staff, OpenAI Academy's chief-of-staff brief and ClaudeCodeHQ's weekly check-in:
+ours already had the core (three priorities, human publish gate, written log, finish before
+starting) plus a separate gatekeeper none of them have. loganhc's own lesson ("a smaller system you
+trust beats a big one you don't", after 52 scheduled jobs broke silently) backs keeping ours small
+and unscheduled. Kai: "Yes, please apply" to three additions to the skill: open each brief by asking
+what happened off-repo; name any Do next item still there from the last run ("open since", a fact,
+not a deadline); keep facts (with a source) apart from guesses.
+
 ## 2026-10-15 — Kai and Jack (call): short beats long; don't wait on music
 
 On the 15 Oct 2026 call, comparing a two-minute film with Camping and GitPush Origin Master, Kai and

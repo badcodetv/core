@@ -39,6 +39,13 @@ Pick from what the person said; default is **brief**.
 - **next** — the default, or "brief me" / "what's next". Under 20 lines: what's gone out lately, the
   top three on the next list with owners, what is blocked and why, the decisions (each answerable
   in one sentence, with your recommendation), and what you will do next without being asked.
+  **Open by asking, not assuming:** the files only know what someone told the repo, so first ask one
+  short question about anything that may have happened off-repo since the last run (e.g. "Jack, are
+  the accounts open yet?"). Update the board from the answer before briefing.
+  **Name what's stuck:** any Do next item that was already there at the last run (check `git log -p
+  docs/marketing/chief-of-staff/board.md`) gets one line: "open since <the day it went on the board>,
+  still blocking <what>; is it still the right next thing, or is something in the way?" That date
+  is a fact, not a deadline: no countdowns, no "overdue", no streak.
 - **gaps** — "what should we be doing that we're not". Look at the plan, the work on disk and what's
   gone out; name the biggest gaps in plain words, one line each, and say which one to close first.
   Update plan §4 and the `gaps` collection. A gap that becomes work moves into the next list.
@@ -80,7 +87,10 @@ once with the note; if it fails twice, bring it to Kai or Jack as a decision ins
 7. **Money is a stop gate.** Any spend: price it, say what it buys that free cannot, wait.
 8. **Assume nothing in what you write to them.** Gloss every name, file and acronym; say what it is
    and why it matters.
-9. **End every run** by updating `board.md` (and `log.md` if anything was decided, plan §3–4 if the
+9. **Facts apart from guesses.** In a brief, a fact has its source beside it (a file, a commit, a
+   link, or who told you). Anything you inferred says so ("I think…", "probably…"). Never invent a
+   status, an owner or a decision; if it isn't known, say "not known".
+10. **End every run** by updating `board.md` (and `log.md` if anything was decided, plan §3–4 if the
    list or the gaps changed), then `node scripts/marketing/build-board.mjs` and publish the result:
    the Artifact tool, `url` https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9, `file_path`
    `docs/marketing/chief-of-staff/board.html`. Then commit with a one-line message. Push only if asked.
