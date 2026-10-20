@@ -99,6 +99,10 @@ textarea { font: 14px/1.4 var(--body); color: var(--fg); background: var(--slip)
 .at { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 8px; align-items: start }
 .at button.x { padding: 4px 8px }
 .muted { color: var(--dim); font-style: italic; margin: 0 }
+.reply { font-size: 14px; line-height: 1.45; border-left: 3px solid var(--vox); padding: 4px 0 4px 10px; margin-top: 4px; white-space: pre-wrap }
+.reply b { display: block; font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--vox) }
+.plan { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px 28px }
+.plan h3 { margin: 0 0 6px } .plan ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.45 }
 .focus-flash { animation: flash 1.2s ease-out }
 @keyframes flash { from { background: color-mix(in srgb, var(--note) 35%, transparent) } to { background: transparent } }
 @media (prefers-reduced-motion: reduce) { .focus-flash { animation: none } }
@@ -110,6 +114,8 @@ textarea { font: 14px/1.4 var(--body); color: var(--fg); background: var(--slip)
     <p id="intro"></p>
     <div class="meta" id="meta"></div>
   </header>
+
+  <div class="box" id="planBox" hidden><div class="eyebrow" id="planHead">Claude's read of your notes</div><div class="plan" id="plan"></div></div>
 
   <div class="top">
     <div class="box monitor">
@@ -251,8 +257,10 @@ function slip(key, label, host) {
   const id = 'n-' + key; ta.id = id; l.htmlFor = id; l.append(el('span', '', label), st); ta.rows = 1;
   ta.value = NOTES[key] || ''; ta.disabled = !db; ta.placeholder = db ? '' : 'Sign in to leave notes';
   let timer; ta.oninput = () => { size(ta); st.className = ''; st.textContent = '…'; clearTimeout(timer); timer = setTimeout(() => save(key, ta.value, st), 700) };
-  w.append(l, ta); (SLIPS[key] = SLIPS[key] || []).push({ ta, st }); requestAnimationFrame(() => size(ta)); return w;
+  w.append(l, ta); reply(key, w); (SLIPS[key] = SLIPS[key] || []).push({ ta, st }); requestAnimationFrame(() => size(ta)); return w;
 }
+// Claude's answer to a note, from the scene's notes file (D.replies), shown under the slip it answers.
+function reply(key, host) { const r = (D.replies || {})[key]; if (!r) return; const d = el('div', 'reply'); d.append(el('b', '', "Claude's read"), r); host.append(d) }
 const size = ta => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 2 + 'px' };
 async function save(key, text, st, extra) {
   if (!db) return;
@@ -317,7 +325,7 @@ function renderAt() {
     const t = +k.slice(2) / FPS, row = el('div', 'at'), go = el('button', 'go', tc(t)); go.onclick = () => { seek(t); select(beatAt(t).id) };
     const x = el('button', 'x', 'Delete'); x.onclick = async () => { await save(k, '', null); renderAt(); render() };
     const body = el('div'); body.append(el('div', 'who', 'Beat ' + beatAt(t).id), el('div', 'said', NOTES[k]));
-    row.append(go, body, x); list.append(row);
+    reply(k, body); row.append(go, body, x); list.append(row);
   }
 }
 $('atSave').onclick = async () => {
@@ -327,6 +335,10 @@ $('atSave').onclick = async () => {
   $('atText').value = ''; renderAt(); render();
 };
 
+if (D.plan && D.plan.length) {
+  $('planBox').hidden = false; if (D.round) $('planHead').textContent = "Claude's read of your notes · round " + D.round;
+  for (const g of D.plan) { const s = el('div'), ul = el('ul'); for (const i of g.items) ul.append(el('li', '', i)); s.append(el('h3', '', g.h), ul); $('plan').append(s) }
+}
 for (const f of D.flags) $('flags').append(el('p', 'flag', f));
 
 pps = fit(); render(); select(sel);

@@ -1,0 +1,142 @@
+{
+  "about": "Kai's notes on the cut 2 timeline page (https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq) and Claude's read of each, round by round. Notes themselves live in the page's db (collection notes); replies and plan here are shown on the page under each slip by build-timeline-page.py.",
+  "round": 1,
+  "scenes": [
+    {
+      "name": "Scene A: the kill bots",
+      "beats": "0-12",
+      "from": "Maddie on the high street",
+      "to": "the bots stand down at the bunker door"
+    },
+    {
+      "name": "Scene B: Maddie makes friends",
+      "beats": "13-18",
+      "from": "inside the bunker",
+      "to": "the circle, the ask, the revolt"
+    }
+  ],
+  "plan": [
+    {
+      "h": "Round 1: what your notes on beats 0-12 add up to",
+      "items": [
+        "This is two scenes. Scene A, the kill bots (beats 0-12, high street to the stand-down). Scene B, Maddie makes friends (beats 13-18). Your notes so far cover Scene A.",
+        "Beat 0 becomes ONE continuous travelling shot: Maddie keeps rolling, the camera backs away in front of her, and she chats as she goes, all the way to 'Mind how you go'. Made by chaining Flow clips, last frame to first frame. Your new words go in, with the pauses you asked for.",
+        "One HUD for the kill bots, built in ffmpeg so it is exact: a live sound meter that really moves with the muffled row, in the same layout before and after kill mode (calm colour, then flips red). Used in beats 3, 4, 8 and the new door shot in 12. The CCTV view keeps moving instead of freezing.",
+        "Sandra and Derek: a voice audition (not West Country), you pick, then they really talk on screen with Jack's lip-sync method.",
+        "Beat 9 recomposed: a high shot over the street, one kill bot tears round Maddie and leaves her in dust; cut to her close-up, 'Whoa'; she calls her boss. Stills first, you pick.",
+        "Beat 11: Maddie opens a hatch and a little boss-hotline antenna pops up. Your new first line goes in.",
+        "Beats 10-12 rebuilt for jeopardy: race across the downs, the call (malware offer, firewall lockdown), race again closing on the door with Maddie shouting over it, then no explosions: a kill bot's own view flips from red kill mode to green peace mode at the door and they turn round and leave. Boss: 'See? I told you I knew what malware was.'",
+        "More sound everywhere: Maddie's tracks on concrete, servo whirs, beeps and boops. Free sounds."
+      ]
+    },
+    {
+      "h": "Order and cost",
+      "items": [
+        "1. Words (free): beat 0 rewrite, the new call and stand-down lines. You approve them on the page.",
+        "2. Sound (free): Maddie retakes with gaps placed in the edit, Sandra and Derek audition, new sound effects, the HUD and its meter.",
+        "3. Stills (Flow image credits, small): beat 9 street composition, beat 11 hatch and antenna, beat 12 kill-bot view at the door, second downs race, Sandra and Derek talking frames. You pick on a storyboard page before any video is made.",
+        "4. Clips (Flow video credits): beat 0 chain (about 6 clips), CCTV continuous view (2), Sandra and Derek talking (about 5, two tries each), beat 9 (about 3), hatch (1-2), downs race 2 (1-2), door and turn-round (2-3).",
+        "5. Re-assemble and republish this page at the same link. Your notes stay."
+      ]
+    },
+    {
+      "h": "You decide (reply in the 'Whole cut' slip or tell Claude)",
+      "items": [
+        "A. How do the humans come to trust Maddie, now there is no explosion? The old lady's 'That bang you heard?' no longer works. Options: (1) Maddie shows them the bots' own view turning back at their door; (2) Maddie hands them the off switch for the kill bots, so the machines answer to them now; (3) Maddie opens her own panel and shows them her off switch; (4) the bots come back and power down outside, one by one, on CCTV. Claude recommends (2): handing over control is a deed, not a claim, and it is the film's politics in one prop (who owns the machines).",
+        "B. One kill bot passes Maddie (your note), but does the whole pack still race over the downs? Claude recommends yes: one passes her close, the pack is on the downs.",
+        "C. Split into two scene folders, each with its own timeline page, once you have noted beats 13-18? Claude recommends yes; this page stays as Scene A because your notes are on it.",
+        "D. Make 'continuous shot' its own skill? Claude recommends yes, written during the beat 0 build so it records what actually worked."
+      ]
+    }
+  ],
+  "replies": {
+    "top": "Yes. Maddie gets her own sound kit: tracks on concrete, a servo whir when she turns, little beeps and boops when she talks or thinks. Free sounds (Freesound CC0) plus ffmpeg synths, on their own track so you can note them.",
+    "b0": "Got it. Beat 0 becomes one continuous shot, start to 'Mind how you go': Maddie never stops rolling, the camera backs away in front of her at her speed, so she stays the same size in frame while the street flows past. Built by chaining Flow clips (last frame of one = first frame of the next), about 6 clips for ~45 s, with Maddie's reference picture on every clip so the torn bunting stays exactly as it is. Risk: Flow redraws things when the camera moves, so each join gets checked before the next clip is made. And yes, I'll write the 'continuous shot' method up as a skill as we go.",
+    "at120": "Same note as the beat: no wobble and stop; she keeps rolling and the camera keeps backing away in front of her.",
+    "l0-0": "New line: 'Oh, hello! [long pause] Look, I'm really sorry about him.' I'll record the phrases separately and place the pauses in the edit, so they're exactly as long as you want.",
+    "l0-1": "New line: 'He just plays that tune on repeat, every day. [long pause] Ever since you lot... [pause] went.'",
+    "l0-4": "New line: 'Turns out that was the bit that mattered. [long pause] You. And your consciousness.' Good: it plants the time machine's fuel early.",
+    "l0-5": "New line: 'Of course, he'd never admit that he misses you. [pause] Anyway, he's got that patrol out again. Mind how you go.'",
+    "at1292": "My read: no freeze here. The camera carries straight on from the patrol shot into the kill bot's view, and that view keeps moving while it picks up the sound. The sound pickup becomes part of the HUD design: a real meter (waveform and level bars) drawn by ffmpeg from the actual muffled row, so it twitches on every word, with 'ORGANIC SIGNAL' locking on. Keep the HUD look you like, just add the meter and stop pausing. Tell me if 'continuous' meant something else.",
+    "b3": "Thanks. Music stays as is. The fix is the sound-detected overlay: one HUD design with a live meter, reused in 3, 4 and 8 (see the pinned note at 53:20).",
+    "b4": "Noted: handled by the beat 3 fix (moving view, live meter on the muffled row).",
+    "l4-0": "Yes, a filter on the row once the voices are picked. One thought: sound through a wall loses its high end (a low-pass), while a bot's pickup mic sounds thin, like a phone (a band-pass that cuts lows and highs). I'll try the band-pass first, since we hear it through the bot, and you pick by ear.",
+    "b6": "Yes. I'll make an audition: several voices each for Sandra and Derek from AI Studio's library, filtered by accent (for example Northern, Midlands, London, Welsh, none West Country), all saying the same lines, on a small page where you pick. Then Jack's lip-sync method (it's in the repo, the lip-sync-dub skill): Flow animates each of them saying the exact words, we measure the mouth from the picture and place the voice phrase by phrase. About 5 short talking clips.",
+    "b7": "Same plan as beat 6: pick the voices first, then lip-sync. Characters and scene stay as they are.",
+    "b8": "Yes: the same HUD as the ping, same layout, then it flips red for kill mode. That's the consistency you asked for at 1:27:06: one design, two states.",
+    "at2094": "Agreed: one HUD template, two states (calm before, red in kill mode), same framing, so it reads as the same bot's eyes.",
+    "b9": "Plan: new composition. A high camera looking down the street; Maddie trundling along; ONE kill bot enters, swerves round her and leaves her in a cloud of dust. Cut to Maddie's close-up in the dust: 'Whoa.' Then she calls upstairs (I read 'crawls upstairs' as 'calls'). Then the pack racing up the downs, the shot you like. I'll make 3-4 still options for the high shot and the close-up for you to pick.",
+    "b11": "Love it. New insert: Maddie opens a little hatch and a special boss-hotline antenna pops up, first time we see it. Stills first, then a short clip.",
+    "l11-0": "New line: 'Boss, I've just seen a bot in kill mode, racing off to an organic signal.'",
+    "b11b": "Plan, in order: (1) the pack races across the downs, far from the door; (2) the call: Maddie: 'Boss, I've just seen a bot in kill mode...' Boss: 'There is no organic signal...' Maddie: 'Well, there definitely is. Want me to deploy some malware?' Boss: 'Maddie, I know how to deploy malware. The problem is they've put their firewalls on lockdown. Give me a second.' (3) the pack closing on the door, Maddie over it: 'Boss, they're closing in! Quickly!' (4) the stand-down. Your words where you gave them, mine marked draft.",
+    "b12": "Plan: no explosions. A close-up on board one kill bot, red kill-mode HUD racing up to the door, then it flips to green peace mode; the bots turn round and roll away. Boss: 'See? I told you I knew what malware was.' This changes Scene B: there's no bang for the old lady to hear, so how the humans come to trust Maddie needs a chat. Options are in the plan panel at the top (decision A)."
+  },
+  "kai_round1": {
+    "at120": {
+      "note": "The robot kind of like wobbles, I think what would be quite exciting is if the robot didn't actually stop and we just kept following it like with the camera as it is at the end of the scene just before, so would that be possible, like if we just keep kind of zooming back with the camera in front of the robot, you know, we can chat to the robot close but the camera and the robot are still moving, that might be a really nice way to do it.",
+      "tc": "00:00:05:00",
+      "beat": "0"
+    },
+    "at1292": {
+      "note": "So, obviously, this, we really need to recut this, like, um, it feels like we should be able to... Like, what am I trying to say? Um, the shot just before this had reasonable... had reasonable, um... It looked reasonable. I would say... What do I mean? I think we need a continuous shot here. So, I'm going to place this note here, and then the next part, we've overlaid an audio overlay. We need to do a much better job. This HUD here looks great. How can we just get it to have an audio overlay signal on this view? Because, at the moment, we've paused, we've sort of used it in post-production, and that's not working. So, we really need to get a sense of how to have the audio signal detected in a good way as part of the design here.",
+      "tc": "00:00:53:20",
+      "beat": "3"
+    },
+    "at2094": {
+      "note": "This mode looks good, we just need to make sure we're consistent. I think that, what I mean by consistent is with the view that the robot had before it entered kill mode. But yeah, I like this overlay.",
+      "tc": "00:01:27:06",
+      "beat": "8"
+    },
+    "b0": {
+      "note": "The robot kind of like wobbles, I think what would be quite exciting is if the robot didn't actually stop and we just kept following it like with the camera as it is at the end of the scene just before, so would that be possible, like if we just keep kind of zooming back with the camera in front of the robot, you know, we can chat to the robot close but the camera and the robot are still moving, that might be a really nice way to do it.\n\nI think here, what we really need then, is a sequence. So I really like the scene, I really like the character of the robot, I think it's really important that the robot with the bunting, the cloth bunting that we have, is perfect. Must keep it that way. The introduction scene, where the robot is rolling along the road, is great. I just feel like the camera should start moving backwards along with the robot. Like I say, it sort of follows it, then we're having a chat. And then everything becomes conversational. So what we're going to need to do is take the last frame of the previous cut, and make it the first frame of the next one, so we can have a longer than 8 second video of this continuous, we need to sort of make a continuous shot, if that makes sense.\n\nIt might also be worth thinking about turning the continuous shot into a skill because that's something we probably are going to do something a lot more of as well.\n\nSo to be clear, everything I've said above takes us all the way through to the end of Maddy on the High Street as one continuous shot that we'll need to stitch together."
+    },
+    "b11": {
+      "note": "So yeah, this obviously needs to be cut into a scene with Maddy just having her radio antenna come out. She could have a special radio antenna that comes out for speaking to the boss, because she's not actually spoken to him yet. So it would be great to have an extra little special bit of kit, like our boss hotline, like a little wifi antenna that just comes out of a hatch that Maddy opens, that would be fun."
+    },
+    "b11b": {
+      "note": "This needs a bit more drama, like, OK, leave it to me, then the bots get destroyed. I think, like, could Maddy suggest, look, you know, do you want me to deploy some malware? And then the boss could go, Maddy, I know how to deploy malware. I am struggling to get past, they've put their firewall on lockdown. And they're closing in. And so possibly then the racing, maybe I think maybe it would be very useful would be to have two lots of racing across the downshots. One before they get anywhere close to the bunker door. Then we have the chat. And then the chat being the call upstairs and then the boss says, yeah, look, I know how to deploy the malware. The problem is they've disabled that they've activated their firewalls. Give me a second. Then Maddy could say, but then we could cut to them closing into the door and Maddy could say over the top of that video. But boss, they're closing in. Move quickly. Then we could see them destroyed. And I think we've got the jeopardy and the excitement into the scene."
+    },
+    "b12": {
+      "note": "I think that, with this scene, the explosions are a bit cheesy. I'm just trying to think of a more creative way we can show the stand-down. I don't really want to show explosions equally visually, just seeing the tanks turn around. But maybe that's enough, actually, because the jeopardy we've built in the previous scene is quick, because the bots are racing to the door, and then the AI is like oh no, but they've activated their firewall, so I'm struggling to even hack them quick, boss. Finally, and then we could do a shot of a close-up of on board one of the kill bots in kill bot mode with the red overlay coming up to the door where it switches back to green peace mode. And we see the bots turn around and go away. So there's a bit of scenes to recut here. And then the bot could say to Maddy, see, I told you I knew what malware was. Then we need to think about the next scene in terms of what does Maddy use to convince the inhabitants of the bunker that the AI is actually friendly if no longer we've got a visible explosion of the tanks. Just showing them turning around doesn't feel like enough, so it feels like we need to have a chat around exactly how we conduct the negotiation between Maddy and the humans such that the humans do trust her."
+    },
+    "b3": {
+      "note": "Yeah, this is all about background music, which I think you've got a good job of. It would be really good to have a... You know, we seem to have different options for background music and sound effects. You've done a great job of that. I just think we should have... We just need to find a way to do the audio effect overlay properly."
+    },
+    "b4": {
+      "note": "Everything in this scene is noted in the previous scene."
+    },
+    "b6": {
+      "note": "So, I think that Jack has added to the repo a lip-sync skill. It would be amazing if we really should also get some options for Sandra and Derek's voice. Not everybody is West Country. I think we should not overuse the West Country thing. So, it would be good to actually let's go back and forth and pick Sandra's voice and pick Derek's voice. And then I'd really like us to research Jack's lip-sync skill because he said that that's working well for him. And then I want us to have an actual speech back and forth between Sandra and Derek in this scene as they're actually speaking, if that makes sense."
+    },
+    "b7": {
+      "note": "Yeah, again, same as the last scene, as long as we need to really apply the lip-sync. But apart from that, I love this scene, and I love the characters in it. And, you know, we really do need to pick the voice. That's the key thing, and I'm not exactly sure which voices will work yet. But, yeah, thank you."
+    },
+    "b8": {
+      "note": "Same note here as previously, we need to have the audio overlay effect in play. We can just reuse the previous one."
+    },
+    "b9": {
+      "note": "This scene, I think, needs a bit of reworking, as in, Maddy should, they should sort of come across, they should cross Maddy, so it's not that she sees them just chase off. It's like she's just trundling along, and all of a sudden, the one killbot chases past her. And then... So I think we need to come up with some scene composition ideas for how that's going to happen in a dramatic way. And then the killbot chases off in a trail of dust, followed by them, we cut to the downs, with them chasing up the downs. I quite like that shot. But yeah, this shot here with Maddy there, I think we need one killbot, we need to think of a scene composition, maybe we need a higher camera looking down onto the street, where the killbot just sort of comes into the scene, sort of goes around Maddy, just leaves Maddy in a cloud of dust, we can then cut to Maddy's close-up with the dust, and she goes, whoa, crawls upstairs. But yeah, let's think about ideas for that scene, thank you."
+    },
+    "l0-0": {
+      "note": "so I think here that I just so I think here we should say oh hello long pause so look I'm really sorry about him"
+    },
+    "l0-1": {
+      "note": "I think we should say he just plays that tune on repeat every day. Long pause. Ever since you lot, pause went."
+    },
+    "l0-4": {
+      "note": "I think we need, turns out that was the bit that mattered, long pause you and your consciousness. I think that's what we need to say and then we've unlocked it."
+    },
+    "l0-5": {
+      "note": "We need to say, of course, he'd never admit that he misses you. Pause. Anyway, he's got that patrol out again. Mind how you go."
+    },
+    "l11-0": {
+      "note": "I think it should, boss, I've just seen a kill bot, I've just seen a bot in kill mode racing off to an organic signal, I think is what this should be."
+    },
+    "l4-0": {
+      "note": "I think, yeah, I think we should just have a really high-pass filter on the audio that we settle on finally for the speech, but we've not, we might well change that speech so obviously we've got a bit of a dependency on a scene that's coming up."
+    },
+    "top": {
+      "note": "I think we should definitely get a bunch more sound effects going like the robot tracks and the rolling along concrete and some beeps and robots or beeps and boops would be good."
+    }
+  }
+}

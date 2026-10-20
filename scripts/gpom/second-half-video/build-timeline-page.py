@@ -26,6 +26,7 @@ rc = json.loads((C2 / 'rough-cut2.json').read_text())
 plan = json.loads((S.SCENES / 'second-half-audio-plan.json').read_text())
 names = {v['id']: v['name'] for v in plan['voices']}
 words = {b['id']: b for b in plan['cut2']['beats']}
+notes = json.loads((S.SCENES / 'second-half-cut2-notes.json').read_text())  # Claude's read of Kai's notes, per round
 
 beats = []
 for b in edl['beats']:
@@ -42,6 +43,7 @@ for b in edl['beats']:
     beats.append({**b, 'see': w.get('see', ''), 'act': w.get('act', ''), 'lines': lines})
 
 data = {**edl, 'beats': beats, 'video': [{**c, 'looped': '/rt2/' in c['file']} for c in edl['video']],
+        'round': notes['round'], 'plan': notes['plan'], 'replies': notes['replies'],
         'title': 'Cut 2 Timeline', 'heading': 'GPOM second half · cut 2, part 1',
         'intro': 'The gpom-second-half-rough2 sequence as it stands in Premiere, beats 0–18. Play it, click any beat, '
                  "clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done."}

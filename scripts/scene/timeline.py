@@ -13,7 +13,9 @@ Input is one dict in the TIMELINE FORMAT, which a scene's assembler writes as `<
                 "source": ".../x.mp4", "looped": false}],          # looped = ping-ponged to fill time
     "audio":  [{"track": "A1", "name": "vox-ai"}],                  # kind = name before the first '-': vox, mus or sfx
     "events": [{"stem": "vox-ai", "t": 2.4, "dur": 3.2, "what": "beat 0 line 0", "src": ".../00-0-bot.wav"}],
-    "flags":  ["substitutions and doubts, one sentence each"]
+    "flags":  ["substitutions and doubts, one sentence each"],
+    "round": 1, "plan": [{"h": "...", "items": ["..."]}],          # optional: Claude's read of the notes so far
+    "replies": {"b0": "Claude's answer to the note with key b0"}    # optional: shown under that note's slip
   }
 
 `build(data, preview, out)` writes out/index.html, out/media/cut.mp4 (a proxy under the 15 MB artifact file
@@ -61,6 +63,7 @@ def build(data, preview, out):
     seq = data.get('sequence', 'rough cut')
     page = {'total': data['total'], 'fps': data.get('fps', 24), 'beats': beats, 'clips': clips, 'tracks': tracks,
             'flags': data.get('flags', []), 'sequence': seq,
+            'replies': data.get('replies', {}), 'plan': data.get('plan', []), 'round': data.get('round'),
             'heading': data.get('heading', seq),
             'intro': data.get('intro', f'The {seq} cut. Play it, click any beat, clip, line or sound, and leave a note '
                                         "in its yellow slip. Notes save as you type. Tell Claude when you're done.")}
