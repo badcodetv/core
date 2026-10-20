@@ -100,6 +100,9 @@ put correctly placed dubs 0.35 s "late".
 | A 2 s cutaway over the face for the unmatchable phrase | Jack: "take away the clip you put over tarquin": he wants the face. Re-shoot with fewer words per clip first (step 2) |
 | Read mouth openings from 5–6 fps strips | "are you even there?" 0.45 s early, "I have seen" 0.34 s early; use 12 fps on the assembled shot |
 | Trimmed both sides of a chained join to lose a pause | his head turned between the frames: a visible jump. Trim only the side the next clip doesn't start from, or keep the pause |
+| A fixed-crop mouth strip on a head that moves (GPOM cut 3, 2026-10-20) | Sandra's face left the crop after 4 s and the strip showed tiles. `scripts/lipsync/mouth-track.py` follows the mouth landmarks and rescales to the clip's own percentiles: use it for step 5 |
+| 11 words in one 8 s Omni clip against a slow TTS voice (the old lady, 17-6) | Omni spoke them in about 2.7 s of mouth; the voice needs 4.7 s (x1.5–2.0). Re-shot as two 6 s clips of 6 and 5 words: both fitted at x1.0–1.3. Same as Karen 10f: **size clips to the TTS voice's pace, not to Omni's** |
+| Sped a Scouse "Sandra!" to x1.07 | whisper heard "sundry". At x1.00 (0.13 s past the mouth closing) every word survived. Transcribe the dub, not just the take |
 
 ## Tools
 
@@ -107,10 +110,11 @@ put correctly placed dubs 0.35 s "late".
 | --- | --- |
 | `scripts/lipsync/mouth-map.py` | Mouth open/shut strip and shut→open moments from the picture (wraps `scripts/bank-robbery/lips.py`) |
 | `scripts/lipsync/place-dub.py` | Builds a dub track from a phrase table; prints voice onsets; levels it |
+| `scripts/lipsync/mouth-track.py` | Tracked 12 fps mouth close-up strip (timestamps burned in) + percentile-rescaled open/shut strip; for faces that move or rest with the mouth parted |
 | `scripts/bank-robbery/dtwsync.py` | Older automatic time-warp onto the clip's own speech. `global` mode is safe-ish; `warp` squashes words. Backup only |
 | `scripts/karen/tarquin-lipsync.py` | The Karen 10b2 one-off that led here (own-speech placement, late-only slide) |
 
-Environments: `~/.cache/badcode-lips/venv` (MediaPipe, librosa), `~/.cache/badcode-whisper/venv` (faster-whisper; feed it 16 kHz).
+Environments: `~/.cache/badcode-lips/venv` (MediaPipe, librosa, plus the model `~/.cache/badcode-lips/face_landmarker.task`), `~/.cache/badcode-whisper/venv` (faster-whisper; feed it 16 kHz; `device='cpu'` on WSL, no libcublas). Both were missing on 2026-10-20 and were rebuilt with `uv venv` + `uv pip install mediapipe librosa opencv-python` / `faster-whisper`; the model is `storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task`.
 
 ## Write back
 

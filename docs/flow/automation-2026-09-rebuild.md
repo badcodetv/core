@@ -471,3 +471,16 @@ beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
   tile's fetch threw). Retrying the generation spends credits again; look at the grid first.
 - The `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash` first-call glitch hit on 3 of 3 fresh projects; an identical
   immediate retry worked every time.
+
+## 2026-10-20 — reading the price and the balance; a harvest false positive (GPOM cut 3, `run-cut3.mts`)
+
+82. **The price is on the page before Create.** With the Settings popover open, `flow-credit-cost-label` reads
+    *"Generating will use N credits"* for the configured turn. Omni 1.1 Flash, 720p, Frames: **8 s x1 = 12, 8 s x2 = 24,
+    6 s x2 = 20** (Jack's account). The **balance** is in the account menu (`button[aria-label^="Google Account"]` →
+    *"18,844 Google Flow credits"*); it fell by exactly the label's figure per turn. `run-cut3.mts` reads both, refuses
+    over a per-clip ceiling or a batch cap, and keeps a ledger. The balance read right after connecting often returns
+    nothing (menu not ready); the read after the harvest is reliable.
+83. 🔴 **"A new key at the top of the grid" is not proof the new clip finished.** The previous job's tile had not
+    loaded its key into the `before` snapshot, so it counted as new, the wait ended at once, and the harvest
+    downloaded the previous clip again (caught only by md5). Wait until **no** top tile is pending (a percentage, or
+    no media key), after a 30 s floor, and skip any tile already harvested or any file whose md5 is already on disk.

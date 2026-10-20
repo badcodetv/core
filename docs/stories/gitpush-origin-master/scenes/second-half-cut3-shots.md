@@ -360,3 +360,68 @@ Kai's picks, now final and not re-made: **S1-c, S2-c, S3-c, S5-a, S6-c**. Round 
 | S7r | **S7r-a** | Closest to S7-d (same blur, same her), with the doorway swapped for a dark corridor full of wary faces |
 | S8r | **S8r-b** | A huge, deep portal with Maddie small and centred, the scale of S6, and her bun matching S8-d |
 | S10 | **S10-c** | The curving track marks plus the single-file retreat read "they turned back" without any explanation |
+
+## Clips (batch 1, and batch 2 from Kai's round 2 picks)
+
+Made 20 Oct 2026 in Flow project `be451638` (Jack's account), **Omni 1.1 Flash, Frames (start frame only), 16:9, 720p**,
+one job at a time through [`scripts/gpom/second-half-video/run-cut3.mts`](../../../../scripts/gpom/second-half-video/run-cut3.mts)
+(job specs in the log `run-cut3.log`; spend in `run-cut3.ledger.json`). Before every Create the runner read Flow's own
+price label and refused anything over 20 credits a clip or over the cap (300, then 550 with batch 2): **8 s x1 = 12,
+8 s x2 = 24, 6 s x2 = 20**. Balance **18,844 → 18,428 = 416 credits** (batch 1: 236 of 300; batch 2: 180 of 250). Every
+harvest was md5-checked against every clip on disk and first-frame-matched to its plate (distances 3–19; correct < 400).
+Veo audio stripped on every picture clip (originals with audio in `video/cut3-raw/`). Contact sheet `<clip>-sheet.jpg`
+beside each. Media: `/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/`.
+
+`West Country Bot` = the Character cast by `@` (street shots only; the bunker shots are uncast, because the Character
+carries its high street with it).
+
+| Clip | Beat | Plate | Cast | Credits | Motion prompt | Verdict |
+| --- | --- | --- | --- | --- | --- | --- |
+| `cut3-V1.mp4` | 9a | S1-c | no | 12 + 12 | *The camera does not move, locked high above the street. The tracked military robot speeds straight down the road, passes close beside the small grey robot without touching it, and drives on out of the bottom-left edge of frame, leaving a long plume of dust hanging behind it. As it passes, the small robot jolts and rocks on its wheels. The camera does not move.* | **Pass (take 2).** Passes close, exits bottom-left, dust hangs, she jolts; bunting kept. Take 1 (cast, "tears forward… swerves hard round", in `cut3-raw/cut3-V1-r1-reject.mp4`) **failed**: the tank drove into her and vanished in its own dust, and her bunting turned into bright multicoloured party flags flying off |
+| `cut3-V2.mp4` | 9b | S2-c | yes | 12 | *The camera does not move. Thick grey-brown dust swirls and rolls around the small grey delivery robot. It rocks back on its rear wheels, its front wheels lifting off the road, then drops back down and settles. Its torn bunting flaps hard across its front wheels and its amber beacon flares. The dust slowly thins. The camera does not move.* | **Pass, with a note.** Dramatic: she leaps clear of the road on all six wheels, a strand of bunting streams off, she lands and settles; the bunting is back across her wheels at the end. Bigger than "rocks back" — Kai to say if it's too comic |
+| `cut3-V3.mp4` | 11 | S3-c | yes | 12 | *Locked-off close-up; the camera does not move. The slim chrome antenna telescopes further up out of the open round hatch with a quick little jerk, one more segment sliding out and wobbling to a stop. The tiny red light on its tip starts blinking on and off. The amber beacon glows steadily. The camera does not move.* | **Pass, subtle.** The tip light blinks red throughout; the telescoping is a small jerk-and-wobble near 1.3 s, not a big extension |
+| `cut3-V4.mp4` | 12 | S5-a | no | 12 | *The camera is fixed to the front of the racing tracked robot. It charges straight up the grassy track at the green blast doors, tracks churning up grass and chalk, then brakes hard and skids to a stop a few metres from the doors. A thick cloud of dust rolls forward past the camera and over the hull, then hangs in the air. Clean picture, no text, no overlay.* | **Pass.** Races in, sparks off the tracks as it brakes, stops metres short, dust rolls over the hull. No text. A dark round lens appears on the hull's nose at the stop |
+| `cut3-V5.mp4` | 14a | S6-c | no | 12 | *The camera does not move. The small grey delivery robot sits still in front of the shut green blast doors, its amber beacon blinking twice. Then it turns to its left and drives smoothly away across the clean grass and out of the left edge of frame. The doors, the concrete and the hillside stay still. No dust. The camera does not move.* **Reversed in ffmpeg** (forward take in `cut3-raw/cut3-V5-forward.mp4`) | **Pass.** The plate already has her at the door, and Omni re-stages a subject the prompt contradicts (rebuild doc item 77), so the arrival was shot as a departure and reversed: she rolls in from the left, settles, the beacon blinks, and the clip ends exactly on Kai's still. She arrives facing slightly back the way she came (reversing in); nothing physical settles, so it reads forwards |
+| `cut3-beat0-continuous.mp4` | 0 | first frame of `simulation/video/09-s3-robot.mp4` | yes, every clip | 6 × 12 | Clip 1: *The camera tracks steadily backwards up the high street ahead of the small grey delivery robot. The robot turns to face the camera and rolls along after it at the same speed, staying the same size in frame, the ruined shops sliding past on both sides. Its amber beacon pulses in a lively rhythm, as if it is chatting away. Its torn bunting sways across its front wheels. It never stops.* Clips 2–6: *The camera keeps tracking steadily backwards up the high street at the same speed. The small grey delivery robot keeps rolling towards the camera at the same pace, staying the same size in frame…* (rest as clip 1) | **Pass. 47.75 s, one unbroken travelling shot**, six clips each started from the previous clip's last frame, no crossfade. Join differences 2.6–3.9 against 4.2–7.8 inside the clips; in the joined file every join step sits inside the shot's own range. Bunting checked at every join. ⚠️ **Drift**: the colour slides from warm to cold grey and the robot gets smoother over the 48 s (gradual, no join shows it); a ramped grade back towards clip 1 is owed in post. Parts in `video/cut3-beat0/` (`chain-0N.mp4`, last frames, join strips) |
+| `cut3-V8.mp4` | 10a | S9-c | no | 12 | *The camera does not move, locked on the footbridge. The pack of tracked military robots charges away down the abandoned motorway in formation at full speed, heading for the green downs on the horizon, long trails of dust boiling up behind their tracks and drifting back towards us. The dead cars on the verges stay still. The camera does not move.* | **Pass.** The formation pulls away down the carriageway into its own dust |
+| `cut3-V9.mp4` | 10b | S4r-a | no | 12 | *The camera does not move, locked low in the grass. The three tracked military robots race up the slope at full speed, converging on the shut green blast doors of the bunker, long trails of dust and chalk streaming behind them. The long grass in the foreground whips in the wind. The camera does not move.* | **Pass.** Two more bots burst in from the frame edges past the camera and the pack converges on the door: more menace than asked, five not three |
+| `cut3-V10.mp4` | 12 | S10-c | no | 12 | *The camera does not move, a locked wide shot. The tracked military robots at the bunker doors slow, the last one swings round on its tracks, and the whole pack files away down the grassy hill in single file, unhurried. The dust they raised drifts and settles in the still air. The shut green doors stay untouched. The camera does not move.* | **Pass.** The column files down the hill towards the camera along its track marks |
+| `cut3-V11.mp4` | 17 rev | S8r-b | no | 12 | *The camera does not move. In the bright open doorway the small grey delivery robot waits, nudging a little way forward and back again on its wheels, its amber beacon pulsing gently as if it is talking. Its torn bunting sways across its front wheels. The old woman in the foreground stays almost still. The camera does not move.* | **Pass, quiet.** Small nudges, the beacon pulses, the old lady barely moves |
+
+### Lip-sync (V7 Sandra and Derek, V12 the old lady), by the `lip-sync-dub` skill
+
+Talking clips: Frames mode, the plate as start frame, the exact line after *"She says:"* / *"He says:"*, 2 candidates.
+Sandra on `storyboard/SB07b.jpg` (her face to camera over Derek's shoulder; cut 2's beat 6 plate `B5` is too wide to
+sync), Derek on `SB07c.jpg`, the old lady on `cut3/S7r-a.jpg`. Prompt shape:
+*"The camera does not move. The furious woman in the cream jumper, facing the camera, points at the man and speaks to
+him sharply. She says: <line> Then she presses her lips together and glares. The man with his back to the camera stays
+still and silent."* (Derek: *"…throws his hands wide and shouts at the woman. He says: …"*; the old lady: *"…looks
+steadily into the lens and speaks, calm and firm. She says: …"*.) Each clip's own audio was transcribed (faster-whisper,
+small.en, CPU): **every kept candidate says the dub's words**; `L17-6b-a` said *"He can talk, talk"* and was dropped.
+Mouths mapped with `scripts/lipsync/mouth-track.py` (new: a tracked 12 fps mouth strip, because the heads move); phrases
+placed with `place-dub.py`, each on a mouth opening, tempo 1.0–1.3. The dub alone was transcribed for every shot (all
+words survive). **The listen tool was not run** (Kai's standing rule), so the skill's check (b) for warble is owed to a
+human ear.
+
+Voice masters (`audio/cut3-lip/<line>-master.wav`; picks per the brief): 06-0 = p0 take **b** + 0.6 s + p1 take **a**;
+07-0 **a**; 07-1 **b** (take a, the pick by length, transcribes as *"the world ends at sundry"*; b reads clean);
+07-2 **b**; 17-0 **b**; 17-3 **a**; 17-6 p0 **a**, p1 **a**. Phrase tables and dubs beside them
+(`cut3-lip-<line>-phrases.json`, `-dub.wav`, −20.5 LUFS).
+
+| Shot (`video/`) | Candidate | Credits | Placement | Verdict |
+| --- | --- | --- | --- | --- |
+| `cut3-lip-6-0.mp4` | L06-0-a | 24 | "Derek." 0.03 · "You've left the seat up." 1.00 x1.03 · "Again." 3.44 x1.30 | Good fit. "Again" ends 0.1 s after the mouth shuts |
+| `cut3-lip-7-0.mp4` | L07-0-a | 24 | whole line 0.03 x1.07 | Good: one long burst, one phrase |
+| `cut3-lip-7-1.mp4` | L07-1-b (6 s) | 20 | 0.46 x1.00 | Good; ends 0.13 s after the mouth closes (x1.07 made "Sandra" sound like "sundry") |
+| `cut3-lip-7-2.mp4` | L07-2-a | 24 | "Yeah," 0.02 · "the world ended." 0.98 · "Doesn't mean you get to stop having manners." 2.10 x1.10 | Good fit, three bursts, three phrases |
+| `cut3-lip-17-0.mp4` | L17-0-a | 24 | "Your boss killed everyone we ever loved." 0.92 x1.20 · "We're not meeting him." 4.85 x1.30 | ⚠️ **Phrase 2 overruns** the mouth by about 0.3 s (her mouth burst is 0.7 s; the slow voice needs 1.0 s even at x1.30). **Cutaway candidate** for "…meeting him" (S8r reverse on Maddie), or re-shoot it as its own clip |
+| `cut3-lip-17-3.mp4` | L17-3-b | 24 | whole line 1.42 x1.05 | Good |
+| `cut3-lip-17-6a.mp4` | L17-6a-a (6 s) | 20 | "Well." 0.46 x1.30 · "At least you're honest about that." 2.00 x1.26 | Fits; "Well." ends 0.1 s late; a small silent mouth flicker at 1.1 s |
+| `cut3-lip-17-6b1.mp4` | L17-6b1-b (6 s) | 20 | "He can talk. From" 0.33 x1.00 · "out there." 3.17 x1.30 | Good |
+| `cut3-lip-17-6b2.mp4` | L17-6b2-b (6 s) | 20 | "You stay on the step." 1.42 x1.18 | Good |
+
+17-6 was meant to be two clips (split at the pause). The first try at the second half (`L17-6b`, 24 credits, *"He can
+talk. From out there. You stay on the step."* in one 8 s clip) **could not be placed**: Omni spoke it in about 2.7 s of
+mouth against 4.7 s of voice. Re-shot, per the skill's step 2, as two 6 s clips (`17-6b1`, `17-6b2`), which fit. So
+17-6 is **three** shots: `17-6a`, `17-6b1`, `17-6b2`. Each dubbed shot has a `-muted.mp4` twin (no audio) and a sheet;
+the raw talking takes (with Omni's own audio) are in `video/cut3-lip-raw/`.
