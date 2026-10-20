@@ -226,3 +226,137 @@ Nothing was policy-blocked and nothing timed out. 20 `flow_edit_image` calls, 45
 | S6 | **S6-c** | Small before a big shut door on clean grass. The quiet the beat wants, and it echoes the bunker establishers |
 | S7 | **S7-d** | A tight MCU, mouth closed, facing camera, the crowd only blurred shapes: the best plate to lip-sync |
 | S8 | **S8-d** | Over her shoulder, so it cuts straight back and forth with S7; Maddie lit by the doorway, bunting intact |
+
+## Round 2 (20 Oct 2026, from Kai's picks)
+
+Kai's picks, now final and not re-made: **S1-c, S2-c, S3-c, S5-a, S6-c**. Round 2 makes four new options each for S4r, S9 (new), S7r, S8r and S10 (new). It used the same project, model and rules. The new references are the picks themselves (`cut3/S4-c`, `S5-a`, `S6-c`, `S7-d`, `S8-d`) and `moodboard/K4-motorway.jpg` for the motorway. 22 calls in all, 0 credits, nothing blocked. One call (`S8r-p1`) came back **partial**, with 1 candidate of 2. The call after it was checked for a late-tile shift and its two files match their own prompt.
+
+### S4r: beat 10b, The close race (round 2)
+
+**Brief:** From S4-c: the big foreground kill bot removed; just the pack racing up the down to the bunker door, close now. Low camera in the grass.
+
+**S4r-p1, references cut3/S4-c:**
+
+> Using the provided image, change only one thing: remove the large tracked military robot in the right foreground entirely, and fill that space with more of the long grass and the dusty slope, so the low camera sits in the grass with nothing between it and the pack. Keep the three tracked military robots racing up the down towards the bunker, their dust trails, the concrete bunker entrance and its shut green blast doors, the sky and the grain exactly the same, preserving the original style, lighting and composition. {house}
+
+**S4r-p2, references cut3/S4-c + P1-patrol-blockbuster:**
+
+> Using the first image for the hillside, the bunker entrance, the film look and the low camera in the grass, and the second image for the tracked military robots: the camera low in the long grass on the down, with no robot near the camera. A pack of five tracked military robots like the one in the second image races up the slope away from camera towards the concrete bunker entrance with its shut green blast doors, which is close now and large in the upper part of frame. Long trails of dust and chalk boil up behind each of them. Overcast grey sky, menace, speed. {16mm} {house}
+
+| Option | From | Note |
+| --- | --- | --- |
+| `S4r-a` | `work/S4r-p1-a` | A clean edit of S4-c: the foreground bot is gone, and three bots race up to the door with long dust trails. Faithful to Kai's pick. |
+| `S4r-b` | `work/S4r-p1-b` | Almost the same as a (a second take of the same edit). |
+| `S4r-c` | `work/S4r-p2-a` | Five bots, the nearest bigger in the middle of the frame. The pack is busier but the composition is the same. |
+| `S4r-d` | `work/S4r-p2-b` | Closer to the door, which is big at the top of frame, with three bots in heavy dust. Which way they face is ambiguous: the nearest could read as coming towards camera. |
+
+### S9: beat 10a, The far race (NEW)
+
+**Brief:** The kill-bot pack racing at speed towards the distant downs, far from the bunker. Two across open Wiltshire fields, two down an empty, cracked, abandoned motorway, dust trails, the downs on the horizon.
+
+**S9-p1, references P1-patrol-blockbuster + K9-downs-aerial:**
+
+> Using the first image for the tracked military robots and the second image for the landscape: a wide, low shot across open Wiltshire farmland, overgrown fields of long pale grass and a broken hedge line, as a pack of six tracked military robots like the one in the first image races away from camera at full speed in a loose arrowhead, long trails of dust streaming behind them. Far off on the horizon the smooth green chalk downs rise under a heavy grey sky. No buildings near, no bunker in sight: they are still a long way off. Overcast, speed, menace. {16mm} {house}
+
+**S9-p2, references P1-patrol-blockbuster + K4-motorway:**
+
+> Using the first image for the tracked military robots and the second image for the abandoned motorway: a low, wide shot from the cracked tarmac of an empty, abandoned English motorway, weeds pushing up through the lanes and the central reservation overgrown, rusted dead cars shoved onto the hard shoulder. A pack of six tracked military robots like the one in the first image races away down the empty carriageway at full speed, long trails of dust kicking up behind them. Far ahead, where the motorway runs out to the horizon, the green chalk downs rise under a heavy grey sky. No signs, no gantries, no lettering. {16mm} {house}
+
+**S9-p3, references P1-patrol-blockbuster + K4-motorway:**
+
+> Using the first image for the tracked military robots and the second image for the abandoned motorway: a high shot from an old footbridge looking straight down the length of an empty, abandoned English motorway, cracked lanes, weeds and saplings through the tarmac, rusted dead cars pushed onto the hard shoulder and verges. Directly below and moving away from camera, a pack of six tracked military robots like the one in the first image races down the carriageway towards the horizon in two columns, long dust trails streaming back towards us. At the far end of the motorway the green chalk downs rise under a heavy grey sky. No signs, no gantries, no lettering. {16mm} {house}
+
+| Option | From | Note |
+| --- | --- | --- |
+| `S9-a` | `work/S9-p1-a` | Fields: a low drone-height chase behind six bots in an arrowhead, the downs rolling across the horizon. |
+| `S9-b` | `work/S9-p1-b` | Fields: lower, through a broken hedge line, the pack strung out with one big dust plume, the chalk downs beyond. |
+| `S9-c` | `work/S9-p3-a` | Motorway: from a footbridge looking straight down the carriageway, six bots in formation, dead cars on both verges, the downs where the road ends. |
+| `S9-d` | `work/S9-p2-b` | Motorway: a wider side angle, four bots crossing the lanes left to right in dust, the downs on the horizon. Spare: S9-p3-b (the same footbridge as c, with the bridge rail in shot). |
+
+### S7r: beat 17, The old lady, from Maddie's eyes (round 2)
+
+**Brief:** From S7-d: Maddie's POV from the doorway, so no bright opening behind her; the deep dim bunker interior, people receding, looking towards camera, wary, soft focus. Old lady unchanged, mouth closed.
+
+**S7r-p1, references cut3/S7-d:**
+
+> Using the provided image, change only the background behind the old woman: there is no doorway and no daylight behind her any more. Replace the bright opening with the deep, dim interior of the bunker: a long whitewashed concrete corridor receding into darkness, a single weak bulb far off, and more of the bunker's people standing further back, fading into shadow. The people in the background now face the camera, wary, watching, all in soft focus. The light on her face now comes from in front of her, cool and soft, as if from an open door behind the camera. Keep the old woman exactly as she is: her face, glasses on a chain, grey hair, green cable-knit cardigan, her pose and her closed, neutral mouth, preserving the original style and composition. {house}
+
+**S7r-p2, references cut3/S7-d + B1-lived-tunnel-threads:**
+
+> Using the first image for the old woman, exactly as she is, and the second image for the bunker's interior: the same framing of the old woman, her face, glasses on a chain, grey hair, green cable-knit cardigan and her closed, neutral mouth unchanged. Behind her, instead of a doorway, the dim, cluttered depth of the bunker tunnel from the second image, its arched whitewashed brick going back into darkness under a few weak hanging lamps, and a crowd of people in worn jumpers and coats standing at different depths behind her, all turned towards the camera, wary, soft and out of focus, the furthest lost in shadow. No bright window, no daylight opening anywhere behind her. Cool soft light falls on her face from the front. Anamorphic film frame, cool shadows, shallow depth of field. {house}
+
+**S7r-p3, references cut3/S7-d:**
+
+> Using the provided image, keep the old woman, the lens, the framing and the very shallow depth of field exactly as they are, with the background just as heavily blurred as it is now. Change only what is behind her: the bright doorway and the daylight are gone. Behind her now is the dark inside of the bunker, a dim concrete corridor going back into shadow with one faint, small lamp far away, and the blurred dark shapes of more people standing behind her, turned to face the camera, wary, their faces soft and unreadable in the blur. Nothing bright behind her head. Her face, glasses on a chain, grey hair, green cable-knit cardigan and closed, neutral mouth stay exactly the same, lit softly from the front. {house}
+
+**S7r-p4, references cut3/S7-d + SBHELLOb:**
+
+> Using the first image for the old woman, exactly as she is, and the second image for the bunker interior: the old woman's huge, tall double blast doorway is now behind the camera, so she is lit softly from the front by grey daylight, and behind her is only the dark bunker. A deep, dim concrete hall recedes behind her, and in it stand the bunker's people at several depths, turned towards the camera, wary, completely out of focus, soft dark shapes with the faintest catch of light on their faces, the furthest swallowed by shadow. No doorway, window or daylight behind her. Her face, glasses on a chain, grey hair, green cable-knit cardigan, pose and closed, neutral mouth are unchanged. Anamorphic film frame, cool shadows, extremely shallow depth of field. {house}
+
+| Option | From | Note |
+| --- | --- | --- |
+| `S7r-a` | `work/S7r-p3-a` | Closest to S7-d: a dim concrete corridor, one small lamp, a crowd behind her facing camera, soft. No bright opening. |
+| `S7r-b` | `work/S7r-p3-b` | The same, fewer and darker people, a lamp low behind her left shoulder. |
+| `S7r-c` | `work/S7r-p4-a` | S7-d's brick tunnel kept, people at several depths facing camera, out of focus. The far end is a dim green door, not daylight. |
+| `S7r-d` | `work/S7r-p1-b` | The most confrontational: a crowd packed close behind her in a narrow white corridor, all staring at camera. They are sharper than the brief asks. |
+
+### S8r: beat 17 rev, Over her shoulder, the big doorway (round 2)
+
+**Brief:** From S8-d: over the old lady's shoulder, a HUGE open blast doorway consistent with S6 (Maddie small against the big green double doors in the concrete portal), daylight and the green down beyond, bunting intact.
+
+**S8r-p1, references cut3/S8-d + cut3/S6-c:**
+
+> Using the first image for the old woman's shoulder and grey hair in the near left of frame, the bunker interior and the film look, and the second image for the robot and the scale of the blast doors: over the old woman's shoulder, looking out from inside the bunker towards a huge open blast doorway. The doorway is now much bigger: a massive concrete portal filling most of the frame's height and width, its two heavy green steel blast doors swung wide open, each door far taller than a person. Through it, bright overcast daylight and the green grassy down beyond. Small in the threshold, dwarfed by the doorway, the grey six-wheeled delivery robot from the second image, its amber beacon lit and its torn, faded cloth bunting hanging across its front wheels, its shadow stretching in across the concrete floor. Nothing burnt or wrecked outside. {16mm} {house}
+
+**S8r-p2, references cut3/S8-d + cut3/S6-c + s3-bot-00b-a:**
+
+> Using the first image for the old woman's shoulder and grey hair in the near left of frame and the film look, the second image for the robot and the green blast doors, and the third for the robot's exact design and bunting: a wider shot from deep inside the dim bunker, over the old woman's shoulder, looking up the concrete floor to an enormous open blast doorway, a great square concrete portal with its two towering green steel doors swung inward against the walls. The opening is bright with grey daylight and the green down beyond. The small grey six-wheeled delivery robot sits right in the threshold, tiny against the size of the doorway, amber beacon lit, torn faded cloth bunting across its front wheels, silhouetted and rim-lit. Nothing burnt or wrecked outside. {16mm} {house}
+
+**S8r-p3:** the S8r-p1 prompt again (p1 came back partial).
+
+| Option | From | Note |
+| --- | --- | --- |
+| `S8r-a` | `work/S8r-p1-a` | Big doors swung wide, Maddie in the threshold casting a long shadow in, the down rolling away behind. Her bun matches S8-d. |
+| `S8r-b` | `work/S8r-p2-a` | A deep, clean concrete portal, doors open inward, Maddie small and centred. The most S6-like scale. |
+| `S8r-c` | `work/S8r-p2-b` | Square portal, doors flat against the walls, Maddie silhouetted. The biggest doorway relative to her. |
+| `S8r-d` | `work/S8r-p3-a` | Like a, but with heavier, rivetted doors and Maddie closer. Bunting checked at full size on all four. |
+
+### S10: beat 12, The stand-down (NEW)
+
+**Brief:** Outside the bunker, the kill-bot pack right at the blast doors (S6-c's door, S5-a's approach) has stopped and is turning round to roll away down the hill, dust settling, no damage anywhere. Wide enough to read as 'they turned back'.
+
+**S10-p1, references cut3/S6-c + P1-patrol-blockbuster + cut3/S5-a:**
+
+> Using the first image for the bunker entrance, its green blast doors and the hillside, the second image for the tracked military robots, and the third for the grassy approach: a wide shot of the concrete Cold War bunker entrance set into the grassy down, its heavy green steel blast doors shut and undamaged. Right in front of the doors, a pack of five tracked military robots like the one in the second image has stopped short, and they are turning round on the spot, pivoting on their tracks, the nearest already facing away from the doors and starting to roll back down the hill towards the camera. A haze of dust is settling around them. Nothing burnt, nothing broken, no smoke, no fire. Overcast grey daylight, an anticlimax. {16mm} {house}
+
+**S10-p2, references cut3/S6-c + P1-patrol-blockbuster:**
+
+> Using the first image for the bunker entrance, its green blast doors and the hillside, and the second image for the tracked military robots: a high, wide shot from further down the hill looking up at the concrete bunker entrance with its heavy green steel blast doors, shut and untouched. A pack of five tracked military robots like the one in the second image has come to a halt in a ragged line just in front of the doors, and has turned round: they are rolling away from the doors in single file down the grassy slope, the last one still swinging round. Tyre-like track marks curve in the grass where they turned, and dust drifts and settles in the still air. Nothing burnt, nothing broken, no smoke. Overcast grey daylight. {16mm} {house}
+
+| Option | From | Note |
+| --- | --- | --- |
+| `S10-a` | `work/S10-p1-a` | Four bots stopped at the doors, the nearest already rolling down at camera. Dust hangs. The door is S6's. |
+| `S10-b` | `work/S10-p1-b` | The same, the pack lined up at the door and the lead bot pivoting away. |
+| `S10-c` | `work/S10-p2-a` | High and wide: the pack filing away in single file, with fresh track marks curving in the grass where they turned. Reads 'they turned back' at a glance. |
+| `S10-d` | `work/S10-p2-b` | The same idea: the lead bot swings away right, with turning marks in the grass. |
+
+### Round 2 rejects (in `work/`)
+
+| File | Why |
+| --- | --- |
+| `S9-p2-a` | The pack drives towards camera, away from the downs: the wrong direction for "racing to the downs" |
+| `S9-p3-b` | Fine, kept as a spare. The same footbridge as S9-c, with the rusty bridge rail in shot |
+| `S7r-p2-a`, `S7r-p2-b` | The crowd behind her is sharp and fully lit. Kai liked S7-d's soft background, and these lose it |
+| `S7r-p1-a` | The crowd's faces are sharp, and its people wear webbing and military kit, which is off-look |
+| `S7r-p4-b` | The background men have their backs to camera, not facing Maddie |
+| `S8r-p3-b` | The old lady changed: short bobbed hair instead of S8-d's bun, and she stands in the middle of frame |
+
+### Claude's picks, round 2
+
+| Shot | Pick | Why |
+| --- | --- | --- |
+| S4r | **S4r-a** | Exactly Kai's S4-c with the foreground bot gone: three bots and their dust trails converging on the door |
+| S9 | **S9-c** | The motorway from the footbridge: a formation, dead cars on both verges, the road running straight at the downs |
+| S7r | **S7r-a** | Closest to S7-d (same blur, same her), with the doorway swapped for a dark corridor full of wary faces |
+| S8r | **S8r-b** | A huge, deep portal with Maddie small and centred, the scale of S6, and her bun matching S8-d |
+| S10 | **S10-c** | The curving track marks plus the single-file retreat read "they turned back" without any explanation |
