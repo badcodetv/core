@@ -1,0 +1,42 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "second-half-b-the-door",
+  "prefix": "shb",
+  "title": "GPOM Second Half B: Maddie at the Door",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half B: Maddie at the door",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half",
+  "about": "Cut 3 of the GPOM second half, split in two (Kai, round 2 Q5). Built by scripts/gpom/second-half-video/cut3.py B; notes and plan so far in ../second-half-cut2-notes.json, shots in ../second-half-cut3-shots.md.",
+  "beats": [
+    {
+      "key": "14a",
+      "at": "0.00",
+      "name": "Maddie at the door",
+      "blurb": "Maddie rolls up to the shut bunker door and settles. No wrecks, no smoke."
+    },
+    {
+      "key": "14b",
+      "at": "6.50",
+      "name": "The tannoy",
+      "blurb": "Maddie's voice on the tannoy over Sandra and Derek mid-row (we never see the speaker). They stop dead. Cut to the crowd looking up."
+    },
+    {
+      "key": "15",
+      "at": "15.42",
+      "name": "Hello",
+      "blurb": "Hard cut: the doors already open, Maddie rolls in. We do not see the humans properly yet."
+    },
+    {
+      "key": "17",
+      "at": "24.67",
+      "name": "The old lady and Maddie",
+      "blurb": "The old lady among the crowd, the others in shadow; Maddie over her shoulder in the big doorway. Shot / reverse shot."
+    }
+  ],
+  "boards": {
+    "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8"
+  },
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/preview.mp4"
+  }
+}

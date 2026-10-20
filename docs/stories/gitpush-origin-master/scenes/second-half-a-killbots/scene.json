@@ -1,0 +1,102 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "second-half-a-killbots",
+  "prefix": "sha",
+  "title": "GPOM Second Half A: The Kill Bots",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half A: the kill bots",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half",
+  "about": "Cut 3 of the GPOM second half, split in two (Kai, round 2 Q5). Built by scripts/gpom/second-half-video/cut3.py A; notes and plan so far in ../second-half-cut2-notes.json, shots in ../second-half-cut3-shots.md.",
+  "beats": [
+    {
+      "key": "0",
+      "at": "0.00",
+      "name": "Maddie on the high street",
+      "blurb": "One unbroken travelling shot: the camera backs up the ruined high street and Maddie rolls after it, chatting, her radio playing the tune; down on \"Oh, hello!\", back up on \"Mind how you go\"."
+    },
+    {
+      "key": "1",
+      "at": "47.75",
+      "name": "The roundabout",
+      "blurb": "Kill bots everywhere."
+    },
+    {
+      "key": "2",
+      "at": "51.75",
+      "name": "Patrol, low and huge",
+      "blurb": "A kill bot rolls over the lens."
+    },
+    {
+      "key": "3",
+      "at": "56.25",
+      "name": "Their eyes: the kill-bot HUD",
+      "blurb": "The kill bot's own view keeps moving down the street; the new HUD (patrol, teal). The meter starts to twitch as the row reaches it through the earth."
+    },
+    {
+      "key": "4",
+      "at": "59.25",
+      "name": "Ping. Organic signal: lock",
+      "blurb": "Three pings, ORGANIC SIGNAL - LOCK. No freeze: the view keeps rolling while it listens."
+    },
+    {
+      "key": "6",
+      "at": "63.96",
+      "name": "The lavatory",
+      "blurb": "Hard cut to full volume: Sandra, lip-synced."
+    },
+    {
+      "key": "7",
+      "at": "68.46",
+      "name": "The row, up close",
+      "blurb": "Sandra and Derek, shot by shot, lip-synced."
+    },
+    {
+      "key": "8",
+      "at": "80.29",
+      "name": "KILL MODE ENGAGED",
+      "blurb": "The same HUD on the racing view: patrol, then it flips red. The muffled row keeps the meter moving."
+    },
+    {
+      "key": "9a",
+      "at": "84.79",
+      "name": "One kill bot tears past Maddie",
+      "blurb": "High over the street: the tank passes close, Maddie jolts, a plume of dust hangs."
+    },
+    {
+      "key": "9b",
+      "at": "89.79",
+      "name": "Whoa: Maddie in the dust",
+      "blurb": "Close on Maddie in the dust: she leaps clear on all six wheels, lands, settles. A startled beep."
+    },
+    {
+      "key": "10a",
+      "at": "95.29",
+      "name": "The far race",
+      "blurb": "From the footbridge: the pack races away down the motorway."
+    },
+    {
+      "key": "11",
+      "at": "98.79",
+      "name": "Maddie calls her boss",
+      "blurb": "Maddie's hatch, the boss-hotline antenna. The call; the race (still far) under the AI's lines."
+    },
+    {
+      "key": "10b",
+      "at": "131.96",
+      "name": "The close race",
+      "blurb": "Low in the grass: the pack converges on the bunker door. Maddie over it."
+    },
+    {
+      "key": "12",
+      "at": "136.96",
+      "name": "The stand-down",
+      "blurb": "On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green PEACE MODE. The pack turns and files away down the hill. Then the boss, through Maddie."
+    }
+  ],
+  "boards": {
+    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
+  },
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/preview.mp4"
+  }
+}
