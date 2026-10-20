@@ -92,6 +92,7 @@ narrator and lifted where nobody speaks; sting on A4 from 1:11.8 to 1:30.8 with 
 ## Lyrics
 
 ```lyrics
+[verse 1]
 They say, ya can't make money from a tree
 let's see, each day, not free, ay
 work and get paid though, earn that dough
@@ -111,4 +112,26 @@ this money system is insistent
 on debts existence, so
 don't be hating on the credit rating
 or have resistance to the facts I'm stating
+
+[chorus]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in the basement!
+Printer is burring, now what's occuring?
+
+There are stacks of ecstatic cash
+A real homeopathic stash
+Institutional, dilutional, the usual
+bold, wrong and rash
+
+[verse 2]
+The real attraction becomes the distraction
+the retention of the tension, between all the factions
+state sponsored manipulation
+delivered through the radio station
+
+It's not the standard, propaganda, worth a couple grand-ahh
+No, deep level, dancing with the devil and very welled planned-ahh
+Just to think, that we bust our balls to earn some ink
+Then they come along with a Hewlitt and the kitchen sink
 ```
