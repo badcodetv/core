@@ -94,14 +94,21 @@ narrator and lifted where nobody speaks; sting on A4 from 1:11.8 to 1:30.8 with 
 ```lyrics
 They say, ya can't make money from a tree
 let's see, each day, not free, ay
-work and get paid though, earning that dough
+work and get paid though, earn that dough
 but where does it go? nobody knows!
 
+means of production means a reduction
 standards bleeding, land-lords needing
 quantitative easing, grandma FREEZING!
-means of production, means a reduction
 stimulus checks are next, get wrecked
 
-rent seeking? JUST ABOUT EATING!
+rent seeking? just about eating
 sorry, did I interrupt your meeting?
+Let's get jiggy, just like Biggie
+don't get high off your own supply
+
+whats funny is they always find the money
+
+
+
 ```
