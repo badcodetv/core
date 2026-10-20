@@ -14,6 +14,7 @@ Reads edl.py, the audio plan and voice/trim durations. Writes rough-cut.json bes
   cues: [id, t, dur]
 
     python3 scripts/gpom/second-half-video/timing.py
+    python3 scripts/gpom/second-half-video/timing.py --cut2   # cut 2 part 1 (cut2.py)
 """
 import json
 import pathlib
@@ -24,6 +25,11 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import edl  # noqa: E402
 import shots as S  # noqa: E402
+
+if '--cut2' in sys.argv:  # cut 2 part 1 (beats 0-18): cut2.py; the 29-frame path below is untouched
+    import cut2  # noqa: E402
+    cut2.timing()
+    sys.exit()
 
 FPS = 24
 LEAD, GAP, TAIL = 0.4, 0.35, 0.6

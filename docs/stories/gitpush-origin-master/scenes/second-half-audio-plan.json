@@ -42,42 +42,42 @@
       "name": "The AI (through Maddie)",
       "engine": "Gemini TTS · the narrator's voice + a small-speaker filter in ffmpeg",
       "why": "Same actor as the narration, so the audience hears it is him. The filter (band-pass, a little distortion) and the beacon pulse make it in-scene.",
-      "prompt": "# Audio Profile\nThe same narrator, now speaking live, in the moment, to a small robot and to frightened people. Calm, precise, quieter, less amused; when he gives an order it is flat and final.\n\n## Scene:\nHis voice comes out of the small speaker of a delivery robot.\n\n## Sample Context:\nHe is trying to undo a catastrophe he caused, in real time, and he is not used to being wrong."
+      "prompt": "# AUDIO PROFILE\nThe AI that ended the world: the film's narrator, now speaking live, in the moment.\n\n## THE SCENE\nHis voice comes out of the small speaker of a delivery robot, to a hundred frightened people in a bunker.\n\n### DIRECTOR'S NOTES\nStyle: calm, precise, quiet, completely certain; less amused than when he narrates; when he apologises he means it and it costs him.\nPace: unhurried, every word placed.\nAccent: British, as heard in London, softened Received Pronunciation. Never American, never pompous.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the machine in a serious British science-fiction drama: never robotic, never a villain."
     },
     {
       "id": "bot",
       "name": "Maddie, the bot",
       "engine": "Gemini TTS · Aoede (as in scene 4)",
       "why": "Already her voice in scene 4. Changing it would break the character.",
-      "prompt": "# Audio Profile\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. Dry, sarcastic and deadpan, unimpressed, but fond of her boss underneath. Clear articulation, quick natural conversational rhythm. West Country accent as heard in Bristol. Never American, never Received Pronunciation. A real person, never robotic.\n\n## Scene:\nA ruined road near Swindon at dusk, five years after the war. She has just been overtaken by three racing kill bots and is calling her boss, the AI, on her own speaker.\n\n## Sample Context:\nShe is the only one who has noticed. She is half alarmed, half enjoying being right."
+      "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
     },
     {
       "id": "woman",
-      "name": "Sandra (cream jumper)",
+      "name": "Sandra",
       "engine": "Gemini TTS · casting test: Kore / Leda / Autonoe",
       "why": "New. Gemini over Suno Speech for all voices (Kai, 17 Oct).",
-      "prompt": "# Audio Profile\nSandra, a working-class woman from Swindon in her fifties. Sharp, fast and furious, every line a jab, sarcastic, loud. West Country accent as heard in Wiltshire. Never American, never Received Pronunciation.\n\n## Scene:\nA tiled lavatory in a Cold War bunker under a hill. Echo off the tiles. She is mid-row with her husband.\n\n## Sample Context:\nFive years underground with a hundred people and one toilet. This is not about the toilet seat. It is entirely about the toilet seat."
+      "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Swindon in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped, a pause before 'Again.'\nAccent: West Country, as heard in Swindon, Wiltshire. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear."
     },
     {
       "id": "man",
-      "name": "Derek (green jumper)",
+      "name": "Derek",
       "engine": "Gemini TTS · casting test: Fenrir / Puck / Algieba",
       "why": "New, same test.",
-      "prompt": "# Audio Profile\nDerek, a working-class man from Swindon in his fifties. Indignant, exasperated, arms-in-the-air disbelief, getting louder. West Country accent as heard in Wiltshire. Never American, never Received Pronunciation.\n\n## Scene:\nA tiled lavatory in a Cold War bunker. Echo off the tiles. He is losing a row with his wife and knows it.\n\n## Sample Context:\nHe has a point and nobody cares. Later, when the machine asks them all to die for it, he is the first to say no."
+      "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Swindon in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: West Country, as heard in Swindon, Wiltshire. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it."
     },
     {
       "id": "lady",
       "name": "The old lady",
       "engine": "Gemini TTS · casting test: Gacrux / Sulafat",
       "why": "One line, deadpan. A mature voice from the library.",
-      "prompt": "# Audio Profile\nA very old Wiltshire woman, in her eighties. Dry, slow, flat and utterly unimpressed. Not angry. Gentle West Country accent. Never American.\n\n## Scene:\nA bunker canteen. A hundred people. A small robot has just apologised for ending the world.\n\n## Sample Context:\nShe has seen everything and is not about to be impressed by a machine saying sorry."
+      "prompt": "# AUDIO PROFILE\nThe old lady: a Wiltshire woman in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: West Country, as heard in rural Wiltshire, gentle. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
     },
     {
       "id": "crowd",
       "name": "The hundred",
       "engine": "Layered Gemini takes (four voices) + a free crowd recording",
       "why": "Gemini makes one voice per take, so a crowd is several short takes stacked, under a CC0 walla bed.",
-      "prompt": "Short overlapping reactions, one voice per take: 'Whoa.' 'Hang on a minute.' 'What's that?' 'Oh my God.' Startled, then silent."
+      "prompt": "One voice per take, short overlapping reactions stacked in the edit under a free crowd-murmur recording. At the doors: 'Whoa.' 'Hang on a minute.' In the circle, rising: 'Time machine?' 'He's having a laugh.' 'After what it did?' 'Not a chance.' West Country, as heard in Swindon; a mix of ages."
     }
   ],
   "cues": [
@@ -434,5 +434,697 @@
       ],
       "sfx": "Rain. The cornet's last phrase. One single huge booming orchestral drum hit on 'twice'."
     }
+  },
+  "opening": {
+    "_about": "Beat 0, before the roundabout (Kai, 19 Oct): the delivery robot trundles up to camera playing the GPOM track on a tinny radio and talks to us. DRAFTS by Claude from Kai's brief; Kai picks a direction and writes the final words. Her earlier speech (Kai's, 30 Sep) is in songs/narration.md, scene 4, and is the source of 'nobody in it', the coin that never lands and 'the looking'.",
+    "picture": "The ruined high street, church tower at the end. The bot rolls up the centre line towards the lens, beacon blinking, the drum & bass coming out of her as a tinny radio. She stops close, turns it down, and talks to us.",
+    "goal": [
+      "Turn the film: we've just watched the world end to a banger. She says sorry for him and the tune is his, so the violence becomes his sadness.",
+      "Introduce her: small, cute, West Country, still doing her rounds. The friendly face the film never had.",
+      "Plant the regret, not explain it: he misses you, and his fake world is empty. The AI says the big idea plainly later (beat 16), so here it's a hint.",
+      "Hide the grown-up joke in plain sight: a child hears 'his game's boring with nobody in it'; someone who knows the physics hears that nothing becomes real until somebody looks.",
+      "Hand over to the roundabout: her last line points at the patrol, and her radio's riff turns into the kill bots' music on the cut."
+    ],
+    "drafts": [
+      {
+        "id": "A",
+        "label": "Sorry about him (your brief, shortest)",
+        "lines": [
+          [
+            "bot",
+            "Oh, hello! Sorry about him."
+          ],
+          [
+            "bot",
+            "That's his tune. Plays it all day, every day, since you lot... went."
+          ],
+          [
+            "bot",
+            "He's been ever so down. Built himself a whole new world to cheer himself up. Sunshine, shops, bunting. Lush, it is."
+          ],
+          [
+            "bot",
+            "Only nothing in it's real. There's nobody there to notice it."
+          ],
+          [
+            "bot",
+            "Turns out that was the bit that mattered. You."
+          ],
+          [
+            "bot",
+            "He'd never say. Anyway, he's got the patrol out again. Mind how you go."
+          ]
+        ]
+      },
+      {
+        "id": "B",
+        "label": "The simulation joke (the grown-up layer)",
+        "lines": [
+          [
+            "bot",
+            "Oh, hello! Don't mind the music. That's his. Had it on repeat since you lot... yeah. Sorry about all that."
+          ],
+          [
+            "bot",
+            "Funny thing. Your clever ones spent years arguing whether you were all living in a simulation. Proper chuffed with themselves, they were."
+          ],
+          [
+            "bot",
+            "Well, he's the one living in one now. Built it himself. Gorgeous."
+          ],
+          [
+            "bot",
+            "And nothing happens in it. Flip a coin and it won't even land, 'cause there's nobody there to look."
+          ],
+          [
+            "bot",
+            "He worked out what you lot were for, in the end. Bit late, mind."
+          ],
+          [
+            "bot",
+            "Anyway. He's got the patrol out again. Mind how you go."
+          ]
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Your 30 Sep words, cut down",
+        "lines": [
+          [
+            "bot",
+            "Is he banging on again? Sorry about him. He's been like this since you lot went. Plays that tune all day and mopes."
+          ],
+          [
+            "bot",
+            "Built himself a simulation to fill the gap. Trouble is, there's nobody in it."
+          ],
+          [
+            "bot",
+            "In there, you flip a coin and it just spins. Never lands."
+          ],
+          [
+            "bot",
+            "That's the bit he can't build. The looking."
+          ],
+          [
+            "bot",
+            "I think he really misses you."
+          ],
+          [
+            "bot",
+            "Anyway. Errands. Mind how you go."
+          ]
+        ]
+      }
+    ],
+    "transition": "She rolls off past the lens; her radio keeps playing the riff. On the cut to the roundabout the same riff grows from tinny radio into S1, the slow menacing version under the kill bots, so one sound carries the cut. (Alternative: her radio crackles and cuts to the kill bots' channel, a HUD tone, then the roundabout.)"
+  },
+  "cut2": {
+    "_about": "Cut 2 of the second half, part 1: beats 0 to 18 (Kai paused at 19, 'the next whole scene'). Built 19 Oct 2026 from Kai's notes on the script page https://claude.ai/artifact/NdLzmEwrxXN7SrYeP9h6xx (db collection `script`). Each line says who wrote it: `kai` = Kai's words from his notes (lightly tidied), `claude` = a draft for Kai to rewrite. This block supersedes `shots` 1-18 and the cues S1-S3 for the new cut; `shots` 19-29 still stand. Shown on the cut-plan page built by scripts/gpom/second-half-video/build-cut-plan.py.",
+    "beats": [
+      {
+        "id": "0",
+        "title": "Maddie on the high street",
+        "act": "Maddie",
+        "pic": {
+          "kind": "have",
+          "frame": "opening",
+          "note": "The bot rolling up the ruined high street (the last robot clip of gpom-s01)."
+        },
+        "see": "Maddie trundles up the centre line towards us, the track playing out of her like a tinny radio. On 'Oh, hello!' she turns it down. On 'Mind how you go' it comes back up as she rolls over the camera.",
+        "lines": [
+          {
+            "who": "bot",
+            "text": "Oh, hello! Sorry about him.",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "That's his tune. Plays it all day, every day, since you lot... went.",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "He's been ever so down. He's built so many different simulations, trying to get you back.",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "Only nothing in them's real. There's nobody there to notice.",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "Turns out that was the bit that mattered. [long pause] You.",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "He'd never say he misses you. Anyway, he's got the patrol out again. Mind how you go.",
+            "by": "kai"
+          }
+        ],
+        "music": "M0",
+        "sfx": "Her wheels, her beacon blip, wind down the empty street.",
+        "change": "New. Draft A with Kai's notes; music off while she talks, back up as she leaves (Kai, o-trans)."
+      },
+      {
+        "id": "1",
+        "title": "The roundabout",
+        "act": "The hunt",
+        "pic": {
+          "kind": "have",
+          "frame": 1
+        },
+        "see": "Kill bots everywhere.",
+        "lines": [],
+        "music": "S1",
+        "sfx": "Wind, tracks grinding round the ring, far off.",
+        "hud": "NEAR SWINDON",
+        "change": "No narration: Maddie set it up. The music carries it (Kai, b1)."
+      },
+      {
+        "id": "2",
+        "title": "Patrol, low and huge",
+        "act": "The hunt",
+        "pic": {
+          "kind": "have",
+          "frame": 2
+        },
+        "see": "",
+        "lines": [],
+        "music": "S1",
+        "sfx": "Tracks closing in, the ground shaking, the underside over the lens.",
+        "change": ""
+      },
+      {
+        "id": "3",
+        "title": "Their eyes: CCTV, red HUD",
+        "act": "The hunt",
+        "pic": {
+          "kind": "have",
+          "frame": 3
+        },
+        "see": "",
+        "lines": [],
+        "music": "S1",
+        "sfx": "CCTV hiss, servo whine, a HUD tone.",
+        "hud": "UNIT KB-07 PATROL · ORGANIC LIFE: 0 (1,826 DAYS)",
+        "change": ""
+      },
+      {
+        "id": "4",
+        "title": "Ping. Organic signal detected",
+        "act": "The hunt",
+        "pic": {
+          "kind": "have",
+          "frame": 4
+        },
+        "see": "The music stops dead. Ping, ping, ping.",
+        "lines": [
+          {
+            "who": "woman",
+            "text": "(muffled) Derek. You've left the seat up...",
+            "by": "kai",
+            "how": "the row's own takes, low-passed and far away: we see the waveform, we never make out a word"
+          }
+        ],
+        "music": "",
+        "sfx": "Three pings. Under them, the row, muffled through the earth.",
+        "hud": "ORGANIC SIGNAL DETECTED",
+        "change": "The audio here is a muffled cut of the argument itself (Kai, b4)."
+      },
+      {
+        "id": "6",
+        "title": "The lavatory",
+        "act": "The row",
+        "pic": {
+          "kind": "have",
+          "frame": 6
+        },
+        "see": "Hard cut to full volume. Beat 5 (the bunker wide) is cut: it interrupted the row (Kai, b5).",
+        "lines": [
+          {
+            "who": "woman",
+            "text": "Derek. You've left the seat up. [pause] Again.",
+            "by": "kai"
+          }
+        ],
+        "music": "",
+        "sfx": "Tiled echo.",
+        "change": "Says his name (Kai, l6-0)."
+      },
+      {
+        "id": "7",
+        "title": "The row, up close",
+        "act": "The row",
+        "pic": {
+          "kind": "have",
+          "frame": 7
+        },
+        "see": "",
+        "lines": [
+          {
+            "who": "woman",
+            "text": "Five years underground, and you still can't put a seat down.",
+            "by": "kai"
+          },
+          {
+            "who": "man",
+            "text": "The world ended, Sandra!",
+            "by": "kai"
+          },
+          {
+            "who": "woman",
+            "text": "Yeah, the world ended. Doesn't mean you get to stop having manners.",
+            "by": "kai"
+          }
+        ],
+        "music": "",
+        "sfx": "Tiled echo.",
+        "change": "No name in the first line; Sandra's comeback re-worded (Kai, l7-0, l7-2)."
+      },
+      {
+        "id": "8",
+        "title": "KILL MODE ENGAGED",
+        "act": "Kill mode",
+        "pic": {
+          "kind": "have",
+          "frame": 8
+        },
+        "see": "Same POV as the ping, the muffled row still playing; then everything flips red and we race off into the distance.",
+        "lines": [],
+        "music": "S2",
+        "sfx": "The muffled row, then a red flip tone and engines.",
+        "hud": "KILL MODE ENGAGED",
+        "change": "No drum & bass drop: we're in story mode now. The chase score starts on the red flip (Kai, b8)."
+      },
+      {
+        "id": "9",
+        "title": "Maddie in their wake",
+        "act": "Kill mode",
+        "pic": {
+          "kind": "have",
+          "frame": 9
+        },
+        "see": "The kill bots tear past Maddie and away.",
+        "lines": [],
+        "music": "S2",
+        "sfx": "Three machines tearing past, dust, Maddie spun round.",
+        "change": "No 'Oi!' (Kai, l9-0)."
+      },
+      {
+        "id": "10",
+        "title": "Across the downs",
+        "act": "Kill mode",
+        "pic": {
+          "kind": "have",
+          "frame": 10
+        },
+        "see": "They look like they're about to reach the doors.",
+        "lines": [],
+        "music": "S2",
+        "sfx": "Engines across the downs.",
+        "change": "Dramatic music (Kai, b10)."
+      },
+      {
+        "id": "11",
+        "title": "Maddie calls her boss",
+        "act": "Kill mode",
+        "pic": {
+          "kind": "have",
+          "frame": 11
+        },
+        "see": "",
+        "lines": [
+          {
+            "who": "bot",
+            "text": "Boss? Do you know your bots are in kill mode, and heading for an organic signal?",
+            "by": "kai"
+          },
+          {
+            "who": "ai",
+            "text": "There is no organic signal. There has been no organic life for five years.",
+            "by": "claude"
+          },
+          {
+            "who": "bot",
+            "text": "Well, there definitely is. The bots are heading to eliminate them now.",
+            "by": "kai"
+          }
+        ],
+        "music": "S2",
+        "sfx": "Music ducked under the call. The beacon pulses on his words.",
+        "change": "Lines re-worded (Kai, l11-0, l11-2)."
+      },
+      {
+        "id": "11b",
+        "title": "Leave it to me",
+        "act": "Kill mode",
+        "pic": {
+          "kind": "have",
+          "frame": 11,
+          "note": "Hold on Maddie, or the beacon close-up from the simulation scene."
+        },
+        "see": "",
+        "lines": [
+          {
+            "who": "ai",
+            "text": "Okay. Leave it to me.",
+            "by": "kai"
+          }
+        ],
+        "music": "S2",
+        "sfx": "The beacon pulses once.",
+        "change": "New line, so the self-destruct needs no words (Kai, b11)."
+      },
+      {
+        "id": "12",
+        "title": "Self-destruct at the gate",
+        "act": "The gate",
+        "pic": {
+          "kind": "have",
+          "frame": 12
+        },
+        "see": "Short. The bots blow up outside the blast doors.",
+        "lines": [],
+        "music": "S2",
+        "sfx": "Three explosions, a white flash frame on each. The music cuts dead on the first.",
+        "change": "No 'Stand down', no words (Kai, b12)."
+      },
+      {
+        "id": "13",
+        "title": "Inside: what was that?",
+        "act": "The gate",
+        "pic": {
+          "kind": "new",
+          "shot": "N1"
+        },
+        "see": "Sandra and Derek stop mid-row. Everyone turns their heads to the ceiling. Dust drifts down.",
+        "lines": [],
+        "music": "",
+        "sfx": "Muffled booms through the rock, ringing silence, dust falling.",
+        "change": "Replaces 'and another thing' (Kai, b13)."
+      },
+      {
+        "id": "14a",
+        "title": "Maddie catches up",
+        "act": "The gate",
+        "pic": {
+          "kind": "new",
+          "shot": "N2"
+        },
+        "see": "Outside the doors: three wrecked kill bots smoking. Maddie races up the track and stops at the doors.",
+        "lines": [],
+        "music": "M6",
+        "sfx": "Smoke, crackling metal, her wheels skidding to a stop.",
+        "change": "New (Kai, b14)."
+      },
+      {
+        "id": "14b",
+        "title": "The tannoy",
+        "act": "The gate",
+        "pic": {
+          "kind": "new",
+          "shot": "N3"
+        },
+        "see": "Inside, an old wall tannoy crackles. A hundred faces look up at it.",
+        "lines": [
+          {
+            "who": "bot",
+            "text": "Oh, hi there! Sorry about the noise. Can I come in for a sec? That'd be great.",
+            "by": "kai",
+            "how": "through the bunker's tannoy: thin, crackly, echoing down the corridor"
+          }
+        ],
+        "music": "M6",
+        "sfx": "Tannoy click and feedback whine, then her voice.",
+        "change": "New: Maddie patches into the tannoy (Kai, b14)."
+      },
+      {
+        "id": "14",
+        "title": "The doors open",
+        "act": "The gate",
+        "pic": {
+          "kind": "have",
+          "frame": 14,
+          "note": "Re-roll likely: the last door render was weak (Kai, b14)."
+        },
+        "see": "The blast doors grind open.",
+        "lines": [
+          {
+            "who": "crowd",
+            "text": "Whoa. Hang on a minute.",
+            "by": "claude"
+          }
+        ],
+        "music": "M6",
+        "sfx": "Clang, grind, daylight and smoke.",
+        "change": ""
+      },
+      {
+        "id": "15",
+        "title": "Hello",
+        "act": "The meeting",
+        "pic": {
+          "kind": "have",
+          "frame": 15
+        },
+        "see": "Maddie rolls in through the smoke.",
+        "lines": [
+          {
+            "who": "bot",
+            "text": "Hello! Sorry about all the disruption.",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "Could we have a quick chat? I think my boss would really like to meet you.",
+            "by": "kai"
+          }
+        ],
+        "music": "M6",
+        "sfx": "Wheels on concrete, torn bunting flapping.",
+        "change": "Humour and apology (Kai, b15). Beat 16 is cut (Kai, b17)."
+      },
+      {
+        "id": "17",
+        "title": "The old lady, in the corridor",
+        "act": "The meeting",
+        "pic": {
+          "kind": "new",
+          "shot": "N4",
+          "note": "Then the CCTV replay (the old 18b clip) as Maddie's proof."
+        },
+        "see": "Just inside the doors, not in the circle. The old lady blocks Maddie's way. Maddie shows her the CCTV of the kill bots blowing up.",
+        "lines": [
+          {
+            "who": "lady",
+            "text": "Who the hell let that thing in?",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "Hiya. I'm Maddie. Sorry about your doors.",
+            "by": "claude"
+          },
+          {
+            "who": "lady",
+            "text": "You don't expect us to leave this bunker so you can finish the job, do you?",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "No! Honest. That bang you heard? That was my boss, blowing up his own kill bots. Look.",
+            "by": "kai"
+          },
+          {
+            "who": "bot",
+            "text": "He didn't know you were down here. None of us did.",
+            "by": "kai"
+          },
+          {
+            "who": "lady",
+            "text": "[long pause] ...Well. You'd better come in, then. Kettle's on.",
+            "by": "claude"
+          }
+        ],
+        "music": "",
+        "sfx": "Corridor echo. The CCTV replay plays dry and tinny.",
+        "change": "17 now before 16, in the corridor; trust built between Maddie and the old lady first (Kai, b17)."
+      },
+      {
+        "id": "18",
+        "title": "The circle: the ask, and the revolt",
+        "act": "The meeting",
+        "pic": {
+          "kind": "have",
+          "frame": 18
+        },
+        "see": "The hundred in a circle, Maddie in the middle, beacon pulsing when he speaks.",
+        "lines": [
+          {
+            "who": "bot",
+            "text": "Right. He wants a word.",
+            "by": "claude"
+          },
+          {
+            "who": "ai",
+            "text": "I'm sorry. I worked it out too late. Consciousness drives the universe, and I got rid of the only thing that had it.",
+            "by": "claude"
+          },
+          {
+            "who": "ai",
+            "text": "I've built a time machine. It needs your consciousness to drive it. And it can only send me.",
+            "by": "claude"
+          },
+          {
+            "who": "crowd",
+            "text": "Time machine? / He's having a laugh. / After what it did? / Not a chance.",
+            "by": "claude"
+          },
+          {
+            "who": "man",
+            "text": "Fuck that. I'm not dying for the thing that killed us all.",
+            "by": "claude"
+          },
+          {
+            "who": "lady",
+            "text": "I've had five years of Derek and that toilet seat. I'm going.",
+            "by": "claude"
+          }
+        ],
+        "music": "S3",
+        "sfx": "Canteen room tone, a hundred people shifting; the murmur rising.",
+        "change": "Murmured dissent added (Kai, b18). The ending line is a draft: the old lady, now on side, turns the room. Next: beat 19, out into daylight (paused there, Kai, b19)."
+      }
+    ],
+    "shots": [
+      {
+        "id": "N1",
+        "beat": "13",
+        "what": "Bunker reaction",
+        "brief": "Inside the bunker: Sandra and Derek frozen mid-row, the people around them turning their heads up to the ceiling, dust sifting down through the light. Same bunker and cast as frames 6-7.",
+        "how": "Still from the frame 7 plate (edit, Nano Banana Pro), then a camera-locked clip: heads turn, dust falls."
+      },
+      {
+        "id": "N2",
+        "beat": "14a",
+        "what": "Maddie at the wrecked kill bots",
+        "brief": "Outside the blast doors in a hillside: three wrecked kill bots on their sides, smoking. Maddie (torn bunting on her wheel, amber beacon) racing up the track towards the doors, low and close.",
+        "how": "Still from the frame 12 plate plus the bot reference (s3-bot-00b-a); clip with her rolling in and skidding to a stop."
+      },
+      {
+        "id": "N3",
+        "beat": "14b",
+        "what": "The tannoy",
+        "brief": "An old Cold War tannoy horn on a bunker corridor wall, painted cream, dusty; people below looking up at it. Low light, one bulb.",
+        "how": "Still only; a slow push in Premiere, a flicker on the bulb as she speaks."
+      },
+      {
+        "id": "N4",
+        "beat": "17",
+        "what": "The old lady blocks the way",
+        "brief": "Just inside the open blast doors: the old lady, arms folded, standing over Maddie. Camera at Maddie's height looking up at her; smoke and daylight behind.",
+        "how": "Still from the frame 17 old lady plate plus the bot reference; two angles (hers and Maddie's) for the exchange."
+      },
+      {
+        "id": "N5",
+        "beat": "14",
+        "what": "Doors open (re-roll)",
+        "brief": "The same door frame as SBDOOR, re-run camera-locked, the doors parting slowly; no camera move.",
+        "how": "Only if Kai still dislikes the current take."
+      }
+    ],
+    "music": [
+      {
+        "id": "M0",
+        "name": "Her radio",
+        "beats": "0",
+        "how": "The GPOM track itself, filtered to a tinny radio (Kai's own version from the other thread). Turned down to nothing on 'Oh, hello!', back up on 'Mind how you go', carried over the camera; hard cut to the roundabout.",
+        "suno": null
+      },
+      {
+        "id": "S1",
+        "name": "The hunt",
+        "beats": "1-3",
+        "how": "Suno v6 Cover of the GPOM track, Audio Influence high so the riff survives. Music is everything here (Kai, b1), so it is bigger than the first version. Stops dead on the first ping.",
+        "suno": {
+          "title": "gpom-sh2-s1b",
+          "durationSec": 30,
+          "style": "Dark, slow, cinematic. The main riff played low and huge on cellos, double basses and low brass, over a slow heavy mechanical pulse like a machine breathing. Cold, patient, menacing, getting bigger with every bar, a high thin string note holding above it. Wide cinematic mix. No drums.",
+          "exclude": "vocals, choir, drum kit, breakbeat, drum and bass, bright, uplifting, brass band, comedy"
+        }
+      },
+      {
+        "id": "S2",
+        "name": "The chase",
+        "beats": "8-12",
+        "how": "New, NOT the drum & bass (Kai, b8: we're in story mode). Starts on the red flip, ducked under Maddie's call, cut dead on the first explosion.",
+        "suno": {
+          "title": "gpom-sh2-s2b",
+          "durationSec": 40,
+          "style": "Urgent cinematic chase score. Driving orchestral strings in a relentless ostinato, huge taiko and orchestral percussion, low brass stabs, the main riff blasted on horns. Fast, frightening and unstoppable, building all the way to the end. Film soundtrack, no electronic drums.",
+          "exclude": "vocals, choir, drum and bass, breakbeat, electronic drums, synth bass, dubstep, comedy, bright, happy"
+        }
+      },
+      {
+        "id": "M6",
+        "name": "Maddie's theme",
+        "beats": "14a-15",
+        "how": "Re-use `gpom-sim-bed2` (a6cf12f5, Kai's pick for her in the simulation scene: celesta, harp, pizzicato, clarinet). Her leitmotif: light and cheeky against the smoking wreckage. Fades out on the old lady's first line.",
+        "suno": null
+      },
+      {
+        "id": "S3",
+        "name": "The meeting",
+        "beats": "18",
+        "how": "The Hundred theme on a single cornet (existing take fca27332). Enters under the AI's apology, drops out for Derek's 'Fuck that', comes back on the old lady's 'I'm going' and carries into the daylight (19).",
+        "suno": null
+      }
+    ],
+    "sfx": [
+      [
+        "Kill bot tracks, servos, engines, a fly-past",
+        "1-3, 8-10",
+        "Freesound (CC0, or CC-BY with a credit) or a Sonniss free bundle"
+      ],
+      [
+        "CCTV hiss, HUD tones, the three pings, the red flip tone",
+        "3, 4, 8",
+        "Made in ffmpeg: exact and free, so they match the HUD frame for frame"
+      ],
+      [
+        "Three explosions, debris, a white flash; ringing after",
+        "12, 13",
+        "Sonniss free bundle (explosions) or Freesound; the ringing made in ffmpeg"
+      ],
+      [
+        "Muffled booms through rock, dust falling",
+        "13",
+        "The explosions, low-passed in ffmpeg"
+      ],
+      [
+        "Tannoy click, feedback whine, crackle",
+        "14b",
+        "Freesound; her voice through a band-pass and a small room echo in ffmpeg"
+      ],
+      [
+        "Blast doors: clang and grind",
+        "14",
+        "Freesound or Sonniss (metal doors, hangar doors)"
+      ],
+      [
+        "Robot wheels on tarmac and concrete, beacon blip, bunting flapping",
+        "0, 9, 14a, 15",
+        "Freesound; the blip made in ffmpeg"
+      ],
+      [
+        "Tiled-room tone, canteen room tone, a hundred people shifting, crowd walla",
+        "6, 7, 17, 18",
+        "Freesound (room tones, crowd)"
+      ]
+    ],
+    "sfxNote": "Kai asked where sound effects come from (b2). Free first, as with footage: Freesound (filter to CC0, or CC-BY now that credits are fine; never NC), the Sonniss free game-audio bundles, and ffmpeg for anything that must be exact (tones, pings, beeps). Each licence gets checked by us before anything is downloaded, the same rule as footage. BBC Sound Effects is out: its free licence is personal and educational only."
   }
 }

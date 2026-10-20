@@ -19,6 +19,11 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import shots as S  # noqa: E402
 
+if '--cut2' in sys.argv:  # cut 2 part 1 on gpom-second-half-rough2: picture on V1, one stem per audio track
+    import cut2  # noqa: E402
+    cut2.place([a for a in sys.argv[1:] if a != '--cut2'])
+    sys.exit()
+
 SEQ = 'gpom-second-half-rough'
 IDS = json.loads((pathlib.Path(os.environ['HOME']) / '.cache/badcode-gpom-second-half/premiere-ids.json').read_text())
 IDS['audio']['v-14-crowd-mix.wav'] = 'c3df1d19-4fc1-4f72-bbb5-5dfc0c787499'

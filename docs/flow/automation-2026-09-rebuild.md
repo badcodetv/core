@@ -446,3 +446,19 @@ beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
     then crept forward. The two takes are near-identical, so the cast changed nothing visible. The fix is the
     prompt: describe a move that starts from where the plate has the subject.
 
+
+## 2026-10-19 — the image model menu changed, and a failed model pick wedges the next call (project `be451638`)
+
+78. 🔴 **`model: "Nano Banana 2"` no longer exists.** The image menu now lists **Nano Banana Pro · Nano Banana 2
+    Lite · Nano Banana 2.1**, and `flow_edit_image({ model: "Nano Banana 2" })` fails in 10 s waiting for the
+    menu item. Nothing is spent. Use `"Nano Banana 2.1"`, or omit `model` (Pro).
+79. **Nano Banana Pro x2 read "Generating will use 0 credits"** in the popover (Kai's account). The
+    `platform-controls.md` §2 figure (~12 credits) is third-party and was wrong here, at least today.
+80. 🔴 **A failed model pick leaves the Settings popover open, and its `settings-menu-backdrop` then intercepts
+    the next call's aspect and count clicks** (30 s timeouts on radios that are already `aria-checked`). It
+    cleared once a call ran whose config already matched the trigger label (the short-circuit skips the
+    clicks). ⬜ Owed: `ensureImageModeRebuilt` should `dismissOverlay()` first, and click toggles with a native
+    `el.click()` (law 7).
+81. **`run.mts` against the MCP's own channel worked (n=4).** With `FLOW_CDP_PORT` set to the port that
+    `flow_status` reports, and no MCP call in flight, the cut-2 runner made 4 Omni clips in one wave, all
+    first-frame matched. `MAX_WAVES=1` stops it resubmitting (and paying again) if a harvest misses.

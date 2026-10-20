@@ -18,6 +18,7 @@ Two deviations from the options file, both forced by the plates:
     python3 scripts/gpom/second-half-video/shots.py        # JSON for the runner
 """
 import json
+import os
 import pathlib
 import sys
 
@@ -61,6 +62,44 @@ ELEMENT = {'key': '12-element', 'n': 12, 'still': None,
            'motion': None}  # filled from the options file below
 
 
+# Cut 2 part 1 (beats 0-18): the four new shots N1-N4 from the `cut2.shots` block of
+# second-half-audio-plan.json. Picks, prompts and why: scenes/second-half-cut2-shots.md. Selected with
+# `--cut2` or GPOM_CUT2=1, so the old 29-frame list (and the old rough cut) is untouched. Stills live in
+# storyboard/cut2/, clips land as video/cut2-N<k>.mp4, harvested through video/inbox-cut2/.
+CUT2 = '--cut2' in sys.argv or os.environ.get('GPOM_CUT2') == '1'
+CUT2_SHOTS = [
+    {'key': 'N1', 'beat': '13', 'title': 'Bunker reaction', 'still': 'cut2/N1-b', 'character': None,
+     'motion': "The camera does not move. Dust and grit keep sifting down from the cracked ceiling through the "
+               "fluorescent light, and the tube flickers. The woman in the cream jumper and the man in the dark green "
+               "jumper stay frozen mid-argument with their arms still raised, slowly tilting their heads further up; "
+               "the two people at the right edge look up, then glance at each other. The camera does not move."},
+    {'key': 'N2', 'beat': '14a', 'title': 'Maddie at the wrecked machines', 'still': 'cut2/N2-a', 'character': BOT,
+     'motion': "The camera does not move. The small grey six-wheeled delivery robot races on up the scorched track "
+               "towards the green blast doors, its wheels throwing up dust and grit, its amber beacon flashing and the "
+               "torn bunting flapping, then skids to a stop in front of the doors. Smoke keeps rising from the three "
+               "wrecked machines. The camera does not move."},
+    {'key': 'N3', 'beat': '14b', 'title': 'The tannoy', 'still': 'cut2/N3-a', 'character': None,
+     'motion': "The camera does not move. The bare bulb beside the cream tannoy horn flickers, dims and steadies, as "
+               "if a voice is coming through. Dust drifts in its light. The people below keep looking up at the horn; "
+               "a few shift their weight and glance at each other. The camera does not move."},
+    {'key': 'N4', 'beat': '17', 'title': 'The old lady blocks the way', 'still': 'cut2/N4r2-b', 'character': None,
+     'motion': "The camera does not move. The old woman stands her ground in the open blast doors, arms folded, "
+               "staring down; she tightens her folded arms, lifts her chin and her mouth sets hard. Behind her smoke "
+               "drifts across the hillside in the grey daylight. The amber beacon in the corner pulses slowly. The "
+               "camera does not move."},
+]
+
+
+def cut2_shots():
+    out = []
+    for s in CUT2_SHOTS:
+        out.append({**s, 'n': s['key'], 'option': 'cut2', 'label': f"cut2 beat {s['beat']}",
+                    'src': str(CLIPS / 'storyboard' / f"{s['still']}.jpg"),
+                    'plate': f"gpom-c2-{s['key']}-{s['still'].split('/')[-1]}.jpg",
+                    'out': str(OUT / f"cut2-{s['key']}.mp4")})
+    return out
+
+
 def still_path(sid):
     for d in ('storyboard', 'moodboard'):
         p = CLIPS / d / f'{sid}.jpg'
@@ -70,6 +109,8 @@ def still_path(sid):
 
 
 def shots():
+    if CUT2:
+        return cut2_shots()
     sb = json.loads((SCENES / 'second-half-storyboard.json').read_text())['frames']
     ao = {str(f['n']): f for f in json.loads((SCENES / 'second-half-animation-options.json').read_text())['frames']}
     out = []

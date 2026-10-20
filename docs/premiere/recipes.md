@@ -452,6 +452,17 @@ and cutting on every one of them is the most obvious amateur edit there is. The 
 phrase marks are where the cuts actually want to go. Drop to `--emit bar` only for a passage you
 are deliberately cutting hard.
 
+🟡 **When the grid will not lock, mark the hits instead (2026-10-17, `gpom-main-track.mp3`).** The GPOM
+track is written at 174 BPM, but its detectors split 3:2 (librosa 175.8, aubio 117.3 — the dotted
+kick pattern), so `--start-bpm 174` returned `confidence: none` and a fitted 173.75 grid slipped phase
+section by section: a Suno render does not hold a constant tempo. What worked: librosa onset-strength
+peaks, top 3% in the window, at least 1 s apart, offset by the clip's in-point, laid as `hit` markers
+(the ten strongest `hit ★`) in one transaction — 40 over the 90 s opening montage on `gpom-s01`.
+Not checked by ear; they are candidates to cut on, not a grid. 🔴 **Kai removed them the same night:** 40 markers inside one
+long scene marker are invisible on the ruler (the range marker draws over them), and on the clip
+they gave the edges extra snap targets, so clips stopped butting to each other. If you offer this
+again, offer it on a copy, or only a handful (the drop and phrase starts), and ask first.
+
 **The grid places a cut; it does not generate one.** Hold a shot across several bars and save
 per-beat cutting for the drop.
 

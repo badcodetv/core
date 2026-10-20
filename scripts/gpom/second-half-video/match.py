@@ -20,7 +20,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import shots as S  # noqa: E402
 
-INBOX = S.OUT / 'inbox'
+INBOX = S.OUT / ('inbox-cut2' if S.CUT2 else 'inbox')  # cut 2: --cut2 or GPOM_CUT2=1
 DUPES = INBOX / 'dupes'
 THRESHOLD = 400
 APPLY = '--apply' in sys.argv

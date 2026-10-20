@@ -24,8 +24,10 @@ const REPO = new URL('../../..', import.meta.url).pathname
 const HERE = join(REPO, 'scripts/gpom/second-half-video')
 const PROJECT = 'be451638-f0ac-4f7e-8185-7b89f3c74f5c'
 const STAGE = join(process.env.HOME!, '.cache/badcode-gpom-second-half/plates')
-const INBOX = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/inbox'
-const LOG = join(HERE, 'run.log')
+// Cut 2 (GPOM_CUT2=1): shots.py hands back N1-N4 only, harvested through their own inbox and log.
+const CUT2 = process.env.GPOM_CUT2 === '1'
+const INBOX = `/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/inbox${CUT2 ? '-cut2' : ''}`
+const LOG = join(HERE, CUT2 ? 'run-cut2.log' : 'run.log')
 const WAVE = Number(process.env.WAVE ?? 5)
 const RENDER_MS = Number(process.env.RENDER_MS ?? 12 * 60_000)
 
@@ -196,7 +198,8 @@ try {
   await sleep(5000)
   let stuck = 0
   const blocked = new Set<string>()
-  for (let wave = 1; wave <= 8; wave++) {
+  // MAX_WAVES=1 stops a harvest miss from resubmitting (and billing) a clip that already rendered.
+  for (let wave = 1; wave <= Number(process.env.MAX_WAVES ?? 8); wave++) {
     const todo = missing().filter(s => !blocked.has(s.key))
     if (!todo.length) { say({ event: 'all-present', wave }); break }
     const batch = todo.slice(0, WAVE)

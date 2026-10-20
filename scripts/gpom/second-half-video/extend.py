@@ -16,6 +16,11 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import shots as S  # noqa: E402
 
+if '--cut2' in sys.argv:  # cut 2 part 1: ping-pong into video/rt2/, updates audio/cut2/rough-cut2.json
+    import cut2  # noqa: E402
+    cut2.extend()
+    sys.exit()
+
 RC = S.CLIPS / 'audio' / 'rough-cut.json'
 RT = S.OUT / 'rt'
 FREEZE = {'sh-16-post.mp4'}
