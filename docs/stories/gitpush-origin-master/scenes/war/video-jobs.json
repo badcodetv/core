@@ -1,0 +1,105 @@
+{
+ "duration": 6,
+ "skip": [],
+ "extra": [
+  {
+   "key": "w01",
+   "n": 1,
+   "still": "SW1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The swarm of drones wheels and folds across the white sky like a murmuration of starlings, pouring from left to right, thickening into a dark ribbon and thinning again. The chimneys and TV aerials stay still. Faint drizzle. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w02",
+   "n": 2,
+   "still": "SW1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The swarm streams across the sky above the roundabouts from left to right, its speckled shadow sliding over the wet junction and the rooftops. Rain glistens on the empty road. No vehicles move. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w03",
+   "n": 3,
+   "still": "MW1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The low formation of drones rushes down the empty carriageway towards camera and passes overhead out of frame, kicking up fine spray from the wet tarmac. The open car doors rock gently in the wind. Light rain. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w04",
+   "n": 4,
+   "still": "MW1-c-a",
+   "duration": 6,
+   "motion": "The camera does not move. The smoke from the crashed drone thickens and rolls low across the empty parking bays in the wind. A small orange flame flickers at the snapped wing. Rain starts to spot the tarmac and a cloud shadow darkens the car park. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w05",
+   "n": 5,
+   "still": "TW1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The hovering drone holds in the middle of the empty street, then slowly turns to face the camera. Its rotor wash ripples the puddle beneath it and a crisp packet skitters across the wet paving. Drizzle. Nothing else moves. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w06",
+   "n": 6,
+   "still": "TW1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The tracked robot drives steadily around the roundabout and exits to the right. The pedestrian crossing light changes from red to green for nobody. The open car door swings slightly in the wind. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w07",
+   "n": 7,
+   "still": "TW1-d-b",
+   "duration": 6,
+   "motion": "The camera does not move. The line of four-legged walking robots marches steadily across the empty car park in single file, all in step. One shopping trolley rolls a little in the wind. Overcast, still. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w08",
+   "n": 8,
+   "still": "FD1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. The tracked robot crawls forward across the muddy field, its tracks cutting fresh ruts. The image flickers slightly with digital noise and compression, like a live transmission from a drone camera. The hedgerows are still. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w09",
+   "n": 9,
+   "still": "MT1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The two swarms pour towards each other from left and right and merge in the centre of the sky into one churning, swirling cloud. A few drones tumble out of it trailing thin grey smoke and fall towards the fields far below. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w10",
+   "n": 10,
+   "still": "MT1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The two swarms sweep inward and collide into one swirling knot in the middle of the sky. Drones spin out of the knot trailing thin white smoke and drop slowly toward the patchwork fields. Grey clouds drift. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  },
+  {
+   "key": "w11",
+   "n": 11,
+   "still": "MT1-c-a",
+   "duration": 6,
+   "motion": "The camera does not move. The small drone hovers low over the flooded trench, its rotor wash rippling the brown water. Rain spots the puddles. A splintered branch creaks and drops from a broken tree into the mud. The camera does not move.",
+   "character": null,
+   "why": "Kai 20 Oct: mood board picks \u2014 \"let's get these cut as videos\""
+  }
+ ]
+}

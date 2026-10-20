@@ -1,0 +1,85 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "war",
+  "prefix": "wr",
+  "title": "GPOM War",
+  "heading": "GitPush Origin Master <span class=\"tri\">\u25b2</span> the first battle between autonomous armies",
+  "moodboard_intro": "Swindon today, no humans anywhere, never a hit on screen: drone swarms, empty motorways and roundabouts, the armies meeting, the wreckage after. Dashed cards are what's on the timeline now. Tap This, Maybe or No; leave a note per beat.",
+  "storyboard_intro": "Frames in story order. Pick one still and one way to animate each.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/war",
+  "flow_project": "f75d93cd-b3e2-4c05-bc28-d5493b7a9f0c",
+  "beats": [
+    {
+      "key": "swarm",
+      "at": "128.88",
+      "name": "The swarm arrives",
+      "blurb": "Out of chorus 2's white-out into a white sky: the swarm comes over Swindon."
+    },
+    {
+      "key": "motorway",
+      "at": "",
+      "name": "The motorway",
+      "blurb": "The M4, empty: drones skimming the carriageway, robots crossing the bridge."
+    },
+    {
+      "key": "town",
+      "at": "",
+      "name": "The town",
+      "blurb": "High street, roundabouts, terraces: lights cycling for nobody, machines passing through."
+    },
+    {
+      "key": "feed",
+      "at": "",
+      "name": "The drone feed",
+      "blurb": "A try (Kai): the war as drone-camera footage, grey or thermal, looking down. Maybe we use it, maybe not."
+    },
+    {
+      "key": "meet",
+      "at": "~138",
+      "name": "The armies meet",
+      "blurb": "Two sides in the fields: swarm into swarm, lines across a trench, the shredded tree line."
+    },
+    {
+      "key": "aftermath",
+      "at": "142.04",
+      "name": "The remnants",
+      "blurb": "Never the hit, only what is left: crashed drones on roundabouts, in hedges, on the hard shoulder."
+    }
+  ],
+  "existing": {
+    "meet": [
+      [
+        "WAS-d09-drones-quiet",
+        "On the timeline now (142.0)",
+        "moodboard/current/WAS-d09-drones-quiet.jpg"
+      ]
+    ],
+    "aftermath": [
+      [
+        "WAS-e08-dronewreck",
+        "On the timeline now (145.5)",
+        "moodboard/current/WAS-e08-dronewreck.jpg"
+      ],
+      [
+        "WAS-e08b-dronefield",
+        "On the timeline now (149.8)",
+        "moodboard/current/WAS-e08b-dronefield.jpg"
+      ]
+    ],
+    "town": [
+      [
+        "WAS-e09-green",
+        "On the timeline now (152.5)",
+        "moodboard/current/WAS-e09-green.jpg"
+      ]
+    ]
+  },
+  "styles": {},
+  "looks": {
+    "grey": "Overcast English daylight (matches the clips already there)",
+    "feed": "Drone camera: grainy, grey or thermal"
+  },
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/E3uJbc3dhd1bytChnDaj9i"
+  }
+}
