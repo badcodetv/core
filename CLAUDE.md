@@ -260,13 +260,16 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   [`docs/marketing/`](./docs/marketing/README.md) after a short marketing-specific
   interview (lever, trigger, channels, human gate, dependencies, success signal).
   Content ideas stay with `new-idea`; this owns distribution.
-- **Make a scene (talk → mood board → storyboard → clips):** run the **`new-scene`** skill
-  (`.claude/skills/new-scene/`). Three gated stages for one scene of a film: an interview that
+- **Make a scene (talk → mood board → storyboard → clips → timeline):** run the **`new-scene`** skill
+  (`.claude/skills/new-scene/`). Four gated stages for one scene of a film: an interview that
   decides what the scene argues and pushes it to be interesting; a mood board of Flow image options
-  per beat, voted on a shared board page and narrowed into a storyboard; then two or three ways to
-  animate each frame, picked on the storyboard page and run as Flow clips into a Premiere bin.
-  Generic tools in `scripts/scene/` take the scene folder (`docs/stories/<story>/scenes/<scene>/`,
-  config in `scene.json`). Kai cuts the film himself: the skill ends at clips in a bin.
+  per beat, voted on a shared board page and narrowed into a storyboard; two or three ways to
+  animate each frame, picked on the storyboard page and run as Flow clips into a Premiere bin; then
+  🔑 **a rough cut with real voices, music and sound effects, shown as a playable Premiere-style
+  timeline page** (`scripts/scene/build-timeline.py`) with a note slip on every beat, shot, line and
+  sound, iterated on Kai's notes *before* Premiere (Kai, 2026-10-20: "really saving a huge amount of
+  time"). Generic tools in `scripts/scene/` take the scene folder (`docs/stories/<story>/scenes/<scene>/`,
+  config in `scene.json`). Kai cuts the film himself: a rough cut only enters Premiere as a NEW sequence, when he asks.
 - **Capture / develop a story:** run the **`new-story`** skill
   (`.claude/skills/new-story/`). It scaffolds `docs/stories/<story>/` (concept,
   characters, beats, songs) as the single source of truth and drives idea →

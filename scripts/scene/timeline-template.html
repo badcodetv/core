@@ -1,4 +1,4 @@
-<title>Cut 2 Timeline</title>
+<title>Cut Timeline</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -106,8 +106,8 @@ textarea { font: 14px/1.4 var(--body); color: var(--fg); background: var(--slip)
 </style>
 <div class="wrap">
   <header>
-    <h1>GPOM second half · cut 2, part 1</h1>
-    <p>The <b>gpom-second-half-rough2</b> sequence as it stands in Premiere, beats 0–18. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.</p>
+    <h1 id="heading"></h1>
+    <p id="intro"></p>
     <div class="meta" id="meta"></div>
   </header>
 
@@ -167,6 +167,7 @@ const NOTES = {};           // key -> note text (mine)
 const SLIPS = {};           // key -> [{ta, st}]
 let db = null, me = null, pps = 0, sel = D.beats[0].id, showSfx = true;
 
+$('heading').textContent = D.heading; $('intro').textContent = D.intro;
 $('meta').append(...[D.sequence, tc(D.total) + ' long', D.beats.length + ' beats', D.clips.length + ' clips', D.tracks.length + ' audio tracks'].map(x => el('span', '', x)));
 
 /* ---------- timeline ---------- */

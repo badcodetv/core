@@ -1,12 +1,12 @@
 ---
 name: new-scene
-description: Use to take one scene of a BadCode film from an idea to animated clips, in three gated stages — (1) an interview that decides what the scene is and makes it interesting, (2) a mood board of image options turned into a storyboard of picked stills, (3) animation options per frame turned into Flow video clips. Each stage ends on a shared board page where Kai and Jack pick, and nothing is generated past a stage before its picks are in. Triggers on "new scene", "let's do a new scene", "make a scene for…", "mood board for <scene>", "storyboard <scene>", "animate the storyboard", "turn the picks into videos", "recut <scene> with new shots". Composes story-craft, shot-craft, flow-prompt, flow-automation and premiere-automation.
+description: Use to take one scene of a BadCode film from an idea to a cut, in four gated stages — (1) an interview that decides what the scene is and makes it interesting, (2) a mood board of image options turned into a storyboard of picked stills, (3) animation options per frame turned into Flow video clips, (4) a rough cut with voices, music and sound effects shown as a playable Premiere-style TIMELINE PAGE with a note slip on every beat, shot, line and sound, iterated on Kai's notes before anything goes into Premiere. Each stage ends on a shared page where Kai and Jack pick or note, and nothing is generated past a stage before its picks are in. Triggers on "new scene", "let's do a new scene", "make a scene for…", "mood board for <scene>", "storyboard <scene>", "animate the storyboard", "turn the picks into videos", "recut <scene> with new shots", "cut it together", "rough cut", "timeline page", "give me the timeline to note", "voice it and score it". Composes story-craft, shot-craft, flow-prompt, flow-automation, suno-automation and premiere-automation.
 ---
 
 # New scene (BadCode)
 
-Take **one scene** of a film from a conversation to clips sitting in a Premiere bin. This is the loop
-that made the GPOM opening recut, the second half and the gaze sequence:
+Take **one scene** of a film from a conversation to a noted rough cut. This is the loop that made the
+GPOM opening recut, the second half and the gaze sequence, and (stage 4) GPOM second half cut 2:
 
 ```
 1 INTERVIEW  ──►  brief.md
@@ -16,6 +16,10 @@ that made the GPOM opening recut, the second half and the gaze sequence:
                    │  Kai picks the stills
 3 ANIMATION  ──►  2–3 ways to animate each frame ──► storyboard page ──► Kai picks
   VIDEO      ──►  Flow clips ──► checked ──► imported to a Premiere bin ──► re-roll notes
+                   │  Kai's go on the words and the spend
+4 ROUGH CUT  ──►  voices + music + effects, picture timed to the real voices ──► edl.json + preview.mp4
+  TIMELINE   ──►  timeline page ──► Kai notes beats, shots, lines, sounds, frames ──► rounds
+                   ──► (when Kai asks) a NEW Premiere sequence built from the edl
 ```
 
 **Gated.** Each stage is *talk → approve → produce*. Never spend video credits on a still Kai has
@@ -23,8 +27,11 @@ not picked (the still-approval gate). The one exception is when Kai says to proc
 ("I'm on a call, just make it"): then make the call yourself, animate the best two so he still
 chooses, and say so.
 
-**Kai cuts the film himself.** The skill's contract ends at clips in a Premiere **bin**. Never place
-clips on, or rebuild, a timeline Kai is hand-cutting unless he asks for that exact edit.
+**Kai cuts the film himself.** Stage 3 ends at clips in a Premiere **bin**. Stage 4 cuts a rough
+version *outside* Premiere (ffmpeg) so it can be noted on the timeline page, and only builds it into
+Premiere as a **new sequence with a new name** (`<scene>-rough<N>`) when Kai asks. Never place clips on,
+or rebuild, a timeline Kai is hand-cutting, and never rebuild a rough sequence after he has edited it by
+hand (add your changes around his).
 
 ## Read first
 
@@ -51,8 +58,9 @@ The words live in the repo and the media lives outside it (the clips/ convention
 | `storyboard.json` | `{acts:[{id,title,beats}], frames:[{n, act, title, look, line?, stills:[ids], anim:n}]}` |
 | `animation-options.json` | `{sequence_notes:[{rule,why,source}], frames:[{n, job, options:[{id, label, idea, lanes, veo_prompt, cut, seconds, risk}]}]}` |
 | `video-jobs.json` | picks turned into Flow jobs (format in `scripts/scene/shots.py`) |
+| `script.json` | stage 4: the words per beat `{beats:[{id, title, see, lines:[{who, text, by: kai\|claude, how?}], music, sfx}], voices:[{id, name, profile…}]}` |
 | `picks.md` | append-only record of every pick, note and ruling, dated, Kai's words kept |
-| Media | `/mnt/d/badcode-videos/<story>/clips/<scene>/` with `moodboard/<id>.jpg` and `video/<prefix>-<key>-<still>.mp4` |
+| Media | `/mnt/d/badcode-videos/<story>/clips/<scene>/` with `moodboard/<id>.jpg`, `video/<prefix>-<key>-<still>.mp4`, and stage 4's `voice/`, `sfx/`, `cut/` (`edl.json`, `preview.mp4`, `stems/`) |
 
 `scene.json`:
 
@@ -69,7 +77,8 @@ The words live in the repo and the media lives outside it (the clips/ convention
   "existing": {"door": [["NOW-door", "On the timeline now (replace)", "moodboard/current/NOW-door.jpg"]]},
   "styles": {"threads": "1980s BBC 16mm"},
   "looks": {"news": "Bulletin realism"},
-  "boards": {"moodboard": "<artifact url>", "storyboard": "<artifact url>"}
+  "boards": {"moodboard": "<artifact url>", "storyboard": "<artifact url>", "timeline": "<artifact url>"},
+  "cut": {"edl": "<media>/cut/edl.json", "preview": "<media>/cut/preview.mp4"}
 }
 ```
 
@@ -82,6 +91,7 @@ Tools in `scripts/scene/`, all taking the scene folder:
 | `shots.py <dir>` | the video job list (JSON) from the storyboard, the options and `video-jobs.json` |
 | `run.mts <dir> [keys…]` | animates jobs in Flow in waves, harvests them, names them |
 | `match.py <dir> [--apply]` | names harvested clips by matching their first frame to the plates |
+| `build-timeline.py <dir> <out-dir>` | stage 4's timeline page from `cut.edl` + `cut.preview` (the format is documented in `timeline.py`) |
 
 Worked examples, built before the tools were generalised: the GPOM opening recut
 (`scripts/gpom/build-opening-*.py`, `scripts/gpom/opening-video/`,
@@ -165,6 +175,42 @@ FLOW_CDP_PORT=<port from flow_status> npx tsx scripts/scene/run.mts docs/stories
 - **Re-rolls.** Kai's notes become `extra` rows in `video-jobs.json`, each with `key` like `12-r2`, the still, the duration, the new motion and `why` in his words. If a new still is needed, go back through a small stage-2 round first. Show all candidates and let him pick, unless he said to go ahead.
 
 Log every pick and ruling in `picks.md` as it happens.
+
+## Stage 4: rough cut → timeline page
+
+Kai, 2026-10-20: *"before we've even got to Premiere, we're actually cutting the timeline together with
+speech, sound effects and video… it's really saving a huge amount of time."* The point is to **taste the
+scene** with real voices and real sound, noted beat by beat, before any hand-cutting starts.
+
+**Talk first.** Agree the words (`script.json`, every line tagged `by: kai` or `by: claude` so drafts
+are visible), the music cues and the spend (Suno credits, any new Flow shots). The words have **one home**;
+every page and script reads them from there.
+
+**Produce** (independent, so they can run side by side; one owner per tool):
+
+| Layer | How | Rules |
+| --- | --- | --- |
+| **Voices** | Gemini TTS (`scripts/aistudio-tts.py`, docs/ai-studio): one voice per call, Google's four-part prompt, a TOWN for the accent | Casting test of 2–3 voices for any new role. Re-run a take that is too short for its words **or** has a dead-air gap over 2 s. Keep dry takes; filtered versions (`-fx`) for speakers, tannoys, walls |
+| **Music** | `suno-automation`: pairs at weirdness 30/60, workspace set, duration set | Covers ignore Duration (trim in the mix). **Record only the picks**, never download. Kai's credits |
+| **Effects** | free and licence-checked by us (Freesound CC0 first, CC-BY with the credit recorded; no BBC, no NC, no ShareAlike), plus ffmpeg synths for pings, tones, ringing | `sfx/CREDITS.md` + `sfx/index.json`. Previews are fine for a rough; originals for the final |
+| **New shots** | stage 2–3 in miniature for any beat with no picture | contact-sheet every clip |
+
+**Assemble** (ffmpeg, no Premiere):
+- **Picture is timed to the real voice lengths:** a lead-in before the first line (0.4 s), a gap between lines (0.35 s) and a tail after (0.6 s). Never slow speech. A shot too short for its words is chained, or played forward-then-back (`looped: true` in the edl, which the page stripes so Kai can see where it happens).
+- **One stem per track**: each voice, each music cue, each effects group, all running from t=0. Ducks and drops are written into the stems, and each cue is measured at its moment, because nobody listens until Kai does.
+- Write `<media>/cut/edl.json` in the **timeline format** (`scripts/scene/timeline.py`), a reference mix and `preview.mp4`. Run `scripts/delivery-qc.sh` on anything rendered.
+- Worked example: GPOM second half cut 2 (`scripts/gpom/second-half-video/cut2.py`, `--cut2` on timing / extend / rough_audio / rough_place).
+
+**The timeline page.** `python3 scripts/scene/build-timeline.py <dir> <out-dir>`, then publish
+`<out-dir>/index.html` with every file in `<out-dir>/media/` and `capabilities: {db:{}, user:{}}`, and record
+the URL as `boards.timeline`. Republish to the **same file path** each round so the URL and the notes stay.
+- What Kai gets: the cut playing, a beat row, V1 with thumbnails, every audio track A1…, a playhead, and underneath the beat under the playhead with every line, shot and sound in it, each with a note slip; plus notes pinned to an exact frame.
+- Read the notes with `ArtifactData` (collection `notes`, keys documented in `timeline.py`). Turn them into **one fix list** sorted into words / voices / music / picture / timing, with the cost of each, and get Kai's go before re-assembling. Fixes knock on (a new line changes its length, which moves the picture), so batch them per round.
+- Worked example: https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq (built by `scripts/gpom/second-half-video/build-timeline-page.py`, an adapter onto the same tool).
+
+**Into Premiere, when Kai asks:** a **new** sequence (`<scene>-rough<N>`), media imported to its own bin,
+picture on V1, each stem on its own audio track, every call checked against the sequence name
+(premiere-automation law 8). Kai's open sequences are never touched.
 
 ## Replies
 
