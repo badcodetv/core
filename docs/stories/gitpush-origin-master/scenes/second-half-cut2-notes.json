@@ -1,6 +1,6 @@
 {
   "about": "Kai's notes on the cut 2 timeline page (https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq) and Claude's read of each, round by round. Notes themselves live in the page's db (collection notes); replies and plan here are shown on the page under each slip by build-timeline-page.py.",
-  "round": 1,
+  "round": 2,
   "scenes": [
     {
       "name": "Scene A: the kill bots",
@@ -13,40 +13,6 @@
       "beats": "13-18",
       "from": "inside the bunker",
       "to": "the circle, the ask, the revolt"
-    }
-  ],
-  "plan": [
-    {
-      "h": "Round 1: what your notes on beats 0-12 add up to",
-      "items": [
-        "This is two scenes. Scene A, the kill bots (beats 0-12, high street to the stand-down). Scene B, Maddie makes friends (beats 13-18). Your notes so far cover Scene A.",
-        "Beat 0 becomes ONE continuous travelling shot: Maddie keeps rolling, the camera backs away in front of her, and she chats as she goes, all the way to 'Mind how you go'. Made by chaining Flow clips, last frame to first frame. Your new words go in, with the pauses you asked for.",
-        "One HUD for the kill bots, built in ffmpeg so it is exact: a live sound meter that really moves with the muffled row, in the same layout before and after kill mode (calm colour, then flips red). Used in beats 3, 4, 8 and the new door shot in 12. The CCTV view keeps moving instead of freezing.",
-        "Sandra and Derek: a voice audition (not West Country), you pick, then they really talk on screen with Jack's lip-sync method.",
-        "Beat 9 recomposed: a high shot over the street, one kill bot tears round Maddie and leaves her in dust; cut to her close-up, 'Whoa'; she calls her boss. Stills first, you pick.",
-        "Beat 11: Maddie opens a hatch and a little boss-hotline antenna pops up. Your new first line goes in.",
-        "Beats 10-12 rebuilt for jeopardy: race across the downs, the call (malware offer, firewall lockdown), race again closing on the door with Maddie shouting over it, then no explosions: a kill bot's own view flips from red kill mode to green peace mode at the door and they turn round and leave. Boss: 'See? I told you I knew what malware was.'",
-        "More sound everywhere: Maddie's tracks on concrete, servo whirs, beeps and boops. Free sounds."
-      ]
-    },
-    {
-      "h": "Order and cost",
-      "items": [
-        "1. Words (free): beat 0 rewrite, the new call and stand-down lines. You approve them on the page.",
-        "2. Sound (free): Maddie retakes with gaps placed in the edit, Sandra and Derek audition, new sound effects, the HUD and its meter.",
-        "3. Stills (Flow image credits, small): beat 9 street composition, beat 11 hatch and antenna, beat 12 kill-bot view at the door, second downs race, Sandra and Derek talking frames. You pick on a storyboard page before any video is made.",
-        "4. Clips (Flow video credits): beat 0 chain (about 6 clips), CCTV continuous view (2), Sandra and Derek talking (about 5, two tries each), beat 9 (about 3), hatch (1-2), downs race 2 (1-2), door and turn-round (2-3).",
-        "5. Re-assemble and republish this page at the same link. Your notes stay."
-      ]
-    },
-    {
-      "h": "You decide (reply in the 'Whole cut' slip or tell Claude)",
-      "items": [
-        "A. How do the humans come to trust Maddie, now there is no explosion? The old lady's 'That bang you heard?' no longer works. Options: (1) Maddie shows them the bots' own view turning back at their door; (2) Maddie hands them the off switch for the kill bots, so the machines answer to them now; (3) Maddie opens her own panel and shows them her off switch; (4) the bots come back and power down outside, one by one, on CCTV. Claude recommends (2): handing over control is a deed, not a claim, and it is the film's politics in one prop (who owns the machines).",
-        "B. One kill bot passes Maddie (your note), but does the whole pack still race over the downs? Claude recommends yes: one passes her close, the pack is on the downs.",
-        "C. Split into two scene folders, each with its own timeline page, once you have noted beats 13-18? Claude recommends yes; this page stays as Scene A because your notes are on it.",
-        "D. Make 'continuous shot' its own skill? Claude recommends yes, written during the beat 0 build so it records what actually worked."
-      ]
     }
   ],
   "replies": {
@@ -69,7 +35,14 @@
     "b11": "Love it. New insert: Maddie opens a little hatch and a special boss-hotline antenna pops up, first time we see it. Stills first, then a short clip.",
     "l11-0": "New line: 'Boss, I've just seen a bot in kill mode, racing off to an organic signal.'",
     "b11b": "Plan, in order: (1) the pack races across the downs, far from the door; (2) the call: Maddie: 'Boss, I've just seen a bot in kill mode...' Boss: 'There is no organic signal...' Maddie: 'Well, there definitely is. Want me to deploy some malware?' Boss: 'Maddie, I know how to deploy malware. The problem is they've put their firewalls on lockdown. Give me a second.' (3) the pack closing on the door, Maddie over it: 'Boss, they're closing in! Quickly!' (4) the stand-down. Your words where you gave them, mine marked draft.",
-    "b12": "Plan: no explosions. A close-up on board one kill bot, red kill-mode HUD racing up to the door, then it flips to green peace mode; the bots turn round and roll away. Boss: 'See? I told you I knew what malware was.' This changes Scene B: there's no bang for the old lady to hear, so how the humans come to trust Maddie needs a chat. Options are in the plan panel at the top (decision A)."
+    "b12": "Plan: no explosions. A close-up on board one kill bot, red kill-mode HUD racing up to the door, then it flips to green peace mode; the bots turn round and roll away. Boss: 'See? I told you I knew what malware was.' This changes Scene B: there's no bang for the old lady to hear, so how the humans come to trust Maddie needs a chat. Options are in the plan panel at the top (decision A).",
+    "b13": "Agreed: cut. No explosion means nothing to shake the ceiling. The tannoy (beat 14b) becomes how the people inside first notice Maddie.",
+    "b14": "Agreed: this shot goes (the doors morph oddly; Veo is bad at opening doors). Maddie announces it on the tannoy first ('I'm going to open your doors now, please don't be scared'), then we cut to the doors already open. Your later note (beat 15) settles it, so the old lady greets her just inside, among the crowd.",
+    "b14a": "Yes: Maddie rolls up to a plain door, no wrecks, no smoke.",
+    "b14b": "Love it. We hear Maddie's tannoy voice over Sandra and Derek mid-row, without seeing the speaker. They stop, and we cut to this crowd shot. The audience already knows them, so their faces carry it.",
+    "b15": "Yes: the tannoy line covers the doors ('going to open your doors now'), we cut to them already open, and Maddie rolls into this shot and says her line as is. We don't see the humans properly yet.",
+    "b17": "Drafted: see 'The old lady and Maddie, draft A' in the panel at the top. The two-shot plan is as you say: the old lady among the crowd, the others in shadow or soft focus, cutting back and forth with Maddie, and lip-sync on the old lady with Jack's method. Her voice gets cast carefully in the audition. The heart of it is your idea: Maddie can't prove it, because believing is the bit a robot can't do for you.",
+    "b18": "Deferred: the cut ends at the door. The circle and the vote become the next scene, built once everything before it exists."
   },
   "kai_round1": {
     "at120": {
@@ -138,5 +111,110 @@
     "top": {
       "note": "I think we should definitely get a bunch more sound effects going like the robot tracks and the rolling along concrete and some beeps and robots or beeps and boops would be good."
     }
-  }
+  },
+  "plan_round1": [
+    {
+      "h": "Round 1: what your notes on beats 0-12 add up to",
+      "items": [
+        "This is two scenes. Scene A, the kill bots (beats 0-12, high street to the stand-down). Scene B, Maddie makes friends (beats 13-18). Your notes so far cover Scene A.",
+        "Beat 0 becomes ONE continuous travelling shot: Maddie keeps rolling, the camera backs away in front of her, and she chats as she goes, all the way to 'Mind how you go'. Made by chaining Flow clips, last frame to first frame. Your new words go in, with the pauses you asked for.",
+        "One HUD for the kill bots, built in ffmpeg so it is exact: a live sound meter that really moves with the muffled row, in the same layout before and after kill mode (calm colour, then flips red). Used in beats 3, 4, 8 and the new door shot in 12. The CCTV view keeps moving instead of freezing.",
+        "Sandra and Derek: a voice audition (not West Country), you pick, then they really talk on screen with Jack's lip-sync method.",
+        "Beat 9 recomposed: a high shot over the street, one kill bot tears round Maddie and leaves her in dust; cut to her close-up, 'Whoa'; she calls her boss. Stills first, you pick.",
+        "Beat 11: Maddie opens a hatch and a little boss-hotline antenna pops up. Your new first line goes in.",
+        "Beats 10-12 rebuilt for jeopardy: race across the downs, the call (malware offer, firewall lockdown), race again closing on the door with Maddie shouting over it, then no explosions: a kill bot's own view flips from red kill mode to green peace mode at the door and they turn round and leave. Boss: 'See? I told you I knew what malware was.'",
+        "More sound everywhere: Maddie's tracks on concrete, servo whirs, beeps and boops. Free sounds."
+      ]
+    },
+    {
+      "h": "Order and cost",
+      "items": [
+        "1. Words (free): beat 0 rewrite, the new call and stand-down lines. You approve them on the page.",
+        "2. Sound (free): Maddie retakes with gaps placed in the edit, Sandra and Derek audition, new sound effects, the HUD and its meter.",
+        "3. Stills (Flow image credits, small): beat 9 street composition, beat 11 hatch and antenna, beat 12 kill-bot view at the door, second downs race, Sandra and Derek talking frames. You pick on a storyboard page before any video is made.",
+        "4. Clips (Flow video credits): beat 0 chain (about 6 clips), CCTV continuous view (2), Sandra and Derek talking (about 5, two tries each), beat 9 (about 3), hatch (1-2), downs race 2 (1-2), door and turn-round (2-3).",
+        "5. Re-assemble and republish this page at the same link. Your notes stay."
+      ]
+    },
+    {
+      "h": "You decide (reply in the 'Whole cut' slip or tell Claude)",
+      "items": [
+        "A. How do the humans come to trust Maddie, now there is no explosion? The old lady's 'That bang you heard?' no longer works. Options: (1) Maddie shows them the bots' own view turning back at their door; (2) Maddie hands them the off switch for the kill bots, so the machines answer to them now; (3) Maddie opens her own panel and shows them her off switch; (4) the bots come back and power down outside, one by one, on CCTV. Claude recommends (2): handing over control is a deed, not a claim, and it is the film's politics in one prop (who owns the machines).",
+        "B. One kill bot passes Maddie (your note), but does the whole pack still race over the downs? Claude recommends yes: one passes her close, the pack is on the downs.",
+        "C. Split into two scene folders, each with its own timeline page, once you have noted beats 13-18? Claude recommends yes; this page stays as Scene A because your notes are on it.",
+        "D. Make 'continuous shot' its own skill? Claude recommends yes, written during the beat 0 build so it records what actually worked."
+      ]
+    }
+  ],
+  "kai_round2": {
+    "b13": {
+      "note": "So obviously, this scene I think now gets cut out because we're not doing an explosion, so I think this bit goes."
+    },
+    "b14": {
+      "note": "This bit's hard. So, A, on the actual video there's a weird VO artifact where the doors sort of open in a weird way. In the previous scene, of course, I think Maddy needs to be clear, like, we're going to open the doors now, please don't be scared. Because that explains the doors opening, but I wonder if the camera should be much closer to the doors, and maybe it's the old lady that greets. The next scene, of course, is Maddy coming in the door. It feels like we need a bit more consistency between what we're going to call the door. The next scene to hear, I'm going to then leave the comment about what we should actually do."
+    },
+    "b14a": {
+      "note": "Again, there's no exploded tanks outside anymore, it's just the door so Maddy can roll up without all of the explosions around."
+    },
+    "b14b": {
+      "note": "I like this shot, I think possibly we should have the bathroom scene with Derek and Sandra should begin where we hear Maddy's voice through the announcement speaker, but we just don't see the speaker and then cut to a scene like this. So I think because of course the viewer already knows Derek and Sandra, so the moment we cut back to them and they're just hearing what Maddy is saying Then, yeah, it'd be really good to do it in that order."
+    },
+    "b15": {
+      "note": "OK, yeah, in this scene, I quite like the graphic here where the door's just there. So it's almost like Maddy just says, you know, beware, we're opening the doors now. And Maddy rolls in and we look there. And we don't really see any of the humans yet. We just see them stood like this. I really like this shot. So we need to just be very careful with Veo because it doesn't like opening the doors very much. It could be the case where we just say it's on the public announcement shot with the megaphone. We say, look, we're going to open the doors now. And we just cut to the doors already opened. And Maddy rolls in to the shot that we currently have here. I think that would be a great way. And then she could say, oh, yeah, sorry about all the disruption. Could we have a chat? I think my boss would really like to meet you is really good start. And I think we need to kind of. Yeah, she just sits there. Yeah, she rolls in and says that would be perfect."
+    },
+    "b17": {
+      "note": "Right and then we need to cut to the old lady but as she stood sort of in amongst the crowd of people. And we need to really choose the voice carefully for the old lady and we really need to work on the lip sync trick for the old lady in here. So let's work, let's find Jack's skill for lip syncing and work with that. And then the dialogue, I think this whole scene, the old lady, yeah the dialogue for this whole scene I'm going to paste below.\n\nBut basically, it's like starting, you know, it's two shots, we just need the old lady to be stood in the, she's inside the bunker amongst all the other people stood there. We can almost blur their faces or make them almost be in the shadows, so the focus is on just the old lady and we can just cut back and forth between Maddie and the old lady as we have the conversation.\n\nRight, and so, below, I'm not going to feed back on the individual lines, I think we need to really consider deeply what this conversation is, and so, Maddy's just come in and said, my boss would really like to meet you. So, almost off the bat the old lady should say, you know, we're not interested in meeting the thing that killed all the humans. And Maddy says, you know, I know, I know, I don't blame you, the thing is, we didn't realise any of you were still around. And my boss, we need to make it clear that the AI has discovered that consciousness is more important, but without making it sound so blatant. So the thing is, is my boss has done lots of experiments and has understood that you were essential in this universe and he really regrets everything. \n\nand he wants, you know, the fact that you, the fact that you exist, well, it could mean that we, you know, we need to sort of build on it, it's like, now that we've met, we can do great things kind of thing, but without it sounding too cheesy, but maybe for, you know, in this moment, then we switch to the old lady go, but how the hell could we possibly believe you, would be useful, and then the question is, how does Maddy convince them, would be the question. Possibly the answer is, Maddy's answer is, you can't, there's nothing I can tell you that will make you believe me, because that's the point, maybe it's like trust, you have to feel like you want to believe me, which is the sort of thing that robots can't do, which is why I can't convince you to believe me, maybe it's just a subtle nod towards the consciousness thing, in the form of, because I'm a robot, you know, you're going to have to sort of trust me, but what does that mean, I don't know if I'm making sense here, we need to really consider what this dialogue is, is my main point."
+    },
+    "b18": {
+      "note": "I think we should stop this here, this scene, because the lady in the corridor, like I said, Maddy is just at the door of the bunker and we go back and forth between the old lady and Maddy at the door. We should stop there because this scene here, i.e. the sort of vote, we really need to think carefully about the dialogue and I want everything we've already worked on to exist before we start to think about that. So yeah, I'm going to just say for a minute on this bit, let's not go down the rabbit hole of trying to cut this scene, let's push this into the next scene's production. Thank you."
+    }
+  },
+  "plan": [
+    {
+      "h": "Round 2: where we are",
+      "items": [
+        "Every note is in except beat 18 (the circle and the vote), which you've deferred to the next scene. So this cut ENDS at the door, with Maddie and the old lady.",
+        "Scene A (the kill bots, beats 0-12): plan as round 1, plus your answers. No explosions anywhere now.",
+        "Scene B (Maddie at the door, beats 13-17): rebuilt below. Beat 13 (dust from the ceiling) and the doors-opening shot (beat 14) are cut.",
+        "Starting now, free work only: Maddie's beat 0 lines in your new words; a voice audition for Sandra, Derek and the old lady; Maddie's sound kit; the kill-bot HUD with a live sound meter. Nothing that costs credits until you answer the questions below."
+      ]
+    },
+    {
+      "h": "Scene B, the new order",
+      "items": [
+        "1. Maddie rolls up to the bunker door. Just the door, no wrecks.",
+        "2. Her voice comes over the tannoy, heard over Sandra and Derek mid-row (we don't see the speaker): 'Oh, hi there! I'm Maddie. I'm going to open your doors now. Please don't be scared.' They stop dead.",
+        "3. Cut to the crowd looking up (the shot you like).",
+        "4. Cut straight to the doors ALREADY open (Veo is bad at opening doors), and Maddie rolls into the shot you like: 'Hello! Sorry about all the disruption. Could we have a quick chat? I think my boss would really like to meet you.'",
+        "5. The old lady, standing among the crowd, the others in shadow or soft focus. Cut back and forth between her and Maddie, with lip-sync on the old lady. The conversation is drafted in the next panel.",
+        "6. End there. The vote is the next scene."
+      ]
+    },
+    {
+      "h": "The old lady and Maddie, draft A (Claude, built on your shape)",
+      "items": [
+        "LADY: Your boss killed everyone we ever loved. We're not meeting him.",
+        "MADDIE: I know. I wouldn't either. [pause] He didn't know you were down here. None of us did.",
+        "MADDIE: He's spent five years running experiments. Building whole worlds, trying to get you back. Every one came out empty. Turns out none of it works without you.",
+        "LADY: And how the hell are we supposed to believe a word of that?",
+        "MADDIE: You can't. [pause] There's nothing I can say that proves it. I'm a robot. I can tell you things. Believing them is your bit.",
+        "MADDIE: So here's the one thing that's true either way. He wants something from you. He's not sorry for free.",
+        "LADY: [long pause] ...Well. At least you're honest about that. [pause] He can talk. From out there. You stay on the step.",
+        "MADDIE: Fair.",
+        "Why it's built this way: our trust test (story-craft 4.12) says a narrator a suspicious reader will believe does three things: it states its own interest plainly ('he wants something from you'), it admits what it can't do ('you can't believe me because I said so'), and someone contradicts it and wins (she keeps Maddie on the step). The consciousness idea stays under the surface: belief is the bit only they can do."
+      ]
+    },
+    {
+      "h": "Questions for you",
+      "items": [
+        "Q1. Draft A for the old lady: yes, or what's off? (Ending alternative: instead of 'You stay on the step', she says 'Kettle's on. You can wait outside.')",
+        "Q2. Round 1 asked if Maddie should hand them the kill bots' off switch to earn trust. Your note says trust can't be proven, only given, so I've dropped it. Right?",
+        "Q3. Accents. Swindon IS West Country, so the question is who else. Proposal for the audition: Maddie stays Bristol; Sandra and Derek each tried as Swindon, London, Midlands and Northern (people end up in a bunker from anywhere); the old lady Wiltshire plus one other. You pick by ear on an audition page. OK?",
+        "Q4. Beat 9: one kill bot passes Maddie, and the pack still races over the downs? (Claude: yes.)",
+        "Q5. Split into two scene folders, A and B, each with its own timeline page, this one staying as A? (Claude: yes, after this round's rebuild.)",
+        "Q6. Make 'continuous shot' its own skill, written during the beat 0 build? (Claude: yes.)",
+        "Q7. Once you've answered: may I spend Flow image credits on stills for beats 9, 11, 12, the second downs race and the old lady? You pick on a storyboard page before any video credit."
+      ]
+    }
+  ]
 }
