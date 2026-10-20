@@ -1,0 +1,340 @@
+<title>Cut 2 Timeline</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an edit suite. Monitor + "now" panel on top, the sequence as lanes (beats, V1, A1-A26) in the
+   middle, and an inspector for the selected beat underneath where every clip, line and sound has a note slip. */
+:root {
+  --bg: #eceef1; --panel: #ffffff; --well: #f5f6f8; --line: #d5d9e0; --fg: #16181d; --dim: #646b78;
+  --beat: #5b4bd6; --vid: #6d5ce8; --vox: #2f8a5b; --mus: #2b6fc0; --sfx: #b0731d; --note: #e0a400; --head: #d8261b;
+  --slip: #fff8d6; --slip-line: #e6d27e; --sel: #1b1d22;
+  --ui: "Archivo Narrow", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15161a; --panel: #1d1f24; --well: #24262c; --line: #33363e; --fg: #e9eaee; --dim: #9aa0ab;
+  --beat: #7e70ff; --vid: #6252d6; --vox: #3fae75; --mus: #4b8fe0; --sfx: #d4923a; --note: #f2c230; --head: #ff4a3d;
+  --slip: #2b2816; --slip-line: #5d5428; --sel: #f2f3f5; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #15161a; --panel: #1d1f24; --well: #24262c; --line: #33363e; --fg: #e9eaee; --dim: #9aa0ab;
+  --beat: #7e70ff; --vid: #6252d6; --vox: #3fae75; --mus: #4b8fe0; --sfx: #d4923a; --note: #f2c230; --head: #ff4a3d;
+  --slip: #2b2816; --slip-line: #5d5428; --sel: #f2f3f5; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.45 var(--body) }
+.wrap { max-width: 1400px; margin: 0 auto; padding-block: 20px 80px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 16px }
+header h1 { font: 700 clamp(26px, 4vw, 36px)/1.1 var(--ui); margin: 0; text-wrap: balance }
+header p { margin: 4px 0 0; color: var(--dim); max-width: 75ch }
+.meta { font: 12.5px var(--mono); color: var(--dim); margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px 18px }
+.top { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 16px }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; min-width: 0 }
+.monitor { padding: 10px }
+video { display: block; width: 100%; max-width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 3px }
+.tc { font: 500 22px var(--mono); letter-spacing: .02em; color: var(--beat); font-variant-numeric: tabular-nums }
+.ctrls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px }
+button { font: 600 13px var(--ui); letter-spacing: .03em; color: var(--fg); background: var(--well); border: 1px solid var(--line);
+  border-radius: 4px; padding: 6px 10px; cursor: pointer }
+button:hover { border-color: var(--dim) } button:focus-visible, textarea:focus-visible { outline: 2px solid var(--beat); outline-offset: 1px }
+button.primary { background: var(--beat); border-color: var(--beat); color: #fff }
+.now { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px }
+.eyebrow { font: 600 11.5px var(--ui); text-transform: uppercase; letter-spacing: .09em; color: var(--dim) }
+.now h2 { font: 700 22px/1.15 var(--ui); margin: 0 }
+.sub { font-size: 17px; min-height: 2.9em; border-left: 3px solid var(--vox); padding: 2px 0 2px 10px }
+.sub b { font: 600 12px var(--ui); text-transform: uppercase; letter-spacing: .07em; color: var(--vox); display: block }
+.sub.empty { color: var(--dim); font-style: italic; border-color: var(--line) }
+.timeline { overflow: hidden }
+.tl-bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 8px 10px; border-bottom: 1px solid var(--line) }
+.tl-bar .spacer { flex: 1 }
+.legend { display: flex; gap: 12px; font: 12px var(--mono); color: var(--dim); flex-wrap: wrap }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px }
+.tl { display: grid; grid-template-columns: 112px minmax(0, 1fr) }
+.heads { border-right: 1px solid var(--line); background: var(--well) }
+.heads div { height: var(--h); display: flex; align-items: center; padding: 0 8px; font: 500 11.5px var(--mono); color: var(--dim);
+  border-bottom: 1px solid var(--line); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.heads div b { color: var(--fg); margin-right: 6px; font-weight: 500 }
+.scroller { overflow-x: auto; overflow-y: hidden; position: relative }
+.lanes { position: relative }
+.lane { position: relative; height: var(--h); border-bottom: 1px solid var(--line); cursor: text }
+.ruler { background: var(--well); cursor: pointer }
+.tick { position: absolute; top: 0; bottom: 0; border-left: 1px solid var(--line); font: 10.5px var(--mono); color: var(--dim); padding: 3px 0 0 3px; white-space: nowrap }
+.blk { position: absolute; top: 3px; bottom: 3px; border-radius: 3px; overflow: hidden; cursor: pointer; font: 600 11px/1.2 var(--ui);
+  color: #fff; padding: 2px 4px; white-space: nowrap; text-overflow: ellipsis; box-sizing: border-box; border: 1px solid transparent }
+.blk:hover { filter: brightness(1.12) }
+.blk.sel { border-color: var(--sel); box-shadow: 0 0 0 1px var(--sel) }
+.blk.noted::after { content: ""; position: absolute; top: 2px; right: 2px; width: 7px; height: 7px; border-radius: 50%; background: var(--note); box-shadow: 0 0 0 1.5px rgba(0,0,0,.45) }
+.beatblk { background: var(--beat); font-size: 12px; padding-top: 5px }
+.clip { background: var(--vid); padding: 0; display: flex; align-items: stretch }
+.clip img { height: 100%; width: auto; max-width: 100%; display: block; object-fit: cover; opacity: .92 }
+.clip span { padding: 3px 4px; overflow: hidden; text-overflow: ellipsis }
+.clip.looped { background-image: repeating-linear-gradient(135deg, transparent 0 6px, rgba(255,255,255,.16) 6px 9px) }
+.vox { background: var(--vox) } .mus { background: var(--mus) } .sfx { background: var(--sfx) }
+.atnote { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px dashed var(--note); pointer-events: none; z-index: 3 }
+.playhead { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px solid var(--head); pointer-events: none; z-index: 4 }
+.playhead::before { content: ""; position: absolute; top: 0; left: -6px; border: 5px solid transparent; border-top: 7px solid var(--head) }
+.inspector { padding: 16px; display: flex; flex-direction: column; gap: 18px }
+.ins-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline }
+.ins-head h2 { font: 700 26px/1.1 var(--ui); margin: 0 } .ins-head .tc { font-size: 15px }
+.see { color: var(--dim); max-width: 80ch; margin: 0 }
+.cols { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px }
+.sec h3 { font: 700 13px var(--ui); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 8px; color: var(--dim) }
+.item { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 10px; padding: 10px 0; border-top: 1px dashed var(--line) }
+.item:first-of-type { border-top: 0 }
+.item .go { font: 500 12px var(--mono); color: var(--beat); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; font-variant-numeric: tabular-nums }
+.item .go:hover { text-decoration: underline }
+.item img { width: 96px; max-width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 3px; display: block }
+.who { font: 600 12px var(--ui); text-transform: uppercase; letter-spacing: .07em; color: var(--vox) }
+.said { font-size: 16px }
+.tag { font: 500 10.5px var(--mono); padding: 1px 5px; border-radius: 3px; border: 1px solid var(--line); color: var(--dim); margin-left: 6px; text-transform: uppercase }
+.tag.kai { color: var(--beat); border-color: var(--beat) }
+.slipw { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 2px }
+.slipw label { font: 500 11px var(--mono); color: var(--dim); display: flex; justify-content: space-between }
+.slipw label .ok { color: var(--vox) }
+textarea { font: 14px/1.4 var(--body); color: var(--fg); background: var(--slip); border: 1px solid var(--slip-line); border-radius: 3px;
+  padding: 6px 8px; resize: vertical; min-height: 34px; width: 100%; box-sizing: border-box }
+.beatnote textarea { min-height: 60px }
+.flag { font-size: 13.5px; color: var(--dim); border-left: 3px solid var(--note); padding-left: 10px; margin: 0 }
+.atlist { display: flex; flex-direction: column; gap: 8px }
+.at { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 8px; align-items: start }
+.at button.x { padding: 4px 8px }
+.muted { color: var(--dim); font-style: italic; margin: 0 }
+.focus-flash { animation: flash 1.2s ease-out }
+@keyframes flash { from { background: color-mix(in srgb, var(--note) 35%, transparent) } to { background: transparent } }
+@media (prefers-reduced-motion: reduce) { .focus-flash { animation: none } }
+@media (max-width: 860px) { .top, .cols { grid-template-columns: 1fr } .tl { grid-template-columns: 74px minmax(0, 1fr) } }
+</style>
+<div class="wrap">
+  <header>
+    <h1>GPOM second half · cut 2, part 1</h1>
+    <p>The <b>gpom-second-half-rough2</b> sequence as it stands in Premiere, beats 0–18. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.</p>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="top">
+    <div class="box monitor">
+      <video id="vid" src="media/cut.mp4" playsinline preload="metadata"></video>
+      <div class="ctrls">
+        <button id="play" class="primary" aria-label="Play or pause">Play</button>
+        <button id="back" aria-label="Back one second">−1s</button>
+        <button id="fwd" aria-label="Forward one second">+1s</button>
+        <span class="tc" id="tc">00:00:00:00</span>
+      </div>
+    </div>
+    <div class="box now">
+      <div><div class="eyebrow" id="nowBeatNo">Beat</div><h2 id="nowBeat">—</h2></div>
+      <div class="sub empty" id="nowLine">No one speaking.</div>
+      <div class="slipw" id="atSlip">
+        <label for="atText"><span id="atLabel">Note at the playhead</span><span id="atState"></span></label>
+        <textarea id="atText" rows="2" placeholder="Pause where something's wrong and type here. It's pinned to this exact frame."></textarea>
+        <div class="ctrls" style="margin-top:4px"><button id="atSave">Pin note at 00:00:00:00</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box timeline">
+    <div class="tl-bar">
+      <span class="eyebrow">Timeline</span>
+      <div class="legend"><span><i style="background:var(--beat)"></i>beat</span><span><i style="background:var(--vid)"></i>picture</span><span><i style="background:var(--vid);background-image:repeating-linear-gradient(135deg,transparent 0 3px,rgba(255,255,255,.35) 3px 5px)"></i>looped to fit</span><span><i style="background:var(--vox)"></i>voice</span><span><i style="background:var(--mus)"></i>music</span><span><i style="background:var(--sfx)"></i>effects</span><span><i style="background:var(--note);border-radius:50%"></i>has a note</span></div>
+      <span class="spacer"></span>
+      <button id="sfxToggle">Hide effects tracks</button>
+      <button id="zout" aria-label="Zoom out">−</button><button id="zfit">Fit</button><button id="zin" aria-label="Zoom in">+</button>
+    </div>
+    <div class="tl">
+      <div class="heads" id="heads"></div>
+      <div class="scroller" id="scroller"><div class="lanes" id="lanes"></div></div>
+    </div>
+  </div>
+
+  <div class="box inspector" id="inspector"></div>
+
+  <div class="box inspector">
+    <div class="sec"><h3>Notes pinned to a frame</h3><div class="atlist" id="atlist"><p class="muted">None yet. Pause the video and use the yellow box beside it.</p></div></div>
+    <div class="sec slipw beatnote"><h3>Whole cut</h3><div id="topSlip"></div></div>
+    <div class="sec"><h3>Things Claude flagged while building</h3><div id="flags" style="display:flex;flex-direction:column;gap:8px"></div></div>
+  </div>
+</div>
+<script>
+const D = /*DATA*/null;
+const $ = id => document.getElementById(id);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e };
+const FPS = D.fps;
+const tc = s => { const f = Math.round(s * FPS), ff = f % FPS, t = Math.floor(f / FPS);
+  return [Math.floor(t / 3600), Math.floor(t / 60) % 60, t % 60, ff].map(n => String(n).padStart(2, '0')).join(':') };
+const vid = $('vid'), scroller = $('scroller'), lanes = $('lanes');
+const beatAt = t => D.beats.find(b => t >= b.t && t < b.t + b.d) || D.beats[D.beats.length - 1];
+const NOTES = {};           // key -> note text (mine)
+const SLIPS = {};           // key -> [{ta, st}]
+let db = null, me = null, pps = 0, sel = D.beats[0].id, showSfx = true;
+
+$('meta').append(...[D.sequence, tc(D.total) + ' long', D.beats.length + ' beats', D.clips.length + ' clips', D.tracks.length + ' audio tracks'].map(x => el('span', '', x)));
+
+/* ---------- timeline ---------- */
+const ROWS = () => [
+  { id: 'ruler', label: '', h: 22 },
+  { id: 'beats', label: '<b>B</b>beats', h: 30 },
+  { id: 'v1', label: '<b>V1</b>picture', h: 46 },
+  ...D.tracks.filter(t => showSfx || t.kind !== 'sfx').map(t => ({ id: t.track, label: `<b>${t.track}</b>${t.name}`, h: 24, track: t })),
+];
+function noted(key) { return !!(NOTES[key] && NOTES[key].trim()) }
+function block(lane, t, d, cls, key, title, onclick) {
+  const b = el('div', 'blk ' + cls + (noted(key) ? ' noted' : '') + (key === 'b' + sel ? ' sel' : ''));
+  b.style.left = t * pps + 'px'; b.style.width = Math.max(2, d * pps - 1) + 'px'; b.title = title; b.dataset.key = key;
+  b.onclick = e => { e.stopPropagation(); onclick() }; lane.append(b); return b;
+}
+function render() {
+  const rows = ROWS(), heads = $('heads');
+  heads.replaceChildren(); lanes.replaceChildren();
+  lanes.style.width = Math.ceil(D.total * pps) + 'px';
+  for (const r of rows) {
+    const h = el('div'); h.innerHTML = r.label; h.style.setProperty('--h', r.h + 'px'); heads.append(h);
+    const lane = el('div', 'lane' + (r.id === 'ruler' ? ' ruler' : '')); lane.style.setProperty('--h', r.h + 'px');
+    lane.onclick = e => { const x = e.clientX - lanes.getBoundingClientRect().left; seek(x / pps) };
+    if (r.id === 'ruler') {
+      const step = [1, 2, 5, 10, 15, 30, 60].find(s => s * pps >= 70) || 60;
+      for (let s = 0; s <= D.total; s += step) { const k = el('div', 'tick', tc(s).slice(3, 8)); k.style.left = s * pps + 'px'; lane.append(k) }
+    } else if (r.id === 'beats') {
+      for (const b of D.beats) block(lane, b.t, b.d, 'beatblk', 'b' + b.id, `Beat ${b.id}: ${b.title}`, () => { select(b.id); seek(b.t) }).textContent = b.id + ' · ' + b.title;
+    } else if (r.id === 'v1') {
+      for (const c of D.clips) {
+        const k = block(lane, c.t, c.d, 'clip' + (c.looped ? ' looped' : ''), 'c' + c.k, `${c.name} (${c.d.toFixed(1)}s${c.looped ? ', looped to fit' : ''})`, () => { select(c.beat, 'c' + c.k); seek(c.t) });
+        const i = el('img'); i.src = c.img; i.alt = ''; i.loading = 'lazy'; k.append(i, el('span', '', c.name));
+      }
+    } else {
+      const t = r.track;
+      for (const e of t.events) {
+        const b = block(lane, e.t, e.d, t.kind, 'e' + e.k, `${e.what} — ${e.src}`, () => { select(beatAt(e.t).id, 'e' + e.k); seek(e.t) });
+        if (e.d * pps > 40) b.textContent = e.what;
+      }
+    }
+    lanes.append(lane);
+  }
+  for (const [k, v] of Object.entries(NOTES)) if (k.startsWith('at') && v.trim()) { const m = el('div', 'atnote'); m.style.left = (+k.slice(2) / FPS) * pps + 'px'; lanes.append(m) }
+  const ph = el('div', 'playhead'); ph.id = 'ph'; lanes.append(ph); tick();
+}
+function zoom(z) { const mid = (scroller.scrollLeft + scroller.clientWidth / 2) / pps; pps = z; render(); scroller.scrollLeft = mid * pps - scroller.clientWidth / 2 }
+const fit = () => (scroller.clientWidth - 4) / D.total;
+$('zfit').onclick = () => zoom(fit()); $('zin').onclick = () => zoom(pps * 1.6); $('zout').onclick = () => zoom(Math.max(fit(), pps / 1.6));
+$('sfxToggle').onclick = () => { showSfx = !showSfx; $('sfxToggle').textContent = showSfx ? 'Hide effects tracks' : 'Show effects tracks'; render() };
+
+/* ---------- playback ---------- */
+function seek(t) { vid.currentTime = Math.max(0, Math.min(D.total - 0.01, t)); tick() }
+$('play').onclick = () => vid.paused ? vid.play() : vid.pause();
+$('back').onclick = () => seek(vid.currentTime - 1); $('fwd').onclick = () => seek(vid.currentTime + 1);
+vid.onplay = () => { $('play').textContent = 'Pause'; loop() }; vid.onpause = () => { $('play').textContent = 'Play'; tick() };
+vid.onclick = () => $('play').click();
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'BUTTON') return;
+  if (e.code === 'Space') { e.preventDefault(); $('play').click() }
+  if (e.code === 'ArrowLeft') seek(vid.currentTime - (e.shiftKey ? 1 / FPS : 1));
+  if (e.code === 'ArrowRight') seek(vid.currentTime + (e.shiftKey ? 1 / FPS : 1));
+});
+function loop() { tick(); if (!vid.paused) requestAnimationFrame(loop) }
+let lastBeat = null;
+function tick() {
+  const t = vid.currentTime || 0, ph = $('ph');
+  if (ph) ph.style.left = t * pps + 'px';
+  $('tc').textContent = tc(t); $('atSave').textContent = 'Pin note at ' + tc(t);
+  const b = beatAt(t);
+  if (b.id !== lastBeat) { lastBeat = b.id; $('nowBeatNo').textContent = 'Beat ' + b.id; $('nowBeat').textContent = b.title }
+  const ln = b.lines.find(l => l.t != null && t >= l.t && t < l.t + l.d), s = $('nowLine');
+  s.className = 'sub' + (ln ? '' : ' empty'); s.replaceChildren();
+  if (ln) s.append(el('b', '', ln.name), document.createTextNode(ln.text.replace(/\[[^\]]*\]\s*/g, ''))); else s.textContent = 'No one speaking.';
+  if (!vid.paused) { const x = t * pps; if (x < scroller.scrollLeft || x > scroller.scrollLeft + scroller.clientWidth - 40) scroller.scrollLeft = x - 60 }
+}
+
+/* ---------- notes ---------- */
+function slip(key, label, host) {
+  const w = host || el('div', 'slipw'), l = el('label'), st = el('span'), ta = el('textarea');
+  const id = 'n-' + key; ta.id = id; l.htmlFor = id; l.append(el('span', '', label), st); ta.rows = 1;
+  ta.value = NOTES[key] || ''; ta.disabled = !db; ta.placeholder = db ? '' : 'Sign in to leave notes';
+  let timer; ta.oninput = () => { size(ta); st.className = ''; st.textContent = '…'; clearTimeout(timer); timer = setTimeout(() => save(key, ta.value, st), 700) };
+  w.append(l, ta); (SLIPS[key] = SLIPS[key] || []).push({ ta, st }); requestAnimationFrame(() => size(ta)); return w;
+}
+const size = ta => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 2 + 'px' };
+async function save(key, text, st, extra) {
+  if (!db) return;
+  try {
+    const ref = db.doc('notes/' + key + '__' + me);
+    if (text.trim()) await ref.set({ key, note: text, by: me, at: Date.now(), ...(extra || {}) }); else await ref.delete();
+    NOTES[key] = text; if (st) { st.className = 'ok'; st.textContent = 'Saved' }
+    markNoted(key);
+  } catch (e) { if (st) st.textContent = 'Not saved: ' + (e && e.code || 'error') }
+}
+function markNoted(key) { for (const b of lanes.querySelectorAll(`[data-key="${key}"]`)) b.classList.toggle('noted', noted(key)) }
+
+/* ---------- inspector ---------- */
+function select(id, focusKey) {
+  sel = id; for (const b of lanes.querySelectorAll('.beatblk')) b.classList.toggle('sel', b.dataset.key === 'b' + id);
+  const b = D.beats.find(x => x.id === id), ins = $('inspector'); for (const k in SLIPS) SLIPS[k] = SLIPS[k].filter(s => s.ta.isConnected);
+  ins.replaceChildren();
+  const head = el('div', 'ins-head'), h = el('div');
+  h.append(el('div', 'eyebrow', 'Beat ' + b.id + (b.act ? ' · ' + b.act : '')), el('h2', '', b.title));
+  head.append(h, el('span', 'tc', tc(b.t) + ' → ' + tc(b.t + b.d) + '  (' + b.d.toFixed(1) + 's)'));
+  ins.append(head); if (b.see) ins.append(el('p', 'see', b.see));
+  ins.append(slip('b' + b.id, 'Note on beat ' + b.id + ' as a whole (pacing, order, cut it, a new line)', el('div', 'slipw beatnote')));
+  const cols = el('div', 'cols'), left = el('div', 'sec'), right = el('div', 'sec');
+  left.append(el('h3', '', 'Words'));
+  if (!b.lines.length) left.append(el('p', 'muted', 'No words in this beat.'));
+  b.lines.forEach(ln => {
+    const it = el('div', 'item'), go = el('button', 'go', ln.t != null ? tc(ln.t).slice(3) : '—');
+    go.onclick = () => ln.t != null && seek(ln.t);
+    const txt = el('div'), who = el('div', 'who', ln.name); if (ln.by) who.append(el('span', 'tag' + (ln.by === 'kai' ? ' kai' : ''), ln.by === 'kai' ? 'your words' : 'draft'));
+    txt.append(who, el('div', 'said', ln.text)); if (ln.t == null) txt.append(el('div', 'muted', 'No take of its own (reuses another line).'));
+    it.append(go, txt, slip('l' + b.id + '-' + ln.i, 'Note on this line (words, delivery, voice)')); it.dataset.key = 'l' + b.id + '-' + ln.i; left.append(it);
+  });
+  right.append(el('h3', '', 'Picture'));
+  for (const c of D.clips.filter(c => c.beat === b.id)) {
+    const it = el('div', 'item'), side = el('div'), i = el('img'); i.src = c.img; i.alt = c.name; i.loading = 'lazy';
+    const go = el('button', 'go', tc(c.t).slice(3) + ' · ' + c.d.toFixed(1) + 's'); go.onclick = () => seek(c.t); side.append(i, go);
+    const txt = el('div'); txt.append(el('div', 'said', c.name)); if (c.looped) txt.append(el('div', 'muted', 'Plays forward then back to fill the time.'));
+    it.append(side, txt, slip('c' + c.k, 'Note on this shot')); it.dataset.key = 'c' + c.k; right.append(it);
+  }
+  const sounds = D.tracks.flatMap(t => t.events.map(e => ({ ...e, kind: t.kind, track: t.track })))
+    .filter(e => e.kind !== 'vox' && e.t < b.t + b.d && e.t + e.d > b.t);
+  const seen = new Set(), list = sounds.filter(e => { const k = e.track + e.what; if (seen.has(k)) return false; seen.add(k); return true });
+  right.append(Object.assign(el('h3', '', 'Music and effects'), { style: 'margin-top:14px' }));
+  if (!list.length) right.append(el('p', 'muted', 'Nothing but the voices.'));
+  for (const e of list) {
+    const it = el('div', 'item'), go = el('button', 'go', e.track); go.onclick = () => seek(Math.max(e.t, b.t));
+    const txt = el('div'); txt.append(el('div', 'said', e.what), el('div', 'muted', e.src));
+    it.append(go, txt, slip('e' + e.k, 'Note on this sound')); it.dataset.key = 'e' + e.k; right.append(it);
+  }
+  cols.append(left, right); ins.append(cols);
+  if (focusKey) { const t = ins.querySelector(`[data-key="${focusKey}"]`); if (t) { t.scrollIntoView({ block: 'center', behavior: 'smooth' }); t.classList.add('focus-flash') } }
+}
+
+/* ---------- pinned notes ---------- */
+function renderAt() {
+  const list = $('atlist'), ks = Object.keys(NOTES).filter(k => k.startsWith('at') && NOTES[k].trim()).sort((a, b) => +a.slice(2) - +b.slice(2));
+  list.replaceChildren(); if (!ks.length) { list.append(el('p', 'muted', 'None yet. Pause the video and use the yellow box beside it.')); return }
+  for (const k of ks) {
+    const t = +k.slice(2) / FPS, row = el('div', 'at'), go = el('button', 'go', tc(t)); go.onclick = () => { seek(t); select(beatAt(t).id) };
+    const x = el('button', 'x', 'Delete'); x.onclick = async () => { await save(k, '', null); renderAt(); render() };
+    const body = el('div'); body.append(el('div', 'who', 'Beat ' + beatAt(t).id), el('div', 'said', NOTES[k]));
+    row.append(go, body, x); list.append(row);
+  }
+}
+$('atSave').onclick = async () => {
+  const text = $('atText').value; if (!text.trim()) return; const f = Math.round(vid.currentTime * FPS), k = 'at' + f;
+  const prev = NOTES[k] ? NOTES[k] + '\n' : '';
+  await save(k, prev + text, $('atState'), { tc: tc(f / FPS), beat: beatAt(f / FPS).id });
+  $('atText').value = ''; renderAt(); render();
+};
+
+for (const f of D.flags) $('flags').append(el('p', 'flag', f));
+
+pps = fit(); render(); select(sel);
+vid.addEventListener('loadedmetadata', tick);
+window.addEventListener('resize', () => { if (pps < fit()) zoom(fit()) });
+
+(async () => {
+  db = await claude.use('db'); const user = await claude.use('user');
+  if (!db || !user) { db = null; $('atText').disabled = true; $('atText').placeholder = 'Sign in to leave notes'; $('atSave').disabled = true; return }
+  me = await user.id();
+  const snap = await db.collection('notes').where('by', '==', me).get();
+  for (const d of snap.docs) { const v = d.data(); NOTES[v.key] = v.note || '' }
+  slip('top', 'Note on the whole cut', $('topSlip'));
+  render(); select(sel); renderAt();
+})();
+</script>
