@@ -237,6 +237,7 @@ function tick() {
   $('tc').textContent = tc(t); $('atSave').textContent = 'Pin note at ' + tc(t);
   const b = beatAt(t);
   if (b.id !== lastBeat) { lastBeat = b.id; $('nowBeatNo').textContent = 'Beat ' + b.id; $('nowBeat').textContent = b.title }
+  if (b.id !== sel && !typing()) select(b.id);
   const ln = b.lines.find(l => l.t != null && t >= l.t && t < l.t + l.d), s = $('nowLine');
   s.className = 'sub' + (ln ? '' : ' empty'); s.replaceChildren();
   if (ln) s.append(el('b', '', ln.name), document.createTextNode(ln.text.replace(/\[[^\]]*\]\s*/g, ''))); else s.textContent = 'No one speaking.';
@@ -264,6 +265,9 @@ async function save(key, text, st, extra) {
 function markNoted(key) { for (const b of lanes.querySelectorAll(`[data-key="${key}"]`)) b.classList.toggle('noted', noted(key)) }
 
 /* ---------- inspector ---------- */
+// The inspector follows the playhead, except while a note in it is being typed (it catches up after).
+const typing = () => { const a = document.activeElement; return !!(a && a.tagName === 'TEXTAREA' && $('inspector').contains(a)) };
+$('inspector').addEventListener('focusout', () => setTimeout(() => { const b = beatAt(vid.currentTime || 0); if (b.id !== sel && !typing()) select(b.id) }, 0));
 function select(id, focusKey) {
   sel = id; for (const b of lanes.querySelectorAll('.beatblk')) b.classList.toggle('sel', b.dataset.key === 'b' + id);
   const b = D.beats.find(x => x.id === id), ins = $('inspector'); for (const k in SLIPS) SLIPS[k] = SLIPS[k].filter(s => s.ta.isConnected);
