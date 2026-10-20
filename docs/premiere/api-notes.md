@@ -2042,3 +2042,23 @@ In 27.0 beta **`Application` is gone from the types altogether**. Keep using `ho
 [MogrtText write-back bug (27.0 b57)](https://community.adobe.com/bug-reports-733/mogrttext-write-back-causes-getstartvalue-to-reject-previously-readable-text-1643631) ·
 [Color Mode (beta)](https://helpx.adobe.com/premiere/desktop/correct-color/color-mode-fundamentals/color-mode-basics.html) ·
 `npm pack @adobe/premierepro@{26.3.0,26.5.1,27.0.0-beta.57}` diffed by hand.
+
+## 2026-10-19: Karen `v2 narration` (clone, two ripple inserts, 43+43 overwrites)
+
+- ✅ **`premiere_insert_clip` in insert mode ripples EVERY track, not only V1/A1.** Inserting an 8 s clip at 98.04 pushed
+  V1, A1, the muted narration track A3 and the music track A4 by 8 s. The music had a boundary at the same time, so it
+  left a clean 8 s gap there (filled by extending the clip before it with `trim_clip` `outPoint`).
+- ✅ **Overwriting a same-length audio file at the same start replaces the item cleanly**: used to swap 43 placed lines for
+  loudness-levelled copies (4 evals of ≤11, no failures).
+- 🔴 **Importing files whose names already exist in the project makes `resolveProjectItem` by name ambiguous.** Give every
+  re-render a new prefix (`nar_`, `lvl_`, `lvl2_`).
+- 🔴 **`premiere_export_frame` at 3840×2160 timed out with nothing written** (the `.png.png` trap or the size). For checking
+  shots, pull frames from the source files with ffmpeg at the clip's in/out instead.
+- 🔴 **The configured export preset (`badcode.local.json` → Premiere **2026**'s `01 - Match Source - High bitrate.epr`) rendered a
+  3840×2160 sequence as 1920×1080 with **SAR 2:1 at 23.976** in Premiere 25.6** (picture squashed into a pillar). Passing
+  `preset: C:\Program Files\Adobe\Adobe Premiere Pro 2025\MediaIO\systempresets\4E49434B_48323634\High Quality 1080 HD.epr`
+  gave a correct 1920×1080 1:1 24 fps file. Use the preset from the installed version Jack runs; ffprobe the SAR every render.
+- ✅ **Clips imported into this project come in at Scale 100** even though the cut's 1080p clips sit at 200 in the 4K sequence;
+  set Motion param 1 to 200 after placing.
+- ✅ **Markers can be removed from eval:** `ppro.Markers.getMarkers(seq)` → `getMarkers()` → `createRemoveMarkerAction(m)` in a
+  transaction.

@@ -20,9 +20,8 @@ media: [video, song, comic]
 > disagree. Source: [`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md).
 >
 > - **The ending is a cliffhanger.** The President, sacked by Sean AI, calls Karen back. "To be continued."
-> - **The explicit moral goes** (the professor's *"persistence is key…"* line, §5.1 and shot 5.1b). The notes
->   don't say whether the rest of Act 5 (the lecture, the statue) stays or is replaced by the call. Ask before
->   cutting it.
+> - **The explicit moral goes** (the professor's *"persistence is key…"* line, §5.1 and shot 5.1b). The rest
+>   of Act 5 goes too (Jack, 19 Oct, below).
 > - **Fix it in narration, not a re-edit.** The footage stays; the narrator does the work.
 > - **The narrator is the AI from the future,** direct and aggressive, talking to the viewer. He sets Karen,
 >   who loses her job to AI and complains and escalates, against a friend who stayed in bed. The point: act,
@@ -32,10 +31,21 @@ media: [video, song, comic]
 >   Karen to Tarquin ([Camping](../camping/README.md)) through the President, and to the
 >   [BadCode universe](../../ideas/badcode-universe.md). Which AI coordinates them is not said. Sean AI is the
 >   one who sacks them all, so if it is him he changes sides.
-> - **Owed by Jack:** the new narrator script and the "to be continued" ending in the Karen video.
-> - **Still open:** the new narration is the natural place to name who benefits from the sackings
->   ([`the-reader.md`](../../marketing/the-reader.md) rule 6; the Karen gate in
->   [`shorts-karen-camping.md`](../../marketing/shorts-karen-camping.md) §9). The call didn't rule on it.
+> - **Owed by Jack:** the new narrator script and the "to be continued" ending in the Karen video. The beat
+>   brief is [`narration/script-v2-brief.md`](./narration/script-v2-brief.md) (2026-10-19).
+>
+> **Ruled by Jack, 19 Oct 2026** (these answer the open questions above):
+>
+> - **Act 5 is cut:** the lecture, the moral and the statue. The film ends on Sean AI's card, then **one new
+>   clip of the sacked President, phone in hand**, calling Karen back, then *"To be continued."*
+> - **The friend in bed is Susan.** She sends Karen to the phone box, then stays in bed. Jack's narrator line:
+>   *"People like Susan lie in bed all day, doing nothing about AI taking everyone's jobs. Karen, well, she
+>   rolls her sleeves up and actually does something about it."*
+> - **Susan was fired too, by AI Sean.** The night out is the two of them drinking because of the sackings.
+> - **The AI is called "AI Sean"**, not "Sean AI". Older text below still says Sean AI; read it as AI Sean.
+> - **No beneficiary line in the film.** Who profits from Sean AI is not named in the narration. (Any Karen short
+>   still owes it in its caption: [`the-reader.md`](../../marketing/the-reader.md) rule 6,
+>   [`shorts-karen-camping.md`](../../marketing/shorts-karen-camping.md) §9.)
 
 ## Key concept
 

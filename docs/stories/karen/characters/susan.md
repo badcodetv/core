@@ -12,6 +12,11 @@ signals: bar seat next to Karen, olive suede bomber, phone to her ear in bed, un
 Karen's friend. Named **Susan** on 2026-08-11 (Kai) — before that the canon only
 ever called her *"the friend."*
 
+> **Jack, 19 Oct 2026:** Susan **was fired too, by AI Sean**, the same week, so the night out is the two of them drinking
+> because of the sackings. And she is **the one who stays in bed**: she sends Karen to ring, then does nothing.
+> The narrator sets the two against each other (line in
+> [`../narration/script-v2-brief.md`](../narration/script-v2-brief.md) beat 6).
+
 She is the drinking buddy in Act 1 and, the morning after, **the hinge of the whole
 story**. Karen wakes with no phone, no memory and no job, gets to the phone box, and
 rings Susan. Susan is the one who tells her what actually happened — *"Karen.

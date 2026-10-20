@@ -2,7 +2,8 @@
 
 > 🔴 **15 Oct 2026 call:** the narration script is being rewritten. The narrator is now the AI from
 > the future, direct and aggressive, talking to the viewer, and the ending is a "to be continued"
-> cliffhanger with no moral. Jack owns it. `script.md` below is the old script. Detail: the top of
+> cliffhanger with no moral. Jack owns it. `script.md` below is the old script. **The new
+> beat brief is [`script-v2-brief.md`](./script-v2-brief.md)** (2026-10-19). Detail: the top of
 > [`../story.md`](../story.md).
 
 Everything needed to voice and underscore the story video. Three files, in the
