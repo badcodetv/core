@@ -104,11 +104,11 @@ stimulus checks are next, get wrecked
 
 rent seeking? just about eating
 sorry, did I interrupt your meeting?
-Let's get jiggy, just like Biggie
+now let's get jiggy, just like Biggie
 don't get high off your own supply
 
-whats funny is they always find the money
-
-
-
+this money system is insistent
+on debts existence, so
+don't be hating on the credit rating
+or have resistance to the facts I'm stating
 ```
