@@ -225,5 +225,26 @@
     "Q5": "Split into two scene folders: yes.",
     "Q6": "Continuous-shot skill: yes.",
     "Q7": "Spend image credits: yes, absolutely (they read 0 credits on Kai's plan)."
+  },
+  "still_picks_cut3": {
+    "final": {
+      "S1": "c",
+      "S2": "c",
+      "S3": "c",
+      "S5": "a",
+      "S6": "c",
+      "S9": "c (motorway)",
+      "S4r": "a",
+      "S10": "c",
+      "S7r": "a",
+      "S8r": "b"
+    },
+    "page": "https://claude.ai/artifact/AtkCtF7fmqohqk1SZhwiZs",
+    "notes": {
+      "S4": "remove foreground tank; add a far race (fields or motorway) before the call",
+      "S5": "see the outside of the bunker",
+      "S7": "Maddie's POV from the door into the bunker; background people look at camera; no door behind the old lady",
+      "S8": "door much bigger, Maddie small, consistent with S6"
+    }
   }
 }
