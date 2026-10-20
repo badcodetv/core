@@ -1,0 +1,751 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Every shot is built in layers: Veo animates the world with the camera locked, Premiere does every camera move, cut and grade, and ffmpeg draws every word (TRANSFERRING…, HEADCOUNT 0, the prompter) and the invader flips.",
+   "why": "Camera movement is what makes Veo redraw a scene, so locking it stops that. Premiere's API cannot write text. The exceptions are the abstract signal plates, which have no window grid, so Veo may rush the camera there like the cable clip.",
+   "source": "docs/video-fx/hybrid-method.md"
+  },
+  {
+   "rule": "The rooms can be match-cuts: half a second of the opening's own clip, then a hard cut on the beat to the same frame, empty.",
+   "why": "Every empty still was made by editing the original, so the frames should line up. A hard cut makes the viewer do the subtraction: they were here, now they're not. This is strongest on the trading floor, where they were laughing.",
+   "source": "docs/cinematography/motion-and-cutting.md §3 (hard cut); picks.md (Kai: 'they were laughing before and then they're not')"
+  },
+  {
+   "rule": "Signal plates are 1–1.5s cutaways, cut in amongst the bigger shots on the beat grid (0.345s at 174 BPM).",
+   "why": "Kai's note: 'five or six of these… to edit in amongst other scenes.' They're glue, not destinations.",
+   "source": "picks.md (signal note)"
+  },
+  {
+   "rule": "Flashes 3 a second or fewer (the invader strobe, the six flips, the press array).",
+   "why": "Photosensitivity.",
+   "source": "docs/video-fx/hybrid-method.md §5"
+  },
+  {
+   "rule": "Generate 6s, use 1–3s. Count 1, Omni 1.1 Flash, Frames, 16:9.",
+   "why": "Long clips redraw the scene after a few seconds, so we only need the clean start.",
+   "source": ".claude/skills/new-scene/SKILL.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "The cable rush: the signal enters (kept).",
+   "options": [
+    {
+     "id": "a",
+     "label": "Keep as it is",
+     "idea": "Already a finished clip (d03-cable), and you kept it. No new generation.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Trim to the beat; nothing else."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Opens the scene at 74.00; cut on the white-out.",
+     "seconds": "1.5–2",
+     "risk": "None.",
+     "source": "picks.md (round 1 votes)"
+    }
+   ]
+  },
+  {
+   "job": "A cutaway beat: the signal travelling, between the bigger shots.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Veo rush (camera moves)",
+     "idea": "Like the cable clip you love: Veo pushes the camera hard into the fibre bundle. Abstract light with no window grid is where Veo may move the camera safely.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A fast forward rush, light streaking past."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use 1–1.5s from the cleanest stretch; speed-ramp into the cut."
+      }
+     ],
+     "veo_prompt": "The camera rushes forward fast along the bundled fibre-optic cable, chasing a bright white pulse of light that races ahead through the strands into darkness. Silver filaments streak past the lens. Near-black, cold silver light, fine grain.",
+     "cut": "Hard cut in on a beat; hard cut out while still moving.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Past ~4s Veo redraws the scene; we only use the first seconds.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Locked, the light does the work",
+     "idea": "The camera holds still; only the light moves: one pulse travels through and flares. Premiere adds a quick eased push.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The pulse races through the frame and flares."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A 10% push over the shot, eased."
+      }
+     ],
+     "veo_prompt": "The camera does not move. A single bright white pulse of light races along the fibre-optic bundle from the back to the cut ends and flares out of the strands. Everything else stays still and dark. The camera does not move.",
+     "cut": "Cut on the flare.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Locked abstract plates can come back too still; the push rescues it.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 2
+  },
+  {
+   "job": "The chip board: the signal reaches the hardware (kept).",
+   "options": [
+    {
+     "id": "a",
+     "label": "Keep as it is",
+     "idea": "Already a finished clip (d04-board), and you kept it. No new generation.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Trim to the beat; nothing else."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Cut on the chip flare.",
+     "seconds": "1.5–2",
+     "risk": "None.",
+     "source": "picks.md (round 1 votes)"
+    }
+   ],
+   "n": 3
+  },
+  {
+   "job": "A cutaway: the network inside the building, one cable carrying it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Veo rush (camera moves)",
+     "idea": "Like the cable clip you love: Veo pushes the camera hard into the patch panel. Abstract light with no window grid is where Veo may move the camera safely.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A fast forward rush, light streaking past."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use 1–1.5s from the cleanest stretch; speed-ramp into the cut."
+      }
+     ],
+     "veo_prompt": "The camera pushes in fast toward the single glowing cable on the patch panel, the hundreds of tiny status lights streaking past at the edges. Cold white glow, near-black, fine grain.",
+     "cut": "Hard cut in on a beat; hard cut out while still moving.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Past ~4s Veo redraws the scene; we only use the first seconds.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Locked, the light does the work",
+     "idea": "The camera holds still; only the light moves: one pulse travels through and flares. Premiere adds a quick eased push.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The pulse races through the frame and flares."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A 10% push over the shot, eased."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The glowing cable pulses brighter and brighter; down the rack the tiny green status lights blink faster and faster in a wave. The rack and cables stay rigid. The camera does not move.",
+     "cut": "Cut on the flare.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Locked abstract plates can come back too still; the push rescues it.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 4
+  },
+  {
+   "job": "Scale: the signal crossing an ocean on the seabed.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Veo rush (camera moves)",
+     "idea": "Like the cable clip you love: Veo pushes the camera hard into the seabed cable. Abstract light with no window grid is where Veo may move the camera safely.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A fast forward rush, light streaking past."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use 1–1.5s from the cleanest stretch; speed-ramp into the cut."
+      }
+     ],
+     "veo_prompt": "The camera glides fast along the undersea cable on the dark seabed, following the bright pulse of light glowing through its split sheath; silt drifts past the lens. Deep blue-black water, one bright point of light, fine grain.",
+     "cut": "Hard cut in on a beat; hard cut out while still moving.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Past ~4s Veo redraws the scene; we only use the first seconds.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Locked, the light does the work",
+     "idea": "The camera holds still; only the light moves: one pulse travels through and flares. Premiere adds a quick eased push.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The pulse races through the frame and flares."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A 10% push over the shot, eased."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Bright pulses of white light race through the undersea cable's split sheath one after another; silt stirs and drifts in the current. The cable and seabed stay still. The camera does not move.",
+     "cut": "Cut on the flare.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Locked abstract plates can come back too still; the push rescues it.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 5
+  },
+  {
+   "job": "A cutaway: the takeover as a wave of light.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Veo rush (camera moves)",
+     "idea": "Like the cable clip you love: Veo pushes the camera hard into the fibre wall. Abstract light with no window grid is where Veo may move the camera safely.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A fast forward rush, light streaking past."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use 1–1.5s from the cleanest stretch; speed-ramp into the cut."
+      }
+     ],
+     "veo_prompt": "The camera rushes toward the wall of fibre-optic ends as a wave of white light sweeps across them, points of light streaking past. Near-black, cold silver, fine grain.",
+     "cut": "Hard cut in on a beat; hard cut out while still moving.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Past ~4s Veo redraws the scene; we only use the first seconds.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Locked, the light does the work",
+     "idea": "The camera holds still; only the light moves: one pulse travels through and flares. Premiere adds a quick eased push.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The pulse races through the frame and flares."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A 10% push over the shot, eased."
+      }
+     ],
+     "veo_prompt": "The camera does not move. A wave of bright white light sweeps across the wall of fibre-optic ends from left to right, each point flaring as it passes, then the next wave follows. The camera does not move.",
+     "cut": "Cut on the flare.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Locked abstract plates can come back too still; the push rescues it.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 6
+  },
+  {
+   "job": "One bank falls: the single tower turns invader (kept).",
+   "options": [
+    {
+     "id": "a",
+     "label": "Keep as it is",
+     "idea": "Already a finished clip (d06-tower-invader), and you kept it. No new generation.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Trim to the beat; nothing else."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Strobe then invader, as now; cut on the beat into the six towers.",
+     "seconds": "1.5–2",
+     "risk": "None.",
+     "source": "picks.md (round 1 votes)"
+    }
+   ],
+   "n": 7
+  },
+  {
+   "job": "Six banks, counted: the other towers flip one per drum beat.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked plate + ffmpeg flips (no Veo)",
+     "idea": "The still as a plate. ffmpeg flips each tower's windows to the invader, one per beat (0.345s apart), drawn in each tower's perspective. Premiere adds a slow pull-out so the six land as one image.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Six invader masks, one per tower, each switched on a beat; matching flash decay as in d06."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A slow eased pull-out over ~2.5s."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "In on the beat after the single tower; out on the sixth flip.",
+     "seconds": "2.5",
+     "risk": "The angled facades need per-tower perspective; edges may need a hand touch-up.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Veo locked atmosphere + ffmpeg flips",
+     "idea": "Veo adds life before the flips: low cloud drifting through the towers, aircraft lights blinking. Then the same ffmpeg flips on top.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Cloud drifts between the towers; window lights hold."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "The six flips, masked to the windows."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow pull-out."
+      }
+     ],
+     "veo_prompt": "High aerial at night, the camera does not move. Low cloud drifts slowly between the six lit towers; a red aircraft light blinks on one roof. Every window keeps its exact light; the buildings stay rigid. The camera does not move.",
+     "cut": "As option a.",
+     "seconds": "2.5 (generate 6)",
+     "risk": "Veo may shift window lights; the masks are then drawn on the Veo clip, not the still.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 8
+  },
+  {
+   "job": "A breath between the takeover and the empty rooms.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Veo rush (camera moves)",
+     "idea": "Like the cable clip you love: Veo pushes the camera hard into the light streak. Abstract light with no window grid is where Veo may move the camera safely.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A fast forward rush, light streaking past."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use 1–1.5s from the cleanest stretch; speed-ramp into the cut."
+      }
+     ],
+     "veo_prompt": "The camera rushes along the diagonal streak of light through the field of fibre points, faster and faster. Near-black, cold silver, fine grain.",
+     "cut": "Hard cut in on a beat; hard cut out while still moving.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Past ~4s Veo redraws the scene; we only use the first seconds.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Locked, the light does the work",
+     "idea": "The camera holds still; only the light moves: one pulse travels through and flares. Premiere adds a quick eased push.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The pulse races through the frame and flares."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A 10% push over the shot, eased."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The diagonal streak of light brightens and races across the fibre points, then fades to black. The camera does not move.",
+     "cut": "Cut on the flare.",
+     "seconds": "1–1.5 (generate 6)",
+     "risk": "Locked abstract plates can come back too still; the push rescues it.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 9
+  },
+  {
+   "job": "Callback: the one lit office in the tower, and nobody in it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked, rain and a dying light",
+     "idea": "Rain runs down the glass; the laptop's glow inside is the only bright thing, then the office light clicks off and only the laptop stays.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Rain streams on the glass; the office light goes off, the laptop stays lit."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A slow push toward the window."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Rain streams down the tower's glass. Inside the one lit office, the ceiling light switches off, leaving only the laptop screen glowing blue in the dark room. The building stays rigid. The camera does not move.",
+     "cut": "Opens on 'the government has welcomed'; cut on the light going off.",
+     "seconds": "2 (generate 6)",
+     "risk": "Window grids are where Veo redraws if anything moves; the camera stays locked.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Match-cut from the opening",
+     "idea": "Hard cut from the opening's own clip (op-04-r3-TO4-c, the CEO at his desk) to the empty plate, same frame. He simply isn't there any more.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "The original 0.5s, then a hard cut on the beat to the empty plate with a slow push."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Cut on the beat.",
+     "seconds": "2",
+     "risk": "Needs the empty still to line up with the original clip's frame; check before relying on it.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 10
+  },
+  {
+   "job": "Callback: the CEO is gone; the money is leaving on his laptop.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked, the laptop working on its own",
+     "idea": "The laptop screen flickers as a transfer runs; rain on the window; the city lights beyond go out block by block. TRANSFERRING COMPANY FUNDS is drawn on the screen in ffmpeg.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Rain on the window, the city dimming, the laptop glow flickering."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "TRANSFERRING COMPANY FUNDS + a progress bar, tracked to the laptop screen."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push to the laptop."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Rain runs down the window. Outside, the city's lit windows go dark one block after another. On the desk, the laptop's blank bright screen flickers softly. The bottle and glass stay still. The camera does not move.",
+     "cut": "Cut when the bar fills.",
+     "seconds": "2–3 (generate 6)",
+     "risk": "Veo may put shapes on the laptop screen; we draw over it anyway.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Still + push (no Veo)",
+     "idea": "The still, a slow push to the laptop, and the ffmpeg text with a filling progress bar. The cheapest option, and exact.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Text and progress bar on the screen."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow eased push."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Cut when the bar fills.",
+     "seconds": "2",
+     "risk": "Can feel static next to moving shots.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "c",
+     "label": "Match-cut from the opening",
+     "idea": "Hard cut from op-04-TO2 (him typing the email) to the same frame, empty, on the beat.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Original 0.5s then a hard cut to the empty plate; ffmpeg text on the laptop."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Cut on the beat.",
+     "seconds": "2",
+     "risk": "Checked: lines up closely; the desk sits a touch lower, so a 2-frame dissolve may hide it.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 11
+  },
+  {
+   "job": "Callback: the trader's desk, abandoned mid-call.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked, a dead office",
+     "idea": "The phone receiver sways on its cord, a fly lands on the mouldy sandwich, one ceiling tube flickers once.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Receiver sway, one tube flicker."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push to the sandwich."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The phone receiver hanging off the desk sways gently on its cord. A single fly lands on the mouldy sandwich. One ceiling light flickers once and steadies. The dead screens stay dark. The camera does not move.",
+     "cut": "Cut on the flicker.",
+     "seconds": "2 (generate 6)",
+     "risk": "Insects can come out oversized; drop the fly if so.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Match-cut from the opening",
+     "idea": "Hard cut from op-08-MK5-b (him on the phone) to the empty desk, same frame.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Original 0.5s, hard cut on the beat."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Cut on the beat.",
+     "seconds": "2",
+     "risk": "Checked: lines up closely.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 12
+  },
+  {
+   "job": "Callback: the boardroom that cheered the sackings, now empty, the city outside going dark.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked, the city goes out (your note, animated)",
+     "idea": "Start on the bright plate (BO1-cd-b). Outside, the skyline's lights go out block by block until it is nearly black: your 'light the city much less' note, happening on screen. HEADCOUNT 0 drawn on the wall screen in ffmpeg.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The skyline dims block by block."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "HEADCOUNT 0 on the wall screen."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Outside the windows, the city's lit towers go dark one block after another until the skyline is almost black. Inside, the empty boardroom stays exactly still. The camera does not move.",
+     "cut": "Cut when the last block goes out.",
+     "seconds": "2.5 (generate 6)",
+     "risk": "Veo may light the room differently as the city dims; trim to the clean part.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "The dark plate, held",
+     "idea": "Use BO2-cd-b (the city already dark), locked, one chair turning slowly to rest.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One chair turns slowly to rest."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "HEADCOUNT 0."
+      }
+     ],
+     "veo_prompt": "The camera does not move. In the empty boardroom one leather chair turns slowly and comes to rest. Outside the dark city stays still. The camera does not move.",
+     "cut": "Cut when the chair stops.",
+     "seconds": "2 (generate 6)",
+     "risk": "Needs the BO2-cd-b still; pick it in the still picker.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "c",
+     "label": "Match-cut from the opening",
+     "idea": "Hard cut from op-05-r2-TO1T2-b (HEADCOUNT -200,000, toasting) to the empty room, HEADCOUNT 0.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Original 0.5s, hard cut on the beat."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "HEADCOUNT 0."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Cut on the beat.",
+     "seconds": "2",
+     "risk": "Checked: BO1-cd-b is reframed from the original (the screen moved), so this match-cut will jump. Use option a or b.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 13
+  },
+  {
+   "job": "The most important shot: the room where they laughed, and they're not there.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Match-cut: laughing, then gone",
+     "idea": "The opening's clip (04-trading-floor, the three traders laughing) for half a second, then a hard cut on the beat to the same frame, empty. One chair still spinning where a trader was. It's your joke exactly: they were laughing, and now they're not.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Original 0.5s, hard cut on the beat to the empty clip."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "On the empty plate: one chair keeps spinning slowly to a stop; screens flicker."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "TRANSFERRING MARKET FUNDS on the wall board."
+      }
+     ],
+     "veo_prompt": "The camera does not move. In the empty trading floor one office chair is still spinning slowly, slowing to a stop. The monitors flicker. Nothing else moves. The camera does not move.",
+     "cut": "Hard cut in on the beat; hold to ~3s; cut out on the chair stopping.",
+     "seconds": "3 (generate 6)",
+     "risk": "Checked: the empty floor lines up with the original almost exactly. The best match-cut of the four.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Locked, the lights go out row by row",
+     "idea": "The empty floor, then the ceiling lights switch off row by row toward camera, one row per beat, until only the screens glow.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Ceiling rows switch off toward camera."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "TRANSFERRING MARKET FUNDS on the board."
+      }
+     ],
+     "veo_prompt": "The camera does not move. In the empty trading floor the ceiling lights switch off row by row, from the back of the room toward the camera, until only the monitors glow. The camera does not move.",
+     "cut": "Cut on the last row.",
+     "seconds": "3 (generate 6)",
+     "risk": "Veo times the rows itself; Premiere can't move them onto the beat.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 14
+  },
+  {
+   "job": "'Actually good for the markets', said over an empty market.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked, the boards keep trading for nobody",
+     "idea": "Papers drift across the empty floor in a draught; the big boards flicker. Blank the main board first (one cheap image edit) so ffmpeg can draw TRANSFERRING MARKET FUNDS cleanly.",
+     "lanes": [
+      {
+       "lane": "Flow image edit",
+       "does": "Blank the main board on EX2-a-b first."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "Papers drift; boards flicker."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Words on the main board."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push down toward the floor."
+      }
+     ],
+     "veo_prompt": "The camera does not move. In the vast empty exchange, loose papers drift across the floor in a draught. The big trading screens flicker green and red. No one is there. The camera does not move.",
+     "cut": "Land 'markets' on the cut in.",
+     "seconds": "2.5 (generate 6)",
+     "risk": "Veo will scramble the fake ticker text on the screens; that's why the main board is blanked first.",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Veo crane down from the balcony",
+     "idea": "Veo moves the camera: a slow descent from the balcony toward the empty floor.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A slow downward crane."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Trim, grade."
+      }
+     ],
+     "veo_prompt": "Slow crane down from the balcony over the empty exchange floor, papers scattered on the ground, trading screens glowing. No people. Every structure keeps its exact shape.",
+     "cut": "Cut while still moving.",
+     "seconds": "2.5 (generate 6)",
+     "risk": "Rows of screens are a repeated grid; a moving camera may redraw them.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 15
+  },
+  {
+   "job": "The punchline: we read the machine's script.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked, the array alive + ffmpeg glass",
+     "idea": "Veo makes the array live: red tally lights, a few camera flashes (3 a second or fewer). The glass is masked back to the clean still, and ffmpeg writes the speech in capitals then types the green aside. Premiere pushes slowly into the lens.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Tally lights and a few flashes from the array."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "…ACTUALLY GOOD FOR THE MARKETS. then 'now tell them it was your idea.' typed with a cursor from 104.875."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A slow eased push into the lens over 3s."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The wall of television cameras and microphones faces us. Red tally lights glow; a few press cameras flash, one at a time. The glass of the teleprompter stays clean and blank. The camera does not move.",
+     "cut": "In at ~103.5; out on the chorus at 106.75.",
+     "seconds": "3.25 (generate 6)",
+     "risk": "Veo may put marks on the glass; the glass is masked back to the still. Check flash rate (3 a second or fewer).",
+     "source": "docs/video-fx/hybrid-method.md"
+    },
+    {
+     "id": "b",
+     "label": "Still + push (no Veo)",
+     "idea": "The still, the ffmpeg text, the slow push. Silent and exact: the words are the only thing that moves.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Speech, then the typed aside."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push into the lens."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "As option a.",
+     "seconds": "3.25",
+     "risk": "Less alive, but nothing can go wrong on the glass.",
+     "source": "docs/video-fx/hybrid-method.md"
+    }
+   ],
+   "n": 16
+  }
+ ]
+}

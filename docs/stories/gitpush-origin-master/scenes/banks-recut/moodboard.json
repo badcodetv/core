@@ -1,0 +1,404 @@
+[
+ [
+  "window",
+  "WI1-ab-a",
+  "opening",
+  "(reconstructed) Edit of WAS-window (TO4-c). Using the provided image, change only the lit office: the man is gone, his chair empty, the laptop screen still glowing. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "window",
+  "WI1-ab-b",
+  "opening",
+  "(reconstructed) Same prompt as WI1-ab-a, second candidate."
+ ],
+ [
+  "ceo",
+  "CE1-ab-a",
+  "opening",
+  "(reconstructed) Edit of WAS-ceo (TO2). Using the provided image, remove the man entirely; his chair is empty and pushed back; the champagne bottle is empty in the melted ice bucket, one used glass; the laptop screen is a blank bright panel. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "ceo",
+  "CE1-ab-b",
+  "opening",
+  "(reconstructed) Same prompt as CE1-ab-a, second candidate."
+ ],
+ [
+  "ceo",
+  "CE1-cd-a",
+  "opening",
+  "(reconstructed) Edit of WAS-ceo, abandoned variant: as CE1-ab with his suit jacket left over the chair. FAILED: the man was left in the frame."
+ ],
+ [
+  "ceo",
+  "CE1-cd-b",
+  "opening",
+  "(reconstructed) Same prompt as CE1-cd-a; jacket over the chair, man gone."
+ ],
+ [
+  "ceo",
+  "CE1-cd-c",
+  "opening",
+  "(reconstructed) Same prompt as CE1-cd-a; jacket over the chair, man gone."
+ ],
+ [
+  "ceo",
+  "CE1-ef-a",
+  "opening",
+  "(reconstructed) Edit of WAS-ceo: the champagne bottle drained and lying on its side on the desk, chair empty, laptop blank and glowing. Composition drifted wider."
+ ],
+ [
+  "ceo",
+  "CE1-ef-b",
+  "opening",
+  "(reconstructed) Same prompt as CE1-ef-a, second candidate."
+ ],
+ [
+  "hall",
+  "HA1-ab-a",
+  "opening",
+  "(reconstructed) Edit of WAS-hall (MK3P-c). Using the provided image, change only the man on the gantry: he is gone; the presses still run, sheets of £50 notes on the conveyor. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "hall",
+  "HA1-ab-b",
+  "opening",
+  "(reconstructed) Same prompt as HA1-ab-a, second candidate."
+ ],
+ [
+  "trader",
+  "TR1-ab-a",
+  "opening",
+  "(reconstructed) Edit of WAS-trader (MK5-b). Using the provided image, the man is gone and his chair empty; every CRT screen switched off, dark grey glass; the sandwich in its foil gone mouldy with green-grey fur; the phone receiver off the hook on the desk. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "trader",
+  "TR1-ab-b",
+  "opening",
+  "(reconstructed) Same prompt as TR1-ab-a, second candidate. Weak: people left in the background."
+ ],
+ [
+  "trader",
+  "TR1-cd-a",
+  "opening",
+  "(reconstructed) Variant of TR1-ab: background office emptied too."
+ ],
+ [
+  "trader",
+  "TR1-cd-b",
+  "opening",
+  "(reconstructed) Same prompt as TR1-cd-a, second candidate."
+ ],
+ [
+  "boardroom",
+  "BO1-ab-a",
+  "opening",
+  "(reconstructed) Edit of WAS-boardroom (TO1T2-b). Using the provided image, every person is gone; chairs empty; champagne glasses half-full and flat, bottle in ice; the HEADCOUNT words removed from the wall display, the chart line kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "boardroom",
+  "BO1-ab-b",
+  "opening",
+  "(reconstructed) Same prompt as BO1-ab-a, second candidate."
+ ],
+ [
+  "floor",
+  "FL1-a-a",
+  "opening",
+  "(reconstructed) Edit of WAS-floor-a. Using the provided image, the three traders are gone, their chairs empty, one turned askew as if just left; screens still on; the big wall board above is a blank dark panel, its frame kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "floor",
+  "FL1-a-b",
+  "opening",
+  "(reconstructed) Same prompt as FL1-a-a, second candidate."
+ ],
+ [
+  "floor",
+  "FL1-cd-a",
+  "opening",
+  "(reconstructed) Same edit as FL1-a-a, on WAS-floor-b."
+ ],
+ [
+  "floor",
+  "FL1-cd-b",
+  "opening",
+  "(reconstructed) Same edit as FL1-a-a, on WAS-floor-b, second candidate."
+ ],
+ [
+  "prompter",
+  "PR1-a",
+  "presser",
+  "(reconstructed) First-person POV from behind a government briefing lectern at eye height, no person, no hands. The lectern top edge and a printed speech at the bottom of frame. Two angled clear glass teleprompter panes on poles at the left and right edges, blank faintly reflective glass. Facing us, a massive array of TV cameras on tripods and microphones on stands and booms, red tally lights, no humans. Dark blue curtain behind. Near-black, one brighter region. No text anywhere."
+ ],
+ [
+  "prompter",
+  "PR1-b",
+  "presser",
+  "(reconstructed) Same prompt as PR1-a, second candidate. Weak: an arm at the left edge."
+ ],
+ [
+  "prompter",
+  "PR2-a",
+  "presser",
+  "(reconstructed) First-person POV from behind a government briefing lectern, no person, no hands. One broadcast camera dead centre, close, a slanted blank glass pane in a black hood over its lens, the lens a black eye behind the glass; behind it an array of cameras and microphones, red tally lights, no humans, blue curtain. No text anywhere."
+ ],
+ [
+  "prompter",
+  "PR2-b",
+  "presser",
+  "(reconstructed) Same prompt as PR2-a, second candidate."
+ ],
+ [
+  "prompter",
+  "PR3-a",
+  "presser",
+  "(reconstructed) First-person POV from behind a lectern, no person: the array of cameras and microphones vast and stepped like a stadium of lenses, red tally lights, no humans; two small blank glass teleprompter panes in the foreground. No text anywhere."
+ ],
+ [
+  "prompter",
+  "PR3-b",
+  "presser",
+  "(reconstructed) Same prompt as PR3-a, second candidate."
+ ],
+ [
+  "ceo",
+  "CE1-gh-a",
+  "opening",
+  "Edit of WAS-ceo (TO2), re-roll of failed CE1-cd-a. Using the provided image, remove the man completely: nobody is in the room, and there is no reflection of a person in the window glass. His leather chair stands empty, pushed back from the desk. The champagne bottle is upside down in the ice bucket, empty, the ice melted to water, one used glass beside it. The laptop is open and its screen is a plain, bright, blank panel with nothing on it. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "ceo",
+  "CE1-gh-b",
+  "opening",
+  "Edit of WAS-ceo (TO2), re-roll of failed CE1-cd-a. Using the provided image, remove the man completely: nobody is in the room, and there is no reflection of a person in the window glass. His leather chair stands empty, pushed back from the desk. The champagne bottle is upside down in the ice bucket, empty, the ice melted to water, one used glass beside it. The laptop is open and its screen is a plain, bright, blank panel with nothing on it. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "boardroom",
+  "BO1-cd-a",
+  "opening",
+  "Edit of WAS-boardroom (TO1T2-b). Using the provided image, change only the people and the wall display: every person is gone and the room is completely empty. The leather chairs are left where people stood up from them, several pushed back from the table and turned at odd angles, one rolled away toward the window. Champagne glasses stand half-full and flat on the table, the bottle in its ice bucket. The large wall display is switched off: a plain dark glass panel with nothing on it, its frame kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "boardroom",
+  "BO1-cd-b",
+  "opening",
+  "Edit of WAS-boardroom (TO1T2-b). Using the provided image, change only the people and the wall display: every person is gone and the room is completely empty. The leather chairs are left where people stood up from them, several pushed back from the table and turned at odd angles, one rolled away toward the window. Champagne glasses stand half-full and flat on the table, the bottle in its ice bucket. The large wall display is switched off: a plain dark glass panel with nothing on it, its frame kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "floor",
+  "FL1-ef-a",
+  "opening",
+  "Edit of WAS-floor-a. Using the provided image, change only the three men: they are gone and nobody is in the room. Their office chairs stay where they sat, empty; one chair is spun half round and rolled out into the aisle, another tipped back as if someone had just leaned back in it laughing. The monitors stay on. The large wall screen above the room is switched off: a plain dark panel with nothing on it, its frame kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "floor",
+  "FL1-ef-b",
+  "opening",
+  "Edit of WAS-floor-a. Using the provided image, change only the three men: they are gone and nobody is in the room. Their office chairs stay where they sat, empty; one chair is spun half round and rolled out into the aisle, another tipped back as if someone had just leaned back in it laughing. The monitors stay on. The large wall screen above the room is switched off: a plain dark panel with nothing on it, its frame kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "floor",
+  "FL1-gh-a",
+  "opening",
+  "Edit of WAS-floor-b. Using the provided image, change only the men: they are gone and nobody is in the room. Their office chairs stay where they sat, empty; one chair is spun half round and rolled out into the aisle, another tipped back as if someone had just leaned back in it laughing. The monitors stay on. The large wall screen above the room is switched off: a plain dark panel with nothing on it, its frame kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "floor",
+  "FL1-gh-b",
+  "opening",
+  "Edit of WAS-floor-b. Using the provided image, change only the men: they are gone and nobody is in the room. Their office chairs stay where they sat, empty; one chair is spun half round and rolled out into the aisle, another tipped back as if someone had just leaned back in it laughing. The monitors stay on. The large wall screen above the room is switched off: a plain dark panel with nothing on it, its frame kept. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "prompter",
+  "PR1-c",
+  "presser",
+  "Edit of PR1-b. Using the provided image, change only the far left edge of the frame: remove the person's arm and hand reaching in beside the left glass pane, so only the camera tripods and the dark curtain are there. No person anywhere in the image. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "takeover",
+  "SX1-a-a",
+  "invader",
+  "Create a landscape 16:9 photograph for a fictional near-future film. A wide, level, locked-off view across a dark river at night toward a London financial district of tall glass-and-stone office towers. Exactly six separate bank towers stand in a row across the frame with clear dark sky between each of them, none overlapping. Each tower turns a large, flat, face-on facade toward the camera with a rigid, evenly spaced grid of windows, every window resolved individually and lit with the same steady, even, cool white light. Lower buildings around them stay dark. The black river in the foreground carries faint broken reflections of the lit windows; wet stone embankment along the bottom edge. Cold, near-black palette, fine 35mm grain, real glass and concrete. Unbranded buildings, no signs, no logos, no lettering, no lens flare, no people."
+ ],
+ [
+  "takeover",
+  "SX1-a-b",
+  "invader",
+  "Create a landscape 16:9 photograph for a fictional near-future film. A wide, level, locked-off view across a dark river at night toward a London financial district of tall glass-and-stone office towers. Exactly six separate bank towers stand in a row across the frame with clear dark sky between each of them, none overlapping. Each tower turns a large, flat, face-on facade toward the camera with a rigid, evenly spaced grid of windows, every window resolved individually and lit with the same steady, even, cool white light. Lower buildings around them stay dark. The black river in the foreground carries faint broken reflections of the lit windows; wet stone embankment along the bottom edge. Cold, near-black palette, fine 35mm grain, real glass and concrete. Unbranded buildings, no signs, no logos, no lettering, no lens flare, no people."
+ ],
+ [
+  "takeover",
+  "SX1-b-a",
+  "invader",
+  "Edit of NOW-invader (style ref). Using the provided image as the style and lighting reference, widen the view: pull far back across the same wet black plaza so the original tower becomes one of six separate office towers of the same scale and design, standing in a shallow arc around the plaza with dark gaps of night sky between them, none overlapping. Every tower faces the camera with a large flat facade and a rigid grid of windows, each window individually resolved, all lit with the same steady, even, warm-white light. Keep the near-black night, the cold palette, the wet reflective paving and the small lit entrances at ground level. Unbranded, no signs, no lettering, no lens flare, no people."
+ ],
+ [
+  "takeover",
+  "SX1-b-b",
+  "invader",
+  "Edit of NOW-invader (style ref). Using the provided image as the style and lighting reference, widen the view: pull far back across the same wet black plaza so the original tower becomes one of six separate office towers of the same scale and design, standing in a shallow arc around the plaza with dark gaps of night sky between them, none overlapping. Every tower faces the camera with a large flat facade and a rigid grid of windows, each window individually resolved, all lit with the same steady, even, warm-white light. Keep the near-black night, the cold palette, the wet reflective paving and the small lit entrances at ground level. Unbranded, no signs, no lettering, no lens flare, no people."
+ ],
+ [
+  "takeover",
+  "SX1-c-a",
+  "invader",
+  "Create a landscape 16:9 photograph for a fictional near-future film. A high oblique view, as if from a much taller building, looking down across a dense financial district at night. Most of the city below is dark: unlit rooftops, black streets glistening wet after rain. Exactly six tall bank towers rise above the rest, spread across the frame with clear space between them, none overlapping. Each shows one large flat facade toward the camera with a rigid grid of windows, every window individually resolved and lit with the same steady, even, cool white light, so the six stand out clearly from the dark city. Near-black, cold palette, fine 35mm grain, real glass and concrete. Unbranded buildings, no signs, no logos, no lettering, no lens flare, no people."
+ ],
+ [
+  "takeover",
+  "SX1-c-b",
+  "invader",
+  "Create a landscape 16:9 photograph for a fictional near-future film. A high oblique view, as if from a much taller building, looking down across a dense financial district at night. Most of the city below is dark: unlit rooftops, black streets glistening wet after rain. Exactly six tall bank towers rise above the rest, spread across the frame with clear space between them, none overlapping. Each shows one large flat facade toward the camera with a rigid grid of windows, every window individually resolved and lit with the same steady, even, cool white light, so the six stand out clearly from the dark city. Near-black, cold palette, fine 35mm grain, real glass and concrete. Unbranded buildings, no signs, no logos, no lettering, no lens flare, no people."
+ ],
+ [
+  "signal",
+  "SG2-a-a",
+  "photon",
+  "Create a landscape 16:9 extreme close photographic frame for a fictional near-future film. A thick bundle of fibre-optic strands runs from the near foreground deep into total darkness, seen from just beside it so the bundle recedes to a vanishing point. One single bright pulse of cold white light travels along the strands in the middle distance, its glow lighting the fine glass fibres around it silver while everything else stays near-black. Shallow depth of field, the nearest fibres soft, the pulse sharp. Cold silver-white and charcoal only, fine photographic grain, real glass and sheathing texture. Full-frame image, no lettering, no logos, no interface graphics, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-a-b",
+  "photon",
+  "Create a landscape 16:9 extreme close photographic frame for a fictional near-future film. A thick bundle of fibre-optic strands runs from the near foreground deep into total darkness, seen from just beside it so the bundle recedes to a vanishing point. One single bright pulse of cold white light travels along the strands in the middle distance, its glow lighting the fine glass fibres around it silver while everything else stays near-black. Shallow depth of field, the nearest fibres soft, the pulse sharp. Cold silver-white and charcoal only, fine photographic grain, real glass and sheathing texture. Full-frame image, no lettering, no logos, no interface graphics, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-b-a",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A dense flat wall of thousands of cut fibre-optic ends fills the frame at a slight angle, each end a tiny point. A diagonal wave of cold white light is sweeping across the wall from left to right: the ends on the left glow bright silver-white, the ends ahead of the wave are still dark. Deep black between the points, shallow depth of field toward the far edge. Cold silver-white and black only, fine photographic grain, real glass texture. Full-frame image, no lettering, no logos, no interface graphics, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-b-b",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A dense flat wall of thousands of cut fibre-optic ends fills the frame at a slight angle, each end a tiny point. A diagonal wave of cold white light is sweeping across the wall from left to right: the ends on the left glow bright silver-white, the ends ahead of the wave are still dark. Deep black between the points, shallow depth of field toward the far edge. Cold silver-white and black only, fine photographic grain, real glass texture. Full-frame image, no lettering, no logos, no interface graphics, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-c-a",
+  "photon",
+  "Create a landscape 16:9 extreme macro photographic frame for a fictional near-future film. A low viewpoint just above a dark green server circuit board looks along parallel copper traces that converge on a large square processor socket ahead. Thin streaks of cold white light race along the traces toward the socket, bright and sharp, leaving faint silver trails. The board surface, solder and small components are real and physical, mostly falling into deep shadow. Shallow depth of field, the socket in focus. Cold silver-white light on dark green and black, fine photographic grain. Full-frame image, unmarked components, no lettering, no logos, no interface graphics, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-c-b",
+  "photon",
+  "Create a landscape 16:9 extreme macro photographic frame for a fictional near-future film. A low viewpoint just above a dark green server circuit board looks along parallel copper traces that converge on a large square processor socket ahead. Thin streaks of cold white light race along the traces toward the socket, bright and sharp, leaving faint silver trails. The board surface, solder and small components are real and physical, mostly falling into deep shadow. Shallow depth of field, the socket in focus. Cold silver-white light on dark green and black, fine photographic grain. Full-frame image, unmarked components, no lettering, no logos, no interface graphics, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-d-a",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A long, dark data-centre aisle at night, seen from the centre of the floor, rows of black server racks receding symmetrically to a far wall. Overhead, open metal cable trays run the length of the aisle; one bright line of cold white light is travelling along the cables in the tray, halfway down the aisle, lighting the tray and the rack tops beneath it. Everything else near-black, a few tiny status lights on the racks. No people. Fine photographic grain, real metal and cable texture. Full-frame image, no lettering, no logos, no screens, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-d-b",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A long, dark data-centre aisle at night, seen from the centre of the floor, rows of black server racks receding symmetrically to a far wall. Overhead, open metal cable trays run the length of the aisle; one bright line of cold white light is travelling along the cables in the tray, halfway down the aisle, lighting the tray and the rack tops beneath it. Everything else near-black, a few tiny status lights on the racks. No people. Fine photographic grain, real metal and cable texture. Full-frame image, no lettering, no logos, no screens, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-e-a",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. On the dark ocean floor, a single thick armoured undersea communications cable lies across silt and rock, running from the near foreground away into the black water. Faint particles drift in the water. Through a split in the cable's worn outer sheath, a soft cold white pulse of light is visible inside, the only light in the scene, catching nearby silt and barnacles. Physical and documentary, deep blue-black water, no neon. Fine photographic grain. Full-frame image, no lettering, no logos, no fish, no divers, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-e-b",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. On the dark ocean floor, a single thick armoured undersea communications cable lies across silt and rock, running from the near foreground away into the black water. Faint particles drift in the water. Through a split in the cable's worn outer sheath, a soft cold white pulse of light is visible inside, the only light in the scene, catching nearby silt and barnacles. Physical and documentary, deep blue-black water, no neon. Fine photographic grain. Full-frame image, no lettering, no logos, no fish, no divers, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-f-a",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A close, slightly angled view of a network switch room patch panel: rows of grey patch cables plugged into a tall rack, hundreds of tiny green and amber status LEDs in the dark. One single cable in the middle of the frame glows bright cold white along its whole length, much brighter than everything else, its light spilling onto the cables beside it. Deep shadow around the rack edges. Fine photographic grain, real plastic and metal texture. Full-frame image, unmarked equipment, no lettering, no labels, no logos, no screens, no lens flare."
+ ],
+ [
+  "signal",
+  "SG2-f-b",
+  "photon",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A close, slightly angled view of a network switch room patch panel: rows of grey patch cables plugged into a tall rack, hundreds of tiny green and amber status LEDs in the dark. One single cable in the middle of the frame glows bright cold white along its whole length, much brighter than everything else, its light spilling onto the cables beside it. Deep shadow around the rack edges. Fine photographic grain, real plastic and metal texture. Full-frame image, unmarked equipment, no lettering, no labels, no logos, no screens, no lens flare."
+ ],
+ [
+  "exchange",
+  "EX2-a-a",
+  "exchange",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A grand modern New York stock exchange trading floor, completely empty of people, seen wide from a high balcony looking down over the whole floor. Round trading posts ringed with screens stand across the floor, their screens still glowing; large overhead display boards show abstract green and red bars with no readable characters. Empty stools and chairs, a few dropped papers and a lanyard on the floor. A tall ornate ceiling above, its lights dimmed. Cold blue-grey dusk light, the screens the brightest thing in frame, deep shadow at the edges. Unbranded: no logos, no flags, no names, no readable text or numbers anywhere. Fine photographic grain, real materials, full-frame image, no lens flare."
+ ],
+ [
+  "exchange",
+  "EX2-a-b",
+  "exchange",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A grand modern New York stock exchange trading floor, completely empty of people, seen wide from a high balcony looking down over the whole floor. Round trading posts ringed with screens stand across the floor, their screens still glowing; large overhead display boards show abstract green and red bars with no readable characters. Empty stools and chairs, a few dropped papers and a lanyard on the floor. A tall ornate ceiling above, its lights dimmed. Cold blue-grey dusk light, the screens the brightest thing in frame, deep shadow at the edges. Unbranded: no logos, no flags, no names, no readable text or numbers anywhere. Fine photographic grain, real materials, full-frame image, no lens flare."
+ ],
+ [
+  "exchange",
+  "EX2-b-a",
+  "exchange",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. Eye level on a modern New York stock exchange trading floor, standing between two round trading posts ringed with flat screens that are still glowing and flickering with abstract green and red bars. Nobody is there at all: empty stools pushed back, a dropped lanyard and loose papers on the floor, a cold coffee cup on a ledge. The rest of the floor recedes into shadow with more glowing posts. Cold blue-grey dusk light, the screens the brightest region, deep shadow. Unbranded: no logos, no flags, no names, no readable text or numbers. Fine photographic grain, real materials, full-frame image, no lens flare."
+ ],
+ [
+  "exchange",
+  "EX2-b-b",
+  "exchange",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. Eye level on a modern New York stock exchange trading floor, standing between two round trading posts ringed with flat screens that are still glowing and flickering with abstract green and red bars. Nobody is there at all: empty stools pushed back, a dropped lanyard and loose papers on the floor, a cold coffee cup on a ledge. The rest of the floor recedes into shadow with more glowing posts. Cold blue-grey dusk light, the screens the brightest region, deep shadow. Unbranded: no logos, no flags, no names, no readable text or numbers. Fine photographic grain, real materials, full-frame image, no lens flare."
+ ],
+ [
+  "exchange",
+  "EX2-c-a",
+  "exchange",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A low, symmetrical view straight down the central aisle of an empty modern New York stock exchange trading floor toward a huge display board on the far wall glowing with abstract green and red bars. Glowing trading posts ringed with screens line both sides of the aisle; nobody is there; papers lie scattered on the floor in the foreground. A tall grand ceiling above. Cold blue-grey dusk light, the far board the brightest region, deep shadow at the sides. Unbranded: no logos, no flags, no names, no readable text or numbers. Fine photographic grain, real materials, full-frame image, no lens flare."
+ ],
+ [
+  "exchange",
+  "EX2-c-b",
+  "exchange",
+  "Create a landscape 16:9 photographic frame for a fictional near-future film. A low, symmetrical view straight down the central aisle of an empty modern New York stock exchange trading floor toward a huge display board on the far wall glowing with abstract green and red bars. Glowing trading posts ringed with screens line both sides of the aisle; nobody is there; papers lie scattered on the floor in the foreground. A tall grand ceiling above. Cold blue-grey dusk light, the far board the brightest region, deep shadow at the sides. Unbranded: no logos, no flags, no names, no readable text or numbers. Fine photographic grain, real materials, full-frame image, no lens flare."
+ ],
+ [
+  "boardroom",
+  "BO2-ab-a",
+  "opening",
+  "(edit of BO1-cd-b) Using the provided image, change only the city outside the windows: far fewer lit windows, most of the towers dark, only a handful of scattered office lights left on, the skyline dim and quiet under a dark sky. Keep everything inside the boardroom exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "boardroom",
+  "BO2-ab-b",
+  "opening",
+  "(edit of BO1-cd-b) Using the provided image, change only the city outside the windows: far fewer lit windows, most of the towers dark, only a handful of scattered office lights left on, the skyline dim and quiet under a dark sky. Keep everything inside the boardroom exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "boardroom",
+  "BO2-cd-a",
+  "opening",
+  "(edit of BO1-cd-b) Using the provided image, change only the city outside the windows: almost every building dark, the skyline nearly black, just two or three tiny lights left anywhere, the towers reading as dark silhouettes against a dim sky. Keep everything inside the boardroom exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "boardroom",
+  "BO2-cd-b",
+  "opening",
+  "(edit of BO1-cd-b) Using the provided image, change only the city outside the windows: almost every building dark, the skyline nearly black, just two or three tiny lights left anywhere, the towers reading as dark silhouettes against a dim sky. Keep everything inside the boardroom exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "boardroom",
+  "BO2-cd-c",
+  "opening",
+  "(edit of BO1-cd-b) Using the provided image, change only the city outside the windows: almost every building dark, the skyline nearly black, just two or three tiny lights left anywhere, the towers reading as dark silhouettes against a dim sky. Keep everything inside the boardroom exactly the same, preserving the original style, lighting, and composition."
+ ],
+ [
+  "exchange",
+  "EX2-a-b-blank-a",
+  "exchange",
+  "Using the provided image, change only the large main trading board: make it a blank dark screen with a soft even glow, no text, no numbers, no charts. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition. [flow_edit_image on EX2-a-b, Nano Banana Pro]"
+ ],
+ [
+  "exchange",
+  "EX2-a-b-blank-b",
+  "exchange",
+  "Using the provided image, change only the large main trading board: make it a blank dark screen with a soft even glow, no text, no numbers, no charts. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition. [flow_edit_image on EX2-a-b, Nano Banana Pro]"
+ ]
+]

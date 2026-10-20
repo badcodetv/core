@@ -54,7 +54,19 @@ Exclude styles:
 vocals, singing, choir, spoken word, rap, comedy, novelty, parody, kazoo, lo-fi, chillwave, ambient intro, fade in, slow build, jazz, acoustic
 ```
 
-Lyrics: none (instrumental).
+Lyrics:
+
+```
+A modern guide to robbing a Bank.
+Step 1. Get yourself a wank tank.
+Now you look the part, real classy, good start.
+Step 2. This one is especially for you.
+"You gotta split the red side away from the blue."
+Step 3. And this one ain't free.
+Slowly start to debase the currency.
+Step 4. Start a war.
+This one drives the price up from the floor.
+```
 
 ## Round log
 
@@ -77,3 +89,19 @@ Two bed takes (4:18, 4:48) stopped short of the 355 s target and would need loop
 **In Premiere, once a take is picked and downloaded:** bed on a new track A4 from 0:00, about 18 dB under the
 narrator and lifted where nobody speaks; sting on A4 from 1:11.8 to 1:30.8 with the bed dipped under it.
 
+## Lyrics
+
+```lyrics
+They say, ya can't make money from a tree
+let's see, each day, not free, ay
+work and get paid though, earning that dough
+but where does it go? nobody knows!
+
+standards bleeding, land-lords needing
+quantitative easing, grandma FREEZING!
+means of production, means a reduction
+stimulus checks are next, get wrecked
+
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+```

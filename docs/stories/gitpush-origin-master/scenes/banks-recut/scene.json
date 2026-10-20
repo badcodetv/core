@@ -1,0 +1,144 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "banks-recut",
+  "prefix": "bk",
+  "title": "GPOM Banks",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> the banks",
+  "moodboard_intro": "The opening's rooms, emptied, then the government reads the machine's script. Dashed cards are the opening as it is now. Tap This, Maybe or No; leave a note per beat.",
+  "storyboard_intro": "Frames in story order. Pick one still and one way to animate each.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/banks-recut",
+  "flow_project": "e0e94e23-fe5f-4585-8f40-4a3abf95e83d",
+  "beats": [
+    {
+      "key": "signal",
+      "at": "74.00",
+      "name": "The signal goes in",
+      "blurb": "Kept: the cable rush and the chip board. Round 2: five or six more 'photon' plates to cut in amongst the other scenes."
+    },
+    {
+      "key": "takeover",
+      "at": "~80",
+      "name": "The takeover",
+      "blurb": "Kept: the tower turning invader. Bolder: six towers flip, one per beat. Under 'friendly acquisition'."
+    },
+    {
+      "key": "window",
+      "at": "90.00",
+      "name": "The CEO's window, from outside",
+      "blurb": "Proposed extra callback: the one lit office in the tower, now empty. Opens 'the government has welcomed…'."
+    },
+    {
+      "key": "ceo",
+      "at": "",
+      "name": "The CEO's office, empty",
+      "blurb": "He's gone. The champagne bottle is empty. The laptop: TRANSFERRING COMPANY FUNDS (text added in post)."
+    },
+    {
+      "key": "trader",
+      "at": "",
+      "name": "The trader's desk, empty",
+      "blurb": "Screens dead, the sandwich mouldy, the phone off the hook."
+    },
+    {
+      "key": "boardroom",
+      "at": "",
+      "name": "The boardroom, empty",
+      "blurb": "HEADCOUNT 0 where it said -200,000. Empty chairs, flat champagne."
+    },
+    {
+      "key": "floor",
+      "at": "~101",
+      "name": "The trading floor, empty",
+      "blurb": "The most important one, last and longest. The laughing traders' room with nobody in it; the board: TRANSFERRING MARKET FUNDS."
+    },
+    {
+      "key": "exchange",
+      "at": "~'good for the markets'",
+      "name": "The empty exchange",
+      "blurb": "New. A modern New York-style exchange floor, nobody in it, the boards still running (words in post). Lands on 'actually good for the markets'."
+    },
+    {
+      "key": "prompter",
+      "at": "~103.5",
+      "name": "The government's prompter",
+      "blurb": "The scene's last shot, on 'wishes to stress…its own idea'. First person, no hands. Blank glass for the speech and the machine's aside. The press pack is an array of cameras and microphones, no humans. Both glass types."
+    }
+  ],
+  "existing": {
+    "signal": [
+      [
+        "NOW-cable",
+        "On the timeline now (keep)",
+        "moodboard/current/NOW-cable.jpg"
+      ],
+      [
+        "NOW-board",
+        "On the timeline now (keep)",
+        "moodboard/current/NOW-board.jpg"
+      ]
+    ],
+    "ceo": [
+      [
+        "WAS-ceo",
+        "The opening (the room to empty)",
+        "moodboard/current/WAS-ceo.jpg"
+      ]
+    ],
+    "trader": [
+      [
+        "WAS-trader",
+        "The opening (the room to empty)",
+        "moodboard/current/WAS-trader.jpg"
+      ]
+    ],
+    "boardroom": [
+      [
+        "WAS-boardroom",
+        "The opening (the room to empty)",
+        "moodboard/current/WAS-boardroom.jpg"
+      ]
+    ],
+    "floor": [
+      [
+        "WAS-floor-a",
+        "The opening (the room to empty)",
+        "moodboard/current/WAS-floor-a.jpg"
+      ],
+      [
+        "WAS-floor-b",
+        "The opening, alt plate",
+        "moodboard/current/WAS-floor-b.jpg"
+      ]
+    ],
+    "prompter": [
+      [
+        "WAS-presser",
+        "The old presser (register only)",
+        "moodboard/current/WAS-presser.jpg"
+      ]
+    ],
+    "takeover": [
+      [
+        "NOW-invader",
+        "On the timeline now (keep)",
+        "moodboard/current/NOW-invader.jpg"
+      ]
+    ],
+    "window": [
+      [
+        "WAS-window",
+        "The opening (the room to empty)",
+        "moodboard/current/WAS-window.jpg"
+      ]
+    ]
+  },
+  "styles": {},
+  "looks": {
+    "opening": "The opening's own look (edit of the original)",
+    "presser": "Briefing room, blue curtain"
+  },
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/6rmnZ1kiuAMKsoprF4XYBB",
+    "storyboard": "https://claude.ai/artifact/NQ6uNNHk2rDAowhZY1RsfN"
+  }
+}

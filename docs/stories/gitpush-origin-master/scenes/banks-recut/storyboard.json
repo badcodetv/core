@@ -1,0 +1,198 @@
+{
+ "acts": [
+  {
+   "id": "in",
+   "title": "The machine gets in (74.00–90.00, 'breaking news… six banks… friendly acquisition')",
+   "beats": "signal, takeover"
+  },
+  {
+   "id": "empty",
+   "title": "Every room from the opening, empty (90.00–103.5, 'the government has welcomed… good for the markets')",
+   "beats": "rooms, exchange"
+  },
+  {
+   "id": "script",
+   "title": "The script (103.5–106.75, 'wishes to stress… its own idea')",
+   "beats": "prompter"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "in",
+   "title": "The cable rush (kept)",
+   "look": "signal",
+   "line": "breaking news.",
+   "stills": [
+    "NOW-cable"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "in",
+   "title": "Fibre bundle pulse",
+   "look": "signal",
+   "line": "",
+   "stills": [
+    "SG2-a-a"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "in",
+   "title": "The chip board (kept)",
+   "look": "signal",
+   "line": "…taken control of six banks.",
+   "stills": [
+    "NOW-board"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "in",
+   "title": "Patch panel, one cable lit",
+   "look": "signal",
+   "line": "",
+   "stills": [
+    "SG2-f-a"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "in",
+   "title": "Undersea cable",
+   "look": "signal",
+   "line": "",
+   "stills": [
+    "SG2-e-b"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "in",
+   "title": "Fibre wall wave",
+   "look": "signal",
+   "line": "",
+   "stills": [
+    "SG2-b-a"
+   ],
+   "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "in",
+   "title": "One bank falls (kept invader)",
+   "look": "invader",
+   "line": "…a friendly acquisition",
+   "stills": [
+    "NOW-invader"
+   ],
+   "anim": 7
+  },
+  {
+   "n": 8,
+   "act": "in",
+   "title": "Six towers, one per beat",
+   "look": "invader",
+   "line": "",
+   "stills": [
+    "SX1-c-b"
+   ],
+   "anim": 8
+  },
+  {
+   "n": 9,
+   "act": "empty",
+   "title": "Light streak (cut-in)",
+   "look": "signal",
+   "line": "",
+   "stills": [
+    "SG2-b-b"
+   ],
+   "anim": 9
+  },
+  {
+   "n": 10,
+   "act": "empty",
+   "title": "The CEO's window",
+   "look": "opening",
+   "line": "the government has welcomed the move…",
+   "stills": [
+    "WI1-ab-a"
+   ],
+   "anim": 10
+  },
+  {
+   "n": 11,
+   "act": "empty",
+   "title": "The CEO's office",
+   "look": "opening",
+   "line": "",
+   "stills": [
+    "CE1-ef-a"
+   ],
+   "anim": 11
+  },
+  {
+   "n": 12,
+   "act": "empty",
+   "title": "The trader's desk",
+   "look": "opening",
+   "line": "",
+   "stills": [
+    "TR1-cd-b"
+   ],
+   "anim": 12
+  },
+  {
+   "n": 13,
+   "act": "empty",
+   "title": "The boardroom",
+   "look": "opening",
+   "line": "",
+   "stills": [
+    "BO1-cd-b",
+    "BO2-cd-b"
+   ],
+   "anim": 13
+  },
+  {
+   "n": 14,
+   "act": "empty",
+   "title": "The trading floor ★",
+   "look": "opening",
+   "line": "",
+   "stills": [
+    "FL1-ef-a"
+   ],
+   "anim": 14
+  },
+  {
+   "n": 15,
+   "act": "empty",
+   "title": "The empty exchange",
+   "look": "exchange",
+   "line": "…actually good for the markets",
+   "stills": [
+    "EX2-a-b"
+   ],
+   "anim": 15
+  },
+  {
+   "n": 16,
+   "act": "script",
+   "title": "The prompter",
+   "look": "presser",
+   "line": "…wishes to stress that this statement was its own idea",
+   "stills": [
+    "PR2-b"
+   ],
+   "anim": 16
+  }
+ ]
+}

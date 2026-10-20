@@ -1,0 +1,103 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "chorus-2",
+  "prefix": "c2",
+  "title": "GPOM Chorus 2",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> chorus 2",
+  "moodboard_intro": "Chorus 1's world, closer and harder, then it moves. Dashed cards are chorus 1 as it is now. Tap This, Maybe or No; leave a note per beat.",
+  "storyboard_intro": "Frames in story order. Pick one still and one way to animate each.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-2",
+  "flow_project": "9415739d-6c98-4e7c-b68c-71bcb5cd1fb3",
+  "beats": [
+    {
+      "key": "ranks",
+      "at": "106.92",
+      "name": "Among the ranks",
+      "blurb": "Down among the robes at robot height, rows of red eyes into the haze."
+    },
+    {
+      "key": "hood",
+      "at": "",
+      "name": "The hooded robot, closer",
+      "blurb": "Closer than chorus 1: the eyes, the metal under the hood."
+    },
+    {
+      "key": "lights",
+      "at": "",
+      "name": "The searchlights",
+      "blurb": "The ship's searchlights sweep the ranks; the ship overhead as a ceiling."
+    },
+    {
+      "key": "eye-close",
+      "at": "",
+      "name": "The eye, nearer",
+      "blurb": "The ring, the red dots, the aperture, nearer than chorus 1."
+    },
+    {
+      "key": "ships",
+      "at": "117.71",
+      "name": "The ships come",
+      "blurb": "Second pass. Many hulls descending through cloud over the parade ground."
+    },
+    {
+      "key": "march",
+      "at": "",
+      "name": "The army moves",
+      "blurb": "Ambitious. Fallback: one block moving, or every head turning at once."
+    },
+    {
+      "key": "eye-turn",
+      "at": "",
+      "name": "The eye turns to us",
+      "blurb": "The eye on the mountain turns towards camera."
+    },
+    {
+      "key": "town",
+      "at": "~128",
+      "name": "The beam over the empty town",
+      "blurb": "The visible cost: the beam crosses an empty town at the mountain's foot."
+    }
+  ],
+  "existing": {
+    "ranks": [
+      [
+        "WAS-WL2-b",
+        "Chorus 1 now",
+        "moodboard/current/WAS-WL2-b.jpg"
+      ],
+      [
+        "WAS-WL4-c",
+        "Chorus 1 now",
+        "moodboard/current/WAS-WL4-c.jpg"
+      ]
+    ],
+    "hood": [
+      [
+        "WAS-WL3-a",
+        "Chorus 1 now",
+        "moodboard/current/WAS-WL3-a.jpg"
+      ]
+    ],
+    "eye-close": [
+      [
+        "WAS-EY1-b",
+        "Chorus 1 now",
+        "moodboard/current/WAS-EY1-b.jpg"
+      ]
+    ],
+    "eye-turn": [
+      [
+        "WAS-EY4-c",
+        "Chorus 1 now",
+        "moodboard/current/WAS-EY4-c.jpg"
+      ]
+    ]
+  },
+  "styles": {},
+  "looks": {
+    "chorus1": "Chorus 1's own look"
+  },
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/E1AzBZ9ZC8ftaVVdHmdqg4"
+  }
+}
