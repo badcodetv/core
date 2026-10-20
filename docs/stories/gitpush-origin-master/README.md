@@ -141,6 +141,7 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 | Song — "git push origin master" (orchestral) | [`songs/git-push-origin-master-orchestral.md`](./songs/git-push-origin-master-orchestral.md) | **canonical master** — narrator + bulletins land; frozen, and the source for the `BC-NEWSREADER` Voice |
 | Song — "git push origin master" (drum & bass) | [`songs/git-push-origin-master-dnb.md`](./songs/git-push-origin-master-dnb.md) | drafting — same bulletins, orchestra kept, break underneath, chorus handed to a room of schoolchildren |
 | Video | Jack, from the storyboard section of `story.md` | next up |
+| Music video — chorus clip bank | [`scenes/chorus-2/clips-board/`](./scenes/chorus-2/clips-board/README.md) · [picks page](https://claude.ai/artifact/KDw9dRfPJCvdsZs9TXK4C5) | **55 clips of the chorus world** (robed army, hooded robot, ships, the eye, the empty town), made 2026-10-20 for chorus 2 — **the bank for all three choruses** (Kai). Chorus 2 picks first |
 | Comic (full arc) | — | not started; the 16-panel **GPOM Short** teaser is live at `/comics/gpom-short` |
 
 ### Act maturity

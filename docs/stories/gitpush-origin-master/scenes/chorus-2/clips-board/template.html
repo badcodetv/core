@@ -1,0 +1,194 @@
+<title>GPOM Chorus 2 Clips</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a night parade ground — beats as bands in story order, clips as a grid of screens, one pick bar per screen. Single dark look (the footage is night). */
+:root {
+  --ground: #0b0d12;
+  --panel: #141821;
+  --line: #262c38;
+  --text: #e6e8ee;
+  --dim: #8d94a6;
+  --red: #e0313a;
+  --beam: #f2f4f8;
+  --amber: #e2a23b;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+body { background: var(--ground); color: var(--text); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 40px; }
+header { display: grid; gap: 10px; }
+.kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+.kicker b { color: var(--red); font-weight: 500; }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(40px, 7vw, 76px); line-height: .95; margin: 0; letter-spacing: .01em; text-transform: uppercase; text-wrap: balance; }
+.lede { max-width: 66ch; color: var(--dim); margin: 0; }
+.lede strong { color: var(--text); font-weight: 500; }
+.bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-family: var(--mono); font-size: 12px; }
+.bar button, .pick button { font: inherit; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 6px 10px; cursor: pointer; }
+.bar button[aria-pressed="true"] { border-color: var(--beam); background: #232937; }
+.bar .count { color: var(--dim); margin-left: auto; font-variant-numeric: tabular-nums; }
+button:focus-visible, textarea:focus-visible { outline: 2px solid var(--beam); outline-offset: 2px; }
+section.beat { display: grid; gap: 14px; }
+.beat-head { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; border-top: 1px solid var(--line); padding-top: 14px; }
+.beat-head h2 { font-family: var(--display); font-weight: 600; font-size: 28px; margin: 0; text-transform: uppercase; letter-spacing: .02em; }
+.beat-head .at { font-family: var(--mono); font-size: 12px; color: var(--red); font-variant-numeric: tabular-nums; }
+.beat-head p { margin: 0; color: var(--dim); flex-basis: 100%; max-width: 70ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px; }
+.clip { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.screen { position: relative; aspect-ratio: 16/9; max-width: 100%; background: #000; border: 1px solid var(--line); }
+.clip.star .screen { border-color: var(--red); }
+.screen video { width: 100%; height: 100%; display: block; object-fit: cover; }
+.tag { position: absolute; top: 6px; left: 6px; font-family: var(--mono); font-size: 11px; background: rgba(0,0,0,.72); color: var(--beam); padding: 2px 6px; letter-spacing: .04em; }
+.tag.star { color: var(--red); }
+.tag.part { color: var(--amber); }
+.meta { display: grid; gap: 2px; }
+.id { font-family: var(--mono); font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.what { margin: 0; }
+.verdict { margin: 0; font-size: 13px; color: var(--amber); }
+.pick { display: flex; gap: 6px; }
+.pick button { flex: 1; padding: 7px 0; font-family: var(--mono); font-size: 12px; }
+.pick button[data-v="this"][aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+.pick button[data-v="maybe"][aria-pressed="true"] { background: #4a3a1a; border-color: var(--amber); }
+.pick button[data-v="no"][aria-pressed="true"] { background: #2a2e38; color: var(--dim); }
+.clip.hid { display: none; }
+.notes { display: grid; gap: 8px; max-width: 70ch; }
+.notes label { font-family: var(--display); font-size: 24px; text-transform: uppercase; font-weight: 600; }
+textarea { font: inherit; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 10px; min-height: 110px; resize: vertical; width: 100%; box-sizing: border-box; }
+.status { font-family: var(--mono); font-size: 12px; color: var(--dim); min-height: 1.2em; }
+@media (prefers-reduced-motion: reduce) { video { animation: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">GitPush Origin Master <b>▲</b> chorus 2 · 106.92 → 128.71s · round 1 clips</div>
+    <h1>Pick the clips</h1>
+    <p class="lede">Every mood-board still, animated a different way. The camera is locked in all of them, so Premiere can add pushes later. Each clip is 6 seconds and silent here. <strong>Red border = my strongest picks.</strong> Amber notes say which seconds to use. Hover or tap a clip to play it. Full-quality files are in <span class="id">D:\badcode-videos\gitpush-origin-master\clips\chorus-2\video\</span>.</p>
+    <div class="bar" role="toolbar" aria-label="Filter clips">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="star" aria-pressed="false">My strongest</button>
+      <button type="button" data-f="this" aria-pressed="false">Your picks</button>
+      <button type="button" data-f="open" aria-pressed="false">Not picked yet</button>
+      <button type="button" id="playall" aria-pressed="false">Play all</button>
+      <span class="count" id="count"></span>
+    </div>
+  </header>
+  <main id="beats" style="display:grid;gap:40px"></main>
+  <div class="notes">
+    <label for="note">Notes</label>
+    <textarea id="note" placeholder="Anything for round 2: re-rolls, an order, a shot that's missing."></textarea>
+    <div class="status" id="status">Picks save for everyone once you're signed in.</div>
+  </div>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const picks = {};
+let db = null, me = null, filter = 'all';
+const $ = s => document.querySelector(s);
+const status = t => { $('#status').textContent = t; };
+
+function build() {
+  const main = $('#beats');
+  for (const b of DATA.beats) {
+    const cs = DATA.clips.filter(c => c.beat === b.key);
+    if (!cs.length) continue;
+    const sec = document.createElement('section'); sec.className = 'beat';
+    sec.innerHTML = `<div class="beat-head"><h2></h2><span class="at"></span><p></p></div><div class="grid"></div>`;
+    sec.querySelector('h2').textContent = b.name;
+    sec.querySelector('.at').textContent = b.at ? b.at + 's' : '';
+    sec.querySelector('p').textContent = b.blurb;
+    const grid = sec.querySelector('.grid');
+    for (const c of cs) {
+      const el = document.createElement('article');
+      el.className = 'clip ' + c.tag; el.dataset.key = c.key;
+      el.innerHTML = `<div class="screen"><video muted loop playsinline preload="metadata"></video><span class="tag"></span></div>
+        <div class="meta"><span class="id"></span><p class="what"></p><p class="verdict"></p></div>
+        <div class="pick" role="group"><button type="button" data-v="this" aria-pressed="false">This</button><button type="button" data-v="maybe" aria-pressed="false">Maybe</button><button type="button" data-v="no" aria-pressed="false">No</button></div>`;
+      const v = el.querySelector('video'); v.src = c.file + '#t=0.5';
+      const tag = el.querySelector('.tag');
+      tag.textContent = c.tag === 'star' ? '★ strong' : c.tag === 'part' ? 'use part' : c.key;
+      tag.classList.add(c.tag);
+      el.querySelector('.id').textContent = `${c.key} · ${c.still}`;
+      el.querySelector('.what').textContent = c.what;
+      const vd = el.querySelector('.verdict');
+      if (c.tag === 'part' && c.verdict) vd.textContent = 'Use ' + c.verdict; else vd.hidden = true;
+      const scr = el.querySelector('.screen');
+      scr.addEventListener('mouseenter', () => v.play().catch(() => {}));
+      scr.addEventListener('mouseleave', () => { if (!$('#playall').getAttribute('aria-pressed').includes('true')) v.pause(); });
+      scr.addEventListener('click', () => v.paused ? v.play().catch(() => {}) : v.pause());
+      el.querySelectorAll('.pick button').forEach(btn => btn.addEventListener('click', () => setPick(c.key, btn.dataset.v)));
+      grid.appendChild(el);
+    }
+    main.appendChild(sec);
+  }
+}
+
+function render() {
+  let shown = 0, picked = 0;
+  document.querySelectorAll('.clip').forEach(el => {
+    const k = el.dataset.key, p = picks[k];
+    el.querySelectorAll('.pick button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === p)));
+    if (p) picked++;
+    const show = filter === 'all' || (filter === 'star' && el.classList.contains('star')) || (filter === 'this' && p === 'this') || (filter === 'open' && !p);
+    el.classList.toggle('hid', !show); if (show) shown++;
+  });
+  document.querySelectorAll('section.beat').forEach(s => { s.hidden = !s.querySelector('.clip:not(.hid)'); });
+  $('#count').textContent = `${shown} shown · ${picked} of ${DATA.clips.length} picked`;
+}
+
+async function setPick(key, v) {
+  const next = picks[key] === v ? null : v;
+  if (next) picks[key] = next; else delete picks[key];
+  render();
+  if (!db || !me) { status('Not saved: sign in to claude.ai to keep picks.'); return; }
+  try {
+    const ref = db.collection('picks').doc(key + '__' + me);
+    if (next) await ref.set({ clip: key, pick: next, uid: me, at: new Date().toISOString() });
+    else await ref.delete();
+    status('Saved.');
+  } catch (e) { status('Could not save that pick. ' + (e && e.message ? e.message : '')); }
+}
+
+document.querySelectorAll('.bar [data-f]').forEach(b => b.addEventListener('click', () => {
+  filter = b.dataset.f;
+  document.querySelectorAll('.bar [data-f]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  render();
+}));
+$('#playall').addEventListener('click', e => {
+  const on = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+  e.currentTarget.setAttribute('aria-pressed', String(on));
+  document.querySelectorAll('.clip:not(.hid) video').forEach(v => on ? v.play().catch(() => {}) : v.pause());
+});
+
+let noteTimer = null;
+$('#note').addEventListener('input', () => {
+  clearTimeout(noteTimer);
+  noteTimer = setTimeout(async () => {
+    if (!db || !me) { status('Not saved: sign in to claude.ai to keep notes.'); return; }
+    try { await db.collection('notes').doc(me).set({ uid: me, text: $('#note').value, at: new Date().toISOString() }); status('Note saved.'); }
+    catch (e) { status('Could not save the note.'); }
+  }, 900);
+});
+
+build(); render();
+
+(async () => {
+  try {
+    const user = await window.claude?.use('user');
+    db = await window.claude?.use('db');
+    if (user) me = await user.id();
+    if (!db || !me) return;
+    db.collection('picks').onSnapshot(snap => {
+      for (const k of Object.keys(picks)) delete picks[k];
+      const mine = {};
+      (snap.docs || []).forEach(d => { const x = d.data ? d.data() : d; if (x && x.uid === me) mine[x.clip] = x.pick; });
+      Object.assign(picks, mine); render();
+    });
+    const n = await db.collection('notes').doc(me).get();
+    const nd = n && (n.data ? n.data() : n);
+    if (nd && nd.text && !$('#note').value) $('#note').value = nd.text;
+  } catch (e) { status('Picks could not load; you can still watch every clip.'); }
+})();
+</script>

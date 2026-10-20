@@ -14,7 +14,6 @@
  "HD1-c-b": "The lens inside the red eye contracts sharply, focusing, then its red light pulses brighter. Water droplets slide down over the metal.",
  "HD1-c-c": "The rings inside the red eye rotate and refocus, and the red core flares bright. Rain streaks past.",
  "HD1-d-a": "The searchlight beam narrows onto the hooded robot. Rain pours through the beam. Behind it, the red eyes in the rows light up one row at a time from front to back. Nobody moves.",
- "HD1-d-b": "The searchlight beam sweeps slowly across the hooded robot from left to right. The robot lifts its head into the light, its red eyes flaring. Rain falls.",
  "SL1-a-a": "The ship's floodlights pulse and swing slowly across the arena. A column of white haze surges up out of the well into the beams. The army stands still.",
  "SL1-a-b": "The ship descends slowly towards the ranks, its floodlights growing brighter and wider. Rain streams through the beams. The robots stand still.",
  "SL1-a-c": "The orange lights under the ship blink, then the white floodlights snap on one pair at a time, front to back. Rain falls through the beams onto the still ranks.",
@@ -54,5 +53,6 @@
  "TN1-c-b": "The beam crosses the dark town in the valley, dust and haze swirling up in its light. Storm clouds roll over the mountain. No lights come on.",
  "TN1-c-c": "The beam sweeps slowly across the valley town and over the fields beyond. Clouds race. The town stays dark.",
  "TN1-d-b": "The light from the ring at the end of the street grows brighter and wider, rain pouring through it, until it fills the frame and washes it slowly to white.",
- "TN1-d-c": "The beam pours down the empty street towards the camera, puddles flaring as it reaches them, and the light grows until the whole frame slowly washes to white."
+ "TN1-d-c": "The beam pours down the empty street towards the camera, puddles flaring as it reaches them, and the light grows until the whole frame slowly washes to white.",
+ "HD1-d-b2": "Rain falls through the white light. The hooded figure slowly lifts its head and its red eyes glow brighter. Mist drifts behind it."
 }
