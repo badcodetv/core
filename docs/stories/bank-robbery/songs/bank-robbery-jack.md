@@ -3,7 +3,137 @@
 Jack's own song (2026-10-20). A scratchpad that sits apart from the film's score, so nothing here
 changes the cut, the score sheet or any other file.
 
-## Draft 2 (2026-10-21)
+## Still to decide (2026-10-21)
+
+Jack is working out the lyrics and the style before anything goes into Suno.
+
+Draft 2 at a glance:
+- **Sound:** menacing British art-punk with a 1970s heist-movie funk groove, 120 BPM
+- **Instruments:** twitchy distorted funk guitar, bouncing bass, handclaps, swirling psychedelic
+  synths on the chorus
+- **Voice:** male, flat half-spoken verses that tear into snarled shouts on the chorus, with a gang
+  shouting back
+- **Shape:** intro → 3 verses → chorus ×3 → spoken monologue → outro, about 3:10
+
+Styles that could fit:
+- **Keep it: heist-movie punk.** Tense and sarcastic; suits the Mister Red / Mister Blue story.
+- **Grime / UK rap over a heist beat.** The most aggressive, closest to Jack's original verse. Still
+  no double-time rap.
+- **1970s cop-show funk.** Brass stabs, wah guitar, a narrator talking over it. The most cinematic;
+  plays the robbery as a film.
+- **Drum & bass.** The BadCode default, but draft 2 bans it on purpose.
+
+Open questions:
+- Which lyric lines to keep, cut or make gorier?
+- Which style?
+
+## Possible styles
+
+### Maybe: 1970s cop-show funk (2026-10-21)
+
+Jack wants to keep this one as a maybe. Brass stabs, wah guitar, a narrator talking over it: the
+most cinematic option, and it plays the robbery as a film. Not tried yet. The Style box below is
+written but unheard.
+
+```
+Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead in a hard deadpan spoken narration on the verses that breaks into shouted lines on the chorus, a gang of voices shouting back. Menacing, played completely straight.
+```
+
+Exclude Styles (draft 2's list, audited: `orchestral` dropped because this style asks for strings;
+the punk lane's sounds added):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco
+```
+
+## Draft 3 (2026-10-21)
+
+Jack's note on draft 2: "Please make it more gritty, gorier, agressive, there is too much of the
+story in there."
+
+What changed: the film's story is mostly gone (no Mister Red and Mister Blue, no pallet, no cleaner,
+no beach, no town tied to a chair). The song is now a home invasion told straight, with the economics
+as hints: printing ("pumping it in"), the pound thinning, rent, wages standing still, whoever gets the
+new money first. Jack's own lines are kept word for word. Immigration is still never called fake
+("some of what they shout about is real"). Shorter, at 2:50.
+
+Style: still open. Use draft 2's punk Style box or the cop-show funk maybe above; draft 2's Exclude
+Styles box carries over. Settings as draft 2 except Duration **2:50**. Unheard, nothing generated.
+
+### Lyrics
+
+```lyrics
+[Intro]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+## Draft 2 (2026-10-21) — superseded by draft 3
+
+Jack's brief, word for word:
+
+> i want to stray away from economic talk, mostly reference it as a bank robbery, through metaphor
+> and with economic hints throughout, making it aggressive, gory, sort of like the vibe of making
+> people aware that they should be angry about their money being stolen, in the same vein as the
+> bank robbery story, as in all this immagration talk is just a distration from the debasement of
+> our currency, making it impossible to live and buy a house, this has been stolen from us, evident
+> from the current protests across europe at the moment, people are angry about living standerds
+> and absurd politcal corruption and mismanagement, these are all ingredients for the soup that is
+> this song. please help, Also, research the internet, look through the repo, and use the skills to
+> achieve this goal. Thanks.
 
 Jack's brief: less economics talk, tell it as a bank robbery in metaphor with economic hints;
 aggressive and gory; make people angry that their money is being stolen; the immigration row is the

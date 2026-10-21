@@ -1,5 +1,6 @@
 """mouth-track.py clip.mp4 strip.jpg [--face big|left|right]   (2026-10-20, GPOM cut 3)
-Per frame MediaPipe face -> inner-lip gap / face height and mouth centre. Prints a rescaled strip (10th-95th pct of the
+Per frame MediaPipe face -> inner-lip gap / face height and mouth centre. Flags HELD runs (open but
+not moving: a parted smile is not speech). Prints a rescaled strip (10th-95th pct of the
 clip's own gap; '#' > 55%, '+' > 25%, '.' below) and shut->open moments, and writes a 12 fps TRACKED mouth close-up strip
 with timestamps (the skill's step 5, done on a moving head). Writes <strip>.json with the per-frame gap.
 run with ~/.cache/badcode-lips/venv/bin/python"""
@@ -32,6 +33,22 @@ print(f'fps {fps} frames {len(s)} missing {int(np.isnan(a).sum())}')
 for i in range(0, len(s), 48): print(f'{i / fps:6.2f} {s[i:i + 48]}')
 ons = [i / fps for i in range(1, len(r)) if not np.isnan(r[i]) and not np.isnan(r[i - 1]) and r[i - 1] <= .25 and r[i] > .55 or (i > 1 and not np.isnan(r[i]) and r[i-2] <= .25 and r[i] > .55 and r[i-1] <= .55)]
 print('opens:', ' '.join(f'{t:.2f}' for t in sorted(set(round(x, 2) for x in ons))))
+# 2026-10-21 (Bank Robbery 7f): a parted smile HELD still reads as "open" but is not speech. Omni clips often open on one,
+# and a dub laid on it plays over a mouth that doesn't move. Speech is a mouth that CHANGES: flag open runs that hold steady.
+w = max(3, int(round(fps * 0.3)))
+held = np.zeros(len(r), bool)
+for i in range(len(r) - w + 1):
+    seg = r[i:i + w]
+    if not np.isnan(seg).any() and seg.min() > .25 and np.abs(np.diff(seg)).max() < .1 and np.ptp(seg) < .2: held[i:i + w] = True
+if held.any():
+    runs, i = [], 0
+    while i < len(held):
+        if held[i]:
+            j = i
+            while j < len(held) and held[j]: j += 1
+            runs.append((i / fps, j / fps)); i = j
+        else: i += 1
+    print('HELD (open, not moving for 0.3 s+: a parted smile, or a long vowel; check each on the strip):', ' '.join(f'{a_:.2f}-{b_:.2f}' for a_, b_ in runs))
 # tracked strip
 H, W = frames[0].shape[:2]; tiles = []; last = None
 for i in range(0, len(frames), 2):

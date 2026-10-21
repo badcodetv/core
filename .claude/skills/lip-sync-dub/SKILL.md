@@ -52,6 +52,14 @@ on Karen review 10:
 ```bash
 ffmpeg -ss <t> -t 1 -i shot.mp4 -vf "fps=12,crop=iw*0.13:ih*0.13:<mouth x>:<mouth y>,scale=100:-1,drawtext=…%{eif\:(t+<t>)*100\:d}…,tile=17x1" -frames:v 1 strip.jpg
 ```
+🔴 **Open is not talking.** Omni clips often open on a *parted smile held still* (teeth showing, lips apart, nothing
+moving). Every detector reads that as "open", so the first phrase gets laid on a frozen mouth (Bank Robbery 7f, 0:57: "The
+distraction" over 0.6 s of still grin). Speech is a mouth that **changes**: the first real syllable is the first purse,
+closure or jump in shape, not the first parted frame. `mouth-track.py` now prints `HELD` runs (open, not moving for 0.3 s+);
+check each on the strip: a parted smile is not speech, a long vowel is. **Anchor on the lip closures**: every b, p and m in
+the line shuts the lips, so find them in the strip and in the voice (a 20–40 ms silence just before the burst) and make
+them land together; that is the one alignment the eye can't be fooled on.
+
 ⚠️ lips.py's "runs" also fire on the mouth *closing*, and the detector wobbles ±0.25 s between runs. Read the strip around
 each phrase, and when in doubt look at a frame strip of the mouth (`ffmpeg … crop … tile`).
 
@@ -83,7 +91,8 @@ action": every TTS read ≥ 1.8 s, the mouth 1.0–1.2 s):
 with the bed). On the timeline: muted clip on V1, bed on its audio, dub on the narration track, cutaways on V2.
 
 **10. Check, in this order.** (a) Transcribe the dub alone: every word survives. (b) The listening tool (`listen_describe`,
-voice lens) on the dub: no warble, robotic or squeezed words. (c) Phrase onsets against the mouth map. (d) Render, then
+voice lens) on the dub: no warble, robotic or squeezed words. (c) Phrase onsets against the mouth map. (c2) Print a frame-by-frame table of mouth gap against dub energy (24 fps) and check every b/p/m closure in the line
+lands on a shut mouth (7g: "bank" on 1.92–2.00, "protest" on 5.42–5.50). (d) Render, then
 transcribe the rendered stretch and re-check (c) on it. The lip-motion correlation score alone is too blunt for this: it
 put correctly placed dubs 0.35 s "late".
 
@@ -106,6 +115,8 @@ put correctly placed dubs 0.35 s "late".
 | A dubbed line on a standing wide, head ~8% of frame height (7e) | A few-pixel mouth Omni draws loosely and nobody can read. Re-shot as a medium close-up, face ~⅓ of frame height, mouth lit by the key; sync then reads (7f) |
 | "Calmly and unhurriedly" in the Omni prompt (7f) | Ignored: Omni still spoke 1.4–1.6× faster than the voice master. Re-render the TTS with `Pace: natural conversational pace, a little brisk` until a take lands within ×1.0–1.2 of the mouth. Faster than stretching, and it kills the squeeze the listener heard at ×1.15–1.22 |
 | Two halves of one line from the same still, cut together at the same size (7f) | Reads as a jump cut. Punch the second half in ~118% (Motion Scale, anchor on the face) so it reads as a cut |
+| Took a2's first "open" at 0.17 s as the first syllable (Bank Robbery 7f, 2026-10-21) | It was a parted smile held still until 0.75 s; "The distraction" played over a frozen grin, Jack: "his mouth doesn't move". The speech was really 0.88–2.83 (1.95 s), too fast for the voice (×1.4), so a2 never fitted. Swapped to the other take a1 (speech 0.79–3.12): ×1.14, closures matched (7g). **Pick the take on its real speech span, measured after the held smile, not from the first open frame** |
+| A talking close-up of Mr Red (Frames, Omni, 2026-10-21) | Refused 7 times running, "prominent people", with and without the accent and place name: the close-up face itself trips it (the wide toast passed with tiny faces). Didn't try to dodge it with face tweaks; re-shot as an over-the-shoulder from behind him, mouth out of frame, the listener reacting, the line at natural speed |
 | Sped a Scouse "Sandra!" to x1.07 | whisper heard "sundry". At x1.00 (0.13 s past the mouth closing) every word survived. Transcribe the dub, not just the take |
 
 ## Tools

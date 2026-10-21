@@ -929,3 +929,39 @@ phrase first, "no cuts", "no music", three or four sentences, one sentence of di
 1. Watch 0:56–1:09 in `cut 7f`. Only machines have checked the sync; your eyes decide.
 2. "Easy peasy" is delivered as a quieter throwaway (about 3 dB under the rest). Say if you want it up.
 3. Is the b2 punch-in (118%) too soft? It is a 720p clip enlarged.
+
+## Cut 7g (2026-10-21, later): "his mouth doesn't move" at 0:57, and 1:09
+
+Jack on cut 7f: "when he says 'the distraction' his mouth doesnt move … why did the lip syncing work before and now it
+doesnt … as well as 1:09".
+
+**Why 0:57 failed again (measured, 12 fps tracked strip of `m7-ex-a2`).** From 0.17 to 0.75 s his lips are parted in a
+grin **held still**. The tracker reads parted lips as "open", so 7f laid "The distraction" from 0.22 onto a frozen smile.
+His real speech is 0.88–2.83 (1.95 s); the voice needs 2.73 s, ×1.4, so a2 could never fit. 7e failed the other way
+(placed on Omni's audio). Neither was the earlier method breaking; both were the first syllable being read wrong.
+Fixes to the tool and skill: `mouth-track.py` now flags `HELD` runs; lip-sync-dub step 5 says *open is not talking* and
+to anchor on b/p/m lip closures; step 10 adds the frame-by-frame mouth-vs-voice table.
+
+**0:57 fix: take `m7-ex-a1`** (made in 7f, passed over on the wrong measurement). Speech 0.79–3.12 and 4.00–6.17; picture
+clean at 2 fps. Dub `clips\short7g-ex\dub-m7-ex-a1-final.wav` (phrase table `scripts/bank-robbery/lips7g/m7-ex-a1.json`):
+same Umbriel takes, "The distraction…" at 0.81 ×1.14, "All eyes…" at 3.98 ×0.95; the b of "bank" lands on the lip closure
+1.92–2.00 and the p of "protest" on 5.42–5.50 (24 fps table). ROOM reverb, −15.6 LUFS, +4 dB clip level, a1's own audio
+muted on A9. Listening tool: every word clear, no squeeze or warble (`docs/listening/log/2026-10-21-145825-*`). b2 checked
+with the same rule: its "We" is a real purse at 0.42; unchanged.
+
+**1:09 fault:** the toast shot `m4-red-blue-toast` was animated for "Leave the people to us." and now carried "Good job with
+those headlines, old boy." (fact 1: a mouth can't be re-voiced), tiny faces from above. **Re-shoot attempt:** a Mr Red MCU
+still (`images\short7g\m7-red-close-a`) made fine, but every Omni talking clip of it was refused "prominent people" (7 tries,
+two wordings). **Used instead:** an over-the-shoulder from behind Mr Red (`m7-red-ots-a`, The Ex + Mr Red + `brs4-p01b-room`),
+clip `vids\short7g\m7-red-ots-a2` (Frames, 6 s, no dialogue: Red holds the toast, the Ex listens grinning, mouth shut, then
+lifts his glass and they clink). On V1/A1 at 68.92–71.21, source 3.17–5.46, so the clink lands on "old boy". Red's dub
+unchanged at 69.04 (ends 71.59, narrator voice 71.69).
+
+**Sequence `bank robbery short - cut 7g`** (clone of 7f; 7f untouched), bin `short cut 7g`. Same length 2:28.5. Frames
+exported at 57.5 and 70.9 and read. Saved. Not rendered (Jack's rule).
+
+**🔴 For Jack**
+
+1. Watch 0:56–1:12 in `cut 7g`.
+2. 🔴 Flow reads Mr Red's close-up face as a real "prominent person". Worth a look at whether he resembles a real
+   politician too closely for a satire; he only appears in wides and from behind now.
