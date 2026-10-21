@@ -1,0 +1,30 @@
+{
+ "_note": "Bank Robbery cut 7d (2026-10-21): the Ex's new line over m6-ex-a1 (8 s), cut at word boundaries onto the mouth bursts 0-2.42, 2.83-3.79, 5.04-7.08",
+ "duration": 8.0,
+ "phrases": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7d/v13b-ex-a-distraction.wav",
+   "from": 0.2,
+   "to": 2.9,
+   "at": 0.03,
+   "tempo": 1.1,
+   "text": "The distraction outside the bank is"
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7d/v13b-ex-a-distraction.wav",
+   "from": 2.9,
+   "to": 4.05,
+   "at": 2.86,
+   "tempo": 1.1,
+   "text": "ready to go."
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7d/v13b-ex-a-distraction.wav",
+   "from": 4.48,
+   "to": 6.97,
+   "at": 5.07,
+   "tempo": 1.2,
+   "text": "All eyes will be on that protest."
+  }
+ ]
+}

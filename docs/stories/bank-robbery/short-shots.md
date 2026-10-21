@@ -738,3 +738,116 @@ Delivery check: −15.2 LUFS, true peak −1.1; the old range fail only.
 1. **Denise's long line (0:27) and "Bloody landlord" are now voice over the café.** Neither of her clips for them passed,
    even re-made. One more Frames re-roll each could put her face back.
 2. **Unwatched by a human.**
+
+## Cut 7d (2026-10-21): the crowd is the plan, and drum & bass under the vault
+
+From the Jack/Kai meeting of 2026-10-20: Kai signed the short off bar two things. **The crowd line** ("problem is eyes / two
+thousand people outside that bank tomorrow") framed the crowd as their problem; it should be their plan. **The music under
+the pay-in** stayed lofi while the money went into the vault; it wanted something dark and high-energy (drum & bass or rock).
+
+**Sequence:** `bank robbery short - cut 7d`, a clone of 7c (`createCloneAction` with `ca.addAction`, renamed). 7c untouched.
+New files in `clips\short7d-fix` (⚠️ **not** `clips\short7d`, which is one of 7c's abandoned test folders; a stray copy of
+the new dub sits there too and nothing in the project points at it). Bin `short cut 7d`. Saved.
+
+### The line
+
+- **The Ex keeps his line.** His whole sentence is on his moving mouth (only "eyes." is over the cutaway), and the mouth was
+  animated to those words (lip-sync-dub, fact 1), so re-wording him would mean a re-shoot.
+- **Mr Red's reply changes:** ~~"Leave the people to us."~~ → **"Who d'you think booked them?"** The toast shot is from above
+  with the faces small, so it is the one place new words can go without a re-shoot. Same voice (Achird, his profile + "Smug,
+  a little amused, raising his glass"), take 2 of 3 (word-perfect by faster-whisper; take 3 opened with a nice "heh" but ran
+  into the narrator), lead-in trimmed, levelled to the old line (−15.6 LUFS), the same `ROOM` reverb, +4 dB clip level like
+  every dub. At 1:02.83, as the old line was. Listening tool: clean, no warble, "amused, slightly smug"
+  (`docs/listening/log/2026-10-21-112444-dub-v14b-red-booked.md`).
+- 🟡 **Lip match unverified by eye.** mouth-map shows movement in the toast shot from 0.0 to ~1.6 s (two faces, from above,
+  noisy); the new line runs 0.2 to 1.5 s, inside it.
+
+### The music
+
+- **Track:** Darkfluxx, "Reloaded", ~174 BPM, **CC BY 4.0** (Free Music Archive, licence read on the track's own page
+  2026-10-21; Instrumental: Yes, AI generated: No). File and the two runners-up with their licences:
+  `music\dnb\` + `LICENCES.md`. Nothing CC0 at the right tempo turned up in ~810 FMA drum & bass tracks.
+- **Placement (A8, new track):** 1:36.17 (cut to the side door) to 1:47.42. Source 92.71 s onward, so the track's own
+  1.3 s near-silence falls just after the narrator's side-door line and **the drop slams on the first vault cut (1:41.33)**.
+  Ducked to −31 dB RMS under the narrator (the lofi sits at −30 there), −20 dB after the drop (the lofi runs about −27).
+- **Around it:** the march cue now fades out by 1:36.42 (`ms-03-march-7d`), the bank cue now starts at 1:46.83 after the
+  vault, fading in over 1 s (`ms-04-bank-7d`).
+
+### 🔴 For Jack
+
+1. 🔴 **Credit owed before upload** (CC BY): `"Reloaded" by Darkfluxx (freemusicarchive.org/music/darkfluxx), licensed under
+   CC BY 4.0 (creativecommons.org/licenses/by/4.0/)`, on the end card or in the description.
+2. **Unheard by a human:** the track was picked on page metadata and loudness, and the mix was checked by numbers, not ears.
+   If it's wrong, the backup is 1000 Handz "Overpower" from 134 s (but its artist hints at YouTube Content ID claims).
+3. **Red's new line is my draft.** Easy to swap: re-render, drop it on A3 at 1:02.83.
+
+### Cut 7d, round 2 (2026-10-21): the 0:52 press roar, and Jack's lines
+
+Jack on cut 7d: "at 52 secs there is a sound effect playing and it is way too loud ... instead of 'the problem is eyes' and
+so on, it should be 'The distraction outside the bank is ready to go, all eyes will be on that protest, we just stroll right
+into the bank, easy peasy.' 'good job with those headlines old boy.' ... talking about it as if the distraction ... was not
+part of the plan goes against the story."
+
+- **0:52 was the ECB press bed** (A6, cut 6's real machine sound, not Flow's): its clatter rose over the narrator at
+  0:52–0:54 (listening log `2026-10-21-113829-mix-48-58`). Replaced by `press-bed-7d.wav`: 1.2 s fade-in, −14 dB against
+  the old level under every line, −7 dB in the gaps.
+- **Mr Red's toast line is now "Good job with those headlines, old boy."** (take 1 of 3, Achird; take 3 had a synthetic
+  lift on "headlines"). At 1:02.75, +4 dB. It sets up the front pages at 1:13.
+- **The Ex's line needs a new shot.** His old clip's mouth says "Problem is eyes…", and a mouth cannot be re-voiced
+  (lip-sync-dub fact 1). Voice masters made first (lip-sync-dub step 1), in `voices\short7d\`: `v13b-ex-a-distraction.wav`
+  (6.6 s of speech) and `v13b-ex-b-stroll.wav` (4.2 s), all words checked by faster-whisper, picked by the listening tool
+  (`2026-10-21-114146-audition`). Two clips, one per half (web research 2026-10-21: talking clips 4–6 s, one or two short
+  phrases each). Until they exist, cut 7d still has the old Ex clip and line.
+
+#### `m6-ex-papers`: the shot spec (shot-craft)
+
+- **Job:** the turn of the scene: the protest is theirs, said by a man who is already pleased. The papers in front of him
+  are the same machine (they pay off at "Good job with those headlines" and the front pages at 1:13).
+- **Depth:** foreground, tomorrow's front pages fanned on the table, out of focus, one red masthead and one blue, words
+  unreadable (withheld until 1:13); midground, the Ex, standing, fists on the table, leaning in, on the left third, looking
+  out of frame right; background, brick, the exit sign, the dark iron of the press.
+- **Light:** two lights, two colours, both already in the room's reference: the warm amber bare bulb above and behind him
+  (rim on hair and shoulders) and the green fire-exit glow across one cheek. Deep falloff everywhere else.
+- **Camera:** low at the table edge, looking up a little (not eye level: Jack, 2026-10-06, eye-level shots look AI). A different recipe from
+  `m3-ex-lamp` (low across the table, whisky glass, white work lamp), so the scene does not repeat itself.
+- **What moves:** only his face and mouth. Fixed camera.
+- **Anti-slop checks:** staged hard parts already done (he is already leaning, the papers already down); no readable text;
+  two coloured lights, named; unretouched film still and natural skin texture; nothing symmetrical, subject off-centre.
+
+#### The still prompt (Nano Banana 2): round 1, unrun
+
+Attach: Character **The Ex** (`fe8bbaf3`) and the room image **`brs4-p01b-room`**. 16:9, Nano Banana 2, x2.
+
+> Same bare brick back room as the reference image, at night. Camera low at the edge of the scarred wooden table, tilted
+> slightly up. Near foreground, soft and out of focus: tomorrow's tabloid front pages fanned across the table, one with a
+> bright red masthead, one with a royal blue masthead, every word too blurred to read. The Ex stands behind them on the
+> left of the frame, both fists on the table, leaning in, face turned three-quarters to someone off the right edge,
+> mid-sentence, a small pleased smile. A warm amber bare bulb hangs above and behind him, rimming his hair and shoulders;
+> the green glow of the fire-exit sign falls across one cheek. Deep shadow everywhere else. Unretouched 35mm film still,
+> natural skin texture, rich saturated colour, fine grain. 16:9. Thanks.
+
+The two Omni Flash clip prompts (Frames, this still as the start frame, one half of the line each, muted and dubbed)
+follow once a still is picked: stills first, one prompt at a time.
+
+#### Built (2026-10-21, later): cut 7e, Jack: "just do the stuff in flow ... just pick the best one"
+
+- **Stills** (Nano Banana 2, Flow project `63d22c4b`, The Ex + `brs4-p01b-room`, runner `brs-stills.mjs` with
+  `BRS_JSON=brs7d-stills.json`, files `images\short7d\`). Round 1 (`a`, `b`): both drew **real mastheads** ("Sun",
+  "Mirror", "Daily"), rejected. Round 2 changed only the papers clause to *"each masthead is a plain solid band of bright red
+  or royal blue with no lettering at all, and the pages below are only big grainy photographs and grey smudges, nothing
+  readable"*: `c` has a stranger's face on the right (a mover we don't control), **`d` picked**: letterless red and blue
+  papers, the Ex sharp, a dark shoulder as the foreground listener.
+- **Clips** (Omni 1.1 Flash, Frames, 720p, x1, `mfs-clip.mts`, files `vids\short7d\`): `m6-ex-a1` (8 s) and `m6-ex-b1`
+  (6 s), one take each, prompts in the form *"The man standing at the table says, in a warm, unhurried, privately
+  educated southern English accent: <line>. He keeps both fists on the table and his eyes on the man on the right. Fixed
+  camera… No music. Thanks."* Both say exactly their words (faster-whisper); 2 fps sheets show no morph, the papers stay
+  letterless. First try of a1 hit `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash`; the retry 10 s later went through.
+- **Dubs** (lip-sync-dub): phrase tables `scripts/bank-robbery/lips7d/*.json`, phrases cut at word boundaries onto the mouth
+  bursts (tempo 1.0–1.2), room reverb, −15.6 LUFS, +4 dB clip level. Listening tool: no warble or robotic joins. The pause
+  after "We" is the clip's own mouth pause.
+- **Cut 7e** (clone of 7d, renamed): old Ex shots and the three "Problem is eyes" dubs out; everything from the toast on
+  rippled **+6.29 s** on every track (one transaction, latest clip first); the new shots on **V2** over the V1 gap
+  (0:56.46–1:08.92), their own audio muted on A9; Red's headlines line at 1:09.04. The plan cue and the press bed spanned
+  the gap, so both were rebuilt 6.29 s longer (`ms-02-plan-7e`: from the source mp3, ducked to the new line times, silent
+  over the key-press; `press-bed-7e`: a 6.29 s loop of its own middle, crossfaded, the dead stop landing on the key at
+  1:16.75). Film now **2:28.5**. Mix 0:50–1:20 checked by the listening tool: every line clear, nothing too loud, no overlaps.
