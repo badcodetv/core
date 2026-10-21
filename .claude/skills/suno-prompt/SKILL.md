@@ -385,6 +385,13 @@ merely improbable. Cutting beats casting every time; the drop is free. (Camping 
 two-hander and was really two solo verses either side of a 32-bar drop — every lever spent on
 in-generation casting there was wasted.)
 
+✅ **Want a different voice? Reference a real singer — translated.** Ask the human for a singer who
+has the voice, write the name in the sheet only (Suno rejects artist names), and put the translation
+in the box: scene + era + voice + delivery (`London retro soul, a raw husky contralto woman with a
+heavy North London accent`). It moved the voice when accent, origin and timbre words all failed
+(Bank Robbery, 2026-10-21, `suno-voices.md` §2c). 🔴 The scene word is a pool word and takes the music
+with it — if the style goes, put the music sentence back in front.
+
 **Contrast on axes the model renders, never on accent.** A detailed Scouse spec produced zero
 accent (2026-08-20, tested). Accent joins age on the describable-but-not-summonable list. Stack
 these four instead — together they put two solo adult men genuinely far apart:
