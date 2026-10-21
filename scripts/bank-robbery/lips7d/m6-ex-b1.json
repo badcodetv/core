@@ -1,0 +1,30 @@
+{
+ "_note": "Bank Robbery cut 7d (2026-10-21): over m6-ex-b1 (6 s), mouth bursts 0-1.0, 1.12-3.04, 3.79-4.75",
+ "duration": 6.0,
+ "phrases": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7d/v13b-ex-b-stroll.wav",
+   "from": 0.25,
+   "to": 0.62,
+   "at": 0.03,
+   "tempo": 1.0,
+   "text": "We"
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7d/v13b-ex-b-stroll.wav",
+   "from": 0.62,
+   "to": 2.78,
+   "at": 1.15,
+   "tempo": 1.12,
+   "text": "just stroll right into the bank."
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7d/v13b-ex-b-stroll.wav",
+   "from": 3.15,
+   "to": 4.26,
+   "at": 3.82,
+   "tempo": 1.12,
+   "text": "Easy peasy."
+  }
+ ]
+}

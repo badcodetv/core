@@ -78,6 +78,19 @@ The red never changes with the ground.
 | `favicon.svg`, `favicon-16/32/48/180.png`, `favicon.ico` | the icon on its own near-black disc, so it reads on light and dark tab bars |
 | `avatar.svg` / `avatar-1024.png` | profile picture on a near-black square, safe for a circle crop |
 
+## Explorations (2026-10-21, none ruled)
+
+Flow rounds and Jack's social-media variant, all in [`explorations/`](./explorations/). **None replaces save 5**;
+that is Kai's call.
+
+- [`2026-10-21-jack-variant/`](./explorations/2026-10-21-jack-variant/README.md) — red o + white triangle + outline,
+  built in code; what Jack uses on every account.
+- [`2026-10-21-sketch-shadow/`](./explorations/2026-10-21-sketch-shadow/README.md) — hand-drawn shadow; Flow redrew the letters.
+- [`2026-10-21-styles/`](./explorations/2026-10-21-styles/README.md) — the logo in 13 scenes (dubplate, flyer, tattoo, placard, teletext…).
+- [`2026-10-21-redesigns/`](./explorations/2026-10-21-redesigns/README.md) — 10 redesigns with the logo attached; all kept ring-over-word.
+- [`2026-10-21-wild/`](./explorations/2026-10-21-wild/README.md) — 12 text-only redesigns; these broke the layout.
+  Shortlist offered to Jack: w09 barcode, w06 red wedge, w11 swiss, r6 bc monogram, r9 one-line. No pick yet.
+
 ## Open
 
 - **Jack's say** — the pick is Kai's (2026-10-19, no longer provisional); Jack (lead creative designer) has not seen it yet.
