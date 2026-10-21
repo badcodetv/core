@@ -27,6 +27,15 @@ Writes voice3/manifest.json.
          voice3/lines/<beat>-<i>-<who>[-p<n>]-<a|b>.wav + voice3/lines.json
 
     python3 scripts/gpom/second-half-video/voice3.py --lines    # existing takes are kept
+
+  JOB 4  --round A1: Kai's round-1 words for scene A (cut-notes.json `words_round1`), only the phrases that
+         are new or changed and only Maddie and Derek (the boss is done in Suno). Maddie = Aoede on the plan's
+         'bot' profile; Derek = the cast file's exact 'man' voice + prompt. The emotion for a phrase goes into
+         that call's DIRECTOR'S NOTES only (an 'Emotion:' line). Three takes (a/b/c) for the beat 0 phrases
+         and Derek's lines, two for the rest. Each take's longest internal silence is measured (V.longest_gap).
+         voice3/a1/<beat>-<i>-<who>-<t>.wav + voice3/a1.json [{key, who, text, direction, takes:[[file,dur]...]}]
+
+    python3 scripts/gpom/second-half-video/voice3.py --round A1   # existing takes are kept
 """
 import json
 import os
@@ -220,11 +229,81 @@ def main_lines():
     print(f"wrote {OUT3 / 'lines.json'} ({len(rows)} lines, {len(res)} takes)")
 
 
+# ---- JOB 4: round A1 -------------------------------------------------------------------------------
+NOTES_FILE = V.S.SCENES / 'second-half-a-killbots' / 'cut-notes.json'
+# (beat, who, text, emotion or None, takes). Texts must match words_round1 (checked in a1_jobs).
+A1 = [
+    ('0', 'bot', "Oh, hello!", "genuinely surprised, caught off guard", 3),
+    ('0', 'bot', "Oh, I didn't notice you there.", "genuinely surprised, caught off guard", 3),
+    ('0', 'bot', "Ooh, that gives me an excuse to turn this racket down.", None, 3),
+    ('0', 'bot', "It's his tune. He plays it on repeat, every day.", None, 3),
+    ('0', 'bot', "Anyway... he's got that patrol out again. Mind how you go.",
+     "exasperated, briskly moving on after an awkward moment", 3),
+    ('6-7', 'man', "Oh, sorry, sorry, love.", "sheepish, placating", 3),
+    ('6-7', 'man', "But the world ended, Sandra!", "indignant, arms up", 3),
+    ('11', 'bot', "Boss, I've just seen a bot in kill mode. Which must mean it's detected an organic signal.", None, 2),
+    ('11', 'bot', "No, honestly, it's real. Look, you can see for yourself.", None, 2),
+    ('11', 'bot', "Do you want some help with the malware?", None, 2),
+    ('10b', 'bot', "Well, you'd better bloody hurry up, boss. They're nearly there.", "urgent, rattled", 2),
+]
+
+
+def with_emotion(prompt, emotion):
+    """The profile with an 'Emotion:' line at the top of its DIRECTOR'S NOTES; everything else kept."""
+    if not emotion:
+        return prompt
+    head = "### DIRECTOR'S NOTES\n"
+    assert prompt.count(head) == 1
+    return prompt.replace(head, f"{head}Emotion for this line: {emotion}.\n", 1)
+
+
+def a1_jobs():
+    words = json.loads(NOTES_FILE.read_text())['words_round1']
+    clean = lambda t: re.sub(r'\s+', ' ', re.sub(r'\([^)]*\)', '', re.sub(r'^[A-Z]+: ', '', t))).strip()
+    cast = json.loads(CAST_FILE.read_text())['cast']
+    base = {'bot': V.profiles['bot'], 'man': cast['man']['prompt']}
+    voice = {'bot': 'Aoede', 'man': cast['man']['voice']}
+    count, out, meta = {}, [], []
+    for beat, who, text, emo, n in A1:
+        assert any(clean(t) == text for t in words[beat]), (beat, text)  # words drift guard
+        i = count[beat] = count.get(beat, -1) + 1
+        stem = f"{'06-07' if beat == '6-7' else V.bkey(beat)}-{i}-{who}"
+        pkey = f'a1-{stem}'
+        V.profiles[pkey] = with_emotion(base[who], emo)  # in-process only
+        meta.append({'key': stem, 'who': who, 'voice': voice[who], 'text': text, 'direction': emo,
+                     'prompt': V.profiles[pkey]})
+        for t in 'abc'[:n]:
+            out.append({'job': 'a1', 'key': f'{stem}-{t}', 'stem': stem, 'dir': 'a1', 'who': pkey,
+                        'voice': voice[who], 'text': text, 'how': None, 'work': WORK3 / 'a1'})
+    return out, meta
+
+
+def main_a1():
+    (OUT3 / 'a1').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'a1').mkdir(parents=True, exist_ok=True)
+    todo, meta = a1_jobs()
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, todo))
+    by = {}
+    for r in res:
+        _, exp = V.expect(r['text'])
+        f = f"a1/{r['key']}.wav" if r['duration'] else None
+        gap = round(V.longest_gap(OUT3 / f), 2) if f else None
+        print(f"{r['key']:22s} {r['duration']:5.2f}s (~{exp:.1f}s) gap {gap}  {r['status']}")
+        flag = r['status'].split()[0] if r['status'].startswith(('SHORT', 'DEAD', 'FAILED')) else None
+        by.setdefault(r['stem'], []).append([f, round(r['duration'], 2)] + ([flag] if flag else []))
+    rows = [{'key': m['key'], 'who': {'bot': 'Maddie', 'man': 'Derek'}[m['who']], 'text': m['text'],
+             'direction': m['direction'], 'voice': m['voice'], 'takes': by[m['key']], 'prompt': m['prompt']}
+            for m in meta]
+    (OUT3 / 'a1.json').write_text(json.dumps(rows, indent=1, ensure_ascii=False))
+    print(f"wrote {OUT3 / 'a1.json'} ({len(rows)} phrases, {len(res)} takes)")
+
+
 def run(job):
     wav = OUT3 / job['dir'] / f"{job['key']}.wav"
     if wav.exists():
         return {**job, 'duration': V.duration(wav), 'status': 'kept'}
-    d, how = V.tts(job, wav, WORK3)
+    d, how = V.tts(job, wav, job.get('work', WORK3))
     return {**job, 'duration': d, 'status': how}
 
 
@@ -267,7 +346,11 @@ def main():
 
 
 if __name__ == '__main__':
-    if '--lines' in sys.argv:
+    if '--round' in sys.argv:
+        assert sys.argv[sys.argv.index('--round') + 1].upper() == 'A1', 'only --round A1 exists'
+        load_key()
+        main_a1()
+    elif '--lines' in sys.argv:
         load_key()
         main_lines()
     else:
