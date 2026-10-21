@@ -1,0 +1,22 @@
+{
+ "_note": "Bank Robbery cut 7f (2026-10-21): the Ex over m7-ex-a2 (8 s). Mouth read from the 12 fps tracked strip: 0.17-2.90 and 3.62-5.42. Brisk takes v15 (Umbriel).",
+ "duration": 8.0,
+ "phrases": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7f/v15-ex-a-distraction-t1.wav",
+   "from": 0.29,
+   "to": 3.08,
+   "at": 0.22,
+   "tempo": 1.04,
+   "text": "The distraction outside the bank is ready to go."
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7f/v15-ex-a2-eyes-t2.wav",
+   "from": 0.23,
+   "to": 2.36,
+   "at": 3.66,
+   "tempo": 1.17,
+   "text": "All eyes will be on that protest."
+  }
+ ]
+}

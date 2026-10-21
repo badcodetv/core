@@ -1,0 +1,22 @@
+{
+ "_note": "Bank Robbery cut 7f: over m7-ex-b2 (6 s). Mouth 0.42-2.27 and 4.17-5.25 (lips shut on the p at 4.6).",
+ "duration": 6.0,
+ "phrases": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7f/v15-ex-b-stroll-t9.wav",
+   "from": 0.27,
+   "to": 2.22,
+   "at": 0.45,
+   "tempo": 1.03,
+   "text": "We just stroll right into the bank."
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7f/v15-ex-b2-easy-t1.wav",
+   "from": 0.23,
+   "to": 1.42,
+   "at": 4.2,
+   "tempo": 1.06,
+   "text": "Easy peasy."
+  }
+ ]
+}

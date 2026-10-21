@@ -851,3 +851,117 @@ follow once a still is picked: stills first, one prompt at a time.
   the gap, so both were rebuilt 6.29 s longer (`ms-02-plan-7e`: from the source mp3, ducked to the new line times, silent
   over the key-press; `press-bed-7e`: a 6.29 s loop of its own middle, crossfaded, the dead stop landing on the key at
   1:16.75). Film now **2:28.5**. Mix 0:50–1:20 checked by the listening tool: every line clear, nothing too loud, no overlaps.
+
+## Cut 7f (2026-10-21): the 0:57 Ex shot re-made for lip sync, and less slop
+
+Jack on cut 7e: "at 57 seconds, the audio and lip syncing is still off … redo the audio and clips … avoid elements of AI slop".
+
+**Diagnosis (measured, `mouth-track.py` on `m6-ex-a1`, 12 fps strip read by eye):** his mouth stays shut, smiling, until
+**0.67 s**; the dub's "The distraction…" was placed at **0.03 s**, so the first phrase ran **~0.6 s early** (early is the
+one direction nobody forgives, lip-sync-dub fact 3). The phrase table had trusted Omni's own audio ("The" from 0.00).
+Second cause: the face is small in a wide frame (head ~8% of frame height), so the mouth is a few pixels, Omni draws it
+loosely and the eye can't lock it. Slop read of the frame: deep focus everywhere, a neat symmetrical fan of CG-flat
+papers, even fill.
+
+**Research, 2026-10-21 (web, graded):** Omni speech "loosely matches" the mouth (practitioner), so the dub is always fitted
+to the picture; lip-sync tools want a near-frontal, unobscured, lit mouth and a still head (vendor docs: sync.so, Luma);
+the AI-face tell is now "too right" — symmetry and averageness (academic, UNSW/ANU); Nano Banana wants a narrative with
+lens, aperture, film stock and materials named, never "flawless/8K" (Google Cloud guide 2026-03-05); Omni wants the camera
+phrase first, "no cuts", "no music", three or four sentences, one sentence of dialogue per clip at a calm pace
+(Runware, OpenArt, Magic Hour). Recorded in `docs/google-flow/omni-flash.md`.
+
+### Shot spec `m7-ex-close` (shot-craft)
+
+- **Job:** unchanged — the turn of the scene, the protest is theirs, said by a man already pleased with himself.
+- **Size:** medium close-up, chest up, his face about a third of frame height (was ~8%): the mouth is now the picture.
+- **Depth:** foreground right third blocked by the listener's soft dark shoulder (obstruct a third, symptoms "looks like
+  AI"); midground the Ex, left of centre; a corner of one crumpled red-band paper blurred at the bottom edge (the
+  headlines payoff stays, withheld); background brick and the green exit sign gone to bokeh.
+- **Light:** two sources, two colours — the warm amber bare bulb in front and above to the left lights his face and
+  mouth; the green fire-exit glow rims the far side of his head. Falloff to black on the right.
+- **Camera:** just below his eye line, 85 mm, f/2, locked off. Not eye level, not the low wide of `m6`.
+- **Moves:** mouth and face only; fists planted; head still.
+
+### Still prompt (Nano Banana 2, x2): attach Character **The Ex** + room **`brs4-p01b-room`**
+
+> A photorealistic medium close-up film still in the same bare brick back room as the reference image, at night. Camera just below his eye line, 85mm lens at f/2, shallow depth of field. The Ex fills the left half of the frame from the chest up, leaning forward over the table on his fists, head turned three-quarters toward someone just off the right edge, mouth closed in a pleased half-smile, one eyebrow slightly raised. The near right third of the frame is the soft, dark, out-of-focus shoulder of the man he is talking to. A warm amber bare bulb above and in front of him, to the left, lights his face; the green glow of a fire-exit sign rims the far side of his head. At the bottom edge, blurred, the corner of a crumpled newspaper with a plain blank red band. Kodak Vision3 500T, unretouched, visible pores, fine grain. 16:9. Thanks.
+
+### Clip prompts (Omni 1.1 Flash, Frames, picked still as Start, 720p, x2 each)
+
+`m7-ex-a` (8 s):
+
+> Static locked-off camera, one unbroken shot, no cuts. The man on the left speaks calmly and unhurriedly in a warm, privately educated southern English accent, starting at once: The distraction outside the bank is ready to go. He takes a breath, then: All eyes will be on that protest. His fists stay on the table and his head stays still, eyes on the man on the right. Quiet room hum. No music. Thanks.
+
+`m7-ex-b` (6 s):
+
+> Static locked-off camera, one unbroken shot, no cuts. The man on the left speaks calmly and unhurriedly in a warm, privately educated southern English accent, starting at once: We just stroll right into the bank. He pauses, smiles, then: Easy peasy. His fists stay on the table and his head stays still, eyes on the man on the right. Quiet room hum. No music. Thanks.
+
+#### Built (2026-10-21, afternoon): cut 7f
+
+- **Stills** (Nano Banana 2, project `63d22c4b`, The Ex + `brs4-p01b-room`, `BRS_JSON=brs7f-stills.json`, files
+  `images\short7f\`): **`a` picked** — face ~4× bigger than `m6`, near-frontal, lit by the bulb, mouth shut at rest,
+  listener's shoulder blocks the right third, papers a soft red band. `b` had more pseudo-text on the paper.
+- **Clips** (Omni 1.1 Flash, Frames, `a` as Start, 720p, `vids\short7f\`, prompts above): `m7-ex-a1`, `a2` (8 s),
+  `b1`, `b2` (6 s). All four say exactly their words. Omni still spoke faster than the voice master whatever the
+  prompt said ("calmly and unhurriedly"): sentence one in 2.45–2.75 s of mouth against 3.83 s of master voice (×1.4–1.6).
+  **Picked `a2` and `b2`** on fit; 4 fps frames: framing holds, no morph, papers letterless.
+- **Voice re-read, not re-stretched** (lip-sync-dub step 8, "faster reads"): Umbriel, the Ex's profile with `Pace:
+  natural conversational pace, a little brisk` (and for "stroll", `quick and casual`), files `voices\short7f\v15-*`.
+  Used: `v15-ex-a-distraction-t1` (2.73 s), `v15-ex-a2-eyes-t2`, `v15-ex-b-stroll-t9` (t8 said "Well, you just…",
+  rejected), `v15-ex-b2-easy-t1`. Every take transcribed.
+- **Placement** (phrase tables `scripts/bank-robbery/lips7f/*.json`, mouth read from 12 fps tracked strips):
+  a2 — "The distraction…" at 0.22 ×1.04 on a mouth 0.17–2.90; "All eyes…" at 3.66 ×1.17 on 3.62–5.42.
+  b2 — "We just stroll…" at 0.45 ×1.03 on 0.42–2.27; "Easy peasy." at 4.20 ×1.06 on 4.17–5.25 (lips shut on the p).
+  Frame-by-frame mouth vs voice energy: every phrase starts 0–2 frames after the mouth opens. Room reverb as before,
+  −15.6 LUFS, b2's two phrases evened to within 3 dB. Files `clips\short7f-ex\` (⚠️ not `clips\short7f`, an old
+  19 October test folder).
+- **Sequence `bank robbery short - cut 7f`** (clone of 7e; 7e untouched), bin `short cut 7f`. V2: `m7-ex-a2`
+  56.46–63.33 (src 0–6.875), `m7-ex-b2` 63.33–68.92 (src 0–5.583) with **Motion Scale 118, Anchor (0.38, 0.36),
+  Position (0.42, 0.38)** — a punch-in so the a2→b2 join (same still, same framing) reads as a cut, not a jump. A9:
+  their own audio, Mute on. A3: dubs at Level 0.2818 (+4 dB, like every dub); b2's dub trimmed to end 69.00 so Red's
+  headlines line still starts at 69.04 from its first frame. Nothing downstream moved; film still 2:28.5. Saved.
+- **Checked:** frames exported at 63.25 and 63.50 and read; a scratch mix of 54–74 s from the timeline's own clips and
+  levels: transcript matches the script word for word; listening tool: every word clear over the bed, no overlap, no
+  warble (`docs/listening/log/2026-10-21-132800-mix-54-74.md`). Not rendered (Jack's rule).
+
+**🔴 For Jack**
+
+1. Watch 0:56–1:09 in `cut 7f`. Only machines have checked the sync; your eyes decide.
+2. "Easy peasy" is delivered as a quieter throwaway (about 3 dB under the rest). Say if you want it up.
+3. Is the b2 punch-in (118%) too soft? It is a 720p clip enlarged.
+
+## Cut 7g (2026-10-21, later): "his mouth doesn't move" at 0:57, and 1:09
+
+Jack on cut 7f: "when he says 'the distraction' his mouth doesnt move … why did the lip syncing work before and now it
+doesnt … as well as 1:09".
+
+**Why 0:57 failed again (measured, 12 fps tracked strip of `m7-ex-a2`).** From 0.17 to 0.75 s his lips are parted in a
+grin **held still**. The tracker reads parted lips as "open", so 7f laid "The distraction" from 0.22 onto a frozen smile.
+His real speech is 0.88–2.83 (1.95 s); the voice needs 2.73 s, ×1.4, so a2 could never fit. 7e failed the other way
+(placed on Omni's audio). Neither was the earlier method breaking; both were the first syllable being read wrong.
+Fixes to the tool and skill: `mouth-track.py` now flags `HELD` runs; lip-sync-dub step 5 says *open is not talking* and
+to anchor on b/p/m lip closures; step 10 adds the frame-by-frame mouth-vs-voice table.
+
+**0:57 fix: take `m7-ex-a1`** (made in 7f, passed over on the wrong measurement). Speech 0.79–3.12 and 4.00–6.17; picture
+clean at 2 fps. Dub `clips\short7g-ex\dub-m7-ex-a1-final.wav` (phrase table `scripts/bank-robbery/lips7g/m7-ex-a1.json`):
+same Umbriel takes, "The distraction…" at 0.81 ×1.14, "All eyes…" at 3.98 ×0.95; the b of "bank" lands on the lip closure
+1.92–2.00 and the p of "protest" on 5.42–5.50 (24 fps table). ROOM reverb, −15.6 LUFS, +4 dB clip level, a1's own audio
+muted on A9. Listening tool: every word clear, no squeeze or warble (`docs/listening/log/2026-10-21-145825-*`). b2 checked
+with the same rule: its "We" is a real purse at 0.42; unchanged.
+
+**1:09 fault:** the toast shot `m4-red-blue-toast` was animated for "Leave the people to us." and now carried "Good job with
+those headlines, old boy." (fact 1: a mouth can't be re-voiced), tiny faces from above. **Re-shoot attempt:** a Mr Red MCU
+still (`images\short7g\m7-red-close-a`) made fine, but every Omni talking clip of it was refused "prominent people" (7 tries,
+two wordings). **Used instead:** an over-the-shoulder from behind Mr Red (`m7-red-ots-a`, The Ex + Mr Red + `brs4-p01b-room`),
+clip `vids\short7g\m7-red-ots-a2` (Frames, 6 s, no dialogue: Red holds the toast, the Ex listens grinning, mouth shut, then
+lifts his glass and they clink). On V1/A1 at 68.92–71.21, source 3.17–5.46, so the clink lands on "old boy". Red's dub
+unchanged at 69.04 (ends 71.59, narrator voice 71.69).
+
+**Sequence `bank robbery short - cut 7g`** (clone of 7f; 7f untouched), bin `short cut 7g`. Same length 2:28.5. Frames
+exported at 57.5 and 70.9 and read. Saved. Not rendered (Jack's rule).
+
+**🔴 For Jack**
+
+1. Watch 0:56–1:12 in `cut 7g`.
+2. 🔴 Flow reads Mr Red's close-up face as a real "prominent person". Worth a look at whether he resembles a real
+   politician too closely for a satire; he only appears in wides and from behind now.

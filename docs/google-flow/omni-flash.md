@@ -2678,3 +2678,25 @@ All seven re-made in **Frames mode with the exact dub line** said the right word
 Recipe and numbers: `docs/stories/bank-robbery/short-shots.md` "Cut 7c". Also: a protest clip with "surge" and "the police
 line braces" was refused ("reputational risk or misrepresent current events"); "people shout and point across the road"
 went through from the same still.
+
+## Talking clips that will be dubbed, and the AI-slop tells (web research + our measurement, 2026-10-21)
+
+Found re-making The Bank Robbery short's 0:57 Ex shot (`docs/stories/bank-robbery/short-shots.md` "Cut 7f").
+
+- **Omni's own speech only loosely matches its mouth; fit the dub to the picture.** `[community]` MindStudio
+  (https://www.mindstudio.ai/blog/how-to-use-google-flow-gemini-omni-video-editing). `[confirmed 2026-10-21]`: in
+  `m6-ex-a1` Omni's audio starts "The" at 0.00 s; the mouth opens at 0.67 s. A dub placed on the audio was 0.6 s early.
+- **A small face can't carry sync.** Head ~8% of frame height (a standing wide) gave a few-pixel mouth Omni drew loosely.
+  For a dubbed line, medium close-up, near-frontal, mouth lit and unobscured, head still. `[vendor]` for lip-sync tools:
+  sync.so (https://sync.so/docs/compatibility-and-tips/improving-lip-sync-quality), Luma
+  (https://lumalabs.ai/learning-hub/luma-lipsync-guide-sync-lipsync-2-vs-pro-best-practices). Carries over by inference.
+- **Prompt shape:** camera phrase first; "one unbroken shot, no cuts" (Omni defaults to cutting); "No music" stated;
+  three or four sentences; one sentence of dialogue per clip at a calm stated tempo, about 2–2.5 words a second.
+  `[runware]` https://runware.ai/docs/models/google-gemini-omni-flash-1-1/guides/prompting; `[community]` OpenArt,
+  Magic Hour (https://magichour.ai/blog/how-to-prompt-for-speaking-in-veo-3). No official Omni dialogue guide exists.
+- **The AI-face tell is now "too right": symmetry and averageness,** not broken teeth. `[academic]` UNSW/ANU, British
+  Journal of Psychology (https://www.anu.edu.au/news/all-news/people-are-overconfident-about-spotting-ai-faces-study-finds).
+- **Nano Banana 2:** narrative over keywords; name lens + aperture, camera or film stock, exact materials; say what you want,
+  not what you don't; drop "flawless / 8K / hyperrealistic" (they airbrush). `[vendor]` Google Cloud guide 2026-03-05
+  (https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana); `[community]` Luma.
+- **Veo 3.1 Preview models shut down 2026-10-22; Google points users to Omni Flash.** `[vendor]` https://ai.google.dev/gemini-api/docs/video

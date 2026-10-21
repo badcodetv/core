@@ -512,6 +512,40 @@ model has heard: `BBC English`, `newsreader`, `after-dinner speaker` land where 
 `Scouse` don't. This is Thread 2 §4's "name a performance tradition" rule, applied to class instead
 of to genre.
 
+### 2c. ✅ A translated singer reference moves the voice where accent words don't (Jack, 2026-10-21)
+
+**Tested on The Bank Robbery, Jack's song (`docs/stories/bank-robbery/songs/bank-robbery-jack.md`
+Rounds B–S, 104 takes).** Four rounds tried to vary an English voice over the same 1970s cop-funk
+music: regional accents (B), performer types (C), age/pitch/texture/gender (K), origin cities with
+"natural British pronunciation" (O). Jack heard one voice over and over, and in O every woman came
+out as **the Karen song's singer** (same spy-funk music family, so the same female pool). **Round S
+moved it at once:** each box opened with a real English singer *translated* into her scene plus
+her voice — never the name, which Suno rejects or rewrites:
+
+| Reference (sheet only) | What went in the Style box, first |
+|---|---|
+| Amy Winehouse | `London retro soul, a raw husky contralto woman with a heavy North London accent, swaggering behind-the-beat phrasing` |
+| Dusty Springfield | `1960s British blue-eyed soul, a breathy smoky English mezzo` |
+| Lily Allen | `British indie pop with a cockney London girl, sweet light voice, sarcastic sing-song verses` |
+| Poly Styrene / Siouxsie | `1977 London punk woman, a piercing yelping English voice, shrieked chorus` |
+
+Jack: *"referencing singers has changed the voice … this works."*
+
+🔴 **The cost, same round:** the scene words sat in genre position, so they **took the music too**
+— Jack: *"we have lost the style."* The scene word is a pool word (§2a/§2b): it casts the singer
+*and* the band. So the open question is placement: the music sentence first with the translated
+singer after it, versus the singer first. Bank Robbery Round W tests exactly that.
+
+🔴 **Check Variety before blaming the words.** Rounds A–W on that song all ran at Variety
+**Normal** by mistake. Suno's v6 FAQ says any Variety above **Off** works by rewriting the Style box
+(`files/suno-v6.md`, Variety row), so every voice description was being rewritten before
+generation. Round Y/Z (Variety Off; `Roger Daltrey` named literally in Y, translated in Z; Suno
+accepted the name without error) is unheard at the time of writing — record the verdict here.
+
+**How to apply:** when a voice won't move, ask the human for a real singer who has it, write the
+name in the sheet, and put a translation (scene + era + voice + delivery) in the box. Check the
+music afterwards; if the scene stole it, move the music sentence back to the front.
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact
