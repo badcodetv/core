@@ -54,20 +54,6 @@ Exclude styles:
 vocals, singing, choir, spoken word, rap, comedy, novelty, parody, kazoo, lo-fi, chillwave, ambient intro, fade in, slow build, jazz, acoustic
 ```
 
-Lyrics:
-
-```
-A modern guide to robbing a Bank.
-Step 1. Get yourself a wank tank.
-Now you look the part, real classy, good start.
-Step 2. This one is especially for you.
-"You gotta split the red side away from the blue."
-Step 3. And this one ain't free.
-Slowly start to debase the currency.
-Step 4. Start a war.
-This one drives the price up from the floor.
-```
-
 ## Round log
 
 **Round A, 8 October 2026.** Four Creates, 10 credits each, 40 in all (6,955 → 6,915). Unheard; no pick yet.
@@ -94,44 +80,80 @@ narrator and lifted where nobody speaks; sting on A4 from 1:11.8 to 1:30.8 with 
 ```lyrics
 [verse 1]
 They say, ya can't make money from a tree
-let's see, each day, not free, ay
-work and get paid though, earn that dough
+let's see, each day, make hay, not free, aay
+work and get paid though, earning that dough
 but where does it go? nobody knows!
 
 means of production means a reduction
 standards bleeding, land-lords needing
-quantitative easing, grandma FREEZING!
+quantative easing, grandma FREEZING!
+[pause between two sentences]
 stimulus checks are next, get wrecked
 
-rent seeking? just about eating
+remember kids, the Fed is not your friend!
+it prints all the dollars that the government spends
+rent seeking? I'm just about eating
 sorry, did I interrupt your meeting?
-now let's get jiggy, just like Biggie
-don't get high off your own supply
 
-this money system is insistent
-on debts existence, so
+this fiat system is insistent
+on debts existence, sooooo
 don't be hating on the credit rating
 or have resistance to the facts I'm stating
 
 [chorus]
 Robbery, robbery!
 Call the police, it's a robbery!
-Debasement! Debasement! It happened in the basement!
-Printer is burring, now what's occuring?
+Debasement! Debasement! It happened in da basement!
+Printer is burring, now now what's occuring?
 
-There are stacks of ecstatic cash
-A real homeopathic stash
-Institutional, dilutional, the usual
-bold, wrong and rash
+[chorus 2 - key change upwards]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burring, now now what's occuring?
 
 [verse 2]
-The real attraction becomes the distraction
-the retention of the tension, between all the factions
-state sponsored manipulation
-delivered through the radio station
+Stacks and stacks of elastic cash
+distracted by a dispraxic flash,
+mob, angry at their shitty little job
+and a boss, who's a knob
 
-It's not the standard, propaganda, worth a couple grand-ahh
-No, deep level, dancing with the devil and very welled planned-ahh
-Just to think, that we bust our balls to earn some ink
-Then they come along with a Hewlitt and the kitchen sink
+blaming each other is a sick little cover
+institutional, dilutional, the usual
+distraction IS the attraction
+the intention is tension between the factions
+
+divide and conquer, just look at the hand
+It's not ya standard, propaganda, worth a couple grand-ahh
+it is, state, level, manipulation
+it is the devil, with a radio station
+
+stack up the vaults like a wheelbarrow
+risk of default is really rather narrow
+but now it's time to get jiggy, just like Biggie
+[this must sound very different for a single bar]
+don't get high off your own supply
+
+[chorus]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burring, now now what's occuring?
+
+[chorus 2 - key change upwards]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burring, now now what's occuring?
+
+[verse 3]
+Now the real star here, is Escobar dear,
+elastic, not plastic bands,
+stacking up cash with my two bare hands
+standard plans are for the working man
+
+but this right here is a next level scam
+ill gotten gains with no need to explain
+"bail" and "out", will never mean the same
+but "fail" and "shout" is where we find the game
 ```
