@@ -1,0 +1,112 @@
+{
+  "about": "Kai's notes on the scene A (kill bots) timeline page https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
+  "round": 1,
+  "plan": [
+    {
+      "h": "Round 1 on scene A: what your notes add up to",
+      "items": [
+        "MUSIC: less action movie, more sparse and intimate: a solo cello, a solo violin, a little piano, Chopin not Beethoven's Fifth. And a way to choose music per scene: a music picker page (like the voice audition), a few Suno options per cue, you pick, I record only the pick.",
+        "BEAT 0: about 5 s of Maddie rolling with the radio before she speaks, so the drop can settle. New opening, surprised: 'Oh, hello!' (long pause) 'Oh, I didn't notice you there.' (pause) 'Ooh, that gives me an excuse to turn this racket down.' Then the radio goes down. Longer pause after 'he misses you'; 'Anyway' exasperated, moving on.",
+        "MORE KILL BOTS ROAMING (beat 1): a wide shot down Maddie's own high street with a tank on it, plus one or two more roaming shots, as quick still options then clips.",
+        "THE PASS (9a): the SAME wide street; Maddie small further down; the kill bot races dead straight from the top of frame, past her, out the bottom, leaving a dust cloud. No swerving. 9b: Maddie still, the dust just settles on her. No jumping.",
+        "BEAT 4: the three rising 'ding' pings go. The muffled voice stays.",
+        "DEREK (7): new Derek shot 'Oh, sorry, sorry, love.' between Sandra's two lines; his line becomes 'But the world ended, Sandra!' and we hold on him longer.",
+        "LIP-SYNC: into Premiere so you can nudge it by eye; if that isn't enough, we sharpen the method together.",
+        "THE CALL (11): the boss in his real voice, the Suno narrator ('badcode newsreader'), with your new dialogue (below). 10b: 'Well, you'd better bloody hurry up, boss. They're nearly there.'",
+        "STAND-DOWN (12): the HUD says STAND DOWN, not PEACE MODE. The turn-round clip is re-made (it has AI artifacts): the bots lined up outside the door, turning and leaving. The boss's last line is about his back door in their chips (options below)."
+      ]
+    },
+    {
+      "h": "The call, your new words",
+      "items": [
+        "MADDIE: Boss, I've just seen a bot in kill mode. Which must mean it's detected an organic signal.",
+        "BOSS: Maddie, are you making fun of my simulations again?",
+        "MADDIE: No, honestly, it's real. Look, you can see for yourself.",
+        "BOSS: Oh. [pause] Oh, wow. [pause] And they've activated their firewalls.",
+        "MADDIE: Do you want some help with the malware?",
+        "BOSS: No. I've got it.",
+        "(close race) MADDIE: Well, you'd better bloody hurry up, boss. They're nearly there."
+      ]
+    },
+    {
+      "h": "Questions",
+      "items": [
+        "Q1. Beat 0: your new opening drops 'Look, I'm really sorry about him', so the next 'he' has nobody to point at. Fix: '...turn this racket down. [pause] It's his tune. He plays it on repeat, every day...' OK?",
+        "Q2. The boss's last line (you asked my advice). (a) 'There. Good job I left myself a back door in their chips.' (b) 'Phew. Glad I kept that little exploit up my sleeve.' (c) 'Zero-day in their firmware. [pause] I put it there myself. Just in case.' Claude recommends (a): 'back door' and 'chips' land for everyone; CMOS and zero-day are jargon. (c) is the darkest joke (he planted it, like the NSA).",
+        "Q3. Premiere for the lip-sync: build a NEW sequence for scene A now (each talking clip on V1, its voice on its own track, so you can slide it by eye), or after this round's rebuild? Claude recommends after the rebuild, so you're not aligning shots we're about to change.",
+        "Q4. Spend. Flow video, about 10 clips (wide street + pass + 2 roaming + dust + turn-round + one more beat 0 clip so the longer speech fits + 2 Derek talking clips with 2 tries each): about 150 credits, cap 200. Suno: music options for 2 cues (the patrol/HUD tension, and the chase and call) at 2 styles each as pairs, about 80 credits, plus the boss's lines in the narrator voice, about 40. Cap 150 Suno credits. Go?",
+        "Q5. Music cues: the new sparse strings go under the kill-bot patrol (beats 1-8) and the chase and call (9a-12). Beat 0 keeps the tinny radio of the drum and bass track. Right?"
+      ]
+    }
+  ],
+  "replies": {
+    "top": "Yes. Sparse and intimate: solo cello, solo violin, a little piano; Chopin, not Beethoven's Fifth. Our narration house style already does exactly this (a low cello note, a solo cello and soft piano, a mournful violin at the peak), so the new cues start from it. And yes to a picker: a page per scene with a few Suno options per cue, you pick by ear, I record only your pick. It goes into the new-scene skill so every scene gets it.",
+    "b0": "Got it: about 5 s of Maddie rolling with the radio still playing before she speaks, so the drop settles and the viewer clocks it's her radio. Then, surprised: 'Oh, hello!' (long pause) 'Oh, I didn't notice you there.' (pause) 'Ooh, that gives me an excuse to turn this racket down.' (radio down) and on. The speech gets longer, so the travelling shot needs one more chained clip (about 12 credits). One snag: see Q1 in the panel.",
+    "l0-0": "Yes: 'Oh, hello!' and 'Oh, I didn't notice you there' directed as genuinely surprised. I'll make 3 takes each and you pick.",
+    "l0-5": "Yes: a long pause after 'he misses you' (about 2.5 s, so it lingers), then 'Anyway' as exasperated and moving on. The voice tool takes an emotion direction per line, so I'll direct it and give you 3 takes.",
+    "b1": "Yes: quick still options for a wide shot down Maddie's own high street with a tank on it (Maddie small, further down), plus one or two more roaming shots; you pick; then short clips. The wide street doubles as the 9a pass shot.",
+    "b4": "Found it: the three rising dings are the 'ping' sound I added for the lock. Gone. The muffled voice stays.",
+    "b6": "Agreed. After this round I build a new Premiere sequence for scene A with each talking clip on the picture track and its voice on its own audio track, so you can slide the voice by eye. If that isn't enough, we sharpen the lip-sync method together. See Q3 on timing.",
+    "b7": "Yes: Sandra 'Derek. You've left the seat up. Again.' then cut to Derek: 'Oh, sorry, sorry, love.' Then Sandra: 'Five years underground...' then Derek: 'But the world ended, Sandra!' and we hold on him longer. That's two new Derek talking clips (new words, so the mouth must be re-made), lip-synced.",
+    "b9a": "Yes: one simple shot on the wide street from beat 1. Maddie sits further down; the kill bot races dead straight from the top of frame, past her, out the bottom, leaving a dust cloud behind it. No turning.",
+    "b9b": "Yes: Maddie stays still and the dust cloud drifts over her and settles. No jumping.",
+    "b11": "Yes: the boss in the real narrator voice from the song (Suno's 'badcode newsreader'), made dry with no music, then cut into lines. Your new exchange is in the panel at the top: Maddie: kill mode must mean an organic signal; boss: 'Maddie, are you making fun of my simulations again?'; Maddie: 'No, honestly, it's real. Look, you can see for yourself.'; boss: 'Oh. Oh, wow. And they've activated their firewalls.'; Maddie: 'Do you want some help with the malware?'; boss: 'No. I've got it.' Love the simulation joke.",
+    "l10b-0": "Yes: 'Well, you'd better bloody hurry up, boss. They're nearly there.'",
+    "b12": "Yes: the HUD's green state will read STAND DOWN, not PEACE MODE.",
+    "l12-0": "Options in the panel at the top (Q2). My pick: 'There. Good job I left myself a back door in their chips.' Everyone gets 'back door' and 'chips'; 'CMOS' and 'zero-day' are jargon. If you want the darker NSA joke: 'Zero-day in their firmware. I put it there myself. Just in case.'",
+    "at3521": "Agreed: re-made. The bots lined up outside the door as in the shots before, then turning and leaving. I'll make it from the stand-down still again with a tighter prompt, not reversed (the dust would run backwards).",
+    "at3684": "Noted: the back-door line lands here, on the last shot."
+  },
+  "kai_round1": {
+    "at3521": {
+      "note": "This shot needs a bit of work. I think they need to be arranged outside the door like they were. We could almost just play that clip backwards, but then the dust wouldn't work. But I mean, at the moment, there's AI artifacts on this shot specifically. We need to redo this.",
+      "tc": "00:02:26:17"
+    },
+    "at3684": {
+      "note": "Yeah, I think this is the, this last point is where I said it should say I'm glad I kept that CMOS exploit up in my pocket.",
+      "tc": "00:02:33:12"
+    },
+    "b0": {
+      "note": "So, I think in this scene, we need a bit more time between when Maddy starts speaking, because we've just led up to a huge drop in the music, and all of a sudden we're going to switch on to the tinny radio version of the music, but I think the viewer will need a bit of time just to adjust, oh, hang on a minute, we're not about to kick off into the next stage of this drum and bass tune, it's actually clicked to the robot, so I think we might, I don't know, five seconds of Maddy rolling down the street before she tries to say something, and I think, also, there's an oh, hello, look, I'm really sorry about him, I think we need to break the fourth wall more obviously, so, oh, hello, pause, oh, I didn't notice you there. It would be quite funny to possibly say, oh, that gives me an excuse to turn this racket down, that would be really funny, so, oh, hello, pause, we need to do, oh, hello, quite a long pause, oh, I'm sorry, I didn't notice you there, oh, and then another pause, oh, that, you know, that gives me a chance, that gives me a reason to turn this racket down, and then we can go into he just plays that tune on repeat every day. I think that's a really good way to put this together."
+    },
+    "b1": {
+      "note": "It feels like this patrol scene, we could add a couple of clips to. And possibly, like we've started on the roundabout, we should bring it to maybe a wider shot of the street that Maddy was on, and then the tank is on the street. I like the tank on the street, it kind of ... But what I mean is, we could have a bit more of this, like there's lots of kill bots roaming everywhere footage. I think that would be useful.  So to help you actually interpret that I think we should do like a very quick cut of a couple of options and then do a quick animation of those options just to have some extra footage to put in this part. "
+    },
+    "b11": {
+      "note": "So, on this scene, I think we really need to use Suno and get the actual voice from the music. It's called GPROM narrator or something, but there's a voice right now that knows how to narrate in the voice of the AI that was on the song. Very important. I think we've used, we've used, we've been using him in the narration. So it's very important we use that specific voice.\n\nI think here we say, boss, I've just seen a bot in kill mode, it just raced past me. Next line, it's odd because there's no organic signal. Or it's odd because there can't be an organic signal. And then I think the AI should say, you're right, Maddy, you know. I think the AI should say, are you making fun of my simulations again? Because I think the boss not believing Maddy, and also it's a joke about simulation theory, and Maddy goes, no, no, boss, I promise it's actually happening. Please, look, you can see, you know. No, this is, it's real. Look, you can see for yourself. And then I think the boss should go, oh, and they've shut off their firewalls because they're in autonomous mode. All right, give me a second. So I think, yeah, OK. Yeah, it's like, hey, boss, I've just seen a bot in kill mode. It's odd because there can't be an organic signal. And then, yeah. Yeah, OK. Instead, I think it's, boss, I've just seen a bot in kill mode, which must mean it's detected an organic signal. To which the boss says, Maddy, are you making fun of my simulations again? To which Maddy says, no, honestly, it's real. Look, you can see for yourself. To which the boss should say, oh, wow, they've, and they've activated their firewalls. To which Maddy could say, do you want some help with the malware? The boss should say, no, I've got it."
+    },
+    "b12": {
+      "note": "I think peace mode here is a bit cheesy. I think we should just say stand down, rather than peace mode. Because, yeah, I think stand down."
+    },
+    "b4": {
+      "note": "On this scene it kind of goes ding and it's very annoying and I'm not exactly sure which sound effect it is It kind of goes ping and yeah, we need to get rid of that I love the muffled voice however  It actually is a number of dings, it kind of goes up the scale, so it goes ding, like three dings higher in pitch each time, it's very annoying."
+    },
+    "b6": {
+      "note": "Right, in this scene and generally all of the speech scenes, the lip-sync isn't perfect. Now, I really like the voices, I think, it's just the lip-syncing. So what I want to do first is get this into Premiere and just see if we can align them in Premiere. And if not, then hopefully I can work with you to hone in on the lip-syncing, whereby we might actually create a dedicated lip-syncing skill to somehow do this. Because I think with the lip-syncing, using voices from Gemini over footage from Flow is a very, very useful unlock code for us at the moment.\n\n"
+    },
+    "b7": {
+      "note": "I think between this and the previous scene, we might need to cut to Derek, because it just cuts on Sandra into a different face. So I think we need a scene between these two. So there's the initial scene like, Derek, you've left the seat up, pause again. We need to cut to Derek, and Derek should just say, oh, sorry, sorry, love. Um, so yeah, we need a scene just before this one of Derek saying, sorry, love. Then we cut back to this scene, five years underground and you still can't put a seat down, back to Derek, but, we need to say, but the world ended, Sandra, and then pause on Derek a bit longer than we are doing."
+    },
+    "b9a": {
+      "note": "So the previous scene is fine, I quite like it. This scene needs a bit of work. Really, I was just imagining like Maddy's just sat in the street and you just see the killbot just race past her. So at the moment we've kind of got two shots and the killbot turns around. Yeah, I think this is a really simple shot. I mean, we could actually zoom out a lot more than we are doing. Possibly the earlier notes were we start at the roundabout and then we cut to the street maybe with the tank on it, which could very much be the street that Maddy was up and down. She could just be further down. So the idea that then we have a slightly more zoomed-out version of the street, we'll already have that, we could use the same zoomed-out version of the street for the killbot to race past Maddy on. So I think it's important that – but it's like it races from the top of the shot all the way past Maddy off the bottom of the shot. There's no turning or twisting or going around happening."
+    },
+    "b9b": {
+      "note": "I think in this shot... I think, yeah, I think in this shot Maddy shouldn't sort of, she's, you know, she's moving up and down, she's trying to jump. I just think we have the dust, and really it's a shot of just the dust settling on Maddy after the Killbot's raced past her. So in the previous shot, the Killbot racing past should have, should leave a sort of a dust cloud behind where it's racing. Then we cut into Maddy where the dust cloud just settles. I think, but she doesn't need to be gyrating like she is."
+    },
+    "l0-0": {
+      "note": "Another note on this oh hello block would be that she should sound surprised when she says oh hello, oh hello, I didn't notice you there, it needs to be surprised."
+    },
+    "l0-5": {
+      "note": "Here, I think we need a longer pause. Of course, you'd never admit that he misses you. Longer pause. And then we need to say sort of, anyway, as a kind of exasperated, and now moving on. So I don't know how to get the emotion into that. But yeah, the pause between that he misses you, that should linger in the listener's head. "
+    },
+    "l10b-0": {
+      "note": "So yeah, I think in this scene, I think Maddy should say, well you better bloody hurry up boss, they're nearly there."
+    },
+    "l12-0": {
+      "note": "I think the AI should say here something like, right, I've, I've, I triggered their kernel, I triggered a kernel, I triggered a zero-day kernel exploit would be what to say here. Or I triggered a, I triggered an exploit I've kept, I triggered an exploit in their microcontroller CMOS. So yeah, I think what I'm trying to say here is that the master AI knows that there's backdoors in hardware. It's a little joke to the NSA. So I think the master AI needs to say something like, you know, and I'd like your advice on what exactly to say here. Don't worry, right, phew, the shot is green, right, we've just gone to green, we've deactivated them. And then the boss should say, right, thank God I left that backdoor in their microcontroller CMOS, something to that effect."
+    },
+    "top": {
+      "note": "In terms of music, I think at the moment we are being a bit overtly, blatantly like action movie Indiana Jones, I'd quite like a bit more kind of sparse orchestra, solo violin, cello, rather than dun-dun-dun, I know that you can't understand what I just said there, but it's just like Beethoven's 5th, not that, it's more Chopin. Is that possible generally? On the music I mean, just on the style of the music that we're cutting.\n\nThinking about that, it would be very useful to come up with some, an easy kind of way of us choosing different backing music for different scenes. Thank you."
+    }
+  }
+}

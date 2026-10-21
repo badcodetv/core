@@ -5,6 +5,7 @@
 
 Reads scene.json's "cut": {"edl": ..., "preview": ...} (defaults <media>/cut/edl.json and
 <media>/cut/preview.mp4). The edl is in the timeline format documented in timeline.py.
+Merges <scene-dir>/cut-notes.json (round, plan, replies) when present.
 Prints the files to publish alongside out-dir/index.html.
 """
 import json
@@ -22,4 +23,8 @@ preview = pathlib.Path(cut.get('preview', sc.media / 'cut' / 'preview.mp4'))
 data = json.loads(edl.read_text())
 data.setdefault('title', sc.cfg.get('title', sc.slug) + ' Timeline')
 data.setdefault('heading', sc.cfg.get('title', sc.slug))
+notes = sc.dir / 'cut-notes.json'  # Claude's read of the notes so far (round, plan, replies), shown on the page
+if notes.exists():
+    n = json.loads(notes.read_text())
+    data.update({k: n[k] for k in ('round', 'plan', 'replies') if k in n})
 print(json.dumps(timeline.build(data, preview, sys.argv[2])))
