@@ -7,6 +7,13 @@ uses. Update this file the day an account is opened.
 `badcode_tv`) and use it identically on every platform ([`plan.md`](./plan.md) §7). Avatar = the
 logo in [`docs/brand/logo/`](../brand/logo/).
 
+**Pictures (2026-10-21):** Jack has put the profile picture and cover photo on **every** account. They use his
+variant of the logo: Saved version 5 with the name's o as a red disc, off-white rim and small off-white triangle
+([`docs/brand/explorations/2026-10-21-jack-variant/`](../brand/explorations/2026-10-21-jack-variant/README.md)).
+His copies are in `C:\Users\jackt\OneDrive\Desktop\Youtube Vids\animation\badcode logo NEW!`. Which exact
+file went where is not recorded. Kai has not yet ruled this o official (`docs/brand/README.md` still says the
+solid red o).
+
 **In use (2026-10-20): `badcode.tv`** is the handle on Instagram and X, so it is the fallback to
 match on every new account where `badcode` is taken.
 
@@ -32,7 +39,7 @@ don't know, not that it doesn't exist; tick it and add the link when you check).
 | Website | the terminus: every path ends here | badcode.tv | ✅ domain in use |
 | GitHub | code (organisation) | `badcodetv` | ✅ exists (github.com/badcodetv) |
 | YouTube (long + Shorts) | home: full films and episodes | handle not recorded | ✅ open — sign in with the badcode.tv@gmail.com account (recorded 2026-10-20) |
-| Facebook | main reach for the reader | handle not recorded | ✅ open — sign in with the badcode.tv@gmail.com account (recorded 2026-10-20) |
+| Facebook | main reach for the reader | Page name, link and username not recorded yet | ✅ **Page made 2026-10-21** by Jack. It runs from Jack's own personal profile: the badcode.tv@gmail.com login, renamed from a made-up name to his real name so it obeys Facebook's real-name rule. Only Jack logs into that profile; anyone else gets their own account added as a Page admin |
 | TikTok | discovery for shorts | handle not recorded | ✅ open — sign in with the badcode.tv@gmail.com account (recorded 2026-10-20) |
 | Instagram | mirror only, same files | `badcode.tv` | ✅ open (recorded 2026-10-20) |
 | Email list ("Transmissions") | the one audience we own | — | ⬜ provider not chosen |

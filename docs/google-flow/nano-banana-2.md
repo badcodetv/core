@@ -2318,3 +2318,16 @@ A web sweep for the Karen ending found the repo already held nearly everything. 
 
 Used on Karen 10a/10b (2026-10-19), 2 candidates each: both stills came back with the occluding foreground, off-centre
 subject and single warm practical as asked; one candidate per shot was clearly better. n=2, observed not established.
+
+## 2026-10-21: for a logo REDESIGN, describe the mark; do not attach it `[observed, n=10 vs n=12]`
+
+**BadCode logo exploration** (`docs/brand/explorations/2026-10-21-redesigns/` and `-wild/`). Ten redesign prompts
+sent with the current logo attached and the job stated as *"for inspiration only; change it as much as the idea
+needs"* all came back keeping the ring-above-the-word layout. Twelve text-only prompts that described the mark in
+one sentence and then said *"this design takes that and changes it completely"* broke the layout in all twelve, and
+every one still spelled the quoted word ("badcode") correctly. Jack suspected the reference was the problem; it was.
+
+**Rule:** an attached image is read as identity to preserve, whatever its stated job. To *keep* a design, attach
+it. To *depart* from one, describe it in a sentence and leave it off. Also confirmed in the same session: NB2 does
+not hold exact logo geometry even when asked to (letters re-set as a typeface, triangle corners sharpened), so a
+keeper gets the true SVG composited over it in post.

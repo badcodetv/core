@@ -149,7 +149,16 @@ select:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px }
           <input id="tr" type="range" min="0.1" max="0.8" step="0.01" value="0.26"></div>
       </div>
       <div class="seg" role="group" aria-label="The red o">
-        <button type="button" data-ostyle="triangle">Triangle o</button><button type="button" data-ostyle="solid">Solid red o</button><button type="button" data-ostyle="ring">Ring + red triangle</button>
+        <button type="button" data-ostyle="triangle">Triangle o</button><button type="button" data-ostyle="solid">Solid red o</button><button type="button" data-ostyle="ring">Ring + red triangle</button><button type="button" data-ostyle="whitetri">Red o + white triangle</button><button type="button" data-ostyle="whitetriring">Red o + white triangle + outline</button>
+      </div>
+      <div class="sub" id="wtOGroup">
+        <div class="ctl"><div class="top"><label for="wtSize">White triangle size</label><output id="wtSizeO"></output></div>
+          <input id="wtSize" type="range" min="0.15" max="0.75" step="0.005" value="0.36"></div>
+        <div class="ctl"><div class="top"><label for="wtPush">How far off centre</label><output id="wtPushO"></output></div>
+          <input id="wtPush" type="range" min="0" max="1" step="0.01" value="0.61"></div>
+        <div class="ctl" id="wtRingCtl"><div class="top"><label for="wtRing">White outline thickness</label><output id="wtRingO"></output></div>
+          <input id="wtRing" type="range" min="0.04" max="0.45" step="0.005" value="0.2"></div>
+        <p class="hint">The solid red o with the mark's triangle cut in white. It sits, points and rounds with the triangle sliders above; size and distance here are shares of the o's radius.</p>
       </div>
       <div class="sub" id="triOGroup">
         <div class="ctl"><div class="top"><label for="oTSize">Triangle o size</label><output id="oTSizeO"></output></div>
@@ -203,9 +212,9 @@ const REDS = [
 //   oTSize = triangle-o height / x-height · oNudge = raise (+) or drop (−), in x-heights · oGapC / oGapD = ink gap c→o and o→d, in x-heights
 //   font = 'drawn' or a FONTS key · fw = weight · fls = letter spacing in em
 const S = { shape: 'triangle', ring: 0.08, dot: 0.245, push: 0.51, angle: 55, tSize: 0.36, tPush: 0.61, tAngle: 55, tRot: 55, tRound: 0.55, red: '#cc2b37', lw: 0.30, tr: 0.26, ck: 0.35, oStyle: 'triangle',
-  oTSize: 1.1, oNudge: 0, oGapC: 0.08, oGapD: 0.14, font: 'drawn', fw: 600, fls: 0.02 }
+  oTSize: 1.1, oNudge: 0, oGapC: 0.08, oGapD: 0.14, font: 'drawn', fw: 600, fls: 0.02, wtSize: 0.36, wtPush: 0.61, wtRing: 0.2 }
 const START = { ...S }
-const NUM = ['ring', 'dot', 'push', 'angle', 'tSize', 'tPush', 'tAngle', 'tRot', 'tRound', 'lw', 'tr', 'ck', 'oTSize', 'oNudge', 'oGapC', 'oGapD', 'fw', 'fls']
+const NUM = ['ring', 'dot', 'push', 'angle', 'tSize', 'tPush', 'tAngle', 'tRot', 'tRound', 'lw', 'tr', 'ck', 'oTSize', 'oNudge', 'oGapC', 'oGapD', 'fw', 'fls', 'wtSize', 'wtPush', 'wtRing']
 // A save written before a field existed gets the value that field had then: no shape = the dot, no o style = the solid o, no ck = 0, no font = drawn.
 const LEGACY = { shape: 'dot', oStyle: 'solid', ck: 0, font: 'drawn' }
 // The candidate letters. min/max = the weights Google Fonts serves for each.
@@ -268,10 +277,23 @@ function word(x0, base, r, o, ink = INK) {
     if (ch === 'o') {
       const Ro = r + w / 2
       L.push(o.oStyle === 'ring' ? icon(cx, cy, Ro, { ...o, shape: 'triangle', ring: w / Ro }, ink)
+        : o.oStyle.startsWith('whitetri') ? whiteTriO(cx, cy, Ro, o)
         : `<circle cx="${cx}" cy="${cy}" r="${Ro}" fill="${o.red}"/>`)
     }
   })
   return { svg: L.join(''), width: 7 * step - r * o.tr - k, height: base + w / 2 - top, top }
+}
+// The red o with a white triangle: the mark's triangle (tAngle, tRot, tRound) inside a solid red o, sized and pushed against the o's radius.
+// With the outline: a white ring of wtRing x the o's radius, inside the o's footprint, so the o stays the letters' size and the red shrinks.
+function whiteTriO(cx, cy, Ro, o) {
+  const t = o.oStyle === 'whitetriring' ? o.wtRing * Ro : 0, out = Ro
+  const ringSvg = t ? `<circle cx="${f2(cx)}" cy="${f2(cy)}" r="${f2(out - t / 2)}" fill="none" stroke="${INK}" stroke-width="${f2(t)}"/>` : ''
+  Ro = out - t
+  return ringSvg + whiteTriCore(cx, cy, Ro, o)
+}
+function whiteTriCore(cx, cy, Ro, o) {
+  const r = o.wtSize * Ro, rc = o.tRound * r / 2, room = Math.max(0, Ro - (r - rc) - Ro * 0.02), d = o.wtPush * room, a = o.tAngle * Math.PI / 180
+  return `<circle cx="${f2(cx)}" cy="${f2(cy)}" r="${f2(Ro)}" fill="${o.red}"/><path d="${triPath(cx + d * Math.sin(a), cy - d * Math.cos(a), r, rc, o.tRot)}" fill="${INK}"/>`
 }
 // The triangle o: the mark's triangle (same tRot, tRound, red), its box height = oTSize x-heights, its box centred on the x-height band.
 function triBox(o) { // a unit triangle (centre-to-corner 1): the rounded outline's bounding box
@@ -321,7 +343,7 @@ function setWord(x0, base, r, o, ink) {
     // solid / ring: sit where the font's own o sits, pulled toward the c by ck like the drawn letters
     x += c.adv * k + ls - (o.ck ?? 0) * r
     const m = metric(o, 'o'), Ro = xh / 2 * 1.04, ocx = x + (m.r - m.l) / 2 * k
-    L.push(o.oStyle === 'ring' ? icon(ocx, midY, Ro, { ...o, shape: 'triangle', ring: 0.1 + fontWeight(o) / 1000 * 0.2 }, ink) : `<circle cx="${f2(ocx)}" cy="${f2(midY)}" r="${f2(Ro)}" fill="${o.red}"/>`)
+    L.push(o.oStyle === 'ring' ? icon(ocx, midY, Ro, { ...o, shape: 'triangle', ring: 0.1 + fontWeight(o) / 1000 * 0.2 }, ink) : o.oStyle.startsWith('whitetri') ? whiteTriO(ocx, midY, Ro, o) : `<circle cx="${f2(ocx)}" cy="${f2(midY)}" r="${f2(Ro)}" fill="${o.red}"/>`)
     x += m.adv * k + ls
   }
   L.push(glyph('d', x)); x += metric(o, 'd').adv * k + ls
@@ -393,6 +415,10 @@ function render() {
   $('font').value = typeset ? o.font : 'drawn'
   $('fontGroup').hidden = !typeset; $('drawnGroup').hidden = typeset
   $('triOGroup').hidden = o.oStyle !== 'triangle'; $('ckGroup').hidden = o.oStyle === 'triangle'
+  $('wtOGroup').hidden = !o.oStyle.startsWith('whitetri'); $('wtRingCtl').hidden = o.oStyle !== 'whitetriring'
+  $('wtRingO').textContent = Math.round(o.wtRing * 100) + '% of the o'
+  $('wtSizeO').textContent = Math.round(o.wtSize * 100) + '% of the o'
+  $('wtPushO').textContent = o.wtPush <= 0.005 ? 'dead centre' : o.wtPush >= 0.99 ? 'touching the edge' : Math.round(o.wtPush * 100) + '%'
   $('fw').disabled = !typeset || F[1] === F[2]
   $('fwO').textContent = !typeset ? '' : F[1] === F[2] ? `${F[1]} only` : fontWeight(o) !== o.fw ? `${fontWeight(o)} (this font's limit)` : String(o.fw)
   $('flsO').textContent = (o.fls > 0 ? '+' : '') + Math.round(o.fls * 1000) / 10 + '% of the size'
@@ -501,7 +527,7 @@ function listSaves(snap) {
       ? `triangle · ring ${Math.round(o.ring * 1000) / 10}% · size ${Math.round(o.tSize * 100)}% · ${clock(o.tAngle)} · round ${Math.round(o.tRound * 100)}%`
       : `ring ${Math.round(o.ring * 1000) / 10}% · dot ${Math.round(o.dot * 100)}% · ${clock(o.angle)}`
     const b = document.createElement('button'); b.type = 'button'; b.className = 'ghost'; b.textContent = 'Load'
-    li.querySelector('.n').textContent += ` · ${o.font !== 'drawn' && FONTS[o.font] ? FONTS[o.font][0] + ' ' + fontWeight(o) : 'drawn letters'} · ${o.oStyle === 'triangle' ? 'triangle o' : o.oStyle === 'ring' ? 'ring o' : 'solid o'}`
+    li.querySelector('.n').textContent += ` · ${o.font !== 'drawn' && FONTS[o.font] ? FONTS[o.font][0] + ' ' + fontWeight(o) : 'drawn letters'} · ${o.oStyle === 'triangle' ? 'triangle o' : o.oStyle === 'ring' ? 'ring o' : o.oStyle === 'whitetri' ? 'red o + white triangle' : o.oStyle === 'whitetriring' ? 'red o + white triangle + outline' : 'solid o'}`
     b.onclick = () => { Object.assign(S, fromSave(v)); syncInputs(); render(); loadFonts(); status('Loaded.') }
     li.append(b); ul.append(li)
   })
