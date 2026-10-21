@@ -95,7 +95,18 @@ async function download(i: number, out: string) {
   const orig = page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Original size/i }).first()
   await orig.waitFor({ state: 'visible', timeout: 15_000 })
   await orig.click()
-  await (await dl).saveAs(out)
+  const d = await dl
+  try { await d.saveAs(out) }
+  catch (err) {
+    // 2026-10-21: with the shared Chrome's download behaviour set to its own folder (another tab's
+    // session), Playwright's artifact copy is gone (ENOENT) but Chrome still writes the file to
+    // ~/Downloads under its suggested name. Take it from there.
+    const f = join(process.env.HOME!, 'Downloads', d.suggestedFilename())
+    for (let k = 0; k < 240 && !existsSync(f); k++) await sleep(500)
+    if (!existsSync(f)) throw err
+    await sleep(1500)
+    copyFileSync(f, out); unlinkSync(f)
+  }
   await page.keyboard.press('Escape').catch(() => {})
 }
 

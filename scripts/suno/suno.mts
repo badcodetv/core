@@ -1535,7 +1535,7 @@ export function modelFromTitle(title: string, fallback?: string): string {
 const lyricShape = (t: string) => t.split('\n').map((l) => l.trim()).filter(Boolean).join('\n')
 
 /** Run a narrow round's Creates. Returns problems; an empty list means every Create ran. */
-async function runNarrow(page: Page, spec: SunoSpec, pick: Take, cells: Cell[]): Promise<string[]> {
+export async function runNarrow(page: Page, spec: SunoSpec, pick: Take, cells: Cell[]): Promise<string[]> {
   const songId = pick.songId!
   const start = await coverStateNow(page)
   if (start.state === 'attached' && start.source.songId !== songId) {

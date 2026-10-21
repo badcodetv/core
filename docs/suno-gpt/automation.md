@@ -732,6 +732,14 @@ npx tsx scripts/suno/suno.mts narrow <spec.json> <songId|id8|title> --round <N> 
   words checked) → per cell set model, controls, sliders and title, re-check the source is still
   attached, Create → **always detach**, and print `🔴 FORM LEFT IN COVER MODE` (exit 1) if the
   detector still reads attached.
+- 🆕 **2026-10-21, bank-robbery round B — two live findings.** (1) **A pick that is in no visible
+  workspace list can still be covered:** call the exported `runNarrow(page, spec, {songId, title}, cells)`
+  directly. `attachCoverById` finds the song through the Browse modal's library search by title and
+  checks the ID, so `findTake`'s visible-list rule only applies to the `narrow` command. (2)
+  **`detachCover` failed once straight after the second Create** ("still attached") **and worked on a
+  retry three seconds later.** Read `coverStateNow` after every detach and retry before handing the
+  form back. Also: `setWorkspace` **creates** a workspace whose name it cannot find, silently, so a
+  renamed or deleted workspace gets an empty namesake.
 - `--round` is **required** on both credit-spending commands: `create()` returns once any two
   rows carry the title, so a reused title would "succeed" on an earlier round's takes.
 
