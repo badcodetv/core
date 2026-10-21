@@ -210,7 +210,7 @@ Changed beats in **bold**. *VO* = voice-over, nobody's mouth moves.
 | 10 | 2 | The Fredo jar, **10p**, Barry's hand | Barry *VO* | Least something's still cheap. |
 | 11 | 3 | Out through the window: the bank | N | Both of them are right. // Neither of them is looking at the bank. |
 | 12 | 2 | The back room, the press printing | N | This lot don't wear masks. // Nobody's ever looked at them. |
-| 13 | 11 | The Ex over the front pages (cut 7d, new shot `m6-ex-papers`) | The Ex | The distraction outside the bank is ready to go. All eyes will be on that protest. / We just stroll right into the bank. Easy peasy. *(Jack, 2026-10-21: the protest is their plan, never their problem)* |
+| 13 | 11 | The Ex across the table, close (cut 7f, `m7-ex-close`; was `m6-ex-papers` in 7d/7e) | The Ex | The distraction outside the bank is ready to go. All eyes will be on that protest. / We just stroll right into the bank. Easy peasy. *(Jack, 2026-10-21: the protest is their plan, never their problem)* |
 | 14 | 2 | Mr Blue and Mr Red, glasses up | Mr Red *VO* | Good job with those headlines, old boy. *(Jack, 2026-10-21; was "Leave the people to us.")* |
 | **R1** | **5** | **The money printed in volume (real ECB press film, a table buried in bricks); a finger presses a key, the press stops dead, and a bank terminal rolls up to £200,000,000,000 PAID IN** *(cut 6, 2026-10-18)* | **N** | **Most people rob a bank to get money out. // This lot print the money... then pay it in.** *(Jack, 2026-10-18; the click lands in the pause)* |
 | **P1** | **4** | **The newspaper drops: the two front pages from cut 9 spin in, one for each side** | **N** | ***Draft:* Then give both sides something to shout about.** |

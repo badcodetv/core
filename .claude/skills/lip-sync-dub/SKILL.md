@@ -102,6 +102,10 @@ put correctly placed dubs 0.35 s "late".
 | Trimmed both sides of a chained join to lose a pause | his head turned between the frames: a visible jump. Trim only the side the next clip doesn't start from, or keep the pause |
 | A fixed-crop mouth strip on a head that moves (GPOM cut 3, 2026-10-20) | Sandra's face left the crop after 4 s and the strip showed tiles. `scripts/lipsync/mouth-track.py` follows the mouth landmarks and rescales to the clip's own percentiles: use it for step 5 |
 | 11 words in one 8 s Omni clip against a slow TTS voice (the old lady, 17-6) | Omni spoke them in about 2.7 s of mouth; the voice needs 4.7 s (x1.5–2.0). Re-shot as two 6 s clips of 6 and 5 words: both fitted at x1.0–1.3. Same as Karen 10f: **size clips to the TTS voice's pace, not to Omni's** |
+| Placed a dub's first phrase at 0.03 s because Omni's own audio said "The" from 0.00 (Bank Robbery 7e, 2026-10-21) | The mouth stayed shut until 0.67 s: 0.6 s early, Jack: "still off". Omni clips often open on a closed, smiling mouth; read the first opening from the strip, never from the clip's audio |
+| A dubbed line on a standing wide, head ~8% of frame height (7e) | A few-pixel mouth Omni draws loosely and nobody can read. Re-shot as a medium close-up, face ~⅓ of frame height, mouth lit by the key; sync then reads (7f) |
+| "Calmly and unhurriedly" in the Omni prompt (7f) | Ignored: Omni still spoke 1.4–1.6× faster than the voice master. Re-render the TTS with `Pace: natural conversational pace, a little brisk` until a take lands within ×1.0–1.2 of the mouth. Faster than stretching, and it kills the squeeze the listener heard at ×1.15–1.22 |
+| Two halves of one line from the same still, cut together at the same size (7f) | Reads as a jump cut. Punch the second half in ~118% (Motion Scale, anchor on the face) so it reads as a cut |
 | Sped a Scouse "Sandra!" to x1.07 | whisper heard "sundry". At x1.00 (0.13 s past the mouth closing) every word survived. Transcribe the dub, not just the take |
 
 ## Tools
