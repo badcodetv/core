@@ -425,3 +425,72 @@ talk. From out there. You stay on the step."* in one 8 s clip) **could not be pl
 mouth against 4.7 s of voice. Re-shot, per the skill's step 2, as two 6 s clips (`17-6b1`, `17-6b2`), which fit. So
 17-6 is **three** shots: `17-6a`, `17-6b1`, `17-6b2`. Each dubbed shot has a `-muted.mp4` twin (no audio) and a sheet;
 the raw talking takes (with Omni's own audio) are in `video/cut3-lip-raw/`.
+
+## Scene A round 1 (21 Oct 2026, from Kai's notes in `second-half-a-killbots/cut-notes.json`)
+
+Same project (`be451638`), same runner (`run-cut3.mts`, Omni 1.1 Flash, Frames, start frame only, 16:9), one job at a
+time, price read before every Create. **Spend: 100 credits** (balance 18,348 → 18,248; ledger 416 → 516, cap for this
+round 250). Every harvest md5-checked against every clip on disk and first-frame-matched to its plate (distances 2–16).
+
+🔧 **Runner fix:** `download.saveAs` failed with `ENOENT` on every tile (the shared Chrome now writes downloads straight
+to `~/Downloads`, so Playwright's artifact copy is gone). `download()` now falls back to `~/Downloads/<suggested name>`
+(waits up to 2 min), copies it out and deletes it. Note the harvest loop walks on down the grid while it has fewer files
+than `count`, so a failed download makes it try older tiles too; the md5 check is what stopped those becoming clips.
+⚠️ The shared Chrome on 9222 **went down at 18:47** mid-harvest (nothing in this session closed it). `flow_status`
+relaunched it with Flow only; the Suno tab that was open in it did not come back.
+
+| Clip (`video/`) | Beat | Plate | Cast | Credits | Motion prompt | Verdict |
+| --- | --- | --- | --- | --- | --- | --- |
+| `cut3-V2r.mp4` | 9b | S2-c | yes | 12 | *The camera does not move. The small grey delivery robot stays completely still on the road, all six wheels planted, its body not moving at all. A thick cloud of grey-brown dust drifts slowly in from behind it, rolls over it and around it, then slowly settles and thins, fine grit falling onto its lid. Its torn bunting stirs gently across its front wheels in the drifting air. Its amber beacon glows steadily. The camera does not move.* | **Pass.** She stays put, no hop or rock. The dust rolls in from the right at 1–2.5 s (a little more of a billow than a drift), engulfs her, and thins by 5 s; bunting stirs and is intact at the end |
+| `cut3-V10r.mp4` | 12 | S10-c | no | 12 | *The camera does not move, a locked wide shot. The four tracked military robots sit stopped in a line in front of the shut green bunker doors. One at a time, starting with the one nearest the camera, each robot pivots round on its tracks and rolls slowly away down the grassy hill and out of the bottom left of frame, each keeping its distance from the others. Every robot keeps exactly its own shape and size. The dust they raised drifts and settles. The doors stay shut and untouched. The camera does not move.* | **Partial.** No merging: they file out one at a time, bottom-left, along the track marks. But they never turn (S10-c already has them facing away from the door), the last one is still there at 8 s, and the nearest bot grows a long gun barrel as it nears camera (~5–7 s) |
+| `cut3-V10r-b.mp4` (5.0 s) | 12 | **S10-b** | no | 12 | *The camera does not move, a locked wide shot. The tracked military robots sit stopped in a line in front of the shut green bunker doors, dust hanging in the air. One at a time, each robot swings round on its tracks and rolls slowly away down the grassy slope and out of the bottom of frame, keeping well apart from the others, until the ground in front of the doors is empty. Every robot keeps exactly the same design and size the whole time. The dust drifts and settles. The doors stay shut and untouched. The camera does not move.* | **Partial, trimmed to 0–5.0 s.** Attempt 2 from S10-b because it has them lined up AT the door as Kai asked. 0–5 s is clean: lined up, the front ones swing round and leave one by one. After 5.2 s two bots **merge into one** and another vanishes, so the full take (`cut3-raw/cut3-V10r-t2-S10b.mp4`) is not offered. Kai to pick a or b; a third try was not spent (2-attempt cap) |
+| `cut3-beat0-continuous-x.mp4` | 0 | chain-06 last frame | yes | 2 × 12 | Clips 7–8 = the clips 2–6 prompt, unchanged | **Pass. 63.67 s** (47.75 + 2 × 7.96). Joins 6→7 1.66 and 7→8 1.62 (first frame vs last), against in-clip steps of 2.0–2.5 median; in the joined file the join steps are 4.81 and 3.26, inside the shot's own range (median 2.9, max 5.31). Bunting intact on chain-07-last and chain-08-last. Drift: the street keeps getting cleaner and greyer, as noted before. Parts: `cut3-beat0/chain-07.mp4`, `chain-08.mp4`, last frames, sheets, `join-06-07.jpg`, `join-07-08.jpg` |
+
+### Lip-sync: Derek 7d (the `lip-sync-dub` skill)
+
+Plate `storyboard/SB07c.jpg`, 6 s, 2 candidates each (20 credits a job). Voices: `audio/voice3/a1/06-07-0-man-a.wav` and
+`06-07-1-man-a.wav` (Algieba; take **a** of both, per the brief: take b of line 1 says *"What the world"*, take c *"world then,
+Gee-chanter"*). Prompts: *"The camera does not move. The man in the dark green jumper lowers his hands and speaks to the
+woman sheepishly, wincing, apologetic. He says: Oh, sorry, sorry, love. Then he closes his mouth and stays still. The woman
+with her back to the camera stays still and silent."* / *"…throws his hands wide and shouts at the woman, exasperated. He
+says: But the world ended, Sandra! Then he closes his mouth and holds still, staring at her, hands still wide. …"*
+All four candidates say the right words (whisper). Mouths by `mouth-track.py --face right`; phrase tables, dubs (−20.5 LUFS)
+in `audio/cut3-lip/cut3-lip-7d-<n>-*`. Raw takes in `video/cut3-lip-raw/L07d-<n>-<a|b>.mp4`. Each shot has a `-muted` twin.
+
+| Shot | Candidate | Placement | Verdict |
+| --- | --- | --- | --- |
+| `cut3-lip-7d-0.mp4` | L07d-0-a | "Oh," 1.47 (voice 1.54, mouth 1.50) · "sorry." 1.74 x1.15 · "Sorry, love." 2.12 x1.25 | ⚠️ **Tight.** Omni says the line in ~1.1 s of mouth (1.46–2.55, then a held grin to 3.4); the voice has 0.4 s pauses. Placed phrase by phrase at x1.0–1.25, so the pauses close up and "love" ends 0.2 s after the mouth shuts. Every word survives (whisper hears "Oh" as "Ah", as it did on the master). A brisker TTS take (≤2.0 s) would fit at x1.0. Candidate b talks even faster (1.0 s), not used |
+| `cut3-lip-7d-1.mp4` | L07d-1-a | whole line 0.56 x1.10 (voice on 0.59, mouth 0.58; "Sandra" ~1.90 against the mouth's 1.79) | **Good.** "ended" stays "ended" only with the line as ONE phrase: split at the pause (x1.2 + x1.0) whisper heard *"ends at Shandra"*. Ends 0.25 s after the mouth's last wide open, onto a parted mouth |
+
+The listen tool was not run (standing rule): skill check (b) for warble is owed to a human ear.
+
+### S11 and S12: still options (free, Nano Banana Pro via `flow_edit_image`, 2 candidates a call)
+
+References staged in `~/.cache/badcode-gpom-second-half/r1/`: the beat 0 street with Maddie (= `video/cut3-beat0/chain-00-start.jpg`,
+first frame of `simulation/video/09-s3-robot.mp4`), `moodboard/P1-patrol-blockbuster.jpg`, and `cut3/S1-c.jpg` (S11-p3).
+`{house}` as above. Prompts in full in `manifest.json`. 5 calls, 10 candidates, 0 credits, nothing blocked, no
+three-candidate duds.
+
+**S11: the high street, wide (beat 1 patrol + the 9a pass).** p1 window-high; p2 rooftop, the road top to bottom, Maddie
+tiny near the bottom; p3 S1-c pulled back and tilted up.
+
+| Option | From | Note |
+| --- | --- | --- |
+| `S11-a` | `work/S11-p2-b` | Rooftop-high, the road straight top to bottom; bot in dust near the top, Maddie tiny right of the centre line near the bottom. The cleanest lane for the pass. Bunting checked |
+| `S11-b` | `work/S11-p2-a` | Same set-up, the bot further up on the left, Maddie bottom-left by the kerb |
+| `S11-c` | `work/S11-p1-b` | Window-high and closer: Maddie mid-frame and bigger, the bot in a dust haze under the tower. Better as the patrol shot (less road below her for the pass) |
+| `S11-d` | `work/S11-p3-b` | From S1-c pulled back: the street to the tower, Maddie bottom-centre. Closest to S1-c's street |
+
+**S12: kill bots roaming everywhere (beat 1).** p1 the market square and war memorial; p2 two bots under a rail bridge past a boarded-up bakery.
+
+| Option | From | Note |
+| --- | --- | --- |
+| `S12-a` | `work/S12-p1-a` | Bot past the memorial and its wreaths, rusting stall frames, a clock building with a small **BANK** sign over the door (generic, but paint it out if unwanted) |
+| `S12-b` | `work/S12-p1-b` | Flatter: the memorial cross centred, the bot right, dust. No text |
+| `S12-c` | `work/S12-p2-a` | A boarded-up corner shop with peeling posters, two bots coming through the arch. No text |
+| `S12-d` | `work/S12-p2-b` | Tighter on the boarded-up bakery, two bots under the rusted arch in dust. No text |
+
+Rejected (in `work/`): `S11-p1-a` (window frame in shot and the reference's burnt wreck beside the bot), `S11-p3-a` (the burnt wreck again).
+
+**Claude's picks:** **S11-a** (a straight lane from the top of frame past her and off the bottom: exactly the 9a move, and
+it reads as patrol too). **S12-b** and **S12-d** (one square, one bridge, no lettering). Not animated: Kai picks first.
