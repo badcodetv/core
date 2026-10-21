@@ -116,7 +116,7 @@ Printer is burring, now now what's occuring?
 Stacks and stacks of elastic cash
 distracted by a dispraxic flash,
 mob, angry at their shitty little job
-and a boss, who's a knob
+the right and the left both witness the theft
 
 blaming each other is a sick little cover
 institutional, dilutional, the usual
@@ -130,7 +130,7 @@ it is the devil, with a radio station
 
 stack up the vaults like a wheelbarrow
 risk of default is really rather narrow
-but now it's time to get jiggy, just like Biggie
+Biggie said why back in ninety seven
 [this must sound very different for a single bar]
 don't get high off your own supply
 
@@ -147,13 +147,23 @@ Debasement! Debasement! It happened in da basement!
 Printer is burring, now now what's occuring?
 
 [verse 3]
-Now the real star here, is Escobar dear,
-elastic, not plastic bands,
-stacking up cash with my two bare hands
+You know the real star is Pablo Escobar,
+who has elastic bands, not plastic hands,
+stacking up the cash by the grands
 standard plans are for the working man
 
-but this right here is a next level scam
-ill gotten gains with no need to explain
+and this right here is a next level scam
+ill gotten gains, no need to explain
 "bail" and "out", will never mean the same
-but "fail" and "shout" is where we find the game
+if you own the printer then you don't fear winter
+
+the crime is asset inflation and the passive creation
+of a wealth gap that is driving the political situation
+working people get paid in money, so it's not very funny
+when you print more and expect people not to worry
+
+hungry people, feed a revolution,
+then it's retribution, perhaps some execution
+it's time to give, not just to take
+but for heaven’s sake dont say: "let them eat cake"
 ```
