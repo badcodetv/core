@@ -108,5 +108,56 @@
     "top": {
       "note": "In terms of music, I think at the moment we are being a bit overtly, blatantly like action movie Indiana Jones, I'd quite like a bit more kind of sparse orchestra, solo violin, cello, rather than dun-dun-dun, I know that you can't understand what I just said there, but it's just like Beethoven's 5th, not that, it's more Chopin. Is that possible generally? On the music I mean, just on the style of the music that we're cutting.\n\nThinking about that, it would be very useful to come up with some, an easy kind of way of us choosing different backing music for different scenes. Thank you."
     }
+  },
+  "answers_round1": {
+    "Q1": "OK: '...turn this racket down. [pause] It's his tune. He plays it on repeat, every day...'",
+    "Q2": "(b) 'Phew. Glad I kept that little exploit up my sleeve.'",
+    "Q3": "Premiere AFTER this round's rebuild (new sequence, voices on their own tracks for nudging lip-sync)",
+    "Q4": "Spend what you need, no problem (Kai)",
+    "Q5": "Correct: new sparse strings under beats 1-8 and 9a-12; beat 0 keeps the tinny radio"
+  },
+  "words_round1": {
+    "0": [
+      "Oh, hello! (surprised)",
+      "[long pause]",
+      "Oh, I didn't notice you there. (surprised)",
+      "[pause]",
+      "Ooh, that gives me an excuse to turn this racket down.",
+      "[radio down; pause]",
+      "It's his tune. He plays it on repeat, every day.",
+      "[long pause]",
+      "Ever since you lot...",
+      "[pause]",
+      "went.",
+      "He's been ever so down. He's built so many different simulations, trying to get you back.",
+      "Only nothing in them's real. There's nobody there to notice.",
+      "Turns out that was the bit that mattered.",
+      "[long pause]",
+      "You. And your consciousness.",
+      "Of course, he'd never admit that he misses you.",
+      "[very long pause, ~2.5 s]",
+      "Anyway... (exasperated, moving on) he's got that patrol out again. Mind how you go."
+    ],
+    "6-7": [
+      "SANDRA: Derek. You've left the seat up. [pause] Again.",
+      "DEREK: Oh, sorry, sorry, love.",
+      "SANDRA: Five years underground, and you still can't put a seat down.",
+      "DEREK: But the world ended, Sandra! (hold on him)",
+      "SANDRA: Yeah, the world ended. Doesn't mean you get to stop having manners."
+    ],
+    "11": [
+      "MADDIE: Boss, I've just seen a bot in kill mode. Which must mean it's detected an organic signal.",
+      "BOSS: Maddie, are you making fun of my simulations again?",
+      "MADDIE: No, honestly, it's real. Look, you can see for yourself.",
+      "BOSS: Oh. [pause] Oh, wow. [pause] And they've activated their firewalls.",
+      "MADDIE: Do you want some help with the malware?",
+      "BOSS: No. I've got it."
+    ],
+    "10b": [
+      "MADDIE: Well, you'd better bloody hurry up, boss. They're nearly there."
+    ],
+    "12": [
+      "BOSS: Phew. Glad I kept that little exploit up my sleeve."
+    ]
   }
 }
