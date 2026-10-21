@@ -84,7 +84,8 @@ Flow rounds and Jack's social-media variant, all in [`explorations/`](./explorat
 that is Kai's call.
 
 - [`2026-10-21-jack-variant/`](./explorations/2026-10-21-jack-variant/README.md) — red o + white triangle + outline,
-  built in code; what Jack uses on every account.
+  built in code; what Jack uses on every account. **Jack's right logos:** the two 4K files
+  `badcode-logo-and-name-4K.jpg` and `badcode-logo-only-4K.jpg` there (2026-10-21).
 - [`2026-10-21-sketch-shadow/`](./explorations/2026-10-21-sketch-shadow/README.md) — hand-drawn shadow; Flow redrew the letters.
 - [`2026-10-21-styles/`](./explorations/2026-10-21-styles/README.md) — the logo in 13 scenes (dubplate, flyer, tattoo, placard, teletext…).
 - [`2026-10-21-redesigns/`](./explorations/2026-10-21-redesigns/README.md) — 10 redesigns with the logo attached; all kept ring-over-word.

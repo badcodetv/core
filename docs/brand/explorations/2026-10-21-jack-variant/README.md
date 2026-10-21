@@ -5,6 +5,11 @@ style **"Red o + white triangle + outline"** at its defaults (white triangle 36%
 outline 20% of the o's radius). Not saved on the bench; built from those numbers. **Not yet the official logo**:
 Kai ruled "Saved version 5", so swapping the o everywhere is his call too.
 
+> **✅ Jack's right logos (2026-10-21): `badcode-logo-and-name-4K.jpg` (5504×3072) and `badcode-logo-only-4K.jpg`
+> (4096²).** The Flow recreations below, upscaled to 4K in Flow by Jack; copies of the files in his Desktop folder
+> `Youtube Vids\animation\badcode logo NEW!`. Use these two for Jack's work. For a circular profile crop still
+> use `tiktok-profile-2048.png` (the ring in the logo-only file nearly touches the edge).
+
 **Made in code, not Flow.** Flow redraws the letters and the triangle every time (tested 2026-10-21, see
 `../2026-10-21-sketch-shadow/`), and upscaling an AI image adds blur. These are the exact vector shapes, so any
 size is pixel-sharp.
@@ -40,6 +45,7 @@ Image 1 is our finished logo mark. Recreate it exactly as it is in image 1: the 
 | Take | Verdict |
 | --- | --- |
 | f1 a / b (`flow-f1-logo-and-name-*.jpg`, 1376×768, Flow project `c43cf89a`, "Oct 21 - 12:49") | ✅ Very close in both: letters, red o with off-white rim and small triangle all kept. Ring drawn a little thinner than the source; the lockup sits slightly smaller in the frame |
+| **4K upscales** (`badcode-logo-and-name-4K.jpg`, `badcode-logo-only-4K.jpg`) | ✅ **Jack: "the right logos".** Upscaled in Flow from the f1 / f2 takes |
 | f2 a / b (`flow-f2-logo-only-*.jpg`, 1024², project `abc9805d`, "Oct 21 - 12:50") | ✅ Near-identical to the source. ⚠️ The ring nearly touches the frame edge, so a circular profile crop (TikTok) cuts it; use `tiktok-profile-2048.png` for the avatar |
 
 **Finding:** asked to *copy* (reference attached, "recreate it exactly"), NB2 was faithful; asked to *treat* it
