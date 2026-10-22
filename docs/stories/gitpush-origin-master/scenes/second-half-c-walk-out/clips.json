@@ -6,17 +6,23 @@
   "credits": 162,
   "clips": {
     "C01": {
-      "file": "C01-t1.mp4",
+      "file": "c01r1-t2.mp4",
+      "in": 0.0,
+      "out": 8.0,
+      "plate": "../stills/c01r1-a.jpg",
+      "talking": false,
+      "note": "Kai round 1 (bc1): new shot from inside the bunker past the wary faces (the old lady lit by the doorway, silent, turns her head away at ~7 s) to Maddie alone outside the doors, facing in. Beacon pulses (its glow lands on the doors). Maddie's 'Go on. I promise you'll be okay.' / 'You've got my word.' go over it with the beacon pulse in post; no lip-sync.",
+      "post": "slow push 100->106% eased (scene.json)",
+      "alt": "c01r1-t1.mp4 (reject: Omni flew a string of pennants up off the robot from ~0.5 s)",
+      "superseded": "C01-t1.mp4 (round 0: the lady straightening the bunting, 'Go on, then. You lead.')"
+    },
+    "C01b": {
+      "file": "c01br1-t1.mp4",
       "in": 0.0,
       "out": 6.0,
-      "plate": "../stills/C01-r2-a.jpg",
-      "talking": {
-        "line": "c1-0-lady",
-        "own_audio": "Go on then, you lead. (2.18-4.36)",
-        "mouth": "speech 2.5-4.5 (mouth-track: opens 2.58 3.00 3.83 4.08)",
-        "fit": "voice speech 2.38 s over ~2.0 s of mouth = x1.19, inside 1.3"
-      },
-      "post": "slow push 100->106% (Premiere-style, eased)"
+      "plate": "../stills/c01br1-b.jpg",
+      "talking": false,
+      "note": "Kai round 1 (bc1): the first two (a man shading his eyes, a woman) edge out of the doors onto the concrete; more follow behind them from ~3 s; Maddie in the left foreground, beacon pulses at ~1 s, the torn bunting stays low on her wheels."
     },
     "C02": {
       "file": "C02-t4.mp4",
@@ -43,41 +49,54 @@
       "superseded": "C03-chain.mp4 (round 0: 22 s, wrong cart body, verge scraps)"
     },
     "C04": {
-      "file": "C04-t2.mp4",
+      "file": "c04r1-seat-t1.mp4",
       "in": 0.0,
       "out": 6.0,
       "plate": "../stills/C04-r2-a.jpg",
       "talking": {
         "line": "c4-0-sandra",
-        "own_audio": "Did you put the seat down? (2.04-3.34)",
-        "mouth": "speech ~2.04-3.45 (opens 2.08 2.58 3.42)",
-        "fit": "voice 1.64 s over ~1.4 s = x1.17"
-      }
+        "own_audio": "I hope you put that bloody seat down. (1.72-4.36)",
+        "mouth": "speech ~2.2-4.4 (opens 2.25 2.88 4.04; face lost for a few frames as she turns, '?' in the strip)",
+        "fit": "voice speech 2.36 s over ~2.2 s of mouth = x1.07"
+      },
+      "superseded": "C04-t2.mp4 (round 0: 'Did you put the seat down?')"
+    },
+    "C04b": {
+      "file": "c04r1-aliens-t1.mp4",
+      "in": 0.0,
+      "out": 7.3,
+      "plate": "../stills/C04-r2-a.jpg",
+      "talking": {
+        "line": "c4-2-sandra",
+        "own_audio": "It does matter. (0.70-1.78) / In 10,000 years, (2.54-3.52) / when the aliens dig up that bunker, (4.14-5.56) / they'll know it was you. (~6.16-6.96); then Omni ADDED 'You cannot...' at ~7.56-8.0: out at 7.3",
+        "mouth": "opens 1.50 2.42 4.17 5.08 5.29 6.67; HELD 0.46-1.00 (parted before 'It': check the strip), 3.67-3.96, 5.38-5.71",
+        "fit": "whole line: voice 7.76 s over ~6.3 s of mouth = x1.24, inside 1.3; place by phrase (voice phrases 0-1.74 / 2.46-3.82 / 4.22-6.16 / 6.58-7.76), the voice's own pauses are longer than hers"
+      },
+      "note": "One 8 s clip held the whole 17-word punchline: she turns to Derek and says it deadpan. 'She keeps talking until the very end' bought the length but also the invented tail; drop that clause next time."
     },
     "C05": {
-      "file": "C05-t2.mp4",
+      "file": "c05r1-t1.mp4",
       "in": 0.0,
       "out": 8.0,
       "plate": "../stills/C05-r2-a.jpg",
       "talking": {
-        "lines": [
-          "c4-1-derek",
-          "c4-3-derek"
-        ],
-        "own_audio": "We're not coming back, love. (1.16-2.62) / Yes. (5.14-5.78)",
-        "mouth": "phrase 1 ~1.0-2.55 (held parted 1.00-1.42; use --face left, the default tracker jumps to Sandra's edge), silence 2.6-5.3, 'Yes' 5.38-5.9",
-        "fit": "phrase 1: voice 1.98 s over ~1.4 s = x1.4, OVER the 1.3 cap: re-voice brisker ('Pace: a little brisk') or trim the pause before 'love'; 'Yes' x1.0. Sandra's off-screen 'Did you put it down?' (1.16 s) sits in 2.8-4.6"
-      }
+        "line": "c4-1-derek",
+        "own_audio": "Doesn't bloody matter now love. (0.54-2.04) / We're not coming back are we? (3.50-5.16)",
+        "mouth": "phrase 1 ~0.5-2.1 (strip opens 0.12, so check the strip for a parted rest before 'Doesn't'), phrase 2 ~3.1-5.2; shut 5.2-8.0 (--face left)",
+        "fit": "phrase 1: voice 0-2.2 (whisper puts 'Doesn't' at 0.0-1.12, so the take likely has a quiet lead-in; measure the onset) over ~1.6 s = up to x1.375, check after the onset; phrase 2: voice 1.56 s over ~2.1 s of mouth (x0.75: voice shorter than mouth, fine, let it end early or tempo 0.85)",
+        "look": "6.0-8.0: he turns his head to her, a flat look, mouth shut. Cut: C05 0-5.3 (his line) -> C04b (her punchline) -> C05 ~5.8-8.0 (the look)"
+      },
+      "superseded": "C05-t2.mp4 (round 0: 'We're not coming back, love.' / 'Yes.')"
     },
     "C06": {
-      "file": "C06-t2.mp4",
+      "file": "c06r1-t1.mp4",
       "in": 0.0,
       "out": 8.0,
-      "plate": "../stills/C06-f1-a.jpg",
+      "plate": "../stills/c06r1-a.jpg",
       "talking": false,
       "post": "slow push 100->112% eased; beacon pulse on the AI's words (ffmpeg)",
-      "alt": "C06-t1.mp4 (round 0: the old man sank to the grass, a figure lay by the trolley)",
-      "note": "Review round 1: the still edited to remove the figure lying by the tipped trolley; the old man stays on his feet catching his breath; the seam brightens end to end."
+      "note": "Kai round 1 (bc5): the tipped trolley and the spilled blankets painted out of C06-f1-a (flow_edit_image, free) and re-animated. The old man stays standing on his stick (he straightens a little), the hundred stand still, the seam lights end to end from ~2 s. Derek's 'Bloody hell. Look at that building.' and Maddie's 'Yeah. He's been working on this one...' play over it (Derek among the backs: no lip-sync).",
+      "superseded": "C06-t2.mp4 (review round 1: spilled blankets by the tipped trolley)"
     },
     "C07": {
       "file": "C07-t3.mp4",
@@ -90,5 +109,10 @@
       "post": "glass_window.py: a soft power window darkens the black glass left of the doorway to 16% and desaturates it, so Maddie's reflection no longer reads as a second robot inside"
     }
   },
-  "credits_review1": 60
+  "credits_review1": 60,
+  "credits_round1_kai": 80,
+  "flow_projects_round1_kai": {
+    "stills": "aedd38f5-d58f-44d1-917c-bbdd43f288b4 ('Oct 22 - 19:02')",
+    "video": "one fresh project per shot: C06 fbe11850, C01 78425efe, C01b f1521855, C04 0895002e, C04b bf228e1b, C05 11386d32"
+  }
 }

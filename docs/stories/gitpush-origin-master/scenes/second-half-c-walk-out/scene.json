@@ -200,14 +200,13 @@
       "reuse": null,
       "fallback": "the new still with a Premiere drift and Maddie's two lines over it",
       "note": "Maddie has no mouth: her lines need no lip-sync (beacon pulses on her words in post). The old lady is visible and silent (answers_round1.Q2).",
-      "todo": true,
-      "todo_note": "NEW SHOT (Kai round 1, bc1): new still options (free) then a clip. The old still/clip (the lady straightening the bunting) is superseded."
+      "todo_note": "NEW SHOT (Kai round 1, bc1): new still options (free) then a clip. The old still/clip (the lady straightening the bunting) is superseded.",
+      "done_note": "DONE round 1 (Kai's notes), 22 Oct: still c01r1-a.jpg, clip c01r1-t2.mp4 (clips.json). Prompts in shots.md, 'Round 1 (Kai's notes)'."
     },
     {
       "id": "C01b",
       "beat": "c1",
       "duration": 5,
-      "todo": true,
       "todo_note": "NEW SHOT (Kai round 1, bc1): still options then a clip.",
       "purpose": "The first choice: one or two of the hundred edge forward out of the shadow into the light, past Maddie on the step.",
       "still": {
@@ -226,7 +225,8 @@
       },
       "talking": false,
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "done_note": "DONE round 1 (Kai's notes), 22 Oct: still c01br1-b.jpg, clip c01br1-t1.mp4 (6 s)."
     },
     {
       "id": "C02",
@@ -301,8 +301,8 @@
       "talking": "lip-sync-dub: sandra, \"I hope you put that bloody seat down.\" (6 s clip) and \"It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you.\" (8 s clip, the punchline lands on 'you')",
       "continuous": false,
       "reuse": null,
-      "todo": true,
-      "todo_note": "NEW LIP-SYNC CLIP(S) (Kai round 1, lc4-0, bc4): Sandra's two new lines. Same plate; one clip per line, or one longer clip if Omni holds the silence."
+      "todo_note": "NEW LIP-SYNC CLIP(S) (Kai round 1, lc4-0, bc4): Sandra's two new lines. Same plate; one clip per line, or one longer clip if Omni holds the silence.",
+      "done_note": "DONE round 1 (Kai's notes), 22 Oct: two clips off the same plate C04-r2-a.jpg: c04r1-seat-t1.mp4 (the seat line, 6 s, x1.07) and c04r1-aliens-t1.mp4 (the punchline, 8 s, out at 7.3 s, x1.24). clips.json keys C04 and C04b."
     },
     {
       "id": "C05",
@@ -327,8 +327,8 @@
       "continuous": false,
       "reuse": null,
       "note": "If Omni will not hold the silence, make two clips from the same plate: the line, and the look (the 17-6b lesson in cut3-shots.md).",
-      "todo": true,
-      "todo_note": "NEW LIP-SYNC CLIP (Kai round 1, lc4-1, bc4): Derek's new line, then hold a silent look after Sandra's punchline (no reply)."
+      "todo_note": "NEW LIP-SYNC CLIP (Kai round 1, lc4-1, bc4): Derek's new line, then hold a silent look after Sandra's punchline (no reply).",
+      "done_note": "DONE round 1 (Kai's notes), 22 Oct: c05r1-t1.mp4: his line 0.5-5.2 s, then from ~6 s he turns to her with a flat look, mouth shut, in the same clip. Cut back to it for the look after Sandra's punchline."
     },
     {
       "id": "C06",
@@ -355,8 +355,8 @@
       "continuous": false,
       "reuse": null,
       "visible_cost": "in the foreground: the old man on his stick being helped down to sit, exhausted; worn coats. The monument is seen past them, never alone",
-      "todo": true,
-      "todo_note": "PAINT OUT (Kai round 1, bc5): remove the tipped shopping trolley and blankets from the picked still (flow_edit_image, free), keep the old man on his stick, then re-animate (one clip). Derek's and Maddie's lines play over it: Derek is among the backs, so no lip-sync unless a Derek insert is wanted (replies.lc5-0 mentions one; not planned)."
+      "todo_note": "PAINT OUT (Kai round 1, bc5): remove the tipped shopping trolley and blankets from the picked still (flow_edit_image, free), keep the old man on his stick, then re-animate (one clip). Derek's and Maddie's lines play over it: Derek is among the backs, so no lip-sync unless a Derek insert is wanted (replies.lc5-0 mentions one; not planned).",
+      "done_note": "DONE round 1 (Kai's notes), 22 Oct: trolley and blankets painted out (c06r1-a.jpg), re-animated as c06r1-t1.mp4."
     },
     {
       "id": "C07",
@@ -391,6 +391,8 @@
   "round1": {
     "date": "2026-10-22",
     "source": "Kai round 1, 2026-10-22 (cut-notes.json kai_round1)",
-    "changes": "Lines rewritten per Kai's notes; the AI is silent in scene C; frames marked todo:true need Flow work (C01, C01b, C04, C05, C06)."
+    "changes": "Lines rewritten per Kai's notes; the AI is silent in scene C; frames marked todo:true need Flow work (C01, C01b, C04, C05, C06).",
+    "flow": "Flow work for round 1 done 22 Oct (80 credits, 7 takes, 6 kept). Main rebuilds the cut.",
+    "cut": "Rebuilt 22 Oct by cut_end.py C: 64.62 s (was 45.54 s). Ending reel rebuilt: 209.92 s. Record: ../second-half-ending-log.md, 'Scene C round 1: the rebuild'."
   }
 }

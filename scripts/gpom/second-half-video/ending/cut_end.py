@@ -209,63 +209,78 @@ def join_report(c):
 # ---------------------------------------------------------------- scene C
 
 def scene_c(sc):
-    c = Cut(sc, 'gpom-second-half-C-rough2', 'Ending C Timeline', 'GPOM second half · the ending · scene C: the walk out',
-            "Scene C of the ending: the old lady sends Maddie ahead, the hundred walk out over the downs, the seat, the "
-            "AI's building, and the step. Made autonomously (21-22 Oct): every call Kai would make is in the flags. "
-            "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you "
-            "type. Tell Claude when you're done.")
+    c = Cut(sc, 'gpom-second-half-C-rough3', 'Ending C Timeline', 'GPOM second half · the ending · scene C: the walk out',
+            "Scene C of the ending, round 1 (Kai's notes, 22 Oct): Maddie coaxes the hundred out of the bunker, they "
+            "walk over the downs, the seat one last time, the AI's building, and the step. It is Maddie's scene: the "
+            "boss does not speak. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. "
+            "Notes save as you type. Tell Claude when you're done.")
     m = c.m
     V = c.vdir
-    ai_take = sc.media / 'suno' / 'gpom-sh-end-ai-c-a-v6-w10-7f567949.wav'
 
-    # ---- c1: the old lady on the step (C01, lip-synced phrase by phrase), Maddie's "Ooh. Ta." on C02
+    def by(key):  # who wrote the line: scene.json, the line's beat and index (c4-2-sandra -> beat c4, line 2)
+        bk, i, _ = key.split('-')
+        return next(b for b in sc.cfg['beats'] if b['key'] == bk)['lines'][int(i)].get('by', 'claude')
+
+    def speech(key):  # the take's speech span, from voices.json: every fragment of a line takes its gain from it
+        a, z = sc.vox['lines'][key]['speech']
+        return (a, z + 0.3)
+
+    # ---- c1: off the step (C01, round 1): from inside the bunker, past the wary faces, to Maddie alone on the step.
+    # Maddie has no mouth: no lip-sync. Nobody moves for 1.4 s before she speaks; her promise comes a beat later.
     b = c.beat('c1', 'Off the step', 0.0, act='The walk out',
-               see='The blast doors open on daylight. The old lady stops beside Maddie, straightens her torn bunting, '
-                   'sends her ahead. Then the wide: Maddie leads.')
-    i01 = 0.6
-    lady = sc.voice('c1-0-lady')
-    # mouth (tracked strip, 12 fps): "Go on, then." 2.58-3.17, "You lead." 3.75-4.50 (clip time)
-    ph = [(0.25, 1.20, 2.60, 1.25, 'Go on, then.'), (1.76, 2.65, 3.78, 1.12, 'You lead.')]
-    ends = []
-    for a, z, at, tp, txt in ph:
-        ends.append(c.say('vox-lady', lady, a, z, at - i01, f'c1 line 0 lady: "{txt}" (lip-sync, x{tp})', tempo=tp))
-    l0a, l0e = ph[0][2] - i01, ends[-1]
-    c.line(b, 0, 'lady', l0a, l0e - l0a, sc.text('c1-0-lady'), 'claude')
-    t_mad = fr(l0e + GAP)
-    cut02 = fr(t_mad - CUT_PRE)
-    d01 = cut02
-    c01 = move(sc.clip('C01'), V / 'C01-push.mp4', i01, d01, 1.06, hold=1.5, cx=0.5, cy=0.25)
-    c.pic(c01, 0.0, 0.0, cut02, 'c1', source=sc.clip('C01'))
-    mad = sc.voice('c1-1-maddie')
-    e = c.say('vox-maddie', mad, 0.25, 2.38, t_mad, 'c1 line 1 maddie: "Ooh. Ta."')
-    c.line(b, 1, 'maddie', t_mad, e - t_mad, sc.text('c1-1-maddie'), 'claude')
-    end_c1 = fr(e + TAIL)
+               see='From inside the dark bunker, past the hundred\'s wary backs and faces (the old lady among them, '
+                   'silent), Maddie alone on the step in the daylight, turned back to them. Nobody moves. She coaxes.')
+    a = 1.4
+    e = c.say('vox-maddie', sc.voice('c1-0-maddie'), 0.27, 3.30, a, 'c1 line 0 maddie: "Go on. I promise you\'ll be okay."')
+    c.line(b, 0, 'maddie', a, e - a, sc.text('c1-0-maddie'), by('c1-0-maddie'))
+    a1 = fr(e + 1.2)  # scene.json gap_before 1.2
+    e1 = c.say('vox-maddie', sc.voice('c1-1-maddie'), 0.22, 1.46, a1, 'c1 line 1 maddie: "You\'ve got my word."')
+    c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c1-1-maddie'), by('c1-1-maddie'))
+    end_c1 = fr(e1 + 0.7)
+    src01 = sc.clip('C01')
+    c01 = move(src01, V / f'{src01.stem}-push-d{end_c1:.3f}.mp4', 0.0, end_c1, 1.06, hold=1.5, cx=0.6, cy=0.45)
+    c.pic(c01, 0.0, 0.0, end_c1, 'c1', source=src01)
+    m['c01'] = (0.0, end_c1)
+    m['promise'] = (a, e1)
+    t = c.close(b, end_c1)
+    c.flags.append('Round 1 (Kai, bc1): C01 is the new shot from inside the bunker (c01r1-t2). The lady is visible and '
+                   'silent among the wary faces and turns her head away at ~7 s, kept in. Nobody moves for 1.4 s before '
+                   'Maddie speaks; "You\'ve got my word." comes 1.2 s after the first line (scene.json gap_before). '
+                   'C01 holds 1.5 s, then pushes 100 -> 106% eased (push.py), centred between the faces and the door.')
+    c.flags.append('Not used: the deep-tunnel C01 still (stills/c01r2-b.jpg: more of the hundred, the lady arms folded at '
+                   'the front) is the stronger picture, but Maddie is a speck in it and Flow refused it for video '
+                   '(UPLOAD_REFUSED, probably the child in it). It could go in as a still with a drift (Kai to rule).')
+
+    # ---- c2: into daylight (C01b, then C02). Maddie's joke gets them over the threshold.
+    s2 = t
+    b = c.beat('c2', 'Into daylight', s2, act='The walk out',
+               see='The first two edge out of the doors, squinting; more follow. Maddie\'s joke. Then the hundred file '
+                   'out of the hill; the kill bots\' track marks in the grass. Maddie leads out of frame.')
+    src1b = sc.clip('C01b')
+    d1b = fr(dur(src1b) - 1 / FPS)
+    c.pic(src1b, 0.0, s2, s2 + d1b, 'c2')
+    a = fr(s2 + 1.6)  # after the first steps out (C01b's man shades his eyes from ~1 s)
+    e = c.say('vox-maddie', sc.voice('c2-0-maddie'), 0.28, 1.68, a, 'c2 line 0 maddie: "Careful now, humans."')
+    c.line(b, 0, 'maddie', a, e - a, sc.text('c2-0-maddie'), by('c2-0-maddie'))
+    a1 = fr(e + 0.6)  # scene.json gap_before 0.6
+    e1 = c.say('vox-maddie', sc.voice('c2-1-maddie'), 0.20, 4.70, a1,
+               'c2 line 1 maddie: "I\'m fairly sure there\'s no radiation round here."')
+    c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c2-1-maddie'), by('c2-1-maddie'))
+    cut02 = fr(s2 + d1b)
     c02_end = fr(cut02 + 7.0)
     c02, gnote = match_grade(sc.clip('C02'), sc.clip('C03'), V / 'C02-t4-graded.mp4', strength=0.7)
-    c.flags.append('Colour: C02 (re-rolled in review round 1, C02-t4) is graded towards the first 4 s of the long walk '
-                   'it cuts to, so the two overcast exteriors match. ' + gnote + '.')
-    c.flags.append('Review round 1: C02 re-rolled (C02-t4, 12 credits). Round 0\'s pick grew a pole of pennants on '
-                   'Maddie\'s rear from ~1.5 s; a light breeze and "the cloth hangs limp, nothing rises from the robot" '
-                   'fixed it (C02-t3, with a strong wind, streamed the bunting across the whole foreground: rejected).')
-    c.pic(c02, 0.0, cut02, end_c1, 'c1', source=sc.clip('C02'))
-    m['bunting'] = (0.0, cut02)
+    c.pic(c02, 0.0, cut02, c02_end, 'c2', source=sc.clip('C02'))
+    m['c01b'] = (s2, cut02)
     m['c02'] = (cut02, c02_end)
-    m['ooh'] = e
-    t = c.close(b, end_c1)
-    c.flags.append(f'c1 (C01): the lady\'s "Go on, then." is sped x1.25 onto a 0.59 s mouth burst (the tracked strip: '
-                   f'2.58-3.17 s), "You lead." x1.12 onto 3.75-4.50 s. Both phrases start on the mouth opening, never '
-                   'before. x1.25 is near the 1.3 cap: the first phrase is the one to listen to for squeeze.')
-    c.flags.append('c1: C01 opens 0.6 s into the clip (her hand already on the bunting), holds 1.5 s, then pushes '
-                   '100 -> 106% eased (push.py, in post), centred on her face.')
-
-    # ---- c2: into daylight (C02 continues)
-    b = c.beat('c2', 'Into daylight', t, act='The walk out',
-               see='The hundred file out of the hill, blinking; the kill bots\' track marks in the grass. Maddie leads '
-                   'out of frame.')
-    c.pic(c02, end_c1 - cut02, t, c02_end, 'c2', source=sc.clip('C02'))
+    m['joke'] = e1
     t = c.close(b, c02_end)
+    c.flags.append('Round 1 (Kai, lc1-1): C01b (c01br1-t1, the first two edge out, more follow) plays whole before C02. '
+                   '"Careful now, humans." comes 1.6 s in, as they step out; the radiation line 0.6 s after it, and runs '
+                   f'{e1 - cut02:.1f} s over the cut into C02 so the hundred file out under the joke.')
+    c.flags.append('Colour: C02 (C02-t4) is graded towards the first 4 s of the long walk it cuts to, so the two '
+                   'overcast exteriors match. ' + gnote + '.')
 
-    # ---- c3: the long walk (C03 chain, 22 s, the drift ramped back to clip 1's grade)
+    # ---- c3: the long walk (C03 chain, unchanged: Kai, bc3 "excellent shot")
     b = c.beat('c3', 'The long walk', t, act='The walk out',
                see='The rhyme of beat 0, withheld: tight on Maddie alone on the chalk track, as she was alone in '
                    'Swindon; then the frame widens and a hundred people are walking behind her.')
@@ -279,127 +294,141 @@ def scene_c(sc):
     c.pic(c03, 0.0, t, t + D3, 'c3', source=chain)
     m['c3'] = (t, fr(t + D3))
     t = c.close(b, t + D3)
-    c.flags.append('Review round 1 (C03): remade (24 credits, two chained Omni clips from a new still C03-f1-a made on '
-                   'the Maddie reference, so her body is the six-wheeled design of every other shot) and cut from 22 s '
-                   'to 10.5 s. It now opens at 160% on Maddie alone (the left third, the line out of frame), holds 1.5 s, '
-                   'then eases out to 100% by 9.6 s (move_keys.py) so the hundred appear behind her: the beat-0 rhyme '
-                   'as a reveal. The chain brightens and cools towards its end; cut3\'s ramped regrade_v6 pulls it back '
-                   '85% towards its first 4 s before the move. No verge scraps in the new take. The 160% opening is soft (a 720p source). '
-                   'Kai to rule on the length.')
+    c.flags.append('C03 unchanged (Kai round 1: "excellent shot"): opens at 160% on Maddie alone, holds 1.5 s, eases '
+                   'out to 100% by 9.6 s so the hundred appear behind her. Music on it may change once it is in Premiere.')
 
-    # ---- c4: the seat. C04 Sandra (lip-sync), C05 Derek (lip-sync, two phrases) with Sandra off-screen between
+    # ---- c4: the seat. Lip-sync, phrase by phrase, on the round-1 clips (lip-sync-dub). Mouth openings and lip
+    # closures read off the tracked 12 fps strips (clips/lips/<take>.jpg) and the rescaled 24 fps strips; voice pauses
+    # and b/m closures from the take's 20 ms loudness. Every phrase starts 0-0.1 s after the mouth opens; tempo <= 1.3.
+    # Cut: C04 (her seat line) -> C05 0-5.3 (his line) -> C04b (her punchline, out at 7.3 before Omni's invented
+    # words) -> C05 5.8-8.0 (his flat look, no reply).
     s4 = t
     b = c.beat('c4', 'The seat', s4, act='The walk out',
-               see='Sandra and Derek, walking. The row one last time, and what it now means.')
-    i04 = 2.06 - LEAD
-    san = sc.voice('c4-0-sandra')
-    e = c.say('vox-sandra', san, 0.24, 1.88, s4 + 2.07 - i04, 'c4 line 0 sandra (lip-sync, x1.12)', tempo=1.12)
-    c.line(b, 0, 'sandra', s4 + 2.07 - i04, e - (s4 + 2.07 - i04), sc.text('c4-0-sandra'), 'claude')
-    # Derek's mouth (strip): "We're not coming" 1.00-1.92, the b of "back" shut 2.00-2.17, "back, love" 2.25-2.75
-    i05 = 1.00 - CUT_PRE
-    cut05 = fr(e + GAP - CUT_PRE)
+               see='Sandra and Derek, walking. The row one last time, and what it now means: nobody is coming back, '
+                   'and she is still right. He gives her a look.')
+    i04 = 1.2
+    k = 'c4-0-sandra'
+    # C04 (c04r1-seat-t1): mouth shut to 2.25, speech 2.25-4.4; voice 0.30-2.56 at x1.07: the b of "bloody" lands
+    # on the lips shut at 3.12-3.37
+    a = s4 + 2.27 - i04
+    e = c.say('vox-sandra', sc.voice(k), 0.30, 2.56, a, 'c4 line 0 sandra (lip-sync, x1.07)', tempo=1.07, ref=speech(k))
+    c.line(b, 0, 'sandra', a, e - a, sc.text(k), by(k))
+    cut05 = fr(e + 0.25)
     c.pic(sc.clip('C04'), i04, s4, cut05, 'c4')
-    t05 = cut05 - i05  # timeline time of C05's clip-time zero
-    der = sc.voice('c4-1-derek')
-    a1 = t05 + 1.01
-    # review round 2: "coming" was masked by the walk music (a blind listen heard "We're not back home"); the line
-    # is lifted 2.5 dB (-16 -> -13.5) and the music ducks deeper under the seat lines (audio_c)
-    c.say('vox-derek', der, 0.31, 1.27, a1, 'c4 line 1 derek: "We\'re not coming" (lip-sync, x1.0, +2.5 dB)', lufs=-13.5)
-    e1 = c.say('vox-derek', der, 1.39, 2.26, t05 + 2.19, 'c4 line 1 derek: "back, love." (lip-sync, x1.1, +2.5 dB)',
-               tempo=1.1, lufs=-13.5)
-    c.line(b, 1, 'derek', a1, e1 - a1, sc.text('c4-1-derek'), 'claude')
-    a2 = fr(e1 + GAP)
-    e2 = c.say('vox-sandra', sc.voice('c4-2-sandra'), 0.24, 1.43, a2, 'c4 line 2 sandra, off-screen', lufs=-17.5)
-    c.line(b, 2, 'sandra', a2, e2 - a2, sc.text('c4-2-sandra'), 'claude')
-    a3 = t05 + 5.43
-    e3 = c.say('vox-derek', sc.voice('c4-3-derek'), 0.32, 0.94, a3, 'c4 line 3 derek: "...Yes." (lip-sync, x1.0)')
-    c.line(b, 3, 'derek', a3, e3 - a3, sc.text('c4-3-derek'), 'claude')
-    end_c4 = fr(e3 + TAIL)
-    # review round 2: Sandra is in frame on C05 with her mouth shut while her line plays. C05 now opens tight on
-    # Derek (140%, her face out of frame, only a sliver of her coat at the edge), holds through her line, then
-    # eases back to 100% on his "...Yes." so the two are seen together for the answer (move_keys.py, smoothstep)
-    d05 = end_c4 - cut05
-    back0 = fr(e2 + 0.1) - cut05
-    c05 = V / f'C05-t2-reframe-i{i05:.3f}-d{d05:.3f}.mp4'
-    if not c05.exists():
-        subprocess.run([str(LIPS_PY), '-I', str(HERE / 'move_keys.py'), str(sc.clip('C05')), str(c05), '--in',
-                        f'{i05:.4f}', '--dur', f'{d05:.4f}', '--keys',
-                        f'0:1.4:545:310,{back0:.3f}:1.4:545:310,{min(d05, back0 + 1.6):.3f}:1:640:360'], check=True)
-    c.pic(c05, 0.0, cut05, end_c4, 'c4', source=sc.clip('C05'))
-    c.flags.append(f'Review round 2 (C05): Sandra was in frame, mouth shut, while "Did you put it down?" played. C05 '
-                   f'now opens at 140% on Derek (her face out of shot, a sliver of her coat at the right edge), holds '
-                   f'{back0:.2f} s through his line and hers, then eases back to 100% over 1.6 s on his "...Yes.", '
-                   'so her line is truly off-screen and the answer lands on the two of them. The 140% is soft (720p).')
+    k = 'c4-1-derek'
+    # C05 (c05r1-t1): "Doesn't" 0.17-0.92, lips shut 0.92-1.00 for the b of "bloody" (voice 1.07), "bloody matter now,
+    # love" 1.08-2.00; shut to 3.17; "We're not coming" 3.17-4.25 (the m of "coming" ~3.86), lips shut 4.25-4.33 for
+    # the b of "back" (voice 3.84-3.92), "back, are we?" 4.42-5.05; shut after.
+    D4 = [(0.24, 1.07, 0.20, 1.0, '"Doesn\'t"'), (1.07, 2.34, 1.08, 1.3, '"bloody matter now, love."'),
+          (3.00, 3.84, 3.24, 1.0, '"We\'re not coming"'), (3.84, 4.30, 4.36, 1.0, '"back, are we?"')]
+    for v0, v1, at, tp, txt in D4:
+        e = c.say('vox-derek', sc.voice(k), v0, v1, cut05 + at, f'c4 line 1 derek: {txt} (lip-sync, x{tp})', tempo=tp,
+                  ref=speech(k))
+    a = cut05 + D4[0][2]
+    c.line(b, 1, 'derek', a, e - a, sc.text(k), by(k))
+    o05 = 5.3
+    cut04b = fr(cut05 + o05)
+    c.pic(sc.clip('C05'), 0.0, cut05, cut04b, 'c4')
+    k = 'c4-2-sandra'
+    # C04b (c04r1-aliens-t1), in at 0.5: mouth parted and held to ~0.92 (first check put "It" 0.13 s before the
+    # full opening at 0.96: moved to 0.92); "It does" to 1.33, lips shut 1.375-1.42 for
+    # the m of "matter" (voice 1.11-1.17), "matter" 1.46-1.79; shut to 2.42; "In ten thousand years," 2.42-3.96;
+    # "when the aliens dig up that bunker," 4.17-6.0; "they'll know it was you." 6.08-6.88 (lips shut 6.50-6.58 for the
+    # w of "was", rounded on "you" 6.67-6.83). "bunker" keeps its soft "-er" tail (voice to 6.26: cut at 6.08, the
+    # mix was heard as "bunk they'll"). The voice's 0.25 s gap inside "It does" is dropped; its 0.5 s pause
+    # before "they'll" is not in her mouth, so it goes.
+    i4b = 0.5
+    t4b = cut04b - i4b
+    S4 = [(0.29, 0.62, 0.92, 1.0, '"It"'), (0.84, 1.82, 1.24, 1.3, '"does matter."'),
+          (2.36, 3.96, 2.40, 1.0, '"In ten thousand years,"'), (4.16, 6.26, 4.20, 1.12, '"when the aliens dig up that bunker,"'),
+          (6.54, 7.82, 6.10, 1.3, '"they\'ll know it was you."')]
+    for v0, v1, at, tp, txt in S4:
+        e = c.say('vox-sandra', sc.voice(k), v0, v1, t4b + at, f'c4 line 2 sandra: {txt} (lip-sync, x{tp})', tempo=tp,
+                  ref=speech(k))
+    a = t4b + S4[0][2]
+    c.line(b, 2, 'sandra', a, e - a, sc.text(k), by(k))
+    out4b = 7.3  # Omni added "You cannot..." from 7.56
+    cutlook = fr(t4b + out4b)
+    c.pic(sc.clip('C04b'), i4b, cut04b, cutlook, 'c4')
+    look0, look1 = 5.8, 8.0 - 1 / FPS
+    end_c4 = fr(cutlook + look1 - look0)
+    c.pic(sc.clip('C05'), look0, cutlook, end_c4, 'c4')
     m['c4'] = (s4, end_c4)
-    m['c4_lines'] = (s4 + 2.07 - i04, e3)
+    m['c4_lines'] = (s4 + 2.27 - i04, e)
+    m['you'] = e
     t = c.close(b, end_c4)
-    c.flags.append(f'c4 (C05): on the tracked mouth strip Derek\'s whole line spans 1.00-2.75 s (the held-open 1.00-1.42 '
-                   'is "We\'re", not a frozen smile), so it fits phrase by phrase at x1.0 and x1.1 with the b of "back" '
-                   'landing after the lips shut at 2.00-2.17. Stage 3\'s x1.4 was measured on a shorter burst; no '
-                   're-voice was needed.')
-    c.flags.append(f'c4: Sandra\'s "Did you put it down?" plays in Derek\'s silent beat on C05, where she is soft at the '
-                   f'right edge of frame and her mouth does not move. The gap before "...Yes." is {a3 - e2:.2f} s, set by '
-                   'the picture (his mouth opens at 5.43 s), a little under the 1.2 s lead voices.json asks for.')
+    c.flags.append('Round 1 (Kai, lc4-0/lc4-1/bc4, Q1 a): the seat is four shots now: C04 (her line) -> C05 (his) -> '
+                   'C04b (her punchline) -> C05 again for his flat look, no reply. All four lines are lip-synced phrase '
+                   'by phrase on the mouth (lip-sync-dub), never on Omni\'s own audio.')
+    c.flags.append('c4 lip-sync: Sandra\'s seat line x1.07 (the b of "bloody" on her shut lips). Derek in four pieces: '
+                   '"Doesn\'t" x1.0, "bloody matter now, love." x1.3 (the cap), "We\'re not coming" x1.0, "back, are '
+                   'we?" x1.0, each b landing on a lip closure (0.92-1.00 and 4.25-4.33 s of C05). Sandra\'s punchline in '
+                   'five pieces: x1.0 / x1.3 / x1.0 / x1.12 / x1.3. Her mouth gives the last phrase 0.8 s for 1.3 s of '
+                   'voice, so "they\'ll know it was you." is at the 1.3 cap and the take\'s 0.5 s pause before it is gone: '
+                   'the line to listen to for squeeze. A slower Omni take of that phrase alone would fix it.')
+    c.flags.append(f'c4: C04b goes in at 0.5 s (she has already turned to him; her mouth is parted and still to ~0.9 s) '
+                   f'and out at 7.3 s, before the words Omni invented from 7.56 s. Derek\'s look is C05 5.8-8.0 '
+                   f'({look1 - look0:.1f} s): he turns his head to her, mouth shut.')
 
-    # ---- c5: over the brow (C06, push 100 -> 112%); Derek's "Bloody hell", the AI through Maddie
+    # ---- c5: over the brow (C06, round 1: trolley and blankets painted out; push 100 -> 112%). Derek among the backs
+    # (no close-up was made, so no lip-sync); Maddie answers him, proud of her boss. Her line runs over the cut into
+    # C07: C06 is 8 s and the two lines need ~8.5 s after the building has been seen.
     s5 = t
     b = c.beat('c5', 'Over the brow', s5, act='The building',
-               see='From behind the hundred at the crest, past the old man helped down and the tipped trolley: the '
-                   'AI\'s building in the fold of the downs. They stop.')
-    a = fr(s5 + 1.5)
-    e = c.say('vox-derek', sc.voice('c5-0-derek'), 0.32, 1.40, a, 'c5 line 0 derek: "Bloody hell." (under his breath)',
-              lufs=-19.0)
-    c.line(b, 0, 'derek', a, e - a, sc.text('c5-0-derek'), 'claude')
-    a_ai = fr(e + GAP)
-    e_ai = c.say('vox-ai', ai_take, 0.0, 1.62, a_ai, 'c5 line 1 AI: "I tried to make it nice." (atom -c1, speaker)',
-                 chain=[SPEAKER], lufs=-17.0)
-    c.line(b, 1, 'ai', a_ai, e_ai - a_ai, 'I tried to make it nice.', 'claude')
-    end_c5 = fr(max(s5 + 8.0, e_ai + TAIL))
-    c06 = move(sc.clip('C06'), V / 'C06-t2-push.mp4', 0.0, end_c5 - s5, 1.12, hold=1.5, cx=0.45, cy=0.42)
-    c.pic(c06, 0.0, s5, end_c5, 'c5', source=sc.clip('C06'))
+               see='From behind the hundred at the crest, past the old man on his stick: the AI\'s building in the fold '
+                   'of the downs. They stop.')
+    k = 'c5-0-derek'
+    a = fr(s5 + 1.2)
+    e = c.say('vox-derek', sc.voice(k), 0.22, 3.80, a, 'c5 line 0 derek: "Bloody hell. Look at that building." (awed, quiet)',
+              lufs=-17.5)
+    c.line(b, 0, 'derek', a, e - a, sc.text(k), by(k))
+    k = 'c5-1-maddie'
+    a1 = fr(e + 0.4)
+    e1 = c.say('vox-maddie', sc.voice(k), 0.17, 4.62, a1,
+               'c5 line 1 maddie: "Yeah. He\'s been working on this one for quite a long time."')
+    c.line(b, 1, 'maddie', a1, e1 - a1, sc.text(k), by(k))
+    end_c5 = fr(s5 + 8.0 - 1 / FPS)
+    src06 = sc.clip('C06')
+    c06 = move(src06, V / f'{src06.stem}-push-d{end_c5 - s5:.3f}.mp4', 0.0, end_c5 - s5, 1.12, hold=1.5, cx=0.45,
+               cy=0.42)
+    c.pic(c06, 0.0, s5, end_c5, 'c5', source=src06)
     m['c5'] = (s5, end_c5)
-    m['ai1'] = (a_ai, e_ai)
+    m['c5_lines'] = (a, e1)
     t = c.close(b, end_c5)
-    c.flags.append('Review round 1 (C06): re-animated (12 credits) from C06-f1-a, the round-0 still with the figure '
-                   'lying by the tipped trolley removed (flow_edit_image, 0 credits). The old man now stays on his feet, '
-                   'bent over his stick catching his breath, a hand on his back: tiredness, not a man down. The trolley '
-                   'stays tipped (D14 shows it left behind). The amber seam brightens end to end.')
-    c.flags.append('c5: "Bloody hell." waits 1.5 s into the reveal (my call: the building is seen before anyone names '
-                   'it). C06 holds 1.5 s, then pushes 100 -> 112% eased over the rest, centred on the building.')
+    c.flags.append(f'Round 1 (Kai, bc5/lc5-0/lc5-1): C06 re-animated with the trolley and blankets painted out '
+                   f'(c06r1-t1). "Bloody hell. Look at that building." waits 1.2 s into the reveal; Maddie answers 0.4 s '
+                   f'after. C06 is 8 s, so her line runs {e1 - end_c5:.1f} s over the cut into C07 (the building\'s door): '
+                   '"for quite a long time" lands on the door itself.')
+    c.flags.append('Not made: a Derek close-up for "Bloody hell. Look at that building." He is among the backs in C06, '
+                   'so the line plays without a visible mouth. A close-up would need a new still and a lip-sync clip '
+                   '(~12 credits). Kai to rule.')
 
-    # ---- c6: mind the step (C07); the AI asks them in, the music stops dead on "Mind the step"
+    # ---- c6: mind the step (C07); Maddie asks them in (round 1: her line, not the boss's); the music stops dead on
+    # "Mind the step"
     s6 = t
     b = c.beat('c6', 'Mind the step', s6, act='The building',
                see='At the foot of the black wall the amber seam has opened into a doorway with one low step. Maddie '
-                   'waits, then goes up into the light.')
-    a1 = fr(s6 + LEAD)
-    e1 = c.say('vox-ai', ai_take, 3.74, 4.40, a1, 'c6 line 0 AI: "Come in." (atom -c2, speaker)', chain=[SPEAKER],
-               lufs=-17.0)
-    a2 = fr(e1 + 0.9)
-    e2 = c.say('vox-ai', ai_take, 6.04, 7.20, a2, 'c6 line 0 AI: "Mind the step." (atom -c2, speaker)', chain=[SPEAKER],
-               lufs=-17.0)
-    c.line(b, 0, 'ai', a1, e2 - a1, 'Come in. Mind the step.', 'claude')
-    end_c6 = fr(max(s6 + 8.0, e2 + TAIL))
+                   'waits, asks them in, then goes up into the light.')
+    k = 'c6-0-maddie'
+    a1 = fr(max(s6 + LEAD, e1 + 0.6))
+    e2 = c.say('vox-maddie', sc.voice(k), 0.26, 1.15, a1, 'c6 line 0 maddie: "Come in."', ref=speech(k))
+    a2 = fr(e2 + 0.5)
+    e3 = c.say('vox-maddie', sc.voice(k), 1.30, 2.22, a2, 'c6 line 0 maddie: "Mind the step."', ref=speech(k))
+    c.line(b, 0, 'maddie', a1, e3 - a1, sc.text(k), by(k))
+    end_c6 = fr(max(s6 + 8.0 - 1 / FPS, e3 + TAIL))
     c07 = V / 'C07-glass.mp4'
     if not c07.exists():
         subprocess.run([str(LIPS_PY), '-I', str(HERE / 'glass_window.py'), str(sc.clip('C07')), str(c07), '--rect',
                         '0,185,366,560', '--feather', '24', '--gain', '0.16', '--desat', '0.9'], check=True)
     c.pic(c07, 0.0, s6, end_c6, 'c6', source=sc.clip('C07'))
-    c.flags.append('Review round 1 (C07): Maddie\'s reflection in the black glass left of the doorway read as a '
-                   'second robot inside. A soft power window (glass_window.py) darkens that glass to 16% and '
-                   'desaturates it, beacon hot spot included; the doorway glow and the step are outside the window.')
     m['c6'] = (s6, end_c6)
-    m['ai2'] = (a1, e2)
     m['mind'] = a2
     t = c.close(b, end_c6)
-    c.flags.append('c6: the Suno take leaves 1.85 s between "Come in." and "Mind the step."; the cut tightens it to '
-                   '0.9 s (silence removed, no word touched). C07 plays whole (8 s) so Maddie is seen going up the '
-                   'step at ~5.5 s, after the invitation; her wander left along the wall first still reads as '
-                   'hesitation (Kai to rule).')
-    c.flags.append('The AI speaks through Maddie\'s speaker (voice.py\'s small-speaker filter) with a beacon blip on '
-                   'his words in the sound. The VISUAL beacon pulse on his words (scene.json C06 post) is not done: '
-                   'Omni\'s beacon already pulses in C06/C07, and a drawn pulse on a pushing frame needs a tracked mask. '
-                   'Owed if Kai wants it.')
+    c.flags.append(f'Round 1 (Kai, lc6-0): "Come in. Mind the step." is Maddie\'s now (the boss is silent in scene C). '
+                   f'"Come in." at {a1 - s6:.1f} s into C07, "Mind the step." 0.5 s later (the take\'s own gap was '
+                   '0.25 s), so she goes up the step (~5.5 s) after the invitation.')
+    c.flags.append('C07: Maddie\'s reflection in the black glass left of the doorway is darkened (glass_window.py) so it '
+                   'does not read as a second robot inside.')
     c.total = t
     return c
 
@@ -415,8 +444,8 @@ def audio_c(c):
     en = {k: b['start'] + b['dur'] for k, b in B.items()}
 
     # ---- music: gpom-sh-c-walk (cc128cb2). In on the long walk at a quiet breath of the take, timed so its one
-    # low held cello note (attack ~61.7 s in the take) lands on the reveal; ducked under the seat; stops dead on
-    # "Mind the step".
+    # low held cello note (attack ~61.7 s in the take) lands on the reveal; ducked under the seat and under the lines
+    # at the crest; stops dead on "Mind the step".
     walk = sc.media / 'suno' / 'gpom-sh-c-walk-a-v6-w30-cc128cb2.wav'
     attack = 61.7
     s_in = m['c3'][0]
@@ -425,43 +454,39 @@ def audio_c(c):
     stop = m['mind']
     d = stop - s_in
     x = C.level(C.decode(walk, off, d), rms=-21, peak=-3)
-    la, le = m['c4_lines']
-    ra, re_ = la - s_in, le - s_in
-    x *= C.env(len(x), [(0, 0), (1.5, 1), (ra - 0.5, 1), (ra, 0.4), (ra + 1.5, 0.4), (ra + 1.8, 0.22), (ra + 4.0, 0.22), (ra + 4.4, 0.4), (re_ + 0.3, 0.4), (re_ + 1.2, 1),
-                        (d - 0.03, 1), (d, 0)])
+    ra, re_ = (v - s_in for v in m['c4_lines'])
+    ca, ce = (v - s_in for v in m['c5_lines'])
+    x *= C.env(len(x), [(0, 0), (1.5, 1), (ra - 0.5, 1), (ra, 0.25), (re_ + 0.3, 0.25), (re_ + 1.2, 1),
+                        (ca - 0.4, 1), (ca, 0.5), (ce + 0.2, 0.5), (ce + 0.8, 1), (d - 0.03, 1), (d, 0)])
     mx.add('mus-c-walk', x, s_in, walk, 'C-walk: lone violin and piano, the held cello note on the reveal')
-    c.flags.append(f'Music: C-walk enters on the long walk (c3), not on C02 as music.md planned, at {off:.1f} s into the '
-                   'take (review round 1 shortened the walk, so it now comes in mid-phrase under a 1.5 s fade), timed so the '
-                   f'take\'s held low cello note lands on the reveal with no edit inside the music. The take\'s first {off:.0f} s are not used. C01-C02 '
-                   'play on wind, birds-free (no birdsong in the library) and the crowd. Stops dead on "Mind the step". '
-                   '(Kai to rule.)')
+    c.flags.append(f'Music unchanged (Kai: may change once it is in Premiere): C-walk enters on the long walk at '
+                   f'{off:.1f} s into the take, its held low cello note on the reveal, no edit inside the music; ducked '
+                   'to 0.25 under all four seat lines (the seat scene is longer now) and to 0.5 under Derek and Maddie at '
+                   'the crest; stops dead on "Mind the step". C01-C02 play on wind and the crowd.')
 
     # ---- sfx
     wind = C3.wind_file()
     fx('sfx-wind', wind, 0, total, src_in=5, rms=-34, fi=0.8, fo=1.0, tile=True, what='wind on the downs (ffmpeg)')
-    fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', 0.3, m['c02'][1] + 1.2 - 0.3, rms=-38, fi=0.6, fo=1.4,
-       what='the hundred coming out, shuffling (crossfades into the chalk loop over the cut)')
+    fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', 0.3, m['c01'][1] - 0.3, src_in=40, rms=-47, fi=1.0, fo=0.6,
+       what='the hundred in the bunker, shifting their weight; nobody walks')
+    fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', m['c01b'][0], m['c02'][1] + 1.2 - m['c01b'][0], rms=-38,
+       fi=0.8, fo=1.4, what='the hundred coming out, shuffling (crossfades into the chalk loop over the cut)')
     fx('sfx-crowd', SFX / 'fs653920-crowd-small-walla.mp3', m['c02'][0], m['c02'][1] - m['c02'][0], rms=-44, fi=1.0,
        fo=1.0, what='murmur as they blink at the sky')
     fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', st['c3'] - 1.2, en['c4'] - st['c3'] + 1.2, src_in=8,
        rms=-37, fi=1.4, fo=1.0, tile=True, what='a hundred pairs of feet on the chalk (held under the walk)')
     fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', st['c5'], 3.0, src_in=20, rms=-42, fi=0.2, fo=1.5,
        what='they stop')
-    fx('sfx-maddie', SFX / 'fs701647-bunting-fabric-flap.mp3', 0.6, 2.4, rms=-34, fi=0.2, fo=0.6,
-       what='the bunting, straightened')
     fx('sfx-maddie', SFX / 'fs701647-bunting-fabric-flap.mp3', m['c02'][0], m['c02'][1] - m['c02'][0], src_in=4,
        rms=-38, fi=0.4, fo=0.8, what='bunting in the wind')
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-happy.wav', m['ooh'] + 0.08, rms=-32, what='beep: happy (after "Ta")')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-happy.wav', m['joke'] + 0.15, rms=-32,
+       what='beep: happy (after the radiation joke)')
     C3.loop_wheels(fx, 'sfx-maddie', m['c02'][0] + 0.2, m['c02'][1] - m['c02'][0] - 0.2, rms=-33, fi=0.3, fo=1.2,
                    what='her wheels on the grass (loop)')
     C3.loop_wheels(fx, 'sfx-maddie', st['c3'], en['c3'] - st['c3'], rms=-32, fi=0.5, fo=0.5,
                    what='her wheels on the chalk track (loop)')
     for k in np.arange(st['c3'] + 1.0, en['c3'] - 1.0, 3.0):
         fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-38, what='beacon blip')
-    for key in ('ai1', 'ai2'):
-        a, e = m[key]
-        for k in np.arange(a, e, 0.9):
-            fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon on his words')
     # c6: the doorway hums; Maddie bumps up the step at ~5.5 s of C07
     s6 = st['c6']
     hum = tone('doorway-hum', 'sine=f=55:r=48000[a];sine=f=110:r=48000[b];anoisesrc=c=pink:r=48000:a=0.05,'
@@ -475,9 +500,9 @@ def audio_c(c):
     fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', s6 + 4.9, rms=-34, what='servo: she turns back')
     fx('sfx-maddie', MS / 'derived-maddie-wheels-stop.wav', s6 + 6.1, rms=-32, what='bump: up the step')
     fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-boop-ok.wav', s6 + 6.6, rms=-36, what='beep: ok, in she goes')
-    c.flags.append('Sound I made up for scene C: a hundred feet on chalk (the crowd-shuffle loop), the doorway hum '
-                   '(55/110 Hz + pink noise, ffmpeg), the happy beep after "Ta", the bump and boop as Maddie goes in. '
-                   'No birdsong or skylarks: the library has none.')
+    c.flags.append('Sound I made up for scene C: the hundred shifting their weight in the bunker (quiet), a hundred feet '
+                   'on chalk (the crowd-shuffle loop), the doorway hum (55/110 Hz + pink noise, ffmpeg), a happy beep '
+                   'after the radiation joke, the bump and boop as Maddie goes in. No birdsong: the library has none.')
     return mx
 
 

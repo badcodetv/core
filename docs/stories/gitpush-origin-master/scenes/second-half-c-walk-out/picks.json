@@ -4,7 +4,7 @@
   "flow_project": "c27e8f5f-2e2a-4382-a673-3c8afb216880 (stills, 'Oct 21 - 23:01')",
   "picks": {
     "C01": {
-      "file": "C01-r2-a.jpg",
+      "file": "c01r1-a.jpg",
       "options": [
         "C01-r1-a.jpg",
         "C01-r1-b.jpg",
@@ -13,8 +13,24 @@
         "C01-r3-a.jpg",
         "C01-r3-b.jpg"
       ],
-      "alt": "C01-r3-a.jpg",
-      "why": "The only option whose face is big enough to lip-sync (about a third of frame height; lip-sync-dub: a standing wide at ~8% is unreadable). Her hand is ON the torn bunting, so the act and the line are one shot. Flaw: the bunting is strung across a bar above the robot's lid rather than hanging over its front wheels, and the robot is only a lid and beacon at frame bottom. Alt r3-a has the robot and its bunting right and the hand on the lid, but her face is ~12% of frame. Kai to rule."
+      "alt": "c01r2-b.jpg",
+      "why": "The only option whose face is big enough to lip-sync (about a third of frame height; lip-sync-dub: a standing wide at ~8% is unreadable). Her hand is ON the torn bunting, so the act and the line are one shot. Flaw: the bunting is strung across a bar above the robot's lid rather than hanging over its front wheels, and the robot is only a lid and beacon at frame bottom. Alt r3-a has the robot and its bunting right and the hand on the lid, but her face is ~12% of frame. Kai to rule.",
+      "superseded_round1_kai": "C01-r2-a.jpg",
+      "options_round1_kai": [
+        "c01r1-a.jpg",
+        "c01r1-b.jpg",
+        "c01r2-a.jpg",
+        "c01r2-b.jpg"
+      ],
+      "why_round1_kai": "Kai round 1 (bc1): the new shot from inside the bunker. r1-a: over the backs and half-turned wary faces, the old lady lit by the doorway on the right, silent, and Maddie alone outside the open doors facing in, big enough for her beacon to read when she speaks; green hillside beyond (the S6-c downs). r1-b put a concrete wall outside the doors. r2-a/b are the deep-tunnel version, many more faces (r2-b is the strongest still: the lady arms folded at the front), but Maddie is a speck at the far end and the crowd is lined up facing the lens rather than looking out. r2-b could not be animated anyway: Flow refused the upload (UPLOAD_REFUSED, no credits), most likely the small child in it. Kai to rule if he prefers the scale of r2-b as a still with a Premiere drift."
+    },
+    "C01b": {
+      "file": "c01br1-b.jpg",
+      "options": [
+        "c01br1-a.jpg",
+        "c01br1-b.jpg"
+      ],
+      "why": "Kai round 1 (bc1): the first two edge out. b: the bunker face and doors match S6-c/C02, the pair (a man shading his eyes, a woman) step onto the concrete with room to walk, more faces in the dark behind, Maddie in the left foreground with her bunting low on her wheels. a is closer and the faces read better, but the robot fills a third of the frame and the doorway is cropped."
     },
     "C02": {
       "file": "C02-r2-a.jpg",
@@ -61,7 +77,7 @@
       "why": "The reverse of C04-r2-a: Derek in the same green jumper (no jacket), looking straight ahead, Sandra's waxed coat and Aran jumper soft at the right edge. r1-a/b have the bigger face but a leather/donkey jacket that C04 does not show."
     },
     "C06": {
-      "file": "C06-f1-a.jpg",
+      "file": "c06r1-a.jpg",
       "options": [
         "C06-r1-a.jpg",
         "C06-r1-b.jpg",
@@ -72,7 +88,13 @@
       ],
       "why": "The fixed building design exactly (long, low black slab, one amber seam its whole length, in a fold of the downs, the only made thing), seen past the cost: the old man being helped up on his stick, a trolley of blankets tipped in the mud with someone slumped beside it, the hundred stopped on the crest, Maddie with her bunting at the front. The monument is never alone in frame. r1-a/b are close behind backs of heads and make the building a strip; r2-b is fine but smaller. C06-r2-a is not an option: it is the bot reference upload, harvested as a stray third candidate.",
       "superseded": "C06-r2-c.jpg (round 0)",
-      "why_review1": "Review round 1: C06-r2-c with the figure lying by the tipped trolley removed (flow_edit_image). f1-a leaves spilled blankets; f1-b leaves a pale heap that could read as a body."
+      "why_review1": "Review round 1: C06-r2-c with the figure lying by the tipped trolley removed (flow_edit_image). f1-a leaves spilled blankets; f1-b leaves a pale heap that could read as a body.",
+      "superseded_round1_kai": "C06-f1-a.jpg",
+      "options_round1_kai": [
+        "c06r1-a.jpg",
+        "c06r1-b.jpg"
+      ],
+      "why_round1_kai": "Kai round 1 (bc5): C06-f1-a with the tipped trolley and the spilled blankets removed (flow_edit_image, free). a and b are near-identical and both clean; a kept. The old man on his stick and the younger man steadying him stay."
     },
     "C07": {
       "file": "C07-r2-b.jpg",
@@ -85,5 +107,6 @@
       "why": "The seam runs the whole length of a long wall and parts into one narrow doorway with one pale step, Maddie small at the foot of it with her bunting, the hundred waiting behind: the invitation and the step in one frame. r1-a/b make the building a tall tower (breaks the one design); r2-a cuts the wall short. Weak point: at this distance the wall reads taller than BL1's slab. Kai to rule."
     }
   },
-  "flow_project_review1": "6bccf970-4250-4e62-9e06-d469546cde24 (stills, 'Oct 22 - 02:01')"
+  "flow_project_review1": "6bccf970-4250-4e62-9e06-d469546cde24 (stills, 'Oct 22 - 02:01')",
+  "flow_project_round1_kai": "aedd38f5-d58f-44d1-917c-bbdd43f288b4 (stills, 'Oct 22 - 19:02')"
 }

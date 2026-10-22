@@ -1,9 +1,23 @@
 {
- "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+ "about": "Round 1 of scene C is DONE (Kai's notes, 22 Oct): the cut on this page is the rebuild. Kai's round-1 notes, Claude's replies and the answers are kept below. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
  "round": 1,
  "plan": [
   {
-   "h": "Round 1 on scene C: what changes",
+   "h": "Round 1 done (22 Oct): what changed",
+   "items": [
+    "DONE. The cut is rebuilt with every round-1 note: 64.6 s (was 45.5 s). The boss does not speak in scene C; it is Maddie's scene.",
+    "BEAT 1: the new shot from inside the bunker past the wary faces (the old lady visible, silent; she turns her head away at ~7 s). Nobody moves for 1.4 s, then Maddie: 'Go on. I promise you'll be okay.' (beat) 'You've got my word.'",
+    "BEAT 2: the new shot of the first two edging out, then the hundred filing out. Maddie: 'Careful now, humans.' (beat) 'I'm fairly sure there's no radiation round here.' A happy beep after the joke.",
+    "BEAT 3: the long walk, unchanged. The music is unchanged too (you said it may change once it's in Premiere).",
+    "BEAT 4: four shots now: Sandra's seat line, Derek's reply, Sandra's alien punchline, then back to Derek for his flat look, no reply. All lip-synced phrase by phrase on the mouth. Listen to 'they'll know it was you': her mouth gave it 0.8 s for 1.3 s of voice, so it is at the 1.3x speed cap.",
+    "BEAT 5: the crest re-animated with the trolley and blankets gone. Derek: 'Bloody hell. Look at that building.' Maddie: 'Yeah. He's been working on this one for quite a long time.' (her line runs ~1.6 s over the cut onto the building's door).",
+    "BEAT 6: Maddie: 'Come in. Mind the step.' Same shot; she goes up the step after the invitation. The music stops dead on 'Mind the step'.",
+    "OPEN: no Derek close-up was made for 'Look at that building' (he is among the backs, so no visible mouth). A close-up is a new still + one lip-sync clip (~12 credits) if you want one.",
+    "OPEN: the deep-tunnel beat-1 still (c01r2-b.jpg: more of the hundred, the lady arms folded at the front) is the stronger picture, but Flow refused to animate it (probably the child in it). It could go in as a still with a slow camera drift."
+   ]
+  },
+  {
+   "h": "Round 1 on scene C: the plan (now done)",
    "items": [
     "BEAT 1 (off the step): new coaxing scene. Shot from inside the bunker past the hundred's wary faces to Maddie on the step in daylight. Maddie: 'Go on. I promise you'll be okay.' / 'You've got my word.' No lady line, no pat. Then the first ones edge out. New stills (free) + 1-2 clips.",
     "BEAT 2 (into daylight): Maddie: 'Careful now, humans. I'm fairly sure there's no radiation round here.' replaces 'Ooh. Ta.'",

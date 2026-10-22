@@ -1,5 +1,5 @@
 {
- "spent": 684,
+ "spent": 764,
  "jobs": [
   {
    "key": "C-C06",
@@ -464,6 +464,83 @@
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix2/E03b-t1-last.jpg",
    "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03bx-t1.mp4",
    "at": "2026-10-22T04:26:13.046Z"
+  },
+  {
+   "key": "C-c06r1-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/c06r1-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c06r1-t1.mp4",
+   "at": "2026-10-22T18:10:00Z",
+   "mediaId": "66c37119-ea7d-43d8-af36-19c3643f757a",
+   "flow_project": "fbe11850-130c-489c-b5ef-346307f67de0",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
+  },
+  {
+   "key": "C-c01r1-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/c01r1-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c01r1-t1.mp4",
+   "at": "2026-10-22T18:12:00Z",
+   "mediaId": "f3740a46-ddd8-4c69-b8cd-77d229ab2850",
+   "flow_project": "78425efe-e8c8-4881-a9a3-3082d0471d2a",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
+  },
+  {
+   "key": "C-c01r1-t2",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/c01r1-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c01r1-t2.mp4",
+   "at": "2026-10-22T18:14:00Z",
+   "mediaId": "9cbd84b9-d42f-44b3-b6c7-a2da934c94d9",
+   "flow_project": "78425efe-e8c8-4881-a9a3-3082d0471d2a",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
+  },
+  {
+   "key": "C-c01br1-t1",
+   "scene": "C",
+   "cost": 10,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/c01br1-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c01br1-t1.mp4",
+   "at": "2026-10-22T18:16:00Z",
+   "mediaId": "df180385-e118-44ce-a115-c0a7a114c8de",
+   "flow_project": "f1521855-00ac-4cb7-9adc-5ee4bceb4bd0",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
+  },
+  {
+   "key": "C-c04r1-seat-t1",
+   "scene": "C",
+   "cost": 10,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/C04-r2-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c04r1-seat-t1.mp4",
+   "at": "2026-10-22T18:17:00Z",
+   "mediaId": "49a4f8a9-6951-44a3-b5e5-bd0e2c0f7652",
+   "flow_project": "0895002e-bf0e-4621-899f-b830da321895",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
+  },
+  {
+   "key": "C-c04r1-aliens-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/C04-r2-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c04r1-aliens-t1.mp4",
+   "at": "2026-10-22T18:19:00Z",
+   "mediaId": "28fcaf1c-6cd6-47ed-a4cf-7a2684dcbf17",
+   "flow_project": "bf228e1b-0672-4bab-9c90-545035556455",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
+  },
+  {
+   "key": "C-c05r1-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/C05-r2-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c05r1-t1.mp4",
+   "at": "2026-10-22T18:21:00Z",
+   "mediaId": "8d3ba05d-21f4-4230-89b4-92547fc1466b",
+   "flow_project": "11386d32-9b9f-47cf-91eb-fe0c17f9df46",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
   }
  ],
  "keys": [
