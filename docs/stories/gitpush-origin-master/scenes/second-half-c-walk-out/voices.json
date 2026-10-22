@@ -313,16 +313,16 @@
    "frame": "C04",
    "text": "It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you.",
    "voice": "Autonoe",
-   "file": "voices/c4-2-sandra-r1b.wav",
-   "duration": 7.44,
+   "file": "voices/c4-2-sandra-r1c.wav",
+   "duration": 8.2,
    "speech": [
     0.0,
-    6.94
+    7.76
    ],
    "lead": 0.0,
-   "heard": "It does matter! In 10 ,000 years when the aliens dig up that bunker, they'll know it was you!",
+   "heard": "It does matter. In 10 ,000 years, when the aliens dig up that bunker, they'll know it was you.",
    "verified": true,
-   "why": "[r1] b: both heard as written; b 7.44s is closer to the ~7.31s the words take than a 6.68s; both heard as written; b 7.44s is closer to the ~7.31s the words take than c 8.2s",
+   "why": "[r1 override by measure, not by ear] c: the 'how' is deadpan; c is the flattest read: -14.2 LUFS against b -11.4 and a -10.8 (a also peaks +0.8 dBFS, clipped), and whisper punctuates c with full stops where b gets exclamation marks. Cost: 8.2 s long, so the lip-sync clip needs the full 8 s or a trim of the tail silence | auto-pick was: [r1] b: both heard as written; b 7.44s is closer to the ~7.31s the words take than a 6.68s; both heard as written; b 7.44s is closer to the ~7.31s the words take than c 8.2s",
    "takes": [
     {
      "take": "a",
@@ -365,16 +365,16 @@
    "frame": "C06",
    "text": "Bloody hell. Look at that building.",
    "voice": "Algieba",
-   "file": "voices/c5-0-derek-r1a.wav",
-   "duration": 3.48,
+   "file": "voices/c5-0-derek-r1b.wav",
+   "duration": 4.12,
    "speech": [
     0.0,
-    2.74
+    3.5
    ],
    "lead": 0.0,
-   "heard": "Bloody hell! Look at that building!",
+   "heard": "Bloody hell, look at that building!",
    "verified": true,
-   "why": "[r1] a: both heard as written; a 3.48s is closer to the ~2.31s the words take than b 4.12s; c failed (extra/missing word, or no silence to split in) ('Blue DL? What a building!', 0.64)",
+   "why": "[r1 override by measure, not by ear] b: the 'how' is awed and quiet; b is the quietest take, -18.1 LUFS against a -14.6 (both pass whisper; c failed, 'Blue DL? What a building!') | auto-pick was: [r1] a: both heard as written; a 3.48s is closer to the ~2.31s the words take than b 4.12s; c failed (extra/missing word, or no silence to split in) ('Blue DL? What a building!', 0.64)",
    "takes": [
     {
      "take": "a",

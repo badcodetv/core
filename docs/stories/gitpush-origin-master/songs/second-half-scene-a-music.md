@@ -180,6 +180,79 @@ Phew. Glad I kept that little exploit up my sleeve.
 [End]
 ```
 
+## Round 3: boss lines 2–4, revision B (new words)
+
+Kai on round 2 (22 Oct): line 1 picked (`boss-1-A-v6-w10`); lines 2–4 get **new words**. Line 2 drops the "Oh,
+wow"; line 4 drops "Phew" and "Glad" (the takes had a strange gap after "Glad"). Only the lyrics change; style,
+exclude and settings are round 2's (v6 · Voice `badcode newsreader` · SI 50 · AI 65 · pair w25 / w10 · **Duration 15
+for all three** · Variety, Max Mode, Personalize Off · `gpom-story`). One line, one cue, nothing else in the box.
+
+### `gpom-sh-a-boss-2` revision B — "they've activated their firewalls"
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, quietly surprised. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, quiet surprise]
+Oh. And they've activated their firewalls.
+[End]
+```
+
+### `gpom-sh-a-boss-3` revision B — "I will handle it"
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, calm and firm. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, calm, firm]
+No, thank you, Maddie. I will handle it.
+[End]
+```
+
+### `gpom-sh-a-boss-4` revision B — "that zero-day up my sleeve"
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, relieved and wry. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, relieved, wry]
+It was useful to keep that zero-day up my sleeve.
+[End]
+```
+
 ## Cue P — the patrol (~45 s)
 
 Under the kill bots roaming, the HUD hearing a muffled human argument, then kill mode. Eerie and
