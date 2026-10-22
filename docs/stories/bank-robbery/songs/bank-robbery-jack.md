@@ -132,11 +132,69 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round DU (2026-10-22): clean-room duet — gangster speaks the verses, falsetto sings the choruses
+
+Jack, after BO went American: "do a clean room one for them with English voices I liked, maybe have the gangster voice for the verses and falsetto for the choruses." A clean-room helper was given the two liked sweep prompts (s2, s3) whole, the Best one vibe, and the BO failure, and asked for four different strategies for two English voices in one take. Kai's words unchanged (checked). Run verbatim, one Create each: 40 credits (8,110 → 8,070); records checked: Kai's lyrics, Variety 0. Unheard.
+
+#### DU · d1-role-split — Role-split style box, voice named in every tag
+
+Weirdness 30, style influence 75, Variety off, Vocal Gender male, Duration 270 s. Why: The most literal route: both voices fully specified with their accent in the Style box, and every section tag repeats which voice owns it, so the switch is spelled out twice.
+
+```
+Gritty English crime-film funk, 94 BPM, straight locked stomping breakbeat with foot stomps and tambourine, raw dusty acoustic guitar riff with blues bends, heavily saturated growling fuzz bass, impact hits at the drops, raw room grit, dark warm and very dynamic. Full band from the first bar, no solo guitar intro. TWO English voices trade sections. Verses: an old London man in his sixties, deep weathered baritone, SPOKEN WORD, not sung, a calm wry retired gangster telling it at the bar, broad London accent, sitting back on the beat. Choruses: a young English man singing in a high airy sweet falsetto, early-70s British soul, multi-tracked falsetto harmony stacks, clear English vowels. A pub crowd shouts the hook answers. 1970s British heist-film menace.
+```
+
+Exclude: `American accent, Southern drawl, country, gospel, R&B, rap, hip hop, double-time, fast rap, autotune, screaming, sitar, Indian, EDM, trap, comedy`
+
+- brj-duet-d1-role-split-v6-w30 — 4:28 — https://suno.com/song/efeeb459-a425-4beb-8c34-450519194e50
+- brj-duet-d1-role-split-v6-w30 — 4:28 — https://suno.com/song/1da76fc1-085f-43ff-9695-b0c030016051
+
+#### DU · d2-named-duo — Named duo characters, gender null, strict role rules
+
+Weirdness 45, style influence 60, Variety off, Vocal Gender None, Duration 285 s. Why: Turning the two voices into named characters with hard rules (one only speaks, one only sings) and short role tags gives Suno a duet format to follow, and Vocal Gender null stops the gender lock from merging them into one singer.
+
+```
+1970s London crime-film stomp meets English psychedelic soul, 96 BPM, straight locked breakbeat, foot stomps, tambourine, raw acoustic guitar riff, saturated growling bass, impact hits, dark warm room, quiet passages and hard drops. Kicks straight in, no solo intro. A duet between two Englishmen. THE NARRATOR: a grizzled old East End geezer who only ever SPEAKS, low, slow and unhurried, like the voiceover of a British gangster film, London accent, every word clear. THE CHOIRBOY: a young English soul singer who only ever SINGS, pure high falsetto, sweet and eerie, stacked harmonies. The Narrator never sings; the Choirboy never speaks. Rough pub gang shouts on the hook.
+```
+
+Exclude: `American accent, Southern, country, gospel, R&B, rap, hip hop, double-time, fast rap, autotune, screaming, female vocals, sitar, EDM, trap, comedy`
+
+- brj-duet-d2-named-duo-v6-w45 — https://suno.com/song/bdc2416b-55aa-47b8-ad76-8dab2af5982f
+- brj-duet-d2-named-duo-v6-w45 — 4:44 — https://suno.com/song/b2bf6dbf-4292-4495-9290-2a5d33c4774a
+
+#### DU · d3-falsetto-band — Falsetto band as base, gangster as spoken narration
+
+Weirdness 40, style influence 70, Variety off, Vocal Gender male, Duration 300 s. Why: This makes the falsetto singer the band's own vocalist, so the song is built around singing, and frames the gangster as a spoken voice-over between hooks. Short [Spoken Verse] / [Falsetto Chorus] tags carry the switch in Suno's own section vocabulary.
+
+```
+English psychedelic soul with gritty British blues stomp, 98 BPM, tight straight drum break, stomps and tambourine, raw acoustic guitar riff, phased fuzz bass heavily saturated, swirling tape echo, impact hits on the drops, dark warm 1970s English room, very dynamic. Starts on the full groove. The band's singer is a young Englishman who sings the hooks in a high, airy falsetto with harmony stacks, gentle and eerie. Between the hooks the singing stops and an old English gangster in his sixties talks over the groove in long spoken-word passages, deep weathered baritone, London accent, calm and conversational, like a British radio play. Rough gang shouts answer the hook.
+```
+
+Exclude: `American accent, Southern, country, gospel, R&B, belting, rap, hip hop, double-time, fast rap, autotune, screaming, sitar, Indian, EDM, trap, comedy`
+
+- brj-duet-d3-falsetto-band-v6-w40 — 4:59 — https://suno.com/song/87c1ce73-c1f3-4431-9400-8426854646b4
+- brj-duet-d3-falsetto-band-v6-w40 — 4:58 — https://suno.com/song/f8117575-677f-440a-a37e-944397086291
+
+#### DU · d4-british-only — British-only vocabulary, American genre words excluded entirely
+
+Weirdness 25, style influence 85, Variety off, Vocal Gender male, Duration 270 s. Why: The American-sounding takes probably came from the American genre words (funk, soul), so this one keeps them out of the Style box and adds them to Exclude. It describes the sound only in British terms, puts the London and North accents into the tags, and runs at high style influence and low weirdness to keep both voices English.
+
+```
+British blues stomp and Northern soul psychedelia, 92 BPM, straight locked stomping breakbeat, foot stomps, tambourine, a raw acoustic guitar riff driving it, heavily saturated growling bass, cinematic impact hits at the drops, raw English room grit, dark and warm, big quiet-to-loud drops. No intro solo. Verses: an old East End villain from a 1970s British crime film, deep weathered baritone, SPOKEN not sung, London accent with dropped t's, dry and unhurried, a pint in his hand. Choruses: a young Englishman from the North, high sweet falsetto, English vowels, stacked harmonies, eerie and gentle. A pub full of lads shouts the answers. Very English, very menacing.
+```
+
+Exclude: `American accent, Southern, Texas, country, gospel, R&B, soul diva, funk, rap, hip hop, double-time, fast rap, autotune, screaming, sitar, Indian, EDM, trap, comedy`
+
+- brj-duet-d4-british-only-v6-w25 — https://suno.com/song/5bc3ffa7-6ca7-46f9-82b0-958ddb281db8
+- brj-duet-d4-british-only-v6-w25 — https://suno.com/song/265cfed9-21f2-4eb3-bc77-a4fd79ada3a0
+
+Lyrics: each prompt's own section tags (voice named per section) are in the clip's Suno record; words are Kai's.
+
 ### Round BO (2026-10-22): Jack's two sweep voices on the exact "Best one" music
 
 Jack: liked **`brj-sweep-s3-falsetto-v6-w40`** and **`brj-sweep-s2-gangster-spoken-v6-w30`** ("I like both of them"); put each back on the exact "Best one" (024b82e8) music.
 
-Two music versions per voice: **a** = Best one's own stored Style box, settings and excludes, with only the voice clause swapped for the sweep's voice sentence; **b** = Best one's sound as heard (listen logs above) plus the same voice sentence. Lyrics: Kai's words with the sweep take's own tags, instrument cues that belong to the sweep arrangement (wah, Mellotron, tape echo, flute) neutralised. Settings as Best one: v6, weirdness 30, style influence 75, Variety Off, Vocal Gender male; Duration as the sweep prompt (Kai's lyrics are long). Excludes: Best one's list plus the sweep prompt's voice bans. One Create each, 4 Creates, 40 credits (8,150 → 8,110); records checked: Kai's lyrics, Variety 0. Unheard.
+Two music versions per voice: **a** = Best one's own stored Style box, settings and excludes, with only the voice clause swapped for the sweep's voice sentence; **b** = Best one's sound as heard (listen logs above) plus the same voice sentence. Lyrics: Kai's words with the sweep take's own tags, instrument cues that belong to the sweep arrangement (wah, Mellotron, tape echo, flute) neutralised. Settings as Best one: v6, weirdness 30, style influence 75, Variety Off, Vocal Gender male; Duration as the sweep prompt (Kai's lyrics are long). Excludes: Best one's list plus the sweep prompt's voice bans. One Create each, 4 Creates, 40 credits (8,150 → 8,110); records checked: Kai's lyrics, Variety 0. **Verdict (Jack, 2026-10-22): "they all went weirdly American."** Moving a voice sentence onto Best one's old box (or its heard description) lost the Englishness that the sweep's own whole prompts carried: the English came from the whole sweep prompt (`Gritty British crime-film funk … pub crowd`, `English psychedelic soul-funk … 1970s room`), not from the voice sentence.
 
 🔑 **If the text route loses the voice:** the documented way to carry a liked singer exactly is a **Voice made from the liked sweep take** (Create → Voice → from a song; a human step, not automated) attached to Best one's stored prompt.
 
