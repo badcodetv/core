@@ -31,7 +31,11 @@ none of this) fixed it on the first try (`docs/suno-gpt/suno-voices.md` §2e–2
   women; **excludes aimed at this voice's opposite** (`belting, falsetto` for a deadpan drawler), never
   a carried-over list; **per-section delivery cues** in the lyrics (`[Verse 1: lazy drawl]`);
   **settings chosen per prompt** (weirdness, style influence, Variety, Duration all vary). Every
-  version must differ in voice, not just in adjectives.
+  version must differ in voice, not just in adjectives. 🔴 **An accent is not a different singer.**
+  Bank Robbery Round VB: six prompts, one identical music paragraph and one identical delivery
+  ("half-sung half-rapped on the beat"), only the region changed, and Jack heard the same voice
+  six times. Vary the **delivery category** (crooned, chanted, spoken, falsetto, folk-sung,
+  music-hall patter…) and the register in each prompt, and let the music wording vary too.
 - **REFINE** (a liked take exists): start from that take's **sound, not its box**. Listen to it first
   (`suno.mts record <songId>` then `listen_describe`): Bank Robbery's liked "psych folk funk, sitar,
   tin whistle" take was really acoustic flamenco guitar over boom-bap. Keep its settings; change one

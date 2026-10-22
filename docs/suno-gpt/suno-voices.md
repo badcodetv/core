@@ -652,6 +652,14 @@ made every prompt alike, and so every voice alike. Rules that were meant to fix 
 constants. Treat §2–§2d as **things that happened once**, not laws, and do not stack them by default
 when exploring.
 
+🔴 **Follow-up, same day (Round VB): the clean room failed when the delivery was shared.** Six
+clean-room prompts with one identical music paragraph and one identical delivery (`half-sung
+half-rapped on the beat, narrow melody, dry and upfront`), differing only in region, age and
+timbre adjectives: Jack, *"the voices are the same again."* In CR the deliveries were different
+*categories* (bored drawl, crooned villain baritone, slow smoky contralto, choirgirl soprano). So it
+was never the repo as such: it is **sameness of the strongest words**. Whatever is identical across
+prompts, whether a house rule or a helper's shared paragraph, wins.
+
 **How to apply:** exploring a new voice or sound → write the prompt fresh, the clean-room way (full
 Lead vocal sentence, set the gender, excludes aimed at this voice, section cues, settings chosen per
 prompt). Only bring house rules in once a take is liked and is being refined, one rule at a time,

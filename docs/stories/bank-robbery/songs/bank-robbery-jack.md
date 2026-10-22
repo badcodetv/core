@@ -132,6 +132,116 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round SW (2026-10-22): clean-room sweep — eight English performers, the psychedelic funk vibe of "Best one"
+
+Jack, after VB: "the voices are the same again, do a clean room sweep of varied English voices with the psychedelic funk vibe from this (024b82e8)." A fresh clean-room helper (no repo, memory or web) was told why VB failed (one shared music paragraph, one shared delivery) and asked for eight singers who differ as **performers**: delivery category, register, gender, age. The music wording varies per prompt within the vibe. Kai's words unchanged (checked word by word); every tag, setting and exclude is the helper's own, run verbatim. One Create each, 8 Creates, 80 credits (8,230 → 8,150); records checked: Kai's lyrics, Variety 0. `screaming` banned in all. Unheard.
+
+#### SW · s1-soul-belt — Northern soul woman, controlled gospel belt
+
+Weirdness 35, style influence 70, Variety off, Vocal Gender female, Duration 270 s. Why: The only controlled female soul belt with long held gospel notes, a melodic chest-voice category none of the others use.
+
+```
+British psychedelic funk, 96 BPM, straight head-nodding breakbeat with foot stomps and tambourine, raw fingerpicked acoustic blues guitar riff, fuzzy saturated growling bass, Hammond organ stabs, dark warm room. Lead: a powerful Northern English soul woman in her thirties, rich alto, belted but controlled, gospel-trained, holding long notes and riding the groove with soulful melodic phrasing, never shouting. Gang call-and-response backing shouts on the hooks, hard drops after quiet guitar-only passages, gritty heist-film tension.
+```
+
+Exclude: `rap, hip hop, male vocals, double-time, fast rap, autotune, screaming, EDM, trap, smooth R&B, pop ballad, sitar, comedy`
+
+- brj-sweep-s1-soul-belt-v6-w35 — 4:29 — https://suno.com/song/57286a6f-26b8-4f96-8d81-22c12fc61bc8
+- brj-sweep-s1-soul-belt-v6-w35 — 4:29 — https://suno.com/song/45577b7a-1491-4e44-ad58-7e5b887ec01d
+
+#### SW · s2-gangster-spoken — Old gangster baritone, unhurried spoken narration
+
+Weirdness 30, style influence 75, Variety off, Vocal Gender male, Duration 240 s. Why: Pure spoken narration from an old, deep voice removes melody and rap cadence entirely, so it cannot collapse into the half-sung default.
+
+```
+Gritty British crime-film funk, 92 BPM, locked breakbeat, stomps and shaker, dusty acoustic guitar riff with blues bends, distorted growling bass, cinematic impact hits, dark warm mix with quiet passages and hard drops. Lead: an old English man in his sixties, deep weathered baritone, SPOKEN WORD, not sung: a calm, unhurried storyteller narrating like a retired gangster at the bar, conversational and wry, every word clear, sitting back on the beat. A pub crowd shouts the hooks back at him. Psychedelic reverb tails, heist-movie menace.
+```
+
+Exclude: `singing, melodic vocals, rap, hip hop, double-time, fast rap, autotune, screaming, young voice, falsetto, EDM, trap, comedy`
+
+- brj-sweep-s2-gangster-spoken-v6-w30 — 3:59 — https://suno.com/song/6fedecc7-beb6-4a60-aa48-b4ed80df2ef5
+- brj-sweep-s2-gangster-spoken-v6-w30 — 3:59 — https://suno.com/song/aeb9a005-f875-46d3-a2d9-851f1d12ca82
+
+#### SW · s3-falsetto — Young man, airy psych-soul falsetto throughout
+
+Weirdness 40, style influence 70, Variety off, Vocal Gender male, Duration 300 s. Why: A male head-voice falsetto register with stacked harmonies is physically a different instrument from any chest-voice singer in the set.
+
+```
+English psychedelic soul-funk, 98 BPM, tight straight drum break with tambourine and stomps, fingerpicked acoustic guitar riff with wah, phased fuzz bass, Mellotron flutes, swirling tape echo, dark warm 1970s room. Lead: a young English man singing entirely in a high, airy, sweet falsetto, early-70s soul delivery, smooth legato lines floating over the groove, multi-tracked falsetto harmony stacks on the chorus, gentle and eerie rather than aggressive. Rough gang shouts punch the hook answers. Big dynamic drops.
+```
+
+Exclude: `rap, hip hop, chest voice, baritone, gravelly, raspy, double-time, fast rap, autotune, screaming, EDM, trap, comedy`
+
+- brj-sweep-s3-falsetto-v6-w40 — 4:59 — https://suno.com/song/925fb3e0-569a-48bc-9229-2049b43fd31a
+- brj-sweep-s3-falsetto-v6-w40 — 4:58 — https://suno.com/song/a8042d53-7834-4fb7-9425-032c58c9c37e
+
+#### SW · s4-folk-soprano — Young woman, pure traditional English folk
+
+Weirdness 45, style influence 70, Variety off, Vocal Gender female, Duration 300 s. Why: A young woman's straight-tone ballad soprano with grace notes comes from the traditional-folk lineage, the opposite of soul belt or torch.
+
+```
+Dark English folk-funk, 94 BPM, stomping breakbeat with hand claps and tambourine, raw fingerpicked acoustic guitar in open tuning, fiddle drones, growling overdriven bass, room grit, sudden drops. Lead: a young English woman, traditional unaccompanied-ballad singer, pure clear soprano, straight tone with no vibrato, small grace-note ornaments like an old ballad, telling the words as a story, steady and unhurried, eerie calm against the heavy groove. A village crowd chants the chorus back. 1969 psychedelic folk-rock haze, protest-song bite.
+```
+
+Exclude: `rap, hip hop, male lead vocal, heavy vibrato, belting, pop, autotune, screaming, double-time, fast rap, EDM, country, trap, comedy`
+
+- brj-sweep-s4-folk-soprano-v6-w45 — 4:59 — https://suno.com/song/bc17ae10-598e-43a3-93e4-e29ac1c29b28
+- brj-sweep-s4-folk-soprano-v6-w45 — 4:58 — https://suno.com/song/07217d46-a024-45d0-9935-4e3094f74a1d
+
+#### SW · s5-musichall-patter — Cocky London tenor, music-hall barrow patter
+
+Weirdness 40, style influence 70, Variety off, Vocal Gender male, Duration 240 s. Why: A bright, reedy, theatrical music-hall patter tenor is a sung-spoken stage tradition with a lilt, nothing like spoken narration or rap.
+
+```
+Psychedelic East End funk, 100 BPM, swaggering breakbeat with stomps and tambourine, honky-tonk upright piano, raw acoustic blues guitar riff, fuzzed growling bass, brass stabs, smoky pub-room grit, impact hits on the drops. Lead: a cocky London man in his fifties, bright reedy tenor, old-time music-hall patter singer: sung-spoken in a jaunty melodic lilt, rolling his Rs, theatrical asides, leaning into each line like he's flogging stolen goods off a barrow, never rushed. Full pub singalong shouts on the hooks. Dark crime caper, gritty not silly.
+```
+
+Exclude: `rap, hip hop, double-time, fast rap, autotune, screaming, EDM, trap, kazoo, cartoon, children's, baritone`
+
+- brj-sweep-s5-musichall-patter-v6-w40 — 3:58 — https://suno.com/song/ea72f904-a0d7-46f4-8ffd-a98373709ea2
+- brj-sweep-s5-musichall-patter-v6-w40 — 3:59 — https://suno.com/song/942f37b0-6d95-4d5e-92c6-920e4972f4dd
+
+#### SW · s6-choir-chant — Mixed English choir, unison protest chant
+
+Weirdness 50, style influence 65, Variety off, Vocal Gender None, Duration 270 s. Why: No soloist at all: a mixed-gender choir chanting in unison is a collective instrument, so it cannot come out as one singer.
+
+```
+Psychedelic protest funk, 92 BPM, heavy straight breakbeat with massed foot stomps, claps and tambourine, raw acoustic guitar riff, saturated growling bass, timpani impact hits, cathedral-sized reverb, quiet-to-huge dynamics. Vocals: no solo singer. A large mixed English choir of men and women chants every line in unison, rhythmic and declamatory like a protest march or a football terrace, with a small group of women answering in harmony; the chorus swells into full four-part choral chant. Ominous, communal, uprising energy.
+```
+
+Exclude: `solo vocalist, lead singer, rap, hip hop, double-time, fast rap, autotune, screaming, opera soprano, EDM, trap, comedy`
+
+- brj-sweep-s6-choir-chant-v6-w50 — 4:29 — https://suno.com/song/9fc98e4b-aa0f-4055-904e-52fce033087d
+- brj-sweep-s6-choir-chant-v6-w50 — https://suno.com/song/dae7d740-1261-4bfa-8cd5-4ba82f222abd
+
+#### SW · s7-jazz-torch — Smoky contralto woman, late-night jazz torch
+
+Weirdness 30, style influence 75, Variety off, Vocal Gender female, Duration 300 s. Why: A low, close-miked jazz contralto phrasing lazily behind the beat is a quiet, intimate category, the opposite of the soul belt or folk soprano.
+
+```
+Slow-burn psychedelic jazz-funk noir, 90 BPM, brushed-then-hard breakbeat with stomps and shaker, fingerpicked acoustic blues guitar, saturated growling bass, muted trumpet, smoky late-night Soho club, dark warm intimate mix with hard drops. Lead: an English woman in her forties, low smoky contralto, jazz torch singer, close-mic and intimate, phrasing lazily behind the beat, sliding into notes, sultry and knowing, never rushing. Male gang shouts answer on the hooks. Heist-film menace.
+```
+
+Exclude: `rap, hip hop, double-time, fast rap, autotune, screaming, belting, pop, soprano, EDM, trap, comedy`
+
+- brj-sweep-s7-jazz-torch-v6-w30 — https://suno.com/song/a9668725-4b2b-4d9a-addf-e3af84143875
+- brj-sweep-s7-jazz-torch-v6-w30 — https://suno.com/song/7016c742-1a68-4a01-832b-62ff7940e6ec
+
+#### SW · s8-baritone-crooner — Deep velvet baritone, orchestral 60s crooner
+
+Weirdness 35, style influence 70, Variety off, Vocal Gender male, Duration 300 s. Why: A rich, wide-vibrato orchestral baritone croon is the most sustained, legato male chest voice in the set, set against s2's speech, s3's falsetto and s5's reedy patter.
+
+```
+Cinematic psychedelic funk, 96 BPM, straight locked breakbeat with stomps and tambourine, raw acoustic guitar riff with flamenco flourishes, growling fuzz bass, sweeping orchestral strings and brass swells, dark 1960s spy-film grandeur, quiet verses into huge drops. Lead: a deep English baritone crooner in his forties, rich velvet chest voice, wide romantic vibrato, sung legato, dramatic and brooding like a late-60s orchestral pop idol, enunciating every word. Gang shouts answer on the hooks.
+```
+
+Exclude: `rap, hip hop, spoken word, double-time, fast rap, autotune, screaming, falsetto, raspy, gravelly, EDM, trap, comedy`
+
+- brj-sweep-s8-baritone-crooner-v6-w35 — https://suno.com/song/af2537a7-9dd9-438b-b704-37aca93273f1
+- brj-sweep-s8-baritone-crooner-v6-w35 — https://suno.com/song/d02ad061-0147-483a-a99d-1a5775ae4203
+
+Lyrics: each prompt's own tags are in the clip's Suno record (`metadata.prompt`); words are Kai's (`score.md`), unchanged.
+
 ### Round VB (2026-10-22): back to the vibe of "Best one" — clean room, six English voices, no screaming
 
 Jack: "we have strayed away from the vibe of this song (024b82e8), please analyse it and bring it back. Keep experimenting with English voices, no weird screaming. Make sure no skill or prompt is messing with it."
@@ -140,7 +250,7 @@ Jack: "we have strayed away from the vibe of this song (024b82e8), please analys
 
 **Where KA drifted** (two KA takes listened to and measured, logs `…163455-…7cc394c7.md`, `…163535-…81953c32.md`): music close (acoustic guitar riff over a hip-hop break) but **flat** (loudness range 6.2 and 5.8 LU, half the reference's), **brighter** (centroid 3.4 and 4.0 kHz), clean rather than saturated bass on A, no stomps, and **faster** delivery (Kai's lyrics are about twice as dense as draft 3; the cockney take came out as fast rap). Cutting the solo-guitar intro also cut the explosive drop that made the reference.
 
-**How this round was written:** a clean-room helper (no repo, no memory, no web; told to ignore every house Suno rule) wrote all six from the listen descriptions, Jack's brief and Kai's words with our cue tags stripped. My only addition is one measured sentence in every Style box: `Dark warm mix with big dynamics: guitar-only breaks, then hard drops.` One Create each, settings per prompt (weirdness 35–40, style influence 65–75, Variety Off, Duration 240 s). `screaming` banned in every box. 60 credits (8,290 → 8,230); records checked: Kai's lyrics, Variety 0, boxes verbatim. Unheard.
+**How this round was written:** a clean-room helper (no repo, no memory, no web; told to ignore every house Suno rule) wrote all six from the listen descriptions, Jack's brief and Kai's words with our cue tags stripped. My only addition is one measured sentence in every Style box: `Dark warm mix with big dynamics: guitar-only breaks, then hard drops.` One Create each, settings per prompt (weirdness 35–40, style influence 65–75, Variety Off, Duration 240 s). `screaming` banned in every box. **Verdict (Jack, 2026-10-22): "the voices are the same again."** Cause: one shared music paragraph and one shared delivery; only the region varied (`suno-voices.md` §2f follow-up). 60 credits (8,290 → 8,230); records checked: Kai's lyrics, Variety 0, boxes verbatim. Unheard.
 
 #### VB · v1-southlondon
 
