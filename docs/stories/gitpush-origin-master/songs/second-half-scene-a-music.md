@@ -1,6 +1,6 @@
 ---
 title: GPOM second half, scene A (kill bots): the boss's lines + the music
-status: 🟡 round 2 (22 Oct) — P picked (P1 w60 57b65bfc, P2 w30 49a6688a); boss per-line atoms + C3/C4 generated, picks owed (Kai)
+status: 🟡 round 3 (22 Oct) — boss-1 + C3 picked and recorded; boss lines 2–4 revision B (new words) generated, picks owed (Kai)
 kind: one narrator take (the boss, dry) + two instrumental cues (P the patrol, C the chase and the call)
 model: v6
 workspace: gpom-story
@@ -358,6 +358,39 @@ vocals, singing, choir, pizzicato, plucked strings, string quartet, string ensem
 ## Round log
 
 New rounds at the top.
+
+### Round 3 (2026-10-22) · boss lines 2–4 revision B (new words) · picks owed (Kai)
+
+**Kai's round 2 picks, recorded** (never downloaded; `record-checked.py`, length matched to the takes list):
+boss line 1 = `gpom-sh-a-boss-1-A-v6-w10` [7f8d1ef8](https://suno.com/song/7f8d1ef8-2548-4eff-a155-3a69b3677fd8) (6.76 s),
+chase cue C = `gpom-sh-a-C3-A-v6-w60` [a1614dbb](https://suno.com/song/a1614dbb-401a-4930-b759-7ad5b9cd3ce4) (60.00 s; the
+first try came back 12.4 s, the playbar trap, and the re-record matched). Files in
+`/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/` (`.wav` + `.preview.mp3`).
+
+Before the round: an outside session (not this team) spent 470 credits (8,420 at the end of round 2 → 7,950) while the form sat idle on our C4, and
+closed the suno.com tab; we held until Kai said Suno was free, then opened one tab. Balance at the start **7,950**.
+
+6 Creates (3 pairs, w25 + w10), expected **30 credits**; the on-page counter did not refresh during the run (it read
+7,950 throughout, per-Create readings of 5 and 10 are noise), so the true after-balance is unread. Workspace `gpom-story`.
+Nothing listened to, nothing recorded from this round.
+
+| Take | Length | Link |
+| --- | --- | --- |
+| gpom-sh-a-boss-2-B-v6-w25 | 0:06 | https://suno.com/song/d7aaef3e-9921-4d23-9384-107f917b9425 |
+| gpom-sh-a-boss-2-B-v6-w25 | 0:07 | https://suno.com/song/da519086-a759-461e-87bd-48d033270027 |
+| gpom-sh-a-boss-2-B-v6-w10 | 0:08 | https://suno.com/song/4a9523b4-eb5d-4f4c-b54d-2e83011b72b7 |
+| gpom-sh-a-boss-2-B-v6-w10 | 0:07 | https://suno.com/song/4c2b009e-51ce-484b-8c1b-e0f89207eeba |
+| gpom-sh-a-boss-3-B-v6-w25 | 0:08 | https://suno.com/song/b158e816-75f7-4ba9-9e1d-ee8ab454b32b |
+| gpom-sh-a-boss-3-B-v6-w25 | 0:07 | https://suno.com/song/a2ebbbc9-7b03-4883-8bc9-ded726ba512c |
+| gpom-sh-a-boss-3-B-v6-w10 | 0:06 | https://suno.com/song/f36a3b14-3576-4bb4-b0bf-839aa598075b |
+| gpom-sh-a-boss-3-B-v6-w10 | 0:06 | https://suno.com/song/bfb1220b-2b48-4993-89d4-5047cac9f4a1 |
+| gpom-sh-a-boss-4-B-v6-w25 | 0:07 | https://suno.com/song/543dafef-3e5e-449f-a783-7260e599c848 |
+| gpom-sh-a-boss-4-B-v6-w25 | 0:07 | https://suno.com/song/c3549816-3772-4593-a5ca-4576da00d93b |
+| gpom-sh-a-boss-4-B-v6-w10 | 0:08 | https://suno.com/song/cacc500d-125b-4c9f-a9d8-7fdf76544526 |
+| gpom-sh-a-boss-4-B-v6-w10 | 0:07 | https://suno.com/song/9c4b3ba9-7694-4b2b-876c-612fed0a13cc |
+
+**Notes.** All twelve came in at 0:06–0:08 (one line each, Duration 15 is a ceiling, not a target). Whether the words
+are clean, and whether the gap after line 4's old "Glad" is gone, is unheard.
 
 ### Round 2 (2026-10-22) · boss one line per atom, C3/C4 dark · picks owed (Kai)
 
