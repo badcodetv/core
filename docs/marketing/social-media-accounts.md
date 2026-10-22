@@ -36,7 +36,7 @@ don't know, not that it doesn't exist; tick it and add the link when you check).
 | Platform | Role (from the chief-of-staff plan) | Handle | Status |
 | --- | --- | --- | --- |
 | Gmail | the account email the others sign up with | badcode.tv@gmail.com | ✅ open |
-| Website | the terminus: every path ends here | badcode.tv | ✅ domain in use |
+| Website | the terminus: every path ends here | badcode.tv | 🟡 domain owned; one-page site built in [`apps/site/`](../../apps/site/README.md) 2026-10-22, not yet deployed to Cloudflare |
 | GitHub | code (organisation) | `badcodetv` | ✅ exists (github.com/badcodetv) |
 | YouTube (long + Shorts) | home: full films and episodes | handle not recorded | ✅ open — sign in with the badcode.tv@gmail.com account (recorded 2026-10-20) |
 | Facebook | main reach for the reader | Page: https://www.facebook.com/profile.php?id=61595526127110 (no username set yet) | ✅ **Page made 2026-10-21** by Jack. It runs from Jack's own personal profile: the badcode.tv@gmail.com login, renamed from a made-up name to his real name so it obeys Facebook's real-name rule. Only Jack logs into that profile; anyone else gets their own account added as a Page admin |

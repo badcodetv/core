@@ -6,6 +6,10 @@
 > and Jack is now cutting it himself. Kai went through it with Jack on the 15 Oct 2026 call: the rulings and
 > Jack's to-do list are the last section of [`assembly.md`](./assembly.md).**
 
+> **First release, 22 October 2026 (Kai):** The Bank Robbery is one of the four stories released
+> first (with Camping, Karen and GitPush Origin Master): a film and a song on YouTube. See
+> [`ep1.md`](../gitpush-origin-master/ep1.md).
+
 Eleven politicians and media people rob a bank by carrying money into it. Left and right argue
 about immigration the whole way through, holding one end of the same pallet each. The only person
 who notices is the cleaner, because she counts.

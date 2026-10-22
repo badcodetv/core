@@ -1,0 +1,173 @@
+/* BadCode — badcode.tv. Colours are the brand's (docs/brand/README.md):
+   ground #050607, ink #eef3f6, red #cc2b37 only ever on the triangle. */
+:root {
+  --ground: #050607;
+  --ink: #eef3f6;
+  --ink-2: #a9b3ba;
+  --ink-3: #5d676e;
+  --line: #1c2226;
+  --red: #cc2b37;
+  --display: "Bricolage Grotesque", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --gutter: clamp(16px, 5vw, 64px);
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--ground); overflow-x: clip; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 1.0625rem/1.55 var(--body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; border-radius: 2px; }
+
+.top { padding: 28px var(--gutter) 0; }
+.lockup { display: inline-block; }
+.lockup img { display: block; height: clamp(52px, 7vw, 96px); width: auto; }
+
+/* Hero: the headline left, the mark huge and cropped off the right edge. */
+.hero {
+  position: relative;
+  padding: clamp(56px, 12vh, 136px) var(--gutter) clamp(64px, 12vh, 128px);
+  max-width: 1280px;
+}
+.hero h1 {
+  position: relative;
+  margin: 0;
+  max-width: 11ch;
+  font: 700 clamp(2.75rem, 8.5vw, 6.5rem)/0.95 var(--display);
+  letter-spacing: -0.025em;
+}
+.lede {
+  position: relative;
+  margin: 0 0 28px;
+  max-width: 36ch;
+  font-size: clamp(1.125rem, 1.8vw, 1.3125rem);
+  color: var(--ink-2);
+}
+
+.eye {
+  position: absolute;
+  top: 50%;
+  right: calc(-1 * clamp(120px, 14vw, 220px));
+  width: clamp(320px, 52vw, 640px);
+  translate: 0 -50%;
+  color: var(--ink);
+  pointer-events: none;
+}
+/* The one moment of motion: the triangle swings round to look at you. */
+.glance {
+  transform-origin: 0 0;
+  animation: glance 1.6s cubic-bezier(.2, .8, .2, 1) 0.4s both;
+}
+@keyframes glance {
+  from { transform: rotate(-150deg); opacity: 0; }
+  30% { opacity: 1; }
+  to { transform: rotate(0deg); opacity: 1; }
+}
+/* Phone: the mark sits above the headline instead of behind it. */
+@media (max-width: 600px) {
+  .hero { padding-top: 260px; }
+  .eye { top: -8px; right: -30px; width: 260px; translate: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glance { animation: none; }
+}
+
+/* The stories: one row each, title big, the two actions plain. */
+.stories {
+  border-top: 1px solid var(--line);
+  margin: 0 var(--gutter);
+}
+.story {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-areas: "still title" "still text" "still links";
+  grid-template-rows: auto auto 1fr;
+  gap: 14px 64px;
+  align-items: start;
+  padding: 36px 0 40px;
+  border-bottom: 1px solid var(--line);
+}
+.story h2 {
+  grid-area: title;
+  margin: 0;
+  font: 500 clamp(1.75rem, 3.6vw, 2.75rem)/1.05 var(--display);
+  letter-spacing: -0.02em;
+}
+.story p { grid-area: text; margin: 0; max-width: 46ch; color: var(--ink-2); }
+
+.links { grid-area: links; list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 28px; white-space: nowrap; }
+
+
+.links a { font-weight: 700; }
+
+.soon { color: var(--ink-3); }
+.soon small { font-size: 0.8em; margin-left: 0.35em; }
+
+/* Story pictures as instant photos: paper border, fat bottom edge, a slight
+   tilt, and the faded, warm-shadowed colour of instant film. */
+.photo {
+  grid-area: still;
+  justify-self: start;
+  width: min(100%, 320px);
+  margin: 4px 0 0;
+  padding: 12px 12px 46px;
+  background: #ecebe4;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 14px 30px rgba(0, 0, 0, 0.55);
+  rotate: -2deg;
+}
+.story:nth-child(even) .photo { rotate: 1.6deg; }
+.photo img,
+.photo span {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.photo img { filter: sepia(0.18) saturate(0.82) contrast(0.92) brightness(1.04); }
+.photo { position: relative; }
+.photo::after {
+  /* the film's own tint and vignette, over the picture only */
+  content: "";
+  position: absolute;
+  inset: 12px 12px 46px;
+  background:
+    radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(40, 25, 10, 0.35) 100%),
+    linear-gradient(160deg, rgba(255, 200, 140, 0.10), rgba(60, 110, 140, 0.12));
+  pointer-events: none;
+}
+/* An undeveloped photo: the picture isn't there yet. */
+.photo-blank span {
+  background: radial-gradient(ellipse at 40% 35%, #4a4f52, #2a2e31 70%);
+}
+
+@media (max-width: 860px) {
+  .story {
+    grid-template-columns: 1fr;
+    grid-template-areas: "still" "title" "text" "links";
+    grid-template-rows: none;
+    gap: 12px;
+    padding: 28px 0 32px;
+  }
+  .photo { width: min(78%, 300px); margin-bottom: 18px; }
+}
+
+.follow { padding: clamp(64px, 10vh, 112px) var(--gutter) 40px; }
+.follow h2 { margin: 0 0 18px; font: 500 1.375rem/1.2 var(--display); }
+.socials {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 10px 28px;
+  font-size: 1.125rem;
+}
+.sign { margin: 72px 0 0; font-size: 0.875rem; color: var(--ink-3); }

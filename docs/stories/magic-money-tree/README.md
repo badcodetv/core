@@ -1,5 +1,9 @@
 # The Magic Money Tree
 
+> **Not in the first release (Kai, 22 October 2026).** The four stories going out first are Camping,
+> Karen, GitPush Origin Master and The Bank Robbery ([`ep1.md`](../gitpush-origin-master/ep1.md)).
+> This one comes later, after the recut.
+
 > 🔴 **Recut agreed on 1 October 2026 — read [`direction-2026-10-01.md`](./direction-2026-10-01.md)
 > first.** Shake, starve, plant stays. The film gets very short (Kai: three minutes, not fifteen)
 > and is told by **a sarcastic narrator interviewing a WW2 soldier at each age of his life** — 1923,

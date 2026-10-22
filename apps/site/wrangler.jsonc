@@ -1,0 +1,15 @@
+// badcode.tv — a static Cloudflare Worker (assets only, no code).
+// Deploy: `npx wrangler deploy` from apps/site (after `npx wrangler login`).
+{
+  "name": "badcode-site",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+  // When badcode.tv's DNS is on Cloudflare, add:
+  // "routes": [
+  //   { "pattern": "badcode.tv", "custom_domain": true },
+  //   { "pattern": "www.badcode.tv", "custom_domain": true }
+  // ]
+}
