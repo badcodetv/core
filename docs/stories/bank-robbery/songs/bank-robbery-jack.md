@@ -140,7 +140,7 @@ Jack: "we have strayed away from the vibe of this song (024b82e8), please analys
 
 **Where KA drifted** (two KA takes listened to and measured, logs `…163455-…7cc394c7.md`, `…163535-…81953c32.md`): music close (acoustic guitar riff over a hip-hop break) but **flat** (loudness range 6.2 and 5.8 LU, half the reference's), **brighter** (centroid 3.4 and 4.0 kHz), clean rather than saturated bass on A, no stomps, and **faster** delivery (Kai's lyrics are about twice as dense as draft 3; the cockney take came out as fast rap). Cutting the solo-guitar intro also cut the explosive drop that made the reference.
 
-**How this round was written:** a clean-room helper (no repo, no memory, no web; told to ignore every house Suno rule) wrote all six from the listen descriptions, Jack's brief and Kai's words with our cue tags stripped. My only addition is one measured sentence in every Style box: `Dark warm mix with big dynamics: guitar-only breaks, then hard drops.` One Create each, settings per prompt (weirdness 35–40, style influence 65–75, Variety Off, Duration 240 s). `screaming` banned in every box. Unheard.
+**How this round was written:** a clean-room helper (no repo, no memory, no web; told to ignore every house Suno rule) wrote all six from the listen descriptions, Jack's brief and Kai's words with our cue tags stripped. My only addition is one measured sentence in every Style box: `Dark warm mix with big dynamics: guitar-only breaks, then hard drops.` One Create each, settings per prompt (weirdness 35–40, style influence 65–75, Variety Off, Duration 240 s). `screaming` banned in every box. 60 credits (8,290 → 8,230); records checked: Kai's lyrics, Variety 0, boxes verbatim. Unheard.
 
 #### VB · v1-southlondon
 
@@ -152,6 +152,9 @@ Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, h
 
 Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice`
 
+- brj-vibe-v1-southlondon-v6-w35 — 3:58 — https://suno.com/song/001c0117-b07c-4397-bd9c-156ea6a1bf9c
+- brj-vibe-v1-southlondon-v6-w35 — 3:59 — https://suno.com/song/91f16f96-b056-496a-91e6-b6deb686891d
+
 #### VB · v2-manc-alto
 
 Weirdness 35, style influence 70, Vocal Gender female.
@@ -161,6 +164,9 @@ Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, h
 ```
 
 Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, belting, breathy`
+
+- brj-vibe-v2-manc-alto-v6-w35 — 3:58 — https://suno.com/song/1a6041d6-2349-4dc5-9cc0-9c886a9f5b8e
+- brj-vibe-v2-manc-alto-v6-w35 — 3:46 — https://suno.com/song/d06b1e15-f13a-4dc1-bc72-dbb6de974829
 
 #### VB · v3-bristol-baritone
 
@@ -172,6 +178,9 @@ Gritty British blues rap and stomp rock, 90 BPM, straight, locked on the grid, h
 
 Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice, crooning`
 
+- brj-vibe-v3-bristol-baritone-v6-w40 — 3:59 — https://suno.com/song/9d503fbf-4c09-4b58-be38-32e3506984fa
+- brj-vibe-v3-bristol-baritone-v6-w40 — 3:59 — https://suno.com/song/6fd32b65-3993-4b42-8aed-c45ed2c679b1
+
 #### VB · v4-brum-chant
 
 Weirdness 35, style influence 75, Vocal Gender female.
@@ -181,6 +190,9 @@ Gritty British blues rap and stomp rock, 93 BPM, straight, locked on the grid, d
 ```
 
 Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, cute, girly`
+
+- brj-vibe-v4-brum-chant-v6-w35 — 3:44 — https://suno.com/song/f2a483d6-9807-408a-ae95-3a7c7cd3d83a
+- brj-vibe-v4-brum-chant-v6-w35 — 3:45 — https://suno.com/song/abf81134-bb70-42f2-b7fa-8c2c2c063cbb
 
 #### VB · v5-yorks-indie
 
@@ -192,6 +204,9 @@ Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, h
 
 Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice`
 
+- brj-vibe-v5-yorks-indie-v6-w40 — https://suno.com/song/b050f0fe-6724-43bc-906a-64b87d0e583e
+- brj-vibe-v5-yorks-indie-v6-w40 — https://suno.com/song/febc3af0-8879-4786-bd8f-6b4129f86cd8
+
 #### VB · v6-eastlondon-husky
 
 Weirdness 35, style influence 70, Vocal Gender female.
@@ -201,6 +216,9 @@ Gritty British blues rap and stomp rock, 91 BPM, straight, locked on the grid, h
 ```
 
 Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, belting`
+
+- brj-vibe-v6-eastlondon-husky-v6-w35 — https://suno.com/song/24954cb3-4b73-4fcc-9b41-e2647c55fa46
+- brj-vibe-v6-eastlondon-husky-v6-w35 — https://suno.com/song/5b5c2693-bd2f-4bad-ba85-a837f22db843
 
 Lyrics (v1; the others differ only in the verse delivery cue):
 
