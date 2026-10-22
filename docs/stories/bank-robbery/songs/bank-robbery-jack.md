@@ -132,9 +132,91 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round BB (2026-10-22): stripped to basics — no repo, no Suno skill
+
+Jack, after DU: "the same thing has happened, do what you did before and strip it down to basics, without using the repo or the suno skill, because it keeps making the same voice." A fresh helper got a plain-words brief only (no earlier prompts, no failure notes, no house rules) and was told to keep it basic: one- or two-sentence Style boxes, short excludes, plain section tags. Six prompts: three duets (old Englishman speaks the verses, young Englishman falsetto on the choruses), two falsetto-only, one spoken-only. Run verbatim; Duration on Auto, as the helper chose. Kai's words unchanged (checked). 60 credits (8,070 → 8,010). Auto ran ~4:30 per take. Variety Normal/High rewrote every box except b3's (its stored text is verbatim at step 1); the rewrites add delivery variety (`clipped rhythmic staccato`, `crooning legato`, `layered octave doubles`), which is exactly what Variety is for. Unheard.
+
+#### BB · b1-duet-bar — Duet gangster tale falsetto
+
+Weirdness 40, style influence 65, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Gritty psychedelic funk with a dark British crime feel. Acoustic guitar riff, stomping beat, fuzzy bass. An old English man speaks the verses like a gangster telling a story at the bar; a young English man sings the choruses in falsetto.
+```
+
+Exclude: `american accent, screaming, fast rap`
+
+- brj-basic-b1-duet-bar-v6-w40 — 4:29 — https://suno.com/song/15302df7-043d-4e39-9fd6-036a2d6cdde7 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b1-duet-bar-v6-w40 — 4:28 — https://suno.com/song/35b1a9a7-2cde-49b1-87bf-50bb09d26548 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b2-duet-heist — Heist funk two voices
+
+Weirdness 55, style influence 60, Variety high, Vocal Gender male, Duration Auto.
+
+```
+Dark 70s British heist funk, psychedelic and gritty. Stomping drums, fuzz bass, strummed acoustic guitar riff. Spoken verses by a gravelly older London man, falsetto choruses by a young English singer.
+```
+
+Exclude: `american accent, screaming, rap`
+
+- brj-basic-b2-duet-heist-v6-w55 — 4:29 — https://suno.com/song/b23f4a9e-e90b-4a21-864c-1e2f4e0e95fd (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b2-duet-heist-v6-w55 — 4:29 — https://suno.com/song/c249e369-8f0c-4ebe-8175-8b9ce44de0c9 (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b3-duet-pub — Smoky pub storyteller duet
+
+Weirdness 45, style influence 70, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Psychedelic funk, murky and British, like a crime film soundtrack. Acoustic guitar hook, heavy stomp, fuzzy bass. Old English man talking the verses in a low voice, young English man in high falsetto on the choruses.
+```
+
+Exclude: `american accent, screaming, fast rap, autotune`
+
+- brj-basic-b3-duet-pub-v6-w45 — 4:29 — https://suno.com/song/88b84089-c232-4803-b555-42a6c6caf3ff (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b3-duet-pub-v6-w45 — 4:30 — https://suno.com/song/c6954483-92d3-4d64-b0c2-92c8df1f7a10 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b4-falsetto — Falsetto only psych funk
+
+Weirdness 40, style influence 65, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Gritty psychedelic funk with a dark British heist mood. Acoustic guitar riff, stomping beat, fuzzy bass. Young English male singer in falsetto throughout, English accent.
+```
+
+Exclude: `american accent, screaming, rap`
+
+- brj-basic-b4-falsetto-v6-w40 — https://suno.com/song/cc769e07-7f5f-45a9-b1e5-a86764ff62ff (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b4-falsetto-v6-w40 — 4:30 — https://suno.com/song/e7b2d15e-5bc6-4ab2-b378-0a2726d4770f (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b5-falsetto-dark — Falsetto dark heist groove
+
+Weirdness 55, style influence 55, Variety high, Vocal Gender male, Duration Auto.
+
+```
+Dark, fuzzy British psych funk, like a 70s London crime film. Strummed acoustic guitar riff, heavy stomp, distorted bass. Sung by a young English man in a sweet falsetto.
+```
+
+Exclude: `american accent, screaming, rap, belting`
+
+- brj-basic-b5-falsetto-dark-v6-w55 — https://suno.com/song/9cbc051a-a1fb-48b8-9089-82d54509fffb (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b5-falsetto-dark-v6-w55 — https://suno.com/song/fffd08e2-eb4d-4f30-90cd-7f9bbdfbd051 (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b6-gangster — Old gangster spoken word
+
+Weirdness 40, style influence 70, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Gritty psychedelic funk with a dark British crime feel. Acoustic guitar riff, stomping beat, fuzzy bass. Spoken word throughout by an old English man, gravelly London voice, like a gangster telling a story at the bar. No singing.
+```
+
+Exclude: `american accent, screaming, rap, singing`
+
+- brj-basic-b6-gangster-v6-w40 — https://suno.com/song/c85066a2-8473-410c-8e98-34d4206d1131 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b6-gangster-v6-w40 — https://suno.com/song/c792fe93-f5dc-480e-82c9-d84f9fa48fda (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
 ### Round DU (2026-10-22): clean-room duet — gangster speaks the verses, falsetto sings the choruses
 
-Jack, after BO went American: "do a clean room one for them with English voices I liked, maybe have the gangster voice for the verses and falsetto for the choruses." A clean-room helper was given the two liked sweep prompts (s2, s3) whole, the Best one vibe, and the BO failure, and asked for four different strategies for two English voices in one take. Kai's words unchanged (checked). Run verbatim, one Create each: 40 credits (8,110 → 8,070); records checked: Kai's lyrics, Variety 0. Unheard.
+Jack, after BO went American: "do a clean room one for them with English voices I liked, maybe have the gangster voice for the verses and falsetto for the choruses." A clean-room helper was given the two liked sweep prompts (s2, s3) whole, the Best one vibe, and the BO failure, and asked for four different strategies for two English voices in one take. Kai's words unchanged (checked). Run verbatim, one Create each: 40 credits (8,110 → 8,070); records checked: Kai's lyrics, Variety 0. **Verdict (Jack, 2026-10-22): "the same thing has happened"** (the same voice again). Long, heavily specified boxes describing two voices in detail converged.
 
 #### DU · d1-role-split — Role-split style box, voice named in every tag
 
