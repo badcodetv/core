@@ -77,23 +77,19 @@ narrator and lifted where nobody speaks; sting on A4 from 1:11.8 to 1:30.8 with 
 
 ## Lyrics
 
-Kai's words, with Claude's cues (21 October 2026). The words are Kai's, spelling and all. The
-square brackets, the in-bar pause punctuation (`next. Get wrecked!`, `rent seeking?...`) and the
-`(Robbery!)` shouts at the start and end are Claude's.
+🔑 **The ONE live lyrics block. Edit here.** Every new take is made from this block.
 
-🔴 **Two cue sets, ONE set of words.** The poet block is the live one. The ska block is kept for the
-ska takes still being judged. **Change a word, and change it in both blocks.**
-
-### Poet cues (live, round E: the punk-poet styles)
+Kai's words, with Claude's cues. The words are Kai's, spelling and all. The square brackets, the
+in-bar pause punctuation (`next. Get wrecked!`, `rent seeking?...`) and the `(Robbery!)` shouts at
+the start and end are Claude's. The cues are written for the punk-poet style
+([`bank-robbery-poet.md`](./bank-robbery-poet.md)). The old ska-cued copy is kept as history in
+[`bank-robbery-ska.md`](./bank-robbery-ska.md).
 
 ```lyrics
-[Intro: quiet room, one low string note]
-(Robbery!)
-
-[Verse 1: punk poet, breathless deadpan rant]
+[Verse 1: Salford poet, breathless deadpan rant]
 They say, ya can't make money from a tree
-let's see, each day, make hay, not free, aay
-work and get paid though, earning that dough
+let's see, each day, not free, aaaaaaay
+work and get paid though, earn that dough
 but where does it go? nobody knows!
 
 means of production means a reduction
@@ -103,18 +99,17 @@ quantative easing, grandma FREEEEEEEZING!
 [Silence, then the punchline]
 stimulus checks are next. Get wrecked!
 
-rent seeking?... I'm just about eating
-[Mock-polite, sarcastic]
-sorry, did I interrupt your meeting?
 [Cutaway: chirpy high-pitched TV advert voice]
 remember kids, the Fed is not your friend!
 it prints all the dollars that the government spends
+rent seeking?... Mate, I'm just about eating!
+sorry, did I interrupt your meeting?
 
-[punk poet, breathless deadpan rant]
-this fiat system is insistent
+[Salford poet, breathless deadpan rant]
+the fiat system is insistent
 on debts existence, sooooo
 don't be hating on the credit rating
-or have resistance to the facts I'm stating
+don't have resistance to the facts I'm stating
 
 [Chorus: a few voices shout it back, police sirens]
 Robbery, robbery!
@@ -128,29 +123,29 @@ Call the police, it's a robbery!
 Debasement! Debasement! It happened in da basement!
 Printer is burrrrrrrrring, now now what's occurrrrrrrring?
 
-[Verse 2: punk poet, breathless deadpan rant, colder]
-Stacks and stacks of elastic cash
-distracted by a dispraxic flash,
+[Verse 2: Salford poet, breathless deadpan rant, colder]
+Stacks and stacks of plastic cash
+are distracted by the dispraxic flash
 mob, angry at their shitty little job
-the right and the left both witness the theft
+both the right and the left, witness the theft
 
-blaming each other is a sick little cover
-institutional, dilutional, the usual
+blaming each other is a sick little cover!
+it's institutional, it's dilutional, it's the usual
 [Gang shout doubles the lead]
 distraction IS the attraction
-the intention is tension between the factions
+maintain the tension between the factions
 
 divide and conquer, just look at the hand
 [Bouncy, skip on every comma]
-It's not ya standard, propaganda, worth a couple grand-ahh
+It's not ya standard, propaganda, worth a couple grand
 [Staccato, one word per string stab]
 it is, state, level, manipulation
 it is the devil, with a radio station
 
-stack up the vaults like a wheelbarrow
-risk of default is really rather narrow
-Biggie said waaaay back in ninety seven
-[One bar only: dusty boom bap beat, deep slow New York rapper]
+it's not like there wasn't any warning
+Biggie said it in ninety seven
+crack o'dawnin, now I'm yawning
+[One bar only: dusty boom bap beat, a different deep slow voice]
 don't get high off your own supply
 
 [Chorus: a few voices shout it back, police sirens]
@@ -165,10 +160,11 @@ Call the police, it's a robbery!
 Debasement! Debasement! It happened in da basement!
 Printer is burrrrrrrrring, now now what's occurrrrrrrring?
 
-[Verse 3: punk poet, breathless deadpan rant, menace building]
-You know the real star is Pablo Escobar,
-who has elastic bands not plastic hands,
-stacking up the cash by the grands
+[Verse 3: Salford poet, breathless deadpan rant, menace building]
+
+it is he who has elastic bands
+not he with plastic hands
+who is stacking up the cash by the grands
 standard plans are for the working man
 
 and this right here is a next level scam
@@ -177,127 +173,14 @@ ill gotten gains, no need to explain
 [Gang shout doubles the lead]
 own the printer and you don't fear winter
 
-crime is asset inflation, passive creation;
-of a wealth gap that drives the situation
-working people get paid in money, so it's not very funny
-when you print more and expect them not to worry
+the crime is asset inflation and the passive creation
+of a wealth gap that drives the situation!
+working people get paid in money
+it is worth less now and is not very funny
 
 [Almost silent, low and deadly serious]
 hungry people, feed a revolution,
 then it's retribution, perhaps some execution
 it's time to give, not just to take
 but for heaven’s sake, don't just eat cake
-
-[Outro: the gang shouts once, one timpani hit]
-(Robbery!)
-```
-
-### Ska cues (rounds C and D: the 2-tone ska styles)
-
-Why each cue is there: [`bank-robbery-ska.md`](./bank-robbery-ska.md), round C.
-
-```lyrics
-[Intro: short, dark organ, one horn stab, band kicks in]
-(Robbery!)
-
-[Verse 1: gruff cockney front man, spoken straight at you]
-They say, ya can't make money from a tree
-let's see, each day, make hay, not free, aay
-work and get paid though, earning that dough
-but where does it go? nobody knows!
-
-means of production means a reduction
-standards bleeding, land-lords needing
-[Gang shout doubles the lead]
-quantative easing, grandma FREEEEEEEZING!
-[Band stops dead for the punchline]
-stimulus checks are next. Get wrecked!
-
-rent seeking?... I'm just about eating
-[Mock-polite, sarcastic]
-sorry, did I interrupt your meeting?
-[Cutaway: chirpy high-pitched TV advert voice]
-remember kids, the Fed is not your friend!
-it prints all the dollars that the government spends
-
-[gruff cockney front man, band back in]
-this fiat system is insistent
-on debts existence, sooooo
-don't be hating on the credit rating
-or have resistance to the facts I'm stating
-
-[Chorus: whole band gang shout, police sirens]
-Robbery, robbery!
-Call the police, it's a robbery!
-Debasement! Debasement! It happened in da basement!
-Printer is burrrrrrrrring, now now what's occurrrrrrrring?
-
-[Chorus: up a step, bigger and angrier, alarm bell]
-Robbery, robbery!
-Call the police, it's a robbery!
-Debasement! Debasement! It happened in da basement!
-Printer is burrrrrrrrring, now now what's occurrrrrrrring?
-
-[Verse 2: gruff cockney front man, colder and darker]
-Stacks and stacks of elastic cash
-distracted by a dispraxic flash,
-mob, angry at their shitty little job
-the right and the left both witness the theft
-
-blaming each other is a sick little cover
-institutional, dilutional, the usual
-[Gang shout doubles the lead]
-distraction IS the attraction
-the intention is tension between the factions
-
-divide and conquer, just look at the hand
-[Bouncy, skip on every comma]
-It's not ya standard, propaganda, worth a couple grand-ahh
-[Staccato, one word per horn stab]
-it is, state, level, manipulation
-it is the devil, with a radio station
-
-stack up the vaults like a wheelbarrow
-risk of default is really rather narrow
-Biggie said waaaay back in ninety seven
-[One bar only: dusty boom bap beat, deep slow New York rapper]
-don't get high off your own supply
-
-[Chorus: whole band gang shout, police sirens]
-Robbery, robbery!
-Call the police, it's a robbery!
-Debasement! Debasement! It happened in da basement!
-Printer is burrrrrrrrring, now now what's occurrrrrrrring?
-
-[Chorus: up a step, full gang roar, sirens and alarm bell]
-Robbery, robbery!
-Call the police, it's a robbery!
-Debasement! Debasement! It happened in da basement!
-Printer is burrrrrrrrring, now now what's occurrrrrrrring?
-
-[Verse 3: gruff cockney front man, menace building]
-You know the real star is Pablo Escobar,
-who has elastic bands not plastic hands,
-stacking up the cash by the grands
-standard plans are for the working man
-
-and this right here is a next level scam
-ill gotten gains, no need to explain
-"bail" and "out", will never mean the same
-[Gang shout doubles the lead]
-own the printer and you don't fear winter
-
-crime is asset inflation, passive creation;
-of a wealth gap that drives the situation
-working people get paid in money, so it's not very funny
-when you print more and expect them not to worry
-
-[Breakdown: drums and bass only, low and deadly serious]
-hungry people, feed a revolution,
-then it's retribution, perhaps some execution
-it's time to give, not just to take
-but for heaven’s sake, don't just eat cake
-
-[Outro: whole gang shouts, band stops on a hit]
-(Robbery!)
 ```

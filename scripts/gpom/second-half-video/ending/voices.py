@@ -57,6 +57,20 @@ WHERE = {
          "people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed "
          "acoustic, no echo; voices close and quiet.",
 }
+# Where a beat is spoken, where it differs from its scene's WHERE (round 1, 22 Oct: Maddie coaxes from the step).
+WHERE_BEAT = {
+    ('C', 'c1'): "The open blast doors of a Cold War bunker under a Wiltshire hill. A small robot on the concrete step in "
+                 "grey daylight, speaking back into the dark doorway to a hundred frightened survivors who have not "
+                 "been outside for five years and do not trust her yet. A little wind, the mouth of a tunnel behind them.",
+    ('C', 'c2'): "Just outside a bunker's open blast doors on a green chalk hillside, grey daylight, wind, open sky. "
+                 "A hundred survivors stepping out blinking after five years underground; no echo.",
+    ('C', 'c4'): "Walking along a chalk track over the open Wiltshire downs in a long line of a hundred people, grey "
+                 "daylight, wind in the grass, open sky, no echo; a husband and wife talking quietly side by side.",
+    ('C', 'c5'): "The crest of a green chalk down, a hundred people stopped in the wind, looking down at a long, low, "
+                 "black glass building in the fold of the hills below. Open sky, no echo; voices quiet.",
+    ('C', 'c6'): "At the foot of a long black glass building on the downs, where a doorway of warm light has opened "
+                 "with one low step; grey daylight, a little wind, a hundred people waiting behind. No echo.",
+}
 CAST_KEY = {'lady': 'lady', 'sandra': 'woman', 'derek': 'man'}
 # Cast-prompt wording that quotes a cut-3 line. Gemini speaks it: Sandra's "a pause before 'Again.'" put an
 # unscripted "Again." on the end of both "Five years, one toilet" takes. Removed in-process.
@@ -71,7 +85,7 @@ SPLIT_WORD = 'you'  # scene.json D16 `split`: cut at the gap before "you"
 SPLIT_MIN = 0.2  # seconds of silence a split take must have between its halves  # first pair, then up to two more pairs while no take is heard correctly
 
 
-def profile(speaker, scene, how, text):
+def profile(speaker, scene, how, text, beat=None):
     cast = json.loads(V3.CAST_FILE.read_text())['cast']
     base = V.profiles['bot'] if speaker == 'maddie' else cast[CAST_KEY[speaker]]['prompt']
     voice = 'Aoede' if speaker == 'maddie' else cast[CAST_KEY[speaker]]['voice']
@@ -79,7 +93,7 @@ def profile(speaker, scene, how, text):
         base = base.replace(a, b)
     notes = [v for k, who, v in PRON if (who in (None, speaker)) and re.search(rf'\b{k}\b', text.lower())]
     how = '; '.join([how] + notes) if how else '; '.join(notes) or None
-    p, n = re.subn(r'(## THE SCENE\n).*?(\n\n###)', lambda m: m.group(1) + WHERE[scene] + m.group(2), base,
+    p, n = re.subn(r'(## THE SCENE\n).*?(\n\n###)', lambda m: m.group(1) + WHERE_BEAT.get((scene, beat), WHERE[scene]) + m.group(2), base,
                    count=1, flags=re.S)
     assert n == 1, speaker
     return V3.with_emotion(p, how), voice
@@ -107,7 +121,7 @@ def collect():
                     # end of "how" into E01, heard as "There you go"). Voiced with a hesitation before the
                     # split word so there is silence to cut in; it plays as her faltering to the empty chairs.
                     text = re.sub(rf'\s+({SPLIT_WORD})\b', r'... \1', text, count=1)
-                lines.append({'scene': sc, 'id': lid, 'speaker': ln['speaker'], 'frame': ln.get('frame'),
+                lines.append({'scene': sc, 'beat': b['key'], 'id': lid, 'speaker': ln['speaker'], 'frame': ln.get('frame'),
                               'text': ln['text'], 'spoken': text, 'lead': lead, 'how': ln.get('how'),
                               'derived': 'from' in ln, 'split': 'split' in ln})
     return lines
@@ -116,7 +130,8 @@ def collect():
 def take_job(ln, t):
     pkey = f"end-{ln['scene']}-{ln['id']}"
     if pkey not in V.profiles:
-        V.profiles[pkey], ln['voice'] = profile(ln['speaker'], ln['scene'], ln['how'], ln['spoken'])
+        V.profiles[pkey], ln['voice'] = profile(ln['speaker'], ln['scene'], ln['how'], ln['spoken'],
+                                                        ln['beat'])
     return {'key': f"{ln['id']}-{t}", 'who': pkey, 'voice': ln['voice'], 'text': ln['spoken'], 'how': None,
             'dir': CLIPS / ln['scene'] / 'voices', 'line': ln}
 

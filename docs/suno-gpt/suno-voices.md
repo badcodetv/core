@@ -550,6 +550,16 @@ the Variety step, 0 = Off). Bank Robbery's liked take ed6dd946 stored a differen
 sentence (`1970s funk soundtrack production … soft harmony pads … low rough male lead`), and ten
 rounds re-used the box instead of it. Round AA/AB re-runs the stored prompt at Variety Off.
 
+🆕 **Bank Robbery, Kai's song, 22 October 2026: an American voice made English.** Rounds E–F (a
+Salford punk poet over film-noir jazz, genre slot `British punk performance poetry` / `Salford punk
+performance poetry`) came back **American**. Round G fixed it, and Kai loved the take (`1f8c5f19`).
+The changes: the genre slot became a **tradition plus a place and year** (`British post-punk spoken
+word, a Salford working men's club in 1978`); the voice sentence moved **first**; the lyric label
+became `Salford poet`; a `New York rapper` cue was removed; Vocal Gender was set to Male. The
+**same jazz-noir band** stayed and the voice still came out English, so the American music did not
+outvote a strong British opening. Several things changed at once; one take; Kai's ear.
+`docs/stories/bank-robbery/songs/bank-robbery-poet.md` round G.
+
 **How to apply:** when a voice won't move, ask the human for a real singer who has it, write the
 name in the sheet, and put a translation (scene + era + voice + delivery) in the box. Check the
 music afterwards; if the scene stole it, move the music sentence back to the front.

@@ -1,6 +1,6 @@
 ---
 title: The Bank Robbery — the song, punk-poet sweep (round E)
-status: round E, six styles, generated 2026-10-21, unheard
+status: ⭐ PICK 2026-10-22 — br-poet-G-noir-v6-w60 (1f8c5f19), Kai loves it; awaiting Jack
 model: v6
 settings: style influence 75, weirdness 30 and 60 (the pair), Variety off, Max Mode off, Personalize off, Vocal Gender unset, no Voice, Duration 210 s
 workspace: bank-robbery-Kai
@@ -8,6 +8,24 @@ sibling: bank-robbery-ska.md (the 2-tone ska sound, which Kai is "leaning away f
 ---
 
 # The Bank Robbery — punk-poet sweep
+
+## ⭐ The pick (Kai, 22 October 2026)
+
+**`br-poet-G-noir-v6-w60`, take `1f8c5f19`:** https://suno.com/song/1f8c5f19-24e9-4f55-867d-6b15f3c20a0d.
+*"I've got a version I love."* It was made from the **G-noir** boxes (round G, below), the lyrics in
+`score.md` § Lyrics as of 22 October, and v6 at style influence 75, weirdness 60, Variety Off, Vocal
+Gender Male, Duration 210 s. The same boxes will not make it again: this take is the reference.
+Awaiting Jack.
+
+## 🔑 Current style prompt (Kai, 22 October 2026): E-noir
+
+The music sentence below is fixed. Only the voice sentence is being worked on (round F).
+Exclude list and settings as E-noir, further down.
+
+```
+British punk performance poetry as a film-noir confession, 100bpm: brushed snare and a slow walking upright bass in a smoky small room, a muted trumpet sting and a low string swell only on each reveal. The voice: a 1978 Salford punk poet, a breathless nasal Mancunian deadpan rant, machine-gun rhymes, dry and close to the mic; a small gang shouts the chorus back. Shadowy, played completely straight.
+```
+
 
 **Kai, 21 October 2026:** ska "is not the right style… One style I can't get out of my head is
 just like John Cooper Clarke, just like spoken poetry… with a kind of vague, occasional orchestral
@@ -180,4 +198,160 @@ Ran: 12 Creates, **120 credits (10,020 → 9,900)**, workspace `bank-robbery-Kai
 the balance had dropped 120 since round C. So another session used Suno in between. This run
 loaded over its form.
 
-**Pick:** ⬜ owed.
+**Pick (Kai, 22 October 2026):** ⭐ **E-noir is the current style.** *"E-Noir is an excellent
+style. I think the key thing though is that we need more of a British accent."* Kai has heard enough
+variations. Next: get the **voice** right (round F), and keep the noir music as it is.
+
+---
+
+## Round F (22 October 2026): the voice, with the noir music held
+
+Kai: *"we need more of a British accent… the grittiness of a UK poet from like the North maybe or
+like John Cooper Clarke… let's try to get the voice right first."* Two variations, each run as the
+pair.
+
+**The research** (a quick agent pass: 8 searches, plus our own notes):
+- Critics agree on three things: his voice is **nasal**, **Salford**, and **fast**. *"nasal twang"*
+  (The List), *"break neck speed"* (Lancaster SU), *"dark, deadpan… rattling at top speed"* (Time Out).
+  His delivery was modelled on **horse-racing commentary**, Peter O'Sullevan's in particular
+  (Wikipedia). He calls his own voice a "rich baritone", as a joke.
+- Mancunian accent features: the vowel in *bus* is the same as in *puss*, and the final *-y* in
+  words like *happy* is open.
+- **No tested way to make Suno do a British accent exists online.** Our own tests are stronger: accent
+  adjectives do nothing, and **the genre slot carries nationality**. So both variations put a
+  **place in the genre position** (`Salford…` / `1978 Manchester…`) instead of the vaguer `British`.
+
+**The two variations.** The noir music sentence, the Exclude list, the lyrics (poet cues in
+`score.md`) and the settings are all as E-noir.
+
+| Variation | Voice built from | Where it sits |
+| --- | --- | --- |
+| **F-mouth** | articulation: thin, nasal, reedy, flat northern vowels, dropped h's, glottal stops, the race-caller pace | music first (E-noir's order), with `Salford` in the genre slot |
+| **F-scene** | scene: a skinny Salford poet alone at a club mic, between punk support slots, in 1978 | **voice first**, with the noir band described after it |
+
+Two things change between them: the words and the placement. Neither is a pure test. Voice-first
+moved Jack's voices but cost him his music (`suno-voices.md` §2c), so if F-scene loses the noir
+band, the placement is the likely cause.
+
+#### F-mouth
+
+Style:
+
+```
+Salford punk performance poetry as a film-noir confession, 100bpm: brushed snare and a slow walking upright bass in a smoky small room, a muted trumpet sting and a low string swell only on each reveal. The voice: a thin nasal reedy Salford baritone, flat short northern vowels, dropped h's and glottal stops, a deadpan sardonic sneer at horse-racing-commentator pace, every rhyme snapped hard on the end of the line; a small gang shouts the chorus back. Shadowy, played completely straight.
+```
+
+#### F-scene
+
+Style:
+
+```
+1978 Manchester punk poetry: a skinny Salford performance poet alone at a club microphone between punk support slots, nasal deadpan wit, breakneck horse-racing-commentator delivery, sardonic couplets landing like punchlines; a small gang shouts the chorus back. Behind him a film-noir confession, 100bpm: brushed snare and a slow walking upright bass in a smoky small room, a muted trumpet sting and a low string swell only on each reveal. Shadowy, played completely straight.
+```
+
+Exclude styles (both, E-noir's unchanged):
+
+```
+singing, sung vocals, melodic vocals, crooning, rap, hip hop, reggae, ska, drum machine, synth, electric guitar, timpani, symphony orchestra, EDM, comedy, novelty, parody, kazoo, cartoon
+```
+
+### Round F log (22 October 2026)
+
+4 Creates, **40 credits (8,820 → 8,780)**, workspace `bank-robbery-Kai`, Duration 210 s. Unheard.
+
+| Take | Link |
+| --- | --- |
+| br-poet-F-mouth-v6-w30 | https://suno.com/song/a5815f06-2820-4fe9-93d6-5794335cd576 |
+| br-poet-F-mouth-v6-w30 | https://suno.com/song/3489ff64-73aa-40b8-940d-6df64d97f48d |
+| br-poet-F-mouth-v6-w60 | https://suno.com/song/61a8c7ac-6224-470a-bea0-b7bac28fb340 |
+| br-poet-F-mouth-v6-w60 | https://suno.com/song/c2dd947e-0c94-45f4-bc6f-312951a9f260 |
+| br-poet-F-scene-v6-w30 | https://suno.com/song/c14ae0ea-ba23-4100-b89f-58ba6fa420f6 |
+| br-poet-F-scene-v6-w30 | https://suno.com/song/0cf6f7a7-2d8c-492d-9dfc-4d9b5c8e3b84 |
+| br-poet-F-scene-v6-w60 | https://suno.com/song/a7f4112a-d4c8-4934-ab63-b74a551be229 |
+| br-poet-F-scene-v6-w60 | https://suno.com/song/01ba0432-10ca-4112-8826-2fcf554d6caa |
+
+**Pick:** ⬜ owed. Listen for two things: (1) is he British, and Northern? (2) did F-scene keep the noir band?
+
+---
+
+## Round G (22 October 2026): the English accent
+
+Kai on round F: *"he's sounding American and it just does not work for him to sound American for
+this song. He has to be English."*
+
+**Diagnosis: an accent audit of all three boxes.** Nationality comes from the pool words, not from
+accent adjectives (`suno-voices.md` §2a, Thread 5 §4). Three things were voting American:
+1. **The music.** Film noir with brushed snare, walking upright bass and a muted trumpet is Hollywood,
+   and an American narrator comes with that music.
+2. **A lyric cue said `deep slow New York rapper`** (the one-bar boom-bap moment). It now says
+   `a different deep slow voice`.
+3. **The words** (the Fed, dollars, stimulus checks, Biggie). They're Kai's and the joke needs them,
+   so they stay. The music and the casting have to outvote them.
+
+**What changes in round G:**
+- **The genre slot casts a British tradition**, the one that gave Camping a working-class English
+  bloke: `British post-punk spoken word`, set in **a Salford working men's club, 1978**.
+- **The voice comes first**, and keeps the round-F research: thin, nasal, reedy, flat short vowels,
+  dropped h's, deadpan and sardonic, at horse-racing-commentator pace.
+- **The lyric label** `punk poet` became `Salford poet`, because the cue counts as well.
+- **Two bands, the only difference between the two variations:**
+  - **G-noir:** the noir band Kai liked, unchanged.
+  - **G-carter:** British noir. The score of *Get Carter* (1971, Newcastle gangsters) is a tense
+    repeating harpsichord-and-double-bass riff with light hand percussion and electric piano. It's
+    still shadowy, but the pool it calls up is English.
+
+If G-carter is English and G-noir isn't, the jazz-noir band was the cause.
+
+#### G-noir
+
+Style:
+
+```
+British post-punk spoken word, a Salford working men's club in 1978: a skinny northern English performance poet, thin nasal reedy voice, flat short vowels and dropped h's, deadpan and sardonic, rattling his couplets at horse-racing-commentator pace; a small gang of lads shouts the chorus back. Behind him, a smoky small room: brushed snare, a slow walking upright bass, a muted trumpet sting and a low string swell only on each reveal. Played completely straight.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, melodic vocals, crooning, rap, hip hop, reggae, ska, drum machine, synth, electric guitar, timpani, symphony orchestra, EDM, comedy, novelty, parody, kazoo, cartoon
+```
+
+#### G-carter
+
+Style:
+
+```
+British post-punk spoken word, a Salford working men's club in 1978: a skinny northern English performance poet, thin nasal reedy voice, flat short vowels and dropped h's, deadpan and sardonic, rattling his couplets at horse-racing-commentator pace; a small gang of lads shouts the chorus back. Behind him, a 1971 northern English gangster-film score: a tense repeating harpsichord and double-bass riff, light hand percussion, a cold electric piano, a low string swell on each reveal. Played completely straight.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, melodic vocals, crooning, rap, hip hop, reggae, ska, jazz, trumpet, brushed snare, drum machine, synth, electric guitar, symphony orchestra, EDM, comedy, novelty, parody, kazoo, cartoon
+```
+
+### Round G log (22 October 2026)
+
+4 Creates, **40 credits (8,780 → 8,740)**, workspace `bank-robbery-Kai`, Duration 210 s, Vocal Gender
+**Male** (new this round). Lyrics: `score.md` § Lyrics after Kai's 22 October edit. Unheard.
+
+| Take | Link |
+| --- | --- |
+| br-poet-G-noir-v6-w30 | https://suno.com/song/0871697a-6287-4d20-98c2-cbfcb2760a74 |
+| br-poet-G-noir-v6-w30 | https://suno.com/song/6e03920a-f200-45e3-bbd2-08a665046d51 |
+| br-poet-G-noir-v6-w60 | https://suno.com/song/87ee5889-1dee-45e2-8e3f-fdd636ed2942 |
+| br-poet-G-noir-v6-w60 | https://suno.com/song/1f8c5f19-24e9-4f55-867d-6b15f3c20a0d |
+| br-poet-G-carter-v6-w30 | https://suno.com/song/101db75b-0ed2-46d7-b671-750792d3fd1c |
+| br-poet-G-carter-v6-w30 | https://suno.com/song/2dc2aaf0-17f3-4070-b2ef-13d6faeb3ab1 |
+| br-poet-G-carter-v6-w60 | https://suno.com/song/908fa76c-e027-4317-b086-6f73a0c5a415 |
+| br-poet-G-carter-v6-w60 | https://suno.com/song/54664b99-2c9c-432d-b704-450e0d608877 |
+
+**Verdict (Kai, 22 October 2026):** ⭐ **`br-poet-G-noir-v6-w60`, take `1f8c5f19`: "a version I love."**
+https://suno.com/song/1f8c5f19-24e9-4f55-867d-6b15f3c20a0d. Going to Jack for his say.
+
+**What this round taught:** the noir band won, so the jazz-noir music was **not** what made him
+American. What changed between round F (American) and this take: the genre slot became
+`British post-punk spoken word, a Salford working men's club in 1978`; the voice moved first; the
+lyric label became `Salford poet`; the `New York rapper` cue was removed; Vocal Gender was set to Male;
+and Kai edited the lyrics. Too many changes to name a single cause. The genre-slot tradition plus a
+place is the likeliest.

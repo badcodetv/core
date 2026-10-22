@@ -42,23 +42,25 @@
       "key": "c1",
       "at": "0.00",
       "name": "Off the step",
-      "blurb": "The blast doors stand open on daylight. The old lady comes out first, stops beside Maddie on the step, straightens her torn bunting, and sends her ahead. Trust given by an act, not a line.",
+      "blurb": "They have only just agreed to leave and they do not trust her yet. From inside the dark bunker, past the hundred's wary backs and faces (the old lady among them, silent), Maddie waits alone on the step in the daylight doorway, turned back to them. Nobody moves. She coaxes. Then the first one or two edge out into the light.",
       "lines": [
         {
-          "speaker": "lady",
-          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
-          "text": "Go on, then. You lead.",
-          "by": "claude",
-          "how": "dry, flat, not looking at her; said while her hand is still on the bunting, as if it were nothing",
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Go on. I promise you'll be okay.",
+          "by": "kai",
+          "how": "coaxing, gentle, sincere; to people who are frightened of her, not hurrying them",
           "frame": "C01"
         },
         {
           "speaker": "maddie",
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
-          "text": "Ooh. Ta.",
-          "by": "claude",
-          "how": "genuinely touched, trying not to make a fuss",
-          "frame": "C02"
+          "text": "You've got my word.",
+          "by": "kai",
+          "how": "gentle, sincere, a promise she means; quieter, after a beat",
+          "frame": "C01",
+          "gap_before": 1.2,
+          "note": "a beat after the line before; placed in the edit, voiced separately"
         }
       ]
     },
@@ -66,8 +68,28 @@
       "key": "c2",
       "at": "7.50",
       "name": "Into daylight",
-      "blurb": "The hundred file out of the hill, blinking. The kill bots' track marks are still gouged in the grass.",
-      "lines": []
+      "blurb": "The hundred file out of the hill, blinking. Maddie's joke gets them over the threshold. The kill bots' track marks are still gouged in the grass.",
+      "lines": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Careful now, humans.",
+          "by": "claude",
+          "how": "light, a little too cheerful, encouraging them out as they squint at the sky",
+          "frame": "C02",
+          "note": "Kai's words ('please go careful, humans'), Claude's wording, agreed in replies.lc1-1"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "I'm fairly sure there's no radiation round here.",
+          "by": "kai",
+          "how": "light, a little too cheerful; a tiny hesitation before 'fairly', which is the joke",
+          "frame": "C02",
+          "gap_before": 0.6,
+          "note": "the ~0.6 s beat after 'Careful now, humans.' is placed in the edit; voiced separately"
+        }
+      ]
     },
     {
       "key": "c3",
@@ -80,41 +102,35 @@
       "key": "c4",
       "at": "37.00",
       "name": "The seat",
-      "blurb": "Sandra and Derek, walking. The row, one last time, and what it now means.",
+      "blurb": "Sandra and Derek, walking. The row, one last time, and what it now means: nobody is coming back, and she is still right.",
       "lines": [
         {
           "speaker": "sandra",
           "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
-          "text": "Did you put the seat down?",
-          "by": "claude",
+          "text": "I hope you put that bloody seat down.",
+          "by": "kai",
           "how": "brisk, sideways, as if it is any other morning",
           "frame": "C04"
         },
         {
           "speaker": "derek",
           "voice": "Gemini TTS Algieba (cut3-cast.json man)",
-          "text": "We're not coming back, love.",
-          "by": "claude",
-          "how": "gentle, not looking at her",
+          "text": "Doesn't bloody matter now, love. We're not coming back, are we?",
+          "by": "kai",
+          "how": "weary, gentle, not looking at her; the second sentence quieter, the cost said plainly",
           "frame": "C05"
         },
         {
           "speaker": "sandra",
           "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
-          "text": "Did you put it down?",
+          "text": "It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you.",
           "by": "claude",
-          "how": "exactly the same, flat, unmoved",
-          "frame": "C05"
-        },
-        {
-          "speaker": "derek",
-          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
-          "text": "...Yes.",
-          "by": "claude",
-          "how": "after a long beat; defeated, fond",
-          "frame": "C05"
+          "how": "deadpan, certain, completely serious; lands on 'you'",
+          "frame": "C04",
+          "note": "Kai's joke (bc4), Claude's wording, Kai picked option (a) (answers_round1.Q1)"
         }
-      ]
+      ],
+      "after": "Derek: no line. A look (on C05)."
     },
     {
       "key": "c5",
@@ -125,20 +141,19 @@
         {
           "speaker": "derek",
           "voice": "Gemini TTS Algieba (cut3-cast.json man)",
-          "text": "Bloody hell.",
-          "by": "claude",
-          "how": "quiet, under his breath",
+          "text": "Bloody hell. Look at that building.",
+          "by": "kai",
+          "how": "awed, quiet, under his breath",
           "frame": "C06"
         },
         {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
-          "text": "I tried to make it nice.",
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Yeah. He's been working on this one for quite a long time.",
           "by": "claude",
-          "how": "a little shy, hopeful, the first time he has hosted anyone",
+          "how": "proud, fond, of her boss; a little understated",
           "frame": "C06",
-          "atom": "gpom-sh-end-ai-c1",
-          "fx": "speaker"
+          "note": "Kai's words (lc5-1), Claude's wording; assumes the vote scene has told them the time machine is in there"
         }
       ]
     },
@@ -146,17 +161,15 @@
       "key": "c6",
       "at": "66.00",
       "name": "Mind the step",
-      "blurb": "At the building: the amber seam has opened into a doorway with one low step. Maddie stops at it. The AI asks them in.",
+      "blurb": "At the building: the amber seam has opened into a doorway with one low step. Maddie stops at it and asks them in, a host at her boss's door. The boss does not speak in scene C: it is her scene.",
       "lines": [
         {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
           "text": "Come in. Mind the step.",
-          "by": "claude",
-          "how": "warm, precise, a host at his own door",
-          "frame": "C07",
-          "atom": "gpom-sh-end-ai-c2",
-          "fx": "speaker"
+          "by": "kai",
+          "how": "warm host at the door; welcoming, a little proud",
+          "frame": "C07"
         }
       ]
     }
@@ -166,27 +179,54 @@
       "id": "C01",
       "beat": "c1",
       "duration": 6,
-      "purpose": "The turn of the scene in one act: the woman who kept the machine on the step (scene B) comes out to the step herself, straightens its torn bunting, and sends it first. Trust given by a hand, not argued. The step itself is saved for C07.",
+      "purpose": "The turn of the scene: they do not trust her yet. From inside the dark bunker, past the hundred's wary backs and faces, Maddie alone on the step in the daylight, turned back to them, coaxing. Nobody moves.",
       "still": {
-        "prompt": "Using the first image for the old woman, the second image for the place and the third for the robot: a low medium shot from just outside the bunker, at the height of a small robot, of the old woman from the first image, the same face, grey hair in a bun, glasses and green cable-knit cardigan, who has just stepped out of the dark doorway between the open green steel blast doors into grey daylight and stopped on the concrete step beside the small grey six-wheeled delivery robot from the third image, its amber beacon lit and the torn, faded cloth bunting hanging across its front wheels. She is bending slightly, one hand reaching down to straighten the robot's torn bunting, her eyes on the open downs beyond the lens, mouth closed. Behind her, in the shadow of the tunnel, the faces of other survivors in worn jumpers and coats wait to come out. Overcast grey daylight, muted greens and greys, cinematic, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "prompt": "Using the first image for the robot, the second for the old woman and the third for the bunker: a low shot from inside the dark bunker corridor, looking out past the backs, shoulders and half-turned wary faces of survivors in worn jumpers, coats and woolly hats crowded in the shadow, towards the open green steel blast doors and the grey daylight beyond. Among the faces, to one side and lit by the doorway, the old woman from the second image, the same face, grey hair in a bun, glasses and green cable-knit cardigan, silent and unconvinced. Alone on the concrete step in the bright doorway, small, the small grey six-wheeled delivery robot from the first image, its amber beacon lit softly and the torn, faded cloth bunting hanging across its front wheels, turned back to face the people inside. Nobody has moved. Overcast grey daylight outside, deep shadow inside, muted greens and greys, cinematic, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
         "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg",
           "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg",
-          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S6-c.jpg",
-          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S6-c.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "inside the bunker looking out; the doorway the one bright region"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The survivors in the shadow stay still, wary, shifting their weight. In the bright doorway the small grey robot waits on the step, facing them, its amber beacon pulsing softly as if speaking. Its torn bunting stirs in the wind from outside. Nobody walks. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "Premiere: slow push 100% to 106% over the shot, eased"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "fallback": "the new still with a Premiere drift and Maddie's two lines over it",
+      "note": "Maddie has no mouth: her lines need no lip-sync (beacon pulses on her words in post). The old lady is visible and silent (answers_round1.Q2).",
+      "todo": true,
+      "todo_note": "NEW SHOT (Kai round 1, bc1): new still options (free) then a clip. The old still/clip (the lady straightening the bunting) is superseded."
+    },
+    {
+      "id": "C01b",
+      "beat": "c1",
+      "duration": 5,
+      "todo": true,
+      "todo_note": "NEW SHOT (Kai round 1, bc1): still options then a clip.",
+      "purpose": "The first choice: one or two of the hundred edge forward out of the shadow into the light, past Maddie on the step.",
+      "still": {
+        "prompt": "Using the first image for the robot and the second for the bunker: a low shot from just outside the open green steel blast doors of the bunker in the grassy chalk hillside, the small grey six-wheeled delivery robot from the first image, its amber beacon lit and the torn, faded cloth bunting hanging across its front wheels, on the concrete step to one side. From the dark doorway behind it a middle-aged man and a woman in worn coats edge out into the grey daylight, hesitant, one hand raised against the light, squinting at the sky; more faces wait in the shadow behind them. Overcast grey daylight, muted greens and greys, cinematic, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S6-c.jpg"
         ],
         "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
         "look": "cut3 exterior (S6-c), overcast"
       },
       "motion": {
-        "prompt": "The camera does not move. The old woman straightens the robot's torn bunting with one hand, gives it a small pat, then straightens up, looks out at the downs and speaks, dry and calm. She says: Go on, then. You lead. Then she closes her mouth and holds still. The robot's amber beacon pulses once. The people behind her in the dark stay still. The camera does not move.",
+        "prompt": "The camera does not move. The man and the woman take two slow, hesitant steps out of the doorway into the daylight, squinting up at the sky. The people behind them in the shadow begin to shuffle forward. The robot's amber beacon pulses once. Every person keeps their shape. The camera does not move.",
         "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
-        "post": "Premiere: slow push 100% to 106% over the shot, eased"
+        "post": "none"
       },
-      "talking": "lip-sync-dub: lady, \"Go on, then. You lead.\" (6 s clip, one phrase, after the hand on the bunting)",
+      "talking": false,
       "continuous": false,
-      "reuse": null,
-      "fallback": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg as a still with the line over it (no new clip)",
-      "note": "Check against Kai's vote scene once it exists: that scene has Maddie on the step throughout, and this act must not repeat or contradict how it ends. **Kai to rule** (brief review, finding 6)."
+      "reuse": null
     },
     {
       "id": "C02",
@@ -212,7 +252,7 @@
       "continuous": false,
       "reuse": "fallback only: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-19-SBEMERb.mp4 (17 Oct; the bunker in it is NOT the S6-c bunker of scene B, so not first choice)",
       "visible_cost": "the kill bots' track marks in the grass; the hundred themselves, worn and carrying everything they own",
-      "note": "Risk: Omni and crowds (few movers rule). Keep the crowd mid-ground and slow; re-roll once at most, then use the still with a Premiere drift."
+      "note": "Risk: Omni and crowds (few movers rule). Keep the crowd mid-ground and slow; re-roll once at most, then use the still with a Premiere drift. Maddie's 'Careful now, humans.' / 'I'm fairly sure there's no radiation round here.' play over this shot (and may start over the tail of C01b); no lip-sync."
     },
     {
       "id": "C03",
@@ -242,7 +282,7 @@
       "id": "C04",
       "beat": "c4",
       "duration": 6,
-      "purpose": "The row, one last time, said as if nothing has changed. The joke the audience is already in on.",
+      "purpose": "The row, one last time, said as if nothing has changed; then the punchline she has been saving for ten thousand years.",
       "still": {
         "prompt": "Using the first image for the woman: a medium close-up of the woman from the first image, the same face, brown hair tied back and cream Aran roll-neck jumper walking towards the camera along a chalk track on the open downs, a worn waxed coat over the jumper, the line of other walkers soft behind her. She glances sideways at someone walking beside her, just out of frame on the left, mouth closed, brisk. Overcast grey daylight, muted greens and greys, cinematic, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
         "refs": [
@@ -253,19 +293,22 @@
         "look": "overcast downs"
       },
       "motion": {
-        "prompt": "The camera does not move. The woman walks steadily towards the camera, glances sideways to her left and speaks, brisk and matter-of-fact. She says: Did you put the seat down? Then she closes her mouth and keeps walking, looking ahead. The people behind her keep walking. The camera does not move.",
+        "prompt": "The camera does not move. The woman walks steadily towards the camera, glances sideways to her left and speaks, brisk and matter-of-fact. She says: I hope you put that bloody seat down. Then she closes her mouth and keeps walking, looking ahead. The people behind her keep walking. The camera does not move.",
         "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
-        "post": "Premiere: none (she walks into a locked frame)"
+        "post": "Premiere: none (she walks into a locked frame)",
+        "prompt_2": "The camera does not move. The woman walks steadily towards the camera looking straight ahead, completely serious, and speaks, deadpan and certain. She says: It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you. Then she closes her mouth and keeps walking. The people behind her keep walking. The camera does not move."
       },
-      "talking": "lip-sync-dub: sandra, \"Did you put the seat down?\" (6 s clip)",
+      "talking": "lip-sync-dub: sandra, \"I hope you put that bloody seat down.\" (6 s clip) and \"It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you.\" (8 s clip, the punchline lands on 'you')",
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "todo": true,
+      "todo_note": "NEW LIP-SYNC CLIP(S) (Kai round 1, lc4-0, bc4): Sandra's two new lines. Same plate; one clip per line, or one longer clip if Omni holds the silence."
     },
     {
       "id": "C05",
       "beat": "c4",
       "duration": 8,
-      "purpose": "The cost said plainly inside the joke: they are not coming back. And he still says yes.",
+      "purpose": "The cost said plainly inside the joke: they are not coming back. Then he loses the argument without a word.",
       "still": {
         "prompt": "Using the first image for the man: a medium close-up of the man from the first image, the same face, dark untidy hair, stubble and dark green jumper walking towards the camera along a chalk track on the open downs, a donkey jacket over the jumper, the line of walkers soft behind him. He looks straight ahead, not at the woman beside him, jaw set, mouth closed. Overcast grey daylight, muted greens and greys, cinematic, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
         "refs": [
@@ -276,14 +319,16 @@
         "look": "overcast downs"
       },
       "motion": {
-        "prompt": "The camera does not move. The man walks steadily towards the camera looking straight ahead and speaks gently. He says: We're not coming back, love. Then he walks on in silence for three seconds, his jaw set. Then he lets out a breath and says: Yes. Then he closes his mouth and keeps walking. The camera does not move.",
+        "prompt": "The camera does not move. The man walks steadily towards the camera looking straight ahead and speaks, weary and gentle. He says: Doesn't bloody matter now, love. We're not coming back, are we? Then he closes his mouth and walks on in silence, his jaw set. After a few seconds he turns his head and gives the woman beside him a long, flat look, saying nothing. The camera does not move.",
         "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
         "post": "none"
       },
-      "talking": "lip-sync-dub: derek, two phrases (\"We're not coming back, love.\" / \"Yes.\"), Sandra's off-screen \"Did you put it down?\" sits in his silent beat",
+      "talking": "lip-sync-dub: derek, \"Doesn't bloody matter now, love. We're not coming back, are we?\"; then his silent look (Sandra's punchline off-screen, or cut to C04 and back for the look)",
       "continuous": false,
       "reuse": null,
-      "note": "If Omni will not hold the silence, make two 6 s clips from the same plate (the 17-6b lesson in cut3-shots.md)."
+      "note": "If Omni will not hold the silence, make two clips from the same plate: the line, and the look (the 17-6b lesson in cut3-shots.md).",
+      "todo": true,
+      "todo_note": "NEW LIP-SYNC CLIP (Kai round 1, lc4-1, bc4): Derek's new line, then hold a silent look after Sandra's punchline (no reply)."
     },
     {
       "id": "C06",
@@ -291,7 +336,7 @@
       "duration": 8,
       "purpose": "The reveal: the AI's world, seen past what it cost to get here. Lived-in, ragged and tired in the foreground, black glass and one amber line below. The contrast is the point. The hundred stop.",
       "still": {
-        "prompt": "Using the first image for the building and the second for the old woman seen from behind: a wide shot from just behind a crowd of survivors who have stopped on the crest of a green chalk down, the backs of their heads, worn coats and woolly hats filling the bottom of frame, the old woman's grey bun among them. In the near foreground an old man with a walking stick is being helped to sit down on the wet grass by a younger man with a hand on his shoulder, exhausted, and beside them a shopping trolley piled with blankets lies tipped over in the mud. Below them the land falls away into a fold of the downs, and in it lies a long, low building of black glass, many times longer than it is tall, with one single thin horizontal seam of warm amber light running its whole length, set down in a fold between two green chalk downs, the only made thing in sight; no windows, no signs, no other lights. Cloud shadows lie across the downs. On the crest at the front of the crowd, small, the small grey six-wheeled delivery robot from the third image, its amber beacon lit and the torn, faded cloth bunting hanging across its front wheels. Overcast grey daylight, muted greens and greys, cinematic, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "prompt": "Using the first image for the building and the second for the old woman seen from behind: a wide shot from just behind a crowd of survivors who have stopped on the crest of a green chalk down, the backs of their heads, worn coats and woolly hats filling the bottom of frame, the old woman's grey bun among them. In the near foreground an old man with a walking stick is being helped to sit down on the wet grass by a younger man with a hand on his shoulder, exhausted. Below them the land falls away into a fold of the downs, and in it lies a long, low building of black glass, many times longer than it is tall, with one single thin horizontal seam of warm amber light running its whole length, set down in a fold between two green chalk downs, the only made thing in sight; no windows, no signs, no other lights. Cloud shadows lie across the downs. On the crest at the front of the crowd, small, the small grey six-wheeled delivery robot from the third image, its amber beacon lit and the torn, faded cloth bunting hanging across its front wheels. Overcast grey daylight, muted greens and greys, cinematic, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
         "refs": [
           "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/BL1-day.jpg",
           "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg",
@@ -304,12 +349,14 @@
       "motion": {
         "prompt": "The camera does not move. Cloud shadows race across the downs and over the black building. The amber seam along the building slowly brightens, as if breathing. In the foreground the old man lowers himself onto the grass, helped, and sits, breathing hard. The wind moves the grass and the people's coats; nobody else walks. The small robot's amber beacon pulses twice. The camera does not move.",
         "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
-        "post": "Premiere: slow push 100% to 112% over 8 s, eased in and out; ffmpeg/Premiere beacon pulse on the AI's words"
+        "post": "Premiere: slow push 100% to 112% over 8 s, eased in and out; ffmpeg/Premiere beacon pulse on Maddie's words"
       },
       "talking": false,
       "continuous": false,
       "reuse": null,
-      "visible_cost": "in the foreground: the old man on his stick being helped down to sit, exhausted; the trolley of blankets tipped in the mud; worn coats. The monument is seen past them, never alone"
+      "visible_cost": "in the foreground: the old man on his stick being helped down to sit, exhausted; worn coats. The monument is seen past them, never alone",
+      "todo": true,
+      "todo_note": "PAINT OUT (Kai round 1, bc5): remove the tipped shopping trolley and blankets from the picked still (flow_edit_image, free), keep the old man on his stick, then re-animate (one clip). Derek's and Maddie's lines play over it: Derek is among the backs, so no lip-sync unless a Derek insert is wanted (replies.lc5-0 mentions one; not planned)."
     },
     {
       "id": "C07",
@@ -332,12 +379,18 @@
       },
       "talking": false,
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "note": "Maddie says 'Come in. Mind the step.' (not the AI); no talking face, beacon pulse on her words in post. Same shot (Kai: 'great shot')."
     }
   ],
   "boards": {},
   "cut": {
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/edl.json",
     "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/preview.mp4"
+  },
+  "round1": {
+    "date": "2026-10-22",
+    "source": "Kai round 1, 2026-10-22 (cut-notes.json kai_round1)",
+    "changes": "Lines rewritten per Kai's notes; the AI is silent in scene C; frames marked todo:true need Flow work (C01, C01b, C04, C05, C06)."
   }
 }
