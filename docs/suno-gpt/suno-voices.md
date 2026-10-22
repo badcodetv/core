@@ -665,6 +665,15 @@ Lead vocal sentence, set the gender, excludes aimed at this voice, section cues,
 prompt). Only bring house rules in once a take is liked and is being refined, one rule at a time,
 each tested against the take.
 
+### 2g. 🔑 Standing rule: the clean-room / basic method (Jack, 2026-10-22)
+
+*"Remember that the repo and Suno skills just make the same song, so it is useful to use the clean
+room or basic version. We will give it a better name later."* The method and its evidence are at the
+top of `.claude/skills/suno-prompt/SKILL.md`. In short: a fresh helper with a plain brief writes the
+prompts, they run verbatim, and each one varies the delivery category. Bank Robbery Rounds CR, SW, BB
+and GG used it; VB and BO show the two ways it still fails (a shared paragraph; a transplanted voice
+sentence).
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact

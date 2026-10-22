@@ -132,6 +132,72 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round GG (2026-10-22): basic prompts — the gangster voice leads, a touch of falsetto, more psychedelic funk
+
+Jack, after BB: "more of the gangster voice, very little of the falsetto. Please do a basic prompt not using the skills or repo, so it doesn't get confused. Listen to 024b82e8 and try and make this song with the new voices, more psychedelic funk stuff."
+
+Listened again (`docs/listening/log/2026-10-22-173617-…024b82e8.md`): boom-bap drums ~86–93 BPM, a bluesy fingerpicked acoustic guitar in the intro, breaks and outro, wah/envelope-filtered overdriven electric stabs in the hooks, warm saturated bass, tape delay, vinyl noise, hard drops in and out. A fresh helper got only that description in plain words plus the brief (no repo, no skill, no earlier prompts) and wrote six basic prompts; the falsetto appears at most as one echo or line (g4 has none). Run verbatim. Kai's words unchanged (checked). Unheard.
+
+#### GG · g1-classic — Classic psych funk heist
+
+Weirdness 45, style influence 65, Variety normal, Vocal Gender male, Duration 240 s.
+
+```
+Dark psychedelic funk boom-bap, 90 BPM, British crime heist feel. Punchy drums, warm fuzzy bass, bluesy fingerpicked acoustic guitar breaks, wah-wah electric guitar stabs, tape delay, vinyl crackle. Old gravelly London man speaks the verses, calm and wry; shouted English gang chorus.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar`
+
+#### GG · g2-organ-phaser — Organ and phaser trip
+
+Weirdness 55, style influence 60, Variety high, Vocal Gender male, Duration 245 s.
+
+```
+Psychedelic funk with boom-bap drums, 88 BPM, gritty London underworld. Hammond organ, phaser on the guitars, fuzz bass, wah-wah stabs, fingerpicked acoustic blues guitar in the quiet breaks, spring reverb and tape echo. Old English man talks the verses like a story at the bar; gang shouts on the hook.
+```
+
+Exclude: `american accent, fast rap, screaming, indian`
+
+#### GG · g3-sparse-drops — Sparse storyteller, big drops
+
+Weirdness 40, style influence 70, Variety normal, Vocal Gender male, Duration 250 s.
+
+```
+Lean dark funk boom-bap, 86 BPM, British heist film. Lots of space: bluesy fingerpicked acoustic guitar and dusty drums under the talking, then the full band slams in with wah guitar and fat bass on the hook. Tape delay, vinyl hiss. Calm gravelly old Londoner speaking, unhurried.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar, singing verses`
+
+#### GG · g4-no-falsetto — No falsetto, gang only
+
+Weirdness 45, style influence 70, Variety normal, Vocal Gender male, Duration 235 s.
+
+```
+Gritty psychedelic funk hip hop, 92 BPM, London gangster film. Boom-bap drums, saturated bass, envelope filter guitar stabs, bluesy acoustic fingerpicking in the breaks, swirling tape echo. Old London geezer speaks every verse, gravelly and wry; rowdy English male gang shouts the chorus.
+```
+
+Exclude: `american accent, falsetto, fast rap, screaming, sitar`
+
+#### GG · g5-clav-flute — Clavinet and flute funk
+
+Weirdness 50, style influence 60, Variety high, Vocal Gender male, Duration 240 s.
+
+```
+Seventies psychedelic funk meets boom-bap, 90 BPM, dark and gritty British crime caper. Clavinet, wah guitar, breathy flute riffs, warm bouncing bass, bluesy fingerpicked acoustic guitar, vintage room reverb, tape noise. Old gravelly London man tells the story in a calm speaking voice; gang shouts on the hook.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar`
+
+#### GG · g6-acid-haze — Deep acid funk haze
+
+Weirdness 65, style influence 55, Variety high, Vocal Gender male, Duration 250 s.
+
+```
+Heavy psychedelic acid funk with boom-bap drums, 88 BPM, dark smoky London heist. Fuzz and wah guitars, backwards guitar swirls, Leslie speaker organ, deep saturated bass, bluesy acoustic fingerpicking, long tape delays. Weathered old Londoner talks calmly over it, wry and gravelly; shouted gang hook.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar, edm`
+
 ### Round BB (2026-10-22): stripped to basics — no repo, no Suno skill
 
 Jack, after DU: "the same thing has happened, do what you did before and strip it down to basics, without using the repo or the suno skill, because it keeps making the same voice." A fresh helper got a plain-words brief only (no earlier prompts, no failure notes, no house rules) and was told to keep it basic: one- or two-sentence Style boxes, short excludes, plain section tags. Six prompts: three duets (old Englishman speaks the verses, young Englishman falsetto on the choruses), two falsetto-only, one spoken-only. Run verbatim; Duration on Auto, as the helper chose. Kai's words unchanged (checked). 60 credits (8,070 → 8,010). Auto ran ~4:30 per take. Variety Normal/High rewrote every box except b3's (its stored text is verbatim at step 1); the rewrites add delivery variety (`clipped rhythmic staccato`, `crooning legato`, `layered octave doubles`), which is exactly what Variety is for. Unheard.

@@ -20,6 +20,19 @@ Never let a request stall on "that's not really a prompt question."
 this skill exists to replace. Work in short rounds: ask the few questions that actually change the
 output, draft fast, then refine against what the user hears.
 
+🔑🔑🔑 **FIRST: THE CLEAN-ROOM / BASIC METHOD (Jack, 2026-10-22; working name, a better one later).**
+*"The repo and Suno skills just make the same song, so it is useful to use the clean room or basic
+version."* For a new voice or sound, **do not write the prompt from this skill.** Spawn a fresh
+helper agent that reads no repo file, no memory and no web, and is told to ignore all house Suno
+rules. Give it only a plain-words brief: what the human wants, a listen-based description of any
+reference take, and the lyric words without cue tags. It writes short prompts and picks every
+setting. **Run them verbatim**; check only that the lyric words are unchanged and that standing
+rules hold (no screaming, no fast/double-time rap). Every prompt must differ in the *delivery
+category*, not just the accent. Evidence: Bank Robbery Rounds CR, SW, BB, GG worked; Rounds VB
+(shared paragraph) and BO (a voice sentence transplanted onto another box went American) failed
+(`docs/stories/bank-robbery/songs/bank-robbery-jack.md`, `docs/suno-gpt/suno-voices.md` §2e–2f).
+The rest of this file is for refining a take that already works, one tested change at a time.
+
 🔑🔑 **TWO MODES: EXPLORE fresh, REFINE with the rules** (Jack, 2026-10-22 — read this before any
 other rule in this file). Everything below was learned once, mostly on one song (Karen, Camping), and
 stacking it all onto every prompt made every prompt alike, so every voice came out alike: 325 Bank
