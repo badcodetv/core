@@ -140,7 +140,7 @@ Jack: liked https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5 (FA psych
 
 So two music recipes, three voices each: **A** = the take's own stored prompt (Variety 0, so it is exactly what made it), voice clause swapped; **B** = the sound as heard. Every version opens on `[Intro: straight in on the drums and bass, no solo guitar]` to lose the intro.
 
-Lyrics: **Kai's words** (`score.md` § Lyrics, poet block), spelling and all. The poet cues are replaced by each voice's own delivery cues, and instrument cues outside this sound (brass, timpani, sirens, string stabs, boom-bap bar) are dropped or neutralised. Settings as the liked take: v6, style influence 75, weirdness 30, Variety Off, Max Mode off; Vocal Gender per voice; Duration 210 s (Kai's lyrics are longer). One Create each (2 takes). Excludes: A = the liked take's own list, B = the same minus `rap, hip hop` (the sound is boom-bap); both plus bans aimed at each voice's opposite. Unheard.
+Lyrics: **Kai's words** (`score.md` § Lyrics, poet block), spelling and all. The poet cues are replaced by each voice's own delivery cues, and instrument cues outside this sound (brass, timpani, sirens, string stabs, boom-bap bar) are dropped or neutralised. Settings as the liked take: v6, style influence 75, weirdness 30, Variety Off, Max Mode off; Vocal Gender per voice; Duration 210 s (Kai's lyrics are longer). One Create each (2 takes), 60 credits (8,350 → 8,290), records checked: Kai's lyrics, Variety 0. Excludes: A = the liked take's own list, B = the same minus `rap, hip hop` (the sound is boom-bap); both plus bans aimed at each voice's opposite. Unheard.
 
 #### KA · a-yorkshire
 
@@ -152,6 +152,9 @@ English psych folk funk, 100 BPM: a middle-aged Northern English man, gravelly b
 
 Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, falsetto, crooning`
 
+- brj-kai-a-yorkshire-v6-w30 — 3:28 — https://suno.com/song/7cc394c7-04a7-4e73-b002-081f9479b085
+- brj-kai-a-yorkshire-v6-w30 — 3:30 — https://suno.com/song/26f4197b-57e3-46b8-adf7-4d5e92296250
+
 #### KA · b-cockney
 
 Vocal Gender female.
@@ -161,6 +164,9 @@ Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco ben
 ```
 
 Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, male vocals, breathy, soft`
+
+- brj-kai-b-cockney-v6-w30 — 3:29 — https://suno.com/song/81953c32-790e-4cb8-b1f3-d0a6ade93499
+- brj-kai-b-cockney-v6-w30 — 3:28 — https://suno.com/song/9a8c5456-d448-45cf-bcf1-91bfcc406bdf
 
 #### KA · a-posh
 
@@ -172,6 +178,9 @@ English psych folk funk, 100 BPM: an upper-class English gentleman, crisp receiv
 
 Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, shouting, cockney`
 
+- brj-kai-a-posh-v6-w30 — 3:28 — https://suno.com/song/33c3b4ef-4b81-4cf9-8027-b92bb874355b
+- brj-kai-a-posh-v6-w30 — 3:28 — https://suno.com/song/a35e7452-8878-49a4-8cc3-074933fa1e37
+
 #### KA · b-smoky
 
 Vocal Gender female.
@@ -181,6 +190,9 @@ Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco ben
 ```
 
 Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, young pop voice, belting`
+
+- brj-kai-b-smoky-v6-w30 — 3:30 — https://suno.com/song/c7275407-2d79-462f-a3a6-f3c558f6b1a2
+- brj-kai-b-smoky-v6-w30 — 3:29 — https://suno.com/song/5cc1cef3-89e9-4845-ba51-e8334273f81d
 
 #### KA · b-brummie
 
@@ -192,6 +204,9 @@ Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco ben
 
 Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, crooning, smooth vocal, falsetto`
 
+- brj-kai-b-brummie-v6-w30 — https://suno.com/song/dadf7c38-ab77-497a-aa0b-fecebb45db6c
+- brj-kai-b-brummie-v6-w30 — https://suno.com/song/bb14a2ba-c55b-47c3-a220-7cc44b116d7f
+
 #### KA · a-choirgirl
 
 Vocal Gender female.
@@ -201,6 +216,9 @@ English psych folk funk, 100 BPM: a young English woman, high clear choirgirl so
 ```
 
 Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, belting, growl`
+
+- brj-kai-a-choirgirl-v6-w30 — https://suno.com/song/3f72591f-6800-46ed-b8ed-172b4efb3bd2
+- brj-kai-a-choirgirl-v6-w30 — https://suno.com/song/ec27fc9a-eb26-4d82-bd35-98aa4b5c6ca4
 
 Lyrics (the Yorkshire version; the others differ only in the {V}/{C} delivery words):
 
