@@ -1,5 +1,5 @@
 {
- "spent": 516,
+ "spent": 576,
  "jobs": [
   {
    "key": "V6-1",
@@ -165,6 +165,31 @@
    "key": "L07d-1",
    "cost": 20,
    "at": "2026-10-21T18:59:03.912Z"
+  },
+  {
+   "key": "V2r2",
+   "cost": 12,
+   "at": "2026-10-22T15:15:09.053Z"
+  },
+  {
+   "key": "V2r2-t2",
+   "cost": 12,
+   "at": "2026-10-22T15:17:59.027Z"
+  },
+  {
+   "key": "V13-S11c-patrol",
+   "cost": 12,
+   "at": "2026-10-22T15:20:42.771Z"
+  },
+  {
+   "key": "V1r-S11c-pass",
+   "cost": 12,
+   "at": "2026-10-22T15:22:27.692Z"
+  },
+  {
+   "key": "V14-S12d-roam",
+   "cost": 12,
+   "at": "2026-10-22T15:24:09.063Z"
   }
  ],
  "keys": [
@@ -216,6 +241,11 @@
   "https://flow.google.com/asb/ANqvLOZXOqeGKjYya7ALd3ZfUT67MeqBfz1RQDi5dgdUSdbgMW8xrj0RGZ6u7iUB4wvvbsgYq-7aPny7SmMiJ61x_Tlmm8dHIQn0xdIy77KADRbpgc5NaM_jiz1K0BFa8meMp_2eQWnX10rsyWp92j7_cO6Wke7TbRQc_tg99wrL",
   "https://flow.google.com/asb/ANqvLOZP2ptfq8GbDkWwEXJ_-wK1W9fTwjosKe6CXGz4eHHPIWfM_TE_MsSWI1E-54VUSKBt98XYZcG0EGARxl__9T4B5oPYr7MJuk0uCqjmA__QqJbPKzXHvHUJWggRVwhNAVjCYABM6qvfg2tOCmHqYhXqCDfts1L7sXHDZgY_",
   "https://flow.google.com/asb/ANqvLObEv7qJHZxFxfvuNfMdGT_PDk-Alva5sWI4e8G7d8E8y5Z0F6fJk2UaRbbza6CVXgrP8YUObX9rSu23Faw7Z1kKDmZoRhd2iIrQlQCDzEBxEuW1do4I12x0V1z8Q6s0r8Q5s8Cot8GtpQmIrT_wNKX_YJw3jwdL6FOGHeo2rA",
-  "https://flow.google.com/asb/ANqvLOZhYGZvIAo52sa2UCyBTljL_cNUEsaMcmaZUgQPoXS8SZEzCaPIgg_gz1fDc66fBGziK2GOGpUyz6TeAvnrfY6RqEwsmAx5s_WwQAC5kZBnQXWty7Qz9Qtu7h1UDtY_WcJpyk3Tjgi1uweqfi8zTjXuW9lMDuNZ_G9Pu2lC"
+  "https://flow.google.com/asb/ANqvLOZhYGZvIAo52sa2UCyBTljL_cNUEsaMcmaZUgQPoXS8SZEzCaPIgg_gz1fDc66fBGziK2GOGpUyz6TeAvnrfY6RqEwsmAx5s_WwQAC5kZBnQXWty7Qz9Qtu7h1UDtY_WcJpyk3Tjgi1uweqfi8zTjXuW9lMDuNZ_G9Pu2lC",
+  "https://flow.google.com/asb/ANqvLOaMdOvD8jhUnIqHPH44-FEbPDLDfPLsm6PzABqXAZbWyJU2bFHCDkinCFFocRWx6DePtGuLp2x_x2efcMJKuP4OiywRJf4_Q828_RtzrDN3kYCv9nlVl-XanyzjH8oS5T3V_XmiLfq3X-Xspu6QQ375tgq5ZrwJjkqPHl7Q",
+  "https://flow.google.com/asb/ANqvLOY9OkR9pJSd6L1o7yrHCIuX6vCYgmqYyHU26hU8hpUUJAwe-_oY11WKjSqfyqEJenqRIJE6miFZBf2qIuC8RfhhWrOzrDmo3Ne_q5adZoZg59z65MtNChUsnJOxi_Dkv5txz1po3yKF-HUV2uj1w5jHTpXsFSLCC8uw3cG1SA",
+  "https://flow.google.com/asb/ANqvLObgOi3eehb7kx7S3TKqDvTDkTNlnrfqZFhUTLAkjoylZeRODACMn7EoTwbUI6YtdJNCb-EHjzrA8PqYXJPtp9ubPj3vNXEisjbYp2-feh4LG61GGh1REDspSG5W7GS508QaApVUgkb4kHPQAKIOmMmECh-unS35-kEZy6C0LQ",
+  "https://flow.google.com/asb/ANqvLOaTzf19h8SIYzhgS0TjwOAPFua-VPKgJQIYVcPoPBNxCACxQNRKgRaNpMvEW8uqmGugjzXEGo-a4TzoKaSMw6u87X4S2eo-grGSCau3N3ATlSOSXJUfgkFIkyogTJ9KH7L1UTGKIh7AQHJWD3aUGTCArMZgi9Ca0ncRxmA1oA",
+  "https://flow.google.com/asb/ANqvLObHGABxux-jTw1upZ3fMmDozVjSwHauc22v5EyWe32hrMwx7DTQI66izBHH71YP5Gmb7j_wDes9279FLfEj3-C4toZnjOtlHcP0Ke2BcIBmNq8jawwG-iZVoTXcYeGQmUmF-dugwWKsd107l05c8KKPSeF-q1751fge2wmKjg"
  ]
 }

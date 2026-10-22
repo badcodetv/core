@@ -1,6 +1,6 @@
 ---
 title: GPOM second half, scene A (kill bots): the boss's lines + the music
-status: 🟡 round 1 generated, unheard. Picks owed (Kai)
+status: 🟡 round 2 (22 Oct) — P picked (P1 w60 57b65bfc, P2 w30 49a6688a); boss per-line atoms + C3/C4 generated, picks owed (Kai)
 kind: one narrator take (the boss, dry) + two instrumental cues (P the patrol, C the chase and the call)
 model: v6
 workspace: gpom-story
@@ -19,6 +19,8 @@ uses his exploit. This sheet holds the three things Suno makes for it:
 | `gpom-sh-a-boss` | the boss's four lines, one take, cut apart in the edit | Suno, Voice `badcode newsreader` | 40 |
 | `gpom-sh-a-P1` / `gpom-sh-a-P2` | cue P, **the patrol**: roaming → the muffled argument → kill mode | Suno, instrumental | 45 |
 | `gpom-sh-a-C1` / `gpom-sh-a-C2` | cue C, **the chase and the call**: racing to the bunker under Maddie's call → stand down | Suno, instrumental | 60 |
+| `gpom-sh-a-boss-1` … `-4` | **round 2:** the boss's four lines, **one atom per line** (Kai: none of round 1's one-take reads worked) | Suno, Voice `badcode newsreader` | 15 |
+| `gpom-sh-a-C3` / `gpom-sh-a-C4` | **round 2:** cue C again, **dramatic and dark** (Kai: C1/C2 "too happy… not just sort of fun notes") | Suno, instrumental | 60 |
 
 **Kai's brief for the music (2026-10-21):** *"more sparse orchestra, solo violin, cello… not
 Beethoven's 5th, more Chopin."* Intimate, NOT action-movie. Tension by silence, not drums.
@@ -74,6 +76,105 @@ Oh. ... Oh, wow. ... And they've activated their firewalls.
 [Spoken, calm, firm]
 No. I've got it.
 
+[Spoken, relieved, wry]
+Phew. Glad I kept that little exploit up my sleeve.
+[End]
+```
+
+## Round 2: the boss, one line per atom
+
+Kai on round 1 (22 Oct): *"none of them quite work… it's hard with Suno… just voice alone… each time 'Maddie,
+are you making fun of my simulations again?' I would pick one of those. So I just wonder if we need to do each
+line on its own… the boss doesn't need to speak that much."* So each line is its own atom, read once, with a
+short style and **one** delivery cue (v6 narration prompts stay simple: long styles and many cues mangle words).
+
+Settings for all four: v6 · Voice **`badcode newsreader`** · Style Influence 50 · Audio Influence 65 · Weirdness
+**pair 25 / 10** · Duration 15 (line 2, the longest: 20) · Variety, Max Mode, Personalize Off · workspace `gpom-story`. Exclude styles: the
+same list as `gpom-sh-a-boss`, in each block.
+
+### `gpom-sh-a-boss-1` — "making fun of my simulations"
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, mildly amused. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, mildly amused]
+Maddie, are you making fun of my simulations again?
+[End]
+```
+
+### `gpom-sh-a-boss-2` — "they've activated their firewalls"
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, quietly surprised. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, quiet surprise]
+Oh. ... Oh, wow. ... And they've activated their firewalls.
+[End]
+```
+
+### `gpom-sh-a-boss-3` — "No. I've got it."
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, calm and firm. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, calm, firm]
+No. I've got it.
+[End]
+```
+
+### `gpom-sh-a-boss-4` — "that little exploit up my sleeve"
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, relieved and wry. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
 [Spoken, relieved, wry]
 Phew. Glad I kept that little exploit up my sleeve.
 [End]
@@ -146,9 +247,91 @@ Exclude styles:
 vocals, singing, choir, drums, drum kit, percussion, timpani, beat, string quartet, pizzicato, plucked strings, full orchestra, string section, brass, horns, synth, electronic, jazz, pop, epic, action, trailer, bombastic, heroic, cinematic
 ```
 
+## Cue C, round 2 — the chase and the call, dark (~60 s)
+
+Kai on C1/C2 (22 Oct): *"all of these are too happy… we need a more dramatic piece that's not just sort of fun
+notes."* Still orchestral and intimate (Kai's 21 Oct brief: sparse, solo strings, not Beethoven's 5th), but tense,
+dark and driving: no pizzicato, nothing playful, no drum kit, no action-movie brass. Two bold, unlike atoms; each
+exclude list bans the other's sound. Settings as the music column: Style Influence 75, pair w30 / w60, Duration 60.
+
+### `gpom-sh-a-C3` — relentless low-string ostinato (raw, close, small dry room)
+
+Style:
+
+```
+Dark, driving chamber music for a small low-string ensemble. Two cellos saw out a relentless minor-key ostinato in hard, bowed sixteenth notes, like a heart running too fast, with a double bass digging in underneath on the downbeats. High violins shiver in a tight tremolo above, and every few bars a harsh dissonant chord tightens the screw. It never lets up: denser, louder and more desperate through the whole minute, building dread. Recorded raw and very close in a small dry room, you hear rosin, bow scrape and breath. Near the end the ostinato breaks off and only one low, uneasy held note remains.
+```
+
+Exclude styles:
+
+```
+vocals, singing, choir, pizzicato, plucked strings, playful, light, whimsical, happy, major key, piano, keys, drum kit, drums, snare, percussion, timpani, beat, brass, horns, epic, heroic, trailer, action movie, synth, electronic, reverb wash, distant, ambient, nocturne, romantic, warm
+```
+
+### `gpom-sh-a-C4` — lone piano in the deep bass, tremolo violin (cold, vast hall)
+
+Style:
+
+```
+Stark, cold, menacing solo piano hammering an obsessive minor figure in its lowest octaves, repeated over and over and slowly accelerating, each low note left to ring. A single violin hangs far above it on a thin, trembling tremolo, and a cello holds one dark drone that swells and sinks like breathing. Sparse and merciless: tension from repetition and silence, no melody to hold on to. Captured from the back of a vast empty concert hall, long cold decay, wide and distant. In the last stretch the piano figure thickens into clusters, then stops dead, and the violin tremolo is left alone, fading.
+```
+
+Exclude styles:
+
+```
+vocals, singing, choir, pizzicato, plucked strings, string quartet, string ensemble, ostinato strings, double bass, playful, light, whimsical, happy, major key, romantic, rubato, waltz, drum kit, drums, percussion, timpani, beat, brass, horns, epic, heroic, trailer, action movie, synth, electronic, close-mic, dry
+```
+
 ## Round log
 
 New rounds at the top.
+
+### Round 2 (2026-10-22) · boss one line per atom, C3/C4 dark · picks owed (Kai)
+
+**Kai's round 1 picks, recorded** (never downloaded; `record-checked.py`, length matched to the takes list):
+P1 = `gpom-sh-a-P1-A-v6-w60` [57b65bfc](https://suno.com/song/57b65bfc-430e-4ec3-b944-97b57ef2d7af) (0:45),
+P2 = `gpom-sh-a-P2-A-v6-w30` [49a6688a](https://suno.com/song/49a6688a-0bfa-424f-b476-7585158dbfb5) (0:44) — one pick
+in each patrol style. Files: `/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/`
+(`.wav` + `.preview.mp3`). No pick for the boss or for C1/C2 (notes above each new atom).
+
+12 Creates, **80 credits (8,500 → 8,420)**, workspace `gpom-story`. Before the round the form held another session's
+bank-robbery take (`br-poet-G-carter-v6-w60`, workspace `bank-robbery-Kai`, style 512, exclude 207, 97 lyric
+paragraphs, w60, SI 75, Duration 210); credits held at 8,500 and the title did not move for 4+ minutes, so we loaded
+over it. Nothing listened to.
+
+⚠ **Recording older takes:** `suno.mts record` only finds rows mounted in the create page's virtualised list, so a take
+from yesterday is `TAKE_NOT_FOUND` once ~30 newer takes sit above it. Worked around by wheel-scrolling the list until the
+row mounted, then recording. Whoever owns `suno.mts` could make `findTake` scroll.
+
+| Take | Length | Link |
+| --- | --- | --- |
+| gpom-sh-a-boss-1-A-v6-w25 | 0:09 | https://suno.com/song/f2097ef5-a26f-4d9e-87a8-46d8f7532589 |
+| gpom-sh-a-boss-1-A-v6-w25 | 0:09 | https://suno.com/song/3bc74680-d553-4d52-bf7e-ea8afcbc1bea |
+| gpom-sh-a-boss-1-A-v6-w10 | 0:07 | https://suno.com/song/7f8d1ef8-2548-4eff-a155-3a69b3677fd8 |
+| gpom-sh-a-boss-1-A-v6-w10 | 0:12 | https://suno.com/song/3b37a3f3-5622-4abb-afb7-2adefc5042af |
+| gpom-sh-a-boss-2-A-v6-w25 | 0:10 | https://suno.com/song/f8e44f50-8f47-4ecb-8a62-3ac1c6f82211 |
+| gpom-sh-a-boss-2-A-v6-w25 | 0:10 | https://suno.com/song/7efca8ec-f5ce-44d2-a1be-31f109c1eea2 |
+| gpom-sh-a-boss-2-A-v6-w10 | 0:10 | https://suno.com/song/2f1c52cb-a7b6-4a67-b2c8-e9c9c9540e82 |
+| gpom-sh-a-boss-2-A-v6-w10 | 0:10 | https://suno.com/song/27f5cae7-2fa5-4d5d-85f1-1fe022029f98 |
+| gpom-sh-a-boss-3-A-v6-w25 | 0:08 | https://suno.com/song/497f5363-5fe9-4e85-9fdd-6b94cf6c6159 |
+| gpom-sh-a-boss-3-A-v6-w25 | 0:07 | https://suno.com/song/34f0fc0a-3175-4241-9392-7532c4d0d2a7 |
+| gpom-sh-a-boss-3-A-v6-w10 | 0:07 | https://suno.com/song/db21608c-d7b7-4df5-9e3c-daed5a509f99 |
+| gpom-sh-a-boss-3-A-v6-w10 | 0:06 | https://suno.com/song/07ca6aee-424f-4895-9030-d68101e20f39 |
+| gpom-sh-a-boss-4-A-v6-w25 | 0:07 | https://suno.com/song/f890b363-26fa-4c35-887c-1b570137c1ea |
+| gpom-sh-a-boss-4-A-v6-w25 | 0:08 | https://suno.com/song/50a82181-807c-44ed-b64e-8db6f17413bc |
+| gpom-sh-a-boss-4-A-v6-w10 | 0:08 | https://suno.com/song/0405c2f4-f6d5-4caf-a22e-6ae674891ee1 |
+| gpom-sh-a-boss-4-A-v6-w10 | 0:07 | https://suno.com/song/3eb2c01f-1d49-40e3-94a3-ab70f48e9fdc |
+| gpom-sh-a-C3-A-v6-w30 | 1:00 | https://suno.com/song/df233838-5a4f-4a51-9665-df868b9d6c2a |
+| gpom-sh-a-C3-A-v6-w30 | 1:03 | https://suno.com/song/9d14e097-cda5-45c4-ad00-a8631ce705c3 |
+| gpom-sh-a-C3-A-v6-w60 | 1:00 | https://suno.com/song/752f3869-dc3c-4587-9853-4656216f96dd |
+| gpom-sh-a-C3-A-v6-w60 | 1:00 | https://suno.com/song/a1614dbb-401a-4930-b759-7ad5b9cd3ce4 |
+| gpom-sh-a-C4-A-v6-w30 | 1:10 | https://suno.com/song/b3fb99e7-d056-4df6-ab34-7540abd39d4d |
+| gpom-sh-a-C4-A-v6-w30 | 1:00 | https://suno.com/song/bf0579b8-6c73-445b-beb6-caaf4256c189 |
+| gpom-sh-a-C4-A-v6-w60 | 1:00 | https://suno.com/song/b6c5973d-42c5-45e3-b2ea-006ce284e36c |
+| gpom-sh-a-C4-A-v6-w60 | 1:00 | https://suno.com/song/d9f611a3-9319-4e89-a729-d63aef1af81b |
+
+**Notes.** The one-line boss takes stop short of their 15/20 s target (0:06–0:12), which is what a single line should
+do. Whether each says its words cleanly is unheard. C3/C4 came in on target (1:00–1:10).
 
 ### Round 1 (2026-10-21) · revision A of all five atoms · unheard
 

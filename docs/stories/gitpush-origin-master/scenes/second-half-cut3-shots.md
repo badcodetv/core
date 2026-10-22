@@ -494,3 +494,46 @@ Rejected (in `work/`): `S11-p1-a` (window frame in shot and the reference's burn
 
 **Claude's picks:** **S11-a** (a straight lane from the top of frame past her and off the bottom: exactly the 9a move, and
 it reads as patrol too). **S12-b** and **S12-d** (one square, one bridge, no lettering). Not animated: Kai picks first.
+
+## Scene A round 2 (22 Oct 2026, from Kai's picks on https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co)
+
+**Kai's picks:** i-S11 = **S11-c** (beat 1 patrol), i-S12 = **S12-d** (beat 1 roaming), c-V10 = **A** (`cut3-V10r.mp4`,
+already made, nothing to do). No pick on c-V2r (9b) — remade below from his note. No pick on `v-10b-0-bot` (Maddie,
+*"Well, you'd better bloody hurry up, boss…"*): **default take A** until Kai says otherwise.
+
+Same project (`be451638`), same runner (`run-cut3.mts`, Omni 1.1 Flash, Frames, start frame only, 16:9, 8 s, count 1),
+one job at a time, price read before every Create (12 each). **Spend: 60 Flow credits** (balance 17,614 → 17,554;
+ledger 516 → 576, cap for this round 686). Every harvest md5-checked and first-frame-matched to its plate (distances
+3–12). Veo audio stripped on every clip (originals in `video/cut3-raw/<clip>-withaudio.mp4`); `<clip>-sheet.jpg` beside
+each. Stills are free (Nano Banana Pro via `flow_edit_image`, 2 candidates a call, refs staged in
+`~/.cache/badcode-gpom-second-half/r2/`).
+
+### 9b again: Maddie inside the dust (c-V2r2)
+
+Kai on V2r: *"it's good she stays still. The problem is the dust… doesn't look like dust from a vehicle racing away…
+the killbot has raced past us, leaving a dust cloud in its wake. And we are now in the dust cloud. We can't see much…
+but then it settles really quickly."* So the clip must **open inside** the dust and clear in ~2 s, not have a cloud roll
+in. Approach: make a dust-filled start still from S2-c (free), animate it settling, camera locked.
+
+**Start still `S2d`** (`storyboard/cut3/S2d-a.jpg`, from `work/S2dust-p2-b.jpg`). References: S2-c (+ the canonical Maddie
+`simulation/stills/s3/s3-bot-00b-a.jpg` on p1).
+- p1 (*"…the whole frame is now filled with a thick, churning cloud of grey-brown road dust, as if a heavy tracked vehicle
+  has just roared past… the robot is only a dim, soft silhouette…"*): both too thin, she reads clearly. Rejected.
+- p2 (*"…bury the scene in a dense brown-grey dust storm, like standing inside a sandstorm: thick billowing dust fills the
+  entire frame from edge to edge, almost opaque… only a faint dark shadowy silhouette… street, shopfronts and church tower
+  have vanished… Keep the robot's shape, size and position exactly…"* + `{house}`): **p2-b kept** (same size and place, a
+  hazy shape in thick dust); p2-a moved and shrank her, rejected.
+
+| Clip (`video/`) | From | Cast | Credits | Motion prompt | Verdict |
+| --- | --- | --- | --- | --- | --- |
+| `cut3-raw/cut3-V2r2-t1-reject.mp4` | S2d-a | yes | 12 | *The camera does not move. We are inside a thick cloud of brown-grey dust left by a vehicle that has just raced past. Within two seconds the dust settles fast: it thins, drops and falls out of the air onto the road, the haze clearing quickly and evenly everywhere at once, revealing the small grey delivery robot sitting perfectly still… No new dust blows in. The camera does not move.* | **Fail.** The dust behaves exactly right (clear by ~2 s), but the camera pulls back and the robot is redrawn smaller, turned, with new clean pennants. The cast Character is the likely cause |
+| `cut3-V2r2.mp4` | S2d-a | **no** | 12 | *Locked-off static shot on a tripod: the camera does not move, zoom or pull back at all, and the framing stays exactly the same from the first frame to the last. The thick brown-grey dust hanging in the air settles quickly: in the first two seconds it thins and falls to the road, clearing evenly to reveal the street behind. The small grey delivery robot stays exactly where it is, exactly the same size in frame, perfectly still, all six wheels planted, its torn bunting hanging across its front wheels. A little fine grit patters down onto its lid. Its amber beacon glows steadily. No new dust blows in. The camera does not move.* | **Pass.** Locked, she never moves, torn bunting intact throughout. The dust thins in the first ~1.5 s and keeps clearing to ~8 s; a light haze stays. It opens hazy, not opaque |
+| `cut3-V2r2-b.mp4` | `cut3-V2r2.mp4` + ffmpeg | — | 0 | ffmpeg: a blurred, moving-grain brown-grey layer (`#83796b`) blended over the clip at 82% at frame 0, easing to 0 by 1.8 s (`blend`, power 1.4 ease) | **Pass, Claude's pick.** Opens nearly opaque (only the beacon glows through), clears by ~1.5 s into the locked take: the "we're in its wake, then it settles" Kai described. The dust layer is a flat fog, not billowing; if it reads fake, use `cut3-V2r2.mp4` |
+
+### S11-c and S12-d: beat 1, the kill bots patrol
+
+| Clip (`video/`) | Beat | Plate | Cast | Credits | Motion prompt | Verdict |
+| --- | --- | --- | --- | --- | --- | --- |
+| `cut3-V13.mp4` | 1 (patrol) | S11-c | no | 12 | *The camera does not move, locked high above the street. Under the church tower the tracked military robot prowls slowly down the middle of the ruined high street towards us, heavy and menacing, its sensor turret sweeping left and right, hunting. Its tracks grind over the debris and dust boils up behind it and drifts across the road. In the foreground the small grey delivery robot sits completely still, its torn bunting across its front wheels, its amber beacon glowing. The camera does not move.* | **Pass.** The bot advances from the tower, swings its turret left then right, dust boiling behind; Maddie holds still, beacon flares at the end. Note: a long gun barrel shows when the turret turns side-on (~5 s), as on V10r |
+| `cut3-raw/cut3-V1r-S11c-reject.mp4` | 9a (pass) | S11-c | no | 12 | *The camera does not move, locked high above the street. The tracked military robot charges at full speed straight down the road towards us, passes close beside the small grey delivery robot without touching it, and roars on out of the bottom edge of frame, leaving a long thick plume of dust hanging in the street behind it. As it passes, the small robot jolts and rocks on its wheels, its torn bunting flapping. The camera does not move.* | **Fail.** The tank clips her at ~4 s: she spins, and her bunting turns into bright multicoloured flags flying off (the V1 take-1 failure again). S11-c has too little road below her. **`cut3-V1.mp4` stays the 9a pass** |
+| `cut3-V14.mp4` | 1 (roaming) | S12-d | no | 12 | *The camera does not move, locked low on the road. The two tracked military robots prowl out from under the rusted railway arch towards us, slow and heavy, their sensor turrets swivelling to scan the boarded-up shop fronts. Their tracks grind up grit and dust that blows across the road, and litter skitters past. The front robot stops dead and its turret snaps round to stare straight at us. Each robot keeps exactly its own shape and size. The camera does not move.* | **Pass.** Both bots come through the arch, the front one prowls up to us and swings its turret across the shopfronts; litter skitters; the second keeps its shape behind |

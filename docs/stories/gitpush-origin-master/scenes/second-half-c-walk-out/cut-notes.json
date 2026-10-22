@@ -46,5 +46,10 @@
   "lc5-0": "Derek: 'bloody hell, look at that building' rather than just 'bloody hell'",
   "lc5-1": "Maddie, not the boss: 'yeah, he's been working on this for quite a long time' (they know the time machine is in there by now)",
   "lc6-0": "Maddie says 'come in, mind the step', not the boss; great shot"
+ },
+ "answers_round1": {
+  "Q1": "a: 'It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you.'",
+  "Q2": "yes: the old lady visible, silent, among the wary faces in beat 1",
+  "plan": "Kai loves the plan: go"
  }
 }
