@@ -132,6 +132,150 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round GA (2026-10-22): funk × psychedelic beats, voices from anywhere
+
+Jack: "forget everything and focus on blending funk with psychedelic beats, and have the voice vary in each one, forget English accents, just do a bunch of different ones from anywhere." Built fresh: no earlier round's boxes carried over. Twelve scenes, each with its own singer from that place (the genre word picks the voice, §2d), a psychedelic treatment on the **drums** (phaser, tape echo, spring reverb) and a quiet → loud arc against the monotone.
+
+Exclude Styles (all):
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, monotone
+```
+
+Lyrics: draft 3 as written (Jack's words, no labels added). Settings: v6, Variety Off, Personalize off, Max Mode off, **Vocal Gender none** (so women can come through too), style influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 24 Creates; balance 8,780 → 8,500 (280, so 40 more than 24 × 10; the extra 40 is unaccounted for, the same gap as before this round). Unheard.
+
+#### GA · lagos — Lagos afro-psych funk
+
+```
+Lagos afro-psych funk, 108 BPM: a raspy Nigerian bandleader barking the verses, a female chorus shouting back, roaring on the chorus. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+- brj-fp-lagos-v6-w30 — 2:50 — https://suno.com/song/684ba7c9-b86a-460f-8979-33a0ef074e16
+- brj-fp-lagos-v6-w30 — 2:50 — https://suno.com/song/6637033c-f2fb-41f0-a2d4-9c057282d6a7
+- brj-fp-lagos-v6-w60 — 2:49 — https://suno.com/song/ebc4738f-7f53-4ef9-8666-5045543c7edd
+- brj-fp-lagos-v6-w60 — 2:49 — https://suno.com/song/53397aec-3051-4681-b613-5b5436ad874b
+
+#### GA · addis — Ethio-jazz psych funk
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a wailing Ethiopian tenor with wide melisma, quiet verses, a crying chorus. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+- brj-fp-addis-v6-w30 — 2:50 — https://suno.com/song/1d1d12a8-b65a-4df6-89fa-b580a8ddae73
+- brj-fp-addis-v6-w30 — 2:49 — https://suno.com/song/ff749e4c-6e6c-4cd6-93d5-dc5d78adfb99
+- brj-fp-addis-v6-w60 — 2:49 — https://suno.com/song/8a44156f-489a-485d-a99e-8f6e3e738de1
+- brj-fp-addis-v6-w60 — 2:50 — https://suno.com/song/8ac4902d-a2e8-4d18-a925-edbb92effe6e
+
+#### GA · kingston — Jamaican psychedelic dub funk
+
+```
+Jamaican psychedelic dub funk, 90 BPM: a gruff Jamaican chanter, low and slow on the verses, a hollered chorus. Rimshot drums thrown into tape echo, a heavy bass, wah guitar skank, siren delays, sudden dropouts.
+```
+
+- brj-fp-kingston-v6-w30 — 2:49 — https://suno.com/song/6b1d036f-73c7-49fe-8782-d2f4f0f29e2e
+- brj-fp-kingston-v6-w30 — 2:50 — https://suno.com/song/b6c81cba-df6f-435e-96e4-a09d6ee9ed81
+- brj-fp-kingston-v6-w60 — 2:50 — https://suno.com/song/302bf885-49db-4d13-bb94-151a824f9bff
+- brj-fp-kingston-v6-w60 — 2:50 — https://suno.com/song/0380c314-21dc-4921-ba35-582c05d6e8fc
+
+#### GA · tropicalia — Brazilian tropicália funk
+
+```
+1968 Brazilian tropicália funk, 104 BPM: a sly Brazilian woman whispering the verses, rising to a fierce shout on the chorus. Fuzz guitar, cuíca and agogô, a phased samba-funk breakbeat, a strutting bass, swirling organ.
+```
+
+- brj-fp-tropicalia-v6-w30 — 2:50 — https://suno.com/song/2860e14c-4dc5-46be-88d8-1c2514247f40
+- brj-fp-tropicalia-v6-w30 — 2:49 — https://suno.com/song/75adc9c0-0b06-468a-bc99-f50d192db197
+- brj-fp-tropicalia-v6-w60 — 2:49 — https://suno.com/song/3c435128-5581-4ca9-9ad9-a3221980f468
+- brj-fp-tropicalia-v6-w60 — 2:50 — https://suno.com/song/d556bf58-3c3a-430b-80aa-bef37277f5e2
+
+#### GA · detroit — Detroit psychedelic funk rock
+
+```
+1970 Detroit psychedelic funk rock, 102 BPM: a gravel-voiced American preacher growling the verses, screaming the chorus, a falsetto answering him. Acid fuzz guitar solos, a phaser drum break, a thick slap bass, a Moog.
+```
+
+- brj-fp-detroit-v6-w30 — 2:50 — https://suno.com/song/1d36c4bd-1a3e-47dd-9ada-e6eb749da2dd
+- brj-fp-detroit-v6-w30 — 2:50 — https://suno.com/song/2db699fb-62f9-4117-9995-be145c3134c5
+- brj-fp-detroit-v6-w60 — 2:50 — https://suno.com/song/41ccee11-cbee-4ed3-9368-f8476e908881
+- brj-fp-detroit-v6-w60 — 2:49 — https://suno.com/song/f0bef11d-2258-498c-9eec-0072c0905e62
+
+#### GA · bollywood — 1970s Bollywood psych funk
+
+```
+1970s Bollywood psychedelic funk, 106 BPM: a nasal high Indian playback singer, slinky verses, a soaring chorus. Fuzz sitar, tabla over a funk breakbeat, a Farfisa organ, stabbing strings, a wah-wah guitar.
+```
+
+- brj-fp-bollywood-v6-w30 — 2:50 — https://suno.com/song/5ff9003d-9cad-485b-9d20-6b0383290321
+- brj-fp-bollywood-v6-w30 — 2:49 — https://suno.com/song/8092e42c-4211-4fc4-98ba-7b40a07ac785
+- brj-fp-bollywood-v6-w60 — 2:50 — https://suno.com/song/cee9c936-5bec-4b7a-b68a-ab275437b470
+- brj-fp-bollywood-v6-w60 — 2:49 — https://suno.com/song/2478319e-af98-4c17-81bd-1509a1da3e5c
+
+#### GA · tokyo — Tokyo psych funk rock
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a theatrical Japanese man with heavy vibrato, brooding verses, a howled chorus. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+- brj-fp-tokyo-v6-w30 — 2:50 — https://suno.com/song/0ddbe4ad-0d8f-4fcc-967d-83baa75fe7b2
+- brj-fp-tokyo-v6-w30 — 2:49 — https://suno.com/song/bc685aea-3977-4393-ab34-a25c74bdb829
+- brj-fp-tokyo-v6-w60 — 2:50 — https://suno.com/song/f24a8032-8ffc-494d-b627-f386fd7f3ffa
+- brj-fp-tokyo-v6-w60 — 2:49 — https://suno.com/song/71b6f037-a26d-46ef-96cf-68b70428ed11
+
+#### GA · phnompenh — Phnom Penh psych rock funk
+
+```
+1960s Phnom Penh psych rock funk, 108 BPM: a high piercing Cambodian woman, shivering verses, a soaring wailed chorus. Surf-reverb fuzz guitar, Farfisa organ, garage drums with a funk swing, a bouncing bass.
+```
+
+- brj-fp-phnompenh-v6-w30 — 2:50 — https://suno.com/song/6db53ce5-507c-40f3-9195-e315e06c0bbe
+- brj-fp-phnompenh-v6-w30 — 2:50 — https://suno.com/song/736dab65-440a-4bb0-aa40-c7311a96e7f4
+- brj-fp-phnompenh-v6-w60 — 2:49 — https://suno.com/song/9b5457e5-dc9a-4562-a70d-f2e031788af7
+- brj-fp-phnompenh-v6-w60 — 2:49 — https://suno.com/song/7e8cf714-abff-4083-b820-72aad42d2703
+
+#### GA · paris — Paris psychedelic funk
+
+```
+1970s Paris psychedelic funk, 96 BPM: a smoky French man murmuring the verses half-spoken, cracking into a hoarse cry on the chorus. Heavy reverb funk drums, a slinky bass, fuzz guitar, a string swell, phased hand claps.
+```
+
+- brj-fp-paris-v6-w30 — 2:49 — https://suno.com/song/08808d39-7a15-4326-b6ae-2ebd31e3a5b0
+- brj-fp-paris-v6-w30 — 2:50 — https://suno.com/song/6eb8a269-d05f-473e-9f3a-40a23fa6687b
+- brj-fp-paris-v6-w60 — 2:50 — https://suno.com/song/9418a1a8-ba89-4387-99b3-85b4c90e1a4c
+- brj-fp-paris-v6-w60 — 2:50 — https://suno.com/song/6c7fb8d6-7db1-4606-8e40-4d4f07b4c6a1
+
+#### GA · eastla — East LA Chicano psych soul
+
+```
+East LA Chicano psychedelic soul funk, 98 BPM: a sweet Chicano falsetto, tender verses, a desperate pleading chorus. Timbales and congas over a phased funk break, a fuzz guitar, a Hammond organ, a deep bass.
+```
+
+- brj-fp-eastla-v6-w30 — 2:50 — https://suno.com/song/ddc8489d-7222-4eab-9b0d-04304f1e603a
+- brj-fp-eastla-v6-w30 — 2:50 — https://suno.com/song/111ff8bb-9d04-4d17-b3b4-3e6ef5efae0d
+- brj-fp-eastla-v6-w60 — 2:50 — https://suno.com/song/bd7f4165-5658-447f-a74c-e100a45dc198
+- brj-fp-eastla-v6-w60 — 2:50 — https://suno.com/song/c17d96bf-35fc-4b81-a4a4-5cffe61e69dc
+
+#### GA · neworleans — New Orleans swamp funk
+
+```
+New Orleans psychedelic swamp funk, 100 BPM: a raspy Cajun growler muttering the verses, howling the chorus. A second-line funk drummer soaked in tape echo, a voodoo organ, a fuzz clavinet, a slithering bass, tambourine.
+```
+
+- brj-fp-neworleans-v6-w30 — 2:50 — https://suno.com/song/5ff50156-5b6a-4b54-9919-a41ee7ab1392
+- brj-fp-neworleans-v6-w30 — 2:50 — https://suno.com/song/e20e8b50-69f9-4c88-b28a-54408eb42826
+- brj-fp-neworleans-v6-w60 — 2:49 — https://suno.com/song/227c1a7a-f4a4-42ef-9a71-7868e40f0bcd
+- brj-fp-neworleans-v6-w60 — 2:50 — https://suno.com/song/947a70a7-9454-4992-b990-713464032040
+
+#### GA · soweto — Soweto psychedelic funk
+
+```
+1970s Soweto psychedelic funk, 106 BPM: a deep Zulu bass voice rumbling the verses, a women's chorus soaring on the chorus. Fuzz guitar, a phased funk breakbeat, a spiralling organ, a fat walking bass.
+```
+
+- brj-fp-soweto-v6-w30 — 2:50 — https://suno.com/song/e3b2d55c-5e9a-41b4-b9cc-553912ecc92f
+- brj-fp-soweto-v6-w30 — https://suno.com/song/f78154dc-e048-41a9-9cc9-aa1d74d498a8
+- brj-fp-soweto-v6-w60 — https://suno.com/song/04e1b890-50da-4f52-800e-bc5aad34cce0
+- brj-fp-soweto-v6-w60 — https://suno.com/song/e6127a4a-8d6a-4e6d-9169-7e0a67823324
+
 ### Round FA (2026-10-22): more psychedelic genres
 
 Jack: "please mess around with more psychedelic genres." Twelve psych scenes, each a **genre word
