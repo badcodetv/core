@@ -539,8 +539,16 @@ singer after it, versus the singer first. Bank Robbery Round W tests exactly tha
 🔴 **Check Variety before blaming the words.** Rounds A–W on that song all ran at Variety
 **Normal** by mistake. Suno's v6 FAQ says any Variety above **Off** works by rewriting the Style box
 (`files/suno-v6.md`, Variety row), so every voice description was being rewritten before
-generation. Round Y/Z (Variety Off; `Roger Daltrey` named literally in Y, translated in Z; Suno
-accepted the name without error) is unheard at the time of writing — record the verdict here.
+generation. Round Y/Z (Variety Off; `Roger Daltrey` named literally in Y, translated in Z) —
+**verdict, Jack 2026-10-22: style lost, voice nothing like Daltrey.** Suno stored the name verbatim
+(not filtered), and it did nothing audible.
+
+🔑 **A liked take made at Variety above Off was made from Suno's rewrite, not from your box.** Read
+the rewrite off the take's own record before building on it — `metadata.tags` at
+`https://studio-api.prod.suno.com/api/clip/<id>` (public JSON; `control_sliders.aug_creativity` is
+the Variety step, 0 = Off). Bank Robbery's liked take ed6dd946 stored a different, shorter music
+sentence (`1970s funk soundtrack production … soft harmony pads … low rough male lead`), and ten
+rounds re-used the box instead of it. Round AA/AB re-runs the stored prompt at Variety Off.
 
 **How to apply:** when a voice won't move, ask the human for a real singer who has it, write the
 name in the sheet, and put a translation (scene + era + voice + delivery) in the box. Check the

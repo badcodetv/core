@@ -334,7 +334,15 @@ export async function setSlider(page: Page, label: string, target: number): Prom
   // a naive loop oscillates around it forever. Stop as soon as a press stops getting us closer.
   while (cur !== target && guard++ < 300) {
     await page.keyboard.press(cur < target ? 'ArrowRight' : 'ArrowLeft')
-    const next = await read()
+    let next = await read()
+    // A slider that has only just mounted (Audio Influence after a Cover attach) can ignore or
+    // lag a keypress — read as an end stop, that left an `ai40` cell at 73 (2026-10-22).
+    if (next === cur) {
+      await page.waitForTimeout(250)
+      await s.first().focus()
+      await page.keyboard.press(cur < target ? 'ArrowRight' : 'ArrowLeft')
+      next = await read()
+    }
     if (next === cur) break                                   // end stop
     if (Math.abs(next - target) >= Math.abs(cur - target)) {   // overshot; step won't divide
       await page.keyboard.press(next < cur ? 'ArrowRight' : 'ArrowLeft')
@@ -1575,7 +1583,10 @@ export async function runNarrow(page: Page, spec: SunoSpec, pick: Take, cells: C
     console.log(await setModel(page, cell.model))
     console.log(await setV6Controls(page, cellSpec))
     console.log(await setSlider(page, 'Style Influence', cell.styleInfluence))
-    console.log(await setSlider(page, 'Audio Influence', cell.audioInfluence ?? 50))
+    const ai = await setSlider(page, 'Audio Influence', cell.audioInfluence ?? 50)
+    console.log(ai)
+    if (Math.abs(Number(ai.split('=')[1]) - (cell.audioInfluence ?? 50)) > 2)
+      return [`at ${cell.title}: Audio Influence reads ${ai}, wanted ${cell.audioInfluence ?? 50}`]
     console.log(await setSlider(page, 'Weirdness', cell.weirdness))
     console.log('title:', await setTitle(page, cell.title))
     const v = (await verify(page)) as Record<string, unknown>

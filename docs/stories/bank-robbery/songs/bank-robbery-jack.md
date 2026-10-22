@@ -132,6 +132,159 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round BA (2026-10-22): a new approach — the liked take's music with Beatles voices
+
+Jack on Round AA/AB: "all of those were the same voice … try a new approach and start again …
+use the style of br-jack-copfunk-B-south-london-v6-w60 with the voices of the Beatles."
+
+**Why a new approach.** Thirteen rounds of voice words have not moved the singer: the 1970s funk
+soundtrack picks one vocalist pool and every adjective lands inside it (`suno-voices.md` §2b). The
+skill's rule after two stuck rounds is *stop prompting the voice*. So the music is now kept by
+**audio**, and the voice is grown where it is native, then carried over:
+
+1. **Cover of ed6dd946** (the liked take attached as audio, so the music holds), with the voice
+   clause in its real prompt swapped for a Beatles translation. Names stay out: "Roger Daltrey" did
+   nothing audible in Round Y.
+2. **The Beatles voices in their home genre** (Merseybeat / 1968 rock'n'roll), the funk banned. The
+   transplant ladder's step 1 (`suno-voices.md` Thread 2 §3): if the voice comes, it becomes a
+   Style Persona / Voice and goes onto the liked music in step 2.
+3. **Add Vocals on the liked take's instrumental stem**, by hand (below). Not automated yet.
+
+References (sheet only, never in a box): Lennon — nasal, "from the back of the throat", ADT
+double-tracking, "from scream to whine" (Far Out; Christgau; Wikipedia, ADT). McCartney — sweet tenor,
+"rasping roars" doing Little Richard (Far Out). Both tenors.
+
+#### BA · cover (Cover of ed6dd946)
+
+```
+1970s funk soundtrack production, stabbing brass, wah-wah guitar, fat rumbling bass, live breakbeat drums with bongos and congas, breathy low flute stalking the verses, tense string swells and soft harmony pads beneath the chorus; gritty 104 BPM groove; 1960s Liverpool beat-group voices: a nasal reedy double-tracked tenor lead sung from the back of the throat, sardonic and cutting, tearing into a rasping rock'n'roll howl on the chorus, three-part close harmonies in thirds answering.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, hard rock, arena rock, distorted guitar
+```
+
+Settings: Cover, v6, Variety Off, Max Mode off, style influence 75, weirdness 30. 🔴 Asked for Audio
+Influence 75 and 40; **both cells ran at ~75** (records say 0.75 and 0.73) — `narrow`'s slider set
+did not take, and the run hit its 10-minute timeout before detaching (detached by hand). Fix owed in
+`suno.mts`. Also: `narrow` cannot find a take that has scrolled off the clip list; Suno's own
+Search box above the list brings it back.
+
+#### BB · lennon (home genre)
+
+```
+1965 Liverpool Merseybeat beat group, 104 BPM: jangly twelve-string guitar, melodic bass, dry tight drums, tambourine. A nasal reedy double-tracked tenor lead sung from the back of the throat, sardonic and cutting, sneering verses that tear into a raw scream on the chorus, three-part close harmonies in thirds answering. Played completely straight.
+```
+
+#### BC · mccartney (home genre)
+
+```
+1968 Liverpool rock'n'roll beat group, 104 BPM: pounding piano, driving melodic bass, dry drums, crunchy guitar. A sweet clean high tenor on the verses that rips into a rasping throat-shredding rock'n'roll howl on the chorus, falsetto whoops and close harmonies behind. Played completely straight.
+```
+
+Exclude Styles (BB and BC):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, funk, brass, horns, wah-wah, flute, strings, soundtrack, American accent
+```
+
+Lyrics (all): the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max
+Mode off, Vocal Gender male, style influence 75, Duration 170 s, weirdness 30 and 60, workspace
+`bank-robbery-Jack`. 12 takes, 60 credits (9,670 → 9,610). Stored prompts checked: verbatim,
+Variety 0. Unheard.
+
+- brj-beatles-cover-r1-v6-ai75-w30 — 2:51 — https://suno.com/song/15fbf6f1-9dfc-43e3-b0d1-bd5f62b83c89
+- brj-beatles-cover-r1-v6-ai75-w30 — 2:49 — https://suno.com/song/c8d3ff35-3973-422c-a5db-b81e912b9044
+- brj-beatles-cover-r1-v6-ai40-w30 (really ~73) — 2:49 — https://suno.com/song/da614a7c-8cb2-4b6c-a67f-155353c2d223
+- brj-beatles-cover-r1-v6-ai40-w30 (really ~73) — 2:48 — https://suno.com/song/ed63b042-4660-4b30-8094-16bf1280e53f
+- brj-beatles-lennon-v6-w30 — 2:48 — https://suno.com/song/96b4efc0-fd9c-468e-b35c-63eebc042344
+- brj-beatles-lennon-v6-w30 — 2:47 — https://suno.com/song/e2a4eefa-b6d1-42be-805f-51c16c097d13
+- brj-beatles-lennon-v6-w60 — 2:49 — https://suno.com/song/a288d60f-c4d9-400c-8b27-b472fc0d3ef0
+- brj-beatles-lennon-v6-w60 — 2:49 — https://suno.com/song/f770c183-2073-4661-bc86-012563c9d2f5
+- brj-beatles-mccartney-v6-w30 — https://suno.com/song/19395260-7474-469b-980e-fd8711bde862
+- brj-beatles-mccartney-v6-w30 — https://suno.com/song/48ebbdd2-3e69-46b4-b15c-ee9d1730e440
+- brj-beatles-mccartney-v6-w60 — https://suno.com/song/f2f2eecc-314a-4db5-a6cf-e4aad5084ca9
+- brj-beatles-mccartney-v6-w60 — https://suno.com/song/101488a9-86d8-4a96-918c-a11faebea56d
+
+**Step 2, once a BB/BC take has the voice:** on that take ⋯ → Create → Voice (a Style Persona —
+a true Voice needs a spoken verification phrase, so it is for your own voice). Pick 15–60 clean
+seconds of the lead, delete the attached style prompt, save. Then a fresh Create with the liked
+take's stored prompt, that Persona attached, Audio Influence 50–70.
+
+**Route 3 by hand — Add Vocals (keeps the music by audio, vendor docs, beta, untested by us):**
+ed6dd946 ⋯ → Get Stems → on the instrumental ⋯ → Remix → **Add Vocals** → paste the lyrics → Style:
+the BA box above → Advanced: Audio Strength high → Create.
+
+### Round AA/AB (2026-10-22): the liked take's REAL prompt, Variety Off
+
+Jack on Round Y/Z: "we have lost the style of [ed6dd946] and the voice sounded nothing like Roger
+Daltrey."
+
+The audit — why the style was lost (read off each take's own suno.com record, `metadata.tags`):
+- 🔴 **ed6dd946's music never came from our Style box.** Round B ran at Variety Normal, so Suno
+  rewrote the box before generating (`aug_creativity: 1` on its record). What it actually used:
+  `1970s funk soundtrack production … tense string swells and soft harmony pads beneath the chorus;
+  gritty 104 BPM groove; low rough male lead in half-spoken, deadpan talk-sing …`. Every round since
+  (J–Z) re-used **our** sentence, never this one. Y/Z at Variety Off used ours word for word
+  (`aug_creativity: 0`), so they could not bring the liked music back.
+- 🔴 **The Daltrey clause opened with a rock scene** (`a 1970s London mod rock frontman`, and in Y a
+  `raspy English rock tenor` label on every lyric section): pool words that take the band with them
+  (`suno-voices.md` §2c).
+- 🔴 **The name does nothing audible.** Suno stored `Roger Daltrey vocals` verbatim (not filtered),
+  and Jack heard nothing like him. Web: no test shows a name working; users report names replaced.
+- 🟡 **Daltrey's verses are low.** Critics put his verses "in the lower reaches of his baritone",
+  then a growl and the scream (Ultimate Classic Rock; Far Out). Y/Z asked for a tenor throughout.
+  The liked take's `low rough male lead` was already half-way there.
+
+**AA** = the liked take's real prompt, all three boxes exactly as stored, at Variety Off. A control:
+does the liked music come back when nothing rewrites the box?
+**AB** = the same, with only the voice clause swapped for a Daltrey translation (no scene word, no
+"rock", music first, as in the liked take). Exclude adds the rock bleed; `American accent, American`
+dropped (bans do not set nationality).
+
+#### AA · liked-tags
+
+```
+1970s funk soundtrack production, stabbing brass, wah-wah guitar, fat rumbling bass, live breakbeat drums with bongos and congas, breathy low flute stalking the verses, tense string swells and soft harmony pads beneath the chorus; gritty 104 BPM groove; low rough male lead in half-spoken, deadpan talk-sing that breaks into barked chorus shouts, London voices shouting back.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, American accent, American
+```
+
+#### AB · belter
+
+```
+1970s funk soundtrack production, stabbing brass, wah-wah guitar, fat rumbling bass, live breakbeat drums with bongos and congas, breathy low flute stalking the verses, tense string swells and soft harmony pads beneath the chorus; gritty 104 BPM groove; raspy British belter lead: low conversational baritone verses with a stuttering snarl that explode into a full-throat raspy roar on the chorus and one long primal scream, London voices shouting back.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, hard rock, arena rock, power chords, distorted guitar
+```
+
+Lyrics (both): the liked take's own Lyrics box, as stored = draft 3, no voice labels.
+
+Settings: v6, **Variety Off**, Personalize off, Max Mode off, Vocal Gender male, no Voice, style
+influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 4 Creates, 40
+credits (9,710 → 9,670). Stored tags checked: verbatim, Variety 0.
+
+**Verdict (Jack, 2026-10-22): all the same voice.** See Round BA.
+
+- br-jack-copfunk-AA-liked-tags-v6-w30 — 2:49 — https://suno.com/song/b95ef6c4-7ba8-4f79-b294-4061eb183d90
+- br-jack-copfunk-AA-liked-tags-v6-w30 — 2:50 — https://suno.com/song/05f7fcc6-e111-40eb-a202-ac136339b324
+- br-jack-copfunk-AA-liked-tags-v6-w60 — 2:51 — https://suno.com/song/ea2234be-8806-46ef-b111-7b5f1756082b
+- br-jack-copfunk-AA-liked-tags-v6-w60 — 2:50 — https://suno.com/song/7c8f990a-359b-4747-9fb5-247ce3f81b8c
+- br-jack-copfunk-AB-belter-v6-w30 — https://suno.com/song/c7fe3616-a92d-4280-b0ad-f694016c33dd
+- br-jack-copfunk-AB-belter-v6-w30 — https://suno.com/song/60e0da64-f763-4f02-88ef-95c56ff0adb9
+- br-jack-copfunk-AB-belter-v6-w60 — https://suno.com/song/6eb68c83-8840-4c60-be48-77386554a172
+- br-jack-copfunk-AB-belter-v6-w60 — https://suno.com/song/16f3b61c-6fca-4197-b560-5e6a74d54329
+
+**If AA brings the music back but AB's voice is still wrong, stop prompting the voice** (skill rule:
+two rounds without movement). Keep the music by audio instead: ed6dd946 ⋯ → Get Stems →
+instrumental → ⋯ → Remix → **Add Vocals**, with the AB voice line and Audio Strength high (vendor
+docs, beta, untested by us — https://help.suno.com/en/articles/6882817). Fallback that cannot move
+the backing: the instrumental stem plus a separate vocal take, mixed in Premiere.
+
 ### Round Y (2026-10-21): Roger Daltrey by name, and the prompt audited
 
 Jack on Round W: the same voice over and over; did the prompt name Roger Daltrey? It did not —
@@ -171,7 +324,9 @@ comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast r
 
 Settings: as the liked take except **Variety Off**.
 
-4 Creates, 40 credits (10,320 → 10,280). Suno accepted the named prompt without an error. Unheard.
+4 Creates, 40 credits (10,320 → 10,280). Suno accepted the named prompt without an error.
+
+**Verdict (Jack, 2026-10-22): the liked style is lost and the voice is nothing like Roger Daltrey** — see Round AA/AB.
 
 - br-jack-copfunk-Y-daltrey-named-v6-w30 — 2:50 — https://suno.com/song/4c95489b-1675-403f-845b-6aea1938a4b7
 - br-jack-copfunk-Y-daltrey-named-v6-w30 — 2:50 — https://suno.com/song/b810ba97-acf0-47a5-865e-c14e2ea74c22

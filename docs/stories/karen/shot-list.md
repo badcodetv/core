@@ -238,3 +238,29 @@ see `docs/video-fx/delivery.md` § 2026-10-19).
 - Linear Wipe, angle 270, feather 100: Transition Completion keyframed with HOLD on the sting's seven beats, one letter per beat: 77.5 → 66.4 → 55.2 → 45.4 → 34.4 → 23.2 → 0 at sequence 317.333 / 318.042 / 318.75 / 319.417 / 320.083 (the o) / 320.792 / 321.458. Keyframe times are source time (inPoint 3600 + offset).
 - Opacity 100 → 0 from 323.133 to 324.333, fading with the card.
 - No render (Jack's rule). Read-back of the wipe values is correct, but two `export_frame` checks disagreed with it (317.6 showed nothing, 320.4 showed the whole word), so the frame exporter may not evaluate held keyframes at the asked time. Unverified: Jack to scrub it in Premiere.
+
+### 2026-10-22: Karen v4, the 20 Oct meeting's ending notes
+
+From the Jack/Kai call of 2026-10-20 (Gemini notes in Kai's Drive, "Jack <-> Kai - 2026/10/20 08:58 BST"): land the joke
+that Karen complained her way up to the **final boss** before AI Sean sacks him; **remove the static** after AI Sean
+appears; **hold off on Tarquin** so the debut stays Karen's; end on *To be continued*.
+
+**Sequence:** `Karen v4`, a clone of `Karen v3 upload` (untouched). 311.04 s (was 324.38). Saved. No render (Jack's rule).
+
+| Time | What changed |
+| --- | --- |
+| 285.71–288.54 | V1/A1 `40.mp4` extended to source 2.833 s: AI Sean's face holds, gold sparkles; the static (source 3.0 s on, was V1 286.875–289.958) is **gone** |
+| 286.125–291.833 | A2 **new line n42** `lvl_n42-b-tight.wav` (Algenib, take b, edge-trimmed, atempo 1.12, −18 LUFS, mid pause 0.77→0.50 s): *"She complained so much, she reached the final boss. And the final boss just got sacked."* My wording from Kai's note, not Jack's: swap it if he writes his own. "sacked" lands on the sacked President alone in the dark studio |
+| 288.54–300.50 | V1/A1 `10a2-president.mp4` moved −1.417 s |
+| 292.00–301.125 | A2 the President's call, `lvl4_p02-charon-tight.wav`: the same Charon take with its three pauses shortened (0.47→0.30, 0.76→0.45, 0.64→0.40). Every word re-transcribed. Last ~0.6 s plays over the card's fade-in from black |
+| — | **Tarquin removed**: V1/A1 `10g-tarquin.mp4` and A2 `lvl13_t01-dub.wav` |
+| 300.50–310.33 | V1 *To be continued* card moved −14.04 s |
+| 301.25 / 304.67 | A5 "Mmm, hold please" sting and V2 spray-paint tag moved together (−13.29 s), so the letters still land on the sting's beats |
+| 300.5→302.0 | A4 `5.mp3` faded out (Level keyframes, source 64.33→65.83) and trimmed to end at 302.0, under the card's fade-in |
+
+**Checked:** frame at 288.45 (AI Sean, no static); keyframe read-back; transcripts of both new audio files.
+**Not checked:** nobody has listened in Premiere. 🔴 The President still says *"my guy in England"*, which now teases
+Tarquin without showing him (fine as a cliffhanger, or cut the line to its first sentence).
+
+**Jack, 2026-10-22: "that works".** The laptop wordmark (reads SEAN AI, ~0:28–0:34) is dropped: "it doesnt matter".
+The "1,200 versions" disclaimer belongs to the Camping song, not Karen.
