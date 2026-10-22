@@ -625,6 +625,38 @@ or saved voices — is it that, or the prompts?"* Measured from each take's own 
   whispered), not an adjective. The documented route is still a Voice/Persona built from the take
   that already has the right singer (§2d).
 
+### 2f. ✅ The clean room fixed the voice (Jack, Bank Robbery Round CR, 2026-10-22)
+
+After §2e, a fresh helper wrote prompts **without reading any repo file, memory or the web** and
+told to ignore every house Suno rule (Bank Robbery `bank-robbery-jack.md` Round CR). Jack, on the
+first two prompts: *"this has fixed the voice problem."* Everything changed at once, so **no single
+cause is proven**. What the clean room did that the house prompts had stopped doing, most likely
+cause first:
+
+1. **A full "Lead vocal:" sentence of ~22 words**, about twice ours (GA ~13): age + gender + region +
+   register + texture + delivery + attitude (`middle-aged Northern English man, thick Mancunian
+   accent, deadpan, nasal, lazy sneering drawl, barely bothered to sing`). The house rules had trimmed
+   the voice to one clause and let the genre word pick the singer (§2a–2d, "short boxes").
+2. **Vocal Gender set per prompt, and half of them women.** Every house round before GA was male.
+3. **Excludes aimed at this voice's opposite** (`belting, falsetto` for the drawler; `male vocals`
+   for the women), not one carried-over global list. §2e: the same 11 bans sat on all 325 takes.
+4. **Per-section delivery cues in the lyrics** (`[Verse 1: lazy drawl]`, `[Chorus: sneered]`). House
+   rule (Thread 4 §3, "more markup is worse") had us sending the lyrics bare.
+5. **Accent and age written plainly**, against §2 ("accent does not render").
+6. **Settings varied per prompt**: weirdness 40–70, style influence 50–65, Variety Off/Normal/High,
+   Duration 190–240 s. House defaults were fixed (75, 30/60, Off, 170 s).
+
+**The lesson about the toolkit itself:** each rule here was learned honestly, mostly on one song
+(Karen, Camping) and often from a single round. Applied together as defaults to every prompt, they
+made every prompt alike, and so every voice alike. Rules that were meant to fix one failure became
+constants. Treat §2–§2d as **things that happened once**, not laws, and do not stack them by default
+when exploring.
+
+**How to apply:** exploring a new voice or sound → write the prompt fresh, the clean-room way (full
+Lead vocal sentence, set the gender, excludes aimed at this voice, section cues, settings chosen per
+prompt). Only bring house rules in once a take is liked and is being refined, one rule at a time,
+each tested against the take.
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact

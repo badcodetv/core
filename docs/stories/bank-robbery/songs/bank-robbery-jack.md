@@ -132,6 +132,445 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round CR (2026-10-22): clean room — English voices, written without the repo's Suno rules
+
+Jack: worried "we have too much in the Suno skills/repo that is confusing the prompt and making everything sound the same", then "just do English ones with varied voices" and "save the credits". A fresh helper wrote these **without reading any repo file, memory or the web**, told to disregard all house Suno rules (it still auto-loads CLAUDE.md, so the test is very clean, though not perfectly). It chose every box and setting itself, including Variety on, sliders off 75, its own excludes, per-section cue tags, and Duration. One change by me: `double-time, fast rap` added to eng-2's excludes (Jack's standing rule; its box asks for "rapid half-rapped"). One Create each (2 takes). **Only eng-1 and eng-2 ran** (8,370 → ~8,350): the run stalled on eng-3 because Suno's cookie banner covers the Create button. **Verdict (Jack, 2026-10-22): "this has fixed the voice problem."** See `docs/suno-gpt/suno-voices.md` §2f.
+
+- brj-cr-eng-1-v6-w45 — 3:40 — https://suno.com/song/d8f0d3fd-dab0-4bb2-bcf5-66bc2a0b32c0
+- brj-cr-eng-1-v6-w45 — 3:38 — https://suno.com/song/ad3c1a4d-238f-4ca3-9e81-ff543ac0b8fe
+- brj-cr-eng-2-v6-w55 — 3:20 — https://suno.com/song/af84081a-c0a4-41ae-9cd3-beb5a9d3d923
+- brj-cr-eng-2-v6-w55 — 3:19 — https://suno.com/song/e8d1dafc-8a97-45eb-a718-8c0f72369aee
+
+#### CR · eng-1
+
+Settings: weirdness 45, style influence 65, Variety off, Vocal Gender male, Duration 220 s.
+
+```
+Baggy Manchester funk-psych, loose shuffling breakbeat, wah-wah rhythm guitar, rolling melodic bassline, swirling Hammond organ, maracas and tambourine, backwards guitar swells, 98 BPM. Lead vocal: middle-aged Northern English man, thick Mancunian accent, deadpan, nasal, lazy sneering drawl, barely bothered to sing, menace through boredom
+```
+
+Exclude: `american accent, autotune, pop polish, belting, falsetto, rap`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: deadpan, spoken]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: lazy drawl]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: lads shouting back]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: sneered]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: sneered]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, flat, over organ]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: whole room shouting]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-2
+
+Settings: weirdness 55, style influence 60, Variety normal, Vocal Gender female, Duration 200 s.
+
+```
+Dirty London acid-funk with psychedelic breakbeats, 303 acid bassline squelch, chopped funk guitar, phased drum breaks, dubby delays, 108 BPM, gritty warehouse sound. Lead vocal: young South London woman, strong London accent, rapid half-rapped half-sung, sharp and snarling, sarcastic laughs between lines, confrontational and in your face
+```
+
+Exclude: `male vocals, american accent, autotune, breathy pop, soft r&b, ballad, double-time, fast rap`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: spat, mocking laugh]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: half-rapped, sharp]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: snarled hook]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: sarcastic]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: snarled hook]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, cold]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Acid Break]
+
+[Verse 3: building]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: shouted]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-3
+
+Settings: weirdness 60, style influence 55, Variety off, Vocal Gender male, Duration 230 s.
+
+```
+Late-1960s English psychedelic funk, music-hall swagger, harpsichord and Mellotron, fuzz bass, funky drummer groove, sitar drone, brass fanfares, tape flanging, 104 BPM, cinematic and sinister. Lead vocal: upper-class English gentleman, crisp received pronunciation, theatrical baritone, smug, mock-polite, sardonic like a villain narrating his own crime, rolled r's and crooning
+```
+
+Exclude: `american accent, autotune, rap, shouting, modern pop, edm`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: posh, mock-polite]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: crooned baritone]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: brass fanfare]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: theatrical]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: smug]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: theatrical]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, aristocratic, amused]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3: sinister]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: grand, full brass]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-4
+
+Settings: weirdness 40, style influence 60, Variety off, Vocal Gender female, Duration 240 s.
+
+```
+Bristol trip-hop funk with psychedelic haze, slow heavy breakbeat, deep dub bass, scratchy funk guitar, vinyl crackle, eerie strings, Rhodes piano, 88 BPM, smoky and menacing. Lead vocal: mature English woman in her fifties, West Country lilt, deep smoky contralto, worn and husky, slow and contemptuous, every line weighed out, soulful growl on the chorus
+```
+
+Exclude: `male vocals, american accent, autotune, young pop voice, rap, belting diva`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: low, slow, spoken]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: husky, unhurried]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: strings rise]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: soulful growl]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: contemptuous]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: soulful growl]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, tired, close mic]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: full, aching]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-5
+
+Settings: weirdness 55, style influence 60, Variety high, Vocal Gender male, Duration 190 s.
+
+```
+Midlands psychedelic funk-rock, heavy fuzz riffs, slap bass, cowbell, pounding live drums, wah-drenched lead guitar, space-echo freakouts, 124 BPM, raw and loud. Lead vocal: young Birmingham man, broad Brummie accent, shouting punk delivery, cracked hoarse voice, rabble-rousing, spits consonants, crowd backing yells
+```
+
+Exclude: `american accent, autotune, crooning, smooth vocal, falsetto, pop`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: shouted]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: hoarse shouting]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: crowd yells]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: screamed]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: screamed]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, breathless]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Fuzz Guitar Freakout]
+
+[Verse 3: rabble-rousing]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: everyone shouting]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-6
+
+Settings: weirdness 70, style influence 50, Variety normal, Vocal Gender female, Duration 210 s.
+
+```
+Eerie English psych-folk funk, 1970s pastoral horror, clean funky bass groove, brushed breakbeat, recorder and dulcimer, detuned Mellotron flutes, backwards tape, 96 BPM, creepy and hypnotic. Lead vocal: young English woman, high clear choirgirl soprano, soft rural Yorkshire accent, sweet and innocent tone singing vicious words, whispered threats, unsettling calm
+```
+
+Exclude: `male vocals, american accent, autotune, belting, rap, growl`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: whispered]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: sweet, clear soprano]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: whispered echoes]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: innocent, layered harmonies]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: unsettling calm]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: innocent, layered harmonies]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: whispered, close]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: soprano soaring over backwards tape]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
 ### Round HA (2026-10-22): test round — which constant is cloning the voice
 
 Jack, after the §2e audit: "please do a test round, I think all the bans are affecting it too." Three GA scenes (lagos, addis, tokyo), four versions each, **one constant changed per version**. Read it as a grid: compare across a row to see what each change does. GA itself is the control (full bans, draft 3, shout arc).
@@ -149,7 +588,7 @@ Exclude Styles (all): only Jack's standing rule, everything else removed:
 double-time, fast rap
 ```
 
-Settings as GA: v6, Variety Off, Personalize off, Max Mode off, Vocal Gender none, style influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 24 Creates. Unheard.
+Settings as GA: v6, Variety Off, Personalize off, Max Mode off, Vocal Gender none, style influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. **Stopped by Jack after 5 Creates** ("forget the test round … save the credits"): lagos-a and lagos-b ran both weirdnesses, lagos-c only w30; addis and tokyo never ran. Unheard.
 
 #### HA · lagos-a
 
