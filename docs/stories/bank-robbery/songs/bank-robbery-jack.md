@@ -144,6 +144,11 @@ comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, 
 
 Lyrics: draft 3 as written (Jack's words, no labels added). Settings: v6, Variety Off, Personalize off, Max Mode off, **Vocal Gender none** (so women can come through too), style influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 24 Creates; balance 8,780 → 8,500 (280, so 40 more than 24 × 10; the extra 40 is unaccounted for, the same gap as before this round). Unheard.
 
+**Verdict (Jack, 2026-10-22): a lot of the voices sound like previous songs.** Audit of all 325 takes in
+`docs/suno-gpt/suno-voices.md` §2e: no saved Voice was attached and no prompt was rewritten. What
+stays constant is the lyrics (every take), the excludes, style influence 75, and a "verses… shouted
+chorus" sentence shape.
+
 #### GA · lagos — Lagos afro-psych funk
 
 ```

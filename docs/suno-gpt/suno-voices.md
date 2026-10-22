@@ -592,6 +592,39 @@ basically the same". Two research passes; tiers as found.
   vocal identity); Wild (style, not voice); artist names (Suno stored "Roger Daltrey" verbatim and it
   did nothing audible — Bank Robbery Round Y).
 
+### 2e. 🔎 "Every voice sounds like the last song": audit of Bank Robbery, 325 takes (2026-10-22)
+
+Jack, after Round GA (12 world funk-psych scenes): *"a lot of these voices sound like previous songs
+or saved voices — is it that, or the prompts?"* Measured from each take's own record
+(`studio-api.prod.suno.com/api/clip/<id>`), every take logged in `bank-robbery-jack.md`:
+
+- ✅ **No saved Voice reached any take.** A Voice-made take carries `persona` + `metadata.persona_id` +
+  `task: vox` (checked against GPOM's `badcode newsreader` takes); **0 of 325** have them. 6 are Round
+  BA covers (`cover_clip_id`); the rest are plain `gen`.
+- ✅ **No prompt rewriting** since Round AA: `aug_creativity` 0, tags stored verbatim.
+- ⬜ **Account-wide My Taste: not checked.** Suno's help page (help.suno.com/en/articles/11362561)
+  says it is on by default, can be disabled from the avatar menu, and acts through style
+  augmentation; nothing says it reaches the voice with Variety Off. A cookie banner blocked the
+  automated check. Unverified either way.
+- 🔴 **What every take shares, i.e. what the prompts hold constant:**
+  - **The same lyrics:** 325/325 takes carry draft 3, and 279 have the identical box. The words fix the
+    syllable rhythm and the swearing/shouting register before any style word is read. No public source
+    tests whether reused lyrics pull the voice; it is the largest constant we have, so it is the first suspect.
+  - **The same 11 excludes in all 325** (comedy … EDM, smooth R&B), plus `rap, hip hop` in most. Each
+    ban removes a voice family, so the pool left is the same one every round.
+  - **Style influence 0.75 in all 325.**
+  - **The same sentence shape:** `<scene> <genre>, NNN BPM: a <adj> <nationality> man <verb>ing the verses,
+    <verb>ing the chorus. <instruments>.` `chorus` is in 273 boxes, `verses` 252; shout/scream/howl/
+    snarl/bark/roar words in ~200. GA: `funk` 12/12, `fuzz` 11, `organ` 9. Asking every singer for
+    the same arc (quiet verse → shouted chorus) asks for the same performance.
+  - **Nationality as an adjective** (`Nigerian`, `Ethiopian`) over English lyrics: §2 says accent words
+    do not render, and the singer of English lyrics falls back to the genre's English-singing default.
+- **What to change next (untested):** vary the constants one at a time, starting with the lyrics
+  (a test verse in a different rhythm/register, or Jack's words re-lined), then drop the shared
+  ban list and the shout arc. Use a delivery CATEGORY per box (crooned / chanted / spoken / falsetto /
+  whispered), not an adjective. The documented route is still a Voice/Persona built from the take
+  that already has the right singer (§2d).
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact
