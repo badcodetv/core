@@ -132,9 +132,61 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round BO (2026-10-22): Jack's two sweep voices on the exact "Best one" music
+
+Jack: liked **`brj-sweep-s3-falsetto-v6-w40`** and **`brj-sweep-s2-gangster-spoken-v6-w30`** ("I like both of them"); put each back on the exact "Best one" (024b82e8) music.
+
+Two music versions per voice: **a** = Best one's own stored Style box, settings and excludes, with only the voice clause swapped for the sweep's voice sentence; **b** = Best one's sound as heard (listen logs above) plus the same voice sentence. Lyrics: Kai's words with the sweep take's own tags, instrument cues that belong to the sweep arrangement (wah, Mellotron, tape echo, flute) neutralised. Settings as Best one: v6, weirdness 30, style influence 75, Variety Off, Vocal Gender male; Duration as the sweep prompt (Kai's lyrics are long). Excludes: Best one's list plus the sweep prompt's voice bans. One Create each, 4 Creates, 40 credits (8,150 → 8,110); records checked: Kai's lyrics, Variety 0. Unheard.
+
+🔑 **If the text route loses the voice:** the documented way to carry a liked singer exactly is a **Voice made from the liked sweep take** (Create → Voice → from a song; a human step, not automated) attached to Best one's stored prompt.
+
+#### BO · a-falsetto
+
+```
+English psych folk funk, 100 BPM: a young English man singing entirely in a high, airy, sweet falsetto, early-70s soul delivery, smooth legato lines floating over the groove, multi-tracked falsetto harmony stacks on the chorus, gentle and eerie rather than aggressive. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, chest voice, baritone, gravelly, raspy, screaming`
+
+- brj-best-a-falsetto-v6-w30 — 4:58 — https://suno.com/song/d2d05bb9-9d48-4efd-958e-4a8f2395b888
+- brj-best-a-falsetto-v6-w30 — 4:59 — https://suno.com/song/f112dfbc-9129-4175-83c2-b104ad89837d
+
+#### BO · a-gangster
+
+```
+English psych folk funk, 100 BPM: an old English man in his sixties, deep weathered baritone, spoken word, not sung: a calm, unhurried storyteller narrating like a retired gangster at the bar, conversational and wry, every word clear, sitting back on the beat; a pub crowd shouts the hooks back at him. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, singing, melodic vocals, young voice, falsetto, screaming`
+
+- brj-best-a-gangster-v6-w30 — 3:59 — https://suno.com/song/fd8d79c8-de2f-46d8-ac86-fcff9a8c1b25
+- brj-best-a-gangster-v6-w30 — 3:58 — https://suno.com/song/3790d380-f362-4c33-8827-56fac69eaa6f
+
+#### BO · b-falsetto
+
+```
+Psychedelic funk crossed with gritty British blues and stomp rock over a hip-hop breakbeat, 93 BPM: a raw acoustic guitar riff with bluesy bends drives it, stomping breakbeat with foot stomps and tambourine, heavily saturated growling bass, shouted gang call-and-response on the hooks, raw room grit, impact hits on the drops, dark warm dynamic mix. Lead vocal: a young English man singing entirely in a high, airy, sweet falsetto, early-70s soul delivery, smooth legato lines floating over the groove, multi-tracked falsetto harmony stacks on the chorus, gentle and eerie rather than aggressive.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, chest voice, baritone, gravelly, raspy, screaming`
+
+- brj-best-b-falsetto-v6-w30 — https://suno.com/song/d455249c-0ae4-435a-a06c-657124ac5898
+- brj-best-b-falsetto-v6-w30 — https://suno.com/song/c598d639-ce00-4484-82de-3c25f278f4c0
+
+#### BO · b-gangster
+
+```
+Psychedelic funk crossed with gritty British blues and stomp rock over a hip-hop breakbeat, 93 BPM: a raw acoustic guitar riff with bluesy bends drives it, stomping breakbeat with foot stomps and tambourine, heavily saturated growling bass, shouted gang call-and-response on the hooks, raw room grit, impact hits on the drops, dark warm dynamic mix. Lead vocal: an old English man in his sixties, deep weathered baritone, spoken word, not sung: a calm, unhurried storyteller narrating like a retired gangster at the bar, conversational and wry, every word clear, sitting back on the beat; a pub crowd shouts the hooks back at him.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, singing, melodic vocals, young voice, falsetto, screaming`
+
+- brj-best-b-gangster-v6-w30 — https://suno.com/song/da789d4e-2e22-4a53-ada3-77671b4b8e94
+- brj-best-b-gangster-v6-w30 — https://suno.com/song/e13477d0-a533-4621-8da9-c49c04d81216
+
 ### Round SW (2026-10-22): clean-room sweep — eight English performers, the psychedelic funk vibe of "Best one"
 
-Jack, after VB: "the voices are the same again, do a clean room sweep of varied English voices with the psychedelic funk vibe from this (024b82e8)." A fresh clean-room helper (no repo, memory or web) was told why VB failed (one shared music paragraph, one shared delivery) and asked for eight singers who differ as **performers**: delivery category, register, gender, age. The music wording varies per prompt within the vibe. Kai's words unchanged (checked word by word); every tag, setting and exclude is the helper's own, run verbatim. One Create each, 8 Creates, 80 credits (8,230 → 8,150); records checked: Kai's lyrics, Variety 0. `screaming` banned in all. Unheard.
+Jack, after VB: "the voices are the same again, do a clean room sweep of varied English voices with the psychedelic funk vibe from this (024b82e8)." A fresh clean-room helper (no repo, memory or web) was told why VB failed (one shared music paragraph, one shared delivery) and asked for eight singers who differ as **performers**: delivery category, register, gender, age. The music wording varies per prompt within the vibe. Kai's words unchanged (checked word by word); every tag, setting and exclude is the helper's own, run verbatim. One Create each, 8 Creates, 80 credits (8,230 → 8,150); records checked: Kai's lyrics, Variety 0. `screaming` banned in all. **Verdict (Jack, 2026-10-22): liked s3 falsetto and s2 gangster spoken**, the first sweep to break the same-voice problem (Round BO).
 
 #### SW · s1-soul-belt — Northern soul woman, controlled gospel belt
 
