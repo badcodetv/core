@@ -132,6 +132,581 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round FA (2026-10-22): more psychedelic genres
+
+Jack: "please mess around with more psychedelic genres." Twelve psych scenes, each a **genre word
+that brings its own singer** (§2d) with funk kept in the groove: eight English scenes, then four world
+psych-funk scenes sung by an English voice on purpose (mismatched, as Jack allowed). Each box names
+instruments and effects rather than leaning on the word "psychedelic" (web tip: a bare label gets
+flattened), stays short (4–8 descriptors), and carries a quiet→loud arc against monotone.
+
+Sources: molam (Vice; Café Oto: "what makes Molam psychedelic is the khaen"), chicha (MasterClass;
+Musique Machine); the rest general knowledge. Repo: Jack already liked psychedelic dub on Camping
+(`docs/stories/camping/songs/camping-pinned.md`).
+
+Exclude Styles (all):
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+Lyrics: the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max Mode
+off, Vocal Gender male, style influence 75, Duration 170 s, weirdness 30 and 60, workspace
+`bank-robbery-Jack`. 24 Creates, 240 credits (9,060 → 8,820). Stored prompts verbatim, Variety 0.
+Unheard.
+
+#### FA · ufo — 1967 London psychedelia (UFO Club)
+
+```
+1967 London psychedelic funk, UFO Club, 100 BPM: a whimsical deadpan English singer close to speaking, rising to a wail on the chorus. Farfisa organ, echoing slide guitar, a fat funk bassline, breakbeat drums.
+```
+
+- brj-psy-ufo-v6-w30 — 2:49 — https://suno.com/song/ddeca778-1429-455d-a528-46736e93e80d
+- brj-psy-ufo-v6-w30 — 2:49 — https://suno.com/song/e044cc0b-b3f0-4ccb-b387-b8d560e7f099
+- brj-psy-ufo-v6-w60 — 2:49 — https://suno.com/song/9e9cabcd-770f-423a-8a8c-acfb21221afe
+- brj-psy-ufo-v6-w60 — 2:49 — https://suno.com/song/ed6477c6-fdf4-4e98-b49a-b47da0bb54a7
+
+#### FA · freakbeat — 1966 freakbeat
+
+```
+1966 London freakbeat funk, 112 BPM: a snotty shouting mod, sneered verses, a yelled chorus. Fuzz guitar feedback, pounding R&B drums, Hammond stabs, a strutting bass.
+```
+
+- brj-psy-freakbeat-v6-w30 — 2:49 — https://suno.com/song/2985ee2b-d4ae-479b-87b0-4ff1d8c13e6c
+- brj-psy-freakbeat-v6-w30 — 2:49 — https://suno.com/song/f7e5efd2-a6c2-4baf-91d4-1525724771bb
+- brj-psy-freakbeat-v6-w60 — 2:49 — https://suno.com/song/7bfc218b-306f-4b09-a791-4f2adbcb6e8f
+- brj-psy-freakbeat-v6-w60 — 2:50 — https://suno.com/song/6d57fa66-8137-428f-b2e8-59610e0c1f4a
+
+#### FA · canterbury — Canterbury scene jazz-funk
+
+```
+Canterbury scene jazz-funk, 104 BPM: a gentle high wistful English voice, fragile verses swelling into a pleading chorus. Fuzz organ, a slinky odd-time funk groove, flute, Mellotron.
+```
+
+- brj-psy-canterbury-v6-w30 — 2:49 — https://suno.com/song/3395d915-6fbf-4bf5-a529-c145c55607e8
+- brj-psy-canterbury-v6-w30 — 2:49 — https://suno.com/song/a6f1842b-e767-47b0-b142-ab6aff79b551
+- brj-psy-canterbury-v6-w60 — 2:49 — https://suno.com/song/2d80a8b5-3550-46de-aa90-bceea69f5efc
+- brj-psy-canterbury-v6-w60 — 2:49 — https://suno.com/song/e5b5c75f-61d0-440d-b15f-4f65f84c587c
+
+#### FA · spacerock — 1972 space rock
+
+```
+1972 English space rock funk, 104 BPM: a gruff half-spoken chanting man, roaring on the chorus. Oscillator whooshes, a droning fuzz bass, pounding motorik drums, wah-wah guitar.
+```
+
+- brj-psy-spacerock-v6-w30 — 2:48 — https://suno.com/song/a3631fbb-568c-417d-a14a-bf94b0b4e93b
+- brj-psy-spacerock-v6-w30 — 2:49 — https://suno.com/song/5aa5dc08-38ad-4f3c-8b6b-646b5c1fa9a7
+- brj-psy-spacerock-v6-w60 — 2:49 — https://suno.com/song/da792385-ad69-435f-9399-e581436f49d2
+- brj-psy-spacerock-v6-w60 — 2:49 — https://suno.com/song/fc28eed7-b4cf-455d-a377-ba74d59e5791
+
+#### FA · psychfolk — English psych folk
+
+```
+English psych folk funk, 100 BPM: a wavering untrained English folk singer with warbling ornaments, climbing to a cry on the chorus. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+- brj-psy-psychfolk-v6-w30 — 2:48 — https://suno.com/song/f6b49f9f-a742-419a-9450-b54dc7d740a7
+- brj-psy-psychfolk-v6-w30 — 2:49 — https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5
+- brj-psy-psychfolk-v6-w60 — 2:48 — https://suno.com/song/e6f17bb8-fa6e-40ca-b21d-143fbe4c99a4
+- brj-psy-psychfolk-v6-w60 — 2:49 — https://suno.com/song/9d052f8d-35db-4802-841e-1d06c3841677
+
+#### FA · shoegaze — shoegaze
+
+```
+Shoegaze funk, 98 BPM: a breathy sighing English man half-buried in the guitars, breaking through hoarse on the chorus. Walls of warped fuzz guitar, reverse reverb, a funky breakbeat, a deep bass.
+```
+
+- brj-psy-shoegaze-v6-w30 — 2:49 — https://suno.com/song/7cbe6cee-2b61-4854-a608-e98da4b2518e
+- brj-psy-shoegaze-v6-w30 — 2:49 — https://suno.com/song/81a99ac1-ef53-421c-8314-1cd77505df97
+- brj-psy-shoegaze-v6-w60 — 2:49 — https://suno.com/song/6891bbb7-d289-4f38-b20a-10fc43509e72
+- brj-psy-shoegaze-v6-w60 — 2:49 — https://suno.com/song/721a82c1-452e-4250-bc0d-13779d5712eb
+
+#### FA · psychdub — London psychedelic dub (On-U)
+
+```
+London psychedelic dub, On-U Sound, 92 BPM: an English man chanting through echo, voice thrown into the delays on the chorus. Tape echo throws, spring reverb, a deep sub bass, funky dub drums, sudden dropouts.
+```
+
+- brj-psy-psychdub-v6-w30 — 2:48 — https://suno.com/song/478ff464-173e-467a-848c-53213c6d19e1
+- brj-psy-psychdub-v6-w30 — 2:50 — https://suno.com/song/6eb5bc4c-4159-4757-8747-dae183f11628
+- brj-psy-psychdub-v6-w60 — 2:49 — https://suno.com/song/073089ff-e31d-4ebf-a457-bc6ada8ff663
+- brj-psy-psychdub-v6-w60 — 2:49 — https://suno.com/song/2758eb3f-2bf4-40ed-99ed-40deb206dffc
+
+#### FA · britpsych — 1990s Britpsych
+
+```
+1990s Britpsych funk, 106 BPM: a confident nasal English rock singer, cocky verses, a big chanted chorus. Sitar and tabla, Hammond organ, wah-wah guitar, backwards guitar, a funky drummer.
+```
+
+- brj-psy-britpsych-v6-w30 — 2:48 — https://suno.com/song/8f402309-6843-46ee-9bcc-9efaa424a1d5
+- brj-psy-britpsych-v6-w30 — 2:49 — https://suno.com/song/182bf61f-19ff-454c-abab-393ee51d44ac
+- brj-psy-britpsych-v6-w60 — 2:49 — https://suno.com/song/4e903c51-a27d-4fa4-81a6-e035771f59ad
+- brj-psy-britpsych-v6-w60 — 2:49 — https://suno.com/song/6dd8e359-9859-45f9-ab2f-09a57ce8031d
+
+#### FA · anatolian — Anatolian psych funk, English singer
+
+```
+A sneering English man singing over 1970s Anatolian psychedelic funk, 104 BPM: fuzz saz in Turkish scales, darbuka, a wailing organ, a heavy funk bass. Snarled verses, a howled chorus.
+```
+
+- brj-psy-anatolian-v6-w30 — 2:49 — https://suno.com/song/110d7f0d-7b2d-407a-9008-fc08aaeff1d2
+- brj-psy-anatolian-v6-w30 — 2:49 — https://suno.com/song/a8bf9f0c-598f-40a2-8cc0-b86df111fa66
+- brj-psy-anatolian-v6-w60 — 2:49 — https://suno.com/song/5231ea19-4c20-40a2-a9ef-e36ecdd7c11e
+- brj-psy-anatolian-v6-w60 — 2:50 — https://suno.com/song/e0feafa9-3a7b-49f2-800b-7680fa75b09f
+
+#### FA · zamrock — 1970s Zamrock
+
+```
+1970s Zamrock, 108 BPM: a swaggering raw singer in English, strutting verses, a shouted chorus. Raw garage fuzz guitar, Afro-funk drums, a cheap organ, lo-fi tape.
+```
+
+- brj-psy-zamrock-v6-w30 — 2:48 — https://suno.com/song/466910d4-77d3-4372-805d-9e0a57ff77d4
+- brj-psy-zamrock-v6-w30 — 2:49 — https://suno.com/song/a49c44a0-c85f-4a1d-b7ea-8aa70895c0b2
+- brj-psy-zamrock-v6-w60 — 2:49 — https://suno.com/song/50e66420-b5c7-4d10-b6c9-bb992150cd30
+- brj-psy-zamrock-v6-w60 — 2:49 — https://suno.com/song/fadff6d9-8120-419c-bda5-48f10cda5368
+
+#### FA · molam — Thai molam psych funk, English singer
+
+```
+An English soul man singing over Thai molam psychedelic funk, 104 BPM: electric phin lute, droning khaen mouth organ, a funk bass, tight drums. Murmured verses, a soaring chorus.
+```
+
+- brj-psy-molam-v6-w30 — 2:49 — https://suno.com/song/7243545e-aad7-47c9-802a-b80ae38fff06
+- brj-psy-molam-v6-w30 — 2:49 — https://suno.com/song/c128eb10-2361-4f7f-8037-7a3c7a2dd22e
+- brj-psy-molam-v6-w60 — 2:49 — https://suno.com/song/2396e616-5ed4-4f4d-9568-063ebbeee545
+- brj-psy-molam-v6-w60 — 2:49 — https://suno.com/song/2c27c80c-b5e6-4945-b575-146eb56a4bc2
+
+#### FA · chicha — Peruvian chicha, English singer
+
+```
+An English crooner singing over Peruvian chicha psychedelic cumbia, 100 BPM: Farfisa organ, wah-wah and surf-reverb guitars, timbales, congas and cowbell. Smooth verses, a belted chorus.
+```
+
+- brj-psy-chicha-v6-w30 — 2:49 — https://suno.com/song/5c2c288d-1bf8-4ac8-b9a9-bb82fa6781cb
+- brj-psy-chicha-v6-w30 — 2:50 — https://suno.com/song/bb49c3e8-b64b-4157-848c-b9646e9f7835
+- brj-psy-chicha-v6-w60 — 2:49 — https://suno.com/song/78a12e1b-4e95-494a-ac01-b9e044d60565
+- brj-psy-chicha-v6-w60 — https://suno.com/song/b30d1630-f693-43c4-823b-2b7fc9c0fe4c
+
+### Round EA (2026-10-22): funk blends, straight and psychedelic
+
+Jack on Round DA: "the bristol triphop was great but not enough funk and was too flat and
+monotone … come up with funk blends with other genres … also do psychedelic versions of it all."
+He also ruled, for the skill: **the genre massively affects the voice** (now the second 🔑 in
+`.claude/skills/suno-prompt/SKILL.md`).
+
+Each box opens with a **funk blend that carries its own English singer** (genre word = voice, per
+§2d), then a delivery **arc** (quiet → loud) against the monotone, then its instruments. Each blend
+also has a **psychedelic** twin: `Psychedelic` in front, plus one production sentence. Sources: Baggy
+and Brit funk (Wikipedia), A Certain Ratio (Last.fm, DJ Mag), Psychedelic Shack (Wikipedia: fuzz,
+synth effects, stereo-shifting vocals); the rest general knowledge.
+
+**Trip hop only:** the lyric section labels carry the arc (`[Verse 1: murmured, close]`,
+`[Pre-Chorus: building, rising]`, `[Chorus: urgent cracked cry]` …); Jack's words unchanged. Other
+blends use the stored lyrics as they are.
+
+Exclude Styles (all):
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, monotone
+```
+
+Settings: v6, Variety Off, Personalize off, Max Mode off, Vocal Gender male, style influence 75,
+Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 24 Creates, 240 credits
+(9,300 → 9,060). Stored prompts verbatim, Variety 0. Unheard.
+
+#### EA · funk-triphop — Bristol trip hop funk
+
+```
+Bristol trip hop funk, 96 BPM: a close-mic English man who murmurs the verses, then rises into an urgent cracked cry on the chorus, answering himself. A heavy funky breakbeat, a fat slap bassline, wah-wah guitar, horn stabs, a Rhodes. Played completely straight.
+```
+
+- brj-funk-triphop-v6-w30 — 2:48 — https://suno.com/song/9cbb6d4c-413e-4687-8961-328c77036aa4
+- brj-funk-triphop-v6-w30 — 2:49 — https://suno.com/song/4ecfb47d-26d6-4c23-b969-da534fecd06c
+- brj-funk-triphop-v6-w60 — 2:49 — https://suno.com/song/a29a4739-5fd7-412a-93a0-c0d474f90475
+- brj-funk-triphop-v6-w60 — 2:49 — https://suno.com/song/b9b9dcdb-5faf-4f17-b394-31c37a748357
+
+#### EA · psych-triphop — psychedelic Bristol trip hop funk
+
+```
+Psychedelic bristol trip hop funk, 96 BPM: a close-mic English man who murmurs the verses, then rises into an urgent cracked cry on the chorus, answering himself. A heavy funky breakbeat, a fat slap bassline, wah-wah guitar, horn stabs, a Rhodes. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-triphop-v6-w30 — 2:48 — https://suno.com/song/e42997fb-8c09-46b4-8f16-8d79338c0a0a
+- brj-psych-triphop-v6-w30 — 2:49 — https://suno.com/song/94d50c4e-9761-474a-ad0e-32a2e9a0d56e
+- brj-psych-triphop-v6-w60 — 2:49 — https://suno.com/song/10f19278-6e7d-4e14-a5f1-adc4e19d8aff
+- brj-psych-triphop-v6-w60 — 2:49 — https://suno.com/song/e77c5b5e-cb14-439f-856a-307e68c6c822
+
+#### EA · funk-acidjazz — London acid jazz
+
+```
+London acid jazz, 104 BPM: a soulful English man, conversational verses that lift into a soaring falsetto chorus. Live slap bass, Hammond organ, a horn section, wah-wah rhythm guitar, flute, a breakbeat drummer. Played completely straight.
+```
+
+- brj-funk-acidjazz-v6-w30 — 2:49 — https://suno.com/song/12e9477f-a1b7-459c-8530-883d39a436a2
+- brj-funk-acidjazz-v6-w30 — 2:49 — https://suno.com/song/f1e1de57-565f-4e37-a0a5-9021a838e88e
+- brj-funk-acidjazz-v6-w60 — 2:46 — https://suno.com/song/b568a4a9-8e41-4c9c-98d8-cd19a2ed1291
+- brj-funk-acidjazz-v6-w60 — 2:49 — https://suno.com/song/1be2d8b1-44f8-442b-a9da-fb109ea997de
+
+#### EA · psych-acidjazz — psychedelic London acid jazz
+
+```
+Psychedelic london acid jazz, 104 BPM: a soulful English man, conversational verses that lift into a soaring falsetto chorus. Live slap bass, Hammond organ, a horn section, wah-wah rhythm guitar, flute, a breakbeat drummer. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-acidjazz-v6-w30 — 2:48 — https://suno.com/song/d972e9c7-cbe4-4c63-ad45-c3af9a65bb46
+- brj-psych-acidjazz-v6-w30 — 2:49 — https://suno.com/song/1ffea315-8135-4703-af03-8fcae3a018bc
+- brj-psych-acidjazz-v6-w60 — 2:49 — https://suno.com/song/53515c29-a45f-4da6-82f6-9c0dfcba6337
+- brj-psych-acidjazz-v6-w60 — 2:49 — https://suno.com/song/850004ad-4594-4ccc-8e5f-10d8d9317120
+
+#### EA · funk-baggy — Madchester baggy funk
+
+```
+Madchester baggy funk, 100 BPM: a lazy flat Mancunian chant-singer, swaggering verses, a terrace-chant chorus with the crowd. A shuffling funky drummer break, wah-wah jangle guitar, a lazy melodic bass, piano stabs, congas. Played completely straight.
+```
+
+- brj-funk-baggy-v6-w30 — 2:46 — https://suno.com/song/5a224e05-8e36-4815-b2da-2873aae89e04
+- brj-funk-baggy-v6-w30 — 2:49 — https://suno.com/song/cc60b865-7209-479a-a1ec-82ff7701c6ea
+- brj-funk-baggy-v6-w60 — 2:48 — https://suno.com/song/fa374568-d64a-4fb0-881f-200e97c5a99e
+- brj-funk-baggy-v6-w60 — 2:49 — https://suno.com/song/127c194f-4d74-47be-be4c-a287cbf152de
+
+#### EA · psych-baggy — psychedelic Madchester baggy funk
+
+```
+Psychedelic madchester baggy funk, 100 BPM: a lazy flat Mancunian chant-singer, swaggering verses, a terrace-chant chorus with the crowd. A shuffling funky drummer break, wah-wah jangle guitar, a lazy melodic bass, piano stabs, congas. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-baggy-v6-w30 — 2:48 — https://suno.com/song/efe3884f-35ce-4e8b-a5fb-254027579ff7
+- brj-psych-baggy-v6-w30 — 2:49 — https://suno.com/song/19bb09c4-042a-4f4c-acac-f433a7aefc21
+- brj-psych-baggy-v6-w60 — 2:49 — https://suno.com/song/6f6f5fed-ea31-4604-8ea9-d681485381cf
+- brj-psych-baggy-v6-w60 — 2:49 — https://suno.com/song/af510b75-1d5a-4b06-bb28-4291a6bf74da
+
+#### EA · funk-punkfunk — 1980 Manchester punk-funk
+
+```
+1980 Manchester punk-funk, 112 BPM: a tense yelping English man barking the verses, a shouted chorus. Scratchy choppy funk guitar, a dominant slap bass, cowbell and Latin percussion, a lonely trumpet. Played completely straight.
+```
+
+- brj-funk-punkfunk-v6-w30 — 2:48 — https://suno.com/song/9d4ce96f-5ffa-4816-8161-2f0daa69ab02
+- brj-funk-punkfunk-v6-w30 — 2:48 — https://suno.com/song/b3f47daa-8ead-4440-9465-3d5e6ecbeb6a
+- brj-funk-punkfunk-v6-w60 — 2:48 — https://suno.com/song/f48f1bb7-5928-4c81-8753-f23f31cf7ee7
+- brj-funk-punkfunk-v6-w60 — 2:49 — https://suno.com/song/03980c0d-0945-4157-8873-67781ec85faf
+
+#### EA · psych-punkfunk — psychedelic 1980 Manchester punk-funk
+
+```
+Psychedelic 1980 Manchester punk-funk, 112 BPM: a tense yelping English man barking the verses, a shouted chorus. Scratchy choppy funk guitar, a dominant slap bass, cowbell and Latin percussion, a lonely trumpet. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-punkfunk-v6-w30 — 2:49 — https://suno.com/song/d9d71eeb-51f7-4815-87a0-17c14f7dc4ea
+- brj-psych-punkfunk-v6-w30 — 2:50 — https://suno.com/song/9603a42e-073c-404b-9fc6-1282ab6fe831
+- brj-psych-punkfunk-v6-w60 — 2:49 — https://suno.com/song/42087ffe-8932-4bbf-9f32-d3bd6a92a8e1
+- brj-psych-punkfunk-v6-w60 — 2:49 — https://suno.com/song/ed332873-569b-402d-b3de-d22d3e94c257
+
+#### EA · funk-britfunk — 1981 London Brit funk
+
+```
+1981 London Brit funk, 110 BPM: a bright soulful English man, smooth verses that climb into a high belted chorus with a gang answering. Thumping slap bass, bright synths, horn stabs, clavinet, a tight disco-funk beat. Played completely straight.
+```
+
+- brj-funk-britfunk-v6-w30 — 2:49 — https://suno.com/song/647575c9-2fd2-4efb-9c8f-d9fc8af51b67
+- brj-funk-britfunk-v6-w30 — 2:50 — https://suno.com/song/9f771971-6419-4743-afff-16a5f62a5d01
+- brj-funk-britfunk-v6-w60 — 2:49 — https://suno.com/song/42b14ca5-29cd-482f-b18b-84fb202fde8f
+- brj-funk-britfunk-v6-w60 — 2:49 — https://suno.com/song/54983847-f3f1-426e-874c-d07f18c45452
+
+#### EA · psych-britfunk — psychedelic 1981 London Brit funk
+
+```
+Psychedelic 1981 London Brit funk, 110 BPM: a bright soulful English man, smooth verses that climb into a high belted chorus with a gang answering. Thumping slap bass, bright synths, horn stabs, clavinet, a tight disco-funk beat. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-britfunk-v6-w30 — 2:49 — https://suno.com/song/3cb25798-fcc1-4ed5-a035-750ca930410a
+- brj-psych-britfunk-v6-w30 — 2:50 — https://suno.com/song/99bee4a1-3588-41b8-a92c-172548e06494
+- brj-psych-britfunk-v6-w60 — 2:49 — https://suno.com/song/d69af18c-2f8d-454e-a069-c3f449f2fdf7
+- brj-psych-britfunk-v6-w60 — 2:49 — https://suno.com/song/e12eaf76-8411-492a-bc1d-522509b9db1a
+
+#### EA · funk-bigbeat — 1990s English big beat
+
+```
+1990s English big beat, 108 BPM: a hoarse English MC hollering the verses, a bellowed chorus. A distorted compressed funk break, acid bass squelch, sampled brass stabs, filter sweeps. Played completely straight.
+```
+
+- brj-funk-bigbeat-v6-w30 — 2:49 — https://suno.com/song/96f29b2d-eb20-4018-a2bc-7be97d2bdf4e
+- brj-funk-bigbeat-v6-w30 — 2:49 — https://suno.com/song/a4e4f60e-3d3c-4729-ac5b-c660f65a6a5c
+- brj-funk-bigbeat-v6-w60 — 2:49 — https://suno.com/song/32bc59da-c536-49b0-a338-d0d936600580
+- brj-funk-bigbeat-v6-w60 — 2:49 — https://suno.com/song/966ab398-f110-442d-a4de-615d1a053f08
+
+#### EA · psych-bigbeat — psychedelic 1990s English big beat
+
+```
+Psychedelic 1990s English big beat, 108 BPM: a hoarse English MC hollering the verses, a bellowed chorus. A distorted compressed funk break, acid bass squelch, sampled brass stabs, filter sweeps. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-bigbeat-v6-w30 — 2:49 — https://suno.com/song/c551817e-0b78-4e6a-9112-f5663e763d20
+- brj-psych-bigbeat-v6-w30 — 2:49 — https://suno.com/song/c5e0609a-f6e6-4db2-9310-7d1eb429d216
+- brj-psych-bigbeat-v6-w60 — https://suno.com/song/3d0bf3da-ab91-41c8-b6cc-0037354abaf2
+- brj-psych-bigbeat-v6-w60 — https://suno.com/song/784a95bf-4728-4b95-8866-6ef62e5b3f95
+
+### Round DA (2026-10-22): ten styles × ten English voices, mixed on purpose
+
+Jack: "come up with a bunch of 70s cop funk styles, or styles like that, with a range of varied
+english singers, and mess around with the combos so that the voices actually change, the voices
+don't have to fit the style and the style can be anything."
+
+**The design.** §2d's finding is that the *genre word* picks the singer and voice adjectives barely
+move him. So each box opens with a **voice tradition** (a pool word that carries an English singer),
+followed by a **different** cop-funk-family music sentence. Every voice and every music style is
+used once, and none sits with its natural partner. No names, no Covers, Variety Off.
+
+Music family (web, 2026-10-22: Rolling Stone Italia on poliziotteschi, Wikipedia on The Sweeney's
+Harry South; the rest general knowledge): cop-show funk, blaxploitation soul, spy crime jazz,
+Italian police library funk, British TV detective theme, police-drama theme, dub reggae, heist big
+band, krautrock funk. Voice pools that carry an English accent: no web evidence beyond weak Britpop
+playlists, so this round is the measurement.
+
+Lyrics (all): the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max
+Mode off, Vocal Gender male (female for Northern soul), style influence 75, Duration 170 s,
+weirdness 30 and 60, workspace `bank-robbery-Jack`. 20 Creates, 200 credits (9,500 → 9,300).
+
+**Verdict (Jack, 2026-10-22): the Bristol trip hop was great, but not enough funk, and too flat and monotone.** See Round EA.
+
+#### DA · punk — 1977 London punk × cop-show funk
+
+```
+1977 London punk shouter, a snotty sneering yelping young man, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a fat rumbling bass, breakbeat drums with congas. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-punk-v6-w30 — 2:49 — https://suno.com/song/150c8814-3044-4f30-a06c-29ffe05836e8
+- brj-mix-punk-v6-w30 — 2:49 — https://suno.com/song/fb6a2544-5bee-464f-8b12-a906cb3b05c7
+- brj-mix-punk-v6-w60 — 2:49 — https://suno.com/song/c382c9f7-b7f6-4e5c-9a4a-180a94b06a53
+- brj-mix-punk-v6-w60 — 2:49 — https://suno.com/song/e5887638-236e-4d34-9beb-b56105eab940
+
+#### DA · musichall — music hall cockney × blaxploitation soul
+
+```
+Old London music hall singer, a cheeky cockney baritone belting like a pub singalong with a roll on the Rs, over 1971 blaxploitation soul, 100 BPM: wah-wah guitar, punchy horns, a bubbling bassline, congas and a string section. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-musichall-v6-w30 — 2:49 — https://suno.com/song/3cfa18d3-71f8-45ca-8037-e13b013c5e37
+- brj-mix-musichall-v6-w30 — 2:49 — https://suno.com/song/e95e0053-38f8-4840-b853-2510d81147a4
+- brj-mix-musichall-v6-w60 — 2:49 — https://suno.com/song/9032f38a-b0e3-4b8b-ba98-a3b77fa044de
+- brj-mix-musichall-v6-w60 — 2:50 — https://suno.com/song/ad8ec2df-8d8b-4c28-96ca-6c7c85a55e7c
+
+#### DA · folk — Northern folk × spy crime jazz
+
+```
+Northern English folk singer, a plain weathered nasal tenor singing unadorned like a sea shanty, over 1960s spy-movie crime jazz, 108 BPM: a twangy baritone guitar riff, big brass stabs, walking upright bass, brushed drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-folk-v6-w30 — 2:48 — https://suno.com/song/6cbbc75f-fbeb-4fe9-9bfb-f360dcb7b63d
+- brj-mix-folk-v6-w30 — 2:49 — https://suno.com/song/4049bad0-4486-4a16-9eca-b41ce3ebf8bd
+- brj-mix-folk-v6-w60 — 2:49 — https://suno.com/song/22eeacd7-a00d-4bc7-a6a3-ae3e404c457b
+- brj-mix-folk-v6-w60 — 2:49 — https://suno.com/song/dfa9a7c1-28e5-40e8-815b-f5f95d265e99
+
+#### DA · newsreader — BBC newsreader (spoken) × Italian police library funk
+
+```
+BBC English newsreader, a crisp posh received-pronunciation baritone speaking every line clearly and calmly, over 1970s Italian police-thriller library funk, 104 BPM: fuzz guitar, a nervous harpsichord, a tense string ostinato, tight funky drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-newsreader-v6-w30 — 2:48 — https://suno.com/song/d1b03a8f-68b2-403f-a5ee-cde0ce14ba2f
+- brj-mix-newsreader-v6-w30 — 2:49 — https://suno.com/song/f7cf5128-653f-4c06-a7a4-fed86fdb40a7
+- brj-mix-newsreader-v6-w60 — 2:49 — https://suno.com/song/7145ca6b-1283-4eea-8d5f-e7c0e5674180
+- brj-mix-newsreader-v6-w60 — 2:49 — https://suno.com/song/cbc3260f-a895-45a9-b791-7eeacb42215c
+
+#### DA · grime — grime MC, half-time × British TV detective theme
+
+```
+London grime MC, a young voice in a slow clipped half-time flow behind the beat, over a 1970s British TV detective theme, 100 BPM: blaring brass, a driving bassline, wah-wah guitar, Hammond organ, snapping drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, triplet flow, drill
+```
+
+- brj-mix-grime-v6-w30 — 2:48 — https://suno.com/song/9a652d16-88c0-43d0-84e1-5e96c356838c
+- brj-mix-grime-v6-w30 — 2:49 — https://suno.com/song/fd52c7cc-c7fb-43f1-8649-6d490380bd10
+- brj-mix-grime-v6-w60 — 2:49 — https://suno.com/song/77d3d7d9-5011-4711-9d6b-abebb1a818de
+- brj-mix-grime-v6-w60 — 2:50 — https://suno.com/song/750d4e24-42f9-4e22-8d0f-8e32ad77b002
+
+#### DA · glam — glam rock shriek × police-drama theme
+
+```
+1973 English glam rock singer, a high camp shrieking voice with stomping football-chant backing, over a 1970s British police-drama theme, 110 BPM: brass fanfares, a hard funky bass, clavinet, live drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-glam-v6-w30 — 2:48 — https://suno.com/song/f095d2d1-d326-4f92-83c0-3f22927c0d43
+- brj-mix-glam-v6-w30 — 2:49 — https://suno.com/song/f966f5c2-254e-4ba9-8d25-3265c432345b
+- brj-mix-glam-v6-w60 — 2:49 — https://suno.com/song/13543e8f-9279-43e6-8179-3cb8fa8d0a45
+- brj-mix-glam-v6-w60 — 2:49 — https://suno.com/song/8b0c22f6-360a-4aed-a134-77a7e5ec4a10
+
+#### DA · twotone — 2 Tone deadpan × dub reggae
+
+```
+Coventry 2 Tone ska singer, a flat deadpan Midlands drone with chanted offbeat backing, over heavy 1970s dub reggae, 96 BPM: a deep dub bass, skanking guitar, echoing horn stabs, rimshot drums with spring reverb. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-twotone-v6-w30 — 2:49 — https://suno.com/song/3535dccc-3d94-47b9-a447-b7e9af3410b0
+- brj-mix-twotone-v6-w30 — 2:49 — https://suno.com/song/af5fd352-aa21-4e4c-a8f1-3d276f6fea80
+- brj-mix-twotone-v6-w60 — 2:49 — https://suno.com/song/480d9750-8453-4cae-b449-e8c9b83a8719
+- brj-mix-twotone-v6-w60 — 2:49 — https://suno.com/song/7e5e7134-ff88-4d74-af6a-a94c3b0f3b31
+
+#### DA · tenor — operatic English tenor × heist big band
+
+```
+English classically trained tenor, a pure soaring operatic voice, over a swinging 1970s heist-movie big band, 112 BPM: a blaring brass section, a walking bass, swing drums, vibraphone. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, choir
+```
+
+- brj-mix-tenor-v6-w30 — 2:49 — https://suno.com/song/112283c2-b8da-44b9-bfdc-e756ad38b255
+- brj-mix-tenor-v6-w30 — 2:49 — https://suno.com/song/b7674aca-b085-4e31-a086-95f099468e29
+- brj-mix-tenor-v6-w60 — 2:48 — https://suno.com/song/962a8a5b-cd2b-4710-be93-151b4de45de4
+- brj-mix-tenor-v6-w60 — 2:49 — https://suno.com/song/d71561d1-daee-449c-b75d-df86f30c7ace
+
+#### DA · northernsoul — Northern soul woman × cop-show funk
+
+```
+1960s Northern soul, a powerful Lancashire woman with a raw brassy belting voice, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a fat rumbling bass, breakbeat drums with congas. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-northernsoul-v6-w30 — 2:48 — https://suno.com/song/828b3207-643e-409c-a98e-c5e4ee021d4b
+- brj-mix-northernsoul-v6-w30 — 2:50 — https://suno.com/song/1343ca4b-f181-4397-8f5c-38e01e3c1f5a
+- brj-mix-northernsoul-v6-w60 — 2:49 — https://suno.com/song/10d78051-dce1-4764-9401-fbd7e1e5116c
+- brj-mix-northernsoul-v6-w60 — 2:49 — https://suno.com/song/da2ac048-f31e-428f-9f93-8ec3339eb9ba
+
+#### DA · triphop — trip hop whisper × krautrock funk
+
+```
+Bristol trip hop, a hushed close-mic murmuring English man, almost whispering, over motorik krautrock funk, 104 BPM: a hypnotic one-note bass, a steady motorik beat, analogue synth pulses, a wah-wah guitar. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-triphop-v6-w30 — https://suno.com/song/0994a4e5-00bd-481d-a8e4-cf09341f1594
+- brj-mix-triphop-v6-w30 — https://suno.com/song/88905fcc-f026-4b02-9265-1390d7d84716
+- brj-mix-triphop-v6-w60 — https://suno.com/song/07fe0a35-e536-44e8-8610-596151da2af8
+- brj-mix-triphop-v6-w60 — https://suno.com/song/9fba56b9-6fc5-4835-9314-a0c938581fa5
+
+### Round CA (2026-10-22): Led Zeppelin, Rolling Stones and Oasis voices, no Covers
+
+Jack asked for the liked take's style (ed6dd946) with the voices of Led Zeppelin, then the Rolling
+Stones, then Oasis — and then: **"covers dont work please dont use them."** A Zeppelin Cover was
+already running; it was stopped after one Create (2 takes, 10 credits, not listed:
+brj-zep-cover-r1-v6-ai75-w30 — https://suno.com/song/b6f6b501-f18b-4e98-9e5e-462fcebfa79a ,
+https://suno.com/song/18c026c0-81c7-4fa5-bbad-8652c673b61b). The Round BA Covers count as rejected
+by the same ruling.
+
+So this round is only the transplant ladder's step 1: each band's voice generated **in its home
+genre**, the funk banned, Jack's lyrics. A take with the right voice becomes a Voice/Style Persona
+and goes onto the liked take's stored prompt (step 2, Round BA).
+
+References (sheet only, names never in a box):
+- **Robert Plant:** "high range, an abundance of distortion, loud volume" (Britannica via
+  Wikipedia); "full, open-throated falsetto" (Plant, Far Out); the "Immigrant Song" wordless war
+  cry, layered (Ultimate Classic Rock); "banshee's scream" (Consequence, unfetched).
+- **Mick Jagger:** "leering", "sneers" (Classic Rock, unfetched); a drunken "drawl" (UCR); "ragged
+  and laconic" (Slate); "rasping, gasping" (Louder); the vocal buried in the mix (Rolling Stone,
+  1972); the "woo-woo" chant (Wikipedia). Jagger has said publicly he does not want AI imitating
+  him — this is a description of a style, not a clone.
+- **Liam Gallagher:** stretched flat nasal vowels, singing up into the mic, sneer to bellow, Noel's
+  higher harmony (common knowledge, not sourced this round).
+
+#### CA · zep-heavyblues
+
+```
+1969 English heavy blues rock, 104 BPM: a crunchy overdriven blues guitar riff, thundering open-room drums, a locked-in bass. A high powerful open-throated tenor with heavy natural distortion, bluesy growled verses that answer the guitar riff line by line, soaring into a full falsetto wail and a banshee scream on the chorus, raw and swaggering. Played completely straight.
+```
+
+#### CB · zep-warcry
+
+```
+1970 English hard blues rock, 104 BPM: a galloping staccato guitar riff, pounding drums, a driving bass. A wordless high-pitched war-cry wail opens every chorus, layered and echoing; a high open-throated tenor, acrobatic and urgent, howled verses, strained shouted peaks, ethereal falsetto. Played completely straight.
+```
+
+#### CC · stones-leer
+
+```
+1969 London blues rock, 104 BPM: a loose open-tuned rhythm guitar riff, honky-tonk piano, dry swinging drums, maracas. A leering, sneering lead with a lazy drunken drawl, ragged and laconic, slithering around the beat and half-spoken on the verses, a raspy gasping howl on the chorus, a sloppy gang of voices chanting woo-woo behind. Played completely straight.
+```
+
+#### CD · stones-exile
+
+```
+1972 London rock'n'roll recorded in a basement, 104 BPM: sloppy twin guitars, rolling barrelhouse piano, loose drums. A rasping gasping lead buried in the band like another instrument, slurred and swaggering, falsetto howls on the chorus, a ragged gang of backing voices yelling with him. Played completely straight.
+```
+
+#### CE · oasis-sneer
+
+```
+1994 Manchester Britpop, 104 BPM: a wall of fuzzy rhythm guitars, a plodding bass, heavy plain drums, tambourine. A nasal sneering lead that stretches every vowel long and flat, sung up into the mic, arrogant and bored on the verses, a raw hoarse bellow on the chorus, a cleaner higher harmony behind. Played completely straight.
+```
+
+Exclude Styles (CA, CB, CE; CC/CD drop `gospel, country` so the Stones' gospel and honky-tonk can
+come):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, funk, brass, horns, wah-wah, flute, strings, soundtrack, American accent
+```
+
+Lyrics (all): the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max
+Mode off, Vocal Gender male, style influence 75, Duration 170 s, weirdness 30 and 60, workspace
+`bank-robbery-Jack`. 10 Creates, 100 credits (9,600 → 9,500).
+
+**Verdict (Jack, 2026-10-22): Zeppelin and the Stones sounded basically the same.** Web sweep on why: `docs/suno-gpt/suno-voices.md` §2d.
+
+- brj-zep-heavyblues-v6-w30 — 2:49 — https://suno.com/song/1ac72cec-c938-4a85-9387-67f0ec18bad6
+- brj-zep-heavyblues-v6-w30 — 2:50 — https://suno.com/song/32b53601-d093-40b0-aa3e-ddd1ee9f37b1
+- brj-zep-heavyblues-v6-w60 — 2:49 — https://suno.com/song/2787d396-8df2-4fc9-966a-f1ea904499c1
+- brj-zep-heavyblues-v6-w60 — 2:49 — https://suno.com/song/2fe0602d-3af7-4535-ab81-503a8deb4545
+- brj-zep-warcry-v6-w30 — 2:49 — https://suno.com/song/4378d22b-62c2-4b3d-bfcd-6e8b7cf513a1
+- brj-zep-warcry-v6-w30 — 2:49 — https://suno.com/song/4dddcab0-25a8-43e0-ad4b-2f3a95c931b4
+- brj-zep-warcry-v6-w60 — 2:50 — https://suno.com/song/6555d54a-1bd8-45e6-a401-086971cc7cd7
+- brj-zep-warcry-v6-w60 — 2:48 — https://suno.com/song/e8af3254-351a-4776-8964-2ee878420f33
+- brj-stones-leer-v6-w30 — 2:50 — https://suno.com/song/298dbd28-ffaa-4de6-94d9-75b5f9241ce0
+- brj-stones-leer-v6-w30 — 2:49 — https://suno.com/song/854913dd-5d4d-4ae1-97c3-cb0a0a3a38e4
+- brj-stones-leer-v6-w60 — 2:50 — https://suno.com/song/8e68b5e6-ff9a-4649-9550-0eca74d03fb2
+- brj-stones-leer-v6-w60 — 2:49 — https://suno.com/song/2db9b75f-d868-4ab1-b34f-5d49a805b293
+- brj-stones-exile-v6-w30 — 2:48 — https://suno.com/song/cbf92bf8-ce25-41cf-8f41-d8dc7393a931
+- brj-stones-exile-v6-w30 — 2:49 — https://suno.com/song/15d89f29-9ca2-4c45-8587-900cc1e7b833
+- brj-stones-exile-v6-w60 — 2:49 — https://suno.com/song/387ea6e1-2f91-4769-b459-bed17196324f
+- brj-stones-exile-v6-w60 — 2:49 — https://suno.com/song/ee5e8483-8d39-468c-8818-4e1eb3c52509
+- brj-oasis-sneer-v6-w30 — https://suno.com/song/ffd59e78-968e-47e1-80f3-a153d80f3573
+- brj-oasis-sneer-v6-w30 — https://suno.com/song/571d8ae5-0400-4dc4-9306-ffd78e834c92
+- brj-oasis-sneer-v6-w60 — https://suno.com/song/2b32423e-729f-48ca-b809-037af35a30c5
+- brj-oasis-sneer-v6-w60 — https://suno.com/song/9913008a-b5e0-493c-a2a7-e03a0b407f25
+
 ### Round BA (2026-10-22): a new approach — the liked take's music with Beatles voices
 
 Jack on Round AA/AB: "all of those were the same voice … try a new approach and start again …

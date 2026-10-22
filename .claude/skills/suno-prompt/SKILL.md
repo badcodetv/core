@@ -20,6 +20,14 @@ Never let a request stall on "that's not really a prompt question."
 this skill exists to replace. Work in short rounds: ask the few questions that actually change the
 output, draft fast, then refine against what the user hears.
 
+🔑 **The genre massively affects the voice — it picks the singer** (Jack, 2026-10-22). The genre /
+scene word in the Style box decides *who sings* far more than any voice adjective, accent word or
+artist name does. Same genre → same singer, however the voice is described (Bank Robbery: ~150
+takes over one cop-funk backing, Jack heard one voice; "Led Zeppelin" and "Rolling Stones" voices
+came out "basically the same"). **To change the voice, change the genre word** — put a voice
+tradition first (`Bristol trip hop, a hushed close-mic murmuring English man…`) and the music
+after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d.
+
 🔑 **All new Suno work is v6, in the new UI** (Kai, 2026-09-10). Never propose v5.5 or older —
 it cannot generate. A song sheet with an archive banner is a v5.5 history sheet: a new round on
 that song starts a v6 sheet (`docs/suno-gpt/archive/v5.5-era.md` §5).

@@ -554,6 +554,44 @@ rounds re-used the box instead of it. Round AA/AB re-runs the stored prompt at V
 name in the sheet, and put a translation (scene + era + voice + delivery) in the box. Check the
 music afterwards; if the scene stole it, move the music sentence back to the front.
 
+### 2d. 🔎 Web sweep: how many English male voices can Suno do, and how to change one (2026-10-22)
+
+Prompted by Jack, Bank Robbery Round CA: Led Zeppelin-style and Rolling Stones-style takes "sounded
+basically the same". Two research passes; tiers as found.
+
+- **Nobody has counted Suno's voices.** No clustering, no "N male voices", no "British in X of Y
+  takes" anywhere public. The one measured study — Slendebroek & Metaxa, *The Algorithmic Flattening
+  of Sound*, arXiv 2608.06106 (AIES 2026), 100 tracks per system × genre — finds Suno collapses
+  differences *between* genres and follows prompts weakly, so outputs come from **learned
+  defaults**. Vocals were not measured on their own. Everything else is by-ear reports of "the same
+  singer every time" (r/SunoAI, via mirrors) — consistent with §2b, not a measurement.
+- **So, unmeasured but consistent with all our rounds: one default male singer per genre**, and
+  adjectives move him only a little. Our own count: Bank Robbery Rounds B–CA, ~150 takes, Jack heard
+  ~one voice per music family.
+- **Why English drifts American (inference, not a Suno test):** pop-rock singing has an American
+  norm — British singers flap /t/ when singing but not speaking (MDPI *Languages* 9/6/203); Liam
+  Gallagher sings near his speech, Noel more American. The training audio is likely American-leaning
+  even for British acts. Genres whose singers keep the accent (Britpop, punk, grime, folk, music
+  hall) should carry it best — untested as a list.
+- **What changes the singer, by evidence:**
+  1. **Voices** (vendor): your *own* voice only — a spoken verification phrase is matched to the
+     singing to block "collaborators or public figures". 15 s–4 min, Audio Influence high. So an
+     English male Voice needs an English man to record himself (help.suno.com/en/articles/11362369).
+  2. **Style Persona from a take that already has the voice** (user reports): carries timbre and
+     register; drifts on long/heavy songs and bleeds after Extend on v6. One user settled on it after
+     ~20 failed prompts.
+  3. **Change the genre/instrument tokens, not the adjectives** — the pool word picks the singer
+     (§2a–2c; HookGenius rates vocal tags "the most inconsistent category").
+  4. **Outside Suno:** stems → voice conversion (Kits.ai / RVC) with a licensed stock or consenting
+     voice — never a real singer's model (ELVIS Act, AB 2602). Suno stems are often too dirty to
+     convert cleanly (hearsay).
+  5. **ElevenLabs Music "Vocals"** offers a consistent voice from its voice library, which filters
+     by accent — British male *singing* voices unverified.
+- **Weak or unproven:** per-section `[Verse: male baritone]` tags ("doesn't always listen");
+  phonetic respelling for accent (guides only); custom models (one review: they do not learn a
+  vocal identity); Wild (style, not voice); artist names (Suno stored "Roger Daltrey" verbatim and it
+  did nothing audible — Bank Robbery Round Y).
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact
