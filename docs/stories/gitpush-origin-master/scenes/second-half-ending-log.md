@@ -422,3 +422,9 @@ Honest list, worst first.
 8. **Lip-sync is by measurement.** The lady's "Go on, then." at x1.25 and Derek's D09 overrun of about 0.4 s are the ones to watch.
 9. **Shared-tool debts:** `suno.mts record` can read the previous song's duration (worked around with `record-checked.py`, not fixed). Suno capture is stalled by the WSLg PulseAudio lag. There may be two Suno workspaces named `gpom-story`. `listen-mcp` `capture.ts` got a one-line tolerance.
 10. **Previews, not deliverables.** delivery-qc FAILs the range check on every preview (x264 ringing after the 16–235 clamp, the same as scene A). They are mixed to −16 LUFS, the house target, not −14.
+
+## After delivery (2026-10-22, Kai)
+
+- Kai restarted the machine; WSLg PulseAudio is healthy again (`pactl` instant). All eight waiting Suno takes recorded first time (round D `-d3b` ×4, round C `-d5r` ×4) into `clips/second-half/ending/D/suno/`.
+- **"It only sends one back. Me." is now the Suno newsreader**, take `c851b66f` (w25), replacing the Gemini stand-in. Kai's note: three takes say "back me" with no gap, and c851b66f's second reading has a gap that is "far too long" (~6.4 s). The cut uses its second reading ("back." as a full stop, "Me." alone) with the gap set in the edit: **1.28 s of measured silence** (`D3N_PAUSE` in `cut_end_d.py`). D 113.12 s, reel 190.83 s.
+- Round C's `-d5r` takes ("...Fair. Nothing up my sleeve.") are recorded but **not wired in**: round 2 cut the exploit payoff on purpose. Available if Kai wants it back.

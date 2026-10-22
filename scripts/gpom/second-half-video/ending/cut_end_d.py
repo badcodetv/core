@@ -47,13 +47,14 @@ AI = {'d1': (AI_TAKE, 0.00, 3.73), 'd2': (AI_TAKE, 5.66, 10.88), 'd3': (AI_TAKE,
 # review round 2: every fragment takes its gain from its WHOLE atom (cut_end.Cut.say ref=), never from itself.
 REF = {'d5x': 'd5', 'd5y': 'd5', 'd5z': 'd5', 'd6c': 'd6', 'd2a': 'd2', 'd2b': 'd2', 'd3y': 'd3', 'd3z': 'd3'}
 # the new AI line (review round 2, trust test 4.12 part one): "It only sends one back. Me." (atom -d3b, Suno round D)
-# STAND-IN: Suno round D made the takes (20 credits) but none could be recorded (WSLg PulseAudio lagging 3-15 s per
-# call; CAPTURE_TIMEOUT on every take). Until one records, the line is a Gemini TTS stand-in (ai_standin.py, voice
-# Charon) through the same speaker filter. Kai's ruling is the Suno newsreader: swap it in (Kai to rule).
-AI_D3B = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/ai-d3b-standin-a.wav'
-AI['d3n1'] = (AI_D3B, 0.17, 2.85)  # "It only sends one back."
-AI['d3n2'] = (AI_D3B, 4.85, 5.50)  # "Me." (the take's 2.1 s pause tightened to 0.7 s)
-AI['d3n'] = (AI_D3B, 0.17, 5.50)
+# Suno round D take c851b66f (w25), recorded 22 Oct after the PulseAudio fix (it replaces the Gemini stand-in). Its second
+# reading ends "back." as a full stop and says "Me." alone, ~6.4 s later. The other three takes run "back me" together.
+# Kai, 22 Oct: "a much bigger pause between back and me", but the long one was "far too long" -> ~1.3 s of silence.
+AI_D3B = '/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/suno/gpom-sh-end-ai-d3b-d-v6-w25-c851b66f.wav'
+AI['d3n1'] = (AI_D3B, 6.03, 7.84)  # "It only sends one back." (speech 6.08-7.76)
+AI['d3n2'] = (AI_D3B, 13.98, 14.60)  # "Me." (speech 14.14-14.45)
+AI['d3n'] = (AI_D3B, 6.03, 7.84)  # gain reference: the sentence, not the silence
+D3N_PAUSE = 1.1  # gap between the two pieces; with the pads, ~1.3 s of silence between "back." and "Me."
 REF.update({'d3n1': 'd3n', 'd3n2': 'd3n'})
 D6_PARTS = [('d6c', 0.0)]  # the admission, as placed (key, gap before it); with the round-C retake: d6a, d6b, d6c
 INTERIOR_EXCLUDE = {'D14'}  # the dusk exterior keeps its own light
@@ -212,7 +213,7 @@ def build(sc):
     back = fr(a5 - CUT_PRE)
     S.piece('D04', S.clip('D04'), 0.0, cut04, back, 'd3')
     e5a = S.ai('d3n1', a5, 'd3', 4)
-    e5 = S.ai('d3n2', fr(e5a + 0.7), 'd3', 4)
+    e5 = S.ai('d3n2', fr(e5a + D3N_PAUSE), 'd3', 4)
     c.line(b, 4, 'ai', a5, e5 - a5, ai_text(sc, 'd3', 4), 'claude')
     end_d3 = fr(e5 + TAIL + 0.2)
     first3c = cut04 - cut3c
