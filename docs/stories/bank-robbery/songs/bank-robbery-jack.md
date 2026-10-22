@@ -132,6 +132,184 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round KA (2026-10-22): Jack's liked take, rebuilt with Kai's lyrics and six English voices
+
+Jack: liked https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5 (FA psychfolk w30, he renamed it "Best one"): "other than the Indian beginning … I loved the style/genre/beat/everything about it other than the voice. Recreate this song as faithfully as you can, whilst doing a variety of different English voices, also using Kai's lyrics, his lyrics are way better."
+
+**Listened first** (`docs/listening/log/2026-10-22-162100-024b82e8-378c-47bd-bf73-bb5eafea2ed5-024b82e8.md`, Gemini, unverified by a human): the take does **not** sound like its box. It is acoustic boom-bap: a nylon acoustic guitar with flamenco bends and palm-muted strumming, boom-bap kick/snare/clap, distorted growling synth bass, siren risers, vinyl noise, ~93 BPM. A British man half-raps the verses; a shouted gang/female chorus. The "Indian beginning" is the solo guitar's Phrygian bends, 0:00–0:25; the guitar motif continues under the beat after.
+
+So two music recipes, three voices each: **A** = the take's own stored prompt (Variety 0, so it is exactly what made it), voice clause swapped; **B** = the sound as heard. Every version opens on `[Intro: straight in on the drums and bass, no solo guitar]` to lose the intro.
+
+Lyrics: **Kai's words** (`score.md` § Lyrics, poet block), spelling and all. The poet cues are replaced by each voice's own delivery cues, and instrument cues outside this sound (brass, timpani, sirens, string stabs, boom-bap bar) are dropped or neutralised. Settings as the liked take: v6, style influence 75, weirdness 30, Variety Off, Max Mode off; Vocal Gender per voice; Duration 210 s (Kai's lyrics are longer). One Create each (2 takes). Excludes: A = the liked take's own list, B = the same minus `rap, hip hop` (the sound is boom-bap); both plus bans aimed at each voice's opposite. Unheard.
+
+#### KA · a-yorkshire
+
+Vocal Gender male.
+
+```
+English psych folk funk, 100 BPM: a middle-aged Northern English man, gravelly baritone, thick Yorkshire accent, deadpan and sardonic, talk-singing every line. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, falsetto, crooning`
+
+#### KA · b-cockney
+
+Vocal Gender female.
+
+```
+Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco bends and percussive palm-muted strumming, a punchy boom-bap kick, snare and clap, tight hi-hats, a distorted growling synth bass, siren risers, vinyl noise, a shouted gang chorus. Lead vocal: a young East London woman, bright cutting chest voice, strong cockney accent, cheeky and sneering, every word spat out clear.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, male vocals, breathy, soft`
+
+#### KA · a-posh
+
+Vocal Gender male.
+
+```
+English psych folk funk, 100 BPM: an upper-class English gentleman, crisp received pronunciation, smooth theatrical baritone, mock-polite and smug, crooning like a villain narrating his own crime. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, shouting, cockney`
+
+#### KA · b-smoky
+
+Vocal Gender female.
+
+```
+Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco bends and percussive palm-muted strumming, a punchy boom-bap kick, snare and clap, tight hi-hats, a distorted growling synth bass, siren risers, vinyl noise, a shouted gang chorus. Lead vocal: a weathered English woman in her fifties, deep smoky contralto, soft West Country accent, slow and contemptuous, every line weighed out.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, young pop voice, belting`
+
+#### KA · b-brummie
+
+Vocal Gender male.
+
+```
+Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco bends and percussive palm-muted strumming, a punchy boom-bap kick, snare and clap, tight hi-hats, a distorted growling synth bass, siren risers, vinyl noise, a shouted gang chorus. Lead vocal: a young Birmingham man, broad Brummie accent, hoarse cracked punk shout, rabble-rousing, spitting every consonant.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, crooning, smooth vocal, falsetto`
+
+#### KA · a-choirgirl
+
+Vocal Gender female.
+
+```
+English psych folk funk, 100 BPM: a young English woman, high clear choirgirl soprano, soft Northern accent, sweet innocent tone singing vicious words, whispered asides. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, belting, growl`
+
+Lyrics (the Yorkshire version; the others differ only in the {V}/{C} delivery words):
+
+```lyrics
+[Intro: straight in on the drums and bass, no solo guitar]
+(Robbery!)
+
+[Verse 1: talk-sung, gravelly deadpan]
+They say, ya can't make money from a tree
+let's see, each day, make hay, not free, aay
+work and get paid though, earning that dough
+but where does it go? nobody knows!
+
+means of production means a reduction
+standards bleeding, land-lords needing
+[Gang shout doubles the lead]
+quantative easing, grandma FREEEEEEEZING!
+[Silence, then the punchline]
+stimulus checks are next. Get wrecked!
+
+rent seeking?... I'm just about eating
+[Mock-polite, sarcastic]
+sorry, did I interrupt your meeting?
+[Cutaway: chirpy high-pitched TV advert voice]
+remember kids, the Fed is not your friend!
+it prints all the dollars that the government spends
+
+[talk-sung, gravelly deadpan]
+this fiat system is insistent
+on debts existence, sooooo
+don't be hating on the credit rating
+or have resistance to the facts I'm stating
+
+[Chorus: barked, a few voices shout it back]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus: barked, louder, more voices]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Verse 2: talk-sung, gravelly deadpan, colder]
+Stacks and stacks of elastic cash
+distracted by a dispraxic flash,
+mob, angry at their shitty little job
+the right and the left both witness the theft
+
+blaming each other is a sick little cover
+institutional, dilutional, the usual
+[Gang shout doubles the lead]
+distraction IS the attraction
+the intention is tension between the factions
+
+divide and conquer, just look at the hand
+[Bouncy, skip on every comma]
+It's not ya standard, propaganda, worth a couple grand-ahh
+[Staccato, one word per beat]
+it is, state, level, manipulation
+it is the devil, with a radio station
+
+stack up the vaults like a wheelbarrow
+risk of default is really rather narrow
+Biggie said waaaay back in ninety seven
+[One bar only: a deep slow New York voice]
+don't get high off your own supply
+
+[Chorus: barked, a few voices shout it back]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus: barked, full gang roar]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Verse 3: talk-sung, gravelly deadpan, menace building]
+You know the real star is Pablo Escobar,
+who has elastic bands not plastic hands,
+stacking up the cash by the grands
+standard plans are for the working man
+
+and this right here is a next level scam
+ill gotten gains, no need to explain
+"bail" and "out", will never mean the same
+[Gang shout doubles the lead]
+own the printer and you don't fear winter
+
+crime is asset inflation, passive creation;
+of a wealth gap that drives the situation
+working people get paid in money, so it's not very funny
+when you print more and expect them not to worry
+
+[Almost silent, low and deadly serious]
+hungry people, feed a revolution,
+then it's retribution, perhaps some execution
+it's time to give, not just to take
+but for heaven’s sake, don't just eat cake
+
+[Outro: the gang shouts once]
+(Robbery!)
+```
+
 ### Round CR (2026-10-22): clean room — English voices, written without the repo's Suno rules
 
 Jack: worried "we have too much in the Suno skills/repo that is confusing the prompt and making everything sound the same", then "just do English ones with varied voices" and "save the credits". A fresh helper wrote these **without reading any repo file, memory or the web**, told to disregard all house Suno rules (it still auto-loads CLAUDE.md, so the test is very clean, though not perfectly). It chose every box and setting itself, including Variety on, sliders off 75, its own excludes, per-section cue tags, and Duration. One change by me: `double-time, fast rap` added to eng-2's excludes (Jack's standing rule; its box asks for "rapid half-rapped"). One Create each (2 takes). **Only eng-1 and eng-2 ran** (8,370 → ~8,350): the run stalled on eng-3 because Suno's cookie banner covers the Create button. **Verdict (Jack, 2026-10-22): "this has fixed the voice problem."** See `docs/suno-gpt/suno-voices.md` §2f.

@@ -1664,7 +1664,18 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
   const { tmpdir } = await import('node:os')
   const { join } = await import('node:path')
 
-  const take = await findTake(page, key)
+  // A PINNED take shows only as a card in the strip above the list, with no row, so findTake cannot
+  // see it (2026-10-22, Jack's pinned "Best one"). A full song id is then trusted as-is, and the
+  // click below falls back to the card's own Play button.
+  let take: Take
+  try {
+    take = await findTake(page, key)
+  } catch (e) {
+    const card = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(key) &&
+      (await page.evaluate(`!!document.querySelector('a[href="/song/${key.toLowerCase()}"]')`))
+    if (!card) throw e
+    take = { songId: key.toLowerCase(), title: key, dur: null } as Take
+  }
   if (!take.songId) throw new Error(`TAKE_NOT_FOUND: "${take.title}" has no song link on its row`)
   const songId = take.songId
   const port = Number(new URL(ENDPOINT).port || 80)
@@ -1694,7 +1705,14 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
     for (let i = 0; i < 8 && r; i++, r = r.parentElement) {
       if (r.querySelectorAll(${JSON.stringify(SEL_SELECT_CLIP)}).length === 1 && r.querySelector(${JSON.stringify(SEL_ROW_PLAY)})) break;
     }
-    const btn = r && r.querySelector(${JSON.stringify(SEL_ROW_PLAY)});
+    let btn = r && r.querySelector(${JSON.stringify(SEL_ROW_PLAY)});
+    if (!btn) {
+      // pinned card: the nearest ancestor of the link holding exactly one Play button
+      for (r = link; r && !btn; r = r.parentElement) {
+        const ps = r.querySelectorAll('[aria-label^="Play "]');
+        if (ps.length === 1) btn = ps[0]; else if (ps.length > 1) break;
+      }
+    }
     if (!btn) return false;
     btn.click();
     return true;
@@ -1751,7 +1769,8 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
     for (;;) {
       await page.waitForTimeout(200)
       const now = await player()
-      if (!now || now.flag || now.t >= duration - 0.05) break
+      // Seen 2026-10-22: the player paused itself 0.4 s short of the end with no `ended` event.
+      if (!now || now.flag || now.t >= duration - 0.05 || (now.paused && now.t >= duration - 1)) break
       if (now.songId !== songId) break // something else took the player — stop before recording it
       if (Date.now() > deadline) {
         await page.evaluate(`document.querySelectorAll('audio').forEach((a) => a.pause())`)

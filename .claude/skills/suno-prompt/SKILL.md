@@ -20,13 +20,32 @@ Never let a request stall on "that's not really a prompt question."
 this skill exists to replace. Work in short rounds: ask the few questions that actually change the
 output, draft fast, then refine against what the user hears.
 
+🔑🔑 **TWO MODES: EXPLORE fresh, REFINE with the rules** (Jack, 2026-10-22 — read this before any
+other rule in this file). Everything below was learned once, mostly on one song (Karen, Camping), and
+stacking it all onto every prompt made every prompt alike, so every voice came out alike: 325 Bank
+Robbery takes, "the same voice over and over". A prompt written **clean room** (a helper that read
+none of this) fixed it on the first try (`docs/suno-gpt/suno-voices.md` §2e–2f).
+- **EXPLORE** (a new voice, a new sound, "try different ones", "forget everything"): write the
+  prompt fresh, as a producer would. A **full `Lead vocal:` sentence of ~20 words** (age, gender,
+  region/accent, register, texture, delivery, attitude); **Vocal Gender set per prompt**, mixing men and
+  women; **excludes aimed at this voice's opposite** (`belting, falsetto` for a deadpan drawler), never
+  a carried-over list; **per-section delivery cues** in the lyrics (`[Verse 1: lazy drawl]`);
+  **settings chosen per prompt** (weirdness, style influence, Variety, Duration all vary). Every
+  version must differ in voice, not just in adjectives.
+- **REFINE** (a liked take exists): start from that take's **sound, not its box**. Listen to it first
+  (`suno.mts record <songId>` then `listen_describe`): Bank Robbery's liked "psych folk funk, sitar,
+  tin whistle" take was really acoustic flamenco guitar over boom-bap. Keep its settings; change one
+  thing per version; bring a house rule in only when it is tested against that take.
+
 🔑 **The genre massively affects the voice — it picks the singer** (Jack, 2026-10-22). The genre /
 scene word in the Style box decides *who sings* far more than any voice adjective, accent word or
 artist name does. Same genre → same singer, however the voice is described (Bank Robbery: ~150
 takes over one cop-funk backing, Jack heard one voice; "Led Zeppelin" and "Rolling Stones" voices
 came out "basically the same"). **To change the voice, change the genre word** — put a voice
 tradition first (`Bristol trip hop, a hushed close-mic murmuring English man…`) and the music
-after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d.
+after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d. ⚠️ **Not alone,
+though:** used with a one-clause voice and a fixed ban list, it still cloned the voice. A full
+`Lead vocal:` sentence plus Vocal Gender is what moved it (§2f).
 
 🔑 **All new Suno work is v6, in the new UI** (Kai, 2026-09-10). Never propose v5.5 or older —
 it cannot generate. A song sheet with an archive banner is a v5.5 history sheet: a new round on

@@ -483,6 +483,17 @@ Two smaller ones: the Style box **truncates** at its 1,000 cap rather than refus
 asserts the length back), and `aria-label="Generate"` is the **Lyricist**, not Create — Create is
 `aria-label="Create song"`.
 
+### 🆕 Three more, found 2026-10-22 (Bank Robbery)
+
+- **The cookie banner blocks Create.** On a fresh profile, Suno's consent banner (`#cmp-banner-container`)
+  sits over the Create button: `pair` hangs with the form loaded and nothing generated. Click
+  **Reject All** once per profile (`scripts/suno/.tmp/cookies.mts`) before a run.
+- **A pinned take has no row.** It shows only as a card in the strip above the list, so `takes` and
+  `record <title>` cannot see it. `record <full song id>` now falls back to the card's own Play button.
+- **To listen, record; never fetch the stream.** The CDN `.m4a` is encrypted (no `moov` atom). If
+  `record` says `PULSE_FAILED … Connection refused`, WSLg's audio is wedged: run `./scripts/audio-server.sh`,
+  then `browser-channel.sh down 1 && up 1` (Chrome reads the sink at launch), then `open-tab`.
+
 ## Verifying, not assuming
 
 Every command ends by reading the form back. Two checks earn their keep:
