@@ -132,6 +132,175 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round VB (2026-10-22): back to the vibe of "Best one" — clean room, six English voices, no screaming
+
+Jack: "we have strayed away from the vibe of this song (024b82e8), please analyse it and bring it back. Keep experimenting with English voices, no weird screaming. Make sure no skill or prompt is messing with it."
+
+**What the reference is** (second listen, `docs/listening/log/2026-10-22-162914-…024b82e8.md`): blues rap / UK hip-hop / stomp rock, ~90–93 BPM, straight and locked; a raw acoustic guitar riff drives it (one listen says fingerpicked blues, one says flamenco bends: unsettled); a stomping hip-hop breakbeat with foot stomps and tambourine; heavily saturated growling sub bass; shouted gang call-and-response; raw room grit, impact hits at the drops; **loudness range 12.4 LU, spectral centroid 2.6 kHz** (dark, very dynamic).
+
+**Where KA drifted** (two KA takes listened to and measured, logs `…163455-…7cc394c7.md`, `…163535-…81953c32.md`): music close (acoustic guitar riff over a hip-hop break) but **flat** (loudness range 6.2 and 5.8 LU, half the reference's), **brighter** (centroid 3.4 and 4.0 kHz), clean rather than saturated bass on A, no stomps, and **faster** delivery (Kai's lyrics are about twice as dense as draft 3; the cockney take came out as fast rap). Cutting the solo-guitar intro also cut the explosive drop that made the reference.
+
+**How this round was written:** a clean-room helper (no repo, no memory, no web; told to ignore every house Suno rule) wrote all six from the listen descriptions, Jack's brief and Kai's words with our cue tags stripped. My only addition is one measured sentence in every Style box: `Dark warm mix with big dynamics: guitar-only breaks, then hard drops.` One Create each, settings per prompt (weirdness 35–40, style influence 65–75, Variety Off, Duration 240 s). `screaming` banned in every box. Unheard.
+
+#### VB · v1-southlondon
+
+Weirdness 35, style influence 70, Vocal Gender male.
+
+```
+Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a young South London man, clean, cool and conversational, half-sung half-rapped right on the beat, narrow melody, relaxed steady pace, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice`
+
+#### VB · v2-manc-alto
+
+Weirdness 35, style influence 70, Vocal Gender female.
+
+```
+Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a Manchester woman in her thirties, low smoky alto, deadpan half-spoken half-sung on the beat, narrow melody, unhurried, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, belting, breathy`
+
+#### VB · v3-bristol-baritone
+
+Weirdness 40, style influence 65, Vocal Gender male.
+
+```
+Gritty British blues rap and stomp rock, 90 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a Bristol man in his forties, warm smooth baritone, laid-back talk-singing on the beat, narrow melody, steady, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice, crooning`
+
+#### VB · v4-brum-chant
+
+Weirdness 35, style influence 75, Vocal Gender female.
+
+```
+Gritty British blues rap and stomp rock, 93 BPM, straight, locked on the grid, driving. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a young Birmingham woman, bright punchy clear voice, rhythmic chant-like half-rap half-sung on the beat, narrow melody, confident, never rushed, dry and upfront. Dark, kinetic British protest-montage energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, cute, girly`
+
+#### VB · v5-yorks-indie
+
+Weirdness 40, style influence 70, Vocal Gender male.
+
+```
+Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a Yorkshire man in his late twenties, clean slightly nasal indie voice with a sardonic sneer, sing-speak half-rapped on the beat, narrow melody, steady, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice`
+
+#### VB · v6-eastlondon-husky
+
+Weirdness 35, style influence 70, Vocal Gender female.
+
+```
+Gritty British blues rap and stomp rock, 91 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: an East London woman in her forties, husky but controlled mezzo, streetwise half-sung half-spoken on the beat, narrow melody, knowing and unhurried, dry and upfront. Dark, swaggering British crime-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, belting`
+
+Lyrics (v1; the others differ only in the verse delivery cue):
+
+```lyrics
+[Intro - guitar riff and full stomping beat together from bar one, no solo guitar, gang shout]
+(Robbery!)
+
+[Verse 1 - cool half-sung half-rapped, steady, on the beat]
+They say, ya can't make money from a tree
+let's see, each day, make hay, not free, aay
+work and get paid though, earning that dough
+but where does it go? nobody knows!
+
+means of production means a reduction
+standards bleeding, land-lords needing
+quantative easing, grandma FREEEEEEEZING!
+stimulus checks are next. Get wrecked!
+
+rent seeking?... I'm just about eating
+sorry, did I interrupt your meeting?
+remember kids, the Fed is not your friend!
+it prints all the dollars that the government spends
+
+this fiat system is insistent
+on debts existence, sooooo
+don't be hating on the credit rating
+or have resistance to the facts I'm stating
+
+[Chorus - lead plus shouted gang vocals answering]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus - lead plus shouted gang vocals answering, impact hit]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Verse 2 - cool half-sung half-rapped, steady, on the beat]
+Stacks and stacks of elastic cash
+distracted by a dispraxic flash,
+mob, angry at their shitty little job
+the right and the left both witness the theft
+
+blaming each other is a sick little cover
+institutional, dilutional, the usual
+distraction IS the attraction
+the intention is tension between the factions
+
+divide and conquer, just look at the hand
+It's not ya standard, propaganda, worth a couple grand-ahh
+it is, state, level, manipulation
+it is the devil, with a radio station
+
+stack up the vaults like a wheelbarrow
+risk of default is really rather narrow
+Biggie said waaaay back in ninety seven
+don't get high off your own supply
+
+[Chorus - lead plus shouted gang vocals answering]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus - lead plus shouted gang vocals answering, impact hit]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Break - guitar riff and stomps only, then the beat drops back in]
+
+[Verse 3 - cool half-sung half-rapped, steady, on the beat]
+You know the real star is Pablo Escobar,
+who has elastic bands not plastic hands,
+stacking up the cash by the grands
+standard plans are for the working man
+
+and this right here is a next level scam
+ill gotten gains, no need to explain
+"bail" and "out", will never mean the same
+own the printer and you don't fear winter
+
+crime is asset inflation, passive creation;
+of a wealth gap that drives the situation
+working people get paid in money, so it's not very funny
+when you print more and expect them not to worry
+
+hungry people, feed a revolution,
+then it's retribution, perhaps some execution
+it's time to give, not just to take
+but for heaven's sake, don't just eat cake
+
+[Outro - gang shout, then the guitar riff ends alone]
+(Robbery!)
+```
+
 ### Round KA (2026-10-22): Jack's liked take, rebuilt with Kai's lyrics and six English voices
 
 Jack: liked https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5 (FA psychfolk w30, he renamed it "Best one"): "other than the Indian beginning … I loved the style/genre/beat/everything about it other than the voice. Recreate this song as faithfully as you can, whilst doing a variety of different English voices, also using Kai's lyrics, his lyrics are way better."

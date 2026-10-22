@@ -35,7 +35,12 @@ none of this) fixed it on the first try (`docs/suno-gpt/suno-voices.md` §2e–2
 - **REFINE** (a liked take exists): start from that take's **sound, not its box**. Listen to it first
   (`suno.mts record <songId>` then `listen_describe`): Bank Robbery's liked "psych folk funk, sitar,
   tin whistle" take was really acoustic flamenco guitar over boom-bap. Keep its settings; change one
-  thing per version; bring a house rule in only when it is tested against that take.
+  thing per version; bring a house rule in only when it is tested against that take. **Measure the
+  drift, don't guess it:** listen to a new take beside the reference and compare loudness range
+  and brightness (`listen_describe` measurements). Bank Robbery Round KA lost the vibe by going flat
+  (6 vs 12 LU) and bright (3.4–4 vs 2.6 kHz). Two hidden causes: much denser lyrics speed up the
+  delivery, and cutting a disliked intro also cut the drop it set up. Keep the contrast; change only
+  what was disliked.
 
 🔑 **The genre massively affects the voice — it picks the singer** (Jack, 2026-10-22). The genre /
 scene word in the Style box decides *who sings* far more than any voice adjective, accent word or
