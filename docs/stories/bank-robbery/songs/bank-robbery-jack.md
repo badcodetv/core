@@ -132,6 +132,97 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round HA (2026-10-22): test round — which constant is cloning the voice
+
+Jack, after the §2e audit: "please do a test round, I think all the bans are affecting it too." Three GA scenes (lagos, addis, tokyo), four versions each, **one constant changed per version**. Read it as a grid: compare across a row to see what each change does. GA itself is the control (full bans, draft 3, shout arc).
+
+| version | ban list | voice sentence | lyrics |
+|---|---|---|---|
+| a | **cut** | GA's (verses → shouted chorus) | draft 3 |
+| b | **cut** | **new: one delivery style, no shout arc** | draft 3 |
+| c | **cut** | GA's | **draft 2** (different words, test only) |
+| d | **cut** | **new** | **draft 2** |
+
+Exclude Styles (all): only Jack's standing rule, everything else removed:
+
+```
+double-time, fast rap
+```
+
+Settings as GA: v6, Variety Off, Personalize off, Max Mode off, Vocal Gender none, style influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 24 Creates. Unheard.
+
+#### HA · lagos-a
+
+```
+Lagos afro-psych funk, 108 BPM: a raspy Nigerian bandleader barking the verses, a female chorus shouting back, roaring on the chorus. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · lagos-b
+
+```
+Lagos afro-psych funk, 108 BPM: a smooth crooning high tenor leading a chanting women's choir, call and response. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · lagos-c
+
+```
+Lagos afro-psych funk, 108 BPM: a raspy Nigerian bandleader barking the verses, a female chorus shouting back, roaring on the chorus. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · lagos-d
+
+```
+Lagos afro-psych funk, 108 BPM: a smooth crooning high tenor leading a chanting women's choir, call and response. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · addis-a
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a wailing Ethiopian tenor with wide melisma, quiet verses, a crying chorus. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · addis-b
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a soft breathy falsetto, intimate and close to the mic, every line sung. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · addis-c
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a wailing Ethiopian tenor with wide melisma, quiet verses, a crying chorus. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · addis-d
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a soft breathy falsetto, intimate and close to the mic, every line sung. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · tokyo-a
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a theatrical Japanese man with heavy vibrato, brooding verses, a howled chorus. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+#### HA · tokyo-b
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a cool dry deadpan man talking over the groove, a woman cooing behind him. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+#### HA · tokyo-c
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a theatrical Japanese man with heavy vibrato, brooding verses, a howled chorus. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+#### HA · tokyo-d
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a cool dry deadpan man talking over the groove, a woman cooing behind him. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
 ### Round GA (2026-10-22): funk × psychedelic beats, voices from anywhere
 
 Jack: "forget everything and focus on blending funk with psychedelic beats, and have the voice vary in each one, forget English accents, just do a bunch of different ones from anywhere." Built fresh: no earlier round's boxes carried over. Twelve scenes, each with its own singer from that place (the genre word picks the voice, §2d), a psychedelic treatment on the **drums** (phaser, tape echo, spring reverb) and a quiet → loud arc against the monotone.
