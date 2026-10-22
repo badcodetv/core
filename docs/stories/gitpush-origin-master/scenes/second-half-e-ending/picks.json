@@ -1,0 +1,39 @@
+{
+  "about": "Stage 2 still picks for scene E (2026-10-22 autonomous run; still gate waived, Claude picked). Every option and its prompt is in shots.md. Files are relative to media unless a full path is given (reuses).",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills",
+  "flow_project": "2b21011e-c4bc-4145-aae3-ee92522a6ba9 (stills, 'Oct 22 - 01:07')",
+  "picks": {
+    "E01": {
+      "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg",
+      "reuse": true,
+      "why": "scene.json: Y2 + sh-28 reused as is; D16's frame is composited onto the phone in post."
+    },
+    "E02": {
+      "file": "E02-r3-a.jpg",
+      "options": [
+        "E02-r1-a.jpg",
+        "E02-r1-b.jpg",
+        "E02-r2-a.jpg",
+        "E02-r2-b.jpg",
+        "E02-r3-a.jpg",
+        "E02-r3-b.jpg"
+      ],
+      "why": "The only option that starts with her still looking DOWN at a lit phone whose screen faces us (so D16's frame can be composited and the beat 'she looks up from one to the other' happens inside the shot), with the whitewashed bank and its blank board dead centre in the window, and SB27a's chip shop and green pharmacy cross at the left for continuity with E03. Same woman as Y2 (ponytail, dark padded coat). r1-a already has her looking out with the phone edge-on; r1-b crops her face at the edge; r2-b carries a real bookmaker's brand and a FOR SALE board (lettering); r2-a and r3-b set the bank off-centre or small."
+    },
+    "E03": {
+      "file": "fix1/E03f-r1-b.jpg",
+      "reuse": false,
+      "why": "Review round 1 (London coding): SB27a edited. b keeps SB27a's framing and the bus where the 140% pull-back starts; a enlarges the bus and keeps a red shelter far down the street.",
+      "options": [
+        "fix1/E03f-r1-a.jpg",
+        "fix1/E03f-r1-b.jpg"
+      ],
+      "was": "storyboard/SB27a.jpg (red London bus, roundel, red shelter)"
+    },
+    "E04": {
+      "file": "black",
+      "reuse": true,
+      "why": "scene.json: 3 s of black under the music tail."
+    }
+  }
+}

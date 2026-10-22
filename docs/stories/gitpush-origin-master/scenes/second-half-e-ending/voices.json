@@ -1,0 +1,21 @@
+{
+ "about": "Human lines voiced in Gemini TTS (scripts/gpom/second-half-video/ending/voices.py). Files are relative to the media folder; the AI lines are Suno and are not here.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E",
+ "lines": {
+  "e1-0-maddie": {
+   "speaker": "maddie",
+   "frame": "E01",
+   "text": "...you go.",
+   "voice": "Aoede",
+   "file": "voices/e1-0-maddie-phone.wav",
+   "duration": 1.32,
+   "dry": "voices/e1-0-maddie-dry.wav",
+   "lead": 0.0,
+   "fx": "phone",
+   "filter": "highpass=f=380,highpass=f=380,lowpass=f=3000,lowpass=f=3000,volume=6dB,asoftclip=type=atan,acrusher=bits=10:mix=0.1,volume=-10dB",
+   "from": "D d9-1-maddie take b, cut at 1.715s (gap before 'you')",
+   "verified": true,
+   "why": "derived: not voiced separately (scene.json `from`)"
+  }
+ }
+}

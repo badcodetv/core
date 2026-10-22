@@ -1,0 +1,49 @@
+{
+  "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+  "round": 1,
+  "plan": [
+    {
+      "h": "Scene D: calls for you to rule on",
+      "items": [
+        "KAI TO RULE: New AI line on the wafer (D03): \"It only sends one back. Me.\" Why: trust test 4.12 needs the machine's own interest said, and it names the time machine's one passenger without physics. It is a Gemini TTS stand-in (Charon, through Maddie's speaker filter), NOT the Suno newsreader: Suno playback could not be recorded on this machine, and four Suno takes of it wait in the sheet to swap in. It must agree with your vote scene.",
+        "KAI TO RULE: Derek's tests: \"How do I know this isn't one of your simulations?\" / \"You don't. Believing it is your bit.\" (scene B's \"Believing them is your bit\"), then \"Does it even work?\" / \"I don't know if it works.\" Why: trust is earned by an admission and an act, not a clever line. The \"up your sleeve\" exchange is cut, so the exploit thread is no longer paid off in D. By: claude.",
+        "KAI TO RULE: The beneficiary, said once: LADY \"What'll you tell them? Back then.\" / AI \"That the companies cutting the jobs kept the gains. And you paid.\" Why: the moral is never stated, the beneficiary always is; canon's words; \"you\" lands on the people about to pay. It plays over the hundred lying back, so they are in frame.",
+        "KAI TO RULE: \"You. And your consciousness.\" said back by the AI after the lady's \"Us.\", held on the lady's face for all of it (about 7 s). Why: he heard Maddie in beat 0, and it names the machine's fuel without explaining it. Say if 7 s on her face is too long.",
+        "KAI TO RULE: Uncanny hospitality as comedy: \"Suits on, please. It's a clean room.\" / Sandra \"Five years, one toilet. Now he's fussy.\" / the tea \"Milk, two sugars. I kept your loyalty cards.\" Why: it does your \"it made it nice for them\" and puts what he knows about them in one light line. Loyalty cards nod at the data fear, never as the culprit.",
+        "KAI TO RULE: The goodbye is \"Did you put the seat down?\" / \"Yes, love.\" Why: \"Seat down?\" / \"Seat down.\" came back as \"Sit down!\" on 6 of 8 takes, and \"Seat down, love?\" failed too; this is C's row question, now soft, with yes given freely.",
+        "KAI TO RULE: Derek sits FIRST, in a room of empty recliners, and the hundred follow him. Why: trust given by an act should lead the room, not follow it.",
+        "KAI TO RULE: Maddie lives: her beacon stays on; \"Boss?\", 3.5 s of silence with one unanswered beep, then \"...Mind how\" (finished on the phone in E). The fade-to-dark clip sh-27-post is not used. Why: her being left alone is the cost; her dying would be a second, cheaper ending. Rule on the silence's length too.",
+        "KAI TO RULE: The AI goes as light, not an explosion: the chair lights spiral, the hands go slack (D12x), a 1 s ramp to white with no flash, out of the white onto boot prints at the door all pointing in (D14p), then the empty fold at dusk as the seam runs bright and goes dark. Photosensitivity screen: 0 flash pairs.",
+        "KAI TO RULE: D14 is graded about 0.6 stop down with a cooler sky. Say if it is too dark; the seam carries it.",
+        "KAI TO RULE: Music: D-room (glassy piano, Suno 09f81875) after \"fussy\", out under the lady's question; D-cross (cello and piano nocturne, 7bead5f0, the only take that stops dead after the swell) enters on the hands and stops as the seam goes dark, set 2.5 dB lower to keep the swell restrained.",
+        "KAI TO RULE: D01 is a talking shot (Sandra on camera, her face is a quarter of the frame) and was re-made so the lady's hair is loosely pulled back as S7r-a.",
+        "KAI TO RULE: D16: Maddie still, facing camera, slight lean, beacon pulsing; every chair holds what its person left (a limp suit, a blanket, a mug; hers nearest). Why: the takes where she turned to look lost the bunting side-on.",
+        "KAI TO RULE: Children stay implicit: the child's drawing in L17 (D15) is kept, and no still asks for a child (Flow refuses them).",
+        "KAI TO RULE: Lip-sync calls: Derek's D09 overruns his mouth by about 0.4 s rather than squeeze a half-joke; the lady plays at x1.0 and cuts to her hands on the blanket (D11b) as her lips close.",
+        "KAI TO RULE: Small faults kept: a blue chest logo at D00's edge (about 3.7 s), D02's ceiling-light sweep barely reads, D03c drifts slightly sideways, D10n has a helper walk out of frame.",
+        "KAI TO RULE: Still picks (taste): D00 r2-b, D01h r2-b, D02 r1-a, D03 r2-b, D03c, D04 r1-c, D06 r2-b, D07 r1-a, D08 r2-a, D09s r2-b, D11 r2-a, D12 r1-b, D13 r1-a, D14 remade, D15 L17 with D06's mug, D16 SB25b with the left things. Reasons are in picks.json."
+      ]
+    },
+    {
+      "h": "Scene D: other calls made in your place",
+      "items": [
+        "The scene's sentence: the machine can build anything except the one thing it needs, so the people it wiped out pay for the second chance, knowing who it's for.",
+        "New frame D00, Maddie among the white suits on the AI's first line, and Derek and the lady speak down to her. Why: the AI's voice needs a visible source.",
+        "D13: L3 edited so every chair is occupied (L3 alone is empty and would spend D16's reveal early), opening on a held 200% crop of a quarter of the ring so the figures read as people. Why: the monumental shot must carry a visible cost.",
+        "D03c, a costed wafer shot: low behind battered Maddie, mud-caked boots and a frayed cuff in the near third, the wafer beyond. D03 re-rolled with the wafer rigid (it liquefied).",
+        "D10n (the round wafer layout, from the D16 angle) replaces sh-25's straight rows, which broke the chair design and repeated.",
+        "D15 is a still (L17 with D06's glossy brown mug), so it cannot grow smoke as the old clip did.",
+        "D06 gets 1.2 s with no words before \"Is that tea?\"; the close shots in the chairs are lifted 15% to sit with the wides.",
+        "Maddie's beacon blooms with the level of his voice wherever she is in frame, drawn in post; beacon blips under every AI line.",
+        "Levels: every split AI phrase takes its gain from its whole atom, nothing goes in over -1 dBFS, and the build fails if any second is 12 dB over the scene's median. Why: one 0.37 s fragment went in 45 dB hot and pulled all of D 10 dB down in round 1.",
+        "Sandra re-voiced brisker so her line plays at x1.0; \"Boss?\" lifted 3 dB; Derek's question lifted 1.5 dB after \"Does it even wear?\" was heard.",
+        "The AI was generated as one Suno take per scene, not one per line (11 lines as pairs would cost 220, past the cap); -d7 (the beneficiary) re-run alone when both D takes stopped before it. Picks 8afa9d8a and 4fa3d2b1.",
+        "Moves in post, each held 1 to 1.5 s first: D03 pull-back, D05 a 2-degree turn and push, D11 push, D16 pull-back. D00 scaled 103.5% to lose Omni's letterbox.",
+        "Interiors white-balanced 60% to their mean; the remaining big colour steps are changes of place.",
+        "Fresh Flow projects for stills and video (a project full of tiles mis-picks start frames).",
+        "delivery-qc's range FAIL is left (x264 ringing on 0.018% of pixels after the 16-235 clamp); the frozen stretches are deliberate holds."
+      ]
+    }
+  ],
+  "replies": {}
+}

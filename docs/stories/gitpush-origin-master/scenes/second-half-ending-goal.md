@@ -60,7 +60,7 @@ Reuse first. The 17 Oct storyboard frames for I and J already have stills and cl
 
 ## Limits and safety
 
-- **Spend caps:** Flow video **600 credits**; Suno **200 credits**; stills are free. Read the price before each Create and log every spend in the ledger. If a cap would be crossed, stop making new media, finish with what exists, and say so on the pages.
+- **Spend caps:** Flow video **1500 credits** (raised from 600 by Kai, 2026-10-21: "we have lots of flow credits please spend them"; fix passes may make new video); Suno **200 credits**; stills are free. Read the price before each Create and log every spend in the ledger. If a cap would be crossed, stop making new media, finish with what exists, and say so on the pages.
 - **One tool user at a time:** one Flow job at a time and one Suno session at a time.
   - Run `suno.mts status` first. If another session's sheet is on the form or credits are moving, wait, and never load over a run in progress.
   - Never close or navigate another tab.

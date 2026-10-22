@@ -1,0 +1,199 @@
+{
+ "about": "Stage 2 still picks for scene D (the 2026-10-21/22 autonomous run; still gate waived, Claude picked). Every option and its prompt is in shots.md. Files are relative to media/stills unless a full path is given (reuses).",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills",
+ "flow_project": "f4ca3d54-a8ef-4476-ae20-f268b8d6a42d (stills, 'Oct 21 - 23:58')",
+ "picks": {
+  "D00": {
+   "file": "D00-r2-b.jpg",
+   "options": [
+    "D00-r1-a.jpg",
+    "D00-r1-b.jpg",
+    "D00-r2-a.jpg",
+    "D00-r2-b.jpg"
+   ],
+   "why": "Maddie large and grubby against the white, bunting clear across her wheels, a man stepping into his suit beside her (motion built in), no logos. r1-a and r2-a carry a blue chest logo; r1-b sets her small at the back."
+  },
+  "D01": {
+   "file": "D01-r2-a.jpg",
+   "options": [
+    "D01-r1-a.jpg",
+    "D01-r1-b.jpg",
+    "D01-r2-a.jpg",
+    "D01-r2-b.jpg"
+   ],
+   "why": "Both faces large: the lady glaring at her suit, Sandra dry and unimpressed (her face ~1/4 frame, so her line can be lip-synced here), the hopping man between them for the comedy. r1 sets the faces at ~1/5; r2-b cuts Sandra at the edge."
+  },
+  "D02": {
+   "file": "D02-r1-a.jpg",
+   "options": [
+    "D02-r1-a.jpg",
+    "D02-r1-b.jpg",
+    "D02-r2-a.jpg",
+    "D02-r2-b.jpg"
+   ],
+   "why": "L2's hall untouched, the suited column walking away to the machine, a clear trail of muddy prints up the centre to the lens: the cost in the monumental shot. r2 put Maddie at the head but she reads as facing camera and merges with the machine."
+  },
+  "D03": {
+   "file": "D03-r2-b.jpg",
+   "options": [
+    "D03-r1-a.jpg",
+    "D03-r1-b.jpg",
+    "D03-r2-a.jpg",
+    "D03-r2-b.jpg"
+   ],
+   "why": "The hundred from behind, all in suits, stopped dead before the wafer, Maddie's beacon among them, an old man with his hat in his hands. r1 dressed them as fab technicians in hoods; r2-a has two men in their own clothes. Weak: the wafer is ~2 people high, not house-sized (a post push-in can help)."
+  },
+  "D04": {
+   "file": "D04-r1-c.jpg",
+   "options": [
+    "D04-r1-b.jpg",
+    "D04-r1-c.jpg",
+    "D04-r2-a.jpg",
+    "D04-r2-b.jpg"
+   ],
+   "why": "Rainbow light across her glasses and lined face, looking up, mouth closed, face large. r1-b has a 'Tyvek' logo; r2 put young model-like technicians behind her. D04-r1-a is not an option (the L9 reference upload harvested as a stray tile)."
+  },
+  "D05": {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L3-wafer-pattern.jpg",
+   "reuse": true,
+   "why": "scene.json: L3 empty, held, post move only."
+  },
+  "D06": {
+   "file": "D06-r2-b.jpg",
+   "options": [
+    "D06-r1-a.jpg",
+    "D06-r1-b.jpg",
+    "D06-r2-a.jpg",
+    "D06-r2-b.jpg"
+   ],
+   "why": "Her hand at the steaming mug, the green cuff under the white sleeve, a patchwork blanket on the dark chair in its pool of light: cosy against clinical. The blanket returns on her knees in D11."
+  },
+  "D07": {
+   "file": "D07-r1-a.jpg",
+   "options": [
+    "D07-r1-a.jpg",
+    "D07-r1-b.jpg",
+    "D07-r2-a.jpg",
+    "D07-r2-b.jpg"
+   ],
+   "why": "Derek's face ~1/4 frame, arms folded, glaring down towards Maddie beside him (bunting clear), green jumper at the neck, empty chairs behind. r2-a's bigger face glares at the floor, not at her."
+  },
+  "D08": {
+   "file": "D08-r2-a.jpg",
+   "options": [
+    "D08-r1-a.jpg",
+    "D08-r1-b.jpg",
+    "D08-r2-a.jpg",
+    "D08-r2-b.jpg"
+   ],
+   "why": "Sandra holds Derek's eye (his green collar and stubble at the left edge, a clean reverse of D07), Maddie with her bunting soft between them in the background: the AI's source stays in frame. r1 put a stranger opposite her."
+  },
+  "D09": {
+   "file": "D07-r1-a.jpg",
+   "reuse": true,
+   "why": "scene.json: the D07 plate, a second talking clip."
+  },
+  "D10": {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg",
+   "reuse": true,
+   "why": "scene.json: SB23a + sh-25."
+  },
+  "D11": {
+   "file": "D11-r2-a.jpg",
+   "options": [
+    "D11-r1-a.jpg",
+    "D11-r1-b.jpg",
+    "D11-r2-a.jpg",
+    "D11-r2-b.jpg"
+   ],
+   "why": "Lying back in the dark chair under D06's patchwork blanket, looking down at Maddie (bunting visible) beside her, occupied chairs behind. r2-b's chair is white (breaks the chair lock); r1 has her looking away from the robot. Weak: her face is ~1/5 frame, small for lip-sync."
+  },
+  "D12": {
+   "file": "D12-r1-b.jpg",
+   "options": [
+    "D12-r1-a.jpg",
+    "D12-r1-b.jpg",
+    "D12-r2-a.jpg",
+    "D12-r2-b.jpg"
+   ],
+   "why": "The cream Aran cuff reaching for the green cuff across a short gap, so the grip completes inside the clip; muddy white suits carry the cost in."
+  },
+  "D13": {
+   "file": "D13-r1-a.jpg",
+   "options": [
+    "D13-r1-a.jpg",
+    "D13-r1-b.jpg",
+    "D13-r2-a.jpg",
+    "D13-r2-b.jpg",
+    "D13-r2-c.jpg"
+   ],
+   "why": "L3's grid, ring, cables and hub exact, a suited figure lying back in every chair (checked at full size). r2-a came back empty; r2-b/c removed the chairs and stood the figures up. Note: the chair lights are already on, so the spiral is a brightening."
+  },
+  "D14": {
+   "file": "fix1/D14f-r1-b.jpg",
+   "options": [
+    "fix1/D14f-r1-a.jpg",
+    "fix1/D14f-r1-b.jpg",
+    "D14-r2-a.jpg"
+   ],
+   "why": "Review round 1. No trolley or body; the trodden track runs unbroken down to the doorway. r1-a's track bends away from the door."
+  },
+  "D15": {
+   "file": "fix1/D15f-r1-b.jpg",
+   "options": [
+    "fix1/D15f-r1-a.jpg",
+    "fix1/D15f-r1-b.jpg"
+   ],
+   "why": "Review round 1. L17 with D06's glossy brown mug; held as a still so no smoke can rise. a/b near identical."
+  },
+  "D16": {
+   "file": "fix1/D16f-r1-a.jpg",
+   "options": [
+    "fix1/D16f-r1-a.jpg",
+    "fix1/D16f-r1-b.jpg"
+   ],
+   "why": "Review round 1. Each chair holds a limp suit or a blanket; the patchwork blanket and the brown mug on the chair beside her. r1-b fills the back rows with suits that read as people still lying there."
+  },
+  "D09s": {
+   "file": "fix2/D09s-r2-b.jpg",
+   "why": "r2-b: Maddie screen left (as D07), rows empty, the rows' recliner; r2-a puts the chair across his legs, the lounger look again",
+   "round": "review 2",
+   "by": "claude"
+  },
+  "D10n": {
+   "file": "fix1/D10n-r1-c.jpg",
+   "options": [
+    "fix1/D10n-r1-a.jpg",
+    "fix1/D10n-r1-b.jpg",
+    "fix1/D10n-r1-c.jpg"
+   ],
+   "why": "Review round 1. SB25b's round layout (the D05/D13/D16 design) with a few still standing and being helped down: the act happens in the clip. r1-a is SB23a's straight rows again; r1-b is nearly empty."
+  },
+  "D11b": {
+   "file": "fix1/D11b-r1-a.jpg",
+   "options": [
+    "fix1/D11b-r1-a.jpg",
+    "fix1/D11b-r1-b.jpg"
+   ],
+   "why": "Review round 1. Her hands on the patchwork blanket, the beacon sharp at left: a cutaway with no mouth."
+  },
+  "D03c": {
+   "file": "fix2/D03c-r2-c.jpg",
+   "why": "r2-c: battered bot, bunting, mud-caked boots and prints, the crowd and wafer beyond; r2-b has a stray boot lying on the floor (reads as a body part), r2-a is the stray reference upload",
+   "round": "review 2",
+   "by": "claude"
+  },
+  "D01h": {
+   "file": "fix2/D01h-r2-b.jpg",
+   "why": "r2-b keeps the composition; r2-a moved Sandra",
+   "round": "review 2",
+   "by": "claude"
+  },
+  "D14p": {
+   "file": "fix2/D14p-r2-b.jpg",
+   "why": "r2-b: boot soles with toe and heel, all heading up the path to the door; r2-a is symmetric and the prints are blobs",
+   "round": "review 2",
+   "by": "claude"
+  }
+ }
+}

@@ -1,0 +1,279 @@
+{
+ "about": "Human lines voiced in Gemini TTS (scripts/gpom/second-half-video/ending/voices.py). Files are relative to the media folder; the AI lines are Suno and are not here.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C",
+ "lines": {
+  "c1-0-lady": {
+   "speaker": "lady",
+   "frame": "C01",
+   "text": "Go on, then. You lead.",
+   "voice": "Sulafat",
+   "file": "voices/c1-0-lady-b.wav",
+   "duration": 3.12,
+   "speech": [
+    0.0,
+    2.38
+   ],
+   "lead": 0.0,
+   "heard": "Go on then, you lead.",
+   "verified": true,
+   "why": "b: both heard as written; b 3.12s is closer to the ~1.92s the words take than a 3.56s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c1-0-lady-a.wav",
+     "duration": 3.56,
+     "expected": 1.92,
+     "heard": "Go on then, you lead.",
+     "match": 1.0,
+     "gap": 0.8,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c1-0-lady-b.wav",
+     "duration": 3.12,
+     "expected": 1.92,
+     "heard": "Go on then, you lead.",
+     "match": 1.0,
+     "gap": 0.65,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: dry, flat, not looking at her; said while her hand is still on the bunting, as if it were nothing.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
+  },
+  "c1-1-maddie": {
+   "speaker": "maddie",
+   "frame": "C02",
+   "text": "Ooh. Ta.",
+   "voice": "Aoede",
+   "file": "voices/c1-1-maddie-b.wav",
+   "duration": 2.68,
+   "speech": [
+    0.0,
+    1.68
+   ],
+   "lead": 0.0,
+   "heard": "Ooh, ta.",
+   "verified": true,
+   "why": "b: a transcript less exact (0.91 vs 1.00: 'Oh, ta.')",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c1-1-maddie-a.wav",
+     "duration": 2.64,
+     "expected": 0.77,
+     "heard": "Oh, ta.",
+     "match": 0.909,
+     "gap": 0.15,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c1-1-maddie-b.wav",
+     "duration": 2.68,
+     "expected": 0.77,
+     "heard": "Ooh, ta.",
+     "match": 1.0,
+     "gap": 0.28,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: genuinely touched, trying not to make a fuss.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
+  },
+  "c4-0-sandra": {
+   "speaker": "sandra",
+   "frame": "C04",
+   "text": "Did you put the seat down?",
+   "voice": "Autonoe",
+   "file": "voices/c4-0-sandra-b.wav",
+   "duration": 2.28,
+   "speech": [
+    0.0,
+    1.64
+   ],
+   "lead": 0.0,
+   "heard": "Did you put the seat down?",
+   "verified": true,
+   "why": "b: both heard as written; b 2.28s is closer to the ~2.31s the words take than a 2.88s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-0-sandra-a.wav",
+     "duration": 2.88,
+     "expected": 2.31,
+     "heard": "Did you put the seat down?",
+     "match": 1.0,
+     "gap": 0.12,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-0-sandra-b.wav",
+     "duration": 2.28,
+     "expected": 2.31,
+     "heard": "Did you put the seat down?",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, sideways, as if it is any other morning; the word is 'seat', as in the toilet seat: a long, clear 'ee'; never 'sit'.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear."
+  },
+  "c4-1-derek": {
+   "speaker": "derek",
+   "frame": "C05",
+   "text": "We're not coming back, love.",
+   "voice": "Algieba",
+   "file": "voices/c4-1-derek-a.wav",
+   "duration": 2.56,
+   "speech": [
+    0.0,
+    1.98
+   ],
+   "lead": 0.0,
+   "heard": "We're not coming back love",
+   "verified": true,
+   "why": "a: both heard as written; a 2.56s is closer to the ~1.92s the words take than b 3.08s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-1-derek-a.wav",
+     "duration": 2.56,
+     "expected": 1.92,
+     "heard": "We're not coming back love",
+     "match": 1.0,
+     "gap": 0.25,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-1-derek-b.wav",
+     "duration": 3.08,
+     "expected": 1.92,
+     "heard": "We're not coming back, love.",
+     "match": 1.0,
+     "gap": 0.5,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle, not looking at her.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it."
+  },
+  "c4-2-sandra": {
+   "speaker": "sandra",
+   "frame": "C05",
+   "text": "Did you put it down?",
+   "voice": "Autonoe",
+   "file": "voices/c4-2-sandra-a.wav",
+   "duration": 1.68,
+   "speech": [
+    0.0,
+    1.16
+   ],
+   "lead": 0.0,
+   "heard": "Did you put it down?",
+   "verified": true,
+   "why": "a: both heard as written; a 1.68s is closer to the ~1.92s the words take than b 2.2s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-2-sandra-a.wav",
+     "duration": 1.68,
+     "expected": 1.92,
+     "heard": "Did you put it down?",
+     "match": 1.0,
+     "gap": 0.03,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-2-sandra-b.wav",
+     "duration": 2.2,
+     "expected": 1.92,
+     "heard": "Did you put it down?",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: exactly the same, flat, unmoved.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear."
+  },
+  "c4-3-derek": {
+   "speaker": "derek",
+   "frame": "C05",
+   "text": "...Yes.",
+   "voice": "Algieba",
+   "file": "voices/c4-3-derek-b.wav",
+   "duration": 1.28,
+   "speech": [
+    0.0,
+    0.56
+   ],
+   "lead": 1.2,
+   "heard": "Yes.",
+   "verified": true,
+   "why": "b: a failed ('Yeah', 0.57)",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-3-derek-a.wav",
+     "duration": 1.88,
+     "expected": 0.38,
+     "heard": "Yeah",
+     "match": 0.571,
+     "gap": 0.55,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-3-derek-b.wav",
+     "duration": 1.28,
+     "expected": 0.38,
+     "heard": "Yes.",
+     "match": 1.0,
+     "gap": 0.0,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: after a long beat; defeated, fond.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it."
+  },
+  "c5-0-derek": {
+   "speaker": "derek",
+   "frame": "C06",
+   "text": "Bloody hell.",
+   "voice": "Algieba",
+   "file": "voices/c5-0-derek-a.wav",
+   "duration": 1.68,
+   "speech": [
+    0.0,
+    1.18
+   ],
+   "lead": 0.0,
+   "heard": "Bloody hell!",
+   "verified": true,
+   "why": "a: both heard as written; a 1.68s is closer to the ~0.77s the words take than b 2.0s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c5-0-derek-a.wav",
+     "duration": 1.68,
+     "expected": 0.77,
+     "heard": "Bloody hell!",
+     "match": 1.0,
+     "gap": 0.0,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c5-0-derek-b.wav",
+     "duration": 2.0,
+     "expected": 0.77,
+     "heard": "Bloody hell.",
+     "match": 1.0,
+     "gap": 0.08,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet, under his breath.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it."
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+  "about": "Stage 2 still picks for scene C (the 2026-10-21 autonomous run; still gate waived, Claude picked). Every option and its prompt is in shots.md. Files are relative to media/stills.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills",
+  "flow_project": "c27e8f5f-2e2a-4382-a673-3c8afb216880 (stills, 'Oct 21 - 23:01')",
+  "picks": {
+    "C01": {
+      "file": "C01-r2-a.jpg",
+      "options": [
+        "C01-r1-a.jpg",
+        "C01-r1-b.jpg",
+        "C01-r2-a.jpg",
+        "C01-r2-b.jpg",
+        "C01-r3-a.jpg",
+        "C01-r3-b.jpg"
+      ],
+      "alt": "C01-r3-a.jpg",
+      "why": "The only option whose face is big enough to lip-sync (about a third of frame height; lip-sync-dub: a standing wide at ~8% is unreadable). Her hand is ON the torn bunting, so the act and the line are one shot. Flaw: the bunting is strung across a bar above the robot's lid rather than hanging over its front wheels, and the robot is only a lid and beacon at frame bottom. Alt r3-a has the robot and its bunting right and the hand on the lid, but her face is ~12% of frame. Kai to rule."
+    },
+    "C02": {
+      "file": "C02-r2-a.jpg",
+      "options": [
+        "C02-r1-a.jpg",
+        "C02-r1-b.jpg",
+        "C02-r2-a.jpg",
+        "C02-r2-b.jpg"
+      ],
+      "why": "Maddie leads from the foreground with the bunting across her wheels; the hundred file out mid-ground (few-movers rule for Omni), shading their eyes, carrying bags, an old man on a stick; the kill-bot track marks curve through the grass in front. r1-a/b put the crowd in the foreground and Maddie behind or beside them, which loses 'she leads'."
+    },
+    "C03": {
+      "file": "C03-f1-a.jpg",
+      "options": [
+        "C03-r1-a.jpg",
+        "C03-r1-b.jpg",
+        "C03-r2-a.jpg",
+        "C03-r2-b.jpg",
+        "C03-f1-a.jpg",
+        "C03-f1-b.jpg"
+      ],
+      "why": "Maddie biggest in frame (the subject that must stay the same size through the chain), bunting visible, the line stretching back to the bunker mound on the horizon, the old man on his stick and the blanket trolley right behind her: the visible cost is in the shot. r2-a/b set her smaller and further away, which a travelling chain would shrink further.",
+      "superseded": "C03-r1-a.jpg (round 0)",
+      "why_review1": "Review round 1: made on the Maddie reference so her body is the six-wheeled design (round 0 drew a narrow upright cart), framed for a withheld reveal: Maddie large in the left third with empty grass round her, the line of a hundred only in the right half, well behind her. f1-b is the same idea but the line sits closer behind her, which spoils the tight opening."
+    },
+    "C04": {
+      "file": "C04-r2-a.jpg",
+      "options": [
+        "C04-r1-a.jpg",
+        "C04-r1-b.jpg",
+        "C04-r2-a.jpg",
+        "C04-r2-b.jpg"
+      ],
+      "why": "Sandra sharp, glancing sideways at Derek, whose dark green jumper fills the left edge: the row is visibly between the two of them, and it reverses cleanly with C05-r2-a. r1-a/b put Derek in a dark jacket (continuity with C05) and the walkers in modern blue anoraks."
+    },
+    "C05": {
+      "file": "C05-r2-a.jpg",
+      "options": [
+        "C05-r1-a.jpg",
+        "C05-r1-b.jpg",
+        "C05-r2-a.jpg",
+        "C05-r2-b.jpg"
+      ],
+      "why": "The reverse of C04-r2-a: Derek in the same green jumper (no jacket), looking straight ahead, Sandra's waxed coat and Aran jumper soft at the right edge. r1-a/b have the bigger face but a leather/donkey jacket that C04 does not show."
+    },
+    "C06": {
+      "file": "C06-f1-a.jpg",
+      "options": [
+        "C06-r1-a.jpg",
+        "C06-r1-b.jpg",
+        "C06-r2-b.jpg",
+        "C06-r2-c.jpg",
+        "C06-f1-a.jpg",
+        "C06-f1-b.jpg"
+      ],
+      "why": "The fixed building design exactly (long, low black slab, one amber seam its whole length, in a fold of the downs, the only made thing), seen past the cost: the old man being helped up on his stick, a trolley of blankets tipped in the mud with someone slumped beside it, the hundred stopped on the crest, Maddie with her bunting at the front. The monument is never alone in frame. r1-a/b are close behind backs of heads and make the building a strip; r2-b is fine but smaller. C06-r2-a is not an option: it is the bot reference upload, harvested as a stray third candidate.",
+      "superseded": "C06-r2-c.jpg (round 0)",
+      "why_review1": "Review round 1: C06-r2-c with the figure lying by the tipped trolley removed (flow_edit_image). f1-a leaves spilled blankets; f1-b leaves a pale heap that could read as a body."
+    },
+    "C07": {
+      "file": "C07-r2-b.jpg",
+      "options": [
+        "C07-r1-a.jpg",
+        "C07-r1-b.jpg",
+        "C07-r2-a.jpg",
+        "C07-r2-b.jpg"
+      ],
+      "why": "The seam runs the whole length of a long wall and parts into one narrow doorway with one pale step, Maddie small at the foot of it with her bunting, the hundred waiting behind: the invitation and the step in one frame. r1-a/b make the building a tall tower (breaks the one design); r2-a cuts the wall short. Weak point: at this distance the wall reads taller than BL1's slab. Kai to rule."
+    }
+  },
+  "flow_project_review1": "6bccf970-4250-4e62-9e06-d469546cde24 (stills, 'Oct 22 - 02:01')"
+}

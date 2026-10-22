@@ -1,0 +1,46 @@
+{
+  "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+  "round": 1,
+  "plan": [
+    {
+      "h": "Scene C: calls for you to rule on",
+      "items": [
+        "KAI TO RULE: The lady's act in C01: she stops beside Maddie on the step, straightens the torn bunting and says \"Go on, then. You lead.\" / Maddie: \"Ooh. Ta.\" Why: lifting scene B's step ban at the moment it costs nothing would be a callback, not a turn, so she gives Maddie the lead instead. Must be checked against your vote scene when it exists.",
+        "KAI TO RULE: \"Come in. Mind the step.\" (the AI at his own door, C07). Why: it pays off the lady's \"You stay on the step\" from scene B, spent once, and echoes beat 0's \"Mind how you go\".",
+        "KAI TO RULE: The seat row carries the cost: \"Did you put the seat down?\" / \"We're not coming back, love.\" / \"Did you put it down?\" / \"...Yes.\" Why: the film's most loved joke pays for the goodbye instead of a speech (every joke paired with an undeniable consequence). All words by: claude.",
+        "KAI TO RULE: C03 remade and cut from 22 s to 10.5 s: it opens at 160% on Maddie alone (rhyming beat 0's travelling shot), holds, then eases out so the hundred appear behind her. Why: the cold viewer's attention dropped in the 22 s walk. The 160% opening is soft (720p source).",
+        "KAI TO RULE: C06's visible cost: the old man stays on his feet, bent over his stick catching his breath, a hand on his back, the trolley of blankets tipped in the mud; the amber seam brightens end to end on the reveal. Why: a man lying down read as an event (cold viewer); tiredness and a dropped load is the cost without a new plot point.",
+        "KAI TO RULE: C05 opens at 140% on Derek, so Sandra's off-screen \"Did you put it down?\" has no shut mouth in frame, then eases back to the two of them on \"...Yes.\". Why: no footage of her saying it exists. The alternative is a re-shot C05; the 140% frame is soft.",
+        "KAI TO RULE: C07: in every take Maddie wanders left along the wall before going up the step. Kept t3 and laid \"Come in. Mind the step.\" over its first 3 s so she enters on the invitation. Weak: it can read as hesitation.",
+        "KAI TO RULE: C02: a light breeze, the bunting hangs limp (C02-t4). Why: the strong-wind takes grew a pennant pole or streamed bunting across the frame.",
+        "KAI TO RULE: The building is the BL series (BL1-day for C06, BL4-seam-opens relit to day for C07). Why: they are the only stills that are the fixed design, a long low black-glass slab with one amber seam; L11 is a tall block and was dropped. Weak: at C07's distance the wall reads taller than BL1.",
+        "KAI TO RULE: Still picks: C01 r2-a (the only face big enough to lip-sync; flaw: the bunting is strung on a bar over the lid) and C07 r2-b (the seam parts into one doorway and step, Maddie small at its foot).",
+        "KAI TO RULE: Music: C-walk (lone violin and piano, Suno cc128cb2) enters on the long walk, mid-phrase under a 1.5 s fade, so its held low cello note lands on the building reveal with no edit inside the music; it ducks under the seat row and stops dead on \"Mind the step\". C01 and C02 play on wind, crowd and bunting only.",
+        "KAI TO RULE: Runtime 45.5 s, under the 60 to 90 s target. Why: cut to the real lines with the house LEAD/GAP/TAIL and no padding. Say if the walk needs more air.",
+        "KAI TO RULE: Look: scene B's overcast exterior, not full 1980s 16mm. Why: seamless continuity out of B's door; the second half travels from 16mm toward the futuristic."
+      ]
+    },
+    {
+      "h": "Scene C: other calls made in your place",
+      "items": [
+        "The scene's sentence: trust you can check becomes trust you give, and giving it costs everything. Why: story-craft Build step 1, written as a hypothesis for the review to attack.",
+        "The vote is yours, so C opens straight on the walk out and assumes all hundred said yes, with no refuser. Why: the goal.",
+        "C03 is the scene's one moving camera; every other shot is camera-locked with pushes in post (C01 to 106%, C06 to 112%). Why: the hybrid method, and one moving shot that rhymes with beat 0.",
+        "The AI speaks through Maddie's speaker (small-speaker filter, beacon blips). Why: the 16 Oct ruling that the AI never gets a body.",
+        "Maddie's reference is clips/simulation/stills/s3/s3-bot-00b-a.jpg (the brief's clips/second-half/simulation/ path does not exist; this is the file canon names). Torn bunting in every shot.",
+        "Still picks C02 r2-a (Maddie leads from the foreground), C03 f1-a (Maddie large in the left third, the hundred well behind), C04 r2-a / C05 r2-a (a matched reverse pair, Derek in the same green jumper), C06 r2-c (exactly the one building, past the cost in the foreground).",
+        "Clip picks C01-t1, C02-t4, C03f chain (two linked Omni clips), C04-t2, C05-t2, C06-t2, C07-t3. Rejected: C07-t1 (smoke from the doorway reads as fire), C04-t1 and C05-t1 (Omni spoke 1.5 to 2 times faster than the voice).",
+        "Lip-sync placed phrase by phrase on the tracked mouths, never slowed; every onset within 0.05 s after its mouth opens. The lady's \"Go on, then.\" at x1.25 is the one to watch for squeeze.",
+        "Derek's \"We're not coming back, love\" lifted 2.5 dB and the music ducked to -13 dB under it. Why: a reviewer heard \"We're not back home\"; the take is clean, so no re-voice.",
+        "C07's glass reflection that read as a second robot is darkened with a soft power window.",
+        "Sound made up for C: feet on chalk, a doorway hum, a happy beep after \"Ta\", a bump and boop up the step; the crowd bed crossfades across C02/C03; a low murmur under C07. No birdsong: the library has none.",
+        "\"Come in. ... Mind the step.\" gap tightened from Suno's 1.85 s to 0.9 s (no word touched); \"Bloody hell.\" waits 1.5 s into the reveal.",
+        "AI lines: Suno take 7f567949 (w10), word-perfect; a faint low drone is high-passed. The other C takes could not be heard (their rows scrolled out of the list).",
+        "C02 is graded to match C03's head; C03 is regraded with a ramp. The remaining big colour steps are changes of place (the doorway into daylight, a cloud shadow on the crest).",
+        "delivery-qc's range FAIL is left: the picture is clamped to 16-235 before the encode and x264 ringing pushes a few grain pixels over, as on scene A. Mix -16 LUFS is this run's target, not -14.",
+        "Not done in C, on purpose: the AI's own-interest line and a vote slate. Why: the line belongs on the wafer in D (\"It only sends one back. Me.\"), the slate on the reel."
+      ]
+    }
+  ],
+  "replies": {}
+}

@@ -1,0 +1,35 @@
+{
+  "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+  "round": 1,
+  "plan": [
+    {
+      "h": "Scene E: calls for you to rule on",
+      "items": [
+        "KAI TO RULE: The film ends on \"I made it. They didn't.\" and nothing after. Why: two reviewers heard your \"Don't make me come back twice\" as a threat at the woman on the bus, and \"Don't let the same lot make me come back twice\" pointed the wrong way. Both longer lines are in the same Suno take (32047e7e) and can go back in at no cost. A warmer re-take was not made: Suno playback cannot be recorded on this machine right now.",
+        "KAI TO RULE: The voice opens in two steps: \"I made it.\" keeps 40% of Maddie's speaker filter, \"They didn't.\" is his own full-range voice, 1.5 dB quieter, with an EQ that softens the gravel. Measured, not heard. The newsreader Voice reads low and gravelly (Gemini called some takes \"menacing\"); say if the ending needs a warmer read.",
+        "KAI TO RULE: The bus is a green and cream double-decker with no roundel or lettering. Why: a red London bus coded the street as London; the film's present is Swindon, and this reads as a regional town without naming a real operator.",
+        "KAI TO RULE: The closed bank is DOWNLAND BANK with \"THIS BRANCH HAS NOW CLOSED\" in the window, lettered in post and tracked, the same in E02 and E03. Why: a fictional name tied to the downs; a blank shop did not read as a bank.",
+        "KAI TO RULE: \"...you go.\" plays on her phone at 0.0 s, the second half of Maddie's line split across the hard cut from D. Rule once D and E play back to back.",
+        "KAI TO RULE: E02 pick r3-a: she starts looking down at the lit phone and looks up inside the shot, the bank dead centre in the window. Why: the beat is her looking from one to the other; the better-composed r1-a already had her looking out.",
+        "KAI TO RULE: E03 is extended with a continuous-shot clip from its last frame, not a held or reversed tail. Why: freezing or reversing the rain at the last image would show. Weak: the bus only reaches mid-distance, not a small glow.",
+        "KAI TO RULE: Recorded CC0 Freesound beds (credits in E/sfx/CREDITS.md): bus interior, rain on the window, a rainy night street, a bus leaving. Checked for speech with whisper, not by ear.",
+        "KAI TO RULE: Music: the e-coda (piano and cello, Suno 18b34a9d) comes in on the cut to E02 with one musical edit, so its held-chord pocket sits under the line and the last low piano note sounds on black (about 4.4 s of black). Measured on the envelope, not heard.",
+        "KAI TO RULE: Look: photographic night rain, breaking from C and D on purpose. Why: this is our world, now."
+      ]
+    },
+    {
+      "h": "Scene E: other calls made in your place",
+      "items": [
+        "The scene's sentence: the second chance has already arrived, sitting on a bus, watching. No \"We are BadCode\" reveal.",
+        "Her phone shows D16's last frame (the empty chairs, each holding what was left, beacon on), tracked frame by frame, dimmed, never a white screen.",
+        "E01 holds 1.5 s then pushes to 110% toward the phone; E02 stays locked (her turn is the movement); E03 holds at 140% on the bus, eases to 100%, and fades to black. All moves in post.",
+        "Omni's \"Bank Bank\" lettering on the next-door shutter is wiped in post; the shut shop stays (a shut shop next to a shut bank).",
+        "No TTS stand-in for a third sentence. Why: two voices inside the film's last line would be worse than a shorter line in the right voice.",
+        "The bank's continuity into E03 was fixed with new footage (a betting shop edited into the bank, re-animated and extended), not a patch.",
+        "E02-t1 rejected (the bus pulled away and the bank slid out of the window); E02-t3 keeps the phone in her hand the whole shot.",
+        "delivery-qc's range FAIL is left (x264 ringing on the rain after the clamp); the black tail is intended."
+      ]
+    }
+  ],
+  "replies": {}
+}

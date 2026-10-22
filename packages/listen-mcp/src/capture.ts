@@ -264,8 +264,14 @@ export async function pinVolume(sink: string): Promise<void> {
   await pactl(['set-sink-mute', sink, '0'])
   for (const input of parseSinkInputs(await pactl(['list', 'sink-inputs']))) {
     if (input.sink !== index) continue
-    await pactl(['set-sink-input-volume', String(input.index), '100%'])
-    await pactl(['set-sink-input-mute', String(input.index), '0'])
+    // A paused Chrome stream can close between the list and the set when pactl is slow (WSLg lag, seen
+    // 22 Oct 2026: 3-17 s per call). A stream that is gone needs no volume; the sink's own is pinned above.
+    try {
+      await pactl(['set-sink-input-volume', String(input.index), '100%'])
+      await pactl(['set-sink-input-mute', String(input.index), '0'])
+    } catch (e) {
+      if (!/No such entity/i.test(String((e as Error)?.message ?? e))) throw e
+    }
   }
 }
 
