@@ -42,7 +42,7 @@ Beethoven's Fifth, never action-movie. The ending may swell, but stays restraine
 | `gpom-sh-end-ai-d7` | D · D11 | AI: *That the companies cutting the jobs kept the gains. And you paid.* | take `gpom-sh-end-ai-D` | — |
 | `gpom-sh-end-ai-e1` | E · E03 | AI, unfiltered: *I made it. They didn't. Don't make me come back twice.* | take `gpom-sh-end-ai-E` | — |
 | `gpom-sh-end-ai-e1b` | E · E03 (alt) | AI: *I made it. They didn't. Don't let the same lot make me come back twice.* | take `gpom-sh-end-ai-E` | — |
-| `gpom-sh-end-ai-e2` | E · E03 | AI, unfiltered: *I made it. Now the real work starts.* (Kai, 23 Oct, revision H = one read; **takes owed a pick**; round 1's *Now we have some work to do.* was blocked by Suno's lyric filter; **replaces `-e1`/`-e1b`**) | its own pair | 20 |
+| `gpom-sh-end-ai-e2` | E · E03 | AI, unfiltered: *I made it. Now the real work starts.* (Kai, 23 Oct, revision H = one read; **picked: H-v6-w10 `22571839`**; round 1's *Now we have some work to do.* was blocked by Suno's lyric filter; **replaces `-e1`/`-e1b`**) | its own pair | 20 |
 | `gpom-sh-c-walk` | C · c2→c5 | lone violin and piano, open air, ends on one held cello note | its own pair | 60 |
 | `gpom-sh-d-room` | D · d1→d6 | glassy high piano, music-box tenderness | its own pair | 70 |
 | `gpom-sh-d-cross` | D · d7→d8 | cello and piano nocturne, one restrained swell, stops dead | its own pair | 45 |
@@ -446,6 +446,13 @@ recorded: `/api/generate/v2-web/` returned `submitted`, then both clips (`d0d7de
 read **once, no bracket cues at all** (lyrics = the two lines), everything else unchanged. Both cells passed, 10 credits
 each (7,710 → 7,700 → 7,690). So the filter was tripping on the repeated cued structure, not on Kai's words. Not
 listened to, not recorded; **Kai picks**. Note `53d1db21` came back at 0:12, not 0:20.
+
+**Pick (Kai, 23 Oct): `gpom-sh-end-ai-e2-H-v6-w10` [22571839](https://suno.com/song/22571839-6a83-4ab1-9340-9c4365ed9784)**, the
+second w10 take. Recorded with `record-checked.py` (try 1 read 7.16 s, a mismatch, so it re-recorded; try 2 read 19.60 s, OK), never
+downloaded: `/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e2-h-v6-w10-22571839.wav`
+(+ `.preview.mp3`), 19.60 s. Whisper hears *"I made it. Now the real work starts."* word-perfect. Where the line sits (silence
+map at -40 dB, whisper word times in brackets): **"I made it." 0.00–0.85 s** (whisper 0.00–1.42), a ~3.3 s gap, **"Now the real
+work starts." 4.13–6.38 s** (whisper 3.50–5.52), then silence to the end.
 
 | Take | Length | Link |
 | --- | --- | --- |
