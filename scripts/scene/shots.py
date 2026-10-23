@@ -30,7 +30,7 @@ from scene import Scene  # noqa: E402
 def shots(scene_dir):
     sc = Scene(scene_dir)
     jobs = sc.load('video-jobs.json', {})
-    sb = sc.load('storyboard.json')['frames']
+    sb = sc.load('storyboard.json', {'frames': []})['frames']  # a scene may have extra rows only
     ao = {str(f['n']): f for f in sc.load('animation-options.json', {}).get('frames', [])}
     skip = set(jobs.get('skip', []))
     dur = jobs.get('duration', 8)

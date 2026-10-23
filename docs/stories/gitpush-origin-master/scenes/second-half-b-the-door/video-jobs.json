@@ -1,0 +1,33 @@
+{
+ "duration": 8,
+ "skip": [],
+ "extra": [
+  {
+   "key": "b15-v2",
+   "n": 15,
+   "still": "shb-b15-v2-no-bunting",
+   "duration": 8,
+   "motion": "The camera does not move. The small grey delivery robot stays exactly where it is, parked outside on the threshold of the open blast doors; it does not move forward at all. It gives one small settle on its wheels and its amber beacon pulses bright and slow. Outside, the grass on the downs ripples in a light breeze. In the foreground the old woman, seen from behind, stays still; only her shoulders stiffen slightly. Nothing blows inside the corridor. The camera does not move.",
+   "character": null,
+   "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v2 no bunting"
+  },
+  {
+   "key": "b17b-v1",
+   "n": 17,
+   "still": "shb-b17b-v1-calm-bunting",
+   "duration": 8,
+   "motion": "The camera does not move. The small grey delivery robot rolls steadily away from the shut bunker, down the slope towards the camera along its own wheel tracks, bouncing gently over the tussocks, its amber beacon flashing. The long grass of the downs ripples in the wind and low grey clouds drift over the hill. The bunker's green steel doors stay shut. The camera does not move.",
+   "character": null,
+   "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v1 calm bunting"
+  },
+  {
+   "key": "b17b-v2",
+   "n": 17,
+   "still": "shb-b17b-v2-no-bunting",
+   "duration": 8,
+   "motion": "The camera does not move. The small grey delivery robot rolls steadily away from the shut bunker, down the slope towards the camera along its own wheel tracks, bouncing gently over the tussocks, its amber beacon flashing. The long grass of the downs ripples in the wind and low grey clouds drift over the hill. The bunker's green steel doors stay shut. The camera does not move.",
+   "character": null,
+   "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v2 no bunting"
+  }
+ ]
+}

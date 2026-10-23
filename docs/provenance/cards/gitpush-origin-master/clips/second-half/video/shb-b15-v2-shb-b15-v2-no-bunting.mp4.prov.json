@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-b15-v2-shb-b15-v2-no-bunting.mp4",
+ "made": "2026-10-23T16:34:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The small grey delivery robot stays exactly where it is, parked outside on the threshold of the open blast doors; it does not move forward at all. It gives one small settle on its wheels and its amber beacon pulses bright and slow. Outside, the grass on the downs ripples in a light breeze. In the foreground the old woman, seen from behind, stays still; only her shoulders stiffen slightly. Nothing blows inside the corridor. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/shb-b15-v2-no-bunting.jpg",
+ "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v2 no bunting",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/shb-b15-v2-no-bunting.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "b15-v2",
+  "frame": 15,
+  "option": null
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "count": 1
+ }
+}

@@ -1,5 +1,5 @@
 {
- "spent": 612,
+ "spent": 636,
  "jobs": [
   {
    "key": "V6-1",
@@ -210,6 +210,19 @@
    "cost": 12,
    "at": "2026-10-23T17:08:00Z",
    "note": "scene B beat 17b from still b17b-turn-away-2-a (Kai's pick); flow MCP, Omni 1.1 Flash, 8 s, count 1; MIS-HARVESTED: the call returned the B15r3 clip (same mediaId, same md5), so this render is in Flow project 20b33d98 but not on disk; house price, not read off Flow"
+  },
+  {
+   "key": "B15r4-v1-calm-bunting",
+   "cost": 12,
+   "at": "2026-10-23T17:40:00Z",
+   "note": "scene B beat 15 bunting test v1 (Kai): still b15-v1-calm-bunting; flow MCP, Omni 1.1 Flash, 8 s, count 1; house price, not read off Flow",
+   "mediaId": "25c4effc-eee8-4735-9319-390f75d7d756"
+  },
+  {
+   "key": "B15r4-v2-no-bunting",
+   "cost": 12,
+   "at": "2026-10-23T17:43:00Z",
+   "note": "scene B beat 15 bunting test v2: MIS-HARVESTED, the MCP returned the v1 clip again (same mediaId and md5); render left in Flow project 20b33d98; house price"
   }
  ],
  "keys": [
