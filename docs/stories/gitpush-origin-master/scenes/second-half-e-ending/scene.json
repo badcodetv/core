@@ -203,7 +203,15 @@
       "bin": "gpom-sh-E-rough1",
       "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
       "built": "2026-10-23",
-      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0."
+      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0.",
+      "stale": "superseded by rough2; its stems were overwritten by the later rebuild, so rough1's music/sfx no longer match its picture"
+    },
+    "rough2": {
+      "sequence": "gpom-sh-E-rough2",
+      "bin": "gpom-sh-E-rough2",
+      "built": "2026-10-23",
+      "what": "Parliament last shot under 'Now the real work starts.' + Flow-painted phone screens (overlay dropped)",
+      "how": "scripts/scene/premiere-plan.py --tag rough2 (line files under premiere/rough2/lines/)"
     }
   }
 }

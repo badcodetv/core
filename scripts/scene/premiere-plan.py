@@ -9,7 +9,10 @@ picture never drops sound onto a voice track. Stems in --skip are left out (e.g.
 
 Track order: vox-* stems first, then mus-*, then sfx-*, in edl order within each group.
 
-    python3 scripts/scene/premiere-plan.py <edl.json> <out plan.json> [--skip mus-M0-radio]
+    python3 scripts/scene/premiere-plan.py <edl.json> <out plan.json> [--skip mus-M0-radio] [--tag rough2]
+
+--tag puts the line files under premiere/<tag>/lines/, so a later build never overwrites the files an
+earlier sequence (rough1) still plays.
 
 The plan is {"files": [...], "video": [[file, t, in, dur]], "audio": [[file, t, track]], "tracks": [names]}.
 """
@@ -30,7 +33,8 @@ def main(argv):
     edl_path, out_path = pathlib.Path(argv[0]), pathlib.Path(argv[1])
     skip = set(argv[argv.index('--skip') + 1].split(',')) if '--skip' in argv else set()
     edl = json.loads(edl_path.read_text())
-    lines_dir = edl_path.parent / 'premiere' / 'lines'
+    tag = argv[argv.index('--tag') + 1] if '--tag' in argv else ''
+    lines_dir = edl_path.parent / 'premiere' / tag / 'lines'
     lines_dir.mkdir(parents=True, exist_ok=True)
 
     stems = [a for a in edl['audio'] if a['name'] not in skip]
