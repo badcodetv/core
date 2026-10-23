@@ -298,8 +298,8 @@ def build(sc):
     # ---- d4: a hundred chairs (L3 overhead, rotate + push), the tea (D06): unchanged picture; Maddie says the line
     s4 = t
     b = c.beat('d4', 'A hundred chairs', s4, act='The clean room',
-               see='Overhead, a hundred chairs laid out like a chip. Then one chair: a patchwork blanket and a mug of '
-                   'tea, steaming.')
+               see='Overhead, a hundred chairs laid out like a chip. Then one chair: the old lady under her patchwork '
+                   'blanket reaches down for her steaming mug of tea.')
     d05 = 5.0  # round 1: held 2 s (was 1 s) as the breath after the lady's answer
     S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, s4, s4 + d05, 'd4', still=True,
             zoom=[[0.0, 1.04], [2.0, 1.04], [d05, 1.12]], rot=[[0.0, 0.0], [2.0, 0.0], [d05, 2.0]])
@@ -312,6 +312,8 @@ def build(sc):
     S.piece('D06', S.clip('D06'), 0.0, s6, end_d4, 'd4')
     t = c.close(b, end_d4)
     c.flags.append('d4 (Kai at2347, reel round 1): the lady\'s "Is that tea?" is gone; Maddie just tells her.')
+    c.flags.append('d4 (D round 4, Kai at2525, pick D06r6-a): D06 re-made (D06r6-t1, 12 credits): the old lady, lying '
+                   'back in her chair under the patchwork blanket, reaches down and lifts her own mug of tea out of frame.')
     c.flags.append('d4 (D round 3, Kai reel at2525): "I kept your loyalty cards." is cut: Maddie says only "Milk, two '
                    'sugars." (the same take, cut before the second sentence).')
     c.flags.append('d4 (Kai ld4-1): "Milk, two sugars." is Maddie\'s (she is the delivery robot; '
@@ -346,9 +348,16 @@ def build(sc):
     end11 = fr(z11 + 8.0 - 1 / FPS)
     S.piece('D11', S.clip('D11'), i11, cut11, end11, 'd6', zoom=[[i11, 1.0], [i11 + 1.0, 1.0], [8.0, 1.05]],
             grade=LIFT)  # D11r3 sits ~30/255 under the wide it cuts from
+    # D round 4 (Kai at2787, pick D11c6-d): a silent close-up of the lady as the plan sinks in, before the hands
+    # (it cut too quickly to Sandra and Derek). D11c6-t1: she looks to the robot, her eyes fix, a breath, one small nod.
+    i11c, d11c = 1.2, 3.6
+    S.piece('D11c', S.clip('D11c'), i11c, end11, fr(end11 + d11c), 'd6', grade=LIFT)
+    end11c = fr(end11 + d11c)
     m['q_lady'] = q1
     m['maddie_d6'] = (am, em)
-    t = c.close(b, end11)
+    t = c.close(b, end11c)
+    c.flags.append(f'd6 (D round 4, Kai at2787): a silent close-up of the old lady (D11c6-t1, 6 s, 10 credits) holds '
+                   f'{d11c:.1f} s after Maddie\'s answer: her eyes fix on the robot, a breath, one small nod. Then the hands.')
     c.flags.append('d6 (Kai ld6-0/ld6-1): the lady asks "When he arrives back in time, what will he do?" and Maddie '
                    'answers "He\'s going to try and convince you lot to sort your government out." Who keeps the gains is '
                    'no longer said here (Kai, Q2: the film has it right; the beneficiary rule is relaxed).')
@@ -615,8 +624,7 @@ def audio_d(S):
     fx('sfx-crowd', E.SFX / 'fs653920-crowd-small-walla.mp3', st['d3'], 2.5, rms=-48, fi=0.3, fo=1.5,
        what='a murmur that stops at the wafer')
     # ---- Maddie: her clips pulse the beacon themselves (the boss is silent in D); one question beep in the silence
-    C3.loop_wheels(fx, 'sfx-maddie', st['d4'] + 4.0 + 5.8, 1.6, rms=-38, fi=0.3, fo=0.4,
-                   what='her wheels edging in (end of D06)')
+    # (D round 4: D06 re-made with the lady lifting her own mug; no robot edges into it, so no wheels there)
     a, e = m['boss']
     fx('sfx-maddie-beeps', E.MS / 'synth-maddie-beep-question.wav', e + 1.7, rms=-36, what='beep: a question, unanswered')
     fx('sfx-beacon', E.SFX / 'synth-beacon-blip.wav', m['s16'] + 0.4, rms=-40, what='her beacon, still on')

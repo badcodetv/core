@@ -1,7 +1,15 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 3,
+ "round": 4,
  "plan": [
+  {
+   "h": "Round 4 done (23 Oct): your picks animated",
+   "items": [
+    "D06 (at2525, your pick D06r6-a): the old lady in her chair reaches down and lifts her own mug ('Milk, two sugars.' over it).",
+    "D11c (at2787, your pick D11c6-d): 3.6 s silent close-up after Maddie's answer: her eyes fix, a breath, a small nod. Then the hands.",
+    "D is 90.3 s, -16.2 LUFS. 22 credits."
+   ]
+  },
   {
    "h": "Round 3 (23 Oct, Kai's notes on the Ending reel page)",
    "items": [
@@ -119,9 +127,9 @@
   "reel-at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
   "reel-at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
   "reel-at2055": "Done: the listening shot is cut. Maddie's whole line now plays on her (its pauses held a little tighter so it fits her clip), and it cuts straight to the rainbow on the old lady's face as she answers.",
-  "reel-at2525": "Done: 'I kept your loyalty cards' is cut; Maddie just says 'Milk, two sugars.' For the tea: three still options with the old lady in the chair reaching down for her own mug; one clip (~10-12 credits) once you pick.",
+  "reel-at2525": "Done: 'Milk, two sugars.' only, and with your pick (D06r6-a) the old lady, lying back in her chair, reaches down and lifts her own mug. One 8 s clip (12 credits).",
   "reel-at2714": "Done: the shot now ends before the man nearest the camera sits up and someone sits in behind him (it plays 3.5 s, was 5.6). The rest of the clip covers the beat: the lady's question starts over it as before.",
-  "reel-at2787": "Agreed: a silent close-up of her face as it sinks in, between Maddie's answer and the hands. Three still options are on the picks page; one short clip (~10 credits) once you pick.",
+  "reel-at2787": "Done with your pick (D11c6-d): after Maddie's answer, 3.6 s on the old lady's face, silent: her eyes fix on the robot, a breath, one small nod. Then the hands. One 6 s clip (10 credits).",
   "reel-at3282": "Done: the white now fades up over 1.5 s while their hands are still gripping. They never let go on screen."
  },
  "kai_round1": {

@@ -34,7 +34,10 @@
       "note_round2_kai": "Kai round 2 (at291): mud outside the bunker, re-animated (6 s, 10 credits): they step out onto the mud, more follow from ~3 s, beacon pulses, bunting stays low.",
       "file_round5": "c01br5-t1.mp4",
       "plate_round5": "../stills/fix5/c01br5e-a.jpg",
-      "note_round5": "C round 3 (Kai reel at253: Maddie twice too big): the robot removed from c01br3-b, then the canonical bot (s3-bot-00b-a) added back knee-high beside the man's feet; re-animated 6 s. They step onto the mud, more follow, bunting low."
+      "note_round5": "C round 3 (Kai reel at253: Maddie twice too big): the robot removed from c01br3-b, then the canonical bot (s3-bot-00b-a) added back knee-high beside the man's feet; re-animated 6 s. They step onto the mud, more follow, bunting low.",
+      "file_round6": "c01br6-t1.mp4",
+      "plate_round6": "../stills/fix6/c01br6-a.jpg",
+      "note_round6": "C round 6 (Kai at299, pick c01br6-a): no mud, scene B's trampled grass; they stride out, he shades his eyes, the crowd follows; Maddie stays knee-high, beacon pulses. 6 s, 10 credits."
     },
     "C02": {
       "file": "C02-t4.mp4",
@@ -102,7 +105,10 @@
         "fit": "phrase 1: voice 0-2.2 (whisper puts 'Doesn't' at 0.0-1.12, so the take likely has a quiet lead-in; measure the onset) over ~1.6 s = up to x1.375, check after the onset; phrase 2: voice 1.56 s over ~2.1 s of mouth (x0.75: voice shorter than mouth, fine, let it end early or tempo 0.85)",
         "look": "6.0-8.0: he turns his head to her, a flat look, mouth shut. Cut: C05 0-5.3 (his line) -> C04b (her punchline) -> C05 ~5.8-8.0 (the look)"
       },
-      "superseded": "C05-t2.mp4 (round 0: 'We're not coming back, love.' / 'Yes.')"
+      "superseded": "C05-t2.mp4 (round 0: 'We're not coming back, love.' / 'Yes.')",
+      "file_round6": "c05r6-t1.mp4",
+      "plate_round6": "../stills/fix6/C05r6-b.jpg",
+      "note_round6": "C round 6 (Kai at896, pick C05r6-b): Derek level with Sandra. Talking: his mouth 0.21-2.04 (closure 0.92-1.12) / 4.62-6.04; Omni's own audio ~0.45 s ahead of the picture. Turns his head to her from ~6 s. 8 s, 12 credits."
     },
     "C06": {
       "file": "c06r1-t1.mp4",

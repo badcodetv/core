@@ -44,7 +44,7 @@ SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6
            'asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB')
 ENC = C.ENC
 C1_KEEP = False  # Kai reel at73: beat c1 (the door from inside) is cut
-ROUND_KEYS = ('file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
+ROUND_KEYS = ('file_round6', 'file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 
 
@@ -329,17 +329,18 @@ def scene_c(sc):
     cut05 = fr(e + 0.25)
     c.pic(sc.clip('C04'), i04, s4, cut05, 'c4')
     k = 'c4-1-derek'
-    # C05 (c05r1-t1): "Doesn't" 0.17-0.92, lips shut 0.92-1.00 for the b of "bloody" (voice 1.07), "bloody matter now,
-    # love" 1.08-2.00; shut to 3.17; "We're not coming" 3.17-4.25 (the m of "coming" ~3.86), lips shut 4.25-4.33 for
-    # the b of "back" (voice 3.84-3.92), "back, are we?" 4.42-5.05; shut after.
-    D4 = [(0.24, 1.07, 0.20, 1.0, '"Doesn\'t"'), (1.07, 2.34, 1.08, 1.3, '"bloody matter now, love."'),
-          (3.00, 3.84, 3.24, 1.0, '"We\'re not coming"'), (3.84, 4.30, 4.36, 1.0, '"back, are we?"')]
+    # C05, C round 6 (Kai at896: Derek walks ALONGSIDE Sandra): c05r6-t1. His mouth (mouth-map, --face left): open
+    # 0.21-0.92, lips shut 0.92-1.12 (the b of "bloody"), open 1.12-2.04, shut to ~3.2 (a breath 3.25-4.0), "We're not
+    # coming back, are we?" 4.62-6.04 (a closure 4.92-5.12). Omni's own audio runs ~0.45 s ahead of its picture (as on
+    # Karen), so the picture is the timing. Take r1c: phrase 1 0.24-2.34 (the b of "bloody" at 1.07), phrase 2 3.00-4.30.
+    # Phrase 1 whole at x1.15 from 0.25 puts the b of "bloody" at 0.97, on the closure; phrase 2 whole at x1.0 from 4.66.
+    D4 = [(0.24, 2.34, 0.25, 1.15, '"Doesn\'t bloody matter now, love."'), (3.00, 4.30, 4.66, 1.0, '"We\'re not coming back, are we?"')]
     for v0, v1, at, tp, txt in D4:
         e = c.say('vox-derek', sc.voice(k), v0, v1, cut05 + at, f'c4 line 1 derek: {txt} (lip-sync, x{tp})', tempo=tp,
                   ref=speech(k))
     a = cut05 + D4[0][2]
     c.line(b, 1, 'derek', a, e - a, sc.text(k), by(k))
-    o05 = 5.3
+    o05 = 6.1  # C round 6: his second phrase ends ~6.0 on c05r6-t1
     cut04b = fr(cut05 + o05)
     c.pic(sc.clip('C05'), 0.0, cut05, cut04b, 'c4')
     k = 'c4-2-sandra'
@@ -363,13 +364,18 @@ def scene_c(sc):
     out4b = 7.3  # Omni added "You cannot..." from 7.56
     cutlook = fr(t4b + out4b)
     c.pic(sc.clip('C04b'), i4b, cut04b, cutlook, 'c4')
-    look0, look1 = 5.8, 8.0 - 1 / FPS
+    look0, look1 = 6.2, 8.0 - 1 / FPS  # c05r6-t1: he turns his head to her from ~6 s
     end_c4 = fr(cutlook + look1 - look0)
     c.pic(sc.clip('C05'), look0, cutlook, end_c4, 'c4')
     m['c4'] = (s4, end_c4)
     m['c4_lines'] = (s4 + 2.27 - i04, e)
     m['you'] = e
     t = c.close(b, end_c4)
+    c.flags.append('C round 6 (Kai at896, pick C05r6-b): Derek now walks level with Sandra, shoulder to shoulder '
+                   '(c05r6-t1, 12 credits). His line is on his mouth in two phrases (x1.15 and x1.0), read from the '
+                   'picture, not from Omni\'s own audio; the flat look is the clip\'s last 1.8 s as he turns to her.')
+    c.flags.append('C round 6 (Kai at299, pick c01br6-a): the step-out is on scene B\'s trampled grass, no mud, Maddie '
+                   'knee-high (c01br6-t1, 6 s, 10 credits): they stride out, he shades his eyes, the crowd follows.')
     c.flags.append('Round 1 (Kai, lc4-0/lc4-1/bc4, Q1 a): the seat is four shots now: C04 (her line) -> C05 (his) -> '
                    'C04b (her punchline) -> C05 again for his flat look, no reply. All four lines are lip-synced phrase '
                    'by phrase on the mouth (lip-sync-dub), never on Omni\'s own audio.')

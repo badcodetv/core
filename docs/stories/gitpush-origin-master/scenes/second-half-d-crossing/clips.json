@@ -84,7 +84,10 @@
    "out": 8.0,
    "plate": "../stills/D06-r2-b.jpg",
    "talking": false,
-   "note": "Her hand picks the mug up and lifts it out of frame at ~6 s; robot wheels edge into the left of frame at 6-8 s (Maddie arriving, harmless). 'Is that tea?' off-screen over 0-3 s."
+   "note": "Her hand picks the mug up and lifts it out of frame at ~6 s; robot wheels edge into the left of frame at 6-8 s (Maddie arriving, harmless). 'Is that tea?' off-screen over 0-3 s.",
+   "file_round6": "D06r6-t1.mp4",
+   "plate_round6": "../stills/fix6/D06r6-a.jpg",
+   "note_round6": "D round 4 (Kai at2525, pick D06r6-a): the old lady in her chair reaches down and lifts her own mug out of frame (~5.5 s). 8 s, 12 credits."
   },
   "D07": {
    "file": "D07-t1.mp4",
@@ -308,6 +311,14 @@
    "talking": false,
    "alt": "D10x-t1.mp4 (chained from D10n's last frame: a man stays standing throughout; lights brighten at the end)",
    "note": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the d8 opener. Every chair visibly occupied; the chair lights brighten together into a white haze 5-8 s. NOT a chain from D10n (closer framing): a cut."
+  },
+  "D11c": {
+   "file": "D11c6-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/fix6/D11c6-d.jpg",
+   "talking": false,
+   "note": "D round 4 (Kai at2787, pick D11c6-d): silent close-up of the lady, the plan sinking in: eyes fix on the robot, a breath, one small nod (lips part slightly ~2.2-3 s). 6 s, 10 credits."
   }
  },
  "credits_review1": 94,

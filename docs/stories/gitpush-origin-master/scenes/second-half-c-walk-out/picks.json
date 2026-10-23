@@ -63,7 +63,9 @@
         "fix5/c01br5e-a.jpg",
         "fix5/c01br5e-b.jpg"
       ],
-      "why_round5": "Nano Banana would not shrink the robot in place (r5, r5b came back the same size). Two steps worked: remove it (empty-a), then add the canonical bot back sized against an object in frame ('no bigger than the blue holdall', r5e). a: lid at the man's knee-thigh, beside his feet; b smaller still."
+      "why_round5": "Nano Banana would not shrink the robot in place (r5, r5b came back the same size). Two steps worked: remove it (empty-a), then add the canonical bot back sized against an object in frame ('no bigger than the blue holdall', r5e). a: lid at the man's knee-thigh, beside his feet; b smaller still.",
+      "file_round6": "fix6/c01br6-a.jpg",
+      "by_round6": "kai"
     },
     "C02": {
       "file": "C02-r2-a.jpg",
@@ -123,7 +125,9 @@
         "C05-r2-a.jpg",
         "C05-r2-b.jpg"
       ],
-      "why": "The reverse of C04-r2-a: Derek in the same green jumper (no jacket), looking straight ahead, Sandra's waxed coat and Aran jumper soft at the right edge. r1-a/b have the bigger face but a leather/donkey jacket that C04 does not show."
+      "why": "The reverse of C04-r2-a: Derek in the same green jumper (no jacket), looking straight ahead, Sandra's waxed coat and Aran jumper soft at the right edge. r1-a/b have the bigger face but a leather/donkey jacket that C04 does not show.",
+      "file_round6": "fix6/C05r6-b.jpg",
+      "by_round6": "kai"
     },
     "C06": {
       "file": "c06r1-a.jpg",

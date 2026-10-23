@@ -1,7 +1,15 @@
 {
  "about": "Round 1 of scene C is DONE (Kai's notes, 22 Oct): the cut on this page is the rebuild. Kai's round-1 notes, Claude's replies and the answers are kept below. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 5,
+ "round": 6,
  "plan": [
+  {
+   "h": "Round 6 done (23 Oct): your picks animated",
+   "items": [
+    "C02 step-out (at299, your pick c01br6-a): scene B's grass, no mud, Maddie knee-high; they stride out, the crowd follows.",
+    "C05 (at896, your pick C05r6-b): Derek level with Sandra; his line on his mouth (x1.15 then x1.0), his flat look as he turns to her.",
+    "C is 57.4 s, -16.0 LUFS. 22 credits."
+   ]
+  },
   {
    "h": "Round 5 (23 Oct, Kai's notes on the Ending reel page)",
    "items": [
@@ -110,8 +118,8 @@
   "reel-at253": "Fixed. Maddie is now knee-high, standing in the mud just in front of the man's feet. Shrinking her in place didn't work, so she was taken out of the picture and the canonical Maddie (the s3 bot, bunting and all) put back at her true size, then re-animated (6 s, 10 credits).",
   "reel-at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward.",
   "reel-at73": "Done: the door shot is cut, and Maddie's 'Go on. I promise you'll be okay.' / 'You've got my word.' with it. C now opens on the first ones stepping out (scene B ends on 'Come back tomorrow', the door and Maddie rolling away). C is 57.0 s (was 64.6).",
-  "reel-at299": "Agreed. Three still options (no video yet) with the mud replaced by scene B's trampled, dry grass up to the doors; Maddie kept knee-high. They're on the picks page; once you pick, it's one 6 s clip (~10 credits).",
-  "reel-at896": "Checked the take first: Sandra is in the near foreground the whole 8 s, so there's no clean stretch with him beside her. Three still options with her walking level with him, shoulder to shoulder; it needs a new lip-sync clip of his line (~12 credits) once you pick."
+  "reel-at299": "Done with your pick (c01br6-a): they step out onto scene B's trampled grass, no mud, Maddie knee-high. One 6 s clip (10 credits).",
+  "reel-at896": "Done with your pick (C05r6-b): Derek walks level with Sandra the whole way, and his line is lip-synced on his mouth (read from the picture). Then his flat look as he turns to her. One 8 s clip (12 credits)."
  },
  "kai_round1": {
   "bc1": "old lady wouldn't say 'go on then, you lead', wouldn't pat the robot yet; we're not friends; Maddie reassuring, coaxing them out: 'go on, I promise you'll be okay, you've got my word'",

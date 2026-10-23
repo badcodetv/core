@@ -1,5 +1,5 @@
 {
- "spent": 1070,
+ "spent": 1114,
  "jobs": [
   {
    "key": "C-C06",
@@ -825,6 +825,54 @@
    "flow_project": "e71fb13a-a83c-4509-8454-f42e9e34a5f3",
    "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
    "round": "C round 3 (Kai reel notes at253/at440, 23 Oct)"
+  },
+  {
+   "key": "C-c01br6-t1",
+   "scene": "C",
+   "cost": 10,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix6/c01br6-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c01br6-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "10db8728-042a-42ba-af15-6d9cc07942e8",
+   "flow_project": "5c601325-6781-47ac-9e8f-04504bac8212",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "round 4 picks (Kai, 23 Oct)"
+  },
+  {
+   "key": "C-c05r6-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix6/C05r6-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c05r6-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "0b2fa1b8-1696-4e84-8dea-c66cca2cbcdd",
+   "flow_project": "12046f3b-6cc4-40ec-acec-5b7ba0c9f161",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "round 4 picks (Kai, 23 Oct)"
+  },
+  {
+   "key": "D-D06r6-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix6/D06r6-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D06r6-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "c8e730d1-3c5d-4fc2-87c6-a0af9fda5c12",
+   "flow_project": "a6f5939e-d636-4af6-950b-76aa5485056b",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "round 4 picks (Kai, 23 Oct)"
+  },
+  {
+   "key": "D-D11c6-t1",
+   "scene": "D",
+   "cost": 10,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix6/D11c6-d.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D11c6-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "d29fec46-2826-4a3c-bdfd-3edc307fd584",
+   "flow_project": "20b33d98-b68e-4961-ae3e-d5a28860bc44",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "round 4 picks (Kai, 23 Oct)"
   }
  ],
  "keys": [

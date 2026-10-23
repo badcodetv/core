@@ -775,3 +775,20 @@ Notes `at73 at299 at896 at2055 at2525 at2714 at2787 at3282` are kept verbatim in
 - D11c the silent realisation close-up (ref D11r3-b): `D/stills/fix6/D11c6-b/c/d.jpg` (-a = the stray reference tile).
 - **Collision:** the scene B agent drove the same Flow browser at the same time; several of my calls failed with
   `download.saveAs ENOENT` and one harvested two of its bunker-door stills (deleted). Turns were agreed by message.
+
+### Round 4 picks animated (23 Oct)
+
+Kai's picks: C02 `c01br6-a`, C05 `C05r6-b`, D06 `D06r6-a`, D11c `D11c6-d`. One clip each (Omni 1.1 Flash, x1, camera
+locked; prompts in C's and D's `shots.md`): `c01br6-t1` (6 s, 10), `c05r6-t1` (8 s, 12, talking), `D06r6-t1` (8 s, 12),
+`D11c6-t1` (6 s, 10). **44 credits; ledger 1070 → 1114 of 1500.** Contact sheet beside each; no re-rolls. Flow handed to
+sceneB-r1 after the last call.
+
+- **C05 lip-sync:** mouth from the picture (`lips.py --face left`, then `mouth-map.py`): 0.21–2.04 (closure 0.92–1.12),
+  4.62–6.04. Omni's own audio sits ~0.45 s ahead of its picture. Derek's take r1c: phrase 1 at x1.15 from 0.25 (the b of
+  "bloody" on the closure), phrase 2 at x1.0 from 4.66; the cut to C04b at 6.1, his look from 6.2 to the end. Whisper on
+  the mix: exact.
+- **D11c:** a new piece after D11 (clip 1.2–4.8 s), 3.6 s before the hands; the D06 wheels sound is dropped (no robot in
+  the new D06).
+- `cut_end.ROUND_KEYS` now starts with `file_round6`.
+- **Rebuilt:** C 57.42 s −16.0 LUFS; D 90.25 s −16.2 LUFS; the reel 179.83 s (2:59.8; offsets C 0, D 57.0, E 147.25);
+  delivery-qc as before.

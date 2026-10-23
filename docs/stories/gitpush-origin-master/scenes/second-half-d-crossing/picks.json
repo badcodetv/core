@@ -78,7 +78,9 @@
     "D06-r2-a.jpg",
     "D06-r2-b.jpg"
    ],
-   "why": "Her hand at the steaming mug, the green cuff under the white sleeve, a patchwork blanket on the dark chair in its pool of light: cosy against clinical. The blanket returns on her knees in D11."
+   "why": "Her hand at the steaming mug, the green cuff under the white sleeve, a patchwork blanket on the dark chair in its pool of light: cosy against clinical. The blanket returns on her knees in D11.",
+   "file_round6": "fix6/D06r6-a.jpg",
+   "by_round6": "kai"
   },
   "D07": {
    "file": "D07-r1-a.jpg",
@@ -240,6 +242,16 @@
     "fix3/D10xr3-b.jpg"
    ],
    "why": "Round 3 media (23 Oct, Kai rulings of 23 Oct): Kai (bd8/ld7-1): nobody looked seated. D10n's last frame edited so every chair holds someone lying back, nobody standing; a reframes a little closer (the near row's faces and feet show), b keeps a standing figure."
+  },
+  "D11c": {
+   "file": "fix6/D11c6-d.jpg",
+   "options": [
+    "fix6/D11c6-b.jpg",
+    "fix6/D11c6-c.jpg",
+    "fix6/D11c6-d.jpg"
+   ],
+   "by": "kai",
+   "why": "Kai, 23 Oct (picks page)"
   }
  }
 }
