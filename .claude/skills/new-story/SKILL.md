@@ -10,9 +10,9 @@ capture it as canon under `docs/stories/<story>/`, the single source of truth th
 comic, the song(s), and any later media derive from. Drive it collaboratively
 from the CLI; write the files as you go.
 
-> For the **full idea → rendered-comic pipeline** — including generating the
-> character and storyboard images in Google Flow and assembling the comic — use
-> the **`make-comic`** skill, which composes this one for its canon stages.
+> When the story becomes a **film**, the **`overview-board`** skill lays out its
+> running order and **`new-scene`** makes each part. (The comic pipeline,
+> `make-comic`, was archived on 2026-10-23: `.claude/skills-archive/comics/`.)
 
 ## Read first
 

@@ -28,6 +28,15 @@
    "motion": "The camera does not move. The small grey delivery robot rolls steadily away from the shut bunker, down the slope towards the camera along its own wheel tracks, bouncing gently over the tussocks, its amber beacon flashing. The long grass of the downs ripples in the wind and low grey clouds drift over the hill. The bunker's green steel doors stay shut. The camera does not move.",
    "character": null,
    "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v2 no bunting"
+  },
+  {
+   "key": "b17b-v1-r2",
+   "n": 17,
+   "still": "shb-b17b-v1-calm-bunting",
+   "duration": 8,
+   "motion": "The camera does not move. The small grey delivery robot drives steadily and clearly down the slope straight towards the camera, growing larger in the frame second by second until it passes close by the lower edge of the frame, following its own two wheel tracks, which stay pressed into the grass behind it all the way back to the bunker. Its amber beacon flashes. The long grass ripples in the wind. The bunker's green steel doors stay shut. The camera does not move.",
+   "character": null,
+   "why": "re-roll of b17b-v1: she barely moved and her tracks melted away (lead/Kai 23 Oct: she must clearly roll away down the hill, tracks must hold)"
   }
  ]
 }

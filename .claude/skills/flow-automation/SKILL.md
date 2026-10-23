@@ -18,7 +18,7 @@ guidance drifts.
 | **Driving it** | **this skill** | Why did the call fail? What tool? How do I not spend credits twice? |
 | **Designing the shot** | `shot-craft` | What should this shot BE? |
 | **Writing for it** | `flow-prompt` | What words go in the box? |
-| **The BadCode look** | `badcode-art-direction` (panels) · `new-image` (brand) | What should it look like? |
+| **The BadCode look** | `new-image` | What should it look like? |
 
 If you are choosing adjectives, you are in the wrong skill.
 
@@ -412,8 +412,8 @@ list in one session. **Always pass `resume: true`.**
    machinery. (Prompt planning is `flow-prompt`'s job; shot design is `shot-craft`'s. Neither is this skill's.)
 2. **Batch-generate.**
 3. **Review all N together**, never one at a time.
-4. **Iterate only the weak ones** — `flow_refine` for a same-session correction, `edit-panel`
-   once it is a finished panel. Never regenerate the batch.
+4. **Iterate only the weak ones** — `flow_refine` for a same-session correction, `flow_edit_image`
+   from the golden once it is a finished still. Never regenerate the batch.
 
 ### The unattended loop
 

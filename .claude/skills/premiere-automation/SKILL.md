@@ -18,7 +18,7 @@ the effects and the production tricks live.
 | --- | --- | --- |
 | **Driving it** | **this skill** | Why did the call fail? Which tool? Is the bridge even up? |
 | **Choosing the effect** | `video-fx` | Fire, map zoom, film look — what tool, what does it cost? |
-| **The BadCode look** | `badcode-art-direction` · `new-image` | What should it look like? |
+| **The BadCode look** | `new-image` | What should it look like? |
 
 If you are choosing between a Gaussian Blur and a Lumetri curve, you are in the wrong skill.
 

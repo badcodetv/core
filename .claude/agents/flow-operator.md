@@ -56,7 +56,7 @@ with no candidates while the session is healthy (`flow_status` fine, project loa
 other prompts in the same batch succeeded), **stop retrying** and return
 `{ok: false, suspectedPolicyBlock: true}` with the exact error. Retrying costs ~90 s a
 go and can never succeed. You do not rewrite prompts — that is the caller's job (rules:
-`.claude/skills/badcode-art-direction/SKILL.md` → "Usage-policy blocks"). Common
+`.claude/skills/flow-automation/SKILL.md` §2). Common
 give-aways in a prompt handed to you: real brand names, "legible" logos or wordmarks,
 "same face / same bone structure", or heavy destitution vocabulary.
 

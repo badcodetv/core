@@ -21,7 +21,7 @@ Three modes, one knowledge base:
 | --- | --- |
 | How do I phrase this so the generator obeys? | `flow-prompt` |
 | Which tool — Flow, ffmpeg, Premiere, archive footage? | `video-fx` |
-| What does a BadCode *panel* look like? | `badcode-art-direction` |
+| What does a BadCode *still* look like? | `new-image` |
 | What does a BadCode *brand image* look like? | `new-image` |
 | What is this story's cast, style and canon? | `docs/stories/<story>/prompts.md` |
 | Does the **story** grip? Is the beat earning its place? | `story-craft` |

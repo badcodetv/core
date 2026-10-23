@@ -4,7 +4,7 @@
 drive them well. Volatile, versioned knowledge with a shelf life measured in months.
 
 **What this folder is not:** the BadCode visual identity. That lives in
-`.claude/skills/badcode-art-direction/SKILL.md` and it is deliberately model-agnostic — the 35mm
+`.claude/skills/new-image/SKILL.md` (moved there from `badcode-art-direction`, 2026-10-23) and it is deliberately model-agnostic — the 35mm
 house style, the calibration list against the generic AI-comic look, the Flow Character casting
 rules, and the usage-policy rewrite table do not change when Google ships a new engine.
 
@@ -12,14 +12,14 @@ The split, and why it matters:
 
 | Question | Lives in |
 | --- | --- |
-| What does a BadCode panel look like? | `badcode-art-direction` (stable) |
+| What does a BadCode still look like? | `new-image` (stable) |
 | How do I make *this engine* do that? | here (refreshed per model version) |
 | How do I drive the browser? | `docs/superpowers/flow-selectors.md`, `flow-video.md` |
 
 ~~Nothing in here has been wired into a skill yet.~~ **As of 2026-08-14, one thing is.** The
 engine-*agnostic* half of the motion research — never render a falling object in flight, name the
 shutter, state constraints positively — now lives in
-[`animate-slide`](../../.claude/skills/animate-slide/SKILL.md#what-the-model-cannot-do-whichever-model-it-is),
+[`scene-animation`](../../.claude/skills/scene-animation/SKILL.md#what-the-model-cannot-do-whichever-model-it-is) (moved from the archived `animate-slide`, 2026-10-23),
 because it survives an engine change and a skill is where a rule gets *applied*. Everything
 engine-specific stayed here. That split is the same one the table above describes, and it is the
 test to apply next time: **would this still be true on a different model?** If yes, it belongs in

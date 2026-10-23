@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-b17b-v2-shb-b17b-v2-no-bunting.mp4",
+ "made": "2026-10-23T16:44:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The small grey delivery robot rolls steadily away from the shut bunker, down the slope towards the camera along its own wheel tracks, bouncing gently over the tussocks, its amber beacon flashing. The long grass of the downs ripples in the wind and low grey clouds drift over the hill. The bunker's green steel doors stay shut. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/shb-b17b-v2-no-bunting.jpg",
+ "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v2 no bunting",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/shb-b17b-v2-no-bunting.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "b17b-v2",
+  "frame": 17,
+  "option": null
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "count": 1
+ }
+}

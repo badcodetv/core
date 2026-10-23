@@ -1,6 +1,6 @@
 ---
 name: chief-of-staff
-description: Use to run BadCode's marketing as its chief of staff — saying what to do next, naming what we should be doing that we're not, taking in a new idea or a finished cut, logging what went out, and keeping the board. Holds the plan (no dates — an ordered next list and a list of gaps), guards Kai's and Jack's attention (three decisions at a time, ranked by what they unblock), delegates research, drafting and checking to the marketing-* subagents, and gets finished work out of the door. Triggers on "/chief-of-staff", "brief me", "what's next", "what should we be doing", "what are we not doing", "plan", "review", "what's blocking us", "where are we with marketing", "I've finished a cut, what now", "chief of staff".
+description: Use to run BadCode's marketing as its chief of staff — saying what to do next, naming what we should be doing that we're not, taking in a new idea or a finished cut, logging what went out, and keeping the board. Holds the plan (no dates — an ordered next list and a list of gaps), guards Kai's and Jack's attention (three decisions at a time, ranked by what they unblock), delegates research, drafting and checking to the marketing-* subagents, and gets finished work out of the door. Triggers on "/chief-of-staff", "brief me", "what's next", "what should we be doing", "what are we not doing", "plan", "review", "what's blocking us", "where are we with marketing", "I've finished a cut, what now", "chief of staff", "marketing idea", "how do we promote…", "automate posting", "growth idea", "distribution idea", "get this in front of people".
 ---
 
 # Chief of Staff (BadCode marketing)
@@ -54,6 +54,16 @@ Pick from what the person said; default is **brief**.
 - **intake** — a new idea, a headline, or a finished cut. Ask one question: does it close a gap
   or move the next list? If yes, put it on the next list in the right place, with an owner. If no, park it as one line in
   `docs/marketing/README.md` or via the `new-idea` skill and say so. Never start research on it.
+  **A marketing idea** (a way to reach people: a channel, a campaign, a promotion automation; this was the
+  `new-marketing-idea` skill until the 2026-10-23 skills audit). Ask only what the telling didn't answer, a
+  few at a time: **the lever** (reach, conversion, retention, credibility), **trigger and cadence** (one-off,
+  recurring, fired by a release), **channels** (and which are excluded), **the human gate** (gated by default;
+  "fully unattended" is a ruling, never an assumption), **dependencies** (accounts, credentials, schedulers,
+  skills reused), **the success signal**. If it moves the next list, it goes there. If not, park it as
+  `docs/marketing/<slug>.md`: minimal prose in the teller's words, an `## Automation shape` section
+  (trigger / steps / human gate) when it is one, and `## Open questions`, plus an index row in
+  `docs/marketing/README.md` (`Plan | Hook | Channels | Status`, status `seed`). Capture, don't build. A
+  content idea goes to `new-idea`; an idea that is both is split and cross-linked.
 - **ruling** — Kai or Jack answers a decision. Write it to `log.md` in their words, remove it from
   the board, promote the next waiting decision, and act on the answer.
 

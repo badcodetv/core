@@ -18,7 +18,7 @@ and `new-story` scaffolds its canon folder.
 
 ## Toolkit & production (skill-owned — don't file content here)
 
-- [`shorts/`](./shorts/README.md) — short-form music-video packages (`music-video-short` skill)
+- [`shorts/`](./shorts/README.md) — short-form music-video packages (made by the archived `music-video-short` skill; shorts now come from `new-scene` clips)
 - [`brand/`](./brand/README.md) — **the BadCode logo** — the ring with an off-centre red triangle, `badcode` whose o is the ring-with-triangle, ruled 2026-10-15 (provisional): its settings, rules, and every file in [`brand/logo/`](./brand/logo/) (icon, name, lock-ups, favicon, avatar). The 2026-09-29 ring-with-dot and the 2026-09-13 curly brace are in `brand/archive/`
 - [`images/`](./images/README.md) — standalone brand imagery catalogue (`new-image` skill)
 - [`suno-gpt/`](./suno-gpt/README.md) — Suno toolkit (`suno-prompt` skill): prompt language, the control sliders, the recurring-narrator stack, and what Suno reliably gets wrong

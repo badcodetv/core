@@ -84,8 +84,8 @@ Use while drafting. The order matters — each step makes the next cheaper.
 8. **Hand over with the rows.** List which checklist rows you ran and which you didn't. A draft
    handed over without that list is not finished.
 
-When composing for another skill — `new-story` (beats), `make-comic` (storyboard, captions),
-`music-video-short` (scene breakdown, edit plan), `suno-prompt` (lyrics) — say which step you are
+When composing for another skill — `new-story` (beats), `overview-board` (the film's running order),
+`scene-beats` (a scene's beats), `scene-timeline` (the script), `suno-prompt` (lyrics) — say which step you are
 applying and keep the canon folder as the source of truth. This skill never writes canon on its
 own; it sharpens what those skills produce.
 

@@ -1,7 +1,7 @@
 # Video prompting — Veo 3 / 3.1
 
 Text→video, image→video, frames, audio and dialogue. Motion craft for
-`animate-slide` and `music-video-short`.
+`scene-animation` (and, before the 2026-10-23 archive, `animate-slide` and `music-video-short`).
 
 ## 0. 🔴 The order of operations — settle the look on a STILL first
 

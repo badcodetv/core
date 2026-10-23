@@ -13,7 +13,7 @@ how Veo and Nano Banana actually behave. It does **not** own the BadCode look.
 | Question | Answer lives in |
 | --- | --- |
 | ***What should this shot BE?*** — framing, depth, light design, angle, what it's for | **`shot-craft`** — the cinematography judgement layer. **Consult it BEFORE writing any prompt for a shot that hasn't been designed yet** |
-| *What should a BadCode panel look like?* | `badcode-art-direction` — 35mm documentary register |
+| *What should a BadCode still look like?* | `new-image` — the machine and people registers |
 | *What should a BadCode brand image look like?* | `new-image` — near-black monolith register |
 | *What is this specific story's style and cast?* | `docs/stories/<story>/prompts.md` |
 | *How do I make Flow do what I asked?* | **here** |
@@ -92,14 +92,14 @@ If you read nothing else:
 
 ## Writing a prompt
 
-**A storyboard beat arrives as four different briefs, not one.** `badcode-art-direction` ->
+**A storyboard beat arrives as four different briefs, not one.** `new-image` ->
 "Variety mode" decides the spread; this skill phrases each candidate. Write four genuinely
 different briefs — a different camera, palette, time of day or register in each — never one brief
 re-seeded. One of the four is the house register, and at least one breaks it on purpose.
 
 
-1. **Get the register from the owning skill first** (`badcode-art-direction` for panels,
-   `new-image` for brand imagery, the story's `prompts.md` for story style). Don't invent
+1. **Get the register from the owning skill first** (`new-image`, which holds both
+   registers, the story's `prompts.md` for story style). Don't invent
    a look here.
 2. **Draft in the platform's shape** — the formula from `image-prompting.md` §2 or
    `video-prompting.md` §1, with the four levers (lighting / camera+lens / stock+grade /
@@ -164,6 +164,5 @@ When a character, object or place has to survive across many generations, read
 ## Scope
 
 Platform craft for Google Flow: Nano Banana stills, Veo motion, references, consistency,
-policy, controls. **Not** the BadCode visual identity (`badcode-art-direction`,
-`new-image`), **not** browser automation or selectors (`docs/flow/automation-images.md`,
+policy, controls. **Not** the BadCode visual identity (`new-image`), **not** browser automation or selectors (`docs/flow/automation-images.md`,
 the `flow-operator` agent), **not** Suno or music (`suno-prompt`).

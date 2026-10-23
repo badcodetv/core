@@ -5,7 +5,7 @@ sequencing, audience thinking. This section is about *reaching people* — makin
 thing stays in [`ideas/`](../ideas/README.md) and [`stories/`](../stories/).
 
 One plan per file, kebab-case slug, `# H1` title, minimal prose — same spirit as the
-idea inbox. Captured via the **`new-marketing-idea`** skill, which also carries the
+idea inbox. Captured through the **`chief-of-staff`** skill's intake, which carries the
 interview questions and the automation capture shape. Add a row here when you add a file.
 
 | Plan | Hook | Channels | Status |

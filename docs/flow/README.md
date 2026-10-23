@@ -22,7 +22,7 @@ allowed to be — is a **third** job and lives in the skills, deliberately NOT h
 | Layer | Lives in |
 | --- | --- |
 | How Flow behaves + how we drive it (this folder) | `docs/flow/` |
-| The comic register | `.claude/skills/badcode-art-direction/SKILL.md` |
+| The BadCode look (both registers) | `.claude/skills/new-image/SKILL.md` |
 | The brand-image register | `.claude/skills/new-image/SKILL.md` |
 | Per-story style + prompts | `docs/stories/<story>/prompts.md` |
 
