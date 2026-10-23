@@ -1,5 +1,5 @@
 {
- "spent": 576,
+ "spent": 588,
  "jobs": [
   {
    "key": "V6-1",
@@ -190,6 +190,13 @@
    "key": "V14-S12d-roam",
    "cost": 12,
    "at": "2026-10-22T15:24:09.063Z"
+  },
+  {
+   "key": "V13r3-S11-c-r3-a",
+   "cost": 12,
+   "at": "2026-10-23T10:45:00Z",
+   "note": "scene A V13 re-made without Maddie (Kai); flow MCP, Omni 1.1 Flash, project 00a8cc55, house price",
+   "mediaId": "ac776639-ebc6-4f94-a812-2d4309826af6"
   }
  ],
  "keys": [

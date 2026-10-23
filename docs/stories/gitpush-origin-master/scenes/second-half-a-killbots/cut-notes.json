@@ -1,7 +1,26 @@
 {
  "about": "Kai's notes on the scene A (kill bots) timeline page https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 2,
+ "round": 3,
  "plan": [
+  {
+   "h": "Round 3 done (23 Oct): your round-2 notes, rebuilt. 2:54 (was 2:55)",
+   "items": [
+    "MUSIC (at51): your Premiere music track is yours: the Premiere version leaves the M0 radio out and touches nothing you already have. The preview keeps the radio.",
+    "BEAT 1 (at1506): V13 re-made without Maddie (cut3-V13r3): the tank stays far off under the tower the whole 8 s; it plays the same 3.5 s slot.",
+    "9a (at2595): V1 now starts at 1.375 s, after the jump where the tank swaps direction; 4 s long, so everything after 9a is 1 s sooner.",
+    "BEAT 11 (at3398): boss line 2 re-recorded ('Oh. And they've activated their firewalls.'): one clean take, no dropouts in its level trace, 4.4 s (was 6.4 s; the pause after 'Oh' is shorter), so the call is 2 s shorter.",
+    "BEAT 12 (at4098): the boss's last line is replaced by MADDIE: 'Good job, boss.' (pause) 'That was close.', voiced for relief, shaky and fond (take a of 4, pause tightened; take c is the clean alternative).",
+    "Checked: mix -16.1 LUFS, true peak -1.8 dBFS; whisper hears boss line 2 and Maddie's new line word for word in the mix; frames looked at (V13r3 has no Maddie, 9a has no direction jump). The preview fails the QC levels check as rounds 1 and 2 did (x264 dips blacks in the HUD panels; review file only). Nobody has listened."
+   ]
+  },
+  {
+   "h": "Round 3: still open",
+   "items": [
+    "Q1. Maddie's line: take a (soft 'Whew.' from the sigh tag, slow 'Good job, boss') is in. Take c is the clean one without the sigh. Keep a?",
+    "Q2. Her beat 12 line plays over V3 (her hatch and antenna on the high street), as the boss's line did. Fine, or would you rather it played over the bots leaving the door?",
+    "Q3. Round 2's open items still stand: patrol music (one cue or both), the two whisper doubts on your voice picks, V10r's gun barrel, beat 0's drift, Derek's lip-sync."
+   ]
+  },
   {
    "h": "Round 2 done (23 Oct): every round-1 note and every pick, rebuilt. 2:55 (was 2:35)",
    "items": [
@@ -63,7 +82,13 @@
    ]
   }
  ],
- "replies": {},
+ "replies": {
+  "at51": "Got it. In the Premiere sequence the M0 radio track is left out completely, and nothing on your existing music track is touched or deleted: you keep your own cut with the high-pass 'tinny radio' switch and set the fades yourself. The preview here keeps the radio as it was, so the page still plays with music.",
+  "at1506": "Done: V13 re-made without Maddie (cut3-V13r3). The tank stays far off under the church tower for the whole clip; it plays the same 3.5 s slot.",
+  "at2595": "Found it: V1 swaps which way the tank faces in one frame at 1.33 s (a model jump). It now starts at 1.375 s, just after the jump, and plays 4 s (was 5): the pass, her jolt and the dust are all still in; 9b comes 1 s sooner. The chase music re-aims itself so its break-off still lands on STAND DOWN. Same in-point in the Premiere plan.",
+  "at3398": "Done: re-recorded ('Oh. And they've activated their firewalls.'). The new take is clean all the way through (no dropouts in its level trace) and whisper hears it word for word in the mix. It is 2 s shorter (the pause after 'Oh' is tighter), so the call is 2 s shorter.",
+  "at4098": "Done: the boss's zero-day line is gone; Maddie says 'Good job, boss.' (pause) 'That was close.' Four takes in her voice (Aoede, Bristol) with her usual cheeky, chatty direction switched off for this line and replaced by shaky, fond relief, close to tears. All four are heard word-perfect. My pick is take a: the sigh tag comes out as a soft 'Whew.', then the slowest, most stretched 'Good job, boss'; its long pause (4.25 s of breathing) is cut to about 1.85 s with one breath kept. Take c is the clean one with no sigh, if the 'Whew' is too much."
+ },
  "kai_round1": {
   "at3521": {
    "note": "This shot needs a bit of work. I think they need to be arranged outside the door like they were. We could almost just play that clip backwards, but then the dust wouldn't work. But I mean, at the moment, there's AI artifacts on this shot specifically. We need to redo this.",
@@ -203,5 +228,33 @@
   "l12-0": "Options in the panel at the top (Q2). My pick: 'There. Good job I left myself a back door in their chips.' Everyone gets 'back door' and 'chips'; 'CMOS' and 'zero-day' are jargon. If you want the darker NSA joke: 'Zero-day in their firmware. I put it there myself. Just in case.'",
   "at3521": "Agreed: re-made. The bots lined up outside the door as in the shots before, then turning and leaving. I'll make it from the stand-down still again with a tighter prompt, not reversed (the dust would run backwards).",
   "at3684": "Noted: the back-door line lands here, on the last shot."
- }
+ },
+ "kai_round3": {
+  "at51": {
+   "beat": "0",
+   "note": "So, with the actual music itself, I've got a cut already in Premiere, I've got the timeline to exactly where that cut is. The idea, so the point of that is, I've shifted, I've put a high pass filter on it, so it sounds like a tinny radio, and at exactly the right moment it kicks from tune into tinny radio music. So, what would be amazing is that we keep the timing of the transition and the tune, the music track itself, just keep as it is, and then I can adjust when it fades out. I can also adjust when it fades back in. I'll handle that track, if that makes sense. So, yeah, when we transfer this into Premiere, please can you keep the music track out of it and don't delete the music track that we currently have. Thank you.",
+   "tc": "00:00:02:03"
+  },
+  "at1506": {
+   "beat": "1",
+   "note": "I think this shot would work really well just without Maddy in it. If we could just replace this one shot, but just remove Maddy. I think she's twice as big as she should be compared to the Killbot. But yeah, I think we should just do this one, just without her there.",
+   "tc": "00:01:02:18"
+  },
+  "at2595": {
+   "beat": "9a",
+   "note": "So, this shot is weird because it jostles from the tank facing one way to the other. But, I think as we've established, we could possibly just solve that with a shorter cut of this clip. Just planting this as a note when you translate this onto the Premiere timeline. From this exact moment, it's fine.",
+   "tc": "00:01:48:03"
+  },
+  "at3398": {
+   "beat": "11",
+   "note": "So, oh, and they've activated their firewalls. There seemed to be a problem recording this because it's sort of cutting in and out. So could we try to re-record this, please?",
+   "tc": "00:02:21:14"
+  },
+  "at4098": {
+   "beat": "12",
+   "note": "I think we should switch this to Maddy saying good job boss we knew that was that was close Yeah, there you go good job boss pause that was close and We should try to squeeze as much emotion into that as possible",
+   "tc": "00:02:50:18"
+  }
+ },
+ "replies_round2": {}
 }

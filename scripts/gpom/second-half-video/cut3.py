@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """GPOM second half, cut 3: two rough cuts in the new-scene timeline format (scripts/scene/timeline.py).
 
-    python3 scripts/gpom/second-half-video/cut3.py A          # scene A, the kill bots (beats 0-12; round 2 rebuild)
+    python3 scripts/gpom/second-half-video/cut3.py A          # scene A, the kill bots (beats 0-12; round 3)
     python3 scripts/gpom/second-half-video/cut3.py B          # scene B, Maddie at the door (14a-17)
     python3 scripts/gpom/second-half-video/cut3.py A B --no-preview
 
@@ -236,7 +236,7 @@ def regrade_v6(src, out, ref_secs=4.0, strength=0.85, smooth=2.0):
     return out, note
 
 
-# ---------------------------------------------------------------- scene A (round 2 rebuild, 23 Oct 2026)
+# ---------------------------------------------------------------- scene A (round 3, 23 Oct 2026)
 # Every change is from scenes/second-half-a-killbots/cut-notes.json: kai_round1 + answers_round1 + words_round1,
 # picks_round2, picks_round3, and Kai's voice picks on the round 2 picks page (3DDbvoAxmABJAboca6A3co, db `picks`).
 
@@ -246,11 +246,22 @@ SPEAKER = 'highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6d
           'acrusher=bits=12:mix=0.15,volume=-3dB'  # voice.py FX['speaker']: the boss through Maddie's speaker
 MUFFLED = 'lowpass=f=600,lowpass=f=600,lowpass=f=600,volume=-12dB'  # voice.py FX['muffled']
 BOSS = {1: 'gpom-sh-a-boss-1-a-v6-w10-7f8d1ef8.wav', 2: 'gpom-sh-a-boss-2-b-v6-w25-d7aaef3e.wav',
-        3: 'gpom-sh-a-boss-3-b-v6-w10-bfb1220b.wav', 4: 'gpom-sh-a-boss-4-b-v6-w25-543dafef.wav'}
+        3: 'gpom-sh-a-boss-3-b-v6-w10-bfb1220b.wav'}
+# Round 3 (Kai at3398): line 2 cut in and out, so it is being re-recorded; the re-record replaces it once it exists.
+BOSS2_RE = sorted(SUNO_A.glob('gpom-sh-a-boss-2*rerec*.wav'))
+if BOSS2_RE:
+    BOSS[2] = BOSS2_RE[-1].name
 BOSS_TEXT = {1: 'Maddie, are you making fun of my simulations again?',
              2: "Oh. [pause] And they've activated their firewalls.",
-             3: 'No, thank you, Maddie. I will handle it.',
-             4: 'It was useful to keep that zero-day up my sleeve.'}
+             3: 'No, thank you, Maddie. I will handle it.'}
+# Round 3 (Kai at4098): the boss's line 4 is gone; Maddie says this instead (voice3.py --round A3, voices.json).
+A3 = json.loads((S.SCENES / 'second-half-a-killbots' / 'voices.json').read_text())
+MADDIE12 = A3['lines']['12-0-maddie']
+# Round 3 (Kai at1506): V13 without Maddie (she read twice the kill bot's size); the old V13 until it exists.
+V13 = V / 'cut3-V13r3.mp4' if (V / 'cut3-V13r3.mp4').exists() else V / 'cut3-V13.mp4'
+# Round 3 (Kai at2595): V1 swaps the tank's facing at 1.33 s (a model jump, frames 32 -> 33); start after it.
+V1_IN = 1.375
+D9A = 4.0  # 1.375-5.375 s of V1: the pass (closest ~2.8 s), the exit at ~3.7 s, then 1.6 s of hanging dust
 P1 = SUNO_A / 'gpom-sh-a-p1-a-v6-w60-57b65bfc.wav'
 P2 = SUNO_A / 'gpom-sh-a-p2-a-v6-w30-49a6688a.wav'
 C3 = SUNO_A / 'gpom-sh-a-c3-a-v6-w60-a1614dbb.wav'
@@ -276,8 +287,9 @@ BEAT0 = [
 
 
 def scene_a():
-    c = Cut('A', 'gpom-second-half-A-rough4', 'Cut 3 A Timeline', 'GPOM second half · cut 3 · scene A: the kill bots',
-            'Scene A, round 2 rebuild: every round-1 note and every pick so far, beats 0-12, Maddie on the high street '
+    c = Cut('A', 'gpom-second-half-A-rough5', 'Cut 3 A Timeline', 'GPOM second half · cut 3 · scene A: the kill bots',
+            'Scene A, round 3: your round-2 notes (V13 without Maddie, the 9a jostle cut out, boss line 2 re-recorded, '
+            'Maddie\'s "Good job, boss. That was close." in place of his last line) on top of every note and pick so far, beats 0-12, Maddie on the high street '
             'to the stand-down at the bunker door. Play it, click any beat, clip, line or sound, and leave a note in its '
             "yellow slip. Notes save as you type. Tell Claude when you're done.")
     m = c.m
@@ -320,9 +332,11 @@ def scene_a():
                see='The roundabout; then a kill bot under the church tower at the far end of Maddie\'s street; then two '
                    'come out from under the rail arch.')
     c.pic(V / 'sh-01-P1-roundabout.mp4', 0, t, t + 4.0, '1')
-    c.pic(V / 'cut3-V13.mp4', 0, t + 4.0, t + 7.5, '1')
+    c.pic(V13, 0, t + 4.0, t + 7.5, '1')
     c.pic(V / 'cut3-V14.mp4', 1.0, t + 7.5, t + 13.5, '1')
-    c.flags.append('Beat 1: V13 plays only its first 3.5 s (the tank still far off under the tower), then V14 from 1.0 s '
+    c.flags.append(f'Beat 1: {V13.name} ' + ('(round 3: re-made without Maddie, Kai at1506) ' if 'r3' in V13.name else
+                   '(STILL THE OLD ONE: the re-make without Maddie, cut3-V13r3.mp4, is not there yet) ') +
+                   'plays only its first 3.5 s (the tank still far off under the tower), then V14 from 1.0 s '
                    'to 7.0 s, ending as the front bot turns its turret on us.')
     m['v14'] = t + 7.5
     t = c.close(b, t + 13.5)
@@ -417,16 +431,16 @@ def scene_a():
     # ---- 9a / 9b: the kill bot tears past Maddie; then we are inside its dust, and it settles
     b = c.beat('9a', 'One kill bot tears past Maddie', t, act='Kill mode',
                see='High over the street: the tank passes close and exits bottom-left, Maddie jolts, a plume of dust hangs.')
-    c.pic(V / 'cut3-V1.mp4', 0, t, t + 5.0, '9a')
+    c.pic(V / 'cut3-V1.mp4', V1_IN, t, t + D9A, '9a')
     m['s9a'] = t
-    t = c.close(b, t + 5.0)
+    t = c.close(b, t + D9A)
     b = c.beat('9b', 'Maddie in the dust', t, act='Kill mode',
                see='Inside the dust it left: almost nothing visible, then it settles fast and Maddie is there, still.')
     c.pic(V / 'cut3-V2r2-b.mp4', 0, t, t + 4.5, '9b')
     m['s9b'] = t
     t = c.close(b, t + 4.5)
-    c.flags.append('Beat 9a is still V1 (the tank passes close beside her; the S11 wide-street re-make failed: it hit '
-                   'her). 9b is V2r2-b, Kai\'s pick: she stays still, the dust opens nearly opaque and clears by ~1.5 s.')
+    c.flags.append(f'Beat 9a (round 3, Kai at2595): V1 from {V1_IN} s, after the jump where the tank swaps which way it '
+                   f'faces (1.33 s), for {D9A} s (was 0-5 s), so 9b comes 1 s sooner; the pass and her jolt are untouched. 9b is V2r2-b, Kai\'s pick: she stays still, the dust opens nearly opaque and clears by ~1.5 s.')
 
     # ---- 10a: the far race
     b = c.beat('10a', 'The far race', t, act='Kill mode', see='From the footbridge: the pack races away down the motorway.')
@@ -470,6 +484,8 @@ def scene_a():
     c.flags.append('Beat 11: the boss is the Suno newsreader, one take a line (Kai\'s picks), through the same small-'
                    'speaker filter as before. His takes keep Suno\'s own pauses ("Oh. [1.7 s] And they\'ve...", '
                    '"No. [1 s] Thank you, Maddie. [1 s] I will handle it.").')
+    c.flags.append('Beat 11, boss line 2 (Kai at3398: it cut in and out): ' + (f'the re-record {BOSS[2]}.' if BOSS2_RE else
+                   'RE-RECORD PENDING: still the old take (the Suno re-record is blocked for now).'))
     m['s11'], m['calls'], m['end11'] = s11, starts, end11
     m['v8cuts'] = [(cuts[1], cuts[2]), (cuts[3], cuts[4])]
     t = c.close(b, end11)
@@ -489,7 +505,8 @@ def scene_a():
     s12 = t
     b = c.beat('12', 'The stand-down', s12, act='The gate',
                see='On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green STAND DOWN. '
-                   'Lined up at the door, they file away one at a time. Then the boss, through Maddie.')
+                   'Lined up at the door, they file away one at a time. Then Maddie, shaky with relief: "Good job, boss." '
+                   '"That was close."')
     v4 = V / 'cut3-V4.mp4'
     peace = 3.6
     c.huds.append(dict(name='hud-12', src=str(v4), d=7.0, args=['--state', 'kill', '--lock', '0',
@@ -498,15 +515,18 @@ def scene_a():
     c.pic(c.vdir / 'hud-12.mp4', 0.0, s12, s12 + 7.0, '12', source=v4, hud='hud-12')
     c.pic(V / 'cut3-V10r.mp4', 0, s12 + 7.0, s12 + 12.5, '12')
     s_v3 = fr(s12 + 12.5)
-    tk = Take(SUNO_A / BOSS[4])
-    e = c.say('vox-ai', tk, s_v3 + LEAD, '12', 'beat 12 boss line 4', chain=[SPEAKER], lufs=-17)
-    c.line(b, 0, 'ai', s_v3 + LEAD, e - s_v3 - LEAD, BOSS_TEXT[4], 'kai')
+    tk = Take(pathlib.Path(A3['media']) / MADDIE12['file'])
+    e = c.say('vox-maddie', tk, s_v3 + LEAD, '12', 'beat 12 Maddie: Good job, boss. That was close.')
+    c.line(b, 0, 'bot', s_v3 + LEAD, e - s_v3 - LEAD, 'Good job, boss. [pause] That was close.', 'kai')
     end12 = fr(e + TAIL + 0.4)
     c.pic(v3, 3.0, s_v3, end12, '12')
     c.flags.append('Beat 12: the HUD now reads STAND DOWN (status RETURN TO PATROL), drawn by hud.py in ffmpeg. V10r '
                    '(Kai\'s pick A) plays 0-5.5 s: they file away one at a time; cut before the nearest bot grows its '
                    'long gun barrel (~5-7 s). They still never visibly turn (the still already has them facing away).')
-    m['s12'], m['peace'], m['s_v3'], m['ai12'] = s12, fr(s12 + peace), s_v3, (s_v3 + LEAD, e)
+    c.flags.append('Beat 12 (round 3, Kai at4098): the boss\'s last line is gone; Maddie says "Good job, boss." (pause) '
+                   '"That was close." Take a of four (voices.json): her cheeky Style/Pace replaced for this line, a soft '
+                   '"Whew." from the [sighs] tag, its 4.25 s pause cut to ~1.85 s. Take c is the clean one without the sigh.')
+    m['s12'], m['peace'], m['s_v3'], m['l12'] = s12, fr(s12 + peace), s_v3, (s_v3 + LEAD, e)
     t = c.close(b, end12)
     c.total = t
     return c
@@ -611,10 +631,12 @@ def audio_a(c):
     fx('sfx-hud', SFX / 'synth-killbot-red-flip.wav', m['flip8'] - 0.05, peak=-6, what='red flip tone')
     fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', m['flip8'], en['8'] - m['flip8'] + 0.4,
        src_in=20, rms=-24, fi=0.1, fo=0.4, what='engines, the chase')
-    # 9a: the pass (V1 closest at ~2.8 s; the whoosh file peaks at 1.2 s, panned L->R: flipped, it exits left).
-    s = st['9a']
-    loop_wheels(fx, 'sfx-maddie', s, 3.0, rms=-34, fi=0.2, fo=0.2, what='her wheels, trundling')
-    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s, 3.4, rms=-26, fi=0.3, fo=0.6, what='tank tracks')
+    # 9a: the pass (V1 closest at ~2.8 s of the clip; the whoosh file peaks at 1.2 s, panned L->R: flipped, it exits
+    # left). Placed in clip time, so they follow V1_IN.
+    s = st['9a'] - V1_IN
+    loop_wheels(fx, 'sfx-maddie', st['9a'], 3.0 - V1_IN, rms=-34, fi=0.1, fo=0.2, what='her wheels, trundling')
+    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', st['9a'], 3.4 - V1_IN, rms=-26, fi=0.1, fo=0.6,
+       what='tank tracks')
     fx('sfx-maddie', MS / 'derived-maddie-killbot-dust-whoosh.wav', s + 1.6, peak=-3, af='pan=stereo|c0=c1|c1=c0',
        what='kill bot dust whoosh, past her')
     fx('sfx-maddie', MS / 'derived-maddie-servo-turn-b.wav', s + 3.0, rms=-30, what='servo: she jolts')
@@ -663,9 +685,6 @@ def audio_a(c):
     fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s + 7.0, 5.5, rms=-30, fi=0.3, fo=2.5,
        what='the pack files away')
     fx('sfx-wind', wind, s + 7.0, total - s - 7.0, src_in=20, rms=-36, fi=1.0, fo=0.5, what='wind on the downs')
-    a, e = m['ai12']
-    for k in np.arange(a, e, 0.9):
-        fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-34, what='beacon on his words')
     return mx
 
 

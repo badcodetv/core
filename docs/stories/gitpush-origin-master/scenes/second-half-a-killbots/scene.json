@@ -5,7 +5,7 @@
   "title": "GPOM Second Half A: The Kill Bots",
   "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half A: the kill bots",
   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half",
-  "about": "Cut 3 of the GPOM second half, split in two (Kai, round 2 Q5). Built by scripts/gpom/second-half-video/cut3.py A (round 2 rebuild, 23 Oct 2026: Kai's round-1 notes + picks); notes and plan in cut-notes.json, shots in ../second-half-cut3-shots.md, music in ../songs/second-half-scene-a-music.md.",
+  "about": "Cut 3 of the GPOM second half, split in two (Kai, round 2 Q5). Built by scripts/gpom/second-half-video/cut3.py A (round 3, 23 Oct 2026: Kai's round-2 notes on top of round 1's notes + picks); notes and plan in cut-notes.json, shots in ../second-half-cut3-shots.md, music in ../songs/second-half-scene-a-music.md.",
   "beats": [
     {
       "key": "0",
@@ -63,33 +63,33 @@
     },
     {
       "key": "9b",
-      "at": "111.50",
+      "at": "110.50",
       "name": "Maddie in the dust",
       "blurb": "Inside the dust it left: almost nothing visible, then it settles fast and Maddie is there, still."
     },
     {
       "key": "10a",
-      "at": "116.00",
+      "at": "115.00",
       "name": "The far race",
       "blurb": "From the footbridge: the pack races away down the motorway."
     },
     {
       "key": "11",
-      "at": "119.50",
+      "at": "118.50",
       "name": "Maddie calls her boss",
       "blurb": "Maddie's hatch, the boss-hotline antenna. The call; the race (still far) under his first and last lines."
     },
     {
       "key": "10b",
-      "at": "151.08",
+      "at": "148.04",
       "name": "The close race",
       "blurb": "Low in the grass: the pack converges on the bunker door. Maddie over it."
     },
     {
       "key": "12",
-      "at": "156.08",
+      "at": "153.04",
       "name": "The stand-down",
-      "blurb": "On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green STAND DOWN. Lined up at the door, they file away one at a time. Then the boss, through Maddie."
+      "blurb": "On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green STAND DOWN. Lined up at the door, they file away one at a time. Then Maddie, shaky with relief: \"Good job, boss.\" \"That was close.\""
     }
   ],
   "boards": {

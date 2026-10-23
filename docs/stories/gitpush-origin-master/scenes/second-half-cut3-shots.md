@@ -549,3 +549,19 @@ with `mouth-track.py --face right` on `cut3-lip-raw/L07d-<n>-a.mp4`), new tables
 | --- | --- | --- |
 | `cut3-lip-7d-0c` | "Oh," 1.47 x1.00 · "sorry. Sorry, love." 1.80 x1.25 | take c is brisker than a; ends 2.84 against the mouth's ~2.55 (0.3 s late, onto his grin) |
 | `cut3-lip-7d-1c` | whole line 0.54 x1.10 | ends 2.36 against the mouth's ~2.25. Whisper hears take c as *"What the world ends, it's Sandra!"* (dry take: *"What the world then, Sandra?"*); take a's dub (`cut3-lip-7d-1`) reads clean. Kai's ear decides |
+
+## Scene A round 3: V13 without Maddie (23 Oct 2026)
+
+Kai: *"this shot would work really well just without Maddy in it… she's twice as big as she should be compared to the
+kill bot."* Still edited in Flow project `b9059b7e…` (`flow_edit_image`, Nano Banana Pro, 0 credits); clip in a fresh
+project (`00a8cc55…`, `flow_generate_video`, Omni 1.1 Flash, Frames start-only, 8 s, x1, **12 credits**, house price;
+`run-cut3.ledger.json` 576 → 588). Media: `storyboard/cut3/fix3/S11-c-r3-{a,b}.jpg`, `video/cut3-V13r3.mp4` (+ `-sheet.jpg`).
+`cut3-V13.mp4` is kept. Audio stripped as for every cut3 clip (original in `video/cut3-raw/cut3-V13r3-withaudio.mp4`).
+
+| still | refs | prompt | result |
+| --- | --- | --- | --- |
+| S11-c-r3 | S11-c | Using the provided image, change only the small grey six-wheeled delivery robot in the lower centre foreground: remove it completely, leaving only the same cracked, empty tarmac road with its faded white lines there. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition: the ruined high street, the burnt-out brick shops, the debris and weeds, the church tower, and the tracked military robot far off under the tower with dust boiling behind it. | **a = PICK**; b near-identical. Clean road, nothing left where Maddie was. |
+
+| take | start frame | dur | credits | motion prompt | verdict |
+| --- | --- | --- | --- | --- | --- |
+| `cut3-V13r3.mp4` | `storyboard/cut3/fix3/S11-c-r3-a.jpg` | 8 s | 12 | The camera does not move, locked high above the street. Far away under the church tower the tracked military robot prowls very slowly down the middle of the ruined high street towards us, heavy and menacing, its sensor turret sweeping left and right, hunting. It stays far off, under the tower, advancing only a little. Its tracks grind over the debris and dust boils up behind it and drifts across the road. The empty street in the foreground stays empty; the weeds stir in the wind. The camera does not move. | **Pass.** The bot stays far off under the tower through ~3.5 s (the part the cut uses), dust boiling; it has come a little closer by 8 s. Nothing appears in the foreground. md5-unique. |

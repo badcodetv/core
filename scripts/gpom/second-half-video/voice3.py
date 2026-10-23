@@ -36,10 +36,17 @@ Writes voice3/manifest.json.
          voice3/a1/<beat>-<i>-<who>-<t>.wav + voice3/a1.json [{key, who, text, direction, takes:[[file,dur]...]}]
 
     python3 scripts/gpom/second-half-video/voice3.py --round A1   # existing takes are kept
+
+  JOB 5  --round A3: Kai's round-3 note on beat 12, Maddie's "Good job, boss. (pause) That was close." with the
+         emotion pushed (her standing Style/Pace replaced for this line). Four takes, whisper-checked, picked by
+         measurement; written to scenes/second-half-a-killbots/voices.json. See main_a3.
+
+    python3 scripts/gpom/second-half-video/voice3.py --round A3   # existing takes are kept
 """
 import json
 import os
 import re
+import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
@@ -299,6 +306,103 @@ def main_a1():
     print(f"wrote {OUT3 / 'a1.json'} ({len(rows)} phrases, {len(res)} takes)")
 
 
+# ---- JOB 5: round A3 -------------------------------------------------------------------------------
+# Kai's round-3 note at4098 (23 Oct): boss line 4 in beat 12 becomes MADDIE, "Good job, boss. (pause) That was
+# close.", with "as much emotion as possible". Her standing Style/Pace ("cheeky", "quick and chatty") would fight
+# it, so both lines are replaced for this line only (ending/voices.py STYLE_BEAT's rule), and THE SCENE is the
+# bunker door. Two spoken forms, two takes each: documented tags (a, b) and a bare "..." (c, d). Whisper checks
+# every take; the pick is heard exactly, then a real pause inside (0.4-1.8 s), then not flagged, then slower.
+#   voice3/a3/12-0-bot-<t>.wav  +  scenes/second-half-a-killbots/voices.json
+A3_TEXT = 'Good job, boss. That was close.'
+A3_FORMS = {'ab': '[sighs] Good job, boss. [long pause] That was close.', 'cd': 'Good job, boss... That was close.'}
+A3_WHERE = ("Outside the steel blast door of a Cold War bunker under a Wiltshire hill, grey daylight, wind. The kill "
+            "bots that were about to break in have just stood down and are leaving one by one. A small robot speaks "
+            "quietly up into her boss-hotline antenna. Open air, no echo; her voice close to the microphone.")
+A3_STYLE = ("Style: no cheek, no gossip, no jokes: the relief after nearly watching a hundred people she loves be "
+            "killed; shaky and fond, her voice wobbling, close to tears, a breath of a laugh on the way out.")
+A3_PACE = ("Pace: slow. 'Good job, boss' soft and grateful, almost a whisper; then a real pause where she breathes "
+           "out; 'That was close' quieter still, unsteady, trailing off.")
+A3_EMOTION = 'overwhelming relief, shaky, fond; she nearly lost them'
+# The pick, by measurement after the first run (all four heard exactly, but the "slow" pace made 3.7-5.5 s pauses
+# full of breaths): a = the [sighs] tag comes out as a soft "Whew.", then a slow, stretched "Good job, boss" (2.4 s);
+# its pause is cut from 4.25 s to ~1.85 s (one breath kept) at silences found by silencedetect -40 dB.
+A3_PICK = 'a'
+A3_KEEP = [(0.0, 5.95), (8.35, None)]
+A3_WHY = ("[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the "
+          "slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' "
+          "Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. "
+          "b: also 'Whew!' (exclaimed), pause 5.5 s. c: no sigh, clean, pause 3.75 s (the clean alternative). d: an "
+          "unscripted 'Oh' inside the pause (whisper on the gap segment).")
+VOICES_A = V.S.SCENES / 'second-half-a-killbots' / 'voices.json'
+
+
+def a3_profile():
+    p = V.profiles['bot']
+    p, n1 = re.subn(r'(## THE SCENE\n).*?(\n\n###)', lambda m: m.group(1) + A3_WHERE + m.group(2), p, count=1, flags=re.S)
+    p, n2 = re.subn(r'^Style: .*$', lambda m: A3_STYLE, p, count=1, flags=re.M)
+    p, n3 = re.subn(r'^Pace: .*$', lambda m: A3_PACE, p, count=1, flags=re.M)
+    assert n1 == n2 == n3 == 1
+    return with_emotion(p, A3_EMOTION)
+
+
+def main_a3():
+    import difflib
+    sys.path.insert(0, str(V.S.REPO / 'scripts/gpom/second-half-video/ending'))
+    import voices as E  # noqa: E402  (whisper + norm only)
+    (OUT3 / 'a3').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'a3').mkdir(parents=True, exist_ok=True)
+    V.profiles['a3-12-0-bot'] = a3_profile()
+    todo = [{'key': f'12-0-bot-{t}', 'dir': 'a3', 'who': 'a3-12-0-bot', 'voice': 'Aoede', 'text': form, 'how': None,
+             'work': WORK3 / 'a3', 'form': form} for ts, form in A3_FORMS.items() for t in ts]
+    with ThreadPoolExecutor(2) as ex:
+        res = list(ex.map(run, todo))
+    heard = E.whisper([OUT3 / 'a3' / f"{r['key']}.wav" for r in res if r['duration']])
+    takes = []
+    for r in res:
+        f = OUT3 / 'a3' / f"{r['key']}.wav"
+        h = heard.get(str(f)) if r['duration'] else None
+        ratio = difflib.SequenceMatcher(None, E.norm(A3_TEXT), E.norm(h['text'])).ratio() if h else 0.0
+        gap = round(V.longest_gap(f), 2) if r['duration'] else 0.0
+        lufs = None
+        if r['duration']:
+            out = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', str(f), '-af', 'ebur128', '-f', 'null', '-'],
+                                 capture_output=True, text=True).stderr
+            lufs = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', out)[-1])
+        flagged = r['status'].split()[0] in ('SHORT', 'DEAD', 'FAILED')
+        takes.append({'take': r['key'][-1], 'file': f.name, 'spoken': r['form'], 'duration': round(r['duration'], 2),
+                      'heard': h['text'] if h else '', 'match': round(ratio, 3), 'gap': gap, 'lufs': lufs,
+                      'status': r['status'], 'ok': ratio >= E.MATCH and not flagged,
+                      'speech': [h['words'][0][1], h['words'][-1][2]] if h and h['words'] else None})
+        print(f"{r['key']:14s} {r['duration']:5.2f}s gap {gap:4.2f} {lufs} match {ratio:.2f} '{takes[-1]['heard']}' "
+              f"{r['status']}")
+    best = next(t for t in takes if t['take'] == A3_PICK)
+    keep = A3_KEEP
+    tight = OUT3 / 'a3' / f"12-0-bot-{A3_PICK}-tight.wav"
+    parts = ''.join(f"[0:a]atrim={a}:{b if b is not None else ''},asetpts=PTS-STARTPTS,afade=t=in:d=0.03"
+                    f"{',afade=t=out:st=%.3f:d=0.03' % (b - a - 0.03) if b is not None else ''}[p{k}];"
+                    for k, (a, b) in enumerate(keep))
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(OUT3 / 'a3' / best['file']), '-filter_complex',
+                    parts + ''.join(f'[p{k}]' for k in range(len(keep))) + f'concat=n={len(keep)}:v=0:a=1[o]',
+                    '-map', '[o]', str(tight)], check=True)
+    th = E.whisper([tight]).get(str(tight))
+    why = A3_WHY + (f" Tightened copy {tight.name} ({V.duration(tight):.2f} s) keeps {keep}; whisper hears it as "
+                    f"'{th['text'] if th else ''}'. Nobody has listened.")
+    doc = {'about': 'Scene A lines voiced in Gemini TTS after round 2 (scripts/gpom/second-half-video/voice3.py '
+                    '--round A3). Earlier scene A takes are in the media folder\'s voice3/a1.json. Files are relative '
+                    'to the media folder; the boss is Suno and is not here.',
+           'media': str(OUT3),
+           'lines': {'12-0-maddie': {'speaker': 'maddie', 'beat': '12', 'text': A3_TEXT, 'voice': 'Aoede',
+                                     'note': "Kai at4098: replaces the boss's line 4; 'squeeze as much emotion into "
+                                             "that as possible'",
+                                     'file': f"a3/{tight.name}", 'duration': round(V.duration(tight), 2),
+                                     'from': f"a3/{best['file']}", 'keep': keep, 'speech': best['speech'],
+                                     'heard': best['heard'], 'verified': best['ok'], 'why': why,
+                                     'takes': [{k: v for k, v in t.items() if k != 'ok'} for t in takes],
+                                     'prompt': V.profiles['a3-12-0-bot']}}}
+    VOICES_A.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + '\n')
+    print(f'wrote {VOICES_A}\n{why}')
+
+
 def run(job):
     wav = OUT3 / job['dir'] / f"{job['key']}.wav"
     if wav.exists():
@@ -347,9 +451,10 @@ def main():
 
 if __name__ == '__main__':
     if '--round' in sys.argv:
-        assert sys.argv[sys.argv.index('--round') + 1].upper() == 'A1', 'only --round A1 exists'
+        rnd = sys.argv[sys.argv.index('--round') + 1].upper()
+        assert rnd in ('A1', 'A3'), 'only --round A1 / A3 exist'
         load_key()
-        main_a1()
+        main_a1() if rnd == 'A1' else main_a3()
     elif '--lines' in sys.argv:
         load_key()
         main_lines()
