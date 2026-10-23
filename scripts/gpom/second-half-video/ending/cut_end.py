@@ -43,7 +43,7 @@ NAMES = {'ai': 'The AI (through Maddie)', 'maddie': 'Maddie', 'sandra': 'Sandra'
 SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,'
            'asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB')
 ENC = C.ENC
-ROUND_KEYS = ('file_round4', 'file_round3', 'file_round2_kai')  # newest first
+ROUND_KEYS = ('file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 
 
@@ -248,10 +248,13 @@ def scene_c(sc):
     m['c01'] = (0.0, end_c1)
     m['promise'] = (a, e1)
     t = c.close(b, end_c1)
-    c.flags.append('Ending round 2 (Kai reel at63): C01 re-made (c01r4-t1) so the doorway from inside is the same wide '
-                   'pair of green blast doors as the outside shots, with the mud outside and on the threshold. Made as a '
-                   'reverse angle of C01b (editing the old plate could not widen its doorway); the cost is that the wary '
-                   'faces are now mostly silhouettes, the old lady lit on the right. Maddie stands in the mud facing in.')
+    c.flags.append('C round 3 (Kai reel at83): back to the round-1 C01 (c01r1-t2). The round-2 remake (wide doors, mud) '
+                   '"doesn\'t look anything like Maddy" and its bunting across the door did not work. Conflict, for Kai: '
+                   'this shot is the one at63 called out (narrow doors from inside, a concrete step, no mud).')
+    c.flags.append('C round 3 (Kai reel at253/at440): Maddie was about twice her size in C01b and C02. Both plates were '
+                   'remade in two steps (the robot removed, then the canonical bot s3-bot-00b-a added back knee-high, sized '
+                   'against a bag in frame) and re-animated: c01br5-t1 (6 s), C02r5-t2 (8 s; C02 is framed a little wider '
+                   'than before and Omni drifts the camera). Bunting kept: this is outside the clean room.')
     c.flags.append('Round 1 (Kai, bc1): C01 is the new shot from inside the bunker (c01r1-t2; replaced in ending round 2). The lady is visible and '
                    'silent among the wary faces and turns her head away at ~7 s, kept in. Nobody moves for 1.4 s before '
                    'Maddie speaks; "You\'ve got my word." comes 1.2 s after the first line (scene.json gap_before). '
@@ -277,7 +280,7 @@ def scene_c(sc):
     c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c2-1-maddie'), by('c2-1-maddie'))
     cut02 = fr(s2 + d1b)
     c02_end = fr(cut02 + 7.0)
-    c02, gnote = match_grade(sc.clip('C02'), sc.clip('C03'), V / 'C02-t4-graded.mp4', strength=0.7)
+    c02, gnote = match_grade(sc.clip('C02'), sc.clip('C03'), V / f"{sc.clip('C02').stem}-graded.mp4", strength=0.7)
     c.pic(c02, 0.0, cut02, c02_end, 'c2', source=sc.clip('C02'))
     m['c01b'] = (s2, cut02)
     m['c02'] = (cut02, c02_end)
@@ -288,7 +291,7 @@ def scene_c(sc):
     c.flags.append('Round 1 (Kai, lc1-1): C01b (the first two edge out, more follow) plays whole before C02. '
                    '"Careful now, humans." comes 1.6 s in, as they step out; the radiation line 0.6 s after it, and runs '
                    f'{e1 - cut02:.1f} s over the cut into C02 so the hundred file out under the joke.')
-    c.flags.append('Colour: C02 (C02-t4) is graded towards the first 4 s of the long walk it cuts to, so the two '
+    c.flags.append('Colour: C02 is graded towards the first 4 s of the long walk it cuts to, so the two '
                    'overcast exteriors match. ' + gnote + '.')
 
     # ---- c3: the long walk (C03 chain, unchanged: Kai, bc3 "excellent shot")

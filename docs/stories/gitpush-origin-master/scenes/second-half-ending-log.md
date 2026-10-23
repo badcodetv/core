@@ -717,3 +717,22 @@ the lady and the cutaway, the bus and the tracked DOWNLAND BANK lettering.
 - **Still owed:** the AI's last line ("I made it. Now we have some work to do." was blocked by Suno's copyright filter;
   Kai is rewording). E's slot stays a silent hold.
 - **Pages** built into the session scratchpad (`timeline-C`, `-D`, `-E`, `-ending`); not published here.
+
+## C round 4 (Kai's third set of notes on the Ending reel page, 23 Oct)
+
+Kai's notes `at83`, `at253`, `at440` (all scene C) are in the reel's `cut-notes.json` `kai_round2` and C's `kai_round4`,
+with replies. Prompts and verdicts: C's `shots.md` § C round 4.
+
+- **C01 (at83):** back to the round-1 shot `c01r1-t2` (`clips.json` `file_round5`). It is the shot the earlier at63 note
+  was about (narrow doors from inside, a concrete step, no mud), so that conflict is put to Kai on the page with one
+  option: the old plate with the step turned to mud (still `C/stills/fix4/c01r4-a.jpg` exists; ~12 credits to animate).
+- **Maddie's scale (at253, at440):** C01b → `c01br5-t1` (6 s), C02 → `C02r5-t2` (8 s; t1 rejected for a pennant pole).
+  Nano Banana would not shrink the robot in place; removing it and adding the canonical s3 bot back sized against a bag
+  in frame did. Bunting kept (outside the clean room).
+- **Found and fixed:** `cut_end.py` graded C02 into a fixed file name (`C02-t4-graded.mp4`) that it reused if present,
+  so a new C02 take would never have reached the cut; the graded file is now named after the clip.
+- **Flow: 34 credits; ledger 1036 → 1070 of 1500.** `cut_end.ROUND_KEYS` now starts with `file_round5`.
+- **Rebuilt:** C 64.62 s, −16.1 LUFS, TP −2.0 dBFS, delivery-qc 7 ok / 2 warn / 1 fail (the inherited stray-pixel note);
+  the reel 188.79 s (offsets C 0, D 64.208, E 156.208), −16.0 LUFS, TP −1.4 dBFS, 5 ok / 3 warn / 1 fail. No line moved,
+  so no re-whisper; frames looked at for C01, C01b, C02 in the cut and in the reel. D and E untouched (E's slot as main
+  left it).

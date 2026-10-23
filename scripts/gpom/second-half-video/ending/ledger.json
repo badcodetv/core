@@ -1,5 +1,5 @@
 {
- "spent": 1036,
+ "spent": 1070,
  "jobs": [
   {
    "key": "C-C06",
@@ -789,6 +789,42 @@
    "flow_project": "c53e12a3-3c35-48d6-87d0-a37b9f2e1aba",
    "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
    "round": "ending round 2 (Kai reel notes 23 Oct)"
+  },
+  {
+   "key": "C-c01br5-t1",
+   "scene": "C",
+   "cost": 10,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix5/c01br5e-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c01br5-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "5cbc205c-07c2-4954-885d-e92ef4a9050f",
+   "flow_project": "25507fdc-8a56-4e91-a226-d6fc011f0014",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "C round 3 (Kai reel notes at253/at440, 23 Oct)"
+  },
+  {
+   "key": "C-C02r5-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix5/C02r5e-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/C02r5-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "37d7ffef-aae9-43d9-a5fe-6efab3b846e8",
+   "flow_project": "bc10352c-97dc-4e56-b4ec-a11e304cc097",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "C round 3 (Kai reel notes at253/at440, 23 Oct)"
+  },
+  {
+   "key": "C-C02r5-t2",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix5/C02r5e-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/C02r5-t2.mp4",
+   "at": "2026-10-23",
+   "mediaId": "870db343-48d9-41a1-a18c-5d001d469b27",
+   "flow_project": "e71fb13a-a83c-4509-8454-f42e9e34a5f3",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "C round 3 (Kai reel notes at253/at440, 23 Oct)"
   }
  ],
  "keys": [

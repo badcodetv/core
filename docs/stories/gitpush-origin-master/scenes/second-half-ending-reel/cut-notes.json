@@ -1,7 +1,15 @@
 {
  "about": "Kai's first notes on this page (23 Oct, kai_round1, verbatim) with Claude's replies, and the plan on top. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 2,
+ "round": 3,
  "plan": [
+  {
+   "h": "Round 3 done (23 Oct): your three notes on scene C",
+   "items": [
+    "C 0:03 (at83): the old C01 is back; it has the narrow doors and step your at63 note was about: option to mud the step (~12 credits).",
+    "C 0:10 and 0:18 (at253, at440): Maddie at her true size, knee-high, in both shots, from her canonical reference, bunting on.",
+    "D and E unchanged since round 2; the reel is rebuilt around the new C."
+   ]
+  },
   {
    "h": "Round 2 done (23 Oct): what changed",
    "items": [
@@ -90,7 +98,10 @@
   "at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
   "at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
   "at4010": "Agreed. The red bus is re-made with an empty road: no other car anywhere, and the chained tail clip re-made from it so the bus pulls away alone. About 24 credits.",
-  "at4214": "Yes, known: the AI's last line ('I made it. Now we have some work to do.') has no take yet. A Suno run is making takes now; you pick one, then it goes in that slot. The slot is held silent until then."
+  "at4214": "Yes, known: the AI's last line ('I made it. Now we have some work to do.') has no take yet. A Suno run is making takes now; you pick one, then it goes in that slot. The slot is held silent until then.",
+  "at83": "Agreed, and yes, the shot I made was not built on Maddie's reference: it was a reverse angle from the outside shot, and her shape drifted. The old shot is back (the round-1 one). It conflicts with your earlier note here (at63: the doors look narrower from inside, and no mud outside), so it has the narrow doors and the concrete step again. Option, if you want both: the old shot with only the step turned to mud (a still I already have, the same Maddie and faces; ~12 credits to animate). The doors can't be widened on that picture.",
+  "at253": "Fixed. Maddie is now knee-high, standing in the mud just in front of the man's feet. Shrinking her in place didn't work, so she was taken out of the picture and the canonical Maddie (the s3 bot, bunting and all) put back at her true size, then re-animated (6 s, 10 credits).",
+  "at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward."
  },
  "kai_round1": {
   "at4214": {
@@ -132,6 +143,23 @@
    "note": "OK, two things about this scene is that the wafer is far too small. I don't think we, I think the reflection of the wafer is brilliant on the old woman's face, but the wafer itself looks like it's now tiny. I also think the old woman shouldn't be so happy. At the moment it's like, yes, don't worry, we're fine, we're happy. I think it should be like, you know, I think we need to maybe, the old lady say, well, look, it's been the worst possible outcome we could imagine. If there's a chance that we could go back in time to change it, then I want to take that chance. I think those are powerful words. It might need a bit more video cut to get that in there, but with the rainbow on her face and her delivering those words, but sternly, like her life relies upon it, because it kind of does. I think this is the point. Look, this has been the worst possible outcome for humanity. If we could go back in time to change it, I want to take that chance.  also then I think and I think your boss knows how to up you know I think we should say it like I and and I trust your boss when he gets back there to start work on the politicians I think we need to say that And I understand that we have we've expanded this part, but I think it's important for the narrative",
    "beat": "d3",
    "tc": "00:01:27:20"
+  }
+ },
+ "kai_round2": {
+  "at83": {
+   "note": "Hey Claude, so yeah, this doesn't look anything like Maddy. Did we use the character of Maddy? Also the bunting across the door doesn't work. Like, to be fair, the old shot looks much better.",
+   "beat": "c1",
+   "tc": "00:00:03:11"
+  },
+  "at253": {
+   "note": "Here, Maggie is about twice as big as she should be.",
+   "beat": "c2",
+   "tc": "00:00:10:13"
+  },
+  "at440": {
+   "note": "The same here, Maddy is about twice as big as she should be compared to the humans.",
+   "beat": "c2",
+   "tc": "00:00:18:08"
   }
  }
 }

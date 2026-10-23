@@ -1,7 +1,17 @@
 {
  "about": "Round 1 of scene C is DONE (Kai's notes, 22 Oct): the cut on this page is the rebuild. Kai's round-1 notes, Claude's replies and the answers are kept below. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 3,
+ "round": 4,
  "plan": [
+  {
+   "h": "Round 4 done (23 Oct, your third set of notes on the Ending reel page): what changed",
+   "items": [
+    "DONE. Rebuilt: 64.6 s (unchanged). No Premiere.",
+    "BEAT 1 (reel at83): the old C01 is back (round 1: the faces inside, Maddie on the step). It is the shot your at63 note was about (narrow doors, a concrete step, no mud): say if you want the step turned to mud (~12 credits).",
+    "BEAT 2 (reel at253): C01b re-made with Maddie at her true size, knee-high in the mud beside the man's feet.",
+    "BEAT 2 (reel at440): C02 re-made the same way, knee-high just ahead of the line; framed a little wider, the camera drifts.",
+    "Every Maddie here is the canonical s3 bot with her torn bunting (outside the clean room). Flow: 34 credits (one re-roll); ledger 1070 of 1500."
+   ]
+  },
   {
    "h": "Round 3 done (23 Oct): what changed",
    "items": [
@@ -87,7 +97,10 @@
   "at291": "Agreed: the first-ones-out shot has a concrete apron, the rest of C is a muddy track. I'll edit that still so the ground outside the doors is the same churned mud track, then re-animate it (about 10 credits).",
   "at1289": "Yes: he's the only face pointing back at us. I'll paint him (and his stick) out of the still so every head faces the building, then re-animate it (about 12 credits).",
   "at1342": "Done in the rebuild: Maddie's 'He's been working on this one…' goes. Derek's 'Bloody hell. Look at that building.' then sits on the reveal alone, and the next sound is her 'Come in. Mind the step.'",
-  "reel-at63": "Agreed. C01 (the first shot, from inside the bunker) is re-made so the doorway is the same wide blast-door opening you see from outside in C01b/C02, and the ground beyond it is the same wet, churned mud. One new still (free) and one clip, about 12 credits."
+  "reel-at63": "Agreed. C01 (the first shot, from inside the bunker) is re-made so the doorway is the same wide blast-door opening you see from outside in C01b/C02, and the ground beyond it is the same wet, churned mud. One new still (free) and one clip, about 12 credits.",
+  "reel-at83": "Agreed, and yes, the shot I made was not built on Maddie's reference: it was a reverse angle from the outside shot, and her shape drifted. The old shot is back (the round-1 one). It conflicts with your earlier note here (at63: the doors look narrower from inside, and no mud outside), so it has the narrow doors and the concrete step again. Option, if you want both: the old shot with only the step turned to mud (a still I already have, the same Maddie and faces; ~12 credits to animate). The doors can't be widened on that picture.",
+  "reel-at253": "Fixed. Maddie is now knee-high, standing in the mud just in front of the man's feet. Shrinking her in place didn't work, so she was taken out of the picture and the canonical Maddie (the s3 bot, bunting and all) put back at her true size, then re-animated (6 s, 10 credits).",
+  "reel-at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward."
  },
  "kai_round1": {
   "bc1": "old lady wouldn't say 'go on then, you lead', wouldn't pat the robot yet; we're not friends; Maddie reassuring, coaxing them out: 'go on, I promise you'll be okay, you've got my word'",
@@ -116,6 +129,23 @@
    "note": "The feedback on this scene is that the doors from before I think are much wider, so it just feels a bit odd that there's a disconnect between the doors from outside and the doors from inside. It feels like we could recut this scene again, especially if you look at the next scene, it's muddy and the doors are much wider than they appear from the first picture, so I think we could recut this scene here.",
    "beat": "c1",
    "tc": "00:00:02:15"
+  }
+ },
+ "kai_round4": {
+  "reel-at83": {
+   "note": "Hey Claude, so yeah, this doesn't look anything like Maddy. Did we use the character of Maddy? Also the bunting across the door doesn't work. Like, to be fair, the old shot looks much better.",
+   "beat": "c1",
+   "tc": "00:00:03:11"
+  },
+  "reel-at253": {
+   "note": "Here, Maggie is about twice as big as she should be.",
+   "beat": "c2",
+   "tc": "00:00:10:13"
+  },
+  "reel-at440": {
+   "note": "The same here, Maddy is about twice as big as she should be compared to the humans.",
+   "beat": "c2",
+   "tc": "00:00:18:08"
   }
  }
 }

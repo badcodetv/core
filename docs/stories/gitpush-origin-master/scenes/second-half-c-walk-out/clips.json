@@ -17,7 +17,9 @@
       "superseded": "C01-t1.mp4 (round 0: the lady straightening the bunting, 'Go on, then. You lead.')",
       "file_round4": "c01r4-t1.mp4",
       "plate_round4": "../stills/fix4/c01r4d-b.jpg",
-      "note_round4": "Ending round 2 (Kai reel at63): from inside the bunker through the SAME wide double doors as C01b/C02, mud outside and on the threshold; survivors in silhouette at the edges, the old woman lit on the right, Maddie in the mud facing in, beacon pulsing, bunting low. Locked."
+      "note_round4": "Ending round 2 (Kai reel at63): from inside the bunker through the SAME wide double doors as C01b/C02, mud outside and on the threshold; survivors in silhouette at the edges, the old woman lit on the right, Maddie in the mud facing in, beacon pulsing, bunting low. Locked.",
+      "file_round5": "c01r1-t2.mp4",
+      "note_round5": "C round 3 (Kai reel at83, 23 Oct): the round-4 reverse angle 'doesn't look anything like Maddy… the old shot looks much better'. Back to the round-1 shot c01r1-t2 (narrow doors, concrete step: it does NOT meet at63's wide-doors/mud note; option on the page)."
     },
     "C01b": {
       "file": "c01br1-t1.mp4",
@@ -29,7 +31,10 @@
       "file_round2_kai": "c01br3-t1.mp4",
       "plate_round2_kai": "../stills/fix3/c01br3-b.jpg",
       "superseded_round2_kai": "c01br1-t1.mp4",
-      "note_round2_kai": "Kai round 2 (at291): mud outside the bunker, re-animated (6 s, 10 credits): they step out onto the mud, more follow from ~3 s, beacon pulses, bunting stays low."
+      "note_round2_kai": "Kai round 2 (at291): mud outside the bunker, re-animated (6 s, 10 credits): they step out onto the mud, more follow from ~3 s, beacon pulses, bunting stays low.",
+      "file_round5": "c01br5-t1.mp4",
+      "plate_round5": "../stills/fix5/c01br5e-a.jpg",
+      "note_round5": "C round 3 (Kai reel at253: Maddie twice too big): the robot removed from c01br3-b, then the canonical bot (s3-bot-00b-a) added back knee-high beside the man's feet; re-animated 6 s. They step onto the mud, more follow, bunting low."
     },
     "C02": {
       "file": "C02-t4.mp4",
@@ -38,7 +43,11 @@
       "plate": "../stills/C02-r2-a.jpg",
       "talking": false,
       "note": "Review round 1 re-roll: a light breeze, the cloth hangs limp, nothing rises from the robot. No pennant pole; Maddie leaves frame left at ~7 s.",
-      "alt": "C02-t1.mp4 (round-0 pick: Omni grew a pole of pennants on her rear from ~1.5 s); C02-t3 rejected (the bunting streamed across the whole foreground)"
+      "alt": "C02-t1.mp4 (round-0 pick: Omni grew a pole of pennants on her rear from ~1.5 s); C02-t3 rejected (the bunting streamed across the whole foreground)",
+      "file_round5": "C02r5-t2.mp4",
+      "plate_round5": "../stills/fix5/C02r5e-b.jpg",
+      "note_round5": "C round 3 (Kai reel at440: Maddie twice too big): the robot removed from C02-r2-a (the plate reframed a little wider), the canonical bot added back knee-high just ahead of the line; re-animated 8 s. Omni drifts the camera forward-left (asked for locked).",
+      "alt_round5": "C02r5-t1.mp4 (reject: a small orange pennant on a pole grows behind the robot from ~4 s)"
     },
     "C03": {
       "file": "C03f-chain.mp4",

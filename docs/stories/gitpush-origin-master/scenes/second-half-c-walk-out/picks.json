@@ -49,7 +49,21 @@
         "fix3/c01br3-a.jpg",
         "fix3/c01br3-b.jpg"
       ],
-      "why_round2_kai": "Kai round 2 (at291): the concrete apron outside the doors replaced with the same churned muddy track as the walk (flow_edit_image, ref tracks-S10-c). b keeps the c01br1-b composition exactly; a re-framed wider."
+      "why_round2_kai": "Kai round 2 (at291): the concrete apron outside the doors replaced with the same churned muddy track as the walk (flow_edit_image, ref tracks-S10-c). b keeps the c01br1-b composition exactly; a re-framed wider.",
+      "file_round5": "fix5/c01br5e-a.jpg",
+      "options_round5": [
+        "fix5/c01br5-a.jpg",
+        "fix5/c01br5-b.jpg",
+        "fix5/c01br5b-a.jpg",
+        "fix5/c01br5b-b.jpg",
+        "fix5/c01br5-empty-a.jpg",
+        "fix5/c01br5-empty-b.jpg",
+        "fix5/c01br5c-a.jpg",
+        "fix5/c01br5c-b.jpg",
+        "fix5/c01br5e-a.jpg",
+        "fix5/c01br5e-b.jpg"
+      ],
+      "why_round5": "Nano Banana would not shrink the robot in place (r5, r5b came back the same size). Two steps worked: remove it (empty-a), then add the canonical bot back sized against an object in frame ('no bigger than the blue holdall', r5e). a: lid at the man's knee-thigh, beside his feet; b smaller still."
     },
     "C02": {
       "file": "C02-r2-a.jpg",
@@ -59,7 +73,23 @@
         "C02-r2-a.jpg",
         "C02-r2-b.jpg"
       ],
-      "why": "Maddie leads from the foreground with the bunting across her wheels; the hundred file out mid-ground (few-movers rule for Omni), shading their eyes, carrying bags, an old man on a stick; the kill-bot track marks curve through the grass in front. r1-a/b put the crowd in the foreground and Maddie behind or beside them, which loses 'she leads'."
+      "why": "Maddie leads from the foreground with the bunting across her wheels; the hundred file out mid-ground (few-movers rule for Omni), shading their eyes, carrying bags, an old man on a stick; the kill-bot track marks curve through the grass in front. r1-a/b put the crowd in the foreground and Maddie behind or beside them, which loses 'she leads'.",
+      "file_round5": "fix5/C02r5e-b.jpg",
+      "options_round5": [
+        "fix5/C02r5-b.jpg",
+        "fix5/C02r5-c.jpg",
+        "fix5/C02r5b-a.jpg",
+        "fix5/C02r5b-b.jpg",
+        "fix5/C02r5-empty-a.jpg",
+        "fix5/C02r5-empty-b.jpg",
+        "fix5/C02r5c-a.jpg",
+        "fix5/C02r5c-b.jpg",
+        "fix5/C02r5d-a.jpg",
+        "fix5/C02r5d-b.jpg",
+        "fix5/C02r5e-a.jpg",
+        "fix5/C02r5e-b.jpg"
+      ],
+      "why_round5": "Same two-step route ('no bigger than the old man's suitcase', r5e). b: knee-high just ahead of the line; a still chest-high in the foreground. C02r5-a was the stray reference upload."
     },
     "C03": {
       "file": "C03-f1-a.jpg",
