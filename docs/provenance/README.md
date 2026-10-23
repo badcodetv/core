@@ -20,6 +20,8 @@ complete alone; the two together are everything. Nothing in this folder needs th
 
 ## The overview board: the film's running order (one per story)
 
+Run by the **`overview-board`** skill (`.claude/skills/overview-board/`): skeleton, status, reshaping, keeping it current.
+
 Kai, 2026-10-23: *"stitch together the list of timelines that, from beginning to end, are the entire story."*
 
 `docs/stories/<story>/timelines.json` is the film in order. Each section (a scene or sequence) has its

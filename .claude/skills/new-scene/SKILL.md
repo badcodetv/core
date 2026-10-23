@@ -110,8 +110,9 @@ Kai, 2026-10-23: keep a trail good enough to **rerun the whole scene on a better
   It also writes the link into `scene.json` `boards`. When you read Kai's notes, save them and pass `--notes`.
 - **Before showing a cut**, run `prov.py check <scene-dir>` and card anything it lists.
 - **When Kai says a cut is done**, run `prov.py freeze <scene-dir> --note "<his words>"` and commit it.
-- **The story's running order** (`docs/stories/<story>/timelines.json`): add the scene as a section (with `"scene": "scenes/<scene>"`)
-  when its first timeline page exists. Update its state whenever it changes, then rebuild with
+- **The story's overview board** (the **`overview-board`** skill, `docs/stories/<story>/timelines.json`). A scene usually starts as a row there, and its `beat` is stage 1's starting sentence.
+  If the scene has no row yet, add one (with `"scene": "scenes/<scene>"`) by the time its first timeline
+  page exists. Update its state whenever it changes, then rebuild with
   `scripts/provenance/build-timelines.py docs/stories/<story>` and republish to the URL in `timelines.json`.
 
 ## Stage 1: the interview

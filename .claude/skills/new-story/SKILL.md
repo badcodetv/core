@@ -71,7 +71,8 @@ Frontmatter is light and is the subset machine artifacts need:
    unless asked.
 6. **Maintain `README.md`** — the index and the production tracker (medium ×
    status), so the folder stays self-describing.
-7. **The overview board** (Kai, 2026-10-23). As soon as a story's film has its first timeline page,
+7. **The overview board** (Kai, 2026-10-23; the **`overview-board`** skill runs it). Once a story is
+   headed for film, lay out its skeleton there; at the latest when it has its first timeline page,
    it gets an overview board: `timelines.json` lists the film start to end, each scene or sequence with
    its state, its current timeline page and every earlier page. Build it with
    `python3 scripts/provenance/build-timelines.py docs/stories/<story>` and publish

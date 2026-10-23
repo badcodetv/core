@@ -3,9 +3,9 @@
 
     python3 scripts/provenance/build-timelines.py docs/stories/<story>
 
-Reads <story>/timelines.json (the running order, written by hand: sections in film order, each with
-its state, its current timeline page, and earlier pages under "history") and fills in from each
-section's scene folder:
+Reads <story>/timelines.json (the running order, written by the overview-board skill: sections in film
+order, each with the beat it must land, its state, its current timeline page, and earlier pages under
+"history") and fills in from each section's scene folder:
   scene.json "boards"   the scene's pages (timeline, mood board, storyboard)
   trail.json            every page published for that scene (prov.py trail), oldest first
   final.json            the cut is frozen: shown as "recipe frozen"
@@ -70,6 +70,8 @@ def row(sec, now, child=False):
         bits.append(f'<span class="st ok">recipe frozen {esc(sec["frozen"])}</span>')
     out = [f'<li class="{"now" if sec["id"] == now else ""}{" part" if child else ""}">',
            f'<div class="row">{"".join(bits)}</div>']
+    if sec.get('beat'):
+        out.append(f'<div class="beat">{esc(sec["beat"])}</div>')
     if sec.get('what'):
         out.append(f'<div class="what">{esc(sec["what"])}</div>')
     links = []
@@ -123,6 +125,8 @@ li.part { background: transparent; border-style: dashed; padding: 8px 12px; }
 .st { font: 600 11px var(--mono); letter-spacing: .05em; text-transform: uppercase; padding: 1px 7px; border-radius: 99px; border: 1px solid currentColor; }
 .ok { color: var(--green); } .wip { color: var(--amber); } .gap { color: var(--red); }
 .what { color: var(--muted); }
+.beat { font-style: italic; }
+.count { font: 12px var(--mono); color: var(--muted); margin: -16px 0 24px; }
 details summary { font: 12px var(--mono); color: var(--muted); cursor: pointer; }
 details ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 2px; }
 details li { background: none; border: 0; padding: 0; display: list-item; }
@@ -136,6 +140,11 @@ def main(story_dir):
     story = pathlib.Path(story_dir).resolve()
     t = json.loads((story / 'timelines.json').read_text())
     secs = [fill(s, story) for s in t['sections']]
+    leaves = [p for s in secs for p in (s.get('parts') or [s])]
+    tally = {'on a timeline': sum(bool(p.get('timeline')) for p in leaves),
+             'in Premiere': sum(not p.get('timeline') and p.get('tone') == 'premiere' for p in leaves),
+             'not made': sum(not p.get('timeline') and p.get('tone') == 'gap' for p in leaves)}
+    count = f'{len(leaves)} parts · ' + ' · '.join(f'{v} {k}' for k, v in tally.items() if v)
     body, group = [], None
     for s in secs:
         if s.get('group') != group:
@@ -153,6 +162,7 @@ def main(story_dir):
             f'<style>{CSS}</style>\n<main>\n'
             f'<h1>{esc(t["title"])} <span class="tri">▲</span> timelines</h1>\n'
             f'<p class="sub">{esc(t.get("intro", "The whole film, start to end. Open the lit one first."))}</p>\n'
+            f'<p class="count">{esc(count)}</p>\n'
             + '\n'.join(body) +
             f'\n<p class="upd">Updated {esc(t.get("updated", ""))}. Built from <code>docs/stories/{esc(story.name)}/timelines.json</code>; '
             'Claude rebuilds it whenever a timeline changes state.</p>\n</main>\n')
