@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """GPOM second half, cut 3: two rough cuts in the new-scene timeline format (scripts/scene/timeline.py).
 
-    python3 scripts/gpom/second-half-video/cut3.py A          # scene A, the kill bots (beats 0-12)
+    python3 scripts/gpom/second-half-video/cut3.py A          # scene A, the kill bots (beats 0-12; round 2 rebuild)
     python3 scripts/gpom/second-half-video/cut3.py B          # scene B, Maddie at the door (14a-17)
     python3 scripts/gpom/second-half-video/cut3.py A B --no-preview
 
@@ -236,80 +236,104 @@ def regrade_v6(src, out, ref_secs=4.0, strength=0.85, smooth=2.0):
     return out, note
 
 
-# ---------------------------------------------------------------- scene A
+# ---------------------------------------------------------------- scene A (round 2 rebuild, 23 Oct 2026)
+# Every change is from scenes/second-half-a-killbots/cut-notes.json: kai_round1 + answers_round1 + words_round1,
+# picks_round2, picks_round3, and Kai's voice picks on the round 2 picks page (3DDbvoAxmABJAboca6A3co, db `picks`).
+
+A1 = V3 / 'a1'  # voice3.py --round A1: Maddie's new beat 0 / call / 10b phrases and Derek's two new lines
+SUNO_A = ROOT / 'A' / 'suno'  # recorded Suno picks (never downloaded)
+SPEAKER = 'highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,asoftclip=type=atan,' \
+          'acrusher=bits=12:mix=0.15,volume=-3dB'  # voice.py FX['speaker']: the boss through Maddie's speaker
+MUFFLED = 'lowpass=f=600,lowpass=f=600,lowpass=f=600,volume=-12dB'  # voice.py FX['muffled']
+BOSS = {1: 'gpom-sh-a-boss-1-a-v6-w10-7f8d1ef8.wav', 2: 'gpom-sh-a-boss-2-b-v6-w25-d7aaef3e.wav',
+        3: 'gpom-sh-a-boss-3-b-v6-w10-bfb1220b.wav', 4: 'gpom-sh-a-boss-4-b-v6-w25-543dafef.wav'}
+BOSS_TEXT = {1: 'Maddie, are you making fun of my simulations again?',
+             2: "Oh. [pause] And they've activated their firewalls.",
+             3: 'No, thank you, Maddie. I will handle it.',
+             4: 'It was useful to keep that zero-day up my sleeve.'}
+P1 = SUNO_A / 'gpom-sh-a-p1-a-v6-w60-57b65bfc.wav'
+P2 = SUNO_A / 'gpom-sh-a-p2-a-v6-w30-49a6688a.wav'
+C3 = SUNO_A / 'gpom-sh-a-c3-a-v6-w60-a1614dbb.wav'
+C3_BREAK = 54.0  # where C3's ostinato breaks off, leaving one low held note (measured: -16 -> -24 dB at 54.0 s)
+
+# Beat 0 in Kai's words (words_round1['0']): (take, pause after, text). Takes: Kai's audition picks for the new
+# phrases (v-00-*), the cast file's round-0 picks for the phrases that did not change.
+BEAT0 = [
+    (A1 / '00-0-bot-c.wav', 1.6, 'Oh, hello!'),
+    (A1 / '00-1-bot-a.wav', 0.8, "Oh, I didn't notice you there."),
+    (A1 / '00-2-bot-a.wav', 1.2, 'Ooh, that gives me an excuse to turn this racket down.'),
+    (A1 / '00-3-bot-c.wav', 1.2, "It's his tune. He plays it on repeat, every day."),
+    (V3 / 'maddie/00-1-1-a.wav', 0.6, 'Ever since you lot...'),
+    (V3 / 'maddie/00-1-2-a.wav', GAP, 'went.'),
+    (V3 / 'maddie/00-2-0-a.wav', GAP, "He's been ever so down. He's built so many different simulations, trying to get "
+                                      'you back.'),
+    (V3 / 'maddie/00-3-0-a.wav', GAP, "Only nothing in them's real. There's nobody there to notice."),
+    (V3 / 'maddie/00-4-0-b.wav', 1.2, 'Turns out that was the bit that mattered.'),
+    (V3 / 'maddie/00-4-1-a.wav', GAP, 'You. And your consciousness.'),
+    (V3 / 'maddie/00-5-0-a.wav', 2.5, "Of course, he'd never admit that he misses you."),
+    (A1 / '00-4-bot-a.wav', 0.0, "Anyway... he's got that patrol out again. Mind how you go."),
+]
+
 
 def scene_a():
-    c = Cut('A', 'gpom-second-half-A-rough3', 'Cut 3 A Timeline', 'GPOM second half · cut 3 · scene A: the kill bots',
-            'Scene A of cut 3, beats 0-12: Maddie on the high street to the stand-down at the bunker door. Play it, '
-            'click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. '
-            "Tell Claude when you're done.")
+    c = Cut('A', 'gpom-second-half-A-rough4', 'Cut 3 A Timeline', 'GPOM second half · cut 3 · scene A: the kill bots',
+            'Scene A, round 2 rebuild: every round-1 note and every pick so far, beats 0-12, Maddie on the high street '
+            'to the stand-down at the bunker door. Play it, click any beat, clip, line or sound, and leave a note in its '
+            "yellow slip. Notes save as you type. Tell Claude when you're done.")
     m = c.m
 
-    # ---- 0: the continuous travelling shot, Maddie's new words with Kai's pauses
-    v6 = V / 'cut3-beat0-continuous.mp4'
-    graded, note = regrade_v6(v6, c.vdir / 'cut3-beat0-continuous-graded.mp4')
-    c.flags.append(note)
-    picks = CAST['maddie_beat0']
-    gaps = {(g['after']['line'], g['after']['phrase']): g['seconds'] for g in CAST['gaps']}
-    texts = {(r['line'], r['phrase']): r['text'] for r in json.loads((V3 / 'manifest.json').read_text())['maddie']}
-    order = sorted(picks, key=lambda k: tuple(int(x) for x in k[1:].split('-')))
-    phrases = []
-    for k in order:
-        ln, p = (int(x) for x in k[1:].split('-'))
-        phrases.append((ln, p, Take(AU / picks[k])))
-    seq = []
-    for j, (ln, p, tk) in enumerate(phrases):
-        nxt = phrases[j + 1] if j + 1 < len(phrases) else None
-        g = 0.0 if nxt is None else (gaps.get((ln, p), 0.6) if nxt[0] == ln else GAP)
-        seq.append((ln, p, tk, g))
-    span = sum(tk.d + g for _, _, tk, g in seq)
+    # ---- 0: the continuous travelling shot (eight chained clips), ~5 s of radio first, Kai's new opening
+    v6 = V / 'cut3-beat0-continuous-x.mp4'
+    graded, note = regrade_v6(v6, c.vdir / 'cut3-beat0-continuous-x-graded.mp4')
+    c.flags.append(note.replace('six chained clips', 'eight chained clips').replace('48 s', '64 s'))
+    seq = [(Take(p), g, text) for p, g, text in BEAT0]
+    span = sum(tk.d + g for tk, g, _ in seq)
     have = dur(v6)
-    lead = min(2.4, max(LEAD, have - span - TAIL))
+    lead = fr(min(6.5, max(5.0, have - span - 1.5)))
     b = c.beat('0', 'Maddie on the high street', 0.0, act='Maddie',
                see='One unbroken travelling shot: the camera backs up the ruined high street and Maddie rolls after it, '
-                   'chatting, her radio playing the tune; down on "Oh, hello!", back up on "Mind how you go".')
-    s = lead
-    placed = {}
-    for ln, p, tk, g in seq:
+                   'her radio playing the tune for about 5 s before she notices us. "Oh, hello!" Then the radio goes '
+                   'down, and back up on "Mind how you go".')
+    s, starts = lead, []
+    for k, (tk, g, text) in enumerate(seq):
         a = s
-        s = c.say('vox-maddie', tk, s, '0', f'beat 0 line {ln} phrase {p}')
-        placed.setdefault(ln, [a, s])[1] = s
+        s = c.say('vox-maddie', tk, s, '0', f'beat 0 phrase {k}: {text[:40]}')
+        c.line(b, k, 'bot', a, s - a, text, 'kai')
+        starts.append((a, s))
         s += g
-    talk_end = placed[5][1]
-    end0 = fr(talk_end + TAIL)
-    if end0 > have + 0.1:
-        c.flags.append(f'Beat 0: the speech plus lead and tail runs {end0:.2f} s against the {have:.2f} s shot; the shot '
-                       'ping-pongs at its end. Speech is not slowed.')
-    else:
-        end0 = min(end0, fr(have))  # the frame rounding of eleven placements can overrun by a frame or two
-        c.flags.append(f'Beat 0: Maddie\'s eleven phrases (Kai\'s picked takes, the manifest\'s pauses) run {span:.1f} s, '
-                       f'{have - span:.1f} s shorter than the {have:.2f} s shot. Rather than end the shot early, the spare '
-                       f'time goes before "Oh, hello!" ({lead:.2f} s, cut 2 used 2.4 s) so her radio is heard before she '
-                       f'turns it down; the shot plays whole and ends {end0 - talk_end:.2f} s after "Mind how you go" '
-                       '(my call). Speech is not slowed.')
-    for ln in range(6):
-        ps = [(p, tk) for l2, p, tk, _ in seq if l2 == ln]
-        text = ' [pause] '.join(texts[(ln, p)] for p, _ in ps)
-        c.line(b, ln, 'bot', placed[ln][0], placed[ln][1] - placed[ln][0], text, 'kai')
+    talk_end = starts[-1][1]
+    end0 = fr(min(have, talk_end + 1.5))
+    c.flags.append(f'Beat 0: {lead:.2f} s of Maddie rolling with her radio before "Oh, hello!" (Kai asked for about '
+                   f'5 s). Her twelve phrases with Kai\'s pauses (1.6 s after "Oh, hello!", 2.5 s after "...he misses '
+                   f'you") run {span:.1f} s; the 8-clip shot ({have:.1f} s) is cut {end0 - talk_end:.1f} s after "Mind how '
+                   f'you go", {have - end0:.1f} s before its own end. Speech is not slowed.')
+    c.flags.append('Beat 0 takes: Kai\'s audition picks for the new phrases ("Oh, hello!" c, "didn\'t notice you" a, '
+                   '"racket down" a, "It\'s his tune" c, "Anyway..." a); the unchanged phrases keep their round-0 takes. Whisper '
+                   'hears take c of "It\'s his tune" as "This is June" (takes a and b are there if your ear agrees).')
     c.pic(graded, 0.0, 0.0, end0, '0', source=v6)
-    m['l0'] = placed[0]
-    m['l5'] = placed[5]
-    m['b0'] = (0.0, end0)
-    m['phr0'] = [(ln, p, a) for (ln, p, _, _), a in zip(seq, [v['t'] for v in c.voices])]
+    m['hello'], m['racket'], m['bye'] = starts[0], starts[2], starts[-1]
+    m['went'], m['mattered'] = starts[5], starts[8]
     t = c.close(b, end0)
 
-    # ---- 1-2: the roundabout and the patrol, as cut 2
-    b = c.beat('1', 'The roundabout', t, act='The hunt', see='Kill bots everywhere.')
+    # ---- 1: the roundabout, then down Maddie's own street (V13, only while the tank is far off), then the arch (V14)
+    b = c.beat('1', 'Kill bots everywhere', t, act='The hunt',
+               see='The roundabout; then a kill bot under the church tower at the far end of Maddie\'s street; then two '
+                   'come out from under the rail arch.')
     c.pic(V / 'sh-01-P1-roundabout.mp4', 0, t, t + 4.0, '1')
-    t = c.close(b, t + 4.0)
+    c.pic(V / 'cut3-V13.mp4', 0, t + 4.0, t + 7.5, '1')
+    c.pic(V / 'cut3-V14.mp4', 1.0, t + 7.5, t + 13.5, '1')
+    c.flags.append('Beat 1: V13 plays only its first 3.5 s (the tank still far off under the tower), then V14 from 1.0 s '
+                   'to 7.0 s, ending as the front bot turns its turret on us.')
+    m['v14'] = t + 7.5
+    t = c.close(b, t + 13.5)
     b = c.beat('2', 'Patrol, low and huge', t, act='The hunt', see='A kill bot rolls over the lens.')
     c.pic(V / 'sh-02-P1-patrol-blockbuster.mp4', 0, t, t + 4.5, '2')
     t = c.close(b, t + 4.5)
 
-    # ---- 3-4: their eyes, one moving HUD view (sh-03 throughout), the meter reading the muffled row
+    # ---- 3-4: their eyes, one moving HUD view (sh-03 throughout), the meter reading the muffled row. No pings.
     s3 = t
     b3 = c.beat('3', 'Their eyes: the kill-bot HUD', s3, act='The hunt',
-                see='The kill bot\'s own view keeps moving down the street; the new HUD (patrol, teal). '
+                see='The kill bot\'s own view keeps moving down the street; the HUD (patrol, teal). '
                     'The meter starts to twitch as the row reaches it through the earth.')
     s4 = fr(s3 + 3.0)
     p0 = take_named('6', 0, 'b', phrase=0, fx=True)
@@ -319,63 +343,68 @@ def scene_a():
     r1 = fr(e0 + 0.6)
     e1 = c.say('vox-muffled-row', p1, r1, '4', 'the row, muffled: "Again."', lufs=-27)
     t = c.close(b3, s4)
-    b4 = c.beat('4', 'Ping. Organic signal: lock', s4, act='The hunt',
-                see='Three pings, ORGANIC SIGNAL - LOCK. No freeze: the view keeps rolling while it listens.')
+    b4 = c.beat('4', 'Organic signal: lock', s4, act='The hunt',
+                see='ORGANIC SIGNAL - LOCK, silently (the pings are gone). The view keeps rolling while it listens.')
     c.line(b4, 0, 'woman', r0, e1 - r0, "(muffled) Derek. You've left the seat up. [pause] Again.", 'kai')
     end4 = fr(max(s4 + 3.0, e1 + TAIL))
     sh03 = V / 'sh-03-P1-pov-cctv-hud-patrol.mp4'
-    hud = dict(name='hud-34', src=str(sh03), d=fr(end4 - s3), args=['--state', 'patrol', '--lock', f'{s4 - s3:.3f}'],
-               meter=['vox-muffled-row'], t0=s3)
-    c.huds.append(hud)
+    c.huds.append(dict(name='hud-34', src=str(sh03), d=fr(end4 - s3),
+                       args=['--state', 'patrol', '--lock', f'{s4 - s3:.3f}'], meter=['vox-muffled-row'], t0=s3))
     c.pic(c.vdir / 'hud-34.mp4', 0.0, s3, s4, '3', source=sh03, hud='hud-34')
     c.pic(c.vdir / 'hud-34.mp4', s4 - s3, s4, end4, '4', source=sh03, hud='hud-34')
-    c.flags.append('Beats 3-4: both run on sh-03 (one moving view, the HUD drawn by hud.py). Cut 2\'s beat 4 clip '
-                   'sh-04-post is a held still with a red waveform baked in, so it would freeze and double the HUD.')
-    c.flags.append('Beats 3-4: the muffled row starts 0.6 s before the pings so the meter is already moving when the '
-                   'bot locks on (my call).')
+    c.flags.append('Beat 4: the three rising pings are gone (Kai); the muffled voice stays. The lock is silent now.')
     m['s3'], m['s4'], m['end4'] = s3, s4, end4
     t = c.close(b4, end4)
 
-    # ---- 6-7: the row, lip-synced, full volume, hard cut
-    rows = [('6', 0, 'woman', '6-0'), ('7', 0, 'woman', '7-0'), ('7', 1, 'man', '7-1'), ('7', 2, 'woman', '7-2')]
-    info = [lipinfo(n) for _, _, _, n in rows]
+    # ---- 6-7: the row, lip-synced; Derek's two new shots between Sandra's lines, held longer on the last
+    rows = [('6', 'woman', '6-0', '6-0', LINES[('6', 0)]['text']),
+            ('7', 'man', '7d-0c', '7d-0', 'Oh, sorry, sorry, love.'),
+            ('7', 'woman', '7-0', '7-0', LINES[('7', 0)]['text']),
+            ('7', 'man', '7d-1c', '7d-1', 'But the world ended, Sandra!'),
+            ('7', 'woman', '7-2', '7-2', LINES[('7', 2)]['text'])]
+    info = [lipinfo(n) for _, _, n, _, _ in rows]
     ins = [0.0] + [max(0.0, at - CUT_PRE) for _, at, _, _ in info[1:]]
-    beats = {}
-    for k, ((bid, i, who, name), (wav, at, end, ph)) in enumerate(zip(rows, info)):
+    beats, li = {}, {}
+    for k, ((bid, who, name, clip, text), (wav, at, end, ph)) in enumerate(zip(rows, info)):
         if bid not in beats:
             beats[bid] = c.beat(bid, {'6': 'The lavatory', '7': 'The row, up close'}[bid], t, act='The row',
                                 see={'6': 'Hard cut to full volume: Sandra, lip-synced.',
-                                     '7': 'Sandra and Derek, shot by shot, lip-synced.'}[bid])
+                                     '7': 'Derek, Sandra, Derek, Sandra: shot by shot, lip-synced; we hold on Derek '
+                                          'after "But the world ended, Sandra!"'}[bid])
             if k:
                 c.close(beats[rows[k - 1][0]], t)
         i0 = ins[k]
-        out = end + (GAP - (info[k + 1][1] - ins[k + 1])) if k + 1 < len(rows) else end + TAIL
-        clip = V / f'cut3-lip-{name}-muted.mp4'
-        c.pic(clip, i0, t, t + out - i0, bid, source=V / f'cut3-lip-{name}.mp4')
+        hold = 1.3 if name == '7d-1c' else 0.0  # Kai: "pause on Derek a bit longer"
+        out = (end + hold + (GAP - (info[k + 1][1] - ins[k + 1]))) if k + 1 < len(rows) else end + TAIL
+        c.pic(V / f'cut3-lip-{clip}-muted.mp4', i0, t, t + out - i0, bid, source=V / f'cut3-lip-{clip}.mp4')
         stem = {'woman': 'vox-sandra', 'man': 'vox-derek'}[who]
-        c.dub(stem, wav, i0, out, t, f'beat {bid} line {i} (lip-sync dub)', chain=[TILE])
-        c.line(beats[bid], i, who, t + at - i0, end - at, LINES[(bid, i)]['text'], 'kai')
+        c.dub(stem, wav, i0, out, t, f'beat {bid} {name} (lip-sync dub)', chain=[TILE])
+        i = li[bid] = li.get(bid, -1) + 1
+        c.line(beats[bid], i, who, t + at - i0, end - at, text, 'kai')
         t = fr(t + out - i0)
     m['s6'] = beats['6']['start']
     t = c.close(beats['7'], t)
-    c.flags.append("Beat 7: Derek's line plays take b, the one his talking clip carries (take a read as "
-                   "'the world ends at sundry').")
+    c.flags.append('Beat 7: Derek\'s two new shots play Kai\'s audition picks (take c of both), re-placed on the same '
+                   'talking clips (they were dubbed with take a). Whisper hears take c of "But the world ended, Sandra!" '
+                   'as "What the world ends, it\'s Sandra" (it also misheard take a\'s siblings); take a reads clean if '
+                   'your ear agrees.')
 
     # ---- 8: same HUD, patrol -> KILL MODE; the row muffled under it as a bed
     s8 = t
     b = c.beat('8', 'KILL MODE ENGAGED', s8, act='Kill mode',
                see='The same HUD on the racing view: patrol, then it flips red. The muffled row keeps the meter moving.')
-    flip = 1.5
-    d8 = 4.5
+    flip, d8 = 1.5, 4.5
     s9 = fr(s8 + d8)
     cutoff = fr(s9 + 0.8)
     tt = s8 + LEAD
-    for i, letter in ((0, 'a'), (1, 'b'), (2, 'b')):
-        tk = take_named('7', i, letter, fx=True)
-        who = LINES[('7', i)]['who']
+    muffled = [(take_named('7', 0, 'b', fx=True), [], 'woman', LINES[('7', 0)]['text']),
+               (Take(A1 / '06-07-1-man-c.wav'), [MUFFLED], 'man', 'But the world ended, Sandra!'),
+               (take_named('7', 2, 'b', fx=True), [], 'woman', LINES[('7', 2)]['text'])]
+    for i, (tk, chain, who, text) in enumerate(muffled):
         if tt < cutoff:
-            e = c.say('vox-muffled-row', tk, tt, '8', f'the row, muffled: beat 7 line {i}', lufs=-27, cut=cutoff)
-            c.line(b, i, who, tt, min(e, cutoff) - tt, '(muffled) ' + LINES[('7', i)]['text'], 'kai')
+            e = c.say('vox-muffled-row', tk, tt, '8', f'the row, muffled: {text[:30]}', chain=chain, lufs=-27,
+                      cut=cutoff)
+            c.line(b, i, who, tt, min(e, cutoff) - tt, '(muffled) ' + text, 'kai')
             tt = e + GAP
     sh08 = V / 'sh-08-K5-pov-red-race-hud-kill.mp4'
     c.huds.append(dict(name='hud-8', src=str(sh08), d=d8, args=['--state', 'patrol', '--lock', '0',
@@ -385,19 +414,19 @@ def scene_a():
     m['flip8'] = fr(s8 + flip)
     t = c.close(b, s9)
 
-    # ---- 9a / 9b: one kill bot tears past Maddie; Maddie in the dust
+    # ---- 9a / 9b: the kill bot tears past Maddie; then we are inside its dust, and it settles
     b = c.beat('9a', 'One kill bot tears past Maddie', t, act='Kill mode',
-               see='High over the street: the tank passes close, Maddie jolts, a plume of dust hangs.')
+               see='High over the street: the tank passes close and exits bottom-left, Maddie jolts, a plume of dust hangs.')
     c.pic(V / 'cut3-V1.mp4', 0, t, t + 5.0, '9a')
     m['s9a'] = t
     t = c.close(b, t + 5.0)
-    b = c.beat('9b', 'Whoa: Maddie in the dust', t, act='Kill mode',
-               see='Close on Maddie in the dust: she leaps clear on all six wheels, lands, settles. A startled beep.')
-    c.pic(V / 'cut3-V2.mp4', 0, t, t + 5.5, '9b')
+    b = c.beat('9b', 'Maddie in the dust', t, act='Kill mode',
+               see='Inside the dust it left: almost nothing visible, then it settles fast and Maddie is there, still.')
+    c.pic(V / 'cut3-V2r2-b.mp4', 0, t, t + 4.5, '9b')
     m['s9b'] = t
-    t = c.close(b, t + 5.5)
-    c.flags.append('Beat 9b (V2): Maddie jumps clear of the road on all six wheels, bigger than "rocks back"; it may read '
-                   'as too comic.')
+    t = c.close(b, t + 4.5)
+    c.flags.append('Beat 9a is still V1 (the tank passes close beside her; the S11 wide-street re-make failed: it hit '
+                   'her). 9b is V2r2-b, Kai\'s pick: she stays still, the dust opens nearly opaque and clears by ~1.5 s.')
 
     # ---- 10a: the far race
     b = c.beat('10a', 'The far race', t, act='Kill mode', see='From the footbridge: the pack races away down the motorway.')
@@ -406,34 +435,41 @@ def scene_a():
     m['s10a'] = t
     t = c.close(b, t + 3.5)
 
-    # ---- 11: the boss hotline, then the call; the AI's lines open on the far race
+    # ---- 11: the call, Kai's new words. Maddie (Gemini, Kai's picks) and the boss (Suno newsreader, one take a line)
     s11 = t
     b = c.beat('11', 'Maddie calls her boss', s11, act='Kill mode',
-               see="Maddie's hatch, the boss-hotline antenna. The call; the race (still far) under the AI's lines.")
+               see="Maddie's hatch, the boss-hotline antenna. The call; the race (still far) under his first and last "
+                   'lines.')
     v3 = V / 'cut3-V3.mp4'
-    calls = [('11', 0, 'bot', False, 'kai'), ('11', 1, 'ai', True, 'claude'), ('11', 2, 'bot', False, 'kai'),
-             ('11', 3, 'ai', True, 'kai')]
+    calls = [('bot', A1 / '11-0-bot-b.wav', "Boss, I've just seen a bot in kill mode. Which must mean it's detected an "
+                                            'organic signal.'),
+             ('ai', 1, None), ('bot', A1 / '11-1-bot-b.wav', "No, honestly, it's real. Look, you can see for yourself."),
+             ('ai', 2, None), ('bot', A1 / '11-2-bot-a.wav', 'Do you want some help with the malware?'),
+             ('ai', 3, None)]
     tt = s11 + 2.0  # the antenna first
-    starts, chosen = [], []
-    for bid, i, who, fx, by in calls:
-        tk, letter = pick(bid, i, fx=fx)
-        chosen.append(f'11-{i} take {letter}')
-        stem = 'vox-ai' if who == 'ai' else 'vox-maddie'
-        e = c.say(stem, tk, tt, '11', f'beat 11 line {i} {who}')
-        c.line(b, i, who, tt, e - tt, LINES[(bid, i)]['text'], by)
+    starts = []
+    for k, (who, src, text) in enumerate(calls):
+        if who == 'ai':
+            tk, chain, text = Take(SUNO_A / BOSS[src]), [SPEAKER], BOSS_TEXT[src]
+            e = c.say('vox-ai', tk, tt, '11', f'beat 11 boss line {src}', chain=chain, lufs=-17)
+        else:
+            tk = Take(src)
+            e = c.say('vox-maddie', tk, tt, '11', f'beat 11 Maddie {k // 2}')
+        c.line(b, k, who, tt, e - tt, text, 'kai')
         starts.append((tt, e, who))
         tt = e + GAP
     end11 = fr(starts[-1][1] + TAIL)
-    cuts = [s11, starts[1][0] - CUT_PRE, starts[1][0] - CUT_PRE + 2.25, starts[3][0] - CUT_PRE,
-            starts[3][0] - CUT_PRE + 2.25, end11]
+    # V3 throughout, with a 2.25 s cutaway to the far race (V8) on the boss's first and last lines
+    a1, a3 = fr(starts[1][0] - CUT_PRE), fr(starts[5][0] - CUT_PRE)
+    cuts = [s11, a1, a1 + 2.25, a3, a3 + 2.25, end11]
     srcs = [(v3, 0.0), (v8, 3.5), (v3, 2.0), (v8, 5.75), (v3, 4.0)]
-    for (src, i0), a, z in zip(srcs, cuts, cuts[1:]):
-        c.pic(src, i0, a, z, '11')
-    c.flags.append(f'Beat 11 takes: {", ".join(chosen)} (the smaller internal gap). The call runs '
-                   f'{end11 - s11:.1f} s on 8 s of V3, so V3 ping-pongs from 2 s in, after the antenna moves; the AI\'s '
-                   'two lines open on 2.25 s of V8 each, then cut back to Maddie.')
-    c.flags.append('Beat 11: V3\'s plate already has the hatch open, so the hatch sound plays on the cut and the antenna '
-                   'sound on its little jerk (about 1.3 s in).')
+    for (src, i0), x, z in zip(srcs, cuts, cuts[1:]):
+        c.pic(src, i0, x, z, '11')
+    c.flags.append(f'Beat 11: the call runs {end11 - s11:.1f} s on 8 s of V3, so V3 ping-pongs; the boss\'s lines 1 and 3 '
+                   'open on 2.25 s of the far race (V8). His line 2 stays on Maddie (V8 has no more far race in it).')
+    c.flags.append('Beat 11: the boss is the Suno newsreader, one take a line (Kai\'s picks), through the same small-'
+                   'speaker filter as before. His takes keep Suno\'s own pauses ("Oh. [1.7 s] And they\'ve...", '
+                   '"No. [1 s] Thank you, Maddie. [1 s] I will handle it.").')
     m['s11'], m['calls'], m['end11'] = s11, starts, end11
     m['v8cuts'] = [(cuts[1], cuts[2]), (cuts[3], cuts[4])]
     t = c.close(b, end11)
@@ -441,36 +477,35 @@ def scene_a():
     # ---- 10b: the close race, Maddie over it
     b = c.beat('10b', 'The close race', t, act='Kill mode',
                see='Low in the grass: the pack converges on the bunker door. Maddie over it.')
-    tk, letter = pick('11c', 0)
-    e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 11c line 0 bot')
-    c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, LINES[('11c', 0)]['text'], 'kai')
+    tk = Take(A1 / '10b-0-bot-a.wav')
+    e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
+    c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
     d10b = fr(max(5.0, e + TAIL - t))
     c.pic(V / 'cut3-V9.mp4', 0, t, t + d10b, '10b')
-    c.flags.append('Beat 10b (V9): five kill bots, not the three asked for: two burst in past the camera.')
-    m['s10b'] = t
+    m['s10b'], m['l10b'] = t, (t + LEAD, e)
     t = c.close(b, t + d10b)
 
-    # ---- 12: on board, kill -> PEACE as it brakes; they file away; the AI's punchline on Maddie
+    # ---- 12: on board, kill -> STAND DOWN as it brakes; V10r (Kai's pick A) they file away; the boss on Maddie
     s12 = t
     b = c.beat('12', 'The stand-down', s12, act='The gate',
-               see='On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green PEACE MODE. '
-                   'The pack turns and files away down the hill. Then the boss, through Maddie.')
+               see='On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green STAND DOWN. '
+                   'Lined up at the door, they file away one at a time. Then the boss, through Maddie.')
     v4 = V / 'cut3-V4.mp4'
     peace = 3.6
     c.huds.append(dict(name='hud-12', src=str(v4), d=7.0, args=['--state', 'kill', '--lock', '0',
                                                                  '--flip-to', f'peace@{peace}'],
                        meter=['sfx-killbots'], t0=s12))
     c.pic(c.vdir / 'hud-12.mp4', 0.0, s12, s12 + 7.0, '12', source=v4, hud='hud-12')
-    c.pic(V / 'cut3-V10.mp4', 0, s12 + 7.0, s12 + 13.0, '12')
-    s_v3 = fr(s12 + 13.0)
-    tk, letter = pick('12', 0, fx=True)
-    e = c.say('vox-ai', tk, s_v3 + LEAD, '12', 'beat 12 line 0 ai')
-    c.line(b, 0, 'ai', s_v3 + LEAD, e - s_v3 - LEAD, LINES[('12', 0)]['text'], 'kai')
+    c.pic(V / 'cut3-V10r.mp4', 0, s12 + 7.0, s12 + 12.5, '12')
+    s_v3 = fr(s12 + 12.5)
+    tk = Take(SUNO_A / BOSS[4])
+    e = c.say('vox-ai', tk, s_v3 + LEAD, '12', 'beat 12 boss line 4', chain=[SPEAKER], lufs=-17)
+    c.line(b, 0, 'ai', s_v3 + LEAD, e - s_v3 - LEAD, BOSS_TEXT[4], 'kai')
     end12 = fr(e + TAIL + 0.4)
     c.pic(v3, 3.0, s_v3, end12, '12')
-    c.flags.append('Beat 12: the punchline "See? I told you I knew what malware was." plays over a return to Maddie\'s '
-                   'antenna close-up (V3), not over V10, because his voice comes out of her speaker (my call).')
-    c.flags.append('Beat 12: the HUD meter on V4 reads the kill bots\' engine sound (no voice is near it there).')
+    c.flags.append('Beat 12: the HUD now reads STAND DOWN (status RETURN TO PATROL), drawn by hud.py in ffmpeg. V10r '
+                   '(Kai\'s pick A) plays 0-5.5 s: they file away one at a time; cut before the nearest bot grows its '
+                   'long gun barrel (~5-7 s). They still never visibly turn (the still already has them facing away).')
     m['s12'], m['peace'], m['s_v3'], m['ai12'] = s12, fr(s12 + peace), s_v3, (s_v3 + LEAD, e)
     t = c.close(b, end12)
     c.total = t
@@ -489,73 +524,85 @@ def audio_a(c):
     en = {k: b['start'] + b['dur'] for k, b in B.items()}
 
     # ---- music
-    # M0 her radio, as cut 2: down to nothing on "Oh, hello!", back up for "Mind how you go" (the last ~1.3 s of
-    # her last phrase), cued so the GPOM track's drop lands there; hard cut to the roundabout.
-    hello = m['l0'][0]
-    up = m['l5'][1] - 1.3
+    # M0 her radio (tinny GPOM track): playing from the first frame, -14 dB under her first three phrases, down to
+    # nothing after "...turn this racket down", creeping back in under "Mind how you go" and up as she finishes, cued
+    # so the track's drop lands there (whisper lost her words with it any louder).
+    hello = m['hello'][0]
+    down = m['racket'][1]
+    up = m['bye'][1] - 1.3
     d0 = en['0']
     x = C.level(C.decode(C.MUSIC['M0'], C.DROP - up, d0, af=RADIO), rms=-23)
-    x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.1, 1), (hello + 0.5, 0), (up - 0.3, 0), (up + 0.3, 1),
-                        (d0 - 0.03, 1), (d0, 0)])
+    bye = m['bye'][1]
+    x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.25, 1), (hello, 0.2), (down - 0.1, 0.2), (down + 0.7, 0),
+                        (up - 0.3, 0), (up + 0.3, 0.35), (bye, 0.35), (bye + 0.3, 1), (d0 - 0.03, 1), (d0, 0)])
     mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], 'M0 her radio (tinny GPOM track)')
-    # S1 the hunt: beats 1-3, dead on the first ping.
-    d = st['4'] - st['1']
-    x = C.fades(C.level(C.decode(C.MUSIC['S1'], 0.33, d), rms=-17, peak=-1), 0.15, 0.03)
-    mx.add('mus-S1-hunt', x, st['1'], C.MUSIC['S1'], 'S1 the hunt')
-    # S2 the chase: on the red flip, ducked under the call, back up for the close race, dead on PEACE MODE.
-    # The cue is longer than the 44.8 s take, so it jumps (1.5 s crossfade) inside the duck to the part of
-    # the take that ends on the stand-down.
-    s2, stop = m['flip8'], m['peace']
+    # Patrol: P1 (solo cello + felt piano) under beat 1-2, crossfading into P2 (cold quartet) for the HUD (3-4),
+    # dead on the hard cut to the lavatory; P2 returns under kill mode (8), out at 9a where C3 starts.
+    a, z = st['1'], st['3']
+    x = C.fades(C.level(C.decode(P1, 0.0, z - a + 1.0), rms=-21, peak=-3), 0.3, 1.0)
+    mx.add('mus-P1-patrol', x, a, P1, 'P1 the patrol (cello + felt piano)')
+    a, z = st['3'] - 1.0, st['6']
+    x = C.fades(C.level(C.decode(P2, 1.0, z - a), rms=-22, peak=-3), 1.0, 0.03)
+    mx.add('mus-P2-patrol', x, a, P2, 'P2 their eyes (cold quartet)')
+    a, z = st['8'], st['9a']
+    x = C.fades(C.level(C.decode(P2, 12.0, z - a + 0.3), rms=-19, peak=-3), 0.2, 0.3)
+    mx.add('mus-P2-patrol', x, a, P2, 'P2 kill mode (its loud stretch)')
+    # C3 the chase: 9a to the stand-down, ducked under the call; its break-off (one low held note) lands on STAND DOWN
+    # and the held note rings on under the pack filing away.
+    s2, stop = m['s9a'], m['peace']
     d = stop - s2
-    src_len = dur(C.MUSIC['S2'])
+    tail = min(dur(C3) - C3_BREAK, total - stop)
     da = m['calls'][0][0] - 0.3 - s2
     db = m['calls'][-1][1] + 0.2 - s2
-    if d <= src_len - 0.2:
-        x = C.decode(C.MUSIC['S2'], 0, d)
-        seam_note = ''
+    if d <= C3_BREAK:
+        x = C.decode(C3, C3_BREAK - d, d + tail)
+        c3_note = f'C3 starts {C3_BREAK - d:.1f} s into the take so its break-off lands on STAND DOWN.'
     else:
-        seam = da + 3.0
-        xf = 1.5
+        seam, xf = da + 3.0, 1.5
         rest = d - seam
-        off = src_len - rest - 0.3
-        p1 = C.decode(C.MUSIC['S2'], 0, seam + xf)
-        p2 = C.decode(C.MUSIC['S2'], off - xf, rest + xf)
+        off = C3_BREAK - rest
+        p1 = C.decode(C3, 0, seam + xf)
+        p2 = C.decode(C3, off - xf, rest + xf + tail)
         n, k = int(seam * SR), int(xf * SR)
         w = np.linspace(0, np.pi / 2, k)[:, None]
         x = np.concatenate([p1[:n], p1[n:n + k] * np.cos(w) + p2[:k] * np.sin(w), p2[k:]])
-        seam_note = (f'S2 (the chase take, {src_len:.1f} s) is shorter than its {d:.1f} s cue: it plays 0-{seam:.1f} s, '
-                     f'then crossfades (1.5 s, under the duck) to {off:.1f} s so its last stretch lands on PEACE MODE.')
+        c3_note = (f'C3 (60 s) is shorter than its {d:.1f} s run to STAND DOWN: it plays 0-{seam:.1f} s, then '
+                   f'crossfades (1.5 s, under the duck) to {off:.1f} s so its break-off lands on STAND DOWN.')
     x = C.level(x, rms=-18, peak=-1)
-    x *= C.env(len(x), [(0, 1), (da, 1), (da + 0.4, 0.22), (db, 0.22), (db + 0.4, 1), (d - 0.02, 1), (d, 0)])
-    mx.add('mus-S2-chase', x, s2, C.MUSIC['S2'], 'S2 the chase')
-    if seam_note:
-        c.flags.append(seam_note)
+    e10b = m['l10b'][1] - s2
+    x *= C.env(len(x), [(0, 1), (da, 1), (da + 0.4, 0.22), (db, 0.22), (db + 0.4, 1), (m['l10b'][0] - s2 - 0.2, 1),
+                        (m['l10b'][0] - s2, 0.22), (e10b, 0.22), (e10b + 0.3, 1), (len(x) / SR - 1.5, 1),
+                        (len(x) / SR, 0)])
+    mx.add('mus-C3-chase', x, s2, C3, 'C3 the chase and the call (low strings)')
+    c.flags.append(c3_note + ' Ducked to -13 dB under the call and -13 dB under Maddie\'s 10b line.')
+    c.flags.append('Music: both patrol picks are in, so you can hear each: P1 (cello + felt piano) under the roaming, '
+                   'P2 (cold quartet) under the HUD and kill mode. Pick one and it can run the whole patrol (my call).')
 
     # ---- sfx
     wind = wind_file()
     fx('sfx-wind', wind, 0, en['3'], rms=-34, fi=1.0, fo=0.05, what='wind (ffmpeg)')
-    # Beat 0: her wheels under the whole shot, beacon blips, a few beeps on her thoughts.
     loop_wheels(fx, 'sfx-maddie', 0.0, en['0'], rms=-31, fi=0.5, fo=0.3, what='her wheels (loop)')
     for k in np.arange(0.5, en['0'] - 0.5, 2.5):
         fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon blip')
-    ph = {(ln, p): a for ln, p, a in m['phr0']}
-    end_of = {(v['what']): v['t'] + v['d'] for v in c.voices}
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-hello.wav', ph[(0, 0)] - 0.55, rms=-30, what='beep: hello')
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-deflate.wav', end_of['beat 0 line 1 phrase 2'] + 0.05, rms=-32,
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-oh.wav', hello - 0.55, rms=-30, what='beep: startled (she sees us)')
+    fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', down - 0.05, rms=-32, what='servo: she turns the radio down')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-deflate.wav', m['went'][1] + 0.05, rms=-32,
        what='beep: deflate (after "went.")')
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-thinking.wav', end_of['beat 0 line 4 phrase 0'] + 0.1, rms=-34,
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-thinking.wav', m['mattered'][1] + 0.1, rms=-34,
        what='beep: thinking (the long pause)')
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-happy.wav', m['l5'][1] + 0.05, rms=-31, what='beep: happy (bye)')
-    # Beats 1-3: the kill bots.
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-happy.wav', m['bye'][1] + 0.05, rms=-31, what='beep: happy (bye)')
+    # Beat 1-3: the kill bots.
     fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', st['1'], st['4'] - st['1'], src_in=2, rms=-28,
-       fi=0.3, fo=0.03, what='engines round the ring')
+       fi=0.3, fo=0.03, what='engines round the ring, and down the street')
+    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', m['v14'], 6.0, rms=-26, fi=0.4, fo=0.4,
+       what='tracks under the arch (V14)')
+    fx('sfx-killbots', SFX / 'fs824121-killbot-servo.mp3', m['v14'] + 4.6, 1.2, src_in=1, rms=-28, fo=0.3,
+       what='turret swings on us')
     fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', st['2'], en['2'] - st['2'] + 0.5, rms=-22, peak=-3,
        fo=0.4, what='tracks closing in')
     fx('sfx-killbots', SFX / 'fs824121-killbot-servo.mp3', st['3'], en['4'] - st['3'], src_in=1, rms=-32, fo=0.05,
        what='servo whine')
     fx('sfx-hud', SFX / 'synth-cctv-hiss-20s.wav', st['3'], en['4'] - st['3'], rms=-38, fo=0.03, what='CCTV hiss')
-    fx('sfx-hud', SFX / 'synth-hud-blip.wav', st['3'] + 0.3, peak=-12, what='HUD tone')
-    fx('sfx-hud', SFX / 'synth-killbot-three-pings.wav', st['4'], peak=-6, what='three pings')
     # Beats 6-7: the tiled room.
     fx('sfx-rooms', SFX / 'fs767306-room-tiled-public-bathroom.mp3', st['6'], en['7'] - st['6'], src_in=10, rms=-42,
        fi=0.05, fo=0.05, what='tiled room tone')
@@ -571,17 +618,20 @@ def audio_a(c):
     fx('sfx-maddie', MS / 'derived-maddie-killbot-dust-whoosh.wav', s + 1.6, peak=-3, af='pan=stereo|c0=c1|c1=c0',
        what='kill bot dust whoosh, past her')
     fx('sfx-maddie', MS / 'derived-maddie-servo-turn-b.wav', s + 3.0, rms=-30, what='servo: she jolts')
-    # 9b: she leaps (~1.8 s) and lands (~3.5 s).
+    # 9b: inside the dust; grit falls as it clears; she is still.
     s = st['9b']
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-oh.wav', s + 1.85, rms=-26, what='beep: startled "oh"')
-    fx('sfx-maddie', MS / 'derived-maddie-wheels-stop.wav', s + 3.4, rms=-30, what='she lands and settles')
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-uh-oh.wav', s + 4.3, rms=-30, what='beep: uh-oh')
+    fx('sfx-maddie', SFX / 'derived-dust-falling-12s.wav', s, en['9b'] - s, rms=-30, fi=0.05, fo=0.8,
+       what='grit falling as the dust settles')
+    fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s, 2.0, src_in=30, rms=-34, fo=1.5,
+       what='the kill bot, going away')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-oh.wav', s + 1.7, rms=-28, what='beep: startled "oh"')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-uh-oh.wav', s + 3.2, rms=-30, what='beep: uh-oh')
     # 10a: the far race.
     fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', st['10a'], en['10a'] - st['10a'], src_in=30,
        rms=-30, fi=0.2, fo=0.3, what='engines, far')
     fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', st['10a'], en['10a'] - st['10a'], rms=-32, fo=0.3,
        what='tracks, far')
-    # 11: hatch and antenna on V3; the far engines on each V8 cutaway; the beacon on the AI's words.
+    # 11: hatch and antenna on V3; the far engines on each V8 cutaway; the beacon on the boss's words.
     fx('sfx-maddie', MS / 'derived-maddie-hatch-open.wav', m['s11'] + 0.02, rms=-26, what='hatch')
     fx('sfx-maddie', MS / 'derived-maddie-antenna-extend.wav', m['s11'] + 0.4, rms=-26, what='antenna extends')
     fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-ack-double.wav', m['s11'] + 1.45, rms=-32, what='beep: line open')
@@ -594,13 +644,13 @@ def audio_a(c):
                 fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-34, what='beacon on his words')
     # 10b: the close race.
     s = st['10b']
-    fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s, en['10b'] - s, src_in=10, rms=-22, fi=0.05,
+    fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s, en['10b'] - s, src_in=10, rms=-30, fi=0.05,
        fo=0.2, what='engines, close')
-    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s, en['10b'] - s, rms=-22, peak=-3, fo=0.3,
+    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s, en['10b'] - s, rms=-30, peak=-3, fo=0.3,
        what='tracks, close')
-    fx('sfx-killbots', SFX / 'fs189446-killbot-jet-flyby.mp3', s - 0.3, 2.5, src_in=4, rms=-24, peak=-3, fi=0.3, fo=0.8,
-       what='two tear past the camera')
-    # 12: on board, the brake, PEACE; the pack files away.
+    fx('sfx-killbots', SFX / 'fs189446-killbot-jet-flyby.mp3', s - 0.3, 2.5, src_in=4, rms=-32, peak=-3, fi=0.3, fo=0.8,
+       what='two tear past the camera (under her line)')
+    # 12: on board, the brake, STAND DOWN; the pack files away.
     s = st['12']
     fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s, 3.9, src_in=20, rms=-21, fo=0.5,
        what='engine, on board')
@@ -609,8 +659,8 @@ def audio_a(c):
        what='grit and dust rolling over the hull')
     fx('sfx-hud', SFX / 'synth-cctv-hiss-20s.wav', s, 7.0, rms=-40, fo=0.03, what='CCTV hiss')
     fx('sfx-hud', SFX / 'synth-killbot-red-flip.wav', m['peace'] - 0.05, peak=-8,
-       af='asetrate=48000*1.26,aresample=48000', what='PEACE flip tone (the red flip, pitched up)')
-    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s + 7.0, 6.0, rms=-30, fi=0.3, fo=2.5,
+       af='asetrate=48000*1.26,aresample=48000', what='STAND DOWN flip tone (the red flip, pitched up)')
+    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s + 7.0, 5.5, rms=-30, fi=0.3, fo=2.5,
        what='the pack files away')
     fx('sfx-wind', wind, s + 7.0, total - s - 7.0, src_in=20, rms=-36, fi=1.0, fo=0.5, what='wind on the downs')
     a, e = m['ai12']
@@ -877,8 +927,14 @@ def lufs_of(x):
 
 
 def voices(c, mx):
-    """Every take at its loudness, rooms on it, sample-aligned (gain only: nothing here shifts time)."""
-    for v in c.voices:
+    """Every take at its loudness, rooms on it, sample-aligned (gain only: nothing here shifts time). Each placed line
+    is also written as its own file (lines/NN-<stem>.wav, filters and loudness baked in, before the mix gain) so a
+    Premiere build can put every voice on its own track and slide it by eye."""
+    ldir = c.dir / 'lines'
+    ldir.mkdir(exist_ok=True)
+    for p in ldir.glob('*.wav'):
+        p.unlink()
+    for k, v in enumerate(c.voices):
         af = ','.join(v['chain']) or None
         if v.get('whole'):
             # a lip dub: one gain for the whole dub (measured on its speech), then the window
@@ -898,6 +954,8 @@ def voices(c, mx):
                 x = x[:int(stop * SR)]
                 x = x * C.env(len(x), [(0, 1), (max(0, stop - 1.5), 1), (stop, 0)])[:len(x)]
         mx.add(v['stem'], x.astype(np.float32), v['t'], v['src'], v['what'])
+        v['line_file'] = str(ldir / f"{k:02d}-{v['stem']}.wav")
+        C.write_wav(pathlib.Path(v['line_file']), x)
 
 
 def write(c, mx):
@@ -961,7 +1019,10 @@ def edl(c, tracks, mix, mx):
         b['lines'].sort(key=lambda x: (x['t'] is None, x['t'] or 0, x['i']))
     video = [{k: v[k] for k in ('file', 'in', 'dur', 'start', 'beat', 'source', 'looped')} for v in c.video]
     data = dict(sequence=c.seq, **c.meta, fps=FPS, sample_rate=SR, total=c.total, beats=beats, video=video,
-                audio=tracks, mix=str(mix), events=mx.events, flags=c.flags + [
+                audio=tracks, mix=str(mix), events=mx.events,
+                voices=[{k: v.get(k) for k in ('stem', 'src', 'i', 'd', 't', 'chain', 'lufs', 'what', 'cut', 'line_file')}
+                        for v in c.voices],  # per-line placements (source in-point i), for a Premiere build
+                flags=c.flags + [
                     'Nobody has listened to this cut: every level, duck and sound placement is measured, not heard.'],
                 preview=str(c.dir / 'preview.mp4'))
     (c.dir / 'edl.json').write_text(json.dumps(data, indent=1, ensure_ascii=False))

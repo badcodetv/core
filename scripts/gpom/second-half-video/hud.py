@@ -11,7 +11,7 @@ shot in beat 12 (kill -> peace at the door).
            [--no-audio-out] [--zoom 1.0]
 
   --state flip@3.2          shorthand for --state patrol --flip-to kill@3.2
-  --state kill --flip-to peace@4.0   the stand-down at the door (green PEACE MODE)
+  --state kill --flip-to peace@4.0   the stand-down at the door (green STAND DOWN)
   --flip-to may repeat: --state patrol --flip-to kill@2 --flip-to peace@6
   --lock@2.0 (or --lock 2.0)  'ORGANIC SIGNAL - LOCK' and the lock brackets appear at 2.0 s
   --audio-at 0.4            the wav starts 0.4 s into the clip (meter and output audio both)
@@ -45,7 +45,7 @@ STATES = {
     'kill':   dict(col='0xFF3B2F', grade='hue=s=0,colorchannelmixer=rr=1.18:gg=0.36:bb=0.32,eq=contrast=1.12:brightness=0.02',
                    mode='KILL MODE', status='WEAPONS FREE', banner='KILL MODE ENGAGED'),
     'peace':  dict(col='0x46FF7E', grade='hue=s=0,colorchannelmixer=rr=0.42:gg=1.04:bb=0.55,eq=contrast=1.04',
-                   mode='PEACE MODE', status='STAND DOWN  //  RETURN', banner='PEACE MODE'),
+                   mode='STAND DOWN', status='RETURN TO PATROL', banner='STAND DOWN'),  # Kai 21 Oct: not PEACE MODE
 }
 
 # LAYOUT (1280x720)

@@ -1,6 +1,6 @@
 ---
 title: GPOM second half, scene A (kill bots): the boss's lines + the music
-status: 🟡 round 3 (22 Oct) — boss-1 + C3 picked and recorded; boss lines 2–4 revision B (new words) generated, picks owed (Kai)
+status: ✅ all picks recorded (23 Oct) — boss lines 1–4, patrol P1/P2, chase C3; in the scene A round 2 rebuild
 kind: one narrator take (the boss, dry) + two instrumental cues (P the patrol, C the chase and the call)
 model: v6
 workspace: gpom-story
@@ -358,6 +358,26 @@ vocals, singing, choir, pizzicato, plucked strings, string quartet, string ensem
 ## Round log
 
 New rounds at the top.
+
+### Round 4 (2026-10-23) · Kai's round 3 picks recorded · no Creates
+
+**Kai's round 3 picks, recorded** (never downloaded; `record-checked.py`, length matched to the takes list; 0 credits):
+boss line 2 = `gpom-sh-a-boss-2-B-v6-w25` [d7aaef3e](https://suno.com/song/d7aaef3e-9921-4d23-9384-107f917b9425) (6.40 s),
+boss line 3 = `gpom-sh-a-boss-3-B-v6-w10` [bfb1220b](https://suno.com/song/bfb1220b-2b48-4993-89d4-5047cac9f4a1) (6.00 s),
+boss line 4 = `gpom-sh-a-boss-4-B-v6-w25` [543dafef](https://suno.com/song/543dafef-3e5e-449f-a783-7260e599c848) (7.60 s).
+Files in `/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/` (`.wav` + `.preview.mp3`).
+
+Whisper (faster-whisper small.en) hears every word on all four boss picks: line 1 *"Maddie, are you making fun of my
+simulations again?"*; line 2 *"Oh, and they've activated their firewalls."* (1.7 s pause after "Oh"); line 3 *"No. Thank
+you, Maddie. I will handle it."*; line 4 *"It was useful to keep that zero day up my sleeve."* (a 1.1 s stretch on
+"useful to" and a 1.0 s one on "day up": the read is slow, not gapped). The listen tool was not run.
+
+⚠ **Recording incident:** WSLg's PulseAudio wedged after the first take (`pactl` timing out, then connection refused;
+`SINK_NOT_FOUND` / `PLAY_NOT_MAPPED` / `PULSE_FAILED`). Fixed per `docs/listening/automation.md`:
+`./scripts/audio-server.sh` started the private PulseAudio (`unix:/tmp/badcode-pulse/native`, records but is not
+audible in WSL), then `browser-channel.sh down 1 && up 1` relaunched channel 1 onto it and `suno.mts open-tab` reopened
+the one Suno tab. The other two recorded first time. Channel 1 now plays into the private server until it is relaunched
+again with WSLg healthy.
 
 ### Round 3 (2026-10-22) · boss lines 2–4 revision B (new words) · picks owed (Kai)
 
