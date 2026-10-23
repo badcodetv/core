@@ -4,6 +4,7 @@ import { z } from 'zod'
 import { NAME, VERSION } from './version'
 import { FlowClient } from './flow-client'
 import { ok, fail, NOT_RUNNING_HINT, type ToolResult } from './result'
+import { stampFlow } from './prov'
 import { resolveChannel, releaseLock, surveyChannels, profileFor, probe, type Resolution } from './channel'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
@@ -295,12 +296,15 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.generateImage(prompt, outPath, {
-            ...(character ? { character } : {}),
-            ...(numOutputs ? { numOutputs } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-          }),
+          stampFlow(
+            await c.generateImage(prompt, outPath, {
+              ...(character ? { character } : {}),
+              ...(numOutputs ? { numOutputs } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+            }),
+            { kind: 'image', tool: 'flow_generate_image', prompt, model: model ?? null, inputs: { character: character ?? null }, settings: { aspect: aspect ?? null, numOutputs: numOutputs ?? 1 } },
+          ),
         ),
       )
     } catch (err) {
@@ -333,12 +337,15 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.editImage(prompt, referenceImages, outPath, {
-            ...(numOutputs ? { numOutputs } : {}),
-            ...(character ? { character } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-          }),
+          stampFlow(
+            await c.editImage(prompt, referenceImages, outPath, {
+              ...(numOutputs ? { numOutputs } : {}),
+              ...(character ? { character } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+            }),
+            { kind: 'image', tool: 'flow_edit_image', prompt, model: model ?? null, parent: referenceImages[0], inputs: { references: referenceImages, character: character ?? null }, settings: { aspect: aspect ?? null, numOutputs: numOutputs ?? 2 } },
+          ),
         ),
       )
     } catch (err) {
@@ -372,10 +379,14 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.refine(prompt, outPath, {
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-          }),
+          stampFlow(
+            await c.refine(prompt, outPath, {
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+            }),
+            // A refine builds on the session's last image, which this call never names: say so.
+            { kind: 'image', tool: 'flow_refine', prompt, model: model ?? null, inputs: { follows: 'the previous image in the same Flow session' }, settings: { aspect: aspect ?? null } },
+          ),
         ),
       )
     } catch (err) {
@@ -435,17 +446,20 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.generateVideo({
-            motion,
-            outPath,
-            ...(startImage ? { startImage } : {}),
-            ...(endImage ? { endImage } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-            ...(count ? { count } : {}),
-            ...(durationSeconds ? { durationSeconds } : {}),
-            ...(character ? { character } : {}),
-          }),
+          stampFlow(
+            await c.generateVideo({
+              motion,
+              outPath,
+              ...(startImage ? { startImage } : {}),
+              ...(endImage ? { endImage } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+              ...(count ? { count } : {}),
+              ...(durationSeconds ? { durationSeconds } : {}),
+              ...(character ? { character } : {}),
+            }),
+            { kind: 'video', tool: 'flow_generate_video', prompt: motion, model: model ?? 'Veo 3.1 Fast', parent: startImage ?? null, inputs: { start: startImage ?? null, end: endImage ?? null, character: character ?? null }, settings: { aspect: aspect ?? '16:9', count: count ?? 1, durationSeconds: durationSeconds ?? null } },
+          ),
         ),
       )
     } catch (err) {
@@ -484,13 +498,16 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.refineVideo({
-            mediaId,
-            motion,
-            outPath,
-            ...(model ? { model } : {}),
-            ...(durationSeconds ? { durationSeconds } : {}),
-          }),
+          stampFlow(
+            await c.refineVideo({
+              mediaId,
+              motion,
+              outPath,
+              ...(model ? { model } : {}),
+              ...(durationSeconds ? { durationSeconds } : {}),
+            }),
+            { kind: 'video', tool: 'flow_refine_video', prompt: motion, model: model ?? null, inputs: { refines_media_id: mediaId }, settings: { durationSeconds: durationSeconds ?? null } },
+          ),
         ),
       )
     } catch (err) {
@@ -525,13 +542,16 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.generateBatch(prompts, outDir, {
-            ...(character ? { character } : {}),
-            ...(numOutputs ? { numOutputs } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-            ...(resume ? { resume } : {}),
-          }),
+          stampFlow(
+            await c.generateBatch(prompts, outDir, {
+              ...(character ? { character } : {}),
+              ...(numOutputs ? { numOutputs } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+              ...(resume ? { resume } : {}),
+            }),
+            { kind: 'image', tool: 'flow_generate_batch', model: model ?? null, inputs: { character: character ?? null }, settings: { aspect: aspect ?? null, numOutputs: numOutputs ?? 1 } },
+          ),
         ),
       )
     } catch (err) {

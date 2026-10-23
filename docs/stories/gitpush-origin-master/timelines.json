@@ -1,0 +1,206 @@
+{
+ "story": "gitpush-origin-master",
+ "title": "GitPush Origin Master",
+ "url": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
+ "updated": "2026-10-23",
+ "open_now": "b-door",
+ "intro": "The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under \"Earlier pages\" so nothing gets lost.",
+ "sections": [
+  {
+   "id": "music-video",
+   "group": "Part 1 · The music video (the downfall)",
+   "name": "The track: the push, the banks, the war",
+   "length": "3:58",
+   "state": "in Premiere",
+   "tone": "premiere",
+   "premiere": "gpom-story.prproj · sequence gpom-s01",
+   "what": "Kai cuts this himself in Premiere. The drum & bass track is the downfall (Kai, 15 Oct). It was made before timeline pages existed, so there's no timeline page; the boards that fed each part are below.",
+   "parts": [
+    {
+     "id": "mv-opening",
+     "name": "Opening, the push, the drop",
+     "at": "0:00",
+     "state": "in Premiere",
+     "tone": "premiere",
+     "history": [
+      {
+       "name": "Opening recut board",
+       "url": "https://claude.ai/artifact/SmYozTsKzUzB6Ask9rQs5H",
+       "kind": "mood board",
+       "date": "2026-10-17"
+      },
+      {
+       "name": "Opening animation storyboard",
+       "url": "https://claude.ai/artifact/7HjuaiKdhp2EYYMxaepsTi",
+       "kind": "storyboard",
+       "date": "2026-10-17"
+      }
+     ]
+    },
+    {
+     "id": "mv-banks",
+     "name": "The banks fall",
+     "at": "1:14",
+     "state": "in Premiere",
+     "tone": "premiere",
+     "scene": "scenes/banks-recut"
+    },
+    {
+     "id": "mv-chorus-2",
+     "name": "Chorus 2 (night, the beam)",
+     "at": "1:47",
+     "state": "clips made, picks owed",
+     "tone": "wip",
+     "scene": "scenes/chorus-2"
+    },
+    {
+     "id": "mv-war",
+     "name": "War in Swindon",
+     "at": "2:09",
+     "state": "cut by Kai",
+     "tone": "premiere",
+     "scene": "scenes/war"
+    },
+    {
+     "id": "mv-rest",
+     "name": "The rest of the track",
+     "at": "2:42",
+     "state": "not recorded here",
+     "tone": "gap",
+     "what": "Nothing in the repo says what sits from 2:42 to the end of the track. Tell Claude and it goes here."
+    }
+   ],
+   "history": [
+    {
+     "name": "Downfall footage map",
+     "url": "https://claude.ai/artifact/Ltkrq4VcVhm1s8f8kkXDF6",
+     "kind": "footage board",
+     "date": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "off-switch",
+   "group": "Part 1 · The music video (the downfall)",
+   "name": "Five years later: the off switch, Maddie explains",
+   "state": "in Premiere",
+   "tone": "premiere",
+   "premiere": "gpom-story.prproj",
+   "what": "The bright fake Swindon, the glitch, the delivery bot (Maddie) explains. Kai's cut, no timeline page.",
+   "history": [
+    {
+     "name": "Simulation board",
+     "url": "https://claude.ai/artifact/RcoYmozBesKFfKhk9rrADK",
+     "kind": "mood board",
+     "date": "2026-09-30"
+    }
+   ]
+  },
+  {
+   "id": "a-killbots",
+   "group": "Part 2 · The humans (not in Premiere yet)",
+   "name": "A · Kill bots",
+   "length": "2:54",
+   "state": "built in Premiere as gpom-sh-A-rough1",
+   "tone": "ok",
+   "scene": "scenes/second-half-a-killbots",
+   "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+   "premiere": "gpom-story.prproj · sequence gpom-sh-A-rough1 (same-named bin, radio music left out)",
+   "what": "Maddie on the high street, the kill-bot HUD, the toilet-seat row, the race, the stand-down. Paste-insert it into the long sequence.",
+   "history": [
+    {
+     "name": "Cut 2 timeline (A + B together)",
+     "url": "https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq",
+     "kind": "timeline",
+     "date": "2026-10-20"
+    },
+    {
+     "name": "Second Half Cut 2 (before timeline pages)",
+     "url": "https://claude.ai/artifact/Amb2o9BZ5MDVSwZ6zXA5zb",
+     "kind": "preview",
+     "date": "2026-10-19"
+    },
+    {
+     "name": "Second Half Cutting Room",
+     "url": "https://claude.ai/artifact/LyD3odnVmN5rrdo9m1TpZp",
+     "kind": "preview",
+     "date": "2026-10-17"
+    },
+    {
+     "name": "Second Half Storyboard",
+     "url": "https://claude.ai/artifact/EGgHQU6KzN9rgzGnyUHb6e",
+     "kind": "storyboard",
+     "date": "2026-10-17"
+    },
+    {
+     "name": "Second Half Looks",
+     "url": "https://claude.ai/artifact/UkcXHKhuY8f2rzV7FtQ6e5",
+     "kind": "mood board",
+     "date": "2026-10-16"
+    },
+    {
+     "name": "Kill Bots picks (voices and Suno lines)",
+     "url": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co",
+     "kind": "picks",
+     "date": "2026-10-23"
+    }
+   ]
+  },
+  {
+   "id": "b-door",
+   "group": "Part 2 · The humans (not in Premiere yet)",
+   "name": "B · Maddie at the door (now also the debate)",
+   "length": "2:23",
+   "state": "debate voiced, ready to watch",
+   "tone": "wip",
+   "scene": "scenes/second-half-b-the-door",
+   "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+   "what": "The humans meet Maddie. Kai, 23 Oct: the door conversation grows into the argument (apology, time machine, \"you want us to kill ourselves?\"), so there's no separate debate scene. The vote happens off screen between B and C.",
+   "history": [
+    {
+     "name": "Cut 2 timeline (A + B together)",
+     "url": "https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq",
+     "kind": "timeline",
+     "date": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "ending",
+   "group": "Part 3 · The ending",
+   "name": "The whole ending, end to end (C + D + E)",
+   "length": "about 3:09",
+   "state": "ready to watch",
+   "tone": "wip",
+   "scene": "scenes/second-half-ending-reel",
+   "timeline": "https://claude.ai/artifact/R3zv1wejHA1pU7CSz39bta",
+   "what": "Watch this one rather than the three parts. Your C notes are in (old door shot back, Maddie the right size) and your last line ends the film.",
+   "parts": [
+    {
+     "id": "c-walk-out",
+     "name": "C · The walk out",
+     "state": "notes being answered",
+     "tone": "wip",
+     "scene": "scenes/second-half-c-walk-out",
+     "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
+    },
+    {
+     "id": "d-crossing",
+     "name": "D · The clean room and the crossing",
+     "state": "in review",
+     "tone": "wip",
+     "scene": "scenes/second-half-d-crossing",
+     "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
+    },
+    {
+     "id": "e-ending",
+     "name": "E · The bus, the last line",
+     "state": "last line in",
+     "tone": "wip",
+     "scene": "scenes/second-half-e-ending",
+     "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
+    }
+   ]
+  }
+ ]
+}

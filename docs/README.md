@@ -10,6 +10,7 @@ about to add a file here, it goes in exactly one of these places.
 | [`stories/`](./stories/) | Per-story canon (`stories/<story>/` — concept, characters, beats, songs). Source of truth for everything a story produces. | …we've committed to making it. Promoted from `ideas/` via the `new-story` skill. |
 | [`ideas/`](./ideas/README.md) | The idea inbox — raw, minimal-prose seeds with an index table. | …it just popped and we want it out of our heads. Captured via the `new-idea` skill. |
 | [`marketing/`](./marketing/README.md) | Marketing & release plans — channels, campaigns, positioning, launch sequencing. | …it's about *reaching people*, not making the thing. |
+| [`provenance/`](./provenance/README.md) | How every piece of a film was made: a recipe card per generated file, each scene's trail of published pages and notes, and the frozen recipe of every finished cut (Kai, 2026-10-23). | …you generated or published something, a cut is done, or a better model came out. |
 | [`misc/`](./misc/) | Anything that fits none of the above. | …in doubt. Better parked here than lost. |
 
 The promotion path is **`ideas/` → `stories/`**: an idea graduates when we commit to it

@@ -141,6 +141,13 @@ def main():
     with open(args.out, "wb") as f:
         f.write(wav(data, bits, rate, channels))
 
+    # The recipe card (docs/provenance): everything needed to ask for this take again.
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "provenance"))
+    from prov import write_card
+    write_card(args.out, kind="voice", engine="gemini-tts", tool="scripts/aistudio-tts.py", model=args.model,
+               prompt=transcript, inputs={"profile": profile, "profile_file": args.profile},
+               settings={"voice": args.voice, "temperature": 1, "channels": channels})
+
     seconds = len(data) / (rate * channels * bits // 8)
     print(f"{args.out} — {'mono' if args.mono else 'stereo'} · {rate} Hz · {bits}-bit · {seconds:.2f}s")
 

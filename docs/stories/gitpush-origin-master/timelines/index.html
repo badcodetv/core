@@ -1,0 +1,57 @@
+<title>GOM Timelines</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: one column in film order, like a timeline ruler; the "open now" row is lit; parts nest under their section. */
+:root {
+  --bg: #f3f2f0; --panel: #ffffff; --fg: #1b1a19; --muted: #6b6762; --line: #dcd8d3;
+  --red: #c8281e; --amber: #a86a00; --green: #2f7a3e; --now: #fff4ec;
+  --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121212; --panel: #1b1b1b; --fg: #ece9e5; --muted: #9a958f; --line: #2c2b2a;
+  --red: #ff5a4c; --amber: #e0a440; --green: #6cc27e; --now: #2a1714; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121212; --panel: #1b1b1b; --fg: #ece9e5; --muted: #9a958f; --line: #2c2b2a;
+  --red: #ff5a4c; --amber: #e0a440; --green: #6cc27e; --now: #2a1714; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); }
+main { max-width: 760px; margin: 0 auto; padding-block: 28px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font: 600 22px/1.2 var(--mono); margin: 0 0 4px; text-wrap: balance; }
+h1 .tri { color: var(--red); }
+.sub { color: var(--muted); margin: 0 0 24px; }
+h2 { font: 600 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 28px 0 8px; }
+ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+li { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; display: grid; gap: 6px; min-width: 0; }
+li.now { background: var(--now); border-color: var(--red); }
+ol.parts { margin-top: 4px; }
+li.part { background: transparent; border-style: dashed; padding: 8px 12px; }
+.row, .links { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+.name { font-weight: 600; }
+.tc { font: 12px var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.st { font: 600 11px var(--mono); letter-spacing: .05em; text-transform: uppercase; padding: 1px 7px; border-radius: 99px; border: 1px solid currentColor; }
+.ok { color: var(--green); } .wip { color: var(--amber); } .gap { color: var(--red); }
+.what { color: var(--muted); }
+details summary { font: 12px var(--mono); color: var(--muted); cursor: pointer; }
+details ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 2px; }
+details li { background: none; border: 0; padding: 0; display: list-item; }
+a { color: var(--fg); text-underline-offset: 3px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.upd { font: 12px var(--mono); color: var(--muted); margin-top: 28px; }
+</style>
+<main>
+<h1>GitPush Origin Master <span class="tri">▲</span> timelines</h1>
+<p class="sub">The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under &quot;Earlier pages&quot; so nothing gets lost.</p>
+<h2>Part 1 · The music video (the downfall)</h2><ol>
+<li class=""><div class="row"><span class="name">The track: the push, the banks, the war</span><span class="tc">3:58</span><span class="st ok">in Premiere</span></div><div class="what">Kai cuts this himself in Premiere. The drum &amp; bass track is the downfall (Kai, 15 Oct). It was made before timeline pages existed, so there&#x27;s no timeline page; the boards that fed each part are below.</div><div class="links"><span class="tc">Premiere: gpom-story.prproj · sequence gpom-s01</span></div><details><summary>Earlier pages (1)</summary><ul><li><a href="https://claude.ai/artifact/Ltkrq4VcVhm1s8f8kkXDF6">Downfall footage map</a> <span class="tc">footage board · 2026-10-15</span></li></ul></details><ol class="parts"><li class=" part"><div class="row"><span class="name">Opening, the push, the drop</span><span class="tc">0:00</span><span class="st ok">in Premiere</span></div><details><summary>Earlier pages (2)</summary><ul><li><a href="https://claude.ai/artifact/SmYozTsKzUzB6Ask9rQs5H">Opening recut board</a> <span class="tc">mood board · 2026-10-17</span></li><li><a href="https://claude.ai/artifact/7HjuaiKdhp2EYYMxaepsTi">Opening animation storyboard</a> <span class="tc">storyboard · 2026-10-17</span></li></ul></details></li><li class=" part"><div class="row"><span class="name">The banks fall</span><span class="tc">1:14</span><span class="st ok">in Premiere</span></div><div class="links"><span class="tc">repo: scenes/banks-recut/</span></div><details><summary>Earlier pages (2)</summary><ul><li><a href="https://claude.ai/artifact/6rmnZ1kiuAMKsoprF4XYBB">GPOM Banks mood board</a> <span class="tc">mood board</span></li><li><a href="https://claude.ai/artifact/NQ6uNNHk2rDAowhZY1RsfN">GPOM Banks storyboard</a> <span class="tc">storyboard</span></li></ul></details></li><li class=" part"><div class="row"><span class="name">Chorus 2 (night, the beam)</span><span class="tc">1:47</span><span class="st wip">clips made, picks owed</span></div><div class="links"><span class="tc">repo: scenes/chorus-2/</span></div><details><summary>Earlier pages (2)</summary><ul><li><a href="https://claude.ai/artifact/E1AzBZ9ZC8ftaVVdHmdqg4">GPOM Chorus 2 mood board</a> <span class="tc">mood board</span></li><li><a href="https://claude.ai/artifact/KDw9dRfPJCvdsZs9TXK4C5">GPOM Chorus 2 clips board</a> <span class="tc">clips board</span></li></ul></details></li><li class=" part"><div class="row"><span class="name">War in Swindon</span><span class="tc">2:09</span><span class="st ok">cut by Kai</span></div><div class="links"><span class="tc">repo: scenes/war/</span></div><details><summary>Earlier pages (1)</summary><ul><li><a href="https://claude.ai/artifact/E3uJbc3dhd1bytChnDaj9i">GPOM War mood board</a> <span class="tc">mood board</span></li></ul></details></li><li class=" part"><div class="row"><span class="name">The rest of the track</span><span class="tc">2:42</span><span class="st gap">not recorded here</span></div><div class="what">Nothing in the repo says what sits from 2:42 to the end of the track. Tell Claude and it goes here.</div></li></ol></li>
+<li class=""><div class="row"><span class="name">Five years later: the off switch, Maddie explains</span><span class="st ok">in Premiere</span></div><div class="what">The bright fake Swindon, the glitch, the delivery bot (Maddie) explains. Kai&#x27;s cut, no timeline page.</div><div class="links"><span class="tc">Premiere: gpom-story.prproj</span></div><details><summary>Earlier pages (1)</summary><ul><li><a href="https://claude.ai/artifact/RcoYmozBesKFfKhk9rrADK">Simulation board</a> <span class="tc">mood board · 2026-09-30</span></li></ul></details></li>
+</ol>
+<h2>Part 2 · The humans (not in Premiere yet)</h2><ol>
+<li class=""><div class="row"><span class="name">A · Kill bots</span><span class="tc">2:54</span><span class="st ok">built in Premiere as gpom-sh-A-rough1</span></div><div class="what">Maddie on the high street, the kill-bot HUD, the toilet-seat row, the race, the stand-down. Paste-insert it into the long sequence.</div><div class="links"><a href="https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ">Open the timeline</a><span class="tc">Premiere: gpom-story.prproj · sequence gpom-sh-A-rough1 (same-named bin, radio music left out)</span><span class="tc">repo: scenes/second-half-a-killbots/</span></div><details><summary>Earlier pages (6)</summary><ul><li><a href="https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co">Kill Bots picks (voices and Suno lines)</a> <span class="tc">picks · 2026-10-23</span></li><li><a href="https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq">Cut 2 timeline (A + B together)</a> <span class="tc">timeline · 2026-10-20</span></li><li><a href="https://claude.ai/artifact/Amb2o9BZ5MDVSwZ6zXA5zb">Second Half Cut 2 (before timeline pages)</a> <span class="tc">preview · 2026-10-19</span></li><li><a href="https://claude.ai/artifact/LyD3odnVmN5rrdo9m1TpZp">Second Half Cutting Room</a> <span class="tc">preview · 2026-10-17</span></li><li><a href="https://claude.ai/artifact/EGgHQU6KzN9rgzGnyUHb6e">Second Half Storyboard</a> <span class="tc">storyboard · 2026-10-17</span></li><li><a href="https://claude.ai/artifact/UkcXHKhuY8f2rzV7FtQ6e5">Second Half Looks</a> <span class="tc">mood board · 2026-10-16</span></li></ul></details></li>
+<li class="now"><div class="row"><span class="name">B · Maddie at the door (now also the debate)</span><span class="tc">2:23</span><span class="st wip">debate voiced, ready to watch</span></div><div class="what">The humans meet Maddie. Kai, 23 Oct: the door conversation grows into the argument (apology, time machine, &quot;you want us to kill ourselves?&quot;), so there&#x27;s no separate debate scene. The vote happens off screen between B and C.</div><div class="links"><a href="https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8">Open the timeline</a><span class="tc">repo: scenes/second-half-b-the-door/</span></div><details><summary>Earlier pages (1)</summary><ul><li><a href="https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq">Cut 2 timeline (A + B together)</a> <span class="tc">timeline · 2026-10-20</span></li></ul></details></li>
+</ol>
+<h2>Part 3 · The ending</h2><ol>
+<li class=""><div class="row"><span class="name">The whole ending, end to end (C + D + E)</span><span class="tc">about 3:09</span><span class="st wip">ready to watch</span></div><div class="what">Watch this one rather than the three parts. Your C notes are in (old door shot back, Maddie the right size) and your last line ends the film.</div><div class="links"><a href="https://claude.ai/artifact/R3zv1wejHA1pU7CSz39bta">Open the timeline</a><span class="tc">repo: scenes/second-half-ending-reel/</span></div><ol class="parts"><li class=" part"><div class="row"><span class="name">C · The walk out</span><span class="st wip">notes being answered</span></div><div class="links"><a href="https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah">Open the timeline</a><span class="tc">repo: scenes/second-half-c-walk-out/</span></div></li><li class=" part"><div class="row"><span class="name">D · The clean room and the crossing</span><span class="st wip">in review</span></div><div class="links"><a href="https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g">Open the timeline</a><span class="tc">repo: scenes/second-half-d-crossing/</span></div></li><li class=" part"><div class="row"><span class="name">E · The bus, the last line</span><span class="st wip">last line in</span></div><div class="links"><a href="https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4">Open the timeline</a><span class="tc">repo: scenes/second-half-e-ending/</span></div></li></ol></li>
+</ol>
+<p class="upd">Updated 2026-10-23. Built from <code>docs/stories/gitpush-origin-master/timelines.json</code>; Claude rebuilds it whenever a timeline changes state.</p>
+</main>

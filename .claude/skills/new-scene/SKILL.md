@@ -60,6 +60,8 @@ The words live in the repo and the media lives outside it (the clips/ convention
 | `video-jobs.json` | picks turned into Flow jobs (format in `scripts/scene/shots.py`) |
 | `script.json` | stage 4: the words per beat `{beats:[{id, title, see, lines:[{who, text, by: kai\|claude, how?}], music, sfx}], voices:[{id, name, profile…}]}` |
 | `picks.md` | append-only record of every pick, note and ruling, dated, Kai's words kept |
+| `trail.json` + `notes/` | **provenance**: one line per page published (`prov.py trail`), with the notes snapshotted each round |
+| `final.json` + `final-edl.json` | **provenance**: the finished cut, every shot and sound traced to its recipe (`prov.py freeze`) |
 | Media | `/mnt/d/badcode-videos/<story>/clips/<scene>/` with `moodboard/<id>.jpg`, `video/<prefix>-<key>-<still>.mp4`, and stage 4's `voice/`, `sfx/`, `cut/` (`edl.json`, `preview.mp4`, `stems/`) |
 
 `scene.json`:
@@ -97,6 +99,20 @@ Worked examples, built before the tools were generalised: the GPOM opening recut
 (`scripts/gpom/build-opening-*.py`, `scripts/gpom/opening-video/`,
 `docs/stories/gitpush-origin-master/scenes/opening-recut-*`) and the second half
 (`scripts/gpom/second-half-video/`).
+
+## Provenance (every stage)
+
+Kai, 2026-10-23: keep a trail good enough to **rerun the whole scene on a better model**. Full rules:
+[`docs/provenance/README.md`](../../../docs/provenance/README.md). In this skill that means:
+- **Cards are automatic** for Flow MCP stills and edits, `run.mts` clips, TTS voices and Suno `record`. Anything else you make
+  (ffmpeg text or composites, effects, footage, a Suno take's sheet) gets `prov.py card` straight after.
+- **After every publish** of a mood board, storyboard or timeline round, run `prov.py trail <scene-dir> --stage … --round N --url … --what "…"`.
+  It also writes the link into `scene.json` `boards`. When you read Kai's notes, save them and pass `--notes`.
+- **Before showing a cut**, run `prov.py check <scene-dir>` and card anything it lists.
+- **When Kai says a cut is done**, run `prov.py freeze <scene-dir> --note "<his words>"` and commit it.
+- **The story's running order** (`docs/stories/<story>/timelines.json`): add the scene as a section (with `"scene": "scenes/<scene>"`)
+  when its first timeline page exists. Update its state whenever it changes, then rebuild with
+  `scripts/provenance/build-timelines.py docs/stories/<story>` and republish to the URL in `timelines.json`.
 
 ## Stage 1: the interview
 

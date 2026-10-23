@@ -1798,6 +1798,14 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
     await cap.makePreview(raw, preview)
 
     requireCreate(page) // never navigated
+    // The recipe card (docs/provenance). The four boxes live on the song page and in the sheet that
+    // made it; add the sheet with `prov.py card <wav> --merge --setting sheet=<path>`.
+    const { writeCard } = await import('../../packages/flow-mcp/src/prov')
+    for (const f of [raw, preview]) {
+      writeCard(f, { kind: 'music', engine: 'suno', tool: 'scripts/suno/suno.mts record', source_id: songId,
+        inputs: { title: take.title, song: `https://suno.com/song/${songId}` }, settings: { durationSec: duration },
+        ...(f === preview ? { parent: raw } : {}) })
+    }
     return { songId, title: take.title, durationSec: Math.round(duration * 1000) / 1000, raw, preview, channel }
   } finally {
     rmSync(tmp, { recursive: true, force: true })

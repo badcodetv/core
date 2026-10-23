@@ -13,6 +13,16 @@ Read this first. It tells you what BadCode is, how it sounds, and where everythi
 > **https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** is a read-only window onto it, rebuilt and
 > republished at the end of every chief-of-staff run. Kai and Jack never type into it; they tell Claude. Rule one: finished work goes out before anything new is researched.
 
+> **Generating anything — a still, a clip, a voice, a track, an effect? It must leave a recipe. Read
+> [`docs/provenance/README.md`](./docs/provenance/README.md).** (Kai, 2026-10-23; going forward, no backfill.)
+> Every generated file gets a recipe card, written beside it and mirrored into `docs/provenance/cards/`.
+> The Flow MCP, `run.mts`, the TTS script and Suno `record` write it themselves; anything else, run
+> `scripts/provenance/prov.py card`. Every page published adds a line to its scene's `trail.json`.
+> Every finished cut is frozen to `final.json`, so a whole story can be rerun on a better model.
+> Each story's film, start to end, is `docs/stories/<story>/timelines.json`: every scene in order with its timeline page,
+> rebuilt with `scripts/provenance/build-timelines.py` and republished to the same link whenever a timeline changes.
+> The repo holds the words, D: (backed up to Google Drive) holds the media, and the two together are everything.
+
 ## What BadCode is
 
 BadCode is two people: **Kai** (main developer) and **Jack** (lead creative designer). Either
@@ -53,6 +63,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/ideas/` | The idea inbox — raw ideas (minimal prose) before they become stories | …you have a new idea to park, or want to develop one |
 | `docs/marketing/` | Marketing & release plans — reaching people, not making the thing. 🔑 **Start at [`chief-of-staff/`](./docs/marketing/chief-of-staff/README.md)** (the plan — what's next and what we're not doing, no dates — + the board); live board: https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9 | …it's a channel/campaign/launch plan, or you need to know what ships next |
 | `docs/marketing/social-media-accounts.md` | 📱 **Our social media accounts** — every platform (YouTube, Facebook, TikTok, Instagram, SoundCloud…), the handle each uses, which are open and which are still to make. All sign in with badcode.tv@gmail.com; one shared password (ask Jack) | …you need an account, a handle or a link, or you just opened one |
+| `docs/provenance/` | 🧾 **How every piece of a film was made**: a recipe card per generated file (`cards/` mirrors `D:\badcode-videos\`), each scene's `trail.json` of published pages and notes, and `final.json` per finished cut. Tool: `scripts/provenance/prov.py` (`card` / `trail` / `check` / `freeze`) | …you just generated or published something, a cut is done, or a better model came out |
 | `docs/misc/` | Catch-all for what fits nowhere else | …in doubt |
 | `docs/suno-gpt/` | Suno toolkit — **🔑 All new Suno work is v6, in the new UI (v5.5 retired 2026-09-09, archived in `docs/suno-gpt/archive/v5.5-era.md`): [`files/suno-v6.md`](./docs/suno-gpt/files/suno-v6.md) wins on any model/control question, and its §3 is the ladder for fixing one word / one bar without regenerating** — prompting (operating procedure + reference files) **and** [`automation.md`](./docs/suno-gpt/automation.md), the create-page DOM map + the five silent traps + the pair/naming/workspace/no-download protocol | …you're turning a song idea into a Suno prompt, or driving Suno from code |
 | `docs/ai-studio/` | Google AI Studio **voice** toolkit — [`README.md`](./docs/ai-studio/README.md): the Composer UI map (Scene / Sample Context / Voice Direction), Google's four-part prompt structure, the **5,000-voice library with an Accent filter** (the docs say 30 — the UI is the truth), the 200+ audio tags, limits and traps. 🔑 **First engine that sounded human on take one** | …you're generating spoken narration, or a voice sounds like AI |

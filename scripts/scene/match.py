@@ -17,8 +17,10 @@ import sys
 import tempfile
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
+sys.path.insert(0, str(pathlib.Path(__file__).parents[1] / 'provenance'))
 from scene import Scene  # noqa: E402
 from shots import shots as all_shots  # noqa: E402
+from prov import write_card  # noqa: E402
 
 THRESHOLD = 400
 
@@ -65,6 +67,13 @@ def main(scene_dir, apply):
             if keep:
                 shutil.move(str(keep), out)
                 print(f'  -> {out.name}')
+                # The recipe card (docs/provenance): run.mts's fixed settings, the job's prompt, its plate.
+                s = by_key[k]
+                write_card(out, kind='video', engine='google-flow', tool='scripts/scene/run.mts', model='Omni 1.1 Flash',
+                           prompt=s['motion'], parent=s['src'], why=s.get('why') or s.get('label') or None,
+                           inputs={'start': s['src'], 'character': s.get('character'), 'scene': str(pathlib.Path(scene_dir).resolve()),
+                                   'key': k, 'frame': s.get('n'), 'option': s.get('option')},
+                           settings={'mode': 'Frames', 'aspect': '16:9', 'durationSeconds': s.get('duration', 8), 'count': 1})
             for e in extra:
                 (inbox / 'dupes').mkdir(parents=True, exist_ok=True)
                 shutil.move(str(e), inbox / 'dupes' / f'{k}-{e.name}')
