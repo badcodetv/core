@@ -40,6 +40,7 @@ VID = E.CLIPS / 'video'
 D_EDL = E.CLIPS / 'ending' / 'D' / 'cut' / 'edl.json'
 # E03 round 1: the red double-decker, two clips joined here (continuous-shot: the tail's first frame dropped, a 0.3 s
 # dissolve over the join, as E03b-chain was).
+E04_CLIP, E04_IN = 'E04p-t1.mp4', 1.95  # E round 3: the Houses of Parliament, the last shot
 E03_HEAD, E03_TAIL, E03_XF = 'E03r4-t1.mp4', 'E03xr4-t1.mp4', 0.3  # ending round 2 (Kai at4010): empty road
 # The AI's last line (atom gpom-sh-end-ai-e2, revision H, Kai's pick H-v6-w10 22571839, 23 Oct): "I made it. Now the
 # real work starts." Cut on the take's silence map (40 dB under its peak, 20 ms), not whisper: "I made it." 0.00-0.85 s,
@@ -194,12 +195,11 @@ def scene_e(sc):
                see='Hard cut on sound: a woman on the top deck at night, watching her phone. On it, gleaming Maddie '
                    'among the empty chairs (the last frame of D, composited). Tinny, through the phone: "Mind how you go."')
     e01 = sc.clip('E01')
-    comp01 = V / 'E01-phone-r1.mp4'
-    if not comp01.exists():
-        lips('phone_screen.py', e01, d16, comp01, '--quad', '570,407,708,422,698,503,550,499', '--dim', '0.75',
-             '--skin-from', '0.72', '--t1', '99', '--fade', '0')
+    # E round 3 (Kai: the overlaid screen looked grainy and pasted on): E01p-t1, where Flow painted D's last frame onto
+    # the phone in-camera (the still E01p-b, Kai's pick). No ffmpeg screen overlay any more.
+    comp01 = e01
     d01 = 7.0
-    push01 = V / 'E01-push-r1.mp4'
+    push01 = V / f'{e01.stem}-push.mp4'
     if not push01.exists():
         lips('move_keys.py', comp01, push01, '--in', '0', '--dur', f'{d01}',
              '--keys', '0:1:640:360,1.5:1:640:360,7:1.1:630:455')
@@ -213,13 +213,11 @@ def scene_e(sc):
     c.flags.append(f'E01 (Kai ld9-1/le1-0): Maddie\'s "Mind how you go." is said whole through the woman\'s phone, '
                    f'{AT1} s after the hard cut (it is no longer split across the cut): D ends on the silence after '
                    f'"Boss...", and E opens on the rain, the bus and her small voice from the phone.')
-    c.flags.append(f'E01/E02: the phone shows the last frame scene D now shows ({d16_src}: gleaming Maddie among the '
-                   'empty chairs), taken from D\'s cut itself, re-composited the way the old one was (phone_screen.py, the '
-                   'same screen corners, dim and key settings).')
-    c.flags.append('E01: the phone screen is tracked onto the '
-                   'screen frame by frame (phone_screen.py: Lucas-Kanade features, RANSAC homography; drift under 6 px '
-                   'over 8 s), dimmed to 75%, a faint glow, her right thumb keyed back on top. It replaces the plate\'s '
-                   'robot-in-ruins screen.')
+    c.flags.append('E01/E02 (E round 3, Kai: the overlaid screen looked "a bit grainy... quite obviously just overlaid"): '
+                   'the phone screen is now painted by Flow in-camera (stills E01p-b / E02p-b, made with D\'s last frame '
+                   'as the reference: glowing, with glare and its light on her hands), animated as E01p-t1 / E02p-t1. '
+                   'Checked at 4 fps: the screen holds its picture in every frame, never white, no ghost. The ffmpeg '
+                   'screen composite (phone_screen.py) is no longer used.')
     c.flags.append('E01: a slow push 100 -> 110% toward the phone after a 1.5 s hold (eased, in post), so the screen '
                    'reads before the cut.')
     m['phone'] = (AT1, end)
@@ -230,20 +228,12 @@ def scene_e(sc):
                see='Over her shoulder: the empty chairs on her phone, her own high street through the wet window (the '
                    'chip shop, the pharmacy, the closed bank). She looks up from one to the other.')
     e02 = sc.clip('E02')
-    comp02 = V / 'E02t3-phone-r1.mp4'
-    if not comp02.exists():
-        lips('phone_screen.py', e02, d16, comp02, '--quad', '567.5,522,645,542.5,627.5,590,544.5,570', '--t1', '2.5',
-             '--fade', '0.3', '--white-key', '150', '--dim', '0.55')
-    sign02 = V / 'E02t3-bank-r1.mp4'
+    comp02 = e02  # E round 3: E02p-t1, the screen painted in-camera (Kai's pick E02p-b); no overlay
+    sign02 = V / f'{e02.stem}-bank.mp4'
     if not sign02.exists():
         lips('bank_sign.py', comp02, sign02, '--name', 'DOWNLAND BANK')
     d02 = 6.0
     c.pic(sign02, 0.0, t, t + d02, 'e2', source=e02)
-    c.flags.append('E02 (review round 1): re-rolled as E02-t3 so the phone stays in her hand: she lowers it to her '
-                   'knee and keeps hold of it (t2\'s phone melted into her lap at ~2.8 s). D16\'s frame is on the '
-                   'screen (dimmed to 55%) while it faces us, fading out by 2.5 s as she tilts it away; from ~1 s Omni '
-                   'turned the screen white, and there the white screen itself is the matte, so her thumb stays on '
-                   'top. No white screen is ever seen.')
     c.flags.append('E02 (review round 1): the closed bank is lettered in post (bank_sign.py, exact, tracked to the '
                    'plate\'s 1.5 px breathing by phase correlation, softened behind the wet glass): a plain fictional '
                    'name, DOWNLAND BANK, on the blank fascia, and a printed "THIS BRANCH HAS NOW CLOSED" notice on the '
@@ -292,25 +282,43 @@ def scene_e(sc):
     line_end = e
     c.line(b, 0, 'ai', L, line_end - L, LINE_TEXT, 'kai')
     b['lines'][-1]['name'] = 'The AI (opening to his own voice, for the first time)'
-    d03 = fr(min(line_end - s3 + TAIL + E03_HOLD + E03_FADE, C3.dur(e03) - 1.0 / FPS))
-    pull = V / f'E03r4-pull-{d03:.3f}.mp4'
-    fade_at, fade_d = d03 - E03_FADE, E03_FADE
+    # E round 3 (Kai): the last shot is the Houses of Parliament at night in the rain, so "Now the real work starts."
+    # lands on that building (and we leave the bus shot before it jumps). "I made it." stays over the bus pulling away;
+    # the cut to Parliament comes 0.3 s before "Now". E04p-t1 (Kai's pick E04p-a), played from 1.95 s (the clouds flare
+    # 1.0-1.5 s), a slow push 100 -> 106%, then the fade to black, which leaves at least 0.6 s of black under the last
+    # note.
+    total_e = fr(MUS_IN + ed(MUS_END) + 0.6)
+    cut_p = fr(L + (E2_PHRASES[1][0] - E2_PHRASES[0][0]) - 0.3)
+    d03 = fr(cut_p - s3)
+    pull = V / f'E03r4-pull-to-{d03:.3f}.mp4'
     if not pull.exists():
         lips('move_keys.py', graded, pull, '--in', '0', '--dur', f'{d03:.4f}',
-             '--keys', '0:1.4:740:410,1.5:1.4:740:410,9.5:1:640:360', '--fade-out', f'{fade_at:.4f}:{fade_d}')
-    c.pic(pull, 0.0, s3, s3 + d03, 'e3', source=sc.clips['media'] + '/' + E03_HEAD)
+             '--keys', '0:1.4:740:410,1.5:1.4:740:410,9.5:1:640:360')
+    c.pic(pull, 0.0, s3, cut_p, 'e3', source=sc.clips['media'] + '/' + E03_HEAD)
+    end_p = fr(min(line_end + TAIL + E03_HOLD + E03_FADE, total_e - 0.6))
+    dp = fr(end_p - cut_p)
+    fade_at, fade_d = dp - E03_FADE, E03_FADE
+    e04 = pathlib.Path(sc.clips['media']) / E04_CLIP
+    parl = V / f'E04p-push-{dp:.3f}.mp4'
+    if not parl.exists():
+        lips('move_keys.py', e04, parl, '--in', f'{E04_IN}', '--dur', f'{dp:.4f}',
+             '--keys', f'0:1:640:360,{dp:.3f}:1.06:640:340', '--fade-out', f'{fade_at:.4f}:{fade_d}')
+    c.pic(parl, 0.0, cut_p, end_p, 'e3', source=e04)
+    c.flags.append(f'E04 (E round 3, Kai: "I want it to infer in that building"; pick E04p-a): the last shot is the '
+                   f'Houses of Parliament at night in the rain (E04p-t1, 8 s, Omni camera-locked: rain, river and clouds '
+                   f'move, the building holds). The cut from the bus comes 0.3 s before "Now the real work starts.", so '
+                   f'"I made it." stays over the bus pulling away; {dp:.1f} s of Parliament with a slow push 100 -> 106%, '
+                   f'the fade to black starting {cut_p + fade_at - line_end:.1f} s after the last word.')
     c.flags.append(f'The last line (Kai\'s pick, Suno rev H, take 22571839): "{LINE_TEXT}". "I made it." at '
                    f'{L - s3:.1f} s into the shot, on the coda\'s held-chord pocket; the take\'s own 3.2 s pause is KEPT, so '
                    f'"Now the real work starts." lands as the cello\'s last phrase begins; it ends {line_end - s3:.1f} s in. '
-                   f'The picture holds it: the bus chain is {C3.dur(e03):.1f} s, so the fade to black starts '
-                   f'{s3 + fade_at - line_end:.1f} s after the last word (was planned as {TAIL + E03_HOLD:.1f} s; the clip '
-                   'runs out first). Cut on the take\'s silence map, not whisper.')
+                   'Cut on the take\'s silence map, not whisper.')
     c.flags.append('E03 voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter so the voice is his before it '
                    'changes; "Now the real work starts." is his own voice, full range, close (boom under 110 Hz off, -4 dB '
                    'at 200 Hz, +2 dB at 2.8 kHz), 1.5 dB quieter. The coda ducks 6 dB under both.')
     m['s3'], m['line'] = s3, (L, line_end)
-    m['fade'] = (s3 + fade_at, s3 + d03)
-    t = c.close(b, s3 + d03)
+    m['fade'] = (cut_p + fade_at, end_p)
+    t = c.close(b, end_p)
 
     # ---- e4: black under the last note
     total = fr(MUS_IN + ed(MUS_END) + 0.6)

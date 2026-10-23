@@ -792,3 +792,11 @@ sceneB-r1 after the last call.
 - `cut_end.ROUND_KEYS` now starts with `file_round6`.
 - **Rebuilt:** C 57.42 s −16.0 LUFS; D 90.25 s −16.2 LUFS; the reel 179.83 s (2:59.8; offsets C 0, D 57.0, E 147.25);
   delivery-qc as before.
+
+### E round 3: Parliament last shot + phones in-camera (23 Oct)
+
+Kai's picks E04p-a, E01p-b, E02p-b animated (36 credits, ledger 1114 → 1150 of 1500; prompts in E's `shots.md`). E01/E02
+now play the Flow clips whose screens were painted in-camera; the `phone_screen.py` overlay is dropped (screens checked at
+4 fps: steady, never white). E03 ends 0.3 s before "Now the real work starts." (scene 25.9 s) and E04p-t1 (from 1.95 s,
+push 100 → 106%, fade 1.5 s) carries the line and the hold to black; 0.67 s of black under the last note. E 32.58 s, −16.0
+LUFS, TP −1.8; whisper on the mix exact. Reel 179.83 s, offsets unchanged.

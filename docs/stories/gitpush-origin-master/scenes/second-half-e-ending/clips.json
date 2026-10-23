@@ -13,7 +13,10 @@
       "plate": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg",
       "talking": false,
       "post": "composite D16's last frame onto the phone screen (track the phone, a little soft, screen glow); phone audio = Maddie's '...you go.' (e1-0-maddie-phone.wav) landing on the hard cut",
-      "note": "The phone in the plate shows a delivery robot in ruins: it must be covered by the composite. The window light pulses warm/cold through the clip (passing street lights)."
+      "note": "The phone in the plate shows a delivery robot in ruins: it must be covered by the composite. The window light pulses warm/cold through the clip (passing street lights).",
+      "file_round6": "E01p-t1.mp4",
+      "plate_round6": "../stills/fix5/E01p-b.jpg",
+      "note_round6": "E round 3 (Kai's pick E01p-b): the phone screen painted in-camera by Flow (D's last frame as reference); the screen holds its picture all 8 s. No overlay."
     },
     "E02": {
       "file": "E02-t3.mp4",
@@ -24,7 +27,10 @@
       "talking": false,
       "post": "composite D16's frame (dimmed) onto the phone 0-2.8 s, then the phone drops out of shot; Omni brightens the screen to near white at ~2 s, so the composite must cover it (never a white screen)",
       "note": "Review round 1 re-roll: the phone stays in her hand, lowered to her knee. Looks up ~1.5 s, turns to the bank ~3 s, holds to the end. Screen white from ~1 s (composite covers it until she tilts it away at 2.5 s). Street and window locked (shopfront breathes ~1.5 px). Bank lettered in post (bank_sign.py).",
-      "was": "E02-t2.mp4 (review round 1: the phone melted into her lap at ~2.8 s)"
+      "was": "E02-t2.mp4 (review round 1: the phone melted into her lap at ~2.8 s)",
+      "file_round6": "E02p-t1.mp4",
+      "plate_round6": "../stills/fix5/E02p-b.jpg",
+      "note_round6": "E round 3 (Kai's pick E02p-b): screen painted in-camera, holds its picture all 8 s; she looks up to the closed bank. bank_sign.py letters the fascia as before."
     },
     "E03": {
       "file": "E03b-chain.mp4",
@@ -48,10 +54,12 @@
       "note_round4": "Ending round 2 (Kai reel at4010): the red bus on an EMPTY road, no car anywhere. Head E03r4-t1 (10 s) + tail E03xr4-t1 (8 s, from E03r4-t1's last frame with a far oncoming vehicle painted out: E03r4-last-clean-a). Flaw: Omni pans the camera slowly right in both."
     },
     "E04": {
-      "file": "black",
-      "in": 0.0,
-      "out": 3.0,
-      "post": "3 s black under the e-coda tail"
+      "file": "E04p-t1.mp4",
+      "in": 1.95,
+      "out": 8.0,
+      "plate": "../stills/fix5/E04p-a.jpg",
+      "talking": false,
+      "note": "E round 3 (Kai's pick E04p-a): the Houses of Parliament at night in the rain, the last shot under 'Now the real work starts.'; camera locked, rain/river/clouds move (clouds flare 1.0-1.5 s, so it plays from 1.95 s); a slow push in post, then the fade to black."
     }
   },
   "review_round_1": "E03f-t1 15 + E03fx-t1 12 + E02-t3 12 = 39 credits (prompts in shots.md § Review round 1)",

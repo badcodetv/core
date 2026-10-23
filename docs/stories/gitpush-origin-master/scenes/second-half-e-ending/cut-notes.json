@@ -1,7 +1,15 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 2,
+ "round": 3,
  "plan": [
+  {
+   "h": "Round 3 done (23 Oct): Parliament last shot, phones in-camera",
+   "items": [
+    "E01/E02: new clips from your picks; the screen is part of the picture now (no overlay). Checked at 4 fps: steady, never white.",
+    "E03 → E04: 'I made it.' over the bus; cut to the Houses of Parliament (your pick E04p-a) 0.3 s before 'Now the real work starts.'; a slow push 100 -> 106%, fade to black 1.9 s after the last word, the last note on black.",
+    "E is 32.6 s, -16.0 LUFS. Flow 36 credits (no re-rolls needed)."
+   ]
+  },
   {
    "h": "The last line is in (23 Oct)",
    "items": [
@@ -63,7 +71,9 @@
   "at353": "Agreed. A red double-decker (no London roundel or lettering, so it still reads as any town). Still edit, then the shot and its extension re-made (about 24 credits).",
   "le3-0": "Yes, that's the ending: 'I made it. Now we have some work to do.' It's the boss, so it goes to Suno in his newsreader voice when the browser is free (about 20 Suno credits). 'They didn't' is retired.",
   "reel-at4010": "Agreed. The red bus is re-made with an empty road: no other car anywhere, and the chained tail clip re-made from it so the bus pulls away alone. About 24 credits.",
-  "reel-at4214": "Done: your pick is in (Suno revision H). 'I made it.' lands on the music's held chord; the take's own 3.2 s pause is kept, so 'Now the real work starts.' arrives as the cello's last phrase begins. The bus shot holds it: the fade to black starts 0.7 s after the last word (the clip runs out, so the planned 1.9 s hold is shorter). The music dips under both sentences."
+  "reel-at4214": "Done: your pick is in (Suno revision H). 'I made it.' lands on the music's held chord; the take's own 3.2 s pause is kept, so 'Now the real work starts.' arrives as the cello's last phrase begins. The bus shot holds it: the fade to black starts 0.7 s after the last word (the clip runs out, so the planned 1.9 s hold is shorter). The music dips under both sentences.",
+  "kai-round3-parliament": "Done: 'I made it.' plays over the bus pulling away, then 0.3 s before 'Now the real work starts.' it cuts to the Houses of Parliament at night in the rain (your pick, camera locked, the rain, river and clouds moving, a slow push in post), and fades to black on that building.",
+  "kai-round3-phone": "Done: the phone screens are now painted by Flow in the shot itself (your picks), glowing with real glare and light on her hands. Checked frame by frame: the picture holds on the screen the whole time, never white, no ghost. The old overlay is gone."
  },
  "kai_round1": {
   "at353": {
@@ -114,6 +124,18 @@
    "note": "I'm just checking that we know that we do not have this audio. I didn't hear him say any words here.",
    "beat": "e3",
    "tc": "00:02:55:14"
+  }
+ },
+ "kai_round3": {
+  "source": "Kai via the picks page / main, 23 Oct (feedback in scenes/second-half-picks/feedback/)",
+  "notes": [
+   "A new last shot: a zoomed-out wide of the Houses of Parliament at night in the rain under 'Now the real work starts.' ('I want it to infer in that building'); the bus shot jumps around there.",
+   "The film-on-the-phone in E01/E02 is 'a bit grainy … quite obviously just overlaid'."
+  ],
+  "picks": {
+   "E04": "E04p-a (closer, grander)",
+   "E01": "E01p-b",
+   "E02": "E02p-b"
   }
  }
 }

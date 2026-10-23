@@ -1,5 +1,5 @@
 {
- "spent": 1114,
+ "spent": 1150,
  "jobs": [
   {
    "key": "C-C06",
@@ -873,6 +873,42 @@
    "flow_project": "20b33d98-b68e-4961-ae3e-d5a28860bc44",
    "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
    "round": "round 4 picks (Kai, 23 Oct)"
+  },
+  {
+   "key": "E-E04p-t1",
+   "scene": "E",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E04p-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E04p-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "977c93b8-6c61-4ee8-9de3-bdb5af756a47",
+   "flow_project": "061668db-caa7-4f80-9297-ed78044be541",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "E round 3 picks (Kai, 23 Oct)"
+  },
+  {
+   "key": "E-E01p-t1",
+   "scene": "E",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E01p-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01p-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "3f66b822-1d10-4896-aad2-8c33e0831f79",
+   "flow_project": "6a124db3-2bc9-4ba4-acd7-27cc1437d01a",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "E round 3 picks (Kai, 23 Oct)"
+  },
+  {
+   "key": "E-E02p-t1",
+   "scene": "E",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E02p-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E02p-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "8332e6ea-f289-4d0f-b03d-4fed6718c572",
+   "flow_project": "9b3a753b-763a-46d5-8267-9f426e93241a",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "E round 3 picks (Kai, 23 Oct)"
   }
  ],
  "keys": [
