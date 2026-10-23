@@ -658,3 +658,62 @@ offsets: C 0.000, D 64.208 (0.4 s dissolve), E 150.042 (hard cut).
   is out. When the take exists: drop it in the slot, re-time the pull to its length, restore the coda duck (comment in
   `audio_e`).
 - **Pages** built into the session scratchpad (`timeline-C`, `-D`, `-E`, `-ending`); not published here.
+
+## Ending round 2 (Kai's notes on the Ending reel page, 23 Oct)
+
+Kai's eight notes on the reel page (artifact `R3zv1wejHA1pU7CSz39bta`, db `notes`) are kept verbatim in
+`second-half-ending-reel/cut-notes.json` `kai_round1` with a reply per note, and copied into each scene's cut-notes
+(C `kai_round3`, D and E `kai_round2`, keys `reel-atNNN`), each with a "Round N on this scene" plan and a "done" section.
+The cuts before this pass are kept in `<C|D|E>/cut/before-ending-r2/` and `ending-reel/before-ending-r2/`.
+
+**Voices (Gemini TTS, `voices_fix.py --takes 4`, tags r6/r7 in D's `voices.json`; nobody has listened):**
+
+- **d1 Maddie, "Suits on, please. It's a clean room." (at1581, not West Country).** Cause: the line's direction ("polite
+  and brisk, a host with house rules") pulled her prim. `scene.json` `how` is now "brisk and cheery, a Bristol local…
+  never prim or posh", and `voices.py` gained `ACCENT_BEAT`, which replaces the cast Accent line for one beat ("strong,
+  broad West Country… being polite makes the accent broader, never posher"). 8 takes. **Measured, not heard:** six
+  anchor takes of the same words in the same voice (3 told "polished RP", 3 told "very broad Bristolian") define an
+  axis; each take's mean whisper-encoder embedding is projected on it (scratchpad `acc/enc.py`, `acc/anchors.py`; the
+  scores are in the voices.json row). The old pick r4c scored **0.39, the most RP of all 12**, which is the reason to
+  trust the measure at all. Pick **r6d (0.88, whisper exact)**; alternative r6b-trim (0.86; r6b with its repeated second
+  sentence cut). A plain content embedding was tried first and failed (it scores the words, not the accent).
+- **d3 the lady, new words (at2108/at2566):** "Look, this has been the worst possible outcome for humanity. If there's a
+  chance we could go back in time to change it, I want to take that chance." `STYLE_BEAT` for her d3 is now stern and
+  grave. r6 ("measured and heavy") ran 12.3–13.4 s; r7 ("urgent, at a normal speaking pace") 10.8–12.4 s. All 8 exact.
+  Pick **r7c** (10.8 s, breaks after "Look,", "humanity." and before the last clause); alternative r6c (heavier, 12.3 s).
+  Maddie's d3 line is Kai's pick and unchanged; nothing added before the lady's answer.
+- **d4 "Is that tea?" cut (at2347):** moved to the beat's `cut_lines`; Maddie's line is now `d4-0-maddie` (the
+  voices.json row renamed, same take). The old lady rows are under `superseded` (`d4-0-lady@r6`, `d3-2-lady@r6`).
+
+**Flow (81 credits, house price; ledger 955 → 1036 of 1500).** Full prompts in each scene's `shots.md`. C01 c01r4-t1 (12;
+a reverse angle of C01b, since editing c01r1-a never widened the doorway); D02r4-t1 (12; the wafer enormous); D04r4-t1
+(15, rejected: dropped words, a stray head) and **D04r4-t2** (15, the re-roll, every word); E03r4-t1 (15) + E03xr4-t1
+(12, from the head's last frame with a far oncoming vehicle painted out). Twice the first video call into a fresh project
+failed with `VIDEO_OPTION_UNAVAILABLE` and passed on retry, as before. One `flow_edit_image` call returned three
+candidates for two asked.
+
+**Edit-only:** d6 (at2566/at2622) the D-room piano no longer goes out under the lady's question; it runs to the hands
+and hands over to D-cross (a 2.5 s fade under D-cross's 1.5 s fade-in). `cut_end.ROUND_KEYS` now starts with
+`file_round4`; `cut_end_e` reads E03r4-t1 + E03xr4-t1 (outputs renamed `E03r4-*`).
+
+**The lady's lip-sync (lip-sync-dub):** "what this will cost you." on her listening (old D04r3-t1), then a 112% punch-in
+to D04r4-t2. "Look," on her mouth at x1.0; "this has been the worst" x1.3; "possible outcome for humanity." x1.0 over
+D03cr3 from its start (gleaming Maddie and the hundred listening); back on her 0.2 s before run 3: "If there's a chance…
+change it," x1.3, "I want to take that chance." x1.15. Omni spoke the line 1.3–1.7x quicker than any take.
+
+| Cut | Runtime | Mix | delivery-qc |
+| --- | --- | --- | --- |
+| C (`cut_end.py C`) | 64.62 s (unchanged) | −16.1 LUFS, TP −1.8 dBFS | 7 ok, 2 warn, 1 fail |
+| D (`cut_end_d.py`) | 92.00 s (was 85.83) | −16.2 LUFS, TP −2.0 dBFS | 6 ok, 3 warn, 1 fail |
+| E (`cut_end_e.py`) | 32.58 s | −16.0 LUFS, TP −2.0 dBFS | 5 ok, 3 warn, 1 fail |
+| Reel (`reel.py`) | 188.79 s (3:08.8) | −16.0 LUFS, TP −1.4 dBFS | 5 ok, 3 warn, 1 fail |
+
+The FAIL is the inherited stray-pixel range note on every cut. Reel offsets C 0.000, D 64.208, E 156.208. Whisper on the
+reel mix around every changed line (d1, the lady, d4, d6): all heard as written. Frames looked at: C01, the vast room,
+the lady and the cutaway, the bus and the tracked DOWNLAND BANK lettering.
+
+- **Weak, for Kai:** the wafer's surface turns to an oily swirl in D02r4-t1 from ~2 s; Omni pans right on both bus clips;
+  C01's faces are silhouettes now; two of the lady's phrases at the x1.3 cap.
+- **Still owed:** the AI's last line ("I made it. Now we have some work to do." was blocked by Suno's copyright filter;
+  Kai is rewording). E's slot stays a silent hold.
+- **Pages** built into the session scratchpad (`timeline-C`, `-D`, `-E`, `-ending`); not published here.

@@ -1,7 +1,23 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 1,
+ "round": 2,
  "plan": [
+  {
+   "h": "Round 2 done (23 Oct): what changed",
+   "items": [
+    "DONE. Rebuilt: 32.6 s. No Premiere, nothing published by this run.",
+    "BEAT 3 (at4010): the red bus on an EMPTY road. The street picture was re-made with every car and headlight removed, re-animated (10 s), and its tail re-made from its last frame (8 s) with a far oncoming vehicle painted out first, so nothing comes towards the bus. The DOWNLAND BANK lettering still tracks. Flaw: Omni pans the camera slowly right in both clips (asked for locked). The hooded pair on the right went with the cars.",
+    "BEAT 3 (at4214): the AI's last line is still a silent hold. Suno blocked the words on copyright; you're rewording them."
+   ]
+  },
+  {
+   "h": "Round 2 on this scene (Kai's notes on the Ending reel page, 23 Oct): what changes",
+   "items": [
+    "Your notes were made on the Ending reel page (reel time minus 150.0 s = E time), kept here as kai_round2, keys reel-atNNN.",
+    "BEAT 3: the red bus re-made on an empty road (no car drives into it) and its chained tail re-made from it. Flow, ~24 credits.",
+    "The AI's last line: the slot stays silent until the Suno take is picked."
+   ]
+  },
   {
    "h": "Round 1 done (23 Oct): what changed",
    "items": [
@@ -37,7 +53,9 @@
   "top": "Round 1 read. Two changes and your new last line. Nothing to decide.",
   "le1-0": "Yes: Maddie's 'Mind how you go.' now plays whole through the phone, right on the hard cut. Voiced.",
   "at353": "Agreed. A red double-decker (no London roundel or lettering, so it still reads as any town). Still edit, then the shot and its extension re-made (about 24 credits).",
-  "le3-0": "Yes, that's the ending: 'I made it. Now we have some work to do.' It's the boss, so it goes to Suno in his newsreader voice when the browser is free (about 20 Suno credits). 'They didn't' is retired."
+  "le3-0": "Yes, that's the ending: 'I made it. Now we have some work to do.' It's the boss, so it goes to Suno in his newsreader voice when the browser is free (about 20 Suno credits). 'They didn't' is retired.",
+  "reel-at4010": "Agreed. The red bus is re-made with an empty road: no other car anywhere, and the chained tail clip re-made from it so the bus pulls away alone. About 24 credits.",
+  "reel-at4214": "Yes, known: the AI's last line ('I made it. Now we have some work to do.') has no take yet. A Suno run is making takes now; you pick one, then it goes in that slot. The slot is held silent until then."
  },
  "kai_round1": {
   "at353": {
@@ -77,5 +95,17 @@
     "delivery-qc's range FAIL is left (x264 ringing on the rain after the clamp); the black tail is intended."
    ]
   }
- ]
+ ],
+ "kai_round2": {
+  "reel-at4010": {
+   "note": "It's really good that the bus is red, but unfortunately the car drives straight into the bus. So it's a perfect scene, we just need to redo it such that there is not another car on the road that it drives into.",
+   "beat": "e3",
+   "tc": "00:02:47:02"
+  },
+  "reel-at4214": {
+   "note": "I'm just checking that we know that we do not have this audio. I didn't hear him say any words here.",
+   "beat": "e3",
+   "tc": "00:02:55:14"
+  }
+ }
 }

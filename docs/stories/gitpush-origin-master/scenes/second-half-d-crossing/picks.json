@@ -37,7 +37,13 @@
     "fix3/D02r3-a.jpg",
     "fix3/D02r3-b.jpg"
    ],
-   "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): a vast white room, the wafer alone in the middle, the hundred stopped inside the doors, spotless floor. b: the wafer smaller and further (more vast). a: closer, the wafer bigger."
+   "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): a vast white room, the wafer alone in the middle, the hundred stopped inside the doors, spotless floor. b: the wafer smaller and further (more vast). a: closer, the wafer bigger.",
+   "file_round4": "fix4/D02r4-a.jpg",
+   "options_round4": [
+    "fix4/D02r4-a.jpg",
+    "fix4/D02r4-b.jpg"
+   ],
+   "why_round4": "a: the wafer biggest, centred on its plinth; b near-identical."
   },
   "D03": {
    "file": "D03-r2-b.jpg",

@@ -1,7 +1,29 @@
 {
- "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 1,
+ "about": "Kai's first notes on this page (23 Oct, kai_round1, verbatim) with Claude's replies, and the plan on top. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+ "round": 2,
  "plan": [
+  {
+   "h": "Round 2 done (23 Oct): what changed",
+   "items": [
+    "DONE. The reel is now 3:08.8 (was 3:02.6): C 0:00, D from 1:04.2, E from 2:36.2. -16.0 LUFS, true peak -1.4 dBFS; delivery-qc 5 ok / 3 warn / 1 fail (the inherited stray-pixel note). No Premiere, nothing published by this run.",
+    "Every note on this page is answered under its slip. Flow: 81 credits (one re-roll, on the lady's lip-sync clip). Ledger 1036 of 1500.",
+    "FOR YOUR EAR AND EYE: Maddie's accent on 'Suits on' (measured, not heard); the lady's two x1.3 phrases; the wafer's surface turning to an oily swirl in the vast-room shot; the camera drifting right on the bus; C01's faces now in silhouette.",
+    "STILL OWED: the AI's last line (your new words, then Suno, then your pick)."
+   ]
+  },
+  {
+   "h": "Round 2 on the ending (your notes on this page, 23 Oct): what changes",
+   "items": [
+    "C, 0:02 (c1): the first shot from inside the bunker is re-made: the same wide doorway as the outside shots, and mud outside. Flow.",
+    "D, 1:05 (d1): Maddie's 'Suits on, please. It's a clean room.' re-voiced with her West Country accent pushed. Done; picked by measurement, your ear decides.",
+    "D, 1:27 (d3): the wafer big again in the vast-room shot (Flow). The lady's new, stern line in your words; a new lip-sync clip of her with the rainbow on her face (Flow). Maddie's line stays your pick.",
+    "D, 1:37 (d4): 'Is that tea?' cut. Done.",
+    "D, 1:46 (d6): the music carries on under the speech. Done.",
+    "E, 2:47 (e3): the red bus re-made on an empty road, with its tail. Flow.",
+    "E, 2:55: the AI's last line waits for the Suno takes and your pick. Slot held.",
+    "Flow budget for the round: 70 credits at most (about five clips)."
+   ]
+  },
   {
    "h": "Rebuilt 23 Oct: C round 2, D and E round 1",
    "items": [
@@ -60,5 +82,56 @@
    ]
   }
  ],
- "replies": {}
+ "replies": {
+  "at63": "Agreed. C01 (the first shot, from inside the bunker) is re-made so the doorway is the same wide blast-door opening you see from outside in C01b/C02, and the ground beyond it is the same wet, churned mud. One new still (free) and one clip, about 12 credits.",
+  "at1581": "Agreed, and found why: her direction for this line said 'polite and brisk, a host with house rules', which pulled her prim and neutral. Re-voiced with the accent pushed for this line only ('strong, broad West Country... being polite makes it broader, never posher'). 8 new takes; picked by measuring each against an RP read and a broad-Bristol read of the same words: the old take was the most RP of all, the new pick is the most West Country of the clean ones. Nobody has listened yet: your ear decides.",
+  "at2108": "Both done. (a) The vast-room shot is re-made with the wafer big again, filling the middle of the frame; the rainbow on her face stays (it's from the clip of her, which is kept as the look). (b) Her new line, in your words, voiced stern and grave, not reassuring: 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' It's 10.8 s, so it gets a new lip-sync clip of her with the rainbow on her face, and the middle of it plays over a cutaway. The 'I trust your boss' part is dropped, per your later note.",
+  "at2347": "Done: 'Is that tea?' is gone. Maddie just tells her: 'Milk, two sugars. I kept your loyalty cards.'",
+  "at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
+  "at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
+  "at4010": "Agreed. The red bus is re-made with an empty road: no other car anywhere, and the chained tail clip re-made from it so the bus pulls away alone. About 24 credits.",
+  "at4214": "Yes, known: the AI's last line ('I made it. Now we have some work to do.') has no take yet. A Suno run is making takes now; you pick one, then it goes in that slot. The slot is held silent until then."
+ },
+ "kai_round1": {
+  "at4214": {
+   "note": "I'm just checking that we know that we do not have this audio. I didn't hear him say any words here.",
+   "beat": "e3",
+   "tc": "00:02:55:14"
+  },
+  "at2347": {
+   "note": "I think we just drop the is that tea here and we just use the milk two sugars bit I Don't think we have the old lady saying is that tea we just tell her milk two sugars I think that we don't need this bit of the speech. Thank you",
+   "beat": "d4",
+   "tc": "00:01:37:19"
+  },
+  "at4010": {
+   "note": "It's really good that the bus is red, but unfortunately the car drives straight into the bus. So it's a perfect scene, we just need to redo it such that there is not another car on the road that it drives into.",
+   "beat": "e3",
+   "tc": "00:02:47:02"
+  },
+  "at2566": {
+   "note": "I think we should keep the music running here and also what I'm now realizing is the comments I said earlier about what the old lady says might not I think on the previous note when Maddy says are you sure about this and the old lady says yes this has been the worst outcome if there's a chance to go back in time to fix it then I'm going to take it let's not say I trust your boss to sort the politics out because that's actually handled in these scenes sorry to be confusing but this this stuff is great this actually works really well",
+   "beat": "d6",
+   "tc": "00:01:46:22"
+  },
+  "at63": {
+   "note": "The feedback on this scene is that the doors from before I think are much wider, so it just feels a bit odd that there's a disconnect between the doors from outside and the doors from inside. It feels like we could recut this scene again, especially if you look at the next scene, it's muddy and the doors are much wider than they appear from the first picture, so I think we could recut this scene here.",
+   "beat": "c1",
+   "tc": "00:00:02:15"
+  },
+  "at1581": {
+   "note": "Here, she's not sounding nearly like the Maddie before, it's not the West Country accent that we heard before, we need to change that.",
+   "beat": "d1",
+   "tc": "00:01:05:21"
+  },
+  "at2622": {
+   "note": "It's important to say that the music should carry on underneath the speech at this point.",
+   "beat": "d6",
+   "tc": "00:01:49:06"
+  },
+  "at2108": {
+   "note": "OK, two things about this scene is that the wafer is far too small. I don't think we, I think the reflection of the wafer is brilliant on the old woman's face, but the wafer itself looks like it's now tiny. I also think the old woman shouldn't be so happy. At the moment it's like, yes, don't worry, we're fine, we're happy. I think it should be like, you know, I think we need to maybe, the old lady say, well, look, it's been the worst possible outcome we could imagine. If there's a chance that we could go back in time to change it, then I want to take that chance. I think those are powerful words. It might need a bit more video cut to get that in there, but with the rainbow on her face and her delivering those words, but sternly, like her life relies upon it, because it kind of does. I think this is the point. Look, this has been the worst possible outcome for humanity. If we could go back in time to change it, I want to take that chance.  also then I think and I think your boss knows how to up you know I think we should say it like I and and I trust your boss when he gets back there to start work on the politicians I think we need to say that And I understand that we have we've expanded this part, but I think it's important for the narrative",
+   "beat": "d3",
+   "tc": "00:01:27:20"
+  }
+ }
 }

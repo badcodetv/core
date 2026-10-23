@@ -37,7 +37,10 @@
    "note": "The column recedes; the ceiling-bank sweep is faint. A lens glint flares on the machine from ~6.5 s: out before it (or keep it as the machine waking, Kai's call).",
    "file_round3": "D02r3-t1.mp4",
    "plate_round3": "../stills/fix3/D02r3-b.jpg",
-   "note_round3": "Nobody walks; heads turn; rainbow bands ripple over the wafer; floor stays clean."
+   "note_round3": "Nobody walks; heads turn; rainbow bands ripple over the wafer; floor stays clean.",
+   "file_round4": "D02r4-t1.mp4",
+   "plate_round4": "../stills/fix4/D02r4-a.jpg",
+   "note_round4": "Ending round 2 (Kai reel at2108): the wafer ENORMOUS in the middle of the vast room. Locked; nobody walks. Flaw: from ~2 s the wafer's chip-grid surface turns into an oily rainbow swirl."
   },
   "D03": {
    "file": "D03-t2.mp4",
@@ -62,7 +65,11 @@
    },
    "file_round3": "D04r3-t1.mp4",
    "plate_round3": "../stills/D04-r1-c.jpg",
-   "talking_round3": "lady: \"Yes. Don't worry, we understand.\" own audio exact: Yes 1.86-3.10 / don't worry 3.76-4.66 / we understand 5.12-5.96 (voice d3-2-lady-r5b 5.44 s: place by phrase). She looks down, eyes wet, a small smile and nod; the wafer edge drifts into frame right."
+   "talking_round3": "lady: \"Yes. Don't worry, we understand.\" own audio exact: Yes 1.86-3.10 / don't worry 3.76-4.66 / we understand 5.12-5.96 (voice d3-2-lady-r5b 5.44 s: place by phrase). She looks down, eyes wet, a small smile and nod; the wafer edge drifts into frame right.",
+   "file_round4": "D04r4-t2.mp4",
+   "plate_round4": "../stills/D04-r1-c.jpg",
+   "note_round4": "Ending round 2 (Kai reel at2108/at2566): the lady, stern, says the whole new line (own audio exact: Look 0.84-1.28 / this...humanity 1.62-4.34 / If...change it 3 5.28-7.84 / I want to take that chance 8.20-9.24). Rainbow on her face; alone in frame.",
+   "alt_round4": "D04r4-t1.mp4 (reject: dropped 'possible', 'in time', 'to take'; a stray head enters frame right from ~2.5 s)"
   },
   "D05": {
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L3-wafer-pattern.jpg",

@@ -97,8 +97,11 @@ STYLE_BEAT = {
     ('D', 'd3', 'lady'): ("Style: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is "
                           "choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every "
                           "word meant, steel under the age in her voice; no tears, no smile.",
-                          "Pace: measured and heavy; a breath after 'Look,'; a short pause after 'humanity'; the last clause, "
-                          "'I want to take that chance', slow and final, falling at the end."),
+                          # r6 (23 Oct) read it "measured and heavy": 12.4 s of speech, too long for one lip-sync clip.
+                          # r7: urgent, at a normal speaking pace; the weight is in the voice, not the tempo.
+                          "Pace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath "
+                          "after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, "
+                          "falling at the end."),
     ('E', 'e1', 'maddie'): ("Style: alone now, no one to be cheeky for; small, soft and a little lost, the habit of "
                             "being cheerful still there underneath.",
                             "Pace: slow and quiet, four soft words, no hurry; trailing off at the end."),

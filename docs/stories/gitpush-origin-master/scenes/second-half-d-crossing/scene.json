@@ -49,7 +49,7 @@
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
           "text": "Suits on, please. It's a clean room.",
           "by": "kai",
-          "how": "polite and brisk, a host with house rules, a little fussy on her boss's behalf",
+          "how": "brisk and cheery, a Bristol local with house rules, a little fussy on her boss's behalf; chatty, never prim or posh",
           "frame": "D00",
           "was": "AI: same words (Kai round 1, ld1-0: Maddie says it)"
         },
@@ -98,11 +98,12 @@
         {
           "speaker": "lady",
           "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
-          "text": "Yes. Don't worry, we understand.",
+          "text": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
           "by": "kai",
-          "how": "deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final",
+          "how": "stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end",
           "frame": "D04",
-          "was": "Us. (then AI: You. And your consciousness. / It only sends one back. Me. -- both cut, Kai round 1 bd3)"
+          "was": "Us. (then AI: You. And your consciousness. / It only sends one back. Me. -- both cut, Kai round 1 bd3)",
+          "previous_text": "Yes. Don't worry, we understand."
         }
       ]
     },
@@ -113,14 +114,6 @@
       "blurb": "Overhead, the hundred chairs laid out like a wafer. On each one, a blanket and a cup of tea.",
       "lines": [
         {
-          "speaker": "lady",
-          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
-          "text": "Is that tea?",
-          "by": "claude",
-          "how": "suspicious, and slightly moved",
-          "frame": "D06"
-        },
-        {
           "speaker": "maddie",
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
           "text": "Milk, two sugars. I kept your loyalty cards.",
@@ -128,6 +121,17 @@
           "how": "helpful and chirpy, entirely unaware it is creepy; a delivery robot proud of her records",
           "frame": "D06",
           "was": "AI: same words (Kai round 1, ld4-1: Maddie says it)"
+        }
+      ],
+      "cut_lines": [
+        {
+          "speaker": "lady",
+          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
+          "text": "Is that tea?",
+          "by": "claude",
+          "how": "suspicious, and slightly moved",
+          "frame": "D06",
+          "cut": "Kai at2347 (reel round 1, 23 Oct): dropped; Maddie just tells her"
         }
       ]
     },

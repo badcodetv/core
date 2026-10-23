@@ -42,7 +42,10 @@
       "file_round3": "E03r3-t1.mp4 + E03xr3-t2.mp4 (chain to be joined by main)",
       "plate_round3": "../stills/fix3/E03r3-b.jpg",
       "alt_round3": "E03xr3-t1.mp4 (the camera pans, the walkers come at the lens, the bus barely recedes)",
-      "note_round3": "E03r3-t1 (10 s): the red bus pulls away to mid-distance, walkers on the right. E03xr3-t2 (8 s, chained from its last frame): locked, the bus recedes further (not to a pinpoint), the two walkers turn and walk away. Small unreadable fascia lettering on the far shops."
+      "note_round3": "E03r3-t1 (10 s): the red bus pulls away to mid-distance, walkers on the right. E03xr3-t2 (8 s, chained from its last frame): locked, the bus recedes further (not to a pinpoint), the two walkers turn and walk away. Small unreadable fascia lettering on the far shops.",
+      "file_round4": "E03r4-chain.mp4",
+      "plate_round4": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix4/E03r4b-c.jpg",
+      "note_round4": "Ending round 2 (Kai reel at4010): the red bus on an EMPTY road, no car anywhere. Head E03r4-t1 (10 s) + tail E03xr4-t1 (8 s, from E03r4-t1's last frame with a far oncoming vehicle painted out: E03r4-last-clean-a). Flaw: Omni pans the camera slowly right in both."
     },
     "E04": {
       "file": "black",

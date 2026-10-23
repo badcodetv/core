@@ -43,7 +43,7 @@ NAMES = {'ai': 'The AI (through Maddie)', 'maddie': 'Maddie', 'sandra': 'Sandra'
 SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,'
            'asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB')
 ENC = C.ENC
-ROUND_KEYS = ('file_round3', 'file_round2_kai')  # newest first
+ROUND_KEYS = ('file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 
 
@@ -248,7 +248,11 @@ def scene_c(sc):
     m['c01'] = (0.0, end_c1)
     m['promise'] = (a, e1)
     t = c.close(b, end_c1)
-    c.flags.append('Round 1 (Kai, bc1): C01 is the new shot from inside the bunker (c01r1-t2). The lady is visible and '
+    c.flags.append('Ending round 2 (Kai reel at63): C01 re-made (c01r4-t1) so the doorway from inside is the same wide '
+                   'pair of green blast doors as the outside shots, with the mud outside and on the threshold. Made as a '
+                   'reverse angle of C01b (editing the old plate could not widen its doorway); the cost is that the wary '
+                   'faces are now mostly silhouettes, the old lady lit on the right. Maddie stands in the mud facing in.')
+    c.flags.append('Round 1 (Kai, bc1): C01 is the new shot from inside the bunker (c01r1-t2; replaced in ending round 2). The lady is visible and '
                    'silent among the wary faces and turns her head away at ~7 s, kept in. Nobody moves for 1.4 s before '
                    'Maddie speaks; "You\'ve got my word." comes 1.2 s after the first line (scene.json gap_before). '
                    'C01 holds 1.5 s, then pushes 100 -> 106% eased (push.py), centred between the faces and the door.')

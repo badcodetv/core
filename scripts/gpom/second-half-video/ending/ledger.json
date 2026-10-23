@@ -1,5 +1,5 @@
 {
- "spent": 955,
+ "spent": 1036,
  "jobs": [
   {
    "key": "C-C06",
@@ -717,6 +717,78 @@
    "mediaId": "2106402f-743f-4cab-abc8-3fe6f1ace5bc",
    "flow_project": "08fba19e-6a39-40c9-94d8-b868327e86ec",
    "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "C-c01r4-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix4/c01r4d-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c01r4-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "8cc7e5f0-133a-4db9-8784-f2b2a44c9994",
+   "flow_project": "2c09a920-7711-47cc-b88e-16f7b8361d4a",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "ending round 2 (Kai reel notes 23 Oct)"
+  },
+  {
+   "key": "D-D02r4-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix4/D02r4-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D02r4-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "aef609a0-7ea4-41a6-a864-ccb89f48be6d",
+   "flow_project": "b97a72a6-8e75-4d49-9bf7-4cd88f3a4ecf",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "ending round 2 (Kai reel notes 23 Oct)"
+  },
+  {
+   "key": "D-D04r4-t1",
+   "scene": "D",
+   "cost": 15,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/D04-r1-c.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D04r4-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "f25a1470-4797-4299-99fb-1a32931c2893",
+   "flow_project": "46de3b59-6a9f-415d-b64f-214aeb40c1b2",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "ending round 2 (Kai reel notes 23 Oct)"
+  },
+  {
+   "key": "D-D04r4-t2",
+   "scene": "D",
+   "cost": 15,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/D04-r1-c.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D04r4-t2.mp4",
+   "at": "2026-10-23",
+   "mediaId": "dfc60620-7f9d-46f6-96a3-4a7e08602dbb",
+   "flow_project": "4e88cc9d-0291-4972-a156-003ed6d91700",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "ending round 2 (Kai reel notes 23 Oct)"
+  },
+  {
+   "key": "E-E03r4-t1",
+   "scene": "E",
+   "cost": 15,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix4/E03r4b-c.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r4-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "69120797-b39f-4e8a-9bb9-25f818c4b671",
+   "flow_project": "c168dbfd-f22c-4267-9c0d-6a9c7332873e",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "ending round 2 (Kai reel notes 23 Oct)"
+  },
+  {
+   "key": "E-E03xr4-t1",
+   "scene": "E",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix4/E03r4-last-clean-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03xr4-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "c7b03849-d4c3-4162-a0aa-504d1ff67839",
+   "flow_project": "c53e12a3-3c35-48d6-87d0-a37b9f2e1aba",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover",
+   "round": "ending round 2 (Kai reel notes 23 Oct)"
   }
  ],
  "keys": [

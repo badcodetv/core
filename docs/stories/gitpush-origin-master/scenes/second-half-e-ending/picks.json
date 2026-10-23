@@ -34,7 +34,16 @@
         "fix3/E03r3-a.jpg",
         "fix3/E03r3-b.jpg"
       ],
-      "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the bus made a plain red double-decker, no roundel, no lettering, no adverts. b keeps E03b-r1-b's composition; a reframed wider."
+      "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the bus made a plain red double-decker, no roundel, no lettering, no adverts. b keeps E03b-r1-b's composition; a reframed wider.",
+      "file_round4": "fix4/E03r4b-c.jpg",
+      "options_round4": [
+        "fix4/E03r4-a.jpg",
+        "fix4/E03r4-b.jpg",
+        "fix4/E03r4b-a.jpg",
+        "fix4/E03r4b-b.jpg",
+        "fix4/E03r4b-c.jpg"
+      ],
+      "why_round4": "c: the only one with no vehicle or headlights anywhere (the hooded pair on the right went too). a/b of both calls kept a car beyond the bus."
     },
     "E04": {
       "file": "black",

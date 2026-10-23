@@ -1,7 +1,30 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 1,
+ "round": 2,
  "plan": [
+  {
+   "h": "Round 2 done (23 Oct): what changed",
+   "items": [
+    "DONE. Rebuilt: 92.0 s (was 85.8 s; the lady's new line is longer). No Premiere, nothing published by this run.",
+    "BEAT 1 (at1581): Maddie's 'Suits on, please. It's a clean room.' re-voiced, pick r6d. Measured against an RP read and a broad-Bristol read of the same words: the old take was the most RP of all 12 (0.39 on a 0-1 scale), r6d is 0.88. Nobody has listened. Alternative: r6b-trim.",
+    "BEAT 2 (at2108): the vast room re-made with the wafer ENORMOUS in the middle (D02r4). Flaw: from ~2 s Omni turns the wafer's chip grid into an oily rainbow swirl.",
+    "BEAT 3 (at2108/at2566): the lady, stern, in your words: 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' (take r7c, 10.8 s). Maddie's line is unchanged and nothing is added before it. 'what this will cost you.' lands on her listening, then a punch-in to the new clip of her (rainbow on her face) saying it. 'Look,' on her mouth; 'this has been the worst' x1.3; 'possible outcome for humanity.' over gleaming Maddie and the hundred listening; back on her for the rest (x1.3, x1.15). Two phrases at the x1.3 stretch cap: for your ear.",
+    "BEAT 4 (at2347): 'Is that tea?' cut. Maddie just says 'Milk, two sugars. I kept your loyalty cards.'",
+    "BEAT 6 (at2566/at2622): the clean-room piano now carries on under the lady's question and Maddie's answer (dipped under the voices) and hands over to the cello on the hands.",
+    "CHECKS: -16.2 LUFS, true peak -2.0 dBFS; delivery-qc 6 ok / 3 warn / 1 fail (the same stray-pixel note as every cut). Every changed line whispered in the mix: all heard as written."
+   ]
+  },
+  {
+   "h": "Round 2 on this scene (Kai's notes on the Ending reel page, 23 Oct): what changes",
+   "items": [
+    "Your notes were made on the Ending reel page (reel time minus 64.2 s = D time), kept here as kai_round2, keys reel-atNNN.",
+    "BEAT 1: Maddie's 'Suits on, please. It's a clean room.' re-voiced with the West Country accent pushed (r6/r7, 8 takes; pick r6d by measurement).",
+    "BEAT 2-3: the vast-room shot re-made with the wafer big in the middle. Flow.",
+    "BEAT 3: the lady's new line (stern): 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' Voiced (r7c, 10.8 s). New lip-sync clip of her with the rainbow on her face; the middle plays over a cutaway. Maddie's line unchanged.",
+    "BEAT 4: 'Is that tea?' cut; Maddie's line alone.",
+    "BEAT 6: the D-room piano carries on under the speech and hands over to the cello on the hands."
+   ]
+  },
   {
    "h": "Round 1 done (23 Oct): what changed",
    "items": [
@@ -77,7 +100,12 @@
   "at2259": "Agreed, it's a still with a zoom. D14p (the prints at the doorway) gets re-made as real video: wind in the grass, chalk dust over the prints, the doorway light breathing. No post zoom.",
   "at2379": "Thank you. D14 (the building at dusk) stays.",
   "bd9": "Yes to all of it: the music carries over from the crossing, the cup-of-tea shot goes, straight to Maddie. New D16 from the same angle as the 'they sit' shot, Maddie gleaming and the right size against the chairs.",
-  "ld9-1": "Yes: Maddie says only 'Boss...', then a long silence (about 4 s). 'Mind how you go' moves to the start of E, on the phone."
+  "ld9-1": "Yes: Maddie says only 'Boss...', then a long silence (about 4 s). 'Mind how you go' moves to the start of E, on the phone.",
+  "reel-at1581": "Agreed, and found why: her direction for this line said 'polite and brisk, a host with house rules', which pulled her prim and neutral. Re-voiced with the accent pushed for this line only ('strong, broad West Country... being polite makes it broader, never posher'). 8 new takes; picked by measuring each against an RP read and a broad-Bristol read of the same words: the old take was the most RP of all, the new pick is the most West Country of the clean ones. Nobody has listened yet: your ear decides.",
+  "reel-at2108": "Both done. (a) The vast-room shot is re-made with the wafer big again, filling the middle of the frame; the rainbow on her face stays (it's from the clip of her, which is kept as the look). (b) Her new line, in your words, voiced stern and grave, not reassuring: 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' It's 10.8 s, so it gets a new lip-sync clip of her with the rainbow on her face, and the middle of it plays over a cutaway. The 'I trust your boss' part is dropped, per your later note.",
+  "reel-at2347": "Done: 'Is that tea?' is gone. Maddie just tells her: 'Milk, two sugars. I kept your loyalty cards.'",
+  "reel-at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
+  "reel-at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands."
  },
  "kai_round1": {
   "at2259": {
@@ -162,5 +190,32 @@
  "answers_round1": {
   "Q1": "none of the options: the cleaned-up, gleaming Maddie has NO bunting any more (Kai, 23 Oct). Exception to the 'torn bunting always stays' rule, from the clean room on.",
   "Q2": "don't worry about naming who profits; Kai thinks the film has it the right way, and wants the beneficiary rule dropped as too stringent (23 Oct)."
+ },
+ "kai_round2": {
+  "reel-at1581": {
+   "note": "Here, she's not sounding nearly like the Maddie before, it's not the West Country accent that we heard before, we need to change that.",
+   "beat": "d1",
+   "tc": "00:01:05:21"
+  },
+  "reel-at2108": {
+   "note": "OK, two things about this scene is that the wafer is far too small. I don't think we, I think the reflection of the wafer is brilliant on the old woman's face, but the wafer itself looks like it's now tiny. I also think the old woman shouldn't be so happy. At the moment it's like, yes, don't worry, we're fine, we're happy. I think it should be like, you know, I think we need to maybe, the old lady say, well, look, it's been the worst possible outcome we could imagine. If there's a chance that we could go back in time to change it, then I want to take that chance. I think those are powerful words. It might need a bit more video cut to get that in there, but with the rainbow on her face and her delivering those words, but sternly, like her life relies upon it, because it kind of does. I think this is the point. Look, this has been the worst possible outcome for humanity. If we could go back in time to change it, I want to take that chance.  also then I think and I think your boss knows how to up you know I think we should say it like I and and I trust your boss when he gets back there to start work on the politicians I think we need to say that And I understand that we have we've expanded this part, but I think it's important for the narrative",
+   "beat": "d3",
+   "tc": "00:01:27:20"
+  },
+  "reel-at2347": {
+   "note": "I think we just drop the is that tea here and we just use the milk two sugars bit I Don't think we have the old lady saying is that tea we just tell her milk two sugars I think that we don't need this bit of the speech. Thank you",
+   "beat": "d4",
+   "tc": "00:01:37:19"
+  },
+  "reel-at2566": {
+   "note": "I think we should keep the music running here and also what I'm now realizing is the comments I said earlier about what the old lady says might not I think on the previous note when Maddy says are you sure about this and the old lady says yes this has been the worst outcome if there's a chance to go back in time to fix it then I'm going to take it let's not say I trust your boss to sort the politics out because that's actually handled in these scenes sorry to be confusing but this this stuff is great this actually works really well",
+   "beat": "d6",
+   "tc": "00:01:46:22"
+  },
+  "reel-at2622": {
+   "note": "It's important to say that the music should carry on underneath the speech at this point.",
+   "beat": "d6",
+   "tc": "00:01:49:06"
+  }
  }
 }

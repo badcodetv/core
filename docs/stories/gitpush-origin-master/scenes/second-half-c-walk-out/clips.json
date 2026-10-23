@@ -14,7 +14,10 @@
       "note": "Kai round 1 (bc1): new shot from inside the bunker past the wary faces (the old lady lit by the doorway, silent, turns her head away at ~7 s) to Maddie alone outside the doors, facing in. Beacon pulses (its glow lands on the doors). Maddie's 'Go on. I promise you'll be okay.' / 'You've got my word.' go over it with the beacon pulse in post; no lip-sync.",
       "post": "slow push 100->106% eased (scene.json)",
       "alt": "c01r1-t1.mp4 (reject: Omni flew a string of pennants up off the robot from ~0.5 s)",
-      "superseded": "C01-t1.mp4 (round 0: the lady straightening the bunting, 'Go on, then. You lead.')"
+      "superseded": "C01-t1.mp4 (round 0: the lady straightening the bunting, 'Go on, then. You lead.')",
+      "file_round4": "c01r4-t1.mp4",
+      "plate_round4": "../stills/fix4/c01r4d-b.jpg",
+      "note_round4": "Ending round 2 (Kai reel at63): from inside the bunker through the SAME wide double doors as C01b/C02, mud outside and on the threshold; survivors in silhouette at the edges, the old woman lit on the right, Maddie in the mud facing in, beacon pulsing, bunting low. Locked."
     },
     "C01b": {
       "file": "c01br1-t1.mp4",

@@ -108,100 +108,143 @@
     1.8
    ]
   },
-  "d4-0-lady": {
-   "speaker": "lady",
-   "frame": "D06",
-   "text": "Is that tea?",
-   "voice": "Sulafat",
-   "file": "voices/d4-0-lady-a.wav",
-   "duration": 2.16,
-   "speech": [
-    0.0,
-    1.4
-   ],
-   "lead": 0.0,
-   "heard": "Is that tea?",
-   "verified": true,
-   "why": "a: both heard as written; a 2.16s is closer to the ~1.15s the words take than b 2.48s",
-   "takes": [
-    {
-     "take": "a",
-     "file": "d4-0-lady-a.wav",
-     "duration": 2.16,
-     "expected": 1.15,
-     "heard": "Is that tea?",
-     "match": 1.0,
-     "gap": 0.12,
-     "status": "kept"
-    },
-    {
-     "take": "b",
-     "file": "d4-0-lady-b.wav",
-     "duration": 2.48,
-     "expected": 1.15,
-     "heard": "Is that tea?",
-     "match": 1.0,
-     "gap": 0.25,
-     "status": "kept"
-    }
-   ],
-   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: suspicious, and slightly moved.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
-  },
   "d1-0-maddie": {
    "speaker": "maddie",
    "frame": "D00",
    "text": "Suits on, please. It's a clean room.",
    "voice": "Aoede",
-   "file": "voices/d1-0-maddie-r4c.wav",
-   "duration": 2.76,
+   "file": "voices/d1-0-maddie-r6d.wav",
+   "duration": 3.24,
    "speech": [
     0.0,
-    2.36
+    2.78
    ],
    "lead": 0.0,
    "heard": "Suits on please, it's a clean room.",
    "verified": true,
-   "why": "[r4] c: both heard as written; c 2.76s is closer to the ~2.69s the words take than a 3.24s; both heard as written; c 2.76s is closer to the ~2.69s the words take than b 3.28s",
+   "why": "[r6, reel round 1, Kai at1581: 'not the West Country accent we heard before'] r6d: whisper exact, and the highest accent score of the exact takes (0.88; Kai's flagged r4c scored 0.39). The fix: the line's direction was 'polite and brisk, a host with house rules', which pulled her toward a prim, neutral read; now 'brisk and cheery, a Bristol local... never prim or posh', and the Accent line for this beat says 'strong, broad West Country... being polite makes the accent broader, never posher' (voices.py ACCENT_BEAT). Alternative for Kai's ear: r6b-trim (0.86, the loudest, -16.1 LUFS). r6b whole repeated the second sentence; r6a/r6c heard 'So it's on' / 'Shope's on'; the four r7 takes are exact but all score 0.63-0.70.",
    "takes": [
     {
      "take": "a",
-     "file": "d1-0-maddie-r4a.wav",
-     "duration": 3.24,
+     "file": "d1-0-maddie-r6a.wav",
+     "duration": 3.28,
      "expected": 2.69,
-     "heard": "Suits on, please. It's a clean room.",
-     "match": 1.0,
-     "gap": 0.12,
+     "heard": "So it's on please. It's a clean room",
+     "match": 0.941,
+     "gap": 0.2,
      "status": "ok (attempt 1)",
-     "lufs": -15.3,
-     "true_peak": -4.2
+     "tag": "r6"
     },
     {
      "take": "b",
-     "file": "d1-0-maddie-r4b.wav",
-     "duration": 3.28,
+     "file": "d1-0-maddie-r6b.wav",
+     "duration": 6.16,
+     "expected": 2.69,
+     "heard": "Suits on please. It's a clean room. It's a clean room.",
+     "match": 0.786,
+     "gap": 0.88,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "c",
+     "file": "d1-0-maddie-r6c.wav",
+     "duration": 2.64,
+     "expected": 2.69,
+     "heard": "Shope's on, please. It's a clean room.",
+     "match": 0.882,
+     "gap": 0.1,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "d",
+     "file": "d1-0-maddie-r6d.wav",
+     "duration": 3.24,
+     "expected": 2.69,
+     "heard": "Suits on please, it's a clean room.",
+     "match": 1.0,
+     "gap": 0.18,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "a",
+     "file": "d1-0-maddie-r7a.wav",
+     "duration": 3.24,
+     "expected": 2.69,
+     "heard": "Suits on please. It's a clean room.",
+     "match": 1.0,
+     "gap": 0.08,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "b",
+     "file": "d1-0-maddie-r7b.wav",
+     "duration": 3.48,
      "expected": 2.69,
      "heard": "Suits on, please. It's a clean room.",
      "match": 1.0,
      "gap": 0.25,
      "status": "ok (attempt 1)",
-     "lufs": -16.3,
-     "true_peak": -5.3
+     "tag": "r7"
     },
     {
      "take": "c",
-     "file": "d1-0-maddie-r4c.wav",
-     "duration": 2.76,
+     "file": "d1-0-maddie-r7c.wav",
+     "duration": 3.2,
      "expected": 2.69,
      "heard": "Suits on please, it's a clean room.",
      "match": 1.0,
-     "gap": 0.33,
+     "gap": 0.05,
      "status": "ok (attempt 1)",
-     "lufs": -15.0,
-     "true_peak": -3.2
+     "tag": "r7"
+    },
+    {
+     "take": "d",
+     "file": "d1-0-maddie-r7d.wav",
+     "duration": 3.12,
+     "expected": 2.69,
+     "heard": "Suits on, please. It's a clean room.",
+     "match": 1.0,
+     "gap": 0.3,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "b-trim",
+     "tag": "r6",
+     "file": "d1-0-maddie-r6b-trim.wav",
+     "duration": 3.7,
+     "heard": "Suits on, please. It's a clean room.",
+     "match": 1.0,
+     "note": "r6b cut at 3.70 s, before its repeated \"It's a clean room.\""
     }
    ],
-   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA white changing room inside the machine's building: a hundred survivors pulling white clean-room suits on over their worn jumpers, benches heaped with coats. Hushed and clean, no echo; voices close.\n\n### DIRECTOR'S NOTES\nEmotion for this line: polite and brisk, a host with house rules, a little fussy on her boss's behalf.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
-   "previous": null
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA white changing room inside the machine's building: a hundred survivors pulling white clean-room suits on over their worn jumpers, benches heaped with coats. Hushed and clean, no echo; voices close.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk and cheery, a Bristol local with house rules, a little fussy on her boss's behalf; chatty, never prim or posh.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt; being polite makes the accent broader, never posher. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": {
+    "text": "Suits on, please. It's a clean room.",
+    "file": "voices/d1-0-maddie-r4c.wav",
+    "note": "Kai at1581: not West Country"
+   },
+   "accent_axis": {
+    "what": "Where each take sits between two anchors of the SAME words in the same voice and profile: 0 = Aoede told 'polished RP, no regional accent', 1 = told 'very broad Bristolian'. Mean whisper-encoder embedding over the speech, projected on the RP->Bristol line (scratchpad acc/enc.py + acc/anchors.py). A rough proxy: the anchors themselves spread -0.23..0.23 (RP) and 0.86..1.14 (Bristol). The take Kai flagged (r4c) is the lowest of all, 0.39, which is why the measure is trusted at all. Nobody has listened.",
+    "scores": {
+     "r4a": 0.63,
+     "r4b": 0.86,
+     "r4c": 0.39,
+     "r6a": 0.81,
+     "r6b": 1.35,
+     "r6b-trim": 0.86,
+     "r6c": 0.54,
+     "r6d": 0.88,
+     "r7a": 0.65,
+     "r7b": 0.7,
+     "r7c": 0.7,
+     "r7d": 0.63
+    }
+   }
   },
   "d1-1-sandra": {
    "speaker": "sandra",
@@ -363,111 +406,7 @@
     9.16
    ]
   },
-  "d3-2-lady": {
-   "speaker": "lady",
-   "frame": "D04",
-   "text": "Yes. Don't worry, we understand.",
-   "voice": "Sulafat",
-   "file": "voices/d3-2-lady-r5b.wav",
-   "duration": 5.44,
-   "lead": 0.26,
-   "heard": "Yes, don't worry, we understand.",
-   "verified": true,
-   "why": "[KAI'S PICK, 23 Oct, by ear on the picks page] d3-2-lady-r5b.wav. (Was d3-2-lady-r5c.wav, picked by measurement.) [r4+r5, hand pick] r5c: exact; the pause after 'Yes' is the longest of the exact takes that do not drag (1.44 s), a shorter 0.88 s before 'we understand', 4.96 s of speech, -16.9 LUFS, peak -3.5 dBFS. r5b (the auto-pick) peaks at -0.7 dBFS and has the shorter breath after 'Yes' (0.98 s); r4a (the earlier pick) is the quieter alternative (-18.5 LUFS) with a 0.94 s pause after 'Yes'; r5a and r4c drag (1.5 s pauses twice); r4b failed ('Yes, but').",
-   "takes": [
-    {
-     "take": "a",
-     "file": "d3-2-lady-r4a.wav",
-     "duration": 5.36,
-     "expected": 1.92,
-     "heard": "Yes, don't worry, we understand.",
-     "match": 1.0,
-     "gap": 0.68,
-     "status": "ok (attempt 1)",
-     "round": "r4",
-     "lufs": -18.5,
-     "true_peak": -5.0
-    },
-    {
-     "take": "b",
-     "file": "d3-2-lady-r4b.wav",
-     "duration": 5.8,
-     "expected": 1.92,
-     "heard": "Yes, but don't worry, we understand.",
-     "match": 0.935,
-     "gap": 1.12,
-     "status": "ok (attempt 1)",
-     "round": "r4",
-     "lufs": -12.5,
-     "true_peak": -1.4
-    },
-    {
-     "take": "c",
-     "file": "d3-2-lady-r4c.wav",
-     "duration": 5.96,
-     "expected": 1.92,
-     "heard": "Yes, don't worry, we understand.",
-     "match": 1.0,
-     "gap": 1.55,
-     "status": "ok (attempt 1)",
-     "round": "r4",
-     "lufs": -18.2,
-     "true_peak": -4.7
-    },
-    {
-     "take": "a",
-     "file": "d3-2-lady-r5a.wav",
-     "duration": 6.76,
-     "expected": 1.92,
-     "heard": "Yes. Don't worry. We understand.",
-     "match": 1.0,
-     "gap": 1.58,
-     "status": "ok (attempt 1)",
-     "round": "r5",
-     "lufs": -16.6,
-     "true_peak": -4.1
-    },
-    {
-     "take": "b",
-     "file": "d3-2-lady-r5b.wav",
-     "duration": 5.44,
-     "expected": 1.92,
-     "heard": "Yes, don't worry, we understand.",
-     "match": 1.0,
-     "gap": 0.93,
-     "status": "ok (attempt 1)",
-     "round": "r5",
-     "lufs": -17.2,
-     "true_peak": -0.7
-    },
-    {
-     "take": "c",
-     "file": "d3-2-lady-r5c.wav",
-     "duration": 5.64,
-     "expected": 1.92,
-     "heard": "Yes, don't worry, we understand.",
-     "match": 1.0,
-     "gap": 1.18,
-     "status": "ok (attempt 1)",
-     "round": "r5",
-     "lufs": -16.9,
-     "true_peak": -3.5
-    }
-   ],
-   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: all the suspicion gone; the softest she has ever been, an old woman who has made her peace, comforting the one who is upset; tears close but her voice steady and kind.\nPace: slow, unhurried, a breath before 'Yes' and a pause after it; 'we understand' quiet and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
-   "previous": {
-    "superseded": "d3-2-lady@r4"
-   },
-   "prompts": {
-    "r4": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
-    "r5": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: all the suspicion gone; the softest she has ever been, an old woman who has made her peace, comforting the one who is upset; tears close but her voice steady and kind.\nPace: slow, unhurried, a breath before 'Yes' and a pause after it; 'we understand' quiet and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
-   },
-   "speech": [
-    0.26,
-    5.44
-   ]
-  },
-  "d4-1-maddie": {
+  "d4-0-maddie": {
    "speaker": "maddie",
    "frame": "D06",
    "text": "Milk, two sugars. I kept your loyalty cards.",
@@ -521,7 +460,8 @@
     }
    ],
    "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: helpful and chirpy, entirely unaware it is creepy; a delivery robot proud of her records.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
-   "previous": null
+   "previous": null,
+   "renamed_from": "d4-1-maddie (Kai at2347, 23 Oct: the lady's \"Is that tea?\" dropped, so Maddie's line is d4 line 0)"
   },
   "d6-0-lady": {
    "speaker": "lady",
@@ -809,6 +749,148 @@
    "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent white room after everyone has gone: a hundred empty reclining chairs, a small robot alone among them, speaking softly to nobody. Dead quiet, no echo.\n\n### DIRECTOR'S NOTES\nEmotion for this line: small and quiet, expecting an answer that does not come; trailing off; a long silence after it.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
    "previous": {
     "superseded": "d9-0-maddie@r4"
+   }
+  },
+  "d3-2-lady": {
+   "speaker": "lady",
+   "frame": "D04",
+   "text": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+   "voice": "Sulafat",
+   "file": "voices/d3-2-lady-r7c.wav",
+   "duration": 11.48,
+   "speech": [
+    0.0,
+    10.88
+   ],
+   "lead": 0.0,
+   "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+   "verified": true,
+   "why": "[r7, reel round 1, Kai at2108/at2566: stern, like her life depends on it] r7c: all 8 takes (r6 'measured and heavy', r7 'urgent, at a normal speaking pace') heard exactly as written. r7c is the shortest (10.8 s of speech; r6 ran 12.3-13.4 s), which matters because it has to sit on a lip-sync clip; its breaks fall where the line turns: a breath after 'Look,' (0.28 s), after 'humanity.' (0.34 s) and before 'I want to take that chance.' (0.62 s). -14.7 LUFS. Alternative for Kai's ear: r6c, heavier and slower (12.3 s). Nobody has listened: 'stern' is the prompt's, not a measurement.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d3-2-lady-r6a.wav",
+     "duration": 14.0,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.8,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "b",
+     "file": "d3-2-lady-r6b.wav",
+     "duration": 13.72,
+     "expected": 11.15,
+     "heard": "Look. This has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.68,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "c",
+     "file": "d3-2-lady-r6c.wav",
+     "duration": 13.08,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.83,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "d",
+     "file": "d3-2-lady-r6d.wav",
+     "duration": 13.96,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.88,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "a",
+     "file": "d3-2-lady-r7a.wav",
+     "duration": 13.08,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 1.0,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "b",
+     "file": "d3-2-lady-r7b.wav",
+     "duration": 11.92,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.53,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "c",
+     "file": "d3-2-lady-r7c.wav",
+     "duration": 11.48,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.62,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "d",
+     "file": "d3-2-lady-r7d.wav",
+     "duration": 12.24,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.68,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+   "previous": {
+    "superseded": "d3-2-lady@r6"
+   },
+   "prompts": {
+    "r6": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: measured and heavy; a breath after 'Look,'; a short pause after 'humanity'; the last clause, 'I want to take that chance', slow and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+    "r7": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
+   },
+   "speech_measured": {
+    "r6a": 13.4,
+    "r6b": 13.06,
+    "r6c": 12.32,
+    "r6d": 13.32,
+    "r7a": 12.38,
+    "r7b": 11.28,
+    "r7c": 10.76,
+    "r7d": 11.66
+   },
+   "phrases": {
+    "Look,": [
+     0.28,
+     0.7
+    ],
+    "this has been the worst possible outcome for humanity.": [
+     0.98,
+     5.18
+    ],
+    "If there's a chance we could go back in time to change it,": [
+     5.52,
+     8.94
+    ],
+    "I want to take that chance.": [
+     9.56,
+     11.04
+    ]
    }
   }
  },
@@ -1198,6 +1280,151 @@
     "note": "D16 plays the head ('...Mind how'); E01 plays the tail on the phone"
    },
    "superseded": "Kai round 1 (22 Oct): line cut or reworded"
+  },
+  "d4-0-lady@r6": {
+   "speaker": "lady",
+   "frame": "D06",
+   "text": "Is that tea?",
+   "voice": "Sulafat",
+   "file": "voices/d4-0-lady-a.wav",
+   "duration": 2.16,
+   "speech": [
+    0.0,
+    1.4
+   ],
+   "lead": 0.0,
+   "heard": "Is that tea?",
+   "verified": true,
+   "why": "a: both heard as written; a 2.16s is closer to the ~1.15s the words take than b 2.48s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d4-0-lady-a.wav",
+     "duration": 2.16,
+     "expected": 1.15,
+     "heard": "Is that tea?",
+     "match": 1.0,
+     "gap": 0.12,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "d4-0-lady-b.wav",
+     "duration": 2.48,
+     "expected": 1.15,
+     "heard": "Is that tea?",
+     "match": 1.0,
+     "gap": 0.25,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: suspicious, and slightly moved.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+   "superseded": "Reel round 1 (Kai 23 Oct): at2347 drops the lady's 'Is that tea?'; at2108/at2566 give the lady new, stern words in d3"
+  },
+  "d3-2-lady@r6": {
+   "speaker": "lady",
+   "frame": "D04",
+   "text": "Yes. Don't worry, we understand.",
+   "voice": "Sulafat",
+   "file": "voices/d3-2-lady-r5b.wav",
+   "duration": 5.44,
+   "lead": 0.26,
+   "heard": "Yes, don't worry, we understand.",
+   "verified": true,
+   "why": "[KAI'S PICK, 23 Oct, by ear on the picks page] d3-2-lady-r5b.wav. (Was d3-2-lady-r5c.wav, picked by measurement.) [r4+r5, hand pick] r5c: exact; the pause after 'Yes' is the longest of the exact takes that do not drag (1.44 s), a shorter 0.88 s before 'we understand', 4.96 s of speech, -16.9 LUFS, peak -3.5 dBFS. r5b (the auto-pick) peaks at -0.7 dBFS and has the shorter breath after 'Yes' (0.98 s); r4a (the earlier pick) is the quieter alternative (-18.5 LUFS) with a 0.94 s pause after 'Yes'; r5a and r4c drag (1.5 s pauses twice); r4b failed ('Yes, but').",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d3-2-lady-r4a.wav",
+     "duration": 5.36,
+     "expected": 1.92,
+     "heard": "Yes, don't worry, we understand.",
+     "match": 1.0,
+     "gap": 0.68,
+     "status": "ok (attempt 1)",
+     "round": "r4",
+     "lufs": -18.5,
+     "true_peak": -5.0
+    },
+    {
+     "take": "b",
+     "file": "d3-2-lady-r4b.wav",
+     "duration": 5.8,
+     "expected": 1.92,
+     "heard": "Yes, but don't worry, we understand.",
+     "match": 0.935,
+     "gap": 1.12,
+     "status": "ok (attempt 1)",
+     "round": "r4",
+     "lufs": -12.5,
+     "true_peak": -1.4
+    },
+    {
+     "take": "c",
+     "file": "d3-2-lady-r4c.wav",
+     "duration": 5.96,
+     "expected": 1.92,
+     "heard": "Yes, don't worry, we understand.",
+     "match": 1.0,
+     "gap": 1.55,
+     "status": "ok (attempt 1)",
+     "round": "r4",
+     "lufs": -18.2,
+     "true_peak": -4.7
+    },
+    {
+     "take": "a",
+     "file": "d3-2-lady-r5a.wav",
+     "duration": 6.76,
+     "expected": 1.92,
+     "heard": "Yes. Don't worry. We understand.",
+     "match": 1.0,
+     "gap": 1.58,
+     "status": "ok (attempt 1)",
+     "round": "r5",
+     "lufs": -16.6,
+     "true_peak": -4.1
+    },
+    {
+     "take": "b",
+     "file": "d3-2-lady-r5b.wav",
+     "duration": 5.44,
+     "expected": 1.92,
+     "heard": "Yes, don't worry, we understand.",
+     "match": 1.0,
+     "gap": 0.93,
+     "status": "ok (attempt 1)",
+     "round": "r5",
+     "lufs": -17.2,
+     "true_peak": -0.7
+    },
+    {
+     "take": "c",
+     "file": "d3-2-lady-r5c.wav",
+     "duration": 5.64,
+     "expected": 1.92,
+     "heard": "Yes, don't worry, we understand.",
+     "match": 1.0,
+     "gap": 1.18,
+     "status": "ok (attempt 1)",
+     "round": "r5",
+     "lufs": -16.9,
+     "true_peak": -3.5
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: all the suspicion gone; the softest she has ever been, an old woman who has made her peace, comforting the one who is upset; tears close but her voice steady and kind.\nPace: slow, unhurried, a breath before 'Yes' and a pause after it; 'we understand' quiet and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+   "previous": {
+    "superseded": "d3-2-lady@r4"
+   },
+   "prompts": {
+    "r4": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+    "r5": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: all the suspicion gone; the softest she has ever been, an old woman who has made her peace, comforting the one who is upset; tears close but her voice steady and kind.\nPace: slow, unhurried, a breath before 'Yes' and a pause after it; 'we understand' quiet and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
+   },
+   "speech": [
+    0.26,
+    5.44
+   ],
+   "superseded": "Reel round 1 (Kai 23 Oct): at2347 drops the lady's 'Is that tea?'; at2108/at2566 give the lady new, stern words in d3"
   }
  }
 }

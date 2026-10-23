@@ -40,7 +40,7 @@ VID = E.CLIPS / 'video'
 D_EDL = E.CLIPS / 'ending' / 'D' / 'cut' / 'edl.json'
 # E03 round 1: the red double-decker, two clips joined here (continuous-shot: the tail's first frame dropped, a 0.3 s
 # dissolve over the join, as E03b-chain was).
-E03_HEAD, E03_TAIL, E03_XF = 'E03r3-t1.mp4', 'E03xr3-t2.mp4', 0.3
+E03_HEAD, E03_TAIL, E03_XF = 'E03r4-t1.mp4', 'E03xr4-t1.mp4', 0.3  # ending round 2 (Kai at4010): empty road
 # The AI's last line, "I made it. Now we have some work to do." (atom gpom-sh-end-ai-e2), is NOT recorded yet (Suno
 # was blocked): its slot is held silent at its estimated length, and the old "I made it. They didn't." take is out.
 LINE_TEXT = 'I made it. Now we have some work to do.'
@@ -256,13 +256,18 @@ def scene_e(sc):
     b = c.beat('e3', 'The bus drives away', s3, act='The ending',
                see='Tight on the lit red bus (140%), a 1.5 s hold, then an eased pull-back to the whole wet high street as '
                    'the bus pulls away. The AI, unfiltered and close, for the first time (its line owed). Fade to black.')
-    e03 = chain_e03(sc, V / 'E03r3-chain.mp4')
-    banked = V / 'E03r3-bank.mp4'
+    e03 = chain_e03(sc, V / 'E03r4-chain.mp4')
+    banked = V / 'E03r4-bank.mp4'
     if not banked.exists():
         lips('bank_sign_e03.py', e03, banked, '--name', 'DOWNLAND BANK')
-    graded, note = regrade(banked, V / 'E03r3-chain-graded.mp4')
-    c.flags.append(note.replace('(sh-29 + E03x)', '(E03r3-t1 + E03xr3-t2)').replace(
+    graded, note = regrade(banked, V / 'E03r4-chain-graded.mp4')
+    c.flags.append(note.replace('(sh-29 + E03x)', '(E03r4-t1 + E03xr4-t1)').replace(
         'the warm chip shop drifts out of frame', 'the rain thickens'))
+    c.flags.append(f'E03 (Kai reel at4010, ending round 2): the red bus on an EMPTY road. The plate was edited again '
+                   f'(E03r4b-c: every car and headlight removed; the hooded pair on the right went with them), re-animated '
+                   f'(E03r4-t1, 10 s) and extended (E03xr4-t1, 8 s) from its last frame with a far oncoming vehicle painted '
+                   f'out first (E03r4-last-clean-a), so nothing drives towards the bus. Omni pans the camera slowly right in '
+                   f'both clips (asked for locked).')
     c.flags.append(f'E03 (Kai at353): a RED double-decker. The still was edited (E03r3-b: E03b-r1-b with the bus made '
                    f'plain pillar-box red, no roundel, no route number, no adverts, nothing written on it), re-animated '
                    f'(E03r3-t1, 10 s) and extended from its last frame (E03xr3-t2, 8 s: locked, the bus recedes further, '
@@ -276,7 +281,7 @@ def scene_e(sc):
     c.line(b, 0, 'ai', L, SLOT, '[NOT RECORDED YET: a silent slot] ' + LINE_TEXT, 'kai')
     b['lines'][-1]['name'] = 'The AI (opening to his own voice, for the first time)'
     d03 = fr(min(line_end - s3 + TAIL + E03_HOLD + E03_FADE, C3.dur(e03) - 1.0 / FPS))
-    pull = V / f'E03r3-pull-{d03:.3f}.mp4'
+    pull = V / f'E03r4-pull-{d03:.3f}.mp4'
     fade_at, fade_d = d03 - E03_FADE, E03_FADE
     if not pull.exists():
         lips('move_keys.py', graded, pull, '--in', '0', '--dur', f'{d03:.4f}',
