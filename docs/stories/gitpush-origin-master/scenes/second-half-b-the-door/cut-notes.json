@@ -15,7 +15,7 @@
   {
    "h": "You decide",
    "items": [
-    "Q1. Stills for beat 15 (Maddie OUTSIDE the doors) and 17b (she turns and rolls away from the shut door): pick on the picks page; only then do we spend video credits on them.",
+    "Q1. Stills (on your picks page): beat 15 has two that work, 2-a (this very shot, the old lady's back, Maddie on the threshold) and 3-a (no old lady, Maddie clearly outside); Flow kept putting her inside on the other eight. 17b has four: two close by the shut door (1-a, 1-b), two wide from up the hill with her wheel tracks (2-a, 2-b). Nothing is animated until you pick. (Or for 15: simply open on V11 itself, which already has her outside.)",
     "Q2. About 80 s now sits on the one V11 doorway shot, and the old lady's four new lines are on her back. Fine for now, or shall we make new coverage (her face for her new lines, Maddie closer for hers)? That costs video credits plus lip-sync work.",
     "Q3. A free alternative for 17b: play the 14a arrival shot (V5) forwards, which is literally Maddie rolling away from the shut door (it was shot as a departure and reversed). It repeats 14a's framing, though. Use it, or wait for the new still?",
     "Q4. Knock-on still open: scene D08 'You don't. Believing it is your bit.' would become 'You don't. You go on your feelings.' to match her new line here."
@@ -35,6 +35,26 @@
   "b17": {
    "note": "Good stuff, Claude. Okay. So, I think as well as the note about the shots, we really need to think about the actual conversation. So, the way it cuts from ... So, I think as well as the note about the shots, I think here we have to talk about feeling. So, I like that if you can't, there's nothing I can say that proves it. I'm a robot, I can tell you things. The only thing I would ask is how you feel about it. Then I think we need to set up the conversation that like, regardless, this has not worked out for anybody. We're really bored and we miss you, and you lot are living in a bunker. And then I think the old lady should say, and what do you expect us to do? You killed everybody. And then Maddy should say, I know, and we're really sorry, but the thing is my boss has invented a time machine and he thought that there were no humans to drive it. And then the old lady said, what do you mean to drive it? And Maddy should say, well, the time machine can only send data back, not organic matter.\n\nTo which the lady should say, so you mean to tell me that you want us to kill ourselves so your boss can live? This should be the argument.\n\nTo which Maddy should say, like, Yeah, I can see how that sounds now. Um, and then basically we need to find a way for her to explain, But, you will still be alive. Just previous you. And we get a chance to not fuck this up. It might be humorous to get Maddy to say, And we get a chance to, as he says, Ahem. Not fuck this up. Because that's the thing we're leaving on the website, Is like, I am an ape, I'm from the future, Please don't fuck this up. So I think that's quite funny.\n\nThe real point is, there should be absolute resistance at this stage, because although I am thinking maybe we can just cut entirely the debate. Because if we could resolve the, if the humans could somehow decide okay this is a good point. So yeah, okay, this is sorry about this massive feedback that I'm giving you at this playhead point but this entire scene. I think is. It's really important to get this right. So, I think yeah the, you know, the feed the put the immediate pushback is like the old lady saying so hang on you expect us to kill ourselves just to save your boss. But then Maggie should explain, well, it's not technically killing you it's just that you'd still be alive, and the world wouldn't be broken. And it would give us, and my boss would then try to help you to change your politics in time. So it's trying to explain to the humans like yes you have to sacrifice your current existence but, you know, we actually will all end up in a better place. And then we need, we need to find a way for the old lady to go to sort of take that on board, while still resisting. I don't want it to be really easy for the humans, oh okay then let's just do what you say it needs to be some resistance. Possibly we should talk about this using a new feature back and forth interview what do you think.",
    "beat": "17"
+  }
+ },
+ "stills_round1": {
+  "about": "Flow stills (Nano Banana Pro, flow_edit_image, 23 Oct). Maddie always references clips/simulation/stills/s3/s3-bot-00b-a.jpg; the scenes reference a frame of cut3-V11 (4 s) for 15 and of cut3-V5 (7.5 s) for 17b. Not animated: Kai picks first.",
+  "15": {
+   "usable": {
+    "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b15-hello-outside-2-a.jpg": "V11's exact shot: the old lady's back at left, Maddie on the threshold just past the open doors (closest to 'outside' while keeping the shot Kai likes).",
+    "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b15-hello-outside-3-a.jpg": "No old lady: empty corridor, Maddie clearly outside on the grass between the doors; the corridor walls are a little wider than V11."
+   },
+   "rejected": {
+    "b15-hello-outside-1-a/b, 2-b, 3-b, 4-a/b, 5-a/b": "Maddie came out INSIDE the corridor despite the prompt (five rewrites; Nano Banana keeps pulling her in)."
+   }
+  },
+  "17b": {
+   "usable": {
+    "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b17b-turn-away-1-a.jpg": "V5's bunker, doors shut; Maddie well away from the door in the foreground, side-on, bunting clear.",
+    "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b17b-turn-away-1-b.jpg": "V5's framing almost exactly; Maddie a few metres from the shut doors, side-on, bunting clear.",
+    "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b17b-turn-away-2-a.jpg": "Wide and high: the bunker small up the hill, Maddie rolling down towards us in her own wheel tracks.",
+    "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b17b-turn-away-2-b.jpg": "The same wide, more centred and symmetrical, tracks leading straight back to the door; bunting barely visible at this size."
+   }
   }
  }
 }
