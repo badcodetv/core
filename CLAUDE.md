@@ -230,7 +230,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   lyrics inside `new-story` / `make-comic` / `music-video-short` / `suno-prompt`; **Review mode**
   for "does this land?" — gates first (the-reader.md's rules), one layer per pass, notes not fixes,
   findings adversarially verified, the arc held fixed. Three facts save the most time: **the moral
-  is never stated, the beneficiary always is**; **tell the audience about the bomb** (the narrator's
+  is never stated**, and the beneficiary is *usually* named (advice since 2026-10-23, not a gate); **tell the audience about the bomb** (the narrator's
   foreknowledge is free dramatic irony — never a withheld box); and **irony is decoded through prior
   belief**, so every sarcastic line is paired with an undeniable on-screen consequence.
 - **Lip-sync a talking clip to an AI Studio voice:** run the **`lip-sync-dub`** skill
@@ -320,8 +320,9 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   UK reader drifting right because the economy failed them — *not* anti-AI advocates and not the
   converted left. Ten evidence-backed rules, and the traps that cost us the reader if we trip them:
   never "you've been duped"; never deny immigration's real costs (proportionality instead); name the
-  decision-maker, never the technology; **never raise automation fear without naming the beneficiary
-  in the same piece** (unaimed, it demonstrably feeds nativism). Evidence:
+  decision-maker, never the technology; **think twice before raising automation fear with no beneficiary in
+  sight** (unaimed, it demonstrably feeds nativism) — advice, not a requirement: Kai relaxed it 2026-10-23, so a
+  piece may leave the beneficiary implied when the story already carries it. Evidence:
   [`docs/misc/2026-08-15-target-reader-research.md`](./docs/misc/2026-08-15-target-reader-research.md),
   whose §7 lists what nobody has measured — don't assert those.
 - **[`docs/using-ai.md`](./docs/using-ai.md) — how we talk about making the work with AI.** Read it

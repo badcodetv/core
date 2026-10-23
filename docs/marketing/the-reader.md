@@ -54,11 +54,14 @@ one book written from inside this audience was written to correct precisely that
    movement. Denial gaslights; proportionality re-aims.
 5. **Name the decision, not the technology. Injustice, not inevitability.** "The machines are
    coming" produces fatalism and a slow-it-down reflex; "a man chose this, and it's unjust"
-   produces political demand. Every automation beat names a chooser and a beneficiary.
+   produces political demand. Name a chooser where you can; a beneficiary is advised, not required (see rule 6).
 6. **Never raise the temperature without aiming the flame.** Raising automation anxiety *unaimed*
    feeds nativism — anger is conserved and re-targeted at whoever the reader's politics already
-   licenses. So the beneficiary is **on-panel** in the same piece, every time: character carries
-   the feeling (episodic), the mechanism carries the blame (thematic). Both layers, always.
+   licenses. So aim it: by default the beneficiary is on-panel in the same piece, with the character carrying
+   the feeling (episodic) and the mechanism carrying the blame (thematic).
+   🟡 **Relaxed by Kai, 2026-10-23: advice, not a requirement.** A piece may leave the beneficiary implied
+   when the story already makes it plain (GPOM's ending dropped its explicit line). Check that the anger has
+   *somewhere* to go; don't force a line in to satisfy this rule.
 7. **Perspective-getting.** Let the reader *receive* a first-person account in the character's own
    words. Don't prompt them to imagine being someone else, and don't have the narrator testify at
    them.

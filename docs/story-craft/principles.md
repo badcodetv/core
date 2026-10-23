@@ -23,7 +23,7 @@ Run before anything else. A piece that fails a gate is not reviewed further unti
 | --- | --- | --- |
 | G1 | **Hero, not pupil.** The reader's avatar is wronged by the system, never taught by the narrator. | the-reader.md 1 |
 | G2 | **Never "duped."** Show the trick being run on a third party; never on the reader's own belief. | the-reader.md 2 · brief 08 (inoculation, **A**) |
-| G3 | **Name the chooser and the beneficiary, on-panel, in the same piece** that raises the fear. A threat with no named cause is confusion, not mystery. | the-reader.md 5–6 · briefs 13, 24 |
+| G3 | **Name the chooser, and usually the beneficiary**, in the piece that raises the fear. A threat with no named cause is confusion, not mystery. 🟡 *The beneficiary half is advice, not a gate ('too stringent', Kai 2026-10-23): flag its absence as a note, never as a fail.* | the-reader.md 5–6 · briefs 13, 24 |
 | G4 | **Sarcasm diagnoses; care re-aims.** The "here is who" beat lands straight. | the-reader.md 9 · voice.md |
 | G5 | **Write for the pub afterwards.** The deliverable is the quotable line, not private belief. | the-reader.md 8 |
 
@@ -96,7 +96,7 @@ Run before anything else. A piece that fails a gate is not reviewed further unti
 
 ## 4. Persuasion without sermon
 
-16. **Consequence first; the moral never; the beneficiary always.** The point lands as what
+16. **Consequence first; the moral never; the beneficiary usually.** *(Relaxed from 'always' by Kai, 2026-10-23.)* The point lands as what
     happens (nobody goes to prison in *The Big Short*). The *moral* is never spoken. The *beneficiary*
     is named once, plainly, in the care register, after the feeling has landed — that one clean
     tell is the correct trade, not a lecture. *(P + A + H — briefs 08, 19, 24; the-reader 9)*
@@ -182,7 +182,7 @@ Jack's to overturn.**
 | --- | --- | --- |
 | 1 | Direct address: once-at-the-end (06) vs mid-piece for mechanics (16) vs the Guide register addresses continuously (09, 14) | **Address is the default register** — the narrator talks to "you" throughout. What is rationed is the *sincere* turn: once, last, care register, aimed at the chooser. The McKay-style mechanics explainer is a separate device, allowed once, mid-piece, aimed at a trick being run on someone else. |
 | 2 | Transportation: maximise it (07) vs distrust it (08) | Build for it; don't bank on it. Every panel carries weight alone. |
-| 3 | Never state the point (08, 15, 20) vs state it once plainly (12, 14, 19) | The **moral** is never stated. The **beneficiary** always is — once, plain, after the consequence, in the care register. |
+| 3 | Never state the point (08, 15, 20) vs state it once plainly (12, 14, 19) | The **moral** is never stated. The **beneficiary** usually is — once, plain, after the consequence, in the care register — but it is advice, not a gate (Kai, 2026-10-23). |
 | 4 | Hold the joke to the end (06, 08) vs earn a sincere/tragic turn (09, 10, 12) | Hold the joke through the *diagnosis*; the *re-aim* lands straight and short. No sincere-tragic last act (the *Don't Look Up* failure). Tonal whiplash is a tool for satellites with a human tragedy at the centre, never for the narrator's sign-off. |
 | 5 | Hope proven by the frame (15) vs hope written as a line (12) | Both. The frame proves survival structurally (the narrator exists); the script *also* carries the hope line as a checked-for item (Kurzgesagt). It may be dry. It may not be absent. |
 | 6 | Narrator arc flat (02, 17) vs the slow engine of regret (13, 06) | Carrier/cargo. Flat inside every satellite; the one change arc (wins → bored → discovers the loss) is told once, in GPOM, and is backstory everywhere else. |

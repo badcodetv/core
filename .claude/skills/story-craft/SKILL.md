@@ -75,7 +75,7 @@ Use while drafting. The order matters — each step makes the next cheaper.
 4. **The scenes.** Per scene: Mamet's three questions; the value it turns; "no, and…" at the end;
    the silent-movie test; exposition only as argument or pope-in-the-pool. *(toolbox — scene)*
 5. **The persuasion check.** Consequence first; the moral never; the beneficiary once, straight,
-   after the feeling. Pair every ironic line with a consequence. Run the Lee/Coe test on each
+   after the feeling — *advised, not required* (Kai, 2026-10-23): its absence is a note, not a fail. Pair every ironic line with a consequence. Run the Lee/Coe test on each
    sarcastic beat. Argue in the reader's moral vocabulary. *(principles §4)*
 6. **The voice.** `narrator.md`: flat baseline, one crack, bathos banked before spent, the refrain,
    address by default and the sincere turn rationed. McKee's VO test on every narration line.
@@ -123,7 +123,7 @@ is the worked reference) so the next session inherits it.
   `evidence.md` has the list.
 - **The evidence grade travels with the claim.** A practitioner's rule of thumb is introduced as
   one; a replicated finding as one. Never launder a **p** into an **A**.
-- **The moral is never stated; the beneficiary always is.** (House ruling 3.) If a note asks for
+- **The moral is never stated; the beneficiary usually is.** (House ruling 3, relaxed by Kai 2026-10-23: advice, not a gate.) If a note asks for
   the point to be "made clearer", check which of the two it means.
 - **No fix without a diagnosis, no diagnosis without a mechanism.** "It's boring" is not a note.
   "The scene has no turn — the value at the end is the charge it started with (principle 7)" is.
@@ -133,7 +133,7 @@ is the worked reference) so the next session inherits it.
   the metaphor budget and the Storyverse discipline are constraints on every suggestion, not
   targets for one.
 - **Don't restate the-reader.md.** The gates are referenced, not re-derived, and "beneficiary
-  on-panel" appears once in a review, not once per layer.
+  on-panel" appears at most once in a review, as advice, not once per layer.
 
 ## Write-back
 

@@ -7,16 +7,12 @@
    "frame": "D03",
    "text": "What is it?",
    "voice": "Algieba",
-   "file": "voices/d3-0-derek-r4a.wav",
-   "duration": 2.72,
-   "speech": [
-    0.0,
-    2.04
-   ],
-   "lead": 0.0,
+   "file": "voices/d3-0-derek-r5b.wav",
+   "duration": 1.8,
+   "lead": 0.36,
    "heard": "What is it?",
    "verified": true,
-   "why": "[r4+r5, hand pick] r4a: the only take of six that is both heard exactly and slow and hushed (-24.8 LUFS, 1.64 s of speech with ~0.4-0.6 s of air between the three words, the direction's 'barely above a whisper'). r5a/r5b are exact but quick (0.64 / 0.86 s of speech, -16.0 / -17.6 LUFS); r4b, r4c, r5c failed ('What is she/he?'); r4b and r4c also clip (+0.8 / +1.3 dBFS).",
+   "why": "[KAI'S PICK, 23 Oct, by ear on the picks page] d3-0-derek-r5b.wav. (Was d3-0-derek-r4a.wav, picked by measurement.) [r4+r5, hand pick] r4a: the only take of six that is both heard exactly and slow and hushed (-24.8 LUFS, 1.64 s of speech with ~0.4-0.6 s of air between the three words, the direction's 'barely above a whisper'). r5a/r5b are exact but quick (0.64 / 0.86 s of speech, -16.0 / -17.6 LUFS); r4b, r4c, r5c failed ('What is she/he?'); r4b and r4c also clip (+0.8 / +1.3 dBFS).",
    "takes": [
     {
      "take": "a",
@@ -97,7 +93,7 @@
      "true_peak": -2.2
     }
    ],
-   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly.\nStyle: no anger left in him at all; a big, blunt man made small and quiet by what he is looking at, gentle and frightened, close to the microphone.\nPace: slow, three soft words with air between them; never loud, never quick.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
    "previous": {
     "text": "What is it?",
     "file": "voices/d3-0-derek-b.wav",
@@ -106,7 +102,11 @@
    "prompts": {
     "r4": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
     "r5": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly.\nStyle: no anger left in him at all; a big, blunt man made small and quiet by what he is looking at, gentle and frightened, close to the microphone.\nPace: slow, three soft words with air between them; never loud, never quick.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it."
-   }
+   },
+   "speech": [
+    0.36,
+    1.8
+   ]
   },
   "d4-0-lady": {
    "speaker": "lady",
@@ -266,16 +266,12 @@
    "frame": "D03c",
    "text": "It's the time machine. You do understand what this will cost you.",
    "voice": "Aoede",
-   "file": "voices/d3-1-maddie-r5b.wav",
-   "duration": 6.4,
-   "speech": [
-    0.0,
-    5.86
-   ],
-   "lead": 0.0,
+   "file": "voices/d3-1-maddie-r4a.wav",
+   "duration": 9.16,
+   "lead": 0.46,
    "heard": "It's the time machine. You do understand what this will cost you.",
    "verified": true,
-   "why": "[r4+r5, hand pick] r5b: exact with the full stop, and the only take with the scripted pause and no other: 1.36 s after 'machine.', then the second sentence in one unbroken, slower run (5.62 s of speech, -17.2 LUFS). r5a is the alternative for Kai's ear: softer (-23.1 LUFS) and slower (7.54 s), with a halt before 'what this will cost you', but whisper hears a comma not a stop after 'machine'. r4c (the earlier auto-pick) has no real pause after the first sentence (gaps 0.34/0.54 s), which the direction asks for. r4a 9.16 s drags; r4b and r5c fail ('...is the', 'He's the').",
+   "why": "[KAI'S PICK, 23 Oct, by ear on the picks page] d3-1-maddie-r4a.wav. (Was d3-1-maddie-r5b.wav, picked by measurement.) [r4+r5, hand pick] r5b: exact with the full stop, and the only take with the scripted pause and no other: 1.36 s after 'machine.', then the second sentence in one unbroken, slower run (5.62 s of speech, -17.2 LUFS). r5a is the alternative for Kai's ear: softer (-23.1 LUFS) and slower (7.54 s), with a halt before 'what this will cost you', but whisper hears a comma not a stop after 'machine'. r4c (the earlier auto-pick) has no real pause after the first sentence (gaps 0.34/0.54 s), which the direction asks for. r4a 9.16 s drags; r4b and r5c fail ('...is the', 'He's the').",
    "takes": [
     {
      "take": "a",
@@ -356,28 +352,28 @@
      "true_peak": -8.6
     }
    ],
-   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
    "previous": null,
    "prompts": {
     "r4": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
     "r5": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
-   }
+   },
+   "speech": [
+    0.46,
+    9.16
+   ]
   },
   "d3-2-lady": {
    "speaker": "lady",
    "frame": "D04",
    "text": "Yes. Don't worry, we understand.",
    "voice": "Sulafat",
-   "file": "voices/d3-2-lady-r5c.wav",
-   "duration": 5.64,
-   "speech": [
-    0.0,
-    4.96
-   ],
-   "lead": 0.0,
+   "file": "voices/d3-2-lady-r5b.wav",
+   "duration": 5.44,
+   "lead": 0.26,
    "heard": "Yes, don't worry, we understand.",
    "verified": true,
-   "why": "[r4+r5, hand pick] r5c: exact; the pause after 'Yes' is the longest of the exact takes that do not drag (1.44 s), a shorter 0.88 s before 'we understand', 4.96 s of speech, -16.9 LUFS, peak -3.5 dBFS. r5b (the auto-pick) peaks at -0.7 dBFS and has the shorter breath after 'Yes' (0.98 s); r4a (the earlier pick) is the quieter alternative (-18.5 LUFS) with a 0.94 s pause after 'Yes'; r5a and r4c drag (1.5 s pauses twice); r4b failed ('Yes, but').",
+   "why": "[KAI'S PICK, 23 Oct, by ear on the picks page] d3-2-lady-r5b.wav. (Was d3-2-lady-r5c.wav, picked by measurement.) [r4+r5, hand pick] r5c: exact; the pause after 'Yes' is the longest of the exact takes that do not drag (1.44 s), a shorter 0.88 s before 'we understand', 4.96 s of speech, -16.9 LUFS, peak -3.5 dBFS. r5b (the auto-pick) peaks at -0.7 dBFS and has the shorter breath after 'Yes' (0.98 s); r4a (the earlier pick) is the quieter alternative (-18.5 LUFS) with a 0.94 s pause after 'Yes'; r5a and r4c drag (1.5 s pauses twice); r4b failed ('Yes, but').",
    "takes": [
     {
      "take": "a",
@@ -465,7 +461,11 @@
    "prompts": {
     "r4": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
     "r5": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final.\nStyle: all the suspicion gone; the softest she has ever been, an old woman who has made her peace, comforting the one who is upset; tears close but her voice steady and kind.\nPace: slow, unhurried, a breath before 'Yes' and a pause after it; 'we understand' quiet and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
-   }
+   },
+   "speech": [
+    0.26,
+    5.44
+   ]
   },
   "d4-1-maddie": {
    "speaker": "maddie",
