@@ -308,7 +308,7 @@ It only sends one back. ... Me.
 [End]
 ```
 
-### `gpom-sh-end-ai-e2` — the last line, Kai's words (scenes D/E round 1) · **round E failed, see the round log**
+### `gpom-sh-end-ai-e2` — the last line, Kai's words (scenes D/E round 1) · **BLOCKED: Suno flags the lyrics as copyrighted (round F), reword owed**
 
 Kai's round 1 (22 Oct, `second-half-e-ending/cut-notes.json` le3-0): the film ends on the AI's *"I made it. Now we have
 some work to do."* It replaces `-e1` / `-e1b` ("They didn't. Don't make me come back twice."), which stay above as the
@@ -440,6 +440,21 @@ filter. `-e1` stays unfiltered and dry. Nothing is slowed (house rule).
 ## Round log
 
 New rounds at the top.
+
+### Round F (2026-10-23) · the `-e2` last line · BLOCKED by Suno's lyric filter · 0 credits
+
+`status` first: the form held this atom's own round-E `-w10` cell, balance steady at 7,710 for a minute. **No round-E takes
+exist**: the `gpom-story` clip pane's own Search finds every other `gpom-sh-end` take and nothing for `e2`; the "Filters (3)"
+are only Hide Disliked / Hide Stems / Hide Clips from Edit Mode, so they were never hiding anything. Then `pair` on the same
+atom retitled `gpom-sh-end-ai-e2-F-v6-w25` / `-w10` (boxes re-extracted and identical): both Creates `create:timeout`, balance
+7,710 → 7,710. A real mouse click and a network capture show the Creates DO submit (`/api/generate/v2-web/` returns
+`submitted`), but the clip (e.g. `e9ea4bcd`) ends **`status: error`, `error_type: moderation_failure`, "Your lyrics contain
+copyrighted material. Please change it and try again."** Errored clips are refunded and never show in the workspace list,
+so `takes` reads empty and the balance does not move. **The words themselves are blocked**, presumably *"I made it"* /
+*"Now we have some work to do"* matching a lyric in Suno's database. Four Creates were submitted (pair x2, two hand
+clicks), all errored, all free. **Owed: Kai rewords the line (or we try a variation such as one read instead of two, or
+different bracket cues), then a new pair.** Nothing recorded or downloaded. Round E's -120 was therefore almost certainly
+the other session's spend, not ours: our own errored Creates cost nothing.
 
 ### Round E (2026-10-23) · the `-e2` last line · FAILED, no takes visible · 120 credits gone
 
