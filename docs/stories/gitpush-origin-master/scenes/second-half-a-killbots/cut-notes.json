@@ -170,5 +170,12 @@
   "boss-3": "new words: 'No, thank you, Maddie. I will handle it.'",
   "boss-4": "new words: 'It was useful to keep that zero-day up my sleeve.'",
   "10b": "take A (no pick, default)"
+ },
+ "picks_round3": {
+  "boss-2": "w25-1 d7aaef3e ('Oh. And they've activated their firewalls.')",
+  "boss-3": "w10-2 bfb1220b ('No, thank you, Maddie. I will handle it.')",
+  "boss-4": "w25-1 543dafef ('It was useful to keep that zero-day up my sleeve.')",
+  "boss-1": "w10-1 7f8d1ef8 (round 2, recorded)",
+  "picked": "2026-10-23"
  }
 }
