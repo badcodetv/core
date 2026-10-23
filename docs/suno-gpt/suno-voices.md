@@ -674,6 +674,13 @@ prompts, they run verbatim, and each one varies the delivery category. Bank Robb
 and GG used it; VB and BO show the two ways it still fails (a shared paragraph; a transplanted voice
 sentence).
 
+### 2h. 🔴 A sealed writer still fails three ways (Jack, Bank Robbery Round SR1, 2026-10-23)
+
+Round SR1 was the first written by `scripts/suno/sealed-writer.sh` (truly no repo, memory or skills). Jack: *"weve lost the vibe of the best one … the voices sound the same."* What went wrong:
+1. **One shared music paragraph in all six prompts**; only the voice line changed. The VB pattern again: whatever is identical across a round wins, and the voices converge.
+2. **The gate was overridden.** `sameness.py` flagged it and the session decided the shared part was "just the music". A failed gate is a stop: send the failure back to the writer and rewrite, never run it.
+3. **The brief leaked the repo.** It carried old listen logs and the old stored prompt. The brief may hold only the human's words verbatim, the facts of the last verdict, the lyric words and a *fresh* listen; the writer reads the reference take's public Suno page itself.
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact

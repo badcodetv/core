@@ -22,9 +22,17 @@ output, draft fast, then refine against what the user hears.
 
 🔑🔑🔑 **FIRST: THE CLEAN-ROOM / BASIC METHOD (Jack, 2026-10-22; working name, a better one later).**
 *"The repo and Suno skills just make the same song, so it is useful to use the clean room or basic
-version."* For a new voice or sound, **do not write the prompt from this skill.** Spawn a fresh
-helper agent that reads no repo file, no memory and no web, and is told to ignore all house Suno
-rules. Give it only a plain-words brief: what the human wants, a listen-based description of any
+version."* For a new voice or sound, **do not write the prompt from this skill.** 🔴 **Never use an Agent-tool
+helper for this: it auto-loads CLAUDE.md and memory, and "ignore them" does not unload them**
+(Rounds CR→GG were contaminated that way, 2026-10-23). Run **`scripts/suno/sealed-writer.sh <brief>`**
+(a separate `claude -p` in an empty dir: no repo, memory, skills or tools; `--check` proves it), and
+gate the round with **`scripts/suno/sameness.py`** (no voice phrase shared between prompts). The brief
+is the human's own words verbatim, the facts of the last verdict, the lyric words and a *fresh* listen
+(never old listen logs or old stored prompts from the repo — the writer fetches the reference's
+public Suno page itself). 🔴 **A failed `sameness.py` is a STOP, never a judgement call**: send it back
+to the writer. Round SR1 (2026-10-23) ran with one music paragraph shared by all six prompts because
+the session called it "just the music" — Jack: the voices sound the same, the vibe was lost
+(`docs/suno-gpt/suno-voices.md` §2h). Give it only a plain-words brief: what the human wants, a listen-based description of any
 reference take, and the lyric words without cue tags. It writes short prompts and picks every
 setting. **Run them verbatim**; check only that the lyric words are unchanged and that standing
 rules hold (no screaming, no fast/double-time rap). Every prompt must differ in the *delivery
