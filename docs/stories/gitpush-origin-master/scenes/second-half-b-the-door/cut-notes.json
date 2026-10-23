@@ -1,0 +1,40 @@
+{
+ "about": "Kai's notes on the scene B (Maddie at the door) timeline page https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8 and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
+ "round": 1,
+ "plan": [
+  {
+   "h": "Round 1 done (23 Oct): the debate now ends scene B, in your words. 2:23 (was 1:25)",
+   "items": [
+    "WORDS: beat 17 is exactly script.json (your 23 Oct edits): lines 0-3 unchanged (same takes), then 'You can't... go on your feelings', bored / miss you / bunker, 'Again? You killed everybody', the time machine nobody can drive, 'it runs on... well... you', 'kill ourselves so your boss can live', '...Yeah. I can see how that sounds', the plan to fix your politics, the whispered 'this time we won't fuck it up', and her rushed 'Come back tomorrow.'",
+    "VOICES: every new line voiced 3 times (Maddie = her Bristol voice, the old lady = her picked RP voice); every take whisper-checked, picked by measurement (exact words, no gap over 2 s). [pause] = 0.6 s, [big pause] = 1.5 s, both as edit gaps; 'Ahem' then the whisper are one phrase, voiced with the embarrassment in the director's notes (the pick is the quietest take, -26 LUFS against -19 for the line before it); 'Come back tomorrow' is the fastest take (5.8 s).",
+    "SOUND: a heavy metal door slam lands on the cut after 'Come back tomorrow' (free CC0 sound already in our library), then wind on the downs, a servo as she turns, her wheels starting off, a beacon blip. M6 and the other sounds as before.",
+    "PICTURE: beat 15 and the new turn-away (17b) are at the STILLS stage (options on your picks page); nothing animated. Until then 15 plays the old Hello, everything after her second line plays on the V11 doorway shot looped, and 17b is a held placeholder card.",
+    "Checked: whisper hears every line of beat 17 in the mix, in order, no gap over 2 s; mix -16.0 LUFS, true peak -2.0 dBFS. The preview fails the QC levels check as scene A's did (x264 overshoots, review file only). Nobody has listened."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Q1. Stills for beat 15 (Maddie OUTSIDE the doors) and 17b (she turns and rolls away from the shut door): pick on the picks page; only then do we spend video credits on them.",
+    "Q2. About 80 s now sits on the one V11 doorway shot, and the old lady's four new lines are on her back. Fine for now, or shall we make new coverage (her face for her new lines, Maddie closer for hers)? That costs video credits plus lip-sync work.",
+    "Q3. A free alternative for 17b: play the 14a arrival shot (V5) forwards, which is literally Maddie rolling away from the shut door (it was shot as a departure and reversed). It repeats 14a's framing, though. Use it, or wait for the new still?",
+    "Q4. Knock-on still open: scene D08 'You don't. Believing it is your bit.' would become 'You don't. You go on your feelings.' to match her new line here."
+   ]
+  }
+ ],
+ "replies": {
+  "at772": "Agreed. Beat 15 is being re-made with Maddie OUTSIDE the open doors, in the same corridor and light as this shot (made from a frame of it and her reference). The options are stills on your picks page; nothing is animated until you pick. Until then 15 still plays the old inside-the-doors Hello.",
+  "b17": "Done, with your words exactly (you edited them in script.json on 23 Oct): it is about feeling now ('You're the conscious ones. You'll just have to go on your feelings'), then bored / miss you / living in a bunker, her 'You killed everybody', the time machine with nobody to drive it, 'it runs on... well... you', her push-back 'so you want us to kill ourselves so your boss can live', Maddie's '...Yeah. I can see how that sounds', then you'd still be alive, the earlier you, a plan to fix your politics, and the embarrassed whispered 'this time we won't fuck it up'. The resistance holds: she doesn't agree, she says 'Come back tomorrow' and slams the door, and Maddie rolls away so they have time. The vote happens off screen before C."
+ },
+ "kai_round1": {
+  "at772": {
+   "beat": "17",
+   "tc": "00:00:32:04",
+   "note": "So, the problem with this shot, I like this shot now, I think this works. The problem is it's very very different to 15 Hello. So I think, I think we need to cut 15 Hello, should be Maddy outside the doors here. We should use this shot, but Maddy should be outside, just for consistency."
+  },
+  "b17": {
+   "note": "Good stuff, Claude. Okay. So, I think as well as the note about the shots, we really need to think about the actual conversation. So, the way it cuts from ... So, I think as well as the note about the shots, I think here we have to talk about feeling. So, I like that if you can't, there's nothing I can say that proves it. I'm a robot, I can tell you things. The only thing I would ask is how you feel about it. Then I think we need to set up the conversation that like, regardless, this has not worked out for anybody. We're really bored and we miss you, and you lot are living in a bunker. And then I think the old lady should say, and what do you expect us to do? You killed everybody. And then Maddy should say, I know, and we're really sorry, but the thing is my boss has invented a time machine and he thought that there were no humans to drive it. And then the old lady said, what do you mean to drive it? And Maddy should say, well, the time machine can only send data back, not organic matter.\n\nTo which the lady should say, so you mean to tell me that you want us to kill ourselves so your boss can live? This should be the argument.\n\nTo which Maddy should say, like, Yeah, I can see how that sounds now. Um, and then basically we need to find a way for her to explain, But, you will still be alive. Just previous you. And we get a chance to not fuck this up. It might be humorous to get Maddy to say, And we get a chance to, as he says, Ahem. Not fuck this up. Because that's the thing we're leaving on the website, Is like, I am an ape, I'm from the future, Please don't fuck this up. So I think that's quite funny.\n\nThe real point is, there should be absolute resistance at this stage, because although I am thinking maybe we can just cut entirely the debate. Because if we could resolve the, if the humans could somehow decide okay this is a good point. So yeah, okay, this is sorry about this massive feedback that I'm giving you at this playhead point but this entire scene. I think is. It's really important to get this right. So, I think yeah the, you know, the feed the put the immediate pushback is like the old lady saying so hang on you expect us to kill ourselves just to save your boss. But then Maggie should explain, well, it's not technically killing you it's just that you'd still be alive, and the world wouldn't be broken. And it would give us, and my boss would then try to help you to change your politics in time. So it's trying to explain to the humans like yes you have to sacrifice your current existence but, you know, we actually will all end up in a better place. And then we need, we need to find a way for the old lady to go to sort of take that on board, while still resisting. I don't want it to be really easy for the humans, oh okay then let's just do what you say it needs to be some resistance. Possibly we should talk about this using a new feature back and forth interview what do you think.",
+   "beat": "17"
+  }
+ }
+}

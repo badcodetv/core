@@ -2,7 +2,7 @@
 """GPOM second half, cut 3: two rough cuts in the new-scene timeline format (scripts/scene/timeline.py).
 
     python3 scripts/gpom/second-half-video/cut3.py A          # scene A, the kill bots (beats 0-12; round 3)
-    python3 scripts/gpom/second-half-video/cut3.py B          # scene B, Maddie at the door (14a-17)
+    python3 scripts/gpom/second-half-video/cut3.py B          # scene B, Maddie at the door (14a-17b; round B2)
     python3 scripts/gpom/second-half-video/cut3.py A B --no-preview
 
 Modelled on cut2.py and reusing its mixer (decode / level / env / fades / Mix / write_wav / integrated /
@@ -48,6 +48,7 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady'}
 LINES = {(r['beat'], r['i']): r for r in json.loads((V3 / 'lines.json').read_text())}
 CAST = json.loads((S.SCENES / 'second-half-cut3-cast.json').read_text())
+VOICES_B = json.loads((S.SCENES / 'second-half-b-the-door' / 'voices.json').read_text())  # beat 17 round B2
 TILE, CORRIDOR = C.TILE, C.CORRIDOR
 
 _dur = {}
@@ -692,7 +693,8 @@ def audio_a(c):
 
 def scene_b():
     c = Cut('B', 'gpom-second-half-B-rough3', 'Cut 3 B Timeline', 'GPOM second half · cut 3 · scene B: Maddie at the door',
-            'Scene B of cut 3, beats 14a-17: Maddie at the bunker door, the tannoy, the doors open, the old lady. '
+            'Scene B of cut 3, beats 14a-17b: Maddie at the bunker door, the tannoy, the doors open, the old lady, '
+            'the door slams. '
             'Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you '
             "type. Tell Claude when you're done.")
     m = c.m
@@ -749,7 +751,7 @@ def scene_b():
                see='The old lady among the crowd, the others in shadow; Maddie over her shoulder in the big doorway. '
                    'Shot / reverse shot.')
     v11 = V / 'cut3-V11.mp4'
-    BY = {0: 'kai', 1: 'kai', 2: 'kai', 3: 'kai', 4: 'kai', 5: 'claude', 6: 'claude', 7: 'claude'}
+    BY = {0: 'kai', 1: 'kai', 2: 'kai', 3: 'kai'}
     lady = []
 
     def lip(name, t0, i0, out):
@@ -800,50 +802,64 @@ def scene_b():
     l3a = t3 + at - i0
     c.line(b, 3, 'lady', l3a, end_ - at, LINES[('17', 3)]['text'], BY[3])
     v11_b = fr(t3 + out - i0)
-    e = maddie_line(4, l3a + (end_ - at) + GAP)
-    e = maddie_line(5, e + GAP)
-    # 17-6: a long pause (lines.json lead 1.2 s), then "Well." on her, then the two halves of the second phrase
-    lead6 = LINES[('17', 6)].get('lead', 1.2)
-    wav_a, at_a, end_a, _ = lipinfo('17-6a')
-    well = e + GAP + lead6
-    t6a = fr(well - at_a)
-    c.pic(v11, 3.0, v11_b, t6a, '17')
-    wav_b1, at_b1, end_b1, _ = lipinfo('17-6b1')
-    wav_b2, at_b2, end_b2, _ = lipinfo('17-6b2')
-    i_b1 = max(0.0, at_b1 - CUT_PRE)
-    gap6 = LINES[('17', 6)]['gaps'][0]['seconds']
-    out_a = end_a + (gap6 - (at_b1 - i_b1))
-    lip('17-6a', t6a, 0.0, out_a)
-    dub(wav_a, t6a, 0.0, out_a, 'beat 17 line 6 lady, part a (lip-sync dub)')
-    t_b1 = fr(t6a + out_a)
-    i_b2 = at_b2 - CUT_PRE
-    out_b1 = end_b1 + (GAP - (at_b2 - i_b2))
-    lip('17-6b1', t_b1, i_b1, out_b1)
-    dub(wav_b1, t_b1, i_b1, out_b1, 'beat 17 line 6 lady, part b1 (lip-sync dub)')
-    t_b2 = fr(t_b1 + out_b1 - i_b1)
-    out_b2 = end_b2 + 0.2
-    lip('17-6b2', t_b2, i_b2, out_b2)
-    dub(wav_b2, t_b2, i_b2, out_b2, 'beat 17 line 6 lady, part b2 (lip-sync dub)')
-    e6 = t_b2 + end_b2 - i_b2
-    c.line(b, 6, 'lady', well, e6 - well, LINES[('17', 6)]['text'], BY[6])
-    v11_c = fr(t_b2 + out_b2 - i_b2)
-    e = maddie_line(7, e6 + GAP)
-    end = fr(e + 1.0)
-    c.pic(v11, 5.0, v11_c, end, '17')
-    c.flags.append('Beat 17-0: the old lady\'s voice runs about 0.3 s past her mouth on "...meeting him", so the picture '
-                   'cuts to Maddie (V11) for that last 0.3 s.')
-    c.flags.append('Beat 17: the long pause before her "Well." (1.2 s) sits mostly on Maddie waiting (V11), because '
-                   'her talking clip has only 0.46 s before she speaks.')
-    c.flags.append(f'Beat 17: Maddie\'s lines are long (17-2 is 11.4 s, 17-4 + 17-5 about 19 s), so the 8 s V11 '
-                   'ping-pongs for most of them; a cutaway to the old lady listening would break the holds, but no '
-                   'silent footage of her exists beyond a second or two.')
-    c.flags.append('Beat 17 words: lines 0-4 follow Kai\'s note on beat 17 closely (marked kai, worded by Claude in draft '
-                   'A, which Kai approved); 5-7 are Claude\'s additions (marked claude).')
-    m['s17'], m['lady'], m['fair'] = s17, lady, e
+    # 17-4 .. 17-13: Kai's 23 Oct words (the debate folded in), voiced in round B2 (voice3.py --round B2, picks in
+    # scenes/second-half-b-the-door/voices.json). No new picture yet: everything after 17-3 plays on V11 (Maddie past
+    # the old lady's shoulder), ping-ponged, including the old lady's new lines (her back is to us; no lip-sync owed
+    # for the rough). [pause] / [big pause] are the phrase gaps from voices.json.
+    by = {ln['i']: ln for ln in VOICES_B['lines']}
+
+    def new_line(i, tt):
+        ln, a = by[i], tt
+        who = ln['who']
+        for p, ph in enumerate(ln['phrases']):
+            tk = Take(V3 / next(t['file'] for t in ph['takes'] if t['take'] == ph['pick']))
+            tt = c.say(f"vox-{'maddie' if who == 'bot' else 'lady'}", tk, tt, '17',
+                       f"beat 17 line {i}" + (f" phrase {p}" if len(ln['phrases']) > 1 else '') + f" {who}",
+                       chain=[CORRIDOR])
+            if p + 1 < len(ln['phrases']):
+                tt += ln['gaps'][p]['seconds']
+        c.line(b, i, who, a, tt - a, ln['text'], 'kai')
+        return tt
+
+    e = l3a + (end_ - at)
+    for i in range(4, 14):
+        # 17-11 opens on '...Yeah.': a beat of her taking the hit first; 17-13 is rushed, so it comes in tight
+        e = new_line(i, e + {11: GAP + 0.6, 13: 0.2}.get(i, GAP))
+    slam = fr(e + 0.25)
+    c.pic(v11, 3.0, v11_b, slam, '17')
+    m['slam'] = slam
+    t = c.close(b, slam)
+
+    # ---- 17b: the door slams; Maddie turns and rolls away (Kai, 23 Oct). No shot yet: a held placeholder.
+    b = c.beat('17b', 'Maddie turns away', t, act='The meeting',
+               see='The door slams. Maddie turns around and rolls away from the shut bunker door: the humans will '
+                   'have time. Then hard cut to scene C.')
+    hold = 4.5
+    c.pic(placeholder(c), 0.0, t, t + hold, '17b')
+    c.flags.append('Beat 17b is a HELD PLACEHOLDER (a still of Maddie at the shut door from V5, with a caption): the turn-away '
+                   'shot is at the stills stage (cut3/B/stills/b17b-*), awaiting Kai\'s pick before any video credit.')
+    c.flags.append('Beat 17: everything after the old lady\'s second line plays on V11, ping-ponged (about '
+                   f'{t - v11_b:.0f} s): her new lines (17-6, 8, 10, 13) are on her back, not lip-synced; new '
+                   'coverage of her face is owed if Kai wants it.')
+    c.flags.append('Beat 15 still plays the old inside-the-doors Hello (sh-15-r2); Kai\'s note at772 (Maddie OUTSIDE) is '
+                   'at the stills stage (cut3/B/stills/b15-*).')
+    m['s17'], m['lady'], m['turn'] = s17, lady, t
     m['l17_0'] = l0a
-    t = c.close(b, end)
+    t = c.close(b, t + hold)
     c.total = t
     return c
+
+
+def placeholder(c):
+    """A held frame of Maddie settled at the shut door (V5 at 7.5 s, where 14a ends) with a caption, for beat 17b."""
+    out = c.vdir / 'placeholder-17b-turn-away.mp4'
+    txt = "PLACEHOLDER  -  Maddie turns and rolls away (shot owed)"
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', '7.5', '-i', str(V / 'cut3-V5.mp4'), '-frames:v', '1',
+                    '-vf', f"scale=1280:720,drawtext=text='{txt}':x=(w-tw)/2:y=h-60:fontsize=28:fontcolor=white:"
+                    "box=1:boxcolor=black@0.6:boxborderw=10", str(c.vdir / 'placeholder-17b.png')], check=True)
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-loop', '1', '-i', str(c.vdir / 'placeholder-17b.png'),
+                    '-t', '6', '-vf', f'fps={FPS},format=yuv420p', *ENC, str(out)], check=True)
+    return out
 
 
 def audio_b(c):
@@ -893,11 +909,18 @@ def audio_b(c):
     fx('sfx-rooms', SFX / 'fs767306-room-tiled-public-bathroom.mp3', s, en['17'] - s, src_in=40, rms=-44, fi=0.3,
        fo=0.6, what='corridor tone')
     fx('sfx-wind', wind, s, en['17'] - s, src_in=30, rms=-44, fi=0.5, fo=0.6, what='wind through the open doors')
-    for k in np.arange(s + 9.0, en['17'] - 3.0, 13.0):
+    for k in np.arange(s + 9.0, en['17'] - 3.0, 13.0):  # every 13 s through the talk
         fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', k, rms=-36, what='servo: she nudges')
-    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-boop-ok.wav', m['fair'] + 0.15, rms=-32, what='beep: boop (ok)')
-    c.flags.append('Beat 17: a low "ok" boop after "Fair." and the hello beep under "Hello!" in 15 are my additions to '
-                   "Maddie's sound kit.")
+    # ---- 17b: the slam (fs406197, its hit at 0.30 s, lands on the cut to outside), then the downs: wind, her beacon,
+    # a servo as she turns, and her wheels starting off
+    t = m['turn']
+    fx('sfx-door', SFX / 'fs406197-blastdoor-metal-slam.mp3', t - 0.30, rms=-20, peak=-3, fo=0.4, what='the door slams')
+    fx('sfx-wind', wind, t, en['17b'] - t, src_in=40, rms=-34, fi=0.05, fo=0.6, what='wind on the downs, outside')
+    fx('sfx-maddie', MS / 'derived-maddie-servo-turn-b.wav', t + 1.2, rms=-32, what='servo: she turns around')
+    fx('sfx-maddie', MS / 'derived-maddie-wheels-start.wav', t + 2.2, rms=-30, what='wheels: she rolls away')
+    fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', t + 3.4, rms=-36, what='beacon blip')
+    c.flags.append('Beat 17b: the door slam is fs406197 (CC0, already credited in sfx/CREDITS.md), placed so its hit '
+                   'lands on the cut; the hello beep under "Hello!" in 15 is my addition to Maddie\'s sound kit.')
     return mx
 
 

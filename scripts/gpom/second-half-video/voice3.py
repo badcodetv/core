@@ -42,6 +42,12 @@ Writes voice3/manifest.json.
          measurement; written to scenes/second-half-a-killbots/voices.json. See main_a3.
 
     python3 scripts/gpom/second-half-video/voice3.py --round A3   # existing takes are kept
+
+  JOB 6  --round B2: Kai's 23 Oct beat-17 words (scenes/second-half-b-the-door/script.json, the debate folded into
+         the door scene), lines 4-13, three takes per phrase, whisper-checked and picked by measurement; written to
+         scenes/second-half-b-the-door/voices.json. See main_b2.
+
+    python3 scripts/gpom/second-half-video/voice3.py --round B2   # existing takes are kept
 """
 import json
 import os
@@ -406,6 +412,120 @@ def main_a3():
     print(f'wrote {VOICES_A}\n{why}')
 
 
+# ---- JOB 6: round B2 -------------------------------------------------------------------------------
+# Kai's 23 Oct words for beat 17 (the debate folded into the door scene). The words have one home:
+# scenes/second-half-b-the-door/script.json; lines 0-3 are unchanged and keep their voice3/lines takes. Every other
+# spoken line is voiced here, one take per PHRASE: [pause] / [big pause] are edit gaps, [rushed] and the
+# [ahem] [whispered, embarrassed] phrase go in that call's DIRECTOR'S NOTES. Three takes each; whisper checks every
+# take; the pick is heard exactly (char match >= 0.85), longest gap <= 2 s, then the best match, then the smaller gap.
+#   voice3/b2/17-<i>-<who>[-p<n>]-<t>.wav  +  scenes/second-half-b-the-door/voices.json
+SCRIPT_B = V.S.SCENES / 'second-half-b-the-door' / 'script.json'
+VOICES_B = V.S.SCENES / 'second-half-b-the-door' / 'voices.json'
+B2_GAP = {'[pause]': 0.6, '[big pause]': 1.5}
+B2_KEEP = 4  # lines 0-3 keep their voice3/lines takes
+B2_RUSHED = 'rushed and flustered, talking fast to get it over with and shut the door'
+B2_WHISPER = ("embarrassed: an audible little throat-clear ('ahem'), then she whispers the rest, sheepish, "
+              "embarrassed to be saying it")
+# Picks overridden after the first run, by measurement: line 13 is [rushed], so the fastest exactly-heard take wins
+# (b, 5.80 s, whisper writes 'a hundred' as '100'; c is 6.36 s). The ahem phrase: whisper never transcribes the
+# 'Ahem', but every take has a 0.4-0.5 s burst before 'This' (silencedetect -45 dB); b is the quietest (-25.8 LUFS
+# against -19.0 for the line's first phrase), i.e. the most whispered, and is the measured pick anyway.
+B2_PICK = {'17-13-lady': 'b'}
+B2_FORMS = {'ab': 'Ahem. This time we won\'t fuck it up.', 'c': 'Ahem. [whispers] This time we won\'t fuck it up.'}
+
+
+def b2_phrases(text):
+    """(phrases, gaps, emotions): [pause]/[big pause] split phrases; [rushed] and [ahem] [whispered, ...] become a
+    phrase's emotion; the ahem phrase is voiced as B2_FORMS."""
+    lead_emo = B2_RUSHED if text.startswith('[rushed]') else None
+    text = text.replace('[rushed]', '').strip()
+    parts = re.split(r'\s*(\[(?:big )?pause\])\s*', text)
+    phrases, gaps = [parts[0]], [B2_GAP[t] for t in parts[1::2]]
+    phrases += parts[2::2]
+    emos = [lead_emo] * len(phrases)
+    if '[ahem]' in phrases[-1]:
+        before, _ = phrases[-1].split('[ahem]')
+        phrases[-1:] = [before.strip(), 'AHEM']
+        gaps.append(0.3)
+        emos.append(B2_WHISPER)
+    return phrases, gaps, emos
+
+
+def b2_jobs():
+    lines = [ln for ln in json.loads(SCRIPT_B.read_text())['lines'] if ln['who'] != 'sfx']
+    for k, (beat, who, text) in enumerate([x for x in LINES if x[0] == '17'][:B2_KEEP]):
+        assert lines[k]['text'] == text, (k, text)  # lines 0-3 unchanged: their takes stand
+    cast = json.loads(CAST_FILE.read_text())['cast']
+    base = {'bot': V.profiles['bot'], 'lady': cast['lady']['prompt']}
+    voice = {'bot': 'Aoede', 'lady': cast['lady']['voice']}
+    out, meta = [], []
+    for i, ln in enumerate(lines[B2_KEEP:], B2_KEEP):
+        who = ln['who']
+        phrases, gaps, emos = b2_phrases(ln['text'])
+        rows = []
+        for p, (ph, emo) in enumerate(zip(phrases, emos)):
+            stem = f"17-{i}-{who}" + (f'-p{p}' if len(phrases) > 1 else '')
+            pkey = f'b2-{stem}'
+            V.profiles[pkey] = with_emotion(base[who], emo)  # in-process only
+            forms = B2_FORMS if ph == 'AHEM' else {'abc': ph}
+            target = B2_FORMS['ab'] if ph == 'AHEM' else ph
+            rows.append({'p': p, 'text': target, 'direction': emo, 'prompt': V.profiles[pkey], 'stem': stem})
+            for ts, form in forms.items():
+                for t in ts:
+                    out.append({'key': f'{stem}-{t}', 'stem': stem, 'dir': 'b2', 'who': pkey, 'voice': voice[who],
+                                'text': form, 'target': target, 'how': None, 'work': WORK3 / 'b2'})
+        meta.append({'i': i, 'who': who, 'text': ln['text'], 'voice': voice[who], 'phrases': rows,
+                     'gaps': [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(gaps)]})
+    return out, meta
+
+
+def main_b2():
+    import difflib
+    sys.path.insert(0, str(V.S.REPO / 'scripts/gpom/second-half-video/ending'))
+    import voices as E  # noqa: E402  (whisper + norm only)
+    (OUT3 / 'b2').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'b2').mkdir(parents=True, exist_ok=True)
+    todo, meta = b2_jobs()
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, todo))
+    heard = E.whisper([OUT3 / 'b2' / f"{r['key']}.wav" for r in res if r['duration']])
+    by = {}
+    for r in res:
+        f = OUT3 / 'b2' / f"{r['key']}.wav"
+        h = heard.get(str(f)) if r['duration'] else None
+        ratio = difflib.SequenceMatcher(None, E.norm(r['target']), E.norm(h['text'])).ratio() if h else 0.0
+        gap = round(V.longest_gap(f), 2) if r['duration'] else 0.0
+        flagged = r['status'].split()[0] in ('SHORT', 'DEAD', 'FAILED')
+        t = {'take': r['key'][-1], 'file': f"b2/{f.name}", 'spoken': r['text'], 'duration': round(r['duration'], 2),
+             'heard': h['text'] if h else '', 'match': round(ratio, 3), 'gap': gap, 'status': r['status'],
+             'ok': ratio >= E.MATCH and gap <= 2.0 and not flagged}
+        by.setdefault(r['stem'], []).append(t)
+        print(f"{r['key']:20s} {t['duration']:5.2f}s gap {gap:4.2f} match {ratio:.2f} {'OK ' if t['ok'] else 'BAD'} "
+              f"'{t['heard']}'  {r['status']}")
+    doc = {'about': "Beat 17 lines 4-13 voiced in Gemini TTS for Kai's 23 Oct words (scripts/gpom/second-half-video/"
+                    "voice3.py --round B2). Lines 0-3 keep their voice3/lines.json takes. Files are relative to the "
+                    "media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+           'media': str(OUT3), 'source': str(SCRIPT_B.relative_to(V.S.REPO)), 'lines': []}
+    for m in meta:
+        for ph in m['phrases']:
+            takes = by[ph.pop('stem')]
+            ok = [t for t in takes if t['ok']] or takes
+            stem = f"17-{m['i']}-{m['who']}" + (f"-p{ph['p']}" if len(m['phrases']) > 1 else '')
+            best = min(ok, key=lambda t: (-t['match'], t['gap']))
+            if stem in B2_PICK:
+                best = next(t for t in takes if t['take'] == B2_PICK[stem])
+            ph['pick'], ph['verified'] = best['take'], best['ok']
+            ph['takes'] = [{k: v for k, v in t.items() if k != 'ok'} for t in takes]
+        doc['lines'].append(m)
+    VOICES_B.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + '\n')
+    print(f'wrote {VOICES_B}')
+    for m in doc['lines']:
+        for ph in m['phrases']:
+            t = next(x for x in ph['takes'] if x['take'] == ph['pick'])
+            print(f"  17-{m['i']} p{ph['p']} pick {ph['pick']} {t['duration']}s gap {t['gap']} match {t['match']}"
+                  f"{'' if ph['verified'] else '  UNVERIFIED'}")
+
+
 def run(job):
     wav = OUT3 / job['dir'] / f"{job['key']}.wav"
     if wav.exists():
@@ -455,9 +575,9 @@ def main():
 if __name__ == '__main__':
     if '--round' in sys.argv:
         rnd = sys.argv[sys.argv.index('--round') + 1].upper()
-        assert rnd in ('A1', 'A3'), 'only --round A1 / A3 exist'
+        assert rnd in ('A1', 'A3', 'B2'), 'only --round A1 / A3 / B2 exist'
         load_key()
-        main_a1() if rnd == 'A1' else main_a3()
+        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2}[rnd]()
     elif '--lines' in sys.argv:
         load_key()
         main_lines()

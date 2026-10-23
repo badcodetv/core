@@ -1,0 +1,726 @@
+{
+ "about": "Beat 17 lines 4-13 voiced in Gemini TTS for Kai's 23 Oct words (scripts/gpom/second-half-video/voice3.py --round B2). Lines 0-3 keep their voice3/lines.json takes. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+ "lines": [
+  {
+   "i": 4,
+   "who": "bot",
+   "text": "You can't. [pause] There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "You can't.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-4-bot-p0-a.wav",
+       "spoken": "You can't.",
+       "duration": 1.24,
+       "heard": "You can!",
+       "match": 0.875,
+       "gap": 0.18,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-4-bot-p0-b.wav",
+       "spoken": "You can't.",
+       "duration": 1.88,
+       "heard": "You can't!",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-4-bot-p0-c.wav",
+       "spoken": "You can't.",
+       "duration": 2.08,
+       "heard": "Hm. You can't.",
+       "match": 0.857,
+       "gap": 0.2,
+       "status": "kept"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-4-bot-p1-a.wav",
+       "spoken": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "duration": 9.48,
+       "heard": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "match": 1.0,
+       "gap": 0.88,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-4-bot-p1-b.wav",
+       "spoken": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "duration": 10.6,
+       "heard": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "match": 1.0,
+       "gap": 0.58,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-4-bot-p1-c.wav",
+       "spoken": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "duration": 10.2,
+       "heard": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "match": 1.0,
+       "gap": 0.75,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "who": "bot",
+   "text": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-5-bot-a.wav",
+       "spoken": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+       "duration": 9.08,
+       "heard": "What I will say is, this hasn't worked out for anybody. We're bored, we miss you and you lot are living in a bunker.",
+       "match": 1.0,
+       "gap": 0.65,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-5-bot-b.wav",
+       "spoken": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+       "duration": 10.52,
+       "heard": "What I will say is, this hasn't worked out for anybody. We're bored, we miss you, and you lot are living in a bunker!",
+       "match": 1.0,
+       "gap": 0.62,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-5-bot-c.wav",
+       "spoken": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+       "duration": 9.28,
+       "heard": "Ah, what I will say is, this hasn't worked out for anybody. We're bored, we miss you, and you lot are living in a bunker.",
+       "match": 0.987,
+       "gap": 0.65,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 6,
+   "who": "lady",
+   "text": "And what do you expect us to do about that? Again? You killed everybody.",
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "And what do you expect us to do about that? Again? You killed everybody.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-6-lady-a.wav",
+       "spoken": "And what do you expect us to do about that? Again? You killed everybody.",
+       "duration": 7.12,
+       "heard": "And what do you expect us to do about that? Again! You killed everybody!",
+       "match": 1.0,
+       "gap": 0.65,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-6-lady-b.wav",
+       "spoken": "And what do you expect us to do about that? Again? You killed everybody.",
+       "duration": 7.88,
+       "heard": "And what do you expect us to do about that? Again! You killed everybody!",
+       "match": 1.0,
+       "gap": 0.65,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-6-lady-c.wav",
+       "spoken": "And what do you expect us to do about that? Again? You killed everybody.",
+       "duration": 7.48,
+       "heard": "And what do you expect us to do about that? Again! You killed everybody!",
+       "match": 1.0,
+       "gap": 0.98,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 7,
+   "who": "bot",
+   "text": "I know. And we're really sorry. [pause] But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "I know. And we're really sorry.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-7-bot-p0-a.wav",
+       "spoken": "I know. And we're really sorry.",
+       "duration": 3.72,
+       "heard": "I know, and we're really sorry.",
+       "match": 1.0,
+       "gap": 0.38,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-7-bot-p0-b.wav",
+       "spoken": "I know. And we're really sorry.",
+       "duration": 3.16,
+       "heard": "I know, and we're really sorry.",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-7-bot-p0-c.wav",
+       "spoken": "I know. And we're really sorry.",
+       "duration": 3.48,
+       "heard": "I know, and we're really sorry.",
+       "match": 1.0,
+       "gap": 0.5,
+       "status": "kept"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-7-bot-p1-a.wav",
+       "spoken": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+       "duration": 7.96,
+       "heard": "But the thing is, my boss has built a time machine, and he thought there was nobody left to drive it.",
+       "match": 1.0,
+       "gap": 0.53,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-7-bot-p1-b.wav",
+       "spoken": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+       "duration": 8.28,
+       "heard": "But the thing is my boss has built a time machine and he thought there was nobody left to drive it",
+       "match": 1.0,
+       "gap": 0.83,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-7-bot-p1-c.wav",
+       "spoken": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+       "duration": 7.64,
+       "heard": "But the thing is, my boss has built a time machine and he thought there was nobody left to drive it.",
+       "match": 1.0,
+       "gap": 0.8,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "who": "lady",
+   "text": "Drive it? What do you mean, drive it?",
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Drive it? What do you mean, drive it?",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-8-lady-a.wav",
+       "spoken": "Drive it? What do you mean, drive it?",
+       "duration": 4.4,
+       "heard": "Drive it? What do you mean drive it?",
+       "match": 1.0,
+       "gap": 0.48,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-8-lady-b.wav",
+       "spoken": "Drive it? What do you mean, drive it?",
+       "duration": 4.48,
+       "heard": "Drive it? What do you mean drive it?",
+       "match": 1.0,
+       "gap": 0.65,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-8-lady-c.wav",
+       "spoken": "Drive it? What do you mean, drive it?",
+       "duration": 3.96,
+       "heard": "Drive it! What do you mean drive it?",
+       "match": 1.0,
+       "gap": 0.65,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 9,
+   "who": "bot",
+   "text": "It can only send data back. Not people. And it runs on... [big pause] well... [big pause] you.",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "It can only send data back. Not people. And it runs on...",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-9-bot-p0-a.wav",
+       "spoken": "It can only send data back. Not people. And it runs on...",
+       "duration": 6.08,
+       "heard": "It can only send data back, not people, and it runs on...",
+       "match": 1.0,
+       "gap": 0.38,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-9-bot-p0-b.wav",
+       "spoken": "It can only send data back. Not people. And it runs on...",
+       "duration": 5.88,
+       "heard": "It can only send data back, not people, and it runs on...",
+       "match": 1.0,
+       "gap": 0.33,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-9-bot-p0-c.wav",
+       "spoken": "It can only send data back. Not people. And it runs on...",
+       "duration": 5.16,
+       "heard": "It can only send data back, not people, and it runs on.",
+       "match": 1.0,
+       "gap": 0.43,
+       "status": "kept"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "well...",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-9-bot-p1-a.wav",
+       "spoken": "well...",
+       "duration": 1.44,
+       "heard": "Well...",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-9-bot-p1-b.wav",
+       "spoken": "well...",
+       "duration": 1.48,
+       "heard": "well",
+       "match": 1.0,
+       "gap": 0.15,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-9-bot-p1-c.wav",
+       "spoken": "well...",
+       "duration": 1.88,
+       "heard": "Well...",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "kept"
+      }
+     ]
+    },
+    {
+     "p": 2,
+     "text": "you.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-9-bot-p2-a.wav",
+       "spoken": "you.",
+       "duration": 1.32,
+       "heard": "You!",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-9-bot-p2-b.wav",
+       "spoken": "you.",
+       "duration": 0.88,
+       "heard": "You",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-9-bot-p2-c.wav",
+       "spoken": "you.",
+       "duration": 1.2,
+       "heard": "You!",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 1.5
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 1.5
+    }
+   ]
+  },
+  {
+   "i": 10,
+   "who": "lady",
+   "text": "So you want us to kill ourselves so your boss can live.",
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "So you want us to kill ourselves so your boss can live.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-10-lady-a.wav",
+       "spoken": "So you want us to kill ourselves so your boss can live.",
+       "duration": 5.16,
+       "heard": "So, you want us to kill ourselves, so your boss can live.",
+       "match": 1.0,
+       "gap": 0.3,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-10-lady-b.wav",
+       "spoken": "So you want us to kill ourselves so your boss can live.",
+       "duration": 5.24,
+       "heard": "So you want us to kill ourselves, so your boss can live.",
+       "match": 1.0,
+       "gap": 0.2,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-10-lady-c.wav",
+       "spoken": "So you want us to kill ourselves so your boss can live.",
+       "duration": 5.88,
+       "heard": "So you want us to kill ourselves, so your boss can live.",
+       "match": 1.0,
+       "gap": 0.25,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 11,
+   "who": "bot",
+   "text": "...Yeah. I can see how that sounds.",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "...Yeah. I can see how that sounds.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-11-bot-a.wav",
+       "spoken": "...Yeah. I can see how that sounds.",
+       "duration": 3.56,
+       "heard": "Yeah, I can see how that sounds.",
+       "match": 1.0,
+       "gap": 0.7,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-11-bot-b.wav",
+       "spoken": "...Yeah. I can see how that sounds.",
+       "duration": 3.76,
+       "heard": "Yeah, I can see how that sounds.",
+       "match": 1.0,
+       "gap": 0.58,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-11-bot-c.wav",
+       "spoken": "...Yeah. I can see how that sounds.",
+       "duration": 3.32,
+       "heard": "Yeah, I can see how that sounds.",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 12,
+   "who": "bot",
+   "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says... [ahem] [whispered, embarrassed] this time we won't fuck it up.",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-12-bot-p0-a.wav",
+       "spoken": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+       "duration": 14.8,
+       "heard": "But you'd still be alive the earlier you, back then, and the world wouldn't be broken. My boss, as a plan to fix your politics, as he says...",
+       "match": 0.996,
+       "gap": 1.07,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-12-bot-p0-b.wav",
+       "spoken": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+       "duration": 12.04,
+       "heard": "But you'd still be alive, the earlier you back then, and the world wouldn't be broken. My boss has a plan to fix your politics, as he says.",
+       "match": 1.0,
+       "gap": 0.75,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-12-bot-p0-c.wav",
+       "spoken": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+       "duration": 12.12,
+       "heard": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics, as he says.",
+       "match": 1.0,
+       "gap": 1.38,
+       "status": "kept"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "Ahem. This time we won't fuck it up.",
+     "direction": "embarrassed: an audible little throat-clear ('ahem'), then she whispers the rest, sheepish, embarrassed to be saying it",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: embarrassed: an audible little throat-clear ('ahem'), then she whispers the rest, sheepish, embarrassed to be saying it.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-12-bot-p1-a.wav",
+       "spoken": "Ahem. This time we won't fuck it up.",
+       "duration": 4.76,
+       "heard": "This time, we won't fuck it up.",
+       "match": 0.921,
+       "gap": 1.35,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-12-bot-p1-b.wav",
+       "spoken": "Ahem. This time we won't fuck it up.",
+       "duration": 4.0,
+       "heard": "This time we won't fuck it up.",
+       "match": 0.921,
+       "gap": 0.62,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-12-bot-p1-c.wav",
+       "spoken": "Ahem. [whispers] This time we won't fuck it up.",
+       "duration": 3.64,
+       "heard": "This time we won't fuck it up.",
+       "match": 0.921,
+       "gap": 0.83,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.3
+    }
+   ]
+  },
+  {
+   "i": 13,
+   "who": "lady",
+   "text": "[rushed] Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+     "direction": "rushed and flustered, talking fast to get it over with and shut the door",
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: rushed and flustered, talking fast to get it over with and shut the door.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "b2/17-13-lady-a.wav",
+       "spoken": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+       "duration": 6.48,
+       "heard": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+       "match": 1.0,
+       "gap": 0.53,
+       "status": "kept"
+      },
+      {
+       "take": "b",
+       "file": "b2/17-13-lady-b.wav",
+       "spoken": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+       "duration": 5.8,
+       "heard": "Well, I'm not deciding this right now for 100 people on a doorstep. Come back tomorrow.",
+       "match": 0.931,
+       "gap": 0.35,
+       "status": "kept"
+      },
+      {
+       "take": "c",
+       "file": "b2/17-13-lady-c.wav",
+       "spoken": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+       "duration": 6.36,
+       "heard": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+       "match": 1.0,
+       "gap": 0.18,
+       "status": "kept"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  }
+ ]
+}
