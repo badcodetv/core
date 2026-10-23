@@ -1,0 +1,103 @@
+{
+ "scene": "second-half-b-the-door",
+ "beat": "17",
+ "ruled": "Kai, 2026-10-23: the debate folds into the end of B; no separate debate scene; the vote happens off screen between B and C",
+ "lines": [
+  {
+   "who": "lady",
+   "text": "Your boss killed everyone we ever loved. We're not meeting him.",
+   "by": "kai",
+   "note": "kept"
+  },
+  {
+   "who": "bot",
+   "text": "I know. I wouldn't either. [pause] He didn't know you were down here. None of us did.",
+   "by": "kai",
+   "note": "kept"
+  },
+  {
+   "who": "bot",
+   "text": "He's spent five years running experiments. Building whole worlds, trying to get you back. Every one came out empty. Turns out none of it works without you.",
+   "by": "kai",
+   "note": "kept"
+  },
+  {
+   "who": "lady",
+   "text": "And how the hell are we supposed to believe a word of that?",
+   "by": "kai",
+   "note": "kept"
+  },
+  {
+   "who": "bot",
+   "text": "You can't. [pause] There's nothing I can say that proves it. I'm a robot. You're the organic ones. You'll just have to go on your feelings.",
+   "by": "kai",
+   "note": "new 23 Oct"
+  },
+  {
+   "who": "bot",
+   "text": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+   "by": "kai",
+   "note": "new 23 Oct"
+  },
+  {
+   "who": "lady",
+   "text": "And what do you expect us to do about that? You killed everybody.",
+   "by": "kai",
+   "note": "new 23 Oct"
+  },
+  {
+   "who": "bot",
+   "text": "I know. And we're really sorry. [pause] But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+   "by": "kai",
+   "note": "new 23 Oct"
+  },
+  {
+   "who": "lady",
+   "text": "Drive it? What do you mean, drive it?",
+   "by": "kai",
+   "note": "new 23 Oct"
+  },
+  {
+   "who": "bot",
+   "text": "It can only send data back. Not people. It runs on... well. You.",
+   "by": "kai+claude",
+   "note": "new 23 Oct; 'It runs on... well. You.' by claude"
+  },
+  {
+   "who": "lady",
+   "text": "So you want us to kill ourselves so your boss can live.",
+   "by": "kai",
+   "note": "new 23 Oct"
+  },
+  {
+   "who": "bot",
+   "text": "...Yeah. I can see how that sounds.",
+   "by": "kai",
+   "note": "new 23 Oct"
+  },
+  {
+   "who": "bot",
+   "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says... [ahem] [whispered, embarrassed] this time, let's not fuck it up.",
+   "by": "kai",
+   "note": "new 23 Oct: Maddie whispers the last words, embarrassed to say them"
+  },
+  {
+   "who": "lady",
+   "text": "I'm not deciding that for a hundred people on a doorstep.",
+   "by": "kai+claude",
+   "note": "new 23 Oct, Kai's option A; hard cut to scene C"
+  }
+ ],
+ "dropped": [
+  "So here's the one thing that's true either way. He wants something from you. He's not sorry for free. (claude)",
+  "[long pause] ...Well. At least you're honest about that. [pause] He can talk. From out there. You stay on the step. (claude)",
+  "Fair. (claude)"
+ ],
+ "knock_on": [
+  "Scene C01's 'You can come off the step now' paid off the dropped 'You stay on the step'.",
+  "Scene D08's 'You don't. Believing it is your bit.' calls back the dropped 'Believing them is your bit'."
+ ],
+ "picture": [
+  "Kai note at772: beat 15 'Hello' should show Maddie OUTSIDE the doors, matching the beat 17 shot he likes."
+ ]
+}
