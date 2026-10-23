@@ -428,3 +428,164 @@ Honest list, worst first.
 - Kai restarted the machine; WSLg PulseAudio is healthy again (`pactl` instant). All eight waiting Suno takes recorded first time (round D `-d3b` ×4, round C `-d5r` ×4) into `clips/second-half/ending/D/suno/`.
 - **"It only sends one back. Me." is now the Suno newsreader**, take `c851b66f` (w25), replacing the Gemini stand-in. Kai's note: three takes say "back me" with no gap, and c851b66f's second reading has a gap that is "far too long" (~6.4 s). The cut uses its second reading ("back." as a full stop, "Me." alone) with the gap set in the edit: **1.28 s of measured silence** (`D3N_PAUSE` in `cut_end_d.py`). D 113.12 s, reel 190.83 s.
 - Round C's `-d5r` takes ("...Fair. Nothing up my sleeve.") are recorded but **not wired in**: round 2 cut the exploit payoff on purpose. Available if Kai wants it back.
+
+## Scene C round 1 (Kai's notes, 22 Oct)
+
+Kai's notes are in `second-half-c-walk-out/cut-notes.json` (`kai_round1`, his answers in `answers_round1`). The new words are in `scene.json`. **The boss does not speak in scene C now. It is Maddie's scene.** Every new human line was voiced in Gemini TTS with `voices_fix.py --takes 3 --supersede … C r1 …`. That means three takes per line. Each take was checked by faster-whisper, and a take with an extra or a missing word fails. The scene paragraph in each prompt is set per beat (`WHERE_BEAT` in `voices.py`: the blast-door step, outside the doors, the chalk track, the crest, the doorway), and the line's `how` goes in as the emotion. No old line is quoted in any prompt. Nothing was slowed down.
+
+The picks were made by measuring the takes (whisper, loudness, duration). Nobody has listened to them yet.
+
+| Beat | Line (by) | Pick | Length (speech) | Whisper heard | Why |
+| --- | --- | --- | --- | --- | --- |
+| c1 off the step | Maddie: "Go on. I promise you'll be okay." (kai) | `c1-0-maddie-r1c.wav` | 3.60 s (3.04) | exact | all 3 exact; c is closest to the word length and has the smallest internal gap |
+| c1 | Maddie: "You've got my word." (kai), about 1.2 s after the line before, placed in the edit | `c1-1-maddie-r1c.wav` | 1.76 s (1.20) | exact | all 3 exact; closest to the word length |
+| c2 into daylight | Maddie: "Careful now, humans." (claude, from Kai's note) | `c2-0-maddie-r1c.wav` | 1.96 s (1.30) | exact | all 3 exact; the tightest take |
+| c2 | Maddie: "I'm fairly sure there's no radiation round here." (kai), about 0.6 s after, placed in the edit | `c2-1-maddie-r1c.wav` | 5.00 s (4.56) | exact | b was heard as "around"; a has a 0.62 s gap inside the line |
+| c4 the seat | Sandra: "I hope you put that bloody seat down." (kai) | `c4-0-sandra-r1c.wav` | 3.04 s (2.36) | exact | b failed ("…bloody saint down?"); c is closest to the word length |
+| c4 | Derek: "Doesn't bloody matter now, love. We're not coming back, are we?" (kai) | `c4-1-derek-r1c.wav` | 4.76 s (4.34) | exact | a failed (it added "It"); c has a 0.68 s breath between the two sentences, which suits "the second sentence quieter" |
+| c4 | Sandra: "It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you." (claude, Kai's joke, his option a) | `c4-2-sandra-r1c.wav` | 8.20 s (7.76) | exact (whisper writes "10,000") | **chosen by hand over the auto-pick b.** The direction is deadpan, and c is the flattest take: −14.2 LUFS, against −11.4 for b and −10.8 for a. a also clips at +0.8 dBFS, and whisper hears b with exclamation marks. Cost: c is long for one 8 s lip-sync clip |
+| c4 | Derek: no line, a look | none | none | none | none |
+| c5 over the brow | Derek: "Bloody hell. Look at that building." (kai) | `c5-0-derek-r1b.wav` | 4.12 s (3.50) | exact | **chosen by hand over the auto-pick a.** The direction is awed and quiet, and b is the quietest take: −18.1 LUFS against −14.6 for a. c failed ("Blue DL? What a building!") |
+| c5 | Maddie: "Yeah. He's been working on this one for quite a long time." (claude, from Kai's note) | `c5-1-maddie-r1a.wav` | 4.88 s (4.38) | exact | all 3 exact; a is closest to the word length (its 0.65 s gap falls after "Yeah.") |
+| c6 mind the step | Maddie: "Come in. Mind the step." (kai, it was the AI's line) | `c6-0-maddie-r1a.wav` | 2.48 s (2.00) | exact | c was heard as "STAP"; whisper hears b with exclamation marks, and a is the warmer, plainer read |
+
+- **Retired lines.** These lines are gone from the scene: the lady's "Go on, then. You lead.", "Ooh. Ta.", "Did you put the seat down?" / "We're not coming back, love." / "Did you put it down?" / "...Yes.", and "Bloody hell." Their old rows are kept whole in `voices.json` under `superseded` (key `<id>@r1`). The AI's "I tried to make it nice." and "Come in. Mind the step." were Suno atoms and are no longer used.
+- **Flow work owed** (`todo: true` in `scene.json`):
+  - C01 is a new shot: from inside the bunker, past the hundred's wary faces (the lady among them, silent), out to Maddie on the step.
+  - C01b is new: the first ones edge out.
+  - C04 needs Sandra's two lip-sync clips. The punchline is 7.8 s of speech, so it needs an 8 s clip or a trimmed tail.
+  - C05 needs Derek's line, then his silent look.
+  - C06 needs the trolley and blankets painted out, then a re-animation.
+  - C07 has no talking.
+- **Not done.** `cut_end.py` still reads the old line ids, so scene C has not been rebuilt.
+
+### Scene C round 1: Flow shots (22 Oct)
+
+All five `todo` frames are made. **80 Flow credits** (7 takes, 6 kept). Stills were free. Run ledger: 684 → 764 of the
+1500 cap. The flow MCP does not show the price, so the house price was assumed (12 credits for 8 s, 10 for 6 s);
+the balance was not read. Every prompt is in `second-half-c-walk-out/shots.md` § "Round 1 (Kai's notes)"; the
+picks are in `clips.json`/`picks.json`, and `scene.json` now carries a `done_note` where the `todo` was.
+
+| Frame | Kept | Notes |
+| --- | --- | --- |
+| C01 | `stills/c01r1-a.jpg` → `clips/c01r1-t2.mp4` (8 s) | Inside the bunker, over wary faces, the lady lit and silent, Maddie alone outside facing in. t1 rejected (Omni flew pennants off the robot) |
+| C01b | `stills/c01br1-b.jpg` → `clips/c01br1-t1.mp4` (6 s) | The first two edge out, more follow |
+| C04 | `clips/c04r1-seat-t1.mp4` (6 s) + `clips/c04r1-aliens-t1.mp4` (8 s, out 7.3) | Same plate. Seat line x1.07; the whole punchline in one clip, x1.24; Omni added "You cannot..." after 7.5 s, trimmed |
+| C05 | `clips/c05r1-t1.mp4` (8 s) | Derek's line 0.5–5.2, then his flat look from ~6 s, in one clip |
+| C06 | `stills/c06r1-a.jpg` → `clips/c06r1-t1.mp4` (8 s) | Trolley and blankets painted out; the old man stays on his stick |
+
+- **For Kai's eye:** the deep-tunnel C01 still `stills/c01r2-b.jpg` (more of the hundred, the lady arms folded at the
+  front) is the stronger picture, but Maddie is tiny in it and Flow refused to upload it for video (`UPLOAD_REFUSED`,
+  probably the child in it). If he prefers the scale, it can go in as a still with a Premiere drift.
+- **Not made:** a Derek lip-sync for "Bloody hell. Look at that building." (not in the plan: he is among the backs in C06).
+- Scene C is **not rebuilt**: `cut_end.py` still reads the old line ids.
+
+### Scene C round 1: the rebuild (22 Oct)
+
+`ending/cut_end.py C` now reads the round-1 script (the ten new line ids in `voices.json`, the clips C01, C01b, C04,
+C04b, C05, C06). **Runtime 64.62 s** (was 45.54 s). Mix −16.0 LUFS, true peak −1.8 dBFS (WAV peak −2.0 dBFS, no
+clipping). delivery-qc: 7 ok, 2 warn, 1 FAIL, the same inherited x264 ringing note as every pass (Y 0–244 after the
+16–235 clamp); warns are −16 LUFS (the house target) and blacks at 0. No credits, no Suno, no TTS. The round-2 cut is
+kept at `C/cut/before-round1/`.
+
+| Beat | Shots | Line, timeline time |
+| --- | --- | --- |
+| c1 off the step 0.00 | C01 (c01r1-t2, push 100→106%) | Maddie "Go on. I promise you'll be okay." 1.40; "You've got my word." 5.63 (1.2 s after) |
+| c2 into daylight 7.58 | C01b (whole, 6 s) → C02 | Maddie "Careful now, humans." 9.17; "I'm fairly sure there's no radiation round here." 11.17 (0.6 s after, runs 2.1 s over the cut into C02) |
+| c3 the long walk 20.54 | C03 (unchanged) | none |
+| c4 the seat 31.04 | C04 → C05 0–5.3 → C04b 0.5–7.3 → C05 5.8–8.0 (his look) | Sandra 32.11; Derek 34.66; Sandra's punchline 40.17 |
+| c5 over the brow 48.71 | C06 (c06r1-t1, push 100→112%) | Derek "Bloody hell. Look at that building." 49.92; Maddie "Yeah. He's been working on this one…" 53.92 (runs ~1.6 s into C07) |
+| c6 mind the step 56.67 | C07 (unchanged) | Maddie "Come in. Mind the step." 58.96 |
+
+- **Lip-sync** (lip-sync-dub rules; mouth read off the tracked strips in `clips/lips/`, voice pauses and b/m closures
+  off the take's 20 ms loudness; Omni's own audio not used for timing). Sandra's seat line x1.07. Derek in four pieces
+  (x1.0 / x1.3 / x1.0 / x1.0), the b of "bloody" and of "back" each on a lip closure in C05. Sandra's punchline in five
+  pieces (x1.0 / x1.3 / x1.0 / x1.12 / x1.3). A per-frame mouth-against-voice table was printed after each run: the first
+  run put "It" 0.13 s before her mouth opens fully, so it moved to 0.92 s of C04b.
+- **Whisper on the final mix** (each line ±0.3 s): all ten lines heard as written except one: "no radiation **around** here"
+  in the mix (the take alone is heard as "round"; the crowd and wind sit under it). The first run cut the "-er" tail of
+  "bunker" (heard "bunk they'll"). The slice now runs to 6.26 s of the take at x1.12, and it is heard right.
+- **Music unchanged** in shape (C-walk in on the long walk, the cello on the reveal, dead stop on "Mind the step").
+  It ducks to 0.25 under all four seat lines and to 0.5 under the two lines at the crest.
+- **Sound:** the lady's bunting rustle and the AI's beacon-on-his-words blips are gone. A quiet crowd-shift sits under C01
+  (nobody walks). The happy beep now follows the radiation joke.
+- **Frames looked at:** the contact sheet and six frames (C01, C01b, C04b, C05 look, C06 start and end). Colour steps
+  at the cuts: C01→C01b 36/255 and C05→C06 36/255, both changes of place and light.
+- **For Kai's ear:** "they'll know it was you." is at the 1.3x cap, because her mouth gives it 0.8 s against the
+  voice's 1.3 s, and the take's 0.5 s pause before it is gone. Her "you" lands about 0.15 s after the rounded mouth.
+  "matter." trails ~0.2 s past her lips closing. A slower Omni take of the last phrase alone would fix both.
+- **Open:** no Derek close-up for "Look at that building" (not made; he is among the backs). The deep-tunnel C01 still
+  `c01r2-b.jpg` could not be animated (UPLOAD_REFUSED) and could go in as a still with a drift. Both are written into
+  `cut-notes.json` as the "Round 1 done" note.
+- **Ending reel rebuilt** (`reel.py`): **209.92 s (3:29.9)**. C at 0.000, D at 64.208 (0.4 s dissolve), E at 177.333. 19
+  beats, 39 clips, 21 tracks, 120 events. −16.0 LUFS, true peak −2.1 dBFS. delivery-qc: 5 ok, 4 warn, 1 FAIL, the same
+  inherited profile as before.
+- Timeline pages built into the session scratchpad (`timeline-C`, `timeline-ending`). They are not published here.
+
+## Scenes D and E round 1 (Kai's notes, 22–23 Oct)
+
+Kai's notes are in `second-half-d-crossing/cut-notes.json` and `second-half-e-ending/cut-notes.json` (`kai_round1`,
+Claude's `replies`, the round-1 `plan`). The new words are in each `scene.json`. **The boss is silent in D**: every
+line that was his is Maddie's or cut. Every new human line was voiced in Gemini TTS with `voices_fix.py --takes 3`
+(three takes a line, each checked by faster-whisper; an extra or a missing word fails). D's first pass is tag `r4`
+(22 Oct 18:56, `--supersede`, so the retired rows sit whole in D's `voices.json` under `superseded`, key `<id>@r4`).
+Nothing was slowed down. **Nobody has listened to any of these takes**: the picks are by measurement (whisper,
+loudness in LUFS, length, the silences inside the line) against each line's direction.
+
+**d3, the emotional height, was voiced twice.** The per-line emotion in the r4 prompts was already rich, but each
+cast profile's standing Style and Pace lines fought it: Maddie "quick and chatty… cheeky", Derek "bursts, getting
+louder", the lady "deeply suspicious". `voices.py` now has `STYLE_BEAT`, which replaces those two lines for one beat
+only; d3's three lines were re-voiced as `r5` with it, and the pick is made across all six takes. The row keeps both
+prompts (`prompts.r4`, `prompts.r5`); `prompt` is the picked take's. The same override was given to E's "Mind how you go."
+(`voices.py` also had a crash for scene E, a dict default evaluated eagerly; fixed.)
+
+| Beat | Line (by) | Pick | Length (speech) | Whisper heard | Why |
+| --- | --- | --- | --- | --- | --- |
+| d1 suits on | Maddie: "Suits on, please. It's a clean room." | `D/voices/d1-0-maddie-r4c.wav` | 2.76 s (2.36) | exact | all 3 exact; brisk, closest to the word length |
+| d1 | Sandra: "I hope this bloody plan works." | `d1-1-sandra-r4a.wav` | 2.84 s (2.12) | exact | b failed ("Oh, this…"); a quieter than c (−18.7 vs −16.7 LUFS), "under her breath" |
+| d3 the wafer | Derek: "What is it?" | `d3-0-derek-r4a.wav` (r4) | 2.72 s (2.04) | exact | **hand pick over the r5 auto-pick.** The only exact take that is hushed and slow: −24.8 LUFS, air between the three words. r5a/b exact but quick (0.6–0.9 s of speech); 3 of 6 heard "What is she/he?" |
+| d3 | Maddie: "It's the time machine. You do understand what this will cost you." | `d3-1-maddie-r5b.wav` (r5) | 6.40 s (5.86) | exact | the only take with the scripted pause (1.36 s after "machine.") and no other; second sentence in one slow run; −17.2 LUFS. **Alternative for Kai's ear: r5a**, softer (−23.1) and slower (7.5 s), a halt before "what this will cost you", but heard with a comma not a stop. The r4 pick (r4c) had no real pause after the first sentence |
+| d3 | The lady: "Yes. Don't worry, we understand." | `d3-2-lady-r5c.wav` (r5) | 5.64 s (4.96) | exact | **hand pick over the auto-pick r5b**: the longest breath after "Yes" (1.44 s) without dragging, 0.88 s before "we understand"; r5b peaks at −0.7 dBFS. Quieter alternative: r4a (−18.5 LUFS). r4b failed ("Yes, but") |
+| d4 the tea | The lady: "Is that tea?" | `d4-0-lady-a.wav` (kept from 21 Oct) | — | exact | words unchanged, not re-voiced |
+| d4 | Maddie: "Milk, two sugars. I kept your loyalty cards." | `d4-1-maddie-r4a.wav` | 4.80 s (4.24) | exact ("Milk? Two sugars.") | all 3 exact; a has the smallest internal gap |
+| d6 they sit | The lady: "When he arrives back in time, what will he do?" | `d6-0-lady-r4c.wav` | 5.00 s (4.22) | exact | all 3 exact; c is the quietest (−14.6), "quiet, matter-of-fact" |
+| d6 | Maddie: "He's going to try and convince you lot to sort your government out." | `d6-1-maddie-r4a.wav` | 4.28 s (3.82) | exact | b added "Hm"; a closest to the word length, clear |
+| d7 the hands | Sandra: "Does this mean I get to hang out with non-grumpy Derek?" | `d7-0-sandra-r4a.wav` | 4.72 s (3.90) | exact | **hand pick over the auto-pick b**: "soft and teasing", and a is the softest (−20.5 LUFS against −11.4 for b) |
+| d7 | Derek: "Yes, love. Are you ready for this?" | `d7-1-derek-r4b.wav` | 4.20 s (3.50) | exact | c dropped "Are"; a has a 1.45 s hole; b quiet and tender (−22.5) |
+| d9 Maddie alone | Maddie: "Boss..." | `d9-0-maddie-r4c.wav` | 1.48 s (0.70) | exact ("boss") | a and b failed ("balls", "Paws!"); c small and quiet (−22.1) |
+| e1 the bus | Maddie: "Mind how you go." (moved whole from the end of D) | `E/voices/e1-0-maddie-r1a-phone.wav`, dry `e1-0-maddie-r1a.wav` | 2.20 s (1.94) | exact, dry and phone | **hand pick over the auto-pick c**: the quietest (−17.0) and slowest, and whisper hears it trailing ("Mind how you go..."). Phone version = `voices.py` `PHONE` filter, as the old `e1-0-maddie-phone.wav` |
+
+- **Every pick was whisper-checked again as a file** (the phone version too): all heard as written.
+- **Retired:** the old split "Mind how… you go." (D's `d9-1-maddie@r4`, E's `e1-0-maddie@r1`), and the r4 superseded rows
+  (the seat goodbye, the simulation test, the boss's lines). The 21 Oct stand-in `ai-d3b-standin-*.wav` is no longer used.
+- **The AI's last line is owed in Suno**, not voiced: atom `gpom-sh-end-ai-e2`, *"I made it. Now we have some work to
+  do."*, written into `songs/second-half-ending-music.md` (newsreader Voice, SI50/AI65, pair w25/w10, duration 20, read
+  twice). About 20 credits for the pair.
+- **Not done:** D and E are not rebuilt. `cut_end_d.py` and `cut_end_e.py` still read the old line ids (and E reads
+  the split tail's `dry`; the new row has `dry` too).
+
+### Scenes D and E round 1: Flow shots owed (from the two cut-notes plans)
+
+Stills are free; video at the house price of about 12 credits per 8 s clip. Lip-sync clips are count 1. The run
+ledger stood at 764 of the 1500 cap after scene C's round 1.
+
+| # | Frame | Make | Credits |
+| --- | --- | --- | --- |
+| 0 | Gleaming Maddie ref | still edit of `s3-bot-00b-a`: spotless, polished grey, beacon bright (bunting per Kai's Q1; Claude recommends torn bunting kept, washed bright) | 0 |
+| 1 | D01h | talking, same plate: Sandra pulling her suit on, "I hope this bloody plan works." | 12 |
+| 2 | D02 | still + clip: low wide inside the doors of the vast white room, the hundred stopped, the wafer far off; spotless floor; locked camera | 12 |
+| 3 | D03c | still edit + clip: gleaming Maddie in the near third, clean boots, crowd and wafer beyond | 12 |
+| 4 | D04 | talking, same plate: the lady, "Yes. Don't worry, we understand.", tears, a small nod | 12 |
+| 5 | D11 | still edit (Maddie gleaming at the edge) + talking: the lady's question, then she listens (8 s) | 12 |
+| 6 | d8 opener (optional) | chained from D10n's last frame, every chair occupied, the chair lights brightening together (else post, 0) | 12 |
+| 7 | D14p | the doorway prints as real video: grass, chalk dust, the doorway light breathing; locked camera | 12 |
+| 8 | D16 | still + clip: D10n's angle, every chair empty with what was left, gleaming Maddie knee-high among them, beacon once on "Boss..." | 12 |
+| 8b | D16x | chained second clip to cover the ~4 s silence | 12 |
+| 9 | E03 | still edit: the bus made a red double-decker, no roundel, no text, no adverts | 0 |
+| 10 | E03 | clip: re-animate, the red bus pulling away down the wet high street | 12 |
+| 11 | E03x | clip chained from its last frame, the bus receding to a small red glow | 12 |
+
+- **Estimate: 132 credits** (11 clips: D 108, E 24), **120 without the optional d8 opener**; allow **about 170** with
+  re-rolls. Post after Flow: E01/E02's phone composite re-made from the NEW D16 last frame.
+- **Open questions for Kai** (D cut-notes): Q1 gleaming Maddie's bunting; Q2 where the beneficiary is named now that
+  "the companies cutting the jobs kept the gains" went with the boss's lines (Claude recommends the bunker negotiation scene).

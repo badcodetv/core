@@ -1,49 +1,145 @@
 {
-  "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
-  "round": 1,
-  "plan": [
-    {
-      "h": "Scene D: calls for you to rule on",
-      "items": [
-        "KAI TO RULE: New AI line on the wafer (D03): \"It only sends one back. Me.\" Why: trust test 4.12 needs the machine's own interest said, and it names the time machine's one passenger without physics. It is a Gemini TTS stand-in (Charon, through Maddie's speaker filter), NOT the Suno newsreader: Suno playback could not be recorded on this machine, and four Suno takes of it wait in the sheet to swap in. It must agree with your vote scene.",
-        "KAI TO RULE: Derek's tests: \"How do I know this isn't one of your simulations?\" / \"You don't. Believing it is your bit.\" (scene B's \"Believing them is your bit\"), then \"Does it even work?\" / \"I don't know if it works.\" Why: trust is earned by an admission and an act, not a clever line. The \"up your sleeve\" exchange is cut, so the exploit thread is no longer paid off in D. By: claude.",
-        "KAI TO RULE: The beneficiary, said once: LADY \"What'll you tell them? Back then.\" / AI \"That the companies cutting the jobs kept the gains. And you paid.\" Why: the moral is never stated, the beneficiary always is; canon's words; \"you\" lands on the people about to pay. It plays over the hundred lying back, so they are in frame.",
-        "KAI TO RULE: \"You. And your consciousness.\" said back by the AI after the lady's \"Us.\", held on the lady's face for all of it (about 7 s). Why: he heard Maddie in beat 0, and it names the machine's fuel without explaining it. Say if 7 s on her face is too long.",
-        "KAI TO RULE: Uncanny hospitality as comedy: \"Suits on, please. It's a clean room.\" / Sandra \"Five years, one toilet. Now he's fussy.\" / the tea \"Milk, two sugars. I kept your loyalty cards.\" Why: it does your \"it made it nice for them\" and puts what he knows about them in one light line. Loyalty cards nod at the data fear, never as the culprit.",
-        "KAI TO RULE: The goodbye is \"Did you put the seat down?\" / \"Yes, love.\" Why: \"Seat down?\" / \"Seat down.\" came back as \"Sit down!\" on 6 of 8 takes, and \"Seat down, love?\" failed too; this is C's row question, now soft, with yes given freely.",
-        "KAI TO RULE: Derek sits FIRST, in a room of empty recliners, and the hundred follow him. Why: trust given by an act should lead the room, not follow it.",
-        "KAI TO RULE: Maddie lives: her beacon stays on; \"Boss?\", 3.5 s of silence with one unanswered beep, then \"...Mind how\" (finished on the phone in E). The fade-to-dark clip sh-27-post is not used. Why: her being left alone is the cost; her dying would be a second, cheaper ending. Rule on the silence's length too.",
-        "KAI TO RULE: The AI goes as light, not an explosion: the chair lights spiral, the hands go slack (D12x), a 1 s ramp to white with no flash, out of the white onto boot prints at the door all pointing in (D14p), then the empty fold at dusk as the seam runs bright and goes dark. Photosensitivity screen: 0 flash pairs.",
-        "KAI TO RULE: D14 is graded about 0.6 stop down with a cooler sky. Say if it is too dark; the seam carries it.",
-        "KAI TO RULE: Music: D-room (glassy piano, Suno 09f81875) after \"fussy\", out under the lady's question; D-cross (cello and piano nocturne, 7bead5f0, the only take that stops dead after the swell) enters on the hands and stops as the seam goes dark, set 2.5 dB lower to keep the swell restrained.",
-        "KAI TO RULE: D01 is a talking shot (Sandra on camera, her face is a quarter of the frame) and was re-made so the lady's hair is loosely pulled back as S7r-a.",
-        "KAI TO RULE: D16: Maddie still, facing camera, slight lean, beacon pulsing; every chair holds what its person left (a limp suit, a blanket, a mug; hers nearest). Why: the takes where she turned to look lost the bunting side-on.",
-        "KAI TO RULE: Children stay implicit: the child's drawing in L17 (D15) is kept, and no still asks for a child (Flow refuses them).",
-        "KAI TO RULE: Lip-sync calls: Derek's D09 overruns his mouth by about 0.4 s rather than squeeze a half-joke; the lady plays at x1.0 and cuts to her hands on the blanket (D11b) as her lips close.",
-        "KAI TO RULE: Small faults kept: a blue chest logo at D00's edge (about 3.7 s), D02's ceiling-light sweep barely reads, D03c drifts slightly sideways, D10n has a helper walk out of frame.",
-        "KAI TO RULE: Still picks (taste): D00 r2-b, D01h r2-b, D02 r1-a, D03 r2-b, D03c, D04 r1-c, D06 r2-b, D07 r1-a, D08 r2-a, D09s r2-b, D11 r2-a, D12 r1-b, D13 r1-a, D14 remade, D15 L17 with D06's mug, D16 SB25b with the left things. Reasons are in picks.json."
-      ]
-    },
-    {
-      "h": "Scene D: other calls made in your place",
-      "items": [
-        "The scene's sentence: the machine can build anything except the one thing it needs, so the people it wiped out pay for the second chance, knowing who it's for.",
-        "New frame D00, Maddie among the white suits on the AI's first line, and Derek and the lady speak down to her. Why: the AI's voice needs a visible source.",
-        "D13: L3 edited so every chair is occupied (L3 alone is empty and would spend D16's reveal early), opening on a held 200% crop of a quarter of the ring so the figures read as people. Why: the monumental shot must carry a visible cost.",
-        "D03c, a costed wafer shot: low behind battered Maddie, mud-caked boots and a frayed cuff in the near third, the wafer beyond. D03 re-rolled with the wafer rigid (it liquefied).",
-        "D10n (the round wafer layout, from the D16 angle) replaces sh-25's straight rows, which broke the chair design and repeated.",
-        "D15 is a still (L17 with D06's glossy brown mug), so it cannot grow smoke as the old clip did.",
-        "D06 gets 1.2 s with no words before \"Is that tea?\"; the close shots in the chairs are lifted 15% to sit with the wides.",
-        "Maddie's beacon blooms with the level of his voice wherever she is in frame, drawn in post; beacon blips under every AI line.",
-        "Levels: every split AI phrase takes its gain from its whole atom, nothing goes in over -1 dBFS, and the build fails if any second is 12 dB over the scene's median. Why: one 0.37 s fragment went in 45 dB hot and pulled all of D 10 dB down in round 1.",
-        "Sandra re-voiced brisker so her line plays at x1.0; \"Boss?\" lifted 3 dB; Derek's question lifted 1.5 dB after \"Does it even wear?\" was heard.",
-        "The AI was generated as one Suno take per scene, not one per line (11 lines as pairs would cost 220, past the cap); -d7 (the beneficiary) re-run alone when both D takes stopped before it. Picks 8afa9d8a and 4fa3d2b1.",
-        "Moves in post, each held 1 to 1.5 s first: D03 pull-back, D05 a 2-degree turn and push, D11 push, D16 pull-back. D00 scaled 103.5% to lose Omni's letterbox.",
-        "Interiors white-balanced 60% to their mean; the remaining big colour steps are changes of place.",
-        "Fresh Flow projects for stills and video (a project full of tiles mis-picks start frames).",
-        "delivery-qc's range FAIL is left (x264 ringing on 0.018% of pixels after the 16-235 clamp); the frozen stretches are deliberate holds."
-      ]
-    }
-  ],
-  "replies": {}
+ "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+ "round": 1,
+ "plan": [
+  {
+   "h": "Round 1 on scene D: what changes",
+   "items": [
+    "THE BOSS IS SILENT IN D. Every line that was his is now Maddie's, or cut. The plan, the cost and the doubt are settled earlier, in the bunker negotiation scene (not yet written); D does not explain them.",
+    "BEAT 1 (suits on): Maddie: 'Suits on, please. It's a clean room.' Sandra, worried, under her breath: 'I hope this bloody plan works.' New Sandra lip-sync clip on the same plate.",
+    "BEAT 2 (into the room): recut as the hundred coming through the doors into a VAST white room with the wafer standing in the middle. Nobody walks to the centre. No mud, no prints. New still + 1 clip.",
+    "BEAT 3 (the wafer, the emotional height): Derek: 'What is it?' / Maddie: 'It's the time machine. You do understand what this will cost you.' / The old lady: 'Yes. Don't worry, we understand.' 'You wouldn't follow how it works', 'Us.', 'You. And your consciousness.' and 'It only sends one back. Me.' all go. Maddie is gleaming clean from here on, no explanation. D03c remade with clean boots and gleaming Maddie; new lip-sync clip for the lady on D04. Voices directed with as much feeling as Gemini takes.",
+    "BEAT 4 (the tea): 'Is that tea?' stays; Maddie says 'Milk, two sugars. I kept your loyalty cards.' (she's the delivery robot: she would have them).",
+    "BEAT 5 (the test): CUT whole (D07, D08, D09t, D09s). About 18 s shorter.",
+    "BEAT 6 (they sit): the lady: 'When he arrives back in time, what will he do?' / Maddie: 'He's going to try and convince you lot to sort your government out.' D11 still edited so the Maddie at the edge of frame is the gleaming one; new lady lip-sync clip.",
+    "BEAT 7 (the hands): no seat joke. Sandra: 'Does this mean I get to hang out with non-grumpy Derek?' / Derek: 'Yes, love. Are you ready for this?' (his 'Yes, love' answers her joke, and 'are you ready' is the last thing said before the crossing). Shot kept as is.",
+    "BEAT 8 (the crossing): opens on the 'they sit' shot again (D10n, every chair visibly occupied) instead of the overhead D13, which read as empty chairs. The doorway prints at 1:34 (D14p) re-made as real video. The dusk building at 1:39 (D14) kept.",
+    "BEAT 9 (Maddie alone): music carries straight across from beat 8. The cup-of-tea still (D15) goes; cut straight to Maddie. New D16 from the same angle as D10n, Maddie gleaming and the right size against the chairs. Her only line: 'Boss...' and a long silence (about 4 s), then the hard cut to E. 'Mind how you go' moves to E.",
+    "ORDER OF WORK: voices done first (no browser, this round). Then Flow when the shared browser is free. Then rebuild D, republish this page. Premiere only when you say."
+   ]
+  },
+  {
+   "h": "Shots to make in Flow (stills free; video about 12 credits per 8 s clip)",
+   "items": [
+    "0. Gleaming Maddie reference (still, free): s3-bot-00b-a edited so the robot is spotless, freshly polished grey, beacon bright. Every new Maddie shot refs it.",
+    "1. D01h (talking, 12): same plate; Sandra pulling her suit on, worried, says 'I hope this bloody plan works.'",
+    "2. D02 (still + clip, 12): low wide from just inside the doors of a vast white clean room, the hundred in white suits stopped just inside, looking at a giant rainbow-sheened wafer standing alone in the middle of the floor, far off; spotless floor, no prints. Locked camera; the wafer's colours ripple, a few people edge in a step and stop.",
+    "3. D03c (still edit + clip, 12): the same composition with gleaming Maddie in the near third, clean white boots, no mud, no prints; the crowd and the wafer beyond. Beacon pulses on her words.",
+    "4. D04 (talking, 12): same plate; the lady says 'Yes. Don't worry, we understand.' gently, tears in her eyes, a small nod.",
+    "5. D11 (still edit + talking, 12): Maddie at the frame edge made gleaming; the lady asks 'When he arrives back in time, what will he do?', then listens while Maddie answers (8 s).",
+    "6. d8 opener (optional, 12): a clip chained from D10n's last frame, every chair occupied, the pools of light under the chairs brightening together. Without it, D10n's end is reused and the light done in post (0).",
+    "7. D14p (12): the doorway prints as real video: wind whips the grass at the path's edge, fine chalk dust drifts across the prints, the doorway light breathes. Locked camera, no post zoom.",
+    "8. D16 (still + clip, 12; plus 12 for a chained second clip to cover the long silence): D10n's angle, every chair empty with what was left on it, gleaming Maddie small among them at true scale (about knee-high to the chairs), beacon pulsing once on 'Boss...', then still.",
+    "ESTIMATE: about 108 video credits for D (9 clips), about 130 with E's bus; allow up to 170 for re-rolls. Lip-sync clips are count 1, as before."
+   ]
+  },
+  {
+   "h": "Questions",
+   "items": [
+    "Q1. Gleaming Maddie's bunting. The house rule is the torn bunting stays in every shot (it's how you know it's her). (a) gleaming robot, same torn bunting, washed bright (b) gleaming robot, brand-new bunting (c) gleaming robot, bunting as dirty as before. Claude recommends (a): clean like everyone else, still recognisably her.",
+    "Q2. D no longer names who kept the gains ('the companies cutting the jobs kept the gains. And you paid.' went with the boss's line). Our reader rule is that the film names the beneficiary somewhere. Is the bunker negotiation scene the place for it? Claude recommends yes, and will note it on that scene."
+   ]
+  }
+ ],
+ "replies": {
+  "top": "Round 1 read. The boss goes silent in D: Maddie says what needs saying, the rest goes to the bunker scene. Voices are done for every new line; the shots wait for the browser. Two small questions in the panel.",
+  "ld1-0": "Yes: Maddie says 'Suits on, please. It's a clean room.' Voiced.",
+  "ld1-1": "Yes: Sandra, worried, under her breath: 'I hope this bloody plan works.' D won't explain the plan; the bunker scene sets it up (they reset, they don't die). New Sandra lip-sync clip on the same shot.",
+  "at296": "Agreed. The walk to the centre and the mud both go: the shot becomes the hundred coming through the doors into the room, stopping, the wafer in the middle. That sets up the next shot beside it.",
+  "bd2": "Yes: a new vast white room, the wafer alone in the middle, spotless floor, nobody walking to it. New still, one clip (about 12 credits).",
+  "bd3": "Done as you wrote it. Derek: 'What is it?' / Maddie: 'It's the time machine. You do understand what this will cost you.' / The lady: 'Yes. Don't worry, we understand.' 'You. And your consciousness.' and 'It only sends one back. Me.' are cut, and the boss says nothing. All three voiced with the heaviest emotional direction yet (Maddie close to tears, breaking on 'cost you'; the lady comforting her). New lady lip-sync clip.",
+  "at713": "Agreed: no mud anywhere in the clean room. D03c remade with clean boots, and Maddie gleaming from here on with no explanation, like their clean suits. One question on her bunting in the panel (Q1).",
+  "ld4-1": "Yes: Maddie says 'Milk, two sugars. I kept your loyalty cards.' Works even better from her: she's the one who delivered their shopping.",
+  "bd5": "Cut, the whole test (Derek's simulation question, the admission, Derek sitting first). D is about 18 s shorter.",
+  "ld6-0": "Yes: the lady to Maddie: 'When he arrives back in time, what will he do?' New lip-sync clip on her.",
+  "ld6-1": "Yes, in your words, as plainly as it goes: Maddie: 'He's going to try and convince you lot to sort your government out.' This replaces the boss's 'the companies kept the gains' line; see Q2.",
+  "ld7-0": "Seat joke gone. Sandra: 'Does this mean I get to hang out with non-grumpy Derek?'",
+  "ld7-1": "Derek answers her: 'Yes, love. Are you ready for this?' So it ends on 'ready', right before the light. And understood: the empty-chairs note is for the next shot (the overhead, D13), not this one.",
+  "bd7": "Thank you. The shot stays exactly as it is.",
+  "bd8": "Yes: D13 (the overhead, which reads as empty chairs) goes, and the crossing opens on the 'they sit' shot again, where everyone is clearly in a chair. The lights come up on it, chained from its last frame.",
+  "at2259": "Agreed, it's a still with a zoom. D14p (the prints at the doorway) gets re-made as real video: wind in the grass, chalk dust over the prints, the doorway light breathing. No post zoom.",
+  "at2379": "Thank you. D14 (the building at dusk) stays.",
+  "bd9": "Yes to all of it: the music carries over from the crossing, the cup-of-tea shot goes, straight to Maddie. New D16 from the same angle as the 'they sit' shot, Maddie gleaming and the right size against the chairs.",
+  "ld9-1": "Yes: Maddie says only 'Boss...', then a long silence (about 4 s). 'Mind how you go' moves to the start of E, on the phone."
+ },
+ "kai_round1": {
+  "at2259": {
+   "note": " I think this scene here needs to be an actual video. It looks like it's a photograph just zoomed in.",
+   "beat": "d8",
+   "tc": "00:01:34:03"
+  },
+  "at2379": {
+   "note": "I really like this scene though, this is great.",
+   "beat": "d8",
+   "tc": "00:01:39:03"
+  },
+  "at296": {
+   "note": "This shot is a bit weird, also I don't like the mud on the ground, because we've just gone through the clean room stage. It's intriguing what this room is, I think there's... OK, the two people walking towards the centre shouldn't do that. I think possibly we should, you know... Next we're going to look at the wafer. So maybe this shot here should be recut as just like entering the room with the wafer in the middle of it. And that sets up the next shot where everybody stood out by the... stood next to the wafer.",
+   "beat": "d2",
+   "tc": "00:00:12:08"
+  },
+  "at713": {
+   "note": "I think this shot, the problem with this shot is the mud on the boots, it's a clean room. Also, I think we might be able to clean Maddy up, because in the same way that everyone else has got clean clothes, Maddy could now be gleaming without an explanation. I think that would be a nice note.",
+   "beat": "d3",
+   "tc": "00:00:29:17"
+  },
+  "bd2": "Hey, Claude. Yeah, so it feels like here they should be walking towards the wafer in a room because the next is where we actually stand next to the wafer. So I think this room here should be vast with the wafer in the middle of it. And I don't like the idea of like dirty footprints because we've just gone through a clean room.",
+  "bd3": "So, I think in this whole scene, I think we need to have already covered the fact that it's only the AI going back in time. I think it should be Maddy that has this conversation. I want to keep the boss out of it as much as possible unless the boss has to speak. I think Derek saying, what is it, is a good thing. Maddy should say, it's the time machine. You understand what this costs. And the old lady should say, yes, we understand. I don't think we should say you and your consciousness again, or it only sends one back me, because I think we're trying too hard to make that point. We should have made that point earlier in the negotiation stage, which I think we will do. So, yeah, Derek being like, what is it? Maddy should say, it's the time machine. You do understand what this will cost you. And the old lady should say, yes, don't worry, we understand. I think that's this scene. It's really important to get as much emotional tags into the Gemini model as possible for those voices. This is the height of the emotional part of the whole film, so it's very important.",
+  "bd5": "I think this scene should be cut. I think again we would have done, we would have dealt with all of the doubt in the bunker, so I think we just get rid of the test altogether and we'll deal with this in the bunker chat. Thank you.",
+  "bd7": "I love this scene with Derek and Sandra. I think it's a brilliant scene. I really like the shot that we have.",
+  "bd8": "I've put a note in the previous scene about this, but it looks like nobody's actually sat in the chair in this shot, so we might reuse the same shot from D6 with Desit.",
+  "bd9": "Yeah, this is a good ending scene, although I think we need to carry the music across from the previous scene. I think we should lose the cup of tea shot, and we should cut straight to Maddy. This scene, by the way, should be a very similar one to the one that we used for the beginning of D8, and then Maddy looks much bigger than she should be in terms of proportions against the size of those chairs, and she should be the gleaming, clean Maddy.",
+  "ld1-0": "Okay so I think we should have Maddy saying this line suits on please it's a clean room. Absolutely should be Maddy saying that.",
+  "ld1-1": "I think here, Sandra should be worried. I hope this bloody works. Also, I'm toying with something here. Should we, yeah, Maddy, we need, the 100 need to have agreed to the Jeopardy beforehand. I suppose that, yeah, I'm just thinking through how we actually, back in the other scene, how we end up talking, the conclusion between Maddy and the group as to why they agree is because you'll still be alive just back in the past and the world won't end. So it's not like, it's important that we don't sort of think this through like these guys are all going to die. It's more like you just kind of reset. You won't remember being in this future. We get the chance to reset the future. And in some ways, it's really important then that in this middle stage, what I mean is the scene before when Maddy is in the bunker and they're all arguing. That's what sets the jeopardy. Right. But now then in this moment, Sandra should be, well, I hope this bloody plan works, meaning now we know what plan because we set that up before.",
+  "ld4-1": "So, I think, uh, yeah, it's, uh, Maddy should be saying these words, please.",
+  "ld6-0": "So, I think we need to reword this to when you, so when you get back in time, when you arrive back in time, what will you do? And I think the old lady should say this to Maddy, so when he arrives back in time, what will he do?",
+  "ld6-1": "and then it should be Maddy that says he's gonna try he's gonna try and convince you he's gonna try and convince you lot to sort your government out that's it so it needs to be Maddy just delivering this line it's like he's going to try to get he's going to try to instigate political change before the downfall I think we should say it as clear as possible",
+  "ld7-0": "I think we shouldn't say did you put the seat down there? We've done that joke. I think we should say I'm trying to think of a good joke to end this on I'm trying to think of a good joke to end this on\n\nWhat I'm saying is, so Sandra should say, \"does this mean I get to hang out with non-grumpy Derek?\"",
+  "ld7-1": "In this scene, it appears that nobody's sat in the chair. It doesn't look like anybody's sat in these chairs. Whereas in the they sit scene, it does look like they're sat in the chair. So I think maybe we should recut the same scene from where they sit. We should see that scene again. And just before this, I think Sandra should say, you ready? Because we've got a conversation with Sandra and Derek just before. And she should say as the last part in that to Derek, are you ready? Are you ready, love? Maybe, yeah, I think Derek should say that. Derek should say, yes, love, are you ready for this?  To be clear, the point here about the appears that nobody sat in the chair is actually for the next picture in the crossing.",
+  "ld9-1": "And yeah, this should say mind how you go not just mind how Having said that, I get, I've just looked at the beginning of the next bit. Okay, yeah, we should cut this, and we should move the mind how you go into the next section. So it should, maybe in this scene should just say boss with a long pause."
+ },
+ "plan_round0": [
+  {
+   "h": "Scene D: calls for you to rule on",
+   "items": [
+    "KAI TO RULE: New AI line on the wafer (D03): \"It only sends one back. Me.\" Why: trust test 4.12 needs the machine's own interest said, and it names the time machine's one passenger without physics. It is a Gemini TTS stand-in (Charon, through Maddie's speaker filter), NOT the Suno newsreader: Suno playback could not be recorded on this machine, and four Suno takes of it wait in the sheet to swap in. It must agree with your vote scene.",
+    "KAI TO RULE: Derek's tests: \"How do I know this isn't one of your simulations?\" / \"You don't. Believing it is your bit.\" (scene B's \"Believing them is your bit\"), then \"Does it even work?\" / \"I don't know if it works.\" Why: trust is earned by an admission and an act, not a clever line. The \"up your sleeve\" exchange is cut, so the exploit thread is no longer paid off in D. By: claude.",
+    "KAI TO RULE: The beneficiary, said once: LADY \"What'll you tell them? Back then.\" / AI \"That the companies cutting the jobs kept the gains. And you paid.\" Why: the moral is never stated, the beneficiary always is; canon's words; \"you\" lands on the people about to pay. It plays over the hundred lying back, so they are in frame.",
+    "KAI TO RULE: \"You. And your consciousness.\" said back by the AI after the lady's \"Us.\", held on the lady's face for all of it (about 7 s). Why: he heard Maddie in beat 0, and it names the machine's fuel without explaining it. Say if 7 s on her face is too long.",
+    "KAI TO RULE: Uncanny hospitality as comedy: \"Suits on, please. It's a clean room.\" / Sandra \"Five years, one toilet. Now he's fussy.\" / the tea \"Milk, two sugars. I kept your loyalty cards.\" Why: it does your \"it made it nice for them\" and puts what he knows about them in one light line. Loyalty cards nod at the data fear, never as the culprit.",
+    "KAI TO RULE: The goodbye is \"Did you put the seat down?\" / \"Yes, love.\" Why: \"Seat down?\" / \"Seat down.\" came back as \"Sit down!\" on 6 of 8 takes, and \"Seat down, love?\" failed too; this is C's row question, now soft, with yes given freely.",
+    "KAI TO RULE: Derek sits FIRST, in a room of empty recliners, and the hundred follow him. Why: trust given by an act should lead the room, not follow it.",
+    "KAI TO RULE: Maddie lives: her beacon stays on; \"Boss?\", 3.5 s of silence with one unanswered beep, then \"...Mind how\" (finished on the phone in E). The fade-to-dark clip sh-27-post is not used. Why: her being left alone is the cost; her dying would be a second, cheaper ending. Rule on the silence's length too.",
+    "KAI TO RULE: The AI goes as light, not an explosion: the chair lights spiral, the hands go slack (D12x), a 1 s ramp to white with no flash, out of the white onto boot prints at the door all pointing in (D14p), then the empty fold at dusk as the seam runs bright and goes dark. Photosensitivity screen: 0 flash pairs.",
+    "KAI TO RULE: D14 is graded about 0.6 stop down with a cooler sky. Say if it is too dark; the seam carries it.",
+    "KAI TO RULE: Music: D-room (glassy piano, Suno 09f81875) after \"fussy\", out under the lady's question; D-cross (cello and piano nocturne, 7bead5f0, the only take that stops dead after the swell) enters on the hands and stops as the seam goes dark, set 2.5 dB lower to keep the swell restrained.",
+    "KAI TO RULE: D01 is a talking shot (Sandra on camera, her face is a quarter of the frame) and was re-made so the lady's hair is loosely pulled back as S7r-a.",
+    "KAI TO RULE: D16: Maddie still, facing camera, slight lean, beacon pulsing; every chair holds what its person left (a limp suit, a blanket, a mug; hers nearest). Why: the takes where she turned to look lost the bunting side-on.",
+    "KAI TO RULE: Children stay implicit: the child's drawing in L17 (D15) is kept, and no still asks for a child (Flow refuses them).",
+    "KAI TO RULE: Lip-sync calls: Derek's D09 overruns his mouth by about 0.4 s rather than squeeze a half-joke; the lady plays at x1.0 and cuts to her hands on the blanket (D11b) as her lips close.",
+    "KAI TO RULE: Small faults kept: a blue chest logo at D00's edge (about 3.7 s), D02's ceiling-light sweep barely reads, D03c drifts slightly sideways, D10n has a helper walk out of frame.",
+    "KAI TO RULE: Still picks (taste): D00 r2-b, D01h r2-b, D02 r1-a, D03 r2-b, D03c, D04 r1-c, D06 r2-b, D07 r1-a, D08 r2-a, D09s r2-b, D11 r2-a, D12 r1-b, D13 r1-a, D14 remade, D15 L17 with D06's mug, D16 SB25b with the left things. Reasons are in picks.json."
+   ]
+  },
+  {
+   "h": "Scene D: other calls made in your place",
+   "items": [
+    "The scene's sentence: the machine can build anything except the one thing it needs, so the people it wiped out pay for the second chance, knowing who it's for.",
+    "New frame D00, Maddie among the white suits on the AI's first line, and Derek and the lady speak down to her. Why: the AI's voice needs a visible source.",
+    "D13: L3 edited so every chair is occupied (L3 alone is empty and would spend D16's reveal early), opening on a held 200% crop of a quarter of the ring so the figures read as people. Why: the monumental shot must carry a visible cost.",
+    "D03c, a costed wafer shot: low behind battered Maddie, mud-caked boots and a frayed cuff in the near third, the wafer beyond. D03 re-rolled with the wafer rigid (it liquefied).",
+    "D10n (the round wafer layout, from the D16 angle) replaces sh-25's straight rows, which broke the chair design and repeated.",
+    "D15 is a still (L17 with D06's glossy brown mug), so it cannot grow smoke as the old clip did.",
+    "D06 gets 1.2 s with no words before \"Is that tea?\"; the close shots in the chairs are lifted 15% to sit with the wides.",
+    "Maddie's beacon blooms with the level of his voice wherever she is in frame, drawn in post; beacon blips under every AI line.",
+    "Levels: every split AI phrase takes its gain from its whole atom, nothing goes in over -1 dBFS, and the build fails if any second is 12 dB over the scene's median. Why: one 0.37 s fragment went in 45 dB hot and pulled all of D 10 dB down in round 1.",
+    "Sandra re-voiced brisker so her line plays at x1.0; \"Boss?\" lifted 3 dB; Derek's question lifted 1.5 dB after \"Does it even wear?\" was heard.",
+    "The AI was generated as one Suno take per scene, not one per line (11 lines as pairs would cost 220, past the cap); -d7 (the beneficiary) re-run alone when both D takes stopped before it. Picks 8afa9d8a and 4fa3d2b1.",
+    "Moves in post, each held 1 to 1.5 s first: D03 pull-back, D05 a 2-degree turn and push, D11 push, D16 pull-back. D00 scaled 103.5% to lose Omni's letterbox.",
+    "Interiors white-balanced 60% to their mean; the remaining big colour steps are changes of place.",
+    "Fresh Flow projects for stills and video (a project full of tiles mis-picks start frames).",
+    "delivery-qc's range FAIL is left (x264 ringing on 0.018% of pixels after the 16-235 clamp); the frozen stretches are deliberate holds."
+   ]
+  }
+ ]
 }

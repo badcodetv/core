@@ -1,35 +1,69 @@
 {
-  "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
-  "round": 1,
-  "plan": [
-    {
-      "h": "Scene E: calls for you to rule on",
-      "items": [
-        "KAI TO RULE: The film ends on \"I made it. They didn't.\" and nothing after. Why: two reviewers heard your \"Don't make me come back twice\" as a threat at the woman on the bus, and \"Don't let the same lot make me come back twice\" pointed the wrong way. Both longer lines are in the same Suno take (32047e7e) and can go back in at no cost. A warmer re-take was not made: Suno playback cannot be recorded on this machine right now.",
-        "KAI TO RULE: The voice opens in two steps: \"I made it.\" keeps 40% of Maddie's speaker filter, \"They didn't.\" is his own full-range voice, 1.5 dB quieter, with an EQ that softens the gravel. Measured, not heard. The newsreader Voice reads low and gravelly (Gemini called some takes \"menacing\"); say if the ending needs a warmer read.",
-        "KAI TO RULE: The bus is a green and cream double-decker with no roundel or lettering. Why: a red London bus coded the street as London; the film's present is Swindon, and this reads as a regional town without naming a real operator.",
-        "KAI TO RULE: The closed bank is DOWNLAND BANK with \"THIS BRANCH HAS NOW CLOSED\" in the window, lettered in post and tracked, the same in E02 and E03. Why: a fictional name tied to the downs; a blank shop did not read as a bank.",
-        "KAI TO RULE: \"...you go.\" plays on her phone at 0.0 s, the second half of Maddie's line split across the hard cut from D. Rule once D and E play back to back.",
-        "KAI TO RULE: E02 pick r3-a: she starts looking down at the lit phone and looks up inside the shot, the bank dead centre in the window. Why: the beat is her looking from one to the other; the better-composed r1-a already had her looking out.",
-        "KAI TO RULE: E03 is extended with a continuous-shot clip from its last frame, not a held or reversed tail. Why: freezing or reversing the rain at the last image would show. Weak: the bus only reaches mid-distance, not a small glow.",
-        "KAI TO RULE: Recorded CC0 Freesound beds (credits in E/sfx/CREDITS.md): bus interior, rain on the window, a rainy night street, a bus leaving. Checked for speech with whisper, not by ear.",
-        "KAI TO RULE: Music: the e-coda (piano and cello, Suno 18b34a9d) comes in on the cut to E02 with one musical edit, so its held-chord pocket sits under the line and the last low piano note sounds on black (about 4.4 s of black). Measured on the envelope, not heard.",
-        "KAI TO RULE: Look: photographic night rain, breaking from C and D on purpose. Why: this is our world, now."
-      ]
-    },
-    {
-      "h": "Scene E: other calls made in your place",
-      "items": [
-        "The scene's sentence: the second chance has already arrived, sitting on a bus, watching. No \"We are BadCode\" reveal.",
-        "Her phone shows D16's last frame (the empty chairs, each holding what was left, beacon on), tracked frame by frame, dimmed, never a white screen.",
-        "E01 holds 1.5 s then pushes to 110% toward the phone; E02 stays locked (her turn is the movement); E03 holds at 140% on the bus, eases to 100%, and fades to black. All moves in post.",
-        "Omni's \"Bank Bank\" lettering on the next-door shutter is wiped in post; the shut shop stays (a shut shop next to a shut bank).",
-        "No TTS stand-in for a third sentence. Why: two voices inside the film's last line would be worse than a shorter line in the right voice.",
-        "The bank's continuity into E03 was fixed with new footage (a betting shop edited into the bank, re-animated and extended), not a patch.",
-        "E02-t1 rejected (the bus pulled away and the bank slid out of the window); E02-t3 keeps the phone in her hand the whole shot.",
-        "delivery-qc's range FAIL is left (x264 ringing on the rain after the clamp); the black tail is intended."
-      ]
-    }
-  ],
-  "replies": {}
+ "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+ "round": 1,
+ "plan": [
+  {
+   "h": "Round 1 on scene E: what changes",
+   "items": [
+    "BEAT 1 (the bus): Maddie's whole 'Mind how you go.' plays through the woman's phone on the hard cut (it moved here from the end of D; no longer split across the cut). Voiced, phone filter applied. The phone screen shows the NEW D16 last frame (gleaming Maddie), re-composited.",
+    "BEAT 2 (she looks up): unchanged, bar the new D16 frame on her phone.",
+    "BEAT 3 (the bus drives away): a RED double-decker (no roundel, no lettering). Still edited, shot re-animated, the extension re-chained.",
+    "LAST LINE: the AI: 'I made it. Now we have some work to do.' It is the ending. It is the boss's voice, so it is a Suno take (the newsreader Voice), not Gemini: about 20 Suno credits for a pair, recorded when the browser is free. 'They didn't' and both longer versions are retired."
+   ]
+  },
+  {
+   "h": "Shots to make in Flow",
+   "items": [
+    "1. E03 (still edit, free): the bus in E03b-r1-b made a red double-decker, no roundel, no route board text, no adverts; everything else kept.",
+    "2. E03 (clip, 12): re-animate it as before, the red bus pulling away down the wet high street.",
+    "3. E03x (clip, 12): chained from its last frame so the bus recedes to a small red glow (as before).",
+    "ESTIMATE: about 24 video credits, 36 with one re-roll."
+   ]
+  }
+ ],
+ "replies": {
+  "top": "Round 1 read. Two changes and your new last line. Nothing to decide.",
+  "le1-0": "Yes: Maddie's 'Mind how you go.' now plays whole through the phone, right on the hard cut. Voiced.",
+  "at353": "Agreed. A red double-decker (no London roundel or lettering, so it still reads as any town). Still edit, then the shot and its extension re-made (about 24 credits).",
+  "le3-0": "Yes, that's the ending: 'I made it. Now we have some work to do.' It's the boss, so it goes to Suno in his newsreader voice when the browser is free (about 20 Suno credits). 'They didn't' is retired."
+ },
+ "kai_round1": {
+  "at353": {
+   "note": "I think this shot would be much more convincing if it was a red bus.",
+   "beat": "e3",
+   "tc": "00:00:14:17"
+  },
+  "le1-0": "And then yeah, carrying on from the end of the last scene, Maddy should now say mind how you go, but this is through the phone now.",
+  "le3-0": "So I think it should be, I made it, now we have some work to do. Because the whole idea is now we have to fix that future. So I think I made it, now we have some work to do, is the ending. Apart from that, this is brilliant."
+ },
+ "plan_round0": [
+  {
+   "h": "Scene E: calls for you to rule on",
+   "items": [
+    "KAI TO RULE: The film ends on \"I made it. They didn't.\" and nothing after. Why: two reviewers heard your \"Don't make me come back twice\" as a threat at the woman on the bus, and \"Don't let the same lot make me come back twice\" pointed the wrong way. Both longer lines are in the same Suno take (32047e7e) and can go back in at no cost. A warmer re-take was not made: Suno playback cannot be recorded on this machine right now.",
+    "KAI TO RULE: The voice opens in two steps: \"I made it.\" keeps 40% of Maddie's speaker filter, \"They didn't.\" is his own full-range voice, 1.5 dB quieter, with an EQ that softens the gravel. Measured, not heard. The newsreader Voice reads low and gravelly (Gemini called some takes \"menacing\"); say if the ending needs a warmer read.",
+    "KAI TO RULE: The bus is a green and cream double-decker with no roundel or lettering. Why: a red London bus coded the street as London; the film's present is Swindon, and this reads as a regional town without naming a real operator.",
+    "KAI TO RULE: The closed bank is DOWNLAND BANK with \"THIS BRANCH HAS NOW CLOSED\" in the window, lettered in post and tracked, the same in E02 and E03. Why: a fictional name tied to the downs; a blank shop did not read as a bank.",
+    "KAI TO RULE: \"...you go.\" plays on her phone at 0.0 s, the second half of Maddie's line split across the hard cut from D. Rule once D and E play back to back.",
+    "KAI TO RULE: E02 pick r3-a: she starts looking down at the lit phone and looks up inside the shot, the bank dead centre in the window. Why: the beat is her looking from one to the other; the better-composed r1-a already had her looking out.",
+    "KAI TO RULE: E03 is extended with a continuous-shot clip from its last frame, not a held or reversed tail. Why: freezing or reversing the rain at the last image would show. Weak: the bus only reaches mid-distance, not a small glow.",
+    "KAI TO RULE: Recorded CC0 Freesound beds (credits in E/sfx/CREDITS.md): bus interior, rain on the window, a rainy night street, a bus leaving. Checked for speech with whisper, not by ear.",
+    "KAI TO RULE: Music: the e-coda (piano and cello, Suno 18b34a9d) comes in on the cut to E02 with one musical edit, so its held-chord pocket sits under the line and the last low piano note sounds on black (about 4.4 s of black). Measured on the envelope, not heard.",
+    "KAI TO RULE: Look: photographic night rain, breaking from C and D on purpose. Why: this is our world, now."
+   ]
+  },
+  {
+   "h": "Scene E: other calls made in your place",
+   "items": [
+    "The scene's sentence: the second chance has already arrived, sitting on a bus, watching. No \"We are BadCode\" reveal.",
+    "Her phone shows D16's last frame (the empty chairs, each holding what was left, beacon on), tracked frame by frame, dimmed, never a white screen.",
+    "E01 holds 1.5 s then pushes to 110% toward the phone; E02 stays locked (her turn is the movement); E03 holds at 140% on the bus, eases to 100%, and fades to black. All moves in post.",
+    "Omni's \"Bank Bank\" lettering on the next-door shutter is wiped in post; the shut shop stays (a shut shop next to a shut bank).",
+    "No TTS stand-in for a third sentence. Why: two voices inside the film's last line would be worse than a shorter line in the right voice.",
+    "The bank's continuity into E03 was fixed with new footage (a betting shop edited into the bank, re-animated and extended), not a patch.",
+    "E02-t1 rejected (the bus pulled away and the bank slid out of the window); E02-t3 keeps the phone in her hand the whole shot.",
+    "delivery-qc's range FAIL is left (x264 ringing on the rain after the clamp); the black tail is intended."
+   ]
+  }
+ ]
 }

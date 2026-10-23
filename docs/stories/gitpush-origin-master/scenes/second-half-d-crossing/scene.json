@@ -5,7 +5,7 @@
   "title": "GPOM Second Half D: The Clean Room and the Crossing",
   "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half D: the clean room and the crossing",
   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D",
-  "about": "Inside the AI's building: suits, the white hall, the wafer, a hundred chairs laid out like a wafer. All hundred power the machine and do not come back; the AI goes. After: Maddie alone. Stage 1 written brief: brief.md; music: music.md.",
+  "about": "Inside the AI's building: suits, a vast white room with the wafer in the middle, a hundred chairs laid out like a wafer. All hundred power the machine; the AI goes. After: Maddie alone. The boss does not speak in D (Kai round 1): Maddie speaks for him. The plan, the cost and the doubt are settled earlier, in the bunker negotiation scene (not yet written). Stage 1 written brief: brief.md; music: music.md; round-1 notes: cut-notes.json.",
   "runtime_target": "90-120 s (planned ~110 s)",
   "stage": "1 (written brief, no interview: the 2026-10-21 autonomous run, second-half-ending-goal.md)",
   "cast": {
@@ -16,7 +16,7 @@
     },
     "ai": {
       "ref": null,
-      "rule": "No body, ever. Speaks through Maddie's speaker (beacon pulses on his words); the last line of the film is the one unfiltered read. Maddie is IN the room all scene: D00 shows her relaying him; she stays soft in the background of D07, D08 and D11",
+      "rule": "No body, ever. Silent in scene D after Kai's round 1 (Maddie says every line that was his); his one line left in the ending is E's last line.",
       "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words"
     },
     "lady": {
@@ -45,85 +45,64 @@
       "blurb": "A changing room. A hundred people pull clean-room suits over their jumpers. The hospitality is uncanny and a bit ridiculous.",
       "lines": [
         {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
           "text": "Suits on, please. It's a clean room.",
-          "by": "claude",
-          "how": "polite, a host with house rules",
+          "by": "kai",
+          "how": "polite and brisk, a host with house rules, a little fussy on her boss's behalf",
           "frame": "D00",
-          "atom": "gpom-sh-end-ai-d1",
-          "fx": "speaker"
+          "was": "AI: same words (Kai round 1, ld1-0: Maddie says it)"
         },
         {
           "speaker": "sandra",
           "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
-          "text": "Five years, one toilet. Now he's fussy.",
-          "by": "claude",
-          "how": "FAST: she rattles the whole line off quickly in one breath, much faster than normal speech, with no pauses between the phrases; deadpan, muttered to nobody, but every word clear",
+          "text": "I hope this bloody plan works.",
+          "by": "kai",
+          "how": "worried, quiet, under her breath as she pulls the suit on; not a joke: a frightened woman being brave",
           "frame": "D01h",
-          "review_round_2": "re-voiced brisker so it fits her mouth without the x1.25 speed-up"
+          "was": "Five years, one toilet. Now he's fussy. (Kai round 1, ld1-1)",
+          "note": "'the plan' is set up in the bunker negotiation scene (not yet written); D does not explain it"
         }
       ]
     },
     {
       "key": "d2",
       "at": "8.00",
-      "name": "The white hall",
-      "blurb": "They walk down a white hall that goes on too far. Their boots leave mud on the white.",
+      "name": "Into the room",
+      "blurb": "They come through the doors into a vast white room with the wafer standing in the middle of it. Nobody walks to the centre yet. Spotless: no mud, no prints (they have just come through the clean room).",
       "lines": []
     },
     {
       "key": "d3",
       "at": "15.00",
       "name": "The wafer",
-      "blurb": "The machine itself: a wafer the size of a house, beyond understanding. What it runs on is the one thing they do understand. And he says what is in it for him: it sends one back, him.",
+      "blurb": "Beside the wafer. Derek asks; Maddie, gleaming clean now with no explanation, tells them what it is and what it costs; the old lady answers for all of them. The emotional height of the film. The physics and 'it only sends one back' are not said here: the bunker scene carries them.",
       "lines": [
         {
           "speaker": "derek",
           "voice": "Gemini TTS Algieba (cut3-cast.json man)",
           "text": "What is it?",
-          "by": "claude",
-          "how": "quiet, wary",
+          "by": "kai",
+          "how": "hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly",
           "frame": "D03"
         },
         {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
-          "text": "You wouldn't follow how it works. What it runs on, you already know.",
-          "by": "claude",
-          "how": "plain, no showing off",
-          "frame": "D03",
-          "atom": "gpom-sh-end-ai-d2",
-          "fx": "speaker"
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's the time machine. You do understand what this will cost you.",
+          "by": "kai",
+          "how": "the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'",
+          "frame": "D03c",
+          "was": "AI: You wouldn't follow how it works. What it runs on, you already know."
         },
         {
           "speaker": "lady",
           "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
-          "text": "Us.",
-          "by": "claude",
-          "how": "flat; she has known since the step",
-          "frame": "D04"
-        },
-        {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
-          "text": "You. And your consciousness.",
-          "by": "claude",
-          "how": "gently; Maddie's own words from beat 0, he heard her",
+          "text": "Yes. Don't worry, we understand.",
+          "by": "kai",
+          "how": "deeply moved, calm and certain: an old woman comforting the robot, not the other way round; a soft breath before 'Yes', tears in her voice but steady; 'Don't worry' warm and kind, almost a smile; 'we understand' quiet and final",
           "frame": "D04",
-          "atom": "gpom-sh-end-ai-d3",
-          "fx": "speaker"
-        },
-        {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
-          "text": "It only sends one back. Me.",
-          "by": "claude",
-          "how": "plain, no apology, a fact he is not proud of; a small beat before \"Me.\"",
-          "frame": "D03c",
-          "atom": "gpom-sh-end-ai-d3b",
-          "fx": "speaker",
-          "review_round_2": "added: the AI's own interest said out loud (trust test 4.12 part one; story + cold findings). The vote scene can repeat it rather than carry it alone. **Kai to rule** on the words."
+          "was": "Us. (then AI: You. And your consciousness. / It only sends one back. Me. -- both cut, Kai round 1 bd3)"
         }
       ]
     },
@@ -142,14 +121,13 @@
           "frame": "D06"
         },
         {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
           "text": "Milk, two sugars. I kept your loyalty cards.",
-          "by": "claude",
-          "how": "helpful, entirely unaware it is creepy",
+          "by": "kai",
+          "how": "helpful and chirpy, entirely unaware it is creepy; a delivery robot proud of her records",
           "frame": "D06",
-          "atom": "gpom-sh-end-ai-d4",
-          "fx": "speaker"
+          "was": "AI: same words (Kai round 1, ld4-1: Maddie says it)"
         }
       ]
     },
@@ -158,7 +136,9 @@
       "at": "43.00",
       "name": "Up your sleeve",
       "blurb": "Derek tests it. The machine cannot prove it, and says so, in Maddie's words from the door. Derek asks the plain question, does it even work, and it admits it does not know. Then Derek sits down first: trust given by an act, and the room follows.",
-      "lines": [
+      "lines": [],
+      "cut": "Kai round 1 (bd5): the test is cut; the doubt is dealt with in the bunker scene.",
+      "lines_cut": [
         {
           "speaker": "derek",
           "voice": "Gemini TTS Algieba (cut3-cast.json man)",
@@ -206,25 +186,25 @@
       "key": "d6",
       "at": "62.00",
       "name": "They sit",
-      "blurb": "Derek has sat. Then every one of them does. Nobody makes them. The old lady asks the only question left, and he names who kept the gains, and who paid, and when he is going: back then.",
+      "blurb": "They sit, every one of them; nobody makes them. The old lady asks what he will do when he gets back, and Maddie says it as plainly as it can be said.",
       "lines": [
         {
           "speaker": "lady",
           "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
-          "text": "What'll you tell them? Back then.",
-          "by": "claude",
-          "how": "lying back, matter-of-fact; \"Back then\" an afterthought that fixes where he is going",
-          "frame": "D11"
+          "text": "When he arrives back in time, what will he do?",
+          "by": "kai",
+          "how": "lying back in the chair, quiet, matter-of-fact, genuinely wanting to know, a little hope in it",
+          "frame": "D11",
+          "was": "What'll you tell them? Back then."
         },
         {
-          "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
-          "text": "That the companies cutting the jobs kept the gains. And you paid.",
-          "by": "claude",
-          "how": "straight, no irony, the care register; the chooser and beneficiary named in canon's words, once. **Kai to rule** on the exact words (alt: \"...And who paid.\")",
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "He's going to try and convince you lot to sort your government out.",
+          "by": "kai",
+          "how": "plain and clear, as simple as she can make it, every word distinct; fond, a little wry on 'you lot'; sincere: the whole plan in one sentence",
           "frame": "D11",
-          "atom": "gpom-sh-end-ai-d7",
-          "fx": "speaker"
+          "was": "AI: That the companies cutting the jobs kept the gains. And you paid."
         }
       ]
     },
@@ -232,25 +212,25 @@
       "key": "d7",
       "at": "74.00",
       "name": "Seat down",
-      "blurb": "Two hands across the gap between two chairs. The row becomes the goodbye.",
+      "blurb": "Two hands across the gap between two chairs. The last joke, and the goodbye.",
       "lines": [
         {
           "speaker": "sandra",
           "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
-          "text": "Did you put the seat down?",
-          "by": "claude",
-          "how": "soft, the first time she has been soft; the same question as the row on the downs (C04), now a goodbye",
+          "text": "Does this mean I get to hang out with non-grumpy Derek?",
+          "by": "kai",
+          "how": "soft and teasing, lying back in the chair, fond; a smile in her voice holding back tears; the joke is how she says goodbye",
           "frame": "D12",
-          "was": "Seat down? (heard as 'Sit down' in the mix, review round 1; 'Seat down, love?' was heard 'Sit down, love' too)"
+          "was": "Did you put the seat down? (the seat joke is done in C, Kai round 1 ld7-0)"
         },
         {
           "speaker": "derek",
           "voice": "Gemini TTS Algieba (cut3-cast.json man)",
-          "text": "Yes, love.",
-          "by": "claude",
-          "how": "softer; the row's \"...Yes.\" (C05), given freely this time",
+          "text": "Yes, love. Are you ready for this?",
+          "by": "kai",
+          "how": "warm, a small breath of a laugh on 'Yes, love'; then quieter and tender, serious, holding her hand: 'Are you ready for this?'",
           "frame": "D12",
-          "was": "Seat down. ('Seat's down.' was heard 'Sheets down!' on 5 of 6 takes)"
+          "was": "Yes, love."
         }
       ]
     },
@@ -258,33 +238,27 @@
       "key": "d8",
       "at": "81.00",
       "name": "The crossing",
-      "blurb": "The pools of light come on in a spiral, the hub last. Outside, the amber seam runs bright end to end and goes out. No explosion.",
+      "blurb": "Opens on the 'they sit' shot again (D10n, everyone in a chair), the lights come up. The light, the hands go slack, out to the prints at the door and the seam going dark. No explosion.",
       "lines": []
     },
     {
       "key": "d9",
       "at": "95.00",
       "name": "After: Maddie alone",
-      "blurb": "What they left. Then Maddie, alone among a hundred empty chairs, calls her boss, and nobody answers.",
+      "blurb": "The music carries on from d8. Straight to Maddie, gleaming, small among a hundred empty chairs, from the same angle as the opening of d8. She calls her boss, and nobody answers.",
       "lines": [
         {
           "speaker": "maddie",
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
-          "text": "Boss?",
-          "by": "claude",
-          "how": "small, ordinary, expecting an answer",
-          "frame": "D16"
-        },
-        {
-          "speaker": "maddie",
-          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
-          "text": "...Mind how you go.",
-          "by": "claude",
-          "how": "after a long silence; to the empty chairs, her line from beat 0",
+          "text": "Boss...",
+          "by": "kai",
+          "how": "small and quiet, expecting an answer that does not come; trailing off; a long silence after it",
           "frame": "D16",
-          "split": "One take, cut at the word gap before \"you\": D16 plays \"...Mind how\" at full fidelity in the clean room; the hard cut to E01 lands on the phone's tinny \"...you go.\" (scene E line e1). The sound bridge does the reveal."
+          "was": "Boss?",
+          "note": "the long pause after it is placed in the edit"
         }
-      ]
+      ],
+      "moved": "'...Mind how you go.' moves to E01, said whole through the phone (Kai round 1, ld9-1)"
     }
   ],
   "frames": [
@@ -334,7 +308,9 @@
       "talking": false,
       "continuous": false,
       "reuse": "fallback: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L5-bunny-suits.jpg with /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-21-post.mp4 (L5 held). L5's old lady is not the S7r-a lady, so a re-edit comes first",
-      "review_round_2": "hair continuity: re-made as D01h (still /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D01h-r2-b.jpg, the lady's hair loosely pulled back as S7r-a/D04/D11, not a tidy high bun) and re-animated with Sandra saying her line (D01h-t1)"
+      "review_round_2": "hair continuity: re-made as D01h (still /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D01h-r2-b.jpg, the lady's hair loosely pulled back as S7r-a/D04/D11, not a tidy high bun) and re-animated with Sandra saying her line (D01h-t1)",
+      "round1": "NEW TALKING CLIP (on the D01h plate): Sandra now says 'I hope this bloody plan works.' (worried). Same plate.",
+      "todo": true
     },
     {
       "id": "D02",
@@ -357,7 +333,9 @@
       "talking": false,
       "continuous": false,
       "reuse": "fallback: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-22-L2-white-hall.mp4 (17 Oct clip, no people in it)",
-      "visible_cost": "mud on the white: the one dirty thing in the machine's world is them"
+      "visible_cost": "mud on the white: the one dirty thing in the machine's world is them",
+      "round1": "REMAKE: entering a vast white room, the wafer standing in the middle of it; nobody walks to the centre; no mud, no prints.",
+      "todo": true
     },
     {
       "id": "D03",
@@ -404,7 +382,9 @@
       "talking": false,
       "continuous": false,
       "reuse": null,
-      "visible_cost": "the battered robot, the mud and the worn boots in the near third"
+      "visible_cost": "the battered robot, the mud and the worn boots in the near third",
+      "round1": "REMAKE: no mud on the boots, no prints; Maddie gleaming clean (no explanation). Carries Maddie's 'It's the time machine...'.",
+      "todo": true
     },
     {
       "id": "D04",
@@ -427,7 +407,9 @@
       },
       "talking": "lip-sync-dub: lady, \"Us.\" (one word; if the clip will not hold it, play the word over her held face, no sync needed for a closed-mouth \"Us\")",
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "round1": "NEW TALKING CLIP: the lady says 'Yes. Don't worry, we understand.' Same plate.",
+      "todo": true
     },
     {
       "id": "D05",
@@ -496,7 +478,8 @@
       },
       "talking": "lip-sync-dub: derek, \"How do I know this isn't one of your simulations?\" (8 s clip)",
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
     },
     {
       "id": "D08",
@@ -520,7 +503,8 @@
       },
       "talking": false,
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
     },
     {
       "id": "D09",
@@ -543,7 +527,8 @@
       },
       "talking": "lip-sync-dub: derek, \"Got anything else up your sleeve?\" (6 s clip, the D07 plate)",
       "continuous": false,
-      "reuse": "the D07 still"
+      "reuse": "the D07 still",
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
     },
     {
       "id": "D09t",
@@ -564,7 +549,8 @@
       "continuous": false,
       "reuse": null,
       "review": "round 1",
-      "review_round_2": "re-rolled (D09t-t2) with Derek saying \"Does it even work?\""
+      "review_round_2": "re-rolled (D09t-t2) with Derek saying \"Does it even work?\"",
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
     },
     {
       "id": "D09s",
@@ -585,7 +571,8 @@
       "continuous": false,
       "reuse": null,
       "review": "round 1",
-      "review_round_2": "re-made (D09s-t2 from /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D09s-r2-b.jpg): every chair behind him EMPTY, Maddie on screen left as in D07, the rows' recliner design. Derek sits first; D10n is the room following"
+      "review_round_2": "re-made (D09s-t2 from /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D09s-r2-b.jpg): every chair behind him EMPTY, Maddie on screen left as in D07, the rows' recliner design. Derek sits first; D10n is the room following",
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
     },
     {
       "id": "D10",
@@ -653,7 +640,9 @@
       },
       "talking": "lip-sync-dub: lady, \"What'll you tell them? Back then.\" (8 s clip; the AI's answer plays over her listening)",
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "round1": "STILL EDIT + NEW TALKING CLIP: Maddie at the edge of frame made gleaming; the lady says 'When he arrives back in time, what will he do?'",
+      "todo": true
     },
     {
       "id": "D11b",
@@ -697,7 +686,8 @@
       },
       "talking": false,
       "continuous": false,
-      "reuse": null
+      "reuse": null,
+      "round1": "KEEP (Kai: 'I really like the shot that we have')."
     },
     {
       "id": "D12x",
@@ -742,7 +732,8 @@
       "continuous": false,
       "reuse": "fallback: the occupied plate held with the spiral done in post (per-chair light masks), or cut from SB23a / sh-25 (occupied, floor level) brightening to white. NOT the empty L3 + sh-24-post: it shows empty chairs and spends D16's reveal early",
       "visible_cost": "every chair full at the moment of the crossing; D16 shows them empty",
-      "review_round_1": "review round 1: opens on a held 200% crop so the figures read as people, then pulls out; intercut with D12x before the white"
+      "review_round_1": "review round 1: opens on a held 200% crop so the figures read as people, then pulls out; intercut with D12x before the white",
+      "round1": "CUT (Kai round 1, bd8/ld7-1): it reads as empty chairs. d8 opens on D10n again (the 'they sit' shot) instead."
     },
     {
       "id": "D14p",
@@ -766,7 +757,9 @@
       "talking": false,
       "continuous": false,
       "reuse": null,
-      "visible_cost": "a hundred going in, none coming out"
+      "visible_cost": "a hundred going in, none coming out",
+      "round1": "REMAKE AS REAL VIDEO (Kai, 1:34): it read as a zoomed photograph. Same prints, outside the door; stronger motion.",
+      "todo": true
     },
     {
       "id": "D14",
@@ -790,7 +783,8 @@
       "continuous": false,
       "reuse": null,
       "visible_cost": "the footprints: in, none out",
-      "review_round_1": "review round 1: still remade with no trolley or body, the track unbroken to the door; graded ~0.6 stop down in post with a slow push"
+      "review_round_1": "review round 1: still remade with no trolley or body, the track unbroken to the door; graded ~0.6 stop down in post with a slow push",
+      "round1": "KEEP (Kai, 1:39: 'I really like this scene')."
     },
     {
       "id": "D15",
@@ -815,7 +809,8 @@
       "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L17-mud-on-white.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-26-L17-mud-on-white.mp4",
       "visible_cost": "the objects left behind",
       "note": "The child's drawing implies children among the hundred (restructure beat: \"a kid asks about a time machine\"). Kept. **Kai to rule**.",
-      "review_round_1": "review round 1: L17 edited so the mug is D06's brown mug, held as a still (no smoke)"
+      "review_round_1": "review round 1: L17 edited so the mug is D06's brown mug, held as a still (no smoke)",
+      "round1": "CUT (Kai round 1, bd9): the cup-of-tea shot goes; cut straight to Maddie."
     },
     {
       "id": "D16",
@@ -840,7 +835,9 @@
       "continuous": false,
       "reuse": "still /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB25b.jpg (new 8 s clip from it; extend with a held last frame for the silence)",
       "visible_cost": "a hundred empty chairs",
-      "review_round_1": "review round 1: SB25b edited so every chair holds what its person left; new clip D16f-t1"
+      "review_round_1": "review round 1: SB25b edited so every chair holds what its person left; new clip D16f-t1",
+      "round1": "REMAKE: the same angle as D10n; Maddie gleaming clean and small against the chairs (she read too big).",
+      "todo": true
     }
   ],
   "boards": {},

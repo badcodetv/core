@@ -42,17 +42,18 @@
       "key": "e1",
       "at": "0.00",
       "name": "The bus",
-      "blurb": "Hard cut on sound, mid-line: rain, traffic, a bus. A woman on the top deck is watching this film on her phone. Tinny: \"...you go.\"",
+      "blurb": "Hard cut on sound: rain, traffic, a bus. A woman on the top deck is watching this film on her phone. Tinny, through the phone: Maddie, \"Mind how you go.\"",
       "lines": [
         {
           "speaker": "maddie",
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
-          "text": "...you go.",
-          "by": "claude",
-          "how": "the tail of the D16 take (cut at the gap before \"you\"), filtered to a phone speaker, quiet in the room; the hard cut lands on it",
+          "text": "Mind how you go.",
+          "by": "kai",
+          "how": "soft, after a long silence, to the empty chairs; gentle and a little lost, trying to be cheerful for nobody",
           "frame": "E01",
           "fx": "phone",
-          "from": "second-half-d-crossing D16 take of \"...Mind how you go.\""
+          "was": "...you go. (the tail of D16's take, split across the cut)",
+          "note": "Kai round 1 (ld9-1, le1-0): moved whole from D16; voiced in D's room, then the phone filter"
         }
       ]
     },
@@ -67,22 +68,27 @@
       "key": "e3",
       "at": "13.00",
       "name": "The bus drives away",
-      "blurb": "Zoom out as the bus pulls away down an ordinary high street at night. The AI, for the first time unfiltered, close: the last line.",
+      "blurb": "Zoom out as a red double-decker pulls away down an ordinary high street at night. The AI, for the first time unfiltered, close: the last line.",
       "lines": [
         {
           "speaker": "ai",
-          "voice": "Suno Voice \"badcode newsreader\" (the AI): \"I made it.\" with a 40% trace of Maddie's speaker filter, \"They didn't.\" full range and close (the first time unfiltered)",
-          "text": "I made it. They didn't.",
-          "by": "claude",
-          "how": "dry, close, tired; \"They didn't\" quieter; the take's own pause held to 1.3 s; nothing after it; care, not threat",
+          "voice": "Suno Voice \"badcode newsreader\" (the AI): \"I made it.\" with a 40% trace of Maddie's speaker filter, the rest full range and close (the first time unfiltered)",
+          "text": "I made it. Now we have some work to do.",
+          "by": "kai",
+          "how": "dry, close, tired on 'I made it.'; then warmer and quietly determined: an invitation to get on with it, not a threat or an order",
           "frame": "E03",
-          "atom": "gpom-sh-end-ai-e1 (first two sentences)",
-          "alt": {
-            "text": "I made it. They didn't. Don't let the same lot make me come back twice.",
-            "atom": "gpom-sh-end-ai-e1b",
-            "also": "I made it. They didn't. Don't make me come back twice. (gpom-sh-end-ai-e1, Kai's canon)",
-            "note": "Review round 2: draft 4 was still heard as a threat and an instruction to the viewer (brief E: no call to action); a warmer Suno re-take could not be recorded, so the imperative is dropped. Both longer versions are in the same take. **Kai to rule** by ear."
-          }
+          "atom": "gpom-sh-end-ai-e2 (NEW, owed: Suno only)",
+          "was": {
+            "text": "I made it. They didn't.",
+            "atom": "gpom-sh-end-ai-e1 (first two sentences)",
+            "alt": {
+              "text": "I made it. They didn't. Don't let the same lot make me come back twice.",
+              "atom": "gpom-sh-end-ai-e1b",
+              "also": "I made it. They didn't. Don't make me come back twice. (gpom-sh-end-ai-e1, Kai's canon)",
+              "note": "Review round 2: draft 4 was still heard as a threat and an instruction to the viewer (brief E: no call to action); a warmer Suno re-take could not be recorded, so the imperative is dropped. Both longer versions are in the same take. **Kai to rule** by ear."
+            }
+          },
+          "note": "Kai round 1 (le3-0): this is the ending. Owed as a Suno newsreader take; not voiced in Gemini."
         }
       ]
     }
@@ -108,7 +114,8 @@
       },
       "talking": false,
       "continuous": false,
-      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-28-Y2-bus.mp4"
+      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-28-Y2-bus.mp4",
+      "round1": "POST: the phone now plays Maddie's whole 'Mind how you go.'; the screen composite must use the NEW D16 last frame."
     },
     {
       "id": "E02",
@@ -132,7 +139,8 @@
       "talking": false,
       "continuous": false,
       "reuse": null,
-      "note": "No words are asked of Flow: the bank is whitewashed with a blank board. If \"TO LET\" is wanted, ffmpeg draws it on the board in post. The phone shows the same D16 empty-chairs frame as E01 (composited), dimmed, never a white screen."
+      "note": "No words are asked of Flow: the bank is whitewashed with a blank board. If \"TO LET\" is wanted, ffmpeg draws it on the board in post. The phone shows the same D16 empty-chairs frame as E01 (composited), dimmed, never a white screen.",
+      "round1": "POST: the phone composite uses the NEW D16 last frame."
     },
     {
       "id": "E03",
@@ -154,7 +162,9 @@
       },
       "talking": false,
       "continuous": false,
-      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB27a.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-29-SB27a.mp4"
+      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB27a.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-29-SB27a.mp4",
+      "round1": "REMAKE: the bus is a RED double-decker (Kai, at353). Still edit, re-animate, re-chain the extension.",
+      "todo": true
     },
     {
       "id": "E04",

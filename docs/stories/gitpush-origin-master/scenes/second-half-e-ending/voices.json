@@ -5,6 +5,69 @@
   "e1-0-maddie": {
    "speaker": "maddie",
    "frame": "E01",
+   "text": "Mind how you go.",
+   "voice": "Aoede",
+   "file": "voices/e1-0-maddie-r1a-phone.wav",
+   "duration": 2.2,
+   "speech": [
+    0.0,
+    1.94
+   ],
+   "lead": 0.0,
+   "heard": "Mind how you go...",
+   "verified": true,
+   "why": "[r1, hand pick] a: all three heard as written; the direction is 'soft... a little lost', slow and trailing off, and a is the quietest (-17.0 LUFS against -15.3 b, -14.7 c) and the slowest (1.5 s of speech), and whisper hears it trailing ('Mind how you go...'). `file` is the phone version (voices.py PHONE, as the old e1-0-maddie-phone.wav); `dry` is the take.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "e1-0-maddie-r1a.wav",
+     "duration": 2.2,
+     "expected": 1.54,
+     "heard": "Mind how you go...",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "ok (attempt 1)",
+     "lufs": -17.0,
+     "true_peak": -6.0
+    },
+    {
+     "take": "b",
+     "file": "e1-0-maddie-r1b.wav",
+     "duration": 2.4,
+     "expected": 1.54,
+     "heard": "Mind how you go.",
+     "match": 1.0,
+     "gap": 0.05,
+     "status": "ok (attempt 1)",
+     "lufs": -15.3,
+     "true_peak": -5.4
+    },
+    {
+     "take": "c",
+     "file": "e1-0-maddie-r1c.wav",
+     "duration": 2.0,
+     "expected": 1.54,
+     "heard": "Mind how you go",
+     "match": 1.0,
+     "gap": 0.03,
+     "status": "ok (attempt 1)",
+     "lufs": -14.7,
+     "true_peak": -5.5
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent white room after everyone has gone: a hundred empty reclining chairs, a small robot alone among them, speaking softly to nobody. Dead quiet, no echo.\n\n### DIRECTOR'S NOTES\nEmotion for this line: soft, after a long silence, to the empty chairs; gentle and a little lost, trying to be cheerful for nobody; say 'how' with a clear, soft h, so it can never be heard as 'out'.\nStyle: alone now, no one to be cheeky for; small, soft and a little lost, the habit of being cheerful still there underneath.\nPace: slow and quiet, four soft words, no hurry; trailing off at the end.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": {
+    "superseded": "e1-0-maddie@r1"
+   },
+   "dry": "voices/e1-0-maddie-r1a.wav",
+   "fx": "phone",
+   "filter": "highpass=f=380,highpass=f=380,lowpass=f=3000,lowpass=f=3000,volume=6dB,asoftclip=type=atan,acrusher=bits=10:mix=0.1,volume=-10dB"
+  }
+ },
+ "superseded": {
+  "e1-0-maddie@r1": {
+   "speaker": "maddie",
+   "frame": "E01",
    "text": "...you go.",
    "voice": "Aoede",
    "file": "voices/e1-0-maddie-phone.wav",
@@ -15,7 +78,8 @@
    "filter": "highpass=f=380,highpass=f=380,lowpass=f=3000,lowpass=f=3000,volume=6dB,asoftclip=type=atan,acrusher=bits=10:mix=0.1,volume=-10dB",
    "from": "D d9-1-maddie take b, cut at 1.715s (gap before 'you')",
    "verified": true,
-   "why": "derived: not voiced separately (scene.json `from`)"
+   "why": "derived: not voiced separately (scene.json `from`)",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json ld9-1, le1-0): 'Mind how you go.' moved whole from D16 to E01 and voiced on its own; the split tail is retired"
   }
  }
 }

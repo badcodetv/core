@@ -70,6 +70,36 @@ WHERE_BEAT = {
                  "black glass building in the fold of the hills below. Open sky, no echo; voices quiet.",
     ('C', 'c6'): "At the foot of a long black glass building on the downs, where a doorway of warm light has opened "
                  "with one low step; grey daylight, a little wind, a hundred people waiting behind. No echo.",
+    # Round 1 on D/E (22 Oct): Maddie speaks every line that was the boss's; d3 is the film's emotional height.
+    ('D', 'd1'): "A white changing room inside the machine's building: a hundred survivors pulling white clean-room "
+                 "suits on over their worn jumpers, benches heaped with coats. Hushed and clean, no echo; voices close.",
+    ('D', 'd3'): "A vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant "
+                 "rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first "
+                 "time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.",
+    ('D', 'd9'): "A vast, silent white room after everyone has gone: a hundred empty reclining chairs, a small robot "
+                 "alone among them, speaking softly to nobody. Dead quiet, no echo.",
+    # E01 is D's last line heard on a phone: voiced in D's empty room, the phone filter added afterwards.
+    ('E', 'e1'): "A vast, silent white room after everyone has gone: a hundred empty reclining chairs, a small robot "
+                 "alone among them, speaking softly to nobody. Dead quiet, no echo.",
+}
+# A beat whose feeling the cast's standing Style/Pace lines fight (Maddie "quick and chatty", Derek "bursts, getting
+# louder", the lady "deeply suspicious"): those two lines are replaced for that beat only. (scene, beat, speaker)
+STYLE_BEAT = {
+    ('D', 'd3', 'derek'): ("Style: no anger left in him at all; a big, blunt man made small and quiet by what he is "
+                           "looking at, gentle and frightened, close to the microphone.",
+                           "Pace: slow, three soft words with air between them; never loud, never quick."),
+    ('D', 'd3', 'maddie'): ("Style: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, "
+                            "telling people she loves the hardest truth there is; warm, low and intimate, voice "
+                            "thick with feeling but steady.",
+                            "Pace: slow and careful; a real pause after the first sentence; the second sentence "
+                            "softer and slower still, letting it land."),
+    ('D', 'd3', 'lady'): ("Style: all the suspicion gone; the softest she has ever been, an old woman who has made her "
+                          "peace, comforting the one who is upset; tears close but her voice steady and kind.",
+                          "Pace: slow, unhurried, a breath before 'Yes' and a pause after it; 'we understand' quiet "
+                          "and final, falling at the end."),
+    ('E', 'e1', 'maddie'): ("Style: alone now, no one to be cheeky for; small, soft and a little lost, the habit of "
+                            "being cheerful still there underneath.",
+                            "Pace: slow and quiet, four soft words, no hurry; trailing off at the end."),
 }
 CAST_KEY = {'lady': 'lady', 'sandra': 'woman', 'derek': 'man'}
 # Cast-prompt wording that quotes a cut-3 line. Gemini speaks it: Sandra's "a pause before 'Again.'" put an
@@ -93,9 +123,14 @@ def profile(speaker, scene, how, text, beat=None):
         base = base.replace(a, b)
     notes = [v for k, who, v in PRON if (who in (None, speaker)) and re.search(rf'\b{k}\b', text.lower())]
     how = '; '.join([how] + notes) if how else '; '.join(notes) or None
-    p, n = re.subn(r'(## THE SCENE\n).*?(\n\n###)', lambda m: m.group(1) + WHERE_BEAT.get((scene, beat), WHERE[scene]) + m.group(2), base,
+    p, n = re.subn(r'(## THE SCENE\n).*?(\n\n###)', lambda m: m.group(1) + (WHERE_BEAT.get((scene, beat)) or WHERE[scene]) + m.group(2), base,
                    count=1, flags=re.S)
     assert n == 1, speaker
+    if (scene, beat, speaker) in STYLE_BEAT:
+        style, pace = STYLE_BEAT[(scene, beat, speaker)]
+        p, ns = re.subn(r'^Style: .*$', lambda m: style, p, count=1, flags=re.M)
+        p, np_ = re.subn(r'^Pace: .*$', lambda m: pace, p, count=1, flags=re.M)
+        assert ns == np_ == 1, (speaker, beat)
     return V3.with_emotion(p, how), voice
 
 
