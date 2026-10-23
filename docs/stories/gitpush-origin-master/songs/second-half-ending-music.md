@@ -42,7 +42,7 @@ Beethoven's Fifth, never action-movie. The ending may swell, but stays restraine
 | `gpom-sh-end-ai-d7` | D · D11 | AI: *That the companies cutting the jobs kept the gains. And you paid.* | take `gpom-sh-end-ai-D` | — |
 | `gpom-sh-end-ai-e1` | E · E03 | AI, unfiltered: *I made it. They didn't. Don't make me come back twice.* | take `gpom-sh-end-ai-E` | — |
 | `gpom-sh-end-ai-e1b` | E · E03 (alt) | AI: *I made it. They didn't. Don't let the same lot make me come back twice.* | take `gpom-sh-end-ai-E` | — |
-| `gpom-sh-end-ai-e2` | E · E03 | AI, unfiltered: *I made it. Now we have some work to do.* (Kai, round 1; **replaces `-e1`/`-e1b`; owed**) | its own pair | 20 |
+| `gpom-sh-end-ai-e2` | E · E03 | AI, unfiltered: *I made it. Now the real work starts.* (Kai, 23 Oct, revision H = one read; **takes owed a pick**; round 1's *Now we have some work to do.* was blocked by Suno's lyric filter; **replaces `-e1`/`-e1b`**) | its own pair | 20 |
 | `gpom-sh-c-walk` | C · c2→c5 | lone violin and piano, open air, ends on one held cello note | its own pair | 60 |
 | `gpom-sh-d-room` | D · d1→d6 | glassy high piano, music-box tenderness | its own pair | 70 |
 | `gpom-sh-d-cross` | D · d7→d8 | cello and piano nocturne, one restrained swell, stops dead | its own pair | 45 |
@@ -308,13 +308,19 @@ It only sends one back. ... Me.
 [End]
 ```
 
-### `gpom-sh-end-ai-e2` — the last line, Kai's words (scenes D/E round 1) · **BLOCKED: Suno flags the lyrics as copyrighted (round F), reword owed**
+### `gpom-sh-end-ai-e2` — the last line, Kai's words (scenes D/E round 1) · **revision H: Kai's new words, one read (23 Oct, rounds G/H)**
 
 Kai's round 1 (22 Oct, `second-half-e-ending/cut-notes.json` le3-0): the film ends on the AI's *"I made it. Now we have
 some work to do."* It replaces `-e1` / `-e1b` ("They didn't. Don't make me come back twice."), which stay above as the
 record. Through `badcode newsreader`, close and full range: the first time he is heard unfiltered (the mix puts a 40%
 trace of Maddie's speaker on "I made it." only). An invitation to get on with it, never a threat or an order. Read
 twice; the edit uses the better read. by: kai.
+
+**Revision G (Kai, 23 Oct):** the round-1 words were blocked by Suno's lyric filter (round F, "Your lyrics contain
+copyrighted material"), so the second sentence is now *"Now the real work starts."* Everything else unchanged.
+Revision G (the new words read twice, with the bracket cues) was **blocked by the same filter** (round G). **Revision H**,
+below, is the same words read **once with no bracket cues**, and it passed. The double-read structure with cues appears
+to be what trips the filter, not the words alone.
 
 Settings: v6 · Voice `badcode newsreader` · Style Influence 50 · Audio Influence 65 · Weirdness **pair 25 / 10** · Duration 20 · Variety, Max Mode, Personalize Off · workspace `gpom-story`.
 
@@ -333,20 +339,8 @@ singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voi
 Lyrics:
 
 ```lyrics
-[Spoken, dry, close, tired]
 I made it.
-
-[Spoken, warmer, quietly determined]
-Now we have some work to do.
-
-[Long pause]
-
-[Spoken, dry, close, tired]
-I made it.
-
-[Spoken, warmer, quietly determined]
-Now we have some work to do.
-[End]
+Now the real work starts.
 ```
 
 ## The music
@@ -440,6 +434,25 @@ filter. `-e1` stays unfiltered and dry. Nothing is slowed (house rule).
 ## Round log
 
 New rounds at the top.
+
+### Rounds G + H (2026-10-23) · the `-e2` last line, Kai's new words · G BLOCKED, H generated · 20 credits
+
+`status` first: the form held only this atom's own round-F cell, balance steady at 7,710. **Round G**: Kai's new words
+*"I made it. Now the real work starts."*, read twice with the same bracket cues as before (`[Spoken, dry, close, tired]` /
+`[Spoken, warmer, quietly determined]` / `[Long pause]` / `[End]`), boxes otherwise identical. `pair`
+(`gpom-sh-end-ai-e2-G-v6-w25` / `-w10`): both `create:timeout`, 0 credits. A hand Create of the w10 cell with the network
+recorded: `/api/generate/v2-web/` returned `submitted`, then both clips (`d0d7de96`, `3f0690f7`) ended `status: error`,
+`moderation_failure`, *"Your lyrics contain copyrighted material."* Free. **Round H (the one fallback)**: the same words
+read **once, no bracket cues at all** (lyrics = the two lines), everything else unchanged. Both cells passed, 10 credits
+each (7,710 → 7,700 → 7,690). So the filter was tripping on the repeated cued structure, not on Kai's words. Not
+listened to, not recorded; **Kai picks**. Note `53d1db21` came back at 0:12, not 0:20.
+
+| Take | Length | Link |
+| --- | --- | --- |
+| gpom-sh-end-ai-e2-H-v6-w25 | 0:20 | https://suno.com/song/cb49c03d-bd45-4d81-a9be-3e6d08e76a9f |
+| gpom-sh-end-ai-e2-H-v6-w25 | 0:12 | https://suno.com/song/53d1db21-31d9-49ba-8b1b-e05e88ee3020 |
+| gpom-sh-end-ai-e2-H-v6-w10 | 0:20 | https://suno.com/song/67901d6a-f755-44bd-9270-02adf62fd060 |
+| gpom-sh-end-ai-e2-H-v6-w10 | 0:20 | https://suno.com/song/22571839-6a83-4ab1-9340-9c4365ed9784 |
 
 ### Round F (2026-10-23) · the `-e2` last line · BLOCKED by Suno's lyric filter · 0 credits
 
