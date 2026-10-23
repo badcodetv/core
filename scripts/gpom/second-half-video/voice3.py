@@ -313,7 +313,8 @@ def main_a1():
 # bunker door. Two spoken forms, two takes each: documented tags (a, b) and a bare "..." (c, d). Whisper checks
 # every take; the pick is heard exactly, then a real pause inside (0.4-1.8 s), then not flagged, then slower.
 #   voice3/a3/12-0-bot-<t>.wav  +  scenes/second-half-a-killbots/voices.json
-A3_TEXT = 'Good job, boss. That was close.'
+A3_TEXT = 'Good job, boss. That was close.'  # as voiced
+A3_FINAL = 'Good job. That was close.'  # Kai at4138 (round 3b): drop 'boss' ("we've said boss too many times"); cut, not re-voiced
 A3_FORMS = {'ab': '[sighs] Good job, boss. [long pause] That was close.', 'cd': 'Good job, boss... That was close.'}
 A3_WHERE = ("Outside the steel blast door of a Cold War bunker under a Wiltshire hill, grey daylight, wind. The kill "
             "bots that were about to break in have just stood down and are leaving one by one. A small robot speaks "
@@ -327,7 +328,8 @@ A3_EMOTION = 'overwhelming relief, shaky, fond; she nearly lost them'
 # full of breaths): a = the [sighs] tag comes out as a soft "Whew.", then a slow, stretched "Good job, boss" (2.4 s);
 # its pause is cut from 4.25 s to ~1.85 s (one breath kept) at silences found by silencedetect -40 dB.
 A3_PICK = 'a'
-A3_KEEP = [(0.0, 5.95), (8.35, None)]
+# 'boss' is 3.85-4.47 s (whisper on the segment, 20 ms energy trace: -63 dB at 3.80, -59 dB at 4.50): cut 3.80-4.50.
+A3_KEEP = [(0.0, 3.80), (4.50, 5.95), (8.35, None)]
 A3_WHY = ("[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the "
           "slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' "
           "Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. "
@@ -385,13 +387,14 @@ def main_a3():
                     parts + ''.join(f'[p{k}]' for k in range(len(keep))) + f'concat=n={len(keep)}:v=0:a=1[o]',
                     '-map', '[o]', str(tight)], check=True)
     th = E.whisper([tight]).get(str(tight))
-    why = A3_WHY + (f" Tightened copy {tight.name} ({V.duration(tight):.2f} s) keeps {keep}; whisper hears it as "
+    why = A3_WHY + (" Round 3b (Kai at4138): 'boss' cut out (3.80-4.50 s), the pause after 'Good job' stays ~1.85 s." +
+                    f" Tightened copy {tight.name} ({V.duration(tight):.2f} s) keeps {keep}; whisper hears it as "
                     f"'{th['text'] if th else ''}'. Nobody has listened.")
     doc = {'about': 'Scene A lines voiced in Gemini TTS after round 2 (scripts/gpom/second-half-video/voice3.py '
                     '--round A3). Earlier scene A takes are in the media folder\'s voice3/a1.json. Files are relative '
                     'to the media folder; the boss is Suno and is not here.',
            'media': str(OUT3),
-           'lines': {'12-0-maddie': {'speaker': 'maddie', 'beat': '12', 'text': A3_TEXT, 'voice': 'Aoede',
+           'lines': {'12-0-maddie': {'speaker': 'maddie', 'beat': '12', 'text': A3_FINAL, 'voiced': A3_TEXT, 'voice': 'Aoede',
                                      'note': "Kai at4098: replaces the boss's line 4; 'squeeze as much emotion into "
                                              "that as possible'",
                                      'file': f"a3/{tight.name}", 'duration': round(V.duration(tight), 2),

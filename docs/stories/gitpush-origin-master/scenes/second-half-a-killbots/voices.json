@@ -5,15 +5,20 @@
   "12-0-maddie": {
    "speaker": "maddie",
    "beat": "12",
-   "text": "Good job, boss. That was close.",
+   "text": "Good job. That was close.",
+   "voiced": "Good job, boss. That was close.",
    "voice": "Aoede",
    "note": "Kai at4098: replaces the boss's line 4; 'squeeze as much emotion into that as possible'",
    "file": "a3/12-0-bot-a-tight.wav",
-   "duration": 7.64,
+   "duration": 6.94,
    "from": "a3/12-0-bot-a.wav",
    "keep": [
     [
      0.0,
+     3.8
+    ],
+    [
+     4.5,
      5.95
     ],
     [
@@ -27,7 +32,7 @@
    ],
    "heard": "Good job boss. That was close.",
    "verified": true,
-   "why": "[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. b: also 'Whew!' (exclaimed), pause 5.5 s. c: no sigh, clean, pause 3.75 s (the clean alternative). d: an unscripted 'Oh' inside the pause (whisper on the gap segment). Tightened copy 12-0-bot-a-tight.wav (7.64 s) keeps [(0.0, 5.95), (8.35, None)]; whisper hears it as 'Good job, boss. That was close.'. Nobody has listened.",
+   "why": "[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. b: also 'Whew!' (exclaimed), pause 5.5 s. c: no sigh, clean, pause 3.75 s (the clean alternative). d: an unscripted 'Oh' inside the pause (whisper on the gap segment). Round 3b (Kai at4138): 'boss' cut out (3.80-4.50 s), the pause after 'Good job' stays ~1.85 s. Tightened copy 12-0-bot-a-tight.wav (6.94 s) keeps [(0.0, 3.8), (4.5, 5.95), (8.35, None)]; whisper hears it as 'Oh, good job. That was close.'. Nobody has listened. (Whisper on the parts: 0-1.5 s is 'Whew.', the sigh; 1.5 s on is 'Good job. That was close.' exactly. Whole, it writes the sigh as 'Oh,'.)",
    "takes": [
     {
      "take": "a",

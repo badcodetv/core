@@ -3,14 +3,14 @@
  "round": 3,
  "plan": [
   {
-   "h": "Round 3 done (23 Oct): your round-2 notes, rebuilt. 2:54 (was 2:55)",
+   "h": "Round 3 done (23 Oct), plus 3b: your round-2 notes and your last note, rebuilt. 2:54 (was 2:55)",
    "items": [
     "MUSIC (at51): your Premiere music track is yours: the Premiere version leaves the M0 radio out and touches nothing you already have. The preview keeps the radio.",
     "BEAT 1 (at1506): V13 re-made without Maddie (cut3-V13r3): the tank stays far off under the tower the whole 8 s; it plays the same 3.5 s slot.",
     "9a (at2595): V1 now starts at 1.375 s, after the jump where the tank swaps direction; 4 s long, so everything after 9a is 1 s sooner.",
     "BEAT 11 (at3398): boss line 2 re-recorded ('Oh. And they've activated their firewalls.'): one clean take, no dropouts in its level trace, 4.4 s (was 6.4 s; the pause after 'Oh' is shorter), so the call is 2 s shorter.",
-    "BEAT 12 (at4098): the boss's last line is replaced by MADDIE: 'Good job, boss.' (pause) 'That was close.', voiced for relief, shaky and fond (take a of 4, pause tightened; take c is the clean alternative).",
-    "Checked: mix -16.1 LUFS, true peak -1.8 dBFS; whisper hears boss line 2 and Maddie's new line word for word in the mix; frames looked at (V13r3 has no Maddie, 9a has no direction jump). The preview fails the QC levels check as rounds 1 and 2 did (x264 dips blacks in the HUD panels; review file only). Nobody has listened."
+    "BEAT 12 (at4098 + at4138): the boss's last line is replaced by MADDIE: 'Good job.' (pause) 'That was close.' ('boss' cut out of the take, round 3b), voiced for relief, shaky and fond (take a of 4, pause tightened; take c is the clean alternative).",
+    "Checked: mix -16.1 LUFS, true peak -1.8 dBFS; whisper hears boss line 2 and Maddie's new line as 'Good job. That was close.' in the mix; frames looked at (V13r3 has no Maddie, 9a has no direction jump). The preview fails the QC levels check as rounds 1 and 2 did (x264 dips blacks in the HUD panels; review file only). Nobody has listened."
    ]
   },
   {
@@ -87,7 +87,8 @@
   "at1506": "Done: V13 re-made without Maddie (cut3-V13r3). The tank stays far off under the church tower for the whole clip; it plays the same 3.5 s slot.",
   "at2595": "Found it: V1 swaps which way the tank faces in one frame at 1.33 s (a model jump). It now starts at 1.375 s, just after the jump, and plays 4 s (was 5): the pass, her jolt and the dust are all still in; 9b comes 1 s sooner. The chase music re-aims itself so its break-off still lands on STAND DOWN. Same in-point in the Premiere plan.",
   "at3398": "Done: re-recorded ('Oh. And they've activated their firewalls.'). The new take is clean all the way through (no dropouts in its level trace) and whisper hears it word for word in the mix. It is 2 s shorter (the pause after 'Oh' is tighter), so the call is 2 s shorter.",
-  "at4098": "Done: the boss's zero-day line is gone; Maddie says 'Good job, boss.' (pause) 'That was close.' Four takes in her voice (Aoede, Bristol) with her usual cheeky, chatty direction switched off for this line and replaced by shaky, fond relief, close to tears. All four are heard word-perfect. My pick is take a: the sigh tag comes out as a soft 'Whew.', then the slowest, most stretched 'Good job, boss'; its long pause (4.25 s of breathing) is cut to about 1.85 s with one breath kept. Take c is the clean one with no sigh, if the 'Whew' is too much."
+  "at4098": "Done: the boss's zero-day line is gone; Maddie says 'Good job, boss.' (pause) 'That was close.' Four takes in her voice (Aoede, Bristol) with her usual cheeky, chatty direction switched off for this line and replaced by shaky, fond relief, close to tears. All four are heard word-perfect. My pick is take a: the sigh tag comes out as a soft 'Whew.', then the slowest, most stretched 'Good job, boss'; its long pause (4.25 s of breathing) is cut to about 1.85 s with one breath kept. Take c is the clean one with no sigh, if the 'Whew' is too much.",
+  "at4138": "Done: 'boss' is cut out of the same take (no re-voice), so it's now 'Good job.' (pause) 'That was close.' with the same emotion and the same ~1.85 s pause. Whisper hears exactly 'Good job. That was close.' in the mix. The soft 'Whew.' at the start is still there until you rule on it (take c is the version without it)."
  },
  "kai_round1": {
   "at3521": {
@@ -256,5 +257,12 @@
    "tc": "00:02:50:18"
   }
  },
- "replies_round2": {}
+ "replies_round2": {},
+ "kai_round3b": {
+  "at4138": {
+   "beat": "12",
+   "tc": "00:02:52",
+   "note": "nearly perfect… I think 'Good job. That was close.' I don't think we need the boss. We've said boss too many times. Apart from that this whole thing's perfect."
+  }
+ }
 }

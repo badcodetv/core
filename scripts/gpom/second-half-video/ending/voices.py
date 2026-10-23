@@ -93,13 +93,23 @@ STYLE_BEAT = {
                             "thick with feeling but steady.",
                             "Pace: slow and careful; a real pause after the first sentence; the second sentence "
                             "softer and slower still, letting it land."),
-    ('D', 'd3', 'lady'): ("Style: all the suspicion gone; the softest she has ever been, an old woman who has made her "
-                          "peace, comforting the one who is upset; tears close but her voice steady and kind.",
-                          "Pace: slow, unhurried, a breath before 'Yes' and a pause after it; 'we understand' quiet "
-                          "and final, falling at the end."),
+    # Reel round 1 (Kai at2108/at2566, 23 Oct): her new line is NOT comforting. Stern, grave, as if her life depends on it.
+    ('D', 'd3', 'lady'): ("Style: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is "
+                          "choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every "
+                          "word meant, steel under the age in her voice; no tears, no smile.",
+                          "Pace: measured and heavy; a breath after 'Look,'; a short pause after 'humanity'; the last clause, "
+                          "'I want to take that chance', slow and final, falling at the end."),
     ('E', 'e1', 'maddie'): ("Style: alone now, no one to be cheeky for; small, soft and a little lost, the habit of "
                             "being cheerful still there underneath.",
                             "Pace: slow and quiet, four soft words, no hurry; trailing off at the end."),
+}
+# A beat whose take lost the speaker's accent (reel round 1, Kai at1581: d1 "doesn't sound like Maddie, it's not the
+# West Country accent we heard before"). The cast profile's Accent line is replaced for that beat only.
+ACCENT_BEAT = {
+    ('D', 'd1', 'maddie'): ("Accent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds "
+                            "everywhere else in the film: the warm rolled West Country burr, round open vowels, the "
+                            "Bristolian lilt; being polite makes the accent broader, never posher. Never American, never "
+                            "Received Pronunciation, never neutral."),
 }
 CAST_KEY = {'lady': 'lady', 'sandra': 'woman', 'derek': 'man'}
 # Cast-prompt wording that quotes a cut-3 line. Gemini speaks it: Sandra's "a pause before 'Again.'" put an
@@ -131,6 +141,9 @@ def profile(speaker, scene, how, text, beat=None):
         p, ns = re.subn(r'^Style: .*$', lambda m: style, p, count=1, flags=re.M)
         p, np_ = re.subn(r'^Pace: .*$', lambda m: pace, p, count=1, flags=re.M)
         assert ns == np_ == 1, (speaker, beat)
+    if (scene, beat, speaker) in ACCENT_BEAT:
+        p, na = re.subn(r'^Accent: .*$', lambda m: ACCENT_BEAT[(scene, beat, speaker)], p, count=1, flags=re.M)
+        assert na == 1, (speaker, beat)
     return V3.with_emotion(p, how), voice
 
 

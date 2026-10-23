@@ -289,7 +289,7 @@ BEAT0 = [
 def scene_a():
     c = Cut('A', 'gpom-second-half-A-rough5', 'Cut 3 A Timeline', 'GPOM second half · cut 3 · scene A: the kill bots',
             'Scene A, round 3: your round-2 notes (V13 without Maddie, the 9a jostle cut out, boss line 2 re-recorded, '
-            'Maddie\'s "Good job, boss. That was close." in place of his last line) on top of every note and pick so far, beats 0-12, Maddie on the high street '
+            'Maddie\'s "Good job. That was close." in place of his last line) on top of every note and pick so far, beats 0-12, Maddie on the high street '
             'to the stand-down at the bunker door. Play it, click any beat, clip, line or sound, and leave a note in its '
             "yellow slip. Notes save as you type. Tell Claude when you're done.")
     m = c.m
@@ -505,7 +505,7 @@ def scene_a():
     s12 = t
     b = c.beat('12', 'The stand-down', s12, act='The gate',
                see='On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green STAND DOWN. '
-                   'Lined up at the door, they file away one at a time. Then Maddie, shaky with relief: "Good job, boss." '
+                   'Lined up at the door, they file away one at a time. Then Maddie, shaky with relief: "Good job." '
                    '"That was close."')
     v4 = V / 'cut3-V4.mp4'
     peace = 3.6
@@ -516,15 +516,15 @@ def scene_a():
     c.pic(V / 'cut3-V10r.mp4', 0, s12 + 7.0, s12 + 12.5, '12')
     s_v3 = fr(s12 + 12.5)
     tk = Take(pathlib.Path(A3['media']) / MADDIE12['file'])
-    e = c.say('vox-maddie', tk, s_v3 + LEAD, '12', 'beat 12 Maddie: Good job, boss. That was close.')
-    c.line(b, 0, 'bot', s_v3 + LEAD, e - s_v3 - LEAD, 'Good job, boss. [pause] That was close.', 'kai')
+    e = c.say('vox-maddie', tk, s_v3 + LEAD, '12', 'beat 12 Maddie: Good job. That was close.')
+    c.line(b, 0, 'bot', s_v3 + LEAD, e - s_v3 - LEAD, 'Good job. [pause] That was close.', 'kai')
     end12 = fr(e + TAIL + 0.4)
     c.pic(v3, 3.0, s_v3, end12, '12')
     c.flags.append('Beat 12: the HUD now reads STAND DOWN (status RETURN TO PATROL), drawn by hud.py in ffmpeg. V10r '
                    '(Kai\'s pick A) plays 0-5.5 s: they file away one at a time; cut before the nearest bot grows its '
                    'long gun barrel (~5-7 s). They still never visibly turn (the still already has them facing away).')
-    c.flags.append('Beat 12 (round 3, Kai at4098): the boss\'s last line is gone; Maddie says "Good job, boss." (pause) '
-                   '"That was close." Take a of four (voices.json): her cheeky Style/Pace replaced for this line, a soft '
+    c.flags.append('Beat 12 (round 3, Kai at4098): the boss\'s last line is gone; Maddie says "Good job." (pause) "That was '
+                   'close." (round 3b, Kai at4138: "boss" cut out of the take, not re-voiced). Take a of four (voices.json): her cheeky Style/Pace replaced for this line, a soft '
                    '"Whew." from the [sighs] tag, its 4.25 s pause cut to ~1.85 s. Take c is the clean one without the sigh.')
     m['s12'], m['peace'], m['s_v3'], m['l12'] = s12, fr(s12 + peace), s_v3, (s_v3 + LEAD, e)
     t = c.close(b, end12)
