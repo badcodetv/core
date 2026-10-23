@@ -741,12 +741,10 @@ def scene_b():
         c.line(b, i, 'bot', tt, e - tt, LINES[('15', i)]['text'], 'kai')
         tt = e + GAP
     end = fr(max(s + 4.0, tt - GAP + TAIL))
-    # Kai's note at772 (round 1): Maddie OUTSIDE the doors, in the beat-17 doorway shot. Still b15-hello-outside-2-a,
-    # animated (Omni 1.1 Flash, 8 s). She rolls forward through the doors from about 1 s, so she ends inside.
-    c.pic(V / 'cut3-B15r3-hello-outside.mp4', 0.0, s, end, '15')
-    c.flags.append('Beat 15 (new, Kai\'s pick 2-a animated): the gust and the bunting work, but Maddie rolls forward '
-                   'through the doors from about 1 s and ends about 2 m inside the corridor, which undoes the '
-                   '"outside" note. A re-roll or a freeze is owed.')
+    # Kai's note at772 (round 1): Maddie OUTSIDE the doors, in the beat-17 doorway shot. Kai's pick (23 Oct, picks
+    # page b2-15): v1, still b15-hello-outside-2-a with its bunting made small and calm, animated with her staying on
+    # the threshold (Omni 1.1 Flash, 8 s). She hardly moves, so the ping-pong past 8 s does not show.
+    c.pic(V / 'cut3-B15r4-v1-calm-bunting.mp4', 0.0, s, end, '15')
     m['s15'] = s
     t = c.close(b, end)
 
@@ -835,14 +833,14 @@ def scene_b():
     m['slam'] = slam
     t = c.close(b, slam)
 
-    # ---- 17b: the door slams; Maddie turns and rolls away (Kai, 23 Oct). No shot yet: a held placeholder.
+    # ---- 17b: the door slams; Maddie rolls away down the hill (Kai, 23 Oct). Kai's pick (picks page b2-17b): v1,
+    # still b17b-turn-away-2-a with calm bunting; the re-roll b17b-v1-r2, where she drives down towards us in her own
+    # tracks and passes out of frame at about 7.3 s, leaving the empty hill. All 8 s play, then hard cut to scene C.
     b = c.beat('17b', 'Maddie turns away', t, act='The meeting',
-               see='The door slams. Maddie turns around and rolls away from the shut bunker door: the humans will '
-                   'have time. Then hard cut to scene C.')
-    hold = 4.5
-    c.pic(placeholder(c), 0.0, t, t + hold, '17b')
-    c.flags.append('Beat 17b is a HELD PLACEHOLDER (a still of Maddie at the shut door from V5, with a caption): the turn-away '
-                   'shot is at the stills stage (cut3/B/stills/b17b-*), awaiting Kai\'s pick before any video credit.')
+               see='The door slams. Maddie rolls away from the shut bunker door, down the hill towards us and out of '
+                   'frame: the humans will have time. Then hard cut to scene C.')
+    hold = 8.0
+    c.pic(V / 'shb-b17b-v1-r2-shb-b17b-v1-calm-bunting.mp4', 0.0, t, t + hold, '17b')
     c.flags.append('Beat 17: everything after the old lady\'s second line plays on V11, ping-ponged (about '
                    f'{t - v11_b:.0f} s): her new lines (17-6, 8, 10, 13) are on her back, not lip-synced; new '
                    'coverage of her face is owed if Kai wants it.')
@@ -851,18 +849,6 @@ def scene_b():
     t = c.close(b, t + hold)
     c.total = t
     return c
-
-
-def placeholder(c):
-    """A held frame of Maddie settled at the shut door (V5 at 7.5 s, where 14a ends) with a caption, for beat 17b."""
-    out = c.vdir / 'placeholder-17b-turn-away.mp4'
-    txt = "PLACEHOLDER  -  Maddie turns and rolls away (shot owed)"
-    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', '7.5', '-i', str(V / 'cut3-V5.mp4'), '-frames:v', '1',
-                    '-vf', f"scale=1280:720,drawtext=text='{txt}':x=(w-tw)/2:y=h-60:fontsize=28:fontcolor=white:"
-                    "box=1:boxcolor=black@0.6:boxborderw=10", str(c.vdir / 'placeholder-17b.png')], check=True)
-    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-loop', '1', '-i', str(c.vdir / 'placeholder-17b.png'),
-                    '-t', '6', '-vf', f'fps={FPS},format=yuv420p', *ENC, str(out)], check=True)
-    return out
 
 
 def audio_b(c):
@@ -914,13 +900,12 @@ def audio_b(c):
     fx('sfx-wind', wind, s, en['17'] - s, src_in=30, rms=-44, fi=0.5, fo=0.6, what='wind through the open doors')
     for k in np.arange(s + 9.0, en['17'] - 3.0, 13.0):  # every 13 s through the talk
         fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', k, rms=-36, what='servo: she nudges')
-    # ---- 17b: the slam (fs406197, its hit at 0.30 s, lands on the cut to outside), then the downs: wind, her beacon,
-    # a servo as she turns, and her wheels starting off
+    # ---- 17b: the slam (fs406197, its hit at 0.30 s, lands on the cut to outside), then the downs: wind, her wheels
+    # coming closer as she drives past us (out of frame at about 7.3 s), her beacon
     t = m['turn']
     fx('sfx-door', SFX / 'fs406197-blastdoor-metal-slam.mp3', t - 0.30, rms=-20, peak=-3, fo=0.4, what='the door slams')
     fx('sfx-wind', wind, t, en['17b'] - t, src_in=40, rms=-34, fi=0.05, fo=0.6, what='wind on the downs, outside')
-    fx('sfx-maddie', MS / 'derived-maddie-servo-turn-b.wav', t + 1.2, rms=-32, what='servo: she turns around')
-    fx('sfx-maddie', MS / 'derived-maddie-wheels-start.wav', t + 2.2, rms=-30, what='wheels: she rolls away')
+    loop_wheels(fx, 'sfx-maddie', t + 0.3, 7.0, rms=-30, fi=2.5, fo=0.6, what='wheels: she drives past us')
     fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', t + 3.4, rms=-36, what='beacon blip')
     c.flags.append('Beat 17b: the door slam is fs406197 (CC0, already credited in sfx/CREDITS.md), placed so its hit '
                    'lands on the cut; the hello beep under "Hello!" in 15 is my addition to Maddie\'s sound kit.')

@@ -3,6 +3,14 @@
  "round": 1,
  "plan": [
   {
+   "h": "Round 2 (23 Oct): your picks are in. 2:27 (was 2:23)",
+   "items": [
+    "BEAT 15: your pick v1 (calm bunting): Maddie waits just outside on the threshold in your doorway shot and does not roll in; her beacon pulses, the old lady holds still.",
+    "17b: your pick v1 (calm bunting), the stronger re-make: after the slam she drives down the hill towards us in her own wheel tracks and passes out of frame at about 7.3 s, leaving the empty hill and the shut door; then hard cut to C. All 8 s play, so B is 3.5 s longer.",
+    "SOUND on 17b: wind, her wheels coming closer as she passes, a beacon blip. Nobody has listened."
+   ]
+  },
+  {
    "h": "Round 1b (23 Oct): your still picks animated",
    "items": [
     "BEAT 15: your pick 2-a is animated and in the cut: a gust blows grass and dust in through the doors and her bunting flaps hard. But she rolls forward through the doors and ends about 2 m inside by 1.5 s, which is exactly what your note was against. Fix it with a re-roll (about 12 credits) or by freezing the first second.",
@@ -72,5 +80,16 @@
    "15": "cut3-B15r3-hello-outside.mp4 (Omni 1.1 Flash, 8 s, count 1, camera locked): IN the cut. Flaw: Maddie rolls through the doors from ~1 s and ends ~2 m inside.",
    "17b": "generated (credits spent) but MIS-HARVESTED: the MCP returned the beat 15 clip again (same mediaId and md5). The render is in Flow project 20b33d98; the placeholder card stays until it is recovered or re-rolled."
   }
+ },
+ "picks_round2": {
+  "picked": "2026-10-23 (Kai, via team-lead; picks page slots b2-15 and b2-17b)",
+  "15": "v1 calm bunting: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-B15r4-v1-calm-bunting.mp4 (IN the cut)",
+  "17b": "v1 calm bunting; the stronger re-roll is in the cut: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-b17b-v1-r2-shb-b17b-v1-calm-bunting.mp4 (she drives down towards us in her own tracks and out of frame at ~7.3 s)",
+  "not_picked": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-b15-v2-shb-b15-v2-no-bunting.mp4",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-b17b-v1-shb-b17b-v1-calm-bunting.mp4 (weak: barely moves)",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-b17b-v2-shb-b17b-v2-no-bunting.mp4"
+  ],
+  "why_bunting": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' The canon rule is to keep the torn bunting; this is the calm, small version of it."
  }
 }

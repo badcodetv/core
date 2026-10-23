@@ -1,5 +1,5 @@
 {
- "spent": 636,
+ "spent": 684,
  "jobs": [
   {
    "key": "V6-1",
@@ -223,6 +223,30 @@
    "cost": 12,
    "at": "2026-10-23T17:43:00Z",
    "note": "scene B beat 15 bunting test v2: MIS-HARVESTED, the MCP returned the v1 clip again (same mediaId and md5); render left in Flow project 20b33d98; house price"
+  },
+  {
+   "key": "shb-b15-v2",
+   "cost": 12,
+   "at": "2026-10-23T16:50:00Z",
+   "note": "scene B bunting test (Kai 23 Oct, no budget cap); scripts/scene/run.mts, Omni 1.1 Flash, 8 s, count 1, project 20b33d98; house price, not read off Flow; shb-b15-v2-shb-b15-v2-no-bunting.mp4"
+  },
+  {
+   "key": "shb-b17b-v1",
+   "cost": 12,
+   "at": "2026-10-23T16:50:00Z",
+   "note": "scene B bunting test (Kai 23 Oct, no budget cap); scripts/scene/run.mts, Omni 1.1 Flash, 8 s, count 1, project 20b33d98; house price, not read off Flow; shb-b17b-v1-shb-b17b-v1-calm-bunting.mp4"
+  },
+  {
+   "key": "shb-b17b-v2",
+   "cost": 12,
+   "at": "2026-10-23T16:50:00Z",
+   "note": "scene B bunting test (Kai 23 Oct, no budget cap); scripts/scene/run.mts, Omni 1.1 Flash, 8 s, count 1, project 20b33d98; house price, not read off Flow; shb-b17b-v2-shb-b17b-v2-no-bunting.mp4"
+  },
+  {
+   "key": "shb-b17b-v1-r2",
+   "cost": 12,
+   "at": "2026-10-23T16:50:00Z",
+   "note": "scene B bunting test (Kai 23 Oct, no budget cap); scripts/scene/run.mts, Omni 1.1 Flash, 8 s, count 1, project 20b33d98; house price, not read off Flow; shb-b17b-v1-r2-shb-b17b-v1-calm-bunting.mp4"
   }
  ],
  "keys": [
