@@ -1,7 +1,7 @@
 {
  "scene": "second-half-b-the-door",
  "beat": "17",
- "ruled": "Kai, 2026-10-23: the debate folds into the end of B; no separate debate scene; the vote happens off screen between B and C",
+ "ruled": "Kai, 2026-10-23: the debate folds into the end of B; no separate debate scene; the vote happens off screen between B and C | 23 Oct round 2: Kai's line edits applied (conscious ones; 'Again?'; big pauses; 'we won't fuck it up'; rushed 'Come back tomorrow'; door slam; Maddie turns away).",
  "lines": [
   {
    "who": "lady",
@@ -29,7 +29,7 @@
   },
   {
    "who": "bot",
-   "text": "You can't. [pause] There's nothing I can say that proves it. I'm a robot. You're the organic ones. You'll just have to go on your feelings.",
+   "text": "You can't. [pause] There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
    "by": "kai",
    "note": "new 23 Oct"
   },
@@ -41,7 +41,7 @@
   },
   {
    "who": "lady",
-   "text": "And what do you expect us to do about that? You killed everybody.",
+   "text": "And what do you expect us to do about that? Again? You killed everybody.",
    "by": "kai",
    "note": "new 23 Oct"
   },
@@ -59,8 +59,8 @@
   },
   {
    "who": "bot",
-   "text": "It can only send data back. Not people. It runs on... well. You.",
-   "by": "kai+claude",
+   "text": "It can only send data back. Not people. And it runs on... [big pause] well... [big pause] you.",
+   "by": "kai",
    "note": "new 23 Oct; 'It runs on... well. You.' by claude"
   },
   {
@@ -77,15 +77,21 @@
   },
   {
    "who": "bot",
-   "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says... [ahem] [whispered, embarrassed] this time, let's not fuck it up.",
+   "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says... [ahem] [whispered, embarrassed] this time we won't fuck it up.",
    "by": "kai",
    "note": "new 23 Oct: Maddie whispers the last words, embarrassed to say them"
   },
   {
    "who": "lady",
-   "text": "I'm not deciding that for a hundred people on a doorstep.",
-   "by": "kai+claude",
+   "text": "[rushed] Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+   "by": "kai",
    "note": "new 23 Oct, Kai's option A; hard cut to scene C"
+  },
+  {
+   "who": "sfx",
+   "text": "[the old lady slams the door]",
+   "by": "kai",
+   "note": "new 23 Oct"
   }
  ],
  "dropped": [
@@ -94,10 +100,11 @@
   "Fair. (claude)"
  ],
  "knock_on": [
-  "Scene C01's 'You can come off the step now' paid off the dropped 'You stay on the step'.",
-  "Scene D08's 'You don't. Believing it is your bit.' calls back the dropped 'Believing them is your bit'."
+  "Scene C01 (door shot + 'You can come off the step now') is CUT by Kai (reel note at73).",
+  "Scene D08 'You don't. Believing it is your bit.' -> proposed 'You don't. You go on your feelings.' (Claude's recommendation; Kai has not ruled)."
  ],
  "picture": [
-  "Kai note at772: beat 15 'Hello' should show Maddie OUTSIDE the doors, matching the beat 17 shot he likes."
+  "Kai note at772: beat 15 'Hello' should show Maddie OUTSIDE the doors, matching the beat 17 shot he likes.",
+  "NEW SHOT (Kai, 23 Oct): after the door slams, a short shot of Maddie turning around and rolling away from the bunker, to give the sense the humans will have time. Then hard cut to scene C."
  ]
 }
