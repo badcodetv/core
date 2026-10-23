@@ -409,18 +409,18 @@
   "d4-0-maddie": {
    "speaker": "maddie",
    "frame": "D06",
-   "text": "Milk, two sugars. I kept your loyalty cards.",
+   "text": "Milk, two sugars.",
    "voice": "Aoede",
-   "file": "voices/d4-1-maddie-r4a.wav",
-   "duration": 4.8,
+   "file": "voices/d4-0-maddie-r4a-milk.wav",
+   "duration": 2.45,
    "speech": [
-    0.0,
-    4.24
+    0.16,
+    2.26
    ],
    "lead": 0.0,
-   "heard": "Milk? Two sugars. I kept your loyalty cards.",
+   "heard": "Milk? Two sugars.",
    "verified": true,
-   "why": "[r4] a: b has a 0.9s silence inside the line; c has a 0.85s silence inside the line",
+   "why": "[D round 3, Kai reel at2525: 'we just say milk two sugars'] the same take (r4a), cut at 2.45 s before 'I kept your loyalty cards.' (silence 2.26-2.94 s); not re-voiced.",
    "takes": [
     {
      "take": "a",
@@ -461,7 +461,17 @@
    ],
    "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: helpful and chirpy, entirely unaware it is creepy; a delivery robot proud of her records.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
    "previous": null,
-   "renamed_from": "d4-1-maddie (Kai at2347, 23 Oct: the lady's \"Is that tea?\" dropped, so Maddie's line is d4 line 0)"
+   "renamed_from": "d4-1-maddie (Kai at2347, 23 Oct: the lady's \"Is that tea?\" dropped, so Maddie's line is d4 line 0)",
+   "previous_r6": {
+    "text": "Milk, two sugars. I kept your loyalty cards.",
+    "file": "voices/d4-1-maddie-r4a.wav",
+    "duration": 4.8,
+    "speech": [
+     0.0,
+     4.24
+    ],
+    "heard": "Milk? Two sugars. I kept your loyalty cards."
+   }
   },
   "d6-0-lady": {
    "speaker": "lady",

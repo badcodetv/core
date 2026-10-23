@@ -748,3 +748,30 @@ take's own 3.2 s pause is kept**, so the second sentence lands on the coda's las
 speaker trace, the second sentence is his own voice 1.5 dB down, and the coda is ducked 6 dB under both phrases again.
 E 32.58 s, −16.0 LUFS, TP −2.0, delivery-qc 5 ok / 3 warn / 1 fail (inherited); the reel 188.79 s, −16.0 LUFS, TP −1.4.
 Whisper on E's mix and on the reel: "I made it. Now the real work starts." exactly.
+
+## Round 4 on the reel (Kai's 8 notes, 23 Oct): free fixes + stills for picks
+
+Notes `at73 at299 at896 at2055 at2525 at2714 at2787 at3282` are kept verbatim in the reel's `cut-notes.json`
+`kai_round3`, C's `kai_round5` and D's `kai_round3`, with replies.
+
+**Free, done:**
+- **C (at73):** beat c1 (the door shot from inside, Maddie's "Go on…" / "You've got my word") is CUT (`cut_end.C1_KEEP =
+  False`); scene B now ends on "Come back tomorrow". C 57.04 s (was 64.62).
+- **D (at2055):** the listening shot D04r3-t1 is out; Maddie's whole line plays on D03cr3 in three phrases (silence map
+  0.46–2.28 / 4.20–5.80 / 6.98–8.66 s), pauses held to 1.35 s and 0.8 s so it fits the 8 s clip, then straight to D04r4-t2.
+- **D (at2525):** "Milk, two sugars." only: the same take cut at 2.45 s (`D/voices/d4-0-maddie-r4a-milk.wav`).
+- **D (at2714):** D10n plays 0.4–3.9 s (was 0.4–6.0), out before the near man sits up and a figure sits in behind him.
+- **D (at3282):** D12x 2.2–4.7 s, white ramp over its last 1.5 s: the grip holds to ~4.6 s, so they never let go on screen.
+- **D08 line:** the cut d5 line now reads "You don't. You go on your feelings." in `scene.json` (`lines_cut`); not voiced,
+  since the beat is cut and it is a Suno line.
+- **Rebuilt:** C 57.04 s −16.1 LUFS; D 87.08 s −16.2 LUFS; the reel 176.29 s (2:56.3; offsets C 0, D 56.625, E 143.708),
+  −16.0 LUFS, TP −2.2; delivery-qc as before (the inherited stray-pixel fail). Whisper: d3 and d4 heard as written.
+
+**Stills for Kai's picks (free, project `e3f94bf7…`; no video spent):**
+- C02 step-out without mud (refs c01br5e-a + scene B's exterior frame): `C/stills/fix6/c01br6-a/b/c.jpg`.
+- C05 Derek level with Sandra (ref C05-r2-a; the take has no clean stretch): `C/stills/fix6/C05r6-b/c/d.jpg` (-a = the stray
+  reference tile).
+- D06 the lady in the chair picks up her own mug (refs D06-r2-b + D11r3-b): `D/stills/fix6/D06r6-a/b/c.jpg`.
+- D11c the silent realisation close-up (ref D11r3-b): `D/stills/fix6/D11c6-b/c/d.jpg` (-a = the stray reference tile).
+- **Collision:** the scene B agent drove the same Flow browser at the same time; several of my calls failed with
+  `download.saveAs ENOENT` and one harvested two of its bunker-door stills (deleted). Turns were agreed by message.

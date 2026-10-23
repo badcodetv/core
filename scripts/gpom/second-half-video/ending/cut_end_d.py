@@ -220,11 +220,17 @@ def build(sc):
     S.piece('D02', S.clip('D02'), 0.0, s2, cut3c, 'd2', zoom=[[0.0, 1.0], [1.0, 1.0], [8.0, 1.05]])
     k = 'd3-1-maddie'
     mv = sc.voice(k)
-    tm = fr(cut3c + 0.8)  # a breath on her before she speaks
-    e_m = c.say('vox-maddie', mv, 0.40, 8.95, tm, 'd3 line 1 maddie: "It\'s the time machine. ... You do understand what '
-                'this will cost you." (her take\'s own pauses kept)', ref=span(mv))
+    # D round 3 (Kai reel at2055, 23 Oct): the old listening shot of the lady (D04r3-t1) is cut; from Maddie it goes
+    # straight to the rainbow on the lady's face (D04r4-t2). So all of Maddie's line has to play on D03cr3 (8 s): her
+    # take r4a in three phrases (silence map, 20 ms: "It's the time machine." 0.46-2.28, "You do understand" 4.20-5.80,
+    # "what this will cost you." 6.98-8.66), its pauses held to 1.35 s and 0.8 s (were 1.9 and 1.2), 0.3 s on her first.
+    tm = fr(cut3c + 0.3)
+    e1 = c.say('vox-maddie', mv, 0.40, 2.32, tm, 'd3 line 1 maddie: "It\'s the time machine."', ref=span(mv))
+    e2 = c.say('vox-maddie', mv, 4.14, 5.86, fr(e1 + 1.35), 'd3 line 1 maddie: "You do understand"', ref=span(mv))
+    e_m = c.say('vox-maddie', mv, 6.94, 8.74, fr(e2 + 0.8), 'd3 line 1 maddie: "what this will cost you."', ref=span(mv))
     c.line(b, 1, 'maddie', tm + 0.05, e_m - tm - 0.05, sc.text(k), 'kai')
-    cut04 = fr(tm + (6.95 - 0.40))  # in the 1.15 s pause, just before "what this will cost you."
+    cut04 = fr(e_m + 0.05)
+    assert cut04 - cut3c <= 8.0 - 1 / FPS, cut04 - cut3c
     first3c = cut04 - cut3c
     S.piece('D03c', S.clip('D03c'), 0.0, cut3c, cut04, 'd3')
     # ---- the lady's answer, ending round 2 (Kai reel at2108/at2566, 23 Oct): stern, Kai's words, 10.8 s of voice
@@ -237,10 +243,7 @@ def build(sc):
     # own speed over the hundred listening (D03cr3 from its start); the cut back to her skips the clip ahead to 0.2 s
     # before run 3. The rest on her mouth: run 3 at x1.3, run 4 at x1.15. Late never early (+0.04 s).
     k = 'd3-2-lady'
-    old04 = sc.clips['media'] + '/D04r3-t1.mp4'
-    i04 = 0.3
-    cut4b = fr(e_m + 0.55)  # her look holds 0.55 s after "cost you."
-    S.piece('D04', old04, i04, cut04, cut4b, 'd3')
+    cut4b = cut04  # D round 3: straight from Maddie to the rainbow on her face (D04r3-t1 is out)
     j0 = 0.45  # into D04r4-t2: 0.47 s of shut mouth before "Look,"
     z4 = cut4b - j0
     zin = [[0.0, 1.12]]
@@ -276,17 +279,17 @@ def build(sc):
     c.flags.append(f'd3 cut: Derek\'s hushed "What is it?" is asked of the vast room (D02 runs on into d3; the old '
                    'wafer reveal D03-t2 is gone, because the battered Maddie with her bunting stands in the middle of it); '
                    'cut to gleaming Maddie '
-                   f'(D03cr3, her beacon pulsing in the clip) and {tm - cut3c:.1f} s on her before she speaks. Her take\'s '
-                   'own pauses are kept whole (2.0 s after "It\'s the time machine.", 1.15 s before "what this will cost '
-                   'you."). The cut to the lady falls in that last pause, so "what this will cost you." lands on her face. The cut '
+                   f'(D03cr3, her beacon pulsing in the clip) and {tm - cut3c:.1f} s on her before she speaks. D round 3 (Kai '
+                   'at2055): her whole line plays on her, its pauses held to 1.35 s and 0.8 s so it fits her 8 s clip, '
+                   'and the cut goes straight to the rainbow on the lady\'s face (the old listening shot is out). The cut '
                    'out of her face comes 0.6 s after her last word, onto the hundred chairs from above, held 2 s in silence '
                    'before they turn: the breath after the height is on what it will cost.')
     c.flags.append('d3 (Kai reel at2108/at2566, ending round 2): the lady no longer comforts Maddie. Stern, in Kai\'s '
                    'words: "Look, this has been the worst possible outcome for humanity. If there\'s a chance we could go '
                    'back in time to change it, I want to take that chance." (take r7c, 10.8 s). It answers Maddie\'s "You do '
                    'understand what this will cost you." (Kai\'s pick, unchanged; nothing added). No "I trust your boss".')
-    c.flags.append(f'd3 lip-sync (the lady, D04r4-t2): "what this will cost you." lands on her listening (the old D04r3-t1), '
-                   f'then a punch-in cut (112%) to the new clip, where Omni spoke her whole line 1.3-1.7x quicker than the '
+    c.flags.append(f'd3 lip-sync (the lady, D04r4-t2, at 112%): the cut comes straight from Maddie\'s "cost you.", 0.5 s '
+                   f'before her first word. Omni spoke her whole line 1.3-1.7x quicker than the '
                    f'take. "Look," on her mouth at x1.0; "this has been the worst" at x1.3; "possible outcome for humanity." '
                    f'at its own speed over the hundred listening (D03cr3 from its start, gleaming Maddie and the wafer); '
                    f'back on her for "If there\'s a chance... change it," at x1.3 and "I want to take that chance." at x1.15. '
@@ -309,7 +312,9 @@ def build(sc):
     S.piece('D06', S.clip('D06'), 0.0, s6, end_d4, 'd4')
     t = c.close(b, end_d4)
     c.flags.append('d4 (Kai at2347, reel round 1): the lady\'s "Is that tea?" is gone; Maddie just tells her.')
-    c.flags.append('d4 (Kai ld4-1): "Milk, two sugars. I kept your loyalty cards." is Maddie\'s (she is the delivery robot; '
+    c.flags.append('d4 (D round 3, Kai reel at2525): "I kept your loyalty cards." is cut: Maddie says only "Milk, two '
+                   'sugars." (the same take, cut before the second sentence).')
+    c.flags.append('d4 (Kai ld4-1): "Milk, two sugars." is Maddie\'s (she is the delivery robot; '
                    'she would have them). D05 now held 2 s (the breath after the lady\'s answer), then a 2-degree turn and a push 104 -> 112%; '
                    'D06 to the mug lifting out of frame.')
     c.flags.append('d5 (the test) is CUT whole (Kai bd5): the doubt is dealt with in the bunker negotiation scene.')
@@ -323,7 +328,7 @@ def build(sc):
     b = c.beat('d6', 'They sit', s6b, act='The plan',
                see='They sit, every one of them; nobody makes them. Lying back, the old lady asks what he will do when he '
                    'gets back, and Maddie says it as plainly as it can be said.')
-    i10, d10 = 0.4, 5.6
+    i10, d10 = 0.4, 3.5  # D round 3 (Kai at2714): out before ~4 s, where the near man sits up and a figure sits in behind him
     cut11 = fr(s6b + d10)
     k = 'd6-0-lady'
     q1 = fr(cut11 - 2.30 - 0.06)
@@ -384,13 +389,16 @@ def build(sc):
     s8 = t
     b = c.beat('d8', 'The crossing', s8, act='The crossing',
                see='The room of a hundred occupied chairs again; the lights come up. The hands: the light reaches them and '
-                   'the grip goes slack. White. Outside, the prints at the door, then the building at dusk: the amber seam '
+                   'still holding on, they go to white. Outside, the prints at the door, then the building at dusk: the amber seam '
                    'runs bright end to end and goes out.')
     d10x = 5.5
     S.piece('D10x', S.clip('D10x'), 0.0, s8, s8 + d10x, 'd8')
     s12x = fr(s8 + d10x)
-    i12x, d12x = max(3.6, i12x_used + 0.5), 3.0
-    S.piece('D12x', S.clip('D12x'), i12x, s12x, s12x + d12x, 'd8', white=[[d12x - 1.0, 0.0], [d12x, 1.0]])
+    # D round 3 (Kai at3282): fade to white while they are STILL holding hands. D12x's grip holds to ~4.6 s and goes
+    # slack from ~4.8 s, so its window now ends at 4.7 s, ramping to white over its last 1.5 s (was: the slack hands,
+    # white over 1 s after the release). The grip is the same few seconds already seen in d7: still hands, no jump.
+    i12x, d12x = 2.2, 2.5
+    S.piece('D12x', S.clip('D12x'), i12x, s12x, s12x + d12x, 'd8', white=[[d12x - 1.5, 0.0], [d12x, 1.0]])
     s14p = fr(s12x + d12x)
     d14p = 4.0
     S.piece('D14p', S.clip('D14p'), 0.3, s14p, s14p + d14p, 'd8', white=[[0.0, 1.0], [1.0, 0.0]], grade=D14_GRADE)
@@ -407,7 +415,8 @@ def build(sc):
     t = c.close(b, fr(s14 + d14))
     c.flags.append('d8 (Kai bd8/ld7-1): opens on the "they sit" angle again (D10x-t2, made fresh and cut to, not chained '
                    'from D10n): every chair visibly occupied, the light rising. The overhead D13 (it read as empty chairs) '
-                   'is gone. Then the hands go slack as the light reaches them (D12x), ramped to white over 1 s.')
+                   'is gone. Then the hands (D12x), ramped to white over 1.5 s while they are still holding on (D round 3, Kai '
+                   'at3282: they never let go on screen).')
     c.flags.append('d8 (Kai at2259/at2379): the doorway prints re-made as real video (D14p-t2: clouds move, chalk dust '
                    'drifts towards the door, the doorway light breathes), played with no post zoom, out of the white. The '
                    'dusk building (D14) is kept as it was.')

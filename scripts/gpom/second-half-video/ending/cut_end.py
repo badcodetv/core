@@ -43,6 +43,7 @@ NAMES = {'ai': 'The AI (through Maddie)', 'maddie': 'Maddie', 'sandra': 'Sandra'
 SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,'
            'asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB')
 ENC = C.ENC
+C1_KEEP = False  # Kai reel at73: beat c1 (the door from inside) is cut
 ROUND_KEYS = ('file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 
@@ -232,37 +233,35 @@ def scene_c(sc):
 
     # ---- c1: off the step (C01, round 1): from inside the bunker, past the wary faces, to Maddie alone on the step.
     # Maddie has no mouth: no lip-sync. Nobody moves for 1.4 s before she speaks; her promise comes a beat later.
-    b = c.beat('c1', 'Off the step', 0.0, act='The walk out',
-               see='From inside the dark bunker, past the hundred\'s wary backs and faces (the old lady among them, '
-                   'silent), Maddie alone on the step in the daylight, turned back to them. Nobody moves. She coaxes.')
-    a = 1.4
-    e = c.say('vox-maddie', sc.voice('c1-0-maddie'), 0.27, 3.30, a, 'c1 line 0 maddie: "Go on. I promise you\'ll be okay."')
-    c.line(b, 0, 'maddie', a, e - a, sc.text('c1-0-maddie'), by('c1-0-maddie'))
-    a1 = fr(e + 1.2)  # scene.json gap_before 1.2
-    e1 = c.say('vox-maddie', sc.voice('c1-1-maddie'), 0.22, 1.46, a1, 'c1 line 1 maddie: "You\'ve got my word."')
-    c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c1-1-maddie'), by('c1-1-maddie'))
-    end_c1 = fr(e1 + 0.7)
-    src01 = sc.clip('C01')
-    c01 = move(src01, V / f'{src01.stem}-push-d{end_c1:.3f}.mp4', 0.0, end_c1, 1.06, hold=1.5, cx=0.6, cy=0.45)
-    c.pic(c01, 0.0, 0.0, end_c1, 'c1', source=src01)
-    m['c01'] = (0.0, end_c1)
-    m['promise'] = (a, e1)
-    t = c.close(b, end_c1)
-    c.flags.append('C round 3 (Kai reel at83): back to the round-1 C01 (c01r1-t2). The round-2 remake (wide doors, mud) '
-                   '"doesn\'t look anything like Maddy" and its bunting across the door did not work. Conflict, for Kai: '
-                   'this shot is the one at63 called out (narrow doors from inside, a concrete step, no mud).')
+    # Kai reel at73 (23 Oct, C round 5): beat c1 is CUT. Scene B now ends on "Come back tomorrow", the door and
+    # Maddie rolling away, so C opens on the walk-out (C01b). Kept behind C1_KEEP for the record.
+    if C1_KEEP:
+        b = c.beat('c1', 'Off the step', 0.0, act='The walk out',
+                   see='From inside the dark bunker, past the hundred\'s wary backs and faces (the old lady among them, '
+                       'silent), Maddie alone on the step in the daylight, turned back to them. Nobody moves. She coaxes.')
+        a = 1.4
+        e = c.say('vox-maddie', sc.voice('c1-0-maddie'), 0.27, 3.30, a, 'c1 line 0 maddie: "Go on. I promise you\'ll be okay."')
+        c.line(b, 0, 'maddie', a, e - a, sc.text('c1-0-maddie'), by('c1-0-maddie'))
+        a1 = fr(e + 1.2)  # scene.json gap_before 1.2
+        e1 = c.say('vox-maddie', sc.voice('c1-1-maddie'), 0.22, 1.46, a1, 'c1 line 1 maddie: "You\'ve got my word."')
+        c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c1-1-maddie'), by('c1-1-maddie'))
+        end_c1 = fr(e1 + 0.7)
+        src01 = sc.clip('C01')
+        c01 = move(src01, V / f'{src01.stem}-push-d{end_c1:.3f}.mp4', 0.0, end_c1, 1.06, hold=1.5, cx=0.6, cy=0.45)
+        c.pic(c01, 0.0, 0.0, end_c1, 'c1', source=src01)
+        m['c01'] = (0.0, end_c1)
+        m['promise'] = (a, e1)
+        t = c.close(b, end_c1)
+    else:
+        t = 0.0
+        m['c01'] = (0.0, 0.0)
+        c.flags.append('C round 5 (Kai reel at73): the opening door shot (C01) and Maddie\'s "Go on. I promise you\'ll be '
+                       'okay." / "You\'ve got my word." are CUT: scene B now ends on "Come back tomorrow", the door slam '
+                       'and Maddie rolling away, so C opens on the first ones stepping out.')
     c.flags.append('C round 3 (Kai reel at253/at440): Maddie was about twice her size in C01b and C02. Both plates were '
                    'remade in two steps (the robot removed, then the canonical bot s3-bot-00b-a added back knee-high, sized '
                    'against a bag in frame) and re-animated: c01br5-t1 (6 s), C02r5-t2 (8 s; C02 is framed a little wider '
                    'than before and Omni drifts the camera). Bunting kept: this is outside the clean room.')
-    c.flags.append('Round 1 (Kai, bc1): C01 is the new shot from inside the bunker (c01r1-t2; replaced in ending round 2). The lady is visible and '
-                   'silent among the wary faces and turns her head away at ~7 s, kept in. Nobody moves for 1.4 s before '
-                   'Maddie speaks; "You\'ve got my word." comes 1.2 s after the first line (scene.json gap_before). '
-                   'C01 holds 1.5 s, then pushes 100 -> 106% eased (push.py), centred between the faces and the door.')
-    c.flags.append('Not used: the deep-tunnel C01 still (stills/c01r2-b.jpg: more of the hundred, the lady arms folded at '
-                   'the front) is the stronger picture, but Maddie is a speck in it and Flow refused it for video '
-                   '(UPLOAD_REFUSED, probably the child in it). It could go in as a still with a drift (Kai to rule).')
-
     # ---- c2: into daylight (C01b, then C02). Maddie's joke gets them over the threshold.
     s2 = t
     b = c.beat('c2', 'Into daylight', s2, act='The walk out',
@@ -479,8 +478,9 @@ def audio_c(c):
     # ---- sfx
     wind = C3.wind_file()
     fx('sfx-wind', wind, 0, total, src_in=5, rms=-34, fi=0.8, fo=1.0, tile=True, what='wind on the downs (ffmpeg)')
-    fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', 0.3, m['c01'][1] - 0.3, src_in=40, rms=-47, fi=1.0, fo=0.6,
-       what='the hundred in the bunker, shifting their weight; nobody walks')
+    if m['c01'][1] > 1.0:
+        fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', 0.3, m['c01'][1] - 0.3, src_in=40, rms=-47, fi=1.0, fo=0.6,
+           what='the hundred in the bunker, shifting their weight; nobody walks')
     fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', m['c01b'][0], m['c02'][1] + 1.2 - m['c01b'][0], rms=-38,
        fi=0.8, fo=1.4, what='the hundred coming out, shuffling (crossfades into the chalk loop over the cut)')
     fx('sfx-crowd', SFX / 'fs653920-crowd-small-walla.mp3', m['c02'][0], m['c02'][1] - m['c02'][0], rms=-44, fi=1.0,

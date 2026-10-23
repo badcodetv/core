@@ -116,11 +116,13 @@
         {
           "speaker": "maddie",
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
-          "text": "Milk, two sugars. I kept your loyalty cards.",
+          "text": "Milk, two sugars.",
           "by": "kai",
           "how": "helpful and chirpy, entirely unaware it is creepy; a delivery robot proud of her records",
           "frame": "D06",
-          "was": "AI: same words (Kai round 1, ld4-1: Maddie says it)"
+          "was": "AI: same words (Kai round 1, ld4-1: Maddie says it)",
+          "previous_text": "Milk, two sugars. I kept your loyalty cards.",
+          "cut_note": "Kai reel at2525 (23 Oct): 'I kept your loyalty cards.' cut"
         }
       ],
       "cut_lines": [
@@ -154,13 +156,15 @@
         {
           "speaker": "ai",
           "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
-          "text": "You don't. Believing it is your bit.",
+          "text": "You don't. You go on your feelings.",
           "by": "claude",
           "how": "plain, unhurried, no point-scoring; Maddie's concession from scene B's door, word for word bar one",
           "frame": "D08",
           "atom": "gpom-sh-end-ai-d5",
           "fx": "speaker",
-          "pays_off": "scene B, Maddie: \"There's nothing I can say that proves it... Believing them is your bit.\""
+          "pays_off": "scene B, Maddie: \"You can't. There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.\"",
+          "previous_text": "You don't. Believing it is your bit.",
+          "note_round3": "Kai (23 Oct): reworded to echo B's changed line. The beat (d5) is CUT, so it is not voiced: an AI line is a Suno take, and it would only be recorded if d5 comes back."
         },
         {
           "speaker": "derek",

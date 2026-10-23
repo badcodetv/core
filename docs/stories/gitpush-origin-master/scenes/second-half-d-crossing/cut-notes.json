@@ -1,7 +1,19 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 2,
+ "round": 3,
  "plan": [
+  {
+   "h": "Round 3 (23 Oct, Kai's notes on the Ending reel page)",
+   "items": [
+    "BEAT 3 (reel at2055): the listening shot is cut; Maddie's line all on her (pauses 1.35 s / 0.8 s), straight to the lady's rainbow face.",
+    "BEAT 4 (reel at2525): 'Milk, two sugars.' only (same take, cut). Tea stills D/stills/fix6/D06r6-a/b/c (the lady in the chair picks up her mug).",
+    "BEAT 6 (reel at2714): the wide plays 0.4-3.9 s of its clip, ending before the near man sits up.",
+    "BEAT 6 (reel at2787): a silent close-up of the lady: stills D/stills/fix6/D11c6-b/c/d; one short clip after the pick.",
+    "BEAT 8 (reel at3282): the white fades in over 1.5 s while the hands still grip.",
+    "d5's cut line now reads 'You don't. You go on your feelings.' (canon only; the beat is cut, not voiced).",
+    "D 87.1 s (was 92.0)."
+   ]
+  },
   {
    "h": "Round 2 done (23 Oct): what changed",
    "items": [
@@ -105,7 +117,12 @@
   "reel-at2108": "Both done. (a) The vast-room shot is re-made with the wafer big again, filling the middle of the frame; the rainbow on her face stays (it's from the clip of her, which is kept as the look). (b) Her new line, in your words, voiced stern and grave, not reassuring: 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' It's 10.8 s, so it gets a new lip-sync clip of her with the rainbow on her face, and the middle of it plays over a cutaway. The 'I trust your boss' part is dropped, per your later note.",
   "reel-at2347": "Done: 'Is that tea?' is gone. Maddie just tells her: 'Milk, two sugars. I kept your loyalty cards.'",
   "reel-at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
-  "reel-at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands."
+  "reel-at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
+  "reel-at2055": "Done: the listening shot is cut. Maddie's whole line now plays on her (its pauses held a little tighter so it fits her clip), and it cuts straight to the rainbow on the old lady's face as she answers.",
+  "reel-at2525": "Done: 'I kept your loyalty cards' is cut; Maddie just says 'Milk, two sugars.' For the tea: three still options with the old lady in the chair reaching down for her own mug; one clip (~10-12 credits) once you pick.",
+  "reel-at2714": "Done: the shot now ends before the man nearest the camera sits up and someone sits in behind him (it plays 3.5 s, was 5.6). The rest of the clip covers the beat: the lady's question starts over it as before.",
+  "reel-at2787": "Agreed: a silent close-up of her face as it sinks in, between Maddie's answer and the hands. Three still options are on the picks page; one short clip (~10 credits) once you pick.",
+  "reel-at3282": "Done: the white now fades up over 1.5 s while their hands are still gripping. They never let go on screen."
  },
  "kai_round1": {
   "at2259": {
@@ -216,6 +233,33 @@
    "note": "It's important to say that the music should carry on underneath the speech at this point.",
    "beat": "d6",
    "tc": "00:01:49:06"
+  }
+ },
+ "kai_round3": {
+  "reel-at2055": {
+   "note": "This particular clip I think we cut because it leaps straight to the just a reflection on the old lady's face So yeah, we just I think this we just left it in let's get rid of this one, please. Thank you",
+   "beat": "d3",
+   "tc": "00:01:25:15"
+  },
+  "reel-at2525": {
+   "note": "I think here we don't need to say I kept your loyalty cards. I think we just say milk two sugars Also, it's a bit odd how the tea is being picked up It's like I would expect the person to be in the chair and picking the tea up. So maybe we should recut the scene",
+   "beat": "d4",
+   "tc": "00:01:45:05"
+  },
+  "reel-at2714": {
+   "note": "On this scene, it's great apart from the one guy right in the middle closest to the camera the way He's a he's facing away from everybody and be the way that he sort of Sits up and somebody sits just behind him. So I think we need to recut this just without that bit",
+   "beat": "d6",
+   "tc": "00:01:53:02"
+  },
+  "reel-at2787": {
+   "note": "I think we need another shot here of the lady, kind of like facial expression of like, oh, OK, that's a good idea, but not saying anything, just like a close‑up of the lady's face, because I think what that communicates, the audience says, oh, OK, yeah, that's what we do need to do. So, we need like an additional shot, because it cuts too quickly to Sandra and Derek.",
+   "beat": "d6",
+   "tc": "00:01:56:03"
+  },
+  "reel-at3282": {
+   "note": "I think here we should fade the white out whilst they're holding hands, the fact that they stop holding hands, they might as well keep holding hands, I really like that, and then it just fades out over the top of that would be great.",
+   "beat": "d8",
+   "tc": "00:02:16:18"
   }
  }
 }

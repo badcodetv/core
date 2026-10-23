@@ -1,7 +1,15 @@
 {
  "about": "Round 1 of scene C is DONE (Kai's notes, 22 Oct): the cut on this page is the rebuild. Kai's round-1 notes, Claude's replies and the answers are kept below. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 4,
+ "round": 5,
  "plan": [
+  {
+   "h": "Round 5 (23 Oct, Kai's notes on the Ending reel page)",
+   "items": [
+    "BEAT 1 (reel at73): CUT. C opens on the first ones stepping out. 57.0 s (was 64.6).",
+    "BEAT 2 (reel at299): stills C/stills/fix6/c01br6-a/b/c (no mud, scene B's grass, Maddie knee-high); clip after the pick.",
+    "BEAT 4 (reel at896): no clean stretch in the take; stills C/stills/fix6/C05r6-b/c/d (Derek level with Sandra); a lip-sync clip after the pick."
+   ]
+  },
   {
    "h": "Round 4 done (23 Oct, your third set of notes on the Ending reel page): what changed",
    "items": [
@@ -100,7 +108,10 @@
   "reel-at63": "Agreed. C01 (the first shot, from inside the bunker) is re-made so the doorway is the same wide blast-door opening you see from outside in C01b/C02, and the ground beyond it is the same wet, churned mud. One new still (free) and one clip, about 12 credits.",
   "reel-at83": "Agreed, and yes, the shot I made was not built on Maddie's reference: it was a reverse angle from the outside shot, and her shape drifted. The old shot is back (the round-1 one). It conflicts with your earlier note here (at63: the doors look narrower from inside, and no mud outside), so it has the narrow doors and the concrete step again. Option, if you want both: the old shot with only the step turned to mud (a still I already have, the same Maddie and faces; ~12 credits to animate). The doors can't be widened on that picture.",
   "reel-at253": "Fixed. Maddie is now knee-high, standing in the mud just in front of the man's feet. Shrinking her in place didn't work, so she was taken out of the picture and the canonical Maddie (the s3 bot, bunting and all) put back at her true size, then re-animated (6 s, 10 credits).",
-  "reel-at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward."
+  "reel-at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward.",
+  "reel-at73": "Done: the door shot is cut, and Maddie's 'Go on. I promise you'll be okay.' / 'You've got my word.' with it. C now opens on the first ones stepping out (scene B ends on 'Come back tomorrow', the door and Maddie rolling away). C is 57.0 s (was 64.6).",
+  "reel-at299": "Agreed. Three still options (no video yet) with the mud replaced by scene B's trampled, dry grass up to the doors; Maddie kept knee-high. They're on the picks page; once you pick, it's one 6 s clip (~10 credits).",
+  "reel-at896": "Checked the take first: Sandra is in the near foreground the whole 8 s, so there's no clean stretch with him beside her. Three still options with her walking level with him, shoulder to shoulder; it needs a new lip-sync clip of his line (~12 credits) once you pick."
  },
  "kai_round1": {
   "bc1": "old lady wouldn't say 'go on then, you lead', wouldn't pat the robot yet; we're not friends; Maddie reassuring, coaxing them out: 'go on, I promise you'll be okay, you've got my word'",
@@ -146,6 +157,23 @@
    "note": "The same here, Maddy is about twice as big as she should be compared to the humans.",
    "beat": "c2",
    "tc": "00:00:18:08"
+  }
+ },
+ "kai_round5": {
+  "reel-at73": {
+   "note": "Hey Claude, OK, so it still looks like these doors are far too narrow, and it's totally different to... I don't think we need this scene, because on the previous scene what we've decided is that we're just going to cut to coming back tomorrow. And then, so I don't think we need this scene here.",
+   "beat": "c1",
+   "tc": "00:00:03:01"
+  },
+  "reel-at299": {
+   "note": "On this scene we need to reference the earlier scenes shot outside the bunker. Let's make it not like it is so muddy. It's just not consistent. The tracks I like on the scene afterwards, but on this one this is too muddy compared to how I'd expect it to be. So it's just a consistency issue.",
+   "beat": "c2",
+   "tc": "00:00:12:11"
+  },
+  "reel-at896": {
+   "note": "The problem with this is he sort of like jumps behind Sandra somehow, it's not quite consistent enough, so he needs to be alongside Sandra just like he is in the other shot.",
+   "beat": "c4",
+   "tc": "00:00:37:08"
   }
  }
 }

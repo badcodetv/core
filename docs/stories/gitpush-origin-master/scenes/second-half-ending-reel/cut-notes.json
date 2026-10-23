@@ -1,7 +1,15 @@
 {
  "about": "Kai's first notes on this page (23 Oct, kai_round1, verbatim) with Claude's replies, and the plan on top. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 3,
+ "round": 4,
  "plan": [
+  {
+   "h": "Round 4 (23 Oct, your 8 notes): what changed, and what waits for your picks",
+   "items": [
+    "DONE (free): C's door shot cut (C opens on the walk-out); straight to the rainbow on the lady's face; 'Milk, two sugars.' only; the 'they sit' wide trimmed before the man sits up; the white fades in while they still hold hands. The reel is 2:56.3 (was 3:08.8).",
+    "STILLS FOR YOU TO PICK (no video spent): the step-out without mud; Derek beside Sandra; the lady in her chair picking up her tea; a silent close-up of the lady realising. Each becomes one clip once picked.",
+    "D's cut line 'You don't. Believing it is your bit.' now reads 'You don't. You go on your feelings.' in the canon; its beat is cut, so it isn't voiced."
+   ]
+  },
   {
    "h": "E's last line is in (23 Oct)",
    "items": [
@@ -109,7 +117,15 @@
   "at4214": "Done: your pick is in (Suno revision H). 'I made it.' lands on the music's held chord; the take's own 3.2 s pause is kept, so 'Now the real work starts.' arrives as the cello's last phrase begins. The bus shot holds it: the fade to black starts 0.7 s after the last word (the clip runs out, so the planned 1.9 s hold is shorter). The music dips under both sentences.",
   "at83": "Agreed, and yes, the shot I made was not built on Maddie's reference: it was a reverse angle from the outside shot, and her shape drifted. The old shot is back (the round-1 one). It conflicts with your earlier note here (at63: the doors look narrower from inside, and no mud outside), so it has the narrow doors and the concrete step again. Option, if you want both: the old shot with only the step turned to mud (a still I already have, the same Maddie and faces; ~12 credits to animate). The doors can't be widened on that picture.",
   "at253": "Fixed. Maddie is now knee-high, standing in the mud just in front of the man's feet. Shrinking her in place didn't work, so she was taken out of the picture and the canonical Maddie (the s3 bot, bunting and all) put back at her true size, then re-animated (6 s, 10 credits).",
-  "at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward."
+  "at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward.",
+  "at73": "Done: the door shot is cut, and Maddie's 'Go on. I promise you'll be okay.' / 'You've got my word.' with it. C now opens on the first ones stepping out (scene B ends on 'Come back tomorrow', the door and Maddie rolling away). C is 57.0 s (was 64.6).",
+  "at299": "Agreed. Three still options (no video yet) with the mud replaced by scene B's trampled, dry grass up to the doors; Maddie kept knee-high. They're on the picks page; once you pick, it's one 6 s clip (~10 credits).",
+  "at896": "Checked the take first: Sandra is in the near foreground the whole 8 s, so there's no clean stretch with him beside her. Three still options with her walking level with him, shoulder to shoulder; it needs a new lip-sync clip of his line (~12 credits) once you pick.",
+  "at2055": "Done: the listening shot is cut. Maddie's whole line now plays on her (its pauses held a little tighter so it fits her clip), and it cuts straight to the rainbow on the old lady's face as she answers.",
+  "at2525": "Done: 'I kept your loyalty cards' is cut; Maddie just says 'Milk, two sugars.' For the tea: three still options with the old lady in the chair reaching down for her own mug; one clip (~10-12 credits) once you pick.",
+  "at2714": "Done: the shot now ends before the man nearest the camera sits up and someone sits in behind him (it plays 3.5 s, was 5.6). The rest of the clip covers the beat: the lady's question starts over it as before.",
+  "at2787": "Agreed: a silent close-up of her face as it sinks in, between Maddie's answer and the hands. Three still options are on the picks page; one short clip (~10 credits) once you pick.",
+  "at3282": "Done: the white now fades up over 1.5 s while their hands are still gripping. They never let go on screen."
  },
  "kai_round1": {
   "at4214": {
@@ -168,6 +184,48 @@
    "note": "The same here, Maddy is about twice as big as she should be compared to the humans.",
    "beat": "c2",
    "tc": "00:00:18:08"
+  }
+ },
+ "kai_round3": {
+  "at2055": {
+   "note": "This particular clip I think we cut because it leaps straight to the just a reflection on the old lady's face So yeah, we just I think this we just left it in let's get rid of this one, please. Thank you",
+   "beat": "d3",
+   "tc": "00:01:25:15"
+  },
+  "at2525": {
+   "note": "I think here we don't need to say I kept your loyalty cards. I think we just say milk two sugars Also, it's a bit odd how the tea is being picked up It's like I would expect the person to be in the chair and picking the tea up. So maybe we should recut the scene",
+   "beat": "d4",
+   "tc": "00:01:45:05"
+  },
+  "at2714": {
+   "note": "On this scene, it's great apart from the one guy right in the middle closest to the camera the way He's a he's facing away from everybody and be the way that he sort of Sits up and somebody sits just behind him. So I think we need to recut this just without that bit",
+   "beat": "d6",
+   "tc": "00:01:53:02"
+  },
+  "at2787": {
+   "note": "I think we need another shot here of the lady, kind of like facial expression of like, oh, OK, that's a good idea, but not saying anything, just like a close‑up of the lady's face, because I think what that communicates, the audience says, oh, OK, yeah, that's what we do need to do. So, we need like an additional shot, because it cuts too quickly to Sandra and Derek.",
+   "beat": "d6",
+   "tc": "00:01:56:03"
+  },
+  "at299": {
+   "note": "On this scene we need to reference the earlier scenes shot outside the bunker. Let's make it not like it is so muddy. It's just not consistent. The tracks I like on the scene afterwards, but on this one this is too muddy compared to how I'd expect it to be. So it's just a consistency issue.",
+   "beat": "c2",
+   "tc": "00:00:12:11"
+  },
+  "at3282": {
+   "note": "I think here we should fade the white out whilst they're holding hands, the fact that they stop holding hands, they might as well keep holding hands, I really like that, and then it just fades out over the top of that would be great.",
+   "beat": "d8",
+   "tc": "00:02:16:18"
+  },
+  "at73": {
+   "note": "Hey Claude, OK, so it still looks like these doors are far too narrow, and it's totally different to... I don't think we need this scene, because on the previous scene what we've decided is that we're just going to cut to coming back tomorrow. And then, so I don't think we need this scene here.",
+   "beat": "c1",
+   "tc": "00:00:03:01"
+  },
+  "at896": {
+   "note": "The problem with this is he sort of like jumps behind Sandra somehow, it's not quite consistent enough, so he needs to be alongside Sandra just like he is in the other shot.",
+   "beat": "c4",
+   "tc": "00:00:37:08"
   }
  }
 }
