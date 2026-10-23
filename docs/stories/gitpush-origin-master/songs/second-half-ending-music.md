@@ -308,7 +308,7 @@ It only sends one back. ... Me.
 [End]
 ```
 
-### `gpom-sh-end-ai-e2` — the last line, Kai's words (scenes D/E round 1) · **owed, not generated**
+### `gpom-sh-end-ai-e2` — the last line, Kai's words (scenes D/E round 1) · **round E failed, see the round log**
 
 Kai's round 1 (22 Oct, `second-half-e-ending/cut-notes.json` le3-0): the film ends on the AI's *"I made it. Now we have
 some work to do."* It replaces `-e1` / `-e1b` ("They didn't. Don't make me come back twice."), which stay above as the
@@ -440,6 +440,17 @@ filter. `-e1` stays unfiltered and dry. Nothing is slowed (house rule).
 ## Round log
 
 New rounds at the top.
+
+### Round E (2026-10-23) · the `-e2` last line · FAILED, no takes visible · 120 credits gone
+
+`suno.mts status` first: empty form, workspace `gpom-story`, balance steady at 7,830 over about a minute. `pair` loaded
+cleanly (custom mode, nothing attached, Voice `badcode newsreader` kept-current, SI 50, AI 65, duration 20, titles
+`gpom-sh-end-ai-e2-E-v6-w25` / `-w10`), then **both Creates returned `create:timeout`** with the balance falling
+**7,830 → 7,750 (-80)** and **7,750 → 7,710 (-40)**, not 10 each. `takes gpom-sh-end-ai-e2 --links` returns nothing. The
+Suno tab showed a clip not from this run (`kai-rework5-v6-w25`, spoken word) at the top of `gpom-story`, and the list has
+"Filters (3)" on. So another session or Kai was generating at the same time, and the e2 takes may exist but be hidden by
+the filter. **Stopped there (one-session rule); nothing re-run, nothing recorded or downloaded. Owed: someone who can see
+the Suno library checks for `gpom-sh-end-ai-e2-E-*` takes before the pair is run again.**
 
 ### Round D (2026-10-22, review round 2) · the `-d3b` new line · generated, NOT recorded
 

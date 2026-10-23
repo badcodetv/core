@@ -589,3 +589,25 @@ ledger stood at 764 of the 1500 cap after scene C's round 1.
   re-rolls. Post after Flow: E01/E02's phone composite re-made from the NEW D16 last frame.
 - **Open questions for Kai** (D cut-notes): Q1 gleaming Maddie's bunting; Q2 where the beneficiary is named now that
   "the companies cutting the jobs kept the gains" went with the boss's lines (Claude recommends the bunker negotiation scene).
+
+### C round 2 + D/E round 3: the Flow media (23 Oct, browser job)
+
+Strictly serial, one browser job. Flow via the flow MCP only (`flow_edit_image` for stills, free; `flow_generate_video`
+Omni 1.1 Flash, Frames start-only, x1, one fresh project per shot). **191 credits** at house price (C 22; D 130; E 39;
+D/E 169 against the 180 cap); ledger 764 → 955 of 1500. Full prompts and verdicts in each scene's `shots.md`; picks
+under `*_round2_kai` (C) / `*_round3` (D, E) in `picks.json` and `clips.json`; a note in each `scene.json`.
+
+- **C:** C01b mud apron (`c01br3-t1`, they step onto mud); C06 old man and helper painted out (`c06r3-t1`, nobody turns;
+  Omni rolls Maddie a little forward down the slope, Kai to judge).
+- **D:** gleaming Maddie reference (`D/stills/fix3/maddie-gleam-b.jpg`, no bunting) used for D03c, D11, D16. D01h-t2
+  (Sandra's line exact), D02r3 (vast room, wafer far in the middle, nobody walks), D03cr3 (gleaming, clean overshoes, no
+  prints), D04r3 (the lady's line exact), D11r3-t2 (question 1.06-4.54, listens after), D10x-t2 (d8 opener: every chair
+  visibly occupied, light rises; a cut, not a chain from D10n), D14p-t2 (real motion: clouds, chalk dust, doorway
+  breathes), D16r3 + D16xr3 (gleaming Maddie at seat height, beacon once, then still with the chair lights dimming).
+- **E:** E03r3 still = red double-decker, nothing written on it; E03r3-t1 (10 s) + E03xr3-t2 (8 s chained).
+- **Rejected takes kept on disk:** D11r3-t1, D10x-t1, E03xr3-t1.
+- **Owed by main:** lip-sync placement for D01h/D04/D11; join E03r3-t1 + E03xr3-t2; E01/E02 phone composite from the NEW
+  D16 last frame (end of `D/clips/D16xr3-t1.mp4`); C06's Maddie line cut (at1342); rebuild C, D, E.
+- **Flow quirk:** the first `flow_generate_video` in a fresh project failed three times today with
+  `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash` before spending; the identical call passed straight after.
+- **Suno `gpom-sh-end-ai-e2`: no takes.** See the music sheet, round E.

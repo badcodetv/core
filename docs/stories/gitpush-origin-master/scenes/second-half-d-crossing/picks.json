@@ -31,7 +31,13 @@
     "D02-r2-a.jpg",
     "D02-r2-b.jpg"
    ],
-   "why": "L2's hall untouched, the suited column walking away to the machine, a clear trail of muddy prints up the centre to the lens: the cost in the monumental shot. r2 put Maddie at the head but she reads as facing camera and merges with the machine."
+   "why": "L2's hall untouched, the suited column walking away to the machine, a clear trail of muddy prints up the centre to the lens: the cost in the monumental shot. r2 put Maddie at the head but she reads as facing camera and merges with the machine.",
+   "file_round3": "fix3/D02r3-b.jpg",
+   "options_round3": [
+    "fix3/D02r3-a.jpg",
+    "fix3/D02r3-b.jpg"
+   ],
+   "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): a vast white room, the wafer alone in the middle, the hundred stopped inside the doors, spotless floor. b: the wafer smaller and further (more vast). a: closer, the wafer bigger."
   },
   "D03": {
    "file": "D03-r2-b.jpg",
@@ -106,7 +112,13 @@
     "D11-r2-a.jpg",
     "D11-r2-b.jpg"
    ],
-   "why": "Lying back in the dark chair under D06's patchwork blanket, looking down at Maddie (bunting visible) beside her, occupied chairs behind. r2-b's chair is white (breaks the chair lock); r1 has her looking away from the robot. Weak: her face is ~1/5 frame, small for lip-sync."
+   "why": "Lying back in the dark chair under D06's patchwork blanket, looking down at Maddie (bunting visible) beside her, occupied chairs behind. r2-b's chair is white (breaks the chair lock); r1 has her looking away from the robot. Weak: her face is ~1/5 frame, small for lip-sync.",
+   "file_round3": "fix3/D11r3-b.jpg",
+   "options_round3": [
+    "fix3/D11r3-b.jpg",
+    "fix3/D11r3-c.jpg"
+   ],
+   "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the robot by her chair made gleaming, no bunting; b keeps the composition. D11r3-a is the stray reference upload, not an option."
   },
   "D12": {
    "file": "D12-r1-b.jpg",
@@ -152,7 +164,13 @@
     "fix1/D16f-r1-a.jpg",
     "fix1/D16f-r1-b.jpg"
    ],
-   "why": "Review round 1. Each chair holds a limp suit or a blanket; the patchwork blanket and the brown mug on the chair beside her. r1-b fills the back rows with suits that read as people still lying there."
+   "why": "Review round 1. Each chair holds a limp suit or a blanket; the patchwork blanket and the brown mug on the chair beside her. r1-b fills the back rows with suits that read as people still lying there.",
+   "file_round3": "fix3/D16r3-b.jpg",
+   "options_round3": [
+    "fix3/D16r3-a.jpg",
+    "fix3/D16r3-b.jpg"
+   ],
+   "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): gleaming Maddie, no bunting, at true scale among the chairs (body about seat height). b is smaller and reads right against the chairs; a still too big."
   },
   "D09s": {
    "file": "fix2/D09s-r2-b.jpg",
@@ -181,7 +199,13 @@
    "file": "fix2/D03c-r2-c.jpg",
    "why": "r2-c: battered bot, bunting, mud-caked boots and prints, the crowd and wafer beyond; r2-b has a stray boot lying on the floor (reads as a body part), r2-a is the stray reference upload",
    "round": "review 2",
-   "by": "claude"
+   "by": "claude",
+   "file_round3": "fix3/D03cr3-a.jpg",
+   "options_round3": [
+    "fix3/D03cr3-a.jpg",
+    "fix3/D03cr3-b.jpg"
+   ],
+   "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): gleaming Maddie, no bunting, clean overshoes, no prints. b: boot leather shows through the overshoe."
   },
   "D01h": {
    "file": "fix2/D01h-r2-b.jpg",
@@ -194,6 +218,22 @@
    "why": "r2-b: boot soles with toe and heel, all heading up the path to the door; r2-a is symmetric and the prints are blobs",
    "round": "review 2",
    "by": "claude"
+  },
+  "D00g": {
+   "file": "fix3/maddie-gleam-b.jpg",
+   "options": [
+    "fix3/maddie-gleam-a.jpg",
+    "fix3/maddie-gleam-b.jpg"
+   ],
+   "why": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the gleaming Maddie reference (Kai 23 Oct: spotless, NO bunting, from the clean room on). s3-bot-00b-a re-lit on a white clean-room floor; b has the brighter beacon. Every new Maddie shot in D refs it."
+  },
+  "D10x": {
+   "file": "fix3/D10xr3-a.jpg",
+   "options": [
+    "fix3/D10xr3-a.jpg",
+    "fix3/D10xr3-b.jpg"
+   ],
+   "why": "Round 3 media (23 Oct, Kai rulings of 23 Oct): Kai (bd8/ld7-1): nobody looked seated. D10n's last frame edited so every chair holds someone lying back, nobody standing; a reframes a little closer (the near row's faces and feet show), b keeps a standing figure."
   }
  }
 }

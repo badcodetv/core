@@ -22,7 +22,11 @@
       "out": 6.0,
       "plate": "../stills/c01br1-b.jpg",
       "talking": false,
-      "note": "Kai round 1 (bc1): the first two (a man shading his eyes, a woman) edge out of the doors onto the concrete; more follow behind them from ~3 s; Maddie in the left foreground, beacon pulses at ~1 s, the torn bunting stays low on her wheels."
+      "note": "Kai round 1 (bc1): the first two (a man shading his eyes, a woman) edge out of the doors onto the concrete; more follow behind them from ~3 s; Maddie in the left foreground, beacon pulses at ~1 s, the torn bunting stays low on her wheels.",
+      "file_round2_kai": "c01br3-t1.mp4",
+      "plate_round2_kai": "../stills/fix3/c01br3-b.jpg",
+      "superseded_round2_kai": "c01br1-t1.mp4",
+      "note_round2_kai": "Kai round 2 (at291): mud outside the bunker, re-animated (6 s, 10 credits): they step out onto the mud, more follow from ~3 s, beacon pulses, bunting stays low."
     },
     "C02": {
       "file": "C02-t4.mp4",
@@ -96,7 +100,11 @@
       "talking": false,
       "post": "slow push 100->112% eased; beacon pulse on the AI's words (ffmpeg)",
       "note": "Kai round 1 (bc5): the tipped trolley and the spilled blankets painted out of C06-f1-a (flow_edit_image, free) and re-animated. The old man stays standing on his stick (he straightens a little), the hundred stand still, the seam lights end to end from ~2 s. Derek's 'Bloody hell. Look at that building.' and Maddie's 'Yeah. He's been working on this one...' play over it (Derek among the backs: no lip-sync).",
-      "superseded": "C06-t2.mp4 (review round 1: spilled blankets by the tipped trolley)"
+      "superseded": "C06-t2.mp4 (review round 1: spilled blankets by the tipped trolley)",
+      "file_round2_kai": "c06r3-t1.mp4",
+      "plate_round2_kai": "../stills/fix3/c06r3-a.jpg",
+      "superseded_round2_kai": "c06r1-t1.mp4",
+      "note_round2_kai": "Kai round 2: re-animated without the old man (8 s, 12). Nobody turns; the seam lights end to end from ~2 s. Omni drives Maddie a short way forward and left down the slope (~2-6 s), as if leading them: not asked for, Kai to judge."
     },
     "C07": {
       "file": "C07-t3.mp4",

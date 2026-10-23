@@ -34,7 +34,10 @@
    "out": 6.5,
    "plate": "../stills/D02-r1-a.jpg",
    "talking": false,
-   "note": "The column recedes; the ceiling-bank sweep is faint. A lens glint flares on the machine from ~6.5 s: out before it (or keep it as the machine waking, Kai's call)."
+   "note": "The column recedes; the ceiling-bank sweep is faint. A lens glint flares on the machine from ~6.5 s: out before it (or keep it as the machine waking, Kai's call).",
+   "file_round3": "D02r3-t1.mp4",
+   "plate_round3": "../stills/fix3/D02r3-b.jpg",
+   "note_round3": "Nobody walks; heads turn; rainbow bands ripple over the wafer; floor stays clean."
   },
   "D03": {
    "file": "D03-t2.mp4",
@@ -56,7 +59,10 @@
     "own_audio": "Us.",
     "mouth": "one burst 1.92-2.54",
     "fit": "voice 0.56 s over 0.62 s = x0.9; place at 1.95"
-   }
+   },
+   "file_round3": "D04r3-t1.mp4",
+   "plate_round3": "../stills/D04-r1-c.jpg",
+   "talking_round3": "lady: \"Yes. Don't worry, we understand.\" own audio exact: Yes 1.86-3.10 / don't worry 3.76-4.66 / we understand 5.12-5.96 (voice d3-2-lady-r5b 5.44 s: place by phrase). She looks down, eyes wet, a small smile and nod; the wafer edge drifts into frame right."
   },
   "D05": {
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L3-wafer-pattern.jpg",
@@ -127,7 +133,11 @@
     "fit": "two phrases at the two bursts; the pause before 'Back then' is in the picture"
    },
    "post": "slow push 100% -> 108% across the AI's answer",
-   "note": "Glasses off at ~6 s, as planned."
+   "note": "Glasses off at ~6 s, as planned.",
+   "file_round3": "D11r3-t2.mp4",
+   "plate_round3": "../stills/fix3/D11r3-b.jpg",
+   "alt_round3": "D11r3-t1.mp4 (asks with a 2 s pause mid-line, speaks to 7.5 s: no listening time)",
+   "talking_round3": "lady: \"When he arrives back in time, what will he do?\" own audio exact 1.06-4.54 (two phrases: 1.06-3.08 / 3.64-4.54); listens 4.5-8 while the beacon pulses (Maddie's 4.28 s answer fits)."
   },
   "D12": {
    "file": "D12-t1.mp4",
@@ -175,7 +185,14 @@
    "talking": false,
    "post": "slow pull-back 112% -> 100%; extend with a held last frame (with the pull-back still running) for the silence to the 10 s plan; beacon stays ON",
    "note": "Review round 1: every chair holds what its person left (a limp suit, a blanket, a mug; the patchwork blanket and brown mug nearest her). Robot still, bunting intact, beacon pulses.",
-   "was": "D16-t3.mp4 (bare chairs: review round 1)"
+   "was": "D16-t3.mp4 (bare chairs: review round 1)",
+   "file_round3": "D16r3-t1.mp4",
+   "plate_round3": "../stills/fix3/D16r3-b.jpg",
+   "chain_round3": [
+    "D16r3-t1.mp4",
+    "D16xr3-t1.mp4 (from frames/D16r3-t1-last.jpg)"
+   ],
+   "note_round3": "Beacon pulses once ~1-2 s (lay \"Boss...\" there), she turns slightly and back ~3 s, then still; D16x holds still while the chair lights dim slowly, for the ~4 s silence. The NEW D16 last frame for E01/E02's phone composite = the end of D16xr3-t1 (or D16r3-t1 if the chain is not used)."
   },
   "D09t": {
    "file": "D09t-t2.mp4",
@@ -249,7 +266,10 @@
    "out": 7.3,
    "plate": "../stills/fix2/D01h-r2-b.jpg",
    "talking": "sandra: \"Five years, one toilet. Now he's fussy.\" mouth 1.67-2.60, 3.00-3.92, 4.25-5.10 (mouth-track, face right)",
-   "note": "Review round 2: D01 with the lady's hair loosely pulled back (continuity with D04/D11)."
+   "note": "Review round 2: D01 with the lady's hair loosely pulled back (continuity with D04/D11).",
+   "file_round3": "D01h-t2.mp4",
+   "plate_round3": "../stills/fix2/D01h-r2-b.jpg",
+   "talking_round3": "sandra: \"I hope this bloody plan works.\" own audio exact, whisper 0.88-3.06 (voice file d1-1-sandra-r4a 2.84 s)"
   },
   "D03c": {
    "file": "D03c-t1.mp4",
@@ -257,7 +277,10 @@
    "out": 8.0,
    "plate": "../stills/fix2/D03c-r2-c.jpg",
    "talking": false,
-   "note": "Review round 2: the costed wafer: battered Maddie, bunting, muddy boots and prints in the near third. Beacon ~ (432, 92). A slight drift in the clip."
+   "note": "Review round 2: the costed wafer: battered Maddie, bunting, muddy boots and prints in the near third. Beacon ~ (432, 92). A slight drift in the clip.",
+   "file_round3": "D03cr3-t1.mp4",
+   "plate_round3": "../stills/fix3/D03cr3-a.jpg",
+   "note_round3": "Beacon pulses as if speaking (Maddie's 9.2 s line: hold or extend past 8 s); a rainbow band glides across the wafer; floor clean."
   },
   "D14p": {
    "file": "D14p-t1.mp4",
@@ -265,7 +288,19 @@
    "out": 6.0,
    "plate": "../stills/fix2/D14p-r2-b.jpg",
    "talking": false,
-   "note": "Review round 2: the prints at the doorway, every toe pointing in."
+   "note": "Review round 2: the prints at the doorway, every toe pointing in.",
+   "file_round3": "D14p-t2.mp4",
+   "plate_round3": "../stills/fix2/D14p-r2-b.jpg",
+   "note_round3": "Kai at2259 (looked like a zoomed photo): real motion now: clouds move, chalk dust wisps drift towards the door 1.5-3 s, the doorway light breathes, prints still. Play it without a post zoom."
+  },
+  "D10x": {
+   "file": "D10x-t2.mp4",
+   "in": 0,
+   "out": 8,
+   "plate": "../stills/fix3/D10xr3-a.jpg",
+   "talking": false,
+   "alt": "D10x-t1.mp4 (chained from D10n's last frame: a man stays standing throughout; lights brighten at the end)",
+   "note": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the d8 opener. Every chair visibly occupied; the chair lights brighten together into a white haze 5-8 s. NOT a chain from D10n (closer framing): a cut."
   }
  },
  "credits_review1": 94,

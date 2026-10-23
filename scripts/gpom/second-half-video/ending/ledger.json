@@ -1,5 +1,5 @@
 {
- "spent": 764,
+ "spent": 955,
  "jobs": [
   {
    "key": "C-C06",
@@ -541,6 +541,182 @@
    "mediaId": "8d3ba05d-21f4-4230-89b4-92547fc1466b",
    "flow_project": "11386d32-9b9f-47cf-91eb-fe0c17f9df46",
    "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s), not read off the popover this run"
+  },
+  {
+   "key": "C-c01br3-t1",
+   "scene": "C",
+   "cost": 10,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix3/c01br3-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c01br3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "7dbcb955-17cf-4819-8723-d179939bbb0d",
+   "flow_project": "2cb90a7d-4198-478b-8542-4c5c6e628308",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "C-c06r3-t1",
+   "scene": "C",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills/fix3/c06r3-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c06r3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "7b3f370f-f696-4de1-89a2-5416d9f0ec18",
+   "flow_project": "18ee5f91-3686-4b83-b5ed-388b299bfec4",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D01h-t2",
+   "scene": "D",
+   "cost": 10,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D01h-r2-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D01h-t2.mp4",
+   "at": "2026-10-23",
+   "mediaId": "daac0ca0-2795-4515-8162-1a6472947b74",
+   "flow_project": "46879135-f07a-4a3d-8219-92cf5137378f",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D02r3-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix3/D02r3-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D02r3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "79c86a9b-dfb7-4018-a07d-569cbe24e734",
+   "flow_project": "d45aa6d5-d29d-465b-b7ec-3700161a225d",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D03cr3-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix3/D03cr3-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D03cr3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "857fa310-179a-423c-9a73-86b37b8dbc22",
+   "flow_project": "cfbc2998-19d6-47f9-8da5-3c93bffb07da",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D04r3-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/D04-r1-c.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D04r3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "1431f8c8-44f9-44ed-8099-a46e368b287d",
+   "flow_project": "8452e6f7-8ebb-47c8-b6d3-263719749845",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D11r3-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix3/D11r3-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D11r3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "8102b4ff-c2ca-47cc-a59b-dee49fa4f575",
+   "flow_project": "4ab31781-b597-4a18-9430-e705b3302515",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D11r3-t2",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix3/D11r3-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D11r3-t2.mp4",
+   "at": "2026-10-23",
+   "mediaId": "838cc9fb-5a26-4108-9dd1-33db2b23f390",
+   "flow_project": "4ab31781-b597-4a18-9430-e705b3302515",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D10x-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/frames/D10n-t1-last.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10x-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "a532afb5-1169-41da-8870-2c1421737fec",
+   "flow_project": "3f43c3e5-ca22-4d94-993e-cddd91f30186",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D10x-t2",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix3/D10xr3-a.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10x-t2.mp4",
+   "at": "2026-10-23",
+   "mediaId": "d72e0414-1f09-4af9-81eb-60593df8e418",
+   "flow_project": "bd97cc81-af5c-4c44-bf62-2cae37e495d1",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D14p-t2",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D14p-r2-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D14p-t2.mp4",
+   "at": "2026-10-23",
+   "mediaId": "e98a69ca-27df-4fb9-a6da-2b02f797ca15",
+   "flow_project": "5d51fd84-9d0a-4a1a-8025-552248f20220",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D16r3-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix3/D16r3-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D16r3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "a6528229-8044-4a4e-ab47-d3448b2dbfdd",
+   "flow_project": "d932867d-f9c0-4c3c-bfc7-5ef5a1921426",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "D-D16xr3-t1",
+   "scene": "D",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/frames/D16r3-t1-last.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D16xr3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "f1664fe2-a24f-46d8-bdf8-d0525d9c2ddd",
+   "flow_project": "50c87a8b-5041-4c43-8af8-01afe232eb90",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "E-E03r3-t1",
+   "scene": "E",
+   "cost": 15,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix3/E03r3-b.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "42d7c5b3-173e-4ee8-b872-63c983bdff40",
+   "flow_project": "4f936c9c-0ba6-4281-864b-fb6d5e51a1f3",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "E-E03xr3-t1",
+   "scene": "E",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/frames/E03r3-t1-last.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03xr3-t1.mp4",
+   "at": "2026-10-23",
+   "mediaId": "854d4704-bae5-4e5f-bb8d-06084e68503f",
+   "flow_project": "08fba19e-6a39-40c9-94d8-b868327e86ec",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
+  },
+  {
+   "key": "E-E03xr3-t2",
+   "scene": "E",
+   "cost": 12,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/frames/E03r3-t1-last.jpg",
+   "out": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03xr3-t2.mp4",
+   "at": "2026-10-23",
+   "mediaId": "2106402f-743f-4cab-abc8-3fe6f1ace5bc",
+   "flow_project": "08fba19e-6a39-40c9-94d8-b868327e86ec",
+   "via": "flow MCP flow_generate_video (Omni 1.1 Flash, Frames start-only, x1); cost is the house price (12/8 s, 10/6 s, 15/10 s), not read off the popover"
   }
  ],
  "keys": [

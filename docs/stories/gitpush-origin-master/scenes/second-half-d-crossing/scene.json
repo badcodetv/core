@@ -844,5 +844,10 @@
   "cut": {
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut/edl.json",
     "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut/preview.mp4"
+  },
+  "round3_media": {
+    "date": "2026-10-23",
+    "source": "Kai round 1 + answers_round1 (gleaming Maddie, NO bunting from the clean room on)",
+    "flow": "Gleaming Maddie ref (D00g) + D02, D03c, D11, D10x, D16 stills (free); clips D01h-t2, D02r3, D03cr3, D04r3, D11r3-t2, D10x-t2, D14p-t2, D16r3 + D16xr3: 130 credits (incl. rejected D11r3-t1, D10x-t1). Keys *_round3 in picks.json/clips.json. Main rebuilds the cut."
   }
 }

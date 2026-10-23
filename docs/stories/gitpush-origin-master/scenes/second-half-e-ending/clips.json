@@ -38,7 +38,11 @@
       "talking": false,
       "post": "bank_sign_e03.py (DOWNLAND BANK + closure sheet, tracked; 'Bank Bank' wiped off the shop next door), regrade, pull-back 140% -> 100% eased 1.5-9.5 s, the last line, fade to black",
       "note": "Review round 2: E03f-r1-b edited so the betting shop beside the pharmacy is E02's whitewashed closed bank (blank fascia, black door), re-animated and extended (27 credits). Camera locked but drifts ~44 px over 17 s (followed by the lettering). The bus reaches mid-distance; the hooded walkers turn away in the extension.",
-      "was": "E03f-chain.mp4 (review round 2: the bank E02 set up was a lit betting shop here)"
+      "was": "E03f-chain.mp4 (review round 2: the bank E02 set up was a lit betting shop here)",
+      "file_round3": "E03r3-t1.mp4 + E03xr3-t2.mp4 (chain to be joined by main)",
+      "plate_round3": "../stills/fix3/E03r3-b.jpg",
+      "alt_round3": "E03xr3-t1.mp4 (the camera pans, the walkers come at the lens, the bus barely recedes)",
+      "note_round3": "E03r3-t1 (10 s): the red bus pulls away to mid-distance, walkers on the right. E03xr3-t2 (8 s, chained from its last frame): locked, the bus recedes further (not to a pinpoint), the two walkers turn and walk away. Small unreadable fascia lettering on the far shops."
     },
     "E04": {
       "file": "black",

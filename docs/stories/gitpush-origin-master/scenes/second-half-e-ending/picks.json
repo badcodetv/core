@@ -28,7 +28,13 @@
         "fix1/E03f-r1-a.jpg",
         "fix1/E03f-r1-b.jpg"
       ],
-      "was": "storyboard/SB27a.jpg (red London bus, roundel, red shelter)"
+      "was": "storyboard/SB27a.jpg (red London bus, roundel, red shelter)",
+      "file_round3": "fix3/E03r3-b.jpg",
+      "options_round3": [
+        "fix3/E03r3-a.jpg",
+        "fix3/E03r3-b.jpg"
+      ],
+      "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the bus made a plain red double-decker, no roundel, no lettering, no adverts. b keeps E03b-r1-b's composition; a reframed wider."
     },
     "E04": {
       "file": "black",

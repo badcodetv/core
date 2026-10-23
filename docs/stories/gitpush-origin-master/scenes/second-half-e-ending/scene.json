@@ -191,5 +191,10 @@
   "cut": {
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut/edl.json",
     "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut/preview.mp4"
+  },
+  "round3_media": {
+    "date": "2026-10-23",
+    "source": "Kai round 1 (red double-decker, no roundel or lettering)",
+    "flow": "E03r3-b still (free); E03r3-t1 (10 s) + E03xr3-t2 chained: 39 credits (incl. rejected E03xr3-t1). Owed by main: E01/E02 phone composite from the NEW D16 last frame; the AI last line (Suno e2) is NOT available (see the music sheet round E)."
   }
 }

@@ -177,3 +177,24 @@ Lip-sync for stage 4 (voice phrases from whisper on the picked takes):
 | c04r1-seat-t1 | I hope you put that bloody seat down. | ~2.2-4.4 (opens 2.25 2.88 4.04) | 0-2.36 | x1.07 |
 | c04r1-aliens-t1 | It does matter. / In ten thousand years, / when the aliens dig up that bunker, / they'll know it was you. | opens 1.50 2.42 4.17 5.08 5.29 6.67; HELD 0.46-1.00 (parted before "It": check the strip), 3.67-3.96, 5.38-5.71 | 0-1.74 / 2.46-3.82 / 4.22-6.16 / 6.58-7.76 | x1.24 overall; place by phrase |
 | c05r1-t1 | Doesn't bloody matter now, love. / We're not coming back, are we? | ~0.5-2.1 / ~3.1-5.2 (`--face left`; the strip reads open from 0.12: check for a parted rest) | 0-2.2 (whisper puts "Doesn't" at 0.0-1.12: measure the real onset) / 2.78-4.34 | phrase 1 up to x1.375 before the onset is measured; phrase 2 x0.75 (voice shorter: fine) |
+
+## Round 2 (Kai's notes, 23 Oct)
+
+Kai's notes: `cut-notes.json` `kai_round2` (at291 mud not concrete outside the bunker; at1289 the old man facing camera
+out). Stills in a fresh Flow project (`b9059b7e…`, "Oct 23 - 10:55", 0 credits) through `flow_edit_image` (Nano Banana
+Pro, 2 candidates a call); video through `flow_generate_video` (Omni 1.1 Flash, Frames start-only, 16:9, x1), one fresh
+project per shot (C01b `2cb90a7d…`, C06 `18ee5f91…`), plates staged to `~/.cache/badcode-gpom-ending/plates/`. **22
+credits** (house price; not read off the popover). Both takes md5-unique against every second-half clip, first frame
+against plate 7.4 / 6.1 (mean /255), contact sheets beside each clip. Media in `C/stills/fix3/` and `C/clips/`.
+The first video call into each fresh project failed once with `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash`
+(no credits) and passed unchanged on the retry.
+
+| still | refs | prompt | result |
+| --- | --- | --- | --- |
+| c01br3 | c01br1-b, tracks-S10-c | Using the first image, change only the ground in front of the bunker doors: replace the cracked concrete apron completely with the same churned, muddy track as in the second image, wet brown mud rutted with boot prints and puddles, trampled grass at its edges, running out from the doorway across the whole foreground. No concrete anywhere outside the doors. Keep everything else in the first image exactly the same, preserving the original style, lighting, and composition: the bunker face and its open green steel doors, the man and the woman stepping out, the faces in the tunnel behind them, and the small grey six-wheeled robot with its amber beacon and torn faded bunting, now standing in the mud. | **b = PICK**: composition identical to c01br1-b, mud and puddles to the doors. a: reframed wider. |
+| c06r3 | c06r1-a | Using the provided image, change only the old man with the walking stick and the younger man steadying him in the lower centre foreground: remove both of them completely, leaving only the same wet green grass of the hillside there. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition: the crowd seen from behind, every one of them facing away from the camera and looking down at the long black building in the valley, the small grey robot with its amber beacon and torn bunting, the downs and the overcast light. | **a = PICK**; b near-identical. Every head faces the building. |
+
+| take | start frame | dur | credits | motion prompt | verdict |
+| --- | --- | --- | --- | --- | --- |
+| c01br3-t1 | `stills/fix3/c01br3-b.jpg` | 6 s | 10 | The camera does not move. The man and the woman take two slow, hesitant steps out of the doorway onto the muddy track, their boots sinking a little into the wet mud, squinting up at the grey sky, his hand shading his eyes. The people behind them in the shadow begin to shuffle forward. The small grey robot stays where it is in the mud, its amber beacon pulsing once; the torn cloth hangs limp and low across its front wheels and does not lift, and nothing rises from it. The puddles stay still. Every person keeps their shape. The camera does not move. | **PICK.** They step onto the mud, more follow, bunting stays low. |
+| c06r3-t1 | `stills/fix3/c06r3-a.jpg` | 8 s | 12 | The camera does not move. The hundred stand still on the crest with their backs to the camera, every one of them staring down at the long black building in the valley, the wind pulling at their coats and hoods. Nobody turns round. The wind moves through the long grass. The small grey robot's amber beacon pulses slowly. Along the building, the thin amber seam brightens slowly from end to end. Every person keeps their shape. Nothing new appears on the grass. The camera does not move. | **PICK, Kai to judge one thing:** nobody turns, the seam lights end to end; but Omni rolls Maddie a little forward and left down the slope (~2-6 s), as if leading them. |

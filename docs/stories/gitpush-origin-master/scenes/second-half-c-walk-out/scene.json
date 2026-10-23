@@ -394,5 +394,10 @@
     "changes": "Lines rewritten per Kai's notes; the AI is silent in scene C; frames marked todo:true need Flow work (C01, C01b, C04, C05, C06).",
     "flow": "Flow work for round 1 done 22 Oct (80 credits, 7 takes, 6 kept). Main rebuilds the cut.",
     "cut": "Rebuilt 22 Oct by cut_end.py C: 64.62 s (was 45.54 s). Ending reel rebuilt: 209.92 s. Record: ../second-half-ending-log.md, 'Scene C round 1: the rebuild'."
+  },
+  "round2_media": {
+    "date": "2026-10-23",
+    "source": "Kai round 2 (cut-notes.json kai_round2: at291, at1289)",
+    "flow": "C01b mud apron + C06 old man out: 2 stills (free) + 2 clips, 22 credits. Picks in picks.json/clips.json under *_round2_kai. Maddie's line over C06 is cut (at1342): an edit, not Flow. Main rebuilds the cut."
   }
 }

@@ -30,7 +30,14 @@
         "c01br1-a.jpg",
         "c01br1-b.jpg"
       ],
-      "why": "Kai round 1 (bc1): the first two edge out. b: the bunker face and doors match S6-c/C02, the pair (a man shading his eyes, a woman) step onto the concrete with room to walk, more faces in the dark behind, Maddie in the left foreground with her bunting low on her wheels. a is closer and the faces read better, but the robot fills a third of the frame and the doorway is cropped."
+      "why": "Kai round 1 (bc1): the first two edge out. b: the bunker face and doors match S6-c/C02, the pair (a man shading his eyes, a woman) step onto the concrete with room to walk, more faces in the dark behind, Maddie in the left foreground with her bunting low on her wheels. a is closer and the faces read better, but the robot fills a third of the frame and the doorway is cropped.",
+      "superseded_round2_kai": "c01br1-b.jpg",
+      "file_round2_kai": "fix3/c01br3-b.jpg",
+      "options_round2_kai": [
+        "fix3/c01br3-a.jpg",
+        "fix3/c01br3-b.jpg"
+      ],
+      "why_round2_kai": "Kai round 2 (at291): the concrete apron outside the doors replaced with the same churned muddy track as the walk (flow_edit_image, ref tracks-S10-c). b keeps the c01br1-b composition exactly; a re-framed wider."
     },
     "C02": {
       "file": "C02-r2-a.jpg",
@@ -94,7 +101,14 @@
         "c06r1-a.jpg",
         "c06r1-b.jpg"
       ],
-      "why_round1_kai": "Kai round 1 (bc5): C06-f1-a with the tipped trolley and the spilled blankets removed (flow_edit_image, free). a and b are near-identical and both clean; a kept. The old man on his stick and the younger man steadying him stay."
+      "why_round1_kai": "Kai round 1 (bc5): C06-f1-a with the tipped trolley and the spilled blankets removed (flow_edit_image, free). a and b are near-identical and both clean; a kept. The old man on his stick and the younger man steadying him stay.",
+      "superseded_round2_kai": "c06r1-a.jpg",
+      "file_round2_kai": "fix3/c06r3-a.jpg",
+      "options_round2_kai": [
+        "fix3/c06r3-a.jpg",
+        "fix3/c06r3-b.jpg"
+      ],
+      "why_round2_kai": "Kai round 2 (at1289): the old man on his stick and the younger man steadying him painted out; every head faces the building. a and b near-identical; a kept."
     },
     "C07": {
       "file": "C07-r2-b.jpg",
