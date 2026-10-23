@@ -741,7 +741,12 @@ def scene_b():
         c.line(b, i, 'bot', tt, e - tt, LINES[('15', i)]['text'], 'kai')
         tt = e + GAP
     end = fr(max(s + 4.0, tt - GAP + TAIL))
-    c.pic(V / 'sh-15-r2-SBHELLOa.mp4', 1.0, s, end, '15')
+    # Kai's note at772 (round 1): Maddie OUTSIDE the doors, in the beat-17 doorway shot. Still b15-hello-outside-2-a,
+    # animated (Omni 1.1 Flash, 8 s). She rolls forward through the doors from about 1 s, so she ends inside.
+    c.pic(V / 'cut3-B15r3-hello-outside.mp4', 0.0, s, end, '15')
+    c.flags.append('Beat 15 (new, Kai\'s pick 2-a animated): the gust and the bunting work, but Maddie rolls forward '
+                   'through the doors from about 1 s and ends about 2 m inside the corridor, which undoes the '
+                   '"outside" note. A re-roll or a freeze is owed.')
     m['s15'] = s
     t = c.close(b, end)
 
@@ -841,8 +846,6 @@ def scene_b():
     c.flags.append('Beat 17: everything after the old lady\'s second line plays on V11, ping-ponged (about '
                    f'{t - v11_b:.0f} s): her new lines (17-6, 8, 10, 13) are on her back, not lip-synced; new '
                    'coverage of her face is owed if Kai wants it.')
-    c.flags.append('Beat 15 still plays the old inside-the-doors Hello (sh-15-r2); Kai\'s note at772 (Maddie OUTSIDE) is '
-                   'at the stills stage (cut3/B/stills/b15-*).')
     m['s17'], m['lady'], m['turn'] = s17, lady, t
     m['l17_0'] = l0a
     t = c.close(b, t + hold)

@@ -3,6 +3,14 @@
  "round": 1,
  "plan": [
   {
+   "h": "Round 1b (23 Oct): your still picks animated",
+   "items": [
+    "BEAT 15: your pick 2-a is animated and in the cut: a gust blows grass and dust in through the doors and her bunting flaps hard. But she rolls forward through the doors and ends about 2 m inside by 1.5 s, which is exactly what your note was against. Fix it with a re-roll (about 12 credits) or by freezing the first second.",
+    "17b: your pick 2-a was animated, but Flow handed back the beat 15 clip instead, so the new shot isn't on disk yet. The placeholder card stays until it is recovered from Flow (free) or re-rolled (about 12 credits).",
+    "Credits: 2 clips at about 12 each (house price, not read off Flow), logged in run-cut3.ledger.json."
+   ]
+  },
+  {
    "h": "Round 1 done (23 Oct): the debate now ends scene B, in your words. 2:23 (was 1:25)",
    "items": [
     "WORDS: beat 17 is exactly script.json (your 23 Oct edits): lines 0-3 unchanged (same takes), then 'You can't... go on your feelings', bored / miss you / bunker, 'Again? You killed everybody', the time machine nobody can drive, 'it runs on... well... you', 'kill ourselves so your boss can live', '...Yeah. I can see how that sounds', the plan to fix your politics, the whispered 'this time we won't fuck it up', and her rushed 'Come back tomorrow.'",
@@ -55,6 +63,14 @@
     "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b17b-turn-away-2-a.jpg": "Wide and high: the bunker small up the hill, Maddie rolling down towards us in her own wheel tracks.",
     "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/stills/b17b-turn-away-2-b.jpg": "The same wide, more centred and symmetrical, tracks leading straight back to the door; bunting barely visible at this size."
    }
+  }
+ },
+ "picks_round1": {
+  "15": "b15-hello-outside-2-a (Kai, 23 Oct: his doorway shot, Maddie just over the threshold)",
+  "17b": "b17b-turn-away-2-a (Kai, 23 Oct: wide and high, she rolls down towards us in her tracks)",
+  "video": {
+   "15": "cut3-B15r3-hello-outside.mp4 (Omni 1.1 Flash, 8 s, count 1, camera locked): IN the cut. Flaw: Maddie rolls through the doors from ~1 s and ends ~2 m inside.",
+   "17b": "generated (credits spent) but MIS-HARVESTED: the MCP returned the beat 15 clip again (same mediaId and md5). The render is in Flow project 20b33d98; the placeholder card stays until it is recovered or re-rolled."
   }
  }
 }
