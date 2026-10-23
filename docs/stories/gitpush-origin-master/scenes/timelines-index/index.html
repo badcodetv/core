@@ -1,0 +1,79 @@
+<title>GPOM Timelines</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: one column, story order top to bottom, like a timeline ruler; the "open now" row is lit. */
+:root {
+  --bg: #f3f2f0; --panel: #ffffff; --fg: #1b1a19; --muted: #6b6762; --line: #dcd8d3;
+  --red: #c8281e; --amber: #a86a00; --green: #2f7a3e; --now: #fff4ec;
+  --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121212; --panel: #1b1b1b; --fg: #ece9e5; --muted: #9a958f; --line: #2c2b2a;
+  --red: #ff5a4c; --amber: #e0a440; --green: #6cc27e; --now: #2a1714; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121212; --panel: #1b1b1b; --fg: #ece9e5; --muted: #9a958f; --line: #2c2b2a;
+  --red: #ff5a4c; --amber: #e0a440; --green: #6cc27e; --now: #2a1714; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); }
+main { max-width: 760px; margin: 0 auto; padding-block: 28px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font: 600 22px/1.2 var(--mono); margin: 0 0 4px; text-wrap: balance; }
+h1 .tri { color: var(--red); }
+.sub { color: var(--muted); margin: 0 0 24px; }
+h2 { font: 600 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 28px 0 8px; }
+ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+li { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; display: grid; gap: 4px; min-width: 0; }
+li.now { background: var(--now); border-color: var(--red); }
+.row { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+.name { font-weight: 600; }
+.tc { font: 12px var(--mono); color: var(--muted); }
+.st { font: 600 11px var(--mono); letter-spacing: .05em; text-transform: uppercase; padding: 1px 7px; border-radius: 99px; border: 1px solid currentColor; }
+.ok { color: var(--green); } .wip { color: var(--amber); } .gap { color: var(--red); }
+.what { color: var(--muted); }
+a { color: var(--fg); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.upd { font: 12px var(--mono); color: var(--muted); margin-top: 28px; }
+</style>
+<main>
+<h1>GitPush Origin Master <span class="tri">▲</span> timelines</h1>
+<p class="sub">Every timeline notes page, in story order. Open the lit one first.</p>
+
+<h2>Already in Premiere (Kai's cut)</h2>
+<ol>
+<li><div class="row"><span class="name">The music video, the off switch, the bot (Maddie) explains</span><span class="st ok">in Premiere</span></div>
+<div class="what">Kai cuts this himself in <code>gpom-story.prproj</code>. No timeline page.</div></li>
+</ol>
+
+<h2>The middle: not in Premiere yet</h2>
+<ol>
+<li><div class="row"><span class="name">A · Kill bots</span><span class="tc">2:54</span><span class="st ok">signed off</span></div>
+<div class="what">Maddie on the high street, kill-bot HUD, the toilet-seat row, the race, the stand-down. Next step: a new Premiere sequence, once Kai says go.</div>
+<a href="https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ">Open timeline A</a></li>
+<li class="now"><div class="row"><span class="name">B · Maddie at the door</span><span class="tc">1:25</span><span class="st wip">needs your notes</span></div>
+<div class="what">The humans meet Maddie: the tannoy, the doors open, the old lady says "You stay on the step." Built, never noted.</div>
+<a href="https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8">Open timeline B</a></li>
+<li><div class="row"><span class="name">The debate and the vote</span><span class="st gap">not made</span></div>
+<div class="what">The AI apologises, the time machine, "Fuck that", trust shown with the kill-bot CCTV, all hundred agree. No words or pictures yet. It gets a timeline once the dialogue is settled.</div></li>
+</ol>
+
+<h2>The ending</h2>
+<ol>
+<li><div class="row"><span class="name">The whole ending, end to end (C + D + E)</span><span class="tc">about 3:09</span><span class="st wip">round 3 rebuilding</span></div>
+<div class="what">Watch this one rather than the three below. It's being rebuilt with your C notes (Maddie's look and size) and your last line.</div>
+<a href="https://claude.ai/artifact/R3zv1wejHA1pU7CSz39bta">Open the ending</a></li>
+<li><div class="row"><span class="name">C · The walk out</span><span class="st wip">notes being answered</span></div>
+<a href="https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah">Open timeline C</a></li>
+<li><div class="row"><span class="name">D · The clean room and the crossing</span><span class="st wip">in review</span></div>
+<a href="https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g">Open timeline D</a></li>
+<li><div class="row"><span class="name">E · The bus, the last line</span><span class="st wip">last line going in</span></div>
+<a href="https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4">Open timeline E</a></li>
+</ol>
+
+<h2>Pick pages (not timelines)</h2>
+<ol>
+<li><div class="row"><span class="name">Takes to pick: voices and Suno lines</span></div>
+<a href="https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co">Open the picks page</a></li>
+</ol>
+
+<p class="upd">Updated 23 Oct 2026. Claude updates this page whenever a timeline changes state.</p>
+</main>
