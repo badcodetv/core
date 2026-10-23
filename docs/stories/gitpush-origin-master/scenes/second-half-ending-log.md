@@ -736,3 +736,15 @@ with replies. Prompts and verdicts: C's `shots.md` § C round 4.
   the reel 188.79 s (offsets C 0, D 64.208, E 156.208), −16.0 LUFS, TP −1.4 dBFS, 5 ok / 3 warn / 1 fail. No line moved,
   so no re-whisper; frames looked at for C01, C01b, C02 in the cut and in the reel. D and E untouched (E's slot as main
   left it).
+
+### E's last line, recorded (23 Oct)
+
+Kai's pick: Suno atom `gpom-sh-end-ai-e2` revision H, take `H-v6-w10 22571839`
+(`E/suno/gpom-sh-end-ai-e2-h-v6-w10-22571839.wav`, 19.6 s): "I made it. Now the real work starts." Cut on the take's
+silence map (−40 dB, 20 ms frames), not on whisper: "I made it." 0.00–0.85 s, "Now the real work starts." 4.13–6.38 s
+(0.05 s pads). In `cut_end_e.py` the silent slot is replaced by the two phrases (`E2_PHRASES`) at `LINE_AT` 22.1 s; **the
+take's own 3.2 s pause is kept**, so the second sentence lands on the coda's last cello phrase (scene 26.2 s). The bus chain
+(17.7 s) is what limits the hold after: the fade starts 0.7 s after the last word (1.9 s planned). "I made it." keeps the 40%
+speaker trace, the second sentence is his own voice 1.5 dB down, and the coda is ducked 6 dB under both phrases again.
+E 32.58 s, −16.0 LUFS, TP −2.0, delivery-qc 5 ok / 3 warn / 1 fail (inherited); the reel 188.79 s, −16.0 LUFS, TP −1.4.
+Whisper on E's mix and on the reel: "I made it. Now the real work starts." exactly.

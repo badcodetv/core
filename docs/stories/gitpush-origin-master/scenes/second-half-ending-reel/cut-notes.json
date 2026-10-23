@@ -3,6 +3,14 @@
  "round": 3,
  "plan": [
   {
+   "h": "E's last line is in (23 Oct)",
+   "items": [
+    "Kai's pick (Suno rev H, take 22571839): 'I made it. Now the real work starts.' Cut on the take's silence map: 'I made it.' 0.00-0.85 s, 'Now the real work starts.' 4.13-6.38 s.",
+    "The pause between them is KEPT whole (3.2 s): the picture holds it. 'I made it.' on the coda's held chord (9.1 s into the bus shot), 'Now the real work starts.' as the cello's last phrase begins; fade to black 0.7 s after the last word.",
+    "'I made it.' keeps a 40% trace of Maddie's speaker; the second sentence is his own voice. The music ducks 6 dB under both. Whisper hears it exactly, in E's mix and in the reel."
+   ]
+  },
+  {
    "h": "Round 3 done (23 Oct): your three notes on scene C",
    "items": [
     "C 0:03 (at83): the old C01 is back; it has the narrow doors and step your at63 note was about: option to mud the step (~12 credits).",
@@ -98,7 +106,7 @@
   "at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
   "at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
   "at4010": "Agreed. The red bus is re-made with an empty road: no other car anywhere, and the chained tail clip re-made from it so the bus pulls away alone. About 24 credits.",
-  "at4214": "Yes, known: the AI's last line ('I made it. Now we have some work to do.') has no take yet. A Suno run is making takes now; you pick one, then it goes in that slot. The slot is held silent until then.",
+  "at4214": "Done: your pick is in (Suno revision H). 'I made it.' lands on the music's held chord; the take's own 3.2 s pause is kept, so 'Now the real work starts.' arrives as the cello's last phrase begins. The bus shot holds it: the fade to black starts 0.7 s after the last word (the clip runs out, so the planned 1.9 s hold is shorter). The music dips under both sentences.",
   "at83": "Agreed, and yes, the shot I made was not built on Maddie's reference: it was a reverse angle from the outside shot, and her shape drifted. The old shot is back (the round-1 one). It conflicts with your earlier note here (at63: the doors look narrower from inside, and no mud outside), so it has the narrow doors and the concrete step again. Option, if you want both: the old shot with only the step turned to mud (a still I already have, the same Maddie and faces; ~12 credits to animate). The doors can't be widened on that picture.",
   "at253": "Fixed. Maddie is now knee-high, standing in the mud just in front of the man's feet. Shrinking her in place didn't work, so she was taken out of the picture and the canonical Maddie (the s3 bot, bunting and all) put back at her true size, then re-animated (6 s, 10 credits).",
   "at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward."

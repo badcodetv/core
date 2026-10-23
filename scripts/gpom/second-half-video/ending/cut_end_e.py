@@ -41,10 +41,12 @@ D_EDL = E.CLIPS / 'ending' / 'D' / 'cut' / 'edl.json'
 # E03 round 1: the red double-decker, two clips joined here (continuous-shot: the tail's first frame dropped, a 0.3 s
 # dissolve over the join, as E03b-chain was).
 E03_HEAD, E03_TAIL, E03_XF = 'E03r4-t1.mp4', 'E03xr4-t1.mp4', 0.3  # ending round 2 (Kai at4010): empty road
-# The AI's last line, "I made it. Now we have some work to do." (atom gpom-sh-end-ai-e2), is NOT recorded yet (Suno
-# was blocked): its slot is held silent at its estimated length, and the old "I made it. They didn't." take is out.
-LINE_TEXT = 'I made it. Now we have some work to do.'
-SLOT = 4.5         # estimated: "I made it." ~1.2 s, a ~1.3 s pause, "Now we have some work to do." ~2.0 s
+# The AI's last line (atom gpom-sh-end-ai-e2, revision H, Kai's pick H-v6-w10 22571839, 23 Oct): "I made it. Now the
+# real work starts." Cut on the take's silence map (40 dB under its peak, 20 ms), not whisper: "I made it." 0.00-0.85 s,
+# a 3.3 s gap, "Now the real work starts." 4.13-6.38 s, silent after. The take's own pause is kept whole.
+LINE_TEXT = 'I made it. Now the real work starts.'
+AI_TAKE_E2 = 'gpom-sh-end-ai-e2-h-v6-w10-22571839.wav'
+E2_PHRASES = [(0.00, 0.90, 'I made it.'), (4.08, 6.42, 'Now the real work starts.')]  # 0.05 s pads on the map
 CODA = 'gpom-sh-e-coda-a-v6-w60-18b34a9d.wav'
 # The coda's one edit (measured on its level envelope, 0.1 s frames): its opening piano phrase decays to a low point
 # at 9.05 s; the take's later phrase onset at 23.45 s follows straight on, skipping the first rise. The held-chord
@@ -275,10 +277,20 @@ def scene_e(sc):
                    f'{E03_XF} s dissolve over the join (it steps 2.7 against a 0.8 in-clip median, an exposure jump). '
                    'The closed bank is the same plate, so bank_sign_e03.py letters it as before (DOWNLAND BANK and the '
                    'closure sheet, tracked). Omni drew small unreadable fascia lettering on the far shops: left.')
-    # the line's slot: silent, held at its estimated length, where the line will go (on the coda's pocket)
+    # the line (Kai's pick, rev H): "I made it." on the coda's held-chord pocket, the take's own 3.2 s pause kept, so
+    # "Now the real work starts." lands as the cello's last phrase begins (coda 33.6 s = scene 26.2 s)
+    take = sc.media / 'suno' / AI_TAKE_E2
+    atom = (E2_PHRASES[0][0], E2_PHRASES[-1][1])
     L = fr(LINE_AT)
-    line_end = fr(L + SLOT)
-    c.line(b, 0, 'ai', L, SLOT, '[NOT RECORDED YET: a silent slot] ' + LINE_TEXT, 'kai')
+    for k, (a_, b_, w) in enumerate(E2_PHRASES):
+        tt = L + (a_ - E2_PHRASES[0][0])
+        if k == 0:
+            e = c.say('vox-ai', take, a_, b_, tt, f'e3: the AI, a trace of Maddie\'s speaker left: "{w}"',
+                      chain=[TRACE, *EQ], lufs=-16.0, ref=atom)
+        else:
+            e = c.say('vox-ai', take, a_, b_, tt, f'e3: the AI, his own voice: "{w}"', chain=EQ, lufs=-17.5, ref=atom)
+    line_end = e
+    c.line(b, 0, 'ai', L, line_end - L, LINE_TEXT, 'kai')
     b['lines'][-1]['name'] = 'The AI (opening to his own voice, for the first time)'
     d03 = fr(min(line_end - s3 + TAIL + E03_HOLD + E03_FADE, C3.dur(e03) - 1.0 / FPS))
     pull = V / f'E03r4-pull-{d03:.3f}.mp4'
@@ -287,16 +299,15 @@ def scene_e(sc):
         lips('move_keys.py', graded, pull, '--in', '0', '--dur', f'{d03:.4f}',
              '--keys', '0:1.4:740:410,1.5:1.4:740:410,9.5:1:640:360', '--fade-out', f'{fade_at:.4f}:{fade_d}')
     c.pic(pull, 0.0, s3, s3 + d03, 'e3', source=sc.clips['media'] + '/' + E03_HEAD)
-    c.flags.append(f'OWED, the last line (Kai le3-0): "{LINE_TEXT}" is the ending. It is the boss\'s voice, so it is a '
-                   'Suno newsreader take (atom gpom-sh-end-ai-e2), and Suno was blocked: it is NOT recorded. Its slot is '
-                   f'held silent at {L - s3:.1f}-{line_end - s3:.1f} s into the shot ({SLOT} s, an estimate), on the '
-                   'coda\'s held-chord pocket as before; the music is not ducked over the empty slot, so it plays as a held '
-                   'beat of music on the pulling-back street. The old "I '
-                   'made it. They didn\'t." recording is out. When the take exists, it drops into this slot and the shot '
-                   'is re-timed to its real length.')
-    c.flags.append('E03 voice plan (when the take exists, unchanged from review round 2): "I made it." keeps a 40% trace '
-                   'of Maddie\'s speaker filter so the voice is his before it changes; the rest is his own voice, full '
-                   'range, close (boom under 110 Hz off, -4 dB at 200 Hz, +2 dB at 2.8 kHz).')
+    c.flags.append(f'The last line (Kai\'s pick, Suno rev H, take 22571839): "{LINE_TEXT}". "I made it." at '
+                   f'{L - s3:.1f} s into the shot, on the coda\'s held-chord pocket; the take\'s own 3.2 s pause is KEPT, so '
+                   f'"Now the real work starts." lands as the cello\'s last phrase begins; it ends {line_end - s3:.1f} s in. '
+                   f'The picture holds it: the bus chain is {C3.dur(e03):.1f} s, so the fade to black starts '
+                   f'{s3 + fade_at - line_end:.1f} s after the last word (was planned as {TAIL + E03_HOLD:.1f} s; the clip '
+                   'runs out first). Cut on the take\'s silence map, not whisper.')
+    c.flags.append('E03 voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter so the voice is his before it '
+                   'changes; "Now the real work starts." is his own voice, full range, close (boom under 110 Hz off, -4 dB '
+                   'at 200 Hz, +2 dB at 2.8 kHz), 1.5 dB quieter. The coda ducks 6 dB under both.')
     m['s3'], m['line'] = s3, (L, line_end)
     m['fade'] = (s3 + fade_at, s3 + d03)
     t = c.close(b, s3 + d03)
@@ -423,9 +434,12 @@ def audio_e(c):
     L0, L1 = m['line']
     d = total - MUS_IN
     x = x[:int(d * SR)]
-    # the line is not recorded yet, so the coda is NOT ducked over its slot (a dip under nothing reads as a fault);
-    # when the take exists, put the duck back: (L0 - MUS_IN - 0.4, 1), (L0 - MUS_IN, 0.5), (L1 - MUS_IN, 0.5), (+0.5, 1)
-    x *= C.env(len(x), [(0, 0), (0.6, 1), (d - 0.6, 1), (d, 0)])
+    # ducked 6 dB under the line (its two phrases; the 3.2 s pause between them plays at full level)
+    pts = [(0, 0), (0.6, 1)]
+    for a_, b_, _ in E2_PHRASES:
+        t0, t1 = L0 + a_ - MUS_IN, L0 + b_ - MUS_IN
+        pts += [(t0 - 0.4, 1), (t0, 0.5), (t1, 0.5), (t1 + 0.5, 1)]
+    x *= C.env(len(x), sorted(pts + [(d - 0.6, 1), (d, 0)]))
     mx.add('mus-e-coda', x.astype(np.float32), MUS_IN, src,
            f'e-coda (edited: 0-{SEAM_A} s, then {SEAM_B} s on), ducked under the line')
     c.flags.append(f'Music: e-coda comes in on the cut to E02 ({MUS_IN:.1f} s), not on her look-up 2 s later, so that '
