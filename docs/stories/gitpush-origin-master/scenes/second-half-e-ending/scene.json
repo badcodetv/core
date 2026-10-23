@@ -196,5 +196,14 @@
     "date": "2026-10-23",
     "source": "Kai round 1 (red double-decker, no roundel or lettering)",
     "flow": "E03r3-b still (free); E03r3-t1 (10 s) + E03xr3-t2 chained: 39 credits (incl. rejected E03xr3-t1). Owed by main: E01/E02 phone composite from the NEW D16 last frame; the AI last line (Suno e2) is NOT available (see the music sheet round E)."
+  },
+  "premiere": {
+    "rough1": {
+      "sequence": "gpom-sh-E-rough1",
+      "bin": "gpom-sh-E-rough1",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-10-23",
+      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0."
+    }
   }
 }

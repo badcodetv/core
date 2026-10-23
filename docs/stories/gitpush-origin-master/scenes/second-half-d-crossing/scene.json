@@ -857,5 +857,14 @@
     "date": "2026-10-23",
     "source": "Kai round 1 + answers_round1 (gleaming Maddie, NO bunting from the clean room on)",
     "flow": "Gleaming Maddie ref (D00g) + D02, D03c, D11, D10x, D16 stills (free); clips D01h-t2, D02r3, D03cr3, D04r3, D11r3-t2, D10x-t2, D14p-t2, D16r3 + D16xr3: 130 credits (incl. rejected D11r3-t1, D10x-t1). Keys *_round3 in picks.json/clips.json. Main rebuilds the cut."
+  },
+  "premiere": {
+    "rough1": {
+      "sequence": "gpom-sh-D-rough1",
+      "bin": "gpom-sh-D-rough1",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-10-23",
+      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0."
+    }
   }
 }
