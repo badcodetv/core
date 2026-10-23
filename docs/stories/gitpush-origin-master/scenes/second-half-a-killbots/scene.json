@@ -98,5 +98,15 @@
   "cut": {
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/edl.json",
     "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/preview.mp4"
+  },
+  "premiere": {
+    "rough1": {
+      "sequence": "gpom-sh-A-rough1",
+      "bin": "gpom-sh-A-rough1",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-10-23",
+      "layout": "V1 picture (25 shots, in/out as the edl). A1 vox-maddie (17 lines), A2 vox-ai (3), A3 vox-sandra (3), A4 vox-derek (2), A5 vox-muffled-row (3), A6 mus-P1-patrol, A7 mus-P2-patrol, A8 mus-C3-chase, A9 sfx-beacon, A10 sfx-hud, A11 sfx-killbots, A12 sfx-maddie, A13 sfx-maddie-beeps, A14 sfx-rooms, A15 sfx-wind (music and sfx are stems from 0 with their envelopes baked in). M0 radio music NOT placed (Kai's own track). Same layout for every second-half scene so paste-insert lines up.",
+      "placer": "scratchpad premA plan (import, create_sequence fromItems, eval overwrite with in/out on V1, insert_clip to create each audio track)"
+    }
   }
 }
