@@ -3,6 +3,23 @@
  "round": 1,
  "plan": [
   {
+   "h": "Round 1 done (23 Oct): what changed",
+   "items": [
+    "DONE. Rebuilt to your round-1 script: 85.8 s (was 113.1 s). Maddie leads, the boss is silent, the test (d5) and the tea-cup still are gone. No Premiere, nothing published by this run.",
+    "BEAT 1: Maddie: 'Suits on, please. It's a clean room.' (D00, still the battered Maddie with bunting: this is before the clean room). Sandra, under her breath, on the new D01h: 'I hope this bloody plan works.' Lip-synced: 'I hope' and 'this bloody' on her mouth at normal speed, and the cut to the vast room lands on the p of 'plan', so 'plan works.' plays over the room (Omni gave her mouth 1.6 s for 2.1 s of voice; squeezing it would warble).",
+    "BEAT 2: the new vast white room (D02r3): the hundred stopped inside the doors, the wafer far off, no prints. Derek's hushed 'What is it?' is asked of this room. The old close wafer shot (D03-t2) is OUT: the battered Maddie with her bunting stands in the middle of it.",
+    "BEAT 3, the height: cut to gleaming Maddie by the wafer (D03cr3). Her line (your pick) keeps its own long pauses, nothing tightened. The cut to the old lady falls in the pause before 'what this will cost you', so that lands on her face; then 'Yes. Don't worry, we understand.' on her mouth ('Yes', 'Don't', 'worry' each on its own opening; 'we understand' at 1.15x with its last syllable over the cut out). Then the hundred chairs from above, held 2 s in silence: the breath after the height.",
+    "BEAT 4: 'Is that tea?' / Maddie: 'Milk, two sugars. I kept your loyalty cards.' Picture as before.",
+    "BEAT 6: the lady's 'When he arrives back in time,' plays over the wide of them sitting (Omni's mouth was 1.6x too quick for it), and the cut to her face (D11r3, gleaming Maddie at the edge) lands for 'what will he do?' on her mouth. Maddie answers over her listening.",
+    "BEAT 7: Sandra: 'Does this mean I get to hang out with non-grumpy Derek?' Derek: 'Yes, love. Are you ready for this?' The hands shot plays whole and runs on into the start of its chained clip (the grip unbroken, the light just starting to rise).",
+    "BEAT 8: opens on the 'they sit' angle again (new D10x-t2, a cut not a chain): every chair occupied, the light rising. Then the hands go slack, white, the doorway prints as real video (D14p-t2, no post zoom), the dusk building as before.",
+    "BEAT 9: straight to gleaming Maddie among the empty chairs (D16r3); 'Boss...' on her beacon's one pulse, 4.3 s of silence, hard cut to E. The music (D-cross) now carries from the hands right across to the cut; its last chord stops in the silence and rings out on the cut. The chained D16x (chair lights dimming) is not needed for a 4 s silence: it's there if you want it longer.",
+    "CHECKS: -16.3 LUFS, true peak -1.4 dBFS; delivery-qc 6 ok / 3 warn / 1 fail (the same stray-pixel range note as every cut). Every line whispered in the final mix: all heard as written.",
+    "FOR YOUR EAR: Sandra's 'I hope' is ~0.1 s after her mouth opens (placed exactly on it, the mix was heard 'Oh, this bloody plan works'); 'we understand' at 1.15x.",
+    "OPEN: the seam going dark no longer lands on the music's last chord (the music now runs on into beat 9). The old wafer reveal is gone, so there is no close crowd-at-the-wafer shot before Maddie's line; a remake of it with gleaming Maddie (or none) would be ~12 credits."
+   ]
+  },
+  {
    "h": "Round 1 on scene D: what changes",
    "items": [
     "THE BOSS IS SILENT IN D. Every line that was his is now Maddie's, or cut. The plan, the cost and the doubt are settled earlier, in the bunker negotiation scene (not yet written); D does not explain them.",

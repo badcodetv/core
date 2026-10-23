@@ -611,3 +611,50 @@ under `*_round2_kai` (C) / `*_round3` (D, E) in `picks.json` and `clips.json`; a
 - **Flow quirk:** the first `flow_generate_video` in a fresh project failed three times today with
   `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash` before spending; the identical call passed straight after.
 - **Suno `gpom-sh-end-ai-e2`: no takes.** See the music sheet, round E.
+
+### C round 2 + D/E round 1: the rebuild (23 Oct)
+
+No browser, no Premiere, no credits, no TTS, no Suno. The cuts read the round-3 media through `cut_end.Scene.clip`,
+which now prefers a round's pick (`file_round3`, `file_round2_kai`) over `file` when it names one file. The cuts
+before this pass are kept at `C/cut/before-round2/`, `D/cut/before-round1/`, `E/cut/before-round1/` and
+`ending-reel/before-round1-DE/`. Each scene's `cut-notes.json` has a "Round N done" section at the top of its plan.
+
+| Cut | Runtime | Mix | delivery-qc |
+| --- | --- | --- | --- |
+| C (`cut_end.py C`) | 64.62 s (unchanged) | −16.1 LUFS, TP −1.8 dBFS | 7 ok, 2 warn, 1 fail |
+| D (`cut_end_d.py`) | 85.83 s (was 113.12) | −16.3 LUFS, TP −1.4 dBFS | 6 ok, 3 warn, 1 fail |
+| E (`cut_end_e.py`) | 32.58 s | −16.0 LUFS, TP −2.0 dBFS | 5 ok, 4 warn, 1 fail |
+| Reel (`reel.py`) | 182.63 s (3:02.6; was 209.92) | −16.0 LUFS, TP −2.0 dBFS | 5 ok, 4 warn, 1 fail |
+
+The FAIL is the inherited one on every cut (stray grain pixels outside 16–235 after the clamp, x264 rounding). Reel
+offsets: C 0.000, D 64.208 (0.4 s dissolve), E 150.042 (hard cut).
+
+- **C:** C01b → `c01br3-t1` (mud), C06 → `c06r3-t1` (no old man; Omni rolls Maddie ahead down the slope ~2–6 s: it
+  reads as her leading off, so played whole, flagged for Kai). Maddie's c5 line cut; Derek's line alone at 49.92 s,
+  then ~3 s of the building. Whisper on the mix: all as written bar the known "around here".
+- **D, rewritten (`build()` replaced):** d1 Maddie 0.40 / Sandra 4.08; d2 the vast room (D02r3), Derek's "What is
+  it?" asked over it at 10.75; **the old wafer reveal D03-t2 is out** (the battered Maddie with bunting stands in it);
+  d3 gleaming Maddie (D03cr3) 13.05, her take's own pauses kept, the cut to the lady in the pause before "what this will
+  cost you", the lady 22.31, then D05 held 2 s as the breath; d4 tea 32.21 / Maddie 34.17; d6 lady 41.87 (first half over
+  D10n), Maddie 46.04; d7 Sandra 50.50 / Derek 55.21 (D12 whole + D12x's first 2.7 s); d8 D10x-t2 → D12x slack + white →
+  D14p-t2 (no post zoom) → D14; d9 D16r3 only, "Boss..." 80.54, 4.3 s silence. D16xr3 not used (flagged). D-cross now
+  plays from the hands to the cut, its last chord stopping in the silence; its breath falls on the doorway prints.
+- **Lip-sync (lip-sync-dub):** mouths read from `D/clips/lips/<clip>-strip.jpg` (D01h needed `--face right`: the
+  tracker first locked on the old lady), voice gaps from 20 ms loudness, then a per-frame mouth-against-dub table on the
+  built cut. D01h: "I hope" / "this bloody" at x1.0 on the closures, the cut to D02 on the p of "plan" ("plan works."
+  over the room; 1.6 s of mouth for 2.1 s of voice). The first placement was heard "Oh, this bloody plan works" in the
+  mix (the stem alone was right): the inserted gap after "hope" closed to 0.08 s, "I" 0.13 s after the opening, and the
+  changing-room crowd lowered 4 dB; then heard right in 3 of 3 windows. D04r3: "Yes" / "Don't" / "worry," each on its
+  own opening at x1.0 (first run had "Don't" 0.3 s late, the take's breath before it), "we understand" x1.15 with
+  "-stand" over the cut to D05. D11r3-t2: "When he arrives back in time," over D10n (Omni's mouth x1.6 too quick),
+  "what will he do?" on her mouth x1.2.
+- **E:** "Mind how you go." whole through the phone at 0.30 s, at −21 LUFS with the engine and rain dipped 6 dB under
+  it (at −24 with no dip the mix was heard "and down you go"; now 2 of 3 windows hear it right). The phone composite is
+  re-made with the old `phone_screen.py` settings from the last frame of D's cut itself (D16r3 at 6.44 s, white
+  balance included), read from D's edl each run. E03 = `E03r3-chain.mp4` (head + tail, tail's first frame dropped, 0.3 s
+  dissolve), lettered by `bank_sign_e03.py` unchanged (the bank sits in the same place on the red-bus plate).
+- **OWED: the last line.** "I made it. Now we have some work to do." (Suno atom `gpom-sh-end-ai-e2`) has no take. Its
+  slot is a silent 4.5 s hold at 22.08 s of E (estimate), the coda not ducked over it; the old "I made it. They didn't."
+  is out. When the take exists: drop it in the slot, re-time the pull to its length, restore the coda duck (comment in
+  `audio_e`).
+- **Pages** built into the session scratchpad (`timeline-C`, `-D`, `-E`, `-ending`); not published here.

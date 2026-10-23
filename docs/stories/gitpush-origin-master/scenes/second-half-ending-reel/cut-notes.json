@@ -1,55 +1,64 @@
 {
-  "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
-  "round": 1,
-  "plan": [
-    {
-      "h": "The Ending: the biggest calls for you to rule on",
-      "items": [
-        "KAI TO RULE: The last line is \"I made it. They didn't.\" Your \"Don't make me come back twice\" (and a re-aimed draft) are in the same Suno take and can go back in for free. Reason: reviewers heard the imperative as a threat at the woman on the bus.",
-        "KAI TO RULE: \"It only sends one back. Me.\" (D03) names the machine's passenger and the AI's own interest. It is a TTS stand-in voice until a Suno take can be recorded, and it must agree with your vote scene.",
-        "KAI TO RULE: Derek's trust is won by an admission and an act: \"Does it even work?\" / \"I don't know if it works.\", then Derek sits first and the hundred follow. The exploit (\"up your sleeve\") payoff is cut.",
-        "KAI TO RULE: Maddie lives and is left alone: \"Boss?\", a silence, \"...Mind how\" / (on the phone) \"...you go.\". Her being left is the cost; her dying would be a cheaper second ending.",
-        "KAI TO RULE: The beneficiary is said once, plainly: \"That the companies cutting the jobs kept the gains. And you paid.\"",
-        "KAI TO RULE: The goodbye is \"Did you put the seat down?\" / \"Yes, love.\" (\"Seat down\" was heard as \"Sit down\").",
-        "KAI TO RULE: C into D is a 0.4 s dissolve (the light carries from the step into the white room, and it ends as D's first word lands); D into E is a hard cut on the split line.",
-        "KAI TO RULE: No vote slate at the head. A 2 s \"[THE VOTE: Kai's scene]\" card was suggested by the cold-viewer review; it was not added, because the vote is your scene to place.",
-        "KAI TO RULE: Every AI line reads low and gravelly (the newsreader Voice). A warmer re-take of the ending is owed once Suno playback can be recorded."
-      ]
-    },
-    {
-      "h": "How the reel is built",
-      "items": [
-        "Three scene cuts joined: C 0:00 to 0:45.5, D from 0:45.1 (0.4 s dissolve), E from 2:38.8 (hard cut). Total 3:11.3.",
-        "The audio is the three finished scene mixes joined with the same fades and normalised once to -16 LUFS, limited to -2.5 dBTP, not remixed from stems. Why: each scene was already balanced, and a remix would change levels nobody has noted yet.",
-        "Nobody has listened to any of it by ear: every level, duck and placement was measured. The Gemini listen tool was used by the reviewers only."
-      ]
-    },
-    {
-      "h": "The review: two rounds, four lenses, every finding verified by a second agent",
-      "items": [
-        "Round 1, the trust beat never showed anyone choosing (story, shots and cold viewer, all major): fixed with new footage; the admission plays on Derek's face, he sits, the hundred follow.",
-        "Round 1, the last line read as a threat (story and cold, major): draft 4 tried; round 2 still heard a call to action, so the line was cut to \"I made it. They didn't.\"",
-        "Round 1, \"Seat down\" heard as \"Sit down\" (major): re-worded and re-voiced, checked with whisper on the mix.",
-        "Round 1, C03 dragged with no reveal (shots and cold, major): remade and cut from 22 s to 10.5 s, opening close on Maddie alone.",
-        "Round 1, monumental shots without a cost (D13, the wafer, D14): the hands go slack before the white, a costed wafer shot, boot prints all pointing in.",
-        "Round 2, the AI's own interest never said and the time machine never named (story and cold, major): \"It only sends one back. Me.\" added in D03.",
-        "Round 2, D's levels broken, D sat 10 dB under C and E (craft and cold, major): fixed at the cause (per-atom gain, -1 dBFS cap, an RMS check that fails the build).",
-        "Round 2, Derek's sit contradicted the rows: re-made with every chair behind him empty; he sits first.",
-        "Also fixed: London coding of the street (green and cream bus), the closed bank (lettered and carried into E03), the D03 wafer melt, the mug mismatch, D10's repeat, the C07 reflection, the C02 pole, the E02 phone melting, synthetic rain replaced by recorded beds."
-      ]
-    },
-    {
-      "h": "What is still weak",
-      "items": [
-        "The new D03 AI line is a different voice (TTS stand-in) from every other AI line.",
-        "The AI's read is low and gravelly everywhere; softened in post at the end, not re-performed.",
-        "Nothing has been heard by a human ear; all mixing was by measurement.",
-        "Soft reframes on 720p sources: C03's 160% opening, C05's 140%, D13's 200%.",
-        "C07's Maddie wanders before the step; E03's bus only reaches mid-distance; D04 holds 7 s on one face.",
-        "The scenes depend on your vote scene (\"Go on, then. You lead.\", \"It only sends one back. Me.\", \"Back then\").",
-        "delivery-qc still FAILs range on every preview (x264 ringing after the clamp, the same as scene A); these are previews, not deliverables."
-      ]
-    }
-  ],
-  "replies": {}
+ "about": "Round 1 of the autonomous ending run (second-half-ending-goal.md). Kai has not noted this page yet. The plan lists every call Claude made in Kai's place, with its reason, 'Kai to rule' first. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+ "round": 1,
+ "plan": [
+  {
+   "h": "Rebuilt 23 Oct: C round 2, D and E round 1",
+   "items": [
+    "The reel is now 3:02.6 (was 3:29.9): C 0:00, D from 1:04.2 (0.4 s dissolve), E from 2:30.0 (hard cut on sound: the silence after 'Boss...', then 'Mind how you go.' from the phone).",
+    "-16.0 LUFS, true peak -2.0 dBFS; delivery-qc 5 ok / 4 warn / 1 fail (the inherited stray-pixel range note).",
+    "OWED: the AI's last line at the end of E is a silent slot until the Suno take is recorded.",
+    "The 'Kai to rule' list below is from the 22 Oct autonomous round and is mostly superseded by your notes on C, D and E."
+   ]
+  },
+  {
+   "h": "The Ending: the biggest calls for you to rule on",
+   "items": [
+    "KAI TO RULE: The last line is \"I made it. They didn't.\" Your \"Don't make me come back twice\" (and a re-aimed draft) are in the same Suno take and can go back in for free. Reason: reviewers heard the imperative as a threat at the woman on the bus.",
+    "KAI TO RULE: \"It only sends one back. Me.\" (D03) names the machine's passenger and the AI's own interest. It is a TTS stand-in voice until a Suno take can be recorded, and it must agree with your vote scene.",
+    "KAI TO RULE: Derek's trust is won by an admission and an act: \"Does it even work?\" / \"I don't know if it works.\", then Derek sits first and the hundred follow. The exploit (\"up your sleeve\") payoff is cut.",
+    "KAI TO RULE: Maddie lives and is left alone: \"Boss?\", a silence, \"...Mind how\" / (on the phone) \"...you go.\". Her being left is the cost; her dying would be a cheaper second ending.",
+    "KAI TO RULE: The beneficiary is said once, plainly: \"That the companies cutting the jobs kept the gains. And you paid.\"",
+    "KAI TO RULE: The goodbye is \"Did you put the seat down?\" / \"Yes, love.\" (\"Seat down\" was heard as \"Sit down\").",
+    "KAI TO RULE: C into D is a 0.4 s dissolve (the light carries from the step into the white room, and it ends as D's first word lands); D into E is a hard cut on the split line.",
+    "KAI TO RULE: No vote slate at the head. A 2 s \"[THE VOTE: Kai's scene]\" card was suggested by the cold-viewer review; it was not added, because the vote is your scene to place.",
+    "KAI TO RULE: Every AI line reads low and gravelly (the newsreader Voice). A warmer re-take of the ending is owed once Suno playback can be recorded."
+   ]
+  },
+  {
+   "h": "How the reel is built",
+   "items": [
+    "Three scene cuts joined: C 0:00 to 0:45.5, D from 0:45.1 (0.4 s dissolve), E from 2:38.8 (hard cut). Total 3:11.3.",
+    "The audio is the three finished scene mixes joined with the same fades and normalised once to -16 LUFS, limited to -2.5 dBTP, not remixed from stems. Why: each scene was already balanced, and a remix would change levels nobody has noted yet.",
+    "Nobody has listened to any of it by ear: every level, duck and placement was measured. The Gemini listen tool was used by the reviewers only."
+   ]
+  },
+  {
+   "h": "The review: two rounds, four lenses, every finding verified by a second agent",
+   "items": [
+    "Round 1, the trust beat never showed anyone choosing (story, shots and cold viewer, all major): fixed with new footage; the admission plays on Derek's face, he sits, the hundred follow.",
+    "Round 1, the last line read as a threat (story and cold, major): draft 4 tried; round 2 still heard a call to action, so the line was cut to \"I made it. They didn't.\"",
+    "Round 1, \"Seat down\" heard as \"Sit down\" (major): re-worded and re-voiced, checked with whisper on the mix.",
+    "Round 1, C03 dragged with no reveal (shots and cold, major): remade and cut from 22 s to 10.5 s, opening close on Maddie alone.",
+    "Round 1, monumental shots without a cost (D13, the wafer, D14): the hands go slack before the white, a costed wafer shot, boot prints all pointing in.",
+    "Round 2, the AI's own interest never said and the time machine never named (story and cold, major): \"It only sends one back. Me.\" added in D03.",
+    "Round 2, D's levels broken, D sat 10 dB under C and E (craft and cold, major): fixed at the cause (per-atom gain, -1 dBFS cap, an RMS check that fails the build).",
+    "Round 2, Derek's sit contradicted the rows: re-made with every chair behind him empty; he sits first.",
+    "Also fixed: London coding of the street (green and cream bus), the closed bank (lettered and carried into E03), the D03 wafer melt, the mug mismatch, D10's repeat, the C07 reflection, the C02 pole, the E02 phone melting, synthetic rain replaced by recorded beds."
+   ]
+  },
+  {
+   "h": "What is still weak",
+   "items": [
+    "The new D03 AI line is a different voice (TTS stand-in) from every other AI line.",
+    "The AI's read is low and gravelly everywhere; softened in post at the end, not re-performed.",
+    "Nothing has been heard by a human ear; all mixing was by measurement.",
+    "Soft reframes on 720p sources: C03's 160% opening, C05's 140%, D13's 200%.",
+    "C07's Maddie wanders before the step; E03's bus only reaches mid-distance; D04 holds 7 s on one face.",
+    "The scenes depend on your vote scene (\"Go on, then. You lead.\", \"It only sends one back. Me.\", \"Back then\").",
+    "delivery-qc still FAILs range on every preview (x264 ringing after the clamp, the same as scene A); these are previews, not deliverables."
+   ]
+  }
+ ],
+ "replies": {}
 }

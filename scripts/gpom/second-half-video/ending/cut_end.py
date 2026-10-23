@@ -43,6 +43,7 @@ NAMES = {'ai': 'The AI (through Maddie)', 'maddie': 'Maddie', 'sandra': 'Sandra'
 SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,'
            'asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB')
 ENC = C.ENC
+ROUND_KEYS = ('file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 
 
@@ -55,7 +56,11 @@ class Scene:
         self.media = pathlib.Path(self.cfg['media'])
 
     def clip(self, fid):
-        return pathlib.Path(self.clips['media']) / self.clips['clips'][fid]['file']
+        """The clip's newest take: a round's pick (file_round3, file_round2_kai) wins over the older `file` when it
+        names one file (E03's round 3 names a two-clip chain and is joined by cut_end_e.py instead)."""
+        e = self.clips['clips'][fid]
+        f = next((e[k] for k in ROUND_KEYS if str(e.get(k, '')).endswith('.mp4') and ' ' not in e[k]), e['file'])
+        return pathlib.Path(self.clips['media']) / f
 
     def voice(self, key):
         return self.media / self.vox['lines'][key]['file']
@@ -209,8 +214,8 @@ def join_report(c):
 # ---------------------------------------------------------------- scene C
 
 def scene_c(sc):
-    c = Cut(sc, 'gpom-second-half-C-rough3', 'Ending C Timeline', 'GPOM second half · the ending · scene C: the walk out',
-            "Scene C of the ending, round 1 (Kai's notes, 22 Oct): Maddie coaxes the hundred out of the bunker, they "
+    c = Cut(sc, 'gpom-second-half-C-rough4', 'Ending C Timeline', 'GPOM second half · the ending · scene C: the walk out',
+            "Scene C of the ending, round 2 (Kai's notes, 23 Oct): Maddie coaxes the hundred out of the bunker, they "
             "walk over the downs, the seat one last time, the AI's building, and the step. It is Maddie's scene: the "
             "boss does not speak. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. "
             "Notes save as you type. Tell Claude when you're done.")
@@ -274,7 +279,9 @@ def scene_c(sc):
     m['c02'] = (cut02, c02_end)
     m['joke'] = e1
     t = c.close(b, c02_end)
-    c.flags.append('Round 1 (Kai, lc1-1): C01b (c01br1-t1, the first two edge out, more follow) plays whole before C02. '
+    c.flags.append('Round 2 (Kai, at291): C01b re-made on mud (c01br3-t1): the ground outside the bunker is the same '
+                   'muddy track as the rest of the walk, no concrete; they step out onto it, more follow from ~3 s.')
+    c.flags.append('Round 1 (Kai, lc1-1): C01b (the first two edge out, more follow) plays whole before C02. '
                    '"Careful now, humans." comes 1.6 s in, as they step out; the radiation line 0.6 s after it, and runs '
                    f'{e1 - cut02:.1f} s over the cut into C02 so the hundred file out under the joke.')
     c.flags.append('Colour: C02 (C02-t4) is graded towards the first 4 s of the long walk it cuts to, so the two '
@@ -370,35 +377,34 @@ def scene_c(sc):
                    f'and out at 7.3 s, before the words Omni invented from 7.56 s. Derek\'s look is C05 5.8-8.0 '
                    f'({look1 - look0:.1f} s): he turns his head to her, mouth shut.')
 
-    # ---- c5: over the brow (C06, round 1: trolley and blankets painted out; push 100 -> 112%). Derek among the backs
-    # (no close-up was made, so no lip-sync); Maddie answers him, proud of her boss. Her line runs over the cut into
-    # C07: C06 is 8 s and the two lines need ~8.5 s after the building has been seen.
+    # ---- c5: over the brow (C06, round 2: the old man and his helper painted out, nobody turns; push 100 -> 112%).
+    # Derek among the backs (no close-up was made, so no lip-sync). Round 2 (Kai, at1342): Maddie says nothing here;
+    # Derek's line plays alone over the reveal.
     s5 = t
     b = c.beat('c5', 'Over the brow', s5, act='The building',
-               see='From behind the hundred at the crest, past the old man on his stick: the AI\'s building in the fold '
-                   'of the downs. They stop.')
+               see='From behind the hundred at the crest, every head turned down to the AI\'s building in the fold of '
+                   'the downs. They stop. Maddie rolls a little way ahead down the slope.')
     k = 'c5-0-derek'
     a = fr(s5 + 1.2)
     e = c.say('vox-derek', sc.voice(k), 0.22, 3.80, a, 'c5 line 0 derek: "Bloody hell. Look at that building." (awed, quiet)',
               lufs=-17.5)
     c.line(b, 0, 'derek', a, e - a, sc.text(k), by(k))
-    k = 'c5-1-maddie'
-    a1 = fr(e + 0.4)
-    e1 = c.say('vox-maddie', sc.voice(k), 0.17, 4.62, a1,
-               'c5 line 1 maddie: "Yeah. He\'s been working on this one for quite a long time."')
-    c.line(b, 1, 'maddie', a1, e1 - a1, sc.text(k), by(k))
+    e1 = e
     end_c5 = fr(s5 + 8.0 - 1 / FPS)
     src06 = sc.clip('C06')
     c06 = move(src06, V / f'{src06.stem}-push-d{end_c5 - s5:.3f}.mp4', 0.0, end_c5 - s5, 1.12, hold=1.5, cx=0.45,
                cy=0.42)
     c.pic(c06, 0.0, s5, end_c5, 'c5', source=src06)
     m['c5'] = (s5, end_c5)
-    m['c5_lines'] = (a, e1)
+    m['c5_lines'] = (a, e)
     t = c.close(b, end_c5)
-    c.flags.append(f'Round 1 (Kai, bc5/lc5-0/lc5-1): C06 re-animated with the trolley and blankets painted out '
-                   f'(c06r1-t1). "Bloody hell. Look at that building." waits 1.2 s into the reveal; Maddie answers 0.4 s '
-                   f'after. C06 is 8 s, so her line runs {e1 - end_c5:.1f} s over the cut into C07 (the building\'s door): '
-                   '"for quite a long time" lands on the door itself.')
+    c.flags.append('Round 2 (Kai, at1289): C06 re-animated without the old man on his stick and his helper (c06r3-t1); '
+                   'every head looks down at the building, nobody turns. The seam lights end to end from ~2 s. Omni '
+                   'rolls Maddie a short way forward and left down the slope (~2-6 s), as if leading them: it was not '
+                   'asked for, and it reads as her setting off ahead, so the shot plays whole. Kai to judge.')
+    c.flags.append(f'Round 2 (Kai, at1342): Maddie\'s "He\'s been working on this one for quite a long time." is cut. '
+                   f'Derek\'s "Bloody hell. Look at that building." waits 1.2 s into the reveal and plays alone; then '
+                   f'{end_c5 - e:.1f} s of the building and the wind before the cut to the door.')
     c.flags.append('Not made: a Derek close-up for "Bloody hell. Look at that building." He is among the backs in C06, '
                    'so the line plays without a visible mouth. A close-up would need a new still and a lip-sync clip '
                    '(~12 credits). Kai to rule.')
@@ -461,8 +467,7 @@ def audio_c(c):
     mx.add('mus-c-walk', x, s_in, walk, 'C-walk: lone violin and piano, the held cello note on the reveal')
     c.flags.append(f'Music unchanged (Kai: may change once it is in Premiere): C-walk enters on the long walk at '
                    f'{off:.1f} s into the take, its held low cello note on the reveal, no edit inside the music; ducked '
-                   'to 0.25 under all four seat lines (the seat scene is longer now) and to 0.5 under Derek and Maddie at '
-                   'the crest; stops dead on "Mind the step". C01-C02 play on wind and the crowd.')
+                   'to 0.25 under all four seat lines (the seat scene is longer now) and to 0.5 under Derek at the crest; stops dead on "Mind the step". C01-C02 play on wind and the crowd.')
 
     # ---- sfx
     wind = C3.wind_file()

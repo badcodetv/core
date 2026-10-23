@@ -6,7 +6,8 @@
 Reads <ENDING>/<C|D|E>/cut/{edl.json,preview.mp4} and writes <ENDING>/ending-reel/{edl.json,preview.mp4,mix.wav}.
 Every time in each scene's edl (beats, lines, clips, events) is shifted by that scene's offset in the reel.
 Joins: C -> D is a short dissolve (Maddie goes up into the light; the white changing room comes out of it),
-D -> E is a hard cut, because D ends on "...Mind how" and E's phone answers "...you go." (built as a cut on sound).
+D -> E is a hard cut on sound: D ends in the silence after Maddie's "Boss...", and E opens on the rain and her
+"Mind how you go." from the woman's phone (round 1: the line is no longer split across the cut).
 The audio is the three finished scene mixes joined with the same fades, then loudness-normalised to -16 LUFS
 (two-pass loudnorm, true peak -1.5). The picture is re-encoded once, clamped to legal range and tagged BT.709.
 """
@@ -18,7 +19,7 @@ ENDING = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-
 OUT = ENDING / 'ending-reel'
 SCENES = ['C', 'D', 'E']
 # Crossfade INTO each scene after the first (seconds). 0 = hard cut.
-# C->D 0.4 s: ends before D's first word (AI at 0.417 s) so "Suits on" is never under a fade.
+# C->D 0.4 s: ends before D's first word (Maddie's "Suits on" at 0.40 s) so it is never under a fade.
 XFADE = {'D': 0.4, 'E': 0.0}
 FPS = 24
 LUFS, TP = -16.0, -2.5  # -2.5 so the AAC preview stays under -1 dBTP (AAC overshoots ~0.9 dB)
@@ -109,11 +110,12 @@ def main():
         x = XFADE.get(s, 0.0)
         joins.append(f"{s} at {offs[s]:.2f} s: " + (f'{x:.1f} s dissolve' if x else 'hard cut'))
     edl = {
-        'sequence': 'gpom-second-half-ending-reel1',
+        'sequence': 'gpom-second-half-ending-reel2',
         'title': 'Ending Timeline',
         'heading': 'GPOM second half · the ending · C, D and E end to end',
-        'intro': ('The whole ending in one go: the walk out, the clean room and the crossing, the bus. Made '
-                  'autonomously (21-22 Oct); every call Kai would make is in the flags, scene by scene. Play it, '
+        'intro': ('The whole ending in one go: the walk out, the clean room and the crossing, the bus. C round 2, '
+                  'D and E round 1 (Kai\'s notes, 22-23 Oct); the AI\'s last line is not recorded yet (a silent slot '
+                  'at the end of E). Every call made in Kai\'s place is in the flags, scene by scene. Play it, '
                   'click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. '
                   "Tell Claude when you're done."),
         'fps': FPS, 'sample_rate': 48000, 'total': total,
@@ -123,8 +125,8 @@ def main():
         'beats': beats, 'video': video, 'audio': audio, 'mix': str(mix), 'events': events,
         'flags': [
             'Reel joins: ' + '; '.join(joins) + '. C to D dissolves because Maddie goes up into the light and D opens '
-            "in a white room; it ends before D's first word. D to E is a hard cut on sound: \"...Mind how\" / "
-            '"...you go." was split across the cut for exactly this. **Kai to rule**.',
+            "in a white room; it ends before D's first word. D to E is a hard cut on sound: the silence after "
+            '"Boss...", then the rain and Maddie\'s "Mind how you go." from the phone. **Kai to rule**.',
             f'Reel audio: the three finished scene mixes (each already -16 LUFS) joined with the same fades, then the '
             f'whole reel normalised to {LUFS:g} LUFS, true peak {TP:g} dBTP (two-pass, linear). Nothing was remixed.',
             'Reel audio tracks: one stem per track across the reel; a stem name shared by two scenes (vox-ai, '

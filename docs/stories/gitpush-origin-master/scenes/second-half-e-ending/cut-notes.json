@@ -3,6 +3,18 @@
  "round": 1,
  "plan": [
   {
+   "h": "Round 1 done (23 Oct): what changed",
+   "items": [
+    "DONE. Rebuilt: 32.6 s. No Premiere, nothing published by this run.",
+    "BEAT 1: Maddie's whole 'Mind how you go.' comes out of the woman's phone 0.3 s after the hard cut (no longer split across the cut). The rain and the engine dip under it.",
+    "BEATS 1-2: the phone now shows the last frame scene D shows (gleaming Maddie among the empty chairs), re-composited the same way as before (same screen corners and settings).",
+    "BEAT 3: the red double-decker (E03r3-t1 + its chained extension E03xr3-t2, joined with the same 0.3 s dissolve). The closed bank is still lettered DOWNLAND BANK; Omni's far shop signs are unreadable squiggles, left.",
+    "OWED, THE LAST LINE: 'I made it. Now we have some work to do.' is NOT recorded (Suno was blocked). Its slot is held silent at 22.1-26.6 s, on the coda's pocket; the music is not ducked over the empty slot. The old 'I made it. They didn't.' recording is out. When the take exists it drops into the slot.",
+    "CHECKS: -16.0 LUFS, true peak -2.0 dBFS; delivery-qc 5 ok / 4 warn / 1 fail (stray-pixel range note; the warns are the black tail and the held fade).",
+    "FOR YOUR EAR: the phone voice is small on purpose; whisper hears 'Mind how you go' in 2 of 3 windows of the mix."
+   ]
+  },
+  {
    "h": "Round 1 on scene E: what changes",
    "items": [
     "BEAT 1 (the bus): Maddie's whole 'Mind how you go.' plays through the woman's phone on the hard cut (it moved here from the end of D; no longer split across the cut). Voiced, phone filter applied. The phone screen shows the NEW D16 last frame (gleaming Maddie), re-composited.",

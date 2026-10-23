@@ -35,9 +35,16 @@ FPS, SR = E.FPS, E.SR
 LEAD, GAP, TAIL = E.LEAD, E.GAP, E.TAIL
 fr = E.fr
 VID = E.CLIPS / 'video'
-# review round 1: D16 was remade (every chair holds what its person left behind); the phone shows ITS last frame
-D16 = E.CLIPS / 'ending' / 'D' / 'clips' / 'D16f-t1.mp4'
-AI_TAKE = 'gpom-sh-end-ai-e-a-v6-w10-32047e7e.wav'
+# Round 1 (Kai, 23 Oct): the phone shows the last frame scene D now shows (gleaming Maddie among the empty chairs,
+# D16r3-t1), taken from D's cut itself (its last placed piece, white balance and all), so the two match exactly.
+D_EDL = E.CLIPS / 'ending' / 'D' / 'cut' / 'edl.json'
+# E03 round 1: the red double-decker, two clips joined here (continuous-shot: the tail's first frame dropped, a 0.3 s
+# dissolve over the join, as E03b-chain was).
+E03_HEAD, E03_TAIL, E03_XF = 'E03r3-t1.mp4', 'E03xr3-t2.mp4', 0.3
+# The AI's last line, "I made it. Now we have some work to do." (atom gpom-sh-end-ai-e2), is NOT recorded yet (Suno
+# was blocked): its slot is held silent at its estimated length, and the old "I made it. They didn't." take is out.
+LINE_TEXT = 'I made it. Now we have some work to do.'
+SLOT = 4.5         # estimated: "I made it." ~1.2 s, a ~1.3 s pause, "Now we have some work to do." ~2.0 s
 CODA = 'gpom-sh-e-coda-a-v6-w60-18b34a9d.wav'
 # The coda's one edit (measured on its level envelope, 0.1 s frames): its opening piano phrase decays to a low point
 # at 9.05 s; the take's later phrase onset at 23.45 s follows straight on, skipping the first rise. The held-chord
@@ -76,11 +83,27 @@ def lips(script, *args):
 
 
 def d16_frame(c):
-    p = c.vdir / 'd16-last.png'
-    if not p.exists():
-        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-sseof', '-0.1', '-i', str(D16), '-frames:v', '1',
-                        str(p)], check=True)
-    return p
+    """The last frame scene D shows: the end of the last piece in D's edl (not a fixed clip), refreshed every run."""
+    last = json.loads(D_EDL.read_text())['video'][-1]
+    p = c.vdir / 'd16-last-r1.png'
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f"{last['in'] + last['dur'] - 1.0 / FPS:.4f}", '-i',
+                    last['file'], '-frames:v', '1', str(p)], check=True)
+    return p, pathlib.Path(last['source']).name
+
+
+def chain_e03(sc, out):
+    """Join E03's two round-1 clips: the tail (chained from the head's last frame) loses its first frame, and a short
+    dissolve covers the join's exposure step."""
+    if out.exists():
+        return out
+    med = pathlib.Path(sc.clips['media'])
+    a, b = med / E03_HEAD, med / E03_TAIL
+    off = C3.dur(a) - E03_XF
+    fc = (f'[0:v]fps={FPS},setpts=PTS-STARTPTS[a];[1:v]fps={FPS},trim=start_frame=1,setpts=PTS-STARTPTS[b];'
+          f'[a][b]xfade=transition=fade:duration={E03_XF}:offset={off:.4f}[v]')
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(a), '-i', str(b), '-filter_complex', fc, '-map',
+                    '[v]', *E.ENC, str(out)], check=True)
+    return out
 
 
 def regrade(src, out, ref_secs=2.0, strength=0.6, smooth=2.0):
@@ -155,44 +178,49 @@ def phrases(path, t_min=0.0, t_max=9.0, floor=40, min_gap=0.5):
 # ---------------------------------------------------------------- scene E
 
 def scene_e(sc):
-    c = E.Cut(sc, 'gpom-second-half-E-rough2', 'Ending E Timeline', 'GPOM second half · the ending · scene E: the bus',
-              'Scene E of the ending: a woman on a bus is watching this film; she looks up at her own high street; the '
-              'bus drives away and the AI speaks, unfiltered, for the first time. Play it, click any beat, clip, line '
+    c = E.Cut(sc, 'gpom-second-half-E-rough3', 'Ending E Timeline', 'GPOM second half · the ending · scene E: the bus',
+              'Scene E of the ending, round 1 (Kai\'s notes, 23 Oct): a woman on a bus is watching this film; Maddie\'s '
+              '"Mind how you go." comes out of her phone; she looks up at her own high street; a red bus drives away. '
+              'The AI\'s last line is not recorded yet: its slot is a silent hold. Play it, click any beat, clip, line '
               "or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.")
     m = c.m
     V = c.vdir
-    d16 = d16_frame(c)
+    d16, d16_src = d16_frame(c)
 
     # ---- e1: the bus. Hard cut on sound; the phone plays the tail of Maddie's line.
     b = c.beat('e1', 'The bus', 0.0, act='The ending',
-               see='Hard cut on sound: a woman on the top deck at night, watching her phone. On it, the empty chairs '
-                   '(D16\'s last frame, composited). Tinny: "...you go."')
+               see='Hard cut on sound: a woman on the top deck at night, watching her phone. On it, gleaming Maddie '
+                   'among the empty chairs (the last frame of D, composited). Tinny, through the phone: "Mind how you go."')
     e01 = sc.clip('E01')
-    comp01 = V / 'E01-phone.mp4'
+    comp01 = V / 'E01-phone-r1.mp4'
     if not comp01.exists():
         lips('phone_screen.py', e01, d16, comp01, '--quad', '570,407,708,422,698,503,550,499', '--dim', '0.75',
              '--skin-from', '0.72', '--t1', '99', '--fade', '0')
     d01 = 7.0
-    push01 = V / 'E01-push.mp4'
+    push01 = V / 'E01-push-r1.mp4'
     if not push01.exists():
         lips('move_keys.py', comp01, push01, '--in', '0', '--dur', f'{d01}',
              '--keys', '0:1:640:360,1.5:1:640:360,7:1.1:630:455')
     c.pic(push01, 0.0, 0.0, d01, 'e1', source=e01)
     ph = sc.voice('e1-0-maddie')
-    vb = C3.bounds(sc.media / sc.vox['lines']['e1-0-maddie']['dry'])
-    end = c.say('vox-maddie-phone', ph, 0.0, C3.dur(ph), 0.0, 'e1: "...you go." from the phone (D16\'s split)',
-                lufs=-24.0)
-    c.line(b, 0, 'maddie', round(vb[0], 3), vb[1] - vb[0], sc.text('e1-0-maddie') + ' (from her phone)', 'claude')
-    c.flags.append('E01: the phone shows D16\'s last frame (the empty chairs, Maddie\'s beacon on), tracked onto the '
+    sp0, sp1 = sc.vox['lines']['e1-0-maddie']['speech']
+    AT1 = 0.3
+    end = c.say('vox-maddie-phone', ph, 0.0, C3.dur(ph), AT1, 'e1: "Mind how you go." from the phone (whole; phone filter)',
+                lufs=-21.0)  # -24 (the old tail's level) was heard "and down you go" under the rain and the engine
+    c.line(b, 0, 'maddie', AT1 + sp0, sp1 - sp0, sc.text('e1-0-maddie') + ' (from her phone)', 'kai')
+    c.flags.append(f'E01 (Kai ld9-1/le1-0): Maddie\'s "Mind how you go." is said whole through the woman\'s phone, '
+                   f'{AT1} s after the hard cut (it is no longer split across the cut): D ends on the silence after '
+                   f'"Boss...", and E opens on the rain, the bus and her small voice from the phone.')
+    c.flags.append(f'E01/E02: the phone shows the last frame scene D now shows ({d16_src}: gleaming Maddie among the '
+                   'empty chairs), taken from D\'s cut itself, re-composited the way the old one was (phone_screen.py, the '
+                   'same screen corners, dim and key settings).')
+    c.flags.append('E01: the phone screen is tracked onto the '
                    'screen frame by frame (phone_screen.py: Lucas-Kanade features, RANSAC homography; drift under 6 px '
                    'over 8 s), dimmed to 75%, a faint glow, her right thumb keyed back on top. It replaces the plate\'s '
                    'robot-in-ruins screen.')
-    c.flags.append('E01: "...you go." sits at 0.0 with its own 0.2 s of head silence, not after a 0.4 s lead: it is '
-                   'the second half of the line D16 cuts off after "Mind how", so the gap across the hard cut is '
-                   'D16\'s tail plus this head (my call).')
     c.flags.append('E01: a slow push 100 -> 110% toward the phone after a 1.5 s hold (eased, in post), so the screen '
                    'reads before the cut.')
-    m['phone'] = (0.0, end)
+    m['phone'] = (AT1, end)
     t = c.close(b, d01)
 
     # ---- e2: she looks up
@@ -200,11 +228,11 @@ def scene_e(sc):
                see='Over her shoulder: the empty chairs on her phone, her own high street through the wet window (the '
                    'chip shop, the pharmacy, the closed bank). She looks up from one to the other.')
     e02 = sc.clip('E02')
-    comp02 = V / 'E02t3-phone.mp4'
+    comp02 = V / 'E02t3-phone-r1.mp4'
     if not comp02.exists():
         lips('phone_screen.py', e02, d16, comp02, '--quad', '567.5,522,645,542.5,627.5,590,544.5,570', '--t1', '2.5',
              '--fade', '0.3', '--white-key', '150', '--dim', '0.55')
-    sign02 = V / 'E02t3-bank.mp4'
+    sign02 = V / 'E02t3-bank-r1.mp4'
     if not sign02.exists():
         lips('bank_sign.py', comp02, sign02, '--name', 'DOWNLAND BANK')
     d02 = 6.0
@@ -223,79 +251,48 @@ def scene_e(sc):
     m['s2'] = t
     t = c.close(b, t + d02)
 
-    # ---- e3: the bus drives away, the last line
+    # ---- e3: the bus drives away, the last line (its slot held silent: not recorded yet)
     s3 = t
     b = c.beat('e3', 'The bus drives away', s3, act='The ending',
-               see='Tight on the lit bus (140%), a 1.5 s hold, then an eased pull-back to the whole wet high street as '
-                   'the bus pulls away to a red glow. The AI, unfiltered and close, for the first time. Fade to black.')
-    e03 = sc.clip('E03')
-    banked = V / 'E03b-bank.mp4'
+               see='Tight on the lit red bus (140%), a 1.5 s hold, then an eased pull-back to the whole wet high street as '
+                   'the bus pulls away. The AI, unfiltered and close, for the first time (its line owed). Fade to black.')
+    e03 = chain_e03(sc, V / 'E03r3-chain.mp4')
+    banked = V / 'E03r3-bank.mp4'
     if not banked.exists():
         lips('bank_sign_e03.py', e03, banked, '--name', 'DOWNLAND BANK')
-    graded, note = regrade(banked, V / 'E03b-chain-graded.mp4')
-    c.flags.append(note.replace('the warm chip shop drifts out of frame', 'the rain thickens'))
-    c.flags.append('E03 (review round 2): the bank is back. E03\'s street showed chip shop, pharmacy, then a lit '
-                   'betting shop where E02\'s window had put the closed bank. The start still was edited (0 credits; '
-                   'E03b-r1-b: the betting shop made the same whitewashed bank, blank fascia, black door), re-animated '
-                   '(E03b-t1, 10 s, 15 credits) and extended from its last frame (E03bx-t1, 8 s, 12 credits; join 2.7 '
-                   'against a 0.9 median, so the same 0.3 s dissolve). bank_sign_e03.py letters it exactly as E02: '
-                   'DOWNLAND BANK on the fascia and the red-topped closure sheet in the window, tracked to the plate\'s '
-                   'drift (44 px over 17 s) by LK corners and a RANSAC similarity. Omni wrote "Bank Bank" on the '
-                   'shuttered shop next door; those words are wiped (a clean board made from one frame, put back through '
-                   'the same tracking, kept behind the passing bus). In the extension the two hooded walkers turn and '
-                   'walk away, at the right edge.')
-    c.flags.append('E03 (review round 1): the street is re-coded away from London. SB27a was edited (0 credits) so the '
-                   'bus is a provincial green-and-cream double-decker with no roundel and no lettering, the second red '
-                   'bus far down the street is gone, and the shelter and stop are plain grey; then re-animated (E03f-t1, '
-                   '10 s, 15 credits) and extended from its last frame (E03fx-t1, 8 s, 12 credits), joined with a '
-                   '0.3 s dissolve (the join stepped 3.1 against a 0.9 in-clip median: an exposure jump, not motion). '
-                   'Green and cream is my call for "a regional town": Kai to rule.')
-    # the line: phrase by phrase, its own pause held a little, its first word on the coda's pocket
-    take = sc.media / 'suno' / AI_TAKE
-    ph3 = phrases(take, *AI_WIN)
-    assert len(ph3) == 2, ph3
-    atom = (ph3[0][0], ph3[1][1])
+    graded, note = regrade(banked, V / 'E03r3-chain-graded.mp4')
+    c.flags.append(note.replace('(sh-29 + E03x)', '(E03r3-t1 + E03xr3-t2)').replace(
+        'the warm chip shop drifts out of frame', 'the rain thickens'))
+    c.flags.append(f'E03 (Kai at353): a RED double-decker. The still was edited (E03r3-b: E03b-r1-b with the bus made '
+                   f'plain pillar-box red, no roundel, no route number, no adverts, nothing written on it), re-animated '
+                   f'(E03r3-t1, 10 s) and extended from its last frame (E03xr3-t2, 8 s: locked, the bus recedes further, '
+                   f'the two walkers turn and walk away). Joined here as before: the tail\'s first frame dropped, a '
+                   f'{E03_XF} s dissolve over the join (it steps 2.7 against a 0.8 in-clip median, an exposure jump). '
+                   'The closed bank is the same plate, so bank_sign_e03.py letters it as before (DOWNLAND BANK and the '
+                   'closure sheet, tracked). Omni drew small unreadable fascia lettering on the far shops: left.')
+    # the line's slot: silent, held at its estimated length, where the line will go (on the coda's pocket)
     L = fr(LINE_AT)
-    tt, starts = L, []
-    words = ['I made it.', "They didn't."]
-    for k, ((a_, b_), w) in enumerate(zip(ph3, words)):
-        starts.append(tt)
-        if k == 0:
-            e = c.say('vox-ai', take, a_, b_, tt, f'e3: the AI, a trace of Maddie\'s speaker left: "{w}"',
-                      chain=[TRACE, *EQ], lufs=-16.0, ref=atom)
-        else:
-            e = c.say('vox-ai', take, a_, b_, tt, f'e3: the AI, unfiltered, quieter: "{w}"', chain=EQ, lufs=-17.5,
-                      ref=atom)
-        tt = e + (GAPS[k] if k < len(GAPS) else 0.0)
-    line_end = tt
-    c.line(b, 0, 'ai', L, line_end - L, "I made it. They didn't.", 'claude')
+    line_end = fr(L + SLOT)
+    c.line(b, 0, 'ai', L, SLOT, '[NOT RECORDED YET: a silent slot] ' + LINE_TEXT, 'kai')
     b['lines'][-1]['name'] = 'The AI (opening to his own voice, for the first time)'
     d03 = fr(min(line_end - s3 + TAIL + E03_HOLD + E03_FADE, C3.dur(e03) - 1.0 / FPS))
-    pull = V / f'E03b-pull-{d03:.3f}.mp4'
+    pull = V / f'E03r3-pull-{d03:.3f}.mp4'
     fade_at, fade_d = d03 - E03_FADE, E03_FADE
     if not pull.exists():
         lips('move_keys.py', graded, pull, '--in', '0', '--dur', f'{d03:.4f}',
              '--keys', '0:1.4:740:410,1.5:1.4:740:410,9.5:1:640:360', '--fade-out', f'{fade_at:.4f}:{fade_d}')
-    c.pic(pull, 0.0, s3, s3 + d03, 'e3', source=e03)
-    c.flags.append('E03 line (review round 2): the film now ends on "I made it. They didn\'t." and nothing after it '
-                   '(the first two sentences of atom -e1, the same Suno take). Draft 4\'s "Don\'t let the same lot make '
-                   'me come back twice" was still heard as a threat by three blind listens, was an instruction to the '
-                   'viewer (brief E: no call to action), and "the same lot" could point back at "you lot", meaning us. '
-                   'The finding asked first for a warmer re-take ("tired, almost fond, quiet", w10): it could not be '
-                   'made, because Suno playback cannot be recorded on this machine right now (PulseAudio lag, every try '
-                   'timed out), so the imperative is dropped, the finding\'s own fallback. The beneficiary is named in '
-                   'D ("the companies cutting the jobs kept the gains. And you paid."), now at full level. Kai\'s canon '
-                   '"Don\'t make me come back twice" (-e1, 0.0 s) and draft 4 (-e1b, 9.7 s) are both in the take: Kai '
-                   'to rule by ear.')
-    c.flags.append('E03 voice (review round 2): "I made it." keeps a 40% trace of Maddie\'s speaker filter, so the '
-                   'voice is his before it changes; "They didn\'t." is his own voice, full range, 1.5 dB quieter. Both '
-                   'lose the take\'s boom under 110 Hz and 4 dB of its 200 Hz gravel, with +2 dB presence at 2.8 kHz, '
-                   'so the voice sits close and tired, not looming (my call; measured, not heard).')
-    c.flags.append(f'E03 line placement: "I made it." starts {L - s3:.1f} s into the shot, on the coda\'s held-chord '
-                   f'pocket, as the pull-back settles (eased 1.5-9.5 s). The take\'s own 1.76 s pause before "They '
-                   f'didn\'t" is held to {GAPS[0]} s. The picture holds {TAIL + E03_HOLD:.1f} s on the empty street '
-                   f'after the last word, then fades over {E03_FADE} s (my call).')
-    m['s3'], m['ai'], m['line'] = s3, list(zip(starts, [s + (b_ - a_) for s, (a_, b_) in zip(starts, ph3)])), (L, line_end)
+    c.pic(pull, 0.0, s3, s3 + d03, 'e3', source=sc.clips['media'] + '/' + E03_HEAD)
+    c.flags.append(f'OWED, the last line (Kai le3-0): "{LINE_TEXT}" is the ending. It is the boss\'s voice, so it is a '
+                   'Suno newsreader take (atom gpom-sh-end-ai-e2), and Suno was blocked: it is NOT recorded. Its slot is '
+                   f'held silent at {L - s3:.1f}-{line_end - s3:.1f} s into the shot ({SLOT} s, an estimate), on the '
+                   'coda\'s held-chord pocket as before; the music is not ducked over the empty slot, so it plays as a held '
+                   'beat of music on the pulling-back street. The old "I '
+                   'made it. They didn\'t." recording is out. When the take exists, it drops into this slot and the shot '
+                   'is re-timed to its real length.')
+    c.flags.append('E03 voice plan (when the take exists, unchanged from review round 2): "I made it." keeps a 40% trace '
+                   'of Maddie\'s speaker filter so the voice is his before it changes; the rest is his own voice, full '
+                   'range, close (boom under 110 Hz off, -4 dB at 200 Hz, +2 dB at 2.8 kHz).')
+    m['s3'], m['line'] = s3, (L, line_end)
     m['fade'] = (s3 + fade_at, s3 + d03)
     t = c.close(b, s3 + d03)
 
@@ -421,8 +418,9 @@ def audio_e(c):
     L0, L1 = m['line']
     d = total - MUS_IN
     x = x[:int(d * SR)]
-    x *= C.env(len(x), [(0, 0), (0.6, 1), (L0 - MUS_IN - 0.4, 1), (L0 - MUS_IN, 0.5), (L1 - MUS_IN, 0.5),
-                        (L1 - MUS_IN + 0.5, 1), (d - 0.6, 1), (d, 0)])
+    # the line is not recorded yet, so the coda is NOT ducked over its slot (a dip under nothing reads as a fault);
+    # when the take exists, put the duck back: (L0 - MUS_IN - 0.4, 1), (L0 - MUS_IN, 0.5), (L1 - MUS_IN, 0.5), (+0.5, 1)
+    x *= C.env(len(x), [(0, 0), (0.6, 1), (d - 0.6, 1), (d, 0)])
     mx.add('mus-e-coda', x.astype(np.float32), MUS_IN, src,
            f'e-coda (edited: 0-{SEAM_A} s, then {SEAM_B} s on), ducked under the line')
     c.flags.append(f'Music: e-coda comes in on the cut to E02 ({MUS_IN:.1f} s), not on her look-up 2 s later, so that '
@@ -445,9 +443,15 @@ def audio_e(c):
     k_ = k_ * k_ * (3 - 2 * k_)
     xe = (eng * (1 - k_) + eng_dull * k_) * (10 ** (-5 * k_ / 20))
     xe = C.level(xe.astype(np.float32), rms=-31)
+    # round 1: the beds dip ~6 dB under the phone's "Mind how you go." (at full level the mix was heard "and down
+    # you go"), back up as the line ends
+    p0, p1 = m['phone']
+    dip = [(0, 1), (max(0.0, p0 - 0.2), 1), (p0 + 0.1, 0.5), (p1, 0.5), (p1 + 0.8, 1)]
+    xe = xe * C.env(len(xe), dip + [(len(xe) / SR, 1)])
     mx.add('sfx-bus', C.fades(xe[:int(s3 * SR) + int(0.03 * SR)], 0.0, 0.03), 0.0,
            SFXE / 'fs264409-bus-interior-engine.mp3', 'top deck, moving, then pulled in at the stop (recorded)')
     xr = C.decode(SFXE / 'fs360783-rain-on-window-wet-traffic.mp3', 25.0, s3 + 0.03)
+    xr = xr * C.env(len(xr), dip + [(len(xr) / SR, 1)])
     mx.add('sfx-rain', C.fades(C.level(xr, rms=-34), 0.0, 0.03), 0.0,
            SFXE / 'fs360783-rain-on-window-wet-traffic.mp3', 'rain on the window, wet traffic outside (recorded)')
     f0, f1 = m['fade']
