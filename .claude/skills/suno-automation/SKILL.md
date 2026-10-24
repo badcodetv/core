@@ -8,6 +8,12 @@ description: Use when DRIVING Suno from code rather than by hand — loading a s
 **The machine half of Suno.** Everything about making the app do what the sheet says, and
 nothing about what the sheet should say.
 
+🛑 **An exploring round (new voices, new sounds, "experiment") runs ONLY through
+`python3 scripts/suno/sealed-round.py write <dir>` then `run <dir> <title> --yes`** — never `pair`,
+`grid` or `load` on prompts this session wrote or retyped. `run` refuses a round edited after its
+gate. Why, and every trap it guards: [`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)
+(Jack, 2026-10-24: *"i do not want the same mistakes made over and over"*).
+
 ## What this is not
 
 Three jobs touch Suno and they are deliberately separate. Reaching for the wrong one is how

@@ -1,0 +1,3 @@
+- Jack's verdict on the last round (six voices on the same box): he picked this one, brj-sr4-london-music-hall-talker-v6-w30. He said nothing about the other five.
+- Both takes of this prompt run 4:29–4:30. Best one ran 2:49, on a shorter set of lyrics.
+- No fresh listen of these two takes was possible today (the recorder was down). The box above is what made them.

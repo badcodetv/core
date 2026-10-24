@@ -1,0 +1,38 @@
+I've proposed six lead voices below. The research mostly told me what doesn't work rather than giving a proven way to keep Suno English.
+
+**What the research found**
+- **The Best one page** ([suno.com/song/024b82e8…](https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5)): the public tags are only "psych folk, funk", the model is V6 and the creator is binocarlos. The lyrics are about a break-in, rent, eviction and anger at the banks, which is not Kai's text. That confirms the take was made with a different and shorter lyric.
+- **No source I found gives a reliable Suno accent tag.** One general tags guide shows "British" in a prompt only as a scene word ("UK R&B, British influence"), not as an accent setting ([creatormusicprompts](https://www.creatormusicprompts.com/suno-tags-list), [musci.io](https://musci.io/blog/suno-prompts), [hookgenius](https://hookgenius.app/learn/suno-prompt-guide-2026/)). On another AI voice tool, users say voices drift back to American however you word it ([OpenAI forum](https://community.openai.com/t/british-accent-and-pronuciation-in-gpt-4o-mini-tts/1150812)). Naming a specific region and pairing it with tone and age holds better than a vague "English" ([Dubformer](https://help.dubformer.ai/en/articles/8847778-voice-design-prompting), [Resemble](https://docs.resemble.ai/guides/voice-design/how-to-prompt)). Because of this, each voice below names a region and a singing tradition, not just "English".
+- **Keep the box short.** Guides written for v5/v5.5 (I found nothing on v6) recommend four to seven descriptors and 120–150 characters. Past about seven, the model "starts averaging across instructions" ([roo.beehiiv v5.5](https://roo.beehiiv.com/p/suno-v5-5-changed-the-prompting-rules-here-are-the-formulas-that-actually-work)). So each voice should take about one sentence and should not re-describe the backing vocals, which the original box never mentioned.
+- **Describe the voice in parts.** Give register, texture and delivery separately, for example "deep male baritone lead, dry close vocal, controlled rasp", with a held-back verse building to a strong chorus. Words like "powerful" or "soulful" tend to make the model over-sing ([jackrighteous guide](https://jackrighteous.com/ja/blogs/guides-using-suno-ai-music-creation/mastering-vocal-diversity-in-suno-a-detailed-tutorial-for-unique-sounds), [roo.beehiiv 2026](https://roo.beehiiv.com/p/suno-ai-prompt-guide-2026-copy-paste-templates-the-formula-that-actually-works), [frankx](https://www.frankx.ai/blog/suno-prompt-engineering-complete-guide)). That matters for Jack's no-screaming rule.
+- **What English folk singing actually sounds like.** Cecil Sharp described English singers lingering on the weaker notes of a melody, which gives an unrigid, improvised feel. Peggy Seeger argued that ornaments belong to the individual singer ([cpatrust lecture](https://www.cpatrust.org.uk/s/ornamentation-lecture.pdf), [wpvmfm on Sharp](https://wpvmfm.org/2024/04/01/cecil-sharp/)). The tradition grew out of non-professional community singing, and regional accents are often stressed on purpose ([mustrad](https://mustrad.mainlynorfolk.info/reviews/briseann.htm), [singletrackworld](https://singletrackworld.com/forum/off-topic/anybody-here-interested-in-english-women-folk-singers/), [OUP Electric Folk](https://academic.oup.com/book/2505/chapter/142797264)). These details are concrete, English-sounding ways to say "real singer".
+- **What the earlier rounds tell us.** Kai's lyrics have about 1.5× as many words, and the failed takes had a faster vocal and a brighter, flatter sound. So every voice below is deep and chest-led, which should keep the take dark, and has a steady, unhurried delivery, so the extra words don't push it into speed or rap. (The AI listener heard "rap-singing", which I treated as unreliable given Jack's rules.)
+
+```json
+[
+  {
+    "name": "northern-pub-baritone",
+    "idea": "A deep, weathered Northern English baritone from a Yorkshire mill town, singing in his own broad flat-vowelled accent, like a working man leading the room in a pub folk session. Chesty, slightly rough voice with plain, unpolished tuning and a few lingering grace notes on the long words. In the verses he tells the story steadily and doesn't rush, landing the dense lines on the beat with a wry edge. On the chorus he opens into a full-throated, ringing chest voice, big and proud but always sung, never shouted or screamed."
+  },
+  {
+    "name": "west-country-shanty-bass",
+    "idea": "A low, booming West Country English bass-baritone with a burred Somerset accent and rolled R's, in the style of a sea-shanty leader on a quayside. Big, round, dark voice with natural vibrato on held notes, a little gravel, and the ease of a man who has sung unaccompanied all his life. He delivers the verses in a rolling, swinging cadence that rides the groove without hurrying, and leans into the rolled R's on words like 'burring' and 'occurring'. The chorus swells into a hearty, roaring-but-tuneful call that invites a crowd to answer, with no screaming."
+  },
+  {
+    "name": "london-music-hall-talker",
+    "idea": "A deep, dry South London baritone who half-speaks, half-sings the verses in a cheeky, knowing, music-hall storyteller manner, with a dropped-H, glottal-stop London accent. Close, conversational and sardonic, like a raconteur at the bar, with exact diction and an unhurried, swaggering pace: talk-singing, never rapping or rushing. The voice is low and smoky with a slight nasal bite on the sneer lines. On the chorus he breaks into a proper sung melody, bold and theatrical, rising in pitch and volume but staying controlled and musical."
+  },
+  {
+    "name": "choral-baritone-gone-rogue",
+    "idea": "A rich, resonant English baritone with a classically trained, cathedral-choir background and rounded southern English vowels, singing this protest song with a grand, slightly menacing theatricality. Warm, deep chest tone, controlled vibrato and long, ringing held notes, with a hint of folk ornament on the ends of phrases so it doesn't sound operatic. The verses are delivered with measured, crisp diction, letting the words breathe at a steady pace and darkening the tone on the sinister lines. The chorus opens out into a soaring, hymn-like declamation that feels huge and stirring without any shouting."
+  },
+  {
+    "name": "midlands-gravel-crooner",
+    "idea": "A very low, gravelly English baritone with a gentle Black Country/Midlands lilt, close-miked and intimate, like an older folk-rock singer whose voice is worn smooth by years of gigs. Dark and husky, with breath in the tone and a loose, behind-the-beat phrasing that makes the busy lines feel relaxed rather than fast. He sounds untrained and real: slight pitch scoops, warbling turns on the vowels, and a grin audible in the joke lines. On the chorus the voice climbs a few notes and thickens into a cracked, heartfelt cry, raw and emotional but sung, never screamed."
+  },
+  {
+    "name": "trading-duo-deep-english",
+    "idea": "Two deep English male singers who trade lines and blend together, as if two old friends from different corners of England are sharing the song: one a dark Northern baritone with flat vowels, the other a gravelly, lower Cockney bass with a dry, sly tone. They alternate couplets in the verses so neither rushes the dense lyrics, each with untrained, characterful folk phrasing and small warbling ornaments. On the chorus they sing together in rough, ringing unison and thirds, a big, grand, beery blend that climbs to a full chest-voice cry with no screaming. Both are plainly English, natural and conversational in tone."
+  }
+]
+```

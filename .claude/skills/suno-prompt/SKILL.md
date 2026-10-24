@@ -20,43 +20,29 @@ Never let a request stall on "that's not really a prompt question."
 this skill exists to replace. Work in short rounds: ask the few questions that actually change the
 output, draft fast, then refine against what the user hears.
 
-🔑🔑🔑 **FIRST: THE CLEAN-ROOM / BASIC METHOD (Jack, 2026-10-22; working name, a better one later).**
-*"The repo and Suno skills just make the same song, so it is useful to use the clean room or basic
-version."* For a new voice or sound, **do not write the prompt from this skill.** 🔴 **Never use an Agent-tool
-helper for this: it auto-loads CLAUDE.md and memory, and "ignore them" does not unload them**
-(Rounds CR→GG were contaminated that way, 2026-10-23). Run **`scripts/suno/sealed-writer.sh <brief>`**
-(a separate `claude -p` in an empty dir: no repo, memory, skills or tools; `--check` proves it), and
-gate the round with **`scripts/suno/sameness.py`** (no voice phrase shared between prompts). The brief
-is the human's own words verbatim, the facts of the last verdict, the lyric words and a *fresh* listen
-(never old listen logs or old stored prompts from the repo — the writer fetches the reference's
-public Suno page itself). 🔴 **A failed `sameness.py` is a STOP, never a judgement call**: send it back
-to the writer. Round SR1 (2026-10-23) ran with one music paragraph shared by all six prompts because
-the session called it "just the music" — Jack: the voices sound the same, the vibe was lost
-(`docs/suno-gpt/suno-voices.md` §2h). Give it only a plain-words brief: what the human wants, a listen-based description of any
-reference take, and the lyric words without cue tags. It writes short prompts and picks every
-setting. **Run them verbatim**; check only that the lyric words are unchanged and that standing
-rules hold (no screaming, no fast/double-time rap). Every prompt must differ in the *delivery
-category*, not just the accent. Evidence: Bank Robbery Rounds CR, SW, BB, GG worked; Rounds VB
-(shared paragraph) and BO (a voice sentence transplanted onto another box went American) failed
-(`docs/stories/bank-robbery/songs/bank-robbery-jack.md`, `docs/suno-gpt/suno-voices.md` §2e–2f).
-The rest of this file is for refining a take that already works, one tested change at a time.
+🛑🛑🛑 **EXPLORING (a new voice, a new sound, "try different ones", "experiment"): YOU DO NOT WRITE
+THE PROMPTS. Not one word of them.** Jack, 2026-10-24: *"i do not want the same mistakes made over
+and over, i cannot emphasise this enough."* 400+ Bank Robbery takes came out as one voice, and every
+time it was a step where this session — with this file, CLAUDE.md and memory loaded — put its hands
+on the round. The whole round is now one command, and your only job is to supply raw inputs:
 
-🔑🔑 **TWO MODES: EXPLORE fresh, REFINE with the rules** (Jack, 2026-10-22 — read this before any
-other rule in this file). Everything below was learned once, mostly on one song (Karen, Camping), and
-stacking it all onto every prompt made every prompt alike, so every voice came out alike: 325 Bank
-Robbery takes, "the same voice over and over". A prompt written **clean room** (a helper that read
-none of this) fixed it on the first try (`docs/suno-gpt/suno-voices.md` §2e–2f).
-- **EXPLORE** (a new voice, a new sound, "try different ones", "forget everything"): write the
-  prompt fresh, as a producer would. A **full `Lead vocal:` sentence of ~20 words** (age, gender,
-  region/accent, register, texture, delivery, attitude); **Vocal Gender set per prompt**, mixing men and
-  women; **excludes aimed at this voice's opposite** (`belting, falsetto` for a deadpan drawler), never
-  a carried-over list; **per-section delivery cues** in the lyrics (`[Verse 1: lazy drawl]`);
-  **settings chosen per prompt** (weirdness, style influence, Variety, Duration all vary). Every
-  version must differ in voice, not just in adjectives. 🔴 **An accent is not a different singer.**
-  Bank Robbery Round VB: six prompts, one identical music paragraph and one identical delivery
-  ("half-sung half-rapped on the beat"), only the region changed, and Jack heard the same voice
-  six times. Vary the **delivery category** (crooned, chanted, spoken, falsetto, folk-sung,
-  music-hall patter…) and the register in each prompt, and let the music wording vary too.
+```
+docs/stories/<story>/songs/sealed-rN/   jack.md (the message, VERBATIM) · lyrics.txt (words only)
+                                         listen.md (ONE fresh listen, verbatim) · reference.md (URL +
+                                         Suno's raw record) · facts.md (last verdict: facts + quotes)
+python3 scripts/suno/sealed-round.py write <dir>            # sealed writers → gate → lyric check
+python3 scripts/suno/sealed-round.py run <dir> <title> --yes # one Create per prompt, verbatim
+```
+
+`run` refuses a round that was edited after the gate, and `write` stops (no override flag exists)
+if the prompts still share wording after two rewrites. **Before every exploring round, read
+[`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)** — the list of
+every way we made the same song again, and the guard for each. None of the house rules in the
+rest of this file goes into an exploring round, not even as a "tip" in the brief.
+
+🔑🔑 **The rest of this file is for REFINING** — a liked take exists and Jack wants it nudged, one
+tested change at a time. Everything below was learned once, mostly on one song, and stacking it onto
+every prompt is exactly what made every prompt alike.
 - **REFINE** (a liked take exists): start from that take's **sound, not its box**. Listen to it first
   (`suno.mts record <songId>` then `listen_describe`): Bank Robbery's liked "psych folk funk, sitar,
   tin whistle" take was really acoustic flamenco guitar over boom-bap. Keep its settings; change one

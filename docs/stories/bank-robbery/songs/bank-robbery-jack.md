@@ -132,6 +132,44 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
 
+### Round SR5 (2026-10-24): iterations of the music-hall talker — 🔴 STOPPED by the gate, nothing generated
+
+Jack picked **`brj-sr4-london-music-hall-talker-v6-w30`** (did not say which of its two takes: 99ce4b81 or dddd147b): *"please do itirations of this removing, the indian beggining part, adding more pschedelic funk elelemts and layer them, mess around with the voice even though i quite like that one thanks."* (`sealed-r5/jack.md`)
+
+Refine round, `keep.txt` = that take's Style box. Five sealed iterations were written (wah/clav stack, Moog phaser haze, horn stabs + doubled voice, fuzz lead + space bass, gospel call-and-response). **The gate stopped it, twice (6 passes in all):** the writers kept the liked voice wording ("talk-singing the verses like a sly music-hall raconteur … big theatrical sung melody on the chorus") in up to five prompts, which is the same-voice trap. Tooling fix on the way: when a phrase is shared, only the non-owners rewrite now (`sameness.py`); it still failed, because the writers keep pulling back to the liked voice. No fresh listen: `suno.mts record` failed (PulseAudio connection refused). The documented fix (`scripts/audio-server.sh`, then relaunch browser channel 1) closes the Flow/Suno Chrome, so it waits for Jack's OK. Last failed round: `sealed-r5/round.FAILED.json`.
+
+**Waiting on Jack:** how to treat the voice. (1) one iteration keeps the music-hall voice word for word and the rest vary (recommended); (2) keep it in all and change only the music; (3) change it in all. The answer goes into `sealed-r5/jack.md` verbatim, then `sealed-round.py write` → `run … brj-sr5 --yes`. Jack had a clarifying question first (not yet asked).
+
+### Round SR4 (2026-10-24): Best one's own box, only the voice changed — sealed REFINE round
+
+Jack: *"please just do the best one, with a very similar prompt … just to change the voice, but the backing singing is great, the beats great, it is exciting and grand, keep all of that, but this time clean room it."* (`sealed-r4/jack.md`)
+
+**How:** `sealed-round.py` refine mode (new: `keep.txt` = Best one's Style box verbatim). One sealed writer proposed 6 voices; 6 separate sealed writers each rewrote the whole box with their voice in it. The gate lets the kept box's words be shared, never voice words or new wording: pass 1 caught 4 prompts sharing "a deep" after the BPM and 3 copied direction runs; rewritten, pass 2 clean. Every box = Best one's word for word except the voice clause; every writer independently chose Best one's settings (v6, Variety off, w30, style 75, male, Max Mode off) with 240–270 s for Kai's longer lyrics, and added `American accent` to the excludes. Kai's lyrics. Credits 7,570 → 7,510. Unheard.
+
+- northern-pub-baritone (Yorkshire mill-town baritone): https://suno.com/song/75e1ca39-485e-4c3e-abfd-dbe9693fa027 · https://suno.com/song/2d63e41e-a3b8-4992-877d-edf0782d9b16
+- west-country-shanty-bass (Somerset shanty leader): https://suno.com/song/4ffe7401-5248-44f6-b1de-f46188180e66 · https://suno.com/song/703b055e-f853-47b3-8b66-2063c16d96c0
+- london-music-hall-talker (South London raconteur, talk-sung verses): https://suno.com/song/99ce4b81-b7d6-4aa0-8664-01f1c43ea083 · https://suno.com/song/dddd147b-858d-42da-bd2f-9e316edab1b4
+- choral-baritone-gone-rogue (ex-chorister baritone): https://suno.com/song/556f26c9-77f9-42c2-b8e3-64ca9107eac1 · https://suno.com/song/a42607aa-6f31-43d4-abfd-3a8d0fc10603
+- midlands-gravel-crooner (husky Black Country baritone): https://suno.com/song/20e0bcfe-50ac-4f0d-a4d9-b520c0ee0181 · https://suno.com/song/798a5bf0-dd35-42e2-8d37-e230672c6baf
+- trading-duo-deep-english (Northern baritone + Cockney bass trading couplets): https://suno.com/song/a2723139-320d-4c58-93d2-1006d3fc9dd0 · https://suno.com/song/ccaeb492-c407-43dd-8710-80e99382533c
+
+### Round SR3 (2026-10-24): deep English voices like real singers, blended — first round through `sealed-round.py`
+
+Jack: *"lets experiment with better deep english voices that sound like real singers and blend them all, keep kais lyrics, try and listen to the best one, analsye the prompt, make sure to not fall into the traps … do a bunch of experimental basic clean room ones, then we will pick a winner and iterate … i do not want the same mistakes made over and over, i cannot emphasise this enough."* (full message: `sealed-r3/jack.md`)
+
+**Best one, analysed** (fresh listen `docs/listening/log/2026-10-24-103905-…024b82e8.md` + Suno's record): it sounds like a gritty acoustic blues / boom-bap hybrid, ~90 BPM, an acoustic guitar riff driving it, stomping kick and snare, a raspy mid-register British man rap-singing, a shouted gang hook. Its box asks for none of that: 29 words of "English psych folk funk … sitar, tin whistle, hand drums", with **rap and hip hop excluded**, Max Mode off, 170 s, on Jack's **draft 3** lyrics (289 words, not Kai's 428). The SR rounds were the opposite on every count: 120–140-word boxes, Max Mode on, 285–300 s.
+
+**How it was made — no step touched by this session** (`docs/suno-gpt/same-song-traps.md`): raw inputs only in `sealed-r3/` (Jack verbatim, Kai's words, today's listen, Suno's raw record, verdict facts) → one sealed writer proposed 8 experiments → 8 separate sealed writers, one prompt each, none seeing the others → gate: pass 1 caught a shared voice cue in the lyric directions ("pre chorus rising", blues-boom + crooner), both rewrote, pass 2 clean → stamped `round.json` → `run`, verbatim. The box lengths came out 12–79 words; settings vary (v6 throughout, Variety off throughout, weirdness 15–52, style 55–85, three with Vocal Gender none, Max Mode on four). Two Creates timed out on the first pass (0 credits) and were retried once with `run --only`. Credits 7,690 → 7,570. Unheard.
+
+- folk-club-baritone-storyteller (old folk-club baritone, a tale at a pub session): https://suno.com/song/5e34e963-d0e9-4241-a395-6531d70b6c28 · https://suno.com/song/ecdce218-e187-4d09-9fa9-5ffea29d0b6e
+- low-crew-unison-blend (gravel baritone lead + low male crew in unison, work-song stomp): https://suno.com/song/8e15387c-97f4-4a71-9461-adf5d6549868 · https://suno.com/song/ffc51e48-9e2d-4f6b-9ba8-02214a40a104
+- sneering-sixties-crooner (1965 velvet baritone with a sneer, flamenco nylon guitar): https://suno.com/song/e98f0823-7b8c-495c-87b4-ee30e2c3ded9 · https://suno.com/song/ef5bdadb-3172-4bc7-862e-79fc2dd2c26d
+- laid-back-london-talk-singer (low London voice behind the beat, 28-word box): https://suno.com/song/2187f5b5-bb42-4884-a1af-bab0d8a9adee · https://suno.com/song/63ac49ad-d14f-43d7-be78-751fdf9150e3
+- cathedral-bass-and-low-choir (lay-clerk bass, low male voices answering): https://suno.com/song/914ab085-acd4-4292-9698-ef5fea91e84a · https://suno.com/song/e6d654ba-13eb-41cf-aae2-0c762b316ccf
+- northern-deadpan-post-punk (1979 northern deadpan baritone): https://suno.com/song/9c93fe8d-f6c5-406a-a5a4-c8ec3e6f90f7 · https://suno.com/song/bd76b985-6ef8-4d39-86eb-5c3515989f59
+- british-blues-boom-gravel (1964 blues-boom shouter, 12-word box): https://suno.com/song/6ce7428a-0907-4b44-b86f-8845c4f9c48f · https://suno.com/song/92feb350-a066-4ca1-a78d-8bb7a802eda7
+- trip-hop-two-voice-duet (hushed baritone + weathered older singer): https://suno.com/song/543925e7-c148-450b-86b1-4315eab5a714 · https://suno.com/song/bfe7a833-7d16-459e-8969-c7221603a6aa
+
 ### Round SR2 (2026-10-23): sealed + internet only — Best one's beat, six low English voices, psychedelic funk
 
 Jack, after SR1: *"weve lost the vibe of the best one, did the same mistake happen again, the voices sound the same. please do more deep voices, forget the gangster thing, just focus on the best ones beat, then putting few varied different low english voices over it, psychdelic funk is the vibe, do not use the repo or the skills, just do a clean room with reseraching the internet only. clean room only. thanks"*

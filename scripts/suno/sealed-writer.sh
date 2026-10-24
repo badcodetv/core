@@ -7,6 +7,9 @@
 # directory outside the repo: no CLAUDE.md, no memory, no skills, no tools, no MCP, a one-line
 # system prompt. Its only knowledge is the brief file you give it.
 #
+# 🛑 Don't call this by hand for a round — scripts/suno/sealed-round.py builds the brief from raw
+#    files, runs the writers, gates and stamps the round (docs/suno-gpt/same-song-traps.md).
+#
 # Usage: scripts/suno/sealed-writer.sh [--web] <brief.md> [out.md]
 #   --web lets it use WebSearch/WebFetch (internet research, still no repo).
 #   The brief should be Jack's own words, the listen log text and the lyric words — never a

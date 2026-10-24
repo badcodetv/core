@@ -691,6 +691,16 @@ Round SR1 was the first written by `scripts/suno/sealed-writer.sh` (truly no rep
 2. **The gate was overridden.** `sameness.py` flagged it and the session decided the shared part was "just the music". A failed gate is a stop: send the failure back to the writer and rewrite, never run it.
 3. **The brief leaked the repo.** It carried old listen logs and the old stored prompt. The brief may hold only the human's words verbatim, the facts of the last verdict, the lyric words and a *fresh* listen; the writer reads the reference take's public Suno page itself.
 
+### 2i. 🛑 The whole exploring round is one sealed command (Jack, 2026-10-24)
+
+Jack, after the SR rounds: *"i do not want the same mistakes made over and over, i cannot emphasise
+this enough."* Each failure in §2e–2h was a step where the repo-loaded session touched the round, so
+the round no longer has such a step: `scripts/suno/sealed-round.py` builds the brief from raw files,
+gets N experiments from one sealed writer and one prompt each from N more, gates them
+(`sameness.py`, now Style boxes + lyric directions + constant settings), checks the lyric words,
+rewrites the offenders, and stamps the round; `run` refuses an unstamped or edited round. The full
+trap list with the guard for each: [`same-song-traps.md`](./same-song-traps.md).
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact

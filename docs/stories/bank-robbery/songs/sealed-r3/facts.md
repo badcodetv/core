@@ -1,0 +1,4 @@
+- The last two rounds (each six prompts) were written by a writer like you, from a brief, with Kai's lyrics. Their settings: Variety off and Max Mode on in every prompt, Duration 285–300 s in every prompt, style influence 75–85, weirdness 20–45. Their Style boxes were 120–140 words each (Best one's was 29).
+- Verdict on the first of them, Jack's words: "weve lost the vibe of the best one … the voices sound the same." In that round all six Style boxes shared one identical music paragraph; only the voice line differed.
+- The second of them has not been heard yet.
+- Across many earlier rounds, whenever the prompts in a round shared wording (a music paragraph, a delivery sentence), the voices came out the same. Rounds where each prompt was a different kind of performer, written fresh, gave Jack voices he liked.
