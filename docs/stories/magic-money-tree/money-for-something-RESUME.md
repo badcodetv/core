@@ -15,7 +15,13 @@ direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 >   [`characters/host-v2-balaclava.md`](./characters/host-v2-balaclava.md). No Flow Character: TTS voice, mouth never seen.
 > - **Script:** [`money-for-something-2026-10-26-script.md`](./money-for-something-2026-10-26-script.md): about 30 beat
 >   briefs (cold open → the PM's week → money → AI week → quick-fire → ending), **Jack's column blank**.
-> - **▶ RESUME HERE: line 0a**, the cold open (he's from the future and looks different this week; angles: "had some
+> - **Format rethink (Jack, 25 Oct, later):** host on screen sparingly (intro, outro), it's for short form →
+>   [`money-for-something-2026-10-26-format.md`](./money-for-something-2026-10-26-format.md): one story per short,
+>   voice + footage carry the jokes, host as a 1–2 s silent tail. Jack picked **overlay B (Transmission)**.
+>   **▶ RESUME HERE: [`money-for-something-2026-10-26-shorts-script.md`](./money-for-something-2026-10-26-shorts-script.md)**:
+>   ten shorts drafted (my lines, for Jack to change), short by short. **End of 25 Oct:** 1 locked line + slams built,
+>   2 rebuilt, 3 and 4 cut, 5 angles offered; resume at the ▶ table at the top of that file.
+> - *(superseded by the shorts script)* line 0a, the cold open (he's from the future and looks different this week; angles: "had some
 >   work done", nobody can tell what's under it, he's seen this week already, the pint he can't drink). Jack sends a
 >   rough, I bullet versions, he picks; then beat by beat down the table.
 > - **Then:** add a Budget line to row 5a after Wednesday 28 Oct; talking clips from plate H1 (Frames, muted, TTS voice
