@@ -2376,3 +2376,34 @@ anti-slop stack on this engine: a humble named camera, a non-Portra stock, one p
 mid-action, and wear in the set all rendered as asked, and none of the sixteen came back as a glossy, symmetrical
 studio frame (round 1, without them, came back that way six times out of six). Record:
 `docs/stories/magic-money-tree/characters/host-v2-balaclava.md`.
+
+## Video-game styles on NB2 — 2026-10-25 `[observed, n=16]` `[practitioner]`
+
+Run for the Bank Robbery song's music video (`docs/stories/bank-robbery/songs/mv-speakeasy-mint/storyboard.md`,
+"Video-game sweep"): eight game looks described by traits only (no game named), one shared cross-section scene,
+NB2, 9:16, 2 each.
+
+- 🔴 `[observed, n=2]` **"A screenshot from a … video game" summons a game HUD in 2 of 2** (health bar, score,
+  timer, "LEVEL 1", "MISSION 04", "CAMERA UI").
+- 🔴 `[observed, n=1 of 2]` **"Loading-screen art" printed "LOADING…"** in the corner.
+- ✅ `[observed, n=4]` **"A photo-mode capture from a … video game" gave a clean frame with no interface in 4 of 4.**
+  Use it for in-engine looks.
+- 🔴 `[observed, n=1]` **A colour word next to "neon" became sign text:** "hot pink neon" → a sign reading "HOT PINN".
+- 🔴 `[observed, n=1 of 2]` **In pixel art, "a red crowd and a blue crowd of mixed ages and skin tones" drew solid
+  red and solid blue people.** Put the team colour on banners and scarves, never on the crowd.
+- 🟡 `[observed, n=4]` **Realistic in-engine looks (western, 1930s mob) come back as a dark miniature diorama** with
+  tiny faces, everything sharp. Good mood; weak for faces.
+- 🔴 `[observed, n=2]` **"Chunky stylised 3D figures … bright toy colours" gives glossy plastic toys**, the sheen the
+  slop guides name, even with "matte" in the prompt.
+- ✅ `[observed, n≈15 of 16]` **Naming where the camera stands ("seen from across the street, low and to the left, so the
+  building stands off-centre") broke the symmetry of a square-on cross-section**, which a composition word did
+  not (§37). "Four floors only" was still ignored in 4 of 16 (an extra bedroom floor).
+- `[official, via press]` Mafia: The Old Country's art director named **decay** as the look and warned against a
+  "travel brochure" look ([Game Informer, 2025-07-31](https://gameinformer.com/2025/07/31/building-an-old-but-new-setting-in-mafia-the-old-country)).
+  RDR2's realism is credited to light, haze and atmosphere more than to models ([itechguides](https://www.itechguides.com/what-makes-red-dead-redemption-2s-visuals-look-so-realistic/)) `[practitioner]`.
+  GTA-style art prompts lean on bold outlines, a cel or vector finish and saturated side light ([lorka.ai](https://www.lorka.ai/knowledge-hub/gta-ai-filter-prompts)) `[forum]`.
+- ⬜ `[official]` The Gemini API docs (checked 2026-10-25) call NB2 (`gemini-3.1-flash-image`) the previous generation and
+  recommend **Nano Banana 2.1** ([ai.google.dev](https://ai.google.dev/gemini-api/docs/image-generation)). Whether Flow
+  offers 2.1 is unchecked.
+- ⬜ Google has blocked Disney requests since a December 2025 cease-and-desist ([Android Authority](https://androidauthority.com/google-gemini-blocks-disney-generation-3639914)) `[press]`;
+  whether naming a game is blocked is unknown. We don't name games anyway (rule zero's cousin).

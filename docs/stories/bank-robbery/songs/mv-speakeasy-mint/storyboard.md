@@ -6,21 +6,20 @@ song take is not picked yet, so this is timed by lyric section, not by seconds.
 
 ## ▶️ Resume here (2026-10-25)
 
-**Where it stands:** storyboard written (19 shots against Kai's lyrics, below). Style is still being chosen:
-three rounds on one cross-section still, then a ten-style sweep. Nothing animated yet. All stills are in
-Flow project `dedd295f-a519-46bb-aeb8-0e422a58e757` ("Oct 25 - 09:43"); prompts and verdicts are in this file.
+**Where it stands (latest, 2026-10-25):** after the ten-style sweep Jack asked for **video-game styles**.
+Eight ran (see "Video-game sweep" at the bottom). The first run landed in "mmt jack" by mistake; **Jack asked for them here, so all eight were re-run in `dedd295f` ("Oct 25 - 09:43"), 16 of 16 confirmed in the project.** The re-run is new takes (new seeds), media ids under the sweep results. My shortlist: **V1** (crime-satire key art, GTA-like),
+**V3b** (1930s mob photo mode, Mafia-like), **V5b** (1990s point-and-click painting). Each style carries its own
+era, so the pick settles the era too. All stills are in Flow project `dedd295f-a519-46bb-aeb8-0e422a58e757`
+("Oct 25 - 09:43").
 
-**My shortlist from the sweep:** S5 (1960s heist titles), S9 (gangster game cartoon, Jack's "mafia game"
-idea), S6 (linocut, needs equal colour for both crowds), S1 (Georgian etching, crop the forged signature).
-Round 3 (the adult-sitcom look, 3a) is still in the running too.
+**Earlier shortlist, still alive:** S5 (1960s heist titles), S9 (gangster game cartoon), S6 (linocut),
+S1 (Georgian etching), round 3's 3a (adult sitcom).
 
-**Waiting on Jack:**
-1. Pick a style, one or two, or a mix (e.g. S9 characters in S5 colour).
-2. The era: 1920s Prohibition, or today with a speakeasy under it.
+**Waiting on Jack:** pick a style (one, two, or a mix).
 
-**Then:** a cleaned-up round of the pick (blank margins on print styles, fixes listed in the sweep results),
-then **one Omni Flash test clip** to see if the style survives motion (fine hatching may shimmer; untested).
-Then the shot list's stills, one at a time, then clips. Song take still unpicked (Jack is showing Kai).
+**Then:** a cleaned-up round of the pick (fixes listed under each sweep's results), then **one Omni Flash test
+clip** to see if the style survives motion. Then the shot list's stills, one at a time, then clips. Song take
+still unpicked (Jack is showing Kai).
 
 ## What Jack locked (2026-10-25)
 
@@ -307,3 +306,131 @@ and that the margins are blank**, or the frame is cropped. Real text goes on in 
 
 **For Omni (inferred, untested):** fine hatching (S1, S2, S3) is likely to shimmer and "boil" when animated;
 flat shapes (S4, S5, S6, S9) should hold. One test clip of the chosen style answers it.
+
+## Video-game sweep (Jack, 2026-10-25)
+
+Jack: *"how about we try a bunch of video game styles, like gta, red dead redemption 2, mafia. Please avoid
+elements of 'AI slop' … optimise this prompt for Nano Banana 2/Omni Flash … use the cinematography file."*
+
+**Rule zero holds:** no game, studio or show is named in any prompt. Each style is described by its traits
+and its period. *(Web pass 2026-10-25: Google has blocked Disney requests since its cease-and-desist; whether
+game names are blocked is unknown. We don't name them either way.)*
+
+**Each style brings its own era.** That answers the open era question from the pictures: the crime-satire
+style is today, the western is 1899, the mob game is the 1930s.
+
+**Shot spec (shot-craft), changed from the sweep:**
+- **For:** the whole argument in one picture. The height of the building is the wealth gap.
+- **Cost in frame:** grandma freezing in the attic, the crowds fighting.
+- **Light (all in the world, a colour each):** the candle (yellow on ice blue), the street lamp (yellow),
+  the Mint's emerald press lamps, the orange furnace. Warmer the lower you go.
+- 🔴 **Camera, the one design change:** the straight-on elevation was a symmetry magnet (`nano-banana-2.md`
+  §37; "looks like AI" in `symptoms.md` is too symmetrical and too evenly lit). Now the camera **stands across
+  the street to the left, low, looking up**. The building sits off-centre and the street runs out of frame.
+  The camera position is named rather than described with a composition word (§3c).
+- **Foreground:** the police vehicle's roof cuts across the bottom-left corner, a foreground occluder (free depth).
+- **Withheld:** the leaders' faces (backs to us).
+
+**Anti-slop, applied (repo toolkit + web pass 2026-10-25):**
+- **Decay and wear in the world:** soot, peeling paint, puddles. Mafia's own art director named "decay" against
+  a "travel brochure" look (Game Informer, 2025) `[official, via press]`.
+- **Hard light with real shadows.** The video-slop tell is one soft "cloudy afternoon" key with no hard shadows
+  (opus.pro) `[practitioner]`.
+- **People mid-action, not posed:** shoving, playing, dancing, shivering.
+- **A colour named for each place**, two lights of different colours (`docs/google-flow/` rule 2).
+- **No kill-list words** ("cinematic", "high quality", "8K", "photorealistic", "masterpiece", "epic").
+- 🟡 **Game styles invite on-screen interface** (score, map, logo). "Photo-mode capture" is used on the in-engine
+  styles to ask for a frame with nothing on screen. That this word works is **unverified** (my inference; the web
+  pass found no source for it).
+- **Omni later (inferred, untested):** flat colour and hard shapes hold better in motion than fine texture or
+  hatching. One test clip of the pick settles it.
+
+**Engine:** Nano Banana 2, 9:16, 2 outputs each, run one at a time, project `dedd295f…`.
+⬜ The Gemini API docs now name **Nano Banana 2.1** as the current model and NB2 as the previous generation
+(ai.google.dev, 2026-10-25) `[official]`. Not seen in Flow's picker; we stay on NB2 (house rule) until checked.
+
+**Shared scene paragraph (identical in all eight):**
+
+> A tall narrow city building cut open in cross-section like a doll's house after dark, four floors only, seen
+> from across the street, low and to the left, so the building stands off-centre and the street runs out of
+> frame. Attic: an old woman in a coat shivers by one candle in an ice blue room. Street level: a brick red
+> bakery; a red crowd and a blue crowd of mixed ages and skin tones shove each other under a yellow street lamp,
+> the roof of a police vehicle in the near left corner. Basement: in emerald lamplight, printing presses throw
+> banknotes into the air while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat
+> and gold chain dances. Bottom: an orange furnace. Soot, peeling paint and puddles. Thanks.
+
+**The eight style clauses** (each prompt = clause + the shared paragraph):
+
+| # | Jack's reference | Style clause |
+| --- | --- | --- |
+| V1 | GTA (loading-screen art) | `Open-world crime satire video game loading-screen art, present day: a painted illustration with thick black ink outlines, flat cel colour with hard-edged shadow shapes, semi-realistic people full of attitude, the last coral and mango light of the sky laid in flat bands, hot pink neon.` |
+| V2 | Red Dead Redemption 2 | `A photo-mode capture from a western open-world video game, 1899: painterly realism, a frontier town of weathered timber and brick, oil lamps throwing hard amber pools, cold blue moonlight, dust and woodsmoke hanging in the air, mud churned in the street.` |
+| V3 | Mafia | `A photo-mode capture from a 1930s gangster video game: an American city in decay, soot-black brick, rain-wet cobbles, hard directional light from each lamp with deep dark shadows like an old master painting, warm amber, bottle green and oxblood.` |
+| V4 | Cutaway colony game | `A side-on cutaway from a colony-management video game: every room a lit box like an ant farm, chunky stylised 3D figures with big heads and stubby limbs, bright toy colours on matte surfaces.` |
+| V5 | 1990s point-and-click adventure | `A hand-painted background from a 1990s point-and-click adventure game: gouache with visible brush strokes, slightly crooked cartoon architecture, chunky figures with big hands, low screen resolution, warm lamplight against deep violet night.` |
+| V6 | Late-1990s console game | `A screenshot from a late-1990s console video game: blocky low-polygon figures with flat painted faces, blurry low-resolution textures stretched across the walls, distance fog at the far end of the street, a saturated primary palette.` |
+| V7 | 16-bit side-scroller | `16-bit side-scrolling video game pixel art: one even pixel grid, a limited palette of thirty-two colours, crisp pixel edges with dithered shading, small sprite characters.` |
+| V8 | Cel-shaded comic-book game | `A cel-shaded comic-book video game render: 3D figures and buildings covered in thick hand-inked black contours and rough crosshatching, textures painted by hand with visible brush marks, flat bold colour.` |
+
+V7 is side-on by nature, so its camera line will be ignored or will fight the style; that's expected.
+
+### Video-game sweep results (2026-10-25)
+
+All eight ran first time (NB2, 9:16, 2 each). 🔴 **They landed in Flow project "mmt jack" (`cb27208c-4b16-426d-9144-c394f2735c15`), not `dedd295f`**: `flow_open_project` reported `dedd295f` open, but the tab was on "mmt jack" by the time the stills were generated (cause unknown; checked over CDP 2026-10-25). Contact sheets were checked whole; the crowd
+and Mint floors were checked zoomed on 1a, 2a, 3b, 5b, 7b and 8a.
+
+| # | Style | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| V1 | Crime-satire loading-screen art (GTA) | b29f5d9e · 0319c4d2 | ⭐ The strongest and most readable. Bold ink, coral sky, the off-centre camera worked, the police car sits in the foreground. 🔴 1a printed **"LOADING..."** and a neon sign **"HOT PINN"** ("hot pink neon" was written onto a sign). 1b has gibberish neon signs, and the crowd stands on a ledge floating in mid-air |
+| V2 | Western photo mode (RDR2) | 211722d1 · 8cb4254b | Atmospheric: mud, haze, a barred police wagon, a fiddle and banjo band (1899 got the era right). 🟡 It reads as a **miniature diorama render**, dark, with small figures. The red/blue crowds are mostly lost. 2b has five floors |
+| V3 | 1930s mob photo mode (Mafia) | 2b0d3f8a · 63202310 | ⭐ The best mood: rain, amber lamps, steam, a 1930s car in the foreground, an accordion band. 3b is the pick. 🟡 The same diorama read as V2, and dark. Faces are tiny, which will be hard for Omni |
+| V4 | Cutaway colony game | 3b557d35 · f2d07dc2 | ❌ Shiny toy figures, exactly the plastic sheen the slop guides name. 4b's crowd reads as children (`no kids` was a Camping rule, but it's still wrong here) |
+| V5 | 1990s point-and-click painting | 019bd9f0 · 9b436ed1 | ⭐ The furthest from slop: gouache, crooked buildings, angry expressive crowd faces, a grinning mayor. 5b is the pick. 5a has five floors and a tiny "Bakery" note |
+| V6 | Late-1990s console screenshot | 32a9f5e2 · 4948d11a | 🔴 **"Screenshot" brought in a game interface in 2 of 2**: "CAMERA UI", "MISSION 04", "LIFE", "HP", "SCORE: 00420", "LEVEL 1". The low-poly look only half landed. Fun as a joke, unusable as-is |
+| V7 | 16-bit pixel art | ac27234d · 080bf869 | Charming and clean, with a consistent pixel grid at zoom. 🔴 7b drew the crowds with **solid red and solid blue skin** (the team colour became the skin colour, so mixed skin tones were lost). 7a has five floors |
+| V8 | Cel-shaded comic-book game | 9dd8eee7 · bf23d8ff | Good: inked contours, gritty, a mixed crowd, the press spitting notes. Close to V1 but darker and less distinct |
+
+**Caricature check (zoomed):** ✅ no minstrel or antisemitic features in any checked frame. ✅ The bowler mayor
+held in 16 of 16; no Monopoly man. ✅ The pinstripe-gangster band held in 16 of 16. 🟡 V7b's red and blue
+people (above).
+
+**Across the sweep:**
+- ✅ **The camera position worked.** "Seen from across the street, low and to the left" put the building
+  off-centre in nearly every take, with the police vehicle as a foreground occluder. The straight-on symmetry is gone.
+- 🔴 **"Four floors only" was ignored in 4 of 16** (2b, 5a, 6a, 7a added a bedroom floor).
+- 🔴 **Game words summon game text:** "loading-screen" → LOADING; "screenshot" → a HUD. **"Photo-mode capture"
+  gave a clean frame in 4 of 4** (V2, V3), so that word earns its place.
+- 🟡 **The two realistic styles (V2, V3) come back as a dark miniature diorama** with tiny faces. Good mood,
+  but the weakest for the caricature satire and the hardest for Omni.
+
+**My shortlist:** **V1** (GTA: the punchiest, needs its text cleaned), **V3b** (Mafia: the best mood),
+**V5b** (point-and-click: the least AI-looking). V7 if Jack wants a retro joke.
+
+**Fixes for the next round of whichever wins:** drop "loading-screen" (keep the traits only); never put a colour
+word where it can become a sign (say "hot pink light from a neon tube", or drop the neon); give each crowd
+its colour on **banners and scarves**, never on the people; repeat "four floors" by naming them in order.
+
+### Re-run in the right project (2026-10-25)
+
+The first run (verdicts above, media ids in the table) is in Flow project **"mmt jack"** (`cb27208c…`). Jack asked
+for them in **"Oct 25 - 09:43"** (`dedd295f…`), so the same eight prompts were re-run there, word for word. The
+tab's project was checked over CDP before and after; all 16 are in `dedd295f`. **These are new takes, not copies**
+(Flow has no move between projects), so they differ from the ones judged above. A glance at the contact sheet shows
+the same patterns: V1b printed "LOADING..." again; V6 got a HUD again in 2 of 2 ("STAGE 4", "TIME 01:14",
+"DOWNTOWN"). The re-run takes haven't had a zoomed caricature check yet: do it on whichever Jack picks, before
+anything is built on it.
+
+| # | Style | Media in `dedd295f` (a · b) |
+| --- | --- | --- |
+| V1 | Crime-satire key art (GTA) | fc2c6614 · 49c7588d |
+| V2 | Western photo mode (RDR2) | 9e9fce14 · a21de852 |
+| V3 | 1930s mob photo mode (Mafia) | 9268a358 · fc0d5fbb |
+| V4 | Cutaway colony game | a2547b23 · cfd17f64 |
+| V5 | 1990s point-and-click painting | 9688d22b · 0de323f9 |
+| V6 | Late-1990s console screenshot | f9031fd3 · 63f285bb |
+| V7 | 16-bit pixel art | 4a384654 · b90b38e0 |
+| V8 | Cel-shaded comic-book game | ba276c8d · a8ba87b7 |
+
+🔴 **Automation lesson:** `flow_open_project` said `dedd295f` was open, yet the first run's stills went to another
+project (probably a parallel session moved the shared tab). Before and after a batch, check the tab URL
+(`curl -s 127.0.0.1:9222/json/list`), and look for the new media ids in the page.
