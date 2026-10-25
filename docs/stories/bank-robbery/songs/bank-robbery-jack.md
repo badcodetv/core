@@ -3,6 +3,12 @@
 Jack's own song (2026-10-20). A scratchpad that sits apart from the film's score, so nothing here
 changes the cut, the score sheet or any other file.
 
+## Music video (2026-10-25)
+
+Jack has stopped Suno for now: enough takes to show Kai. Eight researched ideas:
+[`music-video-ideas.md`](./music-video-ideas.md). **Jack chose idea 8, "The Speakeasy Mint"**: storyboard, style
+rounds and the resume point are in [`mv-speakeasy-mint/storyboard.md`](./mv-speakeasy-mint/storyboard.md).
+
 ## Still to decide (2026-10-21)
 
 Jack is working out the lyrics and the style before anything goes into Suno.
@@ -131,6 +137,44 @@ influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 1
 - br-jack-copfunk-A-v6-w30 — https://suno.com/song/e1905c0c-b4dc-4312-ad48-e70e5d64b93a
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
 - br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
+
+### Round SR7 + SR8 (2026-10-24): the Brixton song with classical/opera (refine) and a western/opera psych-funk clean room
+
+Jack: *"okay forget those last ones, maybe do a song like this brj-sr5-brixton-baritone-dub-echo-v6-w35 but add classical and operatic elements to the background, but heavy on the psychedelic funk and cool chill voice that gets excited when it needs to and fits the song thanks"*, then mid-turn: *"do a western, opera, but mainly psychedelic funk clean room version too thanks."* He named the title, not the take, so both Brixton takes were listened to (`docs/listening/log/2026-10-24-152307-…7aa63b33.md`, `…152334-…3dd31d66.md`): both heard as British spoken word / rap over funk and boom-bap; neither listener mentioned the tin whistle or dub.
+
+**SR7** (refine, keep.txt = the Brixton box, count 4): first attempt STOPPED by the gate after two rewrites (shared lyric directions, 3 about the voice; kept as `sealed-r7/writers.try1`, `round.FAILED.try1.json`); fresh writers passed. 3 of 4 ran; 🔴 **pizzicato-quartet-mellotron-psych was aborted by suno.mts before spending** — its Style box is 1,098 characters, over Suno's 1,000 cap. The gate has no length check (tooling gap). Unheard.
+
+- axelrod-baroque-strings-chorus (pirate-radio DJ cool, baroque strings + harpsichord, opera choir aahs): https://suno.com/song/5bf0aabd-ef19-4c37-a43c-6a6f1c5b6892 · https://suno.com/song/4379a230-11ac-4df4-b4e4-ef695b8ef324
+- soprano-descant-wah-funk (younger stoned-cool tenor-baritone, falsetto flicks, cello drones, distant soprano descant): https://suno.com/song/64e0e88c-cb50-4239-99fd-74e42d5a0275 · https://suno.com/song/c156499a-1090-4036-85c4-ad1605d896b1
+- male-opera-chorus-timpani (older smoky baritone, Verdi male chorus, French horns, timpani): https://suno.com/song/d97cb1ce-9949-4ea6-b852-86986fbc1354 · https://suno.com/song/b46f2345-5743-4d9d-ad84-e66b3ff1dc8a
+
+**SR8** (exploring clean room; jack.md = both messages; reference + listens of the Brixton takes; count 4): gate pass 2 clean. All 4 ran (one reported a timeout but its takes arrived). Max Mode off. Unheard.
+
+- brixton-baritone-dry-room-whistle-soprano (dry room, western tin whistle + baritone twang, wordless soprano): https://suno.com/song/3e9fc3d7-88f7-4f0f-912c-fbc14386de50 · https://suno.com/song/5d8d6550-08e5-466f-9555-59e7dd54982b
+- smoky-tenor-falsetto-tag-stack (hushed tenor → soul falsetto, clavinet, horse-trot, male opera choir): https://suno.com/song/aaa2d352-4399-48e9-9bf8-a6ca98cafcc9 · https://suno.com/song/d72b91dd-d29b-477b-a0a7-6c4bf01ba54d
+- geezer-and-diva-call-and-response (London geezer vs bel canto mezzo, mariachi trumpet): https://suno.com/song/5732c1f4-2417-451d-a1ec-b4fe1e236ece · https://suno.com/song/76808f42-2890-4cdc-9e2f-98e6e8ab1102
+- deadpan-gunslinger-scene-in-tags (14-word box, the scene in the lyric tags): https://suno.com/song/7e599698-ca34-42fd-98dc-ab67e348f4e1 · https://suno.com/song/b31b8ef6-5962-40f4-aa88-8f1147cfc2ac
+
+Credits 7,380 → 7,310.
+
+### Round SR6 (2026-10-24): psych folk funk from I Ain't Worried / Million Dollar Baby / Eminence Front — sealed exploring round
+
+Jack: *"please make a pysch folk funk one inspired from songs like, "i aint worried" by one republic and "million dollar baby" and "eminence front" by the who, please reserach the internet on how to do this, this is just an experiment so just clean room it thanks"* (`sealed-r6/jack.md`). Inputs: his words + Kai's lyrics only (no reference, listen or facts). Count set to 4. Gate pass 1 clean. Writers chose Max Mode on and 300 s in all four (20 credits/Create); one brought sitar + tabla back. Credits 7,460 → 7,380. Unheard.
+
+- falsetto-whistle-halftime (whistle hook, reverb acoustic, airy falsetto, gang singalong): https://suno.com/song/814c68e9-c95b-4d58-9d3e-739b40767e4f · https://suno.com/song/daa6a6b9-d130-4d0d-98a4-738a6e64dd93
+- cool-organ-sequencer-arena (two-chord organ vamp, synth arpeggio, deadpan half-spoken, 116 BPM): https://suno.com/song/48af7aed-dec4-4bf3-b11b-381714af9231 · https://suno.com/song/03136370-fe5c-48fa-8afe-3eb7dce9e082
+- sitar-tabla-storyteller (smoky female alto, crowd call-and-response, 70 BPM): https://suno.com/song/9dfead7f-472e-4212-b33e-ab560fb97fdc · https://suno.com/song/b8890442-5159-4011-9557-578055056794
+- duet-kids-choir-bracket-driven (clavinet + bass loop, baritone + female duet, kids' choir): https://suno.com/song/8a2527af-cb15-4ae2-81c6-574a5049d2db · https://suno.com/song/3fe530bf-2c6c-45e4-8860-3cff2ca60a8c
+
+### Round SR5b (2026-10-24): iterations of the music-hall talker, take 2 — generated
+
+Jack: *"the second take, yeah you can restart chrome, please make these songs dope thanks"* → the pick is **dddd147b**. He did not choose a voice option, so the writers had only his own words ("mess around with the voice even though i quite like that one"). Recorder fixed: WSLg's PulseAudio wedged mid-record (playback froze at 0:58), so `audio-server.sh` started the private server and channel 1 was relaunched on it. Fresh listen of dddd147b: `docs/listening/log/2026-10-24-145305-…dddd147b.md` (funk + acoustic hip-hop, fingerpicked guitar, whistle intro 0:00–0:18, offbeat skanks, ~99 BPM; best moment the 1:07 gang chorus, worst the dry "rent seeking" aside at 0:48). Gate: pass 1 failed (14 shared voice phrases), pass 2 clean. All five dropped the sitar and exclude sitar/tabla/raga; every intro is tin whistle on the groove. Settings were identical in all five (v6, Variety off, male, 270 s, Max Mode off; w34–40, style 75–80). Credits ~7,510 → 7,460. Unheard. First failed attempt kept as `sealed-r5/round.FAILED.v1.json`.
+
+- cockney-landlord-wah-clav (gravel East End landlord; wah clavinet, fuzz lead): https://suno.com/song/04388901-919f-495e-8954-43706025ab8c · https://suno.com/song/bd117249-57fb-4843-98a5-e8ab1119766e
+- nasal-deadpan-phased-hammond (reedy North London tenor; phased Hammond, brass stabs): https://suno.com/song/16affea1-bc70-4f51-9791-e50da0703b42 · https://suno.com/song/910788fd-4300-4f8c-a80d-91ff738cd14f
+- brixton-baritone-dub-echo (warm Brixton patter; dub echo, spring-reverb skanks, fuzz bass): https://suno.com/song/7aa63b33-dbfa-4201-9b3b-78ae4ba48103 · https://suno.com/song/3dd31d66-3c71-498a-98df-9d57a340e4b2
+- glam-crooner-moog-phaser (glam vibrato + falsetto; Moog bass, phaser guitar, strings): https://suno.com/song/15c96bc7-535e-461f-aeb6-dcc4dcb1e42a · https://suno.com/song/ef14d8e1-787e-42c8-9ca6-692f68930063
+- market-barker-tape-flange-voice (Estuary market barker, double-tracked flanged voice; Mellotron, horns): https://suno.com/song/2c9c3f3c-f724-46d1-99d1-d80ba9d96db8 · https://suno.com/song/31afe137-0282-424d-85c3-3e77c93260a8
 
 ### Round SR5 (2026-10-24): iterations of the music-hall talker — 🔴 STOPPED by the gate, nothing generated
 

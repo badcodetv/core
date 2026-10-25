@@ -2331,3 +2331,48 @@ every one still spelled the quoted word ("badcode") correctly. Jack suspected th
 it. To *depart* from one, describe it in a sentence and leave it off. Also confirmed in the same session: NB2 does
 not hold exact logo geometry even when asked to (letters re-set as a typeface, triangle corners sharpened), so a
 keeper gets the true SVG composited over it in post.
+
+## Cartoon pass — 2026-10-25: a flat adult-sitcom look on NB2 `[observed]` `[practitioner]`
+
+Run for the Bank Robbery song's music video (`docs/stories/bank-robbery/songs/mv-speakeasy-mint/storyboard.md`),
+three rounds of 4 stills on NB2, 9:16, one tall cross-section building. **First cartoon work in this file.**
+
+- `[observed, n=4]` **"1930s rubber hose cartoon … watercolour backgrounds" gives a modern storybook look**, not the
+  1930s. **"A frame from a 1930s black-ink cel cartoon … the objects have faces and dance too" gets the old look,
+  but on objects only.** People stayed modern-comic in both.
+- `[observed, n=4]` **Traits, not show names, get a sitcom look:** "a still from a prime-time adult animated sitcom:
+  flat colours with one shadow tone, slightly wobbly hand-drawn black outlines, simple rounded people with big round
+  eyes, small dot pupils and overbites, faint old film grain." Mixing in "printing presses with cheerful 1930s
+  cartoon faces" kept the old style on the objects alone (4 of 4).
+- 🔴 `[observed, n=12]` **"A jazz band" in a 1930s scene came back all Black in 12 of 12 takes, playing for a white
+  boss; "a mixed jazz band" did not change it (4 of 4).** No minstrel features appeared, but the role pattern holds.
+  Name each player differently, or drop the band.
+- 🔴 `[observed, n=3]` **"A mayor in a top hat" summons the Monopoly mascot** (top hat, white moustache, gloves).
+  "A tall skinny mayor in a bowler hat and gold chain" fixed it in 4 of 4. "No white gloves" was ignored.
+- `[observed]` Slop leftovers in the flat style: airbrushed light cones; a gibberish corner signature (1 of 4); a
+  shop sign repeated. Unasked-for TVs put the scene in the present day when no era is stated.
+- `[practitioner]` Cartoon anti-slop from the web: name the 2D traits as a cluster (outline, flat colour, painted
+  background, shading negated), lock one style phrase per series, give decisions not adjectives, use broad visual
+  language rather than a franchise name. [Renderforest](https://www.renderforest.com/blog/ai-cartoon-prompts) ·
+  [Morphic](https://morphic.com/ai-glossary/2D-Animation). Slop in illustration = smooth glossy sheen and a generic
+  blended style ([isitai](https://isitai.com/blog/how-to-spot-ai-art)).
+- ⬜ **Untested:** whether Omni holds this look in motion; "animated on twos" for Omni (Morphic suggests a lower
+  frame rate for cartoon choppiness).
+- 🔴 `[observed, 2026-10-25, n=20 style sweep]` **Print styles invent text.** "Satirical etching from 1790s London" forged a
+  real dead artist's signature ("James Gillray") plus gibberish verse in the margin with no name in the prompt; zine,
+  comic-strip and poster styles invented labels, mastheads and slogans (Cyrillic on a constructivist poster). State
+  blank margins, or crop. `[observed]` "Cut-out paper collage" came back as a coloured engraving, not collage (2 of 2).
+  "A mixed jazz band" failed, but making the band "gangsters in pinstripe suits" gave varied players in 20 of 20.
+
+### 36. ⚠️ A small mark "high inside a ring" drifts to the centre, and "triangle" can come back as an outline `[observed 2026-10-25, n=16]`
+
+Money For Something host round 2 (8 prompts × 2, Nano Banana 2 in Flow, the picker label read "Nano Banana 2.1"). Every
+prompt asked for "a thin black ring … and high inside it, over one eye, a small red triangle with rounded corners".
+**In 13 of 16 the triangle sat near the centre of the ring**; only the armchair prompt (D6) put it clearly off-centre.
+**In 3 of 16 it came back as a red outline**, not a filled shape. Likely cause (inferred): "over one eye" pulls it to
+where a single eye would be on a featureless face, which is the middle. Next test: "a solid, filled red triangle …
+pushed up close to the ring's edge, towards the top corner, well away from the centre". The same round confirmed the
+anti-slop stack on this engine: a humble named camera, a non-Portra stock, one placed light, a foreground occluder,
+mid-action, and wear in the set all rendered as asked, and none of the sixteen came back as a glossy, symmetrical
+studio frame (round 1, without them, came back that way six times out of six). Record:
+`docs/stories/magic-money-tree/characters/host-v2-balaclava.md`.
