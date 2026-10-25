@@ -1,0 +1,20 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "money-for-something/host-v2/D6-b.jpg (not on D:; the image is kept in Flow, find it by source_id)",
+  "made": "2026-10-25T10:33:00+00:00",
+  "by": "claude",
+  "kind": "image",
+  "engine": "flow",
+  "tool": "flow-mcp",
+  "model": "Nano Banana 2",
+  "why": "Jack 25 Oct: new Flow project, many host designs, avoid AI slop",
+  "source_id": "a21a7129-bd12-4219-8304-1890721ba835",
+  "prompt": "Photograph a figure in a worn green leather armchair in a cluttered study, taken on a Leica with a 50mm lens from a low angle, framed off-centre with the out-of-focus rim of a brandy glass in the near foreground. He is lifting a china cup of tea towards his face, which has no mouth to drink from. His whole head is in a cream knitted balaclava with no eye or mouth holes; a thin black ring is stitched around the face, and high inside it, over one eye, a small red silk triangle with rounded corners. A black velvet smoking jacket, a black roll-neck, black silk gloves. Beside him a small old television on a stack of books flickers with a news picture. One brass table lamp camera-left with a fringed shade lights him warm from the side; the rest of the room sinks into brown dark. Kodak Gold 200, soft grain. Thanks.",
+  "inputs": {
+    "flow_project": "d5559719-088b-4f35-ab61-31b0feb4b502"
+  },
+  "settings": {
+    "aspect": "16:9",
+    "count": "2"
+  }
+}

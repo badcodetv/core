@@ -1,0 +1,20 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "money-for-something/host-v2/D2-a.jpg (not on D:; the image is kept in Flow, find it by source_id)",
+  "made": "2026-10-25T10:33:00+00:00",
+  "by": "claude",
+  "kind": "image",
+  "engine": "flow",
+  "tool": "flow-mcp",
+  "model": "Nano Banana 2",
+  "why": "Jack 25 Oct: new Flow project, many host designs, avoid AI slop",
+  "source_id": "5b71323d-af60-4077-b528-5afb3de0bc76",
+  "prompt": "Photograph a 1970s television newsreader on a dusty studio set, taken on 16mm film from beside a large studio camera whose grey bulk fills the near edge of the frame. He sits at a wood-veneer desk, chest-up, turning a sheet of paper over. His whole head is in a cream knitted balaclava with no eye or mouth holes; a thin black ring is stitched around the face, and high inside it, over one eye, sits one small red triangle of felt with rounded corners. He wears a brown corduroy jacket, a wide mustard tie, a black roll-neck under the collar and brown leather driving gloves. Behind him a chroma-key blue wall with a visible crease and a strip of gaffer tape. One hard tungsten light from high camera-left throws a sharp shadow of his head on the wall. Ektachrome colour, warm and slightly faded, coarse grain. Thanks.",
+  "inputs": {
+    "flow_project": "d5559719-088b-4f35-ab61-31b0feb4b502"
+  },
+  "settings": {
+    "aspect": "16:9",
+    "count": "2"
+  }
+}
