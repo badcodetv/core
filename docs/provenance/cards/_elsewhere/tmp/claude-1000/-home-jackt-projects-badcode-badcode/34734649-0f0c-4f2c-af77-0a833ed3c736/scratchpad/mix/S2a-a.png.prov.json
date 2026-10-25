@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/S2a-a.png",
+ "made": "2026-10-25T19:45:43.651Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. A cramped 1930s bakery kitchen at four in the morning, seen from low across a long wooden table: big pale mounds of bread dough fill the near foreground. Behind them three bakers in sweat-stained vests knead hard, floury forearms pressing into the dough: an older Black man, a young white woman, a middle-aged South Asian man. The open mouth of a brick bread oven behind them throws hot orange light across their faces; one bare cold bulb hangs above. Flour hangs in the air. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ca815247-ba1d-4fbd-9381-5c10de699846"
+}

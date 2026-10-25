@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/C3-b.png",
+ "made": "2026-10-25T18:51:09.191Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A 1950s modernist cartoon still: the people are flat graphic icons built from triangles, rectangles and long thin limbs, small dash eyes, colour shapes with no outlines and a few loose black lines for detail. The rooms are barely drawn: each floor is one flat block of mood colour with a few sketchy lines for the furniture. A tall city building cut open in cross-section like a doll's house, seen straight on, four floors from the top down. Attic: an old woman in a coat shivers by one candle in an ice blue room. Street level: a bakery with cream and brick red walls; a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other under a street lamp, a police car beside them. Basement: in emerald lamplight, printing presses with cheerful faces throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances. Bottom: an orange furnace. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "6d42b230-b9d2-42fb-b032-09e9b9f7dded"
+}

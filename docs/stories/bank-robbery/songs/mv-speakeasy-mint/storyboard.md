@@ -4,24 +4,40 @@ The Bank Robbery song's music video. Chosen by Jack 2026-10-25 (idea 8 in
 [`../music-video-ideas.md`](../music-video-ideas.md)). Lyrics: Kai's (`../sealed-r5/lyrics.txt`). The
 song take is not picked yet, so this is timed by lyric section, not by seconds.
 
-## ▶️ Resume here (2026-10-25)
+## ▶️ Resume here (end of 2026-10-25)
 
-**Where it stands (latest, 2026-10-25):** after the ten-style sweep Jack asked for **video-game styles**.
-Eight ran (see "Video-game sweep" at the bottom). The first run landed in "mmt jack" by mistake; **Jack asked for them here, so all eight were re-run in `dedd295f` ("Oct 25 - 09:43"), 16 of 16 confirmed in the project.** The re-run is new takes (new seeds), media ids under the sweep results. My shortlist: **V1** (crime-satire key art, GTA-like),
-**V3b** (1930s mob photo mode, Mafia-like), **V5b** (1990s point-and-click painting). Each style carries its own
-era, so the pick settles the era too. All stills are in Flow project `dedd295f-a519-46bb-aeb8-0e422a58e757`
-("Oct 25 - 09:43").
+**Where we are:** the style is locked, the script is written, and we're making **one still per scene, in order**.
 
-**Earlier shortlist, still alive:** S5 (1960s heist titles), S9 (gangster game cartoon), S6 (linocut),
-S1 (Georgian etching), round 3's 3a (adult sitcom).
+- **Style LOCKED = K3a** (`d81d7f7a`, Flow project `dedd295f` "Oct 25 - 09:43"): sitcom figures with real-skin faces,
+  every colour in thick oil brushstrokes, the small red moon. Its exact prompt is under "K sweep" below; the
+  style lead used for each scene is in `script.md`.
+- **Format: 16:9** (Jack, scene 1 round 2).
+- **Script draft 1: [`script.md`](./script.md)**: 33 scenes on Kai's lyrics, each in its own setting. Gags marked ✏️
+  are proposals; Jack writes the jokes. Not yet timed (no song take picked).
+- ✅ **Scene 1 picked: W3b** (`5cbcf7a8`): roof parapet, the street running away, police car, red moon in a puddle.
+- 🟡 **Scene 2 (bakery kitchen, 4 a.m.): round 1 done, Jack's pick owed.** Shortlist **2d-a** (`7745180e`, close on
+  the tired ginger baker) and **2c-a** (`06c543ca`, from the ceiling corner). 2b's oven-mouth framing is worth a re-run.
+- ⬜ **Next:** Jack picks scene 2 → scene 3 (the pay packet at the back door, dawn) → on through the script. Then one
+  Omni Flash test clip of a picked still before any batch of clips.
 
-**Waiting on Jack:** pick a style (one, two, or a mix).
+**Rules learned today (all in `script.md` / `docs/google-flow/nano-banana-2.md`):**
+- 🔴 Real-skin faces + a bare demographic ("an older Black man") = a famous actor's likeness. Give every person
+  specific ordinary features (build, hair, nose, a scar) and check every face for a celebrity likeness.
+- Name crowd mixes outright ("young and old, men and women, Black, white and South Asian"); "mixed" is ignored.
+- Press faces = "simple faces painted on their sides" ("cheerful 1930s cartoon faces" gave a game-mascot lookalike).
+- No neon (it prints sign text); "plain margins with no writing" on every prompt; all real text goes on in ffmpeg.
+- Flow: when a call times out at 99–100% the stills still land: list the newest tiles over CDP and fetch them
+  (`flow-content.google/image/<id>`). "Unusual activity" = refresh the project and retry. Don't script the page
+  between generations.
 
-**Then:** a cleaned-up round of the pick (fixes listed under each sweep's results), then **one Omni Flash test
-clip** to see if the style survives motion. Then the shot list's stills, one at a time, then clips. Song take
-still unpicked (Jack is showing Kai).
+**How we got here (all on 2026-10-25, sections further down):** ten-style sweep → video-game sweep (V1–V8) →
+pixel-world mix (M1–M4) → own-look sweep (C1–C4, the wrong question) → Jack: keep round 3a's sitcom style → twist
+sweep (T3 red moon kept) → realism sweep (R1–R6; Jack picked R5a, real-skin faces) → K sweep (R5a + R6's painting;
+**Jack picked K3a**) → script → scene stills.
 
 ## What Jack locked (2026-10-25)
+
+*(The "1930s rubber-hose cartoon" style below was the starting brief; the style is now K3a, see Resume.)*
 
 - A 1930s Prohibition speakeasy, as a **1930s rubber-hose cartoon** (the old Fleischer-era look; we
   never write "Cuphead" in a prompt). Gangsters print money; the mayor is there.
@@ -434,3 +450,298 @@ anything is built on it.
 🔴 **Automation lesson:** `flow_open_project` said `dedd295f` was open, yet the first run's stills went to another
 project (probably a parallel session moved the shared tab). Before and after a batch, check the tab URL
 (`curl -s 127.0.0.1:9222/json/list`), and look for the new media ids in the page.
+
+## Mixed sweep: pixel world, painted people (Jack, 2026-10-25)
+
+Jack: *"try an art style where the world is a pixelated art style and the people are a red dead redemption 2 art
+style … avoid AI slop … optimise for Nano Banana 2/Omni Flash … use the cinematography file and skills."*
+
+**Web pass (2026-10-25), what changed the prompt:**
+- Nobody has published a tested "pixel world + realistic people" prompt for NB2 (searched) `[checked]`. Stable
+  Diffusion does it with regional prompts; Flow has none. Morphic warns that blending far-apart styles is
+  unpredictable ([morphic](https://morphic.com/docs/how-tos/blending-images)) `[vendor]`. Expected failure (inferred): the model
+  picks one style for the whole frame, most likely painted.
+- Google's NB guide: the model obeys **hard scope words** (its "photo visible ONLY inside the letterforms" example);
+  narrative prose, positive framing ([Google Cloud, 2026-03-06](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana)) `[official]`.
+  So each style is scoped: *every* building is pixel art, *only* the people are painted.
+- NB pixel art sits on no true grid (mixed pixel sizes, colour bleed); a counted palette and "hard pixel edges" help
+  ([spritecook](https://www.spritecook.ai/blog/nanobanana-pixel-art-for-games)) `[vendor]`. Our own V7 grid held at zoom.
+- RDR2 described as traits: muted earthy palette, low warm sun through dusty haze, weathered faces with real skin
+  texture, wool and leather ([itechguides](https://www.itechguides.com/what-makes-red-dead-redemption-2s-visuals-look-so-realistic/),
+  [Polygon essay via gamescenes](https://www.gamescenes.org/video-essay-red-dead-redemption-2-and-the-hudson-river-school-of-painting/)) `[practitioner]`.
+  "Oil-painted" is fan language, not documented. The game is never named.
+- Slop tells to keep out: plastic skin, symmetric faces, light with no source, gibberish text, too clean
+  ([magicshot, 2026-08-06](https://magicshot.ai/blog/why-your-ai-images-still-look-fake-12-tells-and-how-to-kill-them)) `[vendor]`.
+
+**Carried from the video-game sweep:** "photo-mode capture" (clean frame 4 of 4, no HUD); the camera across the
+street, low and left; team colour on **scarves and banners**, never on people (V7b's red and blue skin); four floors
+**named in order**; no neon, no colour word that can become a sign; the pinstripe-gangster band; the bowler mayor.
+
+**Shot spec (shot-craft):** for = the whole argument in one picture, height = wealth gap. Cost in frame = grandma
+freezing, the crowds fighting. Light, all in the world: candle, street lamp, emerald press lamps, orange furnace.
+Foreground = the police car roof. Withheld = nothing yet (style test).
+
+**Variety mode, declared variable = how the two styles are joined.** Four ideas:
+
+| # | Idea | Why |
+| --- | --- | --- |
+| M1 | **Plain scoped split** | The cleanest test: every world thing pixel, only people painted |
+| M2 | **Stage set**: pixel-art flats, painted actors, the blocky lamp light falls on them | Gives the model a reason for two media in one frame (a theatre) |
+| M3 | **Closer**: street and basement only, protesters' backs big in the foreground | Painted faces need size; V2/V3 came back as tiny diorama faces |
+| M4 | **Dusk and coarse pixels**: low amber sun through dust, sixteen colours | The signature western light, and the biggest contrast between the two media; breaks the night palette on purpose |
+
+NB2, 9:16, 2 each, project `dedd295f` ("Oct 25 - 09:43"), tab URL checked before and after.
+
+**M1:**
+
+> A photo-mode capture from a video game that draws its world and its people in two different ways. Every building, street, lamp and sky is crisp 16-bit pixel art: one even pixel grid, a limited palette of thirty-two colours, hard pixel edges. Only the people are painted in muted realism: weathered faces with real skin texture, stubble and tired eyes, 1930s wool coats, flat caps and worn leather, soft brushwork. A tall narrow building cut open like a doll's house at night, seen from across the street, low and to the left, four floors from the top down: an ice blue attic where an old woman in a coat shivers by one candle; a brick red bakery where a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other under a yellow street lamp; an emerald-lit basement where printing presses throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances; an orange furnace at the bottom. A police car roof in the near left corner. Thanks.
+
+**M2:**
+
+> A photo-mode capture from a mixed-media video game: the whole set is built from flat pixel-art backdrops, like theatre scenery made of chunky square pixels, and the actors standing in it are painted realistic people with weathered faces, real skin texture, 1930s wool coats and worn leather. The blocky coloured light of the pixel lamps falls across the painted actors. The set is a tall narrow building cut open like a doll's house at night, seen from across the street, low and to the left, four floors from the top down: an ice blue attic where an old woman in a coat shivers by one candle; a brick red bakery where a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other under a yellow street lamp; an emerald-lit basement where printing presses throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances; an orange furnace at the bottom. A police car roof in the near left corner. Thanks.
+
+**M3:**
+
+> A photo-mode capture from a video game that draws its world and its people in two different ways. Every wall, pavement, lamp and machine is crisp 16-bit pixel art: one even pixel grid, a limited palette of thirty-two colours, hard pixel edges. Only the people are painted in muted realism: weathered faces with real skin texture, stubble and tired eyes, 1930s wool coats, flat caps and worn leather. At night, close to a city building cut open like a doll's house, two floors fill the frame. Street level: a brick red bakery, and in the near foreground the shoulders and backs of protesters in red scarves shoving protesters in blue scarves, mixed ages and skin tones, under a yellow street lamp. Below, through the cut-away floor, an emerald-lit basement where printing presses throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances. Seen low and from the left. Thanks.
+
+**M4:**
+
+> A photo-mode capture from a video game that draws its world and its people in two different ways. Every building, street, lamp and sky is coarse chunky pixel art: big square pixels, sixteen colours, hard pixel edges. Only the people are painted in muted realism: weathered faces with real skin texture, stubble and tired eyes, 1930s wool coats, flat caps and worn leather. Evening: a low amber sun from the right through drifting dust and chimney smoke, long hard shadows. A tall narrow building cut open like a doll's house, seen from across the street, low and to the left, four floors from the top down: a cold blue attic where an old woman in a coat shivers by one candle; a brick red bakery where a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other; an emerald-lit basement where printing presses throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances; an orange furnace at the bottom. A police car roof in the near left corner. Thanks.
+
+### Mixed sweep results (2026-10-25)
+
+All four ran first time (NB2, 9:16, 2 each). Tab checked: all eight in `dedd295f`. Contact sheet checked whole,
+people zoomed on 1a, 1b, 2a, 3b, 4b.
+
+| # | Idea | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| M1 | Plain scoped split | 468eb490 · 56b68708 | ✅ **The split works in both takes:** pixel walls and presses, painted people. People lean painted-illustration rather than full realism. 🔴 1a has a **camera viewfinder overlay** ("CAM", zoom numbers); 1b wrote room labels ("Bakery", "Secret Basement", "Furnace Room"). 1b's crowd sides are muddled (a man in both scarves) |
+| M2 | Stage set | 2f15f92f · 67e040f2 | 🟡 The people come back as realistic 3D game figures and the pixels are weaker; it reads as a lit diorama. Clean of text. The least distinct of the four |
+| M3 | Closer, two floors | c2fea7a9 · 4715bdba | ⭐ **3b is the pick:** big painted faces with weathered skin, stubble and wool; the closest to the western-game look, against a crisp pixel bakery and pixel basement. 🔴 3a wrote **"brick red bakery" on the shop sign** (the colour word went onto the sign) plus "PHOTO MODE" and a viewfinder. 3b has "BAKERY" and "OPEN" signs (fine, or cover them in post). 🟡 3b's crowd is all white men; the "mixed ages and skin tones" ask was lost |
+| M4 | Dusk, coarse pixels | f7f4c3fc · 40608517 | 🟡 Lovely dusk light and chimney smoke, but "coarse chunky pixel art" turned 3D: **voxel blocks** with tiny figurines, a miniature model look. Faces too small |
+
+**Caricature check (zoomed):** ✅ no minstrel, antisemitic or other stereotyped faces; ✅ bowler mayor 8 of 8, no
+Monopoly man; ✅ pinstripe-gangster band held. 🟡 3b's crowd lost its mix (above).
+
+**What the sweep says:**
+- ✅ **NB2 keeps two media apart when each is scoped** ("every … is pixel art; only the people are painted") in 8 of 8.
+  The web expected the model to pick one style (inferred there); it didn't.
+- ✅ **Size decides how "realistic" the painted people read.** Small figures drift to illustration or toy figurines;
+  chest-up figures (M3) get the real skin, stubble and wool.
+- 🔴 **"Photo-mode capture" summoned a camera viewfinder in 2 of 8** this time (1a, 3a); clean 4 of 4 last sweep.
+  Next round: drop it and say "a frame of a game world with nothing on screen but the world" (untested).
+- 🔴 **A colour word in front of "bakery" became sign text** ("brick red bakery"). Put the colour on the bricks.
+
+**Next round from 3b (if Jack picks it):** keep the M3 camera, fix the crowd mix by naming two or three people ("a
+young Black woman in a red scarf, a grey-haired white man in a blue scarf…"), "the bakery's brick walls are brick
+red", drop "photo-mode capture". Then one Omni test clip: does the pixel grid hold still while the painted people move?
+
+## Own-look sweep: Jack likes 3a but "it's too similar to other cartoon styles" (2026-10-25)
+
+**Why 3a reads as generic:** we *asked* for the stock adult-sitcom kit: "big round eyes, small dot pupils and
+overbites, wobbly black outlines, simple rounded people". Critics name that cluster (round heads, dot eyes, even
+outline) as the industry's herd look ([Cartoon Brew](https://www.cartoonbrew.com/ideas-commentary/yes-virginia-there-is-a-calarts-sensibility-74428.html)) `[practitioner]`.
+A model with no unusual reference points falls to its averaged style ([arXiv 2505.09166](https://arxiv.org/abs/2505.09166)) `[research]`.
+
+**Levers that make a look recognisable in one frame (web pass 2026-10-25):**
+- **Two media for two worlds:** Wolfwalkers draws the town as woodblock print (hard edges, ink gaps, blocky) and the forest
+  as loose pencil; colour fills are offset from the line ([mande.net](https://mande.net/btl/crafts/visual-fx/wolfwalkers-animation)) `[official, via press]`.
+- **Off-register print:** fills slipped out of line, halftone shadows (Spider-Verse, Wolfwalkers) `[practitioner]`.
+- **Modernist flat icons, rooms barely drawn:** UPA, flat graphic shapes, backgrounds more abstract than the
+  characters, colour by mood ([Animation Obsessive](https://animationobsessive.substack.com/p/what-the-upa-style-actually-is)) `[practitioner]`.
+- **Distortion as the opinion:** the British satire line (Gillray, Scarfe, Spitting Image): faces stretched and
+  swollen to say what the artist thinks of them ([BFI](https://www.bfi.org.uk/features/spitting-image-still-biting-after-all-these-years)) `[practitioner]`.
+
+**What stays from 3a:** the doll's-house cross-section seen straight on, flat cartoon colour, the floors and their colours, the jokes.
+**What goes:** the round-eye / dot-pupil / overbite kit. Every candidate replaces it with its own face rule.
+**Declared variable:** the signature lever. Scene paragraph identical in all four; the band is the pinstripe gangsters
+(fixes the all-Black-band problem); the margins are said to be plain.
+
+**Shared scene paragraph:**
+
+> A tall city building cut open in cross-section like a doll's house, seen straight on, four floors from the top down. Attic: an old woman in a coat shivers by one candle in an ice blue room. Street level: a bakery with cream and brick red walls; a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other under a street lamp, a police car beside them. Basement: in emerald lamplight, printing presses with cheerful faces throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances. Bottom: an orange furnace. Plain margins with no writing. Thanks.
+
+| # | Lever | Style clause |
+| --- | --- | --- |
+| C1 | **Two media, the wealth gap in the drawing** | `A cartoon still drawn in two different media that split the building. The attic, the street and the people up there are a rough black woodblock print: chunky carved lines, white gaps where the ink did not take, flat grey-blue and brick colours on coarse paper. The basement and the furnace are smooth Art Deco lacquer painting, crisp gold lines on emerald and black, every edge perfect. Everyone is drawn as flat angular shapes with small dash eyes and heavy brows.` |
+| C2 | **Cheap off-register screenprint** | `A cartoon still printed as a cheap four-colour screenprint: flat inks of brick red, mustard, teal and black on cream paper, each colour layer slipped slightly out of line with the black outline, coarse halftone dots for every shadow. People are tall stiff blocky figures with long faces, square jaws, small dash eyes and heavy brows.` |
+| C3 | **Mid-century modernist icons** | `A 1950s modernist cartoon still: the people are flat graphic icons built from triangles, rectangles and long thin limbs, small dash eyes, colour shapes with no outlines and a few loose black lines for detail. The rooms are barely drawn: each floor is one flat block of mood colour with a few sketchy lines for the furniture.` |
+| C4 | **Distortion is the opinion** | `A satirical cartoon still in sharp scratchy pen and flat watercolour, where the closer people are to the money, the more distorted they are drawn. The old woman and the crowds are drawn plainly with tired human faces. The gangsters are swollen round bodies with tiny heads; the mayor is stretched impossibly tall and thin with a huge grin full of teeth. Everyone has an ordinary nose.` |
+
+🔴 C4 is the caricature risk (grotesque bankers have an antisemitic history): zoom every face; ordinary noses are written in.
+
+### Own-look sweep results (2026-10-25)
+
+All four ran first time (NB2, 9:16, 2 each). Tab checked: all eight in `dedd295f`. The C4 Mint was zoomed for the caricature check.
+
+| # | Lever | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| C1 | Two media | 6e052de8 · 122fe13e | ⭐ **1b: the wealth gap is in the drawing.** Grey carved woodblock upstairs (icicles, ink gaps), and below the street line it turns into gold-on-emerald Art Deco lacquer, furnace included. Nobody else's cartoon looks like this. 1a splits less cleanly (the bakery is half Deco). "BAKERY" signs in both |
+| C2 | Off-register screenprint | d737c016 · 89a846bf | 🟡 Handsome, warm, mixed crowds and a mixed band. But it reads as **modern editorial illustration**, which is itself a common look now. The off-register slip is faint |
+| C3 | Mid-century modernist | cde7670d · 6d42b230 | ⭐ **The furthest from any sitcom:** flat colour blocks, rooms barely drawn, dash eyes, long limbs. 3b's yellow lamp cone over the crowd is a strong graphic beat. Fewest details, so likely the easiest for Omni to hold (inferred, untested). Mixed crowd and band |
+| C4 | Distortion is the opinion | 96556d99 · 5dad38f5 | ⭐ **The most British and the most brutal:** scratchy pen and watercolour, the tired crowd drawn plainly, the gangsters swollen and the mayor a grinning stick. Matches the film's "brutal and silly" register. Busy, so hard for Omni |
+
+**Caricature check:** ✅ no minstrel or other ethnic stereotype in any frame; mixed crowds in all eight; the band
+was mixed in C2 and C3. ✅ C4 zoomed: the swollen gangsters have ordinary noses and nothing that reads as a racial type.
+🟡 C4a's mayor has a long pointed nose (pointed, not hooked); watch it in any refinement. ✅ Bowler mayor 8 of 8.
+
+**What the sweep says:** dropping the round-eye / dot-pupil / overbite kit and naming **a medium plus a face
+rule** got eight frames that don't read as adult sitcom. "Plain margins with no writing" held (no signatures, no
+labels); only the diegetic BAKERY signs remain.
+
+**My shortlist:** C1b (the idea is in the drawing), C3 (the most original and the simplest to animate), C4 (the
+satire register). Next: Jack picks, then one Omni test clip of the pick before any shot list.
+
+## Twist sweep: 3a's style kept, a subtle BadCode touch (Jack, 2026-10-25)
+
+Jack: *"no as in i liked the style i shared before (3a), i just want a subtle badcode twist, like a subtle overlay or
+something … keep the style, just do small artistic iterations that vary from each other."* The own-look sweep above
+answered the wrong question; **3a's style is locked.**
+
+**Method:** one base prompt (3a word for word, with two fixes that are caricature/slop fixes, not taste: the band is the
+pinstripe gangsters, which ends the all-Black-band-for-a-white-mayor problem; "plain margins with no writing" stops the
+corner signature). Each twist adds **one sentence** to the base, so the only variable is the twist (one change at a
+time, `shot-craft`; vary one element, keep the rest of the prompt fixed: [Picsart](https://picsart.com/tutorials/how-to-create-visuals-with-nano-banana-2-ai-model) `[vendor]`).
+Overlays that must be exact and identical in every shot (a channel bug, a transmission texture) are **not asked of the
+model**: they go on in ffmpeg, so Omni can't boil them (`docs/video-fx/hybrid-method.md`).
+
+**Why a hidden mark:** studios sign their films with one recurring hidden object (Pixar's delivery truck and A113;
+*Inside No. 9* hides the same hare statue on every set; [Den of Geek](https://www.denofgeek.com/tv/is-one-really-hidden-in-the-background-of-every-episode/)) `[press]`.
+Ours is the logo's idea: **a ring with a small red triangle off-centre** (`docs/brand/README.md`: red only ever the
+triangle, one small red thing, never centred). Never the word "BadCode" in a prompt (it would print it).
+
+**Base B0:**
+
+> A still from a prime-time adult animated sitcom: flat colours with one shadow tone, slightly wobbly hand-drawn black outlines, simple rounded people with big round eyes, small dot pupils and overbites, faint old film grain. A tall city building cut open in cross-section like a doll's house, seen straight on. In the attic an old woman in a coat shivers by one candle in an ice blue room. At street level a cream and brick red bakery; a red crowd and a blue crowd of mixed ages and skin tones shove each other under a yellow street lamp, a police car beside them. Below, a secret emerald basement in toxic green lamplight: printing presses with cheerful 1930s cartoon faces throw banknotes into the air, gangsters in pinstripe suits play jazz, and a tall skinny mayor in a bowler hat and gold chain dances. At the very bottom an orange furnace. Plain margins with no writing. Thanks.
+
+**Twists (one sentence inserted before "Plain margins"):**
+
+| # | Twist | Sentence |
+| --- | --- | --- |
+| T1 | **The mayor's medal is the mark** | `The medallion on the mayor's gold chain is a plain gold ring with one small red triangle inside it, set off to one side.` |
+| T2 | **The machines are watching** | `Each printing press has one normal cartoon eye and one eye that is a small red triangle.` |
+| T3 | **A red moon** | `Above the roof hangs a small, perfectly round, solid red moon in a dark sky.` |
+| T4 | **The furnace peephole** | `The round peephole in the furnace door glows as a thin ring with a small red triangle of fire inside it, set off-centre.` |
+
+**Post overlays on B0 (ffmpeg, not the model):**
+- **P1 Transmission:** fine horizontal scanlines, a one-pixel red/cyan edge split, a little extra grain: a signal received
+  from the future. Subtle, and identical on every shot.
+- **P2 Channel bug:** the BadCode mark (`docs/brand/logo/badcode-mark-reversed.svg`) small in a corner at low opacity, like a TV channel's.
+
+### Twist sweep results (2026-10-25)
+
+NB2 (picker label "Nano Banana 2.1"), 9:16, 2 each, all in `dedd295f`. **3a's style held in 10 of 10.** The pinstripe-gangster
+band came back mixed in most takes, so the all-Black-band-for-a-white-mayor problem is gone.
+
+| # | Twist | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| B0 | Base (3a + fixes) | 54dd04d7 · 0bed6930 | ✅ Style matches 3a. 🔴 **B0-a: one press became a cup-headed character with a straw, close to a famous 1930s-style game mascot.** Unusable (trademark); "cheerful 1930s cartoon faces" summoned it |
+| T1 | Mayor's medal | 59e93c4e · cfd55823 | ⭐ 1b: a red triangle on the gold medal; readable when you look, invisible when you don't. Centred, not off to one side. 1a barely shows |
+| T2 | Red-triangle eye on the presses | 357ff563 · ee85fc88 | ❌ 0 of 2: the presses kept two normal eyes |
+| T3 | Red moon | a6cc944f · 1f2716e1 | ⭐ **2 of 2.** A small solid red circle over the roof: the "o" of the wordmark, an omen, and it reads as a sign without any logo. The most striking twist |
+| T4 | Furnace peephole | 068922fe · af4d4bf1 | ⭐ 4a: ring with a red triangle of fire, centred. 4b: a ring with a flame in it off-centre, subtle enough to miss |
+| P1 | Transmission overlay (ffmpeg on B0-b) | — | Fine scanlines, a one-pixel red/cyan split, grain: "received from the future". Barely visible at phone size, clear at full size |
+| P2 | Channel bug (ffmpeg on B0-b) | — | The BadCode mark top right at 70%, like a TV channel's |
+
+**Caricature check:** ✅ no stereotyped faces; bowler mayor 10 of 10; crowds mixed both sides. 🔴 B0-a's mascot-like press (above).
+
+**The twists stack:** the red moon, the medal and the peephole are in-picture and each is one sentence; the transmission
+and the bug are post. My suggestion is **T3 (red moon) + P1 (transmission)** for the film, with the medal as the hidden
+sign in close shots. The overlays are applied in ffmpeg on every shot, so they never boil in Omni.
+
+## Realism sweep: 3a with a hint of realism, six wildly different ways (Jack, 2026-10-25)
+
+Jack: *"what if it's this style with a hint of realism. please try a bunch of styles based on this one, that are wildly
+different from each other."* Base = 3a's design (round people, dot pupils, overbites, the cross-section). **Declared
+variable: what kind of "real" is added.** Each candidate is a different idea (variety mode, `new-image`).
+
+**Web pass (2026-10-25):**
+- **Klaus** kept 2D drawings and added up to eight hand-drawn light layers (ambient occlusion, subsurface, rim, bounce)
+  plus brush texture on the characters, "not trying to fake a 3D render"
+  ([befores & afters](https://beforesandafters.com/2019/11/14/heres-what-made-the-2d-animation-in-klaus-look-3d/),
+  [Cartoon Brew](https://www.cartoonbrew.com/feature-film/how-klaus-draws-on-centuries-old-artistic-principles-to-push-2d-animation-forward-182325.html)) `[press]`. → R1.
+- Handmade looks: ask for **material properties and scale** so the model treats it as a physical world; fingerprints,
+  tiny asymmetries, loosely sewn cloth, matte surfaces; "not a polished toy"
+  ([Luma](https://lumalabs.ai/news/3d-claymation-ai-prompts), [carat.im](https://carat.im/en/prompt-gallery/stop-motion-puppet)) `[vendor]`. → R2, R3.
+  Our own warning: "chunky stylised 3D figures" gave glossy toys (V4), so every physical lever says **matte**.
+- The British satire precedent for R3 is *Spitting Image*'s latex (BFI, own-look sweep above).
+
+**Fixes carried:** the presses' faces are **"simple faces painted on their sides"** (the "cheerful 1930s cartoon faces"
+wording produced a mascot lookalike twice); the band is the pinstripe gangsters; the red moon twist (T3) rides along in
+every candidate since it's the best twist so far; "plain margins with no writing".
+
+**Shared scene paragraph:**
+
+> A tall city building cut open in cross-section like a doll's house, seen straight on at night, a small solid red moon above the roof. In the attic an old woman in a coat shivers by one candle in an ice blue room. At street level a cream and brick red bakery; a red crowd and a blue crowd of mixed ages and skin tones shove each other under a yellow street lamp, a police car beside them. Below, a secret basement in emerald lamplight: printing presses with simple faces painted on their sides throw banknotes into the air, gangsters in pinstripe suits play jazz, and a tall skinny mayor in a bowler hat and gold chain dances. At the very bottom an orange furnace. Plain margins with no writing. Thanks.
+
+**Style clauses** (clause + shared paragraph). Every one opens with 3a's design so the base stays the same:
+
+| # | Kind of real | Clause |
+| --- | --- | --- |
+| R1 | **Light** (feature-film 2D) | `Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, still drawn in 2D with wobbly black outlines, but lit like a feature film: soft painted shading wrapping round every form, warm bounce light from the floor, a thin rim of light from each lamp, visible brush texture on coats and walls.` |
+| R2 | **Clay** (stop-motion) | `Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, rebuilt as a stop-motion miniature: matte plasticine people with fingerprints and tiny asymmetries, felt coats loosely stitched, a real wooden doll's-house set lit by tiny practical bulbs, dust in the air.` |
+| R3 | **Latex** (satire puppets) | `Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, made as foam-latex satirical puppets: matte painted latex skin with blotchy colour washes, glassy eyes, real cloth suits and wigs, in a real miniature set photographed under hard studio lamps.` |
+| R4 | **Film** (photographed cels) | `Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, painted on clear celluloid sheets and photographed on an old animation camera: dust and hairline scratches on the cels, soft shadows where the cel layers sit above the painted background, colours slightly faded.` |
+| R5 | **Skin** (the gross-up) | `Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, broken veins, wet eyes.` |
+| R6 | **World** (realist painted set) | `Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, drawn flat with black outlines, standing in a building and street painted with thick-oil night realism: wet cobbles reflecting the lamps, soot on old brick, steam rising from a grate.` |
+
+🔴 R3 and R5 carry the caricature risk (realistic grotesque faces): zoom every face.
+
+### Realism sweep results (2026-10-25)
+
+NB2, 9:16, 2 each, all in `dedd295f` (R1 and R5 were harvested from the page after slow 99–100% timeouts; R3 needed one
+"unusual activity" refresh). **The red moon landed in 12 of 12.** The press-face rewording ended the mascot lookalike (0 of 12).
+
+| # | Kind of real | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| R1 | Light | b7e3fa96 · f84a24a2 | ⭐ 1b: the subtlest version, still 3a but with painted shading, a real lamp cone and rim light. 1a came back with a white poster border |
+| R2 | Clay stop-motion | ffd77609 · 7049c27f | ⭐ Wildly different and charming: matte plasticine, tiny practical bulbs, a real miniature set; googly eyes keep 3a's design. No plastic sheen. Mixed crowds |
+| R3 | Latex puppets | 92f9ed3d · 32bc6dcb | ⭐ 3a: satirical-puppet look on a real miniature set, matte, mixed crowd, the mayor a grimacing stick. 3b grew extra floors. Close to R2 in feel |
+| R4 | Photographed cels | dea1adf9 · f336e6c0 | 🟡 Barely different from flat 3a; the cel dust, scratches and layer shadows didn't really show |
+| R5 | Real skin on the faces | 3f22ec7d · 98046eb7 | 🔴 5a pasted photographic heads onto cartoon bodies: uncanny, the crowd went to all white men, and real-looking faces risk reading as real people. 5b ignored it |
+| R6 | Realist oil-painted world | 1ed80cd3 · 4a95d774 | ⭐ **The strongest "hint of realism":** 3a's flat outlined people standing in a thick-oil night street, wet cobbles mirroring the lamps, soot, steam from a grate. Still unmistakably the 3a cartoon |
+
+**Caricature check (zoomed R2, R3, R5, R6):** ✅ no stereotyped faces; mixed crowds except R5a; bowler mayor 12 of 12.
+
+**Shortlist:** **R6** (closest to "this style with a hint of realism"), **R1b** (the gentlest hint), **R2 / R3a** (the
+wild physical options). For Omni (inferred, untested): R1 and R6 keep flat people, so they should hold best; clay and
+latex may smear in motion.
+
+## The pick: R5a + elements of R6 (Jack, 2026-10-25)
+
+Jack picked **R5a (`3f22ec7d`)**: *"this is the style i like it, also add some elements of the painting one."* So the
+look is 3a's sitcom figures with real skin on the faces, in R5a's panelled cross-section, plus R6's oil-painted night
+realism. (I had marked R5a down as uncanny; Jack's call.)
+
+**Fixes carried:** R5a's crowd came back all white men, so the mix is named person by person (a word like "mixed" is
+ignored; naming works: the band precedent). Red moon, press faces "painted on their sides", plain margins.
+
+**Declared variable: how much of R6's painting comes in.** Four steps, from a little to a lot:
+
+| # | How much painting | Clause added after the R5 style sentence |
+| --- | --- | --- |
+| K1 | **Only the street** | `Outside the building the street is painted in thick-oil night realism: wet cobbles mirroring the lamps, steam rising from a grate. Inside, the rooms stay flat cartoon colour.` |
+| K2 | **The whole city** | `The building, the street and the night sky are painted in thick-oil night realism: soot on old brick, wet cobbles mirroring the lamps, steam rising from a grate.` |
+| K3 | **Brushwork everywhere** | `Every flat colour is laid on with thick visible oil brushstrokes, and the street is wet cobbles mirroring the lamps.` |
+| K4 | **Light only** | `The lamps cast real painted light: the street lamp's cone pools on wet cobbles, the candle glows warm on the attic frost, the furnace throws orange up the basement walls.` |
+
+**Base (R5a's prompt, crowd fixed), clause inserted after the first sentence:**
+
+> Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, broken veins, wet eyes. [CLAUSE] A tall city building cut open in cross-section like a doll's house, seen straight on at night, a small solid red moon above the roof. In the attic an old woman in a coat shivers by one candle in an ice blue room. At street level a cream and brick red bakery; a red crowd and a blue crowd shove each other under a yellow street lamp, each side young and old, men and women, Black, white and South Asian, a police car beside them. Below, a secret basement in emerald lamplight: printing presses with simple faces painted on their sides throw banknotes into the air, gangsters in pinstripe suits play jazz, and a tall skinny mayor in a bowler hat and gold chain dances. At the very bottom an orange furnace. Plain margins with no writing. Thanks.
+
+### K sweep results (2026-10-25)
+
+NB2, 9:16, 2 each, all in `dedd295f` (K1 and K4 harvested from the page after slow 99% timeouts).
+
+| # | How much painting | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| K1 | Only the street | 18fec2a3 · f10288ea | 🟡 Painted wet cobbles and steam outside, flat rooms inside; 1b is the cleaner split. The building grew extra flats of TV-watchers again. The faces lost most of R5a's real skin |
+| K2 | The whole city | 5df5d12e · f0239d06 | ⭐ **2a: closest to "R5a + the painting":** R5a's panelled cross-section and cream border, a real-skinned grandma, a stormy painted sky, painted brick, steam, wet cobbles, a roaring painted furnace. 2b is moodier, with less face realism |
+| K3 | Brushwork everywhere | d81d7f7a · 864f5d62 | 🟡 Thick strokes over everything: it turns into an oil-painted naive picture, and the cartoon line softens. Lovely but further from R5a |
+| K4 | Light only | 3b88d11d · f0f47a65 | ⭐ **4a: the closest to R5a itself,** with the most real skin (the grandma, the gangsters) and a real lamp cone; the painting is only in the light. 4b is flatter |
+
+**Crowd fix worked:** naming "young and old, men and women, Black, white and South Asian" gave mixed crowds on both
+sides in 8 of 8 (R5a was all white men). **Caricature check (zoomed K2a, K2b, K4a):** ✅ ordinary faces, no stereotypes;
+bowler mayor 8 of 8; red moon 8 of 8; no mascot lookalike.
+
+**Shortlist:** **K2a** (the most painting), **K4a** (the most real skin). **Jack picked K3a** (`d81d7f7a`, brushwork everywhere), 2026-10-25.

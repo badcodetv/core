@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/S2d-b.png",
+ "made": "2026-10-25T19:49:02.725Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. Close on a skinny young white woman baker with a ginger bun at four in the morning in a cramped 1930s bakery kitchen, wiping her brow with the back of a floury wrist, her other hand still pressing a mound of dough. Flour in her eyebrows, sweat on her temple, a small burn on her forearm, eyes half shut with tiredness. Hot orange light from the open bread oven on one side of her face, the cold blue-white of one bare bulb on the other. Behind her, out of focus, two more bakers kneading. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "18f2f484-ae65-474a-bb96-844b37bc7ef3"
+}

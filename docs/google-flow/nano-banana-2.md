@@ -2407,3 +2407,54 @@ NB2, 9:16, 2 each.
   offers 2.1 is unchecked.
 - ⬜ Google has blocked Disney requests since a December 2025 cease-and-desist ([Android Authority](https://androidauthority.com/google-gemini-blocks-disney-generation-3639914)) `[press]`;
   whether naming a game is blocked is unknown. We don't name games anyway (rule zero's cousin).
+
+## Mixed media on NB2: pixel world, painted people — 2026-10-25 `[observed, n=8]`
+
+Bank Robbery MV "Mixed sweep" (`docs/stories/bank-robbery/songs/mv-speakeasy-mint/storyboard.md`). NB2, 9:16, 4 prompts × 2.
+
+- ✅ `[observed, 8 of 8]` **Scope words keep two styles apart:** "Every building, street, lamp and sky is crisp 16-bit pixel
+  art … Only the people are painted in muted realism" gave pixel sets with painted people every time. No blend, no
+  single-style collapse (the failure the web expected; nobody had published a test).
+- ✅ `[observed]` **Figure size decides the realism.** Full-building frames gave painted-illustration or toy-like figures;
+  a closer two-floor frame with chest-up people gave real skin texture, stubble and wool.
+- 🔴 `[observed, 2 of 8]` **"Photo-mode capture" can summon a camera viewfinder** (corner brackets, "CAM", "PHOTO MODE",
+  lens numbers). It was clean 4 of 4 in the game sweep, so it's a coin toss, not a fix.
+- 🔴 `[observed, n=1]` **"A brick red bakery" was written on the shop sign.** A colour word next to a shop noun becomes its sign.
+- 🟡 `[observed, n=2]` **"Coarse chunky pixel art, big square pixels" went 3D (voxel blocks)**, a miniature-model look.
+  "Crisp 16-bit pixel art, one even pixel grid" stayed 2D.
+- 🟡 `[observed, n=2]` **"Theatre scenery made of pixels, painted actors"** gave realistic 3D game figures and weaker pixels.
+
+## Escaping the default cartoon on NB2 — 2026-10-25 `[observed, n=8]`
+
+Bank Robbery MV "Own-look sweep". Jack: round 3a (adult-sitcom traits) was "too similar to other cartoon styles".
+- `[observed]` The generic look was **asked for**: "big round eyes, small dot pupils, overbites, wobbly black outline" is the
+  stock adult-sitcom kit. Replacing it with **a named medium plus a face rule** ("small dash eyes and heavy brows";
+  "flat graphic icons built from triangles"; "the closer to the money, the more distorted") gave 8 of 8 frames that
+  did not read as sitcom.
+- ✅ `[observed, n=2]` **Two media split by place works:** "the attic and street are rough woodblock print … the basement is smooth
+  Art Deco lacquer" put the split at the street line in 1 of 2 cleanly.
+- ✅ `[observed, n=8]` **"Plain margins with no writing" stopped invented labels and signatures** in 8 of 8 (shop signs stay).
+- 🟡 `[observed, n=2]` "Cheap four-colour screenprint … slipped out of line" came back as clean modern editorial illustration; the misregistration was faint.
+- 🟡 `[observed, n=1]` "Distortion is the opinion" gave one long pointed nose on the mayor; zoom grotesque styles every time.
+
+## Small brand marks inside a locked style — 2026-10-25 `[observed, n=10]`
+
+Bank Robbery MV "Twist sweep": 3a's sitcom style + one sentence per twist.
+- ✅ `[observed, 10 of 10]` One added sentence did not move the style.
+- ✅ `[observed, 2 of 2]` "A small, perfectly round, solid red moon" landed both times.
+- 🟡 `[observed]` "A ring with one small red triangle inside it, set off to one side" landed 2 of 4 (medal, peephole), **centred** in both landed takes. The off-centre ask is weak on small marks (cf. §36).
+- ❌ `[observed, 0 of 2]` "One eye that is a small red triangle" on a cartoon face: ignored.
+- 🔴 `[observed, 1 of 2]` **"Printing presses with cheerful 1930s cartoon faces" produced a cup-headed character close to a famous game mascot.** Zoom any 1930s-cartoon frame for it.
+- `[observed]` Generating while scripting the page over CDP (wheel scrolling, fetches) was followed by "unusual activity" fails; refresh-and-retry worked. The harvest also returned stale tiles after the scrolling.
+
+## A cartoon style plus a "hint of realism" — 2026-10-25 `[observed, n=12]`
+
+Bank Robbery MV "Realism sweep": 3a's sitcom design + one realism clause each.
+- ✅ `[observed, 2 of 2]` **Flat cartoon people in a realist painted world** ("standing in a building and street painted with thick-oil night realism: wet cobbles reflecting the lamps, soot, steam") kept the people flat and made the set real. The strongest of six.
+- ✅ `[observed]` "Matte plasticine … fingerprints … tiny practical bulbs" (clay) and "matte painted latex … real miniature set" (puppets) gave handmade miniatures with no plastic sheen.
+- 🔴 `[observed, 1 of 2]` **"Faces rendered with startling real skin" pasted photographic heads on cartoon bodies**, and the mixed crowd collapsed to white men. Don't ask for photoreal faces on cartoon bodies.
+- 🟡 `[observed, n=2]` "Painted on celluloid and photographed on an old animation camera" barely changed a flat style.
+- ✅ `[observed, 12 of 12]` "A small solid red moon above the roof" held in every style. "Printing presses with simple faces painted on their sides" gave no mascot lookalike (0 of 12), where "cheerful 1930s cartoon faces" gave one twice.
+- ✅ `[observed, 8 of 8, 2026-10-25 K sweep]` **Naming the crowd mix works where "mixed" failed:** "each side young and old, men and women, Black, white and South Asian" gave mixed crowds on both sides in 8 of 8 (the same prompt with "mixed ages and skin tones" gave all white men in R5a).
+- 🟡 `[observed]` Adding a painting clause to the real-skin prompt softened the faces back toward cartoon in about half the takes; "light only" (K4) kept the most real skin.
+- 🔴 `[observed, 4 of 4, 2026-10-25 Bank Robbery MV scene 2]` **Real-skin rendering + a bare demographic ("an older Black man") gave a near-likeness of a famous film actor** in every take. Specific ordinary features ("heavy-set, shaved head, a broken nose") broke it in 1 of 2. Give every realistic face specific features, and check every face for a celebrity likeness.

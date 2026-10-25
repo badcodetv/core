@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/C2-b.png",
+ "made": "2026-10-25T18:50:18.547Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A cartoon still printed as a cheap four-colour screenprint: flat inks of brick red, mustard, teal and black on cream paper, each colour layer slipped slightly out of line with the black outline, coarse halftone dots for every shadow. People are tall stiff blocky figures with long faces, square jaws, small dash eyes and heavy brows. A tall city building cut open in cross-section like a doll's house, seen straight on, four floors from the top down. Attic: an old woman in a coat shivers by one candle in an ice blue room. Street level: a bakery with cream and brick red walls; a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other under a street lamp, a police car beside them. Basement: in emerald lamplight, printing presses with cheerful faces throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances. Bottom: an orange furnace. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "89a846bf-60b7-4b9a-8682-a11e866b226c"
+}

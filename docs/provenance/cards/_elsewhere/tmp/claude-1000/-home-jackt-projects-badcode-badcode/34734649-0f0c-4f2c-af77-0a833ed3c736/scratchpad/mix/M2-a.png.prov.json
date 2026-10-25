@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/M2-a.png",
+ "made": "2026-10-25T18:31:39.148Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photo-mode capture from a mixed-media video game: the whole set is built from flat pixel-art backdrops, like theatre scenery made of chunky square pixels, and the actors standing in it are painted realistic people with weathered faces, real skin texture, 1930s wool coats and worn leather. The blocky coloured light of the pixel lamps falls across the painted actors. The set is a tall narrow building cut open like a doll's house at night, seen from across the street, low and to the left, four floors from the top down: an ice blue attic where an old woman in a coat shivers by one candle; a brick red bakery where a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other under a yellow street lamp; an emerald-lit basement where printing presses throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances; an orange furnace at the bottom. A police car roof in the near left corner. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "2f15f92f-e33f-44df-abd5-7804918c6064"
+}
