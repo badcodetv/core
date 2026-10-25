@@ -229,3 +229,25 @@ Shot spec: the man of the people. Daylight, a crowd's blur, a battered portable 
 comes back as an outline. Fix in the next round, whichever design wins: "a solid, filled red triangle … pushed up
 close to the ring's edge, towards the top corner, well away from the centre". Images stay in Flow project
 `d5559719-088b-4f35-ab61-31b0feb4b502` ("Oct 25 - 09:56").
+
+---
+
+# Jack's pick, and the host on the club set (2026-10-25)
+
+**Jack picked D1** (the local-access still: grey suit, black roll-neck, black knitted gloves, a stitched ring and a
+red felt triangle). His words: "please use this man in this image, but use the background on the old set, the 90s
+tough crowd set you know." The old set is the club room of plate P1 (`money for something\2026\stills\plate-P1-a.jpg`):
+brick, the bare tree with notes, an oxblood armchair, the television on red beer crates, the pint.
+
+**Settings:** Nano Banana 2 · 16:9 · x2 · Flow project cb27208c. **Attach:** Jack's D1 still (uploaded as
+`mfs-balaclava-host-ref`), then plate P1 (uploaded as `mfs-club-plate-P1`). Runner: `scripts/money-for-something/mfs-still.mts`.
+Prompt: `scripts/money-for-something/oct26/prompts/plate-H1.txt` (the man is not described, per the rule).
+
+| Still | Verdict |
+| --- | --- |
+| `plate-H1-a.jpg` | First time. The room, camera, light and pint all match P1; the man is D1. The triangle sits a little up and right of centre, as in Jack's still. Both gloved hands are on the papers. |
+| `plate-H1-b.jpg` | The same, with the hands clasped and the triangle a touch lower. |
+
+Both are on disk in `money for something\2026-10-26\stills`. The television still shows the maker's name; the cut
+builder blurs it, as before. A Flow Character was not made: the voice is text-to-speech and the mouth is never seen,
+so the plate as a reference is enough (variants by reference, not Characters).

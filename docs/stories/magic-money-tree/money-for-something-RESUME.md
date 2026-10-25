@@ -7,19 +7,19 @@ direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 
 > **▶ NEWEST: the week of 19–25 October episode and the new host. Last worked 25 October 2026, by Jack.**
 > - **Topics:** [`money-for-something-2026-10-26-topics.md`](./money-for-something-2026-10-26-topics.md): this week's
->   board plus what the meetings said. The 20 Oct meeting: make it a **general news show, not economics**; Jack's idea of
->   a faceless host in front of a screen. The 22 and 23 Oct meetings had no MFS item.
+>   board plus what the meetings said. The 20 Oct meeting: make it a **general news show, not economics**.
+> - **Host v2, PICKED:** Jack chose **D1** (the local-access still: grey suit, black roll-neck, black knitted gloves,
+>   stitched ring, red felt triangle) and put him **on the old club set** ("the 90s tough crowd set"). Plate **H1**,
+>   made first time: `money for something\2026-10-26\stills\plate-H1-a.jpg` (hands on the papers, my pick) and `-b`
+>   (hands clasped). Prompt `scripts/money-for-something/oct26/prompts/plate-H1.txt`; log in
+>   [`characters/host-v2-balaclava.md`](./characters/host-v2-balaclava.md). No Flow Character: TTS voice, mouth never seen.
 > - **Script:** [`money-for-something-2026-10-26-script.md`](./money-for-something-2026-10-26-script.md): about 30 beat
->   briefs (cold open → the PM's week → money → AI week → quick-fire → ending), **Jack's column blank**, a facts table and
->   worries. Jack said "use all of those topics and more".
-> - **Host v2, BadCode in person:** [`characters/host-v2-balaclava.md`](./characters/host-v2-balaclava.md): a white
->   balaclava, the logo as the face (ring plus red triangle), no skin, a text-to-speech voice, mouth never seen. Round 1:
->   3 looks in project cb27208c. Round 2: **8 anti-slop designs** in project `d5559719-088b-4f35-ab61-31b0feb4b502`
->   ("Oct 25 - 09:56"), with the research rules, prompts and verdicts in the file.
-> - **Next, in order:** (1) Jack picks a host design (my picks: D2 1970s newsreader, D6 armchair, D3 bedroom YouTube);
->   (2) re-run it with the triangle fix ("solid, filled, pushed up to the ring's edge, away from the centre") and make a
->   Flow Character; (3) Jack writes line 0a (cold open: he looks different this week), then beat by beat;
->   (4) add a Budget line to row 5a after Wednesday 28 Oct; (5) Kai's calls: naming Zuckerberg and the Tory betting
+>   briefs (cold open → the PM's week → money → AI week → quick-fire → ending), **Jack's column blank**.
+> - **▶ RESUME HERE: line 0a**, the cold open (he's from the future and looks different this week; angles: "had some
+>   work done", nobody can tell what's under it, he's seen this week already, the pint he can't drink). Jack sends a
+>   rough, I bullet versions, he picks; then beat by beat down the table.
+> - **Then:** add a Budget line to row 5a after Wednesday 28 Oct; talking clips from plate H1 (Frames, muted, TTS voice
+>   laid over); blur the television's maker's name in the cut. Kai's calls: naming Zuckerberg and the Tory betting
 >   couple, the Farage line, the new host look.
 > - **Unchecked:** Flow's picker now reads "Nano Banana 2.1"; whether it still costs nothing.
 

@@ -8,7 +8,8 @@ column is the checked fact, the second is ways in, and **Jack's line is left bla
 board and sources: [`money-for-something-2026-10-26-topics.md`](./money-for-something-2026-10-26-topics.md).
 
 **The host this week is the new one:** BadCode in person, a white balaclava with the logo as its face, no skin
-([`characters/host-v2-balaclava.md`](./characters/host-v2-balaclava.md), look not yet picked). His mouth is never
+([`characters/host-v2-balaclava.md`](./characters/host-v2-balaclava.md)). **Jack picked D1 on 25 Oct**, on the old club set
+(plate H1: brick, the tree, the television on beer crates, a pint he can't drink; `money for something\2026-10-26\stills\plate-H1-a.jpg`). His mouth is never
 seen, so the voice is text-to-speech laid over a few stock movement clips. **That frees the 8-second / 20-word clip
 rule**: a line can run as long as it needs. Short is still funnier.
 
