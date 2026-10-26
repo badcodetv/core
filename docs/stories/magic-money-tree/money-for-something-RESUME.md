@@ -5,7 +5,10 @@
 **Kai has not seen any of it, and it is not ruled as the film.** It sits beside the 1 October
 direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 
-> **▶ NEWEST (26 Oct 2026, Jack): jokes pass on the shorts.** In the shorts script: **5 Zuckerberg LOCKED** (Jack's lines;
+> **▶ NEWEST (26 Oct 2026, afternoon): six shorts BUILT (1, 2, 5, 6, 8, 9) and on Premiere timelines in `2026-10-26\october 26.prproj`.** Read "Built 26 Oct"
+> at the bottom of the shorts script. Next: Jack watches and writes the yellow lines.
+>
+> **Earlier, 26 Oct, Jack: jokes pass on the shorts.** In the shorts script: **5 Zuckerberg LOCKED** (Jack's lines;
 > Kai's call on the Elon "pedo" line, flagged as libel risk, and the Piers Morgan line), **6 Barclays LOCKED** (2008 tag in),
 > **7 Blue Planet CUT**, **8 sewage LOCKED**, **9 Meanwhile:** gran + William joke locked, Fender/Airbnb/Starbucks keep-or-drop owed.
 > **Resume at:** that Short 9 call, then Short 10 (Telford), then the yellow lines owed on 1, 5, 6 and 8.

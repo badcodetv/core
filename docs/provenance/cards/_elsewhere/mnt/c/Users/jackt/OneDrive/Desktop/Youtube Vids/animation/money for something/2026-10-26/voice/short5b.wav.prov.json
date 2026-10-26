@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/2026-10-26/voice/short5b.wav",
+ "made": "2026-10-26T13:52:52+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio API",
+ "tool": "scripts/money-for-something/oct26/voice/mfs-voice.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "MFS 26 Oct shorts narration, Jack's locked lines",
+ "prompt": "Where does it all go? Tax havens. The second-worst thing billionaires do on islands. Then Meta got fined for lying to you. Two hundred and nineteen billion, knocked down to twenty-five. Even Man City want answers! The President's son-in-law is building a resort on an island in Albania, in a nature reserve. Thousands of Albanians marched against it. A march has never stopped a billionaire. A treadmill has stopped Elon, though. He looks like a reanimated corpse of a pedo.",
+ "settings": {
+  "voice": "Zubenelgenubi",
+  "accent": "British (Brixton)",
+  "temperature": "1"
+ }
+}

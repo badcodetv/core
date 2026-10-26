@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/2026-10-26/voice/short1.wav",
+ "made": "2026-10-26T13:52:52+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio API",
+ "tool": "scripts/money-for-something/oct26/voice/mfs-voice.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "MFS 26 Oct shorts narration, Jack's locked lines",
+ "prompt": "The government wants every household to keep three days of tinned food and bottled water. Air-raid siren: done. It was about barbecues. Rationing: done. Munitions factory: done. Planes in the sky: done. Keep calm and carry on: done. Half of Britain says it wouldn't fight under any circumstances. Unless Putin turns up in a fucking dinghy. Then they're ready to die.",
+ "settings": {
+  "voice": "Zubenelgenubi",
+  "accent": "British (Brixton)",
+  "temperature": "1"
+ }
+}

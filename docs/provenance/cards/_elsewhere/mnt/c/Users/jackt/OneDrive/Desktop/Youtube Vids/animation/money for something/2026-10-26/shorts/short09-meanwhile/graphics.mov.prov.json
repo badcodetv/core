@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/2026-10-26/shorts/short09-meanwhile/graphics.mov",
+ "made": "2026-10-26T14:16:32+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "ffmpeg+PIL",
+ "tool": "scripts/money-for-something/oct26/build-short.py",
+ "why": "MFS 26 Oct short layer",
+ "inputs": {
+  "spec": "scripts/money-for-something/oct26/shorts/short09-meanwhile.json"
+ }
+}

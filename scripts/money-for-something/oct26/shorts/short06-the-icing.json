@@ -1,0 +1,88 @@
+{
+ "voice": [
+  "short6a",
+  "short6b"
+ ],
+ "item": "2610-06",
+ "signal": [
+  72,
+  33
+ ],
+ "chyron": "\"AI IS THE ICING ON THE CAKE.\"",
+ "turn": "Good news",
+ "payoff": "by 2054 the robot cuts your hair. it still asks about your holidays. you don't get one.",
+ "slams": [
+  {
+   "type": "quote",
+   "at": "called AI",
+   "text": "the icing on the cake",
+   "who": "Barclays, on AI, Oct 2026"
+  },
+  {
+   "type": "stat",
+   "at": "Five thousand people",
+   "text": "5,000 JOBS",
+   "sub": "barclays, oct 2026"
+  },
+  {
+   "clear": "Don't worry"
+  },
+  {
+   "type": "stat",
+   "at": "Last time",
+   "text": "2008",
+   "sub": "you paid for it",
+   "size": 180
+  },
+  {
+   "clear": "Barbers"
+  },
+  {
+   "type": "quote",
+   "at": "tech bros",
+   "text": "tech bros and oligarchs",
+   "who": "the UK's AI minister, Oct 2026"
+  },
+  {
+   "clear": "Good news"
+  }
+ ],
+ "pictures": [
+  {
+   "key": "s6-barclays"
+  },
+  {
+   "at": "called AI",
+   "key": "s6-cake"
+  },
+  {
+   "at": "Don't worry",
+   "key": "s6-barclays"
+  },
+  {
+   "at": "It's a chatbot",
+   "key": "s6-chatbot"
+  },
+  {
+   "at": "Last time",
+   "key": "s6-2008"
+  },
+  {
+   "at": "Barbers",
+   "key": "s6-barber"
+  },
+  {
+   "at": "so a robot",
+   "key": "s6-robot"
+  },
+  {
+   "at": "The day before",
+   "key": "s6-minister"
+  },
+  {
+   "at": "Good thing",
+   "key": "s6-bank"
+  }
+ ],
+ "name": "short06-the-icing"
+}

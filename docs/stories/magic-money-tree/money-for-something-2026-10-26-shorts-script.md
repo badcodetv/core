@@ -7,7 +7,11 @@ sources: the facts table in [`money-for-something-2026-10-26-script.md`](./money
 (that file is now the fact sheet; this one replaces its row-by-row script).
 
 
-> **▶ RESUME HERE (end of 25 Oct 2026, Jack).** Writing the shorts one by one, words before anything is made.
+> **▶ RESUME HERE (26 Oct 2026, afternoon, Jack: "lets just make the shorts with what we have so far").** Six shorts are
+> **built and on Premiere timelines** in `2026-10-26\october 26.prproj`, one sequence each, for Jack to watch. See "## Built 26 Oct" at the bottom of this file. Short 10
+> and the cut shorts (3, 4, 7) were not made.
+>
+> **Earlier (end of 25 Oct 2026, Jack).** Writing the shorts one by one, words before anything is made.
 > Jack's notes from today are lower down this file, under each short; the table at the top (Shorts 1–10) is my first draft.
 >
 > | Short | State |
@@ -658,3 +662,61 @@ One joke per item, ★ = my pick. Facts as in the Short 9 draft above (topics bo
 > Meanwhile Prince William is trying to be a DJ on her dime.
 
 **LOCKED.** The gran and William items are now one joke. Fender, Airbnb and Starbucks: Jack hasn't ruled whether they stay.
+
+---
+
+## Built 26 Oct (Jack: "lets just make the shorts with what we have so far")
+
+Made from the locked lines exactly as Jack wrote them; my joins in Short 5 kept. **Not watched by Jack. Not in Premiere yet.**
+All media: `Youtube Vids\animation\money for something\2026-10-26\` (`voice\`, `pictures\`, `shorts\<name>\`).
+
+| Short | Length | Pictures · slams | Yellow line used (**placeholder: my ★ pick, Jack's to replace**) |
+| --- | --- | --- | --- |
+| `short01-three-days` | 30.1 s | 7 · 6 headline cuttings (the checklist) + LBC | `› next: evacuate the kids to Wales.` (from Jack's draft table) |
+| `short02-gogglebox` | 17.5 s | 7 · Guardian quote, Macron quote, 70,000 POLICE, BBC headline | `› Macron sent the riot police. Burnham sent the bacon fries.` |
+| `short05-pay-my-tax-boss` | 57.0 s | 12 · UNDER 1% / 20% / CAYMAN / $219.5bn → $25bn | `› by 2054 every billionaire had an island. you had a tin of custard.` |
+| `short06-the-icing` | 45.5 s | 9 · "icing" quote, 5,000 JOBS, 2008, "tech bros" quote | `› by 2054 the robot cuts your hair. it still asks about your holidays. you don't get one.` |
+| `short08-the-sewage-knows` | 25.1 s | 5 · £9.8 BILLION | `› by 2054 the sewage was the only honest institution left.` |
+| `short09-meanwhile` | 16.6 s | 3 · 15,000,000 FOLLOWERS, $12,000 A MONTH | `› the only pension that works.` |
+
+**How it's built** (`scripts/money-for-something/oct26/`):
+- **Voice:** `voice/mfs-voice.py`, the narrator recipe Jack chose 3 Oct (Zubenelgenubi, British (Brixton), nothing else).
+  Shorts 5 and 6 are two takes each (long takes truncate). Every take was transcribed (`voice/words.py`) and checked
+  with Gemini. Re-rolled twice: Short 5 said "move **ass**" and Short 2 said "**As** is on Gogglebox". Rejects are in
+  `voice\rejected\`. 10 of the 10 free voice calls a day were used on 26 Oct.
+- **Pictures:** 63 Wikimedia Commons photos, licences read from the API →
+  [`money-for-something-2026-10-26-screen-sources.md`](./money-for-something-2026-10-26-screen-sources.md) and `pictures.tsv`.
+- **Layers:** `build-short.py shorts/<name>.json` writes `voice.wav`, `graphics.mov` (ProRes 4444 with alpha: overlay B,
+  captions, slams, the yellow line and the glitch on the turn), one `pic-NN-<key>.mp4` per picture (cold grade, slow push,
+  cut to its word), `tail.mp4` (plate H1 still, then the logo) and `edl.json` (where everything sits). `sheet.jpg` is a contact
+  sheet I checked. The specs in `shorts/*.json` are where to change a picture, a slam or a yellow line, then rebuild (≈1 min a short).
+
+**Still owed:**
+- 🔴 **Before anything is posted:** Kai's calls on the Elon "pedo" line and the Piers Morgan line (Short 5), naming
+  Zuckerberg, and the dinghy line (Short 1). The marketing gatekeeper checks each short.
+- 🟡 **Six amber photos** need a yes: four CC BY-SA (`s2-totnes-02`, `s5-freddo-01`, `s8-outfall-01`, `s8-ozempic-01`) and
+  two marked public domain on Flickr (`s5-metaverse-01`, `s9-william-01`). CC BY and OGL photos need their credit on screen,
+  but **there is no credit line yet**. The strings are in `pictures.tsv`.
+- **Yellow lines:** Jack's to write. The ones in the table above are placeholders.
+- **Sound:** no thud on each slam, no glitch sound, no music bed.
+- **Host tail:** a still of plate H1 for now. The four Flow moves (T1–T4) have not been made.
+- **Weak pictures:** the siren (modern, not WW2), the dinghy (on a beach), the chatbot (a blank laptop), the outfall (into
+  the sea), the gran (looks 50s–60s). The named care home was dropped from Short 9.
+- **Short 9:** still owed a ruling on Fender, Airbnb and Starbucks. **Short 10:** no jokes yet.
+
+## Premiere
+
+**Project:** `Youtube Vids\animation\money for something\2026-10-26\october 26.prproj` (Jack made and named it, 26 Oct).
+**Sequences:** `short01-three-days` 30.2 s · `short02-gogglebox` 17.6 s · `short05-pay-my-tax-boss` 57.0 s · `short06-the-icing` 45.5 s ·
+`short08-the-sewage-knows` 25.1 s · `short09-meanwhile` 16.6 s. Each is 1080×1920 at 24 fps, created from its first picture, with
+one bin per short.
+
+| Track | What |
+| --- | --- |
+| V1 | `pic-NN-*.mp4` at the times in `edl.json` (overwrite), then `tail.mp4` at `graphics_end` |
+| V2 | `graphics.mov` from 0 (ProRes 4444 with alpha). Checked: frame `frames\short09-meanwhile-7s.png.png`, read by eye |
+| A1 | `voice.wav` from 0 |
+
+**Needs a human:** no audio crossfades or sound effects yet. A frame lands at most one frame either side of the `edl.json`
+times (24 fps rounding). **Rebuilding a short** (new pictures or a new yellow line): rerun `build-short.py`, which overwrites
+the same files, so Premiere picks them up. Never delete imported media.
