@@ -105,3 +105,4 @@ but for heaven’s sake, don't just eat cake
 ```
 
 That prompt was itself the Style box of an earlier take Jack loved ("Best one", https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5) with only the voice changed. Of "Best one" Jack said: "other than the Indian beginning … I loved the style/genre/beat/everything about it other than the voice", and later: "the backing singing is great, the beats great, it is exciting and grand, keep all of that".
+- Jack has now said which take: the second one, https://suno.com/song/dddd147b-858d-42da-bd2f-9e316edab1b4

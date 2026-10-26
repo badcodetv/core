@@ -1,0 +1,1 @@
+- Jack's verdict on the last round: from five iterations he named this one, brj-sr5-brixton-baritone-dub-echo-v6-w35. Of a separate experiment round after it he said "forget those last ones".

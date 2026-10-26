@@ -1,0 +1,1 @@
+okay so keep the opera stuff, but remove the opera singing and add back the laid back gangster voice, also intertwine the psychedelic funk with the classical stuff, do not use any old prompt or the suno skills/repo just research the internet and use a clean room approach thanks

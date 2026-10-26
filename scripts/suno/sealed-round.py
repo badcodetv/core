@@ -104,6 +104,8 @@ def problems(p, lyric_words):
     if words(p.get("lyrics", "")) != lyric_words:
         out.append("the lyric words are not exactly Jack's lyrics (a word was changed, added, dropped or reordered)")
     style = p.get("style", "").lower()
+    if len(p.get("style", "")) > 1000:  # Suno caps the Style box at 1,000 characters (SR7 lost a prompt to it)
+        out.append(f"the Style box is {len(p['style'])} characters; Suno's limit is 1000")
     for bad in ("scream", "double-time", "double time", "fast rap"):
         if bad in style:
             out.append(f"the Style box asks for '{bad}', which Jack's standing rules forbid")
