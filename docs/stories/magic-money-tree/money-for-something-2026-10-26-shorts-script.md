@@ -16,8 +16,12 @@ sources: the facts table in [`money-for-something-2026-10-26-script.md`](./money
 > | 2 · Gogglebox | **Rebuilt on Jack's shape:** Europe on the streets → England (Totnes kites) → their leaders → ours on Gogglebox. Captions offered; Jack: "we'll make edits later" |
 > | 3 · One meeting | **CUT** ("not the funniest subject") |
 > | 4 · The trillion | **CUT** ("its not funny") |
-> | 5 · Zuckerberg | Facts + six angles offered; **waiting on Jack's pick** (check New Mexico's population first) |
-> | 6–10 | To do: Barclays/AI icing, Blue Planet, the sewage knows, Meanwhile (quick-fire), Telford |
+> | 5 · Zuckerberg | **Jack's lines LOCKED (26 Oct)**, assembled under "Jack's lines"; Kai's call on the Elon and Piers lines; length and yellow line owed. Was: corruption as business as usual → Cayman's full → Kushner's Albanian island → "never gone wrong before". Beats drafted under "Jack's shape"; Jack's lines owed. 🔴 Epstein line can't touch a named person |
+> | 6 · The icing | **Jack's lines LOCKED (26 Oct)**, under "Short 6: Jack's lines"; yellow line owed |
+> | 7 · Not a single frame | **CUT** ("its not that funny", 26 Oct) |
+> | 8 · The sewage knows | **Jack's lines LOCKED (26 Oct)**; "subsidised" swap offered; yellow line owed |
+> | 9 · Meanwhile | **Gran + William joke LOCKED (26 Oct)**; Fender, Airbnb, Starbucks: keep or drop owed |
+> | 10 | To do: Telford |
 >
 > Format: overlay B (Transmission) + headline slams + host as a 1–2 s silent tail
 > ([`money-for-something-2026-10-26-format.md`](./money-for-something-2026-10-26-format.md)). After the words: `scene-timeline`
@@ -487,3 +491,170 @@ Yellow options: `› the baby's good for it.` / `› the Moon's not for sale. ye
 6. **Both numbers in one week:** $10bn tax covered by the board, $25bn fine appealed. Nobody pays anything.
 
 Kai's call: naming a living person.
+
+### Short 5: Jack's shape (26 Oct): "joke about the corruption, business as usual, billionaires getting away with murder, the Cayman Islands can't even store that much money, billionaires buying Albanian islands, probably to make another Epstein island tax haven"
+
+**New facts (read 26 Oct):**
+- **Albania:** Jared Kushner's Affinity Partners, via Atlantic Incubation Partners, plans a ~€1.4bn luxury resort on
+  **Sazan Island** and the protected Vjosa-Narta coast (≈10,000 rooms and villas; sources disagree on the count). Albania
+  declassified the island (an ex-military base) for civilian use in Dec 2024. **Thousands protested in Tirana, June 2026**
+  (Al Jazeera, NPR). **Albanian anti-corruption prosecutors opened an investigation into a local businessman who sold land
+  to the developers** (alleged forged deeds and money laundering): the probe is into *him*, not Kushner. Status in
+  October **unchecked** (latest found: June 2026).
+- **Cayman:** about **$500bn** of cross-border private wealth booked there now, **$700bn by 2030** (BCG, May 2026);
+  shadow-bank assets **over $8 trillion** (FSB via Statista, 2022 data). Zuckerberg's own net worth: **not checked**.
+
+**Beats** (my lines, for Jack to change):
+
+| Beat | Voice (draft) | Overlay |
+| --- | --- | --- |
+| Hook | California wants a one-off tax on billionaires. Zuckerberg threatened to move house. | Chyron: **"META COVERS ZUCKERBERG'S TAX BILL."** |
+| Business as usual | So his work invented a new kind of share to pay it for him. The same week, a judge fined Meta twenty-five billion for lying to you. Down from two hundred and nineteen. It's appealing. | Slam: `$219,500,000,000` → `$25,000,000,000` |
+| The money has to go somewhere | Where do you even put it? The Cayman Islands hold half a trillion. It's an island. It's full. | Slam: `CAYMAN: FULL` |
+| So buy a new island | Which is why the President's son-in-law is building a resort on an island in Albania. On an old military base. In a nature reserve. Thousands of Albanians marched against it. | Sazan Island, protest footage |
+| The turn | Billionaires buying private islands. That's never gone wrong before. | `› it went wrong.` |
+
+**The Epstein line:** the turn above lets the viewer finish the joke without the voice saying it. 🔴 **We can't say or show
+that Kushner (or any named person) is building "another Epstein island".** That's an accusation of a crime, so it's a
+libel risk. If Jack wants the Epstein word in it, it goes on billionaires in general and **not in the same beat as Kushner's
+face or name**. Kai's call, and the gatekeeper checks it before anything goes out.
+
+### Short 5: joke options (26 Oct; Jack: "these are just facts, I need funny angles and actual jokes")
+
+My jokes, for Jack to pick, change or bin. ★ = my pick per beat.
+
+- **Tax:** ★ "His tax rate was under one per cent. The VAT on your Freddo is twenty." · "He threatened to leave California
+  over five per cent. Mate, you built a metaverse nobody went to. You know how to live somewhere with nobody else in it." ·
+  "His board gave him new shares to pay his tax. Ask your boss to cover your council tax. That's called a P45."
+- **Fine:** ★ "Two hundred and nineteen billion, knocked down to twenty-five. That's not a fine, that's a DFS sale." ·
+  "Meta says fining it for lying is 'a tax on speech'. True, if your speech is lying." · "Forty-three million lies in a
+  state of two million people. Twenty each. Even the babies."
+- **Cayman:** ★ "Half a trillion dollars on an island smaller than the Isle of Wight. That's not a tax haven, that's a
+  storage unit. And it's full." · Spicy, no named person on screen: "Tax havens. The second-worst thing billionaires do on
+  islands."
+- **Albania:** ★ "In Britain you can't build a bypass because of a newt. In Albania they're building ten thousand rooms in a
+  nature reserve. Somebody get that newt an agent." · "It used to be a military base. Still will be: a fence, guards, and
+  people nobody voted for." · "Thousands of Albanians marched against it. A march has never stopped a billionaire. But they
+  do hate the noise by the pool."
+- **Ending (yellow line):** ★ callback to Short 1: `› by 2054 every billionaire had an island. you had a tin of custard.` ·
+  `› in 2054 we just call them "islands". everyone else lives in the sea.`
+
+Unchecked: Cayman is smaller than the Isle of Wight (about 264 km² against 380 km², from memory).
+
+### Short 5: Jack's lines (26 Oct), assembled
+
+Jack's words exactly as he sent them. The joins between beats (in *italics*) are mine. I moved the tax-haven line up so it sits
+away from Kushner.
+
+| # | Voice | Overlay |
+| --- | --- | --- |
+| 1 | *California wants a one-off tax on billionaires. Zuckerberg threatened to move house.* | Chyron: **"META COVERS ZUCKERBERG'S TAX BILL."** |
+| 2 | His tax rate was under one per cent. The VAT on your Freddo is twenty. Just another snowflake who can't pull himself up by his bootstraps. Maybe ask Piers Morgan to suck him off, while perusing the metaverse alone. | Slam: `UNDER 1%` vs `20%` |
+| 3 | *Where does it all go?* Tax havens. The second-worst thing billionaires do on islands. | Slam: `CAYMAN ISLANDS` |
+| 4 | *Then Meta got fined for lying to you.* Two hundred and nineteen billion, knocked down to twenty-five. Even Man City want answers! | Slam: `$219,500,000,000` → `$25,000,000,000` |
+| 5 | *The President's son-in-law is building a resort on an island in Albania, in a nature reserve.* Thousands of Albanians marched against it. A march has never stopped a billionaire. A treadmill has stopped Elon, though. He looks like a reanimated corpse of a pedo. | Protest footage |
+| End | (yellow line owed: custard callback offered) | |
+
+**Jack, 26 Oct: "keep what I wrote"**; the tax-haven line stays at beat 3. **Kai's call before it goes out:** the Elon
+"pedo" line (flagged as a libel risk; Jack kept it) and the Piers Morgan line. Still open: the length (about 130 words
+against a 60–80 target), and a check on what the Elon treadmill moment actually is.
+
+## Short 6: The icing, joke options (26 Oct)
+
+Facts (topics board, BBC 🟡): Barclays cutting **5,000 jobs** (5% of staff), much of it in the UK retail bank and India, and
+it called AI "the icing on the cake". Indian barbers are paid to film their own hands with head-cams to train robots ("good
+money"). The AI minister said Britain mustn't leave AI to "tech bros and oligarchs", recorded the day before the Barclays
+cuts. Reader rule: name who gains (shareholders) in the same short. ★ = my pick.
+
+- **Icing:** ★ "Barclays called AI 'the icing on the cake'. Five thousand people just found out they were the cake. The
+  shareholders are having seconds." · "Only a bank calls sacking five thousand people baking." · "From the bank that
+  rigged Libor: new improved jobs, now with fewer jobs." *(Libor fine 2012, from memory)*
+- **Barbers:** ★ "Somewhere in India a robot is learning to say 'going anywhere nice on your holidays?'" · "Barbers are paid
+  to film their own hands so a robot can replace them. Finally, a job that comes with its own leaving video." · "The
+  barber says it's good money. It is. For about eighteen months."
+- **Minister:** ★ "The day before, the AI minister said we mustn't leave AI to tech bros and oligarchs. Good news: he's left
+  it to banks." · "That's the fire brigade warning you about matches while handing them out."
+- **Yellow line:** ★ `› by 2054 the robot cuts your hair. it still asks about your holidays. you don't get one.` ·
+  `› the robot does not tip.` · `› you were the cake.`
+
+### Short 6: Jack's lines (26 Oct), assembled
+
+| # | Voice | State |
+| --- | --- | --- |
+| 1 | Barclays is cutting 5,000 jobs and called AI "the icing on the cake". Five thousand people out of work. Don't worry: Barclays still has a mortgage adviser. It's a chatbot. It'll happily lend five thousand unemployed people a house. Last time banks did that, it was 2008, and you paid for it. | **LOCKED (Jack, 26 Oct)** |
+| 2 | Barbers are paid to film their own hands so a robot can replace them. Can we hurry up and cure cancer, stop fucking around! | Jack's line |
+| 3 | The day before, the AI minister said we mustn't leave AI to tech bros and oligarchs. Good thing our money isn't left in the hands of soulless demons. Good news: he's left it to banks. | Jack's line (tidy offered: "Oh wait, he's left it to banks.") |
+| End | yellow line owed | |
+
+Punch-ups for line 1, on Jack's houses idea:
+- ★ "Five thousand people out of work. Don't worry: Barclays still has a mortgage adviser. It's a chatbot."
+- "Let them eat cake. And if they can't afford cake, Barclays will lend it to them at seven per cent."
+- "Perfect time to offer those five thousand a mortgage. On a gingerbread house."
+
+Line 1, Jack picked the chatbot line and wants 2008 in it (26 Oct). Tags offered:
+- ★ "In 2008 it took thousands of bankers to crash the economy. Now one chatbot can do it."
+- "It'll happily lend five thousand unemployed people a house. Last time banks did that, it was 2008, and you paid for it."
+- "It's been trained on 2008. It's already approved them all."
+Care: the UK bailed out RBS and Lloyds, not Barclays (Barclays took Qatari money instead), so no line can say Barclays was bailed out.
+
+## Short 7: Not a single frame, joke options (26 Oct)
+
+Fact (Guardian 🟡, topics board): Blue Planet III used cloudier, scruffier footage on purpose so viewers believe the animals
+aren't AI: "No gen AI was used. Not a single frame." ★ = my pick.
+
+- **Blurrier on purpose:** ★ "The BBC made Blue Planet blurrier on purpose, so you'd believe it's real. Same trick as every bloke
+  on Hinge." · "Somewhere a real turtle has been told it's too HD for telly." · "Nature now has to look worse to be believed.
+  Like a council estate in an estate agent's photo, but backwards."
+- **The future:** ★ "Where I'm from, the only way to prove a fish is real is to film it on a Nokia." · "In 2054 you'll trust a
+  video for one reason: it's shit."
+- **The meta line** (this show is made by AI; Kai's call, `docs/using-ai.md`): ★ "This show is made by an AI. Me. The news is
+  real. That's the scary bit." · "I'm an AI. Every picture here is real. You'll wish they weren't."
+- **Yellow line:** ★ `› by 2054 the only real thing left was the sewage.` (leads into Short 8) · `› in 2054 the fish were the fake ones.` ·
+  `› this one: every word.`
+
+## Short 8: The sewage knows, joke options (26 Oct)
+
+Facts (Guardian 🟡, topics board): sewage tests suggest England took about **2.5 billion lines** of cocaine in a year, a **£9.8bn**
+habit. The same week Heineken warned pubs that Ozempic is cutting drinking. Tree-ring dating says none of the two dozen "England's
+oldest pub" claimants is close. England's population is about 57m (from memory), so that's roughly **44 lines each**. ★ = my pick.
+
+- **The number:** ★ "Two and a half billion lines. That's forty-four each. If you haven't had yours, someone in the City has." ·
+  "We can't find a pound for potholes, but the country found nine point eight billion for gak."
+- **The sewage:** ★ "And the water companies pump it straight into the river. So the fish are on it too. The only thing in Britain
+  still running at full speed is a trout." · "Finally, something in this country being properly tested."
+- **Ozempic:** ★ "Heineken says Ozempic's killing the pint. Off the beer because of Ozempic, on the gear because of everything
+  else." · "The pubs are empty. The toilets are fuller than ever."
+- **The oldest pub:** "Two dozen pubs claim to be England's oldest. None of them are. The only thing in an English pub older than it
+  says is the bloke in the corner."
+- **Yellow line:** ★ `› by 2054 the sewage was the only honest institution left.` · `› the sewage knows.`
+
+### Short 8: Jack's lines (26 Oct), LOCKED
+
+> Tests on England's sewage suggest 2.5 billion lines of cocaine in a year. Ozempic's stock is down, Brenda's in a pub
+> bathroom, optimising fat loss whilst staying focused. The water companies like pumping sewage into the rivers whilst getting
+> subsidised, all I know is the fish are fucked up right now.
+
+Checks: Novo Nordisk (Ozempic's maker) is **about 70% off its June 2024 peak** and fell ~18% on 4 Feb 2026 (Morningstar,
+Euronews): "stock is down" holds. "Subsidised" is loose: the firms are mostly funded by bills and borrowing, and paid dividends
+while dumping. Offered swap "whilst paying out dividends" (Jack's call). Yellow line owed.
+
+## Short 9: Meanwhile, joke options (26 Oct)
+
+One joke per item, ★ = my pick. Facts as in the Short 9 draft above (topics board); "DJ Xara" spelling still unchecked.
+
+- **Prince William, DJ:** ★ "Prince William wanted to be a DJ. Instead he got the other job where your dad hands you the decks and
+  you never have to read the crowd." · "He'd have been perfect. Same set every year, and you can't get him off."
+- **Sam Fender:** ★ "A millionaire lowering a price. Somewhere a Ticketmaster executive has had to lie down." · "Sam Fender saw
+  his own tickets and said 'bollocks'. The first honest review Ticketmaster's ever had."
+- **Airbnb:** ★ "Airbnb hosts can't make you strip the beds any more. You still pay the cleaning fee, but now you don't have to do
+  the cleaning. Progress."
+- **Starbucks China:** ★ "In China, Starbucks now charges you to sit down. In Britain we call that a train."
+- **The TikTok gran:** ★ "A ninety-six-year-old has fifteen million followers and it pays for her care home. That's the
+  government's social care plan: go viral or die."
+
+### Short 9: Jack's lines (26 Oct)
+
+> A ninety-six-year-old TikTok gran pays for her care home. That's the government's social care plan: go viral or die.
+> Meanwhile Prince William is trying to be a DJ on her dime.
+
+**LOCKED.** The gran and William items are now one joke. Fender, Airbnb and Starbucks: Jack hasn't ruled whether they stay.

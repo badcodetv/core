@@ -5,7 +5,12 @@
 **Kai has not seen any of it, and it is not ruled as the film.** It sits beside the 1 October
 direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 
-> **▶ NEWEST: the week of 19–25 October episode and the new host. Last worked 25 October 2026, by Jack.**
+> **▶ NEWEST (26 Oct 2026, Jack): jokes pass on the shorts.** In the shorts script: **5 Zuckerberg LOCKED** (Jack's lines;
+> Kai's call on the Elon "pedo" line, flagged as libel risk, and the Piers Morgan line), **6 Barclays LOCKED** (2008 tag in),
+> **7 Blue Planet CUT**, **8 sewage LOCKED**, **9 Meanwhile:** gran + William joke locked, Fender/Airbnb/Starbucks keep-or-drop owed.
+> **Resume at:** that Short 9 call, then Short 10 (Telford), then the yellow lines owed on 1, 5, 6 and 8.
+>
+> **Earlier: the week of 19–25 October episode and the new host. Worked 25 October 2026, by Jack.**
 > - **Topics:** [`money-for-something-2026-10-26-topics.md`](./money-for-something-2026-10-26-topics.md): this week's
 >   board plus what the meetings said. The 20 Oct meeting: make it a **general news show, not economics**.
 > - **Host v2, PICKED:** Jack chose **D1** (the local-access still: grey suit, black roll-neck, black knitted gloves,
