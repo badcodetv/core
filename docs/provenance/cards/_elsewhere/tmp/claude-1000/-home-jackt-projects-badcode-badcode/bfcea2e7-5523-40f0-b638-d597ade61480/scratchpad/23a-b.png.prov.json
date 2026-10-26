@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/23a-b.png",
+ "made": "2026-10-26T16:45:07+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night just after rain on a 1930s city street: wet cobbles, an iron street lamp, a small red moon, a shop window full of loaves under a plain blank sign, its door open and glowing warm. The camera low on the wet cobbles, an iron pavement grating in the near foreground glowing emerald green from below, green light streaming up through its bars and mist. Beyond it, two police officers in 1930s peaked caps and long blue coats, one tall and thin with a grey walrus moustache, one short and round with ginger sideburns, each with a fat free loaf tucked under one arm, tipping their caps back over their shoulders as they stroll away from the shop; in the bright doorway behind them, a fat gangster with a scar through his top lip in a white apron over pinstripe trousers, waving from the doorway with a big false smile. A black police car waits at the kerb, headlamps on. Most of the frame in shadow; the brightest values are the green grating, the warm doorway and the headlamps on the wet cobbles. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "b120463f-a9b9-4113-8109-2ada5d9dbbf3",
+ "why": "Speakeasy Mint scene 23 round 1, 23a"
+}

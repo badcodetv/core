@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/13c-a.png",
+ "made": "2026-10-26T15:05:14+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night in a secret 1930s basement speakeasy, seen from high on the band's little stage past the brass bell of a trumpet in the near foreground and the shoulder of a gangster in pinstripes playing it. Below, in the middle of the black-and-white tiled room, a huge black iron printing press with a simple face painted on its side and a coal firebox in its belly glowing red hot throws a fountain of blank green paper money with no printing on it into the air; small beside it, a tall skinny mayor in a bowler hat with a gold chain, a long narrow face, hollow cheeks and a pencil-thin grey moustache, his shirt-sleeves rolled up, waistcoat, sweat running down his face shovels coal into its firebox. Gangsters in pinstripes round the room cheer and catch the notes. Emerald lamps hang over the room; scarlet velvet curtains frame the stage. Most of the frame in shadow; the brightest values are the red-hot firebox, its glow on the wet tiles and the green notes in the air. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "947d423e-ba41-4c7d-88a2-2daeb5f45088",
+ "why": "Speakeasy Mint scene 13 round 1, 13c"
+}

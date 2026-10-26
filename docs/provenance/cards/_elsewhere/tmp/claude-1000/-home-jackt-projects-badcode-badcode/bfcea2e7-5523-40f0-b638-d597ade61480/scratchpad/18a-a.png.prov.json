@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/18a-a.png",
+ "made": "2026-10-26T15:56:51+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Close on a tall skinny mayor in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache at the microphone in a 1930s radio studio at night: padded walls, a big chrome ribbon microphone on a stand, a blank glowing red lamp box with no writing above the door washing the walls red, a brass desk lamp: his real-skinned face large in frame and off-centre right, leaning in with a sly, toothy grin, mid-word, holding up a few typed pages that are blank. The big chrome microphone fills the left foreground. The red lamp lights one side of his face; the brass desk lamp warms the other. Behind him, soft, the padded wall and the green glow of a control-room window. Most of the frame in deep shadow; the brightest values are the red glow on his cheek, the desk lamp and the chrome edges of the microphone. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "42ea67ad-7cfe-4582-92cc-bc7dc606a096",
+ "why": "Speakeasy Mint scene 18 round 1, 18a"
+}

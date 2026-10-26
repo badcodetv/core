@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/17c-b.png",
+ "made": "2026-10-26T15:52:03+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Inside a secret 1930s basement speakeasy, the camera low and looking up: high in the ceiling, an iron pavement grating to the street above, and through it, dark against the cold blue night and the small red moon, the stamping boots and shins of a crowd fighting, the ends of red and blue scarves dangling through the bars, rain and grit dripping down. In the foreground, large, lit gold from a spotlight and emerald from the lamps, three people dancing arm in arm in a high-kicking line, laughing: on the left, a short stout white man in his sixties with ginger mutton-chop whiskers, a red tie and a red carnation in his lapel; in the middle, a tall skinny mayor in a bowler hat with a gold chain, a long narrow face, hollow cheeks and a pencil-thin grey moustache; on the right, a broad-shouldered white woman in her fifties with a black bob, a long nose, a plain blue cardigan and a blue carnation. Behind them, blank green paper money with no printing drifts in the air. Most of the frame in shadow; the brightest values are the gold light on the dancers and the blue grate above. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "ef14153d-797d-4f3e-96df-cc7072c38c3d",
+ "why": "Speakeasy Mint scene 17 round 1, 17c"
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/17b-a.png",
+ "made": "2026-10-26T15:51:01+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A cross-section like a doll's house: most of the frame is a secret basement speakeasy lit by emerald lamps and gold spotlights, scarlet velvet curtains, black iron printing presses with simple faces painted on their sides throwing blank green paper money with no printing on it into the air, a band of gangsters in pinstripes playing, and in the middle of the floor, large and off-centre, three people dancing arm in arm in a high-kicking line, laughing: on the left, a short stout white man in his sixties with ginger mutton-chop whiskers, a red tie and a red carnation in his lapel; in the middle, a tall skinny mayor in a bowler hat with a gold chain, a long narrow face, hollow cheeks and a pencil-thin grey moustache; on the right, a broad-shouldered white woman in her fifties with a black bob, a long nose, a plain blue cardigan and a blue carnation, their real-skinned faces lit gold by a spotlight. Along the top of the frame, a thin strip of the 1930s street above at night, cut through at the cobbles: the stamping boots, legs and the bottoms of plain red and blue banners of two crowds fighting, in cold blue lamplight, dust and grit sifting down through the cut into the warm light below. Most of the frame warm against the dark; the brightest values are the gold spotlight on the dancers and the flying green notes. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "23c9b8d3-4bfa-4b3e-ade2-1d676d929394",
+ "why": "Speakeasy Mint scene 17 round 1, 17b"
+}

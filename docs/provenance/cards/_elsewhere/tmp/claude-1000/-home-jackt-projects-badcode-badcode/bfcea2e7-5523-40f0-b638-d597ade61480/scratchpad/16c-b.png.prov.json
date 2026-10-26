@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/16c-b.png",
+ "made": "2026-10-26T15:43:27+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night just after rain on a 1930s city street: wet cobbles, an iron street lamp overhead, a shop window full of loaves glowing warm behind, under a plain blank sign, an ultramarine sky with a small red moon. Close on two back pockets side by side at hip height on a wet night street: on the left, the back pocket of faded blue denim overalls, on the right, the pocket of a grey factory smock. Out of each pokes a thin brown paper pay envelope with no writing on it, exactly the same, thin and creased. The fringed end of a red scarf hangs beside the left pocket, the end of a blue scarf beside the right. Behind, out of focus, the street lamp, the warm shop window of loaves and the wet cobbles. Most of the frame in shadow; the brightest values are the two pale envelopes in the lamplight. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "2d727b63-2539-48db-97c8-28746b86764c",
+ "why": "Speakeasy Mint scene 16 round 1, 16c"
+}

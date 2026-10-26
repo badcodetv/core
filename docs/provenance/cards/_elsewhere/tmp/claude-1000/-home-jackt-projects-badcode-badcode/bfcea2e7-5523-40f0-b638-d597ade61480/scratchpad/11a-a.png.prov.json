@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/11a-a.png",
+ "made": "2026-10-26T14:21:35+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A rainy evening in a 1930s marble bank, seen straight down from above onto a loan desk of dark polished wood: in the middle a single blank sheet of paper with no marks on it. On one side, the big rough hands of a heavy-set Black man in his fifties with a shaved head, a broken nose and a double chin, in a shabby brown suit two sizes too small lie flat on the desk either side of the paper, his brown suit cuffs too short. From the other side, the fist of a thin young white clerk with centre-parted oiled hair and sleeve garters holds a heavy wooden rubber stamp raised high above the paper, its face blank and wet with red ink; an open ink pad and a green-shaded lamp's brass base beside it. The lamp pools warm light on the paper; the rest of the desk falls away into shadow, with a streak of gold light from the vault and cold blue window light across the far edge. The brightest value is the blank paper. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "dd94c9c0-41fb-4ba3-a51c-4710c2e5ab92",
+ "why": "Speakeasy Mint scene 11 round 1, 11a"
+}

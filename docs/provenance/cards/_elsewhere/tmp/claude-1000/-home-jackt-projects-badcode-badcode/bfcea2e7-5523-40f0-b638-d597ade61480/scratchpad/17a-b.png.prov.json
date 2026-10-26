@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/17a-b.png",
+ "made": "2026-10-26T15:49:50+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A 1930s city street and the basement beneath it, cut open in cross-section like a doll's house and seen straight on, in two equal halves. Top half: night just after rain, an iron street lamp, wet cobbles, an ultramarine sky with a small red moon, and two crowds of working people in overalls, aprons, flat caps and factory smocks, each crowd young and old, men and women, Black, white and South Asian, one in red scarves with plain red banners with no writing, the other in blue scarves with plain blue banners with no writing, shoving and fighting each other. Across the middle, the street cut through: cobbles, a thin dark slab of earth and brick. Bottom half, blazing directly under their boots: a secret basement speakeasy lit by emerald lamps and gold spotlights, scarlet velvet curtains, black iron printing presses with simple faces painted on their sides throwing blank green paper money with no printing on it into the air, a band of gangsters in pinstripes playing, and in the middle of the floor, three people dancing arm in arm in a high-kicking line, laughing: on the left, a short stout white man in his sixties with ginger mutton-chop whiskers, a red tie and a red carnation in his lapel; in the middle, a tall skinny mayor in a bowler hat with a gold chain, a long narrow face, hollow cheeks and a pencil-thin grey moustache; on the right, a broad-shouldered white woman in her fifties with a black bob, a long nose, a blue tie-neck blouse and a blue carnation. The top half is cold blue and dark; the bottom half is warm emerald, gold and scarlet. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "9d90d5ae-24e3-4bb4-a082-a33e04222e6b",
+ "why": "Speakeasy Mint scene 17 round 1, 17a"
+}

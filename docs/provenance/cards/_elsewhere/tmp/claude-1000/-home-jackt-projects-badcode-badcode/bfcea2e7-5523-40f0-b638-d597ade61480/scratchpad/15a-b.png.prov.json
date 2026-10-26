@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/15a-b.png",
+ "made": "2026-10-26T15:33:21+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night just after rain on a 1930s city street: wet cobbles, an iron street lamp, a small bakery with a lit cream shop window full of loaves and a plain sign with no lettering, an ultramarine sky with a small red moon. The camera low on the wet cobbles between two black 1930s police cars parked nose to nose: their chrome bumpers and round headlamps loom huge and dark in the near foreground on each side, the headlamps throwing hard white beams forward. Beyond them, under the street lamp outside the bakery, two crowds of working people in overalls, aprons, flat caps and factory smocks, each crowd young and old, men and women, Black, white and South Asian: one wears red scarves and waves plain red banners with no writing, the other wears blue scarves and waves plain blue banners with no writing, every face turned towards the other crowd, shoving and shouting where they meet. The headlamp beams and the lamp throw long streaks across the wet cobbles. Most of the frame in deep shadow; the brightest values are the headlamps, the lamp's pool and the shop window. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "70895704-7bd4-44e1-a453-92160cf637b3",
+ "why": "Speakeasy Mint scene 15 round 1, 15a"
+}

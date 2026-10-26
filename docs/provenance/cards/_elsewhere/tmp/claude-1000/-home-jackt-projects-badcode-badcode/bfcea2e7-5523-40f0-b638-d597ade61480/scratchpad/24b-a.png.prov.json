@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/24b-a.png",
+ "made": "2026-10-26T17:14:06+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, the camera low on the floor of a black brick furnace room just beside the open mouth of a huge iron furnace: roaring orange fire fills the near left of the frame, burning blank green paper money with no printing curling and flying up as sparks. Beyond it, a thin bald gangster with big ears in a sweat-soaked vest and pinstripe trousers heaves another shovel heaped with bundles of notes towards the fire, his real-skinned face lit orange from below, sweat running. Behind him, heaps of money waiting, and a fat copper pipe climbing the wall into darkness. Most of the frame in deep shadow; the brightest values are the fire and its glow on him. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "54eab8cc-f4a9-4ae9-ac36-18bdb53bb7d0",
+ "why": "Speakeasy Mint scene 24 round 1, 24b"
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/19b-b.png",
+ "made": "2026-10-26T16:06:32+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, snow falling, seen from high on a rooftop opposite past a snowy chimney stack in the near foreground: across the street, a whole 1930s tenement wall of small lit windows, and in every one, people leaning in to an identical 1930s wooden cathedral-top radio with a glowing amber dial, the same pose again and again. In the middle row, three windows side by side: on the left a white man in a vest and a Black woman with her hair tied up in a scarf, a red scarf hung on the back of their chair, a bare table with one loaf; in the middle a South Asian man in braces and a white woman in a pinny, a blue scarf on a hook, one pan on the stove; on the right, dim and blue, a tiny white woman in her eighties with thin silver hair in a hairnet, a long pointed nose and a mole on one cheek, in three cardigans and a crocheted blanket, frost on the glass, a short candle stub burnt low beside her. Behind the roofs, a radio mast with one red light and the small red moon in an ultramarine sky. Most of the frame cold blue; the brightest values are the rows of warm windows and their amber dials. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "6de31e62-47c6-478e-ab9c-53596d9daae3",
+ "why": "Speakeasy Mint scene 19 round 1, 19b"
+}

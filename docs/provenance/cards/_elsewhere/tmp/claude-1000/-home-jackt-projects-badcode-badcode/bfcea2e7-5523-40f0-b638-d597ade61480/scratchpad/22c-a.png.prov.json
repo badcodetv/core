@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/22c-a.png",
+ "made": "2026-10-26T16:25:08+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, a 1930s street and the basement beneath it, cut open in cross-section like a doll's house, seen straight on. Top half: wet cobbles, an iron street lamp, the small red moon, a shop window full of loaves under a plain blank sign, and two police officers in 1930s caps and long coats knocking hard on the shop door, a black police car at the kerb. Bottom half, directly under their boots: a secret basement under emerald lamps, black iron printing presses with simple faces painted on their sides spitting blank green paper money with no printing, gangsters in pinstripes frozen and looking up at the ceiling, and one young gangster with slicked red hair and freckles yanking a huge iron lever on the wall under a flashing red bulb. Top half cold blue; bottom half emerald and red. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "ca00dd18-de55-4242-a16b-b925dd9eb0a7",
+ "why": "Speakeasy Mint scene 22 round 1, 22c (cross-section, before)"
+}

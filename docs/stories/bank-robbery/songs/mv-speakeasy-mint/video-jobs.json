@@ -1,0 +1,33 @@
+{
+  "option": "a",
+  "duration": 8,
+  "skip": [
+    15
+  ],
+  "extra": [
+    {
+      "key": "14-r2",
+      "n": 14,
+      "still": "13b-7514ee8b",
+      "duration": 8,
+      "motion": "The camera does not move. The mayor tips the heaped shovel of coal into the firebox; the coals glow brighter and steady tall flames rise slowly and roll upward around the iron door, a smooth even glow. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+      "why": "r1 failed the flash check: flames flickered 9 times a second at 4.5s"
+    },
+    {
+      "key": "17-r2",
+      "n": 17,
+      "still": "16-4c6cc443",
+      "duration": 8,
+      "motion": "The camera does not move. The red scarf and the blue scarf flutter in the wind beside the two pockets. Rain drips. The envelopes tremble. The sign above the shop window stays a plain blank board. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+      "why": "r1 painted a word on the blank shop sign"
+    },
+    {
+      "key": "15-r2",
+      "n": 15,
+      "still": "14-6d5f89ab",
+      "duration": 8,
+      "motion": "The camera does not move. The white glow on the bandstand fades and soft grey smoke rolls slowly across the square. On the right, the men in pinstripe suits creep down the steps carrying sacks. The crowd watches the bandstand. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+      "why": "r1 gave no candidate four waves running (likely a silent block): dropped 'burst of flash' and 'gangsters'"
+    }
+  ]
+}

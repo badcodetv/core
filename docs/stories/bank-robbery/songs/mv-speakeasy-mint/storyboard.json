@@ -1,0 +1,385 @@
+{
+ "acts": [],
+ "frames": [
+  {
+   "n": 1,
+   "act": "",
+   "title": "S01 Skyline, the siren",
+   "look": "",
+   "stills": [
+    "01-5cbcf7a8"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "",
+   "title": "S02 Bakery kitchen, 4am",
+   "look": "",
+   "stills": [
+    "02-c98067ae"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "",
+   "title": "S03 Pay packet, a moth",
+   "look": "",
+   "stills": [
+    "03-f7fad7a2"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "",
+   "title": "S04 Landlord on the stairs",
+   "look": "",
+   "stills": [
+    "04-1cc44717"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "",
+   "title": "S05 The slot",
+   "look": "",
+   "stills": [
+    "05-b4491fa2"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "",
+   "title": "S06 Grandma freezing",
+   "look": "",
+   "stills": [
+    "06-5df38f52"
+   ],
+   "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "",
+   "title": "S07 Envelopes in the drain",
+   "look": "",
+   "stills": [
+    "07-112f8862"
+   ],
+   "anim": 7
+  },
+  {
+   "n": 8,
+   "act": "",
+   "title": "S08 The feast, frozen",
+   "look": "",
+   "stills": [
+    "08-7fa3e9d8"
+   ],
+   "anim": 8
+  },
+  {
+   "n": 9,
+   "act": "",
+   "title": "S09 The teacher",
+   "look": "",
+   "stills": [
+    "09-08cb9961"
+   ],
+   "anim": 9
+  },
+  {
+   "n": 10,
+   "act": "",
+   "title": "S10 Bank lobby",
+   "look": "",
+   "stills": [
+    "10-9136b29a"
+   ],
+   "anim": 10
+  },
+  {
+   "n": 11,
+   "act": "",
+   "title": "S11 The stamp",
+   "look": "",
+   "stills": [
+    "11-eb1814cb"
+   ],
+   "anim": 11
+  },
+  {
+   "n": 12,
+   "act": "",
+   "title": "S12 Chorus 1: the Mint",
+   "look": "",
+   "stills": [
+    "12-d16a7a58"
+   ],
+   "anim": 12
+  },
+  {
+   "n": 13,
+   "act": "",
+   "title": "S13 Chorus 2: the press",
+   "look": "",
+   "stills": [
+    "13-1e818939"
+   ],
+   "anim": 13
+  },
+  {
+   "n": 14,
+   "act": "",
+   "title": "S13b Chorus 2: the firebox",
+   "look": "",
+   "stills": [
+    "13b-7514ee8b"
+   ],
+   "anim": 14
+  },
+  {
+   "n": 15,
+   "act": "",
+   "title": "S14 The bandstand flash",
+   "look": "",
+   "stills": [
+    "14-6d5f89ab"
+   ],
+   "anim": 15
+  },
+  {
+   "n": 16,
+   "act": "",
+   "title": "S15 Red v blue",
+   "look": "",
+   "stills": [
+    "15-a730f61f"
+   ],
+   "anim": 16
+  },
+  {
+   "n": 17,
+   "act": "",
+   "title": "S16 Two pay packets",
+   "look": "",
+   "stills": [
+    "16-4c6cc443"
+   ],
+   "anim": 17
+  },
+  {
+   "n": 18,
+   "act": "",
+   "title": "S17 The money shot",
+   "look": "",
+   "stills": [
+    "17-063a663b"
+   ],
+   "anim": 18
+  },
+  {
+   "n": 19,
+   "act": "",
+   "title": "S18 The broadcast",
+   "look": "",
+   "stills": [
+    "18-7730cf83"
+   ],
+   "anim": 19
+  },
+  {
+   "n": 20,
+   "act": "",
+   "title": "S19 The kitchen radio",
+   "look": "",
+   "stills": [
+    "19-cc07481e"
+   ],
+   "anim": 20
+  },
+  {
+   "n": 21,
+   "act": "",
+   "title": "S20 The vault",
+   "look": "",
+   "stills": [
+    "20-4130543e"
+   ],
+   "anim": 21
+  },
+  {
+   "n": 22,
+   "act": "",
+   "title": "S21 The supply",
+   "look": "",
+   "stills": [
+    "21-67ff46f6"
+   ],
+   "anim": 22
+  },
+  {
+   "n": 23,
+   "act": "",
+   "title": "S22a The raid: before",
+   "look": "",
+   "stills": [
+    "22a-7fa5e38e"
+   ],
+   "anim": 23
+  },
+  {
+   "n": 24,
+   "act": "",
+   "title": "S22 The raid: after",
+   "look": "",
+   "stills": [
+    "22-0a514730"
+   ],
+   "anim": 24
+  },
+  {
+   "n": 25,
+   "act": "",
+   "title": "S23 The cops leave",
+   "look": "",
+   "stills": [
+    "23-92b13bfd"
+   ],
+   "anim": 25
+  },
+  {
+   "n": 26,
+   "act": "",
+   "title": "S24 The furnace",
+   "look": "",
+   "stills": [
+    "24-4fce29af"
+   ],
+   "anim": 26
+  },
+  {
+   "n": 27,
+   "act": "",
+   "title": "S24b Burning notes",
+   "look": "",
+   "stills": [
+    "24b-92b87c5f"
+   ],
+   "anim": 27
+  },
+  {
+   "n": 28,
+   "act": "",
+   "title": "S25 The rats",
+   "look": "",
+   "stills": [
+    "25-bb37adfe"
+   ],
+   "anim": 28
+  },
+  {
+   "n": 29,
+   "act": "",
+   "title": "S26 The price of a loaf",
+   "look": "",
+   "stills": [
+    "26-417fd6c7"
+   ],
+   "anim": 29
+  },
+  {
+   "n": 30,
+   "act": "",
+   "title": "S27 Bail and out",
+   "look": "",
+   "stills": [
+    "27-d5e86478"
+   ],
+   "anim": 30
+  },
+  {
+   "n": 31,
+   "act": "",
+   "title": "S28a Grandma, the stub",
+   "look": "",
+   "stills": [
+    "28a-8febbc4f"
+   ],
+   "anim": 31
+  },
+  {
+   "n": 32,
+   "act": "",
+   "title": "S28b The hot basement",
+   "look": "",
+   "stills": [
+    "28b-68beec54"
+   ],
+   "anim": 32
+  },
+  {
+   "n": 33,
+   "act": "",
+   "title": "S30 The queue",
+   "look": "",
+   "stills": [
+    "30-871a420b"
+   ],
+   "anim": 33
+  },
+  {
+   "n": 34,
+   "act": "",
+   "title": "S31 The turn",
+   "look": "",
+   "stills": [
+    "31-b410fa2e"
+   ],
+   "anim": 34
+  },
+  {
+   "n": 35,
+   "act": "",
+   "title": "S31b Looking down",
+   "look": "",
+   "stills": [
+    "31b-bda4d496"
+   ],
+   "anim": 35
+  },
+  {
+   "n": 36,
+   "act": "",
+   "title": "S32 Let them eat cake",
+   "look": "",
+   "stills": [
+    "32-54f5efa3"
+   ],
+   "anim": 36
+  },
+  {
+   "n": 37,
+   "act": "",
+   "title": "S32b The cake, close",
+   "look": "",
+   "stills": [
+    "32b-356afd26"
+   ],
+   "anim": 37
+  },
+  {
+   "n": 38,
+   "act": "",
+   "title": "S33 The empty street",
+   "look": "",
+   "stills": [
+    "33-47982df5"
+   ],
+   "anim": 38
+  }
+ ]
+}

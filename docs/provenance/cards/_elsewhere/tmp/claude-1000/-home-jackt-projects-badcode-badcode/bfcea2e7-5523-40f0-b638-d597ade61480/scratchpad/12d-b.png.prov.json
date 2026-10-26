@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/12d-b.png",
+ "made": "2026-10-26T15:00:31+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, looking straight down at the dark floorboards of an empty 1930s bakery kitchen lit only by cold blue moonlight, flour dusted over them. In the middle of the frame, a gap where two boards have lifted: through it, far below, a blazing secret basement glows emerald and gold, and through the gap we see sheets of blank green paper money flying, the top of a black iron printing press, the bowler hat of a dancing mayor and the bell of a trumpet. Warm light shoots up through the gap and the cracks between all the boards in thin gold lines across the floury floor. Most of the frame in deep blue shadow; the brightest value is the gap. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "a48bc51c-ac6c-4780-a23d-5fd5f4f3aa7b",
+ "why": "Speakeasy Mint scene 12 round 1, 12d"
+}

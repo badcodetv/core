@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/23d-b.png",
+ "made": "2026-10-26T16:48:15+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, inside a small 1930s shop full of loaves, the camera low behind the wooden counter: in the near foreground, behind the counter, a wooden trapdoor in the floor stands slightly ajar, emerald green light glowing up through the gap. Above it, a fat gangster with a scar through his top lip in a white apron over pinstripe trousers, waving from the doorway with a big false smile, seen from behind, his back to us. In the open shop door beyond, against the wet night street and the small red moon, two police officers in 1930s peaked caps and long blue coats, one tall and thin with a grey walrus moustache, one short and round with ginger sideburns, each with a fat free loaf tucked under one arm, tipping their caps goodbye as they step out. Shelves of loaves glow warm in lamplight. Most of the frame in warm shadow; the brightest values are the green crack of the trapdoor and the doorway. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "45c5702a-8aa4-499a-8b9f-5b50f9751ec4",
+ "why": "Speakeasy Mint scene 23 round 1, 23d"
+}

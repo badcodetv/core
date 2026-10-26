@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/11b-a.png",
+ "made": "2026-10-26T14:22:23+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A rainy evening in a 1930s marble bank, the camera low at the height of a loan desk: a single blank sheet of paper fills the near foreground, lit by a green-shaded banker's lamp. Hanging above it at the top of the frame, a heavy wooden rubber stamp gripped in a clerk's fist, its face blank and wet with red ink, about to fall. Beyond the paper, large and off-centre, the real-skinned face of a heavy-set Black man in his fifties with a shaved head, a broken nose and a double chin, in a shabby brown suit two sizes too small, eyes squeezed shut, wincing, sweat on his scalp. Behind him, soft and far back, the huge round vault door glows warm gold, and tall rain-streaked windows glow cold blue. Most of the frame in shadow; the brightest values are the lamp on the paper and the gold vault. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "b0167d1f-65db-4bab-9dab-9b0abb73c46c",
+ "why": "Speakeasy Mint scene 11 round 1, 11b"
+}

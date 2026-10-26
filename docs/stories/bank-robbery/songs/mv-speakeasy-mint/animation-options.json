@@ -1,0 +1,586 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Lock the camera; Premiere moves it",
+   "why": "hybrid method",
+   "source": "docs/video-fx/hybrid-method.md"
+  },
+  {
+   "rule": "One or two movers, name the shutter, no dialogue",
+   "why": "Omni cannot do 4+ movers; sharp fast motion is the loudest AI tell",
+   "source": "scene-animation skill; docs/google-flow/README.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Skyline, the siren",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "A police car's light sweeps red and blue across the wet brick walls and fire escapes, round and round. Rain ripples the puddle so the red moon's reflection trembles.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. A police car's light sweeps red and blue across the wet brick walls and fire escapes, round and round. Rain ripples the puddle so the red moon's reflection trembles. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "Bakery kitchen, 4am",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The three bakers knead hard, leaning their weight into the dough, flour puffing up. Heat shimmers over the glowing loaves in front.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The three bakers knead hard, leaning their weight into the dough, flour puffing up. Heat shimmers over the glowing loaves in front. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "Pay packet, a moth",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The moth flutters up past the baker's face and away out of frame. The baker blinks slowly at the empty packet. Rain drips from the gutter.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The moth flutters up past the baker's face and away out of frame. The baker blinks slowly at the empty packet. Rain drips from the gutter. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "Landlord on the stairs",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The landlord curls his outstretched fingers, beckoning, smiling. The bare bulb swings gently, shadows rocking on the peeling walls. The baker stays still, looking up.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The landlord curls his outstretched fingers, beckoning, smiling. The bare bulb swings gently, shadows rocking on the peeling walls. The baker stays still, looking up. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "The slot",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The eyes behind the door slot narrow and shift to the gangster. The gangster leans in closer to the slot, hand cupped at his mouth. The bulb above flickers once.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The eyes behind the door slot narrow and shift to the gangster. The gangster leans in closer to the slot, hand cupped at his mouth. The bulb above flickers once. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "job": "Grandma freezing",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The candle flame flickers and leans. Grandma rubs her hands together slowly over it, her breath steaming in clouds.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The candle flame flickers and leans. Grandma rubs her hands together slowly over it, her breath steaming in clouds. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "job": "Envelopes in the drain",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The wind slides the envelope in front through the bars of the grate and it drops out of sight. The old woman's fingers reach after it, too late. Rain spatters the wet cobbles.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The wind slides the envelope in front through the bars of the grate and it drops out of sight. The old woman's fingers reach after it, too late. Rain spatters the wet cobbles. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "job": "The feast, frozen",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Everyone at the table holds perfectly still, frozen mid-bite. Only the champagne keeps pouring, overflowing the glass and spreading across the table. Cigar smoke drifts in slow layers under the lamp.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. Everyone at the table holds perfectly still, frozen mid-bite. Only the champagne keeps pouring, overflowing the glass and spreading across the table. Cigar smoke drifts in slow layers under the lamp. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "job": "The teacher",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The teacher taps her pointer twice on the blackboard and raises her eyebrows at the class. Snow drifts past the window behind.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The teacher taps her pointer twice on the blackboard and raises her eyebrows at the class. Snow drifts past the window behind. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "job": "Bank lobby",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "In the background the gangsters stroll into the glowing vault with their sacks, and the guard tips his cap. In front, the baker turns his hat slowly in his hands.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. In the background the gangsters stroll into the glowing vault with their sacks, and the guard tips his cap. In front, the baker turns his hat slowly in his hands. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "job": "The stamp",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The clerk slams the rubber stamp down hard onto the paper. The baker flinches.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The clerk slams the rubber stamp down hard onto the paper. The baker flinches. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 4,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "job": "Chorus 1: the Mint",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The printing presses thump and throw green notes into the air. The mayor dances a jig on the spot. Flour sifts down through the ceiling into the emerald light.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The printing presses thump and throw green notes into the air. The mayor dances a jig on the spot. Flour sifts down through the ceiling into the emerald light. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "job": "Chorus 2: the press",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Green notes slide out of the rollers towards us one after another. Behind the press the mayor heaves a shovel of coal into the glowing firebox.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. Green notes slide out of the rollers towards us one after another. Behind the press the mayor heaves a shovel of coal into the glowing firebox. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "job": "Chorus 2: the firebox",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The mayor thrusts the heaped shovel at us into the fire; the coals flare bright and flames leap up around the iron door.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The mayor thrusts the heaped shovel at us into the fire; the coals flare bright and flames leap up around the iron door. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 4,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "job": "The bandstand flash",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "One burst of white flash on the bandstand, then the smoke billows across the square. On the right the gangsters tiptoe down the bank steps with their sacks.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. One burst of white flash on the bandstand, then the smoke billows across the square. On the right the gangsters tiptoe down the bank steps with their sacks. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "job": "Red v blue",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The two crowds shove and sway against each other under the street lamp. In front, the gangster strolls slowly towards us with his sack, unhurried.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The two crowds shove and sway against each other under the street lamp. In front, the gangster strolls slowly towards us with his sack, unhurried. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "job": "Two pay packets",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The red scarf and the blue scarf flutter in the wind beside the two pockets. Rain drips. The envelopes tremble.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The red scarf and the blue scarf flutter in the wind beside the two pockets. Rain drips. The envelopes tremble. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "job": "The money shot",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The three high-kick together, laughing. Above them boots stamp on the grate and grit and rain drip down through the bars into the gold light.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The three high-kick together, laughing. Above them boots stamp on the grate and grit and rain drip down through the bars into the gold light. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "job": "The broadcast",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The mayor gestures grandly at the microphone, grinning. Snow falls past the window behind; the radio mast's red light blinks slowly.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The mayor gestures grandly at the microphone, grinning. Snow falls past the window behind; the radio mast's red light blinks slowly. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "job": "The kitchen radio",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The couple lean in closer to the radio, their faces lit by its amber dial. Snow falls outside the window.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The couple lean in closer to the radio, their faces lit by its amber dial. Snow falls outside the window. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "job": "The vault",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The fat gangster pushes the heavy wheelbarrow up the plank, straining. Cigar smoke trails from his mouth.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The fat gangster pushes the heavy wheelbarrow up the plank, straining. Cigar smoke trails from his mouth. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "job": "The supply",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The banknote over the mayor's face lifts gently with each breath and settles again. The caged bulb above sways slightly.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The banknote over the mayor's face lifts gently with each breath and settles again. The caged bulb above sways slightly. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "job": "The raid: before",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The young gangster yanks the lever down. The red bulb flashes. The presses keep throwing notes into the emerald light.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The young gangster yanks the lever down. The red bulb flashes. The presses keep throwing notes into the emerald light. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 4,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "job": "The raid: after",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The mayor beams and holds up the baguette. The ginger gangster leans on the lever, smoke curling from his cigarette. The oven fires flicker.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The mayor beams and holds up the baguette. The ginger gangster leans on the lever, smoke curling from his cigarette. The oven fires flicker. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "job": "The cops leave",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The gangster waves the cops off with a big smile. The two cops tip their caps. Green light pulses up from the open trapdoor.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The gangster waves the cops off with a big smile. The two cops tip their caps. Green light pulses up from the open trapdoor. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "job": "The furnace",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The stoker shovels notes into the roaring furnace. In the basement above, the gangsters play cards in the warmth. Icicles drip in the shop at the top.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The stoker shovels notes into the roaring furnace. In the basement above, the gangsters play cards in the warmth. Icicles drip in the shop at the top. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "job": "Burning notes",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The stoker heaves the shovel of notes into the fire. Burning notes curl and sparks fly up.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The stoker heaves the shovel of notes into the fire. Burning notes curl and sparks fly up. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "job": "The rats",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The rat nibbles the bundle, shreds of paper falling. Behind, the gangster counts notes under the green lamp.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The rat nibbles the bundle, shreds of paper falling. Behind, the gangster counts notes under the green lamp. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "job": "The price of a loaf",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The last coins slide out of the packet onto the counter. The seller in front turns his head to look at them.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The last coins slide out of the packet onto the counter. The seller in front turns his head to look at them. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "job": "Bail and out",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The mayor tips the bucket over the side, water and soggy notes pouring into the river. The boat rocks; ripples spread through the city's reflections.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The mayor tips the bucket over the side, water and soggy notes pouring into the river. The boat rocks; ripples spread through the city's reflections. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "job": "Grandma, the stub",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The tiny flame in the puddle of wax gutters and shrinks. Grandma's breath steams. Her eyes close slowly.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The tiny flame in the puddle of wax gutters and shrinks. Grandma's breath steams. Her eyes close slowly. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "job": "The hot basement",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The gangsters fan themselves with notes, sweating. The copper pipe glows. The one on the money mountain lifts the cloth on his head.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The gangsters fan themselves with notes, sweating. The copper pipe glows. The one on the money mountain lifts the cloth on his head. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "job": "The queue",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Snow falls on the queue. Breath steams. The first man looks down at the single coin in his hand.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. Snow falls on the queue. Breath steams. The first man looks down at the single coin in his hand. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "job": "The turn",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Every head in both crowds turns slowly towards the green glow rising from the grating at the shop door. Fists lower. Green mist curls up.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. Every head in both crowds turns slowly towards the green glow rising from the grating at the shop door. Fists lower. Green mist curls up. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "job": "Looking down",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The faces lean closer over the trapdoor, looking down, quiet. The green light flickers up across them.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The faces lean closer over the trapdoor, looking down, quiet. The green light flickers up across them. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "job": "Let them eat cake",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The mayor holds out the cake with trembling hands. The crowd stands silent. The furnace glow pulses behind him.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The mayor holds out the cake with trembling hands. The crowd stands silent. The furnace glow pulses behind him. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "job": "The cake, close",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The mayor's hands tremble and the cake wobbles on its tray. A bead of sweat runs down his face. The furnace glows behind him.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The mayor's hands tremble and the cake wobbles on its tray. A bead of sweat runs down his face. The furnace glows behind him. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 6,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "job": "The empty street",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The emerald glow pulses softly from the grating. A breath of wind ripples the puddle so the red moon's reflection trembles.",
+     "lanes": "Omni animates with the camera locked; Premiere moves the camera; ffmpeg draws text",
+     "veo_prompt": "The camera does not move. The emerald glow pulses softly from the grating. A breath of wind ripples the puddle so the red moon's reflection trembles. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move.",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  }
+ ]
+}

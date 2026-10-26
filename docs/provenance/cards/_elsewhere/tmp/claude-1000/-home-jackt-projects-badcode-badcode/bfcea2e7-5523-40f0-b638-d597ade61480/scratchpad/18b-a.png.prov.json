@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/18b-a.png",
+ "made": "2026-10-26T15:57:52+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, inside the control room of a 1930s radio station, seen from just behind a thin bald gangster with big ears in a pinstripe suit and big headphones, sitting at a desk of glowing green valve dials and swinging needles: the back of his bald head, one ear and his hands counting a thick wad of green paper money with no printing on it fill the near foreground. Through the big glass window in front of him, in the studio beyond, a tall skinny mayor in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache grins into a big chrome microphone, holding up blank typed pages, the whole studio washed red by a blank glowing red lamp box with no writing above the door. Most of the frame in shadow; the brightest values are the red studio through the glass and the green dials. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "6effb4be-85e8-46f6-9649-e64205189d1b",
+ "why": "Speakeasy Mint scene 18 round 1, 18b"
+}

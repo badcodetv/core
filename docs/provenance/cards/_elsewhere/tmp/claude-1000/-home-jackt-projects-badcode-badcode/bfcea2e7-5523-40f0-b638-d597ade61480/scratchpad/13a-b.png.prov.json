@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/13a-b.png",
+ "made": "2026-10-26T15:03:16+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night in a secret 1930s basement, the camera low beneath the delivery tray of a huge black iron printing press with a simple face painted on its side and a coal firebox in its belly glowing red hot: sheets of blank green paper money with no printing on them spit out of the rollers straight towards us, filling the near foreground, edges lit red. Behind the press, off-centre, a tall skinny mayor in a bowler hat with a gold chain, a long narrow face, hollow cheeks and a pencil-thin grey moustache, his shirt-sleeves rolled up, waistcoat, sweat running down his face heaves a shovel of coal into the open firebox, his real-skinned face lit red from below. Emerald lamps hang in the dark above; flour sifts down through the cracks of the wooden ceiling. Most of the frame in deep shadow; the brightest values are the open firebox and the notes catching its glow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "1e818939-7144-4bfa-bc7e-ca0eb3756f76",
+ "why": "Speakeasy Mint scene 13 round 1, 13a"
+}

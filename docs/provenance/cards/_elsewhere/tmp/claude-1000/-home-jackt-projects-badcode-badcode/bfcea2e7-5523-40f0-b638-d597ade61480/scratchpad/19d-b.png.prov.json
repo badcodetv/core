@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/19d-b.png",
+ "made": "2026-10-26T16:08:29+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, close on a small attic window from outside, snow on the sill and frost ferns across the glass: through the frost, a tiny white woman in her eighties with thin silver hair in a hairnet, a long pointed nose and a mole on one cheek, in three cardigans and a crocheted blanket, frost on the glass, a short candle stub burnt low beside her presses her ear to an identical 1930s wooden cathedral-top radio with a glowing amber dial, eyes half closed, breath steaming, her real-skinned face lit amber from the dial on one side and by the candle stub on the other. The small red moon hangs in a clear pane of the glass. Snow on the slates around the window. Most of the frame cold blue; the brightest values are the amber dial and the candle flame. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "85f14120-25ac-4113-af23-eb909282cbb4",
+ "why": "Speakeasy Mint scene 19 round 1, 19d"
+}

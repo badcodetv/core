@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/8a-b.jpg",
+ "made": "2026-10-26T13:39:56+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_generate_image",
+ "model": "Nano Banana 2",
+ "why": "Speakeasy Mint scene 8 round 1, 8a (landed after a 99% timeout)",
+ "source_id": "7ffa80d9-9fb5-43db-ad64-35b9dfee57cb",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, a long lens straight down a long polished table in a smoky 1930s back room, seen from the far end: a carved ham, a roast bird and champagne bottles loom large and dark in the near foreground. Down both sides of the table, gangsters in pinstripe suits have frozen mid-bite, forks in the air, heads turned to the door: a fat one with a scar through his top lip, a thin bald one with big ears, a young one with slicked red hair and freckles. At the head of the table a tall skinny mayor in a bowler hat with a gold chain, a long narrow face, hollow cheeks and a pencil-thin grey moustache, a napkin tucked in his collar. At the far end the door has burst open: a heavy-set Black baker in his fifties in a sweat-stained vest stands in it, shaved head, broken nose, holding up one small loaf, a dark shape edged in the cold blue of the corridor behind him. One low brass lamp with a green glass shade hangs over the middle of the table, pooling amber on the food; candle stubs in bottles, glowing cigar ends, cigar smoke hanging in flat layers under the lamp. Most of the room in deep brown shadow; the brightest values are the lamp's pool on the food, the spilled champagne on the tabletop and the blue doorway. Plain margins with no writing. Thanks.",
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ }
+}

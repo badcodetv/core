@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/10a-b.png",
+ "made": "2026-10-26T14:16:50+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A rainy evening in a grand 1930s marble bank lobby, seen from just behind a thin young white clerk with centre-parted oiled hair and sleeve garters: his shoulder and his hand holding a pen, frozen above a blank loan form, fill the near foreground on the right. Across the desk, large and off-centre left, a heavy-set Black man in his fifties with a shaved head, a broken nose and a double chin, in a shabby brown suit two sizes too small, his hat in his hands, waiting with a tired, hopeful real-skinned face. Deep behind him, small across the hall, the huge round vault door stands open and glows warm gold from inside; three gangsters in pinstripe suits with heavy sacks over their shoulders, a fat one with a scar through his top lip, a thin bald one with big ears and a young one with slicked red hair and freckles stroll straight into it, past an old white guard in a peaked cap with brass buttons who tips his cap to them. Tall rain-streaked windows glow cold blue; green-shaded banker's lamps sit on the desks; rain tracked in across the polished marble floor in puddles and bootprints. Most of the hall in shadow; the brightest values are the vault mouth and its long streak of gold across the wet marble floor. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "9136b29a-7b93-46e0-b962-567b935773bc",
+ "why": "Speakeasy Mint scene 10 round 1, 10a"
+}

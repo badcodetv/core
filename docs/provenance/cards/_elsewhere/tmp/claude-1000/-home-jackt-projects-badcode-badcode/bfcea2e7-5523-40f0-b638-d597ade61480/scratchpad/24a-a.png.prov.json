@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/24a-a.png",
+ "made": "2026-10-26T17:13:03+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, two floors of a 1930s building cut open in cross-section like a doll's house, seen straight on. Bottom: a black brick furnace room where a thin bald gangster with big ears in a sweat-soaked vest and pinstripe trousers shovels heaps of blank green paper money with no printing into the roaring mouth of a huge iron furnace, orange fire pouring out across the floor. From the furnace a fat copper heating pipe climbs the wall up into the floor above, a secret basement full of gangsters in pinstripes lounging warm under emerald lamps, and there the pipe stops dead, capped under the basement ceiling. Above the cut, a thin strip of the shop floor upstairs: dark, frost on the floorboards, icicles. Most of the frame in deep shadow; the brightest values are the furnace mouth and the copper pipe catching its glow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "45dc28ff-ecae-4d5a-94f8-370fd5d83263",
+ "why": "Speakeasy Mint scene 24 round 1, 24a"
+}

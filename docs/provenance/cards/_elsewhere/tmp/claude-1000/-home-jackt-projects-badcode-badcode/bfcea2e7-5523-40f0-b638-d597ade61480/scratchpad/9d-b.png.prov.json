@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/9d-b.png",
+ "made": "2026-10-26T13:49:11+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A grey winter afternoon in a 1930s schoolroom, close on a plump teacher in her forties with round wire glasses, frizzy brown hair with a grey streak pinned in a bun and a brown cardigan, her real-skinned face large in frame and off-centre right: pores, laugh lines, steamed-up glasses pushed up her nose, a stern, knowing look, turned to the class mid-word. Her long wooden pointer touches a big blackboard behind her that is wiped clean, dark and empty. The green-shaded lamp above her desk lights her from the side; cold blue window light catches the other cheek; the stove's orange glow is soft in the far background, and the blurred heads of grown adults in flat caps and headscarves crowd the near foreground. Most of the frame in shadow; the brightest values are the lamp on her face and the window light. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "73d0759d-e10d-4bed-8ba9-c60222374a10",
+ "why": "Speakeasy Mint scene 9 round 1, 9d"
+}

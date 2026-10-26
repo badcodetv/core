@@ -6,7 +6,7 @@ song take is not picked yet, so this is timed by lyric section, not by seconds.
 
 ## ▶️ Resume here (2026-10-26)
 
-**Where we are:** the style is locked, the script is written, and we're making **one still per scene, in order**.
+**Where we are (2026-10-26 night):** every scene is animated and laid in film order on the Premiere sequence `Speakeasy Mint rough 1` (5:10, no song yet). Details in `picks.md` under "Premiere". Next: Jack watches it, picks the song take, then we cut to the music. Owed: scene 14 is a still hold (Omni blocked it).
 
 - **Style LOCKED = K3a** (`d81d7f7a`, Flow project `dedd295f` "Oct 25 - 09:43"): sitcom figures with real-skin faces,
   every colour in thick oil brushstrokes, the small red moon. Its exact prompt is under "K sweep" below; the
@@ -20,14 +20,34 @@ song take is not picked yet, so this is timed by lyric section, not by seconds.
 - ✅ **Scene 4 picked (Jack, 2026-10-26): 4b-b** (`1cc44717`): the smiling landlord in fur at the top of the stairs.
 - ✅ **Scene 5 picked (Jack, 2026-10-26): 5d-a** (`b4491fa2`): the gangster whispering into the slot, wall left for the bubble.
 - ✅ **Scene 6 picked (Jack, 2026-10-26): `5df38f52`**: grandma in the armchair, hands to the tall candle (it came from a call that stalled at 99%).
-- 🟡 **Scene 7 (the mayor's balcony): round 2 done in the NEW LEAD, Jack's pick owed.** Shortlist 7f-a (`112f8862`, from the
-  drain), 7h-a (`1816adc9`, behind the crowd), 7e-a (`45f43c28`, Jack's composition lit).
+- ✅ **Scene 7 picked (my pick, Jack said "you pick", 2026-10-26): 7f-a** (`112f8862`): inches above the drain, an envelope sinking, the balcony blazing.
 - 🔴 **NEW HOUSE LEAD from 2026-10-26: "K3a lit"** (Jack: prettier, more cinematic, lights and reflections that pop, no AI slop, for
   every image from now on). The lead and the light-block shape are in `script.md` (scene 7 round 2); the research is in
   `docs/google-flow/2026-10-26-pretty-not-slop.md`.
 - 🔴 **Jack, 2026-10-26: keep the real-skin faces.** The face-scope line now goes on every prompt (`script.md`, scene 3). Real
   skin only holds when the face is large in frame.
-- ⬜ **Next:** scene 8 (the smoky back room feast, the baker bursts in with one small loaf) → on through the script. Then one Omni Flash test clip.
+- ✅ **Scene 8 picked (Jack, 2026-10-26): 8b-b** (`7fa3e9d8`): over the baker's shoulder, the table frozen, the mayor with a drumstick.
+- ✅ **Scene 9 picked (Jack, 2026-10-26): 9d-a** (`08cb9961`): close on the teacher mid-word at the empty board.
+- ✅ **Scene 10 picked (mine, provisional): 10a-b** (`9136b29a`): the baker at the loan desk, the gangsters at the blazing vault behind.
+- ✅ **Scene 11 picked (Jack, 2026-10-26): 11d-a** (`eb1814cb`): the clerk swinging the stamp up, the gangsters at the vault behind.
+- ✅ **Scene 12 picked (mine, provisional): 12b-b** (`d16a7a58`): the landing frame of a cut chain (bakery → whip-pan → 12b-b → 12c-a).
+- ✅ **Scene 13 picked (Jack, 2026-10-26): 13a-b** (`1e818939`) **+ 13d-a** (`7514ee8b`): the press spitting notes, then the firebox-eye view.
+- ✅ **Scene 14 picked (Jack, 2026-10-26): 14d-b** (`6d5f89ab`): bandstand flash left, gangsters out of the bank right, crowd between.
+- ✅ **Scene 15 picked (Jack, 2026-10-26): 15d-a** (`a730f61f`): the brawl, and the gangster strolling past with a sack unseen.
+- ✅ **Scene 16 picked (Jack, 2026-10-26): 16c-a** (`4c6cc443`): the two back pockets with identical envelopes.
+- 🔴 **Rule (2026-10-26):** never write "bakery" in a prompt; it prints the word on the shop. Say "a shop window full of loaves under a plain blank sign".
+- ✅ **Scene 17 picked (Jack, 2026-10-26): 17c-a** (`063a663b`): up through the grate, the leaders dancing with the mayor. Recurring cast: red leader (ginger mutton-chops, red carnation), blue leader (black bob, plain blue cardigan, blue carnation).
+- ✅ **Scene 18 picked (Jack, 2026-10-26): 18d-b** (`7730cf83`): the mayor at the mic, the snowy city of lit kitchens through the window.
+- ✅ **Scene 19 picked (Jack, 2026-10-26): 19c-a** (`cc07481e`): the red-kitchen couple leaning in to the radio. 🟡 Grandma's candle still won't burn low in a still: fix before scene 28.
+- ✅ **Scene 20 picked (Jack, 2026-10-26): 20d-b** (`4130543e`): the fat gangster pushing a barrow, the money mountain behind.
+- ✅ **Scene 21 picked (Jack, 2026-10-26): 21c-a** (`67ff46f6`): the note lifting off the mayor's face (crop the canvas border).
+- ✅ **Scene 22 picked (Jack, 2026-10-26): 22b-a** (`0a514730`): the after frame. Lead-in spares in the bin: 22c-b, 22d-a, 22a-a.
+- ✅ **Scene 23 picked (Jack, 2026-10-26): 23d-a** (`92b13bfd`): the gangster waving the cops off, the trapdoor glowing green.
+- ✅ **Scenes 24–33 picked (mine, Jack said "you pick", 2026-10-26):** 24 `4fce29af` (+24b-b) · 25 `bb37adfe` · 26 `417fd6c7` · 27 `d5e86478` · 28 `8febbc4f` → `68beec54` · 29 `ae848e6f` (9:16) · 30 `871a420b` · 31 `b410fa2e` → `bda4d496` · 32 `54f5efa3` → `356afd26` · 33 `47982df5`. Table in `script.md` → "Results, scenes 24–33".
+- 🎉 **Every scene (1–33) has a still.** Model confirmed: **Nano Banana 2.1** (the compose bar reads it; see `docs/google-flow/2026-10-26-pretty-not-slop.md`).
+- ⬜ **Next:** Jack reviews my picks (10, 12, 24–33) → likeness checks (8a-b, 9d-a, 20d-b) → recurring cast as Flow Characters → pick the song take (timings) → **one Omni Flash test clip** → the rest. Video work saves to `Youtube Vids\animation\songs\bank robbery`.
+- 📁 **Video folder (Jack, 2026-10-26):** `C:\Users\jackt\OneDrive\Desktop\Youtube Vids\animation\songs\bank robbery`:
+  everything goes here once we start making the video. Until then, stills stay in Flow.
 
 **Rules learned today (all in `script.md` / `docs/google-flow/nano-banana-2.md`):**
 - 🔴 Real-skin faces + a bare demographic ("an older Black man") = a famous actor's likeness. Give every person

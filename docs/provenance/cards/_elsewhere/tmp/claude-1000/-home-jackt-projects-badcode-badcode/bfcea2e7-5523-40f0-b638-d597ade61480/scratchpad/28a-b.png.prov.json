@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/28a-b.png",
+ "made": "2026-10-26T17:20:15+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, close in a freezing attic: a tiny white woman in her eighties with thin silver hair in a hairnet, a long pointed nose and a mole on one cheek, wrapped in three cardigans and a crocheted blanket, her real-skinned face large in frame, frost on her eyelashes and eyebrows, blue lips, breath steaming. In front of her on a saucer, the last of a candle: only a flat puddle of wax with a tiny drowning flame in the middle, guttering, about to go out. Icicles hang from the beam above. Most of the frame cold blue shadow; the brightest value is the tiny flame on her face. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "8febbc4f-b08f-40c2-b7b5-5be538309ed2",
+ "why": "Speakeasy Mint scene 28 round 1, 28a"
+}

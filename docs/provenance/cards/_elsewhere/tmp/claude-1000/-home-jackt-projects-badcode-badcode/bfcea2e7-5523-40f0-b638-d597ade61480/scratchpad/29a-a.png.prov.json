@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/29a-a.png",
+ "made": "2026-10-26T17:22:30+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, a tall narrow 1930s city building cut open in cross-section like a doll's house, seen straight on, every floor visible. Top: a freezing ice-blue attic, icicles, an old woman huddled over a candle burnt down to a puddle of wax. Below it: a cold shop full of loaves under a plain blank sign, a queue at the door in the snow. Below that: a plain door with a slot on a mustard-lit back stair. Below that: a secret basement glowing emerald and gold, printing presses with simple faces painted on their sides throwing blank green paper money with no printing, a band of gangsters in pinstripes, the mayor dancing. At the bottom: a black furnace room roaring orange, a vault of money. The colour runs from ice blue at the top to burning gold at the bottom. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": "2"
+ },
+ "source_id": "a9b52c37-4c33-41d9-b001-ac5f419b52b4",
+ "why": "Speakeasy Mint scene 29 round 1, 29a"
+}

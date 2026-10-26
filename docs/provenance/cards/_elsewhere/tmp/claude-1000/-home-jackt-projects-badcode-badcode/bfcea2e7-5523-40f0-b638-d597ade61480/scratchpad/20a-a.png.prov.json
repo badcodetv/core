@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/20a-a.png",
+ "made": "2026-10-26T16:11:05+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, inside a deep 1930s brick bank vault under the city, a row of caged bulbs along the ceiling, an open iron furnace door in the back wall glowing orange, and a mountain of bundles of blank green paper money with no printing, each tied with a rubber band, piled almost to the ceiling. The camera low at the foot of a long wooden plank: the iron wheel and handles of a wheelbarrow heaped with bundles fill the near foreground. The plank rises steeply away up the side of the money mountain, and gangsters in pinstripe trousers, waistcoats and rolled shirt-sleeves, sweating: a fat one with a scar through his top lip, a thin bald one with big ears, a young one with slicked red hair and freckles toil up it pushing barrows piled high, bundles tumbling off. High in the wall, a narrow barred window at pavement level onto the snowy street, cold blue, the boots and shabby trouser hems of a queue of people shuffling past outside. Most of the frame in deep shadow; the brightest values are the caged bulbs, the orange furnace door and the lit paper edges of the bundles. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "ed9b8086-ba6f-44b0-b8a1-6d0b75c6e665",
+ "why": "Speakeasy Mint scene 20 round 1, 20a"
+}

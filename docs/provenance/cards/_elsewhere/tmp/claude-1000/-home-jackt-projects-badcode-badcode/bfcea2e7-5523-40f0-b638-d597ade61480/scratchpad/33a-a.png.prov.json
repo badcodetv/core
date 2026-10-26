@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/33a-a.png",
+ "made": "2026-10-26T17:32:33+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_generate_image",
+ "model": "Nano Banana 2.1",
+ "why": "Speakeasy Mint scene 33 round 1, 33a",
+ "source_id": "47982df5-cc6c-4da7-8d50-61ca854e00d8",
+ "prompt": "A prime-time adult animated sitcom background: flat colours and slightly wobbly black outlines, every colour laid on with thick visible oil brushstrokes. Looking steeply down from the edge of a rooftop past a rusty parapet and pipes in the near foreground, into a narrow 1930s American street at night, the street running away diagonally into the distance: soot-black brick walls and iron fire escapes on both sides, wet cobbles below, completely empty and still, a forgotten red scarf and a blue scarf lying in a puddle. In another puddle on the cobbles, the only sign of the sky: the reflection of a small, perfectly round, solid red moon. One window glows candle yellow; from a pavement grating far down the street, a faint emerald glow. Plain margins with no writing. Thanks.",
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ }
+}

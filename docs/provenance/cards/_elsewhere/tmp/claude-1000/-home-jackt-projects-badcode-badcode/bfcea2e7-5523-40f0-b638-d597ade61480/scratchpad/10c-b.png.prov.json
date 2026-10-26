@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/10c-b.png",
+ "made": "2026-10-26T14:18:52+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A rainy evening in a grand 1930s marble bank lobby, seen from high on the upstairs gallery past a carved stone balustrade in the near foreground. Below, the hall splits in two. On the left, under one green lamp, a small loan desk: a thin young white clerk with centre-parted oiled hair and sleeve garters, his pen hovering, and a heavy-set Black man in his fifties with a shaved head, a broken nose and a double chin, in a shabby brown suit two sizes too small, his hat in his hands sitting opposite, waiting. On the right, the huge round vault door stands open, glowing warm gold from inside, and three gangsters in pinstripe suits with heavy sacks over their shoulders, a fat one with a scar through his top lip, a thin bald one with big ears and a young one with slicked red hair and freckles walk straight in past an old white guard in a peaked cap who tips his cap to them. Tall rain-streaked windows glow cold blue; rain tracked in across the polished marble floor in puddles and bootprints. Most of the hall in shadow; the brightest values are the vault mouth and its long streak of gold across the wet marble. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "ac693a22-b82e-4ed2-844c-17ca63c45548",
+ "why": "Speakeasy Mint scene 10 round 1, 10c"
+}

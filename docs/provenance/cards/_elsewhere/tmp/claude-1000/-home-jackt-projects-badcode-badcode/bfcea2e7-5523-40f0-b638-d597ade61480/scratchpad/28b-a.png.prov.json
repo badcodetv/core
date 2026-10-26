@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/28b-a.png",
+ "made": "2026-10-26T17:21:21+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, a secret 1930s basement full of blank green paper money with no printing under emerald lamps, hot as an oven: gangsters in pinstripe trousers and sweat-soaked vests sprawl in armchairs, fanning themselves with notes, ice melting in their champagne buckets, collars open, shining with sweat; a fat copper heating pipe along the wall glows orange-hot. One lies on a pile of money with a damp cloth on his head. Most of the frame warm shadow; the brightest values are the glowing pipe and the emerald lamps on wet skin. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "68beec54-8b77-4b79-a0c7-4afe32ae4f44",
+ "why": "Speakeasy Mint scene 28 round 1, 28b"
+}
