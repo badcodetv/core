@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/8acf9223-d50b-4e7d-aa51-7a01e7e02361/scratchpad/3b-b.png",
+ "made": "2026-10-26T11:36:33.821Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. Only the bodies, clothes and places are cartoon: every face in the frame, however small, is painted as real human skin with wrinkles, pores, bags under the eyes and real eyelids, far more lifelike than anything around it, and no feature is exaggerated. Over the shoulder of a bakery foreman at dawn: his waistcoat shoulder and the back of his grey head fill one side of the near foreground, his hand holding out a thin brown paper pay packet. Facing him in the back doorway of a 1930s bakery, a heavy-set Black baker in his fifties with a shaved head, a broken nose and a round double chin, in a floury sweat-stained vest, looks down at the packet, too tired to be angry. Steam and warm orange oven light pour out of the doorway behind the baker; the alley around them is cold blue with wet cobbles. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "76894e2b-bf63-4d4a-8b91-b2f3f16d5fc1"
+}

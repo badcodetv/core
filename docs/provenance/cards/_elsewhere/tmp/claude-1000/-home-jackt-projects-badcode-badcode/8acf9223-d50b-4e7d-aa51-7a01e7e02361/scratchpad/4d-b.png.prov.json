@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/8acf9223-d50b-4e7d-aa51-7a01e7e02361/scratchpad/4d-b.png",
+ "made": "2026-10-26T11:46:30.480Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. Only the bodies, clothes and places are cartoon: every face in the frame, however small, is painted as real human skin with wrinkles, pores, bags under the eyes and real eyelids, far more lifelike than anything around it, and no feature is exaggerated. Close and side-on on a steep 1930s tenement staircase: the face of a heavy-set clean-shaven Black baker in his fifties with a shaved head, a broken nose and a round double chin fills half the frame as he hauls himself up one more step, sweat running down his temple, flour on his cheek, a thin brown paper pay packet clutched against his chest. Just above him at the top of the frame, a plump open palm with gold rings and a fur coat cuff hangs in the air, waiting. Peeling green paint behind him, the hard light of one bare bulb from above. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "14520747-5340-45ca-88e0-40baeac659ef"
+}

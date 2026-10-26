@@ -4,7 +4,7 @@ The Bank Robbery song's music video. Chosen by Jack 2026-10-25 (idea 8 in
 [`../music-video-ideas.md`](../music-video-ideas.md)). Lyrics: Kai's (`../sealed-r5/lyrics.txt`). The
 song take is not picked yet, so this is timed by lyric section, not by seconds.
 
-## ▶️ Resume here (end of 2026-10-25)
+## ▶️ Resume here (2026-10-26)
 
 **Where we are:** the style is locked, the script is written, and we're making **one still per scene, in order**.
 
@@ -15,10 +15,19 @@ song take is not picked yet, so this is timed by lyric section, not by seconds.
 - **Script draft 1: [`script.md`](./script.md)**: 33 scenes on Kai's lyrics, each in its own setting. Gags marked ✏️
   are proposals; Jack writes the jokes. Not yet timed (no song take picked).
 - ✅ **Scene 1 picked: W3b** (`5cbcf7a8`): roof parapet, the street running away, police car, red moon in a puddle.
-- 🟡 **Scene 2 (bakery kitchen, 4 a.m.): round 1 done, Jack's pick owed.** Shortlist **2d-a** (`7745180e`, close on
-  the tired ginger baker) and **2c-a** (`06c543ca`, from the ceiling corner). 2b's oven-mouth framing is worth a re-run.
-- ⬜ **Next:** Jack picks scene 2 → scene 3 (the pay packet at the back door, dawn) → on through the script. Then one
-  Omni Flash test clip of a picked still before any batch of clips.
+- ✅ **Scene 2 picked (Jack, 2026-10-26):** the 2b round-2 oven-mouth still (three bakers kneading, side flames); media id unconfirmed. See `script.md`.
+- ✅ **Scene 3 picked (Jack, 2026-10-26): 3a-b** (`f7fad7a2`): the worm's-eye shot from the cobbles, coins and the moth falling.
+- ✅ **Scene 4 picked (Jack, 2026-10-26): 4b-b** (`1cc44717`): the smiling landlord in fur at the top of the stairs.
+- ✅ **Scene 5 picked (Jack, 2026-10-26): 5d-a** (`b4491fa2`): the gangster whispering into the slot, wall left for the bubble.
+- ✅ **Scene 6 picked (Jack, 2026-10-26): `5df38f52`**: grandma in the armchair, hands to the tall candle (it came from a call that stalled at 99%).
+- 🟡 **Scene 7 (the mayor's balcony): round 2 done in the NEW LEAD, Jack's pick owed.** Shortlist 7f-a (`112f8862`, from the
+  drain), 7h-a (`1816adc9`, behind the crowd), 7e-a (`45f43c28`, Jack's composition lit).
+- 🔴 **NEW HOUSE LEAD from 2026-10-26: "K3a lit"** (Jack: prettier, more cinematic, lights and reflections that pop, no AI slop, for
+  every image from now on). The lead and the light-block shape are in `script.md` (scene 7 round 2); the research is in
+  `docs/google-flow/2026-10-26-pretty-not-slop.md`.
+- 🔴 **Jack, 2026-10-26: keep the real-skin faces.** The face-scope line now goes on every prompt (`script.md`, scene 3). Real
+  skin only holds when the face is large in frame.
+- ⬜ **Next:** scene 8 (the smoky back room feast, the baker bursts in with one small loaf) → on through the script. Then one Omni Flash test clip.
 
 **Rules learned today (all in `script.md` / `docs/google-flow/nano-banana-2.md`):**
 - 🔴 Real-skin faces + a bare demographic ("an older Black man") = a famous actor's likeness. Give every person

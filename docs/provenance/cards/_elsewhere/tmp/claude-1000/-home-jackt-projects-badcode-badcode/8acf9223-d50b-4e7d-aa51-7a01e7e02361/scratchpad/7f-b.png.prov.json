@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/8acf9223-d50b-4e7d-aa51-7a01e7e02361/scratchpad/7f-b.png",
+ "made": "2026-10-26T12:29:58.071Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Dusk just after rain in a 1930s city square, the camera inches above the cobbles beside an iron storm drain, a wide lens tilted up. In the near foreground a blank envelope sinks into the puddle over the grate; more tumble down through the air towards it. Behind, the boots, coats and reaching hands of a crowd, young and old, men and women, Black, white and South Asian, one older woman's face sharp as she stoops for the envelope too late. High in the background, off-centre, a stone balcony blazes with warm amber light from open French doors, a tall skinny mayor in a bowler hat with a gold chain silhouetted mid-throw. Cobbles soaked after a downpour, grit, tram rails, iron streetlamps and lit shop windows under an ultramarine sky. Most of the frame in deep shadow; the brightest values are the balcony doorway, the lamps and their streaks on the wet stone. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d76aaf95-3e99-45c3-a746-15261fcfc74f"
+}

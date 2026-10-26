@@ -276,3 +276,222 @@ person **specific, ordinary features** (build, hair, nose, a scar), never just a
 celebrity likeness before Jack sees it (rule zero's cousin: we never want a real person's face).
 
 **Shortlist:** 2d-a, 2c-a; 2b's framing is worth a re-run with the new cast.
+
+### Scene 2 — 2b round 2 (2026-10-26)
+
+Jack, on 2b round 1 (the oven-mouth still): *"this one is great"*. 🔴 Its older baker is a near-likeness of a famous
+film actor, so it can't ship as it is. Re-run with the same 2b prompt and specific features for the cast (heavy-set Black man in his
+fifties, shaved head, broken nose, double chin / skinny young white woman, ginger bun, gap teeth / middle-aged South
+Asian man, big drooping moustache, thick eyebrows, bald patch). NB2, 16:9, ×2, project `dedd295f`.
+
+| # | Media | Verdict |
+| --- | --- | --- |
+| 2b-r2-a | 2afc56ec | 🟡 No likeness. Two bakers lean into the camera and stop kneading, and the faces went goggle-eyed cartoon (real skin mostly lost) |
+| 2b-r2-b | c98067ae | ⭐ No likeness, all three kneading, the arch and loaves kept. 🟡 The faces are flatter and more cartoon than round 1. The real skin Jack liked is weaker |
+
+**Lesson (inferred, one round):** the specific features fixed the likeness but pulled the faces back towards the cartoon.
+The round-1 realism may have come from the same famous-face pull.
+
+**✅ Scene 2 PICKED (Jack, 2026-10-26):** the 2b round-2 oven-mouth still: three bakers kneading, the arch, glowing loaves,
+flames at both sides of the oven. Jack shared it as an image in chat. It looks like 2b-r2-b plus side flames, but its media id is
+**not confirmed** (check the newest tiles in `dedd295f`). Jack: *"try and keep the style with the real skin faces, some
+of them drift to completely cartoon"*, so from scene 3 every prompt carries a face-scope line (below).
+
+## Scene 3 stills — round 1 (2026-10-26)
+
+*work and get paid though, earning that dough / but where does it go? nobody knows!*: **the bakery back door, dawn.**
+The baker paid is the heavy-set one from the scene 2 pick. ✏️ The gag (proposal): he tips the packet out, and three coins and a moth fall out.
+
+**Face-scope line (new, after Jack's scene 2 note):** added straight after the K3a style lead in every prompt: `Only the
+bodies, clothes and places are cartoon: every face in the frame, however small, is painted as real human skin with
+wrinkles, pores, bags under the eyes and real eyelids, far more lifelike than anything around it, and no feature is
+exaggerated.` ("no feature is exaggerated" was added from 3b on, after the 3a-a caricature fail.)
+
+Variety mode, declared variable: where the camera is. NB2, 16:9, ×2, project `dedd295f`. Full prompts in the provenance cards.
+
+| # | Idea | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| 3a | Worm's-eye from the cobbles | a6e74911 · f7fad7a2 | ⭐ The gag reads (coins and moth falling, red moon, foreman leaving). 🔴 3a-a: the baker's lips are exaggerated, so it fails the caricature check. 🟡 Both have cartoon goggle eyes: the face line was beaten at full-figure size |
+| 3b | Over the foreman's shoulder | 7b38a06c · 76894e2b | ⭐ **3b-b: the most real skin** (real eyes, sweat, flour in the vest). No gag in frame (the packet is unopened). 🟡 3b-a has cartoon eyes and an apron |
+| 3c | Down from the fire escape | 5b714de1 · 9f84faa1 | 🔴 3c-a: the baker is drawn twice. 🟡 3c-b: good geography and the gag, but his face is small and goes cartoon |
+| 3d | Close on the palm | 080c97bc · aa6656c7 | ⭐ **Both strong:** real-skin face large in frame, floury palm, three coins and a moth, foreman walking away, oven glow. 3d-b is frontal, 3d-a is a three-quarter view with the alley deeper |
+
+**Lesson (one round):** real skin holds when the face is **large in frame** (3b, 3d) and drifts to cartoon when the
+figure is small or full-length (3a, 3c), even with the face-scope line. For wide shots, plan a close-up to cut to,
+or accept the drift. 🟡 Continuity: the baker grew a grey goatee in 3d (clean-shaven in scene 2).
+
+**Shortlist:** 3d-a, 3d-b, 3b-b. Pick owed (Jack).
+
+**✅ Scene 3 PICKED (Jack, 2026-10-26): 3a-b** (`f7fad7a2`), "this is cool". Worm's-eye from the cobbles: coins and the moth
+falling, the red moon, the foreman glancing back. (Jack is happy with this one's cartoon eyes.)
+
+## Scene 4 stills — round 1 (2026-10-26)
+
+*means of production means a reduction / standards bleeding, land-lords needing*: **a tenement stairwell.** The
+landlord in a fur collar holds out his palm at the top of the stairs; the baker (the same one as scene 3) climbs towards him with the pay packet.
+Peeling paint, one bare bulb. Moves later: the baker climbing. Face-scope line on every prompt. New cast: the landlord
+is a plump white man in his forties with slicked-back black hair, a thin pencil moustache, rosy jowls, a fur-collared
+overcoat and gold rings.
+
+| # | Idea |
+| --- | --- |
+| 4a | **Over the landlord's shoulder:** his ringed open palm huge in the foreground, the baker climbing below |
+| 4b | **Worm's-eye from the foot of the stairs:** the baker's back climbing, the landlord at the top under the bulb, hand out |
+| 4c | **Straight down the stairwell:** the baker on the stairs looking up, the landlord's palm reaching in from the frame edge |
+| 4d | **Close, side-on, mid-climb:** the baker's tired face large in frame, the landlord's palm hovering just above |
+
+### Scene 4 round 1 results (2026-10-26)
+
+NB2, 16:9, ×2, project `dedd295f`.
+
+| # | Idea | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| 4a | Over the landlord's shoulder | 1e19ed0c · a8cef796 | ⭐ **4a-a:** the ringed palm huge in front, the baker climbing up into it, his face in real skin. 🟡 A white strip at the top-left edge (crop in Premiere). 🔴 4a-b: the landlord came out bald and the baker goggle-eyed |
+| 4b | Worm's-eye from the foot of the stairs | 4c88a041 · 1cc44717 | ⭐ **4b-a: the clearest story:** the baker turns back on the stairs, and at the top the smiling landlord in fur (slicked hair, pencil moustache) holds his hand out. 🟡 It isn't really from the foot of the stairs; the baker looks back at us. 4b-b goes cartoon in profile |
+| 4c | Straight down the stairwell | 2e123d9e · 8d6f8fe3 | ⭐ **The strongest graphic:** the square well spiralling into the dark, the ringed palm reaching in, the baker looking up. 4c-b has the bulb on its cord. The faces are smallish but hold |
+| 4d | Close, side-on, mid-climb | 56978031 · 14520747 | ⭐ The most real skin (4d-b especially), the palm hanging above. 🟡 Continuity: he is in a T-shirt and apron, not the vest |
+
+**Caricature check:** ✅ no exaggerated lips or teeth this round; the landlord is a plain plump villain. Likeness: no clear famous face that I can see in the close-ups, but this is unverified; Jack's eye on 4d.
+
+**Shortlist:** 4c-b, 4b-a, 4a-a, 4d-b. Pick owed (Jack).
+
+**✅ Scene 4 PICKED (Jack, 2026-10-26): 4b-b** (`1cc44717`). The smiling landlord in fur at the top of the stairs, hand out; the
+baker in the foreground, turned to look at him, pay packet down by his side.
+
+## Scene 5 stills — round 1 (2026-10-26)
+
+*quantative easing,*: **the back stairs, a plain door with a slot.** A gangster in pinstripes knocks; the slot opens on
+two eyes; the speech bubble **"QUANTITATIVE EASING"** goes on in ffmpeg, so every frame keeps empty wall for it. Cast:
+the gangster is a short, wide man in his forties with a flattened nose, a scar through one eyebrow, a pinstripe suit
+and a grey fedora. Face-scope line on every prompt.
+
+| # | Idea |
+| --- | --- |
+| 5a | **From inside, through the slot:** the gangster's face fills the open slot, leaning in to whisper |
+| 5b | **Extreme close on the slot:** two eyes in the dark gap, the gangster's raised knuckles at the frame edge |
+| 5c | **Low from the foot of the back stairs:** the gangster at the door under a bulb, knocking, long shadow, empty wall |
+| 5d | **Side-on two-shot:** the gangster's profile leaning into the slot, the eyes inches away, empty space above |
+
+### Scene 5 round 1 results (2026-10-26)
+
+NB2, 16:9, ×2, project `dedd295f`. 🔴 **Four calls sent at once collided:** 5c timed out at 99% and never landed, and the
+"5d" call came back with images of the 5c prompt (the steps and the knock). 5c and 5d were then re-run one at a time. **Send Flow
+generations one at a time** (it matches the standing one-prompt-at-a-time rule).
+
+| # | Idea | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| 5a | Through the slot from inside | 487066de · 0f078704 | ⭐ The gangster's real-skin face fills the bright slot, and the dark door around it is perfect for the bubble. 🟡 Reads more "tired detective" than gangster (no pinstripes visible); likeness unverified |
+| 5b | Extreme close on the slot | 575fa62c · 78dd1a7b | ⭐ **5b-b:** real wrinkled eyes in the rusty slot, the cartoon pinstripe fist knocking, chipped green door. 🟡 5b-a has white strips at the edges |
+| 5c | Low from the foot of the stairs | 1471a1cd · 7ab0840a | ⭐ 5c-b: clean geography (stairs, the bulb, eyes in the slot, the gangster glancing back, empty wall above the door). 🟡 The gangster is small, so his face goes cartoon |
+| (5c prompt, landed on the 5d call) | | 4d06a289 · 94982b16 | 🔴 a prints "BAKERY - BREAD" on the wall; b has the gangster twice. Out |
+| 5d | Side-on, whispering into the slot | b4491fa2 · 698e9953 | ⭐ **5d-a: the shot:** he cups his hand to whisper into the slot, the eyes inside are real, and the whole upper half is empty wall for the "QUANTITATIVE EASING" bubble. 5d-b: a huge comic profile with one goggle eye; funny, but it drops the real skin |
+
+**Shortlist:** 5d-a, 5b-b, 5a-a. Pick owed (Jack).
+
+**✅ Scene 5 PICKED (Jack, 2026-10-26): 5d-a** (`b4491fa2`). The gangster whispers behind a cupped hand, real eyes in the slot,
+empty wall above for the "QUANTITATIVE EASING" bubble.
+
+## Scene 6 stills — round 1 (2026-10-26)
+
+*grandma FREEEEEEZING!*: **grandma's attic.** Frost on everything, icicles on the beams, breath steaming, one candle;
+the held note lands on her face. Moves later: her breath and the candle flame. **The candle is the second costed
+object:** this is the first visit, so it is still tall. Cast: grandma is a tiny white woman in her eighties with thin
+silver hair in a hairnet, a long pointed nose and a mole on one cheek, wrapped in three cardigans and a crocheted
+blanket. Face-scope line on every prompt; sent one at a time.
+
+| # | Idea |
+| --- | --- |
+| 6a | **Close on her face:** frost on her eyelashes, a breath cloud, candle glow under her chin, the held note |
+| 6b | **High from the icicled roof beams:** tiny grandma in bed under every blanket, the candle, frost everywhere |
+| 6c | **Through the frosted window from outside:** the red moon in the glass, her face behind the frost, the candle |
+| 6d | **Low behind the candle:** the flame huge in the foreground, grandma huddled in an armchair beyond |
+
+### Scene 6 round 1 results (2026-10-26)
+
+NB2, 16:9, ×2, project `dedd295f`, sent one at a time. 6d's first call stuck at 99% and nothing landed; the retry worked.
+
+| # | Idea | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| 6a | Close on her face | 7bf83582 · 8d42e0f3 | ⭐ **6a-a: the held note:** her mouth open in the wail, frost on her lashes, blue lips, a breath cloud, the candle under her chin, the mole. The most real skin of the day. 6a-b is the same face, quieter |
+| 6b | High from the icicled beams | 4ddb8a74 · 0cf76f6e | 🟡 A lovely room (bed, washstand, the candle on a chair, icicles framing), but she is tiny, so it is not the held note. Good as an establishing shot if the film wants one |
+| 6c | Through the frosted window | d6f35b2e · 740a0f6e | ⭐ **6c-b:** a real-skinned face behind frost ferns, the red moon in the glass, the candle held up, snow on the slates. The quietest and saddest. 🟡 6c-a goes goggle-eyed cartoon |
+| 6d | Low behind the candle | 9dfee2bf · 257e5259 | ⭐ **6d-a:** a huge dripping candle in front, her hands held out to it, frost on the armchair. It sets up the candle as the costed object (tall now, lower each visit). 🟡 6d-b is goggle-eyed |
+
+**Caricature/likeness:** ✅ an ordinary old woman, no exaggeration; no famous face that I can see (unverified).
+
+**Shortlist:** 6a-a (lands the note), 6d-a (sets up the candle), 6c-b. Pick owed (Jack).
+
+**✅ Scene 6 PICKED (Jack, 2026-10-26): `5df38f52`.** Grandma in a wing armchair with a granny-square blanket, holding her
+hands to a tall dripping candle, real-skin face. It came from the **first 6d call, which stalled at 99% and landed late**:
+two extra stills (`6f9dd59e`, `5df38f52`) that I found on the page afterwards. 🔴 A 99% timeout can still land minutes
+later, so check the newest tiles before re-running.
+
+## Scene 7 stills — round 1 (2026-10-26)
+
+*stimulus checks are next. Get wrecked!*: **the mayor's balcony over the square.** The mayor tosses a handful of
+envelopes to the crowd; the wind blows them straight into a storm drain. Moves later: the envelopes falling. Cast: the
+mayor (locked) is tall and skinny with a bowler and a gold chain. His face: a white man in his sixties with a long narrow face,
+hollow cheeks and a pencil-thin grey moustache. The crowd is named outright: young and old, men and women, Black, white and South Asian.
+Envelopes are blank (no writing).
+
+| # | Idea |
+| --- | --- |
+| 7a | **From inside the storm drain looking up:** envelopes fluttering down into the grate towards us, the crowd's hands at the edges, the mayor tiny on the balcony |
+| 7b | **Behind the mayor on the balcony:** his bowler and his throwing arm, envelopes in the wind, the crowd reaching below, the drain in the gutter |
+| 7c | **Low in the crowd:** the baker's face large, looking up, hand out, the envelopes sailing over his head, the mayor beaming behind |
+| 7d | **High from a rooftop opposite:** the whole square, the envelopes arcing on the wind straight into the drain, the red moon |
+
+### Scene 7 round 1 results (2026-10-26)
+
+NB2, 16:9, ×2, project `dedd295f`, sent one at a time; all landed first time.
+
+| # | Idea | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| 7a | From inside the storm drain | afee2365 · 5039be4e | ⭐ **7a-a: the gag in one frame.** The envelopes fall through the bars at us; the crowd peers down through the grate (a Black man, an old white woman, a South Asian man, a woman in a headscarf); the mayor is tiny on the balcony in his bowler and chain. 7a-b is as good, with fewer faces |
+| 7b | Behind the mayor on the balcony | ce240a6e · 68392b63 | 🔴 Both add a **second official in a red-white-blue sash** (a French-mayor cue), so it reads as two mayors. 7b-a's thrower has no bowler and reads as an elder statesman (likeness unverified). Out |
+| 7c | Low in the crowd, the baker | e98b6b6e · 31629996 | ⭐ **7c-a:** the baker's real-skin face large, his hand reaching as the envelopes sail over, the mayor beaming on the balcony. 7c-b: an envelope just past his fingertips. 🟡 A floury coat instead of the vest (fine for the street) |
+| 7d | High from a rooftop opposite | 4e7f6f1c · 77c84d11 | ⭐ **7d-b:** one clean ribbon of envelopes from the mayor's hand straight down into the drain, the red moon, chimney pots. The faces are tiny and cartoon (expected at this size). 🟡 7d-a has a stray bowler-hatted man in the foreground |
+
+**Caricature check:** ✅ no exaggeration; the mixed crowd held (named outright).
+
+**Shortlist:** 7a-a (the gag), 7d-b (the arc), 7c-a (the baker). Pick owed (Jack).
+
+**Scene 7 pick (Jack, 2026-10-26): 7b-a** (`ce240a6e`), *"this is good, but i kinda wanted more pretty shots, with
+more lights and reflections of the ground … windows … more cinematic, interesting camera shots, also the lighting and
+gamma needs to pop more. i want that for all images going forward."* Research: `docs/google-flow/2026-10-26-pretty-not-slop.md`.
+
+## 🔴 NEW HOUSE LEAD from scene 7 r2 on (Jack, 2026-10-26): "K3a lit"
+
+Two changes to the K3a lead: (1) "big round eyes, small dot pupils and overbites" is dropped, because it fought the real-skin
+faces Jack asked to keep (the goggle-eye drift); (2) a **light block** is written per scene in this shape:
+*time + weather → one key light with direction → bounded practicals → value structure → warm/cold pair*. ~150 words.
+
+**Lead (identical every time):** `Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes.`
+
+## Scene 7 round 2 (2026-10-26): cinematic
+
+**Shot spec (`shot-craft`):**
+- **For:** the hand-out is a show. The mayor throws, the wind takes it, and the drain gets it. The crowd's hands are the visible cost.
+- **Time and light:** dusk just after rain. **Key:** warm amber light pouring out of the open French doors behind the
+  mayor, rimming him. **Practicals:** iron streetlamps round the square and lit shop windows. **Cold:** an ultramarine dusk sky.
+  Value: most of the frame in deep shadow, the brights being the doorway, the lamps and their streaks on the wet cobbles.
+- **Ground:** cobbles soaked, standing puddles, grit, tram rails, the drain.
+- **Cast:** the locked mayor (tall, skinny, bowler, gold chain; a long narrow face, hollow cheeks, a pencil-thin grey moustache).
+  Jack's pick had a second official in a red-white-blue sash; he is replaced by **a squat gangster in pinstripes holding
+  the rest of the envelopes**, which keeps the two-figure balcony Jack liked and puts the beneficiary beside the mayor.
+- **Variety, declared variable: the camera.** 7e is Jack's composition upgraded; 7f, 7g and 7h are new.
+
+### Scene 7 round 2 results (2026-10-26): the new "K3a lit" lead
+
+NB2, 16:9, ×2, project `dedd295f`, one at a time; all landed. **Verdict on the new lead: it works.** Lit windows,
+streetlamps, wet cobbles throwing streaks of light, warm amber against ultramarine, deep shadows; real skin held on
+every face of any size; no reflection went wrong.
+
+| # | Camera | Media (a · b) | Verdict |
+| --- | --- | --- | --- |
+| 7e | Jack's composition: balcony level, past a lamp bracket | 45f43c28 · 836c118c | ⭐ Jack's frame, now lit: the mayor in bowler and chain mid-throw, the pinstripe gangster holding the stack, the doorway glow, the crowd reaching, the drain on wet cobbles. 🔴 7e-b paints "SHOP" on a sign (fix: name the shop's goods in a picture, or crop) |
+| 7f | Inches above the drain, wide, tilted up | 112f8862 · d76aaf95 | ⭐ **The prettiest of the day.** An envelope sinks into the grate in front of us, an old woman stoops for it too late, the balcony blazes in the background. 7f-a is wider, with the whole crowd; 7f-b is closer, with the kerb |
+| 7g | Steep over the mayor's shoulder | 2972c23f · e330a2ea | 🟡 The square is beautiful (tram rails, streaks of light), but the mayor grew a beard (7g-a), 7g-b isn't throwing, and the crowd becomes a pattern of tiny cartoon heads |
+| 7h | Long lens from behind the crowd | 1816adc9 · 5344bbce | ⭐ **7h-a:** silhouetted hats and hands in front, the South Asian woman's real face turned in lamplight, the balcony as a lit frame within the frame, envelopes sweeping to the drain. 🟡 7h-b has cream strips at the edges |
+
+**Shortlist:** 7f-a, 7h-a, 7e-a. Pick owed (Jack).

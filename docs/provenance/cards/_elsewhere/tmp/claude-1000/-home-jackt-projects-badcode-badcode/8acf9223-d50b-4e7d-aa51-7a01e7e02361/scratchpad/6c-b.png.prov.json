@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/8acf9223-d50b-4e7d-aa51-7a01e7e02361/scratchpad/6c-b.png",
+ "made": "2026-10-26T11:57:43.420Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. Only the bodies, clothes and places are cartoon: every face in the frame, however small, is painted as real human skin with wrinkles, pores, bags under the eyes and real eyelids, far more lifelike than anything around it, and no feature is exaggerated. From outside on a snowy 1930s rooftop at night, looking in through a small attic window thick with frost ferns: the small red moon is reflected in the cold glass. Behind the frost, lit only by one candle she holds up, the face of a tiny white grandmother in her eighties with thin silver hair in a hairnet, a long pointed nose and a mole on one cheek, wrapped in cardigans, her breath fogging the inside of the pane, looking out at the city with wet tired eyes. Snow on the sill and slates, icicles hanging from the gutter. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "740a0f6e-2713-465a-a7c6-0d56d461b36d"
+}
