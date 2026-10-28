@@ -129,7 +129,7 @@
    "what": "Kai's dialogue-page picks: draft 1D, Maddie's intro",
    "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r2 --seq gpom-2-A-killbots-r2 --skip mus-M0-radio (line files under A-d1/premiere/r2/lines/); cut3.py --tag d1 wrote a new media folder, so the earlier sequence keeps its own files",
    "check": {
-    "at": "2026-10-28T12:20",
+    "at": "2026-10-28T16:50",
     "state": "in sync",
     "why": ""
    }

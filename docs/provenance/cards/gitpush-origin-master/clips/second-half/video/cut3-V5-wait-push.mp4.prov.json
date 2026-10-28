@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V5-wait-push.mp4",
+ "made": "2026-10-28T16:50:58+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut3.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V5.mp4",
+ "why": "scene B round 4 (the bridge): Maddie waits at the shut door; V5's tail drifts, so a still of its settled frame with a slow push",
+ "settings": {
+  "frame": "6.45s",
+  "zoom": "1.00-1.06",
+  "duration": "6s"
+ }
+}

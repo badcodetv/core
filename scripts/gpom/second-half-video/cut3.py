@@ -5,6 +5,7 @@
     python3 scripts/gpom/second-half-video/cut3.py B          # scene B, Maddie at the door (14a-17b; round B2)
     python3 scripts/gpom/second-half-video/cut3.py A B --no-preview
     python3 scripts/gpom/second-half-video/cut3.py A B --tag d1   # Kai's dialogue-page picks (1D, 2H), 27 Oct
+    python3 scripts/gpom/second-half-video/cut3.py B --tag br     # the bridge: no doorstep talk (Kai, 28 Oct)
 
 --tag X writes to clips/second-half/cut3/<scene>-X/ instead of cut3/<scene>/, so a round never rewrites the stems and
 lines an earlier Premiere sequence plays from. --tag d1 also swaps in the dialogue-page words: beat 0 from
@@ -56,6 +57,7 @@ NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'm
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
 D1 = TAG in ('d1', 'd2')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
 D2 = TAG == 'd2'
+BR = TAG == 'br'  # the bridge (Kai, 28 Oct): the doorstep talk cut; a look, the door shuts on her, voices behind it
 STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
 # Off screen, down the corridor behind the old lady: the corridor's room, further back and duller.
 OFF = 'lowpass=f=4500,aecho=0.7:0.5:60|110:0.28|0.16'
@@ -784,6 +786,12 @@ def scene_b():
                            'that?", the time machine, it runs on them, Derek\'s "I\'m in", "Come back in the morning". Play '
                            'it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you '
                            "type. Tell Claude when you're done.")
+    if BR:
+        c.meta['intro'] = ('Scene B, round 4: the bridge (your call, 28 Oct: "by spelling it out it\'s boring, and removes '
+                           'mystery"). No doorstep talk. Maddie asks for a quick chat; the old lady looks at her; the door '
+                           'shuts on her; behind it, a hundred voices. Then scene C: they come out. Play it, click any '
+                           'beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell '
+                           "Claude when you're done.")
     m = c.m
     t = 0.0
     # ---- 14a: she rolls up to the plain door
@@ -843,6 +851,40 @@ def scene_b():
     v11 = V / 'cut3-V11.mp4'
     BY = {0: 'kai', 1: 'kai', 2: 'kai', 3: 'kai'}
     lady = []
+    if BR:
+        # The bridge: no words. The old lady (her back to us) looks at the robot in her doorway; the door shuts on it.
+        # Behind the shut door, the hundred decide, unheard (17b). Scene C opens on them coming out.
+        b['title'], b['act'] = 'The look', 'The door'
+        b['see'] = ('The old lady from behind, looking at Maddie small in the big doorway. Nobody speaks. Then the door '
+                    'shuts.')
+        look = 3.5
+        c.pic(v11, 0.0, s17, s17 + look, '17')
+        m['l17_0'], m['lady'], m['s17'] = s17 + 1.2, lady, s17
+        slam = fr(s17 + look)
+        m['slam'] = m['turn'] = slam
+        t = c.close(b, slam)
+        b = c.beat('17b', 'Behind the door', t, act='The door',
+                   see='Outside: Maddie alone at the shut steel door, waiting. Behind it, muffled, a hundred voices '
+                       'start up: the vote, heard but not understood. Hard cut to scene C: the door open, them coming '
+                       'out.')
+        hold = 6.0
+        # V5's tail still drifts (she was shot driving off, reversed), so she waits on its settled frame (6.45 s) with
+        # a slow push towards the door: the camera moves, she doesn't.
+        wait = V / 'cut3-V5-wait-push.mp4'
+        if not wait.exists():
+            n = int(round(hold * FPS))
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', '6.45', '-i', str(V / 'cut3-V5.mp4'),
+                            '-frames:v', '1', '-vf', f"scale=5120:2880,zoompan=z='1+0.06*on/{n}':d={n}:"
+                            "x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1280x720:fps=24", *ENC, str(wait)],
+                           check=True)
+        c.pic(wait, 0.0, t, t + hold, '17b', source=V / 'cut3-V5.mp4')
+        c.flags.append('Beat 17 and 17b, round BR (the bridge, Kai 28 Oct): the doorstep talk is cut. Beat 17 is a '
+                       f'{look:g} s silent hold on V11 (her back, Maddie in the doorway); 17b is V5\'s settled frame '
+                       '(Maddie at the shut door) with a slow 6% push, made in ffmpeg: a still, so she does not move. No '
+                       'new Flow footage. The vote is muffled walla (fs653920) behind the door, no words.')
+        t = c.close(b, t + hold)
+        c.total = t
+        return c
 
     def lip(name, t0, i0, out):
         wav, at, end_, ph = lipinfo(name)
@@ -1040,6 +1082,19 @@ def audio_b(c):
     fx('sfx-rooms', SFX / 'fs767306-room-tiled-public-bathroom.mp3', s, en['17'] - s, src_in=40, rms=-44, fi=0.3,
        fo=0.6, what='corridor tone')
     fx('sfx-wind', wind, s, en['17'] - s, src_in=30, rms=-44, fi=0.5, fo=0.6, what='wind through the open doors')
+    if BR:  # the bridge: the look, the slam, then outside at the shut door with the hundred muffled behind it
+        fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', s + 1.4, rms=-36, what='servo: she tilts up to her')
+        t = m['turn']
+        fx('sfx-door', SFX / 'fs406197-blastdoor-metal-slam.mp3', t - 0.30, rms=-20, peak=-3, fo=0.4,
+           what='the door shuts on her')
+        fx('sfx-wind', wind, t, en['17b'] - t, src_in=40, rms=-34, fi=0.05, fo=0.3, what='wind on the downs, outside')
+        fx('sfx-crowd', SFX / 'fs653920-crowd-small-walla.mp3', t + 0.8, en['17b'] - t - 0.8, src_in=5, rms=-40,
+           fi=2.0, fo=0.15, af=MUFFLED, what='behind the door: a hundred voices, the vote, no words')
+        fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', t + 2.6, rms=-36, what='servo: she waits')
+        fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', t + 4.2, rms=-36, what='beacon blip')
+        c.flags.append('Beat 17b: the shut is fs406197 (the slam, CC0), its hit on the cut; the voices behind the door '
+                       'are fs653920 (crowd walla) through the muffled filter, rising, cut dead on the cut to scene C.')
+        return mx
     for k in np.arange(s + 9.0, en['17'] - 3.0, 13.0):  # every 13 s through the talk
         fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', k, rms=-36, what='servo: she nudges')
     # ---- 17b: the slam (fs406197, its hit at 0.30 s, lands on the cut to outside), then the downs: wind, her wheels

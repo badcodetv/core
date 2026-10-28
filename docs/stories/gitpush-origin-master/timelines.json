@@ -156,12 +156,12 @@
    "id": "b-door",
    "group": "Part 2 · The humans",
    "name": "B · Maddie at the door",
-   "length": "1:08",
-   "state": "round 3: the short doorstep (2J)",
+   "length": "0:34",
+   "state": "round 4: the bridge (no doorstep talk)",
    "tone": "wip",
    "scene": "scenes/second-half-b-the-door",
    "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
-   "what": "The humans meet Maddie at the door. No resistance: \"Your boss killed everyone we ever loved.\" / \"nobody really won… there's a way we can fix this. Together.\" / \"How's that?\", the time machine, it only sends him, it runs on them, Derek's \"I'm in\", \"Come back in the morning\", the door, Maddie rolls away. Draft 2J from the dialogue page; on the page and in Premiere as gpom-3-B-door-r4.",
+   "what": "The humans meet Maddie at the door, and nobody explains anything. The tannoy, the doors open, \"Hello! Sorry about all the disruption. Could we have a quick chat? I think my boss would really like to meet you.\" The old lady looks at her. The door shuts on her. Outside, Maddie waits; behind the door, a hundred voices. Then C: they come out. Kai, 28 Oct: \"by spelling it out it's boring, and removes mystery.\" On the page and in Premiere as gpom-3-B-door-r5.",
    "history": [
     {
      "name": "Dialogue options (the intro and the doorstep)",
@@ -176,7 +176,7 @@
      "date": "2026-10-20"
     }
    ],
-   "premiere": "gpom-story.prproj · sequence gpom-3-B-door-r4 (bin \"00 the film (live sequences)\"); r3 and earlier in \"zz old sequences\", untouched"
+   "premiere": "gpom-story.prproj · sequence gpom-3-B-door-r5 (bin \"00 the film (live sequences)\"); r4 (the 2J doorstep) and earlier in \"zz old sequences\", untouched"
   },
   {
    "id": "ending",

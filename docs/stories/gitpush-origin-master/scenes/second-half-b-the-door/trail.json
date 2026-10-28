@@ -81,5 +81,16 @@
   ],
   "feedback": "feedback/timeline-r3",
   "feedback_docs": 2
+ },
+ {
+  "at": "2026-10-28T16:51:05+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+  "what": "scene B round 4: the bridge, no doorstep talk (0:34); Premiere gpom-3-B-door-r5; Kai's words in feedback/watch-2026-10-28/kai-chat-bridge.md",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py B --tag br && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>",
+  "decided": [
+   "Kai, 28 Oct: \"by spelling it out it's boring, and removes mystery\" ... \"go for it ... we can lose the time machine as a stated idea\""
+  ]
  }
 ]

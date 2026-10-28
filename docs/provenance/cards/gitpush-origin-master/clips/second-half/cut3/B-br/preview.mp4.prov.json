@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/preview.mp4",
+ "made": "2026-10-28T16:50:59+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut3.py B --tag br",
+ "why": "scene B round 4: the bridge, no doorstep talk (Kai, 28 Oct)"
+}

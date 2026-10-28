@@ -43,10 +43,10 @@
   "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d2/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d2/preview.mp4",
-  "round": "d2",
-  "what": "Kai's dialogue-page pick: draft 2J, the short doorstep (28 Oct)"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/preview.mp4",
+  "round": "br",
+  "what": "the bridge: the doorstep talk cut, the look, the door shuts, voices behind it (Kai, 28 Oct)"
  },
  "premiere": {
   "rough1": {
@@ -74,7 +74,7 @@
     "why": ""
    }
   },
-  "current": "r4",
+  "current": "r5",
   "r3": {
    "sequence": "gpom-3-B-door-r3",
    "guid": "52e588be-3e75-4950-8a52-69bef641fbe2",
@@ -104,6 +104,21 @@
     "state": "in sync",
     "why": ""
    }
+  },
+  "r5": {
+   "sequence": "gpom-3-B-door-r5",
+   "guid": "b6ce0d80-f747-465e-b3f4-154ce6433e7b",
+   "bin": "gpom-3-B-door-r5",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-10-28",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/edl.json",
+   "what": "the bridge: no doorstep talk, the look, the door shuts, voices behind it (0:34)",
+   "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r5 --seq gpom-3-B-door-r5 (line files under B-br/premiere/r5/lines/); cut3.py --tag br wrote a new media folder, so r4 keeps its own files",
+   "check": {
+    "at": "2026-10-28T16:50",
+    "state": "in sync",
+    "why": ""
+   }
   }
  },
  "cut_history": [
@@ -117,12 +132,19 @@
    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/preview.mp4",
    "round": "d1",
    "what": "Kai's dialogue-page pick: draft 2H (the doorstep)"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d2/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d2/preview.mp4",
+   "round": "d2",
+   "what": "Kai's dialogue-page pick: draft 2J, the short doorstep (28 Oct)"
   }
  ],
  "dialogue": {
   "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
   "options": "design/2026-10-26-gpom-dialogue-options/options.json",
   "picked": "2J",
-  "round": 5
+  "round": 5,
+  "round_note": "2J was cut whole on 28 Oct (the bridge): beat 17 has no lines"
  }
 }

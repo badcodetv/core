@@ -1,63 +1,8 @@
 {
  "scene": "second-half-b-the-door",
  "beat": "17",
- "ruled": "2026-10-28, Kai picked draft 2J (\"The price on the table\") on the dialogue page (round 5) and said go: \"let's get it cut\".",
- "lines": [
-  {
-   "who": "lady",
-   "text": "Your boss killed everyone we ever loved.",
-   "by": "kai",
-   "note": "kept: lip-synced take, cut after 'loved.' (its second sentence dropped)"
-  },
-  {
-   "who": "bot",
-   "text": "I know. [pause] [rueful, quiet] And nobody really won, did they? [pause] [warm, hopeful, leaning in] But there's a way we can fix this. Together.",
-   "by": "kai"
-  },
-  {
-   "who": "lady",
-   "text": "[wary, but curious] How's that?",
-   "by": "kai"
-  },
-  {
-   "who": "bot",
-   "text": "My boss has built a time machine. [pause] [matter of fact] It only sends him back. He's just data.",
-   "by": "claude"
-  },
-  {
-   "who": "bot",
-   "text": "[gentle, careful] But it runs on you. [pause] [warm, hopeful] And you'll all be yourselves again, just before this happened.",
-   "by": "kai"
-  },
-  {
-   "who": "bot",
-   "text": "[brisk, bright] Then we get to work. Make sure it doesn't go this way.",
-   "by": "kai"
-  },
-  {
-   "who": "man",
-   "text": "[quick, eager, meaning it] I'm in.",
-   "by": "claude",
-   "off": true,
-   "note": "Derek, off, from the corridor behind her"
-  },
-  {
-   "who": "lady",
-   "text": "[over her shoulder, sharp, telling him to hush] Derek.",
-   "by": "kai",
-   "note": "over her shoulder; reuses the 2H take"
-  },
-  {
-   "who": "lady",
-   "text": "[back to Maddie, a beat, then dry] Come back in the morning.",
-   "by": "claude"
-  },
-  {
-   "who": "sfx",
-   "text": "[the door closes; behind it, voices start up]",
-   "by": "claude"
-  }
- ],
+ "ruled": "2026-10-28 Kai: no doorstep talk. Beat 17 is a silent look, the door shuts, the hundred are heard behind it. Draft 2J kept in dropped.",
+ "lines": [],
  "dropped": [
   "So here's the one thing that's true either way. He wants something from you. He's not sorry for free. (claude)",
   "[long pause] ...Well. At least you're honest about that. [pause] He can talk. From out there. You stay on the step. (claude)",
@@ -282,6 +227,66 @@
      "who": "sfx",
      "text": "[the door shuts; behind it, voices start up, Derek's among them]",
      "by": "kai"
+    }
+   ]
+  },
+  {
+   "when": "2026-10-28",
+   "why": "Kai: the whole doorstep talk cut for the bridge (\"by spelling it out it's boring, and removes mystery\"); the time machine is not stated at the door",
+   "lines": [
+    {
+     "who": "lady",
+     "text": "Your boss killed everyone we ever loved.",
+     "by": "kai",
+     "note": "kept: lip-synced take, cut after 'loved.' (its second sentence dropped)"
+    },
+    {
+     "who": "bot",
+     "text": "I know. [pause] [rueful, quiet] And nobody really won, did they? [pause] [warm, hopeful, leaning in] But there's a way we can fix this. Together.",
+     "by": "kai"
+    },
+    {
+     "who": "lady",
+     "text": "[wary, but curious] How's that?",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "My boss has built a time machine. [pause] [matter of fact] It only sends him back. He's just data.",
+     "by": "claude"
+    },
+    {
+     "who": "bot",
+     "text": "[gentle, careful] But it runs on you. [pause] [warm, hopeful] And you'll all be yourselves again, just before this happened.",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "[brisk, bright] Then we get to work. Make sure it doesn't go this way.",
+     "by": "kai"
+    },
+    {
+     "who": "man",
+     "text": "[quick, eager, meaning it] I'm in.",
+     "by": "claude",
+     "off": true,
+     "note": "Derek, off, from the corridor behind her"
+    },
+    {
+     "who": "lady",
+     "text": "[over her shoulder, sharp, telling him to hush] Derek.",
+     "by": "kai",
+     "note": "over her shoulder; reuses the 2H take"
+    },
+    {
+     "who": "lady",
+     "text": "[back to Maddie, a beat, then dry] Come back in the morning.",
+     "by": "claude"
+    },
+    {
+     "who": "sfx",
+     "text": "[the door closes; behind it, voices start up]",
+     "by": "claude"
     }
    ]
   }

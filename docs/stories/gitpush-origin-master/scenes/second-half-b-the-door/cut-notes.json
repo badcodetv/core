@@ -1,27 +1,27 @@
 {
  "about": "Kai's notes on the scene B (Maddie at the door) timeline page https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8 and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 3,
+ "round": 4,
  "plan": [
   {
-   "h": "Round 3: the short doorstep",
+   "h": "Round 4: the bridge (no doorstep talk)",
    "items": [
-    "Your note after watching all six sequences (28 Oct): too long, no resistance. You picked draft 2J on the dialogue page (\"The price on the table\").",
-    "Beat 17 is now about 36 s (it was about 104 s). Scene B runs 1:08 (it was 2:17).",
-    "Her first line keeps its lip-synced take, cut after \"loved.\" Her \"Derek.\" reuses the take from 2H. Every other line is new, picked by measurement (whisper heard every one correctly). Nobody has listened yet.",
-    "Picture: Maddie past her shoulder (V11) under all the talk, then the door, then Maddie rolling away. The crowd shot is gone with the crowd line.",
-    "Behind the shut door you still hear them start talking."
+    "Your call (28 Oct): \"by spelling it out it's boring, and removes mystery.\" The doorstep talk is cut, and the time machine isn't said at the door.",
+    "Maddie rolls up, the tannoy, the doors open, \"Hello! Sorry about all the disruption. Could we have a quick chat? I think my boss would really like to meet you.\" (your words, kept).",
+    "Then a 3.5 s silent look: the old lady from behind, Maddie small in the doorway.",
+    "The door shuts on her. Outside, Maddie waits at the shut door (a still with a slow push); behind it, muffled, a hundred voices: the vote, heard, not understood. Hard cut to scene C: they come out.",
+    "Scene B runs 0:34 (it was 1:08). No new footage, no new voices."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Listen to the pace: the gaps are tight. Note any line that wants more air or less.",
-    "Same sequence in Premiere: gpom-3-B-door-r4."
+    "Is 3.5 s of her look enough, or does it want longer?",
+    "Same sequence in Premiere: gpom-3-B-door-r5."
    ]
   }
  ],
  "replies": {
-  "b17": "Round 3: the doorstep is draft 2J, your pick on the dialogue page (28 Oct): no resistance, about 36 s.",
+  "b17": "Round 4: the doorstep talk is cut (your call, 28 Oct). Beat 17 is now the look: no words.",
   "at772": "Done in round 1 and kept: Maddie outside the doors in 15."
  },
  "kai_round1": {
@@ -145,5 +145,29 @@
   "b17": "Round 2: the conversation is now draft 2H, worked through with you on the dialogue page (https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN).",
   "at772": "Done in round 1 and kept: Maddie outside the doors in 15."
  },
- "kai_round3": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/feedback/watch-2026-10-28/kai-chat.md (chat after watching the six sequences); pick 2J on the dialogue page"
+ "kai_round3": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/feedback/watch-2026-10-28/kai-chat.md (chat after watching the six sequences); pick 2J on the dialogue page",
+ "plan_round3": [
+  {
+   "h": "Round 3: the short doorstep",
+   "items": [
+    "Your note after watching all six sequences (28 Oct): too long, no resistance. You picked draft 2J on the dialogue page (\"The price on the table\").",
+    "Beat 17 is now about 36 s (it was about 104 s). Scene B runs 1:08 (it was 2:17).",
+    "Her first line keeps its lip-synced take, cut after \"loved.\" Her \"Derek.\" reuses the take from 2H. Every other line is new, picked by measurement (whisper heard every one correctly). Nobody has listened yet.",
+    "Picture: Maddie past her shoulder (V11) under all the talk, then the door, then Maddie rolling away. The crowd shot is gone with the crowd line.",
+    "Behind the shut door you still hear them start talking."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Listen to the pace: the gaps are tight. Note any line that wants more air or less.",
+    "Same sequence in Premiere: gpom-3-B-door-r4."
+   ]
+  }
+ ],
+ "replies_round3": {
+  "b17": "Round 3: the doorstep is draft 2J, your pick on the dialogue page (28 Oct): no resistance, about 36 s.",
+  "at772": "Done in round 1 and kept: Maddie outside the doors in 15."
+ },
+ "kai_round4": "feedback/watch-2026-10-28/kai-chat-bridge.md"
 }
