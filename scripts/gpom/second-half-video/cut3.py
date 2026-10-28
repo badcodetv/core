@@ -54,7 +54,8 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
          'crowd': 'The hundred'}
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-D1 = TAG == 'd1'
+D1 = TAG in ('d1', 'd2')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
+D2 = TAG == 'd2'
 STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
 # Off screen, down the corridor behind the old lady: the corridor's room, further back and duller.
 OFF = 'lowpass=f=4500,aecho=0.7:0.5:60|110:0.28|0.16'
@@ -777,6 +778,12 @@ def scene_b():
                            'experiment, the hundred answering at once, Derek, "Come back tomorrow". Play it, click any '
                            'beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell '
                            "Claude when you're done.")
+    if D2:
+        c.meta['intro'] = ('Scene B, round 3: the short doorstep, draft 2J from the dialogue page (your pick, 28 Oct, "The '
+                           'price on the table"): no resistance. "There\'s a way we can fix this. Together." / "How\'s '
+                           'that?", the time machine, it runs on them, Derek\'s "I\'m in", "Come back in the morning". Play '
+                           'it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you '
+                           "type. Tell Claude when you're done.")
     m = c.m
     t = 0.0
     # ---- 14a: she rolls up to the plain door
@@ -847,13 +854,15 @@ def scene_b():
         c.dub('vox-lady', wav, i0, i1, t0, what, chain=[CORRIDOR])
 
     # 17-0, cut to Maddie for its last 0.3 s (the voice overruns the mouth)
-    wav, at, end_, _ = lipinfo('17-0')
+    wav, at, end_, ph0 = lipinfo('17-0')
+    if D2:  # 2J keeps only her first sentence: the take and its mouth stop after "loved."
+        end_ = ph0[0][2]
     i0 = at - LEAD
     mouth_end = end_ - 0.32
     lip('17-0', s17, i0, mouth_end)
     dub(wav, s17, i0, end_ + 0.1, 'beat 17 line 0 lady (lip-sync dub)')
     l0a, l0e = s17 + LEAD, s17 + end_ - i0
-    c.line(b, 0, 'lady', l0a, l0e - l0a, LINES[('17', 0)]['text'], BY[0])
+    c.line(b, 0, 'lady', l0a, l0e - l0a, ph0[0][0] if D2 else LINES[('17', 0)]['text'], BY[0])
     v11_a = fr(s17 + mouth_end - i0)
 
     def maddie_line(i, tt, phrases=None):
@@ -879,10 +888,13 @@ def scene_b():
         # once, which cuts to them looking up (N3, as in 14b). Sandra, Derek and the hundred are off screen, down the
         # corridor behind her (OFF on top of the corridor's room, and quieter).
         script = json.loads((S.SCENES / 'second-half-b-the-door' / 'script.json').read_text())
-        rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-b-the-door' / 'voices-d1.json').read_text())['lines']}
+        rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-b-the-door' / f'voices-{TAG}.json').read_text())['lines']}
         # the gap before a line: Sandra's "Amen" and the hundred come in quick, the old lady's "Derek." snaps, the
         # rushed last line is tight; Maddie lets "Amen" land before her thought experiment
         before = {6: 0.45, 13: 0.25, 14: 0.7, 15: 0.3, 16: 0.4, 18: 0.15, 20: 0.2}
+        if D2:  # 2J: "How's that?" comes straight back; Derek jumps in quick, her "Derek." snaps, then a beat before
+            # "Come back in the morning."
+            before = {2: 0.3, 6: 0.25, 7: 0.15, 8: 0.6}
         e, crowd = l0e, None
         for i, ln in enumerate(script['lines']):
             if i == 0 or ln['who'] == 'sfx':
@@ -901,10 +913,14 @@ def scene_b():
             c.line(b, i, who, a, tt - a, shown(ln['text']), ln['by'])
             e = tt
         slam = fr(e + 0.25)
-        c.pic(v11, 0.0, v11_a, crowd[0], '17')
-        c.pic(V / 'cut2-N3.mp4', 1.0, crowd[0], crowd[1], '17')
-        c.pic(v11, 3.0, crowd[1], slam, '17')
-        v11_b = crowd[1]
+        if crowd:
+            c.pic(v11, 0.0, v11_a, crowd[0], '17')
+            c.pic(V / 'cut2-N3.mp4', 1.0, crowd[0], crowd[1], '17')
+            c.pic(v11, 3.0, crowd[1], slam, '17')
+            v11_b = crowd[1]
+        else:  # 2J: no crowd answer, so V11 (Maddie past her shoulder) holds to the door
+            c.pic(v11, 0.0, v11_a, slam, '17')
+            v11_b = v11_a
     else:
         e = maddie_line(1, l0e + GAP)
         e = maddie_line(2, e + GAP)
@@ -955,7 +971,12 @@ def scene_b():
                    'frame: the humans will have time. Then hard cut to scene C.')
     hold = 8.0
     c.pic(V / 'shb-b17b-v1-r2-shb-b17b-v1-calm-bunting.mp4', 0.0, t, t + hold, '17b')
-    if D1:
+    if D2:
+        c.flags.append('Beat 17, round D2: draft 2J from the dialogue page (your pick, 28 Oct: "The price on the table"). '
+                       'Her first line keeps its lip-synced take, cut after "loved."; her "Derek." reuses its 2H take; every '
+                       'other line is new, picked by measurement (voices-d2.json), nobody has listened. Picture: V11 '
+                       '(Maddie past her shoulder) under all the talk; her new lines are on her back, not lip-synced.')
+    elif D1:
         c.flags.append('Beat 17, round D1: draft 2H from the dialogue page (your pick, 27 Oct; Sandra says only "Amen"). '
                        'Her first line keeps its lip-synced take; every other line is new, picked by measurement '
                        '(voices-d1.json), nobody has listened. Picture: V11 (Maddie past her shoulder) ping-ponged under '

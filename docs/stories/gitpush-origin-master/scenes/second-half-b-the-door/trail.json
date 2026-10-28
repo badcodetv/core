@@ -60,5 +60,26 @@
   ],
   "feedback": "feedback/timeline-r2",
   "feedback_docs": 2
+ },
+ {
+  "at": "2026-10-28T12:12:08+00:00",
+  "stage": "dialogue",
+  "round": 5,
+  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+  "what": "dialogue options: short doorstep (2I, 2J, 2K) from Kai's watch note",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r5.json"
+ },
+ {
+  "at": "2026-10-28T12:21:13+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+  "what": "scene B round 3: the short doorstep, draft 2J (1:08); Premiere gpom-3-B-door-r4",
+  "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D2 && python3 scripts/gpom/second-half-video/cut3.py B --tag d2 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>",
+  "decided": [
+   "Kai, 28 Oct: \"The price on the table is how we do this. Yeah, let's get it cut\""
+  ],
+  "feedback": "feedback/timeline-r3",
+  "feedback_docs": 2
  }
 ]

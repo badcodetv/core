@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d2/17-5-bot-a.wav",
+ "made": "2026-10-28T12:20:43+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice3.py --round D2 (via scripts/aistudio-tts.py)",
+ "why": "second-half-b-the-door line 5 phrase 0, take a; whisper heard 'Then we get to work. Make sure it don't go this way.'",
+ "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, bright.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n\n### TRANSCRIPT\nThen we get to work. Make sure it doesn't go this way.",
+ "settings": {
+  "voice": "Aoede",
+  "direction": "brisk, bright"
+ }
+}

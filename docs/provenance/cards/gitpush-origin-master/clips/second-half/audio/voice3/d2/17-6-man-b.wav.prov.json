@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d2/17-6-man-b.wav",
+ "made": "2026-10-28T12:20:43+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice3.py --round D2 (via scripts/aistudio-tts.py)",
+ "why": "second-half-b-the-door line 6 phrase 0, take b (the pick); whisper heard 'I'm in.'",
+ "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quick, eager, meaning it.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.\n\n### TRANSCRIPT\nI'm in.",
+ "settings": {
+  "voice": "Algieba",
+  "direction": "quick, eager, meaning it"
+ }
+}

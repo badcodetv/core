@@ -1,34 +1,27 @@
 {
  "about": "Kai's notes on the scene B (Maddie at the door) timeline page https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8 and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 2,
+ "round": 3,
  "plan": [
   {
-   "h": "Round 2: the doorstep in your words",
+   "h": "Round 3: the short doorstep",
    "items": [
-    "Beat 17 is draft 2H from the dialogue page, your pick (27 Oct; Sandra says only \"Amen\").",
-    "The old lady's first line keeps its lip-synced take. Every other line is a new voice, picked by measurement (whisper heard every one correctly). Nobody has listened yet.",
-    "Sandra, Derek and the hundred are off screen, down the corridor behind her: further back and duller.",
-    "The hundred: six voices (Swindon, Bristol, Newport, Leeds, a retired teacher), each recorded separately and stacked so they overlap. The picture cuts to them looking up while they answer.",
-    "After the door shuts you hear them start talking behind it, muffled.",
-    "Beat 17 runs about 104 s, longer than the ~88 s the dialogue page estimated: the real takes run slower than my estimate. Scene B is 2:17 in all (it was 2:27)."
-   ]
-  },
-  {
-   "h": "In Premiere",
-   "items": [
-    "This round is also built as a new sequence, gpom-3-B-door-r3. gpom-3-B-door-r2 is untouched."
+    "Your note after watching all six sequences (28 Oct): too long, no resistance. You picked draft 2J on the dialogue page (\"The price on the table\").",
+    "Beat 17 is now about 36 s (it was about 104 s). Scene B runs 1:08 (it was 2:17).",
+    "Her first line keeps its lip-synced take, cut after \"loved.\" Her \"Derek.\" reuses the take from 2H. Every other line is new, picked by measurement (whisper heard every one correctly). Nobody has listened yet.",
+    "Picture: Maddie past her shoulder (V11) under all the talk, then the door, then Maddie rolling away. The crowd shot is gone with the crowd line.",
+    "Behind the shut door you still hear them start talking."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Listen for the six-voice crowd and Sandra's \"Amen\" first: they are the new voices.",
-    "Her lines after the first are on her back (V11), not lip-synced: new coverage of her face is owed if you want it."
+    "Listen to the pace: the gaps are tight. Note any line that wants more air or less.",
+    "Same sequence in Premiere: gpom-3-B-door-r4."
    ]
   }
  ],
  "replies": {
-  "b17": "Round 2: the conversation is now draft 2H, worked through with you on the dialogue page (https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN).",
+  "b17": "Round 3: the doorstep is draft 2J, your pick on the dialogue page (28 Oct): no resistance, about 36 s.",
   "at772": "Done in round 1 and kept: Maddie outside the doors in 15."
  },
  "kai_round1": {
@@ -121,5 +114,36 @@
     "Q4. Knock-on still open: scene D08 'You don't. Believing it is your bit.' would become 'You don't. You go on your feelings.' to match her new line here."
    ]
   }
- ]
+ ],
+ "plan_round2": [
+  {
+   "h": "Round 2: the doorstep in your words",
+   "items": [
+    "Beat 17 is draft 2H from the dialogue page, your pick (27 Oct; Sandra says only \"Amen\").",
+    "The old lady's first line keeps its lip-synced take. Every other line is a new voice, picked by measurement (whisper heard every one correctly). Nobody has listened yet.",
+    "Sandra, Derek and the hundred are off screen, down the corridor behind her: further back and duller.",
+    "The hundred: six voices (Swindon, Bristol, Newport, Leeds, a retired teacher), each recorded separately and stacked so they overlap. The picture cuts to them looking up while they answer.",
+    "After the door shuts you hear them start talking behind it, muffled.",
+    "Beat 17 runs about 104 s, longer than the ~88 s the dialogue page estimated: the real takes run slower than my estimate. Scene B is 2:17 in all (it was 2:27)."
+   ]
+  },
+  {
+   "h": "In Premiere",
+   "items": [
+    "This round is also built as a new sequence, gpom-3-B-door-r3. gpom-3-B-door-r2 is untouched."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Listen for the six-voice crowd and Sandra's \"Amen\" first: they are the new voices.",
+    "Her lines after the first are on her back (V11), not lip-synced: new coverage of her face is owed if you want it."
+   ]
+  }
+ ],
+ "replies_round2": {
+  "b17": "Round 2: the conversation is now draft 2H, worked through with you on the dialogue page (https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN).",
+  "at772": "Done in round 1 and kept: Maddie outside the doors in 15."
+ },
+ "kai_round3": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/feedback/watch-2026-10-28/kai-chat.md (chat after watching the six sequences); pick 2J on the dialogue page"
 }

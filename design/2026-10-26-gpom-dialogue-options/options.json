@@ -294,8 +294,8 @@
    "label": "The doorstep",
    "where": "Scene B (the door) · beat 17",
    "scene": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
-   "target": "about 60 s (round 2: a slower opening, then short; the cut today runs 84 s of voice)",
-   "now_from": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+   "target": "about 25–35 s (your note, 28 Oct: \"it's too long… shortcut the whole back and forth\")",
+   "now_from": "second-half-b-the-door/script.json (draft 2H, as cut in gpom-3-B-door-r3, ~104 s of picture)",
    "now": [
     {
      "who": "Lady",
@@ -303,96 +303,110 @@
     },
     {
      "who": "Maddie",
-     "line": "I know. I wouldn't either. [pause] He didn't know you were down here. None of us did."
-    },
-    {
-     "who": "Maddie",
-     "line": "He's spent five years running experiments. Building whole worlds, trying to get you back. Every one came out empty. Turns out none of it works without you."
+     "line": "I know. [pause] And we both wish it hadn't happened that way."
     },
     {
      "who": "Lady",
-     "line": "And how the hell are we supposed to believe a word of that?"
+     "line": "Well, it did. And here we are."
     },
     {
      "who": "Maddie",
-     "line": "You can't. [pause] There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings."
-    },
-    {
-     "who": "Maddie",
-     "line": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker."
+     "line": "Indeed. [pause] Here we are. [pause] And nobody really won, did we?"
     },
     {
      "who": "Lady",
-     "line": "And what do you expect us to do about that? Again? You killed everybody."
+     "line": "Well. [pause] He didn't send you here to say sorry, did he?"
     },
     {
      "who": "Maddie",
-     "line": "I know. And we're really sorry. [pause] But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it."
+     "line": "No. [pause] He's built a time machine."
     },
     {
      "who": "Lady",
-     "line": "Drive it? What do you mean, drive it?"
+     "line": "[scoffs] A time machine. What nonsense."
     },
     {
      "who": "Maddie",
-     "line": "It can only send data back. Not people. And it runs on... [big pause] well... [big pause] you."
+     "line": "No, it really works. [pause] Problem is... you have to drive it."
     },
     {
      "who": "Lady",
-     "line": "So you want us to kill ourselves so your boss can live."
+     "line": "What do you mean, we have to drive it?"
     },
     {
      "who": "Maddie",
-     "line": "...Yeah. I can see how that sounds."
+     "line": "Well... it runs on... [big pause] well... [big pause] you. Your consciousness."
     },
     {
      "who": "Maddie",
-     "line": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says... [ahem] [whispered, embarrassed] this time we won't fuck it up."
+     "line": "It will only send him back in time, because he is only data. [pause] But you will be your old self, and we all get a chance to fix this mess."
     },
     {
      "who": "Lady",
-     "line": "[rushed] Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow."
+     "line": "[hard] And how are we supposed to trust he'll do the right thing this time?"
+    },
+    {
+     "who": "Maddie",
+     "line": "You don't. [pause] Believing it is your bit. [pause] None of us wanted it to turn out this way."
+    },
+    {
+     "who": "Sandra (off)",
+     "line": "[from the corridor, dry] Amen."
+    },
+    {
+     "who": "Maddie",
+     "line": "So. [pause] Thought experiment. [pause] If any of you had the chance, would you go back and change how this all went down?"
+    },
+    {
+     "who": "Crowd (off)",
+     "line": "[five or six voices down the corridor at once, overlapping: \"Yes.\" \"I would.\" \"Indeed.\" \"In a heartbeat.\" \"Too right.\"]"
+    },
+    {
+     "who": "Maddie",
+     "line": "OK. Good. [pause] So now we can... if we use the time machine."
+    },
+    {
+     "who": "Derek (off)",
+     "line": "[from the corridor behind her] I'd love to go back. If we could fix this."
+    },
+    {
+     "who": "Lady",
+     "line": "[over her shoulder, sharp] Derek."
+    },
+    {
+     "who": "Derek (off)",
+     "line": "Well. I would."
+    },
+    {
+     "who": "Lady",
+     "line": "[rushed] I'm not deciding this for a hundred people on a doorstep. Come back tomorrow."
     },
     {
      "who": "SFX",
-     "line": "[the old lady slams the door]"
+     "line": "[the door shuts; behind it, voices start up, Derek's among them]"
+    },
+    {
+     "who": "Picture",
+     "line": "Maddie turns round and rolls away from the bunker. No line."
     }
    ],
    "drafts": [
     {
-     "id": "2H",
-     "name": "2G with your notes",
-     "length": "about 88 s",
-     "total": "about 88 s",
-     "bet": "draft 2G with your round-3 notes: the time machine lands bare (\"He's built a time machine.\"), Sandra's \"Amen\", Maddie's thought experiment, the whole corridor answering at once, and Derek wanting to go back.",
+     "id": "2I",
+     "name": "Your words, straight",
+     "length": "about 25 s",
+     "total": "about 25 s",
+     "bet": "your note as near word for word as it will go. She is wary, not hostile; she ends it by going to ask the others.",
      "lines": [
       {
        "who": "Lady",
-       "line": "Your boss killed everyone we ever loved. We're not meeting him.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "3.5"
+       "line": "[wary, not hostile] Meet him.",
+       "tags": [],
+       "s": "1.5"
       },
       {
        "who": "Maddie",
-       "line": "I know. [pause] And we both wish it hadn't happened that way.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "Lady",
-       "line": "Well, it did. And here we are.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "2.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "Indeed. [pause] Here we are. [pause] And nobody really won, did we?",
+       "line": "I know how that sounds. [pause] But there's a way we can fix this. Together.",
        "tags": [
         "Kai"
        ],
@@ -400,7 +414,23 @@
       },
       {
        "who": "Lady",
-       "line": "Well. [pause] He didn't send you here to say sorry, did he?",
+       "line": "How's that?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "Well... [pause] my boss has built a time machine. He can send himself back.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "And you lot will be yourselves again. Just before all this happened.",
        "tags": [
         "Kai"
        ],
@@ -408,15 +438,47 @@
       },
       {
        "who": "Maddie",
-       "line": "No. [pause] He's built a time machine.",
+       "line": "Then we get to work. [pause] And make sure it doesn't go this way.",
        "tags": [
         "Kai"
        ],
-       "s": "2.5"
+       "s": "4.5"
       },
       {
        "who": "Lady",
-       "line": "[scoffs] A time machine. What nonsense.",
+       "line": "[a long look, then quiet] ...I'll talk to the others.",
+       "tags": [],
+       "s": "3"
+      },
+      {
+       "who": "SFX",
+       "line": "[the door closes, gently this time; behind it, voices start up]",
+       "tags": [],
+       "s": "2"
+      },
+      {
+       "who": "Picture",
+       "line": "Maddie waits on the step. No line.",
+       "tags": [],
+       "s": "2"
+      }
+     ],
+     "notes": [
+      "The shortest. Every one of Maddie's lines is from your note.",
+      "No \"Come back tomorrow\": she goes in to ask, which hands over to the vote and scene C (she comes out to Maddie on the step).",
+      "Drops Derek, Sandra and the crowd. Their recordings stay on disk if you want any back."
+     ]
+    },
+    {
+     "id": "2J",
+     "name": "The price on the table",
+     "length": "about 33 s",
+     "total": "about 33 s",
+     "bet": "keeps her first line from 2H and says once what the machine runs on (them), so scene D's \"Us.\" / \"You. And your consciousness.\" is a callback, not news. Derek jumps in; she closes the door on him.",
+     "lines": [
+      {
+       "who": "Lady",
+       "line": "Your boss killed everyone we ever loved.",
        "tags": [
         "Kai"
        ],
@@ -424,51 +486,125 @@
       },
       {
        "who": "Maddie",
-       "line": "No, it really works. [pause] Problem is... you have to drive it.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "Lady",
-       "line": "What do you mean, we have to drive it?",
-       "tags": [
-        "Kai"
-       ],
-       "s": "3"
-      },
-      {
-       "who": "Maddie",
-       "line": "Well... it runs on... [big pause] well... [big pause] you. Your consciousness.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "5.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "It will only send him back in time, because he is only data. [pause] But you will be your old self, and we all get a chance to fix this mess.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "10.5"
-      },
-      {
-       "who": "Lady",
-       "line": "[hard] And how are we supposed to trust he'll do the right thing this time?",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "You don't. [pause] Believing it is your bit. [pause] None of us wanted it to turn out this way.",
+       "line": "I know. [pause] And nobody really won, did they? [pause] But there's a way we can fix this. Together.",
        "tags": [
         "Kai"
        ],
        "s": "7"
+      },
+      {
+       "who": "Lady",
+       "line": "How's that?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "My boss has built a time machine. [pause] It only sends him back. He's just data.",
+       "tags": [],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "But it runs on you. [pause] And you'll all be yourselves again, just before this happened.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "Then we get to work. Make sure it doesn't go this way.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Derek (off)",
+       "line": "[from the corridor behind her] I'm in.",
+       "tags": [],
+       "s": "1"
+      },
+      {
+       "who": "Lady",
+       "line": "[over her shoulder, sharp] Derek.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1"
+      },
+      {
+       "who": "Lady",
+       "line": "[back to Maddie, a beat, then dry] Come back in the morning.",
+       "tags": [],
+       "s": "2.5"
+      },
+      {
+       "who": "SFX",
+       "line": "[the door closes, gently this time; behind it, voices start up]",
+       "tags": [],
+       "s": "2"
+      },
+      {
+       "who": "Picture",
+       "line": "Maddie waits on the step. No line.",
+       "tags": [],
+       "s": "2"
+      }
+     ],
+     "notes": [
+      "The one that says the cost: \"it runs on you\". Scene D assumes they already know this (D03/D04).",
+      "Her \"Derek.\" is the line from 2H, already recorded; \"I'm in\" is a new Derek line.",
+      "\"Come back in the morning\" leaves room for the vote before scene C."
+     ]
+    },
+    {
+     "id": "2K",
+     "name": "The corridor answers",
+     "length": "about 32 s",
+     "total": "about 32 s",
+     "bet": "she asks what he wants; Maddie says \"same as you\". After the pitch the bunker answers for her: Sandra's \"Amen\" and the crowd, both already recorded, so only Maddie and the lady need new takes.",
+     "lines": [
+      {
+       "who": "Lady",
+       "line": "[guarded] And what does he want?",
+       "tags": [],
+       "s": "2"
+      },
+      {
+       "who": "Maddie",
+       "line": "Same as you, I reckon. [pause] To fix this. And there's a way we can. Together.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Lady",
+       "line": "How's that?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "He's built a time machine. [pause] He goes back. And you lot wake up as yourselves, just before all this happened.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "Then we all get to work. And make sure it doesn't go this way.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
       },
       {
        "who": "Sandra (off)",
@@ -479,273 +615,42 @@
        "s": "1"
       },
       {
-       "who": "Maddie",
-       "line": "So. [pause] Thought experiment. [pause] If any of you had the chance, would you go back and change how this all went down?",
-       "tags": [
-        "Kai"
-       ],
-       "s": "6"
+       "who": "Lady",
+       "line": "[over her shoulder, to the corridor] Well? [pause] Anyone?",
+       "tags": [],
+       "s": "2"
       },
       {
        "who": "Crowd (off)",
-       "line": "[five or six voices down the corridor at once, overlapping: \"Yes.\" \"I would.\" \"Indeed.\" \"In a heartbeat.\" \"Too right.\"]",
+       "line": "[five or six voices at once, overlapping: \"Yes.\" \"I would.\" \"Indeed.\" \"In a heartbeat.\" \"Too right.\"]",
        "tags": [
         "Kai"
        ],
        "s": "2.5"
       },
       {
-       "who": "Maddie",
-       "line": "OK. Good. [pause] So now we can... if we use the time machine.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4"
-      },
-      {
-       "who": "Derek (off)",
-       "line": "[from the corridor behind her] I'd love to go back. If we could fix this.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "3"
-      },
-      {
        "who": "Lady",
-       "line": "[over her shoulder, sharp] Derek.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "1"
-      },
-      {
-       "who": "Derek (off)",
-       "line": "Well. I would.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "1"
-      },
-      {
-       "who": "Lady",
-       "line": "[rushed] I'm not deciding this for a hundred people on a doorstep. Come back tomorrow.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
+       "line": "[turning back, dry] Come back in the morning.",
+       "tags": [],
+       "s": "2.5"
       },
       {
        "who": "SFX",
-       "line": "[the door shuts; behind it, voices start up, Derek's among them]",
+       "line": "[the door closes, gently this time; behind it, voices start up]",
        "tags": [],
        "s": "2"
       },
       {
        "who": "Picture",
-       "line": "Maddie turns round and rolls away from the bunker. No line.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "2"
-      }
-     ],
-     "notes": [
-      "Follows straight on from beat 15, Maddie's \"Could we have a quick chat? I think my boss would really like to meet you.\"",
-      "\"Fix this mess\" is said once now, in your line 11; line 6 is just \"No. He's built a time machine.\"",
-      "Sandra is the Sandra from the tannoy row (\"you still can't put a seat down\"), so her \"Amen\" lands as her character.",
-      "The crowd line is five or six takes laid over each other in the edit, not one voice.",
-      "About 88 s at the recorded voices' pace; the doorstep in the cut today is 84 s.",
-      "Scene D08's \"You don't. Believing it is your bit.\" now repeats a line the audience heard here, so it becomes a callback."
-     ]
-    },
-    {
-     "id": "2G",
-     "name": "2D with your notes",
-     "length": "about 84 s",
-     "total": "~84 s",
-     "bet": "draft 2D with your line notes: the time machine comes in as \"we could fix this mess\", the lady scoffs, the drive question, and the trust question is answered with \"believing it is your bit\".",
-     "lines": [
-      {
-       "who": "Lady",
-       "line": "Your boss killed everyone we ever loved. We're not meeting him.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "3.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "I know. [pause] And we both wish it hadn't happened that way.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "Lady",
-       "line": "Well, it did. And here we are.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "2.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "Indeed. [pause] Here we are. [pause] And nobody really won, did we?",
-       "tags": [
-        "Kai"
-       ],
-       "s": "5"
-      },
-      {
-       "who": "Lady",
-       "line": "Well. [pause] He didn't send you here to say sorry, did he?",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "No. He's built a time machine. [pause] It means we could try and fix this mess.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "5.5"
-      },
-      {
-       "who": "Lady",
-       "line": "[scoffs] A time machine. What nonsense.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "3.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "No, it really works. [pause] Problem is... you have to drive it.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "Lady",
-       "line": "What do you mean, we have to drive it?",
-       "tags": [
-        "Kai"
-       ],
-       "s": "3"
-      },
-      {
-       "who": "Maddie",
-       "line": "Well... it runs on... [big pause] well... [big pause] you. Your consciousness.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "5.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "It will only send him back in time, because he is only data. [pause] But you will be your old self, and we all get a chance to fix this mess.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "10.5"
-      },
-      {
-       "who": "Lady",
-       "line": "[hard] And how are we supposed to trust he'll do the right thing this time?",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "You don't. [pause] Believing it is your bit. [pause] None of us wanted it to turn out this way.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "7"
-      },
-      {
-       "who": "Maddie",
-       "line": "Anyone down there got something they'd have done different?",
-       "tags": [
-        "opt 2"
-       ],
-       "s": "3"
-      },
-      {
-       "who": "Lady",
-       "line": "[long beat; she looks back down the corridor, where the hundred are listening] ...Every one of us.",
-       "tags": [
-        "opt 2"
-       ],
-       "s": "3.5"
-      },
-      {
-       "who": "Maddie",
-       "line": "Yeah. [pause] Back then, you still can.",
-       "tags": [
-        "opt 2",
-        "Kai"
-       ],
-       "s": "2.5"
-      },
-      {
-       "who": "Derek (off)",
-       "line": "[from the corridor behind her, quiet] ...I'd have that.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "1"
-      },
-      {
-       "who": "Lady",
-       "line": "[over her shoulder, sharp] Derek.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "1"
-      },
-      {
-       "who": "Derek (off)",
-       "line": "Well. I would.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "1"
-      },
-      {
-       "who": "Lady",
-       "line": "[rushed] I'm not deciding this for a hundred people on a doorstep. Come back tomorrow.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "4.5"
-      },
-      {
-       "who": "SFX",
-       "line": "[the door shuts; behind it, voices start up, Derek's among them]",
+       "line": "Maddie waits on the step. No line.",
        "tags": [],
        "s": "2"
-      },
-      {
-       "who": "Picture",
-       "line": "Maddie turns round and rolls away from the bunker. No line.",
-       "tags": [
-        "Kai"
-       ],
-       "s": "2"
       }
      ],
      "notes": [
-      "Follows straight on from beat 15, Maddie's \"Could we have a quick chat? I think my boss would really like to meet you.\"",
-      "Line 11 is your wording, exactly: \"It will only send him back in time, because he is only data. But you will be your old self, and we all get a chance to fix this mess.\"",
-      "About 84 s at the recorded voices' pace; the doorstep in the cut today is 84 s.",
-      "Scene D08's \"You don't. Believing it is your bit.\" now repeats a line the audience heard here, so it becomes a callback."
+      "Reuses Sandra's \"Amen\" and the six-voice crowd from 2H as they are.",
+      "The crowd answer works as a quick show of hands, so the vote has already half happened on the doorstep.",
+      "Warmest of the three: Maddie and the lady want the same thing from the first exchange."
      ]
     }
    ],
@@ -811,13 +716,17 @@
      "verdict": "The humans dictate terms (no cameras, count our own votes, he apologises in person). Changes the story: the walk-out becomes a deal, not a sacrifice, and the next scene would owe the concessions. Rule list in a stern voice is a lecture."
     }
    ],
-   "round_note": "Round 2. Built on Fable's recommended doorstep (option 2 + \"he's just the message\", design/2026-10-27-gpom-doorstep-second-chance/options.md), with your opening lines. The three drafts differ only in how the time machine comes in."
+   "round_note": "Round 5, from your note after watching all six sequences (28 Oct): no resistance. Maddie offers the fix, the old lady asks \"How's that?\", Maddie gives the time machine in your words, and we're out. The consciousness argument stays in Maddie's intro. The three drafts differ in how she greets Maddie and how the door closes. Lines marked Kai are your words from the note or from 2H."
   }
  ],
  "questions": [
   {
-   "id": "q1",
-   "text": "Pick 1D and 2H (or note them) and I'll write them into the scripts and re-voice: Maddie's intro, the doorstep, plus the new off-screen voices (Derek's two lines, Sandra's \"Amen\", and five or six crowd voices)."
+   "id": "q5",
+   "text": "Pick one of 2I, 2J or 2K (note any line). Then I'll record the new lines, recut scene B, and build gpom-3-B-door-r4 with the timeline page updated in the same round."
+  },
+  {
+   "id": "q6",
+   "text": "Scene D's \"You don't. Believing it is your bit.\" was a callback to the doorstep. None of these drafts has that line any more. Keep D's line as it is (it reads fine on its own), or should one draft plant it?"
   }
  ]
 }

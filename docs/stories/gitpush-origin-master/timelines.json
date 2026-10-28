@@ -2,7 +2,7 @@
  "story": "gitpush-origin-master",
  "title": "GitPush Origin Master",
  "url": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "open_now": "b-door",
  "intro": "The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under \"Earlier pages\" so nothing gets lost.",
  "sections": [
@@ -155,19 +155,19 @@
   {
    "id": "b-door",
    "group": "Part 2 · The humans",
-   "name": "B · Maddie at the door (now also the debate)",
-   "length": "2:17",
-   "state": "round 2: the doorstep in your words",
+   "name": "B · Maddie at the door",
+   "length": "1:08",
+   "state": "round 3: the short doorstep (2J)",
    "tone": "wip",
    "scene": "scenes/second-half-b-the-door",
    "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
-   "what": "The humans meet Maddie at the door: \"nobody really won\", the time machine, only his data goes back, Sandra's \"Amen\", the thought experiment, the hundred answering at once, Derek, \"Come back tomorrow\", the slam, Maddie rolls away. Draft 2H from the dialogue page; on the page and in Premiere as gpom-3-B-door-r3.",
+   "what": "The humans meet Maddie at the door. No resistance: \"Your boss killed everyone we ever loved.\" / \"nobody really won… there's a way we can fix this. Together.\" / \"How's that?\", the time machine, it only sends him, it runs on them, Derek's \"I'm in\", \"Come back in the morning\", the door, Maddie rolls away. Draft 2J from the dialogue page; on the page and in Premiere as gpom-3-B-door-r4.",
    "history": [
     {
      "name": "Dialogue options (the intro and the doorstep)",
      "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
      "kind": "dialogue",
-     "date": "2026-10-27"
+     "date": "2026-10-28"
     },
     {
      "name": "Cut 2 timeline (A + B together)",
@@ -176,7 +176,7 @@
      "date": "2026-10-20"
     }
    ],
-   "premiere": "gpom-story.prproj · sequence gpom-3-B-door-r3 (same-named bin); r2 untouched"
+   "premiere": "gpom-story.prproj · sequence gpom-3-B-door-r4 (bin \"00 the film (live sequences)\"); r3 and earlier in \"zz old sequences\", untouched"
   },
   {
    "id": "ending",
@@ -271,6 +271,7 @@
     "sequence": "gaze46-probe",
     "what": "a bridge test, safe to delete"
    }
-  ]
+  ],
+  "bins": "Live sequences: bin \"00 the film (live sequences)\", the six tabs in film order. Every older version, test and probe: bin \"zz old sequences\" (Kai asked for the tidy, 28 Oct). Nothing deleted."
  }
 }

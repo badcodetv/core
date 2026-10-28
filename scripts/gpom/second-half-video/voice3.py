@@ -53,8 +53,11 @@ Writes voice3/manifest.json.
          2H, the doorstep (scene B beat 17), from each scene's script.json; Sandra, Derek and a six-voice crowd off
          screen. Three takes per phrase (two per crowd voice), whisper-checked and picked by measurement; written to
          scenes/<scene>/voices-d1.json. See main_d1.
+  JOB 8  --round D2: Kai's pick on the dialogue page (28 Oct): draft 2J, the short doorstep (scene B only), into
+         voice3/d2/ and scenes/second-half-b-the-door/voices-d2.json. Same method as D1.
 
     python3 scripts/gpom/second-half-video/voice3.py --round D1   # existing takes are kept
+    python3 scripts/gpom/second-half-video/voice3.py --round D2
 """
 import json
 import os
@@ -544,6 +547,10 @@ def main_b2():
 D1_SCENES = {'A': 'second-half-a-killbots', 'B': 'second-half-b-the-door'}
 D1_GAP = {'[pause]': 0.6, '[beat]': 0.6, '[big pause]': 1.5}
 D1_SPOKEN = {'[scoffs]'}
+# Round D2 (28 Oct): draft 2J, the short doorstep (scene B only). New files go to voice3/d2/ so the d1 takes that
+# gpom-3-B-door-r3 plays stay as they are; the old lady's "Derek." reuses its d1 take.
+D2_SCENES = {'B': 'second-half-b-the-door'}
+D2_REUSE = {'Derek.': 'd1/17-18-lady-b.wav'}
 D1_REUSE = {'Oh, hello!': 'a1/00-0-bot-c.wav', 'Ever since you lot...': 'maddie/00-1-1-a.wav', 'went.': 'maddie/00-1-2-a.wav'}
 D1_CROWD = [  # (voice, who they are, accent)
     ('Orus', 'a man in his forties, a former bus driver', 'West Country, as heard in Swindon'),
@@ -581,13 +588,13 @@ def d1_phrases(text):
     return phrases, gaps, emos
 
 
-def d1_jobs():
+def d1_jobs(rnd='d1'):
     cast = json.loads(CAST_FILE.read_text())['cast']
     base = {'bot': V.profiles['bot'], 'lady': cast['lady']['prompt'], 'woman': cast['woman']['prompt'],
             'man': cast['man']['prompt']}
     voice = {'bot': 'Aoede', 'lady': cast['lady']['voice'], 'woman': cast['woman']['voice'], 'man': cast['man']['voice']}
     out, meta = [], {}
-    for sc, folder in D1_SCENES.items():
+    for sc, folder in (D1_SCENES if rnd == 'd1' else D2_SCENES).items():
         script = json.loads((V.S.SCENES / folder / 'script.json').read_text())
         beat, rows = script['beat'], []
         for i, ln in enumerate(script['lines']):
@@ -598,26 +605,27 @@ def d1_jobs():
                 phrases = [p.strip() for p in ln['text'].split(' / ')]
                 rows.append({'i': i, 'who': who, 'text': ln['text'], 'off': True, 'phrases': [], 'gaps': []})
                 for p, (ph, (vc, desc, acc)) in enumerate(zip(phrases, D1_CROWD)):
-                    stem, pkey = f'{V.bkey(beat)}-{i}-crowd{p}', f'd1-{beat}-{i}-crowd{p}'
+                    stem, pkey = f'{V.bkey(beat)}-{i}-crowd{p}', f'{rnd}-{beat}-{i}-crowd{p}'
                     V.profiles[pkey] = crowd_profile(desc, acc)  # in-process only
                     rows[-1]['phrases'].append({'p': p, 'text': ph, 'voice': vc, 'direction': None,
                                                 'prompt': V.profiles[pkey], 'stem': stem})
-                    out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': 'd1', 'who': pkey, 'voice': vc, 'text': ph,
-                             'target': ph, 'how': None, 'work': WORK3 / 'd1'} for t in 'ab']
+                    out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': rnd, 'who': pkey, 'voice': vc, 'text': ph,
+                             'target': ph, 'how': None, 'work': WORK3 / rnd} for t in 'ab']
                 continue
             phrases, gaps, emos = d1_phrases(ln['text'])
             row = {'i': i, 'who': who, 'text': ln['text'], 'off': bool(ln.get('off')), 'voice': voice[who],
                    'phrases': [], 'gaps': [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(gaps)]}
             for p, (ph, emo) in enumerate(zip(phrases, emos)):
                 stem = f'{V.bkey(beat)}-{i}-{who}' + (f'-p{p}' if len(phrases) > 1 else '')
-                if ph in D1_REUSE and sc == 'A':
-                    row['phrases'].append({'p': p, 'text': ph, 'direction': None, 'reused': D1_REUSE[ph]})
+                reuse = (D1_REUSE if sc == 'A' else {}) if rnd == 'd1' else D2_REUSE
+                if ph in reuse:
+                    row['phrases'].append({'p': p, 'text': ph, 'direction': emo, 'reused': reuse[ph]})
                     continue
-                pkey = f'd1-{stem}'
+                pkey = f'{rnd}-{stem}'
                 V.profiles[pkey] = with_emotion(base[who], emo)  # in-process only
                 row['phrases'].append({'p': p, 'text': ph, 'direction': emo, 'prompt': V.profiles[pkey], 'stem': stem})
-                out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': 'd1', 'who': pkey, 'voice': voice[who], 'text': ph,
-                         'target': ph, 'how': None, 'work': WORK3 / 'd1'} for t in 'abc']
+                out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': rnd, 'who': pkey, 'voice': voice[who], 'text': ph,
+                         'target': ph, 'how': None, 'work': WORK3 / rnd} for t in 'abc']
             rows.append(row)
         meta[sc] = (folder, script, rows)
     return out, meta
@@ -653,24 +661,24 @@ def d1_crowd(row):
     return f"d1/{out.name}", round(V.duration(out), 2)
 
 
-def main_d1():
+def main_d1(rnd='d1'):
     import difflib
     sys.path.insert(0, str(V.S.REPO / 'scripts/gpom/second-half-video/ending'))
     import voices as E  # noqa: E402  (whisper + norm only)
-    (OUT3 / 'd1').mkdir(parents=True, exist_ok=True)
-    (WORK3 / 'd1').mkdir(parents=True, exist_ok=True)
-    todo, meta = d1_jobs()
+    (OUT3 / rnd).mkdir(parents=True, exist_ok=True)
+    (WORK3 / rnd).mkdir(parents=True, exist_ok=True)
+    todo, meta = d1_jobs(rnd)
     with ThreadPoolExecutor(3) as ex:
         res = list(ex.map(run, todo))
-    heard = E.whisper([OUT3 / 'd1' / f"{r['key']}.wav" for r in res if r['duration']])
+    heard = E.whisper([OUT3 / rnd / f"{r['key']}.wav" for r in res if r['duration']])
     by = {}
     for r in res:
-        f = OUT3 / 'd1' / f"{r['key']}.wav"
+        f = OUT3 / rnd / f"{r['key']}.wav"
         h = heard.get(str(f)) if r['duration'] else None
         ratio = difflib.SequenceMatcher(None, E.norm(r['target']), E.norm(h['text'])).ratio() if h else 0.0
         gap = round(V.longest_gap(f), 2) if r['duration'] else 0.0
         flagged = r['status'].split()[0] in ('SHORT', 'DEAD', 'FAILED')
-        t = {'take': r['key'][-1], 'file': f"d1/{f.name}", 'spoken': r['text'], 'duration': round(r['duration'], 2),
+        t = {'take': r['key'][-1], 'file': f"{rnd}/{f.name}", 'spoken': r['text'], 'duration': round(r['duration'], 2),
              'heard': h['text'] if h else '', 'match': round(ratio, 3), 'gap': gap, 'status': r['status'],
              'ok': ratio >= E.MATCH and gap <= 2.0 and not flagged}
         by.setdefault(r['stem'], []).append(t)
@@ -689,11 +697,11 @@ def main_d1():
             if row['who'] == 'crowd':
                 row['stack'], row['stack_duration'] = d1_crowd(row)
         doc = {'about': f"Scene {sc}'s new lines from the dialogue page (draft {script['dialogue']['picked']}), voiced in "
-                        "Gemini TTS by scripts/gpom/second-half-video/voice3.py --round D1. Files are relative to the media "
+                        f"Gemini TTS by scripts/gpom/second-half-video/voice3.py --round {rnd.upper()}. Files are relative to the media "
                         "folder. Picked by measurement (whisper + longest gap); nobody has listened.",
                'media': str(OUT3), 'source': f'docs/stories/gitpush-origin-master/scenes/{folder}/script.json',
                'dialogue': script['dialogue'], 'lines': rows}
-        dst = V.S.SCENES / folder / 'voices-d1.json'
+        dst = V.S.SCENES / folder / f'voices-{rnd}.json'
         dst.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + '\n')
         print(f'wrote {dst}')
         for row in rows:
@@ -753,9 +761,9 @@ def main():
 if __name__ == '__main__':
     if '--round' in sys.argv:
         rnd = sys.argv[sys.argv.index('--round') + 1].upper()
-        assert rnd in ('A1', 'A3', 'B2', 'D1'), 'only --round A1 / A3 / B2 / D1 exist'
+        assert rnd in ('A1', 'A3', 'B2', 'D1', 'D2'), 'only --round A1 / A3 / B2 / D1 / D2 exist'
         load_key()
-        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1}[rnd]()
+        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1, 'D2': lambda: main_d1('d2')}[rnd]()
     elif '--lines' in sys.argv:
         load_key()
         main_lines()

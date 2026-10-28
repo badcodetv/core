@@ -43,10 +43,10 @@
   "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/preview.mp4",
-  "round": "d1",
-  "what": "Kai's dialogue-page pick: draft 2H (the doorstep)"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d2/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d2/preview.mp4",
+  "round": "d2",
+  "what": "Kai's dialogue-page pick: draft 2J, the short doorstep (28 Oct)"
  },
  "premiere": {
   "rough1": {
@@ -74,7 +74,7 @@
     "why": ""
    }
   },
-  "current": "r3",
+  "current": "r4",
   "r3": {
    "sequence": "gpom-3-B-door-r3",
    "guid": "52e588be-3e75-4950-8a52-69bef641fbe2",
@@ -89,6 +89,21 @@
     "state": "in sync",
     "why": ""
    }
+  },
+  "r4": {
+   "sequence": "gpom-3-B-door-r4",
+   "guid": "7ae9c26a-bcc6-4b41-a4e3-9442437f6245",
+   "bin": "gpom-3-B-door-r4",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-10-28",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d2/edl.json",
+   "what": "Kai's dialogue-page pick: draft 2J, the short doorstep (1:08)",
+   "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r4 --seq gpom-3-B-door-r4 (line files under B-d2/premiere/r4/lines/); cut3.py --tag d2 wrote a new media folder, so r3 keeps its own files",
+   "check": {
+    "at": "2026-10-28T12:20",
+    "state": "in sync",
+    "why": ""
+   }
   }
  },
  "cut_history": [
@@ -96,12 +111,18 @@
    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/edl.json",
    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/preview.mp4",
    "until": "2026-10-27"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/preview.mp4",
+   "round": "d1",
+   "what": "Kai's dialogue-page pick: draft 2H (the doorstep)"
   }
  ],
  "dialogue": {
   "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
   "options": "design/2026-10-26-gpom-dialogue-options/options.json",
-  "picked": "2H",
-  "round": 4
+  "picked": "2J",
+  "round": 5
  }
 }

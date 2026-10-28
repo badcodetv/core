@@ -1,102 +1,43 @@
 {
  "scene": "second-half-b-the-door",
  "beat": "17",
- "ruled": "2026-10-27, Kai picked draft 2H on the dialogue page (round 4; Sandra says only \"Amen\") and said go.",
+ "ruled": "2026-10-28, Kai picked draft 2J (\"The price on the table\") on the dialogue page (round 5) and said go: \"let's get it cut\".",
  "lines": [
   {
    "who": "lady",
-   "text": "Your boss killed everyone we ever loved. We're not meeting him.",
+   "text": "Your boss killed everyone we ever loved.",
    "by": "kai",
-   "note": "kept: lip-synced take"
+   "note": "kept: lip-synced take, cut after 'loved.' (its second sentence dropped)"
   },
   {
    "who": "bot",
-   "text": "I know. [pause] [gentle, sincere] And we both wish it hadn't happened that way.",
+   "text": "I know. [pause] [rueful, quiet] And nobody really won, did they? [pause] [warm, hopeful, leaning in] But there's a way we can fix this. Together.",
    "by": "kai"
   },
   {
    "who": "lady",
-   "text": "[flat, unmoved] Well, it did. And here we are.",
+   "text": "[wary, but curious] How's that?",
    "by": "kai"
   },
   {
    "who": "bot",
-   "text": "Indeed. [pause] Here we are. [pause] [rueful, quiet] And nobody really won, did we?",
-   "by": "kai"
+   "text": "My boss has built a time machine. [pause] [matter of fact] It only sends him back. He's just data.",
+   "by": "claude"
   },
   {
-   "who": "lady",
-   "text": "[dry, suspicious] Well. [pause] He didn't send you here to say sorry, did he?",
+   "who": "bot",
+   "text": "[gentle, careful] But it runs on you. [pause] [warm, hopeful] And you'll all be yourselves again, just before this happened.",
    "by": "kai"
   },
   {
    "who": "bot",
-   "text": "No. [pause] He's built a time machine.",
-   "by": "kai"
-  },
-  {
-   "who": "lady",
-   "text": "[scoffs] A time machine. What nonsense.",
-   "by": "kai"
-  },
-  {
-   "who": "bot",
-   "text": "No, it really works. [pause] [a little sheepish] Problem is... you have to drive it.",
-   "by": "kai"
-  },
-  {
-   "who": "lady",
-   "text": "What do you mean, we have to drive it?",
-   "by": "kai"
-  },
-  {
-   "who": "bot",
-   "text": "[hesitant, awkward] Well... it runs on... [big pause] well... [big pause] you. Your consciousness.",
-   "by": "kai"
-  },
-  {
-   "who": "bot",
-   "text": "It will only send him back in time, because he is only data. [pause] [warm, hopeful] But you will be your old self, and we all get a chance to fix this mess.",
-   "by": "kai"
-  },
-  {
-   "who": "lady",
-   "text": "[hard] And how are we supposed to trust he'll do the right thing this time?",
-   "by": "kai"
-  },
-  {
-   "who": "bot",
-   "text": "You don't. [pause] Believing it is your bit. [pause] [soft, sincere] None of us wanted it to turn out this way.",
-   "by": "kai"
-  },
-  {
-   "who": "woman",
-   "text": "[dry, deadpan, half under her breath, the complainer agreeing for once] Amen.",
-   "by": "kai",
-   "off": true,
-   "note": "Sandra, off, from the corridor"
-  },
-  {
-   "who": "bot",
-   "text": "So. [pause] Thought experiment. [pause] If any of you had the chance, would you go back and change how this all went down?",
-   "by": "kai"
-  },
-  {
-   "who": "crowd",
-   "text": "Yes. / I would. / Indeed. / In a heartbeat. / Too right. / Course we would.",
-   "by": "kai",
-   "off": true,
-   "note": "five or six voices at once down the corridor, one take each, stacked in the edit"
-  },
-  {
-   "who": "bot",
-   "text": "[pleased] OK. Good. [pause] So now we can... if we use the time machine.",
+   "text": "[brisk, bright] Then we get to work. Make sure it doesn't go this way.",
    "by": "kai"
   },
   {
    "who": "man",
-   "text": "[quiet, hopeful, meaning it] I'd love to go back. If we could fix this.",
-   "by": "kai",
+   "text": "[quick, eager, meaning it] I'm in.",
+   "by": "claude",
    "off": true,
    "note": "Derek, off, from the corridor behind her"
   },
@@ -104,24 +45,17 @@
    "who": "lady",
    "text": "[over her shoulder, sharp, telling him to hush] Derek.",
    "by": "kai",
-   "note": "over her shoulder"
-  },
-  {
-   "who": "man",
-   "text": "[sheepish but stubborn] Well. I would.",
-   "by": "kai",
-   "off": true,
-   "note": "Derek, off"
+   "note": "over her shoulder; reuses the 2H take"
   },
   {
    "who": "lady",
-   "text": "[rushed] I'm not deciding this for a hundred people on a doorstep. Come back tomorrow.",
-   "by": "kai"
+   "text": "[back to Maddie, a beat, then dry] Come back in the morning.",
+   "by": "claude"
   },
   {
    "who": "sfx",
-   "text": "[the door shuts; behind it, voices start up, Derek's among them]",
-   "by": "kai"
+   "text": "[the door closes; behind it, voices start up]",
+   "by": "claude"
   }
  ],
  "dropped": [
@@ -223,6 +157,133 @@
      "note": "new 23 Oct"
     }
    ]
+  },
+  {
+   "draft": "2H",
+   "dropped": "2026-10-28",
+   "why": "Kai, after watching all six sequences: too long; no resistance (picked 2J)",
+   "lines": [
+    {
+     "who": "lady",
+     "text": "Your boss killed everyone we ever loved. We're not meeting him.",
+     "by": "kai",
+     "note": "kept: lip-synced take"
+    },
+    {
+     "who": "bot",
+     "text": "I know. [pause] [gentle, sincere] And we both wish it hadn't happened that way.",
+     "by": "kai"
+    },
+    {
+     "who": "lady",
+     "text": "[flat, unmoved] Well, it did. And here we are.",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "Indeed. [pause] Here we are. [pause] [rueful, quiet] And nobody really won, did we?",
+     "by": "kai"
+    },
+    {
+     "who": "lady",
+     "text": "[dry, suspicious] Well. [pause] He didn't send you here to say sorry, did he?",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "No. [pause] He's built a time machine.",
+     "by": "kai"
+    },
+    {
+     "who": "lady",
+     "text": "[scoffs] A time machine. What nonsense.",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "No, it really works. [pause] [a little sheepish] Problem is... you have to drive it.",
+     "by": "kai"
+    },
+    {
+     "who": "lady",
+     "text": "What do you mean, we have to drive it?",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "[hesitant, awkward] Well... it runs on... [big pause] well... [big pause] you. Your consciousness.",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "It will only send him back in time, because he is only data. [pause] [warm, hopeful] But you will be your old self, and we all get a chance to fix this mess.",
+     "by": "kai"
+    },
+    {
+     "who": "lady",
+     "text": "[hard] And how are we supposed to trust he'll do the right thing this time?",
+     "by": "kai"
+    },
+    {
+     "who": "bot",
+     "text": "You don't. [pause] Believing it is your bit. [pause] [soft, sincere] None of us wanted it to turn out this way.",
+     "by": "kai"
+    },
+    {
+     "who": "woman",
+     "text": "[dry, deadpan, half under her breath, the complainer agreeing for once] Amen.",
+     "by": "kai",
+     "off": true,
+     "note": "Sandra, off, from the corridor"
+    },
+    {
+     "who": "bot",
+     "text": "So. [pause] Thought experiment. [pause] If any of you had the chance, would you go back and change how this all went down?",
+     "by": "kai"
+    },
+    {
+     "who": "crowd",
+     "text": "Yes. / I would. / Indeed. / In a heartbeat. / Too right. / Course we would.",
+     "by": "kai",
+     "off": true,
+     "note": "five or six voices at once down the corridor, one take each, stacked in the edit"
+    },
+    {
+     "who": "bot",
+     "text": "[pleased] OK. Good. [pause] So now we can... if we use the time machine.",
+     "by": "kai"
+    },
+    {
+     "who": "man",
+     "text": "[quiet, hopeful, meaning it] I'd love to go back. If we could fix this.",
+     "by": "kai",
+     "off": true,
+     "note": "Derek, off, from the corridor behind her"
+    },
+    {
+     "who": "lady",
+     "text": "[over her shoulder, sharp, telling him to hush] Derek.",
+     "by": "kai",
+     "note": "over her shoulder"
+    },
+    {
+     "who": "man",
+     "text": "[sheepish but stubborn] Well. I would.",
+     "by": "kai",
+     "off": true,
+     "note": "Derek, off"
+    },
+    {
+     "who": "lady",
+     "text": "[rushed] I'm not deciding this for a hundred people on a doorstep. Come back tomorrow.",
+     "by": "kai"
+    },
+    {
+     "who": "sfx",
+     "text": "[the door shuts; behind it, voices start up, Derek's among them]",
+     "by": "kai"
+    }
+   ]
   }
  ],
  "knock_on": [
@@ -236,7 +297,7 @@
  "dialogue": {
   "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
   "options": "design/2026-10-26-gpom-dialogue-options/options.json",
-  "picked": "2H",
-  "round": 4
+  "picked": "2J",
+  "round": 5
  }
 }
