@@ -1,0 +1,145 @@
+<title><!--TITLE--></title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: a neutral picking table. The page itself must not carry a look, because it shows many
+   looks side by side: plain paper in light mode, plain graphite in dark. Looks first (a still per
+   option), then sounds (words + references), then one note on how the two belong together. */
+:root {
+  --bg: #f4f3f0; --panel: #ffffff; --line: #d9d6cf; --fg: #1c1b19; --muted: #6b6862;
+  --accent: #c8322a; --yes: #2f8a4c; --maybe: #b07d1a; --no: #8a8790;
+  --display: "Fraunces", Georgia, serif; --body: "Public Sans", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #17171a; --panel: #212125; --line: #34343b; --fg: #ecebe7; --muted: #9c9aa3;
+  --accent: #e5554b; --yes: #5fbf7a; --maybe: #d9a43a; --no: #7b7882; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #17171a; --panel: #212125; --line: #34343b; --fg: #ecebe7; --muted: #9c9aa3;
+  --accent: #e5554b; --yes: #5fbf7a; --maybe: #d9a43a; --no: #7b7882; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.55; margin: 0; }
+.wrap { max-width: 1300px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 64px; }
+h1 { font-family: var(--display); font-weight: 600; font-size: clamp(1.9rem, 4.5vw, 3rem); line-height: 1.05; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 70ch; margin: 10px 0 0; }
+.status { font-size: 13px; color: var(--muted); margin-top: 8px; }
+nav { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); display: flex; gap: 6px 18px; flex-wrap: wrap; padding-block: 12px; margin-top: 18px; }
+nav a { color: var(--muted); text-decoration: none; font-family: var(--mono); font-size: 12px; letter-spacing: .05em; text-transform: uppercase; }
+nav a:hover, nav a:focus-visible { color: var(--fg); }
+section { padding-top: 36px; scroll-margin-top: 56px; }
+h2 { font-family: var(--display); font-weight: 600; font-size: 1.8rem; margin: 0 0 4px; }
+.sub { color: var(--muted); margin: 0 0 16px; max-width: 70ch; }
+.story { display: grid; gap: 10px; max-width: 80ch; }
+.story dt { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.story dd { margin: 0 0 6px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 20px; }
+.card { margin: 0; display: grid; gap: 8px; align-content: start; min-width: 0; background: var(--panel); border: 1px solid var(--line); padding: 12px; }
+.card.chosen { border-color: var(--yes); box-shadow: 0 0 0 2px var(--yes); }
+.frame { padding: 0; border: 0; background: #000; cursor: zoom-in; display: block; width: 100%; aspect-ratio: 16/9; overflow: hidden; }
+.frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.frame:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.missing { color: #aaa; display: grid; place-items: center; height: 100%; font-size: 13px; }
+.head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.name { font-weight: 600; font-size: 1.05rem; }
+.iid { font-family: var(--mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+.fam { font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
+.card p { margin: 0; }
+.why, .risk { font-size: 13.5px; }
+.risk { color: var(--muted); }
+.card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+.card a { color: inherit; }
+audio { width: 100%; }
+.vote { display: flex; gap: 6px; }
+.vote button { flex: 1; font: 600 13px var(--body); padding: 7px 0; background: var(--bg); color: var(--fg); border: 1px solid var(--line); cursor: pointer; }
+.vote button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.vote button[aria-pressed="true"][data-v="yes"] { background: var(--yes); border-color: var(--yes); color: #fff; }
+.vote button[aria-pressed="true"][data-v="maybe"] { background: var(--maybe); border-color: var(--maybe); color: #fff; }
+.vote button[aria-pressed="true"][data-v="no"] { background: var(--no); border-color: var(--no); color: #fff; }
+.vote[data-off] button { cursor: default; opacity: .6; }
+.tally { font-size: 12px; color: var(--muted); min-height: 1.2em; }
+details summary { font-size: 12px; color: var(--muted); cursor: pointer; }
+details p { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; white-space: pre-wrap; }
+.note { display: block; margin-top: 18px; font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+textarea { width: 100%; max-width: 70ch; box-sizing: border-box; margin-top: 6px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); font: 14px var(--body); padding: 8px 10px; resize: vertical; }
+textarea:focus-visible { outline: 2px solid var(--accent); }
+.saved { font-size: 12px; color: var(--muted); margin-top: 6px; display: grid; gap: 2px; }
+dialog { border: 0; padding: 0; background: transparent; max-width: 96vw; }
+dialog::backdrop { background: rgba(0,0,0,.88); }
+dialog img { max-width: 96vw; max-height: 86vh; display: block; }
+dialog p { color: #eee; margin: 8px 0 0; font-size: 14px; }
+</style>
+
+<div class="wrap">
+  <h1><!--HEADING--></h1>
+  <p class="lede"><!--INTRO--></p>
+  <p class="status" id="status">Connecting to the shared picks…</p>
+  <nav aria-label="Sections"><a href="#story">The story</a><a href="#looks">Looks</a><a href="#sounds">Sounds</a><a href="#pair">Together</a></nav>
+<!--SECTIONS-->
+</div>
+<dialog id="lb"><img alt=""><p></p></dialog>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const lb = $('#lb');
+$$('.frame').forEach(b => b.addEventListener('click', () => {
+  const img = $('img', b); if (!img) return;
+  $('img', lb).src = img.src; $('p', lb).textContent = b.closest('.card').querySelector('.name').textContent;
+  lb.showModal();
+}));
+lb.addEventListener('click', () => lb.close());
+
+let me = null, db = null, user = null;
+const votes = new Map(), notes = new Map(), names = {};
+async function nameOf(ids) {
+  if (!user) return;
+  try { const ps = await user.profiles(ids); for (const id of ids) names[id] = (ps[id] && ps[id].name) || 'Someone'; } catch (e) {}
+}
+const label = uid => uid === me ? 'you' : (names[uid] || 'Someone');
+function renderVotes() {
+  $$('.card').forEach(card => {
+    const m = votes.get(card.dataset.id) || new Map();
+    $$('.vote button', card).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === m.get(me))));
+    $('.tally', card).textContent = [...m].map(([u, v]) => `${label(u)}: ${v === 'yes' ? 'this' : v}`).join(' · ');
+    card.classList.toggle('chosen', [...m.values()].includes('yes'));
+  });
+}
+function renderNotes() {
+  $$('.saved').forEach(el => {
+    const m = notes.get(el.dataset.for) || new Map();
+    el.replaceChildren(...[...m].filter(([u, t]) => t && u !== me).map(([u, t]) => { const d = document.createElement('div'); d.textContent = `${label(u)}: ${t}`; return d; }));
+  });
+}
+async function start() {
+  const status = $('#status');
+  try { db = await claude.use('db'); user = await claude.use('user'); } catch (e) {}
+  if (!db || !user) { status.textContent = 'Read-only here: sign in on claude.ai to vote.'; $$('.vote').forEach(v => v.setAttribute('data-off', '')); return; }
+  me = await user.id();
+  status.textContent = 'Live. Your votes and notes save as you go.';
+  db.collection('votes').onSnapshot(async snap => {
+    votes.clear(); const uids = new Set();
+    snap.docs.forEach(d => { const x = d.data() || {}; if (!x.iid || !x.by) return; uids.add(x.by);
+      if (!votes.has(x.iid)) votes.set(x.iid, new Map()); if (x.v) votes.get(x.iid).set(x.by, x.v); });
+    await nameOf([...uids]); renderVotes();
+  }, () => { status.textContent = 'Lost the connection to the shared picks. Reload to try again.'; });
+  db.collection('notes').onSnapshot(async snap => {
+    notes.clear(); const uids = new Set();
+    snap.docs.forEach(d => { const x = d.data() || {}; if (!x.scene || !x.by) return; uids.add(x.by);
+      if (!notes.has(x.scene)) notes.set(x.scene, new Map()); notes.get(x.scene).set(x.by, x.text || '');
+      if (x.by === me) { const ta = $(`#note-${x.scene}`); if (ta && document.activeElement !== ta) ta.value = x.text || ''; } });
+    await nameOf([...uids]); renderNotes();
+  });
+  $$('.vote button').forEach(b => b.addEventListener('click', async () => {
+    const iid = b.closest('.card').dataset.id, cur = votes.get(iid)?.get(me);
+    const v = cur === b.dataset.v ? null : b.dataset.v;
+    try { await db.collection('votes').doc(`${iid}__${me}`).set({ iid, by: me, v, at: Date.now() }); }
+    catch (e) { status.textContent = 'That vote did not save: ' + (e.message || e.code || 'unknown error'); }
+  }));
+  $$('textarea').forEach(ta => { let t; ta.addEventListener('input', () => { clearTimeout(t); t = setTimeout(async () => {
+    try { await db.collection('notes').doc(`${ta.dataset.scene}__${me}`).set({ scene: ta.dataset.scene, by: me, text: ta.value.slice(0, 2000), at: Date.now() }); }
+    catch (e) { status.textContent = 'That note did not save: ' + (e.message || e.code || 'unknown error'); }
+  }, 700); }); });
+}
+start();
+</script>

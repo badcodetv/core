@@ -13,7 +13,7 @@ how Veo and Nano Banana actually behave. It owns **no look at all**: there is no
 | Question | Answer lives in |
 | --- | --- |
 | ***What should this shot BE?*** — framing, depth, light design, angle, what it's for | **`shot-craft`** — the cinematography judgement layer. **Consult it BEFORE writing any prompt for a shot that hasn't been designed yet** |
-| *What should this story's stills and clips look like?* | **`docs/stories/<story>/look.md`** — read it before any prompt. Empty or exploring → `variations` |
+| *What should this story's stills and clips look like?* | **`docs/stories/<story>/look.md`** — read it before any prompt. Empty → `story-style`; exploring → `variations` |
 | *Options that are actually different?* | `variations` (separate writers + a sameness gate) |
 | *This story's prompt ledger and what got made* | `docs/stories/<story>/prompts.md`, the scene folders |
 | *How do I make Flow do what I asked?* | **here** |

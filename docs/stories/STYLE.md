@@ -20,9 +20,12 @@ everybody's. Design: [`design/2026-10-28-no-house-style.md`](../../design/2026-1
 `look.md` or `sound.md`.** That file is the only place a style may come from.
 
 - **The file says LOCKED for this part** → use it. Consistency inside a story is the point.
-- **The file is empty, or says EXPLORING** → do not invent a default. Run a variation round
-  (the `variations` skill): many genuinely different ideas, picked by Kai or Jack, and the pick
-  is written back here.
+- **The file is EMPTY** → do not invent a default. Run the `story-style` skill: an interview
+  about the story, then genuinely different looks and sounds (from a wide library, plus one
+  invented for this story) on a picking page; Kai or Jack picks, and the pick is written here.
+- **The file says EXPLORING** (a direction, no proven prompt yet) → a variation round (the
+  `variations` skill): many genuinely different prompts inside the direction, picked by Kai or
+  Jack, and the pick is written back here.
 - **A rule learned in one story** (a voice, a palette, a slider value) stays in that story's
   file. It goes into an engine manual (`docs/suno-gpt/`, `docs/flow/`, `docs/google-flow/`) only if
   it is a fact about how the engine behaves, written as a fact, never as "default to…".

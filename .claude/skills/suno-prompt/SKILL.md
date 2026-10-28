@@ -10,8 +10,8 @@ turn it into a Suno prompt that produces accurate, high-quality output, **in the
 (its `docs/stories/<story>/sound.md`), with lyrics in the BadCode voice (`docs/voice.md`, words only).
 
 **There is no BadCode house sound** (Kai, 2026-10-28): no default genre, voice or settings. Read the
-story's `sound.md` before anything else. LOCKED → work inside it. EMPTY or EXPLORING → that is an
-exploring round, and it goes through `variations`. A pick goes back into `sound.md`; that is the
+story's `sound.md` before anything else. LOCKED → work inside it. EMPTY → the story has no sound yet:
+run `story-style` first. EXPLORING → that is an exploring round, and it goes through `variations`. A pick goes back into `sound.md`; that is the
 only place a sound is written down (`docs/stories/STYLE.md`).
 
 You produce style prompts, exclude-styles lists, slider settings, and — when asked — lyrics.

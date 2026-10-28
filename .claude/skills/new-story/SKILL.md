@@ -1,6 +1,6 @@
 ---
 name: new-story
-description: Use when starting, capturing, or developing a BadCode story — scaffolds docs/stories/<story>/ (concept, characters, beats, song) as the single source of truth and drives idea → media. Triggers on "new story", "capture this story", "let's develop <story>", "write the canon for <story>", or working on camping / Karen Will Lead the Revolution / The Magic Money Tree / GitPush Origin Master.
+description: Use when starting, capturing, or developing a BadCode story — scaffolds docs/stories/<story>/ (concept, characters, beats, its own look and sound via story-style, song) as the single source of truth and drives idea → media. Triggers on "new story", "capture this story", "let's develop <story>", "write the canon for <story>", or working on camping / Karen Will Lead the Revolution / The Magic Money Tree / GitPush Origin Master.
 ---
 
 # New Story (BadCode)
@@ -55,7 +55,7 @@ Frontmatter is light and is the subset machine artifacts need:
 
 **There is no house style** (Kai, 2026-10-28). A new story's `look.md` and `sound.md` start EMPTY
 from the templates in `docs/stories/STYLE.md`. Never seed them from another story: a new story's
-look and sound are found by a `variations` round and written back when picked.
+look and sound are found by the **`story-style`** skill (step 4) and written back when picked.
 
 ## Workflow
 
@@ -67,18 +67,21 @@ look and sound are found by a `variations` round and written back when picked.
    **characters**, then **high-level beats**. For an *existing* story, reverse-
    engineer from current material (comic scenes in `comic.meta.ts`, existing
    lyrics) rather than inventing.
-4. **Song.** If `sound.md` is EMPTY, the first takes are a `variations` round (no genre is assumed);
-   otherwise invoke the **`suno-prompt`** skill to produce the style prompt,
+4. **Look and sound.** Once the spine and beats hold, run the **`story-style`** skill: an interview
+   about the story, then genuinely different looks and sounds on a picking page, and the picks
+   written into `look.md` and `sound.md`. Say you are handing off to it. Nothing visual or musical
+   is made before this (a story's identity is decided once, deliberately, not by the first prompt).
+5. **Song.** With `sound.md` filled in, invoke the **`suno-prompt`** skill to produce the style prompt,
    exclude list, and (on request) lyrics inside the story's sound; write the result to `songs/<slug>.md`
    with frontmatter. Say you are handing off to `suno-prompt`.
-5. **Derive `comic.meta.ts`** from the canon **only on request** — read the story
+6. **Derive `comic.meta.ts`** from the canon **only on request** — read the story
    + character files and write/update `apps/web/src/comics/<story>/comic.meta.ts`
    (style, characters with `sheet`/`description`, per-asset scenes). The canon is
    the source; `comic.meta.ts` is the artifact. Keep slide work out of scope
    unless asked.
-6. **Maintain `README.md`** — the index and the production tracker (medium ×
+7. **Maintain `README.md`** — the index and the production tracker (medium ×
    status), so the folder stays self-describing.
-7. **The overview board** (Kai, 2026-10-23; the **`overview-board`** skill runs it). Once a story is
+8. **The overview board** (Kai, 2026-10-23; the **`overview-board`** skill runs it). Once a story is
    headed for film, lay out its skeleton there; at the latest when it has its first timeline page,
    it gets an overview board: `timelines.json` lists the film start to end, each scene or sequence with
    its state, its current timeline page and every earlier page. Build it with

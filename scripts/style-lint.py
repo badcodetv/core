@@ -10,6 +10,9 @@ Checks (exit 1 on any hit):
   CLAUDE.md                                  every line
   the memory index (MEMORY.md)               every line
   .claude/skills/*/SKILL.md, .claude/agents/*.md   the description: line only
+  any skill body but story-style, any agent, CLAUDE.md outside its repo-map row, the memory index
+                                             a pointer to docs/style-library/ (only the
+                                             story-style interview may read the menu)
 Warns (exit 0): the memory files themselves, which load when recalled.
 
 Usage: python3 scripts/style-lint.py [--memory <dir>]
@@ -54,11 +57,32 @@ def description(path):
     return [(n, l) for n, l in numbered(path) if l.startswith("description:")][:1]
 
 
+LIBRARY = re.compile(r"style-library")
+
+
+def library_pointers(mem):
+    """Only story-style may send a session to the library; anywhere else it becomes a menu every
+    story picks from, which is a house style again."""
+    hits = []
+    files = [f for f in sorted((ROOT / ".claude" / "skills").glob("*/SKILL.md")) if f.parent.name != "story-style"]
+    files += sorted((ROOT / ".claude" / "agents").glob("*.md"))
+    for f in files:
+        hits += [f"🔴 {f.relative_to(ROOT)}:{n}  points at the style library  {l.strip()[:90]}"
+                 for n, l in numbered(f) if LIBRARY.search(l)]
+    for n, l in numbered(ROOT / "CLAUDE.md"):
+        if LIBRARY.search(l) and not l.startswith("| `docs/style-library/` |"):
+            hits.append(f"🔴 CLAUDE.md:{n}  points at the style library outside its repo-map row")
+    if (mem / "MEMORY.md").exists():
+        hits += [f"🔴 MEMORY.md:{n}  points at the style library" for n, l in numbered(mem / "MEMORY.md") if LIBRARY.search(l)]
+    return hits
+
+
 def main():
     fails = scan(ROOT / "CLAUDE.md", numbered(ROOT / "CLAUDE.md"), "🔴")
     for f in sorted((ROOT / ".claude" / "skills").glob("*/SKILL.md")) + sorted((ROOT / ".claude" / "agents").glob("*.md")):
         fails += scan(f, description(f), "🔴")
     mem = memory_dir()
+    fails += library_pointers(mem)
     warns = []
     if (mem / "MEMORY.md").exists():
         fails += scan(mem / "MEMORY.md", numbered(mem / "MEMORY.md"), "🔴")

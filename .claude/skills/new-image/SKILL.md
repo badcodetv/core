@@ -13,8 +13,9 @@ padding the subject into a fully art-directed prompt before a single pixel is ge
 **First, find the story and read its `look.md`.**
 - **LOCKED** (for this part) → its preamble, rules, anchors and cast are the look. Look at its anchor
   images before your first generation of a session.
-- **EMPTY or EXPLORING** → there is no default. Propose genuinely different looks (variety mode below),
-  run them as a `variations` round (`kind` = `flow`), and write the pick back into `look.md`.
+- **EMPTY** → the story has no look yet: run `story-style` first (it finds the look for the whole story).
+- **EXPLORING** → there is no default. Propose genuinely different looks inside its direction (variety
+  mode below), run them as a `variations` round (`kind` = `flow`), and write the pick back into `look.md`.
 - **A brand image** (not part of any story) → ask which story's world it shows; if none, it is an
   exploring round like any other. The logo is the only BadCode-wide visual (`docs/brand/`).
 

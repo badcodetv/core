@@ -19,7 +19,8 @@ a prompt is a step where the round converges again.
 
 | Situation | Use |
 | --- | --- |
-| The story's `look.md` / `sound.md` is EMPTY or EXPLORING for this part | **this skill, `explore`** |
+| The story's `look.md` / `sound.md` is EMPTY (no look or sound at all) | not this skill first: `story-style` finds the direction (it then uses this skill for its test stills) |
+| The story's `look.md` / `sound.md` is EXPLORING for this part | **this skill, `explore`** |
 | "try different voices / looks", "it all sounds the same" | **this skill** |
 | A liked take, change only one thing (the voice, the light) | **this skill, REFINE** (`keep.txt`) |
 | The part is LOCKED and you're making the next shot or scene in it | not this skill: write from the story file (`new-image`, `suno-prompt`) |

@@ -15,7 +15,7 @@ folder layout and `scene.json`.
 - **`shot-craft`**: what each shot should *be*, the visible-cost gate on monumental shots, darkness that reads as depth.
 - **`flow-prompt`**: how Nano Banana behaves, and the policy blocks.
 - **`flow-automation`**: driving the browser and recovering from failures.
-- **The story's `look.md`** (`docs/stories/STYLE.md`): the only source of a look. LOCKED → every option sits inside it, plus at least one deliberate break. EMPTY or EXPLORING → the board is how the look gets found: run the options as a `variations` round (`kind` = `flow`), and write the pick back into `look.md`.
+- **The story's `look.md`** (`docs/stories/STYLE.md`): the only source of a look. LOCKED → every option sits inside it, plus at least one deliberate break. EMPTY → run `story-style` first (the story's look is found once, for the whole story). EXPLORING → the board is how the look gets settled: run the options as a `variations` round (`kind` = `flow`), and write the pick back into `look.md`.
 - **`new-image`**: variety mode, casting, and the plan → critique → generate loop.
 
 ## The mood board
