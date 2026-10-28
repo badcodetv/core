@@ -1,0 +1,314 @@
+<title>The Shortlist Room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Archivo:wght@400;500;700;800&display=swap">
+<style>
+  /* Deliberately single-theme, like its sibling board: photographs read true on a dark ground. */
+  :root {
+    --ground: #0f1210;
+    --table: #171b18;
+    --edge: #2a302b;
+    --ink: #dde2d8;
+    --dim: #8b948a;
+    --phosphor: #86e07f;
+    --sodium: #e2a85a;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --gutter: clamp(16px, 3vw, 40px);
+    color-scheme: dark;
+  }
+  html { background: var(--ground); }
+  body {
+    background: var(--ground); color: var(--ink); font-family: var(--sans);
+    font-size: 15px; line-height: 1.5; margin: 0;
+    padding-inline: var(--gutter); padding-block: 0 96px;
+  }
+
+  header.top { padding-block: 36px 18px; display: grid; gap: 10px; max-width: 70ch; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--phosphor); }
+  h1 { font-size: clamp(30px, 5vw, 50px); font-weight: 800; letter-spacing: -.02em; line-height: 1; margin: 0; text-wrap: balance; }
+  .lede { color: var(--dim); margin: 0; }
+  .lede b { color: var(--ink); font-weight: 600; }
+  .status { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+
+  .bar {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+    background: color-mix(in srgb, var(--ground) 93%, transparent); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--edge);
+    margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); padding-block: 10px;
+    display: flex; gap: 14px 18px; align-items: center; flex-wrap: wrap;
+  }
+  .meter { font-family: var(--mono); font-size: 13px; color: var(--dim); font-variant-numeric: tabular-nums; }
+  .meter b { color: var(--phosphor); font-weight: 600; }
+  .meter .star { color: var(--sodium); }
+  .filters { display: flex; gap: 6px; flex-wrap: wrap; }
+  .filters button { font: 500 12px var(--mono); background: transparent; color: var(--dim); border: 1px solid var(--edge); border-radius: 3px; padding: 5px 10px; cursor: pointer; }
+  .filters button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .filters button[aria-pressed="true"] { color: var(--ground); background: var(--ink); border-color: var(--ink); }
+
+  nav.jump { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin; padding-block: 12px 0; }
+  nav.jump a { font-family: var(--mono); font-size: 12px; white-space: nowrap; text-decoration: none; padding: 5px 9px; border: 1px solid var(--edge); border-radius: 3px; color: var(--dim); }
+  nav.jump a:hover, nav.jump a:focus-visible { color: var(--ink); border-color: var(--dim); outline: none; }
+  nav.jump a .k { color: var(--phosphor); margin-left: 6px; }
+
+  section.block { padding-block: 40px 4px; border-bottom: 1px solid var(--edge); scroll-margin-top: 72px; }
+  .block-head { display: grid; gap: 4px; margin-bottom: 18px; max-width: 80ch; }
+  .block-head .tag { font-family: var(--mono); font-size: 12px; color: var(--dim); letter-spacing: .08em; text-transform: uppercase; }
+  .block-head .tag em { color: var(--phosphor); font-style: normal; }
+  .block-head h2 { margin: 0; font-size: clamp(21px, 2.6vw, 29px); font-weight: 700; letter-spacing: -.01em; text-wrap: balance; }
+  .block-head p { margin: 0; color: var(--dim); }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 18px; }
+  @media (max-width: 720px) { .cards { grid-template-columns: minmax(0, 1fr); } }
+
+  article.card { background: var(--table); border: 1px solid var(--edge); border-radius: 3px; overflow: hidden; display: grid; grid-template-rows: auto auto 1fr; }
+  article.card[data-star="1"] { border-color: var(--sodium); }
+  .frame { aspect-ratio: 1376 / 768; background: #0a0c0b; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+  .meta { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 9px 11px 3px; flex-wrap: wrap; }
+  .key { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+  .key .maybe { color: var(--sodium); }
+  .shot-title { font-size: 13px; color: var(--ink); font-weight: 600; }
+  .job { padding: 0 11px; margin: 0 0 8px; font-size: 13px; color: var(--dim); }
+  details.prompt { padding: 0 11px 8px; }
+  details.prompt summary { cursor: pointer; font-family: var(--mono); font-size: 12px; color: var(--dim); list-style: none; }
+  details.prompt summary::-webkit-details-marker { display: none; }
+  details.prompt summary::before { content: "+ "; color: var(--phosphor); }
+  details.prompt[open] summary::before { content: "\2212 "; }
+  details.prompt p { margin: 6px 0 0; font-size: 12.5px; color: var(--dim); }
+
+  .say { display: grid; gap: 7px; padding: 0 11px 11px; align-content: start; }
+  .say label { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); }
+  .say textarea {
+    width: 100%; box-sizing: border-box; min-height: 74px; resize: vertical;
+    background: var(--ground); color: var(--ink); border: 1px solid var(--edge);
+    border-radius: 3px; padding: 8px 9px; font: 14px/1.45 var(--sans);
+  }
+  .say textarea:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 0; border-color: var(--phosphor); }
+  .say textarea:disabled { opacity: .5; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .star-btn { font: 600 12px var(--mono); background: transparent; border: 1px solid var(--edge); color: var(--dim); padding: 5px 10px; border-radius: 3px; cursor: pointer; }
+  .star-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .star-btn[aria-pressed="true"] { background: var(--sodium); border-color: var(--sodium); color: var(--ground); }
+  .star-btn:disabled { opacity: .4; cursor: default; }
+  .saved { font-family: var(--mono); font-size: 11px; color: var(--phosphor); opacity: 0; }
+  .saved[data-on="1"] { opacity: 1; }
+  @media (prefers-reduced-motion: no-preference) { .saved { transition: opacity .25s; } article.card { transition: border-color .15s; } }
+
+  dialog.lb { padding: 0; border: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
+  dialog.lb::backdrop { background: rgba(4, 6, 5, .93); }
+  dialog.lb img { max-width: 96vw; max-height: 86vh; display: block; }
+  dialog.lb p { font-family: var(--mono); font-size: 12px; color: var(--dim); margin: 8px 0 0; text-align: center; max-width: 96vw; }
+  .empty { color: var(--dim); font-family: var(--mono); font-size: 13px; padding-block: 40px; }
+</style>
+
+<header class="top">
+  <div class="eyebrow">GPOM &middot; the gaze &middot; shortlist</div>
+  <h1>What survived the cut</h1>
+  <p class="lede">Every still Kai marked <b>keep</b> or <b>maybe</b> on the option board, hoisted into one room and put back in cut order. Say what you want captured in each one &mdash; the mood, the detail, the thing it is really doing &mdash; and the notes become the shot proposal. Star the ones that <b>must</b> be in the film.</p>
+  <div class="status" id="status">Connecting&hellip;</div>
+</header>
+
+<div class="bar">
+  <div class="meter" id="meter"></div>
+  <div class="filters" role="group" aria-label="Show">
+    <button type="button" id="flt-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="flt-todo" data-f="todo" aria-pressed="false">No note yet</button>
+    <button type="button" id="flt-done" data-f="done" aria-pressed="false">Noted</button>
+    <button type="button" id="flt-star" data-f="star" aria-pressed="false">Starred</button>
+  </div>
+</div>
+
+<nav class="jump" id="jump" aria-label="Blocks"></nav>
+<main id="main"></main>
+
+<dialog class="lb" id="lb">
+  <form method="dialog"><button type="submit" style="position:absolute;left:-9999px">Close</button></form>
+  <img id="lb-img" alt="">
+  <p id="lb-cap"></p>
+</dialog>
+
+<script>
+const DATA = /*DATA*/null;
+const $ = s => document.querySelector(s);
+const notes = {};          // key -> {text, star}
+const fields = {};         // key -> {card, textarea, star, saved}
+let db = null, filter = "all";
+
+function el(tag, attrs, kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "text") n.textContent = v;
+    else if (v !== null && v !== undefined) n.setAttribute(k, v);
+  }
+  for (const c of kids || []) n.append(c);
+  return n;
+}
+
+function card(it) {
+  const a = el("article", { class: "card", id: "c-" + it.key, "data-star": "0" });
+
+  const frame = el("div", { class: "frame" });
+  const img = el("img", { src: it.src, alt: it.title + ", still " + it.key, loading: "lazy" });
+  img.addEventListener("click", () => {
+    $("#lb-img").src = it.src;
+    $("#lb-cap").textContent = it.key + " · " + it.title;
+    $("#lb").showModal();
+  });
+  frame.append(img);
+  a.append(frame);
+
+  a.append(el("div", { class: "meta" }, [
+    el("span", { class: "shot-title", text: it.title }),
+    el("span", { class: "key" }, [
+      document.createTextNode(it.key),
+      it.v === "maybe" ? el("span", { class: "maybe", text: " · maybe" }) : document.createTextNode("")
+    ])
+  ]));
+  if (it.job) a.append(el("p", { class: "job", text: it.job }));
+  a.append(el("details", { class: "prompt" }, [
+    el("summary", { text: "What was asked for" }),
+    el("p", { text: it.prompt })
+  ]));
+
+  const say = el("div", { class: "say" });
+  const ta = el("textarea", { id: "n-" + it.key, placeholder: "What should this shot capture?", rows: "3" });
+  say.append(el("label", { for: "n-" + it.key, text: "Your note" }), ta);
+  const star = el("button", { type: "button", class: "star-btn", id: "s-" + it.key, "aria-pressed": "false", text: "★ must be in the cut" });
+  const saved = el("span", { class: "saved", text: "saved" });
+  say.append(el("div", { class: "row" }, [star, saved]));
+  a.append(say);
+
+  let timer = null;
+  const push = () => { save(it.key, { text: ta.value.slice(0, 1200), star: notes[it.key]?.star ? 1 : 0 }); };
+  ta.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(push, 700); tally(); });
+  ta.addEventListener("blur", () => { clearTimeout(timer); push(); });
+  star.addEventListener("click", () => {
+    const on = !(notes[it.key]?.star);
+    notes[it.key] = { text: ta.value, star: on ? 1 : 0 };
+    paint(it.key); tally();
+    save(it.key, { text: ta.value.slice(0, 1200), star: on ? 1 : 0 });
+  });
+
+  fields[it.key] = { card: a, ta, star, saved };
+  return a;
+}
+
+function paint(key) {
+  const f = fields[key]; if (!f) return;
+  const on = notes[key]?.star ? "1" : "0";
+  f.card.dataset.star = on;
+  f.star.setAttribute("aria-pressed", on === "1" ? "true" : "false");
+}
+
+function flash(key) {
+  const f = fields[key]; if (!f) return;
+  f.saved.dataset.on = "1";
+  setTimeout(() => { f.saved.dataset.on = "0"; }, 1400);
+}
+
+async function save(key, body) {
+  if (!db) return;
+  const has = (body.text && body.text.trim()) || body.star;
+  try {
+    if (has) await db.doc("notes/" + key).set({ text: body.text || "", star: body.star || 0, at: new Date().toISOString() });
+    else await db.doc("notes/" + key).delete();
+    flash(key);
+  } catch (e) {
+    $("#status").textContent = "Couldn't save that note (" + (e && e.code ? e.code : "error") + "). A view-only link can't write.";
+  }
+}
+
+function has(key) { const n = notes[key]; return !!(n && ((n.text && n.text.trim()) || n.star)); }
+
+function apply() {
+  let shown = 0;
+  for (const g of DATA.groups) {
+    let any = 0;
+    for (const it of g.items) {
+      const f = fields[it.key]; if (!f) continue;
+      const n = notes[it.key] || {};
+      const noted = (n.text && n.text.trim()) ? 1 : 0;
+      const ok = filter === "all" || (filter === "todo" && !noted) ||
+                 (filter === "done" && noted) || (filter === "star" && n.star);
+      f.card.hidden = !ok;
+      if (ok) { any++; shown++; }
+    }
+    const sec = document.getElementById("b-" + g.id);
+    if (sec) sec.hidden = !any;
+  }
+  $("#empty").hidden = shown > 0;
+}
+
+function tally() {
+  let noted = 0, starred = 0;
+  for (const g of DATA.groups) for (const it of g.items) {
+    const f = fields[it.key];
+    if (f && f.ta.value.trim()) noted++;
+    if (notes[it.key]?.star) starred++;
+  }
+  $("#meter").innerHTML = "";
+  $("#meter").append(
+    el("span", {}, [el("b", { text: String(noted) }), document.createTextNode(" of " + DATA.total + " noted")]),
+    document.createTextNode("  ·  "),
+    el("span", { class: "star", text: starred + " starred" })
+  );
+}
+
+function render() {
+  const main = $("#main"), jump = $("#jump");
+  DATA.groups.forEach((g, i) => {
+    g.id = "g" + i;
+    jump.append(el("a", { href: "#b-" + g.id }, [
+      document.createTextNode(g.name),
+      el("span", { class: "k", text: String(g.items.length) })
+    ]));
+    const sec = el("section", { class: "block", id: "b-" + g.id });
+    sec.append(el("div", { class: "block-head" }, [
+      el("div", { class: "tag" }, [el("em", { text: "Block " + g.block }), document.createTextNode(" · " + g.items.length + " stills")]),
+      el("h2", { text: g.name }),
+      el("p", { text: g.note })
+    ]));
+    const cards = el("div", { class: "cards" });
+    for (const it of g.items) cards.append(card(it));
+    sec.append(cards);
+    main.append(sec);
+  });
+  main.append(el("p", { class: "empty", id: "empty", hidden: "", text: "Nothing matches this filter." }));
+}
+
+for (const b of document.querySelectorAll(".filters button")) {
+  b.addEventListener("click", () => {
+    filter = b.dataset.f;
+    for (const o of document.querySelectorAll(".filters button")) o.setAttribute("aria-pressed", String(o === b));
+    apply();
+  });
+}
+
+render();
+tally();
+apply();
+
+(async () => {
+  const c = window.claude;
+  db = c && c.use ? await c.use("db") : null;
+  if (!db) {
+    $("#status").textContent = "Notes can't be saved in this view — open the page on claude.ai to write.";
+    for (const k of Object.keys(fields)) { fields[k].ta.disabled = true; fields[k].star.disabled = true; }
+    return;
+  }
+  $("#status").textContent = "Notes save as you type, for everyone who opens this page.";
+  db.collection("notes").onSnapshot(snap => {
+    for (const k of Object.keys(notes)) delete notes[k];
+    for (const d of snap.docs) { const x = d.data() || {}; notes[d.id] = { text: x.text || "", star: x.star ? 1 : 0 }; }
+    for (const k of Object.keys(fields)) {
+      const f = fields[k], n = notes[k] || { text: "", star: 0 };
+      if (document.activeElement !== f.ta && f.ta.value !== n.text) f.ta.value = n.text;
+      paint(k);
+    }
+    tally(); apply();
+  }, err => {
+    $("#status").textContent = "Lost the connection to saved notes (" + (err && err.code ? err.code : "error") + ").";
+  });
+})();
+</script>

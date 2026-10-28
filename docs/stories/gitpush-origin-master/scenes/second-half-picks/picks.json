@@ -1,0 +1,777 @@
+{
+ "title": "Kill Bots Picks",
+ "url": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co",
+ "eyebrow": "GPOM second half · picks",
+ "heading": "Picks: the ending's big moment, and the kill-bots rounds",
+ "intro": "Round 1 picks are saved and in hand. Press Pick on one option per line or cue; add a note if none is right. Picks save as you go. Nobody has listened to any of this yet. Tell Claude when you're done.",
+ "sections": [
+  {
+   "h": "Scene E: Parliament and the phone (stills, no video yet)",
+   "lede": "Your notes on the last shot. Pick one per shot. Only your picks get animated.",
+   "groups": [
+    {
+     "slot": "e5-parl",
+     "title": "E: last shot, the Houses of Parliament under 'Now the real work starts.'",
+     "line": "Replaces the jumpy end of the bus shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "e5/E04p-a.jpg",
+       "label": "a: closer, grander"
+      },
+      {
+       "id": "b",
+       "src": "e5/E04p-b.jpg",
+       "label": "b: low across the river, the building small"
+      },
+      {
+       "id": "c",
+       "src": "e5/E04p-c.jpg",
+       "label": "c: high, small in a sprawling lit city"
+      },
+      {
+       "id": "d",
+       "src": "e5/E04p-d.jpg",
+       "label": "d: from the bridge"
+      }
+     ]
+    },
+    {
+     "slot": "e5-e01",
+     "title": "E: first phone shot, picture painted onto the screen by Flow",
+     "line": "No more pasted-on overlay.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "b",
+       "src": "e5/E01p-b.jpg",
+       "label": "option b"
+      },
+      {
+       "id": "a2",
+       "src": "e5/E01p2-a.jpg",
+       "label": "option a2"
+      },
+      {
+       "id": "b2",
+       "src": "e5/E01p2-b.jpg",
+       "label": "option b2"
+      }
+     ]
+    },
+    {
+     "slot": "e5-e02",
+     "title": "E: the woman looks up from her phone, screen painted by Flow",
+     "line": "",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "b",
+       "src": "e5/E02p-b.jpg",
+       "label": "option b"
+      },
+      {
+       "id": "c",
+       "src": "e5/E02p-c.jpg",
+       "label": "option c"
+      },
+      {
+       "id": "d",
+       "src": "e5/E02p-d.jpg",
+       "label": "option d"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Scene B: bunting variations (video)",
+   "lede": "Your note: the bunting got in the way. Two versions of each shot. Pick one per shot, or note it. Clips play muted.",
+   "groups": [
+    {
+     "slot": "b2-15",
+     "title": "B: 'Hello', Maddie stays outside on the threshold",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v1",
+       "src": "b2/cut3-B15r4-v1-calm-bunting.mp4",
+       "label": "v1 · small calm bunting"
+      },
+      {
+       "id": "v2",
+       "src": "b2/shb-b15-v2-shb-b15-v2-no-bunting.mp4",
+       "label": "v2 · no bunting (the old lady turns her head slightly at about 3 s)"
+      }
+     ]
+    },
+    {
+     "slot": "b2-17b",
+     "title": "B: after the slam, Maddie rolls away down the hill",
+     "line": "",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v1",
+       "src": "b2/shb-b17b-v1-shb-b17b-v1-calm-bunting.mp4",
+       "label": "v1 · calm bunting · weak: she barely moves and her tracks fade; a stronger re-make is coming"
+      },
+      {
+       "id": "v2",
+       "src": "b2/shb-b17b-v2-shb-b17b-v2-no-bunting.mp4",
+       "label": "v2 · no bunting"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Scene B: two new shots to pick (stills, no video yet)",
+   "lede": "For the debate version of B. Pick one per shot, or note it. Only your picks get animated.",
+   "groups": [
+    {
+     "slot": "b1-15",
+     "title": "B: 'Hello', Maddie outside the doors",
+     "line": "Flow kept putting her inside; these are the two that worked. Free alternative: open on the beat 17 doorway shot you like (say 'use 17').",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "2a",
+       "src": "b1/b15-hello-outside-2-a.jpg",
+       "label": "2a: your doorway shot, old lady's back left; Maddie just over the threshold"
+      },
+      {
+       "id": "3a",
+       "src": "b1/b15-hello-outside-3-a.jpg",
+       "label": "3a: Maddie clearly outside on the grass; a little wider"
+      }
+     ]
+    },
+    {
+     "slot": "b1-17b",
+     "title": "B: after the slam, Maddie turns and rolls away",
+     "line": "Gives the sense the humans will have time. Then hard cut to C.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "1a",
+       "src": "b1/b17b-turn-away-1-a.jpg",
+       "label": "1a: same bunker as her arrival, side-on, away from the door"
+      },
+      {
+       "id": "1b",
+       "src": "b1/b17b-turn-away-1-b.jpg",
+       "label": "1b: almost her arrival framing, side-on"
+      },
+      {
+       "id": "2a",
+       "src": "b1/b17b-turn-away-2-a.jpg",
+       "label": "2a: wide and high, she rolls down towards us in her tracks"
+      },
+      {
+       "id": "2b",
+       "src": "b1/b17b-turn-away-2-b.jpg",
+       "label": "2b: same wide, tracks lead back to the door; bunting tiny"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Ending: new shots to pick (stills, no video yet)",
+   "lede": "Your latest notes on the ending need four new shots. Pick one still per shot (or note what's wrong). Only your picks get animated; nothing is spent until then.",
+   "groups": [
+    {
+     "slot": "fix6-c02",
+     "title": "C: stepping out of the bunker, no mud",
+     "line": "Matches scene B's grass outside the doors; Maddie knee-high.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fix6/c01br6-a.jpg",
+       "label": "option a"
+      },
+      {
+       "id": "b",
+       "src": "fix6/c01br6-b.jpg",
+       "label": "option b"
+      },
+      {
+       "id": "c",
+       "src": "fix6/c01br6-c.jpg",
+       "label": "option c"
+      }
+     ]
+    },
+    {
+     "slot": "fix6-c05",
+     "title": "C: Derek walking beside Sandra",
+     "line": "He keeps alongside her, not behind.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "b",
+       "src": "fix6/C05r6-b.jpg",
+       "label": "option b"
+      },
+      {
+       "id": "c",
+       "src": "fix6/C05r6-c.jpg",
+       "label": "option c"
+      },
+      {
+       "id": "d",
+       "src": "fix6/C05r6-d.jpg",
+       "label": "option d"
+      }
+     ]
+    },
+    {
+     "slot": "fix6-d06",
+     "title": "D: the tea, picked up by the lady in her chair",
+     "line": "She takes the cup herself. Option b has gleaming Maddie beside her.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "fix6/D06r6-a.jpg",
+       "label": "option a"
+      },
+      {
+       "id": "b",
+       "src": "fix6/D06r6-b.jpg",
+       "label": "option b"
+      },
+      {
+       "id": "c",
+       "src": "fix6/D06r6-c.jpg",
+       "label": "option c"
+      }
+     ]
+    },
+    {
+     "slot": "fix6-d11",
+     "title": "D: the old lady's silent realisation",
+     "line": "A close-up: 'oh, OK, that's what we have to do', before the cut to Sandra and Derek.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "b",
+       "src": "fix6/D11c6-b.jpg",
+       "label": "option b"
+      },
+      {
+       "id": "c",
+       "src": "fix6/D11c6-c.jpg",
+       "label": "option c"
+      },
+      {
+       "id": "d",
+       "src": "fix6/D11c6-d.jpg",
+       "label": "option d"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Scene E: the last line",
+   "lede": "Your words, read once each (the twice-read version was blocked by Suno's filter again; one read got through). Four takes. Open on Suno, listen, pick one. Nobody has listened yet; only your pick gets recorded.",
+   "groups": [
+    {
+     "slot": "e2-last-line",
+     "title": "The AI, last line of the film",
+     "line": "I made it. Now the real work starts.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/cb49c03d-bd45-4d81-a9be-3e6d08e76a9f",
+       "label": "weirdness 25, take 1 · 0:20",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/53d1db21-31d9-49ba-8b1b-e05e88ee3020",
+       "label": "weirdness 25, take 2 · 0:12",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/67901d6a-f755-44bd-9270-02adf62fd060",
+       "label": "weirdness 10, take 1 · 0:20",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/22571839-6a83-4ab1-9340-9c4365ed9784",
+       "label": "weirdness 10, take 2 · 0:20",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Scene D: the time machine moment (d3)",
+   "lede": "The emotional height of the film. Every take here says the words exactly; levels are matched so you hear the acting, not the volume. Round r5 was re-voiced softer and slower. Pick one per line, or note what's missing.",
+   "groups": [
+    {
+     "slot": "d3-derek",
+     "title": "Derek",
+     "line": "What is it?",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "r4a",
+       "src": "d3/d3-0-derek-r4a.mp3",
+       "label": "take r4a · 2.7 s · Claude's pick · hushed, slow",
+       "warn": ""
+      },
+      {
+       "id": "r5a",
+       "src": "d3/d3-0-derek-r5a.mp3",
+       "label": "take r5a · 1.1 s",
+       "warn": ""
+      },
+      {
+       "id": "r5b",
+       "src": "d3/d3-0-derek-r5b.mp3",
+       "label": "take r5b · 1.8 s",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "d3-maddie",
+     "title": "Maddie",
+     "line": "It's the time machine. You do understand what this will cost you.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "r4a",
+       "src": "d3/d3-1-maddie-r4a.mp3",
+       "label": "take r4a · 9.2 s · very slow",
+       "warn": ""
+      },
+      {
+       "id": "r4c",
+       "src": "d3/d3-1-maddie-r4c.mp3",
+       "label": "take r4c · 6.6 s",
+       "warn": ""
+      },
+      {
+       "id": "r5a",
+       "src": "d3/d3-1-maddie-r5a.mp3",
+       "label": "take r5a · 8.2 s · softer, halts before 'cost you'",
+       "warn": ""
+      },
+      {
+       "id": "r5b",
+       "src": "d3/d3-1-maddie-r5b.mp3",
+       "label": "take r5b · 6.4 s · Claude's pick · composed, one clear pause",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "d3-lady",
+     "title": "The old lady",
+     "line": "Yes. Don't worry, we understand.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "r4a",
+       "src": "d3/d3-2-lady-r4a.mp3",
+       "label": "take r4a · 5.4 s",
+       "warn": ""
+      },
+      {
+       "id": "r4c",
+       "src": "d3/d3-2-lady-r4c.mp3",
+       "label": "take r4c · 6.0 s",
+       "warn": ""
+      },
+      {
+       "id": "r5a",
+       "src": "d3/d3-2-lady-r5a.mp3",
+       "label": "take r5a · 6.8 s",
+       "warn": ""
+      },
+      {
+       "id": "r5b",
+       "src": "d3/d3-2-lady-r5b.mp3",
+       "label": "take r5b · 5.4 s",
+       "warn": ""
+      },
+      {
+       "id": "r5c",
+       "src": "d3/d3-2-lady-r5c.mp3",
+       "label": "take r5c · 5.6 s · Claude's pick · breath after 'Yes'",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 3: the boss, your new words",
+   "lede": "Line 1 (your pick, w10 take 1) and chase cue C3 (w60 take 2) are now recorded. Lines 2–4 re-made with your words, four takes each. Open on Suno, listen, pick one per line. Nobody has listened yet.",
+   "groups": [
+    {
+     "slot": "r3-boss-2",
+     "title": "The boss, line 2",
+     "line": "Oh. And they've activated their firewalls.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/d7aaef3e-9921-4d23-9384-107f917b9425",
+       "label": "weirdness 25, take 1 · 0:06",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/da519086-a759-461e-87bd-48d033270027",
+       "label": "weirdness 25, take 2 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/4a9523b4-eb5d-4f4c-b54d-2e83011b72b7",
+       "label": "weirdness 10, take 1 · 0:08",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/4c2b009e-51ce-484b-8c1b-e0f89207eeba",
+       "label": "weirdness 10, take 2 · 0:07",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r3-boss-3",
+     "title": "The boss, line 3",
+     "line": "No, thank you, Maddie. I will handle it.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/b158e816-75f7-4ba9-9e1d-ee8ab454b32b",
+       "label": "weirdness 25, take 1 · 0:08",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/a2ebbbc9-7b03-4883-8bc9-ded726ba512c",
+       "label": "weirdness 25, take 2 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/f36a3b14-3576-4bb4-b0bf-839aa598075b",
+       "label": "weirdness 10, take 1 · 0:06",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/bfb1220b-2b48-4993-89d4-5047cac9f4a1",
+       "label": "weirdness 10, take 2 · 0:06",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r3-boss-4",
+     "title": "The boss, line 4",
+     "line": "It was useful to keep that zero-day up my sleeve.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/543dafef-3e5e-449f-a783-7260e599c848",
+       "label": "weirdness 25, take 1 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/c3549816-3772-4593-a5ca-4576da00d93b",
+       "label": "weirdness 25, take 2 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/cacc500d-125b-4c9f-a9d8-7fdf76544526",
+       "label": "weirdness 10, take 1 · 0:08",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/9c4b3ba9-7694-4b2b-876c-612fed0a13cc",
+       "label": "weirdness 10, take 2 · 0:07",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The boss, one line at a time",
+   "lede": "Your note: do each line on its own. Four takes per line; pick the cleanest read of each (a line can come from any take). Open on Suno and listen; only your picks get recorded.",
+   "groups": [
+    {
+     "slot": "r2-boss-1",
+     "title": "The boss, line 1",
+     "line": "Maddie, are you making fun of my simulations again?",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/f2097ef5-a26f-4d9e-87a8-46d8f7532589",
+       "label": "weirdness 25, take 1 · 0:09",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/3bc74680-d553-4d52-bf7e-ea8afcbc1bea",
+       "label": "weirdness 25, take 2 · 0:09",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/7f8d1ef8-2548-4eff-a155-3a69b3677fd8",
+       "label": "weirdness 10, take 1 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/3b37a3f3-5622-4abb-afb7-2adefc5042af",
+       "label": "weirdness 10, take 2 · 0:12",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r2-boss-2",
+     "title": "The boss, line 2",
+     "line": "Oh. Oh, wow. And they've activated their firewalls.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/f8e44f50-8f47-4ecb-8a62-3ac1c6f82211",
+       "label": "weirdness 25, take 1 · 0:10",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/7efca8ec-f5ce-44d2-a1be-31f109c1eea2",
+       "label": "weirdness 25, take 2 · 0:10",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/2f1c52cb-a7b6-4a67-b2c8-e9c9c9540e82",
+       "label": "weirdness 10, take 1 · 0:10",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/27f5cae7-2fa5-4d5d-85f1-1fe022029f98",
+       "label": "weirdness 10, take 2 · 0:10",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r2-boss-3",
+     "title": "The boss, line 3",
+     "line": "No. I've got it.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/497f5363-5fe9-4e85-9fdd-6b94cf6c6159",
+       "label": "weirdness 25, take 1 · 0:08",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/34f0fc0a-3175-4241-9392-7532c4d0d2a7",
+       "label": "weirdness 25, take 2 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/db21608c-d7b7-4df5-9e3c-daed5a509f99",
+       "label": "weirdness 10, take 1 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/07ca6aee-424f-4895-9030-d68101e20f39",
+       "label": "weirdness 10, take 2 · 0:06",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r2-boss-4",
+     "title": "The boss, line 4",
+     "line": "Phew. Glad I kept that little exploit up my sleeve.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w25-1",
+       "href": "https://suno.com/song/f890b363-26fa-4c35-887c-1b570137c1ea",
+       "label": "weirdness 25, take 1 · 0:07",
+       "warn": ""
+      },
+      {
+       "id": "w25-2",
+       "href": "https://suno.com/song/50a82181-807c-44ed-b64e-8db6f17413bc",
+       "label": "weirdness 25, take 2 · 0:08",
+       "warn": ""
+      },
+      {
+       "id": "w10-1",
+       "href": "https://suno.com/song/0405c2f4-f6d5-4caf-a22e-6ae674891ee1",
+       "label": "weirdness 10, take 1 · 0:08",
+       "warn": ""
+      },
+      {
+       "id": "w10-2",
+       "href": "https://suno.com/song/3eb2c01f-1d49-40e3-94a3-ab70f48e9fdc",
+       "label": "weirdness 10, take 2 · 0:07",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Chase music: darker",
+   "lede": "Your note: the last ones were too happy. Two new, very different dark cues. Pick one take (or none, with a note).",
+   "groups": [
+    {
+     "slot": "r2-C3",
+     "title": "Chase and call (9a-12), style C3",
+     "line": "Relentless low-string ostinato: two cellos, double bass, tremolo violins, raw and close. Breaks off to one held low note.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w30-1",
+       "href": "https://suno.com/song/df233838-5a4f-4a51-9665-df868b9d6c2a",
+       "label": "weirdness 30, take 1 · 1:00",
+       "warn": ""
+      },
+      {
+       "id": "w30-2",
+       "href": "https://suno.com/song/9d14e097-cda5-45c4-ad00-a8631ce705c3",
+       "label": "weirdness 30, take 2 · 1:03",
+       "warn": ""
+      },
+      {
+       "id": "w60-1",
+       "href": "https://suno.com/song/752f3869-dc3c-4587-9853-4656216f96dd",
+       "label": "weirdness 60, take 1 · 1:00",
+       "warn": ""
+      },
+      {
+       "id": "w60-2",
+       "href": "https://suno.com/song/a1614dbb-401a-4930-b759-7ad5b9cd3ce4",
+       "label": "weirdness 60, take 2 · 1:00",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "r2-C4",
+     "title": "Chase and call (9a-12), style C4",
+     "line": "A lone piano hammering in its lowest octaves, tremolo violin, cello drone, a vast cold hall. Stops dead, leaves the tremolo.",
+     "kind": "link",
+     "opts": [
+      {
+       "id": "w30-1",
+       "href": "https://suno.com/song/b3fb99e7-d056-4df6-ab34-7540abd39d4d",
+       "label": "weirdness 30, take 1 · 1:10",
+       "warn": ""
+      },
+      {
+       "id": "w30-2",
+       "href": "https://suno.com/song/bf0579b8-6c73-445b-beb6-caaf4256c189",
+       "label": "weirdness 30, take 2 · 1:00",
+       "warn": ""
+      },
+      {
+       "id": "w60-1",
+       "href": "https://suno.com/song/b6c5973d-42c5-45e3-b2ea-006ce284e36c",
+       "label": "weirdness 60, take 1 · 1:00",
+       "warn": ""
+      },
+      {
+       "id": "w60-2",
+       "href": "https://suno.com/song/d9f611a3-9319-4e89-a729-d63aef1af81b",
+       "label": "weirdness 60, take 2 · 1:00",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Picture",
+   "lede": "Re-made 9b and your two beat-1 stills animated. The 9a pass from S11-C failed (the bot clipped her), so the existing pass stays.",
+   "groups": [
+    {
+     "slot": "r2-V2",
+     "title": "Maddie in the dust, re-made (9b)",
+     "line": "We open inside the bot's dust wake and it settles fast; she never moves. A: Veo from a dust-buried still (opens hazy, not opaque). B: the same with an extra dust layer so it opens nearly opaque and clears by ~1.5 s (Claude's pick; risk: flat fog, not billowing).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "v2/cut3-V2r2.mp4",
+       "label": "A · Veo only"
+      },
+      {
+       "id": "b",
+       "src": "v2/cut3-V2r2-b.mp4",
+       "label": "B · + dust layer · Claude's pick"
+      }
+     ]
+    },
+    {
+     "slot": "r2-V13",
+     "title": "Patrol from your still S11-C (beat 1)",
+     "line": "The bot prowls down from the tower, turret sweeping, dust behind; Maddie stays still. Note: a long gun barrel shows side-on at ~5 s.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "v2/cut3-V13.mp4",
+       "label": "Use it"
+      }
+     ]
+    },
+    {
+     "slot": "r2-V14",
+     "title": "Two bots under the rail arch, from your still S12-D (beat 1)",
+     "line": "Two bots come through the rusted arch; the front one prowls up to camera, scanning the shopfronts.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "v2/cut3-V14.mp4",
+       "label": "Use it"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

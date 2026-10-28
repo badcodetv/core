@@ -1,0 +1,3136 @@
+# The Bank Robbery — Jack's song
+
+Jack's own song (2026-10-20). A scratchpad that sits apart from the film's score, so nothing here
+changes the cut, the score sheet or any other file.
+
+## Music video (2026-10-25)
+
+Jack has stopped Suno for now: enough takes to show Kai. Eight researched ideas:
+[`music-video-ideas.md`](./music-video-ideas.md). **Jack chose idea 8, "The Speakeasy Mint"**: storyboard, style
+rounds and the resume point are in [`mv-speakeasy-mint/storyboard.md`](./mv-speakeasy-mint/storyboard.md).
+
+## Still to decide (2026-10-21)
+
+Jack is working out the lyrics and the style before anything goes into Suno.
+
+Draft 2 at a glance:
+- **Sound:** menacing British art-punk with a 1970s heist-movie funk groove, 120 BPM
+- **Instruments:** twitchy distorted funk guitar, bouncing bass, handclaps, swirling psychedelic
+  synths on the chorus
+- **Voice:** male, flat half-spoken verses that tear into snarled shouts on the chorus, with a gang
+  shouting back
+- **Shape:** intro → 3 verses → chorus ×3 → spoken monologue → outro, about 3:10
+
+Styles that could fit:
+- **Keep it: heist-movie punk.** Tense and sarcastic; suits the Mister Red / Mister Blue story.
+- **Grime / UK rap over a heist beat.** The most aggressive, closest to Jack's original verse. Still
+  no double-time rap.
+- **1970s cop-show funk.** Brass stabs, wah guitar, a narrator talking over it. The most cinematic;
+  plays the robbery as a film.
+- **Drum & bass.** The BadCode default, but draft 2 bans it on purpose.
+
+Open questions:
+- Which lyric lines to keep, cut or make gorier?
+- Which style?
+
+## Possible styles
+
+### Maybe: 1970s cop-show funk (2026-10-21)
+
+Jack wants to keep this one as a maybe. Brass stabs, wah guitar, a narrator talking over it: the
+most cinematic option, and it plays the robbery as a film. Not tried yet. The Style box below is
+written but unheard.
+
+```
+Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead in a hard deadpan spoken narration on the verses that breaks into shouted lines on the chorus, a gang of voices shouting back. Menacing, played completely straight.
+```
+
+Exclude Styles (draft 2's list, audited: `orchestral` dropped because this style asks for strings;
+the punk lane's sounds added):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco
+```
+
+## Draft 3 (2026-10-21)
+
+Jack's note on draft 2: "Please make it more gritty, gorier, agressive, there is too much of the
+story in there."
+
+What changed: the film's story is mostly gone (no Mister Red and Mister Blue, no pallet, no cleaner,
+no beach, no town tied to a chair). The song is now a home invasion told straight, with the economics
+as hints: printing ("pumping it in"), the pound thinning, rent, wages standing still, whoever gets the
+new money first. Jack's own lines are kept word for word. Immigration is still never called fake
+("some of what they shout about is real"). Shorter, at 2:50.
+
+Style: still open. Use draft 2's punk Style box or the cop-show funk maybe above; draft 2's Exclude
+Styles box carries over. Settings as draft 2 except Duration **2:50**. Unheard, nothing generated.
+
+### Lyrics
+
+```lyrics
+[Intro]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+### Round A (2026-10-21): cop-show funk + Jack's draft 3 lyrics
+
+Style and Exclude Styles from "Possible styles" above; lyrics are Jack's own edit of draft 3.
+Settings: v6, Variety Normal, Max Mode off, Personalize off, Vocal Gender male, no Voice, style
+influence 75, Duration 170 s, workspace `bank-robbery`. 20 credits (10,800 → 10,780). Unheard.
+
+- br-jack-copfunk-A-v6-w30 — https://suno.com/song/358323e1-25c1-4925-8a5e-899eda8373a8
+- br-jack-copfunk-A-v6-w30 — https://suno.com/song/e1905c0c-b4dc-4312-ad48-e70e5d64b93a
+- br-jack-copfunk-A-v6-w60 — https://suno.com/song/0dc34641-6802-4df7-925b-be86e1b82bcc
+- br-jack-copfunk-A-v6-w60 — https://suno.com/song/09b0cacb-0ce7-498a-9963-540e2afcf29a
+
+### Round SR7 + SR8 (2026-10-24): the Brixton song with classical/opera (refine) and a western/opera psych-funk clean room
+
+Jack: *"okay forget those last ones, maybe do a song like this brj-sr5-brixton-baritone-dub-echo-v6-w35 but add classical and operatic elements to the background, but heavy on the psychedelic funk and cool chill voice that gets excited when it needs to and fits the song thanks"*, then mid-turn: *"do a western, opera, but mainly psychedelic funk clean room version too thanks."* He named the title, not the take, so both Brixton takes were listened to (`docs/listening/log/2026-10-24-152307-…7aa63b33.md`, `…152334-…3dd31d66.md`): both heard as British spoken word / rap over funk and boom-bap; neither listener mentioned the tin whistle or dub.
+
+**SR7** (refine, keep.txt = the Brixton box, count 4): first attempt STOPPED by the gate after two rewrites (shared lyric directions, 3 about the voice; kept as `sealed-r7/writers.try1`, `round.FAILED.try1.json`); fresh writers passed. 3 of 4 ran; 🔴 **pizzicato-quartet-mellotron-psych was aborted by suno.mts before spending** — its Style box is 1,098 characters, over Suno's 1,000 cap. The gate has no length check (tooling gap). Unheard.
+
+- axelrod-baroque-strings-chorus (pirate-radio DJ cool, baroque strings + harpsichord, opera choir aahs): https://suno.com/song/5bf0aabd-ef19-4c37-a43c-6a6f1c5b6892 · https://suno.com/song/4379a230-11ac-4df4-b4e4-ef695b8ef324
+- soprano-descant-wah-funk (younger stoned-cool tenor-baritone, falsetto flicks, cello drones, distant soprano descant): https://suno.com/song/64e0e88c-cb50-4239-99fd-74e42d5a0275 · https://suno.com/song/c156499a-1090-4036-85c4-ad1605d896b1
+- male-opera-chorus-timpani (older smoky baritone, Verdi male chorus, French horns, timpani): https://suno.com/song/d97cb1ce-9949-4ea6-b852-86986fbc1354 · https://suno.com/song/b46f2345-5743-4d9d-ad84-e66b3ff1dc8a
+
+**SR8** (exploring clean room; jack.md = both messages; reference + listens of the Brixton takes; count 4): gate pass 2 clean. All 4 ran (one reported a timeout but its takes arrived). Max Mode off. Unheard.
+
+- brixton-baritone-dry-room-whistle-soprano (dry room, western tin whistle + baritone twang, wordless soprano): https://suno.com/song/3e9fc3d7-88f7-4f0f-912c-fbc14386de50 · https://suno.com/song/5d8d6550-08e5-466f-9555-59e7dd54982b
+- smoky-tenor-falsetto-tag-stack (hushed tenor → soul falsetto, clavinet, horse-trot, male opera choir): https://suno.com/song/aaa2d352-4399-48e9-9bf8-a6ca98cafcc9 · https://suno.com/song/d72b91dd-d29b-477b-a0a7-6c4bf01ba54d
+- geezer-and-diva-call-and-response (London geezer vs bel canto mezzo, mariachi trumpet): https://suno.com/song/5732c1f4-2417-451d-a1ec-b4fe1e236ece · https://suno.com/song/76808f42-2890-4cdc-9e2f-98e6e8ab1102
+- deadpan-gunslinger-scene-in-tags (14-word box, the scene in the lyric tags): https://suno.com/song/7e599698-ca34-42fd-98dc-ab67e348f4e1 · https://suno.com/song/b31b8ef6-5962-40f4-aa88-8f1147cfc2ac
+
+Credits 7,380 → 7,310.
+
+### Round SR6 (2026-10-24): psych folk funk from I Ain't Worried / Million Dollar Baby / Eminence Front — sealed exploring round
+
+Jack: *"please make a pysch folk funk one inspired from songs like, "i aint worried" by one republic and "million dollar baby" and "eminence front" by the who, please reserach the internet on how to do this, this is just an experiment so just clean room it thanks"* (`sealed-r6/jack.md`). Inputs: his words + Kai's lyrics only (no reference, listen or facts). Count set to 4. Gate pass 1 clean. Writers chose Max Mode on and 300 s in all four (20 credits/Create); one brought sitar + tabla back. Credits 7,460 → 7,380. Unheard.
+
+- falsetto-whistle-halftime (whistle hook, reverb acoustic, airy falsetto, gang singalong): https://suno.com/song/814c68e9-c95b-4d58-9d3e-739b40767e4f · https://suno.com/song/daa6a6b9-d130-4d0d-98a4-738a6e64dd93
+- cool-organ-sequencer-arena (two-chord organ vamp, synth arpeggio, deadpan half-spoken, 116 BPM): https://suno.com/song/48af7aed-dec4-4bf3-b11b-381714af9231 · https://suno.com/song/03136370-fe5c-48fa-8afe-3eb7dce9e082
+- sitar-tabla-storyteller (smoky female alto, crowd call-and-response, 70 BPM): https://suno.com/song/9dfead7f-472e-4212-b33e-ab560fb97fdc · https://suno.com/song/b8890442-5159-4011-9557-578055056794
+- duet-kids-choir-bracket-driven (clavinet + bass loop, baritone + female duet, kids' choir): https://suno.com/song/8a2527af-cb15-4ae2-81c6-574a5049d2db · https://suno.com/song/3fe530bf-2c6c-45e4-8860-3cff2ca60a8c
+
+### Round SR5b (2026-10-24): iterations of the music-hall talker, take 2 — generated
+
+Jack: *"the second take, yeah you can restart chrome, please make these songs dope thanks"* → the pick is **dddd147b**. He did not choose a voice option, so the writers had only his own words ("mess around with the voice even though i quite like that one"). Recorder fixed: WSLg's PulseAudio wedged mid-record (playback froze at 0:58), so `audio-server.sh` started the private server and channel 1 was relaunched on it. Fresh listen of dddd147b: `docs/listening/log/2026-10-24-145305-…dddd147b.md` (funk + acoustic hip-hop, fingerpicked guitar, whistle intro 0:00–0:18, offbeat skanks, ~99 BPM; best moment the 1:07 gang chorus, worst the dry "rent seeking" aside at 0:48). Gate: pass 1 failed (14 shared voice phrases), pass 2 clean. All five dropped the sitar and exclude sitar/tabla/raga; every intro is tin whistle on the groove. Settings were identical in all five (v6, Variety off, male, 270 s, Max Mode off; w34–40, style 75–80). Credits ~7,510 → 7,460. Unheard. First failed attempt kept as `sealed-r5/round.FAILED.v1.json`.
+
+- cockney-landlord-wah-clav (gravel East End landlord; wah clavinet, fuzz lead): https://suno.com/song/04388901-919f-495e-8954-43706025ab8c · https://suno.com/song/bd117249-57fb-4843-98a5-e8ab1119766e
+- nasal-deadpan-phased-hammond (reedy North London tenor; phased Hammond, brass stabs): https://suno.com/song/16affea1-bc70-4f51-9791-e50da0703b42 · https://suno.com/song/910788fd-4300-4f8c-a80d-91ff738cd14f
+- brixton-baritone-dub-echo (warm Brixton patter; dub echo, spring-reverb skanks, fuzz bass): https://suno.com/song/7aa63b33-dbfa-4201-9b3b-78ae4ba48103 · https://suno.com/song/3dd31d66-3c71-498a-98df-9d57a340e4b2
+- glam-crooner-moog-phaser (glam vibrato + falsetto; Moog bass, phaser guitar, strings): https://suno.com/song/15c96bc7-535e-461f-aeb6-dcc4dcb1e42a · https://suno.com/song/ef14d8e1-787e-42c8-9ca6-692f68930063
+- market-barker-tape-flange-voice (Estuary market barker, double-tracked flanged voice; Mellotron, horns): https://suno.com/song/2c9c3f3c-f724-46d1-99d1-d80ba9d96db8 · https://suno.com/song/31afe137-0282-424d-85c3-3e77c93260a8
+
+### Round SR5 (2026-10-24): iterations of the music-hall talker — 🔴 STOPPED by the gate, nothing generated
+
+Jack picked **`brj-sr4-london-music-hall-talker-v6-w30`** (did not say which of its two takes: 99ce4b81 or dddd147b): *"please do itirations of this removing, the indian beggining part, adding more pschedelic funk elelemts and layer them, mess around with the voice even though i quite like that one thanks."* (`sealed-r5/jack.md`)
+
+Refine round, `keep.txt` = that take's Style box. Five sealed iterations were written (wah/clav stack, Moog phaser haze, horn stabs + doubled voice, fuzz lead + space bass, gospel call-and-response). **The gate stopped it, twice (6 passes in all):** the writers kept the liked voice wording ("talk-singing the verses like a sly music-hall raconteur … big theatrical sung melody on the chorus") in up to five prompts, which is the same-voice trap. Tooling fix on the way: when a phrase is shared, only the non-owners rewrite now (`sameness.py`); it still failed, because the writers keep pulling back to the liked voice. No fresh listen: `suno.mts record` failed (PulseAudio connection refused). The documented fix (`scripts/audio-server.sh`, then relaunch browser channel 1) closes the Flow/Suno Chrome, so it waits for Jack's OK. Last failed round: `sealed-r5/round.FAILED.json`.
+
+**Waiting on Jack:** how to treat the voice. (1) one iteration keeps the music-hall voice word for word and the rest vary (recommended); (2) keep it in all and change only the music; (3) change it in all. The answer goes into `sealed-r5/jack.md` verbatim, then `sealed-round.py write` → `run … brj-sr5 --yes`. Jack had a clarifying question first (not yet asked).
+
+### Round SR4 (2026-10-24): Best one's own box, only the voice changed — sealed REFINE round
+
+Jack: *"please just do the best one, with a very similar prompt … just to change the voice, but the backing singing is great, the beats great, it is exciting and grand, keep all of that, but this time clean room it."* (`sealed-r4/jack.md`)
+
+**How:** `sealed-round.py` refine mode (new: `keep.txt` = Best one's Style box verbatim). One sealed writer proposed 6 voices; 6 separate sealed writers each rewrote the whole box with their voice in it. The gate lets the kept box's words be shared, never voice words or new wording: pass 1 caught 4 prompts sharing "a deep" after the BPM and 3 copied direction runs; rewritten, pass 2 clean. Every box = Best one's word for word except the voice clause; every writer independently chose Best one's settings (v6, Variety off, w30, style 75, male, Max Mode off) with 240–270 s for Kai's longer lyrics, and added `American accent` to the excludes. Kai's lyrics. Credits 7,570 → 7,510. Unheard.
+
+- northern-pub-baritone (Yorkshire mill-town baritone): https://suno.com/song/75e1ca39-485e-4c3e-abfd-dbe9693fa027 · https://suno.com/song/2d63e41e-a3b8-4992-877d-edf0782d9b16
+- west-country-shanty-bass (Somerset shanty leader): https://suno.com/song/4ffe7401-5248-44f6-b1de-f46188180e66 · https://suno.com/song/703b055e-f853-47b3-8b66-2063c16d96c0
+- london-music-hall-talker (South London raconteur, talk-sung verses): https://suno.com/song/99ce4b81-b7d6-4aa0-8664-01f1c43ea083 · https://suno.com/song/dddd147b-858d-42da-bd2f-9e316edab1b4
+- choral-baritone-gone-rogue (ex-chorister baritone): https://suno.com/song/556f26c9-77f9-42c2-b8e3-64ca9107eac1 · https://suno.com/song/a42607aa-6f31-43d4-abfd-3a8d0fc10603
+- midlands-gravel-crooner (husky Black Country baritone): https://suno.com/song/20e0bcfe-50ac-4f0d-a4d9-b520c0ee0181 · https://suno.com/song/798a5bf0-dd35-42e2-8d37-e230672c6baf
+- trading-duo-deep-english (Northern baritone + Cockney bass trading couplets): https://suno.com/song/a2723139-320d-4c58-93d2-1006d3fc9dd0 · https://suno.com/song/ccaeb492-c407-43dd-8710-80e99382533c
+
+### Round SR3 (2026-10-24): deep English voices like real singers, blended — first round through `sealed-round.py`
+
+Jack: *"lets experiment with better deep english voices that sound like real singers and blend them all, keep kais lyrics, try and listen to the best one, analsye the prompt, make sure to not fall into the traps … do a bunch of experimental basic clean room ones, then we will pick a winner and iterate … i do not want the same mistakes made over and over, i cannot emphasise this enough."* (full message: `sealed-r3/jack.md`)
+
+**Best one, analysed** (fresh listen `docs/listening/log/2026-10-24-103905-…024b82e8.md` + Suno's record): it sounds like a gritty acoustic blues / boom-bap hybrid, ~90 BPM, an acoustic guitar riff driving it, stomping kick and snare, a raspy mid-register British man rap-singing, a shouted gang hook. Its box asks for none of that: 29 words of "English psych folk funk … sitar, tin whistle, hand drums", with **rap and hip hop excluded**, Max Mode off, 170 s, on Jack's **draft 3** lyrics (289 words, not Kai's 428). The SR rounds were the opposite on every count: 120–140-word boxes, Max Mode on, 285–300 s.
+
+**How it was made — no step touched by this session** (`docs/suno-gpt/same-song-traps.md`): raw inputs only in `sealed-r3/` (Jack verbatim, Kai's words, today's listen, Suno's raw record, verdict facts) → one sealed writer proposed 8 experiments → 8 separate sealed writers, one prompt each, none seeing the others → gate: pass 1 caught a shared voice cue in the lyric directions ("pre chorus rising", blues-boom + crooner), both rewrote, pass 2 clean → stamped `round.json` → `run`, verbatim. The box lengths came out 12–79 words; settings vary (v6 throughout, Variety off throughout, weirdness 15–52, style 55–85, three with Vocal Gender none, Max Mode on four). Two Creates timed out on the first pass (0 credits) and were retried once with `run --only`. Credits 7,690 → 7,570. Unheard.
+
+- folk-club-baritone-storyteller (old folk-club baritone, a tale at a pub session): https://suno.com/song/5e34e963-d0e9-4241-a395-6531d70b6c28 · https://suno.com/song/ecdce218-e187-4d09-9fa9-5ffea29d0b6e
+- low-crew-unison-blend (gravel baritone lead + low male crew in unison, work-song stomp): https://suno.com/song/8e15387c-97f4-4a71-9461-adf5d6549868 · https://suno.com/song/ffc51e48-9e2d-4f6b-9ba8-02214a40a104
+- sneering-sixties-crooner (1965 velvet baritone with a sneer, flamenco nylon guitar): https://suno.com/song/e98f0823-7b8c-495c-87b4-ee30e2c3ded9 · https://suno.com/song/ef5bdadb-3172-4bc7-862e-79fc2dd2c26d
+- laid-back-london-talk-singer (low London voice behind the beat, 28-word box): https://suno.com/song/2187f5b5-bb42-4884-a1af-bab0d8a9adee · https://suno.com/song/63ac49ad-d14f-43d7-be78-751fdf9150e3
+- cathedral-bass-and-low-choir (lay-clerk bass, low male voices answering): https://suno.com/song/914ab085-acd4-4292-9698-ef5fea91e84a · https://suno.com/song/e6d654ba-13eb-41cf-aae2-0c762b316ccf
+- northern-deadpan-post-punk (1979 northern deadpan baritone): https://suno.com/song/9c93fe8d-f6c5-406a-a5a4-c8ec3e6f90f7 · https://suno.com/song/bd76b985-6ef8-4d39-86eb-5c3515989f59
+- british-blues-boom-gravel (1964 blues-boom shouter, 12-word box): https://suno.com/song/6ce7428a-0907-4b44-b86f-8845c4f9c48f · https://suno.com/song/92feb350-a066-4ca1-a78d-8bb7a802eda7
+- trip-hop-two-voice-duet (hushed baritone + weathered older singer): https://suno.com/song/543925e7-c148-450b-86b1-4315eab5a714 · https://suno.com/song/bfe7a833-7d16-459e-8969-c7221603a6aa
+
+### Round SR2 (2026-10-23): sealed + internet only — Best one's beat, six low English voices, psychedelic funk
+
+Jack, after SR1: *"weve lost the vibe of the best one, did the same mistake happen again, the voices sound the same. please do more deep voices, forget the gangster thing, just focus on the best ones beat, then putting few varied different low english voices over it, psychdelic funk is the vibe, do not use the repo or the skills, just do a clean room with reseraching the internet only. clean room only. thanks"*
+
+**How it was written:** `scripts/suno/sealed-writer.sh --web`. Brief (`sealed-r2/brief.md`): Jack's words verbatim, the facts of the SR1 verdict, Best one's public Suno page (the writer fetched it itself), ONE fresh listen of the beat only (`docs/listening/log/2026-10-23-092726-…`, passed verbatim, flagged as unreliable), Kai's words with cue tags stripped, Jack's standing rules. No old listen logs, no old stored prompt.
+**Draft 1 FAILED the gate** (`sealed-r2/writer-output-draft1-FAILED-gate.md`): the writer again copied one beat block into all six (89 copied 6-word runs, 7 shared voice phrases), "since that's the part Jack wants to keep". Not run; sent back with the failure (`sealed-r2/brief-rewrite.md`). **Rewrite passed** (0 copied runs, 0 shared voice phrases; 14 short shared phrases like "92 BPM"). Kai's lines all present, unchanged. Run verbatim, one Create each. Writer's settings: Variety off, Max Mode on, 300 s, weirdness 30–45, style influence 75–85, three on v6-wild. One timeout (no credits spent) retried once. Credits 7,830 → 7,710. Unheard.
+
+- madchester-drawl (gravelly Manc baritone, deadpan drawl): https://suno.com/song/12f3602c-1e76-433f-b355-1531b9db6b3c · https://suno.com/song/ca7a4ff8-f397-41f7-b0e0-97b671d7add9
+- velvet-rp-crooner (posh bass-baritone crooner, v6-wild): https://suno.com/song/0b2c4776-089e-486e-bf46-18108bb3e3eb · https://suno.com/song/42ea84c2-07b7-41ab-b124-2031334fd876
+- south-london-soul-baritone (gospel-tinged soul baritone): https://suno.com/song/fb11aa28-df0e-4f8a-b2d6-074e13f7fb79 · https://suno.com/song/d48b6e10-110e-428b-acbc-70806d9de4ad
+- smoky-london-contralto (woman, low smoky contralto): https://suno.com/song/cc121ba6-d749-4c8c-b1c9-529910ee8e88 · https://suno.com/song/1ff78ce1-cf3a-4394-9ace-765941d2e712
+- cockney-pub-raconteur (older Cockney talk-singer, v6-wild): https://suno.com/song/07d992d0-9a10-4d86-818e-bd768e89c355 · https://suno.com/song/7715dad0-2c49-48ba-b978-81c0c2a745f9
+- phaser-basso-oracle (very deep voice through a phaser, v6-wild): https://suno.com/song/1e48d1a3-3548-41ff-a1fb-d20dcaea4648 · https://suno.com/song/fe15c9c9-21d6-4681-8181-a42ccaa0c333
+
+### Round SR1 (2026-10-23): sealed writer, internet research only — six very different gangster voices on Kai's lyrics
+
+Jack, after GG: *"we still dont have the vibe of 'Best one' also the voices have reverted back to the same old boring ones"* and *"gangster voice, but do variations of them that are very differnt from each other voice wise. please try and make it like the best one … dont use the repo or the skills, just research the internet and use that instead. please pay attention to this prompt, dont do your own thing."*
+
+**Why CR→GG were never clean:** every "clean-room" helper was an Agent-tool subagent inside the repo, which auto-loads CLAUDE.md and MEMORY.md (all the Suno rules); "ignore them" does not unload them. GG's brief, written by me, also gave all six the same "old gravelly London man". And Best one was made on **draft 3** lyrics; every round since KA used Kai's (about twice as dense).
+
+**How this round was written:** `scripts/suno/sealed-writer.sh --web` — a separate `claude -p` in an empty /tmp folder, tools = web search + fetch only, no repo, memory or skills (`--check` confirmed it sees none). Brief (`sealed-r1/brief.md`): Jack's message verbatim, Best one's link + stored Suno record, the two listen-log descriptions verbatim, Kai's words with the old cue tags stripped, Jack's standing rules (no screaming, no fast/double-time rap, no Covers). Its research notes + sources: `sealed-r1/writer-output.md`. Run verbatim, one Create each; checked: Kai's lines all present and unchanged, `sameness.py` (the lead-voice clauses are all different; shared = the gang chorus + mix line, deliberately the Best one sound). Writer's settings: v6 (whisperer v6-wild), Variety off, **Max Mode on (20 credits a Create)**, weirdness 20–25, style influence 80–85, 285 s. Titles `brj-sr1-*`, workspace `bank-robbery-Jack`. Unheard.
+
+- old-east-end-guvnor (65, slow gravelly talk): https://suno.com/song/d6c34644-da20-4e76-948c-fa826e2a4dae · https://suno.com/song/c650248b-4544-45f0-ab2f-e5820d42143c
+- young-south-london-roadman (19, sing-song half-rap): https://suno.com/song/2b372217-7e36-491a-9557-5732a5d3dc76 · https://suno.com/song/24b7a653-17f6-4074-8d14-bbb57bfac71e
+- velvet-mob-crooner (50, crooned baritone): https://suno.com/song/5f0c9e46-938a-47f6-b08d-3f97176fd380 · https://suno.com/song/640a2f0f-2918-4ead-abd4-43f52e91522d
+- whispering-glasgow-hitman (40s, whisper, v6-wild): https://suno.com/song/4e9dd3ec-188c-4bcd-9106-7e2e5f333b4e · https://suno.com/song/1f1b062e-ca5e-4a1a-85fa-4df9595996ef
+- mancunian-bruiser (30s, barked raspy): https://suno.com/song/9bde8344-c418-4228-993c-b28c4ea64565 · https://suno.com/song/da24143f-0471-4e9c-8ae0-a834acc1d496
+- essex-gangland-matriarch (45, woman, husky sneer): https://suno.com/song/71f13add-6d7e-44d2-822a-bae599ebd45c · https://suno.com/song/c33df5bf-5937-4053-af9d-1b5255c04494
+
+Credits 7,950 → 7,830 (6 Creates × 20).
+
+**Verdict (Jack, 2026-10-23): "weve lost the vibe of the best one … the voices sound the same."** What went wrong (Jack asked for this to be kept):
+- 🔴 **One shared music paragraph in all six prompts.** Only the voice line changed — the same pattern that gave identical voices in Round VB.
+- 🔴 **I overrode my own check.** `sameness.py` flagged it (98 shared phrases) and I decided the shared part was "just the music". Wrong call: a failed gate is a stop, never a judgement.
+- 🔴 **Its picture of "Best one" came partly from the repo.** The brief carried my two old listen logs and the old stored prompt.
+
+### Round GG (2026-10-22): basic prompts — the gangster voice leads, a touch of falsetto, more psychedelic funk
+
+Jack, after BB: "more of the gangster voice, very little of the falsetto. Please do a basic prompt not using the skills or repo, so it doesn't get confused. Listen to 024b82e8 and try and make this song with the new voices, more psychedelic funk stuff."
+
+Listened again (`docs/listening/log/2026-10-22-173617-…024b82e8.md`): boom-bap drums ~86–93 BPM, a bluesy fingerpicked acoustic guitar in the intro, breaks and outro, wah/envelope-filtered overdriven electric stabs in the hooks, warm saturated bass, tape delay, vinyl noise, hard drops in and out. A fresh helper got only that description in plain words plus the brief (no repo, no skill, no earlier prompts) and wrote six basic prompts; the falsetto appears at most as one echo or line (g4 has none). Run verbatim. Kai's words unchanged (checked). Unheard.
+
+#### GG · g1-classic — Classic psych funk heist
+
+Weirdness 45, style influence 65, Variety normal, Vocal Gender male, Duration 240 s.
+
+```
+Dark psychedelic funk boom-bap, 90 BPM, British crime heist feel. Punchy drums, warm fuzzy bass, bluesy fingerpicked acoustic guitar breaks, wah-wah electric guitar stabs, tape delay, vinyl crackle. Old gravelly London man speaks the verses, calm and wry; shouted English gang chorus.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar`
+
+#### GG · g2-organ-phaser — Organ and phaser trip
+
+Weirdness 55, style influence 60, Variety high, Vocal Gender male, Duration 245 s.
+
+```
+Psychedelic funk with boom-bap drums, 88 BPM, gritty London underworld. Hammond organ, phaser on the guitars, fuzz bass, wah-wah stabs, fingerpicked acoustic blues guitar in the quiet breaks, spring reverb and tape echo. Old English man talks the verses like a story at the bar; gang shouts on the hook.
+```
+
+Exclude: `american accent, fast rap, screaming, indian`
+
+#### GG · g3-sparse-drops — Sparse storyteller, big drops
+
+Weirdness 40, style influence 70, Variety normal, Vocal Gender male, Duration 250 s.
+
+```
+Lean dark funk boom-bap, 86 BPM, British heist film. Lots of space: bluesy fingerpicked acoustic guitar and dusty drums under the talking, then the full band slams in with wah guitar and fat bass on the hook. Tape delay, vinyl hiss. Calm gravelly old Londoner speaking, unhurried.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar, singing verses`
+
+#### GG · g4-no-falsetto — No falsetto, gang only
+
+Weirdness 45, style influence 70, Variety normal, Vocal Gender male, Duration 235 s.
+
+```
+Gritty psychedelic funk hip hop, 92 BPM, London gangster film. Boom-bap drums, saturated bass, envelope filter guitar stabs, bluesy acoustic fingerpicking in the breaks, swirling tape echo. Old London geezer speaks every verse, gravelly and wry; rowdy English male gang shouts the chorus.
+```
+
+Exclude: `american accent, falsetto, fast rap, screaming, sitar`
+
+#### GG · g5-clav-flute — Clavinet and flute funk
+
+Weirdness 50, style influence 60, Variety high, Vocal Gender male, Duration 240 s.
+
+```
+Seventies psychedelic funk meets boom-bap, 90 BPM, dark and gritty British crime caper. Clavinet, wah guitar, breathy flute riffs, warm bouncing bass, bluesy fingerpicked acoustic guitar, vintage room reverb, tape noise. Old gravelly London man tells the story in a calm speaking voice; gang shouts on the hook.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar`
+
+#### GG · g6-acid-haze — Deep acid funk haze
+
+Weirdness 65, style influence 55, Variety high, Vocal Gender male, Duration 250 s.
+
+```
+Heavy psychedelic acid funk with boom-bap drums, 88 BPM, dark smoky London heist. Fuzz and wah guitars, backwards guitar swirls, Leslie speaker organ, deep saturated bass, bluesy acoustic fingerpicking, long tape delays. Weathered old Londoner talks calmly over it, wry and gravelly; shouted gang hook.
+```
+
+Exclude: `american accent, fast rap, screaming, sitar, edm`
+
+### Round BB (2026-10-22): stripped to basics — no repo, no Suno skill
+
+Jack, after DU: "the same thing has happened, do what you did before and strip it down to basics, without using the repo or the suno skill, because it keeps making the same voice." A fresh helper got a plain-words brief only (no earlier prompts, no failure notes, no house rules) and was told to keep it basic: one- or two-sentence Style boxes, short excludes, plain section tags. Six prompts: three duets (old Englishman speaks the verses, young Englishman falsetto on the choruses), two falsetto-only, one spoken-only. Run verbatim; Duration on Auto, as the helper chose. Kai's words unchanged (checked). 60 credits (8,070 → 8,010). Auto ran ~4:30 per take. Variety Normal/High rewrote every box except b3's (its stored text is verbatim at step 1); the rewrites add delivery variety (`clipped rhythmic staccato`, `crooning legato`, `layered octave doubles`), which is exactly what Variety is for. Unheard.
+
+#### BB · b1-duet-bar — Duet gangster tale falsetto
+
+Weirdness 40, style influence 65, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Gritty psychedelic funk with a dark British crime feel. Acoustic guitar riff, stomping beat, fuzzy bass. An old English man speaks the verses like a gangster telling a story at the bar; a young English man sings the choruses in falsetto.
+```
+
+Exclude: `american accent, screaming, fast rap`
+
+- brj-basic-b1-duet-bar-v6-w40 — 4:29 — https://suno.com/song/15302df7-043d-4e39-9fd6-036a2d6cdde7 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b1-duet-bar-v6-w40 — 4:28 — https://suno.com/song/35b1a9a7-2cde-49b1-87bf-50bb09d26548 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b2-duet-heist — Heist funk two voices
+
+Weirdness 55, style influence 60, Variety high, Vocal Gender male, Duration Auto.
+
+```
+Dark 70s British heist funk, psychedelic and gritty. Stomping drums, fuzz bass, strummed acoustic guitar riff. Spoken verses by a gravelly older London man, falsetto choruses by a young English singer.
+```
+
+Exclude: `american accent, screaming, rap`
+
+- brj-basic-b2-duet-heist-v6-w55 — 4:29 — https://suno.com/song/b23f4a9e-e90b-4a21-864c-1e2f4e0e95fd (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b2-duet-heist-v6-w55 — 4:29 — https://suno.com/song/c249e369-8f0c-4ebe-8175-8b9ce44de0c9 (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b3-duet-pub — Smoky pub storyteller duet
+
+Weirdness 45, style influence 70, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Psychedelic funk, murky and British, like a crime film soundtrack. Acoustic guitar hook, heavy stomp, fuzzy bass. Old English man talking the verses in a low voice, young English man in high falsetto on the choruses.
+```
+
+Exclude: `american accent, screaming, fast rap, autotune`
+
+- brj-basic-b3-duet-pub-v6-w45 — 4:29 — https://suno.com/song/88b84089-c232-4803-b555-42a6c6caf3ff (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b3-duet-pub-v6-w45 — 4:30 — https://suno.com/song/c6954483-92d3-4d64-b0c2-92c8df1f7a10 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b4-falsetto — Falsetto only psych funk
+
+Weirdness 40, style influence 65, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Gritty psychedelic funk with a dark British heist mood. Acoustic guitar riff, stomping beat, fuzzy bass. Young English male singer in falsetto throughout, English accent.
+```
+
+Exclude: `american accent, screaming, rap`
+
+- brj-basic-b4-falsetto-v6-w40 — https://suno.com/song/cc769e07-7f5f-45a9-b1e5-a86764ff62ff (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b4-falsetto-v6-w40 — 4:30 — https://suno.com/song/e7b2d15e-5bc6-4ab2-b378-0a2726d4770f (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b5-falsetto-dark — Falsetto dark heist groove
+
+Weirdness 55, style influence 55, Variety high, Vocal Gender male, Duration Auto.
+
+```
+Dark, fuzzy British psych funk, like a 70s London crime film. Strummed acoustic guitar riff, heavy stomp, distorted bass. Sung by a young English man in a sweet falsetto.
+```
+
+Exclude: `american accent, screaming, rap, belting`
+
+- brj-basic-b5-falsetto-dark-v6-w55 — https://suno.com/song/9cbc051a-a1fb-48b8-9089-82d54509fffb (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b5-falsetto-dark-v6-w55 — https://suno.com/song/fffd08e2-eb4d-4f30-90cd-7f9bbdfbd051 (Variety step 2: Suno rewrote the Style box; its stored text is the real prompt)
+
+#### BB · b6-gangster — Old gangster spoken word
+
+Weirdness 40, style influence 70, Variety normal, Vocal Gender male, Duration Auto.
+
+```
+Gritty psychedelic funk with a dark British crime feel. Acoustic guitar riff, stomping beat, fuzzy bass. Spoken word throughout by an old English man, gravelly London voice, like a gangster telling a story at the bar. No singing.
+```
+
+Exclude: `american accent, screaming, rap, singing`
+
+- brj-basic-b6-gangster-v6-w40 — https://suno.com/song/c85066a2-8473-410c-8e98-34d4206d1131 (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+- brj-basic-b6-gangster-v6-w40 — https://suno.com/song/c792fe93-f5dc-480e-82c9-d84f9fa48fda (Variety step 1: Suno rewrote the Style box; its stored text is the real prompt)
+
+### Round DU (2026-10-22): clean-room duet — gangster speaks the verses, falsetto sings the choruses
+
+Jack, after BO went American: "do a clean room one for them with English voices I liked, maybe have the gangster voice for the verses and falsetto for the choruses." A clean-room helper was given the two liked sweep prompts (s2, s3) whole, the Best one vibe, and the BO failure, and asked for four different strategies for two English voices in one take. Kai's words unchanged (checked). Run verbatim, one Create each: 40 credits (8,110 → 8,070); records checked: Kai's lyrics, Variety 0. **Verdict (Jack, 2026-10-22): "the same thing has happened"** (the same voice again). Long, heavily specified boxes describing two voices in detail converged.
+
+#### DU · d1-role-split — Role-split style box, voice named in every tag
+
+Weirdness 30, style influence 75, Variety off, Vocal Gender male, Duration 270 s. Why: The most literal route: both voices fully specified with their accent in the Style box, and every section tag repeats which voice owns it, so the switch is spelled out twice.
+
+```
+Gritty English crime-film funk, 94 BPM, straight locked stomping breakbeat with foot stomps and tambourine, raw dusty acoustic guitar riff with blues bends, heavily saturated growling fuzz bass, impact hits at the drops, raw room grit, dark warm and very dynamic. Full band from the first bar, no solo guitar intro. TWO English voices trade sections. Verses: an old London man in his sixties, deep weathered baritone, SPOKEN WORD, not sung, a calm wry retired gangster telling it at the bar, broad London accent, sitting back on the beat. Choruses: a young English man singing in a high airy sweet falsetto, early-70s British soul, multi-tracked falsetto harmony stacks, clear English vowels. A pub crowd shouts the hook answers. 1970s British heist-film menace.
+```
+
+Exclude: `American accent, Southern drawl, country, gospel, R&B, rap, hip hop, double-time, fast rap, autotune, screaming, sitar, Indian, EDM, trap, comedy`
+
+- brj-duet-d1-role-split-v6-w30 — 4:28 — https://suno.com/song/efeeb459-a425-4beb-8c34-450519194e50
+- brj-duet-d1-role-split-v6-w30 — 4:28 — https://suno.com/song/1da76fc1-085f-43ff-9695-b0c030016051
+
+#### DU · d2-named-duo — Named duo characters, gender null, strict role rules
+
+Weirdness 45, style influence 60, Variety off, Vocal Gender None, Duration 285 s. Why: Turning the two voices into named characters with hard rules (one only speaks, one only sings) and short role tags gives Suno a duet format to follow, and Vocal Gender null stops the gender lock from merging them into one singer.
+
+```
+1970s London crime-film stomp meets English psychedelic soul, 96 BPM, straight locked breakbeat, foot stomps, tambourine, raw acoustic guitar riff, saturated growling bass, impact hits, dark warm room, quiet passages and hard drops. Kicks straight in, no solo intro. A duet between two Englishmen. THE NARRATOR: a grizzled old East End geezer who only ever SPEAKS, low, slow and unhurried, like the voiceover of a British gangster film, London accent, every word clear. THE CHOIRBOY: a young English soul singer who only ever SINGS, pure high falsetto, sweet and eerie, stacked harmonies. The Narrator never sings; the Choirboy never speaks. Rough pub gang shouts on the hook.
+```
+
+Exclude: `American accent, Southern, country, gospel, R&B, rap, hip hop, double-time, fast rap, autotune, screaming, female vocals, sitar, EDM, trap, comedy`
+
+- brj-duet-d2-named-duo-v6-w45 — https://suno.com/song/bdc2416b-55aa-47b8-ad76-8dab2af5982f
+- brj-duet-d2-named-duo-v6-w45 — 4:44 — https://suno.com/song/b2bf6dbf-4292-4495-9290-2a5d33c4774a
+
+#### DU · d3-falsetto-band — Falsetto band as base, gangster as spoken narration
+
+Weirdness 40, style influence 70, Variety off, Vocal Gender male, Duration 300 s. Why: This makes the falsetto singer the band's own vocalist, so the song is built around singing, and frames the gangster as a spoken voice-over between hooks. Short [Spoken Verse] / [Falsetto Chorus] tags carry the switch in Suno's own section vocabulary.
+
+```
+English psychedelic soul with gritty British blues stomp, 98 BPM, tight straight drum break, stomps and tambourine, raw acoustic guitar riff, phased fuzz bass heavily saturated, swirling tape echo, impact hits on the drops, dark warm 1970s English room, very dynamic. Starts on the full groove. The band's singer is a young Englishman who sings the hooks in a high, airy falsetto with harmony stacks, gentle and eerie. Between the hooks the singing stops and an old English gangster in his sixties talks over the groove in long spoken-word passages, deep weathered baritone, London accent, calm and conversational, like a British radio play. Rough gang shouts answer the hook.
+```
+
+Exclude: `American accent, Southern, country, gospel, R&B, belting, rap, hip hop, double-time, fast rap, autotune, screaming, sitar, Indian, EDM, trap, comedy`
+
+- brj-duet-d3-falsetto-band-v6-w40 — 4:59 — https://suno.com/song/87c1ce73-c1f3-4431-9400-8426854646b4
+- brj-duet-d3-falsetto-band-v6-w40 — 4:58 — https://suno.com/song/f8117575-677f-440a-a37e-944397086291
+
+#### DU · d4-british-only — British-only vocabulary, American genre words excluded entirely
+
+Weirdness 25, style influence 85, Variety off, Vocal Gender male, Duration 270 s. Why: The American-sounding takes probably came from the American genre words (funk, soul), so this one keeps them out of the Style box and adds them to Exclude. It describes the sound only in British terms, puts the London and North accents into the tags, and runs at high style influence and low weirdness to keep both voices English.
+
+```
+British blues stomp and Northern soul psychedelia, 92 BPM, straight locked stomping breakbeat, foot stomps, tambourine, a raw acoustic guitar riff driving it, heavily saturated growling bass, cinematic impact hits at the drops, raw English room grit, dark and warm, big quiet-to-loud drops. No intro solo. Verses: an old East End villain from a 1970s British crime film, deep weathered baritone, SPOKEN not sung, London accent with dropped t's, dry and unhurried, a pint in his hand. Choruses: a young Englishman from the North, high sweet falsetto, English vowels, stacked harmonies, eerie and gentle. A pub full of lads shouts the answers. Very English, very menacing.
+```
+
+Exclude: `American accent, Southern, Texas, country, gospel, R&B, soul diva, funk, rap, hip hop, double-time, fast rap, autotune, screaming, sitar, Indian, EDM, trap, comedy`
+
+- brj-duet-d4-british-only-v6-w25 — https://suno.com/song/5bc3ffa7-6ca7-46f9-82b0-958ddb281db8
+- brj-duet-d4-british-only-v6-w25 — https://suno.com/song/265cfed9-21f2-4eb3-bc77-a4fd79ada3a0
+
+Lyrics: each prompt's own section tags (voice named per section) are in the clip's Suno record; words are Kai's.
+
+### Round BO (2026-10-22): Jack's two sweep voices on the exact "Best one" music
+
+Jack: liked **`brj-sweep-s3-falsetto-v6-w40`** and **`brj-sweep-s2-gangster-spoken-v6-w30`** ("I like both of them"); put each back on the exact "Best one" (024b82e8) music.
+
+Two music versions per voice: **a** = Best one's own stored Style box, settings and excludes, with only the voice clause swapped for the sweep's voice sentence; **b** = Best one's sound as heard (listen logs above) plus the same voice sentence. Lyrics: Kai's words with the sweep take's own tags, instrument cues that belong to the sweep arrangement (wah, Mellotron, tape echo, flute) neutralised. Settings as Best one: v6, weirdness 30, style influence 75, Variety Off, Vocal Gender male; Duration as the sweep prompt (Kai's lyrics are long). Excludes: Best one's list plus the sweep prompt's voice bans. One Create each, 4 Creates, 40 credits (8,150 → 8,110); records checked: Kai's lyrics, Variety 0. **Verdict (Jack, 2026-10-22): "they all went weirdly American."** Moving a voice sentence onto Best one's old box (or its heard description) lost the Englishness that the sweep's own whole prompts carried: the English came from the whole sweep prompt (`Gritty British crime-film funk … pub crowd`, `English psychedelic soul-funk … 1970s room`), not from the voice sentence.
+
+🔑 **If the text route loses the voice:** the documented way to carry a liked singer exactly is a **Voice made from the liked sweep take** (Create → Voice → from a song; a human step, not automated) attached to Best one's stored prompt.
+
+#### BO · a-falsetto
+
+```
+English psych folk funk, 100 BPM: a young English man singing entirely in a high, airy, sweet falsetto, early-70s soul delivery, smooth legato lines floating over the groove, multi-tracked falsetto harmony stacks on the chorus, gentle and eerie rather than aggressive. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, chest voice, baritone, gravelly, raspy, screaming`
+
+- brj-best-a-falsetto-v6-w30 — 4:58 — https://suno.com/song/d2d05bb9-9d48-4efd-958e-4a8f2395b888
+- brj-best-a-falsetto-v6-w30 — 4:59 — https://suno.com/song/f112dfbc-9129-4175-83c2-b104ad89837d
+
+#### BO · a-gangster
+
+```
+English psych folk funk, 100 BPM: an old English man in his sixties, deep weathered baritone, spoken word, not sung: a calm, unhurried storyteller narrating like a retired gangster at the bar, conversational and wry, every word clear, sitting back on the beat; a pub crowd shouts the hooks back at him. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, singing, melodic vocals, young voice, falsetto, screaming`
+
+- brj-best-a-gangster-v6-w30 — 3:59 — https://suno.com/song/fd8d79c8-de2f-46d8-ac86-fcff9a8c1b25
+- brj-best-a-gangster-v6-w30 — 3:58 — https://suno.com/song/3790d380-f362-4c33-8827-56fac69eaa6f
+
+#### BO · b-falsetto
+
+```
+Psychedelic funk crossed with gritty British blues and stomp rock over a hip-hop breakbeat, 93 BPM: a raw acoustic guitar riff with bluesy bends drives it, stomping breakbeat with foot stomps and tambourine, heavily saturated growling bass, shouted gang call-and-response on the hooks, raw room grit, impact hits on the drops, dark warm dynamic mix. Lead vocal: a young English man singing entirely in a high, airy, sweet falsetto, early-70s soul delivery, smooth legato lines floating over the groove, multi-tracked falsetto harmony stacks on the chorus, gentle and eerie rather than aggressive.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, chest voice, baritone, gravelly, raspy, screaming`
+
+- brj-best-b-falsetto-v6-w30 — https://suno.com/song/d455249c-0ae4-435a-a06c-657124ac5898
+- brj-best-b-falsetto-v6-w30 — https://suno.com/song/c598d639-ce00-4484-82de-3c25f278f4c0
+
+#### BO · b-gangster
+
+```
+Psychedelic funk crossed with gritty British blues and stomp rock over a hip-hop breakbeat, 93 BPM: a raw acoustic guitar riff with bluesy bends drives it, stomping breakbeat with foot stomps and tambourine, heavily saturated growling bass, shouted gang call-and-response on the hooks, raw room grit, impact hits on the drops, dark warm dynamic mix. Lead vocal: an old English man in his sixties, deep weathered baritone, spoken word, not sung: a calm, unhurried storyteller narrating like a retired gangster at the bar, conversational and wry, every word clear, sitting back on the beat; a pub crowd shouts the hooks back at him.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, singing, melodic vocals, young voice, falsetto, screaming`
+
+- brj-best-b-gangster-v6-w30 — https://suno.com/song/da789d4e-2e22-4a53-ada3-77671b4b8e94
+- brj-best-b-gangster-v6-w30 — https://suno.com/song/e13477d0-a533-4621-8da9-c49c04d81216
+
+### Round SW (2026-10-22): clean-room sweep — eight English performers, the psychedelic funk vibe of "Best one"
+
+Jack, after VB: "the voices are the same again, do a clean room sweep of varied English voices with the psychedelic funk vibe from this (024b82e8)." A fresh clean-room helper (no repo, memory or web) was told why VB failed (one shared music paragraph, one shared delivery) and asked for eight singers who differ as **performers**: delivery category, register, gender, age. The music wording varies per prompt within the vibe. Kai's words unchanged (checked word by word); every tag, setting and exclude is the helper's own, run verbatim. One Create each, 8 Creates, 80 credits (8,230 → 8,150); records checked: Kai's lyrics, Variety 0. `screaming` banned in all. **Verdict (Jack, 2026-10-22): liked s3 falsetto and s2 gangster spoken**, the first sweep to break the same-voice problem (Round BO).
+
+#### SW · s1-soul-belt — Northern soul woman, controlled gospel belt
+
+Weirdness 35, style influence 70, Variety off, Vocal Gender female, Duration 270 s. Why: The only controlled female soul belt with long held gospel notes, a melodic chest-voice category none of the others use.
+
+```
+British psychedelic funk, 96 BPM, straight head-nodding breakbeat with foot stomps and tambourine, raw fingerpicked acoustic blues guitar riff, fuzzy saturated growling bass, Hammond organ stabs, dark warm room. Lead: a powerful Northern English soul woman in her thirties, rich alto, belted but controlled, gospel-trained, holding long notes and riding the groove with soulful melodic phrasing, never shouting. Gang call-and-response backing shouts on the hooks, hard drops after quiet guitar-only passages, gritty heist-film tension.
+```
+
+Exclude: `rap, hip hop, male vocals, double-time, fast rap, autotune, screaming, EDM, trap, smooth R&B, pop ballad, sitar, comedy`
+
+- brj-sweep-s1-soul-belt-v6-w35 — 4:29 — https://suno.com/song/57286a6f-26b8-4f96-8d81-22c12fc61bc8
+- brj-sweep-s1-soul-belt-v6-w35 — 4:29 — https://suno.com/song/45577b7a-1491-4e44-ad58-7e5b887ec01d
+
+#### SW · s2-gangster-spoken — Old gangster baritone, unhurried spoken narration
+
+Weirdness 30, style influence 75, Variety off, Vocal Gender male, Duration 240 s. Why: Pure spoken narration from an old, deep voice removes melody and rap cadence entirely, so it cannot collapse into the half-sung default.
+
+```
+Gritty British crime-film funk, 92 BPM, locked breakbeat, stomps and shaker, dusty acoustic guitar riff with blues bends, distorted growling bass, cinematic impact hits, dark warm mix with quiet passages and hard drops. Lead: an old English man in his sixties, deep weathered baritone, SPOKEN WORD, not sung: a calm, unhurried storyteller narrating like a retired gangster at the bar, conversational and wry, every word clear, sitting back on the beat. A pub crowd shouts the hooks back at him. Psychedelic reverb tails, heist-movie menace.
+```
+
+Exclude: `singing, melodic vocals, rap, hip hop, double-time, fast rap, autotune, screaming, young voice, falsetto, EDM, trap, comedy`
+
+- brj-sweep-s2-gangster-spoken-v6-w30 — 3:59 — https://suno.com/song/6fedecc7-beb6-4a60-aa48-b4ed80df2ef5
+- brj-sweep-s2-gangster-spoken-v6-w30 — 3:59 — https://suno.com/song/aeb9a005-f875-46d3-a2d9-851f1d12ca82
+
+#### SW · s3-falsetto — Young man, airy psych-soul falsetto throughout
+
+Weirdness 40, style influence 70, Variety off, Vocal Gender male, Duration 300 s. Why: A male head-voice falsetto register with stacked harmonies is physically a different instrument from any chest-voice singer in the set.
+
+```
+English psychedelic soul-funk, 98 BPM, tight straight drum break with tambourine and stomps, fingerpicked acoustic guitar riff with wah, phased fuzz bass, Mellotron flutes, swirling tape echo, dark warm 1970s room. Lead: a young English man singing entirely in a high, airy, sweet falsetto, early-70s soul delivery, smooth legato lines floating over the groove, multi-tracked falsetto harmony stacks on the chorus, gentle and eerie rather than aggressive. Rough gang shouts punch the hook answers. Big dynamic drops.
+```
+
+Exclude: `rap, hip hop, chest voice, baritone, gravelly, raspy, double-time, fast rap, autotune, screaming, EDM, trap, comedy`
+
+- brj-sweep-s3-falsetto-v6-w40 — 4:59 — https://suno.com/song/925fb3e0-569a-48bc-9229-2049b43fd31a
+- brj-sweep-s3-falsetto-v6-w40 — 4:58 — https://suno.com/song/a8042d53-7834-4fb7-9425-032c58c9c37e
+
+#### SW · s4-folk-soprano — Young woman, pure traditional English folk
+
+Weirdness 45, style influence 70, Variety off, Vocal Gender female, Duration 300 s. Why: A young woman's straight-tone ballad soprano with grace notes comes from the traditional-folk lineage, the opposite of soul belt or torch.
+
+```
+Dark English folk-funk, 94 BPM, stomping breakbeat with hand claps and tambourine, raw fingerpicked acoustic guitar in open tuning, fiddle drones, growling overdriven bass, room grit, sudden drops. Lead: a young English woman, traditional unaccompanied-ballad singer, pure clear soprano, straight tone with no vibrato, small grace-note ornaments like an old ballad, telling the words as a story, steady and unhurried, eerie calm against the heavy groove. A village crowd chants the chorus back. 1969 psychedelic folk-rock haze, protest-song bite.
+```
+
+Exclude: `rap, hip hop, male lead vocal, heavy vibrato, belting, pop, autotune, screaming, double-time, fast rap, EDM, country, trap, comedy`
+
+- brj-sweep-s4-folk-soprano-v6-w45 — 4:59 — https://suno.com/song/bc17ae10-598e-43a3-93e4-e29ac1c29b28
+- brj-sweep-s4-folk-soprano-v6-w45 — 4:58 — https://suno.com/song/07217d46-a024-45d0-9935-4e3094f74a1d
+
+#### SW · s5-musichall-patter — Cocky London tenor, music-hall barrow patter
+
+Weirdness 40, style influence 70, Variety off, Vocal Gender male, Duration 240 s. Why: A bright, reedy, theatrical music-hall patter tenor is a sung-spoken stage tradition with a lilt, nothing like spoken narration or rap.
+
+```
+Psychedelic East End funk, 100 BPM, swaggering breakbeat with stomps and tambourine, honky-tonk upright piano, raw acoustic blues guitar riff, fuzzed growling bass, brass stabs, smoky pub-room grit, impact hits on the drops. Lead: a cocky London man in his fifties, bright reedy tenor, old-time music-hall patter singer: sung-spoken in a jaunty melodic lilt, rolling his Rs, theatrical asides, leaning into each line like he's flogging stolen goods off a barrow, never rushed. Full pub singalong shouts on the hooks. Dark crime caper, gritty not silly.
+```
+
+Exclude: `rap, hip hop, double-time, fast rap, autotune, screaming, EDM, trap, kazoo, cartoon, children's, baritone`
+
+- brj-sweep-s5-musichall-patter-v6-w40 — 3:58 — https://suno.com/song/ea72f904-a0d7-46f4-8ffd-a98373709ea2
+- brj-sweep-s5-musichall-patter-v6-w40 — 3:59 — https://suno.com/song/942f37b0-6d95-4d5e-92c6-920e4972f4dd
+
+#### SW · s6-choir-chant — Mixed English choir, unison protest chant
+
+Weirdness 50, style influence 65, Variety off, Vocal Gender None, Duration 270 s. Why: No soloist at all: a mixed-gender choir chanting in unison is a collective instrument, so it cannot come out as one singer.
+
+```
+Psychedelic protest funk, 92 BPM, heavy straight breakbeat with massed foot stomps, claps and tambourine, raw acoustic guitar riff, saturated growling bass, timpani impact hits, cathedral-sized reverb, quiet-to-huge dynamics. Vocals: no solo singer. A large mixed English choir of men and women chants every line in unison, rhythmic and declamatory like a protest march or a football terrace, with a small group of women answering in harmony; the chorus swells into full four-part choral chant. Ominous, communal, uprising energy.
+```
+
+Exclude: `solo vocalist, lead singer, rap, hip hop, double-time, fast rap, autotune, screaming, opera soprano, EDM, trap, comedy`
+
+- brj-sweep-s6-choir-chant-v6-w50 — 4:29 — https://suno.com/song/9fc98e4b-aa0f-4055-904e-52fce033087d
+- brj-sweep-s6-choir-chant-v6-w50 — https://suno.com/song/dae7d740-1261-4bfa-8cd5-4ba82f222abd
+
+#### SW · s7-jazz-torch — Smoky contralto woman, late-night jazz torch
+
+Weirdness 30, style influence 75, Variety off, Vocal Gender female, Duration 300 s. Why: A low, close-miked jazz contralto phrasing lazily behind the beat is a quiet, intimate category, the opposite of the soul belt or folk soprano.
+
+```
+Slow-burn psychedelic jazz-funk noir, 90 BPM, brushed-then-hard breakbeat with stomps and shaker, fingerpicked acoustic blues guitar, saturated growling bass, muted trumpet, smoky late-night Soho club, dark warm intimate mix with hard drops. Lead: an English woman in her forties, low smoky contralto, jazz torch singer, close-mic and intimate, phrasing lazily behind the beat, sliding into notes, sultry and knowing, never rushing. Male gang shouts answer on the hooks. Heist-film menace.
+```
+
+Exclude: `rap, hip hop, double-time, fast rap, autotune, screaming, belting, pop, soprano, EDM, trap, comedy`
+
+- brj-sweep-s7-jazz-torch-v6-w30 — https://suno.com/song/a9668725-4b2b-4d9a-addf-e3af84143875
+- brj-sweep-s7-jazz-torch-v6-w30 — https://suno.com/song/7016c742-1a68-4a01-832b-62ff7940e6ec
+
+#### SW · s8-baritone-crooner — Deep velvet baritone, orchestral 60s crooner
+
+Weirdness 35, style influence 70, Variety off, Vocal Gender male, Duration 300 s. Why: A rich, wide-vibrato orchestral baritone croon is the most sustained, legato male chest voice in the set, set against s2's speech, s3's falsetto and s5's reedy patter.
+
+```
+Cinematic psychedelic funk, 96 BPM, straight locked breakbeat with stomps and tambourine, raw acoustic guitar riff with flamenco flourishes, growling fuzz bass, sweeping orchestral strings and brass swells, dark 1960s spy-film grandeur, quiet verses into huge drops. Lead: a deep English baritone crooner in his forties, rich velvet chest voice, wide romantic vibrato, sung legato, dramatic and brooding like a late-60s orchestral pop idol, enunciating every word. Gang shouts answer on the hooks.
+```
+
+Exclude: `rap, hip hop, spoken word, double-time, fast rap, autotune, screaming, falsetto, raspy, gravelly, EDM, trap, comedy`
+
+- brj-sweep-s8-baritone-crooner-v6-w35 — https://suno.com/song/af2537a7-9dd9-438b-b704-37aca93273f1
+- brj-sweep-s8-baritone-crooner-v6-w35 — https://suno.com/song/d02ad061-0147-483a-a99d-1a5775ae4203
+
+Lyrics: each prompt's own tags are in the clip's Suno record (`metadata.prompt`); words are Kai's (`score.md`), unchanged.
+
+### Round VB (2026-10-22): back to the vibe of "Best one" — clean room, six English voices, no screaming
+
+Jack: "we have strayed away from the vibe of this song (024b82e8), please analyse it and bring it back. Keep experimenting with English voices, no weird screaming. Make sure no skill or prompt is messing with it."
+
+**What the reference is** (second listen, `docs/listening/log/2026-10-22-162914-…024b82e8.md`): blues rap / UK hip-hop / stomp rock, ~90–93 BPM, straight and locked; a raw acoustic guitar riff drives it (one listen says fingerpicked blues, one says flamenco bends: unsettled); a stomping hip-hop breakbeat with foot stomps and tambourine; heavily saturated growling sub bass; shouted gang call-and-response; raw room grit, impact hits at the drops; **loudness range 12.4 LU, spectral centroid 2.6 kHz** (dark, very dynamic).
+
+**Where KA drifted** (two KA takes listened to and measured, logs `…163455-…7cc394c7.md`, `…163535-…81953c32.md`): music close (acoustic guitar riff over a hip-hop break) but **flat** (loudness range 6.2 and 5.8 LU, half the reference's), **brighter** (centroid 3.4 and 4.0 kHz), clean rather than saturated bass on A, no stomps, and **faster** delivery (Kai's lyrics are about twice as dense as draft 3; the cockney take came out as fast rap). Cutting the solo-guitar intro also cut the explosive drop that made the reference.
+
+**How this round was written:** a clean-room helper (no repo, no memory, no web; told to ignore every house Suno rule) wrote all six from the listen descriptions, Jack's brief and Kai's words with our cue tags stripped. My only addition is one measured sentence in every Style box: `Dark warm mix with big dynamics: guitar-only breaks, then hard drops.` One Create each, settings per prompt (weirdness 35–40, style influence 65–75, Variety Off, Duration 240 s). `screaming` banned in every box. **Verdict (Jack, 2026-10-22): "the voices are the same again."** Cause: one shared music paragraph and one shared delivery; only the region varied (`suno-voices.md` §2f follow-up). 60 credits (8,290 → 8,230); records checked: Kai's lyrics, Variety 0, boxes verbatim. Unheard.
+
+#### VB · v1-southlondon
+
+Weirdness 35, style influence 70, Vocal Gender male.
+
+```
+Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a young South London man, clean, cool and conversational, half-sung half-rapped right on the beat, narrow melody, relaxed steady pace, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice`
+
+- brj-vibe-v1-southlondon-v6-w35 — 3:58 — https://suno.com/song/001c0117-b07c-4397-bd9c-156ea6a1bf9c
+- brj-vibe-v1-southlondon-v6-w35 — 3:59 — https://suno.com/song/91f16f96-b056-496a-91e6-b6deb686891d
+
+#### VB · v2-manc-alto
+
+Weirdness 35, style influence 70, Vocal Gender female.
+
+```
+Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a Manchester woman in her thirties, low smoky alto, deadpan half-spoken half-sung on the beat, narrow melody, unhurried, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, belting, breathy`
+
+- brj-vibe-v2-manc-alto-v6-w35 — 3:58 — https://suno.com/song/1a6041d6-2349-4dc5-9cc0-9c886a9f5b8e
+- brj-vibe-v2-manc-alto-v6-w35 — 3:46 — https://suno.com/song/d06b1e15-f13a-4dc1-bc72-dbb6de974829
+
+#### VB · v3-bristol-baritone
+
+Weirdness 40, style influence 65, Vocal Gender male.
+
+```
+Gritty British blues rap and stomp rock, 90 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a Bristol man in his forties, warm smooth baritone, laid-back talk-singing on the beat, narrow melody, steady, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice, crooning`
+
+- brj-vibe-v3-bristol-baritone-v6-w40 — 3:59 — https://suno.com/song/9d503fbf-4c09-4b58-be38-32e3506984fa
+- brj-vibe-v3-bristol-baritone-v6-w40 — 3:59 — https://suno.com/song/6fd32b65-3993-4b42-8aed-c45ed2c679b1
+
+#### VB · v4-brum-chant
+
+Weirdness 35, style influence 75, Vocal Gender female.
+
+```
+Gritty British blues rap and stomp rock, 93 BPM, straight, locked on the grid, driving. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a young Birmingham woman, bright punchy clear voice, rhythmic chant-like half-rap half-sung on the beat, narrow melody, confident, never rushed, dry and upfront. Dark, kinetic British protest-montage energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, cute, girly`
+
+- brj-vibe-v4-brum-chant-v6-w35 — 3:44 — https://suno.com/song/f2a483d6-9807-408a-ae95-3a7c7cd3d83a
+- brj-vibe-v4-brum-chant-v6-w35 — 3:45 — https://suno.com/song/abf81134-bb70-42f2-b7fa-8c2c2c063cbb
+
+#### VB · v5-yorks-indie
+
+Weirdness 40, style influence 70, Vocal Gender male.
+
+```
+Gritty British blues rap and stomp rock, 92 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: a Yorkshire man in his late twenties, clean slightly nasal indie voice with a sardonic sneer, sing-speak half-rapped on the beat, narrow melody, steady, dry and upfront. Dark, swaggering British heist-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, raspy voice, gravelly voice`
+
+- brj-vibe-v5-yorks-indie-v6-w40 — https://suno.com/song/b050f0fe-6724-43bc-906a-64b87d0e583e
+- brj-vibe-v5-yorks-indie-v6-w40 — https://suno.com/song/febc3af0-8879-4786-bd8f-6b4129f86cd8
+
+#### VB · v6-eastlondon-husky
+
+Weirdness 35, style influence 70, Vocal Gender female.
+
+```
+Gritty British blues rap and stomp rock, 91 BPM, straight, locked on the grid, head-nodding. No solo intro: a raw acoustic blues guitar riff with percussive palm-muted strumming starts together with a stomping hip-hop breakbeat in bar one - thick kick, tight snappy snare with clap, foot stomps, tambourine, tight hats. Heavily saturated growling synth bass locked to the kick. Shouted gang-vocal call-and-response in the hooks. Raw room grit, impact hits at drops, short room reverb, minimal pads. Dark warm mix with big dynamics: guitar-only breaks, then hard drops. Lead vocal: an East London woman in her forties, husky but controlled mezzo, streetwise half-sung half-spoken on the beat, narrow melody, knowing and unhurried, dry and upfront. Dark, swaggering British crime-film energy.
+```
+
+Exclude: `sitar, Indian, solo guitar intro, screaming, double-time, fast rap, autotune, EDM, pop, trap, metal, orchestral, belting`
+
+- brj-vibe-v6-eastlondon-husky-v6-w35 — https://suno.com/song/24954cb3-4b73-4fcc-9b41-e2647c55fa46
+- brj-vibe-v6-eastlondon-husky-v6-w35 — https://suno.com/song/5b5c2693-bd2f-4bad-ba85-a837f22db843
+
+Lyrics (v1; the others differ only in the verse delivery cue):
+
+```lyrics
+[Intro - guitar riff and full stomping beat together from bar one, no solo guitar, gang shout]
+(Robbery!)
+
+[Verse 1 - cool half-sung half-rapped, steady, on the beat]
+They say, ya can't make money from a tree
+let's see, each day, make hay, not free, aay
+work and get paid though, earning that dough
+but where does it go? nobody knows!
+
+means of production means a reduction
+standards bleeding, land-lords needing
+quantative easing, grandma FREEEEEEEZING!
+stimulus checks are next. Get wrecked!
+
+rent seeking?... I'm just about eating
+sorry, did I interrupt your meeting?
+remember kids, the Fed is not your friend!
+it prints all the dollars that the government spends
+
+this fiat system is insistent
+on debts existence, sooooo
+don't be hating on the credit rating
+or have resistance to the facts I'm stating
+
+[Chorus - lead plus shouted gang vocals answering]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus - lead plus shouted gang vocals answering, impact hit]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Verse 2 - cool half-sung half-rapped, steady, on the beat]
+Stacks and stacks of elastic cash
+distracted by a dispraxic flash,
+mob, angry at their shitty little job
+the right and the left both witness the theft
+
+blaming each other is a sick little cover
+institutional, dilutional, the usual
+distraction IS the attraction
+the intention is tension between the factions
+
+divide and conquer, just look at the hand
+It's not ya standard, propaganda, worth a couple grand-ahh
+it is, state, level, manipulation
+it is the devil, with a radio station
+
+stack up the vaults like a wheelbarrow
+risk of default is really rather narrow
+Biggie said waaaay back in ninety seven
+don't get high off your own supply
+
+[Chorus - lead plus shouted gang vocals answering]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus - lead plus shouted gang vocals answering, impact hit]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Break - guitar riff and stomps only, then the beat drops back in]
+
+[Verse 3 - cool half-sung half-rapped, steady, on the beat]
+You know the real star is Pablo Escobar,
+who has elastic bands not plastic hands,
+stacking up the cash by the grands
+standard plans are for the working man
+
+and this right here is a next level scam
+ill gotten gains, no need to explain
+"bail" and "out", will never mean the same
+own the printer and you don't fear winter
+
+crime is asset inflation, passive creation;
+of a wealth gap that drives the situation
+working people get paid in money, so it's not very funny
+when you print more and expect them not to worry
+
+hungry people, feed a revolution,
+then it's retribution, perhaps some execution
+it's time to give, not just to take
+but for heaven's sake, don't just eat cake
+
+[Outro - gang shout, then the guitar riff ends alone]
+(Robbery!)
+```
+
+### Round KA (2026-10-22): Jack's liked take, rebuilt with Kai's lyrics and six English voices
+
+Jack: liked https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5 (FA psychfolk w30, he renamed it "Best one"): "other than the Indian beginning … I loved the style/genre/beat/everything about it other than the voice. Recreate this song as faithfully as you can, whilst doing a variety of different English voices, also using Kai's lyrics, his lyrics are way better."
+
+**Listened first** (`docs/listening/log/2026-10-22-162100-024b82e8-378c-47bd-bf73-bb5eafea2ed5-024b82e8.md`, Gemini, unverified by a human): the take does **not** sound like its box. It is acoustic boom-bap: a nylon acoustic guitar with flamenco bends and palm-muted strumming, boom-bap kick/snare/clap, distorted growling synth bass, siren risers, vinyl noise, ~93 BPM. A British man half-raps the verses; a shouted gang/female chorus. The "Indian beginning" is the solo guitar's Phrygian bends, 0:00–0:25; the guitar motif continues under the beat after.
+
+So two music recipes, three voices each: **A** = the take's own stored prompt (Variety 0, so it is exactly what made it), voice clause swapped; **B** = the sound as heard. Every version opens on `[Intro: straight in on the drums and bass, no solo guitar]` to lose the intro.
+
+Lyrics: **Kai's words** (`score.md` § Lyrics, poet block), spelling and all. The poet cues are replaced by each voice's own delivery cues, and instrument cues outside this sound (brass, timpani, sirens, string stabs, boom-bap bar) are dropped or neutralised. Settings as the liked take: v6, style influence 75, weirdness 30, Variety Off, Max Mode off; Vocal Gender per voice; Duration 210 s (Kai's lyrics are longer). One Create each (2 takes), 60 credits (8,350 → 8,290), records checked: Kai's lyrics, Variety 0. Excludes: A = the liked take's own list, B = the same minus `rap, hip hop` (the sound is boom-bap); both plus bans aimed at each voice's opposite. Unheard.
+
+#### KA · a-yorkshire
+
+Vocal Gender male.
+
+```
+English psych folk funk, 100 BPM: a middle-aged Northern English man, gravelly baritone, thick Yorkshire accent, deadpan and sardonic, talk-singing every line. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, falsetto, crooning`
+
+- brj-kai-a-yorkshire-v6-w30 — 3:28 — https://suno.com/song/7cc394c7-04a7-4e73-b002-081f9479b085
+- brj-kai-a-yorkshire-v6-w30 — 3:30 — https://suno.com/song/26f4197b-57e3-46b8-adf7-4d5e92296250
+
+#### KA · b-cockney
+
+Vocal Gender female.
+
+```
+Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco bends and percussive palm-muted strumming, a punchy boom-bap kick, snare and clap, tight hi-hats, a distorted growling synth bass, siren risers, vinyl noise, a shouted gang chorus. Lead vocal: a young East London woman, bright cutting chest voice, strong cockney accent, cheeky and sneering, every word spat out clear.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, male vocals, breathy, soft`
+
+- brj-kai-b-cockney-v6-w30 — 3:29 — https://suno.com/song/81953c32-790e-4cb8-b1f3-d0a6ade93499
+- brj-kai-b-cockney-v6-w30 — 3:28 — https://suno.com/song/9a8c5456-d448-45cf-bcf1-91bfcc406bdf
+
+#### KA · a-posh
+
+Vocal Gender male.
+
+```
+English psych folk funk, 100 BPM: an upper-class English gentleman, crisp received pronunciation, smooth theatrical baritone, mock-polite and smug, crooning like a villain narrating his own crime. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, shouting, cockney`
+
+- brj-kai-a-posh-v6-w30 — 3:28 — https://suno.com/song/33c3b4ef-4b81-4cf9-8027-b92bb874355b
+- brj-kai-a-posh-v6-w30 — 3:28 — https://suno.com/song/a35e7452-8878-49a4-8cc3-074933fa1e37
+
+#### KA · b-smoky
+
+Vocal Gender female.
+
+```
+Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco bends and percussive palm-muted strumming, a punchy boom-bap kick, snare and clap, tight hi-hats, a distorted growling synth bass, siren risers, vinyl noise, a shouted gang chorus. Lead vocal: a weathered English woman in her fifties, deep smoky contralto, soft West Country accent, slow and contemptuous, every line weighed out.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, young pop voice, belting`
+
+- brj-kai-b-smoky-v6-w30 — 3:30 — https://suno.com/song/c7275407-2d79-462f-a3a6-f3c558f6b1a2
+- brj-kai-b-smoky-v6-w30 — 3:29 — https://suno.com/song/5cc1cef3-89e9-4845-ba51-e8334273f81d
+
+#### KA · b-brummie
+
+Vocal Gender male.
+
+```
+Gritty acoustic boom-bap, 93 BPM: a nylon acoustic guitar riff with flamenco bends and percussive palm-muted strumming, a punchy boom-bap kick, snare and clap, tight hi-hats, a distorted growling synth bass, siren risers, vinyl noise, a shouted gang chorus. Lead vocal: a young Birmingham man, broad Brummie accent, hoarse cracked punk shout, rabble-rousing, spitting every consonant.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, crooning, smooth vocal, falsetto`
+
+- brj-kai-b-brummie-v6-w30 — https://suno.com/song/dadf7c38-ab77-497a-aa0b-fecebb45db6c
+- brj-kai-b-brummie-v6-w30 — https://suno.com/song/bb14a2ba-c55b-47c3-a220-7cc44b116d7f
+
+#### KA · a-choirgirl
+
+Vocal Gender female.
+
+```
+English psych folk funk, 100 BPM: a young English woman, high clear choirgirl soprano, soft Northern accent, sweet innocent tone singing vicious words, whispered asides. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+Exclude: `comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, belting, growl`
+
+- brj-kai-a-choirgirl-v6-w30 — https://suno.com/song/3f72591f-6800-46ed-b8ed-172b4efb3bd2
+- brj-kai-a-choirgirl-v6-w30 — https://suno.com/song/ec27fc9a-eb26-4d82-bd35-98aa4b5c6ca4
+
+Lyrics (the Yorkshire version; the others differ only in the {V}/{C} delivery words):
+
+```lyrics
+[Intro: straight in on the drums and bass, no solo guitar]
+(Robbery!)
+
+[Verse 1: talk-sung, gravelly deadpan]
+They say, ya can't make money from a tree
+let's see, each day, make hay, not free, aay
+work and get paid though, earning that dough
+but where does it go? nobody knows!
+
+means of production means a reduction
+standards bleeding, land-lords needing
+[Gang shout doubles the lead]
+quantative easing, grandma FREEEEEEEZING!
+[Silence, then the punchline]
+stimulus checks are next. Get wrecked!
+
+rent seeking?... I'm just about eating
+[Mock-polite, sarcastic]
+sorry, did I interrupt your meeting?
+[Cutaway: chirpy high-pitched TV advert voice]
+remember kids, the Fed is not your friend!
+it prints all the dollars that the government spends
+
+[talk-sung, gravelly deadpan]
+this fiat system is insistent
+on debts existence, sooooo
+don't be hating on the credit rating
+or have resistance to the facts I'm stating
+
+[Chorus: barked, a few voices shout it back]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus: barked, louder, more voices]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Verse 2: talk-sung, gravelly deadpan, colder]
+Stacks and stacks of elastic cash
+distracted by a dispraxic flash,
+mob, angry at their shitty little job
+the right and the left both witness the theft
+
+blaming each other is a sick little cover
+institutional, dilutional, the usual
+[Gang shout doubles the lead]
+distraction IS the attraction
+the intention is tension between the factions
+
+divide and conquer, just look at the hand
+[Bouncy, skip on every comma]
+It's not ya standard, propaganda, worth a couple grand-ahh
+[Staccato, one word per beat]
+it is, state, level, manipulation
+it is the devil, with a radio station
+
+stack up the vaults like a wheelbarrow
+risk of default is really rather narrow
+Biggie said waaaay back in ninety seven
+[One bar only: a deep slow New York voice]
+don't get high off your own supply
+
+[Chorus: barked, a few voices shout it back]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Chorus: barked, full gang roar]
+Robbery, robbery!
+Call the police, it's a robbery!
+Debasement! Debasement! It happened in da basement!
+Printer is burrrrrrrrring, now now what's occurrrrrrrring?
+
+[Verse 3: talk-sung, gravelly deadpan, menace building]
+You know the real star is Pablo Escobar,
+who has elastic bands not plastic hands,
+stacking up the cash by the grands
+standard plans are for the working man
+
+and this right here is a next level scam
+ill gotten gains, no need to explain
+"bail" and "out", will never mean the same
+[Gang shout doubles the lead]
+own the printer and you don't fear winter
+
+crime is asset inflation, passive creation;
+of a wealth gap that drives the situation
+working people get paid in money, so it's not very funny
+when you print more and expect them not to worry
+
+[Almost silent, low and deadly serious]
+hungry people, feed a revolution,
+then it's retribution, perhaps some execution
+it's time to give, not just to take
+but for heaven’s sake, don't just eat cake
+
+[Outro: the gang shouts once]
+(Robbery!)
+```
+
+### Round CR (2026-10-22): clean room — English voices, written without the repo's Suno rules
+
+Jack: worried "we have too much in the Suno skills/repo that is confusing the prompt and making everything sound the same", then "just do English ones with varied voices" and "save the credits". A fresh helper wrote these **without reading any repo file, memory or the web**, told to disregard all house Suno rules (it still auto-loads CLAUDE.md, so the test is very clean, though not perfectly). It chose every box and setting itself, including Variety on, sliders off 75, its own excludes, per-section cue tags, and Duration. One change by me: `double-time, fast rap` added to eng-2's excludes (Jack's standing rule; its box asks for "rapid half-rapped"). One Create each (2 takes). **Only eng-1 and eng-2 ran** (8,370 → ~8,350): the run stalled on eng-3 because Suno's cookie banner covers the Create button. **Verdict (Jack, 2026-10-22): "this has fixed the voice problem."** See `docs/suno-gpt/suno-voices.md` §2f.
+
+- brj-cr-eng-1-v6-w45 — 3:40 — https://suno.com/song/d8f0d3fd-dab0-4bb2-bcf5-66bc2a0b32c0
+- brj-cr-eng-1-v6-w45 — 3:38 — https://suno.com/song/ad3c1a4d-238f-4ca3-9e81-ff543ac0b8fe
+- brj-cr-eng-2-v6-w55 — 3:20 — https://suno.com/song/af84081a-c0a4-41ae-9cd3-beb5a9d3d923
+- brj-cr-eng-2-v6-w55 — 3:19 — https://suno.com/song/e8d1dafc-8a97-45eb-a718-8c0f72369aee
+
+#### CR · eng-1
+
+Settings: weirdness 45, style influence 65, Variety off, Vocal Gender male, Duration 220 s.
+
+```
+Baggy Manchester funk-psych, loose shuffling breakbeat, wah-wah rhythm guitar, rolling melodic bassline, swirling Hammond organ, maracas and tambourine, backwards guitar swells, 98 BPM. Lead vocal: middle-aged Northern English man, thick Mancunian accent, deadpan, nasal, lazy sneering drawl, barely bothered to sing, menace through boredom
+```
+
+Exclude: `american accent, autotune, pop polish, belting, falsetto, rap`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: deadpan, spoken]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: lazy drawl]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: lads shouting back]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: sneered]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: sneered]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, flat, over organ]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: whole room shouting]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-2
+
+Settings: weirdness 55, style influence 60, Variety normal, Vocal Gender female, Duration 200 s.
+
+```
+Dirty London acid-funk with psychedelic breakbeats, 303 acid bassline squelch, chopped funk guitar, phased drum breaks, dubby delays, 108 BPM, gritty warehouse sound. Lead vocal: young South London woman, strong London accent, rapid half-rapped half-sung, sharp and snarling, sarcastic laughs between lines, confrontational and in your face
+```
+
+Exclude: `male vocals, american accent, autotune, breathy pop, soft r&b, ballad, double-time, fast rap`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: spat, mocking laugh]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: half-rapped, sharp]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: snarled hook]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: sarcastic]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: snarled hook]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, cold]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Acid Break]
+
+[Verse 3: building]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: shouted]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-3
+
+Settings: weirdness 60, style influence 55, Variety off, Vocal Gender male, Duration 230 s.
+
+```
+Late-1960s English psychedelic funk, music-hall swagger, harpsichord and Mellotron, fuzz bass, funky drummer groove, sitar drone, brass fanfares, tape flanging, 104 BPM, cinematic and sinister. Lead vocal: upper-class English gentleman, crisp received pronunciation, theatrical baritone, smug, mock-polite, sardonic like a villain narrating his own crime, rolled r's and crooning
+```
+
+Exclude: `american accent, autotune, rap, shouting, modern pop, edm`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: posh, mock-polite]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: crooned baritone]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: brass fanfare]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: theatrical]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: smug]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: theatrical]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, aristocratic, amused]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3: sinister]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: grand, full brass]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-4
+
+Settings: weirdness 40, style influence 60, Variety off, Vocal Gender female, Duration 240 s.
+
+```
+Bristol trip-hop funk with psychedelic haze, slow heavy breakbeat, deep dub bass, scratchy funk guitar, vinyl crackle, eerie strings, Rhodes piano, 88 BPM, smoky and menacing. Lead vocal: mature English woman in her fifties, West Country lilt, deep smoky contralto, worn and husky, slow and contemptuous, every line weighed out, soulful growl on the chorus
+```
+
+Exclude: `male vocals, american accent, autotune, young pop voice, rap, belting diva`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: low, slow, spoken]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: husky, unhurried]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: strings rise]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: soulful growl]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: contemptuous]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: soulful growl]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, tired, close mic]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: full, aching]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-5
+
+Settings: weirdness 55, style influence 60, Variety high, Vocal Gender male, Duration 190 s.
+
+```
+Midlands psychedelic funk-rock, heavy fuzz riffs, slap bass, cowbell, pounding live drums, wah-drenched lead guitar, space-echo freakouts, 124 BPM, raw and loud. Lead vocal: young Birmingham man, broad Brummie accent, shouting punk delivery, cracked hoarse voice, rabble-rousing, spits consonants, crowd backing yells
+```
+
+Exclude: `american accent, autotune, crooning, smooth vocal, falsetto, pop`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: shouted]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: hoarse shouting]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: crowd yells]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: screamed]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: screamed]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: spoken, breathless]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Fuzz Guitar Freakout]
+
+[Verse 3: rabble-rousing]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: everyone shouting]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+#### CR · eng-6
+
+Settings: weirdness 70, style influence 50, Variety normal, Vocal Gender female, Duration 210 s.
+
+```
+Eerie English psych-folk funk, 1970s pastoral horror, clean funky bass groove, brushed breakbeat, recorder and dulcimer, detuned Mellotron flutes, backwards tape, 96 BPM, creepy and hypnotic. Lead vocal: young English woman, high clear choirgirl soprano, soft rural Yorkshire accent, sweet and innocent tone singing vicious words, whispered threats, unsettling calm
+```
+
+Exclude: `male vocals, american accent, autotune, belting, rap, growl`
+
+Lyrics: draft 3 words, the helper's own section cues:
+
+```lyrics
+[Intro: whispered]
+They say you can't just walk in and take the money
+watch me
+(on the floor) on the fucking floor
+nobody move
+
+[Verse 1: sweet, clear soprano]
+Crowbar in the door of the house you never got
+missing teeth on the cold tiles, and they're taking the lot
+no masks these lot have lost the plot
+printing away, bag's full, bloody nails and your bag pulled
+
+empty pockets and got a hole in the lung
+coughing up blood by the end of the month
+rent letter's red and it's nailed to the door
+you worked the whole week and the week's worthless, more or less than before
+
+[Pre-Chorus: whispered echoes]
+and they're screaming 'bout the boats
+(the boats! the boats!)
+while the drill's in the wall
+and their hand's round your throat
+
+[Chorus: innocent, layered harmonies]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Verse 2: unsettling calm]
+Water the wine, bleed the freak's swine
+no gun needed, balacava's skeeted
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus: innocent, layered harmonies]
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+
+[Monologue: whispered, close]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one.
+
+[Verse 3]
+Paris, Lisbon, Brussels, Rome
+a whole continent out in the road with no home
+they're right to be angry, so look where to aim
+it's the bank with the lights on, read the fucking name
+
+[Final Chorus: soprano soaring over backwards tape]
+
+cash flow, somethings not natural,
+board the windows, sweep the glass
+this pricks got no fucking mask,
+bank roll with punches, bells rung and now you're on crutches
+```
+
+### Round HA (2026-10-22): test round — which constant is cloning the voice
+
+Jack, after the §2e audit: "please do a test round, I think all the bans are affecting it too." Three GA scenes (lagos, addis, tokyo), four versions each, **one constant changed per version**. Read it as a grid: compare across a row to see what each change does. GA itself is the control (full bans, draft 3, shout arc).
+
+| version | ban list | voice sentence | lyrics |
+|---|---|---|---|
+| a | **cut** | GA's (verses → shouted chorus) | draft 3 |
+| b | **cut** | **new: one delivery style, no shout arc** | draft 3 |
+| c | **cut** | GA's | **draft 2** (different words, test only) |
+| d | **cut** | **new** | **draft 2** |
+
+Exclude Styles (all): only Jack's standing rule, everything else removed:
+
+```
+double-time, fast rap
+```
+
+Settings as GA: v6, Variety Off, Personalize off, Max Mode off, Vocal Gender none, style influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. **Stopped by Jack after 5 Creates** ("forget the test round … save the credits"): lagos-a and lagos-b ran both weirdnesses, lagos-c only w30; addis and tokyo never ran. Unheard.
+
+#### HA · lagos-a
+
+```
+Lagos afro-psych funk, 108 BPM: a raspy Nigerian bandleader barking the verses, a female chorus shouting back, roaring on the chorus. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · lagos-b
+
+```
+Lagos afro-psych funk, 108 BPM: a smooth crooning high tenor leading a chanting women's choir, call and response. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · lagos-c
+
+```
+Lagos afro-psych funk, 108 BPM: a raspy Nigerian bandleader barking the verses, a female chorus shouting back, roaring on the chorus. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · lagos-d
+
+```
+Lagos afro-psych funk, 108 BPM: a smooth crooning high tenor leading a chanting women's choir, call and response. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+#### HA · addis-a
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a wailing Ethiopian tenor with wide melisma, quiet verses, a crying chorus. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · addis-b
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a soft breathy falsetto, intimate and close to the mic, every line sung. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · addis-c
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a wailing Ethiopian tenor with wide melisma, quiet verses, a crying chorus. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · addis-d
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a soft breathy falsetto, intimate and close to the mic, every line sung. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+#### HA · tokyo-a
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a theatrical Japanese man with heavy vibrato, brooding verses, a howled chorus. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+#### HA · tokyo-b
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a cool dry deadpan man talking over the groove, a woman cooing behind him. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+#### HA · tokyo-c
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a theatrical Japanese man with heavy vibrato, brooding verses, a howled chorus. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+#### HA · tokyo-d
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a cool dry deadpan man talking over the groove, a woman cooing behind him. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+### Round GA (2026-10-22): funk × psychedelic beats, voices from anywhere
+
+Jack: "forget everything and focus on blending funk with psychedelic beats, and have the voice vary in each one, forget English accents, just do a bunch of different ones from anywhere." Built fresh: no earlier round's boxes carried over. Twelve scenes, each with its own singer from that place (the genre word picks the voice, §2d), a psychedelic treatment on the **drums** (phaser, tape echo, spring reverb) and a quiet → loud arc against the monotone.
+
+Exclude Styles (all):
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, monotone
+```
+
+Lyrics: draft 3 as written (Jack's words, no labels added). Settings: v6, Variety Off, Personalize off, Max Mode off, **Vocal Gender none** (so women can come through too), style influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 24 Creates; balance 8,780 → 8,500 (280, so 40 more than 24 × 10; the extra 40 is unaccounted for, the same gap as before this round). Unheard.
+
+**Verdict (Jack, 2026-10-22): a lot of the voices sound like previous songs.** Audit of all 325 takes in
+`docs/suno-gpt/suno-voices.md` §2e: no saved Voice was attached and no prompt was rewritten. What
+stays constant is the lyrics (every take), the excludes, style influence 75, and a "verses… shouted
+chorus" sentence shape.
+
+#### GA · lagos — Lagos afro-psych funk
+
+```
+Lagos afro-psych funk, 108 BPM: a raspy Nigerian bandleader barking the verses, a female chorus shouting back, roaring on the chorus. Phased breakbeat drums, fuzz guitar, a wobbling organ, tape-echo horns, a fat bass.
+```
+
+- brj-fp-lagos-v6-w30 — 2:50 — https://suno.com/song/684ba7c9-b86a-460f-8979-33a0ef074e16
+- brj-fp-lagos-v6-w30 — 2:50 — https://suno.com/song/6637033c-f2fb-41f0-a2d4-9c057282d6a7
+- brj-fp-lagos-v6-w60 — 2:49 — https://suno.com/song/ebc4738f-7f53-4ef9-8666-5045543c7edd
+- brj-fp-lagos-v6-w60 — 2:49 — https://suno.com/song/53397aec-3051-4681-b613-5b5436ad874b
+
+#### GA · addis — Ethio-jazz psych funk
+
+```
+1970s Addis Ababa Ethio-jazz psych funk, 100 BPM: a wailing Ethiopian tenor with wide melisma, quiet verses, a crying chorus. Vibraphone, fuzz organ, a loping funk drummer drowned in spring reverb, a deep bass.
+```
+
+- brj-fp-addis-v6-w30 — 2:50 — https://suno.com/song/1d1d12a8-b65a-4df6-89fa-b580a8ddae73
+- brj-fp-addis-v6-w30 — 2:49 — https://suno.com/song/ff749e4c-6e6c-4cd6-93d5-dc5d78adfb99
+- brj-fp-addis-v6-w60 — 2:49 — https://suno.com/song/8a44156f-489a-485d-a99e-8f6e3e738de1
+- brj-fp-addis-v6-w60 — 2:50 — https://suno.com/song/8ac4902d-a2e8-4d18-a925-edbb92effe6e
+
+#### GA · kingston — Jamaican psychedelic dub funk
+
+```
+Jamaican psychedelic dub funk, 90 BPM: a gruff Jamaican chanter, low and slow on the verses, a hollered chorus. Rimshot drums thrown into tape echo, a heavy bass, wah guitar skank, siren delays, sudden dropouts.
+```
+
+- brj-fp-kingston-v6-w30 — 2:49 — https://suno.com/song/6b1d036f-73c7-49fe-8782-d2f4f0f29e2e
+- brj-fp-kingston-v6-w30 — 2:50 — https://suno.com/song/b6c81cba-df6f-435e-96e4-a09d6ee9ed81
+- brj-fp-kingston-v6-w60 — 2:50 — https://suno.com/song/302bf885-49db-4d13-bb94-151a824f9bff
+- brj-fp-kingston-v6-w60 — 2:50 — https://suno.com/song/0380c314-21dc-4921-ba35-582c05d6e8fc
+
+#### GA · tropicalia — Brazilian tropicália funk
+
+```
+1968 Brazilian tropicália funk, 104 BPM: a sly Brazilian woman whispering the verses, rising to a fierce shout on the chorus. Fuzz guitar, cuíca and agogô, a phased samba-funk breakbeat, a strutting bass, swirling organ.
+```
+
+- brj-fp-tropicalia-v6-w30 — 2:50 — https://suno.com/song/2860e14c-4dc5-46be-88d8-1c2514247f40
+- brj-fp-tropicalia-v6-w30 — 2:49 — https://suno.com/song/75adc9c0-0b06-468a-bc99-f50d192db197
+- brj-fp-tropicalia-v6-w60 — 2:49 — https://suno.com/song/3c435128-5581-4ca9-9ad9-a3221980f468
+- brj-fp-tropicalia-v6-w60 — 2:50 — https://suno.com/song/d556bf58-3c3a-430b-80aa-bef37277f5e2
+
+#### GA · detroit — Detroit psychedelic funk rock
+
+```
+1970 Detroit psychedelic funk rock, 102 BPM: a gravel-voiced American preacher growling the verses, screaming the chorus, a falsetto answering him. Acid fuzz guitar solos, a phaser drum break, a thick slap bass, a Moog.
+```
+
+- brj-fp-detroit-v6-w30 — 2:50 — https://suno.com/song/1d36c4bd-1a3e-47dd-9ada-e6eb749da2dd
+- brj-fp-detroit-v6-w30 — 2:50 — https://suno.com/song/2db699fb-62f9-4117-9995-be145c3134c5
+- brj-fp-detroit-v6-w60 — 2:50 — https://suno.com/song/41ccee11-cbee-4ed3-9368-f8476e908881
+- brj-fp-detroit-v6-w60 — 2:49 — https://suno.com/song/f0bef11d-2258-498c-9eec-0072c0905e62
+
+#### GA · bollywood — 1970s Bollywood psych funk
+
+```
+1970s Bollywood psychedelic funk, 106 BPM: a nasal high Indian playback singer, slinky verses, a soaring chorus. Fuzz sitar, tabla over a funk breakbeat, a Farfisa organ, stabbing strings, a wah-wah guitar.
+```
+
+- brj-fp-bollywood-v6-w30 — 2:50 — https://suno.com/song/5ff9003d-9cad-485b-9d20-6b0383290321
+- brj-fp-bollywood-v6-w30 — 2:49 — https://suno.com/song/8092e42c-4211-4fc4-98ba-7b40a07ac785
+- brj-fp-bollywood-v6-w60 — 2:50 — https://suno.com/song/cee9c936-5bec-4b7a-b68a-ab275437b470
+- brj-fp-bollywood-v6-w60 — 2:49 — https://suno.com/song/2478319e-af98-4c17-81bd-1509a1da3e5c
+
+#### GA · tokyo — Tokyo psych funk rock
+
+```
+1970s Tokyo psychedelic funk rock, 104 BPM: a theatrical Japanese man with heavy vibrato, brooding verses, a howled chorus. Fuzz guitar feedback, a tight phased funk drummer, a Hammond organ, a growling bass.
+```
+
+- brj-fp-tokyo-v6-w30 — 2:50 — https://suno.com/song/0ddbe4ad-0d8f-4fcc-967d-83baa75fe7b2
+- brj-fp-tokyo-v6-w30 — 2:49 — https://suno.com/song/bc685aea-3977-4393-ab34-a25c74bdb829
+- brj-fp-tokyo-v6-w60 — 2:50 — https://suno.com/song/f24a8032-8ffc-494d-b627-f386fd7f3ffa
+- brj-fp-tokyo-v6-w60 — 2:49 — https://suno.com/song/71b6f037-a26d-46ef-96cf-68b70428ed11
+
+#### GA · phnompenh — Phnom Penh psych rock funk
+
+```
+1960s Phnom Penh psych rock funk, 108 BPM: a high piercing Cambodian woman, shivering verses, a soaring wailed chorus. Surf-reverb fuzz guitar, Farfisa organ, garage drums with a funk swing, a bouncing bass.
+```
+
+- brj-fp-phnompenh-v6-w30 — 2:50 — https://suno.com/song/6db53ce5-507c-40f3-9195-e315e06c0bbe
+- brj-fp-phnompenh-v6-w30 — 2:50 — https://suno.com/song/736dab65-440a-4bb0-aa40-c7311a96e7f4
+- brj-fp-phnompenh-v6-w60 — 2:49 — https://suno.com/song/9b5457e5-dc9a-4562-a70d-f2e031788af7
+- brj-fp-phnompenh-v6-w60 — 2:49 — https://suno.com/song/7e8cf714-abff-4083-b820-72aad42d2703
+
+#### GA · paris — Paris psychedelic funk
+
+```
+1970s Paris psychedelic funk, 96 BPM: a smoky French man murmuring the verses half-spoken, cracking into a hoarse cry on the chorus. Heavy reverb funk drums, a slinky bass, fuzz guitar, a string swell, phased hand claps.
+```
+
+- brj-fp-paris-v6-w30 — 2:49 — https://suno.com/song/08808d39-7a15-4326-b6ae-2ebd31e3a5b0
+- brj-fp-paris-v6-w30 — 2:50 — https://suno.com/song/6eb8a269-d05f-473e-9f3a-40a23fa6687b
+- brj-fp-paris-v6-w60 — 2:50 — https://suno.com/song/9418a1a8-ba89-4387-99b3-85b4c90e1a4c
+- brj-fp-paris-v6-w60 — 2:50 — https://suno.com/song/6c7fb8d6-7db1-4606-8e40-4d4f07b4c6a1
+
+#### GA · eastla — East LA Chicano psych soul
+
+```
+East LA Chicano psychedelic soul funk, 98 BPM: a sweet Chicano falsetto, tender verses, a desperate pleading chorus. Timbales and congas over a phased funk break, a fuzz guitar, a Hammond organ, a deep bass.
+```
+
+- brj-fp-eastla-v6-w30 — 2:50 — https://suno.com/song/ddc8489d-7222-4eab-9b0d-04304f1e603a
+- brj-fp-eastla-v6-w30 — 2:50 — https://suno.com/song/111ff8bb-9d04-4d17-b3b4-3e6ef5efae0d
+- brj-fp-eastla-v6-w60 — 2:50 — https://suno.com/song/bd7f4165-5658-447f-a74c-e100a45dc198
+- brj-fp-eastla-v6-w60 — 2:50 — https://suno.com/song/c17d96bf-35fc-4b81-a4a4-5cffe61e69dc
+
+#### GA · neworleans — New Orleans swamp funk
+
+```
+New Orleans psychedelic swamp funk, 100 BPM: a raspy Cajun growler muttering the verses, howling the chorus. A second-line funk drummer soaked in tape echo, a voodoo organ, a fuzz clavinet, a slithering bass, tambourine.
+```
+
+- brj-fp-neworleans-v6-w30 — 2:50 — https://suno.com/song/5ff50156-5b6a-4b54-9919-a41ee7ab1392
+- brj-fp-neworleans-v6-w30 — 2:50 — https://suno.com/song/e20e8b50-69f9-4c88-b28a-54408eb42826
+- brj-fp-neworleans-v6-w60 — 2:49 — https://suno.com/song/227c1a7a-f4a4-42ef-9a71-7868e40f0bcd
+- brj-fp-neworleans-v6-w60 — 2:50 — https://suno.com/song/947a70a7-9454-4992-b990-713464032040
+
+#### GA · soweto — Soweto psychedelic funk
+
+```
+1970s Soweto psychedelic funk, 106 BPM: a deep Zulu bass voice rumbling the verses, a women's chorus soaring on the chorus. Fuzz guitar, a phased funk breakbeat, a spiralling organ, a fat walking bass.
+```
+
+- brj-fp-soweto-v6-w30 — 2:50 — https://suno.com/song/e3b2d55c-5e9a-41b4-b9cc-553912ecc92f
+- brj-fp-soweto-v6-w30 — https://suno.com/song/f78154dc-e048-41a9-9cc9-aa1d74d498a8
+- brj-fp-soweto-v6-w60 — https://suno.com/song/04e1b890-50da-4f52-800e-bc5aad34cce0
+- brj-fp-soweto-v6-w60 — https://suno.com/song/e6127a4a-8d6a-4e6d-9169-7e0a67823324
+
+### Round FA (2026-10-22): more psychedelic genres
+
+Jack: "please mess around with more psychedelic genres." Twelve psych scenes, each a **genre word
+that brings its own singer** (§2d) with funk kept in the groove: eight English scenes, then four world
+psych-funk scenes sung by an English voice on purpose (mismatched, as Jack allowed). Each box names
+instruments and effects rather than leaning on the word "psychedelic" (web tip: a bare label gets
+flattened), stays short (4–8 descriptors), and carries a quiet→loud arc against monotone.
+
+Sources: molam (Vice; Café Oto: "what makes Molam psychedelic is the khaen"), chicha (MasterClass;
+Musique Machine); the rest general knowledge. Repo: Jack already liked psychedelic dub on Camping
+(`docs/stories/camping/songs/camping-pinned.md`).
+
+Exclude Styles (all):
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+Lyrics: the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max Mode
+off, Vocal Gender male, style influence 75, Duration 170 s, weirdness 30 and 60, workspace
+`bank-robbery-Jack`. 24 Creates, 240 credits (9,060 → 8,820). Stored prompts verbatim, Variety 0.
+Unheard.
+
+#### FA · ufo — 1967 London psychedelia (UFO Club)
+
+```
+1967 London psychedelic funk, UFO Club, 100 BPM: a whimsical deadpan English singer close to speaking, rising to a wail on the chorus. Farfisa organ, echoing slide guitar, a fat funk bassline, breakbeat drums.
+```
+
+- brj-psy-ufo-v6-w30 — 2:49 — https://suno.com/song/ddeca778-1429-455d-a528-46736e93e80d
+- brj-psy-ufo-v6-w30 — 2:49 — https://suno.com/song/e044cc0b-b3f0-4ccb-b387-b8d560e7f099
+- brj-psy-ufo-v6-w60 — 2:49 — https://suno.com/song/9e9cabcd-770f-423a-8a8c-acfb21221afe
+- brj-psy-ufo-v6-w60 — 2:49 — https://suno.com/song/ed6477c6-fdf4-4e98-b49a-b47da0bb54a7
+
+#### FA · freakbeat — 1966 freakbeat
+
+```
+1966 London freakbeat funk, 112 BPM: a snotty shouting mod, sneered verses, a yelled chorus. Fuzz guitar feedback, pounding R&B drums, Hammond stabs, a strutting bass.
+```
+
+- brj-psy-freakbeat-v6-w30 — 2:49 — https://suno.com/song/2985ee2b-d4ae-479b-87b0-4ff1d8c13e6c
+- brj-psy-freakbeat-v6-w30 — 2:49 — https://suno.com/song/f7e5efd2-a6c2-4baf-91d4-1525724771bb
+- brj-psy-freakbeat-v6-w60 — 2:49 — https://suno.com/song/7bfc218b-306f-4b09-a791-4f2adbcb6e8f
+- brj-psy-freakbeat-v6-w60 — 2:50 — https://suno.com/song/6d57fa66-8137-428f-b2e8-59610e0c1f4a
+
+#### FA · canterbury — Canterbury scene jazz-funk
+
+```
+Canterbury scene jazz-funk, 104 BPM: a gentle high wistful English voice, fragile verses swelling into a pleading chorus. Fuzz organ, a slinky odd-time funk groove, flute, Mellotron.
+```
+
+- brj-psy-canterbury-v6-w30 — 2:49 — https://suno.com/song/3395d915-6fbf-4bf5-a529-c145c55607e8
+- brj-psy-canterbury-v6-w30 — 2:49 — https://suno.com/song/a6f1842b-e767-47b0-b142-ab6aff79b551
+- brj-psy-canterbury-v6-w60 — 2:49 — https://suno.com/song/2d80a8b5-3550-46de-aa90-bceea69f5efc
+- brj-psy-canterbury-v6-w60 — 2:49 — https://suno.com/song/e5b5c75f-61d0-440d-b15f-4f65f84c587c
+
+#### FA · spacerock — 1972 space rock
+
+```
+1972 English space rock funk, 104 BPM: a gruff half-spoken chanting man, roaring on the chorus. Oscillator whooshes, a droning fuzz bass, pounding motorik drums, wah-wah guitar.
+```
+
+- brj-psy-spacerock-v6-w30 — 2:48 — https://suno.com/song/a3631fbb-568c-417d-a14a-bf94b0b4e93b
+- brj-psy-spacerock-v6-w30 — 2:49 — https://suno.com/song/5aa5dc08-38ad-4f3c-8b6b-646b5c1fa9a7
+- brj-psy-spacerock-v6-w60 — 2:49 — https://suno.com/song/da792385-ad69-435f-9399-e581436f49d2
+- brj-psy-spacerock-v6-w60 — 2:49 — https://suno.com/song/fc28eed7-b4cf-455d-a377-ba74d59e5791
+
+#### FA · psychfolk — English psych folk
+
+```
+English psych folk funk, 100 BPM: a wavering untrained English folk singer with warbling ornaments, climbing to a cry on the chorus. Sitar, tin whistle, hand drums, a slinky funk bass.
+```
+
+- brj-psy-psychfolk-v6-w30 — 2:48 — https://suno.com/song/f6b49f9f-a742-419a-9450-b54dc7d740a7
+- brj-psy-psychfolk-v6-w30 — 2:49 — https://suno.com/song/024b82e8-378c-47bd-bf73-bb5eafea2ed5
+- brj-psy-psychfolk-v6-w60 — 2:48 — https://suno.com/song/e6f17bb8-fa6e-40ca-b21d-143fbe4c99a4
+- brj-psy-psychfolk-v6-w60 — 2:49 — https://suno.com/song/9d052f8d-35db-4802-841e-1d06c3841677
+
+#### FA · shoegaze — shoegaze
+
+```
+Shoegaze funk, 98 BPM: a breathy sighing English man half-buried in the guitars, breaking through hoarse on the chorus. Walls of warped fuzz guitar, reverse reverb, a funky breakbeat, a deep bass.
+```
+
+- brj-psy-shoegaze-v6-w30 — 2:49 — https://suno.com/song/7cbe6cee-2b61-4854-a608-e98da4b2518e
+- brj-psy-shoegaze-v6-w30 — 2:49 — https://suno.com/song/81a99ac1-ef53-421c-8314-1cd77505df97
+- brj-psy-shoegaze-v6-w60 — 2:49 — https://suno.com/song/6891bbb7-d289-4f38-b20a-10fc43509e72
+- brj-psy-shoegaze-v6-w60 — 2:49 — https://suno.com/song/721a82c1-452e-4250-bc0d-13779d5712eb
+
+#### FA · psychdub — London psychedelic dub (On-U)
+
+```
+London psychedelic dub, On-U Sound, 92 BPM: an English man chanting through echo, voice thrown into the delays on the chorus. Tape echo throws, spring reverb, a deep sub bass, funky dub drums, sudden dropouts.
+```
+
+- brj-psy-psychdub-v6-w30 — 2:48 — https://suno.com/song/478ff464-173e-467a-848c-53213c6d19e1
+- brj-psy-psychdub-v6-w30 — 2:50 — https://suno.com/song/6eb5bc4c-4159-4757-8747-dae183f11628
+- brj-psy-psychdub-v6-w60 — 2:49 — https://suno.com/song/073089ff-e31d-4ebf-a457-bc6ada8ff663
+- brj-psy-psychdub-v6-w60 — 2:49 — https://suno.com/song/2758eb3f-2bf4-40ed-99ed-40deb206dffc
+
+#### FA · britpsych — 1990s Britpsych
+
+```
+1990s Britpsych funk, 106 BPM: a confident nasal English rock singer, cocky verses, a big chanted chorus. Sitar and tabla, Hammond organ, wah-wah guitar, backwards guitar, a funky drummer.
+```
+
+- brj-psy-britpsych-v6-w30 — 2:48 — https://suno.com/song/8f402309-6843-46ee-9bcc-9efaa424a1d5
+- brj-psy-britpsych-v6-w30 — 2:49 — https://suno.com/song/182bf61f-19ff-454c-abab-393ee51d44ac
+- brj-psy-britpsych-v6-w60 — 2:49 — https://suno.com/song/4e903c51-a27d-4fa4-81a6-e035771f59ad
+- brj-psy-britpsych-v6-w60 — 2:49 — https://suno.com/song/6dd8e359-9859-45f9-ab2f-09a57ce8031d
+
+#### FA · anatolian — Anatolian psych funk, English singer
+
+```
+A sneering English man singing over 1970s Anatolian psychedelic funk, 104 BPM: fuzz saz in Turkish scales, darbuka, a wailing organ, a heavy funk bass. Snarled verses, a howled chorus.
+```
+
+- brj-psy-anatolian-v6-w30 — 2:49 — https://suno.com/song/110d7f0d-7b2d-407a-9008-fc08aaeff1d2
+- brj-psy-anatolian-v6-w30 — 2:49 — https://suno.com/song/a8bf9f0c-598f-40a2-8cc0-b86df111fa66
+- brj-psy-anatolian-v6-w60 — 2:49 — https://suno.com/song/5231ea19-4c20-40a2-a9ef-e36ecdd7c11e
+- brj-psy-anatolian-v6-w60 — 2:50 — https://suno.com/song/e0feafa9-3a7b-49f2-800b-7680fa75b09f
+
+#### FA · zamrock — 1970s Zamrock
+
+```
+1970s Zamrock, 108 BPM: a swaggering raw singer in English, strutting verses, a shouted chorus. Raw garage fuzz guitar, Afro-funk drums, a cheap organ, lo-fi tape.
+```
+
+- brj-psy-zamrock-v6-w30 — 2:48 — https://suno.com/song/466910d4-77d3-4372-805d-9e0a57ff77d4
+- brj-psy-zamrock-v6-w30 — 2:49 — https://suno.com/song/a49c44a0-c85f-4a1d-b7ea-8aa70895c0b2
+- brj-psy-zamrock-v6-w60 — 2:49 — https://suno.com/song/50e66420-b5c7-4d10-b6c9-bb992150cd30
+- brj-psy-zamrock-v6-w60 — 2:49 — https://suno.com/song/fadff6d9-8120-419c-bda5-48f10cda5368
+
+#### FA · molam — Thai molam psych funk, English singer
+
+```
+An English soul man singing over Thai molam psychedelic funk, 104 BPM: electric phin lute, droning khaen mouth organ, a funk bass, tight drums. Murmured verses, a soaring chorus.
+```
+
+- brj-psy-molam-v6-w30 — 2:49 — https://suno.com/song/7243545e-aad7-47c9-802a-b80ae38fff06
+- brj-psy-molam-v6-w30 — 2:49 — https://suno.com/song/c128eb10-2361-4f7f-8037-7a3c7a2dd22e
+- brj-psy-molam-v6-w60 — 2:49 — https://suno.com/song/2396e616-5ed4-4f4d-9568-063ebbeee545
+- brj-psy-molam-v6-w60 — 2:49 — https://suno.com/song/2c27c80c-b5e6-4945-b575-146eb56a4bc2
+
+#### FA · chicha — Peruvian chicha, English singer
+
+```
+An English crooner singing over Peruvian chicha psychedelic cumbia, 100 BPM: Farfisa organ, wah-wah and surf-reverb guitars, timbales, congas and cowbell. Smooth verses, a belted chorus.
+```
+
+- brj-psy-chicha-v6-w30 — 2:49 — https://suno.com/song/5c2c288d-1bf8-4ac8-b9a9-bb82fa6781cb
+- brj-psy-chicha-v6-w30 — 2:50 — https://suno.com/song/bb49c3e8-b64b-4157-848c-b9646e9f7835
+- brj-psy-chicha-v6-w60 — 2:49 — https://suno.com/song/78a12e1b-4e95-494a-ac01-b9e044d60565
+- brj-psy-chicha-v6-w60 — https://suno.com/song/b30d1630-f693-43c4-823b-2b7fc9c0fe4c
+
+### Round EA (2026-10-22): funk blends, straight and psychedelic
+
+Jack on Round DA: "the bristol triphop was great but not enough funk and was too flat and
+monotone … come up with funk blends with other genres … also do psychedelic versions of it all."
+He also ruled, for the skill: **the genre massively affects the voice** (now the second 🔑 in
+`.claude/skills/suno-prompt/SKILL.md`).
+
+Each box opens with a **funk blend that carries its own English singer** (genre word = voice, per
+§2d), then a delivery **arc** (quiet → loud) against the monotone, then its instruments. Each blend
+also has a **psychedelic** twin: `Psychedelic` in front, plus one production sentence. Sources: Baggy
+and Brit funk (Wikipedia), A Certain Ratio (Last.fm, DJ Mag), Psychedelic Shack (Wikipedia: fuzz,
+synth effects, stereo-shifting vocals); the rest general knowledge.
+
+**Trip hop only:** the lyric section labels carry the arc (`[Verse 1: murmured, close]`,
+`[Pre-Chorus: building, rising]`, `[Chorus: urgent cracked cry]` …); Jack's words unchanged. Other
+blends use the stored lyrics as they are.
+
+Exclude Styles (all):
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, monotone
+```
+
+Settings: v6, Variety Off, Personalize off, Max Mode off, Vocal Gender male, style influence 75,
+Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 24 Creates, 240 credits
+(9,300 → 9,060). Stored prompts verbatim, Variety 0. Unheard.
+
+#### EA · funk-triphop — Bristol trip hop funk
+
+```
+Bristol trip hop funk, 96 BPM: a close-mic English man who murmurs the verses, then rises into an urgent cracked cry on the chorus, answering himself. A heavy funky breakbeat, a fat slap bassline, wah-wah guitar, horn stabs, a Rhodes. Played completely straight.
+```
+
+- brj-funk-triphop-v6-w30 — 2:48 — https://suno.com/song/9cbb6d4c-413e-4687-8961-328c77036aa4
+- brj-funk-triphop-v6-w30 — 2:49 — https://suno.com/song/4ecfb47d-26d6-4c23-b969-da534fecd06c
+- brj-funk-triphop-v6-w60 — 2:49 — https://suno.com/song/a29a4739-5fd7-412a-93a0-c0d474f90475
+- brj-funk-triphop-v6-w60 — 2:49 — https://suno.com/song/b9b9dcdb-5faf-4f17-b394-31c37a748357
+
+#### EA · psych-triphop — psychedelic Bristol trip hop funk
+
+```
+Psychedelic bristol trip hop funk, 96 BPM: a close-mic English man who murmurs the verses, then rises into an urgent cracked cry on the chorus, answering himself. A heavy funky breakbeat, a fat slap bassline, wah-wah guitar, horn stabs, a Rhodes. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-triphop-v6-w30 — 2:48 — https://suno.com/song/e42997fb-8c09-46b4-8f16-8d79338c0a0a
+- brj-psych-triphop-v6-w30 — 2:49 — https://suno.com/song/94d50c4e-9761-474a-ad0e-32a2e9a0d56e
+- brj-psych-triphop-v6-w60 — 2:49 — https://suno.com/song/10f19278-6e7d-4e14-a5f1-adc4e19d8aff
+- brj-psych-triphop-v6-w60 — 2:49 — https://suno.com/song/e77c5b5e-cb14-439f-856a-307e68c6c822
+
+#### EA · funk-acidjazz — London acid jazz
+
+```
+London acid jazz, 104 BPM: a soulful English man, conversational verses that lift into a soaring falsetto chorus. Live slap bass, Hammond organ, a horn section, wah-wah rhythm guitar, flute, a breakbeat drummer. Played completely straight.
+```
+
+- brj-funk-acidjazz-v6-w30 — 2:49 — https://suno.com/song/12e9477f-a1b7-459c-8530-883d39a436a2
+- brj-funk-acidjazz-v6-w30 — 2:49 — https://suno.com/song/f1e1de57-565f-4e37-a0a5-9021a838e88e
+- brj-funk-acidjazz-v6-w60 — 2:46 — https://suno.com/song/b568a4a9-8e41-4c9c-98d8-cd19a2ed1291
+- brj-funk-acidjazz-v6-w60 — 2:49 — https://suno.com/song/1be2d8b1-44f8-442b-a9da-fb109ea997de
+
+#### EA · psych-acidjazz — psychedelic London acid jazz
+
+```
+Psychedelic london acid jazz, 104 BPM: a soulful English man, conversational verses that lift into a soaring falsetto chorus. Live slap bass, Hammond organ, a horn section, wah-wah rhythm guitar, flute, a breakbeat drummer. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-acidjazz-v6-w30 — 2:48 — https://suno.com/song/d972e9c7-cbe4-4c63-ad45-c3af9a65bb46
+- brj-psych-acidjazz-v6-w30 — 2:49 — https://suno.com/song/1ffea315-8135-4703-af03-8fcae3a018bc
+- brj-psych-acidjazz-v6-w60 — 2:49 — https://suno.com/song/53515c29-a45f-4da6-82f6-9c0dfcba6337
+- brj-psych-acidjazz-v6-w60 — 2:49 — https://suno.com/song/850004ad-4594-4ccc-8e5f-10d8d9317120
+
+#### EA · funk-baggy — Madchester baggy funk
+
+```
+Madchester baggy funk, 100 BPM: a lazy flat Mancunian chant-singer, swaggering verses, a terrace-chant chorus with the crowd. A shuffling funky drummer break, wah-wah jangle guitar, a lazy melodic bass, piano stabs, congas. Played completely straight.
+```
+
+- brj-funk-baggy-v6-w30 — 2:46 — https://suno.com/song/5a224e05-8e36-4815-b2da-2873aae89e04
+- brj-funk-baggy-v6-w30 — 2:49 — https://suno.com/song/cc60b865-7209-479a-a1ec-82ff7701c6ea
+- brj-funk-baggy-v6-w60 — 2:48 — https://suno.com/song/fa374568-d64a-4fb0-881f-200e97c5a99e
+- brj-funk-baggy-v6-w60 — 2:49 — https://suno.com/song/127c194f-4d74-47be-be4c-a287cbf152de
+
+#### EA · psych-baggy — psychedelic Madchester baggy funk
+
+```
+Psychedelic madchester baggy funk, 100 BPM: a lazy flat Mancunian chant-singer, swaggering verses, a terrace-chant chorus with the crowd. A shuffling funky drummer break, wah-wah jangle guitar, a lazy melodic bass, piano stabs, congas. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-baggy-v6-w30 — 2:48 — https://suno.com/song/efe3884f-35ce-4e8b-a5fb-254027579ff7
+- brj-psych-baggy-v6-w30 — 2:49 — https://suno.com/song/19bb09c4-042a-4f4c-acac-f433a7aefc21
+- brj-psych-baggy-v6-w60 — 2:49 — https://suno.com/song/6f6f5fed-ea31-4604-8ea9-d681485381cf
+- brj-psych-baggy-v6-w60 — 2:49 — https://suno.com/song/af510b75-1d5a-4b06-bb28-4291a6bf74da
+
+#### EA · funk-punkfunk — 1980 Manchester punk-funk
+
+```
+1980 Manchester punk-funk, 112 BPM: a tense yelping English man barking the verses, a shouted chorus. Scratchy choppy funk guitar, a dominant slap bass, cowbell and Latin percussion, a lonely trumpet. Played completely straight.
+```
+
+- brj-funk-punkfunk-v6-w30 — 2:48 — https://suno.com/song/9d4ce96f-5ffa-4816-8161-2f0daa69ab02
+- brj-funk-punkfunk-v6-w30 — 2:48 — https://suno.com/song/b3f47daa-8ead-4440-9465-3d5e6ecbeb6a
+- brj-funk-punkfunk-v6-w60 — 2:48 — https://suno.com/song/f48f1bb7-5928-4c81-8753-f23f31cf7ee7
+- brj-funk-punkfunk-v6-w60 — 2:49 — https://suno.com/song/03980c0d-0945-4157-8873-67781ec85faf
+
+#### EA · psych-punkfunk — psychedelic 1980 Manchester punk-funk
+
+```
+Psychedelic 1980 Manchester punk-funk, 112 BPM: a tense yelping English man barking the verses, a shouted chorus. Scratchy choppy funk guitar, a dominant slap bass, cowbell and Latin percussion, a lonely trumpet. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-punkfunk-v6-w30 — 2:49 — https://suno.com/song/d9d71eeb-51f7-4815-87a0-17c14f7dc4ea
+- brj-psych-punkfunk-v6-w30 — 2:50 — https://suno.com/song/9603a42e-073c-404b-9fc6-1282ab6fe831
+- brj-psych-punkfunk-v6-w60 — 2:49 — https://suno.com/song/42087ffe-8932-4bbf-9f32-d3bd6a92a8e1
+- brj-psych-punkfunk-v6-w60 — 2:49 — https://suno.com/song/ed332873-569b-402d-b3de-d22d3e94c257
+
+#### EA · funk-britfunk — 1981 London Brit funk
+
+```
+1981 London Brit funk, 110 BPM: a bright soulful English man, smooth verses that climb into a high belted chorus with a gang answering. Thumping slap bass, bright synths, horn stabs, clavinet, a tight disco-funk beat. Played completely straight.
+```
+
+- brj-funk-britfunk-v6-w30 — 2:49 — https://suno.com/song/647575c9-2fd2-4efb-9c8f-d9fc8af51b67
+- brj-funk-britfunk-v6-w30 — 2:50 — https://suno.com/song/9f771971-6419-4743-afff-16a5f62a5d01
+- brj-funk-britfunk-v6-w60 — 2:49 — https://suno.com/song/42b14ca5-29cd-482f-b18b-84fb202fde8f
+- brj-funk-britfunk-v6-w60 — 2:49 — https://suno.com/song/54983847-f3f1-426e-874c-d07f18c45452
+
+#### EA · psych-britfunk — psychedelic 1981 London Brit funk
+
+```
+Psychedelic 1981 London Brit funk, 110 BPM: a bright soulful English man, smooth verses that climb into a high belted chorus with a gang answering. Thumping slap bass, bright synths, horn stabs, clavinet, a tight disco-funk beat. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-britfunk-v6-w30 — 2:49 — https://suno.com/song/3cb25798-fcc1-4ed5-a035-750ca930410a
+- brj-psych-britfunk-v6-w30 — 2:50 — https://suno.com/song/99bee4a1-3588-41b8-a92c-172548e06494
+- brj-psych-britfunk-v6-w60 — 2:49 — https://suno.com/song/d69af18c-2f8d-454e-a069-c3f449f2fdf7
+- brj-psych-britfunk-v6-w60 — 2:49 — https://suno.com/song/e12eaf76-8411-492a-bc1d-522509b9db1a
+
+#### EA · funk-bigbeat — 1990s English big beat
+
+```
+1990s English big beat, 108 BPM: a hoarse English MC hollering the verses, a bellowed chorus. A distorted compressed funk break, acid bass squelch, sampled brass stabs, filter sweeps. Played completely straight.
+```
+
+- brj-funk-bigbeat-v6-w30 — 2:49 — https://suno.com/song/96f29b2d-eb20-4018-a2bc-7be97d2bdf4e
+- brj-funk-bigbeat-v6-w30 — 2:49 — https://suno.com/song/a4e4f60e-3d3c-4729-ac5b-c660f65a6a5c
+- brj-funk-bigbeat-v6-w60 — 2:49 — https://suno.com/song/32bc59da-c536-49b0-a338-d0d936600580
+- brj-funk-bigbeat-v6-w60 — 2:49 — https://suno.com/song/966ab398-f110-442d-a4de-615d1a053f08
+
+#### EA · psych-bigbeat — psychedelic 1990s English big beat
+
+```
+Psychedelic 1990s English big beat, 108 BPM: a hoarse English MC hollering the verses, a bellowed chorus. A distorted compressed funk break, acid bass squelch, sampled brass stabs, filter sweeps. Psychedelic production: phaser swirl on the guitars, tape echo throws, backwards guitar, fuzz, a Leslie organ, sound hard-panned left and right. Played completely straight.
+```
+
+- brj-psych-bigbeat-v6-w30 — 2:49 — https://suno.com/song/c551817e-0b78-4e6a-9112-f5663e763d20
+- brj-psych-bigbeat-v6-w30 — 2:49 — https://suno.com/song/c5e0609a-f6e6-4db2-9310-7d1eb429d216
+- brj-psych-bigbeat-v6-w60 — https://suno.com/song/3d0bf3da-ab91-41c8-b6cc-0037354abaf2
+- brj-psych-bigbeat-v6-w60 — https://suno.com/song/784a95bf-4728-4b95-8866-6ef62e5b3f95
+
+### Round DA (2026-10-22): ten styles × ten English voices, mixed on purpose
+
+Jack: "come up with a bunch of 70s cop funk styles, or styles like that, with a range of varied
+english singers, and mess around with the combos so that the voices actually change, the voices
+don't have to fit the style and the style can be anything."
+
+**The design.** §2d's finding is that the *genre word* picks the singer and voice adjectives barely
+move him. So each box opens with a **voice tradition** (a pool word that carries an English singer),
+followed by a **different** cop-funk-family music sentence. Every voice and every music style is
+used once, and none sits with its natural partner. No names, no Covers, Variety Off.
+
+Music family (web, 2026-10-22: Rolling Stone Italia on poliziotteschi, Wikipedia on The Sweeney's
+Harry South; the rest general knowledge): cop-show funk, blaxploitation soul, spy crime jazz,
+Italian police library funk, British TV detective theme, police-drama theme, dub reggae, heist big
+band, krautrock funk. Voice pools that carry an English accent: no web evidence beyond weak Britpop
+playlists, so this round is the measurement.
+
+Lyrics (all): the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max
+Mode off, Vocal Gender male (female for Northern soul), style influence 75, Duration 170 s,
+weirdness 30 and 60, workspace `bank-robbery-Jack`. 20 Creates, 200 credits (9,500 → 9,300).
+
+**Verdict (Jack, 2026-10-22): the Bristol trip hop was great, but not enough funk, and too flat and monotone.** See Round EA.
+
+#### DA · punk — 1977 London punk × cop-show funk
+
+```
+1977 London punk shouter, a snotty sneering yelping young man, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a fat rumbling bass, breakbeat drums with congas. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-punk-v6-w30 — 2:49 — https://suno.com/song/150c8814-3044-4f30-a06c-29ffe05836e8
+- brj-mix-punk-v6-w30 — 2:49 — https://suno.com/song/fb6a2544-5bee-464f-8b12-a906cb3b05c7
+- brj-mix-punk-v6-w60 — 2:49 — https://suno.com/song/c382c9f7-b7f6-4e5c-9a4a-180a94b06a53
+- brj-mix-punk-v6-w60 — 2:49 — https://suno.com/song/e5887638-236e-4d34-9beb-b56105eab940
+
+#### DA · musichall — music hall cockney × blaxploitation soul
+
+```
+Old London music hall singer, a cheeky cockney baritone belting like a pub singalong with a roll on the Rs, over 1971 blaxploitation soul, 100 BPM: wah-wah guitar, punchy horns, a bubbling bassline, congas and a string section. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-musichall-v6-w30 — 2:49 — https://suno.com/song/3cfa18d3-71f8-45ca-8037-e13b013c5e37
+- brj-mix-musichall-v6-w30 — 2:49 — https://suno.com/song/e95e0053-38f8-4840-b853-2510d81147a4
+- brj-mix-musichall-v6-w60 — 2:49 — https://suno.com/song/9032f38a-b0e3-4b8b-ba98-a3b77fa044de
+- brj-mix-musichall-v6-w60 — 2:50 — https://suno.com/song/ad8ec2df-8d8b-4c28-96ca-6c7c85a55e7c
+
+#### DA · folk — Northern folk × spy crime jazz
+
+```
+Northern English folk singer, a plain weathered nasal tenor singing unadorned like a sea shanty, over 1960s spy-movie crime jazz, 108 BPM: a twangy baritone guitar riff, big brass stabs, walking upright bass, brushed drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-folk-v6-w30 — 2:48 — https://suno.com/song/6cbbc75f-fbeb-4fe9-9bfb-f360dcb7b63d
+- brj-mix-folk-v6-w30 — 2:49 — https://suno.com/song/4049bad0-4486-4a16-9eca-b41ce3ebf8bd
+- brj-mix-folk-v6-w60 — 2:49 — https://suno.com/song/22eeacd7-a00d-4bc7-a6a3-ae3e404c457b
+- brj-mix-folk-v6-w60 — 2:49 — https://suno.com/song/dfa9a7c1-28e5-40e8-815b-f5f95d265e99
+
+#### DA · newsreader — BBC newsreader (spoken) × Italian police library funk
+
+```
+BBC English newsreader, a crisp posh received-pronunciation baritone speaking every line clearly and calmly, over 1970s Italian police-thriller library funk, 104 BPM: fuzz guitar, a nervous harpsichord, a tense string ostinato, tight funky drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-newsreader-v6-w30 — 2:48 — https://suno.com/song/d1b03a8f-68b2-403f-a5ee-cde0ce14ba2f
+- brj-mix-newsreader-v6-w30 — 2:49 — https://suno.com/song/f7cf5128-653f-4c06-a7a4-fed86fdb40a7
+- brj-mix-newsreader-v6-w60 — 2:49 — https://suno.com/song/7145ca6b-1283-4eea-8d5f-e7c0e5674180
+- brj-mix-newsreader-v6-w60 — 2:49 — https://suno.com/song/cbc3260f-a895-45a9-b791-7eeacb42215c
+
+#### DA · grime — grime MC, half-time × British TV detective theme
+
+```
+London grime MC, a young voice in a slow clipped half-time flow behind the beat, over a 1970s British TV detective theme, 100 BPM: blaring brass, a driving bassline, wah-wah guitar, Hammond organ, snapping drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, triplet flow, drill
+```
+
+- brj-mix-grime-v6-w30 — 2:48 — https://suno.com/song/9a652d16-88c0-43d0-84e1-5e96c356838c
+- brj-mix-grime-v6-w30 — 2:49 — https://suno.com/song/fd52c7cc-c7fb-43f1-8649-6d490380bd10
+- brj-mix-grime-v6-w60 — 2:49 — https://suno.com/song/77d3d7d9-5011-4711-9d6b-abebb1a818de
+- brj-mix-grime-v6-w60 — 2:50 — https://suno.com/song/750d4e24-42f9-4e22-8d0f-8e32ad77b002
+
+#### DA · glam — glam rock shriek × police-drama theme
+
+```
+1973 English glam rock singer, a high camp shrieking voice with stomping football-chant backing, over a 1970s British police-drama theme, 110 BPM: brass fanfares, a hard funky bass, clavinet, live drums. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-glam-v6-w30 — 2:48 — https://suno.com/song/f095d2d1-d326-4f92-83c0-3f22927c0d43
+- brj-mix-glam-v6-w30 — 2:49 — https://suno.com/song/f966f5c2-254e-4ba9-8d25-3265c432345b
+- brj-mix-glam-v6-w60 — 2:49 — https://suno.com/song/13543e8f-9279-43e6-8179-3cb8fa8d0a45
+- brj-mix-glam-v6-w60 — 2:49 — https://suno.com/song/8b0c22f6-360a-4aed-a134-77a7e5ec4a10
+
+#### DA · twotone — 2 Tone deadpan × dub reggae
+
+```
+Coventry 2 Tone ska singer, a flat deadpan Midlands drone with chanted offbeat backing, over heavy 1970s dub reggae, 96 BPM: a deep dub bass, skanking guitar, echoing horn stabs, rimshot drums with spring reverb. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-twotone-v6-w30 — 2:49 — https://suno.com/song/3535dccc-3d94-47b9-a447-b7e9af3410b0
+- brj-mix-twotone-v6-w30 — 2:49 — https://suno.com/song/af5fd352-aa21-4e4c-a8f1-3d276f6fea80
+- brj-mix-twotone-v6-w60 — 2:49 — https://suno.com/song/480d9750-8453-4cae-b449-e8c9b83a8719
+- brj-mix-twotone-v6-w60 — 2:49 — https://suno.com/song/7e5e7134-ff88-4d74-af6a-a94c3b0f3b31
+
+#### DA · tenor — operatic English tenor × heist big band
+
+```
+English classically trained tenor, a pure soaring operatic voice, over a swinging 1970s heist-movie big band, 112 BPM: a blaring brass section, a walking bass, swing drums, vibraphone. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop, choir
+```
+
+- brj-mix-tenor-v6-w30 — 2:49 — https://suno.com/song/112283c2-b8da-44b9-bfdc-e756ad38b255
+- brj-mix-tenor-v6-w30 — 2:49 — https://suno.com/song/b7674aca-b085-4e31-a086-95f099468e29
+- brj-mix-tenor-v6-w60 — 2:48 — https://suno.com/song/962a8a5b-cd2b-4710-be93-151b4de45de4
+- brj-mix-tenor-v6-w60 — 2:49 — https://suno.com/song/d71561d1-daee-449c-b75d-df86f30c7ace
+
+#### DA · northernsoul — Northern soul woman × cop-show funk
+
+```
+1960s Northern soul, a powerful Lancashire woman with a raw brassy belting voice, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a fat rumbling bass, breakbeat drums with congas. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-northernsoul-v6-w30 — 2:48 — https://suno.com/song/828b3207-643e-409c-a98e-c5e4ee021d4b
+- brj-mix-northernsoul-v6-w30 — 2:50 — https://suno.com/song/1343ca4b-f181-4397-8f5c-38e01e3c1f5a
+- brj-mix-northernsoul-v6-w60 — 2:49 — https://suno.com/song/10d78051-dce1-4764-9401-fbd7e1e5116c
+- brj-mix-northernsoul-v6-w60 — 2:49 — https://suno.com/song/da2ac048-f31e-428f-9f93-8ec3339eb9ba
+
+#### DA · triphop — trip hop whisper × krautrock funk
+
+```
+Bristol trip hop, a hushed close-mic murmuring English man, almost whispering, over motorik krautrock funk, 104 BPM: a hypnotic one-note bass, a steady motorik beat, analogue synth pulses, a wah-wah guitar. Played completely straight.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, autotune, EDM, country, smooth R&B, rap, hip hop
+```
+
+- brj-mix-triphop-v6-w30 — https://suno.com/song/0994a4e5-00bd-481d-a8e4-cf09341f1594
+- brj-mix-triphop-v6-w30 — https://suno.com/song/88905fcc-f026-4b02-9265-1390d7d84716
+- brj-mix-triphop-v6-w60 — https://suno.com/song/07fe0a35-e536-44e8-8610-596151da2af8
+- brj-mix-triphop-v6-w60 — https://suno.com/song/9fba56b9-6fc5-4835-9314-a0c938581fa5
+
+### Round CA (2026-10-22): Led Zeppelin, Rolling Stones and Oasis voices, no Covers
+
+Jack asked for the liked take's style (ed6dd946) with the voices of Led Zeppelin, then the Rolling
+Stones, then Oasis — and then: **"covers dont work please dont use them."** A Zeppelin Cover was
+already running; it was stopped after one Create (2 takes, 10 credits, not listed:
+brj-zep-cover-r1-v6-ai75-w30 — https://suno.com/song/b6f6b501-f18b-4e98-9e5e-462fcebfa79a ,
+https://suno.com/song/18c026c0-81c7-4fa5-bbad-8652c673b61b). The Round BA Covers count as rejected
+by the same ruling.
+
+So this round is only the transplant ladder's step 1: each band's voice generated **in its home
+genre**, the funk banned, Jack's lyrics. A take with the right voice becomes a Voice/Style Persona
+and goes onto the liked take's stored prompt (step 2, Round BA).
+
+References (sheet only, names never in a box):
+- **Robert Plant:** "high range, an abundance of distortion, loud volume" (Britannica via
+  Wikipedia); "full, open-throated falsetto" (Plant, Far Out); the "Immigrant Song" wordless war
+  cry, layered (Ultimate Classic Rock); "banshee's scream" (Consequence, unfetched).
+- **Mick Jagger:** "leering", "sneers" (Classic Rock, unfetched); a drunken "drawl" (UCR); "ragged
+  and laconic" (Slate); "rasping, gasping" (Louder); the vocal buried in the mix (Rolling Stone,
+  1972); the "woo-woo" chant (Wikipedia). Jagger has said publicly he does not want AI imitating
+  him — this is a description of a style, not a clone.
+- **Liam Gallagher:** stretched flat nasal vowels, singing up into the mic, sneer to bellow, Noel's
+  higher harmony (common knowledge, not sourced this round).
+
+#### CA · zep-heavyblues
+
+```
+1969 English heavy blues rock, 104 BPM: a crunchy overdriven blues guitar riff, thundering open-room drums, a locked-in bass. A high powerful open-throated tenor with heavy natural distortion, bluesy growled verses that answer the guitar riff line by line, soaring into a full falsetto wail and a banshee scream on the chorus, raw and swaggering. Played completely straight.
+```
+
+#### CB · zep-warcry
+
+```
+1970 English hard blues rock, 104 BPM: a galloping staccato guitar riff, pounding drums, a driving bass. A wordless high-pitched war-cry wail opens every chorus, layered and echoing; a high open-throated tenor, acrobatic and urgent, howled verses, strained shouted peaks, ethereal falsetto. Played completely straight.
+```
+
+#### CC · stones-leer
+
+```
+1969 London blues rock, 104 BPM: a loose open-tuned rhythm guitar riff, honky-tonk piano, dry swinging drums, maracas. A leering, sneering lead with a lazy drunken drawl, ragged and laconic, slithering around the beat and half-spoken on the verses, a raspy gasping howl on the chorus, a sloppy gang of voices chanting woo-woo behind. Played completely straight.
+```
+
+#### CD · stones-exile
+
+```
+1972 London rock'n'roll recorded in a basement, 104 BPM: sloppy twin guitars, rolling barrelhouse piano, loose drums. A rasping gasping lead buried in the band like another instrument, slurred and swaggering, falsetto howls on the chorus, a ragged gang of backing voices yelling with him. Played completely straight.
+```
+
+#### CE · oasis-sneer
+
+```
+1994 Manchester Britpop, 104 BPM: a wall of fuzzy rhythm guitars, a plodding bass, heavy plain drums, tambourine. A nasal sneering lead that stretches every vowel long and flat, sung up into the mic, arrogant and bored on the verses, a raw hoarse bellow on the chorus, a cleaner higher harmony behind. Played completely straight.
+```
+
+Exclude Styles (CA, CB, CE; CC/CD drop `gospel, country` so the Stones' gospel and honky-tonk can
+come):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, funk, brass, horns, wah-wah, flute, strings, soundtrack, American accent
+```
+
+Lyrics (all): the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max
+Mode off, Vocal Gender male, style influence 75, Duration 170 s, weirdness 30 and 60, workspace
+`bank-robbery-Jack`. 10 Creates, 100 credits (9,600 → 9,500).
+
+**Verdict (Jack, 2026-10-22): Zeppelin and the Stones sounded basically the same.** Web sweep on why: `docs/suno-gpt/suno-voices.md` §2d.
+
+- brj-zep-heavyblues-v6-w30 — 2:49 — https://suno.com/song/1ac72cec-c938-4a85-9387-67f0ec18bad6
+- brj-zep-heavyblues-v6-w30 — 2:50 — https://suno.com/song/32b53601-d093-40b0-aa3e-ddd1ee9f37b1
+- brj-zep-heavyblues-v6-w60 — 2:49 — https://suno.com/song/2787d396-8df2-4fc9-966a-f1ea904499c1
+- brj-zep-heavyblues-v6-w60 — 2:49 — https://suno.com/song/2fe0602d-3af7-4535-ab81-503a8deb4545
+- brj-zep-warcry-v6-w30 — 2:49 — https://suno.com/song/4378d22b-62c2-4b3d-bfcd-6e8b7cf513a1
+- brj-zep-warcry-v6-w30 — 2:49 — https://suno.com/song/4dddcab0-25a8-43e0-ad4b-2f3a95c931b4
+- brj-zep-warcry-v6-w60 — 2:50 — https://suno.com/song/6555d54a-1bd8-45e6-a401-086971cc7cd7
+- brj-zep-warcry-v6-w60 — 2:48 — https://suno.com/song/e8af3254-351a-4776-8964-2ee878420f33
+- brj-stones-leer-v6-w30 — 2:50 — https://suno.com/song/298dbd28-ffaa-4de6-94d9-75b5f9241ce0
+- brj-stones-leer-v6-w30 — 2:49 — https://suno.com/song/854913dd-5d4d-4ae1-97c3-cb0a0a3a38e4
+- brj-stones-leer-v6-w60 — 2:50 — https://suno.com/song/8e68b5e6-ff9a-4649-9550-0eca74d03fb2
+- brj-stones-leer-v6-w60 — 2:49 — https://suno.com/song/2db9b75f-d868-4ab1-b34f-5d49a805b293
+- brj-stones-exile-v6-w30 — 2:48 — https://suno.com/song/cbf92bf8-ce25-41cf-8f41-d8dc7393a931
+- brj-stones-exile-v6-w30 — 2:49 — https://suno.com/song/15d89f29-9ca2-4c45-8587-900cc1e7b833
+- brj-stones-exile-v6-w60 — 2:49 — https://suno.com/song/387ea6e1-2f91-4769-b459-bed17196324f
+- brj-stones-exile-v6-w60 — 2:49 — https://suno.com/song/ee5e8483-8d39-468c-8818-4e1eb3c52509
+- brj-oasis-sneer-v6-w30 — https://suno.com/song/ffd59e78-968e-47e1-80f3-a153d80f3573
+- brj-oasis-sneer-v6-w30 — https://suno.com/song/571d8ae5-0400-4dc4-9306-ffd78e834c92
+- brj-oasis-sneer-v6-w60 — https://suno.com/song/2b32423e-729f-48ca-b809-037af35a30c5
+- brj-oasis-sneer-v6-w60 — https://suno.com/song/9913008a-b5e0-493c-a2a7-e03a0b407f25
+
+### Round BA (2026-10-22): a new approach — the liked take's music with Beatles voices
+
+Jack on Round AA/AB: "all of those were the same voice … try a new approach and start again …
+use the style of br-jack-copfunk-B-south-london-v6-w60 with the voices of the Beatles."
+
+**Why a new approach.** Thirteen rounds of voice words have not moved the singer: the 1970s funk
+soundtrack picks one vocalist pool and every adjective lands inside it (`suno-voices.md` §2b). The
+skill's rule after two stuck rounds is *stop prompting the voice*. So the music is now kept by
+**audio**, and the voice is grown where it is native, then carried over:
+
+1. **Cover of ed6dd946** (the liked take attached as audio, so the music holds), with the voice
+   clause in its real prompt swapped for a Beatles translation. Names stay out: "Roger Daltrey" did
+   nothing audible in Round Y.
+2. **The Beatles voices in their home genre** (Merseybeat / 1968 rock'n'roll), the funk banned. The
+   transplant ladder's step 1 (`suno-voices.md` Thread 2 §3): if the voice comes, it becomes a
+   Style Persona / Voice and goes onto the liked music in step 2.
+3. **Add Vocals on the liked take's instrumental stem**, by hand (below). Not automated yet.
+
+References (sheet only, never in a box): Lennon — nasal, "from the back of the throat", ADT
+double-tracking, "from scream to whine" (Far Out; Christgau; Wikipedia, ADT). McCartney — sweet tenor,
+"rasping roars" doing Little Richard (Far Out). Both tenors.
+
+#### BA · cover (Cover of ed6dd946)
+
+```
+1970s funk soundtrack production, stabbing brass, wah-wah guitar, fat rumbling bass, live breakbeat drums with bongos and congas, breathy low flute stalking the verses, tense string swells and soft harmony pads beneath the chorus; gritty 104 BPM groove; 1960s Liverpool beat-group voices: a nasal reedy double-tracked tenor lead sung from the back of the throat, sardonic and cutting, tearing into a rasping rock'n'roll howl on the chorus, three-part close harmonies in thirds answering.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, hard rock, arena rock, distorted guitar
+```
+
+Settings: Cover, v6, Variety Off, Max Mode off, style influence 75, weirdness 30. 🔴 Asked for Audio
+Influence 75 and 40; **both cells ran at ~75** (records say 0.75 and 0.73) — `narrow`'s slider set
+did not take, and the run hit its 10-minute timeout before detaching (detached by hand). Fix owed in
+`suno.mts`. Also: `narrow` cannot find a take that has scrolled off the clip list; Suno's own
+Search box above the list brings it back.
+
+#### BB · lennon (home genre)
+
+```
+1965 Liverpool Merseybeat beat group, 104 BPM: jangly twelve-string guitar, melodic bass, dry tight drums, tambourine. A nasal reedy double-tracked tenor lead sung from the back of the throat, sardonic and cutting, sneering verses that tear into a raw scream on the chorus, three-part close harmonies in thirds answering. Played completely straight.
+```
+
+#### BC · mccartney (home genre)
+
+```
+1968 Liverpool rock'n'roll beat group, 104 BPM: pounding piano, driving melodic bass, dry drums, crunchy guitar. A sweet clean high tenor on the verses that rips into a rasping throat-shredding rock'n'roll howl on the chorus, falsetto whoops and close harmonies behind. Played completely straight.
+```
+
+Exclude Styles (BB and BC):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, funk, brass, horns, wah-wah, flute, strings, soundtrack, American accent
+```
+
+Lyrics (all): the liked take's stored Lyrics box. Settings: v6, Variety Off, Personalize off, Max
+Mode off, Vocal Gender male, style influence 75, Duration 170 s, weirdness 30 and 60, workspace
+`bank-robbery-Jack`. 12 takes, 60 credits (9,670 → 9,610). Stored prompts checked: verbatim,
+Variety 0. Unheard.
+
+- brj-beatles-cover-r1-v6-ai75-w30 — 2:51 — https://suno.com/song/15fbf6f1-9dfc-43e3-b0d1-bd5f62b83c89
+- brj-beatles-cover-r1-v6-ai75-w30 — 2:49 — https://suno.com/song/c8d3ff35-3973-422c-a5db-b81e912b9044
+- brj-beatles-cover-r1-v6-ai40-w30 (really ~73) — 2:49 — https://suno.com/song/da614a7c-8cb2-4b6c-a67f-155353c2d223
+- brj-beatles-cover-r1-v6-ai40-w30 (really ~73) — 2:48 — https://suno.com/song/ed63b042-4660-4b30-8094-16bf1280e53f
+- brj-beatles-lennon-v6-w30 — 2:48 — https://suno.com/song/96b4efc0-fd9c-468e-b35c-63eebc042344
+- brj-beatles-lennon-v6-w30 — 2:47 — https://suno.com/song/e2a4eefa-b6d1-42be-805f-51c16c097d13
+- brj-beatles-lennon-v6-w60 — 2:49 — https://suno.com/song/a288d60f-c4d9-400c-8b27-b472fc0d3ef0
+- brj-beatles-lennon-v6-w60 — 2:49 — https://suno.com/song/f770c183-2073-4661-bc86-012563c9d2f5
+- brj-beatles-mccartney-v6-w30 — https://suno.com/song/19395260-7474-469b-980e-fd8711bde862
+- brj-beatles-mccartney-v6-w30 — https://suno.com/song/48ebbdd2-3e69-46b4-b15c-ee9d1730e440
+- brj-beatles-mccartney-v6-w60 — https://suno.com/song/f2f2eecc-314a-4db5-a6cf-e4aad5084ca9
+- brj-beatles-mccartney-v6-w60 — https://suno.com/song/101488a9-86d8-4a96-918c-a11faebea56d
+
+**Step 2, once a BB/BC take has the voice:** on that take ⋯ → Create → Voice (a Style Persona —
+a true Voice needs a spoken verification phrase, so it is for your own voice). Pick 15–60 clean
+seconds of the lead, delete the attached style prompt, save. Then a fresh Create with the liked
+take's stored prompt, that Persona attached, Audio Influence 50–70.
+
+**Route 3 by hand — Add Vocals (keeps the music by audio, vendor docs, beta, untested by us):**
+ed6dd946 ⋯ → Get Stems → on the instrumental ⋯ → Remix → **Add Vocals** → paste the lyrics → Style:
+the BA box above → Advanced: Audio Strength high → Create.
+
+### Round AA/AB (2026-10-22): the liked take's REAL prompt, Variety Off
+
+Jack on Round Y/Z: "we have lost the style of [ed6dd946] and the voice sounded nothing like Roger
+Daltrey."
+
+The audit — why the style was lost (read off each take's own suno.com record, `metadata.tags`):
+- 🔴 **ed6dd946's music never came from our Style box.** Round B ran at Variety Normal, so Suno
+  rewrote the box before generating (`aug_creativity: 1` on its record). What it actually used:
+  `1970s funk soundtrack production … tense string swells and soft harmony pads beneath the chorus;
+  gritty 104 BPM groove; low rough male lead in half-spoken, deadpan talk-sing …`. Every round since
+  (J–Z) re-used **our** sentence, never this one. Y/Z at Variety Off used ours word for word
+  (`aug_creativity: 0`), so they could not bring the liked music back.
+- 🔴 **The Daltrey clause opened with a rock scene** (`a 1970s London mod rock frontman`, and in Y a
+  `raspy English rock tenor` label on every lyric section): pool words that take the band with them
+  (`suno-voices.md` §2c).
+- 🔴 **The name does nothing audible.** Suno stored `Roger Daltrey vocals` verbatim (not filtered),
+  and Jack heard nothing like him. Web: no test shows a name working; users report names replaced.
+- 🟡 **Daltrey's verses are low.** Critics put his verses "in the lower reaches of his baritone",
+  then a growl and the scream (Ultimate Classic Rock; Far Out). Y/Z asked for a tenor throughout.
+  The liked take's `low rough male lead` was already half-way there.
+
+**AA** = the liked take's real prompt, all three boxes exactly as stored, at Variety Off. A control:
+does the liked music come back when nothing rewrites the box?
+**AB** = the same, with only the voice clause swapped for a Daltrey translation (no scene word, no
+"rock", music first, as in the liked take). Exclude adds the rock bleed; `American accent, American`
+dropped (bans do not set nationality).
+
+#### AA · liked-tags
+
+```
+1970s funk soundtrack production, stabbing brass, wah-wah guitar, fat rumbling bass, live breakbeat drums with bongos and congas, breathy low flute stalking the verses, tense string swells and soft harmony pads beneath the chorus; gritty 104 BPM groove; low rough male lead in half-spoken, deadpan talk-sing that breaks into barked chorus shouts, London voices shouting back.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, American accent, American
+```
+
+#### AB · belter
+
+```
+1970s funk soundtrack production, stabbing brass, wah-wah guitar, fat rumbling bass, live breakbeat drums with bongos and congas, breathy low flute stalking the verses, tense string swells and soft harmony pads beneath the chorus; gritty 104 BPM groove; raspy British belter lead: low conversational baritone verses with a stuttering snarl that explode into a full-throat raspy roar on the chorus and one long primal scream, London voices shouting back.
+```
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, hard rock, arena rock, power chords, distorted guitar
+```
+
+Lyrics (both): the liked take's own Lyrics box, as stored = draft 3, no voice labels.
+
+Settings: v6, **Variety Off**, Personalize off, Max Mode off, Vocal Gender male, no Voice, style
+influence 75, Duration 170 s, weirdness 30 and 60, workspace `bank-robbery-Jack`. 4 Creates, 40
+credits (9,710 → 9,670). Stored tags checked: verbatim, Variety 0.
+
+**Verdict (Jack, 2026-10-22): all the same voice.** See Round BA.
+
+- br-jack-copfunk-AA-liked-tags-v6-w30 — 2:49 — https://suno.com/song/b95ef6c4-7ba8-4f79-b294-4061eb183d90
+- br-jack-copfunk-AA-liked-tags-v6-w30 — 2:50 — https://suno.com/song/05f7fcc6-e111-40eb-a202-ac136339b324
+- br-jack-copfunk-AA-liked-tags-v6-w60 — 2:51 — https://suno.com/song/ea2234be-8806-46ef-b111-7b5f1756082b
+- br-jack-copfunk-AA-liked-tags-v6-w60 — 2:50 — https://suno.com/song/7c8f990a-359b-4747-9fb5-247ce3f81b8c
+- br-jack-copfunk-AB-belter-v6-w30 — https://suno.com/song/c7fe3616-a92d-4280-b0ad-f694016c33dd
+- br-jack-copfunk-AB-belter-v6-w30 — https://suno.com/song/60e0da64-f763-4f02-88ef-95c56ff0adb9
+- br-jack-copfunk-AB-belter-v6-w60 — https://suno.com/song/6eb68c83-8840-4c60-be48-77386554a172
+- br-jack-copfunk-AB-belter-v6-w60 — https://suno.com/song/16f3b61c-6fca-4197-b560-5e6a74d54329
+
+**If AA brings the music back but AB's voice is still wrong, stop prompting the voice** (skill rule:
+two rounds without movement). Keep the music by audio instead: ed6dd946 ⋯ → Get Stems →
+instrumental → ⋯ → Remix → **Add Vocals**, with the AB voice line and Audio Strength high (vendor
+docs, beta, untested by us — https://help.suno.com/en/articles/6882817). Fallback that cannot move
+the backing: the instrumental stem plus a separate vocal take, mixed in Premiere.
+
+### Round Y (2026-10-21): Roger Daltrey by name, and the prompt audited
+
+Jack on Round W: the same voice over and over; did the prompt name Roger Daltrey? It did not —
+and nor did Round S: Round S's boxes carried translations, not names (the names are only in this
+file). So **Y names him literally**, as Jack asked, and **Z** is the translation with every fault
+below fixed. Both run on the same fixes.
+
+The audit — what was stopping the voice:
+- 🔴 **Variety was Normal in every round since A.** Suno's own v6 FAQ says any Variety above Off
+  works by *rewriting your Style box* (`docs/suno-gpt/files/suno-v6.md`, Variety row); the house
+  ruling is Off. So every voice description was being rewritten before generation. **Now Off.**
+- 🔴 **Exclude banned `punk, new wave`** — the neighbourhood the Who's voice lives in. Round S, the
+  round that worked, had them unbanned; Round W put them back. **Removed again.**
+- 🟡 **Round S's lyrics had a voice in every section label; Round W's had none.** Back in, one fixed
+  label repeated: `raspy English rock tenor`. Jack's words unchanged.
+- 🟡 **W put the music first**, which is the funk soundtrack's own male singer. Y and Z put the
+  voice first (Round S's order).
+- 🟡 Suno reportedly blocks or swaps real artist names on v6 (dev.ua; a Reddit thread) — Y tests it.
+
+#### Y · daltrey-named
+
+```
+Roger Daltrey vocals: a 1970s London mod rock frontman, a powerful raspy English tenor with working-class West London vowels, a swaggering blues growl and stuttering snarl on the verses, an ear-splitting primal scream on the chorus. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+#### Z · daltrey-translated
+
+```
+A 1970s London mod rock frontman, a powerful raspy English tenor with working-class West London vowels, a swaggering blues growl and stuttering snarl on the verses, an ear-splitting primal scream on the chorus. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+Exclude Styles (both):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, female vocals
+```
+
+Settings: as the liked take except **Variety Off**.
+
+4 Creates, 40 credits (10,320 → 10,280). Suno accepted the named prompt without an error.
+
+**Verdict (Jack, 2026-10-22): the liked style is lost and the voice is nothing like Roger Daltrey** — see Round AA/AB.
+
+- br-jack-copfunk-Y-daltrey-named-v6-w30 — 2:50 — https://suno.com/song/4c95489b-1675-403f-845b-6aea1938a4b7
+- br-jack-copfunk-Y-daltrey-named-v6-w30 — 2:50 — https://suno.com/song/b810ba97-acf0-47a5-865e-c14e2ea74c22
+- br-jack-copfunk-Y-daltrey-named-v6-w60 — 2:50 — https://suno.com/song/af703c90-875d-4a60-bfcd-f3086a902266
+- br-jack-copfunk-Y-daltrey-named-v6-w60 — — — https://suno.com/song/5ee254d9-5717-4551-ab16-b666c7441a53
+- br-jack-copfunk-Z-daltrey-translated-v6-w30 — — — https://suno.com/song/306f913c-8d32-4bd3-8655-f3713b4774d5
+- br-jack-copfunk-Z-daltrey-translated-v6-w30 — — — https://suno.com/song/80c3c9cd-1b0e-471f-ac20-75f343596e78
+- br-jack-copfunk-Z-daltrey-translated-v6-w60 — — — https://suno.com/song/5f125536-6563-4ae0-b603-60ce81ff1b5f
+- br-jack-copfunk-Z-daltrey-translated-v6-w60 — — — https://suno.com/song/cbdd7ab5-adb9-42de-893a-78a73eaf9708
+
+### Round W (2026-10-21): the liked music + a Roger Daltrey-like voice
+
+Jack on Round S: referencing singers changed the voice (saved to `docs/suno-gpt/suno-voices.md`
+§2c and the `suno-prompt` skill), but the style of the liked take (ed6dd946) was lost. Now that
+music with Roger Daltrey's voice, or like it. Reference in this file only; the box carries a
+translation (sources: Wikipedia, TV Insider, Ultimate Classic Rock — blues growl to scream, the
+"My Generation" stutter, working-class West London).
+
+Two placements, to settle §2c's open question: **W** = the liked take's music sentence first,
+singer after (the liked take's own order); **X** = singer first, music after (Round S's order).
+Lyrics, Exclude Styles and settings as the liked take (Round B), minus `American accent, American`.
+
+#### W · daltrey-music-first
+
+```
+Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead: a 1970s London mod rock frontman, a powerful raspy English tenor with working-class West London vowels, a swaggering blues growl and stuttering snarl on the verses, an ear-splitting primal scream on the chorus. Menacing, played completely straight.
+```
+
+#### X · daltrey-voice-first
+
+```
+A 1970s London mod rock frontman, a powerful raspy English tenor with working-class West London vowels, a swaggering blues growl and stuttering snarl on the verses, an ear-splitting primal scream on the chorus. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+Exclude Styles (both):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco
+```
+
+4 Creates, 40 credits (10,360 → 10,320). Unheard. 8 of 8 takes listed.
+
+- br-jack-copfunk-W-daltrey-music-first-v6-w30 — 2:48 — https://suno.com/song/ddc03756-486b-4141-ad8e-747da03c0b91
+- br-jack-copfunk-W-daltrey-music-first-v6-w30 — 2:49 — https://suno.com/song/8a1c5a92-cd20-472e-82fc-51893d1554dc
+- br-jack-copfunk-W-daltrey-music-first-v6-w60 — 2:49 — https://suno.com/song/3815dc3e-2c65-4cd6-8bc5-2d160b4f77c5
+- br-jack-copfunk-W-daltrey-music-first-v6-w60 — 2:50 — https://suno.com/song/340725ee-c225-4663-a52a-69fefd546f1f
+- br-jack-copfunk-X-daltrey-voice-first-v6-w30 — — — https://suno.com/song/11800fbf-8c39-4d05-a2c5-3502c1d483b3
+- br-jack-copfunk-X-daltrey-voice-first-v6-w30 — — — https://suno.com/song/5446e48b-282d-4fca-912d-897726ed7423
+- br-jack-copfunk-X-daltrey-voice-first-v6-w60 — — — https://suno.com/song/0d6e0987-3070-431f-8959-635b5eb82925
+- br-jack-copfunk-X-daltrey-voice-first-v6-w60 — — — https://suno.com/song/c4869e0a-c996-4a64-a10a-4fcfc4f15e98
+
+### Round S (2026-10-21): English women from English singer references
+
+Jack on Round O: all of them sound like the Karen song's voice, and not English; use English
+singers who fit the genre as references.
+
+Why it sounded like Karen: Karen's song (`docs/stories/karen/songs/all-day-to-complain.md`) is the
+same music family (spy/heist funk: wah guitar, muted trumpet, baritone sax, Rhodes) with a female
+lead, so a woman over this music lands on the same singer. Round O also asked for half-spoken
+delivery, which is Karen's.
+
+The references go in this file only, never in a Suno box: Suno rejects or rewrites artist names
+(`docs/suno-gpt/files/suno-tag-mechanics.md`), so each one is translated into the English scene she
+comes from (placed first, where it is strongest) plus her voice. Music sentence unchanged from the
+liked take. Lyrics as Round O. Exclude Styles adds the Karen-pool words.
+
+Exclude Styles (all four):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, male vocals, male voice, smooth jazz, jazz singer, scat, R&B diva, melodic rap, spoken word
+```
+
+#### S · retro-soul (reference: Amy Winehouse)
+
+```
+London retro soul, a raw husky contralto woman with a heavy North London accent, swaggering behind-the-beat phrasing, wounded and tough. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+#### T · sixties-soul (reference: Dusty Springfield)
+
+```
+1960s British blue-eyed soul, a breathy smoky English mezzo, intimate verses that swell into a big aching chorus. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+#### U · mockney-pop (reference: Lily Allen)
+
+```
+British indie pop with a cockney London girl, sweet light voice, sarcastic sing-song verses, broad London vowels. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+#### V · 77-punk (reference: Poly Styrene / Siouxsie Sioux)
+
+```
+1977 London punk woman, a piercing yelping English voice, shrieked chorus, sneering and wild. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+8 Creates, 80 credits (10,440 → 10,360). Unheard. 15 of 16 takes listed.
+
+- br-jack-copfunk-S-retro-soul-v6-w30 — 2:50 — https://suno.com/song/ccd3a2c3-22e4-4093-94fb-8ec9b898c5e3
+- br-jack-copfunk-S-retro-soul-v6-w60 — 2:49 — https://suno.com/song/80da6f82-1d69-4a4b-b2f1-ce94258029e5
+- br-jack-copfunk-S-retro-soul-v6-w60 — 2:50 — https://suno.com/song/43cb54dc-2b15-4ef5-9352-9ffffa9781c1
+- br-jack-copfunk-T-sixties-soul-v6-w30 — 2:49 — https://suno.com/song/2bbc25db-77ba-4af0-b143-7cf84b6a0460
+- br-jack-copfunk-T-sixties-soul-v6-w30 — 2:49 — https://suno.com/song/763a21c0-c5cd-4893-996d-0289f4547100
+- br-jack-copfunk-T-sixties-soul-v6-w60 — 2:49 — https://suno.com/song/ae69ad5f-3233-4e37-896c-1a656e6ed8ab
+- br-jack-copfunk-T-sixties-soul-v6-w60 — 2:50 — https://suno.com/song/90c49952-17ce-4dfd-85a0-d290739ad2f9
+- br-jack-copfunk-U-mockney-pop-v6-w30 — 2:49 — https://suno.com/song/130608c7-9ca1-4cde-a4d9-5c8dd90fa451
+- br-jack-copfunk-U-mockney-pop-v6-w30 — 2:50 — https://suno.com/song/37a17661-c6da-4133-91a8-7659bfc15c00
+- br-jack-copfunk-U-mockney-pop-v6-w60 — 2:48 — https://suno.com/song/76dc2787-ec7e-429e-b1cc-6b998be1bcdf
+- br-jack-copfunk-U-mockney-pop-v6-w60 — 2:50 — https://suno.com/song/274fecf1-152a-41cb-a184-86cff246da49
+- br-jack-copfunk-V-77-punk-v6-w30 — 2:49 — https://suno.com/song/54da795b-20fe-4f0b-8719-958de22ac830
+- br-jack-copfunk-V-77-punk-v6-w30 — 2:50 — https://suno.com/song/bc780503-81dd-4906-8a2c-f89740839422
+- br-jack-copfunk-V-77-punk-v6-w60 — — — https://suno.com/song/ac041775-251a-406b-aa4d-8a0697de3bf0
+- br-jack-copfunk-V-77-punk-v6-w60 — — — https://suno.com/song/b15f19b4-d132-407d-9456-bf037e25d74a
+
+### Round O (2026-10-21): English women, prompts audited
+
+Jack on Round K: the style is there but the voice is not; try English women, and check whether
+something in the prompts is causing it.
+
+The audit (rules from `docs/suno-gpt/suno-voices.md` §2a, §4a, §4c):
+- **Exclude was banning the English pools.** `punk, new wave` are two of the strongest English
+  female-voice families; banning them pushes the singer back to the default, which is American.
+  Removed.
+- **`American accent, American` named America in the Exclude box.** Bans don't control nationality
+  and the words still count as American. Removed.
+- **The music sentence is American in genre position** (`1970s cop-show funk soundtrack`, bongos,
+  congas). Kept, because Jack likes the style; the voice now has to beat it, so each box opens
+  with a place of origin + a performer type, the strongest levers the repo and the web name.
+- **Every lyric section had no voice in it**, so each section fell back to the genre's default
+  singer. Each section label now carries one fixed cue, `English female vocal`, repeated
+  identically (labels only; Jack's words unchanged).
+- **Nothing banned male vocals.** Added `male vocals, male voice`; Vocal Gender is female.
+
+Music sentence unchanged from the liked take (ed6dd946). Settings as Round K.
+
+Exclude Styles (all four):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, male vocals, male voice
+```
+
+#### O · london-soul
+
+```
+Female vocalist from London, England, singing with natural British pronunciation: a 1960s British soul singer, big raw smoky alto. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+#### P · manc-punk
+
+```
+Female vocalist from Manchester, England, singing with natural Northern English pronunciation: a sneering English punk singer, sharp nasal shouted voice. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+#### Q · bristol-hush
+
+```
+Female vocalist from Bristol, England, singing with natural British pronunciation: a cool trip hop singer, low hushed breathy voice, close to the mic. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+#### R · london-girl
+
+```
+Female vocalist from East London, England, singing with natural British pronunciation: a young London girl, bright light voice, cheeky half-spoken chat on the verses. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Menacing, played completely straight.
+```
+
+8 Creates, 80 credits (10,520 → 10,440). Unheard. 15 of 16 takes listed.
+
+- br-jack-copfunk-O-london-soul-v6-w30 — 2:50 — https://suno.com/song/8d701070-8a11-4828-88dd-fba1f0261569
+- br-jack-copfunk-O-london-soul-v6-w60 — 2:49 — https://suno.com/song/0d465888-1d6f-4409-8bd5-d6f34287aa4b
+- br-jack-copfunk-O-london-soul-v6-w60 — 2:50 — https://suno.com/song/d5913c2e-cf02-4aed-b243-4032c884e21f
+- br-jack-copfunk-P-manc-punk-v6-w30 — 2:49 — https://suno.com/song/3be4654e-f586-4107-98ec-6ddaf957cfe4
+- br-jack-copfunk-P-manc-punk-v6-w30 — 2:50 — https://suno.com/song/bd03430b-9c48-4803-b1e3-e7de0aaad6da
+- br-jack-copfunk-P-manc-punk-v6-w60 — 2:49 — https://suno.com/song/1b62f49d-c425-406e-88c8-2d4729820412
+- br-jack-copfunk-P-manc-punk-v6-w60 — 2:50 — https://suno.com/song/049824f3-03e9-4012-92c4-2cdc512c4e24
+- br-jack-copfunk-Q-bristol-hush-v6-w30 — 2:50 — https://suno.com/song/5b929b11-4b19-4e07-9046-3d224d075276
+- br-jack-copfunk-Q-bristol-hush-v6-w30 — 2:50 — https://suno.com/song/c07e7657-48d9-42bc-88f2-e3bc642d23f4
+- br-jack-copfunk-Q-bristol-hush-v6-w60 — — — https://suno.com/song/2bff1fa0-b5c4-429e-a7d1-02024f937c67
+- br-jack-copfunk-Q-bristol-hush-v6-w60 — — — https://suno.com/song/61eb1dd2-92ac-40de-a6c6-85b785c330b0
+- br-jack-copfunk-R-london-girl-v6-w30 — — — https://suno.com/song/9dc2951e-7692-47f7-9cbc-8daf5a355a58
+- br-jack-copfunk-R-london-girl-v6-w30 — — — https://suno.com/song/dbc0dfb3-cf60-41a9-a2a6-74b979c52d53
+- br-jack-copfunk-R-london-girl-v6-w60 — — — https://suno.com/song/5795334c-1c19-439f-beb5-ac011edc7d13
+- br-jack-copfunk-R-london-girl-v6-w60 — — — https://suno.com/song/a78a1f25-e3c8-40b6-ac59-23ea712d1943
+
+### Round K (2026-10-21): the liked take's music, four different English voices
+
+Jack on Round J: English now, but the voices don't vary enough. Keep the music and genre of the
+liked take (ed6dd946), drop its voice. Each box = one English voice line first (pitch, age, texture,
+gender: what Suno does render), then the liked take's music sentence unchanged, then a short
+delivery line. Lyrics, Exclude Styles and settings as Round J; Vocal Gender matches each voice.
+
+#### K · deep-old (Vocal Gender male)
+
+```
+English male vocals, a deep low gravelly old man's voice with a thick English accent. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Growled half-spoken verses, a hoarse roared chorus. Menacing, played completely straight.
+```
+
+#### L · high-young (Vocal Gender male)
+
+```
+English male vocals, a high thin young man's voice with a thick English accent. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Jittery yelped verses, a screamed chorus. Menacing, played completely straight.
+```
+
+#### M · husky-woman (Vocal Gender female)
+
+```
+English female vocals, a husky smoky woman's voice with a thick English accent. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Cool sultry spoken verses, a snarled chorus. Menacing, played completely straight.
+```
+
+#### N · brassy-woman (Vocal Gender female)
+
+```
+English female vocals, a sharp loud brassy woman's voice with a thick English accent. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Sung verses, a belted shouted chorus with a gang shouting back. Menacing, played completely straight.
+```
+
+8 Creates, 80 credits (10,600 → 10,520). Unheard. 15 of 16 takes listed.
+
+- br-jack-copfunk-K-deep-old-v6-w30 — 2:50 — https://suno.com/song/aaa7abe2-ab22-45fe-91c2-5ec5273f77f7
+- br-jack-copfunk-K-deep-old-v6-w60 — 2:49 — https://suno.com/song/06c366b1-0119-4b5b-a7a5-7237ccc58c59
+- br-jack-copfunk-K-deep-old-v6-w60 — 2:50 — https://suno.com/song/e758d7d6-ec0c-4745-bcbb-a90f3bbd6df9
+- br-jack-copfunk-L-high-young-v6-w30 — 2:49 — https://suno.com/song/3c4662eb-5441-4298-bdc5-574da722886f
+- br-jack-copfunk-L-high-young-v6-w30 — 2:49 — https://suno.com/song/5dd5db0a-613d-4ef7-bba7-a0bdbb4b49d9
+- br-jack-copfunk-L-high-young-v6-w60 — 2:50 — https://suno.com/song/29b29197-340e-4e50-b23a-f05cc5d40349
+- br-jack-copfunk-L-high-young-v6-w60 — 2:50 — https://suno.com/song/5f9560af-2471-4008-8be0-6df5f1c9648b
+- br-jack-copfunk-M-husky-woman-v6-w30 — 2:50 — https://suno.com/song/304b0bca-44e7-485b-bf96-7d25bd6cb5ee
+- br-jack-copfunk-M-husky-woman-v6-w30 — 2:50 — https://suno.com/song/3229b59d-fe79-4907-a838-837f2471dca0
+- br-jack-copfunk-M-husky-woman-v6-w60 — 2:49 — https://suno.com/song/9971310d-458b-4002-baad-59912520f0fe
+- br-jack-copfunk-M-husky-woman-v6-w60 — 2:50 — https://suno.com/song/214a1d5d-e919-40fa-a6be-92b82b0865a7
+- br-jack-copfunk-N-brassy-woman-v6-w30 — — — https://suno.com/song/4abee9fd-71cc-4a4a-9a5b-c34310ab582e
+- br-jack-copfunk-N-brassy-woman-v6-w30 — — — https://suno.com/song/4b1199be-31a2-4937-b730-1113d3daf4b9
+- br-jack-copfunk-N-brassy-woman-v6-w60 — — — https://suno.com/song/ca40e3ec-0900-423b-9940-9d33fafea068
+- br-jack-copfunk-N-brassy-woman-v6-w60 — — — https://suno.com/song/ed884e7d-dd70-4a23-adfb-d3753c862ca9
+
+### Round J (2026-10-21): back to the South London take, just an English voice
+
+Jack liked https://suno.com/song/ed6dd946-0ebf-422d-a68b-3e205462adc1 (Round B, South London w60) and
+found Round C weird and nothing like it. Round J is Round B's South London atom unchanged, with one
+sentence added at the front: `English male vocals with a thick English accent.` Lyrics, Exclude
+Styles and settings exactly as Round B.
+
+Style:
+
+```
+English male vocals with a thick English accent. Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead, a rough South London geezer with a thick English accent, growling deadpan spoken narration on the verses that breaks into barked shouts on the chorus, a gang of London voices shouting back. Menacing, played completely straight.
+```
+
+2 Creates, 20 credits (10,620 → 10,600). Unheard.
+
+- br-jack-copfunk-J-english-v6-w30 — https://suno.com/song/23b882c1-32da-4262-a9b5-b7823cf6cd73
+- br-jack-copfunk-J-english-v6-w30 — https://suno.com/song/f94a72ef-47d7-4606-ae94-27b2dbb9df99
+- br-jack-copfunk-J-english-v6-w60 — https://suno.com/song/1e695e5d-39eb-4d19-ac0f-c446142ace66
+- br-jack-copfunk-J-english-v6-w60 — https://suno.com/song/408a170d-6ab2-4549-8767-3430a8d3bd9b
+
+### Round C (2026-10-21): four voices by performer type, voice first
+
+Built on the Round B diagnosis below: each voice is a performance tradition with its own pitch,
+texture, room and delivery, placed first in the Style box. Music, lyrics (Jack's draft 3) and settings
+as Round A; workspace `bank-robbery-Jack`. No accent bans. Each Exclude box is its own.
+
+#### F · postpunk
+
+Style:
+
+```
+British post-punk ranter, a weathered working-class man in his fifties, low gravelly smoke-worn voice, close and dry in your ear, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a rumbling bassline, breakbeat drums with bongos, a low flute stalking the verses. He mutters the verses like a threat and barks the chorus hoarse. Menacing, played completely straight.
+```
+
+Exclude styles:
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, rap, hip hop, grime
+```
+
+#### G · britpop
+
+Style:
+
+```
+Britpop snarl, a cocky young lad, higher nasal sneering voice with slap-back echo, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a rumbling bassline, breakbeat drums with bongos, a low flute stalking the verses. Sneered verses that swell into a terrace-chant chorus, a crowd of lads chanting back. Menacing, played completely straight.
+```
+
+Exclude styles:
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, rap, hip hop, grime
+```
+
+#### H · newsreader
+
+Style:
+
+```
+BBC newsreader turned villain, a polished upper-class after-dinner speaker, smooth crisp clean baritone in a large wood-panelled hall, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a rumbling bassline, breakbeat drums with bongos, a low flute stalking the verses. Calm and polite on the verses, coldly furious on the chorus, never raising his voice. Menacing, played completely straight.
+```
+
+Exclude styles:
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, rap, hip hop, grime, shouting, screaming
+```
+
+#### I · grime
+
+Style:
+
+```
+UK grime MC, a young London voice, punchy clipped mid-range, laid-back half-time flow sitting behind the beat, over gritty 1970s cop-show funk, 104 BPM: stabbing brass, wah-wah guitar, a rumbling bassline, breakbeat drums with bongos, a low flute stalking the verses. Verses spat slow and heavy, the chorus traded call-and-response with his crew. Menacing, played completely straight.
+```
+
+Exclude styles:
+
+```
+comedy, novelty, parody, kazoo, cartoon, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, triplet flow, drill, American hip hop
+```
+
+8 Creates, 80 credits (10,700 → 10,620). Unheard. 15 of 16 takes listed.
+
+- br-jack-copfunk-F-postpunk-v6-w30 — 2:49 — https://suno.com/song/98cd01aa-e7e2-4f98-ab88-ef30e0bad7fd
+- br-jack-copfunk-F-postpunk-v6-w60 — 2:49 — https://suno.com/song/37811970-1704-4359-bc4e-5166ff619dc0
+- br-jack-copfunk-F-postpunk-v6-w60 — 2:50 — https://suno.com/song/9ba03240-482e-4122-b4ec-a5da0b2f09b2
+- br-jack-copfunk-G-britpop-v6-w30 — 2:49 — https://suno.com/song/17fdd031-7b23-43d1-9435-fecbf08740f6
+- br-jack-copfunk-G-britpop-v6-w30 — 2:49 — https://suno.com/song/e6bd53b4-652a-41a9-a747-d72b73df7691
+- br-jack-copfunk-G-britpop-v6-w60 — 2:49 — https://suno.com/song/e4c1ce91-722d-4995-b7de-afc2bfecf611
+- br-jack-copfunk-G-britpop-v6-w60 — 2:50 — https://suno.com/song/c5b2ba8e-efc4-41de-854b-7eb298038dc7
+- br-jack-copfunk-H-newsreader-v6-w30 — 2:49 — https://suno.com/song/5e751105-471e-46a8-974b-8969c40c40e6
+- br-jack-copfunk-H-newsreader-v6-w30 — 2:50 — https://suno.com/song/a04d5355-4ac9-4966-bb45-05d1ad3106a0
+- br-jack-copfunk-H-newsreader-v6-w60 — 2:48 — https://suno.com/song/ea39c01d-7fdc-4e00-9985-233288d7790e
+- br-jack-copfunk-H-newsreader-v6-w60 — 2:50 — https://suno.com/song/a6ce5deb-5787-42b7-bc60-1a8a29bd823f
+- br-jack-copfunk-I-grime-v6-w30 — — — https://suno.com/song/25fba2a6-0558-4755-8bf3-362f99deb5b1
+- br-jack-copfunk-I-grime-v6-w30 — — — https://suno.com/song/6625318c-bbfb-4f17-9505-4fb1fba0cf2a
+- br-jack-copfunk-I-grime-v6-w60 — — — https://suno.com/song/dfcd1624-5574-4901-a842-6d0004311d42
+- br-jack-copfunk-I-grime-v6-w60 — — — https://suno.com/song/e9cc3699-3cee-44fe-a4f7-ca7f82a397b8
+
+### Round B (2026-10-21): four English voices, same song
+
+Jack: redo the cop-funk songs with English voices that vary from song to song, in the
+`bank-robbery-Jack` workspace. Only the voice sentence changes; the music, the lyrics (Jack's
+draft 3) and the settings are Round A's. Exclude Styles is Round A's plus `American accent, American`.
+
+#### B · south-london
+
+Style:
+
+```
+Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead, a rough South London geezer with a thick English accent, growling deadpan spoken narration on the verses that breaks into barked shouts on the chorus, a gang of London voices shouting back. Menacing, played completely straight.
+```
+
+#### C · manc
+
+Style:
+
+```
+Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead, a sneering Mancunian with a flat nasal Northern English accent, bored deadpan spoken narration on the verses that breaks into snarled shouts on the chorus, a gang of Northern voices shouting back. Menacing, played completely straight.
+```
+
+#### D · scouse
+
+Style:
+
+```
+Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead, a raspy Liverpool docker with a thick Scouse English accent, hoarse deadpan spoken narration on the verses that breaks into roared shouts on the chorus, a gang of Scouse voices shouting back. Menacing, played completely straight.
+```
+
+#### E · posh
+
+Style:
+
+```
+Gritty 1970s cop-show funk soundtrack, 104 BPM: stabbing brass section, wah-wah guitar, a fat rumbling bassline, live breakbeat drums with bongos and congas, a breathy low flute stalking the verses, tense string swells on the chorus. Male lead, a cold upper-class English villain with a clipped plummy accent, quiet menacing spoken narration on the verses that snaps into contemptuous shouts on the chorus, a gang of rough London voices shouting back. Menacing, played completely straight.
+```
+
+Exclude Styles (all four):
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, punk, new wave, cheerful, drum and bass, EDM, autotune, choir, gospel, country, power ballad, smooth R&B, disco, American accent, American
+```
+
+8 Creates, 80 credits (10,780 → 10,700), workspace `bank-robbery-Jack`. Unheard. 15 of 16 takes
+listed; the second South London w30 take did not show in the list.
+
+- br-jack-copfunk-B-south-london-v6-w30 — 2:50 — https://suno.com/song/35778104-b667-4b16-8cd4-f2226c168cb0
+- br-jack-copfunk-B-south-london-v6-w60 — 2:49 — https://suno.com/song/93fd522d-684e-4de4-a3f0-1c594f08d498
+- br-jack-copfunk-B-south-london-v6-w60 — 2:50 — https://suno.com/song/ed6dd946-0ebf-422d-a68b-3e205462adc1
+- br-jack-copfunk-C-manc-v6-w30 — 2:50 — https://suno.com/song/379426c0-3d0c-471f-ab8e-b83ae9ce1f6b
+- br-jack-copfunk-C-manc-v6-w30 — 2:50 — https://suno.com/song/f415e6a6-3695-413b-8e59-43dbc269180c
+- br-jack-copfunk-C-manc-v6-w60 — 2:50 — https://suno.com/song/646dcfe2-d115-463b-ad79-0304d11ad2cf
+- br-jack-copfunk-C-manc-v6-w60 — 2:50 — https://suno.com/song/83a22492-6cfb-424c-8a4b-385f08cffe17
+- br-jack-copfunk-D-scouse-v6-w30 — 2:47 — https://suno.com/song/7777d2b8-79d3-4536-944a-f642d8b012b6
+- br-jack-copfunk-D-scouse-v6-w30 — 2:50 — https://suno.com/song/11c6b37c-1b09-4ae6-b7f7-0fb728ec990c
+- br-jack-copfunk-D-scouse-v6-w60 — 2:49 — https://suno.com/song/b445526a-43eb-4477-88ea-9e22d6802136
+- br-jack-copfunk-D-scouse-v6-w60 — — — https://suno.com/song/94b09870-8d68-4d1a-b298-7c996efe1801
+- br-jack-copfunk-E-posh-v6-w30 — — — https://suno.com/song/3d4c6ac4-19e6-4d2a-9ce5-785973213af0
+- br-jack-copfunk-E-posh-v6-w30 — — — https://suno.com/song/a4b83511-263f-4648-9f09-9000cddb2688
+- br-jack-copfunk-E-posh-v6-w60 — — — https://suno.com/song/a2bb0f70-32ee-4d7d-a736-c0537083e695
+- br-jack-copfunk-E-posh-v6-w60 — — — https://suno.com/song/f0d10f8c-c2a9-4188-a988-9d787232a521
+
+Why Round B came back as one voice (diagnosis, 2026-10-21; Jack heard "basically the same
+English voice over and over"):
+
+1. **The only thing that changed was the accent word, and Suno does not render regional accents.**
+   Tested in this repo: a detailed Scouse spec produced no accent at all (`docs/suno-gpt/suno-voices.md`
+   §2). South London / Manc / Scouse were dead words; only "posh" had a chance.
+2. **The genre picks the singer.** "1970s cop-show funk soundtrack" chooses one pool of voices, and
+   weirdness 30/60 only moves around inside that pool (`suno-voices.md` §2b).
+3. **The rest of the voice sentence was identical in all four:** deadpan spoken narration → shouts on
+   the chorus → a gang shouting back. Same delivery, same arc, same voice. A meek variation
+   (`suno-automation` "BOLD, NOT MEEK").
+4. **The voice sentence sat last**, after a long instrument list, so it had the least pull.
+5. **`American accent, American` in Exclude does nothing for nationality** (failed three rounds on
+   Camping) and can be deleted.
+
+Fix: vary on what Suno does render (pitch, texture, delivery, room), name a performance tradition
+for each voice instead of a region, and put the voice first.
+
+## Draft 2 (2026-10-21) — superseded by draft 3
+
+Jack's brief, word for word:
+
+> i want to stray away from economic talk, mostly reference it as a bank robbery, through metaphor
+> and with economic hints throughout, making it aggressive, gory, sort of like the vibe of making
+> people aware that they should be angry about their money being stolen, in the same vein as the
+> bank robbery story, as in all this immagration talk is just a distration from the debasement of
+> our currency, making it impossible to live and buy a house, this has been stolen from us, evident
+> from the current protests across europe at the moment, people are angry about living standerds
+> and absurd politcal corruption and mismanagement, these are all ingredients for the soup that is
+> this song. please help, Also, research the internet, look through the repo, and use the skills to
+> achieve this goal. Thanks.
+
+Jack's brief: less economics talk, tell it as a bank robbery in metaphor with economic hints;
+aggressive and gory; make people angry that their money is being stolen; the immigration row is the
+distraction from the debasement that makes living and buying a house impossible; the protests across
+Europe and the anger about living standards and corruption go in the pot. Same vibe as draft 1
+(1970s heist soundtrack, nervy art-punk new wave, psychedelic swirl).
+
+The drama in one sentence: men in rosettes break into the bank to put money in, so every pound you
+hold bleeds out, and they start the street screaming about boats so nobody hears the drill; the
+keys to your house end up in their bag.
+
+What it is built from:
+- **Reservoir Dogs:** Mister Red and Mister Blue (they don't pick their own colours), the town tied
+  to a chair in the back with the radio on, and the ear taken so it can't hear the drill.
+- **The film's canon:** the one pallet with a left end and a right end, "Thirteen years!" /
+  "Fourteen!" (the row with no content), the bag of house keys, "he's not a thief, he's just
+  early", "three hundred thousand men got off that beach", "take a pound off a man…", the cleaner
+  who counts, "burglars take things", and "it's got BANK written on it".
+- **Jack's verse:** the money tree, "rent seeking? JUST ABOUT EATING!" and "sorry, did I interrupt
+  your meeting?" are kept word for word.
+- **The news (checked 2026-10-21):** cost-of-living and housing protests across France, Belgium,
+  Italy and Portugal on 17–18 October, with housing marches in Spain (Euronews, 19 Oct 2026). The
+  song names the road, not a riot, and calls nobody to burn anything.
+- **The reader's rules:** immigration is never called fake ("some of that's real, it's the size of
+  a coin"); Red and Blue get it equally; the anger is aimed at the bank and the men with the keys,
+  never at the crowd or at the reader.
+
+Settings: model **v6**, Variety **Normal**, Personalize **off**, Max Mode **off**, Vocal Gender
+**male**, Duration **3:10**, style influence **75**, weirdness **30 and 60** (the pair). Unheard,
+nothing generated.
+
+### Style
+
+```
+Menacing British art-punk new wave with a 1970s heist-movie soul groove, 120 BPM: a twitchy distorted funk guitar, a bouncing snarling bassline, dry punchy drums with handclaps, and phased psychedelic synths that swirl in on the chorus. Male lead in a tense deadpan talk-sing on the verses that tears into snarled shouted yelps on the chorus, a gang of flat voices shouting back. Played completely straight.
+```
+
+### Exclude Styles
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, pop punk, cheerful, drum and bass, EDM, autotune, orchestral, choir, gospel, country, power ballad, smooth R&B
+```
+
+### Lyrics
+
+```lyrics
+[Intro]
+They say you can't make money from a tree
+let's see
+nobody move, nobody's taking a thing
+(nobody move)
+that's how you know it's a robbery
+
+[Verse 1]
+Eleven black ties at the café at dawn
+Mister Red, Mister Blue, didn't pick what they've got on
+no masks on the faces, just a rosette
+and the getaway car's on the never-never
+
+the drill's in the boot and the key's in his coat
+it's his bank, he's had the key the whole time
+the drill's for you, mate, the drill's for show
+and the van's backed up to the side door, slow
+
+[Pre-Chorus]
+"Thirteen years!" "Fourteen!" scream it at the screen
+left end, right end, one pallet, one door
+(lift your feet)
+and the drill goes in while you're scrapping on the floor
+
+[Chorus]
+It's a robbery! Robbery!
+they're not taking it out, they're shoving it in
+every pound in your pocket's bleeding through the skin
+(count it again)
+It's a robbery! Robbery!
+blood on the carpet and the keys in the bag
+(that's your house, that's your house)
+
+[Verse 2]
+They tied the town to a chair in the back
+radio on, something sweet from the seventies
+took off its ear so it can't hear the drill
+now it only hears the boats, and it's bleeding still
+
+three hundred thousand men got off that beach
+and their grandkids can't get a one-bed
+the rent letter's doubled on the draining board
+he spends the new money first, before the prices move
+he's not a thief, he's just early
+and you're just late
+
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus]
+It's a robbery! Robbery!
+they're not taking it out, they're shoving it in
+every pound in your pocket's bleeding through the skin
+(count it again)
+It's a robbery! Robbery!
+blood on the carpet and the keys in the bag
+(that's your house, that's your house)
+
+[Monologue]
+Take a pound off a man and he calls the police. Thin every pound he's got and there's no law for that one. Our road's changed. Some of that's real. It's the size of a coin. The vault's the size of the town.
+
+[Verse 3]
+Paris to Porto, they're out in the road
+Milan to Madrid, with the rent that they owe
+same suits, same pallet, same drill, same queue
+and this time they're screaming at the bank
+
+the cleaner don't shout, she just counts the drawers
+mops your blood off the marble, it's yours, it's all yours
+every balance the same, not a penny gone
+burglars take things
+this lot took your home
+
+[Final Chorus]
+It's a robbery! Robbery!
+they're not taking it out, they're shoving it in
+every pound in your pocket's bleeding through the skin
+(count it again)
+It's a robbery! Robbery!
+blood on the carpet and the keys in the bag
+(that's your house, that's your house)
+
+[Outro]
+I've seen how this ends, I came back to say
+look at the bank
+it's got BANK written on it
+(count it again)
+```
+
+## Draft 1 (2026-10-21) — superseded by draft 2
+
+Jack's brief: expand and improve the ten-line verse he pasted, nothing else carried in. The vibe is
+a 1970s heist soundtrack, nervy art-punk new wave and a psychedelic swirl. No artist names go in any
+box. Unheard, nothing generated.
+
+Settings: model **v6**, Variety **Normal**, Personalize **off**, Max Mode **off**, Vocal Gender
+**male**, Duration **2:50**, style influence **75**, weirdness **30 and 60** (the pair).
+
+### Style
+
+```
+Nervy British art-punk new wave with a 1970s heist-movie soul groove, 118 BPM: a twitchy choppy funk guitar, a bouncing melodic bassline, dry tight drums with handclaps, and phased psychedelic synths that swirl in on the chorus. Male lead in a tense deadpan talk-sing that cracks into yelps on the chorus, flat group shouts answering. Played completely straight.
+```
+
+### Exclude Styles
+
+```
+comedy, novelty, parody, kazoo, cartoon, rap, hip hop, trap, double-time, fast rap, drum and bass, EDM, autotune, orchestral, choir, gospel, country, power ballad, smooth R&B
+```
+
+### Lyrics
+
+```lyrics
+[Verse 1]
+They say you can't make money from a tree
+let's see, each day, not free, ay
+you work and get paid, you're earning that dough
+but where does it go? Nobody knows!
+
+living standards bleeding, landlords feeding
+quantitative easing, grandma FREEZING!
+they own the means of production, you get the reduction
+stimulus checks are next, go fetch
+
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+
+[Chorus]
+It's a robbery, robbery
+nobody's taking, they're carrying it in
+eight hundred and ninety-five billion
+print it, print it, print it again
+(count it, count it, count it again)
+
+[Verse 2]
+They printed it fresh and they bought what they own
+the shares and the houses, the bonds and the loans
+the top tenth got three hundred and fifty grand
+the bottom tenth got three, and a lecture on the plan
+
+now the bread costs more and so does the rent
+they call it inflation, like nobody meant it
+your wages stood still while the asset prices flew
+funny how the tree only fruits for a few
+
+[Chorus]
+It's a robbery, robbery
+nobody's taking, they're carrying it in
+eight hundred and ninety-five billion
+print it, print it, print it again
+(count it, count it, count it again)
+
+[Bridge]
+Left grabs one end, Right grabs the other
+shouting 'bout the boats and blaming each other
+(it's the boats!) (it's the bosses!)
+same bag, same door, same vault getting fuller
+and you're the only one getting poorer
+
+[Verse 3]
+Morning comes, nothing missing, every balance the same
+the coppers shrug, no break-in, nobody to blame
+but burglars take things, and this lot left more
+the cleaner counts the drawers, then she counts them once more
+
+I've seen how this ends, I've been there, I'm back
+the pound in your pocket's been thinned to a crack
+they'll tell you it's the weather, the war or the queue
+she's the only one in the building who counts
+
+[Outro]
+It's a robbery, robbery
+(count it, count it, count it again)
+nobody's taking, they're carrying it in
+(count it again)
+```
+
+## Earlier lyrics
+
+The lyrics below are copied word for word from [`score.md`](./score.md), which still holds the
+originals.
+
+## Lyrics (from `score.md` § Lyrics)
+
+```lyrics
+They say, ya can't make money from a tree
+let's see, each day, not free, ay
+work and get paid though, earning that dough
+but where does it go? nobody knows!
+
+standards bleeding, land-lords needing
+quantitative easing, grandma FREEZING!
+means of production, means a reduction
+stimulus checks are next, get wrecked
+
+rent seeking? JUST ABOUT EATING!
+sorry, did I interrupt your meeting?
+```
+
+## Lyrics (from `score.md` § br-sting, the 80s montage)
+
+```lyrics
+A modern guide to robbing a Bank.
+Step 1. Get yourself a wank tank.
+Now you look the part, real classy, good start.
+Step 2. This one is especially for you.
+"You gotta split the red side away from the blue."
+Step 3. And this one ain't free.
+Slowly start to debase the currency.
+Step 4. Start a war.
+This one drives the price up from the floor.
+```

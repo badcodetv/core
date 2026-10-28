@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/d572ac5a-35d1-4eb2-9dd5-32ebaf8b794e/scratchpad/vg/v1-b.png",
+ "made": "2026-10-25T12:03:51.291Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Open-world crime satire video game loading-screen art, present day: a painted illustration with thick black ink outlines, flat cel colour with hard-edged shadow shapes, semi-realistic people full of attitude, the last coral and mango light of the sky laid in flat bands, hot pink neon. A tall narrow city building cut open in cross-section like a doll's house after dark, four floors only, seen from across the street, low and to the left, so the building stands off-centre and the street runs out of frame. Attic: an old woman in a coat shivers by one candle in an ice blue room. Street level: a brick red bakery; a red crowd and a blue crowd of mixed ages and skin tones shove each other under a yellow street lamp, the roof of a police vehicle in the near left corner. Basement: in emerald lamplight, printing presses throw banknotes into the air while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances. Bottom: an orange furnace. Soot, peeling paint and puddles. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "0319c4d2-0c74-414e-a640-f9fdce15dd10"
+}

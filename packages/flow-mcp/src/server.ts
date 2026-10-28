@@ -4,18 +4,25 @@ import { z } from 'zod'
 import { NAME, VERSION } from './version'
 import { FlowClient } from './flow-client'
 import { ok, fail, NOT_RUNNING_HINT, type ToolResult } from './result'
-import { resolveChannel, releaseLock, surveyChannels, profileFor, type Resolution } from './channel'
+import { stampFlow } from './prov'
+import { resolveChannel, releaseLock, surveyChannels, profileFor, probe, type Resolution } from './channel'
+import { execFile } from 'node:child_process'
+import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve as resolvePath } from 'node:path'
 
 /**
- * Cache the CDP attachment across tool calls: the stdio server process is long-lived, and
- * keeping the same Page preserves image-mode state and Flow's in-session context between
- * edit-loop rounds (as well as saving the attach + page discovery per call). A dead handle
- * (user restarted Chrome) is detected via isAlive() and retried once with a fresh connect;
- * close() on a connectOverCDP browser only detaches — it never kills the user's Chrome.
+ * 🔴 2026-09-17: a Playwright CDP attachment held across many tool calls (the previous
+ * behaviour here) was measured to silently misfire — `locator.click()` on the settings
+ * trigger returned successfully but the popover it opens never appeared, every time, on a
+ * long-lived cached attachment; the IDENTICAL click, run moments later as a brand-new
+ * `connectOverCDP` against the same tab, worked in under a second, repeatedly. A fresh
+ * attachment per tool call reproduced that reliability, so this no longer caches across
+ * calls — it connects, runs one tool, and detaches every time. `close()` on a connectOverCDP
+ * browser only detaches; it never kills the user's Chrome, so nothing here disturbs Flow's
+ * own in-page state (image mode, the open project, …), which lives in the DOM, not in this
+ * process's Playwright objects.
  */
-let cached: FlowClient | null = null
 const DISCONNECTED_RE = /Target closed|browser has been closed|Target page, context or browser has been closed|ECONNRESET/i
 
 /**
@@ -33,7 +40,27 @@ let channel: Resolution | null = null
 
 async function currentChannel(): Promise<Resolution> {
   channel ??= await resolveChannel(REPO_ROOT, 'flow')
+  await ensureBrowser(channel)
   return channel
+}
+
+/**
+ * 🔴 2026-09-28: this server LAUNCHES ITS OWN BROWSER. Before this, a fresh session locked a
+ * channel with `needs-launch` and waited for the agent to start Chrome — and the agent's tool for
+ * that, `browser-channel.sh claim`, skips locked channels, so it launched a SECOND browser on the
+ * next channel while this server kept waiting on the first. Kai saw two Chrome windows open on
+ * every session that started with no browser up. Now the channel we hold is the one we start,
+ * so there is exactly one browser per session and `claim` is never needed for Flow.
+ * A pinned FLOW_CDP_PORT is the user's own browser — we never launch over a pin.
+ */
+async function ensureBrowser(ch: Resolution): Promise<void> {
+  if (await probe(ch.port)) {
+    ch.needsLaunch = false
+    return
+  }
+  if (ch.how === 'pinned') return
+  await promisify(execFile)(resolvePath(REPO_ROOT, 'scripts', 'browser-channel.sh'), ['up', String(ch.channel)], { timeout: 60_000 })
+  ch.needsLaunch = !(await probe(ch.port))
 }
 
 // Give the channel back when this session ends, so the next one can reuse the browser.
@@ -47,21 +74,15 @@ for (const sig of ['exit', 'SIGINT', 'SIGTERM'] as const) {
 async function withClient<T>(fn: (c: FlowClient) => Promise<T>): Promise<T> {
   const ch = await currentChannel()
   for (let attempt = 0; attempt < 2; attempt++) {
-    if (cached && !cached.isAlive()) {
-      await cached.close().catch(() => {})
-      cached = null
-    }
-    cached ??= await FlowClient.connect(ch.endpoint)
+    const client = await FlowClient.connect(ch.endpoint)
     try {
-      return await fn(cached)
+      return await fn(client)
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err)
-      if (attempt === 0 && DISCONNECTED_RE.test(msg)) {
-        await cached.close().catch(() => {})
-        cached = null
-        continue
-      }
+      if (attempt === 0 && DISCONNECTED_RE.test(msg)) continue
       throw err
+    } finally {
+      await client.close().catch(() => {})
     }
   }
   throw new Error('unreachable')
@@ -163,7 +184,8 @@ server.registerTool(
   },
   async () => {
     try {
-      const mine = await currentChannel().catch(() => null)
+      // Read-only: report the channel without launching a browser just to list them.
+      const mine = (channel ??= await resolveChannel(REPO_ROOT, 'flow').catch(() => null))
       const rows = await surveyChannels(REPO_ROOT)
       return ok({
         mine: mine ? { channel: mine.channel, port: mine.port, resolvedBy: mine.how, needsLaunch: mine.needsLaunch } : null,
@@ -274,12 +296,15 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.generateImage(prompt, outPath, {
-            ...(character ? { character } : {}),
-            ...(numOutputs ? { numOutputs } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-          }),
+          stampFlow(
+            await c.generateImage(prompt, outPath, {
+              ...(character ? { character } : {}),
+              ...(numOutputs ? { numOutputs } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+            }),
+            { kind: 'image', tool: 'flow_generate_image', prompt, model: model ?? null, inputs: { character: character ?? null }, settings: { aspect: aspect ?? null, numOutputs: numOutputs ?? 1 } },
+          ),
         ),
       )
     } catch (err) {
@@ -312,12 +337,15 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.editImage(prompt, referenceImages, outPath, {
-            ...(numOutputs ? { numOutputs } : {}),
-            ...(character ? { character } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-          }),
+          stampFlow(
+            await c.editImage(prompt, referenceImages, outPath, {
+              ...(numOutputs ? { numOutputs } : {}),
+              ...(character ? { character } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+            }),
+            { kind: 'image', tool: 'flow_edit_image', prompt, model: model ?? null, parent: referenceImages[0], inputs: { references: referenceImages, character: character ?? null }, settings: { aspect: aspect ?? null, numOutputs: numOutputs ?? 2 } },
+          ),
         ),
       )
     } catch (err) {
@@ -351,10 +379,14 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.refine(prompt, outPath, {
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-          }),
+          stampFlow(
+            await c.refine(prompt, outPath, {
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+            }),
+            // A refine builds on the session's last image, which this call never names: say so.
+            { kind: 'image', tool: 'flow_refine', prompt, model: model ?? null, inputs: { follows: 'the previous image in the same Flow session' }, settings: { aspect: aspect ?? null } },
+          ),
         ),
       )
     } catch (err) {
@@ -414,17 +446,20 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.generateVideo({
-            motion,
-            outPath,
-            ...(startImage ? { startImage } : {}),
-            ...(endImage ? { endImage } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-            ...(count ? { count } : {}),
-            ...(durationSeconds ? { durationSeconds } : {}),
-            ...(character ? { character } : {}),
-          }),
+          stampFlow(
+            await c.generateVideo({
+              motion,
+              outPath,
+              ...(startImage ? { startImage } : {}),
+              ...(endImage ? { endImage } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+              ...(count ? { count } : {}),
+              ...(durationSeconds ? { durationSeconds } : {}),
+              ...(character ? { character } : {}),
+            }),
+            { kind: 'video', tool: 'flow_generate_video', prompt: motion, model: model ?? 'Veo 3.1 Fast', parent: startImage ?? null, inputs: { start: startImage ?? null, end: endImage ?? null, character: character ?? null }, settings: { aspect: aspect ?? '16:9', count: count ?? 1, durationSeconds: durationSeconds ?? null } },
+          ),
         ),
       )
     } catch (err) {
@@ -463,13 +498,16 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.refineVideo({
-            mediaId,
-            motion,
-            outPath,
-            ...(model ? { model } : {}),
-            ...(durationSeconds ? { durationSeconds } : {}),
-          }),
+          stampFlow(
+            await c.refineVideo({
+              mediaId,
+              motion,
+              outPath,
+              ...(model ? { model } : {}),
+              ...(durationSeconds ? { durationSeconds } : {}),
+            }),
+            { kind: 'video', tool: 'flow_refine_video', prompt: motion, model: model ?? null, inputs: { refines_media_id: mediaId }, settings: { durationSeconds: durationSeconds ?? null } },
+          ),
         ),
       )
     } catch (err) {
@@ -504,13 +542,16 @@ server.registerTool(
     try {
       return await withClient(async (c) =>
         ok(
-          await c.generateBatch(prompts, outDir, {
-            ...(character ? { character } : {}),
-            ...(numOutputs ? { numOutputs } : {}),
-            ...(model ? { model } : {}),
-            ...(aspect ? { aspect } : {}),
-            ...(resume ? { resume } : {}),
-          }),
+          stampFlow(
+            await c.generateBatch(prompts, outDir, {
+              ...(character ? { character } : {}),
+              ...(numOutputs ? { numOutputs } : {}),
+              ...(model ? { model } : {}),
+              ...(aspect ? { aspect } : {}),
+              ...(resume ? { resume } : {}),
+            }),
+            { kind: 'image', tool: 'flow_generate_batch', model: model ?? null, inputs: { character: character ?? null }, settings: { aspect: aspect ?? null, numOutputs: numOutputs ?? 1 } },
+          ),
         ),
       )
     } catch (err) {
@@ -546,22 +587,24 @@ server.registerTool(
   {
     title: 'Create character',
     description:
-      'Create a reusable Flow Character from one or more reference image paths (absolute), for cross-slide consistency, and optionally complete it in the SAME call: pass body to add the full-figure Body view (Flow\'s native "Create Body" pass — describe build, posture and outfit) and info to fill the free-text note Flow\'s scene agent reads. A character with both a Portrait and a Body binds identity far better than a portrait alone. Cast it later with the character parameter, or "@" in a prompt. Returns { name, bodyMediaId?, bodyPath? }.',
+      'Create a reusable Flow Character for cross-shot consistency, and optionally complete it in the SAME call. On the rebuilt Flow (flow.google.com): refImages[0] is uploaded as the Portrait; the Body is bodyImage (an image path — the proven route), else refImages[1], else generated from the text `body`; info fills the Character\'s personality note. A Character with both a Portrait and a Body binds identity far better than a portrait alone. Cast it later with the `character` parameter of the image/edit/batch/video tools (the rebuild reloads the project before each cast, because Character rows drop out of the picker until a reload). Returns { name, id, tabs, bodyPath? }.',
     inputSchema: {
       name: z.string().min(1),
       refImages: z.array(z.string().min(1)).min(1),
       body: z.string().min(1).optional(),
+      bodyImage: z.string().min(1).optional(),
       info: z.string().min(1).optional(),
       bodyOutPath: z.string().min(1).optional(),
       model: z.string().min(1).optional(),
     },
   },
-  async ({ name, refImages, body, info, bodyOutPath, model }) => {
+  async ({ name, refImages, body, bodyImage, info, bodyOutPath, model }) => {
     try {
       return await withClient(async (c) =>
         ok(
           await c.createCharacter(name, refImages, {
             ...(body ? { body } : {}),
+            ...(bodyImage ? { bodyImage } : {}),
             ...(info ? { info } : {}),
             ...(bodyOutPath ? { bodyOutPath } : {}),
             ...(model ? { model } : {}),
@@ -612,19 +655,21 @@ server.registerTool(
   {
     title: 'Add character body view',
     description:
-      'Add the full-figure Body view to an existing Character that only has a Portrait, via Flow\'s native "Create Body" pass. description should cover build, posture, outfit and setting. Errors BODY_EXISTS if it already has one — use flow_edit_character to change that. Returns { path, mediaId }.',
+      'Add the full-figure Body view to an existing Character that only has a Portrait, via Flow\'s native "Create Body" pass. Pass bodyImage (an image path) to upload the Body — the proven route on the rebuilt Flow — or description alone to generate it. description should cover build, posture, outfit and setting. Errors BODY_EXISTS if it already has one — use flow_edit_character to change that. Returns { path, mediaId }.',
     inputSchema: {
       name: z.string().min(1),
       description: z.string().min(1),
+      bodyImage: z.string().min(1).optional(),
       outPath: z.string().min(1).optional(),
       model: z.string().min(1).optional(),
     },
   },
-  async ({ name, description, outPath, model }) => {
+  async ({ name, description, bodyImage, outPath, model }) => {
     try {
       return await withClient(async (c) =>
         ok(
           await c.createCharacterBody(name, description, {
+            ...(bodyImage ? { bodyImage } : {}),
             ...(outPath ? { outPath } : {}),
             ...(model ? { model } : {}),
           }),

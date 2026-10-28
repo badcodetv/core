@@ -1,0 +1,205 @@
+{
+ "clips": [
+  {
+   "id": "s03a-ex",
+   "plate": "v3/s03a-hearing",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex, the man in the chair, says, in a warm, unhurried, privately educated southern English accent: Help at the food bank. He coughs once into his fist, then says: Or consultancy. Then he holds still with a small smile. The people in the foreground keep still. Fixed camera, one continuous shot. Sound: his voice in a quiet panelled room. No music. Thanks."
+  },
+  {
+   "id": "s06-names",
+   "plate": "v3/s06a-list",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex",
+    "Mr Turquoise",
+    "Mr Blue"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex, the man with the clipboard, points his pencil at each man in turn and says, in a warm, unhurried, privately educated southern English accent: Mr Blue. Mr Red. Mr Turquoise. Then he looks down at the clipboard. The other men keep their lips closed. Fixed camera, one continuous shot. Sound: his voice, and rain on a metal roof. No music. Thanks."
+  },
+  {
+   "id": "s06-why",
+   "plate": "v3/s06a-list",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex",
+    "Mr Turquoise",
+    "Mr Blue"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Turquoise, the man in the middle with his hands out, says, in a matey Estuary English accent, hurt: Why am I Mr Turquoise? Then he holds still with his hands out. The other men keep their lips closed. Fixed camera, one continuous shot. Sound: his voice, and rain on a metal roof. No music. Thanks."
+  },
+  {
+   "id": "s06-taken",
+   "plate": "v3/s06a-list",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex",
+    "Mr Turquoise",
+    "Mr Blue"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex, the man with the clipboard, says without looking up, in a warm, unhurried, privately educated southern English accent: Blue was taken. He keeps writing. The other men keep their lips closed. Fixed camera, one continuous shot. Sound: his voice, a pencil on paper, and rain on a metal roof. No music. Thanks."
+  },
+  {
+   "id": "s06-thirteen",
+   "plate": "v8/s06-nose",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Blue",
+    "Mr Red"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Blue, the man on the left, jabs his finger and shouts, in a loud, blunt English Midlands accent: Thirteen years! Then he glares. Mr Red keeps his lips closed. Fixed camera, one continuous shot. Sound: his voice echoing in a garage. No music. Thanks."
+  },
+  {
+   "id": "s06-fourteen",
+   "plate": "v8/s06-nose",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Blue",
+    "Mr Red"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Red, the man on the right, jabs his finger and shouts back, in an earnest north London English accent: Fourteen! Then he glares. Mr Blue keeps his lips closed. Fixed camera, one continuous shot. Sound: his voice echoing in a garage. No music. Thanks."
+  },
+  {
+   "id": "s12j-mess",
+   "plate": "v7/s12j-blue",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Blue"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Blue shouts at someone out of frame, in a loud, blunt English Midlands accent: This is your mess! He glares, breathing hard, for two seconds. Then he shouts: Thirteen years! Then he holds still. Fixed camera, one continuous shot. Sound: his voice and a loud alarm bell. No music. Thanks."
+  },
+  {
+   "id": "s12k-inherit",
+   "plate": "v7/s12k-red",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Red"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Red shouts back at someone out of frame, in an earnest north London English accent, wounded: We inherited it! He stares, breathing hard, for two seconds. Then he shouts: Fourteen! Then he holds still. Fixed camera, one continuous shot. Sound: his voice and a loud alarm bell. No music. Thanks."
+  },
+  {
+   "id": "s10e-bleach2",
+   "plate": "v8/s10e-bleach2",
+   "mode": "ingredients",
+   "chars": [
+    "Denise",
+    "The Fixer"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Denise keeps wiping the counter in small circles and says without looking up, in a dry, flat northern English accent: Shift. The Fixer keeps his lips closed, lifts his sandwich out of her way and goes on chewing. The bleach bottle stays where it is. Fixed camera, one continuous shot. Sound: her voice, and a cloth squeaking on wood. No music. Thanks."
+  },
+  {
+   "id": "s11c-why2",
+   "plate": "v8/s11c-why2",
+   "mode": "ingredients",
+   "chars": [
+    "The Accountant"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Accountant says, in a soft, precise, slightly nasal English accent, slowly and baffled: Why am I drilling? Then he holds still with his mouth a little open. The drill hangs still. Fixed camera, one continuous shot. Sound: his voice echoing in a brick cellar. No music. Thanks."
+  },
+  {
+   "id": "s11d-better2",
+   "plate": "v8/s11d-better2",
+   "mode": "ingredients",
+   "chars": [
+    "The Governor"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Governor says, in a soft, dry, educated London English accent, with no expression: It looks better. Then he holds perfectly still with the key still up. Fixed camera, one continuous shot. Sound: his voice echoing in a brick cellar. No music. Thanks."
+  },
+  {
+   "id": "s11f-count2",
+   "plate": "v8/s11f-count2",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex pats the stack once and says over his shoulder, in a warm, unhurried, privately educated southern English accent: Count it in the morning. It'll all be there. Then he holds his small smile. Fixed camera, one continuous shot. Sound: his voice, close, in a small room. No music. Thanks."
+  },
+  {
+   "id": "s07c-hoovering",
+   "plate": "v3/s07c-denise-hall",
+   "mode": "frames",
+   "chars": [],
+   "full": "The woman pushes the hoover slowly forward and back across the chequered floor, working her way along. Her long shadow moves with her. Everything else stays where it is. Fixed camera, one continuous shot. Sound: an old hoover echoing in a big empty hall. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s08j-phones",
+   "plate": "v8/s08j-phones",
+   "mode": "frames",
+   "chars": [],
+   "full": "The pallet is wheeled slowly from left to right along the strip, out of focus, and leaves the frame. The raised phones sway a little and stay pointed across the street. Flare smoke drifts. Everything else stays where it is. Fixed camera, one continuous shot. Sound: a crowd roaring with no words that can be made out, and trolley wheels on cobbles. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s09d-door3",
+   "plate": "v8/s09d-door3",
+   "mode": "frames",
+   "chars": [],
+   "full": "Pink smoke rolls slowly in through the doorway around the four men. The man second from the left straightens his tie. The other three stand still. Everything else stays where it is. Fixed camera, one continuous shot. Sound: a crowd roaring far off outside, and a flare hissing. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s09e-turquoise2",
+   "plate": "v8/s09e-turquoise2",
+   "mode": "frames",
+   "chars": [],
+   "full": "Plaster dust and flakes keep falling past the man. He keeps his arm straight up, scrolls his phone with his thumb, and his grin widens. Everything else stays where it is. Fixed camera, one continuous shot. Sound: plaster pattering on marble, and one phone notification ping. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s10a-enter2",
+   "plate": "v8/s10a-enter2",
+   "mode": "frames",
+   "chars": [],
+   "full": "The woman pushes the red hoover forward one slow step. The men far down the hall stay frozen. Everything else stays where it is. Fixed camera, one continuous shot. Sound: an old hoover starting up, echoing in a big hall. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s10-hoover2",
+   "plate": "v8/s10-hoover2",
+   "mode": "frames",
+   "chars": [],
+   "full": "The red hoover slides forward across the floor and steers round the nearest pair of shoes. The shoes stay planted flat on the floor. Everything else stays where it is. Fixed camera, one continuous shot. Sound: an old hoover, loud and close. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s10d-looking2",
+   "plate": "v8/s10d-looking2",
+   "mode": "frames",
+   "chars": [],
+   "full": "The woman stands still and her eyes move slowly from left to right, counting. Her lips stay closed. The two men behind her wave their arms at each other, out of focus. Everything else stays where it is. Fixed camera, one continuous shot. Sound: two men bickering far off with no words that can be made out. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s11a-drill2",
+   "plate": "v8/s11a-drill2",
+   "mode": "frames",
+   "chars": [],
+   "full": "The man leans on the drill and it screams against the iron door. His head shakes with it and sweat runs down his face. The man behind him does not move. Everything else stays where it is. Fixed camera, one continuous shot. Sound: a hammer drill on iron, loud. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s11b-key2",
+   "plate": "v8/s11b-key2",
+   "mode": "frames",
+   "chars": [],
+   "full": "The hand turns the key a quarter turn. There is one heavy clunk of bolts inside the door. Then the hand holds still. Everything else stays where it is. Fixed camera, one continuous shot. Sound: a key turning, then one deep clunk of iron bolts. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s11h-open",
+   "plate": "v8/s11h-open",
+   "mode": "frames",
+   "chars": [],
+   "full": "The man lifts the drill a little, looks at it, and lets it hang again. His long shadow moves with him. Everything else stays where it is. Fixed camera, one continuous shot. Sound: a lamp buzzing and a slow drip. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s11e-in2",
+   "plate": "v8/s11e-in2",
+   "mode": "frames",
+   "chars": [],
+   "full": "The two men inside slide their paper bricks onto the shelf and stand back. The guard in the foreground lifts his mug an inch. Everything else stays where it is. Fixed camera, one continuous shot. Sound: paper bricks landing on steel shelves. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s11g-full",
+   "plate": "v8/s11g-full",
+   "mode": "frames",
+   "chars": [],
+   "full": "The man steps back out into the corridor and pulls the green iron door slowly shut. The light from the corridor narrows to a thin line across the paper bricks. The bare bulb sways very slightly. Everything else stays where it is. Fixed camera, one continuous shot. Sound: a heavy iron door closing slowly, then one deep clunk. No dialogue. No music. Thanks."
+  }
+ ]
+}

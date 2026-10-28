@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/S1a-b.png",
+ "made": "2026-10-25T19:34:30.622Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A prime-time adult animated sitcom background: flat colours and slightly wobbly black outlines, every colour laid on with thick visible oil brushstrokes. A 1930s American city at night, seen from among its rooftops, low behind a washing line of grey shirts frozen stiff in the near foreground. Brick chimney stacks and wooden water towers lean against a deep navy sky; a small, perfectly round, solid red moon sits between two chimneys. Far below, down a gap between the buildings, a police car's light throws red and blue across wet brick. One attic window glows candle yellow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "bf28028f-ffca-4ebf-873c-785d10c37ab7"
+}

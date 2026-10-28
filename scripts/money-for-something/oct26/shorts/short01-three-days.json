@@ -1,0 +1,98 @@
+{
+ "voice": [
+  "short1"
+ ],
+ "item": "2610-01",
+ "signal": [
+  82,
+  61
+ ],
+ "chyron": "\"KEEP THREE DAYS OF TINS.\"",
+ "turn": "Then they're",
+ "payoff": "next: evacuate the kids to Wales.",
+ "slams": [
+  {
+   "tag": "AIR-RAID SIREN",
+   "outlet": "The Sun",
+   "date": "14 Aug 2026",
+   "headline": "Fury after millions of phones sent blaring wildfire emergency alert as Brits blast 'I thought Putin had launched attack'",
+   "highlight": "I thought Putin had launched attack",
+   "at": "Air-raid"
+  },
+  {
+   "tag": "RATIONING",
+   "outlet": "BBC News",
+   "date": "23 Oct 2026",
+   "headline": "Burnham suggests stocking up on tinned food and bottled water",
+   "highlight": "tinned food and bottled water",
+   "at": "Rationing"
+  },
+  {
+   "tag": "MUNITIONS FACTORY",
+   "outlet": "The Guardian",
+   "date": "22 Oct 2026",
+   "headline": "Race to rearm: Telford gun hall brings tank barrel production back to the UK",
+   "highlight": "Race to rearm:",
+   "at": "Munitions"
+  },
+  {
+   "tag": "PLANES IN THE SKY",
+   "outlet": "BBC News",
+   "date": "22 Oct 2026",
+   "headline": "Military aircraft to help get UK 'on front foot' to fight wildfires, Burnham says",
+   "highlight": "Military aircraft",
+   "at": "Planes"
+  },
+  {
+   "tag": "KEEP CALM",
+   "outlet": "BBC News · Wes Streeting",
+   "date": "22 Oct 2026",
+   "headline": "“Alert but not alarmed”",
+   "highlight": "“Alert but not alarmed”",
+   "at": "Keep calm"
+  },
+  {
+   "clear": "Half of Britain"
+  },
+  {
+   "outlet": "LBC",
+   "date": "14 Oct 2026",
+   "headline": "Half of Brits would not fight for UK under any circumstances amid alarm at potential war with Russia",
+   "highlight": "would not fight for UK under any circumstances",
+   "at": "Half of Britain"
+  },
+  {
+   "clear": "Then they're"
+  }
+ ],
+ "pictures": [
+  {
+   "key": "s1-tins"
+  },
+  {
+   "at": "bottled water",
+   "key": "s1-water"
+  },
+  {
+   "at": "Air-raid",
+   "key": "s1-siren"
+  },
+  {
+   "at": "Rationing",
+   "key": "s1-tins"
+  },
+  {
+   "at": "Keep calm",
+   "key": "s1-burnham"
+  },
+  {
+   "at": "Unless Putin",
+   "key": "s1-dinghy"
+  },
+  {
+   "at": "Then they're",
+   "key": "s1-wales"
+  }
+ ],
+ "name": "short01-three-days"
+}

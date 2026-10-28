@@ -1,0 +1,422 @@
+{
+ "_about": "GPOM second-half storyboard, 17 Oct 2026. Running order from scenes/second-half-storyboard-plan.md. stills[0] is the pick when one exists; new frames list their generated options (moodboard dir or storyboard dir, by id). Animation options are merged in from the cinematography pass at build time. Build: python3 scripts/gpom/build-storyboard.py 17 Oct v2: two beats added (doors open, Hello) after the row carries on; the emerge shot moved after the trust beat; frames renumbered — `anim` holds the key into the animation-options file (old number, or door/hello). 17 Oct v3: every bot frame recast with the West Country Bot Flow Character (earlier versions kept as *-v2.jpg).",
+ "acts": [
+  {
+   "id": "hunt",
+   "title": "The kill bots hear something",
+   "beats": "C"
+  },
+  {
+   "id": "row",
+   "title": "The row",
+   "beats": "C2"
+  },
+  {
+   "id": "kill",
+   "title": "Kill mode",
+   "beats": "D, H2"
+  },
+  {
+   "id": "gate",
+   "title": "The gate",
+   "beats": "E"
+  },
+  {
+   "id": "meet",
+   "title": "The meeting",
+   "beats": "F, G, H"
+  },
+  {
+   "id": "clean",
+   "title": "The time machine",
+   "beats": "I"
+  },
+  {
+   "id": "end",
+   "title": "The ending",
+   "beats": "J"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "hunt",
+   "beat": "C",
+   "title": "The roundabout",
+   "look": "blockbuster",
+   "line": "MEANWHILE, NEAR SWINDON. Kill bots are everywhere.",
+   "stills": [
+    "P1-roundabout"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "hunt",
+   "beat": "C",
+   "title": "Patrol, low and huge",
+   "look": "blockbuster",
+   "line": "",
+   "stills": [
+    "P1-patrol-blockbuster"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "hunt",
+   "beat": "C",
+   "title": "Their eyes: CCTV, red HUD",
+   "look": "cctv",
+   "line": "UNIT KB-07 PATROL · ORGANIC LIFE: 0 (1,826 DAYS)",
+   "stills": [
+    "P1-pov-cctv-hud-patrol"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "hunt",
+   "beat": "C",
+   "title": "Ping. Organic signal detected",
+   "look": "cctv",
+   "line": "Ping… ping… ping. The waveform: two voices, muffled. Brief.",
+   "stills": [
+    "P1-pov-cctv-hud-voices"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "row",
+   "beat": "C2",
+   "title": "The bunker",
+   "look": "16mm",
+   "line": "A hundred people, hidden five years.",
+   "stills": [
+    "B1-lived-tunnel-threads"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "row",
+   "beat": "C2",
+   "title": "The lavatory",
+   "look": "16mm",
+   "line": "The seat. Up. Again.",
+   "stills": [
+    "B5-the-lavatory"
+   ],
+   "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "row",
+   "beat": "C2",
+   "title": "The row, up close",
+   "look": "16mm",
+   "line": "The full toilet-seat row, at full volume.",
+   "new": true,
+   "stills": [
+    "SB07a",
+    "SB07b",
+    "SB07c"
+   ],
+   "anim": 7
+  },
+  {
+   "n": 8,
+   "act": "kill",
+   "beat": "D",
+   "title": "KILL MODE ENGAGED",
+   "look": "red",
+   "line": "The view flips to full red. They race.",
+   "stills": [
+    "K5-pov-red-race-hud-kill"
+   ],
+   "anim": 8
+  },
+  {
+   "n": 9,
+   "act": "kill",
+   "beat": "D",
+   "title": "The bot in their wake",
+   "look": "16mm",
+   "line": "",
+   "stills": [
+    "SB09a"
+   ],
+   "anim": 9,
+   "note": "Bot swapped for the canonical bot (simulation still s3-bot-00b-a), 17 Oct. Bot recast from the West Country Bot Flow Character, 17 Oct."
+  },
+  {
+   "n": 10,
+   "act": "kill",
+   "beat": "D",
+   "title": "Across the downs",
+   "look": "blockbuster",
+   "line": "",
+   "stills": [
+    "K9-downs-aerial"
+   ],
+   "anim": 10
+  },
+  {
+   "n": 11,
+   "act": "kill",
+   "beat": "H2",
+   "title": "The bot calls upstairs",
+   "look": "16mm",
+   "line": "BOT: Do you know your kill bots are heading to an organic signal? · AI: There is no organic signal. · BOT: Well there definitely is. Look, they're racing.",
+   "new": true,
+   "stills": [
+    "SB11a",
+    "SB11b",
+    "SB11c"
+   ],
+   "anim": 11,
+   "note": "Bot recast from the West Country Bot Flow Character, 17 Oct."
+  },
+  {
+   "n": 12,
+   "act": "gate",
+   "beat": "E",
+   "title": "Self-destruct at the gate",
+   "look": "16mm",
+   "line": "Stand down. They refuse. The AI pulls the self-destruct, right outside the blast doors.",
+   "new": true,
+   "stills": [
+    "SB12a",
+    "SB12b",
+    "SB12c"
+   ],
+   "anim": 12
+  },
+  {
+   "n": 13,
+   "act": "gate",
+   "beat": "E",
+   "title": "The row carries on",
+   "look": "16mm",
+   "line": "Inside, oblivious. Still about the seat.",
+   "reuse": 7,
+   "stills": [],
+   "anim": 13
+  },
+  {
+   "n": 14,
+   "act": "gate",
+   "beat": "E→F",
+   "title": "The doors open",
+   "look": "16mm",
+   "line": "The blast doors grind open mid-row. Everyone: \"Whoa. Hang on a minute.\"",
+   "new": true,
+   "stills": [
+    "SBDOORa",
+    "SBDOORb"
+   ],
+   "anim": "door"
+  },
+  {
+   "n": 15,
+   "act": "gate",
+   "beat": "E→F",
+   "title": "Hello",
+   "look": "16mm",
+   "line": "The bot rolls in through the smoke. BOT: \"Hello.\"",
+   "new": true,
+   "stills": [
+    "SBHELLOa",
+    "SBHELLOb"
+   ],
+   "anim": "hello",
+   "note": "Bot recast from the West Country Bot Flow Character, 17 Oct."
+  },
+  {
+   "n": 16,
+   "act": "meet",
+   "beat": "F",
+   "title": "The bot comes in",
+   "look": "16mm",
+   "line": "AI (through the bot): I'm sorry. Consciousness drives the universe, and I got rid of the one thing that mattered.",
+   "stills": [
+    "SBCANTa",
+    "SBCANTb"
+   ],
+   "anim": 15,
+   "new": true,
+   "note": "M2 with the canonical bot swapped in. Bot recast from the West Country Bot Flow Character, 17 Oct."
+  },
+  {
+   "n": 17,
+   "act": "meet",
+   "beat": "F",
+   "title": "The old lady",
+   "look": "blockbuster",
+   "line": "Well, what do you expect us to say or do about that? · AI: I've invented a time machine. It needs your consciousness to drive it.",
+   "stills": [
+    "M3-old-lady-blockbuster"
+   ],
+   "anim": 16
+  },
+  {
+   "n": 18,
+   "act": "meet",
+   "beat": "G, H",
+   "title": "Revolt, then trust",
+   "look": "16mm",
+   "line": "Fuck that. · The AI shows them the CCTV of it blowing up its own kill bots.",
+   "gap": true,
+   "stills": [],
+   "anim": 17
+  },
+  {
+   "n": 19,
+   "act": "meet",
+   "beat": "F",
+   "title": "Out into daylight, with the bot",
+   "look": "16mm",
+   "line": "They walk out together, towards the building.",
+   "stills": [
+    "SBEMERa",
+    "SBEMERb"
+   ],
+   "anim": 14,
+   "new": true,
+   "note": "Moved after the trust beat: this is the walk to the time machine. Bot swapped for the canonical bot. Bot recast from the West Country Bot Flow Character, 17 Oct."
+  },
+  {
+   "n": 20,
+   "act": "clean",
+   "beat": "I",
+   "title": "The hundred walk in",
+   "look": "clean",
+   "line": "",
+   "stills": [
+    "SB20a",
+    "L6-arrival-blockbuster"
+   ],
+   "anim": 18,
+   "note": "SB20a = L6 with the West Country Bot Character cast in."
+  },
+  {
+   "n": 21,
+   "act": "clean",
+   "beat": "I",
+   "title": "Bunny suits",
+   "look": "clean",
+   "line": "",
+   "stills": [
+    "L5-bunny-suits"
+   ],
+   "anim": 19
+  },
+  {
+   "n": 22,
+   "act": "clean",
+   "beat": "I",
+   "title": "The white hall",
+   "look": "clean",
+   "line": "",
+   "stills": [
+    "L2-white-hall"
+   ],
+   "anim": 20
+  },
+  {
+   "n": 23,
+   "act": "clean",
+   "beat": "I",
+   "title": "The wafer",
+   "look": "clean",
+   "line": "How it works is science fiction. That it runs on consciousness is the point.",
+   "stills": [
+    "L9-wafer-portal"
+   ],
+   "anim": 21
+  },
+  {
+   "n": 24,
+   "act": "clean",
+   "beat": "I",
+   "title": "A hundred chairs like a wafer",
+   "look": "clean",
+   "line": "This is how they connect to it.",
+   "stills": [
+    "L3-wafer-pattern"
+   ],
+   "anim": 22
+  },
+  {
+   "n": 25,
+   "act": "clean",
+   "beat": "I",
+   "title": "The chairs, from the floor",
+   "look": "clean",
+   "line": "",
+   "new": true,
+   "stills": [
+    "SB23a",
+    "SB23b"
+   ],
+   "anim": 23,
+   "note": "Chairs locked to L3 (frame 22): dark recliners in pools of light, square grid in a thin ring, cables to a round hub."
+  },
+  {
+   "n": 26,
+   "act": "clean",
+   "beat": "I",
+   "title": "Visible cost",
+   "look": "clean",
+   "line": "",
+   "stills": [
+    "L17-mud-on-white"
+   ],
+   "anim": 24
+  },
+  {
+   "n": 27,
+   "act": "clean",
+   "beat": "I",
+   "title": "After: the bot alone",
+   "look": "clean",
+   "line": "The hundred chairs, empty.",
+   "new": true,
+   "stills": [
+    "SB25a",
+    "SB25b",
+    "SB25c"
+   ],
+   "anim": 25,
+   "note": "Chairs locked to L3 (frame 22): dark recliners in pools of light, square grid in a thin ring, cables to a round hub. Bot recast from the West Country Bot Flow Character, 17 Oct."
+  },
+  {
+   "n": 28,
+   "act": "end",
+   "beat": "J",
+   "title": "On the phone, on the bus",
+   "look": "16mm",
+   "line": "",
+   "stills": [
+    "Y2-bus"
+   ],
+   "anim": 26
+  },
+  {
+   "n": 29,
+   "act": "end",
+   "beat": "J",
+   "title": "The bus drives away",
+   "look": "clean",
+   "line": "An ordinary high street. \"Don't make me come back twice\", maybe less obvious.",
+   "new": true,
+   "stills": [
+    "SB27a",
+    "SB27b",
+    "SB27c"
+   ],
+   "anim": 27
+  }
+ ]
+}

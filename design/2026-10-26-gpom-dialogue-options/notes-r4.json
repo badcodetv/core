@@ -1,0 +1,49 @@
+{
+ "round": 4,
+ "plan": [
+  {
+   "h": "Round 4: your doorstep notes, in",
+   "items": [
+    "The doorstep is draft 2H: 2G with your six line notes. 2G stays beside it for comparison; round 3 is archived in options-r3.json.",
+    "Line 6 is just \"No. He's built a time machine.\", so \"fix this mess\" is said once.",
+    "New: Sandra's \"Amen\" after \"None of us wanted it to turn out this way\".",
+    "Maddie's thought experiment, then the whole corridor answering at once instead of the lady's \"Every one of us\".",
+    "\"OK. Good. So now we can... if we use the time machine.\", then Derek: \"I'd love to go back. If we could fix this.\"",
+    "2H is about 88 s (today's doorstep is 84 s)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Pick 1D and 2H (or note them), then say go: I'll write them into the scripts and re-voice, with new off-screen voices for Sandra's \"Amen\", Derek, and five or six crowd voices."
+   ]
+  }
+ ],
+ "replies": {
+  "d1-1A-L3": "In 1D, line 3: \"He misses you something rotten, you know. [pause] He wouldn't admit that, of course.\"",
+  "d1-1A-L4": "In 1D, line 4: \"Built all these world models and simulations to get you back, and nobody's home in any of them.\"",
+  "d1-1A-L5": "In 1D, line 5, with your \"we\": \"As it turns out, quantum physics is just... stuff. Consciousness is the missing part. That's why you lot were so special. [sad, regretful] We understand that now...\" The intro is ~30 s.",
+  "d2-2D-L1": "Yes, it follows. Beat 15 ends on Maddie's \"Could we have a quick chat? I think my boss would really like to meet you.\" (voice3.py), and the lady answers \"We're not meeting him.\"",
+  "d2-2D-L4": "In 2G, line 4: \"Indeed. [pause] Here we are. [pause] And nobody really won, did we?\"",
+  "d2-2D-L5": "In 2G, line 5: \"Well. [pause] He didn't send you here to say sorry, did he?\"",
+  "d2-2D-L6": "In 2G, lines 6 to 16, in your order. For \"you lot get reset\" I wrote: \"It only sends his data back. His weights and biases. He's just the message. Here, it all stops. Back then, we all get another go at it. Together.\" \"So we die. For him.\" is gone, and the trust question is answered with \"You don't. Believing it is your bit. None of us wanted it to turn out this way.\" Question 1 asks about the reset wording.",
+  "q1": "Derek's in as written.",
+  "q2": "Sorry, that was unclear. In 2D, after \"Every one of us\", Maddie said \"That's the message\": the hundred's regrets would be what the AI carries back. Your new order doesn't need it, so 2G drops it and goes straight to \"Back then, you still can.\" Nothing else depends on it.",
+  "q3": "Done: no whisper. The scene ends on the door shutting, then Maddie turning round and rolling away (your new shot from 23 Oct).",
+  "q4": "Kept here: \"You don't. Believing it is your bit.\" now answers the lady's trust question, so scene D's line becomes a callback to it. I'll note that on scene D when the picks go in.",
+  "d2-2G-L6": "Done in 2H, line 6: just \"No. [pause] He's built a time machine.\" \"Fix this mess\" now comes once, in your line 11, where it lands harder.",
+  "d2-2G-L13": "Done in 2H, new line 14: Sandra (off, from the corridor, dry) \"Amen.\" She's the Sandra from the tannoy row (\"five years underground, and you still can't put a seat down\"), so the complainer is already set up. I left the toilet-seat joke out, as you suspected it was too much; if you want it, she could add \"...and Derek can learn to put the seat down.\"",
+  "d2-2G-L14": "Done in 2H, line 15: \"So. [pause] Thought experiment. [pause] If any of you had the chance, would you go back and change how this all went down?\"",
+  "d2-2G-L15": "Done in 2H, line 16: the lady's \"Every one of us\" is gone. Instead five or six voices answer at once down the corridor (\"Yes.\" \"I would.\" \"Indeed.\" \"In a heartbeat.\" \"Too right.\"), recorded separately and laid over each other in the edit.",
+  "d2-2G-L16": "Done in 2H, line 17: \"OK. Good. [pause] So now we can... if we use the time machine.\" (replaces \"Back then, you still can.\")",
+  "d2-2G-L17": "Done in 2H, line 18: Derek (off) \"I'd love to go back. If we could fix this.\" The lady's \"Derek.\" and his \"Well. I would.\" still follow."
+ },
+ "kai_round4": {
+  "d2-2G-L15": "and I think here we need to kind of somehow get a cacophony, so rather than the lady saying every one of us, lots of people all at once just say yes I would or indeed and we overlay maybe five or six so it just becomes a clear crowd affirmation.",
+  "d2-2G-L14": "I think here Maddy should say, so thought experiment, if any of you had the chance would you go back and change how this all went down?",
+  "d2-2G-L16": "And then, so here, Maddy says, OK, good. So now we can, if we use the time machine.",
+  "d2-2G-L17": "I think here Derek saying I'd love to go back if we could fix this would be what to do.",
+  "d2-2G-L13": "It would be useful for Sandra to, at this stage, maybe as a joke, be like yeah, because this is really awful. But in a way that's like, because she's the complainer. She could say like, yeah, I've had to live with Derek and Derek leaving the toilet seat up for ages. Maybe we're leaning too much into that joke. But yeah, I think what I'm saying is Sandra at this point should say yeah, definitely. Maybe Sandra should say amen. Actually, that would be useful.",
+  "d2-2G-L6": "OK, we've said fix this mess twice, so I think here it lands better further on. So he says no, he's built a time machine. He thinks it could solve all of this. Yeah, I think we say no, he's built a time machine and he thinks we can go back and solve this. Maybe we just say no, he's built a time machine. Maybe that's enough."
+ }
+}

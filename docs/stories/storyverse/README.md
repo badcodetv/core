@@ -144,7 +144,7 @@ folder is where it went.
 | The telling mode | [`telling.md`](./telling.md) | **written** 2026-08-07 — history-lesson shape, 8 beats, ready to draft against |
 | The doctrine (plain) | [`doctrine.md`](./doctrine.md) | **first pass** — claims + tiers + totems; all rulings applied through the 2nd pass (no-villains, threshold→marginal utility) |
 | Research base | [`research/`](./research/README.md) | **complete** — 10 briefs, 2026-08-07 |
-| Web front door | `apps/web` Storyverse page | three sentences + *"Full chapter coming soon."* The 23KB confession has never been published anywhere |
+| Web front door | `apps/web` Storyverse page | three sentences + *"Full chapter coming soon."* The 23KB confession has never been published anywhere. **Microsite prototype 2026-10-17 (parked, Kai re-ordering):** [`design/2026-10-17-microsites/`](../../../design/2026-10-17-microsites/README.md) |
 | Song | — | not started |
 | Comic | — | not started |
 | Video / short | — | not started |

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d1/17-15-crowd5-a.wav",
+ "made": "2026-10-27T19:24:29+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice3.py --round D1 (via scripts/aistudio-tts.py)",
+ "why": "second-half-b-the-door line 15 phrase 5, take a (the pick); whisper heard 'Of course we would!'",
+ "prompt": "# AUDIO PROFILE\nOne of the hundred survivors in a Cold War bunker under a Wiltshire hill: a grandmother in her sixties.\n\n## THE SCENE\nThe corridor behind the blast doors. A small robot at the door has just asked whether any of them would go back and change how it all went down, if they had the chance. Everyone answers at once.\n\n### DIRECTOR'S NOTES\nStyle: heartfelt and certain, no hesitation; called out from the crowd.\nPace: quick, one breath.\nAccent: Northern English, as heard in Leeds. Never American.\n\n### SAMPLE CONTEXT\nOne voice in a crowd all answering a question at the same moment.\n\n### TRANSCRIPT\nCourse we would.",
+ "settings": {
+  "voice": "Gacrux",
+  "direction": "None"
+ }
+}

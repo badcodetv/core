@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/25c-b.png",
+ "made": "2026-10-26T17:16:52+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, wide in a long 1930s counting room deep under a city: towers of rubber-banded bundles of blank green paper money with no printing stacked to the ceiling in rows like a city of skyscrapers, lit from above by a line of green-shaded lamps; tiny brown rats scurry along the aisles between the towers, one gnawing the base of a tower so it leans. A single small gangster in pinstripes stands at the far end with a ledger. Most of the frame in deep shadow; the brightest values are the lamps and the paper edges. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "3e3e7c7f-2a4c-4f15-9ef5-5b7fb23a3d5d",
+ "why": "Speakeasy Mint scene 25 round 1, 25c"
+}

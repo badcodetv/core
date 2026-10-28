@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/W2-b.png",
+ "made": "2026-10-25T19:40:15.930Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A prime-time adult animated sitcom background: flat colours and slightly wobbly black outlines, every colour laid on with thick visible oil brushstrokes. Looking straight down from high above onto a narrow 1930s American street at night that runs from the left edge of the frame to the right: the flat rooftops and gutters of the buildings line the top and bottom edges, iron fire escapes repeat along the soot-black brick walls, and wet cobbles run along the middle. A police car parked on the cobbles throws red and blue up the walls. In a puddle on the cobbles, the only sign of the sky: the reflection of a small, perfectly round, solid red moon. One window glows candle yellow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "704a99af-e316-4464-a0c1-d2e7c82bda9c"
+}

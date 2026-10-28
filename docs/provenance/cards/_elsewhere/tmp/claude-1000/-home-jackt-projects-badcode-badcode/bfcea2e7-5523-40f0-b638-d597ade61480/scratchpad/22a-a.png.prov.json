@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/22a-a.png",
+ "made": "2026-10-26T16:23:00+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, a secret 1930s basement speakeasy seen side-on and wide like a lit stage: rows of black iron printing presses with simple faces painted on their sides throw blank green paper money with no printing into the air under emerald lamps; a band of gangsters in pinstripe suits plays trumpet, double bass and drums on a little stage with scarlet curtains; a tall skinny mayor in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache dances on a table. On the right wall, a huge iron lever with a red bulb flashing above it, and a young gangster with slicked red hair and freckles lunging at it in panic, both hands out. Most of the frame warm shadow; the brightest values are the emerald lamps, the flying notes and the red bulb. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "7fa5e38e-fa4a-4e19-a5ea-fd1f70df00e8",
+ "why": "Speakeasy Mint scene 22 round 1, 22a (before)"
+}

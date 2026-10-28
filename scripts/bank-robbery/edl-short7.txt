@@ -1,0 +1,89 @@
+The Bank Robbery short, cut 7. start, length, file, what.
+
+   0.000   5.917  s-archive.mov                      A1: the action archive (Dunkirk Stuka, Alamein advance, tanks, bayonets)
+   5.917   6.583  s-reveal7.mov                      the last archive shot, its last frame repainted, the painting on the cafe wall, pull back (no shake)
+  12.500   5.167  s-002-c02f-barry-boxroom.mov       Barry (own-speech DTW sync, lag +0.29 s)
+  17.667   4.167  s-003-c03f-denise-gone-up.mov      Denise (own-speech DTW sync, lag +0.08 s)
+  21.833   7.125  s-004-c02p-barry7.mov              Barry, the mug already in his hands (own-speech DTW sync, lag +0.00 s)
+  28.958   2.417  s-005-cd2-urn-pan.mov              Denise (her clips fail the test): the line over the cafe (cd2-urn, a slow pan)
+  31.375   2.417  s-006-cd1-painting-pan.mov         Denise (her clips fail the test): the line over the cafe (cd1-painting, a slow pan)
+  33.792   3.250  s-007-cd4-table-pan.mov            Denise (her clips fail the test): the line over the cafe (cd4-table, a slow pan)
+  37.042   2.500  s-008-c02c-barry4.mov              Barry (own-speech DTW sync, lag +0.20 s)
+  39.542   4.500  s-009-c03f-denise-daughter.mov     Denise (own-speech DTW sync, lag +0.00 s)
+  44.042   3.292  s-010-c04f-barry-freddo10.mov      Barry, a real Freddo at 10p (own-speech DTW sync, lag +0.38 s)
+  47.333   4.375  s-011-b01n-bank.mov                ns11: the bank across the road, through the cafe window
+  51.708   1.000  s-012-ecb.mov                      real: purple ink into the press duct (ECB)
+  52.708   0.792  s-013-ecb.mov                      real: the numbering heads turning (ECB)
+  53.500   0.917  s-014-m1-glass-press.mov           still: whisky on the press feed board, ink, the work lamp
+  54.417   0.708  s-015-ecb.mov                      real: printed sheets flying into the delivery (ECB)
+  55.125   1.333  s-016-m2-band-brick.mov            still: a paper band pulled round a brick of new twenties
+  56.458   1.500  s-017-m3-ex-lamp.mov               The Ex, lit by the press lamp (lips)
+  57.958   1.167  s-018-m3-ex-lamp-x-ecb-euro20-printing-production..mov The Ex, lit by the press lamp: the line carries over a cutaway
+  59.125   3.500  s-019-m3-ex-lamp.mov               The Ex, lit by the press lamp (lips)
+  62.625   2.292  s-020-m4-red-blue-toast.mov        Mr Red and Mr Blue from above, the toast (lips)
+  64.917   0.792  s-021-ecb.mov                      real: printed sheets streaming through (ECB), shifted to the twenty's purple
+  65.708   0.917  s-022-ecb.mov                      real: a pallet of printed sheets pushed off the press (ECB)
+  66.625   1.000  s-023-m7-table-bricks.mov          still: a table buried in banded bricks of twenties
+  67.625   0.917  s-024-ecb.mov                      real: a trolley tower of printed stacks (ECB)
+  68.542   1.208  s-025-ecb.mov                      real: bundles shrink-wrapped (ECB)
+  69.750   0.708  s-026-m5-enter-key.mov             the key pressed in the pause: the press stops dead
+  70.458   3.000  s-screen6.mov                      R1: the terminal, the credit rolls to £200,000,000,000, PAID IN on "then pay it in"
+  73.458   2.833  s-028-c9-paper-blue.mov            P1: the newspaper drops (cut 9 front pages)
+  76.292   2.833  s-029-c9-paper-red.mov             P1: the newspaper drops (cut 9 front pages)
+  79.125   2.583  s-030-pr-w7b-wide.mov              the protest from the bank: two mixed crowds, nobody looking up
+  81.708   4.417  s-031-pr-a7m-chant.mov             the chant: one megaphone, the woman at the front
+  86.125   4.583  s-032-pr-b7m-reply.mov             the reply: one megaphone, Barry
+  90.708   5.458  s-033-r04-denise-window.mov        ns19-first-line
+  96.167   5.167  s-034-s01n-side-door.mov           S1: the side door ajar, light in the gap (re-made)
+ 101.333   1.083  s-035-vq1-door-trolley.mov         the vault, quick cuts: the trolley of bricks through the vault door
+ 102.417   0.833  s-036-vq3-trolley-above.mov        the vault, quick cuts: from above, a gloved hand lifts a brick off the trolley
+ 103.250   1.000  s-037-vq2-hands-shelf.mov          the vault, quick cuts: gloved hands press the last brick onto the shelf
+ 104.250   1.000  s-038-vq4-shelves.mov              the vault, quick cuts: the aisle, shelves packed to the ceiling
+ 105.250   1.583  s-039-vq5-door-shut.mov            the vault, quick cuts: the vault door almost shut, a gloved hand on the wheel
+ 106.833   8.667  s-040-e02-donor-keys.mov           the Donor and the keys
+ 115.500   3.792  s-slot4.mov                        the window as a fruit machine, prices double
+ 119.292   4.250  s-042-f02f-barry-freddo20.mov      Barry, the Freddo at 20p (own-speech DTW sync, lag +0.34 s)
+ 123.542   2.125  s-043-cd3-window-pan.mov           Denise (her clip fails the test): the line over the cafe (cd3-window, a slow pan)
+ 125.667   9.000  s-044-c01b-cafe-wide.mov           ns26-no-law
+ 134.667   3.500  s-045-s01-sink.mov                 Denise at the sink, the letter
+ 138.167   4.000  s-046-c10-081-08349.mov            the badcode kebab shop (cut 10)
+
+Narrator:
+   0.600   3.880  na1-grandparents.wav
+   8.917   2.840  ns03-one-bed.wav
+  47.483   3.920  ns11-both-right.wav
+  51.858   4.120  ns12-masks.wav
+  65.117   6.760  nr6-print-pay.wav
+  73.608   3.080  np1-shout.wav
+  90.858   5.000  ns19-first-line.wav
+  96.317   4.400  ns1-side-door.wav
+ 106.983   8.200  ns23-just-early.wav
+ 125.867   8.280  ns26-no-law.wav
+
+Character voices (dub):
+  12.850   5.411  dub-v04-barry-0.wav  x1.0
+  18.047   4.172  dub-v05-denise-0.wav  x1.0
+  22.133   7.136  dub-v06-barry-0.wav  x1.0
+  29.258   7.458  dub-v07-denise-0.wav  x1.0
+  37.542   2.485  dub-v08-barry-0.wav  x1.0
+  39.842   4.497  dub-v09-denise-0.wav  x1.0
+  44.422   3.594  dub-v10-barry-0.wav  x1.0
+  56.658   1.047  dub-v13-ex-0.wav  x1.0
+  57.945   0.925  dub-v13-ex-1.wav  x1.0
+  59.318   3.015  dub-v13-ex-2.wav  x1.0
+  62.825   1.816  dub-v14-red-0.wav  x1.0
+  51.708  19.292  press-bed.wav  x1.0
+  79.125   2.600  wide-roar.wav  x1.0
+  82.058   5.585  mega-v17c-a1.wav  x1.0
+  86.475   5.865  mega-v17r-b1.wav  x1.0
+  81.708  12.300  crowd-bed.wav  x1.0
+ 101.333   5.500  vault-room.wav  x1.0
+ 119.836   4.360  dub-v24-barry-0.wav  x1.0
+ 123.842   1.462  dub-v25-denise-0.wav  x1.0
+
+Music:
+   8.100  45.108  ms-01-cafe.wav  A3
+  50.708  24.250  ms-02-plan.wav  A4
+  72.458  30.375  ms-03-march.wav  A3
+ 100.333  35.833  ms-04-bank.wav  A4
+ 133.667   8.500  ms-05-ending.wav  A3

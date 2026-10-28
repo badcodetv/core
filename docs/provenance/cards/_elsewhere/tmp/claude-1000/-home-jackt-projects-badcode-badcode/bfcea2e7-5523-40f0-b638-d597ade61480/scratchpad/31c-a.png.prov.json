@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/31c-a.png",
+ "made": "2026-10-26T17:27:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_generate_image",
+ "model": "Nano Banana 2.1",
+ "why": "Speakeasy Mint scene 31 round 1, 31c",
+ "source_id": "3dad2b8e-7bb9-4ab6-a64f-03be50c40b25",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night just after rain on a 1930s street outside a shop window full of loaves under a plain blank sign: two crowds of working people, young and old, men and women, Black, white and South Asian, half in red scarves and half in blue scarves, frozen mid-shove, fists still raised, and every head turning slowly the same way, towards the shop, where an emerald glow rises from a pavement grating at its door. Plain red and blue banners with no writing hang forgotten. The street lamp, the small red moon, wet cobbles. Most of the frame in shadow; the brightest values are the green glow and the lamp. Plain margins with no writing. Thanks.",
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ }
+}

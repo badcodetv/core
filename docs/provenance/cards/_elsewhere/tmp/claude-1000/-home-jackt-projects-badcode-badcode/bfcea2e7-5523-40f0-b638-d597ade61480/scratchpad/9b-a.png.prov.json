@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/9b-a.png",
+ "made": "2026-10-26T13:47:23+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A grey winter afternoon in a 1930s schoolroom, the camera low along a row of tiny children's wooden desks: the lid of a little inkwell desk fills the near foreground. Just beyond it, large in frame and off-centre left, a heavy-set Black baker in his fifties in a vest and apron, shaved head, broken nose, double chin, squeezed into the tiny desk with his knees up round his chin, looking up with a real-skinned, worried face. Further along the row, other adults crammed in the same way: a young South Asian mother in a headscarf, a skinny old white dock worker in a flat cap. Small at the far end of the room, a plump teacher in her forties with round wire glasses, frizzy brown hair with a grey streak pinned in a bun and a brown cardigan points her long wooden pointer at a big blackboard wiped clean, dark and empty. Tall windows down the left wall let in cold blue-grey daylight with snow falling outside; a pot-bellied iron stove glows orange through its grille; one green-shaded lamp hangs over the teacher's desk. Worn floorboards wet from boots, puddles of melted snow, damp coats steaming on hooks. Most of the frame in shadow; the brightest values are the window light raking across the baker's face and the stove's orange glow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "93f96d27-3b77-44e8-b9d1-66e7a7936edb",
+ "why": "Speakeasy Mint scene 9 round 1, 9b"
+}

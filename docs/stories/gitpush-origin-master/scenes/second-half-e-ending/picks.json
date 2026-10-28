@@ -1,0 +1,63 @@
+{
+  "about": "Stage 2 still picks for scene E (2026-10-22 autonomous run; still gate waived, Claude picked). Every option and its prompt is in shots.md. Files are relative to media unless a full path is given (reuses).",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills",
+  "flow_project": "2b21011e-c4bc-4145-aae3-ee92522a6ba9 (stills, 'Oct 22 - 01:07')",
+  "picks": {
+    "E01": {
+      "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg",
+      "reuse": true,
+      "why": "scene.json: Y2 + sh-28 reused as is; D16's frame is composited onto the phone in post.",
+      "file_round6": "fix5/E01p-b.jpg",
+      "by_round6": "kai"
+    },
+    "E02": {
+      "file": "E02-r3-a.jpg",
+      "options": [
+        "E02-r1-a.jpg",
+        "E02-r1-b.jpg",
+        "E02-r2-a.jpg",
+        "E02-r2-b.jpg",
+        "E02-r3-a.jpg",
+        "E02-r3-b.jpg"
+      ],
+      "why": "The only option that starts with her still looking DOWN at a lit phone whose screen faces us (so D16's frame can be composited and the beat 'she looks up from one to the other' happens inside the shot), with the whitewashed bank and its blank board dead centre in the window, and SB27a's chip shop and green pharmacy cross at the left for continuity with E03. Same woman as Y2 (ponytail, dark padded coat). r1-a already has her looking out with the phone edge-on; r1-b crops her face at the edge; r2-b carries a real bookmaker's brand and a FOR SALE board (lettering); r2-a and r3-b set the bank off-centre or small.",
+      "file_round6": "fix5/E02p-b.jpg",
+      "by_round6": "kai"
+    },
+    "E03": {
+      "file": "fix1/E03f-r1-b.jpg",
+      "reuse": false,
+      "why": "Review round 1 (London coding): SB27a edited. b keeps SB27a's framing and the bus where the 140% pull-back starts; a enlarges the bus and keeps a red shelter far down the street.",
+      "options": [
+        "fix1/E03f-r1-a.jpg",
+        "fix1/E03f-r1-b.jpg"
+      ],
+      "was": "storyboard/SB27a.jpg (red London bus, roundel, red shelter)",
+      "file_round3": "fix3/E03r3-b.jpg",
+      "options_round3": [
+        "fix3/E03r3-a.jpg",
+        "fix3/E03r3-b.jpg"
+      ],
+      "why_round3": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the bus made a plain red double-decker, no roundel, no lettering, no adverts. b keeps E03b-r1-b's composition; a reframed wider.",
+      "file_round4": "fix4/E03r4b-c.jpg",
+      "options_round4": [
+        "fix4/E03r4-a.jpg",
+        "fix4/E03r4-b.jpg",
+        "fix4/E03r4b-a.jpg",
+        "fix4/E03r4b-b.jpg",
+        "fix4/E03r4b-c.jpg"
+      ],
+      "why_round4": "c: the only one with no vehicle or headlights anywhere (the hooded pair on the right went too). a/b of both calls kept a car beyond the bus."
+    },
+    "E04": {
+      "file": "fix5/E04p-a.jpg",
+      "options": [
+        "fix5/E04p-a.jpg",
+        "fix5/E04p-b.jpg",
+        "fix5/E04p-c.jpg",
+        "fix5/E04p-d.jpg"
+      ],
+      "by": "kai"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+ "open": "A locked-off shot from a scripted feature film, a slow dark drama with made-up characters played by actors on a closed set. One continuous shot with no cuts. No camera movement. ",
+ "close": " No music. Thanks.",
+ "clips": [
+  {
+   "id": "s00a-cafe-open",
+   "plate": "v6/s00a-cafe-open",
+   "chars": [],
+   "text": "The man in the yellow vest walks three steps away from the café door along the pavement, takes a bite of his roll and keeps walking out of the side of the frame. Behind the steamed window the soft shapes of people move a little and the woman with the plates crosses from one side to the other. Steam drifts out of the open door. Fine rain falls. The building, the bunting and the can in the foreground do not move. Sound: plates and cutlery clattering, a kettle, wordless café chatter and a radio playing no tune that can be made out. No dialogue."
+  },
+  {
+   "id": "s00b-full-english",
+   "plate": "v6/s00b-full-english",
+   "chars": [],
+   "text": "The hand lets go of the rim of the plate and withdraws out of the top of the frame. The plate settles. Steam keeps rising off the food and drifts toward the window. One bean slides slowly down off a sausage. Nothing else moves. Sound: a heavy plate landing on a hard table, cutlery rattling and wordless café chatter. No dialogue."
+  },
+  {
+   "id": "s00c-tea",
+   "plate": "v6/s00c-tea",
+   "chars": [],
+   "text": "The tea keeps pouring in a thick stream and the mug fills to the brim, then the stream stops and three last drops fall. Steam curls up through the light. The second mug and the sugar pourer do not move. Sound: tea pouring into a mug, a teapot lid rattling and wordless café chatter. No dialogue."
+  },
+  {
+   "id": "s00d-fry",
+   "plate": "v6/s00d-fry",
+   "chars": [],
+   "text": "The fat spits and bubbles round the egg. The spatula slides under the egg, lifts it and flips it over in one quick movement, and it lands sizzling. Smoke and steam rise. The bacon and sausages do not move. Sound: fat spitting, a steel spatula scraping on a hot plate and an extractor fan. No dialogue."
+  },
+  {
+   "id": "s00e-pint",
+   "plate": "v6/s00e-pint",
+   "chars": [],
+   "text": "The forearm pulls the pump handle down once more, the beer rushes into the glass and the head rises over the rim and runs down the side onto the bar. Then the arm lets go of the pump and the head settles. The beer towel and the dish do not move. Sound: a hand pump creaking, beer rushing into a glass and a quiet pub with no words in it. No dialogue."
+  },
+  {
+   "id": "s00f-football",
+   "plate": "v6/s00f-football",
+   "chars": [],
+   "full": "A shot from a scripted feature film with made-up characters played by actors on a closed set, filmed hand-held like news footage. One continuous shot with no cuts. The camera stays where it is and is only very slightly unsteady. The two men finish the sliding tackle at full speed: they slide through the mud past the lens, the sheet of muddy water lands across the frame, and the ball bounces away. One of them rolls over and sits up, covered in mud. The man with the dog on the touchline does not move. Rain falls. Sound: studs sliding through mud, a splash, a heavy ball thumping and one whistle. Nobody says a word that can be made out. No music. No dialogue. Thanks."
+  },
+  {
+   "id": "s05h-table-a",
+   "plate": "v6/s05h-table",
+   "chars": [
+    "The Ex"
+   ],
+   "text": "The man leaning on the table keeps both fists on it and looks slowly round the men at the table. He says: The biggest vault in the city. Everyone's life savings. Right there. He speaks slowly and warmly, with a pause between each sentence. Then he holds still, smiling a little. The seated man beside him does not move and blinks once. The bare bulb sways very slightly. The only sounds are his voice, a bare bulb buzzing and rain on a metal roof."
+  },
+  {
+   "id": "s05h-table-b",
+   "plate": "v6/s05h-table",
+   "chars": [
+    "The Governor",
+    "The Ex"
+   ],
+   "text": "Nobody moves their hands. The Governor, the seated man, says: Security isn't a problem. I am the security. He speaks softly and exactly. After a pause The Ex, the man leaning on the table, says: The problem is eyes. He speaks slowly and warmly. Then nobody moves. The bare bulb sways very slightly. The only sounds are their two voices, a bare bulb buzzing and rain on a metal roof."
+  },
+  {
+   "id": "s10e-bleach",
+   "plate": "v6/s10e-bleach",
+   "chars": [
+    "Denise"
+   ],
+   "text": "The woman looks at the patch of counter the man is sitting on, not at him. She says: Shift. She says it flat and tired, without raising her voice. The man shuffles sideways along the counter, still chewing. She sprays the patch where he was sitting twice and wipes it hard with the rag in slow circles, and does not look up. The desk lamp does not move. The only sounds are her voice, a spray bottle, a rag squeaking on polished wood and slow chewing."
+  },
+  {
+   "id": "s08f-argue",
+   "plate": "v6/s08f-argue",
+   "chars": [],
+   "full": "A shot from a scripted feature film with made-up characters played by actors on a closed set, filmed hand-held like news footage. One continuous shot with no cuts. The camera stays where it is and is only very slightly unsteady. The two men keep arguing into each other's faces across the barrier, mouths working, jabbing their phones at each other. In the gap between their faces, far behind and out of focus, the pallet is wheeled slowly across from one side to the other and out of sight. Neither man turns to look. Flare light flickers on their faces and smoke drifts. Sound: a flare hissing, small steel wheels on cobbles and a far-off crowd murmuring. No music. No dialogue. Thanks.",
+   "note": "second wording: the first failed twice with \"Audio generation failed\"; the sound line asked for two men shouting over a roaring crowd"
+  },
+  {
+   "id": "s08g-laugh",
+   "plate": "v6/s08g-laugh",
+   "chars": [],
+   "text": "The two men at the window laugh helplessly, shoulders shaking. One points down through the glass at the street and they laugh harder; the other wipes his eyes with the back of his hand and they knock their glasses together. The smoke outside the window drifts slowly and the glow flickers. The lamp, the megaphones and the curtains do not move. Sound: two men laughing with no words, two glasses clinking and a muffled crowd roar through glass. No dialogue."
+  }
+ ]
+}

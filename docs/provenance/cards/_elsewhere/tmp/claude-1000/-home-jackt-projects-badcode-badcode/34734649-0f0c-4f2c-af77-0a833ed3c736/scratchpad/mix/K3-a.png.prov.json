@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/K3-a.png",
+ "made": "2026-10-25T19:21:42.298Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, broken veins, wet eyes. Every flat colour is laid on with thick visible oil brushstrokes, and the street is wet cobbles mirroring the lamps. A tall city building cut open in cross-section like a doll's house, seen straight on at night, a small solid red moon above the roof. In the attic an old woman in a coat shivers by one candle in an ice blue room. At street level a cream and brick red bakery; a red crowd and a blue crowd shove each other under a yellow street lamp, each side young and old, men and women, Black, white and South Asian, a police car beside them. Below, a secret basement in emerald lamplight: printing presses with simple faces painted on their sides throw banknotes into the air, gangsters in pinstripe suits play jazz, and a tall skinny mayor in a bowler hat and gold chain dances. At the very bottom an orange furnace. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "d81d7f7a-b857-486c-a154-c5ec077261ad"
+}

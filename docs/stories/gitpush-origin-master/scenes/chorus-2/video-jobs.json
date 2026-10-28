@@ -1,0 +1,510 @@
+{
+ "duration": 6,
+ "skip": [],
+ "extra": [
+  {
+   "key": "mb01",
+   "n": 1,
+   "still": "RK1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The red eyes along the rows light up one row after another, receding into the haze. Rain falls hard. The robots stand perfectly still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb02",
+   "n": 2,
+   "still": "RK1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. All at once, every robot in the rows turns its head to look straight at the camera, red eyes flaring. Rain falls. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb03",
+   "n": 3,
+   "still": "RK1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The white light at the far end of the aisle flares, and a wall of haze rolls down the aisle towards the camera. Rain bounces off the wet ground. The robots stand still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb04",
+   "n": 4,
+   "still": "RK1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. The ship at the far end of the aisle descends slowly, its lights blazing, its downdraft blowing rain and haze down the aisle towards the camera. The robes ripple. The robots stand still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb05",
+   "n": 5,
+   "still": "RK1-c-a",
+   "duration": 6,
+   "motion": "The camera does not move. The searchlight beam sweeps slowly across the grid of hoods, lighting each block bright red as it passes. Haze drifts across the aisles. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb06",
+   "n": 6,
+   "still": "RK1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. A second searchlight beam swings in and crosses the first, the two bright bands sliding slowly over the grid of red hoods. Rain glitters in the beams. The robots stay still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb07",
+   "n": 7,
+   "still": "RK1-d-a",
+   "duration": 6,
+   "motion": "The camera does not move. The hooded robot in the foreground slowly turns its head to look straight into the camera, red eyes blazing. Rain falls. The robots behind it stay perfectly still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb08",
+   "n": 8,
+   "still": "RK1-d-b",
+   "duration": 6,
+   "motion": "The camera does not move. The floodlights behind flare and dim once. Haze rolls across the rows behind the robot in the foreground. Its red eyes flare. Heavy rain. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb09",
+   "n": 9,
+   "still": "HD1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The robot's red eyes slowly dim almost to dark, then blaze bright red. Rain runs down the metal face. The edge of the hood stirs in the wind. The mouth stays closed. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb10",
+   "n": 10,
+   "still": "HD1-a-c",
+   "duration": 6,
+   "motion": "The camera does not move. The robot's head tilts slowly down towards the camera and its red eyes intensify. Raindrops streak down the metal face. The mouth stays closed. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb11",
+   "n": 11,
+   "still": "HD1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The hooded robot slowly turns its head from profile to look straight into the camera, its red eyes brightening. Rain falls. The rows of robots behind it stay perfectly still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb12",
+   "n": 12,
+   "still": "HD1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. Wind whips the edge of the hood. Heavy rain sweeps across the frame. The floodlights behind flicker once. The red eye glows brighter. The robots behind stay still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb13",
+   "n": 13,
+   "still": "HD1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. The lens inside the red eye contracts sharply, focusing, then its red light pulses brighter. Water droplets slide down over the metal. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb14",
+   "n": 14,
+   "still": "HD1-c-c",
+   "duration": 6,
+   "motion": "The camera does not move. The rings inside the red eye rotate and refocus, and the red core flares bright. Rain streaks past. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb15",
+   "n": 15,
+   "still": "HD1-d-a",
+   "duration": 6,
+   "motion": "The camera does not move. The searchlight beam narrows onto the hooded robot. Rain pours through the beam. Behind it, the red eyes in the rows light up one row at a time from front to back. Nobody moves. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb57",
+   "n": 57,
+   "still": "HD1-d-b2",
+   "duration": 6,
+   "motion": "The camera does not move. Rain falls through the white light. The hooded figure slowly lifts its head and its red eyes glow brighter. Mist drifts behind it. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb17",
+   "n": 17,
+   "still": "SL1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The ship's floodlights pulse and swing slowly across the arena. A column of white haze surges up out of the well into the beams. The army stands still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb18",
+   "n": 18,
+   "still": "SL1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The ship descends slowly towards the ranks, its floodlights growing brighter and wider. Rain streams through the beams. The robots stand still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb19",
+   "n": 19,
+   "still": "SL1-a-c",
+   "duration": 6,
+   "motion": "The camera does not move. The orange lights under the ship blink, then the white floodlights snap on one pair at a time, front to back. Rain falls through the beams onto the still ranks. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb20",
+   "n": 20,
+   "still": "SL1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The searchlight beam sweeps slowly from left to right across the rows, each robot's red robe lighting up bright as the beam passes over it, then falling back into darkness. Haze drifts. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb21",
+   "n": 21,
+   "still": "SL1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. The searchlight beam swings towards the camera and fills the frame with white haze, then swings away again. Ground fog rolls between the rows of robots. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb22",
+   "n": 22,
+   "still": "SL1-c-a",
+   "duration": 6,
+   "motion": "The camera does not move. Lightning flashes twice on the horizon behind the ship. The floodlights pour down into the well and a column of haze billows up. The army stands still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb23",
+   "n": 23,
+   "still": "SL1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. The rings of light inside the well switch on one after another, top to bottom, and the haze inside glows brighter. Lightning flickers once behind the ship. The army stands still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb24",
+   "n": 24,
+   "still": "EC1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. Storm clouds race past the ring. The white light at its centre flares brighter and its beam swings slowly from right to left across the clouds. The red lights on the rim pulse once. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb25",
+   "n": 25,
+   "still": "EC1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The small red lights around the rim switch on one after another, travelling round the ring. Cloud rolls up the mountain and wraps the base. Stars glint between the clouds. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb26",
+   "n": 26,
+   "still": "EC1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The sun sinks below the horizon and the sky darkens to night while the white light at the centre of the ring grows brighter and brighter. Clouds roll round the base. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb27",
+   "n": 27,
+   "still": "EC1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. The concentric rings slowly turn in opposite directions, like an iris opening, and the white core swells until its light floods most of the frame. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb28",
+   "n": 28,
+   "still": "EC1-b-c",
+   "duration": 6,
+   "motion": "The camera does not move. The rings turn slowly. The red lights blink on one after another around the ring. Light rays shimmer through drifting haze and the white core pulses brighter twice. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb29",
+   "n": 29,
+   "still": "EC1-c-a",
+   "duration": 6,
+   "motion": "The camera does not move. A single bolt of lightning strikes the ridge behind the ring. Rocks tumble down the slope and dust billows up. The white light at the centre flares. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb30",
+   "n": 30,
+   "still": "EC1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. Rain lashes the summit. Lightning forks once behind the ring. Cloud streams past and the white beam swings slowly round towards the camera. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb31",
+   "n": 31,
+   "still": "SH1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The ships descend slowly through the storm clouds towards the parade ground, their searchlights sweeping across the ranks. Lightning flickers once in the clouds. The army stands still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb32",
+   "n": 32,
+   "still": "SH1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. More ships break out of the clouds one after another and lower towards the ground, their beams switching on as they come. Clouds churn. The army stands still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb33",
+   "n": 33,
+   "still": "SH1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The huge hull descends slowly towards the camera, its downdraft blasting orange-lit steam and rain out across the hoods below. The hoods ripple in the wind. Nobody moves. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb34",
+   "n": 34,
+   "still": "SH1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. The landing lights under the hull flare white and the steam pours down harder, rolling out over the crowd towards the camera. The robes whip in the downdraft. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb35",
+   "n": 35,
+   "still": "SH1-c-a",
+   "duration": 6,
+   "motion": "The camera does not move. The fleet lowers slowly over the parade ground. The searchlights swing in unison from left to right across the blocks. Lightning on the horizon. The army stands still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb36",
+   "n": 36,
+   "still": "SH1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. The rings of light in the central arena pulse brighter and brighter as the ships hover overhead. Lightning flashes once on the horizon. Searchlights sweep. The army stands still. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb37",
+   "n": 37,
+   "still": "MA1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The column of robed robots marches forward in perfect step, robes swinging, feet splashing through the flooded ground. Rain pours. The floodlights stay steady. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb38",
+   "n": 38,
+   "still": "MA1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The column of robed robots marches in step from right to left, water spraying up from every footfall. Heavy rain sweeps across the floodlights. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb39",
+   "n": 39,
+   "still": "MA1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. Metal feet stride forward in perfect step under the swinging red robe hems, splashing through the puddles. Rain pours. The floodlights stay steady. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb40",
+   "n": 40,
+   "still": "MA1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. One metal foot slams down into the puddle in the foreground, throwing up a spray of water. Behind it, the long rows march on in step. Rain. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb41",
+   "n": 41,
+   "still": "MA1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. All at once, every hooded robot on the parade ground turns its head towards the camera, and their red eyes flare. Rain falls. Nothing else moves. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb42",
+   "n": 42,
+   "still": "MA1-c-c",
+   "duration": 6,
+   "motion": "The camera does not move. The red eyes across the parade ground light up row by row from the back to the front, ending on the hooded robot nearest the camera, whose eyes blaze. Rain. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb43",
+   "n": 43,
+   "still": "ET1-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The beam from the ring on the summit swings slowly round from the right until it points straight at the camera, and the lens flares. Dust rolls off the summit. Clouds drift. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb44",
+   "n": 44,
+   "still": "ET1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The ring on the summit turns slowly towards the camera, its beam sweeping across the dark mountain ranges. The red lights on the rim pulse. Dust rolls down the slopes. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb45",
+   "n": 45,
+   "still": "ET1-b-a",
+   "duration": 6,
+   "motion": "The camera does not move. The ring slowly turns to face the camera head-on, its beam swinging round until it shines straight into the lens. Storm clouds race behind it. The red rim lights glow steady. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb46",
+   "n": 46,
+   "still": "ET1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. The white core blazes brighter and brighter, its rays spreading across the whole frame, then the red rim lights blink on one after another around the ring. Clouds churn behind. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb47",
+   "n": 47,
+   "still": "ET1-c-a",
+   "duration": 6,
+   "motion": "The camera does not move. Far above the empty street the ring's beam swings slowly down the mountain towards the town. Rain falls on the cobbles. The houses stay dark. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb48",
+   "n": 48,
+   "still": "ET1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. The beam from the ring pours down the empty street towards the camera, rain glittering in it, puddles lighting up one after another as it reaches them. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb49",
+   "n": 49,
+   "still": "TN1-a-b",
+   "duration": 6,
+   "motion": "The camera does not move. The beam from the ring on the summit sweeps slowly across the rooftops from left to right, lighting the wet slates and chimneys as it passes, leaving them dark behind. Rain. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb50",
+   "n": 50,
+   "still": "TN1-a-c",
+   "duration": 6,
+   "motion": "The camera does not move. The beam slides slowly down the terraced street, lighting each roof in turn. Haze drifts in the beam. Every window stays dark. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb51",
+   "n": 51,
+   "still": "TN1-b-b",
+   "duration": 6,
+   "motion": "The camera does not move. The beam sweeps slowly across the empty high street, over the shopfronts and the abandoned car, then moves on and leaves it dark. Rain falls. A shopping trolley rolls a little in the wind. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb52",
+   "n": 52,
+   "still": "TN1-b-c",
+   "duration": 6,
+   "motion": "The camera does not move. The beam from the summit swings across the shopfronts towards the camera, rain glittering in it. The car's open door rocks slightly in the wind. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb53",
+   "n": 53,
+   "still": "TN1-c-b",
+   "duration": 6,
+   "motion": "The camera does not move. The beam crosses the dark town in the valley, dust and haze swirling up in its light. Storm clouds roll over the mountain. No lights come on. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb54",
+   "n": 54,
+   "still": "TN1-c-c",
+   "duration": 6,
+   "motion": "The camera does not move. The beam sweeps slowly across the valley town and over the fields beyond. Clouds race. The town stays dark. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb55",
+   "n": 55,
+   "still": "TN1-d-b",
+   "duration": 6,
+   "motion": "The camera does not move. The light from the ring at the end of the street grows brighter and wider, rain pouring through it, until it fills the frame and washes it slowly to white. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  },
+  {
+   "key": "mb56",
+   "n": 56,
+   "still": "TN1-d-c",
+   "duration": 6,
+   "motion": "The camera does not move. The beam pours down the empty street towards the camera, puddles flaring as it reaches them, and the light grows until the whole frame slowly washes to white. The camera does not move.",
+   "character": null,
+   "why": "Kai 19 Oct (away): animate every mood-board still, each a different way"
+  }
+ ]
+}

@@ -10,7 +10,7 @@ description: >
   lanes, which installed effect, what it costs, and the delivery gate before anything
   ships. Mechanics live elsewhere: driving Premiere is premiere-automation, driving
   Flow is flow-automation, writing a Flow prompt is flow-prompt, sourcing real footage
-  is find-footage, and what the shot should LOOK like is badcode-art-direction.
+  is find-footage, and what the shot should LOOK like is new-image.
 ---
 
 # video-fx — which lane, which effect, and what it costs
@@ -42,7 +42,7 @@ drive anything.
 | How do I make Flow generate it? | `flow-automation` | Browser up, MCP tools, recovering a hung call |
 | What do I write in the Flow prompt? | `flow-prompt` | Veo/Nano Banana platform craft, policy blocks |
 | Does real footage of this exist? | `find-footage` | Sourcing and licence clearance |
-| What should the shot look like? | `badcode-art-direction` | The BadCode visual register |
+| What should the shot look like? | `new-image` | The BadCode visual register |
 
 ---
 

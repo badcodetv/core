@@ -1,0 +1,262 @@
+<title>GPOM Second Half Storyboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* A cutting-room reel: one row per frame in story order, still on the left, ways to animate it on the right. Single dark look on purpose (film frames). */
+:root {
+  --bg: #111113; --panel: #1a1a1e; --panel2: #222228; --line: #2d2d35; --fg: #ece9e4; --muted: #9b98a2;
+  --accent: #e0352b; --yes: #5fbf7a;
+  --t16: #c9a15a; --tcctv: #9aa3a8; --tred: #e0352b; --tclean: #cfe6f2; --tblock: #5fb3b0;
+  --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --body: "Public Sans", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 1380px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 80px; }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1; text-transform: uppercase; margin: 0; text-wrap: balance; }
+h1 .tri { color: var(--accent); }
+.intro { color: var(--muted); max-width: 72ch; margin: 10px 0 0; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px; }
+.btn { font: 600 13px var(--body); padding: 8px 14px; background: var(--fg); color: var(--bg); border: 0; cursor: pointer; }
+.btn.ghost { background: var(--panel); color: var(--fg); border: 1px solid var(--line); }
+.btn:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.status { font-size: 13px; color: var(--muted); }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); display: flex; gap: 6px 18px; flex-wrap: wrap; padding-block: 12px; margin-top: 18px; }
+nav a { color: var(--muted); text-decoration: none; font-family: var(--mono); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+nav a:hover { color: var(--fg); }
+.rules { margin-top: 22px; background: var(--panel); border: 1px solid var(--line); padding: 14px 16px; }
+.rules summary { cursor: pointer; font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.rules ol { margin: 10px 0 0; padding-left: 20px; display: grid; gap: 8px; max-width: 90ch; }
+.rules .src { color: var(--muted); font-size: 12.5px; }
+.act { padding-top: 44px; scroll-margin-top: 56px; }
+.act > h2 { font-family: var(--display); font-weight: 800; font-size: 2.2rem; text-transform: uppercase; margin: 0; line-height: 1; }
+.act > .beats { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .08em; text-transform: uppercase; }
+.frame { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 22px; padding-block: 26px; border-bottom: 1px solid var(--line); scroll-margin-top: 56px; }
+@media (max-width: 860px) { .frame { grid-template-columns: minmax(0, 1fr); } }
+.head { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.num { font-family: var(--display); font-weight: 800; font-size: 2.6rem; line-height: .9; color: var(--muted); }
+.title { font-family: var(--display); font-weight: 600; font-size: 1.6rem; text-transform: uppercase; line-height: 1.05; }
+.tag { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; padding: 2px 7px; border: 1px solid currentColor; }
+.tag.l-16mm { color: var(--t16); } .tag.l-cctv { color: var(--tcctv); } .tag.l-red { color: var(--tred); } .tag.l-clean { color: var(--tclean); } .tag.l-blockbuster { color: var(--tblock); }
+.beat { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.shot { margin-top: 10px; padding: 0; border: 1px solid var(--line); background: #000; display: block; width: 100%; aspect-ratio: 16/9; max-width: 100%; overflow: hidden; cursor: zoom-in; }
+.shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.placeholder { margin-top: 10px; aspect-ratio: 16/9; max-width: 100%; border: 1px dashed var(--line); display: grid; place-items: center; text-align: center; color: var(--muted); padding: 16px; box-sizing: border-box; font-size: 14px; }
+.alts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+.alt { display: grid; gap: 4px; }
+.alt button.th { padding: 0; border: 2px solid transparent; background: #000; aspect-ratio: 16/9; overflow: hidden; cursor: pointer; width: 100%; }
+.alt button.th img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.alt button.th[aria-current="true"] { border-color: var(--fg); }
+.alt.chosen button.th { border-color: var(--yes); }
+.pick { font: 600 12px var(--body); padding: 5px 0; background: var(--panel); color: var(--fg); border: 1px solid var(--line); cursor: pointer; }
+.pick[aria-pressed="true"] { background: var(--yes); border-color: var(--yes); color: #0d1a10; }
+.who { font-size: 11.5px; color: var(--muted); min-height: 1.2em; }
+.line { margin: 12px 0 0; font-family: var(--mono); font-size: 13px; color: var(--fg); background: var(--panel); border-left: 3px solid var(--accent); padding: 8px 12px; }
+.job { margin: 0 0 12px; color: var(--muted); }
+.job b { color: var(--fg); font-weight: 600; }
+.opts { display: grid; gap: 12px; }
+.opt { background: var(--panel); border: 1px solid var(--line); padding: 12px 14px; display: grid; gap: 8px; min-width: 0; }
+.opt.chosen { border-color: var(--yes); box-shadow: inset 3px 0 0 var(--yes); }
+.opt h3 { margin: 0; font-size: 15px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.opt h3 .id { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.rec { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--bg); background: var(--fg); padding: 1px 6px; }
+.opt p { margin: 0; }
+.lanes { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; font-size: 13.5px; }
+.lanes b { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); font-weight: 400; margin-right: 6px; }
+.meta { font-size: 12.5px; color: var(--muted); display: grid; gap: 2px; }
+.opt details summary { font-size: 12.5px; color: var(--muted); cursor: pointer; }
+.veo { margin: 6px 0 0; font-family: var(--mono); font-size: 12px; background: var(--panel2); padding: 8px 10px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.copy { font: 600 11.5px var(--body); background: transparent; color: var(--muted); border: 1px solid var(--line); padding: 3px 8px; cursor: pointer; margin-top: 6px; }
+.optfoot { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.why { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+.note { display: block; margin-top: 14px; font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+textarea { width: 100%; box-sizing: border-box; margin-top: 6px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); font: 14px var(--body); padding: 8px 10px; resize: vertical; }
+.saved { font-size: 12.5px; color: var(--muted); margin-top: 4px; display: grid; gap: 2px; }
+dialog { border: 0; padding: 0; background: transparent; max-width: 96vw; color: var(--fg); }
+dialog::backdrop { background: rgba(0,0,0,.92); }
+#lb img { max-width: 96vw; max-height: 86vh; display: block; }
+#play { width: min(1200px, 96vw); }
+#play img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #000; }
+#play .ph { aspect-ratio: 16/9; display: grid; place-items: center; border: 1px dashed var(--line); color: var(--muted); }
+#play .cap { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-top: 10px; }
+#play .cap .title { font-size: 1.4rem; }
+#play .pl { font-family: var(--mono); font-size: 13px; margin: 6px 0 0; }
+#play .an { color: var(--muted); font-size: 13.5px; margin: 4px 0 0; }
+#play .ctl { display: flex; gap: 8px; margin-top: 12px; justify-content: flex-end; }
+</style>
+
+<div class="wrap">
+  <h1>GitPush Origin Master <span class="tri">▲</span> second half storyboard</h1>
+  <p class="intro">The second half in story order, from the kill bots to the bus. Each frame shows its still and two or three ways to animate it, drawn from the repo's cinematography and video guidance. Pick one way per frame. Where a frame is new, pick the still too. The film is narrated, so timings are rough: we cut the picture first and fit the words after. Picks and notes are shared between Kai and Jack.</p>
+  <div class="bar">
+    <button class="btn" type="button" id="playbtn">▶ Flip through the reel</button>
+    <span class="status" id="status">Connecting to the shared picks…</span>
+  </div>
+  <nav id="nav" aria-label="Acts"></nav>
+  <details class="rules" id="rules"><summary>Rules for the whole sequence</summary><ol></ol></details>
+  <div id="reel"></div>
+</div>
+<dialog id="lb"><img alt=""></dialog>
+<dialog id="play" aria-label="Reel">
+  <div id="pv"></div>
+  <div class="cap"><span class="num" id="pn"></span><span class="title" id="pt"></span><span class="tag" id="pg"></span></div>
+  <p class="pl" id="pl"></p><p class="an" id="pa"></p>
+  <div class="ctl"><button class="btn ghost" type="button" id="prev">← Back</button><button class="btn" type="button" id="next">Next →</button><button class="btn ghost" type="button" id="close">Close</button></div>
+</dialog>
+
+<script>
+const D = /*DATA*/null;
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const h = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) { if (v == null || v === false) continue; if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v === true ? '' : v); }
+  for (const k of kids.flat()) if (k != null) e.append(k.nodeType ? k : document.createTextNode(k)); return e; };
+const LOOK = { '16mm': '1980s BBC 16mm', cctv: 'CCTV + red HUD', red: 'Full red vision', clean: 'Clean, futuristic', blockbuster: 'Blockbuster' };
+const F = new Map(D.frames.map(f => [f.n, f]));
+
+let me = null, db = null, user = null;
+const picks = new Map(); // `${kind}-${n}` -> Map(uid -> v)
+const notes = new Map(); // n -> Map(uid -> text)
+const names = {};
+const view = new Map();  // n -> still id shown large
+const label = uid => uid === me ? 'you' : (names[uid] || 'Someone');
+const mine = (kind, n) => picks.get(`${kind}-${n}`)?.get(me);
+const anyPick = (kind, n) => { const m = picks.get(`${kind}-${n}`); if (!m) return null; return m.get(me) || [...m.values()][0] || null; };
+
+function stillFor(f) {
+  if (f.reuse) return stillFor(F.get(f.reuse));
+  return anyPick('still', f.n) || view.get(f.n) || f.stills[0] || null;
+}
+
+// --- render
+const nav = $('#nav');
+D.acts.forEach(a => nav.append(h('a', { href: '#' + a.id }, a.title)));
+const rules = $('#rules ol');
+D.notes.forEach(r => rules.append(h('li', {}, h('b', {}, r.rule), ' ', r.why, ' ', h('span', { class: 'src' }, '(' + r.source + ')'))));
+if (!D.notes.length) $('#rules').hidden = true;
+
+const reel = $('#reel');
+for (const a of D.acts) {
+  const sec = h('section', { class: 'act', id: a.id }, h('div', { class: 'beats' }, 'Beat ' + a.beats), h('h2', {}, a.title));
+  for (const f of D.frames.filter(x => x.act === a.id)) sec.append(frameEl(f));
+  reel.append(sec);
+}
+
+function frameEl(f) {
+  const left = h('div', { style: 'min-width:0' },
+    h('div', { class: 'head' }, h('span', { class: 'num' }, String(f.n).padStart(2, '0')), h('span', { class: 'title' }, f.title)),
+    h('div', { class: 'head', style: 'margin-top:6px' }, h('span', { class: 'tag l-' + f.look }, LOOK[f.look] || f.look), h('span', { class: 'beat' }, 'beat ' + f.beat), f.new ? h('span', { class: 'beat' }, '· new, pick a still') : null));
+  if (f.reuse) left.append(h('div', { class: 'placeholder' }, `Reuses frame ${f.reuse}: cut back to the row.`));
+  else if (f.gap) left.append(h('div', { class: 'placeholder' }, 'No still yet. See the options for how to build it from footage we already have.'));
+  else {
+    const big = h('button', { class: 'shot', type: 'button', 'aria-label': 'Enlarge ' + f.title, onclick: () => openLb(big.querySelector('img').src) }, h('img', { alt: f.title, src: D.img[f.stills[0]] || '' }));
+    left.append(big);
+    if (f.stills.length > 1) {
+      const alts = h('div', { class: 'alts' });
+      f.stills.forEach((sid, i) => alts.append(h('div', { class: 'alt', 'data-sid': sid },
+        h('button', { class: 'th', type: 'button', 'aria-label': `Show option ${i + 1}`, 'aria-current': String(i === 0), onclick: () => { view.set(f.n, sid); big.querySelector('img').src = D.img[sid] || ''; $$('.th', alts).forEach((t, j) => t.setAttribute('aria-current', String(j === i))); } }, h('img', { alt: '', src: D.img[sid] || '' })),
+        h('button', { class: 'pick', type: 'button', 'data-kind': 'still', 'data-n': f.n, 'data-v': sid, 'aria-pressed': 'false' }, 'Use this'),
+        h('div', { class: 'who' }))));
+      left.append(alts);
+    }
+  }
+  if (f.line) left.append(h('p', { class: 'line' }, f.line));
+  if (f.note) left.append(h('p', { class: 'why' }, f.note));
+
+  const A = f.anim || {}, right = h('div', { style: 'min-width:0' });
+  if (A.job) right.append(h('p', { class: 'job' }, h('b', {}, 'Job: '), A.job));
+  const opts = h('div', { class: 'opts' });
+  (A.options || []).forEach(o => {
+    const rec = A.recommended && A.recommended.id === o.id;
+    const card = h('article', { class: 'opt', 'data-n': f.n, 'data-v': o.id },
+      h('h3', {}, h('span', { class: 'id' }, o.id.toUpperCase()), o.label, rec ? h('span', { class: 'rec' }, 'recommended') : null),
+      h('p', {}, o.idea),
+      h('ul', { class: 'lanes' }, (o.lanes || []).map(l => h('li', {}, h('b', {}, l.lane), l.does))),
+      h('div', { class: 'meta' }, o.cut ? h('span', {}, 'Cut: ' + o.cut) : null, o.seconds ? h('span', {}, 'About ' + o.seconds + (/^[\d.\-–]+$/.test(String(o.seconds)) ? ' s' : '')) : null, o.risk ? h('span', {}, 'Risk: ' + o.risk) : null, o.source ? h('span', {}, 'From: ' + o.source) : null));
+    if (o.veo_prompt) { const pre = h('div', { class: 'veo' }, o.veo_prompt);
+      card.append(h('details', {}, h('summary', {}, 'Veo motion prompt'), pre, h('button', { class: 'copy', type: 'button', onclick: e => copy(o.veo_prompt, e.target) }, 'Copy prompt'))); }
+    card.append(h('div', { class: 'optfoot' }, h('button', { class: 'pick', type: 'button', 'data-kind': 'anim', 'data-n': f.n, 'data-v': o.id, 'aria-pressed': 'false', style: 'padding:6px 14px' }, 'Animate it this way'), h('span', { class: 'who' })));
+    opts.append(card);
+  });
+  if (!(A.options || []).length) opts.append(h('p', { class: 'job' }, 'Animation options are still being written for this frame.'));
+  right.append(opts);
+  if (A.recommended) right.append(h('p', { class: 'why' }, `Why ${A.recommended.id.toUpperCase()}: ${A.recommended.why}`));
+  right.append(h('label', { class: 'note', for: 'note-' + f.n }, 'Notes on frame ' + f.n),
+    h('textarea', { id: 'note-' + f.n, rows: 2, 'data-n': f.n, placeholder: 'What should change here?' }), h('div', { class: 'saved', 'data-for': f.n }));
+  return h('div', { class: 'frame', id: 'f' + f.n }, left, right);
+}
+
+function copy(text, btn) {
+  navigator.clipboard.writeText(text).then(() => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy prompt', 1400); })
+    .catch(() => { const r = document.createRange(); r.selectNodeContents(btn.previousSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); });
+}
+const lb = $('#lb'); function openLb(src) { $('img', lb).src = src; lb.showModal(); } lb.addEventListener('click', () => lb.close());
+
+// --- the reel player
+const play = $('#play'); let at = 0;
+function showPlay() {
+  const f = D.frames[at], sid = stillFor(f);
+  $('#pv').replaceChildren(sid && D.img[sid] ? h('img', { alt: f.title, src: D.img[sid] }) : h('div', { class: 'ph' }, f.gap ? 'No still yet' : 'Still to come'));
+  $('#pn').textContent = String(f.n).padStart(2, '0'); $('#pt').textContent = f.title;
+  const g = $('#pg'); g.className = 'tag l-' + f.look; g.textContent = LOOK[f.look] || f.look;
+  $('#pl').textContent = f.line || '';
+  const oid = anyPick('anim', f.n) || f.anim?.recommended?.id, o = (f.anim?.options || []).find(x => x.id === oid);
+  $('#pa').textContent = o ? `Motion: ${o.label}. ${o.idea}` : '';
+  $('#prev').disabled = at === 0; $('#next').disabled = at === D.frames.length - 1;
+}
+$('#playbtn').addEventListener('click', () => { at = 0; showPlay(); play.showModal(); });
+$('#prev').addEventListener('click', () => { if (at > 0) { at--; showPlay(); } });
+$('#next').addEventListener('click', () => { if (at < D.frames.length - 1) { at++; showPlay(); } });
+$('#close').addEventListener('click', () => play.close());
+play.addEventListener('keydown', e => { if (e.key === 'ArrowRight') $('#next').click(); if (e.key === 'ArrowLeft') $('#prev').click(); });
+
+// --- shared picks
+async function nameOf(ids) { if (!user) return; try { const ps = await user.profiles(ids); for (const id of ids) names[id] = (ps[id] && ps[id].name) || 'Someone'; } catch (e) {} }
+function renderPicks() {
+  $$('button.pick').forEach(b => {
+    const key = `${b.dataset.kind}-${b.dataset.n}`, m = picks.get(key) || new Map();
+    b.setAttribute('aria-pressed', String(m.get(me) === b.dataset.v));
+    const who = [...m].filter(([, v]) => v === b.dataset.v).map(([u]) => label(u));
+    const holder = b.closest('.alt') || b.closest('.opt');
+    holder.classList.toggle('chosen', who.length > 0);
+    const w = holder.querySelector('.who'); if (w) w.textContent = who.length ? 'Picked by ' + who.join(', ') : '';
+  });
+}
+function renderNotes() {
+  $$('.saved').forEach(el => { const m = notes.get(el.dataset.for) || new Map();
+    el.replaceChildren(...[...m].filter(([u, t]) => t && u !== me).map(([u, t]) => h('div', {}, `${label(u)}: ${t}`))); });
+}
+async function start() {
+  if (typeof claude !== 'undefined') { db = await claude.use('db'); user = await claude.use('user'); }
+  const status = $('#status');
+  if (!db || !user) { status.textContent = 'Read-only here: sign in on claude.ai to pick.'; $$('button.pick').forEach(b => b.disabled = true); return; }
+  me = await user.id();
+  status.textContent = 'Live. Picks save as you tap.';
+  db.collection('picks').onSnapshot(async snap => {
+    picks.clear(); const uids = new Set();
+    snap.docs.forEach(d => { const x = d.data() || {}; if (!x.kind || !x.by) return; uids.add(x.by);
+      const k = `${x.kind}-${x.n}`; if (!picks.has(k)) picks.set(k, new Map()); if (x.v) picks.get(k).set(x.by, x.v); });
+    await nameOf([...uids]); renderPicks();
+  }, () => { status.textContent = 'Lost the connection to the shared picks. Reload to try again.'; });
+  db.collection('notes').onSnapshot(async snap => {
+    notes.clear(); const uids = new Set();
+    snap.docs.forEach(d => { const x = d.data() || {}; if (x.n == null || !x.by) return; uids.add(x.by);
+      const k = String(x.n); if (!notes.has(k)) notes.set(k, new Map()); notes.get(k).set(x.by, x.text || '');
+      if (x.by === me) { const ta = $('#note-' + x.n); if (ta && document.activeElement !== ta) ta.value = x.text || ''; } });
+    await nameOf([...uids]); renderNotes();
+  });
+  $$('button.pick').forEach(b => b.addEventListener('click', async () => {
+    const { kind, n, v } = b.dataset, cur = mine(kind, n), nv = cur === v ? null : v;
+    try { await db.collection('picks').doc(`${kind}-${n}__${me}`).set({ kind, n: Number(n), by: me, v: nv, at: Date.now() }); }
+    catch (e) { status.textContent = 'That pick did not save: ' + (e.message || e.code || 'unknown error'); }
+  }));
+  $$('textarea').forEach(ta => { let t; ta.addEventListener('input', () => { clearTimeout(t); t = setTimeout(async () => {
+    try { await db.collection('notes').doc(`${ta.dataset.n}__${me}`).set({ n: Number(ta.dataset.n), by: me, text: ta.value.slice(0, 2000), at: Date.now() }); }
+    catch (e) { status.textContent = 'That note did not save: ' + (e.message || e.code || 'unknown error'); }
+  }, 700); }); });
+}
+start();
+</script>

@@ -1,0 +1,104 @@
+<title>Picks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one column of sections; each pick is a row of option cards; any image opens large in a lightbox,
+   where the arrows step through that row's options and Pick works too. */
+:root { --bg:#f4f1ea; --card:#fffdf8; --fg:#1d1b18; --dim:#6d675c; --line:#ddd6c8; --acc:#b4331f; --pick:#2f6b4f; --pickbg:#e3efe7;
+  --ui:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace; --head:'Fraunces',Georgia,serif }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#15140f; --card:#1e1c17; --fg:#ece6da; --dim:#a39b8c; --line:#38342b; --acc:#e0634b; --pick:#7fc6a0; --pickbg:#1f3328; color-scheme:dark } }
+:root[data-theme="dark"] { --bg:#15140f; --card:#1e1c17; --fg:#ece6da; --dim:#a39b8c; --line:#38342b; --acc:#e0634b; --pick:#7fc6a0; --pickbg:#1f3328; color-scheme:dark }
+body { background:var(--bg); color:var(--fg); font:15px/1.5 var(--ui) }
+.wrap { max-width:1080px; margin:0 auto; padding-block:28px 60px; padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); display:flex; flex-direction:column; gap:30px }
+h1 { font:650 34px/1.1 var(--head); margin:0; text-wrap:balance } h2 { font:600 24px/1.2 var(--head); margin:0 } h3 { font:600 17px/1.3 var(--ui); margin:0 }
+.lede { color:var(--dim); max-width:70ch; margin:4px 0 0 }
+.eyebrow { font:500 11px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--acc) }
+.sec, .grp { display:flex; flex-direction:column; gap:10px } .grp { border-top:1px solid var(--line); padding-top:12px }
+.line { font:500 16px/1.4 var(--head); font-style:italic; color:var(--dim) }
+.opts { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr)); gap:10px }
+.card { background:var(--card); border:1px solid var(--line); border-radius:6px; padding:10px 12px; display:flex; flex-direction:column; gap:6px; min-width:0 }
+.card.on { border-color:var(--pick); background:var(--pickbg); box-shadow:inset 0 0 0 1px var(--pick) }
+.v { font:500 12px var(--mono); color:var(--dim) } .warn { font:500 11px var(--mono); color:var(--acc) }
+.zoom { padding:0; border:0; background:#000; border-radius:3px; cursor:zoom-in; display:block; width:100%; overflow:hidden }
+.zoom img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block }
+.zoom:focus-visible { outline:2px solid var(--acc); outline-offset:2px }
+@media (prefers-reduced-motion: no-preference) { .zoom img { transition:transform .3s ease } .zoom:hover img { transform:scale(1.03) } }
+audio { width:100%; height:34px } video { width:100%; display:block; border-radius:3px; background:#000 } a.open { font-weight:600; color:var(--acc) }
+button { font:600 13px var(--ui); border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:4px; padding:6px 10px; cursor:pointer }
+button.pk[aria-pressed="true"] { background:var(--pick); color:var(--card); border-color:var(--pick) }
+button:focus-visible { outline:2px solid var(--acc); outline-offset:2px }
+textarea { font:14px/1.4 var(--ui); color:var(--fg); background:var(--card); border:1px solid var(--line); border-radius:4px; padding:6px 8px; width:100%; box-sizing:border-box; min-height:40px }
+.status { font:500 11px var(--mono); color:var(--dim) }
+dialog { border:0; padding:0; background:transparent; max-width:96vw; color:#ece6da }
+dialog::backdrop { background:rgba(0,0,0,.9) }
+dialog img { max-width:96vw; max-height:80vh; display:block; margin:0 auto; cursor:zoom-out }
+.lbbar { display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; justify-content:center; margin-top:10px }
+.lbbar .lbl { font:500 13px var(--mono); min-width:0; text-align:center }
+.lbbar button { background:#1e1c17; color:#ece6da; border-color:#38342b }
+.lbbar button.pk[aria-pressed="true"] { background:#7fc6a0; color:#15140f; border-color:#7fc6a0 }
+</style>
+<div class="wrap">
+ <header><div class="eyebrow" id="eb"></div><h1 id="hd"></h1><p class="lede" id="in"></p>
+ <p class="status" id="st">Connecting…</p></header>
+ <div id="secs" class="sec"></div>
+</div>
+<dialog id="lb" aria-label="Enlarged image">
+ <img alt="">
+ <div class="lbbar"><button type="button" id="lbp" aria-label="Previous option">←</button><span class="lbl" id="lbl"></span>
+  <button type="button" class="pk" id="lbk">Pick</button><button type="button" id="lbn" aria-label="Next option">→</button>
+  <button type="button" id="lbx">Close</button></div>
+</dialog>
+<script>
+const D = /*DATA*/null, $ = id => document.getElementById(id);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e };
+$('eb').textContent = D.eyebrow || ''; $('hd').textContent = D.heading || ''; $('in').textContent = D.intro || '';
+let db = null, me = null; const P = {}, N = {};
+async function save(slot, patch) { if (!db) { $('st').textContent = 'Sign in to save picks'; return }
+  try { await db.doc('picks/' + slot + '__' + me).set({ slot, pick: P[slot] || '', note: N[slot] || '', ...patch, by: me, at: Date.now() }); $('st').textContent = 'Saved' } catch (e) { $('st').textContent = 'Not saved: ' + (e && e.code || 'error') } }
+function toggle(slot, id) { P[slot] = P[slot] === id ? '' : id; paint(); save(slot, { pick: P[slot] }) }
+function paint() {
+  for (const b of document.querySelectorAll('.card button.pk')) { const on = P[b.dataset.slot] === b.dataset.id; b.setAttribute('aria-pressed', on); b.textContent = on ? 'Picked' : 'Pick'; b.closest('.card').classList.toggle('on', on) }
+  if (lb.open) showLb() }
+
+// Lightbox: the image large, its label, Pick, and the arrows step through the same row's images.
+const lb = $('lb'); let cur = null;
+function showLb() { const { g, i } = cur, x = g.opts[i], on = P[g.slot] === x.id;
+  lb.querySelector('img').src = x.src; lb.querySelector('img').alt = g.title + ' ' + x.label;
+  $('lbl').textContent = `${g.title} · ${x.label} (${i + 1} of ${g.opts.length})`;
+  $('lbk').setAttribute('aria-pressed', on); $('lbk').textContent = on ? 'Picked' : 'Pick' }
+function openLb(g, i) { cur = { g, i }; showLb(); if (!lb.open) lb.showModal() }
+const step = d => { cur.i = (cur.i + d + cur.g.opts.length) % cur.g.opts.length; showLb() };
+$('lbp').onclick = () => step(-1); $('lbn').onclick = () => step(1); $('lbx').onclick = () => lb.close();
+$('lbk').onclick = () => toggle(cur.g.slot, cur.g.opts[cur.i].id);
+lb.querySelector('img').onclick = () => lb.close();
+lb.addEventListener('click', e => { if (e.target === lb) lb.close() });
+lb.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') step(-1); if (e.key === 'ArrowRight') step(1) });
+
+for (const s of D.sections) {
+  const sec = el('section', 'sec'); sec.append(el('h2', '', s.h)); if (s.lede) sec.append(el('p', 'lede', s.lede));
+  for (const g of s.groups) {
+    const gr = el('div', 'grp'); gr.append(el('h3', '', g.title)); if (g.line) gr.append(el('div', 'line', g.line));
+    const o = el('div', 'opts');
+    g.opts.forEach((x, i) => {
+      const c = el('div', 'card'); c.append(el('div', 'v', x.label));
+      if (g.kind === 'audio') { const au = el('audio'); au.controls = true; au.preload = 'none'; au.src = x.src; c.append(au) }
+      if (g.kind === 'link') { const a = el('a', 'open', 'Listen on Suno ↗'); a.href = x.href; a.target = '_blank'; a.rel = 'noopener'; c.append(a) }
+      if (g.kind === 'video') { const v = el('video'); v.controls = true; v.muted = true; v.playsInline = true; v.preload = 'metadata'; v.src = x.src; c.append(v) }
+      if (g.kind === 'image') { const z = el('button', 'zoom'); z.type = 'button'; z.setAttribute('aria-label', 'Enlarge ' + x.label);
+        const im = el('img'); im.src = x.src; im.alt = g.title + ' ' + x.label; im.loading = 'lazy'; z.append(im); z.onclick = () => openLb(g, i); c.append(z) }
+      if (x.warn) c.append(el('div', 'warn', x.warn));
+      const b = el('button', 'pk', 'Pick'); b.type = 'button'; b.dataset.slot = g.slot; b.dataset.id = x.id; b.onclick = () => toggle(g.slot, x.id);
+      c.append(b); o.append(c);
+    });
+    const l = el('label', 'status', 'Note'), ta = el('textarea'); ta.id = 'n-' + g.slot; l.htmlFor = ta.id; let t; ta.oninput = () => { N[g.slot] = ta.value; clearTimeout(t); t = setTimeout(() => save(g.slot, { note: ta.value }), 700) };
+    gr.append(o, l, ta); sec.append(gr);
+  }
+  $('secs').append(sec);
+}
+paint();
+(async () => { db = await claude.use('db'); const user = await claude.use('user');
+  if (!db || !user) { db = null; $('st').textContent = 'Sign in to save picks'; return }
+  me = await user.id(); const snap = await db.collection('picks').where('by', '==', me).get();
+  for (const d of snap.docs) { const v = d.data(); P[v.slot] = v.pick || ''; N[v.slot] = v.note || ''; const ta = $('n-' + v.slot); if (ta) ta.value = v.note || '' }
+  paint(); $('st').textContent = 'Ready. Picks save as you go. Click any image to see it large.' })();
+</script>

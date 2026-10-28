@@ -1,0 +1,83 @@
+{
+ "pre": "",
+ "shots": [
+  {
+   "id": "a01-painting",
+   "cast": [],
+   "refs": [
+    "brs3-archive-end"
+   ],
+   "full": "The scene in the reference photograph repainted as an old oil painting in full colour: the same composition, the same figure in the same pose, a British infantryman wearing the flat, wide-brimmed British steel helmet, the dish-shaped 'tin hat', the same smoke and sky, in thick visible brushstrokes, canvas weave showing through, cracked yellowed varnish, a little amateurish, the kind of painting bought at a car boot sale. Colours: khaki battledress, grey-green sea, an orange fire glow, a smoky grey-blue sky, all warmed by old varnish. The painted canvas fills the whole frame edge to edge, seen flat on, no frame, no wall. 16:9. Thanks."
+  },
+  {
+   "id": "c01b-cafe-wide",
+   "cast": [
+    "Barry",
+    "Denise"
+   ],
+   "refs": [
+    "brs3-a01-painting",
+    "brs-barry-portrait"
+   ],
+   "full": "Inside a small English greasy-spoon café on a wet morning. Barry sits at a red formica table with a full English breakfast, looking up mid-sentence; Denise stands beside his table holding a dishcloth, mid-reply. On the wall high above them, clear of their heads, hangs the painting from the reference image in a cheap chipped gilt frame, large and clearly visible. Camera low on the next table top, a red plastic sauce bottle out of focus in the left foreground. Mint-green wall tiles below the painting, a steamed-up window on the right. Light: cold blue daylight through the window, a warm yellow strip light overhead. No flags, no bunting, no text. Barry is dressed exactly as in his portrait reference. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "b01-bank",
+   "cast": [],
+   "refs": [],
+   "full": "Dawn on an empty English high street after rain. The columned stone front of a grand old bank, lit warm gold from inside, one CCTV camera on its corner pointing down at the street. Camera low on the wet pavement across the road, a stack of steel crowd barriers chained together out of focus in the left foreground, a puddle in front holding the bank's lights. Nobody in the street, no vehicles. Light: cold blue dawn sky against the warm gold windows. No readable text. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "s01d-side-door",
+   "cast": [],
+   "refs": [],
+   "full": "A narrow wet cobbled alley down the side of a grand old stone bank at night. At the end of the alley a dark green steel side door stands propped open with a wooden wedge, warm light spilling out across the cobbles; the wet tyre tracks of a pallet truck run from the foreground straight in through the door. Far behind, out of focus at the mouth of the alley, the backs of a crowd lit orange by street lamps. Camera low on the cobbles. Light: one caged bulb above the door, amber, against cold blue night. No people in the alley, no readable text. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "pr-w-wide",
+   "cast": [],
+   "refs": [],
+   "full": "From high up between the stone columns of a grand old bank at dusk, looking down at the street in front of it. Two crowds of ordinary people press against two lines of steel barriers, facing each other across an empty strip of wet tarmac where a thin line of police in yellow jackets stands with their backs to the bank. Every face is turned to the other crowd; nobody looks up at the bank. Foreground: the edge of a stone column, out of focus. Light: orange sodium street lamps and the white glare of a police floodlight from the left. No flags, no coloured smoke, only a few handwritten cardboard signs too small to read. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "pr-a-chant",
+   "cast": [],
+   "refs": [],
+   "full": "Close among a crowd of young and middle-aged counter-protesters behind a steel barrier at dusk, in rain jackets and beanies: a woman in her thirties at the front is screaming across the gap, mouth wide open, one fist up, the people beside her shouting with her. Camera low on the other side of the barrier, the out-of-focus yellow shoulder of a police jacket in the lower left foreground. Behind them, the columned front of an old bank. Light: one orange sodium street lamp above and behind them, the white glare of a police floodlight from the right on their faces. Rain in the light. No flags, no coloured smoke, no readable text. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "pr-b-reply",
+   "cast": [
+    "Barry"
+   ],
+   "refs": [
+    "brs-barry-portrait"
+   ],
+   "full": "Barry stands at the front of a crowd of older working men and women in work jackets and anoraks behind a steel barrier at dusk, holding up a cardboard sign that reads WE CAN'T AFFORD TO LIVE HERE in thick black marker, shouting back across the gap, the man beside him jabbing a finger. Camera high and close above the barrier, looking down at their upturned shouting faces, rain falling through the light. Light: an orange sodium lamp behind the camera, the white glare of a police floodlight raking from the left. No flags, no coloured smoke. Barry is dressed exactly as in his portrait reference. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "p01b-press",
+   "cast": [],
+   "refs": [
+    "brs-p01-press"
+   ],
+   "full": "Keep everything in the reference image exactly as it is: the bare brick room, the five men and where they sit and stand, the cast-iron printing press, the camera low in the corner with the iron wheel in the foreground, the bare bulb and the green exit-sign glow. Change only the banknotes: they are current Bank of England polymer notes, purple £20 notes and red £50 notes, stacked in thick bricks seen at a slant, each with a clear see-through window and a silver foil strip catching the light, the small portrait on each soft and turned away. New purple and red sheets feed out of the press into its tray. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "p02b-ex",
+   "cast": [],
+   "refs": [
+    "brs-p02-ex"
+   ],
+   "full": "Keep everything in the reference image exactly as it is: the man, his pose and expression, the brick room, the whisky glass, the camera and the light. Change only the banknotes: they are current Bank of England polymer notes, purple £20 notes and red £50 notes, stacked in thick bricks seen at a slant, each with a clear see-through window and a silver foil strip catching the light, the small portrait on each soft and turned away. The press behind him is printing them into its tray. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "p03b-red",
+   "cast": [],
+   "refs": [
+    "brs-p03-red"
+   ],
+   "full": "Keep everything in the reference image exactly as it is: the two men, their toast and grins, the brick room, the bottle, the camera and the light. Change only the banknotes: they are current Bank of England polymer notes, purple £20 notes and red £50 notes, stacked in thick bricks seen at a slant, each with a clear see-through window and a silver foil strip catching the light, the small portrait on each soft and turned away. The stacks sit on the shelf and press behind them. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  }
+ ]
+}

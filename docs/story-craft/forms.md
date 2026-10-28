@@ -145,7 +145,7 @@ The house VO markup is brief 23's deliverable, verbatim:
 | CAPS | Hard emphasis, one word only | Never a whole line (Thom's warning) |
 
 How it meets the pipeline: the narrator is a Suno voice, and
-[`narration.md`](../stories/gitpush-origin-master/songs/narration.md) §1 rules that Suno cannot hit a
+[`narration.md`](../stories/gitpush-origin-master/songs/archive/narration-v5.5.md) §1 rules that Suno cannot hit a
 timecode. The take is split to stems and the vocal stem **cut into one clip per line**, each slid onto
 its picture beat in Premiere — so every line is a cut point, written short and full-stopped. `/`
 directs delivery *inside* a line (v5.5 obeys the bracket architecture; 4.5 shreds it). `//`, `///` and

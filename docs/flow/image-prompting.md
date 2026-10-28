@@ -1,7 +1,7 @@
 # Image prompting — Nano Banana / Nano Banana Pro
 
 Flow's still-image models. Platform behaviour only — the BadCode look lives in
-`badcode-art-direction` (comic panels) and `new-image` (brand imagery).
+`new-image` (both registers).
 
 ## 1. The mental model
 

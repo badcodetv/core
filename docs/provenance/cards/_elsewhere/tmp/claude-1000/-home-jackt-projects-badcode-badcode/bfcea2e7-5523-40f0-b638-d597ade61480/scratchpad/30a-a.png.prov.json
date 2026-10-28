@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/30a-a.png",
+ "made": "2026-10-26T17:25:06+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_generate_image",
+ "model": "Nano Banana 2.1",
+ "why": "Speakeasy Mint scene 30 round 1, 30a",
+ "source_id": "871a420b-6c94-4c59-9b77-cda7824ac796",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, snow falling on a 1930s street, a long lens straight down a long queue outside a shop window full of loaves under a plain blank sign: the queue of cold working people, young and old, men and women, Black, white and South Asian, stretches away from the shop door into the snow, and each one holds the price of one loaf: the first a single coin, the next a fistful of coins, then a cloth bag of money, then a bucket of notes, and at the very back a man pushing a wheelbarrow heaped with blank green paper money with no printing. The shop window glows warm; everything else is blue and cold. Most of the frame in shadow; the brightest values are the shop window and the snow in the lamplight. Plain margins with no writing. Thanks.",
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ }
+}

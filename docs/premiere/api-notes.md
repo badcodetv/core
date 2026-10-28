@@ -6,7 +6,8 @@ what actually happened, and what to do instead.
 
 Ground truth for signatures is the type declarations that ship with the npm package:
 `node_modules/@adobe/premierepro/src/premierepro.d.ts` (4,675 lines, v26.3.0). Read them
-rather than guessing — Adobe's web docs lag the package.
+rather than guessing — Adobe's web docs lag the package. **26.5 and the 27.0 beta changed the
+API** — see [What changed since 26.3](#-what-changed-in-premiere-and-its-uxp-api-since-263-researched-2026-10-19) at the end.
 
 ---
 
@@ -28,7 +29,8 @@ The panel connected and ran real code inside Premiere. These are measured, not a
 
 The type declarations show `Application: Application` with `readonly version: string`, and the
 plan's tool table specified `ppro.Application.version` for `premiere_status`. **It returns
-`null` at runtime.** Do not use it.
+`null` at runtime.** Do not use it. *(2026-10-19: the 26.5 types make it a `Promise<string>` and
+27.0 beta drops `Application` entirely — see the end of this file.)*
 
 **Use the UXP host object instead** — verified returning `26.3.2` in the same probe:
 
@@ -1632,6 +1634,15 @@ a transparent region that resolves to white is not a subtle artefact — it is a
 **Export a frame and look whenever you introduce transparency**, rather than trusting that "nothing
 beneath the bottom track" means black.
 
+## `premiere_insert_clip` mode "insert" ripples EVERY track, not just the target (2026-09-17)
+
+Expected: inserting a video-only clip at 40s on V1 pushes V1 later. Actual: it also **razored an
+audio clip spanning 40s on A3** and pushed the tail +8s, and moved A2 and the sequence markers too.
+Harmless for markers and picture-locked audio; destructive for a continuous narration bed. Do
+instead: after an insert, check any audio clip that crossed the insert point, then
+`premiere_remove_clip` the moved tail and `premiere_trim_clip` the head's `outPoint` back to full
+length. (Or lock the narration track in the UI first.)
+
 ---
 
 ## Whole-film grade in 15 transactions, and five facts, 2026-09-14 (`camping jack`)
@@ -1702,3 +1713,361 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
   so any Motion push, grade or effect on the clip it replaces is gone. Before a swap pass, `jq` the state for items
   with `keyframes` or extra components, and re-apply them afterwards (2026-09-30: the receipt and wine-label pushes
   vanished unnoticed for three passes).
+
+## 2026-10-04: learned building the Money For Something first cut (73 placements, three evals)
+
+- 🔴 **`createOverwriteItemAction` from eval throws `Invalid parameter` when handed the CAST item.** Passing
+  `ppro.ClipProjectItem.cast(pi)` failed; passing the uncast item from `helpers.resolveProjectItem(project, name)`
+  worked, with times from `helpers.secondsToTick`. The cast item is still what `createSetInOutPointsAction` and
+  `createClearInOutPointsAction` hang off. This is very likely the cause of the 2026-09-11 note above ("cause not
+  isolated"). The first failing call also awaited `SequenceEditor.getEditor` and used
+  `ppro.TickTime.createWithSeconds`; those two were changed in the same retry, so they are not ruled out.
+- ✅ **35 placements in one eval, three transactions each, ran clean twice** (`timeoutMs: 180000`).
+- ✅ **An audio-only item goes on A2 with `createOverwriteItemAction(item, t, 0, 1)`**, and a video item with no
+  audio stream on V2 with `(item, t, 1, 0)`.
+- ✅ **Plan times snapped to 1/24 s left no gaps** on a 24 fps sequence: `blackdetect` on the render found none.
+- ✅ **Render stills to clips first.** Each still became a 1280×720 / 24 fps mp4 with its push-in baked in
+  (ffmpeg `zoompan`), so nothing on the timeline needed scaling and the "default still duration" unknown never
+  came up.
+- 🔴 **A 38-placement eval froze Premiere and it restarted** (same session, 2026-10-04, building cut 3). The call
+  timed out at 180 s, `tasklist` showed "Not Responding", and a few minutes later a new Premiere process had the
+  project open again with the sequence saved as far as the freeze (the bridge reconnected by itself). Twelve
+  placements had landed. The remaining 28 went in as three evals of nine or ten and ran clean. A 40-placement
+  eval had run clean an hour earlier, so this is load, not a count. **Keep it to about ten placements an eval.**
+- 🔴 **Round plan times to the frame, then add 2 ms before `secondsToTick`.** Times printed to four decimals
+  (`1.2083` for 29 frames) floor to 28 frames and leave a one-frame black gap: fifteen of them in one cut.
+  `secondsToTick(Math.round(s * 24) / 24 + 0.002)` left none.
+- 🔴 **Premiere honours a clip's pixel aspect ratio.** ffmpeg clips cut from masters with non-square pixels
+  (SAR 16:15 and 167:96) played stretched in a 1280×720 sequence, pushing a burned-in caption off the left edge.
+  A contact sheet made with ffmpeg did not show it; a frame from the Premiere render did. Put
+  `scale=iw*sar:ih,setsar=1` first in the filter chain.
+- `helpers.resolveProjectItem` threw `Cannot read properties of null (reading 'name')` once, mid-batch, on an
+  item that resolved normally on the next call. Not explained. Wrap the resolve in the try and collect failures.
+
+
+## 2026-10-05: the Money For Something v3 assembly (89 placements, nine evals)
+
+- ✅ **Nine evals of nine or ten placements, three transactions each, ran clean with no failures**, on a new
+  sequence made with `premiere_create_sequence({ fromItems: [first card] })`. That call lays the item down
+  whole; the first overwrite then trims it (`changed.modified` showed 1.208 s become 1.0 s).
+- ✅ **Each eval checked `seq.name` before writing** and would have returned without editing had a human
+  clicked another timeline tab. Worth keeping in any multi-eval build (law 8).
+- **The first typed tool call after a run of evals returns everything the evals changed** in `changed`:
+  one `premiere_add_marker` came back with forty clips listed. It is correct, and large. Later calls
+  returned an empty `changed`.
+- ✅ `premiere_export_sequence` rendered 209 s of 1280×720 in one call with no timeout.
+- 🔴 **Same day, third build (`MFS v3 full`): Premiere crashed and recovered after four evals of FOURTEEN
+  placements.** The fifth eval timed out at 180 s; the panel reported "disconnected mid-command"; a minute
+  later Premiere was running again with the project open, a different sequence active, and the new
+  sequence cut back to where the recovery file had it (about twenty placements lost, though their evals
+  had returned `done: 14`). Memory read 7.2 GB just after. Three sequences of 90 to 120 clips had been
+  built in the same sitting. **What then ran clean: ten to twelve placements an eval, with
+  `await project.save()` as the last line of each.** `project.save()` works from eval and returns true.
+  Check the clip counts with `premiere_get_sequence` before rendering; an eval's own `done` count is not
+  proof the work survived.
+- `ppro.Markers.getMarkers(seq)` then `markers.createAddMarkerAction(name, 'Comment', startTick, durationTick, '')`
+  in a transaction adds a marker from eval (19 added this way), which avoids the large `changed` reply.
+- The panel cannot read a plan from disk or over HTTP: `require('fs').readFileSync` on a Windows path gave
+  "Route not found", and `fetch('http://localhost:…')` gave "Permission denied … Manifest entry not found".
+  The plan has to be passed inline.
+
+## 2026-10-05: "send crash report" on opening Money For Something (memory, not the panel)
+
+- 🔴 **Opening the project committed 33 GB on a 16 GB machine.** Measured: `PeakPagedMemorySize64` 33.2 GB for
+  the Premiere process, against a Windows commit limit of 38.8 GB; Premiere's own breadcrumbs
+  (`%LOCALAPPDATA%\Temp\Adobe\Premiere Pro\25.0\SentryIO-db\*.run\__sentry-breadcrumb1`, read with `strings`)
+  logged 2.2 GB → 31.4 GB → 5.2 GB inside a minute of the open. The panel was idle (no bridge listening) and
+  has no polling loop.
+- **Unverified cause:** the bin held 42 source stills of 10 to 54 megapixels and 7 ProRes masters (24 GB), none
+  on any timeline, because the stills had been rendered to mp4 clips first. No crash dump survived to name the
+  fault (crashpad uploads and deletes), so this is an inference from the spike.
+- **What was done:** Jack ran Edit ▸ Remove Unused and saved (7 sequences, 582 video and 410 audio items
+  unchanged), and was given the steps for a fixed 48 GB pagefile. Whether the spike is gone is not yet measured.
+- **Rule:** import the rendered clip, never the multi-megapixel source still or the ProRes master. Check with
+  `Get-Process 'Adobe Premiere Pro' | select PeakPagedMemorySize64` after an open.
+- A bin removal from eval (`FolderItem.createRemoveItemAction(item)` in a transaction) exists on the API but was
+  never run: Claude Code's auto-mode classifier refuses it as destructive. Hand it to the human.
+
+## 2026-10-05: `MFS v4` (122 placements in thirteen evals, ten strap stills, no failures)
+
+- ✅ **A long still on V3 from eval:** `ed.createOverwriteItemAction(item, tick, 2, 0)` lays a PNG down at its 5 s default;
+  then `(await seq.getVideoTrack(2)).getTrackItems(ppro.Constants.TrackItemType.CLIP, false)`, match each item by
+  `(await it.getStartTime()).seconds`, and `it.createSetEndAction(tick)` in its own transaction stretches it (one ran to
+  79 s). Nine pieces placed and ten ends set in one eval. A PNG's alpha is honoured with nothing set.
+- ✅ `premiere_insert_clip` with `audioTrack: 3` on a three-track sequence made A4, as its description says.
+- ✅ Thirteen evals of nine or ten placements, each ending `await project.save()`, on a 16 GB machine that had crashed
+  twice that day: no failure, no timeout. `premiere_export_sequence` then rendered 331 s in one call.
+- **ffmpeg, not Premiere:** `alimiter` raises its output to 0 dB unless `level=disabled` is set. A clip made louder with
+  `volume=8dB,alimiter=limit=0.7` came out peaking at 0 dB, not -3.
+
+## 2026-10-07: learned building The Bank Robbery `cut 1` (118 placements, nine evals)
+
+- ✅ **Twelve placements an eval ran clean nine times** (the last eval placed 22 audio-only items with one
+  transaction each). 86 picture clips and 32 narrator WAVs, no gaps, checked from the state file and with
+  `blackdetect` on the render.
+- ✅ **A narrator WAV needs no in and out set:** `createOverwriteItemAction(item, t, 0, 1)` alone lays the whole
+  file on A2.
+- ✅ **Import many files from eval** by building Windows paths in the snippet:
+  `project.importFiles(paths, true, ppro.ProjectItem.cast(bin))`, with the bin found by name in
+  `root.getItems()`. 108 files in one call. (`premiere_import` first, with one file, to create each bin.)
+- ✅ **Audio Volume is component 0 on an audio clip (`Internal Volume Stereo`), param 1 `Level`, and 0 dB reads
+  0.1778.** So the value is `10 ** ((dB - 15) / 20)`: −9 dB is 0.0631. Thirty-two clips were set in one
+  transaction; the render measured 9 LU quieter.
+- 🔴 **`helpers.require('fs').readFileSync` answered `Route not found`** for a Windows path, a `file:` path and
+  a `file:/` path. A plan cannot be read off disk from eval; pass it in the snippet.
+- 🔴 **Premiere locks imported WAVs that are on the timeline.** Rewriting the narrator files in place from WSL
+  gave `Permission denied` on 18 of 32 and silently replaced the other 14. Never level audio by rewriting a file
+  Premiere has imported; set the clip's Volume.
+- 🔴 **The bridge port was held by this conversation's own earlier server** after the session was restarted in
+  the background: the holder and the new session traced to the same `claude` pid. Killing it and calling
+  `premiere_status` reconnected at once.
+
+## 2026-10-08: The Bank Robbery `cut 2` (114 placements, nine evals, no failures)
+
+- ✅ **An empty sequence with the right settings:** `premiere_create_sequence({ fromItems: [one clip] })`, then
+  `premiere_remove_clip({ clips: ['v0:0', 'a0:0'] })`. The sequence keeps 1280×720 @ 24 and three tracks each.
+- ✅ **Picture on V1 with its sound on A3** is `createOverwriteItemAction(item, t, 0, 2)`. Talking clips went to
+  A1 and bed clips to A3 from the same V1, so the bed has a track of its own.
+- ✅ **Per-clip Volume by start time, 68 values in one transaction:** read `getStartTime()` for every item on the
+  track first, match within 0.03 s, collect `[param, value]`, then one `withTransaction`.
+- 🔴 **A rendered piece one frame shorter than its place on the timeline shows as one black frame.** The plan
+  rounded each duration to the nearest frame, which rounds up half the time. Four of thirty pieces did it.
+  Render every piece with spare last frames (`tpad=stop_mode=clone:stop_duration=0.2`, `apad`).
+- 🔴 `blackdetect=d=0.08` misses a single black frame at 24 fps. Use `d=0.03`.
+
+## 2026-10-08: replacing clips in place on `cut 2` (16 swaps, one eval)
+
+- ✅ **A clip is replaced by overwriting at its own start with the same in and length.** No remove first, no gap
+  left, clip counts unchanged on every track.
+- 🔴 **The overwrite resets the audio clip's Volume to 0 dB.** Set the levels again afterwards, by start time.
+- ✅ A render straight after showed no black frames, including at the two title cards (`blackdetect=d=0.03`).
+
+## 2026-10-08: The Bank Robbery `cut 3` (a clone, 5 swaps, 10 music stems)
+
+- ✅ **Music as pre-ducked stems.** With no audio crossfade API and no auto-duck, each cue was rendered to its
+  own WAV with the fades and the under-speech level already in it (`scripts/bank-robbery/build-cut3.py`: the
+  speech spans come from the plan, not from the audio), then placed whole. Neighbours alternate between A4 and
+  A5 so they can overlap. Volume stays at 0 dB and each scene's tune is still one clip a human can swap.
+- ✅ `createOverwriteItemAction(audioOnlyItem, t, 0, 4)` on a four-audio-track sequence **made A5**, the same
+  way index 3 made A4.
+- ✅ **Replacing an audio-only clip:** overwrite the new file at the old start with the same length. One clip in,
+  one out, clip count unchanged. A re-made stem needs a new file name (Premiere holds the old one).
+
+## 2026-10-08: The Bank Robbery `cut 4` (a rebuilt timeline: 85 + 36 placements in three evals)
+
+- ✅ **29 placements in one eval** (set in/out, overwrite, clear, each its own transaction) ran clean three times
+  with `timeoutMs: 300000`. The "about ten at a time" habit is not a limit.
+- ✅ **Levels for a whole track in one transaction by walking refs:** `helpers.resolveClip(seq, 'a2:' + n)` until
+  it throws, `getStartTime().seconds` to match the plan within 0.03 s, collect `[param, keyframe]`, then one
+  `withTransaction`. 63 values, read back by count.
+- ✅ **A ripple is cheaper as a rebuild.** When lengths change, work out every start again in the plan and lay a
+  new sequence (`scripts/bank-robbery/build-cut4.py`); there is no ripple-by-plan call worth writing.
+
+## 2026-10-09: The Bank Robbery `cut 8` (a ripple across every track, and a film-wide saturation lift)
+
+- ✅ **A time range can be ripple-deleted across the whole sequence in one action.** Put every clip that lies
+  inside the range, on every track, into the sequence's own selection and run
+  `createRemoveItemsAction(selection, true, MediaType.ANY, false)`. All tracks close up together. Checked on 276
+  clips against the state before: every one moved by exactly the removed length. This corrects the 2026-10-08 note
+  "a ripple is cheaper as a rebuild".
+- 🔴 **It needs the range to be clean on every track.** A clip that straddles the range is not cut. Lift long
+  clips (music) off first and lay them again afterwards, re-rendered with the range cut out.
+- ✅ **Lumetri on 105 clips in six evals:** per eval, one transaction appending the effect to eighteen clips, a
+  re-fetch of project and sequence, then one transaction setting param 16 on all eighteen. Selecting "clips that
+  have no Lumetri yet" makes the eval safe to run again until it reports none left.
+- ⚠️ `premiere_export_frame` failed once with EXPORT_FAILED ("nothing appeared within 120s") straight after a run
+  of effect transactions. Not retried; the render was read in its place.
+
+## A clip that decodes fine can import silent (2026-10-11)
+
+**Expected:** 29 ffmpeg-made `.mp4` clips (H.264 + AAC-LC stereo 48 kHz, all encoded by the same command) play with sound.
+**Happened:** two of the 29 (`c3-t-01b`, `c3-t-06b`, project `october.prproj`) were silent on the timeline **and** in
+`premiere_export_sequence`, for their whole length. ffmpeg reads both at about -19.7 dB mean, stereo and summed to mono,
+and `ffprobe` shows nothing that sets them apart from the 27 that played. One clip of the previous day's cut did the same.
+**What worked:** the same picture with PCM sound in a `.mov` (`-c:v copy -c:a pcm_s16le`), imported and laid over the
+old clip with `premiere_insert_clip` overwrite. The next export had sound there.
+**Not known:** the cause, and whether PCM matters or any fresh import would have done it. Nothing was isolated.
+**Do instead:** after building a timeline of talking clips, `premiere_export_sequence` and run
+`silencedetect=noise=-45dB:d=1.0` over the export; a silence as long as a clip is this fault. The Money For Something
+builder now writes its per-clip files as `.mov` with PCM sound.
+
+## 2026-10-12: The Bank Robbery `cut 9` (a stem export, 77 + 30 placements)
+
+- ✅ **A picture-and-dialogue stem straight from a finished cut:** `(await seq.getAudioTrack(i)).setMute(true)` on the
+  narrator and music tracks, `premiere_export_sequence` with an `outPath`, then `setMute(false)`. The export leaves
+  muted tracks out. `setMute` is a plain call, not an Action. A re-cut can then be planned as time ranges of that one
+  file (`scripts/bank-robbery/build-cut9.py`), which keeps every grade and level of the old cut.
+- 🔴 **77 placements in one eval ran past the 600 s limit** (about 8 s a clip; the project holds several hundred
+  items and `helpers.resolveProjectItem` is called once per clip). The tool reported TIMEOUT, but **the panel kept
+  going**: a `premiere_get_sequence` sent afterwards waited behind it and then showed 73 of 77 placed. Keep to about
+  30 placements an eval in a project this size, and after a TIMEOUT read the timeline before placing anything again.
+- 🔴 **`resolveProjectItem` failed twice in ~110 calls** with `Cannot read properties of null (reading 'name')`, on
+  items that resolved on the next try. Wrap each placement in a short retry and compare the timeline with the plan.
+- ✅ `project.importFiles(paths, true, bin)` from an eval took 83 files in one call (the paths were built in the
+  snippet from a list of short names, which keeps the call small).
+
+## 2026-10-17: a 1080p 24 fps sequence without a preset
+
+Premiere 2026 ships `HD 1080p` presets at 23.976, 25, 29.97, 50 and 59.94 fps, **not 24**. To match a 24 fps
+project (`gpom-s01` is 1920×1080 @ 24): render a 1-s black slug with ffmpeg
+(`-f lavfi -i color=c=black:s=1920x1080:r=24:d=1`), import it, `premiere_create_sequence({ fromItems: [slug] })`,
+then let the first placement overwrite it. The result read back as 1920×1080, `frameRate: 24`.
+
+## 2026-10-18: The Bank Robbery `cut 6` (77 placements, 25 levels, two evals)
+
+- ✅ **A new sequence from one imported item:** `premiere_create_sequence` with `fromItems: [<the item's id>]`.
+  Pass the **id**, because the same file name sits in several bins.
+- ✅ **A6 made on demand:** after A4/A5 appeared from the music placements, overwriting at audio index 5 made A6. Used
+  for a bed that overlaps the dubs on A3.
+- ✅ **Levels in one transaction:**
+  - Find each clip with `track.getTrackItems(ppro.Constants.TrackItemType.CLIP, false)` and
+    `helpers.tickToSeconds(await it.getStartTime())` within 0.06 s.
+  - Then `comp = await (await it.getComponentChain()).getComponentAtIndex(0)`, `p = await comp.getParam(1)`.
+  - Set it with `ca.addAction(p.createSetValueAction(p.createKeyframe(0.17783 * 10 ** (dB / 20)), true))`.
+  - It read back exactly.
+- 🔴 **Deleting or overwriting a piece file that a bin still references raises "Link Media" in Premiere**, even when no
+  timeline uses it. Cut 6 was rebuilt in place (`rm` of x-/t- pieces) and 19 stale bin items went offline. The fix was
+  to check nothing used them, then remove the stale bin with `FolderItem.cast(root).createRemoveItemAction(bin)`.
+  This worked with the Link Media dialog still open. **Rule: rebuild into a fresh folder, never `rm` inside a folder
+  Premiere has imported.**
+
+## 🆕 What changed in Premiere and its UXP API since 26.3 (researched 2026-10-19)
+
+**Tier: read, not run.** Everything below comes from Adobe's own posts and from diffing the
+`@adobe/premierepro` type files (26.3.0 → 26.5.1 → 27.0.0-beta.57). None of it has been called
+from our panel yet.
+
+🔴 **Measured 2026-10-19 on Jack's machine (bank robbery project open): `host.version` = `25.6.6`,
+59 `ppro` exports** — not the 26.3.2 / 70 exports of 2026-08-21. So the open app was the older
+**Premiere Pro 2025** line, and *none* of the APIs below exist in it: `WorkAreaUtils`,
+`MediaManager`, `C2PAService`, `MogrtText`, `ObjectMaskUtils`, `ProjectConverter`,
+`Transcript.transcribeClipProjectItem` and `host.applicationPath` are all `undefined`;
+`MarkerColor` still has only `MAGNETA`. **Two apps are installed side by side** (Creative Cloud,
+2026-10-19): **"Premiere" v26.5.2** and **"Premiere Pro" v25.6.6**, plus Media Encoder 26.5.2 and UXP
+Developer Tools 2.3.0. Jack works in **Premiere Pro 25.6.6 by choice**. "Premiere" 26 is not a lite
+edition — Adobe dropped "Pro" from the name in January 2026 and 26.x is the current line; 25.6 is
+last year's version kept installed. Everything below needs the app called "Premiere". The bridge
+ran the Bank Robbery cuts fine on it, so our tools work on 25.6. **Always check `host.version`
+before reaching for anything in this section.**
+
+### Where Premiere is
+
+| Version | Out | What matters to us |
+| --- | --- | --- |
+| **26.3** | Jun/Jul 2026 | The build we wrote the bridge on. API post 2026-07-10 |
+| 26.3.2 | Aug 2026 | Fixes an MKV-import crash. Nothing else |
+| 26.4 | — | No release notes found. It looks skipped, but this is unverified |
+| **26.5** | Sep 2026 (types 2026-09-08) | Generative Media Tool (text → video clip or sound effect on the timeline, uses Firefly + partner models); **Paper Edit** (rough cut from transcript selections in the Text panel); Object Mask Sharp/Smooth modes + Sharpness slider + more detectable objects; Generative Extend 360p–4K, any aspect; **Lens Flare rebuilt**, Twirl more precise, Mosaic softness better; Match Source now matches audio channels + sample rate; 4:2:2 10-bit MXF decode on NVIDIA Blackwell. API post 2026-09-10 |
+| 26.5.1 / 26.5.2 | Sep/Oct 2026 | Bug fixes. Users report Audio Meters dying until a restart, and 26.5.2 freezing for 2–3 min. Both unconfirmed by Adobe |
+| **27.0** | **Beta only** (beta types 2026-09-14 → 09-23) | Audio time-stretch modes (re-time dialogue/music without chipmunking); **Color Mode** (a dedicated grading workspace); colour labels on track headers; **the Lumetri *panel* is retired** (the Lumetri Color *effect* stays — our grades use the effect, so they should be unaffected, unverified); Wide-Gamut colour pipeline; **Intel Macs dropped** (irrelevant to us, we're on Windows) |
+
+🟡 **After a 26.5 update, re-harvest `effects-catalogue.md`.** Lens Flare, Twirl and Mosaic changed and
+their params may have new indices. The catalogue was harvested on 26.3.2.
+
+### New in the API — 26.3 (we never recorded these)
+
+- 🔴 **Breaking: `create*Action` must be called inside `project.lockedAccess(() => …)`.** Adobe says this was
+  not enforced consistently before. Our evals already do this.
+- 🔴 **Breaking: `Sequence.setSelection` is synchronous** and returns a `boolean`. Do not `await` it.
+- `ClipProjectItem.createSubClipAction` — make a subclip from code.
+- `Project.createSequenceWithPresetPath` — a sequence from a `.sqpreset` file.
+- `AudioTrack` / `VideoTrack` / `CaptionTrack.createSetNameAction` — rename a track ("V2 dubs").
+- `EncoderManager.launchEncoder`, `startBatchEncode`, `setEmbeddedXMPEnabled`, `setSidecarXMPEnabled`.
+- `ProjectConverter.exportAAF` + `AAFExportOptions` — hand a cut to an audio suite.
+- `Marker.guid`, `SourceMonitor.setPosition`, `ObjectMaskUtils`, `Transcript.querySupportedLanguages` /
+  `hasTranscript`.
+- Tooling: `@adobe/eslint-plugin-premierepro` lints wrong `Action` use. Not installed here.
+
+### New in the API — 26.5
+
+- **`WorkAreaUtils`** — `getWorkAreaInPoint/OutPoint(seq)`, `setWorkAreaInPoint/OutPoint(seq, t)`,
+  `setWorkAreaInOutPoints(seq, in, out)`. Synchronous. **This could let `premiere_export_sequence`
+  render a range** instead of the whole sequence. Untested.
+- **`MediaManager.purgeMediaCache()`** — flush the media cache from code. Worth trying the next time a
+  long session goes slow or crashes ([the 2026-10-05 crash](#2026-10-05-send-crash-report-on-opening-money-for-something-memory-not-the-panel)).
+- **`Transcript.transcribeClipProjectItem(item)`** resolves when transcription finishes, and
+  `Transcript.isLanguagePackAvailable(code)`. Premiere's own speech-to-text from code — a second way
+  to verify a cut against the script, next to our Gemini transcription. Untested.
+- **`C2PAService.getManifest(path, validate)`** — reads Content Credentials from a file (embedded,
+  sidecar or cloud). Relevant to the AI-disclosure work in `docs/using-ai.md`: Flow output may carry a
+  manifest. Untested.
+- `Media.getStart()` / `Media.getDuration()` — synchronous; the async `Media.start` / `Media.duration`
+  properties are **deprecated**.
+- UXP `host.applicationPath` (path to Premiere.exe) and `host.getBackgroundColor()`.
+- `Constants.MarkerColor.MAGENTA` added; the misspelt **`MAGNETA` is deprecated** — switch any code using it.
+- Fixed: `ClipProjectItem.createSetInPointAction` / `createSetOutPointAction` no longer throw;
+  `ComponentParam.getValueAtTime()` with no argument now rejects instead of hanging forever;
+  `Markers.getMarkers` filtering works; `importAEComps` without a bin lands in the root bin.
+- Types only: `ClipProjectItem.getComponentChain` returns a component chain, not a string;
+  constructors documented for `TickTime`, `Color`, `PointF`, `Guid`, etc.
+
+🟢 **This explains [`Application.version` returning `null`](#-pproapplicationversion-returns-null).**
+In 26.5 the types change it to `Promise<string>`, so it was always a promise we read synchronously.
+In 27.0 beta **`Application` is gone from the types altogether**. Keep using `host.version`.
+
+### New in the API — 27.0 beta (may change before release)
+
+- 🔑 **`MogrtText` — a MOGRT's text parameter can be read and SET**: `getText()`/`setText()`, font
+  name, font size, all caps, small caps, faux bold/italic, each with an `is…Editable()` check. Passed
+  through the normal `param.createKeyframe(mogrtText)` → `createSetValueAction`. Also `MogrtComment`
+  (read-only). **This is the first time Premiere's API can write an on-screen string** — it would
+  overturn "ffmpeg is the only lane that can write text" (`docs/video-fx/hybrid-method.md`) **once
+  27.0 ships and it works**.
+  - 🔴 **It does not work reliably yet.** A bug report on beta build 57 (2026-09-24): after one
+    `setText` transaction (which returned `true`), the MOGRT vanished from the Program Monitor, the
+    Template panel still showed the old text, and every later `getStartValue()` rejected with the
+    string `"MogrtText is encoded in a format that is not supported by this version of the API."`
+    No Adobe reply. **Do not move text work off ffmpeg on the strength of this.**
+- `TickTime.timeToTimecode(t, frameRate, timeDisplay)` / `timecodeToTime(tc, …)` — timecode strings
+  without our own maths.
+- `Constants.ProjectItemType` (BIN, CLIP, COMPOUND, FILE, ROOT, STYLE) — `item.type` is now typed.
+- 🔴 **Breaking:** `Project.getSequence(guid)` becomes `Promise<Sequence | null>` (it was synchronous).
+  `ComponentParam.getValueAtTime()` now resolves to `{ value }`, not the bare value. `Keyframe.value`
+  and `PointKeyframe.value` are gone from the types. **Check `premiere_get_sequence`,
+  `premiere_set_param` and `premiere_describe_effect` against these before running the bridge on 27.0.**
+
+### UXP platform (all Adobe apps)
+
+- **UXP 9.3** ships in Premiere 26.3: plugin command results are stringified by default; WebView
+  `uxpHost` is main-document only; media `timeUpdate` no longer fires while paused.
+- **UXP 9.4** (the 27.0 beta runs `uxp-9.4.0`): `queueMicrotask`; opt-in capture of uncaught
+  exceptions and unhandled rejections via `featureFlags` (`uncaughtException`, `unhandledRejection`)
+  in `manifest.json` — **would stop a thrown eval from vanishing silently**. Worth adding to the
+  panel manifest when we are on 9.4. Not in a stable Premiere yet as far as Adobe's matrix shows.
+
+**Sources:** [Premiere 26.3 API updates](https://forums.creativeclouddeveloper.com/t/premiere-26-3-api-updates/12009) ·
+[Premiere 26.5 API updates](https://forums.creativeclouddeveloper.com/t/premiere-26-5-api-updates/12159) ·
+[What's new in Premiere 26.5](https://community.adobe.com/announcements-727/what-s-new-in-adobe-premiere-26-5-september-2026-1641187) ·
+[UXP changelog + support matrix](https://blog.developer.adobe.com/en/publish/2026/07/uxp-changelog-and-support-matrix) ·
+[MogrtText write-back bug (27.0 b57)](https://community.adobe.com/bug-reports-733/mogrttext-write-back-causes-getstartvalue-to-reject-previously-readable-text-1643631) ·
+[Color Mode (beta)](https://helpx.adobe.com/premiere/desktop/correct-color/color-mode-fundamentals/color-mode-basics.html) ·
+`npm pack @adobe/premierepro@{26.3.0,26.5.1,27.0.0-beta.57}` diffed by hand.
+
+## 2026-10-19: Karen `v2 narration` (clone, two ripple inserts, 43+43 overwrites)
+
+- ✅ **`premiere_insert_clip` in insert mode ripples EVERY track, not only V1/A1.** Inserting an 8 s clip at 98.04 pushed
+  V1, A1, the muted narration track A3 and the music track A4 by 8 s. The music had a boundary at the same time, so it
+  left a clean 8 s gap there (filled by extending the clip before it with `trim_clip` `outPoint`).
+- ✅ **Overwriting a same-length audio file at the same start replaces the item cleanly**: used to swap 43 placed lines for
+  loudness-levelled copies (4 evals of ≤11, no failures).
+- 🔴 **Importing files whose names already exist in the project makes `resolveProjectItem` by name ambiguous.** Give every
+  re-render a new prefix (`nar_`, `lvl_`, `lvl2_`).
+- 🔴 **`premiere_export_frame` at 3840×2160 timed out with nothing written** (the `.png.png` trap or the size). For checking
+  shots, pull frames from the source files with ffmpeg at the clip's in/out instead.
+- 🔴 **The configured export preset (`badcode.local.json` → Premiere **2026**'s `01 - Match Source - High bitrate.epr`) rendered a
+  3840×2160 sequence as 1920×1080 with **SAR 2:1 at 23.976** in Premiere 25.6** (picture squashed into a pillar). Passing
+  `preset: C:\Program Files\Adobe\Adobe Premiere Pro 2025\MediaIO\systempresets\4E49434B_48323634\High Quality 1080 HD.epr`
+  gave a correct 1920×1080 1:1 24 fps file. Use the preset from the installed version Jack runs; ffprobe the SAR every render.
+- ✅ **Clips imported into this project come in at Scale 100** even though the cut's 1080p clips sit at 200 in the 4K sequence;
+  set Motion param 1 to 200 after placing.
+- ✅ **Markers can be removed from eval:** `ppro.Markers.getMarkers(seq)` → `getMarkers()` → `createRemoveMarkerAction(m)` in a
+  transaction.
+
+## 2026-10-26: closing and opening sequence tabs (GPOM)
+
+- `project.closeSequence(seq)` closes that sequence's timeline tab and returns `true`, even for a sequence
+  whose tab wasn't open. The sequence, its clips and its bin are untouched; it stays in the Project panel.
+- `project.openSequence(seq)` opens a tab, in call order, so close every sequence, then open a list in
+  order, to get tabs in film order. Then `project.setActiveSequence(seq)` to pick the one in front.
+- There's no call that lists which tabs are open, so treat "open" as whatever you last opened.
+- Proven on gpom-story.prproj: 20 closed, 8 reopened in film order, active set back to `gpom-sh-A-rough1`.

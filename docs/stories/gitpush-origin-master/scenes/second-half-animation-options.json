@@ -1,0 +1,2090 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Every shot is built in layers. Veo animates the world with the camera locked; Premiere does every camera move, cut and grade; ffmpeg draws every piece of on-screen text, the HUD, the waveform, timestamps and the beacon pulses that must hit a word.",
+   "why": "Veo's worst failure (inventing new objects as the camera travels) is caused by camera movement, so locking it stops the bug. Premiere's API cannot write text at all. 'Veo' below means Flow's video model: Omni Flash by Jack's standing ruling, Veo 3.1 only where Omni cannot do the job. Never pin an end frame; chain last frame into first frame when a beat needs more than one clip.",
+   "source": "docs/video-fx/hybrid-method.md §1, §2, §4, §5; docs/flow/video-prompting.md §3 (Omni Flash ruling 2026-08-25)"
+  },
+  {
+   "rule": "The HUD changes are hard cuts, never dissolves, and red means kill mode only. Patrol = grey CCTV with the red HUD (#3). The signal = the waveform arrives over the SAME shot and the picture stops sweeping (#4). Then a hard cut with a sound jump: the muffled waveform audio becomes the full-volume row (#6). KILL MODE ENGAGED = a single-frame flip to full red (#8).",
+   "why": "A colour code works through rarity and consistency, so red must appear only when the machines are hunting. The waveform-to-row cut is the joke, and a hard cut makes the viewer join the two images. Sound leading the picture (a J-cut) makes two places feel like one thought. Run ffmpeg photosensitivity on the red flip and the explosions.",
+   "source": "docs/stories/gitpush-origin-master/scenes/second-half-storyboard-plan.md (the HUD rule); docs/cinematography/principles.md principle 16; docs/cinematography/motion-and-cutting.md §3 (hard cut, J-cut); docs/stories/gitpush-origin-master/restructure-2026-10-15.md beat C2; docs/video-fx/hybrid-method.md §5 (photosensitivity)"
+  },
+  {
+   "rule": "The look travels as a grade layer, not as different prompts. Bunker, meeting and street frames get one shared 16mm treatment (moving grain, slight gate weave, green shadows) in ffmpeg or Premiere. It switches off on ONE hard cut: the walk-in at #20. The old lady (#17) keeps her anamorphic look as the one exception. The clean room still gets fine moving grain.",
+   "why": "Kai ruled that the contrast between the bunker and the AI's building is the point, so it should land in one place, on a cut. A locked plate without moving grain reads as a frozen JPEG. Planning colour for the whole piece first is how we stop frames drifting apart.",
+   "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md round 5; docs/stories/gitpush-origin-master/scenes/second-half-storyboard-plan.md look rule; docs/cinematography/principles.md principle 15; memory: hybrid-video-method (moving grain is not optional)"
+  },
+  {
+   "rule": "World motion is dramatic everywhere; camera motion is rationed. Make the things inside the frame move hard (tracks grinding, dust, explosions, beacons). Spend real camera movement on only two places: the kill-mode race (#8 to #10) and the ending zoom-out (#28 to #29). Elsewhere: locked, or one slow eased push that arrives at something.",
+   "why": "Kai asked for dramatic animation, not vague twinkle. The house rule is that a single camera move in a still body of work lands hard only if the stillness around it is real. These two rules fit together once you separate 'does the world move?' from 'does the camera move?'.",
+   "source": "memory: dramatic-video-animation (Kai, 2026-09-13); docs/cinematography/motion-and-cutting.md §1 (house ruling 2026-08-26, the motion economy); docs/story-craft/forms.md §5 (one moving shot per video); docs/cinematography/stills.md §5"
+  },
+  {
+   "rule": "The clean room runs wide to close and passes the visible-cost gate. Order: #20 wide arrival, #22 hall, #23 wafer, #24 overhead pattern, #25 floor level with faces, #26 mud on white, #27 empty chairs. Every monumental frame (#20, #22, #23, #24) either carries a cost in frame (mud, worn jumpers, a small human) or sits next to one. The near-black/monumental register question (R1) is still OPEN; nothing here settles it.",
+   "why": "A fixed shot-size direction reads as moving toward the truth; random jumps read as chaos. Scale and symmetry with no cost in frame read as celebrating the power. Satire of power does not protect you. The overhead is only an establisher: it shows pattern and spends the people, so the floor-level shot must follow it.",
+   "source": "docs/cinematography/motion-and-cutting.md §2 step 3; docs/cinematography/principles.md gate 2, principles 21a, 23, 24, §R1; docs/cinematography/registers.md §1 (the gate)"
+  },
+  {
+   "rule": "Design out what the engine cannot do before spending a credit. No four-or-more walkers (#19, #20), no balance poses (#21's hopping man), no two speakers in one clip (#7), no 'reach a state' moments (a seat slamming down, a beacon switching off), and no camera travel past rows of identical things (houses, chairs, ceiling panels). Count 1 per roll. Kai approves every still before any video credit. Picture is cut first; the narration fits after, so all seconds here are estimates.",
+   "why": "Every clip Jack called 'AI slop' on The Bank Robbery asked for one of these. A camera passing repeated objects makes Veo regenerate them. Two takes on a locked plate come back nearly identical, so a second candidate wastes credits.",
+   "source": "docs/google-flow/README.md (what the video model cannot do); docs/flow/physics-and-motion.md §2b, §7; memory: flow-video-count-one; docs/cinematography/stills.md §6 (still-approval gate)"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Establish the place and the threat in one wide: five years on, the machines own the streets.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked aerial, slow push",
+     "idea": "The machines keep circling the ring in the locked frame. Premiere adds a slow eased push that lands on one machine, the one we meet low down in #2.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Three machines track slowly round the ring; dust lifts behind them."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Hold 1s, then an eased push of about 10% toward one machine."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "16mm-free grade check, moving grain."
+      }
+     ],
+     "veo_prompt": "High aerial, the camera does not move. The three tracked machines keep rolling slowly round the roundabout on patrol, one behind another; grey dust lifts behind their tracks. The abandoned cars and weeds stay still. Muted dusk light. The camera does not move.",
+     "cut": "In: hard cut from the bot scene (the robot trundles off). Out: cut on the machine the push arrives at, into #2.",
+     "seconds": "3-4",
+     "risk": "Small far-off movers can blur together; three movers is under the four-mover limit.",
+     "source": "docs/video-fx/hybrid-method.md §2; docs/cinematography/motion-and-cutting.md §2 step 2 (geography once, early); docs/cinematography/principles.md principle 21a (a high wide is an establisher)"
+    },
+    {
+     "id": "b",
+     "label": "Veo descending arc",
+     "idea": "Let Veo move the camera: a slow descending arc over the junction. Aerials with no glass grid are where Veo may move the camera.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A slow descent with no more than 35-40 degrees of arc."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Trim to the clean seconds; grade."
+      }
+     ],
+     "veo_prompt": "Slow descending aerial arc over the roundabout, turning no more than a quarter turn. The tracked machines keep circling the ring below, dust lifting. Every car and building keeps its exact shape.",
+     "cut": "In: hard cut. Out: cut while the camera is still moving, into the low shot #2.",
+     "seconds": "4",
+     "risk": "Abandoned cars are repeated objects and may change as the camera moves; arcs over about 40 degrees redesign objects.",
+     "source": "memory: dramatic-video-animation (Kai, 2026-09-13); docs/flow/physics-and-motion.md §7 (orbit limit)"
+    },
+    {
+     "id": "c",
+     "label": "Intercut with their eyes",
+     "idea": "Use the still with only grain and a light shake, cut short and alternated with the POV #3, as Kai suggested for the patrol (their eyes and the roundabout, intercut).",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Held plate with Camera Shake at about 10 so it reads as filmed."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Moving grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: alternates with #3 two or three times.",
+     "seconds": "2",
+     "risk": "Without motion the still can read as a photograph if held longer than 2s.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md round 5; docs/video-fx/hybrid-method.md §2 table (no/no row); docs/cinematography/stills.md §4"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "It establishes the geography once, gives the world real motion, and the push hands a specific machine to #2."
+   }
+  },
+  {
+   "n": 2,
+   "job": "Make the machine huge and close: the menace, at our height.",
+   "options": [
+    {
+     "id": "a",
+     "label": "It rolls at the lens",
+     "idea": "Locked low camera in the gutter; the machine keeps rolling toward the lens, tracks grinding, leaves and dust lifting. Premiere adds a rumble shake that grows as it nears.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The machine advances, tracks turning, debris lifting."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Camera Shake keyed to grow as it nears; cut before it fills the frame."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grain."
+      }
+     ],
+     "veo_prompt": "Low in the gutter, the camera does not move. The tracked machine keeps rolling heavily toward camera, its tracks grinding over grit, dead leaves and dust kicked up and swirling around them. Its box sensor turns slowly. Teal shadows, warm haze. The camera does not move.",
+     "cut": "In: from the machine the aerial push found. Out: cut on movement as the sensor turns to camera, into its own view (#3).",
+     "seconds": "3",
+     "risk": "Track links can smear; keep the machine moving at a steady pace, not stopping or turning.",
+     "source": "docs/flow/physics-and-motion.md §3 (force verbs: grind, kick); docs/cinematography/motion-and-cutting.md §3 (cut on movement); docs/cinematography/principles.md gate 2 (the ruined street is the cost)"
+    },
+    {
+     "id": "b",
+     "label": "The sensor finds us",
+     "idea": "Only the sensor moves: the box turns and stops, pointing straight down the lens. A held, still threat, then cut into what it sees.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Only the sensor turns; machine stationary."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "A tiny push of 3-4% as the sensor arrives."
+      }
+     ],
+     "veo_prompt": "Low in the gutter, the camera does not move. The machine is stopped. Only its box-shaped sensor turns slowly on the turret until it points straight at the camera, then holds. Dust settles round the tracks. The camera does not move.",
+     "cut": "In: hard cut. Out: the sensor's stare cuts to its POV (#3), a clean match.",
+     "seconds": "3",
+     "risk": "A turning part can 'reach' a final position badly; it may overshoot or wobble.",
+     "source": "docs/cinematography/stills.md §1 (an unresolved question: it is looking at something); docs/google-flow/README.md (what the video model cannot do) (continue a state)"
+    },
+    {
+     "id": "c",
+     "label": "Rolls over the lens",
+     "idea": "The machine rolls right over the camera; its belly blacks the frame and that black is the cut into its POV.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The machine advances until its body covers the lens."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use the black frames as the cut point into #3."
+      }
+     ],
+     "veo_prompt": "Low in the gutter, the camera does not move. The tracked machine rolls straight over the camera, its dark underside sliding across the whole frame until it is black. Dust and leaves swirl. The camera does not move.",
+     "cut": "In: hard cut. Out: black frame to #3.",
+     "seconds": "3",
+     "risk": "High: 'arriving' over the lens is reaching a state, which the engine does badly; it may stop short or morph.",
+     "source": "docs/google-flow/README.md (what the video model cannot do); docs/cinematography/motion-and-cutting.md §5 (a strong graphic anchor carries a cut)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Most dramatic with the lowest risk; the turning sensor still gives a clean match into the POV."
+   }
+  },
+  {
+   "n": 3,
+   "job": "Put us inside the hunter's eyes and teach the HUD before it changes.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Post push + HUD",
+     "idea": "No credit spent: a slow forward push on the CCTV plate, which is low-res and noisy enough to hide that it is a still, plus the full patrol HUD.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Slow forward push with a slight fisheye; tiny lateral sway like a tracked vehicle."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Red patrol HUD (drawtext + drawbox): ticking range and heading values, scanlines, video noise."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: on the sensor turn from #2. Out: continues straight into #4 (same shot).",
+     "seconds": "3",
+     "risk": "A 2D push has no parallax; the CCTV degradation must be heavy enough to hide it.",
+     "source": "docs/flow/physics-and-motion.md §6c (flat or degraded subject = post); docs/video-fx/hybrid-method.md §5 (text only in ffmpeg); docs/stories/gitpush-origin-master/scenes/second-half-storyboard-plan.md HUD rule"
+    },
+    {
+     "id": "b",
+     "label": "Living street, sensor sweep",
+     "idea": "Veo animates small life in the locked street (a plastic bag blowing, weeds stirring, a loose gutter swinging). Premiere does the sensor's slow side-to-side sweep. HUD on top.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Wind life in the street."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow pan left then right: the sensor scanning."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Patrol HUD with a moving bearing scale that tracks the pan."
+      }
+     ],
+     "veo_prompt": "Grainy security-camera view, the camera does not move. A gust pushes a plastic bag tumbling along the road; weeds and a broken gutter sway in the wind. Nothing else moves. Keep the low-resolution video noise. The camera does not move.",
+     "cut": "In: on the sensor turn. Out: the sweep STOPS on the cut into #4.",
+     "seconds": "3-4",
+     "risk": "Fine particulate over dark detail doesn't animate; ask for big things like the bag and gutter.",
+     "source": "docs/video-fx/hybrid-method.md §2 (yes/yes = the hybrid); docs/flow/physics-and-motion.md §6b (Veo animates what the plate gives it)"
+    },
+    {
+     "id": "c",
+     "label": "Veo creeps forward",
+     "idea": "Let Veo roll the camera forward down the street for real parallax, and cut before the houses start to regenerate.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "Slow forward roll at 70cm height."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "HUD; trim to the first 3s."
+      }
+     ],
+     "veo_prompt": "Security-camera view rolling slowly forward down the empty street at knee height. The abandoned cars and houses keep their exact shape. Keep the low-resolution video noise.",
+     "cut": "In: on the sensor turn. Out: cut at 3s into #4.",
+     "seconds": "3",
+     "risk": "High: terraced houses and parked cars are rows of near-identical objects; expect regeneration after 3-4s.",
+     "source": "docs/flow/physics-and-motion.md §2b; memory: dramatic-video-animation (Kai, 2026-09-13) (let Veo move and cut before it breaks)"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "Real life in the frame plus a sensor sweep that can STOP on the ping: the stop is the signal."
+   }
+  },
+  {
+   "n": 4,
+   "job": "The turn: the machine hears us. Set up the joke with a sound we can't make out.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Same shot, sweep stops",
+     "idea": "Continue #3 without a cut. On the first ping the sweep freezes and the waveform band draws itself across the frame, two voices tagged. Muffled argument underneath.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "The pan stops dead on ping 1."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Waveform band and the two voice tags drawn in time with the pings; ORGANIC SIGNAL DETECTED type-on."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: no cut from #3. Out: hard cut with a sound jump; the muffled audio becomes the full row (#5 or #6).",
+     "seconds": "2-3",
+     "risk": "Little; the risk is holding too long. Kai said brief.",
+     "source": "docs/cinematography/motion-and-cutting.md §2 step 5 (set a pattern, then break it); docs/stories/gitpush-origin-master/scenes/second-half-storyboard-plan.md HUD rule; docs/video-fx/hybrid-method.md §5"
+    },
+    {
+     "id": "b",
+     "label": "Digital enhance",
+     "idea": "On each ping, Premiere steps the scale up hard (100, 115, 130) like a camera zooming on a sound, the noise getting coarser. Waveform on top.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Three hard scale steps on the pings, no easing."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Waveform, tags, coarser pixelation per step."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: cut from #3. Out: hard cut to the row.",
+     "seconds": "2-3",
+     "risk": "Can look like a TV-thriller 'enhance' cliché if the steps are not on the pings.",
+     "source": "docs/cinematography/motion-and-cutting.md §1 (what does the move mean that stillness would not?)"
+    },
+    {
+     "id": "c",
+     "label": "Turn toward the sound",
+     "idea": "The sensor swings quickly toward the source: a fast post pan that settles on the open downs, while the waveform grows. It points where the bunker is.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "One fast eased pan, settling."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Waveform and a bearing marker locking on."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #3. Out: hard cut to the row.",
+     "seconds": "3",
+     "risk": "The plate may not have enough width to pan; needs the still framed wide.",
+     "source": "docs/flow/video-prompting.md §3 (frame the still for the move you will ask for)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Brief and clean; the stop after motion does the work and the waveform is the hero, as ruled."
+   }
+  },
+  {
+   "n": 5,
+   "job": "Establish where the hundred live: lived-in, human, five years hidden.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked tunnel, small life",
+     "idea": "Locked frame; washing on the line stirs in a draught, steam rises from the kettle, one far figure crosses. The muffled argument grows louder down the tunnel.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Washing sways, kettle steam, one distant figure crosses with their back to us."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "16mm grade, gate weave, grain."
+      },
+      {
+       "lane": "Premiere",
+       "does": "The argument's sound rising across the shot."
+      }
+     ],
+     "veo_prompt": "The camera does not move. A draught down the tunnel makes the hanging washing sway gently on its line; steam rises from the kettle on the trestle table; one person in a cardigan walks slowly away down the far end. Keep the 16mm grain and faded colour. The camera does not move.",
+     "cut": "In: hard cut from the waveform. Out: cut on the sound peak into the washroom (#6).",
+     "seconds": "3",
+     "risk": "Blast doors and a long corridor are hinge-able; any camera move will hinge them, so keep it locked.",
+     "source": "docs/flow/video-prompting.md §9 (Veo hinges what is hinge-able); docs/cinematography/motion-and-cutting.md §2 step 2"
+    },
+    {
+     "id": "b",
+     "label": "Sound leads, still holds",
+     "idea": "Post only. The still holds with 16mm gate weave while the argument, still muffled, gets closer; the sound is doing the travel.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Held plate."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "16mm treatment, moving grain, gate weave."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: on the first clear word, cut to #6.",
+     "seconds": "2",
+     "risk": "If held too long it reads as a photo.",
+     "source": "docs/cinematography/motion-and-cutting.md §3 (J-cut); docs/story-craft/forms.md §2 (sound may lead picture)"
+    },
+    {
+     "id": "c",
+     "label": "Save it for #13",
+     "idea": "Cut straight from the waveform to the washroom (#6) so the joke lands harder; use the tunnel later as the shot that the boom echoes down at #13.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Moved to #13."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "Out of this position entirely.",
+     "seconds": "0",
+     "risk": "Viewers may not know they are underground until #13; the washroom tiles and pipe may be enough.",
+     "source": "docs/cinematography/motion-and-cutting.md §4 step 5 (cut shots that repeat a job); docs/stories/gitpush-origin-master/restructure-2026-10-15.md C2 (the juxtaposition is the joke)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "One wide, once, with real life in it; the locked camera avoids the hinge problem with the doors."
+   }
+  },
+  {
+   "n": 6,
+   "job": "Reveal the signal's source: two people, full volume, about a toilet seat.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked wide, the row in gesture",
+     "idea": "The pair keep arguing in big gestures, pointing at the seat; the flickering tube is added in post so its rhythm can be timed to the shouting.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Two people gesturing hard, no lip-sync needed at this size."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Strobe Light on the tube area or ffmpeg geq flicker, timed to the lines."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "16mm grade, grain."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The man and the woman keep arguing by the sinks: she jabs a finger at the raised toilet seat, he throws his hands up and points back at her. Big angry gestures. Everything else stays still. Keep the 16mm grain. The camera does not move.",
+     "cut": "In: hard cut with the sound jump. Out: cut to the close two-shot #7 (wide to close).",
+     "seconds": "3",
+     "risk": "Hands may smear; two movers is safe.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md C2; docs/flow/physics-and-motion.md §3 (force verbs: jab, throw); docs/google-flow/README.md (what the video model cannot do) (small text and timed effects go to post)"
+    },
+    {
+     "id": "b",
+     "label": "Smash cut on a still",
+     "idea": "No motion: the full-volume row lands over the held still with a flicker in post. The sound jump is the whole effect.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Held plate."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Tube flicker via geq, grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut on the sound. Out: cut to #7.",
+     "seconds": "2",
+     "risk": "Next to moving clips a held still may read flat.",
+     "source": "docs/cinematography/motion-and-cutting.md §3 (a hard cut is never neutral); docs/video-fx/hybrid-method.md §2 table"
+    },
+    {
+     "id": "c",
+     "label": "She slams the seat",
+     "idea": "Veo animates the woman slamming the seat down as the punctuation of her line.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One hand action: the seat goes down."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The woman reaches into the cubicle and slams the toilet seat down hard. The man flinches. The camera does not move.",
+     "cut": "In: hard cut. Out: on the slam, cut to #7.",
+     "seconds": "3",
+     "risk": "High: a hand using a prop and reaching a new state is on the cannot-do list.",
+     "source": "docs/google-flow/README.md (what the video model cannot do)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Motion without asking the engine for a prop or a state change; flicker timed exactly in post."
+   }
+  },
+  {
+   "n": 7,
+   "job": "Spend the human-scale frame: the last humans on Earth, at full pettiness, close up.",
+   "options": [
+    {
+     "id": "a",
+     "label": "One speaker per clip",
+     "idea": "Two Veo clips from the new still, each favouring one face while the other is turned away. Cut between them like a real row. Voices from AI Studio.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Clip 1: the woman (cream jumper) talks and gestures, the man listens turned three-quarters away. Clip 2: the reverse."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Cut between the two on the line changes; dialogue laid from AI Studio voices."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The woman in the cream cable-knit jumper argues hard, jabbing a finger, her face angry; the man in the dark green jumper stands turned partly away, arms folded, shaking his head. The camera does not move.",
+     "cut": "In: from the wide #6. Out: the last line cuts to the red flip #8.",
+     "seconds": "6-8 (two clips)",
+     "risk": "These two are not Flow Characters, so mouths will not match our voice lines exactly; keep the listener's face away from camera.",
+     "source": "docs/google-flow/README.md (what the video model cannot do) (two speakers in one clip; a line from a non-Character); docs/cinematography/principles.md R2 (the human-scale exception)"
+    },
+    {
+     "id": "b",
+     "label": "Silent gesture, words laid loose",
+     "idea": "One clip, both gesture with mouths mostly hidden or turned; the dialogue runs loosely over it. The film is narrated, so tight sync is not needed.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Both gesture, no lip-sync asked."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Dialogue as L-cut from #6."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The two keep arguing in silence with big gestures: she points at something off-frame, he spreads his arms in disbelief, both shaking their heads. The camera does not move.",
+     "cut": "In: from #6. Out: to #8.",
+     "seconds": "4",
+     "risk": "Veo may add mouth movement anyway; at close range this can look like bad dubbing.",
+     "source": "docs/story-craft/forms.md §2 (loose word-to-picture); docs/cinematography/motion-and-cutting.md §3 (L-cut)"
+    },
+    {
+     "id": "c",
+     "label": "One clip, two crops",
+     "idea": "Generate one two-shot clip and cut two tighter punch-ins from it in Premiere for rhythm (wide, her, him).",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One two-shot clip."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Two static crops of 140-160%."
+      }
+     ],
+     "veo_prompt": "Same as option b.",
+     "cut": "In: from #6. Out: to #8.",
+     "seconds": "4",
+     "risk": "Crops lose resolution (720p source); keep them under 1.6x.",
+     "source": "docs/cinematography/motion-and-cutting.md §5 (30-degree rule: change size, never nudge); docs/flow/video-prompting.md §3 (resolution)"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "The 15 Oct meeting ruled narration, not lip-sync: keep mouths mostly hidden and lay the row under it loosely. (Changed from A by Claude for that ruling.)"
+   }
+  },
+  {
+   "n": 8,
+   "job": "Jeopardy: the machines commit and the colour flips to say so.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Veo rush, cut early",
+     "idea": "Let Veo drive the camera hard down the street on the red plate; the motion blur and scan lines hide artefacts. Cut before the shopfronts start to regenerate.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "Fast forward rush."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Single-frame flip from CCTV grey to red; KILL MODE ENGAGED; target brackets; photosensitivity pass."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Camera Shake high; trim to 2-3s."
+      }
+     ],
+     "veo_prompt": "Racing fast forward down the ruined high street at knee height, the road rushing at camera, shopfronts streaking past in motion blur, debris flying. Keep the red monochrome image and scan lines.",
+     "cut": "In: hard cut from the row on the last shouted word. Out: cut on the motion to the bot (#9).",
+     "seconds": "2-3",
+     "risk": "Rows of shopfronts regenerate after 3-4s; the red blur hides some of it.",
+     "source": "memory: dramatic-video-animation (Kai, 2026-09-13); docs/stories/gitpush-origin-master/scenes/second-half-storyboard-plan.md HUD rule; docs/flow/physics-and-motion.md §2b"
+    },
+    {
+     "id": "b",
+     "label": "Post rush on the still",
+     "idea": "No credit: a fast eased push plus directional blur on the red still, with heavy shake. The plate already has motion blur, so it reads as speed.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Scale ramp 100 to 140% over 2s, Directional Blur, Camera Shake."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Red flip, HUD, scanlines, photosensitivity."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: to #9.",
+     "seconds": "2",
+     "risk": "Without parallax it can read as a zoom on a picture.",
+     "source": "docs/flow/physics-and-motion.md §6c (the zoom-on-an-image complaint); docs/video-fx/hybrid-method.md §3 (make the move not read as a slideshow)"
+    },
+    {
+     "id": "c",
+     "label": "POV + corner CCTV",
+     "idea": "Intercut the red POV with a grainy high corner camera of them rounding a bend (the unpicked K1-cctv still on the mood board), as the restructure describes.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "K1: three machines race round the corner, debris kicked up."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Alternate red POV and corner CCTV, 1s each."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Both HUDs; timestamp on the CCTV."
+      }
+     ],
+     "veo_prompt": "High corner security camera, the camera does not move. Three tracked machines race round the corner and away, debris and dust kicked up behind them. Keep the video noise and fisheye. The camera does not move.",
+     "cut": "In: hard cut. Out: to #9.",
+     "seconds": "3-4",
+     "risk": "Needs K1 approved as a still first; three fast movers can smear.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md beat D; docs/stories/gitpush-origin-master/scenes/second-half-moodboard.md K1-cctv; docs/cinematography/motion-and-cutting.md §2 (a montage is a scene)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "This is where the sequence spends its camera move; the red, noisy image is the best cover Veo will get."
+   }
+  },
+  {
+   "n": 9,
+   "job": "Tie the two threads: the machines rip past the bot we already love.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Spinning in the dust",
+     "idea": "Locked low; the bot keeps spinning on the spot, beacon flashing, as the machines shrink away into their own dust.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Bot spins, machines recede, dust rolls."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "16mm grade; beacon flash strengthened with geq if Veo's is weak."
+      }
+     ],
+     "veo_prompt": "Low, the camera does not move. The small six-wheeled robot keeps spinning round on the spot in the wash of dust, its amber beacon flashing. Far down the road the three tracked machines keep racing away into their own dust cloud. The camera does not move.",
+     "cut": "In: on motion from #8. Out: the bot's line 'Boss, why are the kill bots going somewhere?' carries into #10.",
+     "seconds": "3",
+     "risk": "A spinning wheeled robot can change its shape mid-turn; ask for a slow spin.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md beat D (racing past the bot ties the threads); docs/video-fx/hybrid-method.md §2"
+    },
+    {
+     "id": "b",
+     "label": "Whip into the bot",
+     "idea": "A whip pan in Premiere out of the red POV lands on the bot as the machines pass; it reads as one rush.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Whip pan with Directional Blur across the cut."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "As option a."
+      }
+     ],
+     "veo_prompt": "As option a.",
+     "cut": "In: whip from #8. Out: to #10.",
+     "seconds": "3",
+     "risk": "A whip can feel showy if used twice; once only.",
+     "source": "docs/cinematography/motion-and-cutting.md §3 (cut on movement)"
+    },
+    {
+     "id": "c",
+     "label": "Still + dust element",
+     "idea": "Hold the still; a dust cloud made in Flow on black is keyed over, and the beacon flash is made in post.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "The plate."
+      },
+      {
+       "lane": "Veo on black",
+       "does": "A rolling dust cloud element."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Luma Key the dust over the plate."
+      }
+     ],
+     "veo_prompt": "A rolling cloud of grey dust blowing across from right to left on a pure black background. The camera does not move.",
+     "cut": "In: from #8. Out: to #10.",
+     "seconds": "2-3",
+     "risk": "Keyed dust can look pasted on; feather the edge.",
+     "source": "docs/video-fx/README.md (the house answer for atmospherics)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "It ties the threads in one shot and puts the bot's worry on screen before he speaks."
+   }
+  },
+  {
+   "n": 10,
+   "job": "Close the distance: they are heading for the mound where the humans are.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Veo tracking aerial",
+     "idea": "Let Veo track alongside the three machines over the downs: open landscape, no grid, the kind of shot Veo handles well.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "Lateral aerial tracking, dust trails."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Grade to dusk; trim."
+      }
+     ],
+     "veo_prompt": "Aerial tracking shot moving alongside three tracked machines racing in a line across the rolling chalk downs, long trails of dust behind them, heading for a grassy mound with a concrete vent. Warm low sun.",
+     "cut": "In: under the bot's line. Out: cut to the bot's call (#11).",
+     "seconds": "4",
+     "risk": "Low: aerials without repeated objects hold well.",
+     "source": "memory: dramatic-video-animation (Kai, 2026-09-13); docs/flow/physics-and-motion.md §6c (parallax needs Veo)"
+    },
+    {
+     "id": "b",
+     "label": "Locked aerial, push to the mound",
+     "idea": "Locked aerial; the machines race across; Premiere pushes slowly to the mound, the destination.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Machines race, dust."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Eased push toward the vent."
+      }
+     ],
+     "veo_prompt": "High aerial, the camera does not move. Three tracked machines keep racing in a line across the downs toward the grassy mound, long trails of dust behind them. The camera does not move.",
+     "cut": "In: from #9. Out: to #11.",
+     "seconds": "4",
+     "risk": "Small far movers may blur.",
+     "source": "docs/video-fx/hybrid-method.md §3 (give the move a destination)"
+    },
+    {
+     "id": "c",
+     "label": "Cut to the vent only",
+     "idea": "Skip the aerial; a held shot of the mound's vent with dust arriving in post. Faster, more ominous.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Needs a vent still (not picked)."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Dust element keyed."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #9. Out: to #11.",
+     "seconds": "2",
+     "risk": "No such still is picked; would need generation.",
+     "source": "docs/cinematography/motion-and-cutting.md §2 step 4 (withhold)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "It is the one landscape where letting Veo move the camera is safe and it keeps the race alive."
+   }
+  },
+  {
+   "n": 11,
+   "job": "The conscience: the bot reports upstairs and the AI refuses to believe it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Held bot, beacon on the AI",
+     "idea": "Hold the new still; ffmpeg pulses the beacon exactly on the AI's words, so the audience learns 'beacon = the AI talking'. Light grain and a small shake.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "The new #11 plate."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "geq beacon glow keyed to the AI's lines; grain."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Camera Shake ~10."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut from the race. Out: 'look, they're racing' cuts back to the race.",
+     "seconds": "8-10 (dialogue)",
+     "risk": "A long still hold; it needs the dialogue to be good.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md round 2 (beacon pulses when the AI talks); docs/video-fx/hybrid-method.md §1 (Veo never hits a timing mark)"
+    },
+    {
+     "id": "b",
+     "label": "Veo bot body + post beacon",
+     "idea": "Veo animates the bot rocking and turning toward the dust trail; the beacon is done in post so it can sync.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Bot turns a little on its wheels, antenna stalk wobbles."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon pulse in sync."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small robot turns slowly on its wheels toward the road, its beacon stalk wobbling, then stops and stays facing the dust in the distance. The camera does not move.",
+     "cut": "In: from #10. Out: to #10 or #12.",
+     "seconds": "6-8",
+     "risk": "Veo's own beacon flashing will fight the post pulse; ask for the beacon steady.",
+     "source": "docs/video-fx/hybrid-method.md §1"
+    },
+    {
+     "id": "c",
+     "label": "Cross-cut with the race",
+     "idea": "Play the call as a cross-cut: bot, race, bot, race. The dialogue runs across the cuts, and 'look, they're racing' lands on the aerial.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "The bot plate (option a's treatment)."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Alternate with spare seconds of #8 and #10."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon pulse."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #10. Out: on 'they're racing' to the self-destruct.",
+     "seconds": "8-10",
+     "risk": "Reusing race shots can feel repetitive if the same seconds return.",
+     "source": "docs/cinematography/motion-and-cutting.md §3 (L-cut); docs/stories/gitpush-origin-master/restructure-2026-10-15.md restructure (condense, every beat fast)"
+    }
+   ],
+   "recommended": {
+    "id": "c",
+    "why": "Keeps the jeopardy running under an audio-led beat instead of stopping the film for a talking robot."
+   }
+  },
+  {
+   "n": 12,
+   "job": "The act: the AI destroys its own machines at the doors to save us. The undeniable consequence.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Plate + keyed blasts",
+     "idea": "Veo animates the machines stopped at the blast doors, sensors twitching. Three explosion elements made in Flow on black are keyed over in Premiere, timed exactly, with shake on each.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Machines idling at the doors, sensors turning, exhaust shimmer."
+      },
+      {
+       "lane": "Veo on black",
+       "does": "One explosion element, used three times at different scales."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Luma Key the blasts; Camera Shake per blast."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "photosensitivity pass."
+      }
+     ],
+     "veo_prompt": "On a pure black background, a single bright orange and white explosion bursts outward with flying metal fragments and rolling dark smoke. The camera does not move.",
+     "cut": "In: on the AI's command (from #11). Out: the last boom cuts to silence and the row (#13).",
+     "seconds": "4",
+     "risk": "Keyed fire can look pasted if the plate has no matching light; add a white flash frame on each.",
+     "source": "docs/video-fx/README.md (atmospherics: Flow on black, keyed); docs/flow/physics-and-motion.md §7 (one impact, not a rhythm); docs/video-fx/hybrid-method.md §5"
+    },
+    {
+     "id": "b",
+     "label": "Veo blows them up",
+     "idea": "Veo does the explosion inside the plate: one machine bursts apart. Chain or cut to a second take for the others.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One machine explodes."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Cut between takes; shake."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The nearest tracked machine bursts apart in a bright orange and white explosion, metal panels flying, thick smoke rolling across the blast doors. The camera does not move.",
+     "cut": "In: from #11. Out: to #13.",
+     "seconds": "3 per take",
+     "risk": "Medium-high: may be policy blocked (looks like a timeout); the blast doors may deform; repeated blasts lose quality after the first.",
+     "source": "docs/flow/physics-and-motion.md §7; docs/flow/video-prompting.md §9"
+    },
+    {
+     "id": "c",
+     "label": "Heard, not seen",
+     "idea": "Stay inside: the blast doors from the bunker side, dust shaking from the ceiling and lamps swinging. We only SEE the explosion later, on the CCTV (#18).",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Lamps swing, door judders."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Shake on the thuds; dust element keyed."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The ceiling lamps in the bunker tunnel swing on their cables after a heavy blast; the steel door shudders in its frame. The camera does not move.",
+     "cut": "In: from #11. Out: to #13.",
+     "seconds": "3",
+     "risk": "Withholds the consequence; viewers may not be sure what happened until #18.",
+     "source": "docs/cinematography/motion-and-cutting.md §2 step 4 (a reveal is a withheld shot); docs/flow/video-prompting.md §9 (doors may hinge)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "We need to see the act; keying gives exact timing and keeps the blast doors rigid. The same footage becomes the CCTV at #18."
+   }
+  },
+  {
+   "n": 13,
+   "job": "The button: they didn't notice. Still arguing.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Back to #7, other speaker",
+     "idea": "Hard cut from the last boom to a fresh section of #7's footage; the row carries on mid-sentence.",
+     "lanes": [
+      {
+       "lane": "cut-only",
+       "does": "Reuse unused seconds of #7."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Hard cut, silence, then the row."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: last explosion to a beat of silence, then the row. Out: cut to the climb out (#19).",
+     "seconds": "2-3",
+     "risk": "If it is the same seconds as #7, viewers will notice the repeat.",
+     "source": "docs/cinematography/motion-and-cutting.md §2 step 6 (end on a button); docs/stories/gitpush-origin-master/restructure-2026-10-15.md beat E"
+    },
+    {
+     "id": "b",
+     "label": "Dust falls, nobody looks up",
+     "idea": "A trickle of dust falls from the ceiling onto them; neither looks up. The blast reached them and they ignored it.",
+     "lanes": [
+      {
+       "lane": "cut-only",
+       "does": "Reuse #7 footage."
+      },
+      {
+       "lane": "Veo on black",
+       "does": "A falling dust trickle element."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Key it over the top of frame; a tiny shake."
+      }
+     ],
+     "veo_prompt": "A thin stream of grey dust trickling straight down on a pure black background. The camera does not move.",
+     "cut": "In: on the last boom. Out: to #19.",
+     "seconds": "3",
+     "risk": "Fine dust over a dark plate does not animate in Veo, which is why it is keyed.",
+     "source": "docs/flow/physics-and-motion.md §6b; docs/video-fx/README.md (atmospherics); docs/video-fx/hybrid-method.md §3 (two rates of change)"
+    },
+    {
+     "id": "c",
+     "label": "Tunnel wide (from #5)",
+     "idea": "Use the tunnel wide, with the row echoing down it; small and absurd after the explosion.",
+     "lanes": [
+      {
+       "lane": "cut-only",
+       "does": "The #5 plate or clip."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Row audio echoed."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: on the boom. Out: to #19.",
+     "seconds": "2",
+     "risk": "Needs #5 cut from its first place (option 5c).",
+     "source": "docs/cinematography/motion-and-cutting.md §4 step 5"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "It pays off the explosion inside the bunker without a new still and makes 'oblivious' visible."
+   }
+  },
+  {
+   "n": 14,
+   "job": "Daylight after five years: the humans come out to meet the machine.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Eyes adjusting",
+     "idea": "Hard cut from the dark washroom to a frame blown out to white, which settles to normal exposure over two seconds, like eyes adjusting. Wind in the grass and blankets.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Lumetri exposure keyframed from +3 stops to 0, eased."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "Wind on grass, coats and blankets; people mostly still; one shades her eyes."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "16mm grade, grain."
+      }
+     ],
+     "veo_prompt": "The camera does not move. A cold wind moves through the grass and tugs at the blankets and coats wrapped round the people at the bunker door; one woman lifts a hand to shade her eyes from the light. The people stand still. The camera does not move.",
+     "cut": "In: hard cut from #13. Out: cut to the bot (#16).",
+     "seconds": "3",
+     "risk": "Many people in frame: keep them still; four or more walkers is on the cannot-do list.",
+     "source": "docs/google-flow/README.md (what the video model cannot do) (people stand, one thing moves); docs/video-fx/hybrid-method.md §3 (two rates of change)"
+    },
+    {
+     "id": "b",
+     "label": "Push to the bot",
+     "idea": "Post only: hold, then a slow push toward the small bot waiting on the track. The destination is the bot.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "M1 plate."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Eased push, about 15%."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #13. Out: to #16.",
+     "seconds": "3",
+     "risk": "A 2D push on a wide can read as a zoom on a photo.",
+     "source": "docs/video-fx/hybrid-method.md §3 (destination); docs/cinematography/stills.md §5 (only push if there is something to arrive at)"
+    },
+    {
+     "id": "c",
+     "label": "Veo walking out",
+     "idea": "Let Veo animate the people climbing out.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Survivors climb the steps."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The survivors keep climbing slowly out of the bunker entrance onto the grass. The camera does not move.",
+     "cut": "In: from #13. Out: to #16.",
+     "seconds": "3",
+     "risk": "High: many walkers; faces and limbs will smear.",
+     "source": "docs/google-flow/README.md (what the video model cannot do)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The exposure change is real motion with no engine risk, and it says 'five years underground' without a word."
+   }
+  },
+  {
+   "n": 15,
+   "job": "The meeting framed: a hundred people back away from a robot the size of a dog.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Held wide, beacon speaks",
+     "idea": "The AI's apology runs here; the beacon pulses in post on its words, and Premiere pushes slowly over the crowd's shoulders toward the bot.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "M2 plate."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Very slow push over the speech."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon pulse synced; 16mm grade."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #19. Out: on the AI's last line, cut to the old lady (#17).",
+     "seconds": "8-12 (speech)",
+     "risk": "A long still under a speech; may need a cutaway.",
+     "source": "docs/cinematography/motion-and-cutting.md §1 (push-in = growing attention); docs/stories/gitpush-origin-master/restructure-2026-10-15.md beat F"
+    },
+    {
+     "id": "b",
+     "label": "Veo: one person moves",
+     "idea": "The crowd stays still; the old lady at the front shifts her weight and refolds her arms; the bot rolls a few centimetres forward.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One person, one robot move."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon sync."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The crowd stands still and silent. The old woman nearest the robot refolds her arms; the small robot rolls a few centimetres forward and stops. The camera does not move.",
+     "cut": "In: from #19. Out: to #17.",
+     "seconds": "4 + hold",
+     "risk": "The crowd may still drift or smear.",
+     "source": "docs/google-flow/README.md (what the video model cannot do)"
+    },
+    {
+     "id": "c",
+     "label": "Three-shot pattern",
+     "idea": "Cut the speech across crowd wide, old lady close and bot low, building a pattern before her line breaks it.",
+     "lanes": [
+      {
+       "lane": "cut-only",
+       "does": "M2, M3, and the bot plate from #11."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Cut on the AI's sentences."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #19. Out: on her line.",
+     "seconds": "10-12",
+     "risk": "The bot plate from #11 is outdoors; needs a bunker version or a crop.",
+     "source": "docs/cinematography/motion-and-cutting.md §2 step 5"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The speech is the event; exact beacon sync makes the AI present without a body."
+   }
+  },
+  {
+   "n": 16,
+   "job": "Puncture the AI: one unimpressed woman speaks for the species.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Reaction close, line before",
+     "idea": "Her line plays over the end of #16; cut to her close-up for the silence after it. Veo gives a blink and a slight tilt of the head.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Blink, small head tilt, eyes down at the bot."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Line as an L-cut from #16."
+      }
+     ],
+     "veo_prompt": "Close portrait, the camera does not move. The old woman keeps looking down at something small at knee height, unimpressed; she blinks slowly and tilts her head a little. The camera does not move.",
+     "cut": "In: on the end of her line. Out: the AI's reply ('I've invented a time machine') runs over her face.",
+     "seconds": "3-4",
+     "risk": "Low; one face, small movement.",
+     "source": "docs/google-flow/README.md (what the video model cannot do) (a line from a non-Character); docs/cinematography/stills.md §2 (voice and image should not agree on timing)"
+    },
+    {
+     "id": "b",
+     "label": "Slow push on stillness",
+     "idea": "Post only: a slow push into her face during the AI's time-machine line. Her stillness is the reaction.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Eased push 100 to 112%."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Keep the anamorphic grade; grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #16. Out: to the revolt (#18).",
+     "seconds": "4",
+     "risk": "A still face held long can read as frozen without some grain and breath.",
+     "source": "docs/cinematography/motion-and-cutting.md §1 (push-in toward a realisation)"
+    },
+    {
+     "id": "c",
+     "label": "She says it on screen",
+     "idea": "Veo animates her speaking the line itself.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Speech."
+      }
+     ],
+     "veo_prompt": "Close portrait, the camera does not move. The old woman says, flatly, in a West Country accent: \"Well, what do you expect us to say or do about that?\" The camera does not move.",
+     "cut": "In: from #16. Out: to #18.",
+     "seconds": "4",
+     "risk": "High: not a Flow Character; accent and mouth are unreliable.",
+     "source": "docs/google-flow/README.md (what the video model cannot do); docs/google-flow/2026-10-09-dialogue-and-morph-sweep.md"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The face does the reaction while the voice lands sideways; no lip-sync risk."
+   }
+  },
+  {
+   "n": 17,
+   "job": "Revolt then trust: 'Fuck that' and the AI's answer, CCTV of it blowing up its own machines.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Replay #12 as CCTV",
+     "idea": "No new picture. The revolt line plays over a reused crowd shot; then the AI shows the self-destruct footage from #12, degraded into security-camera playback with a timestamp and REC tag. We recognise it because we saw it.",
+     "lanes": [
+      {
+       "lane": "cut-only",
+       "does": "Crowd from #16 for the revolt line."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "#12 run through grey CCTV treatment: desaturate, lenscorrection fisheye, noise, scanlines, 12fps; drawtext timestamp + PLAYBACK."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Cut between the CCTV and #17's face."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #17. Out: on the last blast in the playback, hard cut to the building (#20).",
+     "seconds": "6-8",
+     "risk": "If #12 used option c (heard, not seen), there is nothing to replay.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md beat H (trust earned by an act they can check); docs/cinematography/symptoms.md E (bookend by repeating a frame); docs/video-fx/hybrid-method.md §5"
+    },
+    {
+     "id": "b",
+     "label": "Use the mood-board CCTV",
+     "idea": "Use the unpicked X2-cctv-whiteout and X3-aftermath stills from the mood board as the evidence, with a post push.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "X2 then X3 (need Kai's pick)."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Timestamp and PLAYBACK tag."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #17. Out: to #20.",
+     "seconds": "5",
+     "risk": "The X stills show a high street and a drain, not the bunker doors, so they contradict #12.",
+     "source": "docs/stories/gitpush-origin-master/scenes/second-half-moodboard.md X2, X3; docs/cinematography/motion-and-cutting.md §4 step 7 (name the gaps last)"
+    },
+    {
+     "id": "c",
+     "label": "Projected on the wall",
+     "idea": "One new still: the crowd's faces lit by the CCTV projected on the whitewashed wall. The footage itself is corner-pinned onto the wall in Premiere.",
+     "lanes": [
+      {
+       "lane": "new still",
+       "does": "Crowd lit by a flickering projection (owed)."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Corner Pin the #12 CCTV onto the wall; flicker on faces."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "CCTV treatment."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #17. Out: to #20.",
+     "seconds": "6",
+     "risk": "Needs a still and Kai's approval; corner pin is by hand (no tracking).",
+     "source": "docs/cinematography/frame.md §4 (frame within a frame: observed); docs/premiere/effects-catalogue.md (Corner Pin)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Zero generation, and the trust is earned by a replay of an act the audience saw happen, so it feels checkable."
+   }
+  },
+  {
+   "n": 18,
+   "job": "The crossing threshold: the 16mm world walks into the AI's clean one. The contrast is the point.",
+   "options": [
+    {
+     "id": "a",
+     "label": "One mover: the bot leads",
+     "idea": "Hard cut out of 16mm into crisp clean light. The crowd stays still; the bot rolls forward and the amber haze drifts. Premiere adds a slow push.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The bot rolls forward; haze drifts in the amber light."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push over 4s."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grade switches from 16mm to clean on this cut."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small robot keeps rolling slowly forward into the white hall; amber haze drifts in the light. The crowd of people stands still, looking up. The camera does not move.",
+     "cut": "In: hard cut from the CCTV playback. Out: cut to the bunny suits (#21).",
+     "seconds": "4",
+     "risk": "Crowds drift even when told to stand; watch faces at 4 frames per second.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md round 5; docs/google-flow/README.md (what the video model cannot do); docs/cinematography/principles.md gate 2 (muddy colourful people are the cost in frame)"
+    },
+    {
+     "id": "b",
+     "label": "Parallax in post",
+     "idea": "Split the plate into crowd foreground and hall background and move them at different rates: real depth without Veo.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Two-layer parallax push."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: to #21.",
+     "seconds": "4",
+     "risk": "Needs a hand-cut matte of the crowd; no After Effects.",
+     "source": "docs/video-fx/hybrid-method.md §3 (parallax, not zoom)"
+    },
+    {
+     "id": "c",
+     "label": "Veo walk-in",
+     "idea": "Let Veo walk the hundred in.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The group walks forward."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The group of people keeps walking slowly forward into the hall. The camera does not move.",
+     "cut": "In: hard cut. Out: to #21.",
+     "seconds": "3",
+     "risk": "High: many walkers.",
+     "source": "docs/google-flow/README.md (what the video model cannot do)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Honest to the engine, and the hard cut from 16mm is where the whole look change lands."
+   }
+  },
+  {
+   "n": 19,
+   "job": "Uncanny hospitality and comedy: ordinary people dressing up for something they don't understand.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Held, cut short",
+     "idea": "The still already has its decisive moment (the hopping man). Hold it 2s with grain and a light shake.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "L5 plate."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Camera Shake ~10."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #20. Out: to the white hall (#22).",
+     "seconds": "2",
+     "risk": "Low.",
+     "source": "docs/cinematography/stills.md §1 (the decisive moment); docs/video-fx/hybrid-method.md §2 table"
+    },
+    {
+     "id": "b",
+     "label": "One zip",
+     "idea": "Veo animates just the old woman at the front pulling the zip of her suit the rest of the way up. Everyone else holds.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One hand, one zip, continuing a pull already started."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The old woman at the front keeps pulling the zip of her white suit up to her chin. Everyone else stands still. The camera does not move.",
+     "cut": "In: from #20. Out: to #22.",
+     "seconds": "3",
+     "risk": "Hand articulation is unreliable; a hopping man in the plate will glitch if he moves.",
+     "source": "docs/google-flow/README.md (what the video model cannot do) (balance poses; props); docs/flow/physics-and-motion.md §7 (hands)"
+    },
+    {
+     "id": "c",
+     "label": "Drop it",
+     "idea": "Cut it: #20 to #22 makes the point, and the condense rule applies.",
+     "lanes": [
+      {
+       "lane": "cut-only",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "Removed.",
+     "seconds": "0",
+     "risk": "Loses the last comic beat before the sacrifice.",
+     "source": "docs/cinematography/motion-and-cutting.md §4 step 5; docs/stories/gitpush-origin-master/restructure-2026-10-15.md (condense)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The still is already funny and moving; animating a hop or a costume change is exactly what fails."
+   }
+  },
+  {
+   "n": 20,
+   "job": "Awe: the AI's world, beyond us. Monumental, so it must carry a cost.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Small human crosses",
+     "idea": "Locked. One small figure in a white suit (or the bot) crosses the bottom of the frame, back to camera, while the light panels pulse. Scale and cost in one.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One small figure walks across the bottom, back to camera; ceiling panels brighten and dim slowly."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Fine grain."
+      }
+     ],
+     "veo_prompt": "The camera does not move. A single small person in a white suit walks slowly across the bottom of the frame, back to the camera. The glowing ceiling panels slowly brighten and dim. Everything else is still. The camera does not move.",
+     "cut": "In: from #21. Out: to the wafer (#23).",
+     "seconds": "4",
+     "risk": "A small far figure can smear; keep it turned away. The panel grid is safe only because the camera is locked.",
+     "source": "docs/cinematography/registers.md §1 (a static hold while a small human crosses the bottom); docs/cinematography/principles.md principle 26; docs/flow/physics-and-motion.md §2b"
+    },
+    {
+     "id": "b",
+     "label": "Long hold",
+     "idea": "Post only: hold 5s, almost still, with a slow breath of a push. Awe needs time to fail to make sense of it.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Push of 5% over 5s."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Fine grain, a slow light sweep with geq across the floor."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #21. Out: to #23.",
+     "seconds": "5",
+     "risk": "Fails the cost gate on its own; must sit next to #26 or #21.",
+     "source": "docs/cinematography/registers.md §2 (what kills awe: fast cutting); docs/cinematography/principles.md gate 2"
+    },
+    {
+     "id": "c",
+     "label": "Veo glide up",
+     "idea": "Veo glides the camera up the monolith.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "Tilt and rise."
+      }
+     ],
+     "veo_prompt": "Slow rising crane up the tall steel and glass instrument in the centre of the white hall. Every panel stays rigid.",
+     "cut": "In: from #21. Out: to #23.",
+     "seconds": "4",
+     "risk": "High: glass and panel grids regenerate; and a worshipful glide reads as celebration.",
+     "source": "docs/cinematography/registers.md §1 (camera behaviour test); memory: dramatic-video-animation (Kai, 2026-09-13) (glass regenerates)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "It passes the cost gate and manufactures scale in the same move."
+   }
+  },
+  {
+   "n": 21,
+   "job": "The machine beyond understanding: the wafer as a portal, one human before it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Pull back from the colours",
+     "idea": "Start tight on the iridescent grid filling the screen, then pull back slowly to reveal the tiny figure. Scale is withheld, then given.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Eased pull-back from 250% to 100% on the still."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Slow hue drift on the wafer area with geq; grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #22. Out: on the figure, cut to the overhead (#24).",
+     "seconds": "5",
+     "risk": "Starting at 250% needs a high-resolution plate; upscale first or start at 180%.",
+     "source": "docs/cinematography/motion-and-cutting.md §2 step 4 (withhold); docs/cinematography/registers.md §2 (awe: showing the whole object at once kills it); docs/flow/video-prompting.md §9 (post resolution ceiling)"
+    },
+    {
+     "id": "b",
+     "label": "Veo colours move",
+     "idea": "Locked; Veo makes the interference colours slide across the wafer as the figure shifts weight.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Colours flow across the surface; figure shifts."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow push."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Bands of rainbow interference colour keep sliding slowly across the face of the giant wafer; the small person in front of it shifts their weight. The reflection follows. The camera does not move.",
+     "cut": "In: from #22. Out: to #24.",
+     "seconds": "4",
+     "risk": "Reflections and fine grids may shimmer or morph.",
+     "source": "docs/video-fx/hybrid-method.md §2"
+    },
+    {
+     "id": "c",
+     "label": "Hold, reflection breathes",
+     "idea": "Hold the still; a slow light change in post makes the reflection brighten as if the wafer noticed.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "geq brightness swell on the wafer area."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #22. Out: to #24.",
+     "seconds": "3",
+     "risk": "Subtle; may read as nothing.",
+     "source": "docs/cinematography/stills.md §1 (even a held still wants one thing to change)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "A reveal built by withholding, with no artefacts possible because it is one image."
+   }
+  },
+  {
+   "n": 22,
+   "job": "Make the mechanism legible: a hundred chairs are the dies on the wafer. That is how they connect.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Lights come on in sequence",
+     "idea": "Post only. The pools of light switch on chair by chair, spiralling in to the hub, drawn exactly in ffmpeg. Overhead is flat, so 2D is honest.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "geq or masked overlays light each pool in a timed spiral."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Slow rotation of 3-5 degrees, like a wafer on a spinner."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #23. Out: when the hub lights, cut to floor level (#25).",
+     "seconds": "4",
+     "risk": "Masks for 100 pools take setup; can be done with a grid formula if the layout is regular.",
+     "source": "docs/flow/physics-and-motion.md §6c (flat subject = post); docs/cinematography/principles.md principle 21a (overhead is an establisher)"
+    },
+    {
+     "id": "b",
+     "label": "Veo lights row by row",
+     "idea": "Veo switches the pools on one ring at a time; it has done row-by-row screen changes before.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Lights come on ring by ring."
+      }
+     ],
+     "veo_prompt": "Straight down, the camera does not move. The small lights above each chair switch on one ring at a time, starting at the outside and finishing at the centre. The chairs do not move. The camera does not move.",
+     "cut": "In: from #23. Out: to #25.",
+     "seconds": "4",
+     "risk": "A hundred identical chairs: may regenerate or shift even locked.",
+     "source": "docs/flow/video-prompting.md §3 (row-by-row state change worked on the trading floor)"
+    },
+    {
+     "id": "c",
+     "label": "Held establisher",
+     "idea": "Hold 2s with a slow rotation; let the next shot do the work.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Rotation."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #23. Out: to #25.",
+     "seconds": "2",
+     "risk": "Pretty but spends the people; must be short.",
+     "source": "docs/cinematography/symptoms.md A (it looks amazing but it isn't about anything)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Exact, no artefacts, and the spiral to the hub explains 'how they connect' without a word."
+   }
+  },
+  {
+   "n": 23,
+   "job": "From pattern back to people: the hundred, side by side, about to go.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The lavatory pair hold hands",
+     "idea": "Locked at floor level along the rows. In the near seats, the couple from the row (#7) reach over and hold hands. Nobody else moves. The row resolves.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "One near couple, one hand reaching."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Hold after the hands meet."
+      }
+     ],
+     "veo_prompt": "The camera does not move. In the nearest pair of reclining chairs, the woman in the cream jumper reaches across and takes the hand of the man in the dark green jumper. Everyone else in the rows lies still. The camera does not move.",
+     "cut": "In: from the overhead. Out: cut to the mud on white (#26).",
+     "seconds": "4",
+     "risk": "Hands meeting is a 'reach a state' action; start the still with hands already close.",
+     "source": "docs/cinematography/principles.md R2 (human-scale exception); docs/cinematography/symptoms.md E (a motif needs to return); docs/google-flow/README.md (what the video model cannot do)"
+    },
+    {
+     "id": "b",
+     "label": "Post lateral move",
+     "idea": "A slow sideways move along the rows in post with two depth layers. Rows of chairs would regenerate in Veo, so this stays in post.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Two-layer lateral parallax."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #24. Out: to #26.",
+     "seconds": "4",
+     "risk": "Needs a hand-cut matte.",
+     "source": "docs/flow/physics-and-motion.md §2b (repeated objects)"
+    },
+    {
+     "id": "c",
+     "label": "Eyes close down the row",
+     "idea": "Locked; the people nearest close their eyes one after another as the light dims toward camera.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Two or three near faces close eyes."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Light dims down the row with geq."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The two people nearest the camera close their eyes, one after the other, and settle back. The camera does not move.",
+     "cut": "In: from #24. Out: to #26.",
+     "seconds": "4",
+     "risk": "Faces may shift; keep it to the nearest two.",
+     "source": "docs/google-flow/README.md (what the video model cannot do)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Pays off the row with one gesture and turns the machine shot back into a human one."
+   }
+  },
+  {
+   "n": 24,
+   "job": "The visible cost: human mess on perfect white. What they leave behind.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Steam from the tea",
+     "idea": "Locked; only the steam from the mug moves. Two rates of change: a slow post push and the steam.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Steam curls from the mug."
+      },
+      {
+       "lane": "Premiere camera",
+       "does": "Very slow push to the mug."
+      }
+     ],
+     "veo_prompt": "The camera does not move. A thin curl of steam keeps rising from the mug of tea on the white floor. Nothing else moves. The camera does not move.",
+     "cut": "In: from #25. Out: to the empty chairs (#27).",
+     "seconds": "3",
+     "risk": "Steam on a white background has low contrast and may not show.",
+     "source": "docs/video-fx/hybrid-method.md §3 (two rates of change); docs/cinematography/principles.md principle 23"
+    },
+    {
+     "id": "b",
+     "label": "Hold",
+     "idea": "Post only, held 2-3s with grain.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "L17 plate."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grain."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #25. Out: to #27.",
+     "seconds": "2",
+     "risk": "Low.",
+     "source": "docs/video-fx/hybrid-method.md §2 table"
+    },
+    {
+     "id": "c",
+     "label": "Move it after #27",
+     "idea": "Put the mess after the empty chairs, as the last image in the clean room.",
+     "lanes": [
+      {
+       "lane": "cut-only",
+       "does": "Reorder."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #27. Out: to the bus (#28).",
+     "seconds": "3",
+     "risk": "The steam would then mean 'they've only just gone'; a sharper meaning.",
+     "source": "docs/cinematography/motion-and-cutting.md §4 step 4 (the real ending may be in the middle)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "The steam is the life still in the room; it makes the cost feel recent."
+   }
+  },
+  {
+   "n": 25,
+   "job": "After: absence. The bot alone where a hundred people were.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Held silence, beacon slows",
+     "idea": "Post only. Hold 5-6s in true silence; ffmpeg slows the beacon's pulse and lets it fade.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "New #27 plate."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon pulse slowing, then out (geq); grain."
+      },
+      {
+       "lane": "Premiere",
+       "does": "True silence on the audio."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #26. Out: hard cut to the bus (#28), sound of traffic first.",
+     "seconds": "5-6",
+     "risk": "Long still: works only if the silence is earned.",
+     "source": "docs/story-craft/forms.md §2 (true silence is rationed); docs/video-fx/hybrid-method.md §1 (exact timing in ffmpeg)"
+    },
+    {
+     "id": "b",
+     "label": "Bot turns, looking",
+     "idea": "Veo has the bot turn slowly on the spot, as if looking for them. Beacon in post.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Bot turns a quarter turn and stops."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small robot turns slowly on the spot among the empty chairs, then stops. Nothing else moves. The camera does not move.",
+     "cut": "In: from #26. Out: to #28.",
+     "seconds": "4",
+     "risk": "Empty chairs around a moving bot may shift.",
+     "source": "docs/google-flow/README.md (what the video model cannot do)"
+    },
+    {
+     "id": "c",
+     "label": "Rhyme with the first bot shot",
+     "idea": "Frame and time it to rhyme with the bot's first appearance in the simulation scene (low, close, beacon the one warm point), so its loneliness echoes its introduction.",
+     "lanes": [
+      {
+       "lane": "cut-only still",
+       "does": "Needs the new plate to match that framing."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: from #26. Out: to #28.",
+     "seconds": "4",
+     "risk": "Depends on how the new still comes back.",
+     "source": "docs/cinematography/symptoms.md E (bookend); docs/stories/gitpush-origin-master/scenes/simulation.md (S3)"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "Stillness and silence are the right weight after the crossing; the slowing beacon is the only event."
+   }
+  },
+  {
+   "n": 26,
+   "job": "Back to the ordinary present: someone is watching this very film.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Pull out of the screen",
+     "idea": "Start full-frame on #27's footage, then pull back until it sits inside the phone on the bus: the zoom-out from the screen, as ruled.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Scale the film frame down onto the phone with Corner Pin, eased; the bus plate scales from tight to full."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "Rain on the window and streetlights sliding past on the bus plate."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Raindrops run down the bus window and the orange streetlights outside keep sliding past. The woman holds her phone still. The camera does not move.",
+     "cut": "In: directly from #27 (no cut: it is the same image). Out: to the bus driving away (#29).",
+     "seconds": "5",
+     "risk": "The phone must stay still in the Veo clip so the corner pin holds; no tracking tools.",
+     "source": "docs/stories/gitpush-origin-master/restructure-2026-10-15.md beat J; docs/video-fx/hybrid-method.md §4 (chained or reversed pull-out); docs/premiere/effects-catalogue.md (Corner Pin)"
+    },
+    {
+     "id": "b",
+     "label": "Push into the phone",
+     "idea": "Reverse direction: push into the phone until the screen fills the frame, then cut. Ends on the film, an infinite loop.",
+     "lanes": [
+      {
+       "lane": "Premiere camera",
+       "does": "Eased push into the phone."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "Rain and lights."
+      }
+     ],
+     "veo_prompt": "Same as option a.",
+     "cut": "In: hard cut from #27. Out: the screen fills the frame.",
+     "seconds": "4",
+     "risk": "Pushes in when the story is pulling out; better as an opening than an ending.",
+     "source": "docs/cinematography/motion-and-cutting.md §1 (what the move means)"
+    },
+    {
+     "id": "c",
+     "label": "Just the over-shoulder",
+     "idea": "Hold the bus plate with rain and streetlights; the phone shows our bot, composited in.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Rain, lights."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Corner Pin our footage on the phone."
+      }
+     ],
+     "veo_prompt": "Same as option a.",
+     "cut": "In: hard cut. Out: to #29.",
+     "seconds": "4",
+     "risk": "Low.",
+     "source": "docs/video-fx/hybrid-method.md §2"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "It is the ruled ending (zoom out of a screen over someone's shoulder) and the cut-free join makes the regress felt."
+   }
+  },
+  {
+   "n": 27,
+   "job": "The button: the ordinary world goes on. 'Don't make me come back twice.'",
+   "options": [
+    {
+     "id": "a",
+     "label": "Locked wide, bus recedes",
+     "idea": "Locked down an ordinary high street at night; the bus keeps pulling away and shrinks; hold on the empty street after it has gone.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The bus drives away down the street; rain, reflections."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Hold 2s on the empty street; the AI's last line over."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grade, grain, delivery QC."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The double-decker bus keeps driving away down the wet high street, getting smaller; its tail lights reflect in the road. Rain falls in the streetlight. The camera does not move.",
+     "cut": "In: from #28. Out: end, or to black.",
+     "seconds": "5-6",
+     "risk": "Rain over a dark street will not render; reflections on wet road will. Repeated shopfronts are safe only because the camera is locked.",
+     "source": "docs/cinematography/frame.md §4 (an empty frame after a figure is punctuation); docs/flow/physics-and-motion.md §6b"
+    },
+    {
+     "id": "b",
+     "label": "Bookend the fake high street",
+     "idea": "Frame the street exactly like the simulation's fake Swindon high street (locked, down the street), but real and ordinary at night. The cut says: this is the real one, keep it.",
+     "lanes": [
+      {
+       "lane": "new still edit",
+       "does": "flow_edit_image from the simulation S1 plate, to night and ordinary."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "As option a."
+      }
+     ],
+     "veo_prompt": "As option a.",
+     "cut": "In: from #28. Out: end.",
+     "seconds": "5-6",
+     "risk": "Needs the new #29 still redone to match S1's geometry.",
+     "source": "docs/cinematography/symptoms.md E (bookend: repeat the opening composition); docs/cinematography/on-screen-time.md family 4 (the same frame, twice)"
+    },
+    {
+     "id": "c",
+     "label": "Crane up and away",
+     "idea": "Let Veo rise up from the street as the bus goes, the town lights spreading out.",
+     "lanes": [
+      {
+       "lane": "Veo moving camera",
+       "does": "A slow rise."
+      }
+     ],
+     "veo_prompt": "Slow rising crane shot above the high street at night as the bus drives away below; every building keeps its shape.",
+     "cut": "In: from #28. Out: end.",
+     "seconds": "5",
+     "risk": "Rows of windows and shopfronts may regenerate as the camera rises.",
+     "source": "docs/flow/physics-and-motion.md §2b; memory: dramatic-video-animation (Kai, 2026-09-13)"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "A bookend is our highest-value, lowest-cost structure; if the still can't be redone in time, option a."
+   }
+  },
+  {
+   "n": "door",
+   "job": "Break the row with the outside world: the noise stops, everyone turns.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Light floods, faces turn",
+     "idea": "Locked tunnel. The doors swing open at the far end, daylight and smoke pour down the tunnel, the pair freeze mid-point and turn. The row cuts off on a hard sound stop.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "Doors open, light and smoke roll in, the pair and the people behind turn to look."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Hard cut in from #13 on her raised finger; the row audio stops dead on the first door clang."
+      }
+     ],
+     "veo_prompt": "The camera does not move. At the far end of the tunnel the heavy green blast doors swing slowly open; grey daylight and drifting smoke pour in along the floor. The woman in the cream jumper stops mid-point and turns to stare; the man beside her turns too; the people behind them stand up slowly. The camera does not move.",
+     "cut": "In: hard cut from the row (#13). Out: to #15, the bot in the doorway.",
+     "seconds": "5-6",
+     "risk": "Many people turning at once: keep it to the pair plus background stillness if it smears.",
+     "source": "docs/video-fx/hybrid-method.md §1 (camera locked); docs/cinematography/motion-and-cutting.md §3 (sound leads the cut)"
+    },
+    {
+     "id": "b",
+     "label": "Sound first, then picture",
+     "idea": "Hold the row close-up (#7) and let the clang of the doors arrive off-screen first; both stop and turn. Only then cut to the wide of the doors opening.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "J-cut: door clang under the end of #7, then cut to this still."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "Short clip: the doors open, light pours in."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The heavy green blast doors at the end of the tunnel swing open, a shaft of grey daylight and smoke rolling in. The camera does not move.",
+     "cut": "In: from #7/#13 on the clang. Out: to #15.",
+     "seconds": "3 + 4",
+     "risk": "Low.",
+     "source": "docs/cinematography/motion-and-cutting.md §3 (J-cut)"
+    },
+    {
+     "id": "c",
+     "label": "Hold the still, push in",
+     "idea": "No generation: the still held, a slow Premiere push towards the bright doorway, smoke added as a Flow element on black.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Slow push on the still towards the doors; keyed smoke element."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "In: hard cut. Out: to #15.",
+     "seconds": "4",
+     "risk": "Can feel static without the turn.",
+     "source": "docs/video-fx/hybrid-method.md §2 (Premiere moves the camera)"
+    }
+   ],
+   "recommended": {
+    "id": "b",
+    "why": "The joke is the row being cut off: letting the clang interrupt the close-up lands that before we see why."
+   }
+  },
+  {
+   "n": "hello",
+   "job": "The first contact: the smallest, friendliest thing walks in where they feared the worst.",
+   "options": [
+    {
+     "id": "a",
+     "label": "It rolls in, stops, Hello",
+     "idea": "Locked low shot. The bot trundles in through the smoke, stops, beacon blinks once, and says \"Hello.\" Beat of silence.",
+     "lanes": [
+      {
+       "lane": "Veo locked",
+       "does": "The bot rolls forward a metre and stops; smoke drifts; bunting flutters."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon pulse timed exactly to \"Hello\"."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Hold a beat of silence after the word before cutting to the crowd (#16)."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small grey six-wheeled delivery robot rolls slowly forward out of the smoke through the open blast doors and stops, the torn bunting on its wheel fluttering; grey daylight behind it; the survivors in the foreground stay still. The camera does not move.",
+     "cut": "In: from #14 on the doors. Out: hold, then cut to the canteen #16.",
+     "seconds": "5",
+     "risk": "Veo may redesign the robot as it moves: keep the move short and straight.",
+     "source": "docs/video-fx/hybrid-method.md §1, §5; memory: dramatic-video-animation (one clear subject move)"
+    },
+    {
+     "id": "b",
+     "label": "Reaction first",
+     "idea": "Cut to the faces in the tunnel bracing for a kill bot, then reverse to the tiny bot. The size mismatch is the laugh.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Faces (reuse #14) then this still; \"Hello\" over the reveal."
+      },
+      {
+       "lane": "Veo locked",
+       "does": "Bot rolls in a short way."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small grey delivery robot rolls in through the smoke and stops. The camera does not move.",
+     "cut": "In: #14 faces. Out: #16.",
+     "seconds": "2 + 4",
+     "risk": "Low.",
+     "source": "docs/cinematography/principles.md (reveal by reaction)"
+    },
+    {
+     "id": "c",
+     "label": "Still + beacon only",
+     "idea": "No video: the still held, only the beacon pulses (ffmpeg) on \"Hello\". Cheapest and keeps the bot exactly on model.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "Beacon glow pulse on the word; drifting smoke overlay."
+      }
+     ],
+     "veo_prompt": "",
+     "cut": "Hard cut in and out.",
+     "seconds": "3",
+     "risk": "Static if held long.",
+     "source": "docs/video-fx/hybrid-method.md §5"
+    }
+   ],
+   "recommended": {
+    "id": "a",
+    "why": "One clear move by the one character we must keep on model, short enough not to drift."
+   }
+  }
+ ]
+}

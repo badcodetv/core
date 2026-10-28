@@ -101,6 +101,69 @@ will not admit it.
 | Suno | Music generator asked to talk | 🔴 Closed — **Suno cannot make silence.** Fourteen rounds bought a voice, not a narration engine |
 | Local clone (Chatterbox / Qwen3-TTS) | Clone the approved Suno take on the 4070 | 🟡 Still viable, still needs a clean reference clip, still rejected by ear once |
 
+## 🆕 UPDATE 2026-10-03 — the page changed, and the speech page CAN be driven from code
+
+Observed live on Jack's Ultra login, driving the logged-in Chrome over CDP (Money For Something
+narrator audition). Everything here is ✅ seen unless marked.
+
+- **The default model is now `gemini-3.8-flash-tts`** (released 23 Sep 2026). Its voice library says
+  **2,000+ voices** with new names (Fola, Bodi, Lumi…). Filters: Language, Gender, Pitch, Style,
+  Use case. 🔴 **No Accent filter, the only English is "English (US)", and searching `British`
+  finds nothing.** The "5,000 voices with an Accent filter" described below is gone.
+- **Voice Design on 3.8 is paid-tier:** *"Voice Design runs on the paid tier. Link a paid API key
+  to continue"*, ending at **Set up billing**. Not clicked. A stop gate, Kai's call.
+- **`gemini-3.1-flash-tts-preview` is still in the model picker** (Audio tab) and still has the
+  Composer. Its voice list is the **30 prebuilt voices only**.
+- **The Accent dropdown has eight options:** Neutral, American (Gen), American (Valley),
+  American (South), **British (RP)**, **British (Brixton)**, Transatlantic, Australian.
+- 🔑 **The dropdown is prose, not a parameter.** The request sent with only the Accent set is:
+  `Read the following transcript based on the director's note.\n\n# Director's note\nAccent: British (Brixton).\n\n## Transcript:\n<words>`.
+  So `scripts/aistudio-tts.py` can reproduce it exactly with that string as the profile.
+- 🔑 **Generation works from the CDP-attached browser on this page.** The 403 recorded for the chat
+  page in [`../listening/automation.md`](../listening/automation.md) Trap 4b did not fire here:
+  every `GenerateContent` returned 200.
+- **How to drive it:** after the first Run, the **Run button stays `aria-disabled`** (cause
+  unknown). The per-block **Preview this block** button keeps generating. It only appears on
+  hover, so hover the textarea and click with `force`; while audio plays it is relabelled
+  **Stop preview**, so wait for it to revert.
+- **Getting the audio:** the Download button worked once, then Chrome saved nothing (no download
+  event). Instead read the `GenerateContent` response body: it carries
+  `"audio/l16; rate=24000; channels=1","<base64>"` chunks; concatenate, decode, wrap as WAV.
+- 🔴 **The voice resets on its own.** Later the same day the page showed **Achird** while the
+  Accent menu still read British (Brixton). Open Speaker settings and check the voice marked
+  **Current** before every session; `scripts/ai-studio/.tmp/render.mjs` does this and then
+  renders a list of lines (11 of 11 returned complete audio on the first go, 1.4s to 8.6s).
+- ✅ **Judged by Jack, 3 October:** of five takes (Enceladus RP, Enceladus Brixton, Zubenelgenubi
+  RP, Zubenelgenubi Brixton, Puck RP) he picked **Zubenelgenubi + British (Brixton)**, with every
+  other box empty. One line only; not yet tested on a second line.
+
+## 🆕 READ 2026-10-19 — Voice Design on 3.8 is in the API, and it changes how to prompt
+
+⬜ **Read, not tried.** From Google's [Voice design guide](https://ai.google.dev/gemini-api/docs/voice-design),
+the [3.8 model card](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts) and
+[Philipp Schmid's walkthrough](https://www.philschmid.de/gemini-3-8-tts):
+
+- `POST /v1beta/voices` with `type: "prompted"`, `gender`, `language_code`, `display_name` and
+  `prompted.input` (the description) makes a **saved voice** (`store: true`, kept one year, 200 per
+  project). The response carries a preview (`sample_audio`, base64 WAV).
+- **The description is one or two sentences of permanent traits:** age, gender, timbre, regional
+  accent, baseline delivery. Google: contradictory or long paragraphs do worse. Google's examples:
+  *"A warm, thoughtful astronomer in his late 60s with a gentle British accent, speaking with quiet
+  wonder."*
+- **Per-line emotion goes in `speech_metadata.style`** at generation time ("whispered urgently"),
+  not in the description. Google: replace long Audio Profile / Director's Notes blocks with a designed
+  voice and short or empty style strings; long profiles now cause drift.
+- **Inline sound events use angle brackets** on 3.8 (`<laugh>`, `<short pause>`), and everything in
+  the input text is spoken.
+- 🔴 Still a stop gate in the UI (3 Oct: "Link a paid API key"). The API path would bill Kai's paid
+  project. First use: Karen's narrator, [`../stories/karen/narration/voice.md`](../stories/karen/narration/voice.md).
+
+## 💳 UPDATE 2026-09-30 — we now use a PAID key (Kai's call)
+
+- Kai: *"it's excellent"* — so `GEMINI_API_KEY` in `.env` is now a key from the **WebKit Servers** Google Cloud project (billing attached; AI Studio → Create API key → *Import project*). The old free key is kept as `GEMINI_API_KEY_FREE`.
+- The 10-a-day free cap no longer applies. The "never set up billing" rows below describe the free-tier era.
+- 🔴 **Long takes truncate.** GPOM robot, 192 words: 1 of 6 single takes complete (81.8s), the rest 21–46s. Pieces of ~55–100 words did better. The likely cause is already documented below: `scripts/aistudio-tts.py` streams (`generate_content_stream`), which Google has confirmed truncates past ~60–70s. **Switching to non-streaming `generate_content` is owed.**
+
 ## Access and money — nobody is being charged
 
 | Question | Answer |
@@ -153,7 +216,7 @@ in three months.**
 
 **URL:** `aistudio.google.com/generate-speech` · **Model:** `gemini-3.1-flash-tts-preview`
 
-💻 **There is an API route, and it is in the repo:** [`scripts/aistudio-tts.py`](../../scripts/aistudio-tts.py) — AI Studio's own **Get code** export, cleaned up. ✅ **The export proves the config**: `temperature 1`, `response_modalities: ["audio"]`, `PrebuiltVoiceConfig(voice_name=…)`, and audio returns as **`audio/L16;rate=24000`, mono**. 🔴 **The export has four faults** — one file per streamed chunk, the Transcript field holding the profile, mono output (the Premiere trap), and a literal `ENTER_FILE_NAME_0`. All four are fixed in the script; ⬜ its API path is **unrun**.
+💻 **There is an API route, and it is in the repo:** [`scripts/aistudio-tts.py`](../../scripts/aistudio-tts.py) — AI Studio's own **Get code** export, cleaned up. ✅ **The export proves the config**: `temperature 1`, `response_modalities: ["audio"]`, `PrebuiltVoiceConfig(voice_name=…)`, and audio returns as **`audio/L16;rate=24000`, mono**. 🔴 **The export has four faults** — one file per streamed chunk, the Transcript field holding the profile, mono output (the Premiere trap), and a literal `ENTER_FILE_NAME_0`. All four are fixed in the script. ✅ **API path PROVEN 2026-09-30** (GPOM scene 4 robot, 5 takes): run it as `set -a; . ./.env; set +a; uv run -q --with google-genai python3 scripts/aistudio-tts.py <transcript> <out.wav> --profile <p.md> --voice <Name>`. 🔴 **Free-tier limits: 3 requests per minute AND 10 requests per DAY per model** (both 429 `RESOURCE_EXHAUSTED`; the daily one names `GenerateRequestsPerDayPerProjectPerModel-FreeTier`, quota 10 — hit 2026-09-30 after 12 calls incl. failures). Budget a day's takes; failed and truncated calls count. Past the cap: the AI Studio web UI by hand (Ultra raises the **web** quota, not the API's), or wait for the reset (midnight Pacific). ⚠️ One take in five came back truncated (6s of a ~17s script): check every take's length and re-run a short one.
 (Run settings → the model card). Left sidebar → Playground.
 
 ⚠️ **Blog write-ups describe a different, older screen.** Trust this map, or a screenshot, over

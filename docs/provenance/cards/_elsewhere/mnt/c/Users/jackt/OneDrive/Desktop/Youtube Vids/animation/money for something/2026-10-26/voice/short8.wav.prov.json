@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/2026-10-26/voice/short8.wav",
+ "made": "2026-10-26T13:52:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio API",
+ "tool": "scripts/money-for-something/oct26/voice/mfs-voice.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "MFS 26 Oct shorts narration, Jack's locked lines",
+ "prompt": "Tests on England's sewage suggest two and a half billion lines of cocaine in a year. Ozempic's stock is down, Brenda's in a pub bathroom, optimising fat loss whilst staying focused. The water companies like pumping sewage into the rivers whilst getting subsidised. All I know is the fish are fucked up right now.",
+ "settings": {
+  "voice": "Zubenelgenubi",
+  "accent": "British (Brixton)",
+  "temperature": "1"
+ }
+}

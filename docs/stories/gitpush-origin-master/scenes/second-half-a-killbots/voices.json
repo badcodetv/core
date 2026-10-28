@@ -1,0 +1,101 @@
+{
+ "about": "Scene A lines voiced in Gemini TTS after round 2 (scripts/gpom/second-half-video/voice3.py --round A3). Earlier scene A takes are in the media folder's voice3/a1.json. Files are relative to the media folder; the boss is Suno and is not here.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "lines": {
+  "12-0-maddie": {
+   "speaker": "maddie",
+   "beat": "12",
+   "text": "Good job. That was close.",
+   "voiced": "Good job, boss. That was close.",
+   "voice": "Aoede",
+   "note": "Kai at4098: replaces the boss's line 4; 'squeeze as much emotion into that as possible'",
+   "file": "a3/12-0-bot-a-tight.wav",
+   "duration": 6.94,
+   "from": "a3/12-0-bot-a.wav",
+   "keep": [
+    [
+     0.0,
+     3.8
+    ],
+    [
+     4.5,
+     5.95
+    ],
+    [
+     8.35,
+     null
+    ]
+   ],
+   "speech": [
+    2.18,
+    9.42
+   ],
+   "heard": "Good job boss. That was close.",
+   "verified": true,
+   "why": "[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. b: also 'Whew!' (exclaimed), pause 5.5 s. c: no sigh, clean, pause 3.75 s (the clean alternative). d: an unscripted 'Oh' inside the pause (whisper on the gap segment). Round 3b (Kai at4138): 'boss' cut out (3.80-4.50 s), the pause after 'Good job' stays ~1.85 s. Tightened copy 12-0-bot-a-tight.wav (6.94 s) keeps [(0.0, 3.8), (4.5, 5.95), (8.35, None)]; whisper hears it as 'Oh, good job. That was close.'. Nobody has listened. (Whisper on the parts: 0-1.5 s is 'Whew.', the sigh; 1.5 s on is 'Good job. That was close.' exactly. Whole, it writes the sigh as 'Oh,'.)",
+   "takes": [
+    {
+     "take": "a",
+     "file": "12-0-bot-a.wav",
+     "spoken": "[sighs] Good job, boss. [long pause] That was close.",
+     "duration": 10.04,
+     "heard": "Good job boss. That was close.",
+     "match": 1.0,
+     "gap": 1.68,
+     "lufs": -27.2,
+     "status": "kept",
+     "speech": [
+      2.18,
+      9.42
+     ]
+    },
+    {
+     "take": "b",
+     "file": "12-0-bot-b.wav",
+     "spoken": "[sighs] Good job, boss. [long pause] That was close.",
+     "duration": 9.56,
+     "heard": "Good job, boss. That was close.",
+     "match": 1.0,
+     "gap": 2.68,
+     "lufs": -24.8,
+     "status": "kept",
+     "speech": [
+      0.0,
+      8.96
+     ]
+    },
+    {
+     "take": "c",
+     "file": "12-0-bot-c.wav",
+     "spoken": "Good job, boss... That was close.",
+     "duration": 8.24,
+     "heard": "Good job, boss. That was close.",
+     "match": 1.0,
+     "gap": 0.3,
+     "lufs": -25.6,
+     "status": "kept",
+     "speech": [
+      0.0,
+      7.14
+     ]
+    },
+    {
+     "take": "d",
+     "file": "12-0-bot-d.wav",
+     "spoken": "Good job, boss... That was close.",
+     "duration": 6.68,
+     "heard": "Good job, boss. That was close.",
+     "match": 1.0,
+     "gap": 0.45,
+     "lufs": -24.2,
+     "status": "kept",
+     "speech": [
+      0.0,
+      5.88
+     ]
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nOutside the steel blast door of a Cold War bunker under a Wiltshire hill, grey daylight, wind. The kill bots that were about to break in have just stood down and are leaving one by one. A small robot speaks quietly up into her boss-hotline antenna. Open air, no echo; her voice close to the microphone.\n\n### DIRECTOR'S NOTES\nEmotion for this line: overwhelming relief, shaky, fond; she nearly lost them.\nStyle: no cheek, no gossip, no jokes: the relief after nearly watching a hundred people she loves be killed; shaky and fond, her voice wobbling, close to tears, a breath of a laugh on the way out.\nPace: slow. 'Good job, boss' soft and grateful, almost a whisper; then a real pause where she breathes out; 'That was close' quieter still, unsteady, trailing off.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
+  }
+ }
+}

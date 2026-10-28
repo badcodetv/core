@@ -1,0 +1,20 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "money-for-something/host-v2/D8-a.jpg (not on D:; the image is kept in Flow, find it by source_id)",
+  "made": "2026-10-25T10:33:00+00:00",
+  "by": "claude",
+  "kind": "image",
+  "engine": "flow",
+  "tool": "flow-mcp",
+  "model": "Nano Banana 2",
+  "why": "Jack 25 Oct: new Flow project, many host designs, avoid AI slop",
+  "source_id": "4d703608-562d-441d-8a35-7be6369b2512",
+  "prompt": "Photograph a figure at a street-market stall on a grey Saturday, taken on a Canon AE-1 at eye level from behind a crate of apples that blurs the near foreground, framed off-centre. He stands behind the stall holding up a single potato to the camera like evidence. His whole head is in a cream knitted balaclava with no eye or mouth holes; a thin black ring is stitched around the face, and high inside it, over one eye, a small red triangle with rounded corners. A black roll-neck, a green market-trader's apron over a black fleece, black woollen fingerless gloves worn over black liner gloves so no skin shows. A battered portable television sits among the vegetables showing a picture of a politician at a podium. Flat overcast daylight, no sun, muted cool colour; shoppers blurred behind. Kodak Gold 200, visible grain. Thanks.",
+  "inputs": {
+    "flow_project": "d5559719-088b-4f35-ab61-31b0feb4b502"
+  },
+  "settings": {
+    "aspect": "16:9",
+    "count": "2"
+  }
+}

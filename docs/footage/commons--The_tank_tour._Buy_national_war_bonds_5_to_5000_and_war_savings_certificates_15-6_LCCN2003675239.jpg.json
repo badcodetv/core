@@ -1,0 +1,101 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "32054750": {
+    "pageid": 32054750,
+    "ns": 6,
+    "title": "File:The tank tour. Buy national war bonds (£5 to £5000) and war savings certificates 15-6 LCCN2003675239.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 130745,
+      "width": 826,
+      "height": 1024,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/The_tank_tour._Buy_national_war_bonds_%28%C2%A35_to_%C2%A35000%29_and_war_savings_certificates_15-6_LCCN2003675239.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_tank_tour._Buy_national_war_bonds_(%C2%A35_to_%C2%A35000)_and_war_savings_certificates_15-6_LCCN2003675239.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=32054750",
+      "sha1": "7a0e6f7f0ac4a336f30ca330a6845f1c47cd67cb",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2014-04-08 10:41:02",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "The tank tour. Buy national war bonds (£5 to £5000) and war savings certificates 15-6 LCCN2003675239",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Images from the Library of Congress|Images uploaded by Fæ|World War I posters in the Library of Congress|PD US expired|Template Unknown (author)|PD-US missing SDC copyright status|McLagan and Cumming",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "<i>Title:</i> The  tank tour. Buy national war bonds (£5 to £5000) and war savings certificates 15/6\n<p><i>Abstract:</i> Poster showing a tank with guns blazing. Blank space is provided for including details of local exhibition.\n<i>Physical description:</i> 1 print (poster) : lithograph, color ; 76 x 50 cm.\n</p>\n<i>Notes:</i> (1157) WT. 4127. 20M. 8-18.; Issued by the Scottish War Savings Committee, 90 Princes Street, Edinburgh.; McLagan &amp; Cumming, Edinr. (E).; Title from item.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "1918",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<p>Library of Congress\n</p>\n<ul><li><i>Catalog:</i> <a rel=\"nofollow\" class=\"external free\" href=\"http://lccn.loc.gov/2003675239\">http://lccn.loc.gov/2003675239</a></li>\n<li><i>Image download:</i> <a rel=\"nofollow\" class=\"external free\" href=\"http://lcweb2.loc.gov/service/pnp/cph/3g10000/3g11000/3g11000/3g11079v.jpg\">http://lcweb2.loc.gov/service/pnp/cph/3g10000/3g11000/3g11000/3g11079v.jpg</a></li>\n<li><i>Original url:</i> <a rel=\"nofollow\" class=\"external free\" href=\"http://hdl.loc.gov/loc.pnp/cph.3g11079\">http://hdl.loc.gov/loc.pnp/cph.3g11079</a></li></ul>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+        "source": "commons-desc-page"
+       },
+       "Permission": {
+        "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/cph.3g11079\">cph.3g11079</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

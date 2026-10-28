@@ -18,7 +18,7 @@ the effects and the production tricks live.
 | --- | --- | --- |
 | **Driving it** | **this skill** | Why did the call fail? Which tool? Is the bridge even up? |
 | **Choosing the effect** | `video-fx` | Fire, map zoom, film look — what tool, what does it cost? |
-| **The BadCode look** | `badcode-art-direction` · `new-image` | What should it look like? |
+| **The BadCode look** | `new-image` | What should it look like? |
 
 If you are choosing between a Gaussian Blur and a Lumetri curve, you are in the wrong skill.
 
@@ -270,6 +270,12 @@ that **8 seconds is not a limit** — chain Veo clips frame to frame.
     handwork, and exactly what the human should click. Some things genuinely have no API at all
     (audio crossfades, reading transitions back, Essential Sound) and some are simply not worth the
     engineering. Hand those over cleanly and get on with the parts that pay.
+12. **A sequence built from a timeline page belongs to that page** *(Kai, 2026-10-26)*. Its notes reach
+    Premiere as a NEW sequence each round, never as edits in place, and only after
+    `scripts/scene/premiere-check.py` says Kai hasn't touched the current one. The whole procedure,
+    the record and the tab rule are in **`scene-timeline`, "Premiere sync"**. Tabs:
+    `project.closeSequence(seq)` / `project.openSequence(seq)` through `premiere_eval`; they only
+    close and open tabs, and open in call order.
 
 ---
 

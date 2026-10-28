@@ -1,0 +1,20 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "money-for-something/host-v2/D1-b.jpg (not on D:; the image is kept in Flow, find it by source_id)",
+  "made": "2026-10-25T10:33:00+00:00",
+  "by": "claude",
+  "kind": "image",
+  "engine": "flow",
+  "tool": "flow-mcp",
+  "model": "Nano Banana 2",
+  "why": "Jack 25 Oct: new Flow project, many host designs, avoid AI slop",
+  "source_id": "8accf02b-d796-4302-b4f2-3fb9e1ae6f77",
+  "prompt": "Photograph a presenter on a tiny local-access television set, taken on a Ricoh GR compact from slightly above, framed a little off-centre and not quite level. He sits behind a chipped melamine desk with a mug of tea and a tangle of cables blurred in the near foreground, mid-way through shuffling a stack of papers. His whole head is in a hand-knitted cream wool balaclava, slightly pilled, with no eye or mouth holes; a thin black ring is embroidered around the face in slightly uneven stitches, and high inside the ring, over one eye, a small red felt triangle with rounded corners is sewn on. A black roll-neck, a worn grey suit a size too big, black knitted gloves. Behind him a boxy old television on a trolley shows a muddy picture of a city skyline. One overhead fluorescent tube lights the room flat and slightly green. Kodak Gold 200, visible grain. Thanks.",
+  "inputs": {
+    "flow_project": "d5559719-088b-4f35-ab61-31b0feb4b502"
+  },
+  "settings": {
+    "aspect": "16:9",
+    "count": "2"
+  }
+}

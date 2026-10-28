@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/8acf9223-d50b-4e7d-aa51-7a01e7e02361/scratchpad/5d2-a.png",
+ "made": "2026-10-26T11:53:51.181Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. Only the bodies, clothes and places are cartoon: every face in the frame, however small, is painted as real human skin with wrinkles, pores, bags under the eyes and real eyelids, far more lifelike than anything around it, and no feature is exaggerated. Side-on and close at a battered steel door at the bottom of brick back stairs, 1930s: on the left, the profile of a gangster in his forties with a flattened nose, a scar through one eyebrow, heavy stubble, a pinstripe suit and a grey fedora, leaning in with his mouth an inch from the open slot, whispering. In the slot, a pair of wary real eyes, close enough to touch. Hard light from one bare bulb, deep shadow below. The whole upper half of the frame is plain dark empty wall. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b4491fa2-b28c-4caa-8fa8-06a6945be629"
+}

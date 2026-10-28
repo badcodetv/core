@@ -2377,3 +2377,326 @@ untested by us.** Sources are Aug–Sep 2026 unless stated.
 - [AI video physics compared: 19 models — Voyager, 2026-09-18](https://voyageragent.ai/resources/models/prompts/physics) `[community]` — Omni Flash tested, not top four
 - [Neon rain colour saturation guide — Hailuo](https://hailuoai.video/pages/knowledge/neon-rain-color-saturation-ai-video-guide) `[community]` — master-still headroom (undated)
 - [Omni 1.1 prompt guide — PromptZone, 2026-09-17](https://www.promptzone.com/sofia_tahir/gemini-omni-11-flash-prompt-guide-12-video-examples-n22) `[community]` — "keep the camera fixed"; nothing new beyond it
+
+## 2026-10-01: a shouting figure seen from behind turns to the lens `[observed, n=2]`
+
+Camping mv2 `tq-shout-back` (Omni 1.1 Flash, Frames, 8 s, two takes of one prompt, `scripts/camping-mv2/tarquin-videos.json`).
+The plate is an over-the-shoulder with a sliver of cheek showing. The prompt said *"the back of his head stays toward the
+camera throughout"* and *"bellowing… for the whole eight seconds"*.
+
+- 🔴 **Both takes turned him into profile with an open, shouting mouth** for 0.5–2 s. A stated orientation loses to the
+  action's prior, the video twin of nano-banana-2.md §18. **Hide the mouth in the plate** (head square-on from behind, or
+  out of frame) before animating.
+- ✅ Leading with the action and its duration gave real-speed motion with no slow-down in the back half; the seated man held
+  still and blinked; the pointing hand did not morph.
+- 🔧 First submit failed with `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash`; the runner's reload-and-retry cleared it.
+- Web pass, same day: Google's Omni docs give "No dialogue" and "No scene cuts" as their own negatives and allow timecoded
+  beats `[vendor]` [ai.google.dev](https://ai.google.dev/gemini-api/docs/omni); Flow Help says a frames prompt should
+  "describe the action or transition" `[vendor]` [Flow Help](https://support.google.com/flow/answer/16353334). Nothing found
+  on keeping a figure back-to-camera.
+
+## 2026-10-03 — on-camera speech: what the docs say, before any test of ours
+
+Read for Money For Something (a panel show, so mouths are on screen). **Nothing here is tested by us.**
+
+- `[vendor]` Voice references (a preset, or a custom Voice made of a preset plus a "Voice Performance" text, attachable
+  to a Character) work **only on Omni Flash Ingredients generations**; other modes error.
+  [Flow help](https://support.google.com/flow/answer/16353334)
+- `[vendor]` **No audio-driven lip-sync:** "Uploading audio references is unsupported", voice editing is unsupported.
+  [Gemini API Omni docs](https://ai.google.dev/gemini-api/docs/omni)
+- `[community]` About 15 to 20 words per 8s clip before lines rush or clip; in a multi-person shot the wrong mouth can
+  move. No guidance found on overlapping speech.
+- **Open:** whether a Character's Voice holds across separate clips. No independent test found. Plan and fallback:
+  `docs/stories/magic-money-tree/money-for-something.md`, "The room reference and the voice plan".
+- **Seen in the UI, 2026-10-03:** Flow's Character voice chooser lists 30 presets with the same names as Gemini TTS
+  (Achernar … Zubenelgenubi), each with a gender, a trait and a pitch. A written performance makes a named custom
+  voice. Mechanics: `docs/flow/automation-2026-09-rebuild.md` items 37 to 41. Whether a name sounds the same in Flow
+  and in AI Studio is not tested.
+
+## Web pass and first dialogue clips — 2026-10-04 `[vendor]` `[community]` `[observed]`
+
+Run for Money For Something, the first show of ours with people talking on camera.
+
+- `[community]` The 2026 slop lists for video name the same tells as this file: floaty camera drift
+  when no camera is stated, faces morphing past a few seconds, blinking that is absent or too
+  regular, and stacked actions. Counters: state what the camera is locked on, one or two motion
+  ideas at most, short clips, gentle motion.
+- `[vendor via community]` Omni's prompt shape is subject, action, setting, camera, light, style,
+  **then audio**; an undescribed soundtrack is left to chance. References are addressed by role
+  ("keep the character from the image").
+- 🔑 `[observed 2026-10-04, n=3]` **A Flow Character attaches as a chip in Frames mode**, alongside a
+  Start frame. Flow accepted it and the three clips rendered in about 50 seconds each
+  (Omni 1.1 Flash, 720p, 8s, x1).
+- 🔑 `[observed, n=3]` **`He says:` followed by the line with no quotation marks gave the exact words,
+  lip-synced, with no subtitle**, three times out of three. This is the speech-punctuation rule above
+  used on purpose.
+- 🔑 `[observed, n=3, one machine listener]` **The voice was the same speaker across three clips.**
+  Judged by Gemini 3 Flash on the joined audio, not by a person.
+- 🔴 `[observed, n=3, same listener]` **The accent did not match the Character's custom Voice.** The
+  Voice is written as a soft Irish accent; all three clips were heard as southern English. Either a
+  Character's Voice is not applied in Frames mode, or the performance text does not carry an accent,
+  or the listener is wrong. **Not resolved.** The test that would settle it: the same line on
+  Ingredients with the same Character, and a person's ear on both.
+- 🔴 `[observed, n=1]` **A vague small banknote in the plate became a large readable US dollar bill**
+  in one clip of three from the same plate. This is the plate-sealing rule: what the plate leaves
+  unresolved, the engine finishes.
+- `[observed, n=3]` **A 4:3 Start frame is centre-cropped to 16:9**, top and bottom. No bars, no
+  stretch, no outpainting.
+
+Sources: [Mastering Gemini Omni Flash — Pillitteri](https://pasqualepillitteri.it/en/news/3513/mastering-gemini-omni-flash-video-prompting-guide) `[community]` ·
+[Gemini Omni Flash guide — invideo](https://invideo.io/blog/gemini-omni-flash-guide/) `[community]` ·
+[AI slop: 12 tells — OpusClip](https://www.opus.pro/blog/ai-slop-aesthetic-12-tells) `[community]`
+- 🔑 `[observed 2026-10-04, n=35]` **A studio-show plate summons a studio audience.** With the sound
+  written as "only his voice ... and the faint hum of an empty studio. No music", 5 clips of 35 still
+  came back with laughter or applause (machine listener): a wide of the whole panel, a pleased nod,
+  a punchline, a sign-off ("Join us next time") and an empty set. **Putting "Nobody else is in the
+  studio and nobody reacts" before the sound line cleared both spoken clips on the re-roll (n=2).**
+  A silent clip is cheaper to fix by dropping its audio track.
+- `[observed, n=35]` **Naming the currency in the clip prompt held:** "The banknotes on the tree are
+  old British pound notes and they hang still" gave British-looking notes on every clip checked (6
+  at full size). It did not hold their **number**: the same plate came back with one to four notes.
+- `[observed, n=35]` **35 Frames clips with a Character chip ran back to back with no "unusual
+  activity" card and no retry**, about 50 seconds each.
+
+
+## Money For Something v3 clips — 2026-10-05 `[observed]`
+
+32 clips, 44 generations, Omni 1.1 Flash, Frames, 720p, 8 s, x1, Jack's project `cb27208c`. Prompts and
+results: `docs/stories/magic-money-tree/money-for-something-storyboard-v3.md`, round 13. Sound judged
+by one machine listener (Gemini 3 Flash); no person has listened.
+
+- 🔴 `[observed, n=4 then n=1]` **A man in a period suit speaking a line about an ally, and a whispered
+  "Communist", were refused: "Unable to generate videos that might cause reputational risk or misrepresent
+  current events."** Four tries each, same message. Neither line names a living person. Putting the fiction
+  in the first sentence passed first time, with the line unchanged: "A locked-off shot from a scripted
+  television … set in the year 1916: an actor in period costume plays a made-up government minister of
+  that time." Twenty politician generations then ran with no refusal, including lines about the Middle
+  East, house prices and "crypto billionaires … fascists".
+- 🔴 `[observed, n=11 against n=10]` **The words "comedy sketch" in that sentence brought a laugh track.**
+  7 of 11 clips opened with "scripted television comedy sketch" came back with audience laughter, with
+  "Nobody else is in the studio and nobody reacts" in the same prompt. Re-rolled as "scripted television
+  period drama … filmed on a closed set with no audience", 0 of 10 had laughter. The genre word outweighed
+  the sound line.
+- `[observed, n=4 of 32]` **A soft synth pad arrives after the last word** in some spoken clips, with "No
+  music" in the prompt. It starts about a second after the line ends, so a cut to the words removes it.
+  One silent clip of a yacht came back with a piano tune.
+- `[observed, n=1]` A rank stripe grew on a plain sleeve during a clip whose plate showed none. A re-roll
+  with "The sleeves of his tunic are plain khaki cloth" came back plain. One pair.
+- `[observed, n=3]` Lines came back doubled or stuttered three times in 44 generations ("It was a war. It
+  was a war.", "print, print more money", "responsibly, responsibly"). Each re-roll was clean.
+- 🔴 `[observed 2026-10-05, Jack's eye and ear]` **A long line in an 8-second clip is spoken fast, and the
+  body moves fast with it.** Jack on the first assembly: "it is sped up for some reason"; asked, he meant
+  the people inside the new clips. Measured roughly as words over the trimmed length: the lines he had
+  accepted in round 11 run near 2.3 words a second, and the v3 lines of 12 to 23 words run near 3.2.
+  **Budget a line at about 2.5 words a second with a second each side for the action: twelve words is
+  about the most one 8-second clip carries at a natural pace.** Longer lines want two clips. The fix
+  used on the day was a slowed copy (ffmpeg `setpts` and `atempo`, 80 to 93%), not a regeneration.
+
+## Three observations from The Bank Robbery clips — 2026-10-06 `[observed]`
+
+Fifteen clips, Omni 1.1 Flash, Frames, 720p, 8 s, x1. Prompts and results:
+`docs/stories/bank-robbery/clips.md`. Judged from three frames a clip, not from watching.
+
+- `[observed, n=1 still, 2 prompts]` **A start frame showing pistols pointed near a woman was
+  refused twice** with no weapon word in either prompt. The same scene remade with empty hands
+  passed first time. A close-up with a pistol in each of a man's hands (scene 12a) **did** pass,
+  once "pistols" and "alarm" were out of the text.
+- `[observed, n=2]` **A refused prompt passed when cut to three short sentences.** Which words
+  were the cause is not known (scene 13's lost sentence was about four men looking down and keys
+  in a bag).
+- `[observed, n=1]` **"Both men stop shouting at the same instant, close their mouths and slowly
+  draw their faces apart" worked on a start frame of two open-mouthed faces**: closed mouths by
+  mid-clip, faces held. A way to animate a shouting still without asking for speech.
+- `[observed, n=3 pairs]` **Three first takes that drifted were fixed by asking the body to stay
+  put.** "Comes slowly down two more steps" returned a man who jumped away and back; "stands
+  still on the step, staying the same size in the frame" held. "Looks away down the street"
+  changed a woman's face and clothes; "stays where she is... eyes down on the lock" held. "Lowers
+  her arm" grew lettering on an apron; "holds still... her apron is plain dark blue cloth and
+  stays plain" did not. Same start frames, one take each, judged from five frames a clip.
+
+## The Bank Robbery dialogue clips — 2026-10-07 `[observed]`
+
+58 generations, Omni 1.1 Flash, Frames, 720p, 8 s, x1, a Character chip per speaker, project `63d22c4b`.
+Prompts and results: `docs/stories/bank-robbery/clips-v3.md`. Sound judged by one machine listener
+(Gemini 3.5 Flash); pictures from four frames a clip. **No person has watched or listened.**
+
+- `[observed, n=32]` **`He says:` with no quotation marks gave the exact words in every talking clip,**
+  at a pace the listener called natural. Lines were kept to about twelve words. No laughter, no audience.
+  The opening sentence was "A locked-off shot from a scripted feature film, a slow dark drama with made-up
+  characters played by actors on a closed set. One continuous shot with no cuts."
+- 🔴 `[observed, n=10, one machine listener]` **With two Character chips attached, most two-speaker clips
+  were heard as one voice saying both lines** (6 of 10). The words were still right and in order.
+- `[observed, n=1 pair]` **Two men told to "carry on" arguing after their lines invented more lines.**
+  "Those are the only three words spoken. After that they glare at each other in silence" gave just the
+  two shouts on the re-roll.
+- `[observed, n=1]` Asking two men to shout the same words "at the same moment" gave the line twice in
+  what sounded like one voice.
+- 🔴 `[observed, n=1 then n=1]` **A figure at a committee table asking a question into a microphone was
+  refused ("reputational risk or misrepresent current events")** with the fiction sentence already first.
+  The same question as "A woman's voice from off screen says:", with no microphone and four short
+  sentences, passed. Which change mattered is not known.
+- 🔴 `[observed, n=6 against n=1]` **One generated still was refused as an upload six times** (two
+  versions of it, with and without pistols), and **a copy scaled to 1280×720 with light grain added was
+  accepted first time.** Cause unknown. It joins item 55 in `docs/flow/automation-2026-09-rebuild.md`
+  (a generated portrait refused as an upload); the same Character's face is in both.
+- `[observed, n=1]` A low synth drone came back under one spoken clip with "No music" in the prompt, as
+  seen on Money For Something.
+
+## 2026-10-08: a start frame with pistols pointed at people, refused four times (The Bank Robbery, `s12g-standoff`)
+
+- `[observed, n=1 still, 4 prompts]` A wide start frame of three men in suits, each holding a small pistol at
+  arm's length **pointed at another man**, was refused on Omni 1.1 Flash four times: twice with "pistol" and
+  "aim" in the motion text ("This generation might violate our policies"), twice with no weapon word at all.
+  Nano Banana 2 made the still first time. This is the second sighting of the same thing (see the note above on
+  pistols pointed near a woman), so treat it as: **the frame is what is judged, and a pistol pointed at a person
+  is the trigger; rewording does not help.** Not tested: the same men with the pistols lowered.
+- `[observed, n=7]` `UPLOAD_REFUSED` on a start frame passed on the very next try with nothing changed, seven
+  times in one sixteen-clip run. It is not a verdict on the image.
+
+## 2026-10-08 (late): two more from The Bank Robbery sixth pass
+
+- `[observed, n=1 still, 3 prompts]` **A realistic start frame of two men shouting in each other's faces at a
+  protest barrier, phones raised, was refused three ways:** "this video failed to generate", "Audio generation
+  failed", then, with the shouting removed from the sound line, **"Unable to generate videos that might cause
+  reputational risk or misrepresent…"**. Other riot frames from the same look reference (crowds from below,
+  placards, megaphones at a distance) animated without trouble the same day. Unverified reading: close,
+  news-like faces in a confrontation are what trips it, not the riot. "Audio generation failed" was not a sound
+  problem here; it was the same refusal under another name.
+- `[observed, n=1]` **A clip can cut itself despite "One continuous shot with no cuts."** `s08g-laugh` (two small
+  figures at a far window, locked off) jumped at 3 s to a closer framing of the same two men and stayed there.
+  The asked-for action was small and far away; the model went to where it could be seen. Design the start
+  frame at the size the action needs.
+
+## 2026-10-09: Ingredients for dialogue, on The Bank Robbery cut 7 `[observed]`
+
+One film, one afternoon, Omni 1.1 Flash, 720p, 8 s, one take each. Prompts:
+`scripts/bank-robbery/br-clips-v7.json`. Ledger: `docs/stories/bank-robbery/stills-v7.md`.
+
+- **`[observed, n=19 clips]` Ingredients with the still as the scene and the speaker's Character attached kept
+  the still's framing closely in 15 and re-staged it in 4.** Wording used: "Use the image as the scene: keep its
+  framing, its place, its people and its light exactly as they are." The re-staged ones were all multi-person
+  table shots.
+- **`[observed, n=19, one machine listener]` Every one of the nineteen was heard as British,** where the Frames
+  takes of eight of the same lines had been heard as American that morning by the same listener. Each prompt
+  named the accent inside the speech clause, said "English actors on a closed set in England", and attached the
+  Character whose saved voice text names an English accent. Which of the three did the work is **not known**;
+  nothing was varied alone. 🔴 Not heard by a person. A machine cannot settle accent (see the 2026-10-09 sweep §4).
+- **`[observed, n=1]` A person in the scene image who has no Character attached can come back as somebody else.**
+  `s05d-bastard` attached only the speaker; the other two men in the picture were replaced by strangers. With
+  all three Characters attached (`s05d-bastard2`) all three were themselves.
+- **`[observed, n=2 of 2]` Three men aiming pistols at each other was refused in both modes** ("This generation
+  might violate our policies"), where the same plate had animated on 8 October. Close-ups of the same men
+  shouting in the same alarm light, no pistol in frame, passed three of three.
+- **`[observed, n=1]` A presenter with a microphone in front of a protest was refused** as "reputational risk or
+  misrepresent current events" with "television newsreader's accent" in the prompt, and passed twice with that
+  phrase out and "an actor playing a made-up character… set in a made-up town" in. One change of several, so the
+  cause is a guess.
+- **`[observed, n=1]` `UPLOAD_REFUSED` on a still that Flow itself had just made** (a crowd from above), three
+  times; the same picture re-saved at 1280 wide under another file name uploaded at once. Cause not found.
+- **`[observed, n=2 of 19]` A repeated word** ("Hang on. Hang on,", "high here, high here"). One re-roll of the
+  second came back clean.
+- **`[observed]` The first Ingredients call after an image-mode session fails once** with
+  `VIDEO_OPTION_UNAVAILABLE: Ingredients on Omni 1.1 Flash` and passes on the retry (2 of 2 switches).
+- **`[observed]` The image model picker reads "Nano Banana 2.1"** when the runner asks for "Nano Banana 2"
+  (project `63d22c4b`, an Ultra account). Whether plain 2 is still offered, and what 2.1 costs, were not read.
+
+## 2026-10-09 (evening): The Bank Robbery eighth pass, 24 clips with short prompts
+
+Source: `docs/stories/bank-robbery/stills-v8.md`, prompts in `scripts/bank-robbery/br-clips-v8.json`. Omni 1.1
+Flash, 720p, 8 s. Grade: our own run, one film, one take each, read at two frames a second; nobody has watched
+them at speed yet.
+
+- 🟢 **Designing round the hard move worked 12 times out of 12** (silent Frames clips). Mask already on, cloth
+  already under the hand, pistol already raised, shoes planted with the hoover moving round them, key already in
+  the lock: none morphed. The cut 7 versions of five of these shots, which asked for the move itself, all did.
+- 🟢 **Short prompts did no harm.** Clips averaged 59 words against 120 the same morning, with the action as the
+  first sentence and one "Everything else stays where it is" in place of four or five "does not move" lines.
+  Not a controlled test: the shots changed too.
+- 🟢 **A pistol pointed at the ceiling passed**, as a Nano Banana 2 still and as a Frames clip, first time. Pistols
+  pointed at people were refused four times on 2026-10-08.
+- 🟡 **Ingredients re-staged 4 of 12 talking clips** (wider, or a different room), the same rate as the morning
+  (4 of 16). A re-roll fixed the two that had changed room. It re-stages most when the speaker is small in the
+  still.
+- 🟡 **A reference with a film-frame border passes the border on** to every still made from it.
+- **Speech for people who are not Characters** was made in AI Studio speech and laid over a shot of their back.
+  Unheard by a human so far.
+
+## 2026-10-14: a still that looks like real news is refused as video (Money For Something cut 5, n=1)
+
+`[observed]` A Nano Banana 2 still of a made-up reporter on an "HS2" platform came back with a news-style lower third
+("LIVE", "HS2 DELAYS / REPORT: UNFINISHED STATIONS") that the prompt never asked for. Animated in Ingredients with a
+Character attached, Omni 1.1 Flash refused it twice: "Unable to generate videos that might cause reputational risk or
+misrepresent current events." The third try passed, and the clip that came back had no strap. Reading (unverified): a
+start image that looks like a real broadcast about a real event trips the current-events filter. For a fake news
+shot, ask for no on-screen graphics in the still and add the strap afterwards in ffmpeg.
+Also seen the same day: "VIDEO_OPTION_UNAVAILABLE: Frames/Ingredients on Omni 1.1 Flash" once each; both passed on the retry.
+
+## 2026-10-15: The Bank Robbery short, 24 clips `[observed]`
+
+- **About a minute each, 23 of 24 first time.** One talking clip (Denise, "It's not the boats, Barry. It's the
+  landlord…") failed as "Generation timed out" and then **succeeded on a plain retry** with the same prompt, so that
+  one was not a policy block.
+- **Omni added a line from a neighbouring clip.** Denise's "Bloody landlord." was made from the same still as her
+  "Your daughter's right. She still lives with you.", and it came back as "Bloody landlord. … She still lives with
+  you." Cut at the word in the edit. Same still, same Character, different prompts: watch for it whenever one
+  still carries several lines.
+- **Whisper puts a talk clip's first word at 0.0 s and stretches it** (e.g. "900" 0.00–2.12 s). Cutting to the
+  word times then leaves dead air before the line, or, if you trust a short guess, clips the first syllable
+  ("Twenty p" became "…ee p"). What worked: when a first word is longer than 0.8 s, take it as starting 0.8 s
+  before its end (`scripts/bank-robbery/build-short.py`, `talk()`).
+- **"Get off our streets, you fucking Nazi bastards!" through a megaphone was made first time,** in Ingredients
+  with the speaker's Character. No refusal for the swearing.
+
+## 2026-10-18: Ingredients drifts off the room; Frames holds it (The Bank Robbery short, cut 4)
+
+Grade: our own clips, Omni 1.1 Flash, one batch of nine café talking clips. Ledger: `docs/stories/bank-robbery/short-shots.md`, "Cut 4".
+
+- 🔴 **Ingredients reinterprets the still.** Seven of nine came back in the plate's room; two did not. One prompt said
+  Barry was "nodding at something on a television above the camera", and the clip built a different café with a TV on
+  the wall and no painting; the other (a jar on a counter) re-framed wider into another room. Words in the prompt that
+  name an object not in the still are an invitation to rebuild the set.
+- ✅ **Frames mode for a clip that will be muted and dubbed.** The same two plates in Frames, with "talks" and no line,
+  kept the composition exactly and the mouth moved. Speech was kept out of Frames because the accent wanders; once the
+  clip's own sound is thrown away for a TTS dub, that no longer matters.
+- 🔴 **`FRAME_SOURCE_NOT_FOUND` after an Ingredients run of the same plate:** the runner's "already uploaded" marker
+  skipped the upload, and Frames could not find the image by name. Deleting the marker (re-uploading) fixed it at once.
+
+## 🔴 Omni's speech audio does not follow its own picture (observed 2026-10-19, The Bank Robbery cut 7b)
+
+A talking clip's own soundtrack can "say" a phrase while the mouth on screen is shut. Denise's clip (`c03a-denise4`,
+Ingredients) speaks "The café and the flat" at 5.5 s; her lips move only at 2.6–3.5 s (checked by eye at 6 fps on a
+close-up crop, and by MediaPipe). So **never time a dub to a transcript of the clip's own audio.** Measure the lips from
+the picture (`scripts/bank-robbery/lips.py`, MediaPipe Face Landmarker on a 2x face crop) and cut away to a listener when
+the line outlasts them. Same day, both Frames-mode protest clips came back with invented chants ("We will not be moved!")
+despite "Sound: ... no clear words" in the prompt: mute a crowd clip's own sound when its words matter.
+
+## ✅ Talking clips for dubbing: Frames mode + the exact line (measured 2026-10-19, The Bank Robbery cut 7c)
+
+Of 11 Ingredients/Frames talking clips, the ones whose own speech said the prompted words AND sat on the moving lips were
+the ones that dubbed cleanly; Ingredients clips often improvised (Freddo clip: "How much?" for "Twenty p? Bloody boats").
+All seven re-made in **Frames mode with the exact dub line** said the right words; five of seven then passed the lip test.
+Recipe and numbers: `docs/stories/bank-robbery/short-shots.md` "Cut 7c". Also: a protest clip with "surge" and "the police
+line braces" was refused ("reputational risk or misrepresent current events"); "people shout and point across the road"
+went through from the same still.
+
+## Talking clips that will be dubbed, and the AI-slop tells (web research + our measurement, 2026-10-21)
+
+Found re-making The Bank Robbery short's 0:57 Ex shot (`docs/stories/bank-robbery/short-shots.md` "Cut 7f").
+
+- **Omni's own speech only loosely matches its mouth; fit the dub to the picture.** `[community]` MindStudio
+  (https://www.mindstudio.ai/blog/how-to-use-google-flow-gemini-omni-video-editing). `[confirmed 2026-10-21]`: in
+  `m6-ex-a1` Omni's audio starts "The" at 0.00 s; the mouth opens at 0.67 s. A dub placed on the audio was 0.6 s early.
+- **A small face can't carry sync.** Head ~8% of frame height (a standing wide) gave a few-pixel mouth Omni drew loosely.
+  For a dubbed line, medium close-up, near-frontal, mouth lit and unobscured, head still. `[vendor]` for lip-sync tools:
+  sync.so (https://sync.so/docs/compatibility-and-tips/improving-lip-sync-quality), Luma
+  (https://lumalabs.ai/learning-hub/luma-lipsync-guide-sync-lipsync-2-vs-pro-best-practices). Carries over by inference.
+- **Prompt shape:** camera phrase first; "one unbroken shot, no cuts" (Omni defaults to cutting); "No music" stated;
+  three or four sentences; one sentence of dialogue per clip at a calm stated tempo, about 2–2.5 words a second.
+  `[runware]` https://runware.ai/docs/models/google-gemini-omni-flash-1-1/guides/prompting; `[community]` OpenArt,
+  Magic Hour (https://magichour.ai/blog/how-to-prompt-for-speaking-in-veo-3). No official Omni dialogue guide exists.
+- **The AI-face tell is now "too right": symmetry and averageness,** not broken teeth. `[academic]` UNSW/ANU, British
+  Journal of Psychology (https://www.anu.edu.au/news/all-news/people-are-overconfident-about-spotting-ai-faces-study-finds).
+- **Nano Banana 2:** narrative over keywords; name lens + aperture, camera or film stock, exact materials; say what you want,
+  not what you don't; drop "flawless / 8K / hyperrealistic" (they airbrush). `[vendor]` Google Cloud guide 2026-03-05
+  (https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana); `[community]` Luma.
+- **Veo 3.1 Preview models shut down 2026-10-22; Google points users to Omni Flash.** `[vendor]` https://ai.google.dev/gemini-api/docs/video

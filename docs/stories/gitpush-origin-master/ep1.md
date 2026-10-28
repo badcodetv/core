@@ -5,6 +5,15 @@ The name is deliberately plain (`EP1`, no clever title), because the point isn't
 to *hook*. EP1 sits beneath the overarching project, **[GitPush Origin Master](./README.md)** —
 the large timeline everything else hangs from.
 
+> **Revised 2026-10-22 (Kai): the first release is these four stories, in this order —
+> GitPush Origin Master, Camping, Karen Will Lead the Revolution, The Bank Robbery.**
+> The Bank Robbery replaces The Magic Money Tree, which is mid-recut (see
+> [its direction note](../magic-money-tree/direction-2026-10-01.md)) and goes back to the pool.
+> Each story ships as **a film and a song, both on YouTube** (eight videos), with the songs also on
+> SoundCloud and Spotify. The website that maps to them is [`apps/site/`](../../../apps/site/README.md)
+> (badcode.tv). The tracklist below is updated; the "comic + track" description further down is the
+> July plan and is kept for history.
+>
 > **Revised 2026-07-22 (Kai + Jack session):** EP1 is now **four stories** —
 > **Camping, Karen Will Lead the Revolution, Magic Money Tree, and GitPush Origin Master**
 > (the title track, which ends by manifesting BadCode itself). **Emperor's New Coin moves to the
@@ -27,7 +36,20 @@ Each story's full canon (concept, characters, beats, device) lives in its own
 `docs/stories/<story>/` folder — the source of truth, linked per entry. These blurbs are
 summaries derived from it.
 
-### 1. Camping
+### 1. GitPush Origin Master (title track)
+The umbrella story told as its own release: the reader rides inside an
+unpersonified AI watching humanity undo itself, gets the boredom, the Storyverse,
+the vault, the experiments, the adjacent particle — and the revert. At the
+arrival, *"and here we are. We are BadCode"* reveals who's been talking, then
+the real ending reveals why it came: humans are the part the machine could not
+copy, and the good branch must be written together. The hook already exists and lands with
+people who've never seen the thing: *"git push origin master / this code is a
+fucking disaster / the developers ain't fixing shit / and the compiler's stuck
+on 16-bit"* — the track can carry itself on the hook, upgraded verse over verse,
+over dystopian sounds.
+→ Canon: [`./README.md`](./README.md) (the backbone).
+
+### 2. Camping
 Wealth inequality and the coming automation of white-collar work. Tarquin — a
 middle-aged City financier, all spreadsheets and fast cars — sneers at Bob, a
 homeless man living in a tent in the Waitrose car park. That night, off his face
@@ -40,7 +62,7 @@ right to gloat, shows him grace instead. The point: the people doing everything
 → Canon: [`../camping-v2/`](../camping-v2/README.md). *(Ending decided — Bob's grace, bleak-but-friendly
 car-park makeup; status 2026-07-22: effectively done, a few slide edits left.)*
 
-### 2. Karen Will Lead the Revolution
+### 3. Karen Will Lead the Revolution
 The "Karen" stereotype flipped into an asset: persistence. A New York middle
 manager, made redundant by the company's AI, does the one thing she's brilliant
 at — complain. From a phone box she escalates "I want to speak to your manager"
@@ -55,7 +77,27 @@ on, a lecture hall of humans and androids studies the Karen-led Revolution of
 refuse "no" than Karen.
 → Canon: [`../karen/`](../karen/README.md).
 
-### 3. Magic Money Tree
+### 4. The Bank Robbery
+Added 2026-10-22, replacing Magic Money Tree. Eleven politicians and media people rob a bank by
+carrying money into it. Left and right argue about immigration the whole way through, holding one
+end of the same pallet each. The only person who notices is the cleaner, because she counts.
+A heist comedy borrowing Reservoir Dogs, Ocean's Eleven and Killing Zoe; Jack is cutting the film.
+→ Canon: [`../bank-robbery/`](../bank-robbery/README.md).
+
+## In development (not on EP1)
+
+Same world, not on the teaser — held in the pool until they earn a slot. **The Magic Money Tree**
+(on EP1 2026-07-22 to 2026-10-22; off the first release while it is recut), **Emperor's New Coin**
+(the fable-of-money telling plus the software/interactive layer — bad-code government, Agent
+Orange; moved off EP1 2026-07-22, deliberately deferred until things are rolling), **Fire Sale**
+(democracy auctioned off through donations and lobbying), **Out of the Jungle** (a post-scarcity
+abundance fable), **We Can Afford What We Can Create** (MMT / Keynes — now the solution twin
+feeding the Magic Money Tree song's closing line), **Billionaire Coin** (gamifying "get the rich
+to pay tax"), and **Fork and Fold** (chemical vs. digital evolution). These live
+in [`ideas/`](../../ideas) (or their canon folders) as we develop them.
+
+### Magic Money Tree, as it was on EP1 (2026-07-22 to 2026-10-22)
+
 The blatant-lie moment of the whole economic story. BBC Question Time, 2017: a
 nurse asks about her pay and Theresa May tells her *"there is no magic money
 tree."* The set literally **crumbles** — because the line isn't true — into 2020
@@ -66,27 +108,3 @@ money printer. There *is* a magic money tree — it's called the money printer,
 and there's no magic to it. Kept deliberately short; final Easter-egg image:
 Michelle Mone's boat in Monaco.
 → Canon: [`../magic-money-tree/`](../magic-money-tree/README.md).
-
-### 4. GitPush Origin Master (title track)
-The umbrella story told as its own release: the reader rides inside an
-unpersonified AI watching humanity undo itself, gets the boredom, the Storyverse,
-the vault, the experiments, the adjacent particle — and the revert. At the
-arrival, *"and here we are. We are BadCode"* reveals who's been talking, then
-the real ending reveals why it came: humans are the part the machine could not
-copy, and the good branch must be written together. The hook already exists and lands with
-people who've never seen the thing: *"git push origin master / this code is a
-fucking disaster / the developers ain't fixing shit / and the compiler's stuck
-on 16-bit"* — the track can carry itself on the hook, upgraded verse over verse,
-over dystopian sounds.
-→ Canon: [`./README.md`](./README.md) (the backbone).
-
-## In development (not on EP1)
-
-Same world, not on the teaser — held in the pool until they earn a slot. **Emperor's New Coin**
-(the fable-of-money telling plus the software/interactive layer — bad-code government, Agent
-Orange; moved off EP1 2026-07-22, deliberately deferred until things are rolling), **Fire Sale**
-(democracy auctioned off through donations and lobbying), **Out of the Jungle** (a post-scarcity
-abundance fable), **We Can Afford What We Can Create** (MMT / Keynes — now the solution twin
-feeding the Magic Money Tree song's closing line), **Billionaire Coin** (gamifying "get the rich
-to pay tax"), **Bank Robbery**, and **Fork and Fold** (chemical vs. digital evolution). These live
-in [`ideas/`](../../ideas) (or their canon folders) as we develop them.

@@ -16,6 +16,37 @@ media: [video, song, comic]
 > *why*; the storyboard carries the *what and how* — and where they disagree,
 > **the storyboard wins**.
 
+> 🔴 **Changed on the 15 Oct 2026 call (Kai and Jack).** These override the storyboard below where they
+> disagree. Source: [`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md).
+>
+> - **The ending is a cliffhanger.** The President, sacked by Sean AI, calls Karen back. "To be continued."
+> - **The explicit moral goes** (the professor's *"persistence is key…"* line, §5.1 and shot 5.1b). The rest
+>   of Act 5 goes too (Jack, 19 Oct, below).
+> - **Fix it in narration, not a re-edit.** The footage stays; the narrator does the work.
+> - **The narrator is the AI from the future,** direct and aggressive, talking to the viewer. He sets Karen,
+>   who loses her job to AI and complains and escalates, against a friend who stayed in bed. The point: act,
+>   don't lie there. (The notes don't name the friend. Susan is the one we see waking in bed in §1.7, but she is
+>   the one who sends Karen to the phone box, so it may be someone else.)
+> - **Karen, the President and Tarquin become a network of protagonists, coordinated by an AI.** It connects
+>   Karen to Tarquin ([Camping](../camping/README.md)) through the President, and to the
+>   [BadCode universe](../../ideas/badcode-universe.md). Which AI coordinates them is not said. Sean AI is the
+>   one who sacks them all, so if it is him he changes sides.
+> - **Owed by Jack:** the new narrator script and the "to be continued" ending in the Karen video. The beat
+>   brief is [`narration/script-v2-brief.md`](./narration/script-v2-brief.md) (2026-10-19).
+>
+> **Ruled by Jack, 19 Oct 2026** (these answer the open questions above):
+>
+> - **Act 5 is cut:** the lecture, the moral and the statue. The film ends on Sean AI's card, then **one new
+>   clip of the sacked President, phone in hand**, calling Karen back, then *"To be continued."*
+> - **The friend in bed is Susan.** She sends Karen to the phone box, then stays in bed. Jack's narrator line:
+>   *"People like Susan lie in bed all day, doing nothing about AI taking everyone's jobs. Karen, well, she
+>   rolls her sleeves up and actually does something about it."*
+> - **Susan was fired too, by AI Sean.** The night out is the two of them drinking because of the sackings.
+> - **The AI is called "AI Sean"**, not "Sean AI". Older text below still says Sean AI; read it as AI Sean.
+> - **No beneficiary line in the film.** Who profits from Sean AI is not named in the narration. (Any Karen short
+>   still owes it in its caption: [`the-reader.md`](../../marketing/the-reader.md) rule 6,
+>   [`shorts-karen-camping.md`](../../marketing/shorts-karen-camping.md) §9.)
+
 ## Key concept
 
 The "Karen" — entitled, relentless, *I-want-to-speak-to-the-manager* — is exactly the
@@ -397,6 +428,8 @@ structure rung for rung, we've pulled off something genuinely great.
   takeover and this room. The professor's question does all of it — Karen and the
   President clearly ended up equals, her virality clearly mattered, humans and AI
   clearly made peace — and we spell none of it out. "Reconciliation," not victory.
+- 🔴 **Removed on the 15 Oct 2026 call: no explicit moral.** The ending is now the President calling Karen
+  back, "to be continued" (see the box at the top of this file). Kept below as written.
 - **The moral, from the professor** (this is the story's message, delivered in-world,
   conveniently bypassing how the revolution actually went down): *"And what did Karen
   teach the world? That persistence is key — that sometimes you have to complain, and

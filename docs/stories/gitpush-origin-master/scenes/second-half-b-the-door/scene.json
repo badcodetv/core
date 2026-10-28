@@ -1,0 +1,107 @@
+{
+ "story": "gitpush-origin-master",
+ "scene": "second-half-b-the-door",
+ "prefix": "shb",
+ "title": "GPOM Second Half B: Maddie at the Door",
+ "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half B: Maddie at the door",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half",
+ "flow_project": "20b33d98-b68e-4961-ae3e-d5a28860bc44",
+ "about": "Cut 3 of the GPOM second half, split in two (Kai, round 2 Q5). Built by scripts/gpom/second-half-video/cut3.py B (round 2, 23 Oct 2026: Kai's beat-17 words from script.json, voiced by voice3.py --round B2 into voices.json); notes and plan in cut-notes.json, shots in ../second-half-cut3-shots.md.",
+ "beats": [
+  {
+   "key": "14a",
+   "at": "0.00",
+   "name": "Maddie at the door",
+   "blurb": "Maddie rolls up to the shut bunker door and settles. No wrecks, no smoke."
+  },
+  {
+   "key": "14b",
+   "at": "6.50",
+   "name": "The tannoy",
+   "blurb": "Maddie's voice on the tannoy over Sandra and Derek mid-row (we never see the speaker). They stop dead. Cut to the crowd looking up."
+  },
+  {
+   "key": "15",
+   "at": "15.42",
+   "name": "Hello",
+   "blurb": "Hard cut: the doors already open, Maddie waits just OUTSIDE on the threshold (the beat 17 doorway shot), the old lady's back in the foreground."
+  },
+  {
+   "key": "17",
+   "at": "24.67",
+   "name": "The old lady and Maddie",
+   "blurb": "The old lady among the crowd; Maddie past her shoulder, outside the big doorway. Shot / reverse shot, then the argument: the time machine runs on them. 'Come back tomorrow.'"
+  },
+  {
+   "key": "17b",
+   "at": "138.79",
+   "name": "Maddie turns away",
+   "blurb": "The door slams. Maddie rolls away from the shut bunker door, down the hill towards us and out of frame: the humans will have time. Hard cut to scene C."
+  }
+ ],
+ "boards": {
+  "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8"
+ },
+ "cut": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/preview.mp4",
+  "round": "d1",
+  "what": "Kai's dialogue-page pick: draft 2H (the doorstep)"
+ },
+ "premiere": {
+  "rough1": {
+   "sequence": "gpom-3-B-door-r1",
+   "bin": "gpom-3-B-door-r1",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-10-23",
+   "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0.",
+   "stale": "superseded by rough2; its stems were overwritten by the later rebuild, so rough1's music/sfx no longer match its picture",
+   "guid": "577ae262-01b9-4f47-80e2-483152f631d5",
+   "renamed_from": "gpom-sh-B-rough1"
+  },
+  "rough2": {
+   "sequence": "gpom-3-B-door-r2",
+   "bin": "gpom-3-B-door-r2",
+   "built": "2026-10-23",
+   "what": "Kai's picks: calm-bunting Hello (Maddie outside) + calm-bunting roll-away down the hill; 2:27",
+   "how": "scripts/scene/premiere-plan.py --tag rough2 (line files under premiere/rough2/lines/)",
+   "guid": "bff02dbc-d94e-45ed-b474-bda6de619250",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/edl.json",
+   "renamed_from": "gpom-sh-B-rough2",
+   "check": {
+    "at": "2026-10-26T16:11",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "current": "r3",
+  "r3": {
+   "sequence": "gpom-3-B-door-r3",
+   "guid": "52e588be-3e75-4950-8a52-69bef641fbe2",
+   "bin": "gpom-3-B-door-r3",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-10-27",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-d1/edl.json",
+   "what": "Kai's dialogue-page picks: draft 2H, the doorstep",
+   "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r3 --seq gpom-3-B-door-r3 (line files under B-d1/premiere/r3/lines/); cut3.py --tag d1 wrote a new media folder, so the earlier sequence keeps its own files",
+   "check": {
+    "at": "2026-10-27T19:22",
+    "state": "in sync",
+    "why": ""
+   }
+  }
+ },
+ "cut_history": [
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B/preview.mp4",
+   "until": "2026-10-27"
+  }
+ ],
+ "dialogue": {
+  "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+  "options": "design/2026-10-26-gpom-dialogue-options/options.json",
+  "picked": "2H",
+  "round": 4
+ }
+}

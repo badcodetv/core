@@ -592,7 +592,7 @@ Garden Court unless a licence comes through), ≈ 20% our own cards and charts.
   the pages blocked bots); the `dataviz` skill; one line, one emphasised point per chapter; the
   1960–2021 waypoints still to be pulled by hand (§3 of the research file).
 - **VO:** the narrator is a Suno Voice → stems → one clip per line, slid onto the picture in
-  Premiere ([`../gitpush-origin-master/songs/narration.md`](../../../gitpush-origin-master/songs/narration.md) §1);
+  Premiere ([`../gitpush-origin-master/songs/archive/narration-v5.5.md`](../../../gitpush-origin-master/songs/archive/narration-v5.5.md) §1);
   every line short and full-stopped. Beds: a held note, a room; the D&B track only at the end.
 - **Cut:** per-beat clips on a Premiere timeline (ruling 2026-08-24 — concat is preview-only);
   `scripts/delivery-qc.sh` before upload (camping shipped crushed; never again).

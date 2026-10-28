@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/19c-b.png",
+ "made": "2026-10-26T16:07:19+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, inside a small cold 1930s kitchen, the camera low on the table just behind an identical 1930s wooden cathedral-top radio with a glowing amber dial: its glowing amber dial and carved wooden top fill the near foreground on the left. Leaning in towards it, large in frame, a white man in his forties in a vest with stubble and a Black woman in her forties with her hair tied up in a scarf, their real-skinned faces lit amber from below by the dial, rapt, mouths slightly open, nodding along. A red scarf hangs on the back of a chair; one warm bulb above; snow on the black window behind them and the small red moon. Most of the frame in shadow; the brightest values are the dial and its glow on their faces. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "7b5d164a-8784-4037-b3bf-fb00c7d6f2ff",
+ "why": "Speakeasy Mint scene 19 round 1, 19c"
+}

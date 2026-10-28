@@ -62,6 +62,10 @@ agreement. The exact narrator words and per-scene details are deliberately
 open ("there's a really funny way to say that thing" is allowed to arrive
 later). Change the story here first, then the media.
 
+🔴 **Open since the 15 Oct 2026 call:** Tarquin's ending. He now wakes from the trip back in the normal
+world as a banker with a changed mission, not in the car park. Which film it applies to, and what happens
+to beats 10 to 12, is not yet said. See [`characters/tarquin.md`](./characters/tarquin.md).
+
 ## Production tracker
 
 | Medium | Where | Status |

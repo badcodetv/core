@@ -33,7 +33,7 @@ scannable metadata lives in the table.
 | [The Inner Net](inner-net.md) | the connection that transcends the wire — why AI slop can't touch it | comic · music | seed |
 | [Fire Sale](fire-sale.md) | democracy: everything must go — closing down for "Democracy as a Service" | comic · music | seed |
 | [Out of the Jungle](out-of-the-jungle.md) | the only scarcity left is artificial — when will we press the button? | comic · music | seed |
-| [The Bank Robbery](bank-robbery.md) | debasement heist — "the best robbery is one where the victims blame each other" | comic | seed |
+| [The Bank Robbery](bank-robbery.md) | debasement heist — left and right squabble about immigration while robbing the same bank | video · comic | **graduated** → [`stories/bank-robbery/`](../stories/bank-robbery/README.md) |
 | [We Can Afford What We Can Create](we-can-afford-what-we-can-create.md) | Keynes: anything we can actually do we can afford — Magic Money Tree's solution twin | comic | seed |
 | [Billionaire Coin](billionaire-coin.md) | gamified "get the rich to pay tax" — a prestige coin for the egos | comic | seed |
 | [Fork and Fold](fork-and-fold.md) | chemical evolution explodes, AI implodes — two engines, one future | comic · music | seed |
@@ -74,6 +74,7 @@ scannable metadata lives in the table.
 | [Ableton Automation](ableton-automation.md) | hands inside Ableton, the way `premiere-mcp` has hands inside Premiere | software · music | parked |
 | [Sound Design in Serum, by Computer Use](serum-via-computer-use.md) | an agent that turns the knobs — the camping track's reference synth, actually owned | software · music | parked |
 | [More Premiere Automation](premiere-automation-gaps.md) | the gaps the bridge's own notes admit — no on-screen text, no whole-timeline read | software · video | parked |
+| [The BadCode Universe](badcode-universe.md) | one shared universe, like Marvel — Karen, Tarquin and the President cross over toward a non-violent revolution *(Kai and Jack, 15 Oct 2026 call)* | video · comic | developing |
 
 ## Graduated & canon (the rest of the map)
 
@@ -101,6 +102,8 @@ them from here.
   [Future Proof](../stories/gitpush-origin-master/future-proof.md)) and named latent nodes
   (An Optimistic Lens, the Galileo piece, the Future Proof policy fleet — which claims
   [Billionaire Coin](billionaire-coin.md)).
+- [The Bank Robbery](../stories/bank-robbery/README.md) — heist comedy, graduated 2026-10-06:
+  first-pass spine and a 13-scene storyboard. Nothing ruled, nothing made.
 - [Brand images](../images/README.md) — standalone imagery catalogue (server-hall-monolith, …).
 
 ## Not migrated from the old repo

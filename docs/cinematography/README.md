@@ -11,7 +11,7 @@ Driven by the **`shot-craft`** skill (`.claude/skills/shot-craft/`).
 | --- | --- |
 | How do I phrase this so Veo/Nano Banana obeys? | `flow-prompt` → [`../flow/`](../flow/README.md) |
 | Which tool — Flow, ffmpeg, Premiere, sourcing? | `video-fx` → [`../video-fx/`](../video-fx/README.md) |
-| What does a BadCode *panel* look like? | `badcode-art-direction` |
+| What does a BadCode *still* look like? | `new-image` |
 | What does a BadCode *brand image* look like? | `new-image` |
 | Does the **story** grip? | `story-craft` → [`../story-craft/`](../story-craft/README.md) |
 | Who is this for? | [`../marketing/the-reader.md`](../marketing/the-reader.md) |

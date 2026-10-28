@@ -1,0 +1,78 @@
+{
+ "_note": "Karen 10f (2026-10-19, rev 3): mouth openings read from 12 fps close-up strips of the assembled shot; at = opening + 0.03 - the slice lead-in. Tempo cap 1.15.",
+ "duration": 18.166667,
+ "phrases": [
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 0.0,
+   "to": 0.62,
+   "at": 0.84,
+   "tempo": 1.0,
+   "text": "Karen!",
+   "mouth": 1.07
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 1.22,
+   "to": 1.92,
+   "at": 1.63,
+   "tempo": 1.15,
+   "text": "Is that you?",
+   "mouth": 1.77
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 2.52,
+   "to": 4.66,
+   "at": 3.4,
+   "tempo": 1.15,
+   "text": "I have an urgent message for you.",
+   "mouth": 3.5
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 5.3,
+   "to": 6.66,
+   "at": 7.95,
+   "tempo": 1.15,
+   "text": "For fuck's sake, listen!",
+   "mouth": 7.98
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 7.22,
+   "to": 8.76,
+   "at": 9.57,
+   "tempo": 0.92,
+   "text": "I have seen what happens if",
+   "mouth": 9.62
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t01-tarquin-a.wav",
+   "from": 8.76,
+   "to": 10.42,
+   "at": 11.54,
+   "tempo": 1.15,
+   "text": "we do not take action!",
+   "mouth": 11.57
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t02-end2-b.wav",
+   "from": 2.12,
+   "to": 2.52,
+   "at": 16.32,
+   "tempo": 1.0,
+   "text": "Christ,",
+   "mouth": 16.34
+  },
+  {
+   "src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Karen/narration-v2/t02-end2-b.wav",
+   "from": 2.52,
+   "to": 3.36,
+   "at": 17.15,
+   "tempo": 0.9,
+   "text": "are you even there?",
+   "mouth": 17.12
+  }
+ ]
+}

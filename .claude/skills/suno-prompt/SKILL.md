@@ -20,6 +20,49 @@ Never let a request stall on "that's not really a prompt question."
 this skill exists to replace. Work in short rounds: ask the few questions that actually change the
 output, draft fast, then refine against what the user hears.
 
+🛑🛑🛑 **EXPLORING (a new voice, a new sound, "try different ones", "experiment"): YOU DO NOT WRITE
+THE PROMPTS. Not one word of them.** Jack, 2026-10-24: *"i do not want the same mistakes made over
+and over, i cannot emphasise this enough."* 400+ Bank Robbery takes came out as one voice, and every
+time it was a step where this session — with this file, CLAUDE.md and memory loaded — put its hands
+on the round. The whole round is now one command, and your only job is to supply raw inputs:
+
+```
+docs/stories/<story>/songs/sealed-rN/   jack.md (the message, VERBATIM) · lyrics.txt (words only)
+                                         listen.md (ONE fresh listen, verbatim) · reference.md (URL +
+                                         Suno's raw record) · facts.md (last verdict: facts + quotes)
+python3 scripts/suno/sealed-round.py write <dir>            # sealed writers → gate → lyric check
+python3 scripts/suno/sealed-round.py run <dir> <title> --yes # one Create per prompt, verbatim
+```
+
+`run` refuses a round that was edited after the gate, and `write` stops (no override flag exists)
+if the prompts still share wording after two rewrites. **Before every exploring round, read
+[`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)** — the list of
+every way we made the same song again, and the guard for each. None of the house rules in the
+rest of this file goes into an exploring round, not even as a "tip" in the brief.
+
+🔑🔑 **The rest of this file is for REFINING** — a liked take exists and Jack wants it nudged, one
+tested change at a time. Everything below was learned once, mostly on one song, and stacking it onto
+every prompt is exactly what made every prompt alike.
+- **REFINE** (a liked take exists): start from that take's **sound, not its box**. Listen to it first
+  (`suno.mts record <songId>` then `listen_describe`): Bank Robbery's liked "psych folk funk, sitar,
+  tin whistle" take was really acoustic flamenco guitar over boom-bap. Keep its settings; change one
+  thing per version; bring a house rule in only when it is tested against that take. **Measure the
+  drift, don't guess it:** listen to a new take beside the reference and compare loudness range
+  and brightness (`listen_describe` measurements). Bank Robbery Round KA lost the vibe by going flat
+  (6 vs 12 LU) and bright (3.4–4 vs 2.6 kHz). Two hidden causes: much denser lyrics speed up the
+  delivery, and cutting a disliked intro also cut the drop it set up. Keep the contrast; change only
+  what was disliked.
+
+🔑 **The genre massively affects the voice — it picks the singer** (Jack, 2026-10-22). The genre /
+scene word in the Style box decides *who sings* far more than any voice adjective, accent word or
+artist name does. Same genre → same singer, however the voice is described (Bank Robbery: ~150
+takes over one cop-funk backing, Jack heard one voice; "Led Zeppelin" and "Rolling Stones" voices
+came out "basically the same"). **To change the voice, change the genre word** — put a voice
+tradition first (`Bristol trip hop, a hushed close-mic murmuring English man…`) and the music
+after, even a mismatched one. Evidence: `docs/suno-gpt/suno-voices.md` §2a–2d. ⚠️ **Not alone,
+though:** used with a one-clause voice and a fixed ban list, it still cloned the voice. A full
+`Lead vocal:` sentence plus Vocal Gender is what moved it (§2f).
+
 🔑 **All new Suno work is v6, in the new UI** (Kai, 2026-09-10). Never propose v5.5 or older —
 it cannot generate. A song sheet with an archive banner is a v5.5 history sheet: a new round on
 that song starts a v6 sheet (`docs/suno-gpt/archive/v5.5-era.md` §5).
@@ -30,7 +73,7 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 
 | File | What | Read when |
 |---|---|---|
-| `files/suno-v6.md` | 🔑 **Suno v6 (2026-09-09) — read FIRST.** v6 retired v5.5, so on any *model* or *control* question this file beats the older ones. The models (v6 / v6 Wild / Mini) and when to pick which, the new controls (**Variety**, **Personalize**, **Max Mode** toggle, **Vocal Gender**), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, **§5 the features worth suggesting unbidden**, downloads and credits, the v5.5 back catalogue, the test queue. **Day-one evidence: nothing measured yet — say "should", not "does"** | **First use in a conversation**, and any time a fix, a feature or a setting comes up |
+| `files/suno-v6.md` | 🔑 **Suno v6 (2026-09-09) — read FIRST.** v6 retired v5.5, so on any *model* or *control* question this file beats the older ones. The models (v6 / v6 Wild / Mini) and when to pick which, the new controls (**Variety**, **Personalize**, **Max Mode** toggle, **Vocal Gender**), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, **§5 the features worth suggesting unbidden**, downloads and credits, the v5.5 back catalogue, the test queue. 🆕 **§1b Speech (beta, 2026-10-01)** — a spoken voice + its score in one take; offer it whenever narration comes up, with its accent-drift warning. **§8c the anti-slop moves** (name techniques not genres, Wild→Cover, Max Mode polish Cover, Variety off). **Day-one evidence: nothing measured yet — say "should", not "does"** | **First use in a conversation**, and any time a fix, a feature or a setting comes up |
 | `system-prompt.txt` | Base operating procedure — modes, output format, character limits, edge cases | First use in a conversation |
 | `session-method.md` | **How to work, not what is true** — the iteration loop, the sheet/log/rules split, diagnose-before-rewording, why boxes grow, mechanical lyric verification, what counts as evidence | **Any multi-round session on an existing song**: a re-cut, a "this isn't right yet" loop, or picking up a song someone else iterated on |
 | `files/suno-tag-mechanics.md` | Prompt language: hybrid format, ordering, genre pairing, bracket language, exclude strategy, contamination words | First use in a conversation |
@@ -384,6 +427,13 @@ generate one per character and join them, which makes the blend structurally imp
 merely improbable. Cutting beats casting every time; the drop is free. (Camping looked like a
 two-hander and was really two solo verses either side of a 32-bar drop — every lever spent on
 in-generation casting there was wasted.)
+
+✅ **Want a different voice? Reference a real singer — translated.** Ask the human for a singer who
+has the voice, write the name in the sheet only (Suno rejects artist names), and put the translation
+in the box: scene + era + voice + delivery (`London retro soul, a raw husky contralto woman with a
+heavy North London accent`). It moved the voice when accent, origin and timbre words all failed
+(Bank Robbery, 2026-10-21, `suno-voices.md` §2c). 🔴 The scene word is a pool word and takes the music
+with it — if the style goes, put the music sentence back in front.
 
 **Contrast on axes the model renders, never on accent.** A detailed Scouse spec produced zero
 accent (2026-08-20, tested). Accent joins age on the describable-but-not-summonable list. Stack

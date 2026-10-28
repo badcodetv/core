@@ -31,7 +31,7 @@ not one was over the cap — but a box grown by hand in Suno, fusing clauses fro
 reached 1,186 characters, and the drum mechanics at its tail were never sent. Measure the sheet;
 then keep the browser honest by pasting from the sheet rather than typing into it.
 
-    python3 scripts/suno/measure-boxes.py docs/stories/gitpush-origin-master/songs/narration-v6.md
+    python3 scripts/suno/measure-boxes.py docs/stories/gitpush-origin-master/songs/archive/narration-v6.md
 """
 import re
 import sys

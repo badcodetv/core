@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/2026-10-26/voice/short6b.wav",
+ "made": "2026-10-26T13:52:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio API",
+ "tool": "scripts/money-for-something/oct26/voice/mfs-voice.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "MFS 26 Oct shorts narration, Jack's locked lines",
+ "prompt": "Barbers are paid to film their own hands so a robot can replace them. Can we hurry up and cure cancer, stop fucking around! The day before, the AI minister said we mustn't leave AI to tech bros and oligarchs. Good thing our money isn't left in the hands of soulless demons. Good news: he's left it to banks.",
+ "settings": {
+  "voice": "Zubenelgenubi",
+  "accent": "British (Brixton)",
+  "temperature": "1"
+ }
+}

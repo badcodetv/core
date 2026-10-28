@@ -10,6 +10,13 @@ updated: 2026-09-11
 Read `.claude/skills/badcode-art-direction/SKILL.md` first (Layer 0 — the global
 BadCode register; never copied into this file).
 
+> **Downfall prompt preparation, 2026-09-22:** the [Flow prompt pack](./scenes/downfall-flow-prompts.md)
+> follows Kai's new direction: mass dismissal in Times Square, travelling signals reaching
+> three banking centres, and a tracking Swindon sign shot leading into robotic battlefield
+> remnants. For these shots, that brief supersedes the older off-screen-collapse and distant-human
+> defaults below. The pack records the specific departures. Stills and video remain ungenerated;
+> this is a prompt package, not a change to the as-built cut order.
+
 > **Status (2026-09-11).** Cuts 1–6 are built; cut 7's seven ghost plates are locked.
 > Cuts 7–17 now have a complete text storyboard and image-prompt package. Start with the
 > [remaining storyboard and generation guide](./scenes/remaining-storyboard.md), then use its
@@ -151,6 +158,10 @@ thing the audience sees. Numbering by canon position was always going to rot, so
 
 **Asset ids are minted from what a scene IS, and never renumbered.** Position lives in exactly
 one place — this table. Reordering the film is a table edit, not a rename.
+
+### 🔴 Restructured 2026-10-15 — [`restructure-2026-10-15.md`](./restructure-2026-10-15.md)
+
+The drum & bass music video is now the downfall (replacing cut 4's narration). Cuts 6 `coin`, 7 `vault` and 8 `coin-lands` are cut as written (the coin and experiments go to the Storyverse); cut 9 `ledger` and 10 `now` are to be re-planned. **The new back-half table is owed** after the 16 October interview. The table below stands for cuts 1–3 until then.
 
 ### 🔴 The short cut — ruled 2026-09-13, [`critique-pass-7.md`](./critique-pass-7.md) — **current order**
 
@@ -709,7 +720,7 @@ worse than we would. So cut 3 states that an **interest exists** without spendin
 > telling you because of what it did to me. We'll get there."
 
 **Picture is untouched** — all six beats stand exactly as built. This is a **narration re-cut over
-finished footage**, so it needs a VO pass and a re-time; `songs/narration.md` §2's cut-3 table is
+finished footage**, so it needs a VO pass and a re-time; `songs/archive/narration-v5.5.md` §2's cut-3 table is
 the file that has to move. Batch it with any other cut-3 audio work rather than doing it alone.
 
 ### The six beats — 🔴 **settled with Kai 2026-08-21, after the plate search**

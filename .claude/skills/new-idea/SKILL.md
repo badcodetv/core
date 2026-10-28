@@ -46,7 +46,7 @@ The README table is the only structured artifact. Columns: `Idea | Hook | Media 
 **Routing.** `docs/ideas/` is for *content* ideas (stories, songs, shorts, images —
 things we'd make). If what's being captured is a **marketing/distribution play**
 (channels, campaigns, launch sequencing, promotion automation), hand off to the
-**`new-marketing-idea`** skill — it owns `docs/marketing/` and carries the
+**`chief-of-staff`** skill's intake. It owns `docs/marketing/` and carries the
 marketing-specific interview. If it fits neither, park it in `docs/misc/`. See
 `docs/README.md` for the section map.
 

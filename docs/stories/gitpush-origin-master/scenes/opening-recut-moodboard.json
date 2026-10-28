@@ -1,0 +1,338 @@
+[
+ [
+  "toast",
+  "TO1T-a",
+  "Round 3 \u00b7 TO1 with the table (Kai's pick)",
+  "Edit of TO1: add a long dark wood table toward camera with papers, laptops, champagne; warmer, less glossy grade; keep HEADCOUNT -200,000 screen."
+ ],
+ [
+  "toast",
+  "TO1T-b",
+  "Round 3 \u00b7 TO1 with the table",
+  "Edit of TO1: add a long dark wood table toward camera with papers, laptops, champagne; warmer, less glossy grade; keep HEADCOUNT -200,000 screen."
+ ],
+ [
+  "street",
+  "ST4-b",
+  "Round 2 \u00b7 the swap from above, made messy",
+  "Ref ST2 + KEEP-rain. Top-down rain plaza, umbrellas scattered not in lines, KEEP-rain's black server cabinets on trolleys at odd angles, lorry at the kerb."
+ ],
+ [
+  "street",
+  "ST4-c",
+  "Round 2 \u00b7 the swap from above, made messy",
+  "Ref ST2 + KEEP-rain. Top-down rain plaza, umbrellas scattered not in lines, KEEP-rain's black server cabinets on trolleys at odd angles, lorry at the kerb."
+ ],
+ [
+  "street",
+  "DB1-a",
+  "Round 2 \u00b7 one desk, one box, KEEP-rain's cabinets",
+  "Ref ST3 + KEEP-rain. Woman walks toward camera with her box; technicians wheel KEEP-rain's black cabinet into the gap where her desk was."
+ ],
+ [
+  "street",
+  "DB1-b",
+  "Round 2 \u00b7 one desk, one box, KEEP-rain's cabinets",
+  "Ref ST3 + KEEP-rain. Woman walks toward camera with her box; technicians wheel KEEP-rain's black cabinet into the gap where her desk was."
+ ],
+ [
+  "toast",
+  "BD1-a",
+  "Round 2 \u00b7 a real boardroom in TO2's light",
+  "Ref TO2. Dark wood, rain, plain unglamorous owners of capital in their fifties and sixties, seated, quiet toast. No screens, no graphs."
+ ],
+ [
+  "toast",
+  "BD1-b",
+  "Round 2 \u00b7 a real boardroom in TO2's light",
+  "Ref TO2. Dark wood, rain, plain unglamorous owners of capital in their fifties and sixties, seated, quiet toast. No screens, no graphs."
+ ],
+ [
+  "toast",
+  "BD2-b",
+  "Round 2 \u00b7 four men by the rainy window",
+  "Ref TO2. TO2's corner office as a small private meeting: four older men, laptop, champagne poured. No screens."
+ ],
+ [
+  "toast",
+  "BD2-c",
+  "Round 2 \u00b7 four men by the rainy window",
+  "Ref TO2. TO2's corner office as a small private meeting: four older men, laptop, champagne poured. No screens."
+ ],
+ [
+  "market",
+  "MK4-a",
+  "Round 2 \u00b7 an ordinary bank trading floor today",
+  "Present-day London bank trading floor, plain monitors, shirtsleeves, unglamorous."
+ ],
+ [
+  "market",
+  "MK4-b",
+  "Round 2 \u00b7 an ordinary bank trading floor today",
+  "Present-day London bank trading floor, plain monitors, shirtsleeves, unglamorous."
+ ],
+ [
+  "market",
+  "MK5-a",
+  "Round 2 \u00b7 one trader, one chart",
+  "Over the shoulder at a modern desk, share price climbing, half-eaten sandwich."
+ ],
+ [
+  "market",
+  "MK5-b",
+  "Round 2 \u00b7 one trader, one chart",
+  "Over the shoulder at a modern desk, share price climbing, half-eaten sandwich."
+ ],
+ [
+  "market",
+  "MK6-a",
+  "Round 2 \u00b7 the exchange floor today",
+  "Modern exchange floor: small posts of flat screens, few traders, TV crew. Quiet, not glitzy."
+ ],
+ [
+  "market",
+  "MK6-b",
+  "Round 2 \u00b7 the exchange floor today",
+  "Modern exchange floor: small posts of flat screens, few traders, TV crew. Quiet, not glitzy."
+ ],
+ [
+  "choir",
+  "WL1-a",
+  "Round 2 \u00b7 inside the well, the ship's light pouring down",
+  "Ref CH5 + CH6. Looking up the well of hooded singers; the ship hovers over the opening and its floodlight is the light."
+ ],
+ [
+  "choir",
+  "WL1-b",
+  "Round 2 \u00b7 inside the well, the ship's light pouring down",
+  "Ref CH5 + CH6. Looking up the well of hooded singers; the ship hovers over the opening and its floodlight is the light."
+ ],
+ [
+  "choir",
+  "WL2-a",
+  "Round 2 \u00b7 out of the well: the army and the ship",
+  "Ref CH5 + CH6. Risen out of the well: the shaft sunk in CH6's platform, the army round the rim, the ship beaming down into it."
+ ],
+ [
+  "choir",
+  "WL2-b",
+  "Round 2 \u00b7 out of the well: the army and the ship",
+  "Ref CH5 + CH6. Risen out of the well: the shaft sunk in CH6's platform, the army round the rim, the ship beaming down into it."
+ ],
+ [
+  "choir",
+  "WL3-a",
+  "Round 2 \u00b7 CH7's face, inside the well",
+  "Ref CH7 + CH5. CH7's hooded face, the church removed, singing in the well under the white light."
+ ],
+ [
+  "choir",
+  "WL3-b",
+  "Round 2 \u00b7 CH7's face, inside the well",
+  "Ref CH7 + CH5. CH7's hooded face, the church removed, singing in the well under the white light."
+ ],
+ [
+  "colossus",
+  "EY1-a",
+  "Round 2 \u00b7 the eye on the mountain at sunset",
+  "Ref CO6. CO6's ring eye on a summit, mountain ranges, sun setting, dust round the base."
+ ],
+ [
+  "colossus",
+  "EY1-b",
+  "Round 2 \u00b7 the eye on the mountain at sunset",
+  "Ref CO6. CO6's ring eye on a summit, mountain ranges, sun setting, dust round the base."
+ ],
+ [
+  "colossus",
+  "EY2-b",
+  "Round 2 \u00b7 the eye at impossible scale",
+  "Ref CO6. Ring wider than the mountain, a tiny town and road in the valley far below."
+ ],
+ [
+  "colossus",
+  "EY2-c",
+  "Round 2 \u00b7 the eye at impossible scale",
+  "Ref CO6. Ring wider than the mountain, a tiny town and road in the valley far below."
+ ],
+ [
+  "colossus",
+  "EY3-b",
+  "Round 2 \u00b7 beneath the eye, one figure on the ridge",
+  "Ref CO6. Low angle from the ridge, dust storm, a lone figure for scale."
+ ],
+ [
+  "colossus",
+  "EY3-c",
+  "Round 2 \u00b7 beneath the eye, one figure on the ridge",
+  "Ref CO6. Low angle from the ridge, dust storm, a lone figure for scale."
+ ],
+ [
+  "street",
+  "ST1",
+  "The last walk out",
+  "Cinematic film still, rainy London financial district at dawn, low wide angle at pavement level: a long line of office workers in wet coats carrying cardboard boxes of desk belongings walk out of a glass tower, while in the same frame men in grey overalls wheel tall black server cabinets in through the revolving doors past them. Nobody looks at each other. Wet reflections, cold blue light, one warm lobby glow. Anamorphic, 35mm grain, photoreal."
+ ],
+ [
+  "street",
+  "ST2",
+  "The swap, from above",
+  "Cinematic film still, top-down drone view straight down onto a wet city plaza in the rain: a river of black umbrellas flowing out of an office tower's doors to the left, a single file of server racks on trolleys flowing in to the right, the two streams passing each other like traffic. Cold blue grade, crisp, photoreal, 35mm."
+ ],
+ [
+  "street",
+  "ST3",
+  "One desk, one box",
+  "Cinematic film still, an emptied open-plan office floor at dusk, rows of desks with chairs pushed in, one woman in the middle distance carrying her cardboard box toward the lift, while a technician behind her bolts a glowing server rack where a desk used to be. Rain on floor-to-ceiling windows, London skyline beyond. Muted blue grade, shallow depth, photoreal."
+ ],
+ [
+  "toast",
+  "TO1",
+  "The headcount toast",
+  "Cinematic film still, a glass-walled boardroom at night high above the city, eight executives in dark suits raising champagne flutes, their faces lit from below by a giant wall screen showing a single line chart soaring upward and the words HEADCOUNT -200,000 in white. Expensive, cold, smug. Warm skin tones against blue night. Anamorphic, shallow depth, photoreal."
+ ],
+ [
+  "toast",
+  "TO2",
+  "The email that wrote itself",
+  "Cinematic film still, close-up over the shoulder of a chief executive in a tailored suit sitting alone in a dark corner office, a laptop screen glowing with a draft email headed Restructuring, an AI assistant panel beside it, a champagne bottle sweating in an ice bucket by his hand. His reflection faint in the window over a rainy city. Moody, low key, photoreal."
+ ],
+ [
+  "toast",
+  "TO3",
+  "Applause on the trading floor",
+  "Cinematic film still, a modern sleek trading floor at night, young traders standing and applauding as a wall of screens flashes green, confetti of paper from a printer floating in the air, one man spraying champagne. Glass, LEDs, dark blue and green light, photoreal, documentary handheld feel, 35mm."
+ ],
+ [
+  "bread",
+  "BR1",
+  "The price of bread",
+  "Cinematic film still, a small British corner shop at night, a tired young mother in a damp coat alone at the till holding a single loaf of white bread, staring at the card reader showing a price that has jumped, her toddler asleep in a pushchair beside her. Fluorescent light, shelves of tins, rain on the window behind. Quiet, intimate, photoreal, 35mm grain."
+ ],
+ [
+  "bread",
+  "BR2",
+  "Self-checkout, declined",
+  "Cinematic film still, a supermarket self-checkout at night, an older man in a work jacket with a basket holding only bread and milk, the screen glowing red with CARD DECLINED, an empty aisle behind him. Cold fluorescent light, shallow depth of field, photoreal, documentary realism."
+ ],
+ [
+  "bread",
+  "BR3",
+  "The shelf label",
+  "Cinematic film still, extreme close-up of a supermarket shelf edge label for a sliced white loaf, the old price crossed out and a new higher price stickered over it, a hand reaching past it into the frame. Shallow depth, warm fluorescent light, photoreal macro."
+ ],
+ [
+  "market",
+  "MK1",
+  "Shares in bread",
+  "Cinematic film still, a modern financial data centre trading room in Canary Wharf at night, a huge curved LED wall of tickers with one line glowing brighter than the rest: BREAD +90%, two traders silhouetted against it, glass and steel, cool blue and green light, photoreal, anamorphic."
+ ],
+ [
+  "market",
+  "MK2",
+  "The ticker on the street",
+  "Cinematic film still, a giant curved LED billboard on the side of a London tower at night in rain, a scrolling stock ticker reading BREAD PLC +90% in bright green above a crowd of commuters with umbrellas walking past, nobody looking up. Reflections on wet pavement, photoreal, 35mm."
+ ],
+ [
+  "market",
+  "MK3",
+  "The trillion",
+  "Cinematic film still, inside a vast modern banknote printing hall, an endless conveyor of uncut sheets of new banknotes racing past under bright industrial light, a lone official in a suit watching from a gantry. Clean, cold, monumental, photoreal."
+ ],
+ [
+  "choir",
+  "CH1",
+  "The choir, full scale",
+  "Epic cinematic film still, the interior of a colossal futuristic hangar inside a starship, tens of thousands of identical humanoid robots standing in perfect tiered rows rising like an amphitheatre, every robot wearing a deep crimson hooded cloak, glowing red eyes under the hoods, all facing the camera mid-song with mouths open. A single shaft of white light falls on the centre. Vast, operatic, monumental, near-black with red. Photoreal, anamorphic."
+ ],
+ [
+  "choir",
+  "CH2",
+  "Front row, singing",
+  "Cinematic film still, low angle medium close-up of the front row of a robot choir, sleek white humanoid robots in heavy crimson hooded cloaks, red glowing eyes, metal jaws open in song, breath-like vapour in the cold air, endless rows of red eyes receding into darkness behind them. Dramatic top light, deep shadows, photoreal, shallow depth."
+ ],
+ [
+  "choir",
+  "CH3",
+  "From behind the conductor",
+  "Epic cinematic film still, from behind a tall dark figure standing on a podium raising both arms, facing an enormous choir of robots in crimson hooded cloaks arranged in a vast curved tiered stage inside a cathedral-sized machine hall, thousands of red eyes in the dark, beams of light cutting through haze. Operatic, monumental, photoreal."
+ ],
+ [
+  "choir",
+  "CH4",
+  "The hooded ranks",
+  "Cinematic film still, a long telephoto shot compressing row after row of hooded robots in crimson cloaks standing shoulder to shoulder, only their glowing red eyes and silver chins visible under the hoods, stretching to the horizon in a dark hangar, red light haze. Menacing, ceremonial, photoreal, anamorphic."
+ ],
+ [
+  "choir",
+  "CH5",
+  "The choir lifts",
+  "Epic cinematic film still, a gigantic circular arena inside a futuristic machine, rings of robot choristers in crimson cloaks stacked in tiers up into the darkness like a cooling tower, all heads tilted back singing toward a blinding white light at the top. Overwhelming scale, red and white, photoreal, ultra wide."
+ ],
+ [
+  "choir",
+  "CH6",
+  "The parade ground",
+  "Epic cinematic film still, aerial wide shot over a vast landing platform at night, an army of robots in crimson hooded cloaks drawn up in enormous rectangular blocks, red eyes glowing like a field of embers, a huge black ship looming overhead with its hangar open and floodlights pouring down. Monumental, ominous, photoreal."
+ ],
+ [
+  "choir",
+  "CH7",
+  "The cloak",
+  "Cinematic film still, extreme close-up of one robot's face beneath a deep crimson velvet hood, polished graphite metal skin, two glowing red eyes, a speaker-grille mouth open mid-note, a fine line of red light reflecting along the hood's edge, darkness behind. Ceremonial, regal, unsettling, photoreal, shallow depth."
+ ],
+ [
+  "choir",
+  "CH8",
+  "Torches in the dark",
+  "Epic cinematic film still, inside a dark stone-and-steel hall of immense height, thousands of robots in crimson hooded cloaks each holding a small glowing red light at chest height, forming a sea of red points rising into the dark, a single figure in the centre aisle, mist on the floor. Ritual, operatic, photoreal."
+ ],
+ [
+  "colossus",
+  "CO1",
+  "The colossus wakes",
+  "Epic cinematic film still, a colossal black AI machine the size of a cathedral standing in a dark hall, a monolithic wall of stacked compute modules, its face erupting with dozens of blinding white light beams fanning out through thick haze like a stadium concert lighting rig, a tiny human silhouette at its base for scale. Overwhelming, monumental, photoreal."
+ ],
+ [
+  "colossus",
+  "CO2",
+  "The blinder",
+  "Cinematic film still, looking straight into a wall of the brightest white LED blinders imaginable mounted across the face of a giant machine, light flaring across the lens, silhouetted server towers either side, haze, the rest of the frame near-black. Festival-strobe intensity, overexposed core, anamorphic flare, photoreal."
+ ],
+ [
+  "colossus",
+  "CO3",
+  "Beams from the core",
+  "Epic cinematic film still, a vast circular AI core chamber seen from below, a ring of colossal machine pillars converging overhead, hundreds of tight white searchlight beams shooting down and sweeping through dense haze like a headline festival show, red indicator lights pulsing on the pillars. Monumental, photoreal, ultra wide."
+ ],
+ [
+  "colossus",
+  "CO4",
+  "The scale of it",
+  "Epic cinematic film still, ultra wide shot of an immense black machine filling a valley-sized hall, its surface laced with thin lines of red light, then a single row of blinding white light panels firing at full power across its middle, light spilling across a wet floor, one maintenance worker tiny and silhouetted in the foreground. Photoreal, monumental, near-black."
+ ],
+ [
+  "colossus",
+  "CO5",
+  "Strobe frame",
+  "Cinematic film still, a frozen strobe flash inside a giant machine hall, everything bleached white for an instant: rows of server towers, cables, gantries, haze, hard black shadows thrown long across the floor. High contrast, overexposed, like a single frame of a concert strobe, photoreal."
+ ],
+ [
+  "colossus",
+  "CO6",
+  "The eye opens",
+  "Epic cinematic film still, the face of a towering AI machine built of concentric rings of black glass and metal, at its centre an aperture opening to reveal a white light so bright it flares the lens, beams spilling out through haze, red warning lights around the rim. Godlike, operatic, photoreal, anamorphic."
+ ],
+ [
+  "colossus",
+  "CO7",
+  "Choir meets machine",
+  "Epic cinematic film still, a vast dark hall where a choir of robots in crimson hooded cloaks stands in tiers facing an enormous black AI machine, the machine blasting blinding white light beams back over them through haze, red eyes and white light. Operatic climax, monumental, photoreal, ultra wide."
+ ],
+ [
+  "colossus",
+  "CO8",
+  "Old machine, new master",
+  "Cinematic film still, inside an old beige 1990s server room with a single CRT terminal glowing green, the far wall cracked open to reveal behind it a colossal futuristic machine blazing with white light and red seams, beams pouring through the gap and across the dusty room. Then and now in one frame, photoreal."
+ ]
+]

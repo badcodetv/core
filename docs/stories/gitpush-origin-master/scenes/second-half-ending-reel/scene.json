@@ -1,0 +1,15 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "second-half-ending-reel",
+  "prefix": "shend",
+  "title": "GPOM Second Half: The Ending",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half: the ending, end to end",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/ending-reel",
+  "about": "The whole stretch from the bunker walk-out to the last frame, scenes C, D and E joined (C into D a 0.4 s dissolve, D into E a hard cut on the split line). Made by the 2026-10-21 autonomous run (../second-half-ending-goal.md); built by scripts/gpom/second-half-video/ending/reel.py; log ../second-half-ending-log.md. Scenes: second-half-c-walk-out, second-half-d-crossing, second-half-e-ending.",
+  "parts": ["second-half-c-walk-out", "second-half-d-crossing", "second-half-e-ending"],
+  "boards": {},
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/ending-reel/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/ending-reel/preview.mp4"
+  }
+}

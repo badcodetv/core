@@ -10,9 +10,9 @@ capture it as canon under `docs/stories/<story>/`, the single source of truth th
 comic, the song(s), and any later media derive from. Drive it collaboratively
 from the CLI; write the files as you go.
 
-> For the **full idea → rendered-comic pipeline** — including generating the
-> character and storyboard images in Google Flow and assembling the comic — use
-> the **`make-comic`** skill, which composes this one for its canon stages.
+> When the story becomes a **film**, the **`overview-board`** skill lays out its
+> running order and **`new-scene`** makes each part. (The comic pipeline,
+> `make-comic`, was archived on 2026-10-23: `.claude/skills-archive/comics/`.)
 
 ## Read first
 
@@ -40,6 +40,7 @@ docs/stories/<story>/
   story.md             # spine: Key concept, Background, high-level Beats, the twist
   characters/<name>.md # one per character (frontmatter + prose)
   songs/<slug>.md      # lyrics + Suno style/exclude (one file per track)
+  timelines.json       # once the film is being cut: the OVERVIEW BOARD, the film start to end (see below)
 ```
 
 Frontmatter is light and is the subset machine artifacts need:
@@ -70,6 +71,14 @@ Frontmatter is light and is the subset machine artifacts need:
    unless asked.
 6. **Maintain `README.md`** — the index and the production tracker (medium ×
    status), so the folder stays self-describing.
+7. **The overview board** (Kai, 2026-10-23; the **`overview-board`** skill runs it). Once a story is
+   headed for film, lay out its skeleton there; at the latest when it has its first timeline page,
+   it gets an overview board: `timelines.json` lists the film start to end, each scene or sequence with
+   its state, its current timeline page and every earlier page. Build it with
+   `python3 scripts/provenance/build-timelines.py docs/stories/<story>` and publish
+   `timelines/index.html` as an artifact. Put its link in `timelines.json` (`url`) and **at the top of
+   the story's `README.md`**. Then rebuild and republish to the same link whenever a timeline changes.
+   Full rules: [`docs/provenance/README.md`](../../../docs/provenance/README.md). Worked example: GPOM.
 
 ## Principles
 

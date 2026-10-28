@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/8acf9223-d50b-4e7d-aa51-7a01e7e02361/scratchpad/5c-b.png",
+ "made": "2026-10-26T11:52:37.468Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. Only the bodies, clothes and places are cartoon: every face in the frame, however small, is painted as real human skin with wrinkles, pores, bags under the eyes and real eyelids, far more lifelike than anything around it, and no feature is exaggerated. Seen from low on the steps of narrow brick back stairs going down behind a 1930s bakery, looking along them to a plain battered steel door at the bottom: a short, wide gangster in his forties with a flattened nose, a scar through one eyebrow, a pinstripe suit and a grey fedora knocks on it with one knuckle, glancing back over his shoulder towards us. A small slot in the door has just slid open: two eyes in the dark. One bare bulb above the door throws his long shadow up the steps. A large stretch of plain empty brick wall above the door. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7ab0840a-dbc4-4c26-a751-3760a7cb8046"
+}

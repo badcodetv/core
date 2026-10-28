@@ -207,7 +207,7 @@ sits over is unruled — candidates are the frozen last frame of `bank-empty`, t
 or colour bars.
 
 ⬜ **No narration exists for this cut, and none has been generated for any cut.**
-[`songs/narration.md`](../songs/narration.md) carries written boxes for cuts 1–3 only, still at
+[`songs/archive/narration-v5.5.md`](../songs/archive/narration-v5.5.md) carries written boxes for cuts 1–3 only, still at
 `status: draft`. Every beat length in every cut — including the 8s assumed here — is a guess.
 
 ⬜ **Year cards** (2033/34/35) are still unruled, as is cut 3's `2032` card.

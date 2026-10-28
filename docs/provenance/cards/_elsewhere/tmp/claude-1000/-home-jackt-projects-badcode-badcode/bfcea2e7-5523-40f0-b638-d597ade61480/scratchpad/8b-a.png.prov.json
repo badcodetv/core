@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/8b-a.png",
+ "made": "2026-10-26T13:41:01+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, seen from just behind a heavy-set Black baker standing in a doorway he has just flung open: the back of his shaved head, one broad shoulder in a sweat-stained vest and his floury hand holding up one small loaf fill the left of the near foreground, dark against the room. Beyond him, a smoky 1930s back room: a long polished table piled with a carved ham, a roast bird and champagne, and every diner frozen and staring straight back at him. Gangsters in pinstripe suits with forks halfway to their mouths: a fat one with a scar through his top lip and his cheeks full, a thin bald one with big ears pouring champagne that overflows the glass, a young one with slicked red hair and freckles. At the far head of the table, off-centre to the right, a tall skinny mayor in a bowler hat with a gold chain, a long narrow face, hollow cheeks and a pencil-thin grey moustache, a drumstick stopped at his lips. One low brass lamp with a green glass shade over the table pools amber on the food and the frozen faces; candle stubs in bottles, cigar smoke in flat layers under the lamp; cold blue corridor light spills past the baker across the floorboards. Most of the frame in deep brown shadow; the brightest values are the lamp's pool, the overflowing champagne on the tabletop and the blue light on the floor. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "93ea0c16-f46b-4a67-97ca-4ed20be98c5f",
+ "why": "Speakeasy Mint scene 8 round 1, 8b"
+}

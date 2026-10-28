@@ -1,0 +1,1 @@
+please make a pysch folk funk one inspired from songs like, "i aint worried" by one republic and "million dollar baby" and "eminence front" by the who, please reserach the internet on how to do this, this is just an experiment so just clean room it thanks

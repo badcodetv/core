@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/23b-a.png",
+ "made": "2026-10-26T16:46:13+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night just after rain on a 1930s city street: wet cobbles, an iron street lamp, a small red moon, a shop window full of loaves under a plain blank sign, its door open and glowing warm. Seen from inside a long queue of cold, shabby people waiting in the snow outside the shop: the hunched shoulders, threadbare coats and flat caps of the queue fill the near foreground, young and old, men and women, Black, white and South Asian, real-skinned faces pinched and watching. Strolling past the queue towards us, two police officers in 1930s peaked caps and long blue coats, one tall and thin with a grey walrus moustache, one short and round with ginger sideburns, each with a fat free loaf tucked under one arm, tipping their caps at the people they pass, smiling. In the warm doorway behind, a fat gangster with a scar through his top lip in a white apron over pinstripe trousers, waving from the doorway with a big false smile. Snow on the wet cobbles. Most of the frame in shadow; the brightest values are the warm doorway, the loaves and the street lamp. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "d465a362-1065-4075-a8eb-67e2bc1656a1",
+ "why": "Speakeasy Mint scene 23 round 1, 23b"
+}

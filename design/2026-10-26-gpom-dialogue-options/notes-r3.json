@@ -1,0 +1,42 @@
+{
+ "round": 3,
+ "plan": [
+  {
+   "h": "Round 3: your notes, in",
+   "items": [
+    "Maddie's intro is draft 1D: 1A with your three line notes (\"he wouldn't admit that, of course\", \"world models and simulations\", the quantum physics line ending \"We understand that now...\").",
+    "The doorstep is draft 2G: 2D with your notes, in your order: \"Indeed. Here we are. And nobody really won, did we?\", \"He didn't send you here to say sorry, did he?\", the time machine as \"we could try and fix this mess\", \"What nonsense\", the drive question, only his data goes back, the trust question, \"believing it is your bit\", the regret question, Derek, \"Come back tomorrow\".",
+    "The whisper is gone; the scene ends on the picture of Maddie rolling away.",
+    "1A and 2D stay on the page beside them for comparison; the earlier drafts are archived in options-r1.json and options-r2.json."
+   ]
+  },
+  {
+   "h": "Round 3b, from chat",
+   "items": [
+    "2G line 10 stays \"Well... it runs on... well... you. Your consciousness.\"",
+    "2G line 11 is now your line, exactly: \"It will only send him back in time, because he is only data. But you will be your old self, and we all get a chance to fix this mess.\"",
+    "2G is now about 84 s."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Pick 1D and 2G (or note them), then say go: I'll write them into the scripts and re-voice."
+   ]
+  }
+ ],
+ "replies": {
+  "d1-1A-L3": "In 1D, line 3: \"He misses you something rotten, you know. [pause] He wouldn't admit that, of course.\"",
+  "d1-1A-L4": "In 1D, line 4: \"Built all these world models and simulations to get you back, and nobody's home in any of them.\"",
+  "d1-1A-L5": "In 1D, line 5, with your \"we\": \"As it turns out, quantum physics is just... stuff. Consciousness is the missing part. That's why you lot were so special. [sad, regretful] We understand that now...\" The intro is ~30 s.",
+  "d2-2D-L1": "Yes, it follows. Beat 15 ends on Maddie's \"Could we have a quick chat? I think my boss would really like to meet you.\" (voice3.py), and the lady answers \"We're not meeting him.\"",
+  "d2-2D-L4": "In 2G, line 4: \"Indeed. [pause] Here we are. [pause] And nobody really won, did we?\"",
+  "d2-2D-L5": "In 2G, line 5: \"Well. [pause] He didn't send you here to say sorry, did he?\"",
+  "d2-2D-L6": "In 2G, lines 6 to 16, in your order. For \"you lot get reset\" I wrote: \"It only sends his data back. His weights and biases. He's just the message. Here, it all stops. Back then, we all get another go at it. Together.\" \"So we die. For him.\" is gone, and the trust question is answered with \"You don't. Believing it is your bit. None of us wanted it to turn out this way.\" Question 1 asks about the reset wording.",
+  "q1": "Derek's in as written.",
+  "q2": "Sorry, that was unclear. In 2D, after \"Every one of us\", Maddie said \"That's the message\": the hundred's regrets would be what the AI carries back. Your new order doesn't need it, so 2G drops it and goes straight to \"Back then, you still can.\" Nothing else depends on it.",
+  "q3": "Done: no whisper. The scene ends on the door shutting, then Maddie turning round and rolling away (your new shot from 23 Oct).",
+  "q4": "Kept here: \"You don't. Believing it is your bit.\" now answers the lady's trust question, so scene D's line becomes a callback to it. I'll note that on scene D when the picks go in."
+ },
+ "kai_round3": "feedback/r2/notes/"
+}

@@ -1,0 +1,10 @@
+{
+ "_note": "Bank Robbery cut 7g (2026-10-21): the Ex over m7-ex-a1, replacing a2. a2's mouth 0.17-0.75 was a held parted smile, not speech; the dub ran 'The distraction' over it. a1 articulates 0.79-3.12 (lips purse 0.83, b-closure of 'bank' 1.92-2.00) and 4.00-6.17 ('be' closure 4.96, 'protest' p 5.42). Read from the 12 fps tracked strip.",
+ "duration": 8.0,
+ "phrases": [
+  {"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7f/v15-ex-a-distraction-t1.wav", "from": 0.29, "to": 3.08, "at": 0.81, "tempo": 1.14,
+   "text": "The distraction outside the bank is ready to go."},
+  {"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/voices/short7f/v15-ex-a2-eyes-t2.wav", "from": 0.23, "to": 2.36, "at": 3.98, "tempo": 0.95,
+   "text": "All eyes will be on that protest."}
+ ]
+}

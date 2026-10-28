@@ -1,0 +1,67 @@
+{
+  "about": "Stage 3 clip picks for scene E (2026-10-22 autonomous run). Frame id -> chosen file (relative to media unless a full path is given), in/out seconds inside that file, and what stage 4 needs. Every take, prompt and credit is in shots.md; the spend is in scripts/gpom/second-half-video/ending/ledger.json (scene 'E').",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips",
+  "flow_project": "b13e0808-f5b2-41fd-b8c5-07dec9ca3a8a (video, 'Oct 22 - 01:11')",
+  "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1; 1280x720 24 fps; clips carry Omni's own audio (mute on the timeline)",
+  "credits": 75,
+  "clips": {
+    "E01": {
+      "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-28-Y2-bus.mp4",
+      "reuse": true,
+      "in": 0.0,
+      "out": 7.0,
+      "plate": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg",
+      "talking": false,
+      "post": "composite D16's last frame onto the phone screen (track the phone, a little soft, screen glow); phone audio = Maddie's '...you go.' (e1-0-maddie-phone.wav) landing on the hard cut",
+      "note": "The phone in the plate shows a delivery robot in ruins: it must be covered by the composite. The window light pulses warm/cold through the clip (passing street lights).",
+      "file_round6": "E01p-t1.mp4",
+      "plate_round6": "../stills/fix5/E01p-b.jpg",
+      "note_round6": "E round 3 (Kai's pick E01p-b): the phone screen painted in-camera by Flow (D's last frame as reference); the screen holds its picture all 8 s. No overlay."
+    },
+    "E02": {
+      "file": "E02-t3.mp4",
+      "in": 0.0,
+      "out": 7.0,
+      "plate": "../stills/E02-r3-a.jpg",
+      "alt": "E02-t1.mp4 0-4.0 (the bus moves off at ~4 s and the bank slides out of the window)",
+      "talking": false,
+      "post": "composite D16's frame (dimmed) onto the phone 0-2.8 s, then the phone drops out of shot; Omni brightens the screen to near white at ~2 s, so the composite must cover it (never a white screen)",
+      "note": "Review round 1 re-roll: the phone stays in her hand, lowered to her knee. Looks up ~1.5 s, turns to the bank ~3 s, holds to the end. Screen white from ~1 s (composite covers it until she tilts it away at 2.5 s). Street and window locked (shopfront breathes ~1.5 px). Bank lettered in post (bank_sign.py).",
+      "was": "E02-t2.mp4 (review round 1: the phone melted into her lap at ~2.8 s)",
+      "file_round6": "E02p-t1.mp4",
+      "plate_round6": "../stills/fix5/E02p-b.jpg",
+      "note_round6": "E round 3 (Kai's pick E02p-b): screen painted in-camera, holds its picture all 8 s; she looks up to the closed bank. bank_sign.py letters the fascia as before."
+    },
+    "E03": {
+      "file": "E03b-chain.mp4",
+      "in": 0.0,
+      "out": 17.7,
+      "plate": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix2/E03b-r1-b.jpg",
+      "chain": [
+        "E03b-t1.mp4 (10 s)",
+        "E03bx-t1.mp4 (from E03b-t1's last frame, first frame dropped; 0.3 s dissolve at 9.71 s)"
+      ],
+      "talking": false,
+      "post": "bank_sign_e03.py (DOWNLAND BANK + closure sheet, tracked; 'Bank Bank' wiped off the shop next door), regrade, pull-back 140% -> 100% eased 1.5-9.5 s, the last line, fade to black",
+      "note": "Review round 2: E03f-r1-b edited so the betting shop beside the pharmacy is E02's whitewashed closed bank (blank fascia, black door), re-animated and extended (27 credits). Camera locked but drifts ~44 px over 17 s (followed by the lettering). The bus reaches mid-distance; the hooded walkers turn away in the extension.",
+      "was": "E03f-chain.mp4 (review round 2: the bank E02 set up was a lit betting shop here)",
+      "file_round3": "E03r3-t1.mp4 + E03xr3-t2.mp4 (chain to be joined by main)",
+      "plate_round3": "../stills/fix3/E03r3-b.jpg",
+      "alt_round3": "E03xr3-t1.mp4 (the camera pans, the walkers come at the lens, the bus barely recedes)",
+      "note_round3": "E03r3-t1 (10 s): the red bus pulls away to mid-distance, walkers on the right. E03xr3-t2 (8 s, chained from its last frame): locked, the bus recedes further (not to a pinpoint), the two walkers turn and walk away. Small unreadable fascia lettering on the far shops.",
+      "file_round4": "E03r4-chain.mp4",
+      "plate_round4": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix4/E03r4b-c.jpg",
+      "note_round4": "Ending round 2 (Kai reel at4010): the red bus on an EMPTY road, no car anywhere. Head E03r4-t1 (10 s) + tail E03xr4-t1 (8 s, from E03r4-t1's last frame with a far oncoming vehicle painted out: E03r4-last-clean-a). Flaw: Omni pans the camera slowly right in both."
+    },
+    "E04": {
+      "file": "E04p-t1.mp4",
+      "in": 1.95,
+      "out": 8.0,
+      "plate": "../stills/fix5/E04p-a.jpg",
+      "talking": false,
+      "note": "E round 3 (Kai's pick E04p-a): the Houses of Parliament at night in the rain, the last shot under 'Now the real work starts.'; camera locked, rain/river/clouds move (clouds flare 1.0-1.5 s, so it plays from 1.95 s); a slow push in post, then the fade to black."
+    }
+  },
+  "review_round_1": "E03f-t1 15 + E03fx-t1 12 + E02-t3 12 = 39 credits (prompts in shots.md § Review round 1)",
+  "review_round_2": "E03b-t1 15 + E03bx-t1 12 = 27 credits (prompts in shots.md § Review round 2)"
+}

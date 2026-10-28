@@ -512,6 +512,195 @@ model has heard: `BBC English`, `newsreader`, `after-dinner speaker` land where 
 `Scouse` don't. This is Thread 2 §4's "name a performance tradition" rule, applied to class instead
 of to genre.
 
+### 2c. ✅ A translated singer reference moves the voice where accent words don't (Jack, 2026-10-21)
+
+**Tested on The Bank Robbery, Jack's song (`docs/stories/bank-robbery/songs/bank-robbery-jack.md`
+Rounds B–S, 104 takes).** Four rounds tried to vary an English voice over the same 1970s cop-funk
+music: regional accents (B), performer types (C), age/pitch/texture/gender (K), origin cities with
+"natural British pronunciation" (O). Jack heard one voice over and over, and in O every woman came
+out as **the Karen song's singer** (same spy-funk music family, so the same female pool). **Round S
+moved it at once:** each box opened with a real English singer *translated* into her scene plus
+her voice — never the name, which Suno rejects or rewrites:
+
+| Reference (sheet only) | What went in the Style box, first |
+|---|---|
+| Amy Winehouse | `London retro soul, a raw husky contralto woman with a heavy North London accent, swaggering behind-the-beat phrasing` |
+| Dusty Springfield | `1960s British blue-eyed soul, a breathy smoky English mezzo` |
+| Lily Allen | `British indie pop with a cockney London girl, sweet light voice, sarcastic sing-song verses` |
+| Poly Styrene / Siouxsie | `1977 London punk woman, a piercing yelping English voice, shrieked chorus` |
+
+Jack: *"referencing singers has changed the voice … this works."*
+
+🔴 **The cost, same round:** the scene words sat in genre position, so they **took the music too**
+— Jack: *"we have lost the style."* The scene word is a pool word (§2a/§2b): it casts the singer
+*and* the band. So the open question is placement: the music sentence first with the translated
+singer after it, versus the singer first. Bank Robbery Round W tests exactly that.
+
+🔴 **Check Variety before blaming the words.** Rounds A–W on that song all ran at Variety
+**Normal** by mistake. Suno's v6 FAQ says any Variety above **Off** works by rewriting the Style box
+(`files/suno-v6.md`, Variety row), so every voice description was being rewritten before
+generation. Round Y/Z (Variety Off; `Roger Daltrey` named literally in Y, translated in Z) —
+**verdict, Jack 2026-10-22: style lost, voice nothing like Daltrey.** Suno stored the name verbatim
+(not filtered), and it did nothing audible.
+
+🔑 **A liked take made at Variety above Off was made from Suno's rewrite, not from your box.** Read
+the rewrite off the take's own record before building on it — `metadata.tags` at
+`https://studio-api.prod.suno.com/api/clip/<id>` (public JSON; `control_sliders.aug_creativity` is
+the Variety step, 0 = Off). Bank Robbery's liked take ed6dd946 stored a different, shorter music
+sentence (`1970s funk soundtrack production … soft harmony pads … low rough male lead`), and ten
+rounds re-used the box instead of it. Round AA/AB re-runs the stored prompt at Variety Off.
+
+🆕 **Bank Robbery, Kai's song, 22 October 2026: an American voice made English.** Rounds E–F (a
+Salford punk poet over film-noir jazz, genre slot `British punk performance poetry` / `Salford punk
+performance poetry`) came back **American**. Round G fixed it, and Kai loved the take (`1f8c5f19`).
+The changes: the genre slot became a **tradition plus a place and year** (`British post-punk spoken
+word, a Salford working men's club in 1978`); the voice sentence moved **first**; the lyric label
+became `Salford poet`; a `New York rapper` cue was removed; Vocal Gender was set to Male. The
+**same jazz-noir band** stayed and the voice still came out English, so the American music did not
+outvote a strong British opening. Several things changed at once; one take; Kai's ear.
+`docs/stories/bank-robbery/songs/bank-robbery-poet.md` round G.
+
+**How to apply:** when a voice won't move, ask the human for a real singer who has it, write the
+name in the sheet, and put a translation (scene + era + voice + delivery) in the box. Check the
+music afterwards; if the scene stole it, move the music sentence back to the front.
+
+### 2d. 🔎 Web sweep: how many English male voices can Suno do, and how to change one (2026-10-22)
+
+Prompted by Jack, Bank Robbery Round CA: Led Zeppelin-style and Rolling Stones-style takes "sounded
+basically the same". Two research passes; tiers as found.
+
+- **Nobody has counted Suno's voices.** No clustering, no "N male voices", no "British in X of Y
+  takes" anywhere public. The one measured study — Slendebroek & Metaxa, *The Algorithmic Flattening
+  of Sound*, arXiv 2608.06106 (AIES 2026), 100 tracks per system × genre — finds Suno collapses
+  differences *between* genres and follows prompts weakly, so outputs come from **learned
+  defaults**. Vocals were not measured on their own. Everything else is by-ear reports of "the same
+  singer every time" (r/SunoAI, via mirrors) — consistent with §2b, not a measurement.
+- **So, unmeasured but consistent with all our rounds: one default male singer per genre**, and
+  adjectives move him only a little. Our own count: Bank Robbery Rounds B–CA, ~150 takes, Jack heard
+  ~one voice per music family.
+- **Why English drifts American (inference, not a Suno test):** pop-rock singing has an American
+  norm — British singers flap /t/ when singing but not speaking (MDPI *Languages* 9/6/203); Liam
+  Gallagher sings near his speech, Noel more American. The training audio is likely American-leaning
+  even for British acts. Genres whose singers keep the accent (Britpop, punk, grime, folk, music
+  hall) should carry it best — untested as a list.
+- **What changes the singer, by evidence:**
+  1. **Voices** (vendor): your *own* voice only — a spoken verification phrase is matched to the
+     singing to block "collaborators or public figures". 15 s–4 min, Audio Influence high. So an
+     English male Voice needs an English man to record himself (help.suno.com/en/articles/11362369).
+  2. **Style Persona from a take that already has the voice** (user reports): carries timbre and
+     register; drifts on long/heavy songs and bleeds after Extend on v6. One user settled on it after
+     ~20 failed prompts.
+  3. **Change the genre/instrument tokens, not the adjectives** — the pool word picks the singer
+     (§2a–2c; HookGenius rates vocal tags "the most inconsistent category").
+  4. **Outside Suno:** stems → voice conversion (Kits.ai / RVC) with a licensed stock or consenting
+     voice — never a real singer's model (ELVIS Act, AB 2602). Suno stems are often too dirty to
+     convert cleanly (hearsay).
+  5. **ElevenLabs Music "Vocals"** offers a consistent voice from its voice library, which filters
+     by accent — British male *singing* voices unverified.
+- **Weak or unproven:** per-section `[Verse: male baritone]` tags ("doesn't always listen");
+  phonetic respelling for accent (guides only); custom models (one review: they do not learn a
+  vocal identity); Wild (style, not voice); artist names (Suno stored "Roger Daltrey" verbatim and it
+  did nothing audible — Bank Robbery Round Y).
+
+### 2e. 🔎 "Every voice sounds like the last song": audit of Bank Robbery, 325 takes (2026-10-22)
+
+Jack, after Round GA (12 world funk-psych scenes): *"a lot of these voices sound like previous songs
+or saved voices — is it that, or the prompts?"* Measured from each take's own record
+(`studio-api.prod.suno.com/api/clip/<id>`), every take logged in `bank-robbery-jack.md`:
+
+- ✅ **No saved Voice reached any take.** A Voice-made take carries `persona` + `metadata.persona_id` +
+  `task: vox` (checked against GPOM's `badcode newsreader` takes); **0 of 325** have them. 6 are Round
+  BA covers (`cover_clip_id`); the rest are plain `gen`.
+- ✅ **No prompt rewriting** since Round AA: `aug_creativity` 0, tags stored verbatim.
+- ⬜ **Account-wide My Taste: not checked.** Suno's help page (help.suno.com/en/articles/11362561)
+  says it is on by default, can be disabled from the avatar menu, and acts through style
+  augmentation; nothing says it reaches the voice with Variety Off. A cookie banner blocked the
+  automated check. Unverified either way.
+- 🔴 **What every take shares, i.e. what the prompts hold constant:**
+  - **The same lyrics:** 325/325 takes carry draft 3, and 279 have the identical box. The words fix the
+    syllable rhythm and the swearing/shouting register before any style word is read. No public source
+    tests whether reused lyrics pull the voice; it is the largest constant we have, so it is the first suspect.
+  - **The same 11 excludes in all 325** (comedy … EDM, smooth R&B), plus `rap, hip hop` in most. Each
+    ban removes a voice family, so the pool left is the same one every round.
+  - **Style influence 0.75 in all 325.**
+  - **The same sentence shape:** `<scene> <genre>, NNN BPM: a <adj> <nationality> man <verb>ing the verses,
+    <verb>ing the chorus. <instruments>.` `chorus` is in 273 boxes, `verses` 252; shout/scream/howl/
+    snarl/bark/roar words in ~200. GA: `funk` 12/12, `fuzz` 11, `organ` 9. Asking every singer for
+    the same arc (quiet verse → shouted chorus) asks for the same performance.
+  - **Nationality as an adjective** (`Nigerian`, `Ethiopian`) over English lyrics: §2 says accent words
+    do not render, and the singer of English lyrics falls back to the genre's English-singing default.
+- **What to change next (untested):** vary the constants one at a time, starting with the lyrics
+  (a test verse in a different rhythm/register, or Jack's words re-lined), then drop the shared
+  ban list and the shout arc. Use a delivery CATEGORY per box (crooned / chanted / spoken / falsetto /
+  whispered), not an adjective. The documented route is still a Voice/Persona built from the take
+  that already has the right singer (§2d).
+
+### 2f. ✅ The clean room fixed the voice (Jack, Bank Robbery Round CR, 2026-10-22)
+
+After §2e, a fresh helper wrote prompts **without reading any repo file, memory or the web** and
+told to ignore every house Suno rule (Bank Robbery `bank-robbery-jack.md` Round CR). Jack, on the
+first two prompts: *"this has fixed the voice problem."* Everything changed at once, so **no single
+cause is proven**. What the clean room did that the house prompts had stopped doing, most likely
+cause first:
+
+1. **A full "Lead vocal:" sentence of ~22 words**, about twice ours (GA ~13): age + gender + region +
+   register + texture + delivery + attitude (`middle-aged Northern English man, thick Mancunian
+   accent, deadpan, nasal, lazy sneering drawl, barely bothered to sing`). The house rules had trimmed
+   the voice to one clause and let the genre word pick the singer (§2a–2d, "short boxes").
+2. **Vocal Gender set per prompt, and half of them women.** Every house round before GA was male.
+3. **Excludes aimed at this voice's opposite** (`belting, falsetto` for the drawler; `male vocals`
+   for the women), not one carried-over global list. §2e: the same 11 bans sat on all 325 takes.
+4. **Per-section delivery cues in the lyrics** (`[Verse 1: lazy drawl]`, `[Chorus: sneered]`). House
+   rule (Thread 4 §3, "more markup is worse") had us sending the lyrics bare.
+5. **Accent and age written plainly**, against §2 ("accent does not render").
+6. **Settings varied per prompt**: weirdness 40–70, style influence 50–65, Variety Off/Normal/High,
+   Duration 190–240 s. House defaults were fixed (75, 30/60, Off, 170 s).
+
+**The lesson about the toolkit itself:** each rule here was learned honestly, mostly on one song
+(Karen, Camping) and often from a single round. Applied together as defaults to every prompt, they
+made every prompt alike, and so every voice alike. Rules that were meant to fix one failure became
+constants. Treat §2–§2d as **things that happened once**, not laws, and do not stack them by default
+when exploring.
+
+🔴 **Follow-up, same day (Round VB): the clean room failed when the delivery was shared.** Six
+clean-room prompts with one identical music paragraph and one identical delivery (`half-sung
+half-rapped on the beat, narrow melody, dry and upfront`), differing only in region, age and
+timbre adjectives: Jack, *"the voices are the same again."* In CR the deliveries were different
+*categories* (bored drawl, crooned villain baritone, slow smoky contralto, choirgirl soprano). So it
+was never the repo as such: it is **sameness of the strongest words**. Whatever is identical across
+prompts, whether a house rule or a helper's shared paragraph, wins.
+
+**How to apply:** exploring a new voice or sound → write the prompt fresh, the clean-room way (full
+Lead vocal sentence, set the gender, excludes aimed at this voice, section cues, settings chosen per
+prompt). Only bring house rules in once a take is liked and is being refined, one rule at a time,
+each tested against the take.
+
+### 2g. 🔑 Standing rule: the clean-room / basic method (Jack, 2026-10-22)
+
+*"Remember that the repo and Suno skills just make the same song, so it is useful to use the clean
+room or basic version. We will give it a better name later."* The method and its evidence are at the
+top of `.claude/skills/suno-prompt/SKILL.md`. In short: a fresh helper with a plain brief writes the
+prompts, they run verbatim, and each one varies the delivery category. Bank Robbery Rounds CR, SW, BB
+and GG used it; VB and BO show the two ways it still fails (a shared paragraph; a transplanted voice
+sentence).
+
+### 2h. 🔴 A sealed writer still fails three ways (Jack, Bank Robbery Round SR1, 2026-10-23)
+
+Round SR1 was the first written by `scripts/suno/sealed-writer.sh` (truly no repo, memory or skills). Jack: *"weve lost the vibe of the best one … the voices sound the same."* What went wrong:
+1. **One shared music paragraph in all six prompts**; only the voice line changed. The VB pattern again: whatever is identical across a round wins, and the voices converge.
+2. **The gate was overridden.** `sameness.py` flagged it and the session decided the shared part was "just the music". A failed gate is a stop: send the failure back to the writer and rewrite, never run it.
+3. **The brief leaked the repo.** It carried old listen logs and the old stored prompt. The brief may hold only the human's words verbatim, the facts of the last verdict, the lyric words and a *fresh* listen; the writer reads the reference take's public Suno page itself.
+
+### 2i. 🛑 The whole exploring round is one sealed command (Jack, 2026-10-24)
+
+Jack, after the SR rounds: *"i do not want the same mistakes made over and over, i cannot emphasise
+this enough."* Each failure in §2e–2h was a step where the repo-loaded session touched the round, so
+the round no longer has such a step: `scripts/suno/sealed-round.py` builds the brief from raw files,
+gets N experiments from one sealed writer and one prompt each from N more, gates them
+(`sameness.py`, now Style boxes + lyric directions + constant settings), checks the lyric words,
+rewrites the offenders, and stamps the round; `run` refuses an unstamped or edited round. The full
+trap list with the guard for each: [`same-song-traps.md`](./same-song-traps.md).
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact

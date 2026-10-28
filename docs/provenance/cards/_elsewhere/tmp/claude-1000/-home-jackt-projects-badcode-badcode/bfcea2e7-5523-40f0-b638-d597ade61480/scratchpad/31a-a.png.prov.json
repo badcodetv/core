@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/31a-a.png",
+ "made": "2026-10-26T17:26:08+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_generate_image",
+ "model": "Nano Banana 2.1",
+ "why": "Speakeasy Mint scene 31 round 1, 31a",
+ "source_id": "bda4d496-aab8-4dd8-8992-55e94e65fa21",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, the camera looking straight up from inside a hole in a wooden shop floor: around the square edge of the open trapdoor, a ring of faces peers down at us, young and old, men and women, Black, white and South Asian, half in red scarves and half in blue scarves, real-skinned, quiet, serious, all lit from below by emerald green light; above them the shop's lamp and shelves of loaves. Most of the frame in shadow; the brightest values are the green light on their faces. Plain margins with no writing. Thanks.",
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ }
+}

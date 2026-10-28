@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/2026-10-26/voice/short9.wav",
+ "made": "2026-10-26T13:52:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Google AI Studio API",
+ "tool": "scripts/money-for-something/oct26/voice/mfs-voice.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "MFS 26 Oct shorts narration, Jack's locked lines",
+ "prompt": "A ninety-six-year-old TikTok gran pays for her care home. That's the government's social care plan: go viral or die. Meanwhile Prince William is trying to be a DJ on her dime.",
+ "settings": {
+  "voice": "Zubenelgenubi",
+  "accent": "British (Brixton)",
+  "temperature": "1"
+ }
+}

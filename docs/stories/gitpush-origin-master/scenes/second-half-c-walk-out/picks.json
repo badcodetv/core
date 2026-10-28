@@ -1,0 +1,172 @@
+{
+  "about": "Stage 2 still picks for scene C (the 2026-10-21 autonomous run; still gate waived, Claude picked). Every option and its prompt is in shots.md. Files are relative to media/stills.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/stills",
+  "flow_project": "c27e8f5f-2e2a-4382-a673-3c8afb216880 (stills, 'Oct 21 - 23:01')",
+  "picks": {
+    "C01": {
+      "file": "c01r1-a.jpg",
+      "options": [
+        "C01-r1-a.jpg",
+        "C01-r1-b.jpg",
+        "C01-r2-a.jpg",
+        "C01-r2-b.jpg",
+        "C01-r3-a.jpg",
+        "C01-r3-b.jpg"
+      ],
+      "alt": "c01r2-b.jpg",
+      "why": "The only option whose face is big enough to lip-sync (about a third of frame height; lip-sync-dub: a standing wide at ~8% is unreadable). Her hand is ON the torn bunting, so the act and the line are one shot. Flaw: the bunting is strung across a bar above the robot's lid rather than hanging over its front wheels, and the robot is only a lid and beacon at frame bottom. Alt r3-a has the robot and its bunting right and the hand on the lid, but her face is ~12% of frame. Kai to rule.",
+      "superseded_round1_kai": "C01-r2-a.jpg",
+      "options_round1_kai": [
+        "c01r1-a.jpg",
+        "c01r1-b.jpg",
+        "c01r2-a.jpg",
+        "c01r2-b.jpg"
+      ],
+      "why_round1_kai": "Kai round 1 (bc1): the new shot from inside the bunker. r1-a: over the backs and half-turned wary faces, the old lady lit by the doorway on the right, silent, and Maddie alone outside the open doors facing in, big enough for her beacon to read when she speaks; green hillside beyond (the S6-c downs). r1-b put a concrete wall outside the doors. r2-a/b are the deep-tunnel version, many more faces (r2-b is the strongest still: the lady arms folded at the front), but Maddie is a speck at the far end and the crowd is lined up facing the lens rather than looking out. r2-b could not be animated anyway: Flow refused the upload (UPLOAD_REFUSED, no credits), most likely the small child in it. Kai to rule if he prefers the scale of r2-b as a still with a Premiere drift.",
+      "file_round4": "fix4/c01r4d-b.jpg",
+      "options_round4": [
+        "fix4/c01r4-a.jpg",
+        "fix4/c01r4-b.jpg",
+        "fix4/c01r4b-a.jpg",
+        "fix4/c01r4b-b.jpg",
+        "fix4/c01r4c-a.jpg",
+        "fix4/c01r4c-b.jpg",
+        "fix4/c01r4d-a.jpg",
+        "fix4/c01r4d-b.jpg"
+      ],
+      "why_round4": "Editing c01r1-a could not widen its doorway (r4/r4b kept the narrow opening); a reverse angle from c01br3-b (r4c-b) gave the wide doors and the mud, then r4d removed a pennant pole and hung the bunting low. Cost: the wary faces are now mostly silhouettes."
+    },
+    "C01b": {
+      "file": "c01br1-b.jpg",
+      "options": [
+        "c01br1-a.jpg",
+        "c01br1-b.jpg"
+      ],
+      "why": "Kai round 1 (bc1): the first two edge out. b: the bunker face and doors match S6-c/C02, the pair (a man shading his eyes, a woman) step onto the concrete with room to walk, more faces in the dark behind, Maddie in the left foreground with her bunting low on her wheels. a is closer and the faces read better, but the robot fills a third of the frame and the doorway is cropped.",
+      "superseded_round2_kai": "c01br1-b.jpg",
+      "file_round2_kai": "fix3/c01br3-b.jpg",
+      "options_round2_kai": [
+        "fix3/c01br3-a.jpg",
+        "fix3/c01br3-b.jpg"
+      ],
+      "why_round2_kai": "Kai round 2 (at291): the concrete apron outside the doors replaced with the same churned muddy track as the walk (flow_edit_image, ref tracks-S10-c). b keeps the c01br1-b composition exactly; a re-framed wider.",
+      "file_round5": "fix5/c01br5e-a.jpg",
+      "options_round5": [
+        "fix5/c01br5-a.jpg",
+        "fix5/c01br5-b.jpg",
+        "fix5/c01br5b-a.jpg",
+        "fix5/c01br5b-b.jpg",
+        "fix5/c01br5-empty-a.jpg",
+        "fix5/c01br5-empty-b.jpg",
+        "fix5/c01br5c-a.jpg",
+        "fix5/c01br5c-b.jpg",
+        "fix5/c01br5e-a.jpg",
+        "fix5/c01br5e-b.jpg"
+      ],
+      "why_round5": "Nano Banana would not shrink the robot in place (r5, r5b came back the same size). Two steps worked: remove it (empty-a), then add the canonical bot back sized against an object in frame ('no bigger than the blue holdall', r5e). a: lid at the man's knee-thigh, beside his feet; b smaller still.",
+      "file_round6": "fix6/c01br6-a.jpg",
+      "by_round6": "kai"
+    },
+    "C02": {
+      "file": "C02-r2-a.jpg",
+      "options": [
+        "C02-r1-a.jpg",
+        "C02-r1-b.jpg",
+        "C02-r2-a.jpg",
+        "C02-r2-b.jpg"
+      ],
+      "why": "Maddie leads from the foreground with the bunting across her wheels; the hundred file out mid-ground (few-movers rule for Omni), shading their eyes, carrying bags, an old man on a stick; the kill-bot track marks curve through the grass in front. r1-a/b put the crowd in the foreground and Maddie behind or beside them, which loses 'she leads'.",
+      "file_round5": "fix5/C02r5e-b.jpg",
+      "options_round5": [
+        "fix5/C02r5-b.jpg",
+        "fix5/C02r5-c.jpg",
+        "fix5/C02r5b-a.jpg",
+        "fix5/C02r5b-b.jpg",
+        "fix5/C02r5-empty-a.jpg",
+        "fix5/C02r5-empty-b.jpg",
+        "fix5/C02r5c-a.jpg",
+        "fix5/C02r5c-b.jpg",
+        "fix5/C02r5d-a.jpg",
+        "fix5/C02r5d-b.jpg",
+        "fix5/C02r5e-a.jpg",
+        "fix5/C02r5e-b.jpg"
+      ],
+      "why_round5": "Same two-step route ('no bigger than the old man's suitcase', r5e). b: knee-high just ahead of the line; a still chest-high in the foreground. C02r5-a was the stray reference upload."
+    },
+    "C03": {
+      "file": "C03-f1-a.jpg",
+      "options": [
+        "C03-r1-a.jpg",
+        "C03-r1-b.jpg",
+        "C03-r2-a.jpg",
+        "C03-r2-b.jpg",
+        "C03-f1-a.jpg",
+        "C03-f1-b.jpg"
+      ],
+      "why": "Maddie biggest in frame (the subject that must stay the same size through the chain), bunting visible, the line stretching back to the bunker mound on the horizon, the old man on his stick and the blanket trolley right behind her: the visible cost is in the shot. r2-a/b set her smaller and further away, which a travelling chain would shrink further.",
+      "superseded": "C03-r1-a.jpg (round 0)",
+      "why_review1": "Review round 1: made on the Maddie reference so her body is the six-wheeled design (round 0 drew a narrow upright cart), framed for a withheld reveal: Maddie large in the left third with empty grass round her, the line of a hundred only in the right half, well behind her. f1-b is the same idea but the line sits closer behind her, which spoils the tight opening."
+    },
+    "C04": {
+      "file": "C04-r2-a.jpg",
+      "options": [
+        "C04-r1-a.jpg",
+        "C04-r1-b.jpg",
+        "C04-r2-a.jpg",
+        "C04-r2-b.jpg"
+      ],
+      "why": "Sandra sharp, glancing sideways at Derek, whose dark green jumper fills the left edge: the row is visibly between the two of them, and it reverses cleanly with C05-r2-a. r1-a/b put Derek in a dark jacket (continuity with C05) and the walkers in modern blue anoraks."
+    },
+    "C05": {
+      "file": "C05-r2-a.jpg",
+      "options": [
+        "C05-r1-a.jpg",
+        "C05-r1-b.jpg",
+        "C05-r2-a.jpg",
+        "C05-r2-b.jpg"
+      ],
+      "why": "The reverse of C04-r2-a: Derek in the same green jumper (no jacket), looking straight ahead, Sandra's waxed coat and Aran jumper soft at the right edge. r1-a/b have the bigger face but a leather/donkey jacket that C04 does not show.",
+      "file_round6": "fix6/C05r6-b.jpg",
+      "by_round6": "kai"
+    },
+    "C06": {
+      "file": "c06r1-a.jpg",
+      "options": [
+        "C06-r1-a.jpg",
+        "C06-r1-b.jpg",
+        "C06-r2-b.jpg",
+        "C06-r2-c.jpg",
+        "C06-f1-a.jpg",
+        "C06-f1-b.jpg"
+      ],
+      "why": "The fixed building design exactly (long, low black slab, one amber seam its whole length, in a fold of the downs, the only made thing), seen past the cost: the old man being helped up on his stick, a trolley of blankets tipped in the mud with someone slumped beside it, the hundred stopped on the crest, Maddie with her bunting at the front. The monument is never alone in frame. r1-a/b are close behind backs of heads and make the building a strip; r2-b is fine but smaller. C06-r2-a is not an option: it is the bot reference upload, harvested as a stray third candidate.",
+      "superseded": "C06-r2-c.jpg (round 0)",
+      "why_review1": "Review round 1: C06-r2-c with the figure lying by the tipped trolley removed (flow_edit_image). f1-a leaves spilled blankets; f1-b leaves a pale heap that could read as a body.",
+      "superseded_round1_kai": "C06-f1-a.jpg",
+      "options_round1_kai": [
+        "c06r1-a.jpg",
+        "c06r1-b.jpg"
+      ],
+      "why_round1_kai": "Kai round 1 (bc5): C06-f1-a with the tipped trolley and the spilled blankets removed (flow_edit_image, free). a and b are near-identical and both clean; a kept. The old man on his stick and the younger man steadying him stay.",
+      "superseded_round2_kai": "c06r1-a.jpg",
+      "file_round2_kai": "fix3/c06r3-a.jpg",
+      "options_round2_kai": [
+        "fix3/c06r3-a.jpg",
+        "fix3/c06r3-b.jpg"
+      ],
+      "why_round2_kai": "Kai round 2 (at1289): the old man on his stick and the younger man steadying him painted out; every head faces the building. a and b near-identical; a kept."
+    },
+    "C07": {
+      "file": "C07-r2-b.jpg",
+      "options": [
+        "C07-r1-a.jpg",
+        "C07-r1-b.jpg",
+        "C07-r2-a.jpg",
+        "C07-r2-b.jpg"
+      ],
+      "why": "The seam runs the whole length of a long wall and parts into one narrow doorway with one pale step, Maddie small at the foot of it with her bunting, the hundred waiting behind: the invitation and the step in one frame. r1-a/b make the building a tall tower (breaks the one design); r2-a cuts the wall short. Weak point: at this distance the wall reads taller than BL1's slab. Kai to rule."
+    }
+  },
+  "flow_project_review1": "6bccf970-4250-4e62-9e06-d469546cde24 (stills, 'Oct 22 - 02:01')",
+  "flow_project_round1_kai": "aedd38f5-d58f-44d1-917c-bbdd43f288b4 (stills, 'Oct 22 - 19:02')"
+}

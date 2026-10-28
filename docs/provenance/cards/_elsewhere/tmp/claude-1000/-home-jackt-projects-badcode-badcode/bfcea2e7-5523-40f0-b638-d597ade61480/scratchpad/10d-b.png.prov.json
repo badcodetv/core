@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/10d-b.png",
+ "made": "2026-10-26T14:19:57+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A rainy evening in a grand 1930s marble bank lobby, close and side-on on a heavy-set Black man in his fifties with a shaved head, a broken nose and a double chin, in a shabby brown suit two sizes too small, his hat in his hands, sitting at a loan desk: his real-skinned face large in frame and off-centre left, sweat on his scalp, eyes on a pen that hovers over a blank form at the right edge of frame. Behind him, soft and far back across the hall, the huge round vault door stands open and glows warm gold from inside, and three small gangsters in pinstripes with sacks over their shoulders walk straight into it past a guard tipping his cap. A green-shaded banker's lamp on the desk lights his face from below; cold blue light from a tall rain-streaked window catches the back of his head. Most of the frame in shadow; the brightest values are the lamp on his face and the gold vault behind him. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "5a530acc-f6b0-44a3-bb46-61fdbb7cdece",
+ "why": "Speakeasy Mint scene 10 round 1, 10d"
+}

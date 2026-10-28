@@ -61,6 +61,18 @@ call quietly resolves to `undefined`. It looks like an empty page, not a bug in 
 
 ---
 
+### 🔴 The workspace picker needs a REAL mouse click (2026-09-20, proven live)
+
+`setWorkspace` opened the Save-to picker with a DOM `el.click()`. It reports success, but the
+dialog **does not open** — `aria-expanded` stays `false` and the `Search or create...` box never
+mounts. The failure surfaces one step later as `workspace:no-exact-row for "gpom-story"`, which
+reads like a changed row format and is not: the row is still exactly `gpom-story (344 clips)` and
+the existing regex matches it.
+
+Same class as More Options: this is a Radix trigger, so it wants a real Playwright click. The
+script now marks the button with `data-bc-ws="1"` in the page, then clicks it as a mouse, retrying
+up to three times until the search input exists. ✅ Proven: round r42 filed into `gpom-story`.
+
 ## 2. 🔑 The golden rule: scope everything to the Advanced panel
 
 **Suno mounts the Simple panel and the Advanced panel at the same time.** Both are in the
@@ -201,7 +213,7 @@ rejected — the **tail is dropped**, and the tail is where the arc lives (the i
 air, the climb that stops).
 
 This confirms at the DOM level what
-[`narration.md`](../stories/gitpush-origin-master/songs/narration.md) §3 already ruled. Automation
+[`narration.md`](../stories/gitpush-origin-master/songs/archive/narration-v5.5.md) §3 already ruled. Automation
 gets the check for free: compare the source length against `textarea.value.length` after filling,
 and read Suno's own `n/1000` counter as a second opinion.
 
@@ -408,7 +420,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | Voice attaches; Overwrite dialog appears; Keep Current works | ✅ proven |
 | Title sets via the native value setter + `input` event | ✅ proven |
 | Workspace picker selects an existing workspace | ✅ proven (`gpom-story`) |
-| Workspace picker **creates** a new workspace | ✅ **proven live 2026-09-17** (`camping background music`). Typing a new name shows *"No workspaces"* and **no row**, so `setWorkspace` returns `workspace:no-row`. The create control is the small **+** button right of the input, `button[aria-label="Create new workspace"]`. A native click works, a *"New workspace created"* toast appears, and the next `load` picks the new row normally. ⬜ `setWorkspace` does not click it yet |
+| Workspace picker **creates** a new workspace | ✅ **proven live 2026-09-17** (`camping background music`). Typing a new name shows *"No workspaces"* and **no row**, so `setWorkspace` returns `workspace:no-row`. The create control is the small **+** button right of the input, `button[aria-label="Create new workspace"]`. A native click works, a *"New workspace created"* toast appears, and the next `load` picks the new row normally. ✅ `setWorkspace` clicks it since 2026-10-08 when no exact row exists, then picks the new row (proven once: `bank-robbery`) |
 | 🔴 **Duration: the number box and the slider disagree** | ✅ **proven live 2026-09-17.** `setDuration` wrote 45 to `input[placeholder="Auto"]` and read it back, while `[role=slider][aria-label=Duration]` still read **180**, left by an earlier song. `setDuration` now drives the slider too, whenever it exists (5s steps). **Then the camping score (18 Creates, targets 25–70s) came back within ~10s of target on every take, most within 1s. So a set duration DOES change the take's length on v6** |
 | Form is wiped by navigation | ✅ proven (accidentally) |
 | Whole Gen A set loads in one command | ✅ proven end-to-end |
@@ -420,6 +432,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | **The Duration slider can be ABSENT while More Options is open** | 🟡 **observed 2026-08-27, cause unknown.** The exclude box was visible and filling fine — so More Options was plainly open — yet `[role="slider"][aria-label="Duration"]` was **not in the DOM** and no click on More Options would mount it; only Weirdness, Style Influence and Audio Influence were present. Later in the same session `status` read back `Duration=240`, so **the slider is not gone** — it is conditionally mounted and we do not know the condition. `setDuration` now returns `duration:NO-ADVANCED-SLIDER` plus a live diagnosis rather than the misleading `more-options-would-not-open` |
 | The Simple number input is a different, unlinked control | ✅ proven |
 | An attached Voice hides the duration control | ❌ **disproved** — it does not |
+| **That a set duration actually changes the take's length** | ✅ **on v6, yes — 2026-09-16:** a Duration slider left at 180 gave four takes of 2:59–3:00. 🔴 On v6, clicking Custom MOUNTS `[role=slider][aria-label="Duration"]` (default 180) and that is the control Suno obeys; the number input beside it is not — `setDuration` now drives the slider when it exists. 🔴 Same day: the workspace picker's prefix match filed a round into `gpom-story-recut` instead of `gpom-story` (rows read `name (N clips)`); now an exact-row real click, read back, blocking. Earlier, v5.5: 🟡 **partly** — 2026-08-25, a 200s target moved takes from 4:30–4:46 to 4:07–4:24. It shortens, it does not obey: treat it as a ceiling to aim under, never a floor |
 | **That a set duration actually changes the take's length** | ✅ **yes, and on v6 it is tight** — 2026-09-18 (Camping r48), a 195 s target produced **12 takes out of 12 at 3:14–3:16**, across three Style boxes and two weirdness settings: about ±1 s, obeyed not merely bounded. 🔑 And the same lyrics on **Auto** that day (r47) ran **4:38 and 4:55** — on v6, Auto runs long, so set the number. *(Superseded reading, v5.5-era 2026-08-25: a 200 s target moved takes from 4:30–4:46 only to 4:07–4:24 — shortening without obeying. Either v6 changed, or the earlier target was simply below what those lyrics could fit.)* ✅ **And it does NOT cost double** — proven live 2026-09-21 (Camping r54): **twelve v6 Creates at Duration 195 s cost exactly 10 credits each**, counter read before and after every Create (10,540 → 10,420). So a v6 Create is 10 credits for 2 takes, custom duration included |
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
 | **Model picker sets and reads back** (v6 → v6-wild → v6) | ✅ **proven 2026-09-10** via `controls` |
@@ -623,6 +636,17 @@ Lexical line-by-line insert below is unchanged, and `lyricParas` still verifies 
 
 ## 10. Playback, recording and the listening loop
 
+🔴 **`record` runs ONLY when the user explicitly asks for it (Kai, 2026-09-18).** A Create is never
+followed by a record on the agent's own initiative, and a round is never recorded "so it's ready".
+Report the takes with their links, log the round, stop. Record the human's pick, and only the pick.
+The same applies to the Gemini listen (`listen_describe`) — explicit request only (Kai, 2026-09-17).
+
+⚠️ **Back-to-back records can inherit the previous take's length (2026-09-30).** Recording
+`63ce479c` (22.4s) then `fca1ede9` (a 27s take) straight after gave the second file 22.4s, still
+loud at the cut: the player reported the first take's stale `duration`. A solo re-record came out
+26.76s. Until `record` waits for the duration to change, **check every recording's length against
+the take's listed length**, and re-record a mismatch on its own. 🔴 **2026-09-30 again, and worse:** it also hits the FIRST record of a batch (it inherits whatever the player last loaded: `c1690586` came out 14.8s = the previous sad take, `a6cf12f5` 21.52s). A second record of the same take came out right both times. Loop: record → compare with `takes --links` → re-record until within ~1.5s.
+
 Why this exists: the listening loop (`design/2026-09-11-understand-song-loop.md`) records a take by
 playing it in the create page and capturing Chrome's sound from the channel's own virtual speaker
 (`badcode_ch<N>`, made by `scripts/flow-chrome.sh`). That spends **no download** — downloads stay
@@ -679,6 +703,7 @@ exits 1, and callers branch on the code. None of them navigates the Suno tab, an
 
 ```bash
 npx tsx scripts/suno/suno.mts takes [filter]                             # rows: title, dur, songId
+npx tsx scripts/suno/suno.mts takes <titleFilter> --links                # name + length + URL per take
 npx tsx scripts/suno/suno.mts record <songId|id8|title>                  # no credits
 npx tsx scripts/suno/suno.mts explore <spec.json> --round <N> [--yes]    # 20 credits with --yes
 npx tsx scripts/suno/suno.mts narrow <spec.json> <songId|id8|title> --round <N> [--yes]   # 20 with --yes
@@ -707,6 +732,14 @@ npx tsx scripts/suno/suno.mts narrow <spec.json> <songId|id8|title> --round <N> 
   words checked) → per cell set model, controls, sliders and title, re-check the source is still
   attached, Create → **always detach**, and print `🔴 FORM LEFT IN COVER MODE` (exit 1) if the
   detector still reads attached.
+- 🆕 **2026-10-21, bank-robbery round B — two live findings.** (1) **A pick that is in no visible
+  workspace list can still be covered:** call the exported `runNarrow(page, spec, {songId, title}, cells)`
+  directly. `attachCoverById` finds the song through the Browse modal's library search by title and
+  checks the ID, so `findTake`'s visible-list rule only applies to the `narrow` command. (2)
+  **`detachCover` failed once straight after the second Create** ("still attached") **and worked on a
+  retry three seconds later.** Read `coverStateNow` after every detach and retry before handing the
+  form back. Also: `setWorkspace` **creates** a workspace whose name it cannot find, silently, so a
+  renamed or deleted workspace gets an empty namesake.
 - `--round` is **required** on both credit-spending commands: `create()` returns once any two
   rows carry the title, so a reused title would "succeed" on an earlier round's takes.
 
@@ -805,6 +838,21 @@ good (at the cost above).
   that cannot land on the target exactly (it used to oscillate). **Whether a set duration actually
   binds is not yet proven** — it needs one generation.
 
+## Extend on v6 — mapped live 2026-09-17 (by hand-scripted steps, not yet a `suno.mts` command)
+
+Used for GPOM scene 2 (narration-v6.md r20) so a new scene continues an earlier take's own music.
+
+1. Attach the source exactly like a Cover: `attachCoverById(page, songId, title)`. It lands in **Cover** mode.
+2. Open `button[aria-label^="Change condition type from "]` with a **real mouse click**. The menu is
+   REMIX (Cover · Mashup · Sample · Inspo) and EDIT (Extend · Crop · Remove Section · Reverse · Speed · …).
+   Its items have **no role**; click the text `Continue this song where it left off`. The menu closes
+   when the CDP client disconnects, so open it and click the item in the same run.
+3. The card now reads `KEEP | RECREATE` over the waveform and **`Extend from <span contenteditable>00:50.0`**
+   (default 50s). Click the span, Ctrl+A, type `MM:SS.s`, Enter; read it back. `coverStateNow` reports `mode: "Extend"`.
+4. The boxes, Voice, sliders, title and workspace are the normal form. Create cost **10 credits for 2 takes**.
+5. 🔑 **Each take is only the NEW section** (the kept part is not repeated), and the **Duration slider sets the new section's length**:
+   15 gave 0:16 and 0:17.
+
 ## 🔑 `create:timeout` is not necessarily a spent Create (2026-09-23, Camping r70)
 
 One cell (`camping-r70-piano-v6-w60`) returned `create:timeout — clicked, but takes did not appear in
@@ -834,4 +882,12 @@ takes across r70–r72.
 
 **Practical rule: capture the song ids from the `pair` output as it runs.** `pair` prints the take
 list at the end of each Create, and that is the only moment the ids are guaranteed visible.
+
+## 2026-10-17 — the model picker is now a DIALOG (proven live)
+
+The model button now carries `aria-haspopup="dialog"` (it was `"menu"`), and the picker is a grid: one
+`[role="row"]` per model (`v6` · `v6-wild` · `v6-mini`, under a "Create Custom Model" row), the chosen one
+`aria-selected="true"`. The old `[role="menuitemradio"]` items are gone, so `load` read the model as `null` and
+aborted before spending (correctly). `suno.mts` now accepts either shape in `openModelMenu`, `getModel`, `setModel`
+and `status`; `controls` then read `v6` back and five pairs ran clean.
 

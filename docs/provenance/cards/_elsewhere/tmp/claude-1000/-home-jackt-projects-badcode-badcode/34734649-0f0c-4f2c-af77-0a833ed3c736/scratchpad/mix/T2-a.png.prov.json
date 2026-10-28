@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/T2-a.png",
+ "made": "2026-10-25T19:01:39.708Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A still from a prime-time adult animated sitcom: flat colours with one shadow tone, slightly wobbly hand-drawn black outlines, simple rounded people with big round eyes, small dot pupils and overbites, faint old film grain. A tall city building cut open in cross-section like a doll's house, seen straight on. In the attic an old woman in a coat shivers by one candle in an ice blue room. At street level a cream and brick red bakery; a red crowd and a blue crowd of mixed ages and skin tones shove each other under a yellow street lamp, a police car beside them. Below, a secret emerald basement in toxic green lamplight: printing presses with cheerful 1930s cartoon faces throw banknotes into the air, gangsters in pinstripe suits play jazz, and a tall skinny mayor in a bowler hat and gold chain dances. At the very bottom an orange furnace. Each printing press has one normal cartoon eye and one eye that is a small red triangle. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "357ff563-f686-48a9-865f-69af3cb8bdd6"
+}

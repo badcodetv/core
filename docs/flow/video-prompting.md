@@ -1,7 +1,7 @@
 # Video prompting — Veo 3 / 3.1
 
 Text→video, image→video, frames, audio and dialogue. Motion craft for
-`animate-slide` and `music-video-short`.
+`scene-animation` (and, before the 2026-10-23 archive, `animate-slide` and `music-video-short`).
 
 ## 0. 🔴 The order of operations — settle the look on a STILL first
 
@@ -183,6 +183,15 @@ frame should look like, and it drifts toward regenerating rather than animating.
   input's grade by default — *"Veo 3 goes beyond animation — it retains the filtering and color
   grading of the input image"* — so explicit style-lock language is mainly needed on complex
   scenes. (practitioner, [replicate.com](https://replicate.com/blog/veo-3-image))
+
+- 🔴 **Don't describe a change as "a wave of light" unless you want a light effect** (measured
+  2026-09-29, GPOM downfall v01, n=1). *"A wave of phone screens lights up across the office,
+  starting at the back and rushing forward desk by desk"* came back as a glowing magic wave
+  sweeping through the room. The same beat written as objects (*"people's phones buzz on the
+  desks one after another; they pick them up, read, and look up"*) plus *"ordinary phones, no
+  glow effects"* played correctly. The sequential screen-change prompt on the trading floor
+  (*"monitors switch to plain white one row at a time"*) did work: it names the screens changing
+  state, not a travelling light.
 
 > **Minimal and valid:** "Make him run!"
 

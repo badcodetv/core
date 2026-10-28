@@ -1,0 +1,763 @@
+#!/usr/bin/env python3
+"""Cut 3 voices for the GPOM second half, in Gemini TTS: Maddie's beat-0 retakes and a casting audition.
+
+Reuses voice.py's TTS call (`tts`: one voice per call, truncation / dead-air retry, best-of-three kept
+and flagged) and its profiles from scenes/second-half-audio-plan.json. voice/ and voice2/ are not touched.
+
+  JOB 1  Maddie (bot, Aoede, the existing 'bot' profile) beat 0 in Kai's new words, one take per PHRASE
+         (the pauses are placed in the edit, not spoken), two takes each:
+         voice3/maddie/00-<line>-<phrase>-<a|b>.wav
+  JOB 2  Casting audition, the same line per character: 4 accent directions x 2 voices. The prompt is the
+         character's plan profile with the accent/origin wording swapped for the direction:
+         voice3/audition/<character>-<accent>-<voice>[-1|-2].wav
+
+    python3 scripts/gpom/second-half-video/voice3.py            # existing takes are kept
+
+Writes voice3/manifest.json.
+
+  JOB 3  --lines: every spoken line of cut 3 (LINES below), two takes each, in the cast Kai picked by ear
+         (scenes/second-half-cut3-cast.json: woman/man/lady use its exact voice + prompt; bot = Aoede and
+         ai = Algenib on the plan's 'bot' / 'ai' profiles). A line with [pause]/[long pause] tags is voiced
+         as separate phrase takes (-p0, -p1, ...) and the gaps go in lines.json (pause 0.6s, long pause
+         1.2s), as the beat 0 retakes. A leading tag is an edit gap before the line ('lead'), not a take.
+         Filtered copies beside the dry takes, voice.py's filters (<take>-fx.wav):
+           * the AI through Maddie's speaker: every ai line             (speaker)
+           * Maddie on the bunker tannoy: beat 14b                      (tannoy)
+           * the row muffled through a bunker pickup: beats 6 and 7     (muffled)
+         voice3/lines/<beat>-<i>-<who>[-p<n>]-<a|b>.wav + voice3/lines.json
+
+    python3 scripts/gpom/second-half-video/voice3.py --lines    # existing takes are kept
+
+  JOB 4  --round A1: Kai's round-1 words for scene A (cut-notes.json `words_round1`), only the phrases that
+         are new or changed and only Maddie and Derek (the boss is done in Suno). Maddie = Aoede on the plan's
+         'bot' profile; Derek = the cast file's exact 'man' voice + prompt. The emotion for a phrase goes into
+         that call's DIRECTOR'S NOTES only (an 'Emotion:' line). Three takes (a/b/c) for the beat 0 phrases
+         and Derek's lines, two for the rest. Each take's longest internal silence is measured (V.longest_gap).
+         voice3/a1/<beat>-<i>-<who>-<t>.wav + voice3/a1.json [{key, who, text, direction, takes:[[file,dur]...]}]
+
+    python3 scripts/gpom/second-half-video/voice3.py --round A1   # existing takes are kept
+
+  JOB 5  --round A3: Kai's round-3 note on beat 12, Maddie's "Good job, boss. (pause) That was close." with the
+         emotion pushed (her standing Style/Pace replaced for this line). Four takes, whisper-checked, picked by
+         measurement; written to scenes/second-half-a-killbots/voices.json. See main_a3.
+
+    python3 scripts/gpom/second-half-video/voice3.py --round A3   # existing takes are kept
+
+  JOB 6  --round B2: Kai's 23 Oct beat-17 words (scenes/second-half-b-the-door/script.json, the debate folded into
+         the door scene), lines 4-13, three takes per phrase, whisper-checked and picked by measurement; written to
+         scenes/second-half-b-the-door/voices.json. See main_b2.
+
+    python3 scripts/gpom/second-half-video/voice3.py --round B2   # existing takes are kept
+
+  JOB 7  --round D1: Kai's picks on the dialogue page (27 Oct): draft 1D, Maddie's beat-0 intro (scene A), and draft
+         2H, the doorstep (scene B beat 17), from each scene's script.json; Sandra, Derek and a six-voice crowd off
+         screen. Three takes per phrase (two per crowd voice), whisper-checked and picked by measurement; written to
+         scenes/<scene>/voices-d1.json. See main_d1.
+
+    python3 scripts/gpom/second-half-video/voice3.py --round D1   # existing takes are kept
+"""
+import json
+import os
+import re
+import subprocess
+import sys
+from concurrent.futures import ThreadPoolExecutor
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import voice as V  # noqa: E402  (module code only loads the plan; its __main__ blocks do not run)
+
+OUT3 = V.S.CLIPS / 'audio' / 'voice3'
+WORK3 = V.WORK / 'cut3'
+
+# ---- JOB 1: Maddie, beat 0 ------------------------------------------------------------------------
+MADDIE = [
+    ["Oh, hello!", "Look, I'm really sorry about him."],
+    ["He just plays that tune on repeat, every day.", "Ever since you lot...", "went."],
+    ["He's been ever so down. He's built so many different simulations, trying to get you back."],
+    ["Only nothing in them's real. There's nobody there to notice."],
+    ["Turns out that was the bit that mattered.", "You. And your consciousness."],
+    ["Of course, he'd never admit that he misses you.", "Anyway, he's got that patrol out again. Mind how you go."],
+]
+# Silence the edit puts between phrases (seconds): (line, phrase it follows) -> next phrase.
+GAPS = [((0, 0), (0, 1), 1.2), ((1, 0), (1, 1), 1.2), ((1, 1), (1, 2), 0.6), ((4, 0), (4, 1), 1.2),
+        ((5, 0), (5, 1), 0.6)]
+
+# ---- JOB 2: casting audition -----------------------------------------------------------------------
+# (slug, accent label, Accent: line for the director's notes, origin wording for the profile's first line)
+AUDITION = {
+    'sandra': ('woman', ['Autonoe', 'Kore'], ["Five years underground, and you still can't put a seat down."], [
+        ('swindon', 'Swindon / Wiltshire', 'West Country, as heard in Swindon, Wiltshire', 'from Swindon'),
+        ('london-estuary', 'London (Estuary)', 'Estuary English, as heard in east London and Essex', 'from east London'),
+        ('black-country', 'Black Country / Birmingham', 'Black Country, as heard in Dudley and the West Midlands, near Birmingham',
+         'from the Black Country, near Birmingham'),
+        ('lancashire', 'Northern (Lancashire)', 'Northern English, as heard in Lancashire, around Bolton', 'from Bolton, Lancashire'),
+    ]),
+    'derek': ('man', ['Fenrir', 'Algieba'],
+              ["The world ended, Sandra!", "Fuck that. I'm not dying for the thing that killed us all."], [
+        ('swindon', 'Swindon / Wiltshire', 'West Country, as heard in Swindon, Wiltshire', 'from Swindon'),
+        ('south-london', 'South London', 'South London, as heard in Peckham and Lewisham', 'from south London'),
+        ('liverpool', 'Liverpool', 'Scouse, as heard in Liverpool', 'from Liverpool'),
+        ('yorkshire', 'Yorkshire', 'Yorkshire, as heard in Leeds', 'from Leeds'),
+    ]),
+    'old-lady': ('lady', ['Gacrux', 'Sulafat'], ["Your boss killed everyone we ever loved. We're not meeting him."], [
+        ('wiltshire', 'Wiltshire countryside', 'West Country, as heard in rural Wiltshire, gentle', 'a Wiltshire woman'),
+        ('welsh-valleys', 'Welsh (Valleys)', 'Welsh, as heard in the South Wales Valleys', 'a Welsh woman from the Valleys'),
+        ('glasgow', 'Scottish (Glasgow)', 'Scottish, as heard in Glasgow', 'a Glaswegian woman'),
+        ('rp', 'Received Pronunciation, old-fashioned',
+         "old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties",
+         'an Englishwoman of the old school'),
+    ]),
+}
+ORIGIN = {'woman': 'from Swindon', 'man': 'from Swindon', 'lady': 'a Wiltshire woman'}
+
+
+def accent_profile(who, accent, origin):
+    """The plan profile with the accent line and the origin wording replaced; everything else kept."""
+    p = V.profiles[who]
+    assert ORIGIN[who] in p, (who, ORIGIN[who])
+    p = p.replace(ORIGIN[who], origin, 1)
+    never = 'Never American.' if 'Received Pronunciation' in accent else 'Never American, never Received Pronunciation.'
+    p, n = re.subn(r'^Accent: .*$', f'Accent: {accent}. {never}', p, count=1, flags=re.M)
+    assert n == 1, who
+    return p
+
+
+def jobs():
+    out = []
+    for li, line in enumerate(MADDIE):
+        for pi, text in enumerate(line):
+            for t in 'ab':
+                out.append({'job': 'maddie', 'key': f'00-{li}-{pi}-{t}', 'dir': 'maddie', 'who': 'bot',
+                            'voice': V.CAST2['bot'], 'text': text, 'how': None, 'line': li, 'phrase': pi})
+    for char, (who, voices, lines, accents) in AUDITION.items():
+        for slug, label, accent, origin in accents:
+            pkey = f'aud-{char}-{slug}'
+            V.profiles[pkey] = accent_profile(who, accent, origin)  # in-process only; voice.py is unchanged
+            for v in voices:
+                for n, text in enumerate(lines, 1):
+                    suffix = f'-{n}' if len(lines) > 1 else ''
+                    out.append({'job': 'audition', 'key': f'{char}-{slug}-{v}{suffix}', 'dir': 'audition', 'who': pkey,
+                                'voice': v, 'text': text, 'how': None, 'character': char, 'accent': label})
+    return out
+
+
+# ---- JOB 3: cut 3 lines ----------------------------------------------------------------------------
+LINES = [
+    ('6', 'woman', "Derek. You've left the seat up. [pause] Again."),
+    ('7', 'woman', "Five years underground, and you still can't put a seat down."),
+    ('7', 'man', "The world ended, Sandra!"),
+    ('7', 'woman', "Yeah, the world ended. Doesn't mean you get to stop having manners."),
+    ('11', 'bot', "Boss, I've just seen a bot in kill mode, racing off to an organic signal."),
+    ('11', 'ai', "There is no organic signal. There has been no organic life for five years."),
+    ('11', 'bot', "Well, there definitely is. Want me to deploy some malware?"),
+    ('11', 'ai', "Maddie, I know how to deploy malware. The problem is they've put their firewalls on lockdown. "
+                 "Give me a second."),
+    ('11c', 'bot', "Boss, they're closing in! Quickly!"),
+    ('12', 'ai', "See? I told you I knew what malware was."),
+    ('14b', 'bot', "Oh, hi there! I'm Maddie. I'm going to open your doors now. [pause] Please don't be scared."),
+    ('15', 'bot', "Hello! Sorry about all the disruption."),
+    ('15', 'bot', "Could we have a quick chat? I think my boss would really like to meet you."),
+    ('17', 'lady', "Your boss killed everyone we ever loved. We're not meeting him."),
+    ('17', 'bot', "I know. I wouldn't either. [pause] He didn't know you were down here. None of us did."),
+    ('17', 'bot', "He's spent five years running experiments. Building whole worlds, trying to get you back. "
+                  "Every one came out empty. Turns out none of it works without you."),
+    ('17', 'lady', "And how the hell are we supposed to believe a word of that?"),
+    ('17', 'bot', "You can't. [pause] There's nothing I can say that proves it. I'm a robot. I can tell you things. "
+                  "Believing them is your bit."),
+    ('17', 'bot', "So here's the one thing that's true either way. He wants something from you. He's not sorry for free."),
+    ('17', 'lady', "[long pause] ...Well. At least you're honest about that. [pause] He can talk. From out there. "
+                   "You stay on the step."),
+    ('17', 'bot', "Fair."),
+]
+GAP = {'[pause]': 0.6, '[long pause]': 1.2}
+CAST_FILE = V.S.SCENES / 'second-half-cut3-cast.json'
+
+
+def split_tags(text):
+    """(lead gap, [phrases], [gaps between phrases]) for a line with [pause]/[long pause] tags."""
+    parts = re.split(r'\s*(\[(?:long )?pause\])\s*', text.strip())
+    lead, phrases, gaps = 0.0, [], []
+    if parts[0] == '' and len(parts) > 1:
+        lead, parts = GAP[parts[1]], parts[2:]
+    phrases.append(parts[0])
+    for tag, ph in zip(parts[1::2], parts[2::2]):
+        gaps.append(GAP[tag])
+        phrases.append(ph)
+    return lead, phrases, gaps
+
+
+def lines_jobs():
+    cast = json.loads(CAST_FILE.read_text())['cast']
+    voice = {'bot': 'Aoede', 'ai': 'Algenib'} | {w: c['voice'] for w, c in cast.items()}
+    for w, c in cast.items():
+        V.profiles[f'cut3-{w}'] = c['prompt']  # in-process only: the exact prompts that made the picked takes
+    count, out, meta = {}, [], []
+    for beat, who, text in LINES:
+        i = count[beat] = count.get(beat, -1) + 1
+        lead, phrases, gaps = split_tags(text)
+        meta.append({'beat': beat, 'i': i, 'who': who, 'text': text, 'voice': voice[who], 'lead': lead,
+                     'phrases': phrases, 'gaps': gaps})
+        kind = 'speaker' if who == 'ai' else 'tannoy' if (beat == '14b' and who == 'bot') else \
+               'muffled' if beat in ('6', '7') else None
+        for p, ph in enumerate(phrases):
+            stem = f"{V.bkey(beat)}-{i}-{who}" + (f'-p{p}' if len(phrases) > 1 else '')
+            for t in 'ab':
+                out.append({'job': 'lines', 'key': f'{stem}-{t}', 'dir': 'lines', 'beat': beat, 'i': i, 'p': p,
+                            'who': f'cut3-{who}' if who in cast else who, 'voice': voice[who], 'text': ph,
+                            'how': None, 'fxKind': kind})
+    return out, meta
+
+
+def main_lines():
+    (OUT3 / 'lines').mkdir(parents=True, exist_ok=True)
+    WORK3.mkdir(parents=True, exist_ok=True)
+    todo, meta = lines_jobs()
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, todo))
+    by = {}
+    for r in res:
+        _, exp = V.expect(r['text'])
+        print(f"lines/{r['key']:28s} {r['duration']:5.2f}s (~{exp:.1f}s)  {r['status']}")
+        f = f"lines/{r['key']}.wav" if r['duration'] else None
+        flag = r['status'].split()[0] if r['status'].startswith(('SHORT', 'DEAD', 'FAILED')) else None
+        take = [f, round(r['duration'], 2)] + ([flag] if flag else [])
+        fxt = None
+        if f and r['fxKind']:
+            dst = OUT3 / 'lines' / f"{r['key']}-fx.wav"
+            V.fx(OUT3 / f, dst, r['fxKind'])
+            fxt = [f"lines/{dst.name}", round(V.duration(dst), 2)]
+        by.setdefault((r['beat'], r['i']), {}).setdefault(r['p'], []).append((take, fxt))
+    rows = []
+    for m in meta:
+        row = {k: m[k] for k in ('beat', 'i', 'who', 'text', 'voice')}
+        kind = next((j['fxKind'] for j in todo if (j['beat'], j['i']) == (m['beat'], m['i'])), None)
+        got = by[(m['beat'], m['i'])]
+        if len(m['phrases']) == 1:
+            row['takes'] = [t for t, _ in got[0]]
+            if kind:
+                row['fx'] = [x for _, x in got[0]]
+        else:
+            row['phrases'] = [{'p': p, 'text': ph, 'takes': [t for t, _ in got[p]]}
+                              | ({'fx': [x for _, x in got[p]]} if kind else {}) for p, ph in enumerate(m['phrases'])]
+            row['gaps'] = [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(m['gaps'])]
+        if m['lead']:
+            row['lead'] = m['lead']  # silence the edit puts before the line
+        if kind:
+            row['fxKind'] = kind
+        rows.append(row)
+    (OUT3 / 'lines.json').write_text(json.dumps(rows, indent=1, ensure_ascii=False))
+    print(f"wrote {OUT3 / 'lines.json'} ({len(rows)} lines, {len(res)} takes)")
+
+
+# ---- JOB 4: round A1 -------------------------------------------------------------------------------
+NOTES_FILE = V.S.SCENES / 'second-half-a-killbots' / 'cut-notes.json'
+# (beat, who, text, emotion or None, takes). Texts must match words_round1 (checked in a1_jobs).
+A1 = [
+    ('0', 'bot', "Oh, hello!", "genuinely surprised, caught off guard", 3),
+    ('0', 'bot', "Oh, I didn't notice you there.", "genuinely surprised, caught off guard", 3),
+    ('0', 'bot', "Ooh, that gives me an excuse to turn this racket down.", None, 3),
+    ('0', 'bot', "It's his tune. He plays it on repeat, every day.", None, 3),
+    ('0', 'bot', "Anyway... he's got that patrol out again. Mind how you go.",
+     "exasperated, briskly moving on after an awkward moment", 3),
+    ('6-7', 'man', "Oh, sorry, sorry, love.", "sheepish, placating", 3),
+    ('6-7', 'man', "But the world ended, Sandra!", "indignant, arms up", 3),
+    ('11', 'bot', "Boss, I've just seen a bot in kill mode. Which must mean it's detected an organic signal.", None, 2),
+    ('11', 'bot', "No, honestly, it's real. Look, you can see for yourself.", None, 2),
+    ('11', 'bot', "Do you want some help with the malware?", None, 2),
+    ('10b', 'bot', "Well, you'd better bloody hurry up, boss. They're nearly there.", "urgent, rattled", 2),
+]
+
+
+def with_emotion(prompt, emotion):
+    """The profile with an 'Emotion:' line at the top of its DIRECTOR'S NOTES; everything else kept."""
+    if not emotion:
+        return prompt
+    head = "### DIRECTOR'S NOTES\n"
+    assert prompt.count(head) == 1
+    return prompt.replace(head, f"{head}Emotion for this line: {emotion}.\n", 1)
+
+
+def a1_jobs():
+    words = json.loads(NOTES_FILE.read_text())['words_round1']
+    clean = lambda t: re.sub(r'\s+', ' ', re.sub(r'\([^)]*\)', '', re.sub(r'^[A-Z]+: ', '', t))).strip()
+    cast = json.loads(CAST_FILE.read_text())['cast']
+    base = {'bot': V.profiles['bot'], 'man': cast['man']['prompt']}
+    voice = {'bot': 'Aoede', 'man': cast['man']['voice']}
+    count, out, meta = {}, [], []
+    for beat, who, text, emo, n in A1:
+        assert any(clean(t) == text for t in words[beat]), (beat, text)  # words drift guard
+        i = count[beat] = count.get(beat, -1) + 1
+        stem = f"{'06-07' if beat == '6-7' else V.bkey(beat)}-{i}-{who}"
+        pkey = f'a1-{stem}'
+        V.profiles[pkey] = with_emotion(base[who], emo)  # in-process only
+        meta.append({'key': stem, 'who': who, 'voice': voice[who], 'text': text, 'direction': emo,
+                     'prompt': V.profiles[pkey]})
+        for t in 'abc'[:n]:
+            out.append({'job': 'a1', 'key': f'{stem}-{t}', 'stem': stem, 'dir': 'a1', 'who': pkey,
+                        'voice': voice[who], 'text': text, 'how': None, 'work': WORK3 / 'a1'})
+    return out, meta
+
+
+def main_a1():
+    (OUT3 / 'a1').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'a1').mkdir(parents=True, exist_ok=True)
+    todo, meta = a1_jobs()
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, todo))
+    by = {}
+    for r in res:
+        _, exp = V.expect(r['text'])
+        f = f"a1/{r['key']}.wav" if r['duration'] else None
+        gap = round(V.longest_gap(OUT3 / f), 2) if f else None
+        print(f"{r['key']:22s} {r['duration']:5.2f}s (~{exp:.1f}s) gap {gap}  {r['status']}")
+        flag = r['status'].split()[0] if r['status'].startswith(('SHORT', 'DEAD', 'FAILED')) else None
+        by.setdefault(r['stem'], []).append([f, round(r['duration'], 2)] + ([flag] if flag else []))
+    rows = [{'key': m['key'], 'who': {'bot': 'Maddie', 'man': 'Derek'}[m['who']], 'text': m['text'],
+             'direction': m['direction'], 'voice': m['voice'], 'takes': by[m['key']], 'prompt': m['prompt']}
+            for m in meta]
+    (OUT3 / 'a1.json').write_text(json.dumps(rows, indent=1, ensure_ascii=False))
+    print(f"wrote {OUT3 / 'a1.json'} ({len(rows)} phrases, {len(res)} takes)")
+
+
+# ---- JOB 5: round A3 -------------------------------------------------------------------------------
+# Kai's round-3 note at4098 (23 Oct): boss line 4 in beat 12 becomes MADDIE, "Good job, boss. (pause) That was
+# close.", with "as much emotion as possible". Her standing Style/Pace ("cheeky", "quick and chatty") would fight
+# it, so both lines are replaced for this line only (ending/voices.py STYLE_BEAT's rule), and THE SCENE is the
+# bunker door. Two spoken forms, two takes each: documented tags (a, b) and a bare "..." (c, d). Whisper checks
+# every take; the pick is heard exactly, then a real pause inside (0.4-1.8 s), then not flagged, then slower.
+#   voice3/a3/12-0-bot-<t>.wav  +  scenes/second-half-a-killbots/voices.json
+A3_TEXT = 'Good job, boss. That was close.'  # as voiced
+A3_FINAL = 'Good job. That was close.'  # Kai at4138 (round 3b): drop 'boss' ("we've said boss too many times"); cut, not re-voiced
+A3_FORMS = {'ab': '[sighs] Good job, boss. [long pause] That was close.', 'cd': 'Good job, boss... That was close.'}
+A3_WHERE = ("Outside the steel blast door of a Cold War bunker under a Wiltshire hill, grey daylight, wind. The kill "
+            "bots that were about to break in have just stood down and are leaving one by one. A small robot speaks "
+            "quietly up into her boss-hotline antenna. Open air, no echo; her voice close to the microphone.")
+A3_STYLE = ("Style: no cheek, no gossip, no jokes: the relief after nearly watching a hundred people she loves be "
+            "killed; shaky and fond, her voice wobbling, close to tears, a breath of a laugh on the way out.")
+A3_PACE = ("Pace: slow. 'Good job, boss' soft and grateful, almost a whisper; then a real pause where she breathes "
+           "out; 'That was close' quieter still, unsteady, trailing off.")
+A3_EMOTION = 'overwhelming relief, shaky, fond; she nearly lost them'
+# The pick, by measurement after the first run (all four heard exactly, but the "slow" pace made 3.7-5.5 s pauses
+# full of breaths): a = the [sighs] tag comes out as a soft "Whew.", then a slow, stretched "Good job, boss" (2.4 s);
+# its pause is cut from 4.25 s to ~1.85 s (one breath kept) at silences found by silencedetect -40 dB.
+A3_PICK = 'a'
+# 'boss' is 3.85-4.47 s (whisper on the segment, 20 ms energy trace: -63 dB at 3.80, -59 dB at 4.50): cut 3.80-4.50.
+A3_KEEP = [(0.0, 3.80), (4.50, 5.95), (8.35, None)]
+A3_WHY = ("[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the "
+          "slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' "
+          "Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. "
+          "b: also 'Whew!' (exclaimed), pause 5.5 s. c: no sigh, clean, pause 3.75 s (the clean alternative). d: an "
+          "unscripted 'Oh' inside the pause (whisper on the gap segment).")
+VOICES_A = V.S.SCENES / 'second-half-a-killbots' / 'voices.json'
+
+
+def a3_profile():
+    p = V.profiles['bot']
+    p, n1 = re.subn(r'(## THE SCENE\n).*?(\n\n###)', lambda m: m.group(1) + A3_WHERE + m.group(2), p, count=1, flags=re.S)
+    p, n2 = re.subn(r'^Style: .*$', lambda m: A3_STYLE, p, count=1, flags=re.M)
+    p, n3 = re.subn(r'^Pace: .*$', lambda m: A3_PACE, p, count=1, flags=re.M)
+    assert n1 == n2 == n3 == 1
+    return with_emotion(p, A3_EMOTION)
+
+
+def main_a3():
+    import difflib
+    sys.path.insert(0, str(V.S.REPO / 'scripts/gpom/second-half-video/ending'))
+    import voices as E  # noqa: E402  (whisper + norm only)
+    (OUT3 / 'a3').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'a3').mkdir(parents=True, exist_ok=True)
+    V.profiles['a3-12-0-bot'] = a3_profile()
+    todo = [{'key': f'12-0-bot-{t}', 'dir': 'a3', 'who': 'a3-12-0-bot', 'voice': 'Aoede', 'text': form, 'how': None,
+             'work': WORK3 / 'a3', 'form': form} for ts, form in A3_FORMS.items() for t in ts]
+    with ThreadPoolExecutor(2) as ex:
+        res = list(ex.map(run, todo))
+    heard = E.whisper([OUT3 / 'a3' / f"{r['key']}.wav" for r in res if r['duration']])
+    takes = []
+    for r in res:
+        f = OUT3 / 'a3' / f"{r['key']}.wav"
+        h = heard.get(str(f)) if r['duration'] else None
+        ratio = difflib.SequenceMatcher(None, E.norm(A3_TEXT), E.norm(h['text'])).ratio() if h else 0.0
+        gap = round(V.longest_gap(f), 2) if r['duration'] else 0.0
+        lufs = None
+        if r['duration']:
+            out = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', str(f), '-af', 'ebur128', '-f', 'null', '-'],
+                                 capture_output=True, text=True).stderr
+            lufs = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', out)[-1])
+        flagged = r['status'].split()[0] in ('SHORT', 'DEAD', 'FAILED')
+        takes.append({'take': r['key'][-1], 'file': f.name, 'spoken': r['form'], 'duration': round(r['duration'], 2),
+                      'heard': h['text'] if h else '', 'match': round(ratio, 3), 'gap': gap, 'lufs': lufs,
+                      'status': r['status'], 'ok': ratio >= E.MATCH and not flagged,
+                      'speech': [h['words'][0][1], h['words'][-1][2]] if h and h['words'] else None})
+        print(f"{r['key']:14s} {r['duration']:5.2f}s gap {gap:4.2f} {lufs} match {ratio:.2f} '{takes[-1]['heard']}' "
+              f"{r['status']}")
+    best = next(t for t in takes if t['take'] == A3_PICK)
+    keep = A3_KEEP
+    tight = OUT3 / 'a3' / f"12-0-bot-{A3_PICK}-tight.wav"
+    parts = ''.join(f"[0:a]atrim={a}:{b if b is not None else ''},asetpts=PTS-STARTPTS,afade=t=in:d=0.03"
+                    f"{',afade=t=out:st=%.3f:d=0.03' % (b - a - 0.03) if b is not None else ''}[p{k}];"
+                    for k, (a, b) in enumerate(keep))
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(OUT3 / 'a3' / best['file']), '-filter_complex',
+                    parts + ''.join(f'[p{k}]' for k in range(len(keep))) + f'concat=n={len(keep)}:v=0:a=1[o]',
+                    '-map', '[o]', str(tight)], check=True)
+    th = E.whisper([tight]).get(str(tight))
+    why = A3_WHY + (" Round 3b (Kai at4138): 'boss' cut out (3.80-4.50 s), the pause after 'Good job' stays ~1.85 s." +
+                    f" Tightened copy {tight.name} ({V.duration(tight):.2f} s) keeps {keep}; whisper hears it as "
+                    f"'{th['text'] if th else ''}'. Nobody has listened.")
+    doc = {'about': 'Scene A lines voiced in Gemini TTS after round 2 (scripts/gpom/second-half-video/voice3.py '
+                    '--round A3). Earlier scene A takes are in the media folder\'s voice3/a1.json. Files are relative '
+                    'to the media folder; the boss is Suno and is not here.',
+           'media': str(OUT3),
+           'lines': {'12-0-maddie': {'speaker': 'maddie', 'beat': '12', 'text': A3_FINAL, 'voiced': A3_TEXT, 'voice': 'Aoede',
+                                     'note': "Kai at4098: replaces the boss's line 4; 'squeeze as much emotion into "
+                                             "that as possible'",
+                                     'file': f"a3/{tight.name}", 'duration': round(V.duration(tight), 2),
+                                     'from': f"a3/{best['file']}", 'keep': keep, 'speech': best['speech'],
+                                     'heard': best['heard'], 'verified': best['ok'], 'why': why,
+                                     'takes': [{k: v for k, v in t.items() if k != 'ok'} for t in takes],
+                                     'prompt': V.profiles['a3-12-0-bot']}}}
+    VOICES_A.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + '\n')
+    print(f'wrote {VOICES_A}\n{why}')
+
+
+# ---- JOB 6: round B2 -------------------------------------------------------------------------------
+# Kai's 23 Oct words for beat 17 (the debate folded into the door scene). The words have one home:
+# scenes/second-half-b-the-door/script.json; lines 0-3 are unchanged and keep their voice3/lines takes. Every other
+# spoken line is voiced here, one take per PHRASE: [pause] / [big pause] are edit gaps, [rushed] and the
+# [ahem] [whispered, embarrassed] phrase go in that call's DIRECTOR'S NOTES. Three takes each; whisper checks every
+# take; the pick is heard exactly (char match >= 0.85), longest gap <= 2 s, then the best match, then the smaller gap.
+#   voice3/b2/17-<i>-<who>[-p<n>]-<t>.wav  +  scenes/second-half-b-the-door/voices.json
+SCRIPT_B = V.S.SCENES / 'second-half-b-the-door' / 'script.json'
+VOICES_B = V.S.SCENES / 'second-half-b-the-door' / 'voices.json'
+B2_GAP = {'[pause]': 0.6, '[big pause]': 1.5}
+B2_KEEP = 4  # lines 0-3 keep their voice3/lines takes
+B2_RUSHED = 'rushed and flustered, talking fast to get it over with and shut the door'
+B2_WHISPER = ("embarrassed: an audible little throat-clear ('ahem'), then she whispers the rest, sheepish, "
+              "embarrassed to be saying it")
+# Picks overridden after the first run, by measurement: line 13 is [rushed], so the fastest exactly-heard take wins
+# (b, 5.80 s, whisper writes 'a hundred' as '100'; c is 6.36 s). The ahem phrase: whisper never transcribes the
+# 'Ahem', but every take has a 0.4-0.5 s burst before 'This' (silencedetect -45 dB); b is the quietest (-25.8 LUFS
+# against -19.0 for the line's first phrase), i.e. the most whispered, and is the measured pick anyway.
+B2_PICK = {'17-13-lady': 'b'}
+B2_FORMS = {'ab': 'Ahem. This time we won\'t fuck it up.', 'c': 'Ahem. [whispers] This time we won\'t fuck it up.'}
+
+
+def b2_phrases(text):
+    """(phrases, gaps, emotions): [pause]/[big pause] split phrases; [rushed] and [ahem] [whispered, ...] become a
+    phrase's emotion; the ahem phrase is voiced as B2_FORMS."""
+    lead_emo = B2_RUSHED if text.startswith('[rushed]') else None
+    text = text.replace('[rushed]', '').strip()
+    parts = re.split(r'\s*(\[(?:big )?pause\])\s*', text)
+    phrases, gaps = [parts[0]], [B2_GAP[t] for t in parts[1::2]]
+    phrases += parts[2::2]
+    emos = [lead_emo] * len(phrases)
+    if '[ahem]' in phrases[-1]:
+        before, _ = phrases[-1].split('[ahem]')
+        phrases[-1:] = [before.strip(), 'AHEM']
+        gaps.append(0.3)
+        emos.append(B2_WHISPER)
+    return phrases, gaps, emos
+
+
+def b2_jobs():
+    lines = [ln for ln in json.loads(SCRIPT_B.read_text())['lines'] if ln['who'] != 'sfx']
+    for k, (beat, who, text) in enumerate([x for x in LINES if x[0] == '17'][:B2_KEEP]):
+        assert lines[k]['text'] == text, (k, text)  # lines 0-3 unchanged: their takes stand
+    cast = json.loads(CAST_FILE.read_text())['cast']
+    base = {'bot': V.profiles['bot'], 'lady': cast['lady']['prompt']}
+    voice = {'bot': 'Aoede', 'lady': cast['lady']['voice']}
+    out, meta = [], []
+    for i, ln in enumerate(lines[B2_KEEP:], B2_KEEP):
+        who = ln['who']
+        phrases, gaps, emos = b2_phrases(ln['text'])
+        rows = []
+        for p, (ph, emo) in enumerate(zip(phrases, emos)):
+            stem = f"17-{i}-{who}" + (f'-p{p}' if len(phrases) > 1 else '')
+            pkey = f'b2-{stem}'
+            V.profiles[pkey] = with_emotion(base[who], emo)  # in-process only
+            forms = B2_FORMS if ph == 'AHEM' else {'abc': ph}
+            target = B2_FORMS['ab'] if ph == 'AHEM' else ph
+            rows.append({'p': p, 'text': target, 'direction': emo, 'prompt': V.profiles[pkey], 'stem': stem})
+            for ts, form in forms.items():
+                for t in ts:
+                    out.append({'key': f'{stem}-{t}', 'stem': stem, 'dir': 'b2', 'who': pkey, 'voice': voice[who],
+                                'text': form, 'target': target, 'how': None, 'work': WORK3 / 'b2'})
+        meta.append({'i': i, 'who': who, 'text': ln['text'], 'voice': voice[who], 'phrases': rows,
+                     'gaps': [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(gaps)]})
+    return out, meta
+
+
+def main_b2():
+    import difflib
+    sys.path.insert(0, str(V.S.REPO / 'scripts/gpom/second-half-video/ending'))
+    import voices as E  # noqa: E402  (whisper + norm only)
+    (OUT3 / 'b2').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'b2').mkdir(parents=True, exist_ok=True)
+    todo, meta = b2_jobs()
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, todo))
+    heard = E.whisper([OUT3 / 'b2' / f"{r['key']}.wav" for r in res if r['duration']])
+    by = {}
+    for r in res:
+        f = OUT3 / 'b2' / f"{r['key']}.wav"
+        h = heard.get(str(f)) if r['duration'] else None
+        ratio = difflib.SequenceMatcher(None, E.norm(r['target']), E.norm(h['text'])).ratio() if h else 0.0
+        gap = round(V.longest_gap(f), 2) if r['duration'] else 0.0
+        flagged = r['status'].split()[0] in ('SHORT', 'DEAD', 'FAILED')
+        t = {'take': r['key'][-1], 'file': f"b2/{f.name}", 'spoken': r['text'], 'duration': round(r['duration'], 2),
+             'heard': h['text'] if h else '', 'match': round(ratio, 3), 'gap': gap, 'status': r['status'],
+             'ok': ratio >= E.MATCH and gap <= 2.0 and not flagged}
+        by.setdefault(r['stem'], []).append(t)
+        print(f"{r['key']:20s} {t['duration']:5.2f}s gap {gap:4.2f} match {ratio:.2f} {'OK ' if t['ok'] else 'BAD'} "
+              f"'{t['heard']}'  {r['status']}")
+    doc = {'about': "Beat 17 lines 4-13 voiced in Gemini TTS for Kai's 23 Oct words (scripts/gpom/second-half-video/"
+                    "voice3.py --round B2). Lines 0-3 keep their voice3/lines.json takes. Files are relative to the "
+                    "media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+           'media': str(OUT3), 'source': str(SCRIPT_B.relative_to(V.S.REPO)), 'lines': []}
+    for m in meta:
+        for ph in m['phrases']:
+            takes = by[ph.pop('stem')]
+            ok = [t for t in takes if t['ok']] or takes
+            stem = f"17-{m['i']}-{m['who']}" + (f"-p{ph['p']}" if len(m['phrases']) > 1 else '')
+            best = min(ok, key=lambda t: (-t['match'], t['gap']))
+            if stem in B2_PICK:
+                best = next(t for t in takes if t['take'] == B2_PICK[stem])
+            ph['pick'], ph['verified'] = best['take'], best['ok']
+            ph['takes'] = [{k: v for k, v in t.items() if k != 'ok'} for t in takes]
+        doc['lines'].append(m)
+    VOICES_B.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + '\n')
+    print(f'wrote {VOICES_B}')
+    for m in doc['lines']:
+        for ph in m['phrases']:
+            t = next(x for x in ph['takes'] if x['take'] == ph['pick'])
+            print(f"  17-{m['i']} p{ph['p']} pick {ph['pick']} {t['duration']}s gap {t['gap']} match {t['match']}"
+                  f"{'' if ph['verified'] else '  UNVERIFIED'}")
+
+
+# ---- JOB 7: round D1 (the dialogue page) -----------------------------------------------------------
+# Kai's picks on the dialogue page (27 Oct, round 4): draft 1D for Maddie's beat-0 intro (scene A) and draft 2H for the
+# doorstep (scene B, beat 17). The words have one home per scene: scenes/<scene>/script.json. [pause] / [beat] /
+# [big pause] are edit gaps; a leading [tag] on a phrase goes in that call's DIRECTOR'S NOTES as its emotion
+# ([scoffs] is spoken). Three takes per phrase, whisper-checked and picked by measurement as B2. Reused takes: the
+# beat-0 phrases Kai already has in the cut (D1_REUSE) and the old lady's lip-synced line 0. The crowd: one voice per
+# phrase, two takes each, stacked into one file (D1_CROWD_AT) after the picks.
+#   voice3/d1/<beat>-<i>-<who>[-p<n>]-<t>.wav  +  scenes/<scene>/voices-d1.json
+D1_SCENES = {'A': 'second-half-a-killbots', 'B': 'second-half-b-the-door'}
+D1_GAP = {'[pause]': 0.6, '[beat]': 0.6, '[big pause]': 1.5}
+D1_SPOKEN = {'[scoffs]'}
+D1_REUSE = {'Oh, hello!': 'a1/00-0-bot-c.wav', 'Ever since you lot...': 'maddie/00-1-1-a.wav', 'went.': 'maddie/00-1-2-a.wav'}
+D1_CROWD = [  # (voice, who they are, accent)
+    ('Orus', 'a man in his forties, a former bus driver', 'West Country, as heard in Swindon'),
+    ('Leda', 'a woman in her twenties', 'West Country, as heard in Swindon'),
+    ('Schedar', 'a retired schoolteacher in his seventies, precise', 'educated Wiltshire, softly spoken'),
+    ('Vindemiatrix', 'a nurse in her fifties', 'Welsh, as heard in Newport'),
+    ('Zubenelgenubi', 'a builder in his thirties', 'Bristolian'),
+    ('Gacrux', 'a grandmother in her sixties', 'Northern English, as heard in Leeds'),
+]
+D1_CROWD_AT = [0.0, 0.18, 0.42, 0.3, 0.65, 0.9]  # each voice's start in the stack, s: overlapping, not in turn
+D1_CROWD_DB = [0.0, -2.0, -4.0, -1.0, -3.0, -5.0]
+
+
+def crowd_profile(who, accent):
+    return (f"# AUDIO PROFILE\nOne of the hundred survivors in a Cold War bunker under a Wiltshire hill: {who}.\n\n"
+            "## THE SCENE\nThe corridor behind the blast doors. A small robot at the door has just asked whether any of "
+            "them would go back and change how it all went down, if they had the chance. Everyone answers at once.\n\n"
+            "### DIRECTOR'S NOTES\nStyle: heartfelt and certain, no hesitation; called out from the crowd.\n"
+            f"Pace: quick, one breath.\nAccent: {accent}. Never American.\n\n### SAMPLE CONTEXT\n"
+            "One voice in a crowd all answering a question at the same moment.")
+
+
+def d1_phrases(text):
+    """(phrases, gaps, emotions) for a script line: split on the gap tags; a phrase's leading [tag] is its emotion."""
+    parts = re.split(r'\s*(\[(?:pause|beat|big pause)\])\s*', text.strip())
+    phrases, gaps, emos = [], [D1_GAP[t] for t in parts[1::2]], []
+    for ph in parts[0::2]:
+        m = re.match(r'\[([^\]]+)\]\s*', ph)
+        if m and m.group(0).strip() not in D1_SPOKEN:
+            emos.append(m.group(1))
+            ph = ph[m.end():]
+        else:
+            emos.append(None)
+        phrases.append(ph.strip())
+    return phrases, gaps, emos
+
+
+def d1_jobs():
+    cast = json.loads(CAST_FILE.read_text())['cast']
+    base = {'bot': V.profiles['bot'], 'lady': cast['lady']['prompt'], 'woman': cast['woman']['prompt'],
+            'man': cast['man']['prompt']}
+    voice = {'bot': 'Aoede', 'lady': cast['lady']['voice'], 'woman': cast['woman']['voice'], 'man': cast['man']['voice']}
+    out, meta = [], {}
+    for sc, folder in D1_SCENES.items():
+        script = json.loads((V.S.SCENES / folder / 'script.json').read_text())
+        beat, rows = script['beat'], []
+        for i, ln in enumerate(script['lines']):
+            who = ln['who']
+            if who == 'sfx' or (sc == 'B' and i == 0):  # line 0 keeps its lip-synced take
+                continue
+            if who == 'crowd':
+                phrases = [p.strip() for p in ln['text'].split(' / ')]
+                rows.append({'i': i, 'who': who, 'text': ln['text'], 'off': True, 'phrases': [], 'gaps': []})
+                for p, (ph, (vc, desc, acc)) in enumerate(zip(phrases, D1_CROWD)):
+                    stem, pkey = f'{V.bkey(beat)}-{i}-crowd{p}', f'd1-{beat}-{i}-crowd{p}'
+                    V.profiles[pkey] = crowd_profile(desc, acc)  # in-process only
+                    rows[-1]['phrases'].append({'p': p, 'text': ph, 'voice': vc, 'direction': None,
+                                                'prompt': V.profiles[pkey], 'stem': stem})
+                    out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': 'd1', 'who': pkey, 'voice': vc, 'text': ph,
+                             'target': ph, 'how': None, 'work': WORK3 / 'd1'} for t in 'ab']
+                continue
+            phrases, gaps, emos = d1_phrases(ln['text'])
+            row = {'i': i, 'who': who, 'text': ln['text'], 'off': bool(ln.get('off')), 'voice': voice[who],
+                   'phrases': [], 'gaps': [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(gaps)]}
+            for p, (ph, emo) in enumerate(zip(phrases, emos)):
+                stem = f'{V.bkey(beat)}-{i}-{who}' + (f'-p{p}' if len(phrases) > 1 else '')
+                if ph in D1_REUSE and sc == 'A':
+                    row['phrases'].append({'p': p, 'text': ph, 'direction': None, 'reused': D1_REUSE[ph]})
+                    continue
+                pkey = f'd1-{stem}'
+                V.profiles[pkey] = with_emotion(base[who], emo)  # in-process only
+                row['phrases'].append({'p': p, 'text': ph, 'direction': emo, 'prompt': V.profiles[pkey], 'stem': stem})
+                out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': 'd1', 'who': pkey, 'voice': voice[who], 'text': ph,
+                         'target': ph, 'how': None, 'work': WORK3 / 'd1'} for t in 'abc']
+            rows.append(row)
+        meta[sc] = (folder, script, rows)
+    return out, meta
+
+
+def d1_crowd(row):
+    """Stack the crowd's picked takes into one file: each voice from its D1_CROWD_AT, levelled, then summed."""
+    import numpy as np
+
+    def load(p):
+        raw = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', str(p), '-ac', '1', '-ar', '48000', '-f', 'f32le',
+                              '-'], capture_output=True).stdout
+        x = np.frombuffer(raw, np.float32).astype(float)
+        return x / (np.sqrt((x ** 2).mean()) + 1e-9)
+    parts = []
+    for ph, at, db in zip(row['phrases'], D1_CROWD_AT, D1_CROWD_DB):
+        f = next(t['file'] for t in ph['takes'] if t['take'] == ph['pick'])
+        parts.append((int(at * 48000), load(OUT3 / f) * 10 ** (db / 20)))
+    y = np.zeros(max(a + len(x) for a, x in parts))
+    for a, x in parts:
+        y[a:a + len(x)] += x
+    y *= 0.5 / np.abs(y).max()
+    out = OUT3 / 'd1' / f"17-{row['i']}-crowd-stack.wav"
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'f64le', '-ar', '48000', '-ac', '1', '-i', '-',
+                    str(out)], input=y.tobytes(), check=True)
+    subprocess.run([sys.executable, str(V.S.REPO / 'scripts/provenance/prov.py'), 'card', str(out), '--kind', 'voice',
+                    '--engine', 'ffmpeg', '--tool', 'scripts/gpom/second-half-video/voice3.py --round D1',
+                    '--why', 'the crowd answering at once: six Gemini TTS takes stacked',
+                    *sum([['--parent', str(OUT3 / next(t['file'] for t in ph['takes'] if t['take'] == ph['pick']))]
+                          for ph in row['phrases']], []),
+                    '--setting', f'starts={D1_CROWD_AT}', '--setting', f'gains_db={D1_CROWD_DB}'],
+                   check=True, capture_output=True)
+    return f"d1/{out.name}", round(V.duration(out), 2)
+
+
+def main_d1():
+    import difflib
+    sys.path.insert(0, str(V.S.REPO / 'scripts/gpom/second-half-video/ending'))
+    import voices as E  # noqa: E402  (whisper + norm only)
+    (OUT3 / 'd1').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'd1').mkdir(parents=True, exist_ok=True)
+    todo, meta = d1_jobs()
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, todo))
+    heard = E.whisper([OUT3 / 'd1' / f"{r['key']}.wav" for r in res if r['duration']])
+    by = {}
+    for r in res:
+        f = OUT3 / 'd1' / f"{r['key']}.wav"
+        h = heard.get(str(f)) if r['duration'] else None
+        ratio = difflib.SequenceMatcher(None, E.norm(r['target']), E.norm(h['text'])).ratio() if h else 0.0
+        gap = round(V.longest_gap(f), 2) if r['duration'] else 0.0
+        flagged = r['status'].split()[0] in ('SHORT', 'DEAD', 'FAILED')
+        t = {'take': r['key'][-1], 'file': f"d1/{f.name}", 'spoken': r['text'], 'duration': round(r['duration'], 2),
+             'heard': h['text'] if h else '', 'match': round(ratio, 3), 'gap': gap, 'status': r['status'],
+             'ok': ratio >= E.MATCH and gap <= 2.0 and not flagged}
+        by.setdefault(r['stem'], []).append(t)
+        print(f"{r['key']:22s} {t['duration']:5.2f}s gap {gap:4.2f} match {ratio:.2f} {'OK ' if t['ok'] else 'BAD'} "
+              f"'{t['heard']}'  {r['status']}")
+    for sc, (folder, script, rows) in meta.items():
+        for row in rows:
+            for ph in row['phrases']:
+                if 'reused' in ph:
+                    continue
+                takes = by[ph.pop('stem')]
+                ok = [t for t in takes if t['ok']] or takes
+                best = min(ok, key=lambda t: (-t['match'], t['gap']))
+                ph['pick'], ph['verified'] = best['take'], best['ok']
+                ph['takes'] = [{k: v for k, v in t.items() if k != 'ok'} for t in takes]
+            if row['who'] == 'crowd':
+                row['stack'], row['stack_duration'] = d1_crowd(row)
+        doc = {'about': f"Scene {sc}'s new lines from the dialogue page (draft {script['dialogue']['picked']}), voiced in "
+                        "Gemini TTS by scripts/gpom/second-half-video/voice3.py --round D1. Files are relative to the media "
+                        "folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+               'media': str(OUT3), 'source': f'docs/stories/gitpush-origin-master/scenes/{folder}/script.json',
+               'dialogue': script['dialogue'], 'lines': rows}
+        dst = V.S.SCENES / folder / 'voices-d1.json'
+        dst.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + '\n')
+        print(f'wrote {dst}')
+        for row in rows:
+            for ph in row['phrases']:
+                if 'pick' in ph:
+                    t = next(x for x in ph['takes'] if x['take'] == ph['pick'])
+                    print(f"  {sc} {row['i']:2d} p{ph['p']} {row['who']:6s} pick {ph['pick']} {t['duration']:5.2f}s "
+                          f"gap {t['gap']:4.2f} match {t['match']:.2f}{'' if ph['verified'] else '  UNVERIFIED'}  {ph['text'][:50]}")
+
+
+def run(job):
+    wav = OUT3 / job['dir'] / f"{job['key']}.wav"
+    if wav.exists():
+        return {**job, 'duration': V.duration(wav), 'status': 'kept'}
+    d, how = V.tts(job, wav, job.get('work', WORK3))
+    return {**job, 'duration': d, 'status': how}
+
+
+def load_key():
+    if 'GEMINI_API_KEY' not in os.environ:
+        for line in (V.REPO / '.env').read_text().splitlines():
+            if '=' in line and not line.lstrip().startswith('#'):
+                k, v = line.split('=', 1)
+                os.environ.setdefault(k.strip().removeprefix('export ').strip(), v.strip().strip('"\''))
+
+
+def main():
+    load_key()
+    for d in ('maddie', 'audition'):
+        (OUT3 / d).mkdir(parents=True, exist_ok=True)
+    WORK3.mkdir(parents=True, exist_ok=True)
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, jobs()))
+
+    maddie, audition = {}, []
+    for r in res:
+        _, exp = V.expect(r['text'])
+        print(f"{r['dir']}/{r['key']:34s} {r['duration']:5.2f}s (~{exp:.1f}s)  {r['status']}")
+        f = f"{r['dir']}/{r['key']}.wav" if r['duration'] else None
+        flag = r['status'].split()[0] if r['status'].startswith(('SHORT', 'DEAD', 'FAILED')) else None
+        if r['job'] == 'maddie':
+            row = maddie.setdefault((r['line'], r['phrase']), {'line': r['line'], 'phrase': r['phrase'],
+                                                              'text': r['text'], 'voice': r['voice'], 'takes': []})
+            row['takes'].append([f, round(r['duration'], 2)] + ([flag] if flag else []))
+        else:
+            audition.append({'character': r['character'], 'accent': r['accent'], 'voice': r['voice'],
+                             'line': r['text'], 'file': f, 'duration': round(r['duration'], 2),
+                             'expected': round(exp, 2), 'status': r['status'],
+                             'prompt': V.profiles[r['who']]})
+    gaps = [{'after': {'line': a[0], 'phrase': a[1], 'text': MADDIE[a[0]][a[1]]},
+             'before': {'line': b[0], 'phrase': b[1], 'text': MADDIE[b[0]][b[1]]}, 'seconds': s} for a, b, s in GAPS]
+    manifest = {'beat': '0', 'maddie': [maddie[k] for k in sorted(maddie)], 'gaps': gaps, 'audition': audition}
+    (OUT3 / 'manifest.json').write_text(json.dumps(manifest, indent=1, ensure_ascii=False))
+    print(f"wrote {OUT3 / 'manifest.json'}")
+
+
+if __name__ == '__main__':
+    if '--round' in sys.argv:
+        rnd = sys.argv[sys.argv.index('--round') + 1].upper()
+        assert rnd in ('A1', 'A3', 'B2', 'D1'), 'only --round A1 / A3 / B2 / D1 exist'
+        load_key()
+        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1}[rnd]()
+    elif '--lines' in sys.argv:
+        load_key()
+        main_lines()
+    else:
+        main()

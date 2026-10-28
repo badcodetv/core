@@ -110,6 +110,8 @@ the next cut.
 
 ## 4. 🔴 Eight seconds is not a limit — chain the frames
 
+> The step-by-step recipe, with the join check and the failure modes actually hit: [`continuous-shot.md`](./continuous-shot.md).
+
 **Standing rule: never shorten a beat because Veo caps at 8 seconds.** The cap is a per-generation
 limit, not a shot limit.
 

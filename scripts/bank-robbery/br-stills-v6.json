@@ -1,0 +1,109 @@
+{
+ "pre": "The named people are the attached Characters, with their own faces and clothes. ",
+ "end": " Muted colour: stone grey, black and navy, with small touches of red and blue the only strong colour. Unretouched, natural skin texture, visible 35mm film grain. Nobody looks at the camera. 16:9. Thanks.",
+ "riotEnd": " Dusk, with a deep cold blue sky. Colour: stone grey and near-black, with the hot pink-red of flare light and one cold blue the only strong colours. Hand-held documentary photography: the frame is tilted well off level, there is slight motion blur on moving hands and flags, the highlights of the flare are blown out, and the film grain is heavy. Unretouched. Nobody looks at the camera. 16:9. Thanks.",
+ "endLens": " Muted colour: stone grey, black and navy, with small touches of red and blue the only strong colour. Unretouched, natural skin texture, visible 35mm film grain. 16:9. Thanks.",
+ "endLynch": " Colour: black, deep red and one small amber point. Deep shadows with no detail in them, soft halation around the window glow, visible 35mm film grain. Unretouched. 16:9. Thanks.",
+ "foodEnd": " Colour: warm tungsten yellow against cold grey window light, with the red of the sauce and the tomato the only strong colour. Shallow focus, visible 35mm film grain, a little grease and wear on everything. Unretouched. 16:9. Thanks.",
+ "shots": [
+  {
+   "id": "s00a-cafe-open",
+   "cast": [],
+   "refs": [
+    "br5-cafe"
+   ],
+   "endKey": "endLens",
+   "body": "The attached photograph br5-cafe shows a café with a flat above it at night with its shutter down. Show the same café, the same brick wall, the same sash window and the same pot plant early on a wet grey morning, open for business. A frame from a feature film, shot on 35mm with a 28mm lens at knee height on the pavement across the road, looking up, the frame not quite level. A wet kerb and a dented drinks can cut into the near foreground, out of focus. Across the road, sharp, the café's steel shutter is rolled right up, its windows are steamed gold from inside and every strip light is on. Through the steam are the soft shapes of people at tables and a woman in a tabard carrying plates. The door is propped open with a chair. A short string of faded Union flag bunting hangs across the top of the window inside. A builder in a hi-visibility vest walks out of the door with a bacon roll in white paper. Above the café the flat's window is lit warm, with the pot plant on the sill. There is no board on the wall and no writing anywhere. One light source only, no fill: the warm light spilling out of the café onto the wet pavement, against flat grey dawn."
+  },
+  {
+   "id": "s00b-full-english",
+   "cast": [],
+   "refs": [],
+   "endKey": "foodEnd",
+   "body": "A frame from a feature film, shot on 35mm with a 50mm macro lens resting on a formica café table, almost level with the rim of the plate. A full English breakfast on a thick white oval plate fills the frame, very close: two fried eggs with crisp brown edges, two sausages, back bacon, baked beans running into everything, a grilled tomato, a fried slice and black pudding. Steam rises off it. A woman's hand with short nails and a tea-towel over the wrist is still on the rim of the plate, having just set it down. Behind it, out of focus, are a bottle of brown sauce with a crusted cap, a steel teapot and a steamed-up window. One light source only, no fill: grey morning daylight through the steamed window behind, backlighting the steam and the glaze on the egg yolks. The near side of the plate is in soft shadow."
+  },
+  {
+   "id": "s00c-tea",
+   "cast": [],
+   "refs": [],
+   "endKey": "foodEnd",
+   "body": "A frame from a feature film, shot on 35mm with an 85mm lens at the height of a mug on a café counter, close. Strong brown tea pours in a thick stream from a big dented steel teapot into a chipped white mug, the stream and the splash sharp, the hand holding the pot cut off by the top of the frame. Steam curls up through the light. A second mug with a spoon standing in it and a sugar pourer with a crust round the spout stand beside it, out of focus. Behind is a fogged window with the blurred red and blue of small Union flag bunting. One light source only, no fill: grey daylight through the window behind, backlighting the stream of tea and the steam. The front of the mug is in shadow."
+  },
+  {
+   "id": "s00d-fry",
+   "cast": [],
+   "refs": [],
+   "endKey": "foodEnd",
+   "body": "A frame from a feature film, shot on 35mm with a 35mm lens held right down at the edge of a café flat-top grill, looking across the hot steel. In the near foreground an egg fries in a pool of spitting fat, its edge bubbling brown, sharp. Behind it rashers of bacon and a row of sausages run away out of focus. A cook's hand with a burn scar slides a long steel spatula under the egg. Smoke and steam rise into an extractor hood. A handwritten order ticket is clipped to the rail above, too soft to read. One light source only, no fill: one bare warm bulb under the extractor hood, glinting on the fat. Everything beyond the grill is dark."
+  },
+  {
+   "id": "s00e-pint",
+   "cast": [],
+   "refs": [],
+   "endKey": "endLens",
+   "body": "A frame from a feature film, shot on 35mm with a 35mm lens resting on a worn wooden bar, looking up past the drip tray. A man's forearm with a faded tattoo pulls a hand pump, and dark bitter rushes into a dimpled glass pint mug, the head rising and running over the rim onto the bar, sharp. A wet beer towel and a small dish of pork scratchings cut into the near foreground, out of focus. Behind, soft, are a brass rail, a dartboard and a flat cap hung on a peg. One light source only, no fill: low amber light from one frosted pub window behind the pump, glowing through the beer. The barman's face is out of frame and the back of the pub is dark."
+  },
+  {
+   "id": "s00f-football",
+   "cast": [],
+   "refs": [],
+   "endKey": "endLens",
+   "body": "A frame from a feature film, shot on 35mm with a 24mm lens lying in the mud at the touchline of a park football pitch in winter rain, the frame tilted off level. Two grown men in plain muddy kits, one in plain red and one in plain white with no badges, numbers or writing, are caught mid sliding tackle a few feet from the lens, a sheet of muddy water flying up between them toward the camera, a heavy leather ball spinning loose. Behind them, soft, are a sagging goal net, a row of terraced houses and a man in a flat cap with a dog on the touchline. One light source only, no fill: flat grey overcast daylight from above. Slight motion blur on the legs and the spray. The far end of the pitch is lost in rain."
+  },
+  {
+   "id": "s00g-flags",
+   "cast": [],
+   "refs": [],
+   "endKey": "endLens",
+   "body": "A frame from a feature film, shot on 35mm with a 20mm lens on the ground in the middle of a narrow English terraced street, looking steeply up. Lines of faded Union flag bunting criss-cross overhead from one bedroom window to another against a grey sky, sharp. A big flag with a red cross on white hangs from scaffolding on one house, heavy with rain. A wet kerb and a crushed crisp packet cut into the near foreground, out of focus. A white van is parked half on the pavement. There are no people and no writing anywhere. One light source only, no fill: flat grey overcast daylight from above. The house fronts fall into shadow."
+  },
+  {
+   "id": "s00h-chippy",
+   "cast": [],
+   "refs": [],
+   "endKey": "foodEnd",
+   "body": "A frame from a feature film, shot on 35mm with a 50mm lens close on a sea-front railing in drizzle. A pair of weathered hands holds an open paper parcel of fish and chips, a big piece of battered cod on top, steam coming off it, while the other hand shakes a glass vinegar bottle over it, drops caught in the air. A wooden chip fork sticks out of the chips. The wet painted railing cuts across the near foreground, out of focus. Behind, soft, is a grey sea, a pier and one gull. One light source only, no fill: flat grey seaside daylight. The paper is spotted with rain and grease."
+  },
+  {
+   "id": "s05h-table",
+   "cast": [
+    "The Ex",
+    "The Governor"
+   ],
+   "refs": [],
+   "endKey": "end",
+   "body": "A frame from a feature film, shot on 35mm with a 24mm lens resting on a bare trestle table in a lock-up garage, looking up along it. A chipped mug of tea and an open packet of biscuits cut into the near foreground, out of focus. The Ex leans over the far end of the table on both fists, off-centre to the left, looking down the table past the lens with a small calm smile. Beside him and a little behind, The Governor sits upright on a folding chair with his hands folded on the table. The dark shoulders of two more men in black suits cut in at the left and right edges, out of focus, turned toward The Ex. There is nothing else on the table: no model, no map, no papers. Behind them is a corrugated steel wall and nothing else. One light source only, no fill: one bare bulb hanging low over the middle of the table, in the top of the frame, throwing their shadows up the wall. The far sides of their faces fall into deep shadow."
+  },
+  {
+   "id": "s10e-bleach",
+   "cast": [
+    "Denise",
+    "The Fixer"
+   ],
+   "refs": [],
+   "endKey": "end",
+   "body": "A frame from a feature film, shot on 35mm with a 28mm lens lying on the polished wooden top of a bank counter at night, looking along it. A green-shaded brass desk lamp fills the near left foreground, out of focus and switched on. The Fixer sits on the counter in his black suit with a cardboard carnival mask pushed up on his forehead, eating a sausage roll, his legs hanging over the edge, looking down at Denise without interest. Denise stands right beside him in her tabard and yellow rubber gloves, a spray bottle of bleach in one hand and a grey rag in the other, looking at the patch of counter he is sitting on and not at him. Behind them, far off and soft, shrink-wrapped pallets stand on a chequered marble floor. One light source only, no fill: the green desk lamp, lighting them from below and the side. The rest of the banking hall falls away to black."
+  },
+  {
+   "id": "s08f-argue",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Match the attached photograph br5-riot-look for look only: the same dusk, the same wet cobbles, the same hot pink-red flare light and smoke, the same low tilted hand-held camera. Do not copy its people or its framing. A frame from a feature film, shot on 35mm with an 85mm lens at chest height in a crowd, close. Two men in their fifties shout into each other's faces across the top rail of a steel crowd barrier, nose to nose, in sharp profile: the man on the left wears a red scarf and a woolly hat, the man on the right a blue scarf and a flat cap. Both have the same tired, weathered face of a man who works outdoors. Both hold up phones, filming each other. In the gap between their two faces, far behind and out of focus, two men in black suits wheel a pallet of shrink-wrapped paper past along an empty strip of road, unnoticed. One light source only, no fill: a red hand flare burning low out of frame on the left, lighting one side of each face hot pink. The other side of each face is in shadow."
+  },
+  {
+   "id": "s08g-laugh",
+   "cast": [
+    "Mr Blue",
+    "Mr Red"
+   ],
+   "refs": [
+    "br5-room"
+   ],
+   "endKey": "endLynch",
+   "body": "The attached photograph br5-room shows a dark upstairs room with red curtains, a tall window, a lamp and a telephone. Show the same room, the same curtains and the same window. A frame from a feature film, shot on 35mm with a 35mm lens, locked off, low at the height of the table. Mr Blue and Mr Red stand side by side at the tall window with their ties pulled loose and their jackets off, each holding a glass of champagne, looking down through the glass at the street and laughing so hard that Mr Red has a hand on Mr Blue's shoulder to stay upright. They are off-centre to the right and lit from the window. Two megaphones lie dumped on the dark table in the near left foreground beside the dim fringed lamp, out of focus. Through the glass there is only slow smoke lit hot pink-red from below. The only light is that glow through the window, which throws their two long shadows back across the bare floorboards toward the camera, and the dim amber lamp. The ceiling and the corners of the room are black."
+  }
+ ]
+}

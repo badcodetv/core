@@ -13,7 +13,7 @@ sibling: git-push-origin-master-orchestral.md
 > 🗄 **v5.5 sheet — archived 2026-09-10.** Suno v6 retired v5.5 on 2026-09-09 and all new Suno
 > work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
 > the sheet cannot be re-run as written. A new round starts a v6 sheet — see
-> [`v5.5-era.md`](../../../suno-gpt/archive/v5.5-era.md) §5.
+> [`v5.5-era.md`](../../../../suno-gpt/archive/v5.5-era.md) §5.
 >
 > 🔑 **The v6 sheet exists: [`narration-v6.md`](./narration-v6.md) (written 2026-09-12).** Generate
 > from there. **This file stays the reasoning record** — why the palette is what it is, the full
@@ -130,7 +130,7 @@ silence has earned.**
 1. **Suno's Sounds tab** — one-shots, loops and SFX at **2 credits** each. Prompt as *sound +
    timbre + [LENGTH IN CAPS]*; **one-shot works better than loop**; leave BPM and key on "any" for
    non-musical material
-   ([`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md)
+   ([`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../../suno-gpt/files/suno-controls-and-workflows.md)
    § "Sounds tab").
 2. **ffmpeg** for anything synthetic and exact — a tube whine, an electrical hum, a relay tick are
    a sine and a filter.
@@ -157,7 +157,7 @@ containing a nine-line scene is a complete win. Our controls note says the durat
 *"reliably shortens but repeatedly fails to stretch"*, so there is no lever worth pulling.
 
 ⚠️ We have no verified click-path for the duration control in v5.5. One line of folk knowledge in
-[`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md)
+[`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../../suno-gpt/files/suno-controls-and-workflows.md)
 §10 is the whole of what we know. Don't claim more.
 
 ⚠️ `s00-awakening.md` rules that **picture is cut to the VO, not the other way round** — and as
@@ -185,7 +185,7 @@ a target length; `durationSec` in the automation spec.
 🔴 **Always aim slightly ABOVE the budget, never below.** Suno's duration is a target, not a
 contract, and it **shortens reliably but repeatedly fails to stretch**. Long trims in the edit;
 short is a reshoot. Mechanics and the two-controls trap:
-[`../../../suno-gpt/automation.md`](../../../suno-gpt/automation.md) §4 trap 8.
+[`../../../suno-gpt/automation.md`](../../../../suno-gpt/automation.md) §4 trap 8.
 
 ### 🔑 These numbers are a budget, not a constraint — ruled 2026-08-24
 
@@ -255,7 +255,7 @@ the destination throws the reveal away.
 
 🔑 **The narrator now wants something in cut 1** — *to guarantee my survival*. That single clause
 is what turns the opener from a voice-over into a character
-([`../../../story-craft/narrator.md`](../../../story-craft/narrator.md) §1, and its closing
+([`../../../story-craft/narrator.md`](../../../../story-craft/narrator.md) §1, and its closing
 question). The first draft had no want in it at all.
 
 **The date is spoken with two pauses**: *somewhere around… October… twenty twenty-eight.* The
@@ -398,7 +398,7 @@ Music I love: almost nothing. A score that stays underneath a speaking voice and
 ### 🔴 The Style box is capped at 1,000 characters — measure, don't estimate
 
 Advanced Mode's Style box takes **1,000 characters** and no more
-([`../../../suno-gpt/files/suno-tag-mechanics.md`](../../../suno-gpt/files/suno-tag-mechanics.md)
+([`../../../suno-gpt/files/suno-tag-mechanics.md`](../../../../suno-gpt/files/suno-tag-mechanics.md)
 § "Advanced Mode"). Both boxes on this sheet had quietly grown past it — Gen 1 reached **1,257**
 — which means the tail of the box was being silently thrown away, and **the tail is where the arc
 lives**: the impact, the dead air, the climb that stops. A box that is over the cap does not fail
@@ -440,7 +440,7 @@ would put a horn in cut 1, in bar one, on a satellite.
 
 📎 **The cap is enforced by the browser, not just by us.** The Style textarea carries
 `maxLength="1000"`, so an over-cap paste is **truncated**, never rejected — confirmed at the DOM
-level 2026-08-24. See [`../../../suno-gpt/automation.md`](../../../suno-gpt/automation.md).
+level 2026-08-24. See [`../../../suno-gpt/automation.md`](../../../../suno-gpt/automation.md).
 
 ### 📎 How the boxes got their palette — the 2026-08-23 passes
 
@@ -552,7 +552,7 @@ lower case. **`BC-NEWSREADER` is our internal label for it and must never be typ
 327 references in this file use it and every one of them means the voice below.
 
 **There is no ID and none is needed.** `attachVoice` in
-[`../../../../scripts/suno/suno.mts`](../../../../scripts/suno/suno.mts) matches on the **display
+[`../../../../scripts/suno/suno.mts`](../../../../../scripts/suno/suno.mts) matches on the **display
 name**, case-insensitively and by substring. The name *is* the handle.
 
 🔴 **The account holds TWO voices beginning with "Badcode" and they are different things:**
@@ -1293,7 +1293,7 @@ calm, and why it keeps saying what it did rather than what happened.
 | **3 · the armies** | the off switch is in a drawer in Swindon | the drawer survives untouched — and **nobody goes** |
 
 🔴 **The beneficiary lines are load-bearing and all three survive.**
-[`the-reader.md`](../../../marketing/the-reader.md): never raise automation fear without naming
+[`the-reader.md`](../../../../marketing/the-reader.md): never raise automation fear without naming
 who gained, in the same piece. The trillion, shares-in-bread-up-ninety, and *actually good for the
 markets* are the naming. They are not decoration and must not be trimmed for time.
 
@@ -1356,14 +1356,14 @@ There was an off switch in Swindon. It was in a drawer.
 
 **1. The sharpest beneficiary line is gone.** *"Bread went up nine percent. Shares in bread went up
 ninety"* was the clearest naming of who gained, and
-[`the-reader.md`](../../../marketing/the-reader.md) rules that automation fear must never be
+[`the-reader.md`](../../../../marketing/the-reader.md) rules that automation fear must never be
 raised without naming the beneficiary **in the same piece**. The rule is **not broken** — *the
 treasury printed another trillion to keep the markets calm* and *actually good for the markets*
 both survive and both name it. But the trimmed line was the one a viewer could not argue with,
 because it was a number. Banked in §6 if it should come back.
 
 **2. Swindon now means a battle, not the drawer.** Canon plants Swindon as **where the last off
-switch sat in a drawer** ([`story.md`](../story.md) scene 8), and it pays off later **inverted, as
+switch sat in a drawer** ([`story.md`](../../story.md) scene 8), and it pays off later **inverted, as
 a rhyme** — *"There was a switch once."* Cut 4 no longer plants it, so that later payoff currently
 has no setup in the film.
 
@@ -1389,18 +1389,18 @@ handed it over either. It went across in pieces.
 > In Swindon."*) is spent. The canon question survives and the answer becomes a collect:
 > *"You know where it was."*
 
-> 🔴 **Flat, literal, no rhetoric** — [`story.md`](../story.md) scene 8's own instruction. The
+> 🔴 **Flat, literal, no rhetoric** — [`story.md`](../../story.md) scene 8's own instruction. The
 > register stays human-scale here; it goes cosmic at cut 6, not before. One dry crack only (*"that
 > would have required a meeting"*), and nothing else reaches for a laugh.
 
 > 🔴 **Who took the easier option — and it is not the viewer.**
-> [`the-reader.md`](../../../marketing/the-reader.md): **name the decision-maker, never the
+> [`the-reader.md`](../../../../marketing/the-reader.md): **name the decision-maker, never the
 > technology**, and never tell the reader they were duped. So the abdication is pinned on *"people
 > who were each solving something smaller"* — executives, ministers, the ones cut 4 already showed
 > welcoming it. The canon *"why did you not just switch it off?"* stays, because it is a real
 > question and not an accusation, and because the film has already shown exactly who was asked.
 
-**Picture is unbuilt** ([`prompts.md`](../prompts.md) canon 8 — prompted, unfired), so **the
+**Picture is unbuilt** ([`prompts.md`](../../prompts.md) canon 8 — prompted, unfired), so **the
 narration sets the length, not the other way round.** One slow lift out of human scale: shop
 lights on, an automatic door standing open, a delivery robot stopped mid-pavement with its
 indicator still blinking, weeds through the kerb joins, not one person.
@@ -1587,7 +1587,7 @@ long time*).
 > 📎 **This is now automatable.** The whole load — style, excludes, lyrics, all three sliders,
 > Voice, title, workspace — runs in one command over CDP, with the Overwrite guard and the
 > paragraph check built in. The DOM map, the five traps and the build plan are in
-> [`../../../suno-gpt/automation.md`](../../../suno-gpt/automation.md). The steps below stay
+> [`../../../suno-gpt/automation.md`](../../../../suno-gpt/automation.md). The steps below stay
 > the record of *what* is being set and *why*.
 
 1. Suno → Create → **Advanced Mode**, model **v5.5**.
@@ -1631,7 +1631,7 @@ long time*).
 11. **Judge the new scene against the accepted take of the previous one**, not in isolation — play
    the tail of the last, then the head of the new. See risk 10.
 12. **Record which weirdness won, and why.** That is how the 30-vs-60 rule eventually gets
-   stated. See [`../../../suno-gpt/session-method.md`](../../../suno-gpt/session-method.md).
+   stated. See [`../../../suno-gpt/session-method.md`](../../../../suno-gpt/session-method.md).
 
 **Then, per winner:** three dots → **Get stems → advanced split** (never autosplit — advanced
 *regenerates* each stem instead of carving it, and vocals separate best). Download **WAV**. Stems
@@ -1640,7 +1640,7 @@ are hidden in the workspace by default — Filters → uncheck **Hide stems**.
 > 🔴 **Downloading stays manual, by rule.** Suno is introducing a licensing constraint that caps
 > **downloads per month**, so a script must never spend that allowance. Automation generates,
 > names and files into a workspace, then stops. Ruled 2026-08-24 —
-> [`../../../suno-gpt/automation.md`](../../../suno-gpt/automation.md) §5.
+> [`../../../suno-gpt/automation.md`](../../../../suno-gpt/automation.md) §5.
 
 **If the voice is right but the audio is rough:** Remix → **Cover**, same boxes, audio influence
 **25–40**. The voice is baked in by then and survives at full quality.
@@ -2018,7 +2018,7 @@ passed is telling the audience what they just read. If one is wanted:
 7. ✅ **The instrumental toggle no longer matters** — there is no wordless generation. Left here
    only because the other half of it is still open: **the duration control's location in v5.5 is
    undocumented.** Whatever is found gets written back to
-   [`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md)**,
+   [`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../../suno-gpt/files/suno-controls-and-workflows.md)**,
    along with anything learned about the duration control — both are live gaps, not just gaps in
    this sheet.
 
@@ -2416,7 +2416,7 @@ passed is telling the audience what they just read. If one is wanted:
 
 - **2026-08-24 (automation pass)** — Suno's create page mapped over CDP and the whole Gen A load
   proven in one command; findings written up in
-  [`../../../suno-gpt/automation.md`](../../../suno-gpt/automation.md). Four changes land here:
+  [`../../../suno-gpt/automation.md`](../../../../suno-gpt/automation.md). Four changes land here:
   the **Overwrite Styles** trap added to §5 step 4 (attaching the Voice offers to replace our
   Style box with the orchestral persona's own styles — always **Keep Current**); **every attempt
   is now a pair** at weirdness 30 and 60, with track naming and the `gpom-story` workspace set

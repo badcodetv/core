@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/C1-b.png",
+ "made": "2026-10-25T18:49:36.386Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A cartoon still drawn in two different media that split the building. The attic, the street and the people up there are a rough black woodblock print: chunky carved lines, white gaps where the ink did not take, flat grey-blue and brick colours on coarse paper. The basement and the furnace are smooth Art Deco lacquer painting, crisp gold lines on emerald and black, every edge perfect. Everyone is drawn as flat angular shapes with small dash eyes and heavy brows. A tall city building cut open in cross-section like a doll's house, seen straight on, four floors from the top down. Attic: an old woman in a coat shivers by one candle in an ice blue room. Street level: a bakery with cream and brick red walls; a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other under a street lamp, a police car beside them. Basement: in emerald lamplight, printing presses with cheerful faces throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances. Bottom: an orange furnace. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "122fe13e-7030-4757-964e-fb5d5dc25146"
+}

@@ -1,0 +1,276 @@
+{
+ "story": "gitpush-origin-master",
+ "title": "GitPush Origin Master",
+ "url": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
+ "updated": "2026-10-27",
+ "open_now": "b-door",
+ "intro": "The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under \"Earlier pages\" so nothing gets lost.",
+ "sections": [
+  {
+   "id": "music-video",
+   "group": "Part 1 · The music video (the downfall)",
+   "name": "The track: the push, the banks, the war",
+   "length": "3:58",
+   "state": "in Premiere",
+   "tone": "premiere",
+   "premiere": "gpom-1-track-and-off-switch (was gpom-s01); runs straight into gpom-2-A-killbots-r2",
+   "what": "Kai cuts this himself in Premiere. The drum & bass track is the downfall (Kai, 15 Oct). It was made before timeline pages existed, so there's no timeline page; the boards that fed each part are below.",
+   "parts": [
+    {
+     "id": "mv-opening",
+     "name": "Opening, the push, the drop",
+     "at": "0:00",
+     "state": "in Premiere",
+     "tone": "premiere",
+     "history": [
+      {
+       "name": "Opening recut board",
+       "url": "https://claude.ai/artifact/SmYozTsKzUzB6Ask9rQs5H",
+       "kind": "mood board",
+       "date": "2026-10-17"
+      },
+      {
+       "name": "Opening animation storyboard",
+       "url": "https://claude.ai/artifact/7HjuaiKdhp2EYYMxaepsTi",
+       "kind": "storyboard",
+       "date": "2026-10-17"
+      }
+     ]
+    },
+    {
+     "id": "mv-banks",
+     "name": "The banks fall",
+     "at": "1:14",
+     "state": "in Premiere",
+     "tone": "premiere",
+     "scene": "scenes/banks-recut"
+    },
+    {
+     "id": "mv-chorus-2",
+     "name": "Chorus 2 (night, the beam)",
+     "at": "1:47",
+     "state": "clips made, picks owed",
+     "tone": "wip",
+     "scene": "scenes/chorus-2"
+    },
+    {
+     "id": "mv-war",
+     "name": "War in Swindon",
+     "at": "2:09",
+     "state": "cut by Kai",
+     "tone": "premiere",
+     "scene": "scenes/war"
+    },
+    {
+     "id": "mv-rest",
+     "name": "The rest of the track",
+     "at": "2:42",
+     "state": "not recorded here",
+     "tone": "gap",
+     "what": "Nothing in the repo says what sits from 2:42 to the end of the track. Tell Claude and it goes here."
+    }
+   ],
+   "history": [
+    {
+     "name": "Downfall footage map",
+     "url": "https://claude.ai/artifact/Ltkrq4VcVhm1s8f8kkXDF6",
+     "kind": "footage board",
+     "date": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "off-switch",
+   "group": "Part 1 · The music video (the downfall)",
+   "name": "Five years later: the off switch, Maddie explains",
+   "state": "in Premiere",
+   "tone": "premiere",
+   "premiere": "inside gpom-1-track-and-off-switch, its last stretch (Kai, 26 Oct)",
+   "what": "The bright fake Swindon, the glitch, the delivery bot (Maddie) explains. Kai's cut, no timeline page.",
+   "history": [
+    {
+     "name": "Simulation board",
+     "url": "https://claude.ai/artifact/RcoYmozBesKFfKhk9rrADK",
+     "kind": "mood board",
+     "date": "2026-09-30"
+    }
+   ]
+  },
+  {
+   "id": "a-killbots",
+   "group": "Part 2 · The humans (not in Premiere yet)",
+   "name": "A · Kill bots",
+   "length": "2:49",
+   "state": "round 4: new intro",
+   "tone": "wip",
+   "scene": "scenes/second-half-a-killbots",
+   "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+   "premiere": "gpom-story.prproj · sequence gpom-2-A-killbots-r2 (same-named bin, radio music left out); r1 untouched",
+   "what": "Maddie on the high street (her new intro, draft 1D from the dialogue page), the kill-bot HUD, the toilet-seat row, the race, the stand-down. Round 4 is on the page and in Premiere as gpom-2-A-killbots-r2: note it there.",
+   "history": [
+    {
+     "name": "Dialogue options (the intro and the doorstep)",
+     "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+     "kind": "dialogue",
+     "date": "2026-10-27"
+    },
+    {
+     "name": "Cut 2 timeline (A + B together)",
+     "url": "https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq",
+     "kind": "timeline",
+     "date": "2026-10-20"
+    },
+    {
+     "name": "Second Half Cut 2 (before timeline pages)",
+     "url": "https://claude.ai/artifact/Amb2o9BZ5MDVSwZ6zXA5zb",
+     "kind": "preview",
+     "date": "2026-10-19"
+    },
+    {
+     "name": "Second Half Cutting Room",
+     "url": "https://claude.ai/artifact/LyD3odnVmN5rrdo9m1TpZp",
+     "kind": "preview",
+     "date": "2026-10-17"
+    },
+    {
+     "name": "Second Half Storyboard",
+     "url": "https://claude.ai/artifact/EGgHQU6KzN9rgzGnyUHb6e",
+     "kind": "storyboard",
+     "date": "2026-10-17"
+    },
+    {
+     "name": "Second Half Looks",
+     "url": "https://claude.ai/artifact/UkcXHKhuY8f2rzV7FtQ6e5",
+     "kind": "mood board",
+     "date": "2026-10-16"
+    },
+    {
+     "name": "Kill Bots picks (voices and Suno lines)",
+     "url": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co",
+     "kind": "picks",
+     "date": "2026-10-23"
+    }
+   ]
+  },
+  {
+   "id": "b-door",
+   "group": "Part 2 · The humans",
+   "name": "B · Maddie at the door (now also the debate)",
+   "length": "2:17",
+   "state": "round 2: the doorstep in your words",
+   "tone": "wip",
+   "scene": "scenes/second-half-b-the-door",
+   "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+   "what": "The humans meet Maddie at the door: \"nobody really won\", the time machine, only his data goes back, Sandra's \"Amen\", the thought experiment, the hundred answering at once, Derek, \"Come back tomorrow\", the slam, Maddie rolls away. Draft 2H from the dialogue page; on the page and in Premiere as gpom-3-B-door-r3.",
+   "history": [
+    {
+     "name": "Dialogue options (the intro and the doorstep)",
+     "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+     "kind": "dialogue",
+     "date": "2026-10-27"
+    },
+    {
+     "name": "Cut 2 timeline (A + B together)",
+     "url": "https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq",
+     "kind": "timeline",
+     "date": "2026-10-20"
+    }
+   ],
+   "premiere": "gpom-story.prproj · sequence gpom-3-B-door-r3 (same-named bin); r2 untouched"
+  },
+  {
+   "id": "ending",
+   "group": "Part 3 · The ending",
+   "name": "The whole ending, end to end (C + D + E)",
+   "length": "3:00",
+   "state": "signed off · in Premiere: gpom-4-C-walkout-r1, D-rough1, E-rough2",
+   "tone": "premiere",
+   "scene": "scenes/second-half-ending-reel",
+   "timeline": "https://claude.ai/artifact/R3zv1wejHA1pU7CSz39bta",
+   "what": "C walk out, D clean room and crossing, E bus and Parliament. Watch this one rather than the three parts. Note it here; changes reach Premiere as a new sequence.",
+   "parts": [
+    {
+     "id": "c-walk-out",
+     "name": "C · The walk out",
+     "state": "notes being answered",
+     "tone": "wip",
+     "scene": "scenes/second-half-c-walk-out",
+     "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
+    },
+    {
+     "id": "d-crossing",
+     "name": "D · The clean room and the crossing",
+     "state": "in review",
+     "tone": "wip",
+     "scene": "scenes/second-half-d-crossing",
+     "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
+    },
+    {
+     "id": "e-ending",
+     "name": "E · The bus, the last line",
+     "state": "last line in",
+     "tone": "wip",
+     "scene": "scenes/second-half-e-ending",
+     "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
+    }
+   ]
+  }
+ ],
+ "premiere": {
+  "project": "gpom-story.prproj (D:\\badcode-videos\\gitpush-origin-master)",
+  "other": [
+   {
+    "sequence": "gpom-1-track-and-off-switch",
+    "what": "Kai's cut: the opening, the push, the drop, the banks, the war, then five years later and the off switch (4:40). Was gpom-s01. Its end runs straight into gpom-2-A-killbots-r2"
+   },
+   {
+    "sequence": "gpom-the-gaze-cut-46",
+    "what": "not in the film (Kai, 26 Oct); moved to the _not-in-film bin"
+   },
+   {
+    "sequence": "gpom-second-half",
+    "what": "not in the film (Kai, 26 Oct); moved to the _not-in-film bin"
+   },
+   {
+    "sequence": "gpom-the-gaze-cut",
+    "what": "an earlier gaze build, replaced by gpom-the-gaze-cut-46"
+   },
+   {
+    "sequence": "gpom-the-gaze",
+    "what": "an earlier gaze build, replaced by gpom-the-gaze-cut-46"
+   },
+   {
+    "sequence": "gpom-s03-bulletin-cut",
+    "what": "the bulletin scene cut (first half)"
+   },
+   {
+    "sequence": "gpom-s02-openers-montage",
+    "what": "first-half openers montage"
+   },
+   {
+    "sequence": "gpom-s02-test",
+    "what": "a first-half test build"
+   },
+   {
+    "sequence": "gpom-s02-test-v2",
+    "what": "a first-half test build"
+   },
+   {
+    "sequence": "gpom-second-half-rough",
+    "what": "Claude's whole second-half rough cut (17 Oct), replaced by the per-scene gpom-sh-* sequences"
+   },
+   {
+    "sequence": "gpom-second-half-rough2",
+    "what": "Claude's whole second-half rough cut 2 (20 Oct), replaced by the per-scene gpom-sh-* sequences"
+   },
+   {
+    "sequence": "_probe-blend",
+    "what": "a bridge test, safe to delete"
+   },
+   {
+    "sequence": "gaze46-probe",
+    "what": "a bridge test, safe to delete"
+   }
+  ]
+ }
+}

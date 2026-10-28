@@ -1,0 +1,106 @@
+{
+  "about": "Cut 3 casting, picked by ear by Kai on the voice audition page (https://claude.ai/artifact/PjhfJL9Ne3iFCtV6eXDH6t), 2026-10-20. Prompts are the exact ones that made the picked takes (voice3.py audition). Maddie (bot) stays Aoede, Bristol.",
+  "cast": {
+    "woman": {
+      "name": "Sandra",
+      "voice": "Autonoe",
+      "accent": "Northern (Lancashire)",
+      "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped, a pause before 'Again.'\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+      "audition": "sandra-lancashire-Autonoe"
+    },
+    "man": {
+      "name": "Derek",
+      "voice": "Algieba",
+      "accent": "Liverpool",
+      "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+      "audition": "derek-liverpool-Algieba"
+    },
+    "lady": {
+      "name": "The old lady",
+      "voice": "Sulafat",
+      "accent": "Received Pronunciation, old-fashioned",
+      "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+      "audition": "old-lady-rp-Sulafat"
+    }
+  },
+  "maddie_beat0": {
+    "m0-0": "voice3/maddie/00-0-0-b.wav",
+    "m0-1": "voice3/maddie/00-0-1-b.wav",
+    "m1-0": "voice3/maddie/00-1-0-b.wav",
+    "m1-1": "voice3/maddie/00-1-1-a.wav",
+    "m1-2": "voice3/maddie/00-1-2-a.wav",
+    "m2-0": "voice3/maddie/00-2-0-a.wav",
+    "m3-0": "voice3/maddie/00-3-0-a.wav",
+    "m4-0": "voice3/maddie/00-4-0-b.wav",
+    "m4-1": "voice3/maddie/00-4-1-a.wav",
+    "m5-0": "voice3/maddie/00-5-0-a.wav",
+    "m5-1": "voice3/maddie/00-5-1-a.wav"
+  },
+  "gaps": [
+    {
+      "after": {
+        "line": 0,
+        "phrase": 0,
+        "text": "Oh, hello!"
+      },
+      "before": {
+        "line": 0,
+        "phrase": 1,
+        "text": "Look, I'm really sorry about him."
+      },
+      "seconds": 1.2
+    },
+    {
+      "after": {
+        "line": 1,
+        "phrase": 0,
+        "text": "He just plays that tune on repeat, every day."
+      },
+      "before": {
+        "line": 1,
+        "phrase": 1,
+        "text": "Ever since you lot..."
+      },
+      "seconds": 1.2
+    },
+    {
+      "after": {
+        "line": 1,
+        "phrase": 1,
+        "text": "Ever since you lot..."
+      },
+      "before": {
+        "line": 1,
+        "phrase": 2,
+        "text": "went."
+      },
+      "seconds": 0.6
+    },
+    {
+      "after": {
+        "line": 4,
+        "phrase": 0,
+        "text": "Turns out that was the bit that mattered."
+      },
+      "before": {
+        "line": 4,
+        "phrase": 1,
+        "text": "You. And your consciousness."
+      },
+      "seconds": 1.2
+    },
+    {
+      "after": {
+        "line": 5,
+        "phrase": 0,
+        "text": "Of course, he'd never admit that he misses you."
+      },
+      "before": {
+        "line": 5,
+        "phrase": 1,
+        "text": "Anyway, he's got that patrol out again. Mind how you go."
+      },
+      "seconds": 0.6
+    }
+  ]
+}

@@ -37,8 +37,9 @@ docs/shorts/<name>/
 Song and Edit plan are manual gates — the human generates the track in Suno and cuts
 the final video by hand. Clips is the one automated stage, driven over Flow.
 
-This medium is produced by the **`music-video-short`** skill
-(`.claude/skills/music-video-short/`).
+This medium was produced by the **`music-video-short`** skill, archived on 2026-10-23
+(`.claude/skills-archive/music-video-short/`). Shorts are now cut from scene clips
+(`new-scene`) with the chief of staff's cut lists.
 
 ## Index
 

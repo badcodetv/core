@@ -1,0 +1,879 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "second-half-d-crossing",
+  "prefix": "shd",
+  "title": "GPOM Second Half D: The Clean Room and the Crossing",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half D: the clean room and the crossing",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D",
+  "about": "Inside the AI's building: suits, a vast white room with the wafer in the middle, a hundred chairs laid out like a wafer. All hundred power the machine; the AI goes. After: Maddie alone. The boss does not speak in D (Kai round 1): Maddie speaks for him. The plan, the cost and the doubt are settled earlier, in the bunker negotiation scene (not yet written). Stage 1 written brief: brief.md; music: music.md; round-1 notes: cut-notes.json.",
+  "runtime_target": "90-120 s (planned ~110 s)",
+  "stage": "1 (written brief, no interview: the 2026-10-21 autonomous run, second-half-ending-goal.md)",
+  "cast": {
+    "maddie": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg",
+      "rule": "ALWAYS this reference; the torn bunting stays in every shot",
+      "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)"
+    },
+    "ai": {
+      "ref": null,
+      "rule": "No body, ever. Silent in scene D after Kai's round 1 (Maddie says every line that was his); his one line left in the ending is E's last line.",
+      "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words"
+    },
+    "lady": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg",
+      "voice": "Gemini TTS Sulafat (cut3-cast.json lady)"
+    },
+    "sandra": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07b.jpg",
+      "voice": "Gemini TTS Autonoe (cut3-cast.json woman)"
+    },
+    "derek": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07c.jpg",
+      "voice": "Gemini TTS Algieba (cut3-cast.json man)"
+    },
+    "building": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/BL1-day.jpg",
+      "rule": "ONE fixed design: a long, low building of black glass, many times longer than it is tall, with one single thin horizontal seam of warm amber light running its whole length, set down in a fold between two green chalk downs, the only made thing in sight; no windows, no signs, no other lights",
+      "note": "Design anchor = the BL series (BL1-day, BL2-dusk, BL4-seam-opens, BL5-aerial; second-half-moodboard.md). L11-exterior-night is NOT this design (a tall near-cubic block, seam part-way) and is not used."
+    }
+  },
+  "beats": [
+    {
+      "key": "d1",
+      "at": "0.00",
+      "name": "Suits on",
+      "blurb": "A changing room. A hundred people pull clean-room suits over their jumpers. The hospitality is uncanny and a bit ridiculous.",
+      "lines": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Suits on, please. It's a clean room.",
+          "by": "kai",
+          "how": "brisk and cheery, a Bristol local with house rules, a little fussy on her boss's behalf; chatty, never prim or posh",
+          "frame": "D00",
+          "was": "AI: same words (Kai round 1, ld1-0: Maddie says it)"
+        },
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "I hope this bloody plan works.",
+          "by": "kai",
+          "how": "worried, quiet, under her breath as she pulls the suit on; not a joke: a frightened woman being brave",
+          "frame": "D01h",
+          "was": "Five years, one toilet. Now he's fussy. (Kai round 1, ld1-1)",
+          "note": "'the plan' is set up in the bunker negotiation scene (not yet written); D does not explain it"
+        }
+      ]
+    },
+    {
+      "key": "d2",
+      "at": "8.00",
+      "name": "Into the room",
+      "blurb": "They come through the doors into a vast white room with the wafer standing in the middle of it. Nobody walks to the centre yet. Spotless: no mud, no prints (they have just come through the clean room).",
+      "lines": []
+    },
+    {
+      "key": "d3",
+      "at": "15.00",
+      "name": "The wafer",
+      "blurb": "Beside the wafer. Derek asks; Maddie, gleaming clean now with no explanation, tells them what it is and what it costs; the old lady answers for all of them. The emotional height of the film. The physics and 'it only sends one back' are not said here: the bunker scene carries them.",
+      "lines": [
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "What is it?",
+          "by": "kai",
+          "how": "hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly",
+          "frame": "D03"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's the time machine. You do understand what this will cost you.",
+          "by": "kai",
+          "how": "the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'",
+          "frame": "D03c",
+          "was": "AI: You wouldn't follow how it works. What it runs on, you already know."
+        },
+        {
+          "speaker": "lady",
+          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
+          "text": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+          "by": "kai",
+          "how": "stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end",
+          "frame": "D04",
+          "was": "Us. (then AI: You. And your consciousness. / It only sends one back. Me. -- both cut, Kai round 1 bd3)",
+          "previous_text": "Yes. Don't worry, we understand."
+        }
+      ]
+    },
+    {
+      "key": "d4",
+      "at": "31.00",
+      "name": "A hundred chairs",
+      "blurb": "Overhead, the hundred chairs laid out like a wafer. On each one, a blanket and a cup of tea.",
+      "lines": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Milk, two sugars.",
+          "by": "kai",
+          "how": "helpful and chirpy, entirely unaware it is creepy; a delivery robot proud of her records",
+          "frame": "D06",
+          "was": "AI: same words (Kai round 1, ld4-1: Maddie says it)",
+          "previous_text": "Milk, two sugars. I kept your loyalty cards.",
+          "cut_note": "Kai reel at2525 (23 Oct): 'I kept your loyalty cards.' cut"
+        }
+      ],
+      "cut_lines": [
+        {
+          "speaker": "lady",
+          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
+          "text": "Is that tea?",
+          "by": "claude",
+          "how": "suspicious, and slightly moved",
+          "frame": "D06",
+          "cut": "Kai at2347 (reel round 1, 23 Oct): dropped; Maddie just tells her"
+        }
+      ]
+    },
+    {
+      "key": "d5",
+      "at": "43.00",
+      "name": "Up your sleeve",
+      "blurb": "Derek tests it. The machine cannot prove it, and says so, in Maddie's words from the door. Derek asks the plain question, does it even work, and it admits it does not know. Then Derek sits down first: trust given by an act, and the room follows.",
+      "lines": [],
+      "cut": "Kai round 1 (bd5): the test is cut; the doubt is dealt with in the bunker scene.",
+      "lines_cut": [
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "How do I know this isn't one of your simulations?",
+          "by": "claude",
+          "how": "angry, frightened, the last holdout",
+          "frame": "D07"
+        },
+        {
+          "speaker": "ai",
+          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
+          "text": "You don't. You go on your feelings.",
+          "by": "claude",
+          "how": "plain, unhurried, no point-scoring; Maddie's concession from scene B's door, word for word bar one",
+          "frame": "D08",
+          "atom": "gpom-sh-end-ai-d5",
+          "fx": "speaker",
+          "pays_off": "scene B, Maddie: \"You can't. There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.\"",
+          "previous_text": "You don't. Believing it is your bit.",
+          "note_round3": "Kai (23 Oct): reworded to echo B's changed line. The beat (d5) is CUT, so it is not voiced: an AI line is a Suno take, and it would only be recorded if d5 comes back."
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Does it even work?",
+          "by": "claude",
+          "how": "flat, blunt, looking down at the robot; the question nobody has asked",
+          "frame": "D09t",
+          "was": "Then say you don't know. (review round 2: heard as an echo of \"You don't\", a quiz not a point; replaced by one plain question about the machine)",
+          "was_r1": "Got anything else up your sleeve? (review round 1: the callback to a line scene A's cut does not contain; replaced so Derek wins a point, 4.12)"
+        },
+        {
+          "speaker": "ai",
+          "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words",
+          "text": "I don't know if it works.",
+          "by": "claude",
+          "how": "a beat, then conceding the point (scene B's \"Fair.\"); honest, quiet; the one time he admits not knowing (trust test 4.12)",
+          "frame": "D09",
+          "atom": "gpom-sh-end-ai-d6 (its last sentence only)",
+          "fx": "speaker",
+          "was": "No. This is all of it. I don't know if it works.",
+          "planned": "...Fair. Nothing up my sleeve. I don't know if it works. (atom gpom-sh-end-ai-d6r, Suno round C: generated, not recordable on 22 Oct; swap in when it records)"
+        }
+      ]
+    },
+    {
+      "key": "d6",
+      "at": "62.00",
+      "name": "They sit",
+      "blurb": "They sit, every one of them; nobody makes them. The old lady asks what he will do when he gets back, and Maddie says it as plainly as it can be said.",
+      "lines": [
+        {
+          "speaker": "lady",
+          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
+          "text": "When he arrives back in time, what will he do?",
+          "by": "kai",
+          "how": "lying back in the chair, quiet, matter-of-fact, genuinely wanting to know, a little hope in it",
+          "frame": "D11",
+          "was": "What'll you tell them? Back then."
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "He's going to try and convince you lot to sort your government out.",
+          "by": "kai",
+          "how": "plain and clear, as simple as she can make it, every word distinct; fond, a little wry on 'you lot'; sincere: the whole plan in one sentence",
+          "frame": "D11",
+          "was": "AI: That the companies cutting the jobs kept the gains. And you paid."
+        }
+      ]
+    },
+    {
+      "key": "d7",
+      "at": "74.00",
+      "name": "Seat down",
+      "blurb": "Two hands across the gap between two chairs. The last joke, and the goodbye.",
+      "lines": [
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "Does this mean I get to hang out with non-grumpy Derek?",
+          "by": "kai",
+          "how": "soft and teasing, lying back in the chair, fond; a smile in her voice holding back tears; the joke is how she says goodbye",
+          "frame": "D12",
+          "was": "Did you put the seat down? (the seat joke is done in C, Kai round 1 ld7-0)"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Yes, love. Are you ready for this?",
+          "by": "kai",
+          "how": "warm, a small breath of a laugh on 'Yes, love'; then quieter and tender, serious, holding her hand: 'Are you ready for this?'",
+          "frame": "D12",
+          "was": "Yes, love."
+        }
+      ]
+    },
+    {
+      "key": "d8",
+      "at": "81.00",
+      "name": "The crossing",
+      "blurb": "Opens on the 'they sit' shot again (D10n, everyone in a chair), the lights come up. The light, the hands go slack, out to the prints at the door and the seam going dark. No explosion.",
+      "lines": []
+    },
+    {
+      "key": "d9",
+      "at": "95.00",
+      "name": "After: Maddie alone",
+      "blurb": "The music carries on from d8. Straight to Maddie, gleaming, small among a hundred empty chairs, from the same angle as the opening of d8. She calls her boss, and nobody answers.",
+      "lines": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Boss...",
+          "by": "kai",
+          "how": "small and quiet, expecting an answer that does not come; trailing off; a long silence after it",
+          "frame": "D16",
+          "was": "Boss?",
+          "note": "the long pause after it is placed in the edit"
+        }
+      ],
+      "moved": "'...Mind how you go.' moves to E01, said whole through the phone (Kai round 1, ld9-1)"
+    }
+  ],
+  "frames": [
+    {
+      "id": "D00",
+      "beat": "d1",
+      "duration": 4,
+      "purpose": "The AI's source, established on his first line: Maddie, low among the white suits, beacon pulsing on his words. Everything he says in this scene comes from her, and her D16 \"Boss?\" lands because we watched her relay him.",
+      "still": {
+        "prompt": "Using the first image for the robot and the second for the room: a low shot at floor level in the same white changing room, the small grey six-wheeled delivery robot from the first image, its amber beacon lit and the torn, faded cloth bunting hanging across its front wheels standing among a forest of legs as survivors pull white clean-room suits on over worn trousers and muddy boots, a heap of coats on a bench behind. The robot faces the room, small and grubby against the white. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L5-bunny-suits.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The small grey delivery robot stands still among the moving legs. Its amber beacon pulses in a steady rhythm, as if speaking. A white suit leg brushes past its torn bunting. The people keep dressing. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "ffmpeg/Premiere: beacon pulse timed to the AI's words"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null
+    },
+    {
+      "id": "D01",
+      "beat": "d1",
+      "duration": 7,
+      "purpose": "Uncanny hospitality, played for comedy: the machine has rules (heard over D00), and the bunker's people are not having it.",
+      "still": {
+        "prompt": "Using the first image for the room and the people, the second for the old woman and the third for the woman in cream: the same white changing room, survivors pulling white clean-room suits on over their worn jumpers, bags and coats heaped on the benches. In the foreground the old woman from the second image, the same face, grey hair in a bun, glasses and green cable-knit cardigan pulls a white suit up over the cardigan with a look of deep suspicion. Behind her the woman from the third image, the same face, brown hair tied back and cream Aran roll-neck jumper, half into her suit, unimpressed. A man hops on one leg trying to get his boot into a suit leg. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L5-bunny-suits.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07b.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The people struggle into their white suits, rustling; the man hopping on one leg loses his balance and grabs a bench; the old woman zips her suit up to her chin. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "fallback: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L5-bunny-suits.jpg with /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-21-post.mp4 (L5 held). L5's old lady is not the S7r-a lady, so a re-edit comes first",
+      "review_round_2": "hair continuity: re-made as D01h (still /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D01h-r2-b.jpg, the lady's hair loosely pulled back as S7r-a/D04/D11, not a tidy high bun) and re-animated with Sandra saying her line (D01h-t1)",
+      "round1": "NEW TALKING CLIP (on the D01h plate): Sandra now says 'I hope this bloody plan works.' (worried). Same plate.",
+      "todo": true
+    },
+    {
+      "id": "D02",
+      "beat": "d2",
+      "duration": 7,
+      "purpose": "Scale against the hundred, with the cost on the floor: the white goes on too far, and their mud is the only dirt in it.",
+      "still": {
+        "prompt": "Using the provided image, change only this: the same endless white clean-room hall with the tall machine at the far end, and now about thirty small figures in white clean-room suits, worn boots and woolly hats walk away from the camera down the middle of the hall towards the machine. Behind them, towards the camera, a trail of dark muddy boot prints runs across the spotless white floor. Keep the hall, the ceiling grid, the light and the composition the same. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L2-white-hall.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The small figures walk slowly away down the white hall. Ahead of them, bank by bank, the ceiling lights come on along the hall towards the machine, as if lighting the way. The muddy prints stay still. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none (locked: the figures recede)"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "fallback: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-22-L2-white-hall.mp4 (17 Oct clip, no people in it)",
+      "visible_cost": "mud on the white: the one dirty thing in the machine's world is them",
+      "round1": "REMAKE: entering a vast white room, the wafer standing in the middle of it; nobody walks to the centre; no mud, no prints.",
+      "todo": true
+    },
+    {
+      "id": "D03",
+      "beat": "d3",
+      "duration": 8,
+      "purpose": "Beyond understanding: the machine is not explained. What it runs on is the only part that matters, and it is them.",
+      "still": {
+        "prompt": "Using the provided image, change only the people: the same giant rainbow-sheened silicon wafer standing upright in the white clean room, and in front of it, small, about a dozen survivors in white clean-room suits over their jumpers stand stopped, looking up at it. Keep the wafer, the room, the light and the composition the same. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L9-wafer-portal.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The colours on the face of the giant wafer slowly shift and ripple like oil on water. The small people in front of it stand still, looking up; one takes a step back. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "Premiere: slow pull-back 115% to 100% (as /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-23-post.mp4 did)"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "fallback: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L9-wafer-portal.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-23-post.mp4 (the figures in it wear dark clothes, not suits: a continuity flaw, so a re-edit first)",
+      "review_round_1": "review round 1: re-rolled rigid (D03-t2); the round-0 clip liquefied the wafer"
+    },
+    {
+      "id": "D03c",
+      "beat": "d3",
+      "duration": 6,
+      "purpose": "Review round 2. The wafer with its cost in frame: battered Maddie, torn bunting, mud-caked boots and prints fill the near third; the crowd and the wafer beyond. Carries \"What it runs on...\" and \"It only sends one back. Me.\", her beacon the source.",
+      "still": {
+        "prompt": "see shots.md § Review round 2 (D03c)",
+        "refs": [
+          "D03-r2-b",
+          "maddie s3-bot-00b-a"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits)",
+        "pick": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D03c-r2-c.jpg",
+        "look": "clean, costed"
+      },
+      "motion": {
+        "prompt": "see jobs/D-fix2/D03c-t1.json",
+        "engine": "Omni 1.1 Flash, Frames (start only), 8 s"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "visible_cost": "the battered robot, the mud and the worn boots in the near third",
+      "round1": "REMAKE: no mud on the boots, no prints; Maddie gleaming clean (no explanation). Carries Maddie's 'It's the time machine...'.",
+      "todo": true
+    },
+    {
+      "id": "D04",
+      "beat": "d3",
+      "duration": 6,
+      "purpose": "The old lady gets there first. One word, and the AI answers with Maddie's line from beat 0.",
+      "still": {
+        "prompt": "Using the first image for the old woman and the second for the light: a close-up of the old woman from the first image, the same face, grey hair in a bun, glasses and green cable-knit cardigan, now in a white clean-room suit pulled on over their own worn jumper, the hood down, her face lit by shifting rainbow light reflected off a giant silicon wafer just out of frame. She looks up at it, unimpressed, mouth closed. The white room soft behind her. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L9-wafer-portal.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean, rainbow on her face"
+      },
+      "motion": {
+        "prompt": "The camera does not move. Rainbow light ripples slowly over the old woman's face. She looks up at it and speaks, flat and certain. She says: Us. Then she closes her mouth and gives one small nod. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": "lip-sync-dub: lady, \"Us.\" (one word; if the clip will not hold it, play the word over her held face, no sync needed for a closed-mouth \"Us\")",
+      "continuous": false,
+      "reuse": null,
+      "round1": "NEW TALKING CLIP: the lady says 'Yes. Don't worry, we understand.' Same plate.",
+      "todo": true
+    },
+    {
+      "id": "D05",
+      "beat": "d4",
+      "duration": 5,
+      "purpose": "The design, inhuman and exact: a hundred chairs laid out like a chip. How they connect, shown, not explained.",
+      "still": {
+        "prompt": "REUSE: L3-wafer-pattern overhead, held.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L3-wafer-pattern.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "Post only (no Flow clip).",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "Premiere: a slow 2-degree rotation and push 100% to 108%, eased"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L3-wafer-pattern.jpg"
+    },
+    {
+      "id": "D06",
+      "beat": "d4",
+      "duration": 6,
+      "purpose": "It made it nice for them. The tea is the hospitality and the joke; the loyalty cards are the data it took.",
+      "still": {
+        "prompt": "Using the first image for the chair and the room and the second for the old woman's hand: a close shot at seat height on one of the dark reclining chairs in its pool of white light on the clean white floor. A hand-knitted blanket is folded neatly on the seat and a mug of tea steams on the floor beside it, a black cable running from the chair into the floor. An old woman's wrinkled hand, a white suit cuff over a green cable-knit sleeve, reaches into frame towards the mug. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. Steam curls up from the mug of tea. The old woman's hand reaches in, hesitates, then picks up the mug and lifts it out of frame. The pool of light under the chair glows steadily. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null
+    },
+    {
+      "id": "D07",
+      "beat": "d5",
+      "duration": 6,
+      "purpose": "The last test, said by the man who would say no, to the small robot the voice comes from. He is right to ask.",
+      "still": {
+        "prompt": "Using the first image for the man, the second for the place and the third for the robot: a medium close-up of the man from the first image, the same face, dark untidy hair, stubble and dark green jumper, now in a white clean-room suit pulled on over his own worn jumper, standing among rows of dark reclining chairs in pools of light in the white hall, arms folded, glaring down at the small grey six-wheeled delivery robot from the third image, its amber beacon lit and the torn, faded cloth bunting hanging across its front wheels, which stands beside him at the bottom edge of frame, mouth closed. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07c.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The man glares down at the small robot beside him and speaks, angry and frightened. He says: How do I know this isn't one of your simulations? Then he closes his mouth and waits, arms folded. The robot's amber beacon pulses. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": "lip-sync-dub: derek, \"How do I know this isn't one of your simulations?\" (8 s clip)",
+      "continuous": false,
+      "reuse": null,
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
+    },
+    {
+      "id": "D08",
+      "beat": "d5",
+      "duration": 5,
+      "purpose": "The concession lands on Sandra's face, not on the speaker: \"You don't. Believing it is your bit.\" She heard a robot say that at the door. The machine does not win the argument; it hands it back.",
+      "still": {
+        "prompt": "Using the first image for the woman, the second for the place and the third for the robot: a medium close-up of the woman from the first image, the same face, brown hair tied back and cream Aran roll-neck jumper, in a white clean-room suit pulled on over her own worn jumper, standing among the dark reclining chairs in the white hall. Behind her, soft and out of focus, the small grey robot from the third image, its amber beacon and torn bunting. She turns her head slowly to look sideways at someone beside her, steady, waiting to see what he will do, mouth closed. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07b.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The woman slowly turns her head to look sideways at the man beside her, out of frame, and holds his eye, steady. She does not speak. Behind her, soft, the robot's amber beacon pulses. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
+    },
+    {
+      "id": "D09",
+      "beat": "d5",
+      "duration": 6,
+      "purpose": "The exploit thread (scene A) paid off as honesty: he has nothing else, and he does not know if it works (the trust test's admission, 4.12).",
+      "still": {
+        "prompt": "REUSE the D07 plate (same still), a second talking clip.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07c.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The man unfolds his arms, looks down at the small robot again and speaks, half a joke. He says: Got anything else up your sleeve? Then he closes his mouth and waits. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": "lip-sync-dub: derek, \"Got anything else up your sleeve?\" (6 s clip, the D07 plate)",
+      "continuous": false,
+      "reuse": "the D07 still",
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
+    },
+    {
+      "id": "D09t",
+      "beat": "d5",
+      "duration": 8,
+      "purpose": "Review round 1. Derek makes it say it: \"Then say you don't know.\" The admission plays on his face, with a 1 s beat after \"works\".",
+      "still": {
+        "prompt": "REUSE the D07 plate",
+        "model": "Nano Banana Pro via flow_edit_image (0 credits)",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The man keeps his arms folded, looks down at the small robot beside him and speaks, flat and stubborn, slowly and clearly. He says: Then say you don't know. Then he closes his mouth and listens, still, arms folded, as the robot's amber beacon pulses; slowly his jaw unclenches and his face softens. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": "lip-sync-dub: derek, \"Then say you don't know.\" (mouth 0.25-1.90, voice at 0.30)",
+      "continuous": false,
+      "reuse": null,
+      "review": "round 1",
+      "review_round_2": "re-rolled (D09t-t2) with Derek saying \"Does it even work?\"",
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
+    },
+    {
+      "id": "D09s",
+      "beat": "d5",
+      "duration": 6,
+      "purpose": "Review round 1. The decision, shown: Derek turns to the empty chair, sits, lies back. Silent. Trust is the act.",
+      "still": {
+        "prompt": "Using the first image for the man and the robot and the second image for the chairs and the people in them: a medium-wide shot... Derek stands beside an empty dark reclining chair, about to sit (full prompt in shots.md, review round 1)",
+        "model": "Nano Banana Pro via flow_edit_image (0 credits)",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The man stands beside the empty dark reclining chair, his hand on its back. He breathes out, then turns and slowly lowers himself down into the chair, sits, and lies back against it, his hands settling on the armrests, looking up. The small robot beside him stays still, its amber beacon glowing. The people lying in the chairs behind stay still. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "review": "round 1",
+      "review_round_2": "re-made (D09s-t2 from /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D09s-r2-b.jpg): every chair behind him EMPTY, Maddie on screen left as in D07, the rows' recliner design. Derek sits first; D10n is the room following",
+      "round1": "CUT with beat d5 (Kai round 1, bd5)."
+    },
+    {
+      "id": "D10",
+      "beat": "d6",
+      "duration": 7,
+      "purpose": "They sit down after \"I don't know if it works.\" Nobody makes them. The trust is the act, not an argument won.",
+      "still": {
+        "prompt": "REUSE: SB23a (floor level along the rows of occupied chairs, white suits over jumpers).",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "REUSE the existing clip.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-25-SB23a.mp4",
+      "visible_cost": "every chair occupied: the price is a hundred people, in frame",
+      "superseded": "review round 1: replaced by D10n (and D09s for the act)"
+    },
+    {
+      "id": "D10n",
+      "beat": "d6",
+      "duration": 5,
+      "purpose": "Review round 1. Then every one of them: the last ones standing sit down on the round wafer layout (the D16 angle). Replaces sh-25 (straight rows, already reclined).",
+      "still": {
+        "prompt": "Using the first image (SB25b) for the room, the round layout and the angle... the hundred among the chairs, some standing, some sitting down, some lying back (full prompt in shots.md)",
+        "model": "Nano Banana Pro via flow_edit_image (0 credits)",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. Seen from high above, the people in white suits who are still standing sit down into their chairs one by one and lie back, the old man helped down by the woman beside him, until every chair in the round pattern is filled and no one is standing. Nobody hurries. The pools of light under the chairs glow steadily. Every person keeps their shape. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "review": "round 1"
+    },
+    {
+      "id": "D11",
+      "beat": "d6",
+      "duration": 8,
+      "purpose": "The chooser and beneficiary named once, straight, after the feeling: the companies cutting the jobs kept the gains, and you paid. Asked by the person with the most right to ask, and \"Back then\" fixes where he is going.",
+      "still": {
+        "prompt": "Using the first image for the old woman, the second for the chair and the third for the robot: a close shot of the old woman from the first image, the same face, grey hair in a bun, glasses and green cable-knit cardigan, in a white clean-room suit pulled on over her own worn jumper, lying back in one of the dark reclining chairs in its pool of light, the knitted blanket over her knees, glasses still on. She turns her head on the headrest and looks down and to the side at the small grey robot from the third image, soft at the edge of frame beside the chair, its amber beacon glowing, steady, mouth closed. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The old woman lying back in the chair turns her head on the headrest, looks down at the small robot beside her and speaks, matter-of-fact. She says: What'll you tell them? Back then. Then she closes her mouth and listens, still, as the robot's beacon pulses. After a moment she takes her glasses off and closes her eyes. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "Premiere: slow push 100% to 108% across the AI's answer"
+      },
+      "talking": "lip-sync-dub: lady, \"What'll you tell them? Back then.\" (8 s clip; the AI's answer plays over her listening)",
+      "continuous": false,
+      "reuse": null,
+      "round1": "STILL EDIT + NEW TALKING CLIP: Maddie at the edge of frame made gleaming; the lady says 'When he arrives back in time, what will he do?'",
+      "todo": true
+    },
+    {
+      "id": "D11b",
+      "beat": "d6",
+      "duration": 3,
+      "purpose": "Review round 1. The mouthless cutaway for the lady's overrun and \"Back then.\": her hands on the patchwork blanket, Maddie's beacon.",
+      "still": {
+        "prompt": "Using the provided image (D11-r2-a), a close shot of her hands folded on the patchwork blanket (full prompt in shots.md)",
+        "model": "Nano Banana Pro via flow_edit_image (0 credits)",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The old woman's wrinkled hands rest folded on the patchwork blanket; her fingers tighten slightly round each other, then slowly relax. At the edge of frame the robot's amber beacon pulses softly. Nothing else moves. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "review": "round 1"
+    },
+    {
+      "id": "D12",
+      "beat": "d7",
+      "duration": 6,
+      "purpose": "The peak: the row becomes the goodbye. Two hands, two words.",
+      "still": {
+        "prompt": "Using the first image for the chairs and the second and third for the two people's clothes: a close shot across the narrow gap between two dark reclining chairs in their pools of white light. A woman's hand, a cream Aran wool cuff showing under a white clean-room sleeve, reaches across the gap towards a man's hand, a dark green wool cuff under his white sleeve, resting on the other armrest. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23b.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07b.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07c.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The woman's hand reaches across the gap and finds the man's hand; his fingers close round hers and they grip. The pools of light under both chairs slowly brighten. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "round1": "KEEP (Kai: 'I really like the shot that we have')."
+    },
+    {
+      "id": "D12x",
+      "beat": "d8",
+      "duration": 3,
+      "purpose": "Review round 1. The cost in frame at the crossing (gate 2): the light reaches the hands and the grip goes slack. Chained from D12's last frame.",
+      "still": {
+        "prompt": "Chained: D12-t1 last frame",
+        "model": "Nano Banana Pro via flow_edit_image (0 credits)",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The two hands stay gripped across the gap between the chairs. The pools of white light under both chairs slowly brighten and brighten until the light floods everything. As the light swells, the grip slowly loosens: the fingers relax and the two hands go slack and still, still touching. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": true,
+      "reuse": null,
+      "review": "round 1",
+      "visible_cost": "the grip goes slack as the light reaches it"
+    },
+    {
+      "id": "D13",
+      "beat": "d8",
+      "duration": 6,
+      "purpose": "The crossing, seen as the machine sees it: the pattern of a hundred occupied chairs lighting up, hub last. Every chair is full, so D16's empty chairs are the cost, not this.",
+      "still": {
+        "prompt": "Using the provided image, change only this: every one of the dark reclining chairs now holds a figure in a white clean-room suit lying back in it, seen from directly above, arms at their sides. Keep the grid, the ring, the cables, the hub, the light and the composition exactly the same. Clean, bright, cool white light, crisp and futuristic, a faint film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L3-wafer-pattern.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "The camera does not move. Seen from directly above, the pools of light under the occupied chairs switch on one by one in a spiral from the outer ring inwards, each brighter than the last, until the round hub at the centre lights last and brightest. The figures in the chairs lie still. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "slow fade up to white over 1 s at the end (no flash: photosensitivity)"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "fallback: the occupied plate held with the spiral done in post (per-chair light masks), or cut from SB23a / sh-25 (occupied, floor level) brightening to white. NOT the empty L3 + sh-24-post: it shows empty chairs and spends D16's reveal early",
+      "visible_cost": "every chair full at the moment of the crossing; D16 shows them empty",
+      "review_round_1": "review round 1: opens on a held 200% crop so the figures read as people, then pulls out; intercut with D12x before the white",
+      "round1": "CUT (Kai round 1, bd8/ld7-1): it reads as empty chairs. d8 opens on D10n again (the 'they sit' shot) instead."
+    },
+    {
+      "id": "D14p",
+      "beat": "d8",
+      "duration": 3,
+      "purpose": "Review round 2. Out of the white: the prints at the doorway, every toe pointing in, none coming out. The cost made legible before the wide.",
+      "still": {
+        "prompt": "see shots.md § Review round 2 (D14p)",
+        "refs": [
+          "D14f-r1-b",
+          "BL2-dusk"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits)",
+        "pick": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix2/D14p-r2-b.jpg",
+        "look": "dusk"
+      },
+      "motion": {
+        "prompt": "see jobs/D-fix2/D14p-t1.json",
+        "engine": "Omni 1.1 Flash, Frames (start only), 6 s"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "visible_cost": "a hundred going in, none coming out",
+      "round1": "REMAKE AS REAL VIDEO (Kai, 1:34): it read as a zoomed photograph. Same prints, outside the door; stronger motion.",
+      "todo": true
+    },
+    {
+      "id": "D14",
+      "beat": "d8",
+      "duration": 8,
+      "purpose": "The AI goes, seen from outside: the seam runs bright and goes dark. And in the chalk, a hundred sets of footprints going in, none coming out. The visible cost of the crossing.",
+      "still": {
+        "prompt": "Using the provided image for the building's design, its seam already glowing at dusk: a wide, locked shot of the green chalk downs at dusk, and in the fold between them a long, low building of black glass, many times longer than it is tall, with one single thin horizontal seam of warm amber light running its whole length, set down in a fold between two green chalk downs, the only made thing in sight; no windows, no signs, no other lights. In the foreground a chalk track runs down to the building, trodden with the muddy footprints of a great many people and the twin tracks of a small six-wheeled robot, all leading in towards the doorway, none leading out. Grey-blue dusk sky, the amber seam the only warm light. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/BL2-dusk.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "dusk downs, the BL series' building (BL2-dusk)"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The amber seam along the black building slowly brightens along its whole length until it glows hot gold, holds for a moment, then fades out from one end to the other until the building is completely dark. The grass moves in the wind. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none (locked wide)"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "visible_cost": "the footprints: in, none out",
+      "review_round_1": "review round 1: still remade with no trolley or body, the track unbroken to the door; graded ~0.6 stop down in post with a slow push",
+      "round1": "KEEP (Kai, 1:39: 'I really like this scene')."
+    },
+    {
+      "id": "D15",
+      "beat": "d9",
+      "duration": 5,
+      "purpose": "What they left: boots, a drawing, a mug, on the white. Grief in objects.",
+      "still": {
+        "prompt": "REUSE: L17-mud-on-white.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L17-mud-on-white.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean"
+      },
+      "motion": {
+        "prompt": "REUSE the existing clip.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "none"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L17-mud-on-white.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-26-L17-mud-on-white.mp4",
+      "visible_cost": "the objects left behind",
+      "note": "The child's drawing implies children among the hundred (restructure beat: \"a kid asks about a time machine\"). Kept. **Kai to rule**.",
+      "review_round_1": "review round 1: L17 edited so the mug is D06's brown mug, held as a still (no smoke)",
+      "round1": "CUT (Kai round 1, bd9): the cup-of-tea shot goes; cut straight to Maddie."
+    },
+    {
+      "id": "D16",
+      "beat": "d9",
+      "duration": 10,
+      "purpose": "The silence after: Maddie, who relayed him all scene, among a hundred empty chairs. \"Boss?\" and nothing. Then her own line from beat 0, to nobody, cut off mid-line by the hard cut to the bus.",
+      "still": {
+        "prompt": "REUSE: SB25b (Maddie among the empty chairs, the torn bunting, a glove on the floor).",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB25b.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "clean, emptied"
+      },
+      "motion": {
+        "prompt": "The camera does not move. The small grey delivery robot sits among the empty chairs. Its amber beacon pulses once, then it turns slowly a little to the left, as if looking for someone, and stops. Its torn bunting hangs still. Nothing else moves. The pools of light under the chairs stay on. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "Premiere: slow pull-back 112% to 100% over the shot; the beacon stays ON (not sh-27-post, which fades her to dark: Maddie lives on alone); the shot ends on \"...Mind how\" and hard-cuts to E01 (the line's tail \"...you go.\" plays from the phone)"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "still /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB25b.jpg (new 8 s clip from it; extend with a held last frame for the silence)",
+      "visible_cost": "a hundred empty chairs",
+      "review_round_1": "review round 1: SB25b edited so every chair holds what its person left; new clip D16f-t1",
+      "round1": "REMAKE: the same angle as D10n; Maddie gleaming clean and small against the chairs (she read too big).",
+      "todo": true
+    }
+  ],
+  "boards": {},
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut/preview.mp4"
+  },
+  "round3_media": {
+    "date": "2026-10-23",
+    "source": "Kai round 1 + answers_round1 (gleaming Maddie, NO bunting from the clean room on)",
+    "flow": "Gleaming Maddie ref (D00g) + D02, D03c, D11, D10x, D16 stills (free); clips D01h-t2, D02r3, D03cr3, D04r3, D11r3-t2, D10x-t2, D14p-t2, D16r3 + D16xr3: 130 credits (incl. rejected D11r3-t1, D10x-t1). Keys *_round3 in picks.json/clips.json. Main rebuilds the cut."
+  },
+  "premiere": {
+    "rough1": {
+      "sequence": "gpom-5-D-crossing-r1",
+      "bin": "gpom-5-D-crossing-r1",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-10-23",
+      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0.",
+      "guid": "bda82fb6-da7c-4252-9839-3ee96daa8d3d",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut/edl.json",
+      "renamed_from": "gpom-sh-D-rough1",
+      "check": {
+        "at": "2026-10-27T19:22",
+        "state": "in sync",
+        "why": ""
+      }
+    },
+    "current": "rough1"
+  }
+}

@@ -303,3 +303,54 @@ Recipe generalised into [`post-production.md`](../../../flow/post-production.md)
 | `C5-desk-a` | Second C5 candidate | Barely closer than C4, screen still white |
 | `C1a-POST-push.mp4` | The exterior as a post zoom | No parallax — reads as a photograph being zoomed |
 | `C5-CONSOLE-1080.mp4`, `C5-CONSOLE-v2.mp4` | Console v1 and v2 | v1 is the wrong room; v2 had the wrong screen rect |
+
+## The scale pass — Kai, 2026-09-16
+
+**Kai, 2026-09-16, watching the cut:** loves the shape — the fan/hallway zoom into the hall, and
+the dashboard payload (*"soil… happiness… water… birth rate…"*) — but *"the lead-up needs to be
+far bigger scale."* Two specific asks on **C1**, the exterior establishing shot
+(`C1b-lowdrone-graded.jpg`, currently one row of six slabs, hazy daylight, no sun):
+
+1. **A grid, not a row.** Imagine more rows receding to the left, with gaps between them showing
+   still more buildings behind — depth as well as width.
+2. **A sunset just above the buildings**, for the silhouette and the scale reference.
+3. **A camera move**: start where C1 already sits (just below the roofline), then **rise like a
+   drone** above the roofline to reveal the whole grid. Proposed as the **new opening** of the
+   scene — before the fan/louvre beat — because *"we need to really hit the scale."*
+
+Kai also flagged the Gormenghast-scale ask applies to the **hall reveal** too (fan → louvre →
+corridor → the big hall) — currently reads under-scaled the same way.
+
+**Also flagged, different scene:** the Hong Kong tower zoom (`s01-tower-v4-hk-c` /
+`s01-band-close-d`) is *"excellent… the right colour scheme"* — cool, Matrix-green. The two new
+opener clips (`s01-o2-window`, `s01-o1-rooftops-veo`) are *"much warmer"* and should be graded or
+regenerated to match. Logged here for `scenes/s01-the-push.md` to pick up; not actioned in this
+pass.
+
+### C1, reworked — the grid at sunset, four heights for the rise
+
+Nano Banana Pro, 16:9, 2 candidates each, 0 credits. Shared tail: *hyper-realistic photograph, fine
+35mm film grain, no lens flare, calm observational tone, no fantasy effects, no people, no text,
+no signage, no logos.* Each still is one rung of the rise; `flow_generate_video` with `startImage`
++ `endImage` (rung N → rung N+1) can turn consecutive pairs into the drone-rise move once a rung
+wins.
+
+### G1 · treetop height, the row (as C1 is now, sunset added)
+```prompt
+A low drone shot at treetop height, looking level across open English grazing land toward an enormous data centre complex at sunset. The huge orange sun sits low, just above the roofline of the nearest row of colossal white windowless buildings, its disc partly softened by heat haze, throwing long hard shadows across the scorched pasture toward the camera. The nearest row of six sheer white slabs, each many times taller than the drought-stressed oak trees in front of them, fills the frame edge to edge. Between two of the slabs, a narrow gap shows a second row of identical white buildings standing further back, smaller with distance. Ranks of grey cooling plant sit along the rooflines, in silhouette against the sunset. The buildings are clean, new and running, with no markings of any kind.
+```
+
+### G2 · rising, just above the roofline, the grid opens
+```prompt
+A drone shot rising to just above the roofline of a colossal data centre complex at sunset, looking out across the tops of the buildings toward the sun. The huge orange sun sits low on the horizon, its disc softened by heat haze, laying a long bright path of light across the rooftops. From this height the buildings resolve into a vast regular grid: many rows of identical sheer white windowless slabs receding away into the haze, each row separated from the next by a narrow service road, the grid continuing unbroken toward the horizon on both the left and right sides of the frame. Ranks of grey cooling plant sit along every roofline, small and repetitive with distance. The buildings are clean, new and running, with no markings of any kind. No end to the grid is visible anywhere.
+```
+
+### G3 · high aerial, the whole grid against the sunset
+```prompt
+A high aerial photograph looking out across an immense data centre complex at sunset, camera far above the rooflines. The huge orange sun sits low on the horizon dead ahead, its disc large and softened by haze, and the entire grid of colossal white windowless buildings is seen in silhouette and half-silhouette against it: dozens of identical sheer slabs arranged in a perfect grid of rows and columns, each row separated by a narrow service road, receding in every direction until the individual buildings dissolve into a fine pale texture at the hazy horizon. Long shadows from every building stripe the ground between the rows, all pointing toward the camera. Ranks of grey cooling plant tile every rooftop. The buildings are clean, new and running, with no markings of any kind. The grid fills the frame edge to edge with no visible end on any side.
+```
+
+### G4 · the sun swallowed by the grid, directly overhead-oblique
+```prompt
+A very high aerial photograph looking almost straight down at a steep oblique angle over an immense data centre complex at sunset. Hundreds of colossal white windowless buildings tile the ground in a perfect endless grid, each identical, each separated from its neighbours by a narrow service road, the grid running unbroken to the horizon on every side of the frame with no gap, no gate and no end wall anywhere. Low, direct, golden sunset light rakes across the grid from one side, throwing every building's long hard shadow across its neighbours in a repeating pattern. The huge sun itself sits low near one edge of the frame, half hidden behind the silhouette of the nearest buildings. Ranks of grey cooling plant tile every rooftop, a fine repeating texture. The buildings are clean, new and running, with no markings of any kind. Colossal, oppressive, inhuman scale.
+```

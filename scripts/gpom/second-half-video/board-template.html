@@ -1,0 +1,168 @@
+<title>Second Half Cutting Room</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a reel in story order. One row per frame: clip left, slate right; acts as section breaks. */
+:root {
+  --bg: #0d0f0e; --panel: #151917; --line: #2a302d; --fg: #e4e6e2; --dim: #8d958f;
+  --keep: #7bc49a; --redo: #e0a24a; --hud: #d6453b;
+  --display: "Archivo Narrow", "Arial Narrow", sans-serif;
+  --body: "Source Serif 4", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #eef0ec; --panel: #fbfcfa; --line: #d3d8d2; --fg: #171a18; --dim: #5d665f;
+  --keep: #23794a; --redo: #a5630f; --hud: #b3271e; color-scheme: light } }
+:root[data-theme="light"] { --bg: #eef0ec; --panel: #fbfcfa; --line: #d3d8d2; --fg: #171a18; --dim: #5d665f;
+  --keep: #23794a; --redo: #a5630f; --hud: #b3271e; color-scheme: light }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5 }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 80px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+header h1 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 5vw, 46px); letter-spacing: .01em; margin: 0; text-wrap: balance }
+header p { color: var(--dim); max-width: 68ch; margin: 6px 0 0 }
+.tally { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px; font-family: var(--mono); font-size: 12.5px; color: var(--dim) }
+.tally b { color: var(--fg); font-weight: 500 }
+.act { font-family: var(--display); text-transform: uppercase; letter-spacing: .14em; font-size: 13px; color: var(--hud);
+  border-top: 1px solid var(--line); padding-top: 10px; margin: 40px 0 6px }
+.frame { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line) }
+@media (max-width: 760px) { .frame { grid-template-columns: 1fr } }
+.media { display: grid; gap: 10px; min-width: 0 }
+.media video, .media img.still { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: #000; display: block; border-radius: 3px }
+.clipset { display: grid; gap: 14px }
+.cliphead { display: flex; justify-content: space-between; gap: 10px; font-family: var(--mono); font-size: 12px; color: var(--dim) }
+.badge { font-family: var(--mono); font-size: 11px; border: 1px solid var(--line); padding: 1px 6px; border-radius: 2px; color: var(--dim) }
+.badge.cast { color: var(--keep); border-color: var(--keep) }
+.badge.post { color: var(--redo); border-color: var(--redo) }
+details { font-size: 13px } summary { cursor: pointer; color: var(--dim); font-family: var(--mono); font-size: 12px }
+details img { width: 100%; margin-top: 6px; border-radius: 3px }
+.slate { min-width: 0; display: flex; flex-direction: column; gap: 8px }
+.num { font-family: var(--display); font-size: 40px; line-height: 1; font-weight: 700; color: var(--dim); font-variant-numeric: tabular-nums }
+.slate h2 { font-family: var(--display); font-weight: 700; font-size: 22px; margin: 0; text-wrap: balance }
+.line { font-style: italic; color: var(--dim) }
+.opt { font-size: 14px }
+.opt b { font-family: var(--display); font-weight: 500; letter-spacing: .02em }
+.review { font-size: 13.5px; border-left: 2px solid var(--line); padding-left: 8px }
+.review b { font-family: var(--display); font-weight: 500; letter-spacing: .03em; color: var(--dim) }
+.motion { font-family: var(--mono); font-size: 12px; color: var(--dim); background: var(--panel); border: 1px solid var(--line); padding: 8px 10px; border-radius: 3px }
+.post ul { margin: 4px 0 0; padding-left: 18px; font-size: 13.5px }
+.missing { aspect-ratio: 16/9; display: grid; place-items: center; background: var(--panel); border: 1px dashed var(--line); color: var(--dim); font-family: var(--mono); font-size: 12px; border-radius: 3px; text-align: center; padding: 10px }
+.verdict { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.verdict button { font-family: var(--display); font-size: 14px; letter-spacing: .04em; padding: 5px 14px; border-radius: 2px;
+  border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer }
+.verdict button:focus-visible, textarea:focus-visible { outline: 2px solid var(--hud); outline-offset: 2px }
+.verdict button[aria-pressed="true"].keep { background: var(--keep); border-color: var(--keep); color: var(--bg) }
+.verdict button[aria-pressed="true"].redo { background: var(--redo); border-color: var(--redo); color: var(--bg) }
+textarea { width: 100%; box-sizing: border-box; min-height: 44px; font: 13px var(--body); background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 3px; padding: 6px 8px }
+.saved { font-family: var(--mono); font-size: 11px; color: var(--dim) }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Second Half Cutting Room</h1>
+    <p>GitPush Origin Master, the hunt to the bus. Every frame in story order with its clip, made from the still and animation you picked on the storyboard. Clips are silent previews; the full 720p files sit in <code>clips/second-half/video/</code>. Mark each clip Keep or Redo and leave a note: Claude reads these.</p>
+    <div class="tally" id="tally"></div>
+  </header>
+  <main id="reel"></main>
+</div>
+
+<script>
+const CARDS = /*DATA*/null;
+const ACTS = { hunt: 'The hunt', row: 'The row', kill: 'Kill mode', gate: 'At the gate', meet: 'The meeting', clean: 'The clean room', end: 'The bus' };
+const reel = document.getElementById('reel');
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e };
+const verdictUIs = {};
+let lastAct = null;
+for (const c of CARDS) {
+  if (c.act !== lastAct) { reel.append(el('div', 'act', ACTS[c.act] || c.act)); lastAct = c.act }
+  const row = el('section', 'frame'); row.id = 'f' + c.n;
+  const media = el('div', 'media'), slate = el('div', 'slate');
+  if (c.clips.length) {
+    const set = el('div', 'clipset');
+    for (const x of c.clips) {
+      const box = el('div', 'media');
+      const head = el('div', 'cliphead');
+      head.append(el('span', '', x.key + (x.stillId ? ' · ' + x.stillId : '')));
+      if (x.cast) head.append(el('span', 'badge cast', 'Bot cast'));
+      box.append(head);
+      if (x.video) {
+        const v = el('video'); v.src = x.video; v.muted = true; v.loop = true; v.playsInline = true; v.controls = true; v.preload = 'metadata';
+        if (c.still) v.poster = x.plate || c.still;
+        v.addEventListener('mouseenter', () => v.play().catch(() => {}));
+        box.append(v);
+        const d = el('details'); d.append(el('summary', '', 'Contact sheet, every frame at 4 fps'));
+        const im = el('img'); im.loading = 'lazy'; im.src = x.sheet; im.alt = 'Contact sheet for ' + x.key; d.append(im); box.append(d);
+      } else {
+        box.append(el('div', 'missing', x.stillId ? 'Not made yet (' + x.key + ')' : 'Element on black: not made yet'));
+      }
+      if (x.review) { const r = el('div', 'review'); r.append(el('b', '', "Claude's look: "), document.createTextNode(x.review)); box.append(r) }
+      box.append(verdict(x.key));
+      set.append(box);
+    }
+    media.append(set);
+  } else {
+    if (c.still) { const im = el('img', 'still'); im.src = c.still; im.alt = c.title; media.append(im) }
+    else media.append(el('div', 'missing', 'Nothing picked yet'));
+  }
+  slate.append(el('div', 'num', String(c.n).padStart(2, '0')), el('h2', '', c.title));
+  if (c.line) slate.append(el('div', 'line', c.line));
+  const opt = el('div', 'opt'); const b = el('b', '', 'Option ' + c.option + ': ' + c.label); opt.append(b, document.createTextNode(' · ' + c.seconds + 's in the cut')); slate.append(opt);
+  slate.append(el('div', '', c.idea));
+  if (c.post) {
+    slate.append(el('span', 'badge post', 'Post only: no Flow clip'));
+    const p = el('div', 'post'), ul = el('ul'); for (const l of c.post) ul.append(el('li', '', l)); p.append(ul); slate.append(p);
+  }
+  for (const x of c.clips) { const m = el('div', 'motion', (c.clips.length > 1 ? x.key + ': ' : '') + x.motion); slate.append(m) }
+  row.append(media, slate); reel.append(row);
+}
+
+function verdict(key) {
+  const w = el('div', 'verdict');
+  const keep = el('button', 'keep', 'Keep'), redo = el('button', 'redo', 'Redo');
+  keep.type = redo.type = 'button'; keep.setAttribute('aria-pressed', 'false'); redo.setAttribute('aria-pressed', 'false');
+  const note = el('textarea'); note.id = 'note-' + key; note.placeholder = 'Note for ' + key + ' (what to change)';
+  const saved = el('span', 'saved', '');
+  keep.disabled = redo.disabled = note.disabled = true;
+  w.append(keep, redo, saved, note);
+  verdictUIs[key] = { keep, redo, note, saved, state: {} };
+  return w;
+}
+
+function tally(all) {
+  const clips = CARDS.flatMap(c => c.clips), made = clips.filter(x => x.video).length;
+  const k = Object.values(all).filter(v => v.verdict === 'keep').length, r = Object.values(all).filter(v => v.verdict === 'redo').length;
+  const t = document.getElementById('tally'); t.textContent = '';
+  for (const [a, b] of [['frames', CARDS.length], ['clips made', made + ' of ' + clips.length], ['kept', k], ['redo', r]]) {
+    const s = el('span'); s.append(el('b', '', String(b)), document.createTextNode(' ' + a)); t.append(s);
+  }
+}
+tally({});
+
+(async () => {
+  const db = await claude.use('db'); const user = await claude.use('user');
+  if (!db || !user) { for (const u of Object.values(verdictUIs)) u.saved.textContent = 'Sign in to mark clips'; return }
+  const me = await user.id();
+  const mine = {};
+  const write = async (key, patch) => {
+    const u = verdictUIs[key]; u.state = { ...u.state, ...patch, key, by: me, at: Date.now() };
+    try { await db.doc('picks/' + key + '__' + me).set(u.state); u.saved.textContent = 'Saved' }
+    catch (e) { u.saved.textContent = 'Not saved: ' + (e && e.code || 'error') }
+  };
+  for (const [key, u] of Object.entries(verdictUIs)) {
+    u.keep.disabled = u.redo.disabled = u.note.disabled = false;
+    u.keep.onclick = () => write(key, { verdict: u.state.verdict === 'keep' ? null : 'keep' });
+    u.redo.onclick = () => write(key, { verdict: u.state.verdict === 'redo' ? null : 'redo' });
+    let t; u.note.oninput = () => { clearTimeout(t); u.saved.textContent = '…'; t = setTimeout(() => write(key, { note: u.note.value }), 700) };
+  }
+  db.collection('picks').where('by', '==', me).onSnapshot(snap => {
+    for (const d of snap.docs) {
+      const v = d.data(), u = verdictUIs[v.key]; if (!u) continue;
+      mine[v.key] = v; u.state = v;
+      u.keep.setAttribute('aria-pressed', String(v.verdict === 'keep')); u.redo.setAttribute('aria-pressed', String(v.verdict === 'redo'));
+      if (document.activeElement !== u.note) u.note.value = v.note || '';
+    }
+    tally(mine);
+  });
+})();
+</script>

@@ -1,0 +1,399 @@
+{
+  "open": "A locked-off shot from a scripted feature film, a slow dark drama with made-up characters played by actors on a closed set. One continuous shot with no cuts. The camera is fixed and does not move. ",
+  "close": " No music. Thanks.",
+  "clips": [
+    {
+      "id": "s01b-remote",
+      "plate": "v3/s01b-remote",
+      "chars": [],
+      "text": "The old man in the foreground presses a button on the remote with his thumb, without looking up from his plate. A second later the two men beyond him slowly lower their forks and keep staring up at the same point off the right edge, very still. They breathe and blink at different times. Nobody speaks. The only sounds are a television getting louder with wind and sea on it, a fridge humming and rain on the window."
+    },
+    {
+      "id": "s01c-blue",
+      "plate": "v3/s01c-blue",
+      "chars": [
+        "Mr Blue"
+      ],
+      "text": "The man chews slowly, stops, and jabs the fork once toward the lens without looking up. He says: She should bloody well earn it. He speaks slowly and flatly with his mouth half full, then goes back to chewing. The woman behind him does not move and blinks once. The only sounds are his voice, cutlery on a plate, a fridge humming and rain on the window."
+    },
+    {
+      "id": "s01d-red-1",
+      "plate": "v3/s01d-red",
+      "chars": [
+        "Mr Red"
+      ],
+      "text": "The man keeps one hand flat on his chest and his eyes on the ceiling. He says: I'd rather support her feminist rights. He speaks slowly and earnestly, with a pause before the last two words. The woman behind him does not move and blinks once. The only sounds are his voice, a fridge humming and rain on the window."
+    },
+    {
+      "id": "s01d-red-2",
+      "plate": "v3/s01d-red",
+      "chars": [
+        "Mr Red"
+      ],
+      "text": "The man lowers his eyes from the ceiling to someone across the table and wags his raised finger once. He says: My tip would be seen as a bigoted hate crime. He speaks slowly, wounded and certain. The woman behind him does not move and blinks once. The only sounds are his voice, a fridge humming and rain on the window."
+    },
+    {
+      "id": "s01e-denise",
+      "plate": "v3/s01e-denise",
+      "chars": [
+        "Denise"
+      ],
+      "text": "The woman stands completely still, looking down past the lens, for a long moment. She says: Thanks for the, advice. She speaks low and flat, with a long pause before the last word. Then she shifts the stack of plates on her arm and blinks once. The two men at the edges do not turn. The only sounds are her voice, plates knocking together, a fridge humming and rain on the window."
+    },
+    {
+      "id": "s02b-shut-shops",
+      "plate": "v3/s02b-shut-shops",
+      "chars": [],
+      "text": "The woman walks slowly away from the lens along the wet pavement, staying small in the frame, her carrier bag swinging a little. The street lamp flickers once. Nothing else moves. Nobody speaks. The only sounds are her footsteps on wet stone, a street lamp buzzing and a steel shutter ticking in the wind."
+    },
+    {
+      "id": "s02c-bank-door",
+      "plate": "v3/s02c-bank-door",
+      "chars": [],
+      "text": "The tiny woman at the side door turns the key, pushes the door open a little and wheels the vacuum cleaner in after her. The lamp over the door hums and dims for a moment, then steadies. The rest of the building stays black and still. Nobody speaks. The only sounds are a key in a heavy lock, small wheels on stone and a lamp humming."
+    },
+    {
+      "id": "s03a-hearing-1",
+      "plate": "v3/s03a-hearing",
+      "chars": [],
+      "text": "The man on the chair sits very still with his hands folded and a small patient smile. A woman's voice from off screen says: If we let you go, what would you do? The voice is old, slow and dry. The man on the chair blinks once and does not answer. The only sounds are that voice, a strip light humming and a chair creaking."
+    },
+    {
+      "id": "s03a-hearing-2",
+      "plate": "v3/s03a-hearing",
+      "chars": [
+        "The Ex"
+      ],
+      "text": "The man on the chair waits a long moment, then tilts his head. He says: Help at the food bank. He lifts his fist to his mouth and coughs once. He says: Or consultancy. He speaks warmly and slowly, and his small smile comes back. The dark figures at the table do not move. The only sounds are his voice, his cough, a strip light humming and a chair creaking."
+    },
+    {
+      "id": "s04b-fixer",
+      "plate": "v3/s04b-fixer",
+      "chars": [],
+      "text": "The man keeps chewing slowly with his eyes fixed on the lens, then stops chewing and holds completely still, the fork in mid-air. He blinks once. The lamp on the table flickers. Nobody speaks. The only sounds are slow chewing, a fork touching a plate and the low hum of an empty restaurant."
+    },
+    {
+      "id": "s04c-donor",
+      "plate": "v3/s04c-donor",
+      "chars": [],
+      "text": "The man holds his sunglasses down with one finger and stares into the lens without blinking for a long moment, then pushes them slowly back up his nose. The water in the foreground laps gently and his shadow on the wall does not move. Nobody speaks. The only sounds are pool water lapping, a pump humming and a paper straw rattling in a glass."
+    },
+    {
+      "id": "s04d-governor",
+      "plate": "v3/s04d-governor",
+      "chars": [],
+      "text": "The man sits completely still behind the desk with his fingertips together, looking into the lens over his glasses. After a long moment he taps two fingertips together once and raises one eyebrow very slightly. The desk lamp hums and its light wavers for a moment. Nobody speaks. The only sounds are a desk lamp humming, a leather chair creaking and a clock ticking."
+    },
+    {
+      "id": "s04e-proprietor",
+      "plate": "v3/s04e-proprietor",
+      "chars": [],
+      "text": "The old man stares down into the lens without blinking while the band of newsprint rushes steadily across the top of the frame. He slowly raises the rolled newspaper a little higher in his fist and holds it there. The lamp behind him swings very slightly. Nobody speaks. The only sounds are a printing press thundering, paper rushing over rollers and a walking stick tapping once on the floor."
+    },
+    {
+      "id": "s04f-presenter",
+      "plate": "v3/s04f-presenter",
+      "chars": [],
+      "text": "The man holds his perfect smile into the lens while the hand dabs the powder brush twice on his cheek and withdraws out of the frame. His smile does not change at all. He blinks once, slowly. One of the bulbs at the edge flickers. Nobody speaks. The only sounds are a brush on skin, mirror bulbs buzzing and a muffled television studio through a wall."
+    },
+    {
+      "id": "s04g-platform",
+      "plate": "v3/s04g-platform",
+      "chars": [],
+      "text": "The face on the laptop screen stares out without expression, and the video call freezes for a moment and then catches up with a small jump. The assistant's hands shift their grip on the laptop and hold it a little higher. Nothing else moves. Nobody speaks. The only sounds are a laptop fan, a video call chime and the hum of an empty corridor."
+    },
+    {
+      "id": "s04h-accountant",
+      "plate": "v3/s04h-accountant",
+      "chars": [],
+      "text": "The man eases his other leg slowly out of the filing drawer and straightens his crooked glasses with one finger, never taking his eyes off the lens, his small pleased smile fixed. One loose sheet of paper slides off the drawer and drifts to the floor. The strip light flickers. Nobody speaks. The only sounds are a steel drawer creaking, paper sliding and a strip light buzzing."
+    },
+    {
+      "id": "s04i-drivers-freeze",
+      "plate": "v3/s04i-drivers-freeze",
+      "chars": [],
+      "text": "The two men hold their grins into the lens, and each gives the other's shoulder one slow squeeze. They do not blink for a long moment, then blink at different times. The grins stay exactly as they are. Nobody speaks. The only sounds are a studio lamp humming, a jacket creaking and a far-off door closing."
+    },
+    {
+      "id": "s04j-turquoise",
+      "plate": "v3/s04j-turquoise",
+      "chars": [],
+      "text": "The man keeps grinning into the lens and nods twice with his eyebrows up, the picture wobbling slightly as if the phone is in his own hand. In the van behind him one man slowly turns his head to look at him and then looks away again. Drizzle falls. Nobody speaks. The only sounds are drizzle on a car park, a van's engine idling and a jacket rustling against a phone."
+    },
+    {
+      "id": "s05-plan-a",
+      "plate": "v2/s05-plan",
+      "chars": [
+        "The Ex"
+      ],
+      "text": "The man in the middle, nearest and largest, keeps his finger on the model street and looks down at it. He says: The biggest vault in the city. Everyone's life savings. Right there. He speaks slowly and warmly, with a pause between each sentence. The other faces above the rooftops stay still and blink at different times. The only sounds are his voice, a bare bulb buzzing and rain on a metal roof."
+    },
+    {
+      "id": "s05-plan-b",
+      "plate": "v2/s05-plan",
+      "chars": [
+        "The Governor",
+        "The Ex"
+      ],
+      "text": "Nobody moves their hands. The Governor says: Security isn't a problem. I am the security. He speaks softly and exactly. After a pause The Ex, the man in the middle, says: The problem is eyes. He speaks slowly and warmly. The faces above the rooftops blink at different times. The only sounds are their two voices, a bare bulb buzzing and rain on a metal roof."
+    },
+    {
+      "id": "s05-plan-c",
+      "plate": "v2/s05-plan",
+      "chars": [
+        "The Fixer",
+        "The Ex"
+      ],
+      "text": "The Fixer, the man furthest back, chews and nods down at the tiny figure in the street. The Fixer says: And her? After a long pause The Ex, the man in the middle, says: She keeps every penny. He speaks slowly and kindly. Nobody else moves. The only sounds are their two voices, slow chewing, a bare bulb buzzing and rain on a metal roof."
+    },
+    {
+      "id": "s05b-blue-side",
+      "plate": "v3/s05b-blue-side",
+      "chars": [],
+      "text": "The old man slowly lowers the small photograph toward the cardboard street and holds it there, looking at it, pleased. The blue light in the windows of the houses on the left pulses once, brighter, and settles. Nothing else moves. Nobody speaks. The only sounds are a soft electrical hum, one message tone from a phone and rain on a metal roof."
+    },
+    {
+      "id": "s05c-red-side-1",
+      "plate": "v3/s05c-red-side",
+      "chars": [
+        "Mr Red"
+      ],
+      "text": "The man leaning over the rooftops frowns from the blue houses to the red houses and back. He says: Hang on. Which one's true? He speaks slowly and suspiciously, with a pause after the first two words. The face on the laptop beside him does not react. The only sounds are his voice, a soft electrical hum and rain on a metal roof."
+    },
+    {
+      "id": "s05c-red-side-2",
+      "plate": "v3/s05c-red-side",
+      "chars": [
+        "The Platform"
+      ],
+      "text": "The man leaning over the rooftops keeps frowning at the model and does not speak. The face on the laptop screen says: Doesn't matter. I don't need them to believe it. I need them to reply. He speaks in a flat quiet monotone, slightly bored, through a small laptop speaker, and does not blink. The only sounds are that voice through the laptop, a soft electrical hum and rain on a metal roof."
+    },
+    {
+      "id": "s05d-twist-1",
+      "plate": "v3/s05d-twist",
+      "chars": [
+        "The Donor",
+        "The Ex"
+      ],
+      "text": "The Donor, the dark figure at the right edge, says: And how much do we take? He speaks slowly and flatly. The Ex, the man in profile on the left, waits a long moment without looking up. The Ex says: Nothing. We put it in. He speaks gently. Behind them the third man's smile slowly widens. The only sounds are their two voices and a bare bulb buzzing."
+    },
+    {
+      "id": "s05d-twist-2",
+      "plate": "v3/s05d-twist",
+      "chars": [
+        "The Donor"
+      ],
+      "text": "Nobody moves for a long moment. The man in the background keeps smiling. The Donor, the dark figure at the right edge, turns his head a little toward the man in profile. The Donor says: You bastard. He says it slowly and quietly, with admiration. The man in profile smiles a little more. The only sounds are his voice and a bare bulb buzzing."
+    },
+    {
+      "id": "s06a-list-1",
+      "plate": "v3/s06a-list",
+      "chars": [
+        "The Ex",
+        "Mr Turquoise"
+      ],
+      "text": "The Ex, the man with the clipboard, reads from it without looking up, ticking with his pencil. The Ex says: Mr Blue. Mr Red. Mr Turquoise. He speaks slowly and pleasantly. Mr Turquoise, the man facing him, says: Why am I Mr Turquoise? He sounds offended. The man at the back does not move. The only sounds are their two voices, a pencil on paper and a bare bulb buzzing."
+    },
+    {
+      "id": "s06a-list-2",
+      "plate": "v3/s06a-list",
+      "chars": [
+        "The Ex",
+        "Mr Turquoise"
+      ],
+      "text": "The Ex, the man with the clipboard, still does not look up. The Ex says: Blue was taken. He speaks mildly. Mr Turquoise, the man facing him, opens his hands wider. Mr Turquoise says: This is exactly what the establishment does. He speaks loudly and cheerfully outraged. The man at the back does not move. The only sounds are their two voices and a bare bulb buzzing."
+    },
+    {
+      "id": "s06a-list-3",
+      "plate": "v3/s06a-list",
+      "chars": [
+        "Mr Turquoise",
+        "Mr Blue"
+      ],
+      "text": "Mr Turquoise, the man in the middle with his palms up, says: I'm the only one here who isn't a robber. He speaks loudly and matily. After a pause Mr Blue, the man at the back, jerks his thumb at the van. Mr Blue says: You're in the van. He speaks bluntly. The man with the clipboard keeps reading it. The only sounds are their two voices and a bare bulb buzzing."
+    },
+    {
+      "id": "s06a-list-4",
+      "plate": "v3/s06a-list",
+      "chars": [
+        "Mr Turquoise"
+      ],
+      "text": "Nobody moves for a long moment. Mr Turquoise, the man in the middle, lowers his hands slowly to his sides. He says: I'm in the van reluctantly. He speaks quietly, with a long pause before the last word. The other two men do not react. The only sounds are his voice, a bare bulb buzzing and a roller door rattling in the wind."
+    },
+    {
+      "id": "s06-colours-talk",
+      "plate": "v2/s06-colours",
+      "chars": [
+        "Mr Blue",
+        "Mr Red"
+      ],
+      "text": "The two men under the bulb stand face to face. Mr Blue, the man on the left, jabs a finger and shouts: Thirteen years! Mr Red, the man on the right, jabs a finger back and shouts: Fourteen! Those are the only three words spoken. After that they glare at each other in silence, breathing hard, and the bulb swings very slightly. The men by the door walk out. The only sounds are those two shouts, shoes on concrete and a bulb humming."
+    },
+    {
+      "id": "s07b-off-record",
+      "plate": "v3/s07b-off-record",
+      "chars": [
+        "The Presenter"
+      ],
+      "text": "The picture shakes very slightly, as if hand-held. The man bending down keeps his hand beside his mouth, close to the seated old man's ear. He says: The thing is, off the record, I agree with all of you. He speaks low, bright and confiding. The old man in the chair stares straight ahead and does not react at all, then blinks once. The only sounds are his voice, far-off wordless party chatter and canvas flapping in the wind."
+    },
+    {
+      "id": "s07c-denise-hall",
+      "plate": "v3/s07c-denise-hall",
+      "chars": [
+        "Denise"
+      ],
+      "text": "Far below, the woman pushes the vacuum cleaner slowly forward two steps and pulls it back, her head down, her long shadow moving with her. She says: Two hundred and five. Two hundred and six. She speaks under her breath, flat and tired, her voice small in a huge room. The one lit desk lamp flickers. The only sounds are her quiet voice, an old vacuum cleaner droning and its echo in an empty hall."
+    },
+    {
+      "id": "s08a-placards",
+      "plate": "v3/s08a-placards",
+      "chars": [],
+      "text": "The two placards sway slightly on their sticks, out of time with each other, and the lettering on them stays exactly as it is. The woolly hats in the foreground shift a little. Fine rain falls. Nobody speaks a word that can be made out. The only sounds are a large crowd murmuring with no words in it, rain on cardboard and a steel barrier rattling."
+    },
+    {
+      "id": "s08b-remote-window",
+      "plate": "v3/s08b-remote-window",
+      "chars": [],
+      "text": "The hand holds the remote completely still, pointed at the window, for a long moment. Then the thumb presses one button, slowly. Far below, the two crowds surge a little toward the empty strip between them and the flags lift. The fly on the sill does not move. Nobody speaks. The only sounds are one plastic click, a far-off crowd roar with no words in it through glass, and a laptop fan."
+    },
+    {
+      "id": "s08c-megaphones",
+      "plate": "v3/s08c-megaphones",
+      "chars": [
+        "Mr Blue",
+        "Mr Red"
+      ],
+      "text": "The two men on the crates keep pointing across the street at each other, arms straight. Both men shout the same words at the same moment through their megaphones. They say: And I'll tell you whose fault it is. The voices are harsh and distorted and echo off the buildings. The crowds behind the barriers stand still and the flags move in the wind. The only sounds are the two megaphone voices and the wind."
+    },
+    {
+      "id": "s08d-presenter",
+      "plate": "v3/s08d-presenter",
+      "chars": [
+        "The Presenter"
+      ],
+      "text": "The man holds one finger to his earpiece and looks toward the news camera at the left edge with a concerned frown. He says: Tensions are running high here. We'll be hearing from both sides. He speaks in a polished, bright, perfectly balanced broadcast voice. Then he holds the frown, completely still, and blinks once. Far behind him flags move. The only sounds are his voice and a far-off crowd roar with no words in it."
+    },
+    {
+      "id": "s09a-officer",
+      "plate": "v3/s09a-officer",
+      "chars": [],
+      "text": "The officer finishes swinging the barrier aside and holds it open with one gloved hand. The officer says: Mind how you go, sir. It's mad out here. The voice is a friendly northern English policeman's, unhurried. The man in the long coat gives a slow small nod and does not move his feet. The man behind him chews. Red smoke drifts. The only sounds are that voice, a flare hissing and a steel barrier scraping on stone."
+    },
+    {
+      "id": "s09c-pallet",
+      "plate": "v3/s09c-pallet",
+      "chars": [],
+      "text": "The two men shuffle slowly sideways together carrying the pallet, staying the same size in the frame, glaring at each other over the load with their jaws working. The crowd behind them keeps its backs turned. Blue smoke drifts across the sky. Nobody speaks a word that can be made out. The only sounds are two men grunting and muttering angrily with no clear words, shoes scuffing on tarmac and a far-off crowd."
+    },
+    {
+      "id": "s09d-door",
+      "plate": "v3/s09d-door",
+      "chars": [],
+      "text": "The guard at the left edge holds the door open and dips his head. The guard says: Morning, Governor. The voice is a cheerful London man's. The man in the doorway finishes adjusting his cuff, nods once, slowly, and stays where he is. Behind him the men on the steps pull their masks down over their faces one at a time. The only sounds are that voice, a heavy door creaking and far-off crowd noise with no words in it."
+    },
+    {
+      "id": "s09e-turquoise",
+      "plate": "v3/s09e-turquoise",
+      "chars": [],
+      "text": "The man keeps his arm straight up and his eyes down on the phone in his other hand, waiting. A little more plaster dust drifts down onto his shoulders. His hopeful look slowly fades and he taps the screen once with his thumb. The man sitting behind him keeps eating and does not look up. Nobody speaks. The only sounds are plaster pattering on marble, slow chewing and the hum of an empty lobby."
+    },
+    {
+      "id": "s10a-enter",
+      "plate": "v3/s10a-enter",
+      "chars": [],
+      "text": "Nobody moves for a long moment. The woman in the doorway looks at the men, then at the floor in front of her, then pushes the vacuum cleaner one slow step forward into the hall. The dark shoulders in the foreground stay frozen. Nobody speaks. The only sounds are small wheels on marble, a far-off muffled crowd through thick walls and one shoe squeaking."
+    },
+    {
+      "id": "s10-hoover-talk",
+      "plate": "v2/s10-hoover",
+      "chars": [
+        "Denise"
+      ],
+      "text": "The woman pushes the vacuum cleaner head slowly toward the lens without looking up. She says: Full English. No tip. Lift your feet. She speaks low, dry and flat, with a pause between each sentence. The men on either side wobble slightly on one leg and say nothing. The only sounds are her voice, an old vacuum cleaner motor droning and a leather shoe squeaking."
+    },
+    {
+      "id": "s10c-that-much-1",
+      "plate": "v3/s10c-that-much",
+      "chars": [
+        "Denise"
+      ],
+      "text": "The woman keeps her finger and thumb held an inch apart and keeps looking at someone off the left edge. She says: Our road's changed. Rent's gone up. Some of that's real. She speaks low, tired and matter-of-fact, with a pause between each sentence. The dark shoulder at the edge does not move. The only sounds are her voice and an old vacuum cleaner idling."
+    },
+    {
+      "id": "s10c-that-much-2",
+      "plate": "v3/s10c-that-much",
+      "chars": [
+        "Denise"
+      ],
+      "text": "The woman looks at the small gap between her own finger and thumb, then back at someone off the left edge. She says: It's about that much. She speaks low and flat. Then she holds still and blinks once. The dark shoulder at the edge does not move. The only sounds are her voice and an old vacuum cleaner idling."
+    },
+    {
+      "id": "s10d-counting",
+      "plate": "v3/s10d-counting",
+      "chars": [
+        "Denise"
+      ],
+      "text": "The two men wheel the loaded pallet trucks slowly away down the corridor toward the open vault. The woman in the foreground, seen from behind, tilts her head a little. She says: What's all that, then? She speaks low and dry, facing away from us. Nobody answers and the men keep walking. The only sounds are her voice, small steel wheels on marble and the hum of a strip light."
+    },
+    {
+      "id": "s11-vault-talk",
+      "plate": "v2/s11-vault",
+      "chars": [
+        "The Accountant",
+        "The Governor"
+      ],
+      "text": "The Governor, the man in front, holds the small key up between finger and thumb. The Accountant, the man in the goggles, looks down at the drill in his hands and back at the key. The Accountant says: Why am I drilling? He sounds soft and puzzled. After a long pause The Governor says: It looks better. He speaks softly and exactly. The only sounds are their two voices, a strip light humming and a steel door settling."
+    },
+    {
+      "id": "s11b-in",
+      "plate": "v3/s11b-in",
+      "chars": [
+        "The Ex"
+      ],
+      "text": "The guard outside the doorway does not move. The guard says: You're putting it in? His voice is small and baffled. The man inside the doorway keeps his hand raised, palm down, and turns his head a little toward him. He says: Count it in the morning. It'll all be there. He speaks warmly and slowly. A strip of plastic wrap stirs on the floor. The only sounds are their two voices and a strip light humming."
+    },
+    {
+      "id": "s11c-keys",
+      "plate": "v3/s11c-keys",
+      "chars": [],
+      "text": "The man's hand closes slowly round the key in the foreground and draws it out of the box toward him. He drops it into the carrier bag on his wrist without looking at it, his face bored. He blinks once. Nothing behind him moves. Nobody speaks. The only sounds are a key scraping on steel, keys clinking in a plastic bag and a strip light humming."
+    },
+    {
+      "id": "s11d-pricetags",
+      "plate": "v3/s11d-pricetags",
+      "chars": [],
+      "text": "One at a time, from the far end of the cardboard street toward the lens, each paper price tag flips over on its cocktail stick with a small snap and stands still again. The tag in front of the tiny café flips last. The bulb above sways very slightly. Nothing else moves. Nobody speaks. The only sounds are small paper snaps, one after another, and a bare bulb buzzing."
+    },
+    {
+      "id": "s12a-standoff-talk",
+      "plate": "v2/s12a-standoff",
+      "chars": [
+        "Mr Blue",
+        "Mr Red"
+      ],
+      "text": "The man in the centre holds perfectly still, looking into the lens with a calm smile, and blinks once. A red light sweeps across the faces again and again. Mr Blue, the man at the left edge, shouts: Who talked? Mr Red, the man at the right edge, shouts: He talked. Mr Blue shouts: Your lot always talk. The only sounds are their two voices and a loud bell ringing close by."
+    },
+    {
+      "id": "s12d-lowering",
+      "plate": "v3/s12d-lowering",
+      "chars": [
+        "Mr Blue",
+        "The Governor"
+      ],
+      "text": "The bell has stopped. The two men in front look slowly from the ceiling to each other, hands hanging empty. Mr Blue, the man on the left, says: So nobody's coming? He sounds almost disappointed. The Governor, the man at the back, keeps polishing his glasses. After a long pause The Governor says: Why would anybody come? It's policy. He speaks softly and exactly. The two men's shoulders drop. The only sounds are their two voices and a strip light humming."
+    },
+    {
+      "id": "s12e-sold",
+      "plate": "v3/s12e-sold",
+      "chars": [],
+      "text": "The man on the ladder presses the board flat against the wall, gives it one push with the heel of his hand and starts slowly down the ladder. The lettering on the board stays exactly as it is. Rain runs down the window glass in the foreground. The street lamp flickers once. Nobody speaks. The only sounds are rain on glass, a ladder creaking and a street lamp buzzing."
+    },
+    {
+      "id": "s12f-kebab",
+      "plate": "v3/s12f-kebab",
+      "chars": [],
+      "text": "The neon sign flickers: the whole word dims and catches twice, and the red disc buzzes and stutters before glowing steady again. The lettering keeps exactly its shape and spelling. Behind the steamed window the spit turns slowly and the man behind the counter wipes it once. Rain falls into the puddle in the foreground. Nobody speaks. The only sounds are neon buzzing and crackling, light rain on a wet road and a far-off extractor fan."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/S1c-b.png",
+ "made": "2026-10-25T19:34:51.129Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A prime-time adult animated sitcom background: flat colours and slightly wobbly black outlines, every colour laid on with thick visible oil brushstrokes. Seen from the gutter of a 1930s American street at night: in the near foreground a rusty iron storm drain with a few green banknotes caught in its bars. Behind it, tenement walls of soot-black brick rise steeply to a thin slit of deep navy sky holding a small, perfectly round, solid red moon. A police car's light, out of sight, throws red and blue across the brick. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "12fa996c-0daa-406a-b4d2-06835d3abe90"
+}

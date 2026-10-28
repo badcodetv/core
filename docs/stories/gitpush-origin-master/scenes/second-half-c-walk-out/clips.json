@@ -1,0 +1,144 @@
+{
+  "about": "Stage 3 clip picks for scene C (2026-10-21 autonomous run). Frame id -> chosen file (relative to media), in/out seconds inside that file, and what the stage 4 assembly needs to know. Every take, prompt and credit is in shots.md; the spend is in scripts/gpom/second-half-video/ending/ledger.json.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips",
+  "flow_project": "3625ff7d-f6fa-47cb-85a9-dc5f68548179 (video, 'Oct 21 - 23:26')",
+  "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1; 1280x720 24 fps; clips carry Omni's own audio (mute on the timeline)",
+  "credits": 162,
+  "clips": {
+    "C01": {
+      "file": "c01r1-t2.mp4",
+      "in": 0.0,
+      "out": 8.0,
+      "plate": "../stills/c01r1-a.jpg",
+      "talking": false,
+      "note": "Kai round 1 (bc1): new shot from inside the bunker past the wary faces (the old lady lit by the doorway, silent, turns her head away at ~7 s) to Maddie alone outside the doors, facing in. Beacon pulses (its glow lands on the doors). Maddie's 'Go on. I promise you'll be okay.' / 'You've got my word.' go over it with the beacon pulse in post; no lip-sync.",
+      "post": "slow push 100->106% eased (scene.json)",
+      "alt": "c01r1-t1.mp4 (reject: Omni flew a string of pennants up off the robot from ~0.5 s)",
+      "superseded": "C01-t1.mp4 (round 0: the lady straightening the bunting, 'Go on, then. You lead.')",
+      "file_round4": "c01r4-t1.mp4",
+      "plate_round4": "../stills/fix4/c01r4d-b.jpg",
+      "note_round4": "Ending round 2 (Kai reel at63): from inside the bunker through the SAME wide double doors as C01b/C02, mud outside and on the threshold; survivors in silhouette at the edges, the old woman lit on the right, Maddie in the mud facing in, beacon pulsing, bunting low. Locked.",
+      "file_round5": "c01r1-t2.mp4",
+      "note_round5": "C round 3 (Kai reel at83, 23 Oct): the round-4 reverse angle 'doesn't look anything like Maddy… the old shot looks much better'. Back to the round-1 shot c01r1-t2 (narrow doors, concrete step: it does NOT meet at63's wide-doors/mud note; option on the page)."
+    },
+    "C01b": {
+      "file": "c01br1-t1.mp4",
+      "in": 0.0,
+      "out": 6.0,
+      "plate": "../stills/c01br1-b.jpg",
+      "talking": false,
+      "note": "Kai round 1 (bc1): the first two (a man shading his eyes, a woman) edge out of the doors onto the concrete; more follow behind them from ~3 s; Maddie in the left foreground, beacon pulses at ~1 s, the torn bunting stays low on her wheels.",
+      "file_round2_kai": "c01br3-t1.mp4",
+      "plate_round2_kai": "../stills/fix3/c01br3-b.jpg",
+      "superseded_round2_kai": "c01br1-t1.mp4",
+      "note_round2_kai": "Kai round 2 (at291): mud outside the bunker, re-animated (6 s, 10 credits): they step out onto the mud, more follow from ~3 s, beacon pulses, bunting stays low.",
+      "file_round5": "c01br5-t1.mp4",
+      "plate_round5": "../stills/fix5/c01br5e-a.jpg",
+      "note_round5": "C round 3 (Kai reel at253: Maddie twice too big): the robot removed from c01br3-b, then the canonical bot (s3-bot-00b-a) added back knee-high beside the man's feet; re-animated 6 s. They step onto the mud, more follow, bunting low.",
+      "file_round6": "c01br6-t1.mp4",
+      "plate_round6": "../stills/fix6/c01br6-a.jpg",
+      "note_round6": "C round 6 (Kai at299, pick c01br6-a): no mud, scene B's trampled grass; they stride out, he shades his eyes, the crowd follows; Maddie stays knee-high, beacon pulses. 6 s, 10 credits."
+    },
+    "C02": {
+      "file": "C02-t4.mp4",
+      "in": 0.0,
+      "out": 7.0,
+      "plate": "../stills/C02-r2-a.jpg",
+      "talking": false,
+      "note": "Review round 1 re-roll: a light breeze, the cloth hangs limp, nothing rises from the robot. No pennant pole; Maddie leaves frame left at ~7 s.",
+      "alt": "C02-t1.mp4 (round-0 pick: Omni grew a pole of pennants on her rear from ~1.5 s); C02-t3 rejected (the bunting streamed across the whole foreground)",
+      "file_round5": "C02r5-t2.mp4",
+      "plate_round5": "../stills/fix5/C02r5e-b.jpg",
+      "note_round5": "C round 3 (Kai reel at440: Maddie twice too big): the robot removed from C02-r2-a (the plate reframed a little wider), the canonical bot added back knee-high just ahead of the line; re-animated 8 s. Omni drifts the camera forward-left (asked for locked).",
+      "alt_round5": "C02r5-t1.mp4 (reject: a small orange pennant on a pole grows behind the robot from ~4 s)"
+    },
+    "C03": {
+      "file": "C03f-chain.mp4",
+      "in": 0.0,
+      "out": 10.5,
+      "plate": "../stills/C03-f1-a.jpg",
+      "talking": false,
+      "chain": [
+        "C03f-1-t1.mp4",
+        "C03f-2-t1.mp4 (0-2.8 s only)"
+      ],
+      "joins": "last->first 2.19 against in-clip medians 2.74/2.96: OK; link 2 trimmed to its first 68 frames (the robot narrows towards the round-0 cart shape after ~3 s)",
+      "post": "move_keys.py: holds 1.5 s at 160% on Maddie alone (left third), then eases out to 100% by 9.6 s so the line of a hundred appears behind her",
+      "anchors": "frames/C03-1-t1-last.jpg = C03-chain 7.96 s; frames/C03-2-t1-last.jpg = C03-chain 15.92 s",
+      "superseded": "C03-chain.mp4 (round 0: 22 s, wrong cart body, verge scraps)"
+    },
+    "C04": {
+      "file": "c04r1-seat-t1.mp4",
+      "in": 0.0,
+      "out": 6.0,
+      "plate": "../stills/C04-r2-a.jpg",
+      "talking": {
+        "line": "c4-0-sandra",
+        "own_audio": "I hope you put that bloody seat down. (1.72-4.36)",
+        "mouth": "speech ~2.2-4.4 (opens 2.25 2.88 4.04; face lost for a few frames as she turns, '?' in the strip)",
+        "fit": "voice speech 2.36 s over ~2.2 s of mouth = x1.07"
+      },
+      "superseded": "C04-t2.mp4 (round 0: 'Did you put the seat down?')"
+    },
+    "C04b": {
+      "file": "c04r1-aliens-t1.mp4",
+      "in": 0.0,
+      "out": 7.3,
+      "plate": "../stills/C04-r2-a.jpg",
+      "talking": {
+        "line": "c4-2-sandra",
+        "own_audio": "It does matter. (0.70-1.78) / In 10,000 years, (2.54-3.52) / when the aliens dig up that bunker, (4.14-5.56) / they'll know it was you. (~6.16-6.96); then Omni ADDED 'You cannot...' at ~7.56-8.0: out at 7.3",
+        "mouth": "opens 1.50 2.42 4.17 5.08 5.29 6.67; HELD 0.46-1.00 (parted before 'It': check the strip), 3.67-3.96, 5.38-5.71",
+        "fit": "whole line: voice 7.76 s over ~6.3 s of mouth = x1.24, inside 1.3; place by phrase (voice phrases 0-1.74 / 2.46-3.82 / 4.22-6.16 / 6.58-7.76), the voice's own pauses are longer than hers"
+      },
+      "note": "One 8 s clip held the whole 17-word punchline: she turns to Derek and says it deadpan. 'She keeps talking until the very end' bought the length but also the invented tail; drop that clause next time."
+    },
+    "C05": {
+      "file": "c05r1-t1.mp4",
+      "in": 0.0,
+      "out": 8.0,
+      "plate": "../stills/C05-r2-a.jpg",
+      "talking": {
+        "line": "c4-1-derek",
+        "own_audio": "Doesn't bloody matter now love. (0.54-2.04) / We're not coming back are we? (3.50-5.16)",
+        "mouth": "phrase 1 ~0.5-2.1 (strip opens 0.12, so check the strip for a parted rest before 'Doesn't'), phrase 2 ~3.1-5.2; shut 5.2-8.0 (--face left)",
+        "fit": "phrase 1: voice 0-2.2 (whisper puts 'Doesn't' at 0.0-1.12, so the take likely has a quiet lead-in; measure the onset) over ~1.6 s = up to x1.375, check after the onset; phrase 2: voice 1.56 s over ~2.1 s of mouth (x0.75: voice shorter than mouth, fine, let it end early or tempo 0.85)",
+        "look": "6.0-8.0: he turns his head to her, a flat look, mouth shut. Cut: C05 0-5.3 (his line) -> C04b (her punchline) -> C05 ~5.8-8.0 (the look)"
+      },
+      "superseded": "C05-t2.mp4 (round 0: 'We're not coming back, love.' / 'Yes.')",
+      "file_round6": "c05r6-t1.mp4",
+      "plate_round6": "../stills/fix6/C05r6-b.jpg",
+      "note_round6": "C round 6 (Kai at896, pick C05r6-b): Derek level with Sandra. Talking: his mouth 0.21-2.04 (closure 0.92-1.12) / 4.62-6.04; Omni's own audio ~0.45 s ahead of the picture. Turns his head to her from ~6 s. 8 s, 12 credits."
+    },
+    "C06": {
+      "file": "c06r1-t1.mp4",
+      "in": 0.0,
+      "out": 8.0,
+      "plate": "../stills/c06r1-a.jpg",
+      "talking": false,
+      "post": "slow push 100->112% eased; beacon pulse on the AI's words (ffmpeg)",
+      "note": "Kai round 1 (bc5): the tipped trolley and the spilled blankets painted out of C06-f1-a (flow_edit_image, free) and re-animated. The old man stays standing on his stick (he straightens a little), the hundred stand still, the seam lights end to end from ~2 s. Derek's 'Bloody hell. Look at that building.' and Maddie's 'Yeah. He's been working on this one...' play over it (Derek among the backs: no lip-sync).",
+      "superseded": "C06-t2.mp4 (review round 1: spilled blankets by the tipped trolley)",
+      "file_round2_kai": "c06r3-t1.mp4",
+      "plate_round2_kai": "../stills/fix3/c06r3-a.jpg",
+      "superseded_round2_kai": "c06r1-t1.mp4",
+      "note_round2_kai": "Kai round 2: re-animated without the old man (8 s, 12). Nobody turns; the seam lights end to end from ~2 s. Omni drives Maddie a short way forward and left down the slope (~2-6 s), as if leading them: not asked for, Kai to judge."
+    },
+    "C07": {
+      "file": "C07-t3.mp4",
+      "in": 0.0,
+      "out": 8.0,
+      "plate": "../stills/C07-r2-b.jpg",
+      "talking": false,
+      "alt": "C07-t2.mp4 (near-identical)",
+      "note": "Maddie rolls left along the wall, turns back, and is on the step going in from ~5.5 s: lay 'Come in. Mind the step.' over 0-3 s so she enters on the invitation.",
+      "post": "glass_window.py: a soft power window darkens the black glass left of the doorway to 16% and desaturates it, so Maddie's reflection no longer reads as a second robot inside"
+    }
+  },
+  "credits_review1": 60,
+  "credits_round1_kai": 80,
+  "flow_projects_round1_kai": {
+    "stills": "aedd38f5-d58f-44d1-917c-bbdd43f288b4 ('Oct 22 - 19:02')",
+    "video": "one fresh project per shot: C06 fbe11850, C01 78425efe, C01b f1521855, C04 0895002e, C04b bf228e1b, C05 11386d32"
+  }
+}

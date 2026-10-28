@@ -1,0 +1,279 @@
+<title>__TITLE__</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--bg:#f4f1eb;--paper:#fffdf9;--fg:#1d1a16;--muted:#6f665c;--rule:#e0d8cc;--accent:#b4232c;--lady:#2f5d8a;--chip:#ece5d9;--soft:#f8f4ee;--pick:#1f7a4a;--pickbg:#e5f4e9;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14120f;--paper:#1c1915;--fg:#ece6dc;--muted:#a3998c;--rule:#342e27;--accent:#e2555c;--lady:#7fb0e0;--chip:#2a251f;--soft:#211d18;--pick:#5fd08f;--pickbg:#173322;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14120f;--paper:#1c1915;--fg:#ece6dc;--muted:#a3998c;--rule:#342e27;--accent:#e2555c;--lady:#7fb0e0;--chip:#2a251f;--soft:#211d18;--pick:#5fd08f;--pickbg:#173322;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 "Inter",system-ui,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{padding-block:32px 8px}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .3em;text-wrap:balance}
+.about{color:var(--muted);max-width:70ch;margin:0 0 1em}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:0 0 18px;padding:0;list-style:none;counter-reset:s}
+.how li{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:10px 12px 10px 40px;position:relative;font-size:.9rem;counter-increment:s}
+.how li::before{content:counter(s);position:absolute;left:12px;top:9px;width:20px;height:20px;border-radius:50%;background:var(--fg);color:var(--bg);font:700 12px/20px Inter,sans-serif;text-align:center}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--rule);display:flex;gap:4px;overflow-x:auto;padding-block:8px 0}
+.tabs a{flex:0 0 auto;text-decoration:none;color:var(--muted);padding:8px 14px 10px;border-radius:8px 8px 0 0;font-weight:600;font-size:.92rem;border:1px solid transparent;border-bottom:0}
+.tabs a small{display:block;font-weight:500;font-size:.75rem}
+.tabs a.on{color:var(--fg);background:var(--paper);border-color:var(--rule);margin-bottom:-1px}
+.tabs a .picked{color:var(--pick)}
+section.panel{padding-block:20px 60px}
+.band{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-bottom:6px}
+.eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h2{font-size:1.6rem;margin:0;line-height:1.2}
+.meta{color:var(--muted);font-size:.9rem}
+h3{font-size:1.05rem;margin:28px 0 8px}
+.lede{color:var(--muted);font-size:.9rem;margin:0 0 10px;max-width:70ch}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0}
+.seg button{font:inherit;cursor:pointer;text-align:left;background:var(--paper);color:var(--fg);border:1px solid var(--rule);border-radius:8px;padding:8px 12px;min-width:0}
+.seg button b{display:block;font-size:.95rem}
+.seg button span{font-size:.78rem;color:var(--muted)}
+.seg button.on{border-color:var(--fg);box-shadow:inset 0 0 0 1px var(--fg)}
+.seg button.picked{border-color:var(--pick);box-shadow:inset 0 0 0 1px var(--pick);background:var(--pickbg)}
+.seg button.cmp{margin-left:auto;align-self:center;font-size:.85rem;background:transparent}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:18px 20px;margin-top:10px}
+.card-head{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-start;justify-content:space-between}
+.card-head h4{margin:0;font-size:1.25rem}
+.bet{font-family:"Source Serif 4",Georgia,serif;font-style:italic;margin:6px 0 0;max-width:70ch}
+.pickbtn{font:600 .9rem Inter,sans-serif;cursor:pointer;border-radius:999px;padding:8px 16px;border:1px solid var(--pick);color:var(--pick);background:transparent;white-space:nowrap}
+.pickbtn.on{background:var(--pick);color:var(--paper)}
+.script{margin:14px 0 4px;border-top:1px solid var(--rule)}
+.ln{display:grid;grid-template-columns:5.5rem minmax(0,1fr) auto;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--rule);align-items:start}
+.who{font-weight:700;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;padding-top:3px}
+.who.maddie{color:var(--accent)}.who.lady{color:var(--lady)}.who.other{color:var(--muted)}
+.said{font:18px/1.5 "Source Serif 4",Georgia,serif}
+.said.dir{font-style:italic;color:var(--muted);font-size:16px}
+.stage{color:var(--muted);font-style:italic;font-size:.88em}
+.side{display:flex;gap:6px;align-items:center;justify-content:flex-end;flex-wrap:wrap;max-width:9rem}
+.secs{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.8rem}
+.chip{font:600 .7rem Inter,sans-serif;border:0;background:var(--chip);color:var(--fg);border-radius:4px;padding:2px 6px;cursor:pointer}
+.chip.plain{cursor:default;color:var(--muted)}
+.ln .slipw{grid-column:2/4}
+.addnote{font:500 .78rem Inter,sans-serif;background:none;border:0;color:var(--muted);cursor:pointer;padding:2px 0;text-decoration:underline dotted}
+.total{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted);padding-top:8px}
+.notes{margin:12px 0 0;padding-left:18px;font-size:.9rem;color:var(--muted)}
+.slipw{margin-top:8px}
+.slipw label{display:flex;justify-content:space-between;gap:8px;font-size:.78rem;color:var(--muted);margin-bottom:3px}
+.slipw label .ok{color:var(--pick)}
+textarea{width:100%;font:15px/1.45 Inter,sans-serif;color:var(--fg);background:var(--soft);border:1px solid var(--rule);border-radius:6px;padding:7px 9px;resize:vertical}
+textarea:focus{outline:2px solid var(--fg);outline-offset:-1px}
+.reply{margin-top:6px;border-left:3px solid var(--accent);padding:4px 10px;font-size:.88rem;background:var(--soft)}
+.reply b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.compare{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,1fr);gap:10px;overflow-x:auto;margin-top:10px;padding-bottom:6px}
+.compare .card{margin:0;padding:14px}
+.compare .ln{grid-template-columns:minmax(0,1fr);gap:2px}
+.compare .said{font-size:15.5px}
+.compare .side{justify-content:flex-start;max-width:none}
+.rank{background:var(--paper);border:1px solid var(--rule);border-radius:10px;margin-top:8px;overflow:hidden}
+.rank>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:2.4rem minmax(0,1fr) auto;gap:4px 12px;padding:12px 14px;align-items:start}
+.rank>summary::-webkit-details-marker{display:none}
+.rank .n{font:700 1.3rem/1 Inter,sans-serif;color:var(--muted);padding-top:2px}
+.rank .nm{font-weight:700}
+.rank .nm small{font-weight:500;color:var(--muted);margin-left:6px}
+.rank .verdict{grid-column:2/4;font-size:.9rem;color:var(--fg)}
+.rank .len{font-size:.82rem;color:var(--muted);white-space:nowrap}
+.rank .used{font-size:.72rem;font-weight:600;color:var(--pick);margin-left:6px}
+.rank[open]>summary{border-bottom:1px solid var(--rule);background:var(--soft)}
+.rank .body{padding:6px 18px 16px}
+.md table{border-collapse:collapse;width:100%;font-size:.9rem;margin:10px 0}
+.md th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);border-bottom:1px solid var(--rule);padding:5px 8px}
+.md td{border-top:1px solid var(--rule);padding:6px 8px;vertical-align:top}
+.md .tbl{overflow-x:auto}
+.md h2{font-size:1.05rem;margin:14px 0 6px}.md h3,.md h4{font-size:.95rem;margin:12px 0 4px;color:var(--accent)}
+.md p,.md li{max-width:72ch;font-size:.94rem}
+.md hr{border:0;border-top:1px solid var(--rule)}
+.approach{margin:10px 0;border:1px dashed var(--rule);border-radius:8px;padding:0 12px}
+.approach summary{cursor:pointer;font-size:.85rem;font-weight:600;padding:8px 0}
+.flash{animation:fl 1.6s}
+@keyframes fl{0%{box-shadow:0 0 0 3px var(--accent)}100%{box-shadow:0 0 0 0 transparent}}
+.q{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin-top:10px}
+.q p{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:1.05rem}
+.roundplan{background:var(--paper);border:1px solid var(--accent);border-radius:10px;padding:12px 16px;margin:0 0 16px}
+.muted{color:var(--muted)}
+@media (max-width:560px){.ln{grid-template-columns:minmax(0,1fr)}.ln .slipw{grid-column:1}.side{justify-content:flex-start;max-width:none}.seg button.cmp{margin-left:0}}
+</style>
+
+<div class="wrap">
+<header>
+  <h1 id="title"></h1>
+  <p class="about" id="about"></p>
+  <ol class="how">
+    <li><b>One tab per dialogue.</b> Each tab is one scene's conversation, nothing else.</li>
+    <li><b>Read what's there now, then the three drafts.</b> Pick one, or note single lines to mix and match.</li>
+    <li><b>A chip like <span class="chip plain">09</span></b> says which writer a line came from. Tap it to read that writer's whole version, ranked at the bottom.</li>
+  </ol>
+  <div id="roundplan"></div>
+  <div id="topSlip"></div>
+</header>
+<nav class="tabs" id="tabs"></nav>
+<main id="main"></main>
+</div>
+
+<script>
+const D = /*DATA*/;
+const $ = id => document.getElementById(id);
+const el = (t, c, txt) => { const e = document.createElement(t); if (c) e.className = c; if (txt != null) e.textContent = txt; return e };
+let db = null, me = null; const NOTES = {};
+const SHAPE = Object.fromEntries(D.shapes.map(s => [s.id, s]));
+
+// Speech with its [stage directions] greyed; text only, never HTML from the data.
+function said(text) {
+  const d = el('div', 'said');
+  for (const part of text.split(/(\[[^\]]+\])/)) { if (!part) continue; part.startsWith('[') ? d.append(el('span', 'stage', part)) : d.append(part) }
+  return d;
+}
+const whoClass = w => /maddie/i.test(w) ? 'maddie' : /lady/i.test(w) ? 'lady' : 'other';
+
+/* ---------- notes (same store and shape as the timeline pages: notes/<key>__<user>) ---------- */
+function reply(key, host) { const r = (D.replies || {})[key]; if (!r) return; const d = el('div', 'reply'); d.append(el('b', '', "Claude's read"), r); host.append(d) }
+const size = ta => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 2 + 'px' };
+function slip(key, label, host) {
+  const w = host || el('div', 'slipw'); w.classList.add('slipw');
+  const l = el('label'), st = el('span'), ta = el('textarea'); ta.id = 'n-' + key; l.htmlFor = ta.id; ta.rows = 1;
+  l.append(el('span', '', label), st); ta.value = NOTES[key] || ''; ta.disabled = !db; ta.placeholder = db ? '' : 'Sign in to leave notes';
+  let timer; ta.oninput = () => { size(ta); st.className = ''; st.textContent = '…'; clearTimeout(timer); timer = setTimeout(() => save(key, ta.value, st), 700) };
+  w.append(l, ta); reply(key, w); requestAnimationFrame(() => size(ta)); return w;
+}
+// A line's slip stays folded until asked for, unless it already holds a note or a reply.
+function lineSlip(key, host) {
+  if (NOTES[key] || (D.replies || {})[key]) { host.append(slip(key, 'Note on this line')); return }
+  const b = el('button', 'addnote', '+ note this line'); b.onclick = () => { const s = slip(key, 'Note on this line'); b.replaceWith(s); s.querySelector('textarea').focus() }; host.append(b);
+}
+async function save(key, text, st, extra) {
+  if (!db) return;
+  try {
+    const ref = db.doc('notes/' + key + '__' + me);
+    if (text.trim()) await ref.set({ key, note: text, by: me, at: Date.now(), ...(extra || {}) }); else await ref.delete();
+    NOTES[key] = text; if (st) { st.className = 'ok'; st.textContent = 'Saved' }
+  } catch (e) { if (st) st.textContent = 'Not saved: ' + (e && e.code || 'error') }
+}
+
+/* ---------- a script: the lines of one version ---------- */
+function script(d, v, compact) {
+  const box = el('div', 'script');
+  v.lines.forEach((ln, i) => {
+    const row = el('div', 'ln'), who = el('div', 'who ' + whoClass(ln.who), ln.who), s = said(ln.line);
+    if (/^(sfx|picture)/i.test(ln.who)) s.classList.add('dir');
+    const side = el('div', 'side');
+    for (const t of ln.tags || []) {
+      if (SHAPE[t]) { const c = el('button', 'chip', t); c.title = 'From writer ' + t + ' (' + SHAPE[t].name + '): open their version'; c.onclick = () => openShape(d.id, t); side.append(c) }
+      else side.append(el('span', 'chip plain', t === 'Kai' ? 'your line' : t === 'all' ? 'all' : t));
+    }
+    if (ln.s) side.append(el('span', 'secs', ln.s + ' s'));
+    row.append(who, s, side);
+    if (!compact && v.id) { const h = el('div'); h.className = 'slipw'; lineSlip(d.id + '-' + v.id + '-L' + (i + 1), h); row.append(h) }
+    box.append(row);
+  });
+  return box;
+}
+
+function versionCard(d, v, compact) {
+  const c = el('div', 'card'), head = el('div', 'card-head'), t = el('div');
+  if (v.id) {
+    t.append(el('div', 'eyebrow', 'Draft ' + v.id + ' · ' + (v.total || v.length)), el('h4', '', v.name));
+    if (v.bet) t.append(Object.assign(el('p', 'bet', 'The bet: ' + v.bet)));
+    head.append(t);
+    const pk = el('button', 'pickbtn' + (NOTES['pick-' + d.id] === v.id ? ' on' : ''), NOTES['pick-' + d.id] === v.id ? '✓ Picked' : 'Pick ' + v.id);
+    pk.disabled = !db; pk.onclick = async () => { const on = NOTES['pick-' + d.id] === v.id; await save('pick-' + d.id, on ? '' : v.id, null, { pick: true }); render() };
+    head.append(pk);
+  } else {
+    t.append(el('div', 'eyebrow', 'In the cut now'), el('h4', '', 'What the scene says today'));
+    t.append(el('p', 'lede', 'From ' + d.now_from + '. The starting point the drafts rewrite.'));
+    head.append(t);
+  }
+  c.append(head, script(d, v, compact));
+  if (v.id && !compact) {
+    if (v.notes && v.notes.length) { const ul = el('ul', 'notes'); for (const n of v.notes) ul.append(el('li', '', n)); c.append(ul) }
+    c.append(slip(d.id + '-' + v.id, 'Note on draft ' + v.id + ' as a whole'));
+  }
+  return c;
+}
+
+/* ---------- the ranked writers ---------- */
+function rankList(d) {
+  const wrap = el('div'), used = new Set(d.drafts.flatMap(v => v.lines.flatMap(l => l.tags || [])));
+  for (const r of d.ranking) {
+    const s = SHAPE[r.shape], det = el('details', 'rank'); det.id = d.id + '-s' + r.shape;
+    const sum = el('summary'), nm = el('div', 'nm', 'Writer ' + r.shape + ': ' + s.title);
+    if (used.has(r.shape)) nm.append(el('span', 'used', 'lines used in the drafts'));
+    sum.append(el('div', 'n', '#' + r.rank), nm, el('div', 'len', r.length), el('div', 'verdict', r.verdict));
+    const body = el('div', 'body md');
+    const ap = el('details', 'approach'); ap.append(el('summary', '', "This writer's approach (same for both dialogues)"));
+    const apb = el('div'); apb.innerHTML = s.intro_html; ap.append(apb);
+    const ver = el('div'); ver.innerHTML = d.shapes_html[r.shape];
+    body.append(ap, ver, slip(d.id + '-s' + r.shape, 'Note on writer ' + r.shape + "'s version (a line to steal?)"));
+    det.append(sum, body); wrap.append(det);
+  }
+  return wrap;
+}
+function openShape(did, sid) { const x = $(did + '-s' + sid); if (!x) return; x.open = true; x.scrollIntoView({ behavior: 'smooth', block: 'start' }); x.classList.remove('flash'); void x.offsetWidth; x.classList.add('flash') }
+
+/* ---------- panels ---------- */
+const VIEW = {};   // which version each dialogue shows: 'now' | draft id | 'compare'
+function dialoguePanel(d, n) {
+  const p = el('section', 'panel'), band = el('div', 'band');
+  band.append(el('span', 'eyebrow', 'Dialogue ' + n + ' of ' + D.dialogues.length), el('span', 'meta', d.where + ' · target ' + d.target));
+  p.append(band, el('h2', '', d.label), slip(d.id, 'Note on this dialogue as a whole'));
+  p.append(el('h3', '', 'Read it: now, and three drafts'));
+  const v = VIEW[d.id] || d.drafts[0].id, seg = el('div', 'seg');
+  const opt = (key, title, sub) => { const b = el('button', (v === key ? 'on' : '') + (NOTES['pick-' + d.id] === key ? ' picked' : '')); b.append(el('b', '', title), el('span', '', sub)); b.onclick = () => { VIEW[d.id] = key; render() }; return b };
+  seg.append(opt('now', 'Now', 'in the cut, ' + d.now.length + ' lines'));
+  for (const x of d.drafts) seg.append(opt(x.id, x.id + ' · ' + x.name, (x.total || x.length).replace(/\s*\(.*/, '') + (NOTES['pick-' + d.id] === x.id ? ' · picked' : '')));
+  const cmp = el('button', 'cmp' + (v === 'compare' ? ' on' : ''), v === 'compare' ? 'One at a time' : 'Side by side');
+  cmp.onclick = () => { VIEW[d.id] = v === 'compare' ? d.drafts[0].id : 'compare'; render() }; seg.append(cmp);
+  p.append(seg);
+  if (v === 'compare') { const g = el('div', 'compare'); g.append(versionCard(d, { lines: d.now }, true)); for (const x of d.drafts) g.append(versionCard(d, x, true)); p.append(g) }
+  else p.append(versionCard(d, v === 'now' ? { lines: d.now } : d.drafts.find(x => x.id === v)));
+  if (d.keeps) p.append(el('p', 'lede', d.keeps));
+  if (d.protected) {
+    p.append(el('h3', '', 'Your protected lines, per draft'));
+    const t = el('table'), tr = el('tr'); tr.append(el('th', '', 'Draft')); for (const c of d.protected.columns) tr.append(el('th', '', c)); t.append(tr);
+    for (const [k, vals] of Object.entries(d.protected.rows)) { const r = el('tr'); r.append(el('td', '', k)); for (const x of vals) r.append(el('td', '', x)); t.append(r) }
+    const w = el('div', 'md'), sc = el('div', 'tbl'); sc.append(t); w.append(sc); p.append(w);
+  }
+  p.append(el('h3', '', 'Where the drafts came from: ten writers, ranked for this dialogue'));
+  p.append(el('p', 'lede', "Each writer took one approach and wrote both dialogues. Ranked harshly, best first. Open one to read that writer's whole version of this dialogue."));
+  p.append(rankList(d));
+  return p;
+}
+function questionsPanel() {
+  const p = el('section', 'panel');
+  p.append(el('span', 'eyebrow', 'Both dialogues'), el('h2', '', 'Open questions for you'));
+  p.append(el('p', 'lede', 'The drafts lean on these. Answer in the box under each.'));
+  D.questions.forEach((q, i) => { const c = el('div', 'q'); c.append(el('p', '', (i + 1) + '. ' + q.text), slip(q.id, 'Your answer')); p.append(c) });
+  return p;
+}
+
+function current() { const h = location.hash.slice(1); return D.dialogues.some(d => d.id === h) || h === 'q' ? h : D.dialogues[0].id }
+function render() {
+  const cur = current(), tabs = $('tabs'); tabs.replaceChildren();
+  D.dialogues.forEach((d, i) => {
+    const a = el('a', cur === d.id ? 'on' : '', (i + 1) + ' · ' + d.label); a.href = '#' + d.id;
+    const sm = el('small', '', d.where.split(' · ')[0]); if (NOTES['pick-' + d.id]) sm.append(' · ', Object.assign(el('span', 'picked', 'picked ' + NOTES['pick-' + d.id])));
+    a.append(sm); tabs.append(a);
+  });
+  const qa = el('a', cur === 'q' ? 'on' : '', 'Open questions'); qa.href = '#q'; qa.append(el('small', '', D.questions.length + ' to answer')); tabs.append(qa);
+  const m = $('main'); m.replaceChildren(cur === 'q' ? questionsPanel() : dialoguePanel(D.dialogues.find(d => d.id === cur), D.dialogues.findIndex(d => d.id === cur) + 1));
+}
+addEventListener('hashchange', () => { render(); scrollTo({ top: $('tabs').offsetTop - 8 }) });
+
+$('title').textContent = D.title; $('about').textContent = D.about;
+if (D.plan && D.plan.length) {
+  const b = $('roundplan'); b.className = 'roundplan'; b.append(el('div', 'eyebrow', "Claude's read of your notes" + (D.round ? ' · round ' + D.round : '')));
+  for (const g of D.plan) { const ul = el('ul'); for (const i of g.items) ul.append(el('li', '', i)); b.append(el('h3', '', g.h), ul) }
+}
+render();
+(async () => {
+  if (typeof claude === 'undefined') return;
+  db = await claude.use('db'); const user = await claude.use('user');
+  if (!db || !user) { db = null; return }
+  me = await user.id();
+  const snap = await db.collection('notes').where('by', '==', me).get();
+  for (const d of snap.docs) { const v = d.data(); NOTES[v.key] = v.note || '' }
+  slip('top', 'Note on the whole page', $('topSlip'));
+  render();
+})();
+</script>

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/S1d-a.png",
+ "made": "2026-10-25T19:36:31.602Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A prime-time adult animated sitcom background: flat colours and slightly wobbly black outlines, every colour laid on with thick visible oil brushstrokes. A 1930s American city at night seen from across a black river, the skyline small and long: brick tenements, water towers, one tall factory chimney trailing grey smoke, a small, perfectly round, solid red moon low over the roofs. In the middle of the skyline one plain bakery building, its basement windows glowing emerald green, the only green in the city. A police car's light flickers red and blue on the far embankment. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c77c958d-19c4-417c-83d4-1283211c6808"
+}

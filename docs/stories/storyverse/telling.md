@@ -74,7 +74,9 @@ economics.
    policing themselves** — which is the modern condition, and it's the Galileo
    story's thesis arriving from a different direction (*"I don't mean to sound
    spiritual, but—"* is an abjuration nobody demanded).
-7. **Keynes says it out loud in 1946**, to the Royal Society, and nothing changes:
+7. **Keynes says it out loud in 1946**, to the Royal Society, and nothing changes
+   (strictly, his essay was read by his brother Geoffrey at the July 1946 Newton
+   tercentenary; Keynes had died that April):
    *"Newton was not the first of the age of reason. He was the last of the
    magicians."*
 8. **Land on the economics.** The punchline the Storyverse always had:

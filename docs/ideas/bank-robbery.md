@@ -33,6 +33,25 @@ The political point: while media runs on culture war, the real robbery is invisi
 money printing inflates assets, wages stagnate, wealth transfers upward, and the victims
 blame each other.
 
+## The 6 October 2026 changes
+
+Told in a session on 6 October 2026, and kept in the words used:
+
+- **The powerful are debasing our currency whilst stealing it, i.e. a bank robbery.**
+- **A Reservoir Dogs scenario with politicians and powerful media people, preparing for the bank
+  robbery.**
+- **Also like Ocean's Eleven, where they recruit them in the cheesy heist-movie way.**
+- **The left and the right need to be taken the piss out of equally.** They are squabbling over
+  immigration and other distraction methods, whilst they literally rob a bank.
+- **Also like the film Killing Zoe.**
+
+What this changes from the version above: the crew is now named as politicians and media people
+(not the Economist, the Regulator and a Leader in shadow), the left is in the crew as well as the
+right, and the squabble happens *inside the crew* while their hands do the job.
+
+**Developed the same day** into a story folder with a first storyboard:
+[`docs/stories/bank-robbery/`](../stories/bank-robbery/README.md).
+
 ## Format thoughts
 
 A full 18-panel beat sheet + character designs already exist in the old repo (visual rhyme

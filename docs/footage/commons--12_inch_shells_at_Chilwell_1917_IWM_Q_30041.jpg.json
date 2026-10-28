@@ -1,0 +1,104 @@
+{
+ "continue": {
+  "iistart": "2012-01-05T23:13:57Z",
+  "continue": "||"
+ },
+ "query": {
+  "pages": {
+   "17930077": {
+    "pageid": 17930077,
+    "ns": 6,
+    "title": "File:12 inch shells at Chilwell 1917 IWM Q 30041.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 11685436,
+      "width": 5306,
+      "height": 3962,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/12_inch_shells_at_Chilwell_1917_IWM_Q_30041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:12_inch_shells_at_Chilwell_1917_IWM_Q_30041.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=17930077",
+      "sha1": "1f24425e80d0d027c458b3b47d9585baa2bffbda",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2017-10-10 00:29:12",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "12 inch shells at Chilwell 1917 IWM Q 30041",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Horace Nicholls|BL 12 inch railway howitzer|BL 12 inch howitzer|National Shell Filling Factory, Chilwell|Images uploaded by Fæ|Artworks without Wikidata item|UK Government artistic works|PD-scan (PD-UKGov)|Nottinghamshire in the 1910s|Women at work in the United Kingdom in World War I|Photographs from the Imperial War Museum|Black and white photographs of World War I in the United Kingdom|Imperial War Museum First World War Women's War Work Collection photographs|Imperial War Museum Photograph Archive Collection|Women manufacturing artillery ammunition in World War I|Manufacture of artillery ammunition in World War I",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Artist": {
+        "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Horace_Nicholls\" class=\"extiw\" title=\"w:en:Horace Nicholls\"><span title=\"British photographer (1867–1941)\">Horace Nicholls</span></a></bdi>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<i>Munitions Production on the Home Front, 1914-1918</i><br>\nA general view of a warehouse containing 12\" shells at the National Filling Factory, Chilwell. A soldier checks a shell and writes in a notebook, whilst a woman war worker tightens the top of a shell.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "July 1917 (First World War)",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://media.iwm.org.uk/iwm/mediaLib//364/media-364944/large.jpg\">http://media.iwm.org.uk/iwm/mediaLib//364/media-364944/large.jpg</a><div style=\"margin:0.5em\"></div>\n<div class=\"center centered\" style=\"width:auto\">\n<table style=\"width:100%; border:1px solid var(--border-color-notice,black); background:var(--background-color-neutral,#E0E0E0); padding:0; text-align:center; color:inherit\">\n<tbody><tr>\n<td align=\"left\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:IWMLondonThumbnail.jpg\" class=\"mw-file-description\" title=\"Image of the exterior main entrance to the Imperial War Museum in London.\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/c/c3/IWMLondonThumbnail.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled\" decoding=\"async\" loading=\"lazy\" width=\"80\" height=\"54\" class=\"mw-file-element\" data-file-width=\"80\" data-file-height=\"54\"></a></span>\n</td>\n<td>This photograph <a rel=\"nofollow\" class=\"external text\" href=\"https://www.iwm.org.uk/collections/item/object/205196456\">Q 30041</a> comes from the collections of the <a rel=\"nofollow\" class=\"external text\" href=\"https://www.iwm.org.uk\">Imperial War Museums</a>.\n</td>\n<td align=\"right\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom_(3-5).svg\" class=\"mw-file-description\" title=\"Flag of the United Kingdom.\"><img alt=\"\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/120px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"80\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/250px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1000\" data-file-height=\"600\"></a></span>\n</td></tr></tbody></table></div>",
+        "source": "commons-desc-page"
+       },
+       "Permission": {
+        "value": "This image was created and released by the Imperial War Museum on the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.iwm.org.uk/corporate/privacy-copyright/licence\">IWM Non Commercial Licence</a>. Photographs taken, or artworks created, by a member of the forces during their active service duties are covered by Crown Copyright provisions. Faithful reproductions may be reused under that licence, which is considered expired 50 years after their creation.",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

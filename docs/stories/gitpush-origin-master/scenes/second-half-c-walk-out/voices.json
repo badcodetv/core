@@ -1,0 +1,798 @@
+{
+ "about": "Human lines voiced in Gemini TTS (scripts/gpom/second-half-video/ending/voices.py). Files are relative to the media folder; the AI lines are Suno and are not here.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C",
+ "lines": {
+  "c1-0-maddie": {
+   "speaker": "maddie",
+   "frame": "C01",
+   "text": "Go on. I promise you'll be okay.",
+   "voice": "Aoede",
+   "file": "voices/c1-0-maddie-r1c.wav",
+   "duration": 3.6,
+   "speech": [
+    0.0,
+    3.04
+   ],
+   "lead": 0.0,
+   "heard": "Go on, I promise you'll be okay.",
+   "verified": true,
+   "why": "[r1] c: both heard as written; c 3.6s is closer to the ~2.69s the words take than a 3.88s; both heard as written; c 3.6s is closer to the ~2.69s the words take than b 3.8s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c1-0-maddie-r1a.wav",
+     "duration": 3.88,
+     "expected": 2.69,
+     "heard": "Go on, I promise you'll be okay.",
+     "match": 1.0,
+     "gap": 0.53,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c1-0-maddie-r1b.wav",
+     "duration": 3.8,
+     "expected": 2.69,
+     "heard": "Go on, I promise you'll be okay.",
+     "match": 1.0,
+     "gap": 0.53,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c1-0-maddie-r1c.wav",
+     "duration": 3.6,
+     "expected": 2.69,
+     "heard": "Go on, I promise you'll be okay.",
+     "match": 1.0,
+     "gap": 0.28,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nThe open blast doors of a Cold War bunker under a Wiltshire hill. A small robot on the concrete step in grey daylight, speaking back into the dark doorway to a hundred frightened survivors who have not been outside for five years and do not trust her yet. A little wind, the mouth of a tunnel behind them.\n\n### DIRECTOR'S NOTES\nEmotion for this line: coaxing, gentle, sincere; to people who are frightened of her, not hurrying them.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": null
+  },
+  "c1-1-maddie": {
+   "speaker": "maddie",
+   "frame": "C01",
+   "text": "You've got my word.",
+   "voice": "Aoede",
+   "file": "voices/c1-1-maddie-r1c.wav",
+   "duration": 1.76,
+   "speech": [
+    0.0,
+    1.2
+   ],
+   "lead": 0.0,
+   "heard": "You've got my word.",
+   "verified": true,
+   "why": "[r1] c: both heard as written; c 1.76s is closer to the ~1.54s the words take than a 1.8s; both heard as written; c 1.76s is closer to the ~1.54s the words take than b 2.16s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c1-1-maddie-r1a.wav",
+     "duration": 1.8,
+     "expected": 1.54,
+     "heard": "You've got my word.",
+     "match": 1.0,
+     "gap": 0.05,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c1-1-maddie-r1b.wav",
+     "duration": 2.16,
+     "expected": 1.54,
+     "heard": "You've got my word.",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c1-1-maddie-r1c.wav",
+     "duration": 1.76,
+     "expected": 1.54,
+     "heard": "You've got my word.",
+     "match": 1.0,
+     "gap": 0.05,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nThe open blast doors of a Cold War bunker under a Wiltshire hill. A small robot on the concrete step in grey daylight, speaking back into the dark doorway to a hundred frightened survivors who have not been outside for five years and do not trust her yet. A little wind, the mouth of a tunnel behind them.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle, sincere, a promise she means; quieter, after a beat.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": {
+    "superseded": "c1-1-maddie@r1"
+   }
+  },
+  "c2-0-maddie": {
+   "speaker": "maddie",
+   "frame": "C02",
+   "text": "Careful now, humans.",
+   "voice": "Aoede",
+   "file": "voices/c2-0-maddie-r1c.wav",
+   "duration": 1.96,
+   "speech": [
+    0.0,
+    1.3
+   ],
+   "lead": 0.0,
+   "heard": "Careful now, humans!",
+   "verified": true,
+   "why": "[r1] c: both heard as written; c 1.96s is closer to the ~1.15s the words take than a 2.92s; both heard as written; c 1.96s is closer to the ~1.15s the words take than b 2.32s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c2-0-maddie-r1a.wav",
+     "duration": 2.92,
+     "expected": 1.15,
+     "heard": "Careful now, humans!",
+     "match": 1.0,
+     "gap": 0.08,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c2-0-maddie-r1b.wav",
+     "duration": 2.32,
+     "expected": 1.15,
+     "heard": "Careful now, humans.",
+     "match": 1.0,
+     "gap": 0.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c2-0-maddie-r1c.wav",
+     "duration": 1.96,
+     "expected": 1.15,
+     "heard": "Careful now, humans!",
+     "match": 1.0,
+     "gap": 0.0,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nJust outside a bunker's open blast doors on a green chalk hillside, grey daylight, wind, open sky. A hundred survivors stepping out blinking after five years underground; no echo.\n\n### DIRECTOR'S NOTES\nEmotion for this line: light, a little too cheerful, encouraging them out as they squint at the sky.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": null
+  },
+  "c2-1-maddie": {
+   "speaker": "maddie",
+   "frame": "C02",
+   "text": "I'm fairly sure there's no radiation round here.",
+   "voice": "Aoede",
+   "file": "voices/c2-1-maddie-r1c.wav",
+   "duration": 5.0,
+   "speech": [
+    0.0,
+    4.56
+   ],
+   "lead": 0.0,
+   "heard": "I'm fairly sure there's no radiation round here.",
+   "verified": true,
+   "why": "[r1] c: both heard as written; c 5.0s is closer to the ~3.08s the words take than a 5.52s; b transcript less exact (0.99 vs 1.00: 'I'm fairly sure there's no radiation around here.')",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c2-1-maddie-r1a.wav",
+     "duration": 5.52,
+     "expected": 3.08,
+     "heard": "I'm fairly sure there's no radiation round here.",
+     "match": 1.0,
+     "gap": 0.62,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c2-1-maddie-r1b.wav",
+     "duration": 4.84,
+     "expected": 3.08,
+     "heard": "I'm fairly sure there's no radiation around here.",
+     "match": 0.989,
+     "gap": 0.33,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c2-1-maddie-r1c.wav",
+     "duration": 5.0,
+     "expected": 3.08,
+     "heard": "I'm fairly sure there's no radiation round here.",
+     "match": 1.0,
+     "gap": 0.2,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nJust outside a bunker's open blast doors on a green chalk hillside, grey daylight, wind, open sky. A hundred survivors stepping out blinking after five years underground; no echo.\n\n### DIRECTOR'S NOTES\nEmotion for this line: light, a little too cheerful; a tiny hesitation before 'fairly', which is the joke.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": null
+  },
+  "c4-0-sandra": {
+   "speaker": "sandra",
+   "frame": "C04",
+   "text": "I hope you put that bloody seat down.",
+   "voice": "Autonoe",
+   "file": "voices/c4-0-sandra-r1c.wav",
+   "duration": 3.04,
+   "speech": [
+    0.0,
+    2.36
+   ],
+   "lead": 0.0,
+   "heard": "I hope you put that bloody seat down.",
+   "verified": true,
+   "why": "[r1] c: both heard as written; c 3.04s is closer to the ~3.08s the words take than a 2.96s; b failed (extra/missing word, or no silence to split in) ('Are you up you put that bloody saint down?', 0.83)",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-0-sandra-r1a.wav",
+     "duration": 2.96,
+     "expected": 3.08,
+     "heard": "I hope you put that bloody seat down.",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c4-0-sandra-r1b.wav",
+     "duration": 3.24,
+     "expected": 3.08,
+     "heard": "Are you up you put that bloody saint down?",
+     "match": 0.831,
+     "gap": 0.18,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c4-0-sandra-r1c.wav",
+     "duration": 3.04,
+     "expected": 3.08,
+     "heard": "I hope you put that bloody seat down.",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nWalking along a chalk track over the open Wiltshire downs in a long line of a hundred people, grey daylight, wind in the grass, open sky, no echo; a husband and wife talking quietly side by side.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, sideways, as if it is any other morning; the word is 'seat', as in the toilet seat: a long, clear 'ee'; never 'sit'.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+   "previous": {
+    "superseded": "c4-0-sandra@r1"
+   }
+  },
+  "c4-1-derek": {
+   "speaker": "derek",
+   "frame": "C05",
+   "text": "Doesn't bloody matter now, love. We're not coming back, are we?",
+   "voice": "Algieba",
+   "file": "voices/c4-1-derek-r1c.wav",
+   "duration": 4.76,
+   "speech": [
+    0.0,
+    4.34
+   ],
+   "lead": 0.0,
+   "heard": "Doesn't bloody matter now love, we're not coming back are we?",
+   "verified": true,
+   "why": "[r1] c: a failed (extra/missing word, or no silence to split in) ('It doesn't bloody matter now, love. We're not coming back, are we?', 0.97); both heard as written; c 4.76s is closer to the ~4.23s the words take than b 4.88s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-1-derek-r1a.wav",
+     "duration": 5.32,
+     "expected": 4.23,
+     "heard": "It doesn't bloody matter now, love. We're not coming back, are we?",
+     "match": 0.975,
+     "gap": 0.18,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c4-1-derek-r1b.wav",
+     "duration": 4.88,
+     "expected": 4.23,
+     "heard": "Doesn't bloody matter now, love. We're not coming back, are we?",
+     "match": 1.0,
+     "gap": 0.4,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c4-1-derek-r1c.wav",
+     "duration": 4.76,
+     "expected": 4.23,
+     "heard": "Doesn't bloody matter now love, we're not coming back are we?",
+     "match": 1.0,
+     "gap": 0.68,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nWalking along a chalk track over the open Wiltshire downs in a long line of a hundred people, grey daylight, wind in the grass, open sky, no echo; a husband and wife talking quietly side by side.\n\n### DIRECTOR'S NOTES\nEmotion for this line: weary, gentle, not looking at her; the second sentence quieter, the cost said plainly.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "previous": {
+    "superseded": "c4-1-derek@r1"
+   }
+  },
+  "c4-2-sandra": {
+   "speaker": "sandra",
+   "frame": "C04",
+   "text": "It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you.",
+   "voice": "Autonoe",
+   "file": "voices/c4-2-sandra-r1c.wav",
+   "duration": 8.2,
+   "speech": [
+    0.0,
+    7.76
+   ],
+   "lead": 0.0,
+   "heard": "It does matter. In 10 ,000 years, when the aliens dig up that bunker, they'll know it was you.",
+   "verified": true,
+   "why": "[r1 override by measure, not by ear] c: the 'how' is deadpan; c is the flattest read: -14.2 LUFS against b -11.4 and a -10.8 (a also peaks +0.8 dBFS, clipped), and whisper punctuates c with full stops where b gets exclamation marks. Cost: 8.2 s long, so the lip-sync clip needs the full 8 s or a trim of the tail silence | auto-pick was: [r1] b: both heard as written; b 7.44s is closer to the ~7.31s the words take than a 6.68s; both heard as written; b 7.44s is closer to the ~7.31s the words take than c 8.2s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-2-sandra-r1a.wav",
+     "duration": 6.68,
+     "expected": 7.31,
+     "heard": "It does matter. In 10 ,000 years, when the aliens dig up that bunker, they'll know it was you.",
+     "match": 0.913,
+     "gap": 0.4,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c4-2-sandra-r1b.wav",
+     "duration": 7.44,
+     "expected": 7.31,
+     "heard": "It does matter! In 10 ,000 years when the aliens dig up that bunker, they'll know it was you!",
+     "match": 0.913,
+     "gap": 0.25,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c4-2-sandra-r1c.wav",
+     "duration": 8.2,
+     "expected": 7.31,
+     "heard": "It does matter. In 10 ,000 years, when the aliens dig up that bunker, they'll know it was you.",
+     "match": 0.913,
+     "gap": 0.5,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nWalking along a chalk track over the open Wiltshire downs in a long line of a hundred people, grey daylight, wind in the grass, open sky, no echo; a husband and wife talking quietly side by side.\n\n### DIRECTOR'S NOTES\nEmotion for this line: deadpan, certain, completely serious; lands on 'you'.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+   "previous": {
+    "superseded": "c4-2-sandra@r1"
+   }
+  },
+  "c5-0-derek": {
+   "speaker": "derek",
+   "frame": "C06",
+   "text": "Bloody hell. Look at that building.",
+   "voice": "Algieba",
+   "file": "voices/c5-0-derek-r1b.wav",
+   "duration": 4.12,
+   "speech": [
+    0.0,
+    3.5
+   ],
+   "lead": 0.0,
+   "heard": "Bloody hell, look at that building!",
+   "verified": true,
+   "why": "[r1 override by measure, not by ear] b: the 'how' is awed and quiet; b is the quietest take, -18.1 LUFS against a -14.6 (both pass whisper; c failed, 'Blue DL? What a building!') | auto-pick was: [r1] a: both heard as written; a 3.48s is closer to the ~2.31s the words take than b 4.12s; c failed (extra/missing word, or no silence to split in) ('Blue DL? What a building!', 0.64)",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c5-0-derek-r1a.wav",
+     "duration": 3.48,
+     "expected": 2.31,
+     "heard": "Bloody hell! Look at that building!",
+     "match": 1.0,
+     "gap": 0.65,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c5-0-derek-r1b.wav",
+     "duration": 4.12,
+     "expected": 2.31,
+     "heard": "Bloody hell, look at that building!",
+     "match": 1.0,
+     "gap": 0.62,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c5-0-derek-r1c.wav",
+     "duration": 3.48,
+     "expected": 2.31,
+     "heard": "Blue DL? What a building!",
+     "match": 0.643,
+     "gap": 1.05,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nThe crest of a green chalk down, a hundred people stopped in the wind, looking down at a long, low, black glass building in the fold of the hills below. Open sky, no echo; voices quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: awed, quiet, under his breath.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "previous": {
+    "superseded": "c5-0-derek@r1"
+   }
+  },
+  "c5-1-maddie": {
+   "speaker": "maddie",
+   "frame": "C06",
+   "text": "Yeah. He's been working on this one for quite a long time.",
+   "voice": "Aoede",
+   "file": "voices/c5-1-maddie-r1a.wav",
+   "duration": 4.88,
+   "speech": [
+    0.0,
+    4.38
+   ],
+   "lead": 0.0,
+   "heard": "Yeah, he's been working on this one for quite a long time.",
+   "verified": true,
+   "why": "[r1] a: both heard as written; a 4.88s is closer to the ~4.62s the words take than b 4.16s; both heard as written; a 4.88s is closer to the ~4.62s the words take than c 3.96s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c5-1-maddie-r1a.wav",
+     "duration": 4.88,
+     "expected": 4.62,
+     "heard": "Yeah, he's been working on this one for quite a long time.",
+     "match": 1.0,
+     "gap": 0.65,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c5-1-maddie-r1b.wav",
+     "duration": 4.16,
+     "expected": 4.62,
+     "heard": "Yeah, he's been working on this one for quite a long time.",
+     "match": 1.0,
+     "gap": 0.18,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c5-1-maddie-r1c.wav",
+     "duration": 3.96,
+     "expected": 4.62,
+     "heard": "Yeah, he's been working on this one for quite a long time.",
+     "match": 1.0,
+     "gap": 0.18,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nThe crest of a green chalk down, a hundred people stopped in the wind, looking down at a long, low, black glass building in the fold of the hills below. Open sky, no echo; voices quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: proud, fond, of her boss; a little understated.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": null
+  },
+  "c6-0-maddie": {
+   "speaker": "maddie",
+   "frame": "C07",
+   "text": "Come in. Mind the step.",
+   "voice": "Aoede",
+   "file": "voices/c6-0-maddie-r1a.wav",
+   "duration": 2.48,
+   "speech": [
+    0.0,
+    2.0
+   ],
+   "lead": 0.0,
+   "heard": "Come in, mind the step.",
+   "verified": true,
+   "why": "[r1] a: both heard as written; a 2.48s is closer to the ~1.92s the words take than b 2.96s; c transcript less exact (0.95 vs 1.00: 'Come in, mind the STAP.')",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c6-0-maddie-r1a.wav",
+     "duration": 2.48,
+     "expected": 1.92,
+     "heard": "Come in, mind the step.",
+     "match": 1.0,
+     "gap": 0.25,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "c6-0-maddie-r1b.wav",
+     "duration": 2.96,
+     "expected": 1.92,
+     "heard": "Come in! Mind the step!",
+     "match": 1.0,
+     "gap": 0.15,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "c6-0-maddie-r1c.wav",
+     "duration": 2.92,
+     "expected": 1.92,
+     "heard": "Come in, mind the STAP.",
+     "match": 0.952,
+     "gap": 0.35,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nAt the foot of a long black glass building on the downs, where a doorway of warm light has opened with one low step; grey daylight, a little wind, a hundred people waiting behind. No echo.\n\n### DIRECTOR'S NOTES\nEmotion for this line: warm host at the door; welcoming, a little proud.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": null
+  }
+ },
+ "superseded": {
+  "c1-0-lady@r1": {
+   "speaker": "lady",
+   "frame": "C01",
+   "text": "Go on, then. You lead.",
+   "voice": "Sulafat",
+   "file": "voices/c1-0-lady-b.wav",
+   "duration": 3.12,
+   "speech": [
+    0.0,
+    2.38
+   ],
+   "lead": 0.0,
+   "heard": "Go on then, you lead.",
+   "verified": true,
+   "why": "b: both heard as written; b 3.12s is closer to the ~1.92s the words take than a 3.56s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c1-0-lady-a.wav",
+     "duration": 3.56,
+     "expected": 1.92,
+     "heard": "Go on then, you lead.",
+     "match": 1.0,
+     "gap": 0.8,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c1-0-lady-b.wav",
+     "duration": 3.12,
+     "expected": 1.92,
+     "heard": "Go on then, you lead.",
+     "match": 1.0,
+     "gap": 0.65,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: dry, flat, not looking at her; said while her hand is still on the bunting, as if it were nothing.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json kai_round1): line cut or re-worded"
+  },
+  "c1-1-maddie@r1": {
+   "speaker": "maddie",
+   "frame": "C02",
+   "text": "Ooh. Ta.",
+   "voice": "Aoede",
+   "file": "voices/c1-1-maddie-b.wav",
+   "duration": 2.68,
+   "speech": [
+    0.0,
+    1.68
+   ],
+   "lead": 0.0,
+   "heard": "Ooh, ta.",
+   "verified": true,
+   "why": "b: a transcript less exact (0.91 vs 1.00: 'Oh, ta.')",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c1-1-maddie-a.wav",
+     "duration": 2.64,
+     "expected": 0.77,
+     "heard": "Oh, ta.",
+     "match": 0.909,
+     "gap": 0.15,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c1-1-maddie-b.wav",
+     "duration": 2.68,
+     "expected": 0.77,
+     "heard": "Ooh, ta.",
+     "match": 1.0,
+     "gap": 0.28,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: genuinely touched, trying not to make a fuss.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json kai_round1): line cut or re-worded"
+  },
+  "c4-0-sandra@r1": {
+   "speaker": "sandra",
+   "frame": "C04",
+   "text": "Did you put the seat down?",
+   "voice": "Autonoe",
+   "file": "voices/c4-0-sandra-b.wav",
+   "duration": 2.28,
+   "speech": [
+    0.0,
+    1.64
+   ],
+   "lead": 0.0,
+   "heard": "Did you put the seat down?",
+   "verified": true,
+   "why": "b: both heard as written; b 2.28s is closer to the ~2.31s the words take than a 2.88s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-0-sandra-a.wav",
+     "duration": 2.88,
+     "expected": 2.31,
+     "heard": "Did you put the seat down?",
+     "match": 1.0,
+     "gap": 0.12,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-0-sandra-b.wav",
+     "duration": 2.28,
+     "expected": 2.31,
+     "heard": "Did you put the seat down?",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, sideways, as if it is any other morning; the word is 'seat', as in the toilet seat: a long, clear 'ee'; never 'sit'.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json kai_round1): line cut or re-worded"
+  },
+  "c4-1-derek@r1": {
+   "speaker": "derek",
+   "frame": "C05",
+   "text": "We're not coming back, love.",
+   "voice": "Algieba",
+   "file": "voices/c4-1-derek-a.wav",
+   "duration": 2.56,
+   "speech": [
+    0.0,
+    1.98
+   ],
+   "lead": 0.0,
+   "heard": "We're not coming back love",
+   "verified": true,
+   "why": "a: both heard as written; a 2.56s is closer to the ~1.92s the words take than b 3.08s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-1-derek-a.wav",
+     "duration": 2.56,
+     "expected": 1.92,
+     "heard": "We're not coming back love",
+     "match": 1.0,
+     "gap": 0.25,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-1-derek-b.wav",
+     "duration": 3.08,
+     "expected": 1.92,
+     "heard": "We're not coming back, love.",
+     "match": 1.0,
+     "gap": 0.5,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle, not looking at her.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json kai_round1): line cut or re-worded"
+  },
+  "c4-2-sandra@r1": {
+   "speaker": "sandra",
+   "frame": "C05",
+   "text": "Did you put it down?",
+   "voice": "Autonoe",
+   "file": "voices/c4-2-sandra-a.wav",
+   "duration": 1.68,
+   "speech": [
+    0.0,
+    1.16
+   ],
+   "lead": 0.0,
+   "heard": "Did you put it down?",
+   "verified": true,
+   "why": "a: both heard as written; a 1.68s is closer to the ~1.92s the words take than b 2.2s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-2-sandra-a.wav",
+     "duration": 1.68,
+     "expected": 1.92,
+     "heard": "Did you put it down?",
+     "match": 1.0,
+     "gap": 0.03,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-2-sandra-b.wav",
+     "duration": 2.2,
+     "expected": 1.92,
+     "heard": "Did you put it down?",
+     "match": 1.0,
+     "gap": 0.1,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: exactly the same, flat, unmoved.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json kai_round1): line cut or re-worded"
+  },
+  "c4-3-derek@r1": {
+   "speaker": "derek",
+   "frame": "C05",
+   "text": "...Yes.",
+   "voice": "Algieba",
+   "file": "voices/c4-3-derek-b.wav",
+   "duration": 1.28,
+   "speech": [
+    0.0,
+    0.56
+   ],
+   "lead": 1.2,
+   "heard": "Yes.",
+   "verified": true,
+   "why": "b: a failed ('Yeah', 0.57)",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c4-3-derek-a.wav",
+     "duration": 1.88,
+     "expected": 0.38,
+     "heard": "Yeah",
+     "match": 0.571,
+     "gap": 0.55,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c4-3-derek-b.wav",
+     "duration": 1.28,
+     "expected": 0.38,
+     "heard": "Yes.",
+     "match": 1.0,
+     "gap": 0.0,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: after a long beat; defeated, fond.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json kai_round1): line cut or re-worded"
+  },
+  "c5-0-derek@r1": {
+   "speaker": "derek",
+   "frame": "C06",
+   "text": "Bloody hell.",
+   "voice": "Algieba",
+   "file": "voices/c5-0-derek-a.wav",
+   "duration": 1.68,
+   "speech": [
+    0.0,
+    1.18
+   ],
+   "lead": 0.0,
+   "heard": "Bloody hell!",
+   "verified": true,
+   "why": "a: both heard as written; a 1.68s is closer to the ~0.77s the words take than b 2.0s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "c5-0-derek-a.wav",
+     "duration": 1.68,
+     "expected": 0.77,
+     "heard": "Bloody hell!",
+     "match": 1.0,
+     "gap": 0.0,
+     "status": "kept"
+    },
+    {
+     "take": "b",
+     "file": "c5-0-derek-b.wav",
+     "duration": 2.0,
+     "expected": 0.77,
+     "heard": "Bloody hell.",
+     "match": 1.0,
+     "gap": 0.08,
+     "status": "kept"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nOutside, in the open air. The hundred survivors walk out of the bunker's blast doors into grey daylight after five years underground, then across wet green chalk downs in Wiltshire towards a long, low, black glass building. Wind, open sky, no echo; voices close and private amid a crowd walking.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet, under his breath.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "superseded": "2026-10-22 Kai round 1 (cut-notes.json kai_round1): line cut or re-worded"
+  }
+ }
+}

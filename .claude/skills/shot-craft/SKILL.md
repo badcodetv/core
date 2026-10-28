@@ -21,7 +21,7 @@ Three modes, one knowledge base:
 | --- | --- |
 | How do I phrase this so the generator obeys? | `flow-prompt` |
 | Which tool — Flow, ffmpeg, Premiere, archive footage? | `video-fx` |
-| What does a BadCode *panel* look like? | `badcode-art-direction` |
+| What does a BadCode *still* look like? | `new-image` |
 | What does a BadCode *brand image* look like? | `new-image` |
 | What is this story's cast, style and canon? | `docs/stories/<story>/prompts.md` |
 | Does the **story** grip? Is the beat earning its place? | `story-craft` |
@@ -51,6 +51,14 @@ Raw research: `design/research/2026-08-26-cinematography/`. It is research, not 
 toolkit lowered several of its grades. Never quote a brief over the toolkit.
 
 ---
+
+## Before the spec is final: can the generator do it?
+
+This skill is tool-agnostic, but a spec the tool cannot shoot is not a spec. Before handing over, check the action
+against the list at the top of [`docs/google-flow/README.md`](../../../docs/google-flow/README.md) (masks going on,
+props used on surfaces, balance poses, small moving faces, four or more movers). If the action is on it, redesign
+the shot so the hard part has already happened or is out of frame. Also vary the recipe: a low lens with a blurred
+foreground and one lamp, used on every shot, is one angle. Added 2026-10-09.
 
 ## The three gates
 

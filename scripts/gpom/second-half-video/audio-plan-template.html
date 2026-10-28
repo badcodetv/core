@@ -1,0 +1,171 @@
+<title>Second Half Sound Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,1,400;8..60,0,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an edit decision list you can read. A proportional reel strip with score bands under it, then one row per shot (timecode | frame | words and sound), then the voice casting sheet. */
+:root {
+  --bg: #0e1012; --panel: #16191c; --line: #2b3035; --fg: #e5e6e4; --dim: #8f969b;
+  --hud: #d6453b;
+  --v-narrator: #f0ede6; --v-bot: #e0a24a; --v-ai: #8fb3d9; --v-woman: #d98fb0; --v-man: #8fd9a8; --v-lady: #c7b08f; --v-crowd: #a99fd9;
+  --c-S1: #4a5560; --c-R: #7a6a4a; --c-S2: #b8423a; --c-S3: #5d6f8a; --c-S4: #c9a45a; --c-S5: #6d6f72; --c-none: transparent;
+  --display: "Archivo Narrow", "Arial Narrow", sans-serif;
+  --body: "Source Serif 4", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #f0f1ee; --panel: #fbfbf9; --line: #d4d7d3; --fg: #16181a; --dim: #5e656a; --hud: #b3271e;
+  --v-narrator: #16181a; --v-bot: #9a5d0c; --v-ai: #2f5f8f; --v-woman: #9a3a66; --v-man: #2c7a4a; --v-lady: #75603e; --v-crowd: #5a4d9a;
+  --c-S1: #9aa6b0; --c-R: #b5a27a; --c-S2: #c9564d; --c-S3: #8597b2; --c-S4: #d1ad5f; --c-S5: #a3a5a8; color-scheme: light } }
+:root[data-theme="light"] {
+  --bg: #f0f1ee; --panel: #fbfbf9; --line: #d4d7d3; --fg: #16181a; --dim: #5e656a; --hud: #b3271e;
+  --v-bot: #9a5d0c; --v-ai: #2f5f8f; --v-woman: #9a3a66; --v-man: #2c7a4a; --v-lady: #75603e; --v-crowd: #5a4d9a;
+  --c-S1: #9aa6b0; --c-S2: #c9564d; --c-S3: #8597b2; --c-S4: #d1ad5f; --c-S5: #a3a5a8; color-scheme: light }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5 }
+.wrap { max-width: 1160px; margin: 0 auto; padding-block: 28px 80px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 5vw, 46px); margin: 0; text-wrap: balance }
+.lede { color: var(--dim); max-width: 70ch; margin: 6px 0 0 }
+h2 { font-family: var(--display); font-weight: 700; font-size: 22px; margin: 44px 0 10px; letter-spacing: .01em }
+.draft { display: inline-block; font-family: var(--mono); font-size: 11.5px; color: var(--hud); border: 1px solid var(--hud); padding: 1px 6px; border-radius: 2px; margin-top: 10px }
+/* reel strip */
+.strip-wrap { overflow-x: auto; margin-top: 18px; border: 1px solid var(--line); border-radius: 3px; background: var(--panel) }
+.strip { position: relative; min-width: 900px; padding: 8px }
+.shots, .cuesbar { display: flex; height: 46px }
+.cuesbar { height: 20px; margin-top: 4px }
+.shots a { display: block; height: 100%; background-size: cover; background-position: center; border-right: 1px solid var(--bg); position: relative }
+.shots a span { position: absolute; left: 3px; top: 2px; font: 500 10px var(--mono); color: #fff; text-shadow: 0 0 3px #000 }
+.cuesbar div { height: 100%; font: 500 10.5px var(--mono); color: var(--bg); padding: 2px 4px; overflow: hidden; white-space: nowrap; border-right: 1px solid var(--bg) }
+.ruler { display: flex; justify-content: space-between; font: 11px var(--mono); color: var(--dim); margin-top: 4px }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 13px; color: var(--dim) }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px }
+/* rows */
+.row { display: grid; grid-template-columns: 74px 168px minmax(0, 1fr); gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); position: relative }
+.row::before { content: ""; position: absolute; left: -10px; top: 0; bottom: 0; width: 4px; background: var(--cue, transparent); border-radius: 2px }
+@media (max-width: 680px) { .row { grid-template-columns: 1fr; } .row img { max-width: 260px } }
+.tc { font: 500 13px var(--mono); font-variant-numeric: tabular-nums; color: var(--dim) }
+.tc b { display: block; color: var(--fg); font-size: 15px }
+.row img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 3px; display: block; background: #000 }
+.body { min-width: 0; display: grid; gap: 6px }
+.title { font-family: var(--display); font-weight: 700; font-size: 17px }
+.title small { font: 400 12px var(--mono); color: var(--dim); margin-left: 6px }
+.line { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 8px; align-items: baseline }
+.who { font: 500 11.5px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--c) }
+.said { font-style: italic }
+.sfx { font-size: 13.5px; color: var(--dim) }
+.sfx b, .hud b { font: 500 11px var(--mono); letter-spacing: .06em; margin-right: 6px; color: var(--dim) }
+.hud { font: 500 12.5px var(--mono); color: var(--hud) }
+textarea { width: 100%; box-sizing: border-box; min-height: 34px; font: 13px var(--body); background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 3px; padding: 5px 8px; resize: vertical }
+textarea:focus-visible, button:focus-visible { outline: 2px solid var(--hud); outline-offset: 2px }
+.saved { font: 11px var(--mono); color: var(--dim) }
+/* cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 14px; display: grid; gap: 8px; min-width: 0; border-top: 3px solid var(--c, var(--line)) }
+.card h3 { font-family: var(--display); font-size: 18px; margin: 0 }
+.engine { font: 500 12px var(--mono); color: var(--dim) }
+.card p { margin: 0; font-size: 14px }
+pre { white-space: pre-wrap; font: 12px/1.45 var(--mono); background: var(--bg); border: 1px solid var(--line); border-radius: 3px; padding: 8px 10px; margin: 0; max-height: 220px; overflow: auto }
+.approach { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 78ch }
+.copy { justify-self: start; font: 500 12px var(--display); letter-spacing: .05em; padding: 4px 12px; background: transparent; color: var(--fg); border: 1px solid var(--line); border-radius: 2px; cursor: pointer }
+</style>
+
+<div class="wrap">
+  <h1>Second Half Sound Plan</h1>
+  <p class="lede">GitPush Origin Master, from the hunt to the bus. The picture is the first assembly on the Premiere timeline <code>gpom-second-half</code>: 31 shots in story order at first-pass lengths. Under it, the sound script: the narrator, who speaks each line, the effects, and the score. Once the voices exist, the cut slides to them.</p>
+  <span class="draft">Every spoken line is a draft from the 15 Oct beats. Kai writes the final words.</span>
+
+  <div class="strip-wrap"><div class="strip">
+    <div class="shots" id="shots"></div>
+    <div class="cuesbar" id="cuesbar"></div>
+    <div class="ruler" id="ruler"></div>
+  </div></div>
+  <div class="legend" id="legend"></div>
+
+  <h2>How it sounds</h2>
+  <ul class="approach" id="approach"></ul>
+  <h2>Two themes</h2>
+  <div class="cards" id="themes"></div>
+
+  <h2>Shot by shot</h2>
+  <div id="rows"></div>
+
+  <h2>Score cues</h2>
+  <div class="cards" id="cues"></div>
+
+  <h2>Voices</h2>
+  <div class="cards" id="voices"></div>
+</div>
+
+<script>
+const D = /*DATA*/null;
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e };
+const tc = s => { const m = Math.floor(s / 60), r = s - m * 60; return m + ':' + (r < 10 ? '0' : '') + r.toFixed(1) };
+const VOICE = Object.fromEntries(D.voices.map(v => [v.id, v]));
+const vcol = id => 'var(--v-' + id + ')';
+const ccol = id => id && id !== '—' ? 'var(--c-' + id + ')' : 'transparent';
+
+const shots = document.getElementById('shots'), cuesbar = document.getElementById('cuesbar');
+for (const r of D.rows) {
+  const a = el('a'); a.href = '#s' + r.k; a.style.flex = r.d; a.style.backgroundImage = 'url(' + r.thumb + ')'; a.title = r.n + ' · ' + r.title;
+  a.append(el('span', '', String(r.n))); shots.append(a);
+}
+{ let prev = null; const segs = [];
+  for (const r of D.rows) { if (prev && prev.cue === r.cue) prev.d += r.d; else { prev = { cue: r.cue, d: r.d }; segs.push(prev) } }
+  for (const s of segs) { const c = D.cues.find(x => x.id === s.cue); const d = el('div', '', s.cue && s.cue !== '—' ? s.cue + ' ' + (c ? c.name : '') : ''); d.style.flex = s.d; d.style.background = ccol(s.cue); cuesbar.append(d) }
+}
+const ruler = document.getElementById('ruler');
+for (let s = 0; s <= D.total; s += 15) ruler.append(el('span', '', tc(s)));
+const legend = document.getElementById('legend');
+for (const v of D.voices) { const s = el('span'); const i = el('i'); i.style.background = vcol(v.id); s.append(i, document.createTextNode(v.name)); legend.append(s) }
+
+const rows = document.getElementById('rows'); const noteUIs = {};
+for (const r of D.rows) {
+  const row = el('section', 'row'); row.id = 's' + r.k; row.style.setProperty('--cue', ccol(r.cue));
+  const t = el('div', 'tc'); t.append(el('b', '', tc(r.t)), document.createTextNode(r.d.toFixed(1) + 's'));
+  const im = el('img'); im.src = r.thumb; im.alt = r.title; im.loading = 'lazy';
+  const b = el('div', 'body');
+  const ti = el('div', 'title', r.title); ti.append(el('small', '', 'frame ' + r.n + ' · ' + r.file)); b.append(ti);
+  for (const [who, said] of r.lines) {
+    const l = el('div', 'line'); const w = el('span', 'who', (VOICE[who] || {}).name ? VOICE[who].name.replace(/ \(.*/, '') : who); w.style.setProperty('--c', vcol(who));
+    l.append(w, el('span', 'said', said)); b.append(l);
+  }
+  if (r.hud) { const h = el('div', 'hud'); h.append(el('b', '', 'HUD'), document.createTextNode(r.hud)); b.append(h) }
+  if (r.sfx) { const s = el('div', 'sfx'); s.append(el('b', '', 'SOUND'), document.createTextNode(r.sfx)); b.append(s) }
+  const ta = el('textarea'); ta.id = 'note-' + r.k; ta.placeholder = 'Note on this shot (words, timing, sound)'; ta.disabled = true;
+  const sv = el('span', 'saved', ''); b.append(ta, sv); noteUIs[r.k] = { ta, sv };
+  row.append(t, im, b); rows.append(row);
+}
+
+function card(title, sub, text, prompt, color) {
+  const c = el('div', 'card'); if (color) c.style.setProperty('--c', color);
+  c.append(el('h3', '', title), el('div', 'engine', sub), el('p', '', text));
+  if (prompt) {
+    const pre = el('pre', '', prompt); const btn = el('button', 'copy', 'Copy prompt'); btn.type = 'button';
+    btn.onclick = async () => { try { await navigator.clipboard.writeText(prompt); btn.textContent = 'Copied' } catch { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected: press copy' } setTimeout(() => btn.textContent = 'Copy prompt', 1800) };
+    c.append(pre, btn);
+  }
+  return c;
+}
+const cues = document.getElementById('cues');
+for (const c of D.cues) cues.append(card((c.id !== '—' ? c.id + ' · ' : '') + c.name, 'Frames ' + c.frames[0] + '–' + c.frames[1] + (c.theme ? ' · theme: ' + c.theme : '') + ' · ' + c.how, c.note, c.prompt, ccol(c.id)));
+const ap = document.getElementById('approach'); for (const a of D.approach) ap.append(el('li', '', a));
+const th = document.getElementById('themes'); for (const t of D.themes) { const c = card(t.name, t.how, t.what, null, null); c.append(el('p', '', 'Where: ' + t.appears)); th.append(c) }
+const voices = document.getElementById('voices');
+for (const v of D.voices) voices.append(card(v.name, v.engine, v.why, v.prompt, vcol(v.id)));
+
+(async () => {
+  const db = await claude.use('db'), user = await claude.use('user');
+  if (!db || !user) { for (const u of Object.values(noteUIs)) u.sv.textContent = 'Sign in to leave notes'; return }
+  const me = await user.id();
+  for (const [k, u] of Object.entries(noteUIs)) {
+    u.ta.disabled = false; let t;
+    u.ta.oninput = () => { clearTimeout(t); u.sv.textContent = '…'; t = setTimeout(async () => {
+      try { await db.doc('notes/' + k + '__' + me).set({ shot: Number(k), frame: D.rows[k].n, note: u.ta.value, by: me, at: Date.now() }); u.sv.textContent = 'Saved' }
+      catch (e) { u.sv.textContent = 'Not saved: ' + (e && e.code || 'error') } }, 700) };
+  }
+  db.collection('notes').where('by', '==', me).onSnapshot(snap => {
+    for (const d of snap.docs) { const v = d.data(), u = noteUIs[v.shot]; if (u && document.activeElement !== u.ta) u.ta.value = v.note || '' }
+  });
+})();
+</script>

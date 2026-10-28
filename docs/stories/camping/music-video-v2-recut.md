@@ -1787,6 +1787,99 @@ in and out points. Nothing else changed.
 Checked: the contact sheet shows each sign's words over its sung line. V1 is 69 clips with no gaps; 2 one-frame
 slivers were closed.
 
+### ✂ Two text shots back to blank (call with Kai, 2026-10-01)
+
+Kai, on the 2026-10-01 call: remove the overlaid words from the newspaper and the frosted glass. Done on
+`music video breath`; nothing else moved.
+
+| Time | Was | Now | In |
+| --- | --- | --- | --- |
+| 24.083–27.292 | `videos-recut-text/rc10v3.mp4` (line 1, the frosted door band) | `videos-recut/rc10.mp4` | 0.00 |
+| 196.792–204.292 | `videos-recut-text/rc18v3.mp4` (line 10, the newspaper) | `videos-recut/rc18.mp4` | 0.292 |
+
+- **Method:** the raw clips were imported into a new bin, `blank originals` (the names collide with the old renders
+  in `recut text`, so address them by id), then set in/out, overwrite, clear. Neither slot had Motion keyframes
+  or effects, so nothing was lost. One one-frame sliver of `rc18v3` at 204.25 was removed and closed.
+- **Checked:** frames exported at 26 s and 202 s and read: the band and the headline are blank. V1 is 69 clips, no
+  gaps. Ten text shots remain (nine of Jack's lines, with line 4 in two halves).
+- ⚠ **Assumed:** "the frosted glass window" in Gemini's notes is the door band (`rc10`), not the finger in the fog
+  (`rc19`), which still carries "WELL WE DON'T HAVE LONG". To undo either swap, overwrite the slot with the `v3` clip
+  from bin `the 11 lines` at the same in point.
+- ⬜ **Still owed from the same call:** a more dramatic shift when Tarquin starts singing (96.63 s). Today his first
+  line plays over `videos/20.mp4`, the Tokyo sweeper, which is the street's world, not his.
+
+### 😠 Angry Tarquin, no lip sync: three stills (Jack, 2026-10-01)
+
+For the entrance at 96.63 s. Jack picked three of the ideas: the jaw, the signet-ring hand, shouting behind glass.
+Each hides or closes the mouth by **geometry** (frame edge, no face, the wiper), so a clip can run under his verse
+with nothing to sync.
+
+- **Prompts:** `scripts/camping-mv2/tarquin-stills.json`. Run with
+  `STILLS=tarquin STILLS_MODEL='Nano Banana Pro' npx tsx scripts/camping-mv2/recut-stills.mts [id …]`.
+- **Settings:** Nano Banana Pro · 16:9 · x2 ("Nano Banana Pro 2" does not exist; read as Pro, as before).
+- **Reference:** `tq-jaw` and `tq-glass` attach `tarquin-portrait.jpg`, the front portrait cropped from
+  `characters/img/tarquin-sheet.jpg` (crop `1834:1172:0:1900`), so the face is as large in the reference as in the
+  output. `tq-ring` has no face, so the hand is dressed in prose (nano-banana-2.md §25).
+- **Output:** `…\music video\clips\tarquin-stills\`.
+
+| Still | Pick | Verdict |
+| --- | --- | --- |
+| `tq-jaw` | b | Nose to collar, lips shut, rain-lit side window behind. **a** ignored the crop and shows his eyes; it is a good angry profile in its own right |
+| `tq-ring` | b | Hand on top of the wheel, gold signet, steel watch, red light through wet glass. ⚠ ring is on the ring finger, not the little finger, and the knuckles are not white. **a** grips a stalk, not the wheel: reject |
+| `tq-glass` | a | The wiper covers the mouth completely; fist raised; rain reads against the black car. ⚠ he looks at the lens, not out of frame; the eyes are close to pantomime; the car came back left-hand drive (mirror it in post, nothing in frame has lettering). **b** shows teeth and the face drifted |
+
+- ⚠ **Harvest glitch:** `tq-glass` timed out once, and the retry also saved the uploaded reference as a candidate. It
+  was deleted and the two real candidates renamed a and b.
+- ⬜ **Next:** Jack's pick, then the Omni clips (camera locked), then the entrance re-cut.
+
+### 😠 Tarquin shouting at Bob, artfully: three stagings (Jack, 2026-10-01)
+
+Jack: *"we need tarquin shouting at someone like a homeless person maybe bob, but done artfully."* Three designs,
+one job each, and in none of them does Tarquin have a mouth to sync. Bob never flinches and never performs
+suffering: he is the still point (the dignity rule). Same file, runner and settings as the block above.
+Bob is referenced (`bob-portrait.jpg`, `bob-full.jpg`); Tarquin is unbound and dressed in prose.
+
+| Still | Device | Pick | Verdict |
+| --- | --- | --- | --- |
+| `tq-shout-shadow` | His shadow, thrown up the wall by his own headlamps, points at Bob (Nosferatu's shadow; the film's low camera) | a | The shadow's finger ends at Bob's head and Bob looks up at the man, lips shut. He is cut at the waist, not the knee, which is fine. **b** drew him whole, bending over Bob, so the device is lost |
+| `tq-shout-back` | The camera stands up behind his head; the neck, lean and finger carry it (Jeff Wall's *Mimic*: one gesture) | a | Bob sharp and steady under the lamp. ⚠ a sliver of his cheek shows, no mouth. **b** has two light stands in shot and more of his face: reject |
+| `tq-shout-pov` | From where Bob sits: coat, finger and signet ring come down into frame, his head above the top edge; Bob's knee and cup in the corner (rc10's grammar) | a | Head out of frame, key in the other fist, the X8 door open behind. ⚠ the finger points down, not at the lens; ring on the ring finger again. **b** has a readable shop sign and number plate: reject |
+
+- ⬜ **Next:** Jack's pick, then Omni clips (camera locked, rain and the finger jabbing on the beat), then the cut.
+
+### 🎬 The shout from behind: clip, round 1 (Jack, 2026-10-01)
+
+Start frame `tq-shout-back-a.jpg`. Omni 1.1 Flash · Frames · 16:9 · 720p · 8 s · x1, two takes of one prompt.
+Prompt: `scripts/camping-mv2/tarquin-videos.json`; run with `VIDS=tarquin npx tsx scripts/camping-mv2/recut-videos.mts`.
+Output: `…\music video\videos-tarquin\`. Checked on 3 fps contact sheets.
+
+| Take | Verdict | Usable |
+| --- | --- | --- |
+| `tq-shout-back` | Real-speed jabs, Bob holds and blinks, rain fine, hand stays a hand. 🔴 He turns into profile and the open, shouting mouth shows from about 1.3 to 3.0 s | about 4.0–8.0 s (cheek only, mouth mostly hidden) |
+| `tq-shout-back-2` | Same strengths. 🔴 Open mouth in profile at about 3.7–4.3 s and about 7.0 s | 0–3.3 s and about 4.5–6.7 s |
+
+- 🔴 **"The back of his head stays toward the camera throughout" did not hold in either take.** A shouting body
+  turns its face to the lens. The fix is geometry in the still (a plate with his head square to camera or cut off
+  by the frame, like `tq-shout-pov-a` or `tq-shout-shadow-a`), not a firmer sentence.
+- ⬜ Audio not listened to; A2 is muted in the cut.
+
+### ✂ Tarquin's entrance: the shout replaces the sweeper and the car wash (Jack, 2026-10-01)
+
+Jack: replace the sweeper by the tents and the window cleaner (1:36 to 1:46) with the shouting clip. Done on
+`music video breath`; nothing else moved. Bin `tarquin clips`.
+
+| Time | Was | Now | In |
+| --- | --- | --- | --- |
+| 96.667–101.208 | `videos/20.mp4` (Tokyo sweeper) | `videos-tarquin/tq-shout-back.mp4` | 3.417 |
+| 101.208–106.5 | `videos-breath/br-t1.mp4` (car wash) | `videos-tarquin/tq-shout-back-2.mp4` | 0.00 |
+
+- **Why these ranges:** take 1's back half (3.4–8.0 s) has no open mouth. Take 2 runs from its start, so ⚠ his open
+  mouth shows in profile for about half a second near **105.0–105.5 s** (source 3.7–4.3 s).
+- ⚠ The two takes share one framing, so the join at 101.208 is a jump cut.
+- **Checked:** frame exported at 99 s and read. V1 is 69 clips, no gaps (one one-frame sliver of `20.mp4` closed).
+  Neither replaced clip had keyframes or effects. To undo: overwrite the two slots with `20.mp4` (in 0.5) and
+  `br-t1.mp4` (in 0.792).
+
 ## Open (not ruled yet)
 - ⬜ **Breathing room** (above): the four rules, and the film footage and its grade.
 - ⬜ **Breathing-room cut:** Jack's watch of `music video breath` (built 2026-09-30).

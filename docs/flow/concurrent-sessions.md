@@ -19,17 +19,19 @@ Ask for a channel. Never pick a port.
 
 ## 1. How you use it
 
-```bash
-./scripts/browser-channel.sh claim
-# -> CHANNEL=2 PORT=9223 LOGGED_IN=yes
-```
+**Call `flow_status`. That is the whole interface** (2026-09-28). The flow MCP server resolves its
+channel, and if that channel's browser is down **it launches it itself**; `suno.mts` does the same
+for the same channel. One session, one browser, and nobody runs a launch command.
 
-That is the whole interface. It finds a browser that is running, unclaimed and signed in;
-failing that any running unclaimed browser; failing that it **launches one**. Then work.
+🔴 **Do not run `browser-channel.sh claim` in a session that uses the flow MCP.** Until 2026-09-28
+the server locked a channel as `needs-launch` and waited; the agent then ran `claim`, which skips
+locked channels, so it launched a *second* browser on the next channel while the server still
+waited on the first — two Chrome windows at the start of every cold session. `claim` survives only
+for a script that runs with no flow MCP at all.
 
 | Want | Command |
 | --- | --- |
-| A browser to work in | `./scripts/browser-channel.sh claim` |
+| A browser to work in | `flow_status` — the server launches its own channel |
 | What is running? | `./scripts/browser-channel.sh list` |
 | A specific one | `./scripts/browser-channel.sh up 2` |
 | Which am I on? | `flow_channels`, or the `channel`/`port` fields on `flow_status` |
@@ -49,7 +51,7 @@ Resolution order, first hit wins:
    user's instruction, not ours to own).
 2. **A live lock this process already holds** — so repeated calls are stable.
 3. **The lowest channel that is UP and unclaimed** → claim it.
-4. **The lowest channel that is DOWN** → claim it and report `needsLaunch`.
+4. **The lowest channel that is DOWN** → claim it and **launch it** (since 2026-09-28; before that it reported `needsLaunch` and waited).
 
 `suno.mts` resolves the same way: `SUNO_CDP_ENDPOINT` → `FLOW_CDP_PORT` → the channel a live
 session already holds → 9222.

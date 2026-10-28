@@ -1,0 +1,228 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "second-half-e-ending",
+  "prefix": "she",
+  "title": "GPOM Second Half E: The Ending",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> second half E: the ending",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E",
+  "about": "A woman on a bus is watching this film. Zoom out down an ordinary high street. The AI's last line. No \"We are BadCode\". Stage 1 written brief: brief.md; music: music.md.",
+  "runtime_target": "30-45 s (planned ~38 s)",
+  "stage": "1 (written brief, no interview: the 2026-10-21 autonomous run, second-half-ending-goal.md)",
+  "cast": {
+    "maddie": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg",
+      "rule": "ALWAYS this reference; the torn bunting stays in every shot",
+      "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)"
+    },
+    "ai": {
+      "ref": null,
+      "rule": "No body, ever. Speaks through Maddie's speaker (beacon pulses on his words); the last line of the film is the one unfiltered read",
+      "voice": "Suno Voice \"badcode newsreader\" (the AI), dry, through Maddie's speaker: small-speaker filter, beacon pulses on his words"
+    },
+    "lady": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S7r-a.jpg",
+      "voice": "Gemini TTS Sulafat (cut3-cast.json lady)"
+    },
+    "sandra": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07b.jpg",
+      "voice": "Gemini TTS Autonoe (cut3-cast.json woman)"
+    },
+    "derek": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB07c.jpg",
+      "voice": "Gemini TTS Algieba (cut3-cast.json man)"
+    },
+    "building": {
+      "ref": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/BL1-day.jpg",
+      "rule": "ONE fixed design: a long, low building of black glass, many times longer than it is tall, with one single thin horizontal seam of warm amber light running its whole length, set down in a fold between two green chalk downs, the only made thing in sight; no windows, no signs, no other lights",
+      "note": "Design anchor = the BL series (BL1-day, BL2-dusk, BL4-seam-opens, BL5-aerial; second-half-moodboard.md). L11-exterior-night is NOT this design (a tall near-cubic block, seam part-way) and is not used."
+    }
+  },
+  "beats": [
+    {
+      "key": "e1",
+      "at": "0.00",
+      "name": "The bus",
+      "blurb": "Hard cut on sound: rain, traffic, a bus. A woman on the top deck is watching this film on her phone. Tinny, through the phone: Maddie, \"Mind how you go.\"",
+      "lines": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Mind how you go.",
+          "by": "kai",
+          "how": "soft, after a long silence, to the empty chairs; gentle and a little lost, trying to be cheerful for nobody",
+          "frame": "E01",
+          "fx": "phone",
+          "was": "...you go. (the tail of D16's take, split across the cut)",
+          "note": "Kai round 1 (ld9-1, le1-0): moved whole from D16; voiced in D's room, then the phone filter"
+        }
+      ]
+    },
+    {
+      "key": "e2",
+      "at": "7.00",
+      "name": "She looks up",
+      "blurb": "Over her shoulder: the empty chairs on her screen, her own high street through the wet window. She looks up from one to the other.",
+      "lines": []
+    },
+    {
+      "key": "e3",
+      "at": "13.00",
+      "name": "The bus drives away",
+      "blurb": "Zoom out as a red double-decker pulls away down an ordinary high street at night. The AI, for the first time unfiltered, close: the last line.",
+      "lines": [
+        {
+          "speaker": "ai",
+          "voice": "Suno Voice \"badcode newsreader\" (the AI): \"I made it.\" with a 40% trace of Maddie's speaker filter, the rest full range and close (the first time unfiltered)",
+          "text": "I made it. Now we have some work to do.",
+          "by": "kai",
+          "how": "dry, close, tired on 'I made it.'; then warmer and quietly determined: an invitation to get on with it, not a threat or an order",
+          "frame": "E03",
+          "atom": "gpom-sh-end-ai-e2 (NEW, owed: Suno only)",
+          "was": {
+            "text": "I made it. They didn't.",
+            "atom": "gpom-sh-end-ai-e1 (first two sentences)",
+            "alt": {
+              "text": "I made it. They didn't. Don't let the same lot make me come back twice.",
+              "atom": "gpom-sh-end-ai-e1b",
+              "also": "I made it. They didn't. Don't make me come back twice. (gpom-sh-end-ai-e1, Kai's canon)",
+              "note": "Review round 2: draft 4 was still heard as a threat and an instruction to the viewer (brief E: no call to action); a warmer Suno re-take could not be recorded, so the imperative is dropped. Both longer versions are in the same take. **Kai to rule** by ear."
+            }
+          },
+          "note": "Kai round 1 (le3-0): this is the ending. Owed as a Suno newsreader take; not voiced in Gemini."
+        }
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "id": "E01",
+      "beat": "e1",
+      "duration": 7,
+      "purpose": "Rhyme and regress: the film is on her phone. The last thing she heard is the last thing we heard.",
+      "still": {
+        "prompt": "REUSE: Y2-bus (a woman on the top deck at night, rain on the window, watching her phone).",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "night, rain, photographic"
+      },
+      "motion": {
+        "prompt": "REUSE the existing clip.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "ffmpeg: composite the last frame of D16 onto the phone screen (scaled, a little soft, a screen glow); the phone's audio is the tail of Maddie's line, \"...you go.\", filtered small, landing on the cut"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-28-Y2-bus.mp4",
+      "round1": "POST: the phone now plays Maddie's whole 'Mind how you go.'; the screen composite must use the NEW D16 last frame."
+    },
+    {
+      "id": "E02",
+      "beat": "e2",
+      "duration": 6,
+      "purpose": "From the screen to the street: she is the \"you\" the hundred paid for, on an ordinary night, in an ordinary town.",
+      "still": {
+        "prompt": "Using the first image for the woman and the bus and the second for the street: over the shoulder of the same woman on the top deck of the bus at night, her phone in her hand with its screen dimmed, rain streaming down the window beside her. Through the wet glass, her own ordinary high street: a chip shop, a pharmacy, a betting shop, and a closed bank, its windows whitewashed, a blank estate agent's board above the door, lights smeared by the rain. She has lowered the phone a little and is looking out of the window. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg",
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB27a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "night, rain, photographic"
+      },
+      "motion": {
+        "prompt": "The camera does not move. Rain streams down the window and the street lights slide past outside. The woman lowers her phone to her lap and turns her head to look out at the street. The camera does not move.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "ffmpeg: the D16 frame on the phone screen, as E01"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": null,
+      "note": "No words are asked of Flow: the bank is whitewashed with a blank board. If \"TO LET\" is wanted, ffmpeg draws it on the board in post. The phone shows the same D16 empty-chairs frame as E01 (composited), dimmed, never a white screen.",
+      "round1": "POST: the phone composite uses the NEW D16 last frame."
+    },
+    {
+      "id": "E03",
+      "beat": "e3",
+      "duration": 14,
+      "purpose": "The zoom out: one bus on one high street, and the whole film becomes a thing a stranger watched on the way home. The last line lands on it.",
+      "still": {
+        "prompt": "REVIEW ROUND 2: E03b-r1-b, flow_edit_image of E03f-r1-b with E02-r3-a: the betting shop right of the pharmacy becomes E02's closed bank (whitewashed windows, blank off-white fascia, black door), everything else kept.",
+        "refs": [
+          "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB27a.jpg"
+        ],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "night, rain, photographic"
+      },
+      "motion": {
+        "prompt": "REUSE the existing clip, extended with a held/ping-pong tail if the line needs it.",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "Premiere: start framed tight on the lit top deck (scale 140%) and pull back, eased, to 100% over the first 8 s; hold; fade to black on the last note"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB27a.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-29-SB27a.mp4",
+      "round1": "REMAKE: the bus is a RED double-decker (Kai, at353). Still edit, re-animate, re-chain the extension.",
+      "todo": true
+    },
+    {
+      "id": "E04",
+      "beat": "e3",
+      "duration": 3,
+      "purpose": "Black. The last piano note decays. No logo, no \"We are BadCode\".",
+      "still": {
+        "prompt": "none",
+        "refs": [],
+        "model": "Nano Banana Pro via flow_edit_image (0 credits), 2 candidates a call",
+        "look": "black"
+      },
+      "motion": {
+        "prompt": "none (black)",
+        "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1",
+        "post": "black 3 s under the music tail"
+      },
+      "talking": false,
+      "continuous": false,
+      "reuse": "black"
+    }
+  ],
+  "boards": {},
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut/preview.mp4"
+  },
+  "round3_media": {
+    "date": "2026-10-23",
+    "source": "Kai round 1 (red double-decker, no roundel or lettering)",
+    "flow": "E03r3-b still (free); E03r3-t1 (10 s) + E03xr3-t2 chained: 39 credits (incl. rejected E03xr3-t1). Owed by main: E01/E02 phone composite from the NEW D16 last frame; the AI last line (Suno e2) is NOT available (see the music sheet round E)."
+  },
+  "premiere": {
+    "rough1": {
+      "sequence": "gpom-6-E-ending-r1",
+      "bin": "gpom-6-E-ending-r1",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-10-23",
+      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0.",
+      "stale": "superseded by rough2; its stems were overwritten by the later rebuild, so rough1's music/sfx no longer match its picture",
+      "guid": "0e71793e-f5c8-4237-bb03-b9ec1c784e0b",
+      "renamed_from": "gpom-sh-E-rough1"
+    },
+    "rough2": {
+      "sequence": "gpom-6-E-ending-r2",
+      "bin": "gpom-6-E-ending-r2",
+      "built": "2026-10-23",
+      "what": "Parliament last shot under 'Now the real work starts.' + Flow-painted phone screens (overlay dropped)",
+      "how": "scripts/scene/premiere-plan.py --tag rough2 (line files under premiere/rough2/lines/)",
+      "guid": "bac5d7d3-3352-4017-b554-81e85cdb86ef",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut/edl.json",
+      "renamed_from": "gpom-sh-E-rough2",
+      "check": {
+        "at": "2026-10-27T19:22",
+        "state": "in sync",
+        "why": ""
+      }
+    },
+    "current": "rough2"
+  }
+}

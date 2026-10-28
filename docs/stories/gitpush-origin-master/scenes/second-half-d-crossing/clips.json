@@ -1,0 +1,326 @@
+{
+ "about": "Stage 3 clip picks for scene D (2026-10-21/22 autonomous run). Frame id -> chosen file (relative to media unless a full path is given), in/out seconds inside that file, and what the stage 4 assembly needs to know. Every take, prompt and credit is in shots.md; the spend is in scripts/gpom/second-half-video/ending/ledger.json (scene 'D').",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips",
+ "flow_project": "cb293421-279b-4195-8304-09012f8b736a (video, 'Oct 22 - 00:31')",
+ "engine": "Omni 1.1 Flash, Frames (start frame only), 16:9, 720p, x1; 1280x720 24 fps; clips carry Omni's own audio (mute on the timeline)",
+ "credits": 208,
+ "clips": {
+  "D00": {
+   "file": "D00-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/D00-r2-b.jpg",
+   "talking": false,
+   "post": "beacon pulse timed to the AI's 'Suits on, please. It's a clean room.' (ffmpeg)",
+   "note": "A man hops into his suit leg past her bunting; a small blue chest logo shows on a suit at ~3.7 s (left edge), blur or crop if it reads."
+  },
+  "D01": {
+   "file": "D01-t2.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/D01-r2-a.jpg",
+   "alt": "D01-t1.mp4 (better mouth fit x1.08, but Sandra's white suit vanishes between 2 and 3 s)",
+   "talking": {
+    "line": "Sandra: Five years, one toilet. Now he's fussy.",
+    "own_audio": "Five years (3.06-3.92) / one toilet (4.12-4.64) / Now he's fussy (5.14-5.84)",
+    "mouth": "three bursts as own_audio (mouth-map tracks the lady's face here; read Sandra's mouth from a crop strip)",
+    "fit": "whole line: voice 4.2 s over 2.8 s = x1.5, OVER cap; place PHRASE BY PHRASE at the three bursts (each phrase's own ratio), or re-voice brisker"
+   },
+   "note": "She walks off frame right at ~6.5 s."
+  },
+  "D02": {
+   "file": "D02-t1.mp4",
+   "in": 0.0,
+   "out": 6.5,
+   "plate": "../stills/D02-r1-a.jpg",
+   "talking": false,
+   "note": "The column recedes; the ceiling-bank sweep is faint. A lens glint flares on the machine from ~6.5 s: out before it (or keep it as the machine waking, Kai's call).",
+   "file_round3": "D02r3-t1.mp4",
+   "plate_round3": "../stills/fix3/D02r3-b.jpg",
+   "note_round3": "Nobody walks; heads turn; rainbow bands ripple over the wafer; floor stays clean.",
+   "file_round4": "D02r4-t1.mp4",
+   "plate_round4": "../stills/fix4/D02r4-a.jpg",
+   "note_round4": "Ending round 2 (Kai reel at2108): the wafer ENORMOUS in the middle of the vast room. Locked; nobody walks. Flaw: from ~2 s the wafer's chip-grid surface turns into an oily rainbow swirl."
+  },
+  "D03": {
+   "file": "D03-t2.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/D03-r2-b.jpg",
+   "talking": false,
+   "post": "slow pull-back 115% -> 100%",
+   "note": "Review round 1: re-rolled with the wafer rigid; a single rainbow band glides across its face 1-6.5 s, the chip grid stays sharp, no morph. Round 0 (D03-t1) liquefied the wafer from 1.5 s.",
+   "was": "D03-t1.mp4 (wafer turned liquid 1.5-5 s: review round 1)"
+  },
+  "D04": {
+   "file": "D04-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/D04-r1-c.jpg",
+   "talking": {
+    "line": "Lady: Us.",
+    "own_audio": "Us.",
+    "mouth": "one burst 1.92-2.54",
+    "fit": "voice 0.56 s over 0.62 s = x0.9; place at 1.95"
+   },
+   "file_round3": "D04r3-t1.mp4",
+   "plate_round3": "../stills/D04-r1-c.jpg",
+   "talking_round3": "lady: \"Yes. Don't worry, we understand.\" own audio exact: Yes 1.86-3.10 / don't worry 3.76-4.66 / we understand 5.12-5.96 (voice d3-2-lady-r5b 5.44 s: place by phrase). She looks down, eyes wet, a small smile and nod; the wafer edge drifts into frame right.",
+   "file_round4": "D04r4-t2.mp4",
+   "plate_round4": "../stills/D04-r1-c.jpg",
+   "note_round4": "Ending round 2 (Kai reel at2108/at2566): the lady, stern, says the whole new line (own audio exact: Look 0.84-1.28 / this...humanity 1.62-4.34 / If...change it 3 5.28-7.84 / I want to take that chance 8.20-9.24). Rainbow on her face; alone in frame.",
+   "alt_round4": "D04r4-t1.mp4 (reject: dropped 'possible', 'in time', 'to take'; a stray head enters frame right from ~2.5 s)"
+  },
+  "D05": {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/L3-wafer-pattern.jpg",
+   "still": true,
+   "in": 0.0,
+   "out": 5.0,
+   "post": "a slow 2-degree rotation and push 100% -> 108%, eased (ffmpeg)"
+  },
+  "D06": {
+   "file": "D06-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/D06-r2-b.jpg",
+   "talking": false,
+   "note": "Her hand picks the mug up and lifts it out of frame at ~6 s; robot wheels edge into the left of frame at 6-8 s (Maddie arriving, harmless). 'Is that tea?' off-screen over 0-3 s.",
+   "file_round6": "D06r6-t1.mp4",
+   "plate_round6": "../stills/fix6/D06r6-a.jpg",
+   "note_round6": "D round 4 (Kai at2525, pick D06r6-a): the old lady in her chair reaches down and lifts her own mug out of frame (~5.5 s). 8 s, 12 credits."
+  },
+  "D07": {
+   "file": "D07-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/D07-r1-a.jpg",
+   "talking": {
+    "line": "Derek: How do I know this isn't one of your simulations?",
+    "own_audio": "word-perfect, 1.40-3.80",
+    "mouth": "1.38-4.17 (opens 1.38 2.71 3.00 3.42)",
+    "fit": "voice 2.74 s over 2.79 s = x0.98"
+   }
+  },
+  "D08": {
+   "file": "D08-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/D08-r2-a.jpg",
+   "talking": false,
+   "note": "Silent listener for the AI's 'You don't. Believing it is your bit.'; she closes her eyes for a beat at ~3.7 s."
+  },
+  "D09": {
+   "file": "D09-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/D07-r1-a.jpg",
+   "talking": {
+    "line": "Derek: Got anything else up your sleeve?",
+    "own_audio": "word-perfect, 1.84-3.48",
+    "mouth": "2.17-3.46 (opens 2.17 3.25)",
+    "fit": "voice 1.68 s over 1.29 s = x1.30, AT the cap: place at 2.20"
+   },
+   "note": "He unfolds his arms and looks down at the floor in front of him rather than at Maddie."
+  },
+  "D10": {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-25-SB23a.mp4",
+   "reuse": true,
+   "in": 0.0,
+   "out": 7.0,
+   "plate": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB23a.jpg",
+   "was_pick": true
+  },
+  "D11": {
+   "file": "D11-t2.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/D11-r2-a.jpg",
+   "alt": "D11-t1.mp4 (she speaks from 0.0 with no pause: x1.8, rejected)",
+   "talking": {
+    "line": "Lady: What'll you tell them? Back then.",
+    "own_audio": "What'll you tell them (0.98-2.22) ... back then (3.52-4.06)",
+    "mouth": "1.67-2.25 and 3.46-3.96 (small face; read from a crop strip)",
+    "fit": "two phrases at the two bursts; the pause before 'Back then' is in the picture"
+   },
+   "post": "slow push 100% -> 108% across the AI's answer",
+   "note": "Glasses off at ~6 s, as planned.",
+   "file_round3": "D11r3-t2.mp4",
+   "plate_round3": "../stills/fix3/D11r3-b.jpg",
+   "alt_round3": "D11r3-t1.mp4 (asks with a 2 s pause mid-line, speaks to 7.5 s: no listening time)",
+   "talking_round3": "lady: \"When he arrives back in time, what will he do?\" own audio exact 1.06-4.54 (two phrases: 1.06-3.08 / 3.64-4.54); listens 4.5-8 while the beacon pulses (Maddie's 4.28 s answer fits)."
+  },
+  "D12": {
+   "file": "D12-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/D12-r1-b.jpg",
+   "talking": false,
+   "note": "Her hand finds his by ~2.5 s, they grip and hold to the end. 'Seat down?' / 'Seat down.' over the grip."
+  },
+  "D13": {
+   "file": "D13-t1.mp4",
+   "in": 0.0,
+   "out": 6.6,
+   "plate": "../stills/D13-r1-a.jpg",
+   "talking": false,
+   "post": "fade up to white over 1 s from 5.6 s (no flash); out before Omni's own bloom at ~6.7 s",
+   "note": "Chair lights flare on round the ring 1-3 s, light races down the cables into the hub 4-6 s. ⚠ Run the photosensitivity check (delivery-qc) on the 1-3 s scattered flares."
+  },
+  "D14": {
+   "file": "D14f-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/fix1/D14f-r1-b.jpg",
+   "talking": false,
+   "note": "Review round 1: trolley and figure removed; the trodden track runs unbroken to the doorway. Seam lights 0-3 s, runs out L->R 4-6.5 s.",
+   "was": "D14-t1.mp4 (a body by the tipped trolley; prints not joined to the door: review round 1)"
+  },
+  "D15": {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix1/D15f-r1-b.jpg",
+   "reuse": false,
+   "in": 0.0,
+   "out": 5.0,
+   "plate": null,
+   "was": "sh-26 (smoke from the cable box; a cream mug, not D06's: review round 1)",
+   "still": true,
+   "post": "still held, slow push in post; no smoke",
+   "note": "Review round 1: L17 edited so the mug is D06's glossy brown mug; used as a still (no Omni smoke)."
+  },
+  "D16": {
+   "file": "D16f-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/fix1/D16f-r1-a.jpg",
+   "alt": "D16-t1.mp4 0-2.5 s (the turn loses the bunting from ~3 s); D16-t2.mp4 (spins, bunting lost 3-4.5 s)",
+   "talking": false,
+   "post": "slow pull-back 112% -> 100%; extend with a held last frame (with the pull-back still running) for the silence to the 10 s plan; beacon stays ON",
+   "note": "Review round 1: every chair holds what its person left (a limp suit, a blanket, a mug; the patchwork blanket and brown mug nearest her). Robot still, bunting intact, beacon pulses.",
+   "was": "D16-t3.mp4 (bare chairs: review round 1)",
+   "file_round3": "D16r3-t1.mp4",
+   "plate_round3": "../stills/fix3/D16r3-b.jpg",
+   "chain_round3": [
+    "D16r3-t1.mp4",
+    "D16xr3-t1.mp4 (from frames/D16r3-t1-last.jpg)"
+   ],
+   "note_round3": "Beacon pulses once ~1-2 s (lay \"Boss...\" there), she turns slightly and back ~3 s, then still; D16x holds still while the chair lights dim slowly, for the ~4 s silence. The NEW D16 last frame for E01/E02's phone composite = the end of D16xr3-t1 (or D16r3-t1 if the chain is not used)."
+  },
+  "D09t": {
+   "file": "D09t-t2.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/D07-r1-a.jpg",
+   "talking": {
+    "line": "Derek: Then say you don't know.",
+    "own_audio": "word-perfect 0.0-2.18 (whisper)",
+    "mouth": "0.25-1.90 (mouth-track)",
+    "fit": "voice placed at 0.30"
+   },
+   "note": "Review round 2: re-rolled with \"Does it even work?\" (mouth timing measured after harvest).",
+   "previous": {
+    "file": "D09t-t1.mp4",
+    "in": 0.0,
+    "out": 8.0,
+    "plate": "../stills/D07-r1-a.jpg",
+    "talking": {
+     "line": "Derek: Then say you don't know.",
+     "own_audio": "word-perfect 0.0-2.18 (whisper)",
+     "mouth": "0.25-1.90 (mouth-track)",
+     "fit": "voice placed at 0.30"
+    },
+    "note": "Review round 1. He speaks, then listens with arms folded and softens; the AI's 'Fair... I don't know if it works.' plays on his face."
+   }
+  },
+  "D09s": {
+   "file": "D09s-t2.mp4",
+   "in": 1.0,
+   "out": 8.0,
+   "plate": "../stills/fix2/D09s-r2-b.jpg",
+   "talking": false,
+   "note": "Review round 2: re-made. Every chair behind him empty, Maddie screen left as in D07, the rows' recliner. Turns 1-3 s, sits 4-5 s, lies back 6-7 s.",
+   "previous": {
+    "file": "D09s-t1.mp4",
+    "in": 1.0,
+    "out": 8.0,
+    "plate": "../stills/fix1/D09s-r1-b.jpg",
+    "talking": false,
+    "note": "Review round 1: the act. He turns at ~2 s, sits at 4-5 s, lies back by 7 s."
+   }
+  },
+  "D10n": {
+   "file": "D10n-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/fix1/D10n-r1-c.jpg",
+   "talking": false,
+   "note": "Review round 1: the round wafer layout (SB25b angle, the D16 view); the last ones standing sit down and lie back 0-5 s; all seated 5-8 s. Replaces sh-25 (straight rows, already reclined)."
+  },
+  "D11b": {
+   "file": "D11b-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/fix1/D11b-r1-a.jpg",
+   "talking": false,
+   "note": "Review round 1: the mouthless cutaway for the lady's overrun and 'Back then.' (her hands on the patchwork blanket, Maddie's beacon)."
+  },
+  "D12x": {
+   "file": "D12x-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "frames/D12-t1-last.jpg",
+   "talking": false,
+   "note": "Review round 1: chained from D12-t1 (continuous-shot). The light swells; the grip loosens and the hands go slack 4.3-5.5 s; Omni floods to white 5.5-7 s."
+  },
+  "D01h": {
+   "file": "D01h-t1.mp4",
+   "in": 1.0,
+   "out": 7.3,
+   "plate": "../stills/fix2/D01h-r2-b.jpg",
+   "talking": "sandra: \"Five years, one toilet. Now he's fussy.\" mouth 1.67-2.60, 3.00-3.92, 4.25-5.10 (mouth-track, face right)",
+   "note": "Review round 2: D01 with the lady's hair loosely pulled back (continuity with D04/D11).",
+   "file_round3": "D01h-t2.mp4",
+   "plate_round3": "../stills/fix2/D01h-r2-b.jpg",
+   "talking_round3": "sandra: \"I hope this bloody plan works.\" own audio exact, whisper 0.88-3.06 (voice file d1-1-sandra-r4a 2.84 s)"
+  },
+  "D03c": {
+   "file": "D03c-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/fix2/D03c-r2-c.jpg",
+   "talking": false,
+   "note": "Review round 2: the costed wafer: battered Maddie, bunting, muddy boots and prints in the near third. Beacon ~ (432, 92). A slight drift in the clip.",
+   "file_round3": "D03cr3-t1.mp4",
+   "plate_round3": "../stills/fix3/D03cr3-a.jpg",
+   "note_round3": "Beacon pulses as if speaking (Maddie's 9.2 s line: hold or extend past 8 s); a rainbow band glides across the wafer; floor clean."
+  },
+  "D14p": {
+   "file": "D14p-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/fix2/D14p-r2-b.jpg",
+   "talking": false,
+   "note": "Review round 2: the prints at the doorway, every toe pointing in.",
+   "file_round3": "D14p-t2.mp4",
+   "plate_round3": "../stills/fix2/D14p-r2-b.jpg",
+   "note_round3": "Kai at2259 (looked like a zoomed photo): real motion now: clouds move, chalk dust wisps drift towards the door 1.5-3 s, the doorway light breathes, prints still. Play it without a post zoom."
+  },
+  "D10x": {
+   "file": "D10x-t2.mp4",
+   "in": 0,
+   "out": 8,
+   "plate": "../stills/fix3/D10xr3-a.jpg",
+   "talking": false,
+   "alt": "D10x-t1.mp4 (chained from D10n's last frame: a man stays standing throughout; lights brighten at the end)",
+   "note": "Round 3 media (23 Oct, Kai rulings of 23 Oct): the d8 opener. Every chair visibly occupied; the chair lights brighten together into a white haze 5-8 s. NOT a chain from D10n (closer framing): a cut."
+  },
+  "D11c": {
+   "file": "D11c6-t1.mp4",
+   "in": 0.0,
+   "out": 6.0,
+   "plate": "../stills/fix6/D11c6-d.jpg",
+   "talking": false,
+   "note": "D round 4 (Kai at2787, pick D11c6-d): silent close-up of the lady, the plan sinking in: eyes fix on the robot, a breath, one small nod (lips part slightly ~2.2-3 s). 6 s, 10 credits."
+  }
+ },
+ "credits_review1": 94,
+ "credits_review2": 60
+}

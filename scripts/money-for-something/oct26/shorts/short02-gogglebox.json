@@ -1,0 +1,76 @@
+{
+ "voice": [
+  "short2"
+ ],
+ "item": "2610-02",
+ "signal": [
+  77,
+  58
+ ],
+ "chyron": "\"I'M TRYING TO GIVE THE COUNTRY A LIFT.\"",
+ "turn": "Ours is",
+ "payoff": "Macron sent the riot police. Burnham sent the bacon fries.",
+ "slams": [
+  {
+   "type": "quote",
+   "at": "France",
+   "text": "France sneezed, and Europe has again caught the cold",
+   "who": "The Guardian, editorial, 23 Oct 2026"
+  },
+  {
+   "clear": "And England"
+  },
+  {
+   "type": "quote",
+   "at": "Macron's",
+   "text": "There should be no demonstrations in the coming days",
+   "who": "Emmanuel Macron, Oct 2026"
+  },
+  {
+   "type": "stat",
+   "at": "seventy thousand",
+   "text": "70,000 POLICE",
+   "sub": "France, 24 Oct"
+  },
+  {
+   "clear": "Ours is"
+  },
+  {
+   "at": "Gogglebox",
+   "outlet": "BBC News",
+   "date": "23 Oct 2026",
+   "headline": "Prime Minister swaps dispatch box for Gogglebox",
+   "highlight": "Gogglebox"
+  }
+ ],
+ "pictures": [
+  {
+   "key": "s2-paris"
+  },
+  {
+   "at": "Europe",
+   "key": "s2-europe"
+  },
+  {
+   "at": "And England",
+   "key": "s2-totnes"
+  },
+  {
+   "at": "Macron's",
+   "key": "s2-macron"
+  },
+  {
+   "at": "seventy thousand",
+   "key": "s2-police"
+  },
+  {
+   "at": "Ours is",
+   "key": "s2-no10"
+  },
+  {
+   "at": "Gogglebox",
+   "key": "s2-sofa"
+  }
+ ],
+ "name": "short02-gogglebox"
+}

@@ -1,0 +1,64 @@
+[
+ {
+  "at": "2026-10-27T08:28:21+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+  "what": "dialogue options: Maddie's intro + the doorstep (10 writers, 3 drafts each)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html"
+ },
+ {
+  "at": "2026-10-27T12:26:57+00:00",
+  "stage": "dialogue",
+  "round": 2,
+  "url": "https://claude.ai/artifact/Upi87NkHcqp3RgaGRrCBCP",
+  "what": "doorstep second-chance ideas: 7 Sonnet web researchers + Fable (high) options, 8 routes ranked",
+  "rebuild": "python3 scripts/design/build-reading-page.py design/2026-10-27-gpom-doorstep-second-chance/options.md design/2026-10-27-gpom-doorstep-second-chance.html --appendix design/2026-10-27-gpom-doorstep-second-chance --appendix-title 'The research in full' --title 'GPOM Doorstep Second Chance'"
+ },
+ {
+  "at": "2026-10-27T12:44:10+00:00",
+  "stage": "dialogue",
+  "round": 2,
+  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+  "what": "doorstep round 2: drafts 2D/2E/2F (slower opening, data-only, Derek off)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r2.json",
+  "decided": [
+   "Fable's option 2 + 'he's just the message' is the base; slow the opening ('we both wish it hadn't happened that way' / 'well it did and here we are'); time machine in subtly; Derek positive, not the conclusion; keep 'come back tomorrow'; 'you still can'; only data goes back; bus stays for the end"
+  ]
+ },
+ {
+  "at": "2026-10-27T17:25:31+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+  "what": "dialogue round 3: 1D (intro) and 2G (doorstep) with Kai's line notes",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r3.json",
+  "decided": [
+   "Kai r2 notes (feedback/r2/notes): 1A + his three lines; 2D reordered with 'what nonsense', drive question, data only, trust answered by 'believing it is your bit'; Derek in; no whisper, roll-away only"
+  ]
+ },
+ {
+  "at": "2026-10-27T18:49:18+00:00",
+  "stage": "dialogue",
+  "round": 4,
+  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+  "what": "dialogue options: doorstep 2H (Kai's round-3 line notes)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r4.json",
+  "decided": [
+   "Kai: 'apart from that, we're really there' — line 6 bare time machine, Sandra 'Amen', thought experiment, crowd cacophony, 'so now we can', Derek 'I'd love to go back'"
+  ]
+ },
+ {
+  "at": "2026-10-27T19:24:03+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+  "what": "the doorstep, draft 2H from the dialogue page; also in Premiere as gpom-3-B-door-r3 (in sync)",
+  "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D1 && python3 scripts/gpom/second-half-video/cut3.py B --tag d1 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out-dir>",
+  "decided": [
+   "Kai, 27 Oct: Sandra says just \"Amen\"; \"please go ahead and let's get the dialogue recut\""
+  ],
+  "feedback": "feedback/timeline-r2",
+  "feedback_docs": 2
+ }
+]

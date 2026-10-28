@@ -1,0 +1,113 @@
+{
+ "voice": [
+  "short5a",
+  "short5b"
+ ],
+ "item": "2610-05",
+ "signal": [
+  79,
+  47
+ ],
+ "chyron": "\"META COVERS ZUCKERBERG'S TAX BILL.\"",
+ "turn": "He looks",
+ "payoff": "by 2054 every billionaire had an island. you had a tin of custard.",
+ "slams": [
+  {
+   "type": "stat",
+   "at": "His tax rate",
+   "text": "UNDER 1%",
+   "sub": "his california tax rate"
+  },
+  {
+   "type": "stat",
+   "at": "The VAT",
+   "text": "20%",
+   "sub": "VAT on your freddo",
+   "edge": [
+    201,
+    43,
+    56
+   ]
+  },
+  {
+   "clear": "Just another"
+  },
+  {
+   "type": "stat",
+   "at": "Tax havens",
+   "text": "CAYMAN ISLANDS",
+   "sub": "about $500bn booked there",
+   "size": 92
+  },
+  {
+   "clear": "Then Meta"
+  },
+  {
+   "type": "stat",
+   "at": "Two hundred",
+   "text": "$219,500,000,000",
+   "sub": "the fine",
+   "size": 96
+  },
+  {
+   "type": "stat",
+   "at": "knocked",
+   "text": "$25,000,000,000",
+   "sub": "knocked down to",
+   "size": 96
+  },
+  {
+   "clear": "The President's"
+  }
+ ],
+ "pictures": [
+  {
+   "key": "s5-zuckerberg"
+  },
+  {
+   "at": "The VAT",
+   "key": "s5-freddo"
+  },
+  {
+   "at": "Just another",
+   "key": "s5-zuckerberg"
+  },
+  {
+   "at": "Maybe ask",
+   "key": "s5-piers"
+  },
+  {
+   "at": "perusing",
+   "key": "s5-metaverse"
+  },
+  {
+   "at": "Where does",
+   "key": "s5-cayman"
+  },
+  {
+   "at": "Then Meta",
+   "key": "s5-meta"
+  },
+  {
+   "at": "Even Man",
+   "key": "s5-mancity"
+  },
+  {
+   "at": "The President's",
+   "key": "s5-sazan"
+  },
+  {
+   "at": "Thousands",
+   "key": "s5-tirana"
+  },
+  {
+   "at": "A treadmill",
+   "key": "s5-treadmill"
+  },
+  {
+   "at": "He looks",
+   "key": "s5-musk"
+  }
+ ],
+ "name": "short05-pay-my-tax-boss"
+}

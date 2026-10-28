@@ -1,0 +1,19 @@
+{
+ "clips": [
+  {
+   "id": "k05-denise-grill",
+   "plate": "k05-denise-grill",
+   "mode": "frames",
+   "chars": [],
+   "full": "The woman by the toaster keeps watching the cook, breathes out slowly through her nose, shifts her weight on the counter and gives one small, tired shake of her head. Everything else stays where it is. Fixed camera, one continuous shot, normal speed. Sound: a flat-top grill sizzling, a spatula scraping, plates clattering, a busy diner murmuring with no clear words. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "k06-barry-sign",
+   "plate": "k06-barry-sign",
+   "mode": "frames",
+   "chars": [],
+   "full": "He stands still on the pavement at night, head tipped back, then slowly breathes out a small cloud of breath in the cold air and lowers his chin a little. Everything else stays where it is. Fixed camera, one continuous shot, normal speed. Sound: night traffic on a wet road, a distant siren, the electric hum of a lit sign. No dialogue. No music. Thanks."
+  }
+ ],
+ "note": "k06's first prompt ('The man in the hi-vis jacket stands still under the sign...') was refused: 'might violate our policies about generating prominent people'. The reworded prompt above passed first time (2026-10-18)."
+}

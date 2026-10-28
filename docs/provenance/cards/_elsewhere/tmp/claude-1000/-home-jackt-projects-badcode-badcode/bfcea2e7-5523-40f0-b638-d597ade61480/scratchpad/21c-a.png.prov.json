@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/21c-a.png",
+ "made": "2026-10-26T16:19:07+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, close on the face of a tall skinny mayor with a long narrow face, hollow cheeks and a pencil-thin grey moustache, lying on his back on bundles of blank green paper money with no printing: one blank green banknote lies over his face, its edge lifted by his breath, showing one glazed, heavy-lidded real-skinned eye, the moustache and a lazy smile beneath. A heavy gold mayoral chain lies across his chest; his bowler is tipped back on the bundles. A caged bulb above lights him warm; everything else is black. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "67ff46f6-d70c-4318-a14f-15770e0947a0",
+ "why": "Speakeasy Mint scene 21 round 1, 21c"
+}

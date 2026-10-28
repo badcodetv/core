@@ -1,0 +1,4 @@
+- Two earlier tries at "Best one with a new voice", both written outside a clean room:
+  - Its exact Style box with a new voice sentence added on top. Jack: "all went weirdly American".
+  - Its stored prompt rebuilt with Kai's lyrics and six English voices. Jack: it "strayed from the vibe". Measured against Best one, those takes were flatter (loudness range 6 LU vs 12.4), brighter (spectral centroid 3.4–4 kHz vs 2.6) and faster in the vocal; Kai's lyrics are about 1.5× as many words as the ones Best one was made with.
+- The last round (eight new prompts, not built on Best one's box) has not been heard by Jack.

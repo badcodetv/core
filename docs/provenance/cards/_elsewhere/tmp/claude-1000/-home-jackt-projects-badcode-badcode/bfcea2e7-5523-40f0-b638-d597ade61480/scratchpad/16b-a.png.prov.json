@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/16b-a.png",
+ "made": "2026-10-26T15:42:11+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night just after rain on a 1930s city street: wet cobbles, an iron street lamp overhead, a shop window full of loaves glowing warm behind, under a plain blank sign, an ultramarine sky with a small red moon. Side-on, waist up, in a crowd: a broad young white docker in overalls with a red scarf and a broken front tooth on the left and a tall middle-aged Black woman in a factory smock with a blue scarf and grey in her hair on the right, profile to profile, nose to nose, both shouting with mouths wide, real-skinned faces wet with rain and sweat. Each has a thin brown paper pay envelope with no writing on it sticking out of a back pocket at the outer edge of the frame, the two envelopes exactly the same. The street lamp lights them hard from above; the shop window of loaves glows warm between their faces; red and blue scarves blur behind. Most of the frame in shadow; the brightest values are the lamp on their faces and the two envelopes. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "3fed75a3-000c-4536-8450-0dc78b86d042",
+ "why": "Speakeasy Mint scene 16 round 1, 16b"
+}

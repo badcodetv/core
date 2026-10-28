@@ -6,5 +6,7 @@ if a theme accumulates, promote it to its own section.
 
 Current residents:
 
+- [`2026-10-15-meeting.md`](./2026-10-15-meeting.md) — Jack and Kai, 15 Oct 2026: narration not lip-sync, the protest as the distraction, Karen's cliffhanger, Tarquin's ayahuasca ending, GPOM simplified, the BadCode universe
+- [`2026-10-14-meeting.md`](./2026-10-14-meeting.md) — Jack and Kai, 14 Oct 2026: short-form only, the bank robbery short, the balaclava presenter
 - [`home-graph.md`](./home-graph.md) — homepage graph/structure notes
 - [`AGENTS_RESEARCH.md`](./AGENTS_RESEARCH.md) — raw research substrate behind the agent-orange design spec

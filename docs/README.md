@@ -10,6 +10,7 @@ about to add a file here, it goes in exactly one of these places.
 | [`stories/`](./stories/) | Per-story canon (`stories/<story>/` — concept, characters, beats, songs). Source of truth for everything a story produces. | …we've committed to making it. Promoted from `ideas/` via the `new-story` skill. |
 | [`ideas/`](./ideas/README.md) | The idea inbox — raw, minimal-prose seeds with an index table. | …it just popped and we want it out of our heads. Captured via the `new-idea` skill. |
 | [`marketing/`](./marketing/README.md) | Marketing & release plans — channels, campaigns, positioning, launch sequencing. | …it's about *reaching people*, not making the thing. |
+| [`provenance/`](./provenance/README.md) | How every piece of a film was made: a recipe card per generated file, each scene's trail of published pages and notes, and the frozen recipe of every finished cut (Kai, 2026-10-23). | …you generated or published something, a cut is done, or a better model came out. |
 | [`misc/`](./misc/) | Anything that fits none of the above. | …in doubt. Better parked here than lost. |
 
 The promotion path is **`ideas/` → `stories/`**: an idea graduates when we commit to it
@@ -17,8 +18,8 @@ and `new-story` scaffolds its canon folder.
 
 ## Toolkit & production (skill-owned — don't file content here)
 
-- [`shorts/`](./shorts/README.md) — short-form music-video packages (`music-video-short` skill)
-- [`brand/`](./brand/README.md) — **the BadCode logo** — "The Look" (ring + off-centre red dot, `badcode` with a red o), ruled 2026-09-29: its settings, rules, and every file in [`brand/logo/`](./brand/logo/) (icon, name, lock-ups, favicon, avatar). The 2026-09-13 curly-brace logo is in `brand/archive/`
+- [`shorts/`](./shorts/README.md) — short-form music-video packages (made by the archived `music-video-short` skill; shorts now come from `new-scene` clips)
+- [`brand/`](./brand/README.md) — **the BadCode logo** — the ring with an off-centre red triangle, `badcode` whose o is the ring-with-triangle, ruled 2026-10-15 (provisional): its settings, rules, and every file in [`brand/logo/`](./brand/logo/) (icon, name, lock-ups, favicon, avatar). The 2026-09-29 ring-with-dot and the 2026-09-13 curly brace are in `brand/archive/`
 - [`images/`](./images/README.md) — standalone brand imagery catalogue (`new-image` skill)
 - [`suno-gpt/`](./suno-gpt/README.md) — Suno toolkit (`suno-prompt` skill): prompt language, the control sliders, the recurring-narrator stack, and what Suno reliably gets wrong
 - [`ai-studio/`](./ai-studio/README.md) — Google AI Studio **voice** toolkit (`gemini-3.1-flash-tts-preview`): the Composer UI map, the four-part prompt structure, the 5,000-voice library, audio tags, limits and traps. 🔑 The first engine that did not sound like AI — accent still open

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d1/17-15-crowd0-b.wav",
+ "made": "2026-10-27T19:24:28+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice3.py --round D1 (via scripts/aistudio-tts.py)",
+ "why": "second-half-b-the-door line 15 phrase 0, take b; whisper heard 'Yes!'",
+ "prompt": "# AUDIO PROFILE\nOne of the hundred survivors in a Cold War bunker under a Wiltshire hill: a man in his forties, a former bus driver.\n\n## THE SCENE\nThe corridor behind the blast doors. A small robot at the door has just asked whether any of them would go back and change how it all went down, if they had the chance. Everyone answers at once.\n\n### DIRECTOR'S NOTES\nStyle: heartfelt and certain, no hesitation; called out from the crowd.\nPace: quick, one breath.\nAccent: West Country, as heard in Swindon. Never American.\n\n### SAMPLE CONTEXT\nOne voice in a crowd all answering a question at the same moment.\n\n### TRANSCRIPT\nYes.",
+ "settings": {
+  "voice": "Orus",
+  "direction": "None"
+ }
+}

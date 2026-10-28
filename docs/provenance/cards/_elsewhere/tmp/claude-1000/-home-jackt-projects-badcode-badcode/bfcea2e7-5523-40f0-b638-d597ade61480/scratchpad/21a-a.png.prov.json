@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/21a-a.png",
+ "made": "2026-10-26T16:18:04+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, seen straight down from high overhead onto the top of a mountain of bundles of blank green paper money with no printing, each tied with a rubber band, in a deep 1930s brick bank vault: a tall skinny mayor with a long narrow face, hollow cheeks and a pencil-thin grey moustache, his bowler hat tipped back, a heavy gold mayoral chain lying on his chest, his shoes off and his socks on, trousers rolled to the shin lies spread out on his back on the bundles like a sunbather on a beach, one blank green banknote laid over his face like a newspaper, a champagne glass balanced on his belly, arms flung wide. One caged bulb hangs low just out of frame, throwing a warm round pool of light on him like sun; the pile falls away into black all round. In one corner of the frame, the bars of a pavement-level window and the snowy boots of a queue outside, cold blue. Most of the frame in deep shadow; the brightest values are the pool of light on him and the gold chain. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "4d6190d1-29b7-46b4-a6f2-5996b689cd20",
+ "why": "Speakeasy Mint scene 21 round 1, 21a"
+}

@@ -1,0 +1,244 @@
+{
+ "about": "Kai's first notes on this page (23 Oct, kai_round1, verbatim) with Claude's replies, and the plan on top. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
+ "round": 5,
+ "plan": [
+  {
+   "h": "Round 6 (23 Oct): scene E's picks in",
+   "items": [
+    "The film now ends on the Houses of Parliament at night in the rain under 'Now the real work starts.'; the phone screens in E are painted in-camera (no overlay). Reel 2:59.8, -16.0 LUFS."
+   ]
+  },
+  {
+   "h": "Round 5 done (23 Oct): your four picks animated and cut in",
+   "items": [
+    "The step-out on grass (no mud); Derek beside Sandra, lip-synced; the lady lifts her own tea; a silent close-up of her as the plan sinks in.",
+    "The reel is 2:59.8 (C 0:00, D 0:57, E 2:27.3), -16.0 LUFS. Flow 44 credits; ledger 1114 of 1500."
+   ]
+  },
+  {
+   "h": "Round 4 (23 Oct, your 8 notes): what changed, and what waits for your picks",
+   "items": [
+    "DONE (free): C's door shot cut (C opens on the walk-out); straight to the rainbow on the lady's face; 'Milk, two sugars.' only; the 'they sit' wide trimmed before the man sits up; the white fades in while they still hold hands. The reel is 2:56.3 (was 3:08.8).",
+    "STILLS FOR YOU TO PICK (no video spent): the step-out without mud; Derek beside Sandra; the lady in her chair picking up her tea; a silent close-up of the lady realising. Each becomes one clip once picked.",
+    "D's cut line 'You don't. Believing it is your bit.' now reads 'You don't. You go on your feelings.' in the canon; its beat is cut, so it isn't voiced."
+   ]
+  },
+  {
+   "h": "E's last line is in (23 Oct)",
+   "items": [
+    "Kai's pick (Suno rev H, take 22571839): 'I made it. Now the real work starts.' Cut on the take's silence map: 'I made it.' 0.00-0.85 s, 'Now the real work starts.' 4.13-6.38 s.",
+    "The pause between them is KEPT whole (3.2 s): the picture holds it. 'I made it.' on the coda's held chord (9.1 s into the bus shot), 'Now the real work starts.' as the cello's last phrase begins; fade to black 0.7 s after the last word.",
+    "'I made it.' keeps a 40% trace of Maddie's speaker; the second sentence is his own voice. The music ducks 6 dB under both. Whisper hears it exactly, in E's mix and in the reel."
+   ]
+  },
+  {
+   "h": "Round 3 done (23 Oct): your three notes on scene C",
+   "items": [
+    "C 0:03 (at83): the old C01 is back; it has the narrow doors and step your at63 note was about: option to mud the step (~12 credits).",
+    "C 0:10 and 0:18 (at253, at440): Maddie at her true size, knee-high, in both shots, from her canonical reference, bunting on.",
+    "D and E unchanged since round 2; the reel is rebuilt around the new C."
+   ]
+  },
+  {
+   "h": "Round 2 done (23 Oct): what changed",
+   "items": [
+    "DONE. The reel is now 3:08.8 (was 3:02.6): C 0:00, D from 1:04.2, E from 2:36.2. -16.0 LUFS, true peak -1.4 dBFS; delivery-qc 5 ok / 3 warn / 1 fail (the inherited stray-pixel note). No Premiere, nothing published by this run.",
+    "Every note on this page is answered under its slip. Flow: 81 credits (one re-roll, on the lady's lip-sync clip). Ledger 1036 of 1500.",
+    "FOR YOUR EAR AND EYE: Maddie's accent on 'Suits on' (measured, not heard); the lady's two x1.3 phrases; the wafer's surface turning to an oily swirl in the vast-room shot; the camera drifting right on the bus; C01's faces now in silhouette.",
+    "STILL OWED: the AI's last line (your new words, then Suno, then your pick)."
+   ]
+  },
+  {
+   "h": "Round 2 on the ending (your notes on this page, 23 Oct): what changes",
+   "items": [
+    "C, 0:02 (c1): the first shot from inside the bunker is re-made: the same wide doorway as the outside shots, and mud outside. Flow.",
+    "D, 1:05 (d1): Maddie's 'Suits on, please. It's a clean room.' re-voiced with her West Country accent pushed. Done; picked by measurement, your ear decides.",
+    "D, 1:27 (d3): the wafer big again in the vast-room shot (Flow). The lady's new, stern line in your words; a new lip-sync clip of her with the rainbow on her face (Flow). Maddie's line stays your pick.",
+    "D, 1:37 (d4): 'Is that tea?' cut. Done.",
+    "D, 1:46 (d6): the music carries on under the speech. Done.",
+    "E, 2:47 (e3): the red bus re-made on an empty road, with its tail. Flow.",
+    "E, 2:55: the AI's last line waits for the Suno takes and your pick. Slot held.",
+    "Flow budget for the round: 70 credits at most (about five clips)."
+   ]
+  },
+  {
+   "h": "Rebuilt 23 Oct: C round 2, D and E round 1",
+   "items": [
+    "The reel is now 3:02.6 (was 3:29.9): C 0:00, D from 1:04.2 (0.4 s dissolve), E from 2:30.0 (hard cut on sound: the silence after 'Boss...', then 'Mind how you go.' from the phone).",
+    "-16.0 LUFS, true peak -2.0 dBFS; delivery-qc 5 ok / 4 warn / 1 fail (the inherited stray-pixel range note).",
+    "OWED: the AI's last line at the end of E is a silent slot until the Suno take is recorded.",
+    "The 'Kai to rule' list below is from the 22 Oct autonomous round and is mostly superseded by your notes on C, D and E."
+   ]
+  },
+  {
+   "h": "The Ending: the biggest calls for you to rule on",
+   "items": [
+    "KAI TO RULE: The last line is \"I made it. They didn't.\" Your \"Don't make me come back twice\" (and a re-aimed draft) are in the same Suno take and can go back in for free. Reason: reviewers heard the imperative as a threat at the woman on the bus.",
+    "KAI TO RULE: \"It only sends one back. Me.\" (D03) names the machine's passenger and the AI's own interest. It is a TTS stand-in voice until a Suno take can be recorded, and it must agree with your vote scene.",
+    "KAI TO RULE: Derek's trust is won by an admission and an act: \"Does it even work?\" / \"I don't know if it works.\", then Derek sits first and the hundred follow. The exploit (\"up your sleeve\") payoff is cut.",
+    "KAI TO RULE: Maddie lives and is left alone: \"Boss?\", a silence, \"...Mind how\" / (on the phone) \"...you go.\". Her being left is the cost; her dying would be a cheaper second ending.",
+    "KAI TO RULE: The beneficiary is said once, plainly: \"That the companies cutting the jobs kept the gains. And you paid.\"",
+    "KAI TO RULE: The goodbye is \"Did you put the seat down?\" / \"Yes, love.\" (\"Seat down\" was heard as \"Sit down\").",
+    "KAI TO RULE: C into D is a 0.4 s dissolve (the light carries from the step into the white room, and it ends as D's first word lands); D into E is a hard cut on the split line.",
+    "KAI TO RULE: No vote slate at the head. A 2 s \"[THE VOTE: Kai's scene]\" card was suggested by the cold-viewer review; it was not added, because the vote is your scene to place.",
+    "KAI TO RULE: Every AI line reads low and gravelly (the newsreader Voice). A warmer re-take of the ending is owed once Suno playback can be recorded."
+   ]
+  },
+  {
+   "h": "How the reel is built",
+   "items": [
+    "Three scene cuts joined: C 0:00 to 0:45.5, D from 0:45.1 (0.4 s dissolve), E from 2:38.8 (hard cut). Total 3:11.3.",
+    "The audio is the three finished scene mixes joined with the same fades and normalised once to -16 LUFS, limited to -2.5 dBTP, not remixed from stems. Why: each scene was already balanced, and a remix would change levels nobody has noted yet.",
+    "Nobody has listened to any of it by ear: every level, duck and placement was measured. The Gemini listen tool was used by the reviewers only."
+   ]
+  },
+  {
+   "h": "The review: two rounds, four lenses, every finding verified by a second agent",
+   "items": [
+    "Round 1, the trust beat never showed anyone choosing (story, shots and cold viewer, all major): fixed with new footage; the admission plays on Derek's face, he sits, the hundred follow.",
+    "Round 1, the last line read as a threat (story and cold, major): draft 4 tried; round 2 still heard a call to action, so the line was cut to \"I made it. They didn't.\"",
+    "Round 1, \"Seat down\" heard as \"Sit down\" (major): re-worded and re-voiced, checked with whisper on the mix.",
+    "Round 1, C03 dragged with no reveal (shots and cold, major): remade and cut from 22 s to 10.5 s, opening close on Maddie alone.",
+    "Round 1, monumental shots without a cost (D13, the wafer, D14): the hands go slack before the white, a costed wafer shot, boot prints all pointing in.",
+    "Round 2, the AI's own interest never said and the time machine never named (story and cold, major): \"It only sends one back. Me.\" added in D03.",
+    "Round 2, D's levels broken, D sat 10 dB under C and E (craft and cold, major): fixed at the cause (per-atom gain, -1 dBFS cap, an RMS check that fails the build).",
+    "Round 2, Derek's sit contradicted the rows: re-made with every chair behind him empty; he sits first.",
+    "Also fixed: London coding of the street (green and cream bus), the closed bank (lettered and carried into E03), the D03 wafer melt, the mug mismatch, D10's repeat, the C07 reflection, the C02 pole, the E02 phone melting, synthetic rain replaced by recorded beds."
+   ]
+  },
+  {
+   "h": "What is still weak",
+   "items": [
+    "The new D03 AI line is a different voice (TTS stand-in) from every other AI line.",
+    "The AI's read is low and gravelly everywhere; softened in post at the end, not re-performed.",
+    "Nothing has been heard by a human ear; all mixing was by measurement.",
+    "Soft reframes on 720p sources: C03's 160% opening, C05's 140%, D13's 200%.",
+    "C07's Maddie wanders before the step; E03's bus only reaches mid-distance; D04 holds 7 s on one face.",
+    "The scenes depend on your vote scene (\"Go on, then. You lead.\", \"It only sends one back. Me.\", \"Back then\").",
+    "delivery-qc still FAILs range on every preview (x264 ringing after the clamp, the same as scene A); these are previews, not deliverables."
+   ]
+  }
+ ],
+ "replies": {
+  "at63": "Agreed. C01 (the first shot, from inside the bunker) is re-made so the doorway is the same wide blast-door opening you see from outside in C01b/C02, and the ground beyond it is the same wet, churned mud. One new still (free) and one clip, about 12 credits.",
+  "at1581": "Agreed, and found why: her direction for this line said 'polite and brisk, a host with house rules', which pulled her prim and neutral. Re-voiced with the accent pushed for this line only ('strong, broad West Country... being polite makes it broader, never posher'). 8 new takes; picked by measuring each against an RP read and a broad-Bristol read of the same words: the old take was the most RP of all, the new pick is the most West Country of the clean ones. Nobody has listened yet: your ear decides.",
+  "at2108": "Both done. (a) The vast-room shot is re-made with the wafer big again, filling the middle of the frame; the rainbow on her face stays (it's from the clip of her, which is kept as the look). (b) Her new line, in your words, voiced stern and grave, not reassuring: 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' It's 10.8 s, so it gets a new lip-sync clip of her with the rainbow on her face, and the middle of it plays over a cutaway. The 'I trust your boss' part is dropped, per your later note.",
+  "at2347": "Done: 'Is that tea?' is gone. Maddie just tells her: 'Milk, two sugars. I kept your loyalty cards.'",
+  "at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
+  "at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
+  "at4010": "Agreed. The red bus is re-made with an empty road: no other car anywhere, and the chained tail clip re-made from it so the bus pulls away alone. About 24 credits.",
+  "at4214": "Done: your pick is in (Suno revision H). 'I made it.' lands on the music's held chord; the take's own 3.2 s pause is kept, so 'Now the real work starts.' arrives as the cello's last phrase begins. The bus shot holds it: the fade to black starts 0.7 s after the last word (the clip runs out, so the planned 1.9 s hold is shorter). The music dips under both sentences.",
+  "at83": "Agreed, and yes, the shot I made was not built on Maddie's reference: it was a reverse angle from the outside shot, and her shape drifted. The old shot is back (the round-1 one). It conflicts with your earlier note here (at63: the doors look narrower from inside, and no mud outside), so it has the narrow doors and the concrete step again. Option, if you want both: the old shot with only the step turned to mud (a still I already have, the same Maddie and faces; ~12 credits to animate). The doors can't be widened on that picture.",
+  "at253": "Fixed. Maddie is now knee-high, standing in the mud just in front of the man's feet. Shrinking her in place didn't work, so she was taken out of the picture and the canonical Maddie (the s3 bot, bunting and all) put back at her true size, then re-animated (6 s, 10 credits).",
+  "at440": "Fixed the same way: knee-high, just ahead of the front of the line, leading them, bunting low (8 s; one re-roll because Omni grew a little pennant pole on her; 24 credits). The shot is framed a little wider than before, and Omni drifts the camera slowly forward.",
+  "at73": "Done: the door shot is cut, and Maddie's 'Go on. I promise you'll be okay.' / 'You've got my word.' with it. C now opens on the first ones stepping out (scene B ends on 'Come back tomorrow', the door and Maddie rolling away). C is 57.0 s (was 64.6).",
+  "at299": "Done with your pick (c01br6-a): they step out onto scene B's trampled grass, no mud, Maddie knee-high. One 6 s clip (10 credits).",
+  "at896": "Done with your pick (C05r6-b): Derek walks level with Sandra the whole way, and his line is lip-synced on his mouth (read from the picture). Then his flat look as he turns to her. One 8 s clip (12 credits).",
+  "at2055": "Done: the listening shot is cut. Maddie's whole line now plays on her (its pauses held a little tighter so it fits her clip), and it cuts straight to the rainbow on the old lady's face as she answers.",
+  "at2525": "Done: 'Milk, two sugars.' only, and with your pick (D06r6-a) the old lady, lying back in her chair, reaches down and lifts her own mug. One 8 s clip (12 credits).",
+  "at2714": "Done: the shot now ends before the man nearest the camera sits up and someone sits in behind him (it plays 3.5 s, was 5.6). The rest of the clip covers the beat: the lady's question starts over it as before.",
+  "at2787": "Done with your pick (D11c6-d): after Maddie's answer, 3.6 s on the old lady's face, silent: her eyes fix on the robot, a breath, one small nod. Then the hands. One 6 s clip (10 credits).",
+  "at3282": "Done: the white now fades up over 1.5 s while their hands are still gripping. They never let go on screen."
+ },
+ "kai_round1": {
+  "at4214": {
+   "note": "I'm just checking that we know that we do not have this audio. I didn't hear him say any words here.",
+   "beat": "e3",
+   "tc": "00:02:55:14"
+  },
+  "at2347": {
+   "note": "I think we just drop the is that tea here and we just use the milk two sugars bit I Don't think we have the old lady saying is that tea we just tell her milk two sugars I think that we don't need this bit of the speech. Thank you",
+   "beat": "d4",
+   "tc": "00:01:37:19"
+  },
+  "at4010": {
+   "note": "It's really good that the bus is red, but unfortunately the car drives straight into the bus. So it's a perfect scene, we just need to redo it such that there is not another car on the road that it drives into.",
+   "beat": "e3",
+   "tc": "00:02:47:02"
+  },
+  "at2566": {
+   "note": "I think we should keep the music running here and also what I'm now realizing is the comments I said earlier about what the old lady says might not I think on the previous note when Maddy says are you sure about this and the old lady says yes this has been the worst outcome if there's a chance to go back in time to fix it then I'm going to take it let's not say I trust your boss to sort the politics out because that's actually handled in these scenes sorry to be confusing but this this stuff is great this actually works really well",
+   "beat": "d6",
+   "tc": "00:01:46:22"
+  },
+  "at63": {
+   "note": "The feedback on this scene is that the doors from before I think are much wider, so it just feels a bit odd that there's a disconnect between the doors from outside and the doors from inside. It feels like we could recut this scene again, especially if you look at the next scene, it's muddy and the doors are much wider than they appear from the first picture, so I think we could recut this scene here.",
+   "beat": "c1",
+   "tc": "00:00:02:15"
+  },
+  "at1581": {
+   "note": "Here, she's not sounding nearly like the Maddie before, it's not the West Country accent that we heard before, we need to change that.",
+   "beat": "d1",
+   "tc": "00:01:05:21"
+  },
+  "at2622": {
+   "note": "It's important to say that the music should carry on underneath the speech at this point.",
+   "beat": "d6",
+   "tc": "00:01:49:06"
+  },
+  "at2108": {
+   "note": "OK, two things about this scene is that the wafer is far too small. I don't think we, I think the reflection of the wafer is brilliant on the old woman's face, but the wafer itself looks like it's now tiny. I also think the old woman shouldn't be so happy. At the moment it's like, yes, don't worry, we're fine, we're happy. I think it should be like, you know, I think we need to maybe, the old lady say, well, look, it's been the worst possible outcome we could imagine. If there's a chance that we could go back in time to change it, then I want to take that chance. I think those are powerful words. It might need a bit more video cut to get that in there, but with the rainbow on her face and her delivering those words, but sternly, like her life relies upon it, because it kind of does. I think this is the point. Look, this has been the worst possible outcome for humanity. If we could go back in time to change it, I want to take that chance.  also then I think and I think your boss knows how to up you know I think we should say it like I and and I trust your boss when he gets back there to start work on the politicians I think we need to say that And I understand that we have we've expanded this part, but I think it's important for the narrative",
+   "beat": "d3",
+   "tc": "00:01:27:20"
+  }
+ },
+ "kai_round2": {
+  "at83": {
+   "note": "Hey Claude, so yeah, this doesn't look anything like Maddy. Did we use the character of Maddy? Also the bunting across the door doesn't work. Like, to be fair, the old shot looks much better.",
+   "beat": "c1",
+   "tc": "00:00:03:11"
+  },
+  "at253": {
+   "note": "Here, Maggie is about twice as big as she should be.",
+   "beat": "c2",
+   "tc": "00:00:10:13"
+  },
+  "at440": {
+   "note": "The same here, Maddy is about twice as big as she should be compared to the humans.",
+   "beat": "c2",
+   "tc": "00:00:18:08"
+  }
+ },
+ "kai_round3": {
+  "at2055": {
+   "note": "This particular clip I think we cut because it leaps straight to the just a reflection on the old lady's face So yeah, we just I think this we just left it in let's get rid of this one, please. Thank you",
+   "beat": "d3",
+   "tc": "00:01:25:15"
+  },
+  "at2525": {
+   "note": "I think here we don't need to say I kept your loyalty cards. I think we just say milk two sugars Also, it's a bit odd how the tea is being picked up It's like I would expect the person to be in the chair and picking the tea up. So maybe we should recut the scene",
+   "beat": "d4",
+   "tc": "00:01:45:05"
+  },
+  "at2714": {
+   "note": "On this scene, it's great apart from the one guy right in the middle closest to the camera the way He's a he's facing away from everybody and be the way that he sort of Sits up and somebody sits just behind him. So I think we need to recut this just without that bit",
+   "beat": "d6",
+   "tc": "00:01:53:02"
+  },
+  "at2787": {
+   "note": "I think we need another shot here of the lady, kind of like facial expression of like, oh, OK, that's a good idea, but not saying anything, just like a close‑up of the lady's face, because I think what that communicates, the audience says, oh, OK, yeah, that's what we do need to do. So, we need like an additional shot, because it cuts too quickly to Sandra and Derek.",
+   "beat": "d6",
+   "tc": "00:01:56:03"
+  },
+  "at299": {
+   "note": "On this scene we need to reference the earlier scenes shot outside the bunker. Let's make it not like it is so muddy. It's just not consistent. The tracks I like on the scene afterwards, but on this one this is too muddy compared to how I'd expect it to be. So it's just a consistency issue.",
+   "beat": "c2",
+   "tc": "00:00:12:11"
+  },
+  "at3282": {
+   "note": "I think here we should fade the white out whilst they're holding hands, the fact that they stop holding hands, they might as well keep holding hands, I really like that, and then it just fades out over the top of that would be great.",
+   "beat": "d8",
+   "tc": "00:02:16:18"
+  },
+  "at73": {
+   "note": "Hey Claude, OK, so it still looks like these doors are far too narrow, and it's totally different to... I don't think we need this scene, because on the previous scene what we've decided is that we're just going to cut to coming back tomorrow. And then, so I don't think we need this scene here.",
+   "beat": "c1",
+   "tc": "00:00:03:01"
+  },
+  "at896": {
+   "note": "The problem with this is he sort of like jumps behind Sandra somehow, it's not quite consistent enough, so he needs to be alongside Sandra just like he is in the other shot.",
+   "beat": "c4",
+   "tc": "00:00:37:08"
+  }
+ }
+}

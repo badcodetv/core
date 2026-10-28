@@ -1,0 +1,20 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "money-for-something/host-v2/D7-b.jpg (not on D:; the image is kept in Flow, find it by source_id)",
+  "made": "2026-10-25T10:33:00+00:00",
+  "by": "claude",
+  "kind": "image",
+  "engine": "flow",
+  "tool": "flow-mcp",
+  "model": "Nano Banana 2",
+  "why": "Jack 25 Oct: new Flow project, many host designs, avoid AI slop",
+  "source_id": "4b65c817-d9ae-4058-b9a4-04b606ee0d57",
+  "prompt": "Photograph a figure alone in an open-plan newsroom after hours, taken from a high angle from the top of a stairwell, with the blurred handrail cutting the near foreground. He stands at a desk among rows of empty chairs, typing with two gloved fingers. His whole head is wrapped in white stretch fabric pulled so taut it looks moulded, with no eye or mouth holes and no seams; a thin black ring is stitched around the face, and high inside it, over one eye, a small red triangle with rounded corners. Black roll-neck, a narrow black suit, black leather gloves. One monitor is on at his desk and lights him from below in cold blue; one overhead strip light far behind him is still on. Coffee cups and loose papers on the desks. Ektachrome, cool, fine grain. Thanks.",
+  "inputs": {
+    "flow_project": "d5559719-088b-4f35-ab61-31b0feb4b502"
+  },
+  "settings": {
+    "aspect": "16:9",
+    "count": "2"
+  }
+}

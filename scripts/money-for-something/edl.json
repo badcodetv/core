@@ -1,0 +1,708 @@
+{
+ "entries": [
+  {
+   "item": "f01a-may-2017.mp4",
+   "start": 0.0,
+   "inp": 0,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f01b-may-2016.mp4",
+   "start": 3.0,
+   "inp": 0,
+   "dur": 4.708333333333333,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s01-nice-try.wav",
+   "start": 3.2083333333333335,
+   "inp": 0,
+   "dur": 4.44,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "s02-00-wide.mp4",
+   "start": 7.708333333333333,
+   "inp": 0.0,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s02-01-host-title.mp4",
+   "start": 10.708333333333334,
+   "inp": 0.5833333333333334,
+   "dur": 5.416666666666667,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s03-01-host-card-british.mp4",
+   "start": 16.125,
+   "inp": 0.5833333333333334,
+   "dur": 6.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s03-02-british-silent.mp4",
+   "start": 22.125,
+   "inp": 0.5,
+   "dur": 2.5,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s03-03-host-card-german.mp4",
+   "start": 24.625,
+   "inp": 0.0,
+   "dur": 5.416666666666667,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s03-04-german-silent.mp4",
+   "start": 30.041666666666668,
+   "inp": 0.2916666666666667,
+   "dur": 2.7083333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s03-05-host-card-politician.mp4",
+   "start": 32.75,
+   "inp": 0.0,
+   "dur": 4.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s03-06-politician-silent.mp4",
+   "start": 36.75,
+   "inp": 1.0,
+   "dur": 2.5,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f04a-kitchener.mp4",
+   "start": 39.25,
+   "inp": 0,
+   "dur": 2.2083333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f04b-britain-needs-you.mp4",
+   "start": 41.458333333333336,
+   "inp": 0,
+   "dur": 1.5833333333333333,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f04c-somme-men-walking.mp4",
+   "start": 43.041666666666664,
+   "inp": 0,
+   "dur": 2.5833333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f04d-trench.mp4",
+   "start": 45.625,
+   "inp": 0,
+   "dur": 2.5833333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s04-nineteen-fourteen.wav",
+   "start": 39.458333333333336,
+   "inp": 0,
+   "dur": 8.64,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "s04-01-host-round-one.mp4",
+   "start": 48.208333333333336,
+   "inp": 0.5,
+   "dur": 3.9166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s04-02-british-duke.mp4",
+   "start": 52.125,
+   "inp": 1.0,
+   "dur": 3.4166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s04-03-german-bosnia.mp4",
+   "start": 55.541666666666664,
+   "inp": 0.5,
+   "dur": 5.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s04-04-british-france.mp4",
+   "start": 60.541666666666664,
+   "inp": 0.5833333333333334,
+   "dur": 2.4166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s04-05-host-who-paid.mp4",
+   "start": 62.958333333333336,
+   "inp": 0.0,
+   "dur": 2.7916666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s04-06-host-lives.mp4",
+   "start": 65.75,
+   "inp": 0.7916666666666666,
+   "dur": 3.5,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s04-07-stare.mp4",
+   "start": 69.25,
+   "inp": 0.5,
+   "dur": 5.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s04-08-politician-watch.mp4",
+   "start": 74.25,
+   "inp": 1.0,
+   "dur": 3.5,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f05a-war-loan-poster.mp4",
+   "start": 77.75,
+   "inp": 0,
+   "dur": 2.2083333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f05b-shells.mp4",
+   "start": 79.95833333333333,
+   "inp": 0,
+   "dur": 2.2083333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f05c-shell-warehouse.mp4",
+   "start": 82.16666666666667,
+   "inp": 0,
+   "dur": 2.2916666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s05-nobody-asked-take3.wav",
+   "start": 77.95833333333333,
+   "inp": 0,
+   "dur": 6.36,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "s05-01-host-afford.mp4",
+   "start": 84.45833333333333,
+   "inp": 0.5833333333333334,
+   "dur": 3.2916666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s05-02-politician-shake.mp4",
+   "start": 87.75,
+   "inp": 0.0,
+   "dur": 5.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f06a-PLACEHOLDER-somme-men-resting.mp4",
+   "start": 92.75,
+   "inp": 0,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f06b-PLACEHOLDER-1949-queue.mp4",
+   "start": 95.75,
+   "inp": 0,
+   "dur": 2.7083333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f06c-PLACEHOLDER-1931-unemployed.mp4",
+   "start": 98.45833333333333,
+   "inp": 0,
+   "dur": 2.9166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s06-despite-the-debt.wav",
+   "start": 92.95833333333333,
+   "inp": 0,
+   "dur": 8.28,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "s06-01-host-homes.mp4",
+   "start": 101.375,
+   "inp": 0.0,
+   "dur": 3.9166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s06-02-politician-no-money.mp4",
+   "start": 105.29166666666667,
+   "inp": 0.0,
+   "dur": 2.5833333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s06-03-british-some-on-it.mp4",
+   "start": 107.875,
+   "inp": 1.5833333333333333,
+   "dur": 1.9166666666666667,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s06-04-politician-spoken-for.mp4",
+   "start": 109.79166666666667,
+   "inp": 2.5833333333333335,
+   "dur": 2.4166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s07-01-host-quickfire.mp4",
+   "start": 112.20833333333333,
+   "inp": 0.5,
+   "dur": 4.291666666666667,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s07-02-host-rules.mp4",
+   "start": 116.5,
+   "inp": 0.0,
+   "dur": 7.291666666666667,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f07a-berlin-bread-van-1923.mp4",
+   "start": 123.79166666666667,
+   "inp": 0,
+   "dur": 2.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s07a-shake.wav",
+   "start": 124.08333333333333,
+   "inp": 0,
+   "dur": 1.36,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "s07-03-german-wheelbarrows.mp4",
+   "start": 125.79166666666667,
+   "inp": 1.2083333333333333,
+   "dur": 4.208333333333333,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f07b-london-unemployed-1931.mp4",
+   "start": 130.0,
+   "inp": 0,
+   "dur": 2.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s07b-starve-take2.wav",
+   "start": 130.29166666666666,
+   "inp": 0,
+   "dur": 1.52,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "f07c-next-war-paratroops.mp4",
+   "start": 132.0,
+   "inp": 0,
+   "dur": 2.7916666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f08a-new-town-houses.mp4",
+   "start": 134.79166666666666,
+   "inp": 0,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f08b-guardsmen-building.mp4",
+   "start": 137.79166666666666,
+   "inp": 0,
+   "dur": 2.5833333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f08c-houses-cartoon.mp4",
+   "start": 140.375,
+   "inp": 0,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f08d-new-town-roads.mp4",
+   "start": 143.375,
+   "inp": 0,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f08e-hospital-cartoon.mp4",
+   "start": 146.375,
+   "inp": 0,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f08f-repairing-housing.mp4",
+   "start": 149.375,
+   "inp": 0,
+   "dur": 2.2083333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f08g-training.mp4",
+   "start": 151.58333333333334,
+   "inp": 0,
+   "dur": 2.4166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s08a-nineteen-forty-eight.wav",
+   "start": 135.0,
+   "inp": 0,
+   "dur": 7.84,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "line-s08b-built-the-houses.wav",
+   "start": 143.16666666666666,
+   "inp": 0,
+   "dur": 6.8,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "line-s08c-done-once.wav",
+   "start": 150.33333333333334,
+   "inp": 0,
+   "dur": 3.4,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "s08-01-plant.mp4",
+   "start": 154.0,
+   "inp": 0.0,
+   "dur": 6.5,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s09-01-host-dubs.mp4",
+   "start": 160.5,
+   "inp": 0.4166666666666667,
+   "dur": 5.916666666666667,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f09a-lehman-2008.mp4",
+   "start": 160.79166666666666,
+   "inp": 0,
+   "dur": 2.4166666666666665,
+   "v": 1,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f09b-budget-2014.mp4",
+   "start": 163.20833333333334,
+   "inp": 0,
+   "dur": 1.7083333333333333,
+   "v": 1,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f09c-press-conference-2020.mp4",
+   "start": 164.91666666666666,
+   "inp": 0,
+   "dur": 1.25,
+   "v": 1,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s09-02-politician-catches.mp4",
+   "start": 166.41666666666666,
+   "inp": 1.5,
+   "dur": 5.5,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s09-03-british-what-build.mp4",
+   "start": 171.91666666666666,
+   "inp": 0.0,
+   "dur": 4.208333333333333,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s09-04-host-house-prices.mp4",
+   "start": 176.125,
+   "inp": 1.2916666666666667,
+   "dur": 2.2916666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s09-05-politician-pockets.mp4",
+   "start": 178.41666666666666,
+   "inp": 2.5,
+   "dur": 3.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s09-06-host-minds-up.mp4",
+   "start": 181.41666666666666,
+   "inp": 0.9166666666666666,
+   "dur": 2.9166666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "f10a-may-2017.mp4",
+   "start": 184.33333333333334,
+   "inp": 0,
+   "dur": 2.2083333333333335,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "line-s10-what-happened-next.wav",
+   "start": 184.58333333333334,
+   "inp": 0,
+   "dur": 1.68,
+   "v": 0,
+   "a": 1,
+   "kind": "a"
+  },
+  {
+   "item": "f10b-caption-dup.mp4",
+   "start": 186.54166666666666,
+   "inp": 0,
+   "dur": 4.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s09-05-politician-pockets.mp4",
+   "start": 190.54166666666666,
+   "inp": 5.5,
+   "dur": 2.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s10-01-soldiers-hands.mp4",
+   "start": 192.54166666666666,
+   "inp": 2.0,
+   "dur": 4.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s10-02-host-next-time.mp4",
+   "start": 196.54166666666666,
+   "inp": 1.0,
+   "dur": 2.2916666666666665,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  },
+  {
+   "item": "s10-03-empty-room.mp4",
+   "start": 198.83333333333334,
+   "inp": 0.0,
+   "dur": 6.0,
+   "v": 0,
+   "a": 0,
+   "kind": "v"
+  }
+ ],
+ "markers": [
+  [
+   0.0,
+   "1 Cold open"
+  ],
+  [
+   7.708333333333333,
+   "2 Titles"
+  ],
+  [
+   16.125,
+   "3 Meet the panel"
+  ],
+  [
+   39.25,
+   "4 How did it start"
+  ],
+  [
+   77.75,
+   "5 Can we afford it"
+  ],
+  [
+   92.75,
+   "6 What happened next (PLACEHOLDER pictures)"
+  ],
+  [
+   112.20833333333333,
+   "7 Shake, Starve or Plant"
+  ],
+  [
+   132.0,
+   "7c NEEDS NARRATOR LINE: Then another war. And the money was found. Obviously."
+  ],
+  [
+   134.79166666666666,
+   "8 Plant (two new narrator lines still to render)"
+  ],
+  [
+   160.5,
+   "9 Sound Off"
+  ],
+  [
+   184.33333333333334,
+   "10 Final scores"
+  ]
+ ],
+ "total": 204.83333333333334
+}

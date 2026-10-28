@@ -85,5 +85,5 @@ from a **Flow Character** attached as a reference. Naming them in prose binds no
 
 **Platform craft** (how Flow behaves) is the rest of [`docs/flow/`](./README.md).
 **Driving it** is the `flow-automation` skill.
-**The BadCode look** stays in `badcode-art-direction` (panels) and `new-image` (brand imagery).
+**The BadCode look** stays in `new-image` (both registers; it absorbed `badcode-art-direction` on 2026-10-23).
 **Per-story prompts** live in `docs/stories/<story>/prompts.md`.

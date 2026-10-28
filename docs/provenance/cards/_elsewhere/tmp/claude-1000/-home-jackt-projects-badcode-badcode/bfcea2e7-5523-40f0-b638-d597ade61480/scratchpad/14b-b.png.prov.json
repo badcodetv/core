@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/14b-b.png",
+ "made": "2026-10-26T15:20:46+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night just after rain in a 1930s town square: wet cobbles, iron streetlamps, an ultramarine sky with a small red moon. Close on three faces in a crowd, large in frame, lit hard and white from one side by a sudden magician's flash off-screen: a heavy-set Black man in his fifties with a shaved head and a broken nose, a young South Asian woman in a headscarf, a skinny old white man in a flat cap. Real skin, mouths open, eyes wide, all staring the same way, the white light catching their wet eyes. Behind them the dark square, the soft gold of a doorway far off and the small red moon. Most of the frame in shadow; the brightest values are the flash on their faces. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "9345c556-a3ba-4ae5-9ac2-bce598b56698",
+ "why": "Speakeasy Mint scene 14 round 1, 14b"
+}

@@ -1,0 +1,32 @@
+Cut 7 = cut 6 with these pieces laid over it in place (V2 picture, A1 sound, silence on A3). Start, length, file, what.
+
+  43.958   2.250  c7-01055-s01c-blue.mp4                       talk: s01c-blue
+  46.208   6.958  c7-01109-s01d-red.mp4                        talk: s01d-red
+ 103.333   5.708  c7-02480-s05h-table-a.mp4                    talk: s05h-table-a
+ 109.042   4.000  c7-02617-s05h-gov.mp4                        talk: s05h-gov
+ 113.042   1.833  c7-02713-s05h-eyes.mp4                       talk: s05h-eyes
+ 124.083   2.792  c7-02978-s05e-red.mp4                        talk: s05e-red
+ 126.875   6.917  c7-03045-s05e-platform.mp4                   talk: s05e-platform
+ 133.792   1.583  c7-03211-s05d-donor.mp4                      talk: s05d-donor
+ 135.375   2.750  c7-03249-s05d-ex.mp4                         talk: s05d-ex
+ 142.583   1.958  c7-03422-s05d-bastard2.mp4                   talk: s05d-bastard2
+ 177.875   4.000  c7-04269-s07b-off-record.mp4                 talk: s07b-off-record
+ 196.917   5.000  c7-04726-s08h-corridor.mp4                   new: the street from a first-floor window
+ 201.917   5.583  c7-04846-s08b-remote-window.mp4              the man at the window (as cut 5), earlier
+ 207.500   4.333  c7-04980-s08a-placards2.mp4                  new: two placards in two hands, under "they agree on the first line"
+ 225.958   3.917  c7-05423-s08d-presenter3.mp4                 new: the Presenter at dusk, from the cobbles
+ 251.250   7.000  c7-06030-s08f-above.mp4                      new: two phones, one pallet, from a window above
+ 265.417   8.917  c7-06370-s09d-door2-b.mp4                    new: the masks go on in the doorway, lit by the street
+ 306.083   0.708  c7-07346-s11a-drill.mp4                      new: he is drilling
+ 306.792   1.458  c7-07363-s11c-why.mp4                        talk: s11c-why
+ 308.250   1.625  c7-07398-s11d-better.mp4                     talk: s11d-better
+ 309.875   1.750  c7-07437-s11a-drill-b.mp4                    still drilling, under "It's his bank"
+ 311.625   2.167  c7-07479-s11b-key.mp4                        new: the key, under "He's had the key the whole time"
+ 313.792   4.042  c7-07531-s11c-why-hold.mp4                   he stands there with the drill, under "The drill's for you"
+ 317.833   1.042  c7-07628-s11e-in.mp4                         talk: s11e-in
+ 318.875   3.667  c7-07653-s11f-count.mp4                      talk: s11f-count
+ 322.542   5.500  c7-07741-s11g-top.mp4                        new: the vault filling, from the ceiling corner, under "And it was"
+ 328.042   4.292  c7-07873-s11e-in-b.mp4                       the pallets still going in, the guard watching
+ 350.000   1.583  c7-08400-s12j-who-q.mp4                      talk: s12j-who
+ 351.583   1.500  c7-08438-s12k-he-q.mp4                       talk: s12k-he
+ 353.083   1.708  c7-08474-s12j-lot-q.mp4                      talk: s12j-lot

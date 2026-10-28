@@ -17,7 +17,7 @@ take up when that shortcut stops paying.
   discrete event"). A DAW does nothing else.
 - **It kills the bed-under-the-voice problem.** The GPOM narration sheet's one open fault is
   literally this: *"a faint bed still sits under him"*
-  (`docs/stories/gitpush-origin-master/songs/narration.md:3`). If we make the bed, there is no
+  (`docs/stories/gitpush-origin-master/songs/archive/narration-v5.5.md:3`). If we make the bed, there is no
   ghost bed.
 - **No download cap on our own audio.** Suno is rationing downloads; our own bounces are free.
 
@@ -38,7 +38,7 @@ take up when that shortcut stops paying.
   in Premiere. That rule was written for Suno beds — it is exactly the interface an Ableton bed
   plugs into, unchanged.
 - **A proven dry voice take.** `gpom-cut1voice-C-w30`, judged GOOD by Kai for emotion
-  (`docs/stories/gitpush-origin-master/songs/narration.md:3`). The voice half already works.
+  (`docs/stories/gitpush-origin-master/songs/archive/narration-v5.5.md:3`). The voice half already works.
 - **`docs/suno-gpt/session-method.md`** — one variable per round, diagnose before rewording. The
   method transfers to a mix.
 - 🔴 **Watch the assumption in the title.** Suno is not the only voice engine any more:

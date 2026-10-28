@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/9a-b.png",
+ "made": "2026-10-26T13:46:31+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. A grey winter afternoon in a 1930s schoolroom, seen from just behind a plump teacher in her forties with round wire glasses, frizzy brown hair with a grey streak pinned in a bun and a brown cardigan: her shoulder and her raised long wooden pointer fill the near foreground on the right, dark against the room. Facing us across the room, rows of grown adults in work clothes squeezed into tiny children's wooden desks, knees jammed up under the lids: a heavy-set Black baker in a vest and apron with a shaved head and a broken nose, a young South Asian mother in a headscarf, a skinny old white dock worker in a flat cap, a young Black man in overalls, a ginger woman in a factory smock, all looking up at her, real-skinned faces lit from the side. Tall windows down the left wall let in cold blue-grey daylight with snow falling outside; a pot-bellied iron stove glows orange through its grille; one green-shaded lamp hangs over the teacher's desk. Worn floorboards wet from boots, puddles of melted snow, damp coats steaming on hooks. Most of the room in shadow; the brightest values are the windows, the stove grille and the wet floor in front of it. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "240678df-a87c-4f52-8dde-364854d730aa",
+ "why": "Speakeasy Mint scene 9 round 1, 9a"
+}

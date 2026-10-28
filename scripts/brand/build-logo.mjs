@@ -1,4 +1,4 @@
-// Builds the BadCode logo files — "The Look" — from the settings Kai saved on the logo bench (2026-09-29).
+// Builds the BadCode logo files — the red triangle in the ring — from the settings Kai saved on the logo bench (2026-10-15).
 // Usage: node scripts/brand/build-logo.mjs            (writes docs/brand/logo/, needs the repo's `sharp`)
 // Change SET, re-run, never hand-edit an SVG. Geometry is the bench's own (design/research/2026-09-29-logo/tuner/).
 import { createRequire } from 'node:module'
@@ -10,26 +10,42 @@ const sharp = createRequire(join(root, 'package.json'))('sharp')
 const OUT = join(root, 'docs/brand/logo')
 mkdirSync(OUT, { recursive: true })
 
-// Bench save 52d1h96436mwhgdqjrj7, 2026-09-29 18:30 — Kai: "it's perfect".
+// Bench save 2f6bogo164mzzi4lzz00 ("Saved version 5"), 2026-10-19 14:40 — Kai: "I'm just going to say that's our logo".
+// The ring is 15% (was 8% on save b0dhojp15efdyw7rboj6, 2026-10-15); the name's o is the bench's "Solid red o" —
+// a solid red circle, not a bare triangle (it "reads as an A") and no longer the ring + triangle.
+// The ring-with-dot it replaced is in docs/brand/archive/2026-09-29-dot/ (generator: archive/build-logo-dot.mjs).
 const SET = {
-  ring: 0.17,    // ring line thickness, as a fraction of the ring's radius
-  dot: 0.245,    // red dot radius, as a fraction of the ring's radius
-  push: 0.51,    // how far off centre: 0 = centre, 1 = touching the inside of the ring
-  angle: 55,     // which way it looks: degrees clockwise from 12 o'clock
+  ring: 0.15,    // ring line thickness, as a fraction of the ring's radius
+  tSize: 0.36,   // triangle size: centre to corner, as a fraction of the ring's radius
+  tPush: 0.61,   // how far off centre: 0 = centre, 1 = touching the inside of the ring
+  tAngle: 55,    // which way it sits: degrees clockwise from 12 o'clock (about 2 o'clock)
+  tRot: 55,      // which way it points: degrees clockwise from 12 o'clock
+  tRound: 0.55,  // corner rounding, as a share of the most possible (the inradius)
   red: '#cc2b37',
   lw: 0.30,      // letter line weight, as a fraction of letter radius
   tr: 0.26,      // letter spacing, as a fraction of letter radius
-  ck: 0.42,      // the c pulled toward the red o (optical kerning), fraction of letter radius
+  ck: 0.35,      // the c pulled toward the red o (optical kerning), fraction of letter radius
 }
 const INK = { dark: '#0a0a0a', light: '#eef3f6' }, GROUND = '#050607'
 const f = n => +n.toFixed(2)
 
 // ---- geometry (identical to the bench)
-function icon(cx, cy, R, ink, minW = 0, minDot = 0) {
-  const w = Math.max(SET.ring * R, minW), pr = Math.max(SET.dot * R, minDot)
-  const room = Math.max(0, R - w / 2 - SET.dot * R - R * 0.02), d = SET.push * room, a = SET.angle * Math.PI / 180
+// Triangle path: r = centre-to-corner, rc = corner radius, rot = where the first corner points.
+function triPath(x, y, r, rc, rot) {
+  const V = [0, 1, 2].map(k => { const a = (rot + k * 120) * Math.PI / 180; return [x + r * Math.sin(a), y - r * Math.cos(a)] })
+  if (rc <= 1e-6) return `M${V.map(p => p.map(f).join(' ')).join('L')}Z`
+  const t = rc / r, lerp = (A, B) => [A[0] + (B[0] - A[0]) * t, A[1] + (B[1] - A[1]) * t].map(f).join(' ')
+  let d = ''
+  for (let k = 0; k < 3; k++) { const Vk = V[k], P = V[(k + 2) % 3], N = V[(k + 1) % 3]; d += `${k ? 'L' : 'M'}${lerp(Vk, P)}A${f(rc)} ${f(rc)} 0 0 1 ${lerp(Vk, N)}` }
+  return d + 'Z'
+}
+// minSize: the small-size floor — the triangle's corner reach never drops below 2 x minSize.
+function icon(cx, cy, R, ink, minW = 0, minSize = 0, ring = SET.ring) {
+  const w = Math.max(ring * R, minW), r = SET.tSize * R, rc = SET.tRound * r / 2
+  const room = Math.max(0, R - w / 2 - (r - rc) - R * 0.02), d = SET.tPush * room, a = SET.tAngle * Math.PI / 180
+  const rr = Math.max(r, minSize * 2), k = rr / r
   return `<circle cx="${f(cx)}" cy="${f(cy)}" r="${f(R - w / 2)}" fill="none" stroke="${ink}" stroke-width="${f(w)}"/>` +
-    `<circle cx="${f(cx + d * Math.sin(a))}" cy="${f(cy - d * Math.cos(a))}" r="${f(pr)}" fill="${SET.red}"/>`
+    `<path d="${triPath(cx + d * Math.sin(a), cy - d * Math.cos(a), rr, rc * k, SET.tRot)}" fill="${SET.red}"/>`
 }
 // The name, drawn from circles and stems — no font. Baseline at y=base; returns its box.
 function word(x0, base, r, ink) {
@@ -45,6 +61,7 @@ function word(x0, base, r, ink) {
     if (ch === 'd') L.push(ring(cx), stem(cx + r, top, base + w / 2))
     if (ch === 'c') L.push(arc(cx, 42, -42))
     if (ch === 'e') L.push(arc(cx, 38, 0), `<line x1="${f(cx - r)}" y1="${f(cy)}" x2="${f(cx + r + w / 2)}" y2="${f(cy)}"/>`)
+    // the o is a solid red circle, the letters' full outer size (Kai, 2026-10-19, bench save 5)
     if (ch === 'o') o = `<circle cx="${f(cx)}" cy="${f(cy)}" r="${f(r + w / 2)}" fill="${SET.red}"/>`
   })
   const svg = `<g fill="none" stroke="${ink}" stroke-width="${f(w)}">${L.join('')}</g>${o}`
@@ -84,7 +101,8 @@ write('badcode-stacked.svg', stacked(INK.dark)); write('badcode-stacked-reversed
 
 // ---- favicon + avatar: the icon on its own near-black disc/square, so it reads on any tab bar or app.
 // Small-size floors: line >= 1.5px always; at 48px and under (the favicon cut) the dot grows to
-// >= 13% of the canvas, or at 16px it shrinks to a speck (checked 2026-09-29).
+// >= 13% of the canvas, or at 16px it shrinks to a speck (checked 2026-09-29 for the dot; same floor
+// for the triangle, applied the bench's way: its corner reach is at least twice the floor).
 const badgeSVG = (z, shape) => doc([0, 0, z, z],
   (shape === 'disc' ? `<circle cx="${z / 2}" cy="${z / 2}" r="${z / 2}" fill="${GROUND}"/>` : `<rect width="${z}" height="${z}" fill="${GROUND}"/>`) +
   icon(z / 2, z / 2, z * 0.4, INK.light, 1.5, z <= 48 ? z * 0.13 : 0))

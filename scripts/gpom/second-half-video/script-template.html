@@ -1,0 +1,150 @@
+<title>Second Half Script</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Archivo+Narrow:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a shooting script on paper. Left margin carries the cut (timecode + the frames as they stand);
+   the page carries the words in screenplay form, with a notes slip under every line and every beat. */
+:root {
+  --bg: #e9e6df; --paper: #fbfaf6; --line: #d8d3c8; --fg: #1b1a17; --dim: #6c675d; --hud: #b3271e;
+  --slip: #fff6cc; --slip-line: #e3d48a; --ok: #3d7a3f;
+  --script: "Courier Prime", "Courier New", Courier, monospace;
+  --ui: "Archivo Narrow", "Arial Narrow", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121314; --paper: #1b1c1e; --line: #313337; --fg: #e8e6e0; --dim: #9a968d; --hud: #e2574c;
+  --slip: #2a2718; --slip-line: #5a5230; --ok: #79b97b; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121314; --paper: #1b1c1e; --line: #313337; --fg: #e8e6e0; --dim: #9a968d; --hud: #e2574c;
+  --slip: #2a2718; --slip-line: #5a5230; --ok: #79b97b; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--script); font-size: 15px; line-height: 1.45 }
+.wrap { max-width: 1040px; margin: 0 auto; padding-block: 28px 90px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+header h1 { font-family: var(--ui); font-weight: 700; font-size: clamp(30px, 5vw, 44px); margin: 0; letter-spacing: .01em; text-wrap: balance }
+header p { font-family: var(--ui); font-size: 16px; color: var(--dim); max-width: 68ch; margin: 6px 0 0 }
+.meta { font: 12px var(--mono); color: var(--dim); margin-top: 10px }
+.page { background: var(--paper); border: 1px solid var(--line); margin-top: 22px; padding: 26px clamp(14px, 4vw, 44px) 40px; box-shadow: 0 1px 0 var(--line) }
+.slug { font-weight: 700; text-transform: uppercase; margin: 34px 0 4px; letter-spacing: .02em }
+.slug:first-child { margin-top: 0 }
+.act { font: 500 12px var(--mono); color: var(--dim); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px }
+.beat { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 22px; padding: 16px 0; border-top: 1px dashed var(--line) }
+.margin { font: 12px var(--mono); color: var(--dim) }
+.margin .num { font: 700 22px var(--ui); color: var(--fg) }
+.margin img { display: block; width: 100%; max-width: 100%; aspect-ratio: 16/9; object-fit: cover; margin-top: 6px; border: 1px solid var(--line); background: #000 }
+.title { font-weight: 700 }
+.action { margin: 4px 0 0; max-width: 62ch }
+.sound { font-style: italic; color: var(--dim); margin: 6px 0 0; max-width: 62ch }
+.hud { font: 500 12.5px var(--mono); color: var(--hud); letter-spacing: .05em; margin-top: 6px }
+.cue { font: 12px var(--mono); color: var(--dim); margin-top: 6px }
+.line { margin: 18px 0 0 }
+.who { margin-left: min(22ch, 30%); text-transform: uppercase }
+.said { margin-left: min(10ch, 14%); max-width: 36ch }
+.vo .said { max-width: 46ch }
+.none { font-style: italic; color: var(--dim); margin-top: 14px }
+.slip { margin: 8px 0 0 min(10ch, 14%); max-width: 46ch; display: flex; flex-direction: column; gap: 2px }
+.slip.beatslip { margin-left: 0; max-width: none; margin-top: 16px }
+.slip label { font: 500 11px var(--mono); color: var(--dim); text-transform: uppercase; letter-spacing: .06em; display: flex; justify-content: space-between; gap: 8px }
+.slip label span { text-transform: none; letter-spacing: 0 }
+.slip label span.saved { color: var(--ok) }
+textarea { font: 14px/1.4 var(--ui); color: var(--fg); background: var(--slip); border: 1px solid var(--slip-line); border-radius: 2px; padding: 6px 8px; resize: vertical; min-height: 34px; width: 100%; box-sizing: border-box }
+textarea:focus { outline: 2px solid var(--slip-line); outline-offset: 1px }
+.bridge { border: 1px solid var(--slip-line); background: var(--slip); padding: 14px 16px; margin-top: 22px; font-family: var(--ui); font-size: 16px }
+.bridge b { font-family: var(--script) }
+.bridge textarea { background: var(--paper); border-color: var(--line) }
+.opening h3 { font-family: var(--ui); font-size: 18px; margin: 26px 0 6px }
+.opening img.wide { display: block; width: 100%; max-width: 100%; aspect-ratio: 16/9; object-fit: cover; border: 1px solid var(--line); margin: 10px 0 }
+.goals { margin: 0; padding-left: 22px; max-width: 70ch } .goals li { margin: 4px 0 }
+.draftcard { border-left: 3px solid var(--slip-line); padding: 4px 0 8px 16px; margin: 18px 0 }
+.end { text-align: center; font-weight: 700; margin-top: 30px }
+@media (max-width: 640px) {
+  .beat { grid-template-columns: 1fr; gap: 10px }
+  .margin { display: flex; gap: 10px; align-items: flex-start; flex-wrap: wrap }
+  .margin img { width: 46%; margin-top: 0 }
+  .who { margin-left: 18% } .said, .slip { margin-left: 6% }
+}
+</style>
+<div class="wrap">
+  <header>
+    <h1>GitPush Origin Master · Second Half</h1>
+    <p>The script as it stands in the rough cut, in the order it plays. Every word here is a first draft for you to rewrite. Put a note under any line or beat (new words, cut it, move it, who says it) and tell Claude when you're done.</p>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="page opening" id="opening"></div>
+
+  <div class="page" id="page"></div>
+
+  <div class="bridge">
+    <b>GENERAL NOTES</b>
+    <p style="margin:6px 0 0">Anything about the whole: order, beats to add or cut, tone, who the narrator is.</p>
+    <div class="slip beatslip" id="slip-top"></div>
+  </div>
+</div>
+<script>
+const D = /*DATA*/null;
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e };
+const tc = s => { const m = Math.floor(s / 60), r = s - m * 60; return m + ':' + r.toFixed(1).padStart(4, '0') };
+const UI = {};
+function slip(key, label, host) {
+  const w = host || el('div', 'slip'), l = el('label'), sv = el('span', '', ''), ta = el('textarea');
+  l.append(document.createTextNode(label), sv); ta.rows = 1; ta.disabled = true; ta.placeholder = 'Loading…';
+  w.append(l, ta); UI[key] = { ta, sv }; return w;
+}
+document.getElementById('meta').textContent = D.beats.length + ' beats · ' + D.beats.reduce((a, b) => a + b.lines.length, 0) + ' spoken lines · ' + tc(D.total) + ' in the rough cut (gpom-second-half-rough)';
+slip('top', 'Note on the whole', document.getElementById('slip-top'));
+
+const O = D.opening, op = document.getElementById('opening');
+if (O) {
+  op.append(el('div', 'slug', 'EXT. THE RUINED HIGH STREET. DAY'), el('div', 'act', 'Beat 0 · new · before the roundabout'));
+  if (O.thumb) { const i = el('img', 'wide'); i.src = O.thumb; i.alt = 'The delivery robot rolling up the ruined high street'; op.append(i) }
+  op.append(el('p', 'action', O.picture), el('h3', '', 'What her speech has to do'));
+  const ol = el('ol', 'goals'); for (const g of O.goal) ol.append(el('li', '', g)); op.append(ol, slip('o-goal', 'Note on the goal (add, cut, reorder)', el('div', 'slip beatslip')));
+  op.append(el('h3', '', 'Three directions · pick one, steal from all'));
+  for (const x of O.drafts) {
+    const card = el('div', 'draftcard'); card.append(el('div', 'title', 'DRAFT ' + x.id + ' · ' + x.label));
+    x.lines.forEach(([id, name, said], i) => { const ln = el('div', 'line'); ln.append(el('div', 'who', name), el('div', 'said', said), slip('o' + x.id + '-' + i, 'Note on this line')); card.append(ln) });
+    card.append(slip('o' + x.id, 'Note on draft ' + x.id + ' as a whole', el('div', 'slip beatslip'))); op.append(card);
+  }
+  op.append(el('h3', '', 'The cut to the roundabout'), el('p', 'action', O.transition), slip('o-trans', 'Note on the cut', el('div', 'slip beatslip')));
+}
+const page = document.getElementById('page');
+let act = null;
+for (const b of D.beats) {
+  if (b.act !== act) { act = b.act; page.append(el('div', 'slug', b.slug), el('div', 'act', b.actTitle)); }
+  const row = el('section', 'beat'), m = el('div', 'margin'), s = el('div');
+  const head = el('div'); head.append(el('div', 'num', String(b.n)), el('div', '', tc(b.t) + ' · ' + b.d.toFixed(1) + 's'));
+  m.append(head); for (const src of b.thumbs) { const i = el('img'); i.src = src; i.alt = 'Frame ' + b.n + ': ' + b.title; i.loading = 'lazy'; m.append(i) }
+  s.append(el('div', 'title', b.title.toUpperCase()));
+  if (b.see) s.append(el('p', 'action', b.see));
+  if (b.hud) s.append(el('div', 'hud', '[ ' + b.hud + ' ]'));
+  if (b.sfx) s.append(el('p', 'sound', b.sfx));
+  if (b.cue) s.append(el('div', 'cue', '♪ ' + b.cue));
+  if (!b.lines.length) s.append(el('div', 'none', 'No words.'));
+  b.lines.forEach(([id, name, said], i) => {
+    const ln = el('div', 'line' + (id === 'narrator' ? ' vo' : ''));
+    ln.append(el('div', 'who', id === 'narrator' ? name + ' (V.O.)' : name), el('div', 'said', said), slip('l' + b.n + '-' + i, 'Note on this line'));
+    s.append(ln);
+  });
+  s.append(slip('b' + b.n, 'Note on beat ' + b.n + ' (picture, order, a new line)', el('div', 'slip beatslip')));
+  row.append(m, s); page.append(row);
+}
+page.append(el('div', 'end', 'END OF SECOND HALF'));
+
+(async () => {
+  const db = await claude.use('db'), user = await claude.use('user');
+  if (!db || !user) { for (const u of Object.values(UI)) { u.ta.placeholder = 'Sign in to leave notes'; } return }
+  const me = await user.id();
+  for (const [k, u] of Object.entries(UI)) {
+    u.ta.disabled = false; u.ta.placeholder = ''; let t;
+    u.ta.oninput = () => { u.ta.style.height = 'auto'; u.ta.style.height = u.ta.scrollHeight + 2 + 'px';
+      clearTimeout(t); u.sv.className = ''; u.sv.textContent = '…'; t = setTimeout(async () => {
+      try { await db.doc('script/' + k + '__' + me).set({ key: k, note: u.ta.value, by: me, at: Date.now() }); u.sv.className = 'saved'; u.sv.textContent = 'Saved' }
+      catch (e) { u.sv.textContent = 'Not saved: ' + (e && e.code || 'error') } }, 700) };
+  }
+  db.collection('script').where('by', '==', me).onSnapshot(snap => {
+    for (const d of snap.docs) { const v = d.data(), u = UI[v.key];
+      if (u && document.activeElement !== u.ta) { u.ta.value = v.note || ''; u.ta.style.height = 'auto'; u.ta.style.height = u.ta.scrollHeight + 2 + 'px' } }
+  });
+})();
+</script>

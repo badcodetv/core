@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/M4-a.png",
+ "made": "2026-10-25T18:33:18.256Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photo-mode capture from a video game that draws its world and its people in two different ways. Every building, street, lamp and sky is coarse chunky pixel art: big square pixels, sixteen colours, hard pixel edges. Only the people are painted in muted realism: weathered faces with real skin texture, stubble and tired eyes, 1930s wool coats, flat caps and worn leather. Evening: a low amber sun from the right through drifting dust and chimney smoke, long hard shadows. A tall narrow building cut open like a doll's house, seen from across the street, low and to the left, four floors from the top down: a cold blue attic where an old woman in a coat shivers by one candle; a brick red bakery where a crowd in red scarves and a crowd in blue scarves, mixed ages and skin tones, shove each other; an emerald-lit basement where printing presses throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances; an orange furnace at the bottom. A police car roof in the near left corner. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "f7f4c3fc-4975-4a22-a88b-24323cb23f24"
+}

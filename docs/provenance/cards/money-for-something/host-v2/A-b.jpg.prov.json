@@ -1,0 +1,20 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "money-for-something/host-v2/A-b.jpg (not on D:; the image is kept in Flow, find it by source_id)",
+  "made": "2026-10-25T10:32:59+00:00",
+  "by": "claude",
+  "kind": "image",
+  "engine": "flow",
+  "tool": "flow-mcp",
+  "model": "Nano Banana 2",
+  "why": "Jack 25 Oct: the MFS host as BadCode in person, logo for a face, no skin",
+  "source_id": "2da6fe55-7880-4c26-8907-9137308b552e",
+  "prompt": "A photograph from a made-up television show: a presenter who might be a man or might be a machine, standing chest-up and square to the camera in front of a huge wall screen. His whole head is covered by a seamless, close-fitting white knitted balaclava with no openings at all: no eye holes and no mouth hole. Stitched onto the face of the hood is a thin black ring that circles the whole face, and inside the ring, high on the right where one eye would be, sits one small red triangle with rounded corners, tilted slightly, like a single eye. Nothing else is on the face. He wears a black roll-neck pulled up under the hood, a sharp charcoal suit and black leather gloves, so no skin shows anywhere. He stands perfectly still, gloved hands resting together in front of him. Behind him the wall screen glows a cold, empty blue. One soft key light from camera left; the screen's blue glow rims the white wool from behind. Medium close-up, eye level, 50mm lens, shallow depth of field so the screen goes soft. Saturated colour: the deep red triangle, the cold blue screen, the white wool. Shot on 35mm film, fine grain. Thanks.",
+  "inputs": {
+    "flow_project": "cb27208c-4b16-426d-9144-c394f2735c15"
+  },
+  "settings": {
+    "aspect": "16:9",
+    "count": "2"
+  }
+}

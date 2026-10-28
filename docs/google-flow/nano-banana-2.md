@@ -2034,6 +2034,33 @@ Run for the Camping music video gap stills (`gp-*`, `scripts/camping-mv2/gap-sti
 - 🆕 **Kill-list additions:** "lone figure with umbrella", "steam rising from a manhole", "Blade Runner mood", all 2026 template tokens. The white sharpening halo around a lit sign against black is a named tell. `[S]`
 - 🚫 **Do not cite:** LunoStudio's "HDR above 0.8 gives halos". It's their own slider, not a Nano Banana control.
 
+## Seventeenth pass — 2026-10-01: close-ups, hands, a face behind wet glass `[vendor]` `[community]` `[observed]`
+
+Run for the Camping music video's angry-Tarquin stills (`tq-*`, `scripts/camping-mv2/tarquin-stills.json`). **New items only.**
+Still no "Nano Banana Pro 2": Flow's picker lists Pro, NB2 and NB2 Lite ([Flow help](https://support.google.com/flow/answer/16352836?hl=en)).
+
+- ✅ **Google's guide again says positive framing** ("empty street", not "no cars") and narrative over keywords `[vendor]`
+  [cloud.google.com](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana). No change to our shape.
+- 🆕 **Skin:** write "visible pores", "unretouched"; never "flawless" or "smooth" `[community]`
+  [lunostudio](https://www.lunostudio.ai/academy/nano-banana-photorealism). The same page says to generate at 4K for pores (untested here).
+- 🆕 **Reflections:** name what is reflected and say it is stretched, not mirror-sharp `[community, not NB-specific]`
+  [prompt-architects](https://prompt-architects.com/blog/643-reflections-glass-and-metal-in-ai-images).
+- **Observed, Pro, n=1 each:**
+  - 🔴 **A frame edge stated as a crop ("the top edge runs through the bridge of his nose") held in 1 of 2.** The other drew the whole upper face.
+  - ✅ **A stalled wiper as a mouth occluder worked in 1 of 2** (§18: geometry, not a sentence). The miss put the wiper under the mouth.
+  - 🔴 **"Driver on the right-hand side of the car" came back left-hand drive** from outside the windscreen, both takes. Mirror in post.
+  - ⚠ **"Signet ring on the little finger" came back on the ring finger**, both takes. "Knuckles white" under a red key light did not read.
+  - ⚠ **Eyes "aimed out of the left edge" came back at the lens** behind glass, both takes.
+- 🔧 **Automation:** the runner could not open the settings popover while the picker sat on NB2 (same failure as 2026-09-30). A real
+  Playwright `click()` on the compose trigger, then the `arrow_drop_down` button, then the `Nano Banana Pro` menu item, set it; the runner
+  then ran. A timeout-then-retry harvested the uploaded reference as an extra candidate: check candidate counts.
+
+**Same day, the `tq-shout-*` round (Pro, n=1 each):**
+- ✅ **A cast shadow as the subject works when its cause is in the prompt:** two low headlamps out of frame, the man between them and the wall, the shadow's size and where its fingertip ends. 1 of 2 drew it; the miss drew the man himself instead. Generated shadows are a known geometry weak spot `[academic]` [arXiv 2311.17138](https://arxiv.org/abs/2311.17138), so check every take.
+- 🔴 **"Cut off at the knee" came back cut at the waist**, and the head-above-the-frame crop held 2 of 2 only when the camera was stated level and one metre away.
+- 🔴 **Naming a lamp's position "behind the camera" drew light stands in shot** (1 of 2). Say what the light does, and keep its fixture out of the description.
+- 🔴 **A supermarket front in the background returned a readable brand sign and a number plate** despite the lettering constraint (1 of 2).
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.
@@ -2129,3 +2156,305 @@ or describe the character. Hand it the accepted photograph and change only the m
 
 Output is **768×1376** at "Original size". A 1080×1920 short needs the 2K upscale or a ~1.4× post
 scale.
+
+## Sixth web pass — anti-slop and Nano Banana 2, 2026-10-04 `[vendor]` `[community]`
+
+Run for Money For Something's storyboard stills. **Nothing here overturns this file; it is a
+second, independent arrival at the same habits.**
+
+- `[vendor]` Google's guide: write the scene in full sentences, name subject, setting, light and
+  camera angle, **frame things positively** ("empty street", not "no cars"), and use photographic
+  terms for the camera. Nano Banana 2 is said to hold four to five characters and up to fourteen
+  reference objects, "name them all". `[untested]` past the four Characters we have held in a still.
+- `[community]` The slop guides name the same tells as the toolkit above: poreless skin, centred
+  and balanced framing, glossy orange-and-teal light, and "masterpiece / perfect lighting" words,
+  which ask for the idealised average. Their counters are ours: name the capture, give the light a
+  direction, ask for imperfection, put the subject off centre.
+- 🔴 **Still rejected:** "rule of thirds" as a prompt word (see the fifth web pass).
+- `[observed 2026-10-04, n=1]` The Money For Something look prompt (a named 2003 standard-definition
+  broadcast camera, one spotlight, a blurred foreground sleeve, a wet ring and crumbs on the table)
+  came back first time reading as broadcast video, with no skin or lighting counters in the prompt
+  at all. **The named capture did the anti-slop work.** Two asks were under-delivered in the same
+  still: "from the chest up" came back knee-up, and "fades to near black towards the right edge"
+  came back evenly lit, which fits the rule above that a strong reference hedges its own change-list.
+
+Sources: [Ultimate prompting guide for Nano Banana — Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana) `[vendor]` ·
+[How to make AI images look less like AI — Pixova](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) `[community]` ·
+[Fix plastic skin in AI portraits — Oakgen](https://oakgen.ai/blog/fix-plastic-skin-ai-portraits) `[community]`
+
+## Three observations from Money For Something round 12 — 2026-10-05 `[observed]`
+
+Thirteen stills, Nano Banana 2, 4:3, one candidate each, Jack's project `cb27208c`. Prompts and
+results: `docs/stories/magic-money-tree/money-for-something-storyboard-v3.md`, round 12.
+
+- `[observed, n=1 each way]` **Two Characters plus a room reference that shows the same cast: one
+  Character took the reference's clothes.** The German Soldier came back in the British soldier's
+  khaki. The next prompt added "Each has the face and the clothes of his own Character, not the
+  clothes of the men in the reference image" and he came back in his own uniform. That sentence had
+  also been in the four-Character room prompt of 3 October. One pair, so not established.
+- `[observed, n=2]` **"The frame is very slightly off level" on a wide shot with no reference image
+  returned a rotated picture inside black wedges** (strong on a marina shot, a thin edge on a
+  warehouse shot). The same words on eleven close shots made with a room reference gave no borders.
+  Dropping the words and adding "the picture is level and fills the whole frame to all four edges"
+  gave a clean frame, n=1.
+- `[observed, n=1 each way]` **A size in metres was ignored; a size by comparison was not.** "About
+  forty metres long" gave a small yacht. "As long as a row of eight parked cars" gave a large one.
+- `[untested]` "Nothing is retouched or smoothed" was added to every capture line. No prompt was
+  run without it, so it has no measured effect.
+
+
+## Seventh web pass and one comparison — The Bank Robbery look tests, 2026-10-06 `[community]` `[observed]`
+
+Prompts and results: `docs/stories/bank-robbery/look-tests.md` (rounds 1 and 2, eight stills each,
+Nano Banana 2, 16:9, no reference, Jack's Flow project `64a6c82d`).
+
+- `[community]` A Nano Banana 2 guide adds three habits this file did not state in these words:
+  **subject in the first fifteen words, one camera phrase per prompt (two camera bodies confuse
+  it), and say what the picture is for.** It also recommends "anamorphic lens flare", which we do
+  not take. [Fliki, 2026-09-29](https://fliki.ai/blog/nano-banana-2-prompting-guide)
+- `[observed, n=4 looks, 2 candidates each, one scene]` **Round 1** put the scene first and the
+  look last, with the camera in the middle of the road. All eight came back mirrored, with the men
+  in a row facing the lens on a clean street. **Round 2** opened with the subject in one sentence,
+  then "a frame from a <kind of film>, shot on <one camera, one lens> from <a place a person could
+  stand>", gave the men things to do (eating, a phone, leaning into a handle), and named dirt
+  (patched tarmac, a drain, a cup). All eight came back off centre, mid-action and dirty. Several
+  things changed at once, so which one did the work is not known.
+- `[observed, n=2]` **"The picture is black, white and one red" returned a black-and-white
+  photograph with red on the named object.** Round 1, which said "the only saturated colour",
+  stayed in colour.
+- `[observed, n=8]` **Dropping "middle-aged" made every man about thirty.** Round 1 had the words
+  and the men were fifty.
+- `[observed, n=1]` `aspect: "21:9"` is refused on Nano Banana 2 before submit
+  (`ASPECT_UNAVAILABLE`), the same as on Pro.
+
+## Four observations from The Bank Robbery round 3 — 2026-10-06 `[observed]`
+
+Eight stills, Nano Banana 2, 16:9, no reference. Prompts: `docs/stories/bank-robbery/look-tests.md`, round 3.
+
+- `[observed, n=4 prompts]` **Street disorder was not blocked.** Burning wheelie bins, hand flares,
+  masked people in hoodies, a scuffle across a police line: all four generated first time.
+- `[observed, n=2]` **A ten-word hand-painted banner came back spelt correctly at 1K** ("WE CAN'T
+  AFFORD TO LIVE HERE", about a third of the frame width tall), against the small-text warning in
+  `docs/flow/image-prompting.md` §5. Large lettering only; the small shop signs behind it were garbled.
+- `[observed, n=1]` **A prompt noun leaked onto a sign.** "bedsheet banners" in a crowd description
+  returned a banner reading "BEDSHEET BENNER". When a crowd carries blank cloth, say what is on it.
+- `[observed, n=3 of 8]` **"football scarves" returns real-looking club scarves with crests**, and
+  "puffer jackets" returned a real brand's logo twice. Ask for plain ones.
+
+## Four observations from The Bank Robbery cast stills — 2026-10-06 `[observed]`
+
+Fourteen stills with Flow Characters attached by hand, Nano Banana 2, 16:9, one candidate each.
+Prompts: `docs/stories/bank-robbery/stills.md`, second pass.
+
+- `[observed, n=13 stills, 11 Characters]` **Characters held their faces at extreme angles**: from
+  the floor looking up, from a ceiling corner, in macro profile, from inside a model with the faces
+  as giants. Each Character had a Portrait and a Body. Up to four per still, never more.
+- `[observed, n=14]` **A camera position named as a physical place was obeyed every time**: "resting
+  on a café table top", "lying on the marble floor", "from deep inside a dark bank vault, looking
+  out through its round doorway", "from the position of a small television mounted high on a wall",
+  "inside a cardboard scale model, at the height of the model's street". Each came with something
+  named as large and out of focus against the lens.
+- `[observed, n=14]` **"One light source only, no fill: <the source>" plus where the shadow falls
+  gave real darkness** with one bright place in it, in every still. No grey mush.
+- `[observed, n=1 each]` Two asks were not delivered: **"a cheap standard-definition camcorder"
+  came back sharp** with only the on-camera light obeyed, and **"laid over her face as a reflection
+  in the same glass" came back as a view through the glass**.
+
+## Seventh note — a short word in neon, and a "flicker" `[observed, n=1]` 2026-10-07
+
+From The Bank Robbery's third pass of stills ([`stills-v3.md`](../stories/bank-robbery/stills-v3.md)),
+Nano Banana 2 in Flow, one candidate each.
+
+- **Asking for one letter of a sign to look "dimmer than the rest as if flickering" produced an
+  extra letter.** The prompt asked for a neon sign reading "badcode" with a red o. It came back as
+  "badcoode": a dim ring next to the red one. A change over time cannot be drawn in a still, so the
+  model drew both states side by side. Put the flicker in the clip.
+- **Spelling the word out fixed it first time:** "exactly seven round lowercase letters spelling
+  "badcode"", each letter listed, the odd one given its position ("the fifth of the seven"), and
+  "There is only one o".
+- **Price tags default to dollars.** A model town with "paper price tags" came back with "$250,000"
+  and "$300k". Saying "handwritten in British pounds" gave pound signs.
+- **An unbranded carrier bag has to be asked for.** "A heavy supermarket carrier bag" came back
+  with garbled shop lettering; "a plain white carrier bag with nothing printed on it" did not.
+- **39 of 39 passed first time,** including two men holding small pistols pointed at the floor,
+  pallets of "shrink-wrapped blocks of paper", two crowds with plain red and blue flags, and a
+  police officer in hi-vis. That is one run on one account, not a statement about the filter.
+
+## 2026-10-08: "tabloid newspaper" in a scene can come back with a real masthead (The Bank Robbery, `s05e-papers`)
+
+- `[observed, n=1]` A man "holding up two folded tabloid newspapers… no print on them can be read" came back with
+  a real British paper's red-top logo on one of them, facing the camera. Saying what must not be there, at
+  length ("no masthead, no title, no logo, no headline and no photograph"), with the papers seen from behind and
+  out of focus, gave none on the second try. A front page made **as its own flat image with the paper's name
+  quoted** ("THE DAILY TRUMPET") spelt every word right first time, twice.
+
+## 2026-10-15: a Character binds the face, not the costume; and short text holds (The Bank Robbery short) `[observed, n=2 and n=4]`
+
+- **The costume did not come with the Character.** Barry (`491aad1f`, Portrait and Body both in an orange hi-vis
+  jacket) was cast by "@" into a café still with no word about clothes, per the never-describe rule. **Two takes,
+  both in a dark jacket**, face right. Third take: the same prompt plus his **uploaded portrait attached as a
+  reference image** and the line "Barry is dressed exactly as in his portrait reference" (no garment named):
+  hi-vis. Every later still with Barry used both and kept the hi-vis (five of five). Not tested: whether the
+  Character's info note would do it, because the MCP cannot write that note on the rebuilt Flow.
+- **Short quoted text came back readable four times in four**, at large size: "FREDOS 10p", "FREDO'S 20p" (an
+  apostrophe crept in), WE CAN'T AFFORD TO LIVE HERE on two cardboard signs, and NOTICE OF RENT INCREASE with
+  "£2,400 a month" circled. The letter's small print is gibberish, as expected. "Blank white strips where the
+  price goes" was **not** obeyed (the cards came back with plain white margins), so the prices went on in ffmpeg.
+- **Restyle to a painting holds the composition exactly** when the accepted still is the only reference ("the
+  scene in the reference image repainted as an old oil painting … fills the frame edge to edge, flat on, no frame,
+  no wall"). And that painting, attached to the next still as "the painting from the reference image in a cheap
+  chipped gilt frame", came back on the café wall recognisably the same picture, cropped a little.
+Record: `docs/stories/bank-robbery/short-shots.md`.
+
+## Web delta, 2026-10-19 (Karen ending): three small additions `[practitioner]`
+
+A web sweep for the Karen ending found the repo already held nearly everything. New, all **untested here**:
+
+- **Give the lens a vantage point** ("a 35mm lens from waist height a few steps behind him"), not a focal length alone, which
+  leaves camera distance unstated (Morphic, Nano Banana 2.1 guide, https://morphic.com/resources/how-to/nano-banana-2-1-guide).
+- **Repeat the aspect ratio at the end of the prompt** as well as in the UI (Fliki, https://fliki.ai/blog/nano-banana-2-prompting-guide).
+- **Video, Omni:** past about four edits in a chain drift creeps in; re-anchor with "keep all details exactly as they are, only
+  change X" (Morphic, Omni 1.1 guide, https://morphic.com/resources/how-to/gemini-omni-flash-1-1-guide).
+
+Used on Karen 10a/10b (2026-10-19), 2 candidates each: both stills came back with the occluding foreground, off-centre
+subject and single warm practical as asked; one candidate per shot was clearly better. n=2, observed not established.
+
+## 2026-10-21: for a logo REDESIGN, describe the mark; do not attach it `[observed, n=10 vs n=12]`
+
+**BadCode logo exploration** (`docs/brand/explorations/2026-10-21-redesigns/` and `-wild/`). Ten redesign prompts
+sent with the current logo attached and the job stated as *"for inspiration only; change it as much as the idea
+needs"* all came back keeping the ring-above-the-word layout. Twelve text-only prompts that described the mark in
+one sentence and then said *"this design takes that and changes it completely"* broke the layout in all twelve, and
+every one still spelled the quoted word ("badcode") correctly. Jack suspected the reference was the problem; it was.
+
+**Rule:** an attached image is read as identity to preserve, whatever its stated job. To *keep* a design, attach
+it. To *depart* from one, describe it in a sentence and leave it off. Also confirmed in the same session: NB2 does
+not hold exact logo geometry even when asked to (letters re-set as a typeface, triangle corners sharpened), so a
+keeper gets the true SVG composited over it in post.
+
+## Cartoon pass — 2026-10-25: a flat adult-sitcom look on NB2 `[observed]` `[practitioner]`
+
+Run for the Bank Robbery song's music video (`docs/stories/bank-robbery/songs/mv-speakeasy-mint/storyboard.md`),
+three rounds of 4 stills on NB2, 9:16, one tall cross-section building. **First cartoon work in this file.**
+
+- `[observed, n=4]` **"1930s rubber hose cartoon … watercolour backgrounds" gives a modern storybook look**, not the
+  1930s. **"A frame from a 1930s black-ink cel cartoon … the objects have faces and dance too" gets the old look,
+  but on objects only.** People stayed modern-comic in both.
+- `[observed, n=4]` **Traits, not show names, get a sitcom look:** "a still from a prime-time adult animated sitcom:
+  flat colours with one shadow tone, slightly wobbly hand-drawn black outlines, simple rounded people with big round
+  eyes, small dot pupils and overbites, faint old film grain." Mixing in "printing presses with cheerful 1930s
+  cartoon faces" kept the old style on the objects alone (4 of 4).
+- 🔴 `[observed, n=12]` **"A jazz band" in a 1930s scene came back all Black in 12 of 12 takes, playing for a white
+  boss; "a mixed jazz band" did not change it (4 of 4).** No minstrel features appeared, but the role pattern holds.
+  Name each player differently, or drop the band.
+- 🔴 `[observed, n=3]` **"A mayor in a top hat" summons the Monopoly mascot** (top hat, white moustache, gloves).
+  "A tall skinny mayor in a bowler hat and gold chain" fixed it in 4 of 4. "No white gloves" was ignored.
+- `[observed]` Slop leftovers in the flat style: airbrushed light cones; a gibberish corner signature (1 of 4); a
+  shop sign repeated. Unasked-for TVs put the scene in the present day when no era is stated.
+- `[practitioner]` Cartoon anti-slop from the web: name the 2D traits as a cluster (outline, flat colour, painted
+  background, shading negated), lock one style phrase per series, give decisions not adjectives, use broad visual
+  language rather than a franchise name. [Renderforest](https://www.renderforest.com/blog/ai-cartoon-prompts) ·
+  [Morphic](https://morphic.com/ai-glossary/2D-Animation). Slop in illustration = smooth glossy sheen and a generic
+  blended style ([isitai](https://isitai.com/blog/how-to-spot-ai-art)).
+- ⬜ **Untested:** whether Omni holds this look in motion; "animated on twos" for Omni (Morphic suggests a lower
+  frame rate for cartoon choppiness).
+- 🔴 `[observed, 2026-10-25, n=20 style sweep]` **Print styles invent text.** "Satirical etching from 1790s London" forged a
+  real dead artist's signature ("James Gillray") plus gibberish verse in the margin with no name in the prompt; zine,
+  comic-strip and poster styles invented labels, mastheads and slogans (Cyrillic on a constructivist poster). State
+  blank margins, or crop. `[observed]` "Cut-out paper collage" came back as a coloured engraving, not collage (2 of 2).
+  "A mixed jazz band" failed, but making the band "gangsters in pinstripe suits" gave varied players in 20 of 20.
+
+### 36. ⚠️ A small mark "high inside a ring" drifts to the centre, and "triangle" can come back as an outline `[observed 2026-10-25, n=16]`
+
+Money For Something host round 2 (8 prompts × 2, Nano Banana 2 in Flow, the picker label read "Nano Banana 2.1"). Every
+prompt asked for "a thin black ring … and high inside it, over one eye, a small red triangle with rounded corners".
+**In 13 of 16 the triangle sat near the centre of the ring**; only the armchair prompt (D6) put it clearly off-centre.
+**In 3 of 16 it came back as a red outline**, not a filled shape. Likely cause (inferred): "over one eye" pulls it to
+where a single eye would be on a featureless face, which is the middle. Next test: "a solid, filled red triangle …
+pushed up close to the ring's edge, towards the top corner, well away from the centre". The same round confirmed the
+anti-slop stack on this engine: a humble named camera, a non-Portra stock, one placed light, a foreground occluder,
+mid-action, and wear in the set all rendered as asked, and none of the sixteen came back as a glossy, symmetrical
+studio frame (round 1, without them, came back that way six times out of six). Record:
+`docs/stories/magic-money-tree/characters/host-v2-balaclava.md`.
+
+## Video-game styles on NB2 — 2026-10-25 `[observed, n=16]` `[practitioner]`
+
+Run for the Bank Robbery song's music video (`docs/stories/bank-robbery/songs/mv-speakeasy-mint/storyboard.md`,
+"Video-game sweep"): eight game looks described by traits only (no game named), one shared cross-section scene,
+NB2, 9:16, 2 each.
+
+- 🔴 `[observed, n=2]` **"A screenshot from a … video game" summons a game HUD in 2 of 2** (health bar, score,
+  timer, "LEVEL 1", "MISSION 04", "CAMERA UI").
+- 🔴 `[observed, n=1 of 2]` **"Loading-screen art" printed "LOADING…"** in the corner.
+- ✅ `[observed, n=4]` **"A photo-mode capture from a … video game" gave a clean frame with no interface in 4 of 4.**
+  Use it for in-engine looks.
+- 🔴 `[observed, n=1]` **A colour word next to "neon" became sign text:** "hot pink neon" → a sign reading "HOT PINN".
+- 🔴 `[observed, n=1 of 2]` **In pixel art, "a red crowd and a blue crowd of mixed ages and skin tones" drew solid
+  red and solid blue people.** Put the team colour on banners and scarves, never on the crowd.
+- 🟡 `[observed, n=4]` **Realistic in-engine looks (western, 1930s mob) come back as a dark miniature diorama** with
+  tiny faces, everything sharp. Good mood; weak for faces.
+- 🔴 `[observed, n=2]` **"Chunky stylised 3D figures … bright toy colours" gives glossy plastic toys**, the sheen the
+  slop guides name, even with "matte" in the prompt.
+- ✅ `[observed, n≈15 of 16]` **Naming where the camera stands ("seen from across the street, low and to the left, so the
+  building stands off-centre") broke the symmetry of a square-on cross-section**, which a composition word did
+  not (§37). "Four floors only" was still ignored in 4 of 16 (an extra bedroom floor).
+- `[official, via press]` Mafia: The Old Country's art director named **decay** as the look and warned against a
+  "travel brochure" look ([Game Informer, 2025-07-31](https://gameinformer.com/2025/07/31/building-an-old-but-new-setting-in-mafia-the-old-country)).
+  RDR2's realism is credited to light, haze and atmosphere more than to models ([itechguides](https://www.itechguides.com/what-makes-red-dead-redemption-2s-visuals-look-so-realistic/)) `[practitioner]`.
+  GTA-style art prompts lean on bold outlines, a cel or vector finish and saturated side light ([lorka.ai](https://www.lorka.ai/knowledge-hub/gta-ai-filter-prompts)) `[forum]`.
+- ⬜ `[official]` The Gemini API docs (checked 2026-10-25) call NB2 (`gemini-3.1-flash-image`) the previous generation and
+  recommend **Nano Banana 2.1** ([ai.google.dev](https://ai.google.dev/gemini-api/docs/image-generation)). Whether Flow
+  offers 2.1 is unchecked.
+- ⬜ Google has blocked Disney requests since a December 2025 cease-and-desist ([Android Authority](https://androidauthority.com/google-gemini-blocks-disney-generation-3639914)) `[press]`;
+  whether naming a game is blocked is unknown. We don't name games anyway (rule zero's cousin).
+
+## Mixed media on NB2: pixel world, painted people — 2026-10-25 `[observed, n=8]`
+
+Bank Robbery MV "Mixed sweep" (`docs/stories/bank-robbery/songs/mv-speakeasy-mint/storyboard.md`). NB2, 9:16, 4 prompts × 2.
+
+- ✅ `[observed, 8 of 8]` **Scope words keep two styles apart:** "Every building, street, lamp and sky is crisp 16-bit pixel
+  art … Only the people are painted in muted realism" gave pixel sets with painted people every time. No blend, no
+  single-style collapse (the failure the web expected; nobody had published a test).
+- ✅ `[observed]` **Figure size decides the realism.** Full-building frames gave painted-illustration or toy-like figures;
+  a closer two-floor frame with chest-up people gave real skin texture, stubble and wool.
+- 🔴 `[observed, 2 of 8]` **"Photo-mode capture" can summon a camera viewfinder** (corner brackets, "CAM", "PHOTO MODE",
+  lens numbers). It was clean 4 of 4 in the game sweep, so it's a coin toss, not a fix.
+- 🔴 `[observed, n=1]` **"A brick red bakery" was written on the shop sign.** A colour word next to a shop noun becomes its sign.
+- 🟡 `[observed, n=2]` **"Coarse chunky pixel art, big square pixels" went 3D (voxel blocks)**, a miniature-model look.
+  "Crisp 16-bit pixel art, one even pixel grid" stayed 2D.
+- 🟡 `[observed, n=2]` **"Theatre scenery made of pixels, painted actors"** gave realistic 3D game figures and weaker pixels.
+
+## Escaping the default cartoon on NB2 — 2026-10-25 `[observed, n=8]`
+
+Bank Robbery MV "Own-look sweep". Jack: round 3a (adult-sitcom traits) was "too similar to other cartoon styles".
+- `[observed]` The generic look was **asked for**: "big round eyes, small dot pupils, overbites, wobbly black outline" is the
+  stock adult-sitcom kit. Replacing it with **a named medium plus a face rule** ("small dash eyes and heavy brows";
+  "flat graphic icons built from triangles"; "the closer to the money, the more distorted") gave 8 of 8 frames that
+  did not read as sitcom.
+- ✅ `[observed, n=2]` **Two media split by place works:** "the attic and street are rough woodblock print … the basement is smooth
+  Art Deco lacquer" put the split at the street line in 1 of 2 cleanly.
+- ✅ `[observed, n=8]` **"Plain margins with no writing" stopped invented labels and signatures** in 8 of 8 (shop signs stay).
+- 🟡 `[observed, n=2]` "Cheap four-colour screenprint … slipped out of line" came back as clean modern editorial illustration; the misregistration was faint.
+- 🟡 `[observed, n=1]` "Distortion is the opinion" gave one long pointed nose on the mayor; zoom grotesque styles every time.
+
+## Small brand marks inside a locked style — 2026-10-25 `[observed, n=10]`
+
+Bank Robbery MV "Twist sweep": 3a's sitcom style + one sentence per twist.
+- ✅ `[observed, 10 of 10]` One added sentence did not move the style.
+- ✅ `[observed, 2 of 2]` "A small, perfectly round, solid red moon" landed both times.
+- 🟡 `[observed]` "A ring with one small red triangle inside it, set off to one side" landed 2 of 4 (medal, peephole), **centred** in both landed takes. The off-centre ask is weak on small marks (cf. §36).
+- ❌ `[observed, 0 of 2]` "One eye that is a small red triangle" on a cartoon face: ignored.
+- 🔴 `[observed, 1 of 2]` **"Printing presses with cheerful 1930s cartoon faces" produced a cup-headed character close to a famous game mascot.** Zoom any 1930s-cartoon frame for it.
+- `[observed]` Generating while scripting the page over CDP (wheel scrolling, fetches) was followed by "unusual activity" fails; refresh-and-retry worked. The harvest also returned stale tiles after the scrolling.
+
+## A cartoon style plus a "hint of realism" — 2026-10-25 `[observed, n=12]`
+
+Bank Robbery MV "Realism sweep": 3a's sitcom design + one realism clause each.
+- ✅ `[observed, 2 of 2]` **Flat cartoon people in a realist painted world** ("standing in a building and street painted with thick-oil night realism: wet cobbles reflecting the lamps, soot, steam") kept the people flat and made the set real. The strongest of six.
+- ✅ `[observed]` "Matte plasticine … fingerprints … tiny practical bulbs" (clay) and "matte painted latex … real miniature set" (puppets) gave handmade miniatures with no plastic sheen.
+- 🔴 `[observed, 1 of 2]` **"Faces rendered with startling real skin" pasted photographic heads on cartoon bodies**, and the mixed crowd collapsed to white men. Don't ask for photoreal faces on cartoon bodies.
+- 🟡 `[observed, n=2]` "Painted on celluloid and photographed on an old animation camera" barely changed a flat style.
+- ✅ `[observed, 12 of 12]` "A small solid red moon above the roof" held in every style. "Printing presses with simple faces painted on their sides" gave no mascot lookalike (0 of 12), where "cheerful 1930s cartoon faces" gave one twice.
+- ✅ `[observed, 8 of 8, 2026-10-25 K sweep]` **Naming the crowd mix works where "mixed" failed:** "each side young and old, men and women, Black, white and South Asian" gave mixed crowds on both sides in 8 of 8 (the same prompt with "mixed ages and skin tones" gave all white men in R5a).
+- 🟡 `[observed]` Adding a painting clause to the real-skin prompt softened the faces back toward cartoon in about half the takes; "light only" (K4) kept the most real skin.
+- 🔴 `[observed, 4 of 4, 2026-10-25 Bank Robbery MV scene 2]` **Real-skin rendering + a bare demographic ("an older Black man") gave a near-likeness of a famous film actor** in every take. Specific ordinary features ("heavy-set, shaved head, a broken nose") broke it in 1 of 2. Give every realistic face specific features, and check every face for a celebrity likeness.

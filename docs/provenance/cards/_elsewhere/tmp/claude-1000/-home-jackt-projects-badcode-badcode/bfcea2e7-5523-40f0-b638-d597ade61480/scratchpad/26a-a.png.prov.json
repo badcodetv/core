@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/bfcea2e7-5523-40f0-b638-d597ade61480/scratchpad/26a-a.png",
+ "made": "2026-10-26T17:18:05+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes. Night, inside a small 1930s shop full of loaves, seen over the shoulder of a fat gangster with a scar through his top lip in a white apron behind the wooden counter: across the counter, a heavy-set Black baker in his fifties with a shaved head, a broken nose and a double chin, in a sweat-stained vest and apron tips his whole thin brown pay envelope out onto the counter, a small heap of coins, for one small loaf, his real-skinned face tired and resigned. On the wall above the counter, a big blank black chalkboard with nothing written on it, smeared with old chalk dust. Warm lamplight on the shelves of loaves; cold blue night in the window behind the baker. Most of the frame in warm shadow; the brightest values are the coins and the loaf under the lamp. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2.1",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": "2"
+ },
+ "source_id": "363c8ee7-2344-4bb1-a0c1-608e28045286",
+ "why": "Speakeasy Mint scene 26 round 1, 26a"
+}

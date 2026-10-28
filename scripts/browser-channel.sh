@@ -6,8 +6,8 @@
 #   channel 2 -> port 9223, profile .flow-profile-9223
 #   channel N -> port 9221+N
 #
-#   ./scripts/browser-channel.sh claim      # THE ONE YOU WANT. Gives you a usable channel,
-#                                           # launching a browser if none is free. Prints the port.
+#   ./scripts/browser-channel.sh claim      # ONLY for a script with no flow MCP. In a Claude session
+#                                           # the MCP launches its own channel — claim would open a 2nd browser.
 #   ./scripts/browser-channel.sh list       # what is running, what is claimed, what is logged in
 #   ./scripts/browser-channel.sh up  <n>    # launch channel n specifically
 #   ./scripts/browser-channel.sh port <n>   # print the port for channel n

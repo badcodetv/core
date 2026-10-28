@@ -8,6 +8,12 @@ format: short-narrated-documentary
 
 # The Magic Money Tree — The Future He Never Saw
 
+> 🔴 **1 October 2026:** Kai and Jack agreed a recut — see
+> [`direction-2026-10-01.md`](./direction-2026-10-01.md). Shake, starve, plant stays, but the film
+> becomes very short and is told through a narrator interviewing a WW2 soldier at each age of his
+> life. The working file is [`storyboard-loose-2026-10-01.md`](./storyboard-loose-2026-10-01.md).
+> This document is unchanged: use it for facts, sources and guardrails, not for structure or length.
+
 > **The single canonical storyboard for the Magic Money Tree documentary.** Chosen by Kai on
 > 11 September 2026; revised 20 September 2026 (Germany 1923, the banking crisis, Covid); revised
 > again on **28 September 2026** after Kai agreed the film's point and ruled its ending. That

@@ -1,0 +1,161 @@
+<title>GPOM Opening Recut</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: a dark light-table. One section per remaining beat, stills in a wrapping grid, verdict buttons under each. Single dark look on purpose: these are near-black film frames. */
+:root {
+  --bg: #121214; --panel: #1b1b1f; --line: #2c2c33; --fg: #ece9e4; --muted: #9a97a0;
+  --accent: #e0352b; --yes: #5fbf7a; --maybe: #d9a43a; --no: #7b7882;
+  --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --body: "Public Sans", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 1400px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 64px; }
+.top h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1; letter-spacing: .01em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+.top h1 .tri { color: var(--accent); }
+.top p { color: var(--muted); max-width: 68ch; margin: 10px 0 0; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); display: flex; gap: 6px 18px; flex-wrap: wrap; padding-block: 12px; margin-top: 18px; }
+nav a { color: var(--muted); text-decoration: none; font-family: var(--mono); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+nav a:hover, nav a:focus-visible { color: var(--fg); }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-block: 12px 0; }
+.filters span { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-right: 4px; }
+.filters button { font: 600 12.5px var(--body); padding: 5px 10px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.filters button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.scene { padding-top: 40px; scroll-margin-top: 60px; }
+.scene header { display: grid; gap: 4px; margin-bottom: 16px; }
+.beat { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .08em; text-transform: uppercase; }
+.scene h2 { font-family: var(--display); font-weight: 600; font-size: 2rem; text-transform: uppercase; margin: 0; line-height: 1.05; }
+.scene header p { margin: 0; color: var(--muted); max-width: 70ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px; }
+.card { margin: 0; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.frame { padding: 0; border: 1px solid var(--line); background: #000; cursor: zoom-in; display: block; width: 100%; aspect-ratio: 16/9; max-width: 100%; overflow: hidden; }
+.frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.frame:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.card.chosen .frame { border-color: var(--yes); box-shadow: 0 0 0 2px var(--yes); }
+.made .frame { border-style: dashed; }
+.missing { color: var(--muted); display: grid; place-items: center; height: 100%; font-size: 13px; }
+figcaption { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.look { font-weight: 600; }
+.iid { font-family: var(--mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+.vote { display: flex; gap: 6px; }
+.vote button { flex: 1; font: 600 13px var(--body); padding: 7px 0; background: var(--panel); color: var(--fg); border: 1px solid var(--line); cursor: pointer; }
+.vote button:hover { border-color: var(--muted); }
+.vote button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.vote button[aria-pressed="true"][data-v="yes"] { background: var(--yes); border-color: var(--yes); color: #0d1a10; }
+.vote button[aria-pressed="true"][data-v="maybe"] { background: var(--maybe); border-color: var(--maybe); color: #1d1404; }
+.vote button[aria-pressed="true"][data-v="no"] { background: var(--no); border-color: var(--no); color: #111; }
+.vote[data-off] button { cursor: default; opacity: .6; }
+.tally { font-size: 12px; color: var(--muted); min-height: 1.2em; }
+details summary { font-size: 12px; color: var(--muted); cursor: pointer; }
+details p { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; }
+.note { display: block; margin-top: 18px; font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+textarea { width: 100%; max-width: 70ch; box-sizing: border-box; margin-top: 6px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); font: 14px var(--body); padding: 8px 10px; resize: vertical; }
+textarea:focus-visible { outline: 2px solid var(--accent); }
+.saved { font-size: 12px; color: var(--muted); margin-top: 6px; display: grid; gap: 2px; }
+.status { font-size: 13px; color: var(--muted); margin-top: 8px; }
+dialog { border: 0; padding: 0; background: transparent; max-width: 96vw; }
+dialog::backdrop { background: rgba(0,0,0,.88); }
+dialog img { max-width: 96vw; max-height: 86vh; display: block; }
+dialog p { color: var(--fg); margin: 8px 0 0; font-size: 14px; }
+@media (prefers-reduced-motion: no-preference) { .frame img { transition: transform .4s ease; } .frame:hover img { transform: scale(1.03); } }
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <h1>GitPush Origin Master <span class="tri">▲</span> the opening, recut</h1>
+    <p>The music-video opening, 0:00 to the first big drop. Section 1 is how the text lands after the push. Sections 2 to 5 replace the weak bulletin shots (the near-miss car, the champagne table, the two men at the graph, the shop queue, the old stock exchange); the rain-and-server-cabinets shot, the laughing traders and the zoom into the tower stay. Sections 6 and 7 replace the building site at the drop (1:02:13): a robot choir for <i>git push origin master, this code is a fucking disaster</i>, then the colossus machine with festival-strength light for <i>the developers ain't fixing shit</i>. Cheap first looks, not finished frames. Tap <b>This</b>, <b>Maybe</b> or <b>No</b>, and leave a note per section. Dashed frames are what is on the timeline now, or mock-ups on real frames.</p>
+    <p class="status" id="status">Connecting to the shared picks…</p>
+  </div>
+  <nav aria-label="Beats"><!--NAV--></nav>
+  <div class="filters" role="group" aria-label="Show style">
+    <span>Style</span>
+    <button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="round3" aria-pressed="false">New: kill-bot sequence</button><button type="button" data-f="hud" aria-pressed="false">HUD mock-ups</button><button type="button" data-f="round5" aria-pressed="false">Clean room, first 20</button><button type="button" data-f="round6" aria-pressed="false">New: six time-machine concepts</button><button type="button" data-f="original" aria-pressed="false">First pass</button><button type="button" data-f="threads" aria-pressed="false">1980s BBC 16mm</button><button type="button" data-f="noir" aria-pressed="false">Noir</button><button type="button" data-f="painted" aria-pressed="false">Painted</button><button type="button" data-f="blockbuster" aria-pressed="false">Blockbuster</button><button type="button" data-f="handheld" aria-pressed="false">Handheld doc</button><button type="button" data-f="bright" aria-pressed="false">Advert-bright</button><button type="button" data-f="picked" aria-pressed="false">Voted This</button>
+  </div>
+<!--SECTIONS-->
+</div>
+<dialog id="lb"><img alt=""><p></p></dialog>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const lb = $('#lb');
+$$('.frame').forEach(b => b.addEventListener('click', () => {
+  const img = $('img', b); if (!img) return;
+  $('img', lb).src = img.src; $('p', lb).textContent = b.closest('.card').querySelector('.look').textContent;
+  lb.showModal();
+}));
+lb.addEventListener('click', () => lb.close());
+
+let filter = 'all';
+function applyFilter() {
+  $$('.card').forEach(c => { c.hidden = !(filter === 'all' || (filter === 'picked' ? c.classList.contains('chosen') : c.dataset.style === filter)); });
+  $$('.filters button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === filter)));
+}
+$$('.filters button').forEach(b => b.addEventListener('click', () => { filter = b.dataset.f; applyFilter(); }));
+
+let me = null, db = null, user = null;
+const votes = new Map();   // iid -> Map(uid -> v)
+const notes = new Map();   // scene -> Map(uid -> text)
+const names = {};
+
+async function nameOf(ids) {
+  if (!user) return;
+  try { const ps = await user.profiles(ids); for (const id of ids) names[id] = (ps[id] && ps[id].name) || 'Someone'; } catch (e) {}
+}
+function label(uid) { return uid === me ? 'you' : (names[uid] || 'Someone'); }
+
+function renderVotes() {
+  $$('.card').forEach(card => {
+    const iid = card.dataset.id, m = votes.get(iid) || new Map();
+    const mine = m.get(me);
+    $$('.vote button', card).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === mine)));
+    const parts = [...m].map(([uid, v]) => `${label(uid)}: ${v === 'yes' ? 'this' : v}`);
+    $('.tally', card).textContent = parts.join(' · ');
+    card.classList.toggle('chosen', [...m.values()].includes('yes'));
+  });
+  if (filter === 'picked') applyFilter();
+}
+function renderNotes() {
+  $$('.saved').forEach(el => {
+    const m = notes.get(el.dataset.for) || new Map();
+    el.replaceChildren(...[...m].filter(([u, t]) => t && u !== me).map(([u, t]) => { const d = document.createElement('div'); d.textContent = `${label(u)}: ${t}`; return d; }));
+  });
+}
+
+async function start() {
+  db = await claude.use('db'); user = await claude.use('user');
+  const status = $('#status');
+  if (!db || !user) { status.textContent = 'Read-only here: sign in on claude.ai to vote.'; $$('.vote').forEach(v => v.setAttribute('data-off', '')); return; }
+  me = await user.id();
+  status.textContent = 'Live. Your votes save as you tap.';
+  db.collection('votes').onSnapshot(async snap => {
+    votes.clear(); const uids = new Set();
+    snap.docs.forEach(d => { const x = d.data() || {}; if (!x.iid || !x.by) return; uids.add(x.by);
+      if (!votes.has(x.iid)) votes.set(x.iid, new Map()); if (x.v) votes.get(x.iid).set(x.by, x.v); });
+    await nameOf([...uids]); renderVotes();
+  }, () => { status.textContent = 'Lost the connection to the shared picks. Reload to try again.'; });
+  db.collection('notes').onSnapshot(async snap => {
+    notes.clear(); const uids = new Set();
+    snap.docs.forEach(d => { const x = d.data() || {}; if (!x.scene || !x.by) return; uids.add(x.by);
+      if (!notes.has(x.scene)) notes.set(x.scene, new Map()); notes.get(x.scene).set(x.by, x.text || '');
+      if (x.by === me) { const ta = $(`#note-${x.scene}`); if (ta && document.activeElement !== ta) ta.value = x.text || ''; } });
+    await nameOf([...uids]); renderNotes();
+  });
+  $$('.vote button').forEach(b => b.addEventListener('click', async () => {
+    const iid = b.closest('.card').dataset.id, cur = votes.get(iid)?.get(me);
+    const v = cur === b.dataset.v ? null : b.dataset.v;
+    try { await db.collection('votes').doc(`${iid}__${me}`).set({ iid, by: me, v, at: Date.now() }); }
+    catch (e) { status.textContent = 'That vote did not save: ' + (e.message || e.code || 'unknown error'); }
+  }));
+  $$('textarea').forEach(ta => { let t; ta.addEventListener('input', () => { clearTimeout(t); t = setTimeout(async () => {
+    try { await db.collection('notes').doc(`${ta.dataset.scene}__${me}`).set({ scene: ta.dataset.scene, by: me, text: ta.value.slice(0, 2000), at: Date.now() }); }
+    catch (e) { status.textContent = 'That note did not save: ' + (e.message || e.code || 'unknown error'); }
+  }, 700); }); });
+}
+start();
+</script>

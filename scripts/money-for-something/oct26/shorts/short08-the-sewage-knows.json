@@ -1,0 +1,46 @@
+{
+ "voice": [
+  "short8"
+ ],
+ "item": "2610-08",
+ "signal": [
+  68,
+  44
+ ],
+ "chyron": "\"2,500,000,000 LINES.\"",
+ "turn": "All I know",
+ "payoff": "by 2054 the sewage was the only honest institution left.",
+ "slams": [
+  {
+   "type": "stat",
+   "at": "cocaine",
+   "text": "£9.8 BILLION",
+   "sub": "a year · sewage tests"
+  },
+  {
+   "clear": "Ozempic's"
+  }
+ ],
+ "pictures": [
+  {
+   "key": "s8-sewage"
+  },
+  {
+   "at": "Ozempic's",
+   "key": "s8-ozempic"
+  },
+  {
+   "at": "Brenda's",
+   "key": "s8-pub"
+  },
+  {
+   "at": "The water",
+   "key": "s8-outfall"
+  },
+  {
+   "at": "All I know",
+   "key": "s8-fish"
+  }
+ ],
+ "name": "short08-the-sewage-knows"
+}

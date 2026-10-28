@@ -1,0 +1,44 @@
+{
+ "clips": [
+  {
+   "id": "p05-press-wide",
+   "plate": "p05-press-wide",
+   "mode": "frames",
+   "chars": [],
+   "full": "The press runs: printed sheets slide out one after another onto the stack on the pallet. At the table one man tops up a glass of whisky. Everyone else stays where they are. Fixed camera, one continuous shot, sharp in every frame, normal speed. Sound: the steady rhythmic thump and hiss of a big printing press, a glass being filled, low laughter with no words. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "p06-ex",
+   "plate": "p06-ex",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex, tapping the table, says, in a warm, unhurried, privately educated southern English accent: Problem is eyes. Two thousand people outside that bank tomorrow. Then he sits back. Fixed camera, one continuous shot. Sound: his voice, and the steady thump of a big printing press. No music. Thanks."
+  },
+  {
+   "id": "p07-red",
+   "plate": "p07-red",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Red",
+    "Mr Blue"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Red, raising his glass to Mr Blue, says, in an earnest north London English accent: Leave the people to us. Then they clink glasses. Fixed camera, one continuous shot. Sound: his voice, glasses clinking, the steady thump of a big printing press. No music. Thanks."
+  },
+  {
+   "id": "c02b-barry4f",
+   "plate": "c02n-barry",
+   "mode": "frames",
+   "chars": [],
+   "full": "The man in the hi-vis jacket talks across the table, grumbling, shaking his head once, then lifts his mug of tea and takes a swig. Fixed camera, one continuous shot, sharp in every frame, normal speed. Sound: his low grumbling voice, cutlery, a radio murmuring in a small café. No music. Thanks."
+  },
+  {
+   "id": "f02n-freddo20f",
+   "plate": "f02n-freddo20",
+   "mode": "frames",
+   "chars": [],
+   "full": "The man in the hi-vis jacket, outraged, says two short words at the card, then keeps staring at it with the little chocolate bar held up. Fixed camera, one continuous shot, sharp in every frame, normal speed. Sound: his voice, café clatter. No music. Thanks."
+  }
+ ]
+}

@@ -206,5 +206,5 @@ Thanks.
 - ⬜ **The swish is a placeholder** built from noise. A real recorded page-turn sound will be better.
 - ⬜ **The real side is ungraded** `20.mp4` (bright white sky), so the reveal is a hard jump from slate to bright. That may be the point, or the camping grade could be applied.
 - ⬜ **Alternative turn:** Premiere's built-in **Page Turn** (a true corner curl) once the BadCode Bridge panel is reopened.
-- ⬜ **Untested option:** Omni doing the turn itself (start = ink, end = `20.jpeg`). It needs the Flow tool's stale "Omni rejects a last frame" guard removed (Omni 1.1 has end frames) and one `/mcp` reconnect, after killing the old server first (law 22). Research expects a morph.
+- ⬜ **Untested option:** Omni doing the turn itself (start = ink, end = `20.jpeg`). It needs the Flow tool's stale "Omni rejects a last frame" guard removed (Omni 1.1 has end frames) and one `/mcp` reconnect, after killing the old server first (law 23). Research expects a morph.
 - ⬜ **`scripts/delivery-qc.sh` not run.** There is no ffprobe here, only a scratch ffmpeg.

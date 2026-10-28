@@ -1,0 +1,46 @@
+{
+ "voice": [
+  "short9"
+ ],
+ "item": "2610-09",
+ "signal": [
+  85,
+  60
+ ],
+ "chyron": "MEANWHILE.",
+ "turn": "go viral",
+ "payoff": "the only pension that works.",
+ "slams": [
+  {
+   "type": "stat",
+   "at": "TikTok",
+   "text": "15,000,000 FOLLOWERS",
+   "sub": "age 96",
+   "size": 92
+  },
+  {
+   "type": "stat",
+   "at": "pays for",
+   "text": "$12,000 A MONTH",
+   "sub": "pays the care home",
+   "size": 92
+  },
+  {
+   "clear": "That's"
+  }
+ ],
+ "pictures": [
+  {
+   "key": "s9-gran"
+  },
+  {
+   "at": "Meanwhile",
+   "key": "s9-william"
+  },
+  {
+   "at": "a DJ",
+   "key": "s9-dj"
+  }
+ ],
+ "name": "short09-meanwhile"
+}

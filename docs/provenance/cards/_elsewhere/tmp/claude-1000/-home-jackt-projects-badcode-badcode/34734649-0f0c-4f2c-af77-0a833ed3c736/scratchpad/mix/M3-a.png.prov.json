@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/34734649-0f0c-4f2c-af77-0a833ed3c736/scratchpad/mix/M3-a.png",
+ "made": "2026-10-25T18:32:35.010Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photo-mode capture from a video game that draws its world and its people in two different ways. Every wall, pavement, lamp and machine is crisp 16-bit pixel art: one even pixel grid, a limited palette of thirty-two colours, hard pixel edges. Only the people are painted in muted realism: weathered faces with real skin texture, stubble and tired eyes, 1930s wool coats, flat caps and worn leather. At night, close to a city building cut open like a doll's house, two floors fill the frame. Street level: a brick red bakery, and in the near foreground the shoulders and backs of protesters in red scarves shoving protesters in blue scarves, mixed ages and skin tones, under a yellow street lamp. Below, through the cut-away floor, an emerald-lit basement where printing presses throw banknotes while gangsters in pinstripe suits play music and a tall skinny mayor in a bowler hat and gold chain dances. Seen low and from the left. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "c2fea7a9-088a-44c7-95c6-41d3d0ab61ee"
+}

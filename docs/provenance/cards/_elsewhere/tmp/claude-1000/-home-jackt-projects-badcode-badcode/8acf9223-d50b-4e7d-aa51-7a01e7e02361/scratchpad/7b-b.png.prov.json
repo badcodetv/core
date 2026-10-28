@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/8acf9223-d50b-4e7d-aa51-7a01e7e02361/scratchpad/7b-b.png",
+ "made": "2026-10-26T12:04:44.151Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Prime-time adult animated sitcom characters, simple rounded people with big round eyes, small dot pupils and overbites, flat colour and black outlines everywhere except the faces, which are rendered with startling real skin: pores, stubble, sweat, tired wet eyes. Every flat colour is laid on with thick visible oil brushstrokes. Only the bodies, clothes and places are cartoon: every face in the frame, however small, is painted as real human skin with wrinkles, pores, bags under the eyes and real eyelids, far more lifelike than anything around it, and no feature is exaggerated. Just behind and beside a mayor on a stone balcony above a 1930s city square: a tall, skinny white man in his sixties with a long narrow face, hollow cheeks and a pencil-thin grey moustache, in a bowler hat and a black coat with a heavy gold chain across his waistcoat, mid-throw, flinging a handful of blank white envelopes out over the railing with a grand smile. A gust of wind already curls the envelopes sideways, away from the crowd and down towards an iron storm drain in the gutter. Below, a packed crowd, young and old, men and women, Black, white and South Asian, reaching up with open hands. Grey morning sky. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "68392b63-bc93-48ca-82f7-b98170a4ec52"
+}
