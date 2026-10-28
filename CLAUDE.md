@@ -19,6 +19,8 @@ Read this first. It tells you what BadCode is, how it sounds, and where everythi
 > The Flow MCP, `run.mts`, the TTS script and Suno `record` write it themselves; anything else, run
 > `scripts/provenance/prov.py card`. Every page published adds a line to its scene's `trail.json`.
 > Every finished cut is frozen to `final.json`, so a whole story can be rerun on a better model.
+> **Artifacts are the UI, the repo is the record:** every page is rebuilt from a builder, and every vote, pick and note
+> is dumped into the scene's `feedback/` before it's acted on, with each decision logged against the page that made it.
 > Each story's film, start to end, is its **overview board** (the `overview-board` skill): `docs/stories/<story>/timelines.json`,
 > every part in order with its beat and timeline page, rebuilt and republished to the same link whenever a timeline changes.
 > The repo holds the words, D: (backed up to Google Drive) holds the media, and the two together are everything.
@@ -74,7 +76,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/video-fx/` | Which tool for the job — **[`hybrid-method.md`](./docs/video-fx/hybrid-method.md) (the lanes are LAYERS: Veo animates the world camera-locked, Premiere moves the camera, ffmpeg does what must be exact — and 8s is not a limit)**, lane choice (Flow / sourcing / ffmpeg / Premiere), **[`ffmpeg-catalogue.md`](./docs/video-fx/ffmpeg-catalogue.md) (319 video filters + the 133-plugin frei0r shelf — the twin of Premiere's catalogue; asked what effects we have, list BOTH)**, the free stack, the 20 research briefs, [`delivery.md`](./docs/video-fx/delivery.md) (**the QC gate before anything ships** — run `scripts/delivery-qc.sh`) and [`footage-sources.md`](./docs/video-fx/footage-sources.md) (68 footage sources, tiered green/amber/red; **the £100/£200-per-film footage budget** and the credits ruling live there). **No paid plugins; footage is free-first with a tiny licence budget as a stop gate** | …you're choosing an effect, wondering if a tool exists, looking for real footage, or about to upload |
 | `docs/story-craft/` | Story-craft toolkit (`story-craft` skill) — [`principles.md`](./docs/story-craft/principles.md) (30 graded principles + 16 house rulings), [`checklist.md`](./docs/story-craft/checklist.md) (the adversarial review pass), [`narrator.md`](./docs/story-craft/narrator.md), [`forms.md`](./docs/story-craft/forms.md), [`evidence.md`](./docs/story-craft/evidence.md), [`case-studies.md`](./docs/story-craft/case-studies.md); [`symptoms.md`](./docs/story-craft/symptoms.md) (**start here** when something is wrong and you don't know what) and [`briefs.md`](./docs/story-craft/briefs.md) (every "brief NN" resolved to its section) | …you're making a story more engaging or reviewing whether it is |
 | `docs/cinematography/` | Shot-craft toolkit (`shot-craft` skill) — **what a shot should BE**, tool-agnostic and built to outlive Flow: [`symptoms.md`](./docs/cinematography/symptoms.md) (**start here** when something looks flat / boring / "like AI" and you don't know why), [`principles.md`](./docs/cinematography/principles.md) (26 graded principles, 3 gates, 8 house rulings, 1 **open** ruling), [`frame.md`](./docs/cinematography/frame.md) (composition, depth, light, colour, lens), [`motion-and-cutting.md`](./docs/cinematography/motion-and-cutting.md) (**§4 = re-cutting footage that already exists**), [`stills.md`](./docs/cinematography/stills.md), [`registers.md`](./docs/cinematography/registers.md) (the monumental register **and its problem**), [`evidence.md`](./docs/cinematography/evidence.md) (grades + the never-cite list) | …you're designing a shot, judging one, or re-cutting a scene |
-| `.claude/skills/` | The skills (20). Map below in **Skills**; the 2026-10-23 audit that shaped them is [`design/2026-10-23-skills-audit.md`](./design/2026-10-23-skills-audit.md). Retired skills sit in [`.claude/skills-archive/`](./.claude/skills-archive/README.md), not loaded | …you want to know which skill does what |
+| `.claude/skills/` | The skills (21). Map below in **Skills**; the 2026-10-23 audit that shaped them is [`design/2026-10-23-skills-audit.md`](./design/2026-10-23-skills-audit.md). Retired skills sit in [`.claude/skills-archive/`](./.claude/skills-archive/README.md), not loaded | …you want to know which skill does what |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |
 | `apps/web` | The website (Vite + React + TS SPA) | …you're building pages/routes |
 | `chain/` | Anchor workspace + Docker toolchain — [`README`](./chain/README.md), [`TESTING`](./chain/TESTING.md) | …you're writing an on-chain program |
@@ -113,6 +115,7 @@ overview-board    the film: running order, the beat of each part, which timeline
     scene-images      2  mood board → storyboard          (image ideation)
     scene-animation   3  animate the picks → Flow clips    (the sequence in motion)
     scene-timeline    4  rough cut → timeline page → notes → rounds → Premiere
+    scene-dialogue       beside 4: rewrite a dialogue by options → ranked drafts → dialogue page → picks
 provenance        under all of it: recipe cards, trail.json, final.json  (docs/provenance/, not a skill)
 ```
 
@@ -121,6 +124,7 @@ provenance        under all of it: recipe cards, trail.json, final.json  (docs/p
 | **The film** | `overview-board` | laying out a film, "where are we", "which timeline do I open", reshaping the running order |
 | | `new-scene` | taking one part from nothing to a noted cut (runs the four stages) |
 | | `scene-beats` · `scene-images` · `scene-animation` · `scene-timeline` | one stage on its own: the beats, a round of stills, re-rolls or a long take, a cut to note or the next round of notes |
+| | `scene-dialogue` | a dialogue too long or not landing: ten writers, ranked, three drafts, picked on a dialogue page, then voiced by scene-timeline |
 | | `lip-sync-dub` | a muted talking clip must match an AI Studio voice |
 | **Engines** | `flow-automation` · `flow-prompt` | driving Google Flow · writing or debugging a Flow prompt (a policy block looks exactly like a timeout) |
 | | `suno-automation` · `suno-prompt` | driving Suno from code · writing a Suno prompt or clicking through Suno by hand (all new work is v6) |

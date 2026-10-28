@@ -59,6 +59,24 @@ scene's timeline."* Worked example: GPOM, https://claude.ai/artifact/AXJqmgAWTRh
 - The builder fills in a section from its `scene` folder **by itself**: the timeline link from `scene.json` `boards`, every published round from `trail.json` (as earlier pages), and a "recipe frozen" badge when `final.json` exists. So for a new-scene part, you mostly keep `state` and `what` current.
 - A part that exists only in Premiere, or doesn't exist yet, **still gets a row**. The gaps are the point.
 
+### The Premiere map (Kai, 2026-10-26)
+
+*"For a given story, we need to always have a coherent map of what timeline artifacts are currently managing
+our script and what Premiere sequences each timeline maps onto."* The board opens with it, built by itself:
+
+- **One row per timeline page:** the page, the **current sequence** it drives, whether they still match
+  (`in sync` / `page ahead` / `edited in Pr`, from `scripts/scene/premiere-check.py --write`), and the older
+  sequences it replaced. All of it comes from each scene's `scene.json` `premiere` record (`current` plus one
+  record per build; the shape is in `scene-timeline`, "Premiere sync"). A reel page lists its parts' sequences.
+- **Every other sequence in the project**, in `timelines.json` → `"premiere": {"project": "…", "other":
+  [{"sequence": "…", "what": "Kai's hand cut | replaced by … | a test, safe to delete | unknown to Claude"}]}`.
+  Every sequence in the project is either on a row or in `other`. When `premiere_list_sequences` shows one
+  that's in neither, add it, and say "unknown to Claude" rather than guess.
+- **The open tabs follow the map:** Kai's own cuts and each page's current sequence, in film order, and
+  nothing else (`scene-timeline`, "Tabs show the film").
+- The section's own `"premiere": "<project> · sequence <name>"` string is only for parts with no timeline page
+  (Kai's own cuts).
+
 ## Modes
 
 ### 1. Skeleton: lay out a new film
@@ -89,7 +107,7 @@ history. Rebuild and republish.
 ### 5. Keep it current (every time a part changes)
 
 Whenever a timeline page is made, changes state, or is replaced:
-1. Edit `timelines.json`: `state`, `tone`, `what`, `open_now`, `updated`. When a page is replaced, move the old link into `history`.
+1. Edit `timelines.json`: `state`, `tone`, `what`, `open_now`, `updated`. When a page is replaced, move the old link into `history`. When a Premiere sequence is built, read every current one and run `premiere-check.py --write` so the map is fresh.
 2. `python3 scripts/provenance/build-timelines.py docs/stories/<story>`
 3. Publish `timelines/index.html` with `url` set to the `url` in `timelines.json`. **Same link, every time.**
 
@@ -98,6 +116,8 @@ Whenever a timeline page is made, changes state, or is replaced:
 First publish: run `Artifact quickstart` (intent `other`), then publish `timelines/index.html` with an icon
 like `map` and a one-line description, and record the URL. After that, always republish to that URL.
 The page is read-only: Kai and Jack never type into it, they tell Claude. Notes belong on the scene timeline pages.
+The board is also **the decision log**: each earlier page shows the decisions logged against it (`prov.py trail --decided`).
+Like every page, it is only a window; `timelines.json` and the scene trails are the record (docs/provenance, "Artifacts are the UI").
 
 ## Replies
 

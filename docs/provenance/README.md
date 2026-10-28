@@ -15,8 +15,34 @@ complete alone; the two together are everything. Nothing in this folder needs th
 | What | Where | Written by |
 | --- | --- | --- |
 | 🧾 **Recipe card**: one per generated file (engine, model, exact prompt, inputs, settings, the file it came from, why it was asked for) | beside the file as `<file>.prov.json` **and** in the repo at `docs/provenance/cards/<path under D:\badcode-videos>.prov.json` | the tools, automatically (list below). `prov.py card` for anything else |
-| 📜 **Scene trail**: one line per page published (mood board, storyboard, clips board, timeline round), with its link, round, what it was, and a snapshot of the notes left on it | `docs/stories/<story>/scenes/<scene>/trail.json` + `notes/<stage>-r<N>.json` | `prov.py trail`, run straight after every publish |
+| 📜 **Scene trail**: one line per page published (mood board, storyboard, clips board, timeline round), with its link, round, what it was, how to rebuild it, what it decided, and every vote, pick and note left on it | `docs/stories/<story>/scenes/<scene>/trail.json` + `feedback/<stage>-r<N>/<collection>/<doc>.json` | `prov.py trail`, run straight after every publish |
 | 🔒 **Final recipe**: when Kai says a cut is done, every shot and sound in it traced back through its cards to the first prompt, plus the script and voice casting | `<scene>/final.json` + `final-edl.json` (an earlier freeze is renamed, never overwritten) | `prov.py freeze` |
+
+## Artifacts are the UI; the repo is the record
+
+Kai, 2026-10-23: *"using the artifacts published as a UI for the human to interact with these various layers of
+the builder, but ultimately committing the results and feedback from that into the repo… a log of which
+artifacts were used for which decision, but not rely upon them."*
+
+The pages (mood boards, storyboards, timelines, the overview board) live behind the claude.ai login. They are
+where Kai and Jack look, vote and note. **Nothing may exist only there.** Four rules:
+
+1. **Every page is built from repo files by a builder** (`scripts/scene/build-*.py`, `scripts/provenance/build-timelines.py`), and its spec lives in the scene folder. Never hand-write or hand-edit a page; if no builder fits, add one. The trail line
+   records the exact command (`--rebuild`), so any page can be made again from the repo plus the media on D:.
+2. **Every read of a page's feedback is dumped into the repo first**, raw, before you act on it:
+   `ArtifactData list` each collection the page uses (`votes`, `notes`, `picks`) with
+   `out_dir = $(prov.py feedback-dir <scene-dir> --stage … --round N)`. One file per document, exactly as Kai left it.
+   Then log the round with `prov.py trail … --feedback`. Your reading of the notes (the plan, the replies) goes in
+   the scene's own files as before (`cut-notes.json`, `picks.md`); the dump is the evidence underneath it.
+3. **Every decision a page settles is logged against that page:** `--decided "<Kai's words>"` on the trail line,
+   once per decision. The overview board shows them under each earlier page, so it doubles as the decision log:
+   which page, which round, what was decided.
+4. **A lost page is rebuilt, not mourned.** Run the trail's `rebuild` command and republish (a new link if the old one
+   is gone; record it with `trail`). Then `prov.py restore <scene-dir> --stage … --round N` prints the
+   `ArtifactData batch` writes (50 a chunk, each a `set` from the dumped file) that put every vote and note back.
+
+Commit the dumps with the round. They are small, and they are the only copy of Kai's and Jack's words that
+doesn't depend on a login.
 
 ## The overview board: the film's running order (one per story)
 
@@ -65,11 +91,14 @@ the file it was made from, and that link is what lets a freeze walk back to the 
 1. **Make media with the tools above.** Cards appear by themselves.
 2. **Publish a page** (mood board, storyboard, timeline). Straight after, run:
    ```bash
-   python3 scripts/provenance/prov.py trail <scene-dir> --stage timeline --round 2 --url <artifact url> --what "cut 2: door slam in"
+   python3 scripts/provenance/prov.py trail <scene-dir> --stage timeline --round 2 --url <artifact url> \
+     --what "cut 2: door slam in" --rebuild "python3 scripts/scene/build-timeline.py <scene-dir> <out-dir>"
    ```
    It also writes the link into `scene.json`'s `boards`, so the link can't get lost.
-3. **When Kai's notes come in**, read them with `ArtifactData`, save them to a JSON file, and pass `--notes <file>` on that
-   round's trail line. The notes then live in the repo, not only on claude.ai.
+3. **When Kai's notes come in**, dump the page's collections into
+   `$(python3 scripts/provenance/prov.py feedback-dir <scene-dir> --stage timeline --round 2)` with `ArtifactData list … out_dir`,
+   then log it: `prov.py trail <scene-dir> --stage timeline --round 2 --url <url> --what "Kai's round 2 notes" --feedback --decided "…"`.
+   See "Artifacts are the UI; the repo is the record" above.
 4. **Before showing a cut**, run `python3 scripts/provenance/prov.py check <scene-dir>`. It lists every file in the cut that has no
    card. Write the missing ones then, while you still know how each file was made.
 5. **When Kai says it's done**, run `python3 scripts/provenance/prov.py freeze <scene-dir> --note "<his words>"` and commit.

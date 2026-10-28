@@ -17,7 +17,7 @@ import json
 import pathlib
 import sys
 
-KIND = {'moodboard': 'mood board', 'storyboard': 'storyboard', 'timeline': 'timeline', 'clips': 'clips board'}
+KIND = {'moodboard': 'mood board', 'storyboard': 'storyboard', 'timeline': 'timeline', 'clips': 'clips board', 'picks': 'picks page'}
 TONES = {'premiere': ('ok', 'In Premiere'), 'ok': ('ok', ''), 'wip': ('wip', ''), 'gap': ('gap', ''), 'done': ('ok', '')}
 
 
@@ -45,12 +45,21 @@ def fill(sec, story):
         for t in rounds:
             if t['url'] not in seen:
                 hist.append({'name': t.get('what', ''), 'url': t['url'], 'kind': KIND.get(t['stage'], t['stage']),
-                             'date': t.get('at', '')[:10]})
+                             'date': t.get('at', '')[:10], 'decided': list(t.get('decided') or [])})
                 seen.add(t['url'])
+            else:  # a later round of a page already listed: its decisions still belong on the record
+                for h in hist + [sec]:
+                    if h.get('url', h.get('timeline')) == t['url'] and t.get('decided'):
+                        h.setdefault('decided', []).extend(t['decided'])
         if rounds:
             last = [t for t in rounds if t['url'] == sec.get('timeline')]
             if last and last[-1].get('round') is not None:
                 sec['round'] = last[-1]['round']
+        pr = cfg.get('premiere') or {}
+        if pr.get('current'):  # which Premiere sequence this page currently drives, and the ones it replaced
+            cur = pr[pr['current']]
+            sec['pr'] = {'sequence': cur['sequence'], 'check': cur.get('check', {}),
+                         'older': [r['sequence'] for k, r in pr.items() if isinstance(r, dict) and k != pr['current']]}
         if (d / 'final.json').exists():
             sec['frozen'] = json.loads((d / 'final.json').read_text()).get('frozen', '')[:10]
     sec['history'] = sorted(hist, key=lambda h: h.get('date', ''), reverse=True)
@@ -78,15 +87,22 @@ def row(sec, now, child=False):
     if sec.get('timeline'):
         rnd = f' (round {sec["round"]})' if sec.get('round') is not None else ''
         links.append(f'<a href="{esc(sec["timeline"])}">Open the timeline{rnd}</a>')
-    if sec.get('premiere'):
+    if sec.get('pr'):
+        st = sec['pr']['check'].get('state', 'not checked')
+        links.append(f'<span class="tc">Premiere: <b>{esc(sec["pr"]["sequence"])}</b> · {esc(st)}</span>')
+    elif sec.get('premiere'):
         links.append(f'<span class="tc">Premiere: {esc(sec["premiere"])}</span>')
     if sec.get('scene'):
         links.append(f'<span class="tc">repo: {esc(sec["scene"])}/</span>')
     if links:
         out.append(f'<div class="links">{"".join(links)}</div>')
+    if sec.get('decided'):
+        out.append('<div class="decs">' + ''.join(f'<div class="dec">→ {esc(x)}</div>' for x in sec['decided']) + '</div>')
     if sec.get('history'):
         items = ''.join(f'<li><a href="{esc(h["url"])}">{esc(h["name"])}</a> <span class="tc">{esc(h.get("kind", ""))}'
-                        f'{" · " + esc(h["date"]) if h.get("date") else ""}</span></li>' for h in sec['history'])
+                        f'{" · " + esc(h["date"]) if h.get("date") else ""}</span>'
+                        + (''.join(f'<div class="dec">→ {esc(x)}</div>' for x in h['decided']) if h.get('decided') else '')
+                        + '</li>' for h in sec['history'])
         out.append(f'<details><summary>Earlier pages ({len(sec["history"])})</summary><ul>{items}</ul></details>')
     if sec.get('parts'):
         out.append('<ol class="parts">' + ''.join(row(p, now, True) for p in sec['parts']) + '</ol>')
@@ -126,14 +142,53 @@ li.part { background: transparent; border-style: dashed; padding: 8px 12px; }
 .ok { color: var(--green); } .wip { color: var(--amber); } .gap { color: var(--red); }
 .what { color: var(--muted); }
 .beat { font-style: italic; }
+.dec { font-size: 13px; color: var(--muted); }
 .count { font: 12px var(--mono); color: var(--muted); margin: -16px 0 24px; }
 details summary { font: 12px var(--mono); color: var(--muted); cursor: pointer; }
 details ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 2px; }
 details li { background: none; border: 0; padding: 0; display: list-item; }
 a { color: var(--fg); text-underline-offset: 3px; }
 a:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.tbl { overflow-x: auto; } table { border-collapse: collapse; width: 100%; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }
+th { font: 600 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .upd { font: 12px var(--mono); color: var(--muted); margin-top: 28px; }
 """
+
+
+SYNC = {'in sync': 'ok', 'page ahead': 'wip', 'edited in Pr': 'gap'}
+
+
+def premiere_map(secs, t):
+    """One table: each timeline page, the Premiere sequence it drives now, whether they still match,
+    and the sequences it replaced; then every other sequence in the project and whose it is."""
+    rows = []
+    for s in secs:
+        kids = [p for p in s.get('parts', []) if p.get('pr')]
+        if kids and s.get('timeline') and not s.get('pr'):  # a reel page over several parts drives all of theirs
+            rows.append(f'<tr><td><a href="{esc(s["timeline"])}">{esc(s["name"])}</a></td>'
+                        f'<td class="tc" colspan="3">drives all of: {esc(", ".join(k["pr"]["sequence"] for k in kids))}</td></tr>')
+        for p in [s] + s.get('parts', []):
+            if p.get('pr'):
+                c = p['pr']['check']
+                page = f'<a href="{esc(p["timeline"])}">{esc(p["name"])}</a>' if p.get('timeline') else esc(p['name'])
+                rows.append(f'<tr><td>{page}</td><td class="tc"><b>{esc(p["pr"]["sequence"])}</b></td>'
+                            f'<td><span class="st {SYNC.get(c.get("state"), "wip")}">{esc(c.get("state", "not checked"))}</span>'
+                            f'{"<div class=tc>" + esc(c["why"]) + "</div>" if c.get("why") else ""}</td>'
+                            f'<td class="tc">{esc(", ".join(p["pr"]["older"]) or "none")}</td></tr>')
+    if not rows:
+        return ''
+    pm = t.get('premiere', {})
+    other = ''.join(f'<li><span class="tc"><b>{esc(o["sequence"])}</b></span> <span class="tc">· {esc(o["what"])}</span></li>'
+                    for o in pm.get('other', []))
+    when = {p['pr']['check'].get('at', '')[:16] for s in secs for p in [s] + s.get('parts', []) if p.get('pr')} - {''}
+    return ('<h2>Premiere map</h2>'
+            f'<p class="what">{esc(pm.get("project", ""))}. The bold sequence is the one each timeline page drives: '
+            'notes on the page land there as a new round. Checked against Premiere '
+            f'{esc(max(when).replace("T", " ") if when else "never")}.</p>'
+            '<div class="tbl"><table><tr><th>Timeline page</th><th>Current sequence</th><th>Matches the page?</th>'
+            f'<th>Older, replaced</th></tr>{"".join(rows)}</table></div>'
+            + (f'<details><summary>Every other sequence in the project ({len(pm.get("other", []))})</summary><ul>{other}</ul></details>' if other else ''))
 
 
 def main(story_dir):
@@ -145,7 +200,7 @@ def main(story_dir):
              'in Premiere': sum(not p.get('timeline') and p.get('tone') == 'premiere' for p in leaves),
              'not made': sum(not p.get('timeline') and p.get('tone') == 'gap' for p in leaves)}
     count = f'{len(leaves)} parts · ' + ' · '.join(f'{v} {k}' for k, v in tally.items() if v)
-    body, group = [], None
+    body, group = [premiere_map(secs, t)], None
     for s in secs:
         if s.get('group') != group:
             if group is not None:

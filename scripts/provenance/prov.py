@@ -6,9 +6,16 @@
         --prompt "door slam, heavy" --input url=https://freesound.org/s/123 --why "Kai 23 Oct: the door must slam"
     python3 scripts/provenance/prov.py card <file> --merge --setting sheet=docs/.../music.md   # add to an existing card
 
-    # one line in the scene's trail per page published (and the page link kept in scene.json "boards")
+    # one line in the scene's trail per page published or read (and the page link kept in scene.json "boards")
     python3 scripts/provenance/prov.py trail <scene-dir> --stage timeline --round 2 --url <artifact url> \\
-        --what "cut 2: door slam in, Maddie turns away" [--notes <file of the page's db notes>]
+        --what "cut 2: door slam in, Maddie turns away" --rebuild "python3 scripts/scene/build-timeline.py ..." \\
+        [--feedback] [--decided "Kai: 15 Hello goes, Maddie outside the doors"]...
+
+    # where to dump a page's database before logging it (pass as ArtifactData out_dir, one list per collection)
+    python3 scripts/provenance/prov.py feedback-dir <scene-dir> --stage timeline --round 2
+
+    # a page was lost: republish it from its builder, then write its feedback back (ArtifactData batch, per chunk)
+    python3 scripts/provenance/prov.py restore <scene-dir> --stage timeline --round 2
 
     # which files in the cut have no card
     python3 scripts/provenance/prov.py check <scene-dir>
@@ -31,7 +38,7 @@ import sys
 REPO = pathlib.Path(__file__).resolve().parents[2]
 SCHEMA = 'badcode.prov/1'
 KINDS = ('image', 'video', 'voice', 'music', 'sfx', 'cut', 'other')
-STAGES = ('brief', 'moodboard', 'storyboard', 'clips', 'timeline', 'premiere', 'other')
+STAGES = ('brief', 'moodboard', 'storyboard', 'clips', 'picks', 'dialogue', 'timeline', 'premiere', 'other')
 
 
 def media_root():
@@ -141,14 +148,30 @@ def cmd_card(a):
         print(p)
 
 
+def feedback_dir(d, stage, rnd):
+    """Where a page's database is dumped: <scene>/feedback/<stage>-r<N>/<collection>/<doc_id>.json."""
+    return d / 'feedback' / f"{stage}-r{rnd if rnd is not None else 0}"
+
+
+def cmd_feedback_dir(a):
+    d, _ = _scene(a.scene)
+    print(feedback_dir(d, a.stage, a.round))
+
+
 def cmd_trail(a):
     d, cfg = _scene(a.scene)
-    row = {'at': now(), 'stage': a.stage, 'round': a.round, 'url': a.url, 'what': a.what}
-    if a.notes:
-        snap = d / 'notes' / f"{a.stage}-r{a.round if a.round is not None else 0}.json"
-        snap.parent.mkdir(exist_ok=True)
-        shutil.copyfile(a.notes, snap)
-        row['notes'] = str(snap.relative_to(d))
+    row = {'at': now(), 'stage': a.stage, 'round': a.round, 'url': a.url, 'what': a.what,
+           'rebuild': a.rebuild, 'decided': a.decided or None}
+    fb = feedback_dir(d, a.stage, a.round)
+    if a.notes:  # a single JSON file of notes, from before the per-document dump
+        fb.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(a.notes, fb / 'notes.json')
+    if a.feedback or a.notes:
+        docs = sorted(p for p in fb.rglob('*.json'))
+        if not docs:
+            sys.exit(f'--feedback: nothing under {fb}; dump the page with ArtifactData list out_dir={fb} first')
+        row['feedback'] = str(fb.relative_to(d))
+        row['feedback_docs'] = len(docs)
     trail_file = d / 'trail.json'
     trail = json.loads(trail_file.read_text()) if trail_file.exists() else []
     trail.append({k: v for k, v in row.items() if v is not None})
@@ -158,6 +181,17 @@ def cmd_trail(a):
         cfg.setdefault('boards', {})[a.stage] = a.url
         (d / 'scene.json').write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + '\n')
     print(json.dumps(trail[-1], ensure_ascii=False))
+
+
+def cmd_restore(a):
+    """The ArtifactData batch writes that put a round's feedback back into a republished page, 50 a chunk."""
+    d, _ = _scene(a.scene)
+    fb = feedback_dir(d, a.stage, a.round)
+    writes = [{'op': 'set', 'collection': str(p.parent.relative_to(fb)), 'doc_id': p.stem, 'file_path': str(p)}
+              for p in sorted(fb.rglob('*.json')) if p.parent != fb]
+    if not writes:
+        sys.exit(f'no per-document feedback under {fb}')
+    print(json.dumps([writes[i:i + 50] for i in range(0, len(writes), 50)], indent=1))
 
 
 def cmd_check(a):
@@ -215,7 +249,16 @@ def main():
     t.add_argument('--round', type=int)
     t.add_argument('--url')
     t.add_argument('--what', required=True, help='what this round is, in a sentence')
-    t.add_argument('--notes', help="a JSON file of the page's db notes, snapshotted into <scene>/notes/")
+    t.add_argument('--rebuild', help='the command that rebuilds this page from the repo')
+    t.add_argument('--feedback', action='store_true', help="the page's db is dumped under feedback-dir: record it")
+    t.add_argument('--notes', help="older form: one JSON file of the page's notes, copied into the feedback dir")
+    t.add_argument('--decided', action='append', metavar='TEXT', help='a decision this page settled, in Kai\'s words')
+    for name, h in (('feedback-dir', 'print where to dump a page\'s db for this stage and round'),
+                    ('restore', 'print the ArtifactData batch writes that restore a round\'s feedback')):
+        s = sub.add_parser(name, help=h)
+        s.add_argument('scene')
+        s.add_argument('--stage', choices=STAGES, required=True)
+        s.add_argument('--round', type=int)
     for name, h in (('check', 'list the files in the cut that have no card'),
                     ('freeze', 'write <scene>/final.json: every shot and sound traced to its recipe')):
         s = sub.add_parser(name, help=h)
@@ -223,7 +266,8 @@ def main():
         if name == 'freeze':
             s.add_argument('--note', help="why it was frozen, in Kai's words")
     a = ap.parse_args()
-    {'card': cmd_card, 'trail': cmd_trail, 'check': cmd_check, 'freeze': cmd_freeze}[a.cmd](a)
+    {'card': cmd_card, 'trail': cmd_trail, 'check': cmd_check, 'freeze': cmd_freeze,
+     'feedback-dir': cmd_feedback_dir, 'restore': cmd_restore}[a.cmd](a)
 
 
 if __name__ == '__main__':

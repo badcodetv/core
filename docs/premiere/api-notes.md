@@ -2062,3 +2062,12 @@ In 27.0 beta **`Application` is gone from the types altogether**. Keep using `ho
   set Motion param 1 to 200 after placing.
 - ✅ **Markers can be removed from eval:** `ppro.Markers.getMarkers(seq)` → `getMarkers()` → `createRemoveMarkerAction(m)` in a
   transaction.
+
+## 2026-10-26: closing and opening sequence tabs (GPOM)
+
+- `project.closeSequence(seq)` closes that sequence's timeline tab and returns `true`, even for a sequence
+  whose tab wasn't open. The sequence, its clips and its bin are untouched; it stays in the Project panel.
+- `project.openSequence(seq)` opens a tab, in call order, so close every sequence, then open a list in
+  order, to get tabs in film order. Then `project.setActiveSequence(seq)` to pick the one in front.
+- There's no call that lists which tabs are open, so treat "open" as whatever you last opened.
+- Proven on gpom-story.prproj: 20 closed, 8 reopened in film order, active set back to `gpom-sh-A-rough1`.

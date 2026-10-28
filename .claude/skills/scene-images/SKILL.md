@@ -30,8 +30,9 @@ Cheap first looks: many options per beat, not finished frames. **Stills cost no 
   - an open-mouth singing face
   - "sing"/"note" in video prompts
 - Record every row in `moodboard.json` (`[beat, id, look, prompt, style?]`), blocked ones included. The Flow tools write each still's recipe card themselves (docs/provenance).
-- Build the page with `python3 scripts/scene/build-moodboard.py <scene-dir> <out.html>` and publish it with `capabilities: {db:{}, user:{}}`. Republish to the **same file path** each round so the URL never changes. After each publish: `python3 scripts/provenance/prov.py trail <scene-dir> --stage moodboard --round N --url <url> --what "…"` (this also records the URL in `scene.json`).
-- Read votes and notes with `ArtifactData` (collections `votes`, `notes`). Kai often clicks his picks himself, so read them before writing any. Save them and pass `--notes` on the round's trail line.
+- Build the page with `python3 scripts/scene/build-moodboard.py <scene-dir> <out.html>` and publish it with `capabilities: {db:{}, user:{}}`. Republish to the **same file path** each round so the URL never changes. After each publish: `python3 scripts/provenance/prov.py trail <scene-dir> --stage moodboard --round N --url <url> --what "…" --rebuild "python3 scripts/scene/build-moodboard.py <scene-dir> <out.html>"` (this also records the URL in `scene.json`).
+- Read votes and notes by **dumping them into the repo first**: `ArtifactData list` on `votes` and on `notes`, each with `out_dir` = `$(python3 scripts/provenance/prov.py feedback-dir <scene-dir> --stage moodboard --round N)`, then read the files. Kai often clicks his picks himself, so read them before writing any. Log it: `prov.py trail … --feedback --decided "<each pick or ruling, Kai's words>"`. The page is only the UI; the repo is the record (docs/provenance).
+- **A few stills to choose between outside a mood board round** (a fix, a missing shot): a picks page, `scripts/scene/build-picks.py` from the scene's `picks.json`. Every image enlarges on click. Never hand-make a page.
 - **Rounds:** a round answers Kai's notes, with new rows tagged by round. Keep going until every beat has a "This".
 
 ## The storyboard

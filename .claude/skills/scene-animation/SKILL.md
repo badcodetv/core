@@ -84,8 +84,8 @@ before writing a prompt for a named engine.
 
 Build the storyboard page with `python3 scripts/scene/build-storyboard.py <scene-dir> <out.html>` and
 publish it like the mood board (`capabilities: {db:{}, user:{}}`, same file path every round, then
-`prov.py trail <scene-dir> --stage storyboard …`). Kai picks a still and an option per frame (db `picks`,
-kinds `still`/`anim`). In the reply, **break each decision down plainly**: the choice, what each option
+`prov.py trail <scene-dir> --stage storyboard … --rebuild "python3 scripts/scene/build-storyboard.py …"`). Kai picks a still and an option per frame (db `picks`,
+kinds `still`/`anim`). Dump `picks` and `notes` into the repo before reading them (`ArtifactData list` with `out_dir` from `prov.py feedback-dir`), then `prov.py trail … --feedback --decided "…"` per pick. In the reply, **break each decision down plainly**: the choice, what each option
 buys, and your recommendation. Kai has asked for this.
 
 ## Video
@@ -106,6 +106,7 @@ FLOW_CDP_PORT=<port from flow_status> npx tsx scripts/scene/run.mts docs/stories
   - Look at it for a redraw, a morph, extra people, or text slop.
   - Crop and enlarge the subject at the first, middle and last frames.
 - Import the passing clips to the scene's Premiere bin (`premiere_import` with `bin`). Don't place them unless asked.
+- **Choosing between candidates** (two clips for a shot, a re-roll against the original): put them on a picks page, `scripts/scene/build-picks.py` from the scene's `picks.json`, never a hand-made page.
 - **Re-rolls.** Kai's notes become `extra` rows in `video-jobs.json`, each with `key` like `12-r2`, the still, the duration, the new motion and `why` in his words. If a new still is needed, go back through a small `scene-images` round first. Show all candidates and let him pick, unless he said to go ahead.
 
 Log every pick and ruling in `picks.md` as it happens.

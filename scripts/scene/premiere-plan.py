@@ -10,6 +10,13 @@ picture never drops sound onto a voice track. Stems in --skip are left out (e.g.
 Track order: vox-* stems first, then mus-*, then sfx-*, in edl order within each group.
 
     python3 scripts/scene/premiere-plan.py <edl.json> <out plan.json> [--skip mus-M0-radio] [--tag rough2]
+                                           [--seq <sequence name>]
+
+--seq also writes <out>.place.js beside the plan: the premiere_eval body that places every clip of the
+plan on the ACTIVE sequence (it refuses to run on any other), finding media in the bin named after the
+sequence. The build is then: premiere_import(files, bin=<seq>) -> premiere_create_sequence(<seq>,
+fromItems=[first V1 clip's item]) -> premiere_eval(place.js) -> premiere_get_sequence -> export a frame
+and look. See the scene-timeline skill, "Premiere sync".
 
 --tag puts the line files under premiere/<tag>/lines/, so a later build never overwrites the files an
 earlier sequence (rough1) still plays.
@@ -22,6 +29,33 @@ import subprocess
 import sys
 
 PAD_IN, PAD_OUT = 0.05, 0.12
+
+
+PLACE_JS = r"""const V=__V__;
+const A=__A__;
+const S=__S__;
+const project=await helpers.activeProject(); const seq=await helpers.activeSequence(project);
+if(seq.name!==S) return {error:'wrong sequence',name:seq.name};
+const root=await project.getRootItem(); let bin=null; for(const k of await root.getItems()){ if(k.name===S){ let fo=null; try{ fo=ppro.FolderItem.cast(k); }catch(e){} if(fo) bin=fo; } }
+if(!bin) return {error:'no bin named '+S};
+const byPath={}; for(const it of await bin.getItems()){ try{ byPath[(await ppro.ClipProjectItem.cast(it).getMediaFilePath()).toLowerCase()]=it; }catch(e){} }
+const ed=ppro.SequenceEditor.getEditor(seq); const tk=s=>helpers.secondsToTick(Math.round(s*24)/24+0.002); let done=0; const fail=[];
+for(const [p,t,i,d] of V){ try{ const item=byPath[p.toLowerCase()]; const clip=ppro.ClipProjectItem.cast(item);
+  helpers.withTransaction(project,S+' in/out',ca=>ca.addAction(clip.createSetInOutPointsAction(tk(i),tk(i+d))));
+  helpers.withTransaction(project,S+' place',ca=>ca.addAction(ed.createOverwriteItemAction(item,tk(t),0,0)));
+  helpers.withTransaction(project,S+' clear',ca=>ca.addAction(clip.createClearInOutPointsAction())); done++; }catch(e){ fail.push([p,String(e).slice(0,100)]); } }
+for(const [p,t,tr] of A){ try{ const item=byPath[p.toLowerCase()];
+  helpers.withTransaction(project,S+' audio',ca=>ca.addAction(ed.createOverwriteItemAction(item,helpers.secondsToTick(t),0,tr))); done++; }catch(e){ fail.push([p,t,String(e).slice(0,100)]); } }
+const counts=[]; const n=await seq.getAudioTrackCount(); for(let k=0;k<n;k++){ counts.push((await (await seq.getAudioTrack(k)).getTrackItems(1,false)).length); }
+const vc=(await (await seq.getVideoTrack(0)).getTrackItems(1,false)).length;
+return {done,fail,vc,counts,mapped:Object.keys(byPath).length};
+"""
+
+
+def win(p):
+    """/mnt/d/x/y -> D:\\x\\y, the form getMediaFilePath() reports."""
+    p = str(p)
+    return p[5].upper() + ':' + p[6:].replace('/', '\\') if p.startswith('/mnt/') else p
 
 
 def has_audio(f):
@@ -74,6 +108,12 @@ def main(argv):
     out_path.write_text(json.dumps({'sequence_total': edl['total'], 'fps': edl['fps'], 'files': files,
                                     'video': video, 'audio': audio,
                                     'tracks': [a['name'] for a in order]}, indent=1))
+    if '--seq' in argv:
+        seq = argv[argv.index('--seq') + 1]
+        js = (PLACE_JS.replace('__V__', json.dumps([[win(f), t, i, d] for f, t, i, d in video]))
+              .replace('__A__', json.dumps([[win(f), t, k] for f, t, k in audio]))
+              .replace('__S__', json.dumps(seq)))
+        out_path.with_suffix('.place.js').write_text(js)
     print(out_path, len(video), 'shots', len(audio), 'audio clips', len(order), 'tracks')
 
 

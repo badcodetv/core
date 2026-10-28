@@ -16,15 +16,20 @@ overview-board  ── the film: this scene is one row, its beat is the starting
 2 scene-images     mood board ──► votes ──► rounds ──► storyboard     │ Kai picks the stills
 3 scene-animation  options per frame ──► picks ──► Flow clips ──► bin │ Kai's go on the words and the spend
 4 scene-timeline   voices + music + effects ──► timeline page ──► notes ──► rounds ──► frozen
-                   ──► (when Kai asks) a NEW Premiere sequence
+  scene-dialogue   (beside 4, when the words need rewriting) ten writers ──► ranked ──► 3 drafts ──► dialogue page ──► picks ──► script
+                   ──► (when Kai asks) a NEW Premiere sequence, which the page then DRIVES:
+                       every later round of notes lands as <story>-<order>-<part>-r<N+1> (scene-timeline, "Premiere sync")
 ```
 
 **Gated.** Each stage is *talk → approve → produce*, and nothing is generated past a stage before its
 picks are in. Never spend video credits on a still Kai has not picked. **Kai cuts the film himself:**
 stage 3 ends at clips in a Premiere **bin**, and stage 4 only builds into Premiere as a new sequence when he asks.
+After that the timeline page is still where he notes, and **every round lands on the page and in Premiere
+together**, as a new sequence. If he has cut the current one by hand, his edit is pulled back onto the page
+instead of built over: no split brain (Kai, 2026-10-27; scene-timeline, "No split brain").
 
 Any stage can be run on its own: a new round of stills is `scene-images`, re-rolls are `scene-animation`,
-putting an existing cut on a timeline page is `scene-timeline`.
+putting an existing cut on a timeline page is `scene-timeline`, rewriting a dialogue by options is `scene-dialogue`.
 
 ## Read first
 
@@ -49,7 +54,7 @@ The words live in the repo and the media lives outside it (the clips/ convention
 | `script.json` | the words per beat `{beats:[{id, title, see, lines:[{who, text, by: kai\|claude, how?}], music, sfx}], voices:[{id, name, profile…}]}` | 4 |
 | `cut-notes.json` | each timeline round: Claude's plan, a reply per note, Kai's notes snapshotted | 4 |
 | `picks.md` | append-only record of every pick, note and ruling, dated, Kai's words kept | all |
-| `trail.json` + `notes/` | **provenance**: one line per page published (`prov.py trail`), with the notes snapshotted each round | all |
+| `trail.json` + `feedback/` | **provenance**: one line per page published or read (`prov.py trail`): its link, rebuild command, decisions, and every vote, pick and note dumped raw | all |
 | `final.json` + `final-edl.json` | **provenance**: the finished cut, every shot and sound traced to its recipe (`prov.py freeze`) | 4 |
 | Media | `/mnt/d/badcode-videos/<story>/clips/<scene>/` with `moodboard/<id>.jpg`, `video/<prefix>-<key>-<still>.mp4`, and stage 4's `voice/`, `sfx/`, `cut/` (`edl.json`, `preview.mp4`, `stems/`) | all |
 
@@ -83,6 +88,11 @@ Tools in `scripts/scene/`, all taking the scene folder:
 | `run.mts <dir> [keys…]` | animates jobs in Flow in waves, harvests them, names them | 3 |
 | `match.py <dir> [--apply]` | names harvested clips by matching their first frame to the plates, and writes each clip's recipe card | 3 |
 | `build-timeline.py <dir> <out-dir>` | the timeline page from `cut.edl` + `cut.preview` (format in `timeline.py`) | 4 |
+| `build-picks.py <picks.json> <out.html>` | a **picks page**: rows of options (stills, clips, voice takes, Suno links), Pick one per row, a note per row | 2, 3, 4 |
+
+**Every page comes from a builder, and every image on it opens large on click** (Kai, 2026-10-23: a hand-made picks page had
+thumbnails you couldn't enlarge). Never hand-write a page's HTML. If no builder fits, extend one of these (or add one
+here) and keep its spec in the scene folder, so the page can be rebuilt from the repo.
 
 Worked examples, built before the tools were generalised: the GPOM opening recut
 (`scripts/gpom/build-opening-*.py`, `scripts/gpom/opening-video/`,
@@ -94,7 +104,8 @@ Worked examples, built before the tools were generalised: the GPOM opening recut
 Kai, 2026-10-23: keep a trail good enough to **rerun the whole scene on a better model**. Full rules:
 [`docs/provenance/README.md`](../../../docs/provenance/README.md). Each stage skill carries its own part. In short:
 - **Recipe cards are automatic** for Flow MCP stills and edits, `run.mts` clips, TTS voices and Suno `record`. Anything else you make gets `prov.py card` straight after.
-- **After every publish** of a page: `prov.py trail <scene-dir> --stage … --round N --url … --what "…"`, with `--notes` once Kai's notes are read.
+- **The pages are only the UI; the repo is the record** (Kai, 2026-10-23). After every publish: `prov.py trail <scene-dir> --stage … --round N --url … --what "…" --rebuild "<builder command>"`.
+  Every time you read a page's votes, picks or notes: dump them first (`ArtifactData list` with `out_dir` from `prov.py feedback-dir`), then `prov.py trail … --feedback --decided "<Kai's words>"`. A lost page is rebuilt from its `rebuild` command and refilled with `prov.py restore`.
 - **Before showing a cut:** `prov.py check`. **When Kai says it's done:** `prov.py freeze`, and commit.
 - **The overview board** row for the scene is kept current at every stage (the `overview-board` skill).
 
