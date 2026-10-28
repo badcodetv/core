@@ -402,11 +402,20 @@
   },
   "premiere": {
     "rough1": {
-      "sequence": "gpom-sh-C-rough1",
-      "bin": "gpom-sh-C-rough1",
+      "sequence": "gpom-4-C-walkout-r1",
+      "bin": "gpom-4-C-walkout-r1",
       "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
       "built": "2026-10-23",
-      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0."
-    }
+      "how": "scripts/scene/premiere-plan.py on the edl: V1 picture with in/out; one audio track per stem in the order vox-*, mus-*, sfx-*; each voice line its own clip cut from its stem (premiere/lines/); music and sfx stems whole from 0.",
+      "guid": "617fffe6-53ad-4470-b087-b773fb286436",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/edl.json",
+      "renamed_from": "gpom-sh-C-rough1",
+      "check": {
+        "at": "2026-10-27T19:22",
+        "state": "in sync",
+        "why": ""
+      }
+    },
+    "current": "rough1"
   }
 }

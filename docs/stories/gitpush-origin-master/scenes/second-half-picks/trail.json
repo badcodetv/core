@@ -1,0 +1,24 @@
+[
+ {
+  "at": "2026-10-23T17:18:26+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co",
+  "what": "Picks page rebuilt from picks.json by build-picks.py: every image now opens large (Kai, 23 Oct); 43 picks saved before the rebuild",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-picks/picks.json <out>/index.html",
+  "feedback": "feedback/picks-r1",
+  "feedback_docs": 43
+ },
+ {
+  "at": "2026-10-23T17:19:22+00:00",
+  "stage": "picks",
+  "round": 12,
+  "url": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co",
+  "what": "Scene E stills: Parliament last shot and the phone screen painted in by Flow",
+  "decided": [
+   "Parliament a (closer, grander); E01 b; E02 b"
+  ],
+  "feedback": "feedback/picks-r12",
+  "feedback_docs": 44
+ }
+]

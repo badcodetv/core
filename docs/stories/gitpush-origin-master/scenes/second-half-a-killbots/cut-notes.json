@@ -1,94 +1,33 @@
 {
  "about": "Kai's notes on the scene A (kill bots) timeline page https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 3,
+ "round": 4,
  "plan": [
   {
-   "h": "Round 3 done (23 Oct), plus 3b: your round-2 notes and your last note, rebuilt. 2:54 (was 2:55)",
+   "h": "Round 4: Maddie's new intro",
    "items": [
-    "MUSIC (at51): your Premiere music track is yours: the Premiere version leaves the M0 radio out and touches nothing you already have. The preview keeps the radio.",
-    "BEAT 1 (at1506): V13 re-made without Maddie (cut3-V13r3): the tank stays far off under the tower the whole 8 s; it plays the same 3.5 s slot.",
-    "9a (at2595): V1 now starts at 1.375 s, after the jump where the tank swaps direction; 4 s long, so everything after 9a is 1 s sooner.",
-    "BEAT 11 (at3398): boss line 2 re-recorded ('Oh. And they've activated their firewalls.'): one clean take, no dropouts in its level trace, 4.4 s (was 6.4 s; the pause after 'Oh' is shorter), so the call is 2 s shorter.",
-    "BEAT 12 (at4098 + at4138): the boss's last line is replaced by MADDIE: 'Good job.' (pause) 'That was close.' ('boss' cut out of the take, round 3b), voiced for relief, shaky and fond (take a of 4, pause tightened; take c is the clean alternative).",
-    "Checked: mix -16.1 LUFS, true peak -1.8 dBFS; whisper hears boss line 2 and Maddie's new line as 'Good job. That was close.' in the mix; frames looked at (V13r3 has no Maddie, 9a has no direction jump). The preview fails the QC levels check as rounds 1 and 2 did (x264 dips blacks in the HUD panels; review file only). Nobody has listened."
+    "Beat 0 is draft 1D from the dialogue page, your pick (27 Oct). Everything after beat 0 is round 3 as you signed it off.",
+    "\"Oh, hello!\", \"Ever since you lot...\" and \"went.\" keep the takes you already had; the other nine phrases are new voices, picked by measurement (whisper heard every one correctly). Nobody has listened yet.",
+    "Her talk runs about 44 s (6.5 s of radio first, then 6.5 to 51 s), shorter than the old ~49 s but longer than the ~30 s the dialogue page estimated: the real takes run slower than my estimate.",
+    "The longest pause (2 s) is after \"We understand that now...\", so the sad line lands before her brisk \"Anyway!\"."
    ]
   },
   {
-   "h": "Round 3: still open",
+   "h": "In Premiere",
    "items": [
-    "Q1. Maddie's line: take a (soft 'Whew.' from the sigh tag, slow 'Good job, boss') is in. Take c is the clean one without the sigh. Keep a?",
-    "Q2. Her beat 12 line plays over V3 (her hatch and antenna on the high street), as the boss's line did. Fine, or would you rather it played over the bots leaving the door?",
-    "Q3. Round 2's open items still stand: patrol music (one cue or both), the two whisper doubts on your voice picks, V10r's gun barrel, beat 0's drift, Derek's lip-sync."
+    "This round is also built as a new sequence, gpom-2-A-killbots-r2. gpom-2-A-killbots-r1 is untouched."
    ]
   },
   {
-   "h": "Round 2 done (23 Oct): every round-1 note and every pick, rebuilt. 2:55 (was 2:35)",
+   "h": "You decide",
    "items": [
-    "BEAT 0: about 6.5 s of Maddie rolling with the radio before she sees us; your new surprised opening ('Oh, hello!' c, long pause, 'Oh, I didn't notice you there.' a, 'Ooh, that gives me an excuse to turn this racket down.' a); the radio dips under her words and goes down after 'racket down' (with a little servo as she turns it); 'It's his tune. He plays it on repeat, every day.' (Q1, take c); 2.5 s after 'he misses you', then 'Anyway...' (take a). The travelling shot is now the 8-clip version (64 s, cut at 57 s), colour pulled back to clip 1 all the way along.",
-    "BEAT 1: roundabout, then Maddie's own street (V13) for only its first 3.5 s while the tank is far off under the tower, then the two bots under the rail arch (V14). Patrol music P1 (cello + felt piano) under it.",
-    "BEAT 3-4: the three rising pings are gone; the muffled row stays. P2 (the cold quartet) under the HUD.",
-    "BEAT 7: Derek's two new shots: 'Oh, sorry, sorry, love.' between Sandra's lines, and 'But the world ended, Sandra!' with a 1.3 s hold on him. Your voice picks (take c of both), re-placed on the same clips.",
-    "9b: V2r2-b (your pick): she stays still inside the dust and it clears in about 1.5 s. Grit falls, the kill bot drones away. 9a is still V1 (the wide-street pass re-make hit her).",
-    "THE CALL (11): your words; Maddie's picks (b, b, a); the boss is the Suno newsreader, one take per line (your picks: w10-1, w25-1, w10-2), through her small speaker. 10b: 'Well, you'd better bloody hurry up, boss. They're nearly there.' (take A).",
-    "12: the HUD says STAND DOWN (RETURN TO PATROL under it). V10r (your pick A) for 5.5 s, then the boss on Maddie's antenna: 'It was useful to keep that zero-day up my sleeve.'",
-    "CHASE MUSIC: C3 (low-string ostinato) from 9a; it ducks under the call and Maddie's 10b line, and its break-off (one low held note) lands on STAND DOWN and rings on under the pack leaving.",
-    "Checked: mix -16.1 LUFS, true peak -1.7 dBFS; whisper heard every line in the mix (fixes made: the radio and the 10b engines were masking words). The preview fails the QC's levels check the same way round 1 did (x264 dips blacks below 16 in the HUD panels); it is a review file, the Premiere sequence is the deliverable. Nobody has listened to it."
-   ]
-  },
-  {
-   "h": "Round 2: still open",
-   "items": [
-    "Q1. Music: both patrol picks are in (P1 under the roaming, P2 under the HUD and kill mode) so you can hear each. Keep both, or one for the whole patrol?",
-    "Q2. Whisper hears two of your voice picks differently: 'It's his tune' (take c) as 'This is June', and Derek's 'But the world ended, Sandra!' (take c) as 'What the world ends, it's Sandra'. Your ear decides; take a of Derek's line reads clean and is placed already in round 1's file.",
-    "Q3. V10r still has the bots never visibly turning (the still already faces them away), and one grows a long gun barrel after 5 s, so it is cut at 5.5 s. Re-make (about 12 credits), or fine?",
-    "Q4. Beat 0 colour: the grade fixes the colour drift, but the street still gets cleaner and the robot smoother over the 64 s (that is the generation, not colour). Live with it?",
-    "Q5. Lip-sync: next step is the Premiere sequence (Q3 of round 1), each talking clip on V1 and each voice on its own track to nudge by eye. Derek's 'sorry, love' ends about 0.3 s after his mouth closes (Omni said it fast)."
-   ]
-  },
-  {
-   "h": "Round 1 on scene A: what your notes add up to (round 1)",
-   "items": [
-    "MUSIC: less action movie, more sparse and intimate: a solo cello, a solo violin, a little piano, Chopin not Beethoven's Fifth. And a way to choose music per scene: a music picker page (like the voice audition), a few Suno options per cue, you pick, I record only the pick.",
-    "BEAT 0: about 5 s of Maddie rolling with the radio before she speaks, so the drop can settle. New opening, surprised: 'Oh, hello!' (long pause) 'Oh, I didn't notice you there.' (pause) 'Ooh, that gives me an excuse to turn this racket down.' Then the radio goes down. Longer pause after 'he misses you'; 'Anyway' exasperated, moving on.",
-    "MORE KILL BOTS ROAMING (beat 1): a wide shot down Maddie's own high street with a tank on it, plus one or two more roaming shots, as quick still options then clips.",
-    "THE PASS (9a): the SAME wide street; Maddie small further down; the kill bot races dead straight from the top of frame, past her, out the bottom, leaving a dust cloud. No swerving. 9b: Maddie still, the dust just settles on her. No jumping.",
-    "BEAT 4: the three rising 'ding' pings go. The muffled voice stays.",
-    "DEREK (7): new Derek shot 'Oh, sorry, sorry, love.' between Sandra's two lines; his line becomes 'But the world ended, Sandra!' and we hold on him longer.",
-    "LIP-SYNC: into Premiere so you can nudge it by eye; if that isn't enough, we sharpen the method together.",
-    "THE CALL (11): the boss in his real voice, the Suno narrator ('badcode newsreader'), with your new dialogue (below). 10b: 'Well, you'd better bloody hurry up, boss. They're nearly there.'",
-    "STAND-DOWN (12): the HUD says STAND DOWN, not PEACE MODE. The turn-round clip is re-made (it has AI artifacts): the bots lined up outside the door, turning and leaving. The boss's last line is about his back door in their chips (options below)."
-   ]
-  },
-  {
-   "h": "The call, your new words (round 1)",
-   "items": [
-    "MADDIE: Boss, I've just seen a bot in kill mode. Which must mean it's detected an organic signal.",
-    "BOSS: Maddie, are you making fun of my simulations again?",
-    "MADDIE: No, honestly, it's real. Look, you can see for yourself.",
-    "BOSS: Oh. [pause] Oh, wow. [pause] And they've activated their firewalls.",
-    "MADDIE: Do you want some help with the malware?",
-    "BOSS: No. I've got it.",
-    "(close race) MADDIE: Well, you'd better bloody hurry up, boss. They're nearly there."
-   ]
-  },
-  {
-   "h": "Questions (round 1)",
-   "items": [
-    "Q1. Beat 0: your new opening drops 'Look, I'm really sorry about him', so the next 'he' has nobody to point at. Fix: '...turn this racket down. [pause] It's his tune. He plays it on repeat, every day...' OK?",
-    "Q2. The boss's last line (you asked my advice). (a) 'There. Good job I left myself a back door in their chips.' (b) 'Phew. Glad I kept that little exploit up my sleeve.' (c) 'Zero-day in their firmware. [pause] I put it there myself. Just in case.' Claude recommends (a): 'back door' and 'chips' land for everyone; CMOS and zero-day are jargon. (c) is the darkest joke (he planted it, like the NSA).",
-    "Q3. Premiere for the lip-sync: build a NEW sequence for scene A now (each talking clip on V1, its voice on its own track, so you can slide it by eye), or after this round's rebuild? Claude recommends after the rebuild, so you're not aligning shots we're about to change.",
-    "Q4. Spend. Flow video, about 10 clips (wide street + pass + 2 roaming + dust + turn-round + one more beat 0 clip so the longer speech fits + 2 Derek talking clips with 2 tries each): about 150 credits, cap 200. Suno: music options for 2 cues (the patrol/HUD tension, and the chase and call) at 2 styles each as pairs, about 80 credits, plus the boss's lines in the narrator voice, about 40. Cap 150 Suno credits. Go?",
-    "Q5. Music cues: the new sparse strings go under the kill-bot patrol (beats 1-8) and the chase and call (9a-12). Beat 0 keeps the tinny radio of the drum and bass track. Right?"
+    "Is ~44 s of intro OK? If not: tighter gaps save ~3 s; a brisker re-voice maybe 5 s more; past that it means cutting words."
    ]
   }
  ],
  "replies": {
-  "at51": "Got it. In the Premiere sequence the M0 radio track is left out completely, and nothing on your existing music track is touched or deleted: you keep your own cut with the high-pass 'tinny radio' switch and set the fades yourself. The preview here keeps the radio as it was, so the page still plays with music.",
-  "at1506": "Done: V13 re-made without Maddie (cut3-V13r3). The tank stays far off under the church tower for the whole clip; it plays the same 3.5 s slot.",
-  "at2595": "Found it: V1 swaps which way the tank faces in one frame at 1.33 s (a model jump). It now starts at 1.375 s, just after the jump, and plays 4 s (was 5): the pass, her jolt and the dust are all still in; 9b comes 1 s sooner. The chase music re-aims itself so its break-off still lands on STAND DOWN. Same in-point in the Premiere plan.",
-  "at3398": "Done: re-recorded ('Oh. And they've activated their firewalls.'). The new take is clean all the way through (no dropouts in its level trace) and whisper hears it word for word in the mix. It is 2 s shorter (the pause after 'Oh' is tighter), so the call is 2 s shorter.",
-  "at4098": "Done: the boss's zero-day line is gone; Maddie says 'Good job, boss.' (pause) 'That was close.' Four takes in her voice (Aoede, Bristol) with her usual cheeky, chatty direction switched off for this line and replaced by shaky, fond relief, close to tears. All four are heard word-perfect. My pick is take a: the sigh tag comes out as a soft 'Whew.', then the slowest, most stretched 'Good job, boss'; its long pause (4.25 s of breathing) is cut to about 1.85 s with one breath kept. Take c is the clean one with no sigh, if the 'Whew' is too much.",
-  "at4138": "Done: 'boss' is cut out of the same take (no re-voice), so it's now 'Good job.' (pause) 'That was close.' with the same emotion and the same ~1.85 s pause. Whisper hears exactly 'Good job. That was close.' in the mix. The soft 'Whew.' at the start is still there until you rule on it (take c is the version without it)."
+  "l0-0": "Round 4: line 0 is now \"Oh, hello! Sorry about the racket.\" The \"Oh, hello!\" is the surprised take you already had.",
+  "l0-5": "Round 4: line 5 is now \"Anyway! Patrol's out. Mind how you go.\" voiced brisk, moving on, with a 2 s pause before it.",
+  "b0": "Round 4: still 6.5 s of her radio before \"Oh, hello!\"."
  },
  "kai_round1": {
   "at3521": {
@@ -267,5 +206,94 @@
  },
  "answers_round3": {
   "Q1": "keep the 'Whew.' (take a) before 'Good job. That was close.' (Kai, 23 Oct)"
- }
+ },
+ "replies_round3": {
+  "at51": "Got it. In the Premiere sequence the M0 radio track is left out completely, and nothing on your existing music track is touched or deleted: you keep your own cut with the high-pass 'tinny radio' switch and set the fades yourself. The preview here keeps the radio as it was, so the page still plays with music.",
+  "at1506": "Done: V13 re-made without Maddie (cut3-V13r3). The tank stays far off under the church tower for the whole clip; it plays the same 3.5 s slot.",
+  "at2595": "Found it: V1 swaps which way the tank faces in one frame at 1.33 s (a model jump). It now starts at 1.375 s, just after the jump, and plays 4 s (was 5): the pass, her jolt and the dust are all still in; 9b comes 1 s sooner. The chase music re-aims itself so its break-off still lands on STAND DOWN. Same in-point in the Premiere plan.",
+  "at3398": "Done: re-recorded ('Oh. And they've activated their firewalls.'). The new take is clean all the way through (no dropouts in its level trace) and whisper hears it word for word in the mix. It is 2 s shorter (the pause after 'Oh' is tighter), so the call is 2 s shorter.",
+  "at4098": "Done: the boss's zero-day line is gone; Maddie says 'Good job, boss.' (pause) 'That was close.' Four takes in her voice (Aoede, Bristol) with her usual cheeky, chatty direction switched off for this line and replaced by shaky, fond relief, close to tears. All four are heard word-perfect. My pick is take a: the sigh tag comes out as a soft 'Whew.', then the slowest, most stretched 'Good job, boss'; its long pause (4.25 s of breathing) is cut to about 1.85 s with one breath kept. Take c is the clean one with no sigh, if the 'Whew' is too much.",
+  "at4138": "Done: 'boss' is cut out of the same take (no re-voice), so it's now 'Good job.' (pause) 'That was close.' with the same emotion and the same ~1.85 s pause. Whisper hears exactly 'Good job. That was close.' in the mix. The soft 'Whew.' at the start is still there until you rule on it (take c is the version without it)."
+ },
+ "plan_round3": [
+  {
+   "h": "Round 3 done (23 Oct), plus 3b: your round-2 notes and your last note, rebuilt. 2:54 (was 2:55)",
+   "items": [
+    "MUSIC (at51): your Premiere music track is yours: the Premiere version leaves the M0 radio out and touches nothing you already have. The preview keeps the radio.",
+    "BEAT 1 (at1506): V13 re-made without Maddie (cut3-V13r3): the tank stays far off under the tower the whole 8 s; it plays the same 3.5 s slot.",
+    "9a (at2595): V1 now starts at 1.375 s, after the jump where the tank swaps direction; 4 s long, so everything after 9a is 1 s sooner.",
+    "BEAT 11 (at3398): boss line 2 re-recorded ('Oh. And they've activated their firewalls.'): one clean take, no dropouts in its level trace, 4.4 s (was 6.4 s; the pause after 'Oh' is shorter), so the call is 2 s shorter.",
+    "BEAT 12 (at4098 + at4138): the boss's last line is replaced by MADDIE: 'Good job.' (pause) 'That was close.' ('boss' cut out of the take, round 3b), voiced for relief, shaky and fond (take a of 4, pause tightened; take c is the clean alternative).",
+    "Checked: mix -16.1 LUFS, true peak -1.8 dBFS; whisper hears boss line 2 and Maddie's new line as 'Good job. That was close.' in the mix; frames looked at (V13r3 has no Maddie, 9a has no direction jump). The preview fails the QC levels check as rounds 1 and 2 did (x264 dips blacks in the HUD panels; review file only). Nobody has listened."
+   ]
+  },
+  {
+   "h": "Round 3: still open",
+   "items": [
+    "Q1. Maddie's line: take a (soft 'Whew.' from the sigh tag, slow 'Good job, boss') is in. Take c is the clean one without the sigh. Keep a?",
+    "Q2. Her beat 12 line plays over V3 (her hatch and antenna on the high street), as the boss's line did. Fine, or would you rather it played over the bots leaving the door?",
+    "Q3. Round 2's open items still stand: patrol music (one cue or both), the two whisper doubts on your voice picks, V10r's gun barrel, beat 0's drift, Derek's lip-sync."
+   ]
+  },
+  {
+   "h": "Round 2 done (23 Oct): every round-1 note and every pick, rebuilt. 2:55 (was 2:35)",
+   "items": [
+    "BEAT 0: about 6.5 s of Maddie rolling with the radio before she sees us; your new surprised opening ('Oh, hello!' c, long pause, 'Oh, I didn't notice you there.' a, 'Ooh, that gives me an excuse to turn this racket down.' a); the radio dips under her words and goes down after 'racket down' (with a little servo as she turns it); 'It's his tune. He plays it on repeat, every day.' (Q1, take c); 2.5 s after 'he misses you', then 'Anyway...' (take a). The travelling shot is now the 8-clip version (64 s, cut at 57 s), colour pulled back to clip 1 all the way along.",
+    "BEAT 1: roundabout, then Maddie's own street (V13) for only its first 3.5 s while the tank is far off under the tower, then the two bots under the rail arch (V14). Patrol music P1 (cello + felt piano) under it.",
+    "BEAT 3-4: the three rising pings are gone; the muffled row stays. P2 (the cold quartet) under the HUD.",
+    "BEAT 7: Derek's two new shots: 'Oh, sorry, sorry, love.' between Sandra's lines, and 'But the world ended, Sandra!' with a 1.3 s hold on him. Your voice picks (take c of both), re-placed on the same clips.",
+    "9b: V2r2-b (your pick): she stays still inside the dust and it clears in about 1.5 s. Grit falls, the kill bot drones away. 9a is still V1 (the wide-street pass re-make hit her).",
+    "THE CALL (11): your words; Maddie's picks (b, b, a); the boss is the Suno newsreader, one take per line (your picks: w10-1, w25-1, w10-2), through her small speaker. 10b: 'Well, you'd better bloody hurry up, boss. They're nearly there.' (take A).",
+    "12: the HUD says STAND DOWN (RETURN TO PATROL under it). V10r (your pick A) for 5.5 s, then the boss on Maddie's antenna: 'It was useful to keep that zero-day up my sleeve.'",
+    "CHASE MUSIC: C3 (low-string ostinato) from 9a; it ducks under the call and Maddie's 10b line, and its break-off (one low held note) lands on STAND DOWN and rings on under the pack leaving.",
+    "Checked: mix -16.1 LUFS, true peak -1.7 dBFS; whisper heard every line in the mix (fixes made: the radio and the 10b engines were masking words). The preview fails the QC's levels check the same way round 1 did (x264 dips blacks below 16 in the HUD panels); it is a review file, the Premiere sequence is the deliverable. Nobody has listened to it."
+   ]
+  },
+  {
+   "h": "Round 2: still open",
+   "items": [
+    "Q1. Music: both patrol picks are in (P1 under the roaming, P2 under the HUD and kill mode) so you can hear each. Keep both, or one for the whole patrol?",
+    "Q2. Whisper hears two of your voice picks differently: 'It's his tune' (take c) as 'This is June', and Derek's 'But the world ended, Sandra!' (take c) as 'What the world ends, it's Sandra'. Your ear decides; take a of Derek's line reads clean and is placed already in round 1's file.",
+    "Q3. V10r still has the bots never visibly turning (the still already faces them away), and one grows a long gun barrel after 5 s, so it is cut at 5.5 s. Re-make (about 12 credits), or fine?",
+    "Q4. Beat 0 colour: the grade fixes the colour drift, but the street still gets cleaner and the robot smoother over the 64 s (that is the generation, not colour). Live with it?",
+    "Q5. Lip-sync: next step is the Premiere sequence (Q3 of round 1), each talking clip on V1 and each voice on its own track to nudge by eye. Derek's 'sorry, love' ends about 0.3 s after his mouth closes (Omni said it fast)."
+   ]
+  },
+  {
+   "h": "Round 1 on scene A: what your notes add up to (round 1)",
+   "items": [
+    "MUSIC: less action movie, more sparse and intimate: a solo cello, a solo violin, a little piano, Chopin not Beethoven's Fifth. And a way to choose music per scene: a music picker page (like the voice audition), a few Suno options per cue, you pick, I record only the pick.",
+    "BEAT 0: about 5 s of Maddie rolling with the radio before she speaks, so the drop can settle. New opening, surprised: 'Oh, hello!' (long pause) 'Oh, I didn't notice you there.' (pause) 'Ooh, that gives me an excuse to turn this racket down.' Then the radio goes down. Longer pause after 'he misses you'; 'Anyway' exasperated, moving on.",
+    "MORE KILL BOTS ROAMING (beat 1): a wide shot down Maddie's own high street with a tank on it, plus one or two more roaming shots, as quick still options then clips.",
+    "THE PASS (9a): the SAME wide street; Maddie small further down; the kill bot races dead straight from the top of frame, past her, out the bottom, leaving a dust cloud. No swerving. 9b: Maddie still, the dust just settles on her. No jumping.",
+    "BEAT 4: the three rising 'ding' pings go. The muffled voice stays.",
+    "DEREK (7): new Derek shot 'Oh, sorry, sorry, love.' between Sandra's two lines; his line becomes 'But the world ended, Sandra!' and we hold on him longer.",
+    "LIP-SYNC: into Premiere so you can nudge it by eye; if that isn't enough, we sharpen the method together.",
+    "THE CALL (11): the boss in his real voice, the Suno narrator ('badcode newsreader'), with your new dialogue (below). 10b: 'Well, you'd better bloody hurry up, boss. They're nearly there.'",
+    "STAND-DOWN (12): the HUD says STAND DOWN, not PEACE MODE. The turn-round clip is re-made (it has AI artifacts): the bots lined up outside the door, turning and leaving. The boss's last line is about his back door in their chips (options below)."
+   ]
+  },
+  {
+   "h": "The call, your new words (round 1)",
+   "items": [
+    "MADDIE: Boss, I've just seen a bot in kill mode. Which must mean it's detected an organic signal.",
+    "BOSS: Maddie, are you making fun of my simulations again?",
+    "MADDIE: No, honestly, it's real. Look, you can see for yourself.",
+    "BOSS: Oh. [pause] Oh, wow. [pause] And they've activated their firewalls.",
+    "MADDIE: Do you want some help with the malware?",
+    "BOSS: No. I've got it.",
+    "(close race) MADDIE: Well, you'd better bloody hurry up, boss. They're nearly there."
+   ]
+  },
+  {
+   "h": "Questions (round 1)",
+   "items": [
+    "Q1. Beat 0: your new opening drops 'Look, I'm really sorry about him', so the next 'he' has nobody to point at. Fix: '...turn this racket down. [pause] It's his tune. He plays it on repeat, every day...' OK?",
+    "Q2. The boss's last line (you asked my advice). (a) 'There. Good job I left myself a back door in their chips.' (b) 'Phew. Glad I kept that little exploit up my sleeve.' (c) 'Zero-day in their firmware. [pause] I put it there myself. Just in case.' Claude recommends (a): 'back door' and 'chips' land for everyone; CMOS and zero-day are jargon. (c) is the darkest joke (he planted it, like the NSA).",
+    "Q3. Premiere for the lip-sync: build a NEW sequence for scene A now (each talking clip on V1, its voice on its own track, so you can slide it by eye), or after this round's rebuild? Claude recommends after the rebuild, so you're not aligning shots we're about to change.",
+    "Q4. Spend. Flow video, about 10 clips (wide street + pass + 2 roaming + dust + turn-round + one more beat 0 clip so the longer speech fits + 2 Derek talking clips with 2 tries each): about 150 credits, cap 200. Suno: music options for 2 cues (the patrol/HUD tension, and the chase and call) at 2 styles each as pairs, about 80 credits, plus the boss's lines in the narrator voice, about 40. Cap 150 Suno credits. Go?",
+    "Q5. Music cues: the new sparse strings go under the kill-bot patrol (beats 1-8) and the chase and call (9a-12). Beat 0 keeps the tinny radio of the drum and bass track. Right?"
+   ]
+  }
+ ]
 }

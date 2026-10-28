@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-1-bot-p1-c.try1.wav",
+ "made": "2026-10-27T19:07:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "And we both wish it hadn't happened that way.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle, sincere.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-1-bot-p1-c.md"
+ },
+ "settings": {
+  "voice": "Aoede",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "scene": "second-half-a-killbots",
+ "beat": "0",
+ "ruled": "2026-10-27, Kai picked draft 1D on the dialogue page (round 3) and said go: \"please go ahead and let's get the dialogue recut\".",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+  "options": "design/2026-10-26-gpom-dialogue-options/options.json",
+  "picked": "1D",
+  "round": 4
+ },
+ "about": "Maddie's intro, the words' one home from 27 Oct (before then: cut3.py BEAT0 and cut-notes.json words_round1). [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion.",
+ "lines": [
+  {
+   "who": "bot",
+   "text": "Oh, hello! [pause] Sorry about the racket.",
+   "by": "claude",
+   "note": "draft 1A"
+  },
+  {
+   "who": "bot",
+   "text": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went.",
+   "by": "claude",
+   "note": "draft 1A"
+  },
+  {
+   "who": "bot",
+   "text": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course.",
+   "by": "kai",
+   "note": "Kai, round 2 note"
+  },
+  {
+   "who": "bot",
+   "text": "Built all these world models and simulations to get you back, and nobody's home in any of them.",
+   "by": "kai",
+   "note": "Kai, round 2 note"
+  },
+  {
+   "who": "bot",
+   "text": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now...",
+   "by": "kai",
+   "note": "Kai, round 2 note"
+  },
+  {
+   "who": "bot",
+   "text": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
+   "by": "claude",
+   "note": "draft 1A"
+  }
+ ]
+}

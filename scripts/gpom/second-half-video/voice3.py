@@ -48,6 +48,13 @@ Writes voice3/manifest.json.
          scenes/second-half-b-the-door/voices.json. See main_b2.
 
     python3 scripts/gpom/second-half-video/voice3.py --round B2   # existing takes are kept
+
+  JOB 7  --round D1: Kai's picks on the dialogue page (27 Oct): draft 1D, Maddie's beat-0 intro (scene A), and draft
+         2H, the doorstep (scene B beat 17), from each scene's script.json; Sandra, Derek and a six-voice crowd off
+         screen. Three takes per phrase (two per crowd voice), whisper-checked and picked by measurement; written to
+         scenes/<scene>/voices-d1.json. See main_d1.
+
+    python3 scripts/gpom/second-half-video/voice3.py --round D1   # existing takes are kept
 """
 import json
 import os
@@ -526,6 +533,177 @@ def main_b2():
                   f"{'' if ph['verified'] else '  UNVERIFIED'}")
 
 
+# ---- JOB 7: round D1 (the dialogue page) -----------------------------------------------------------
+# Kai's picks on the dialogue page (27 Oct, round 4): draft 1D for Maddie's beat-0 intro (scene A) and draft 2H for the
+# doorstep (scene B, beat 17). The words have one home per scene: scenes/<scene>/script.json. [pause] / [beat] /
+# [big pause] are edit gaps; a leading [tag] on a phrase goes in that call's DIRECTOR'S NOTES as its emotion
+# ([scoffs] is spoken). Three takes per phrase, whisper-checked and picked by measurement as B2. Reused takes: the
+# beat-0 phrases Kai already has in the cut (D1_REUSE) and the old lady's lip-synced line 0. The crowd: one voice per
+# phrase, two takes each, stacked into one file (D1_CROWD_AT) after the picks.
+#   voice3/d1/<beat>-<i>-<who>[-p<n>]-<t>.wav  +  scenes/<scene>/voices-d1.json
+D1_SCENES = {'A': 'second-half-a-killbots', 'B': 'second-half-b-the-door'}
+D1_GAP = {'[pause]': 0.6, '[beat]': 0.6, '[big pause]': 1.5}
+D1_SPOKEN = {'[scoffs]'}
+D1_REUSE = {'Oh, hello!': 'a1/00-0-bot-c.wav', 'Ever since you lot...': 'maddie/00-1-1-a.wav', 'went.': 'maddie/00-1-2-a.wav'}
+D1_CROWD = [  # (voice, who they are, accent)
+    ('Orus', 'a man in his forties, a former bus driver', 'West Country, as heard in Swindon'),
+    ('Leda', 'a woman in her twenties', 'West Country, as heard in Swindon'),
+    ('Schedar', 'a retired schoolteacher in his seventies, precise', 'educated Wiltshire, softly spoken'),
+    ('Vindemiatrix', 'a nurse in her fifties', 'Welsh, as heard in Newport'),
+    ('Zubenelgenubi', 'a builder in his thirties', 'Bristolian'),
+    ('Gacrux', 'a grandmother in her sixties', 'Northern English, as heard in Leeds'),
+]
+D1_CROWD_AT = [0.0, 0.18, 0.42, 0.3, 0.65, 0.9]  # each voice's start in the stack, s: overlapping, not in turn
+D1_CROWD_DB = [0.0, -2.0, -4.0, -1.0, -3.0, -5.0]
+
+
+def crowd_profile(who, accent):
+    return (f"# AUDIO PROFILE\nOne of the hundred survivors in a Cold War bunker under a Wiltshire hill: {who}.\n\n"
+            "## THE SCENE\nThe corridor behind the blast doors. A small robot at the door has just asked whether any of "
+            "them would go back and change how it all went down, if they had the chance. Everyone answers at once.\n\n"
+            "### DIRECTOR'S NOTES\nStyle: heartfelt and certain, no hesitation; called out from the crowd.\n"
+            f"Pace: quick, one breath.\nAccent: {accent}. Never American.\n\n### SAMPLE CONTEXT\n"
+            "One voice in a crowd all answering a question at the same moment.")
+
+
+def d1_phrases(text):
+    """(phrases, gaps, emotions) for a script line: split on the gap tags; a phrase's leading [tag] is its emotion."""
+    parts = re.split(r'\s*(\[(?:pause|beat|big pause)\])\s*', text.strip())
+    phrases, gaps, emos = [], [D1_GAP[t] for t in parts[1::2]], []
+    for ph in parts[0::2]:
+        m = re.match(r'\[([^\]]+)\]\s*', ph)
+        if m and m.group(0).strip() not in D1_SPOKEN:
+            emos.append(m.group(1))
+            ph = ph[m.end():]
+        else:
+            emos.append(None)
+        phrases.append(ph.strip())
+    return phrases, gaps, emos
+
+
+def d1_jobs():
+    cast = json.loads(CAST_FILE.read_text())['cast']
+    base = {'bot': V.profiles['bot'], 'lady': cast['lady']['prompt'], 'woman': cast['woman']['prompt'],
+            'man': cast['man']['prompt']}
+    voice = {'bot': 'Aoede', 'lady': cast['lady']['voice'], 'woman': cast['woman']['voice'], 'man': cast['man']['voice']}
+    out, meta = [], {}
+    for sc, folder in D1_SCENES.items():
+        script = json.loads((V.S.SCENES / folder / 'script.json').read_text())
+        beat, rows = script['beat'], []
+        for i, ln in enumerate(script['lines']):
+            who = ln['who']
+            if who == 'sfx' or (sc == 'B' and i == 0):  # line 0 keeps its lip-synced take
+                continue
+            if who == 'crowd':
+                phrases = [p.strip() for p in ln['text'].split(' / ')]
+                rows.append({'i': i, 'who': who, 'text': ln['text'], 'off': True, 'phrases': [], 'gaps': []})
+                for p, (ph, (vc, desc, acc)) in enumerate(zip(phrases, D1_CROWD)):
+                    stem, pkey = f'{V.bkey(beat)}-{i}-crowd{p}', f'd1-{beat}-{i}-crowd{p}'
+                    V.profiles[pkey] = crowd_profile(desc, acc)  # in-process only
+                    rows[-1]['phrases'].append({'p': p, 'text': ph, 'voice': vc, 'direction': None,
+                                                'prompt': V.profiles[pkey], 'stem': stem})
+                    out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': 'd1', 'who': pkey, 'voice': vc, 'text': ph,
+                             'target': ph, 'how': None, 'work': WORK3 / 'd1'} for t in 'ab']
+                continue
+            phrases, gaps, emos = d1_phrases(ln['text'])
+            row = {'i': i, 'who': who, 'text': ln['text'], 'off': bool(ln.get('off')), 'voice': voice[who],
+                   'phrases': [], 'gaps': [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(gaps)]}
+            for p, (ph, emo) in enumerate(zip(phrases, emos)):
+                stem = f'{V.bkey(beat)}-{i}-{who}' + (f'-p{p}' if len(phrases) > 1 else '')
+                if ph in D1_REUSE and sc == 'A':
+                    row['phrases'].append({'p': p, 'text': ph, 'direction': None, 'reused': D1_REUSE[ph]})
+                    continue
+                pkey = f'd1-{stem}'
+                V.profiles[pkey] = with_emotion(base[who], emo)  # in-process only
+                row['phrases'].append({'p': p, 'text': ph, 'direction': emo, 'prompt': V.profiles[pkey], 'stem': stem})
+                out += [{'key': f'{stem}-{t}', 'stem': stem, 'dir': 'd1', 'who': pkey, 'voice': voice[who], 'text': ph,
+                         'target': ph, 'how': None, 'work': WORK3 / 'd1'} for t in 'abc']
+            rows.append(row)
+        meta[sc] = (folder, script, rows)
+    return out, meta
+
+
+def d1_crowd(row):
+    """Stack the crowd's picked takes into one file: each voice from its D1_CROWD_AT, levelled, then summed."""
+    import numpy as np
+
+    def load(p):
+        raw = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', str(p), '-ac', '1', '-ar', '48000', '-f', 'f32le',
+                              '-'], capture_output=True).stdout
+        x = np.frombuffer(raw, np.float32).astype(float)
+        return x / (np.sqrt((x ** 2).mean()) + 1e-9)
+    parts = []
+    for ph, at, db in zip(row['phrases'], D1_CROWD_AT, D1_CROWD_DB):
+        f = next(t['file'] for t in ph['takes'] if t['take'] == ph['pick'])
+        parts.append((int(at * 48000), load(OUT3 / f) * 10 ** (db / 20)))
+    y = np.zeros(max(a + len(x) for a, x in parts))
+    for a, x in parts:
+        y[a:a + len(x)] += x
+    y *= 0.5 / np.abs(y).max()
+    out = OUT3 / 'd1' / f"17-{row['i']}-crowd-stack.wav"
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'f64le', '-ar', '48000', '-ac', '1', '-i', '-',
+                    str(out)], input=y.tobytes(), check=True)
+    subprocess.run([sys.executable, str(V.S.REPO / 'scripts/provenance/prov.py'), 'card', str(out), '--kind', 'voice',
+                    '--engine', 'ffmpeg', '--tool', 'scripts/gpom/second-half-video/voice3.py --round D1',
+                    '--why', 'the crowd answering at once: six Gemini TTS takes stacked',
+                    *sum([['--parent', str(OUT3 / next(t['file'] for t in ph['takes'] if t['take'] == ph['pick']))]
+                          for ph in row['phrases']], []),
+                    '--setting', f'starts={D1_CROWD_AT}', '--setting', f'gains_db={D1_CROWD_DB}'],
+                   check=True, capture_output=True)
+    return f"d1/{out.name}", round(V.duration(out), 2)
+
+
+def main_d1():
+    import difflib
+    sys.path.insert(0, str(V.S.REPO / 'scripts/gpom/second-half-video/ending'))
+    import voices as E  # noqa: E402  (whisper + norm only)
+    (OUT3 / 'd1').mkdir(parents=True, exist_ok=True)
+    (WORK3 / 'd1').mkdir(parents=True, exist_ok=True)
+    todo, meta = d1_jobs()
+    with ThreadPoolExecutor(3) as ex:
+        res = list(ex.map(run, todo))
+    heard = E.whisper([OUT3 / 'd1' / f"{r['key']}.wav" for r in res if r['duration']])
+    by = {}
+    for r in res:
+        f = OUT3 / 'd1' / f"{r['key']}.wav"
+        h = heard.get(str(f)) if r['duration'] else None
+        ratio = difflib.SequenceMatcher(None, E.norm(r['target']), E.norm(h['text'])).ratio() if h else 0.0
+        gap = round(V.longest_gap(f), 2) if r['duration'] else 0.0
+        flagged = r['status'].split()[0] in ('SHORT', 'DEAD', 'FAILED')
+        t = {'take': r['key'][-1], 'file': f"d1/{f.name}", 'spoken': r['text'], 'duration': round(r['duration'], 2),
+             'heard': h['text'] if h else '', 'match': round(ratio, 3), 'gap': gap, 'status': r['status'],
+             'ok': ratio >= E.MATCH and gap <= 2.0 and not flagged}
+        by.setdefault(r['stem'], []).append(t)
+        print(f"{r['key']:22s} {t['duration']:5.2f}s gap {gap:4.2f} match {ratio:.2f} {'OK ' if t['ok'] else 'BAD'} "
+              f"'{t['heard']}'  {r['status']}")
+    for sc, (folder, script, rows) in meta.items():
+        for row in rows:
+            for ph in row['phrases']:
+                if 'reused' in ph:
+                    continue
+                takes = by[ph.pop('stem')]
+                ok = [t for t in takes if t['ok']] or takes
+                best = min(ok, key=lambda t: (-t['match'], t['gap']))
+                ph['pick'], ph['verified'] = best['take'], best['ok']
+                ph['takes'] = [{k: v for k, v in t.items() if k != 'ok'} for t in takes]
+            if row['who'] == 'crowd':
+                row['stack'], row['stack_duration'] = d1_crowd(row)
+        doc = {'about': f"Scene {sc}'s new lines from the dialogue page (draft {script['dialogue']['picked']}), voiced in "
+                        "Gemini TTS by scripts/gpom/second-half-video/voice3.py --round D1. Files are relative to the media "
+                        "folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+               'media': str(OUT3), 'source': f'docs/stories/gitpush-origin-master/scenes/{folder}/script.json',
+               'dialogue': script['dialogue'], 'lines': rows}
+        dst = V.S.SCENES / folder / 'voices-d1.json'
+        dst.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + '\n')
+        print(f'wrote {dst}')
+        for row in rows:
+            for ph in row['phrases']:
+                if 'pick' in ph:
+                    t = next(x for x in ph['takes'] if x['take'] == ph['pick'])
+                    print(f"  {sc} {row['i']:2d} p{ph['p']} {row['who']:6s} pick {ph['pick']} {t['duration']:5.2f}s "
+                          f"gap {t['gap']:4.2f} match {t['match']:.2f}{'' if ph['verified'] else '  UNVERIFIED'}  {ph['text'][:50]}")
+
+
 def run(job):
     wav = OUT3 / job['dir'] / f"{job['key']}.wav"
     if wav.exists():
@@ -575,9 +753,9 @@ def main():
 if __name__ == '__main__':
     if '--round' in sys.argv:
         rnd = sys.argv[sys.argv.index('--round') + 1].upper()
-        assert rnd in ('A1', 'A3', 'B2'), 'only --round A1 / A3 / B2 exist'
+        assert rnd in ('A1', 'A3', 'B2', 'D1'), 'only --round A1 / A3 / B2 / D1 exist'
         load_key()
-        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2}[rnd]()
+        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1}[rnd]()
     elif '--lines' in sys.argv:
         load_key()
         main_lines()

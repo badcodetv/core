@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d1/17-12-bot-p0-b.wav",
+ "made": "2026-10-27T19:24:27+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice3.py --round D1 (via scripts/aistudio-tts.py)",
+ "why": "second-half-b-the-door line 12 phrase 0, take b; whisper heard 'You don't.'",
+ "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n\n### TRANSCRIPT\nYou don't.",
+ "settings": {
+  "voice": "Aoede",
+  "direction": "None"
+ }
+}

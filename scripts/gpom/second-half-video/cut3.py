@@ -4,6 +4,11 @@
     python3 scripts/gpom/second-half-video/cut3.py A          # scene A, the kill bots (beats 0-12; round 3)
     python3 scripts/gpom/second-half-video/cut3.py B          # scene B, Maddie at the door (14a-17b; round B2)
     python3 scripts/gpom/second-half-video/cut3.py A B --no-preview
+    python3 scripts/gpom/second-half-video/cut3.py A B --tag d1   # Kai's dialogue-page picks (1D, 2H), 27 Oct
+
+--tag X writes to clips/second-half/cut3/<scene>-X/ instead of cut3/<scene>/, so a round never rewrites the stems and
+lines an earlier Premiere sequence plays from. --tag d1 also swaps in the dialogue-page words: beat 0 from
+scenes/second-half-a-killbots/voices-d1.json, beat 17 from scenes/second-half-b-the-door/voices-d1.json.
 
 Modelled on cut2.py and reusing its mixer (decode / level / env / fades / Mix / write_wav / integrated /
 ENC); cut 2's own path is untouched. Rules are new-scene stage 4's: picture timed to the real voice
@@ -24,6 +29,7 @@ preview-sheet.jpg, video/ (graded, ping-ponged and HUD clips), hud/ (the wavs th
 """
 import json
 import pathlib
+import re
 import subprocess
 import sys
 
@@ -45,7 +51,13 @@ MS = SFX / 'maddie'
 ROOT = S.CLIPS / 'cut3'
 ENC = C.ENC
 fr, probe = C.fr, C.probe
-NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady'}
+NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
+         'crowd': 'The hundred'}
+TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
+D1 = TAG == 'd1'
+STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
+# Off screen, down the corridor behind the old lady: the corridor's room, further back and duller.
+OFF = 'lowpass=f=4500,aecho=0.7:0.5:60|110:0.28|0.16'
 LINES = {(r['beat'], r['i']): r for r in json.loads((V3 / 'lines.json').read_text())}
 CAST = json.loads((S.SCENES / 'second-half-cut3-cast.json').read_text())
 VOICES_B = json.loads((S.SCENES / 'second-half-b-the-door' / 'voices.json').read_text())  # beat 17 round B2
@@ -117,7 +129,7 @@ def lipinfo(name):
 class Cut:
     def __init__(self, key, seq, title, heading, intro):
         self.key, self.seq = key, seq
-        self.dir = ROOT / key
+        self.dir = ROOT / (f'{key}-{TAG}' if TAG else key)
         self.vdir = self.dir / 'video'
         self.vdir.mkdir(parents=True, exist_ok=True)
         (self.dir / 'hud').mkdir(exist_ok=True)
@@ -286,6 +298,41 @@ BEAT0 = [
     (A1 / '00-4-bot-a.wav', 0.0, "Anyway... he's got that patrol out again. Mind how you go."),
 ]
 
+# Round D1 (27 Oct): draft 1D from the dialogue page, Kai's pick. One home for the words: scene A's script.json; the takes
+# and their picks: voices-d1.json (voice3.py --round D1). Gaps inside a line are its [pause]/[beat] tags; between lines
+# D1_LINE_GAP: room after "Oh, hello! Sorry about the racket." for the radio to go down, and the longest after "We
+# understand that now..." so the sad line lands before her brisk "Anyway!" (Kai at l0-5, round 1: "a longer pause").
+D1_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 2.0}
+
+
+def shown(text):
+    """A script line as the page shows it: emotion tags out, gap tags and [scoffs] kept."""
+    return ' '.join(re.sub(r'\[(?!pause\]|beat\]|big pause\]|scoffs\])[^\]]*\]\s*', '', text).split())
+
+
+def d1_takes(row):
+    """[(Take, gap after)] for a voices-d1.json line: each phrase's picked (or reused) take, the line's own gaps."""
+    out = []
+    for p, ph in enumerate(row['phrases']):
+        f = ph.get('reused') or next(t['file'] for t in ph['takes'] if t['take'] == ph['pick'])
+        g = next((x['seconds'] for x in row['gaps'] if x['after'] == p), 0.0)
+        out.append((Take(V3 / f), g))
+    return out
+
+
+def beat0_d1():
+    """(phrases [(Take, gap after, text, line)], lines [(i, text, by)]) for beat 0 in draft 1D."""
+    script = json.loads((S.SCENES / 'second-half-a-killbots' / 'script.json').read_text())
+    rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-a-killbots' / 'voices-d1.json').read_text())['lines']}
+    seq, lines = [], []
+    for i, ln in enumerate(script['lines']):
+        tk = d1_takes(rows[i])
+        for p, (take, g) in enumerate(tk):
+            last = p == len(tk) - 1
+            seq.append((take, D1_LINE_GAP.get(i, 0.0) if last else g, rows[i]['phrases'][p]['text'], i))
+        lines.append((i, shown(ln['text']), ln['by']))
+    return seq, lines
+
 
 def scene_a():
     c = Cut('A', 'gpom-second-half-A-rough5', 'Cut 3 A Timeline', 'GPOM second half · cut 3 · scene A: the kill bots',
@@ -293,39 +340,66 @@ def scene_a():
             'Maddie\'s "Good job. That was close." in place of his last line) on top of every note and pick so far, beats 0-12, Maddie on the high street '
             'to the stand-down at the bunker door. Play it, click any beat, clip, line or sound, and leave a note in its '
             "yellow slip. Notes save as you type. Tell Claude when you're done.")
+    if D1:
+        c.meta['intro'] = ('Scene A, round 4: Maddie\'s new intro, draft 1D from the dialogue page (your pick, 27 Oct), about '
+                           'half the length it was. Everything after beat 0 is round 3 as you signed it off. Play it, click '
+                           'any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. '
+                           "Tell Claude when you're done.")
     m = c.m
 
     # ---- 0: the continuous travelling shot (eight chained clips), ~5 s of radio first, Kai's new opening
     v6 = V / 'cut3-beat0-continuous-x.mp4'
     graded, note = regrade_v6(v6, c.vdir / 'cut3-beat0-continuous-x-graded.mp4')
     c.flags.append(note.replace('six chained clips', 'eight chained clips').replace('48 s', '64 s'))
-    seq = [(Take(p), g, text) for p, g, text in BEAT0]
-    span = sum(tk.d + g for tk, g, _ in seq)
+    if D1:
+        seq, d1_lines = beat0_d1()
+    else:
+        seq = [(Take(p), g, text, k) for k, (p, g, text) in enumerate(BEAT0)]
+    span = sum(tk.d + g for tk, g, _, _ in seq)
     have = dur(v6)
     lead = fr(min(6.5, max(5.0, have - span - 1.5)))
     b = c.beat('0', 'Maddie on the high street', 0.0, act='Maddie',
                see='One unbroken travelling shot: the camera backs up the ruined high street and Maddie rolls after it, '
                    'her radio playing the tune for about 5 s before she notices us. "Oh, hello!" Then the radio goes '
                    'down, and back up on "Mind how you go".')
-    s, starts = lead, []
-    for k, (tk, g, text) in enumerate(seq):
+    s, starts, by_line = lead, [], {}
+    for k, (tk, g, text, li) in enumerate(seq):
         a = s
         s = c.say('vox-maddie', tk, s, '0', f'beat 0 phrase {k}: {text[:40]}')
-        c.line(b, k, 'bot', a, s - a, text, 'kai')
+        if not D1:
+            c.line(b, k, 'bot', a, s - a, text, 'kai')
+        by_line.setdefault(li, [a, s])[1] = s
         starts.append((a, s))
         s += g
+    if D1:
+        for i, text, by in d1_lines:
+            a, e = by_line[i]
+            c.line(b, i, 'bot', a, e - a, text, by)
     talk_end = starts[-1][1]
     end0 = fr(min(have, talk_end + 1.5))
-    c.flags.append(f'Beat 0: {lead:.2f} s of Maddie rolling with her radio before "Oh, hello!" (Kai asked for about '
+    if D1:
+        c.flags.append(f'Beat 0, round D1: draft 1D from the dialogue page (your pick, 27 Oct). {lead:.2f} s of her radio '
+                       f'first, then her {len(seq)} phrases run {span:.1f} s (was about 55 s); the travelling shot is cut '
+                       f'{end0 - talk_end:.1f} s after "Mind how you go", so the beat is shorter by the same. "Oh, hello!", '
+                       '"Ever since you lot..." and "went." keep the takes already in the cut; every other phrase is new, '
+                       'picked by measurement (voices-d1.json). Nobody has listened yet.')
+    else:
+        c.flags.append(f'Beat 0: {lead:.2f} s of Maddie rolling with her radio before "Oh, hello!" (Kai asked for about '
                    f'5 s). Her twelve phrases with Kai\'s pauses (1.6 s after "Oh, hello!", 2.5 s after "...he misses '
                    f'you") run {span:.1f} s; the 8-clip shot ({have:.1f} s) is cut {end0 - talk_end:.1f} s after "Mind how '
                    f'you go", {have - end0:.1f} s before its own end. Speech is not slowed.')
-    c.flags.append('Beat 0 takes: Kai\'s audition picks for the new phrases ("Oh, hello!" c, "didn\'t notice you" a, '
+    if not D1:
+        c.flags.append('Beat 0 takes: Kai\'s audition picks for the new phrases ("Oh, hello!" c, "didn\'t notice you" a, '
                    '"racket down" a, "It\'s his tune" c, "Anyway..." a); the unchanged phrases keep their round-0 takes. Whisper '
                    'hears take c of "It\'s his tune" as "This is June" (takes a and b are there if your ear agrees).')
     c.pic(graded, 0.0, 0.0, end0, '0', source=v6)
-    m['hello'], m['racket'], m['bye'] = starts[0], starts[2], starts[-1]
-    m['went'], m['mattered'] = starts[5], starts[8]
+    if D1:  # by phrase text: "Sorry about the racket." is where the radio goes down
+        at = {text: st for (_, _, text, _), st in zip(seq, starts)}
+        m['hello'], m['racket'], m['bye'] = starts[0], at['Sorry about the racket.'], starts[-1]
+        m['went'], m['mattered'] = at['went.'], at['We understand that now...']
+    else:
+        m['hello'], m['racket'], m['bye'] = starts[0], starts[2], starts[-1]
+        m['went'], m['mattered'] = starts[5], starts[8]
     t = c.close(b, end0)
 
     # ---- 1: the roundabout, then down Maddie's own street (V13, only while the tank is far off), then the arch (V14)
@@ -697,6 +771,12 @@ def scene_b():
             'the door slams. '
             'Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you '
             "type. Tell Claude when you're done.")
+    if D1:
+        c.meta['intro'] = ('Scene B, round 2: the doorstep in your words, draft 2H from the dialogue page (your pick, 27 Oct): '
+                           '"nobody really won", the time machine, only his data goes back, Sandra\'s "Amen", the thought '
+                           'experiment, the hundred answering at once, Derek, "Come back tomorrow". Play it, click any '
+                           'beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell '
+                           "Claude when you're done.")
     m = c.m
     t = 0.0
     # ---- 14a: she rolls up to the plain door
@@ -792,44 +872,78 @@ def scene_b():
         c.line(b, i, 'bot', tt, e - tt, r['text'], BY[i])
         return e
 
-    e = maddie_line(1, l0e + GAP)
-    e = maddie_line(2, e + GAP)
-    # 17-3 on her
-    wav, at, end_, _ = lipinfo('17-3')
-    i0 = at - CUT_PRE
-    t3 = fr(e + GAP - CUT_PRE)
-    c.pic(v11, 0.0, v11_a, t3, '17')
-    out = end_ + 0.2
-    lip('17-3', t3, i0, out)
-    dub(wav, t3, i0, out, 'beat 17 line 3 lady (lip-sync dub)')
-    l3a = t3 + at - i0
-    c.line(b, 3, 'lady', l3a, end_ - at, LINES[('17', 3)]['text'], BY[3])
-    v11_b = fr(t3 + out - i0)
-    # 17-4 .. 17-13: Kai's 23 Oct words (the debate folded in), voiced in round B2 (voice3.py --round B2, picks in
-    # scenes/second-half-b-the-door/voices.json). No new picture yet: everything after 17-3 plays on V11 (Maddie past
-    # the old lady's shoulder), ping-ponged, including the old lady's new lines (her back is to us; no lip-sync owed
-    # for the rough). [pause] / [big pause] are the phrase gaps from voices.json.
-    by = {ln['i']: ln for ln in VOICES_B['lines']}
+    if D1:
+        # Round D1 (27 Oct): draft 2H from the dialogue page, Kai's pick. Words: scene B's script.json; takes and picks:
+        # voices-d1.json (voice3.py --round D1). Line 0 keeps its lip-synced take; everything after it plays on V11
+        # (Maddie past the old lady's shoulder, her back to us, so no lip-sync owed), except the hundred answering at
+        # once, which cuts to them looking up (N3, as in 14b). Sandra, Derek and the hundred are off screen, down the
+        # corridor behind her (OFF on top of the corridor's room, and quieter).
+        script = json.loads((S.SCENES / 'second-half-b-the-door' / 'script.json').read_text())
+        rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-b-the-door' / 'voices-d1.json').read_text())['lines']}
+        # the gap before a line: Sandra's "Amen" and the hundred come in quick, the old lady's "Derek." snaps, the
+        # rushed last line is tight; Maddie lets "Amen" land before her thought experiment
+        before = {6: 0.45, 13: 0.25, 14: 0.7, 15: 0.3, 16: 0.4, 18: 0.15, 20: 0.2}
+        e, crowd = l0e, None
+        for i, ln in enumerate(script['lines']):
+            if i == 0 or ln['who'] == 'sfx':
+                continue
+            row, who, off = rows[i], ln['who'], bool(ln.get('off'))
+            chain, lufs = ([CORRIDOR, OFF], -19.0) if off else ([CORRIDOR], -16.0)
+            a = tt = e + before.get(i, GAP)
+            if who == 'crowd':
+                tt = c.say(STEM[who], Take(V3 / row['stack']), a, '17',
+                           f'beat 17 line {i}: the hundred answer at once (six voices stacked)', chain=chain, lufs=-18.0)
+                crowd = (fr(a - CUT_PRE), fr(tt + 0.4))
+            else:
+                for take, g in d1_takes(row):
+                    tt = c.say(STEM[who], take, tt, '17', f'beat 17 line {i} {who}' + (' (off)' if off else ''),
+                               chain=chain, lufs=lufs) + g
+            c.line(b, i, who, a, tt - a, shown(ln['text']), ln['by'])
+            e = tt
+        slam = fr(e + 0.25)
+        c.pic(v11, 0.0, v11_a, crowd[0], '17')
+        c.pic(V / 'cut2-N3.mp4', 1.0, crowd[0], crowd[1], '17')
+        c.pic(v11, 3.0, crowd[1], slam, '17')
+        v11_b = crowd[1]
+    else:
+        e = maddie_line(1, l0e + GAP)
+        e = maddie_line(2, e + GAP)
+        # 17-3 on her
+        wav, at, end_, _ = lipinfo('17-3')
+        i0 = at - CUT_PRE
+        t3 = fr(e + GAP - CUT_PRE)
+        c.pic(v11, 0.0, v11_a, t3, '17')
+        out = end_ + 0.2
+        lip('17-3', t3, i0, out)
+        dub(wav, t3, i0, out, 'beat 17 line 3 lady (lip-sync dub)')
+        l3a = t3 + at - i0
+        c.line(b, 3, 'lady', l3a, end_ - at, LINES[('17', 3)]['text'], BY[3])
+        v11_b = fr(t3 + out - i0)
+        # 17-4 .. 17-13: Kai's 23 Oct words (the debate folded in), voiced in round B2 (voice3.py --round B2, picks in
+        # scenes/second-half-b-the-door/voices.json). No new picture yet: everything after 17-3 plays on V11 (Maddie past
+        # the old lady's shoulder), ping-ponged, including the old lady's new lines (her back is to us; no lip-sync owed
+        # for the rough). [pause] / [big pause] are the phrase gaps from voices.json.
+        by = {ln['i']: ln for ln in VOICES_B['lines']}
 
-    def new_line(i, tt):
-        ln, a = by[i], tt
-        who = ln['who']
-        for p, ph in enumerate(ln['phrases']):
-            tk = Take(V3 / next(t['file'] for t in ph['takes'] if t['take'] == ph['pick']))
-            tt = c.say(f"vox-{'maddie' if who == 'bot' else 'lady'}", tk, tt, '17',
-                       f"beat 17 line {i}" + (f" phrase {p}" if len(ln['phrases']) > 1 else '') + f" {who}",
-                       chain=[CORRIDOR])
-            if p + 1 < len(ln['phrases']):
-                tt += ln['gaps'][p]['seconds']
-        c.line(b, i, who, a, tt - a, ln['text'], 'kai')
-        return tt
+        def new_line(i, tt):
+            ln, a = by[i], tt
+            who = ln['who']
+            for p, ph in enumerate(ln['phrases']):
+                tk = Take(V3 / next(t['file'] for t in ph['takes'] if t['take'] == ph['pick']))
+                tt = c.say(f"vox-{'maddie' if who == 'bot' else 'lady'}", tk, tt, '17',
+                           f"beat 17 line {i}" + (f" phrase {p}" if len(ln['phrases']) > 1 else '') + f" {who}",
+                           chain=[CORRIDOR])
+                if p + 1 < len(ln['phrases']):
+                    tt += ln['gaps'][p]['seconds']
+            c.line(b, i, who, a, tt - a, ln['text'], 'kai')
+            return tt
 
-    e = l3a + (end_ - at)
-    for i in range(4, 14):
-        # 17-11 opens on '...Yeah.': a beat of her taking the hit first; 17-13 is rushed, so it comes in tight
-        e = new_line(i, e + {11: GAP + 0.6, 13: 0.2}.get(i, GAP))
-    slam = fr(e + 0.25)
-    c.pic(v11, 3.0, v11_b, slam, '17')
+        e = l3a + (end_ - at)
+        for i in range(4, 14):
+            # 17-11 opens on '...Yeah.': a beat of her taking the hit first; 17-13 is rushed, so it comes in tight
+            e = new_line(i, e + {11: GAP + 0.6, 13: 0.2}.get(i, GAP))
+        slam = fr(e + 0.25)
+        c.pic(v11, 3.0, v11_b, slam, '17')
     m['slam'] = slam
     t = c.close(b, slam)
 
@@ -841,9 +955,16 @@ def scene_b():
                    'frame: the humans will have time. Then hard cut to scene C.')
     hold = 8.0
     c.pic(V / 'shb-b17b-v1-r2-shb-b17b-v1-calm-bunting.mp4', 0.0, t, t + hold, '17b')
-    c.flags.append('Beat 17: everything after the old lady\'s second line plays on V11, ping-ponged (about '
-                   f'{t - v11_b:.0f} s): her new lines (17-6, 8, 10, 13) are on her back, not lip-synced; new '
-                   'coverage of her face is owed if Kai wants it.')
+    if D1:
+        c.flags.append('Beat 17, round D1: draft 2H from the dialogue page (your pick, 27 Oct; Sandra says only "Amen"). '
+                       'Her first line keeps its lip-synced take; every other line is new, picked by measurement '
+                       '(voices-d1.json), nobody has listened. Picture: V11 (Maddie past her shoulder) ping-ponged under '
+                       'the talk, cut to the hundred looking up (N3) while they all answer at once. Her new lines are on '
+                       'her back, not lip-synced; new coverage of her face is owed if you want it.')
+    else:
+        c.flags.append('Beat 17: everything after the old lady\'s second line plays on V11, ping-ponged (about '
+                       f'{t - v11_b:.0f} s): her new lines (17-6, 8, 10, 13) are on her back, not lip-synced; new '
+                       'coverage of her face is owed if Kai wants it.')
     m['s17'], m['lady'], m['turn'] = s17, lady, t
     m['l17_0'] = l0a
     t = c.close(b, t + hold)
@@ -904,6 +1025,9 @@ def audio_b(c):
     # coming closer as she drives past us (out of frame at about 7.3 s), her beacon
     t = m['turn']
     fx('sfx-door', SFX / 'fs406197-blastdoor-metal-slam.mp3', t - 0.30, rms=-20, peak=-3, fo=0.4, what='the door slams')
+    if D1:  # 2H: "behind it, voices start up": the hundred through the shut steel door, fading as she rolls away
+        fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', t + 0.2, 5.0, src_in=20, rms=-44, fi=0.3, fo=2.5,
+           af=MUFFLED, what='behind the door: the hundred start talking')
     fx('sfx-wind', wind, t, en['17b'] - t, src_in=40, rms=-34, fi=0.05, fo=0.6, what='wind on the downs, outside')
     loop_wheels(fx, 'sfx-maddie', t + 0.3, 7.0, rms=-30, fi=2.5, fo=0.6, what='wheels: she drives past us')
     fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', t + 3.4, rms=-36, what='beacon blip')

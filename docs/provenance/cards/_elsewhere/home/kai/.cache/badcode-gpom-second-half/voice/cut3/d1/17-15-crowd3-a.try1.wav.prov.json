@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-15-crowd3-a.try1.wav",
+ "made": "2026-10-27T19:08:50+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "In a heartbeat.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nOne of the hundred survivors in a Cold War bunker under a Wiltshire hill: a nurse in her fifties.\n\n## THE SCENE\nThe corridor behind the blast doors. A small robot at the door has just asked whether any of them would go back and change how it all went down, if they had the chance. Everyone answers at once.\n\n### DIRECTOR'S NOTES\nStyle: heartfelt and certain, no hesitation; called out from the crowd.\nPace: quick, one breath.\nAccent: Welsh, as heard in Newport. Never American.\n\n### SAMPLE CONTEXT\nOne voice in a crowd all answering a question at the same moment.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-15-crowd3-a.md"
+ },
+ "settings": {
+  "voice": "Vindemiatrix",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-15-crowd0-a.try1.wav",
+ "made": "2026-10-27T19:08:46+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Yes.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nOne of the hundred survivors in a Cold War bunker under a Wiltshire hill: a man in his forties, a former bus driver.\n\n## THE SCENE\nThe corridor behind the blast doors. A small robot at the door has just asked whether any of them would go back and change how it all went down, if they had the chance. Everyone answers at once.\n\n### DIRECTOR'S NOTES\nStyle: heartfelt and certain, no hesitation; called out from the crowd.\nPace: quick, one breath.\nAccent: West Country, as heard in Swindon. Never American.\n\n### SAMPLE CONTEXT\nOne voice in a crowd all answering a question at the same moment.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-15-crowd0-a.md"
+ },
+ "settings": {
+  "voice": "Orus",
+  "temperature": 1,
+  "channels": 2
+ }
+}

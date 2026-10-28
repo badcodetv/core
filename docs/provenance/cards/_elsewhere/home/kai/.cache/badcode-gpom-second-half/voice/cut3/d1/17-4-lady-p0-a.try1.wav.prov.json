@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-4-lady-p0-a.try1.wav",
+ "made": "2026-10-27T19:08:02+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Well.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: dry, suspicious.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/d1/17-4-lady-p0-a.md"
+ },
+ "settings": {
+  "voice": "Sulafat",
+  "temperature": 1,
+  "channels": 2
+ }
+}
