@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B15r-b.jpg",
+ "made": "2026-10-28T13:05:18.578Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Every moving thing leaves three or four fading afterimages split into pure red, green and blue; everything still stays sharp. Camera low at the kerb on a wet cobbled street at night under a gas lamp: a man in a red scarf and a man in a blue scarf shove each other, arms and flying hats smeared into coloured trails, two crowds behind them waving plain blank red and blue cloth banners; the man from the character reference, dressed exactly as in his portrait reference, strolls calmly past them with a canvas sack over his shoulder, perfectly sharp, no trail at all, a police car's lamp flaring at the end of the street. Every banner and sign is plain cloth with nothing on it. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/lippy.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/lippy.jpg"
+  ],
+  "character": "SM Lippy"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "8cb0698f-2a1c-4b43-bf47-a3ce382d1811"
+}

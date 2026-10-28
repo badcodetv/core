@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/O1C2-a.jpg",
+ "made": "2026-10-28T15:55:47.861Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. Close on a leather-gloved hand and the round drum of a tommy gun held out of a speeding car window, the barrel pointed straight up at the night sky, rain striking the steel, the brim of a grey fedora at the edge of frame. Behind, the city streaks past as long-exposure light: streetlamps and the iron girders of an elevated railway smeared into bending ribbons of amber and red. The only light is the passing lamps sweeping across the gun. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "bea7f1c1-5ff4-4a99-b125-02c2bc9f4574"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/TX-b-b.jpg",
+ "made": "2026-10-28T10:22:46.094Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble, in real places. A tall tongue of fire in the exact centre of the frame rises from a burning oil drum at a 1920s street protest at night; the flames fill the middle of the picture, white-yellow at the heart, and around them, softer, people in red scarves and blue scarves hold up blank placards, faces turned to the fire, and the wet cobbles carry the firelight in long streaks. Camera close to the drum at chest height. Light: only the fire and one distant gas lamp. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ea1b2cdc-f72f-4663-9a69-5b8504a877c7"
+}

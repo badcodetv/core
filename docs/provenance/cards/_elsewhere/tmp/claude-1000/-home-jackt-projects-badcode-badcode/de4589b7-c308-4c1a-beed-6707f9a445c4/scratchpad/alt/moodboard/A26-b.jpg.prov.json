@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A26-b.jpg",
+ "made": "2026-10-28T10:54:24.258Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. Sprayed over the photograph with aerosol paint: fluorescent pink and acid yellow overspray clouds, hard-edged stencilled halftone shapes and long paint drips running down through the scene, while every face stays real. Camera behind the counter of a shop full of loaves, looking out past a brass cash register. A heavy-set Black man in his fifties with a shaved head, a broken nose and a double chin, in a sweat-stained vest, flour on his forearms empties his whole pay envelope onto the counter to buy one small loaf; above him a blank chalkboard; the shopkeeper's hand reaching for the coins. Light: morning sun through the steamed window, the counter's brass shining. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "03e9305d-d515-436b-bd9c-8f34a9db764d"
+}

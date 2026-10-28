@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B32-a.jpg",
+ "made": "2026-10-28T13:02:51.487Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Concentric black and white rings ripple outward from the cake across the whole frame, bending the picture like ripples on a pond, one thin spiral of red running through them. Camera low behind a tiered cake on a silver tray, the frame tilted. The man from the character reference, dressed exactly as in his portrait reference, backed against a furnace, holds the tray out with trembling hands and a sickly smile; the crowd fills the room around him with lanterns, tommy guns lying abandoned on the floor. The furnace glow behind him. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/mayor.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "character": "SM Mayor"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "0c901b2e-f856-4758-8333-5eccd6694093"
+}

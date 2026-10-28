@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video/sma-22-B22-a.mp4",
+ "made": "2026-10-28T14:33:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The two officers lean in, sweeping their torch beams across the oven; behind them the men in bakers' hats stand perfectly still and smile innocently. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Torches clicking, an oven door creaking, a nervous cough.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/B22-a.jpg",
+ "why": "locked camera, one motion",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/B22-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt",
+  "key": "22",
+  "frame": 22,
+  "option": "a"
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "count": 1
+ }
+}

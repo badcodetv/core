@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A10-b.jpg",
+ "made": "2026-10-28T10:41:27.547Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. A double exposure: inside the silhouette of the bank clerk there is a second image of the bank vault, gangsters filling sacks, in burning amber and red, while the face nearest the camera stays realistic and readable. Camera from inside a round steel vault door looking out at a marble bank lobby, the door's bolts and hinge framing the shot. At a loan desk, a worker in his only suit sits before a thin clerk with round spectacles and a pen hovering; behind them, gangsters in pinstripes walk straight past a dozing guard towards the camera with empty sacks. Light: tall windows throwing hard daylight slats across the marble; brass desk lamps; the polished floor holding every light. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "39978230-574f-485c-9cf5-129db0cb7532"
+}

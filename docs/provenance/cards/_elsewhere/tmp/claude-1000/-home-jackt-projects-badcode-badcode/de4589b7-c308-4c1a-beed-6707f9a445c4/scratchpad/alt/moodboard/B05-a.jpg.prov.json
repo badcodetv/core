@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B05-a.jpg",
+ "made": "2026-10-28T12:41:21.357Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Hard film-noir light with the colour pushed far beyond nature: a red lamp on one side, cold cyan slats through a venetian blind on the other. Camera low on narrow back stairs, looking up past a dark banister post. The man from the character reference, dressed exactly as in his portrait reference leans his mouth to the open slot of a plain steel door, murmuring, where two wary eyes look out. His face large, right of centre. A crate of empty bottles, a fire bucket, a wet stone floor holding every light as a streak. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/doorman.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/doorman.jpg"
+  ],
+  "character": "SM Doorman"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "08cc72d7-ed05-4da9-8545-b12b8c9cddd9"
+}

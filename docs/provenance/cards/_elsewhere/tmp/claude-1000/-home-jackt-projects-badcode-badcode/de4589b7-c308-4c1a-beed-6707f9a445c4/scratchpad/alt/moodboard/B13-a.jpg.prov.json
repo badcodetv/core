@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B13-a.jpg",
+ "made": "2026-10-28T12:38:38.584Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Staged like the opening titles of a 1960s spy film: the figures almost photographic, the space behind them dissolving into a flat flood of molten gold fading into deep magenta, with drifting smoke. Camera low at the height of the firebox, banknotes scattered on the stone floor. A huge cast-iron printing press glows red hot, spitting notes; the man from the character reference, dressed exactly as in his portrait reference, shovels coal into its firebox, grinning; behind him the man from the second reference sits slumped against the wall, exhausted. One hard white spotlight from above. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/mayor.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg",
+   "/home/jackt/.cache/sm-cast/stoker.jpg"
+  ],
+  "character": "SM Mayor"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "acebc967-b917-45c4-a2f2-d55c325ef317"
+}

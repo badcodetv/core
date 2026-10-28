@@ -2080,3 +2080,10 @@ In 27.0 beta **`Application` is gone from the types altogether**. Keep using `ho
 - `(await seq.getProjectItem()).getParentBin()` reads where it sits; the root's name is the project file name.
 - Proven on gpom-story.prproj: the 6 live sequences into `00 the film (live sequences)`, 14 old ones into
   `zz old sequences`; guids unchanged, tabs stayed open.
+
+## 2026-10-28: `premiere_export_frame` doubles the extension and then reports failure
+
+Default path `…/frames/<seq>-100s.png`: Premiere wrote `…-100s.png.png`, so the tool's existence check failed after 120s
+with `EXPORT_FAILED` although the frame was there. Also, an `outPath` under WSL `/tmp` can never work (Windows Premiere
+cannot write there). Workaround: let it fail, then read the `.png.png`. Fix belongs in the tool (strip the extension it
+appends, or check for both names).

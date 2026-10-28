@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/P6-a.jpg",
+ "made": "2026-10-28T10:15:42.512Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble, in real places. Two crowds face each other across a wet cobbled street at night, red scarves on the left and blue scarves on the right, shown as black silhouettes against a burning barrel between them. Inside every silhouette, as a double exposure, is the same hidden scene: a basement where a printing press throws banknotes into the air and a tall skinny man in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache dances, lit hot amber and red. Around the silhouettes the street stays real: rain on the cobbles, the barrel's flames smeared in vertical streaks on the wet stones, a gas lamp. Camera low behind the barrel. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6f781489-3b05-4f93-9b1d-c0fbd47c6700"
+}

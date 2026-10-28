@@ -1,0 +1,549 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Lock the camera in Omni; Premiere moves it",
+   "why": "hybrid method",
+   "source": "docs/video-fx/hybrid-method.md"
+  },
+  {
+   "rule": "Every scene change is a match cut on a shared shape",
+   "why": "Jack 2026-10-28: 'constantly transitions settings in clever ways'",
+   "source": "script-alt.md"
+  },
+  {
+   "rule": "Stills use the Flow Characters + portrait reference",
+   "why": "a Character binds the face, not the costume",
+   "source": "cast.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "(Intro) Robbery!",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The black sedan and the police car roar round the corner towards the camera, their red, green and blue colour trails smearing behind them; rain spits on the wet cobbles and the red lamp over the doorway glows steady.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The black sedan and the police car roar round the corner towards the camera, their red, green and blue colour trails smearing behind them; rain spits on the wet cobbles and the red lamp over the doorway glows steady. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Engines roaring, tyres hissing on wet cobbles, a police bell ringing.",
+     "cut": "Transition out: the headlight \u2192 the oven flame",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "They say, ya can't make money from a tree / each day, make h",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The baker leans his whole weight into the dough and kneads it slowly, the green banknote pattern stretching with it; flour drifts through the orange oven light.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The baker leans his whole weight into the dough and kneads it slowly, the green banknote pattern stretching with it; flour drifts through the orange oven light. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Dough slapping on wood, the oven's low roar.",
+     "cut": "Transition out: the dough \u2192 a stack of notes",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "work and get paid though\u2026 but where does it go? nobody knows",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The black and white rings ripple slowly outward across the frame; the moth on the palm opens and closes its wings once; the fingers curl slightly round the coins.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The black and white rings ripple slowly outward across the frame; the moth on the palm opens and closes its wings once; the fingers curl slightly round the coins. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A low hum, coins clinking softly.",
+     "cut": "Transition out: the spinning coin \u2192 the red moon",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "means of production means a reduction / land-lords needing",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Far below, the small figure climbs one step up the spiral stairwell; the bare bulbs on each landing glow steady; the landlord's open palm stays still.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. Far below, the small figure climbs one step up the spiral stairwell; the bare bulbs on each landing glow steady; the landlord's open palm stays still. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Slow footsteps echoing up a stairwell.",
+     "cut": "Transition out: the spiral \u2192 the slot in the door",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "quantitative easing,",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The man in the fedora murmurs into the slot, his lips barely moving; the eyes in the slot narrow; smoke curls up from his cigarette through the cyan slats of light.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The man in the fedora murmurs into the slot, his lips barely moving; the eyes in the slot narrow; smoke curls up from his cigarette through the cyan slats of light. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A muffled murmur, distant jazz behind the door.",
+     "cut": "Transition out: through the slot \u2192 the speakeasy",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "job": "grandma FREEEEEEEZING!",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Her breath rolls out in slow white-hot clouds through the blue and violet attic; the small candle flame burns steady and yellow between her hands.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. Her breath rolls out in slow white-hot clouds through the blue and violet attic; the small candle flame burns steady and yellow between her hands. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Wind moaning, ice creaking in the beams.",
+     "cut": "Transition out: the candle flame \u2192 the furnace (scene 24)",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "job": "stimulus checks are next. Get wrecked!",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Envelopes drift down onto the iron grate and slide between the bars into the dark; up on the amber balcony the man keeps flinging them; the crowd's hands reach.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. Envelopes drift down onto the iron grate and slide between the bars into the dark; up on the amber balcony the man keeps flinging them; the crowd's hands reach. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Crowd roaring, paper fluttering, rain dripping into the drain.",
+     "cut": "Transition out: the envelope down the drain \u2192 the poker pot",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "job": "rent seeking?\u2026 I'm just about eating / sorry, did I interrup",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Everyone at the table stays frozen; only the cigar smoke curls up through the green lamplight and the lamp sways very slightly on its chain.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. Everyone at the table stays frozen; only the cigar smoke curls up through the green lamplight and the lamp sways very slightly on its chain. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A clock ticking in silence.",
+     "cut": "Transition out: the loaf \u2192 the eight ball",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "job": "remember kids, the Fed is not your friend! / it prints all t",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The old man strikes the cue ball and it rolls straight towards the camera across the green felt; the coloured oil blobs drift slowly over the room; the band plays.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The old man strikes the cue ball and it rolls straight towards the camera across the green felt; the coloured oil blobs drift slowly over the room; the band plays. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A sharp cue click, balls rolling, a jazz band.",
+     "cut": "Transition out: the cue ball \u2192 the vault wheel",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "job": "this fiat system is insistent / on debts existence",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The men in pinstripes walk towards the camera through the vault door carrying empty sacks; the clerk's pen hovers; daylight slats lie still across the marble.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The men in pinstripes walk towards the camera through the vault door carrying empty sacks; the clerk's pen hovers; daylight slats lie still across the marble. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Footsteps on marble, a pen scratching.",
+     "cut": "Transition out: the round vault door \u2192 the drill bit",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "job": "don't be hating on the credit rating / or have resistance to",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The blowtorch roars blue-white and the steel door sags and drips molten orange onto the marble; sparks skitter across the floor; the guard stands still.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The blowtorch roars blue-white and the steel door sags and drips molten orange onto the marble; sparks skitter across the floor; the guard stands still. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A roaring blowtorch, hissing metal, sparks crackling.",
+     "cut": "Transition out: the dripping steel \u2192 the press rollers",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "job": "Chorus 1: Robbery, robbery! Call the police\u2026 Debasement\u2026 in ",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The whole gold-and-black kaleidoscope turns slowly clockwise round its centre while banknotes drift and the man at the centre dances with his arms out.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The whole gold-and-black kaleidoscope turns slowly clockwise round its centre while banknotes drift and the man at the centre dances with his arms out. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A brass jazz band, presses thumping, a crowd cheering.",
+     "cut": "Transition out: the star of presses \u2192 the press close",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "job": "Chorus 2 (same words)",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The man in the bowler tips a shovel of coal into the firebox and the glow brightens to a steady orange; banknotes slide out of the press; smoke drifts through the gold and magenta.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The man in the bowler tips a shovel of coal into the firebox and the glow brightens to a steady orange; banknotes slide out of the press; smoke drifts through the gold and magenta. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Coal rattling, the press thumping, fire roaring.",
+     "cut": "Transition out: the coal shovel \u2192 the magnesium flash",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "job": "Stacks and stacks of elastic cash / distracted by a dispraxi",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The white smoke cloud billows and rolls across the bandstand while the man holds his arms up; behind it the getaway car pulls away from the bank steps trailing red, green and blue smears.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The white smoke cloud billows and rolls across the bandstand while the man holds his arms up; behind it the getaway car pulls away from the bank steps trailing red, green and blue smears. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A gasp from the crowd, a car engine revving away.",
+     "cut": "Transition out: the exhaust smoke \u2192 the riot",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "job": "mob, angry at their shitty little job / the right and the le",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The two men in red and blue scarves shove each other, smeared into red, green and blue trails; the man with the sack strolls calmly towards the camera, perfectly sharp; the plain banners wave.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The two men in red and blue scarves shove each other, smeared into red, green and blue trails; the man with the sack strolls calmly towards the camera, perfectly sharp; the plain banners wave. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Shouting crowd, a police bell far off, rain.",
+     "cut": "Transition out: the two faces \u2192 the mirror",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "job": "blaming each other is a sick little cover / institutional, d",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The two mirror-image men shout nose to nose, their jaws working; rain streaks down through the gas lamp's light; the seam down the middle stays perfectly still.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The two mirror-image men shout nose to nose, their jaws working; rain streaks down through the gas lamp's light; the seam down the middle stays perfectly still. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Two men shouting, rain hammering.",
+     "cut": "Transition out: the back pockets \u2192 the dancing feet",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "job": "distraction IS the attraction / the intention is tension bet",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The three dance arm in arm, laughing, swaying from side to side; the amber, magenta and blue oil blobs swim slowly over them; glasses rise behind.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The three dance arm in arm, laughing, swaying from side to side; the amber, magenta and blue oil blobs swim slowly over them; glasses rise behind. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A hot jazz band, laughter, glasses clinking.",
+     "cut": "Transition out: the spotlight \u2192 the ON AIR lamp",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "job": "divide and conquer, just look at the hand / It's not ya stan",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The man at the microphone reads and grins, his head bobbing; the red lamp burns steady; in the doorway the man counts banknotes; the printing dots at the edges pulse gently.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The man at the microphone reads and grins, his head bobbing; the red lamp burns steady; in the doorway the man counts banknotes; the printing dots at the edges pulse gently. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A warm radio hum, paper rustling, notes riffling.",
+     "cut": "Transition out: the microphone grille \u2192 the radio speaker",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "job": "it is, state, level, manipulation / it is the devil, with a ",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The couple lean closer to the radio; the black and white rings ripple slowly out from its speaker across the kitchen; the amber dial glows steady; snow falls past the window.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The couple lean closer to the radio; the black and white rings ripple slowly out from its speaker across the kitchen; the amber dial glows steady; snow falls past the window. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A crackling radio voice too faint to understand, snow ticking on glass.",
+     "cut": "Transition out: the radio dial \u2192 the vault dial",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "job": "stack up the vaults like a wheelbarrow / risk of default is ",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The fat man heaves the barrow up the plank, straining; the stacks of money on it wobble; behind him the others wheel their barrows on.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The fat man heaves the barrow up the plank, straining; the stacks of money on it wobble; behind him the others wheel their barrows on. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Wheelbarrow wheels creaking on wood, grunting.",
+     "cut": "Transition out: the money mountain \u2192 the honey slide",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "job": "Biggie said waaaay back in ninety seven / don't get high off",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The mountain of money slides slowly downhill like warm honey and the walls drip; the banknote on his chest lifts gently with each slow breath.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The mountain of money slides slowly downhill like warm honey and the walls drip; the banknote on his chest lifts gently with each slow breath. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Slow dripping, a contented sigh.",
+     "cut": "Transition out: the drip \u2192 the police whistle",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "job": "Chorus 3: Robbery, robbery! Call the police\u2026",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The two officers lean in, sweeping their torch beams across the oven; behind them the men in bakers' hats stand perfectly still and smile innocently.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The two officers lean in, sweeping their torch beams across the oven; behind them the men in bakers' hats stand perfectly still and smile innocently. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Torches clicking, an oven door creaking, a nervous cough.",
+     "cut": "Transition out: the oven door \u2192 the green glow",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "job": "Chorus 4 (same words)",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The two officers walk away down the wet street with loaves under their arms, tipping their caps; the trapdoor's green glow pulses gently; the burning images inside them shimmer.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The two officers walk away down the wet street with loaves under their arms, tipping their caps; the trapdoor's green glow pulses gently; the burning images inside them shimmer. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Footsteps fading on wet cobbles, a distant whistle.",
+     "cut": "Transition out: the loaf \u2192 the shovel of notes",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "job": "(Break: riff and stomps)",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The stoker heaves another shovel of banknotes into the furnace and the white-hot glow swells steadily; the purple and blue walls stay cold.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The stoker heaves another shovel of banknotes into the furnace and the white-hot glow swells steadily; the purple and blue walls stay cold. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A roaring furnace, a shovel scraping.",
+     "cut": "Transition out: the fire \u2192 the counting-room lamp",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "job": "You know the real star is Pablo Escobar, / who has elastic b",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The gold-and-black kaleidoscope turns slowly round its centre while hands count stacks and snap rubber bands round them.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The gold-and-black kaleidoscope turns slowly round its centre while hands count stacks and snap rubber bands round them. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Rubber bands snapping, notes riffling, a card deal.",
+     "cut": "Transition out: the star \u2192 the chalk board",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "job": "stacking up the cash by the grands / standard plans are for ",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The baker tips the last coins from his envelope onto the counter; the shopkeeper's hand slides them away; the pink and yellow paint drips run slowly down.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The baker tips the last coins from his envelope onto the counter; the shopkeeper's hand slides them away; the pink and yellow paint drips run slowly down. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Coins clattering on wood, a till drawer ringing.",
+     "cut": "Transition out: the empty pay packet \u2192 the bucket",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "job": "and this right here is a next level scam / ill gotten gains,",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The man bails frantically, throwing banknotes overboard with each scoop; the boat sinks a little lower; the coloured reflections tremble on the black water.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The man bails frantically, throwing banknotes overboard with each scoop; the boat sinks a little lower; the coloured reflections tremble on the black water. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Water sloshing, a bucket scooping, distant city traffic.",
+     "cut": "Transition out: the river \u2192 the warm basement",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "job": "\"bail\" and \"out\", will never mean the same / own the printer",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Left: the men by the furnace wipe sweat as the white-orange fire roars. Right: the tiny flame by the old woman gutters lower and shivers.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. Left: the men by the furnace wipe sweat as the white-orange fire roars. Right: the tiny flame by the old woman gutters lower and shivers. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A roaring furnace on the left, a thin icy wind on the right.",
+     "cut": "Transition out: the split \u2192 the ride up",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "job": "crime is asset inflation, passive creation; / of a wealth ga",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Snow falls steadily past the open building; the lamps on each floor glow steady, warm gold at the bottom and cold blue at the top.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. Snow falls steadily past the open building; the lamps on each floor glow steady, warm gold at the bottom and cold blue at the top. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Muffled jazz from deep below, wind and snow.",
+     "cut": "Transition out: the attic window \u2192 the queue",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "job": "working people get paid in money, so it's not very funny / w",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The whole queue shuffles forward one step through the snow; breath steams; the pink and yellow paint drips run slowly down.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The whole queue shuffles forward one step through the snow; breath steams; the pink and yellow paint drips run slowly down. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Feet crunching on snow, coughing, wind.",
+     "cut": "Transition out: the snow \u2192 the trapdoor",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "job": "hungry people, feed a revolution, / then it's retribution, p",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The crowd pours down the narrow stairs towards the camera; the man at the front swings his lantern; the red lamp over the door glows steady.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The crowd pours down the narrow stairs towards the camera; the man at the front swings his lantern; the red lamp over the door glows steady. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Many footsteps thundering down stone stairs.",
+     "cut": "Transition out: the stairs down \u2192 the furnace",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "job": "it's time to give, not just to take / but for heaven's sake,",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "The cake trembles on the silver tray in the mayor's shaking hands; the black and white rings ripple slowly outward; the crowd's lanterns sway.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. The cake trembles on the silver tray in the mayor's shaking hands; the black and white rings ripple slowly outward; the crowd's lanterns sway. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A held breath, the furnace roaring, a nervous laugh.",
+     "cut": "Transition out: iris out \u2192 the skyline",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "job": "(Outro) Robbery!",
+   "options": [
+    {
+     "id": "a",
+     "label": "locked camera, one motion",
+     "idea": "Banknotes blow slowly along the empty wet cobbles past the abandoned car; the red moon hangs still above the rooftops.",
+     "lanes": "Omni animates the world with the camera locked; Premiere moves the camera; the layer is in the still",
+     "veo_prompt": "The camera does not move. Banknotes blow slowly along the empty wet cobbles past the abandoned car; the red moon hangs still above the rooftops. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Wind, paper skittering, total silence beneath.",
+     "cut": "Transition out: end",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  }
+ ]
+}

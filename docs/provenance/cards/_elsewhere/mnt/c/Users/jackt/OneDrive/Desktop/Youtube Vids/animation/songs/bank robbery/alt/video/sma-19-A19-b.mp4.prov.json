@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video/sma-19-A19-b.mp4",
+ "made": "2026-10-28T14:05:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The couple lean closer to the radio; the black and white rings ripple slowly out from its speaker across the kitchen; the amber dial glows steady; snow falls past the window. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A crackling radio voice too faint to understand, snow ticking on glass.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/A19-b.jpg",
+ "why": "locked camera, one motion",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/A19-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt",
+  "key": "19",
+  "frame": 19,
+  "option": "a"
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "count": 1
+ }
+}

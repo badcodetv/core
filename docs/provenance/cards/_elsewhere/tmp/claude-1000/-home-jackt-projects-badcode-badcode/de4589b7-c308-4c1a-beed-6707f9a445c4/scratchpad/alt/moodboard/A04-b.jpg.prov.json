@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A04-b.jpg",
+ "made": "2026-10-28T10:36:22.172Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. The picture contains itself: the stairwell spiralling down shows the same scene again, smaller, which holds it again, smaller and smaller, spiralling inwards forever. Camera high, looking straight down the well of a tenement stairwell that spirals down into the dark. On the top landing, close to the lens, a landlord in a fur collar holds out his open palm; far below, the baker climbs, pay packet in hand. Peeling paint, iron banisters. Light: one bare bulb on each landing, each a small pool of yellow; the rest in deep shadow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "5af99952-d368-4344-9caf-ae8ca56b7069"
+}

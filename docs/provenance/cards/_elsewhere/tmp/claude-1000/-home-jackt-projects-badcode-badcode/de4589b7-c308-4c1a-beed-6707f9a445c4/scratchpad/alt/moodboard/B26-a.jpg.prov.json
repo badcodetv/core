@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B26-a.jpg",
+ "made": "2026-10-28T12:59:12.602Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Sprayed over the picture with aerosol paint: fluorescent pink and acid yellow overspray clouds, hard-edged stencilled halftone shapes and long drips running down, while every face stays real. Camera behind the counter of a shop full of loaves, past a brass cash register. The man from the character reference, dressed exactly as in his portrait reference, empties his whole pay envelope onto the counter for one small loaf, staring at the coins; a blank chalkboard above him; the shopkeeper's hand reaching in. Morning sun through the steamed window; the brass shining. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/baker2.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/baker2.jpg"
+  ],
+  "character": "SM The Baker"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d86ccf31-e0d1-45f7-ad73-86132666f10c"
+}

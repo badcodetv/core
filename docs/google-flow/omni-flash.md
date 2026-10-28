@@ -2700,3 +2700,19 @@ Found re-making The Bank Robbery short's 0:57 Ex shot (`docs/stories/bank-robber
   not what you don't; drop "flawless / 8K / hyperrealistic" (they airbrush). `[vendor]` Google Cloud guide 2026-03-05
   (https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana); `[community]` Luma.
 - **Veo 3.1 Preview models shut down 2026-10-22; Google points users to Omni Flash.** `[vendor]` https://ai.google.dev/gemini-api/docs/video
+
+## Psychedelic layers in motion — Speakeasy Mint ALT, 2026-10-28 `[observed, n=33 + 4 re-rolls]`
+
+Image-to-video on Frames from stills that already carry an optical "layer" (heat camera, oil light show, colour trails,
+kaleidoscope, newsprint dots, op-art rings, double exposure, melting). Record: `docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt/picks.md`.
+- **Layers baked into the still survive the animation** when the prompt only continues them ("the rings ripple slowly
+  outward", "the kaleidoscope turns slowly clockwise"): heat camera, rings, kaleidoscope, dots and double exposure held 8s.
+- 🔴 **Naming the layer as objects makes objects.** "oil blobs drift" turned into solid blue balls and orange paddles
+  mid-clip; "soft patches of projected light slide across them" fixed it (1/1). "colour trails smearing behind them"
+  became solid neon ribbons; dropping the trail words (the still already has them) kept the cars but…
+- 🔴 **…an unqualified "police car" redrew as a modern white car with POLICE printed on it** (1/1). Keep the era on
+  every vehicle in the motion prompt ("the black 1920s police car").
+- **Breath as "slow clouds" billowed into smoke over the hands;** "thin faint wisps that fade" held (1/1).
+- **A silent block:** a kaleidoscope of hands counting banknotes, snapping rubber bands, a card game, a rat: no candidate
+  3×. "The whole pattern turns slowly clockwise; the lamp glows steady" landed first time. Cause not isolated.
+- Rough flash check (whole-frame brightness swings) passed on all 33, including three fires prompted "glow steadily".

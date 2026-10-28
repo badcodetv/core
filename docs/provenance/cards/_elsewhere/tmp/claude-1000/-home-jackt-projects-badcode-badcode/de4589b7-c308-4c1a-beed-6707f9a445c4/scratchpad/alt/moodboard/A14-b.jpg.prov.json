@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A14-b.jpg",
+ "made": "2026-10-28T10:44:38.165Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. Every moving thing leaves a trail of three or four afterimages behind it, each copy split into pure red, green and blue and fading, like a long exposure lit by repeated coloured flashes; everything still stays sharp. Camera at the kerb, low and tilted. On a bandstand in a town square at night, a tall skinny man in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache throws up his arms in a magician's pose as a magnesium flash pops white in a cloud of smoke and the crowd turns to look; behind the smoke, at the edge of frame, a getaway car screeches away from the bank steps, money sacks in its open back windows, a police car swinging round after it. Light: the flash; strings of bulbs round the bandstand; wet cobbles streaked with every light. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9cf99e6f-f9f6-4072-ae7a-e06948021985"
+}

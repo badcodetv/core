@@ -170,6 +170,16 @@ Mr Blue in a red and a blue tie.
   mix person by person ("young and old, men and women, Black, white and South Asian"); never write
   "bakery" (it prints the word). 16:9, NB2, ×2. Picks per scene and the storyboard:
   [`songs/mv-speakeasy-mint/storyboard.md`](./songs/mv-speakeasy-mint/storyboard.md).
+- **Music video, "The Speakeasy Mint" — ALT cut** — **EXPLORING** (Jack, 2026-10-28; Flow project `706836d3`).
+  A realistic prohibition-era world with exaggerated cinematic light and colour, and one psychedelic "layer" per
+  scene laid over a real base. Settings change through transitions (e.g. fire into fire). Lynch-style odd vantages.
+  Jack said on 2026-10-28 that most of the film "looks like ai slop", so scene 1 is being redone as a sealed round (internet research only), in
+  `songs/mv-speakeasy-mint-alt/cleanroom/`. Future rounds use the `variations` skill. Nothing is locked yet.
+  What has held so far (record: [`songs/mv-speakeasy-mint-alt/picks.md`](./songs/mv-speakeasy-mint-alt/picks.md)):
+  - Lead that killed the cream baked-in borders that "photograph" caused (0/44): `A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge.`
+  - Name the physical cause of a layer, never "psychedelic / trippy / neon".
+  - US cops wear peaked caps, not helmets. Keep "1920s" on every vehicle in a motion prompt.
+  - Cast through the 10 Flow Characters plus their portrait as a reference: "dressed exactly as in his portrait reference" ([`cast.md`](./songs/mv-speakeasy-mint-alt/cast.md)).
 
 ## History
 

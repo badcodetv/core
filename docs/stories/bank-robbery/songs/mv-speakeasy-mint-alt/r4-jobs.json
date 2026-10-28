@@ -1,0 +1,228 @@
+[
+ {
+  "n": 2,
+  "id": "B02",
+  "character": "SM The Baker",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/baker2.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Camera low at the edge of a floury wooden table, a mound of dough huge in the foreground, its surface printed with the fine green engraved lines and rosettes of a banknote, like money pressed into the dough. Bakers knead at 4 a.m. in a basement kitchen, flour hanging in the air; nearest the camera, the man from the character reference, dressed exactly as in his portrait reference, kneads, his brow wet, eyes heavy and fixed on the dough. Light: the open brick oven behind throws hot orange across the arms; one bare bulb; the rest deep brown shadow. Thanks.",
+  "words": 140
+ },
+ {
+  "n": 5,
+  "id": "B05",
+  "character": "SM Doorman",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/doorman.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Hard film-noir light with the colour pushed far beyond nature: a red lamp on one side, cold cyan slats through a venetian blind on the other. Camera low on narrow back stairs, looking up past a dark banister post. The man from the character reference, dressed exactly as in his portrait reference leans his mouth to the open slot of a plain steel door, murmuring, where two wary eyes look out. His face large, right of centre. A crate of empty bottles, a fire bucket, a wet stone floor holding every light as a streak. Thanks.",
+  "words": 136
+ },
+ {
+  "n": 6,
+  "id": "B06",
+  "character": "SM Grandma",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/grandma.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Shot through a heat camera: every surface coloured by its temperature, the candle flame and her breath blazing white and yellow, her face running orange, the frozen attic around her deep blue and icy violet-black, icicles on the beams; every shape still a real photograph. Camera close at candle height, the frame tilted. The old woman from the character reference cups both hands round one candle flame, her eyes closed, her breath steaming. Thanks.",
+  "words": 114
+ },
+ {
+  "n": 7,
+  "id": "B07",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The picture breaks up into the coarse printing dots of a 1920s newspaper at its edges, huge cyan, magenta, yellow and black dots shrinking to a fully real picture at the centre. Camera inside a storm drain looking up through the iron grate, envelopes fluttering down towards the lens. High above on a lit balcony, the man from the character reference, dressed exactly as in his portrait reference, flings a fistful of envelopes, grinning, flashbulbs popping below, a crowd's hands reaching up. Light: the balcony doors blazing amber; streetlamps; the wet grate bars shining. Thanks.",
+  "words": 135
+ },
+ {
+  "n": 8,
+  "id": "B08",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg",
+   "/home/jackt/.cache/sm-cast/baker2.jpg",
+   "/home/jackt/.cache/sm-cast/doorman.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Camera at table height in a hidden speakeasy back room, a cut-crystal whiskey glass in the left foreground splitting the part of the room seen through it into rainbow-fringed facets; the rest of the frame sharp. At a green-baize poker table piled with chips, banknotes and a whole ham, the man from the character reference, dressed exactly as in his portrait reference, and the man from the third reference, freeze mid-deal, cigars in their mouths, eyes swivelled to the open door, where the man from the second reference stands holding one small loaf. Light: a low brass lamp with a green glass shade pooling amber over the table; the doorway cold blue. Thanks.",
+  "words": 153
+ },
+ {
+  "n": 11,
+  "id": "B11",
+  "character": "SM Lippy",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/lippy.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The steel vault door sags and runs like candle wax where a blowtorch's blue flame touches it, molten steel dripping onto the marble. Camera low on the marble floor. Two safecrackers in shirtsleeves kneel at the vault door with the blowtorch, goggles on their foreheads; behind them the man from the character reference, dressed exactly as in his portrait reference stands guard with a tommy gun held across his chest, pointed at the ceiling, sweating. Light: the blowtorch's hard blue-white flame; orange drips; the dark bank lobby behind. Thanks.",
+  "words": 129
+ },
+ {
+  "n": 12,
+  "id": "B12",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Seen straight down from the ceiling, the scene folded into six mirrored segments round a centre point as if through a brass kaleidoscope, crisp mirror seams, the frame a gold-and-black star. The scene: a hidden underground mint, gangsters in pinstripes working printing presses as banknotes fly up like confetti, a band playing, dancers in fringed dresses, exhausted stokers slumped by each press, and at the exact centre the man from the character reference, dressed exactly as in his portrait reference, dancing with his arms flung out. Light: brass lamps and the presses' red-hot fireboxes. Thanks.",
+  "words": 135
+ },
+ {
+  "n": 13,
+  "id": "B13",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg",
+   "/home/jackt/.cache/sm-cast/stoker.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Staged like the opening titles of a 1960s spy film: the figures almost photographic, the space behind them dissolving into a flat flood of molten gold fading into deep magenta, with drifting smoke. Camera low at the height of the firebox, banknotes scattered on the stone floor. A huge cast-iron printing press glows red hot, spitting notes; the man from the character reference, dressed exactly as in his portrait reference, shovels coal into its firebox, grinning; behind him the man from the second reference sits slumped against the wall, exhausted. One hard white spotlight from above. Thanks.",
+  "words": 137
+ },
+ {
+  "n": 14,
+  "id": "B14",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Every moving thing leaves three or four fading afterimages split into pure red, green and blue, like a long exposure lit by coloured flashes; everything still stays sharp. Camera at the kerb, low and tilted. On a bandstand at night, the man from the character reference, dressed exactly as in his portrait reference, throws up his arms in a magician's pose as a magnesium flash pops white in a cloud of smoke and the crowd turns to look; behind the smoke a getaway car screeches away from the bank steps, money sacks in its back windows, a police car swinging round after it. Strings of bulbs; wet cobbles streaked with every light. Thanks.",
+  "words": 153
+ },
+ {
+  "n": 15,
+  "id": "B15",
+  "character": "SM Lippy",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/lippy.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Every moving thing leaves three or four fading afterimages split into pure red, green and blue; everything still stays sharp. Camera low at the kerb on a wet cobbled street at night under a gas lamp: a man in a red scarf and a man in a blue scarf shove each other, arms and flying hats smeared into coloured trails, two crowds waving banners behind; the man from the character reference, dressed exactly as in his portrait reference, strolls calmly past them with a canvas sack over his shoulder, perfectly sharp, no trail at all, a police car's lamp flaring at the end of the street. Thanks.",
+  "words": 147
+ },
+ {
+  "n": 17,
+  "id": "B17",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg",
+   "/home/jackt/.cache/sm-cast/redleader.jpg",
+   "/home/jackt/.cache/sm-cast/blueleader.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Coloured oil and water swim across the whole scene like a liquid light show: huge soft blobs of amber, magenta and cobalt blue drifting over faces, clothes and walls, with thin dark rims where oil meets water. Camera at hip height between the legs of a band in pinstripe suits. In a smoky underground club, the man from the character reference, dressed exactly as in his portrait reference, dances arm in arm with the man from the second reference and the woman from the third reference, all three laughing, gangsters raising champagne round them. One white spotlight from above; strings of bulbs. Thanks.",
+  "words": 143
+ },
+ {
+  "n": 18,
+  "id": "B18",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg",
+   "/home/jackt/.cache/sm-cast/doorman.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The picture breaks up into the coarse printing dots of a 1920s newspaper at its edges, huge cyan, magenta, yellow and black dots shrinking to a fully real picture at the centre. Camera low across a desk, a big chrome radio microphone large in the foreground. The man from the character reference, dressed exactly as in his portrait reference, grins into it, reading from a script, a lit red lamp on the wall behind; in the doorway the man from the second reference leans, counting cash. Light: a warm desk lamp under his face; the studio behind in deep shadow. Thanks.",
+  "words": 141
+ },
+ {
+  "n": 20,
+  "id": "B20",
+  "character": "SM Lippy",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/lippy.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The fine engraved line work of a banknote, hair-thin money-green and copper lines and rosettes, wraps round every stack of money in the vault like a contour map. Camera low at the foot of a plank in a vast brick vault: gangsters with tommy guns slung on their backs wheel barrows of rubber-banded stacks up onto a mountain of money; nearest the lens, the man from the character reference, dressed exactly as in his portrait reference, pushes a barrow, red-faced and straining. Brass lamps warm on the money; the far end in deep green shadow. Thanks.",
+  "words": 136
+ },
+ {
+  "n": 21,
+  "id": "B21",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The solid world is turning liquid: the mountain of rubber-banded money runs slowly downhill like warm honey, the brick vault walls sag and drip like candle wax. Camera low at the foot of the pile, dripping notes in the foreground. The man from the character reference, dressed exactly as in his portrait reference, lies back on top of the money, eyes half closed and glazed, a banknote resting on his chest. One hanging brass lamp above, warm amber on the money; the vault behind falls to deep green shadow. Thanks.",
+  "words": 130
+ },
+ {
+  "n": 22,
+  "id": "B22",
+  "character": "SM Cop Walrus",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/copwalrus.jpg",
+   "/home/jackt/.cache/sm-cast/copginger.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Hard film-noir light with the colour pushed far beyond nature: a red lamp on one side, cold cyan slats through a venetian blind on the other. Camera inside a brick bread oven looking out through its open iron door. The officer from the character reference and the young officer from the second reference stand in a basement holding tommy guns pointed at the ceiling, peering in, baffled; behind them gangsters in white bakers' hats stand innocently beside bread ovens, one with his hand still on a huge iron lever. The officers' torches; the ovens' orange glow. Thanks.",
+  "words": 137
+ },
+ {
+  "n": 23,
+  "id": "B23",
+  "character": "SM Cop Walrus",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/copwalrus.jpg",
+   "/home/jackt/.cache/sm-cast/copginger.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. A double exposure: inside the dark silhouettes of the two departing officers there is a second image of a secret mint, presses throwing banknotes, in burning amber and red. Camera low in the doorway of a shop full of loaves at dawn, the frame tilted. The officer from the character reference and the young officer from the second reference walk away down the wet street, each with a free loaf under his arm, tipping their caps; behind the counter a trapdoor in the floor glows green at its edges. Cold blue dawn; the shop's warm lamps. Thanks.",
+  "words": 137
+ },
+ {
+  "n": 24,
+  "id": "B24",
+  "character": "SM Stoker",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/stoker.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Shot through a heat camera: every surface coloured by its temperature, the furnace and his arms blazing white and yellow, his body orange and red, the brick walls fading through magenta to deep cold blue; every shape still a real photograph. Camera low beside the furnace door, the shovel blade in the foreground. The man from the character reference, dressed exactly as in his portrait reference, shovels banknotes into the roaring mouth of a basement furnace; its heating pipe climbs the wall and stops dead at the ceiling. Thanks.",
+  "words": 129
+ },
+ {
+  "n": 26,
+  "id": "B26",
+  "character": "SM The Baker",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/baker2.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Sprayed over the picture with aerosol paint: fluorescent pink and acid yellow overspray clouds, hard-edged stencilled halftone shapes and long drips running down, while every face stays real. Camera behind the counter of a shop full of loaves, past a brass cash register. The man from the character reference, dressed exactly as in his portrait reference, empties his whole pay envelope onto the counter for one small loaf, staring at the coins; a blank chalkboard above him; the shopkeeper's hand reaching in. Morning sun through the steamed window; the brass shining. Thanks.",
+  "words": 132
+ },
+ {
+  "n": 27,
+  "id": "B27",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Coloured oil and water swim across the whole scene like a liquid light show, soft blobs of amber, magenta and cobalt blue drifting over everything. Camera at the waterline on a black river at night. The man from the character reference, dressed exactly as in his portrait reference, sits in a small sinking rowing boat, bailing frantically with a bucket that throws banknotes overboard; the city's lit windows and a bridge's lamps lie on the water in long trembling columns of colour; a small red moon above. Thanks.",
+  "words": 128
+ },
+ {
+  "n": 28,
+  "id": "B28",
+  "character": "SM Grandma",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/grandma.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Shot through a heat camera, every surface coloured by its temperature; every shape still a real photograph. One frame split down the middle by a brick wall. Left: gangsters in shirtsleeves sweat beside a roaring furnace, blazing white and orange. Right: the old woman from the character reference sits in a frozen attic, frost on her eyelashes, beside the last of a candle, only a flat puddle of wax with a tiny drowning flame, the room deep blue and violet-black. Thanks.",
+  "words": 121
+ },
+ {
+  "n": 32,
+  "id": "B32",
+  "character": "SM Mayor",
+  "refs": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Concentric black and white rings ripple outward from the cake across the whole frame, bending the picture like ripples on a pond, one thin spiral of red running through them. Camera low behind a tiered cake on a silver tray, the frame tilted. The man from the character reference, dressed exactly as in his portrait reference, backed against a furnace, holds the tray out with trembling hands and a sickly smile; the crowd fills the room around him with lanterns, tommy guns lying abandoned on the floor. The furnace glow behind him. Thanks.",
+  "words": 133
+ },
+ {
+  "n": 29,
+  "id": "B29",
+  "character": null,
+  "refs": [],
+  "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The picture contains itself: the lit window of the top-floor attic shows this same scene again, smaller, and inside it again, smaller and smaller, spiralling inwards. One single tall tenement building cut open like a doll's house at night, seen from across a snowy street: at the bottom a blazing furnace and a gold-lit speakeasy with a band and gangsters dancing among money, each floor above colder and darker, and at the top an icy attic where an old woman sits at a candle. Snow falling; one lamp per floor fading upwards. Thanks.",
+  "words": 117
+ }
+]

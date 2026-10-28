@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S3-slot-b.jpg",
+ "made": "2026-10-28T09:43:14.350Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Mostly realistic, like a period film still, but made with aerosol spray paint: every light has a soft overspray halo, the edges of the frame fade into fine spray mist and speckle, and thin drips run down from the brightest colours. Faces stay realistic and detailed. Camera low on the back stairs, looking up past a dark wooden banister post in the foreground left. A heavy-set gangster in a chalk-stripe three-piece suit and grey fedora, with a broad pockmarked face, a flattened boxer's nose and a toothpick, leans close to a plain steel door at the bottom of narrow brick back stairs and murmurs into its open slot, where only two wary eyes look out. He stands right of centre, his face large in frame. 1920s: bare brick, a fire bucket, a crate of empty milk bottles, a wet stone floor. Key: one sodium-orange lamp overhead. The shadows are filled with electric violet spray mist. Most of the frame is dark; the brightest values are the lamp and the faces it catches. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "fe94173b-0ca5-4a26-87cf-17934a6ceaab"
+}

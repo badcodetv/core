@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B29-b.jpg",
+ "made": "2026-10-28T13:03:30.933Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The picture contains itself: the lit window of the top-floor attic shows this same scene again, smaller, and inside it again, smaller and smaller, spiralling inwards. One single tall tenement building cut open like a doll's house at night, seen from across a snowy street: at the bottom a blazing furnace and a gold-lit speakeasy with a band and gangsters dancing among money, each floor above colder and darker, and at the top an icy attic where an old woman sits at a candle. Snow falling; one lamp per floor fading upwards. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e24e2f16-73e2-4443-9d98-b1f6966d77bc"
+}

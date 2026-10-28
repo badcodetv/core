@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video/sma-20-B20-a.mp4",
+ "made": "2026-10-28T14:05:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The fat man heaves the barrow up the plank, straining; the stacks of money on it wobble; behind him the others wheel their barrows on. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: Wheelbarrow wheels creaking on wood, grunting.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/B20-a.jpg",
+ "why": "locked camera, one motion",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/B20-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt",
+  "key": "20",
+  "frame": 20,
+  "option": "a"
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "count": 1
+ }
+}

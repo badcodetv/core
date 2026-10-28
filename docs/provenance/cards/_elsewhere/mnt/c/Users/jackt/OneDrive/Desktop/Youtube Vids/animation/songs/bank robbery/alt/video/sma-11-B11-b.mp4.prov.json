@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video/sma-11-B11-b.mp4",
+ "made": "2026-10-28T13:50:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The blowtorch roars blue-white and the steel door sags and drips molten orange onto the marble; sparks skitter across the floor; the guard stands still. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: A roaring blowtorch, hissing metal, sparks crackling.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/B11-b.jpg",
+ "why": "locked camera, one motion",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/B11-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt",
+  "key": "11",
+  "frame": 11,
+  "option": "a"
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "count": 1
+ }
+}

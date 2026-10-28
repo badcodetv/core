@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S1-slot-a.jpg",
+ "made": "2026-10-28T09:40:16.410Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s film still on grainy film, in hard film-noir chiaroscuro with harsh high contrast, but with the colour pushed far beyond nature. Camera low on the back stairs, looking up past a dark wooden banister post in the foreground left. A heavy-set gangster in a chalk-stripe three-piece suit and grey fedora, with a broad pockmarked face, a flattened boxer's nose and a toothpick, leans close to a plain steel door at the bottom of narrow brick back stairs and murmurs into its open slot, where only two wary eyes look out. He stands right of centre, his face large in frame. 1920s: bare brick, a fire bucket, a crate of empty milk bottles, a wet stone floor. Key: a red neon tube off frame left floods everything crimson; a cold cyan light from a high window cuts across in hard slats through a venetian blind. Most of the frame is in deep shadow; the brightest values are the red edges on the faces and the slats of light. Every wet surface carries each light as a smeared vertical streak. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c68a3cdf-5e4b-4acd-8490-8c7d7bb22ece"
+}

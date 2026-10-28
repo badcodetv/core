@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S8-press-a.jpg",
+ "made": "2026-10-28T09:51:40.453Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1970s airbrushed film-poster painting: smooth photographic airbrush gradients, chrome-bright highlights on metal and jewellery, real faces. Camera low at the height of the firebox, fresh banknotes scattered on the stone floor in the foreground. In a hidden 1920s basement print room, a huge cast-iron printing press throws sheets of banknotes into the air. Beside it a tall skinny man in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache, shovels coal into the press's red-hot firebox, grinning. Behind him an exhausted stoker in a soot-black vest sits slumped against the brick wall. Riveted pipes, brass gauges, steam. A hot pink rim light from behind outlines the figures; the darkness fades from tangerine into ultramarine; one white key from the front left. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4f90cf69-8df6-4f45-bfc5-618a01ab56af"
+}

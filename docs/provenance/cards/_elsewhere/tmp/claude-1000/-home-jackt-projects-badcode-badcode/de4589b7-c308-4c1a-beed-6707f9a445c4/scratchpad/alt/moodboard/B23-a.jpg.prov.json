@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B23-a.jpg",
+ "made": "2026-10-28T12:56:57.314Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. A double exposure: inside the dark silhouettes of the two departing officers there is a second image of a secret mint, presses throwing banknotes, in burning amber and red. Camera low in the doorway of a shop full of loaves at dawn, the frame tilted. The officer from the character reference and the young officer from the second reference walk away down the wet street, each with a free loaf under his arm, tipping their caps; behind the counter a trapdoor in the floor glows green at its edges. Cold blue dawn; the shop's warm lamps. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/copwalrus.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/copwalrus.jpg",
+   "/home/jackt/.cache/sm-cast/copginger.jpg"
+  ],
+  "character": "SM Cop Walrus"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b477dc09-e66b-4386-b5ec-fdebf60a350f"
+}

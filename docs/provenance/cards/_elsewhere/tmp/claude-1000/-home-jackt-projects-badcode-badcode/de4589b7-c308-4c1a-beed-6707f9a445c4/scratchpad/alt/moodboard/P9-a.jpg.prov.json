@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/P9-a.jpg",
+ "made": "2026-10-28T10:18:46.859Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble, in real places. A long bread queue in the snow on a 1920s street at dawn: ordinary people of all ages, men and women, Black, white and South Asian, in worn coats, each holding money, a coin, a fistful, a bag, and at the back a wheelbarrow of notes. Sprayed over the photograph with aerosol paint: fluorescent pink and acid yellow overspray clouds, hard-edged stencilled halftone shapes, and long paint drips running down across the coats and the snow, as if someone tagged the photo on a wall. Faces stay real. Camera at waist height from the front of the queue, looking back along it. Light: grey dawn, and one lit shop window full of loaves under a plain blank sign. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "92629954-f958-44dd-8ccb-88baba9129e0"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/O1A-b.jpg",
+ "made": "2026-10-28T15:53:20.154Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Camera low on the back seat of a speeding black 1920s sedan at night, a wide lens close to the passenger: the man from the character reference, dressed exactly as in his portrait reference, leans towards the open side window holding a tommy gun pointed straight up at the sky, teeth bared. Through the rear window behind him the two round headlamps of a black 1920s police car chase, close. Outside every window the city streaks past as long-exposure light trails: streetlamps and the lit windows under the iron girders of an elevated railway smeared into long bending ribbons of amber and red that curl like poured liquid. Inside: cracked leather seats, a canvas money sack spilling banknotes on the floor, the driver's hat brim dark in the left foreground. The dashboard glows a small amber. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/doorman.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/doorman.jpg"
+  ],
+  "character": "SM Doorman"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e56b51dd-d4ce-4002-8675-99ca6d08195c"
+}

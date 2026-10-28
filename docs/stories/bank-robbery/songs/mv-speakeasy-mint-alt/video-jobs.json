@@ -1,0 +1,122 @@
+{
+ "option": "a",
+ "duration": 8,
+ "skip": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33
+ ],
+ "extra": [
+  {
+   "key": "25-r2",
+   "n": 25,
+   "still": "A25-b",
+   "duration": 8,
+   "motion": "The camera does not move. The whole gold and black pattern turns slowly clockwise round its centre like a kaleidoscope; the lamp at the centre glows steady and warm. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move. Sound: a slow mechanical whirr, paper rustling.",
+   "character": null,
+   "why": "r1 gave no candidate 3 times (silent block): dropped the counting hands, rubber bands and card game"
+  },
+  {
+   "key": "01-r2",
+   "n": 1,
+   "still": "A01-a",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The black sedan and the police car race round the corner towards the camera and roar past; rain spits on the wet cobbles; the red lamp over the doorway glows steady. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: engines roaring, tyres hissing on wet cobbles, a police bell ringing.",
+   "why": "r1: the colour trails became solid neon ribbons"
+  },
+  {
+   "key": "17-r2",
+   "n": 17,
+   "still": "B17-b",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The three dance arm in arm, laughing, swaying from side to side; glasses rise behind them; the soft amber, magenta and blue patches of projected light slide slowly across them. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: a hot jazz band, laughter, glasses clinking.",
+   "why": "r1: the oil blobs turned into solid balls and paddle shapes"
+  },
+  {
+   "key": "06-r2",
+   "n": 6,
+   "still": "B06-a",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. Thin faint wisps of breath leave her lips and fade; the small candle flame between her hands burns steady and yellow; her eyes stay closed. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: wind moaning, ice creaking in the beams.",
+   "why": "r1: her breath billowed into a thick smoke cloud over her hands"
+  },
+  {
+   "key": "01A",
+   "n": 1,
+   "still": "O1A-a",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The man in the back seat jolts with the speeding car and grits his teeth, holding the gun upright; outside every window the amber and red streams of light rush past; in the rear window the two headlamps of the black 1920s police car bob and close in. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: engine roaring, rain on the roof, a police bell ringing behind.",
+   "why": "Jack 28 Oct: scene 1 'looks like AI slop, cars teleport, trails too basic, setting AI' -> make all three options"
+  },
+  {
+   "key": "01B",
+   "n": 1,
+   "still": "O1B-b",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The black 1920s sedan keeps sliding sideways towards the camera, sparks spraying from the scraping wheel rim; steam curls from the manhole; the lit train windows slide along the girders overhead. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: tyres screeching, metal scraping, a train rumbling overhead.",
+   "why": "Jack 28 Oct: scene 1 'looks like AI slop, cars teleport, trails too basic, setting AI' -> make all three options"
+  },
+  {
+   "key": "01C1",
+   "n": 1,
+   "still": "O1C1-a",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. The spoked wheel spins hard, throwing a sheet of water off the tyre; the cobbles and the streams of amber and red light rush past. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: an engine roaring, water hissing off a tyre.",
+   "why": "Jack 28 Oct: scene 1 'looks like AI slop, cars teleport, trails too basic, setting AI' -> make all three options"
+  },
+  {
+   "key": "01C2",
+   "n": 1,
+   "still": "O1C2-b",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. Rain lashes the steel of the gun; the gloved hand braces it upright against the jolting car; streams of amber and red light sweep past behind. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: rain, wind rushing past an open window, a gun's metal rattling.",
+   "why": "Jack 28 Oct: scene 1 'looks like AI slop, cars teleport, trails too basic, setting AI' -> make all three options"
+  },
+  {
+   "key": "01C3",
+   "n": 1,
+   "still": "O1C3-b",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera does not move. Rain streams down the windscreen; the officer's eyes narrow as he leans into the wheel; the headlamp blazes steady; streams of light rush past behind the black 1920s police car. Shot at 24fps with a 180-degree shutter, so fast movement smears with natural motion blur. No dialogue. The camera does not move. Sound: a police bell clanging, an engine roaring, rain.",
+   "why": "Jack 28 Oct: scene 1 'looks like AI slop, cars teleport, trails too basic, setting AI' -> make all three options"
+  }
+ ]
+}

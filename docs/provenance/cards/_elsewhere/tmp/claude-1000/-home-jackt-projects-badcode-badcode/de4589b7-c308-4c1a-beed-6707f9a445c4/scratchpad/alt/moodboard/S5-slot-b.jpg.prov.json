@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S5-slot-b.jpg",
+ "made": "2026-10-28T09:45:56.618Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Realistic, but lit like a stage in a dream: thick haze hangs in the air and the light cuts through it in solid visible beams. Camera low on the back stairs, looking up past a dark wooden banister post in the foreground left. A heavy-set gangster in a chalk-stripe three-piece suit and grey fedora, with a broad pockmarked face, a flattened boxer's nose and a toothpick, leans close to a plain steel door at the bottom of narrow brick back stairs and murmurs into its open slot, where only two wary eyes look out. He stands right of centre, his face large in frame. 1920s: bare brick, a fire bucket, a crate of empty milk bottles, a wet stone floor. A hot magenta beam from high left and an ice-blue beam from low right cross on the main figure; dust and smoke drift in the beams; everything outside them falls away to black. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "59878cbe-f16e-4c4f-a15f-0eab82c24891"
+}

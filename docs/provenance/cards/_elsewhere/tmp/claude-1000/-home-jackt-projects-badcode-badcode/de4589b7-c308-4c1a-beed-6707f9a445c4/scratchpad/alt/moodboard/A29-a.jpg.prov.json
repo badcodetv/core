@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A29-a.jpg",
+ "made": "2026-10-28T10:57:05.069Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. The picture contains itself: the window of the top-floor attic shows the same scene again, smaller, which holds it again, smaller and smaller, spiralling inwards forever. A tall building cut open like a doll's house at night, seen from across the street: at the bottom a blazing furnace and a gold-lit speakeasy with a band and gangsters dancing among money, the floors above getting colder and darker, and at the top an icy attic with an old woman with a deeply lined face and a mole on her cheek, a grey wool shawl over her head at a candle. Light: the basement's gold; one lamp per floor fading upwards; snow falling. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ac8c1c8b-a3e2-4d56-920a-f4a47e9de789"
+}

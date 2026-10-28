@@ -1,0 +1,139 @@
+{
+  "story": "bank-robbery",
+  "scene": "speakeasy-mint-alt",
+  "prefix": "sma",
+  "title": "The Speakeasy Mint: ALT style sweep",
+  "heading": "Speakeasy Mint: a second style",
+  "moodboard_intro": "Jack, 2026-10-28. Round 3 (top): the whole ALT film, 33 scenes on Kai's lyrics, with more gangster and prohibition imagery, a psychedelic layer on each scene over a realistic, lit world, and a match-cut transition out of each (see script-alt.md). Rounds 2 and 1 below. Vote This / Maybe / No per scene and leave notes.",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt",
+  "flow_project": "706836d3-d133-4204-9ee3-fdf6a99fa961",
+  "beats": [
+    {
+      "key": "r3v1",
+      "name": "Round 3 · Verse 1 (scenes 1–11)",
+      "at": "the ALT film",
+      "blurb": "Street, bakery, stairwell, the slot, grandma, the balcony, the poker room, the pool hall, the bank job."
+    },
+    {
+      "key": "r3ch",
+      "name": "Round 3 · Choruses 1–2: the first drop (12–13)",
+      "at": "the ALT film",
+      "blurb": "Down into the Mint."
+    },
+    {
+      "key": "r3v2",
+      "name": "Round 3 · Verse 2: the distraction (14–21)",
+      "at": "the ALT film",
+      "blurb": "The getaway, the riot, the dance, the radio, the vault."
+    },
+    {
+      "key": "r3raid",
+      "name": "Round 3 · Choruses 3–4: the raid (22–23)",
+      "at": "the ALT film",
+      "blurb": "The cops arrive and leave with bread."
+    },
+    {
+      "key": "r3v3",
+      "name": "Round 3 · Verse 3: the cost (24–30)",
+      "at": "the ALT film",
+      "blurb": "The furnace, the counting room, the river, the split, the queue."
+    },
+    {
+      "key": "r3end",
+      "name": "Round 3 · The turn (31–33)",
+      "at": "the ALT film",
+      "blurb": "Everyone goes downstairs. The street is empty."
+    },
+    {
+      "key": "psy",
+      "name": "Round 2: psychedelic overlays on a real world",
+      "at": "12 styles",
+      "blurb": "Jack 2026-10-28: realistic underneath, a different psychedelic layer on top; each style on a different scene. Kept apart from Tarquin's trip (no acid green, violet or lattice patterns)."
+    },
+    {
+      "key": "tx",
+      "name": "Round 2: the transition test (furnace fire → protest fire)",
+      "at": "zoom in, zoom out",
+      "blurb": "The two ends of one match cut: push into the furnace flame, come out of the protest drum's flame. Same tall flame, dead centre."
+    },
+    {
+      "key": "slot",
+      "name": "Scene 5: the slot door",
+      "at": "quantitative easing",
+      "blurb": "The gangster murmurs the password into the slot."
+    },
+    {
+      "key": "press",
+      "name": "Scene 13: the press",
+      "at": "Chorus 2",
+      "blurb": "The mayor shovels coal into the red-hot press."
+    }
+  ],
+  "styles": {
+    "S1": "Noir neon",
+    "S2": "Spy titles",
+    "S3": "Spray paint",
+    "S4": "Technicolor dream",
+    "S5": "Stage haze",
+    "S6": "Double exposure",
+    "S7": "Painted light",
+    "S8": "Airbrush poster",
+    "P1": "Banknote engraving",
+    "P2": "Brass kaleidoscope",
+    "P3": "Liquid light show",
+    "P4": "Heat camera",
+    "P5": "Infinite picture",
+    "P6": "Silhouette windows",
+    "P7": "Colour trails",
+    "P8": "Melting world",
+    "P9": "Spray-tagged photo",
+    "P10": "Op-art rings",
+    "P11": "Newsprint dots",
+    "P12": "Cut-crystal prism",
+    "TX": "Transition",
+    "trails": "trails",
+    "engrave": "engrave",
+    "rings": "rings",
+    "infinite": "infinite",
+    "noir": "noir",
+    "heat": "heat",
+    "dots": "dots",
+    "prism": "prism",
+    "liquid": "liquid",
+    "double": "double",
+    "melt": "melt",
+    "kaleido": "kaleido",
+    "mirror": "mirror",
+    "spy": "spy",
+    "spray": "spray",
+    "none": "none"
+  },
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/J3kgSozdL3NZfgdazG2R8z",
+    "storyboard": "https://claude.ai/artifact/JZp31yhNF4q23xm78prwq2",
+    "timeline": "https://claude.ai/artifact/4GmevWxQcqgrxfgQ6LgHuH"
+  },
+  "storyboard_intro": "Jack, 2026-10-28: the ALT film, 33 scenes, my pick first and the runner-up second, the Flow Characters cast. Each frame has a way to animate it and the match cut out of it. Pick a still and leave notes; this is the new-scene storyboard stage.",
+  "looks": {
+    "trails": "trails",
+    "engrave": "engrave",
+    "rings": "rings",
+    "infinite": "infinite",
+    "noir": "noir",
+    "heat": "heat",
+    "dots": "dots",
+    "prism": "prism",
+    "liquid": "liquid",
+    "double": "double",
+    "melt": "melt",
+    "kaleido": "kaleido",
+    "mirror": "mirror",
+    "spy": "spy",
+    "spray": "spray",
+    "none": "none"
+  },
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/cut/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/cut/preview.mp4"
+  }
+}
