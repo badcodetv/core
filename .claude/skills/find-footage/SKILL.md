@@ -21,7 +21,7 @@ the margin and carries no rights question at all.
 | **Choosing the effect** | `video-fx` | Fire, film look, map zoom — which lane, what does it cost? |
 | **Inventing footage that doesn't exist** | `flow-prompt` | How do I write the prompt so Veo makes it? |
 | **Putting it on the timeline** | `premiere-automation` | Import, cut, trim, grade, export |
-| **The BadCode look** | `new-image` | What should it look like? |
+| **The story's look** | `docs/stories/<story>/look.md` | What should it look like? |
 
 **The reference this skill runs on:**
 [`docs/video-fx/footage-sources.md`](../../../docs/video-fx/footage-sources.md) — 68 sources with

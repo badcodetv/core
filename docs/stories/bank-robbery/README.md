@@ -29,7 +29,8 @@ night before, the chaos, the woman who works in the bank).
 | [`characters/the-crew.md`](./characters/the-crew.md) | The eleven, their heist jobs, and the table that keeps left and right mocked equally |
 | [`characters/denise.md`](./characters/denise.md) | The hero: waitress in the morning, bank cleaner at night |
 | [`distraction.md`](./distraction.md) | Nine ideas for showing the distraction, and the research behind them. Ideas 1 and 2 are in the storyboard |
-| [`look.md`](./look.md) | Four candidate looks (Heat among them), a recommendation, and the research. Nothing chosen |
+| [`look.md`](./look.md) | **The look** (LOCKED: "The bank in the haze", Jack, 6 Oct 2026): the prompt shape, rules, cast, the music video's K3a; the four earlier suggestions under History |
+| [`sound.md`](./sound.md) | **The sound**: the song's state (exploring, "Best one" the reference, Jack's standing rules), the film's lo-fi, the narrator and character voices |
 | [`stills.md`](./stills.md) | One still per scene in the chosen look: the style lock, the shot specs, the exact prompts and what came back |
 | [`clips.md`](./clips.md) | One clip per still: settings, how the motion prompts are built, the exact prompts and what came back |
 | [`look-tests.md`](./look-tests.md) | The four looks tried on scene 9 in Flow, 6 October 2026: the shot spec, the exact prompts and what came back |
@@ -50,7 +51,7 @@ night before, the chaos, the woman who works in the bank).
 | Storyboard | [`storyboard.md`](./storyboard.md) | First pass, 14 scenes (the march added 6 October). Every line a placeholder |
 | Characters | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | Twelve Flow Characters with portrait, body and custom voice, 6 October 2026, in Flow project `63d22c4b`. Picks are a first pass; voices not yet heard in a clip |
 | Research | [`research.md`](./research.md) | Two web passes (the money, and since Covid). Several figures are search-summary grade and marked |
-| The look | [`look.md`](./look.md) | Chosen by Jack, 6 October 2026: "The bank in the haze". Kai has not seen it |
+| The look | [`look.md`](./look.md) | Chosen by Jack, 6 October 2026: "The bank in the haze". Kai has not seen it. Sound: [`sound.md`](./sound.md) |
 | Script | [`script.md`](./script.md) | Gone through with Jack scene by scene, 7 October 2026. Owed since 8 October: his opening narrator line and four left-and-right conversations, and a ruling with Kai on how far the piss-take goes into the crowd |
 | Look tests | [`look-tests.md`](./look-tests.md) | Three rounds, 6 October 2026. Jack chose "The bank in the haze" |
 | Scene stills | [`stills.md`](./stills.md) | Two passes, 6 October 2026. The second has the Flow Characters cast in, and a different camera position and a single light in every scene. Not reviewed |
@@ -58,7 +59,7 @@ night before, the chaos, the woman who works in the bank).
 | Voices | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | One custom Flow voice per Character. **Open call 6 ruled on the 15 Oct 2026 call: full narration with several narrator voices, no lip-sync.** The cast's spoken lines move into narration |
 | Film | [`assembly.md`](./assembly.md) | **Cut 10, 12 October 2026, 4 min 34 s,** Premiere sequence `bank robbery - cut 10`; Jack: "That is great." Now Jack's to cut. **Notes from the 15 Oct 2026 call owed** (WW2 opening, jitter, narration, sausage roll, robbery, protest, estate agent): [`assembly.md`](./assembly.md), last section. Not upload-ready: photo credit on screen, delivery check fails |
 | Music | [`assembly.md`](./assembly.md) | Since cut 9: six HoliznaCC0 lofi tunes (CC0, no credit needed), [`music-lofi.md`](./music-lofi.md). Suno takes parked in [`songs/score.md`](./songs/score.md) |
-| Song | none | Not started |
+| Song | [`songs/bank-robbery-jack.md`](./songs/bank-robbery-jack.md) · [`sound.md`](./sound.md) | Jack's song on Kai's lyrics: exploring since 21 Oct 2026, no take picked; Suno paused 25 Oct. Music video "The Speakeasy Mint" in [`songs/mv-speakeasy-mint/`](./songs/mv-speakeasy-mint/storyboard.md) |
 | Comic | none | Not started |
 
 ## Before anything is made

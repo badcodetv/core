@@ -1,3 +1,5 @@
+> **Archived 2026-10-28.** My Taste was retired 2026-09-10 (Personalize always off) and there is no house sound (docs/stories/STYLE.md). The profile below was Camping-shaped; kept as history only.
+
 This is what affects ALL things Suno makes - get to the page by clicking:
 
 <img width="345" height="413" alt="image" src="https://github.com/user-attachments/assets/41d940b7-504f-4c47-a218-72f86df1c343" />

@@ -21,8 +21,8 @@
 > transcript outranks everything that came before it; the previous `camping`
 > and `camping-v2` folders are retired and live on in git history. Method:
 > [`../../storytelling.md`](../../storytelling.md); tone:
-> [`../../voice.md`](../../voice.md); house style: the `badcode-art-direction`
-> skill.
+> [`../../voice.md`](../../voice.md); look and sound: [`look.md`](./look.md) and
+> [`sound.md`](./sound.md) (there is no house style — [`../STYLE.md`](../STYLE.md)).
 
 EP1, track 1. The trader who caused 2008 and the man it ruined meet outside
 Waitrose — and an ayahuasca trip drops the trader five years forward into the
@@ -47,8 +47,9 @@ tent, after the AI has taken even his job.
   variant) — Flow sheet + Character record
 - [`characters/tent.md`](./characters/tent.md) ·
   [`characters/wank-tank.md`](./characters/wank-tank.md) — load-bearing object refs
-- [`style.md`](./style.md) — thin per-story style notes (locations, warmth
-  rules, motifs)
+- [`look.md`](./look.md) — **the look** (Camping's own: 35mm documentary, muted
+  cool-neutral; preambles, warmth rules, places, motifs, cast) · [`sound.md`](./sound.md) —
+  **the sound** (the song, the score, the narrator and character voices)
 - [`year-device.md`](./year-device.md) — **where the year is shown.** ✅ Ruled 2026-08-30: a
   two-instance device, and it lives on the **Thames foreshore** (`1y` 2008 / `4y` 2026), not on
   the skyline — the cloud-break version was run and failed. Both plates are shot

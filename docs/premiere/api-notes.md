@@ -2071,3 +2071,12 @@ In 27.0 beta **`Application` is gone from the types altogether**. Keep using `ho
   order, to get tabs in film order. Then `project.setActiveSequence(seq)` to pick the one in front.
 - There's no call that lists which tabs are open, so treat "open" as whatever you last opened.
 - Proven on gpom-story.prproj: 20 closed, 8 reopened in film order, active set back to `gpom-sh-A-rough1`.
+
+## 2026-10-28: moving sequences into bins (GPOM)
+
+- `FolderItem.cast(await project.getRootItem())` → `root.createBinAction(name, false)` makes a bin, and
+  `root.createMoveItemAction(await seq.getProjectItem(), bin)` moves a sequence into it; both inside
+  `project.lockedAccess(() => project.executeTransaction(c => c.addAction(…), label))`.
+- `(await seq.getProjectItem()).getParentBin()` reads where it sits; the root's name is the project file name.
+- Proven on gpom-story.prproj: the 6 live sequences into `00 the film (live sequences)`, 14 old ones into
+  `zz old sequences`; guids unchanged, tabs stayed open.

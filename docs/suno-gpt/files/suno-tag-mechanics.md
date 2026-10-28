@@ -190,8 +190,8 @@ Three supports that go with it:
 
 **Transplant the recipe, not the wording.** Reusing another track's *phrases* — not its
 technique, its actual adjectives — makes the second track sound like the first. Camping
-borrowed GPOM's string clauses verbatim and immediately read as the same house style,
-which for a release schedule is a real cost. Carry the five points above across; write
+borrowed GPOM's string clauses verbatim and immediately read as GPOM's sound,
+which for a release schedule is a real cost — each story's sound is its own (`docs/stories/<story>/sound.md`). Carry the five points above across; write
 the instruments in the new track's own words.
 
 **Give the guest layer a different *job*, not just different placement.** GPOM's orchestra
@@ -562,7 +562,7 @@ an escalation ladder for a tag that's being ignored. Emotion escalates reliably 
 cues (`[spoken word speech sad]` → `[angry voice]` → `[yelling]`). Pair it with `spoken word` plus a
 mood word in the **Style** box.
 
-*This is the mechanism for BadCode's superintelligence narration — and it composes with a saved
+*This is the mechanism GPOM's superintelligence narration uses — and it composes with a saved
 Voice, so the narrator can speak in one track and sing in the next with the same identity.*
 
 **Meta-tags are probabilistic.** Suno publishes no tag list, so this entire vocabulary is folk
@@ -778,7 +778,7 @@ asked for, so the pool lost and the vocalist reverted to its default.
 
 *Recorded 2026-09-01, and it is an open split rather than a ruling.*
 
-House doctrine above is that negations belong here and nowhere else. **Every field-tested narration
+This file's doctrine above is that negations belong here and nowhere else. **Every field-tested narration
 template we can find breaks that rule**, ending the Style box with `voice-forward mix, no lead
 melody, no sung chorus` or `voice dominant, no singing, no chorus` — the Jack Righteous 2026 spoken
 narration workflow does it in all three of its worked examples.

@@ -197,7 +197,7 @@ Tarquin has just been asked a question he considers beneath him, and is answerin
 - ⬜ **The therapist is reported, not heard** — Tarquin repeats her verdict in the new script, which
   is funnier and removes the third-voice dependency below.
 - 🔴 **There is no therapist voice, and Scene 7 may now need one.** The therapist was recast female
-  2026-09-09 ([`../style.md`](../style.md)) and the
+  2026-09-09 ([`../look.md`](../look.md)) and the
   [`7c-y2`](../prompts.md#7c-y2--the-therapist-explains-a-feeling-mouths-moving--video--written-2026-09-09-unrun)
   clip has her **visibly speaking** — which commits the film to a recorded voice for her, because
   the mouth in the picture has to belong to somebody. Scene 7's punchline is hers, so spending it
@@ -809,7 +809,7 @@ I have always found that strange.
 ### ⬜ Knock-on: a female narrator changes the cast balance
 
 The film would then be **a woman narrating two men**, with the therapist also a woman
-([recast 2026-09-09](../style.md)). ⬜ **Not a problem, and possibly an improvement** — the two
+([recast 2026-09-09](../look.md)). ⬜ **Not a problem, and possibly an improvement** — the two
 people in the film with any perspective on Tarquin are both women, and neither is a love interest
 or a victim. **Worth noticing rather than ruling on.**
 

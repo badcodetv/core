@@ -38,7 +38,7 @@ kind. He is lovely about it. That's why it works.
 rhyme with a sentence Galileo almost certainly never said. Four hundred years of
 progress and the truth still has nowhere to live except a whisper with no witness.
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (drafted 2026-08-06 against the retired house style; a description, not a ruling on the look — see [`../look.md`](../look.md))
 
 - Mid-30s, British Indian, sharp-featured, hair up and coming loose by the end of
   every day. Tired in the specific way of someone who works late by choice. No

@@ -157,7 +157,7 @@ Attaching a saved Voice pops a dialog:
 **The ruling is absolute: always Keep Current.** Ruled by Kai, 2026-08-24 — *"we decline to
 overwrite the styles every time."*
 
-Why it matters here specifically: the `badcode newsreader` persona's own styles are the
+Why it matters here specifically (a GPOM example): the `badcode newsreader` persona's own styles are the
 **orchestral cut's** — football-terrace crowd chant, drum and bass, 174 BPM. Clicking
 Overwrite on a narration generation replaces a near-silent two-instrument bed with a
 174 BPM D&B track, and the Style box will *look* populated afterwards.
@@ -315,11 +315,17 @@ Every time we try something, we run it at **both** weirdness settings:
 out which rule to apply."* — Kai, 2026-08-24
 
 So the automation unit is **load once → set w30 → Create → set w60 → Create**. Style influence
-stays at 75 across both. Never generate at only one setting; the comparison is the point, and
+stays the same across both (75 when Kai ruled it). Never generate at only one setting; the comparison is the point, and
 the rule is still being learned.
 
 **This is also a research programme.** Each pair is a data point on when 30 beats 60. Log the
 verdict with the pair so the rule can eventually be stated.
+
+> **A working method, not a sound** (2026-10-28). The pair is how we *refine* a sheet; it says
+> nothing about what a song should sound like. A song's own sliders live in its story's
+> `docs/stories/<story>/sound.md`. An **exploring** round (the `variations` skill) does not stamp
+> one pair of settings on every prompt — each writer chooses — because the same settings on every
+> take is one of the ways we made the same song again ([`same-song-traps.md`](./same-song-traps.md) trap 11).
 
 ### 🔑 Timing — narration must land within ±10s of the picture
 
@@ -596,7 +602,7 @@ The atom rule and the pair survive unchanged: a **cell** is a slider round, so w
 | **R3 · Max Mode** | off / on | 2 | consistency against credit cost |
 | **R4 · the kazoo check** *(optional)* | an absurd My Taste ("only kazoos and yodelling") with Personalize **off** | 1 | confirms the ruling's premise — that Personalize off keeps the account-wide profile out of the song |
 
-**Baseline for every cell unless the round varies it:** Personalize **off** (always — never
+**Baseline for every cell unless the round varies it** (a grid's controlled baseline, not a song's settings): Personalize **off** (always — never
 varied), Max Mode off, **Variety Off**, Style Influence 75, Vocal Gender unset unless the sheet
 sets it, Duration explicit. **Never v6 Mini.**
 

@@ -83,7 +83,7 @@ Run before anything else. A piece that fails a gate is not reviewed further unti
     as dramatic irony. *(P + H — briefs 04, 13)*
 13. **Arousal travels; sadness doesn't.** Virality tracks high-arousal emotion — awe as much as
     anger — not valence (Berger & Milkman). Pair every anger/anxiety beat with an awe/scale beat;
-    keep the D&B hot; never let a piece sit in resignation. *(A — brief 07)*
+    keep the music hot; never let a piece sit in resignation. *(A — brief 07)*
 14. **Transportation is real and not protective.** It is the best-replicated engagement mechanism
     (Green & Brock) *and* it increased counter-arguing in the one test that checked (Moyer-Gusé &
     Nabi); the one comics-specific study found persuasion without it. So: build for immersion, don't

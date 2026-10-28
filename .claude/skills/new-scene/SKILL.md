@@ -36,6 +36,7 @@ putting an existing cut on a timeline page is `scene-timeline`, rewriting a dial
 - `CLAUDE.md`: what BadCode is.
 - `docs/marketing/the-reader.md`: who the work is for.
 - The story's canon (`docs/stories/<story>/README.md`) and its overview board (`timelines.json`).
+- **The story's `look.md` and `sound.md`.** The only source of a look, a sound or a voice; there is no house style (`docs/stories/STYLE.md`). Empty or exploring for this part → the stage that needs it runs a `variations` round, and the pick is written back.
 - Then the stage skill you are in. Each lists the craft skills it leans on (`story-craft`, `shot-craft`, `flow-prompt`, `flow-automation`, `suno-automation`, `premiere-automation`, `lip-sync-dub`).
 
 ## Where things live

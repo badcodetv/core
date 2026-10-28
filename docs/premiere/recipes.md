@@ -246,7 +246,7 @@ premiere_add_transition({ clip: "v0:0", matchName: "AE.ADBE Cross Dissolve New",
 ```
 
 The ones worth knowing: `AE.ADBE Cross Dissolve New` · `AE.ADBE Dip To Black` ·
-`AE.AE_Impact_Luma_Fade` (dissolves into the black — the BadCode register) · `AE.AE_Impact_Flash`
+`AE.AE_Impact_Luma_Fade` (dissolves into the black — suits a near-black look such as GPOM's) · `AE.AE_Impact_Flash`
 (cheapest way to land a cut on a beat).
 
 🔴 **No handles is NOT a refusal.** A clip used to its full source length has nothing to dissolve
@@ -295,9 +295,10 @@ transactions. This is a hard API constraint, not a choice.
 
 ---
 
-## Recipe: the BadCode near-black look
+## Recipe: a near-black grade — vignette plus grain
 
-Vignette plus grain over a Lumetri base is the house grade.
+Vignette plus grain over a Lumetri base. This was GPOM's grade (there is no BadCode house grade;
+a story's `look.md` says what it uses) — the mechanics below work for any look that wants it.
 
 ```jsonc
 premiere_list_effects({ query: "vignette" })   // → AE.Impact_Vignette_FX

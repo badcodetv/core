@@ -402,7 +402,7 @@ Create Collection · Create Character · Create Scene`. Don't mistake it for the
 
 The most expensive of the three. Both **cast** paths appended the prompt with
 `keyboard.type()`, which emits genuine key events — so every `\n` arrived as **Enter, and the
-prompt box submits on Enter**. A ~2,000-character house-style prompt fired as ~15 separate
+prompt box submits on Enter**. A ~2,000-character style-preamble prompt fired as ~15 separate
 generations, one per line, each seeing only a fragment.
 
 The tell, and how to recognise it instantly: **the project fills with images titled after your

@@ -14,7 +14,7 @@
 - `4a` — **the same plate, edited.** The Shard replaces the tower, the number reads **"2026"**.
   Canon: *"the swap **is** the timestamp"* — an edit, not a second generation, because two
   independent skylines will not match.
-- `style.md` calls this **the matched city pair** and lists it first under *motifs to hold*.
+- `look.md` (was `style.md`) calls this **the matched city pair** and lists it first under *motifs to hold*.
 
 So the film's clock is **family 4 — the graphic match** (same frame, twice, something changed)
 with **family 2 — a fixed slot** riding on top of it. That is the strongest combination
@@ -171,7 +171,7 @@ shot. Sources at the foot of the file.
 | **Gibberish in-scene text** — the most-cited tell of all | 🔑 **Numbers in isolation are the best case**: a large, isolated numeral renders far more reliably than a phrase. Four digits, huge, nothing else legible anywhere in the frame. And **check every generation at 100%** |
 | **Text that will not hold still in video** | 🔴 Our own standing ruling: **lettering is a post job.** If the number must be pixel-stable, it is `drawtext`, not Flow. **A cloud gap is exempt** — clouds are meant to move |
 | **Flat, too-even, uncanny lighting** | Name one source and claim the falloff. `1a` already does: *sun low and hard from the left, long shadows east.* Keep it |
-| **Over-saturated synthetic palette** | Muted, cool, unforgiving — camping's `style.md` already bans warmth outside three named places |
+| **Over-saturated synthetic palette** | Muted, cool, unforgiving — camping's `look.md` already bans warmth outside three named places |
 | **Plastic sheen, no grain, no noise** | Ask for the film stock and the imperfection **by name**: fine 35mm grain, atmospheric haze, uneven exposure. Bare "photorealistic" gets you plastic |
 | **Unnaturally smooth, floaty motion** | Lock the camera. Move only what physically moves — cloud, haze, one aircraft |
 | **Repeating texture tiling** | The risk in the window-grid option specifically. Break it with a named irregularity |

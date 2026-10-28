@@ -16,15 +16,17 @@ automation half moved in from `docs/superpowers/`):
 what, what it costs, what Flow silently swaps — is a question you ask while *driving*, not
 while writing.
 
-The BadCode look — 35mm documentary register, muted cool-neutral palette, what a panel is
-allowed to be — is a **third** job and lives in the skills, deliberately NOT here:
+A story's look — its palette, light, lens, preamble, what a frame is allowed to be — is a
+**third** job and lives with the story, deliberately NOT here. **There is no BadCode house look**
+(Kai, 2026-10-28; [`../stories/STYLE.md`](../stories/STYLE.md)): this folder is the engine manual,
+facts and options only.
 
 | Layer | Lives in |
 | --- | --- |
 | How Flow behaves + how we drive it (this folder) | `docs/flow/` |
-| The BadCode look (both registers) | `.claude/skills/new-image/SKILL.md` |
-| The brand-image register | `.claude/skills/new-image/SKILL.md` |
-| Per-story style + prompts | `docs/stories/<story>/prompts.md` |
+| How to make a still (method, casting, critique loop) | `.claude/skills/new-image/SKILL.md` |
+| A story's look (palette, light, preambles, anchors, gates) | `docs/stories/<story>/look.md` |
+| Per-story prompts | `docs/stories/<story>/prompts.md` |
 
 Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` skill.
 
@@ -208,7 +210,7 @@ now carries its tier inline.
    this shot possible — not a prompt-writing one, and it now has measured numbers behind it.
 4. **Causal chaining** — an official, bracket-free way to get multiple beats inside one
    continuous 8-second take (`video-prompting.md` §5).
-5. **The near-black register has a named structural enemy** and a specific prompt-side fix
+5. **A near-black look has a named structural enemy** and a specific prompt-side fix
    (`camera-vocabulary.md`, Lighting).
 6. **Seed is a Veo 3 parameter, not a 3.1 one** — a whole plausible-sounding consistency
    workflow that would have wasted a session.
@@ -287,15 +289,15 @@ would change. Each is cheap; none has been run.
 | --- | --- |
 | **Causal chaining vs bracketed timestamps** — same beat, both ways, one shot | Whether one reads as a continuous take and the other as an internal cut. Both official, neither compared. **The highest-value single test in the list**, because our whole constraint is cutting every 8s |
 | ~~**Parallax hinging: motion prompt or source still?**~~ | ✅ **ANSWERED 2026-08-20 — it is the source still.** Veo hinges what is *hinge-able*: give it a bay panel and it rotates that instead of moving the camera; give it a flush sealed hull and it cannot, so it translates. Measured on GPOM scene 0 v2, both targets, same tier, same session. The fix is art direction, not wording — `video-prompting.md` §9 |
-| **The near-black recipe, measured on a histogram** — "near-black" as a descriptor vs one-light-plus-stated-falloff vs the same plus a ratio clause | Whether our entire register can reach true black or only muddy grey. Measure it, don't eyeball it |
+| **The near-black recipe, measured on a histogram** — "near-black" as a descriptor vs one-light-plus-stated-falloff vs the same plus a ratio clause | Whether a near-black look (GPOM's, for one) can reach true black or only muddy grey. Measure it, don't eyeball it |
 | **Does Lasso exist in our account?** | Five minutes. Decides whether a good take with one bad region is repairable or a reroll |
 | **Repeated negation vs positive description, for subtitles only** | Whether rule 12 has a carve-out for rendering artefacts as opposed to subjects. Rule 12 does not move until it runs |
-| **"Imperceptible" vs "slow"** — one prompt, two words, four generations | Our register lives at that end of the scale, so it changes how we write every camera clause |
+| **"Imperceptible" vs "slow"** — one prompt, two words, four generations | GPOM's look lives at that end of the scale, so it changes how that story writes every camera clause |
 | **What "Enhance Prompt" actually injects** | Every source confirms it exists; nobody has published a before/after. Rule 15 currently asks people to switch off a black box |
 | **Token-count our densest GPOM prompts once** | The cap is 1,024 and Flow shows nothing. Have we ever been silently truncated? |
 | **Do fractional beat durations get honoured?** ("Clip 1 (2.5s)") | Distinct from the banned second-level move timing — this allocates shot time to a beat. Untested by anyone |
 | **Do named film stocks differentiate**, or collapse to "warm grainy film"? | The photographic mappings are real; whether the models honour the names is untested, including by us |
-| **Does extreme-angle framing break identity on our cast?** | Our register uses worm's-eye and bird's-eye deliberately. If true, it is a standing conflict between the look and the consistency discipline |
+| **Does extreme-angle framing break identity on our cast?** | GPOM's look uses worm's-eye and bird's-eye deliberately. If true, it is a standing conflict between the look and the consistency discipline |
 | **Timestamp-prompting reliability** — the same multi-beat prompt run N times | Nobody has published one. It is a by-product of a normal shoot |
 
 **Two research threads left open**, both needing a browser rather than a fetch:

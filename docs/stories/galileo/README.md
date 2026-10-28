@@ -4,8 +4,8 @@
 > dump via the `new-story` skill, graduating the inbox seed
 > [`docs/ideas/dogma.md`](../../ideas/dogma.md). Method:
 > [`../../storytelling.md`](../../storytelling.md); tone:
-> [`../../voice.md`](../../voice.md); house style: the `badcode-art-direction`
-> skill.
+> [`../../voice.md`](../../voice.md); look and sound: [`look.md`](./look.md) and
+> [`sound.md`](./sound.md) (both empty; there is no house style — [`../STYLE.md`](../STYLE.md)).
 
 Galileo didn't break faith with reason. The men who refused to look through his
 telescope were **professors, not priests**, and what they were defending was

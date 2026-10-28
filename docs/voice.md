@@ -39,19 +39,25 @@ like it.
 
 ## Music
 
-Drum & bass is the home genre: ~170–180 BPM, dark, UK grime influence, Amen breaks, heavy sub and
-Reese bass (touchpoints: Chase & Status, Stormzy "Backbone"). Songs often carry **multiple voices /
-perspectives** in tension (e.g. the dismissed worker vs. the comfortable professional). Raw,
-confrontational delivery; social commentary in the bars.
+This guide is the voice of the **words**: lyrics follow everything above. It sets **no sound**.
+There is no BadCode genre (Kai, 2026-10-28): each song's genre, singer and production live in its
+story's `docs/stories/<story>/sound.md` ([`stories/STYLE.md`](./stories/STYLE.md)). Drum & bass was
+GPOM's track, not BadCode's identity; its paragraph now lives in GPOM's `sound.md`.
+
+What carries across songs is the writing: songs often carry **multiple voices / perspectives** in
+tension (e.g. the dismissed worker vs. the comfortable professional), with social commentary in
+the lines.
 
 ## Agent / character voices
 
 The per-story AI agents (the "BadCode government", built in a separate project) and in-story
-characters can each have a distinct delivery. Voice palette explored so far:
+characters can each have a distinct delivery, cast per story in its `sound.md`. Ideas explored so
+far (a list to pick from, not a default):
 
 - **Flowdan-style** — musical, grime MC cadence (prototype exists).
 - **GLaDOS-style** — eerie, sing-song up-and-down melody, passive-aggressive authority.
 - **Whispery AI** — synthesised, intimate (Izotope Vocal Synth style; prototype exists).
 - **Robot / TTS variants** — flatter machine deliveries for contrast.
 
-Pick a voice that serves the story; default narration is the sarcastic-authoritative future-AI.
+Pick a voice that serves the story. The narrator's *words* are always the sarcastic-authoritative
+future-AI above; how the narrator *sounds* is cast per story.

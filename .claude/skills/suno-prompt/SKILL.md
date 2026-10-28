@@ -1,12 +1,18 @@
 ---
 name: suno-prompt
-description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music, AND when a human is driving Suno by hand: what to click, in what order, to get a result or fix a broken one. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", "how do I do X in Suno", "what do I click", "how do I fix this vocal / change this word / split these stems", "one word is wrong", "remove the music under that bar", "change the phrasing in that bar", "v6 or Wild", "what does Variety do", anything about Suno v6, Suno Studio, MIDI, stems, Voice/Persona or custom models, or any drum & bass / track idea clearly meant for Suno generation. Driving Suno FROM CODE — loading a sheet into the boxes, clicking Create, running the weirdness pair, workspaces — is `suno-automation`.
+description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music, AND when a human is driving Suno by hand: what to click, in what order, to get a result or fix a broken one. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", "how do I do X in Suno", "what do I click", "how do I fix this vocal / change this word / split these stems", "one word is wrong", "remove the music under that bar", "change the phrasing in that bar", "v6 or Wild", "what does Variety do", anything about Suno v6, Suno Studio, MIDI, stems, Voice/Persona or custom models, or any song / track idea clearly meant for Suno generation. Driving Suno FROM CODE — loading a sheet into the boxes, clicking Create, running the weirdness pair, workspaces — is `suno-automation`.
 ---
 
 # Suno Prompt (BadCode)
 
 Take what's in the user's head — a vague idea, a reference track, a feeling, a GPOM story beat — and
-turn it into a Suno prompt that produces accurate, high-quality output, **in the BadCode voice.**
+turn it into a Suno prompt that produces accurate, high-quality output, **in the story's own sound**
+(its `docs/stories/<story>/sound.md`), with lyrics in the BadCode voice (`docs/voice.md`, words only).
+
+**There is no BadCode house sound** (Kai, 2026-10-28): no default genre, voice or settings. Read the
+story's `sound.md` before anything else. LOCKED → work inside it. EMPTY or EXPLORING → that is an
+exploring round, and it goes through `variations`. A pick goes back into `sound.md`; that is the
+only place a sound is written down (`docs/stories/STYLE.md`).
 
 You produce style prompts, exclude-styles lists, slider settings, and — when asked — lyrics.
 
@@ -23,22 +29,21 @@ output, draft fast, then refine against what the user hears.
 🛑🛑🛑 **EXPLORING (a new voice, a new sound, "try different ones", "experiment"): YOU DO NOT WRITE
 THE PROMPTS. Not one word of them.** Jack, 2026-10-24: *"i do not want the same mistakes made over
 and over, i cannot emphasise this enough."* 400+ Bank Robbery takes came out as one voice, and every
-time it was a step where this session — with this file, CLAUDE.md and memory loaded — put its hands
-on the round. The whole round is now one command, and your only job is to supply raw inputs:
+time it was a step where the session put its hands on the round. Exploring rounds run through the
+**`variations` skill**: you supply raw inputs, separate writer subagents write one prompt each, a
+sameness gate refuses shared wording, and the stamped round runs verbatim.
 
 ```
-docs/stories/<story>/songs/sealed-rN/   jack.md (the message, VERBATIM) · lyrics.txt (words only)
-                                         listen.md (ONE fresh listen, verbatim) · reference.md (URL +
-                                         Suno's raw record) · facts.md (last verdict: facts + quotes)
-python3 scripts/suno/sealed-round.py write <dir>            # sealed writers → gate → lyric check
-python3 scripts/suno/sealed-round.py run <dir> <title> --yes # one Create per prompt, verbatim
+docs/stories/<story>/songs/<round>/   ask.md (the message, VERBATIM) · lyrics.txt (words only) · story
+                                       explore (if finding a new sound) · listen.md · reference.md · facts.md
+python3 scripts/variations/round.py brief <dir>   # then the variations skill's loop
+python3 scripts/variations/round.py run <dir> <title> --yes
 ```
 
-`run` refuses a round that was edited after the gate, and `write` stops (no override flag exists)
-if the prompts still share wording after two rewrites. **Before every exploring round, read
-[`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)** — the list of
-every way we made the same song again, and the guard for each. None of the house rules in the
-rest of this file goes into an exploring round, not even as a "tip" in the brief.
+**Before every exploring round, read
+[`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)**: the list of
+every way we made the same song again, and the guard for each. None of the rules in the rest of
+this file goes into an exploring round, not even as a "tip" in the brief.
 
 🔑🔑 **The rest of this file is for REFINING** — a liked take exists and Jack wants it nudged, one
 tested change at a time. Everything below was learned once, mostly on one song, and stacking it onto
@@ -46,7 +51,7 @@ every prompt is exactly what made every prompt alike.
 - **REFINE** (a liked take exists): start from that take's **sound, not its box**. Listen to it first
   (`suno.mts record <songId>` then `listen_describe`): Bank Robbery's liked "psych folk funk, sitar,
   tin whistle" take was really acoustic flamenco guitar over boom-bap. Keep its settings; change one
-  thing per version; bring a house rule in only when it is tested against that take. **Measure the
+  thing per version; bring a rule from this file in only when it is tested against that take. **Measure the
   drift, don't guess it:** listen to a new take beside the reference and compare loudness range
   and brightness (`listen_describe` measurements). Bank Robbery Round KA lost the vibe by going flat
   (6 vs 12 LU) and bright (3.4–4 vs 2.6 kHz). Two hidden causes: much denser lyrics speed up the
@@ -114,8 +119,8 @@ skip straight to drafting if they clearly just want something fast.
 - **Which model?** Don't ask — default **v6**, and offer **v6 Wild** in one line when the brief is
   a hunt (a texture, a drop idea, a niche sub-genre). Never v6 Mini. v5.5 no longer exists for new
   generations (`suno-v6.md` §1).
-- **What is this song for?** A GPOM story beat, a standalone release, a comic soundtrack, an
-  experiment? If it ties to canon, skim the story folder before drafting.
+- **What is this song for, and which story?** Read that story's `sound.md` first (and skim the
+  story folder). A song with no story is an exploring round.
 - **What's the feeling, or the reference?** Take a fragment, a mood, an adjective, a track they like.
   Don't demand a brief.
 
@@ -212,14 +217,12 @@ boxes.
 three, every round, from this session's blocks — **plus the settings, with Personalize off**.
 Never trust what a box already contains.
 
-Default settings line, unless the situation calls for otherwise:
-
-> Model **v6**, Variety **Normal**, Personalize **off**, Max Mode **off**, Vocal Gender **unset**
-> (or as the sheet says), Duration **set explicitly** — then style influence **75**, weirdness
-> **60**, audio influence **40** (only if you're seeding from audio).
-
-State every v6 control, not just the sliders: v6 on Duration **Auto** runs longer than v5.5 did,
-and Personalize is **always off** by house rule. Variety and Max Mode are **untested by us** —
+**Settings come from the story's `sound.md`.** If it has none for this song, choose them for this
+song and say why: never carry another song's numbers over (a constant setting across every take is
+same-song trap 11). State every control: model, Variety, Personalize (**off**), Max Mode, Vocal
+Gender, Duration (**set explicitly**: v6 on Auto runs longer than v5.5 did), style influence,
+weirdness, audio influence (only when seeding from audio). Personalize off is a working method
+(each song an atomic unit), not a sound. Variety and Max Mode are **untested by us** —
 say so if the user asks what they do (`suno-v6.md` §2).
 
 Adjust with reasons from `suno-controls-and-workflows.md` §1 — e.g. weirdness 0 and style influence
@@ -486,9 +489,9 @@ the v5.5-era evidence behind it is in `docs/suno-gpt/archive/v5.5-era.md` §3.
 
 Apply on top of everything above. This is why the skill exists and not just the raw procedure.
 
-- **Default to drum & bass.** Lead with a specific subgenre (`Drum and Bass, Neurofunk` / `Liquid
-  DnB` / `Jump Up` / `Jungle`) paired with the parent genre — but see the D&B notes below, because
-  Suno is weak at exactly these subgenres.
+- **No default genre.** The genre is whatever the story's `sound.md` says. Drum & bass is one genre
+  some of our songs use (GPOM's, Camping's), not BadCode's; if the song is D&B, see the D&B notes
+  below, because Suno is weak at exactly its subgenres.
 - **Lyrics are a story first.** Narrative in lyrics — whose "you" is addressed, the drama
   stated in one sentence before a bar is written, comment-don't-describe, a second voice
   carrying the irony, one concrete gesture instead of a stated feeling, the final verse
@@ -611,11 +614,11 @@ family too; what stays unbanned is the **underscore** — `ambient bed, drone, r
 
 ### The narrator problem
 
-BadCode needs one recurring voice across a whole release arc. That is a *feature* problem, not a
+A story may need one recurring voice across a whole release arc (GPOM's narrator: its `sound.md`). That is a *feature* problem, not a
 prompt problem — see `suno-controls-and-workflows.md` §4 for the full stack (Voice + custom model +
-Lyricist). Two BadCode-specific notes:
+Lyricist). Two notes from building GPOM's:
 
-- **Build the narrator's Voice in a register that has nothing to do with D&B** — spoken oratory,
+- **Build the narrator's Voice in a register that has nothing to do with the song's genre** — spoken oratory,
   opera, a gospel preacher, a sardonic crooner. The genre mismatch is what breaks Suno out of its
   generic per-genre vocal default, and it's the cheapest route to a vocal no other Suno D&B track
   has. Audio influence 40–60 for the strongest effect.
@@ -623,7 +626,7 @@ Lyricist). Two BadCode-specific notes:
   `suno-tag-mechanics.md`, which is superseded for narration. It composes with
   a saved Voice — so the narrator can speak in one track and sing in the next as the same character.
 
-### Drum & bass specifics — where Suno will fight you
+### If the song is drum & bass — where Suno will fight you
 
 1. **Half-time drums are a known blind spot.** Repeated controlled tests never produced half-time
    from a `breakdown` tag — it slows and thins the arrangement instead. Since the half-time drop is a

@@ -1166,7 +1166,7 @@ idles is zero change from the plate, and the cut does the leaving for free.
 Additions to the table in the previous section:
 
 - **Film grain at 10–15% opacity** counteracts the too-clean look — for us this is
-  already the §1 `STYLE LOCK`'s job, which is a point in the house style's favour.
+  already Karen's §1 `STYLE LOCK`'s job, which is a point in that lock's favour.
 - **A 10–15% speed adjustment in the edit** makes AI motion read as more natural.
   Post, not prompt, but worth knowing before a clip gets binned.
 - **Review frame by frame before accepting** — flicker, morphing, inconsistent
@@ -1263,7 +1263,7 @@ faces — our casting rule still holds, and it costs nothing here.
 
 ### Realism: name the imperfections, and refuse to compose
 
-The craft half of the same pass, and it lines up with the house `STYLE LOCK` `[community]`:
+The craft half of the same pass, and it lines up with Karen's `STYLE LOCK` `[community]`:
 
 - **Explicit imperfection tokens stop the smoothing.** `film grain`, `motion blur`,
   `slight chromatic aberration`, `ISO noise`, `halation` — *"prompts that include
@@ -1949,7 +1949,7 @@ Run for the Camping music video "breathing room" clips (`br-*`, `scripts/camping
    The doctrine in `badcode-art-direction` ("two failures with no candidates = policy block;
    rewrite, don't retry") gets *more* important here, not less, because the failed attempts now
    cost money as well as minutes.
-3. **No negative prompts** means the house style's "no lens flares" cannot be expressed as a
+3. **No negative prompts** means a preamble's "no lens flares" (GPOM's, for one) cannot be expressed as a
    negative on this engine at all. It needs a positive restatement or it does nothing.
 4. **1080p ceiling vs Veo's 4K** matters for anything destined for the comic viewer at full width.
 5. **16:9 / 9:16 only.** Fine for shorts, and fine for our landscape panels, but there is no
@@ -2322,8 +2322,8 @@ untested by us.** Sources are Aug–Sep 2026 unless stated.
 - **A master still at peak saturation/contrast leaves the engine no headroom** for light that
   changes during motion (neon flicker, a passing headlight), and bloom blows out. The counter is a
   *little* atmosphere (haze) in the plate and a described reflective ground. `[community]`
-  single source (Hailuo, neon-rain guide), not Omni-specific. ⚠️ Relevant to our near-black
-  register only for shots where a light changes.
+  single source (Hailuo, neon-rain guide), not Omni-specific. ⚠️ Relevant to a near-black look
+  (GPOM's) only for shots where a light changes.
 - **In a public 19-model liquid-spill test (2026-09-18), Omni Flash was not in the top four**
   (Veo 3.1, Veo 3.1 Lite, Seedance 2.0, Wan 3.0). No commentary on Omni's result was published,
   so this says nothing about *how* it failed. `[community]` ⚠️ For a shot whose whole point is

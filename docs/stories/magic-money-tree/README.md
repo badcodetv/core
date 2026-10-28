@@ -53,6 +53,9 @@ There is no unresolved fable/documentary fork and no alternative ending awaiting
 
 ## Supporting material
 
+- **[Look](./look.md) and [sound](./sound.md)** — this story's own look and sound (the documentary,
+  Money For Something, the song): what is locked, what is still exploring. Read before any prompt; there
+  is no house style ([`../STYLE.md`](../STYLE.md)).
 - **[Narration sheet](./songs/narration.md)** — the narration as Suno lyrics in ten parts, with the
   style template and three palettes to test. First draft 2026-09-29, words not locked, nothing generated.
 - **[Edit plan](./edit-plan.md)** — the paper edit: every narration line paired with its picture, source

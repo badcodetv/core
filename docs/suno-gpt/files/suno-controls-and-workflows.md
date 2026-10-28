@@ -25,7 +25,7 @@ Learn these before learning more tags — they govern whether your prompt is obe
 |---|---|---|
 | 0 | Suno's own musical judgement dominates; wanders off-brief | You want the reference audio to lead |
 | 50 (default) | Balanced. Safe while your prompt vocabulary is still weak | Exploring |
-| **75** | **The working default for a prompt you trust.** Strong adherence, still musical | Most BadCode work |
+| **75** | **The working default for a prompt you trust.** Strong adherence, still musical | A refined prompt you trust (a song's own setting is in its story's `sound.md`) |
 | 100 | Follows literally; can over-tighten and *degrade* adherence | Lyric-swap covers; a prompt you're certain of |
 
 The single most-repeated numeric tip in the whole corpus is **75, not 100**. Push it up as your
@@ -82,7 +82,7 @@ covering your own recorded audio into an instrument.
 
 ## 2. Model choice — don't assume the highest number
 
-**All new Suno work is v6, in the new UI** (Kai, 2026-09-10). The choice is **v6** by default,
+**All new Suno work is v6, in the new UI** (Kai, 2026-09-10). The options: **v6** for fidelity,
 **v6 Wild** to hunt, then **Cover the winner into v6** — [`suno-v6.md`](./suno-v6.md) §1. Never
 v6 Mini. The v4.5-vs-v5.5 guidance that used to live here (and the "ideas in 4.5, Cover into 5.5"
 hybrid move, whose Cover settings — weirdness 0, style influence 0, audio influence 35–40 — are the
@@ -107,7 +107,7 @@ natural untested starting point on v6) is archived in
 4. **Pick the coherence anchor now**, not at the end (§4).
 5. **Triage as you go.** Thumbs-down every reject the moment you pick a keeper — disliked
    generations disappear from the workspace. Bookmark prompts that work; that library becomes the
-   house style.
+   release's sound — for us, written into the story's `sound.md` (there is no BadCode house style).
 
 **Over-generate and cull hard.** A 13-track album took 17 finished candidates. The human
 contribution to an AI release is taste, not prompting.
@@ -116,8 +116,8 @@ contribution to an AI release is taste, not prompting.
 
 ## 4. Coherence across a release — the consistency stack
 
-This is the highest-value section for BadCode, which needs one recurring narrator across a whole
-story arc.
+This is the highest-value section for any story that needs one recurring voice across its whole
+arc (GPOM's narrator, for one).
 
 ### Voice (formerly "Persona") — the primary mechanism
 
@@ -177,7 +177,7 @@ Record the reference in a register deliberately opposed to the target song. The 
 breaks Suno out of its generic per-genre vocal default. Audio influence **40–60** gives the
 strongest effect.
 
-*BadCode application:* the narrator is a future superintelligence, not a D&B MC. Building its Voice
+*Example (GPOM):* GPOM's narrator is a future superintelligence, not a D&B MC. Building its Voice
 from spoken oratory, opera, a gospel preacher or a sardonic crooner is the cheapest route to a vocal
 no other Suno D&B track has.
 

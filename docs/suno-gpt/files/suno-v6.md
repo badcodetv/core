@@ -1,6 +1,7 @@
 # Suno v6 — what changed, and what it lets us do
 
-> 🔑 **House rule (Kai, 2026-09-10): all new Suno work is v6, in the new UI.** The v5.5 era is
+> 🔑 **Standing rule (Kai, 2026-09-10): all new Suno work is v6, in the new UI** (the older models
+> can no longer be picked for a new generation anyway). The v5.5 era is
 > archived in [`../archive/v5.5-era.md`](../archive/v5.5-era.md) — read it only to understand an
 > old sheet, or to Cover an old take onto v6.
 
@@ -9,6 +10,11 @@ v6 layer on top of the rest of `docs/suno-gpt/`. Where it disagrees with an olde
 *model* or *control* question, **this file wins** — the older files were written against v5.5.
 Where it is silent, the older file still stands (prompt grammar, the voice playbook, the atom,
 the satire trap, the narration recipe).
+
+> **This is an engine manual, not a sound.** There is no BadCode house sound (Kai, 2026-10-28):
+> which genre, model, sliders and voice a song uses live in its story's `docs/stories/<story>/sound.md`
+> ([`STYLE.md`](../../stories/STYLE.md)). Where this file names a story's settings (GPOM's narration,
+> Camping's D&B re-cut) they are worked examples, labelled with the story.
 
 > **Confidence: day-one evidence.** Distilled on 2026-09-10 from 11 launch-day YouTube videos and
 > a 20-agent web sweep — full claim ledger with every source and tier in
@@ -53,9 +59,9 @@ old songs stay playable and downloadable, and Cover and Extend still work on the
 presenters read as part of the name. **Custom models sit in the same dropdown**, plus a
 "Create Custom Model (Beta)" entry (reported: 100 credits). Never match a label exactly.
 
-### Which to pick (our ruling-in-waiting — untested by us)
+### Which to pick (options — untested by us)
 
-- **Default: v6.** Finished D&B, anything carrying a saved Voice or the narrator.
+- **v6** for a finished take, and anything carrying a saved Voice or a narrator Voice.
 - **v6 Wild when you are hunting** — a texture, a drop idea, a niche sub-genre the pop-tuned
   model flattens (our neurofunk and half-time failures are exactly that theory). **Then Cover the
   winner into v6** for fidelity. That is both Suno's stated intent and two presenters' method — it
@@ -81,8 +87,8 @@ on niche sub-genres. The practical answer is §8c. **Custom models were auto-upg
 
 ## 1b. 🆕 Speech (beta) — a voice and its score in one take (shipped 2026-10-01)
 
-> 🔑 **Why this matters to us:** our GPOM narration is *already* voice + score in one Suno v6 take,
-> forced through the song model with a house template (`docs/stories/gitpush-origin-master/songs/narration.md`).
+> 🔑 **Why this matters to us:** GPOM's narration is *already* voice + score in one Suno v6 take,
+> forced through the song model with GPOM's own template (`docs/stories/gitpush-origin-master/songs/narration.md`).
 > Suno now ships a model built for exactly that job. **Nobody here has tried it yet** — §12 test 0.
 
 **Vendor (release note, 2026-10-01):** *"the first model to create a speech and its soundtrack
@@ -128,7 +134,8 @@ Simple = one prompt, Suno writes the script. **Advanced** = what we use:
 
 **Known failures — Suno's own warnings:**
 - 🔴 **Accent drift** — Suno's own example is **a British accent wandering towards Australian
-  and back.** Our narrator is UK. This is the first thing to listen for.
+  and back.** Whenever the voice must stay British (GPOM's narrator, for one), this is the first
+  thing to listen for.
 - 🔴 **Dramatic pauses run long.**
 - Pronunciation not guaranteed; words can be changed or dropped — **diff every take against the
   script**, the same mechanical check we run on lyrics.
@@ -158,7 +165,7 @@ three testers (above). Reported once: music appeared even with background music 
 **Making the SONG model speak instead:** the sweep found **no v6-era test** of it. The only v6
 wording anyone offers is untested — Style *"spoken-word narration, voice-forward, minimal
 documentary underscore, restrained dynamics, no sung chorus"*, lyric label `[Spoken narration]`
-(Jack Righteous). Our own `narration.md` house template remains the best evidence anywhere.
+(Jack Righteous). GPOM's `narration.md` template remains the only tested evidence we have.
 
 Best fit per reviewers: short expressive
 pieces. Worst fit: anything needing exact timing — which for us means **the words and the
@@ -196,7 +203,7 @@ cost: **2× credits** (ChillPanic said it twice, plus one newsletter). ⚠ Dispu
 
 🆕 **Suno confirms My Taste reaches a take through Variety** (two Suno videos): "if you use my taste,
 those variations will lean more towards your personal taste profile." With Personalize **off** and
-Variety **Off** — our ruling — it has no route in.
+Variety **Off**, it has no route in.
 
 🔴 **Suno switches the model on its own.** Our form showed a toast: *"Model changed — Model was
 automatically changed to support your selected conditions."* So a model you set is not a model
@@ -205,7 +212,8 @@ that stays set — the loader reads it back after everything else, before Create
 🔑 **Personalize is ALWAYS OFF, and we don't use My Taste** (Kai, 2026-09-10): *"stop trying to
 use the My Taste box and always have personalize off when we generate a song, because then each
 song becomes an atomic unit."* In our own logs My Taste only ever caused damage, never a better
-take. Each song is now its three boxes plus its settings, and nothing hidden. The loader forces
+take. Each song is now its three boxes plus its settings, and nothing hidden. This is a working
+method (it keeps every take isolated), not a sound. The loader forces
 Personalize off and refuses a spec that asks for it on.
 
 ### What the launch videos said (kept for the *what it does* column)
@@ -575,7 +583,7 @@ Uploaded audio passes an originality/rights check before it can be used.
 ## 8. Prompt craft deltas
 
 - **Long plain-English briefs work** on v6 — a jargon-free paragraph with a bridge instruction
-  and a stripped-back ending was followed closely (3 agree). Our short skeleton still stands; this
+  and a stripped-back ending was followed closely (3 agree). Short boxes still work too; this
   widens what's safe.
 - **Metatag doubt, one A/B:** a plain LLM-written prompt beat a metatag-heavy one on hip-hop.
   Consistent with our existing stance — prefer plain production language.
@@ -608,17 +616,17 @@ measured finding of ours, ours wins.
 
 | Claim | Who says it | Our status |
 |---|---|---|
-| Start at **Weirdness 20 · Style Influence 75 · Variety Off** | [sunostyles](https://sunostyles.com/blog/suno-v6-settings), repeated by several guides | 🟡 close to ours (SI 80, weirdness paired 30/60). The source explicitly says *"not a claim that one preset wins"* |
-| **Weirdness 0 sounds stale; above 90 produces artifacts; 30–50 for a detailed prompt** | [Moe Lueker](https://moelueker.com/blog/suno-v6-guide) | 🟡 untested. Our w60 half of every pair sits above the recommended band on purpose — drift is how `1127446d` got the things Jack likes |
-| **Style Influence 40 for a vague prompt, 65+ for a precise one** | Moe Lueker | 🟡 consistent with our 80 |
+| Start at **Weirdness 20 · Style Influence 75 · Variety Off** | [sunostyles](https://sunostyles.com/blog/suno-v6-settings), repeated by several guides | 🟡 close to Camping's re-cut (SI 80, weirdness paired 30/60). The source explicitly says *"not a claim that one preset wins"* |
+| **Weirdness 0 sounds stale; above 90 produces artifacts; 30–50 for a detailed prompt** | [Moe Lueker](https://moelueker.com/blog/suno-v6-guide) | 🟡 untested. The w60 half of a pair sits above the recommended band on purpose — drift is how Camping's `1127446d` got the things Jack likes |
+| **Style Influence 40 for a vague prompt, 65+ for a precise one** | Moe Lueker | 🟡 consistent with Camping's 80 |
 | **Variety above Off rewrites your Style box** | [Suno's own v6 FAQ](https://help.suno.com/en/articles/13924481) + every guide | ✅ **proven by us** 2026-09-13, twelve takes |
 | 🔑 **Max Mode is aimed at songs over two minutes**, and at keeping vocals and style consistent across a whole track | Suno via [Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/inside-suno-v6-create-simple-advanced-sounds-guide), [weraveyou](https://weraveyou.com/2026/09/suno-v6-models-features-editing-sampling-advanced-mode/) | ⬜ **never tried by us, and every Camping take is 3 minutes plus.** This is the most obviously untested lever we own. Cost is "more credits", amount unstated |
 | **A constant-tempo clause reduces drift** — *"constant tempo, steady groove, no tempo changes, 4/4 time"* | [MixMasterAI](https://www.mixmasterai.co/suno-prompts/fix/wrong-tempo), [GenX Notes](https://blog.genxnotes.com/en/fix-suno-bpm-tempo-drift/) | 🟡 first used by us in r54 (Camping), unmeasured |
-| **D&B works at 170–175; above 180 drum resolution degrades** | MixMasterAI | 🟡 consistent with our 174 |
+| **D&B works at 170–175; above 180 drum resolution degrades** | MixMasterAI | 🟡 consistent with Camping's 174 |
 | **Rap speed is set with musical units, not adjectives** — 16th-note subdivisions, ~16 syllables a bar, `double-time`, `rapid-fire`, `chopper`; and `laid-back`/`smooth` actively slow it | [HookGenius](https://hookgenius.app/learn/suno-hiphop-prompts/), [Undetectr](https://undetectr.com/blog/suno-prompts-for-hip-hop) | 🟡 the basis of r55's flow spec. **Do the arithmetic before pasting a number**: at 174 BPM, 16ths is 11.6 syllables a second, which no human does — eighths (5.8/sec) with 16th bursts is what "fast" actually means at this tempo |
 | **Avoid the words `fusion` and `meets`; say which layer belongs to which genre** | [SunoPromptPro](https://www.sunopromptpro.com/en/guides/suno-genre-combinations) | 🟡 agrees with our unity-sentence rule (`suno-tag-mechanics.md`) |
 | **Name two or three instruments, not a full band** | [Brahmstorm](https://brahmstorm.com/blog/suno-genre-blending-prompts-that-actually-work/) | 🟡 adopted in r55 |
-| **v6 follows the Style field more literally than v5.5** | most guides | 🟡 consistent with our r53 pivot to Style Influence 80 |
+| **v6 follows the Style field more literally than v5.5** | most guides | 🟡 consistent with Camping's r53 pivot to Style Influence 80 |
 
 🔴 **What nobody publishes:** any measured relationship between a setting and *vocal delivery
 speed*. Every "make it faster" tip is prompt wording. Our own measurement (r48, onsets/sec) is
@@ -641,12 +649,12 @@ you.** Five ways out, best first for us:
 1. **Name the production techniques, not the genre.** For a niche genre the name alone gives a
    passable average. What landed was the *mechanics* — e.g. *"hardstyle kick, pitched down one
    octave on drop impact; breakbeat chops; supersaw chord burst, hard cut; FM bass growl, sub
-   drop"*. ✅ **This is already our D&B rule** (§9: name the drum mechanics, not the sub-genre) —
+   drop"*. ✅ **This is already §9's D&B finding** (name the drum mechanics, not the sub-genre) —
    now with a second, independent v6 data point.
 2. **Combine songs.** Make two unrelated songs, drag both into Simple, *"Combine these songs."*
 3. **Wild first, then Cover into v6.** Wild is worse on fidelity and mix but more creative; once
    a Wild take has the idea, **Advanced → Cover on v6 at Weirdness 0, Audio Influence 80** — "the
-   same melody and the same idea, just made it sound better." ✅ Matches our §1 ruling-in-waiting;
+   same melody and the same idea, just made it sound better." ✅ Matches §1's Wild-then-Cover option;
    now with numbers.
 4. **High weirdness as a quarry.** Generate at very high weirdness, then **Sample** or **Cover**
    the bit you like (§5 "sample just that bit").
@@ -667,8 +675,8 @@ you.** Five ways out, best first for us:
     it sounds much better." The community "100 glitches, use 80–96" rule is **v5.5 advice**.
   - **Weirdness 100 no longer glitches** — "doesn't sound like glitches to me." Moe Lueker
     (2026-09-19) still says >90 risks artifacts, so: **reported both ways; test before relying.**
-  - For us: our narrator Voice may now hold at a much higher Audio Influence than our house
-    settings assume — a one-variable test, not a re-template (§12 test 6).
+  - For a story with a saved narrator Voice (GPOM's): it may now hold at a much higher Audio
+    Influence than that story's settings assume — a one-variable test, not a re-template (§12 test 6).
 
 **🆕 Counter-evidence from the 2026-10-14 sweep — hold §8c's quality claims loosely:**
 - 🔴 **Max Mode heard as static.** The Mix University (2026-10-02) heard crackle on **every** Max
@@ -688,16 +696,19 @@ log every credit), and the training-set explanation (speculation — §1).
 
 ## 9. Vocals and drum & bass
 
+*D&B is here because GPOM's and Camping's tracks are D&B, so that's where our tests are — a genre
+we have worked in, not a default. A story's genre is in its `sound.md`.*
+
 - **Duets:** explicit `Male vocal` / `Female vocal` under section tags gave a real alternating
   duet; "male and female" in a Simple style also worked. Still no duet control — our "cut on the
   seam" rule stands. **Vocal Gender** is now a first-class control.
 - **Accents:** rock still defaults to a country/southern vocal (3/3, even with Max Mode); the fix
-  was custom model + Voice. **No UK-accent evidence of any kind** — our narrator needs our own
-  test. Our rule that nationality rides on the genre tag stays in force until tested.
+  was custom model + Voice. **No UK-accent evidence of any kind** — any British voice needs our own
+  test. The v5.5 finding that nationality rides on the genre tag (`suno-voices.md`) stands until tested.
 - **Speech / narration:** 🆕 **Suno shipped a dedicated Speech model on 2026-10-01 — see §1b.**
-  It does natively what our GPOM narration template forces the song model to do, but warns of
-  British→Australian accent drift and has no saved Voice. Until tested, the house template in
-  `docs/stories/gitpush-origin-master/songs/narration.md` stands. Other lever still untested: a
+  It does natively what GPOM's narration template forces the song model to do, but warns of
+  British→Australian accent drift and has no saved Voice. Until tested, GPOM keeps its template in
+  `docs/stories/gitpush-origin-master/songs/narration.md`. Other lever still untested: a
   **Studio vocal track** from typed lyrics.
 - **D&B:** a lazy `liquid DnB` prompt came back as **two-step drums** ("that does not sound like
   D&B"); an **engineered** breakcore/jungle prompt worked on both models — *"aggressive breakcore
@@ -728,7 +739,7 @@ needs our own run at 170–175.
 ### 🆕 Drums and D&B on v6 Wild and Sounds
 
 - **Wild + "<instrument> only" returns just that instrument**; v6 adds a band (tested, 2026-09-14).
-  For us: v6-wild, Variety Off, `170bpm, chopped breakbeat drums only`. **No genre word** — "J-POP
+  For a D&B drum bed, e.g.: v6-wild, Variety Off, `170bpm, chopped breakbeat drums only`. **No genre word** — "J-POP
   bass only" still gave a full J-pop track.
 - **Wild keeps uploaded drum rhythms that v6 normalises** (tested): an odd-meter home-made break
   Extended on Wild kept its pattern; v6 lost the time signature. Then **Cover** the Wild result to
@@ -799,7 +810,7 @@ logged before and after.
 
 0. 🆕🔑 **Speech (beta) on one GPOM narration scene** (added 2026-10-14). Speech → Advanced.
    Script = the scene atom's words as **plain paragraphs, no tags**. **One** style box = the
-   narrator clause **plus** the house score clause, plain sentences, no brackets. Vocal Gender
+   GPOM narrator clause **plus** GPOM's score clause, plain sentences, no brackets. Vocal Gender
    Male, Variety **Exact style**. Listen for, in order: **UK accent holding** (Suno warns it
    drifts to Australian; two testers' British requests failed), words matching the script (diff
    it), pause length, the last two seconds, singing drift. If a single word is wrong, try the
@@ -821,11 +832,12 @@ logged before and after.
 4. **The kazoo check** *(optional, confirms the 2026-09-10 ruling)* — put an absurd profile in My
    Taste ("only kazoos and yodelling"), generate one plain pair with Personalize **off**. No kazoos
    = the profile is kept out, and the box's contents stop mattering entirely.
-5. **Our D&B on v6 vs Wild** — grid round R1 (`automation.md` §9).
-6. **The narrator Voice on v6 and Wild** — quiet-section timbre, UK accent, sibilance. 🆕 Add
+5. **A D&B sheet (Camping's) on v6 vs Wild** — grid round R1 (`automation.md` §9).
+6. **GPOM's narrator Voice on v6 and Wild** — quiet-section timbre, UK accent, sibilance. 🆕 Add
    one cell at **Audio Influence 100** (§8c says v6 now holds character there).
 7. **Variety** — does it change how far apart the two takes are? *(ChillPanic, by ear: on = it
-   ignores the prompt. Our Off ruling stands either way.)*
+   ignores the prompt. Off for refining a liked take stands either way; an exploring round may
+   choose Variety per prompt — `same-song-traps.md` trap 10.)*
 8. **Max Mode** — 🆕 run it as ChillPanic's **polish Cover**: Camping's accepted take → Cover,
    Max Mode on, Style empty, Weirdness 0, Style Influence 100, Audio Influence 100. Better than
    the source? Log the credit delta (reported 2×).

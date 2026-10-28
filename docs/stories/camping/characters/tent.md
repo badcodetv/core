@@ -15,7 +15,7 @@ Tarquin's wake-up view in Scene 10 are the **same shot from inside this tent**,
 so the two men read as one position before anyone says it. Treat it as a
 character: **the same tent in every appearance.**
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (Camping's look: hyper-realistic documentary photography — [`../look.md`](../look.md))
 
 - **⚠️ Corrected 2026-08-26 from the plate: the tent is BLUE and grey, not green.** The
   existing Waitrose car-park plate

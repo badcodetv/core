@@ -82,7 +82,7 @@ Keep the extra shadow precision in the *master*. Convert on the way out.
 
 ---
 
-## 🔴 Near-black — why our register is the hardest case to deliver
+## 🔴 Near-black — why a near-black look (GPOM's, for one) is the hardest case to deliver
 
 From the 2026-08-26 cinematography sweep, brief 20. Craft side lives in
 [`../cinematography/`](../cinematography/README.md); the delivery side is here.
@@ -101,7 +101,7 @@ masking the steps. Never denoise a near-black sequence on the way out.
 
 **Compression punishes near-black structurally.** Encoders spend bits where rate-distortion maths
 says they matter, and dark, low-contrast, low-detail regions are exactly where they spend least —
-which is our entire frame. **A (mixed)** — the principle is engineering fact; which artifact
+which is most of a near-black frame. **A (mixed)** — the principle is engineering fact; which artifact
 dominates (banding vs blocking) depends on codec and bitrate.
 
 **Crushing and lifting are opposite and both destructive applied blind.** Crushing discards
@@ -139,8 +139,8 @@ Not yet implemented — this is the list, from brief 20:
 🔴 **Every platform re-encodes what you upload.** `ffprobe` and `signalstats` prove your file is
 correct; they prove nothing about the transcode that actually reaches a viewer.
 
-That re-encode hurts BadCode's material more than most: heavy compression bakes banding into
-exactly the low-entropy near-black gradients the whole look is made of. The defence is to give
+That re-encode hurts a near-black film more than most: heavy compression bakes banding into
+exactly the low-entropy near-black gradients such a look is made of. The defence is to give
 the encoder something to chew on — a light dither/grain pass before delivery:
 
 ```bash

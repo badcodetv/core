@@ -98,11 +98,11 @@ named place, plus an explicit statement of where the falloff goes, is.
 **Three-point lighting is a teaching diagram.** Working DPs routinely drop the fill entirely and
 let one side go dark.
 
-**🔴 One bright anchor inside the darkness, always.** The visual system computes how dark
+**🔴 In a dark frame, one bright anchor inside the darkness, always.** The visual system computes how dark
 something is relative to the brightest region it can group into the same scene. With no anchor
 there is nothing to normalise against, and near-black reads as a broken file rather than as
 chosen darkness. A rim, a practical, a screen, an eye-light. *(principle 11 — the most
-load-bearing rule we have)*
+load-bearing rule for any dark look; GPOM's `look.md` makes it a rule)*
 
 **Rim light and silhouette** are how a dark subject stays readable against a dark background:
 separate by edge, never by lifting the whole frame.

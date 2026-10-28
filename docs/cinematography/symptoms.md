@@ -71,7 +71,7 @@ BadCode work.
 | --- | --- | --- |
 | 🔴 "It looks impressive but I feel weird about it" | **The aspirational-reading risk.** Monumental grammar with no visible cost reads as celebration of the power it means to indict | Gate 2: put a cost in frame — wreckage, exhaustion, a body that failed, someone the system is failing *(principle 23)*. **This is the check to run before anything monumental ships** |
 | "It feels like it's showing off" | Awe reached for without accommodation — the frame explains itself instantly | Withhold. Slow the reveal. Let the viewer's understanding lag the image *(principle 25)* |
-| "It feels cold / I don't care about anyone" | The register is doing scale when the beat needed a person | Ruling R2 — spend a tight human-scale frame here, deliberately, as the exception |
+| "It feels cold / I don't care about anyone" | The register is doing scale when the beat needed a person | Ruling R2 — spend a tight human-scale frame here, deliberately; in a monumental look (GPOM's) it is the exception, and the story's `look.md` says which is the default |
 | "It's preachy" | The image is being explained — by a caption, a line, or a narrator naming what the object represents | An objective correlative dies the moment anyone says what it means. The moral is never stated; the beneficiary always is |
 | "The motif isn't landing" | One or two occurrences, or three too faint to recognise at a glance | Three occurrences, composed to rhyme hard enough to be clocked instantly. Two is a coincidence |
 | "The ending doesn't tie back" | No bookend | Repeat or invert the opening composition as the closing one, and let the difference carry the theme. Highest value, lowest cost structure we have |

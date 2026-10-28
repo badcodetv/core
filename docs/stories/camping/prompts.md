@@ -3775,7 +3775,7 @@ Thanks.
 > the street rather than just catching the doorway's mouth, and one man's face reads in profile
 > against the constraint. Kept: the warmth is motivated by a real sodium lamp rather than invented,
 > and it is the only light in frame. Worth knowing against
-> [`style.md`](./style.md)'s warmth budget, which does not list this scene.
+> [`look.md`](./look.md)'s warmth budget, which does not list this scene.
 
 ---
 
@@ -3818,7 +3818,7 @@ Thanks.
 
 > ## ⚠️ Canon changed here — 5d has no still of its own
 >
-> [`style.md`](./style.md) rules that *"faces do the emotional work in stillness — the Scene 5
+> [`look.md`](./look.md) rules that *"faces do the emotional work in stillness — the Scene 5
 > smile-fade is a held shot, not an animation"*, and the
 > [chains table](./shot-list.md) had 5c and 5d as a matched pair of stills cut together.
 > **Jack overrode that on 2026-08-26 and animated the fade instead**, from the 5c plate. It
@@ -3861,7 +3861,7 @@ Two canon corrections came out of it, both cases of **the asset beating the spec
   already existed, so the plate wins.
 - **✅ The Waitrose name is on the sign, readable.** This was an open call; the plate settles it.
   The scene-10 **W-AI-trose** gag needs the fascia established here or the payoff has nothing to
-  land on. Recorded in [`style.md`](./style.md).
+  land on. Recorded in [`look.md`](./look.md).
 
 ⚠️ **The plate itself is closer to 8a than 6a** — it has the X8 already parked beside the tent,
 from a high angle over wet tarmac, which is 8a's description almost word for word. Bank it there.
@@ -4074,7 +4074,7 @@ Thanks.
 
 - **The therapist is a man** — grey-haired, soft beige jacket over a blue shirt, seen from behind
   in the near foreground. Canon never specified a gender; the frame decided it. Recorded in
-  [`style.md`](./style.md), and it matters because 7b is his shot.
+  [`look.md`](./look.md), and it matters because 7b is his shot.
 - **Tarquin's leisure wardrobe is now locked** in
   [`characters/tarquin.md`](./characters/tarquin.md) — jeans, cashmere roll-neck, gilet zipped
   indoors, suede loafers, no socks. **Posh, not flash.** Salmon cords were tried first and tipped
@@ -4150,7 +4150,7 @@ Thanks.
 
 **One canon change came out of this frame:**
 
-- **The therapist's face is now held on screen.** [`style.md`](./style.md) ruled on 2026-08-26
+- **The therapist's face is now held on screen.** [`look.md`](./look.md) ruled on 2026-08-26
   that he is *"only ever seen from behind or in lost profile, so no second face has to be
   held."* **Amended the same day: 7b holds it, and only 7b.** The verdict is funnier delivered
   by a face, and the continuity cost is nil because he never appears again — one shot, one
@@ -4185,7 +4185,7 @@ story one — *"Tarquin looks too similar to the therapist."* Two middle-aged wh
 at the temples, in a warm-neutral room, in reverse angles of each other, read as one man twice.
 Recasting is the cheapest fix and costs the story nothing: canon never specified a gender
 (see [`story.md`](./story.md#scene-7--therapy)), the 2026-08-26 ruling in
-[`style.md`](./style.md) was read off the accepted 7a frame rather than decided.
+[`look.md`](./look.md) was read off the accepted 7a frame rather than decided.
 
 > ### 🔴 What this costs
 >
@@ -10100,7 +10100,7 @@ touch either until `12a` is accepted; both jobs are cheaper once the harder ques
 
 **Gate 1.** The beat is that the class distance has closed. **So the frame must argue they are the
 same now, and the way to argue it is with light: one source, reaching both faces identically.**
-[`style.md`](./style.md) already says this fire is *"the one earned human warmth, the heat the
+[`look.md`](./look.md) already says this fire is *"the one earned human warmth, the heat the
 whole story withheld, shared between the two men at the end."* **The shot is that sentence.**
 
 **Four changes from the reference, each fixing a named slop tell:**
@@ -10405,7 +10405,7 @@ are there because `12a` just showed them.
 
 #### 🔒 Camera: locked, and angled DOWN — because `12d` is the film's last camera move
 
-**This is a structural constraint, not a preference.** [`style.md`](./style.md) has the ending as
+**This is a structural constraint, not a preference.** [`look.md`](./look.md) has the ending as
 *"the newspaper burns, the camera pans up, the rising embers become the bad code."* The motion
 budget says a single move in a still body of work lands with outsized force **and only if the
 stillness around it is real** — so **the tilt-up is spent once, in `12d`, and `12c` is locked.**
@@ -10526,7 +10526,7 @@ whole reason it is a move and not a cut: we are carried from the men to the mach
 feel ourselves leaving them.
 
 **Gate 3.** Two named sources, and they are the film's palette in one gesture: **the fire from
-below, warm, the only earned heat in the story** ([`style.md`](./style.md)), and **the storm sky
+below, warm, the only earned heat in the story** ([`look.md`](./look.md)), and **the storm sky
 above, cold blue, the lightning that has been receding since `12a`.** The tilt travels warm to
 cool. That is the argument.
 

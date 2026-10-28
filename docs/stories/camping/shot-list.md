@@ -108,7 +108,7 @@
 - [x] **5a — the wank tank leaves the Shard.** Still and clip accepted 2026-08-26, three rounds each.
 - [x] **5b — through the glass.** Still and clip accepted 2026-08-26.
 - [x] **5c/5d.** Accepted 2026-08-26. ⚠️ **5d was animated from the 5c plate, not shot as a
-      second still** — overriding `style.md`. One plate, two clips; 5d ran on Veo 3.1 Fast.
+      second still** — overriding `look.md`. One plate, two clips; 5d ran on Veo 3.1 Fast.
 - [x] **6a — first sight of the tent.** Still and clip accepted 2026-08-26, anchored on the plate.
 - [x] **6b — the three reactions.** Still and clip accepted 2026-08-26.
 - [x] **6c — the POV lock.** 🔒 Still and clip accepted 2026-08-26, derived from the scene-8 tent
@@ -443,7 +443,7 @@ and [`1m-t` was proposed as a replacement for `1m-6`](#).
 - **7a The consulting room** — Tarquin on the couch, genuinely baffled. *"What is this… feeling?"* Play it for comedy.
 - **7d The therapist, close** — she explains what a feeling is, at the speed you would use on a child. **⬜ Written 2026-09-09, unshot.** Over his shoulder, she looks frame-left, the window behind camera lights her.
 - **7e Tarquin, close — the button** — his eyes slide off her mid-sentence and come back a beat too late. *Confused, and not listening* — Jack revised the beat 2026-09-09. **✅ Still shot 2026-09-09** (round 2 — round 1 used the 7c wide as a reference and lost his face). Clip `7e-y` written. Over her shoulder, he looks frame-right, the window blown out at the left edge. *He has no light and no answer; she has both.*
-- **7c The two-shot — now the establisher** — both of them, side-on, and the width of empty rug between them. **✅ Still shot 2026-09-09, round 1. Clips `7c-y` / `7c-y2` written, parked** — she waits for it to land, he does not get there, and the shot ends on her drawing breath to start again. The therapist is now a woman ([`style.md`](./style.md)); this frame carries the whole of Scene 7 on its own. Prompt in [`prompts.md`](./prompts.md#7c--the-two-shot--still---not-yet-shot).
+- **7c The two-shot — now the establisher** — both of them, side-on, and the width of empty rug between them. **✅ Still shot 2026-09-09, round 1. Clips `7c-y` / `7c-y2` written, parked** — she waits for it to land, he does not get there, and the shot ends on her drawing breath to start again. The therapist is now a woman ([`look.md`](./look.md)); this frame carries the whole of Scene 7 on its own. Prompt in [`prompts.md`](./prompts.md#7c--the-two-shot--still---not-yet-shot).
 - **7b The therapist's verdict** — *"You need the most powerful psychedelic known to man."* Keep the punchline exactly. 🔴 **Dead 2026-09-09 — the therapist recast female.** *(Was: ✅ Shot 2026-08-26.)* Camera at couch height, the therapist alone in the room with Tarquin's crossed ankles in the foreground; the verdict is delivered **straight down the lens** — the film's one direct address. See [`prompts.md`](./prompts.md#7b--the-therapists-verdict--still--accepted).
 - **8a The wank tank swings in beside the tent** — straddling two bays. *"Two parking spaces. For that."*
 - **8b The two men lock eyes.**
@@ -815,7 +815,7 @@ Three places where a later shot is *made from* an earlier one. Break the chain a
 | --- | --- | --- |
 | **1a** 2008 skyline | **4a** 2026 skyline | Edit the tower out, the Shard in. One local change on an unchanged frame. Never a fresh generation. |
 | **6c** Bob's tent POV | **10a** Tarquin's wake-up | Identical framing — door-flap letterbox, low horizon. Only the world outside changes. **✅ Locked 2026-08-26 by inheritance, not description**: 6c was generated from the scene-8 tent frame with only the view through the doorway changed, and 10a must be generated from 6c the same way. The foreground body becomes Tarquin's. |
-| ~~**5c** Tarquin chuckling → **5d** the smile fades~~ | — | **Chain dissolved 2026-08-26.** It was to be two stills and a cut, per [`style.md`](./style.md). Jack animated the fade from the 5c plate instead and it held, so **5d has no still** and there is nothing to match. Run on Veo 3.1 Fast — a changing face on a non-static shot is where Omni loses it. |
+| ~~**5c** Tarquin chuckling → **5d** the smile fades~~ | — | **Chain dissolved 2026-08-26.** It was to be two stills and a cut, per [`look.md`](./look.md). Jack animated the fade from the 5c plate instead and it held, so **5d has no still** and there is nothing to match. Run on Veo 3.1 Fast — a changing face on a non-static shot is where Omni loses it. |
 | **1b** the planted paper *(inside the trading floor)* | **11b → 12c** hand-off, then kindling | **The callback is the newspaper as an image, not the same physical object** *(ruled 2026-08-25)* — the plant is 2008 and 11c's paper has to date to 2031, so one object could never do both. Plant it unremarked; a man behind a paper is the whole rhyme. **The plant lives inside 1b** *(ruled 2026-08-26)* — it was never worth its own shot. |
 
 ## Standing rules for every shot

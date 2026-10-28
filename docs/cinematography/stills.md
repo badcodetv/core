@@ -84,8 +84,8 @@ We generate several options and pick one. The questions, in order:
 1. **Is there an unresolved question in it?** If not, reject regardless of quality.
 2. **Do geometry and event arrive together?** The decisive-moment test.
 3. **Are there separated depth layers?** *(→ [`frame.md`](./frame.md) §1)*
-4. **Is there one bright anchor in the darkness?** *(→ principle 11)*
-5. **Is there a visible cost?** For anything monumental. *(→ [`registers.md`](./registers.md))*
+4. **If the frame is dark: is there one bright anchor in the darkness?** *(→ principle 11)*
+5. **If the frame is monumental: is there a visible cost?** *(→ [`registers.md`](./registers.md); GPOM's `look.md` makes both rules)*
 6. **What does the caption have left to say?** If the answer is "describe this", the frame is
    doing the caption's job and one of them is redundant.
 

@@ -47,7 +47,7 @@ He doesn't say no. He says *"it's not really falsifiable, is it,"* and slides th
 proposal an inch back across the table, and asks kindly how her contract's
 looking.
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (drafted 2026-08-06 against the retired house style; a description, not a ruling on the look — see [`../look.md`](../look.md))
 
 - 60s, long-faced, fine-featured, immaculately groomed. The face of a man who has
   been listened to for a very long time. Reading glasses. Soft hands.

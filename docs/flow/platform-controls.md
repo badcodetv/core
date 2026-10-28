@@ -29,8 +29,8 @@ Both aspect ratios (16:9, 9:16) everywhere it is supported at all. Google's foot
 the public image-to-video board, and in a live A/B on a BadCode plate that lead produced **no
 measurable quality gain** — detail retention was a tie and identity held equally. `Veo 3.1 Fast`
 remains the `flow_generate_video` default. Evidence, bounds and the numbers:
-[`video-prompting.md`](./video-prompting.md) §3, *Leaderboard rank does not transfer to our
-register*. Omni Flash also ignored `count` in that run (returned 1 of 2, `partial: true`).
+[`video-prompting.md`](./video-prompting.md) §3, *Leaderboard rank does not transfer to a dark,
+single-source look*. Omni Flash also ignored `count` in that run (returned 1 of 2, `partial: true`).
 
 ### The three rows that change how we work
 

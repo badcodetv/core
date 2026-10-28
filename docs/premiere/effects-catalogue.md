@@ -55,9 +55,9 @@ Lumetri's readable parameter indices are tabulated in [`api-notes.md`](./api-not
 19, Contrast 20, Saturation 16, Temperature 14. **33 of its 130 params cannot be read by any route**
 but can still be written.
 
-### The BadCode near-black register
+### A near-black register (GPOM's look)
 
-The look is near-black, one thin light, monumental. These are the tools that get there.
+GPOM's look (its `docs/stories/gitpush-origin-master/look.md`) is near-black, one thin light, monumental. These are the tools that get there.
 
 | Want | Effect | Match name |
 | --- | --- | --- |

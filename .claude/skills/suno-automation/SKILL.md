@@ -9,9 +9,10 @@ description: Use when DRIVING Suno from code rather than by hand — loading a s
 nothing about what the sheet should say.
 
 🛑 **An exploring round (new voices, new sounds, "experiment") runs ONLY through
-`python3 scripts/suno/sealed-round.py write <dir>` then `run <dir> <title> --yes`** — never `pair`,
-`grid` or `load` on prompts this session wrote or retyped. `run` refuses a round edited after its
-gate. Why, and every trap it guards: [`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)
+the `variations` skill** (`scripts/variations/round.py`: separate writer subagents, a sameness gate,
+then `round.py run <dir> <title> --yes`) — never `pair`, `grid` or `load` on prompts this session
+wrote or retyped. `run` refuses a round edited after its gate. What a song should sound like comes
+only from the story's `docs/stories/<story>/sound.md`. Why, and every trap it guards: [`docs/suno-gpt/same-song-traps.md`](../../../docs/suno-gpt/same-song-traps.md)
 (Jack, 2026-10-24: *"i do not want the same mistakes made over and over"*).
 
 ## What this is not

@@ -63,7 +63,7 @@ most powerful psychedelic known to man* — sends him to the Welsh retreat. Five
 years later he wakes up in Bob's tent, and the man he sneered at is the one who
 shows him kindness. He is not a villain to be punished — he is us, mistaken.
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (Camping's look: hyper-realistic documentary photography — [`../look.md`](../look.md))
 
 Anchor character — **every scene he appears in must read as the same man.** Lock
 these:

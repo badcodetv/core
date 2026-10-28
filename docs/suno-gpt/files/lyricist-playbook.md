@@ -155,7 +155,7 @@ model and produce inconsistent results; a tag on every line is counterproductive
 > as a cause — but cue overload is no longer only asserted, and **a tempo fault is now a reason to
 > strip cues before trying anything else.** ([`../suno-voices.md`](../suno-voices.md) Thread 4 §4.)
 
-> ⚠️ **This contradicts BadCode house practice.** Our tracks use very long multi-clause bracket cues
+> ⚠️ **This contradicts what GPOM's and Camping's sheets did.** Those tracks use very long multi-clause bracket cues
 > (six to eight directions in one header). Those cues have produced takes we liked, so this is not a
 > reason to rewrite them — but if a heavily-cued section keeps ignoring its own directions,
 > *cue overload is now a named suspect*, and the test is to cut the header to its three most

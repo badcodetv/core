@@ -31,7 +31,7 @@ that ended one world and started another, and it looks like a bit of plumbing.
   framing of beat 2. The last thing the story does is put the audience in
   Cremonini's chair and make them decide.
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (drafted 2026-08-06 against the retired house style; a description, not a ruling on the look — see [`../look.md`](../look.md))
 
 - About 18 inches. A tapered wooden tube wrapped in worn brown leather, brass
   fittings at both ends, tooled gilt decoration mostly rubbed away. Fingerprints

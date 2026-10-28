@@ -109,5 +109,5 @@ was not reached.
 - **Nothing here has been tested on BadCode work.** Brief 17's visible-cost checklist in
   particular has never been run against a shipped frame. Its own recommendation is to try it on
   three or four before it becomes doctrine.
-- **No evidence exists either way on our actual reader.** Neither our register nor social realism
+- **No evidence exists either way on our actual reader.** Neither GPOM's monumental look nor social realism
   has been measured on a working-class UK audience. See `principles.md` §R1.

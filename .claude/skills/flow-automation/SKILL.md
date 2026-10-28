@@ -18,7 +18,7 @@ guidance drifts.
 | **Driving it** | **this skill** | Why did the call fail? What tool? How do I not spend credits twice? |
 | **Designing the shot** | `shot-craft` | What should this shot BE? |
 | **Writing for it** | `flow-prompt` | What words go in the box? |
-| **The BadCode look** | `new-image` | What should it look like? |
+| **The story's look** | `docs/stories/<story>/look.md` | What should it look like? |
 
 If you are choosing adjectives, you are in the wrong skill.
 
@@ -464,7 +464,7 @@ scripts/video-contact-sheet.sh clip.mp4              # every frame at 4fps, one 
 REGION=left scripts/video-contact-sheet.sh clip.mp4  # crop a band + lift exposure
 ```
 
-Near-black BadCode frames hide motion at full-frame scale — use `REGION` when the suspect
+Near-black frames (GPOM's look) hide motion at full-frame scale — use `REGION` when the suspect
 detail is small or dark.
 
 🔴 **A camera-only move on a still is not a Flow job.** If nothing in the world actually moves,

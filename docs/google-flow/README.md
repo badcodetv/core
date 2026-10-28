@@ -3,16 +3,18 @@
 **What this folder is:** everything we know about the *models* Google Flow runs on, and how to
 drive them well. Volatile, versioned knowledge with a shelf life measured in months.
 
-**What this folder is not:** the BadCode visual identity. That lives in
-`.claude/skills/new-image/SKILL.md` (moved there from `badcode-art-direction`, 2026-10-23) and it is deliberately model-agnostic — the 35mm
-house style, the calibration list against the generic AI-comic look, the Flow Character casting
-rules, and the usage-policy rewrite table do not change when Google ships a new engine.
+**What this folder is not:** any story's look. There is no BadCode house look (Kai, 2026-10-28;
+[`../stories/STYLE.md`](../stories/STYLE.md)): each story's palette, light, preambles and anchors live
+in `docs/stories/<story>/look.md`. The model-agnostic method — the calibration list against the
+generic AI-comic look, the Flow Character casting rules, the usage-policy rewrite table — lives in
+`.claude/skills/new-image/SKILL.md` (moved there from `badcode-art-direction`, 2026-10-23) and does
+not change when Google ships a new engine.
 
 The split, and why it matters:
 
 | Question | Lives in |
 | --- | --- |
-| What does a BadCode still look like? | `new-image` (stable) |
+| What does this story's still look like? | `docs/stories/<story>/look.md` (no house look) |
 | How do I make *this engine* do that? | here (refreshed per model version) |
 | How do I drive the browser? | `docs/superpowers/flow-selectors.md`, `flow-video.md` |
 

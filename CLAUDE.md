@@ -31,7 +31,7 @@ BadCode is two people: **Kai** (main developer) and **Jack** (lead creative desi
 of them may be the person driving a session here.
 
 BadCode is an art collective. It releases **stories** (presented as comics on this website) and
-**music** (drum & bass) to put political and economic ideas into people's heads. The bet is
+**music** to put political and economic ideas into people's heads. The bet is
 simple: people remember a *story* and absorb a *song* in a way they never absorb an essay.
 
 The framing is fictional and we lean into it: **BadCode is a superintelligence from the future.**
@@ -54,6 +54,19 @@ The core message, stated or implied in everything: *humans, please don't make th
 - **Story over sermon.** Encode the point in metaphor, character, and a punchline — don't lecture.
 
 Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story copy, match this.
+The voice is the narrator's *words*: it says nothing about how a song sounds or a picture looks.
+
+## There is no house style (Kai, 2026-10-28)
+
+BadCode has a narrator's voice and a logo. **It has no sound and no look of its own.** Every story
+finds its own and writes it in its own folder: **`docs/stories/<story>/look.md`** (stills and clips)
+and **`docs/stories/<story>/sound.md`** (songs and voices). **Before any Suno, voice or Flow prompt,
+read the story's file**; if it is empty or exploring, run the `variations` skill instead of inventing
+a default. Consistency inside a story is wanted; across stories it is not. A genre, palette,
+register, preamble, voice or slider value never goes in this file, in memory or in a skill's
+description: those load into every session, and that is how one story's style became every story's
+(400+ Bank Robbery takes in one voice; every story's images in GPOM's dark register). Rules and templates:
+[`docs/stories/STYLE.md`](./docs/stories/STYLE.md). Check: `python3 scripts/style-lint.py`.
 
 ## Repo map
 
@@ -61,15 +74,15 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | --- | --- | --- |
 | `docs/` | Vision, voice, story bible, method — sections indexed in [`docs/README.md`](./docs/README.md) | …you need context |
 | `docs/brand/` | 🔴 **THE LOGO** — a thin ring with an off-centre **red triangle** (toward 2 o'clock, rounded corners); the name `badcode` in round **drawn** lowercase (no typeface — always these letters) whose **o is a solid red circle** — ruled THE logo by Kai 2026-10-19 (bench "Saved version 5", ring 15%). **Every logo file is in [`docs/brand/logo/`](./docs/brand/logo/)**; the settings, rules and file list are in [`docs/brand/README.md`](./docs/brand/README.md); regenerate with `node scripts/brand/build-logo.mjs`, never hand-edit an SVG. **The logo was designed on the logo bench artifact — https://claude.ai/artifact/4Tf8nXY8RmRokTevDQ7cWe** (sliders + live proofs; Kai's saves sit in its db collection `saves`, read with ArtifactData; save `2f6bogo164mzzi4lzz00` ("Saved version 5") is the official logo; the bench has a Triangle / Dot switch). To change the logo: tune and save on the bench, copy that save's numbers into `SET` in the build script, re-run. The previous logos — the ring-with-dot (2026-09-29) and the curly brace — are archived in `docs/brand/archive/` | …you need the logo, a favicon or a profile picture, or you're changing the logo |
-| `docs/stories/` | Committed stories — one canon folder per story (`stories/<story>/`: concept, characters, beats, songs) — source of truth | …we've committed to making it, or you're producing a story's media |
+| `docs/stories/` | Committed stories — one canon folder per story (`stories/<story>/`: concept, characters, beats, songs, **`look.md` + `sound.md`**) — source of truth | …we've committed to making it, or you're producing a story's media |
 | `docs/ideas/` | The idea inbox — raw ideas (minimal prose) before they become stories | …you have a new idea to park, or want to develop one |
 | `docs/marketing/` | Marketing & release plans — reaching people, not making the thing. 🔑 **Start at [`chief-of-staff/`](./docs/marketing/chief-of-staff/README.md)** (the plan — what's next and what we're not doing, no dates — + the board); live board: https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9 | …it's a channel/campaign/launch plan, or you need to know what ships next |
 | `docs/marketing/social-media-accounts.md` | 📱 **Our social media accounts** — every platform (YouTube, Facebook, TikTok, Instagram, SoundCloud…), the handle each uses, which are open and which are still to make. All sign in with badcode.tv@gmail.com; one shared password (ask Jack) | …you need an account, a handle or a link, or you just opened one |
 | `docs/provenance/` | 🧾 **How every piece of a film was made**: a recipe card per generated file (`cards/` mirrors `D:\badcode-videos\`), each scene's `trail.json` of published pages and notes, and `final.json` per finished cut. Tool: `scripts/provenance/prov.py` (`card` / `trail` / `check` / `freeze`) | …you just generated or published something, a cut is done, or a better model came out |
 | `docs/misc/` | Catch-all for what fits nowhere else | …in doubt |
-| `docs/suno-gpt/` | Suno toolkit — **🛑 Exploring a new voice or sound? You do not write the prompts: run `scripts/suno/sealed-round.py` and read [`same-song-traps.md`](./docs/suno-gpt/same-song-traps.md) first — the repo's own Suno rules are what made 400+ Bank Robbery takes one voice (Jack, 2026-10-24).** **🔑 All new Suno work is v6, in the new UI (v5.5 retired 2026-09-09, archived in `docs/suno-gpt/archive/v5.5-era.md`): [`files/suno-v6.md`](./docs/suno-gpt/files/suno-v6.md) wins on any model/control question, and its §3 is the ladder for fixing one word / one bar without regenerating** — prompting (operating procedure + reference files) **and** [`automation.md`](./docs/suno-gpt/automation.md), the create-page DOM map + the five silent traps + the pair/naming/workspace/no-download protocol | …you're turning a song idea into a Suno prompt, or driving Suno from code |
+| `docs/suno-gpt/` | Suno **engine manual** (how Suno behaves; what a song sounds like is the story's `sound.md`) — **🛑 Exploring a new voice or sound? You do not write the prompts: run the `variations` skill, and read [`same-song-traps.md`](./docs/suno-gpt/same-song-traps.md) — 400+ Bank Robbery takes came out one voice (Jack, 2026-10-24).** **🔑 All new Suno work is v6, in the new UI (v5.5 retired 2026-09-09, archived in `docs/suno-gpt/archive/v5.5-era.md`): [`files/suno-v6.md`](./docs/suno-gpt/files/suno-v6.md) wins on any model/control question, and its §3 is the ladder for fixing one word / one bar without regenerating** — prompting (operating procedure + reference files) **and** [`automation.md`](./docs/suno-gpt/automation.md), the create-page DOM map + the five silent traps + the pair/naming/workspace/no-download protocol | …you're turning a song idea into a Suno prompt, or driving Suno from code |
 | `docs/ai-studio/` | Google AI Studio **voice** toolkit — [`README.md`](./docs/ai-studio/README.md): the Composer UI map (Scene / Sample Context / Voice Direction), Google's four-part prompt structure, the **5,000-voice library with an Accent filter** (the docs say 30 — the UI is the truth), the 200+ audio tags, limits and traps. 🔑 **First engine that sounded human on take one** | …you're generating spoken narration, or a voice sounds like AI |
-| `docs/flow/` | Google Flow toolkit (Nano Banana + Veo prompt craft, policy blocks, consistency) | …you're writing or debugging a Flow prompt |
+| `docs/flow/` | Google Flow toolkit (Nano Banana + Veo prompt craft, policy blocks, consistency) — engine craft only; what a story looks like is its `look.md` | …you're writing or debugging a Flow prompt |
 | `docs/google-flow/` | Google Flow **engine behaviour** — evidence-tiered research into what the models (Nano Banana, Omni Flash) actually do, with a refresh protocol. **New engine findings go here** — see [`docs/google-flow/README.md`](./docs/google-flow/README.md). *(⚠ Overlaps `docs/flow/`; the two trees were written independently and a consolidation call is still owed.)* | …a generation came back wrong, or you learned something about an engine |
 | `docs/premiere/` | Premiere Pro bridge — [`recipes.md`](./docs/premiere/recipes.md) (the cookbook), [`effects-catalogue.md`](./docs/premiere/effects-catalogue.md) (every effect installed), [`mogrt-catalogue.md`](./docs/premiere/mogrt-catalogue.md) (the 77 free motion-graphics templates), [`setup.md`](./docs/premiere/setup.md), [`api-notes.md`](./docs/premiere/api-notes.md) | …you're putting anything on a Premiere timeline |
 | `packages/premiere-mcp` | `@badcode/premiere-mcp` — the MCP server + UXP panel that drive Premiere from WSL ([tool reference](./packages/premiere-mcp/README.md)) | …you're changing the bridge itself |
@@ -135,7 +148,8 @@ provenance        under all of it: recipe cards, trail.json, final.json  (docs/p
 | | `find-footage` | real footage we may publish (free-first, £100 a film at most, credits fine) |
 | **Words, ideas, look** | `new-story` | capturing or developing a story's canon |
 | | `new-idea` | parking an idea the moment it pops |
-| | `new-image` | any still in the BadCode look (both registers, variety mode, casting) |
+| | `new-image` | any still: reads the story's `look.md`, variety mode, casting |
+| | `variations` | options that are actually different: separate writers, a sameness gate (Suno or Flow) |
 | **Marketing** | `chief-of-staff` | what's next, gaps, a finished cut, a marketing idea; keeps the board https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9 |
 
 ## Deeper context

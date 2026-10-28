@@ -45,6 +45,10 @@ A hundred years later, there's a statue.
 
 ## Canon
 
+- **[`look.md`](./look.md)** and **[`sound.md`](./sound.md)** — **Karen's look and sound**: the
+  super-8 `STYLE LOCK` and the illustrated register, the cast references; the song's endorsed take, the
+  narrator and character voices. Read before any prompt (there is no house style —
+  [`../STYLE.md`](../STYLE.md)).
 - **[`story.md`](./story.md)** — the spine (key concept, background, devices, twist,
   message) **plus the fixed, beat-by-beat, scene-by-scene
   [storyboard](./story.md#storyboard--scene-by-scene-video-canon)** — Jack's

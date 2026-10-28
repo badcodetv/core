@@ -275,7 +275,7 @@ structure. None are canon-required; take them where they make a scene stronger:
 > Jack produces from. It renders the locked structure above into shots. Narrator
 > lines marked *(draft)* are placeholders in the agreed spirit — improve the
 > words freely; **don't change what the scene does.** Visual reference:
-> [`style.md`](./style.md) + the character files in [`characters/`](./characters/)
+> [`look.md`](./look.md) + the character files in [`characters/`](./characters/)
 > (Bob and Tarquin have Flow sheets + Flow Character records).
 >
 > Production rules that shaped every scene (from the master notes):
@@ -495,10 +495,10 @@ salvage from the retired folders, never in the transcript, and the film ends on 
 | 3 | The crash (wordless) | sound design only |
 | 4 | Shard skyline + "2026" — **edited from the Scene 1 plate**; Shard reference image; Tarquin at the top | mirror Scene 1 framing |
 | 5 | Night drive, homeless streets, the face-drop hold | `characters/wank-tank.md` |
-| 6 | Waitrose car park, tent, tent-POV framing (lock it) | `characters/tent.md`, `style.md` |
+| 6 | Waitrose car park, tent, tent-POV framing (lock it) | `characters/tent.md`, `look.md` |
 | 7 | Consulting room | — |
 | 8 | Car park standoff, two-bay parking | scene 6 location |
-| 9 | Welsh retreat, ceremony fire, water reflection, blink | `style.md` (warmth rules) |
+| 9 | Welsh retreat, ceremony fire, water reflection, blink | `look.md` (warmth rules) |
 | 10 | Ruined car park, tent-POV rhyme (same framing as 6), fire | `characters/tent.md` |
 | 11 | The newspaper prop (date + AI headline) — callback to the Scene 1 plant | scene 1 |
-| 12 | Fire, newspaper burn, ember→bad-code rise | `style.md` |
+| 12 | Fire, newspaper burn, ember→bad-code rise | `look.md` |

@@ -112,7 +112,7 @@ style came out of necessity — raiding the archive to deadline — rather than 
 | **Type** | One face, one weight, one size, all instances. Give it a reason to belong to the world (a period face, a masthead face, a terminal face) rather than a default sans |
 | **Duration** | Appear ~0.5s after the cut so the shot lands first, hold ~1.5–2s, out. Same every time |
 | **Animation** | Pick none or pick one, and never mix. A number that fades in once and slams in once reads as an error |
-| **Contrast** | White-on-black halation slows reading — **A**. On our near-black register, prefer a soft off-white or a knocked-back grey over pure white at large sizes |
+| **Contrast** | White-on-black halation slows reading — **A**. On a near-black look (GPOM's), prefer a soft off-white or a knocked-back grey over pure white at large sizes |
 | **The one break** | A device that never varies can afford to break **once**, at the beat that matters most, and the break must mean something. Twice and there is no device |
 
 ## 🔴 What we can actually build

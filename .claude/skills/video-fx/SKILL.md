@@ -42,7 +42,7 @@ drive anything.
 | How do I make Flow generate it? | `flow-automation` | Browser up, MCP tools, recovering a hung call |
 | What do I write in the Flow prompt? | `flow-prompt` | Veo/Nano Banana platform craft, policy blocks |
 | Does real footage of this exist? | `find-footage` | Sourcing and licence clearance |
-| What should the shot look like? | `new-image` | The BadCode visual register |
+| What should the shot look like? | the story's `look.md` | That story's look (there is no house look) |
 
 ---
 
@@ -99,7 +99,7 @@ delivery gate asserts on. The table is in the ffmpeg catalogue's opening section
 | The ask | Go to |
 | --- | --- |
 | Colour, grade, film look, LUT | effects-catalogue § *Colour and grade* |
-| The BadCode near-black register | effects-catalogue § *The BadCode near-black register*, and recipes § *the BadCode near-black look* |
+| A near-black grade (GPOM's look) | effects-catalogue § *A near-black register (GPOM's look)*, and recipes § *a near-black grade — vignette plus grain* |
 | Glitch, decay, "the transmission is failing" | effects-catalogue § *Glitch, decay* |
 | Blur, focus, depth | effects-catalogue § *Blur and focus* |
 | Push in, pan, reframe, stabilise, retime | effects-catalogue § *Movement, framing, stabilisation*; recipes § *a push-in, a pan, a fade* |
@@ -117,7 +117,7 @@ delivery gate asserts on. The table is in the ffmpeg catalogue's opening section
 
 ---
 
-## Step 3 — The house answer for atmospherics
+## Step 3 — The usual answer for atmospherics
 
 Asked for **fire, smoke, sparks, rain, fog, dust, embers, explosions**:
 
@@ -139,7 +139,7 @@ Freepik — any blog post describing their old CC tiers is stale).
 
 ## Step 4 — 🔴 The delivery gate
 
-**Nothing ships unmeasured.** This is the step that silently ruins near-black films.
+**Nothing ships unmeasured.** This is the step that silently ruins dark films.
 
 ```bash
 scripts/delivery-qc.sh RENDER.mp4 shorts     # youtube · shorts · reels · tiktok
@@ -153,7 +153,7 @@ Read-only, needs only ffmpeg, exits non-zero on a real fault. Reference:
 `camping.mp4` — the finished film — shipped **full-range content with no colour tag at all**
 (`YMIN=0 YMAX=255`, `color_range=unknown`). A player that finds no tag assumes limited range and
 expands 16–235 to 0–255. Applied to content already at 0–255, **everything below 16 flattens to
-black.** BadCode's whole register lives in the shadows, so this is not a subtle grading difference
+black.** Camping and GPOM live in the shadows, so this is not a subtle grading difference
 — it is the picture. It is invisible until you measure it.
 
 ```bash

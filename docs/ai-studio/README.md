@@ -15,6 +15,14 @@ status: 🟢 licence cleared 2026-09-08 — free tier, commercial use, £0, and 
 >
 > Built 2026-09-04 from Google's own docs plus a live session on Jack's Ultra account.
 > Where a claim was only *read*, it is marked ⬜ **unverified**.
+>
+> **Engine facts vs one narrator's rulings (2026-10-28).** There is no BadCode house voice: a
+> story's narrator and character voices live in its `docs/stories/<story>/sound.md`
+> ([`STYLE.md`](../stories/STYLE.md)). Most of the RULED sections below (2026-09-04 → 09-09) were
+> made on **Camping's narrator**, and the 2026-09-30 takes were **GPOM's robot**: the voice, accent,
+> register and Voice Direction they landed on are *that* narrator's, kept here as worked examples.
+> What generalises is the engine behaviour under them (`voice_name` owns timbre, ask for an accent
+> the vendor advertises, name the place never the phonemes, all four fields vote, chunk and check).
 
 ## 🔑 THE HEADLINE (2026-09-04) — it is the first engine that does not sound like AI
 
@@ -33,9 +41,10 @@ human is an *engine* property and no amount of prompting buys it. **We now have 
 (copy an accent) before **Voice Direction prose** (invent one). `voice.md`'s standing finding
 still governs: *every route that works COPIES an accent; none invent one.*
 
-## ✅ THE VOICE LANDED (2026-09-04) — Jack: *"that worked"*
+## ✅ THE VOICE LANDED (2026-09-04, Camping's narrator) — Jack: *"that worked"*
 
-**The winning configuration**, after five rewrites. Change one field at a time from here.
+**The winning configuration for Camping's narrator**, after five rewrites — a worked example, not a
+default. Change one field at a time from here.
 
 | Field | Value |
 |---|---|
@@ -88,7 +97,7 @@ boring."*** ✅ **All three trace to specific clauses, and two of them contradic
 🔑 **`bored` is not the same word as `dry`, and the difference is the whole problem.** Deadpan works
 through **timing and contrast**, not through absence of energy. [`../voice.md`](../voice.md) is
 explicit: *"overtly sarcastic, dark humour, **total authority**… nurturing underneath the snark."*
-**A narrator who cannot be bothered is not in the house voice.** He is enjoying this; he simply
+**A narrator who cannot be bothered is not the narrator `voice.md` describes.** He is enjoying this; he simply
 will not admit it.
 
 ## Where this lane sits
@@ -449,6 +458,9 @@ the one Jack called "spot on" — right accent, right age, right class.**
 
 ### → DESCRIBE IT
 
+*Worked example — Camping's narrator, as briefed on 2026-09-04 (a later ruling dropped the northern
+accent and the phonetics in it). A story's own description goes in its `sound.md`.*
+
 ```
 Timbre and weight: a gravelly voice with real grit and a little smoke in it, worn and lived-in, mid-weight — never boomy, never resonant like an announcer, never a movie trailer. Age: forties. Gender: male. Pitch: mid-range to lower-middle, never a deep bass or a plummy baritone. Pacing: slow and unhurried, around 130 words per minute, ordinary conversational speech with uneven sentence lengths; he leaves gaps and does not rush to fill them, and every full stop is a real stop with a breath in it. Accent: working-class northern English, from Salford in Greater Manchester — hard flat vowels, a short hard "a" in bath and last, drawn out and leaned on and drooping at the ends of words, swallowed consonants, dropped T's and dropped H's. Never Received Pronunciation, never London, never American. Tone: bored, cocky and thoroughly unimpressed, deadpan and certain, with a warmth underneath that he would deny. Delivery quirks: he speaks through his nose with his chin lifted and his jaw pushed forward, a curled lip on every line; his pitch swoops up inside a sentence and drops away at the end of it, never droning and never on one note; he throws every punchline away instead of landing it and never once signals that something is funny.
 ```
@@ -457,7 +469,7 @@ Timbre and weight: a gravelly voice with real grit and a little smoke in it, wor
 
 > *"I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit."*
 
-Flat and amused is the narrator. Any lift, any grandeur, any sense that it knows it is funny is
+Flat and amused is Camping's narrator. Any lift, any grandeur, any sense that it knows it is funny is
 wrong, however good the timbre.
 
 ### 🔴 CLOSED 2026-09-04 — Voice Design is allowlisted, and money does not open it
@@ -663,8 +675,8 @@ have produced "similar", the answer is to jump family, not to rewrite the notes:
 
 When the *grave* register has been tried five ways, **invert it.** A bright, brisk, relentlessly
 pleasant corporate-onboarding voice describing asset stripping and homelessness is the opposite
-comedic engine from a grizzled narrator, and it is arguably more BadCode: **it is the system
-narrating itself.** [`../voice.md`](../voice.md) gets its sarcasm from register mismatch, and
+comedic engine from a grizzled narrator, and it is arguably closer to `voice.md`'s sarcasm: **it
+is the system narrating itself.** [`../voice.md`](../voice.md) gets its sarcasm from register mismatch, and
 `story-craft`'s rule holds — the irony is safe because **the picture supplies the undeniable
 consequence** the words refuse to acknowledge.
 
@@ -672,7 +684,8 @@ consequence** the words refuse to acknowledge.
 
 **Jack, on the induction-video swing: *"it is not very BadCode, it needs to be gritty, deadpan, with
 a hint of sarcasm and anger."*** 🔴 **The register inversion is rejected — do not retry it.** A
-cheerful corporate narrator is a legitimate comedic engine and it is not this house's.
+cheerful corporate narrator is a legitimate comedic engine and it was not Camping's narrator. (Another
+story may want it.)
 
 🔑 **And the note names the thing every previous direction was missing.** Every block so far asked
 for **bored, unbothered, cannot be bothered, beneath contempt** — all of which are *absence* of
@@ -681,7 +694,7 @@ feeling, and absence of feeling is exactly what came back as **"boring"**.
 > **Deadpan is a lid on something, not an absence of it.** The flat delivery only reads as deadpan
 > if there is visible pressure underneath it. Ask for the pressure, not the flatness.
 
-**The house voice agrees, and always did.** [`../voice.md`](../voice.md): *"overtly sarcastic, dark
+**`voice.md` (the narrator's words) agrees, and always did.** [`../voice.md`](../voice.md): *"overtly sarcastic, dark
 humour, **total authority**… nurturing underneath the snark. **The contempt is for the mistake, not
 the people.**"* That is not boredom. **That is anger with manners.**
 
@@ -727,11 +740,11 @@ every other decision on this film combined."* **It is now formally dropped.**
 | Accent | Evidence | Verdict |
 |---|---|---|
 | 🥇 **Brixton / South-East London** | **Named in Google's own worked example** (*"Jaz is from Brixton, London"*) and in the documented accent set | **The safest British option**, and native to a film set around the NatWest floor, the Shard and a Waitrose car park |
-| 🥈 **General American** | 🔑 **The model's native default** — Charon measures as an American male. And [`../stories/karen/narration/voice.md`](../stories/karen/narration/voice.md) already casts the BadCode narrator as *"General American with a faint Western ease"* | `voice.md`'s own post-mortem: *"Karen's target IS the model's default. Camping's is the opposite of it."* **Karen worked. That is the reason** |
+| 🥈 **General American** | 🔑 **The model's native default** — Charon measures as an American male. And [`../stories/karen/narration/voice.md`](../stories/karen/narration/voice.md) already casts Karen's narrator as *"General American with a faint Western ease"* | `voice.md`'s own post-mortem: *"Karen's target IS the model's default. Camping's is the opposite of it."* **Karen worked. That is the reason** |
 | **RP · Estuary · Transatlantic** | In the documented set | Available; RP is wrong for the reader |
 | **Newcastle · Exeter** | Simon Willison got *"noticeably different vocal outputs"* swapping these in | Steering works — but these are **undocumented**, i.e. what we spent a day failing at |
 
-🔑 **Two house rules out of the whole day:**
+🔑 **Two engine rules out of the whole day:**
 
 1. **Ask for an accent the vendor advertises.** Every documented accent landed; every undocumented
    one produced either a caricature or the default.
@@ -987,7 +1000,7 @@ Karen worked. That is the reason."*
 | | Option | Cost |
 | --- | --- | --- |
 | 🥇 | **A natively British voice from the library filter, with zero accent prose** | One audition session. Untried, and it is the only untried thing left |
-| 🥈 | **Accept General American** — the model's native register, and [Karen's narrator already is one and worked](../stories/karen/narration/voice.md) | The register mismatch with a UK-facing film — and it collapses the [one-house-narrator question](../stories/camping/narration/voice.md) in the same move |
+| 🥈 | **Accept General American** — the model's native register, and [Karen's narrator already is one and worked](../stories/karen/narration/voice.md) | The register mismatch with a UK-facing film — and it collapses the [one-narrator question](../stories/camping/narration/voice.md) in the same move (since settled: each story casts its own, `STYLE.md`) |
 | 🥉 | **Go back to Hume Octave**, where accent sits in the prompt vocabulary by design and [the camping read was ruled *"got the voice"* on 2026-09-04](../stories/camping/narration/voice.md) | $14/mo for the commercial licence. **It already worked once** |
 
 ⚠️ **Do not spend another session rewording a Voice Direction.** The prose lever is exhausted.
@@ -1045,7 +1058,7 @@ audiobook, who is entirely convinced he is a profound artist. **Total gravity, z
 He delivers absurd and appalling material with the weight of scripture, leans hard on words that do
 not deserve emphasis, and never once suspects he is funny.
 
-🔑 **Why it fits the house better than anything tried today:** [`../voice.md`](../voice.md) asks for
+🔑 **Why it fits `voice.md` better than anything tried today:** [`../voice.md`](../voice.md) asks for
 **total authority** and *"story over sermon"*, and this register is authority taken past the point
 of self-parody — which is a **joke the voice never has to tell**, because the certainty does it.
 It also keeps the day's two hard-won ingredients: **grit** (it is a gravelly register by nature) and
@@ -1095,7 +1108,7 @@ specific enough to get most of the way.
 saturated.** Delivery nuance no longer moves the output because `voice_name` owns the timbre and we
 have been editing the wrong lever for a dozen rounds.
 
-🔑 **The house already has the rule, from the Suno toolkit:**
+🔑 **The Suno toolkit already has the rule:**
 
 > *"If a vocal hasn't moved after ~2 rounds of style-prompt surgery, stop prompting — the voice you
 > want probably isn't in the genre's vocalist pool, and no adjective stack jumps pools."*
@@ -1165,7 +1178,7 @@ performance, and the only reliable way to get one is to record one.
   `[long pause]` can execute the `//` marks that [`../story-craft/forms.md`](../story-craft/forms.md)
   defers to the Premiere edit.
 
-## Text normalisation — unchanged from the house rules
+## Text normalisation — the same rules as for Suno
 
 Spell it how it sounds, **before** synthesis, never after:
 `ETFs` → `E.T.F.s` · `IPA` → `I.P.A.` · `1%` → `one percent` · `4x4s` → `Four by fours` ·

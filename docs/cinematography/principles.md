@@ -20,10 +20,11 @@ Three questions before any shot is designed. A shot that fails one is not design
 
 1. **What is this shot FOR?** Not what it shows — what it does to the viewer that the shot
    before it did not. If the answer is "it looks good", there is no shot yet.
-2. **Is there a visible cost in frame?** For any monumental shot — scale, symmetry, a machine,
-   an institution — something or someone must be visibly paying a price. *(principle 22; this
-   is the visual twin of `the-reader.md`'s standing rule: never raise a fear without naming the
-   beneficiary.)*
+2. **Is there a visible cost in frame?** When the shot uses monumental grammar — scale,
+   symmetry, a machine, an institution — something or someone must be visibly paying a price, or
+   the grammar reads as celebration. *(principle 23; this is the visual twin of `the-reader.md`'s
+   advice: think twice before raising a fear with no beneficiary in sight.)* Applies when a
+   story's look is monumental; GPOM's `look.md` carries it as a rule. Not every story's look is.
 3. **Where does the light come from?** Name the source in the world. If the answer is "it's
    just lit", the frame will read as generic before anything else about it registers.
 
@@ -78,16 +79,15 @@ it hides *is* the meaning. **P**
 **10 — Motivated light is what makes a stylised frame still feel true.** The eye must be able to
 trace the light to something plausibly in the scene — a window, a lamp, a screen, a fire.
 Ungrounded light reads as "lit", and a modern eye trained on realism breaks with the image
-immediately. This is already the BadCode house rule; the sweep independently confirms it from
-four directions. **P**
+immediately. The sweep confirms it from four directions. **P**
 
 **11 — 🔴 Darkness reads as depth only when one small region inside it is deliberately
 brighter.** Uniform blackness with nothing lit reads as a technical failure — a crushed file,
 a dead screen — not as mood. There is now a perceptual mechanism for this, not just craft lore:
 the visual system computes how dark a thing is relative to the brightest region it can group
 into the same scene (anchoring theory of lightness perception, Gilchrist). Remove the anchor and
-there is nothing to normalise against. **This is the most load-bearing single principle in the
-file for our register.** **A** (mechanism) / **P** (craft rule)
+there is nothing to normalise against. **This is the most load-bearing single principle for any
+dark look** (GPOM's, for one). **A** (mechanism) / **P** (craft rule)
 
 **12 — Hard versus soft is optical fact, not taste.** A small or distant source gives
 sharp-edged shadow and reads as harsh, exposing, unforgiving. A large or close source gives
@@ -117,7 +117,7 @@ colour-to-emotion codes are **myth**. **P**
 
 **17 — Warm-against-cool inside one frame is most of what viewers mean by "production
 value."** A warm source against a cold ambient reads instantly as *someone lit this on purpose*.
-**P** *(teal-and-orange is the same idea worn out into a cliché — banned in our register)*
+**P** *(teal-and-orange is the same idea worn out into a cliché — GPOM's `look.md` bans it)*
 
 ---
 
@@ -184,7 +184,8 @@ Will*, Stalinist monumental photography — none shows exhaustion, wreckage, a b
 or anyone the system is failing. The frame is clean because a cost would break the spell.
 Conversely the counter-tradition (*Metropolis*, *Brazil*) adds cost, agency-asymmetry and a
 visible outside, and never softens the scale. **This is a mandatory pre-publish check on any
-monumental shot.** **p** (as film criticism) / **H** (as our gate)
+monumental shot when a story's look is monumental** (GPOM's `look.md` makes it a rule). **p** (as
+film criticism) / **H** (as our gate)
 
 **24 — 🔴 Satire that borrows power's grammar gets read as celebration by part of any
 audience.** This is documented and repeated, not hypothetical. Verhoeven built *Starship
@@ -214,8 +215,8 @@ mechanism)
 
 | # | The disagreement | Our ruling |
 | --- | --- | --- |
-| **R1** | Is our near-black monumental register right for our reader? | **🔴 OPEN — a human must rule.** See below. |
-| **R2** | Awe wants a tiny figure against vastness; Andrea Arnold's Academy frame refuses to let a landscape make a person small, because that is what respect looks like. Both are deliberate; they cannot coexist in one shot. | **Pair, don't choose.** Monumental is the default awe engine. The tight human-scale frame is a deliberate exception for character beats inside the machine-scale story — spent, not defaulted to. |
+| **R1** | Is GPOM's near-black monumental look right for our reader? | **🔴 OPEN — a human must rule.** See below. |
+| **R2** | Awe wants a tiny figure against vastness; Andrea Arnold's Academy frame refuses to let a landscape make a person small, because that is what respect looks like. Both are deliberate; they cannot coexist in one shot. | **Pair, don't choose.** Where a story's look is monumental (GPOM's — see its `look.md`), monumental is that story's awe engine and the tight human-scale frame is a deliberate exception for character beats — spent, not defaulted to. Another story's `look.md` may make the human-scale frame its default. |
 | **R3** | Continuity grammar (180-degree rule, eyeline match, the triangle) versus our actual process. | **Mostly not our problem.** Those rules govern cutting between multiple angles of one continuous action, which we do not shoot. What survives: consistent light direction, consistent scale, object permanence. |
 | **R4** | Kuleshov — foundational finding or teaching legend? | **The narrow version only.** A hard cut between two images makes the viewer infer a relationship; that much is real and now has fMRI support. The famous "one face reads as three emotions" story failed a controlled replication (Prince & Hensley 1992) and is **myth in its popular form**. |
 | **R5** | Coverage versus a designed shot list. | **Designed, always.** We cannot afford coverage and do not need it. Each shot has a job decided before it is made. |
@@ -227,19 +228,20 @@ mechanism)
 
 ## 🔴 R1 — the open ruling
 
-**The corpus contains material arguing against our own house register, and it does not resolve
-itself.** Stated honestly, because a human has to choose:
+**The corpus contains material arguing against GPOM's look** (near-black, monumental — treated
+as BadCode's house register until Kai ruled on 2026-10-28 that there is no house look), **and it
+does not resolve itself.** Stated honestly, because a human has to choose:
 
 - **Brief 15** documents that the visual grammar closest to our target reader's own vocabulary
   (`docs/marketing/the-reader.md` — a working-class UK reader) is British social realism:
   democratic eye-level, available light, handheld, refusing exactly the symmetry, engineered
-  light and scale-dwarfing our register is built from. The brief's own words: our register is
+  light and scale-dwarfing GPOM's look is built from. The brief's own words: that register is
   *"close to the visual opposite of this whole tradition on every axis that matters."*
-- **Brief 17** documents that our grammar, absent a visible cost, reads as celebration of power
+- **Brief 17** documents that monumental grammar, absent a visible cost, reads as celebration of power
   to a documented fraction of any audience — including the audiences of directors who built the
   critique on purpose.
 
-**Neither brief proves the house look is wrong. Neither proves social realism is the fix.**
+**Neither brief proves GPOM's look is wrong. Neither proves social realism is the fix.**
 Nobody has evidence that either register works on this specific reader. What is available now:
 
 1. **A partial reconciliation** — R2 above (pair, don't choose) plus principle 23 made mandatory.
@@ -247,5 +249,6 @@ Nobody has evidence that either register works on this specific reader. What is 
    actual BadCode frame. Its own §7 recommends testing it against three or four shipped panels
    before it becomes doctrine.
 
-Until ruled: keep the register, apply gate 2 (visible cost) to every monumental shot, and do not
-claim the question is settled in any public copy or any canon file.
+Until ruled: GPOM keeps its look, gate 2 (visible cost) applies to every monumental shot, and
+nobody claims the question is settled in any public copy or any canon file. Each other story
+picks its own register in its own `look.md`.

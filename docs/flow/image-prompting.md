@@ -1,7 +1,7 @@
 # Image prompting — Nano Banana / Nano Banana Pro
 
-Flow's still-image models. Platform behaviour only — the BadCode look lives in
-`new-image` (both registers).
+Flow's still-image models. Platform behaviour only — a story's look lives in
+`docs/stories/<story>/look.md` (there is no BadCode house look; [`../stories/STYLE.md`](../stories/STYLE.md)).
 
 ## 1. The mental model
 
@@ -62,7 +62,7 @@ camera, materiality.
 
 Full term reference with reliability tiers: [`camera-vocabulary.md`](./camera-vocabulary.md) —
 including the **near-black recipe**, which names the source *and* claims the shadow, and matters
-more to the BadCode register than any other lighting note in these files.
+more to any near-black look (GPOM's, for one) than any other lighting note in these files.
 
 ## 4. Realism — defeating the plastic default
 
@@ -204,7 +204,7 @@ language naming the held features:
 > "The subject from the uploaded image, maintaining the exact real face, hairstyle, skin
 > tone, and body identity unchanged" → "100% identity lock, no alteration."
 
-⚠️ **That phrasing is a policy trigger in our register** — likeness language ("same
+⚠️ **That phrasing is a policy trigger for us** — likeness language ("same
 face, same bone structure") is BadCode block trigger #2. Use it only when the subject is
 an invented character, never when the reference is derived from a real person. See
 `failure-modes.md`.
@@ -305,7 +305,7 @@ Beyond "be specific", which this file already says three ways:
 ## Sources
 
 Read end to end at source on **2026-08-18**. Every quotation marked "Official" is from the
-first link; the BadCode caveats and the register notes are ours.
+first link; the BadCode caveats and the look notes are ours.
 
 - [Image generation with Gemini ("Nano Banana") — Gemini API](https://ai.google.dev/gemini-api/docs/image-generation) — the prompting guide and its templates, editing templates, best practices, limitations, aspect-ratio and resolution tables, the model line-up.
 - [Learn about Google Flow models & supported features](https://support.google.com/labs/answer/16352836?hl=en) — which image models Flow actually offers and which is default on which plan.

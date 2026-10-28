@@ -78,7 +78,7 @@ neither failure; the fix is the same for both.
   transition shots as buffers."*
 
 🔴 Single source, personal anecdote, no A/B — **a hypothesis to try, not settled fact.** But the
-BadCode register uses worm's-eye and bird's-eye deliberately, so if it is true we have a standing
+GPOM look uses worm's-eye and bird's-eye deliberately, so if it is true that story has a standing
 conflict between the look and the consistency discipline, and only our own multi-shot chain can
 settle it. (single-source,
 [eastondev.com](https://eastondev.com/blog/en/posts/ai/20251207-veo3-character-consistency-guide/))

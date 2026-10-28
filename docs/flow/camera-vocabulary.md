@@ -78,9 +78,9 @@ Rack focus is worth knowing precisely because it is **a move that is not a move*
 what the shot is about without travelling, which makes it safe on the flat-parallel-surface
 geometry Veo cannot dolly past (`video-prompting.md` §9).
 
-⚠️ **Lens flare is officially supported and house-banned.** It is on Google's list, it works,
-and `badcode-art-direction` forbids it. The GPOM orbital shots are a named exception recorded
-in that story's ledger — don't generalise them.
+⚠️ **Lens flare is officially supported.** It is on Google's list and it works. Whether a story
+uses it is that story's `look.md` call (GPOM's bans it, with its orbital shots as a named
+exception).
 
 ## Rules
 
@@ -108,7 +108,7 @@ in that story's ledger — don't generalise them.
    pace."* Padding does not help: *"Padding the movement description with adjectives ('a
    smooth, fluid, cinematic dolly that elegantly moves toward the subject') rarely helps and
    sometimes confuses the model."* ⚠️ Whether *imperceptible* differs from *slow* in output is
-   untested, and our register lives at exactly that end of the scale.
+   untested, and GPOM's look lives at exactly that end of the scale.
 
    **The speed instruction that actually recurs in practice is relative, not absolute** — tie
    the camera's pace to something already in frame rather than naming a speed in isolation:
@@ -155,8 +155,8 @@ Rembrandt, high-key, low-key, three-point softbox, hard fluorescent, rim light.
 
 **"Motivated lighting"** — light visibly coming from an in-scene source (streetlamp,
 window, monitor) — reliably grounds a scene, and is the term to reach for when a shot
-looks artificially lit. *(This is also the BadCode house rule: name the actual light
-source in the prompt rather than letting the model invent photogenic lighting.)*
+looks artificially lit. *(Craft option: name the actual light source in the prompt rather
+than letting the model invent photogenic lighting. GPOM's `look.md` makes it a rule.)*
 
 **State source, direction and colour temperature explicitly, and repeat the same
 phrasing across every clip in a sequence.** That repetition is the primary defence
@@ -171,7 +171,7 @@ against colour creep down a shot chain.
 
 ### Near-black: name the light, then claim the shadow
 
-**This is the second half of our own motivated-lighting rule** — which currently names the
+**This is the second half of the motivated-lighting move above** — which names the
 source and never claims the shadow. Describing a frame as "dark" or "near-black" is not an
 instruction. Say which single source is lit, and state explicitly where everything else falls:
 
@@ -193,8 +193,8 @@ black** unless the prompt compensates. Background rationale, not a phrase to wri
 actionable half is the one-light-plus-stated-falloff recipe above. (practitioner-with-evidence,
 [crosslabs.org](https://www.crosslabs.org/blog/diffusion-with-offset-noise))
 
-🔴 **This is the BadCode register's structural enemy** — near-black with one thin light is
-exactly what the model's training pulls against. Nobody outside has tested it for our register;
+🔴 **This is the structural enemy of any near-black look** (GPOM's, for one) — near-black with
+one thin light is exactly what the model's training pulls against. Nobody outside has tested it;
 the settling test is a histogram, not a vibe.
 
 ### Two more lighting levers
@@ -255,9 +255,9 @@ the grade. ⚠️ Source unreadable (403), snippet only — the template is harm
 is weak. (practitioner, snippet-only,
 [wimarys.com](https://www.wimarys.com/lighting-colour-in-google-veo-palette-control-grade-intent-consistency/))
 
-⚠️ Teal-and-orange is the *opposite* of the BadCode comic register, which calls for
-muted cool-neutral and bans movie-poster grading. Quoted here as vocabulary, not as a
-recommendation.
+⚠️ Teal-and-orange is quoted here as vocabulary, not as a recommendation: it is a worn
+cliché, and some stories' looks ban it (GPOM's `look.md`). The story's `look.md` says what
+this story uses.
 
 ## Camera hardware as a style token — low confidence
 

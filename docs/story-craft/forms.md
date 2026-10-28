@@ -1,7 +1,7 @@
 # Forms — the craft that changes with the medium
 
 [`principles.md`](./principles.md) is medium-agnostic; this is what changes when the story has to be
-a scroll comic, a 3–5 minute narrated video, a drum & bass track, or a serialised run. It restates no
+a scroll comic, a 3–5 minute narrated video, a song, or a serialised run. It restates no
 principle — rules that live there are cited by number — and every claim names its brief
 (`design/research/2026-08-22-story-craft/`) with the brief's evidence grade kept. The
 [house rulings](./principles.md#house-rulings-on-contested-advice) win any conflict, 7 and 11 above
@@ -70,8 +70,8 @@ rule not ruthless enough for long enough is wallpaper.
 
 Colour is the adjective layer: Ware applies it after the sequence is structurally complete, as an
 emotional modifier — and disclaims having a system, so this is one master's intuition, not a portable
-rule (brief 11). Our use: grid logic constant, palette temperature saying which timeline the reader is
-in — cold future, warm 2026.
+rule (brief 11). One option: grid logic constant, palette temperature saying which timeline the reader
+is in (cold future, warm 2026 was the house default; it is now a story's call, in its `look.md`).
 
 For the darkest beat, withhold. *Saga* #42 ends on six blacked-out panels; Vaughan credits Staples's
 pacing and handwritten narration, not the surprise (brief 11). A blackout turns the gutter inside out —
@@ -89,7 +89,7 @@ Stills or short clips under a voice: *La Jetée*'s photo-roman, the Eameses' *Po
 Frame a Painting's single-claim essay, Kurzgesagt's hope-engineered explainer (brief 12). Adam Curtis
 is the nearest cousin and the cautionary one: his two tracks — narration with "free-form riffs" over
 it — are what Rosenbaum calls Kuleshov-effect persuasion beneath scrutiny, and the critique is
-unresolved (brief 12). We run two tracks (picture plus D&B) knowingly; the tripwire is gate G3 — a
+unresolved (brief 12). We run two tracks (picture plus music) knowingly; the tripwire is gate G3 — a
 riff that lets the beneficiary go ambiguous has become the thing his critics name.
 
 ### The shot-and-narration rhythm
@@ -175,7 +175,11 @@ never stacked (brief 12, a mixed-grade guide citing the platform).
 
 ---
 
-## 3. The drum & bass track
+## 3. The song
+
+No genre is assumed: a song's genre is its story's `sound.md` (`docs/stories/STYLE.md`). The
+notes on drops, breakdowns and MCs below apply when that genre is a club form such as drum & bass
+(GPOM's track); the narrative-in-lyrics craft applies to any song.
 
 Everything mechanical — style prompts, Voice stacks, syllable matching, rhyme by section, chorus
 escalation, punctuation as brake, stems, the session method — lives in

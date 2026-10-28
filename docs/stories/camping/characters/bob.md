@@ -86,7 +86,7 @@ alone breaks it.
 
 ---
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (Camping's look: hyper-realistic documentary photography — [`../look.md`](../look.md))
 
 Anchor character — **every scene he appears in must read as the same man.** Lock
 these:

@@ -30,7 +30,7 @@ calendar.**
 theatre. He doesn't threaten anyone. He mentions, in passing and with real
 sympathy, when her contract comes up. That's it. That's the entire rack.
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (drafted 2026-08-06 against the retired house style; a description, not a ruling on the look — see [`../look.md`](../look.md))
 
 - 60s–70s, ascetic, dry-skinned, thin-lipped. Steady eyes. A face that has heard
   everything already. No scowl — the resting expression is mild attention.

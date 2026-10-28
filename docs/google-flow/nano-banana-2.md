@@ -47,7 +47,7 @@ Assume the lower numbers when planning a crowded panel until we test it.
 ## Prompt structure
 
 Google's own templates. Note how closely the first one already matches the shape
-`badcode-art-direction` uses (house-style preamble + specific scene description).
+our prompts use (a story's style preamble from its `look.md` + specific scene description).
 
 **Text-to-image:** `[Subject] + [Action] + [Location/context] + [Composition] + [Style]` `[vendor]`
 
@@ -144,7 +144,7 @@ Google's own five-slot template:
 The consistent lesson is that **the failure mode is laziness in one slot** — "nice lighting" instead
 of "dramatic window lighting creating a rim-light effect". Naming actual camera hardware ("shot on a
 Canon 5D Mark IV", "85mm portrait lens", "Kodak", "Ektachrome 64") does heavy lifting, which is
-exactly the mechanism our 35mm house-style preamble already relies on.
+exactly the mechanism a named-camera preamble relies on (GPOM's 35mm documentary one, for example).
 
 ### Editing: the five action verbs
 
@@ -176,7 +176,7 @@ From the highest-viewed NB2-specific technique video (170k). Three moves:
    format"* → lighting, composition, colour palette, optics/focus, post-processing as a reusable
    block. Paste that JSON with a new subject to reproduce the exact look.
 
-Move 3 is potentially significant for us: it is a mechanism for extracting the **house style from an
+Move 3 is potentially significant for us: it is a mechanism for extracting **a story's look from an
 accepted panel** as a structured token and re-applying it, instead of re-typing a prose preamble and
 hoping. Worth testing against `docs/stories/*/storyboard/` originals.
 
@@ -199,10 +199,11 @@ A comparison video puts NB2 next to Nano Banana Pro on the same portrait prompt 
 NB2 came out "too sharp… too overly contrast… almost overexposed", Pro "a lot more natural" `[yt]`.
 Google's own copy promises "vibrant lighting, richer textures and sharper details".
 
-**That is a direct collision with the BadCode look** — muted cool-neutral palette, lifted blacks,
-naturalistic motivated light, film grain. The engine's default improvement direction is exactly the
-axis our house style suppresses. If panels start reading glossy, this is why, and Nano Banana Pro
-may be the better engine for us despite being the older, slower, more rate-limited one.
+**That is a direct collision with any muted, filmic look** — e.g. a muted cool-neutral palette,
+lifted blacks, naturalistic motivated light, film grain (GPOM's documentary preamble and Karen's
+`STYLE LOCK` both ask for this). The engine's default improvement direction is exactly the axis such
+a look suppresses. If a story's panels start reading glossy, this is why, and Nano Banana Pro may be
+the better engine for that look despite being the older, slower, more rate-limited one.
 
 ## Second web pass — 2026-08-12 `[vendor]` `[community]`
 
@@ -293,7 +294,7 @@ The line that should change how we write:
 > and conflicts** — *"a focused short prompt can beat a long prompt with competing
 > styles or viewpoints."* `[vendor]`
 
-**This has a direct cost for the Karen house style.** The §1 `STYLE LOCK` is pasted
+**This has a direct cost for Karen's look.** The §1 `STYLE LOCK` is pasted
 verbatim at the top of every plate — grain, halation, vignetting, bloom, soft blacks —
 and our scene blocks have then *restated* texture and optics underneath it. On Pro that
 is precisely the pattern named above: repetition plus a second, competing style
@@ -362,9 +363,9 @@ Four sources is how a frame gets *lit* rather than *photographed*.
 it appears in so much training data beside CGI and digital painting that it no longer
 discriminates, and it averages toward the waxy look it is meant to prevent `[community]`. The
 working substitute is the stack we already use: **named camera body, named stock, a stated ISO,
-one positioned light, surface imperfection, and asymmetry.** Our house preamble says
+one positioned light, surface imperfection, and asymmetry.** GPOM's documentary preamble says
 *"hyper-realistic documentary photograph"* rather than *"photorealistic"*, which is the right
-side of this line already — do not drift back.
+side of this line already — any story's preamble should stay on that side.
 
 Sources: [Why "photorealistic" doesn't work in AI prompts](https://roo.beehiiv.com/p/why-photorealistic-doesn-t-work-in-ai-prompts-and-what-to-write-instead) `[community]` ·
 [Nano Banana Pro prompting tips — blog.google](https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]` ·
@@ -379,7 +380,7 @@ Sources: [Why "photorealistic" doesn't work in AI prompts](https://roo.beehiiv.c
 
 **Read carefully, that is an argument for what we already do, not against it.** Recycling
 a *scene* is what produces slop. Locking a *style* is the opposite — it is the thing that
-makes a series look authored. **Lock the register; never recycle the shot.**
+makes a series look authored. **Lock the story's look; never recycle the shot.**
 
 ### Negatives, revisited
 
@@ -398,7 +399,7 @@ contrast… almost overexposed"* against Pro's *"a lot more natural"* `[yt]` —
 over-sharpened, over-lit, over-contrasted is a fair description of the slop look itself.
 
 > **Working recommendation, `[untested]`: use Nano Banana Pro for Karen plates**, and
-> accept the tighter rate limit as the price. The house style is a *suppression* of
+> accept the tighter rate limit as the price. Karen's look is a *suppression* of
 > exactly the axis NB2 pushes on. Pro also has the reasoning behaviour that matched-pair
 > and sequence panels benefit from, and stronger hex-code handling for palette locks.
 >
@@ -1486,7 +1487,7 @@ past the flash's short range, cool blue-green white balance, highlights clipping
 digital grain and mild chromatic noise.** `[community]`
 
 🔑 **In this register a crushed near-black background is period-correct rather than a fault** — which is the
-one exception to the general realism advice below, and worth knowing because it is rare to get our register
+one exception to the general realism advice below, and worth knowing because it is rare to get a dark look
 and the realism advice pointing the same way.
 
 ⚠️ **Against it, two independent craft sources say the opposite for images generally:** keep the darkest
@@ -2065,14 +2066,14 @@ Still no "Nano Banana Pro 2": Flow's picker lists Pro, NB2 and NB2 Lite ([Flow h
 
 Hypotheses for the calibration run, not rules.
 
-1. **Our house-style preamble maps cleanly onto the `[Style]` slot.** The 35mm documentary
+1. **A story's style preamble maps cleanly onto the `[Style]` slot.** GPOM's 35mm documentary
    formula is already the right shape. Likely no rewrite needed — worth confirming it still lands
    with the same weight on a stronger instruction-follower.
-2. **The positive-framing rule collides with our preamble.** "no lens flares" is exactly the
+2. **The positive-framing rule collides with any preamble that negates** (GPOM's: "no lens flares") — that is exactly the
    negative construction Google says to avoid. Test whether it still suppresses flares, or whether
    naming them makes them *more* likely. If the latter, the fix is a positive restatement —
    "clean, unflared optics; light sources sit inside the frame without blooming" — but this is a
-   change to `badcode-art-direction` and needs confirming before anyone touches that file.
+   change to that story's `look.md` and needs confirming before anyone touches it.
 3. **21:9 is available** and we've never used it. Worth a look for reveal panels where the current
    16:9 crop fights the scale.
 4. **512px is new** and near-free — plausible as a fast composition-check pass before committing to
@@ -2095,7 +2096,7 @@ Hypotheses for the calibration run, not rules.
   Partially answered: Flow shows a portrait/landscape toggle and 2K/4K download upscaling `[yt]`,
   not the full 10-ratio API list.
 - Does the `flow` MCP server's `character` parameter still cast correctly on the new engine?
-- **Is Nano Banana Pro the better engine for the BadCode look**, given the over-sharpening report?
+- **Is Nano Banana Pro the better engine for a muted, filmic look** (GPOM's documentary preamble, Karen's lock), given the over-sharpening report?
   This is now the second-highest-value calibration after the policy-trigger list.
 - Do the sketch-annotation and selection tools reach the MCP layer, or are they browser-only? If
   browser-only, they are a reason to keep a human-in-the-loop lane for difficult panels.

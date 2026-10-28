@@ -39,6 +39,8 @@ docs/stories/<story>/
   README.md            # index + production tracker (table: medium / where / status)
   story.md             # spine: Key concept, Background, high-level Beats, the twist
   characters/<name>.md # one per character (frontmatter + prose)
+  look.md              # THIS story's look — EMPTY until found (docs/stories/STYLE.md template)
+  sound.md             # THIS story's sound and voices — EMPTY until found (same)
   songs/<slug>.md      # lyrics + Suno style/exclude (one file per track)
   timelines.json       # once the film is being cut: the OVERVIEW BOARD, the film start to end (see below)
 ```
@@ -51,6 +53,10 @@ Frontmatter is light and is the subset machine artifacts need:
 
 `docs/stories/camping/` is the worked reference — match its shape.
 
+**There is no house style** (Kai, 2026-10-28). A new story's `look.md` and `sound.md` start EMPTY
+from the templates in `docs/stories/STYLE.md`. Never seed them from another story: a new story's
+look and sound are found by a `variations` round and written back when picked.
+
 ## Workflow
 
 1. **Take the idea.** Fragment, reference, existing comic, or GPOM beat. Don't
@@ -61,8 +67,9 @@ Frontmatter is light and is the subset machine artifacts need:
    **characters**, then **high-level beats**. For an *existing* story, reverse-
    engineer from current material (comic scenes in `comic.meta.ts`, existing
    lyrics) rather than inventing.
-4. **Song.** Invoke the **`suno-prompt`** skill to produce the style prompt,
-   exclude list, and (on request) lyrics; write the result to `songs/<slug>.md`
+4. **Song.** If `sound.md` is EMPTY, the first takes are a `variations` round (no genre is assumed);
+   otherwise invoke the **`suno-prompt`** skill to produce the style prompt,
+   exclude list, and (on request) lyrics inside the story's sound; write the result to `songs/<slug>.md`
    with frontmatter. Say you are handing off to `suno-prompt`.
 5. **Derive `comic.meta.ts`** from the canon **only on request** — read the story
    + character files and write/update `apps/web/src/comics/<story>/comic.meta.ts`

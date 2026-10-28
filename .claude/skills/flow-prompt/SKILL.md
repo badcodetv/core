@@ -1,30 +1,29 @@
 ---
 name: flow-prompt
-description: Use when writing or debugging a prompt for Google Flow — a still image, an image-to-video motion prompt, a character reference, or a generation that failed. Encodes how the Flow platform actually behaves (Nano Banana and Veo), the policy-block triggers and rewrites, and the reference/consistency disciplines. Triggers on "write a Flow prompt", "why did this generation fail", "the prompt got blocked", "make this prompt better", "how do I animate this", or any prompt-craft step inside badcode-art-direction, new-image, edit-panel, animate-slide, make-comic or music-video-short. Platform craft only — the BadCode look lives in badcode-art-direction (panels) and new-image (brand imagery).
+description: Use when writing or debugging a prompt for Google Flow — a still image, an image-to-video motion prompt, a character reference, or a generation that failed. Encodes how the Flow platform actually behaves (Nano Banana and Veo), the policy-block triggers and rewrites, and the reference/consistency disciplines. Triggers on "write a Flow prompt", "why did this generation fail", "the prompt got blocked", "make this prompt better", "how do I animate this", or any prompt-craft step inside badcode-art-direction, new-image, edit-panel, animate-slide, make-comic or music-video-short. Platform craft only — what a story looks like lives in that story's docs/stories/<story>/look.md.
 ---
 
 # Flow Prompt
 
 How to get what you asked for out of Google Flow. This skill owns **platform craft** —
-how Veo and Nano Banana actually behave. It does **not** own the BadCode look.
+how Veo and Nano Banana actually behave. It owns **no look at all**: there is no BadCode house look (Kai, 2026-10-28). Each story's look is its `docs/stories/<story>/look.md`.
 
 ## The things that are not this skill's job
 
 | Question | Answer lives in |
 | --- | --- |
 | ***What should this shot BE?*** — framing, depth, light design, angle, what it's for | **`shot-craft`** — the cinematography judgement layer. **Consult it BEFORE writing any prompt for a shot that hasn't been designed yet** |
-| *What should a BadCode still look like?* | `new-image` — the machine and people registers |
-| *What should a BadCode brand image look like?* | `new-image` — near-black monolith register |
-| *What is this specific story's style and cast?* | `docs/stories/<story>/prompts.md` |
+| *What should this story's stills and clips look like?* | **`docs/stories/<story>/look.md`** — read it before any prompt. Empty or exploring → `variations` |
+| *Options that are actually different?* | `variations` (separate writers + a sameness gate) |
+| *This story's prompt ledger and what got made* | `docs/stories/<story>/prompts.md`, the scene folders |
 | *How do I make Flow do what I asked?* | **here** |
 
-A finished prompt is **design (`shot-craft`) + register (an art-direction skill) + phrasing
+A finished prompt is **design (`shot-craft`) + the story's look (`look.md`) + phrasing
 (here)** — three separate jobs. The design step is the one that gets skipped, and it is the one
 that decides whether the shot is interesting rather than merely correct. If you were handed a
 *shot spec*, phrase it; if you were handed only a subject, get the spec first.
-Never let this skill's example prompts leak their *look* into BadCode work — teal-and-orange
-grading and glossy commercial beauty shots appear here as vocabulary, not as
-recommendations.
+Never let this skill's example prompts, or any other story's look, leak into a story's work —
+every look named in this skill and `docs/flow/` is vocabulary, not a recommendation.
 
 ## The knowledge base lives in docs/flow/
 
@@ -95,12 +94,12 @@ If you read nothing else:
 **A storyboard beat arrives as four different briefs, not one.** `new-image` ->
 "Variety mode" decides the spread; this skill phrases each candidate. Write four genuinely
 different briefs — a different camera, palette, time of day or register in each — never one brief
-re-seeded. One of the four is the house register, and at least one breaks it on purpose.
+re-seeded. If the story's look is LOCKED, one of the four is that look and at least one breaks it on
+purpose; if it is EMPTY or EXPLORING, all four are different and the round runs through `variations`.
 
 
-1. **Get the register from the owning skill first** (`new-image`, which holds both
-   registers, the story's `prompts.md` for story style). Don't invent
-   a look here.
+1. **Get the look from the story's `look.md` first.** Don't invent a look here, and don't
+   borrow another story's.
 2. **Draft in the platform's shape** — the formula from `image-prompting.md` §2 or
    `video-prompting.md` §1, with the four levers (lighting / camera+lens / stock+grade /
    materiality) as separate clauses.
@@ -118,7 +117,8 @@ re-seeded. One of the four is the house register, and at least one breaks it on 
 
 | What | Where |
 | --- | --- |
-| The pre-production board for a story — style prompt, guardrails, cast, cut order | `docs/stories/<story>/prompts.md` |
+| A story's look — preambles, guardrails, cast references | `docs/stories/<story>/look.md` |
+| The story's prompt ledger — cut order, what was prompted | `docs/stories/<story>/prompts.md` |
 | A specific scene's prompts and what actually got made | `docs/stories/<story>/scenes/<scene>.md` |
 | A standalone brand image | beside the image, per `new-image` |
 | **Never** | the Premiere project's `clips/` folder — that is for media only |

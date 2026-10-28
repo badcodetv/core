@@ -6,6 +6,10 @@
 > evidence behind it. Builds on `files/suno-controls-and-workflows.md` §4 (the consistency stack)
 > and `files/producer-vocabulary.md` (vocals section).
 >
+> **An evidence base, not a house voice.** Every finding below was learned on one story's song and
+> is labelled with it. Which voice a song uses lives in its story's `docs/stories/<story>/sound.md`
+> (Kai, 2026-10-28: there is no BadCode house sound — [`STYLE.md`](../stories/STYLE.md)).
+>
 > 🔑 **Start at [Thread 5](#thread-5---the-talking-finding-camping-narration-2026-09-01--tested) if
 > you want a man TALKING** — it is the one thread here whose headline finding is fully tested, and
 > its headline is: **never ask for `spoken word`.** It also carries the third confirmation of the
@@ -201,7 +205,7 @@ backing vocals you now want.
 
 ### 10. Model choice inverts for cue-heavy skit tracks
 
-The house move (generate on 4.5+ for vocal variety, Cover into 5.5 for sonics) failed here: 4.5
+The v5.5-era hybrid move (generate on 4.5+ for vocal variety, Cover into 5.5 for sonics) failed here: 4.5
 went haywire with the lyric structure; **v5.5 followed the bracket cues exactly**. For a track whose
 architecture lives in dense per-section cues, structure-obedience beats vocal variety — stay on
 5.5 and spend direction in the brackets, which it demonstrably honours.
@@ -361,7 +365,7 @@ for the excludes here is a category error that quietly damages the part of the s
 
 ### 9. Weirdness follows the same rule as model choice: cue-heavy tracks want obedience
 
-The house default is weirdness 60–65, the "creative sweet spot". GPOM's D&B cut tested materially
+The common practitioner default is weirdness 60–65, the "creative sweet spot". GPOM's D&B cut tested materially
 better at **30**. That isn't a contradiction of §10's model finding — it's the same finding:
 
 > When a track's architecture lives in dense per-section bracket cues, every control should be set
@@ -457,7 +461,7 @@ coming from "adenoidal Merseyside" or "clipped RP" at all — it was coming from
 owns the vocalist pool (Thread 2 §1). Take out the UK genre and the pool reverts to its default,
 which is American.
 
-Three rules:
+Three rules, **for when a song wants a British voice** (whether it does is the story's `sound.md`):
 
 - **Nationality is a genre lever, not an adjective lever.** `UK grime`, `UK garage`, `grime`,
   `UK hip hop` are the strongest British-vocal controls available, because they are pool-selecting
@@ -493,7 +497,7 @@ as grime, and the right bloke. It also keeps our own **cast performance traditio
 demographics** rule (Thread 3 §7) intact: naming a tradition the model has heard performed does the
 casting precisely, and no demographic adjective ever has to go in the prompt.
 
-**A starter map for BadCode's British registers:**
+**A starter map of British registers** (the characters our stories have needed so far):
 
 | Character | Pool that casts them | Not |
 |---|---|---|
@@ -672,8 +676,8 @@ prompts, whether a house rule or a helper's shared paragraph, wins.
 
 **How to apply:** exploring a new voice or sound → write the prompt fresh, the clean-room way (full
 Lead vocal sentence, set the gender, excludes aimed at this voice, section cues, settings chosen per
-prompt). Only bring house rules in once a take is liked and is being refined, one rule at a time,
-each tested against the take.
+prompt). Only bring this file's rules in once a take is liked and is being refined, one rule at a
+time, each tested against the take.
 
 ### 2g. 🔑 Standing rule: the clean-room / basic method (Jack, 2026-10-22)
 
@@ -683,6 +687,11 @@ top of `.claude/skills/suno-prompt/SKILL.md`. In short: a fresh helper with a pl
 prompts, they run verbatim, and each one varies the delivery category. Bank Robbery Rounds CR, SW, BB
 and GG used it; VB and BO show the two ways it still fails (a shared paragraph; a transplanted voice
 sentence).
+
+> **Now (2026-10-28):** the method is the `variations` skill (`.claude/skills/variations/SKILL.md`):
+> separate subagent writers who can't see each other, each given only the brief that
+> `scripts/variations/round.py brief` builds from raw files, and a sameness gate. See
+> [`same-song-traps.md`](./same-song-traps.md).
 
 ### 2h. 🔴 A sealed writer still fails three ways (Jack, Bank Robbery Round SR1, 2026-10-23)
 
@@ -701,6 +710,11 @@ gets N experiments from one sealed writer and one prompt each from N more, gates
 rewrites the offenders, and stamps the round; `run` refuses an unstamped or edited round. The full
 trap list with the guard for each: [`same-song-traps.md`](./same-song-traps.md).
 
+> **Superseded 2026-10-28 (Kai):** the empty-folder `claude -p` writer is no longer needed, because
+> the pollution is being removed at the source (no style in CLAUDE.md, memory or skill
+> descriptions; `scripts/style-lint.py` checks). The separate-writers + sameness-gate half is now the
+> `variations` skill, run with `python3 scripts/variations/round.py`. This section is the history.
+
 ### 3. More casting markup makes casting worse
 
 Round 1 answered a casting problem by adding casting markup to every line. That is the exact
@@ -717,8 +731,8 @@ Two suspects, not separated: syllable cramming (the documented machine-gun rush,
 and cue density chopping a verse into micro-sections that each re-decide their own phrasing.
 
 This matters because `files/lyricist-playbook.md` §3 warns against dense multi-clause cues and is
-flagged there as *contradicting BadCode house practice*. **It now has a supporting observation.**
-The house style isn't overturned — GPOM's dense cues produced a track we like — but "cue overload"
+flagged there as *contradicting GPOM's dense-cue practice*. **It now has a supporting observation.**
+GPOM's practice isn't overturned — its dense cues produced a track we like — but "cue overload"
 graduates from a named suspect to a suspect with a case, and **a tempo fault is now a reason to
 strip cues before anything else.** `[Beat Transition]` between sections is the cheap reset.
 

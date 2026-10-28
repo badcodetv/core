@@ -23,12 +23,12 @@ questionnaire. Kai often talks in long voice notes, so pull the decisions out of
 
 Settle these before anything is generated:
 
-1. **Where it sits.** Which film, between which scenes, and how long? Is the music fixed? If so, cut points follow the track: note the drop timecodes and the BPM (174 BPM is 0.345s a beat).
+1. **Where it sits.** Which film, between which scenes, and how long? Is the music fixed? If so, cut points follow the track: note the drop timecodes and the BPM (a beat is 60/BPM seconds).
 2. **The one sentence.** What does this scene *argue*? Who benefits, by name or by role? (the-reader rules)
 3. **The steps.** The rough sequence of what we see, each step changing something (but/therefore). Write the ending first.
 4. **What makes it interesting.** Push past the first idea. For every beat, offer one bolder alternative: a different angle, a reveal, scale against a single human, a visible cost, a callback. Kai's best notes have come from contrast: "zoomed out, a vast parade ground", "a strobe, not a glow", "from outside, through the corner windows".
-5. **Cast.** Which characters recur from elsewhere in the story? Find their canonical reference image and their Flow Character, if one exists (`flow_list_characters`). One reference per character, always the same one. The GPOM bot always refs `simulation/stills/s3/s3-bot-00b-a.jpg` and keeps the torn bunting.
-6. **Look.** The register (house near-black, or a deliberate break such as 1980s BBC 16mm or advert-bright) and the styles worth trying as filters on the board.
+5. **Cast.** Which characters recur from elsewhere in the story? Find their canonical reference image and their Flow Character, if one exists (`flow_list_characters`). One reference per character, always the same one: the story's `look.md` §Cast names it.
+6. **Look and sound.** Read the story's `look.md` and `sound.md` (`docs/stories/STYLE.md`) first; there is no house style. If the story's look is LOCKED, the scene uses it, or names a deliberate break and why. If it is EMPTY or EXPLORING, list the genuinely different looks worth trying as filters on the board (the mood board is where the story's look gets found, via `variations`). Same for the music and voices the scene needs.
 7. **What exists.** Clips or stills already on the timeline that stay, or that must be beaten (they go in `existing` as dashed cards).
 
 ## Output

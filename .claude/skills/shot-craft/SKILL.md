@@ -1,6 +1,6 @@
 ---
 name: shot-craft
-description: Use when deciding or judging what a shot should BE — designing a frame, choosing an angle or a light, planning a scene's shots, re-cutting footage that already exists, or diagnosing why something looks flat, boring, generic or "like AI". Triggers on "what's a more interesting shot for this", "how should we frame this beat", "this feels flat / boring / generic", "why does this look like AI", "give me a better angle", "how do we make this exciting", "alternate way of cutting X", "let's discuss the cinematography for <scene>", "what should this scene look like", "is this shot working", or any shot-design step inside make-comic, badcode-art-direction, new-image, music-video-short, animate-slide, flow-prompt or premiere-automation. Tool-agnostic craft only — HOW to phrase it for a generator is flow-prompt, WHICH tool is video-fx, what the BadCode look is stays with badcode-art-direction and new-image, and whether the STORY grips is story-craft.
+description: Use when deciding or judging what a shot should BE — designing a frame, choosing an angle or a light, planning a scene's shots, re-cutting footage that already exists, or diagnosing why something looks flat, boring, generic or "like AI". Triggers on "what's a more interesting shot for this", "how should we frame this beat", "this feels flat / boring / generic", "why does this look like AI", "give me a better angle", "how do we make this exciting", "alternate way of cutting X", "let's discuss the cinematography for <scene>", "what should this scene look like", "is this shot working", or any shot-design step inside make-comic, badcode-art-direction, new-image, music-video-short, animate-slide, flow-prompt or premiere-automation. Tool-agnostic craft only — HOW to phrase it for a generator is flow-prompt, WHICH tool is video-fx, what a story looks like is that story's look.md, and whether the STORY grips is story-craft.
 ---
 
 # Shot Craft (BadCode)
@@ -21,14 +21,14 @@ Three modes, one knowledge base:
 | --- | --- |
 | How do I phrase this so the generator obeys? | `flow-prompt` |
 | Which tool — Flow, ffmpeg, Premiere, archive footage? | `video-fx` |
-| What does a BadCode *still* look like? | `new-image` |
-| What does a BadCode *brand image* look like? | `new-image` |
-| What is this story's cast, style and canon? | `docs/stories/<story>/prompts.md` |
+| What does this story look like? Its cast references? | `docs/stories/<story>/look.md` (there is no house look) |
+| Making the still | `new-image` |
+| What is this story's canon? | `docs/stories/<story>/` |
 | Does the **story** grip? Is the beat earning its place? | `story-craft` |
 | Is the file ready to upload? | `video-fx` → `docs/video-fx/delivery.md` |
 
-**A finished shot is register + design + phrasing.** Register comes from the story's canon and
-the art-direction skills; design comes from here; phrasing comes from the tool skill. Do not do
+**A finished shot is register + design + phrasing.** Register comes from the story's
+`look.md`; design comes from here; phrasing comes from the tool skill. Do not do
 all three in one breath — the design decision is the one that gets skipped, and it is the one
 that decides whether the shot is interesting.
 
@@ -82,13 +82,13 @@ For a shot that does not exist yet. Output a **shot spec**, not a prompt.
 
 1. **The job.** One sentence: what this shot does that the last one did not.
 2. **The register.** Monumental, documentary, or the human-scale exception *(ruling R2)*. Get
-   this from the story's canon, not from here.
+   this from the story's `look.md`, not from here.
 3. **Depth.** What is in the foreground, midground, background. Never leave the foreground empty
    — it is the most common cause of a flat frame and it is free.
 4. **The focal point.** The one thing the eye rests on, and what it is winning with — light,
    space, or depth position.
-5. **The light.** Source, direction, and **where the falloff goes**. On near-black: name the one
-   bright anchor, or the frame reads as a broken file.
+5. **The light.** Source, direction, and **where the falloff goes**. On a near-black frame: name the
+   one bright anchor, or the frame reads as a broken file.
 6. **Camera.** Height (a slider, not three boxes), angle, distance. State height and angle
    separately — they are different variables.
 7. **Scale reference.** For any machine or building: the known-size object that makes size
@@ -164,7 +164,7 @@ caption carrying the beneficiary, a bookend made by repeating an existing frame 
 
 ## Working rules
 
-- **Never claim the register question is settled.** Whether our near-black monumental look is
+- **Never claim the register question is settled.** Whether GPOM's near-black monumental look is
   right for a working-class UK reader is an **open ruling** (`principles.md` §R1). Nobody has
   evidence either way. Do not assert it in canon or public copy.
 - **Check `evidence.md` before any claim or number leaves this skill.** The never-cite list is

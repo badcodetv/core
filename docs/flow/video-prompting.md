@@ -238,7 +238,7 @@ models, so **treat drift as a per-take lottery, not a model property.**
 - **Keep writing the static instruction anyway.** It is not useless — silence produces worse,
   and the rule above still stands. It sets an upper bound on the drift; it does not remove it.
 
-### ⚠️ Leaderboard rank does not transfer to our register (2026-08-21)
+### ⚠️ Leaderboard rank does not transfer to a dark, single-source look (2026-08-21)
 
 The same A/B was run to answer a second question: Gemini Omni Flash sits ~280 Elo above
 Veo 3.1 on the Artificial Analysis **image-to-video (no audio)** board (1366 vs 1084, Aug 2026).
@@ -258,7 +258,7 @@ it **rejects a last frame**, so the first+last-frame interpolation lock is Veo-o
 silently. The ruling below stands only as the record of what the A/B measured.
 
 **Ruling (superseded): keep `"Veo 3.1 Fast"` as the `flow_generate_video` default.** The arena is won on
-bright, busy, generic prompts; our register is dark, single-source-lit and identity-critical,
+bright, busy, generic prompts; the tested plate (GPOM's look) is dark, single-source-lit and identity-critical,
 and the ranking did not survive the move. ⚠️ **Bounds:** n=3 clips, one plate, one near-static
 prompt. This rules out a *large* Omni Flash advantage here. It does not rule out a small one,
 or one on a motion-heavy or brighter shot — re-test before trusting it beyond this case.

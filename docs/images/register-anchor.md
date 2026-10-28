@@ -6,8 +6,8 @@ status: done
 ---
 ![register anchor](register-anchor.jpg)
 
-**The BadCode register anchor** — the calibration reference the `new-image`
-skill reads before generating any brand image. Near-black server hall, one thin
+**GPOM's register anchor** — the calibration reference for GPOM's MACHINE look
+(`docs/stories/gitpush-origin-master/look.md` §Anchors). Not a BadCode-wide look: there is none. Near-black server hall, one thin
 blade of light, LED constellations.
 
 Provenance: this was panel 1 of the GPOM Short comic (`docs/stories/gpom-short/`

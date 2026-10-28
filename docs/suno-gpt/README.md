@@ -3,7 +3,12 @@
 The knowledge base behind the **`suno-prompt`** skill (`.claude/skills/suno-prompt/`). The skill is
 the entry point — this is what it reads.
 
-> 🔑 **House rule (Kai, 2026-09-10): all new Suno work is v6, in the new UI.** v5.5 was retired on
+> **An engine manual, not a sound (Kai, 2026-10-28).** Everything here is how Suno behaves and what
+> the options are. There is no BadCode house sound: which genre, voice, Style box and settings a song
+> uses live in its story's `docs/stories/<story>/sound.md` ([`STYLE.md`](../stories/STYLE.md)). Where a
+> file here names a story's song or settings, it is a worked example, labelled with the story.
+
+> 🔑 **Standing rule (Kai, 2026-09-10): all new Suno work is v6, in the new UI.** v5.5 was retired on
 > 2026-09-09; its model-specific knowledge is archived in [`archive/v5.5-era.md`](./archive/v5.5-era.md),
 > and the eleven song sheets pinned to v5.5 carry an archive banner. Start at
 > [`files/suno-v6.md`](./files/suno-v6.md).
@@ -13,9 +18,10 @@ the entry point — this is what it reads.
 | File | What |
 |---|---|
 | [`system-prompt.txt`](./system-prompt.txt) | Base operating procedure — mode detection, output format, character limits, famous-artist translation, edge cases |
-| [`session-method.md`](./session-method.md) | **How to work, not what is true.** The iteration loop, the three-layer split (sheet / log / rules), diagnose-before-rewording, why boxes grow, mechanical lyric verification, and what counts as evidence. Read before a re-cut session |
-| [`automation.md`](./automation.md) | **Driving the app, not writing for it.** The `suno.com/create` DOM mapped over CDP — selector table, the golden rule (Simple and Advanced both mount, so scope to the Advanced panel), and **five silent traps**: the "Overwrite Styles?" dialog that swaps your Style box for the persona's, the Lexical lyrics editor that collapses to one paragraph, three `[role=dialog]` nodes, a form wiped by navigation, and a Style box that truncates at 1,000 instead of refusing. Plus the operating protocol — **every attempt is a pair at weirdness 30 and 60**, track naming, workspaces, and **never automate downloading** |
-| [`files/suno-v6.md`](./files/suno-v6.md) | 🔑 **v6 (2026-09-09) — read first on any model or control question.** The three models and when to pick which, the new create-form controls (Variety, Personalize, Max Mode, Vocal Gender), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, new features worth suggesting unbidden, downloads and credits, what happens to our v5.5 back catalogue, and the prioritised test queue. 🆕 **Refreshed 2026-10-14: §1b Speech (beta) — Suno's voice-plus-score model, the obvious challenger to our GPOM narration template — and §8c the anti-slop moves.** **Day-one evidence — nothing measured yet.** Ledgers: [`../misc/2026-09-10-suno-v6-research.md`](../misc/2026-09-10-suno-v6-research.md), [`../misc/2026-10-14-suno-v6-refresh.md`](../misc/2026-10-14-suno-v6-refresh.md) |
+| [`session-method.md`](./session-method.md) | **How to work, not what is true.** The iteration loop, the layer split (sheet / log / the story's `sound.md` / rules), diagnose-before-rewording, why boxes grow, mechanical lyric verification, and what counts as evidence. Read before a re-cut session |
+| [`automation.md`](./automation.md) | **Driving the app, not writing for it.** The `suno.com/create` DOM mapped over CDP — selector table, the golden rule (Simple and Advanced both mount, so scope to the Advanced panel), and **five silent traps**: the "Overwrite Styles?" dialog that swaps your Style box for the persona's, the Lexical lyrics editor that collapses to one paragraph, three `[role=dialog]` nodes, a form wiped by navigation, and a Style box that truncates at 1,000 instead of refusing. Plus the operating protocol — **the pair** (a working method for refining a take: one Create at weirdness 30, one at 60; an exploring round's writers choose their own settings), track naming, workspaces, and **never automate downloading** |
+| [`same-song-traps.md`](./same-song-traps.md) | **Every way we made the same song again** (Bank Robbery, 400+ takes, one voice) — 17 traps with the guard for each. Read before any exploring round; exploring rounds run through the `variations` skill |
+| [`files/suno-v6.md`](./files/suno-v6.md) | 🔑 **v6 (2026-09-09) — read first on any model or control question.** The three models and when to pick which, the new create-form controls (Variety, Personalize, Max Mode, Vocal Gender), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, new features worth suggesting unbidden, downloads and credits, what happens to our v5.5 back catalogue, and the prioritised test queue. 🆕 **Refreshed 2026-10-14: §1b Speech (beta) — Suno's voice-plus-score model, the obvious challenger to GPOM's narration template — and §8c the anti-slop moves.** **Day-one evidence — nothing measured yet.** Ledgers: [`../misc/2026-09-10-suno-v6-research.md`](../misc/2026-09-10-suno-v6-research.md), [`../misc/2026-10-14-suno-v6-refresh.md`](../misc/2026-10-14-suno-v6-refresh.md) |
 | [`archive/v5.5-era.md`](./archive/v5.5-era.md) | 🗄 **Archived 2026-09-10.** The v5.5-era model knowledge (4.5 vs 5.5, the hybrid move, mumble mode's version note, the cue-heavy rule, the old four-tab form and the placebo Max Mode block) and the list of song sheets still pinned to v5.5. Read only to understand an old sheet or to Cover an old take onto v6 |
 | [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) | The prompt language: hybrid format, information ordering, genre pairing, bracket language, exclude strategy, contamination words |
 | [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio generation craft (**and §8a — Studio 2.0: chat, MIDI, real-time effects, custom plugins**), stems, known failure modes |
@@ -118,7 +124,8 @@ Recorded so nobody re-derives them:
 - **Regional accents** — a detailed Scouse spec produced no accent at all (tested 2026-08-20). Accent
   sits with age words: describable, not summonable. Contrast voices on pitch, texture, delivery mode
   and room instead. **But nationality is real and rides on the *genre* tag** — dropping `UK grime`
-  turned the same voices American. Keep a UK genre; `British` alone is weak reinforcement.
+  turned the same voices American. When a song wants a British voice, keep a UK genre; `British`
+  alone is weak reinforcement.
 - **Borrowing one attribute from a genre** — a vocalist pool is a *person*, not a property: accent,
   age, class and race come as one package. `UK grime` bought Britishness and cast two middle-aged
   white characters as young MCs. Pick the genre whose default performer *is* your character.

@@ -11,7 +11,8 @@ make art that makes the case for us.
 Two mediums, for now:
 
 - **Comics** — AI-generated imagery, presented on this website as scroll-driven interactive stories.
-- **Music** — drum & bass, dark and UK-flavoured (grime influence, Amen breaks, heavy sub).
+- **Music** — songs that carry a story's point. Each story finds its own sound (no house genre:
+  `docs/stories/STYLE.md`); the first, GPOM's, was dark UK drum & bass.
 
 People arrive at BadCode and browse a **library of ideas**, each experienced as a story.
 

@@ -1,19 +1,198 @@
-# The Bank Robbery — the look (suggestions and research, 6 October 2026)
+# The Bank Robbery — look
 
-**Asked for by Jack, 6 October 2026:** "suggest cinematic realistic artistic styles for the
-images/video we make out of this… I'm thinking maybe like Heat or something."
+> The look for this story only. Read before any still or clip (new-image, scene-images,
+> scene-animation, flow-prompt). Rules: [`docs/stories/STYLE.md`](../STYLE.md).
 
-> ✅ **A look was chosen by Jack on 6 October 2026, and it is none of the four below.** It is the
-> still "The bank in the haze" (round 3, frame 4, candidate b, Flow media `5a6fed78`): a news
-> photograph at dusk, cold ambient light, one warm source, a dark shape in the foreground, red and
-> blue carried by smoke and flags. Prompt: [`look-tests.md`](./look-tests.md). Style lock and the
-> scene stills: [`stills.md`](./stills.md). Kai has not seen it. **The rest of this file is the
-> suggestion board from before the choice and is left as written.**
+**Status:** LOCKED for the film — **"The bank in the haze"**, chosen by Jack, 6 October 2026
+([`look-tests.md`](./look-tests.md) round 3, frame R3-4, candidate b, Flow media `5a6fed78`). Kai had not
+seen it when it was chosen. Refined the same day by the second still pass, which Jack approved (*"they
+are great"*), and on 8 October by the riot look reference `br5-riot-look`. The song's music video ("The
+Speakeasy Mint") has its own LOCKED look, K3a (Jack, 2026-10-25) — see *Per part*.
+
+## In one paragraph
+
+A **heist film shot like the news at dusk**: cold ambient light, **one warm source** that is the brightest
+thing in the picture, a dark out-of-focus shape cutting into the frame from one edge, and **red and blue
+carried by things people brought** — flare smoke, flags, scarves, bin lids, ties — never issued like
+cards. Slightly underexposed and muted: **stone grey, black and navy**, with small touches of red and blue
+the only strong colour. A declining English town is in every frame; the eleven suits are the only black in
+a grey street. From the second pass on the camera breaks height (floor, table top, ceiling corner, inside
+an object) and there is **one light, no fill**, different in every scene.
+
+## Preamble(s)
+
+There is no single pasted preamble; the lock is a **four-part prompt shape** with a fixed close
+([`stills.md`](./stills.md) §"The style lock", distilled from the chosen still). The chosen still's own
+prompt (R3-4) is verbatim in [`look-tests.md`](./look-tests.md).
+
+**First pass (news register)** — the camera sentence and the close, word for word:
+
+```
+A news agency photograph, shot on a Canon EOS R3 with a [lens] from [a place a person could stand] at [time].
+```
+
+```
+The picture is slightly underexposed and muted: stone grey, black and navy, with small touches of red and blue the only strong colour. Nobody is aware of the camera. 16:9.
+```
+
+**Second pass onwards (the look Jack liked, kept in v3)** — [`stills.md`](./stills.md) §"Second pass",
+[`stills-v3.md`](./stills-v3.md):
+
+1. `A frame from a feature film, shot on 35mm with a [lens] lens [in a named physical place].`
+2. Something large and out of focus against the lens.
+3. The people: where each one is and what their face is doing (the Character carries how they look).
+4. One sentence saying what is behind them "and nothing else".
+5. `One light source only, no fill:` one named source, then where the shadow falls.
+6. The colour lock, word for word:
+
+```
+Muted colour: stone grey, black and navy, with small touches of red and blue the only strong colour.
+```
+
+With Characters attached, the prompt opens: `The named people are the attached Characters, with their own
+faces and clothes.` and closes `Visible 35mm film grain. Nobody looks at the camera. 16:9. Thanks.`
+(s01-breakfast, verbatim in `stills.md`).
+
+**The riot scenes** (from 8 October) attach `br5-riot-look` — a frame of our own `s08-march` clip (the
+officer laying the barrier), uploaded to Flow project `63d22c4b` — as the look reference. Jack: *"realistic
+and gritty, the flares, the camera being low to make it look scary, maybe add a dutch angle … really
+disorientating and cinematic."*
+
+## Rules for this story
+
+- **No director, film or person named in any Flow field.** Every habit is written as a camera position, a
+  lens and a light.
+- **Every frame names where its light comes from; one light, no fill.** One part of every dark frame is
+  clearly brighter than the rest, or it reads as a broken file.
+- **Every wide shot of the crew shows a cost** (shut shops, Denise small in the back, an empty saucer).
+  Someone is working in the frame where the scene allows.
+- **Something in the foreground**; **something specific to this town in every frame**.
+- **Red and blue arrive by accident**: smoke (best), flags on poles, plain knitted scarves with no badge,
+  bedsheet banners in red or blue paint, bin lids, Mr Red's and Mr Blue's ties. Never two crowds holding
+  red and blue cards (Jack: *"looks AI like"*).
+- **Crowds are ordinary people**, same sort and same anger on both sides; nobody stupid, ugly or drunk
+  ([`the-reader.md`](../../marketing/the-reader.md)). Hooded fire-starters are the risky frame.
+- **No logos on clothing; no lettering** except placards that are spelt in the prompt. A word in the prompt
+  can leak onto cloth ("BEDSHEET BENNER").
+- **A written lock, not the chosen still as a reference** for scene stills: a reference drags its own
+  building and crowd into every scene. The reference route is the fallback if scenes drift apart (and is
+  used for the riot via `br5-riot-look`).
+- **Tilt only where it means something**: a tilted horizon wears out fast and returned black wedges on wide
+  shots. A high shot keeps its subject only if it is high **and close**.
+- **Casting:** up to four Characters a still (the model's limit); anyone else is "men in black suits".
+  With a Character attached, say only where they are and what their face does. Attach the portrait as well
+  when the costume matters (Barry's hi-vis).
+- **Talking:** full narration with several narrator voices, **no lip-sync** (15 Oct 2026 call). Mouths on
+  screen are avoided.
+- **Engines:** stills Nano Banana 2, 16:9; clips Omni 1.1 Flash, 720p, 8 s, camera locked.
+- **Flow video is 16:9 or 9:16 only**; a 2.39 crop happens in Premiere.
+
+## Anchors
+
+- **The chosen still:** R3-4 *The bank in the haze*, candidate b, Flow media `5a6fed78` (candidate a
+  `ca40d2ae`), Flow project `64a6c82d-2e1c-4ce8-9668-f67980bd7f5e` ("Oct 06 - 13:31"). Prompt verbatim in
+  [`look-tests.md`](./look-tests.md).
+- **The riot look reference:** `br5-riot-look` in Flow project `63d22c4b`, from `images\scenes-v2\s08-march.jpg`
+  ([`stills-v5.md`](./stills-v5.md)). Also `br5-cafe` (the SOLD night still) and `br7-vault` as later scene
+  references ([`stills-v6.md`](./stills-v6.md), [`stills-v7.md`](./stills-v7.md)).
+- **Second-pass stills** Jack approved: `Desktop\Youtube Vids\animation\bank robbery\images\scenes-v2\`
+  (contact sheet `00-contact-sheet.jpg`). Not committed.
+- Per-pass prompts, word for word: `scripts/bank-robbery/br-stills-v3.json` … `br-stills-v10.json` and the
+  matching `br-clips-*.json`.
+
+## Cast
+
+Twelve Flow Characters, each with a Portrait, a Body and a custom Voice, in Flow project
+`63d22c4b-4bb8-46c6-81a1-ac598fc01030` ("Oct 06 - 14:23"). Ids, picked portraits and voice texts:
+[`characters/cast-portraits.md`](./characters/cast-portraits.md). Portrait recipe: plain dark grey studio
+backdrop, one large soft light, unretouched (pores, lines, slight asymmetry), expression written as
+muscles. **They are types, not people** — none may resemble anyone real.
+
+| Who | Flow Character id |
+| --- | --- |
+| Denise | `182650a9-67fe-4120-84b6-dfd1b8664c97` |
+| The Ex | `fe8bbaf3-8bc1-4a40-bf6c-94772b4fba79` |
+| The Fixer | `868e9f04-89f7-4c16-8b91-e814bda00206` |
+| The Donor | `90eddd2d-75e2-470b-809e-92f6196737de` |
+| The Governor | `3c37992a-ec0a-4c40-95af-824e6be1659a` |
+| The Proprietor | `bf7a293e-9ec4-44e8-b065-6b969fa6af60` |
+| The Presenter | `5f65f473-d436-4a95-b164-c912bd07ee69` |
+| The Platform | `98bcb127-358b-46b1-9100-1b07090e3d7a` |
+| The Accountant | `8332d003-7388-4db1-b0d8-cd9c287eef52` |
+| Mr Blue | `e377138d-c795-401c-b556-5676afa09706` |
+| Mr Red | `517dae07-ce42-4e19-93f8-4dc41d8e75d4` |
+| Mr Turquoise | `0c3d04e7-016d-4d20-a289-1708b264052f` |
+| Barry (the short) | `491aad1f-3e8f-4b07-b03c-b4b552edfda3` ([`short-shots.md`](./short-shots.md)) |
+
+The crew: men in their fifties and sixties in black suits, white shirts and thin black ties; Mr Red and
+Mr Blue in a red and a blue tie.
+
+## Places
+
+- **The greasy-spoon café** (scenes 1, 14; the short) — formica tables, tea urn, red and brown sauce
+  bottles, a steamed-up front window, kitchen hatch heat lamps.
+- **The high street and market square** — shuttered shops, a stained rendered wall, cobbles; the march,
+  the gap held by police barriers.
+- **The bank** — grey stone Victorian, tall columns, a wide flight of steps, warm lit windows; the vault in
+  cold strip light on brushed steel.
+- **The garage** (the plan) — one bare bulb over a model of the town.
+- **The fountain** (the end) — switched off, blue dusk, one precinct lamp.
+- **Denise in the rain** looking up as the café is sold (Jack, 8 Oct: the *Blade Runner* rain shot, never
+  named in a prompt).
+
+## Never
+
+- Teal and orange, "cinematic" as a bare word, everything blurred behind the subject — the AI default.
+- Two even lines of crowd holding coloured cards.
+- Football club crests, brand logos.
+- Stretched-lens flares (unsourced, but they put blue streaks on everything).
+- Eleven sharp suits in a clean frame (an advert for them).
+- A real person, film or director in any field.
+
+## Per part
+
+- **The riot / march (scene 8)** — low, steeply up, tilted, a flare by the lens, attached `br5-riot-look`
+  (from 8 October; `stills-v5.md` onwards). Cut 10 shows six one-second shots of the two sides shouting
+  (`stills-v10.md`).
+- **The short** (15 October, [`short-shots.md`](./short-shots.md)) — opens on real Second World War footage
+  ([`footage-ww2.md`](./footage-ww2.md)) into a painting on the café wall.
+- **Music video, "The Speakeasy Mint"** — LOCKED **K3a** (Jack, 2026-10-25; media `d81d7f7a`, Flow project
+  `dedd295f` "Oct 25 - 09:43"): sitcom figures with real-skin faces, every colour in thick oil brushstrokes,
+  wet cobbles, the small red moon. From scene 7 round 2 (2026-10-26) every prompt opens with the **"K3a
+  lit"** lead, verbatim from [`songs/mv-speakeasy-mint/script.md`](./songs/mv-speakeasy-mint/script.md):
+
+  ```
+  Prime-time adult animated sitcom characters with simple rounded cartoon bodies, flat colour and black outlines, but every face is painted with startling real skin: pores, stubble, wrinkles, wet tired eyes, real eyelids, far more lifelike than anything around it, no feature exaggerated. Every colour is laid on in thick visible oil brushstrokes.
+  ```
+
+  Then a ~150-word light block per scene (*time + weather → one key light with direction → bounded
+  practicals → value structure → warm/cold pair*). Jack: *"keep the real-skin faces"*. Name the crowd's
+  mix person by person ("young and old, men and women, Black, white and South Asian"); never write
+  "bakery" (it prints the word). 16:9, NB2, ×2. Picks per scene and the storyboard:
+  [`songs/mv-speakeasy-mint/storyboard.md`](./songs/mv-speakeasy-mint/storyboard.md).
+
+## History
+
+- **Round 1 and 2 look tests** (6 Oct): the four looks below tried on scene 9; two crowds holding red and
+  blue cards *"looks AI like"* (Jack). Round 3, the protest made real from seven press photographs, gave
+  the chosen still. All in [`look-tests.md`](./look-tests.md).
+- **First still pass** (news-agency camera, warm lamp plus cool daylight in every frame) read as AI:
+  everyone at standing height, two lights every time, nothing withheld. The second pass fixed it.
+- **The old grey look** — the standoff scene was cut whole at cut 9 partly because it was *"the old grey
+  look"* ([`review-cut8.md`](./review-cut8.md)).
+- **Music video style rounds** — 1930s rubber-hose cartoon brief → T sweep (red moon kept) → realism sweep
+  (Jack picked R5a, real-skin faces) → K sweep (K3a) → "K3a lit".
+
+### The suggestion board (6 October 2026, before the choice)
+
+*Kept as written. Asked for by Jack, 6 October 2026: "suggest cinematic realistic artistic styles for
+the images/video we make out of this… I'm thinking maybe like Heat or something." None of the four was
+chosen.*
 
 **Suggestions only.** When a look is picked, each shot still goes through `shot-craft` and then
 `flow-prompt`, one at a time.
 
-## Two things to know first
+### Two things to know first
 
 - **The generator follows a described camera, not a film's name.** We never put a film or a
   person in a prompt. So every look below is written as a recipe: the camera, the lens, the film
@@ -21,9 +200,9 @@ images/video we make out of this… I'm thinking maybe like Heat or something."
 - **Asking for "cinematic" gives the standard AI picture:** teal and orange, haze, everything
   blurred behind the subject. Each recipe exists to avoid that.
 
-## Four looks
+### Four looks
 
-### A. Cold money — the Heat look
+#### A. Cold money — the Heat look
 
 - **Ancestors:** Heat (1995), Michael Clayton (2007).
 - **Camera:** very wide 2.39 frame, the squeezed-lens kind that stretches lights sideways. A
@@ -37,7 +216,7 @@ images/video we make out of this… I'm thinking maybe like Heat or something."
 - **What it costs:** blue night with orange lamps sits right beside the AI default, so it needs
   the most care. It also fights a greasy spoon at nine in the morning.
 
-### B. Grey town — the observer look
+#### B. Grey town — the observer look
 
 - **Ancestors:** Ken Loach's recent films as shot by Robbie Ryan, Widows (2018), Dog Day
   Afternoon (1975).
@@ -51,7 +230,7 @@ images/video we make out of this… I'm thinking maybe like Heat or something."
   picture language our reader already knows.
 - **What it costs:** on its own it looks like a drama, not a heist.
 
-### C. Black suits, white walls — the Reservoir Dogs look
+#### C. Black suits, white walls — the Reservoir Dogs look
 
 - **Ancestors:** Reservoir Dogs (1992), the vault in Ocean's Eleven (2001).
 - **Camera:** very slow daylight film, a wide lens, everything sharp from front to back, almost
@@ -61,7 +240,7 @@ images/video we make out of this… I'm thinking maybe like Heat or something."
 - **What it gives us:** the suits pop. The most recognisable heist picture there is.
 - **What it costs:** it needs hard sun, which is not an English bank holiday.
 
-### D. Deadpan tableau — the locked-camera look
+#### D. Deadpan tableau — the locked-camera look
 
 - **Ancestors:** Roy Andersson's films, with a little of Succession.
 - **Camera:** a wide lens that never moves. Whole bodies in the frame. Everything sharp.
@@ -72,7 +251,7 @@ images/video we make out of this… I'm thinking maybe like Heat or something."
 - **What it costs:** flat even light is exactly what looks like AI, or like a broken file,
   unless one part of the frame is clearly brighter.
 
-## My recommendation: two looks, one for each side
+### My recommendation: two looks, one for each side
 
 **Look A for the crew. Look B for Denise and the street.**
 
@@ -90,7 +269,7 @@ images/video we make out of this… I'm thinking maybe like Heat or something."
   daylight, shot from far away on long lenses. The walk down the gap can be that: a long lens
   that stacks the two crowds up behind the suits.
 
-## How the look sits on each scene
+### How the look sits on each scene
 
 | Scene | Look | The light comes from |
 | --- | --- | --- |
@@ -107,7 +286,7 @@ images/video we make out of this… I'm thinking maybe like Heat or something."
 | 12, the standoff, and Denise's count | A, then B | The staff-room window with the SOLD sign across the road |
 | 13, the fountain | A | Blue dusk, one orange precinct lamp |
 
-## Rules from our own toolkit that apply to any look
+### Rules from our own toolkit that apply to any look
 
 From [`docs/cinematography/`](../../cinematography/README.md):
 
@@ -119,7 +298,7 @@ From [`docs/cinematography/`](../../cinematography/README.md):
 - **Something specific to this town in every frame.** Generic is what looks like AI.
 - **Something in the foreground.** A barrier, a sauce bottle, the back of a head.
 
-## Limits of the tools
+### Limits of the tools
 
 - **Flow video is 16:9 or 9:16 only.** The very wide Heat frame is not available for clips.
   The route is to frame the action in the middle band of 16:9 and crop to 2.39 in Premiere.
@@ -129,7 +308,7 @@ From [`docs/cinematography/`](../../cinematography/README.md):
 - **Snap zooms** (the Succession trick) are hard to get from a still turned into a clip.
   Premiere can do them afterwards.
 
-## How to choose
+### How to choose
 
 A small test, not a debate:
 
@@ -139,7 +318,7 @@ A small test, not a debate:
    in Flow.
 3. Pick by eye.
 
-## The research behind it
+### The research behind it
 
 One web pass by a research agent, 6 October 2026. **Read, not tested.** [S] the page was opened
 (through a tool that summarises the page, so wording is not checked letter for letter);

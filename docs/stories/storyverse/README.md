@@ -6,7 +6,8 @@
 > 2026-08-07, graduating the inbox seed
 > [`docs/ideas/storyverse-standalone.md`](../../ideas/storyverse-standalone.md).
 > Method: [`../../storytelling.md`](../../storytelling.md); tone:
-> [`../../voice.md`](../../voice.md).
+> [`../../voice.md`](../../voice.md); look and sound: [`look.md`](./look.md) and
+> [`sound.md`](./sound.md).
 
 The multiverse says every choice happens every other way, everywhere else — which
 is a very elegant way of telling eight billion people they don't matter. The

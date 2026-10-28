@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sameness gate for a round of Suno prompts (2026-10-23, widened 2026-10-24).
+"""Sameness gate for a round of prompts (Suno 2026-10-23, widened 2026-10-24; Flow too since 2026-10-28).
 
 Whatever words are identical across a round's prompts win, and every take comes out as one
 voice (Bank Robbery Rounds VB and GG: one shared delivery sentence -> "the same voice again").
@@ -16,9 +16,12 @@ REFINE rounds (Jack, 2026-10-24: "a very similar prompt … just change the voic
 take's own Style box as keep.txt. Its words may then be shared across the round — that is the brief —
 except its voice words, which still fail if shared. Every NEW phrase still has to be each prompt's own.
 
-Usage: scripts/suno/sameness.py round.json [keep.txt]
+Flow rounds (kind=flow) gate the "prompt" field: there is no voice, so any copied 6-word run fails
+and shared 3-word phrases are reported for the human to read.
+
+Usage: scripts/variations/sameness.py round.json [keep.txt] [--flow]
   round.json is either {"name": "style box text", ...}
-  or the writer's array [{"name", "style", "lyrics", "model", ...}, ...]
+  or the writer's array [{"name", "style", "lyrics", "model", ...}, ...] (Flow: [{"name", "prompt"}, ...])
 Exit 1 if any voice-ish phrase is shared, or any run of 6+ words is shared (a copied paragraph),
 in the Style boxes or the lyric directions.
 """
@@ -64,18 +67,23 @@ def check(texts, label, allowed=frozenset()):
     return bad, copied
 
 
-def gate(round_, keep=""):
+def gate(round_, keep="", kind="suno"):
     """round_: list of prompt dicts or {name: style}. Returns {name: [offending phrases]}.
-    keep: a REFINE round's reference Style box (its non-voice words may be shared)."""
+    keep: a REFINE round's reference box (its non-voice words may be shared).
+    kind: "suno" gates the Style boxes and lyric directions; "flow" gates the prompt text."""
     allowed = frozenset(s for s in shingles(keep, 3) | shingles(keep, 6) if not VOICE.search(s))
     prompts = round_ if isinstance(round_, list) else [{"name": k, "style": v} for k, v in round_.items()]
     offenders = defaultdict(set)
-    for field, label, get in (("style", "Style boxes", lambda p: p.get("style", "")),
-                              ("lyrics", "lyric [directions]", lambda p: directions(p.get("lyrics")))):
+    fields = ((("prompt", "Flow prompts", lambda p: p.get("prompt", "")),) if kind == "flow" else
+              (("style", "Style boxes", lambda p: p.get("style", "")),
+               ("lyrics", "lyric [directions]", lambda p: directions(p.get("lyrics")))))
+    for field, label, get in fields:
         texts = {p["name"]: get(p) for p in prompts if get(p)}
         if len(texts) < 2:
             continue
-        bad, copied = check(texts, label, allowed if field == "style" else frozenset())
+        bad, copied = check(texts, label, allowed if field != "lyrics" else frozenset())
+        if kind == "flow":  # no voice in a picture: only copied runs fail
+            bad = {}
         # The first prompt (in round order) that uses a shared phrase keeps it; only the others
         # rewrite. Sending ALL of them back made every writer change at once and collide again
         # (SR5, 2026-10-24: three passes, still failing). The rule itself is unchanged.
@@ -92,7 +100,9 @@ def gate(round_, keep=""):
 
 
 if __name__ == "__main__":
-    off = gate(json.load(open(sys.argv[1])), open(sys.argv[2]).read() if len(sys.argv) > 2 else "")
+    a = [x for x in sys.argv[1:] if x != "--flow"]
+    off = gate(json.load(open(a[0])), open(a[1]).read() if len(a) > 1 else "",
+               "flow" if "--flow" in sys.argv else "suno")
     if off:
         print("🔴 STOP — do not run this round. Send the shared wording back to the writer.")
     sys.exit(1 if off else 0)

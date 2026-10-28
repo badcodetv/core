@@ -72,7 +72,7 @@ before writing a prompt for a named engine.
 - **State constraints positively.** Most of these engines have no negative-prompt
   support and `no…`/`don't…` phrasing backfires, putting the unwanted thing into the
   prompt as content. Write `the bridge lights hold steady`, not `the bridge does not
-  move`. (`no cuts` and `no dialogue` are vendor idiom and safe, and so is our house lock line "The camera does not move.", which is proven across every GPOM clip.)
+  move`. (`no cuts` and `no dialogue` are vendor idiom and safe, and so is our lock line "The camera does not move.", which is proven across every GPOM clip.)
 
 - **Name exactly one ambient motion.** Given none, models tend to animate the whole
   frame; given one — *"the reflections shift on the dark water"* — the rest settles.

@@ -7,6 +7,10 @@ twice for the same lesson.
 Written 2026-08-21 out of the Camping duet re-cut: seventeen rounds, roughly six of them
 spent on a mistake the process below would have caught in one.
 
+This is the method for **refining** one song toward a take. An **exploring** round (a new voice or
+a new sound, "try different ones") runs through the `variations` skill — read
+[`same-song-traps.md`](./same-song-traps.md) first.
+
 ---
 
 ## 🔑 One variable per round — and the three boxes are ONE variable
@@ -33,19 +37,26 @@ slider rounds as you like — that is the cheap axis, and the weirdness 30/60 pa
 **Write each experiment as a self-contained block holding all three boxes** — no taste fence.
 Mechanics: [`automation.md`](./automation.md); enforcement is in `suno.mts`.
 
-## The three layers, and why they must stay separate
+## The layers, and why they must stay separate
 
-Every session produces three different kinds of writing. Mixing them is how a toolkit rots.
+Every session produces different kinds of writing. Mixing them is how a toolkit rots.
 
 | Layer | Lives in | Holds | Lifespan |
 |---|---|---|---|
 | **The sheet** | `docs/stories/<story>/songs/<song>.md` | the boxes you paste, plus the reasoning for each clause | until the song ships |
 | **The log** | `docs/stories/<story>/songs/<song>-prompt-history.md` | what failed each round and why; superseded prompt versions as revert targets | forever, read rarely |
-| **The rules** | `docs/suno-gpt/files/*` | what is true of **Suno**, not of this song | forever, read every session |
+| **The story's sound** | `docs/stories/<story>/sound.md` | the genre, voices, picked Style boxes and settings **this story** uses | as long as the story |
+| **The rules** | `docs/suno-gpt/files/*` | what is true of **Suno**, not of this song or story | forever, read every session |
 
 The test for which layer something belongs in: **would this sentence still be useful on a
 completely different song?** If yes it is a rule and it goes in `files/`, even if you only
 saw it once. If no it is a log entry.
+
+**A rule is a fact about the engine, written as a fact** ("the genre word picks the vocalist
+pool"), never a taste ("default to D&B", "keep a UK genre", "weirdness 30"). What worked for
+*this story* — a genre, a voice, a slider value — goes in the story's `sound.md`, not in `files/`.
+There is no BadCode house sound (Kai, 2026-10-28, [`STYLE.md`](../stories/STYLE.md)): a taste
+promoted to `files/` ends up in every song's prompt.
 
 **Promote the same round you learn it.** A lesson left in a song sheet is a lesson the next
 song pays for again. Camping's history file exists because the promotion habit was there

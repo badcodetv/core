@@ -30,7 +30,7 @@ judge him for kneeling; it judges the room. And it rhymes his kneeling with a
 modern person apologising before describing their own life
 ([Priya](./priya.md)) — one under threat, one for free.
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (drafted 2026-08-06 against the retired house style; a description, not a ruling on the look — see [`../look.md`](../look.md))
 
 Anchor figure — **the same man in every era-1 scene.**
 

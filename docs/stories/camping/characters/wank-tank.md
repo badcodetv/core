@@ -14,7 +14,7 @@ it drives him home from the Shard past the homeless (Scene 5), and he parks it
 inches from Bob's tent without a second thought (Scene 8). Treat it as a
 character: **the same vehicle in every appearance.**
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (Camping's look: hyper-realistic documentary photography — [`../look.md`](../look.md))
 
 - A very large, glossy black BMW SUV badged X8 — slab sides, huge blacked-out
   kidney grille, dark wheels, privacy glass. Immaculate, recently valeted, beading

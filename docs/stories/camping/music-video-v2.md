@@ -157,7 +157,7 @@ Thanks.
 ### mv2-2 — the doors open for him · *"you KEEP ON WALKING through that Waitrose door"* · still · written 2026-09-27, unrun
 
 Cast `@Bob` (slot 1) and `@Tarquin-new` (slot 2). Each is anchored to a named side (§26). The fascia is
-readable, per the 2026-08-26 ruling in [`style.md`](./style.md). 16:9 · x2.
+readable, per the 2026-08-26 ruling in [`look.md`](./look.md). 16:9 · x2.
 
 ```prompt
 SCENE:

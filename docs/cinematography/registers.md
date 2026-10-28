@@ -4,12 +4,14 @@ A register is a set of learned conventions an audience reads as "this kind of th
 a natural law: a viewer reads noir or horror because they have seen the codes before, not because
 the codes are inherently menacing.
 
-Three registers matter to us. One is the house look. One we use for the money film. One is the
-grammar our reader already owns, which we did not adopt — and that is an open question.
+Three registers matter to us. There is no BadCode house look (Kai, 2026-10-28): each story picks
+its register in its own `docs/stories/<story>/look.md`. The monumental one is GPOM's look. The
+documentary one is for the money film. The third is the grammar our reader already owns, which
+GPOM did not adopt — and that is an open question.
 
 ---
 
-## 1. 🔴 The monumental register — ours, and its problem
+## 1. 🔴 The monumental register — GPOM's look, and its problem
 
 **What produces it.** Symmetry plus a single hard motivated source in a mostly-dark frame reads
 as designed-to-dominate rather than lived-in. Deep converging perspective — a corridor, a
@@ -37,7 +39,7 @@ inhuman, corporate. Dust in the air scatters and softens — neglect, age, aband
 | Exhausted | Salgado | Bodies at the limit, crowding, monochrome |
 
 Note the first one: the leading tradition achieves menace by *subtracting* drama, not adding it.
-That is available to us and we have never used it.
+That is available to any story and none has used it yet.
 
 ### 🔴 The problem with this register
 
@@ -65,18 +67,19 @@ agency-asymmetry and a visible outside, and never softens the scale.
 ### The gate
 
 > **Before any monumental shot ships: is there a visible cost in this frame?**
+> *(Applies to any story whose look is monumental; GPOM's `look.md` carries it as a rule.)*
 > Wreckage, exhaustion, a body that failed, someone the system is failing.
 > If not, it is drifting toward celebration.
 
 This is the one test from brief 17 that the critic judged genuinely usable on a single still. It
 also happens to be the picture version of a rule we already ruled in writing on 2026-08-15
 (`the-reader.md`: never raise a fear without naming the beneficiary in the same piece). Two
-independent routes to the same rule.
+independent routes to the same idea.
 
 **Three weaker tests, kept for completeness:** massing into ornament (rarely applies — our shots
 have one figure, not a crowd); congealed-versus-ceaseless posture (needs bodies we don't have);
 and camera behaviour — a worshipful glide up a structure reads differently from a static hold
-while a small human crosses the bottom (only fires on video, and half our output is stills).
+while a small human crosses the bottom (only fires on video, and much of the work is stills).
 
 ### 🔴 And doing it on purpose does not protect you
 
@@ -109,7 +112,7 @@ at a safe distance — is a distinct and *greater* passion than the beautiful, a
 **obscurity and darkness** as its instruments: an unseen threat frightens more than a visible
 one. Kant's split is worth keeping: the *mathematical* sublime is sheer magnitude (a server hall
 running past the frame edge); the *dynamical* sublime is a force that could destroy you, viewed
-from safety. **Our machine shots are reaching for the dynamical sublime specifically.**
+from safety. **GPOM's machine shots are reaching for the dynamical sublime specifically.**
 
 **What kills awe**, following directly from the accommodation model: fast cutting (no time to
 fail to assimilate before the next image), showing the whole object in one clean establishing
@@ -142,7 +145,8 @@ rather than testimony, and documentary theorists split hard on whether that is e
 
 ## 4. British social realism — the register we did not choose
 
-The grammar closest to our target reader's own visual vocabulary, and we adopted its opposite.
+The grammar closest to our target reader's own visual vocabulary. GPOM's look is its opposite;
+any other story may choose it in its `look.md`.
 
 - **Ken Loach's naturalism is a deliberate refusal of beautiful cinematography** — long lenses
   shooting from a distance so actors forget the camera, available daylight, minimal movement.
@@ -165,16 +169,17 @@ The grammar closest to our target reader's own visual vocabulary, and we adopted
 
 ### 🔴 The tension, unresolved
 
-Arnold's frame refuses to make a person small. Our register's most load-bearing awe device is
+Arnold's frame refuses to make a person small. The monumental register's most load-bearing awe device is
 **one human-scale figure, visibly small against architecture**. Both are deliberate. They cannot
 coexist in one shot.
 
-**Our ruling (R2): pair, don't choose.** Monumental stays the default awe engine. Arnold's tight
-human-scale frame is a deliberate exception, spent on character beats inside the machine-scale
-story.
+**Our ruling (R2): pair, don't choose.** In a monumental look (GPOM's — see its `look.md`),
+monumental is the awe engine and Arnold's tight human-scale frame is a deliberate exception,
+spent on character beats inside the machine-scale story. A story whose `look.md` picks social
+realism inverts that.
 
 **What is NOT resolved (R1):** whether either register actually works on this specific reader.
-Nobody has evidence. The house look is not shown safe; social realism is not shown to be the
+Nobody has evidence. GPOM's look is not shown safe; social realism is not shown to be the
 answer. See [`principles.md`](./principles.md) §R1 — a human ruling is owed, and the cheap next
 step is running the visible-cost gate against three or four shipped panels.
 

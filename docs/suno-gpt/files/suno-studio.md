@@ -110,7 +110,7 @@ words"* problems, and MIDI is a words-free channel into the model. All three are
    workaround was "render the progression and Cover the audio at ~40". **Now: play the voicing in,
    render it to the instrument you want.** Not all G majors are created equal was the PM's own
    example — voicing-level control is the point of the feature.
-2. **Half-time drums — our single worst D&B blind spot** (§10.1). Controlled tests never got
+2. **Half-time drums — the worst blind spot we've hit on D&B (GPOM, Camping)** (§10.1). Controlled tests never got
    half-time out of a `breakdown` tag; the model appears not to hold the concept. **A drum pattern
    you program by hand doesn't need the model to hold the concept.** This is the most promising lead
    in the whole update for BadCode, and it is exactly the kind of claim to test before selling.
@@ -275,7 +275,7 @@ The flow, from the demo:
 
 Worth understanding what this is: a personal effects library nobody else has, described rather than
 coded. For BadCode the obvious targets are the things we keep hand-building — a phone-line EQ for
-the skit voices, a de-esser aimed at the 2–6 kHz sizzle that our D&B doctrine says to budget for, a
+the skit voices, a de-esser aimed at the 2–6 kHz sizzle that the D&B notes say to budget for, a
 telephone/answering-machine chain, a tape-warble for the future-broadcast register.
 
 Unverified: how good the DSP actually is, whether it survives complex requests, and whether the
