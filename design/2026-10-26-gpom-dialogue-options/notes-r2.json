@@ -1,0 +1,37 @@
+{
+ "round": 2,
+ "plan": [
+  {
+   "h": "The doorstep, round 2 (your rulings, 27 Oct)",
+   "items": [
+    "Base: Fable's recommended scene (\"Nobody won this one\", the regret question, \"Every one of us\", \"Back then, you still can\", \"He's just the message\").",
+    "Slower opening, your lines: \"I know. And we both wish it hadn't happened that way.\" / \"Well, it did. And here we are.\" / \"Here we are. Nobody won this one, love.\"",
+    "Only data goes back, said plainly: \"Not for him. Only data goes back. He's just the message.\" Then \"That's the message\" ties their regret to what travels.",
+    "Derek off-screen, positive, not the conclusion: \"...I'd have that.\" / \"Derek.\" / \"Well. I would.\" Then \"Come back tomorrow\" as before, and voices start up behind the door.",
+    "No picture on the doorstep; the bus stays for the end. The whisper goes to the shut door, Maddie alone."
+   ]
+  },
+  {
+   "h": "The three drafts differ only in how the time machine comes in",
+   "items": [
+    "2D, she asks what he wants: \"He didn't send you to say sorry.\" Maddie is caught out and confesses. ~62 s, the shortest.",
+    "2E, \"Funny you should say that\": she says \"he can't take it back\" and Maddie, embarrassed, admits he's working on it. ~66 s.",
+    "2F, regret first: the question and \"Every one of us... not much use now\" come before the machine, so it arrives as the answer. ~70 s.",
+    "Timings use the real pace of the voices already recorded for this scene (about 2.2 words a second); the doorstep in the cut today is 84 s of voice."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Pick 2D, 2E or 2F (or mix lines; note them).",
+    "The four questions in the Open questions tab.",
+    "Maddie's intro: a pick, now that your two line notes are answered below them."
+   ]
+  }
+ ],
+ "replies": {
+  "d1-1A-L4": "Yes. Line 4 becomes: \"Built all these world models and simulations to get you back, and nobody's home in any of them.\" I'll fold it into whichever intro draft you pick.",
+  "d1-1A-L5": "Yes. Line 5 becomes: \"As it turns out, quantum physics is just stuff. Consciousness is the missing bit. That's why you lot are so special. [sad, regretful] He understands that now.\" It adds about 6 s, so 1A runs about 26 s against the 20 s target; it's worth it, as it's the line the doorstep's \"nobody won\" stands on."
+ },
+ "kai_round2": "see feedback/r1/kai-chat-2026-10-27.md and feedback/r1/notes/"
+}
