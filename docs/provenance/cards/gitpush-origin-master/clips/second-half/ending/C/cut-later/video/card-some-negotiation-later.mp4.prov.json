@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/video/card-some-negotiation-later.mp4",
+ "made": "2026-10-28T17:27:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/ending/cut_end.py C --tag later",
+ "why": "Kai, 28 Oct: scene B cut; the card bridges A's stand-down to the long walk",
+ "prompt": "Some negotiation later.",
+ "settings": {
+  "font": "DejaVuSans",
+  "size": "34",
+  "duration": "2.5s"
+ }
+}

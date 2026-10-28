@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/preview.mp4",
+ "made": "2026-10-28T17:27:06+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/ending/cut_end.py C --tag later",
+ "why": "scene C round 7: the card, then the long walk (Kai, 28 Oct)"
+}

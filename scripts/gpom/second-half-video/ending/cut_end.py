@@ -3,6 +3,11 @@
 
     python3 scripts/gpom/second-half-video/ending/cut_end.py C            # scene C, the walk out
     python3 scripts/gpom/second-half-video/ending/cut_end.py C --no-preview
+    python3 scripts/gpom/second-half-video/ending/cut_end.py C --tag later   # scene B cut: "Some negotiation later."
+
+--tag X writes to <media>/cut-X/ instead of <media>/cut/, so the Premiere sequence built from the old cut keeps its
+files. --tag later (Kai, 28 Oct): scene B (the door) is cut from the film; C opens on a black card, "Some negotiation
+later.", then the long walk, with Maddie's two lines from the bunker exit moved onto it; C01b and C02 go.
 
 Modelled on ../cut3.py and reusing its machinery (bounds, regrade_v6, pingpong, sfx_adder, wind_file, write, edl,
 preview) by import; cut3's own outputs are untouched (its temp-file root is repointed here). Rules are new-scene
@@ -46,6 +51,11 @@ ENC = C.ENC
 C1_KEEP = False  # Kai reel at73: beat c1 (the door from inside) is cut
 ROUND_KEYS = ('file_round6', 'file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
+TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
+LATER = TAG == 'later'
+CARD = 'Some negotiation later.'  # Kai's words, 28 Oct
+CARD_D = 2.5
+FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 
 
 class Scene:
@@ -75,7 +85,7 @@ class Cut:
 
     def __init__(self, sc, seq, title, heading, intro):
         self.sc, self.key, self.seq = sc, sc.key, seq
-        self.dir = sc.media / 'cut'
+        self.dir = sc.media / (f'cut-{TAG}' if TAG else 'cut')
         self.vdir = self.dir / 'video'
         self.vdir.mkdir(parents=True, exist_ok=True)
         self.meta = dict(title=title, heading=heading, intro=intro)
@@ -262,36 +272,64 @@ def scene_c(sc):
                    'remade in two steps (the robot removed, then the canonical bot s3-bot-00b-a added back knee-high, sized '
                    'against a bag in frame) and re-animated: c01br5-t1 (6 s), C02r5-t2 (8 s; C02 is framed a little wider '
                    'than before and Omni drifts the camera). Bunting kept: this is outside the clean room.')
-    # ---- c2: into daylight (C01b, then C02). Maddie's joke gets them over the threshold.
-    s2 = t
-    b = c.beat('c2', 'Into daylight', s2, act='The walk out',
-               see='The first two edge out of the doors, squinting; more follow. Maddie\'s joke. Then the hundred file '
-                   'out of the hill; the kill bots\' track marks in the grass. Maddie leads out of frame.')
-    src1b = sc.clip('C01b')
-    d1b = fr(dur(src1b) - 1 / FPS)
-    c.pic(src1b, 0.0, s2, s2 + d1b, 'c2')
-    a = fr(s2 + 1.6)  # after the first steps out (C01b's man shades his eyes from ~1 s)
-    e = c.say('vox-maddie', sc.voice('c2-0-maddie'), 0.28, 1.68, a, 'c2 line 0 maddie: "Careful now, humans."')
-    c.line(b, 0, 'maddie', a, e - a, sc.text('c2-0-maddie'), by('c2-0-maddie'))
-    a1 = fr(e + 0.6)  # scene.json gap_before 0.6
-    e1 = c.say('vox-maddie', sc.voice('c2-1-maddie'), 0.20, 4.70, a1,
-               'c2 line 1 maddie: "I\'m fairly sure there\'s no radiation round here."')
-    c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c2-1-maddie'), by('c2-1-maddie'))
-    cut02 = fr(s2 + d1b)
-    c02_end = fr(cut02 + 7.0)
-    c02, gnote = match_grade(sc.clip('C02'), sc.clip('C03'), V / f"{sc.clip('C02').stem}-graded.mp4", strength=0.7)
-    c.pic(c02, 0.0, cut02, c02_end, 'c2', source=sc.clip('C02'))
-    m['c01b'] = (s2, cut02)
-    m['c02'] = (cut02, c02_end)
-    m['joke'] = e1
-    t = c.close(b, c02_end)
-    c.flags.append('Round 2 (Kai, at291): C01b re-made on mud (c01br3-t1): the ground outside the bunker is the same '
-                   'muddy track as the rest of the walk, no concrete; they step out onto it, more follow from ~3 s.')
-    c.flags.append('Round 1 (Kai, lc1-1): C01b (the first two edge out, more follow) plays whole before C02. '
-                   '"Careful now, humans." comes 1.6 s in, as they step out; the radiation line 0.6 s after it, and runs '
-                   f'{e1 - cut02:.1f} s over the cut into C02 so the hundred file out under the joke.')
-    c.flags.append('Colour: C02 is graded towards the first 4 s of the long walk it cuts to, so the two '
-                   'overcast exteriors match. ' + gnote + '.')
+    if LATER:
+        c.meta['intro'] = ('Scene C, round 7: scene B is cut (your call, 28 Oct: "it\'s just removed so much fluff"). '
+                           'The kill bots stand down at the end of A; then black, "Some negotiation later."; then the long '
+                           'walk, Maddie leading, with her "Careful now, humans." moved onto it. Play it, click any beat, '
+                           "clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude "
+                           "when you're done.")
+        b = c.beat('c0', 'Some negotiation later', 0.0, act='The walk out',
+                   see='Black. White words, small and centred: "Some negotiation later." Silence. Whatever was said at '
+                       'the bunker door, we never hear it.')
+        card = V / 'card-some-negotiation-later.mp4'
+        if not card.exists():
+            txt = V / 'card.txt'
+            txt.write_text(CARD)
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'lavfi', '-i',
+                            f'color=c=black:s=1280x720:r={FPS}:d={CARD_D}', '-vf',
+                            f"drawtext=fontfile={FONT}:textfile={txt}:fontsize=34:fontcolor=white:"
+                            "x=(w-tw)/2:y=(h-th)/2:alpha='if(lt(t,0.4),t/0.4,if(gt(t,2.1),(2.5-t)/0.4,1))'",
+                            *ENC, str(card)], check=True)
+        c.pic(card, 0.0, 0.0, CARD_D, 'c0')
+        m['card'] = (0.0, CARD_D)
+        t = c.close(b, CARD_D)
+        m['c01b'] = m['c02'] = (t, t)
+        c.flags.append('Round 7 (Kai, 28 Oct): scene B is cut from the film. C opens on a 2.5 s black card, "Some '
+                       'negotiation later." (DejaVu Sans, white, faded in and out, ffmpeg drawtext: Premiere cannot '
+                       'write text through the bridge), in silence. C01b and C02 (the bunker exit) are cut; Maddie\'s '
+                       '"Careful now, humans." / "I\'m fairly sure there\'s no radiation round here." play over the '
+                       'long walk instead, while she is alone in frame.')
+    if not LATER:
+        # ---- c2: into daylight (C01b, then C02). Maddie's joke gets them over the threshold.
+        s2 = t
+        b = c.beat('c2', 'Into daylight', s2, act='The walk out',
+                   see='The first two edge out of the doors, squinting; more follow. Maddie\'s joke. Then the hundred file '
+                       'out of the hill; the kill bots\' track marks in the grass. Maddie leads out of frame.')
+        src1b = sc.clip('C01b')
+        d1b = fr(dur(src1b) - 1 / FPS)
+        c.pic(src1b, 0.0, s2, s2 + d1b, 'c2')
+        a = fr(s2 + 1.6)  # after the first steps out (C01b's man shades his eyes from ~1 s)
+        e = c.say('vox-maddie', sc.voice('c2-0-maddie'), 0.28, 1.68, a, 'c2 line 0 maddie: "Careful now, humans."')
+        c.line(b, 0, 'maddie', a, e - a, sc.text('c2-0-maddie'), by('c2-0-maddie'))
+        a1 = fr(e + 0.6)  # scene.json gap_before 0.6
+        e1 = c.say('vox-maddie', sc.voice('c2-1-maddie'), 0.20, 4.70, a1,
+                   'c2 line 1 maddie: "I\'m fairly sure there\'s no radiation round here."')
+        c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c2-1-maddie'), by('c2-1-maddie'))
+        cut02 = fr(s2 + d1b)
+        c02_end = fr(cut02 + 7.0)
+        c02, gnote = match_grade(sc.clip('C02'), sc.clip('C03'), V / f"{sc.clip('C02').stem}-graded.mp4", strength=0.7)
+        c.pic(c02, 0.0, cut02, c02_end, 'c2', source=sc.clip('C02'))
+        m['c01b'] = (s2, cut02)
+        m['c02'] = (cut02, c02_end)
+        m['joke'] = e1
+        t = c.close(b, c02_end)
+        c.flags.append('Round 2 (Kai, at291): C01b re-made on mud (c01br3-t1): the ground outside the bunker is the same '
+                       'muddy track as the rest of the walk, no concrete; they step out onto it, more follow from ~3 s.')
+        c.flags.append('Round 1 (Kai, lc1-1): C01b (the first two edge out, more follow) plays whole before C02. '
+                       '"Careful now, humans." comes 1.6 s in, as they step out; the radiation line 0.6 s after it, and runs '
+                       f'{e1 - cut02:.1f} s over the cut into C02 so the hundred file out under the joke.')
+        c.flags.append('Colour: C02 is graded towards the first 4 s of the long walk it cuts to, so the two '
+                       'overcast exteriors match. ' + gnote + '.')
 
     # ---- c3: the long walk (C03 chain, unchanged: Kai, bc3 "excellent shot")
     b = c.beat('c3', 'The long walk', t, act='The walk out',
@@ -306,6 +344,15 @@ def scene_c(sc):
                         str(D3), '--keys', '0:1.6:420:380,1.5:1.6:425:380,9.6:1:640:360'], check=True)
     c.pic(c03, 0.0, t, t + D3, 'c3', source=chain)
     m['c3'] = (t, fr(t + D3))
+    if LATER:  # her two bunker-exit lines, over the walk: the first while she is alone in frame, before the reveal
+        a = fr(t + 1.0)
+        e = c.say('vox-maddie', sc.voice('c2-0-maddie'), 0.28, 1.68, a, 'c3 line 0 maddie: "Careful now, humans."')
+        c.line(b, 0, 'maddie', a, e - a, sc.text('c2-0-maddie'), by('c2-0-maddie'))
+        a1 = fr(e + 0.6)
+        e1 = c.say('vox-maddie', sc.voice('c2-1-maddie'), 0.20, 4.70, a1,
+                   'c3 line 1 maddie: "I\'m fairly sure there\'s no radiation round here."')
+        c.line(b, 1, 'maddie', a1, e1 - a1, sc.text('c2-1-maddie'), by('c2-1-maddie'))
+        m['joke'], m['c3_lines'] = e1, (a, e1)
     t = c.close(b, t + D3)
     c.flags.append('C03 unchanged (Kai round 1: "excellent shot"): opens at 160% on Maddie alone, holds 1.5 s, eases '
                    'out to 100% by 9.6 s so the hundred appear behind her. Music on it may change once it is in Premiere.')
@@ -474,7 +521,11 @@ def audio_c(c):
     x = C.level(C.decode(walk, off, d), rms=-21, peak=-3)
     ra, re_ = (v - s_in for v in m['c4_lines'])
     ca, ce = (v - s_in for v in m['c5_lines'])
-    x *= C.env(len(x), [(0, 0), (1.5, 1), (ra - 0.5, 1), (ra, 0.25), (re_ + 0.3, 0.25), (re_ + 1.2, 1),
+    pre = []
+    if LATER:  # under her two lines on the walk
+        ja, je = (v - s_in for v in m['c3_lines'])
+        pre = [(max(ja - 0.4, 1.5), 1), (ja, 0.5), (je + 0.2, 0.5), (je + 0.8, 1)]
+    x *= C.env(len(x), [(0, 0), (1.5, 1), *pre, (ra - 0.5, 1), (ra, 0.25), (re_ + 0.3, 0.25), (re_ + 1.2, 1),
                         (ca - 0.4, 1), (ca, 0.5), (ce + 0.2, 0.5), (ce + 0.8, 1), (d - 0.03, 1), (d, 0)])
     mx.add('mus-c-walk', x, s_in, walk, 'C-walk: lone violin and piano, the held cello note on the reveal')
     c.flags.append(f'Music unchanged (Kai: may change once it is in Premiere): C-walk enters on the long walk at '
@@ -483,24 +534,28 @@ def audio_c(c):
 
     # ---- sfx
     wind = C3.wind_file()
-    fx('sfx-wind', wind, 0, total, src_in=5, rms=-34, fi=0.8, fo=1.0, tile=True, what='wind on the downs (ffmpeg)')
+    w0 = m['card'][1] if LATER else 0  # the card is silent
+    fx('sfx-wind', wind, w0, total - w0, src_in=5, rms=-34, fi=0.8, fo=1.0, tile=True, what='wind on the downs (ffmpeg)')
     if m['c01'][1] > 1.0:
         fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', 0.3, m['c01'][1] - 0.3, src_in=40, rms=-47, fi=1.0, fo=0.6,
            what='the hundred in the bunker, shifting their weight; nobody walks')
-    fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', m['c01b'][0], m['c02'][1] + 1.2 - m['c01b'][0], rms=-38,
-       fi=0.8, fo=1.4, what='the hundred coming out, shuffling (crossfades into the chalk loop over the cut)')
-    fx('sfx-crowd', SFX / 'fs653920-crowd-small-walla.mp3', m['c02'][0], m['c02'][1] - m['c02'][0], rms=-44, fi=1.0,
-       fo=1.0, what='murmur as they blink at the sky')
-    fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', st['c3'] - 1.2, en['c4'] - st['c3'] + 1.2, src_in=8,
+    if not LATER:
+        fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', m['c01b'][0], m['c02'][1] + 1.2 - m['c01b'][0], rms=-38,
+           fi=0.8, fo=1.4, what='the hundred coming out, shuffling (crossfades into the chalk loop over the cut)')
+        fx('sfx-crowd', SFX / 'fs653920-crowd-small-walla.mp3', m['c02'][0], m['c02'][1] - m['c02'][0], rms=-44, fi=1.0,
+           fo=1.0, what='murmur as they blink at the sky')
+    f0 = st['c3'] if LATER else st['c3'] - 1.2
+    fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', f0, en['c4'] - f0, src_in=8,
        rms=-37, fi=1.4, fo=1.0, tile=True, what='a hundred pairs of feet on the chalk (held under the walk)')
     fx('sfx-crowd', SFX / 'fs189231-crowd-shuffling.mp3', st['c5'], 3.0, src_in=20, rms=-42, fi=0.2, fo=1.5,
        what='they stop')
-    fx('sfx-maddie', SFX / 'fs701647-bunting-fabric-flap.mp3', m['c02'][0], m['c02'][1] - m['c02'][0], src_in=4,
-       rms=-38, fi=0.4, fo=0.8, what='bunting in the wind')
+    if not LATER:
+        fx('sfx-maddie', SFX / 'fs701647-bunting-fabric-flap.mp3', m['c02'][0], m['c02'][1] - m['c02'][0], src_in=4,
+           rms=-38, fi=0.4, fo=0.8, what='bunting in the wind')
+        C3.loop_wheels(fx, 'sfx-maddie', m['c02'][0] + 0.2, m['c02'][1] - m['c02'][0] - 0.2, rms=-33, fi=0.3, fo=1.2,
+                       what='her wheels on the grass (loop)')
     fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-happy.wav', m['joke'] + 0.15, rms=-32,
        what='beep: happy (after the radiation joke)')
-    C3.loop_wheels(fx, 'sfx-maddie', m['c02'][0] + 0.2, m['c02'][1] - m['c02'][0] - 0.2, rms=-33, fi=0.3, fo=1.2,
-                   what='her wheels on the grass (loop)')
     C3.loop_wheels(fx, 'sfx-maddie', st['c3'], en['c3'] - st['c3'], rms=-32, fi=0.5, fo=0.5,
                    what='her wheels on the chalk track (loop)')
     for k in np.arange(st['c3'] + 1.0, en['c3'] - 1.0, 3.0):
@@ -563,6 +618,6 @@ def run(key, do_preview=True):
 
 
 if __name__ == '__main__':
-    keys = [a for a in sys.argv[1:] if not a.startswith('--')] or ['C']
+    keys = [a for a in sys.argv[1:] if not a.startswith('--') and a != TAG] or ['C']
     for k in keys:
         run(k, '--no-preview' not in sys.argv)

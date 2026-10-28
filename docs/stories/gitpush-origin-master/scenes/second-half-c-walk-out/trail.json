@@ -1,0 +1,13 @@
+[
+ {
+  "at": "2026-10-28T17:27:06+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah",
+  "what": "scene C round 7: opens on the card 'Some negotiation later.' then the long walk (0:47); scene B cut from the film",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end.py C --tag later && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-c-walk-out <out>",
+  "decided": [
+   "Kai, 28 Oct: \"let's try it this way. I think this is gonna be much better. It's just removed so much fluff.\""
+  ]
+ }
+]

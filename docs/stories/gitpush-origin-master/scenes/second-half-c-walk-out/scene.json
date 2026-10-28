@@ -383,10 +383,14 @@
       "note": "Maddie says 'Come in. Mind the step.' (not the AI); no talking face, beacon pulse on her words in post. Same shot (Kai: 'great shot')."
     }
   ],
-  "boards": {},
+  "boards": {
+    "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
+  },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/preview.mp4"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/preview.mp4",
+    "round": "later",
+    "what": "scene B cut from the film: black card \"Some negotiation later.\", then the long walk (Kai, 28 Oct)"
   },
   "round1": {
     "date": "2026-10-22",
@@ -417,5 +421,11 @@
       }
     },
     "current": "rough1"
-  }
+  },
+  "cut_history": [
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/preview.mp4"
+    }
+  ]
 }

@@ -9,3 +9,13 @@ Claude proposed the bridge: Maddie at the door, the old lady's look, the door sh
 > OK, yes, go for it. I really do... I think I agree with your idea for the bridge. Yeah, we could lose the... we can lose the time machine as a stated idea. I think that's actually more mysterious. I like it.
 
 Ruled: the doorstep talk (beat 17) is cut; the time machine is not stated at the door. Built as cut3.py --tag br.
+
+## Later, 28 Oct: cut scene B whole
+
+> I really, I'm leaning towards finding a clever way to cut straight to Maddy leading them away, walking almost. So like, we stamp down the kill bots, the kill bots go away. Then... In the walkout, we even skip past the actual bunker scene and we start here. [...] the kill bots could stand down and we could just cut to black and just say some negotiation later and then zoom out to here. And so the viewer doesn't know. [...] everything gets filled in by implication rather than us spelling it out.
+
+(his screenshot: the first frame of C03f-reveal, Maddie on the chalk track, the column behind)
+
+> Okay, Claude. Yeah, let's try it this way. I think this is gonna be much better. It's just removed so much fluff.
+
+Ruled: scene B is out of the film. C opens on "Some negotiation later." Built as cut_end.py C --tag later.
