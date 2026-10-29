@@ -10,6 +10,8 @@ song went 400+ takes as one voice (`docs/suno-gpt/same-song-traps.md`). Jack bui
 2026-10-24; Kai turned it into this skill on 2026-10-28 once the house style was removed from
 CLAUDE.md, memory and the skills (`docs/stories/STYLE.md`). What is left is the part that makes
 variety: **separate writers who cannot copy each other, and a gate that refuses shared wording.**
+A round is checked against itself here; a single prompt outside a round is checked against every past
+prompt by `scripts/variations/fresh.py` (a hook runs it before every Flow and `suno.mts` call).
 
 **You do not write the prompts. Not one word of them.** You collect raw inputs, spawn writers,
 run the gate, and run the round. Every step where the session paraphrases, retypes or "tidies"

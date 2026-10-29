@@ -69,6 +69,22 @@ description: those load into every session, and that is how one story's style be
 (400+ Bank Robbery takes in one voice; every story's images in GPOM's dark register). Rules and templates:
 [`docs/stories/STYLE.md`](./docs/stories/STYLE.md). Check: `python3 scripts/style-lint.py`.
 
+## Rules are a loose guide (Jack, 2026-10-29)
+
+Rigid rules fly in the face of creativity. **Every creative rule in this repo is a guide, not a
+gate**: the skills, the engine manuals, a story's `look.md` / `sound.md` (even a LOCKED part), the
+saved research and memory. Use what is useful as a starting point and leave room to experiment;
+when you depart from a guide, say which one and why. Not loosened, because they are not taste: the
+law and footage licences, no AI people composited into real footage, accounts and money, the logo,
+the coin's trust statement, and engine mechanics that simply fail otherwise (policy blocks, UI traps).
+
+**The same-prompt check runs on every prompt.** `scripts/variations/fresh.py` compares a new prompt
+with every prompt already sent (recipe cards, specs, rounds) and flags an identical prompt, a near
+copy, or habit phrases that have crept into many prompts. A hook in `.claude/settings.json` runs it
+before every Flow generation and every `suno.mts` call; for anything else (an AI Studio profile, a
+prompt Kai or Jack will paste by hand) run it yourself. It reports, it never blocks: rewrite the
+repeat, or keep it on purpose and say so. Exploring rounds still go through `variations`.
+
 ## Repo map
 
 | Path | What | Start here if… |

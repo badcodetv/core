@@ -43,6 +43,7 @@ they live in `docs/stories/bank-robbery/sound.md`, and reach a round only throug
 | 15 | **Changing the lyric words** | (checked every round) | `round.py gate` compares the words with `lyrics.txt` and sends any mismatch back |
 | 16 | **Covers / Remix** | BA | Jack (Bank Robbery): covers didn't work for that song. `round.py run` only creates fresh |
 | 17 | **"Keep the liked prompt, change the voice" done by hand** — splicing a voice sentence onto the box (BO) or rebuilding it from the repo's notes (KA) | BO, KA | REFINE round: put the liked take's own box in `keep.txt`. The `variations` writers each rewrite the *whole* box with their voice in it. The gate lets the kept box's words be shared, but never its voice words or any new wording (SR4, 2026-10-24) |
+| 18 | **The same prompt written outside a round.** A single prompt, a re-roll or a hand-paste drifts back to the wording of the last twenty, and nothing compared it with them | Flow and Suno, 2026-10-29 (Kai found the Suno trap in the videos) | `scripts/variations/fresh.py` compares every prompt with every past one (cards, specs, rounds); a PreToolUse hook in `.claude/settings.json` runs it before each Flow call and `suno.mts` call. It reports identical prompts, near copies and habit phrases; it never blocks |
 
 ## How to add a trap
 

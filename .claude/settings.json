@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__flow__flow_generate_image|mcp__flow__flow_generate_video|mcp__flow__flow_generate_batch|mcp__flow__flow_edit_image|mcp__flow__flow_refine|mcp__flow__flow_refine_video|mcp__flow__flow_scene_extend",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/variations/fresh-hook.py\"",
+            "timeout": 20
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/variations/fresh-hook.py\"",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}
