@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-25-16-26-31/03-b.jpg",
+ "made": "2026-10-29T16:59:27.980Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: the Chicago River at night, 1928, under the black iron underside of a raised bascule bridge. The camera sits right at the waterline, the lens half in the river: the top half of the frame is air, the bottom half is underwater, split by a ragged line of surface. Above, a tall, skinny man in a bowler hat with a heavy gold chain of office round his neck, long narrow face, hollow cheeks, pencil-thin grey moustache, kneels in a sinking wooden rowing boat with peeling green paint, tipping a galvanised bucket of soaked banknotes over the side, his cuffs drenched. Below the line, the sodden notes sink and their ink bleeds out in slow billowing clouds, violet, bottle green and rust orange, unfurling and marbling through the black water like dye in a tank. The only light is a carbide searchlight from a coal tug off frame left, its beam slicing down into the river and lighting the ink clouds from inside. Floating coal dust and a drowned felt hat drift through it. Above the waterline, deep black, the bridge girders just catching the edge of the beam. The banknotes are blurred, with no readable printing.",
+ "source_id": "1e26dd20-1e9b-4651-a5c6-d597ee3c1cad"
+}

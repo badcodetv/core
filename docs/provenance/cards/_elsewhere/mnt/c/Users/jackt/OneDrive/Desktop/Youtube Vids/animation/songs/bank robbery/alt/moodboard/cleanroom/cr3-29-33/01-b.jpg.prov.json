@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-29-33/01-b.jpg",
+ "made": "2026-10-29T17:01:53.016Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, January 1928, late afternoon in hard cold. The camera sits at knee height behind a wooden wheelbarrow at the very back of a long bread queue, tilted a few degrees, looking up the line toward a small bakery under the iron girders of the elevated railway; the bakery door sits small and off to the right third, far away. The wheelbarrow is heaped with bundled banknotes, their faces blurred and illegible, a cracked handle wrapped in rag. Ahead, the price grows backwards down the line: a woman in a man's overcoat clutches a canvas sack, a South Asian dock worker holds a fistful of notes, and at the front an old man holds out one coin. Snow is dry, trampled grey, banked against soot-crusted brick. The air is full of diamond dust: tiny ice crystals hanging in the low sun, each one flashing red, green and violet, and around the sun a huge pale halo ring with two bright rainbow sun dogs either side, the whole sky ringed in spectral colour over the black girders. Breath steams from every mouth. Skin chapped and raw, grain in the shadows. The shop window and every sign are frosted over and blank.",
+ "source_id": "82a00360-058c-4e7f-a7e6-5d0c3bde4dca"
+}

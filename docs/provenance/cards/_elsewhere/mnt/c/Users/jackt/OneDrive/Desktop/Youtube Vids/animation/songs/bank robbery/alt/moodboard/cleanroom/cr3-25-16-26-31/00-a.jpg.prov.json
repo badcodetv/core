@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-25-16-26-31/00-a.jpg",
+ "made": "2026-10-29T16:59:27.851Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: a windowless counting room under a Chicago bakery, 1928, night. The camera rests on a long scarred wooden table, level with a brown rat in the right foreground, nibbling the corner of a rubber-banded bundle of banknotes, its whiskers sharp. Behind it, out of focus, rubber-banded stacks of cash climb in leaning towers to the low ceiling, and three gangsters in chalk-stripe suits and fedoras hunch over the table counting under a single hanging lamp, ordinary specific faces: one pockmarked, one with a scar through his eyebrow, one chewing a toothpick. Against the back wall stands a large glass aquarium of murky green water and fat goldfish; the lamp shines through it, and the water throws a living net of rippling, bright green-gold caustic light across the stacks, the gangsters' hands and cheeks, the cigarette smoke and the rat's fur, with the orange flash of a passing fish. Everything outside that wobbling light is black. The camera is tipped slightly off level, the rat larger than the men. Every note, wrapper and ledger is blank or illegible.",
+ "source_id": "ba3fb763-8798-4873-be74-87eae59d4489"
+}

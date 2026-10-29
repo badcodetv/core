@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/08-a.jpg",
+ "made": "2026-10-29T16:41:55.726Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, late morning inside a marble bank lobby off LaSalle Street. The camera sits low and tilted at the edge of a loan desk, looking past a scuffed brass inkwell and a stack of blank, dog-eared forms. On the right, close and soft, a worker in his only suit, shiny at the elbows, frayed cuff, hat in his lap, leans forward. Across from him a thin clerk with round steel spectacles, celluloid collar and nicotine-yellow fingers. Far behind them, small and sharp, three gangsters in chalk-stripe suits and fedoras, one with a toothpick, one pockmarked, carry canvas sacks straight past a bored guard into an open round vault. The only light is noon sun falling through a cracked Tiffany stained-glass dome overhead: it lays heavy, saturated pools of ruby, cobalt and amber across the worn marble floor, the desk, the worker's lapels and the clerk's spectacles, each lens holding a tiny glowing coloured window. Dust hangs in the shafts, so the beams are solid coloured columns. The marble is grey-veined, chipped, scuffed by decades of shoes. Everything outside the pools falls into brown dimness. Every form, plaque and grille is blank, with no lettering anywhere.",
+ "source_id": "fa2ec6e3-7208-481b-a860-a2a36866c248"
+}

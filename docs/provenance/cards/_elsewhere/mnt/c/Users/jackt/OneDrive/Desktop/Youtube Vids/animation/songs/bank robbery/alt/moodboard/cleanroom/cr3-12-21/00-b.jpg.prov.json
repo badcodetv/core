@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-12-21/00-b.jpg",
+ "made": "2026-10-29T16:45:51.510Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, deep night in a vast brick basement under a bakery, a speakeasy built around a secret mint. The camera hangs high in the corner among sooty iron steam pipes, looking down at a steep tilt across the whole room. Three black iron printing presses on the left throw sheets of uncut banknotes into the air like confetti; the sheets drift everywhere. On a plank stage at the back, a band of gangsters in pinstripes plays trumpet, banjo and upright bass. Dancers in fringed dresses kick on a sawdust floor. Dead centre of the swirl, the mayor dances: a tall, skinny man in a bowler hat with a heavy gold chain of office round his neck, a long narrow face, hollow cheeks, a pencil-thin grey moustache. Above him turns a homemade mirror ball, hand-glued broken mirror shards on a wooden globe, lit by one hard carbon-arc spotlight. It throws hundreds of moving flecks of white, rose and lime light across the brick, the faces, the dancers' fringes and every falling banknote, so the air is full of glinting paper. Beyond the flecks, the room sinks into smoky darkness. Banknotes show only blank engraved swirls, no lettering anywhere.",
+ "source_id": "9efc86db-312c-4f7b-b66f-bf7207731c75"
+}

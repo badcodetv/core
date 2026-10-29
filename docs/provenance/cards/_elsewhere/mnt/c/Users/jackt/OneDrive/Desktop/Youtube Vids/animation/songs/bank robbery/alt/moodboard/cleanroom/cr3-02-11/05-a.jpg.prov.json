@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/05-a.jpg",
+ "made": "2026-10-29T16:41:55.599Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, Chicago, 1928, night: looking straight up from inside a storm drain, through the cast-iron bars of its kerbside grate, crusted with coal grit and dead leaves. High above, on a stone balcony draped with limp bunting, a tall, skinny man in a bowler hat with a heavy gold chain of office round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache, has just flung a handful of envelopes into the wind. The envelopes fall toward us. Press photographers on the balcony edge are firing flash-powder trays, and the frame is a stroboscopic multiple exposure: each burst freezes the falling envelopes at a different height, so every envelope leaves a ladder of ghost copies down the dark, and each flash comes through the red and blue bunting, staining its ghosts crimson, cobalt or bone-white. Flash smoke rolls in coloured clouds. At the grate's edges, hands in red scarves and blue scarves reach in, too late. The sky is starless sodium haze; the street is dry, gritty stone. The envelopes are plain and unmarked.",
+ "source_id": "4077fd35-32ad-4a11-8f79-683ba6124a74"
+}

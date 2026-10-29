@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-17-25-16/05-a.jpg",
+ "made": "2026-10-29T16:54:22.394Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: Chicago, 1928, a low-ceilinged brick basement under a bakery, after midnight. The camera sits on the flour-dusted floorboards between two pairs of scuffed work boots, tilted hard to the left, looking up at the wooden stairs in the top right of frame. Two American police officers in peaked caps and long blue coats are halfway down, one with a walrus moustache, one with ginger sideburns, each holding a tommy gun with the muzzle pointed straight up at the joists, their faces creased with confusion. Along the left wall stand four squat cast-iron printing presses, turned round with their backs open and stuffed with black bread tins, coals glowing under them. In the foreground, the band from the club stand stiffly in white baker's hats over their pinstripes, one still with a trumpet half-hidden behind a sack. Forgotten above them, the club's mirror ball still turns on its chain, and its hundreds of hard light flecks drift across the flour hanging in the air, the officers' coats, the brass of the presses and the bakers' sweating faces, white, amber and cold violet. The only other light is the orange coal glow; everything beyond it is unlit black. No lettering anywhere.",
+ "source_id": "e985ed1d-3c5b-49d9-ab33-8cba34467b86"
+}

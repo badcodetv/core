@@ -167,3 +167,48 @@ concat broke the timestamps into a 27-minute file) → `scripts/scene/build-time
 - `cleanroom/`: jack.md (his words, verbatim) + facts.md → ideas.md (3 ideas: running-board flank mount, road-level puddle, pursuer's windscreen) → w1–w3.md (one sealed writer per idea, STILL + VIDEO prompt each). Written with a copy of the sealed writer, now deleted because Kai retired it the same day.
 - Kai, 2026-10-28: no house style. The ALT look's rules now sit in `docs/stories/bank-robbery/look.md` → Per part (EXPLORING). Later exploring rounds use the `variations` skill (in-repo, Flow supported).
 - Next: run w1–w3 in Flow verbatim (stills, then Omni), then add them to the timeline page next to A/B/C.
+
+## 2026-10-29: scene 1 clean room, round 2 (stills only)
+
+Jack: *"take the clean room approach/not using the same prompts from the skills and repo … research the internet on how to make the stills for nb2.1 in flow, make sure to use the feedback from the last stuff, it all looked like ai slop so avoid that."*
+
+- **Research (web only, no repo):** `cleanroom/nb21-research.md`. Key: NB 2.1 adds less unasked detail, so specifics must be written in; narrative prose; describe what you want, not bans; wet ground turns to a mirror (go dry or pitted); one motivated light; drop "cinematic/8K"; "photograph" likely causes the cream borders (say "frame from a feature film, full-bleed").
+- **Round 1 run (yesterday's w1–w3 stills, verbatim):** `cr1-w1..3-a/b`. All still read as slop: wet glossy neon night, cocktail-glass neon, symmetrical theme-park street, posed gun. Written up in `cleanroom/baseline-r1.md` and fed to the round 2 writers.
+- **Round 2:** 4 stagings (`ideas-r2.md`): back seat of the getaway car · from up on the El · police windscreen · dusk out of an alley. One sealed writer each (`brief-r2-wN.md` → `r2-wN.md`), run verbatim, NB 2.1, 2 takes each: `cr2-w1..4-a/b`.
+- Flow: old project 706836d3 hung at 99% (too full to harvest), so the stills are in a new small project **a7d6fd04** ("Oct 29 - 15:31"). Media: `Desktop\Youtube Vids\animation\songs\bank robbery\alt\moodboard\cleanroom\`.
+- Same-prompt check flagged "a frame from a" in all four: kept on purpose (the research's fix for cream borders).
+- **Picks page:** https://claude.ai/artifact/KQ9DZ2SMQeadgD9RLGvHiJ (`cleanroom/picks-r2.json`). My read: w1 (back seat) and w3 (windscreen) look most like filmed footage; w2 is striking but a bit model-like; w4's flame double exposure is the boldest psychedelic layer.
+- Next: Jack picks → animate the pick in Omni (video prompt by a sealed writer with the same research) → timeline page beside A/B/C. If it works, the same clean-room recipe for the rest of the film.
+
+## 2026-10-29: clean room, round 3: the whole film's stills
+
+Jack: *"okay i love this new style, see this unlocks so much more stuff using this clean room approach, please remember this, please make the rest of the stills thanks"* and *"put them all on a picks page when done"*.
+
+- Remembered: memory `clean-room-stills-work`.
+- `cleanroom/beats-alt.md`: the story only, scene by scene in plain words, plus the cast sheet. `worked-r2.md`: what worked in scene 1, described from the images.
+- 8 sealed writers × 4 scenes (`brief-bN.md` → `bN.md`), each scene its own physical psychedelic layer. Parsed to `cr3-prompts.json`, run verbatim, NB 2.1, 16:9, 2 takes each: 64 stills, scenes 2–33.
+- Flow: each project hung at 99% after 3–9 prompts, so the run was split over 5 fresh projects (79bdb3a5, 46431cb6, ad92df99, 11347a6a, 136771bd, 1e2e6c6d); the hung prompt was re-run in the next project each time. Media: `alt\moodboard\cleanroom\cr3-*`.
+- No Flow Characters: the cast is described in the same words each time, so faces will drift between scenes.
+- My QC by eye: all 33 read as filmed, dry, one light, odd angles. Weak psychedelic layer: 2, 3, 15, 23a. Odd: 16b splits into three panels; 21 has a round vignette.
+- **Picks page:** https://claude.ai/artifact/FDhfSpoqe7mZia12t5NJ1H (`make_picks_r3.py` → `picks-r3.json`).
+- Next: Jack's picks → animation prompts the same clean-room way → Omni.
+
+## 2026-10-29: Jack's picks on round 3 (the whole film's stills)
+
+Jack: *"okay i picked all the ones i liked, please look at the notes as well. please make the videos for them ina  clean room way, making sure not to muddy the prompts with the same thing, or skills getting in the way, just research the internet on how to make them psychedelic. thanks"*
+
+- Picks (dump: `feedback/picks-r3/picks/`): 1 = w3b (police windscreen); 2 b, 3 b, 4 b, 5 b, 6 b, 7 b, 8 a, 9 a, 10 b, 11 b, 12 a, 13 b, 14 a, 15 b, 16 b, 17 b, 18 a, 19 b, 20 b, 21 a, 22 b, 24 b, 25 b, 26 b, 27 b, 28 b, 29 a, 30 b, 31 a, 32 a, 33 a.
+- Scene 23: no pick, note "redo these thanks". Redone by a sealed writer (`cleanroom/brief-s23.md` → `s23-redo.md`).
+- The picked stills, full quality, are in `Youtube Vids\animation\songs\bank robbery\alt\picked-cr\sNN.jpg`.
+- Next: video prompts by sealed writers from fresh web research on psychedelic Omni video (`cleanroom/omni-psych-research.md`), no repo or skill prompts.
+
+## 2026-10-29: clean-room clips, all 33 scenes (Omni Flash) + Premiere sequence
+
+- Research (web only): `cleanroom/omni-psych-research.md`. Eight sealed writers (`brief-v1..8.md` → `v1..8.md`), four scenes each in a row, each clip ending on something that cuts into the next scene's first frame. Parsed into `cleanroom/vid-prompts.json` (`motion` = the writer's, `run` = what was sent).
+- Scene 23 redone first (Jack: "redo these thanks"): sealed writer `brief-s23.md` → `s23-redo.md`, 4 stills in `alt/moodboard/cleanroom/cr4-s23/`. 23B takes have a readable "BAKERY" sign. **23A-b used as the start frame — my pick, Jack has not picked.**
+- Omni Flash, 16:9, 8 s, 2 takes, Frames start image. 64 clips in `alt/video-cr/`.
+- Policy blocks fixed with the smallest rewrite: 1 (gun lines dropped), 5 and 9 ("gangster" → "man"; 9 only passed when "red-haired lad … toothpick" became "man in his twenties"), 13 ("slumped … stays still" → resting, breathing). Jack, mid-run: *"keep ciggarettes thanks"* (kept on 5).
+- Flow refused the uploaded stills for 14, 15 and 31 every time (UPLOAD_REFUSED, across projects); animated from Jack's other still instead (`s14-alt`, `s15-alt`, `s31-alt`).
+- Flow quirks this run: a project goes bad after ~2 video calls (save timeouts, or take b harvested as a copy of the previous scene's b: s08-b and s11-b deleted, one take left). Fix used: a fresh project per clip.
+- Picks page: https://claude.ai/artifact/Amr1jYc2xur1QQCeb9Ju7Y
+- Premiere (Jack: *"once everything is done, uxp is open for premiere please make a new sequence with the new videos thanks"*): project `songs\bank robbery\bank robbery.prproj`, bin `Speakeasy ALT cleanroom clips` (all 64), sequence **`Speakeasy Mint ALT cleanroom 1`**, 1280×720 @ 24, 4:24: V1 = take a of every scene in film order, 8 s each, no song, no transitions. The b takes are in the bin. Frame export failed twice (nothing written), so not checked by eye in Premiere; the clips were checked by contact sheet before import.

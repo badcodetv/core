@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s04-a.mp4",
+ "made": "2026-10-29T18:51:19.057Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera, looking straight down the stairwell. Far below, the baker climbs one flight, pay envelope in hand, eyes up; above, the landlord in the fur collar leans further over the banister and stretches both palms down toward him. In the foreground the fishbowl acts as a liquid lens: the goldfish flicks across it and its tail stirs the water, and the stairwell seen through the glass twists into a slow turning spiral, the red landing and the hanging bulbs smearing into rings of red and gold that wobble with each ripple. As the fish passes, an orange streak of its body sweeps across the whole bent stairwell. In the last 2 seconds the camera drifts into the bowl until the glass edge fills the frame, splitting the light into a thin horizontal rainbow fringe against dark green-grey. Sound: footsteps on wooden stairs, water lapping. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s04.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s04.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "5ff284d3-5e22-4b48-bb18-1f804a9561a5"
+}

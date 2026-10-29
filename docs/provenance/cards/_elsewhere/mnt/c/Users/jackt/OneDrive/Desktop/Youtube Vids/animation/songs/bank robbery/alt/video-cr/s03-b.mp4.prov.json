@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s03-b.mp4",
+ "made": "2026-10-29T18:44:24.604Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera. The last coin tips out of the brown paper envelope and lands on the floured palm with a small bounce. Low dawn sun shines through the crate of green, blue and amber bottles behind, throwing pools of coloured glass light across the brick and the hand. The moth on the palm opens its wings and lifts off, fluttering slowly up through those coloured beams: its pale wings turn green, then blue, then amber as it crosses each one, and dust shaken from its wings hangs in the light like tinted smoke. The camera follows the moth up and to the left, toward the bottles, then pushes into the round mouth of a blue bottle, whose thick glass rings spiral inward around a dark centre. Sound: coin clink, a soft flutter. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s03.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s03.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "e486c563-c5c7-4e35-87d0-77fb3e8c11b2"
+}

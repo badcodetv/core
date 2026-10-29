@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s27-b.mp4",
+ "made": "2026-10-29T19:28:21.523Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera, the frame split at the waterline. The mayor in his sinking rowing boat under the iron bridge tips another bucket of soaked banknotes over the side, then scoops again; with each pour the river slops higher over the gunwale. Under the surface the wet notes bleed thick clouds of dye, like ink dropped in water on a light-show projector: purple, green and burnt orange billow, fold into one another and bloom outward through the lamp beam that slants down from the bridge, the light turning the clouds translucent. The sunk bowler hat turns slowly in the current. The camera sinks slowly below the waterline over the eight seconds, until the surface is a rippling ceiling above. In the last two seconds an orange dye cloud rises and swells up through the beam, filling the frame in roiling orange and violet. Sound: sloshing water, the bucket's clank, a dull underwater hum. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s27.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s27.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "44072e3e-9857-44d0-9ee2-d0685ca3479c"
+}

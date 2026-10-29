@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/03-b.jpg",
+ "made": "2026-10-29T16:41:55.541Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: night, the narrow back stairs behind a Chicago bakery, 1928, a plain dented steel door with a small sliding slot at eye height. The only light comes out of the open slot: inside, behind the door, a revolving mica lampshade painted with coloured fish and stars turns on a lamp, so a band of light spills out through the slot carrying drifting shapes of ruby, sea-green, saffron and violet. That moving band lies across the face of a heavy-set gangster in a chalk-stripe suit and a crushed brown fedora, pockmarked cheeks, a scar through one eyebrow, a toothpick in the corner of his mouth, leaning in close to murmur the password. The coloured shapes slide over his nose, his teeth and the curling smoke from his cigarette, which catches them like a projection screen. In the slot, two wary bloodshot eyes look out. The camera is low on the stairs below him, crooked, his chin and the slot filling the upper right; the rest of the stairwell falls to pure black. Scuffed steel, chipped green paint, a burst coal sack on the bottom step, cigarette ends ground into the boards. Grain, real skin. The door, walls and slot carry no lettering at all.",
+ "source_id": "9b3de1e1-f174-4812-97da-fe39c426ad77"
+}

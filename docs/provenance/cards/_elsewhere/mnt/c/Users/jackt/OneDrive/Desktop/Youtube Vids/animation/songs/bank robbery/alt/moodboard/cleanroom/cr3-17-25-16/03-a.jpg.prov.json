@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-17-25-16/03-a.jpg",
+ "made": "2026-10-29T16:54:22.332Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, four in the morning, a vast brick vault dug under the city, its arched ceiling black with coal soot. The camera hangs high in a corner behind a rusted iron railing, tilted hard so the floor runs downhill across the frame. A burst steam pipe from the furnace below hisses along one wall, and its steam fills the vault in slow rolling banks; two lamps cut solid shafts through it, a green-shaded work lamp on the left and a caged amber bulb on the right, so the air itself becomes glowing slabs of emerald and honey that overlap into strange turquoise where they cross. Through the steam, gangsters in chalk-stripe suits and fedoras, one scarred, one with a toothpick, shirtsleeves rolled, strain to push wooden wheelbarrows piled with rubber-banded bundles of cash up a sagging scaffold plank onto a mountain of money that fills the right of the frame and rises out of sight. Bundles have tumbled into puddles of condensation on the cracked brick floor; a barrow wheel is wrapped in tape. Deep black beyond the beams. All banknotes, crates and walls carry no readable lettering.",
+ "source_id": "98544fc1-dd1f-4654-b416-c05e13fb3408"
+}

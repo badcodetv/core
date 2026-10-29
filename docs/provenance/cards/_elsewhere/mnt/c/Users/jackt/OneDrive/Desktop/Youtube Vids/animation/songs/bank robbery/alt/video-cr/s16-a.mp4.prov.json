@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s16-a.mp4",
+ "made": "2026-10-29T19:42:41.220Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed. The frame keeps its three panels. In the centre the red-scarf man and the blue-scarf man stay nose to nose, shouting, foreheads pressed together, breath steaming, the same pay envelopes sticking out of their pockets; their faces stay as they are. On the left a man swings the burning red flare in a wide arc, and on the right a man swings the blue lantern; the camera's long shutter drags each light into long glowing ribbons of red and blue that trail through the air like light painting, and the ribbons spill across the black dividers into the centre panel, washing one face red and the other blue. After 6 seconds the camera pushes right into the blue lantern's glass chimney; the flame bends through the curved glass and the light breaks into sliding bands of green and magenta that fill the frame. Sound: the flare hissing, crowd roaring. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s16.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s16.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "62ed78df-c0ba-40f5-8900-870abf6f4d7e"
+}

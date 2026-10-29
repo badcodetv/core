@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s17-a.mp4",
+ "made": "2026-10-29T19:14:51.686Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. Low angle in a smoky speakeasy cellar: the mayor walks arm in arm with the ginger red-carnation man and the black-bobbed blue-carnation woman, the three of them doing a stepping dance toward camera while the pinstriped band plays around them, the drummer kicking the bass drum, the banjo strummed. On the left, the old brass lantern projector is a liquid light show: coloured oil and dye pressed between hot glass plates bubble and spread, and its beam throws slow-crawling blobs of magenta, green and orange across the ceiling beams, the brick wall and over the three dancers' faces and coats, the blobs splitting and merging as the oil heats. The camera stays low and dollies slowly forward with them. In the last two seconds the camera swings left and pushes straight into the projector's round glowing lens until its white circle of light fills the frame. No on-screen text, no captions, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s17.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s17.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "28250ba4-c80d-4555-b487-ca5bd9db4bfb"
+}

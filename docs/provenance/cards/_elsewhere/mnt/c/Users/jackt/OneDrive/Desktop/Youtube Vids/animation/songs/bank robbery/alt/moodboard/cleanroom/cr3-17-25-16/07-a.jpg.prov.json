@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-17-25-16/07-a.jpg",
+ "made": "2026-10-29T16:54:22.451Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: the deepest cellar under a Chicago bakery, 1928, seen from very high in the corner of the ceiling, looking straight down a riveted black iron heating pipe that runs from the camera to the floor far below. The pipe climbs the soot-crusted brick wall from a huge squat furnace and ends dead against the ceiling right beside the lens, capped with a rusted plate, going nowhere. Far below, a stoker in a sweat-soaked singlet, his arms black with coal dust, swings a flat shovel heaped with bundled banknotes into the open furnace door. The dyed paper burns strangely: the flames lick out in sheets of copper green, blue and violet among the orange, and that shifting coloured fire is the only light in the room, throwing the stoker's long shadow up the wall and lighting the floating ash, the heap of unburned notes on the dry stone floor, the split sacks and the coal shovel scratches. The rest of the cellar falls away into deep black. Heat ripples the air above the furnace mouth. No lettering on the notes or the furnace.",
+ "source_id": "96feaf10-94d9-4f01-b279-86b85f1f75ae"
+}

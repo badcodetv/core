@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s23-a.mp4",
+ "made": "2026-10-29T19:22:57.721Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts. The bakery at dawn, the two officers in the open doorway with a loaf under each arm, tipping their caps. They turn and walk out onto the street, heavy coats swinging, and walk away from the door. Green light pours up out of the open trapdoor in the floor through a rising vapour. The psychedelic layer is a liquid light show: the trapdoor light is shining up through something bubbling below, so slow blobs of emerald, teal and gold slide and split across the pressed-tin ceiling and over the counter, like coloured oil swirled between glass plates on a projector. The blobs grow bigger and move faster as the vapour thickens. Camera locked off for five seconds, then tilts down and pushes slowly into the glowing trapdoor until green light and vapour fill the frame. Real-time speed, vintage film camera. Sound: a shop bell, a low bubbling from below. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s23.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s23.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "2147e6e8-921f-4cf5-8dad-b437086fb43f"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s29-b.mp4",
+ "made": "2026-10-29T19:36:21.744Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. The tenement stands cut open in the snow, floor by floor. The coloured patterns on its inner walls are a liquid light show: oil and dye pressed between hot glass plates on an overhead projector. Over the first four seconds the projector heat makes the oil bubble and creep upward, orange and gold from the furnace floor sliding up into the green of the middle floors, then thinning into cold violet at the attic beams, where grandma sits still beside her candle. The workers below keep turning the press handles in one steady rhythm. From 5 seconds the camera tilts slowly down off the building onto the snowy street, where steam rolls low across the frozen ruts. Sound: press machinery clanking, wind. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s29.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s29.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "cb04e1ea-2fbe-4404-943c-454a0f43a9fc"
+}

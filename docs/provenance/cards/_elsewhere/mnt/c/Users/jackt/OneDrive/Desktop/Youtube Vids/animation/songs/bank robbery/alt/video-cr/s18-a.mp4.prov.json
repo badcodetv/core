@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s18-a.mp4",
+ "made": "2026-10-29T19:16:17.261Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. Through the studio window glass, the mayor in his bowler grins into the round chrome microphone and turns a page of his script; behind him to the left the man in the doorway flicks through a wad of cash. The valve tubes on the transmitter at left glow brighter and dimmer in purple and orange, pulsing like a heartbeat, and the red lamp above the door blinks on. The camera pushes slowly in on the chrome ball of the microphone: its convex surface holds a bent, fish-eye reflection of the mayor's grinning face, and as we close in the curved chrome stretches the purple valve glow and the red lamp into long bending ribbons of colour that wrap round the ball. In the last two seconds the reflection warms to amber as the camera fills the frame with the glowing curve of the chrome. No readable words, no on-screen text, no captions, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s18.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s18.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "e2e7c40f-1e9c-4ab5-8c46-78bccf96271c"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr2-w1-b.jpg",
+ "made": "2026-10-29T15:36:16.930Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a 1928 crime feature, full-bleed 16:9: the back seat of a black Packard sedan at night, under the girders of Chicago's elevated railway, on a dry street. The camera sits low on the cracked horsehair seat cushion behind the driver, wide lens, tilted a few degrees, looking forward and to the right. In the front passenger seat, off-centre to the right, a heavy man in a soot-flecked brown overcoat leans half out of his wound-down window, a Thompson submachine gun in his bare hands pointed straight up at the night sky, his face turned away. Close in the left foreground, a crushed felt hat and a spilled pack of cards on the seat. Through the small oval rear window, two police headlamps and a red spotlight swim in the glass. The rattling car's side windows are old rippled, bevelled plate glass, and the blue-green mercury lamps on the elevated iron pass through them and break into thick prismatic bands of violet, amber and green that slide across the worn upholstery, the man's coat and the gun's walnut stock, while the girders throw hard black bars over everything. One dim dashboard bulb, deep shadow, grain, slight lens halation. No text or lettering anywhere.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2aa322e9-7542-4a80-aa7d-145cccb8b0b7"
+}

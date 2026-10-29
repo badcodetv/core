@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-31-33/02-b.jpg",
+ "made": "2026-10-29T17:04:02.768Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, deep night. The camera looks down from a second-floor tenement window, high and steeply angled, off-centre, through a hanging net-lace curtain close to the lens. Below lies the street under the elevated railway where the car chase ran, now completely empty: dry pavement, a long black getaway sedan abandoned askew across the tram tracks with both doors open, a crushed fedora in the gutter, one red scarf and one blue scarf lying tangled together on the kerb, scattered playing cards. Down the street the bakery's cellar hatch stands open, a faint warm glow rising from it. The fine weave of the lace diffracts every light: each street lamp, the El's signal lamps and the cellar glow bloom into large soft star-crosses and rings of rainbow colour, magenta, gold and green spokes radiating across the dark girders and black sky, the curtain's pattern itself softly visible as a veil. One real light per pool, deep unlit black between them, coal soot on the brick, steam drifting from a grate. Every shopfront and sign is dark and blank.",
+ "source_id": "42ca534a-8963-47b8-925c-f9d85fd1448c"
+}

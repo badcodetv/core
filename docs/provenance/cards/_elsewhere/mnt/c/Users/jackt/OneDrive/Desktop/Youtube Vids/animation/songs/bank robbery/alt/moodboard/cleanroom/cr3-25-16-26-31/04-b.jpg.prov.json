@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-25-16-26-31/04-b.jpg",
+ "made": "2026-10-29T16:59:28.021Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9, divided down its centre by a soot-crusted brick chimney flue rising through a Chicago tenement, 1928, the camera pressed close to it and tilted ten degrees. Left of the chimney, the secret mint in the basement: three gangsters in chalk-stripe trousers and rolled shirtsleeves, braces down, faces running with sweat, one with a burn scar on his forearm, one chewing a toothpick, feeding the furnace with a coal shovel; the air above the open firebox ripples with heat haze that bends the furnace glow into wavering bands of orange, rose and violet across their wet skin. Right of the chimney, the attic at the same instant: an old woman with a deeply lined face and a mole on her cheek, a grey wool shawl over her head, her cheek and palm flat against the cold bricks for the warmth passing up inside them, frost on her eyelashes, a candle burnt to a stub on a saucer. Behind her the window is grown over with frost ferns, and the streetlamp outside breaks through them into fine spectral needles of ice blue, green and pale gold. Bare boards, a cracked enamel jug with frozen water. No lettering anywhere.",
+ "source_id": "2991c7f3-5a61-45bf-b9b4-ae4eb12d6df3"
+}

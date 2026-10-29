@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s32-b.mp4",
+ "made": "2026-10-29T19:39:32.833Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. The mayor stands backed against the furnace holding the tiered cake on its big silver tray, his hands trembling. Behind him the crowd lifts their red, green and blue railway lanterns one by one and steps closer. The tray works as a curved funhouse mirror: each raised lantern appears in its polished rim as a stretched blob of colour, and as the tray shakes the blobs slide, smear and orbit round the curve like a slowly turning colour wheel. The furnace grilles at right pulse orange. The camera pushes in slowly over the cake toward the rim of the tray. In the last two seconds one lantern reflection swells to fill the frame and flares into a hard white star-shaped glint. Sound: furnace roar, lantern handles creaking. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s32.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s32.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "63658905-748e-4411-aad9-1e608e7bf8b8"
+}

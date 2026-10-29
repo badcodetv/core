@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s14-alt-a.mp4",
+ "made": "2026-10-29T19:44:17.249Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, filmed from behind the mayor on the bandstand. The magnesium tray in his raised hand flares; the flash pulses brighter and sparks spit upward, and the coloured smoke clouds, red, pink, yellow and teal, roll outward and billow over the crowd, lit from inside by the flash so each cloud glows its own colour. The crowd's faces flicker as the flash catches them, turning to stare up. On the right, behind the smoke, the black getaway car pulls away from the bank steps, heavy on its springs, wheels spinning on the snow, and rolls out of frame at a believable speed. The camera tilts slowly up and left as the smoke thins; after 6 seconds the flash dies to a single small point of light hanging in the drifting colour, glowing like a street lamp globe. Sound: a magnesium whoomph, an engine revving away. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s14-alt.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s14-alt.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "b976bfa5-6985-4011-a56b-2652ea32d47f"
+}

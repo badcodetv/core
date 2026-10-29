@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-25-16-26-31/02-a.jpg",
+ "made": "2026-10-29T16:59:27.928Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: a cramped bakery counter in Chicago, 1928, late morning, under the elevated railway. The camera sits inside the curved glass bread case, low, looking up through two warped panes and a single crusty loaf on a paper doily. Beyond the glass, a heavy-set Black man in his fifties, shaved head, broken nose, double chin, sweat-stained vest, flour on his forearms, pushes a creased brown pay envelope across the scarred oak counter with two fingers, not letting go yet. Taking it, cut off at the shoulder on the frame's right edge, a gangster's hand in a chalk-stripe cuff, pockmarked jaw and a toothpick just in view. Behind them a chalkboard with the price smeared out by a thumb and chalked again over the ghost, all strokes blurred and illegible. One hard shaft of sun through the street window hits a row of glass sweet jars and a cut-glass cake stand on the shelf, and the glass breaks it into wobbling caustic rainbows, violet, green, amber, crawling over the baker's knuckles and the envelope, and lighting the drifting flour dust in the air like coloured snow. The rest of the shop falls into soft brown shade. The glass carries no lettering.",
+ "source_id": "103fa9c1-47e1-49fd-a5fe-1682ad7acc2e"
+}

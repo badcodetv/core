@@ -211,7 +211,15 @@ Mr Blue in a red and a blue tie.
   A realistic prohibition-era world with exaggerated cinematic light and colour, and one psychedelic "layer" per
   scene laid over a real base. Settings change through transitions (e.g. fire into fire). Lynch-style odd vantages.
   Jack said on 2026-10-28 that most of the film "looks like ai slop", so scene 1 is being redone as a sealed round (internet research only), in
-  `songs/mv-speakeasy-mint-alt/cleanroom/`. Future rounds use the `variations` skill. Nothing is locked yet.
+  `songs/mv-speakeasy-mint-alt/cleanroom/`. Nothing is locked yet.
+  **2026-10-29:** Jack loved the clean-room stills (*"i love this new style"*). All 33 scenes now have clean-room stills
+  and clips (Premiere sequence `Speakeasy Mint ALT cleanroom 1`). The look that worked:
+  - Dry streets, not wet gloss.
+  - One motivated light.
+  - Odd vantages.
+  - A different physical psychedelic layer per scene, coming from an object in the shot.
+  - Each clip ending on something that cuts into the next scene.
+  Engine notes: [`../../google-flow/2026-10-29-clean-room-sweep.md`](../../google-flow/2026-10-29-clean-room-sweep.md).
   What has held so far (record: [`songs/mv-speakeasy-mint-alt/picks.md`](./songs/mv-speakeasy-mint-alt/picks.md)):
   - Lead that killed the cream baked-in borders that "photograph" caused (0/44): `A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge.`
   - Name the physical cause of a layer, never "psychedelic / trippy / neon".

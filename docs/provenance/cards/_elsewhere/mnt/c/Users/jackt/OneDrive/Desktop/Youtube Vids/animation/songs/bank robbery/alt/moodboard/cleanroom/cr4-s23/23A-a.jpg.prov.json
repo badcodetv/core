@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr4-s23/23A-a.jpg",
+ "made": "2026-10-29T18:31:34.153Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: Chicago, 1928, a bakery on the South Side just before sunrise. The camera sits low behind the counter, right at the lip of an open trapdoor in the floorboards, so the rough edge of the hatch and its iron ring fill the bottom left corner. Up out of the hole pours a hard, sour green light, the only strong light in the frame: it rakes up the underside of the scarred wooden counter, the cast-iron till, the flour sacks and the bread racks, throwing their shadows up onto the pressed-tin ceiling. Hot air from the furnace below rises through that light as a visible shimmer, bending everything beyond it like a mirage, so the open front door ripples and sways. In the doorway, off to the right and walking out onto a dry, grey, coal-gritted street, two American police officers in peaked caps and long blue coats, one with a walrus moustache, one with ginger sideburns, each with a fat loaf tucked under his arm, half-turn back and tip their caps. Flour dust hangs in the green air. Outside, a thin pale dawn, overcast, starless.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "33e42835-84dc-40d2-a661-a587025a22e4"
+}

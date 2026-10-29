@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s10-b.mp4",
+ "made": "2026-10-29T19:06:47.691Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera. The worker in the worn suit turns his hat slowly in his hands; the clerk with round spectacles keeps writing and does not look up. Behind them the men walk steadily past with their sacks toward the open vault, at an ordinary walking pace. A cloud passes over the stained-glass dome: the coloured beams dim, then return brighter, and the pools of red, blue and gold light slide slowly across the marble floor and over the walking men's coats. In the foreground, the light catches the cut-glass inkwell and its facets split it into small rainbow prisms that crawl across the loan papers. Camera starts locked off, then after four seconds drifts left and pushes slowly past the desk toward the round steel vault door, as the coloured beams settle on its circular face in rings of colour. Sound: a pen scratching, footsteps echoing on marble. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s10.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s10.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "50eac2a2-2672-4770-93f3-3fc9ef7f7ed1"
+}

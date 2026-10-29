@@ -90,6 +90,7 @@ untiered, undated claim is indistinguishable from a guess in six weeks.
 | --- | --- | --- |
 | [`nano-banana-2.md`](./nano-banana-2.md) | Gemini 3.1 Flash Image **+ Nano Banana Pro** (Gemini 3 Pro Image) | Flow's **default image model**, all users, zero credits — and the Pro sibling in the same picker |
 | [`omni-flash.md`](./omni-flash.md) | Gemini Omni Flash | Flow video, requires AI Plus / Pro / Ultra |
+| [`2026-10-29-clean-room-sweep.md`](./2026-10-29-clean-room-sweep.md) | NB 2.1 + Omni Flash | The clean-room method that beat "AI slop"; Omni policy blocks, refused uploads, a fresh project per clip |
 
 ## The one distinction that will bite you
 

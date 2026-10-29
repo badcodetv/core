@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/02-b.jpg",
+ "made": "2026-10-29T16:41:55.497Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: a wide, high, vertiginous view straight down the stairwell of a five-storey Chicago tenement, 1928, grey morning light falling from a grimy skylight above. In the near foreground at upper left, huge and close, a landlord in a moth-eaten fur collar leans on the banister with his gloved palm turned up and out, waiting. On the landing shelf right beside the lens sits a round glass goldfish bowl, and half the frame is seen through it: the curved water bends the square stairwell into a spiralling funnel, the worn banisters coiling inward like a whirlpool, one orange fish smeared into a long copper streak across it. At the very bottom of the well, five floors down and tiny, the baker, a heavy-set Black man with a shaved head in a sweat-stained vest, climbs with a small envelope in his hand. A bare bulb on each landing gives a pool of sour yellow, and a red-glass night lamp on the third floor stains one coil of the stair crimson. Dry, scuffed treads worn to bare wood, peeling paint, a baby pram, a coal bucket, rope-tied laundry. Grain, deep shadow between the landings. Doors and walls bare of numbers or lettering.",
+ "source_id": "2c7031d9-125d-4bf0-af35-3a44dfa6fb4c"
+}

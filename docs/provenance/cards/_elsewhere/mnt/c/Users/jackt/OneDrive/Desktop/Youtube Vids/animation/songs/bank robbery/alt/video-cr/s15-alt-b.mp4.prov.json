@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s15-alt-b.mp4",
+ "made": "2026-10-29T19:45:41.803Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, looking out through the bakery window past the sweet jars on the counter. The calm man in the pinstripe suit walks steadily left to right between the two crowds with the sack over his shoulder, cigarette in his mouth, never looking at anyone; around him red-scarf and blue-scarf men shove and grab coats. The camera tracks slowly sideways along the counter so the sweet jars pass in front of the lens: through each curved jar the street bends, stretches and splits into red, green, violet and orange, the man's figure warping wide and then snapping back sharp in the gaps between jars. The street lamp flares through the glass lids. After 6 seconds the camera stops with a red sweet jar on the left and a violet jar on the right, framing the shouting men in the clear gap between them like three vertical panels. Sound: muffled shouting through glass. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s15-alt.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s15-alt.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "18803133-13f1-453c-b3f0-57291f9404fb"
+}

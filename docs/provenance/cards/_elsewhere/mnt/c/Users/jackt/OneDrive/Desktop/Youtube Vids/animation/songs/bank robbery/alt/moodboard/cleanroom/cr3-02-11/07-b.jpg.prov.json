@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/07-b.jpg",
+ "made": "2026-10-29T16:41:55.705Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, Chicago, 1928: an underground pool hall under the elevated railway, brick vaults sweating, sawdust on the floor. The camera lies on the worn green baize at ball height, the white cue ball huge in the near corner of the frame, its curved surface holding a bent miniature of the whole room. Behind it, an old gangster with a white moustache, fedora pushed back, chalk-stripe waistcoat, leans down along his cue, one eye shut, his face cut off at the frame edge. A young red-haired gangster with freckles and a chipped tooth watches from the shadows, chewing a toothpick. Further back, through thick cigar smoke, a band of gangsters in pinstripes on a plank stage: trumpet, upright bass, a banjo. On the stage floor a projectionist's lantern shines up through a glass dish of coloured oil and dye, so slow swirling cells of magenta, saffron and turquoise crawl over the band's faces, the brass bells, the brick and the smoke itself, while the pool table keeps its single low green-shaded lamp. The rest is black. Music stands and walls are bare.",
+ "source_id": "2c968af7-484c-43c5-93c5-03177b5afee4"
+}

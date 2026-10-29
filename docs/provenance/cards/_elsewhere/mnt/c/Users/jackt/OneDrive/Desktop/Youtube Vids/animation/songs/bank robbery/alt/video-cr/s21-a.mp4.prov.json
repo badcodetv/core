@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s21-a.mp4",
+ "made": "2026-10-29T19:20:20.800Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts. Straight overhead on the mayor lying spread-eagled on the mountain of banded cash. The violet spots of light on him come from a punched-tin lantern hanging just above the camera, out of frame, and it starts to turn on its chain. For the first four seconds the spots sweep slowly round him in circles, and the coloured gel inside the lantern swings past so the spots move from violet through magenta to amber as they cross his suit and the gold chain. The mayor's chest rises and falls slowly, and the banknote on his face lifts on each breath and settles again; his fingers twitch lazily in the money. Camera locked off for four seconds, then rises slowly straight up. In the last two seconds the lantern spins faster, the spots shrink to hard white pinpricks scattering over the dark brick. Real-time speed, vintage film camera. Sound: a creaking chain, paper rustling. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s21.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s21.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "45fccd61-c57d-4516-8298-36535129312d"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/09-a.jpg",
+ "made": "2026-10-29T16:41:55.768Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, night, deep in a bank basement. The camera lies almost on the concrete floor, tilted, so the giant round steel vault door fills the upper two-thirds of the frame, its spun-metal finish cut in fine concentric rings. Two gangsters in sweat-soaked shirtsleeves and braces, smeared goggles pushed up on one forehead, crouch at the door with an oxy-acetylene torch; its needle of white-blue flame is the only light. Where the torch has cut, the steel has heat-tinted the way real steel does: a spreading rainbow of oxide bands, straw gold, bronze, plum, peacock blue, rippling outward through the machined rings so the whole door shimmers like oil on a hub. Molten beads drip and cool orange on the floor. In the left foreground, close to the lens, the third gangster stands guard, scarred cheek, crushed fedora, tommy gun held upright, muzzle to the ceiling, his face lit blue from below. Behind them, unlit black, a toppled chair and a coil of hose. Every dial and plate on the door is plain, no lettering anywhere.",
+ "source_id": "7ff7ecdb-3f3c-4378-a637-82b1d604bf0f"
+}

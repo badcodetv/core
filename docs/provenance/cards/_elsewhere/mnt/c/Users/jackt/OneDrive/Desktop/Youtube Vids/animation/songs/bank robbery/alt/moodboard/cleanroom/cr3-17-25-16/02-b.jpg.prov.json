@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-17-25-16/02-b.jpg",
+ "made": "2026-10-29T16:54:22.319Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, late at night, a tenement kitchen two floors above the elevated railway. The camera sits low on the oilcloth table, close, peering past a heavy cut-glass water jug standing in front of the lens. The jug sits between us and a wooden cathedral radio set whose dial glows warm amber, and the water bends that glow into rippling caustics, crawling nets of gold and green light that spill across the table, up the couple's faces and over the peeling wallpaper, warped as if the room is underwater. A couple lean in to the radio, listening: a stocky Black woman in her forties in a darned cardigan, hair tied in a rag, and a thin white man with a week of stubble and a cracked collar stud, both very still, eyes unfocused. A red scarf hangs over the back of a bentwood chair. A coal range ticks in the dark, a chipped enamel kettle, a wedge of grey bread on a board. Through the sash window, far off, other kitchen windows hold the same small amber glow. One light source only, the radio dial, with soot-dark corners and grain. The radio face and everything in the room carry no lettering.",
+ "source_id": "e197bbd7-e556-4a30-9b10-79c95ea67397"
+}

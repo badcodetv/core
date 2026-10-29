@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/01-b.jpg",
+ "made": "2026-10-29T16:41:55.458Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: an extreme close shot at the back door of a Chicago bakery at dawn, 1928, dry cinders and spilled flour on the step. The frame is filled by the baker's open palm, broad, cracked, flour in the creases, held low at the bottom right; tipped into it from a torn thin brown pay envelope are three small worn coins and one pale dusty moth, wings half open. Above, out of focus and cut off by the top edge, the foreman's waistcoat and watch chain. The camera is level with the palm, tilted, as if lying on a crate. Low dawn sun comes through a stacked crate of empty green, amber and cobalt soda bottles beside the door, and the bottle glass throws shifting caustic pools of light, liquid rings and veins of emerald, honey and deep blue, swimming across the palm, the coins, the moth's wings and the soot-streaked brick wall behind. Everything else is cold grey dawn and deep shadow. Specific wear: a chipped enamel doorplate, a broken bottle neck, frayed cuff of a flour-dusted shirt, the coins dull and nicked. Grain, real skin, no polish. All paper and metal plain, with no printing or lettering.",
+ "source_id": "ad70af8e-6237-41c3-b17c-1cdc15879fd9"
+}

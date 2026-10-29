@@ -40,5 +40,47 @@
   "round": 1,
   "url": "https://claude.ai/artifact/4GmevWxQcqgrxfgQ6LgHuH",
   "what": "Round 1 answered on the page (scene 1 slop note)"
+ },
+ {
+  "at": "2026-10-29T15:40:04+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/KQ9DZ2SMQeadgD9RLGvHiJ",
+  "what": "Scene 1 opening stills: clean-room round 2 (4 sealed writers after NB2.1 web research) + round 1 baseline",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt/cleanroom/picks-r2.json <out.html> (media: alt/moodboard/cleanroom/cr*.jpg)"
+ },
+ {
+  "at": "2026-10-29T17:05:11+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/FDhfSpoqe7mZia12t5NJ1H",
+  "what": "Clean-room round 3: stills for all 33 scenes (8 sealed writers, 2 takes each) + scene 1 round 2",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt/cleanroom/make_picks_r3.py <out-dir> && python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt/cleanroom/picks-r3.json <out-dir>/page.html"
+ },
+ {
+  "at": "2026-10-29T18:30:07+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/FDhfSpoqe7mZia12t5NJ1H",
+  "what": "Jack's picks on the clean-room stills, all 33 scenes",
+  "decided": [
+   "okay i picked all the ones i liked, please look at the notes as well. please make the videos for them ina clean room way ... just research the internet on how to make them psychedelic"
+  ],
+  "feedback": "feedback/picks-r3",
+  "feedback_docs": 33
+ },
+ {
+  "at": "2026-10-29T19:51:23+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Amr1jYc2xur1QQCeb9Ju7Y",
+  "what": "Clean-room clips: all 33 scenes in Omni Flash from Jack's picked stills, 2 takes each (64 clips)",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt/cleanroom/make_picks_vid.py <out> && python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt/cleanroom/picks-vid.json <out>/speakeasy-clips.html"
+ },
+ {
+  "at": "2026-10-29T19:55:44+00:00",
+  "stage": "premiere",
+  "round": 1,
+  "what": "Sequence 'Speakeasy Mint ALT cleanroom 1': take a of all 33 clean-room clips in order, no song"
  }
 ]

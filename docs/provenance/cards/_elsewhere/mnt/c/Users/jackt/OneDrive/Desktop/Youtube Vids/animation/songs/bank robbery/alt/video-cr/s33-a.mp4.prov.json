@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s33-a.mp4",
+ "made": "2026-10-29T19:41:10.168Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera, camera locked off. We look down from an upstairs window, through a lace curtain, onto the empty street under the elevated railway. The street lamps shine through the lace, and the lace acts as a diffraction grating, throwing long rainbow starburst spikes. For the first five seconds a faint draught stirs the curtain, and the spikes slowly rotate and shimmer in spectral colours as the weave shifts. Below, the parked car stays where it is with its door hanging open. Steam drifts from the grate, a few playing cards lift and settle, and the orange glow of the open trapdoor pulses once and dims. From 6 seconds the curtain falls still, the starbursts freeze, and nothing moves at all. Sound: distant wind, steam hissing, then silence. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s33.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s33.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "f736d567-e8e0-4d80-9899-a2593896eced"
+}

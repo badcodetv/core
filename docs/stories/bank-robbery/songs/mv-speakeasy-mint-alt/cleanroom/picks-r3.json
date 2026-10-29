@@ -1,0 +1,638 @@
+{
+ "title": "Speakeasy Mint Stills",
+ "eyebrow": "Bank Robbery MV · ALT · clean room round 3 · the whole film",
+ "heading": "The Speakeasy Mint ALT: every scene, new stills",
+ "intro": "The clean room you liked on scene 1, run on the whole film: the same web research on Nano Banana 2.1, eight sealed writers (four scenes each) who never saw the repo's prompts, run verbatim, two takes per scene. Each scene has its own physical psychedelic layer (frost on glass, a goldfish bowl, a whiskey decanter, a mirror ball, ink in the river...). People are described the same way in every scene, but no Flow Characters were used, so faces will drift between scenes. Click any image to see it large. Pick one per scene and leave a note where it needs another go.",
+ "sections": [
+  {
+   "h": "All 33 scenes",
+   "lede": "Pick a or b (or note what to change).",
+   "groups": [
+    {
+     "slot": "s01",
+     "title": "1. (Intro) Robbery! The getaway car",
+     "line": "Round 2's eight stills (the ones you loved): back seat, from the El, police windscreen, dusk alley.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "w1a",
+       "src": "img/s01-w1a.jpg",
+       "label": "1a"
+      },
+      {
+       "id": "w1b",
+       "src": "img/s01-w1b.jpg",
+       "label": "1b"
+      },
+      {
+       "id": "w2a",
+       "src": "img/s01-w2a.jpg",
+       "label": "2a"
+      },
+      {
+       "id": "w2b",
+       "src": "img/s01-w2b.jpg",
+       "label": "2b"
+      },
+      {
+       "id": "w3a",
+       "src": "img/s01-w3a.jpg",
+       "label": "3a"
+      },
+      {
+       "id": "w3b",
+       "src": "img/s01-w3b.jpg",
+       "label": "3b"
+      },
+      {
+       "id": "w4a",
+       "src": "img/s01-w4a.jpg",
+       "label": "4a"
+      },
+      {
+       "id": "w4b",
+       "src": "img/s01-w4b.jpg",
+       "label": "4b"
+      }
+     ]
+    },
+    {
+     "slot": "s02",
+     "title": "2. They say, ya can't make money from a tree / each day, make hay",
+     "line": "A basement bakery kitchen, 4 a.m.: Bakers knead dough by the light of a brick oven, flour in the air; the baker nearest us, tired.  ·  Layer: The heat mirage makes the oven itself the psychedelic layer, warping the one tired man who does the real work from the floor where his flour falls.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s02-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s02-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s03",
+     "title": "3. work and get paid though… but where does it go? nobody knows!",
+     "line": "The bakery back door, dawn: The foreman tips the baker's thin pay envelope into his palm: three small coins and a moth.  ·  Layer: An intimate dawn close where the pay is so small the light through empty bottles is worth more than the coins, the caustics a physical psychedelic layer nobody used before.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s03-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s03-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s04",
+     "title": "4. means of production means a reduction / land-lords needing",
+     "line": "A tenement stairwell: A landlord in a fur collar waits at the top of the stairs with his palm out; far below, the baker climbs with his pay packet.  ·  Layer: The fishbowl lens turns the stairwell into a drain pulling the baker's pay upward to the waiting palm, a wide high shot to balance the close ones.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s04-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s04-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s05",
+     "title": "5. quantitative easing,",
+     "line": "The back stairs: a plain door with a slot: A heavy-set gangster says the password into the slot of a steel door; two wary eyes look out.  ·  Layer: The first glimpse of the hidden world leaks out of a slot as turning lantern colour, a lamplight-night close that promises the party below.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s05-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s05-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s06",
+     "title": "6. grandma FREEEEEEEZING!",
+     "line": "Grandma's attic: Frost on everything, icicles on the beams; grandma's breath steams as she cups her hands round one candle.  ·  Layer: The cold itself becomes the psychedelic layer, the frost on the pane splitting her one candle into a halo of colour, so the image is beautiful exactly where she is freezing.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s06-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s06-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s07",
+     "title": "7. stimulus checks are next. Get wrecked!",
+     "line": "The mayor's balcony over the square, night: The mayor tosses a handful of envelopes to the crowd; the wind carries them straight down a storm drain. Photographers' flashbulbs.  ·  Layer: The stimulus money literally falls through the bars toward the drain, and the photographers' own flashes multiply it into a ghost ladder of colour, so the spectacle is the trick.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s07-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s07-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s08",
+     "title": "8. rent seeking?… I'm just about eating / sorry, did I interrupt your meeting?",
+     "line": "A hidden speakeasy back room: Gangsters and the mayor at a poker table piled with chips, cash and whole hams, cigars; all frozen, turned to the door, where the baker stands holding one small loaf.  ·  Layer: The cut glass multiplies the one baker with one loaf into a crowd at their door, and the whisky they drink is the lens that sees him.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s08-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s08-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s09",
+     "title": "9. remember kids, the Fed is not your friend! / it prints all the dollars…",
+     "line": "An underground pool hall: An old gangster with a white moustache lines up a shot; a young red-haired gangster watches; a band plays behind in the smoke.  ·  Layer: The liquid-light projection makes the room itself melt and swirl around the one steady thing, a careful old man teaching a young one how to take his shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s09-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s09-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s10",
+     "title": "10. this fiat system is insistent / on debts existence",
+     "line": "A marble bank lobby: A worker in his only suit sits at a loan desk before a thin clerk with round spectacles; behind them, gangsters walk straight past the guard into the open vault with sacks.  ·  Layer: The debt is signed in the coloured light of a cathedral to money while the real theft walks by in the background, small and unhurried.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s10-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s10-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s11",
+     "title": "11. don't be hating on the credit rating / or have resistance to the facts I'm stating",
+     "line": "The bank vault door, night: Gangsters in shirtsleeves and braces cut into the round steel vault door with a blowtorch; one stands guard, tommy gun held up.  ·  Layer: The vault's own metal turns psychedelic under the torch, so the colour is literally the heat of the theft.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s11-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s11-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s12",
+     "title": "12. Chorus 1: Robbery, robbery! Call the police… Debasement… in da basement!",
+     "line": "The first drop: the secret mint below the bakery: A huge speakeasy basement: printing presses throwing sheets of banknotes like confetti, the gangster band playing, dancers in fringed dresses, the mayor dancing in the middle.  ·  Layer: The first drop is the party, and the mirror ball turns every printed note into a scattering spark of joy over the man who owns the presses.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s12-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s12-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s13",
+     "title": "13. Chorus 2 (same words)",
+     "line": "The mint, close on the biggest press: The biggest press glows red hot, spitting notes; the mayor shovels coal into its firebox, grinning; an exhausted stoker slumps behind.  ·  Layer: The press is a furnace the mayor feeds himself, and the marbling ink makes the money look like it is melting as it is made.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s13-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s13-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s14",
+     "title": "14. Stacks and stacks of elastic cash / distracted by a dispraxic flash",
+     "line": "The town square, night: The mayor on a bandstand does a magician's flash (a pop of magnesium, smoke) and the crowd turns to look; behind the smoke, a getaway car screeches away from the bank steps.  ·  Layer: The mayor's distraction is literally the light source, coloured pyrotechnic smoke makes the psychedelic layer physical, and the robbery hides in the one gap nobody is looking at.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s14-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s14-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s15",
+     "title": "15. mob, angry at their shitty little job / the right and the left both witness the theft",
+     "line": "The street outside the bakery, night: Red-scarf crowd and blue-scarf crowd shove each other under a street lamp with banners; a calm gangster walks past between them with a sack of money.  ·  Layer: Shooting through the bakery's own jars of coloured sweets turns the street fight into a candy-coloured distortion while the theft walks through the clear glass, unbent.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s15-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s15-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s16",
+     "title": "16. blaming each other is a sick little cover / institutional, dilutional, the usual",
+     "line": "Close in the crowd: A red-scarf man and a blue-scarf man nose to nose, shouting; both have the same thin pay envelope sticking out of their back pockets.  ·  Layer: A grease-smeared lens with a clear centre turns the two team colours into a raging smear around the frame while the identical pay envelopes, the actual point, stay sharp in the middle.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s16-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s16-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s17",
+     "title": "17. distraction IS the attraction / the intention is tension between the factions",
+     "line": "The speakeasy club downstairs: the money shot: The red leader (a ginger man with mutton-chop whiskers, red carnation) and the blue leader (a woman with a black bob, blue carnation) dance arm in arm with the mayor while the band plays. Upstairs their crowds are fighting.  ·  Layer: The money shot needs the richest layer, so a liquid-light projector bathes the leaders' cosy dance while the fight upstairs only reaches them as shadows and dust through the floorboards.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s17-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s17-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s18",
+     "title": "18. divide and conquer, just look at the hand / It's not ya standard, propaganda",
+     "line": "A radio studio: The mayor grins into a big chrome microphone, reading a script; an ON AIR lamp lit; a gangster in the doorway counts cash.  ·  Layer: The propaganda scene is shot through layered booth glass, so the mayor's one voice literally multiplies into ghosts, a physical psychedelic layer nobody else uses.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s18-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s18-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s19",
+     "title": "19. it is, state, level, manipulation / it is the devil, with a radio station",
+     "line": "A tenement kitchen at night: A couple lean in to a wooden radio set, listening; a red scarf on the chair. (Across the city, every kitchen hears the same voice.)  ·  Layer: The broadcast's voice becomes light refracted through a water jug, an intimate, liquid distortion that makes the listeners look hypnotised without any pasted effect.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s19-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s19-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s20",
+     "title": "20. stack up the vaults like a wheelbarrow / risk of default is really rather narrow",
+     "line": "A vast brick vault: Gangsters wheel barrows of rubber-banded cash up a plank onto a mountain of money.  ·  Layer: Coloured lamps cutting through furnace steam turn the air into solid colour, a wide, industrial psychedelic layer that ties the vault to the burning below.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s20-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s20-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s21",
+     "title": "21. Biggie said waaaay back in ninety seven / don't get high off your own supply",
+     "line": "The vault, top of the pile: The mayor lies back on the money mountain, eyes glazed, gold chain on his chest, a banknote over his face like a newspaper on a beach.  ·  Layer: Purple-sun pavement glass, a real Chicago object, scatters daylight like a drug haze over the mayor, matching \"don't get high off your own supply\" with a physical, period-true effect.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s21-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s21-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s22",
+     "title": "22. Chorus 3: Robbery, robbery! Call the police…",
+     "line": "The raid: the basement: Two police officers come down into the basement holding tommy guns pointed at the ceiling, puzzled: every press has been flipped round into a bread oven, and the band are suddenly bakers in white hats.  ·  Layer: The disguise is given away by the one club fixture nobody switched off, and its scattered flecks of light make the raid look like the party it interrupted.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s22-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s22-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s23",
+     "title": "23. Chorus 4 (same words)",
+     "line": "The bakery doorway, dawn: The two officers leave down the street, each with a free loaf under his arm, tipping their caps; behind the counter a trapdoor glows green.  ·  Layer: The cops leave through a sweet-jar kaleidoscope, bribed with bread, while the green truth glows unseen a few inches from the lens.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s23-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s23-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s24",
+     "title": "24. (Break: riff and stomps)",
+     "line": "The bottom: the furnace: The last drop. A stoker shovels banknotes into a roaring basement furnace; its heating pipe climbs the wall and stops dead at the ceiling (the heat never reaches upstairs).  ·  Layer: Money burns in impossible colours at the bottom of the building while the one pipe that could carry its warmth upstairs stops at the ceiling beside us.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s24-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s24-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s25",
+     "title": "25. You know the real star is Pablo Escobar, / who has elastic bands not plastic hands",
+     "line": "The counting room: Rubber-banded stacks of cash to the ceiling; gangsters at a long table counting under a lamp; a rat nibbling a bundle.  ·  Layer: The rat at the money is the real counter, and the aquarium's caustic light makes the dull work of counting feel underwater and sickly.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s25-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s25-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s26",
+     "title": "26. stacking up the cash by the grands / standard plans are for the working man",
+     "line": "The bakery counter, day: The baker hands over his whole pay packet for one loaf; the price on the chalkboard behind the counter has been rubbed out and written higher.  ·  Layer: The camera sits behind the loaf like a prize, and the colour comes from sun and flour dust, so his whole wage looks like a pretty trick of the light.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s26-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s26-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s27",
+     "title": "27. and this right here is a next level scam / ill gotten gains, no need to explain",
+     "line": "A rowing boat on a black river, night: The mayor in a sinking rowing boat, bailing it out with a bucket of banknotes.  ·  Layer: Bailing a boat with money makes the river richer and the boat no lighter, and the bleeding ink makes the psychedelic layer the money itself dissolving.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s27-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s27-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s28",
+     "title": "28. \"bail\" and \"out\", will never mean the same / own the printer and you don't fear winter",
+     "line": "Split: the warm mint and the frozen attic: One frame, two halves: gangsters in shirtsleeves sweating in furnace heat; grandma, her candle burnt to a stub, frost on her eyelashes.  ·  Layer: The same chimney carries the mint's heat straight past grandma's cheek, and heat haze against frost ferns gives each half its own light.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s28-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s28-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s29",
+     "title": "29. crime is asset inflation, passive creation; / of a wealth gap that drives the situation",
+     "line": "The whole building in cross-section: The building cut open top to bottom: gold and heat at the bottom (the mint, the furnace), ice at the top (the attic). The wealth gap as height.  ·  Layer: The wealth gap drawn as height, with projected colour that pools rich at the bottom and runs out before it reaches the top.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s29-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s29-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s30",
+     "title": "30. working people get paid in money, so it's not very funny / when you print more…",
+     "line": "The bakery queue in the snow: A long queue; each person holds the price of one loaf, growing down the line: a coin, a fistful, a bag, a wheelbarrow at the back.  ·  Layer: The queue's growing money and the sun-dog halo, a real ice-crystal phenomenon, make the inflation visible in a frozen sky as rich colour with a physical cause.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s30-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s30-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s31",
+     "title": "31. hungry people, feed a revolution, / then it's retribution, perhaps some execution",
+     "line": "The street: The red and blue crowds stop shoving, turn together and look down at the trapdoor behind the bakery counter; then they pour down the back stairs together.  ·  Layer: Copper's real green-violet flame and the heat shimmer rise from the mint itself, so the crowd's discovery is coloured and bent by the thing they have just found.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s31-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s31-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s32",
+     "title": "32. it's time to give, not just to take / but for heaven's sake, don't just eat cake",
+     "line": "The mint, the end of the line: The mayor backed against the furnace, the crowd filling the room, holds out a tiered cake on a silver tray, trembling.  ·  Layer: The silver tray becomes a funhouse mirror holding the whole crowd, so the mayor's offering literally reflects who now has him cornered, in coloured lantern light with a real source.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s32-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s32-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "s33",
+     "title": "33. (Outro) Robbery!",
+     "line": "The city at night (the bookend): The same streets as the opening car chase, now empty and still. Everyone has gone downstairs.  ·  Layer: Seen through a curtain whose weave turns the lamps into rainbow stars, the emptied chase street is beautiful and silent, and the open cellar tells us where everyone went.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/s33-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/s33-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
