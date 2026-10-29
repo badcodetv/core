@@ -1,4 +1,5 @@
 /**
+ * style-lint: story=camping — a Camping-only script kept in the shared Suno folder.
  * badcode — run the Camping cover A/B set through Suno's Cover mode.
  *
  * 🔴 COVER MODE IS NOT CREATE MODE. The difference that matters:
@@ -29,7 +30,7 @@
 import type { Page } from 'playwright'
 import { readFileSync } from 'node:fs'
 import { connect, setSlider, setTitle, setLyrics, setDuration, create, listTakes } from './suno.mts'
-import { VARIATIONS, styleFor, excludeFor, titleFor, type Variation } from './cover-variations.mts'
+import { VARIATIONS, styleFor, excludeFor, titleFor, type Variation } from './archive/cover-variations.mts'
 
 /**
  * Pinned for the whole set — normally the style box is the only thing under test, so the

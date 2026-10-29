@@ -26,7 +26,9 @@ Three questions before any shot is designed. A shot that fails one is not design
    advice: think twice before raising a fear with no beneficiary in sight.)* Applies when a
    story's look is monumental; GPOM's `look.md` carries it as a rule. Not every story's look is.
 3. **Where does the light come from?** Name the source in the world. If the answer is "it's
-   just lit", the frame will read as generic before anything else about it registers.
+   just lit", the frame will read as generic before anything else about it registers. Applies to
+   any look lit from inside its world; a flat graphic look (cut-out, infographic, limited
+   animation) answers it in its own `look.md`, or not at all.
 
 ---
 
@@ -220,8 +222,8 @@ mechanism)
 | **R3** | Continuity grammar (180-degree rule, eyeline match, the triangle) versus our actual process. | **Mostly not our problem.** Those rules govern cutting between multiple angles of one continuous action, which we do not shoot. What survives: consistent light direction, consistent scale, object permanence. |
 | **R4** | Kuleshov — foundational finding or teaching legend? | **The narrow version only.** A hard cut between two images makes the viewer infer a relationship; that much is real and now has fMRI support. The famous "one face reads as three emotions" story failed a controlled replication (Prince & Hensley 1992) and is **myth in its popular form**. |
 | **R5** | Coverage versus a designed shot list. | **Designed, always.** We cannot afford coverage and do not need it. Each shot has a job decided before it is made. |
-| **R6** | Is documentary/vérité grammar (grain, wobble, imperfect framing) available to us? | **With a named limit.** The visual codes transfer to a generated clip. Borrowing them for *invented* footage of a *real* subject manufactures the signal "this really happened" for something that did not. Our money film is a true subject — flag every use. |
-| **R7** | Handheld as authenticity. | **Rejected as a default.** Handheld is a style, not truth. Ozu and Haneke get more unease from a locked-off frame than most handheld gets urgency. |
+| **R6** | Is documentary/vérité grammar (grain, wobble, imperfect framing) available to us? | **With a named limit.** The visual codes transfer to a generated clip. Borrowing them for *invented* footage of a *real* subject manufactures the signal "this really happened" for something that did not. Any story on a true subject (the Magic Money Tree film is one) — flag every use. |
+| **R7** | Handheld as authenticity. | **Not a proof of truth, and not a default either way.** Handheld is a style, not truth. Ozu and Haneke get more unease from a locked-off frame than most handheld gets urgency. A story's `look.md` may choose it as a style; in Veo it is added in post (camera-locked). |
 | **R8** | On-screen text — necessary layer or confession of failure? | **A cost, paid deliberately.** Feed platforms are watched sound-off so a caption often carries the whole beat. But a caption explaining what the image should have shown means the image failed. Both are true; decide per beat. |
 
 ---
@@ -244,11 +246,12 @@ does not resolve itself.** Stated honestly, because a human has to choose:
 **Neither brief proves GPOM's look is wrong. Neither proves social realism is the fix.**
 Nobody has evidence that either register works on this specific reader. What is available now:
 
-1. **A partial reconciliation** — R2 above (pair, don't choose) plus principle 23 made mandatory.
+1. **A partial reconciliation** — R2 above (pair, don't choose) plus principle 23 made mandatory for GPOM.
 2. **An empirical step nobody has taken** — brief 17's checklist has never been run against an
    actual BadCode frame. Its own §7 recommends testing it against three or four shipped panels
    before it becomes doctrine.
 
-Until ruled: GPOM keeps its look, gate 2 (visible cost) applies to every monumental shot, and
+Until ruled: GPOM keeps its look, gate 2 (visible cost) applies to every monumental shot where the
+story's `look.md` makes it a gate (GPOM's does), and
 nobody claims the question is settled in any public copy or any canon file. Each other story
 picks its own register in its own `look.md`.

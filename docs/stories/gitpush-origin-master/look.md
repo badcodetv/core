@@ -110,6 +110,22 @@ slightly green shadows, like a BBC Cold War drama."*, [`scenes/second-half-moodb
   concept for the clean room.
 - **Name the light source in the world** (gate 3). One motivated source; never a second
   photogenic light the scene can't explain.
+- **The visible-cost gate, in the fuller wording shot-craft used to carry** (moved here 2026-10-29):
+  *Is there a visible cost in frame?* Mandatory on any monumental shot — scale, symmetry, a machine,
+  an institution. Wreckage, exhaustion, a body that failed, someone the system is failing. Without
+  one, the grammar of power reads as celebration of it, and meaning it ironically does not protect
+  you. (The picture version of `the-reader.md`'s rule about naming the beneficiary.)
+- **Never leave the foreground empty** — the most common cause of a flat frame, and it is free
+  (from shot-craft, 2026-10-29).
+- **Camera movement: default is nothing** in GPOM's still and documentary passages (not the dramatic
+  animations below). A single moving shot in a still body of work lands with outsized force, and
+  only if the stillness around it is real (*La Jetée*: 26 minutes of photographs, one moving shot).
+  Motivated stillness is free; motivated movement is worth spending roughly once per sequence.
+  Camera movement only: a locked-off frame full of working machinery does not spend the budget
+  (from shot-craft, 2026-10-29).
+- **A held still needs a reason to feel photographed** — a low-amplitude camera drift, one light
+  changing, grain that lives; a still that truly holds still reads as a scanned photograph (from
+  shot-craft, 2026-10-29).
 - **R1 is open.** Nobody has evidence the near-black monumental register is right for a
   working-class UK reader, nor that social realism is the fix. Don't claim it settled in any canon
   file or public copy (principles.md §R1).
@@ -139,7 +155,9 @@ vague twinkle-and-haze on a locked camera. Offer dramatic options per shot up fr
 the hybrid method, `docs/video-fx/hybrid-method.md`): lock Veo's camera and make the **world**
 dramatic where the frame has a repeating grid (glass walls, racks), and let Veo move the camera
 where there is none (aerials, cloud); Premiere moves the camera over locked clips. **Moving grain is
-not optional on a locked plate**, or it reads as a frozen JPEG.
+not optional on a locked plate**, or it reads as a frozen JPEG. **Few movers:** give the motion to
+rain, haze, light and one actor. The motion is an argument: the machine that doesn't care, the
+wealth piling while the room dims (from scene-animation, 2026-10-29).
 
 **Calibration: the generic AI look to avoid** (verbatim from the `new-image` skill, "where the
 subject leaves an axis free, do not spend it on these"):
@@ -253,6 +271,12 @@ The second half's travel, in one line (Kai, 17 Oct): **the style travels from 19
 futuristic.**
 
 ## History
+
+- **The PEOPLE preamble is shared with Camping** (noted 2026-10-29, style-leak audit): Register 2 above is,
+  word for word bar the orientation tail, Camping's *Objects and close details* preamble
+  ([`../camping/look.md`](../camping/look.md)) — both copied from the `new-image` skill when it called this
+  register *"consistent across camping, magic-money-tree and karen"*. There is no house look: each story
+  keeps its own copy, and a change to one does not change the other.
 
 - **2026-07-02:** the register anchor made as panel 1 of the GPOM Short comic; it became the
   "BadCode register" for every brand image. 2026-07-13: `new-image` skill, `server-hall-monolith`

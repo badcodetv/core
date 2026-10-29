@@ -1,6 +1,6 @@
 ---
 name: premiere-automation
-description: Use when DRIVING Adobe Premiere Pro from a session — opening a project, building or re-cutting a sequence, importing clips, applying effects, exporting a frame or a render, or recovering a failed bridge call. Triggers on "use Premiere", "automate Premiere", "open this project in Premiere", "put these clips on the timeline", "the panel isn't connecting", "premiere_status says not connected", "Premiere automation isn't set up", "install the UXP plugin", or "add a Premiere tool". Mechanics only — WHICH effect to reach for belongs to video-fx; what the shot should look like belongs to badcode-art-direction.
+description: Use when DRIVING Adobe Premiere Pro from a session — opening a project, building or re-cutting a sequence, importing clips, applying effects, exporting a frame or a render, or recovering a failed bridge call. Triggers on "use Premiere", "automate Premiere", "open this project in Premiere", "put these clips on the timeline", "the panel isn't connecting", "premiere_status says not connected", "Premiere automation isn't set up", "install the UXP plugin", or "add a Premiere tool". Mechanics only — WHICH effect to reach for belongs to video-fx; what the shot should look like is the story's look.md (and shot-craft).
 ---
 
 # Premiere Automation

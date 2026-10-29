@@ -48,12 +48,15 @@ film, Omni 1.1 Flash; items marked (inferred) were not tested on their own.
 | Reach a state (open, arrive, finish) | Continue a state that the first frame already shows |
 | Small readable text | Add it afterwards in ffmpeg |
 
-**And four rules for the words,** from the same review:
+**And four rules for the words,** from the same review (Bank Robbery's cut 7; rule 2's palette is that story's):
 
 1. **Short.** A still near 115 words, a silent clip near 60, the action first. The cut 7 prompts were twice that.
-2. **Name saturated colours for each place, and two lights of different colours.** "Muted", "cold", "grey",
-   "the only strong colour" and "no fill" were in most Bank Robbery stills, and the film came out grey.
-   Google's own guide offers "muted teal tones" as its moody look, so the model leans that way unasked.
+2. **Name the story's colours and lights; unnamed, expect muted.** Google's own guide offers "muted teal
+   tones" as its moody look, so the model likely leans that way unasked (inferred from the guide, not
+   measured). On Bank Robbery, "muted", "cold", "grey", "the only strong colour" and "no fill" were in most
+   stills and the film came out grey; *its* answer (saturated colours per place, two lights of different
+   colours) is a Bank Robbery rule, in [`../stories/bank-robbery/look.md`](../stories/bank-robbery/look.md)
+   § Rules. Another story's palette comes from its own `look.md`.
 3. **Do not describe an attached Character, and do not argue with a reference.** One line: "Same room as the
    reference image."
 4. **Check a clip at four frames a second or more** (`scripts/video-contact-sheet.sh`). One frame every two

@@ -19,23 +19,26 @@
 #   -S N      hook font size (default 56)
 #   -T TEXT   brand mark (default BADCODE)
 #   -k TEXT   kicker at the foot (default badcode.tv)
+#   -C FILE   the story's palette (or $SHORTS_PALETTE) — REQUIRED, no default (palette.sh)
 #   -n        dry run
 set -euo pipefail
 
 P1=""; P2=""; OUT=""; DUR=14; HOOK=""; PAY=""; PAYAT=""; MODE=auto
-HSIZE=56; MARK="BADCODE"; KICK="badcode.tv"; DRY=0
-while getopts "i:j:o:t:H:P:a:m:S:T:k:n" o; do case "$o" in
+HSIZE=56; MARK="BADCODE"; KICK="badcode.tv"; DRY=0; PALETTE=""
+while getopts "i:j:o:t:H:P:a:m:S:T:k:C:n" o; do case "$o" in
   i) P1=$OPTARG;; j) P2=$OPTARG;; o) OUT=$OPTARG;; t) DUR=$OPTARG;;
   H) HOOK=$OPTARG;; P) PAY=$OPTARG;; a) PAYAT=$OPTARG;; m) MODE=$OPTARG;;
-  S) HSIZE=$OPTARG;; T) MARK=$OPTARG;; k) KICK=$OPTARG;; n) DRY=1;;
-  *) sed -n '2,22p' "$0" | sed 's/^# \{0,1\}//'; exit 1;;
+  S) HSIZE=$OPTARG;; T) MARK=$OPTARG;; k) KICK=$OPTARG;; C) PALETTE=$OPTARG;; n) DRY=1;;
+  *) sed -n '2,23p' "$0" | sed 's/^# \{0,1\}//'; exit 1;;
 esac; done
-[ -n "$P1" ] && [ -n "$OUT" ] || { sed -n '2,22p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
+[ -n "$P1" ] && [ -n "$OUT" ] || { sed -n '2,23p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
 [ -f "$P1" ] || { echo "no such panel: $P1" >&2; exit 1; }
 
 FONT=/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
 FONTR=/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
-INK=0xE8EDF2; DIM=0x8A949E; BG=0x07090B
+# The story's colours (INK DIM BG RULE BAR) — no default; see palette.sh.
+. "$(dirname "$0")/palette.sh"
+load_palette "$PALETTE"
 FPS=30
 [ -n "$PAYAT" ] || PAYAT=$(awk -v d="$DUR" 'BEGIN{printf "%.2f", d*0.55}')
 esc() { printf '%s' "$1" | sed -e "s/'/\xe2\x80\x99/g" -e 's/\\/\\\\/g' -e 's/:/\\:/g' -e 's/%/\\%/g'; }
@@ -54,7 +57,7 @@ build_one() {  # $1 idx, $2 file, $3 seconds
   if [ "$M" = cover ]; then
     echo "[${i}:v]scale=1440:2560:force_original_aspect_ratio=increase,crop=1440:2560,zoompan=z='min(zoom+0.00035,1.12)':d=${frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=${FPS},setsar=1[p${i}]"
   else
-    echo "[${i}:v]scale=1400:-2:flags=lanczos,zoompan=z='min(zoom+0.00035,1.12)':d=${frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x608:fps=${FPS},setsar=1[s${i}];color=c=${BG}:s=1080x1920:r=${FPS}:d=${s}[c${i}];[c${i}][s${i}]overlay=x=0:y=(H-h)/2-96:shortest=1,drawbox=x=0:y=554:w=1080:h=2:color=0x3A4450@0.8:t=fill,drawbox=x=0:y=1166:w=1080:h=2:color=0x3A4450@0.8:t=fill[p${i}]"
+    echo "[${i}:v]scale=1400:-2:flags=lanczos,zoompan=z='min(zoom+0.00035,1.12)':d=${frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x608:fps=${FPS},setsar=1[s${i}];color=c=${BG}:s=1080x1920:r=${FPS}:d=${s}[c${i}];[c${i}][s${i}]overlay=x=0:y=(H-h)/2-96:shortest=1,drawbox=x=0:y=554:w=1080:h=2:color=${RULE}@0.8:t=fill,drawbox=x=0:y=1166:w=1080:h=2:color=${RULE}@0.8:t=fill[p${i}]"
   fi
 }
 
@@ -80,7 +83,7 @@ if [ -n "$HOOK" ]; then
   done; IFS=$OLDIFS
 fi
 
-# The payoff is the straight line and it arrives late, on its own, in the care register.
+# The payoff is the straight line and it arrives late, on its own.
 if [ -n "$PAY" ]; then
   PS=$(( HSIZE * 4 / 5 )); IDX=0; STEP=$(( PS * 9 / 5 )); N=$(printf '%s' "$PAY" | sed 's/\\n/\n/g' | grep -c .)
   BASE=$(( 1560 - (N-1)*STEP )); OLDIFS=$IFS; IFS=$'\n'

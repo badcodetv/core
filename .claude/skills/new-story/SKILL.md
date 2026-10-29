@@ -18,7 +18,8 @@ from the CLI; write the files as you go.
 
 - `CLAUDE.md` — what BadCode is and the repo map.
 - `docs/voice.md` — load-bearing tone (sarcastic, dark, total authority; politics
-  & economics first; story over sermon). All prose and lyrics match this.
+  & economics first; story over sermon). All prose, and any lyric in the narrator's
+  voice, match this; a character's song speaks in that character's voice.
 - `docs/storytelling.md` — the method: Key concept + Background → beats →
   characters → image direction. Do not reinvent it; follow it.
 - The **`story-craft`** skill (`docs/story-craft/principles.md`) — the craft under the

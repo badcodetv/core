@@ -12,7 +12,7 @@
  *   npx tsx scripts/suno/suno.mts status
  *   npx tsx scripts/suno/suno.mts extract <sheet.md> "GEN A · CUT 1" > spec.json
  *   npx tsx scripts/suno/suno.mts load  <spec.json>
- *   npx tsx scripts/suno/suno.mts pair  <spec.json>          # load, create @w30, create @w60
+ *   npx tsx scripts/suno/suno.mts pair  <spec.json>          # load, then create at each of the spec's weirdness values
  *   npx tsx scripts/suno/suno.mts explore <spec.json> --round <N> [--yes]   # dry run without --yes
  *   npx tsx scripts/suno/suno.mts takes [titleFilter]
  *   npx tsx scripts/suno/suno.mts narrow <spec.json> <songId> --round <N> [--yes]   # cover the pick
@@ -35,6 +35,8 @@ import {
   SEL_CONDITION_ART,
   SEL_CONDITION_TYPE,
   type Cell,
+  type ExploreSetting,
+  type NarrowSetting,
   type CoverScrape,
   type CoverState,
   modelTag,
@@ -117,15 +119,24 @@ export interface SunoSpec {
    * covers of a Camping source left attached by another session. Both are void.
    */
   mode?: 'custom' | 'cover'
-  /** Saved Voice display name, e.g. "badcode newsreader". */
+  /** Saved Voice display name, from the story's sound.md (e.g. GPOM's "badcode newsreader"). */
   voice?: string
-  /** Base title. `pair` appends `-w30` / `-w60`. */
+  /** Base title. `pair` appends `-w<n>` per weirdness value. */
   title: string
   workspace?: string
+  /**
+   * 🔴 REQUIRED (2026-10-29): no silent default. The value comes from the story's sound.md —
+   * until then a missing slider quietly became one story's Style Influence value.
+   */
   styleInfluence?: number
+  /** 🔴 REQUIRED whenever a `voice` is attached (the slider only exists then). No default. */
   audioInfluence?: number
-  /** The pair. Ruled 2026-08-24: every attempt runs at both. */
+  /** 🔴 REQUIRED for `load` / `pair` / `grid` (or `grid.weirdness`): the values, from sound.md. No default. */
   weirdness?: number[]
+  /** `explore` only: one row per Create — model, weirdness, styleInfluence, variety (+ maxMode). Required. */
+  explore?: ExploreSetting[]
+  /** `narrow` only: one row per Create — weirdness, styleInfluence, audioInfluence, variety (+ maxMode). Required. */
+  narrow?: NarrowSetting[]
   /**
    * Target length in SECONDS (1–300). Omit for Auto.
    *
@@ -142,7 +153,11 @@ export interface SunoSpec {
    * generated on whatever model the last session left selected. Now a spec must name it.
    */
   model?: string
-  /** Variety step — how different the two takes of one Create are. Default `'normal'`. v6-family only. */
+  /**
+   * Variety step — how different the two takes of one Create are. v6-family only. Omitted =
+   * `'normal'`, which is Suno's OWN default for v6 (suno-v6.md: v6 → Normal, v6 Wild → Off) —
+   * an engine default, not a BadCode choice. Set it from the story's sound.md.
+   */
   variety?: VarietyStep
   /** The v6 Max Mode toggle (not the placebo code block). Default `false`. */
   maxMode?: boolean
@@ -496,7 +511,9 @@ export async function setModel(page: Page, name: string): Promise<string> {
 
 /**
  * Set every v6 control from the spec, defaults included — because OMITTING A FIELD IS NOT
- * CLEARING IT (the 2026-08-27 law). A spec with no `variety` means Normal, not "whatever was left".
+ * CLEARING IT (the 2026-08-27 law). A spec with no `variety` means Normal (Suno's own v6 default,
+ * suno-v6.md), not "whatever was left". Max Mode off and Vocal Gender unselected are Suno's own
+ * starting positions too. The sliders have NO default here: see requireSlider().
  */
 export async function setV6Controls(page: Page, spec: Partial<SunoSpec>): Promise<string> {
   const out: string[] = []
@@ -658,7 +675,7 @@ export async function setWorkspace(page: Page, name: string): Promise<string> {
  * Attach a saved Voice.
  *
  * 🔴 THE TRAP: this pops "Overwrite Styles? This Persona has styles." Overwrite replaces the
- * Style box with the persona's OWN styles — for `badcode newsreader` that is the orchestral
+ * Style box with the persona's OWN styles — for GPOM's `badcode newsreader` that is the orchestral
  * cut's 174 BPM terrace chant — and the box looks populated afterwards, so it is silent.
  * Kai's ruling, 2026-08-24: ALWAYS Keep Current.
  */
@@ -821,6 +838,22 @@ async function fillChecked(page: Page, selector: string, text: string, tries = 4
   return 'unreachable'
 }
 
+/**
+ * A slider value the spec must carry. 🔴 2026-10-29 (design/2026-10-29-style-leak-audit.md §1):
+ * no silent defaults — a missing slider used to become one story's Style Influence, weirdness
+ * pair and Audio Influence, applied to every story. The error says where to look.
+ */
+export function requireSlider(field: string, v: unknown): number {
+  if (v === undefined || v === null)
+    throw new Error(
+      `spec has no \`${field}\` — set it in the spec, from the story's sound.md (docs/stories/STYLE.md). ` +
+        'There is no default.',
+    )
+  if (typeof v !== 'number' || !Number.isFinite(v) || v < 0 || v > 100)
+    throw new Error(`spec \`${field}\` must be a number 0–100, got ${JSON.stringify(v)}`)
+  return v
+}
+
 async function load(page: Page, spec: SunoSpec, weirdness?: number) {
   if (!page.url().includes('/create')) {
     await page.goto(CREATE_URL, { waitUntil: 'domcontentloaded' })
@@ -871,12 +904,12 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
   const paras = await setLyrics(page, spec.lyrics)
   if (!spec.lyrics.trim()) console.log('lyrics: INSTRUMENTAL — editor cleared')
 
-  console.log(await setSlider(page, 'Style Influence', spec.styleInfluence ?? 75))
+  console.log(await setSlider(page, 'Style Influence', requireSlider('styleInfluence', spec.styleInfluence)))
   if (weirdness !== undefined) console.log(await setSlider(page, 'Weirdness', weirdness))
   // 🔴 A Voice, like the mode and the attachment, SURVIVES a box fill. Omitting `voice` from a
   // spec does NOT detach whatever the last run left on — so an instrumental generation silently
   // carries a vocal persona. Proven 2026-08-27: `gpom-cut1music-A` was generated with
-  // `badcode newsreader` still attached because the music spec simply had no `voice` key.
+  // GPOM's `badcode newsreader` still attached because the music spec simply had no `voice` key.
   //
   // The clean detector is documented and verified: the Audio Influence slider EXISTS ONLY when a
   // Voice is attached.
@@ -884,7 +917,7 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
     ((await page.locator('[role="slider"][aria-label="Audio Influence"]').count()) as number) > 0
   if (spec.voice) {
     console.log(await attachVoice(page, spec.voice))
-    console.log(await setSlider(page, 'Audio Influence', spec.audioInfluence ?? 50))
+    console.log(await setSlider(page, 'Audio Influence', requireSlider('audioInfluence', spec.audioInfluence)))
   } else if (await voiceOn()) {
     console.log(await detachVoice(page))
     if (await voiceOn()) {
@@ -1421,14 +1454,21 @@ export function gridCells(spec: SunoSpec) {
   // `weirdness` is an array on a grid axis but a plain number everywhere else in a spec, and
   // `load`/`pair` strip `grid` before calling here — so a perfectly ordinary spec arrived with a
   // scalar and died on `for…of` (2026-09-21, gpom-c3b-climate). Accept both shapes.
-  const wsRaw = g.weirdness ?? spec.weirdness ?? [30, 60]
-  const ws = Array.isArray(wsRaw) ? wsRaw : [wsRaw]
+  // 🔴 No default pair (2026-10-29): the values come from the spec, from the story's sound.md.
+  const wsRaw = g.weirdness ?? spec.weirdness
+  if (wsRaw === undefined || (Array.isArray(wsRaw) && wsRaw.length === 0))
+    throw new Error(
+      "spec has no `weirdness` (or grid.weirdness) — set it in the spec, from the story's sound.md " +
+        '(docs/stories/STYLE.md). There is no default.',
+    )
+  const ws = (Array.isArray(wsRaw) ? wsRaw : [wsRaw]).map((w) => requireSlider('weirdness', w))
   // Audio Influence IS a grid axis (Kai, 2026-09-19: "a couple of variations of weirdness and audio
   // influence"). It only does anything when a Voice or audio is attached — with neither, every cell
   // is the same take at twice the price.
-  const ais = g.audioInfluence ?? [spec.audioInfluence ?? 50]
+  // No default: with no value given the slider is left alone, and `load` refuses if a Voice is attached.
+  const ais: (number | undefined)[] = g.audioInfluence ?? [spec.audioInfluence]
   // Style Influence is not a grid axis: every grid/pair cell carries the spec's one value.
-  const styleInfluence = spec.styleInfluence ?? 75
+  const styleInfluence = requireSlider('styleInfluence', spec.styleInfluence)
   const cells: RunCell[] = []
   for (const model of models)
     for (const variety of varieties)
@@ -1583,10 +1623,11 @@ export async function runNarrow(page: Page, spec: SunoSpec, pick: Take, cells: C
     console.log(await setModel(page, cell.model))
     console.log(await setV6Controls(page, cellSpec))
     console.log(await setSlider(page, 'Style Influence', cell.styleInfluence))
-    const ai = await setSlider(page, 'Audio Influence', cell.audioInfluence ?? 50)
+    const wantAi = requireSlider('narrow[].audioInfluence', cell.audioInfluence)
+    const ai = await setSlider(page, 'Audio Influence', wantAi)
     console.log(ai)
-    if (Math.abs(Number(ai.split('=')[1]) - (cell.audioInfluence ?? 50)) > 2)
-      return [`at ${cell.title}: Audio Influence reads ${ai}, wanted ${cell.audioInfluence ?? 50}`]
+    if (Math.abs(Number(ai.split('=')[1]) - wantAi) > 2)
+      return [`at ${cell.title}: Audio Influence reads ${ai}, wanted ${wantAi}`]
     console.log(await setSlider(page, 'Weirdness', cell.weirdness))
     console.log('title:', await setTitle(page, cell.title))
     const v = (await verify(page)) as Record<string, unknown>
@@ -1873,7 +1914,13 @@ if (cmd === 'extract') {
     requireCreate(page)
     const pick = await findTake(page, key)
     const model = modelFromTitle(pick.title, spec.model)
-    const cells = narrowCells(spec.title, round, model)
+    let cells: Cell[]
+    try {
+      cells = narrowCells(spec.title, round, model, spec.narrow)
+    } catch (e) {
+      console.error(`narrow: ${(e as Error).message}`)
+      process.exit(1)
+    }
     console.log(`narrow round ${round}: cover ${pick.songId} "${pick.title}" (${pick.dur}) on ${model}`)
     for (const cell of cells)
       console.log(`  ${cell.title}   model=${cell.model} audio=${cell.audioInfluence} style=${cell.styleInfluence} w=${cell.weirdness} variety=${cell.variety} max=${cell.maxMode}`)
@@ -1979,15 +2026,15 @@ if (cmd === 'extract') {
   const spec: SunoSpec = JSON.parse(readFileSync(specPath, 'utf8'))
   let cells: RunCell[]
   if (cmd === 'explore') {
-    // Decision 6: safe end + wild end, Variety off, Max Mode off, per-cell Style Influence.
+    // Decision 6: the spec's own `explore` rows (from the story's sound.md) — no built-in cells.
     try {
-      cells = exploreCells(spec.title, round)
+      cells = exploreCells(spec.title, round, spec.explore)
     } catch (e) {
       console.error(`explore: ${(e as Error).message}`)
       process.exit(1)
     }
   } else {
-    // 🔑 `pair` is a grid with one axis: weirdness 30 and 60 on the spec's own model.
+    // 🔑 `pair` is a grid with one axis: the spec's own weirdness values on the spec's own model.
     cells = gridCells(cmd === 'grid' || cmd === 'grid-plan' ? spec : { ...spec, grid: undefined })
   }
   // A round's own takes only — `<title>-r<N>-` never matches another round's rows.
@@ -2032,7 +2079,7 @@ if (cmd === 'extract') {
         console.log(await setModel(page, cell.model))
         console.log(await setV6Controls(page, cellSpec))
         console.log(await setSlider(page, 'Style Influence', cell.styleInfluence))
-        console.log(await setSlider(page, 'Audio Influence', cell.audioInfluence ?? spec.audioInfluence ?? 50))
+        if (cell.audioInfluence !== undefined) console.log(await setSlider(page, 'Audio Influence', cell.audioInfluence))
         console.log(await setSlider(page, 'Weirdness', cell.weirdness))
         console.log('title:', await setTitle(page, cell.title))
         const v = (await verify(page)) as Record<string, unknown>
@@ -2065,29 +2112,31 @@ if (cmd === 'extract') {
 
 Personalize is ALWAYS OFF and My Taste is not used (Kai, 2026-09-10).
   load  <spec.json>               fill everything, generate NOTHING
-  pair  <spec.json>               load, then Create at each weirdness (default 30 and 60)
+  pair  <spec.json>               load, then Create at each of the spec's weirdness values
   grid-plan <spec.json>           print the grid's cells and titles — spends nothing
   grid  <spec.json>               load once, then Create every cell of spec.grid
                                   (model × variety × maxMode × weirdness)
   explore <spec.json> --round <N> [--yes]
-                                  the listening loop's spread: v6 w30 style 75 + v6-wild w60
-                                  style 60, Variety off, Max Mode off. Without --yes: print the
-                                  two cells and the cost, spend nothing. --round is required.
+                                  the listening loop's spread: one Create per row of the spec's
+                                  \`explore\` array ({model, weirdness, styleInfluence, variety,
+                                  maxMode?}). Without --yes: print the cells and the cost, spend
+                                  nothing. --round is required.
   takes [titleFilter] [--links]   list clip rows with durations and song IDs
                                   --links prints: title, length, song URL — one take per line,
                                   that is the form a round gets REPORTED in (Kai, 2026-09-19)
   narrow <spec.json> <songId|id8|title> --round <N> [--yes]
-                                  cover the pick with the spec's (refined) boxes: two Creates at
-                                  Audio Influence 75 and 40, weirdness 30, style 75, Variety off,
-                                  on the pick's model. Without --yes: print the pick, the cells and
+                                  cover the pick with the spec's (refined) boxes: one Create per
+                                  row of the spec's \`narrow\` array ({weirdness, styleInfluence,
+                                  audioInfluence, variety, maxMode?}), on the pick's model. Without --yes: print the pick, the cells and
                                   the cost, attach nothing. Detaches the source afterwards
   record <songId|id8|title>       play one take in the create page and record it from the
                                   channel's own sink → <LISTEN_MEDIA_ROOT>/<slug>-<id8>.wav (raw,
                                   for Claude) + .preview.mp3 (low-passed, for the human). No
                                   download, no navigation, no credits
 
-Every spec needs \`model\` ('v6' | 'v6-wild'). Titles: <title>-<model>[-var-<step>][-max]-w<n>;
-explore: <title>-r<N>-v6-w30 and <title>-r<N>-wild-w60 (title ≤ 30 chars).
+Every spec needs \`model\` ('v6' | 'v6-wild') and \`styleInfluence\`; load/pair/grid need \`weirdness\`;
+a \`voice\` needs \`audioInfluence\`. No slider has a default — the values come from the story's sound.md.
+Titles: <title>-<model>[-var-<step>][-max]-w<n>; explore: <title>-r<N>-<model>-w<n> (title ≤ 30 chars).
 v6 credit cost per Create is unknown — pair/grid/explore log the balance around every Create.
 \`load\`, \`controls\`, \`grid-plan\`, and \`explore\` / \`narrow\` without --yes never spend credits.`)
 }

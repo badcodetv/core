@@ -104,7 +104,7 @@ them from here.
   [Billionaire Coin](billionaire-coin.md)).
 - [The Bank Robbery](../stories/bank-robbery/README.md) — heist comedy, graduated 2026-10-06:
   first-pass spine and a 13-scene storyboard. Nothing ruled, nothing made.
-- [Brand images](../images/README.md) — standalone imagery catalogue (server-hall-monolith, …).
+- [Standalone images](../images/README.md) — GPOM's anchor images (server-hall-monolith, …) and the standalone-image index.
 
 ## Not migrated from the old repo
 
@@ -124,7 +124,7 @@ day. Deliberately left behind:
   (e.g. Karen's SHAUN_AI plot, the GEOFF ghost, the Amazon jungle world). Mine these during
   each story's rework, not into the inbox.
 - **Reusable production assets** — `badcode/prompts/system/` (brand canon + realistic-photo
-  style), `badcode/prompts/camping/style.md` (Métal Hurlant house style),
+  style), `badcode/prompts/camping/style.md` (an old Métal Hurlant style for Camping, not a house style),
   `badcode/songs/voice-instructions.md`, `badcode/notes/voice.md`, and `kai/notes/`
   (vocal personas, recording technique, Suno/Ableton logistics).
 - **Already-graduated drafts** — old song/idea files for camping, GPOM, and

@@ -1,6 +1,6 @@
 ---
 name: shot-craft
-description: Use when deciding or judging what a shot should BE — designing a frame, choosing an angle or a light, planning a scene's shots, re-cutting footage that already exists, or diagnosing why something looks flat, boring, generic or "like AI". Triggers on "what's a more interesting shot for this", "how should we frame this beat", "this feels flat / boring / generic", "why does this look like AI", "give me a better angle", "how do we make this exciting", "alternate way of cutting X", "let's discuss the cinematography for <scene>", "what should this scene look like", "is this shot working", or any shot-design step inside make-comic, badcode-art-direction, new-image, music-video-short, animate-slide, flow-prompt or premiere-automation. Tool-agnostic craft only — HOW to phrase it for a generator is flow-prompt, WHICH tool is video-fx, what a story looks like is that story's look.md, and whether the STORY grips is story-craft.
+description: Use when deciding or judging what a shot should BE — designing a frame, choosing an angle or a light, planning a scene's shots, re-cutting footage that already exists, or diagnosing why something looks flat, boring, generic or "like AI". Triggers on "what's a more interesting shot for this", "how should we frame this beat", "this feels flat / boring / generic", "why does this look like AI", "give me a better angle", "how do we make this exciting", "alternate way of cutting X", "let's discuss the cinematography for <scene>", "what should this scene look like", "is this shot working", or any shot-design step inside new-image, scene-images, scene-animation, flow-prompt or premiere-automation. Tool-agnostic craft only — HOW to phrase it for a generator is flow-prompt, WHICH tool is video-fx, what a story looks like is that story's look.md, and whether the STORY grips is story-craft.
 ---
 
 # Shot Craft (BadCode)
@@ -27,7 +27,7 @@ Three modes, one knowledge base:
 | Does the **story** grip? Is the beat earning its place? | `story-craft` |
 | Is the file ready to upload? | `video-fx` → `docs/video-fx/delivery.md` |
 
-**A finished shot is register + design + phrasing.** Register comes from the story's
+**A finished shot is look + design + phrasing.** The look comes from the story's
 `look.md`; design comes from here; phrasing comes from the tool skill. Do not do
 all three in one breath — the design decision is the one that gets skipped, and it is the one
 that decides whether the shot is interesting.
@@ -43,7 +43,7 @@ Read on demand. Never reproduce it into a reply and never lecture the user about
 | [`frame.md`](../../../docs/cinematography/frame.md) | Designing or judging one image — composition, depth, staging, light, colour, lens, height |
 | [`motion-and-cutting.md`](../../../docs/cinematography/motion-and-cutting.md) | Any sequence; **§4 is the re-cut method** |
 | [`stills.md`](../../../docs/cinematography/stills.md) | A held image under narration; choosing between generated candidates |
-| [`registers.md`](../../../docs/cinematography/registers.md) | Anything monumental; the documentary register; the social-realism question |
+| [`registers.md`](../../../docs/cinematography/registers.md) | Anything monumental; the documentary register; the social-realism question | <!-- style-lint: ok — names the registers in a shared menu doc, not a default -->
 | [`evidence.md`](../../../docs/cinematography/evidence.md) | **Before any claim or number reaches a note, a brief or public copy.** Carries the never-cite list |
 | [`briefs.md`](../../../docs/cinematography/briefs.md) | The long version of anything |
 
@@ -66,13 +66,16 @@ Before designing anything. A shot failing one is not designed further.
 
 1. **What is this shot FOR?** Not what it shows — what it does to the viewer that the previous
    shot did not. "It looks good" means there is no shot yet.
-2. **🔴 Is there a visible cost in frame?** Mandatory on any monumental shot — scale, symmetry,
-   a machine, an institution. Wreckage, exhaustion, a body that failed, someone the system is
-   failing. Without one, the grammar of power reads as celebration of it, and meaning it
-   ironically does not protect you. *(This is the picture version of `the-reader.md`'s standing
-   rule: never raise a fear without naming the beneficiary.)*
-3. **Where does the light come from?** Name the source in the world. "It's just lit" produces
-   the generic read before anything else registers.
+2. **Does the story's `look.md` add a gate?** A story's look may make a rule mandatory for every
+   frame; run it here. **GPOM's does:** a visible cost in any monumental shot — scale, symmetry,
+   a machine, an institution needs wreckage, exhaustion, a body that failed, someone the system is
+   failing, or the grammar of power reads as celebration of it (meaning it ironically does not
+   protect you; the picture version of `the-reader.md`'s rule about naming the beneficiary). It
+   is a strong check worth offering on any monumental frame, but only a gate where the look says so.
+3. **Where does the light come from?** In a photographic or realist look, name the source in the
+   world: "it's just lit" produces the generic read before anything else registers. A stylised look
+   (cartoon, graphic, painted) may light by its own logic — then name what the light is doing and
+   check the story's `look.md` for its rule.
 
 ---
 
@@ -81,32 +84,37 @@ Before designing anything. A shot failing one is not designed further.
 For a shot that does not exist yet. Output a **shot spec**, not a prompt.
 
 1. **The job.** One sentence: what this shot does that the last one did not.
-2. **The register.** Monumental, documentary, or the human-scale exception *(ruling R2)*. Get
-   this from the story's `look.md`, not from here.
-3. **Depth.** What is in the foreground, midground, background. Never leave the foreground empty
-   — it is the most common cause of a flat frame and it is free.
+2. **The look.** Whatever the story's `look.md` names for this part (GPOM's has its monumental
+   and documentary registers and the human-scale exception, ruling R2). Get it from there, never <!-- style-lint: ok — GPOM's registers, labelled on the line above -->
+   from here.
+3. **Depth.** What is in the foreground, midground, background. In a deep, photographic frame an
+   empty foreground is the most common cause of flatness, and filling it is free; a look built on
+   flat graphic planes may want it empty on purpose.
 4. **The focal point.** The one thing the eye rests on, and what it is winning with — light,
    space, or depth position.
-5. **The light.** Source, direction, and **where the falloff goes**. On a near-black frame: name the
-   one bright anchor, or the frame reads as a broken file.
+5. **The light.** Source, direction, and **where the falloff goes**. If the story's look is mostly
+   dark (GPOM's is), name the one bright anchor, or the frame reads as a broken file.
 6. **Camera.** Height (a slider, not three boxes), angle, distance. State height and angle
    separately — they are different variables.
 7. **Scale reference.** For any machine or building: the known-size object that makes size
    legible. Without it, size is abstraction.
 8. **What is withheld.** A frame that shows everything has nothing to discover.
-9. **What moves, if anything.** Default is nothing. *(See the motion budget below.)*
+9. **What moves, if anything.** How much a story moves is its `look.md`'s call; with nothing
+   there, decide per shot and say why. *(See the motion budget below.)*
 
 Then hand the spec to `flow-prompt` (or whatever tool skill applies) for phrasing. **Never write
 the spec and the prompt in one step** — the spec is what a human can argue with.
 
-### The motion budget
+### The motion budget — an option, not a default
 
-Most of our shots are stills or 8-second clips. **A single moving shot in a still body of work
-lands with outsized force, and only if the stillness around it is real.** *La Jetée* spends 26
-minutes as photographs and spends its one moving shot exactly once.
+**A single moving shot in a still body of work lands with outsized force, and only if the
+stillness around it is real.** *La Jetée* spends 26 minutes as photographs and spends its one
+moving shot exactly once. Whether a story works that way is its look's call: a mostly-still look
+(GPOM's documentary passages) budgets camera movement; a look built on movement (a chase, a
+music video, a cartoon) does not.
 
 - Motivated stillness: free, always available.
-- Motivated movement: worth spending roughly once per sequence.
+- In a mostly-still look: motivated movement is worth spending roughly once per sequence.
 - The push-in is the one move an 8-second clip executes cleanly, and it means one thing —
   narrowing attention toward a realisation. Put something at the end of it worth arriving at.
 
@@ -118,8 +126,9 @@ full of working machinery is not a "still", and it does not spend the budget. Ne
 8-second clip length a constraint on how long a beat runs; clips chain. Method:
 [`docs/video-fx/hybrid-method.md`](../../../docs/video-fx/hybrid-method.md).
 
-**And a still that truly holds still reads as a scanned photograph.** Give it a reason to feel
-photographed — a low-amplitude camera drift, one light changing, grain that lives.
+**In a photographic look, a still that truly holds still reads as a scanned photograph.** Give it
+a reason to feel photographed — a low-amplitude camera drift, one light changing, grain that lives
+(if the look has grain).
 
 ---
 
@@ -134,7 +143,7 @@ Something exists and is not working.
    no traceable source — not a resolution or quality problem, and never fixed by regenerating.
 3. **Give one change, not five.** The corpus is explicit that when a shot is not landing, the fix
    that works most often is *removing* a clause, not adding one.
-4. **Check the gate.** If the shot is monumental, run gate 2 before anything else.
+4. **Check the gate.** If the story's `look.md` adds one (gate 2), run it before anything else.
 
 **Do not diagnose the frame when the problem is the story.** If a shot is technically fine and
 still inert, the beat may not be earning its place — hand to `story-craft`.

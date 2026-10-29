@@ -12,7 +12,7 @@ folder layout and `scene.json`.
 ## Read first
 
 - The scene's `brief.md` and `scene.json`.
-- **`shot-craft`**: what each shot should *be*, the visible-cost gate on monumental shots, darkness that reads as depth.
+- **`shot-craft`**: what each shot should *be*, and any gate the story's `look.md` adds.
 - **`flow-prompt`**: how Nano Banana behaves, and the policy blocks.
 - **`flow-automation`**: driving the browser and recovering from failures.
 - **The story's `look.md`** (`docs/stories/STYLE.md`): the only source of a look. LOCKED → every option sits inside it, plus at least one deliberate break. EMPTY → run `story-style` first (the story's look is found once, for the whole story). EXPLORING → the board is how the look gets settled: run the options as a `variations` round (`kind` = `flow`), and write the pick back into `look.md`.
@@ -44,6 +44,6 @@ three candidate stills when Kai hasn't chosen yet. Write `storyboard.json`
 rough; Kai re-cuts in Premiere anyway. The storyboard page is shown together with the animation
 options, in `scene-animation`.
 
-**Before showing anything, critique it** (shot-craft): does each frame step the argument, do the monumental shots carry a visible cost, does the sequence vary its scale (wide, close, insert)?
+**Before showing anything, critique it** (shot-craft): does each frame step the argument, does every frame pass the gates in the story's `look.md`, does the sequence vary its scale (wide, close, insert)?
 
 Log every pick and ruling in `picks.md` as it happens.

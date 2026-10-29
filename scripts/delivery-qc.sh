@@ -58,7 +58,7 @@ else
 fi
 
 echo
-echo "levels — where BadCode's near-black register actually breaks"
+echo "levels — where a dark grade (e.g. GPOM's near-black register) actually breaks"
 STATS=$(ffmpeg -v error -i "$FILE" -vf "signalstats=stat=brng,metadata=print:file=-" -an -f null - 2>/dev/null)
 YMIN=$(echo "$STATS" | awk -F= '/lavfi.signalstats.YMIN/{print $2}' | sort -n | head -1)
 YMAX=$(echo "$STATS" | awk -F= '/lavfi.signalstats.YMAX/{print $2}' | sort -n | tail -1)
@@ -74,7 +74,7 @@ if [ -n "$YMIN" ] && [ -n "$YMAX" ]; then
   elif [ "$CRANGE" = "tv" ] && [ "$FULLCONTENT" = "1" ]; then
     bad "TAGGED LIMITED RANGE, CONTENT IS FULL — whites will clip. Fix with: -vf 'scale=in_range=full:out_range=limited' -pix_fmt yuv420p -color_range tv. BOTH halves of that scale filter are required — out_range alone is a silent no-op"
   elif { [ -z "$CRANGE" ] || [ "$CRANGE" = "unknown" ]; } && [ "$FULLCONTENT" = "1" ]; then
-    bad "UNTAGGED, AND THE CONTENT IS FULL RANGE ($YMIN–$YMAX) — players default to assuming limited, expand it, and crush the shadows. This is the worst case for a near-black film and it is invisible until you check. Fix with: -vf 'scale=in_range=full:out_range=limited' -pix_fmt yuv420p -color_range tv"
+    bad "UNTAGGED, AND THE CONTENT IS FULL RANGE ($YMIN–$YMAX) — players default to assuming limited, expand it, and crush the shadows. This is the worst case for a near-black film and it is invisible until you check. Fix with: -vf 'scale=in_range=full:out_range=limited' -pix_fmt yuv420p -color_range tv"  # style-lint: ok (luma fact, not a look)
   elif [ -z "$CRANGE" ] || [ "$CRANGE" = "unknown" ]; then
     warn "untagged, but the content is inside 16–235 so a limited-range assumption is harmless. Tag it anyway"
   else
@@ -86,7 +86,7 @@ else
 fi
 
 BLACK=$(ffmpeg -v info -i "$FILE" -vf "blackdetect=d=0.2:pic_th=0.98:pix_th=0.10" -an -f null - 2>&1 | grep -c black_start)
-[ "$BLACK" -gt 0 ] && warn "$BLACK near-black stretch(es) — check the head and tail are intentional" || ok "no unintended black stretches"
+[ "$BLACK" -gt 0 ] && warn "$BLACK near-black stretch(es) — check the head and tail are intentional" || ok "no unintended black stretches"  # style-lint: ok (luma fact)
 FREEZE=$(ffmpeg -v info -i "$FILE" -vf "freezedetect=n=-60dB:d=0.5" -an -f null - 2>&1 | grep -c freeze_start)
 [ "$FREEZE" -gt 0 ] && warn "$FREEZE frozen stretch(es) — a stuck frame or a still held too long" || ok "no frozen frames"
 

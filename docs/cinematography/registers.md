@@ -6,7 +6,8 @@ the codes are inherently menacing.
 
 Three registers matter to us. There is no BadCode house look (Kai, 2026-10-28): each story picks
 its register in its own `docs/stories/<story>/look.md`. The monumental one is GPOM's look. The
-documentary one is for the money film. The third is the grammar our reader already owns, which
+documentary one was proposed for the money film (an open question for the Magic Money Tree's
+`look.md`, not a ruling). The third is the grammar our reader already owns, which
 GPOM did not adopt — and that is an open question.
 
 ---
@@ -124,7 +125,7 @@ effect. Contested. **A (mixed)**
 
 ---
 
-## 3. The documentary register — for the money film
+## 3. The documentary register — proposed for the money film (open: the Magic Money Tree's `look.md` decides)
 
 **Visible imperfection reads as truth.** Grain, unstable framing, uneven exposure, a camera
 reacting a beat late, an unmotivated cut, no reframing to catch the perfect composition — all

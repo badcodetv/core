@@ -19,7 +19,7 @@ the CLI, because this needs a real screen and a real mouse.
   `screaming detuned wavetable lead, hard-synced, bending, formant-morphing, gnarly mid-range`
   and hope. With Serum in the loop we stop describing the sound and start owning it.
 - **A patch is a file.** A prompt is not. A `.fxp` is reusable, versionable, and identical every
-  time — a house sound instead of a lucky roll.
+  time — a repeatable sound for one track or story instead of a lucky roll (no house sound: `docs/stories/STYLE.md`).
 - **It generalises past Serum.** Whatever can drive one plugin GUI can drive any of them.
 
 ## What it costs

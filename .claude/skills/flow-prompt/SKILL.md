@@ -1,6 +1,6 @@
 ---
 name: flow-prompt
-description: Use when writing or debugging a prompt for Google Flow — a still image, an image-to-video motion prompt, a character reference, or a generation that failed. Encodes how the Flow platform actually behaves (Nano Banana and Veo), the policy-block triggers and rewrites, and the reference/consistency disciplines. Triggers on "write a Flow prompt", "why did this generation fail", "the prompt got blocked", "make this prompt better", "how do I animate this", or any prompt-craft step inside badcode-art-direction, new-image, edit-panel, animate-slide, make-comic or music-video-short. Platform craft only — what a story looks like lives in that story's docs/stories/<story>/look.md.
+description: Use when writing or debugging a prompt for Google Flow — a still image, an image-to-video motion prompt, a character reference, or a generation that failed. Encodes how the Flow platform actually behaves (Nano Banana and Veo), the policy-block triggers and rewrites, and the reference/consistency disciplines. Triggers on "write a Flow prompt", "why did this generation fail", "the prompt got blocked", "make this prompt better", "how do I animate this", or any prompt-craft step inside new-image, scene-images or scene-animation. Platform craft only — what a story looks like lives in that story's docs/stories/<story>/look.md.
 ---
 
 # Flow Prompt
@@ -65,11 +65,13 @@ document. The prompt gets the description only.
 
 ## 🔴 Video is Omni Flash now: read `docs/google-flow/` first
 
-`docs/flow/` below was written for Veo. Since 2026-09 the house video model is Omni 1.1 Flash, and what it does
-is recorded in [`docs/google-flow/`](../../../docs/google-flow/README.md) (`omni-flash.md`, `nano-banana-2.md`,
-the dated sweeps). **Open that README before writing any video prompt:** its first section is the list of moves
-the model cannot do and the four rules for the words (short, saturated colour named per place, never describe an
-attached Character, check at four frames a second). Where the two folders disagree about Omni, `docs/google-flow/`
+`docs/flow/` below was written for Veo. Since 2026-09 the video model we use is Omni 1.1 Flash (Jack's standing
+process rule), and what it does is recorded in [`docs/google-flow/`](../../../docs/google-flow/README.md)
+(`omni-flash.md`, `nano-banana-2.md`, the dated sweeps). **Open that README before writing any video prompt:** its
+first section is the list of moves the model cannot do and the rules for the words (keep it short; name the
+story's colours and lights from its `look.md`, because unnamed the model goes muted; never describe an attached
+Character; check at four frames a second). Bank Robbery's answer to the muted default (saturated colour per
+place, two lights of different colours) is that story's rule, not a default for every prompt. Where the two folders disagree about Omni, `docs/google-flow/`
 wins. Added 2026-10-09 after a film's worth of prompts ignored research that this skill never pointed at.
 
 ## The five rules that carry most of the value
@@ -93,7 +95,7 @@ If you read nothing else:
 
 **A storyboard beat arrives as four different briefs, not one.** `new-image` ->
 "Variety mode" decides the spread; this skill phrases each candidate. Write four genuinely
-different briefs — a different camera, palette, time of day or register in each — never one brief
+different briefs — a different camera, palette, time of day or look in each — never one brief
 re-seeded. If the story's look is LOCKED, one of the four is that look and at least one breaks it on
 purpose; if it is EMPTY or EXPLORING, all four are different and the round runs through `variations`.
 
@@ -101,13 +103,14 @@ purpose; if it is EMPTY or EXPLORING, all four are different and the round runs 
 1. **Get the look from the story's `look.md` first.** Don't invent a look here, and don't
    borrow another story's.
 2. **Draft in the platform's shape** — the formula from `image-prompting.md` §2 or
-   `video-prompting.md` §1, with the four levers (lighting / camera+lens / stock+grade /
-   materiality) as separate clauses.
+   `video-prompting.md` §1, with whichever of the four levers the story's look uses (lighting /
+   camera+lens / stock+grade / materiality) as separate clauses. A look that is not photographic
+   (cartoon, graphic) may have no film stock or lens at all.
 3. **Run the policy pass** — `failure-modes.md` §A5, and rule zero above. Check *every
    field*, not just the prompt: a Character's **name** is scanned too. Cheap, and saves ~90s
    per block.
-4. **Critique before sending.** Is there exactly one action? One camera move? Is the
-   light source a real thing in the scene? Is any load-bearing text better done as a
+4. **Critique before sending.** Is there exactly one action? One camera move? Does the
+   light follow the story's look (in a realist look: is the source a real thing in the scene)? Is any load-bearing text better done as a
    comic overlay?
 5. **Generate, look, subtract.** When it's wrong, remove a clause before adding one.
 
@@ -164,5 +167,5 @@ When a character, object or place has to survive across many generations, read
 ## Scope
 
 Platform craft for Google Flow: Nano Banana stills, Veo motion, references, consistency,
-policy, controls. **Not** the BadCode visual identity (`new-image`), **not** browser automation or selectors (`docs/flow/automation-images.md`,
+policy, controls. **Not** a story's look (its `look.md`; stills via `new-image`), **not** browser automation or selectors (`docs/flow/automation-images.md`,
 the `flow-operator` agent), **not** Suno or music (`suno-prompt`).

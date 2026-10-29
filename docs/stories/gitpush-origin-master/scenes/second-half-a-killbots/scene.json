@@ -147,5 +147,11 @@
   "options": "design/2026-10-26-gpom-dialogue-options/options.json",
   "picked": "1D",
   "round": 4
+ },
+ "video": {
+  "model": "Omni 1.1 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
  }
 }

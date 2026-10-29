@@ -30,7 +30,7 @@ A finished shot is **register** (from the story's `look.md`) + **design**
 | [`motion-and-cutting.md`](./motion-and-cutting.md) | Movement, sequence design, the cut, **and the method for re-cutting footage that already exists** | Any sequence; any "this cut isn't working" |
 | [`on-screen-time.md`](./on-screen-time.md) | **Putting the year (or the place) on screen** — the six families, the fixed-slot decisions, and what we can actually render | A film jumps in time; a caption or title card is proposed |
 | [`stills.md`](./stills.md) | The static frame — what holds a held image, word-and-picture, the gutter, duration | Our dominant form; choosing between generated candidates |
-| [`registers.md`](./registers.md) | The monumental register (GPOM's look) **and its problem**, awe, documentary, British social realism | Anything monumental; the money film; choosing a story's register |
+| [`registers.md`](./registers.md) | The monumental register (GPOM's look) **and its problem**, awe, documentary, British social realism | Anything monumental; a documentary-style story (the money film was the proposed case); choosing a story's register |
 | [`evidence.md`](./evidence.md) | Grades, the corrections applied during distillation, **the never-cite list** | Before any claim or number reaches a brief, a note, or public copy |
 | [`briefs.md`](./briefs.md) | The 20-brief index, and what the sweep never covered | Whenever you want the long version |
 

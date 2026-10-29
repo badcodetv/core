@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Where a face's mouth is shut, opening and moving in a clip, read from the PICTURE (2026-10-19, Karen 10b2).
 
-Runs scripts/bank-robbery/lips.py (MediaPipe inner-lip gap, landmarks 13/14 over face height) unless a lips JSON is given,
+Runs scripts/lipsync/lips.py (MediaPipe inner-lip gap, landmarks 13/14 over face height) unless a lips JSON is given,
 then prints (1) a strip, one character per frame: '#' open, '+' slightly open, '.' shut; (2) every shut->open moment.
 Those openings are where dubbed phrases should START (0-0.1 s after, never before). Do not trust Omni's own audio or
 whisper word starts for this: Omni's audio was 0.45 s off its own picture on Karen 10b2.
@@ -16,7 +16,7 @@ t0 = float(a[a.index('--from') + 1]) if '--from' in a else 0.0
 t1 = float(a[a.index('--to') + 1]) if '--to' in a else 1e9
 if not js or not os.path.exists(js):
     js = js or v + '.lips.json'
-    subprocess.run([sys.executable, os.path.join(H, '..', 'bank-robbery', 'lips.py'), v, '--face', 'big', '--json', js], check=True, capture_output=True)
+    subprocess.run([sys.executable, os.path.join(H, 'lips.py'), v, '--face', 'big', '--json', js], check=True, capture_output=True)
 L = json.load(open(js)); fps = L['fps']; g = [x or 0 for x in L['gap']]
 OPEN, HALF = 0.02, 0.008
 strip = ''.join('#' if x > OPEN else '+' if x > HALF else '.' for x in g)

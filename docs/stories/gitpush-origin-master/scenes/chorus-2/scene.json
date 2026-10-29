@@ -3,7 +3,7 @@
   "scene": "chorus-2",
   "prefix": "c2",
   "title": "GPOM Chorus 2",
-  "heading": "GitPush Origin Master <span class=\"tri\">\u25b2</span> chorus 2",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> chorus 2",
   "moodboard_intro": "Chorus 1's world, closer and harder, then it moves. Dashed cards are chorus 1 as it is now. Tap This, Maybe or No; leave a note per beat.",
   "storyboard_intro": "Frames in story order. Pick one still and one way to animate each.",
   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-2",
@@ -100,5 +100,10 @@
   "boards": {
     "moodboard": "https://claude.ai/artifact/E1AzBZ9ZC8ftaVVdHmdqg4",
     "clips": "https://claude.ai/artifact/KDw9dRfPJCvdsZs9TXK4C5"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames"
   }
 }

@@ -145,8 +145,10 @@ f/8 so the whole product stays sharp while the background falls into soft blur"*
 Fisheye recipe: "Wide-angle / fisheye lens (10mm–14mm) – Strong foreground distortion on
 hands + faces – Bright, saturated colors – High contrast, punchy sunlight."
 
-> **Compact working combo:** "Medium shot, 35mm, slow dolly-in, subject centered, shallow
-> DOF; background city bokeh; handheld micro-sway for intimacy."
+> **Compact working combo** (a practitioner's, not ours): "Medium shot, 35mm, slow dolly-in, subject centered, shallow
+> DOF; background city bokeh; handheld micro-sway for intimacy." ⚠️ The dolly and the sway are camera
+> moves; our process keeps Veo camera-locked and moves the camera in post. Lens and DOF are the
+> story's `look.md` call.
 
 ## Lighting
 
@@ -246,7 +248,8 @@ these names from generic "warm grainy film". (content-mill, no shown output,
 ### The one-line Style Bible
 
 Lock a single dense descriptor once per project — light direction, palette, contrast character,
-grain and halation in one clause — and paste it **verbatim** into every prompt:
+grain and halation in one clause — and paste it **verbatim** into every prompt. The clause itself
+comes from the story's `look.md` (its Preamble); the source's example shows only the shape:
 
 > *"soft north-light rim; muted earth tones; low-contrast filmic; subtle halation; fine grain"*
 

@@ -7,7 +7,15 @@ goes into any prompt, whether its images/videos/songs/etc… all the skills and 
 Follows [`2026-10-28-no-house-style.md`](./2026-10-28-no-house-style.md). That pass cleaned the
 always-loaded layer (CLAUDE.md, memory index, skill descriptions) and `style-lint.py` passes. This pass
 looked everywhere else: skill bodies, shared docs, code, memory files, story files. Four read-only
-sweeps; **nothing fixed yet**. Line numbers are as of commit `0494159`.
+sweeps.
+
+**Status: fixed 2026-10-29** (Jack: "fix the code and words"). Code, skills, shared docs, memory and
+story files done; handoffs placed (`2026-10-29-skill-moves.md`, `2026-10-29-doc-moves.md`). `style-lint.py`
+now also scans skill bodies and generic code (fail) and shared docs (report only, `--strict` to fail; ~390
+mostly engine-manual hits left to label). Open for Kai: MMT's GPOM-borrowed narration and coda (labelled
+"candidate, Kai to rule"), visible-cost gate beyond GPOM, the Suno duration rule conflict, "Bulletin
+realism", the site copy "Drum & bass from the end of the world". Open for Jack: Camping r77 boxes still
+say "gruff" against the r82 ruling; whether Bank Robbery's cut-8 colour rules are rules. Line numbers are as of commit `0494159`.
 
 **Why the lint missed it:** it checks only CLAUDE.md, MEMORY.md and skill descriptions, by keyword. It
 does not read code, skill bodies or the docs skills send you to, and it doesn't know words like opera,

@@ -47,9 +47,12 @@ and tile it), not in Flow.
 name). Plain illustration only, labelled `ILLUSTRATION` on V4. Waits on the scene-11a legal read
 like the rest of the scene.
 
-## Scene 15 — the coda (BadCode register)
+## Scene 15 — the coda (in GPOM's near-black look)
 
-The brand register (`new-image` skill, anchor `docs/images/register-anchor.jpg`): near-black, one
+⚠️ **Borrowed from GPOM — a candidate, not inherited; Kai to rule (2026-10-29 audit).** This is GPOM's
+MACHINE register (written when the `new-image` skill called it the brand register; anchor
+`docs/images/register-anchor.jpg`), not an MMT or BadCode look — MMT's look is in [`../look.md`](../look.md).
+The plates as drafted: near-black, one
 thin light, and one small region deliberately brighter than the rest so the dark reads as depth.
 The coda is the one hopeful image set in the film: calm, not menacing, and never "the machines are
 coming".

@@ -3,10 +3,13 @@
 
     python3 scripts/scene/shots.py <scene-dir>        # JSON for the runner
 
+Video settings (model, aspect, mode, duration) come from scene.json "video" — the story's look.md
+— and may be overridden here by a "video" block; see scene.video_settings. No defaults.
+
 video-jobs.json (all fields optional):
   {
     "option": "a",                        # animation option used where a frame has no pick
-    "duration": 8,                        # seconds, where a job has none
+    "video": {"duration": 8},             # overrides scene.json "video" (legacy: top-level "duration")
     "anim_picks":  {"2": "c"},            # frame -> option id, from the storyboard's db `picks`
     "still_picks": {"5": "TO1T-a"},       # frame -> still id (default: the frame's first still)
     "skip": [2, 9],                       # kept clips, ffmpeg or Premiere frames: no credits
@@ -24,7 +27,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from scene import Scene  # noqa: E402
+from scene import Scene, video_settings  # noqa: E402
 
 
 def shots(scene_dir):
@@ -33,7 +36,8 @@ def shots(scene_dir):
     sb = sc.load('storyboard.json', {'frames': []})['frames']  # a scene may have extra rows only
     ao = {str(f['n']): f for f in sc.load('animation-options.json', {}).get('frames', [])}
     skip = set(jobs.get('skip', []))
-    dur = jobs.get('duration', 8)
+    video = video_settings(sc, jobs)
+    dur = video['duration']
     out = []
     for f in sb:
         n = f['n']
@@ -52,6 +56,8 @@ def shots(scene_dir):
         out.append({'title': 're-roll', 'option': None, 'label': e.get('why', 're-roll'), 'duration': dur,
                     'character': None, **e})
     for s in out:
+        for k in ('model', 'aspect', 'mode'):
+            s.setdefault(k, video[k])  # an "extra" job may carry its own
         src = sc.still(s['still'])
         if not src:
             sys.exit(f"{s['key']}: no still {s['still']} under {sc.moodboard}")

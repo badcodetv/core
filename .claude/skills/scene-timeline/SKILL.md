@@ -44,7 +44,7 @@ Independent, so they can run side by side; one owner per tool:
 - **One stem per track**: each voice, each music cue, each effects group, all running from t=0. Ducks and drops are written into the stems, and each cue is measured at its moment, because nobody listens until Kai does.
 - Write `<media>/cut/edl.json` in the **timeline format** (documented in `scripts/scene/timeline.py`), a reference mix and `preview.mp4`. Run `scripts/delivery-qc.sh` on anything rendered.
 - **A cut made by its own script** (like GPOM's `scripts/gpom/second-half-video/cut3.py` and `ending/cut_end*.py`) only needs to write an edl in the same format; point `scene.json` `cut` at it and the rest of this skill applies unchanged.
-- Worked example: GPOM second half cut 2 (`scripts/gpom/second-half-video/cut2.py`, `--cut2` on timing / extend / rough_audio / rough_place).
+- Worked example of the mechanics (not a style to copy): GPOM second half cut 2 (`scripts/gpom/second-half-video/cut2.py`, `--cut2` on timing / extend / rough_audio / rough_place).
 
 ## The timeline page
 

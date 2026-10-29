@@ -4,7 +4,12 @@
  *
  * The pattern is scripts/gaze-board/run_waves.mts (submit-then-harvest, missing list recomputed
  * from disk every wave, so re-running never pays twice). What differs, and why:
- *   - Omni 1.1 Flash, Frames, 16:9, 720p, 8s, x1 (Jack's standing ruling; the options file).
+ *   - Model, aspect, mode and length come from the scene: scene.json "video" (from the story's
+ *     look.md), overridden by video-jobs.json — see scripts/scene/scene.py video_settings. There is
+ *     NO default (2026-10-29, design/2026-10-29-style-leak-audit.md §1: this runner used to force
+ *     one story's Omni 1.1 Flash / 16:9 / Frames on every scene). 720p and x1 are runner mechanics
+ *     (x1 because clips are named by first frame). What each submit used goes to video/inbox/
+ *     settings.json, and match.py writes that onto the recipe card.
  *   - A job with a `character` casts that Flow Character with "@" after the Start slot is filled.
  *   - Completion and harvest go by tile KEY at the top of the grid (rebuild doc items 20–21,
  *     the br-videos.mts download menu), not videoTiles(), whose thumbnail selector went stale.
@@ -19,7 +24,7 @@
  * Run it with run_in_background and never alongside another Flow runner or MCP call: one browser.
  */
 import { execFileSync } from 'node:child_process'
-import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { FlowClient } from '../../packages/flow-mcp/src/flow-client'
 
@@ -36,8 +41,17 @@ const LOG = join(CFG.media, 'video/run.log')
 const WAVE = Number(process.env.WAVE ?? 5)
 const RENDER_MS = Number(process.env.RENDER_MS ?? 12 * 60_000)
 
-type Shot = { key: string; still: string | null; plate: string | null; src: string | null; out: string; motion: string; character: string | null }
-const all: Shot[] = JSON.parse(execFileSync('python3', [join(HERE, 'shots.py'), SCENE], { encoding: 'utf8' }))
+type Shot = {
+  key: string; still: string | null; plate: string | null; src: string | null; out: string; motion: string; character: string | null
+  model: string; aspect: '16:9' | '9:16'; mode: string; duration: number
+}
+// shots.py exits non-zero (with the reason on stderr) when the scene has no video settings.
+const all: Shot[] = JSON.parse(execFileSync('python3', [join(HERE, 'shots.py'), SCENE], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'inherit'] }))
+for (const s of all) {
+  const gap = (['model', 'aspect', 'mode', 'duration'] as const).filter(k => s[k] === undefined || s[k] === null || s[k] === '')
+  if (gap.length) throw new Error(`${s.key}: no video ${gap.join(', ')} — set "video" in scene.json from the story's look.md`)
+  if (s.mode !== 'Frames') throw new Error(`${s.key}: mode ${s.mode} — run.mts only drives Frames`)
+}
 const only = process.argv.slice(3)
 const shots = all.filter(s => s.plate && (!only.length || only.includes(s.key)))
 mkdirSync(STAGE, { recursive: true })
@@ -47,6 +61,13 @@ const say = (o: Record<string, unknown>) => {
   const line = JSON.stringify({ at: new Date().toISOString(), ...o })
   console.log(line)
   appendFileSync(LOG, line + '\n')
+}
+const SETTINGS = join(INBOX, 'settings.json')
+/** What each submit actually asked Flow for, keyed by shot — match.py puts it on the recipe card. */
+const recordSettings = (s: Shot) => {
+  const all = existsSync(SETTINGS) ? JSON.parse(readFileSync(SETTINGS, 'utf8')) : {}
+  all[s.key] = { model: s.model, aspect: s.aspect, mode: s.mode, durationSeconds: s.duration, count: 1, resolution: '720p', at: new Date().toISOString() }
+  writeFileSync(SETTINGS, JSON.stringify(all, null, 1))
 }
 const missing = () => shots.filter(s => !(existsSync(s.out) && statSync(s.out).size > 0))
 
@@ -135,8 +156,9 @@ async function submit(s: Shot) {
     for (let i = 0; i < 10; i++) { await sleep(500); if (await clickText('I agree')) break }
   }
   // Item 15/57: the first Frames lookup of a process can race the popover; one retry clears it.
-  try { await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: (s as any).duration ?? 8, count: 1, frames: true }) }
-  catch { await sleep(1500); await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: (s as any).duration ?? 8, count: 1, frames: true }) }
+  const cfg = { model: s.model, aspect: s.aspect, duration: s.duration, count: 1, frames: true }
+  try { await c.ensureVideoConfigRebuilt(cfg) }
+  catch { await sleep(1500); await c.ensureVideoConfigRebuilt(cfg) }
   await c.fillFrameSlotRebuilt('Start', s.plate!)
   // Cast by "@" mention (rebuild doc items 30-33). The ingredients button the MCP's
   // addCharacterToPromptRebuilt clicks does not exist in Frames mode (probe 2026-10-17), but "@"
@@ -153,6 +175,7 @@ async function submit(s: Shot) {
   if (cast) await page.keyboard.insertText(' ' + s.motion)
   else await c.setPrompt(s.motion)
   await c.clickSubmit()
+  recordSettings(s)
   const deadline = Date.now() + 45_000
   while (Date.now() < deadline) {
     const k0 = await keyAt(0)

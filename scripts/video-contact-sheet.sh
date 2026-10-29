@@ -13,7 +13,7 @@
 #   REGION=centre scripts/video-contact-sheet.sh clip.mp4
 #
 # REGION crops to one vertical band and lifts the exposure — use it when the suspect
-# detail is dark or small (near-black BadCode frames hide motion at full-frame scale).
+# detail is dark or small (dark frames, e.g. GPOM's near-black ones, hide motion at full-frame scale).
 set -euo pipefail
 
 VIDEO="${1:?usage: video-contact-sheet.sh <video> [outfile] [fps] [cols]}"

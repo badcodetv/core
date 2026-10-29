@@ -64,7 +64,7 @@ camera-only move — it just stopped short. The full answer is:
    `zoompan` when the easing must be exact and repeatable.
 6. **Layer the effects.** Catalogue: [`../premiere/effects-catalogue.md`](../premiere/effects-catalogue.md).
    ffmpeg-only capabilities: §6 below.
-7. **Grade and grain last**, then the delivery gate ([`delivery.md`](delivery.md)).
+7. **Grade (and grain, if the story's `look.md` wants it) last**, then the delivery gate ([`delivery.md`](delivery.md)).
 
 ### The animatic — cut the stills before you buy the motion
 

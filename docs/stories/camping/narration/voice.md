@@ -100,7 +100,7 @@ the Composer.
 
 ```
 export GEMINI_API_KEY=...
-python3 scripts/aistudio-tts.py chunk1.txt chunk1.wav
+python3 scripts/aistudio-tts.py chunk1.txt chunk1.wav --voice Kore --profile docs/stories/camping/narration/profiles/nell-kore.md
 ```
 
 🔑 **The export uses a DIFFERENT heading shape to the one above** — `# Audio Profile` /
@@ -1114,17 +1114,17 @@ has, and `narrator.md` cites the precedent for it — Serling's suit and cigaret
 156 episodes, with only the disclosure varying. **Fixed grammar has to do that work instead, and
 it is a weaker hook than a timbre.**
 
-⬜ **Unruled. Jack's call.** If it goes the other way — one house voice — the cheaper direction is
-to make **Karen's** the house voice and re-audition camping, because camping's has been ruled twice
-in a fortnight and is the less settled of the two.
+✅ **Closed 2026-10-28 by the no-house-style rule** (Kai: every story finds its own sound —
+[`docs/stories/STYLE.md`](../../STYLE.md)). There is no house narrator voice; each story's narrator
+lives in its own `sound.md`. *(The proposal it closes, kept for the record: if it had gone the other
+way — one house voice — the cheaper direction was to make Karen's the house voice and re-audition
+camping.)*
 
 ## Divergence from the Karen narrator — deliberate
 
 Karen's narrator is **General American, mid-range, explicitly "never deep."** This one is
-**Northern English, deep and gravelly.** They are not the same man and are not meant to be. If
-BadCode wants one house narrator across the whole run, that is a call to make now, before either
-voice is saved and becomes a canon asset — see the standing rule at the top of Karen's
-`narration/README.md`.
+**Northern English, deep and gravelly.** They are not the same man and are not meant to be. *(Whether BadCode wanted one house narrator across the run was closed 2026-10-28: no —
+each story keeps its own, [`docs/stories/STYLE.md`](../../STYLE.md).)*
 
 ---
 

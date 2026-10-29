@@ -1,3 +1,4 @@
+// style-lint: story=camping — a Camping-only take scan (title filter camping-r7).
 import { connect, listTakes } from '/home/jackt/projects/badcode/badcode/scripts/suno/suno.mts'
 const { page } = await connect()
 const seen = new Map<string, { title: string; dur: string | null }>()

@@ -88,7 +88,7 @@ our script and what Premiere sequences each timeline maps onto."* The board open
 
 ### 2. Status: where are we, what do I open
 
-Read `timelines.json`, then each part's `trail.json` and `cut-notes.json`, and answer in the house style:
+Read `timelines.json`, then each part's `trail.json` and `cut-notes.json`, and answer in the board's usual format:
 what is on a timeline, what is in Premiere, what is not made, and **which one to open now** (`open_now`).
 Read the live page first if another session may have changed it (`Artifact read`); merge any newer state into the file.
 

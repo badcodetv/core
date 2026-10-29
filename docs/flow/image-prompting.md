@@ -64,10 +64,11 @@ Full term reference with reliability tiers: [`camera-vocabulary.md`](./camera-vo
 including the **near-black recipe**, which names the source *and* claims the shadow, and matters
 more to any near-black look (GPOM's, for one) than any other lighting note in these files.
 
-## 4. Realism — defeating the plastic default
+## 4. Realism — defeating the plastic default (when the look is photographic)
 
-The model defaults to studio-perfect. Explicitly grant it permission to be a real
-camera:
+The model defaults to studio-perfect (engine fact). **If the story's `look.md` is
+photographic**, explicitly grant it permission to be a real camera; a drawn, painted or
+deliberately glossy look takes its own counters from its `look.md`:
 
 - "hyper-realistic skin texture with visible pores and subtle imperfections"
 - "natural skin microtexture, subtle pores" — and prefer "soft key with diffusion"

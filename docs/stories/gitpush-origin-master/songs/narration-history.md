@@ -41,7 +41,7 @@ The robot's "he misses you" stays the only named feeling.
 | **D** | — | the bot, **not Suno**: Google AI Studio, a warm West Country voice | see "The bot's voice" below |
 | **Oi** | — | the narrator | trimmed from an r64 B take, placed after the bot |
 
-**Settings:** the house settings above, **Duration 20** (happy) and **25** (sad), weirdness 25.
+**Settings:** the GPOM narration settings above, **Duration 20** (happy) and **25** (sad), weirdness 25.
 Exclude drops "strings" (the harp is one) and keeps violins and orchestra out.
 
 #### `gpom-sim-happy` — scene 4, the fake world · r4
@@ -222,7 +222,7 @@ He'd never say, mind—
 [End]
 ```
 
-**Settings:** house settings, **no Voice**, Vocal Gender **female**, Duration 30, weirdness 25.
+**Settings:** GPOM narration settings, **no Voice**, Vocal Gender **female**, Duration 30, weirdness 25.
 
 #### (retired) `gpom-sim-oi` — scene 4, "Oi" and the Storyverse · r1 · 🔴 Kai 2026-09-30: *"I don't think the interruption quite works"* — the robot carries on instead (see "The robot's voice", r3, and `scenes/simulation.md` part 2). The coin/cat/slits stills are kept for later
 
@@ -276,7 +276,7 @@ Is that... arguing?
 [End]
 ```
 
-**Settings:** house settings, Voice `badcode newsreader`, Duration 45, weirdness 25.
+**Settings:** GPOM narration settings, Voice `badcode newsreader`, Duration 45, weirdness 25.
 
 #### The robot's voice — Google AI Studio (Gemini TTS), NOT Suno · r2
 
@@ -385,7 +385,7 @@ Exclude styles:
 vocals, singing, voice, spoken word, choir, humming, whistling, drums, percussion, beat, bass drop, loud, epic, orchestra, strings swell, synth lead, electronic, dance, cinematic build
 ```
 
-**Settings:** house settings, **no Voice**, **no lyrics** (instrumental), Duration 30, weirdness 25.
+**Settings:** GPOM narration settings, **no Voice**, **no lyrics** (instrumental), Duration 30, weirdness 25.
 
 #### `gpom-sim-bed2` — scene 4, the robot's long stretch · r2 · instrumental
 
@@ -413,7 +413,7 @@ Exclude styles:
 vocals, singing, voice, spoken word, choir, humming, whistling, heavy drums, drum kit, bass drop, loud, epic, cinematic build, synth lead, electronic, dance, dark, horror
 ```
 
-**Settings:** house settings, **no Voice**, **no lyrics**, Duration 90, weirdness 25.
+**Settings:** GPOM narration settings, **no Voice**, **no lyrics**, Duration 90, weirdness 25.
 
 
 ## Scene 4 · robot's long music bed — r74, 2026-09-30 (instrumental, no Voice, Duration 90)
@@ -426,7 +426,7 @@ The robot now carries ~90s (the narrator is out for a stretch). Kai: happy but i
 - gpom-s4-bed2-wondering-v6-w25  (rendering)  https://suno.com/song/a6cf12f5-d320-4d00-b8e1-a76f29bf755d  ✅ **Kai's pick** ("really good for the robot. I love it."); recorded 89.52s → `gpom-s01` A7 at 195.875 (under the robot), volume not yet ducked
 - gpom-s4-bed2-wondering-v6-w25  (rendering)  https://suno.com/song/b037552d-c4ee-4bb7-954c-c3f903fcbea2
 
-## Scene 4 · happy part, Kai's new words, calmer — r73, 2026-09-30 (house settings, Duration 20)
+## Scene 4 · happy part, Kai's new words, calmer — r73, 2026-09-30 (GPOM narration settings, Duration 20)
 
 Kai changed "Everyone in work!" → "Everyone having a great day!"; r4 was "a bit too obviously happy".
 Two calmer variations, words untouched: understated / sincere. 10 credits each (7085 → 7065).
@@ -439,7 +439,7 @@ Nothing recorded, nothing picked. (The r72 "Oi" draft is retired: Kai, "the inte
 
 Next round is **r75**.
 
-## Scene 4 · "Oi" and the Storyverse — r72, 2026-09-30 (house settings, Duration 45)
+## Scene 4 · "Oi" and the Storyverse — r72, 2026-09-30 (GPOM narration settings, Duration 45)
 
 The narrator cutting back in after the robot (`gpom-sim-oi`), Claude's draft words approved to cut.
 Seven paragraphs, one cue each; clarinet as the sad part. 10 credits (7095 → 7085). Nothing
@@ -450,7 +450,7 @@ recorded, nothing picked.
 
 (next round was r73)
 
-## Scene 4 · sad part, last cue fixed — r71, 2026-09-30 (house settings, Duration 15)
+## Scene 4 · sad part, last cue fixed — r71, 2026-09-30 (GPOM narration settings, Duration 15)
 
 Kai on r70: working, but *"Stupid boring computers"* jumps into a completely different voice. One
 variable: that line's cue, *sulky, muttering, childish* → *the same voice, flat and weary, quietly
@@ -461,7 +461,7 @@ fed up*. 10 credits (7105 → 7095). ✅ **Kai picked `57c6ef18`** ("perfect"); 
 
 (next round was r72)
 
-## Scene 4 · sad part cut short — r70, 2026-09-30 (house settings, Duration 15)
+## Scene 4 · sad part cut short — r70, 2026-09-30 (GPOM narration settings, Duration 15)
 
 Kai: cut *"I just can't feel anything"* and *"So much for simulation theory!"* from the narrator's
 sad part; the robot says both ideas now, and it's funnier from her. Three lines left, same style and
@@ -472,7 +472,7 @@ cues as r4. 10 credits (7115 → 7105). Nothing recorded, nothing picked.
 
 (next round was r71)
 
-## Scene 4 · music bed under the robot — r69, 2026-09-30 (house settings, instrumental, no Voice, Duration 30)
+## Scene 4 · music bed under the robot — r69, 2026-09-30 (GPOM narration settings, instrumental, no Voice, Duration 30)
 
 The robot moved to Gemini TTS (Kai picked r2 **b**, Aoede/Bristol, on `gpom-s01` A6 at 215.125).
 Kai: a Suno music-only bed under it, *"very light… would not in any way interfere"*. Two styles
@@ -487,7 +487,7 @@ Kai: a Suno music-only bed under it, *"very light… would not in any way interf
 
 (next round was r70)
 
-## Scene 4 · the robot, female and sarcastic — r68, 2026-09-30 (house settings, no Voice, Vocal Gender female, Duration 30)
+## Scene 4 · the robot, female and sarcastic — r68, 2026-09-30 (GPOM narration settings, no Voice, Vocal Gender female, Duration 30)
 
 Kai: the robot narrated in Suno; **female** (to counter the dark, gravelly newsreader), sarcastic,
 northern, "West Country also could work", so both accents were run. Same words, cues and
@@ -504,7 +504,7 @@ git merge in progress (someone else's) had left the live file conflicted. Nothin
 
 (next round was r69)
 
-## Scene 4 · Kai's words, clarinet, with emotion cues — r67, 2026-09-30 (house settings; Duration 20 / 25)
+## Scene 4 · Kai's words, clarinet, with emotion cues — r67, 2026-09-30 (GPOM narration settings; Duration 20 / 25)
 
 Kai rewrote both parts' words (frozen) and switched harp → clarinet ("uplifting, not overtly
 happy"). Words first, style later. Claude added a `[music | voice]` emotion cue per line group
@@ -519,7 +519,7 @@ happy"). Words first, style later. Claude added a `[music | voice]` emotion cue 
 
 (next round was r68)
 
-## Scene 4 · two parts on harp — r66, 2026-09-30 (house settings; Duration 20 / 25)
+## Scene 4 · two parts on harp — r66, 2026-09-30 (GPOM narration settings; Duration 20 / 25)
 
 Kai after hearing r65: one take can't turn hard enough, so back to two parts joined in Premiere
 with a glitch SFX; both on harp; keep the optimistic delivery; "Oh, fuck" out → "Oh no. It never
@@ -536,7 +536,7 @@ the pigeons." / "Nine hundred and twelve Swindons. Not one of them argues back."
 
 (next round was r67)
 
-## Scene 4 · one take, fake world → wreck — r65, 2026-09-30 (house settings, Duration 30)
+## Scene 4 · one take, fake world → wreck — r65, 2026-09-30 (GPOM narration settings, Duration 30)
 
 Kai after hearing r64: pieces A and B split apart felt wrong, so they're merged into one take
 (`gpom-sim-open`); no strings on the happy part; new line after the swear, "It never works. It
@@ -552,7 +552,7 @@ one Create each, weirdness 25, 10 credits each (7215 → 7195). Nothing recorded
 
 (next round was r66)
 
-## Scene 4 · the simulation, first draft — r64, 2026-09-29 (house settings; Duration 20 / 20 / 30)
+## Scene 4 · the simulation, first draft — r64, 2026-09-29 (GPOM narration settings; Duration 20 / 20 / 30)
 
 Three pieces, one Create each (2 takes), weirdness 25, 10 credits each (7245 → 7215). Words are
 Claude's r1 draft from Kai's brief, for Kai to edit. Nothing recorded, nothing picked.
@@ -569,7 +569,7 @@ Claude's r1 draft from Kai's brief, for Kai to edit. Nothing recorded, nothing p
 
 (next round was r65)
 
-## Scenes 2 + 3 · dramatic pass d03 — r63, 2026-09-29 (house settings, Duration **80**)
+## Scenes 2 + 3 · dramatic pass d03 — r63, 2026-09-29 (GPOM narration settings, Duration **80**)
 
 Kai cut the words hard by ear after d02 (1:49 / 1:40) and asked for 1:20, *"the more haunting oboe with very gentle horns in the background"*, a solo violin tail-off, and every cue reconsidered per story stage (the stage table is in `narration.md`). Cues and style written by Claude (Fable 5.1), words untouched. Form read back: style 550, exclude 287, 22 lyric paragraphs, duration slider 80. 10 credits (7,255 → 7,245). ✅ **Kai picked `9c278a6a`**; recorded (90.0s) and laid on `gpom-s01` A4 at 87.29s.
 
@@ -649,7 +649,7 @@ It declined.
 [End]
 ```
 
-## Scenes 2 + 3 · dramatic pass d02 — r62, 2026-09-29 (house settings, Duration **100**)
+## Scenes 2 + 3 · dramatic pass d02 — r62, 2026-09-29 (GPOM narration settings, Duration **100**)
 
 Kai on d01: *"This is really getting there… I think the style is really working. I don't think the flute is the right instrument… possibly the oboe."* And shorter: d01 ran 1:53, so Duration set explicitly to 100 (1:40). Kai also trimmed words by ear (the banks now open *"We had taken control of six banks over a single weekend"*; *"Nobody had been asked"* cut). Changes: flute → oboe in the Style box and three cues; Duration 110 → 100. Form read back: style 522, exclude 255, 29 lyric paragraphs. 10 credits (7,265 → 7,255). Not recorded, not picked.
 
@@ -658,7 +658,7 @@ gpom-s23-d02-v6-w25  1:49  https://suno.com/song/2f87660e-8500-444f-8346-6f96050
 gpom-s23-d02-v6-w25  1:40  https://suno.com/song/b4ad7164-56bd-42c1-942c-81730034a936
 ```
 
-## Scenes 2 + 3 · dramatic pass d01 — r61, 2026-09-29 (house settings: v6, SI 50, AI 65, w25, Duration 110)
+## Scenes 2 + 3 · dramatic pass d01 — r61, 2026-09-29 (GPOM narration settings: v6, SI 50, AI 65, w25, Duration 110)
 
 The locked words with the horns-and-flute Style box and one `[music | voice]` cue per paragraph (map in `narration.md`). Kai: *"let's get a cut where everything's working before we think about style."* Form read back: style 511, exclude 255, 30 lyric paragraphs. 10 credits (7,275 → 7,265). Not recorded, not picked.
 
@@ -673,7 +673,7 @@ Kai: *"I think we've got that down"*, then deleted *"I wrote him a very good one
 
 ### (retired) `gpom-datacentre-t01` — scenes 2 + 3 · timing pass t01 · 2026-09-29
 
-🔑 **Timing pass (Kai, 2026-09-29):** *"we need to focus on the timing of the words before we then expand out into other styles… generate just one cut with vanilla settings."* So this block is deliberately bare: a short Style box with a light dark-dystopian lean, **one top cue and no per-line cues**, house settings, one Create per pass. Kai edits the words as he hears them read, and we re-run. Styles and cues come back only after the words and timing are right. The full cued version (revision S) is kept in `narration-history.md`.
+🔑 **Timing pass (Kai, 2026-09-29):** *"we need to focus on the timing of the words before we then expand out into other styles… generate just one cut with vanilla settings."* So this block is deliberately bare: a short Style box with a light dark-dystopian lean, **one top cue and no per-line cues**, GPOM narration settings, one Create per pass. Kai edits the words as he hears them read, and we re-run. Styles and cues come back only after the words and timing are right. The full cued version (revision S) is kept in `narration-history.md`.
 
 **Naming:** `gpom-s23-t<NN>` = scenes 2 + 3, timing pass NN (the script appends `-v6-w25`). Bump NN each pass.
 
@@ -722,7 +722,7 @@ It declined.
 [End]
 ```
 
-## Scenes 2 + 3 · timing pass t01 — r60, 2026-09-29 (house settings: v6, SI 50, AI 65, w25, Duration 105)
+## Scenes 2 + 3 · timing pass t01 — r60, 2026-09-29 (GPOM narration settings: v6, SI 50, AI 65, w25, Duration 105)
 
 Kai reset: one Create, vanilla settings, bare atom (short Style box with a light dark-dystopian lean, one top cue, no per-line cues) so the words and timing can be fixed by ear before styles return. New naming: `gpom-s23-t<NN>`. Form read back: style 298, exclude 303, 22 lyric paragraphs. 10 credits (7,285 → 7,275). Not recorded, not picked.
 
@@ -827,7 +827,7 @@ gpom-c3-r-ai80-v6-w30  ?     https://suno.com/song/8787d33c-38b4-41de-bce0-5baae
 
 Kai on r56: frontier and bandstand *"sound inherently happy"*; machine is *"aggressively kind of dramatic with the stabs of brass"*. He wants the middle, like the earlier takes (revision K): *"not necessarily upbeat positive, but equally not necessarily dramatic, sad, negative."* Asked whether the styles were over-engineered, and for the bracket cues to be rethought for the voice. So: **the lyrics are the live revision Q block in all three cells** (new voice cues, words untouched), and the Style box is the variable. Cell 1 is the live block itself (revision K's own style with the new arc sentence), the control. Cells 2 and 3 are shorter, simpler styles aimed at the middle mood; their excludes add a ban on stabs, fanfare and drama.
 
-Generated 2026-09-29, one Create per style, house settings, Voice `badcode newsreader`, Personalize off, workspace gpom-story. 30 credits (7,395 → 7,365). Not recorded, not picked.
+Generated 2026-09-29, one Create per style, GPOM narration settings, Voice `badcode newsreader`, Personalize off, workspace gpom-story. 30 credits (7,395 → 7,365). Not recorded, not picked.
 
 ```
 gpom-c3-q-control-v6-w25      1:10  https://suno.com/song/9d59fb5c-8318-4993-9b15-98198bf41391
@@ -928,7 +928,7 @@ Turkeys, arguing over who gets the profits from Christmas.
 
 Kai: brass is scene 2's colour (the opening is cello and violin, modern opera; this is the Tatooine *setting out the world* scene), so play with variations of it. Words = revision P as Kai edited it 2026-09-29, identical in all three; only the instrument words in the cues change. Each Style box rewritten whole (bold, not meek). Extract keys below.
 
-Generated 2026-09-29, one Create per variation (Suno always returns 2 takes), house settings, Voice `badcode newsreader`, Personalize off, workspace gpom-story. 30 credits (7,425 → 7,395). Not recorded, not picked.
+Generated 2026-09-29, one Create per variation (Suno always returns 2 takes), GPOM narration settings, Voice `badcode newsreader`, Personalize off, workspace gpom-story. 30 credits (7,425 → 7,395). Not recorded, not picked.
 
 ```
 gpom-c3-p-frontier-v6-w25   0:59  https://suno.com/song/968e871d-e2f1-494b-8707-593b2784ea27
@@ -1175,8 +1175,8 @@ Fix it by trimming the take, by Kai extending the picture past 2:16, or by regen
 `narration-canonical.md` was split in two: the live sheet became `narration.md` and its round logs
 moved here, verbatim. The old v5.5 `narration.md` became `archive/narration-v5.5.md`, and
 `narration-v6.md` became `archive/narration-v6.md`. Kai's rulings the same day:
-- one **house style template** with four blanks (in `narration.md`)
-- **scene 2's picked settings** as the house default: Style Influence 50, Audio Influence 65, weirdness 25
+- one **GPOM narration style template** with four blanks (in `narration.md`)
+- **scene 2's picked settings** as GPOM's narration default: Style Influence 50, Audio Influence 65, weirdness 25
 
 This replaced the old rule "weirdness 10 or 20 only". Both picks had run at 25.
 
@@ -1782,7 +1782,7 @@ to their master.
 
 ## The sheet's rules and commands as they stood on 2026-09-19
 
-Replaced by the house settings in `narration.md` on 2026-09-24.
+Replaced by the GPOM narration settings in `narration.md` on 2026-09-24.
 
 ### How to generate it
 

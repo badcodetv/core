@@ -304,7 +304,7 @@ its traits and its period.
 | S5 | **1960s limited-animation heist titles** | Flat cut-paper shapes, no outlines. The look of 1960s heist and spy film titles, which suits the funk |
 | S6 | **Linocut protest print**, two colours | The leaflet and protest-poster tradition (an Austrian film animated the 1934 February Uprising in linocut for exactly this reason) |
 | S7 | **Risograph punk zine**, misregistered | DIY print, fluorescent ink, grain; the anti-polish style, and the furthest from slop |
-| S8 | **BadCode noir**: near-black ink, one thin light per floor | The house register (`new-image`): darkness as the canvas, one light, the presses as monumental machines, gold as the only bright colour |
+| S8 | **BadCode noir**: near-black ink, one thin light per floor | GPOM's MACHINE register (then the `new-image` house register; no house look since 2026-10-28): darkness as the canvas, one light, the presses as monumental machines, gold as the only bright colour |
 
 **The style clauses** (each prompt = clause + the shared paragraph):
 
@@ -341,7 +341,7 @@ style (the players are gangsters now, of mixed looks); the bowler mayor held in 
 | S5 | 1960s heist titles | b9f8125b · 4b0e24b6 | The cleanest and most readable; suits the funk. Flat shapes should be the easiest for Omni to move (inferred, untested) |
 | S6 | Linocut protest print | de1b7078 · 19b80a82 | Bold, readable, angry. 🟡 The red crowd got the colour and the blue crowd stayed black, so the sides aren't equal; give each side an ink |
 | S7 | Risograph zine | 4f7a4b58 · 5b0266c0 | 7a good, punk and colourful. 7b wrote labels ("DIY PUNK ZINE", "TOP ATTIC"): the prompt read literally |
-| S8 | BadCode noir | 288fc960 · dc1732e7 | The house register, but the small figures vanish in the black; only the gold basement reads (`symptoms.md`: near-black needs one bright region, and this has one per floor at best). Weakest for a cross-section |
+| S8 | BadCode noir | 288fc960 · dc1732e7 | GPOM's register, but the small figures vanish in the black; only the gold basement reads (`symptoms.md`: near-black needs one bright region, and this has one per floor at best). Weakest for a cross-section |
 | S9 | Gangster game cartoon | a1cf80ad · 3be1345a | The "mafia game" look: square-jawed, matte cel shading, Art Deco. Faces fine at zoom. 9b adds a trenchcoat heavy at the door |
 | S10 | 1930s comic strip | e4a7d7bc · 36e5a4f8 | 10b lovely: Art Deco frame, newsprint colour. 10a invented a masthead and floor labels |
 

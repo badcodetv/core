@@ -73,7 +73,7 @@ GPOM's look (its `docs/stories/gitpush-origin-master/look.md`) is near-black, on
 
 ### Glitch, decay, "the transmission is failing"
 
-The register for anything that is *received wisdom from a broken future*.
+For a story that frames its footage as *received wisdom from a broken future*, a failing transmission.
 
 | Want | Effect | Match name |
 | --- | --- | --- |
@@ -234,13 +234,14 @@ Aberrations especially, and `Fractal Noise` is a free procedural texture generat
 | **3D / physical** | `AE.AE_Impact_3D_Flip` · `AE.AE_Impact_3D_Roll` · `AE.AE_Impact_3D_Blinds` · `AE.AE_Impact_Fold` · `AE.AE_Impact_Page_Peel` · `AE.AE_Impact_Film_Roll` · `AE.AE_Custom_Impact_Fall` · `AE.AE_Custom_Impact_Spinback_3D` |
 | **Distortion** | `AE.AE_Impact_Liquid_Distortion` · `AE.AE_Impact_Warp` · `AE.AE_Impact_Wave` · `AE.AE_Impact_Glass` · `AE.AE_Impact_Kaleido` · `AE.AE_Impact_Mirror` · `AE.AE_Impact_Chaos` · `AE.AE_Impact_Grunge` |
 
-**`AE.AE_Impact_Luma_Fade` and `AE.AE_Impact_Flash` are the two to try first for BadCode** — a luma
+**`AE.AE_Impact_Luma_Fade` and `AE.AE_Impact_Flash` were the two to try first for GPOM's near-black look** — a luma
 fade reads as the image dissolving into the black rather than crossing into another shot, which is
-the register; a flash is the cheapest way to make a cut land on a beat.
+that look's register; a flash is the cheapest way to make a cut land on a beat in any look.
 
 ### Everything else
 
-Classic wipes and geometric transitions, all present, none of them BadCode's register:
+Classic wipes and geometric transitions, all present, none of them used in GPOM's register so far (a
+story whose `look.md` wants broadcast or game-show furniture may want exactly these):
 Band Slide/Wipe · Barn Doors · Center Split · Checker Wipe · CheckerBoard · Clock Wipe · Cross Zoom
 · Inset · Iris Cross/Diamond/Round/Square · Non-Additive Dissolve · Page Turn · Paint Splatter ·
 Pinwheel · Push · Radial Wipe · Random Blocks · Random Wipe · Slide · Spiral Boxes · Split ·
@@ -391,8 +392,8 @@ across all 39 clips of Camping** on 2026-09-05.
 | 11 | Master | 100 |
 | 12 | Preserve Alpha | true |
 
-🟢 **Separate Shadows / Midtones / Highlights is the BadCode control.** Grain only in the shadows
-is exactly the near-black register — and it is also the banding defence before upload
+🟢 **Separate Shadows / Midtones / Highlights is the control for a dark look** (it was GPOM's). Grain only in the shadows
+suits a near-black register — and it is also the banding defence before upload, whatever the look
 ([`docs/video-fx/delivery.md`](../video-fx/delivery.md)).
 
 ### RGB Split — `AE.Impact_RGB_Split_FX` (24 params)
@@ -433,7 +434,7 @@ is exactly the near-black register — and it is also the banding defence before
 | 20 | Blend Mode | 1 |
 | 21 | Source Opacity | 100 |
 
-🟢 **`Light Position` (index 7) plus `Highlights Only` is the one thin light** — the BadCode
+🟢 **`Light Position` (index 7) plus `Highlights Only` is the one thin light** — GPOM's
 register in two parameters.
 
 ---

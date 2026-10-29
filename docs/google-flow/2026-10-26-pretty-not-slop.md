@@ -1,5 +1,12 @@
 # Prettier stills without slop: NB2 + Omni Flash (2026-10-26)
 
+> **Scope: The Speakeasy Mint (Bank Robbery music video) only.** Jack's "for all images going forward"
+> below meant that video's stills; BadCode has no house look ([`STYLE.md`](../stories/STYLE.md)). The
+> numbered recipe is that video's lit look, recorded in
+> [`../stories/bank-robbery/look.md`](../stories/bank-robbery/look.md) § Per part. **What generalises is
+> the engine behaviour:** Google's formula (narrative, not keywords; say what you want), Omni's static
+> default camera, naming a reflection makes NB2 overdo it, any shop word prints itself, the slop tells.
+
 **Why:** Jack, Speakeasy Mint MV, scene 7: *"i kinda wanted more pretty shots, with more lights and reflections of the
 ground … windows … more cinematic, interesting camera shots, also the lighting and gamma needs to pop more. i want
 that for all images going forward. Please avoid elements of AI slop."* A subagent web pass on the same day confirmed the
@@ -26,7 +33,7 @@ quoting it publicly.**
 - **Painted wet streets that work:** named practicals (a shopfront, a streetlamp), wet cobbles and puddles,
   dark ultramarine/indigo shadows, one warm accent, a medium word (impasto). [anecdote]
 
-## 🔴 The conflict with the brief, and how we resolve it (inferred, untested until the scene 7 r2 results)
+## 🔴 The conflict with the brief, and how we resolve it — Speakeasy Mint's recipe (inferred, untested until the scene 7 r2 results)
 
 Naming a **reflection** makes NB2 overdo it (once it came back as a double exposure across a face, `nano-banana-2.md` §10), and NB2 already
 runs "too sharp, too contrasty". So "pop" and "reflections" are asked for by their **causes**, never by name:

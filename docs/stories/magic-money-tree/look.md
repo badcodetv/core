@@ -61,6 +61,17 @@ Documentary:
 - **Verb cards** on every dated beat; May's clip or card runs long enough for *shake* to be heard or read.
 - **Germany 1923** is public-domain stills only (Bain/LoC, Rol and Meurisse/BnF).
 - **Illustration and generated imagery must be clearly distinguishable** from archive.
+- **Generated stills are colour only, never black-and-white** (Jack, 2026-10-01, on seven Dunkirk style
+  tests: *"they look all the same"* — [`magic-money-tree-jack.md`](./magic-money-tree-jack.md)). Real
+  archive stays as it is.
+- 🔴 **OPEN — is the documentary register this story's?** The 2026-08-26 cinematography sweep
+  proposed the documentary register (visible imperfection: grain, unstable framing, uneven exposure,
+  a camera reacting a beat late) "for the money film" (`docs/cinematography/registers.md` §3). Never
+  ruled by Kai or Jack. If adopted, ruling R6 holds: borrowing vérité codes for *invented* footage of
+  a *real* subject manufactures "this really happened" — money creation is a true subject, so flag
+  every use. (Moved from the shared cinematography docs, 2026-10-29.)
+- **Style tests are reviewed in Flow, not saved to a Desktop folder**; their prompts are recorded in
+  [`magic-money-tree-jack.md`](./magic-money-tree-jack.md) (Jack, 2026-10-01).
 
 Money For Something:
 - **One locked frame per monologue**; the camera never moves so the screen can be replaced with a mask.
@@ -77,6 +88,11 @@ Money For Something:
 - **Cards, "third style"** (`build-topical-cards3.py`): Inter Tight, left aligned, sentence case, a small
   tracked label with a coloured dot, one big number in the accent colour, the source in small grey type on
   a hairline, photo darkened by a gradient from the left; lines slide up and fade in.
+- **The money on the tree is English pound sterling, never dollars** — say so in every still and clip
+  prompt (Jack, 2026-10-04).
+- **Never write audience, laughter, applause, comedy or newsreader in a talking-clip prompt** (each one
+  summoned crowd noise or was refused); name the sound as the speaker's voice plus an empty room's hum
+  (Jack ruled out studio laughter, 4 Oct).
 - Video: Omni 1.1 Flash, **Frames**, 720p, 8 s (Ingredients re-stages the room). Host v2 talks off screen
   (TTS), so a few stock movement clips from plate H1 are reused.
 
@@ -139,5 +155,10 @@ he is a ghost, and what he is called.
 - **The legacy comic** at `/comics/magic-money-tree` and its panel prompts in [`storyboard/`](./storyboard/README.md)
   — not this documentary's look.
 - **The 15-minute cut** (28 Sept) → three minutes (1 Oct).
+- **Money For Something, the 1975 game-show look** (2–4 Oct 2026, superseded by the back-room club set,
+  plate B, 10 Oct): a realistic 1975 British TV studio on tube-camera videotape, 4:3, Nano Banana 2, a
+  money tree on stage; host v1 the dishevelled comic (Flow Character `65e090db`, Jack's pick 2 Oct from five
+  looks); room-and-cast reference round 9's 9c (`mfsclearstageref.jpg`, Jack 3 Oct: *"this one is great"*).
+  Prompts in [`money-for-something.md`](./money-for-something.md).
 - **Money For Something host v2 round 1** (25 Oct, A/B/C): too perfectly arranged; round 2's eight designs
   gave D1.

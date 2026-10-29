@@ -136,13 +136,111 @@ to be listened to, and she is not going to start now."*
 What the narration must do and where it is silent: [`narration-brief.md`](./narration-brief.md)
 (three wordless places: the crash `3a`, the smile fading `5d`, and the `12d` tilt ends on the last word).
 
+**Accent (Camping, 2026-09-04 → 09-09; the male candidates Dez, Nev, Ray):** Brixton / south-east
+London — the best-evidenced British accent on AI Studio, and native to a film set around the NatWest
+floor, the Shard and a Waitrose car park. RP ruled wrong for Camping's reader. Accent clause, verbatim:
+*"a mild, everyday south London accent, the kind nobody would remark on."* Engine evidence:
+`docs/ai-studio/README.md` § Which accents actually work. ⚠️ **Nell, the narrator who won (Jack
+2026-09-09), is written *north* London** in her profile (above) — the south London call was for the male
+candidates; Nell's profile is what renders. (Moved from `docs/ai-studio/README.md`, 2026-10-29.)
+
+**The narration boxes that got a man talking in Suno** (2026-09-01, ten rounds) — skit/interlude pool word,
+`a man talking over a beat`, one unpitched bed; the whole poetry pool excluded; `[Monologue]` + prose
+paragraphs — are in suno-prompt §Getting a man to TALK (labelled Camping's there) and
+`docs/suno-gpt/suno-voices.md` Thread 5.
+
+### AI Studio profile "Gaz M." (2026-09-04, superseded by the later rounds)
+
+Moved here verbatim from `docs/ai-studio/README.md` (2026-10-29); superseded by the Dez/Nev/Ray rounds
+and then Nell.
+
+#### The Mancunian direction — the reference, described, never named
+
+> **The references (internal only), and the split:** the gravel-baritone comedic lead
+> (Lego Batman / BoJack) gives the **timbre and the timing**; the Burnage frontman gives the
+> **sneer**; the O2 voiceover (Sheffield, South Yorkshire) gives the **accent and the warmth**.
+> **Never put any of those names in the box.** `narration/voice.md`: *"cloning-of-real-people filters trip on
+> names, and descriptive traits steer better anyway."*
+
+🔑 **Three references, three jobs — keep them separate.** `narration/voice.md`'s two-way rule (*"one gives
+the throat, the other gives the smirk"*) extends: ask for all three at once as a blur of adjectives
+and you get a bad impression of one of them.
+
+🔴 **Accent is Sheffield, not Manchester.** A broad Mancunian articulation stack (nasal, adenoidal,
+snarled through the nose) came back **too northern** on 2026-09-04 — it reads as an impression.
+South Yorkshire flattened vowels carry the class without the caricature, and it is what
+`narration/voice.md`'s brief specified all along.
+
+🔑 **Written in Google's own headed shape**, not flowing prose — the Jaz R. example is markdown
+sections with `Style / Accent / Pace` sub-bullets and a **named persona**, and that structure is
+the part of the documented method we had not used.
+
+**→ VOICE DIRECTION**
+
+```
+# AUDIO PROFILE: Gaz M.
+## "The man who already knows how it ends"
+
+A working-class northern Englishman in his forties. Not a presenter and not a performer — a bloke telling you something across a table, who happens to have been right about all of it.
+
+### DIRECTOR'S NOTES
+
+Style:
+* The permanent smirk: you should be able to hear the curled lip. Bored, cocky and completely unbothered, and he finds the man he is describing beneath contempt.
+* The underplay: he throws every punchline away rather than landing it, and delivers sarcasm as if it were a weather report. He never signals that something is funny.
+* The grain: a gravelly voice with real grit and a little smoke in it, worn and lived-in — but never boomy, never an announcer, never a movie trailer.
+* Placement: he speaks through his nose, chin lifted, jaw pushed forward, like a man answering a question he resents.
+
+Accent: Gaz is from Salford, Greater Manchester. Hard flat northern vowels, a short hard "a" in bath and last, drawn out and leaned on and drooping at the ends of words. Swallowed consonants, dropped T's and dropped H's. Never Received Pronunciation, never London, never American.
+
+Pace: Slow and unhurried, around 130 words per minute. Ordinary conversational speech with uneven sentence lengths. He leaves gaps and does not rush to fill them, and every full stop is a real stop with a breath in it. His pitch swoops up inside a sentence and drops away at the end of it — never droning, never on one note.
+```
+
+**→ SCENE**
+
+```
+A small back room, late. One man and one microphone. Recorded like a voice memo: close and dry right on the mic, unproduced, no room and no echo on him at all. No music, no audience, nobody to play to.
+```
+
+**→ SAMPLE CONTEXT**
+
+```
+Gaz is the voice you hire for dry British satire — dark comedy, kitchen-sink documentary, deadpan political commentary. He reads out facts he finds contemptible without ever once raising his voice about them.
+```
+
+
 ## Rules for this story
 
 - **Two voices that never blend.** Cast by contrast — pitch, texture, tradition, delivery, age/class,
   room — and let the genre tag own the vocalist pool. **A saved Voice binds the whole track**, which is
   what merged Bob and Tarquin on the released take; use one only if each man is generated separately and
   joined in the edit (2026-08-21, Thread 4 of `docs/suno-gpt/suno-voices.md`).
-- 🔴 **Never double-time rap** (Jack, 2026-09-24). Urgent is fine; double-time is not.
+- 🔴 **Never double-time rap** (Jack, 2026-09-24: *"never do double time with the rapping, remember that
+  please"*). Urgent is fine; double-time is not. Keep `double-time, fast rap, rapid-fire flow, chopper rap,
+  speed rap, motormouth` in Exclude **and** strip the words that summon speed from all three boxes
+  (`breakneck`, `fast and clear`, `sprinting`, `on the grid` at 174) — a ban loses to a positive
+  instruction. Duration is the pacing lever (see *History*).
+- 🔴 **Aggressive Rasta reggae vocals, every lane** (Jack, 2026-09-27, r88: *"We have lost the aggresive
+  rasta vocals, that should always stay reggae and aggressive, but make the voice vary, whilst remaining
+  reggae in each song."*). A **different voice type per lane** (young fiery deejay · pulpit preacher ·
+  hardcore dancehall deejay · high-tenor singjay · elder toaster were r88's); sweet or calm singers are
+  the miss (r87's `brassdrop`, `barefoot`). Aggression is **passion and urgency, not slowness and not
+  speed**: r93's reading of Jack's reference is explosive consonants, a pushing chest voice, urgent
+  delivery (`camping.md` §v6.84).
+- 🔴 **Never write gravel / gruff / growl / hoarse / rasp for a Camping voice** (Jack, 2026-09-26, r82:
+  *"the deep gravel throated part … is ruining it … when i said aggression i meant the PASSION in the fast
+  paced reggae voice"*). Passion = `fiery, commanding, urgent and full of feeling`.
+  ⚠️ **Conflict to resolve before running r77 verbatim:** the frozen r77 `jamrock`/`bundem` boxes above
+  (*"one gruff and raw, one clipped and cold"*) predate this ruling and still carry `gruff`. r82 onwards
+  dropped it. Ask Jack whether r77 runs as frozen or with the voice clause replaced.
+- **A genre names the music, not the voice** (Jack, 2026-09-16, after r39 cast opera singers: *"when i
+  said opera, it should be a normal voice, not an opera singer."*). A "like opera" (or gospel, choir…)
+  version is the backing; the men stay ordinary — talking, rapping, plain untrained singing. Ban that
+  genre's own singer family in Exclude and never write the singer words in Style; ask only if the brief
+  names the singer. (r40, `camping.md` §v6.32.)
+- **No structure cues while honing the style** (Jack, r81: *"remove those and just have complete freedom
+  with the song"*): zero bracket cues in the Lyrics box (blank lines between sections only), no timing
+  words in Style.
 - **The men never sing.** Every vocal sound is a word from the lyrics: no oohs, no wordless hooks, no
   ad-libs. The hook is spoken flat by a room of men.
 - **The words are fixed.** `camping.md`'s `lyrics` block is the guard every runner checks before spending
@@ -150,6 +248,36 @@ What the narration must do and where it is silent: [`narration-brief.md`](./narr
   drifted unheard for nine rounds).
 - **Each round carries its whole direction in its own boxes**: My Taste not used, Personalize off
   (Kai, 2026-09-10).
+- **The narrator is angry, banked down (Jack, 2026-09-04).** Moved from `docs/ai-studio/README.md`
+  (2026-10-29):
+
+  **Jack, on the induction-video swing: *"it is not very BadCode, it needs to be gritty, deadpan, with
+  a hint of sarcasm and anger."*** 🔴 **The register inversion is rejected — do not retry it.** A
+  cheerful corporate narrator is a legitimate comedic engine and it was not Camping's narrator. (Another
+  story may want it.)
+
+  🔑 **And the note names the thing every previous direction was missing.** Every block so far asked
+  for **bored, unbothered, cannot be bothered, beneath contempt** — all of which are *absence* of
+  feeling, and absence of feeling is exactly what came back as **"boring"**.
+
+  > **Deadpan is a lid on something, not an absence of it.** The flat delivery only reads as deadpan
+  > if there is visible pressure underneath it. Ask for the pressure, not the flatness.
+
+  **`voice.md` (the narrator's words) agrees, and always did.** [`docs/voice.md`](../../voice.md): *"overtly sarcastic, dark
+  humour, **total authority**… nurturing underneath the snark. **The contempt is for the mistake, not
+  the people.**"* That is not boredom. **That is anger with manners.**
+
+  | Ask for | Not |
+  |---|---|
+  | Anger banked down and held still | Boredom |
+  | Sarcasm used as a weapon | Sarcasm as a joke |
+  | Tightening under pressure | Getting louder |
+  | Control | Flatness |
+
+  ⚠️ **Say it as pressure, never as flatness** — LiveKit's rule bans *"quiet", "flat", "no rush"* as
+  flatness-inducing. **"Banked", "contained", "held", "compressed", "clipped" are all safe** because
+  they describe force being restrained rather than force being absent.
+
 - **Accents are copied, not prompted** (narration): pick a voice that already has the accent; prose that
   asks for one comes back a cartoon (Jack, 2026-09-09).
 
@@ -164,10 +292,41 @@ What the narration must do and where it is silent: [`narration-brief.md`](./narr
 
 ## History
 
+- **The D&B era, r19–r72 (2026-09-14 → 09-23)** — what it taught, so nobody re-learns it (full rounds in
+  `songs/camping.md`):
+  - **The pacing bracket (Duration is the only proven pacing lever):** 155 s way too fast · **175–190 s the
+    working range** · 195 s too slow · 200 s slower still. 190 s was the best-behaved target (16/16 within a
+    second, r70–r72). *"Faster"* meant don't drag or pause, not more syllables (r55 correction). §v6.47,
+    §v6.58–64.
+  - **Drums loud, harshness out of the delivery:** softening the production sentence (`patient rather than
+    violent`, r64) lost the drum and bass; remove aggression in the delivery words, cues and bans instead
+    (r66, §v6.58).
+  - **The orchestra is a garnish with a job, never the bed or the lead** — measured three times (r43, r47,
+    r48) and widened by Jack (*"anytime there has been elements of classical, it has been too much
+    classical"*); r68 gave strings rhythmic jobs (§v6.39–60).
+  - **Every liked feature of `1127446d` was a disobedience** (the piano opening and sung chorus were Suno
+    inventions against the boxes): run the source's own boxes, keep the drift space, change one thing per
+    lane (r58, §v6.50).
+  - **Jack's references, translated (never named in a box):** Chase & Status → big polished UK dancefloor
+    D&B, razor-sharp chopped breaks, gnarly Reese, club-ready; Stormzy → deep, gruff, South London,
+    confident and unhurried (a heavy rapper, not a fast one); Baddadan → the aggression (§v6.46–53).
+  - **Favourites in order:** r16 dancin, r19 `reese` (`1127446d`/`3eaed0b3`), r27 `bounce` (*"this works
+    please remember how to do this"*, deep house, §v6.19), r37 `bucktown` (§v6.29), r42 `talkingblues`
+    (§v6.34), r66 `chorale` (`1b2aa79c`, §v6.58), r71 `wordsonly` (`36d0b981`, the frozen spine), then the
+    reggae passage of `36d0b981` → r77.
+  - **Rulings that were superseded:** the r41 from-scratch reset (background music, canon words, no
+    singing — background rule lifted at r43); *"always have the grime voice"* (2026-09-19, removed for the
+    reggae lanes 2026-09-24: *"remove any reference of Grime MC"*); the words-only hook (sung hook allowed
+    from r80, then pop pulled back at r81).
+
 - **The account-wide My Taste profile** (Scouse grime / D&B, Liverpool group-outing banter) was
   Camping-shaped and leaked into other stories' songs until My Taste was retired (2026-09-10). Kept
   verbatim in [`docs/suno-gpt/archive/suno-my-taste.md`](../../suno-gpt/archive/suno-my-taste.md).
 
+- **Casting by tradition** (from suno-prompt, labelled Camping's there, 2026-10-29): `British post-punk
+  spoken word` for the middle-aged working-class bloke, `BBC English` / newsreader for the establishment
+  one; `UK grime` fixed the nationality but cast both as young MCs; stripping `UK grime influence` with the
+  accent language sent both men American.
 - **Released take** — dark neurofunk D&B with Scouse and posh London voices; one saved Voice made them
   the same man.
 - **The duet re-cut, v5.5, rounds 1–17** — accepted 2026-08-21 (post-punk spoken word over D&B, four

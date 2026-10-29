@@ -1158,7 +1158,7 @@ Things we will only learn by asking a running Premiere. Each is assigned to a ti
 | --- | --- | --- |
 | Can the bridge **SET** a MOGRT's exposed Essential Graphics parameters? | Blocks template-driven maps, charts and kinetic type. *Reading what a template exposes no longer needs Premiere at all — see below.* | T11 |
 | Which integer is Screen on `AE.ADBE Opacity`'s Blend Mode, and which of its two Blend Mode params is live? | The one-call route for compositing Flow fire and smoke | — |
-| `AE.ADBE PPro SimpleText` parameter list; `AE.Impact_Vignette_FX` and `AE.ADBE_Noise_FX` param indices | Titles without a template, and the two most BadCode effects there are | — |
+| `AE.ADBE PPro SimpleText` parameter list; `AE.Impact_Vignette_FX` and `AE.ADBE_Noise_FX` param indices | Titles without a template, and the vignette and grain effects GPOM's and Camping's grades leaned on | — |
 
 ---
 
@@ -1612,7 +1612,7 @@ have been ~250 round trips.
 ### ⚠️ A transparent region rendered WHITE, not black — cause not isolated
 
 While the stale Motion Crop above was still live *alongside* the new Linear Wipes and the appended
-house-grade Lumetri, `premiere_export_frame` rendered the cut-away region **solid white** on a
+Camping-grade Lumetri, `premiere_export_frame` rendered the cut-away region **solid white** on a
 near-black clip on the bottom video track (V1, nothing beneath it). Zeroing the Motion Crop and
 leaving the Linear Wipes to do the work alone made the same region render **black**, as expected.
 

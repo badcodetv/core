@@ -56,28 +56,41 @@ const FLOW_HOST_RE = /^https:\/\/flow\.google\.com\//
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
 const TURN_TIMEOUT_MS = 90_000
 /**
- * Flow's compose bars default to "Nano Banana 2" and RESET to it on navigation, so the
- * model is asserted per generation, never once per session. Pro is materially sharper on
- * the same prompt (compared live 2026-08-11) and is what BadCode ships.
+ * 🔴 NO DEFAULT MODEL OR ASPECT (2026-10-29, design/2026-10-29-style-leak-audit.md §1). Until then
+ * an image call with no `model` became "Nano Banana Pro" and a video call "Veo 3.1 Fast" at 16:9 —
+ * a choice nobody made, applied to every story. Model and aspect are the story's (its look.md,
+ * docs/stories/STYLE.md), so every generating call must name them and these throw if it doesn't.
+ *
+ * Engine facts kept for the record: Flow's compose bars start on "Nano Banana 2" and RESET to it
+ * on navigation, so the model is asserted per generation, never once per session; the video
+ * Settings panel RESETS to Omni Flash on a fresh project (automation-video.md:20).
  */
-const DEFAULT_MODEL = process.env.FLOW_MODEL ?? 'Nano Banana Pro'
 export type VideoAspect = '16:9' | '9:16'
-// automation-video.md:15 records 16:9 / 1x as the persisted defaults (though it warns to re-check
-// them every project), so that's the aspect/count pair this client asserts by default.
-const DEFAULT_VIDEO_ASPECT: VideoAspect = '16:9'
+const IMAGE_MODELS_HINT = '"Nano Banana 2", "Nano Banana Pro" or "Nano Banana 2 Lite"'
+const VIDEO_MODELS_HINT = 'e.g. "Omni Flash", "Veo 3.1 Lite", "Veo 3.1 Fast", "Veo 3.1 Quality"'
+export function requireImageModel(model: string | undefined, where: string): string {
+  if (!model)
+    throw new Error(
+      `MODEL_REQUIRED: ${where} needs an image \`model\` (${IMAGE_MODELS_HINT}) — take it from the story's look.md. There is no default.`,
+    )
+  return model
+}
+export function requireVideoModel(model: string | undefined, where: string): string {
+  if (!model)
+    throw new Error(
+      `MODEL_REQUIRED: ${where} needs a video \`model\` (${VIDEO_MODELS_HINT}) — take it from the story's look.md. There is no default.`,
+    )
+  return canonicalVideoModel(model)
+}
+export function requireVideoAspect(aspect: VideoAspect | undefined, where: string): VideoAspect {
+  if (!aspect)
+    throw new Error(`ASPECT_REQUIRED: ${where} needs an \`aspect\` ("16:9" or "9:16") — take it from the story's look.md. There is no default.`)
+  return aspect
+}
 /**
- * Video's per-tier credit spread is far steeper than the image models' — Lite 10 / Fast 20 /
- * Quality 100 (automation-video.md:16) — so, unlike DEFAULT_MODEL for images, silently defaulting an
- * unrequested call to the top tier would risk a 5-10x spend the caller never asked for. Fast is
- * the deliberate middle: a real step up from Lite for the price of a fifth of Quality. A caller
- * who wants Quality's 100 credits asks for it explicitly via the `model` option.
- */
-// Written the way Flow's menu writes it. Loose spellings ("Veo 3.1 Fast") are accepted from
-// callers and normalised by canonicalVideoModel, so the env var stays forgiving.
-const DEFAULT_VIDEO_MODEL = process.env.FLOW_VIDEO_MODEL ?? 'Veo 3.1 - Fast'
-/**
- * Flow's own default clip length, and therefore the length of every clip made before the
- * duration control was discovered. Asserted on every video call — see generateVideo.
+ * Flow's OWN default clip length (an engine default, not a BadCode choice), and therefore the
+ * length of every clip made before the duration control was discovered. Asserted on every video
+ * call — see generateVideo. A story's length comes from its look.md; pass durationSeconds.
  */
 const DEFAULT_VIDEO_DURATION = 8
 const VIDEO_TIMEOUT_MS = 8 * 60_000
@@ -729,7 +742,10 @@ export class FlowClient {
    *   • character editor — a bare "🍌 <model> arrow_drop_down" trigger, no crop_ wrapper.
    * No-ops when the surface has no model picker.
    */
-  private async ensureModel(model = DEFAULT_MODEL): Promise<void> {
+  private async ensureModel(model?: string): Promise<void> {
+    // No model = leave the bar's model alone (a read, or a refine that only changes aspect).
+    // Every GENERATING caller has already been through requireImageModel.
+    if (!model) return
     // ⚠️ REBUILT 2026-09-13: Settings trigger → popover → "Select model family" → menuitems
     // "🍌 Nano Banana Pro" / "🍌 Nano Banana 2" / "🍌 Nano Banana 2 Lite".
     if (await this.settingsTrigger().count()) {
@@ -1332,6 +1348,7 @@ export class FlowClient {
     outPath: string | undefined,
     settled?: Locator,
   ): Promise<MediaResult> {
+    requireImageModel(model, 'a Character generation turn')
     const box = this.promptBox()
     await box.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.ensureModel(model)
@@ -1393,7 +1410,7 @@ export class FlowClient {
    * Idempotent — when the config trigger's label already shows the target state
    * the menu is not even opened, which keeps repeat calls in an edit loop cheap.
    */
-  private async ensureImageMode(count = 1, model = DEFAULT_MODEL, aspect?: string): Promise<void> {
+  private async ensureImageMode(count = 1, model?: string, aspect?: string): Promise<void> {
     // Wait for the create bar to hydrate (it renders after navigation).
     await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     if (await this.settingsTrigger().count()) return this.ensureImageModeRebuilt(count, model, aspect)
@@ -1478,13 +1495,13 @@ export class FlowClient {
    * Agent mode no longer hides the trigger, but it still changes what Enter does, so it is
    * switched off explicitly.
    */
-  private async ensureImageModeRebuilt(count: number, model: string, aspect?: string): Promise<void> {
+  private async ensureImageModeRebuilt(count: number, model: string | undefined, aspect?: string): Promise<void> {
     await this.ensureAgentOff()
     const trigger = this.settingsTrigger()
     const countTab = `x${count}`
     const label = () => trigger.textContent().then((t) => (t ?? '').replace(/\s+/g, ' ').trim())
     const done = (l: string) =>
-      /Nano Banana/i.test(l) && modelAlreadySelected(l, model) && l.endsWith(countTab) && (!aspect || aspectAlreadySelected(l, aspect))
+      /Nano Banana/i.test(l) && (!model || modelAlreadySelected(l, model)) && l.endsWith(countTab) && (!aspect || aspectAlreadySelected(l, aspect))
     if (done(await label())) return
     await this.openSettings()
     if (!(await this.settingsRadio(/^imageImage$/).getAttribute('aria-checked').then((v) => v === 'true'))) {
@@ -1504,7 +1521,7 @@ export class FlowClient {
       await this.page.waitForTimeout(150)
       l = await label()
     }
-    if (!done(l)) throw new Error(`IMAGE_CONFIG_NOT_APPLIED: wanted ${model} ${countTab}${aspect ? ` + ${aspect}` : ''}, trigger shows "${l}"`)
+    if (!done(l)) throw new Error(`IMAGE_CONFIG_NOT_APPLIED: wanted ${model ?? '(model unchanged)'} ${countTab}${aspect ? ` + ${aspect}` : ''}, trigger shows "${l}"`)
   }
 
   /**
@@ -1679,6 +1696,7 @@ export class FlowClient {
     outPath: string,
     opts?: { character?: string; numOutputs?: number; model?: string; aspect?: string },
   ): Promise<ImageResult & { candidates?: ImageResult[]; partial?: boolean }> {
+    requireImageModel(opts?.model, 'generateImage')
     const numOutputs = opts?.numOutputs ?? 1
     await this.ensureProjectRoot()
     // Rebuilt Flow: Character rows drop out of the picker until a reload (rebuild doc items 29,
@@ -1706,6 +1724,7 @@ export class FlowClient {
     outPath: string,
     opts?: { numOutputs?: number; character?: string; model?: string; aspect?: string },
   ): Promise<EditResult> {
+    requireImageModel(opts?.model, 'editImage')
     const numOutputs = opts?.numOutputs ?? 2
     await this.ensureProjectRoot()
     if (opts?.character && this.isRebuilt()) await this.reloadProject() // see generateImage
@@ -1735,7 +1754,7 @@ export class FlowClient {
    * ⚠️ This is a real, expensive bug fixed on 2026-08-14. The two cast paths appended with
    * `keyboard.type()`, which dispatches genuine key events — so every `\n` in a multi-line
    * prompt arrived as **Enter, and Flow's prompt box submits on Enter**. A ~2,000-character
-   * house-style prompt was therefore fired as ~15 separate generations, one per line, each
+   * multi-line prompt was therefore fired as ~15 separate generations, one per line, each
    * seeing a fragment: the project filled with junk images titled "Optics with soft edges",
    * "Visible film grain and dust", "Vibrant color palette with warm…", and the returned
    * "result" was whatever the last fragment produced. It cost real credits and looked exactly
@@ -2091,6 +2110,7 @@ export class FlowClient {
     outDir: string,
     opts?: { model?: string; aspect?: string; character?: string; numOutputs?: number; resume?: boolean },
   ): Promise<BatchResult> {
+    requireImageModel(opts?.model, 'generateBatch')
     const numOutputs = opts?.numOutputs ?? 1
     // Plan before touching the browser: with `resume`, a prompt whose output file is already
     // on disk is not regenerated. That is what lets a long unattended run be restarted after
@@ -2182,10 +2202,8 @@ export class FlowClient {
    * unconditionally, specifically so the no-argument path — every existing caller, today — stays
    * byte-for-byte the old behaviour (no `ensureImageMode` call at all). Passing either calls
    * `ensureImageMode(1, ...)` once, before the turn, to switch the compose bar; the side not
-   * given falls back to `ensureImageMode`'s own defaults (`DEFAULT_MODEL` / Flow's untouched
-   * aspect) rather than the session's current value — a caller who only wants a tier bump
-   * should not also be silently re-pinned to a stale aspect, and vice versa, so both fall back
-   * to the same neutral defaults every other image call uses.
+   * given is left exactly as the session has it (there is no default model since 2026-10-29 —
+   * a refine that only changes aspect keeps the previous turn's model).
    */
   async refine(prompt: string, outPath: string, opts?: { model?: string; aspect?: string }): Promise<MediaResult> {
     if (opts?.model || opts?.aspect) {
@@ -2427,8 +2445,8 @@ export class FlowClient {
   private async ensureVideoSettings(opts?: { model?: string; aspect?: VideoAspect; count?: number; character?: string }): Promise<void> {
     // Accept "Veo 3.1 Fast" and click "Veo 3.1 - Fast": the menu's exact labels are the click
     // targets, but nothing else in the codebase (or in a caller's head) writes them that way.
-    const model = canonicalVideoModel(opts?.model ?? DEFAULT_VIDEO_MODEL)
-    const aspect = opts?.aspect ?? DEFAULT_VIDEO_ASPECT
+    const model = requireVideoModel(opts?.model, 'ensureVideoSettings')
+    const aspect = requireVideoAspect(opts?.aspect, 'ensureVideoSettings')
     const count = opts?.count ?? 1
 
     // Reach the Agent settings view from whichever of THREE states the UI is in. The panel is
@@ -2713,7 +2731,8 @@ export class FlowClient {
     // Validate the clip length BEFORE anything is uploaded or spent. 10s exists only on Omni
     // Flash — on the Veo tiers the tab is absent, so a click-if-present would quietly hand back
     // an 8s clip and bill for it.
-    const videoModel = canonicalVideoModel(opts?.model ?? DEFAULT_VIDEO_MODEL)
+    const videoModel = requireVideoModel(opts?.model, 'generateVideo')
+    requireVideoAspect(opts?.aspect, 'generateVideo')
     // Default to 8s and ASSERT it, rather than leaving an omitted duration untouched. Duration
     // is project state that persists: the moment one call sets 4s, every later call that omits
     // it would silently inherit 4s. Before this parameter existed nothing ever moved the
@@ -2768,7 +2787,7 @@ export class FlowClient {
   private async generateVideoRebuilt(req: VideoRequest, videoModel: string, duration: number): Promise<VideoResult> {
     const { motion, outPath, startImage, endImage } = req
     const count = req.count ?? 1
-    const aspect = req.aspect ?? DEFAULT_VIDEO_ASPECT
+    const aspect = requireVideoAspect(req.aspect, 'generateVideo')
     await this.ensureProject()
     await this.reloadProject()
     await this.ensureAgentOff()
@@ -2818,7 +2837,8 @@ export class FlowClient {
    */
   async submitVideo(req: VideoRequest): Promise<void> {
     const { motion, startImage, endImage } = req
-    const videoModel = canonicalVideoModel(req.model ?? DEFAULT_VIDEO_MODEL)
+    const videoModel = requireVideoModel(req.model, 'submitVideo')
+    const aspect = requireVideoAspect(req.aspect, 'submitVideo')
     const duration = req.durationSeconds ?? DEFAULT_VIDEO_DURATION
     const problem = videoRequestError({ startImage, endImage, model: videoModel, durationSeconds: duration })
     if (problem) throw new Error(problem)
@@ -2829,7 +2849,7 @@ export class FlowClient {
     for (const path of [startImage, endImage]) if (path) await this.uploadToProject(path)
     await this.ensureVideoConfigRebuilt({
       model: videoModel,
-      aspect: req.aspect ?? DEFAULT_VIDEO_ASPECT,
+      aspect,
       duration,
       count: req.count ?? 1,
       frames: Boolean(startImage || endImage),
@@ -3211,7 +3231,7 @@ export class FlowClient {
   async refineVideo(req: VideoRefineRequest): Promise<MediaResult & { originalPrompt: string }> {
     this.assertMappedOnRebuild('refineVideo')
     const { mediaId, motion, outPath } = req
-    const videoModel = canonicalVideoModel(req.model ?? DEFAULT_VIDEO_MODEL)
+    const videoModel = requireVideoModel(req.model, 'refineVideo')
     const problem = refineRequestError({ mediaId, motion, model: videoModel, durationSeconds: req.durationSeconds })
     if (problem) throw new Error(problem)
     await this.ensureProject()

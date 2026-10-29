@@ -31,8 +31,8 @@ vocabulary — that gap is the whole reason you are here.
 The prompt boxes are the only interface. Proposals must be text that can go in a box. What the
 boxes are, and what is known to move them:
 
-- **Style box** — genre, tempo and key, then the instruments, then the voices, then the mix, then
-  the arrangement in order. **Hard limit 1,000 characters; it truncates silently**, so anything you
+- **Style box** — free text describing the song: genre, tempo, instruments, voices, mix,
+  arrangement, in whatever order the prompt that made this take used. **Hard limit 1,000 characters; it truncates silently**, so anything you
   add must come with something to cut.
 - **The genre tag casts the singer.** It carries a whole performer — accent, age, class — as one
   package. If the voice is wrong, the genre tag is the first suspect, not the vocal clause.
@@ -44,8 +44,10 @@ boxes are, and what is known to move them:
   exclude term is quietly forbidding.
 - **Delivery words carry more than attitude words.** `barked`, `half-shouted`, `muttered`,
   `strained`, `hollered` change a performance; `angry` and `aggressive` mostly do not.
-- **Naming drum mechanics beats naming a sub-genre** — `chopped breakbeat, amen rolls tearing
-  across a bar` lands where `liquid dnb` does not.
+- **Naming what each part plays beats naming a sub-genre.** A sub-genre tag is a package that
+  brings its own instruments, groove and singer; describing the part itself — `<instrument>,
+  <what it plays>, <where in the bar or the song>` — moves the take where the tag alone does not.
+  Write the example from the take's own genre, never from a genre it is not.
 - **Negation describes the thing you ban.** Writing `never sung` in the Style box puts the idea of
   singing in front of the model; prefer a positive description of the wanted delivery, and put the
   ban in the Exclude box.

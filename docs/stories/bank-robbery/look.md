@@ -6,18 +6,25 @@
 **Status:** LOCKED for the film — **"The bank in the haze"**, chosen by Jack, 6 October 2026
 ([`look-tests.md`](./look-tests.md) round 3, frame R3-4, candidate b, Flow media `5a6fed78`). Kai had not
 seen it when it was chosen. Refined the same day by the second still pass, which Jack approved (*"they
-are great"*), and on 8 October by the riot look reference `br5-riot-look`. The song's music video ("The
-Speakeasy Mint") has its own LOCKED look, K3a (Jack, 2026-10-25) — see *Per part*.
+are great"*), and on 8 October by the riot look reference `br5-riot-look`. **Colour and light changed on 9 October 2026**
+(cut 8, after Jack on cut 7: *"maybe it is a tad too grey as well, there should be more colour"*): the
+grey colour lock and "one light, no fill" are **superseded** by named saturated colours per place and two
+lights of different colours (*Rules*, below; the old lock is in *History*). Jack approved cut 10 on
+12 October (*"That is great"*). The song's music video ("The Speakeasy Mint") has its own LOCKED look,
+K3a (Jack, 2026-10-25) — see *Per part*.
 
 ## In one paragraph
 
 A **heist film shot like the news at dusk**: cold ambient light, **one warm source** that is the brightest
 thing in the picture, a dark out-of-focus shape cutting into the frame from one edge, and **red and blue
 carried by things people brought** — flare smoke, flags, scarves, bin lids, ties — never issued like
-cards. Slightly underexposed and muted: **stone grey, black and navy**, with small touches of red and blue
-the only strong colour. A declining English town is in every frame; the eleven suits are the only black in
-a grey street. From the second pass on the camera breaks height (floor, table top, ceiling corner, inside
-an object) and there is **one light, no fill**, different in every scene.
+cards. From cut 8 on, **each place has two or three named saturated colours and two lights of different
+colours** (the banking hall: black and cream chequered floor, mahogany, oxblood columns, brass, green
+banker's lamps against pink flare smoke; the strongroom: cream gloss brick, oxblood floor, a red fire
+bucket, one tungsten lamp against a green glow — [`stills-v8.md`](./stills-v8.md)). A declining English
+town is in every frame. From the second pass on the camera breaks height (floor, table top, ceiling
+corner, inside an object): *"david lynch type of cinematography… interesting angles, cinematic, funny and
+pretty to look at, whilst being gritty"* (Jack; never named in a prompt).
 
 ## Preamble(s)
 
@@ -25,29 +32,20 @@ There is no single pasted preamble; the lock is a **four-part prompt shape** wit
 ([`stills.md`](./stills.md) §"The style lock", distilled from the chosen still). The chosen still's own
 prompt (R3-4) is verbatim in [`look-tests.md`](./look-tests.md).
 
-**First pass (news register)** — the camera sentence and the close, word for word:
+**First pass (news-agency camera)** — superseded by the second pass; its camera sentence and grey close
+are in *History*.
 
-```
-A news agency photograph, shot on a Canon EOS R3 with a [lens] from [a place a person could stand] at [time].
-```
-
-```
-The picture is slightly underexposed and muted: stone grey, black and navy, with small touches of red and blue the only strong colour. Nobody is aware of the camera. 16:9.
-```
-
-**Second pass onwards (the look Jack liked, kept in v3)** — [`stills.md`](./stills.md) §"Second pass",
+**Second pass onwards (the look Jack liked, kept in v3; colour and light changed at cut 8)** — [`stills.md`](./stills.md) §"Second pass",
 [`stills-v3.md`](./stills-v3.md):
 
 1. `A frame from a feature film, shot on 35mm with a [lens] lens [in a named physical place].`
 2. Something large and out of focus against the lens.
 3. The people: where each one is and what their face is doing (the Character carries how they look).
 4. One sentence saying what is behind them "and nothing else".
-5. `One light source only, no fill:` one named source, then where the shadow falls.
-6. The colour lock, word for word:
-
-```
-Muted colour: stone grey, black and navy, with small touches of red and blue the only strong colour.
-```
+5. ~~`One light source only, no fill:`~~ **From cut 8:** two named light sources of different colours,
+   then where the shadow falls.
+6. ~~The grey colour lock~~ **From cut 8:** two or three saturated colours named for the place. Never
+   "muted", "cold", "grey", "no fill", "the only strong colour". (The old lock is verbatim in *History*.)
 
 With Characters attached, the prompt opens: `The named people are the attached Characters, with their own
 faces and clothes.` and closes `Visible 35mm film grain. Nobody looks at the camera. 16:9. Thanks.`
@@ -62,8 +60,30 @@ disorientating and cinematic."*
 
 - **No director, film or person named in any Flow field.** Every habit is written as a camera position, a
   lens and a light.
-- **Every frame names where its light comes from; one light, no fill.** One part of every dark frame is
-  clearly brighter than the rest, or it reads as a broken file.
+- **Every frame names where its light comes from: two lights of different colours** (from cut 8, 9 Oct
+  2026; was "one light, no fill"). Vary the pair by place: the first pass's same warm lamp plus cool daylight
+  in every frame read as AI. One part of every dark frame is clearly brighter than the rest, or it
+  reads as a broken file.
+- **Two or three saturated colours named for each place.** Never write "muted", "cold", "grey" or "no
+  fill" (the old tail ordered grey in most stills — [`review-cut7.md`](./review-cut7.md)).
+- **Short prompts, action first:** a still near 115 words, a clip near 60 (cut 7 averaged 244 and 120).
+  One line for a reference. Never describe an attached Character.
+- **Stage the hard move as already done** (mask on, cloth under the hand, gun raised, key in the lock):
+  read the cannot-do list at the top of [`docs/google-flow/README.md`](../../google-flow/README.md) before
+  designing a shot. Jack: *"flow clearly struggles with stuff like this"* (people lifting a leg while she
+  hoovers).
+- **A person with a line who is not a Flow Character is shown from behind**; the line is made outside Flow
+  (`scripts/bank-robbery/br-tts-v8.py`).
+- **Check clips at two frames a second or finer** before placing them.
+- These six came from the cut-7 audit (Claude's rules, not Jack's words); he approved the cuts made with
+  them (cut 10).
+- **Pistols small and far off**; **a real-looking place over a model or a metaphor**; headlines are a
+  spinning newspaper graphic, not someone holding a photo (Jack's notes on cuts 3 and 4, 8 Oct).
+- **Eye-level, across-the-room, flat even light reads as AI to Jack** (*"some of the shots look very AI
+  like… low or high angels, or from perspectives of objects in the room, mess around with lighting"*,
+  6 Oct). Name every camera position as a physical place.
+- **A shot Jack has seen and liked is not replaced by a re-make without asking** (he loved the old
+  `s09-walk` eating-and-pushing clip).
 - **Every wide shot of the crew shows a cost** (shut shops, Denise small in the back, an empty saucer).
   Someone is working in the frame where the scene allows.
 - **Something in the foreground**; **something specific to this town in every frame**.
@@ -135,7 +155,8 @@ Mr Blue in a red and a blue tie.
   the gap held by police barriers.
 - **The bank** — grey stone Victorian, tall columns, a wide flight of steps, warm lit windows; the vault in
   cold strip light on brushed steel.
-- **The garage** (the plan) — one bare bulb over a model of the town.
+- **The garage** (the plan) — one bare bulb over a bare table. **No model town** (Jack, 8 Oct: *"all of it
+  out, or anything similar it just does not work"*).
 - **The fountain** (the end) — switched off, blue dusk, one precinct lamp.
 - **Denise in the rain** looking up as the café is sold (Jack, 8 Oct: the *Blade Runner* rain shot, never
   named in a prompt).
@@ -148,6 +169,10 @@ Mr Blue in a red and a blue tie.
 - Stretched-lens flares (unsourced, but they put blue streaks on everything).
 - Eleven sharp suits in a clean frame (an advert for them).
 - A real person, film or director in any field.
+- The cardboard model town, or anything like it (Jack, cuts 3 and 4).
+- Guns pointed at the lens in close-up; a hand-with-remote at a window; grey-daylight eye-level crowds
+  (all called *"AI slop"* by Jack, cut 3).
+- "Muted", "cold", "grey", "no fill" in a prompt (from cut 8).
 
 ## Per part
 
@@ -170,6 +195,18 @@ Mr Blue in a red and a blue tie.
   mix person by person ("young and old, men and women, Black, white and South Asian"); never write
   "bakery" (it prints the word). 16:9, NB2, ×2. Picks per scene and the storyboard:
   [`songs/mv-speakeasy-mint/storyboard.md`](./songs/mv-speakeasy-mint/storyboard.md).
+  Prompt rules learned on the K3a cut (2026-10-25/26):
+  - Never name a show, game or artist; write traits only. **Check the caricatures in every frame.**
+  - Real skin only holds when the face is large in frame; put the face-scope line on every prompt.
+  - Real-skin faces plus a bare demographic summon a celebrity likeness: always give specific ordinary
+    features.
+  - Never write a shop word ("bakery" prints itself); print styles invent text, so ask for blank margins.
+  - "Every face turned towards X" stops crowds staring at the camera.
+  - Describe remains, not states (the candle: "a flat puddle of wax with a tiny drowning flame").
+  - The mayor: always paste the full line (tall, skinny, bowler, gold chain); a bare "the mayor" gets a
+    French sash, "top hat" summons the Monopoly man.
+  - The band: gangsters in pinstripes ("mixed band" failed 12/12).
+  - "1930s" wording on the press faces summoned a mascot lookalike: "simple faces painted on their sides".
 - **Music video, "The Speakeasy Mint" — ALT cut** — **EXPLORING** (Jack, 2026-10-28; Flow project `706836d3`).
   A realistic prohibition-era world with exaggerated cinematic light and colour, and one psychedelic "layer" per
   scene laid over a real base. Settings change through transitions (e.g. fire into fire). Lynch-style odd vantages.
@@ -188,6 +225,18 @@ Mr Blue in a red and a blue tie.
   the chosen still. All in [`look-tests.md`](./look-tests.md).
 - **First still pass** (news-agency camera, warm lamp plus cool daylight in every frame) read as AI:
   everyone at standing height, two lights every time, nothing withheld. The second pass fixed it.
+  Its camera sentence and close, verbatim (record only): `A news agency photograph, shot on a Canon EOS R3
+  with a [lens] from [a place a person could stand] at [time].` … `The picture is slightly underexposed and
+  muted: stone grey, black and navy, with small touches of red and blue the only strong colour. Nobody is
+  aware of the camera. 16:9.`
+- **The grey colour lock and "one light, no fill" (6–8 Oct 2026) — SUPERSEDED 9 Oct 2026** by the
+  cut-8 colour rules (Jack on cut 7: *"a tad too grey… there should be more colour"*). Verbatim, for the
+  record only — do not paste:
+  `Muted colour: stone grey, black and navy, with small touches of red and blue the only strong colour.`
+  · `One light source only, no fill:` + one named source, different in every scene. In those passes the
+  eleven suits were "the only black in a grey street".
+- **The model town** (cuts 1–3) — the garage plan on a cardboard model; Jack: *"the model house arent
+  working… looks terrible"*. Out from cut 5.
 - **The old grey look** — the standoff scene was cut whole at cut 9 partly because it was *"the old grey
   look"* ([`review-cut8.md`](./review-cut8.md)).
 - **Music video style rounds** — 1930s rubber-hose cartoon brief → T sweep (red moon kept) → realism sweep

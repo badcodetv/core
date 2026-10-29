@@ -47,7 +47,7 @@ Read on demand. Never reproduce its content in a reply; don't lecture the user a
 | [`checklist.md`](../../../docs/story-craft/checklist.md) | **The pass** — ~40 questions in seven nested layers, the procedure (notes not fixes, one layer per pass, adversarial verification, write-back), the coverage-sheet format | Any review; the relevant rows before handing over a draft |
 | [`narrator.md`](../../../docs/story-craft/narrator.md) | **The BadCode narrator pattern** — what an omniscient, bored, caring machine must want and be unable to have; carrier/cargo; address; bathos as a budget; the one crack; the comedy lanes; the failure modes | Writing or reviewing any narration, caption in the narrator's voice, or the narrator's lines in a track |
 | [`toolbox.md`](../../../docs/story-craft/toolbox.md) | **Named tools, one line each**, by layer — Mamet's three questions, but/therefore, Arndt's three stakes, Gilligan's mystery/confusion, the boots test, Loach's stage-straight… with the brief to read for the long version | Drafting; when a note needs a named mechanism |
-| [`forms.md`](../../../docs/story-craft/forms.md) | **What changes per form** — scroll comic, narrated video (incl. the house VO markup), D&B track (narrative in lyrics only — Suno mechanics stay in `docs/suno-gpt/`), the serialised run; the cross-form scarcity budgets | Any step that is about *this* medium rather than the story |
+| [`forms.md`](../../../docs/story-craft/forms.md) | **What changes per form** — scroll comic, narrated video (incl. the house VO markup), a song (narrative in lyrics only — its genre and form are the story's `sound.md`; Suno mechanics stay in `docs/suno-gpt/`), the serialised run; the cross-form scarcity budgets | Any step that is about *this* medium rather than the story |
 | [`evidence.md`](../../../docs/story-craft/evidence.md) | **What the science supports** — claim · grade · source; the myths and the never-cite list (22×, oxytocin, Zeigarnik-as-memory, the MrBeast document, retention percentages) | Before quoting any mechanism or number in public copy, a brief, or a note |
 | [`case-studies.md`](../../../docs/story-craft/case-studies.md) | **Works that landed an idea** and the device that carried it — satire, dystopia, parables, AI narrators — as a pattern table with what was criticised | When a scene needs a precedent; when choosing a device |
 | [`briefs.md`](../../../docs/story-craft/briefs.md) | **The brief index** — resolves every "brief NN" to its file and sections with anchors; the long version of any tool is one hop | Whenever a principle, tool or row cites "brief NN" |
@@ -80,7 +80,7 @@ Use while drafting. The order matters — each step makes the next cheaper.
 6. **The voice.** `narrator.md`: flat baseline, one crack, bathos banked before spent, the refrain,
    address by default and the sincere turn rationed. McKee's VO test on every narration line.
 7. **The form.** `forms.md`: the duo-specific caption test; the motion, silence and address budgets;
-   VO in the breakdown; the first 10% as a promise; the closing image answering the opening.
+   in a club-form track, VO in the breakdown (other forms put it where their `sound.md` says); the first 10% as a promise; the closing image answering the opening.
 8. **Hand over with the rows.** List which checklist rows you ran and which you didn't. A draft
    handed over without that list is not finished.
 

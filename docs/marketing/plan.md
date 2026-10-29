@@ -108,7 +108,7 @@ superintelligence from a future that already went wrong, commenting on today's n
 received history. Short "transmissions from the bad branch": *"Day 14,203 until the fork.
 You're still arguing about whether you can afford things you can already build."*
 
-- **Format:** short text posts, occasionally over a brand image (monolith register).
+- **Format:** short text posts, occasionally over a brand image (the logo, or a still from the story being promoted, in that story's look).
 - **Cadence:** daily (morning transmission); this is the account's heartbeat between satellites.
 - **Workers:** `copywriter` on a daily schedule.
 - **Why it works:** persona accounts compound — people follow characters, not brands. The
@@ -253,7 +253,7 @@ and use it identically on every platform where `badcode` is taken):
       AI-credits disclosure Spotify displays; verify AI-content terms at signup)
 - [ ] Email list provider (Buttondown/Mailchimp/etc.) wired to badcode.tv
 
-Conventions: avatar = brand monolith register (`docs/images/`), bio = one-line narrator intro +
+Conventions: avatar = the logo (`docs/brand/logo/`; the older monolith avatar in `docs/images/` was GPOM's look), bio = one-line narrator intro +
 badcode.tv link, pinned post = current core. Handles, passwords, and API credentials go in the
 operator's env config (never in this repo — see Agent Orange credential rules).
 

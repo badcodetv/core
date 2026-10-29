@@ -4,5 +4,13 @@
   "title": "GPOM Second Half Picks",
   "note": "Not a scene: the shared picks page for the second half (stills, clips, voice takes, Suno links across scenes B, D, E and the ending). Built by scripts/scene/build-picks.py from picks.json.",
   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half",
-  "boards": {"picks": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co"}
+  "boards": {
+    "picks": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames",
+    "duration": 8
+  }
 }

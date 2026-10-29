@@ -122,7 +122,15 @@ Jack's standing rules for the song:
 - **No sitar / Indian opening.**
 - **Always Kai's lyrics.**
 - **Don't name artists in a box** (Round Y: Suno stored "Roger Daltrey" and nothing audible changed).
-- **Write exploring rounds sealed**, not from inside the repo (Round SR1 onwards).
+- **Exploring rounds go through the `variations` skill** (`scripts/variations/round.py`): separate
+  writers, the sameness gate, run verbatim. (SR1–SR8 used the sealed writer, now retired.)
+- **Variety Off, and build from a liked take's stored record** (its `metadata.tags`), never from the box we
+  typed: above Off, Variety rewrites the Style box per take — ed6dd946's music came from Suno's rewrite
+  (Round AA, 2026-10-22).
+- **A refine round starts from the picked take's own whole box** (keep only what it had; change one
+  thing). A liked voice sentence moved onto another box loses its nationality (Round BO: *"all went
+  weirdly American"*).
+- **Never hand-edit a round's prompts** once written; the round runs verbatim.
 
 For the film:
 - **The music stays sincere**; the jokes are the narrator's.
@@ -152,6 +160,10 @@ For the film:
   `sealed-round.py`): gangster voices, deep English voices, Best one's box with only the voice changed
   (SR4), music-hall talker iterations (SR5 stopped by the gate, SR5b generated), psych folk funk (SR6), the
   Brixton song with classical/opera (SR7) and a western/opera psych-funk clean room (SR8).
+- **Two voice clauses suno-prompt quotes as worked examples** (labelled Bank Robbery's there; verbatim in
+  `songs/bank-robbery-jack.md`): `Bristol trip hop, a hushed close-mic murmuring English man…` (the
+  genre-first voice move) and `London retro soul, a raw husky contralto woman with a heavy North London
+  accent` (a real singer translated, 2026-10-21). Never paste into another story.
 - **Film music**: no music in cut 1–2; seven Kevin MacLeod cues in cut 3; HoliznaCC0 lo-fi from cut 9.
 - **Narrator**: the Money For Something narrator first (AI Studio `Zubenelgenubi`, Accent British
   (Brixton), cut 1, [`assembly.md`](./assembly.md)); `Sadaltager` from cut 9.

@@ -210,7 +210,7 @@ be described at length without competing with a face description.
 
 **The plate's prompt is a plain record shot, deliberately.** *"Soft, flat, even
 daylight-balanced light from the front with no strong shadows, no rim light, no mood and no
-atmosphere. This is a plain record shot, not a portrait."* House style is 35mm documentary; a
+atmosphere. This is a plain record shot, not a portrait."* Camping's look is 35mm documentary ([`../look.md`](../look.md)); a
 reference plate is the one place it is wrong, because mood costs legibility.
 
 **Overriding a reference's clothes without tripping the filter.** The portrait wore the wrong

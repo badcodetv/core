@@ -38,7 +38,7 @@ BadCode work.
 | "Everything's the same colour" | No colour plan for the piece — each frame graded on its own | Decide the palette across the whole cut first. We can't fix drift in the edit the way a DP can *(principle 15)* |
 | "It looks like a movie poster" | Teal-and-orange, or complementary contrast used everywhere instead of once | Complementary contrast is a pop. Spend it once. It reads as an effect the second time it's noticed |
 | "It doesn't feel lit by anything" | No warm/cool contrast in frame | One warm source against a cold ambient — most of what "production value" actually means *(principle 17)* |
-| "The shadows have gone to mush after upload" | Compression allocates fewest bits to dark, low-detail regions — our whole frame | Add grain or dither before encode; check range tagging. See [`../video-fx/delivery.md`](../video-fx/delivery.md) |
+| "The shadows have gone to mush after upload" | Compression allocates fewest bits to dark, low-detail regions — the whole frame, in a near-black look like GPOM's | Add grain or dither before encode; check range tagging. See [`../video-fx/delivery.md`](../video-fx/delivery.md) |
 | "It looked fine here and terrible on YouTube" | Full/limited colour-range mismatch, untagged file — everything below a threshold clipped to black | This shipped once already in `camping.mp4`. Run the QC script, never eyeball it |
 
 ## C. Motion and the clip
@@ -49,7 +49,7 @@ BadCode work.
 | "It looks like a photo, not a shot" | First and last frame identical | Even a still needs one thing to change — light drift, haze, a slow breath of camera |
 | "It's trying too hard" | Movement on every shot, so no shot's movement lands | A single move in a still body of work hits hard. The economy only works if the surrounding stillness is real |
 | "The push-in feels cheap" | Pushing on nothing — a push-in means narrowing attention toward a realisation, so there has to be one | Put something at the end of the push worth arriving at |
-| "The camera feels shaky for no reason" | Handheld reached for as a shorthand for realism | Handheld is a style, not truth. Locked-off with the right content beats wobble every time *(ruling R7)* |
+| "The camera feels shaky for no reason" | Handheld reached for as a shorthand for realism | Handheld is a style, not truth. Unless the story's `look.md` chose it, locked-off with the right content beats wobble *(ruling R7)* |
 
 ## D. The cut and the sequence
 

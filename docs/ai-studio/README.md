@@ -327,59 +327,49 @@ Google's worked example ("Jaz R.", a Brixton radio DJ) maps 1:1 onto the Compose
 The camping brief is already built this way — the O2 voiceover for the throat, the gravel-baritone
 comedic lead for the smirk, **neither ever named in a prompt**.
 
-### The Mancunian direction — the reference, described, never named
+### Worked example: a three-reference narrator profile (Camping's "Gaz M.", 2026-09-04)
 
-> **The references (internal only), and the split:** the gravel-baritone comedic lead
-> (Lego Batman / BoJack) gives the **timbre and the timing**; the Burnage frontman gives the
-> **sneer**; the O2 voiceover (Sheffield, South Yorkshire) gives the **accent and the warmth**.
-> **Never put any of those names in the box.** `voice.md`: *"cloning-of-real-people filters trip on
-> names, and descriptive traits steer better anyway."*
+> **Camping's narrator, not a template voice.** The full paste-ready profile ("Gaz M.", Salford,
+> the smirk, the grain), its three unnamed references and the Sheffield-not-Manchester call now
+> live with the story: [`../stories/camping/sound.md`](../stories/camping/sound.md) § Narration
+> (moved 2026-10-29). What generalises is the shape, below.
 
 🔑 **Three references, three jobs — keep them separate.** `voice.md`'s two-way rule (*"one gives
-the throat, the other gives the smirk"*) extends: ask for all three at once as a blur of adjectives
-and you get a bad impression of one of them.
+the throat, the other gives the smirk"*) extends: one reference for **timbre and timing**, one for
+the **attitude**, one for the **accent and warmth**. Ask for all three at once as a blur of
+adjectives and you get a bad impression of one of them. **Never put a real name in the box.**
 
-🔴 **Accent is Sheffield, not Manchester.** A broad Mancunian articulation stack (nasal, adenoidal,
-snarled through the nose) came back **too northern** on 2026-09-04 — it reads as an impression.
-South Yorkshire flattened vowels carry the class without the caricature, and it is what
-`voice.md`'s brief specified all along.
+🔴 **A broad articulation stack reads as an impression.** Spelling an accent out as nasal,
+adenoidal, snarled-through-the-nose came back **too northern** on Camping (2026-09-04): a milder
+accent of the same region carried the class without the caricature.
 
-🔑 **Written in Google's own headed shape**, not flowing prose — the Jaz R. example is markdown
+🔑 **Write it in Google's own headed shape**, not flowing prose — the Jaz R. example is markdown
 sections with `Style / Accent / Pace` sub-bullets and a **named persona**, and that structure is
 the part of the documented method we had not used.
 
-**→ VOICE DIRECTION**
+**→ VOICE DIRECTION** (shape only; every `<…>` comes from the story's `sound.md`)
 
 ```
-# AUDIO PROFILE: Gaz M.
-## "The man who already knows how it ends"
+# AUDIO PROFILE: <persona name>
+## "<one-line tagline>"
 
-A working-class northern Englishman in his forties. Not a presenter and not a performer — a bloke telling you something across a table, who happens to have been right about all of it.
+<Who they are, in two sentences: age, background, how they talk to you.>
 
 ### DIRECTOR'S NOTES
 
 Style:
-* The permanent smirk: you should be able to hear the curled lip. Bored, cocky and completely unbothered, and he finds the man he is describing beneath contempt.
-* The underplay: he throws every punchline away rather than landing it, and delivers sarcasm as if it were a weather report. He never signals that something is funny.
-* The grain: a gravelly voice with real grit and a little smoke in it, worn and lived-in — but never boomy, never an announcer, never a movie trailer.
-* Placement: he speaks through his nose, chin lifted, jaw pushed forward, like a man answering a question he resents.
+* <attitude>
+* <how the jokes are delivered>
+* <the grain of the voice, and what it is never>
+* <placement: how the head and jaw sit>
 
-Accent: Gaz is from Salford, Greater Manchester. Hard flat northern vowels, a short hard "a" in bath and last, drawn out and leaned on and drooping at the ends of words. Swallowed consonants, dropped T's and dropped H's. Never Received Pronunciation, never London, never American.
+Accent: <persona> is from <place>. <one mild accent clause>. Never <the accents it must not drift to>.
 
-Pace: Slow and unhurried, around 130 words per minute. Ordinary conversational speech with uneven sentence lengths. He leaves gaps and does not rush to fill them, and every full stop is a real stop with a breath in it. His pitch swoops up inside a sentence and drops away at the end of it — never droning, never on one note.
+Pace: <pace in plain words>. <how the pitch moves inside a sentence>.
 ```
 
-**→ SCENE**
-
-```
-A small back room, late. One man and one microphone. Recorded like a voice memo: close and dry right on the mic, unproduced, no room and no echo on him at all. No music, no audience, nobody to play to.
-```
-
-**→ SAMPLE CONTEXT**
-
-```
-Gaz is the voice you hire for dry British satire — dark comedy, kitchen-sink documentary, deadpan political commentary. He reads out facts he finds contemptible without ever once raising his voice about them.
-```
+**→ SCENE** — where it is recorded and how close the mic is. **→ SAMPLE CONTEXT** — what kind of
+work this voice is hired for. (Camping's own boxes are in its `sound.md`.)
 
 ### 🔴 Two clauses the Suno rounds ruled OUT — do not reintroduce them
 
@@ -680,7 +670,12 @@ is the system narrating itself.** [`../voice.md`](../voice.md) gets its sarcasm 
 `story-craft`'s rule holds — the irony is safe because **the picture supplies the undeniable
 consequence** the words refuse to acknowledge.
 
-## 🔑 RULED 2026-09-04 — the missing ingredient was ANGER, and it is the cure for "boring"
+## 🔑 Camping's narrator, RULED 2026-09-04 — the missing ingredient was ANGER, and it is the cure for "boring"
+
+> **Scope:** a ruling on **Camping's** narrator (copied to
+> [`../stories/camping/sound.md`](../stories/camping/sound.md)). "Not very BadCode" below meant not
+> Camping's narrator; another story may want the cheerful register. What generalises is the engine
+> finding after it: ask for pressure, not flatness.
 
 **Jack, on the induction-video swing: *"it is not very BadCode, it needs to be gritty, deadpan, with
 a hint of sarcasm and anger."*** 🔴 **The register inversion is rejected — do not retry it.** A
@@ -739,9 +734,9 @@ every other decision on this film combined."* **It is now formally dropped.**
 
 | Accent | Evidence | Verdict |
 |---|---|---|
-| 🥇 **Brixton / South-East London** | **Named in Google's own worked example** (*"Jaz is from Brixton, London"*) and in the documented accent set | **The safest British option**, and native to a film set around the NatWest floor, the Shard and a Waitrose car park |
+| 🥇 **Brixton / South-East London** | **Named in Google's own worked example** (*"Jaz is from Brixton, London"*) and in the documented accent set | **The best-evidenced British option on this engine.** (Camping also picked it because its film is set around the NatWest floor, the Shard and a Waitrose car park: a story call, in its `sound.md`) |
 | 🥈 **General American** | 🔑 **The model's native default** — Charon measures as an American male. And [`../stories/karen/narration/voice.md`](../stories/karen/narration/voice.md) already casts Karen's narrator as *"General American with a faint Western ease"* | `voice.md`'s own post-mortem: *"Karen's target IS the model's default. Camping's is the opposite of it."* **Karen worked. That is the reason** |
-| **RP · Estuary · Transatlantic** | In the documented set | Available; RP is wrong for the reader |
+| **RP · Estuary · Transatlantic** | In the documented set | Available. (Camping ruled RP wrong for its reader: a story call, in its `sound.md`) |
 | **Newcastle · Exeter** | Simon Willison got *"noticeably different vocal outputs"* swapping these in | Steering works — but these are **undocumented**, i.e. what we spent a day failing at |
 
 🔑 **Two engine rules out of the whole day:**
@@ -1009,7 +1004,8 @@ Karen worked. That is the reason."*
 
 1. **Voice name first.** `voice_name` owns timbre and the picker labels every voice. Read the label.
 2. **One strong accent clause**, in Voice Direction, in the prescribed shape: *"a mild, everyday
-   south London accent, the kind nobody would remark on."*
+   `<accent>` accent, the kind nobody would remark on."* (`<accent>` comes from the story's
+   `sound.md`; Camping's was south London.)
 3. **One light anchor** elsewhere — a British place in the Scene, with no accent adjective attached.
 4. **The not-performing clause.**
 5. **No class markers. No phonetics. No iconic place names** unless the icon is what you want.

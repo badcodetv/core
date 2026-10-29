@@ -28,7 +28,7 @@ Look exploration only, on the cheap tier: nothing here is a locked plate.
 
 A long Cold War government bunker tunnel deep beneath Corsham, Wiltshire: whitewashed quarried-stone walls, green-painted 1950s steel blast doors, a line of cream enamel ceiling lamps receding. Survivors have lived here for five years: washing lines strung between conduit pipes, camp beds, a kettle on a trestle table, a hand-painted chore rota on a board, tomato plants under a grow lamp. Mixed cool fluorescent and warm tungsten light. Level 35mm view at head height.
 
-### B2-one-bulb · House register: near-black, one light
+### B2-one-bulb · GPOM's register: near-black, one light
 
 A Cold War bunker corridor beneath Wiltshire almost entirely in darkness. One bare tungsten bulb in a wire cage hangs over a trestle table with a kettle and mugs; its small warm pool shows whitewashed stone, a green steel blast door and a folded camp bed. Everything beyond the pool falls to near-black, with one faint second lamp far down the tunnel. Quiet, inhabited, hidden. Low 35mm view.
 
@@ -149,7 +149,7 @@ A long Cold War government bunker tunnel deep beneath Corsham, Wiltshire: whitew
 
 A long Cold War government bunker tunnel deep beneath Corsham, Wiltshire: whitewashed quarried-stone walls, green-painted 1950s steel blast doors, a line of cream enamel ceiling lamps receding. Survivors have lived here for five years: washing lines strung between conduit pipes, camp beds, a kettle on a trestle table, a hand-painted chore rota on a board, tomato plants under a grow lamp. Mixed cool fluorescent and warm tungsten light. Level 35mm view at head height. Styled as high-contrast black-and-white cinema: deep shadows, one hard light source, near-black frame with a single deliberately brighter region, silver-gelatin grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos or lettering.
 
-### B2-one-bulb-painted · House register: near-black, one light · Painted matte
+### B2-one-bulb-painted · GPOM's register: near-black, one light · Painted matte
 
 A Cold War bunker corridor beneath Wiltshire almost entirely in darkness. One bare tungsten bulb in a wire cage hangs over a trestle table with a kettle and mugs; its small warm pool shows whitewashed stone, a green steel blast door and a folded camp bed. Everything beyond the pool falls to near-black, with one faint second lamp far down the tunnel. Quiet, inhabited, hidden. Low 35mm view. Styled as a hand-painted matte painting: visible gouache brushstrokes, muted earthy palette, soft edges, like a painted film concept frame. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos or lettering.
 

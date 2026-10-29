@@ -2086,13 +2086,13 @@ observation.
 | **A stock anchor** — *"shot on 16mm film, natural grain"* | Biases toward the imperfections audiences read as authentic |
 | **~50mm, human field of view** | Stylised focal lengths read as commercial |
 | **Rough, unpolished audio; no music bed** | Music is the polish tell. For us this is free — the track is Suno's and goes on in post |
-| **A loose edit; no aggressive grade** | Post-side, but it is the same instinct as our grain-in-shadows rule |
+| **A loose edit; no aggressive grade** | Post-side, but it is the same instinct as GPOM's grain-in-shadows grade |
 
-🔴 **Rejected: "introduce accidental camera shake."** Widely recommended and **it contradicts our
-own house ruling** — [`motion-and-cutting.md` R7](../cinematography/motion-and-cutting.md):
-*handheld is a style, not truth; locked-off with the right content beats wobble every time.* It
-would also remove the locked camera that is our documented mitigation for the hinge/regeneration
-bug. **Our measured findings outrank the briefs.** Do not import it.
+🔴 **Rejected in Veo: "introduce accidental camera shake."** Widely recommended, but it would
+remove the locked camera that is our documented mitigation for the hinge/regeneration bug (Veo
+camera-locked, move in post). Handheld itself is a look, not a fault — see
+[`motion-and-cutting.md` R7](../cinematography/motion-and-cutting.md); a story whose `look.md` wants
+it adds the shake in Premiere or ffmpeg, where it is exact. **Our measured findings outrank the briefs.** Do not import it.
 
 Also restated and worth holding: **`photorealistic` and `cinematic` are noise words** — they
 appear beside CGI and digital painting throughout training data and average toward the waxy look

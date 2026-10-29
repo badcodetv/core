@@ -128,6 +128,7 @@ function toToolError(err: unknown): ToolResult {
   if (msg === 'SUBMIT_FAILED') return fail('SUBMIT_FAILED', 'The prompt was typed but Flow never accepted the submit.', 'Usually a wedged compose bar — reload the project URL (twice; the first load can throw a client-side exception) and retry.')
   if (msg === 'NOT_IN_PROJECT') return fail('NOT_IN_PROJECT', 'The page is not inside a Flow project.', 'Open one with flow_open_project, or pass a project id.')
   if (msg === 'POLICY_BLOCKED') return fail('POLICY_BLOCKED', 'Flow flagged this generation as a possible policy violation — it will never complete no matter how long you wait.', 'Do NOT retry the same prompt. Rewrite it: check the reference image and any Character name/info fields, not just the prompt text (docs/flow/failure-modes.md §A2), then use the trigger list and rewrite table at docs/flow/failure-modes.md §A5-A6.')
+  if (msg.startsWith('MODEL_REQUIRED') || msg.startsWith('ASPECT_REQUIRED')) return fail('INVALID_ARGS', msg, "Name it from the story's docs/stories/<story>/look.md. There is no default model or aspect (2026-10-29).")
   return fail('FLOW_ERROR', msg)
 }
 
@@ -143,10 +144,18 @@ const IMAGE_ASPECTS = [
 ] as const
 
 const IMAGE_MODEL_DESC =
-  'Override the image model for this call only (defaults to "Nano Banana Pro"). Recorded tiers, ' +
-  'sharpest first: "Nano Banana Pro", "Nano Banana 2", "Nano Banana 2 Lite". Per docs/flow/README.md ' +
-  'rule 5 ("iterate on the cheap tier, spend on the locked shot"), prefer Lite while iterating on a ' +
-  'prompt and switch to Pro only for the generation you intend to keep.'
+  'model is REQUIRED: the image model for this call, taken from the story\'s docs/stories/<story>/look.md — ' +
+  'there is no default (2026-10-29). Recorded tiers: "Nano Banana 2", "Nano Banana Pro", "Nano Banana 2 Lite". ' +
+  'The model used is recorded on the result\'s recipe card.'
+
+/** refine only: model is optional there, because a follow-up keeps the previous turn's model. */
+const IMAGE_MODEL_REFINE_DESC =
+  'model is optional here: omitted, the previous turn\'s model is kept (there is no default model). ' +
+  'Recorded tiers: "Nano Banana 2", "Nano Banana Pro", "Nano Banana 2 Lite".'
+/** Character tools: model matters only when the call GENERATES (a body from a description, an edit). */
+const CHARACTER_MODEL_DESC =
+  'Image model for any generation this call makes (a Body from a description, an edit) — required then, ' +
+  'from the story\'s look.md; there is no default.'
 
 const IMAGE_ASPECT_DESC =
   'Override the output aspect ratio for this call only. Omitting it leaves the project\'s current ' +
@@ -288,7 +297,7 @@ server.registerTool(
       outPath: z.string().min(1),
       character: z.string().min(1).optional(),
       numOutputs: z.number().int().min(1).max(4).optional(),
-      model: z.string().min(1).optional(),
+      model: z.string().min(1),
       aspect: z.enum(IMAGE_ASPECTS).optional(),
     },
   },
@@ -329,7 +338,7 @@ server.registerTool(
       outPath: z.string().min(1),
       numOutputs: z.number().int().min(1).max(4).optional(),
       character: z.string().min(1).optional(),
-      model: z.string().min(1).optional(),
+      model: z.string().min(1),
       aspect: z.enum(IMAGE_ASPECTS).optional(),
     },
   },
@@ -364,7 +373,7 @@ server.registerTool(
       'what makes it cheap in a tight edit loop. model/aspect are optional and, when BOTH are omitted (the normal case), ' +
       'change nothing about that: no mode assertion runs at all, identical to calling this tool with no such params. ' +
       'Pass either one only when you deliberately want to switch tier or aspect for this follow-up turn — ' +
-      IMAGE_MODEL_DESC +
+      IMAGE_MODEL_REFINE_DESC +
       ' ' +
       IMAGE_ASPECT_DESC +
       ' Returns { path, mediaId }.',
@@ -409,12 +418,12 @@ server.registerTool(
       'drift worse (docs/flow/video-prompting.md §4). ' +
       '⚠️ endImage needs a Veo 3.1 tier: Gemini Omni Flash takes a first frame but REJECTS a last one (confirmed live ' +
       '2026-08-12) and the call fails before uploading anything. ' +
-      'Asserts the Settings-panel video defaults (model, aspect, output count) before generating — they live on the ' +
+      'Asserts the Settings-panel video settings (model, aspect, output count) before generating — they live on the ' +
       "project and RESET to Omni Flash on a fresh project, so this call always sets them rather than trusting whatever " +
-      'was last selected. model defaults to "Veo 3.1 Fast" (20 credits/clip) when omitted — a deliberate middle tier, ' +
-      'not the cheapest and not the most expensive. Other recorded options: "Omni Flash", "Veo 3.1 Lite" (10 credits), ' +
-      '"Veo 3.1 Quality" (100 credits — ask for this explicitly; it costs 5x Fast and 10x Lite), ' +
-      '"Veo 3.1 Lite[Lower Priority]". aspect defaults to "16:9" (matches most comic pages); pass "9:16" for portrait. ' +
+      'was last selected. model and aspect are REQUIRED, from the story\'s docs/stories/<story>/look.md — there is no ' +
+      'default (2026-10-29); the values used are recorded on the result\'s recipe card. Recorded models: "Omni Flash", ' +
+      '"Veo 3.1 Lite" (10 credits), "Veo 3.1 Fast" (20), "Veo 3.1 Quality" (100 — 5x Fast, 10x Lite), ' +
+      '"Veo 3.1 Lite[Lower Priority]". aspect is "16:9" or "9:16". ' +
       'count (1-4, default 1) sets how many candidate clips Flow generates in this turn — ALL of them are harvested, ' +
       'the first at outPath and the set under `candidates` with -a/-b/-c/-d suffixes. Two candidates cost one turn\'s ' +
       'WAIT (~110s) rather than two, so it is the cheapest way to buy a choice; it is not cheaper in credits. ' +
@@ -434,8 +443,8 @@ server.registerTool(
       startImage: z.string().min(1).optional(),
       endImage: z.string().min(1).optional(),
       motion: z.string().min(1),
-      model: z.string().optional(),
-      aspect: z.enum(['16:9', '9:16']).optional(),
+      model: z.string().min(1),
+      aspect: z.enum(['16:9', '9:16']),
       count: z.number().int().min(1).max(4).optional(),
       durationSeconds: z.union([z.literal(4), z.literal(6), z.literal(8), z.literal(10)]).optional(),
       character: z.string().min(1).optional(),
@@ -452,13 +461,13 @@ server.registerTool(
               outPath,
               ...(startImage ? { startImage } : {}),
               ...(endImage ? { endImage } : {}),
-              ...(model ? { model } : {}),
-              ...(aspect ? { aspect } : {}),
+              model,
+              aspect,
               ...(count ? { count } : {}),
               ...(durationSeconds ? { durationSeconds } : {}),
               ...(character ? { character } : {}),
             }),
-            { kind: 'video', tool: 'flow_generate_video', prompt: motion, model: model ?? 'Veo 3.1 Fast', parent: startImage ?? null, inputs: { start: startImage ?? null, end: endImage ?? null, character: character ?? null }, settings: { aspect: aspect ?? '16:9', count: count ?? 1, durationSeconds: durationSeconds ?? null } },
+            { kind: 'video', tool: 'flow_generate_video', prompt: motion, model, parent: startImage ?? null, inputs: { start: startImage ?? null, end: endImage ?? null, character: character ?? null }, settings: { aspect, count: count ?? 1, durationSeconds: durationSeconds ?? null } },
           ),
         ),
       )
@@ -485,11 +494,12 @@ server.registerTool(
       'down", not "but slower"). The prompt it replaced comes back as originalPrompt, so you can show the user what changed. ' +
       'Omit durationSeconds to keep the original clip\'s length, which is the normal case; passing one re-opens the ' +
       'compose popover and is refused if that clears the restored frame. ' +
+      'model is REQUIRED (the video model, from the story\'s look.md; there is no default). ' +
       'Returns { path, mediaId, originalPrompt }.',
     inputSchema: {
       mediaId: z.string().min(1),
       motion: z.string().min(1),
-      model: z.string().optional(),
+      model: z.string().min(1),
       durationSeconds: z.union([z.literal(4), z.literal(6), z.literal(8), z.literal(10)]).optional(),
       outPath: z.string().min(1),
     },
@@ -503,10 +513,10 @@ server.registerTool(
               mediaId,
               motion,
               outPath,
-              ...(model ? { model } : {}),
+              model,
               ...(durationSeconds ? { durationSeconds } : {}),
             }),
-            { kind: 'video', tool: 'flow_refine_video', prompt: motion, model: model ?? null, inputs: { refines_media_id: mediaId }, settings: { durationSeconds: durationSeconds ?? null } },
+            { kind: 'video', tool: 'flow_refine_video', prompt: motion, model, inputs: { refines_media_id: mediaId }, settings: { durationSeconds: durationSeconds ?? null } },
           ),
         ),
       )
@@ -533,7 +543,7 @@ server.registerTool(
       outDir: z.string().min(1),
       character: z.string().min(1).optional(),
       numOutputs: z.number().int().min(1).max(4).optional(),
-      model: z.string().min(1).optional(),
+      model: z.string().min(1),
       aspect: z.enum(IMAGE_ASPECTS).optional(),
       resume: z.boolean().optional(),
     },
@@ -595,7 +605,7 @@ server.registerTool(
       bodyImage: z.string().min(1).optional(),
       info: z.string().min(1).optional(),
       bodyOutPath: z.string().min(1).optional(),
-      model: z.string().min(1).optional(),
+      model: z.string().min(1).optional().describe(CHARACTER_MODEL_DESC),
     },
   },
   async ({ name, refImages, body, bodyImage, info, bodyOutPath, model }) => {
@@ -629,7 +639,7 @@ server.registerTool(
       body: z.string().min(1).optional(),
       info: z.string().min(1).optional(),
       bodyOutPath: z.string().min(1).optional(),
-      model: z.string().min(1).optional(),
+      model: z.string().min(1).optional().describe(CHARACTER_MODEL_DESC),
     },
   },
   async ({ name, mediaTitle, body, info, bodyOutPath, model }) => {
@@ -661,7 +671,7 @@ server.registerTool(
       description: z.string().min(1),
       bodyImage: z.string().min(1).optional(),
       outPath: z.string().min(1).optional(),
-      model: z.string().min(1).optional(),
+      model: z.string().min(1).optional().describe(CHARACTER_MODEL_DESC),
     },
   },
   async ({ name, description, bodyImage, outPath, model }) => {
@@ -692,7 +702,7 @@ server.registerTool(
       prompt: z.string().min(1),
       target: z.enum(['portrait', 'body']).optional(),
       outPath: z.string().min(1).optional(),
-      model: z.string().min(1).optional(),
+      model: z.string().min(1).optional().describe(CHARACTER_MODEL_DESC),
     },
   },
   async ({ name, prompt, target, outPath, model }) => {

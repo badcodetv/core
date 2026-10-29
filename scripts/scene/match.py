@@ -41,6 +41,8 @@ def dist(a, b):
 
 def main(scene_dir, apply):
     inbox = Scene(scene_dir).video / 'inbox'
+    # What run.mts actually asked Flow for, per shot (written at submit). Older harvests have none.
+    used = json.loads((inbox / 'settings.json').read_text()) if (inbox / 'settings.json').exists() else {}
     shots = all_shots(scene_dir)
     plates = {s['key']: sig(s['src'], False) for s in shots}
     by_key = {s['key']: s for s in shots}
@@ -67,13 +69,16 @@ def main(scene_dir, apply):
             if keep:
                 shutil.move(str(keep), out)
                 print(f'  -> {out.name}')
-                # The recipe card (docs/provenance): run.mts's fixed settings, the job's prompt, its plate.
+                # The recipe card (docs/provenance): the settings run.mts submitted with (or, for a
+                # harvest from before settings.json, the scene's own), the job's prompt, its plate.
                 s = by_key[k]
-                write_card(out, kind='video', engine='google-flow', tool='scripts/scene/run.mts', model='Omni 1.1 Flash',
+                st = used.get(k) or {'model': s['model'], 'aspect': s['aspect'], 'mode': s['mode'],
+                                     'durationSeconds': s['duration'], 'count': 1, 'source': 'scene settings (no submit record)'}
+                write_card(out, kind='video', engine='google-flow', tool='scripts/scene/run.mts', model=st['model'],
                            prompt=s['motion'], parent=s['src'], why=s.get('why') or s.get('label') or None,
                            inputs={'start': s['src'], 'character': s.get('character'), 'scene': str(pathlib.Path(scene_dir).resolve()),
                                    'key': k, 'frame': s.get('n'), 'option': s.get('option')},
-                           settings={'mode': 'Frames', 'aspect': '16:9', 'durationSeconds': s.get('duration', 8), 'count': 1})
+                           settings={kk: vv for kk, vv in st.items() if kk != 'model'})
             for e in extra:
                 (inbox / 'dupes').mkdir(parents=True, exist_ok=True)
                 shutil.move(str(e), inbox / 'dupes' / f'{k}-{e.name}')

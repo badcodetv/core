@@ -22,7 +22,7 @@ The story turns the audience's first glance on its head: she is "just" a tired
 old nurse, easy to scroll past, and by the end she is the one who did the
 arithmetic the powerful hoped no one would.
 
-## Visual (house style: hyper-realistic documentary photography)
+## Visual (drafted in the old house style, hyper-realistic documentary photography — retired 2026-10-28; MMT's look is [`../look.md`](../look.md))
 
 Single anchor character — **every panel she appears in must read as the same
 woman.** Lock these:

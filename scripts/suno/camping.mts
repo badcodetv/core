@@ -1,4 +1,5 @@
 /**
+ * style-lint: story=camping — a Camping-only script kept in the shared Suno folder.
  * badcode — the Camping GENRE SWEEP. Six genres over the drum and bass, each run twice: once as a
  * cover of the accepted h12 take, once fresh from nothing.
  *

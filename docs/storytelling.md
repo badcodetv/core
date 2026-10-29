@@ -43,7 +43,8 @@ characters, the beats, and the punchline — so the audience feels the point rat
    with the house rulings where the sources disagree; [`story-craft/checklist.md`](./story-craft/checklist.md)
    is the review pass. Don't re-research per story; add to the toolkit when a story teaches it something.
 3. Draft **beats** (scene-by-scene), then **characters** (each visual/behavioural choice loaded with
-   meaning), then **image/style direction**.
+   meaning), then the story's **look and sound**: the `story-style` skill finds them and writes
+   `look.md` + `sound.md` in the story's folder.
 4. Capture the story in its own folder, **`docs/stories/<story>/`** — `story.md` (concept,
    background, high-level beats), `characters/<name>.md`, and `songs/<slug>.md`.
    This folder is the single source of truth; the comic's `comic.meta.ts` and any
@@ -51,10 +52,9 @@ characters, the beats, and the punchline — so the audience feels the point rat
    the capture. Promote to a coded comic in `apps/web` when (and if) the story
    grows into a slide-based comic — not every story does.
 
-## Image direction (house style)
+## Image and sound direction
 
-Default visual target is **hyper-realistic documentary photography** — as if an invisible camera
-witnessed a real, unstaged moment (think a high-res RAW file: deep depth of field, situational
-lighting, no lens flares, no bokeh tricks, no filters). Every character's clothing, grooming, and
-posture is chosen to signal their worldview and class position. The realism is the point: these
-mistakes are ordinary and close, not science fiction.
+Found per story by the **`story-style`** skill, written in the story's own
+`docs/stories/<story>/look.md` and `sound.md`. BadCode has no house look or sound
+([`stories/STYLE.md`](./stories/STYLE.md)); a character's clothing, grooming and posture still
+carry their worldview and class position, in whatever look the story picks.

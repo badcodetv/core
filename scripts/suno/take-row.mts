@@ -53,15 +53,43 @@ export function matchTakes(takes: Take[], key: string): Take[] {
 export const modelTag = (m: string) =>
   m.toLowerCase().replace(/^v6-/, '').replace(/[^a-z0-9]+/g, '').slice(0, 12) || 'model'
 
-/** One Create's settings. Variety is always Off and Max Mode always off in the listening loop. */
+/** Variety steps, low → high. Mirrors suno.mts's VARIETY_STEPS (this module imports nothing from it). */
+export const CELL_VARIETY = ['off', 'normal', 'high', 'extra', 'max'] as const
+export type CellVariety = (typeof CELL_VARIETY)[number]
+
+/** One Create's settings. Every value comes from the spec (and so from the story's sound.md). */
 export interface Cell {
   model: string
   weirdness: number
   styleInfluence: number
-  variety: 'off'
-  maxMode: false
+  variety: CellVariety
+  maxMode: boolean
   audioInfluence?: number
   title: string
+}
+
+/**
+ * One row of a spec's `explore` array: a Create's settings, chosen by the story, never by this code.
+ * 🔴 2026-10-29 (design/2026-10-29-style-leak-audit.md §1): until then `explore` silently ran
+ * v6 w30 style 75 + v6-wild w60 style 60, Variety off, on every story's song. No defaults now.
+ */
+export interface ExploreSetting {
+  model: string
+  weirdness: number
+  styleInfluence: number
+  variety: CellVariety
+  /** Optional: Max Mode's toggle starts off in Suno's own UI, so omitted = off. */
+  maxMode?: boolean
+}
+
+/** One row of a spec's `narrow` array. The model is the pick's own; everything else is the spec's. */
+export interface NarrowSetting {
+  weirdness: number
+  styleInfluence: number
+  audioInfluence: number
+  variety: CellVariety
+  /** Optional: Max Mode's toggle starts off in Suno's own UI, so omitted = off. */
+  maxMode?: boolean
 }
 
 /** `listTakes` truncates titles at 48 chars (suno.mts), so the base must leave room for the suffix. */
@@ -76,36 +104,91 @@ function checkRound(fn: string, baseTitle: string, round: number): void {
   if (!Number.isInteger(round) || round < 1) throw new Error(`${fn}: round must be a positive integer, got ${round}`)
 }
 
-/**
- * Decision 6 — explore spread, safe end + wild end, prompt boxes unchanged within the round.
- * The `-r<N>-` in every title stops a later round matching an earlier round's takes.
- */
-export function exploreCells(baseTitle: string, round: number): Cell[] {
-  checkRound('exploreCells', baseTitle, round)
-  const cell = (model: string, weirdness: number, styleInfluence: number): Cell => ({
-    model,
-    weirdness,
-    styleInfluence,
-    variety: 'off',
-    maxMode: false,
-    title: `${baseTitle}-r${round}-${modelTag(model)}-w${weirdness}`,
-  })
-  return [cell('v6', 30, 75), cell('v6-wild', 60, 60)]
+const FROM_SOUND = "set it in the spec, from the story's sound.md (docs/stories/STYLE.md)"
+
+/** A 0–100 slider value from the spec, or a clear error naming the field. */
+function slider(fn: string, where: string, field: string, v: unknown): number {
+  if (v === undefined || v === null)
+    throw new Error(`${fn}: ${where} has no \`${field}\` — ${FROM_SOUND}. There is no default.`)
+  if (typeof v !== 'number' || !Number.isFinite(v) || v < 0 || v > 100)
+    throw new Error(`${fn}: ${where}.${field} must be a number 0–100, got ${JSON.stringify(v)}`)
+  return v
 }
 
-/** Decision 7 — narrow = cover the pick with the refined boxes, on the pick's model. */
-export function narrowCells(baseTitle: string, round: number, model: string): Cell[] {
-  checkRound('narrowCells', baseTitle, round)
-  const cell = (audioInfluence: number): Cell => ({
-    model,
-    weirdness: 30,
-    styleInfluence: 75,
-    audioInfluence,
-    variety: 'off',
-    maxMode: false,
-    title: `${baseTitle}-r${round}-${modelTag(model)}-ai${audioInfluence}-w30`,
-  })
-  return [cell(75), cell(40)]
+function variety(fn: string, where: string, v: unknown): CellVariety {
+  if (v === undefined || v === null)
+    throw new Error(`${fn}: ${where} has no \`variety\` — ${FROM_SOUND}. There is no default.`)
+  if (!(CELL_VARIETY as readonly unknown[]).includes(v))
+    throw new Error(`${fn}: ${where}.variety ${JSON.stringify(v)} is not one of ${CELL_VARIETY.join(' / ')}`)
+  return v as CellVariety
+}
+
+function rows<T>(fn: string, key: string, settings: T[] | undefined): T[] {
+  if (!Array.isArray(settings) || settings.length === 0)
+    throw new Error(
+      `${fn}: the spec has no \`${key}\` array — ${FROM_SOUND}. Each row is one Create's settings; ` +
+        'this code no longer supplies any.',
+    )
+  return settings
+}
+
+function uniqueTitles(fn: string, cells: Cell[]): Cell[] {
+  const seen = new Set<string>()
+  for (const c of cells) {
+    if (seen.has(c.title)) throw new Error(`${fn}: two cells would share the title ${c.title} — change one of them`)
+    seen.add(c.title)
+  }
+  return cells
+}
+
+/**
+ * Decision 6 — explore spread, prompt boxes unchanged within the round. The cells are the spec's
+ * `explore` rows, verbatim. The `-r<N>-` in every title stops a later round matching an earlier
+ * round's takes.
+ */
+export function exploreCells(baseTitle: string, round: number, settings: ExploreSetting[] | undefined): Cell[] {
+  const fn = 'exploreCells'
+  checkRound(fn, baseTitle, round)
+  return uniqueTitles(
+    fn,
+    rows(fn, 'explore', settings).map((s, i) => {
+      const where = `explore[${i}]`
+      if (!s || typeof s.model !== 'string' || !s.model)
+        throw new Error(`${fn}: ${where} has no \`model\` — ${FROM_SOUND}. There is no default.`)
+      const weirdness = slider(fn, where, 'weirdness', s.weirdness)
+      return {
+        model: s.model,
+        weirdness,
+        styleInfluence: slider(fn, where, 'styleInfluence', s.styleInfluence),
+        variety: variety(fn, where, s.variety),
+        maxMode: s.maxMode ?? false,
+        title: `${baseTitle}-r${round}-${modelTag(s.model)}-w${weirdness}`,
+      }
+    }),
+  )
+}
+
+/** Decision 7 — narrow = cover the pick with the refined boxes, on the pick's model, at the spec's `narrow` rows. */
+export function narrowCells(baseTitle: string, round: number, model: string, settings: NarrowSetting[] | undefined): Cell[] {
+  const fn = 'narrowCells'
+  checkRound(fn, baseTitle, round)
+  return uniqueTitles(
+    fn,
+    rows(fn, 'narrow', settings).map((s, i) => {
+      const where = `narrow[${i}]`
+      const weirdness = slider(fn, where, 'weirdness', s?.weirdness)
+      const audioInfluence = slider(fn, where, 'audioInfluence', s?.audioInfluence)
+      return {
+        model,
+        weirdness,
+        styleInfluence: slider(fn, where, 'styleInfluence', s.styleInfluence),
+        audioInfluence,
+        variety: variety(fn, where, s.variety),
+        maxMode: s.maxMode ?? false,
+        title: `${baseTitle}-r${round}-${modelTag(model)}-ai${audioInfluence}-w${weirdness}`,
+      }
+    }),
+  )
 }
 
 /** File-name stem for a recording: `<slug(title)>-<first 8 of songId>`. */

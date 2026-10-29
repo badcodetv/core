@@ -288,7 +288,7 @@ second in the edit without a regenerate. Cut picture to the VO, not the other wa
 2. **Does this replace the shot scene 0, or precede the commit log?** Still unanswered from the
    original — and this version is a bigger opener, so it presses harder.
 3. **Is the near-black circuit board the right first frame of the whole film?** It is the
-   strongest possible statement of the BadCode register — but the orbital shots that follow are
+   strongest possible statement of GPOM's MACHINE register (then called the BadCode register) — but the orbital shots that follow are
    bright high-key blue-white, so the film opens with a hard tonal jump at 16 seconds.
 4. **Run B with and without the anti-dissolve negative list?** Two extra clips settles a
    standing question in our own docs.

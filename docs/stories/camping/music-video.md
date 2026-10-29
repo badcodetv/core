@@ -71,7 +71,7 @@ Contact sheet: `/mnt/d/badcode-videos/camping-music/frames/fx/contact-sheet.png`
 
 | Effect | Verdict on this plate (a wall of BADCODE monitors, DJ, crowd) |
 | --- | --- |
-| **Volumetric Rays** | 🟢 **The standout.** Every monitor throws a shaft. Exactly the house register |
+| **Volumetric Rays** | 🟢 **The standout.** Every monitor throws a shaft. Exactly the (GPOM's) near-black register, then called the house register |
 | **RGB Split** | 🟢 Strong for D&B, but H=18 is a full psychedelic wash — dial to ~4–6 and keyframe to a snare |
 | **Posterize** | 🟢 Crushes to near-black, monitors stay lit. Quietly very BadCode |
 | **Turbulent Displace** | 🟡 Melts the monitor wall into a bulge — reads as signal degrading |

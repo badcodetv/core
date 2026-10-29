@@ -25,13 +25,13 @@ trusting a number here — this list is being actively extended.
   disambiguate rather than editing the title text, which must match what the UI shows.
 
 ### Images
-- `flow_generate_image({ prompt, outPath, character?, numOutputs? })` — `character` casts
+- `flow_generate_image({ prompt, outPath, model, aspect?, character?, numOutputs? })` — `character` casts
   a project Character (make one first with `flow_create_character`) for cross-slide
   consistency without a reference-image upload. `numOutputs` (1–4, default 1) generates
   variants in one turn, saved with `-a`/`-b`… suffixes. Returns
   `{ path, mediaId, width, height }`; when `numOutputs > 1` the result also carries
   `candidates: [...]` and `partial: true` if fewer candidates landed than requested.
-- `flow_edit_image({ prompt, referenceImages, outPath, numOutputs?, character? })` —
+- `flow_edit_image({ prompt, referenceImages, outPath, model, aspect?, numOutputs?, character? })` —
   uploads `referenceImages` (1–3 absolute paths, schema max) as prompt ingredients and
   applies a delta prompt. `numOutputs` defaults to 2. Always reference the golden
   original, not a previous edit output — chained edits accumulate artifacts. See
@@ -42,7 +42,7 @@ trusting a number here — this list is being actively extended.
   `ensureProjectRoot`/`ensureImageMode` call) — it trusts whatever state the prior call in
   this process left behind, so it only makes sense immediately after a
   `flow_generate_image`/`flow_edit_image` in the same session.
-- `flow_generate_batch({ prompts, outDir, character?, numOutputs?, model?, aspect? })` —
+- `flow_generate_batch({ prompts, outDir, character?, numOutputs?, model, aspect? })` —
   generates up to **20** images sequentially in ONE session (raised from 8 — a schema
   choice, not a Flow limit; batch is serial so a longer list is a longer call, not a
   heavier one, but there's no per-item timeout budget, so don't push past what one
@@ -63,15 +63,16 @@ trusting a number here — this list is being actively extended.
   unmodified — rewrite it per `docs/flow/failure-modes.md`.
 
 ### Video
-- `flow_generate_video({ imagePath, motion, model?, aspect?, count?, outPath })` — uploads
+- `flow_generate_video({ imagePath, motion, model, aspect, count?, outPath })` — uploads
   `imagePath`, attaches it via the tile's Animate menu, applies the motion prompt, saves the
   `.mp4` to `outPath`. Returns `{ path, mediaId }`.
   **Tier and aspect are asserted per call** through Flow's `tune Settings` panel, because
   those defaults reset per project (a fresh project comes up as Omni Flash), so without the
   assertion a caller asking for Quality could silently get an Omni Flash clip.
-  **`model` defaults to `Veo 3.1 Fast` (20 credits).** Lite is 10, **Quality is 100** — the
-  spread is steep enough that defaulting to the top tier would risk a 5× spend nobody asked
-  for, so Quality is opt-in. Override the default globally with `FLOW_VIDEO_MODEL`.
+  **`model` and `aspect` are required — there is no default** (2026-10-29): they are the
+  story's choice, from its `docs/stories/<story>/look.md`, and the result's recipe card records
+  what was used. The image tools' `model` is required the same way (`flow_refine` may omit it
+  and keep the previous turn's). Credit spread for reference: Lite 10, Fast 20, Quality 100.
 
 ### Characters
 - `flow_create_character({ name, refImages, body?, info?, bodyOutPath?, model? })` —

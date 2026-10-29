@@ -14,8 +14,8 @@
 #   -t SECS     duration in seconds                         (default 30)
 #   -o FILE     output .mp4                                 (required)
 #   -m MODE     slate | crop | full                         (default slate)
-#                 slate — 16:9 window on a near-black 9:16 card, hook above,
-#                         captions below. Keeps the composition. House default.
+#                 slate — 16:9 window on a 9:16 card in the palette's BG, hook
+#                         above, captions below. Keeps the composition.
 #                 crop  — full-bleed centre crop to 9:16. For centred single
 #                         figures only; it throws away 68% of the width.
 #                 full  — 16:9 letterboxed centre, no text furniture.
@@ -26,6 +26,8 @@
 #   -S N        hook font size                              (default 58)
 #   -R RANGE    source luma range: full | limited            (default full)
 #   -T TEXT     top brand mark                              (default BADCODE)
+#   -C FILE     the story's palette (or $SHORTS_PALETTE)     (REQUIRED — no default;
+#               format in scripts/shorts/palette.sh, GPOM's in palettes/gpom.sh)
 #   -L          skip loudness normalisation (faster; for previews)
 #   -n          dry run — print the ffmpeg command and exit
 set -euo pipefail
@@ -33,17 +35,17 @@ set -euo pipefail
 SRC=""; START="0"; DUR="30"; OUT=""; MODE="slate"; PAN="0"
 HOOK=""; KICKER=""; SRT=""; MARK="BADCODE"; LOUD=1; DRY=0; HSIZE=58
 CAPFONT=${BADCODE_CAPFONT:-DejaVu Sans Mono}; CAPSIZE=${BADCODE_CAPSIZE:-46}
-SRCRANGE=full
+SRCRANGE=full; PALETTE=""
 
-while getopts "i:s:t:o:m:p:H:k:c:T:S:R:Ln" o; do case "$o" in
+while getopts "i:s:t:o:m:p:H:k:c:T:S:R:C:Ln" o; do case "$o" in
   i) SRC=$OPTARG;; s) START=$OPTARG;; t) DUR=$OPTARG;; o) OUT=$OPTARG;;
   m) MODE=$OPTARG;; p) PAN=$OPTARG;; H) HOOK=$OPTARG;; k) KICKER=$OPTARG;;
   c) SRT=$OPTARG;; T) MARK=$OPTARG;; S) HSIZE=$OPTARG;; R) SRCRANGE=$OPTARG;;
-  L) LOUD=0;; n) DRY=1;;
-  *) sed -n '2,30p' "$0" | sed 's/^# \{0,1\}//'; exit 1;;
+  C) PALETTE=$OPTARG;; L) LOUD=0;; n) DRY=1;;
+  *) sed -n '2,32p' "$0" | sed 's/^# \{0,1\}//'; exit 1;;
 esac; done
 
-[ -n "$SRC" ] && [ -n "$OUT" ] || { sed -n '2,30p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
+[ -n "$SRC" ] && [ -n "$OUT" ] || { sed -n '2,32p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
 [ -f "$SRC" ] || { echo "no such source: $SRC" >&2; exit 1; }
 
 FONT=${BADCODE_FONT:-/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf}
@@ -51,10 +53,9 @@ FONTR=${BADCODE_FONT_R:-/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf}
 [ -f "$FONT" ] || FONT=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
 [ -f "$FONTR" ] || FONTR=$FONT
 
-INK=0xE8EDF2          # brand off-white
-DIM=0x8A949E          # dim label grey
-BG=0x07090B           # near-black card
-LINE=0x3A4450         # the one thin light
+# The story's colours (INK DIM BG RULE BAR) — no default; see palette.sh.
+. "$(dirname "$0")/palette.sh"
+load_palette "$PALETTE"
 
 FPS=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of csv=p=0 "$SRC")
 FPS=${FPS:-25/1}
@@ -89,7 +90,7 @@ case "$MODE" in
   slate)
     # window sits 96px above centre: y 560..1168 on a 1920 canvas.
     VF="[0:v]${FIX},scale=1080:-2:flags=lanczos[s];color=c=${BG}:s=1080x1920:r=${FPS}[bg];[bg][s]overlay=x=0:y=(H-h)/2-96:shortest=1[w]"
-    VF="${VF};[w]drawbox=x=0:y=554:w=1080:h=2:color=${LINE}@0.8:t=fill,drawbox=x=0:y=1166:w=1080:h=2:color=${LINE}@0.8:t=fill[v]"
+    VF="${VF};[w]drawbox=x=0:y=554:w=1080:h=2:color=${RULE}@0.8:t=fill,drawbox=x=0:y=1166:w=1080:h=2:color=${RULE}@0.8:t=fill[v]"
     CAPMARGIN=500 ;;
   *) echo "unknown mode: $MODE" >&2; exit 1;;
 esac
@@ -127,7 +128,7 @@ fi
 # Burnt captions. 🔴 ffmpeg converts an .srt into ASS with PlayRes 384x288, so
 # force_style margins and sizes are in THAT space, not pixels — MarginV=420 simply
 # vanishes off a 1920-tall frame (verified 2026-09-18). So: convert, rewrite the
-# play-res to the real frame, and write the house style in real pixels.
+# play-res to the real frame, and write the caption style in real pixels.
 if [ -n "$SRT" ]; then
   [ -f "$SRT" ] || { echo "no such subtitle file: $SRT" >&2; exit 1; }
   ASS=$(mktemp --suffix=.ass)

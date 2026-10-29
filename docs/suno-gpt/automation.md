@@ -300,11 +300,21 @@ inside our ±10s tolerance, so automation drives the slider.
 
 ## 5. The operating protocol
 
-Kai's working practice, ruled 2026-08-24. Automation must implement all three.
+Kai's working practice, ruled 2026-08-24. Automation implements all three; the pair is for refining, not exploring.
 
-### 🔑 Every attempt is a PAIR, not a generation
+### Refining a sheet: Kai's w30/w60 pair
 
-Every time we try something, we run it at **both** weirdness settings:
+> **A working method, not a sound, and not a default** (2026-10-28). The pair is one way Kai
+> *refines* a sheet that already has a sound; it says nothing about what a song should sound like,
+> and it is not how an exploring round runs. A song's own sliders live in its story's
+> `docs/stories/<story>/sound.md`. An **exploring** round (the `variations` skill) does not stamp
+> one pair of settings on every prompt — each writer chooses — because the same settings on every
+> take is one of the ways we made the same song again ([`same-song-traps.md`](./same-song-traps.md) trap 11).
+> 🔑 **The scripts now refuse a spec with no sliders** (2026-10-29: `take-row.mts` throws "There is
+> no default" when `weirdness`, `styleInfluence`, `model` or `variety` is missing), so the values
+> below are what you write into a spec on purpose, never what you get by leaving it out.
+
+Kai's practice, ruled 2026-08-24, when refining: run the same sheet at **both** weirdness settings:
 
 | | Style Influence | Weirdness |
 | --- | --- | --- |
@@ -314,18 +324,12 @@ Every time we try something, we run it at **both** weirdness settings:
 *"Sometimes weirdness 60 works better, sometimes weirdness 30 works better. I've not yet worked
 out which rule to apply."* — Kai, 2026-08-24
 
-So the automation unit is **load once → set w30 → Create → set w60 → Create**. Style influence
-stays the same across both (75 when Kai ruled it). Never generate at only one setting; the comparison is the point, and
-the rule is still being learned.
+So the refining unit is **load once → set w30 → Create → set w60 → Create**. Style influence
+stays the same across both (75 when Kai ruled it). The comparison is the point, and the rule is
+still being learned.
 
 **This is also a research programme.** Each pair is a data point on when 30 beats 60. Log the
 verdict with the pair so the rule can eventually be stated.
-
-> **A working method, not a sound** (2026-10-28). The pair is how we *refine* a sheet; it says
-> nothing about what a song should sound like. A song's own sliders live in its story's
-> `docs/stories/<story>/sound.md`. An **exploring** round (the `variations` skill) does not stamp
-> one pair of settings on every prompt — each writer chooses — because the same settings on every
-> take is one of the ways we made the same song again ([`same-song-traps.md`](./same-song-traps.md) trap 11).
 
 ### 🔑 Timing — narration must land within ±10s of the picture
 

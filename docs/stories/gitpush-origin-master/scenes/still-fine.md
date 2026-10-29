@@ -66,7 +66,7 @@ Cut 3 is **band D0**, "the last D0 in the film — the drain starts on the red" 
 D0 is specified as *"ordinary overcast daylight, natural human colour"* — so a city in honest
 colour here is **on-spec**, not a deviation.
 
-The reason this spread exists: the ladder was drifting. `badcode-art-direction` rule 1 said the
+The reason this spread exists: the ladder was drifting. `badcode-art-direction` (retired; GPOM's look is now [`../look.md`](../look.md)) rule 1 said the
 muted cool-neutral preamble *"is not a stylistic option — it is the format"*, the base prompt at
 `prompts.md:98` hard-codes *"deep unlifted shadows with no shadow recovery"*, and **run the whole
 band ladder end to end and there is no sunshine anywhere in it until the final scene** — D0

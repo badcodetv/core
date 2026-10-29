@@ -410,8 +410,9 @@ The recall montage. Each verb brings back its pictures, fast.
 
 ### Scene 15 — One more thing · 14:50 – 15:10
 
-The coda. After the black. No archive. **Brand imagery made in Flow** (§6): the BadCode register,
-near-black, one light, machines that build.
+The coda. After the black. No archive. **Imagery made in Flow** (§6) in GPOM's near-black look — one light, machines that build.
+⚠️ *Borrowed from GPOM — a candidate, not inherited; Kai to rule (2026-10-29 audit). There is no
+"BadCode register": MMT's look is EXPLORING ([`look.md`](./look.md)).*
 
 | Clock | Narration | Picture | Treatment |
 | --- | --- | --- | --- |
@@ -435,7 +436,7 @@ near-black, one light, machines that build.
 | 6 | DIAGRAM 10a (one QE transaction) | 10a | ⬜ | own graphic |
 | 7 | Screenshots: the judgment page; both Contracts Finder notices | 11a | ⬜ | browser, crop to the figures |
 | 8 | TNA `MH 55/965` pamphlet image | 12 | ⬜ not downloaded | TNA page, OGL |
-| 9 | Flow illustrations 03-A to 03-D (builder, family, bricks, building), 11a-Y (yacht), 15-A to 15-C | 03, 04, 11a, 13, 15 | ⬜ | `flow-prompt` + `badcode-art-direction`; **Kai approves every plate** before any video credit |
+| 9 | Flow illustrations 03-A to 03-D (builder, family, bricks, building), 11a-Y (yacht), 15-A to 15-C | 03, 04, 11a, 13, 15 | ⬜ | `flow-prompt` + MMT's [`look.md`](./look.md) (the retired `badcode-art-direction` skill was planned here); **Kai approves every plate** before any video credit |
 | 10 | A contact sheet at 10-second spacing for *Know Your Ally: Britain* 00:00–38:00 | 05 | ⬜ | to find the rationing and factory shots |
 | 11 | A scratch narration | timing | ⬜ | AI Studio voice or Suno per house method, **only when asked** |
 | 12 | The scene 11a legal read and fact re-check | 11a | 🔴 owed | a human lawyer; litigation is live |

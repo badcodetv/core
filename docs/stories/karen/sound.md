@@ -112,6 +112,14 @@ Script: [`narration/script-v2-brief.md`](./narration/script-v2-brief.md).
   genre (listing them as equals let the spy band eat the record, round 9).
 - **No franchise or artist names in any box** ("James Bond", "007", "Skyfall"…).
 - **The tempo never changes** — 86 BPM in the song and every cue.
+- **Dark satire played straight — the joke is in the words, never in the music** (learned on the Karen
+  track, 2026-07; moved here from suno-prompt "The satire trap", 2026-10-29). When the concept is absurd
+  but the sound must be serious, state the register and negate the default, repeated for weight:
+  `…no comedy, no novelty, played completely straight.` Put comedic / novelty / parody in Exclude too.
+  This holds even when the brief asks for a funny song: "comedic deadpan" or "comedy-skit energy" in the
+  Style box summons kazoos and vaudeville — less funny, not more. The humour goes in the lyrics and the
+  conceit; the arrangement stays sincere and warm (the first drafts led with "comedic" and had to be
+  stripped).
 
 ## Never
 

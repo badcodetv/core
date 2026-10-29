@@ -5,5 +5,10 @@
  "title": "The Speakeasy Mint (music video)",
  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery",
  "flow_project": "dedd295f-a519-46bb-aeb8-0e422a58e757",
- "beats": []
+ "beats": [],
+ "video": {
+  "model": "Omni 1.1 Flash",
+  "aspect": "16:9",
+  "mode": "Frames"
+ }
 }

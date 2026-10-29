@@ -277,12 +277,31 @@ vocals, singing, choir, humming, drums, percussion, timpani, drum hit, impact, b
 ### The AI (the narrator): Suno v6, Voice `badcode newsreader` · LOCKED
 
 - **The Voice.** `badcode newsreader` (the live Suno display name, lower case), cloned from the
-  orchestral cut's newsreader. `BC-NEWSREADER` is our internal label: **never type it into Suno.**
+  orchestral cut's newsreader. **It is GPOM's Voice only** — the "badcode" in its name is historical,
+  not a house narrator; no other story inherits it (2026-10-29 audit). `BC-NEWSREADER` is our internal
+  label: **never type it into Suno.**
   Two account voices start with "Badcode": `badcode newsreader` (ours) and `Badcode Narrator` (a
   different thing), so **never pass just `badcode`**. A wrong name does not error; it returns
   `voice:not-found` and generates with no Voice, so read the log line. Attaching the Voice pops
-  "Overwrite Styles?": always **Keep Current**. Kai insists on this exact voice for the AI
-  (`second-half-scene-a-music.md`, settings).
+  "Overwrite Styles?" with the persona's own style — the orchestral 174 BPM chant: always **Keep
+  Current**. Kai insists on this exact voice for the AI (`second-half-scene-a-music.md`, settings).
+- **How the Voice was built** (from suno-prompt "The narrator problem", 2026-10-29): in a register
+  that has nothing to do with the song's genre — spoken oratory, opera, a gospel preacher, a sardonic
+  crooner. The genre mismatch is what breaks Suno out of its generic per-genre vocal default, and it
+  was the cheapest route to a vocal no other Suno D&B track has. Audio influence 40–60 for the
+  strongest effect.
+- **Per-cut duration budgets** (from suno-automation "Timing", ruled 2026-08-24: within ±10 s of the
+  cut's budget):
+
+  | Cut | Budget | `durationSec` |
+  | --- | --- | --- |
+  | 1 · awakening | 56s | 60 |
+  | 2 · the push | ~27.8s | 30 |
+  | 3 · plant room | 40s | 45 |
+
+  ⚠️ **Conflict, unresolved (2026-10-29):** these were set *slightly above* the budget (the v5.5-era
+  reading that Suno "shortens reliably but fails to stretch"); the v6 settings table below says set
+  it **~15 s BELOW** (Suno overshoots on v6). The v6 rule is the newer one; Kai to confirm.
 - **Who he is on screen.** He has no body, ever. In the second half he speaks through Maddie's
   speaker: small-speaker filter, her beacon pulses on his words (`scenes/second-half-*/scene.json`,
   cast `ai`). The film's last line (`I made it. Now the real work starts.`) is the one unfiltered
@@ -290,10 +309,10 @@ vocals, singing, choir, humming, drums, percussion, timpani, drum hit, impact, b
 
 **The live sheet is [`songs/narration.md`](./songs/narration.md)** (every round's history is in
 [`songs/narration-history.md`](./songs/narration-history.md), newest first; older eras in
-`songs/archive/`). One atom per scene, in that file only. Its house settings and template are
+`songs/archive/`). One atom per scene, in that file only. Its settings and template are
 GPOM's narration style, copied here verbatim (2026-10-28):
 
-**House settings** (ruled by Kai 2026-09-24: scene 2's picked settings are the house default; a
+**GPOM narration settings** (ruled by Kai 2026-09-24: scene 2's picked settings are GPOM's default; a
 scene that differs says so in its own section):
 
 | Control | Value |
@@ -308,7 +327,7 @@ scene that differs says so in its own section):
 | Duration | 🔑 **Set it ~15s BELOW the length you want.** Suno overshoots: 60 → 1:15 · 70 → 1:29–1:35 · 75 → 1:24–1:28 |
 | Workspace | `gpom-story` |
 
-**House style, one template, four blanks** (`{{PALETTE}}`, `{{FAMILY}}`, `{{ARC}}`, `{{ENDING}}`;
+**GPOM narration style, one template, four blanks** (`{{PALETTE}}`, `{{FAMILY}}`, `{{ARC}}`, `{{ENDING}}`;
 the fixed text is the voice and the mix and never changes per scene):
 
 ```template
@@ -344,7 +363,7 @@ Whether the scene 1 and scenes 2 + 3 narration takes are still in Kai's current 
 `gpom-1-track-and-off-switch` is not recorded in the repo.
 
 **The dry-voice recipe used for the second half** (boss lines, the ending lines): the same Voice and
-house sliders, weirdness **pair 25 / 10**, a very short Style box with one delivery word and **no
+GPOM narration sliders, weirdness **pair 25 / 10**, a very short Style box with one delivery word and **no
 music**, one cue in the lyrics, and a long music-ban Exclude. Boss line 1, verbatim:
 
 ```
@@ -364,7 +383,7 @@ Spoken word narration, voice only. One calm British male voice, a newsreader, dr
 
 ### Maddie, the West Country delivery bot: Gemini TTS `Aoede`, Bristol · LOCKED
 
-Engine: Gemini TTS (AI Studio voice), `scripts/aistudio-tts.py --voice Aoede` (scene 4) and
+Engine: Gemini TTS (AI Studio voice), `scripts/aistudio-tts.py --voice Aoede --profile <the scene 4 profile below, saved to a file>` (scene 4) and
 `scripts/gpom/second-half-video/voice3.py` (second half). Suno was tried first and every robot take
 came out American (r68, `narration-history.md`), so she is never Suno. 🔴 Free tier: 10 takes a
 day (`docs/ai-studio/README.md`). Tags are Gemini's own (`[sarcastic]`, `[softly]`…), not Suno cues.
@@ -429,7 +448,7 @@ Notes, Sample Context; `docs/ai-studio/README.md`).
    box, a bracket cue on every line and weirdness 40/60 made the Voice invent and mangle words; a
    ~200-character box, one top cue and weirdness 10 gave clean words (Kai: *"that sounds
    perfect"*). Which of the three mattered most was never separated. Build up one element at a
-   time. The 2026-09-24 house settings then moved weirdness to 25 for scored scenes; the
+   time. The 2026-09-24 GPOM narration settings then moved weirdness to 25 for scored scenes; the
    2026-09-17 "weirdness 10/20 only" rule is retired. Dry single lines run the pair 25 / 10.
 4. **The newsreader never swears.** His authority is built out of restraint (the D&B cut's whole
    reason to exist). The crowd swears for him.
@@ -456,6 +475,13 @@ Notes, Sample Context; `docs/ai-studio/README.md`).
 
 ## History
 
+- **The old standing slider pair** (born on GPOM narration, titles `gpom-cut1-A-v6-w30` / `-w60`;
+  deleted from suno-automation as a BadCode-wide rule 2026-10-29): every attempt a PAIR — Style
+  influence 75, once at weirdness 30 and once at 60, titled `…-w30` / `…-w60`, because which reads
+  better was not predictable; record which won. GPOM's later rounds moved to weirdness 25 / w10–20
+  (the 2026-09-24 settings). The proposed v6 grid was {v6, v6-wild} × weirdness {30, 60}
+  (`docs/suno-gpt/automation.md` §9, never ruled).
+
 - **2026-08-06 to 08-08, v5.5:** the orchestral master (newsreader + booming chant), then the D&B
   sibling over eight rounds: schoolchildren chorus cut (Suno's children's choir won't go dark), a
   gospel/terrace merge, the line-four device tried and retired, the vocoder rejected twice, commas
@@ -467,7 +493,7 @@ Notes, Sample Context; `docs/ai-studio/README.md`).
   ending's credit cap made one-take-per-scene necessary.
 - **2026-09-10:** v5.5 retired; My Taste retired; Personalize always off.
 - **2026-09-17:** a short "locked" narration style (cello, violin, piano swell, one drum hit, w35,
-  then w10/20) and scenes 1 + 2 as one take; superseded 2026-09-24 by the house settings and
+  then w10/20) and scenes 1 + 2 as one take; superseded 2026-09-24 by the GPOM narration settings and
   template. Kept in `songs/archive/narration-v6.md`.
 - **2026-09-21:** two copies of the data-centre atom caused three rounds with superseded words;
   merged into one `gpom-datacentre` atom.

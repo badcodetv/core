@@ -102,7 +102,7 @@ Write them fully and carefully — they are colleagues, not stubs.
   making-of write-ups (Wed 12:00, from the repo's panel revision records); reply drafts;
   email newsletter copy. Output: `kind=draft` memories. Its finishing hands drafts to the
   publisher (subscription on its `worker.finished`).
-- **`image-maker`** — brand stills. Drafts exact Flow prompts in the BadCode register; when
+- **`image-maker`** — brand stills. Drafts exact Flow prompts in the look of the story the still belongs to (its `docs/stories/<story>/look.md`; there is no BadCode house look); when
   image generation needs the human-attended Flow session, produce the complete prompt +
   spec and `request_human_attention` so Kai can run it. Tools: badcode CLI, flow MCP when
   available.

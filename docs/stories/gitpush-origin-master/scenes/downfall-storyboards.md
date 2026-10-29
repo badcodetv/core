@@ -25,14 +25,14 @@ where it is.
 | **A · Epic** | awe and dread at scale; the disaster film | Burtynsky, *Children of Men* | high, wide, deep; tiny people against huge structures, cost always in frame | big natural sky, full colour, golden or storm light |
 | **B · Close** | grief; it happens to one person | Ken Loach, Andrea Arnold | eye height, near, one face or one pair of hands | window or overcast daylight, ordinary colour |
 | **C · Deadpan** | the joke is the horror; sarcasm made visible | Roy Andersson tableaux | frontal, symmetrical, locked, mid-distance, nobody reacts | flat pale grey-green, shadowless fluorescent or overcast |
-| **D · Night** | menace; the machine's point of view | the house register, *Alien*'s Nostromo | low, monumental, occluded | near-black, one hard source, one bright anchor |
+| **D · Night** | menace; the machine's point of view | GPOM's MACHINE register, *Alien*'s Nostromo | low, monumental, occluded | near-black, one hard source, one bright anchor |
 
 🔴 **Gates applied to every frame:** a visible human cost in any monumental frame; the light named
 in the world; crowds keep arms low (the 2026-09-21 salute clause); no living names, no logos; the
 decision-maker is on screen at least once per tone (the chief executive, the minister, the board).
 
-🟡 **Tone D is the open ruling R1** (`docs/cinematography/principles.md`): whether the near-black
-house look suits the reader is unproven. These boards are partly a way to see it against three
+🟡 **Tone D is the open ruling R1** (`docs/cinematography/principles.md`): whether GPOM's near-black
+look suits the reader is unproven. These boards are partly a way to see it against three
 alternatives.
 
 ## Prompts
