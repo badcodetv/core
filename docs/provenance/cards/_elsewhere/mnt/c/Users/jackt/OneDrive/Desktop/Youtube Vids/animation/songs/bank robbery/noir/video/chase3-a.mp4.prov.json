@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase3-a.mp4",
+ "made": "2026-10-30T11:30:17.575Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera tracks alongside at the same speed, one continuous shot. The teal sedan fishtails on the ice, its heavy back end stepping out and catching, its crates shifting against the windows as spray blasts from the rear wheels. It pulls ahead, sliding out of frame left. The police motorcycle and sidecar skid outward, directly toward the camera, until the rider's headlamp swings into the lens and blooms to white. His hands stay on the bars.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase3-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase3-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "15314ae0-789b-4a52-84ad-e7574279bafc"
+}

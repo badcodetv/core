@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase1-a.mp4",
+ "made": "2026-10-30T11:27:16.636Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous shot at bumper height, chasing the red sedan down the wet cobbles. [0-5s] The sedan accelerates hard, its rear squatting on its springs, tyres smoking and skittering over the tram rail, while sparks keep raining from the same spot on the girder overhead. [5-8s] The camera swerves right at speed; the riveted pillar rushes up and passes inches from the lens, its black iron filling the frame.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase1-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase1-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "36b466e5-cdea-4153-b0e9-61d410b27f8c"
+}

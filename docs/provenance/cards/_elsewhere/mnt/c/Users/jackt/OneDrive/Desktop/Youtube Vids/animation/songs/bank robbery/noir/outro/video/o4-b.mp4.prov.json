@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o4-b.mp4",
+ "made": "2026-10-30T16:35:00.160Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, locked camera, slow motion. From top to bottom, bulbs burst one after another, each in a puff of glass and a small fan of white-orange sparks, then goes dark. The trough keeps its shape. No speech. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/o4.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/o4.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 4
+ },
+ "source_id": "9386dd3f-0cae-4735-8984-b6d41258cb93"
+}

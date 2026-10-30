@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/stills/o3-a.jpg",
+ "made": "2026-10-30T15:28:41.534Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Night, wet 1920s street. Camera locked directly behind one man's shoulder: his fedora and overcoat are a black, out-of-focus mass on the left, a drum-fed submachine gun with a finned barrel raised and aimed up at the sign, away from camera. White-orange flame jets upward from the muzzle, lighting the rain and the brim of his hat. Sharp behind him, straight on, the rooftop sign with the single word badcode, letters following the reference image exactly, every amber bulb lit, the red disc glossy, the blue tube bright. Nothing else is written anywhere. Haze hangs in the light. Saturated amber against blue, shadows true black, full frame edge to edge. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/sign-gold.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b323d1c2-bf34-4adf-bab5-d25a9b2b1f0f"
+}

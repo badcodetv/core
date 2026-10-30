@@ -161,6 +161,8 @@ Mr Blue in a red and a blue tie.
 - **Denise in the rain** looking up as the café is sold (Jack, 8 Oct: the *Blade Runner* rain shot, never
   named in a prompt).
 
+- **Music video, colourful noir** — **EXPLORING** (Jack, 2026-10-30). A third version: colourful noir, realistic transitions instead of psychedelic ones, a bank of general shots before any story. Brief and his words: [`songs/mv-colour-noir/brief.md`](./songs/mv-colour-noir/brief.md). Nothing locked yet. Lip-sync shots (2026-10-30): a different old man per shot, face about a third of frame height, the action behind or reflected beside him, each shot its own pair of colours and reflective surface. The outro is the `badcode` wordmark as a lit sign, shot up (`picks.md`, Round 5). Unruled.
+
 ## Never
 
 - Teal and orange, "cinematic" as a bare word, everything blurred behind the subject — the AI default.

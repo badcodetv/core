@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/f8-a.mp4",
+ "made": "2026-10-30T16:26:53.753Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked camera, one continuous shot. Water keeps spraying in steady arcs from the holes in the tank behind him. He says: then it's retribution, perhaps some execution. He talks at an unhurried pace and nobody else speaks. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/f8.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/f8.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 6
+ },
+ "source_id": "48a1c5fe-925b-49e6-9bff-c74b78bce356"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/city4-rods1/01-b.jpg",
+ "made": "2026-10-30T10:30:27.673Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A cut-down 1932 roadster in oxide-red primer tears across a dry alkali lakebed in 1940, seen from a camera lying almost on the ground beside the course, panning hard with the car as it passes three metres away. The car has no fenders, no hood and no windscreen, only a chopped body, a bare chromed flathead V-8 with finned heads, and four short exhaust stubs spitting pale heat. The car stays sharp while everything else is dragged into long horizontal streaks: the cracked pinkish-white lake surface, the far line of violet mountains, a parked truck reduced to a smear of mustard yellow. Its wire wheels have blurred into solid discs, the front tyres are turned a few degrees against a skid, the body rolled toward the camera so the inside rear wheel is barely touching. The driver is a sunburnt man in his thirties in a grease-black undershirt, leather cap and scratched goggles, no helmet and no belt, both fists locked high on a thin wooden wheel, teeth showing, knuckles white. A blank white circle where a number has been sanded off sits on the door. Low sun from behind the camera, an hour before dusk, rakes across the car and lights every rivet; a tall wall of churned chalk-white dust boils up behind the car and rolls over the back third of the frame, and small stones hang in the air off the rear tyre. The nose of the car is about to leave the right edge of the frame. Coarse colour film grain, dense saturated reds and yellows. The picture runs to all four edges of the 16:9 frame.\n\nThanks.",
+ "source_id": "34070c20-1ce9-4a8b-b8c1-363e238ff26d"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p05/02-b.jpg",
+ "made": "2026-10-30T15:17:48.204Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Full front from the counter on a 40mm lens, slightly above eye level: a man of about seventy-five with a long, deep-lined face lies back in a chrome barber's chair, shaving lather on one jaw only, his lips clear, a towel folded low on his chest, head and shoulders large in frame. Behind him the plate window of the shop has just burst inward, a storm of glass hanging in the air, a black 1920s sedan stopped at the kerb beyond it with its lamps glaring. Bottles of tonic have burst along the shelf beside him. A sea-green lamp lights his face from the front; a coral red street lamp glows through the broken window. The chrome headrest and footplate carry long curved reflections of both. Thanks.",
+ "source_id": "cb9e1b9f-ad89-4761-8123-f65164853563"
+}

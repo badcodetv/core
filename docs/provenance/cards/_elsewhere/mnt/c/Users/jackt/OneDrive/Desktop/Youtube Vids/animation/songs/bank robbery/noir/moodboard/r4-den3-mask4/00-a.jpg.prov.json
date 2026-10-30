@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r4-den3-mask4/00-a.jpg",
+ "made": "2026-10-30T13:20:56.314Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The camera sits level with a round card table in a windowless back room in the 1920s, its lens only a hand's width above billiard-green baize, looking across the table at three men playing cards. A wide green enamel lamp hangs low over the middle of the table with its top cut off by the upper edge of the frame, and it is the main light, dropping straight down in a hard pool that ends just behind the men's shoulders. A short stack of ivory and red clay chips stands large and soft at the lower left, close to the lens. The man in the centre wears a mustard felt fedora and a brown-and-cream houndstooth suit. The man on the left wears an oxblood fedora and a green plaid suit, and the man on the right, cut off by the right edge of the frame at his shoulder, wears a violet fedora and a charcoal chalk-stripe suit. All three are heavy, ordinary, middle-aged, sitting perfectly upright with their forearms on the table's padded rim, each holding a small fan of cards close to his chest. The hat brims put their eyes in shadow and the lamp catches their chins and knuckles. A single cigar rests in a thick glass ashtray in the centre of the table, and one thin line of smoke climbs straight up from it and flattens into a green haze under the lamp. Behind the men, a wall painted deep plum fades into true dark, with one small amber bulb in a brass wall fitting glowing far off to the left. Fine film grain and deep, velvety blacks, with the colour in the hats, the suits, the chips and the cloth. The picture fills the frame edge to edge.\n\nThanks.",
+ "source_id": "74acea20-c29e-4714-b85f-3a5942ee4f46"
+}

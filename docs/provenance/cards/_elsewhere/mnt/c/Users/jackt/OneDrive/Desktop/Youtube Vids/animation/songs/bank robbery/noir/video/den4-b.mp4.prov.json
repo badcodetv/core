@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/den4-b.mp4",
+ "made": "2026-10-30T12:36:33.073Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "A locked shot. The furnace fire on the left flickers and its orange light moves softly over the bricks. A thin line of smoke rises from the cigarette in the seated man's still hand. He and the seated musicians stay motionless, mouths closed. In the final second, the camera whips left to the furnace, blurring at the peak. One continuous shot.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-den4-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-den4-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "8777c280-d562-4c21-9fa6-b8a71c0cadaf"
+}

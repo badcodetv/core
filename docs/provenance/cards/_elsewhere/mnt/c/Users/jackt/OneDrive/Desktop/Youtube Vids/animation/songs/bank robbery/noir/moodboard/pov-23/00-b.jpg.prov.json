@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/pov-23/00-b.jpg",
+ "made": "2026-10-30T10:16:42.812Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The driver's head has turned left, and we look sideways out of the open side window of a stationary 1930s coupe, waiting at a city crossroads at night in the middle of a theatre crowd. The picture is one complete frame of colour film, filling the wide 16:9 shape edge to edge. The dark chrome-edged window opening frames the whole scene, and resting on its sill at the bottom left is one gloved hand in oxblood leather, the fingers tapping, a sliver of mustard check shirt cuff at the wrist. Barely two feet away, filling the right half of the frame from the chest up, a heavyset motorcycle policeman sits astride his idling machine in a dark navy tunic with brass buttons and a peaked cap, looking dead ahead and chewing a matchstick, entirely unaware of us. The tank of his motorcycle gleams in the low foreground, with a long smear of gold bulb light bent across its curve. Behind him, soft with distance, people in evening clothes pour out beneath a lacquered vermilion theatre canopy edged with hundreds of small bare bulbs: a woman in a jade satin coat laughing with her head thrown back, a man in a white scarf lighting a cigarette. All the canopy's letters are out of focus and illegible. The bulbs light the policeman from behind and from his far side, a warm gold rim along his cap and jaw, while the side of his face nearest us sits in soft shadow lifted only by a dim glow from the dash. A long lens feel, shallow depth, dense grain, a still and held moment.\n\nThanks.",
+ "source_id": "c7387c58-fc4c-40e2-a163-ff48e79d8e28"
+}

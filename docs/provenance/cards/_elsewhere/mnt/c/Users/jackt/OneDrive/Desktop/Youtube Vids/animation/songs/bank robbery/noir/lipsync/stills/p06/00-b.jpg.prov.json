@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p06/00-b.jpg",
+ "made": "2026-10-30T15:20:34.537Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A wide 24mm lens almost on the floor of a raided speakeasy, looking up at a crew of four men aged sixty to seventy-five, clean-shaven or stubbled, shirtsleeves, braces and battered hats, shoulder to shoulder, the two nearest faces huge in the frame, all mouths open and clear, shouting just past the camera. Firemen's axes are held high above their heads, blades up. Behind them a wall of oak barrels stands staved in and split, and amber liquor sheets down across the floor toward the lens. The flooded boards mirror them head to foot. A crimson lamp from the left and an ice-cyan lamp from the right cross on their faces, and the rest of the cellar falls away to black. Thanks.",
+ "source_id": "6f1a7136-b3e3-4373-9f37-e390b53828f0"
+}

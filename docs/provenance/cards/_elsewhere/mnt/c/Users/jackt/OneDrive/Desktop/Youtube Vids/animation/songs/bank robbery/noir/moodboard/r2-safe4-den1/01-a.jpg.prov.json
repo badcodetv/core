@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-safe4-den1/01-a.jpg",
+ "made": "2026-10-30T11:19:19.002Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "We sit on the plank floor of a cramped basement bandstand, at hip height behind a small drum kit, looking out past the musicians into the room they are playing to. Filling the left third of the frame, close and slightly soft, are the shoulder and pinned-up grey hair of a woman in a charcoal waistcoat, her brushes blurred over a plain white calfskin snare head, a brass cymbal edge cutting across the lower corner. Beyond her, in hard rim light, a very tall thin man in a double-breasted chalk-stripe suit bends around an upright bass; a stout older man in a mustard three-piece lowers his trumpet; a young man in a too-big bottle-green suit holds a clarinet. At centre-right, nearest the microphone, stands the singer: a broad man in his forties in a double-breasted garnet wool suit with wide lapels, black hair going silver at one temple, a nose broken long ago and set crooked, heavy eyebrows. He turns his head in profile to a heavy chrome period microphone, lips closed, barrel chest lifted, drawing a breath before the next line, one big hand loose at his side. A row of bare bulbs in tin reflectors along the lip of the stage throws amber light up and back toward the camera, edging every figure in gold while their backs fall into dark. Past them, through cigar haze, the den burns in painted colour: plum walls, emerald leather booths, small crimson-shaded table lamps, men in wide-brimmed hats turned toward the stage. Between the lamps the room falls into true black. The picture runs to all four edges of the frame, with fine film grain.\n\nThanks.",
+ "source_id": "cc9728f9-c55c-4f4a-914b-e4daeecfec28"
+}

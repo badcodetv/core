@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p02/01-a.jpg",
+ "made": "2026-10-30T15:09:37.160Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A bootleg convoy on a wet highway at night, 1920s America, a 16:9 picture filling the frame edge to edge. An 85mm lens looks from outside a moving sedan into the open front passenger window. Close and large in frame sits a clean-shaven man of about seventy-five, long-jawed and heavy-lidded, in a bowler hat and three-piece suit, near-frontal, mouth open mid-word, a double-barrelled shotgun upright against his far shoulder, away from his face. Ruby tail lamps of the truck ahead paint his cheek and lips. Beside his head, a round chrome mirror on the door holds the whole convoy curving away behind: lemon-yellow headlamps in a long line, shining on black road. Rain beads on the door glass and the black beyond is total. Thanks.",
+ "source_id": "795256ea-b22d-4c13-bd8d-d43dc0f4e9d2"
+}

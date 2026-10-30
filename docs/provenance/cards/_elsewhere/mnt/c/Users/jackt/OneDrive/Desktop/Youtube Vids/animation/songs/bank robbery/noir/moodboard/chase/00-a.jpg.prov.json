@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/chase/00-a.jpg",
+ "made": "2026-10-30T10:11:44.958Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Seen from a camera bolted to the front bumper of a pursuing police car, one foot above the road and looking dead ahead, on a night street that runs beneath an elevated railway in 1931. Eight feet in front of the lens an oxblood sedan swings left around a riveted iron pillar, rolled hard over on its outer springs and cut off by the right edge of the frame; its spare wheel, chrome bumper and two small ruby tail lamps are sharp, and pale smoke curls off the rear tyre. The police car's own headlamp beam, coming from just below the lens, lands flat and white on the sedan's boot. Iron pillars rush past on both sides, pulled into long horizontal smears of black and rust-green. Between them, amber light from bare-bulb shopfronts falls in bars across granite setts and streetcar rails, and the setts at the bottom of the picture are dragged into streaks by the speed. Overhead a train is crossing at the same moment: a spit of white-violet sparks from its pickup shoe falls through the ties and catches the sedan's roof. The shopfronts behind the pillars are painted jade and tomato, their sign boards plain blocks of colour with no lettering. The gutter is damp, the crown of the road dry, and one puddle holds a ruby tail-lamp streak stretched toward the camera. Everything between the lights stays truly dark, with coarse film grain and deep dye colour, and the scene fills the whole 16:9 frame to its edges.\n\nThanks.",
+ "source_id": "a681bc86-1c70-4ed6-b101-7d0b63f071e5"
+}

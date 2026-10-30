@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/e1-a.mp4",
+ "made": "2026-10-30T16:22:52.214Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked camera, one continuous shot. Banknotes drift slowly down behind him while everything else holds its shape. He says: stacking up the cash by the grands. He talks at an unhurried pace and nobody else speaks. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/e1.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/e1.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 4
+ },
+ "source_id": "14b14e6a-bcb1-4817-91f1-740e2d74636a"
+}

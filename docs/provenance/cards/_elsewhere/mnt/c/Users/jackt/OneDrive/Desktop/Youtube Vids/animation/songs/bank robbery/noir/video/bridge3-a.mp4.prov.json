@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/bridge3-a.mp4",
+ "made": "2026-10-30T12:40:53.246Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Fixed camera, symmetrical frame unchanged. The bass player and drummer play with small natural movements, and their huge shadows on the brick vault sway slightly in time with them. Nobody sings; the singer stands still with his mouth closed. Both black cars stay parked. The man in the hat stays still, a thread of smoke rising from his cigarette. Single continuous shot.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge3-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge3-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "395defd8-f19b-45b0-bb61-4e99c9c846dd"
+}

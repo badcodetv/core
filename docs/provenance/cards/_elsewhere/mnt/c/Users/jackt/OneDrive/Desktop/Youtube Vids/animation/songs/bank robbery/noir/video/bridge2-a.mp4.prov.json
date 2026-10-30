@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/bridge2-a.mp4",
+ "made": "2026-10-30T12:39:27.329Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "From a low position just above the water, the camera pushes forward very slowly toward the singer in the plum suit, arriving late. He stands still at the microphone, mouth closed, breathing gently. Behind him the two cars stay parked with steady headlamps and the band holds still. Dark water laps at the bottom step. In the final two seconds his jacket fills the frame. One continuous shot, no cuts.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge2-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge2-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "5f028be3-b953-4e9e-b67c-7686615880d5"
+}

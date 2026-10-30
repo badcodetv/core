@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods4-b.mp4",
+ "made": "2026-10-30T11:45:04.276Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera low and still at water level in the concrete channel. The turquoise roadster charges straight at us through the shallow water, heavy, its tyres ploughing up sheets of spray that fall back with real weight, and sunset reflections break apart in its wake. The yellow car stays up on the sloped wall behind it, tilted, and the men in hats stay on the ledge. The turquoise car swerves just left of the lens and its shadowed flank passes at arm's length, blocking the whole frame in darkness for a moment. All one shot.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods4-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods4-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "650b240f-b26a-4617-ba59-7e54f07ac81d"
+}

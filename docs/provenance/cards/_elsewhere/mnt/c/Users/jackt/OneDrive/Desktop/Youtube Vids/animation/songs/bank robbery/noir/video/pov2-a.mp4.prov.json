@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov2-a.mp4",
+ "made": "2026-10-30T11:36:14.368Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera stays perfectly still at the driver's eye for six seconds, looking out of the side window of the idling car, which trembles slightly with the engine. Behind the policeman the theatre crowd mills and laughs, and the marquee bulbs chase. He stands in profile, mouth closed on his cigarette, smoke drifting. The red glow on his cheek turns green. The glove on the door tightens. Then, in the last two seconds, the camera whips hard to the right past his profile and across the dark window pillar, smearing everything into streaks of light. Nobody speaks. Lettering stays unreadable. A single unbroken shot.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov2-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov2-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "e07fc986-2d6b-4385-a1cf-c6ec051db807"
+}

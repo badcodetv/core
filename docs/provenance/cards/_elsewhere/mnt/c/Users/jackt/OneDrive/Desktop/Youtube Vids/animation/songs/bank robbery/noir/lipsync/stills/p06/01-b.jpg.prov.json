@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p06/01-b.jpg",
+ "made": "2026-10-30T15:20:34.570Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A high angle from halfway up a cellar stair on a 35mm lens: five weathered men of about sixty to seventy, clean-shaven, dark overcoats and fedoras pushed back, packed at the foot of the steps and looking up just past the camera, the front three faces large, mouths open and clear, shouting. Drum-magazine submachine guns hang low at their hips, muzzles toward the side wall. Behind them a huge camouflaged door faced with shelves of hams and plain tins stands swung wide, its polished steel edge mirroring the bulbs. A severed lamp cable rains sparks over rows of glass demijohns, several burst. Sulphur yellow bulbs light their faces from the front; an ultramarine lamp fills the hidden room behind. Deep blacks. Thanks.",
+ "source_id": "c24a095b-c7dd-4067-acb6-3a6e23da8bc2"
+}

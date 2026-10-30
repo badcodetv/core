@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p06/03-b.jpg",
+ "made": "2026-10-30T15:20:34.625Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A rain-soaked iron fire escape five floors up a brick tenement during a police chase, late 1920s, widescreen. Seen from just beyond the railing at eye level on an 85mm lens, a heavyset man near seventy, clean-shaven, jowls running with rain, soaked black homburg, fills the frame from chest to crown, facing almost front and glancing down past us. His right arm is flung wide with a revolver aimed at the sky, far from his face. The window beside him is mid-burst, glass hanging in the air. Far below, an unlettered theatre marquee of icy white bulbs burns out of focus, while magenta light from a sign across the alley washes his face and mouth. Backlit rain falls in white threads; wet iron slats and the window shards shine magenta and white. Everything outside the lamps is black. Thanks.",
+ "source_id": "4cd6214a-164d-494b-9ccc-de0b18b29f79"
+}

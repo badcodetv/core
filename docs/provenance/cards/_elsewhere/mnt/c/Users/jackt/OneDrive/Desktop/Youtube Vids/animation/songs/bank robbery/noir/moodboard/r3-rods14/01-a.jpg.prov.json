@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r3-rods14/01-a.jpg",
+ "made": "2026-10-30T12:29:31.241Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A long lens looks up a wide concrete flood channel at dusk in 1931, from knee height on the dry floor, a little right of the centre line so the three road bridges step away toward the left instead of lining up. The nearest arch crosses the top of the frame, its underside almost black. Two 1930 roadsters come toward the camera along the flat floor, one behind the other, just emerging from the shadow of the middle arch and still well down the channel. The lead car is chalky turquoise, the second mustard yellow, offset a little to its left so both can be seen. They are tall, narrow and upright: square radiators, separate curved mudguards, running boards, thin spoked wheels and small upright windscreens, with two round lamps lit a dull yellow on each. All four wheels of each car sit level on the concrete. Each driver is a grown man in a leather cap, sitting straight up. A thin, still ribbon of water runs along the middle of the floor beside them, carrying one long dim bar of the sky; the concrete around it is pale, stained with rust and only damp in patches. Behind the far bridge the sky is deep plum fading to dull rose at the horizon. One iron lamp on the far bridge throws a small amber pool on the wall below it. The sloped banks are empty and already in deep blue-grey shadow. Fine colour film grain, edge to edge in 16:9.\n\nThanks.",
+ "source_id": "c800ed60-421a-4d3e-8977-ed496444140f"
+}

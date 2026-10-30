@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/bridge-2/01-a.jpg",
+ "made": "2026-10-30T10:09:42.546Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Close and long-lens, about an 85mm view from low beside the front wing of a parked car: a huge chrome bowl headlamp burns out of focus at the extreme right edge of the frame, cut in half by the frame, and it is the only light on the woman filling the left two-thirds of the picture. She is a broad woman in her forties at a period microphone, black hair set in hard waves with one silver streak running back from her temple, wearing a deep plum chalk-stripe jacket with wide peaked lapels and a dark red lip. The light rakes across her from the right and low down, showing the pores, the small lines around her eye, the weave of the wool, the scuffed chrome of the microphone and the rings on the hand wrapped around its stand; the left side of her face falls away into near black. Her mouth is closed, her nostrils slightly flared, her chest lifted, eyes shut: the held instant before the next line. The night is cold, and the breath she has just let go hangs in the headlamp beam as a lit drift of vapour beside her cheek. Far behind her, gone soft, a stone bridge pier rises and four out-of-focus musicians stand in the outer spill of the beam: a very tall thin shape with a bass, a stout shape with the glint of a trumpet, a slim young man with a clarinet, a grey-haired woman behind a small drum kit. Beyond them the river is pure blur, big overlapping discs of ruby, pale gold and bottle green hanging in the dark. The picture fills the frame to every edge.\n\nThanks.",
+ "source_id": "f9fc79fe-9aec-4073-932d-2b7f7248db7d"
+}

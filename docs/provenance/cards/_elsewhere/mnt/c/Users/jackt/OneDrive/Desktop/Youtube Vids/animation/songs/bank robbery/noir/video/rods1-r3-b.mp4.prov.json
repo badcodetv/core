@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods1-r3-b.mp4",
+ "made": "2026-10-30T13:27:06.926Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "A camera car travels alongside at the same speed, one continuous tracking shot. Both cars drive to the right, side by side, and stay where they are in the frame, the red one nearest, the yellow one half a length ahead. Only wheels spin, dust trails off behind them and the ground streaks past. Distant hills slide slowly left. No speech.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-rods1-a-crop.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-rods1-a-crop.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "c220d798-2d40-4069-b6e0-21f73ae6b5c0"
+}

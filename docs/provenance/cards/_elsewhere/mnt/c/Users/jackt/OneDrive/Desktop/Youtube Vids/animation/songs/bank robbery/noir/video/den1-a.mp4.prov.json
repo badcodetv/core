@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/den1-a.mp4",
+ "made": "2026-10-30T13:00:19+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "flow_generate_video",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-den1-b.jpg",
+ "why": "take a saved before the harvest timed out; take b lost",
+ "prompt": "The camera stays locked at the drummer's shoulder. She sweeps her wire brush in small, slow circles on the snare, moving only her wrist. The singer stands still with his mouth closed. The other players and the crowd hold their places. Smoke drifts slowly above the tables. One continuous shot, no cuts.\n\nThanks."
+}

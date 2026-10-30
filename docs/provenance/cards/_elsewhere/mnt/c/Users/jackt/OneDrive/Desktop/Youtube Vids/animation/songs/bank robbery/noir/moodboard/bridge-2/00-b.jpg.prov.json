@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/bridge-2/00-b.jpg",
+ "made": "2026-10-30T10:09:42.532Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A long brick vault running under the approach to a river bridge, seen at standing eye height from behind two parked 1930s cars, whose rounded black rear ends and spare wheels fill the bottom corners of the frame, their plates blank. A man's hatted head and one shoulder stand in silhouette at the lower left, and his cigarette smoke curls up through the beams. Twenty metres ahead the headlamps strike the five musicians from the front and throw their shadows enormous across the curved wall behind them. The wall was painted long ago in sea-green and mustard, now peeling in big continents, and the colour glows wherever the hard light lands. The shadows are razor-edged and three storeys tall: the neck of an upright bass bends over the crown of the vault, a trumpet the length of a bus reaches across the bricks, and a drum kit's cymbal hangs overhead like a dark moon. The people casting them look small and very sharply dressed in the pool of light: a very tall thin bass player in charcoal chalk-stripe, a stout older trumpeter in a tan three-piece, a young clarinettist in a narrow navy suit, a grey-haired woman at a small drum kit in a burgundy waistcoat, and a broad woman in her forties with a silver streak in her black hair standing at a period microphone in deep plum, lips together, gathering breath. Off-centre at the far end, the vault opens through a tall arch onto the river, where a second arch beyond it frames a slot of night water full of gold and red light. Everything between the headlamp pool and that slot falls away into true brick-black. The image fills the whole frame, corner to corner.\n\nThanks.",
+ "source_id": "eecef1b2-1d2e-40f9-95a2-eb80d7039bf1"
+}

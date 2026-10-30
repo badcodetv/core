@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p08/02-a.jpg",
+ "made": "2026-10-30T15:23:41.047Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Inside a timber dock warehouse at night, 28mm, straight-on at chest height and close: three clean-shaven men of about 60 to 75 in three-piece suits and fedoras tipped back stand shoulder to shoulder, faces large and bare, mouths open wide mid-shout, drum-fed submachine guns held out at arm's length and pointing up at the rafters. Behind them a fourth man with his back to us has a fireman's axe sunk into a barrel in a long stack, whiskey pouring from the split staves. Ankle-deep spilled whiskey covers the floor like a mirror. A string of coral-pink bulbs lights their mouths and doubles in the flood; cobalt moonlight slants through the loading doors onto the rain-wet dock. Thanks.",
+ "source_id": "3d333d7b-774a-4b42-89e9-4420ce56b10c"
+}

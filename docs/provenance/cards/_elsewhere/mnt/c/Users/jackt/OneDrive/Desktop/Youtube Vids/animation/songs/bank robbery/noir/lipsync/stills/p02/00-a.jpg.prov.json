@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p02/00-a.jpg",
+ "made": "2026-10-30T15:09:37.128Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A country road at night in the 1920s, a 16:9 picture filling the frame edge to edge. A roadside beer hijack: a flat-bed truck stopped hard behind a fake police roadblock, its load spilled, wooden barrels split open across the road. Knee-high and on a 40mm lens, we are level with a clean-shaven man of about sixty, gaunt and hollow-cheeked, in a dark uniform tunic and peaked cap, crouched beside a burst barrel, head and shoulders big in the left of the frame, turned three-quarter toward the truck, mouth open mid-word. The truck's amber headlamps light his lips and jaw. Violet bulbs on a shuttered filling station hang behind him. A sheet of spilled beer covers the road, doubling amber and violet in its foam-flecked surface. Thanks.",
+ "source_id": "32b876a8-3b27-4644-9b68-32596282a293"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/fit/f2-a-fit.mp4",
+ "made": "2026-10-30T16:54:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "place_r5.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/f2-a.mp4",
+ "why": "retime x0.692 to fit the song phrase, frame sampling, no interpolation",
+ "settings": {
+  "speed": "0.692"
+ }
+}

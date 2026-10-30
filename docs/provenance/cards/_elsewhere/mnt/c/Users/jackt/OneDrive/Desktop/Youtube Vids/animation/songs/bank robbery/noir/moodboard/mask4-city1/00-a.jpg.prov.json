@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/mask4-city1/00-a.jpg",
+ "made": "2026-10-30T10:26:54.539Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Dusk on a wide river in the 1920s, the camera almost touching the water, riding in the wake of a small varnished mahogany speedboat as it pulls away from a towering paddle steamer that has been turned into a floating casino. The sky has gone rose and plum, with one long bar of apricot at the horizon. The steamer fills the back of the frame at a steep angle, cut off by the top and the right edge, its tiers painted cream and tomato red, with strings of amber bulbs along every deck that drop down into the water as long broken bars of gold, stretched toward the camera and dimmer than the bulbs above. Along the rail of the middle deck, a crowd of gamblers in furs and evening clothes lean over and stare, and several of the men have been relieved of their jackets and trousers and stand in sock suspenders and shirt-tails with their hands raised, utterly dignified. Two masked figures on the lower deck are still lowering a full-sized roulette table over the side on a rope, tilting it, chips sliding off it and falling toward the water in a bright scatter of pink and green. In the near foreground, large and off to the left, sits the stern of the speedboat with a robber lounging back against an open sack of banknotes, one elbow on the transom, his legs crossed, holding a fat cigar, in a cream linen suit and a knitted teal balaclava. Sewn on its forehead, bold enough to read clearly at this size, is a thin pale ring with one small red triangle inside it, off centre toward 2 o'clock, with rounded corners. The last of the sky lights him softly from behind, and a small brass lamp on the boat warms the side of his chest and the sack. The wake peels up in a glassy curl right at the lens, sharp in the foreground, spray hanging in the air. Fine film grain, painted saturated colour. The picture fills the whole frame, edge to edge.\n\nThanks.",
+ "source_id": "197f2dc3-92cc-4743-89a3-810f8424d937"
+}

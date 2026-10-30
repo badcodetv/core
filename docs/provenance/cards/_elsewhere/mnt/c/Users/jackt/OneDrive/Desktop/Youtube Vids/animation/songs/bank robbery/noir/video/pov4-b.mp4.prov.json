@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov4-b.mp4",
+ "made": "2026-10-30T11:39:15.966Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Looking backward over the rear seat of the fleeing open car, the camera bouncing with the cobbles, the alley shrinks away behind us. The driver in the tweed cap keeps glaring back, her glove clamped on the leather. The black car behind accelerates through the spilled lemons, scattering them, its nose dipping and rising on its suspension, the torn shirt flapping on its radiator. The woman in the apron shakes her fists. Laundry swings in our wake. The big crimson sheet overhead sags, then drops, slowly at first, and spreads over the lens until red cloth covers everything. Single shot, faces stay the same, no words appear.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov4-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov4-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "70d52778-6fb9-40ca-ba0c-7324ecdd0d26"
+}

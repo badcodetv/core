@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/bridge4-a.mp4",
+ "made": "2026-10-30T12:42:20.632Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The large car headlamp on the left slowly grows brighter as its filament warms, over the full eight seconds. Its glow spreads across the singer's suit and, by the end, blooms across the whole frame. The singer stays still, eyes closed, lips unmoving, not singing, his hand steady on the microphone. The players behind him and the city lights hold. One continuous shot, no cuts.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge4-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge4-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "2ed4f1b4-7895-476a-8639-7619ab4012b9"
+}

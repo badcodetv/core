@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/mask-23/00-a.jpg",
+ "made": "2026-10-30T10:25:33.182Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A grand hotel ballroom in the 1920s, seen from directly above, the camera hanging among the crystal drops of a huge electric chandelier and pointing straight down the long fall to the floor. Very close to the lens, cropped by the left edge of the frame, a robber in a white dinner jacket stands at the top of a tall painter's ladder, leaning back with his face tipped up toward us, unhooking strings of crystal into a pillowcase. He wears a knitted saffron-yellow balaclava, and on its forehead, sewn on and sharp in the chandelier's glare, is a thin pale ring with one small red triangle inside it, off centre toward 2 o'clock, with rounded corners. Far below him the ladder narrows to a point on a polished parquet floor inlaid with a great star. Sixty guests in evening dress stand around the edge of the star in a neat wide ring with their hands raised: gowns of turquoise, tangerine, violet and hot pink seen from above like spilled sweets, the men's black shoulders between them. Three more small figures in saffron balaclavas stroll across the empty middle of the floor, one holding out a silver champagne bucket to a dowager who is dropping her necklace into it, her head turned away in disgust. The only light is the chandelier itself, burning warm and brightest near the lens and falling off toward the corners of the room, where the crimson walls go nearly black and the long shadows of the guests point outward from the centre like the spokes of a wheel. The chandelier drops close to the camera are large, soft and out of focus, with hard flares of light in them. Film grain, deep colour. The picture fills the frame edge to edge.\n\nThanks.",
+ "source_id": "a3e0fd4e-47cd-4713-adc1-f54b491b2807"
+}

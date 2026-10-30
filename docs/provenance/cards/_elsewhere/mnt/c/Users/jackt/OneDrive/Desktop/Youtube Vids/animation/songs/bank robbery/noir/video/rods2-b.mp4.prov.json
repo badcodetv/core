@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods2-b.mp4",
+ "made": "2026-10-30T11:42:02.492Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "High on the rusted tower at night, camera locked off.\n[0-6s] Far below, the yellow and crimson cars race away down the lit strip side by side toward the city, shrinking, their exhaust smoke hanging over the road. The crowd stays by the parked cars, heads turning to follow.\n[6-8s] Without warning the camera whips left and down in one violent move until the upright rusted girder fills the frame, smeared with motion blur at the peak of the pan.\nNo cut.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods2-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods2-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "ec7d863d-d1b3-460c-8047-6a6d5a03104b"
+}

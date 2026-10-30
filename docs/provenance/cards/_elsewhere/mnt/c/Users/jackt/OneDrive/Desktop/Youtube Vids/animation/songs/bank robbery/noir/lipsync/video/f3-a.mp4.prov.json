@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/f3-a.mp4",
+ "made": "2026-10-30T15:54:47.601Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked camera. The orange flames on the pier keep burning and their reflection trembles on the water. He says: that drives the situation. He talks at an unhurried pace, and nobody else speaks. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/f3.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/f3.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 4
+ },
+ "source_id": "2ba98584-a720-478f-b180-aa64585bcda7"
+}

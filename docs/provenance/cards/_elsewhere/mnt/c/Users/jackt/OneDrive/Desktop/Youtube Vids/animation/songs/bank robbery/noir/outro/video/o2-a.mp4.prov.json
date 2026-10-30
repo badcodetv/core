@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o2-a.mp4",
+ "made": "2026-10-30T16:32:19.281Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, locked camera. The three men raise their guns together toward the sign and hold still. Rain falls through the headlamp beams. The sign stays exactly as in the first frame. No speech. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/o2.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r5/o2.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 4
+ },
+ "source_id": "18640794-cea7-458e-bc11-78fd9a4691b9"
+}

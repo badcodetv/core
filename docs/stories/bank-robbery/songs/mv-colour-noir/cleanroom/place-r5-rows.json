@@ -1,0 +1,218 @@
+[
+{
+"id": "l01",
+"name": "l01-a-fit.mp4",
+"start": 66.3333,
+"end": 68.9167,
+"inPoint": 2.0123,
+"outPoint": 4.5957
+},
+{
+"id": "l01-cut",
+"name": "safe1-b.mp4",
+"start": 68.9167,
+"end": 70.0,
+"inPoint": 1.5,
+"outPoint": 2.5833
+},
+{
+"id": "l02",
+"name": "l02-a-fit.mp4",
+"start": 70.0,
+"end": 74.0833,
+"inPoint": 2.384,
+"outPoint": 6.4673
+},
+{
+"id": "l02-cut",
+"name": "chase1-a.mp4",
+"start": 74.0833,
+"end": 76.375,
+"inPoint": 1.0,
+"outPoint": 3.2917
+},
+{
+"id": "l03",
+"name": "l03-a-fit.mp4",
+"start": 140.1667,
+"end": 143.0417,
+"inPoint": 1.7357,
+"outPoint": 4.6107
+},
+{
+"id": "l03-cut",
+"name": "safe2-c.mp4",
+"start": 143.0417,
+"end": 143.5417,
+"inPoint": 1.2,
+"outPoint": 1.7
+},
+{
+"id": "l04",
+"name": "l04-a-fit.mp4",
+"start": 143.5417,
+"end": 147.9167,
+"inPoint": 1.6147,
+"outPoint": 5.9897
+},
+{
+"id": "l05",
+"name": "l05-b-fit.mp4",
+"start": 154.3333,
+"end": 158.0833,
+"inPoint": 0.8233,
+"outPoint": 4.5733
+},
+{
+"id": "l06",
+"name": "l06-a-fit.mp4",
+"start": 158.0833,
+"end": 161.0833,
+"inPoint": 1.7773,
+"outPoint": 4.7773
+},
+{
+"id": "l06-cut",
+"name": "chase3-a.mp4",
+"start": 161.0833,
+"end": 162.3333,
+"inPoint": 1.5,
+"outPoint": 2.75
+},
+{
+"id": "c1",
+"name": "c1-a-fit.mp4",
+"start": 176.875,
+"end": 179.875,
+"inPoint": 1.472,
+"outPoint": 4.472
+},
+{
+"id": "c2",
+"name": "c2-a-fit.mp4",
+"start": 179.875,
+"end": 183.1667,
+"inPoint": 0.61,
+"outPoint": 3.9017
+},
+{
+"id": "c3",
+"name": "c3-a-fit.mp4",
+"start": 183.1667,
+"end": 185.9167,
+"inPoint": 0.6577,
+"outPoint": 3.4077
+},
+{
+"id": "c4",
+"name": "c4-a-fit.mp4",
+"start": 185.9167,
+"end": 187.9583,
+"inPoint": 1.8147,
+"outPoint": 3.8563
+},
+{
+"id": "c5",
+"name": "c5-a-fit.mp4",
+"start": 187.9583,
+"end": 191.2083,
+"inPoint": 1.4753,
+"outPoint": 4.7253
+},
+{
+"id": "e1",
+"name": "e1-a-fit.mp4",
+"start": 199.2083,
+"end": 202.2083,
+"inPoint": 0.4723,
+"outPoint": 3.4723
+},
+{
+"id": "e2",
+"name": "e2-a-fit.mp4",
+"start": 202.2083,
+"end": 205.9167,
+"inPoint": 0.9693,
+"outPoint": 4.6777
+},
+{
+"id": "e3",
+"name": "e3-a-fit.mp4",
+"start": 205.9167,
+"end": 209.3333,
+"inPoint": 0.8847,
+"outPoint": 4.3013
+},
+{
+"id": "e4",
+"name": "e4-a-fit.mp4",
+"start": 209.3333,
+"end": 213.1667,
+"inPoint": 1.2933,
+"outPoint": 5.1267
+},
+{
+"id": "f1",
+"name": "f1-a-fit.mp4",
+"start": 220.2917,
+"end": 222.2083,
+"inPoint": 0.8537,
+"outPoint": 2.7703
+},
+{
+"id": "f2",
+"name": "f2-a-fit.mp4",
+"start": 222.2083,
+"end": 225.4167,
+"inPoint": 0.6883,
+"outPoint": 3.8967
+},
+{
+"id": "f3",
+"name": "f3-b-fit.mp4",
+"start": 225.4167,
+"end": 227.625,
+"inPoint": 0.9647,
+"outPoint": 3.173
+},
+{
+"id": "f4",
+"name": "f4-a-fit.mp4",
+"start": 227.625,
+"end": 230.0,
+"inPoint": 0.584,
+"outPoint": 2.959
+},
+{
+"id": "f5",
+"name": "f5-a-fit.mp4",
+"start": 230.0,
+"end": 231.75,
+"inPoint": 0.975,
+"outPoint": 2.725
+},
+{
+"id": "f6",
+"name": "f6-a-fit.mp4",
+"start": 231.75,
+"end": 234.9583,
+"inPoint": 1.394,
+"outPoint": 4.6023
+},
+{
+"id": "f7",
+"name": "f7-a-fit.mp4",
+"start": 234.9583,
+"end": 238.125,
+"inPoint": 0.8183,
+"outPoint": 3.985
+},
+{
+"id": "f8",
+"name": "f8-a-fit.mp4",
+"start": 238.125,
+"end": 242.0,
+"inPoint": 0.698,
+"outPoint": 4.573
+}
+]

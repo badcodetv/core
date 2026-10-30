@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/safe-23/01-b.jpg",
+ "made": "2026-10-30T10:21:07.816Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Seen from the catwalk of a rooftop water tower, looking steeply down over a corroded iron rail that crosses the lower right corner close to the lens and out of focus, a 1920s city an hour after sundown, with the last dull violet still in the sky off the top edge of the frame and only a sliver of it visible. Far below, a black canal cuts diagonally through crowded blocks of uneven height, and a narrow iron girder bridge crosses it. On that bridge a car no bigger than a grain of rice, its yellow paint only just readable under a passing lamp, is dragging a single thin bright thread of orange sparks that starts two streets back, follows the curve of the road around a corner and over the bridge, and fades to dull red as it cools. The canal holds a broken double of the thread: below the bridge the sparks and the lamps are shattered into short shaking bars on the water, dimmer than their sources. Behind the thread come three pairs of small white headlamps, closing, spaced unevenly. The surrounding rooftops are mostly dark, tar and water tanks and chimney stacks, with a few long skylights glowing amber, one rooftop painted in faded jade, and a row of bulb signs seen from behind so they show only as scaffolding and rows of dots, no letters. Thin coal smoke lies across one block and catches the light of a street below it. Nothing else in the city has noticed. A long-lens view with flattened layers of buildings, deep plum shadows, saturated film colour, a fine grain, filling the entire 16:9 frame without any margin.\n\nThanks.",
+ "source_id": "f0a3b70e-0472-4ce5-bee4-2e8353811237"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/city-23/00-b.jpg",
+ "made": "2026-10-30T10:28:23.019Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Pittsburgh at the end of a winter dusk, 1927, seen from the top landing of an inclined railway cut into a steep snow-covered hillside, some four hundred feet above the river. At the bottom left, close to the lens and cropped by the frame, is the sloping nose of a funicular car painted crimson, with brass handrails and two lit windows, its cable and rails plunging out of frame beneath it. Below, the Monongahela curves away from the lower right into the distance, broad and the colour of slate. On the far bank a steel mill runs for a mile along the water: a row of black sheds and tall stacks, and at two points converters throw white and tangerine flame straight up, lighting the underside of a long flat bank of smoke in rose and ochre from beneath. A single long copper streak lies on the river below each flame, and nowhere else. Three iron truss bridges cross at uneven distances, small and dark. The snow on the rooftops of the near neighbourhood falls in lilac and pale blue, with a scatter of gold kitchen windows between dark terraces. A small knot of downtown towers sits at the far right edge, half lost in haze. Above the smoke the last of the sky is ultramarine going to violet. A 50mm lens, everything sharp to the horizon, soft film grain and rich saturated colour, filling the 16:9 frame edge to edge. No lettering can be read anywhere.\n\nThanks.",
+ "source_id": "e416aa58-0beb-441d-b3e8-e6aa94b753cf"
+}

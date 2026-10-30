@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-bridge23/00-a.jpg",
+ "made": "2026-10-30T11:23:41.254Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The lens sits a hand's width above the river at the very foot of an old stone slipway, where small ripples lap over the first wet step and one blurred ripple crosses the bottom of the frame. The wet cobbled slipway climbs away from us beneath the low, rust-stained iron belly of a bridge, its riveted plates painted a faded oxblood that flakes to pale green. At the top of the slope two 1930s cars are parked side by side, aimed straight down at us, their big bowl headlamps blazing warm white behind the band and flaring into the lens. So the five musicians are backlit, with edges of hot light around a hat brim, a suit shoulder and the curve of an upright bass held by a very tall thin man, then the bell of a stout older man's trumpet, a young man's clarinet, and the rim of a cymbal behind which a grey-haired woman sits at a small drum kit. Nearest the water, closer to us than any of them, the singer stands at a chrome spring-hung period microphone: a broad man in his forties with a thick neck and a heavy jaw shadowed with stubble, bareheaded, his black hair combed straight back and going silver at one temple, his nose once broken and set crooked under heavy eyebrows. He wears a deep plum wool double-breasted suit jacket with wide lapels, a dark tie and big square shoulders, and he has his chin lifted and his lips together, drawing a breath through that crooked nose while the headlamp light rims his ear and the silver in his hair. The dark reflections of all five stretch down the stones toward the camera, sharp in the standing puddles and smeared on the damp cobbles between, and the two headlamps run down the slope as long gold streaks that end at our feet. Beyond the stone edge of the slipway, on the side away from the drum kit, the open river carries long broken bars of red and green light from a city out of sight, and the water between them is black. Grain sits in the deep shadow, and the image fills the frame edge to edge.\n\nThanks.",
+ "source_id": "6e6148cc-c000-4f97-bc07-5e329e28624c"
+}

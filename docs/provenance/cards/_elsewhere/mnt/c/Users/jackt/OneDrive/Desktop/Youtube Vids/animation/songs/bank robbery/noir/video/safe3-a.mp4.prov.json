@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe3-a.mp4",
+ "made": "2026-10-30T12:09:45.689Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "High on the rusted catwalk, watching from far away. Down below, the small car crosses the iron bridge from right to left, pulling a thin line of orange sparks behind it, and the headlights on the wet road behind it chase after it at a true, unhurried-looking distance speed, all of them staying on the road. Smoke rises slowly from the roofs and the city lights hold steady. The camera moves right along the catwalk in one continuous drift, the roofs shifting gently with parallax, and a dark steel upright of the railing passes close to the lens and covers the whole frame in black.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-safe3-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-safe3-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "7796eb59-0762-43b8-9b95-7e7fec69cf6f"
+}

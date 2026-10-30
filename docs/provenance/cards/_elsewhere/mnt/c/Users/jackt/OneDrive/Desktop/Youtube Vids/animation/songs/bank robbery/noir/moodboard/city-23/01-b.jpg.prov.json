@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/city-23/01-b.jpg",
+ "made": "2026-10-30T10:28:23.049Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Coney Island at the last moment of dusk, summer 1925, seen from ankle height on the wet sand at dead low tide. The ebb has left a wide, still sheet of water on the beach, so thin that the ribbed sand shows through it near the lens. Far across it, spread along the whole width of the frame, is the amusement park: hundreds of towers, minarets and domes painted coral, mint and butter yellow, every edge outlined in strings of warm white light bulbs, with the tallest tower well left of centre and a long dark gap to its right where the unlit timber lattice of a roller coaster climbs against the sky. A black barnacled pier piling stands in the right foreground, cropped by the top and bottom of the frame, slick and dripping, with a thin gold edge of light down one side. The sky is a low band of salmon pink at the horizon rising into deep violet-blue, with a first few stars. In the still water the park appears upside down, sharp and complete in the far distance, a little dimmer than the real thing; closer to the lens, where the ribs of sand break the surface, the bulbs smear into vertical threads of gold that run toward the camera. Colour film at its most saturated, faint grain, a 35mm lens held nearly at the waterline. The picture fills the 16:9 frame to all four edges. Any signs on the park are tiny and illegible.\n\nThanks.",
+ "source_id": "4807fd86-8096-48f0-bb44-8b1e53c3d87b"
+}

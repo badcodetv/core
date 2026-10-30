@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe2-c.mp4",
+ "made": "2026-10-30T12:10:56.140Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single tracking shot, camera low to the cobbles and moving with the safe at street speed. First three seconds: the yellow car pulls hard away, its rear squatting under the load, the chain snapping taut and the green iron safe jerking after it, scraping on its lower edge so the sparks spray from that edge only. Next three seconds: the safe slams over the bumps, the chain goes slack then taut, and the car rolls on its springs with its wheels on the ground, while the headlights far behind it grow closer. Last two seconds: the safe hits a raised ridge of cobbles, kicks up and lurches back at the lens until dark green iron fills the frame. Only one yellow car. Shop signs and the marquee stay soft with motion blur.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-safe2-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-safe2-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "cf1c860a-173f-4945-897a-0d68e089b3b4"
+}

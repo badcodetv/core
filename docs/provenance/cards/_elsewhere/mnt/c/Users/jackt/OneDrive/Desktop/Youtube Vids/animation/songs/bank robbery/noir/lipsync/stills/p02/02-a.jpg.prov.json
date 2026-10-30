@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p02/02-a.jpg",
+ "made": "2026-10-30T15:09:37.186Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A railway level crossing at night outside a 1920s town, a 16:9 picture filling the frame edge to edge. A getaway car has just beaten the train: an open black roadster sits on the far side of the rails with a smashed wooden crossing gate lying splintered across its bonnet. A 28mm lens on a tripod at door height frames the driver, a clean-shaven man of about sixty-eight with a boxer's flattened nose and a tweed cap, large in the foreground, turned back over his shoulder three-quarter to us, mouth open mid-word. Directly behind him a long unlettered freight train thunders through in ice-white light from its own lamp, brake sparks spraying. Magenta bulbs of a distant dance hall colour his mouth and jaw. Wet steel rails carry both colours. Thanks.",
+ "source_id": "c1af7f22-4bdf-4172-b7ea-27ab4660fcb1"
+}

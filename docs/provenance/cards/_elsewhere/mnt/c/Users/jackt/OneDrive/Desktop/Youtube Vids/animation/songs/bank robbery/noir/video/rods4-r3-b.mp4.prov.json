@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods4-r3-b.mp4",
+ "made": "2026-10-30T13:28:31.949Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off camera, one continuous shot, nothing exaggerated. The two cars roll toward us along the concrete at an easy, steady pace, side by side, headlamps on, growing a little larger. Tyres stay on the ground. The bridges, walls, sky and standing water do not change. They are still mid-distance when the shot ends. No speech.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-rods4-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-rods4-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "ab86e10d-8925-45e9-9faf-42596042208e"
+}

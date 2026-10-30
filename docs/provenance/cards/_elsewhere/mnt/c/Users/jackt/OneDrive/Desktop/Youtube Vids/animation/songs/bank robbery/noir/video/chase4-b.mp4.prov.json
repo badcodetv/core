@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase4-b.mp4",
+ "made": "2026-10-30T11:33:30.882Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera stays fixed to the car's interior, moving only as the cabin jolts. The car bounces over cobbles; the man holds the seat back and sways with the turn, and the oranges drop, bounce on the velvet and roll along the seat. Through the oval window, the motorcycle follows as market stalls fall behind. Then the car swings under a stone railway arch: shadow sweeps through the cabin, and black stone slides across the oval window until it fills it. One continuous shot.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase4-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase4-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "8cd1dc05-1cdf-4950-966f-eb4ca46958bf"
+}

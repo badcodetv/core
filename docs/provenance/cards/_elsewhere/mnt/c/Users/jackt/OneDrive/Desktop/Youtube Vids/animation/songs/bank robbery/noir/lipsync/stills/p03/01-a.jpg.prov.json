@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p03/01-a.jpg",
+ "made": "2026-10-30T15:14:50.932Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Long telephoto compression, 85mm, along the deck of a low grey rum boat at night. A heavy man of about 70 with sagging jowls, clean-shaven, a battered black fedora pushed back, stands full front and chest-up, filling half the frame height, looking just past the camera. Directly behind his shoulder a warning shell from a distant cutter has just landed: a column of water stands taller than the mast, lit blood red by the gun's flash on the horizon. An emerald starboard lamp beside him lights his cheek and mouth green. The wet steel hull plate at his side mirrors red and green in hard bands. Sky and sea are black. Thanks.",
+ "source_id": "75c0461e-4931-4df3-b050-540fcc52aa43"
+}

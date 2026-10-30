@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/mask1-a.mp4",
+ "made": "2026-10-30T12:43:34.414Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous shot, camera locked. The man in the mustard suit slowly tilts his head to the left, pauses, then slowly tilts it to the right, admiring himself in the hand mirror, like someone trying on a hat. The tiara stays in place and the mask keeps its shape. The jeweller holds the mirror steady, mouth closed. Everyone else stays still.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-mask1-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-mask1-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "3425a07e-0553-405c-869d-4f2c7d39c4a3"
+}

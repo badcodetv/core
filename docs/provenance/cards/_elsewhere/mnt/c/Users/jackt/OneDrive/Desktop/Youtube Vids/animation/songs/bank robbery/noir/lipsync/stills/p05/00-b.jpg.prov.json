@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p05/00-b.jpg",
+ "made": "2026-10-30T15:17:48.132Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Medium close-up at eye level on a 50mm lens: a clean-shaven barman of about seventy, creased face, grey hair oiled flat, waistcoat and sleeve garters, three-quarter to camera, head and shoulders filling half the frame. His right hand is out of sight on the hidden button under the bar. Behind him the whole back shelf has flipped on its hinge and unlabelled bottles slide down a dark chute, smashing in bursts of liquor and glass. The tilted bevelled mirror shows the bulb-lit room and not him. A magenta lamp out of frame left lays colour across his cheek and mouth; hard gold bulbs along the brass rail streak across the mirror. Shadows fall to true black. Thanks.",
+ "source_id": "432bc519-f89d-4d5c-9e25-f1f302862391"
+}

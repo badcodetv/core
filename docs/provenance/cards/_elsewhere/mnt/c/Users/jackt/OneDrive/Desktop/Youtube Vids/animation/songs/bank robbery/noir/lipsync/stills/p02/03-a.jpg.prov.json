@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p02/03-a.jpg",
+ "made": "2026-10-30T15:09:37.213Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A narrow side street at night in a 1920s city, a 16:9 picture filling the frame edge to edge. A crashed getaway sedan burns against a lamp post, its bonnet crumpled and every window blown out. A locked 35mm lens at chest height looks up slightly at a crew of three clean-shaven men in their sixties and seventies, packed shoulder to shoulder in the foreground, weathered faces large in the frame, near-frontal, all mouths wide open in a shout, one raising a drum-fed submachine gun straight up at arm's length, clear of the faces. Yellow-white fire rims their hats from behind. A turquoise bulb canopy of a dark theatre with blank letter boards lights their faces and mouths. A plate-glass shopfront beside them doubles the fire and the turquoise bulbs. Thanks.",
+ "source_id": "7b7818bf-b65d-4b78-b623-cfa513155214"
+}

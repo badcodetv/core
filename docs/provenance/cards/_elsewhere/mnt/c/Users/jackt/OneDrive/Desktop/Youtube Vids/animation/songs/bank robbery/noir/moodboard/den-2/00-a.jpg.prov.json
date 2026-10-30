@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/den-2/00-a.jpg",
+ "made": "2026-10-30T10:06:07.150Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Looking straight down from the ceiling, the camera directly above a round poker table in a windowless back room, the whole composition a graphic pattern of circles. One green enamel lamp hangs just under the lens, its rim forming a dark curved arc across the top edge of the frame, and it drops a hard pool of light onto billiard-green baize. Around the table, seen only from above, are the crowns of six wide-brimmed fedoras in cream, oxblood, dove grey, violet, mustard and black, each with its shoulders of loud patterned tailoring pushed forward into the light, and a pair of heavy hands resting at each place: signet rings, a cigar, face-down cards, uneven towers of red, ivory and teal chips. One man, off to the lower right, has leaned back so far that his hat has dropped out of the light and only his hands remain. Cigar smoke rises straight up toward us in slow flat sheets, softening the top of the picture and glowing green where it crosses the lamp. A black-and-white checker linoleum floor is barely visible past the shoulders, and it falls away into complete darkness at the corners. The colour is all in the hats, the cloth and the chips. The picture fills the entire frame, with fine grain and deep, velvety blacks.\n\nThanks.",
+ "source_id": "e8a669cf-6a4d-4a38-9f2f-d0f823691d0a"
+}

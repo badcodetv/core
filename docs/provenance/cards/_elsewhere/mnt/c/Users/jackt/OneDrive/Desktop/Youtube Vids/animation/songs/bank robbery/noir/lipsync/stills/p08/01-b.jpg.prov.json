@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p08/01-b.jpg",
+ "made": "2026-10-30T15:23:41.035Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A low cellar print shop, 1924: a counterfeiters' flatbed press is on fire and three aging printers have only just turned to run. All three, between fifty-five and seventy-two, clean-shaven or stubbled, shirt sleeves and ink-black aprons, no hats, crowd shoulder to shoulder at a slightly high angle on a 35mm lens, their faces large in the frame and turned toward each other and front, mouths wide and clear. Behind them, the press burns in sulphur-yellow flame, and sheets of curling, unprinted-looking paper blaze on drying lines. Turquoise fire licks from the copper plates racked on the wall. Yellow light hits their faces from one side, turquoise from the other. Spilled ink spreads across the floor like a black mirror, holding both colours and every flame. Thanks.",
+ "source_id": "5a870a53-8e8e-4bad-88a6-3fc690b81785"
+}

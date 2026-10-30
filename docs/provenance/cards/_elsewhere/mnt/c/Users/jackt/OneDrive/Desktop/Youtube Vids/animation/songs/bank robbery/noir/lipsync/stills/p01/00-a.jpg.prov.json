@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p01/00-a.jpg",
+ "made": "2026-10-30T15:06:30.285Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night in a 1920s American city, a 16:9 picture filling the frame edge to edge. A 24mm lens clamped low on a speeding long black sedan looks back along its flank. Filling the upper half of the frame, a clean-shaven man of about seventy, creased and pouched, in a dark fedora and overcoat, rides the running board, one arm hooked through the window, a drum-fed submachine gun held straight up in his outer hand, clear of his face. His mouth is open mid-word, three-quarter to us. An orange-red neon tube out of frame paints his cheek and lips; cold blue bulbs rim his hat. The polished door mirrors shop lights as long streaks over wet cobbles. Shadows fall to true black. Thanks.",
+ "source_id": "a233210c-848b-4d12-8d41-b8aebd71f9a9"
+}

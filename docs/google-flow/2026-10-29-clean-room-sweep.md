@@ -52,3 +52,13 @@ The research the writers worked from, both web only and tiered inside:
   - Fix: open a fresh project before every clip.
 - `[confirmed 2026-10-29]` The first video call in a fresh project can fail with `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash`.
   It passes on an identical retry, with no credits spent.
+
+## 2026-10-30, Bank Robbery MV colourful noir (one run, 18 + 7 still projects, 10 clip projects)
+
+- `[confirmed 2026-10-30]` Nano Banana 2.1 stills: projects hung at 99–100% as early as the first prompt. Fresh project per 2 prompts kept 4 hangs from costing more than a retry.
+- `[confirmed 2026-10-30]` Omni Flash refusal text: "Unable to generate videos that might cause reputational risk or misrepresent current events." It is refunded, is not in `failure-card.ts`, and costs an 8-minute TIMEOUT per try. Hit twice on an overhead poker table with hatted men; a neutral rewording did not clear it, so the start frame is the likely trigger (inference).
+- `[confirmed 2026-10-30]` A balaclava logo lands far better as "the logo is the face" than as a forehead patch: ring around the face, solid felt triangle pressed against the ring's inner edge, "the middle of the ring is bare wool". One run, no off-centre failures seen on a contact sheet.
+- `[confirmed 2026-10-30]` Omni Flash speaks a sung line at up to about 2x the song's pace, even asked for "an unhurried pace": 7 of 23 phrases hit the 0.67x picture-retime cap. One run.
+- `[confirmed 2026-10-30]` A reputational-risk refusal does clear on some start frames: l02 and f6 passed first go, same still and same spoken words, once the motion prompt dropped banknotes and a roulette wheel. So the motion text can be the trigger, not only the frame (the wording cause is inference; two cases).
+- `[confirmed 2026-10-30]` "Biggie" in a spoken line: `POLICY_BLOCKED`. "Big G" passed on the same still. One case.
+- `[confirmed 2026-10-30]` Nano Banana 2 with a logo reference: a reference draws the clean logo so strongly that it overrides written damage. An edit from the golden still, with only that still attached, keeps the letters and takes the damage. One run. A cluttered project can also hand the reference back as the "new" candidate; check dimensions.

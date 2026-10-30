@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r3-pov13/01-b.jpg",
+ "made": "2026-10-30T12:27:43.641Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A driver's view from behind the wheel of a 1932 open tourer rolling at steady speed along a dockside street at dusk, heading straight for the mouth of a brick road tunnel. At the bottom of the picture, a slim black steering wheel with one hand at the top of its rim in an oxblood leather glove, and the other glove resting on the round black knob of a long floor gear lever, a line of mustard check cuff at each wrist. A folding upright windscreen in a plain nickel frame stands square to the road, and beyond it a long mustard-yellow bonnet with side louvres runs out to two round lamps standing on separate black mudguards. The road is dry granite setts with a pair of tram rails running dead straight down the middle, carrying the eye to the tunnel a hundred yards off: a tall arch of soot-dark brick, its inside true black except for a line of small amber lamps curving away along the roof. One small ruby tail lamp shows far inside, the only other vehicle in the picture. On one side, a row of tall warehouses in flat painted colours, oxblood, faded teal and tobacco brown, with their big loading doors shut and one lit lamp over each door. On the other side, a low stone wall with black water beyond it and one moored barge, unlit. The sky over the warehouses is a dim plum going to rust at the horizon, and that light falls from ahead onto the bonnet and the backs of the gloves. The horizon is level. The street is empty of people. Fine grain, heavy dye colour, deep shadow under the wall.\n\nThanks.",
+ "source_id": "aa905f81-5241-4006-a637-d5917ac65dd3"
+}

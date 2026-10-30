@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/mask3-a.mp4",
+ "made": "2026-10-30T12:45:10.717Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous shot, camera locked. Snow falls and the pink flare burns. At the carriage door, the sack is lowered into the waiting man's hands and he takes its weight. Everyone else holds still, masks unchanged. Near the end, steam from under the locomotive rolls left across the frame until it fills the lens with white.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-mask3-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-mask3-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "89229243-bb87-4336-b3aa-84521628ca8b"
+}

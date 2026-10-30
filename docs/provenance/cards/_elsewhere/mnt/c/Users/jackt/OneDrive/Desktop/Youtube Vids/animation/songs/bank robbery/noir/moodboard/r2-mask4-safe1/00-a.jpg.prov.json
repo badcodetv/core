@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-mask4-safe1/00-a.jpg",
+ "made": "2026-10-30T11:17:19.701Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Dusk on a wide river in the 1920s, the camera almost touching the water, riding in the wake of a small varnished mahogany speedboat as it pulls away from a towering paddle steamer turned floating casino. The sky has gone rose and plum, with one long bar of apricot at the horizon. The steamer fills the back of the frame at a steep angle, cut off by the top and right edges, its tiers painted cream and tomato red, with strings of amber bulbs along every deck that fall into the water as long broken bars of gold, stretched toward the camera and dimmer than the bulbs above. Along the middle rail a crowd in furs and evening clothes lean over and stare, and several men, relieved of jackets and trousers, stand in sock suspenders and shirt-tails with hands raised, utterly dignified. On the lower deck two masked figures, one in mustard wool with a black ring and one in dull mauve with a cream ring, still lower a full-sized roulette table over the side on a rope, tilting it, chips falling toward the water in a bright scatter of pink and green. In the near foreground, large and off to the left, a man lounges at the stern against an open sack of banknotes, elbow on the transom, legs crossed, in a cream linen suit with the collar up and tan leather gloves, a fat cigar held idle in his fingers at shoulder height. He has turned his head back over his shoulder to look straight at us. His whole head is in a hand-knitted balaclava of teal wool, slightly uneven rib, its long neck tucked into his collar, with unbroken knit running across the place where his eyes and mouth would be. A thin cream wool ring is chain-stitched around his face, as wide as the face from brow to chin, big enough to read clearly. High inside it, over his left eye and on the right of the picture, pressed against the ring's inner edge, sits one small triangle cut from a single piece of solid red felt, its corners rounded, sewn flat with small stitches round its edge. The middle of the ring is bare teal wool. The last of the sky lights him softly from behind, and a small brass lamp on the boat warms his chest, the sack and the front of the mask. The wake peels up in a glassy curl right at the lens, sharp in the foreground, spray hanging in the air. Fine film grain, painted saturated colour. The picture fills the whole frame, edge to edge.\n\nThanks.",
+ "source_id": "a650f57d-44d8-48b0-bb73-117e34e7c14f"
+}

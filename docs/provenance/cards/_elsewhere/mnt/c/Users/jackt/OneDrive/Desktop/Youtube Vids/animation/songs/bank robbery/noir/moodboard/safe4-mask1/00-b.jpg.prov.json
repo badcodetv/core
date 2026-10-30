@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/safe4-mask1/00-b.jpg",
+ "made": "2026-10-30T10:23:46.283Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Inside the back of a fleeing 1928 sedan, the camera low on the floor behind the front seats and looking back and slightly up, with the interior in near darkness: buttoned plum velvet upholstery, a brass grab handle, a tasselled blind swinging sideways on its cord. A heavily built figure in a plain black knitted balaclava kneels backward on the rear seat with both gloved hands flat on the glass of the small oval rear window, seen from behind and in partial profile, one shoulder cut by the frame edge. Their face and hands are lit only from outside, in pulses of orange that come through the window and bounce off the velvet. Through the oval, small and centred on nothing in particular, a taut chain runs back from below the sill to a cast-iron safe skidding along a waterfront road, tilted up on one corner, throwing a fan of sparks to one side as the road bends. Behind the safe, low fog off the harbour has swallowed everything except two large soft white headlamp discs of a police car and, higher up and off to one side, the faint green glow of a dock lamp. The rear glass is old and slightly rippled, with a crack across one corner, so the sparks and the headlamps bend a little as they pass through it. Sharp focus sits on the worn wool of the balaclava and the gloved knuckles; the view through the window is softer and blurred by the car's shaking. Warm orange against deep plum and black, with cold white only inside the window, coarse film grain and a full picture reaching every edge of the frame.\n\nThanks.",
+ "source_id": "48fb4539-bc24-445b-bda3-b94a70ebd663"
+}

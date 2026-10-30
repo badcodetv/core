@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-safe4-den1/00-a.jpg",
+ "made": "2026-10-30T11:19:18.973Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Inside the back of a fleeing 1928 sedan, the camera low behind the rear seat's far corner and looking toward a small oval rear window, the interior in near darkness: buttoned plum velvet upholstery, curved brass grab handles, a brown blind with a tasselled cord swinging sideways on the left. A heavily built man kneels backward on the rear seat in a dark overcoat with its collar turned up, the right side of the frame cutting one shoulder, both leather-gloved hands spread flat against the glass. He has twisted his head back over his shoulder so the front of his mask faces the camera at three-quarters. His whole head is inside a hand-knitted balaclava of silver-grey wool, slightly uneven, with a ribbed neck disappearing into the collar and continuous knit running unbroken across the place where eyes, nose and mouth would be. One thin ring of black wool, chain-stitched by hand, circles the whole face from brow to chin. High inside that ring, above the eye nearer the camera and pushed up close against the black stitching, sits one small triangular patch of solid red felt with rounded corners, the whole patch filled with flat red cloth and its hand-cut edge sewn down with tiny black running stitches. The rest of the ring's interior, including its centre, is bare grey knit. The only light comes from outside: pulses of orange pass through the window, strike the plum velvet and the door panel, and bounce up onto the grey wool and the gloved knuckles, so the mask glows warm against the dark car. Through the oval, a taut chain runs back from below the sill to a cast-iron safe skidding along a wet waterfront road, tilted up on one corner and throwing a fan of orange sparks from the corner that touches the ground. Behind it, low harbour fog has swallowed everything except the two large soft white headlamp discs of a pursuing car and, higher and off to one side, the small green glow of a dock lamp on a post. The rear glass is old and slightly rippled, with a crack across one corner, so sparks and headlamps bend a little as they pass through it. Focus sits on the worn wool of the mask and the stitched felt; the view through the window is softer and blurred by the car's shaking. Warm orange against deep plum and black, cold white only inside the window, coarse film grain, a full picture reaching every edge of the frame.\n\nThanks.",
+ "source_id": "e9b6d604-2c3c-408c-bd3c-350aee55e99c"
+}

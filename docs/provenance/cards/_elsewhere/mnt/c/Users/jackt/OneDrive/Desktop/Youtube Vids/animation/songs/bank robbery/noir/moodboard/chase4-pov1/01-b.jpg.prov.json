@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/chase4-pov1/01-b.jpg",
+ "made": "2026-10-30T10:15:10.489Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Seen from a driver's eye height, behind the wheel of a 1933 sedan tearing along a cobbled street beneath an elevated railway at night, the whole picture one full 16:9 film frame running to every edge. The bottom of the frame is the car: a thin three-spoke steering wheel with a wire-sprung centre, two hands in oxblood leather driving gloves hauling it hard left, the right wrist showing a finger's width of mustard check shirt cuff, each hand with four fingers curled over the rim and the thumb along the spoke. A painted metal dash runs beneath the windscreen with an oval cluster of cream-faced gauges, their needles shaking and their numerals too small to read. Thirty yards ahead through the flat upright glass, a flatbed truck has snapped its ropes and is shedding oak barrels: one hangs in mid-air, one has burst on the cobbles and thrown a fan of amber beer that the car's headlamps light from behind, and three more roll straight at the bonnet, the nearest big enough to fill a quarter of the windscreen. Riveted girders painted bottle green stand in a row down both sides of the road, the closest smeared into horizontal streaks by the car's movement while the barrels stay sharp. Slats of hard yellow light fall from the tracks overhead, plum and oxblood shopfronts glow under strings of bare bulb signs whose letters blur to nothing, and the gaps between pillars drop to true black. The horizon leans ten degrees with the swerve. Heavy film grain, rich saturated dye colour, deep shadow.\n\nThanks.",
+ "source_id": "8462aee8-b4b9-43ae-90ea-7f4dc39af77c"
+}

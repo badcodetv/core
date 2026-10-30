@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p03/03-b.jpg",
+ "made": "2026-10-30T15:14:51.028Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "High angle from the rigging of a schooner anchored offshore at night, 50mm, looking down on a broad man of about 58, clean-shaven with a broken nose and a tweed cap pushed back, who looks up just past the lens, his face filling a third of the frame height. Below and behind him, buyers' motorboats crowd along the hull with engines running, burlap sacks of bottles hanging mid-swing over the rail. At his elbow, a tin-topped table is stacked with bundles of banknotes. A yellow lantern just above the lens lights his mouth. Teal lamps on the boats tint the sea and the deck. His black oilskin coat and the tin table mirror yellow points and teal streaks. Thanks.",
+ "source_id": "c96b7787-9843-4fe9-9dbd-e9c1da0dcc74"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase2-r3-b.mp4",
+ "made": "2026-10-30T13:34:23.403Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked off on the rooftop, one continuous shot. Almost nothing happens. The steam from the chimneys rises and drifts slowly. Far below, the small yellow car rolls left about two of its own lengths across the junction, keeping its exact shape. All the other traffic and the people wait at the crossing where they are. The light does not change. No speech.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase2-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase2-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "469e4aed-bf28-4fa8-bc45-0433955f6f8c"
+}

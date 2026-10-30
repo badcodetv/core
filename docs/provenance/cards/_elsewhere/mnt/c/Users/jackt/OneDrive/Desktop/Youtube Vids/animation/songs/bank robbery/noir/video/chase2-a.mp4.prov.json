@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase2-a.mp4",
+ "made": "2026-10-30T11:28:44.902Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked off on the rooftop beside the water tank, no camera movement for six seconds. Far below, the yellow roadster slides sideways across the junction, tail swinging out and dust trailing, straightens with a lurch, and runs left. The black sedan brakes and turns after it, the green tram rolls steadily on, and pedestrians hurry clear. Steam drifts; the city lights hold steady. In the last two seconds, the camera whips left and down past the tank's iron leg, smearing to blur at the peak. One continuous shot.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase2-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase2-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "dc409167-893b-434f-a8fc-15a5079a739f"
+}

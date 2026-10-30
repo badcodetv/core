@@ -1,0 +1,101 @@
+[
+ {
+  "at": "2026-10-30T10:21:08+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/UwVKv3WU7misnC4bs3VRUt",
+  "what": "Clean-room stills, first 34 of 64",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/make_picks.py <out> && python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/picks.json <out>/colour-noir-stills.html"
+ },
+ {
+  "at": "2026-10-30T10:33:47+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/UwVKv3WU7misnC4bs3VRUt",
+  "what": "Clean-room stills, all 64 (32 shots x 2 takes)",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/make_picks.py <out> && python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/picks.json <out>/colour-noir-stills.html"
+ },
+ {
+  "at": "2026-10-30T11:08:42+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "what": "Jack's picks and notes",
+  "decided": [
+   "22 shots picked. Male singer throughout (den1, bridge2). Balaclavas: 'like the actaul badcode balaclavas with the logo over the eye', keep different colours, fit the time (mask1, mask3, mask4)."
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 27
+ },
+ {
+  "at": "2026-10-30T11:25:27+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/UwVKv3WU7misnC4bs3VRUt",
+  "what": "Round 2 on Jack's notes: 22 stills, real balaclavas in period wool, male singer"
+ },
+ {
+  "at": "2026-10-30T12:12:34+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/FTYvhB4Dn8RrDwjm68vHYS",
+  "what": "32 takes of 16 picked shots, Omni Flash; den3 refused",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/make_clips.py <out> && python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/picks-clips.json <out>/colour-noir-clips.html"
+ },
+ {
+  "at": "2026-10-30T13:00:45+00:00",
+  "stage": "clips",
+  "round": 2,
+  "url": "https://claude.ai/artifact/FTYvhB4Dn8RrDwjm68vHYS",
+  "what": "Clips of 9 approved stills plus chase2 redone; mask4 refused",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/make_clips.py <out> && python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/picks-clips.json <out>/colour-noir-clips.html"
+ },
+ {
+  "at": "2026-10-30T13:00:45+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/UwVKv3WU7misnC4bs3VRUt",
+  "what": "New start frames from Jack's clip notes: pov1, pov3, rods1, rods4, safe3, safe1"
+ },
+ {
+  "at": "2026-10-30T13:00:45+00:00",
+  "stage": "clips",
+  "round": 1,
+  "what": "Jack's notes on clips and round 2 stills",
+  "decided": [
+   "9 clips picked, 10 stills picked, den2 removed, 7 notes: see picks.md"
+  ],
+  "feedback": "feedback/clips-r1",
+  "feedback_docs": 16
+ },
+ {
+  "at": "2026-10-30T13:35:17+00:00",
+  "stage": "clips",
+  "round": 3,
+  "url": "https://claude.ai/artifact/FTYvhB4Dn8RrDwjm68vHYS",
+  "what": "Clips of round 3 stills and chase2 third try",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/make_clips.py <out> && python3 scripts/scene/build-picks.py docs/stories/bank-robbery/songs/mv-colour-noir/cleanroom/picks-clips.json <out>/colour-noir-clips.html"
+ },
+ {
+  "at": "2026-10-30T13:35:17+00:00",
+  "stage": "moodboard",
+  "round": 4,
+  "url": "https://claude.ai/artifact/UwVKv3WU7misnC4bs3VRUt",
+  "what": "Replacement stills: den3, mask4"
+ },
+ {
+  "at": "2026-10-30T14:16:51+00:00",
+  "stage": "premiere",
+  "what": "Colour Noir 1: 24 approved clips on V1 to lyrics, song on A1, lip-sync markers"
+ },
+ {
+  "at": "2026-10-30T16:54:54+00:00",
+  "stage": "clips",
+  "round": 5,
+  "what": "Lip-sync action shots and the shot-up badcode sign outro: 30 shots, clean room; no page, picked by Claude as Jack asked"
+ },
+ {
+  "at": "2026-10-30T16:54:54+00:00",
+  "stage": "premiere",
+  "what": "Colour Noir 1: 23 lip-sync shots and 4 cutaways on V2, 7 outro shots on V1 at 250 s"
+ }
+]

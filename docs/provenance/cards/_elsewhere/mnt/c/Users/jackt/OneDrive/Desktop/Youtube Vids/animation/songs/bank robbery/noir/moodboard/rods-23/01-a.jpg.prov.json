@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/rods-23/01-a.jpg",
+ "made": "2026-10-30T10:31:59.012Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The camera is bolted to the tail of a speeding roadster, looking straight backward at bumper height along a downtown avenue at night in 1938, and filling the frame is the car chasing it, barely a metre and a half behind. The pursuing hot rod is bottle green with a cream-painted, cut-down radiator shell and no fenders; its two round headlamps are mismatched, one dead and one blazing white, and short open exhaust pipes along its flank throw a hand-length of orange-blue flame. Its nose is dipped hard under braking, its dropped front axle scraping a steel streetcar rail set in the road, and a fan of white-yellow sparks sprays backward from that one point of contact, lighting the cobbles and the car's underside from below. Behind the windscreen frame with its glass gone, the driver, a lean man in a tweed cap and oil-streaked shirt, leans forward with one hand clamped on the wheel and the other hand hauling on an outside gear lever. The street behind him is dragged into streaks by the speed, the sharpness falling away fast past the green car: a theatre front of bare amber bulbs in a sunburst with no lettering, a shop awning in crimson and gold, a tall tube of uranium-green neon bent into a plain arrow, a tilted horizon. The road is damp in patches: each sign lays a long smeared stripe of its colour down the asphalt toward the camera, sharp only in one puddle, while the crown of the road stays dry and dark. Near the bottom edge of the frame, the blurred dark rim of the tail of the camera car and one shaking exhaust pipe intrude. Rich saturated film colour, deep blacks between the lights. The picture runs to all four edges of the 16:9 frame.\n\nThanks.",
+ "source_id": "51a9aa53-2a55-49db-a1e9-4d6bf8f50b89"
+}

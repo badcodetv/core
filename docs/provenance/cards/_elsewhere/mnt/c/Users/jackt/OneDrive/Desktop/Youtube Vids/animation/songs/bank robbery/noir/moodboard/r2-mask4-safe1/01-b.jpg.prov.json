@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-mask4-safe1/01-b.jpg",
+ "made": "2026-10-30T11:17:19.750Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The instant a small safe leaves a wall, seen from across a narrow back alley at night in 1928, the camera at chest height against the opposite wall with a rusted iron drainpipe cut off by the left edge of the frame. An egg-yolk yellow sedan with black mudguards stands at a hard angle on the right, its rear wheels spinning on wet-dark cobbles and throwing thick grey tyre smoke, lit deep red by its two small tail lamps. From its rear axle a heavy chain runs dead straight, rigid as a bar, across the alley and into a ragged hole in an oxblood brick wall with a flaking bottle-green painted band. The safe, a squat cast-iron box in chipped forest-green enamel with a brass dial, hangs tilted in the air a foot outside the hole with the chain wrapped around it, while bricks, mortar and pieces of green wall fall around it through a cloud of pale dust. One bare amber bulb in a tin shade above a wooden back door, high on the left, is the only other light, so the dust glows amber on one side and red on the other, and the far end of the alley drops into true black. A man leans far out of the sedan's rear window toward the camera, big enough in the frame to read clearly, dark overcoat collar turned up, both leather-gloved hands gripping the door, his head turned back over his shoulder to watch the hole so that the front of his mask faces us at three-quarters. His whole head is inside a hand-knitted balaclava of marine-blue wool, slightly uneven, with a ribbed neck tucked into the collar and continuous knit running unbroken across the place where eyes, nose and mouth would be. One thin ring of cream wool, chain-stitched by hand, circles the whole face from brow to chin. High inside that ring, above the eye nearer the camera and pushed up close against the cream stitching, sits one small triangular patch of solid red felt with rounded corners, the whole patch filled with flat red cloth and its hand-cut edge sewn down with tiny black running stitches. The rest of the ring's interior, including its centre, is bare blue knit. Falling bricks are slightly blurred, while the chain, safe and mask are sharp. Rich saturated colour film with visible grain and hard shadows on the brick, the picture running edge to edge across the whole 16:9 frame.\n\nThanks.",
+ "source_id": "d8d2136a-c52d-44b4-bdf2-65030a8c9f1f"
+}

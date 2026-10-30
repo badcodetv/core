@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe3-r3-a.mp4",
+ "made": "2026-10-30T13:34:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "flow_generate_video",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-safe3-a.jpg",
+ "why": "take a saved before the harvest timed out; take b lost",
+ "prompt": "High locked-off view from the fire escape, one continuous shot. Slowly, over the whole eight seconds, the yellow sedan drives down the cobbled road toward the bottom of the frame, towing the safe on its chain, sparks trailing from the safe along the road behind it. The black cars stay parked at the kerb. The rust rail stays still. No speech.\n\nThanks."
+}

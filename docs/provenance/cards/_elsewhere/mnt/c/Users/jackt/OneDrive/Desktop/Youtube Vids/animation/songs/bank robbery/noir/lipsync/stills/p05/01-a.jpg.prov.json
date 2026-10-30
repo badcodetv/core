@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p05/01-a.jpg",
+ "made": "2026-10-30T15:17:48.152Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A low angle from bench height on a 35mm lens, near-frontal: a bald moonshiner of about sixty-five with white stubble and a burn-scarred, weathered face, collarless shirt and leather apron, chest-up and filling the left half of a brick cellar. Behind his shoulder the copper still has split along its seam, a tall orange fireball standing in the dark, curved sheets of copper and rivets flung through the air. A sheet of blue spirit flame runs along the wet bench at his elbow and throws cold light up onto his mouth and jaw. Furnace orange rims his head from behind. An unbroken polished copper pot beside him mirrors both fires as warped streaks. Everything else falls to true black. Thanks.",
+ "source_id": "6898f260-ea48-45d2-a2a7-9366c6a2efb6"
+}

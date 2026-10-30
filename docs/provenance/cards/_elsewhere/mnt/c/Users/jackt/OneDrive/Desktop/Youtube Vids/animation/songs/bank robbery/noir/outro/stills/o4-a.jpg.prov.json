@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/stills/o4-a.jpg",
+ "made": "2026-10-30T15:29:43.971Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Night, extreme close view, locked and front-on, of one straight cream-enamelled sheet-metal stem of the sign, a trough packed with a dense double row of glowing amber bulbs, running top to bottom through the frame against glossy black enamel. It is only a part of the reference letters and follows them exactly; no complete word shows and nothing is written anywhere. A blurred thread of argon-blue tube glows at the frame's edge. Thin haze curls past, lit amber. Beads of rain sit on the bulbs and on the gloss, each holding a tiny point of light. Full frame edge to edge, deep black around the glow. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/sign-gold.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "8535dee1-007f-4b62-83be-30b2b7865362"
+}

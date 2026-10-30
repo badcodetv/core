@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/bridge/00-b.jpg",
+ "made": "2026-10-30T10:07:46.300Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Seen from the roof of a coal tug moored out in the middle of a wide black river at night, about four metres above the water, with the tug's soot-black funnel and a loop of wet hawser cropped hard against the left edge of the frame. Off to the right a colossal riveted steel arch bridge sweeps upward and leaves through the top of the picture, standing on one stone pier as big as a church. In the cold shadow beneath that arch, on the far bank, three long 1930s sedans, one oxblood, one cream, one bottle green, are parked nose-in on a cobbled quay, and their round tungsten headlamps meet in a single small warm pool of light. Inside that pool, tiny against all that iron, stand five people in sharp dark suits and hats: a very tall thin man with an upright bass, a stout older man with a trumpet, a young man with a clarinet, a grey-haired woman behind a small drum kit, and a broad woman at a period microphone. Thin river mist makes the headlamp beams visible as they cross the cobbles and die within a few metres. Behind the bridge a prohibition-era city climbs in uneven steps, some blocks entirely dark, others strung with bulb signs and coated neon tubes in ruby red, uranium green, pale gold and midnight blue, every sign too far away to read. The river takes those lights and breaks them into long trembling horizontal bars that run toward the camera, dimmer than their sources, with true black water between them. The picture runs to all four edges of the 16:9 frame.\n\nThanks.",
+ "source_id": "d3f1cbcd-4e60-4842-a016-e0e1a0ff90c8"
+}

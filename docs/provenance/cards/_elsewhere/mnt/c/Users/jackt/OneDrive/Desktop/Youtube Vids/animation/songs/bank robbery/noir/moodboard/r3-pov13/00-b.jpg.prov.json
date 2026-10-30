@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r3-pov13/00-b.jpg",
+ "made": "2026-10-30T12:27:43.605Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A man's own view from the driving seat of a closed 1931 sedan, his eyes level with the top of the steering wheel, travelling down an empty straight country road at night. Along the bottom of the picture are a large thin black steering wheel and his two hands resting on its rim at ten and two, relaxed, in oxblood leather gloves, a narrow strip of mustard check cuff showing at each wrist. Behind the wheel a flat painted steel dash, the dull green of old enamel, holds two round cream-faced gauges marked only with ticks. Above it, a tall upright windscreen divided by a slim metal frame, with a dark cloth roof lining across the top of the picture and thick dark pillars at both sides. Through the glass, a long bottle-green bonnet with a centre hinge and a small upright radiator cap, and past it the domed tops of two separate mudguards with a round lamp standing on each. The headlamps throw a weak yellow pool down thirty yards of pale dry macadam, which fades to black beyond. A row of bare wooden telegraph poles runs along one verge. Far down the road, one small building stands on the verge, its wall painted crimson, lit by a single bare bulb over a shut door. Above a black line of low hills, the last of the dusk is a band of deep indigo with some stars. The road is otherwise empty and nothing is in the air. Dye-rich colour, soft grain, honest darkness in the cabin with only a little of the headlamp glow on the gloves.\n\nThanks.",
+ "source_id": "75fbc790-5bef-41dc-939c-5dd1a18c0a2d"
+}
