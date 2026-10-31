@@ -74,6 +74,7 @@ scannable metadata lives in the table.
 | [Ableton Automation](ableton-automation.md) | hands inside Ableton, the way `premiere-mcp` has hands inside Premiere | software · music | parked |
 | [Sound Design in Serum, by Computer Use](serum-via-computer-use.md) | an agent that turns the knobs — the camping track's reference synth, actually owned | software · music | parked |
 | [More Premiere Automation](premiere-automation-gaps.md) | the gaps the bridge's own notes admit — no on-screen text, no whole-timeline read | software · video | parked |
+| [Stupidity Optimised](stupidity-optimised.md) | South Park-style skits: Brandon, a fucking idiot, worships content creators, then an AI whose advice actually works, and it wants something *(Jack)* | video | **graduated** → [`stories/stupidity-optimised/`](../stories/stupidity-optimised/README.md) |
 | [The BadCode Universe](badcode-universe.md) | one shared universe, like Marvel — Karen, Tarquin and the President cross over toward a non-violent revolution *(Kai and Jack, 15 Oct 2026 call)* | video · comic | developing |
 
 ## Graduated & canon (the rest of the map)

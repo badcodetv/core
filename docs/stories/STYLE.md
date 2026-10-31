@@ -77,4 +77,5 @@ register, a preamble, a voice, a slider value. `scripts/style-lint.py` checks.
 
 Stories: [bank-robbery](./bank-robbery/) · [camping](./camping/) · [galileo](./galileo/) ·
 [gitpush-origin-master](./gitpush-origin-master/) · [karen](./karen/) ·
-[magic-money-tree](./magic-money-tree/) · [storyverse](./storyverse/)
+[magic-money-tree](./magic-money-tree/) · [storyverse](./storyverse/) ·
+[stupidity-optimised](./stupidity-optimised/)
