@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n11-b.jpg",
+ "made": "2026-10-31T11:28:03.681Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Long lens at shoulder height, as if from inside a torch-lit crowd of 1920s strikers at the iron gates of a mill. A wild-eyed Greek American dockworker of about 28, heavy black brows, curly hair, big square stubbled jaw, torn work shirt, faces us three-quarter, sharp in a soft sea of flat caps, head high, singing with his teeth bared. Out of focus behind him, torches smear gold, a black 1920s sedan lies on its roof, and petrol-blue smoke rolls through. His face catches a torch from just off frame, gold on the mouth, blue in the shadow side. Nobody's arm or tool crosses his face. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "6f0107ba-a11c-483e-bf4f-09ee82b97c07"
+}

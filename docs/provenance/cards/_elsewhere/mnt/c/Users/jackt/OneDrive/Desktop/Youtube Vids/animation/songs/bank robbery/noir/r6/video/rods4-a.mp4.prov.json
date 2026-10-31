@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/rods4-a.mp4",
+ "made": "2026-10-31T11:51:00.160Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera travels low alongside at matching speed, single continuous shot, holding both cars in place in frame. The concrete and bridge arches tear past in motion blur. Exactly two cars, two drivers. Both keep their exact shape, wheels spinning fast. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/rods4.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/rods4.jpg"
+ },
+ "source_id": "6e2bace3-0e6d-4236-b804-1f088fdf49d7"
+}

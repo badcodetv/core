@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b1.mp4",
+ "made": "2026-10-31T11:58:42.731Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera sways almost nothing, as if handheld by a steady operator, one shot. The soft fire on the distant barge flickers. He sings: Robbery, robbery! Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b1.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b1.jpg"
+ },
+ "source_id": "262aea6a-8007-4d06-8c10-b55ce5f66cc8"
+}

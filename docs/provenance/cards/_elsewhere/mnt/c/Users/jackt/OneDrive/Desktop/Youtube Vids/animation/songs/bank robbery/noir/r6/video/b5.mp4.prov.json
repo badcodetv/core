@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b5.mp4",
+ "made": "2026-10-31T12:03:03.169Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera slides a hand's width to the right, slow and steady, single shot. Smoke keeps rising from the bonnet behind him. He sings: Printer is burning, now now what's occurring? Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b5.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b5.jpg"
+ },
+ "source_id": "216c8949-17ed-4fce-98e8-92437be7eff0"
+}

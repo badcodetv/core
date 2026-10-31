@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/e3-b.jpg",
+ "made": "2026-10-31T11:09:16.332Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Dead-on, symmetrical, from a camera bolted to the bonnet of an open 1920s roadster at a level crossing at night, windscreen folded flat. A huge bull-necked Polish American man of about 40 fills the driver's seat, his shoulders running to both edges of the picture: wide square head, flat broken nose, one cauliflower ear, heavy stubble, flat cap, chipped teeth, mouth open. His face takes a third of the frame's height. The steering wheel sits low, below his chest. A smashed striped crossing gate lies across the bonnet at the bottom of the shot, beneath his chin line. Hard pink signal light strikes his face and mouth from the front. Behind him a black locomotive bulk, white steam and orange sparks. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "2fe02687-7d67-4a69-9065-3023f05b5a68"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n10.mp4",
+ "made": "2026-10-31T12:39:28.204Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera pushes slowly up the aisle. The pink lamp sways a little on its cord; the stacks stay still. His head barely moves. He sings: stacks and stacks of elastic cash. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n10.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n10.jpg"
+ },
+ "source_id": "7b1af5ff-9ef8-4a7a-85e4-36ae8bc2b378"
+}

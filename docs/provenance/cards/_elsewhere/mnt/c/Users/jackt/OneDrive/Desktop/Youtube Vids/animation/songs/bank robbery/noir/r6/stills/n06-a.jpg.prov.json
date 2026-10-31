@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n06-a.jpg",
+ "made": "2026-10-31T11:24:30.637Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Camera on the dirt, tilted steeply up through a very wide lens, at a crash-strewn oval track at night in the 1920s. A young Black racing mechanic of about 24, lean face, high cheekbones, clean-shaven, oil smeared on one cheek, leather cap pushed back, stands over us, three-quarter, chin up and grinning through the note, his face lit lilac-white from a floodlight tower. Behind him and small, a stripped roadster hot rod burns amber on its side beside a snapped wooden rail, and one wooden wheel lies in the dirt. Dust hangs in the floodlight beams. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "fd56a303-fed6-4daf-b7c3-eb85d0e542ed"
+}

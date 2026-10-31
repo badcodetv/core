@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n17.mp4",
+ "made": "2026-10-31T12:53:21.763Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera descends slowly toward his eye level. Snow falls through the blue light behind him; the press stays still. His head stays nearly still. He sings: own the printer and you don't fear winter. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n17.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n17.jpg"
+ },
+ "source_id": "bca8ebc0-88c3-473c-bc99-e200335e6c78"
+}

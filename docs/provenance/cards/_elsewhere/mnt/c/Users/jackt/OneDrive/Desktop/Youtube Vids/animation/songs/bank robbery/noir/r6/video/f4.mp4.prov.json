@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f4.mp4",
+ "made": "2026-10-31T12:18:56.597Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera hangs fixed in the rigging, single continuous shot, no cuts. One sack of bottles swings slowly over the side far below him. His head barely moves. Nobody else sings. He sings: working people get paid in money Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f4.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f4.jpg"
+ },
+ "source_id": "b16f9023-b4d6-4757-b17a-7bef8f208e01"
+}

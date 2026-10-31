@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f1.mp4",
+ "made": "2026-10-31T12:07:39.644Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera stays dead still at road level. Beer creeps slowly across the road toward the lens; barrel, truck and lantern hold their shape and place. He sings: crime is asset inflation. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f1.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f1.jpg"
+ },
+ "source_id": "bf35102a-9ed8-42d4-9e40-2e032f08a29a"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n17-a.jpg",
+ "made": "2026-10-31T11:31:43.511Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A high three-quarter angle, 35mm, looking down into a derelict warehouse where snow has drifted through a broken skylight. A bald Russian American counterfeiter of about 60, broad skull, flat nose, pale clean-shaven cheeks, heavy overcoat with a fur collar lying flat on the shoulders below his chin, looks up at us and sings with satisfaction. Behind him stands a huge black iron flatbed press, blank paper stacked in its bed, snow on its frame. Hard blue daylight lamp from one side, an orange brazier from the other, the two colours meeting on his mouth. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "73febcf3-1e43-4db2-ac6a-4c19ed99fd2e"
+}

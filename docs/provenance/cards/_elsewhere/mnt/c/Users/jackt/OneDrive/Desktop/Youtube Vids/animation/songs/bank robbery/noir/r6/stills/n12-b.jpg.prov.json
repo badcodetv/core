@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n12-b.jpg",
+ "made": "2026-10-31T11:28:45.677Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A slightly high angle, 50mm, in a 1920s radio studio with padded walls. A slick Jewish radio announcer of about 40, smooth clean-shaven face, oiled parted hair, arched eyebrows, dinner jacket, stands three-quarter on, singing with a broad professional smile. A big round carbon microphone in a sprung ring on a stand sits low at his chest, well below his chin, its metal plain. Behind him a tall studio window is smashed, a jagged star of broken glass and a torn blind, with icy white streetlight pouring through. A ruby bulb over the door warms the side of his face, and a soft white lamp lights his mouth. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "cda514e4-3e57-4728-832d-af88d67d718a"
+}

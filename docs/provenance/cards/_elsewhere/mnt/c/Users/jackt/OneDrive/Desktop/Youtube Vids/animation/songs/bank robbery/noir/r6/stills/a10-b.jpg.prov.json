@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a10-b.jpg",
+ "made": "2026-10-31T11:42:59.846Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A close side view from a car's running board at night, with a slightly wide lens, one police motorcycle running right alongside and large in the frame. Its rider sits upright and heavy-set in a 1920s peaked cap, round goggles, leather gauntlets and a long-skirted tunic with a thick moustache, looking dead ahead with both hands on the bars. A red lamp on the front fork flares hard, spilling red over the tank and his sleeve. The dark edge of the car door cuts along the bottom of the frame. Electric blue dusk fills the street behind, with bare lamp points. No badges or lettering. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "57c15f0f-ffa0-41d3-8803-3ba32f3c121e"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a6-a.jpg",
+ "made": "2026-10-31T11:39:40.232Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Ground-level shot on a dark street at night, a very low wide lens looking up the road. Thick tyre smoke rolls in from the left, backlit magenta by a glow somewhere behind it, filling most of the frame. One round 1920s headlamp burns through the smoke, a hard white-yellow disc with a soft halo, with just the edge of a mudguard and one tall front tyre dark beneath it. The car sits crouched, nose toward us, its other side lost to the smoke. Black wet tarmac in the foreground, nothing else on the street. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "ea469903-4571-467a-899c-db40d20eeaf7"
+}

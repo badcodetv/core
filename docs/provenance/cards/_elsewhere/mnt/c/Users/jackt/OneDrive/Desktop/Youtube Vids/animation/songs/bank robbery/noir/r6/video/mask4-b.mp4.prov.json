@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/mask4-b.mp4",
+ "made": "2026-10-31T13:29:02.710Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera does not move. The boat rocks very slightly on the water and the reflections shimmer. The man sits still. His knitted mask keeps its ring and triangle unchanged. Nothing else moves. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/mask4.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/mask4.jpg"
+ },
+ "source_id": "4ae02b6a-c2c7-4e33-a716-73869e649d9d"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n15.mp4",
+ "made": "2026-10-31T12:51:17.774Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera backs away at his walking pace, holding the same framing. He pushes the barrow forward; the gold stays still in it. His head stays steady. He sings: stack up the vaults like a wheelbarrow. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n15.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n15.jpg"
+ },
+ "source_id": "d22518cb-4b4a-4686-8c7c-b4621c7bae1b"
+}

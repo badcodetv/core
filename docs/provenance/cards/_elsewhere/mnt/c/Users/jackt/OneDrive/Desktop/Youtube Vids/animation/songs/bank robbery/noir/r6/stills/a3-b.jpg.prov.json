@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a3-b.jpg",
+ "made": "2026-10-31T11:35:59.735Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Medium close-up, shot from outside a 1920s car through its flat side window, with a normal lens and water beading on the glass. The driver sits in profile turning three-quarters to us: a man of about 30 with a narrow, sharp face, hollow cheeks, a thin bent nose, heavy low brows, flat cap, dark coat. His mouth is shut. Gloved hands grip the top of the big wheel. A slanting band of acid green light crosses his cheek and a band of violet crosses his chest, the rest of the cabin black. Behind him, through the far window, only dark. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "f0cffeb2-999e-40f9-bf11-700e4769925a"
+}

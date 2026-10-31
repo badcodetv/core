@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/c1-b.jpg",
+ "made": "2026-10-31T11:09:50.715Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A narrow side street at night, brick walls closing both edges of the frame. Lens slightly above head height at 40mm: a short fat bald white man of 45 in the near foreground tilts his broad, double-chinned clean-shaven face up to us, snub nose, mouth wide, face a third of the frame's height, one arm flung sideways gripping his hat. Further back and smaller, a very tall thin Black man of 60 stands bolt upright on the kerb, long hollow face, both fists raised. Further still, a wiry Mexican American man of 20 crouches on a 1920s sedan's bonnet, head thrown back. That sedan burns against a lamp post in orange flame, under a blank bulb-edged theatre marquee whose teal light falls on the bald man's face. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "85c33dbc-179c-4e40-80c7-231fbabd8b16"
+}

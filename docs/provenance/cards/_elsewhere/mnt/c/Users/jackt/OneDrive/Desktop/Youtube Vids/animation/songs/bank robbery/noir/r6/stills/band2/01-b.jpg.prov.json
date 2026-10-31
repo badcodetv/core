@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band2/01-b.jpg",
+ "made": "2026-10-31T11:03:00.753Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Lens right beside the strings with a 28mm, deep focus: the hands of a wiry fingerpicking guitarist of about 70, bald, huge across the lower right corner, knuckles lit amber. Above and left of them, clear of his chin, the singer stands sharp and front-on, his face a third of the frame high, mouth open, lit violet and amber. Behind him a tall smoked mirror reflects a table of stacked banknotes smouldering with small flames, the burning stacks visible only in the glass. Burgundy dark at the edges of the frame. No lettering, no black bars. Thanks.",
+ "source_id": "f7d736b0-aa52-465e-91ab-b7024710baf7"
+}

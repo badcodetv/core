@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f2.mp4",
+ "made": "2026-10-31T12:08:39.310Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera moves with the sedan at matching speed, holding him in the window. Cobalt night smears past the far window behind him; the headlights hold in the mirror. He sings: passive creation of a wealth gap. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f2.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f2.jpg"
+ },
+ "source_id": "7b251246-e8de-4c69-b656-8dbd4b093237"
+}

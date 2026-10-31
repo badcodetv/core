@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n02.mp4",
+ "made": "2026-10-31T12:30:53.427Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera holds still on the long lens. Behind him the molten stream keeps pouring; nothing else moves. His head stays almost still. He sings: work and get paid though, earning that dough. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n02.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n02.jpg"
+ },
+ "source_id": "43c19967-59e6-4146-bb6f-86f8264a732e"
+}

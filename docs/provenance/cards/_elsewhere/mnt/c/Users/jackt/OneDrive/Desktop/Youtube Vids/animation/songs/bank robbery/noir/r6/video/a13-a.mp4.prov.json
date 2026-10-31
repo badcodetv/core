@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a13-a.mp4",
+ "made": "2026-10-31T13:18:11.569Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera moves forward with the car, shuddering hard. Gloved hands fight the wheel while the bonnet vibrates, and neon rushes toward us. One car, seen from inside, two hands only. The street stays empty, with no other vehicles. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a13.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a13.jpg"
+ },
+ "source_id": "a260a3d2-fbe2-4f8c-b1ad-39d0cd366d19"
+}

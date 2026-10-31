@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a8-b.mp4",
+ "made": "2026-10-31T13:11:27.932Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera backs away at their pace, keeping them the same size. The two men run at the lens with sacks swinging, and the alarm lamp flashes red and white. Exactly two people. Doors stay still, no one else appears. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a8.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a8.jpg"
+ },
+ "source_id": "36fa8e4c-59a2-464a-bfb7-186b4a736da1"
+}

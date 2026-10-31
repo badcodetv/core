@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b4.mp4",
+ "made": "2026-10-31T12:01:56.534Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera creeps forward along the ground, one shot, no cuts. Rain keeps falling straight down and sparks keep falling high behind. The men shout together: It happened in da basement! Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b4.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b4.jpg"
+ },
+ "source_id": "dfdef2ad-5c48-44c4-b20f-dff1ef079efe"
+}

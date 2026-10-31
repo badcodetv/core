@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/l03.mp4",
+ "made": "2026-10-31T12:11:55.193Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera stays locked to the boat in a single continuous shot, no cuts. The blue searchlight beam sweeps slowly through the fog behind him. His head barely moves. Nobody else sings. He sings: it is state level manipulation Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/l03.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/l03.jpg"
+ },
+ "source_id": "48e41c76-c25a-45f3-b0f7-263f2540fe64"
+}

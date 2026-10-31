@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/e4-a.jpg",
+ "made": "2026-10-31T11:13:33.999Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Square-on and dead level with the open door of a boxcar in a wet freight yard at night, 50mm lens, the door frame set symmetrically like a stage. A very thin, elegant Black Pullman porter of about 65 sits in the doorway facing us, hatless: long narrow skull, white cropped hair, sunken cheeks, high hollow temples, long upper lip, clean-shaven, bow tie hanging undone from an open collar well below his chin. His face fills a third of the frame. Unmarked whiskey crates are stacked in the dark behind him. Through the far door, small and soft, a yard guard's lantern approaches in the steam. Magenta signal light falls full across his mouth and cheek, green signal light rims his other side, both glowing in steam and wet ballast to the frame's edges. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "d6cd5d8f-7733-4847-9786-4ff14882aabe"
+}

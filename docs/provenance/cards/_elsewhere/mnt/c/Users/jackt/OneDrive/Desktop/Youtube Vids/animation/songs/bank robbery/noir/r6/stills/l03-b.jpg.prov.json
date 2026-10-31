@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/l03-b.jpg",
+ "made": "2026-10-31T11:10:42.304Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Head-on from the foredeck of a mahogany rum-runner's speedboat, 35mm lens at his chest height, night fog tearing past. A Black seaman of about 55 stands at the spoked wheel, the wheel low in frame below his chest: broad flat face, wide nose, heavy cheeks, grey stubble, gap in his lower teeth, navy watch cap, open neck. His mouth is wide open in song, his face filling a third of the frame and squared to us. Behind his head a hard blue searchlight from an unseen patrol boat burns a cone through the fog. Amber light from the instrument lamps lifts onto his mouth and jaw. The picture fills the frame edge to edge, with bare unmarked hull and deck. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "88c2f1e3-1dc3-431e-a046-214190fda28e"
+}

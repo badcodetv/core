@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a5-a.jpg",
+ "made": "2026-10-31T11:39:02.584Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A long telephoto view from across a wide night avenue, the perspective flattened. A cream 1920s roadster with its top down sits sharp in the middle of the frame in clean side profile, whitewall tyres, one driver in a dark hat low at the wheel. Directly behind it, packed and compressed, a wall of lit storefronts glowing purple and gold, shop windows and awnings with no readable signs. A thin ribbon of wet road along the bottom catches both colours. No pedestrians, no other vehicles. The car is crisp from bumper to bumper. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "c826999b-55c2-48c7-af99-142892fee981"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a13-b.jpg",
+ "made": "2026-10-31T11:45:07.208Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "First-person view from the driver's seat of a 1920s roadster at night, a wide lens at eye height. Two leather-gloved hands grip a big thin-rimmed wooden steering wheel, wrenched over to the left, cuffs of a dark coat visible. A long louvred bonnet stretches ahead, a small round radiator cap at its far end, wet with rain. Past that, a narrow wet city street with coral and emerald neon on both sides pouring its reflections down the road toward us, the glows shapeless with no letters. Glass screen edge at the top of the frame. The road ahead is empty. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "9b24cd69-cb9f-4a9c-8c3f-453e7d5340c4"
+}

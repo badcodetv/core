@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c1.mp4",
+ "made": "2026-10-31T13:30:47.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera creeps in very slightly, single continuous shot. Flames flicker on the car behind them while each man keeps his own place and pose. The man in front sings with his mouth wide. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c1-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c1-b.jpg"
+ },
+ "source_id": "5166efc2-6545-4455-8033-85a875b8b8e6"
+}

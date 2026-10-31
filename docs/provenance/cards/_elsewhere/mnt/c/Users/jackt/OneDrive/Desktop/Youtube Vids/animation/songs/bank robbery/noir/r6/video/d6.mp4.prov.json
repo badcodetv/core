@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d6.mp4",
+ "made": "2026-10-31T11:57:35.764Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera stays locked off for one continuous take. The guitarist's fingers pluck gently, nothing else changes shape, and the singer's head stays nearly still. He sings: stacks and stacks of elastic cash. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/d6.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/d6.jpg"
+ },
+ "source_id": "b449a9c8-49ed-49cc-8d27-ec2767f9c91a"
+}

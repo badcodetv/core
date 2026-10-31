@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a7-a.jpg",
+ "made": "2026-10-31T11:40:37.499Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A very low wide angle from the marble floor of a bank lobby, looking up at one man standing over the lens, the ornate coffered ceiling arching far above him. He fires a Thompson with a drum magazine straight up with both gloved hands. An orange muzzle flash lights one side of his head: all of it in a hand-knitted cream wool balaclava with no eye holes and no mouth hole, one thin black ring stitched around the face, and high inside it, over where one eye would be, near the ring's edge and well off centre, one small solid red felt triangle with rounded corners. Collar up. Teal shadow on green-veined marble columns behind. Plaster dust hangs in the air. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "ac6c4dc4-b43e-46a4-afc5-dd7a34747eae"
+}

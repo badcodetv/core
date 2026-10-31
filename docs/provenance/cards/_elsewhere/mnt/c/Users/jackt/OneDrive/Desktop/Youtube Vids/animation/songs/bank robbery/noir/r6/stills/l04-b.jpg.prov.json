@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/l04-b.jpg",
+ "made": "2026-10-31T11:11:20.417Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Long 135mm lens from the far rail of a low grey rum boat at night, the deck compressed and the sea stacked up behind him. A pale Irish American of about 30 stands three-quarter to us, his face filling a third of the frame: freckles across a narrow nose broken once, red hair under a black fedora, a boxer's split through one eyebrow, clean-shaven, chipped front tooth, shirt open at the throat. He sings mid-word, unbothered. Behind his shoulder, out of focus and huge, a column of water from a warning shot stands lit red and pink. A green running lamp beside him throws clean green light across his cheek and mouth. Wet deck to every edge of the frame, no markings on the boat. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "f03a79cf-3b01-41b1-ada5-154d71cfec12"
+}

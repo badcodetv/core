@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b3.mp4",
+ "made": "2026-10-31T12:00:56.958Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera tilts down a touch, slowly, one continuous shot. Red and green reflections ripple on the river and the barrels burn on. The men shout together: Debasement! Debasement! Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b3.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/b3.jpg"
+ },
+ "source_id": "4840e653-ea4e-475b-a378-4ea31465e1c3"
+}

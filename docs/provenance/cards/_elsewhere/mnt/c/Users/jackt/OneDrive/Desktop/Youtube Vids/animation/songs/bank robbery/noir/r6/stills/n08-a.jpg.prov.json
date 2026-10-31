@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n08-a.jpg",
+ "made": "2026-10-31T11:26:03.167Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Lens low on wet cobbles, wide 24mm, looking up at a craggy Irish American beat cop of about 58 who bends down toward us as though to tell a secret. Long creased clean-shaven face, broken nose, big ears, grey eyebrows, dark 1920s tunic buttoned to a collar sitting below his jaw, tall domed helmet. A streetlamp at his shoulder throws sick yellow-green over his face, and the wet stones bounce it up onto his mouth and chin. At the far end of the empty street, small and off to one side, a motor paddy wagon burns scarlet on the cobbles. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "51650dca-e57b-412f-bdc9-407dfeb8d250"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n12.mp4",
+ "made": "2026-10-31T12:41:33.458Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera descends very slowly toward eye level. The torn blind stirs in the wind at the broken window. His head stays nearly still. He sings: blaming each other is a sick little cover. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n12.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n12.jpg"
+ },
+ "source_id": "2bada7f9-b371-4303-9597-854340aabf89"
+}

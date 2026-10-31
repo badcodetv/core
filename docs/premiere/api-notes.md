@@ -2087,3 +2087,9 @@ Default path `…/frames/<seq>-100s.png`: Premiere wrote `…-100s.png.png`, so 
 with `EXPORT_FAILED` although the frame was there. Also, an `outPath` under WSL `/tmp` can never work (Windows Premiere
 cannot write there). Workaround: let it fail, then read the `.png.png`. Fix belongs in the tool (strip the extension it
 appends, or check for both names).
+
+## 2026-10-31: learned building Bank Robbery `Colour Noir 2` to `4`
+
+- One `premiere_eval` placing 159 clips hung Premiere: Windows reported it not responding, its CPU time stopped moving and the panel stopped answering, within about 2 minutes. A restart was needed. The same rows then went down in batches of 40 to 55 with `premiere_save` between, each batch in under a second. Keeping the project walk out of the batch loop and the saves are the differences; which one mattered is not established.
+- A panel `globalThis` value survives between `premiere_eval` calls, so a long row list can be pasted once and placed by slices.
+- A file with a video stream laid on an audio track also lands on a video track: `song.mov` was put on V3, then its video was removed, so it covers nothing.

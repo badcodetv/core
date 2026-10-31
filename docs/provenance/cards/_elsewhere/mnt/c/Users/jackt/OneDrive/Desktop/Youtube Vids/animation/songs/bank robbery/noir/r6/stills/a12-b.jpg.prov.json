@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a12-b.jpg",
+ "made": "2026-10-31T11:44:15.675Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A tight three-quarter close-up from just above the bed of a heavy 1920s flatbed printing press in a low brick cellar, shot on a short macro-like lens. Steel rollers and black ink plates fill the foreground. A sheet of banknotes, printed with fine dark green engraving and no legible figures or words, lifts off the bed in mid-air, more stacked behind. The far end of the machine is on fire: orange flames licking at the frame, reflected long and rippling in the polished steel. Deep indigo shadow in the cellar. Nobody in the shot. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "9f99dcdf-aadb-42a8-ba82-ac094964ae89"
+}

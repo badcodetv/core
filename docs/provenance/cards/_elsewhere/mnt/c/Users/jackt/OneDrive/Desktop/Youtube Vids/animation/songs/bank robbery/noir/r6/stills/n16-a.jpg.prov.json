@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n16-a.jpg",
+ "made": "2026-10-31T11:31:08.921Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Three-quarter from among the plants on a 65mm lens, inside a glass greenhouse at night in the 1920s. An old Colombian gentleman of about 70, clean-shaven, deep lines, heavy eyelids, swept white hair, white linen planter's suit, sits still in a cane chair with his face a third of the frame height, singing softly as if to the room. Violet light comes through the panes from outside. An amber oil lamp on a small iron table at his side lights his mouth. Dark palm leaves soften the far edge of the frame, nowhere near his face. One moth circles the lamp. Quiet, empty, nothing else happening. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "f8de5a40-6926-404f-92f6-42594a3c7863"
+}

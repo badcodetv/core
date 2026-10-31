@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/e1.mp4",
+ "made": "2026-10-31T12:25:22.804Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera slides slowly sideways, keeping him the same size, single continuous shot. Banknotes drift down behind him; the truck stays whole and still. His head barely moves. Nobody else sings. He sings: stacking up the cash by the grands Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/e1.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/e1.jpg"
+ },
+ "source_id": "742dfee3-ae1e-4d1b-b3a4-35e834699b28"
+}

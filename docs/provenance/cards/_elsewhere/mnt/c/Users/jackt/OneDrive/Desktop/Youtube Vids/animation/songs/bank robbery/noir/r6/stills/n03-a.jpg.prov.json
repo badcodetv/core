@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n03-a.jpg",
+ "made": "2026-10-31T11:22:44.194Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "From slightly above, a 35mm lens, a cramped tailor's back room at night in the 1920s. A thin Jewish tailor of about 55, long narrow clean-shaven face, deep-set eyes, grey temples, small dark skullcap, waistcoat, a cloth tape draped round his neck and hanging down his chest, looks up three-quarter at us and sings with weary ease, hands flat on a cutting table. Well behind him and small, two men in bandanas and flat caps scoop coins from an open brass till, a revolver pointed at the floor. A mustard-yellow shaded bulb lights his face; crimson curtain cloth glows in the dark behind. No lettering on anything. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "ca8f4261-ccf4-46b3-aeae-ea96ff0c45fc"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a1-b.jpg",
+ "made": "2026-10-31T11:34:36.639Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Extreme close view from kerb height, the lens a foot from the front wheel and running board of a dark 1920s car, which fill the whole frame: wooden spokes, a tall narrow tyre, a sweeping mudguard beaded with water, the ribbed running board cutting across the top. Hard red light rakes along the tyre from behind, and everything in shadow falls to cobalt blue. Below, wet cobbles shine in a thin strip. The car itself is crisp and heavy, with no people, no background to speak of, and no lettering anywhere. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "11c6dd09-c302-42bd-916f-bc75d38509ca"
+}

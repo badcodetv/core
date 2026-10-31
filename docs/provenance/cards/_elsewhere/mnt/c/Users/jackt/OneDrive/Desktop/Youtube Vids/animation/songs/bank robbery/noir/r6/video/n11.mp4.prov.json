@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n11.mp4",
+ "made": "2026-10-31T12:40:34.072Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera holds on the long lens with a slight sway. Torch flames flicker in the blurred crowd behind him. His head stays nearly still. He sings: mob, angry at their shitty little job. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n11.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n11.jpg"
+ },
+ "source_id": "a9388948-b648-41a4-8a68-adcddd2eca36"
+}

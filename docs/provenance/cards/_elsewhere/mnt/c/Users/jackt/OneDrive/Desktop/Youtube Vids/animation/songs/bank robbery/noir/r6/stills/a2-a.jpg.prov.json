@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a2-a.jpg",
+ "made": "2026-10-31T11:35:14.893Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A wide lens almost touching a wet night road, looking along it. The surface takes up the bottom two-thirds of the frame, black and streaming, with long reflections of hot pink and cyan neon running toward us. Ahead on the crown of the road, small and dead centre, the square tail of one 1920s car: spare wheel on the back, one small red tail lamp, spray lifting off its rear tyres. Dark shopfronts close in on both sides, their signs only coloured glows with no letters. The street is otherwise empty. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "55cfe288-c2a0-4273-a711-565bb3f3bce6"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a1-a.mp4",
+ "made": "2026-10-31T12:55:34.825Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera rides fixed beside the wheel at matching speed. The wheel spins hard and wet cobbles smear past beneath it. One car only, one wheel in frame, which stays round and keeps its place. Tyre hiss, engine roar. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a1.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a1.jpg"
+ },
+ "source_id": "65490b52-beaf-4058-b79e-7e7ae56e1821"
+}

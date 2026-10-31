@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n13-b.jpg",
+ "made": "2026-10-31T11:29:25.972Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Footlight level, 35mm, looking straight along a vaudeville stage at a Black stage magician of about 50 in black tails and a white tie. Long dignified clean-shaven face, greying hair, one raised eyebrow, standing front-on with his arms spread wide and low, singing with a showman's pleasure, his face a third of the frame. A hard pink-white spotlight from the balcony pins him in place. Behind him the crimson velvet curtains are on fire from the hem up, small flames climbing on both sides, sparks rising into the dark flies. No signs or lettering anywhere. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "643d1b87-8c8d-47e0-a6aa-64ef03e6fbf9"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a4-b.jpg",
+ "made": "2026-10-31T11:38:32.782Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A static camera at kerb height on a rain-soaked night street, a cast-iron lamp post close beside the lens taking up the left edge of the frame, its gaslight a cold green. Coming straight at us down the near lane, slightly right of centre, one open 1920s roadster with two round headlamps blazing, one driver behind the screen, a rooster tail of spray lit orange by a distant warehouse fire behind it. Wet cobbles, shuttered brick buildings, an otherwise empty street. Nothing carries lettering. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "8b284f48-9a4b-465d-94e8-331240a865bf"
+}

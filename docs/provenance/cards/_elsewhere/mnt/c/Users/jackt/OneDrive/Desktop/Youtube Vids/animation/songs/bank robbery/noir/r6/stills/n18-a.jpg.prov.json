@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n18-a.jpg",
+ "made": "2026-10-31T11:32:21.233Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "From lower down the steps on a 100mm lens, the night street gone to soft blue behind, a young Black preacher of about 30, plain dark suit and white shirt with a narrow tie, clean-shaven oval face, wide-set eyes, close-cropped hair. He stands on the stone steps of a soup kitchen, front-on, hands open low at his sides, singing plainly with no showmanship. A warm lamp over the door lights his face and mouth from above and in front. Out of focus behind him along the wall, a long breadline of men in coats and flat caps stands in cold blue dark, breath showing. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "7e83e97f-f0fd-4cfc-aa38-a268724051dc"
+}

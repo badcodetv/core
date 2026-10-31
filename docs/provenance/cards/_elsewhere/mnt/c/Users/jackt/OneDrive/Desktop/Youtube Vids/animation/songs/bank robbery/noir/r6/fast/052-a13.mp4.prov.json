@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/052-a13.mp4",
+ "made": "2026-10-31T15:02:15+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "fast_r6.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a13-a.mp4",
+ "why": "Colour Noir 2 speed 1.3 by frame sampling",
+ "settings": {
+  "speed": "1.3"
+ }
+}

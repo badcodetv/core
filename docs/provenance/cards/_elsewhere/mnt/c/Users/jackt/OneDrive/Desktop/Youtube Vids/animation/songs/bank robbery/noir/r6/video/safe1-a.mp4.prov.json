@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/safe1-a.mp4",
+ "made": "2026-10-31T11:49:51.436Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked camera, no movement. The car creeps forward and the taut chain slides the one green safe out of the wall and across the cobbles. Exactly one car, one safe, one man. Nothing else moves, nothing enters the frame. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/safe1.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/safe1.jpg"
+ },
+ "source_id": "55d7583e-ff2e-4866-a0d8-795b1079bb0f"
+}

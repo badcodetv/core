@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/den3-push.mp4",
+ "made": "2026-10-31T13:56:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "zoompan",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/den3.jpg",
+ "why": "Flow refused every attempt to animate den3 (reputational risk); camera push on the approved still"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/safe1-a.jpg",
+ "made": "2026-10-31T11:33:02.051Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A brick alley at night seen square-on from waist height, one amber lamp on a bracket, the shadows bottle green. A yellow 1920s sedan stands nose to the right on wet cobbles. One man leans from its window: his whole head in a hand-knitted cream wool balaclava with no eye holes and no mouth hole, one thin black ring stitched around the face, and high inside it, over where one eye would be, pushed up near the ring's edge and well off centre, one small solid red felt triangle with rounded corners. Collar up, gloved. A tight chain runs from the bumper to one small green safe, half out of a broken hole in the wall. The rest of the alley is empty. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "77ba8b8d-6e27-4a62-8870-19e09d8c5a29"
+}

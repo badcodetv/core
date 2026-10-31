@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n04-b.jpg",
+ "made": "2026-10-31T11:23:12.632Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Eye level on a 28mm lens, at a stopped 1920s assembly line of black Model T bodies receding in a long row of hard perspective behind a Polish American factory hand of about 30. Broad, flat-cheeked face, snub nose, pale stubble, flat cap pushed back, thick neck in an open grey work shirt. He stands three-quarter on, close enough that his head and shoulders take the left half of the frame, singing flatly into the lens, arms hanging. Overhead, a mercury lamp casts sickly green down the line and over his face. A caged red warning lamp on a post beyond him throws a turning red beam across the bodies. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "8e1d97e4-50e7-41b6-9fed-92fd54ae7842"
+}

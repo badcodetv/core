@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d3.mp4",
+ "made": "2026-10-31T11:54:22.557Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera drifts a few inches left without stopping, single shot. Furnace flames lick at the door; the bench stays still and soft. The men shout together: Debasement! Debasement! Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/d3.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/d3.jpg"
+ },
+ "source_id": "5d4d0d4b-91d7-43e2-a8fc-676ca3249159"
+}

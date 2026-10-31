@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n13.mp4",
+ "made": "2026-10-31T12:42:43.500Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera glides slowly forward over the footlights. The curtain flames climb behind him; the spotlight holds steady. His head stays nearly still. He sings: distraction IS the attraction. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n13.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n13.jpg"
+ },
+ "source_id": "505c655f-415e-41a0-af02-4315787d902d"
+}

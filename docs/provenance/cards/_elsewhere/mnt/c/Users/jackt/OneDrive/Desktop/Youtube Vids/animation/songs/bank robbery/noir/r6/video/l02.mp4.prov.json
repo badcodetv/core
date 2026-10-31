@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/l02.mp4",
+ "made": "2026-10-31T12:06:35.046Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera rides level with him at matching speed, framing unchanged. The banknotes keep whirling behind his shoulders and never cross his face. He sings: or have resistance to the facts I'm stating. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/l02.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/l02.jpg"
+ },
+ "source_id": "f7ab2fd5-859b-4e9e-9feb-db12bc7dda3c"
+}

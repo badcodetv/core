@@ -1,0 +1,562 @@
+[
+{
+"id": "004-n01",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/004-n01.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/004-n01.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/004-n01.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n01.mp4",
+"src_in": 0.3,
+"start": 15.0417,
+"dur": 4.1667
+},
+{
+"id": "008-n02",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/008-n02.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/008-n02.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/008-n02.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n02.mp4",
+"src_in": 0.3,
+"start": 22.9583,
+"dur": 3.7083
+},
+{
+"id": "009-n03",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/009-n03.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/009-n03.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/009-n03.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n03.mp4",
+"src_in": 0.3,
+"start": 26.6667,
+"dur": 3.75
+},
+{
+"id": "010-n04",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/010-n04.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/010-n04.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/010-n04.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n04.mp4",
+"src_in": 0.3,
+"start": 30.4167,
+"dur": 3.6667
+},
+{
+"id": "013-n05",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/013-n05.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/013-n05.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/013-n05.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n05.mp4",
+"src_in": 0.3,
+"start": 37.7083,
+"dur": 3.6667
+},
+{
+"id": "014-n06",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/014-n06.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/014-n06.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/014-n06.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n06.mp4",
+"src_in": 0.3,
+"start": 41.375,
+"dur": 3.1667
+},
+{
+"id": "017-n07",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/017-n07.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/017-n07.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/017-n07.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n07.mp4",
+"src_in": 0.3,
+"start": 48.625,
+"dur": 3.625
+},
+{
+"id": "018-n08",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/018-n08.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/018-n08.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/018-n08.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n08.mp4",
+"src_in": 0.3,
+"start": 52.25,
+"dur": 3.6667
+},
+{
+"id": "020-n09",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/020-n09.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/020-n09.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/020-n09.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n09.mp4",
+"src_in": 0.121,
+"start": 59.0833,
+"dur": 5.9167
+},
+{
+"id": "022-l01",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/022-l01.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/022-l01.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/022-l01.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/l01.mp4",
+"src_in": 0.3,
+"start": 65.9167,
+"dur": 4.0833
+},
+{
+"id": "023-l02",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/023-l02.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/023-l02.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/023-l02.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/l02.mp4",
+"src_in": 0.3,
+"start": 70.0,
+"dur": 4.5417
+},
+{
+"id": "025-d1",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/025-d1.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/025-d1.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/025-d1.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d1.mp4",
+"src_in": 0.3,
+"start": 76.375,
+"dur": 1.7917
+},
+{
+"id": "026-d2",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/026-d2.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/026-d2.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/026-d2.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d2.mp4",
+"src_in": 0.3,
+"start": 78.1667,
+"dur": 3.6667
+},
+{
+"id": "027-d3",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/027-d3.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/027-d3.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/027-d3.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d3.mp4",
+"src_in": 0.3,
+"start": 81.8333,
+"dur": 2.7083
+},
+{
+"id": "028-d4",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/028-d4.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/028-d4.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/028-d4.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d4.mp4",
+"src_in": 0.3,
+"start": 84.5417,
+"dur": 1.8333
+},
+{
+"id": "029-d5",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/029-d5.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/029-d5.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/029-d5.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d5.mp4",
+"src_in": 0.3,
+"start": 86.375,
+"dur": 1.8333
+},
+{
+"id": "031-b1",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/031-b1.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/031-b1.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/031-b1.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b1.mp4",
+"src_in": 0.3,
+"start": 90.9167,
+"dur": 1.7917
+},
+{
+"id": "032-b2",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/032-b2.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/032-b2.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/032-b2.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b2.mp4",
+"src_in": 0.3,
+"start": 92.7083,
+"dur": 1.8333
+},
+{
+"id": "034-b3",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/034-b3.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/034-b3.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/034-b3.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b3.mp4",
+"src_in": 0.3,
+"start": 96.375,
+"dur": 2.7083
+},
+{
+"id": "035-b4",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/035-b4.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/035-b4.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/035-b4.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b4.mp4",
+"src_in": 0.3,
+"start": 99.0833,
+"dur": 1.8333
+},
+{
+"id": "036-b5",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/036-b5.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/036-b5.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/036-b5.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b5.mp4",
+"src_in": 0.3,
+"start": 100.9167,
+"dur": 1.8333
+},
+{
+"id": "038-n10",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/038-n10.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/038-n10.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/038-n10.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n10.mp4",
+"src_in": 0.3,
+"start": 104.0833,
+"dur": 3.625
+},
+{
+"id": "041-n11",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/041-n11.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/041-n11.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/041-n11.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n11.mp4",
+"src_in": 0.3,
+"start": 111.375,
+"dur": 3.625
+},
+{
+"id": "044-n12",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/044-n12.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/044-n12.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/044-n12.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n12.mp4",
+"src_in": 0.3,
+"start": 118.625,
+"dur": 3.6667
+},
+{
+"id": "047-n13",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/047-n13.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/047-n13.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/047-n13.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n13.mp4",
+"src_in": 0.3,
+"start": 125.9167,
+"dur": 3.625
+},
+{
+"id": "050-n14",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/050-n14.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/050-n14.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/050-n14.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n14.mp4",
+"src_in": 0.3,
+"start": 133.1667,
+"dur": 3.6667
+},
+{
+"id": "053-l03",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/053-l03.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/053-l03.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/053-l03.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/l03.mp4",
+"src_in": 0.3,
+"start": 140.0,
+"dur": 4.0833
+},
+{
+"id": "054-l04",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/054-l04.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/054-l04.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/054-l04.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/l04.mp4",
+"src_in": 0.3,
+"start": 144.0833,
+"dur": 3.6667
+},
+{
+"id": "055-n15",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/055-n15.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/055-n15.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/055-n15.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n15.mp4",
+"src_in": 0.3,
+"start": 147.75,
+"dur": 3.625
+},
+{
+"id": "058-l05",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/058-l05.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/058-l05.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/058-l05.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/l05-b.mp4",
+"src_in": 0,
+"start": 154.5417,
+"dur": 4.125
+},
+{
+"id": "059-l06",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/059-l06.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/059-l06.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/059-l06.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/l06-a.mp4",
+"src_in": 0.3,
+"start": 158.6667,
+"dur": 3.1667
+},
+{
+"id": "061-b6",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/061-b6.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/061-b6.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/061-b6.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b6.mp4",
+"src_in": 0.3,
+"start": 163.625,
+"dur": 1.8333
+},
+{
+"id": "062-b1",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/062-b1.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/062-b1.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/062-b1.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b1.mp4",
+"src_in": 1.8,
+"start": 165.4583,
+"dur": 1.8333
+},
+{
+"id": "064-d1",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/064-d1.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/064-d1.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/064-d1.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d1.mp4",
+"src_in": 1.8,
+"start": 169.5417,
+"dur": 2.2917
+},
+{
+"id": "065-b3",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/065-b3.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/065-b3.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/065-b3.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/b3.mp4",
+"src_in": 2.3,
+"start": 171.8333,
+"dur": 1.7917
+},
+{
+"id": "066-d3",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/066-d3.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/066-d3.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/066-d3.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d3.mp4",
+"src_in": 2.3,
+"start": 173.625,
+"dur": 1.8333
+},
+{
+"id": "068-c1",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/068-c1.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/068-c1.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/068-c1.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c1.mp4",
+"src_in": 0.3,
+"start": 178.1667,
+"dur": 1.8333
+},
+{
+"id": "069-c2",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/069-c2.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/069-c2.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/069-c2.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c2.mp4",
+"src_in": 0.3,
+"start": 180.0,
+"dur": 2.2917
+},
+{
+"id": "071-c3",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/071-c3.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/071-c3.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/071-c3.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c3.mp4",
+"src_in": 0.3,
+"start": 184.0833,
+"dur": 2.2917
+},
+{
+"id": "072-c4",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/072-c4.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/072-c4.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/072-c4.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c4.mp4",
+"src_in": 0.3,
+"start": 186.375,
+"dur": 1.7917
+},
+{
+"id": "073-c5",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/073-c5.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/073-c5.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/073-c5.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c5.mp4",
+"src_in": 0.3,
+"start": 188.1667,
+"dur": 2.75
+},
+{
+"id": "075-n16",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/075-n16.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/075-n16.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/075-n16.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n16.mp4",
+"src_in": 0.3,
+"start": 194.625,
+"dur": 4.125
+},
+{
+"id": "077-e1",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/077-e1.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/077-e1.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/077-e1.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/e1.mp4",
+"src_in": 0.3,
+"start": 199.6667,
+"dur": 2.75
+},
+{
+"id": "078-e2",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/078-e2.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/078-e2.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/078-e2.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/e2.mp4",
+"src_in": 0.3,
+"start": 202.4167,
+"dur": 3.6667
+},
+{
+"id": "079-e3",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/079-e3.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/079-e3.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/079-e3.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/e3.mp4",
+"src_in": 0.3,
+"start": 206.0833,
+"dur": 3.2083
+},
+{
+"id": "080-e4",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/080-e4.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/080-e4.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/080-e4.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/e4.mp4",
+"src_in": 0.3,
+"start": 209.2917,
+"dur": 3.625
+},
+{
+"id": "083-n17",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/083-n17.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/083-n17.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/083-n17.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n17.mp4",
+"src_in": 0.3,
+"start": 216.5417,
+"dur": 3.6667
+},
+{
+"id": "084-f1",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/084-f1.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/084-f1.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/084-f1.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f1.mp4",
+"src_in": 0.3,
+"start": 220.2083,
+"dur": 2.7083
+},
+{
+"id": "085-f2",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/085-f2.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/085-f2.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/085-f2.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f2.mp4",
+"src_in": 0.3,
+"start": 222.9167,
+"dur": 2.2917
+},
+{
+"id": "086-f3",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/086-f3.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/086-f3.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/086-f3.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f3.mp4",
+"src_in": 0.3,
+"start": 225.2083,
+"dur": 2.25
+},
+{
+"id": "087-f4",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/087-f4.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/087-f4.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/087-f4.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f4.mp4",
+"src_in": 0.3,
+"start": 227.4583,
+"dur": 2.75
+},
+{
+"id": "088-f5",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/088-f5.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/088-f5.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/088-f5.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/f5-a.mp4",
+"src_in": 0.3,
+"start": 230.2083,
+"dur": 1.7917
+},
+{
+"id": "089-f6",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/089-f6.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/089-f6.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/089-f6.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/video/f6-a.mp4",
+"src_in": 0.3,
+"start": 232.0,
+"dur": 3.2083
+},
+{
+"id": "090-f7",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/090-f7.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/090-f7.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/090-f7.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f7.mp4",
+"src_in": 0.3,
+"start": 235.2083,
+"dur": 3.2083
+},
+{
+"id": "091-f8",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/091-f8.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/091-f8.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/091-f8.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f8.mp4",
+"src_in": 0.3,
+"start": 238.4167,
+"dur": 3.2083
+},
+{
+"id": "092-n18",
+"video": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/092-n18.mp4",
+"audio": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/r6-ls/in/092-n18.wav",
+"out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/092-n18.mp4",
+"src": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n18.mp4",
+"src_in": 0.3,
+"start": 241.625,
+"dur": 4.125
+}
+]

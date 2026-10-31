@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band2/06-a.jpg",
+ "made": "2026-10-31T11:03:00.886Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A brick tunnel with faded teal mosaics, the camera behind the shoulder of a Black upright bass player of about 60, tall and white-haired, who is a soft dark shape along the left edge only, his white hair and the instrument's scroll just catching light. Beyond him at 50mm the singer faces us square on, face a third of the frame high and sharp, mouth open, a period car headlamp from the right lighting him warm amber against the teal. Behind the singer a stopped black sedan pours smoke from its bonnet, a lick of flame under the hinge. No lettering, no black bars. Thanks.",
+ "source_id": "bc98e336-1411-45a3-9478-d13a91397d58"
+}

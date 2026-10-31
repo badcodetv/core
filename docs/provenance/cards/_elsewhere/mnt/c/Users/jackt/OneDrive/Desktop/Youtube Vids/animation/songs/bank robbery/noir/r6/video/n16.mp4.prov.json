@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n16.mp4",
+ "made": "2026-10-31T12:52:16.617Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera stays perfectly still. A single moth circles the amber lamp at his side, and nothing else stirs. His head barely moves. He sings: who has elastic bands not plastic hands. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n16.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n16.jpg"
+ },
+ "source_id": "bdcafa95-3a66-4e24-bae0-39f9dd5a2dc7"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a9-b.mp4",
+ "made": "2026-10-31T13:12:37.309Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera rides fixed in the car, facing back, with slight road shake. Banknotes pour from the split sack and whip away behind into the dark. Exactly one man, one sack. He stays in place, and no vehicles follow. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a9.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a9.jpg"
+ },
+ "source_id": "3004d4f4-2c40-4616-8328-ce217183359c"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a10-a.mp4",
+ "made": "2026-10-31T13:13:47.690Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera travels beside him at matching speed, holding the same framing. Street lights streak past in electric blue while the red lamp flares. Exactly one motorcycle, one rider. Both keep their shape and place, with spokes spinning and no other traffic. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a10.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a10.jpg"
+ },
+ "source_id": "3e0e9ba9-1cd8-40d5-b250-1061981d1029"
+}

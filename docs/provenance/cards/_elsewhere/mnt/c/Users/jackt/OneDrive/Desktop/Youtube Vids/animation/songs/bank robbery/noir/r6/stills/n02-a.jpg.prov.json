@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n02-a.jpg",
+ "made": "2026-10-31T11:22:20.140Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Long telephoto, dead front-on, inside a steel mill at night. A Black foundry worker of about 40, soot across a broad forehead and cheekbones, stubbled square jaw, heavy neck, sweat-soaked collarless shirt open at the chest, fills the middle of the frame from the chest up, singing with his chin lifted and his mouth wide. Directly behind him, compressed and out of focus, a ladle pours a molten stream into the pit, blazing orange, with five small men in leather aprons silhouetted beside it. A cold steel-cyan arc lamp hits his face from the front, clean across the mouth. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "63f0ad8d-b762-4009-9930-25d0334d2281"
+}

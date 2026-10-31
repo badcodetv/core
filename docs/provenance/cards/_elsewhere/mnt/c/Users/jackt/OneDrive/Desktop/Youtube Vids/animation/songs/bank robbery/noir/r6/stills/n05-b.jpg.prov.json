@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n05-b.jpg",
+ "made": "2026-10-31T11:23:50.560Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Locked-off, straight front-on on a 50mm lens, inside a Chinese American hand laundry on a snowy night in the 1920s. The owner, a thin man of about 65, sunken clean-shaven cheeks, close-cropped white hair, buttoned dark jacket, stands square to us, face a third of the frame height, singing quietly with a dry, bitter calm. Beside him a tall window, frosted at the edges, glows snow-blue. Behind him pale steam rises off wash coppers, lit a soft pink by one bare bulb that also lights his mouth. At the edge of frame an iron coal stove sits black and dead, door hanging open. No lettering anywhere. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "b0f04f0c-4a2c-4364-b5b1-f19991202e99"
+}

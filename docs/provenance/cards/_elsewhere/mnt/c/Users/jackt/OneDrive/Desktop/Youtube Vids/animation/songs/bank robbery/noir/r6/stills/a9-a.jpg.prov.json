@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a9-a.jpg",
+ "made": "2026-10-31T11:42:05.003Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Inside an open 1920s touring car at night, looking from the front seat back over the rear bench with a wide lens. One man kneels up on the back seat in a dark coat, collar up, gloves on, gripping a split canvas sack against his chest, and banknotes stream from it over the folded hood into the dark behind the car. His whole head is in a hand-knitted cream wool balaclava with no eye holes and no mouth hole, a thin black ring stitched around the face, and high inside, over where one eye would be, near the ring's edge, one small solid red felt triangle with rounded corners. Turquoise light on him from one side, rose from a tail lamp below. Beyond: empty coloured dark. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "0c3f9968-4266-42df-bb65-36e3204f64e1"
+}

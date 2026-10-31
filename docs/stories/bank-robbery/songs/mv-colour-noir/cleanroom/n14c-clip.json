@@ -1,0 +1,13 @@
+[
+ {
+  "id": "n14",
+  "kind": "clip",
+  "prompt": "Camera tracks a little sideways, slowly. Smoke drifts through the blurred room behind him; his open hand stays still. His head barely moves and he sings. Thanks.",
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n14.mp4",
+  "startImage": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n14c.jpg",
+  "count": 1,
+  "seconds": 6,
+  "model": "Omni Flash",
+  "aspect": "16:9"
+ }
+]

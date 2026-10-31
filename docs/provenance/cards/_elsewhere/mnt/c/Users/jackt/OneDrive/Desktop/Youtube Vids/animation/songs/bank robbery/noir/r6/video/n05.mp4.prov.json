@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n05.mp4",
+ "made": "2026-10-31T12:34:15.149Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera stays locked off. Steam rises slowly behind him and snow falls past the window. His head stays nearly still. He sings: quantitative easing, grandma freezing! Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n05.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n05.jpg"
+ },
+ "source_id": "5f2a44cf-0fc0-4d4c-a938-8f32f081faf4"
+}

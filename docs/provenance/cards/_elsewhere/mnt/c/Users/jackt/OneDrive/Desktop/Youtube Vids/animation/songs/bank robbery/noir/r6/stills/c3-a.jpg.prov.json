@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/c3-a.jpg",
+ "made": "2026-10-31T11:16:06.907Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Wide lens almost on the flooded floor of a raided speakeasy, looking up, ankle-deep spilled liquor mirroring everything. Nearest the lens, face filling nearly half the frame height, a small man of 60 with a sharp hooked nose, hollow cheeks, jutting ears and thin grey hair roars at us three-quarter on, clean-shaven, shirt open at the neck, axe high above his head. Red light from the smashed bar falls full on his mouth; teal glows from the far wall. Further back and smaller: a giant blond Swede of 30, long-boned and pale-browed, axe raised, towering at left; a bald Black man of 50 with grey stubble, axe on his shoulder, at right; deep in the room a chubby baby-faced man of 19, wading, axe up in both hands. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "90066a79-190f-48aa-bbf0-d5cae6b15b25"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n10-a.jpg",
+ "made": "2026-10-31T11:27:18.303Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Dead-centre and symmetrical, low wide lens, in a basement counting room in the 1920s. A huge Black enforcer of about 35, wide clean-shaven face, thick neck, shaved head, pale cream suit straining at the shoulders, stands square in a narrow aisle singing down at us, slow and heavy, hands at his sides out of the shot. Both walls behind him are built from banded bundles of plain banknotes, stacked to the ceiling and disappearing to a vanishing point. One hanging lamp in pink hangs left of him, one in green right of him, each colouring a side of his face, meeting across the mouth. Paper bands are blank. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "7e1930f8-a154-4a17-8a42-cb7259a58d1a"
+}

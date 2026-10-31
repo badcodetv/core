@@ -1,0 +1,911 @@
+[
+{
+"n": 0,
+"start": 0.0,
+"end": 3.5417,
+"clip": "city1-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/city1-b.mp4",
+"inPoint": 0
+},
+{
+"n": 1,
+"start": 3.5417,
+"end": 7.1667,
+"clip": "den3",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/den3-push.mp4",
+"inPoint": 0.3
+},
+{
+"n": 2,
+"start": 7.1667,
+"end": 10.875,
+"clip": "rods2-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods2-b.mp4",
+"inPoint": 1
+},
+{
+"n": 3,
+"start": 10.875,
+"end": 15.0417,
+"clip": "mask4",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/003-mask4.mp4",
+"inPoint": 0
+},
+{
+"n": 4,
+"start": 15.0417,
+"end": 19.2083,
+"clip": "n01",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/004-n01.mp4",
+"inPoint": 0
+},
+{
+"n": 5,
+"start": 19.2083,
+"end": 20.625,
+"clip": "pov3-r3-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov3-r3-a.mp4",
+"inPoint": 2
+},
+{
+"n": 6,
+"start": 20.625,
+"end": 21.5417,
+"clip": "a13",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/006-a13.mp4",
+"inPoint": 0
+},
+{
+"n": 7,
+"start": 21.5417,
+"end": 22.9583,
+"clip": "safe1",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/safe1-a.mp4",
+"inPoint": 1.2
+},
+{
+"n": 8,
+"start": 22.9583,
+"end": 26.6667,
+"clip": "n02",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/008-n02.mp4",
+"inPoint": 0
+},
+{
+"n": 9,
+"start": 26.6667,
+"end": 30.4167,
+"clip": "n03",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/009-n03.mp4",
+"inPoint": 0
+},
+{
+"n": 10,
+"start": 30.4167,
+"end": 34.0833,
+"clip": "n04",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/010-n04.mp4",
+"inPoint": 0
+},
+{
+"n": 11,
+"start": 34.0833,
+"end": 35.9167,
+"clip": "chase1-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase1-a.mp4",
+"inPoint": 1
+},
+{
+"n": 12,
+"start": 35.9167,
+"end": 37.7083,
+"clip": "a3",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a3-a.mp4",
+"inPoint": 0.5
+},
+{
+"n": 13,
+"start": 37.7083,
+"end": 41.375,
+"clip": "n05",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/013-n05.mp4",
+"inPoint": 0
+},
+{
+"n": 14,
+"start": 41.375,
+"end": 44.5417,
+"clip": "n06",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/014-n06.mp4",
+"inPoint": 0
+},
+{
+"n": 15,
+"start": 44.5417,
+"end": 46.375,
+"clip": "pov2-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov2-a.mp4",
+"inPoint": 1
+},
+{
+"n": 16,
+"start": 46.375,
+"end": 48.625,
+"clip": "a2",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a2-a.mp4",
+"inPoint": 0.4
+},
+{
+"n": 17,
+"start": 48.625,
+"end": 52.25,
+"clip": "n07",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/017-n07.mp4",
+"inPoint": 0
+},
+{
+"n": 18,
+"start": 52.25,
+"end": 55.9167,
+"clip": "n08",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/018-n08.mp4",
+"inPoint": 0
+},
+{
+"n": 19,
+"start": 55.9167,
+"end": 59.0833,
+"clip": "safe2-c",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe2-c.mp4",
+"inPoint": 0
+},
+{
+"n": 20,
+"start": 59.0833,
+"end": 65.0,
+"clip": "n09",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/020-n09.mp4",
+"inPoint": 0
+},
+{
+"n": 21,
+"start": 65.0,
+"end": 65.9167,
+"clip": "rods3-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods3-b.mp4",
+"inPoint": 1
+},
+{
+"n": 22,
+"start": 65.9167,
+"end": 70.0,
+"clip": "l01",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/022-l01.mp4",
+"inPoint": 0
+},
+{
+"n": 23,
+"start": 70.0,
+"end": 74.5417,
+"clip": "l02",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/023-l02.mp4",
+"inPoint": 0
+},
+{
+"n": 24,
+"start": 74.5417,
+"end": 76.375,
+"clip": "a6",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a6-a.mp4",
+"inPoint": 0.4
+},
+{
+"n": 25,
+"start": 76.375,
+"end": 78.1667,
+"clip": "d1",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/025-d1.mp4",
+"inPoint": 0
+},
+{
+"n": 26,
+"start": 78.1667,
+"end": 81.8333,
+"clip": "d2",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/026-d2.mp4",
+"inPoint": 0
+},
+{
+"n": 27,
+"start": 81.8333,
+"end": 84.5417,
+"clip": "d3",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/027-d3.mp4",
+"inPoint": 0
+},
+{
+"n": 28,
+"start": 84.5417,
+"end": 86.375,
+"clip": "d4",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/028-d4.mp4",
+"inPoint": 0
+},
+{
+"n": 29,
+"start": 86.375,
+"end": 88.2083,
+"clip": "d5",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/029-d5.mp4",
+"inPoint": 0
+},
+{
+"n": 30,
+"start": 88.2083,
+"end": 90.9167,
+"clip": "a12",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a12-a.mp4",
+"inPoint": 0.5
+},
+{
+"n": 31,
+"start": 90.9167,
+"end": 92.7083,
+"clip": "b1",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/031-b1.mp4",
+"inPoint": 0
+},
+{
+"n": 32,
+"start": 92.7083,
+"end": 94.5417,
+"clip": "b2",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/032-b2.mp4",
+"inPoint": 0
+},
+{
+"n": 33,
+"start": 94.5417,
+"end": 96.375,
+"clip": "a9",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a9-b.mp4",
+"inPoint": 0.4
+},
+{
+"n": 34,
+"start": 96.375,
+"end": 99.0833,
+"clip": "b3",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/034-b3.mp4",
+"inPoint": 0
+},
+{
+"n": 35,
+"start": 99.0833,
+"end": 100.9167,
+"clip": "b4",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/035-b4.mp4",
+"inPoint": 0
+},
+{
+"n": 36,
+"start": 100.9167,
+"end": 102.75,
+"clip": "b5",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/036-b5.mp4",
+"inPoint": 0
+},
+{
+"n": 37,
+"start": 102.75,
+"end": 104.0833,
+"clip": "a1",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/037-a1.mp4",
+"inPoint": 0
+},
+{
+"n": 38,
+"start": 104.0833,
+"end": 107.7083,
+"clip": "n10",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/038-n10.mp4",
+"inPoint": 0
+},
+{
+"n": 39,
+"start": 107.7083,
+"end": 109.5417,
+"clip": "safe4-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe4-b.mp4",
+"inPoint": 2
+},
+{
+"n": 40,
+"start": 109.5417,
+"end": 111.375,
+"clip": "a5",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/040-a5.mp4",
+"inPoint": 0
+},
+{
+"n": 41,
+"start": 111.375,
+"end": 115.0,
+"clip": "n11",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/041-n11.mp4",
+"inPoint": 0
+},
+{
+"n": 42,
+"start": 115.0,
+"end": 116.8333,
+"clip": "chase4-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase4-b.mp4",
+"inPoint": 1.5
+},
+{
+"n": 43,
+"start": 116.8333,
+"end": 118.625,
+"clip": "a14",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/043-a14.mp4",
+"inPoint": 0
+},
+{
+"n": 44,
+"start": 118.625,
+"end": 122.2917,
+"clip": "n12",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/044-n12.mp4",
+"inPoint": 0
+},
+{
+"n": 45,
+"start": 122.2917,
+"end": 124.0833,
+"clip": "rods1-r3-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods1-r3-a.mp4",
+"inPoint": 1
+},
+{
+"n": 46,
+"start": 124.0833,
+"end": 125.9167,
+"clip": "a4",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a4-b.mp4",
+"inPoint": 0.2
+},
+{
+"n": 47,
+"start": 125.9167,
+"end": 129.5417,
+"clip": "n13",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/047-n13.mp4",
+"inPoint": 0
+},
+{
+"n": 48,
+"start": 129.5417,
+"end": 131.375,
+"clip": "pov4-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov4-b.mp4",
+"inPoint": 1
+},
+{
+"n": 49,
+"start": 131.375,
+"end": 133.1667,
+"clip": "a10",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/049-a10.mp4",
+"inPoint": 0
+},
+{
+"n": 50,
+"start": 133.1667,
+"end": 136.8333,
+"clip": "n14",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/050-n14.mp4",
+"inPoint": 0
+},
+{
+"n": 51,
+"start": 136.8333,
+"end": 138.6667,
+"clip": "rods4",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/051-rods4.mp4",
+"inPoint": 0
+},
+{
+"n": 52,
+"start": 138.6667,
+"end": 140.0,
+"clip": "a13",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/052-a13.mp4",
+"inPoint": 0
+},
+{
+"n": 53,
+"start": 140.0,
+"end": 144.0833,
+"clip": "l03",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/053-l03.mp4",
+"inPoint": 0
+},
+{
+"n": 54,
+"start": 144.0833,
+"end": 147.75,
+"clip": "l04",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/054-l04.mp4",
+"inPoint": 0
+},
+{
+"n": 55,
+"start": 147.75,
+"end": 151.375,
+"clip": "n15",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/055-n15.mp4",
+"inPoint": 0
+},
+{
+"n": 56,
+"start": 151.375,
+"end": 153.1667,
+"clip": "safe3-r3-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe3-r3-a.mp4",
+"inPoint": 1
+},
+{
+"n": 57,
+"start": 153.1667,
+"end": 154.5417,
+"clip": "a11",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a11-a.mp4",
+"inPoint": 0.3
+},
+{
+"n": 58,
+"start": 154.5417,
+"end": 158.6667,
+"clip": "l05",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/058-l05.mp4",
+"inPoint": 0
+},
+{
+"n": 59,
+"start": 158.6667,
+"end": 161.8333,
+"clip": "l06",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/059-l06.mp4",
+"inPoint": 0
+},
+{
+"n": 60,
+"start": 161.8333,
+"end": 163.625,
+"clip": "a9",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a9-b.mp4",
+"inPoint": 2.0
+},
+{
+"n": 61,
+"start": 163.625,
+"end": 165.4583,
+"clip": "b6",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/061-b6.mp4",
+"inPoint": 0
+},
+{
+"n": 62,
+"start": 165.4583,
+"end": 167.2917,
+"clip": "b1",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/062-b1.mp4",
+"inPoint": 0
+},
+{
+"n": 63,
+"start": 167.2917,
+"end": 169.5417,
+"clip": "a8",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a8-b.mp4",
+"inPoint": 0.4
+},
+{
+"n": 64,
+"start": 169.5417,
+"end": 171.8333,
+"clip": "d1",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/064-d1.mp4",
+"inPoint": 0
+},
+{
+"n": 65,
+"start": 171.8333,
+"end": 173.625,
+"clip": "b3",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/065-b3.mp4",
+"inPoint": 0
+},
+{
+"n": 66,
+"start": 173.625,
+"end": 175.4583,
+"clip": "d3",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/066-d3.mp4",
+"inPoint": 0
+},
+{
+"n": 67,
+"start": 175.4583,
+"end": 178.1667,
+"clip": "a13",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/fast/067-a13.mp4",
+"inPoint": 0
+},
+{
+"n": 68,
+"start": 178.1667,
+"end": 180.0,
+"clip": "c1",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/068-c1.mp4",
+"inPoint": 0
+},
+{
+"n": 69,
+"start": 180.0,
+"end": 182.2917,
+"clip": "c2",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/069-c2.mp4",
+"inPoint": 0
+},
+{
+"n": 70,
+"start": 182.2917,
+"end": 184.0833,
+"clip": "a11",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a11-a.mp4",
+"inPoint": 1.8
+},
+{
+"n": 71,
+"start": 184.0833,
+"end": 186.375,
+"clip": "c3",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/071-c3.mp4",
+"inPoint": 0
+},
+{
+"n": 72,
+"start": 186.375,
+"end": 188.1667,
+"clip": "c4",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/072-c4.mp4",
+"inPoint": 0
+},
+{
+"n": 73,
+"start": 188.1667,
+"end": 190.9167,
+"clip": "c5",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/073-c5.mp4",
+"inPoint": 0
+},
+{
+"n": 74,
+"start": 190.9167,
+"end": 194.625,
+"clip": "pov1-r3-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov1-r3-b.mp4",
+"inPoint": 1
+},
+{
+"n": 75,
+"start": 194.625,
+"end": 198.75,
+"clip": "n16",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/075-n16.mp4",
+"inPoint": 0
+},
+{
+"n": 76,
+"start": 198.75,
+"end": 199.6667,
+"clip": "a12",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a12-a.mp4",
+"inPoint": 1.5
+},
+{
+"n": 77,
+"start": 199.6667,
+"end": 202.4167,
+"clip": "e1",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/077-e1.mp4",
+"inPoint": 0
+},
+{
+"n": 78,
+"start": 202.4167,
+"end": 206.0833,
+"clip": "e2",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/078-e2.mp4",
+"inPoint": 0
+},
+{
+"n": 79,
+"start": 206.0833,
+"end": 209.2917,
+"clip": "e3",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/079-e3.mp4",
+"inPoint": 0
+},
+{
+"n": 80,
+"start": 209.2917,
+"end": 212.9167,
+"clip": "e4",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/080-e4.mp4",
+"inPoint": 0
+},
+{
+"n": 81,
+"start": 212.9167,
+"end": 214.75,
+"clip": "mask3-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/mask3-a.mp4",
+"inPoint": 1
+},
+{
+"n": 82,
+"start": 214.75,
+"end": 216.5417,
+"clip": "a8",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a8-b.mp4",
+"inPoint": 1.5
+},
+{
+"n": 83,
+"start": 216.5417,
+"end": 220.2083,
+"clip": "n17",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/083-n17.mp4",
+"inPoint": 0
+},
+{
+"n": 84,
+"start": 220.2083,
+"end": 222.9167,
+"clip": "f1",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/084-f1.mp4",
+"inPoint": 0
+},
+{
+"n": 85,
+"start": 222.9167,
+"end": 225.2083,
+"clip": "f2",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/085-f2.mp4",
+"inPoint": 0
+},
+{
+"n": 86,
+"start": 225.2083,
+"end": 227.4583,
+"clip": "f3",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/086-f3.mp4",
+"inPoint": 0
+},
+{
+"n": 87,
+"start": 227.4583,
+"end": 230.2083,
+"clip": "f4",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/087-f4.mp4",
+"inPoint": 0
+},
+{
+"n": 88,
+"start": 230.2083,
+"end": 232.0,
+"clip": "f5",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/088-f5.mp4",
+"inPoint": 0
+},
+{
+"n": 89,
+"start": 232.0,
+"end": 235.2083,
+"clip": "f6",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/089-f6.mp4",
+"inPoint": 0
+},
+{
+"n": 90,
+"start": 235.2083,
+"end": 238.4167,
+"clip": "f7",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/090-f7.mp4",
+"inPoint": 0
+},
+{
+"n": 91,
+"start": 238.4167,
+"end": 241.625,
+"clip": "f8",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/091-f8.mp4",
+"inPoint": 0
+},
+{
+"n": 92,
+"start": 241.625,
+"end": 245.75,
+"clip": "n18",
+"lip": true,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/v2/092-n18.mp4",
+"inPoint": 0
+},
+{
+"n": 93,
+"start": 245.75,
+"end": 250.0,
+"clip": "mask1-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/mask1-b.mp4",
+"inPoint": 2
+},
+{
+"n": 94,
+"start": 250,
+"end": 258,
+"clip": "o1-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o1-b.mp4",
+"inPoint": 0
+},
+{
+"n": 95,
+"start": 258,
+"end": 262,
+"clip": "o2-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o2-a.mp4",
+"inPoint": 0
+},
+{
+"n": 96,
+"start": 262,
+"end": 266,
+"clip": "o3-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o3-b.mp4",
+"inPoint": 0
+},
+{
+"n": 97,
+"start": 266,
+"end": 270,
+"clip": "o4-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o4-b.mp4",
+"inPoint": 0
+},
+{
+"n": 98,
+"start": 270,
+"end": 274,
+"clip": "o5-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o5-b.mp4",
+"inPoint": 0
+},
+{
+"n": 99,
+"start": 274,
+"end": 278,
+"clip": "o6-b",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o6-b.mp4",
+"inPoint": 0
+},
+{
+"n": 100,
+"start": 278,
+"end": 286,
+"clip": "o7-a",
+"lip": false,
+"path": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o7-a.mp4",
+"inPoint": 0
+}
+]

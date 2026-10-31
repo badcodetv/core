@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/recast/00-a.jpg",
+ "made": "2026-10-31T11:06:34.485Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night, a long black 1920s sedan at full speed down a city street. A lean Black man of about 35 rides its running board: high cheekbones, narrow clean-shaven face, long neck, dove-grey fedora pushed up off his brow. The lens sits low on the door, wide, looking up at him three-quarter, his face a third of the frame's height, mouth open mid-note. One arm hooks the door pillar; the other holds a drum-fed Thompson straight up beside his head, muzzle at the sky. Bars of magenta shop neon with no lettering streak along the wet black door, right out to the frame's edges. A small cyan lamp on the pillar lights his mouth and jaw plainly. Thanks.",
+ "source_id": "723e0d22-57c4-4fcc-bbb9-9b94e09c0ce2"
+}

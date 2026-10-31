@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n18.mp4",
+ "made": "2026-10-31T13:42:30.625Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera holds on the long lens with an almost imperceptible push. Steam drifts from the kitchen door behind him; the line stands still. His head stays nearly still and he sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n18-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n18-b.jpg"
+ },
+ "source_id": "469c268d-e228-4ec6-b650-57f74b9e88ff"
+}

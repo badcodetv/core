@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n09-a.jpg",
+ "made": "2026-10-31T11:26:36.264Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A tilted frame at eye level, 40mm, in a 1920s bookmaker's back room during a raid. A wiry Italian American bookmaker of about 45, hollow cheeks, hooded eyes, bald at the crown, blue stubble, shirtsleeves with garters, a green eyeshade pushed high on his forehead, faces us three-quarter and sings quickly, unbothered. Behind him a wall of chalk boards carries only smudged grey marks, nothing legible. Unprinted paper ticker tape loops down from the ceiling in the background, well clear of his face. Emerald light from hanging shades falls across the room; cold white from a kicked-open door at the back lights his mouth, with blurred hats moving in it. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "24d76799-70dd-4612-a8a1-f8172d89212d"
+}

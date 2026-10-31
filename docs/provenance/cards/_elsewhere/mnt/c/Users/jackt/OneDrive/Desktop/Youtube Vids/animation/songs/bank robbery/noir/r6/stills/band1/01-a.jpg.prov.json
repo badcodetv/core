@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band1/01-a.jpg",
+ "made": "2026-10-31T10:57:03.599Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Three-quarter view at chest height with a 35mm lens, in a burgundy mob lounge beside a small footlit stage. The singer fills the left foreground, his face a third of the frame high, turned slightly to the right, shouting with his jaw dropped, a cool teal light across his mouth. Further back and smaller, a slim woman drummer of about 35 with bobbed black hair and a tubby young Italian American trumpeter of about 25, trumpet lowered, shout with their heads back. Behind them the mirrored bar is bursting, bottles and glass hanging mid-air in teal and burgundy. No lettering, no black bars. Thanks.",
+ "source_id": "79510f38-9422-4a97-9b7f-5127a836dc43"
+}

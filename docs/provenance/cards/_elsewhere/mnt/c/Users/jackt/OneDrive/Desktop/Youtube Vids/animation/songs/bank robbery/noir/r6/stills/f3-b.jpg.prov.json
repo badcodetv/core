@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/f3-b.jpg",
+ "made": "2026-10-31T11:12:03.883Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Camera a hand's width above black water, 24mm lens, close off the stern quarter of a small wooden skiff crossing the frame at night. A slim Filipino American deckhand of about 28 sits at the oars, three-quarter to us and leaning toward the lens: wide cheekbones, small flat nose, narrow chin, smooth clean-shaven skin, hatless, soaked black hair stuck to his forehead, wet undershirt. His face fills a third of the frame, oar handles low below his chest. Far behind him the crew's own boat burns against a timber pier, orange fire spilling across the water toward us. A cold blue-green lantern on the skiff's stern seat lights his mouth from below. The water runs unbroken to the frame's edges. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "3c148890-a050-43e5-b11c-7d5a4893d4e1"
+}

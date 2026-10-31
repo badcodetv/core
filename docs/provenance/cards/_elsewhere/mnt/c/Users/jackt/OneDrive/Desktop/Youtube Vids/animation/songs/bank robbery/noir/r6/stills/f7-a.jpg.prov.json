@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/f7-a.jpg",
+ "made": "2026-10-31T11:20:05.884Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Dead centre and symmetrical, a 50mm lens at chest height in a grand marble bank hall at midnight. A stocky Korean American of about 40 stands square to us, face a good third of the frame: wide square jaw, broad flat cheekbones, thick neck, small ears, short straight nose, clean-shaven, bowler hat dead level, dark suit with the shirt open at the neck. His right hand holds a revolver up beside his ear, muzzle at the ceiling, clear of his face. A work lamp on the floor throws hard cold white up onto his mouth and chin. Far behind him, exactly on his axis, the round vault door hangs blown open, thick smoke rolling from it, one red alarm lamp turning the smoke and marble columns deep red. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "c008dbad-78c6-4c4b-9442-cd845df46382"
+}

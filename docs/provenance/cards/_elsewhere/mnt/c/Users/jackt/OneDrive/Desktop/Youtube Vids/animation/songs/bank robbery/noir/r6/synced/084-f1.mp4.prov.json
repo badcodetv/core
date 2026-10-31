@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/synced/084-f1.mp4",
+ "made": "2026-10-31T15:02:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "latentsync-1.5",
+ "tool": "scripts/lipsync/latentsync-batch.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f1.mp4",
+ "why": "Colour Noir 2 sung shot: mouth redrawn to the vocal stem slice for its slot",
+ "settings": {
+  "src_in": "0.3",
+  "song_start": "220.2083",
+  "steps": "20",
+  "guidance": "1.5"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n14-a.jpg",
+ "made": "2026-10-31T11:30:08.404Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Low across a card table, 85mm, felt in the near foreground as a teal blur. A silver-haired German American card sharp of about 65, square clean-shaven jaw, duelling scar on one cheek, pale eyes, black waistcoat, faces us three-quarter, unhurried and amused. His far hand is raised out to the side at shoulder height, open, palm up and empty, well away from his mouth. A low copper-shaded lamp lights his face from beneath the shade. Behind him in the soft dark, tables are tipped over, chips and cards scatter and blurred policemen in dark hats push through teal-tinged smoke. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "c288e75f-bc5b-4a9e-97c6-541aada594af"
+}

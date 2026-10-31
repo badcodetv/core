@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a11-b.mp4",
+ "made": "2026-10-31T13:14:57.318Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera travels low alongside at matching speed, holding the safe in place in frame. The chain drags the one safe, bouncing, sparks spraying where it scrapes, cobbles streaking past. Exactly one safe, no people, no cars. Nothing enters the frame. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a11.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a11.jpg"
+ },
+ "source_id": "784168f1-612c-4d3c-b73c-f84cd34e28e0"
+}

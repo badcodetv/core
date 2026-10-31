@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band1/03-a.jpg",
+ "made": "2026-10-31T10:57:03.720Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From down on the floor beside an open basement furnace, looking up at a three-quarter angle through a 50mm lens, with blurred fire glowing in the lower left corner. The singer's head and shoulders take up half the frame against old brick and rusty pipes. Orange furnace light burns along one side of his face and hard green light from the corridor's far end cuts the other, meeting across his open, clearly visible mouth. Above and behind him a burst pipe blasts a jet of steam that catches the green. He sings as if it were a quiet evening. No lettering, no black bars. Thanks.",
+ "source_id": "35dd3654-f7e5-4f1c-a865-eeab1a60e0d4"
+}

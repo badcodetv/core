@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band2/04-a.jpg",
+ "made": "2026-10-31T11:03:00.817Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Slightly high angle from a little above head height with a 28mm lens on a wet cobbled quay at night, looking down so the shining stones and river fill the background. The singer is big in the foreground, his upturned face a third of the frame high, three-quarter to us, jaw wide, lit red from one side and green from the other. Behind him, small and shouting with heads back: a tubby young Italian American trumpeter of about 25, a slim woman drummer of about 35 with bobbed black hair, a Black upright bass player of about 60, tall and white-haired, and a wiry fingerpicking guitarist of about 70, bald. Stacked barrels burn on the quay beyond; the river runs red and green with reflections. No lettering, no black bars. Thanks.",
+ "source_id": "15c27d73-5f0d-422b-aef3-449efc8063d1"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a8-b.jpg",
+ "made": "2026-10-31T11:41:21.301Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Eye-level medium shot on a normal lens, from the bank steps at night, tall open brass doors filling the background, polished and burning with reflections. A round alarm lamp above them flashes hard red with white sparking at its core. Two men run toward us, one a stride ahead, each hauling a heavy canvas sack with no markings in a gloved hand. One is big and barrel-chested, the other thin and long-legged. Long dark coats, collars up. Each whole head is in a hand-knitted cream wool balaclava with no eye holes and no mouth hole, a thin black ring stitched around the face, and high inside it, over one eye's place, near the ring's edge, one small solid red felt triangle with rounded corners. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "d903c86c-5841-47a2-9996-75b9f255e7cd"
+}

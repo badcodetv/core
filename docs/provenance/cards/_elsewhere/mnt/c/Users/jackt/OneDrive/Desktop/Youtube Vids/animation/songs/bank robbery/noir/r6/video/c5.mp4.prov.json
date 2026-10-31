@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c5.mp4",
+ "made": "2026-10-31T12:24:16.851Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera stays locked, single continuous shot. Flames flicker on the press behind them; the men and machine keep their shape, heads nearly still. Nobody else sings. The men shout together: Printer is burning, now now what's occurring? Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c5.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c5.jpg"
+ },
+ "source_id": "26a4bff9-02e8-49ba-9487-a240815c3875"
+}

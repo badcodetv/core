@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/f2-a.jpg",
+ "made": "2026-10-31T11:09:39.343Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Rain-wet highway at night, a bootleg convoy on the move. We look in from outside a moving 1920s sedan, through its open front side window, at a Chinese American man of about 50: thin face, sunken cheeks, sharp chin, clean-shaven, round wire glasses, homburg, three-piece suit, sitting very upright and turned three-quarter toward us. A normal lens, eye level, the dark window frame edging the picture on all sides and his face a good third of its height. A chrome wing mirror low in the corner, well clear of his chin, holds two hard white headlights from the truck behind. A pale gold dash lamp lights his mouth from below left. Past him, the far window shows cobalt night smeared sideways. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "13611c51-3859-4e20-99c8-849d5aef3047"
+}

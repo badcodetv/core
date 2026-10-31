@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/recast/01-b.jpg",
+ "made": "2026-10-31T11:06:34.546Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A stout Italian American man of about 45 stands in the back of an open 1920s touring car at night, round-faced, heavy-jowled, stubbled, a wide gap between his front teeth showing as he sings, hat knocked to the back of his skull. Long lens from level with his shoulders on the car's far side, flattening everything: he turns three-quarter to us, face over a third of the picture's height. Directly behind him the dark green riveted flank of an armoured money truck, unmarked, fills the frame side to side. Blurred banknotes whirl against it, all behind his shoulders. Strings of amber bulbs overhead melt into soft discs and glint on the wet street below. Warm amber falls across his mouth; green shadow holds his far cheek. Thanks.",
+ "source_id": "1504b487-493b-4fa0-bf4e-66d0979eb542"
+}

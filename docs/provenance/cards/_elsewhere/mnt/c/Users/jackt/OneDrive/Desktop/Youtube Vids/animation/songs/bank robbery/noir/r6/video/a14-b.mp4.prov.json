@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a14-b.mp4",
+ "made": "2026-10-31T13:19:21.106Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera pans on a long lens, holding both sedans centred, door to door. Sparks spit where they touch and the amber lights streak behind. Exactly two cars on the road, two drivers. Neither leaves the road or changes shape. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a14.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a14.jpg"
+ },
+ "source_id": "8b0afab7-c665-4ed3-9b0e-7998ba218a7b"
+}

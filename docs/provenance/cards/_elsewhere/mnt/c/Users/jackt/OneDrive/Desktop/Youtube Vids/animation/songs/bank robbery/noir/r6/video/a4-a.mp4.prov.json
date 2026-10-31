@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a4-a.mp4",
+ "made": "2026-10-31T13:01:43.111Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked camera, no movement. The one roadster blasts past the lamp post and out of frame within a second, leaving spray hanging in the green light. Exactly one car, one driver. The lamp post and buildings stay perfectly still. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a4.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a4.jpg"
+ },
+ "source_id": "be803674-edd6-423a-995d-d985c005a2f8"
+}

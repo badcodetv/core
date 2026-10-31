@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r8/synced/010-n04.mp4",
+ "made": "2026-10-31T16:24:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "latentsync-1.5",
+ "tool": "scripts/lipsync/latentsync-batch.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n04.mp4",
+ "why": "Colour Noir 4 sung shot rendered with spare frames so it can be slipped in Premiere",
+ "settings": {
+  "src_in": "0.0",
+  "song_start": "30.4167",
+  "head": "0.3",
+  "steps": "20",
+  "guidance": "1.5"
+ }
+}

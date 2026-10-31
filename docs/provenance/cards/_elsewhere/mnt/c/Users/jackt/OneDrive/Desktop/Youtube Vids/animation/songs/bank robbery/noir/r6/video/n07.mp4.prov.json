@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n07.mp4",
+ "made": "2026-10-31T12:36:20.175Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera slides slowly along the tabletop toward him. Smoke drifts in the far doorway; the distant bankers duck. His head stays almost still. He sings: sorry, did I interrupt your meeting? Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n07.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n07.jpg"
+ },
+ "source_id": "4a12554a-f0e6-4d71-81c2-eb5d264b359a"
+}

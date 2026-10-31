@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/f8-a.jpg",
+ "made": "2026-10-31T11:21:05.552Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "On a tar rooftop at night, a 35mm lens held low and to his left, tilted a few degrees. A young soft-featured Italian American of about 24 sings three-quarter on, his face a third of the frame height: round cheeks, small upturned nose, full lips, a dimple in a smooth chin, wide-set eyes, stubble just starting, hat tipped too far back so his whole face shows, collar open. A Thompson is held up on his far side, muzzle to the sky. Behind him a bullet-riddled wooden water tank on iron legs sprays a dozen thin jets, which catch purple neon from the skyline. A pale yellow bulb on the stair-head to the side lights his mouth clearly. Tar glistens wet around his shoes. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "33fc4e11-ab85-4a8c-95b2-876fa7791780"
+}

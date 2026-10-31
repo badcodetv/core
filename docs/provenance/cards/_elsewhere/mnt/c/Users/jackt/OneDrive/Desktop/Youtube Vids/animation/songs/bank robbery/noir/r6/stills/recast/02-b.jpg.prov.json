@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/recast/02-b.jpg",
+ "made": "2026-10-31T11:06:34.585Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A country road at night, a fake police roadblock. A skinny Irish American man of 22 crouches beside one burst wooden beer barrel, facing us square on: hollow cheeks, pale smooth skin, big jug ears sticking out under a peaked cap too large for him, crooked front teeth, mouth wide. His oversized dark police tunic hangs open at a thin neck, its collar far below his chin. The lens lies at road height, in the foam. Beer spreads toward us in a shining sheet that runs off every side of the picture. A red road lantern at his knee lights his face from beneath, mouth and chin clear. Far behind him, a stopped 1920s flat-bed truck, its load tarped, sits small in cold blue moonlight. Thanks.",
+ "source_id": "e0c5e784-e751-469f-8232-fa072492a520"
+}

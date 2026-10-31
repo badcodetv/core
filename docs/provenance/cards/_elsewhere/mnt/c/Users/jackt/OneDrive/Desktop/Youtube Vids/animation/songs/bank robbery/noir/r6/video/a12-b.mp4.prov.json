@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a12-b.mp4",
+ "made": "2026-10-31T13:16:15.631Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera holds close and drifts an inch sideways. Sheets of banknotes feed through the rollers and fly up, one after another, as flame reflections ripple on the steel. No people. The press keeps its exact shape, and the fire stays at the far end. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a12.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a12.jpg"
+ },
+ "source_id": "1287df59-953f-46d0-849a-e5f9cf75f083"
+}

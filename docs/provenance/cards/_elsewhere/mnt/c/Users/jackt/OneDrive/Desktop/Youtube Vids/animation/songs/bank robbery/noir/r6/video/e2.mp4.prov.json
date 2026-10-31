@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/e2.mp4",
+ "made": "2026-10-31T12:26:30.568Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera sinks slightly toward him, single continuous shot. Rain falls straight down in magenta light; the fire escape stays rigid, his head nearly still. Nobody else sings. He sings: standard plans are for the working man Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/e2.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/e2.jpg"
+ },
+ "source_id": "909b618a-e9ae-4109-ace6-84abdd95eb72"
+}

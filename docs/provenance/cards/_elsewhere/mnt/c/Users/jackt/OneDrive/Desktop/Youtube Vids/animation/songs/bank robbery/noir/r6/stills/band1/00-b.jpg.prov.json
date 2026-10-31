@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band1/00-b.jpg",
+ "made": "2026-10-31T10:57:03.568Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Stage-floor level in a burgundy 1920s lounge, wide lens almost touching the row of footlights. The singer stands alone just above us, facing the lens, his head and shoulders filling half the frame, mouth wide open on a word. Hot yellow footlights rake up under his chin and light his lips and teeth clearly. Far behind him the burgundy velvet curtain has caught fire along its hem, soft and out of focus, and he pays it no attention. Deep shadow above, burgundy and yellow only, polished stage boards gleaming. No lettering anywhere, no black bars. Thanks.",
+ "source_id": "73f876c0-7c34-41c5-ac64-2c259353ab6f"
+}

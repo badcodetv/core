@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/c4-b.jpg",
+ "made": "2026-10-31T11:15:42.636Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "From a few steps up a narrow cellar staircase, a 28mm lens looks slightly down at a crew gathered at the foot. Closest, his face a good third of the frame, a long-faced Black man of 40 with a high forehead, narrow nose and long chin, clean-shaven, white fedora pushed up, sings up at us, overcoat open, collar flat, revolver hanging low at his thigh. On the right a smashed fuse box showers white-gold sparks that light his mouth; the left sinks into deep blue. Smaller behind him: a square-headed German American of 55, cropped grey hair, duelling scars on one cheek, Thompson aimed at the floor, standing tall on the left; a wiry Greek American of 25 with heavy eyebrows, crouched at right, looking back at the sparks. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "874c4acc-cfbf-44c8-9eb9-d31a3ba8fad6"
+}

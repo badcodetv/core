@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c3.mp4",
+ "made": "2026-10-31T13:33:00.066Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera creeps slightly closer, single continuous shot. Liquor ripples around their shins; everything else keeps its shape, heads nearly still. The man in front sings with his mouth wide. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c3-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c3-b.jpg"
+ },
+ "source_id": "55b4ae16-1c59-4e17-8879-f4ac17082de5"
+}

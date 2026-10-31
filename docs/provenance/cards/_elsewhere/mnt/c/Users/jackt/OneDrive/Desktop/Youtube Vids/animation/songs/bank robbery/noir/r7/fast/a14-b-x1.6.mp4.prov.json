@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r7/fast/a14-b-x1.6.mp4",
+ "made": "2026-10-31T15:34:28+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "cut_r7.py",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a14-b.mp4",
+ "why": "Colour Noir 3 action, sped up in the edit by frame sampling",
+ "settings": {
+  "speed": "1.6"
+ }
+}

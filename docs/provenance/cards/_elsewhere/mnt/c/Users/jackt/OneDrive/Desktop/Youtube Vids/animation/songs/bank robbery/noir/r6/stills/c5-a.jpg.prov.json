@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/c5-a.jpg",
+ "made": "2026-10-31T11:18:05.490Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Tight and crowded in a low cellar print shop, a 40mm lens at chest height. Front and centre, face filling almost half the frame, a stooped Jewish printer of 70 with wild white hair, deep creases, large ears, a long nose and a few worn teeth, clean-shaven, ink-black apron over a collarless shirt, sings straight at us. A green glass-shaded lamp hanging just above the lens lights his face and mouth in sickly green. Behind him a counterfeit press burns orange, curling blank sheets lifting off it. At his shoulders, further back and smaller: a skinny young Black apprentice of 18, big-eyed, sleeves rolled, beating at flames with a rag; a beefy red-faced Irish American of 45 with a broken nose, hauling on the press lever. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "d90dfcdf-620c-4620-83e8-7e98647db0b3"
+}

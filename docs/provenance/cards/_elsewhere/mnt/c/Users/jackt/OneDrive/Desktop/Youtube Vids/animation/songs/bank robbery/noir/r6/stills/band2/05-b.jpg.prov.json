@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band2/05-b.jpg",
+ "made": "2026-10-31T11:03:00.867Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Camera on the cobbles with an 18mm lens looking up. Rain falls through the frame. The singer and, a half step behind and smaller, a tubby young Italian American trumpeter of about 25, trumpet held down at his side, stand shoulder to shoulder shouting skyward at a shallow angle, the singer's face three-quarter and a third of the frame high, his mouth clear. A red signal lamp on the ground lights them from below, wet skin shining. Overhead the bridge's iron girders recede into cyan dark, and a loose shower of sparks pours from a severed cable high up behind them. No lettering, no black bars. Thanks.",
+ "source_id": "f39f3b0a-f8ad-482f-99fb-5e0ce1b8472e"
+}

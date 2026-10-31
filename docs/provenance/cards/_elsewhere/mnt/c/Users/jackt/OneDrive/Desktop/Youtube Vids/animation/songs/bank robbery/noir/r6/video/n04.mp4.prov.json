@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n04.mp4",
+ "made": "2026-10-31T12:33:04.792Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera drifts sideways a few inches, slowly. The red warning lamp keeps turning; the car bodies stay perfectly still. His head barely moves. He sings: means of production means a reduction. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n04.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n04.jpg"
+ },
+ "source_id": "f46e4ce5-043a-4064-a471-35d5ccf60388"
+}

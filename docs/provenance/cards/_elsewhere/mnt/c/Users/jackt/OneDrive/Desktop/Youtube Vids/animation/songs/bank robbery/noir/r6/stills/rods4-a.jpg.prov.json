@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/rods4-a.jpg",
+ "made": "2026-10-31T11:33:52.350Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Low wide view from just above the concrete, right beside the front wheel of a stripped teal 1920s hot rod: no fenders, no bonnet, bare engine, one goggled driver hunched behind a cut-down screen. The car fills the left half of the frame, sharp. Half a length behind on the right, one black hot rod of the same kind, its driver low. They run on the dry floor of a sloped concrete river channel at dusk, with a heavy arched bridge just ahead throwing its shadow. Burnt orange sky above the channel walls, teal gloom in the arch. No water, no other vehicles. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "db98373b-1508-4d21-986c-af0359358907"
+}

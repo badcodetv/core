@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/f3.mp4",
+ "made": "2026-10-31T12:17:04.094Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera floats steady at the waterline, single continuous shot, no cuts. Only the flames move, rising on the burning boat behind him and flickering on the water. His head barely moves. Nobody else sings. He sings: that drives the situation Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f3.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/f3.jpg"
+ },
+ "source_id": "75b19b17-3db9-42f1-aa2a-ca83145b46f4"
+}

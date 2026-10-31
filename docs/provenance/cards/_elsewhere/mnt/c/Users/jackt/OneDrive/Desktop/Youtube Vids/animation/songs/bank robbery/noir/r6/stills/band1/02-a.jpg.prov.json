@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band1/02-a.jpg",
+ "made": "2026-10-31T10:57:03.659Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A brick basement corridor seen from hip height through a very wide lens, iron pipes converging overhead, magenta and green light glowing at the far end. The singer stands nearest us, front-on, his face a good third of the frame high, mouth stretched on a shout, firelight clean across it. On the left a furnace door hangs open, bundles of banknotes burning in the fire. On a bench behind him, small and soft: a Black upright bass player of about 60, tall and white-haired; a slim woman drummer of about 35 with bobbed black hair; a tubby young Italian American trumpeter of about 25; a wiry fingerpicking guitarist of about 70, bald. All shout. No lettering, no black bars. Thanks.",
+ "source_id": "8950bf2b-eec1-4991-8a49-947f914e50a3"
+}

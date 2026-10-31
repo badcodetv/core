@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a14-b.jpg",
+ "made": "2026-10-31T11:45:58.051Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Long telephoto shot at night from the far verge of a level road, flattened and side-on. Two black 1920s sedans run side by side, door to door, the nearer one hiding the lower half of the other, with one driver in each behind dark glass. A short spray of white-gold sparks bursts from where their doors touch. Behind them a low stone wall, then a dark river that stays well beyond the road, its far bank a line of amber lights against indigo sky. No lettering, nothing else on the road. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "4e13794d-5a8a-49af-84ae-32f6fe96f669"
+}

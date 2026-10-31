@@ -184,4 +184,54 @@ Departures:
 
 Not checked: nobody has watched any of this at speed. Mouth spans were read from text strips and each take's audio, and song times are Whisper's (loose by 0.1–0.3 s). b/p/m closures were not checked frame by frame. Takes were judged on 3-frame contact sheets.
 
-Outro gunfire (Jack, 2026-10-30): use the clips' own Omni sound so it matches the flashes: `noir/outro/audio/o3-b-gun.wav` at 262 s, `o4-b-gun` 266, `o5-b-gun` 270, `o6-b-gun` 274, `o7-a-gun` 278, all on A2 (gain -5, -2, -2, -2, 0 dB). o1 and o2 left out (a stray hum, an insect buzz). Listening pass: o6's burst is clicky and thin. **Not on the timeline yet:** the files are made, but Premiere had closed and the bridge panel needs loading by hand.
+Outro gunfire (Jack, 2026-10-30): use the clips' own Omni sound so it matches the flashes: `noir/outro/audio/o3-b-gun.wav` at 262 s, `o4-b-gun` 266, `o5-b-gun` 270, `o6-b-gun` 274, `o7-a-gun` 278, all on A2 (gain -5, -2, -2, -2, 0 dB). o1 and o2 left out (a stray hum, an insect buzz). Listening pass: o6's burst is clicky and thin. **On the timeline 2026-10-31:** A2 at those times, bin `Colour Noir outro gunfire`, Volume untouched because the gain is baked into the files. Project saved. Checked: sequence state only, nobody has heard it against the song. The `Outro: guitar, no vocal` marker still says "Empty"; it is out of date.
+
+## Round 6 (Jack, 2026-10-31): the next sequence
+
+His words: `cleanroom/jack-r6.md`. Research (web only): `cleanroom/research-r6.md`. Briefs: `cleanroom/make_briefs_r6.py`.
+
+**The clips he named** (timeline `Colour Noir 1`): 23 s = `safe1-b` (redo, one safe). 55 s = `safe2-c`, keep source 0–3.25 only. 2:15 = `rods4-r3-a` (redo, racing). Band parts: den1, den4, bridge1–4 (redo singing). Still unanimated picks: den3 a, mask4 b.
+
+**Beat grid:** `~/.cache/badcode-scenes/mv-colour-noir/beats.json`, librosa on the no-vocals stem. About 132.5 BPM (0.453 s a beat, 1.81 s a bar). The tracker drifts against a straight line by up to 0.31 s, so cuts use the tracked beats, not a fixed grid.
+
+**Lip sync method changed: LatentSync 1.5** redraws the mouth to the isolated vocal (`stems/htdemucs/song/vocals.wav`). First test passed on `l02-a` at song 70.0–74.3: mouth moves through the whole line, including "stating", where the original mouth had stopped; face and scene kept, a little softer round the mouth. 4 min 4 s and 8.4 GB RAM for 4.3 s. Judged on frame strips only, not watched at speed. This replaces the retime-to-0.67x method of Round 5. Run command: `sudo systemd-run --scope --uid=1000 --gid=1000 -E HOME=$HOME -E PATH=/usr/local/bin:/usr/bin:/bin -p MemoryMax=8500M -p MemorySwapMax=16G …` (a Windows PATH with spaces breaks it; no user bus in WSL, so it needs sudo).
+
+**Kept people, not re-shot:** l05 (barman), l06 (bald moonshiner), f5 (barber), f6 (croupier): already distinct people. The other 19 lip-sync shots are redone with new people in the same settings; the people were assigned by me per shot so writers can't converge.
+
+**Stills (2026-10-31):** all 65 made, Nano Banana 2, 2 takes, in `noir/r6/stills/`. Band shots cast the Character `br-singer` (project 024e4499), whose portrait is a crop of the approved `bridge4-a`; the name failed to save and was fixed by rename by id. My picks and face crops are in `cleanroom/plates_r6.py`, plates in `~/.cache/badcode-scenes/mv-colour-noir/plates/r6/`. No picks page: Jack asked for the sequence.
+
+**Clips:** `scripts/flow/run-shots.mts` from `cleanroom/clips-r6-jobs.json`, log `cleanroom/run-clips-r6.jsonl`, output `noir/r6/video/`. Omni Flash, 16:9, fresh project every 2. Departure from the 8 s x2 default: singing shots 6 s x1, action 4 or 6 s x2, because the cut uses 1 to 4 s of each. den3 and mask4 motion prompts are mine, not a sealed writer's (`cleanroom/motion-r6-mine.json`).
+
+
+### Round 6: clip run result (2026-10-31)
+
+- 66 of 67 jobs resolved; recorded in `cleanroom/run-clips-r6.jsonl`. Takes in `cleanroom/takes-r6.json`, picked by me from frame strips, none watched at speed.
+- **Flow refusals, reworded by me (not sealed writers):** c1, c3 and n18 used take b with the sung line removed from the motion; n14 got a new still `n14c` without the policemen, because the refusal read "might cause reputational risk or misrepresent current events".
+- **Never made:** a7 (firing Thompson, refused twice); slots at 162 and 182.3 now a9 and a11. den3 refused three times; it is now `den3-push.mp4`, an ffmpeg camera push on the still, so nothing in the picture moves.
+- **Sped up in the edit** (frame sampling, `cleanroom/fast_r6.py`): rods4 1.6, a10 1.6, a14 1.6, a1 1.5, a5 1.5, a13 1.3. mask4 at 0.96 to fill its slot.
+- **Lip sync:** `cleanroom/ls-run-r6.json`, 56 sung slots, outputs `noir/r6/synced/`, log `cleanroom/ls-run-r6.json.log.jsonl`. Restartable: finished shots are skipped.
+
+### Round 6: `Colour Noir 2` built (2026-10-31)
+
+Sequence `Colour Noir 2` in bank robbery.prproj, saved. V1 101 clips from `cleanroom/build-r6.json` (audited: no mismatch, no gaps), A1 song.mov, A2 outro gunfire, A3 clip audio muted. Bin `Colour Noir 2 clips`. `Colour Noir 1` not edited. No effects, grade or transitions added.
+
+- 93 of 94 cuts before the outro land within one frame of a tracked beat (the other is the first frame of the film). Median shot 2.29 s; 56 sung shots, 169.8 sung seconds.
+- Lip sync: LatentSync on the vocal stem. `cleanroom/qc_ls_r6.py` screened all 56; 19 flagged, redone from a source in-point with the mouth shut in the vocal's silences (`retry_ls_r6.py`), 17 kept (`ls-choice-r6.json`).
+- **Weakest by measurement, unwatched:** n06 41.4, l02 70.0, n13 125.9, l03 140.0 (mouth open in silence or smile held); b1 90.9, b3 96.4, b6 163.6, f4 227.5 (weak match; b3 and b6 are side-on, the tracker lost the mouth on some frames).
+- Checked by frame strips and measurement only. Nobody has watched this at speed. Song is still the stand-in song.mov.
+
+## Round 7: `Colour Noir 3` (2026-10-31)
+
+Jack on `Colour Noir 2`: "i really liked that cut, however there is too much footage of people lip syncing, add more of the action scenes and have people occasionally lip sync, also fix the lip syncing by editing in premiere and lining up to when they say it, use the skills".
+
+New sequence, `Colour Noir 2` not edited. Plan `cleanroom/cut_r7.py` + `refine_r7.py` → `build-r7.json`. Every non-sung row of Colour Noir 2 stays where it was; 20 of 56 sung shots stay, chosen on how well the mouth tracks the voice (`lag_r7.py`, `mouth-r7.json`); the other sung slots are filled with action on the beats from existing footage, no new generation (shot-craft re-cut mode). Older 8 s clips are used only before their end swerve; safe2-c still stops at Jack's cut. Some action sped up 1.2 to 1.6x (`noir/r7/fast/`).
+
+**Lip sync finding:** averaged over all 56 shots the mouth runs about 40 ms after the voice, so the voice reads slightly early, which the skill says is the direction viewers notice. Each kept shot's picture is slipped by its source in-point in Premiere: 1 to 2 frames as standard, more where one shot measured clearly better (`build-r7.json` field `slip`). Measured only, from mouth gap against vocal loudness, not watched.
+
+**Premiere:** one 159-clip eval froze Premiere at 15:37; Jack restarted it and the same rows went down in four batches with saves between, in under a second each. Cause of the freeze not established: the batched run differed in also walking the project once and saving between.
+
+## Round 8: `Colour Noir 4` (2026-10-31)
+
+Jack: "colour noir 2 was better, please just remove some of the people singing, as in like only remove a few and put action clips there instead, but keep most of it and fix the existing lip syncing there".
+
+New sequence built from `Colour Noir 2`, shot for shot. `cleanroom/prep_r8.py` + `cut_r8.py` → `build-r8.json`. 8 sung shots became action on the beats, picked by weakest tracking: n06, l02, b1, b3, n10, b6, e2, f4. The other 48 were re-rendered (`noir/r8/synced/`) with spare frames at each end, so each picture is slipped in Premiere with no cut moved: 2 frames standard, moved only where that shot measured clearly better. Measured only, not watched. `Colour Noir 3` kept in the project; Jack preferred 2 over it, so it is a dead end.

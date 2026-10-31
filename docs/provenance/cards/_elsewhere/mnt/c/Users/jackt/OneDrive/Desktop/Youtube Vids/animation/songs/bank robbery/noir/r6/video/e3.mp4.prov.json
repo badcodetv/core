@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/e3.mp4",
+ "made": "2026-10-31T12:09:51.131Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera sits fixed on the bonnet with a faint engine tremble. Steam rolls slowly behind him, a few sparks in it; the gate stays where it lies. He sings: and this right here is a next level scam. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/e3.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/e3.jpg"
+ },
+ "source_id": "1bb70e6e-f867-4680-bd61-fde8b23de775"
+}

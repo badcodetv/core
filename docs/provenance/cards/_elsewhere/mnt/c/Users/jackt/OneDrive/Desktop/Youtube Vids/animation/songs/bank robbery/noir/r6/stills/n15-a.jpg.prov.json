@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n15-a.jpg",
+ "made": "2026-10-31T11:30:37.959Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Camera backing away in front of him at chest height, 28mm, down a steel vault corridor in the 1920s. A sweating stocky Puerto Rican man of about 38, round face, thick eyebrows, stubble, wet black hair, shirt open under dark braces, leans into a wooden wheelbarrow low in the frame, heaped with plain gold bars, his face a third of the frame height, front-on, singing between breaths. Behind him the corridor runs to a round open vault door. Red alarm light pulses on riveted walls from behind. Cold steel-blue caged bulbs overhead light his face, and the gold bounces warmth up under his chin. The gold is unmarked. The picture runs edge to edge. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "f7d685c1-3dcc-4b17-add1-6d0db2e64755"
+}

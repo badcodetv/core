@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/e1-b.jpg",
+ "made": "2026-10-31T11:18:34.965Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A long 135mm lens at eye level picks out a dapper Cuban American of about 35 in the foreground of a night-time hold-up, his face a third of the frame height, turned three-quarter to us, singing as if ordering coffee. Thin face, long fine nose, narrow chin, small neat ears, clean-shaven, one gold tooth, cream fedora, cream suit, tie loosened and open at the throat. A warm amber headlamp lights his mouth from the side. Behind him, soft with distance, a riveted 1920s armoured truck stands with rear doors hanging open, split canvas sacks on the wet street, unreadable banknotes hanging in the air, teal neon wash over the whole city block. Nobody else near him; two far blurred figures carry sacks. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "e040cfeb-7f51-4cab-8172-421966a4a1af"
+}

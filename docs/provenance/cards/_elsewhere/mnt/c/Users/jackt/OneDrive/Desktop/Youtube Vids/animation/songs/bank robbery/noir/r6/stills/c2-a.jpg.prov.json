@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/c2-a.jpg",
+ "made": "2026-10-31T11:14:17.685Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Chest-height 28mm lens tilted a few degrees off level, inside a timber dock warehouse at night under sagging strings of bare bulbs, whiskey barrels stacked into the dark. Nearest the lens, face filling a third of the frame and turned three-quarter to us, an Italian American of 25 shouts: sharp jaw, thin hooked nose, slick black hair, clean-shaven, one arm straight up holding a revolver at the rafters, well clear of his face. Behind him to the right, a head taller than anyone should be, an enormous Samoan dock worker of 35 with a broad flat nose, head thrown back, lifts a Thompson one-handed. Further back at left, barely reaching the big man's elbow, a tiny old Jewish bookkeeper of 70 with thick round glasses and big ears stands on tiptoe, revolver raised in both hands. Amber bulbs overhead, cold cyan moonlight through the slats behind, unmarked barrels to every edge. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "3d0dd324-f23e-43d7-ae40-9935a1764810"
+}

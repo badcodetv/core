@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band2/00-b.jpg",
+ "made": "2026-10-31T11:03:00.720Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Long 85mm lens across a roulette table in a burgundy lounge, the wheel a blurred gold arc along the very bottom of the frame, well below the chin. One low green-shaded lamp overhead pools light on two men. The singer, three-quarter to us and sharp, fills a third of the frame height with his mouth open mid-word, the lamp full on his lips. Just behind his shoulder and smaller, a Black upright bass player of about 60, tall and white-haired, leans on the instrument's neck, mouth closed. Far back through a doorway, a small hand-press burns orange, loose blank sheets curling. Green and orange against shadow. No lettering, no black bars. Thanks.",
+ "source_id": "81164d87-d973-4893-b755-383e362b7567"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a2-a.mp4",
+ "made": "2026-10-31T12:59:19.975Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera skims forward an inch above the road, falling behind. The one car pulls straight away down the centre, and neon reflections streak past under the lens. Exactly one car, no people, no other traffic. Its shape stays fixed as it shrinks. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a2.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a2.jpg"
+ },
+ "source_id": "cb22313d-af49-4878-aadd-0886cca796db"
+}

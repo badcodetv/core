@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/d1.mp4",
+ "made": "2026-10-31T11:52:09.560Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera creeps in slowly in one unbroken shot. Only the distant curtain flames flicker while his head stays nearly still. He sings: Robbery, robbery! Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/d1.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/d1.jpg"
+ },
+ "source_id": "654a5d26-cca8-445b-a7f9-eb19fec45efd"
+}

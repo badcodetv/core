@@ -1,0 +1,68 @@
+[
+ {
+  "id": "c1",
+  "kind": "clip",
+  "prompt": "Camera creeps in very slightly, single continuous shot. Flames flicker on the car behind them while each man keeps his own place and pose. The man in front sings with his mouth wide. Thanks.",
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c1.mp4",
+  "startImage": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c1-b.jpg",
+  "count": 1,
+  "seconds": 6,
+  "model": "Omni Flash",
+  "aspect": "16:9"
+ },
+ {
+  "id": "c3",
+  "kind": "clip",
+  "prompt": "Camera creeps slightly closer, single continuous shot. Liquor ripples around their shins; everything else keeps its shape, heads nearly still. The man in front sings with his mouth wide. Thanks.",
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/c3.mp4",
+  "startImage": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/c3-b.jpg",
+  "count": 1,
+  "seconds": 6,
+  "model": "Omni Flash",
+  "aspect": "16:9"
+ },
+ {
+  "id": "n14",
+  "kind": "clip",
+  "prompt": "Camera tracks a little sideways, slowly. Smoke drifts through the blurred room behind him; his open hand stays still. His head barely moves and he sings. Thanks.",
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n14.mp4",
+  "startImage": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n14-b.jpg",
+  "count": 1,
+  "seconds": 6,
+  "model": "Omni Flash",
+  "aspect": "16:9"
+ },
+ {
+  "id": "n18",
+  "kind": "clip",
+  "prompt": "Camera holds on the long lens with an almost imperceptible push. Steam drifts from the kitchen door behind him; the line stands still. His head stays nearly still and he sings. Thanks.",
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n18.mp4",
+  "startImage": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n18-b.jpg",
+  "count": 1,
+  "seconds": 6,
+  "model": "Omni Flash",
+  "aspect": "16:9"
+ },
+ {
+  "id": "a7",
+  "kind": "clip",
+  "prompt": "Camera holds still, looking up from the floor. Plaster dust drifts slowly down through the coloured light and he shifts his weight. Exactly one man. Thanks.",
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/a7.mp4",
+  "startImage": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/a7.jpg",
+  "count": 2,
+  "seconds": 4,
+  "model": "Omni Flash",
+  "aspect": "16:9"
+ },
+ {
+  "id": "den3",
+  "kind": "clip",
+  "prompt": "Camera holds with an almost imperceptible push, single continuous shot. Smoke drifts slowly through the coloured light. Everything else keeps its shape. Thanks.",
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/den3.mp4",
+  "startImage": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/den3.jpg",
+  "count": 2,
+  "seconds": 4,
+  "model": "Omni Flash",
+  "aspect": "16:9"
+ }
+]

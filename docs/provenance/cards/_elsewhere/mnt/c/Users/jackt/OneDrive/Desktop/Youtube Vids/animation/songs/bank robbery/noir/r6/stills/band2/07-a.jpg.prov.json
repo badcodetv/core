@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band2/07-a.jpg",
+ "made": "2026-10-31T11:03:00.927Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night at a stone bridge pier on wet cobbles, a 40mm lens at waist height, off to one side. The singer stands closest, three-quarter to us, face a third of the frame high, singing with an open mouth, warm orange from a burning oil-drum brazier on the cobbles lighting his lips. Just beyond him and smaller, a slim woman drummer of about 35 with bobbed black hair sits at a small plain kit, sticks raised. Behind them a stopped 1920s car's two round lamps glow violet through the haze, its windscreen shattered and radiator steaming. Orange and violet only, his breath just visible. No lettering, no black bars. Thanks.",
+ "source_id": "3a444b46-822b-4de6-afb9-b6f50e948590"
+}

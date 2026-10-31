@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n07-a.jpg",
+ "made": "2026-10-31T11:25:18.045Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Lens at the height of the tabletop, 21mm, at the head of a long polished boardroom table in a 1920s bank. An elegant Mexican American gunman of about 35, lean clean-shaven face, sharp cheekbones, oiled black hair, cream double-breasted suit, sits three-quarter on in the chairman's seat, one hand resting a Thompson upright on his far thigh with the muzzle at the ceiling, well clear of his face. He sings politely. The table runs away behind him to a far doorway full of drifting gunsmoke; small bankers in black dive under it at the far end. Gold wall lamps warm his face; red light fills the smoke. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "83cf84d2-d985-4d43-bb33-a0761c629829"
+}

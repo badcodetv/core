@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/l04.mp4",
+ "made": "2026-10-31T12:12:55.608Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera holds still on the long lens, single continuous shot, no cuts. The column of water collapses slowly behind his shoulder. His head barely moves. Nobody else sings. He sings: it is the devil with a radio station Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/l04.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/l04.jpg"
+ },
+ "source_id": "543cd372-e196-4cd5-b876-ce0e8b12a54c"
+}

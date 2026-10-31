@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/video/n01.mp4",
+ "made": "2026-10-31T12:29:53.599Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Camera creeps slowly in from knee height. The distant launch burns; everything else holds. His head barely moves. He sings: They say, ya can't make money from a tree. Nobody else sings. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n01.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/r6/n01.jpg"
+ },
+ "source_id": "0352a66d-6d2f-4546-a2d2-bd46a6934d2d"
+}

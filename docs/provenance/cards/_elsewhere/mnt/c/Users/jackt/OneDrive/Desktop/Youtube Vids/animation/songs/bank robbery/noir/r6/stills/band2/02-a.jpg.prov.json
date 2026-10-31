@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/band2/02-a.jpg",
+ "made": "2026-10-31T11:03:00.766Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "br-singer"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night under a riveted iron bridge, shot at eye level with a long 100mm lens. A big round car headlamp blazes just out of frame on the right, throwing hard white-gold light straight across the singer's face. He is close, three-quarter to us, his face half the frame high, mouth wide open, every tooth lit. Behind him the river is pure black, dissolving city lights into soft blue and gold discs, and out on the water, blurred, a rum barge burns. Cold blue shadow falls on the side of his face away from the lamp. No lettering, no black bars. Thanks.",
+ "source_id": "eda664f0-4e00-4877-811a-eadd6f3d2229"
+}

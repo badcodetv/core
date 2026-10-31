@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/n01-a.jpg",
+ "made": "2026-10-31T11:21:42.444Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Night on the teak afterdeck of a private yacht, 1920s, seen from knee height through a wide lens. A heavy, jolly white banker of 60, clean-shaven, round red cheeks, double chin resting above an open wing collar, white dinner jacket, stands three-quarter to us with his face taking up a third of the frame, mouth open on a big happy note. Far behind him over black water a wooden motor launch burns, small, its fire doubled on the swell. A sea-green deck lantern lights his face and mouth; the fire rims his shoulder orange. Full frame, no bars. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "2c2f9c1b-1665-460d-a2d1-aff82cd2db18"
+}

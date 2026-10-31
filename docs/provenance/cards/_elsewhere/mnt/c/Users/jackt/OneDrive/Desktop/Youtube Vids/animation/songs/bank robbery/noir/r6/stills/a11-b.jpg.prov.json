@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/r6/stills/a11-b.jpg",
+ "made": "2026-10-31T11:43:37.854Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "The lens sits on the cobbles right beside one small green steel safe, its dented corner close enough to fill a third of the frame. A taut chain runs from its handle out of the top right corner. A wide fan of orange sparks sprays out behind where its base scrapes the stone. The street around it is cold blue-violet at night, wet cobbles falling away into darkness, closed shop fronts only as dark masses. No car in view, no people, no boxes or other objects anywhere on the road. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": null,
+ "inputs": {},
+ "source_id": "b2caac6e-cbaf-4368-a41d-196f0938405e"
+}
