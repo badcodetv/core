@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/02.jpg",
+ "made": "2026-11-01T11:06:51.280Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still of a Black British man with a broad forehead, deep-set heavy-lidded eyes with dark, puffy undereyes, a full beard going grey in patches at the chin and cheeks, a grey-flecked close-cropped head and a slightly rounded, tired face with a scar through the left eyebrow. He wears a black polyester zip-up tracksuit top with its zip pulled halfway, over a crumpled white T-shirt. He has stopped just under a ceiling-corner camera in a community leisure-centre gym and tilted his head up to glance at it, his mouth slack and his gaze weary and watchful, one shoulder turned towards the door he has just checked. The view is from high above and a little to the side, so we see the crown of his head, the top of his nose and his beard. Behind him are blue exercise mats stacked against a wall, a dented water fountain and a scuffed double door. Light comes from a row of ceiling panels that flicker slightly and cast flat, shadowless illumination, with a cold bright window at the edge of the frame. The picture is slightly muddy and compressed, with dulled colour and visible grain, as from a fixed unattended camera. The frame is bare picture only: no text, numbers or interface graphics. Thanks.",
+ "source_id": "d40e0582-2731-4086-8cc9-28b954b211fc"
+}

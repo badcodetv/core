@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2/03.jpg",
+ "made": "2026-11-01T10:59:06.304Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic, slightly washed-out frame from the front camera of a phone propped against a stack of paperbacks on a shelf in a rented attic room, the picture soft and a little grainy as a cheap lens gives it, the image filling the whole frame edge to edge with nothing laid over it. Brandon, 22, a skinny underfed young man with a narrow, very pale face, a scatter of angry red spots across his forehead and chin, thin cracked lips, sunken cheeks and ears that stick out like open car doors, mousy hair flattened on one side from the pillow. He sits cross-legged on a bare single mattress in a faded oversized grey hoodie with frayed cuffs, wrists like sticks, looking at the lens with a hopeful, blank stare, mouth slightly open as if mid-sentence. The only light is the glow of the phone screen on his face from below, mixing with a dim orange bulb out of frame, so his skin looks greenish-white and the sloping attic ceiling behind him falls into murky shadow. Visible pores, shiny oily patches at the nose, dry flaking skin by one eyebrow, mismatched cheap bedding and a damp patch on the plaster behind him. Thanks.",
+ "source_id": "0997cc8d-172b-4c8d-aecc-cbcd6cb53043"
+}

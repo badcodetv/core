@@ -1,0 +1,15 @@
+{
+ "story": "stupidity-optimised",
+ "scene": "film",
+ "prefix": "so",
+ "title": "Stupidity Optimised, the film",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film",
+ "flow_project": "109f03c0-890e-49e9-9030-44c3bcd23c52",
+ "video": {
+  "model": "Omni 1.1 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "flow_project_stills": "9a665660-e7be-46b8-934e-7247b9c5b48a"
+}

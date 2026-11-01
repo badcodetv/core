@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/43.jpg",
+ "made": "2026-11-01T11:53:49+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A photograph from a lens fixed above the doorway of a small shop, looking down and across a narrow pavement and a town high street in flat grey daylight. Brandon walks along the pavement past parked cars and a bin, one hand holding a phone at hip height, its screen turned away from the lens, his gaze straight ahead. Wet paving, a lamp post and brick terraces give the scene washed-out colour and slight lens distortion at the edges. He is small in the frame. Thanks."
+}

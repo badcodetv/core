@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2/00.jpg",
+ "made": "2026-11-01T10:59:06.269Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic wide, downward-looking picture of a cramped, cheap basement gym in a small English town, taken from a fixed point high in one corner of the ceiling, close to the wall, as if a small unattended camera were bolted up there and nobody was behind it. Nothing is framed for effect: the bench press sits slightly off to the left, a rack of mismatched rubber-coated dumbbells and a cracked mirror fill the right, and the floor is scuffed black rubber matting with a bald patch near the door. On the bench lies a gangly young man with a long pale face, a weak chin, a patchy ginger-brown beard that has not decided to grow, narrow sloping shoulders and a washed-out grey hoodie rolled up to his elbows, straining under a bar loaded with thin plates and shaking visibly. Standing over his head, spotting him, is a heavy-set older man with a shaved head, thick grey stubble, a sunburnt neck, a belly pushing out a faded navy vest, and the tired, patient expression of someone who has watched this go wrong before. Both are small in the frame, seen from above and slightly to the side, their faces tilted and partly foreshortened. The only light is two flickering tube lights in the ceiling, giving a flat greenish-white wash, with a dim doorway of daylight at the far end that burns out to pale white. The picture is soft and slightly smeared, low in resolution, with faded washed-out colour, muted greens and greys, visible noise in the shadows and gently bowed edges from a cheap wide lens, filling the whole frame edge to edge with only the room itself in view. Thanks.",
+ "source_id": "6772711b-a950-4474-8e47-08ea33f8dde2"
+}

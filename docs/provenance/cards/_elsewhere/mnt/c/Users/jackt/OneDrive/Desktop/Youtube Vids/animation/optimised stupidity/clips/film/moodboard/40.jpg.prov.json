@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/40.jpg",
+ "made": "2026-11-01T11:51:00+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A photograph from a lens fixed in the ceiling corner of the attic, looking down at a single bed in grey daylight from a small window. Brandon kneels on the mattress tucking the duvet edge tight under the mattress with both hands, brows drawn together, tongue pressed in one cheek, eyes on the corner. The bed is flat and square, the floorboards are swept and the clothes are folded in a pile on a crate. The picture is soft, washed out and a little noisy. Thanks."
+}

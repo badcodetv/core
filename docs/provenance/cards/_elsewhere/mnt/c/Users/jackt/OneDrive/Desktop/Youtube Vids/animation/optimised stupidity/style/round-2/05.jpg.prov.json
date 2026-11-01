@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2/05.jpg",
+ "made": "2026-11-01T10:59:06.325Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still from the front camera of a phone wedged into the gap of a wardrobe door in a rented attic, the lens close and slightly wide so the face stretches a touch at the edges, picture noisy and dim like a phone in a poorly lit room, the whole frame clean photograph with nothing overlaid. Brandon, 22, a gangly young man with a long horse-like face, a pronounced overbite that keeps his front teeth resting on his lower lip, a prominent Adam's apple, and a home-bleached fringe that has turned a brassy, patchy orange with darker brown roots showing at the parting. He is crouched forward on the edge of a sagging bed in a thin black t-shirt with a cracked print, long collarbones, knobbly shoulders, eyes wide and a little too intense, mid-grin, head tilted toward the lens. Light comes from one bare bulb on a flex hanging off-centre above him, throwing hard shadows under his brow and nose, plus a faint blue flicker from the screen. Chemical-damaged straw-like hair, a pink scalp patch where the bleach burned, a few stubble hairs on a narrow chin, fading yellow bruise on one forearm, peeling wallpaper behind. Thanks.",
+ "source_id": "81991683-dfcd-47d6-b687-2e8f1d9ae2a6"
+}

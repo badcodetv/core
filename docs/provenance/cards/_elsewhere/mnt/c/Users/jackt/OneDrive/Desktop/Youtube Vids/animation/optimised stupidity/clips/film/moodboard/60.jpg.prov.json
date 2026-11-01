@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/60.jpg",
+ "made": "2026-11-01T12:09:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A corner table in an ordinary English pub in the afternoon, completely empty of people, seen from a lens fixed high above the bar and looking down at an angle across the room. A half-drunk pint of bitter stands on a round table with a beer mat folded under one edge, a padded stool pushed in on each side and a patch of daylight from a leaded window lying across the carpet. Brass horse-shoes on a rail, a threadbare red carpet and a dim wall lamp that is switched off. The colour is washed out and compressed, the daylight window slightly blown out, the picture grainy and soft at the edges. Thanks."
+}

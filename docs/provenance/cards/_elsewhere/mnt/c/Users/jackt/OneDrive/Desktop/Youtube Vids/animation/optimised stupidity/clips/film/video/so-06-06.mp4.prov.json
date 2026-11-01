@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-06-06.mp4",
+ "made": "2026-11-01T13:04:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon types with both thumbs in short bursts, his lips moving silently, then stops and stares at the phone. Later, he leans back a few centimetres, rubs his eye with the heel of his hand and shifts his weight on the mattress. The phone glow flickers across his chin as the screen changes. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: soft thumb taps, a mattress spring creaking, a faint phone buzz, wind against the skylight. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/06.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/06.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "06",
+  "frame": 6,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T12:50:32.377Z"
+ }
+}

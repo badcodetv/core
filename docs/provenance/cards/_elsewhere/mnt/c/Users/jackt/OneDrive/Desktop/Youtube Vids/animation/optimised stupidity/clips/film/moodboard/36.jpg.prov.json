@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/36.jpg",
+ "made": "2026-11-01T11:47:36+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A photograph taken by a small unattended lens fixed in the sloped ceiling above a rented attic room, looking straight down at a single bed under the rafters at night. Brandon lies on his back with the duvet to his chest, his face lit pale blue-white from below by the phone held above him, the phone's face turned away from the lens. The rest of the attic is almost black, with grainy night-mode noise, washed-out compressed colour, and a bare floorboard gap at the edge of the frame. The angle is high, wide and flat, and Brandon is small in the frame. Thanks."
+}

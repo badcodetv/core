@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/00.jpg",
+ "made": "2026-11-01T11:06:51.253Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still of a heavy-set, slouching man with a wide soft face, a pale bald crown ringed by thin grey stubble, deep lines from nose to mouth, loose jowls and tired, pouched eyes that are slightly bloodshot. He wears a washed-out grey cotton vest that sags at the neck and shows pink sunburnt shoulders and freckled forearms. He has stopped directly beneath a camera fixed high in the corner of a municipal gym and glanced up and back over his shoulder, his chin tilted up so the lens looks down on his scalp and brow, his expression flat and unhappy as he checks the room. Behind him are rubber floor tiles, a rack of chipped black dumbbells and a pale breeze-block wall. The only light is a flat, greenish strip light directly overhead that leaves shadow in his eye sockets and under his chin. The picture is soft, slightly smeared and low in contrast, with muted colour and fine digital noise, as if a cheap fixed camera had recorded it unattended. Entirely clean frame with no overlay, lettering or numerals of any kind. Thanks.",
+ "source_id": "5afc0dbb-5c1e-4a99-8250-01912935b327"
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/077-jenny.wav",
+ "made": "2026-11-01T18:16:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "stupidity-optimised voice run",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "That's nice, love. Where are the emails?",
+ "inputs": {
+  "profile": "# AUDIO PROFILE: A woman in her forties from West Yorkshire.\n\n## THE SCENE: On her doorstep in Halifax in the cold.\n\n### DIRECTOR'S NOTES\nStyle: Quick, exact, dry, no patience, warm only by accident.\nAccent: West Yorkshire, natural.\nPace: Brisk.\nClear articulation. Speak only the transcript.\n",
+  "profile_file": "docs/stories/stupidity-optimised/scenes/film/voices/jenny.md"
+ },
+ "settings": {
+  "voice": "Kore",
+  "temperature": 1,
+  "channels": 2
+ }
+}

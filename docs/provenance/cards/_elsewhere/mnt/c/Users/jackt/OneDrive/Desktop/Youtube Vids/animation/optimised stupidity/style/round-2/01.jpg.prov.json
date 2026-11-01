@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2/01.jpg",
+ "made": "2026-11-01T10:59:06.282Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic picture of a rented attic bedroom at night, seen from a laptop left open and propped on a rumpled duvet at the foot of a single bed, so the lens looks slightly up and across at the room, close to the floor and tilted a few degrees off level. A very thin young man with a round, doughy, spotty face, small close-set eyes, big ears, a scrubby neck beard and uncombed black hair is on his back on a bare patch of carpet between the bed and a sloping roof beam, hands clasped behind his head, in the middle of a crunch, face screwed up with effort. He wears a huge stained charcoal hoodie, grey jogging bottoms gone shiny at the knees and one white sock with a hole in the heel. His phone lies on the carpet beside his head and is the main light: a cold blue-white glow from below that lights his chin, nostrils and the underside of the sloping ceiling, and leaves the rest of the attic in deep murk. Around him are a heap of unwashed clothes, a mug with a skin of something in it, a bare mattress edge, a clothes rail bowed under hoodies, and a small dormer window showing a dull orange streetlight smear. The picture is dark and grainy as if the camera is struggling in low light, with crushed shadows, smudged detail, slightly blown highlights where the phone glows, washed-out colour and a faint softness, and it fills the whole frame edge to edge with only the room and the people in it. Thanks.",
+ "source_id": "f700c9b5-7ff3-42ab-9f39-52d12c62273a"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2/02.jpg",
+ "made": "2026-11-01T10:59:06.293Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic wide picture of the inside of a parked ambulance's patient bay, taken from a small fixed lens tucked into the ceiling corner above the rear doors, looking down the length of the compartment, with nobody operating it and no movement in the framing. The curved wall is lined with cupboards of grey plastic, a strapped-in oxygen cylinder and a pale yellow sharps bin. On the stretcher lies a skinny young man with a narrow lopsided face, a broken-looking nose, bad skin on his forehead, pale eyebrows and a flat blond fringe stuck down with sweat, wearing a thin white t-shirt and one trainer. His right arm lies across his chest wrapped in an enormous lumpy mess of white medical tape and a sagging crepe bandage, fingers poking out puffy and purple, and in his other hand he gripping a plain unmarked plastic shaker bottle of chalky beige liquid, looking at it with a mixture of pride and shame. Seated beside him on a fold-down seat is a stocky woman paramedic in her thirties with a square freckled face, a short practical brown ponytail, wide set tired eyes and a green uniform with the sleeves pushed up, one gloved hand on his wrist, her mouth set in flat disbelief. Both are seen from above and foreshortened, small in the picture. The only light is a hard, cold white strip across the ceiling that makes the steel and plastic shine, with the street outside turning the rear window into a pale blur. The picture is slightly soft, faded and low in resolution, with muted greens and greyish whites, noise in the corners and gentle bowing at the edges from a cheap wide lens, filling the whole frame edge to edge with only the vehicle interior in view. Thanks.",
+ "source_id": "02dfadb4-47c0-4aa9-a75d-663d01cb5cfc"
+}

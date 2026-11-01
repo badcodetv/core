@@ -1,0 +1,21 @@
+[
+ {
+  "at": "2026-11-01T10:45:25+00:00",
+  "stage": "other",
+  "round": 1,
+  "url": "https://claude.ai/artifact/7vGpNUt3qLuG5krkN32G9v",
+  "what": "style round 1: 10 looks, 0 sounds; clean room, voices picked by Claude after",
+  "rebuild": "python3 scripts/story-style/build-page.py docs/stories/stupidity-optimised/style/round-1 /tmp/claude-1000/-home-jackt-projects-badcode-badcode/7a9bebed-898a-4f6d-b8f1-c5e171af534f/scratchpad/stupidity-optimised-style.html"
+ },
+ {
+  "at": "2026-11-01T10:52:58+00:00",
+  "stage": "other",
+  "round": 1,
+  "what": "Jack's pick from round 1",
+  "decided": [
+   "i like the The Rig and the Feed one but without the text on the screen"
+  ],
+  "feedback": "feedback/other-r1",
+  "feedback_docs": 1
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/052-brandon.wav",
+ "made": "2026-11-01T18:21:01+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "stupidity-optimised voice run",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I've got a verruca, my landlord's called Phil, and I've never been kissed. D'you want my PIN?",
+ "inputs": {
+  "profile_file": "docs/stories/stupidity-optimised/scenes/film/voices/brandon.md"
+ },
+ "settings": {
+  "voice": "Sadachbia",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/008-narrator.wav",
+ "made": "2026-11-01T18:20:22+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "stupidity-optimised voice run",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I think this is his first conversation this year. I'm proud of him.",
+ "inputs": {
+  "profile_file": "docs/stories/stupidity-optimised/scenes/film/voices/narrator.md"
+ },
+ "settings": {
+  "voice": "Pulcherrima",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-41-41b.mp4",
+ "made": "2026-11-01T17:40:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon eases the spanner a quarter turn on the chrome valve, pauses and peers at the pipe. Afterwards he lets go of the spanner, lifts one thumb beside his face and his eyes crinkle. The overhead strip light hums. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Metal on metal, a faint tick of pipework, a quiet pleased exhale through the nose. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/41b.jpg",
+ "why": "The first still and clip had a second Brandon under the sink.",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/41b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "41",
+  "frame": 41,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T17:31:09.955Z"
+ }
+}

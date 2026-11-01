@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-33-33.mp4",
+ "made": "2026-11-01T14:41:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The bodybuilder draws in a shuddering breath, his chest heaving under his hand, and tears run slowly down his cheeks into his ginger beard. Later he bows his head, then lifts it again with his lip trembling. The bright ring light gives a faint electrical shimmer on the mirror behind him. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: a wet, shaky inhale, a sniff, the hum of the ring light, the faint clink of a weight plate settling in the rack. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/33.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/33.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "33",
+  "frame": 33,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T14:26:44.248Z"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/38.jpg",
+ "made": "2026-11-01T11:49:17+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A photograph from a lens fixed high in the corner of a cramped attic, looking down diagonally at a pine desk under a bare bulb. Brandon sits at the desk with a printed sheaf of paper flat in front of him, one finger under a line of text that is too small to read, his mouth slightly open and brows raised in wonder. A desk lamp with a cracked plastic shade, a cold mug and a wire pen pot crowd the desk. The light is a single warm bulb plus a grey window, with heavy grain and washed-out colour. Thanks."
+}

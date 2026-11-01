@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-45-45b.mp4",
+ "made": "2026-11-01T17:40:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon jogs steadily along the pavement and away down the street while the yellow ambulance creeps forward in a straight line beside him, always facing the same way. Sophie's head turns a little to keep watching him through the window. Its blue roof lights stay unlit. A leaf spins along the gutter. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Rhythmic running footfalls, a low diesel engine idle, tyres on wet tarmac, a distant dog bark. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/45b.jpg",
+ "why": "The first clip's ambulance became a white van marked POLICE and swung round.",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/45b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "45",
+  "frame": 45,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T17:31:43.918Z"
+ }
+}

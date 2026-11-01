@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-57-57.mp4",
+ "made": "2026-11-01T15:41:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The woman clicks and drags the mouse slowly down the screen, then stops, her head tilted, and holds still over one line. Later she leans back in the swivel chair and rubs the back of her neck with one hand. The vending machine light hums and pulses faintly in the dark corner. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a mouse click, a chair creaking, the low hum of air conditioning, a vending machine compressor humming. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/57.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/57.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "57",
+  "frame": 57,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T15:28:47.247Z"
+ }
+}

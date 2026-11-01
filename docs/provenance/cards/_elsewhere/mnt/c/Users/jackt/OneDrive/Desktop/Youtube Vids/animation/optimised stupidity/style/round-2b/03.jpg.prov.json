@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/03.jpg",
+ "made": "2026-11-01T11:06:51.300Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still of a soft-bodied man with heavy jowls, a thick neck, a nose that was broken once and sits crooked with a flattened bridge, small close-set brown eyes under a creased brow, a high receding hairline with wispy dark hair above the ears, and blotchy red cheeks with broken veins. He wears a faded, thin cotton T-shirt in washed-out orange from an old charity fun run, its printing cracked and illegible, stretched over his belly and with a small stain near the hem. He has walked underneath a camera bolted high in the corner of a gym and glanced up at it with a tired, sidelong look, mouth slightly open, one eyebrow lowered as he checks the room. We look down at him from above, so his forehead and receding hair dominate and his chin doubles. Behind him are a treadmill, a scuffed wall of peeling green paint and a stack of grubby yoga blocks. A hard overhead tube light puts dark shadows under his brow and nose, and a dirty skylight smears pale daylight across one side of the floor. The image is slightly soft and bleached with fine noise and flattened colour, as if captured by a fixed lens that nobody operates. Nothing is written or drawn over the picture: no characters, no marks, no interface. Thanks.",
+ "source_id": "f7b7d9d6-fcf2-40fc-b6bd-54c62aed3b9b"
+}

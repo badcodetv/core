@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-72-72.mp4",
+ "made": "2026-11-01T16:48:10+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Giles beside the steel table keeps one finger pressed to his ear and his lips move softly without forming clear words, while his gaze stays on the floor. Later in the eight seconds he shifts his weight onto his other foot and his eyes lift briefly to the white sheet before dropping again. A fluorescent tube flickers faintly over the sink. The camera does not move. Audio: the buzz of a fluorescent tube, a refrigeration unit humming, the squeak of a rubber sole on tile, a slow drip from the sink. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/72.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/72.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "72",
+  "frame": 72,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T16:35:40.147Z"
+ }
+}

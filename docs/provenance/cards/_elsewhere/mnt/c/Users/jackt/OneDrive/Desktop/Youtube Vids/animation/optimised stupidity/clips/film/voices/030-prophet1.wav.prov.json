@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/030-prophet1.wav",
+ "made": "2026-11-01T18:13:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "stupidity-optimised voice run",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Guys. I lied to you. It was steroids. It was always steroids. I've never felt so vulnerable. If you're on your own healing journey, use code HONEST20 for twenty percent off my new programme.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE: A big upbeat salesman of a man in his forties from Manchester.\n\n## THE SCENE: In his home gym in Manchester, in front of a ring light.\n\n### DIRECTOR'S NOTES\nStyle: Crying on cue while still selling. His voice cracks and the sales pitch still lands.\nAccent: Manchester, natural.\nPace: Starts halting, ends brisk on the discount code.\nClear articulation. Speak only the transcript.\n",
+  "profile_file": "docs/stories/stupidity-optimised/scenes/film/voices/prophet1.md"
+ },
+ "settings": {
+  "voice": "Puck",
+  "temperature": 1,
+  "channels": 2
+ }
+}

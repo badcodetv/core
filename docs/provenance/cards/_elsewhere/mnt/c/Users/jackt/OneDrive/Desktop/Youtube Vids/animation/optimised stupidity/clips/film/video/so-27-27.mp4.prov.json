@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-27-27.mp4",
+ "made": "2026-11-01T14:25:58+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon lowers himself slowly deeper into the bin, his arms clamped across his chest, until the water reaches his ribs, his mouth tight. Later his whole body shudders once and his head rocks back as he blows out a long breath. The yellow lamp over the back door buzzes with a slight flicker and a thin steam rises from his shoulders. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the slosh of cold water against plastic, ice cubes knocking together, chattering teeth, a distant dog barking. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/27.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/27.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "27",
+  "frame": 27,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T14:11:12.048Z"
+ }
+}

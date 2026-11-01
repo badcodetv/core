@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-1/batch/01.jpg",
+ "made": "2026-11-01T10:44:18.925Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photographed, perfectly frontal wide shot of a cramped, cheap English municipal gym, the camera locked off dead centre at about chest height with deep focus, so that everything from the front of the room to the back wall is equally sharp. A real photograph of real people, not a painting or an illustration. In the middle of the frame, on a scuffed black vinyl flat bench press with a split seam patched with grey tape, lies Brandon, a soft, pale 22-year-old man with damp, waxy skin, thin mousy hair stuck to his forehead and a faint patchy fuzz on his jaw. He wears a too-tight faded blue compression top that clings to his chest and belly, black shorts and worn white trainers, and he holds his elbows stiffly away from his sides. His hands grip a chrome barbell loaded with mismatched black cast-iron plates, and he looks straight up with a wide, completely trusting, slightly open-mouthed face. Standing at the head of the bench directly above him is Gary, a tired man of about fifty with grey-yellow skin, heavy purple eye bags, a slack jaw and thinning grey hair, wearing a washed-out grey t-shirt and baggy tracksuit bottoms, with a bleached-out towel hanging round his neck that has lost all its colour. His hands rest calmly under the bar in a proper spotter's grip, and he looks down at Brandon with a flat, patient, unreadable expression. Both men are fully in frame and clearly visible from head to foot, with Gary's face upside down in relation to Brandon's. The room is lit by flat, even, overhead fluorescent tubes with a faint green-yellow cast, like a morgue, with no deep shadows and no warm light anywhere. The palette is jaundiced: mustard-beige walls, a worn rubber floor in a dull yellow-green chequerboard of tiles, and pale grey ceiling panels with one stained tile. A long wall mirror with a smeared edge runs behind them, and rows of dumbbells on a rusted rack stand in the depth, none of them with legible markings. Far back in the room, small and in sharp focus, a lone middle-aged man in a beige gilet stands motionless at a cable machine, staring at the wall. The composition is symmetrical and static, with the men centred and the room around them flat and overlit. Shot on a fixed wide-angle lens at f/8 with the muted, slightly desaturated colour and fine grain of 35mm colour negative film. There is no readable text, signage or logo anywhere. Thanks.",
+ "source_id": "79712c95-4674-4b98-b014-76315b15b0ef"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-15-15.mp4",
+ "made": "2026-11-01T13:36:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Water streams outward from under the basin and spreads across the tiles while Brandon flinches back, arm raised across his face, and scrambles on his heels. Later, he slumps, kneeling in the spreading puddle, and looks up at the ceiling with his shoulders dropping. The caged bulb flickers. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a loud hiss of pressurised water, splashing across tiles, a yelp, a pipe thudding in the wall. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/15.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/15.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "15",
+  "frame": 15,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T13:21:35.422Z"
+ }
+}

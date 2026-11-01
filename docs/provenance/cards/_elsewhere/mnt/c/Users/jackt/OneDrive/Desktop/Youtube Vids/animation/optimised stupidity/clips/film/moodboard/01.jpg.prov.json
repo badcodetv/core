@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/01.jpg",
+ "made": "2026-11-01T11:17:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A washed-out, grainy night-mode photograph from a fixed lens high in the sloping rafters of a cramped rented attic, looking down at Brandon lying on a bare floorboard patch between a single bed and a heap of unwashed laundry, mid-crunch, brows pulled together, eyelids half shut, mouth set in a flat grim line, eyes aimed at the ceiling. A laptop open on a cardboard box glows pale blue and is the only light besides a bare bulb that barely reaches the corners. Brandon is small in the frame, seen from above, with damp patches on the slanted plaster and a kettle on a window ledge. The frame is a locked, unattended wide shot with nobody operating it, and nothing on the picture but the room. Thanks."
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/04.jpg",
+ "made": "2026-11-01T11:06:51.315Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A still from a laptop's built-in webcam during a work video call, the picture soft, blocky and smeared by heavy compression, with the colours slightly washed out and the shadows turning to mud. The camera sits low and a little crooked on a desk, looking up and slightly tilted at a tanned, broad-faced man in his early fifties with a deep orange-brown tan that stops abruptly at a pale band along his hairline, creased squint lines, a high shiny forehead, thin sandy-grey hair combed into a neat side parting, a soft rounded jaw with a little loose skin under it, and small bright pleased-with-himself eyes that are looking at something off the edge of the screen, not at the lens. He wears a navy quilted gilet zipped up over a pale blue open-collared shirt, and he is chewing a mouthful of salad from a clear plastic supermarket tub held near his chin, a fork hovering, a leaf of rocket stuck to the fork. Behind him is a dark wooden bookcase crammed with unevenly stacked hardbacks and a framed photo of a sailing boat, its books too blurred and blocky to read. The only light is a flat cool glow from the laptop screen on his face and a bright overexposed window to one side that blows out the edge of the frame. Nothing is written on the picture anywhere: no text, no numbers, no icons, no borders, just the raw picture. Thanks.",
+ "source_id": "7813500f-b4e1-4ee6-a615-32571b06d628"
+}

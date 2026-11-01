@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-1/batch/04.jpg",
+ "made": "2026-11-01T10:44:18.978Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A frame from a fixed ceiling security camera in a cheap English council-estate gym, mounted high in a corner and looking down at a steep angle with a slightly wide, soft lens, so the two men are seen from above and look small in the room. Under the camera a pale, pudgy 22-year-old man named Brandon lies on his back on a scuffed black vinyl bench press with split, tape-patched padding, his shoulders pressed into the bench, wearing a baggy washed-out grey hoodie that rides up over his stomach, shapeless black jogging bottoms and old white trainers with dirty soles. His arms are straight up, gripping a loaded steel barbell with mismatched rust-spotted weight plates, and his round, spotty, unshaven face is tilted back and upward, wide-eyed and grinning with total trust at the man above him. Standing at the head of the bench, bent slightly forward over him, is Gary, a tired, heavy-set man of about fifty with a bald patch and thin grey hair on the crown of his head, a grey sleeveless gym vest stained dark with sweat under the arms, pale sagging arms and a lined, grey, unhappy face, both hands cupped just beneath the bar as he spots, his head half-turned toward a door at the edge of the frame. Around them are a rubber-matted concrete floor, a wall of cloudy mirror panels, a rack of chipped hex dumbbells, a stained ceiling with a single flickering fluorescent tube, and a grimy window blown out to white at one side. The only light is that buzzing overhead tube plus the white daylight leaking in through the window, flat and slightly green, with no shadow modelling. The image looks like compressed low-bitrate CCTV video: washed-out, desaturated colour, lifted milky blacks, visible compression blocking and fine digital noise, a faint horizontal scan softness, slight barrel distortion at the edges, with no operator and no reframing, a locked, indifferent wide shot where nothing has gone wrong yet. Thanks.",
+ "source_id": "f27054f7-9f33-46bf-8b02-a3be1ab02a61"
+}

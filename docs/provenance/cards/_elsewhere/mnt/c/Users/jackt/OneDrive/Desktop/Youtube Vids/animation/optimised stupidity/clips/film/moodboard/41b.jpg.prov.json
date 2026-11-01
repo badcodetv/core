@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/41b.jpg",
+ "made": "2026-11-01T17:28:07.872Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photograph from a lens fixed high on a bathroom wall, looking down at a cramped bathroom where a narrow cupboard door under the basin stands open. Brandon, the only person in the room, kneels upright on a dry lino floor in front of the open cupboard with his whole body and face in clear view. One arm reaches into the cupboard and holds a spanner on a chrome isolation valve, and a small torch is clamped in his teeth. His brows are lifted and his eyes are crinkled with delight. The cupboard interior holds only pipes. The floor is dry and the colours are washed out. A single overhead strip light lights the room. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "Brandon"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "9593c95d-b945-43d2-a590-679664aae30c"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/05.jpg",
+ "made": "2026-11-01T11:06:51.329Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A blurry, over-compressed frame from a laptop webcam on a video call, a little pixelated, with a greenish-grey cast and flat dull light from a ceiling lamp out of shot. A narrow, long-faced bald man in his late forties sits very upright and close to the camera, so his head fills the middle of the frame and the top is slightly cut off. His scalp is pale and faintly shiny with a few freckles, his eyebrows are thin and almost invisible, his cheeks are hollow with a pinched, slightly sour mouth, a long nose, and a blotchy shaving rash on his neck. He wears rimless glasses that catch two small glare spots from the screen, and a pewter-grey fleece-lined gilet over a white shirt with the collar buttoned too high. He is forking limp lettuce and a few cherry tomatoes out of a Tupperware box with his eyes drifting to the side, plainly reading something else, jaw working slowly. Behind him is a bare white wall with one tall artificial pot plant with glossy dust-covered leaves in the right corner and nothing else at all. The picture has no writing, numbers, symbols or overlays of any kind, only the plain webcam image. Thanks.",
+ "source_id": "4789bed4-fbe6-492f-a037-1819674cef05"
+}

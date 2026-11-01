@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2/06.jpg",
+ "made": "2026-11-01T10:59:06.341Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still in the manner of a phone's front camera, the phone balanced on a pile of cardboard boxes at the end of a rented attic room, picture a bit compressed and warm-greyed, with one side of the frame lit brighter than the other, delivered as a clean full-frame photograph with nothing placed over it. Brandon, 22, a short, stocky, broad-chested mixed-race British young man with warm light-brown skin, a thick neck, deep acne scars pitting both cheeks and the jaw, and a terrible home clipper job: uneven patches of fuzz, a stripe shaved too close above the left ear, a ragged step at the crown. His dark eyes are bright and very eager, eyebrows lifted, a big hopeful half-smile showing slightly crooked teeth, face pushed a little too close to the lens. He wears a tight, bobbled burgundy jumper with one sleeve pushed up over a thick forearm. Weak grey daylight comes from a small roof window to his right, with a yellow lamp low on the left, so one cheek is cool and the other warm and the scarring catches the light. Faint sheen on the forehead, ingrown stubble on the chin, a tiny scab near his hairline, a drying rack of grey socks behind his shoulder. Thanks.",
+ "source_id": "c9a044fe-4a33-405b-8c69-6f3d5ad22b81"
+}

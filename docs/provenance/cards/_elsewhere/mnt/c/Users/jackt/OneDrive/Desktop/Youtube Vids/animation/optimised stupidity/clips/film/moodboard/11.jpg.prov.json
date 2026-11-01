@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/11.jpg",
+ "made": "2026-11-01T11:25:45+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A grainy, bleached frame from a lens fixed above the stretcher inside the ambulance, closer, looking down at Brandon's head and shoulders on a thin pillow, his bandaged arm strapped across his chest, brows pulled up in the middle, eyelids fluttering half shut, mouth open as if starting a sentence and failing, eyes aimed at the ceiling light. A cold white strip light fills the frame, with red blanket edges and a corner of a cabinet visible at the edges. The colours are drained and compressed, nobody operates the lens, and nothing is written on the picture. Thanks."
+}

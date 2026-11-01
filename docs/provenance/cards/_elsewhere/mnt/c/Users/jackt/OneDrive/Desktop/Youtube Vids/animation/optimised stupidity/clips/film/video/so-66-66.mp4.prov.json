@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-66-66.mp4",
+ "made": "2026-11-01T16:23:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Jenny on the left lifts a folding chair onto a growing stack and wipes her palm down her trousers, while Brandon on the right takes one small step towards her with his mouth moving softly. Later in the eight seconds Jenny turns slightly away from him towards the wall and Brandon looks down at his own pocket as the warm glow pulses once. A single ceiling tube flickers in the far corner. The camera does not move. Audio: metal chair legs clinking together, a long scuff of shoes on lino, a distant radiator ticking, a faint low phone buzz. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/66.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/66.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "66",
+  "frame": 66,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T16:21:48.131Z"
+ }
+}

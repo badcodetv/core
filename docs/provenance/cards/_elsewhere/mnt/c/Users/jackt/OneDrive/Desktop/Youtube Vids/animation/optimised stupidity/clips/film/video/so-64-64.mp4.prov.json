@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-64-64.mp4",
+ "made": "2026-11-01T16:23:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon on the left pushes his phone slightly closer to Jenny on the right and beams at her, while Jenny keeps squaring and stapling her pile of papers, glancing at his hand for only a moment. Later in the eight seconds Brandon's smile slips a fraction and his arm lowers a few centimetres as Jenny turns a page. Steam drifts up from the tea urn in the background. The phone's smudged lens leaves a soft halo around the bright patch by the side door. The camera does not move. Audio: the tick of a stapler, paper sliding on a wooden table, the hiss of the urn, a shoe scuffing on lino. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/64.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/64.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "64",
+  "frame": 64,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T16:21:04.386Z"
+ }
+}

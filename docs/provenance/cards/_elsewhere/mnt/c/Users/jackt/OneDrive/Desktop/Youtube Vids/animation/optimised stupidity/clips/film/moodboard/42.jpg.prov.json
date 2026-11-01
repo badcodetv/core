@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/42.jpg",
+ "made": "2026-11-01T11:52:54+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A photograph from a lens fixed near the ceiling at the foot of an attic bed, looking along it at night in dim night-mode grain. Brandon sleeps on his back under a neat duvet, mouth slightly open, brows smooth, eyelids closed. A strip of dental floss lies coiled on a wooden crate beside the bed next to a glass of water. A bar of streetlight orange comes through a small window and lies across the floorboards. The rest is deep shadow, washed out and compressed. Thanks."
+}

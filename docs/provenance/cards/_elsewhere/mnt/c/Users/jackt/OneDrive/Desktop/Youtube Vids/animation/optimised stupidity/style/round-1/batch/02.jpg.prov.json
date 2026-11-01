@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-1/batch/02.jpg",
+ "made": "2026-11-01T10:44:18.942Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic wide, locked-off shot, level with the bench from the side and slightly behind Gary's shoulder, of a cheap municipal gym in a small English town, framed as a plain, uncluttered, almost symmetrical composition with generous empty wall around the two men. A 22-year-old man named Brandon lies on his back on a bench press with a worn pillar-box-red vinyl pad, its seam split and mended with a strip of grey tape. He has a long, sad, pale face with a slightly open mouth, and he gazes straight up with total, childlike trust. He wears a faded red zip-up top from no recent decade, zipped to the chin, and brown trousers a few inches too short, showing thin white ankle socks and scuffed black plimsolls. His hands grip a chunky black barbell loaded with mismatched iron plates, one side with a dented rust-flecked plate. Gary stands at the head of the bench, looking calmly and tiredly down at Brandon with a flat, unreadable face. He is a jowly man of about fifty with a thick moustache and slicked-back grey-brown hair, in a powder-blue short-sleeved shirt with a crease-worn collar, tucked into baggy navy gym shorts, with pale hairy legs and old white trainers. His hands rest open and ready just under the bar, close to it but not touching. Nothing has gone wrong yet; both faces are clearly visible and lit. Behind them is a real plastered wall painted in a flat blue-green gloss to shoulder height and cream above, with scuffs, a long rubbed patch where backs have leant, and a dull rubber floor in brick brown. A folded mustard-yellow blanket lies on a plain wooden chair at the edge of the frame, and a few chipped dumbbells sit on a low rack. Bare strip lights directly overhead give a dusky, slightly warm, even key light with soft shadows under the brows and chins, plus a little grey daylight from a high frosted window on the left. Shot as if on slightly grainy colour film with muted painted-room colour and a normal 35mm lens at chest height. Skin shows real pores, stubble, shine on the forehead and uneven colouring, with no retouching. The mood is deadpan and quiet, and nobody is acting for the camera. Thanks.",
+ "source_id": "6be91a04-75d5-4c7d-831f-de12479f8915"
+}

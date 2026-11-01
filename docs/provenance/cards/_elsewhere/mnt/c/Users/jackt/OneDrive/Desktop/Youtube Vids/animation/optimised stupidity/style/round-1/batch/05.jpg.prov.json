@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-1/batch/05.jpg",
+ "made": "2026-11-01T10:44:18.995Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A wide anamorphic-looking photograph, shot from far across a cheap English leisure-centre gym through a long telephoto lens, as if the two men are being watched from the other side of the room. Small in the frame, a thin young man of 22 lies on his back on a worn bench press under a loaded barbell, looking straight up with an open, completely trusting face. He has narrow shoulders lost inside a baggy brown anorak, and a thin patchy moustache that is not working. At the head of the bench stands a tired, heavy-eyed man of about fifty in a grey car coat worn over a faded tracksuit, hands tucked under the bar to spot him, a steel flask on the floor by his feet. Both men are clearly seen and in sharp focus, the lens compressing the room so that rows of dusty cable machines, a rack of mismatched rubber-coated dumbbells and a scuffed wall of mirrors stack up behind them out of focus. Large blocks of empty shadow and bare institutional-green painted wall fill much of the frame. The only real light is a bank of overhead fluorescent tubes, some flickering and dim, so the corners and edges of the frame fall away into murky darkness while the bench glows a flat sickly yellow-green. Muted browns, greys and tired greens, visible film grain, slightly faded colour as if on old 1970s colour film. Nothing has gone wrong yet; the barbell is perfectly still. Thanks.",
+ "source_id": "d877494d-9360-424d-8efc-9ff4018eecbf"
+}

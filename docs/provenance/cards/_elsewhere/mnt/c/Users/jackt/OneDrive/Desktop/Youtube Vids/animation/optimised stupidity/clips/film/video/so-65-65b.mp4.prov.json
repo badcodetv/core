@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-65-65b.mp4",
+ "made": "2026-11-01T17:16:19+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Gary at the developer's table turns a page of his papers with one finger and keeps reading, while the councillor beside him pours a glass of water. Later in the eight seconds Gary lifts his eyes towards the rows of residents for a moment, then lowers them again. A ceiling panel hums with a very faint flicker. A resident in the front row shifts in a chair. The camera does not move. Audio: the clink of a water jug on a glass, paper turning, a cough in the rows of chairs, the low buzz of a ceiling panel. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/65b.jpg",
+ "why": "UPLOAD_REFUSED on the original three times; same picture re-saved at 1280 wide, per omni-flash.md",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/65b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "65",
+  "frame": 65,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T17:03:22.773Z"
+ }
+}

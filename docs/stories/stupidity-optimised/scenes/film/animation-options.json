@@ -1,0 +1,1157 @@
+{
+ "sequence_notes": [],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Brandon alone in his rented attic doing crunches on the floor, a podcast playing from his laptop, hungry and grim.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon, small in the frame from high above, does one slow crunch up and down on the floor, his brows pinched and his jaw tight, then a second shaky one. Later, he pauses at the top, lets his shoulders sag, and glances sideways at the laptop. The bare bulb flickers faintly. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: floorboards creaking under his back, a faint tinny voice murmuring from the laptop speaker, his breath puffing, the bulb buzzing. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "Brandon alone in the attic shaking a protein shake and drinking it, nothing else in the room to eat, the same routine as ever.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon swings the shaker bottle in short hard shakes beside his ear, then tilts it back and drinks, throat working, brows low. Later, he lowers the bottle, looks into the empty cupboard for a beat, and closes it with his shoulder slumping. The fluorescent tube over the sink flickers. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: the rattle of a ball inside a plastic shaker, a long gulp, a cupboard door clacking, tube buzz. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "Someone is knocking at his attic door. Brandon has frozen mid-crunch on the floor, holding completely still until they go away.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon holds absolutely still, hovering mid-crunch, only his chest moving as knuckles knock three times on the door. Later, the shadows under the door shift and retreat, and Brandon lets out a held breath and lowers himself slowly to the floor. The light strip under the door dims as the shadow shifts. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: three knocks on thin wood, the laptop murmuring quietly, floorboards creaking on the landing and fading, his shaky breath. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "A different lonely lad in a different cheap rented room in the same town, doing the same crunches.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The lad does a crunch with his hands behind his head, his face scrunched, then another, sloppier one. Later, he rolls onto an elbow and scratches his stomach, staring at the propped phone. The orange bar of the fan heater pulses. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: heater ticking, carpet rubbing against his tracksuit, a delivery moped passing outside, a groan. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "Another different lad, in another bedroom across the town, alone, mixing the same protein shake.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The lad shakes the bottle hard in front of his chest, then unscrews the lid and sniffs it, his nose wrinkling. Later, he glances over his shoulder at the door, takes a swig, and gags quietly. The crooked lamp flickers once. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: powder sloshing in a bottle, a lid squeaking, a cough, a radiator knocking. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "job": "Brandon hunched close over his phone in the attic at night, typing into it, face lit by it. We cannot see the screen.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon types with both thumbs in short bursts, his lips moving silently, then stops and stares at the phone. Later, he leans back a few centimetres, rubs his eye with the heel of his hand and shifts his weight on the mattress. The phone glow flickers across his chin as the screen changes. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: soft thumb taps, a mattress spring creaking, a faint phone buzz, wind against the skylight. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "job": "The first guru's own video: an enormous tanned bodybuilder with a shaved head and a ginger beard, in a home gym, explaining his routine at his own camera with total confidence.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The bodybuilder talks at the lens, jabbing a thick finger downward, rolling his shoulders and pointing to the rack beside him. Later, he nods slowly at his own point and flexes one arm, then grins. The garage strip light flickers faintly. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a loud echoing garage hum, plates clinking on a rack, his shoes squeaking on rubber, a muffled indistinct boom of voice. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "job": "Brandon in a cheap gym, following that routine exactly, under a weight far too heavy for him, arm shaking.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon strains under the bar with his trembling arm, his face reddening, his legs scrabbling on the bench. Later, he holds the bar at the top for a second with his arm wobbling, and a gym-goer in the distance glances over. The dim tube above flickers. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: straining breath, the bench creaking, a treadmill belt whirring in the distance, the tube buzzing. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "job": "The moment after his arm has gone: Brandon on the gym floor holding his arm, other gym-goers turning to look. No gore.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon rocks gently forward on the floor, holding his arm to his chest while the three gym-goers turn their heads and step slowly towards him. Later, the man in the vest lowers his towel from his shoulder and stands still, staring, while the woman stops rowing. A fluorescent tube flickers overhead. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a low moan, a rowing machine chain winding down, trainers squeaking, tube hum. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "job": "Inside the ambulance. Brandon on the stretcher, arm wrecked and bandaged, clutching a protein shake. Sophie the paramedic reaches to take it, kind and tired.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Sophie's hand slides gently around the shake bottle while Brandon tightens his grip for a moment, then loosens it and lets her take it. Later, Brandon's head lolls back on the pillow, and Sophie sets the bottle on a shelf and tucks a blanket higher on his chest. The strip light vibrates faintly with the engine. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: engine drone, tyres on tarmac, plastic creaking as the bottle is eased free, a stretcher strap clicking. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "job": "Inside the ambulance, closer on Brandon on the stretcher, trying to speak and barely managing a sentence.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon's lips part and close several times as he tries to form a sentence, his brows working and his chin trembling. Later, he gives up, closes his eyes and lets his head sink deeper into the pillow. The white strip light shudders slightly with the road. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: engine drone, a monitor beeping slowly, a stretcher rattle, a ragged breath. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "job": "Attic at night, Brandon on his bed with his arm in a cast, duvet up, facing away, sad. Nothing explicit, entirely implied.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon's shoulders rise and fall slowly beneath the duvet, then give two small shudders. Later, he pulls the cast arm closer to his chest and goes still. The streetlamp light on the floorboards flickers as a car passes. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: rain on the skylight, a sniff, the bed frame creaking, a car passing outside. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "job": "Brandon in the shared bathroom, one arm in a cast, staring at a dripping tap with his phone propped on the sink.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon stares at the tap while a drop forms and falls into the basin, and he lifts his good hand and rubs the back of his neck. Later, he leans in toward the phone, squints at it, and then straightens with his brows lifting slowly. The caged bulb hums and flickers. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: slow drips echoing on enamel, a pipe ticking in the wall, the bulb buzzing, a distant toilet flush. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "job": "The plumbing guru's own video: a calm, kind, decent bloke in overalls kneeling by a tap in a bathroom, talking at his own camera.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The plumber talks to the lens with an easy nod, then taps the pipe under the basin twice with a knuckle. Later, he gestures to a valve with an open palm and gives a small reassuring smile. A soft breath of wind moves the net curtain in the frosted window. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a knuckle knocking on copper, the metallic clink of a spanner in the toolbag, a gentle drip, a muffled murmur of voice. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "job": "Brandon has turned the wrong valve under the sink with his one good hand. Water is bursting out over him and across the floor.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Water streams outward from under the basin and spreads across the tiles while Brandon flinches back, arm raised across his face, and scrambles on his heels. Later, he slumps, kneeling in the spreading puddle, and looks up at the ceiling with his shoulders dropping. The caged bulb flickers. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a loud hiss of pressurised water, splashing across tiles, a yelp, a pipe thudding in the wall. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "job": "Jenny in her downstairs flat, looking up in shock as her ceiling sags and collapses, water pouring through. Seen from a camera on her kitchen shelf.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Jenny stares upward as the bulge in the ceiling swells and water pours from the crack into a widening puddle, and she steps back a pace with her mug lowered. Later, she turns her head toward the door and puts a hand to her mouth. The pendant light sways gently. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: heavy water pattering on lino, a plaster creak, the mug ringing against the counter, a sharp intake of breath. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "job": "The charisma guru's own video: a shiny young man with too many teeth in a bright room, counting things off on his fingers at his own camera.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The young man ticks off three fingers one by one, nodding at each, then flashes both palms toward the lens. Later, he leans in a few centimetres, widening his grin, and raises his brows. The ring light shimmers faintly in his eyes. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a hollow, echoing small-room hum, a chair creaking, a finger tapping a desk, a bright indistinct burble of voice. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "job": "Doorbell view: Brandon standing at Jenny's front door in a stiff, rehearsed, confident posture, saying hello.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon waves once and raises his chin, holding the stiff smile while rocking onto his toes. Later, his smile twitches, his eyes dart sideways, and his raised hand lowers a few centimetres. The hanging basket sways in a light breeze. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a chime ringing once, wind hissing across the lens, a car engine passing, trainers shuffling on a stone step. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "job": "Doorbell view, moments later: Brandon still standing there, the door has shut in his face, posture collapsing.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon stands frozen for a second, then his shoulders slump and his head sags forward. Later, he turns slowly on the step, looks over his shoulder at the door, and walks out of frame to the left. The hanging basket sways in the breeze. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a latch clicking, wind across the lens, trainers scuffing a stone step and fading, a distant dog barking. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "job": "A cheap restaurant, seen from a camera above the till: Brandon alone at a table for two as a woman walks out of the door behind him, silently.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The woman pushes the door open and walks out without looking back while Brandon sits unmoving, then slowly lowers his gaze to the table. Later, he picks up the paper napkin, turns it over in his hand and sets it down again. The pendant lamp above him sways slightly after the door swings. The picture is shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a door bell jingling, the door thudding shut, a fridge humming, cutlery clinking from the kitchen. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "job": "The face guru's own video: chadjaw7x, a man in his twenties with a ridiculously sharp jaw, in a dim bedroom, leaning into his own camera, sneering with confidence.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The man tilts his chin up and turns his jaw slowly to the left, then back to the lens, sneering, his eyebrows rising once. Later he leans a little closer, his shoulders rolling forward, and settles back with a slow blink. The orange light at the curtain edge flickers faintly as a vehicle passes outside. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: a faint laptop fan hum, the creak of a desk chair, a muffled car passing on the street. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "job": "Brandon in the bathroom, seen from behind him and to the side, holding a hammer up near his own jaw, eyes shut, about to go. It has not touched him.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon stays frozen with the hammer raised beside his face, his shoulders rising as he sucks in a breath, his eyelids squeezing tighter. Later his raised arm trembles slightly and his weight shifts from one foot to the other. The overhead tube buzzes with a very slight flicker. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the buzz of the tube light, a slow drip from the tap, a held breath, a floorboard creaking. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "job": "Sophie and a second paramedic edging down a narrow landing with their hands out, slowly, very calmly, the way you approach a dangerous animal.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Sophie and the second paramedic take two slow, careful steps along the landing with their open hands out in front of them, moving in step. Later Sophie glances sideways at her colleague and gives the smallest nod. A thin wash of blue light from the stairwell pulses slowly on the wallpaper. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: slow footsteps on old carpet, the creak of floorboards, the rustle of waterproof uniform fabric, a radio crackling very quietly downstairs. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "job": "Sophie gently taking the hammer out of Brandon's raised hand on the landing.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Sophie's hand slides down over Brandon's fingers and slowly draws the hammer down and out of his grip, lowering it to her side as his arm drops. Later Brandon's shoulders sag and his eyes close for a moment as his head tips forward. The bare bulb hums with a faint flicker. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the hum of the bulb, the soft scrape of a handle through fingers, a shaky exhale, a floorboard creaking. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "job": "The longevity guru's own video: a very rich, waxy, ageless man in a white glass house, with hundreds of pills laid out in front of him.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The man raises the capsule slightly, turns it to the light, and holds it up beside his face with a perfect smile. Later he lowers it and slowly turns his head to the right, then back, his expression unchanging. A tiny bird crosses the pale sky behind the glass. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: a very faint air-conditioning hush, the tick of a pill against the table, a distant bird. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "job": "Brandon in the attic with a heap of cheap chemist bottles, tipping a huge handful of pills into his mouth, about to choke.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon's raised hand holds still at his open mouth while his cheeks tighten and his throat works, and his other hand grips the floorboards. Later his eyes screw shut and his head jerks forward slightly as his shoulders hunch. The bulb on its flex sways very slightly. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the rattle of plastic bottles, a wet swallow, floorboards creaking, the faint tick of the bulb swaying. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "job": "The shared back garden: Brandon climbing into a wheelie bin full of cold water and ice from a petrol station, in his pants, teeth chattering.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon lowers himself slowly deeper into the bin, his arms clamped across his chest, until the water reaches his ribs, his mouth tight. Later his whole body shudders once and his head rocks back as he blows out a long breath. The yellow lamp over the back door buzzes with a slight flicker and a thin steam rises from his shoulders. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the slosh of cold water against plastic, ice cubes knocking together, chattering teeth, a distant dog barking. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "job": "Brandon in the shared kitchen, with a slab of raw liver with a yellow reduced sticker, biting it and starting to retch.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon bites into the liver and chews with his face twisting and his shoulders rising, then holds still, his cheeks bulging. Later his throat spasms and he bends slightly forward from the waist with his free hand pressed flat to his stomach. The fluorescent tube flickers. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the buzz and tick of the tube light, a wet tearing bite, laboured chewing, a fridge compressor humming. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "job": "The testosterone guru's own video: Sun Beam, a leathery, oiled man on a sun lounger on a beach, shot chest up, talking at his own camera, utterly serious.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The man nods slowly and lifts his chin, then points one finger directly at the lens with a grim, unblinking look. Later he lowers the hand to his chest and rolls his shoulders once. A light breeze pushes a few strands of hair across his forehead and ruffles the edge of the lounger towel. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: wind buffeting the phone microphone, waves breaking softly, a gull far off, the creak of the lounger. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "job": "The shared back garden seen from an upstairs window far away: Brandon from behind on a deckchair, facing the sun, shorts round his ankles, legs apart. We only see his back.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon leans back in the deckchair with his head tilted up to the sun and stays completely still. Later he shifts his weight and lifts one arm behind his head. A bluebottle crosses in front of the window glass and a faded tea towel on the washing line stirs in the breeze. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: a faint breeze, a buzzing fly against the glass, a distant lawnmower, a creak of canvas. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "job": "Jenny at her window, her face reacting, reaching up and pulling down the blind.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Jenny's raised hand pulls the cord down steadily and the blind rolls down over her face until the window is covered. Later the blind steadies and a faint shadow moves behind it as she steps away. A net curtain at the edge of the window stirs slightly. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the rattle of a roller blind mechanism, a distant seagull, a faint drone of traffic. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "job": "Inside the ambulance again: Brandon on the stretcher, sunburnt and wrecked, Sophie greeting him like an old friend, with a thick paper file on her knee.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Sophie leans towards Brandon with her warm smile and pats the thick file on her knee with one hand, then turns a page. Later Brandon rolls his head slowly towards her and gives a long, tired blink. The strip light along the ceiling flickers as the vehicle rocks slightly. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the low rumble of an engine idling, the rustle of paper, the squeak of the stretcher, a soft rattle of stowed equipment. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "job": "The first guru's tearful apology video: an enormous tanned bodybuilder with a shaved head and a ginger beard, crying into his own camera under a ring light, one huge hand on his chest.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The bodybuilder draws in a shuddering breath, his chest heaving under his hand, and tears run slowly down his cheeks into his ginger beard. Later he bows his head, then lifts it again with his lip trembling. The bright ring light gives a faint electrical shimmer on the mirror behind him. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: a wet, shaky inhale, a sniff, the hum of the ring light, the faint clink of a weight plate settling in the rack. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "job": "Brandon alone at the kitchen table, sitting with it. Very still, nothing happening. The quietest shot in the film.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon sits almost perfectly still, his chest rising and falling slowly, his eyes staying on the table. Later his gaze lifts for a moment towards the dark window and then lowers again with a slow blink. The pendant bulb gives the faintest flicker. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the low hum of a fridge, a slow clock ticking, a quiet exhale. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "job": "The same table: his phone lights up beside his hand. He looks down at it. We cannot read the screen.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. A pale glow washes over the table as the phone lights up, and Brandon lowers his gaze to it, his brows lifting slightly. Later his fingers tighten a little against the tabletop and he leans a few centimetres closer. The light from the phone pulses once, softly, on the wall behind him. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: a short soft phone chime, the hum of a fridge, a slow breath in. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "job": "Brandon in bed in the attic at night, phone light on his face, tapping once on the screen with his thumb.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon, small in the wide high view, lies still in bed with the phone held above his face, then taps once with his thumb and lets the hand drop to the duvet. Later he gives a slow blink and his brows lift slightly. The glow on his face dims a little. Night-mode grain shimmers in the dark corners of the rafters. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Soft thumb tap on glass, duvet rustle, a faint creak of rafters, a distant fridge hum from downstairs. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "job": "Morning in the attic, daylight. Brandon sitting bolt upright in bed, astonished at how good he feels, patting his own face.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon sits bolt upright and pats his cheeks with both palms, three quick pats, eyes wide and brows high. Later his hands drop to his lap, he looks down at himself and his mouth widens into a disbelieving grin. Dust drifts in the shaft of light from the skylight. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Quick soft palm slaps on skin, duvet fabric shifting, a pigeon walking on the skylight glass, floorboard creak. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "job": "Brandon at his desk reading a printed scientific paper, finger under the line, mouth slightly open, as if he has discovered fire.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon slides his finger slowly along the line of the printed paper, lips parting wider as he reads. Later he looks up at the sloped ceiling with his brows high, then back down and resumes under the next line. The bare bulb flickers once and steadies. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Paper rasp under a fingertip, a slow mouth-breath, the buzz of the bare bulb, a distant bus passing outside. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "job": "Brandon at the bathroom mirror brushing his teeth at exactly bedtime, intense and committed, like a boxer before a title fight.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon brushes in firm, even strokes, jaw set and eyes unblinking on the mirror. Later he leans in a fraction, narrows his eyelids and gives a single sharp nod to himself. The fluorescent tube hums and flickers once. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Rhythmic bristle scrub, a tap dripping slowly, the electrical buzz of the tube, a pipe knocking in the wall. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "job": "Brandon tucking his duvet in around himself with total focus, bed made perfectly, attic now tidy.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon tucks the duvet under the mattress with both hands along one side, smoothing it flat with a sweep of his palm. Later he sits back on his heels, looks over the finished bed and gives a small satisfied nod. A dust mote drifts through the window light. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Cotton fabric dragging over a mattress, palm smoothing, a floorboard creak, soft wind at the window. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "job": "Brandon under the bathroom sink turning a valve correctly. Nothing goes wrong. The floor stays dry. He is quietly delighted.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon turns the chrome valve a quarter turn with the spanner, then stops and looks at the pipe. Later he lifts one thumb in the air and his eyes crinkle. The overhead strip light hums. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Metal on metal, a faint tick of pipework, torch beam clicking, a quiet pleased exhale through the nose. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "job": "Brandon asleep in the tidy attic, peaceful, floss on the bedside table.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon sleeps without stirring, the duvet rising and falling with his breathing. Later he turns his head a few degrees on the pillow and his mouth closes. The streetlight bar flickers once as something passes outside. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Slow steady breathing, a faint fabric rustle, a car passing far below, a distant fox cry. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "job": "Brandon walking down a street in daylight, taps his phone with his thumb without looking at it. Seen from a shop's camera.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon walks across the frame from right to left at an even pace, thumb tapping the phone at his hip once without his eyes dropping from the road ahead. Later he steps past a lamp post and exits at the edge of the frame. A plastic bag stirs on the kerb. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Steady footsteps on damp paving, a car passing on the road, a pigeon wing flap, a faint thumb tap on glass. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "job": "Brandon alone at a table, head bowed over a plate of vegetables, hands together, as if saying grace.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon holds his bowed head and pressed hands very still over the plate. Later he opens his eyes, unclasps his hands and picks up a fork. The fluorescent ring light buzzes and dims faintly. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Fork tines clinking on china, a fridge motor humming, a tap dripping, a chair leg shifting on lino. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "job": "A street seen from a fixed camera on a lamp post: Brandon jogging on the pavement, healthy, while an ambulance rolls slowly past him with Sophie in the passenger window watching him.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon jogs steadily along the pavement from the left of the frame while the ambulance rolls slowly forward beside him on the right. Sophie's head turns to follow him through the window. Later Brandon jogs out of frame and the ambulance crawls on, its brake lights glowing. A leaf spins along the gutter. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Rhythmic running footfalls, a low diesel engine idle, tyres on wet tarmac, a distant dog bark. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "job": "Brandon at the gym's front door, looking down at his phone and then turning to look behind him.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon stands on the step looking down at the phone in his hand. Then he turns his head slowly over his shoulder toward the car park behind him, brows pinching. Later he blinks and shifts his weight to the other foot. A strip of rain drips from the door canopy. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Rain dripping from a canopy, a car door thunk far away, the hum of a fluorescent sign, shoe soles on a wet step. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "job": "Inside the gym: Gary in brand-new gym kit with the price tag still on, on the right, being talked at by a delighted Brandon on the left.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon, on the left, talks and gestures with his hand while Gary, on the right, stands still with his arms at his sides. Later Gary glances once toward the door and back, and Brandon keeps talking. The strip light flickers. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. A flickering tube buzz, rubber soles squeaking, a distant treadmill belt, muffled dumbbell clunks, a rustle of stiff new fabric. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "job": "Brandon sitting on a bench between sets, talking non-stop and sharing everything, on the left. Gary on the right, holding a towel, listening with no expression.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon, on the left, rocks and gestures with one open hand, talking without pause. Gary, on the right, stays rigid, the towel hanging from both hands. Later Gary's eyes slide to Brandon and back to the wall. The fluorescent panel buzzes. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Fluorescent panel buzz, a distant shower drip, sneakers squeaking, a locker door clanging down the corridor. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 49,
+   "job": "Gary on the right handing Brandon on the left a protein shake he has made. Brandon beaming. Gary's face holds on him a beat too long.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Gary, on the right, extends the shaker bottle and Brandon, on the left, takes it with both hands, beaming. Later Brandon looks down at the bottle while Gary's gaze stays fixed on Brandon's face with a blank, unblinking stare. The tube light flickers faintly. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Plastic bottle rattle, a tube light buzz, rubber soles on the floor, a distant machine whirr. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "job": "Brandon on the shared stairs, sitting, looking at his phone, then standing up with resolve.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon sits hunched on the stair with the phone held close, then pushes both palms on his knees and stands up in one decisive motion, his brow set, jaw tight, eyes fixed on the front door below. Later he settles his weight onto his front foot and glances once towards the door with his eyelids narrowed. The bare bulb on the landing flickers faintly. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a bulb buzzing, a trainer squeaking on a stair tread, the creak of the banister, a distant television through a wall. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "job": "Doorbell view, same doorway as before: the door is open. Jenny in the doorway on the left, suspicious, arms folded. Brandon on the right, honest and simple, already half turning to go.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Jenny keeps her arms folded in the doorway on the left while Brandon, on the right, finishes turning his shoulders to the street and takes one step away. Later Jenny shifts her weight onto her other foot and her eyes follow him. The wilted plant sways slightly in a light breeze. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a car passing on the road, shoes on a stone step, wind against the doorbell microphone, a bicycle bell ticking as the door shifts. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "job": "Doorbell view: Jenny stepping out of the door after him, sizing him up, a stack of leaflets in her hand, Brandon turning back.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Jenny holds the leaflets out a few inches towards Brandon with her chin lifted, and Brandon completes his turn and faces her with his eyebrows high. Later she lowers the leaflets and her eyes flick over his shoulder at the street. The wet wellies drip slowly onto the step. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: paper rustling, shoes shuffling on the stone, a dog barking down the road, the hum of a distant van. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 53,
+   "job": "A community hall with stacked chairs and a biscuit table: a handful of campaigners arguing over an agenda while Brandon carries four chairs past, thrilled to be useful.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The campaigners gesture and talk over each other at the tables while Brandon walks steadily from the right of the frame to the left carrying the stack of chairs, grinning. Later he stops, shifts the stack on his chest and looks round for where to put it, his eyes wide. One fluorescent tube flickers overhead. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: the scrape of plastic chair legs on wood, a tea urn ticking as it heats, overlapping muffled voices, a tube light buzzing. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 54,
+   "job": "A cheap pub, seen from the camera over the bar: Brandon on the left listening with one finger near an earpiece, Jenny on the right talking, and staying, a second drink on the table.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Jenny talks and gestures with her open hands while Brandon listens, his finger at his ear and his eyes fixed on her face, then nods slowly. Later Jenny picks up her drink, leans back in her chair and stays where she is, settling in. The fruit machine pulses with coloured light in the background. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: the thrum of a pub room, glasses clinking, the fruit machine jingling, a chair leg scraping on a sticky floor. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 55,
+   "job": "The community hall full of people on folding chairs: Brandon standing up, speaking, and being good at it. The whole room is turned to him.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon speaks to the room with an open hand moving in a slow arc while the audience stays turned to him, and a few heads nod. Later a ripple of movement passes through the seated crowd as people lean forward and the woman near the front sits back and folds her arms, smiling. One fluorescent tube flickers over the back rows. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a hall full of people shifting on folding chairs, a cough, the hum of a tube light, a tea urn ticking. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "job": "Attic at night, Brandon sitting on the bed typing on his phone with both thumbs, glowing with happiness.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon types quickly with both thumbs, grinning at the phone, then draws a breath and lets out a small silent laugh with his shoulders shaking. Later he lowers the phone slowly to his knee and looks up at the skylight, still smiling, his eyelids soft. The streetlamp light through the skylight flickers faintly as something passes in front of it. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: thumbs tapping glass, a mattress spring creaking, a distant car on wet road, a pipe ticking in the roof. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "job": "A bland corporate office at night seen from a ceiling camera: a screen on a desk with one person reading it, her hand on the mouse, highlighting a line we cannot read.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The woman clicks and drags the mouse slowly down the screen, then stops, her head tilted, and holds still over one line. Later she leans back in the swivel chair and rubs the back of her neck with one hand. The vending machine light hums and pulses faintly in the dark corner. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a mouse click, a chair creaking, the low hum of air conditioning, a vending machine compressor humming. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 58,
+   "job": "Attic at night, Brandon asleep and smiling, phone charging on the side table with its little light on.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon breathes slowly in his sleep, his chest rising and falling under the duvet, the smile held on his mouth. Later he turns his head a few degrees on the pillow and his brow twitches once before settling. The small light on the charging phone pulses slowly. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: slow breathing, the rustle of a duvet, a pipe ticking in the roof, a faint car passing outside. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 59,
+   "job": "Giles on a video call seen by his webcam, bored, eating salad, talking without looking up.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Giles spears a forkful of salad, lifts it to his mouth and chews while his lips move in a drone of speech, his eyes still on the bowl. Later he pushes a leaf round the bowl with the fork and flicks his eyes up at the lens for a half second before dropping them again. The white window behind him brightens slightly as a cloud shifts. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a fork scraping a plastic bowl, chewing, a fridge humming, a faint laptop fan whirr. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 60,
+   "job": "A corner table in an ordinary English pub in the afternoon, empty, a half-drunk pint on it. Seen from the camera over the bar.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Dust drifts through the shaft of daylight over the empty table while the pint sits perfectly still. Later a shadow of someone passing the window slides across the carpet and away. A slow bead of condensation runs down the pint glass. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a quiet room tone, a clock ticking, a distant glass clinking behind the bar, a dishwasher humming. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 61,
+   "job": "A desk screen in the bland office: a file open with a small passport-style face photo we can barely see, in a dim room. Keep any lettering a blur.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. The pale glow of the screen pulses slightly as the image on it refreshes, throwing a faint shifting light across the keyboard and the desk. Later a hand enters from the bottom edge of the frame, rests briefly on the mouse and leaves again. A thin curl of steam rises from the mug. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a computer fan whirring, a mouse click, the hum of an air conditioner, a keyboard ticking once. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 62,
+   "job": "A meeting room table with a large architectural model of a huge windowless data centre on the edge of a little model English town, water pipes in blue.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. A beam of weak afternoon sun creeps slowly across the model town from the left, lighting the tiny houses one row at a time. Later the fluorescent light overhead dips and recovers, and the blue pipes catch a brief highlight. A blind slat in the window ticks softly against the frame. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: air conditioning hum, a blind slat tapping, a fluorescent tube buzzing, a distant phone ringing in another room. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 63,
+   "job": "The community hall: Brandon on a folding chair looking pleased at his phone, as his phone lights up, campaigners working behind him.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. In the draughty hall, Brandon on the folding chair stares at his phone and breaks into a slow delighted grin as a glow brightens against his chin, while the campaigners behind him keep sorting papers at the trestle table. Later in the eight seconds Brandon shifts his weight on the chair and glances up towards the table without turning his head. One fluorescent tube flickers faintly overhead. The compressed, washed-out picture keeps its fine grain, shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a flickering tube's buzz, the squeak of a plastic chair, paper rustling, a roll of tape unpeeling, distant traffic through the window. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 64,
+   "job": "The hall: Brandon on the left proudly showing his phone screen to Jenny on the right, who is busy with a pile of papers and barely looks. We cannot read the screen.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon on the left pushes his phone slightly closer to Jenny on the right and beams at her, while Jenny keeps squaring and stapling her pile of papers, glancing at his hand for only a moment. Later in the eight seconds Brandon's smile slips a fraction and his arm lowers a few centimetres as Jenny turns a page. Steam drifts up from the tea urn in the background. The phone's smudged lens leaves a soft halo around the bright patch by the side door. The camera does not move. Audio: the tick of a stapler, paper sliding on a wooden table, the hiss of the urn, a shoe scuffing on lino. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 65,
+   "job": "A council planning meeting from the corner of the room: rows of chairs, and at the developer's table Gary in a suit jacket and a lanyard, clearly in shot, looking at his papers.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Gary at the developer's table turns a page of his papers with one finger and keeps reading, while the councillor beside him pours a glass of water. Later in the eight seconds Gary lifts his eyes towards the rows of residents for a moment, then lowers them again. A ceiling panel hums with a very faint flicker. A resident in the front row shifts in a chair. The camera does not move. Audio: the clink of a water jug on a glass, paper turning, a cough in the rows of chairs, the low buzz of a ceiling panel. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 66,
+   "job": "The empty community hall afterwards: Jenny on the left stacking chairs, beaten, Brandon on the right, sincere, saying sorry. A phone-shaped glow in his pocket.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Jenny on the left lifts a folding chair onto a growing stack and wipes her palm down her trousers, while Brandon on the right takes one small step towards her with his mouth moving softly. Later in the eight seconds Jenny turns slightly away from him towards the wall and Brandon looks down at his own pocket as the warm glow pulses once. A single ceiling tube flickers in the far corner. The camera does not move. Audio: metal chair legs clinking together, a long scuff of shoes on lino, a distant radiator ticking, a faint low phone buzz. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 67,
+   "job": "Brandon's own badly-filmed video in the gym: Brandon close up on the left, thumb half over the lens, grinning into his phone. Far behind him on the right Gary is trying to walk out of shot, lanyard showing around his neck.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Brandon in the left foreground nods and grins at the lens, his mouth moving without forming clear words, while far behind him Gary keeps edging towards the fire-exit door at the right of frame. Later in the eight seconds Gary reaches the door and puts a hand on the bar as Brandon's grin widens slightly and his eyes stay on the lens. A strip tube overhead gives a slow flicker. The thumb stays fixed at the corner of the lens. The camera does not move. Audio: the thump of music through a gym wall, a distant treadmill belt, rubber soles squeaking on the floor, the clunk of a dumbbell being set down. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 68,
+   "job": "Giles at his desk seen by his webcam, frowning very slightly at something on his screen, fork stopped in the air.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Giles frowns very slightly at the screen below the lens, his fork frozen in the air, then slowly lowers the fork back to the tub. Later in the eight seconds he blinks once and his eyes flick a few degrees to the right. A lamp on the bookcase shimmers faintly as the compression crawls. The camera does not move. Audio: a quiet room tone, a plastic fork scraping a tub, the soft click of a trackpad, a distant car passing outside. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 69,
+   "job": "Giles on a call seen by his webcam, salad in one hand, his other thumb tapping once on his phone without looking down. He is already looking away.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Giles at the counter lifts a forkful of salad and his thumb taps once on the phone in his other hand without his looking down. Later in the eight seconds he shifts his weight onto his other foot and his gaze drifts further away to the left. The kettle behind him ticks faintly as it cools. The camera does not move. Audio: a fork on the rim of a plastic bowl, one soft phone tap, a kettle ticking, a fridge compressor humming. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 70,
+   "job": "The cheap gym from a high corner: Brandon lying on the bench press under the heaviest bar of his life. Gary at the head of the bench standing over him, hands under the bar. Brandon looks up, trusting.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. In the gym, Brandon on the bench keeps looking up at Gary with a trusting smile while Gary at the head of the bench holds both hands steady under the bar. Later in the eight seconds Gary's eyes flick briefly towards the door on the far wall and back down, and Brandon's chest rises with a slow breath. One strip tube flickers overhead. The camera does not move. Audio: the buzz of a strip tube, a slow exhale, a bench pad creaking, a muffled treadmill from the next room. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 71,
+   "job": "Closer from the same high corner: Gary's two hands under the bar, opening. Nothing has fallen yet. His face looks down, empty.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Gary's fingers loosen very slightly under the bar and his face stays blank as he looks down; the bar stays where it is. Later in the eight seconds his shoulders rise on an inhale and his eyes stay fixed on the bench beneath him. A strip tube overhead flickers once. The camera does not move. Audio: a strip tube buzzing, a slow breath, the faint creak of a bench pad, the quiet hiss of a fan in the corner. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  },
+  {
+   "n": 72,
+   "job": "A coroner's office: a body under a white sheet on a steel table, a pair of bloody trainers hanging out of the end. Giles in his gilet stands beside it, holding one finger to his ear, speaking.",
+   "options": [
+    {
+     "id": "a",
+     "label": "as written",
+     "idea": "",
+     "lanes": "",
+     "veo_prompt": "The camera does not move. Giles beside the steel table keeps one finger pressed to his ear and his lips move softly without forming clear words, while his gaze stays on the floor. Later in the eight seconds he shifts his weight onto his other foot and his eyes lift briefly to the white sheet before dropping again. A fluorescent tube flickers faintly over the sink. The camera does not move. Audio: the buzz of a fluorescent tube, a refrigeration unit humming, the squeak of a rubber sole on tile, a slow drip from the sink. No dialogue, no music. Thanks.",
+     "cut": "",
+     "seconds": 8,
+     "risk": ""
+    }
+   ]
+  }
+ ]
+}

@@ -98,6 +98,8 @@ def main(rnd, out):
         f'''<section id="pair"><h2>Together</h2><p class="sub">A look and a sound have to be one world. Which pairs, and what must they share?</p>
 {note("pair", "Note on the pairing", "e.g. L2 + S4: both hand-made, both a bit wrong")}</section>''',
     ]
+    if not cfg.get("sounds"):  # a looks-only round: no empty Sounds or Together sections
+        sections = sections[:2]
     page = ((HERE / "page-template.html").read_text()
             .replace("<!--TITLE-->", e(cfg["title"]))
             .replace("<!--HEADING-->", e(cfg["title"]))

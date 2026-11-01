@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/08.jpg",
+ "made": "2026-11-01T11:06:51.366Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A tired British Asian woman in her late thirties stands at her front door at dusk and looks directly into the small wide lens set into the door frame above her, her head tilted a few degrees and her mouth flat, caught mid-thought as she realises it is watching her. She has a round, soft, slightly puffy face, warm brown skin with dark smudges under the eyes and a few spots along the jaw, thick straight black eyebrows, and a faint crease between them. Her long black hair is pulled into a loose, low knot with strands escaping across one cheek. She wears an oatmeal knitted cardigan, pilled at the elbows, over a creased blue shirt, and a council lanyard in a washed-out teal hangs round her neck with a laminated card turned face-in so nothing on it can be read; she holds a carrier bag of shopping and a set of keys. The view is steeply from above through a cheap lens, so the edges of the porch bow inward and her feet feel far away. The only light is a yellow street lamp from the left and a hallway bulb leaking round the door behind her, so her face is half orange and half grey-blue, the dark parts crushed and grainy, colours drained and smeared by heavy compression. The frame holds only the scene itself, with no writing, numbers, symbols or overlays of any kind. Thanks.",
+ "source_id": "3dd49620-fcf2-4d76-adc4-7fbc8b4d705a"
+}

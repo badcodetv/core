@@ -1,0 +1,47 @@
+{
+ "option": "a",
+ "skip": [
+  26,
+  65,
+  41,
+  45,
+  72
+ ],
+ "extra": [
+  {
+   "key": "26",
+   "n": 26,
+   "still": "26b",
+   "motion": "The camera does not move. Brandon stays sitting on the attic floor with his hand at his mouth, then lowers the hand to his knee and blinks up at the bulb with a puzzled frown. Later he reaches sideways, picks up a vitamin tub from the heap and squints at the label, turning it slowly in his fingers. The bulb on its flex sways very slightly. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: plastic tubs rattling, floorboards creaking, the faint tick of the swaying bulb. No dialogue, no music. Thanks.",
+   "why": "Flow returned nothing on the original in repeated tries; motion softened and still re-saved at 1280 wide (cause not confirmed)"
+  },
+  {
+   "key": "65",
+   "n": 65,
+   "still": "65b",
+   "motion": "The camera does not move. Gary at the developer's table turns a page of his papers with one finger and keeps reading, while the councillor beside him pours a glass of water. Later in the eight seconds Gary lifts his eyes towards the rows of residents for a moment, then lowers them again. A ceiling panel hums with a very faint flicker. A resident in the front row shifts in a chair. The camera does not move. Audio: the clink of a water jug on a glass, paper turning, a cough in the rows of chairs, the low buzz of a ceiling panel. No dialogue, no music. Thanks.",
+   "why": "UPLOAD_REFUSED on the original three times; same picture re-saved at 1280 wide, per omni-flash.md"
+  },
+  {
+   "key": "41",
+   "n": 41,
+   "still": "41b",
+   "motion": "The camera does not move. Brandon eases the spanner a quarter turn on the chrome valve, pauses and peers at the pipe. Afterwards he lets go of the spanner, lifts one thumb beside his face and his eyes crinkle. The overhead strip light hums. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Metal on metal, a faint tick of pipework, a quiet pleased exhale through the nose. No dialogue, no music. Thanks.",
+   "why": "The first still and clip had a second Brandon under the sink."
+  },
+  {
+   "key": "45",
+   "n": 45,
+   "still": "45b",
+   "motion": "The camera does not move. Brandon jogs steadily along the pavement and away down the street while the yellow ambulance creeps forward in a straight line beside him, always facing the same way. Sophie's head turns a little to keep watching him through the window. Its blue roof lights stay unlit. A leaf spins along the gutter. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Rhythmic running footfalls, a low diesel engine idle, tyres on wet tarmac, a distant dog bark. No dialogue, no music. Thanks.",
+   "why": "The first clip's ambulance became a white van marked POLICE and swung round."
+  },
+  {
+   "key": "72",
+   "n": 72,
+   "still": "72b",
+   "motion": "The camera does not move. The man in the navy gilet keeps one finger against his ear and his lips move softly, his gaze low. Afterwards he shifts his weight onto his other foot and glances across the room. A ceiling tube flickers faintly over the sink. The camera does not move. Audio: the buzz of a ceiling tube, a fridge humming, the squeak of a rubber sole on tile, a slow drip from a tap. No dialogue, no music. Thanks.",
+   "why": "Jack asked for bloody shoes; the first still's trainers only looked grubby."
+  }
+ ]
+}

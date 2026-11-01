@@ -8,7 +8,7 @@ signals: rented attic room, protein shake, serial killer podcasts, no solid food
 
 # Brandon
 
-A fucking idiot, Jack's words, and never a loser. Lives alone in a rented attic. He wants one thing and barely says it:
+A fucking idiot, Jack's words, and never a loser. He's 22 (Jack, 2026-11-01). Lives alone in a rented attic. He wants one thing and barely says it:
 someone in the room with him. Every prophet he follows is an attempt to get it.
 
 He takes everything literally and commits completely, and he is kind, once he has something to be kind with.

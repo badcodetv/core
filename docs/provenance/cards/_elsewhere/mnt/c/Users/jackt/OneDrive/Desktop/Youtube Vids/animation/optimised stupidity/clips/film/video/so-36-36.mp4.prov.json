@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-36-36.mp4",
+ "made": "2026-11-01T14:41:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon, small in the wide high view, lies still in bed with the phone held above his face, then taps once with his thumb and lets the hand drop to the duvet. Later he gives a slow blink and his brows lift slightly. The glow on his face dims a little. Night-mode grain shimmers in the dark corners of the rafters. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Soft thumb tap on glass, duvet rustle, a faint creak of rafters, a distant fridge hum from downstairs. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/36.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/36.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "36",
+  "frame": 36,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T14:28:18.281Z"
+ }
+}

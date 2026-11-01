@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-1/batch/07.jpg",
+ "made": "2026-11-01T10:44:19.030Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic wide-medium shot, photographed on a real set, of a young man lying on his back on a padded bench press in a cheap English gym, looking straight up at the older man standing over him. The young man is 22, round-faced and wide-eyed, with rosy cheeks and glossy, neatly combed brilliantined hair, and he wears a crisp primary-red sleeveless training vest and white gym shorts. His expression is completely trusting, mouth slightly open, eyes fixed on the face above him. He grips a loaded steel barbell with both hands, arms straight, the bar still resting in its uprights. Standing at the head of the bench is a weathered man of about fifty, handsome in a ruined way, with deep lines around his tired eyes and grey stubble, wearing a cream cable-knit sweater and a silver whistle on a cord around his neck. He bends slightly with both hands positioned just under the bar, spotting. Both faces are clearly visible: we see the young man's face from above and the older man's face upside down in the frame's centre, seen from a low angle at the side of the bench. The room is a small, old basement gym with a worn black rubber floor, a rack of chipped hex dumbbells, a cracked mirror panel, peeling green paint on breeze-block walls and a single barred window high up. The lighting is full-blooded, saturated three-strip Technicolor: hard, sculpted studio key light from the upper left on both faces, with a warm amber gel on one side and a cool teal gel on the other, rich reds, deep greens and glowing, healthy flesh tones, and a subtle painted-backdrop depth to the walls. Graceful, composed, unhurried framing on a 35mm lens at f/4, fine film grain, skin with visible pores and a light sheen of sweat. Nothing has gone wrong yet; the mood is calm, warm and gloriously beautiful. No readable text or logos anywhere. Thanks.",
+ "source_id": "a426a357-114f-4b66-b983-e92a04ab0e04"
+}

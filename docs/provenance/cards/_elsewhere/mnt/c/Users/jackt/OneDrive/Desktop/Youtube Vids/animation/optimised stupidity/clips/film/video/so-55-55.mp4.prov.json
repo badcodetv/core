@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-55-55.mp4",
+ "made": "2026-11-01T15:41:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon speaks to the room with an open hand moving in a slow arc while the audience stays turned to him, and a few heads nod. Later a ripple of movement passes through the seated crowd as people lean forward and the woman near the front sits back and folds her arms, smiling. One fluorescent tube flickers over the back rows. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a hall full of people shifting on folding chairs, a cough, the hum of a tube light, a tea urn ticking. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/55.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/55.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "55",
+  "frame": 55,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T15:27:45.234Z"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/44.jpg",
+ "made": "2026-11-01T11:54:37+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A photograph from a lens fixed high in the corner of a small kitchen, looking diagonally down at a laminate table under one fluorescent ring light. Brandon sits alone at the table, head bowed over a white plate of steamed broccoli, carrots and boiled potatoes, hands pressed together in front of his chin, eyelids closed and brows slightly drawn. A single cup, a salt pot and a wipe-clean tablecloth fill the surface. The image is washed out and slightly blurry from compression. Thanks."
+}

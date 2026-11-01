@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-53-53.mp4",
+ "made": "2026-11-01T15:41:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The campaigners gesture and talk over each other at the tables while Brandon walks steadily from the right of the frame to the left carrying the stack of chairs, grinning. Later he stops, shifts the stack on his chest and looks round for where to put it, his eyes wide. One fluorescent tube flickers overhead. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: the scrape of plastic chair legs on wood, a tea urn ticking as it heats, overlapping muffled voices, a tube light buzzing. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/53.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/53.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "53",
+  "frame": 53,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T15:26:36.537Z"
+ }
+}

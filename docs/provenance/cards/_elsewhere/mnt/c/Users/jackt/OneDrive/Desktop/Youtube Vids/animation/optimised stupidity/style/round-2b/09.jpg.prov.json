@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/09.jpg",
+ "made": "2026-11-01T11:06:51.383Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A big, broad woman of about fifty-five stands square in front of her door on a freezing morning and stares straight up into the small wide lens set in the door frame, chin lifted, one eyebrow down, having obviously spotted it and taken it personally. She is tall and heavy-set with wide shoulders and a thick neck. Her large round face is flushed raw red from the cold across the cheeks and nose, thickly freckled over pale skin, with broken veins at the nostrils, a double chin, deep lines either side of a wide mouth, and chapped lips. Her ginger hair has faded to sandy and white at the front and is flattened under a hairband that she has pushed back, leaving a frizz of loose wisps. She wears an old, bobbled forest-green walking fleece with a zip pulled up to the chin and a sagging collar, a rip at one cuff mended with black thread, and muddy boots with the laces undone. The picture comes from above through a cheap lens, so she looms and the porch tiles curve away. Low winter sun from behind the camera side glares off her wet face and the white painted door; frost sits on a doormat, the whites are clipped, the colour is thin and chalky, and fine noise crawls in the dark areas. There is nothing written, drawn or displayed on the image, no letters, numbers or interface; it is only the picture. Thanks.",
+ "source_id": "8df27e51-92a5-454a-8469-a05f1afe1749"
+}

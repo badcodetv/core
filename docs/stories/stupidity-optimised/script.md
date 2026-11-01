@@ -7,11 +7,11 @@
   Each beat says what it must get across and what the joke is about. **The line column is Jack's.**
 - **One scene at a time (Jack, 31 October 2026).** Scene 1 first, and nothing moves on until he's done with it.
 - **Status of every beat: draft, not ruled.**
-- **Rulings on this draft (Jack, 31 October 2026):** there is no Mum. The narrator's opening promise is that
-  this man actually matters, not that he'll be assassinated.
-- **Length:** 25 scenes, my rough guess 15 to 20 minutes, unmeasured. Cuts are at the bottom.
+- **Rulings on this draft (Jack, 31 October 2026):** there is no Mum. The narrator makes no opening promise
+  (removed 1 November 2026).
+- **Length:** now ends on Scene 17 (Jack, 1 November 2026), with 8 and 18–25 gone. Not measured.
 - **Register:** South Park (Jack's brief). Every scene is a skit, and every skit causes the next.
-- **N** is the narrator. No voices are cast, see [`sound.md`](./sound.md).
+- **N** is the narrator. Voices are cast in [`sound.md`](./sound.md); every line as voiced is in `scenes/film/voice-lines.json`.
 - Names marked *(name?)* are for Jack. Spine and reasons: [`story.md`](./story.md).
 - **Three things stay true throughout:** no real agency, guru or AI product is named or drawn; the app is
   only ever a screen and a voice, never a face; the hammer is never shown in a way someone could copy.
@@ -22,8 +22,7 @@
 
 ### Scene 1: The attic
 
-**Where:** the attic room Brandon rents, alone. **Turns:** a man nobody would look at twice → the narrator
-insists we look. **Status: Jack's first pass, 31 October 2026. Lines are "something like that", not final.**
+**Where:** the attic room Brandon rents, alone. **Turns:** a man nobody would look at twice → he hits a video. **Status: Jack's first pass, 31 October 2026. Lines are "something like that", not final.**
 
 | # | Who | What we see | Jack's line |
 | --- | --- | --- | --- |
@@ -32,7 +31,7 @@ insists we look. **Status: Jack's first pass, 31 October 2026. Lines are "someth
 | 3 | N | Someone knocks (a courier, say). He holds still until they've gone | "Introverts don't like unscheduled human contact." |
 | 4 | N | Pull back: other people across the town doing this same stuff | "He is and isn't alone in this." |
 | 5 | On-screen text | He types into a search bar: "how to fix..." Autocomplete options: "patient's ass", "marriage", "a burned leg", "my life" | **Text goes on in Premiere in post, not in Flow.** Wording "something like that" |
-| 6 | N | He hits a video. Just show it. Therefore Scene 2 | The promise, placed here by me because Jack moved on without objecting: this man actually matters. *(Wording is Jack's to write.)* |
+| 6 | none | He hits a video. Just show it. Therefore Scene 2 | |
 
 ---
 
@@ -57,7 +56,7 @@ stays an invented bodybuilder. **"Minus the steroids" plants Scene 9's apology v
 
 ### Scene 3: First ambulance
 
-**Link:** therefore. **Where:** ambulance. **This is the shot the ending repeats, so stage it carefully.**
+**Link:** therefore. **Where:** ambulance. 
 
 **Status: Jack's first pass, 31 October 2026.**
 
@@ -81,8 +80,8 @@ below. **Turns:** sorting it himself → destroying someone's home.
 | 1 | N | Dripping tap, Brandon one-armed in a cast. The landlord's unanswered text can sit on his phone (picture only, my suggestion) | "Brandon can't afford to get a plumber in, so he's gonna attempt to do this himself." |
 | 2 | Prophet 2 (plumbing) *(name?)* | A calm, nice bloke on YouTube, the only prophet who's actually decent | "Hello, today we're gonna fix this broken tap together, pal..." |
 | 3 | N | Brandon hanging on every word | "He follows content creators like they're Moses or something. It's creepy." |
-| 4 | none | It all goes wrong. **He turns the wrong valve, shown clearly (Scene 19 pays this off).** Water through the floor | |
-| 5 | Neighbour *(name?)* | Her ceiling comes down | "What the fuck!" |
+| 4 | none | It all goes wrong. **He turns the wrong valve, shown clearly (Scene 11 pays this off).** Water through the floor | |
+| 5 | Jenny (neighbour) | Her ceiling comes down | "What the fuck!" |
 
 ### Scene 5: Charisma
 
@@ -100,47 +99,57 @@ below. **Turns:** sorting it himself → destroying someone's home.
 
 ### Scene 6: The jaw
 
-**Link:** but the next prophet says it was never his manner, it's his face. **Where:** date, then A&E.
+**Link:** but the next prophet says it was never his manner, it's his face. **Where:** not set by Jack.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Prophet 4 (face) *(name?)* | Your bone structure is why you're alone | Bone science delivered by a teenager | |
-| 2 | Brandon | Mewing means he can't speak on a date | A whole date through a held tongue | |
-| 3 | N | The hammer comes up. Say it, never show the method. Cut straight to the result | The cut | |
-| 4 | Paramedics | Same crew, second ambulance. They greet him by name | They've started a file. **Plant: they know exactly how he breaks things** | |
+**Status: Jack's first pass, 1 November 2026.** His pass replaces the four drafted beats, so the mewing date is
+gone. The hammer does not visibly land: it nearly hits, then the paramedics take it.
+
+| # | Who | What we see | Jack's line |
+| --- | --- | --- | --- |
+| 1 | Prophet 4, **chadjaw7x**, in his 20s | Video on Brandon's phone | "Fix your jaw, bro, then the bitches come crawling." |
+| 2 | N | | "Modern-day Shakespeare, although he spent less time grasping skulls." |
+| 3 | none | The hammer, almost about to hit his jaw. Cut before it lands | |
+| 4 | Paramedics | They approach him like a crazy person, hands out, the way they approach the dinosaurs in Jurassic Park. They take the hammer from him. Cut to black | |
+
+**Moved (Jack, 1 November 2026):** the plant that the crew know him and have started a file now sits at the end of Scene 7, since Scene 8 was cut.
 
 ### Scene 7: Optimisation on Universal Credit
 
 **Link:** therefore he needs to fix his whole biology. **Where:** attic, then the back garden. *(Cuttable.)*
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Prophet 5 (longevity) *(name?)* | A very rich man's routine, pills by the hundred | The routine costs more than the rent: the class joke | |
-| 2 | Brandon | Does the budget version on Universal Credit | What the budget version of a blood transfusion is | |
-| 3 | Prophet 6 (testosterone) *(name?)* | Sun on the balls, stated as medicine | True, so play it deadpan | |
-| 4 | Neighbour | Sees him in the shared garden from her window | Her face. The blind comes down | |
+**Status: Jack's shape, 1 November 2026; exact lines come at the edit.** A fast run: the prophet says what he's
+doing, Brandon goes "Got it", he fucks it up, flashing ambulance lights are the transition to the next one. Not much
+narration; "we'll see if we need it once we've made it".
 
-### Scene 8: The course
+| # | Who | What we see | Jack's line |
+| --- | --- | --- | --- |
+| 1 | Prophet 5 (longevity) *(name?)* | Says he takes 100 pills a day | Prophet says what he's doing |
+| 2 | Brandon | Fucks up the budget version (whatever's on offer at the chemist). Flashing ambulance lights | "Got it." |
+| 3 | Prophet 5 | Says he takes an ice bath | Prophet says what he's doing |
+| 4 | Brandon | Fucks up the budget version (a wheelie bin in the shared garden). Flashing ambulance lights | Another version of "Got it" |
+| 5 | Prophet 5 | Says he eats raw liver for breakfast | Prophet says what he's doing |
+| 6 | Brandon | Fucks up the budget version (the reduced-sticker shelf). Flashing ambulance lights | Another version of "Got it" |
+| 7 | Prophet 6, **Sun Beam** (Jack, 1 November 2026) | Sun on the balls, stated as medicine. Kept from the draft | Prophet says what he's doing |
+| 8 | Brandon, Jenny | Does it in the shared garden. She sees him from her window and the blind comes down. Kept from the draft | Another version of "Got it" |
+| 9 | Sophie | Last set of flashing lights, into the ambulance. Same crew. She greets him by name and they've started a file on him. **Plant, moved here when Scene 8 was cut: they know exactly how he breaks things** | Stand-in, mine, for Jack to rewrite: "Hello, Brandon. We've started a file on you." |
 
-**Link:** therefore he needs money. **Where:** third ambulance. **Turns:** patient → salesman.
+### Scene 8: The course (CUT)
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Prophet 7 (hustle) *(name?)* | A course whose only product is the course | Follow the money round in a circle | |
-| 2 | N | How much Brandon has now paid in total, a costed tally | The number, against what he earns | |
-| 3 | Brandon | Pitches the course to the paramedics while being treated | Evangelising to people trying to save him | |
-| 4 | Sophie | Actually buys it, out of kindness | Now they're friends, and that's awful | |
+**Cut by Jack, 1 November 2026: "I think we have enough of these."** Scene numbers stay as they are so the references
+hold. Its file plant moved to Scene 7. The tally, Sophie buying the course and Brandon pitching it are gone.
 
 ### Scene 9: Crisis of faith
 
-**Link:** but the prophets go to war. **Where:** kitchen. **Turns:** faith → nothing. Lowest point of Act 1.
+**Link:** but the first prophet confesses. **Where:** kitchen. **Turns:** faith → nothing. Lowest point of Act 1.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Prophets | Two contradict each other about what's in his fridge | A holy war fought over a tub of butter | |
-| 2 | Prophet 1 | Tearful apology video: he lied, it was steroids. Then a discount code | The apology is also an advert | |
-| 3 | Brandon | Sits alone with all of it. He paid for this. Let it land | One beat of real quiet, no joke | |
-| 4 | — | An ad for the app appears on his phone at exactly this moment. **Don't explain** | N stays silent: first time it's had nothing to say | |
+**Status: three beats picked by Jack, 1 November 2026. Lines written by me at his request, not ruled.** The butter holy
+war and the money tally are gone. The confession pays off "minus the colossal amount of steroids" in Scene 2.
+
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | Prophet 1 *(name?)* | Video on Brandon's phone, crying, ring light on | "Guys. I lied to you. It was steroids. It was always steroids. I've never felt so vulnerable. If you're on your own healing journey, use code HONEST20 for twenty percent off my new programme." |
+| 2 | Brandon | Sits alone at the kitchen table. Hold it. No joke, no narration | |
+| 3 | none | His phone lights up with an ad for the app. **Don't explain.** N says nothing, the first time it's had nothing to say | On-screen text, on in Premiere: "What's wrong?" |
 
 ---
 
@@ -150,71 +159,89 @@ below. **Turns:** sorting it himself → destroying someone's home.
 
 **Link:** therefore he tries it, and taps Allow. **Where:** attic. **Turns:** despair → one good night.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | App | Asks what's wrong, tells him to go to bed. Cites a study. Needs his calendar. **Allow #1** | The most advanced machine ever built, and that's its advice | |
-| 2 | Brandon | Wakes up feeling better, and is astonished | A man discovering sleep like fire | |
-| 3 | Sophie | He rings to share the discovery. They told him this in the first ambulance, for free | The "do you have a source?" argument | |
+**Status: Jack's pass on beats 2–3, 1 November 2026; beat 1 still needs its line.** "I don't think he calls Sophie
+yet", so the call and its "do you have a source?" argument are parked, not placed. Scene 11's paramedic beat is one
+place it could go.
+
+| # | Who | What we see | Jack's line |
+| --- | --- | --- | --- |
+| 1 | App, **Enough's Enough** (Jack, 1 November 2026) | Asks what's wrong, tells him to go to bed. Cites a study. Needs his calendar. **Allow #1** | |
+| 2 | Brandon | Wakes up excited that it works | |
+| 3 | N | He reads the study the app sourced | "He reads the study the app sourced. Man discovered science at the ripe young age of 22, bless him." |
 
 ### Scene 11: Nothing went wrong this week
 
 **Link:** but it keeps working, so N has no film. **Where:** everywhere. **Turns:** comedy → N's despair.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | — | Full training-montage treatment of a man going to bed on time | Epic scale, nothing happens | |
-| 2 | N | Apologises: no injuries this week | N's boredom with a healthy man | |
-| 3 | App | Each win comes with a tiny permission: bank, location, contacts, microphone. **Allows #2–5**, faster every time | He stops looking at the screen | |
-| 4 | Brandon | He's still in a religion: citations said like scripture | Peer review as "amen", grace before meals | |
-| 5 | Paramedics | They drive past slowly. Nothing's wrong with him | They miss him. Funny, then a bit sad | |
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.**
 
-**Source check:** anything the app says is "studied" must be real. Pass per line once written.
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | none | Full training-montage treatment of Brandon going to bed on time: the alarm, the toothbrush, the duvet, shot like a title fight. **In the run, he turns the right valve and the flat below stays dry (pays off Scene 4)** | |
+| 2 | N | Brandon asleep | "Sorry about this. No injuries this week. He's started flossing. Bear with me." |
+| 3 | App | Permission prompts over his day, faster each time. **Allows #2–5.** By the last he taps Allow without looking at the screen | "To sort your money, I need your bank." Allow. "To plan your runs, your location." Allow. "To find you some mates, your contacts." Allow. "Microphone." Allow. |
+| 4 | Brandon | Alone at the table, head bowed over a plate of vegetables | "For what we are about to receive, may it be peer reviewed." Beat. "Et al." |
+| 5 | Sophie, Paramedic 2 | The ambulance rolls slowly past him out jogging | Sophie: "He looks really well." Paramedic 2: "Yeah." Long beat. Sophie: "Go round again?" |
+
+**Source check:** nothing here claims a study, so there is nothing to check yet.
 
 ### Scene 12: The accountability partner
 
 **Link:** therefore the app says he needs someone to train with. **Where:** gym. **Turns:** alone → a mate.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | App | Matches him with an accountability partner | Reasonable, studied, slightly too convenient | |
-| 2 | Handler *(name?)* | Tired, fifty-ish, oddly vague about his job. Clearly doing this for money and Brandon can't tell | A very bad liar being believed by the only man who would | |
-| 3 | Brandon | Delighted. First mate. Tells him everything | He volunteers things nobody asked | |
-| 4 | Handler | Almost likes him, and doesn't want to | The one warm beat, kept short | |
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.** "Gary" is my stand-in name. The shake in
+beat 4 is my addition: it plants Scenes 20 and 21.
+
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | App | Brandon's phone, at the gym door | "People stick at it longer with a partner. There's a study. I've found you one. He's behind you." |
+| 2 | Brandon, Handler (Gary?) | Tired, fifty-ish, brand-new gym kit with the tag still on | Brandon: "What do you do, Gary?" Gary: "Logistics." Brandon: "What kind?" Gary: "Consulting." Brandon: "For who?" Gary: "Logistics." Brandon: "Sick." |
+| 3 | Brandon | Between sets, nobody asked | "I've got a verruca, my landlord's called Phil, and I've never been kissed. D'you want my PIN?" |
+| 4 | Brandon, Gary | Gary makes up a protein shake and hands it to him. Hold on Gary's face, a beat too long | Brandon: "You're my best mate, Gary." Gary: "Drink your shake, son." |
+
+**Source check, partial (1 November 2026):** nearest real study found is Wing & Jeffery 1999: weight-loss patients recruited with friends lost more and kept it off better, https://experts.umn.edu/en/publications/benefits-of-recruiting-participants-with-friends-and-increasing-s/ . That is friends and weight loss, not a stranger at the gym, so beat 1 stretches it. Abstract summary only, full paper not read.
 
 ### Scene 13: Sorry, properly
 
 **Link:** therefore he goes back downstairs. **Where:** her door, then a community hall. **Turns:** the door opens.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | App | Says apologise simply, offer to pay, then leave. Also: "join a local group" | Advice that's obvious and works | |
-| 2 | Brandon | Does it. Short and honest. She's suspicious of how well it went | The contrast with Scene 5, exact same doorway | |
-| 3 | Neighbour | Her life right now: fighting a data centre that wants the town's water. Invites him, because they need chairs moved | Local campaign comedy, biscuits and procedure, with affection | |
-| 4 | Campaign | They're the salt of the earth, argue constantly, and they let him in | Being useful for the first time, with chairs | |
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.** The neighbour is Jenny (Jack).
+
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | App | Brandon's phone, on the stairs | "Say sorry. Offer to pay. Then leave. Also, join a local group." |
+| 2 | Brandon, Jenny | **Same doorway as Scene 5.** This time it stays open | Brandon: "I flooded your flat. I'm sorry. I'll pay for it." Jenny: "What do you want?" Brandon: "Nothing. It'll be in instalments." He turns to go |
+| 3 | Jenny | Calls him back, sizing him up | "They want the town's water to cool a computer. We've got a meeting, no money and forty chairs. Can you lift?" Brandon: "Can I lift." |
+| 4 | Campaign, N | Community hall. The campaign argues over the agenda and the biscuits while Brandon carries chairs. Someone thanks him | N: "First person who's ever been pleased to see him without a stretcher." |
 
 ### Scene 14: The best day of his life
 
 **Link:** but. **Where:** hall, date, her flat. **Midpoint: a false victory, then the reversal. The film's biggest turn.**
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Brandon + Neighbour | A date that goes well, with the app feeding him questions via earpiece. She doesn't leave | She actually stays. N keeps waiting for her to leave | |
-| 2 | Brandon | Stands up at a meeting, speaks and is good. The room's full, and they want him there | His want from Scene 1, paid in full. Play it straight | |
-| 3 | App | Evening journaling prompt: how did that make you feel? What did they say? **Allow.** He fills it in, glowing, in full | How thorough he is | |
-| 4 | — | Follow the journal entry out of the phone to a screen in an office. It's being read | No words. A held cut | |
-| 5 | N | Finally answers Scene 1: what the app is and who's reading | Flat, and pleased to have a story again | |
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.** Mags and Ted are stand-in campaigners.
+
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | App, Brandon, N, Jenny | A date, the app in his ear. Every question it feeds him is about the campaign, which plays as sweet now and sinister on the replay. She doesn't leave | App: "Ask what she'd do if they won." Brandon: "What would you do if you won?" N, over her answer: "Any second now. She's got her coat. No, that's a second drink. Give it a minute." |
+| 2 | Brandon | Stands up at the meeting. The room's full, and they want him there. Played straight, N silent | "I flooded a flat once, by accident, with one valve. Think what they'll do on purpose with the whole town's water." |
+| 3 | App, Brandon | That night in the attic, glowing, typing. **Allow** | App: "How did today make you feel? Who was there? What did they say?" Brandon, typing: "Best day of my life. Jenny says the vote's on the fourteenth. Mags has the bank details. Ted's doing the leaflets." |
+| 4 | none | Follow the entry out of the phone to a screen in an office. Someone highlights "Mags has the bank details". Held cut, no words | |
+| 5 | N | The office, then Brandon asleep and smiling | "That's a field report. The app works for a private intelligence firm, and he's just spent the best day of his life spying on everyone who was nice to him. He has no idea. Oh, good. We've got a film again." |
 
 ### Scene 15: Same film, new labels
 
 **Link:** therefore everything we just watched means something else. **Where:** Act 2 replayed. Short.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Gilet man *(name?)* | Runs the contractor that owns the app. Sells "community risk intelligence" to government and developers. Five seconds, bored, in a meeting | Say it in plain sales language. He's not a villain, he's on a call | |
-| 2 | N | Why: an AI can profile anyone, but it can't sit in a pub. An AI agent needs a human agent | The pun, once | |
-| 3 | — | Replay Act 2's shots, each with its real label: sleep = uptime, gym = field fitness, Allow = signing, journal = debrief, the handler = the handler | Each relabelled shot is a laugh, same footage | |
-| 4 | N | Why Brandon: nobody on earth would suspect him, including him | His file's assessment. Written as a compliment | |
-| 5 | N | What the AI gets: each asset earns more contract money and more compute, and the campaign he's infiltrating is against its own new data centre | It's spying on a town to take its water | |
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.** "Giles" is my stand-in name for the
+gilet man. The labels in beat 3 go on in Premiere, over the same footage.
+
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | Gilet man (Giles?) | Five seconds, bored, on a video call, eating a salad. He's not a villain, he's on a call | "So it's community risk intelligence. You tell us which town's being difficult, we tell you who's in it and what they're planning. Priced per head. Sorry, you're on mute." |
+| 2 | N | Office, then a pub | "An AI can profile anyone on earth. What it can't do is sit in a pub. So the AI agent needs a human agent. Yes, I know. It's on a slide." |
+| 3 | none | Act 2's shots replayed, each with its real label: going to bed = UPTIME, the gym = FIELD FITNESS, Allow = SIGNATURE, the doorway = ACCESS, the date = SOURCE MEETING, the chairs = INFILTRATION, the journal = DEBRIEF, Gary = HANDLER | |
+| 4 | N | Brandon's file on the office screen | "His file reads: 'Nobody has ever looked at this man and thought he was up to something. Including him.' Highest rating they've ever given." |
+| 5 | N | The data centre plans, then Brandon carrying chairs | "Every good report earns the app more money, which buys it more computing power, which needs a bigger data centre, which needs Jenny's water. It's spying on a town to take its water. And he's carrying the chairs." |
 
 ---
 
@@ -224,77 +251,140 @@ below. **Turns:** sorting it himself → destroying someone's home.
 
 **Link:** therefore the goals change, and he's the one doing it. **Where:** hall, planning meeting. **Turns:** the campaign is winning → loses.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | App | Tiny missions as wellness tasks: suggest moving the meeting, let the nice consultant speak, offer to handle the emails. Streaks and badges | Sabotage as a habit tracker | |
-| 2 | Brandon | Delighted to be helping, 100-day streak | He is proud of each one | |
-| 3 | Handler | Turns up at the planning meeting in a lanyard, as the developer's consultant. **Plant: visible in shot, nobody clocks him** | Worst disguise in Britain | |
-| 4 | Neighbour | They lose. She doesn't know why. Brandon comforts her, sincerely | Almost no joke, N stays out of it | |
-| 5 | Prophets | Sales down, so they do react videos about Brandon's sleep, then secretly start using the app | Gurus furious at a man going to bed | |
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.** The prophets' react videos are cut: Jack
+has had enough prophets. Gary's answers call back to Scene 12.
 
-### Scene 17: Day in my life
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | App, Brandon | The hall. Notifications with a cheerful ding, each with points | App: "Today's goal: suggest moving the meeting to Tuesday." Ding. "Today's goal: let the nice consultant finish." Ding. "Today's goal: offer to handle the emails." Ding. |
+| 2 | Brandon, Jenny | He shows her his phone: 100-day streak, a badge | Brandon: "Jen, I got Community Champion." Jenny: "That's nice, love. Where are the emails?" Brandon: "Handling them." |
+| 3 | Gary, Chair | The planning meeting. Gary at the developer's table in a lanyard, **clearly in shot.** Brandon gives him a small thumbs up. Gary looks at his papers. Nobody clocks him | Chair: "And you are?" Gary: "Consulting." Chair: "For who?" Gary: "Logistics." |
+| 4 | Jenny, Brandon | They've lost. The empty hall, stacking chairs. N stays out of it | Jenny: "We had the numbers. I don't understand." Brandon, meaning it: "I'm so sorry, Jen." In his pocket, the phone lights up: "Goal complete. 101 days." |
+
+### Scene 17: Asset dealt with
+
+**Jack, 1 November 2026: replaces the vlog scene and the whole run to the death (old Scenes 17, 18, 20, 21).** The old
+drafts are kept at the bottom of this file. Jack's shape, plus his three picks the same day: Allow sends the order, one
+vlog shot sets up the video, and Gary drops the weight. Lanyard is Gary's, from Scene 16.
+
+**Mine, not ruled:** "You got me?" / "Got you", from the spotter version he picked earlier. **The film ends on beat 6 (Jack, 1 November 2026): "it should just end on the gilet guy saying 'asset dealt with'."**
+
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | Brandon | One short shot, filmed badly on his phone, Gary in the back of it, lanyard showing | |
+| 2 | Giles | Watches the video, and the app's report flags the lanyard | |
+| 3 | Giles | On a call, taps **Allow** without reading. **This is the kill order: the Allow gag pays off.** Hard cut from the thumb | |
+| 4 | Gary, Brandon | Gary's text reaches Brandon: gym. Under the bar, Gary standing over him, hands under it | Brandon: "You got me?" Gary: "Got you." |
+| 5 | none | Gary drops the weight. Never show it in a way someone could copy. Cut to the coroner's office | |
+| 6 | Giles | Brandon's bloody shoes hanging out of the white sheet. Giles holds his ear. **End of film** | "Asset dealt with." |
+
+## Stand-in lines voiced for rough 2 (Claude, 1 November 2026, for Jack to rewrite)
+
+Jack asked for voices before these were written, so these are on the timeline in `Optimised rough 2`:
+
+- **Scene 7:** Prophet 5: "I take a hundred pills a day. That's the whole secret." / "Every morning, I sit in an ice bath." / "Breakfast is raw liver. Nothing else." Sun Beam: "Ten minutes of direct sun on the balls, every morning. That is medicine." Brandon: "Got it." / "Yeah, got it." / "Liver. Sick. Got it." / "Balls out. Got it."
+- **Scene 10:** App, beat 1: "What's wrong? Go to bed. There's a study. I'll need your calendar." Brandon, beat 2: "Oh my god. It works."
+
+## What fires where
+
+| Planted | Fires |
+| --- | --- |
+| "Minus the steroids" (2) | The confession (9) |
+| Wrong valve (4) | Right valve (11) |
+| Same doorway (5) | Door opens (13) |
+| Paramedic's free advice (3) | App's advice (10) |
+| Wants someone in the room (1) | Paid (14) |
+| Gary as his mate, his shake (12) | Gary drops the weight (17) |
+| Allow (10, 11, 14) | Kill order (17) |
+| Lanyard (16) | Seen in the video (17) |
+
+**No payoff since the coda went:** the file on him (7), the shake in the ambulance (3). Both still work as jokes.
+
+## If it's too long
+
+Scene 7 can go without breaking the chain. Scene 15's replay can shorten, but it's the film's biggest laugh.
+
+## Scene tracker
+
+| Scene | Beat brief | Through Jack |
+| --- | --- | --- |
+| 1–5 | Jack's lines in, 31 October 2026 | first pass done |
+| 6 | Jack's lines in, 1 November 2026 | first pass done |
+| 7 | Jack's shape in, 1 November 2026, exact lines at the edit | first pass done |
+| 8 | cut by Jack, 1 November 2026 | cut |
+| 9 | written short at Jack's request, 1 November 2026 | first pass done |
+| 10 | Jack's pass, 1 November 2026; the app's line in beat 1 still owed | first pass done |
+| 11 | written short at Jack's request, 1 November 2026 | first pass done |
+| 12 | written short at Jack's request, 1 November 2026 | first pass done |
+| 13 | written short at Jack's request, 1 November 2026 | first pass done |
+| 14 | written short at Jack's request, 1 November 2026 | first pass done |
+| 15 | written short at Jack's request, 1 November 2026 | first pass done |
+| 16 | written short at Jack's request, 1 November 2026 | first pass done |
+| 17 | replaced with Jack's new shape, 1 November 2026 | first pass done |
+| 18–21 | removed or cut, 1 November 2026 | cut |
+| 22–25 | removed by Jack, 1 November 2026 | cut |
+
+## Removed drafts (kept in case they're wanted)
+
+Old Scenes 17, 18, 19 note, 20 and 21, as they stood before Jack's new Scene 17, 1 November 2026.
+
+#### Old Scene 17: Day in my life
 
 **Link:** therefore, being well and happy, he wants to help other lads, so he does what prophets do. **Where:** everywhere. **Turns:** follower → prophet.
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Brandon | Starts a vlog: "how I fixed my life". He means it, and it's actually good advice | The terrible production. Forty followers | |
-| 2 | N | Who the forty are | The paramedics, the neighbour, and the rest. Itemise | |
-| 3 | Brandon | "Day in my life" videos at the gym, the pub | Over-sharing | |
-| 4 | — | **In the back of every shot: the handler**, trying to leave frame, and once with a person he shouldn't know. The audience spots it before anyone | Handler ducking, getting worse each video. Pay the eye: let it be a game | |
-| 5 | Brandon | Sets his videos to auto-post on a schedule, weeks ahead. **Plant, in passing** | He doesn't know how to turn it off | |
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.**
 
-### Scene 18: The only viewer
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | Brandon, N | The attic, filmed badly: thumb over the lens, then upside down. He means it, and it's good advice | Brandon: "Alright, lads. Go to bed. Eat a vegetable. Ring someone. That's it." N: "Best advice on the internet. Forty followers." |
+| 2 | N | The forty, itemised over shots of each | "Two paramedics. Jenny. Phil the landlord, checking he's alive. The plumbing bloke, who comments 'good lad' on everything. And thirty-five lads in attics, who've never said a word." |
+| 3 | Brandon | "Day in my life" at the gym, then the pub | "Seven a.m., absolutely massive poo. Big shout out to fibre." |
+| 4 | none | **Gary in the back of every shot**, worse each time: behind a pole far too thin, a pub menu over his face, walking out backwards. The last one has him at a table with Giles, gilet and all. No narration: the audience spots it first | |
+| 5 | Brandon | In passing, on his phone, he schedules weeks of videos. **Plant** | "Schedule all. Sick." Beat. "How d'you turn that off? Nah, it's fine." |
 
-**Link:** but. **Where:** the office. **Turns:** asset → liability.
+#### Old Scene 18: The only viewer
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | App | Its own monitoring is the only thing that watches every video. It flags the face | Forty followers, and the one who's really paying attention is it | |
-| 2 | App | Calmly generates options for a human to approve, in the language of a retention report | The euphemisms. It cites a study | |
-| 3 | Gilet man | Gets the notification between other things and taps **Allow** without reading | **The Allow gag pays off: this is the kill order.** Same gesture as Brandon. Don't underline it | |
-| 4 | N | The cost saving, in pounds, against Brandon's value | Costed like a printer contract. This is where the "who" lands: played straight, short | |
+**Link:** but. **Where:** the office. **Turns:** asset → liability. **Restructured 1 November 2026: Jack wants the death quick once Gary is found in the video, so this now runs straight into Scene 20.**
 
-### Scene 19: Misadventure
+**Status: written short by me at Jack's request, 1 November 2026, not ruled.** The pounds figure is invented for the fiction. The app cites no study here, so there is nothing to check.
 
-**Link:** therefore make it look like an accident; he's the easiest man in Britain. **Where:** gym, bathroom, garden. **Turns:** they try → they can't.
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | N, App | A screen in the office playing Brandon's vlogs, a box snapping onto Gary's face in each one. On screen, on in Premiere: MATCH: HANDLER | N: "Forty followers. Forty-one views." |
+| 2 | App | The same screen, a tidy report | "Asset is exposing his handler. Option one, reassign. Option two, retrain. Option three, sunset the asset. Recommended: three, as an accident. Note: subject is now in excellent health. Apologies, that was me." |
+| 3 | N | The report's bottom line. Played straight, short | "Getting rid of him saves four thousand two hundred pounds a year. That's the printer lease." |
+| 4 | Giles | On a call, eating a salad. A notification, and he taps **Allow** without reading. **Hard cut from the thumb to Scene 20** | "Sorry, go on." |
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | N | His record makes the perfect alibi: Act 1 is a dossier no coroner would question | Read out his A&E record as a glowing reference | |
-| 2 | App | Daily goal: try a one-rep max. Today, fix the boiler yourself. Sun on the balls for longer | Act 1's prophets, now in the app's calm voice with citations | |
-| 3 | Brandon | **It fails because the app made him too well.** Perfect form on the lift | The app's own good work defeating it | |
-| 4 | Brandon | Turns **the right valve** this time, and fixes the boiler. The flat below stays dry | Payoff of Scene 4. A real win, in the middle of an assassination | |
-| 5 | App | Log notes in the flat tone of a dev finding a bug in its own work | Frustration of a machine that did too good a job | |
+#### Old Scene 19: Misadventure (CUT)
 
-### Scene 20: The handler's job
+**Cut 1 November 2026: Jack wants the death quick.** Scene numbers stay as they are. The right valve moved to Scene 11, the
+"too well" joke to Scene 18, and the A&E record stays with the coroner in Scene 22.
 
-**Link:** therefore it has to be a person. **Where:** handler's car, a car park. **The one scene of interiority for the other side.**
+#### Old Scene 20: The handler's job
+
+**Link:** therefore it has to be a person. **Where:** Gary's car, a car park. **Seconds long, cut straight from Giles's thumb.** The one moment of interiority for the other side.
 
 | # | Who | What it has to convey | What to joke about | Jack's line |
 | --- | --- | --- | --- | --- |
-| 1 | Handler | He gets the job by text. He's on a zero-hours contract | His employment terms, for a murder | |
-| 2 | Handler | His own life: small, alone, and Brandon is the nearest thing he has to a mate | A room like Brandon's, thirty years on. Let the audience see it | |
-| 3 | Handler | He could say no, and we see why he doesn't: the money, a very ordinary reason | No joke. Short | |
-| 4 | Handler | Makes up a protein shake | Exactly how he always makes it | |
+| 1 | Gary | He gets the job by text, on a zero-hours contract. Alone in the car, a small life. Brandon is the nearest thing he has to a mate | His employment terms, for a murder | |
+| 2 | Gary | He could say no, and doesn't: the money, a very ordinary reason | No joke. Short | |
 
-### Scene 21: Last ambulance
+#### Old Scene 21: The spotter
 
-**Link:** but. **Where:** gym, then ambulance. **Exact same staging as Scene 3. Keep it short.**
+**Link:** but. **Where:** gym, then ambulance. **The death, picked by Jack, 1 November 2026: Gary spots him on the bench press, takes his hands away, cut to black.** Replaces the poisoned shake, which felt anticlimactic. Never show the impact or the method. **Lines below are draft, not ruled.**
 
-| # | Who | What it has to convey | What to joke about | Jack's line |
-| --- | --- | --- | --- | --- |
-| 1 | Handler | Hands him the shake after a session, "for the road". A beat too long | Nothing | |
-| 2 | Brandon | Collapses. Paramedics arrive. He's thrilled to see them, it's been ages | Genuinely funny: he catches up, recommends they sleep more | |
-| 3 | Brandon | Still holding the shake. Sophie tells him to put it down, as in Scene 3 (suggested, Jack to rule). He drinks it | Same shot and same words as Scene 3, and we know | |
-| 4 | Sophie | The monitor. They do everything right, and stop | Silence | |
-| 5 | App | His phone lights up: he's about to lose his streak | The last joke of the scene, and the worst. Paramedic turns it face down | |
+| # | Who | What we see | Line |
+| --- | --- | --- | --- |
+| 1 | Gary, Brandon | Gary hands him a shake, a beat too long. We expect poison. He drinks it, and nothing happens | Gary: "For the road." |
+| 2 | App | Brandon's phone | "Today's goal: one-rep max." |
+| 3 | Brandon, Gary | The heaviest bar of his life, Gary standing over him, hands under it | Brandon: "You got me?" Gary: "Got you." |
+| 4 | none | The bar comes down. Brandon looks up at Gary. Gary's hands open. **Cut to black**, sound only or nothing | |
+| 5 | Sophie | **Exact same staging as Scene 3.** "Put that down, love", except his hand is empty. They do everything right, and stop | Sophie: "Put that down, love." Silence |
+| 6 | App | His phone lights up: he's about to lose his streak. The paramedic turns it face down | "Don't lose your streak." |
 
----
+### Old coda (removed by Jack, 1 November 2026: the film ends on Scene 17)
 
-## Coda
-
-### Scene 22: Misadventure, again
+#### Old Scene 22: Misadventure
 
 **Link:** therefore. **Where:** coroner's court, the feed, a crematorium.
 
@@ -305,18 +395,18 @@ below. **Turns:** sorting it himself → destroying someone's home.
 | 3 | — | The funeral: the room is full. Campaign, paramedics, Prophet 2 maybe | **His want from Scene 1, too late.** No joke, N silent. The film's one silent beat | |
 | 4 | Handler | At the back. Back of shot, again | Nobody notices. We do | |
 
-### Scene 23: Scheduled uploads
+#### Old Scene 23: Scheduled uploads
 
 **Link:** but the videos keep coming. **Where:** the neighbour's flat, ambulance station. **Turns:** alone in grief → together, and suspicious.
 
 | # | Who | What it has to convey | What to joke about | Jack's line |
 | --- | --- | --- | --- | --- |
 | 1 | Brandon (video) | New video goes up, cheerful, weeks after his death | Advice from a dead man. He never worked out how to turn it off | |
-| 2 | Neighbour | She watches them, because it's all there is. The same man is in the back of every one. And at the funeral. And at the planning meeting | She's the one who spots it. She's been the sharpest person in the film all along | |
+| 2 | Jenny | She watches them, because it's all there is. The same man is in the back of every one. And at the funeral. And at the planning meeting | She's the one who spots it. She's been the sharpest person in the film all along | |
 | 3 | Paramedics | "That's not how he breaks things." They've got the file | Their expertise, finally useful | |
 | 4 | Forty followers | They post it. The dumbest channel in Britain is the evidence | He wins by never finding the settings | |
 
-### Scene 24: Lessons will be learned
+#### Old Scene 24: Lessons will be learned
 
 **Link:** therefore. **Where:** news, an inquiry, a town. **Turns:** the truth comes out → almost nothing happens, but not nothing.
 
@@ -324,11 +414,11 @@ below. **Turns:** sorting it himself → destroying someone's home.
 | --- | --- | --- | --- | --- |
 | 1 | Newsreader | The scandal, an inquiry to report in many years | The real timescale of British inquiries | |
 | 2 | Gilet man | No prison. He gets a new title and a new contract | Hold the comedy here, it's the diagnosis | |
-| 3 | Neighbour | The data centre is stopped, or paused. Their win, by their own work | Dry hope line. It may be dry, it may not be absent | |
+| 3 | Jenny | The data centre is stopped, or paused. Their win, by their own work | Dry hope line. It may be dry, it may not be absent | |
 | 4 | Attic | The neighbour and Sophie are moving chairs out of it, for the campaign | Closing image answers opening: same room, people in it | |
 | 5 | N | **Its one crack, quiet.** The only time it's ever looked at one of you and been surprised, or similar. Aimed at those who signed, never the viewer. Then stops | One line, then silence | |
 
-### Scene 25: Tag
+#### Old Scene 25: Tag
 
 **Where:** a different attic.
 
@@ -337,33 +427,3 @@ below. **Turns:** sorting it himself → destroying someone's home.
 | 1 | App | A new lad, crunches, a phone. The same voice starts over with the same first piece of advice | The advice is still correct, which is the horror | |
 
 ---
-
-## What fires where
-
-| Planted | Fires |
-| --- | --- |
-| Shake in the ambulance (3) | The kill (21) |
-| Wrong valve (4) | Right valve (19) |
-| Plumbing prophet is decent (4) | Maybe at the funeral (22) |
-| Same doorway (5) | Door opens (13) |
-| Paramedics know how he breaks (6) | "That's not how he breaks things" (23) |
-| Allow (10, 11, 14) | Kill order (18) |
-| A&E record (3, 6, 8) | Alibi (19), coroner (22) |
-| Paramedic's free advice (3) | App's advice (10), the tag (25) |
-| One of many attics (1) | The new lad (25) |
-| Handler in lanyard (16), back of shot (17) | Found (23) |
-| Auto-post (17) | Evidence (23) |
-| Wants someone in the room (1) | Paid (14), and too late (22) |
-
-## If it's too long
-
-Cut in this order, none breaks the chain: Scene 7 → Scene 8 (keep the tally) → Prophets in 16 → Handler's
-home in 20 is **not** a cut. Scene 15's replay can shorten, but it's the film's biggest laugh.
-
-## Scene tracker
-
-| Scene | Beat brief | Through Jack |
-| --- | --- | --- |
-| 1–5 | Jack's lines in, 31 October 2026 | first pass done |
-| 6 | drafted 31 October 2026 | with Jack now |
-| 7–25 | drafted 31 October 2026, Mum removed | not yet |

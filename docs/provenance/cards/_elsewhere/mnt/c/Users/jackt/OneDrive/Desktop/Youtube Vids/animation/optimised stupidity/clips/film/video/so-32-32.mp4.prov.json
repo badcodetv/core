@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-32-32.mp4",
+ "made": "2026-11-01T14:25:57+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Sophie leans towards Brandon with her warm smile and pats the thick file on her knee with one hand, then turns a page. Later Brandon rolls his head slowly towards her and gives a long, tired blink. The strip light along the ceiling flickers as the vehicle rocks slightly. The camera does not move. Shot at 24fps with a 180-degree shutter, so fast movement smears. Audio: the low rumble of an engine idling, the rustle of paper, the squeak of the stretcher, a soft rattle of stowed equipment. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/32.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/32.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "32",
+  "frame": 32,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T14:12:50.546Z"
+ }
+}

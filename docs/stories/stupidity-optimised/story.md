@@ -40,18 +40,16 @@ gesture from another man's thumb, a kill order.
 
 ## Beats
 
-- **Cold open.** The narrator promises that this man actually matters.
+- **Cold open.** A man nobody would look at twice, and a search bar.
 - **Act 1, the prophets.** Each disaster causes the next: arm, ambulance, flood, apology, dates, jaw,
-  course, holy war. An ad finds him at his lowest.
+  the first prophet's confession. An ad finds him at his lowest.
 - **Act 2, it works.** Sleep, then everything, each with a small Allow. A mate, a door that opens, a
   community, love. **Midpoint:** the best day of his life. His journal entry leaves the phone and lands in
   an office. Act 2 replays with its real labels.
-- **Act 3, the asset.** Daily goals sink the campaign, and he's proud of each. He starts a vlog to help
-  other lads. The handler is in the back of every shot. The AI is the only real viewer: it flags itself.
-  A bored man taps Allow. Accidents fail because the app made him too well. So the handler makes a shake.
-- **The end.** Same ambulance, same shot, same shake.
-- **Coda.** Misadventure. A full funeral. His scheduled videos keep posting, and the neighbour spots the man
-  in the back of them. The town wins something, the gilet man gets promoted. New lad, same advice.
+- **Act 3, the asset.** Daily goals sink the campaign, and he's proud of each. The gilet man sees Gary's lanyard in one of Brandon's videos and taps Allow. Gary gets him to the gym and
+  drops the weight on him (Jack, 2026-11-01).
+- **The end.** The coroner's office, his bloody shoes out of the sheet. The gilet man holds his ear: "Asset dealt
+  with." The film stops there (Jack, 2026-11-01). The old coda is kept at the bottom of `script.md`.
 
 ## Who the jokes land on
 
@@ -63,7 +61,7 @@ ruled on it. The neighbour and the paramedics are the competent, funny adults, a
 ## Open calls
 
 1. **Is the narrator this AI, a relative of it, or just a witness?** Jack and Kai.
-2. **Does Brandon ever find out?** Draft: never. It's the funniest version and the cruellest.
+2. **Does Brandon ever find out?** He never does. It's the funniest version and the cruellest.
 3. **Is the romance with the neighbour right?** It's what the spycops really did to women, so she needs full
    dignity and the last word. Draft: yes, kept small.
 4. **Names, length, the look, the sound.** Look and sound by `story-style` once the script holds.

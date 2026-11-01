@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/12.jpg",
+ "made": "2026-11-01T11:06:51.430Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still of a very tall, thin paramedic woman in her mid thirties, stooped under the low roof of an ambulance cabin, craning her head back to look up into the lens as she reaches up for a box on a high rack. Her face is long and narrow, with sunken cheeks, deep violet-brown hollows under pale hazel eyes, thin lips, a pointed chin and a nose that has clearly been broken: bent to the right at the bridge with a bump halfway down. Her skin is sallow and uneven with dry patches by the nostrils. Her mousy brown hair is pulled back in a thin, greasy ponytail, with flyaways falling across her brow. Her wrists stick out of sleeves that are too short on a faded green uniform shirt with a pen clipped to the pocket and a coffee stain on the hem, and her long hand is spread open as it reaches. The camera is a fixed, operator-less lens in a ceiling corner of the vehicle, looking down at her from above, so her height is squashed, the wide picture bends slightly at the edges, the colour is faded and grey-green, and the image is grainy and low in contrast, like footage that nobody expected to watch. The only light is one pale strip tube above her and a faint blue flicker from a monitor out of sight, which leaves her eye sockets in shadow. Around her are a stretcher with a crumpled sheet, a yellow sharps bin, a stack of clipboards and a muddy boot print on the floor. The picture contains no words, numbers, symbols, borders or overlays of any kind, only the scene itself. Thanks.",
+ "source_id": "79316c72-680a-4b51-a730-0d75f4ad62d1"
+}

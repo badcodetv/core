@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-63-63.mp4",
+ "made": "2026-11-01T16:23:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. In the draughty hall, Brandon on the folding chair stares at his phone and breaks into a slow delighted grin as a glow brightens against his chin, while the campaigners behind him keep sorting papers at the trestle table. Later in the eight seconds Brandon shifts his weight on the chair and glances up towards the table without turning his head. One fluorescent tube flickers faintly overhead. The compressed, washed-out picture keeps its fine grain, shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: a flickering tube's buzz, the squeak of a plastic chair, paper rustling, a roll of tape unpeeling, distant traffic through the window. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/63.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/63.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "63",
+  "frame": 63,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T16:20:32.775Z"
+ }
+}

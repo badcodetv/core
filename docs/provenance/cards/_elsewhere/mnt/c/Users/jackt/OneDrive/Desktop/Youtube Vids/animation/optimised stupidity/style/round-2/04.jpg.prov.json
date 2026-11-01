@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2/04.jpg",
+ "made": "2026-11-01T10:59:06.314Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic, murky still as seen by the lens of a phone leaning on a windowsill in a cramped English attic bedroom, the picture slightly overexposed where daylight leaks in and muddy everywhere else, shown as a plain full-bleed photograph with nothing drawn on top of it. Brandon, 22, a soft, pudgy young man with a round moon face, a double chin starting, patchy ginger-brown stubble that grows in clumps and leaves bare gaps along the jaw, and a hairline already retreating at the temples with thin hair combed forward over the forehead. He sits slumped at a wobbly desk in a stretched navy tracksuit top, crumbs on the chest, leaning close to the lens so his face fills much of the frame, eyebrows raised in earnest worry, a little sweat on the upper lip. Pale flat daylight from a grubby skylight above and behind him blows out the edge of the picture, and a cold blue cast from the screen he is reading lights the front of his face. Pink flushed cheeks, creased eyelids, slightly chapped skin, a mug ringed with tea stains and a heap of clothes on a chair behind him. Thanks.",
+ "source_id": "a90e2ff1-50ed-4b97-867a-ba1cb842b268"
+}

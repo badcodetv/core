@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/06.jpg",
+ "made": "2026-11-01T11:06:51.342Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A still from a cheap laptop webcam during a video call, smeared and blocky with compression, the highlights glowing and the colours slightly oversaturated and smudged, as if the signal were struggling. The camera is propped on a kitchen island and looks up the man's chin. He is a heavy, big-framed man in his late thirties with a ruddy, windburnt, red-veined face, broken capillaries across his round cheeks and nose, a double chin, a thick neck, small pale blue eyes under sandy eyebrows, and a thick floppy fringe of dirty-blond hair falling across his forehead and sticking up at the back. He wears a bottle-green quilted gilet over a rumpled pink checked shirt with the sleeves pushed up his thick forearms. He is hunched over a large wooden bowl of salad, shovelling a forkful in while his eyes slide off to one side, half asleep with boredom. Behind him is a big new kitchen extension: a pale grey island unit, glass bi-fold doors onto a lawn in flat white daylight that burns out the glass, a row of copper pans hung in a line. The only light is the daylight behind him and the pale screen glow in front. No text, numbers, icons, borders or interface appear anywhere on the picture, which is just the raw image. Thanks.",
+ "source_id": "afffbaaf-9ba2-4bd8-a2c0-134df0e088e2"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-49-49.mp4",
+ "made": "2026-11-01T15:19:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Gary, on the right, extends the shaker bottle and Brandon, on the left, takes it with both hands, beaming. Later Brandon looks down at the bottle while Gary's gaze stays fixed on Brandon's face with a blank, unblinking stare. The tube light flickers faintly. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Plastic bottle rattle, a tube light buzz, rubber soles on the floor, a distant machine whirr. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/49.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/49.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "49",
+  "frame": 49,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T15:04:25.166Z"
+ }
+}

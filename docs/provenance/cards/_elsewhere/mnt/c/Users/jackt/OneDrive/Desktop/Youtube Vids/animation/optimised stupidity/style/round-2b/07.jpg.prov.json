@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/07.jpg",
+ "made": "2026-11-01T11:06:51.354Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A small, wiry woman of about forty-five stands on her own front step, close to the door, staring straight into a tiny wide lens mounted in the door frame at chest height, because she has just noticed it and is deciding what to say to it. She has a narrow, sharp-boned face with a pointed chin, pale skin with fine lines at the eyes and mouth, thin dry lips pressed together, and one eyebrow slightly raised. Her short hair is cropped and uneven, dark brown with wide grey streaks over the temples. A pair of reading glasses hangs on a faded green cord against a bobbled charcoal jumper, and one hand holds a rolled-up bundle of leaflets and a pen. The picture is the flat, slightly bowed view of a cheap wide lens looking down at her from above: her head looks a touch large, her shoulders sloped, the red brick porch and a wheelie bin curving at the edges. It is a grey damp English afternoon, soft overcast daylight with the sky behind her blown out to white, colours washed and slightly muddy, soft compressed detail and a little noise in the shadows. Nothing is written or drawn over the image: it is only the raw picture itself, with no lettering, digits, icons or frame furniture. Thanks.",
+ "source_id": "34dd769c-6aef-4fa3-a5c9-a86530444cbf"
+}

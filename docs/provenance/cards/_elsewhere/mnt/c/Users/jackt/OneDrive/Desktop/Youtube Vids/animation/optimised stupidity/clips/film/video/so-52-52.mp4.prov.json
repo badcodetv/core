@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-52-52.mp4",
+ "made": "2026-11-01T15:19:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Jenny holds the leaflets out a few inches towards Brandon with her chin lifted, and Brandon completes his turn and faces her with his eyebrows high. Later she lowers the leaflets and her eyes flick over his shoulder at the street. The wet wellies drip slowly onto the step. Shot at 24fps with a 180-degree shutter, so fast movement smears. The camera does not move. Audio: paper rustling, shoes shuffling on the stone, a dog barking down the road, the hum of a distant van. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/52.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/52.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "52",
+  "frame": 52,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T15:06:24.194Z"
+ }
+}

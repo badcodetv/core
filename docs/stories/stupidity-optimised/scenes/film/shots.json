@@ -1,0 +1,710 @@
+[
+ {
+  "n": 1,
+  "id": "01",
+  "group": "A",
+  "scene": 1,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon alone in his rented attic doing crunches on the floor, a podcast playing from his laptop, hungry and grim."
+ },
+ {
+  "n": 2,
+  "id": "02",
+  "group": "A",
+  "scene": 1,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon alone in the attic shaking a protein shake and drinking it, nothing else in the room to eat, the same routine as ever."
+ },
+ {
+  "n": 3,
+  "id": "03",
+  "group": "A",
+  "scene": 1,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Someone is knocking at his attic door. Brandon has frozen mid-crunch on the floor, holding completely still until they go away."
+ },
+ {
+  "n": 4,
+  "id": "04",
+  "group": "A",
+  "scene": 1,
+  "cast": [],
+  "what": "A different lonely lad in a different cheap rented room in the same town, doing the same crunches."
+ },
+ {
+  "n": 5,
+  "id": "05",
+  "group": "A",
+  "scene": 1,
+  "cast": [],
+  "what": "Another different lad, in another bedroom across the town, alone, mixing the same protein shake."
+ },
+ {
+  "n": 6,
+  "id": "06",
+  "group": "A",
+  "scene": 1,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon hunched close over his phone in the attic at night, typing into it, face lit by it. We cannot see the screen."
+ },
+ {
+  "n": 7,
+  "id": "07",
+  "group": "A",
+  "scene": 2,
+  "cast": [],
+  "what": "The first guru's own video: an enormous tanned bodybuilder with a shaved head and a ginger beard, in a home gym, explaining his routine at his own camera with total confidence."
+ },
+ {
+  "n": 8,
+  "id": "08",
+  "group": "A",
+  "scene": 2,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon in a cheap gym, following that routine exactly, under a weight far too heavy for him, arm shaking."
+ },
+ {
+  "n": 9,
+  "id": "09",
+  "group": "A",
+  "scene": 2,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "The moment after his arm has gone: Brandon on the gym floor holding his arm, other gym-goers turning to look. No gore."
+ },
+ {
+  "n": 10,
+  "id": "10",
+  "group": "A",
+  "scene": 3,
+  "cast": [
+   "Sophie",
+   "Brandon"
+  ],
+  "what": "Inside the ambulance. Brandon on the stretcher, arm wrecked and bandaged, clutching a protein shake. Sophie the paramedic reaches to take it, kind and tired."
+ },
+ {
+  "n": 11,
+  "id": "11",
+  "group": "A",
+  "scene": 3,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Inside the ambulance, closer on Brandon on the stretcher, trying to speak and barely managing a sentence."
+ },
+ {
+  "n": 12,
+  "id": "12",
+  "group": "A",
+  "scene": 3,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Attic at night, Brandon on his bed with his arm in a cast, duvet up, facing away, sad. Nothing explicit, entirely implied."
+ },
+ {
+  "n": 13,
+  "id": "13",
+  "group": "A",
+  "scene": 4,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon in the shared bathroom, one arm in a cast, staring at a dripping tap with his phone propped on the sink."
+ },
+ {
+  "n": 14,
+  "id": "14",
+  "group": "A",
+  "scene": 4,
+  "cast": [],
+  "what": "The plumbing guru's own video: a calm, kind, decent bloke in overalls kneeling by a tap in a bathroom, talking at his own camera."
+ },
+ {
+  "n": 15,
+  "id": "15",
+  "group": "A",
+  "scene": 4,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon has turned the wrong valve under the sink with his one good hand. Water is bursting out over him and across the floor."
+ },
+ {
+  "n": 16,
+  "id": "16",
+  "group": "A",
+  "scene": 4,
+  "cast": [
+   "Jenny"
+  ],
+  "what": "Jenny in her downstairs flat, looking up in shock as her ceiling sags and collapses, water pouring through. Seen from a camera on her kitchen shelf."
+ },
+ {
+  "n": 17,
+  "id": "17",
+  "group": "A",
+  "scene": 5,
+  "cast": [],
+  "what": "The charisma guru's own video: a shiny young man with too many teeth in a bright room, counting things off on his fingers at his own camera."
+ },
+ {
+  "n": 18,
+  "id": "18",
+  "group": "A",
+  "scene": 5,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Doorbell view: Brandon standing at Jenny's front door in a stiff, rehearsed, confident posture, saying hello."
+ },
+ {
+  "n": 19,
+  "id": "19",
+  "group": "A",
+  "scene": 5,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Doorbell view, moments later: Brandon still standing there, the door has shut in his face, posture collapsing."
+ },
+ {
+  "n": 20,
+  "id": "20",
+  "group": "A",
+  "scene": 5,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "A cheap restaurant, seen from a camera above the till: Brandon alone at a table for two as a woman walks out of the door behind him, silently."
+ },
+ {
+  "n": 21,
+  "id": "21",
+  "group": "B",
+  "scene": 6,
+  "cast": [],
+  "what": "The face guru's own video: chadjaw7x, a man in his twenties with a ridiculously sharp jaw, in a dim bedroom, leaning into his own camera, sneering with confidence."
+ },
+ {
+  "n": 22,
+  "id": "22",
+  "group": "B",
+  "scene": 6,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon in the bathroom, seen from behind him and to the side, holding a hammer up near his own jaw, eyes shut, about to go. It has not touched him."
+ },
+ {
+  "n": 23,
+  "id": "23",
+  "group": "B",
+  "scene": 6,
+  "cast": [
+   "Sophie"
+  ],
+  "what": "Sophie and a second paramedic edging down a narrow landing with their hands out, slowly, very calmly, the way you approach a dangerous animal."
+ },
+ {
+  "n": 24,
+  "id": "24",
+  "group": "B",
+  "scene": 6,
+  "cast": [
+   "Sophie",
+   "Brandon"
+  ],
+  "what": "Sophie gently taking the hammer out of Brandon's raised hand on the landing."
+ },
+ {
+  "n": 25,
+  "id": "25",
+  "group": "B",
+  "scene": 7,
+  "cast": [],
+  "what": "The longevity guru's own video: a very rich, waxy, ageless man in a white glass house, with hundreds of pills laid out in front of him."
+ },
+ {
+  "n": 26,
+  "id": "26",
+  "group": "B",
+  "scene": 7,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon in the attic with a heap of cheap chemist bottles, tipping a huge handful of pills into his mouth, about to choke."
+ },
+ {
+  "n": 27,
+  "id": "27",
+  "group": "B",
+  "scene": 7,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "The shared back garden: Brandon climbing into a wheelie bin full of cold water and ice from a petrol station, in his pants, teeth chattering."
+ },
+ {
+  "n": 28,
+  "id": "28",
+  "group": "B",
+  "scene": 7,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon in the shared kitchen, with a slab of raw liver with a yellow reduced sticker, biting it and starting to retch."
+ },
+ {
+  "n": 29,
+  "id": "29",
+  "group": "B",
+  "scene": 7,
+  "cast": [],
+  "what": "The testosterone guru's own video: Sun Beam, a leathery, oiled man on a sun lounger on a beach, shot chest up, talking at his own camera, utterly serious."
+ },
+ {
+  "n": 30,
+  "id": "30",
+  "group": "B",
+  "scene": 7,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "The shared back garden seen from an upstairs window far away: Brandon from behind on a deckchair, facing the sun, shorts round his ankles, legs apart. We only see his back."
+ },
+ {
+  "n": 31,
+  "id": "31",
+  "group": "B",
+  "scene": 7,
+  "cast": [
+   "Jenny"
+  ],
+  "what": "Jenny at her window, her face reacting, reaching up and pulling down the blind."
+ },
+ {
+  "n": 32,
+  "id": "32",
+  "group": "B",
+  "scene": 7,
+  "cast": [
+   "Sophie",
+   "Brandon"
+  ],
+  "what": "Inside the ambulance again: Brandon on the stretcher, sunburnt and wrecked, Sophie greeting him like an old friend, with a thick paper file on her knee."
+ },
+ {
+  "n": 33,
+  "id": "33",
+  "group": "B",
+  "scene": 9,
+  "cast": [],
+  "what": "The first guru's tearful apology video: an enormous tanned bodybuilder with a shaved head and a ginger beard, crying into his own camera under a ring light, one huge hand on his chest."
+ },
+ {
+  "n": 34,
+  "id": "34",
+  "group": "B",
+  "scene": 9,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon alone at the kitchen table, sitting with it. Very still, nothing happening. The quietest shot in the film."
+ },
+ {
+  "n": 35,
+  "id": "35",
+  "group": "B",
+  "scene": 9,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "The same table: his phone lights up beside his hand. He looks down at it. We cannot read the screen."
+ },
+ {
+  "n": 36,
+  "id": "36",
+  "group": "C",
+  "scene": 10,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon in bed in the attic at night, phone light on his face, tapping once on the screen with his thumb."
+ },
+ {
+  "n": 37,
+  "id": "37",
+  "group": "C",
+  "scene": 10,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Morning in the attic, daylight. Brandon sitting bolt upright in bed, astonished at how good he feels, patting his own face."
+ },
+ {
+  "n": 38,
+  "id": "38",
+  "group": "C",
+  "scene": 10,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon at his desk reading a printed scientific paper, finger under the line, mouth slightly open, as if he has discovered fire."
+ },
+ {
+  "n": 39,
+  "id": "39",
+  "group": "C",
+  "scene": 11,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon at the bathroom mirror brushing his teeth at exactly bedtime, intense and committed, like a boxer before a title fight."
+ },
+ {
+  "n": 40,
+  "id": "40",
+  "group": "C",
+  "scene": 11,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon tucking his duvet in around himself with total focus, bed made perfectly, attic now tidy."
+ },
+ {
+  "n": 41,
+  "id": "41",
+  "group": "C",
+  "scene": 11,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon under the bathroom sink turning a valve correctly. Nothing goes wrong. The floor stays dry. He is quietly delighted."
+ },
+ {
+  "n": 42,
+  "id": "42",
+  "group": "C",
+  "scene": 11,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon asleep in the tidy attic, peaceful, floss on the bedside table."
+ },
+ {
+  "n": 43,
+  "id": "43",
+  "group": "C",
+  "scene": 11,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon walking down a street in daylight, taps his phone with his thumb without looking at it. Seen from a shop's camera."
+ },
+ {
+  "n": 44,
+  "id": "44",
+  "group": "C",
+  "scene": 11,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon alone at a table, head bowed over a plate of vegetables, hands together, as if saying grace."
+ },
+ {
+  "n": 45,
+  "id": "45",
+  "group": "C",
+  "scene": 11,
+  "cast": [
+   "Brandon",
+   "Sophie"
+  ],
+  "what": "A street seen from a fixed camera on a lamp post: Brandon jogging on the pavement, healthy, while an ambulance rolls slowly past him with Sophie in the passenger window watching him."
+ },
+ {
+  "n": 46,
+  "id": "46",
+  "group": "C",
+  "scene": 12,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon at the gym's front door, looking down at his phone and then turning to look behind him."
+ },
+ {
+  "n": 47,
+  "id": "47",
+  "group": "C",
+  "scene": 12,
+  "cast": [
+   "Gary",
+   "Brandon"
+  ],
+  "what": "Inside the gym: Gary in brand-new gym kit with the price tag still on, on the right, being talked at by a delighted Brandon on the left."
+ },
+ {
+  "n": 48,
+  "id": "48",
+  "group": "C",
+  "scene": 12,
+  "cast": [
+   "Brandon",
+   "Gary"
+  ],
+  "what": "Brandon sitting on a bench between sets, talking non-stop and sharing everything, on the left. Gary on the right, holding a towel, listening with no expression."
+ },
+ {
+  "n": 49,
+  "id": "49",
+  "group": "C",
+  "scene": 12,
+  "cast": [
+   "Gary",
+   "Brandon"
+  ],
+  "what": "Gary on the right handing Brandon on the left a protein shake he has made. Brandon beaming. Gary's face holds on him a beat too long."
+ },
+ {
+  "n": 50,
+  "id": "50",
+  "group": "D",
+  "scene": 13,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Brandon on the shared stairs, sitting, looking at his phone, then standing up with resolve."
+ },
+ {
+  "n": 51,
+  "id": "51",
+  "group": "D",
+  "scene": 13,
+  "cast": [
+   "Jenny",
+   "Brandon"
+  ],
+  "what": "Doorbell view, same doorway as before: the door is open. Jenny in the doorway on the left, suspicious, arms folded. Brandon on the right, honest and simple, already half turning to go."
+ },
+ {
+  "n": 52,
+  "id": "52",
+  "group": "D",
+  "scene": 13,
+  "cast": [
+   "Jenny",
+   "Brandon"
+  ],
+  "what": "Doorbell view: Jenny stepping out of the door after him, sizing him up, a stack of leaflets in her hand, Brandon turning back."
+ },
+ {
+  "n": 53,
+  "id": "53",
+  "group": "D",
+  "scene": 13,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "A community hall with stacked chairs and a biscuit table: a handful of campaigners arguing over an agenda while Brandon carries four chairs past, thrilled to be useful."
+ },
+ {
+  "n": 54,
+  "id": "54",
+  "group": "D",
+  "scene": 14,
+  "cast": [
+   "Brandon",
+   "Jenny"
+  ],
+  "what": "A cheap pub, seen from the camera over the bar: Brandon on the left listening with one finger near an earpiece, Jenny on the right talking, and staying, a second drink on the table."
+ },
+ {
+  "n": 55,
+  "id": "55",
+  "group": "D",
+  "scene": 14,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "The community hall full of people on folding chairs: Brandon standing up, speaking, and being good at it. The whole room is turned to him."
+ },
+ {
+  "n": 56,
+  "id": "56",
+  "group": "D",
+  "scene": 14,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Attic at night, Brandon sitting on the bed typing on his phone with both thumbs, glowing with happiness."
+ },
+ {
+  "n": 57,
+  "id": "57",
+  "group": "D",
+  "scene": 14,
+  "cast": [],
+  "what": "A bland corporate office at night seen from a ceiling camera: a screen on a desk with one person reading it, her hand on the mouse, highlighting a line we cannot read."
+ },
+ {
+  "n": 58,
+  "id": "58",
+  "group": "D",
+  "scene": 14,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "Attic at night, Brandon asleep and smiling, phone charging on the side table with its little light on."
+ },
+ {
+  "n": 59,
+  "id": "59",
+  "group": "D",
+  "scene": 15,
+  "cast": [
+   "Giles"
+  ],
+  "what": "Giles on a video call seen by his webcam, bored, eating salad, talking without looking up."
+ },
+ {
+  "n": 60,
+  "id": "60",
+  "group": "D",
+  "scene": 15,
+  "cast": [],
+  "what": "A corner table in an ordinary English pub in the afternoon, empty, a half-drunk pint on it. Seen from the camera over the bar."
+ },
+ {
+  "n": 61,
+  "id": "61",
+  "group": "D",
+  "scene": 15,
+  "cast": [],
+  "what": "A desk screen in the bland office: a file open with a small passport-style face photo we can barely see, in a dim room. Keep any lettering a blur."
+ },
+ {
+  "n": 62,
+  "id": "62",
+  "group": "D",
+  "scene": 15,
+  "cast": [],
+  "what": "A meeting room table with a large architectural model of a huge windowless data centre on the edge of a little model English town, water pipes in blue."
+ },
+ {
+  "n": 63,
+  "id": "63",
+  "group": "E",
+  "scene": 16,
+  "cast": [
+   "Brandon"
+  ],
+  "what": "The community hall: Brandon on a folding chair looking pleased at his phone, as his phone lights up, campaigners working behind him."
+ },
+ {
+  "n": 64,
+  "id": "64",
+  "group": "E",
+  "scene": 16,
+  "cast": [
+   "Brandon",
+   "Jenny"
+  ],
+  "what": "The hall: Brandon on the left proudly showing his phone screen to Jenny on the right, who is busy with a pile of papers and barely looks. We cannot read the screen."
+ },
+ {
+  "n": 65,
+  "id": "65",
+  "group": "E",
+  "scene": 16,
+  "cast": [
+   "Gary"
+  ],
+  "what": "A council planning meeting from the corner of the room: rows of chairs, and at the developer's table Gary in a suit jacket and a lanyard, clearly in shot, looking at his papers."
+ },
+ {
+  "n": 66,
+  "id": "66",
+  "group": "E",
+  "scene": 16,
+  "cast": [
+   "Jenny",
+   "Brandon"
+  ],
+  "what": "The empty community hall afterwards: Jenny on the left stacking chairs, beaten, Brandon on the right, sincere, saying sorry. A phone-shaped glow in his pocket."
+ },
+ {
+  "n": 67,
+  "id": "67",
+  "group": "E",
+  "scene": 17,
+  "cast": [
+   "Brandon",
+   "Gary"
+  ],
+  "what": "Brandon's own badly-filmed video in the gym: Brandon close up on the left, thumb half over the lens, grinning into his phone. Far behind him on the right Gary is trying to walk out of shot, lanyard showing around his neck."
+ },
+ {
+  "n": 68,
+  "id": "68",
+  "group": "E",
+  "scene": 17,
+  "cast": [
+   "Giles"
+  ],
+  "what": "Giles at his desk seen by his webcam, frowning very slightly at something on his screen, fork stopped in the air."
+ },
+ {
+  "n": 69,
+  "id": "69",
+  "group": "E",
+  "scene": 17,
+  "cast": [
+   "Giles"
+  ],
+  "what": "Giles on a call seen by his webcam, salad in one hand, his other thumb tapping once on his phone without looking down. He is already looking away."
+ },
+ {
+  "n": 70,
+  "id": "70",
+  "group": "E",
+  "scene": 17,
+  "cast": [
+   "Brandon",
+   "Gary"
+  ],
+  "what": "The cheap gym from a high corner: Brandon lying on the bench press under the heaviest bar of his life. Gary at the head of the bench standing over him, hands under the bar. Brandon looks up, trusting."
+ },
+ {
+  "n": 71,
+  "id": "71",
+  "group": "E",
+  "scene": 17,
+  "cast": [
+   "Gary"
+  ],
+  "what": "Closer from the same high corner: Gary's two hands under the bar, opening. Nothing has fallen yet. His face looks down, empty."
+ },
+ {
+  "n": 72,
+  "id": "72",
+  "group": "E",
+  "scene": 17,
+  "cast": [
+   "Giles"
+  ],
+  "what": "A coroner's office: a body under a white sheet on a steel table, a pair of bloody trainers hanging out of the end. Giles in his gilet stands beside it, holding one finger to his ear, speaking."
+ }
+]

@@ -14,7 +14,7 @@ real person's name, face or catchphrase.**
 1. **Lifting.** The first convert. Later the tearful apology video with a discount code.
 2. **Plumbing.** A calm, decent man on YouTube. The only one who isn't selling anything.
 3. **Charisma.** "Top ten ways to apologise."
-4. **Face.** A teenager on bone structure. Method is never shown.
+4. **Face: chadjaw7x** (Jack, 2026-11-01). In his 20s, on bone structure. "Fix your jaw, bro, then the bitches come crawling."
 5. **Longevity.** A very rich man's routine, attempted on Universal Credit.
-6. **Testosterone.** Sun on the balls.
-7. **Hustle.** A course whose only product is the course.
+6. **Testosterone: Sun Beam** (Jack, 2026-11-01). Sun on the balls.
+7. ~~**Hustle.**~~ Cut with Scene 8 (Jack, 2026-11-01).

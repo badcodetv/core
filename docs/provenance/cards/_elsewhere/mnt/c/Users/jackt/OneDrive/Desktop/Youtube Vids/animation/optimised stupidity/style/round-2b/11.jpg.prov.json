@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/11.jpg",
+ "made": "2026-11-01T11:06:51.415Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still of a Black British paramedic in her late twenties, looking up into the lens with a tired, crooked, kind smile while she stretches one arm up towards a high compartment inside an ambulance. Her face is oval with a high forehead, full cheeks, deep brown skin that shows a little shine on the nose and forehead, a small scar through her left eyebrow, slightly puffy lids, and a gap between her front teeth. Her long box braids are twisted up into a lopsided knot on top of her head, with a few loose strands stuck to her neck. She wears a dark green uniform jacket zipped halfway over a grey fleece, a lanyard with a clutch of keys, and blue nitrile gloves, one of them with a torn fingertip. The camera is a fixed, unattended lens up in the corner of the ceiling, looking down across the length of the cabin, so she is small in the frame, the angle is steep, and the colours are drained and compressed like an old webcam picture, with soft detail and mild noise. The only light is a single hard strip light overhead, giving her a pale glare on the forehead and deep shadow under the chin, with a little orange streetlamp glow leaking in through the frosted rear window. Around her are a battered grab bag, tangled blue tubing, a roll of paper towel and a tipped-over paper coffee cup on a bench. The picture contains no words, numbers, symbols, borders or overlays of any kind, only the scene itself. Thanks.",
+ "source_id": "487eeec9-5fbe-494b-b6a0-d5288145df12"
+}

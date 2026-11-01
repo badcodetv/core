@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/01.jpg",
+ "made": "2026-11-01T11:06:51.267Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still of a thin, sinewy man with a long narrow face, hollow cheeks, a sharp Adam's apple and a drooping moustache stained nicotine-yellow at the middle, a few fair eyebrow hairs, and watery pale-blue eyes with heavy bags. His thin hair is combed over in oily strands. He wears a bobbled navy fleece with a faded embroidered patch on the chest that is too blurred to read, zipped up to the throat. He has walked right up under a camera mounted near the ceiling of a gym and glanced up at it with a weary squint, one hand rubbing the back of his neck while he checks the room behind him. We see him from slightly above, steeply foreshortened, with his forehead large and his chin small. Behind him are mirrored panels smeared with fingerprints and a row of cross-trainers. A single fluorescent tube overhead gives a cold, uneven light and a window on the far side is blown out to white. The image is soft and washed out with coarse grain and slightly crushed shadows, the look of footage from an unattended wide-angle camera. No writing, symbols or graphics appear anywhere in the frame. Thanks.",
+ "source_id": "861cdf0c-5ab0-421a-9de9-2971e8edddbb"
+}

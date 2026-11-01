@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/61.jpg",
+ "made": "2026-11-01T12:10:19+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "cast-many-v3",
+ "model": "Nano Banana 2",
+ "prompt": "A close high-angle view of a desk in a dim office, taken from a lens fixed in the ceiling directly above, the room lit only by the pale glow of a monitor whose face is turned slightly away from the camera, so the screen shows only a soft blur of light. In the blur a small pale rectangle, no bigger than a stamp, hints at a passport-style face photo, too small and soft to make out. The desk holds a cold mug, a wired keyboard with worn keys and a lanyard coiled beside it. Nothing legible anywhere. The picture is grainy and washed out, the corners vignetted dark and the colour compressed. Thanks."
+}

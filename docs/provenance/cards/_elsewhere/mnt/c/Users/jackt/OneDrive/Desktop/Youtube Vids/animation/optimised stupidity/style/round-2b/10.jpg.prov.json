@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/style/round-2b/10.jpg",
+ "made": "2026-11-01T11:06:51.399Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 1
+ },
+ "prompt": "A photorealistic still of a stocky paramedic in her early thirties, seen from above and slightly to one side, looking straight up into the lens as she reaches overhead for something on a shelf in the back of an ambulance. Her face is broad and round, with a heavy jaw, a flat freckled nose, small pale-lashed grey eyes, chapped lips and a faint red mark across the bridge of the nose where a mask has sat for too many hours. Her hair is cropped close to the skull in uneven sandy-brown clippers work, with a few grey strands at the temple. She wears a green paramedic jacket with a frayed collar over a creased green uniform shirt; her sleeve is pushed to the elbow and her raised forearm carries a faded blue-black tattoo of a swallow above a ribbon of illegible script, the ink blurred with age. Her shoulders are thick and slumped with tiredness. The camera is a fixed unmanned lens bolted high in the ceiling corner of the vehicle, so the picture is wide, slightly distorted at the edges, a little soft, washed-out and flat in colour, with fine night-time grain and slightly crushed shadows. The only light is one long cold fluorescent strip along the ceiling, which flattens her face and leaves pale glare on the steel cabinets, blue-grey rubber flooring, a folded red blanket, a stretcher with a scuffed mattress and a dented oxygen cylinder. The picture contains no words, numbers, symbols, borders or overlays of any kind, only the scene itself. Thanks.",
+ "source_id": "6efdce63-9d5a-4077-b4a9-4a3b3d0bd3ba"
+}

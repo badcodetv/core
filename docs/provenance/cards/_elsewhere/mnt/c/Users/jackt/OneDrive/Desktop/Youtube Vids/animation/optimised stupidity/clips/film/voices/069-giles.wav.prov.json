@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/069-giles.wav",
+ "made": "2026-11-01T18:21:33+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "stupidity-optimised voice run",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "So it's community risk intelligence. You tell us which town's being difficult, we tell you who's in it and what they're planning. Priced per head. Sorry, you're on mute.",
+ "inputs": {
+  "profile_file": "docs/stories/stupidity-optimised/scenes/film/voices/giles.md"
+ },
+ "settings": {
+  "voice": "Sadaltager",
+  "temperature": 1,
+  "channels": 2
+ }
+}

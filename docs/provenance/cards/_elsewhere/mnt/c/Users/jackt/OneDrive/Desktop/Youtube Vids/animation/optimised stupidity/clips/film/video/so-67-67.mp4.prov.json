@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-67-67.mp4",
+ "made": "2026-11-01T16:34:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Brandon in the left foreground nods and grins at the lens, his mouth moving without forming clear words, while far behind him Gary keeps edging towards the fire-exit door at the right of frame. Later in the eight seconds Gary reaches the door and puts a hand on the bar as Brandon's grin widens slightly and his eyes stay on the lens. A strip tube overhead gives a slow flicker. The thumb stays fixed at the corner of the lens. The camera does not move. Audio: the thump of music through a gym wall, a distant treadmill belt, rubber soles squeaking on the floor, the clunk of a dumbbell being set down. No dialogue, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/67.jpg",
+ "why": "as written",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/moodboard/67.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/stupidity-optimised/scenes/film",
+  "key": "67",
+  "frame": 67,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-01T16:30:23.451Z"
+ }
+}

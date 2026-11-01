@@ -2716,3 +2716,18 @@ kaleidoscope, newsprint dots, op-art rings, double exposure, melting). Record: `
 - **A silent block:** a kaleidoscope of hands counting banknotes, snapping rubber bands, a card game, a rat: no candidate
   3×. "The whole pattern turns slowly clockwise; the lamp glows steady" landed first time. Cause not isolated.
 - Rough flash check (whole-frame brightness swings) passed on all 33, including three fires prompted "glow steadily".
+
+## Stupidity Optimised film run, 2026-11-01
+
+- `[observed, n=2]` **The compose bar stays in video mode after `run.mts`,** and `cast-many-v3.mjs` does not check it. Two
+  "stills" were sent as video generations and spent video credits, and the saved tile was a frame from the clip, with no
+  sign of the cast. One `flow_generate_image` call flips the bar back. Check the bar's label before any scripted still.
+- `[observed, n=4]` **A still showing blood generates in Nano Banana 2 but fails every Omni clip from it,** within about
+  15s, across two motion prompts. The tile leaves no failure text. The same shot with grubby trainers animated first time.
+  The runner logs this as `stalled`, not as a policy block.
+- `[observed, n=1]` **Pills at an open mouth:** a clip from that still came back empty until the motion stopped describing
+  choking and swallowing. Only the motion and the file size changed, so the cause is not isolated.
+- `[observed, n=1]` **Re-saving at 1280 wide cleared `UPLOAD_REFUSED`** on a meeting-room crowd still, matching the earlier
+  single observation above.
+- `[observed, n=1]` **"NHS" in a still prompt put invented words on the ambulance** ("POLINCE"). "Plain panels free of
+  lettering" gave a clean one.
