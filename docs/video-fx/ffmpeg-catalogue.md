@@ -228,8 +228,9 @@ scale=1920:1080:flags=lanczos,noise=c0s=7:c0f=t+u,format=yuv420p" -c:v libx264 -
 ```
 
 **Three sines at incommensurate rates**, so the flicker never visibly repeats — one sine reads as
-a pulsing lamp, not as fire. **`noise=…:allf=t+u` is not optional:** a locked plate with no moving
-grain reads as a frozen JPEG, and the grain is what makes it read as footage.
+a pulsing lamp, not as fire. **For a photographic look, `noise=…:allf=t+u` is not optional:** a locked plate with no moving
+grain reads as a frozen JPEG, and the grain is what makes it read as footage. (A drawn, flat or
+clean look may want no grain; then something else must move, or the still reads as a still.)
 
 ⚠️ **When the thing to modulate is a scattered field rather than one spot** — hundreds of rack
 lamps, each needing its own phase — `geq` is the wrong tool, because it cannot address a blob.

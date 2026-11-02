@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B17-b.jpg",
+ "made": "2026-10-28T12:50:53.244Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Coloured oil and water swim across the whole scene like a liquid light show: huge soft blobs of amber, magenta and cobalt blue drifting over faces, clothes and walls, with thin dark rims where oil meets water. Camera at hip height between the legs of a band in pinstripe suits. In a smoky underground club, the man from the character reference, dressed exactly as in his portrait reference, dances arm in arm with the man from the second reference and the woman from the third reference, all three laughing, gangsters raising champagne round them. One white spotlight from above; strings of bulbs. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/mayor.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg",
+   "/home/jackt/.cache/sm-cast/redleader.jpg",
+   "/home/jackt/.cache/sm-cast/blueleader.jpg"
+  ],
+  "character": "SM Mayor"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a9e1a3cb-66b9-4076-83d9-2737a5dad838"
+}

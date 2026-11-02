@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/chase4-pov1/00-b.jpg",
+ "made": "2026-10-30T10:15:10.454Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From inside the back of a getaway sedan at dawn, looking backward through its small oval rear window as the car tears down a narrow wholesale fruit market lane. The interior is sharp and close: plum mohair seats, a brass ashtray, a tan window blind flapping on its cord, and a man in a rumpled cream suit kneeling backward on the seat at the left of the frame, cropped by the edge to one shoulder, one ear and thinning hair, his hand clamped on the window ledge. The whole car is rolled over so the horizon outside tilts steeply. Oranges are loose across the parcel shelf, two of them in the air and blurred. Out through the oval everything is streaked along the line of travel: awnings striped tomato, mustard and bottle green, a stack of burst crates, porters in waistcoats flattened against a wall, cabbages and oranges still bouncing in the road, and straight behind, coming through the spray of fruit, a police motorcycle with a sidecar, the rider crouched low in goggles and peaked cap. The low sun comes from behind the motorcycle, straight down the lane and in through the rear window, hard and gold, turning market steam into a bright wall, laying one oval of light over the man's shoulder and the plum seat, and leaving the rest of the car's interior deep and brown. Colour-negative grain with rich reds, and the car's interior carries the picture out to all four frame edges with no border.\n\nThanks.",
+ "source_id": "af023e8b-9568-4d9e-b822-f4f33c17d982"
+}

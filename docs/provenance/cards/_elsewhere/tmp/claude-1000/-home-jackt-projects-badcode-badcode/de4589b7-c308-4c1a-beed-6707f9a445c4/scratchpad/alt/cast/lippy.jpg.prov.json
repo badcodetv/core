@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/lippy.jpg",
+ "made": "2026-10-28T11:46:29.922Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s studio portrait photograph on grainy colour film, head and shoulders, turned three-quarters towards the camera, against a plain mid-grey backdrop, lit by one soft key light from the left. A fat white man in his thirties with slicked-back black hair, heavy jowls, a pale old scar running down through his top lip, a gold front tooth, small dark eyes, and a fat cigar between his fingers, in a collarless white shirt with the sleeves rolled up and dark braces. Real skin: pores, sweat on his upper lip, a five-o'clock shadow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "3afc903b-6902-49b5-b9e5-5f24fad74727"
+}

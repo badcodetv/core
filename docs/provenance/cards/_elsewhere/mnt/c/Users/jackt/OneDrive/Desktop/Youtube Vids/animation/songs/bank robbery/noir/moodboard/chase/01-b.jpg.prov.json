@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/chase/01-b.jpg",
+ "made": "2026-10-30T10:11:45.009Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "High on a city rooftop at dusk, looking steeply down past the rusted iron leg and dark timber staves of a water tank, which take up the left quarter of the picture, huge and close and out of focus. Thirty storeys below, a broad avenue meets a street coming in at a sharp angle, and the whole chase is tiny down there: a single butter-yellow roadster sliding sideways across the streetcar tracks with its rear wheels flinging a fan of pale grit, and three black police sedans strung out behind it, the last one overshooting the corner and bumping up onto the kerb. A green streetcar has stopped dead across one lane, and small dark-hatted figures scatter off the crossing. Headlamps have just come on and each draws a short bright dash along the road, while the roadster's tail is smudged along its slide. The buildings between here and there are uneven in height: terracotta, soot-brown brick, verdigris copper roofs, plain faded colour blocks on the gable walls, some whole blocks already dark with no lit windows. A few strings of bulbs are starting up along the avenue, amber against the last of the sky, which runs from dense peach on the right down to bruised violet behind the far towers, with the skyline pushed off to the right third. Roof steam drifts through the middle distance. Rich, dense colour with visible grain, and the view runs uninterrupted to every edge of the frame.\n\nThanks.",
+ "source_id": "8b338825-0ae7-4871-97dc-5439abe2ec5c"
+}

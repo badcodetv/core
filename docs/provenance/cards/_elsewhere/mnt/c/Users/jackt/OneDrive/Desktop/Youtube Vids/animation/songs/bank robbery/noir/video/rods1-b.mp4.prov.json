@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods1-b.mp4",
+ "made": "2026-10-30T11:40:30.142Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One unbroken shot, tracking sideways at the roadster's speed across the cracked lakebed. The driver stamps the throttle: the tail squats, the rear tyres bite and throw dirt, and the car pulls away out of frame right, pursued by the yellow truck. The camera, too slow, is left behind in the plume as the dust wall rolls left to right across the lens until the whole frame is pale dust. Engine noise only.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods1-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods1-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "84cda952-a9a6-48f1-ba05-67b8b3cb481e"
+}

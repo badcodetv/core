@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s26-b.mp4",
+ "made": "2026-10-29T19:26:56.202Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera, seen through the bakery's curved glass display case. The baker slowly slides his whole pay envelope across the floury counter into the man's waiting hand; the man's fingers close on it and draw it out of frame. Morning sun from the window hits the cut-glass cake dome on the left, and its facets throw a spectrum onto the scene: small rainbow bars slide across the baker's forearm, the flour dust in the air and the counter, multiplying into a fan of prisms as the sun strengthens, red to violet sweeping slowly with the light. The flour hanging in the sunbeam glitters. The chalkboard stays a dim smear in the background. In the last two seconds the camera tilts down past the loaf to the dark shadow under the counter, where one diagonal shaft of dusty window light cuts the black, its edges split into colour. Sound: paper on wood, a street tram outside. No dialogue, no readable writing, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s26.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s26.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "7c0c9c70-a0b6-4ed6-a161-bca388ecc1ca"
+}

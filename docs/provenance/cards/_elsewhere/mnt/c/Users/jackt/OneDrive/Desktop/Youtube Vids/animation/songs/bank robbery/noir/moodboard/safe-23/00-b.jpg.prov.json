@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/safe-23/00-b.jpg",
+ "made": "2026-10-30T10:21:07.788Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The camera is bolted almost at road level, a hand's width above dry granite setts on a wide city avenue at night, facing the way the car is fleeing, and the safe fills the lower left of the frame so close that its corner is cropped by the edge. It is a dented cast-iron box in dull forest-green enamel, on its side and mid-bounce, one corner still grinding on the stone. Where that iron corner touches the granite a hard spray of white-orange sparks fans backward past the lens, some of them long streaks crossing the frame, and they throw a flickering orange pool on the setts directly beneath. A chain, shaking and slightly slack, climbs from the safe up the centre of the frame to the rear bumper of an egg-yolk yellow 1928 sedan thirty feet ahead, small and off to the right, leaning hard into a turn with its body rolled and its front wheels cut over. The main light comes from behind the camera: the two headlamps of a pursuing police car, out of sight, rake low along the road and throw the safe's enormous black shadow and the shadow of the chain forward up the avenue, right to the sedan's rear wheels. Either side, shopfronts in lacquer red, plum and mustard smear horizontally into streaks of colour, with rows of bare yellow bulbs on a theatre canopy drawn out into lines, all their signs too blurred to read. The safe's edge in the foreground is the sharpest thing in the picture. Heavy film grain, deep dark between the lights, colour filling the frame to all four edges with nothing around it.\n\nThanks.",
+ "source_id": "e28116d8-a7ff-4a6a-9188-53c2d3e0d36e"
+}

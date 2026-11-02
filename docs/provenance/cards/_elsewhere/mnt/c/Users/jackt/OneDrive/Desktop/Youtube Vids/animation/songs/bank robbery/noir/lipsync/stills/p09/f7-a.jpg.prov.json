@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p09/f7-a.jpg",
+ "made": "2026-10-30T15:25:10.895Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Inside a grand marble bank hall at midnight in 1926, the round vault door has just been blown off its hinges and smoke pours from the dark opening. A thin, white-haired man of about seventy-five, clean-shaven, hollow cheeks, dark bowler, stands close to a long lens at eye level, his head and shoulders filling the left half of the frame, three-quarter front, staring across the room. One hand holds a Thompson far out at his side, muzzle to the ceiling. Green glass desk lamps along the bent brass teller grilles light his face and lips emerald; a crimson alarm bulb above the vault rims his ear and colours the smoke. The polished floor doubles it all, green pools and a red smear, scattered notes lying blurred and unreadable upon it. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c93d6ec1-a0ab-44b6-98b8-bc3ddac9c20f"
+}

@@ -875,5 +875,11 @@
       }
     },
     "current": "rough1"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames",
+    "duration": 8
   }
 }

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/pov-23/01-a.jpg",
+ "made": "2026-10-30T10:16:42.830Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From behind the wheel, a 1930s roadster is airborne at the top of its leap across the gap of a raised bascule bridge, just before dawn, and the world is tipped. The image is one uninterrupted frame of colour motion picture, reaching all four edges of the wide 16:9 shape. At the very bottom, a pair of oxblood leather gloves grip a slim steering wheel at ten and two, knuckles straining through the hide, a thin line of mustard check cuff at the left wrist, and the long louvred bonnet in deep cream paint pitches downward past them with its round chrome headlamp shell at the far corner. There is no roof and only a low raked screen, so the view is enormous. Straight ahead and below, the far leaf of the bridge rises to meet the car, a huge slope of black riveted steel and timber decking with its tram rails shining, still many car lengths away. Directly under the bonnet, a long drop down to the river: broad jade-black water with a coal barge and its tiny lit cabin, the lamps along the embankment broken by the current into long wavering bars of rust and gold. To the left, cropped by the frame, the massive stone bridge tower with one lit window looms close. Far off on the right, an uneven skyline of stepped towers stands in dark silhouette against a sky of rose and dull violet, the sun not yet up, with a few high windows still burning. The horizon runs at a steep fifteen-degree tilt. Cold pale light from the sky lies along the bonnet and gloves, and no lamp reaches this high. Fine grain, deep colour, huge scale.\n\nThanks.",
+ "source_id": "fca320c6-0e52-4933-8fea-4571e810bd5e"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/audio/o4-b-gun.wav",
+ "made": "2026-10-30T17:01:50+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/video/o4-b.mp4",
+ "why": "the clip's own Omni sound for the outro, gain -2 dB, short fades",
+ "settings": {
+  "gain_db": "-2"
+ }
+}

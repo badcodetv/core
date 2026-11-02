@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov1-a.mp4",
+ "made": "2026-10-30T11:34:51.353Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous first-person shot from the driver's eyes, fast, no cuts. [0-3s] The heavy open car charges down the cobbles, the bonnet shaking; barrels bounce towards us off the truck ahead and burst on the stones, sparks kicking up. [3-6s] Both gloved hands haul the wheel left, the whole car leaning and lurching on its springs as the biggest barrel slides past the right side of the windscreen. [6-8s] The swerve carries us at the left-hand green iron girder, which rushes up and passes right against the lens, filling the frame with black. Signs stay unreadable.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov1-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov1-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "1119b6f3-a86d-4414-b264-d89c49a8a434"
+}

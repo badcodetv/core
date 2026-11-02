@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s05-b.mp4",
+ "made": "2026-10-29T18:55:16.922Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. The heavy-set man in the fedora leans to the door slot and exhales a long breath of cigarette smoke into it. The bevelled glass edge of the slot acts as a prism: a thin band of spectrum light from inside cuts across his cheek, and as the smoke rolls through the beam the band fans out into a solid ribbon of red, green and violet that slides and twists in the drifting smoke. The eyes behind the slot narrow, then blink once. The camera pushes slowly in toward the slot, holding the man's face steady. After 6 seconds the smoke fills the slot completely, a pale grey cloud lit from inside by a soft rainbow ring. Sound: a cigarette crackle, a muffled band through the steel. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s05.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s05.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "af2a1b8c-e023-41b6-85c5-73ed6160c870"
+}

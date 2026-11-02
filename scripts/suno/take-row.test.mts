@@ -103,45 +103,85 @@ describe('modelTag (moved from suno.mts — behaviour unchanged)', () => {
   })
 })
 
+// Fixture settings only — what a story's sound.md might say. take-row has no defaults of its own.
+const EXPLORE = [
+  { model: 'v6', weirdness: 30, styleInfluence: 75, variety: 'off' as const },
+  { model: 'v6-wild', weirdness: 60, styleInfluence: 60, variety: 'off' as const },
+]
+const NARROW = [
+  { weirdness: 30, styleInfluence: 75, audioInfluence: 75, variety: 'off' as const },
+  { weirdness: 30, styleInfluence: 75, audioInfluence: 40, variety: 'off' as const },
+]
+
 describe('exploreCells', () => {
-  it('is exactly the two cells of decision 6', () => {
-    expect(exploreCells('m3-A', 3)).toStrictEqual([
+  it('is exactly the spec\'s explore rows, titled per round', () => {
+    expect(exploreCells('m3-A', 3, EXPLORE)).toStrictEqual([
       { model: 'v6', weirdness: 30, styleInfluence: 75, variety: 'off', maxMode: false, title: 'm3-A-r3-v6-w30' },
       { model: 'v6-wild', weirdness: 60, styleInfluence: 60, variety: 'off', maxMode: false, title: 'm3-A-r3-wild-w60' },
     ])
   })
 
+  it('carries any variety and maxMode the spec gives', () => {
+    const [c] = exploreCells('m3-A', 1, [{ model: 'v6', weirdness: 45, styleInfluence: 20, variety: 'high', maxMode: true }])
+    expect(c).toStrictEqual({ model: 'v6', weirdness: 45, styleInfluence: 20, variety: 'high', maxMode: true, title: 'm3-A-r1-v6-w45' })
+  })
+
+  it('refuses a spec with no explore rows — there is no built-in spread', () => {
+    expect(() => exploreCells('m3-A', 3, undefined)).toThrow(/sound\.md/)
+    expect(() => exploreCells('m3-A', 3, [])).toThrow(/explore/)
+  })
+
+  it('refuses a row missing any setting, naming the field', () => {
+    for (const field of ['model', 'weirdness', 'styleInfluence', 'variety']) {
+      const row = { ...EXPLORE[0] } as Record<string, unknown>
+      delete row[field]
+      expect(() => exploreCells('m3-A', 3, [row as never])).toThrow(new RegExp(`explore\\[0\\].*${field}`))
+    }
+  })
+
+  it('refuses out-of-range sliders, unknown variety steps and duplicate titles', () => {
+    expect(() => exploreCells('m3-A', 3, [{ ...EXPLORE[0], weirdness: 101 }])).toThrow(/0–100/)
+    expect(() => exploreCells('m3-A', 3, [{ ...EXPLORE[0], variety: 'loud' as never }])).toThrow(/variety/)
+    expect(() => exploreCells('m3-A', 3, [EXPLORE[0], { ...EXPLORE[0], styleInfluence: 10 }])).toThrow(/share the title/)
+  })
+
   it('accepts a base title of exactly MAX_BASE_TITLE chars', () => {
     expect(MAX_BASE_TITLE).toBe(30)
     const base = 'x'.repeat(30)
-    expect(exploreCells(base, 1)[0].title).toBe(`${base}-r1-v6-w30`)
+    expect(exploreCells(base, 1, EXPLORE)[0].title).toBe(`${base}-r1-v6-w30`)
   })
 
   it('throws on a 31-char base title', () => {
-    expect(() => exploreCells('x'.repeat(31), 3)).toThrow(/30/)
+    expect(() => exploreCells('x'.repeat(31), 3, EXPLORE)).toThrow(/30/)
   })
 
   it('throws on an empty base title or a round that is not a positive integer', () => {
-    expect(() => exploreCells('', 3)).toThrow()
-    expect(() => exploreCells('m3-A', 0)).toThrow()
-    expect(() => exploreCells('m3-A', 1.5)).toThrow()
+    expect(() => exploreCells('', 3, EXPLORE)).toThrow()
+    expect(() => exploreCells('m3-A', 0, EXPLORE)).toThrow()
+    expect(() => exploreCells('m3-A', 1.5, EXPLORE)).toThrow()
   })
 })
 
 describe('narrowCells', () => {
-  it('covers the pick at Audio Influence 75 then 40, Weirdness 30, Style Influence 75, on the given model', () => {
-    expect(narrowCells('m3-B', 4, 'v6-wild')).toStrictEqual([
+  it('covers the pick at the spec\'s narrow rows, on the given model', () => {
+    expect(narrowCells('m3-B', 4, 'v6-wild', NARROW)).toStrictEqual([
       { model: 'v6-wild', weirdness: 30, styleInfluence: 75, audioInfluence: 75, variety: 'off', maxMode: false, title: 'm3-B-r4-wild-ai75-w30' },
       { model: 'v6-wild', weirdness: 30, styleInfluence: 75, audioInfluence: 40, variety: 'off', maxMode: false, title: 'm3-B-r4-wild-ai40-w30' },
     ])
   })
 
   it('tags the title with modelTag of the pick\'s model', () => {
-    expect(narrowCells('m3-B', 4, 'v6').map((c) => c.title)).toEqual(['m3-B-r4-v6-ai75-w30', 'm3-B-r4-v6-ai40-w30'])
+    expect(narrowCells('m3-B', 4, 'v6', NARROW).map((c) => c.title)).toEqual(['m3-B-r4-v6-ai75-w30', 'm3-B-r4-v6-ai40-w30'])
+  })
+
+  it('refuses a spec with no narrow rows, or a row missing audioInfluence', () => {
+    expect(() => narrowCells('m3-B', 4, 'v6', undefined)).toThrow(/sound\.md/)
+    const { audioInfluence: _, ...noAi } = NARROW[0]
+    expect(() => narrowCells('m3-B', 4, 'v6', [noAi as never])).toThrow(/audioInfluence/)
   })
 
   it('enforces the same base-title cap as exploreCells', () => {
-    expect(() => narrowCells('x'.repeat(31), 4, 'v6')).toThrow(/30/)
+    expect(() => narrowCells('x'.repeat(31), 4, 'v6', NARROW)).toThrow(/30/)
   })
 })
 

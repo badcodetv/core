@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A23-b.jpg",
+ "made": "2026-10-28T10:52:05.232Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. A double exposure: inside the silhouette of each departing police officer there is a second image of the secret mint beneath the floor, presses throwing banknotes, in burning amber and red, while the face nearest the camera stays realistic and readable. Camera low in the doorway of a shop full of loaves at dawn, the frame tilted. Two American police officers in peaked caps and long blue coats, one with a walrus moustache, one with ginger sideburns, walk away down the wet street, each with a free loaf under his arm, tipping their peaked caps; behind the counter a trapdoor in the floor glows green at its edges. Light: cold blue dawn; the shop's warm lamps; the wet street holding them. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f84a49ce-7530-4bf5-8e01-63763518c3b5"
+}

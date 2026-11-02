@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video/sma-25-r2-A25-b.mp4",
+ "made": "2026-10-28T15:03:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The whole gold and black pattern turns slowly clockwise round its centre like a kaleidoscope; the lamp at the centre glows steady and warm. Shot at 24fps with a 180-degree shutter. No dialogue. The camera does not move. Sound: a slow mechanical whirr, paper rustling.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/A25-b.jpg",
+ "why": "r1 gave no candidate 3 times (silent block): dropped the counting hands, rubber bands and card game",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/A25-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt",
+  "key": "25-r2",
+  "frame": 25,
+  "option": null
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "durationSeconds": 8,
+  "count": 1
+ }
+}

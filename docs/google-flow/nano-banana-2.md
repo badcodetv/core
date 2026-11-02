@@ -305,11 +305,12 @@ world.** If a word appears in the lock, it should not appear again below it. Thi
 **not** contradict the finding that style must be stated explicitly even when a
 reference is attached (second pass, item 1) — state it **once**, in the lock.
 
-### The anti-slop toolkit `[community]`
+### The anti-slop toolkit, for a photographic look `[community]`
 
 The generic-AI-image look is a set of specific, nameable defaults, and each has a
-counter you can put in a prompt. This table is engine-agnostic and worth applying on
-any image model:
+counter you can put in a prompt. This table is engine-agnostic, and **its counters assume the
+story's `look.md` is photographic** (documentary, RAW capture, natural skin). A drawn, painted,
+cartoon or glossy look answers the same tells differently; take the tells, not the counters:
 
 | The tell | The counter in the prompt |
 | --- | --- |
@@ -362,7 +363,7 @@ Four sources is how a frame gets *lit* rather than *photographed*.
 **Web pass, same date, one addition worth keeping:** the word **`photorealistic` is now noise** —
 it appears in so much training data beside CGI and digital painting that it no longer
 discriminates, and it averages toward the waxy look it is meant to prevent `[community]`. The
-working substitute is the stack we already use: **named camera body, named stock, a stated ISO,
+working substitute, for a photographic look, is the stack GPOM's and Camping's preambles use: **named camera body, named stock, a stated ISO,
 one positioned light, surface imperfection, and asymmetry.** GPOM's documentary preamble says
 *"hyper-realistic documentary photograph"* rather than *"photorealistic"*, which is the right
 side of this line already — any story's preamble should stay on that side.
@@ -392,6 +393,8 @@ positively, and keep the exclusion list short because long ones dilute. The Kare
 single `Exclusions:` line is already the right shape. **Do not add a second one.**
 
 ### Which engine for BadCode
+
+> 🔴 **Superseded 2026-10-01 (Jack): always Nano Banana 2 for stills — it is free; never Pro.** Kept as the record of the argument.
 
 The [calibration risk](#the-calibration-risk-nobody-flags) above still points one way, and
 this pass reinforces it: NB2's reported failure mode is *"too sharp… too overly
@@ -592,7 +595,7 @@ Two of these are new and both bear on night exteriors:
   once."* **One key light with a stated direction, plus its consequences.** Practicals are
   allowed if they are bounded to a job — *"one small point of colour, too weak to light
   anything."*
-- **Prompt the capture, not the beauty** — *candid, documentary, unposed, imperfect
+- **For a photographic look, prompt the capture, not the beauty** — *candid, documentary, unposed, imperfect
   composition, lived-in, realistic skin texture*. Already the §1 `STYLE LOCK`'s job for Karen.
 
 ### 6. ⚠️ If the camera cannot physically stand there, the model rebuilds the set `[observed]`
@@ -1328,8 +1331,8 @@ with no method behind it. **Do not cite those numbers.**
 
 ⬜ **The open question, and it is cheap to close:** fire one identical BadCode prompt on Pro and
 on NB2, back to back, and judge the pair. **Our own measured finding outranks every row above.**
-Until that runs, *neither* model is the house default by evidence — Pro is the default by
-**continuity**, because the accepted camping montage frames were made on it and the montage cuts
+Until that runs, *neither* model is the house default by evidence — Pro was the default by
+**continuity** (🔴 superseded 2026-10-01: Jack ruled Nano Banana 2 always, it is free; never Pro), because the accepted camping montage frames were made on it and the montage cuts
 at about one frame per second, where a look shift between frames would show.
 
 ⚠️ **Nano Banana 2 Lite is not in this argument.** It is the small, fast, cheap tier and it is the

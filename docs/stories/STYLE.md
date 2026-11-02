@@ -19,7 +19,9 @@ everybody's. Design: [`design/2026-10-28-no-house-style.md`](../../design/2026-1
 **Before any prompt for a story (Suno, AI Studio, Flow stills, Flow video), read that story's
 `look.md` or `sound.md`.** That file is the only place a style may come from.
 
-- **The file says LOCKED for this part** → use it. Consistency inside a story is the point.
+- **The file says LOCKED for this part** → start from it. Consistency inside a story is the point,
+  but it is a loose guide, not a cage (Jack, 2026-10-29): experiment around it and say what you changed.
+  The same goes for every rule in these files.
 - **The file is EMPTY** → do not invent a default. Run the `story-style` skill: an interview
   about the story, then genuinely different looks and sounds (from a wide library, plus one
   invented for this story) on a picking page; Kai or Jack picks, and the pick is written here.

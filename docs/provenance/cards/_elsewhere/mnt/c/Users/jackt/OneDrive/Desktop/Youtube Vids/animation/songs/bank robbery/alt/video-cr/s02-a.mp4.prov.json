@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s02-a.mp4",
+ "made": "2026-10-29T18:43:08.615Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera, low angle along the floured brick floor. The tired baker lifts the dough and slaps it down hard on the table; a cloud of flour bursts up and drifts toward the open oven, where every grain catches the firelight and glitters like sparks. Above the burning logs, real heat haze rises: the hot air ripples like oil on water, and through it the hanging copper pans and the brick arch wobble and bend, their edges splitting into thin bands of amber, magenta and teal where the shimmer is strongest. The bakers behind keep working, faces unchanged. In the last 2 seconds the camera rises slowly toward the largest copper pan, until its round polished base, glowing orange through the heat ripple, fills the frame. Sound: dough thud, fire crackle. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s02.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s02.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "2253c61b-452a-499a-a7b2-663ce2f0b100"
+}

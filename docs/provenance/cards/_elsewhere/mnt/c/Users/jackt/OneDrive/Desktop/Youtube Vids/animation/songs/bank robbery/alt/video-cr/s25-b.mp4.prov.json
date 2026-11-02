@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s25-b.mp4",
+ "made": "2026-10-29T19:25:41.250Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera. The basement counting room: three men in fedoras thumb through banknotes under the hanging lamp while the rat tugs at the rubber-banded bundle in the foreground. For the first four seconds the rat bites the rubber band and drags the bundle a hand's width across the wood; the men keep counting, fingers riffling, cigarette smoke curling up into the lamp. The goldfish tank behind them is the light source: its green water throws moving caustic ripples across the table, the cash and the men's faces, and the ripples grow stronger and more coloured, splitting into green, gold and violet bands as a fish flicks past the bulb. From four seconds the camera pushes slowly in past the men toward the tank, until the room is seen bent and doubled through the curved, wet aquarium glass. Sound: riffling paper, the tank's air pump, the rat's claws. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s25.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s25.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "d3f57c75-0976-4306-90cf-f42421efd33b"
+}

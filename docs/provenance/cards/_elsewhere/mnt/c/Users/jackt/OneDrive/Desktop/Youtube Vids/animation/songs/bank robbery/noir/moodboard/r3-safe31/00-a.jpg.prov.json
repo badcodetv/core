@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r3-safe31/00-a.jpg",
+ "made": "2026-10-30T12:31:23.677Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Seen from the catwalk of a rooftop water tower, looking steeply down over a corroded iron rail that crosses the lower right corner close to the lens and out of focus, an inland brick district of a 1928 city an hour after sundown, with a sliver of dull violet sky along the top edge of the frame. One wide, straight avenue runs through the picture from the upper right to the lower left, paved in pale dry granite setts the colour of old bone, with a raised kerb and a strip of pavement down each side, iron lamp posts at even intervals throwing round pools of yellow light on the stone, and closed shopfronts under oxblood and bottle-green awnings along its length, so that it shows as the brightest, plainest shape in the picture and can only be a street. Three black sedans stand parked and dark against the kerb. In the middle of the avenue a single tall, upright sedan in egg-yolk yellow, small in the frame but large enough to read its boxy cabin, separate black mudguards, running boards and spoked wheels, points straight down the road toward the lower left with its two round headlamps laying short beams on the setts ahead of it. Behind it a taut chain runs back along the centre of the road to a small dark iron safe lying flat on the stone, and from the point where the iron grinds on the granite one thin bright thread of orange sparks stretches back along the same line for the length of a block, dulling to red as it cools and tinting the setts beneath it. Far up the avenue, two small white headlamps of one following car point the same way along the road. Every other part of the view is rooftop: tar and water tanks and chimney stacks, mostly dark, with a few long skylights glowing amber, one rooftop painted in faded jade, and a row of bulb signs seen from behind so they show only as scaffolding and rows of dots. The whole district is dry land, roofs and paved road from edge to edge, with no river, canal or bridge anywhere in it. A long-lens view with flattened layers of buildings, deep plum shadows, saturated film colour and a fine grain, filling the entire 16:9 frame without any margin.\n\nThanks.",
+ "source_id": "fa619cde-057f-4477-bf3e-7f08882294bc"
+}

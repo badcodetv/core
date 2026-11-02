@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s12-a.mp4",
+ "made": "2026-10-29T19:09:27.379Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera, looking down from above. The printing presses on the left thump and throw sheets of banknotes into the air; the notes flutter down over the dancers like confetti. The mayor in the middle dances a stiff, delighted Charleston; the couples around him swing and kick, the band keeps playing on the stage. The mirror ball turns slowly in the spotlight beam and throws hundreds of small dots of white, green and pink light that sweep across the brick walls, the falling notes and the dancers' faces, the dots stretching into short arcs as it spins. Camera slowly cranes down and drifts left. In the last two seconds it pushes in on the nearest press, whose rollers glow red from the heat underneath, the ink on them swirling green and purple, until the red-orange glow fills the edges of the frame. Sound: presses clanking, feet stamping on the floor. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s12.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s12.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "4e600d20-1461-444d-86fe-0743db10ae58"
+}

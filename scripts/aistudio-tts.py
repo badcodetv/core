@@ -20,12 +20,16 @@ Settle it before the take that ships.
 
 Usage:
     export GEMINI_API_KEY=...
-    python3 scripts/aistudio-tts.py script.txt out.wav
-    python3 scripts/aistudio-tts.py script.txt out.wav --profile my-profile.md --voice Algenib
+    python3 scripts/aistudio-tts.py script.txt out.wav --profile <profile.md> --voice <Voice>
 
-The default profile is "Bob, 47" — the 2026-09-08 candidate narrator. The heading shape
-below is Google's own, taken verbatim from the export; it is NOT the DIRECTOR'S NOTES shape
-that the docs describe, and which one performs better is untested.
+--profile and --voice are REQUIRED (2026-10-29, design/2026-10-29-style-leak-audit.md §1). There
+is no default voice and no default profile: who a character sounds like belongs to the story's
+docs/stories/<story>/sound.md (docs/stories/STYLE.md). A built-in default made every line read as
+Camping's Bob; his profile now lives at docs/stories/camping/narration/profiles/bob-algenib.md.
+
+Profile shape: Google's own export heading shape is `# Audio Profile` / `## Scene:` /
+`## Sample Context:`; it is NOT the DIRECTOR'S NOTES shape the docs describe, and which one
+performs better is untested.
 """
 
 import argparse
@@ -34,17 +38,6 @@ import struct
 import sys
 
 MODEL = "gemini-3.1-flash-tts-preview"
-VOICE = "Algenib"
-
-# Google's own export heading shape. Kept verbatim — see the module docstring.
-PROFILE = """# Audio Profile
-Bob, 47. Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it. Natural conversational rhythm, short pauses, firm downward endings. Neutral southern English accent as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.
-
-## Scene:
-A small voiceover booth, late at night. No audience. He's reading from a page he half agrees with.
-
-## Sample Context:
-Bob has narrated this kind of story many times before and is no longer surprised by any of it."""
 
 
 def parse_audio_mime_type(mime_type):
@@ -86,8 +79,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("transcript", help="text file to read aloud")
     ap.add_argument("out", help="output .wav")
-    ap.add_argument("--profile", help="file holding the audio profile (default: Bob, 47)")
-    ap.add_argument("--voice", default=VOICE, help=f"prebuilt voice name (default: {VOICE})")
+    ap.add_argument("--profile", required=True,
+                    help="file holding the audio profile — from the story's sound.md (no default)")
+    ap.add_argument("--voice", required=True,
+                    help="prebuilt voice name — from the story's sound.md (no default)")
     ap.add_argument("--model", default=MODEL, help=f"model id (default: {MODEL})")
     ap.add_argument("--mono", action="store_true", help="write mono — Premiere may not display it")
     args = ap.parse_args()
@@ -98,7 +93,7 @@ def main():
     from google import genai
     from google.genai import types
 
-    profile = open(args.profile).read() if args.profile else PROFILE
+    profile = open(args.profile).read()
     transcript = open(args.transcript).read().strip()
     prompt = (
         "Read the following transcript based on the audio profile.\n\n"

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A22-a.jpg",
+ "made": "2026-10-28T10:51:13.642Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. Hard film-noir chiaroscuro with the colour pushed far beyond nature: a red light on one side and cold cyan slats of light through a venetian blind on the other. Camera inside a brick bread oven looking out through its open iron door. Two American police officers in peaked caps and long blue coats, one with a walrus moustache, one with ginger sideburns, stand in a basement holding tommy guns pointed at the ceiling, peering in, puzzled; behind them gangsters in white bakers' hats stand innocently beside ovens where printing presses stood a moment ago, one with his hand still on a huge iron lever. Light: the police officers' torches; the ovens' orange glow; a red lamp over the door. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7e3780ba-f2b0-43a3-9b61-d18552ce2dbd"
+}

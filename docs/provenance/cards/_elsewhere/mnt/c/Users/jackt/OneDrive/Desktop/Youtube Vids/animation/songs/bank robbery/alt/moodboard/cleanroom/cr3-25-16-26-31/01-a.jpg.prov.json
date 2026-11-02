@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-25-16-26-31/01-a.jpg",
+ "made": "2026-10-29T16:59:27.894Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed: Chicago, 1928, night, a tight crush of bodies in the street. The camera sits at hip height inside the crowd, tilted, so the two back pockets fill the lower half of the frame in sharp focus: a red-scarf man on the left and a blue-scarf man on the right, both pockets holding the same thin brown pay envelope, creased, blank, sticking out. Above, looming and cropped by the top edge, their two faces press nose to nose, shouting, spit in the air, stubble, a split lip, a broken tooth, sweat on a vein in the temple. Someone in the crowd holds a burning red railway flare on one side and someone else a lantern with blue glass on the other; the camera lens has been smeared at its edges with grease, leaving the centre clear, so the flare and the lantern smear outward into long dragging streaks of crimson and cobalt that wrap around the frame like hot wax, while the envelopes in the middle stay crisp and plain. Shoulders, coat wool and elbows crowd every edge in near darkness. Dry night, the street unseen. The envelopes and anything else carry no writing at all.",
+ "source_id": "bae59559-d5a7-4be5-923b-88404f75c128"
+}

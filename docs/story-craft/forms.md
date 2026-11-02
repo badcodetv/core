@@ -136,15 +136,15 @@ The house VO markup is brief 23's deliverable, verbatim:
 | `//` | Full-stop beat | ~0.5–0.8s, between sentences |
 | `///` | Held pause — earn it | ~1–2s, reserved for a real turn |
 | `[SIL n s]` | True silence, bed and VO both stop | Murch's 3–4-per-film discipline; max 2–3 per episode |
-| `[BREAKDOWN]…[/BREAKDOWN]` | VO sits in a half-time/thinned bed section | Default home for plot-carrying narration |
-| `[DROP]` | Full-tempo hit, wordless (or one word) | Scene-cut punctuation, not exposition |
+| `[BREAKDOWN]…[/BREAKDOWN]` | VO sits in a half-time/thinned bed section | Where the bed is a club track with a breakdown (GPOM's D&B track was): the home for plot-carrying narration |
+| `[DROP]` | Full-tempo hit, wordless (or one word) | Club bed only: scene-cut punctuation, not exposition |
 | `[DUCK -Xdb]…[/DUCK]` | Music explicitly attenuated under this span | Named level, not "turn it down a bit" |
-| `{FLAT}…{/FLAT}` | Baseline register: certain, dry, administrative | Default narrator voice |
+| `{FLAT}…{/FLAT}` | The story's baseline register (GPOM's was certain, dry, administrative) | The narrator's resting voice, whatever the story's `sound.md` makes it |
 | `{WARM}…{/WARM}` | The reserved crack — caring shows through | Spend once per episode |
 | `[whispers]` `[sarcastic]` `[laughs]` | Bracketed performance cues (ElevenLabs-style) | Portable straight to TTS |
 | CAPS | Hard emphasis, one word only | Never a whole line (Thom's warning) |
 
-How it meets the pipeline: the narrator is a Suno voice, and
+How it met GPOM's pipeline (another story's narrator may be an AI Studio voice, placed whole per turn): GPOM's narrator was a Suno voice, and
 [`narration.md`](../stories/gitpush-origin-master/songs/archive/narration-v5.5.md) §1 rules that Suno cannot hit a
 timecode. The take is split to stems and the vocal stem **cut into one clip per line**, each slid onto
 its picture beat in Premiere — so every line is a cut point, written short and full-stopped. `/`
@@ -218,7 +218,7 @@ BadCode piece already holds "don't make this mistake" and "you are loved, we can
 
 ### Where the voice sits on the bed
 
-The genre answers it: the drop follows a build and a breakdown where drums thin — so narration lives in
+The story's `sound.md` picks the genre; the genre answers it. On a club bed (D&B, GPOM's track): the drop follows a build and a breakdown where drums thin — so narration lives in
 the breakdown and the drop is wordless punctuation (principle 27). Old-school D&B hosted an MC, a
 practice since declined (brief 23). Grade honestly: drop/breakdown structure and the MC tradition are
 Wikipedia-grade; producer-level mechanics for a half-time vocal over a 170-plus-BPM bed are

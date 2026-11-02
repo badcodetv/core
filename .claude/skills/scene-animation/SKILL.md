@@ -29,15 +29,16 @@ For each frame, write 2–3 ways to animate it into `animation-options.json`
 - the `veo_prompt`, or none if the option is post-only
 - the cut in and out, the seconds, and the risk
 
-Rules that have held:
+How a story moves (dramatic or still, which elements carry the motion) is its `look.md`'s call:
+read it before writing options. Method rules that have held on every story:
 - **Lock Veo's camera.** "The camera does not move." at the start and end. Premiere does every push, zoom and pan, eased (hybrid method).
-- **Animate dramatically**: dive, storm, hard flashes. Not vague twinkle.
-- **Few movers.** Omni struggles past about three moving figures. Give the motion to rain, haze, light and one actor.
+- **Offer real options, not a twinkle.** A vague "subtle movement" prompt gets vague motion. How big the options go is the story's call (GPOM's `look.md`: animate dramatically — dive, storm, hard flashes).
+- **Few movers.** Omni struggles past about three moving figures. Give the rest of the motion to the environment and one actor (what the environment is — rain, haze, light, crowd, paper — comes from the frame and the look).
 - **Words are ffmpeg.** Never ask Veo for readable text.
 - **Timed events** use timestamp brackets `[00:00-00:01]` in whole seconds. These place things roughly; Premiere puts them on the beat. Keep flashes at **3 a second or fewer** (photosensitivity).
 - **6–8s clips.** Eight seconds is never a reason to cut a beat short: chain clips last frame to first instead (`docs/video-fx/continuous-shot.md`). Long clips redraw the scene after a few seconds, so cut before that happens.
 
-**The motion is an argument, not decoration**: one deliberate move that serves the beat. The machine that doesn't care, the wealth piling while the room dims. Imply it; never sermonise it.
+**The motion is an argument, not decoration**: one deliberate move that serves the beat (GPOM's examples: the machine that doesn't care, the wealth piling while the room dims). Imply it; never sermonise it.
 
 ## What the model cannot do, whichever model it is
 
@@ -63,11 +64,12 @@ before writing a prompt for a named engine.
   This is not a compromise. A real camera never catches a whole accidental fall, so the
   occluded version is *also* the more truthful shot. Restraint is authority here too.
 
-- **Name the shutter when anything moves fast.** `shot at 24fps with a 180-degree
-  shutter, so anything moving fast smears with natural motion blur.` Models render fast
-  motion sharp in every frame, which is the single loudest AI tell; a real camera smears
-  it. `[confirmed 2026-08-14]` — it turned a phone drop from a crisp artefact into a
-  streak, with no post pass needed.
+- **In a photographic look, name the shutter when anything moves fast.** `shot at 24fps
+  with a 180-degree shutter, so anything moving fast smears with natural motion blur.` Models
+  render fast motion sharp in every frame, which is the single loudest AI tell in live-action
+  footage; a real camera smears it. `[confirmed 2026-08-14]` — it turned a phone drop from a
+  crisp artefact into a streak, with no post pass needed. (A cartoon or graphic look has its
+  own motion rules — its `look.md`.)
 
 - **State constraints positively.** Most of these engines have no negative-prompt
   support and `no…`/`don't…` phrasing backfires, putting the unwanted thing into the
@@ -99,7 +101,7 @@ FLOW_CDP_PORT=<port from flow_status> npx tsx scripts/scene/run.mts docs/stories
 ```
 
 - Run it with `run_in_background` and wait for the notification. **One Flow user at a time**: never run the runner and a Flow MCP call together.
-- Settings are fixed: Omni 1.1 Flash, Frames, 16:9, count 1 (`flow_generate_video` fails on Omni Frames; the runner is the route). Ask before spending video credits.
+- Settings: **Omni 1.1 Flash** (Jack's standing process rule — never Veo 3.1 unless asked), count 1. **Model, aspect and duration come from `scene.json` `"video"`** (`model`, `aspect`, `mode`, `duration`), which takes them from the story's `look.md`; a `video-jobs.json` row may override. There is no default: `run.mts` refuses a scene without them, drives `Frames` mode only, and the recipe card records what each clip used. Don't assume 16:9. (`flow_generate_video` fails on Omni Frames; the runner is the route.) Ask before spending video credits.
 - Each clip's recipe card is written when `match.py` names it (docs/provenance).
 - **Check every clip before telling Kai.**
   - Make a contact sheet: `ffmpeg -i clip.mp4 -vf "fps=2,scale=480:-1,tile=4x4" -frames:v 1 sheet.jpg`.

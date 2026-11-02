@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B06-a.jpg",
+ "made": "2026-10-28T12:42:34.376Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Shot through a heat camera: every surface coloured by its temperature, the candle flame and her breath blazing white and yellow, her face running orange, the frozen attic around her deep blue and icy violet-black, icicles on the beams; every shape still a real photograph. Camera close at candle height, the frame tilted. The old woman from the character reference cups both hands round one candle flame, her eyes closed, her breath steaming. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/grandma.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/grandma.jpg"
+  ],
+  "character": "SM Grandma"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "30fa6921-de1b-4741-b1e8-5f537772344e"
+}

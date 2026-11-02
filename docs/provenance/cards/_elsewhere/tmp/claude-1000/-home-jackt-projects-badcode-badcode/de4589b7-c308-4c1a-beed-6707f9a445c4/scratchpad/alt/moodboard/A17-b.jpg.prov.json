@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A17-b.jpg",
+ "made": "2026-10-28T10:47:11.496Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. Projected across the whole scene, coloured oil and water swim like a liquid light show: huge soft-edged blobs of amber, magenta and cobalt blue drift over the faces, clothes and walls, merging and splitting, with thin dark rims where oil meets water. Camera at hip height, between the legs of a band in pinstripe suits in the foreground. In a smoky underground club, a tall skinny man in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache dances arm in arm with a ginger man with mutton-chop whiskers and a red carnation and a woman with a black bob in a plain blue cardigan with a blue carnation, all three laughing, gangsters raising champagne round them. Light: one white spotlight from above; strings of bulbs. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "befe083a-2f09-46c2-bf5d-cc000db031d7"
+}

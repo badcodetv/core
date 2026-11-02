@@ -1,5 +1,11 @@
 # Wild logo redesigns, text only (2026-10-21)
 
+> 🗄️ **Archive — a record of one 2026-10-21 exploration, not a template.** The prompts below describe
+> BadCode as "making drum and bass", and some carry a near-black ground and a club setting: that was
+> one story's sound and look leaking into the brand at the time. There is no BadCode house sound or
+> look ([`docs/stories/STYLE.md`](../../../stories/STYLE.md)); the logo is the only house mark
+> ([`docs/brand/README.md`](../../README.md)). Do not reuse these prompts' style words.
+
 Jack: more varied designs, mess with it as much as wanted; the reference image may be the problem, so describe it
 instead. **Exploration, not the logo.** Kai's ruled logo is still "Saved version 5".
 

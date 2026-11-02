@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s20-a.mp4",
+ "made": "2026-10-29T19:18:52.577Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera, Dutch angle as in the frame. In the brick vault, the man in the foreground leans his weight in and shoves his heavy wooden wheelbarrow of rubber-banded cash up the last of the plank, the iron wheel grinding over the wood, and tips it so the bundles slide and tumble onto the money mountain; behind him the second man pushes his barrow forward through the steam. Steam jets hiss from the rusted pipe on the left and roll through the room, and the hanging green and amber lamps sway on their cords, so their coloured beams sweep back and forth through the steam like a light show, green and teal and gold crossing and mixing in the smoke. In the last two seconds the camera cranes up over the pile and looks down; the swinging caged lamp throws a moving dapple of violet light spots across the bundles below. No readable words on the notes, no on-screen text, no captions, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s20.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s20.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "1df39794-e2e9-4cf2-80a5-12c707b8fdeb"
+}

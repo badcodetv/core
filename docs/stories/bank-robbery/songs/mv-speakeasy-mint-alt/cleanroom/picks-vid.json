@@ -1,0 +1,598 @@
+{
+ "title": "Speakeasy Mint Clips",
+ "eyebrow": "Bank Robbery MV · ALT · clean room · the clips",
+ "heading": "The Speakeasy Mint ALT: every scene in motion",
+ "intro": "Your picked stills, animated in Omni Flash (8 s, two takes each). Fresh web research on psychedelic-but-filmed video, then eight sealed writers who never saw the repo's prompts, each animating a run of scenes so every clip ends on something that cuts into the next one. Run verbatim apart from the policy fixes noted on a row. The clips' own sound is a guide only; the song goes over the top. Pick one per scene and note anything to redo.",
+ "sections": [
+  {
+   "h": "All 33 scenes",
+   "lede": "Pick a or b (or note what to change).",
+   "groups": [
+    {
+     "slot": "v01",
+     "title": "1. (Intro) Robbery! The getaway car",
+     "line": "Through the police windscreen  ·  Layer: the raindrops are real lenses already on the glass, so the trails have a physical cause and the wiper gives them a rhythm instead of a generic smear.  ·  Ends on: one raindrop full of flickering amber shop-window light, matching the orange fire in the oven mouth of scene 2.  ·  ⚠ Flow blocked the gun lines twice; this runs without them (the gun in the still still points at the sky).",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s01-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s01-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v02",
+     "title": "2. They say, ya can't make money from a tree / each day, make hay",
+     "line": "A basement bakery kitchen, 4 a.m.: Bakers knead dough by the light of a brick oven, flour in the air; the baker nearest us, tired.  ·  Layer: heat shimmer above an open fire is a real optical distortion, so the psychedelic bending grows straight out of the oven the scene is built around.  ·  Ends on: the round copper base of a pan filling the frame, which match-cuts to the falling coins in scene 3.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s02-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s02-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v03",
+     "title": "3. work and get paid though… but where does it go? nobody knows!",
+     "line": "The bakery back door, dawn: The foreman tips the baker's thin pay envelope into his palm: three small coins and a moth.  ·  Layer: the coloured bottles act as real lighting gels, and the moth carrying their colour gives the poverty beat one fragile, beautiful movement.  ·  Ends on: looking down the neck of a blue bottle, concentric glass rings around a dark centre, matching the spiralling stairwell and round fishbowl of scene 4.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s03-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s03-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v04",
+     "title": "4. means of production means a reduction / land-lords needing",
+     "line": "A tenement stairwell: A landlord in a fur collar waits at the top of the stairs with his palm out; far below, the baker climbs with his pay packet.  ·  Layer: the fishbowl is already in the still as a curved water lens, so the stairwell distorting and turning through it is optics the camera could really film.  ·  Ends on: a thin horizontal rainbow fringe on the bowl's glass edge against dark green, matching the prismatic light in the door slot of scene 5.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s04-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s04-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v05",
+     "title": "5. quantitative easing,",
+     "line": "The back stairs: a plain door with a slot: A heavy-set gangster says the password into the slot of a steel door; two wary eyes look out.  ·  Layer: the prism already sits in the still's slot, so the colour has a physical cause, and smoke is the one thing that makes a prism beam visible and moving.  ·  Ends on: the slot filled edge to edge with pale smoke and a soft rainbow ring, matching the frosted pane and the rainbow halo round grandma's candle.  ·  ⚠ 'gangster' swapped for 'man' after a policy block; the cigarette kept.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s05-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s05-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v06",
+     "title": "6. grandma FREEEEEEEZING!",
+     "line": "Grandma's attic: Frost on everything, icicles on the beams; grandma's breath steams as she cups her hands round one candle.  ·  Layer: frost growing on glass is a real diffraction grating, so the psychedelic layer grows from the cold itself, which is the point of her scene.  ·  Ends on: a hard white starburst of candle flame filling the centre of frame, matching the white bloom of the photographers' flashbulbs.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s06-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s06-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v07",
+     "title": "7. stimulus checks are next. Get wrecked!",
+     "line": "The mayor's balcony over the square, night: The mayor tosses a handful of envelopes to the crowd; the wind carries them straight down a storm drain. Photographers' flashbulbs.  ·  Layer: a magnesium flash is a real strobe in the period, so the multi-exposure trail of the envelopes going down the drain is caused by the photographers in the frame.  ·  Ends on: the wet iron bars glittering with faceted water drops in the last flash, matching the cut-glass decanter that fills the left of the poker room.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s07-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s07-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v08",
+     "title": "8. rent seeking?… I'm just about eating / sorry, did I interrupt your meeting?",
+     "line": "A hidden speakeasy back room: Gangsters and the mayor at a poker table piled with chips, cash and whole hams, cigars; all frozen, turned to the door, where the baker stands holding one small loaf.  ·  Layer: the decanter is a real multi-image lens already in the still, and splitting the frozen room into facets makes the baker's interruption land as a crack in their world.  ·  Ends on: the green-shaded lamp swinging over green felt, matching the green lamp hanging above the pool table.  ·  ⚠ One take: Flow's second take came back as a copy of scene 7's.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s08-a.mp4",
+       "label": "a"
+      }
+     ]
+    },
+    {
+     "slot": "v09",
+     "title": "9. remember kids, the Fed is not your friend! / it prints all the dollars…",
+     "line": "An underground pool hall: An old gangster with a white moustache lines up a shot; a young red-haired gangster watches; a band plays behind in the smoke.  ·  Layer: The projector already in the still gives the psychedelia a real, period-correct cause (the oil light show), and the ball gives a moving subject and a round shape to cut on.  ·  Ends on: The cue ball's curved, colour-filled reflection fills the frame, a round dome of light that cuts to the stained-glass dome over the bank lobby.  ·  ⚠ 'red-haired lad' with a toothpick became 'a man in his twenties' after two blocks.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s09-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s09-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v10",
+     "title": "10. this fiat system is insistent / on debts existence",
+     "line": "A marble bank lobby: A worker in his only suit sits at a loan desk before a thin clerk with round spectacles; behind them, gangsters walk straight past the guard into the open vault with sacks.  ·  Layer: The dome and inkwell are already the light sources in the still, so the colour moves with a cause while the robbery walks past unnoticed in the background.  ·  Ends on: The round steel vault door washed in rings of stained-glass colour, matching the rainbow heat-tinted vault door that opens scene 11.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s10-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s10-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v11",
+     "title": "11. don't be hating on the credit rating / or have resistance to the facts I'm stating",
+     "line": "The bank vault door, night: Gangsters in shirtsleeves and braces cut into the round steel vault door with a blowtorch; one stands guard, tommy gun held up.  ·  Layer: Heat-tint colours on steel are a real, physical rainbow caused by the torch itself, a different technique from the oil and stained glass before it.  ·  Ends on: Scattered bright sparks on the black wet floor, matching the mirror ball's scattered dots of light across the dark brick of scene 12.  ·  ⚠ One take: Flow's second take came back as a copy of scene 10's.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s11-a.mp4",
+       "label": "a"
+      }
+     ]
+    },
+    {
+     "slot": "v12",
+     "title": "12. Chorus 1: Robbery, robbery! Call the police… Debasement… in da basement!",
+     "line": "The first drop: the secret mint below the bakery: A huge speakeasy basement: printing presses throwing sheets of banknotes like confetti, the gangster band playing, dancers in fringed dresses, the mayor dancing in the middle.  ·  Layer: The mirror ball is a real 1920s light-scattering device already in the frame, and the push into the hot press drops the camera one level deeper into the mint.  ·  Ends on: The red-hot press rollers with swirling green and purple ink, framed in orange glow, matching the furnace-mouth view of the biggest press in scene 13.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s12-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s12-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v13",
+     "title": "13. Chorus 2 (same words)",
+     "line": "The mint, close on the biggest press: The biggest press glows red hot, spitting notes; the mayor shovels coal into its firebox, grinning; an exhausted stoker slumps behind.  ·  Layer: the heat haze and the rollers' own marbled ink give the psychedelic layer a physical cause, and the spark burst is the same shape and light as the next frame's flash.  ·  Ends on: a white-hot spark burst from the splitting coal, matching the magnesium flash blooming top centre of scene 14.  ·  ⚠ 'the slumped stoker stays still' was blocked; now he rests and breathes.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s13-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s13-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v14",
+     "title": "14. Stacks and stacks of elastic cash / distracted by a dispraxic flash",
+     "line": "The town square, night: The mayor on a bandstand does a magician's flash (a pop of magnesium, smoke) and the crowd turns to look; behind the smoke, a getaway car screeches away from the bank steps.  ·  Layer: coloured smoke lit from inside by a real flash is a light-show effect with a cause in frame, and the car's departure stays heavy and continuous.  ·  Ends on: the dying flash shrinks to one warm point of light in thinning smoke, matching the street lamp at the top centre of scene 15.  ·  ⚠ Flow refused to upload your picked still (every try, three projects), so these start from your other still.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "alt-a",
+       "src": "vid/s14-alt-a.mp4",
+       "label": "alt-a (from your 2nd-choice still)"
+      },
+      {
+       "id": "alt-b",
+       "src": "vid/s14-alt-b.mp4",
+       "label": "alt-b (from your 2nd-choice still)"
+      }
+     ]
+    },
+    {
+     "slot": "v15",
+     "title": "15. mob, angry at their shitty little job / the right and the left both witness the theft",
+     "line": "The street outside the bakery, night: Red-scarf crowd and blue-scarf crowd shove each other under a street lamp with banners; a calm gangster walks past between them with a sack of money.  ·  Layer: refraction through real sweet jars makes the psychedelic layer a found-glass lens effect, and it hands over the exact shape of the next frame.  ·  Ends on: two curved jars split the frame into a red left panel, a clear centre and a blue-violet right panel, matching the three-panel layout of scene 16.  ·  ⚠ Flow refused to upload your picked still, so these start from your other still.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "alt-a",
+       "src": "vid/s15-alt-a.mp4",
+       "label": "alt-a (from your 2nd-choice still)"
+      },
+      {
+       "id": "alt-b",
+       "src": "vid/s15-alt-b.mp4",
+       "label": "alt-b (from your 2nd-choice still)"
+      }
+     ]
+    },
+    {
+     "slot": "v16",
+     "title": "16. blaming each other is a sick little cover / institutional, dilutional, the usual",
+     "line": "Close in the crowd: A red-scarf man and a blue-scarf man nose to nose, shouting; both have the same thin pay envelope sticking out of their back pockets.  ·  Layer: light-painted flare and lantern trails are a long-exposure in-camera technique driven by the props already in the frame, and the lantern glass hands its colours to the speakeasy projector.  ·  Ends on: green and magenta light bands sliding through the lantern glass, matching the projector's green and magenta patterns on the ceiling of scene 17.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s16-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s16-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v17",
+     "title": "17. distraction IS the attraction / the intention is tension between the factions",
+     "line": "The speakeasy club downstairs: the money shot: The red leader (a ginger man with mutton-chop whiskers, red carnation) and the blue leader (a woman with a black bob, blue carnation) dance arm in arm with the mayor while the band plays. Upstairs their crowds are fighting.  ·  Layer: The oil-and-glass projection is already a machine in the still, so the psychedelia has a physical source and colours the \"money shot\" dance without a generic swirl.  ·  Ends on: the projector's round white lens glow fills the frame, matching the bare bulb and round chrome microphone in scene 18.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s17-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s17-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v18",
+     "title": "18. divide and conquer, just look at the hand / It's not ya standard, propaganda",
+     "line": "A radio studio: The mayor grins into a big chrome microphone, reading a script; an ON AIR lamp lit; a gangster in the doorway counts cash.  ·  Layer: A convex chrome mirror is a real distorting lens in the frame, so the broadcast's warping of the city is shown as the mayor's own face bent in the microphone.  ·  Ends on: a round, glowing amber curve of chrome filling the frame, matching the round amber dial of the radio set in scene 19.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s18-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s18-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v19",
+     "title": "19. it is, state, level, manipulation / it is the devil, with a radio station",
+     "line": "A tenement kitchen at night: A couple lean in to a wooden radio set, listening; a red scarf on the chair. (Across the city, every kitchen hears the same voice.)  ·  Layer: The prism is the cut-glass jug already on the table, lit by the radio itself, so the voice literally scatters coloured light over the people listening.  ·  Ends on: a pool of green refracted light filling the frame, matching the green enamel lamp and its green beam in scene 20.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s19-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s19-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v20",
+     "title": "20. stack up the vaults like a wheelbarrow / risk of default is really rather narrow",
+     "line": "A vast brick vault: Gangsters wheel barrows of rubber-banded cash up a plank onto a mountain of money.  ·  Layer: Steam crossed by swinging coloured lamps is a real stage light show that grows from the still's own smoke and beams, and the crane up delivers the next scene's angle.  ·  Ends on: top-down view of cash bundles under violet dappled light spots, matching the overhead shot of the mayor on the money mountain in scene 21.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s20-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s20-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v21",
+     "title": "21. Biggie said waaaay back in ninety seven / don't get high off your own supply",
+     "line": "The vault, top of the pile: The mayor lies back on the money mountain, eyes glazed, gold chain on his chest, a banknote over his face like a newspaper on a beach.  ·  Layer: a turning patterned lantern with a gel is a real, causal light source, so the dreamy colour sweep stays physical, and its pinpricks hand straight to the mirror ball.  ·  Ends on: the whole frame becomes a scatter of tiny white light specks on darkness, matching the mirror-ball specks on the basement walls in scene 22.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s21-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s21-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v22",
+     "title": "22. Chorus 3: Robbery, robbery! Call the police…",
+     "line": "The raid: the basement: Two police officers come down into the basement holding tommy guns pointed at the ceiling, puzzled: every press has been flipped round into a bread oven, and the band are suddenly bakers in white hats.  ·  Layer: heat haze off real ovens is optics the camera actually sees, a different trip from the lantern, and the puzzled stop is one clear beat.  ·  Ends on: the bright, misty opening at the top of the stairs, matching the white daylight of the open shop door in scene 23.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s22-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s22-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v23",
+     "title": "23. Chorus 4 (same words)",
+     "line": "The bakery doorway, dawn: The two officers leave down the street, each with a free loaf under his arm, tipping their caps; behind the counter a trapdoor glows green.  ·  Layer: an oil-projection look caused by light through a bubbling liquid makes the secret downstairs glow, and diving into it is the last drop.  ·  Ends on: a frame full of green light and rising vapour, matching the green and violet flames of the furnace in scene 24.  ·  ⚠ Start frame is my pick from the redo (23A-b); your other three redo stills are in alt/moodboard/cleanroom/cr4-s23.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s23-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s23-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v24",
+     "title": "24. (Break: riff and stomps)",
+     "line": "The bottom: the furnace: The last drop. A stoker shovels banknotes into a roaring basement furnace; its heating pipe climbs the wall and stops dead at the ceiling (the heat never reaches upstairs).  ·  Layer: colour from burning chemicals is a real flame effect seen in footage, distinct from the other three techniques, and the cold pipe keeps the story point in shot.  ·  Ends on: a rippling green rectangle of light on dark brick, matching the glowing green aquarium in scene 25.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s24-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s24-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v25",
+     "title": "25. You know the real star is Pablo Escobar, / who has elastic bands not plastic hands",
+     "line": "The counting room: Rubber-banded stacks of cash to the ceiling; gangsters at a long table counting under a lamp; a rat nibbling a bundle.  ·  Layer: the caustics come from a real lit fish tank already in the still, and the push through its glass gives a physical lens-warp that rhymes with the bakery's display case.  ·  Ends on: the frame ends looking through curved, rippling glass with warm blurred shapes behind it, matching the curved display-case glass that opens scene 26.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s25-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s25-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v26",
+     "title": "26. stacking up the cash by the grands / standard plans are for the working man",
+     "line": "The bakery counter, day: The baker hands over his whole pay packet for one loaf; the price on the chalkboard behind the counter has been rubbed out and written higher.  ·  Layer: the prism already glints on his arm in the still, so a real cut-glass dome breaking sunlight into colour makes the price of bread feel like a trick of the light.  ·  Ends on: a single diagonal beam of light slanting down through darkness with coloured edges, matching the lamp beam slanting into the black river in scene 27.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s26-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s26-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v27",
+     "title": "27. and this right here is a next level scam / ill gotten gains, no need to explain",
+     "line": "A rowing boat on a black river, night: The mayor in a sinking rowing boat, bailing it out with a bucket of banknotes.  ·  Layer: the dye clouds are already in the still, and liquid-light-show ink in water is the most physical psychedelia there is for money going under.  ·  Ends on: a billowing tongue of orange and violet filling the frame, matching the tall orange-and-violet furnace flame in scene 28.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s27-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s27-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v28",
+     "title": "28. \"bail\" and \"out\", will never mean the same / own the printer and you don't fear winter",
+     "line": "Split: the warm mint and the frozen attic: One frame, two halves: gangsters in shirtsleeves sweating in furnace heat; grandma, her candle burnt to a stub, frost on her eyelashes.  ·  Layer: heat haze and growing frost are opposite real physical distortions, and letting them fight across the chimney stages the warm-mint, frozen-attic gap without any added effect.  ·  Ends on: the wide pulls back into a two-storey view of one wall dividing amber fire below from frost above, matching the cut-open building in scene 29.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s28-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s28-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v29",
+     "title": "29. crime is asset inflation, passive creation; / of a wealth gap that drives the situation",
+     "line": "The whole building in cross-section: The building cut open top to bottom: gold and heat at the bottom (the mint, the furnace), ice at the top (the attic). The wealth gap as height.  ·  Layer: the oil climbs from hot to cold, so the wealth gap reads as heat failing to rise, and every change in colour comes from a real projector.  ·  Ends on: the tilt settles on low steam drifting across snow, which matches the breath plumes rising off the queue in scene 30.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s29-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s29-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v30",
+     "title": "30. working people get paid in money, so it's not very funny / when you print more…",
+     "line": "The bakery queue in the snow: A long queue; each person holds the price of one loaf, growing down the line: a coin, a fistful, a bag, a wheelbarrow at the back.  ·  Layer: frost is already in the still, so the psychedelic layer is real ice refracting real sun, and the push into wood carries us into the hatch.  ·  Ends on: dark weathered planks on a diagonal, matching the diamond wooden frame of the trapdoor in scene 31.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s30-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s30-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v31",
+     "title": "31. hungry people, feed a revolution, / then it's retribution, perhaps some execution",
+     "line": "The street: The red and blue crowds stop shoving, turn together and look down at the trapdoor behind the bakery counter; then they pour down the back stairs together.  ·  Layer: the heat shimmer and the chemical flame are physical causes for the warping and the colour, and the climb down is the crowd pouring in.  ·  Ends on: round blooms of red, green and blue flame-light across the lens, matching the coloured lantern reflections on the silver tray in scene 32.  ·  ⚠ Flow refused to upload your picked still, so these start from your other still.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "alt-a",
+       "src": "vid/s31-alt-a.mp4",
+       "label": "alt-a (from your 2nd-choice still)"
+      },
+      {
+       "id": "alt-b",
+       "src": "vid/s31-alt-b.mp4",
+       "label": "alt-b (from your 2nd-choice still)"
+      }
+     ]
+    },
+    {
+     "slot": "v32",
+     "title": "32. it's time to give, not just to take / but for heaven's sake, don't just eat cake",
+     "line": "The mint, the end of the line: The mayor backed against the furnace, the crowd filling the room, holds out a tiered cake on a silver tray, trembling.  ·  Layer: the mayor's own silver tray turns the crowd's colours back on him, and the trembling hands drive every distortion.  ·  Ends on: a white star-shaped glint on polished silver, matching the starburst street lamps through the lace curtain in scene 33.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s32-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s32-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "v33",
+     "title": "33. (Outro) Robbery!",
+     "line": "The city at night (the bookend): The same streets as the opening car chase, now empty and still. Everyone has gone downstairs.  ·  Layer: the lace turns the bookend street into one last real optical effect, then the film stops on the stillness of a city that has gone downstairs.  ·  Ends on: end of film.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/s33-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/s33-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

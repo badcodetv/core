@@ -1,5 +1,11 @@
 # Jack's variant: red o + white triangle + outline (2026-10-21)
 
+> 🗄️ **Archive — a record of one 2026-10-21 exploration, not a template.** The prompts below describe
+> BadCode as "making drum and bass", and some carry a near-black ground and a club setting: that was
+> one story's sound and look leaking into the brand at the time. There is no BadCode house sound or
+> look ([`docs/stories/STYLE.md`](../../../stories/STYLE.md)); the logo is the only house mark
+> ([`docs/brand/README.md`](../../README.md)). Do not reuse these prompts' style words.
+
 Jack picked this for social media (TikTok etc.): Kai's "Saved version 5" logo, with the name's o drawn as the bench
 style **"Red o + white triangle + outline"** at its defaults (white triangle 36% of the o, 61% off centre; white
 outline 20% of the o's radius). Not saved on the bench; built from those numbers. **Not yet the official logo**:

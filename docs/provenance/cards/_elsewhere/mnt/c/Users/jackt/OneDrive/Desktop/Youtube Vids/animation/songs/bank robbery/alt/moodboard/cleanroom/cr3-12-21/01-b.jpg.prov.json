@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-12-21/01-b.jpg",
+ "made": "2026-10-29T16:45:51.562Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, night, an intimate close shot inside the secret basement mint. The camera sits down inside the mouth of a press's open iron firebox, among glowing coals, looking up and out at a tilt. Filling the right of the frame, the mayor leans in with a coal shovel heaped toward the lens: a tall, skinny man in a bowler hat with a heavy gold chain of office round his neck, a long narrow face, hollow cheeks, a pencil-thin grey moustache, grinning, lit hot red from below, sweat on his lip. On the left rises the biggest press, its iron frame glowing dull cherry red at the seams, spitting banknotes. Its ink rollers spin wet: thick printer's inks in emerald, violet and copper green marbled together, the swirls stretching and folding like oil paint in water, catching the firelight in glossy ribbons, flicking drops that streak through the air. Behind, slumped against brick, an exhausted stoker in a torn undershirt, soot to the eyes, barely lit. The firebox edge frames the shot, rust-scaled and cracked. Beyond the fire's reach, black. The notes show only blank engraved swirls, with no lettering anywhere.",
+ "source_id": "0633d34f-b991-4302-bb35-0d223e981d5a"
+}

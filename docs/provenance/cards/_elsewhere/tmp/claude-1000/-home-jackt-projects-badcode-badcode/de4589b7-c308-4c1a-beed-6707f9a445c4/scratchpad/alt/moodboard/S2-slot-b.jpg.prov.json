@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S2-slot-b.jpg",
+ "made": "2026-10-28T09:41:53.059Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic period photograph staged like the opening titles of a 1960s spy film: the figures are almost photographic, but the space behind them dissolves into a flat flood of saturated colour, molten gold fading into deep magenta, with drifting smoke. Camera low on the back stairs, looking up past a dark wooden banister post in the foreground left. A heavy-set gangster in a chalk-stripe three-piece suit and grey fedora, with a broad pockmarked face, a flattened boxer's nose and a toothpick, leans close to a plain steel door at the bottom of narrow brick back stairs and murmurs into its open slot, where only two wary eyes look out. He stands right of centre, his face large in frame. 1920s: bare brick, a fire bucket, a crate of empty milk bottles, a wet stone floor. One hard white spotlight from above. The figures are half in silhouette, cut out sharp against the colour; only the face nearest the camera is lit in full. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b1f4299b-fdd7-4b61-9ab4-733bd199ecaa"
+}

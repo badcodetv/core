@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A19-b.jpg",
+ "made": "2026-10-28T10:48:46.362Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. Concentric black and white rings ripple outward from the cloth speaker of the radio across the whole frame, bending the real picture like ripples on a pond, with one thin spiral of red running through them. Camera at the height of a kitchen table, a wooden radio set large in the foreground, its dial lit amber. Behind it, a couple in a cramped tenement kitchen at night lean in to listen, a woman in a headscarf with a long nose and a man with grey stubble and braces, a red scarf hung on the chair. Light: the radio's dial and one oil lamp; a window behind full of snow and other lit kitchen windows across the street. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1a5a0248-d0bc-4ded-a395-b312774e6ff0"
+}

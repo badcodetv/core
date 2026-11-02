@@ -365,6 +365,9 @@ for the excludes here is a category error that quietly damages the part of the s
 
 ### 9. Weirdness follows the same rule as model choice: cue-heavy tracks want obedience
 
+> **One track's finding (GPOM's D&B cut, v5.5 era), not a setting.** A hypothesis about cue-heavy
+> sheets, untested on any other story or on v6. A song's sliders come from its story's `sound.md`.
+
 The common practitioner default is weirdness 60–65, the "creative sweet spot". GPOM's D&B cut tested materially
 better at **30**. That isn't a contradiction of §10's model finding — it's the same finding:
 

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s09-b.mp4",
+ "made": "2026-10-29T19:05:29.273Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, filmed on a vintage film camera. The old man with the white moustache draws the cue back slowly, then strikes; the cue ball rolls away from us across the green baize. On the stage behind, the little projector at the band's feet is a liquid light show: a hand-held glass dish of coloured oil and water sits in its beam, and the projector's heat makes the dye bubble, so magenta, amber and teal blobs swell, split and slide across the brick arch and over the trumpeter's pinstripes. The red-haired man in his twenties in the flat cap leans on the table edge and follows the ball with his eyes. Camera locked low at table height for four seconds, then pushes forward with the rolling ball. In the last two seconds the camera closes in on the polished ball, and the swirling oil colours, curved and bent in its surface, fill the frame as a glowing dome of colour. Sound: the crack of the cue, the ball rolling. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s09.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s09.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "b9c0b708-1b43-437c-b0d0-ef20a6b9a926"
+}

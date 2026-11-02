@@ -1,4 +1,5 @@
 /**
+ * style-lint: story=camping — a Camping-only script kept in the shared Suno folder.
  * badcode — run the Camping STYLE set through ordinary Create mode. Nothing attached.
  *
  * This is a SCOUTING round, not an A/B: every input moves per variation — My Taste, Style,
@@ -25,7 +26,7 @@
  *
  *   npx tsx scripts/suno/style-ab.mts plan            # print the seven boxes, touch nothing
  *   npx tsx scripts/suno/style-ab.mts check           # read the live form back, spend nothing
- *   npx tsx scripts/suno/style-ab.mts taste-backup    # save the house My Taste to disk
+ *   npx tsx scripts/suno/style-ab.mts taste-backup    # save the account's My Taste to disk
  *   npx tsx scripts/suno/style-ab.mts taste-restore   # put it back
  *   npx tsx scripts/suno/style-ab.mts load <id>       # fill one variation whole, generate NOTHING
  *   npx tsx scripts/suno/style-ab.mts run [ids...]    # 10 credits + 2 takes per id
@@ -35,7 +36,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import {
   connect, setSlider, setTitle, setLyrics, setDuration, setWorkspace, setTaste, getTaste, create, listTakes,
 } from './suno.mts'
-import { VARIATIONS, styleFor, excludeFor, titleFor, type Variation } from './style-variations.mts'
+import { VARIATIONS, styleFor, excludeFor, titleFor, type Variation } from './archive/style-variations.mts'
 
 // Duration is the one input NOT varied: rounds 13-14 targeted 200s and got 4:07-4:24 back, so it
 // is a suggestion Suno mostly ignores and varying it would add noise without adding range.
@@ -215,7 +216,7 @@ if (cmd === 'plan') {
   const { browser, page } = await connect()
   console.log(await setTaste(page, want))
   const got = await getTaste(page)
-  console.log(shape(got ?? '') === shape(want) ? `✅ house My Taste restored (${want.length} chars)` : '🔴 restore did NOT take — fix by hand')
+  console.log(shape(got ?? '') === shape(want) ? `✅ account My Taste restored (${want.length} chars)` : '🔴 restore did NOT take — fix by hand')
   await browser.close()
 } else if (cmd === 'load' || cmd === 'run') {
   if (!existsSync(BACKUP)) {
@@ -231,7 +232,7 @@ if (cmd === 'plan') {
     await browser.close()
     process.exit(1)
   }
-  console.log(`✅ nothing attached · house My Taste backed up (${readFileSync(BACKUP, 'utf8').length} chars)`)
+  console.log(`✅ nothing attached · account My Taste backed up (${readFileSync(BACKUP, 'utf8').length} chars)`)
   console.log(await setWorkspace(page, WORKSPACE))
 
   const done: string[] = []
@@ -263,8 +264,8 @@ if (cmd === 'plan') {
   plan            print the seven boxes + cue counts, touch nothing
   cues <id>       diff one variation's bracket cues against camping.md §4, offline
   check           read the live form and My Taste back, spend nothing
-  taste-backup    save the house My Taste to disk — REQUIRED before run
-  taste-restore   put the house My Taste back
+  taste-backup    save the account's My Taste to disk — REQUIRED before run
+  taste-restore   put the account's My Taste back
   load <id>       fill one variation whole, generate NOTHING
   run [ids...]    Create each in turn — 10 credits and 2 takes per id
 

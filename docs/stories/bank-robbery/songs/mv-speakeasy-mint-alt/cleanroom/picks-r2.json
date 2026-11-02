@@ -1,0 +1,200 @@
+{
+ "title": "Opening Shot Stills",
+ "eyebrow": "Bank Robbery MV \u00b7 ALT \u00b7 scene 1 \u00b7 clean room round 2",
+ "heading": "Scene 1: the opening shot, new stills",
+ "intro": "Clean room: fresh web research on Nano Banana 2.1 (nb21-research.md), then four sealed writers who saw only Jack's words, the research and an honest list of what looked like AI slop last time. Main changes: dry streets instead of wet glossy ones, one real light source, an off-centre tilted angle, a specific place (Chicago's elevated railway), and colour that comes from something physical (prism glass, sparks, a gelled lamp, a smeared windscreen) instead of pasted-on neon. Stills only, nothing animated yet. Click any image to see it large. Pick one per row and leave notes.",
+ "sections": [
+  {
+   "h": "Round 2: the new stills (Nano Banana 2.1, two takes each)",
+   "lede": "Pick the better take per staging, or neither.",
+   "groups": [
+    {
+     "slot": "cr2-w1",
+     "title": "1. Back seat of the getaway car",
+     "line": "Prism bands from old rippled window glass; dry street under the El.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/cr2-w1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/cr2-w1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "cr2-w2",
+     "title": "2. From up on the El, looking down",
+     "line": "Train-wheel sparks through a prism; one theatre canopy of bulbs.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/cr2-w2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/cr2-w2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "cr2-w3",
+     "title": "3. Police car windscreen",
+     "line": "Half-wiped glass smears the lights; muzzle flash, the L overhead.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/cr2-w3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/cr2-w3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "cr2-w4",
+     "title": "4. Dusk, no rain, out of the alley",
+     "line": "Magenta-gelled lamp in the dust; a giant flame as a double exposure.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/cr2-w4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/cr2-w4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Your pick",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "cr2-forward",
+     "title": "Which ONE goes forward to animate?",
+     "line": "Pick the still for the opening shot. Note what to change, or ask for more like it.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "w1a",
+       "src": "img/cr2-w1-a.jpg",
+       "label": "1a"
+      },
+      {
+       "id": "w1b",
+       "src": "img/cr2-w1-b.jpg",
+       "label": "1b"
+      },
+      {
+       "id": "w2a",
+       "src": "img/cr2-w2-a.jpg",
+       "label": "2a"
+      },
+      {
+       "id": "w2b",
+       "src": "img/cr2-w2-b.jpg",
+       "label": "2b"
+      },
+      {
+       "id": "w3a",
+       "src": "img/cr2-w3-a.jpg",
+       "label": "3a"
+      },
+      {
+       "id": "w3b",
+       "src": "img/cr2-w3-b.jpg",
+       "label": "3b"
+      },
+      {
+       "id": "w4a",
+       "src": "img/cr2-w4-a.jpg",
+       "label": "4a"
+      },
+      {
+       "id": "w4b",
+       "src": "img/cr2-w4-b.jpg",
+       "label": "4b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "For comparison: round 1 (yesterday's prompts)",
+   "lede": "Wet, glossy, symmetrical neon: what we're moving away from.",
+   "groups": [
+    {
+     "slot": "cr1-w1",
+     "title": "Running board (yesterday's writer 1)",
+     "line": "Yesterday's clean-room prompt, run today. The slop the new round had to beat.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/cr1-w1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/cr1-w1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "cr1-w2",
+     "title": "Puddle at road level (writer 2)",
+     "line": "Yesterday's clean-room prompt, run today. The slop the new round had to beat.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/cr1-w2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/cr1-w2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "cr1-w3",
+     "title": "Pursuer's windscreen (writer 3)",
+     "line": "Yesterday's clean-room prompt, run today. The slop the new round had to beat.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/cr1-w3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/cr1-w3-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

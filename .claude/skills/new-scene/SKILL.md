@@ -72,8 +72,9 @@ The words live in the repo and the media lives outside it (the clips/ convention
   "flow_project": "<Flow project id>",
   "beats": [{"key": "door", "at": "0:00", "name": "The door", "blurb": "What this beat must do."}],
   "existing": {"door": [["NOW-door", "On the timeline now (replace)", "moodboard/current/NOW-door.jpg"]]},
-  "styles": {"threads": "1980s BBC 16mm"},
-  "looks": {"news": "Bulletin realism"},
+  "styles": {"<style key>": "<a look named in the story's look.md>"},
+  "looks": {"<look key>": "<a look named in the story's look.md>"},
+  "video": {"model": "Omni 1.1 Flash", "aspect": "<16:9 | 9:16, from look.md>", "mode": "Frames", "duration": 8},
   "boards": {"moodboard": "<artifact url>", "storyboard": "<artifact url>", "timeline": "<artifact url>"},
   "cut": {"edl": "<media>/cut/edl.json", "preview": "<media>/cut/preview.mp4"}
 }

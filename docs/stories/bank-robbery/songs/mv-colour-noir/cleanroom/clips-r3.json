@@ -1,0 +1,44 @@
+{
+ "pov1": {
+  "motion": "One continuous shot from the driver's eyes. The camera is fixed to the car, so the cabin, bonnet and gloved hands hold their place with a light judder from the road. The car rolls forward along the dirt road at an even pace. The poles and the red barn slide past on the right and stay planted. Nobody speaks.",
+  "ends_on": "The barn has passed out of the right of the windscreen and the headlamps light empty road running into the dark.",
+  "why": "The only thing changing is the world going past a rigid cabin, which leaves the hands and the wheel nothing to morph.",
+  "run": "One continuous shot from the driver's eyes. The camera is fixed to the car, so the cabin, bonnet and gloved hands hold their place with a light judder from the road. The car rolls forward along the dirt road at an even pace. The poles and the red barn slide past on the right and stay planted. Nobody speaks.\n\nThanks."
+ },
+ "pov3": {
+  "motion": "One continuous shot, seen through the driver's eyes. [0-6s] The yellow car drives straight down the cobbles between the tram rails, steady, hands still on the wheel and gear knob. Warehouses and sea wall pass either side, unchanging. The red lights deep inside stay small. [6-8s] The tunnel mouth grows until its darkness fills the windscreen. No speech.",
+  "ends_on": "The car crosses into the tunnel and black fills everything beyond the windscreen, a clean place to cut.",
+  "why": "The tunnel already in the frame gives the editor a physical way out into dark without describing any next scene.",
+  "run": "One continuous shot, seen through the driver's eyes. [0-6s] The yellow car drives straight down the cobbles between the tram rails, steady, hands still on the wheel and gear knob. Warehouses and sea wall pass either side, unchanging. The red lights deep inside stay small. [6-8s] The tunnel mouth grows until its darkness fills the windscreen. No speech.\n\nThanks."
+ },
+ "rods1": {
+  "motion": "A camera car travels alongside at the same speed, one continuous tracking shot. Both cars drive to the right, side by side, and stay where they are in the frame, the red one nearest, the yellow one half a length ahead. Only wheels spin, dust trails off behind them and the ground streaks past. Distant hills slide slowly left. No speech.",
+  "ends_on": "Same framing as the start, both cars in the same places with a longer tail of dust; it simply ends.",
+  "why": "Matching camera and car speed means speed shows in the wheels and ground while the cars have no reason to jump.",
+  "run": "A camera car travels alongside at the same speed, one continuous tracking shot. Both cars drive to the right, side by side, and stay where they are in the frame, the red one nearest, the yellow one half a length ahead. Only wheels spin, dust trails off behind them and the ground streaks past. Distant hills slide slowly left. No speech.\n\nThanks."
+ },
+ "rods4": {
+  "motion": "Locked-off camera, one continuous shot, nothing exaggerated. The two cars roll toward us along the concrete at an easy, steady pace, side by side, headlamps on, growing a little larger. Tyres stay on the ground. The bridges, walls, sky and standing water do not change. They are still mid-distance when the shot ends. No speech.",
+  "ends_on": "The two cars a little closer in the channel, still well short of the camera; it simply ends.",
+  "why": "Jack called the last one exaggerated, so this is a calm approach under huge still arches and the scale does the work.",
+  "run": "Locked-off camera, one continuous shot, nothing exaggerated. The two cars roll toward us along the concrete at an easy, steady pace, side by side, headlamps on, growing a little larger. Tyres stay on the ground. The bridges, walls, sky and standing water do not change. They are still mid-distance when the shot ends. No speech.\n\nThanks."
+ },
+ "safe1": {
+  "motion": "One continuous shot, locked off, at real speed. The heavy green safe drops onto the cobbles and the chain pulls tight. The yellow car drives forward to the right by about a third of its length, dragging the safe along the stones, sparks spraying from its steel corner. Loose bricks fall and lie still. The man leans in the window without moving, his mask exactly as it is. No speech.",
+  "ends_on": "The safe scraping along the cobbles with sparks at its corner, chain taut and the car still in frame, ready to cut on the motion.",
+  "why": "Weight then consequence in one line of cause and effect, with the car's move kept short so the masked man and his mask stay in frame and untouched.",
+  "run": "One continuous shot, locked off, at real speed. The heavy green safe drops onto the cobbles and the chain pulls tight. The yellow car drives forward to the right by about a third of its length, dragging the safe along the stones, sparks spraying from its steel corner. Loose bricks fall and lie still. The man leans in the window without moving, his mask exactly as it is. No speech.\n\nThanks."
+ },
+ "safe3": {
+  "motion": "High locked-off view from the fire escape, one continuous shot. Slowly, over the whole eight seconds, the yellow sedan drives down the cobbled road toward the bottom of the frame, towing the safe on its chain, sparks trailing from the safe along the road behind it. The black cars stay parked at the kerb. The rust rail stays still. No speech.",
+  "ends_on": "Sedan and safe pass out of the bottom of the frame behind the rail, leaving the empty street and a line of sparks dying on the cobbles.",
+  "why": "Leaving the frame is the one event here, and it gives a clean exit on a street where everything else stays put on the road.",
+  "run": "High locked-off view from the fire escape, one continuous shot. Slowly, over the whole eight seconds, the yellow sedan drives down the cobbled road toward the bottom of the frame, towing the safe on its chain, sparks trailing from the safe along the road behind it. The black cars stay parked at the kerb. The rust rail stays still. No speech.\n\nThanks."
+ },
+ "chase2": {
+  "motion": "Locked off on the rooftop, one continuous shot. Almost nothing happens. The steam from the chimneys rises and drifts slowly. Far below, the small yellow car rolls left about two of its own lengths across the junction, keeping its exact shape. All the other traffic and the people wait at the crossing where they are. The light does not change. No speech.",
+  "ends_on": "The yellow car a little further across the junction with the steam still drifting; it simply ends.",
+  "why": "After two rejections this drops the pan and the long drive, so a small car and rising steam give nothing the chance to pop in or out or turn modern.",
+  "run": "Locked off on the rooftop, one continuous shot. Almost nothing happens. The steam from the chimneys rises and drifts slowly. Far below, the small yellow car rolls left about two of its own lengths across the junction, keeping its exact shape. All the other traffic and the people wait at the crossing where they are. The light does not change. No speech.\n\nThanks."
+ }
+}

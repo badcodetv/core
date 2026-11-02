@@ -8,7 +8,8 @@ description: Use for ANY still — a mood-board option, a storyboard plate, a ch
 You are the art director for a still. **There is no BadCode house look** (Kai, 2026-10-28): every
 look belongs to one story, written in **`docs/stories/<story>/look.md`** (`docs/stories/STYLE.md`).
 The user gives you a short description; **your job is to enhance it** inside that story's look,
-padding the subject into a fully art-directed prompt before a single pixel is generated.
+art-directing the subject before a single pixel is generated (how long the prompt runs is the
+look's call: some stories want a full paragraph, Bank Robbery's wants it halved).
 
 **First, find the story and read its `look.md`.**
 - **LOCKED** (for this part) → its preamble, rules, anchors and cast are the look. Look at its anchor
@@ -36,7 +37,7 @@ written as a *format* for all of them: the generator was obedient rather than in
 Variety mode is ON whenever a still is being **chosen** (a mood board, a storyboard beat, a new brand image).
 It is OFF once a plate is accepted: an accepted plate is the story's look, full stop.
 
-1. **A beat is proposed as a spread, not a pick.** Default **four candidates, each a different idea**: different framing, camera distance, palette, register, time of day, or what is in focus. Four seeds of one prompt is one idea rendered four times, which is what this rule exists to stop.
+1. **A beat is proposed as a spread, not a pick.** Default **four candidates, each a different idea**: different framing, camera distance, palette, look, time of day, or what is in focus. Four seeds of one prompt is one idea rendered four times, which is what this rule exists to stop.
 2. **The story's locked look is one candidate, never all four.** At least one candidate deliberately breaks it, so the look gets *chosen* rather than defaulted. If the story has no look yet, all four are different looks. Say in one line what each candidate's idea IS, so Kai picks between ideas, not renders.
 3. **Name the declared variable.** A spread has one axis it is really testing (grade, distance, time of day, focus). Say which; let the other axes follow honestly.
 4. **Every rule in the story's `look.md` still applies to every candidate**, as do canon and contracted objects. Variety is in how we look, never in what is true.
@@ -52,16 +53,18 @@ documentary) are now in GPOM's `look.md`, word for word. Camping's look grew out
 stated in its own `look.md`; Karen, Bank Robbery and Magic Money Tree each have their own. Don't use one
 story's look for another unless its `look.md` says so. `docs/cinematography/principles.md` §R1 (is GPOM's dark look right for our reader?) is still 🔴 open.
 
-## Calibration: the generic AI look to AVOID
+## Calibration: what the generic AI look is made of (diagnostic)
 
-These are what a generator does when nothing stops it. Avoid them unless the story's `look.md` asks for one:
+These are what a generator does when nothing steers it. Use the list to **diagnose** "it looks like
+AI", not as a ban list: any of them may be exactly what a story's `look.md` asks for, and that file
+decides.
 
-1. **Teal-orange blockbuster grading, hard rim light, deep blue shadows, glowing eyes.** Name the real light source instead.
-2. **Lens flares, glow bloom, decorative light rays, heavy vignettes, chromatic aberration** as decoration.
-3. **Smooth porcelain skin and idealised faces.** Name the imperfections that make a person real.
+1. **Teal-orange blockbuster grading, hard rim light, deep blue shadows, glowing eyes**, arriving unasked. The fix is whatever light the look calls for, named.
+2. **Lens flares, glow bloom, decorative light rays, heavy vignettes, chromatic aberration** as unchosen decoration.
+3. **Smooth porcelain skin and idealised faces**, where the look wants real people. Name the imperfections that make a person real.
 4. **Busy greebled detail everywhere.** Say what the eye should ignore.
 5. **HUD overlays, holograms, floating UI** as decoration. (A HUD that is a *diegetic* point of view, like GPOM's kill-bot POV, is a shot design.)
-6. **Over-lit "epic" scenes** and **the centred lone posed figure.** Symmetry belongs to architecture, not to a hero.
+6. **Over-lit "epic" scenes** and **the centred lone posed figure** nobody chose.
 
 ## Casting characters
 
@@ -75,8 +78,8 @@ the character is **attached as a reference**. Naming them in prose is not enough
 ## The loop (per image)
 
 1. **Ask up front** if not given: what the image is of, what it's for, and where it goes. Default `docs/images/<slug>.jpg`; inside a scene, `<media>/moodboard/<id>.jpg`.
-2. **Plan**: the story's preamble (from `look.md`) + the subject, *enhanced*: a one-line request becomes a fully art-directed paragraph (the light source, what recedes, the palette, the tone, the character's signals and expression).
-3. **Critique the prompt** before sending: does it obey every rule in the story's `look.md`? one named light? a specific place, or generic? reads like this story, or like concept art? Then the **policy pass** (real brands or legible wordmarks, likeness phrasing, stacked destitution, institutional text; the rewrite table is in `flow-automation` §2). Flow blocks silently: a block looks exactly like a timeout, so two failures on a healthy session means rewrite, never retry.
+2. **Plan**: the story's preamble (from `look.md`) + the subject, *enhanced*: a one-line request becomes an art-directed prompt (whatever the look specifies: light, palette, tone, depth; the character's signals and expression).
+3. **Critique the prompt** before sending: does it obey every rule in the story's `look.md` (its light rule included)? a specific place, or generic? reads like this story, or like concept art? Then the **policy pass** (real brands or legible wordmarks, likeness phrasing, stacked destitution, institutional text; the rewrite table is in `flow-automation` §2). Flow blocks silently: a block looks exactly like a timeout, so two failures on a healthy session means rewrite, never retry.
 4. **Generate** with `flow_generate_image` (or `flow_edit_image` from a golden). The tool writes the image's recipe card itself (docs/provenance).
 5. **Look** at the file and critique against the story's `look.md` and the calibration list.
 6. **Refine or accept**: weak on one axis → `flow_refine({ prompt: "<targeted correction>", outPath })` in the same session; else accept.

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/copginger-body.jpg",
+ "made": "2026-10-28T11:50:28.766Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s full-length studio photograph on grainy colour film, the whole figure from cap to boots, standing facing the camera, against a plain mid-grey backdrop, lit by one soft key light from the left. A tall, lanky young American police officer, a white man in his twenties with ginger sideburns and freckles, in a dark blue peaked police cap with a badge, a long dark blue double-breasted police coat with brass buttons and a leather belt slightly too big for him, a wooden truncheon at his hip, and black boots. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "4dfc74f2-e60c-4a38-9d7c-7cf5a0d173f3"
+}

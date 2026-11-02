@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr1-w3-a.jpg",
+ "made": "2026-10-29T15:34:01.631Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A real 35mm film frame from a 1920s Prohibition-era crime film, shot at night in heavy rain from the passenger seat of a pursuing 1928 police touring car. We look forward through its upright, rain-streaked flat glass windscreen. In the lower foreground is the worn dashboard: scratched black-painted steel, a few small round brass-rimmed gauges with glowing needles and no numerals, a chrome toggle switch. On the left, the driver's hands sit on a thin black steering wheel. He is a uniformed police officer in a dark wool sleeve with a brass button at the cuff and wet leather gloves, seen from the wrist down only. A single wiper arm hangs from the top edge of the glass. It has just swept the left half of the windscreen clean, so that side is sharp and clear. The right half is still covered in beaded, running rain that smears every light into soft, sprayed arcs of colour, like airbrushed paint.\nAbout fifteen metres ahead, centred in the frame, a black 1927 four-door sedan races down a narrow wet cobblestone street. It has tall rounded fenders, a spare tyre on the back and one glowing red rear lamp. A gangster in a dark overcoat and fedora leans out of its rear side window. He holds a Thompson submachine gun with a round drum magazine straight up, the muzzle pointed at the night sky and at no one. Spray kicks up from the sedan's rear wheels. Both sides of the street are lined with brick buildings, iron fire escapes and blurred neon tubes in abstract shapes: magenta, electric cyan, amber and blood red. They glow and reflect in long streaks on the wet stones. The police car's headlamps throw two warm yellow cones through the falling rain.\nLook: 40mm anamorphic lens at f/2, focus on the sedan, the glass droplets softly out of focus, Kodak Vision3 500T film grain, slight halation around every light, deep inky shadows, high contrast, exaggerated saturated neon over an otherwise natural, realistic scene. Real-world imperfections: grime at the edges of the windscreen, a small chip in the glass, wet streaks, uneven light. No readable text, letters, numbers, signs or licence plates anywhere. No glossy CGI sheen, no plastic surfaces, no extra cars, no people on the street.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f3534f35-394a-4c1b-b76c-f38c4658f7d3"
+}

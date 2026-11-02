@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/den2-b.mp4",
+ "made": "2026-10-30T11:46:31.158Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous shot. The fist hauls the iron lever upward and the left end of the shelf lifts, tipping it steeper. The bottles slide down it one after another and drop into the black hatch, heavy glass rattling against glass, while the spilled liquor runs along the bar. The camera starts low, slides past the big amber bottle in the foreground and follows the last small clear bottle along the shelf. It tips over the lip and falls into the hatch, and the camera keeps pushing in until the hatch's black fills the whole frame. The coloured light on the wall stays still.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-den2-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-den2-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "d07b2897-5f1f-43ee-97ab-1aa23c3cacaa"
+}

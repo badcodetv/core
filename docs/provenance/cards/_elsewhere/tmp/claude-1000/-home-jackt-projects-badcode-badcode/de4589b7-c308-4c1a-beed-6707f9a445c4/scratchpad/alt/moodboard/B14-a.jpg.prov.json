@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B14-a.jpg",
+ "made": "2026-10-28T12:48:18.825Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Every moving thing leaves three or four fading afterimages split into pure red, green and blue, like a long exposure lit by coloured flashes; everything still stays sharp. Camera at the kerb, low and tilted. On a bandstand at night, the man from the character reference, dressed exactly as in his portrait reference, throws up his arms in a magician's pose as a magnesium flash pops white in a cloud of smoke and the crowd turns to look; behind the smoke a getaway car screeches away from the bank steps, money sacks in its back windows, a police car swinging round after it. Strings of bulbs; wet cobbles streaked with every light. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/mayor.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "character": "SM Mayor"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ca89f9fd-eecf-4cc5-9e8e-255b488d4a21"
+}

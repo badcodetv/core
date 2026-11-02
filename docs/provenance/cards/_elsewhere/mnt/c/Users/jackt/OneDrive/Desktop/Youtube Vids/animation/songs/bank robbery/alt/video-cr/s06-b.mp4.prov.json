@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s06-b.mp4",
+ "made": "2026-10-29T18:56:43.599Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot through a frosted attic window on a vintage film camera. Grandma cups her hands closer round the single candle and breathes out; her breath steams in the cold. On the window glass in front of the lens, new frost crystals grow inward from the edges, feathering across the pane in real time, and each fresh crystal catches the candlelight and splits it into tiny rainbow points, so the halo round the flame turns into a slowly spinning ring of spectral spikes. The flame gutters lower and leans in her breath. The camera pushes slowly in through the gap in the frost toward the flame. In the final 2 seconds the flame fills the centre of frame and its starburst blooms bright white. Sound: a faint wind, ice ticking on the glass. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s06.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s06.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "2963f01b-87ca-4b68-91fe-25e06e27374b"
+}

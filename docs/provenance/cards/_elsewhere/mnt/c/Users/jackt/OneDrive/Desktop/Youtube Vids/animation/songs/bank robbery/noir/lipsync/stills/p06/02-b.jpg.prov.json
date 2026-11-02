@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p06/02-b.jpg",
+ "made": "2026-10-30T15:20:34.600Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night hold-up of an armoured money truck on an American city street in the 1920s, 16:9, filling the frame. A lean man of about sixty, grey stubble, deep creases, pearl-grey fedora pushed back, stands in the foreground at chest-up, three-quarter to the lens on a 50mm, looking just past camera. Behind him the riveted truck's rear doors hang open, canvas sacks split, banknotes hanging in the air too soft to show any print. Amber bulbs strung over the road warm his cheek and mouth; a blue neon tube out of frame right cuts a hard edge along his jaw. The waxed black door of a touring car beside him mirrors the bulbs as a row of amber points and the blue as one long streak. Shopfronts carry no lettering. Shadows fall to true black. Thanks.",
+ "source_id": "97ba3a83-b531-47b5-9ec9-bcbfb81ded86"
+}

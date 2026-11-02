@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s28-a.mp4",
+ "made": "2026-10-29T19:32:19.854Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera. One frame split by the brick chimney: on the left the man in braces drives his shovel of coal into the open firebox and the flames roar up, sparks spitting; on the right grandma presses her cheek and palm against the cold bricks while her stub of candle gutters and shrinks. On the furnace side the heat shimmer is the layer: the air above the fire ripples and the bricks, the men and the steam wobble behind it, the flame's colour wheeling from orange through pink to gas-blue violet. On the attic side frost is the layer: ice ferns grow across the window pane and creep out over the floorboards and the brick toward her hand, catching the streetlamp in cold blue and lilac. The two layers meet at the chimney edge and push against each other. Over the eight seconds the camera dollies slowly back and rises, revealing more of each room. Sound: roaring fire, coal scraping, the creak of ice. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s28.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s28.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "94f5390d-94db-4b07-a979-1c04fa810aeb"
+}

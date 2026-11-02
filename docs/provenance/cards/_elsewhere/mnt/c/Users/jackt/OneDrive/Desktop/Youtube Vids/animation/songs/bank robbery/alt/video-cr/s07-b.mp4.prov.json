@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s07-b.mp4",
+ "made": "2026-10-29T18:58:00.385Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, looking up through the bars of a storm drain on a vintage film camera. The mayor flicks his wrist and lets go of the last envelopes. On the balcony, the photographers' magnesium flashbulbs fire one after another; each pop freezes the falling envelopes for an instant and leaves a fading coloured afterimage of them in the smoke, so the drop becomes a stuttering staircase of red, white and blue ghosts tumbling straight down toward the lens. The hands of the crowd at the grate edges snatch at the air and close on nothing. The camera stays locked off. In the last 2 seconds a final flash lights the wet bars of the grate, and the water drops on the iron glitter like cut crystal. Sound: flashbulb pops, papers fluttering, rain dripping into the drain. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s07.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s07.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "6b6c0704-37ac-4c4a-8586-80d1b98c0b28"
+}

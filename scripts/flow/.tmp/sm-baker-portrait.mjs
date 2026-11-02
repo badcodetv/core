@@ -1,0 +1,31 @@
+// Scratch (2026-10-28): add the missing Portrait to SM Baker by the tile route (a direct URL goto ignores uploads).
+import { chromium } from 'playwright';
+const [port, projectId, outDir] = process.argv.slice(2);
+const browser = await chromium.connectOverCDP(`http://127.0.0.1:${port}`);
+const page = browser.contexts()[0].pages().find((p) => p.url().includes('flow.google.com'));
+const byText = (rx) => page.evaluate((rx) => { const re = new RegExp(rx); const b = [...document.querySelectorAll('button')].find((x) => x.getBoundingClientRect().width > 0 && re.test(x.innerText.trim().replace(/\s+/g, ' '))); b?.click(); return !!b; }, rx);
+const tabs = () => page.evaluate(() => [...document.querySelectorAll('button')].filter((b) => b.getBoundingClientRect().width > 0 && /(Portrait|Body|Create body|Create portrait)$/.test(b.innerText.trim().replace(/\s+/g, ' '))).map((b) => b.innerText.trim().replace(/\s+/g, ' ')).join(' | '));
+const openTile = async (name) => {
+  await page.goto(`https://flow.google.com/project/${projectId}`, { waitUntil: 'domcontentloaded' });
+  await page.waitForTimeout(5000);
+  for (let i = 0; i < 20 && !(await byText('^accessibility_new Characters$')); i++) await page.waitForTimeout(1000);
+  await page.waitForTimeout(3000);
+  const ok = await page.evaluate((n) => { const t = [...document.querySelectorAll('flow-character-tile')].find((x) => x.querySelector('.character-tile-name')?.textContent.trim() === n); t?.click(); return !!t; }, name);
+  await page.waitForURL(/\/character\/[0-9a-f-]{36}/, { timeout: 20000 });
+  await page.waitForTimeout(5000);
+  return ok;
+};
+await openTile('SM Baker');
+console.log('before:', await tabs());
+await byText('Create portrait$');
+await page.waitForTimeout(2500);
+const [ch] = await Promise.all([page.waitForEvent('filechooser', { timeout: 15000 }), byText('^upload Upload$')]);
+await ch.setFiles(`${process.env.HOME}/.cache/sm-cast/baker.jpg`);
+await page.waitForTimeout(3000); await page.evaluate(() => { const b = [...document.querySelectorAll('button')].find((x) => x.innerText.trim() === 'I agree'); b?.click(); }); for (let i = 0; i < 30; i++) { if (!(await page.evaluate(() => /\b\d{1,3}%/.test(document.body.innerText)))) break; await page.waitForTimeout(3000); } await page.waitForTimeout(20000); await page.screenshot({ path: outDir + '/baker-mid.png' });
+console.log('after upload:', await tabs());
+await byText('^Done$'); await page.waitForTimeout(4000);
+await openTile('SM Baker');
+console.log('after reopen:', await tabs());
+await page.screenshot({ path: `${outDir}/baker-after.png` });
+await byText('^Done$'); await page.waitForTimeout(3000);
+await browser.close();

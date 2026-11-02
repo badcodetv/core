@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B20-a.jpg",
+ "made": "2026-10-28T12:53:13.608Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The fine engraved line work of a banknote, hair-thin money-green and copper lines and rosettes, wraps round every stack of money in the vault like a contour map. Camera low at the foot of a plank in a vast brick vault: gangsters with tommy guns slung on their backs wheel barrows of rubber-banded stacks up onto a mountain of money; nearest the lens, the man from the character reference, dressed exactly as in his portrait reference, pushes a barrow, red-faced and straining. Brass lamps warm on the money; the far end in deep green shadow. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/lippy.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/lippy.jpg"
+  ],
+  "character": "SM Lippy"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "edf16056-2e3c-477f-a009-3dfa11e6992b"
+}

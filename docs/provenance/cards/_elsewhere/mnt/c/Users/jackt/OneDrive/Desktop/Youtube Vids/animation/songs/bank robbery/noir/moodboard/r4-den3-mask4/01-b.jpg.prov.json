@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r4-den3-mask4/01-b.jpg",
+ "made": "2026-10-30T13:20:56.359Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Dusk on a wide, calm river in the 1920s, seen from low on the water beside a small mahogany runabout lying still at anchor, with its flat upright brass-framed windscreen, its varnished deck planks, a brass stern lamp and an open cockpit of buttoned oxblood leather. The boat fills the left half of the frame, cut off by the left edge and the bottom edge. A man in a cream linen three-piece suit and tan leather gloves sits at ease on the stern deck with his legs crossed and his gloved hands resting on one knee, his head turned to face us. His whole head is in a hand-knitted balaclava of teal wool in a slightly uneven rib, its long neck tucked into his collar, with unbroken knit running across the place where his eyes and mouth would be. A thin cream wool ring is chain-stitched around the face, as wide as the face from brow to chin. High inside the ring, over his left eye and on the right of the picture, pressed against the ring's inner edge, sits one small triangle cut from a single piece of solid red felt, its corners rounded, sewn flat with small stitches around its edge. The middle of the ring is bare teal wool. The small brass lamp beside him warms his chest and the front of the mask, and the last of the sky rims his shoulders from behind. Far behind him on the right, small and quiet, a tall white-and-tomato-red wooden paddle steamer with twin black smokestacks and a big stern wheel lies moored against a dark line of trees, its decks empty, strings of amber bulbs along each rail. Those bulbs fall onto the flat water as long, broken bars of gold, stretched toward the camera and dimmer than the bulbs above. The sky has gone rose and plum with one long bar of apricot at the horizon, and the water between boat and steamer holds that colour, glassy and barely moving. Fine film grain, saturated painted colour, true dark under the boat's hull. The picture fills the whole frame, edge to edge.\n\nThanks.",
+ "source_id": "98dd443c-d44d-4c36-b4e9-0caffeb0a512"
+}

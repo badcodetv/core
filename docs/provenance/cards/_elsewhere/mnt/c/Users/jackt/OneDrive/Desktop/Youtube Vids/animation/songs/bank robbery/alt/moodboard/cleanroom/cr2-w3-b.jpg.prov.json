@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr2-w3-b.jpg",
+ "made": "2026-10-29T15:38:04.162Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a 35mm feature film, full-bleed: Chicago, 1928, night, seen from low in the passenger seat of a pursuing police Ford Model A as it leans hard into a left turn under the elevated railway on Wabash Avenue, the horizon tilted. Close and soft in the foreground, the driver's cracked brown leather gauntlets wrench a thin black wheel above a scratched brass dashboard with two clouded gauges. The driver-side wiper, worked by hand, has just swept one fan-shaped arc clear; through it, in the upper left third, a mud-spattered black 1927 Packard sedan slews round the corner fifty feet ahead, rear tyre skidding on dry, soot-dusted cobbles, and a man in a shabby overcoat leans from its back window holding a Thompson gun straight up at the sky, a blue-white muzzle flash lighting the riveted girders overhead. Everywhere outside that arc, the first squall of rain has hit glass filmed with coal soot and engine oil: the violet sparks spitting from a passing L train, the amber shopfront bulbs and the Packard's single red tail lamp are dragged into long spray-painted streaks that bleed through each other and split into rainbow fringes in every bead of water. Deep unlit black between the lights, coarse grain, halation round each bulb. No lettering anywhere.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7f32da13-08fa-4d31-aec9-66403ff5e82b"
+}

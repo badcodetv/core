@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p03/04-b.jpg",
+ "made": "2026-10-30T15:14:51.065Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A rain-wet freight yard at night, seen from low between the rails, 40mm, tilted a few degrees. A long-faced man of about 72 with white stubble, a black derby tipped back, sits in the open door of a 1920s boxcar, three-quarter and chest-up, filling a third of the frame height, a revolver hanging pointed at the ground. Behind him the boxcar's false floor is torn up, whiskey cases packed in the cavity. Beyond, a locomotive vents steam. A magenta gelled lamp on the yard office paints his face and mouth; a lime-green signal lamp streaks down the wet steel rails and the polished black boiler, with the locomotive's headlamp burning white through the steam. Thanks.",
+ "source_id": "b83b11ac-a5bb-4d4c-83a9-6c07eb090347"
+}

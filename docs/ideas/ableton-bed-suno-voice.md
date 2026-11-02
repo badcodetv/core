@@ -1,8 +1,8 @@
 # Make the Music Ourselves; Take Only the Voice from Suno
 
-Suno stops being the band and becomes the newsreader. It generates one thing — the narrator's
-voice, dry — and the bed underneath him is written by us in Ableton. The machine reads the news;
-the humans score it.
+Suno stops being the band and becomes the narrator. It generates one thing — the story's narrator
+voice, dry (for GPOM, its newsreader; each story's narrator is in its own `sound.md`) — and the bed
+underneath is written by us in Ableton. The machine reads the words; the humans score it.
 
 **Kai, 2026-09-12: not now.** We are short of time and resources, so the shortcut for this season
 is that **music and narration both come out of Suno.** This file is the version of the plan we

@@ -1,0 +1,62 @@
+{
+  "story": "bank-robbery",
+  "scene": "mv-colour-noir",
+  "prefix": "cn",
+  "title": "Colour Noir Stills",
+  "heading": "The Bank Robbery music video: colourful noir",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir",
+  "flow_project": "dedfd16b-abd3-4d03-905d-1ddf4cdda4f0",
+  "beats": [
+    {
+      "key": "den",
+      "name": "The den and its band",
+      "at": "general",
+      "blurb": "The speakeasy, colourful noir."
+    },
+    {
+      "key": "bridge",
+      "name": "The band under the bridge",
+      "at": "general",
+      "blurb": "City lights on the water, headlights on the band."
+    },
+    {
+      "key": "chase",
+      "name": "Car chases",
+      "at": "general",
+      "blurb": "Fast."
+    },
+    {
+      "key": "pov",
+      "name": "The first-person driver",
+      "at": "general",
+      "blurb": "One thread among many, followed through the film."
+    },
+    {
+      "key": "safe",
+      "name": "The dragged safe",
+      "at": "general",
+      "blurb": "Pulled out of a wall, sparks, cops behind."
+    },
+    {
+      "key": "mask",
+      "name": "Balaclava robberies",
+      "at": "general",
+      "blurb": "BadCode logo on the balaclavas, people being robbed."
+    },
+    {
+      "key": "city",
+      "name": "Prohibition cities",
+      "at": "general",
+      "blurb": "Pretty, lights and reflections, panning shots."
+    },
+    {
+      "key": "rods",
+      "name": "Hot rod racing",
+      "at": "general",
+      "blurb": "Old school."
+    }
+  ],
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/UwVKv3WU7misnC4bs3VRUt"
+  }
+}

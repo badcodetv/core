@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-bridge23/01-b.jpg",
+ "made": "2026-10-30T11:23:41.295Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A long brick vault runs under the approach to a river bridge, seen at standing eye height from behind two parked 1930s cars, whose rounded black rear ends and spare wheels fill the bottom corners of the frame, their number plates bare metal. A man's hatted head and one shoulder stand in silhouette in the near corner beside one car, and his cigarette smoke curls up through the dark. Twenty metres ahead the cars' headlamps strike the five musicians from the front and throw their shadows enormous across the curved wall behind them. The wall was painted long ago in sea-green and mustard, now peeling in big continents to the bare brick, and the colour glows wherever the hard light lands. The shadows are razor-edged and three storeys tall: the neck of an upright bass bends over the crown of the vault, a trumpet the length of a bus reaches across the bricks, a cymbal hangs overhead like a dark moon, and the singer's shadow stands among them as a great block of shoulders beside the thin line of a microphone. The people casting them look small and very sharply dressed in the pool of light on the cobbles: a very tall thin bass player in charcoal chalk-stripe, a stout older trumpeter in a tan three-piece, a young clarinettist in a narrow navy suit, a grey-haired woman at a small drum kit in a burgundy waistcoat, and at a period microphone the singer, a broad man in his forties in a deep plum double-breasted suit, bareheaded, with black hair going silver at one temple, a broken nose and heavy eyebrows, his lips together and his chest filling as he gathers breath. Off-centre at the far end, the vault opens through a tall arch onto the river, where a second arch beyond it frames a slot of night water full of gold and red light. Everything between the headlamp pool and that slot falls away into true brick-black. The image fills the whole frame, corner to corner.\n\nThanks.",
+ "source_id": "9ead4d8d-3c5b-48f4-a7e2-f41a46e6b599"
+}

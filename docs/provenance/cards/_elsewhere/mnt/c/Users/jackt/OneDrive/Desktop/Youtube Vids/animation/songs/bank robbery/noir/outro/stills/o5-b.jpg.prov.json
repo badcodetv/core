@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/stills/o5-b.jpg",
+ "made": "2026-10-30T15:30:55.082Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Night, close and straight on: the solid red porcelain-enamel disc of the sign fills most of the frame, glossy as wet paint, washed by a gooseneck lamp from above, the only red in the picture. At its edges, parts of the neighbouring cream letter troughs follow the reference letters exactly, their amber bulbs still burning; nothing is written anywhere. The black board around it mirrors the bulbs as rows of warm points, with a hard line of argon-blue tube light along the bottom edge. Drifting haze and fine rain catch the glow. Shadows fall to true black. Full frame edge to edge. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png",
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/sign-gold.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2a30fb0e-cc1e-4c3f-9eb1-2b4dd7eddc5a"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p05/03-b.jpg",
+ "made": "2026-10-30T15:17:48.236Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A long 85mm lens low across a roulette table, full front: a white-haired croupier of about sixty-eight, clean-shaven, pouched eyes, black dinner jacket, chest-up and sharp, the black lacquered wheel out of focus in the near foreground. Behind him an upstairs gaming room is breaking up in a raid: gamblers in evening clothes running away from camera, a card table on its side, chips bouncing, banknotes thrown high and filling the air under a crystal chandelier. An emerald shaded lamp hangs over the table and its light bounces off the baize onto his mouth and chin. Violet light pours through a tall window behind, edging the falling money. The lacquer rim mirrors the chandelier as a line of bright points. Thanks.",
+ "source_id": "a21437ee-3d80-492b-bc17-2eb3f81be4ec"
+}

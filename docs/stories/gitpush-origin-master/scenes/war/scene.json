@@ -3,7 +3,7 @@
   "scene": "war",
   "prefix": "wr",
   "title": "GPOM War",
-  "heading": "GitPush Origin Master <span class=\"tri\">\u25b2</span> the first battle between autonomous armies",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> the first battle between autonomous armies",
   "moodboard_intro": "Swindon today, no humans anywhere, never a hit on screen: drone swarms, empty motorways and roundabouts, the armies meeting, the wreckage after. Dashed cards are what's on the timeline now. Tap This, Maybe or No; leave a note per beat.",
   "storyboard_intro": "Frames in story order. Pick one still and one way to animate each.",
   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/war",
@@ -81,5 +81,10 @@
   },
   "boards": {
     "moodboard": "https://claude.ai/artifact/E3uJbc3dhd1bytChnDaj9i"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames"
   }
 }

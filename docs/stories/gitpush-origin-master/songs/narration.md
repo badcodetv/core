@@ -9,7 +9,7 @@ reorganised: 2026-09-24 (was narration-canonical.md)
 
 # GPOM narration — the live sheet
 
-**This file holds only what is true now:** the house settings, the house style, and for each scene
+**This file holds only what is true now:** GPOM's narration settings, GPOM's narration style, and for each scene
 its boxes and its pick. Read it top to bottom and edit the words by hand.
 
 **Everything else goes to [`narration-history.md`](./narration-history.md)**: rounds, takes that
@@ -27,9 +27,9 @@ Kai's scene numbers are the ones that count. The other names are listed so an ol
 | **3 — the downfall** | Three news stories: the chief executive chose it → the government applauded it → nobody was asked | cut 4, `bulletin.md`, `downfall-*` | **merged into `gpom-datacentre`** (Kai, 2026-09-29: one take, the music grows across both) | 🟡 words locked (t01); merged into scene 2 · ✅ picked d03 `9c278a6a` |
 | **4 — the simulation** | Five years later: the fake Swindon, the glitch, the wreck, the robot carries it to the drain and the kill bots | `scenes/simulation.md` | `gpom-sim-happy` · `gpom-sim-sad` · robot (Gemini TTS) · `gpom-sim-what` · `gpom-sim-bed2` | 🟡 sad + robot block 1 on `gpom-s01`; happy being re-worded; robot's long stretch drafted |
 
-## House settings — every new scene starts here
+## GPOM narration settings — every new GPOM scene starts here
 
-Ruled by Kai 2026-09-24: **scene 2's picked settings are the house default.** A scene that differs
+Ruled by Kai 2026-09-24: **scene 2's picked settings are GPOM's narration default.** A scene that differs
 says so in its own section.
 
 | Control | Value |
@@ -53,9 +53,9 @@ says so in its own section.
    with superseded words.
 5. 🔑 **A take 20s+ shorter than its twin** is the short-read symptom. Check it says every line before judging it.
 
-## House style — one template, four blanks
+## GPOM narration style — one template, four blanks
 
-Every scene's Style box is this sentence frame. **The fixed text is the house voice and the mix,
+Every scene's Style box is this sentence frame. **The fixed text is GPOM's narrator voice and the mix,
 so it never changes per scene.** Only the four `{{BLANKS}}` do. If you want to change a fixed
 sentence, change it here and in every scene, deliberately, in one go.
 
@@ -93,7 +93,7 @@ Exclude against this template and prints any sentence that differs.
 ## Scene 1 — the opening (the awakening + the push) · ✅ PICKED
 
 **Kai: *"This is the one."*** `kai-rework5-v6-w25`, 1:35, https://suno.com/song/82c4a1e2-6168-479c-9f49-41e0f93d9cae,
-picked 2026-09-19, revision Q words. Its settings differ from the house: **Style Influence 75,
+picked 2026-09-19, revision Q words. Its settings differ from GPOM's default: **Style Influence 75,
 Audio Influence 50**, weirdness 25, Duration 70.
 
 - **Recorded** (playback capture, no download spent): `clips/s00/narration/kai-rework5-v6-w25-82c4a1e2.wav`,
@@ -310,7 +310,7 @@ talk to it. Picture: [`scenes/simulation.md`](../scenes/simulation.md).
 | **Robot** | Gemini TTS, `Aoede`, Bristol | under her: `gpom-sim-bed2` ✅ `a6cf12f5` | block 1 ✅ `r2-b` on A6 (re-voice owed: "were killed") · why + bye ⬜ (daily voice cap) |
 | **What's going on?** `gpom-sim-what` | Suno, newsreader | — | ⬜ |
 
-**Settings:** the house settings above; Duration 20 (happy), 15 (sad), 10 (what), 90 (bed); weirdness 25.
+**Settings:** the GPOM narration settings above; Duration 20 (happy), 15 (sad), 10 (what), 90 (bed); weirdness 25.
 
 ### `gpom-sim-happy` — the fake world · ✅ picked (`c1690586`, r73 sincere take 2)
 
@@ -376,7 +376,7 @@ Stupid boring computers.
 [End]
 ```
 
-### The robot — Gemini TTS (`scripts/aistudio-tts.py --voice Aoede`), NOT Suno
+### The robot — Gemini TTS (`scripts/aistudio-tts.py --voice Aoede --profile <profile file>`), NOT Suno
 
 Suno's robot takes all came out American (r68), so she is Gemini TTS. Tags are Gemini's own
 (`[sarcastic]`, `[softly]`…), not Suno cues. 🔴 **10 takes a day** on the free tier (`docs/ai-studio/README.md`).

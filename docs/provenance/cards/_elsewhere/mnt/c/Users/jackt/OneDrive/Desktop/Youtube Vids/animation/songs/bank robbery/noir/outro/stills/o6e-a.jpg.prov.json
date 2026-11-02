@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/stills/o6e-a.jpg",
+ "made": "2026-10-30T15:34:44.182Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the condition of the sign: it is halfway through being shot up. Keep the camera, the street and the shapes and positions of the letters exactly the same. Half the amber bulbs are dead and the unlit troughs read as pale cream enamel. A level line of bright bullet holes crosses the black board at one height, each pouring a thin white beam from a lamp box behind into the haze. The red disc is cratered, ringed with dark iron. The blue tube is still lit. Below, the wet cobbles mirror it all in long broken streaks. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/sign-gold.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/sign-gold.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "0f5e7bb8-0b56-4f32-bc27-bfecf18446de"
+}

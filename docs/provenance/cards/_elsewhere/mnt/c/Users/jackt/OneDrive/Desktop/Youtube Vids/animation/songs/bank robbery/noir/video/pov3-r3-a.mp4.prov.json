@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov3-r3-a.mp4",
+ "made": "2026-10-30T13:34:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "flow_generate_video",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-pov3-a.jpg",
+ "why": "take a saved before the harvest timed out; take b lost",
+ "prompt": "One continuous shot, seen through the driver's eyes. [0-6s] The yellow car drives straight down the cobbles between the tram rails, steady, hands still on the wheel and gear knob. Warehouses and sea wall pass either side, unchanging. The red lights deep inside stay small. [6-8s] The tunnel mouth grows until its darkness fills the windscreen. No speech.\n\nThanks."
+}

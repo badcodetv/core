@@ -14,7 +14,8 @@ landing (usually there's a word doing the wrong job, or a missing word doing no 
 
 ## The three word-classes to layer, in order
 
-After you have the basic skeleton (genre, mood, instruments, vocals), upgrade a prompt in three
+After you have a first draft (whatever order the song wants — there is no fixed skeleton, see
+[`../same-song-traps.md`](../same-song-traps.md) trap 1), upgrade a prompt in three
 passes. This is a *procedure*, not a checklist:
 
 1. **Emotion pass** — replace the generic feeling word with a precise one.

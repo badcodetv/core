@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/outro/stills/o1-b.jpg",
+ "made": "2026-10-30T15:26:16.605Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Night, 1920s America, a wide empty street of wet black cobbles. Seen straight on from low down, a huge rooftop sign on a riveted steel frame fills the upper frame: a black porcelain-enamel board carrying the single word badcode. The letters follow the reference image exactly and nothing else is written anywhere. Each letter is a cream-enamelled sheet-metal trough packed with warm amber bulbs; the solid disc is glossy red enamel washed by gooseneck lamps, the only red in the picture. An argon-blue glass tube edges the board. A lamp box waits behind it. The cobbles mirror everything in long streaks. Thin haze, true black shadow, full frame edge to edge. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/c07d368c-eea6-496d-af67-23afcad2cc69/scratchpad/wordmark.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d90b72c5-d2a3-4932-b97c-34f2522a26a0"
+}

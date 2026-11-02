@@ -6,7 +6,7 @@ with timestamps (the skill's step 5, done on a moving head). Writes <strip>.json
 run with ~/.cache/badcode-lips/venv/bin/python"""
 import sys, json, cv2, numpy as np
 import os
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'bank-robbery'))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # lips.py lives beside this file
 import lips
 clip, out = sys.argv[1], sys.argv[2]
 face = sys.argv[sys.argv.index('--face') + 1] if '--face' in sys.argv else 'big'

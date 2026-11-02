@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A03-b.jpg",
+ "made": "2026-10-28T10:35:33.075Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. Concentric black and white rings ripple outward from the three coins dropping into his palm across the whole frame, bending the real picture like ripples on a pond, with one thin spiral of red running through them. Camera straight down over a cupped calloused palm, extremely close. A thin brown pay envelope tipped open over it: three small coins and one moth fall out into the hand. At the edge of frame, the baker's sweat-stained vest. Light: grey dawn at a back door, one warm lamp from above; wet cobbles below the hand catching the lamp. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6a80a6dd-b083-4a6e-bba0-a517585e8e43"
+}

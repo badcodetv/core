@@ -1,0 +1,432 @@
+{
+ "acts": [
+  {
+   "id": "v1",
+   "title": "Verse 1 (scenes 1\u201311)",
+   "beats": []
+  },
+  {
+   "id": "ch",
+   "title": "Choruses 1\u20132: the first drop (12\u201313)",
+   "beats": []
+  },
+  {
+   "id": "v2",
+   "title": "Verse 2: the distraction (14\u201321)",
+   "beats": []
+  },
+  {
+   "id": "raid",
+   "title": "Choruses 3\u20134: the raid (22\u201323)",
+   "beats": []
+  },
+  {
+   "id": "v3",
+   "title": "Verse 3: the cost (24\u201330)",
+   "beats": []
+  },
+  {
+   "id": "end",
+   "title": "The turn (31\u201333)",
+   "beats": []
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "v1",
+   "title": "01 (Intro) Robbery!",
+   "look": "trails",
+   "line": "(Intro) Robbery!",
+   "stills": [
+    "A01-a",
+    "A01-b"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "v1",
+   "title": "02 They say, ya can't make money from a tree / each day, make h",
+   "look": "engrave",
+   "line": "They say, ya can't make money from a tree / each day, make hay",
+   "stills": [
+    "B02-a",
+    "B02-b"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "v1",
+   "title": "03 work and get paid though\u2026 but where does it go? nobody knows",
+   "look": "rings",
+   "line": "work and get paid though\u2026 but where does it go? nobody knows!",
+   "stills": [
+    "A03-b",
+    "A03-a"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "v1",
+   "title": "04 means of production means a reduction / land-lords needing",
+   "look": "infinite",
+   "line": "means of production means a reduction / land-lords needing",
+   "stills": [
+    "A04-a",
+    "A04-b"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "v1",
+   "title": "05 quantitative easing,",
+   "look": "noir",
+   "line": "quantitative easing,",
+   "stills": [
+    "B05-a",
+    "B05-b"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "v1",
+   "title": "06 grandma FREEEEEEEZING!",
+   "look": "heat",
+   "line": "grandma FREEEEEEEZING!",
+   "stills": [
+    "B06-a",
+    "B06-b"
+   ],
+   "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "v1",
+   "title": "07 stimulus checks are next. Get wrecked!",
+   "look": "dots",
+   "line": "stimulus checks are next. Get wrecked!",
+   "stills": [
+    "B07-b",
+    "B07-a"
+   ],
+   "anim": 7
+  },
+  {
+   "n": 8,
+   "act": "v1",
+   "title": "08 rent seeking?\u2026 I'm just about eating / sorry, did I interrup",
+   "look": "prism",
+   "line": "rent seeking?\u2026 I'm just about eating / sorry, did I interrupt your meeting?",
+   "stills": [
+    "B08-a",
+    "B08-b"
+   ],
+   "anim": 8
+  },
+  {
+   "n": 9,
+   "act": "v1",
+   "title": "09 remember kids, the Fed is not your friend! / it prints all t",
+   "look": "liquid",
+   "line": "remember kids, the Fed is not your friend! / it prints all the dollars\u2026",
+   "stills": [
+    "A09-b",
+    "A09-a"
+   ],
+   "anim": 9
+  },
+  {
+   "n": 10,
+   "act": "v1",
+   "title": "10 this fiat system is insistent / on debts existence",
+   "look": "double",
+   "line": "this fiat system is insistent / on debts existence",
+   "stills": [
+    "A10-a",
+    "A10-b"
+   ],
+   "anim": 10
+  },
+  {
+   "n": 11,
+   "act": "v1",
+   "title": "11 don't be hating on the credit rating / or have resistance to",
+   "look": "melt",
+   "line": "don't be hating on the credit rating / or have resistance to the facts I'm stating",
+   "stills": [
+    "B11-b",
+    "B11-a"
+   ],
+   "anim": 11
+  },
+  {
+   "n": 12,
+   "act": "ch",
+   "title": "12 Chorus 1: Robbery, robbery! Call the police\u2026 Debasement\u2026 in ",
+   "look": "kaleido",
+   "line": "Chorus 1: Robbery, robbery! Call the police\u2026 Debasement\u2026 in da basement!",
+   "stills": [
+    "B12-a",
+    "B12-b"
+   ],
+   "anim": 12
+  },
+  {
+   "n": 13,
+   "act": "ch",
+   "title": "13 Chorus 2 (same words)",
+   "look": "spy",
+   "line": "Chorus 2 (same words)",
+   "stills": [
+    "B13-b",
+    "B13-a"
+   ],
+   "anim": 13
+  },
+  {
+   "n": 14,
+   "act": "v2",
+   "title": "14 Stacks and stacks of elastic cash / distracted by a dispraxi",
+   "look": "trails",
+   "line": "Stacks and stacks of elastic cash / distracted by a dispraxic flash",
+   "stills": [
+    "B14-b",
+    "B14-a"
+   ],
+   "anim": 14
+  },
+  {
+   "n": 15,
+   "act": "v2",
+   "title": "15 mob, angry at their shitty little job / the right and the le",
+   "look": "trails",
+   "line": "mob, angry at their shitty little job / the right and the left both witness the theft",
+   "stills": [
+    "B15r-a",
+    "B15-a"
+   ],
+   "anim": 15
+  },
+  {
+   "n": 16,
+   "act": "v2",
+   "title": "16 blaming each other is a sick little cover / institutional, d",
+   "look": "mirror",
+   "line": "blaming each other is a sick little cover / institutional, dilutional, the usual",
+   "stills": [
+    "A16-b",
+    "A16-a"
+   ],
+   "anim": 16
+  },
+  {
+   "n": 17,
+   "act": "v2",
+   "title": "17 distraction IS the attraction / the intention is tension bet",
+   "look": "liquid",
+   "line": "distraction IS the attraction / the intention is tension between the factions",
+   "stills": [
+    "B17-b",
+    "B17-a"
+   ],
+   "anim": 17
+  },
+  {
+   "n": 18,
+   "act": "v2",
+   "title": "18 divide and conquer, just look at the hand / It's not ya stan",
+   "look": "dots",
+   "line": "divide and conquer, just look at the hand / It's not ya standard, propaganda",
+   "stills": [
+    "B18-b",
+    "B18-a"
+   ],
+   "anim": 18
+  },
+  {
+   "n": 19,
+   "act": "v2",
+   "title": "19 it is, state, level, manipulation / it is the devil, with a ",
+   "look": "rings",
+   "line": "it is, state, level, manipulation / it is the devil, with a radio station",
+   "stills": [
+    "A19-b",
+    "A19-a"
+   ],
+   "anim": 19
+  },
+  {
+   "n": 20,
+   "act": "v2",
+   "title": "20 stack up the vaults like a wheelbarrow / risk of default is ",
+   "look": "engrave",
+   "line": "stack up the vaults like a wheelbarrow / risk of default is really rather narrow",
+   "stills": [
+    "B20-a",
+    "B20-b"
+   ],
+   "anim": 20
+  },
+  {
+   "n": 21,
+   "act": "v2",
+   "title": "21 Biggie said waaaay back in ninety seven / don't get high off",
+   "look": "melt",
+   "line": "Biggie said waaaay back in ninety seven / don't get high off your own supply",
+   "stills": [
+    "B21-a",
+    "B21-b"
+   ],
+   "anim": 21
+  },
+  {
+   "n": 22,
+   "act": "raid",
+   "title": "22 Chorus 3: Robbery, robbery! Call the police\u2026",
+   "look": "noir",
+   "line": "Chorus 3: Robbery, robbery! Call the police\u2026",
+   "stills": [
+    "B22-a",
+    "B22-b"
+   ],
+   "anim": 22
+  },
+  {
+   "n": 23,
+   "act": "raid",
+   "title": "23 Chorus 4 (same words)",
+   "look": "double",
+   "line": "Chorus 4 (same words)",
+   "stills": [
+    "B23-b",
+    "B23-a"
+   ],
+   "anim": 23
+  },
+  {
+   "n": 24,
+   "act": "v3",
+   "title": "24 (Break: riff and stomps)",
+   "look": "heat",
+   "line": "(Break: riff and stomps)",
+   "stills": [
+    "B24-a",
+    "B24-b"
+   ],
+   "anim": 24
+  },
+  {
+   "n": 25,
+   "act": "v3",
+   "title": "25 You know the real star is Pablo Escobar, / who has elastic b",
+   "look": "kaleido",
+   "line": "You know the real star is Pablo Escobar, / who has elastic bands not plastic hands",
+   "stills": [
+    "A25-b",
+    "A25-a"
+   ],
+   "anim": 25
+  },
+  {
+   "n": 26,
+   "act": "v3",
+   "title": "26 stacking up the cash by the grands / standard plans are for ",
+   "look": "spray",
+   "line": "stacking up the cash by the grands / standard plans are for the working man",
+   "stills": [
+    "B26-a",
+    "B26-b"
+   ],
+   "anim": 26
+  },
+  {
+   "n": 27,
+   "act": "v3",
+   "title": "27 and this right here is a next level scam / ill gotten gains,",
+   "look": "liquid",
+   "line": "and this right here is a next level scam / ill gotten gains, no need to explain",
+   "stills": [
+    "B27-b",
+    "B27-a"
+   ],
+   "anim": 27
+  },
+  {
+   "n": 28,
+   "act": "v3",
+   "title": "28 \"bail\" and \"out\", will never mean the same / own the printer",
+   "look": "heat",
+   "line": "\"bail\" and \"out\", will never mean the same / own the printer and you don't fear winter",
+   "stills": [
+    "B28-b",
+    "B28-a"
+   ],
+   "anim": 28
+  },
+  {
+   "n": 29,
+   "act": "v3",
+   "title": "29 crime is asset inflation, passive creation; / of a wealth ga",
+   "look": "infinite",
+   "line": "crime is asset inflation, passive creation; / of a wealth gap that drives the situation",
+   "stills": [
+    "B29-b",
+    "B29-a"
+   ],
+   "anim": 29
+  },
+  {
+   "n": 30,
+   "act": "v3",
+   "title": "30 working people get paid in money, so it's not very funny / w",
+   "look": "spray",
+   "line": "working people get paid in money, so it's not very funny / when you print more\u2026",
+   "stills": [
+    "A30-b",
+    "A30-a"
+   ],
+   "anim": 30
+  },
+  {
+   "n": 31,
+   "act": "end",
+   "title": "31 hungry people, feed a revolution, / then it's retribution, p",
+   "look": "double",
+   "line": "hungry people, feed a revolution, / then it's retribution, perhaps some execution",
+   "stills": [
+    "A31-b",
+    "A31-a"
+   ],
+   "anim": 31
+  },
+  {
+   "n": 32,
+   "act": "end",
+   "title": "32 it's time to give, not just to take / but for heaven's sake,",
+   "look": "rings",
+   "line": "it's time to give, not just to take / but for heaven's sake, don't just eat cake",
+   "stills": [
+    "B32-b",
+    "B32-a"
+   ],
+   "anim": 32
+  },
+  {
+   "n": 33,
+   "act": "end",
+   "title": "33 (Outro) Robbery!",
+   "look": "none",
+   "line": "(Outro) Robbery!",
+   "stills": [
+    "A33-a",
+    "A33-b"
+   ],
+   "anim": 33
+  }
+ ]
+}

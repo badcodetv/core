@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr1-w1-b.jpg",
+ "made": "2026-10-29T15:32:19.245Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A real film frame from a 1929 gangster picture, shot on 35mm Kodak 5219 with an anamorphic lens. It is a night getaway in the rain. The camera is clamped low on the front of the running board of a black 1928 Packard sedan and looks back along the car's left side toward the rear. It sits a few inches above the running board, with a slight Dutch tilt, like an odd, uneasy David Lynch angle. The long curved black body of the car runs from the near edge of the frame toward the back of the car on the right. The paint is soaked with rain, and there are mud splashes and small dents in the chrome trim. Out of the rear side window, a man's arm in a worn black leather glove and a wet wool overcoat sleeve pushes a Thompson submachine gun with a round drum magazine. Its muzzle points straight up at the night sky and away from everyone. We can't see his face. Far behind on the shiny cobblestone street, a single 1920s police car follows with one round red lamp on its roof, blurred by the shallow focus. Most of the colour comes from reflections. The curved black paint and chrome act like a fun-house mirror for the city going past: brick buildings, shop windows lit by warm bare bulbs, neon tubes bent into abstract loops and zigzags with no letters, and the red police lamp. In the reflection they stretch and swirl into liquid ribbons of magenta, emerald, cyan and amber, like paint marbled on water. The mist thrown up by the wheels lights up in coloured haze, like spray paint in the air. The colours are pushed and dreamlike, but every light comes from a real lamp, bulb, neon tube or reflection in the scene. The mood is film noir with deep black shadows. Real lens imperfections: rain beads on the lens, soft halation glow around the brightest lights, anamorphic oval bokeh, motion blur only on the passing street, a fine film grain, and a hard-sharp car that is completely still in the frame. The shop windows and signs have no readable words, letters or numbers anywhere, the licence plate is covered in mud, and there is no text, no logo, no watermark, no glossy CGI look, and no smooth plastic surfaces.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b4b56e1c-3fc9-454d-a139-761946b55c88"
+}

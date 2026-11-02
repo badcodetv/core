@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p03/00-a.jpg",
+ "made": "2026-10-30T15:14:50.884Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A weathered, clean-shaven helmsman of about 60 with deep creases and a flat wool cap grips a spoked wheel low at his chest, in the open cockpit of a long 1920s rum-runner's speedboat racing dark through night fog. The lens is mounted on the foredeck, 35mm, slightly low, his face three-quarter and filling almost half the frame height. A small amber instrument lamp lights his mouth and jaw. Behind him a patrol cutter's searchlight drives an ice-blue shaft through the fog, spray burning white inside it. The varnished mahogany deck between him and the lens mirrors the amber lamp and the blue beam as long wet streaks. Everything else falls to true black. Thanks.",
+ "source_id": "11bea87a-86cd-4912-9397-ac7d873e178d"
+}

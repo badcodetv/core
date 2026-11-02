@@ -376,7 +376,7 @@ image alone, then **save the last frame and start the next clip from it**
 **What you give up, and how to get it back.** With no end frame the destination is *invented* —
 our two takes produced a flat plate and a riveted capsule, neither the satellite we had designed,
 and both drifted from near-black to high-key silver. So the prompt has to carry the whole
-destination in words, including the register, because no image is carrying it any more. Budget
+destination in words, including the story's look (GPOM's near-black, in this test), because no image is carrying it any more. Budget
 takes: you are picking a destination, not specifying one.
 
 **Why it breaks worst on a big scale change.** Google has never published Frames-to-Video's

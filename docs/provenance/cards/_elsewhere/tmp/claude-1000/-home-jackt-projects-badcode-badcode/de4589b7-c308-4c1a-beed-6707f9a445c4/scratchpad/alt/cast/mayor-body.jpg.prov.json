@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/mayor-body.jpg",
+ "made": "2026-10-28T11:40:02.048Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s full-length studio photograph on grainy colour film, the whole figure from hat to shoes, standing facing the camera, against a plain mid-grey backdrop, lit by one soft key light from the left. A very tall skinny man in his sixties with narrow shoulders and long thin legs, a long narrow face, hollow cheeks and a pencil-thin grey moustache, in a black bowler hat, a black three-piece suit with a wing collar and dark tie, a heavy gold mayoral chain of linked medallions round his neck, and polished black shoes. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "daa5e629-5591-4656-b350-e1f25f3aa56c"
+}

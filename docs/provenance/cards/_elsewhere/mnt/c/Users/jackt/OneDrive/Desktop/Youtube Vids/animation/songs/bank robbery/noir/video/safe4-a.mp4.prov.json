@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe4-a.mp4",
+ "made": "2026-10-30T12:56:16.035Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Inside the rocking car, the only thing that changes is the light. Through the cracked oval rear window, the two headlamps slowly grow brighter and nearer, drifting a little from side to side. The blind's tassel sways with the road. The man stays frozen, his head and gloved hands unmoving, his mask unchanged. One continuous shot. Finally the window burns white and flares across the lens.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-safe4-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-safe4-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "adce2e41-e101-4776-8cdc-0b5c1a1a1132"
+}

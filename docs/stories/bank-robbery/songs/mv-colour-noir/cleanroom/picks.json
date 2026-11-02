@@ -1,0 +1,992 @@
+{
+ "title": "Colour Noir Stills",
+ "eyebrow": "Bank Robbery MV · colourful noir · clean room",
+ "heading": "Colourful noir: a bank of cool shots",
+ "intro": "Internet research and separate writers, run exactly as written on Nano Banana 2.1, two takes per shot. Round 2 writers saw only their own scene from round 1, plus the mask facts from Money For Something. No story yet and no lip sync. Click any image to see it large. Pick per shot and leave notes; skip anything you don't like.",
+ "sections": [
+  {
+   "h": "Round 4: replacements for the refused shots",
+   "lede": "The poker table and the riverboat, plainer so Flow should animate them. Skip them if you'd rather drop these.",
+   "groups": [
+    {
+     "slot": "r4-den3",
+     "title": "den3",
+     "line": "A level, unposed card game with three visible men and one line of smoke gives the engine nothing to read as staged or sinister, and only the smoke needs to move.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r4-den3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r4-den3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r4-mask4",
+     "title": "mask4",
+     "line": "With the crowd, the undressed men, the raised hands, the money and the falling table gone, this is one still figure in a costume on a moored boat, and it can move with nothing more than a slow rock of the hull and the water's shimmer.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r4-mask4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r4-mask4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 3: new start frames from your clip notes",
+   "lede": "Simple frames that can move plainly, and safe1 with the logo moved. Pick the ones you want animated.",
+   "groups": [
+    {
+     "slot": "r3-pov1",
+     "title": "pov1",
+     "line": "With one straight road, one lit building and nothing loose in frame, the only thing the clip has to do is drive forward, which removes every object that morphed last time.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r3-pov1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r3-pov1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-pov3",
+     "title": "pov3",
+     "line": "The level car, straight rails and fixed tunnel keep it grounded with no jump to fake, and the black arch gives an 8-second drive a physical dark to end in for a cut.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r3-pov3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r3-pov3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-rods1",
+     "title": "rods1",
+     "line": "Two cars on one parallel heading, held level by a pacing camera, can simply keep running in place while the background slides, leaving nothing to reverse, jump or collide.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r3-rods1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r3-rods1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-rods4",
+     "title": "rods4",
+     "line": "Two level cars driving straight up a flat floor with one still strip of water and empty banks gives one plain event, with no wall-riding, spray or onlookers to exaggerate or morph.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r3-rods4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r3-rods4-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-safe3",
+     "title": "safe3",
+     "line": "The canal and bridge are gone and the road is now a pale, kerbed, lamp-lit street, which leaves nothing dark and wet for a car to appear to drive on, and the car, chain and spark line all sit on one straight axis so the only motion is forward.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r3-safe3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r3-safe3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-safe1",
+     "title": "safe1",
+     "line": "The scene stays word for word apart from the period wording on the car, while the head now faces the camera and the triangle is anchored to his left eye and a clock position on a much larger ring, which is where it sits on the approved jeweller's-shop mask.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r3-safe1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r3-safe1-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 2: your notes",
+   "lede": "The real balaclavas with the logo over the eye, in different 1920s wool colours, and a male singer throughout. Pick the ones you want animated.",
+   "groups": [
+    {
+     "slot": "r2-mask1",
+     "title": "mask1",
+     "line": "Keeps the shop, sun and colours but moves the logo from forehead to the over-the-eye position, using a stated left-eye-on-picture-right anchor, a one-piece filled felt patch and bare knit at the centre to fight both the drift and the outline faults.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-mask1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-mask1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-mask3",
+     "title": "mask3",
+     "line": "Holds the cutting, the two lights and the near man's orange while giving every man in the chain his own period dye tied to his place in the line, with the logo facing us square on over the eye and black stitching to lift the red off the orange.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-mask3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-mask3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-mask4",
+     "title": "mask4",
+     "line": "Keeps the river, steamer and dusk but turns the lounging man's head to the lens so the over-the-eye logo can actually be seen, lets the lamp light it, and dyes the deck figures their own colours instead of black.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-mask4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-mask4-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-safe1",
+     "title": "safe1",
+     "line": "Keeps the alley, angle and yellow-red-green colour Jack liked, and brings the man further forward so the marine-blue mask's ring and solid off-centre felt triangle are large enough to read as a period hand-made piece.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-safe1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-safe1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-safe4",
+     "title": "safe4",
+     "line": "Keeps the plum interior and the safe sparking through the oval window, and turns the man's head toward the camera so the silver-grey mask's ring and felt triangle catch the orange bounce light and can be seen.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-safe4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-safe4-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-den1",
+     "title": "den1",
+     "line": "The singer becomes a heavy, broken-nosed man whose garnet suit takes over the gown's colour, so the red mass at the microphone that Jack liked stays where it was.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-den1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-den1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-den4",
+     "title": "den4",
+     "line": "Only the foreground figure changes, to the same male singer in the same green velvet, and the furnace and hidden door stay in frame as they worked in the picked take.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-den4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-den4-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-bridge1",
+     "title": "bridge1",
+     "line": "The tiny figure at the microphone becomes the broad male singer, and the city's lights are now plain shapes of colour so the engine has no lettering to print.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-bridge1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-bridge1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-bridge2",
+     "title": "bridge2",
+     "line": "The same low slipway, backlit band and red and green river stay exactly as Jack liked them, while the singer becomes a man described by jaw, neck, nose and tailoring so nothing pulls the engine back to the last round's woman.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-bridge2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-bridge2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-bridge3",
+     "title": "bridge3",
+     "line": "Jack had no note on this scene, so the vault, the giant shadows and the peeling sea-green and mustard wall hold, and the singer's change to a man also reshapes his shadow on the wall into a block of shoulders.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-bridge3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-bridge3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-bridge4",
+     "title": "bridge4",
+     "line": "The half-cut headlamp, the raking light, the breath and the coloured blur on the river all stay, and this close the broken nose, brow, stubble and big ringed hand carry the man Jack asked for.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/r2-bridge4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/r2-bridge4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The den and its band",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "den1",
+     "title": "den1",
+     "line": "Standing inside the band looking out puts the viewer among the musicians, and it lets the footlights carve the five figures out of a room full of painted colour.  ·  Way out: The drummer's shoulder leans across the lens and wipes the frame to black, and the next shot opens as another dark shape slides clear of the camera.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/den1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/den1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "den2",
+     "title": "den2",
+     "line": "A real Prohibition trick, shelves that dumped the stock down a chute when the law came in, gives a stopped-time image of coloured glass that belongs to no other kind of bar.  ·  Way out: Follow the last bottle down: it drops into the black hatch, the screen goes dark for a beat, and the next shot opens on a round shape of the same size, such as a headlamp or a hanging lamp.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/den2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/den2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "den3",
+     "title": "den3",
+     "line": "Looking directly down turns a mob card game into an almost abstract wheel of coloured hats, a vantage that ordinary gangster pictures rarely use.  ·  Way out: The dark lamp rim swings through the lens as someone knocks it, and the moving shadow carries the cut into the next shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/den3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/den3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "den4",
+     "title": "den4",
+     "line": "The band waiting in a furnace-lit tunnel with the party a blade of colour behind a sliding brick wall shows the den's secret plumbing and gives these five people a tired, human moment.  ·  Way out: A stagehand crosses very close to the lens, his dark coat wiping the frame, and the next shot opens as another figure or a passing car clears the camera.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/den4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/den4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The band under the bridge",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "bridge1",
+     "title": "bridge1",
+     "line": "Five people and a pinprick of headlamp under an enormous bridge gives the band the scale of a legend and shows the whole coloured city doing its reflecting at once.  ·  Way out: The tug's funnel slides across the lens as the boat swings on its mooring, wiping to black and into any shot that opens on a dark shape leaving the frame.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/bridge1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/bridge1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "bridge2",
+     "title": "bridge2",
+     "line": "Shooting into the headlamps from water level doubles the band in the wet stone and turns the backlight into the whole picture.  ·  Way out: A ripple rises over the lens and the frame dissolves in black water, cutting on the splash to the next shot's wet road or spray.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/bridge2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/bridge2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "bridge3",
+     "title": "bridge3",
+     "line": "The band's shadows become the monster in the room, a giant dark mural in a coloured tunnel that nobody expects from five people and a couple of cars.  ·  Way out: The man's shoulder steps across the lens and the shot cuts out of his dark coat into the next picture.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/bridge3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/bridge3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "bridge4",
+     "title": "bridge4",
+     "line": "After the wide shots this is one face and one lamp, and the breath lit in the beam tells you the song without a single open mouth.  ·  Way out: A headlamp clicks off and her face drops to black, or a match on the round headlamp carries the cut into the headlight of the next car.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/bridge4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/bridge4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Car chases",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "chase1",
+     "title": "chase1",
+     "line": "The camera is locked to one car and chasing another, so the only sharp things are the two cars and the speed is in everything else.  ·  Way out: The next iron pillar passes inches from the lens and blacks out the frame, and the cut happens inside that black.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/chase1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/chase1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "chase2",
+     "title": "chase2",
+     "line": "Most chases sit on the bumper, so this one makes the city the giant and the crime a yellow speck that you still can't look away from.  ·  Way out: Whip pan down and along the line of the water tank's leg, landing at street level on a shot travelling in the same direction as the roadster's slide.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/chase2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/chase2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "chase3",
+     "title": "chase3",
+     "line": "A real rum-running route nobody expects to see, it puts a whole neon city in the reflection with no rain and no street.  ·  Way out: The sidecar's headlamp swings straight into the lens and flares the frame white, and the cut lands on that flare into the next shot's brightest light.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/chase3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/chase3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "chase4",
+     "title": "chase4",
+     "line": "It swaps night for hard morning sun and turns the chase into a frame within a frame, with the passenger's view of what the car has just wrecked.  ·  Way out: The sedan dives under a stone railway arch, the oval window drops to black, and the cut comes on that black.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/chase4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/chase4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The first-person driver",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "pov1",
+     "title": "pov1",
+     "line": "Motion and danger coming straight at the viewer's own hands give the thread its pure chase hit, with the colour held in painted steel and shopfronts instead of coloured light.  ·  Way out: The next green girder passes close to the lens and blacks out the whole frame, and the cut happens inside that dark.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/pov1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/pov1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "pov2",
+     "title": "pov2",
+     "line": "The one quiet frame in the thread, it gets its tension from a policeman two feet away who hasn't looked round yet.  ·  Way out: The crossroads light changes and the driver's eyes snap forward, so a fast whip pan right from the policeman's profile blurs across the windscreen pillar and lands in the next shot's movement.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/pov2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/pov2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "pov3",
+     "title": "pov3",
+     "line": "This is the big, stop-and-look scale shot, the one frame that leaves the streets for open sky, drop and skyline in a colour nobody expects from a getaway.  ·  Way out: The nose keeps dropping until the dark steel deck fills the frame and the cut lands on the slam of the car hitting it, matched to a hard jolt at the start of the next shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/pov3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/pov3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "pov4",
+     "title": "pov4",
+     "line": "The only daylight in the thread, and the only time we look back, it plays the chase as comic chaos with a whole street's colour falling out of the sky.  ·  Way out: The big crimson sheet falls across the lens and fills the frame with red cloth, and the cut comes out of that cloth on a red shape or light in the next shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/pov4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/pov4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The dragged safe",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "safe1",
+     "title": "safe1",
+     "line": "Everyone imagines the dragging, but the frozen second of a wall giving birth to a safe is the funniest and most violent image of the lot, and it has all the light it needs from a tail lamp and one bulb.  ·  Way out: The chain snaps out of frame to the right as the safe is yanked away and the camera whip pans with it, landing on the next moving shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/safe1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/safe1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "safe2",
+     "title": "safe2",
+     "line": "Giving the safe the foreground and the car the distance makes the loot the monster of the shot, and a shadow thrown by unseen police headlamps puts the cops in the picture without showing them.  ·  Way out: The safe bounces up and fills the lens with dark green iron, and the next shot starts on a dark shape of similar size moving out of the frame.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/safe2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/safe2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "safe3",
+     "title": "safe3",
+     "line": "At this scale the chase turns into a single line of light drawn across a whole sleeping city, which is the rare picture of it that nobody would expect after a run of close-ups.  ·  Way out: A chimney stack on a nearer rooftop slides across the lens as the camera drifts along the catwalk, and the cut hides inside that passing black.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/safe3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/safe3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "safe4",
+     "title": "safe4",
+     "line": "The most thrilling view of a dragged safe may be from the person who just realised it is still attached, framed like a small bright cinema screen in a very dark room.  ·  Way out: The passenger's dark shoulder swings across the lens as the car lurches, wiping the frame to black for a clean cut to anywhere.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/safe4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/safe4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Balaclava robberies",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "mask1",
+     "title": "mask1",
+     "line": "A dangerous man trying on a tiara while his victim politely holds the mirror is a joke you can read in one second, in full daylight, which nobody expects from a noir.  ·  Way out: The robber snaps the hand mirror aside across the lens so its flash of sun whites out the frame, matching to a headlamp or a bright window in the next shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/mask1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/mask1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "mask2",
+     "title": "mask2",
+     "line": "The straight-down view turns a hold-up into a piece of choreography, a colour wheel of frightened rich people with a man stripping the ceiling in the foreground.  ·  Way out: A big soft crystal drop swings across the lens and fills the frame, and the cut comes on its passing, into any shot opening on a round light or a wheel.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/mask2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/mask2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "mask3",
+     "title": "mask3",
+     "line": "Snow, a pink flare and a bucket-brigade of sacks give the compilation an epic outdoor scale, and the one man stopping to look at us makes it cheeky rather than grim.  ·  Way out: A rolling bank of the locomotive's steam blows across the lens to white, and the cut happens inside it, coming out through smoke, fog or dust in the next shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/mask3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/mask3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "mask4",
+     "title": "mask4",
+     "line": "Stealing a whole roulette table by boat while half-dressed gamblers watch at dusk is pure swagger, and the water-level vantage gives the broken gold reflections their best chance of looking real.  ·  Way out: The camera dips under the wake's curl so a dark wall of water crosses the lens, and the cut comes out on any shot that starts from darkness, a tunnel or a passing wall.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/mask4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/mask4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Prohibition cities",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "city1",
+     "title": "city1",
+     "line": "From water level the river becomes a mirror for a skyscraper lit like a stage set, and the bridge overhead gives a slow pan something huge to slide past.  ·  Way out: As the camera drifts sideways the oxblood girder passes the lens and blacks out the frame, and the cut happens on that dark.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/city1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/city1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "city2",
+     "title": "city2",
+     "line": "An industrial furnace is the prettiest light in the country here, and its great width across a snow-lit valley gives the pan a mile of fire to travel along.  ·  Way out: The crimson funicular car rolls forward past the lens on its cable and wipes the whole frame with red paint and brass, and the next shot begins as it clears.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/city2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/city2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "city3",
+     "title": "city3",
+     "line": "A million bulbs doubled in a sheet of seawater looks invented but is simple physics, and the long unbroken horizon is made for a slow sideways pan.  ·  Way out: Hold the brightest cluster of bulbs on the tallest tower and match cut to a pair of headlamps sitting in that exact spot of the frame.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/city3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/city3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "city4",
+     "title": "city4",
+     "line": "Seeing the sign from behind puts the viewer somewhere nobody normally stands, and a completely dry street proves the colour comes from the city rather than from weather.  ·  Way out: A hard whip pan left along the back of the sign turns its rows of bulbs into yellow streaks, and the cut hides in the blur.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/city4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/city4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Hot rod racing",
+   "lede": "Pick the ones you like. Leave a note on anything that needs another go.",
+   "groups": [
+    {
+     "slot": "rods1",
+     "title": "rods1",
+     "line": "A real panning blur on one bright, filthy car with its wheels fighting the ground makes speed a physical fact, in hard daylight colour that the night shots of the film will not have.  ·  Way out: The wall of dust rolls across the lens to full white, and the next shot opens as its camera clears a cloud of steam, smoke or fog.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/rods1-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/rods1-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "rods2",
+     "title": "rods2",
+     "line": "From this far away the whole outlaw meet becomes a single stripe of light in the dark, a shape nobody expects from a car race, and the crowd tells you how illegal and how loved it was.  ·  Way out: A hard whip pan down off the distant cars along the rusted girder, landing on a matching vertical in the next shot, such as a lamp post, pillar or exhaust stack.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/rods2-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/rods2-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "rods3",
+     "title": "rods3",
+     "line": "A chasing car seen from the car it is chasing puts the viewer in the danger, and the sparks off a streetcar rail are a detail no default car picture would ever think of.  ·  Way out: The dead-and-live headlamp flares as the green car lunges at the lens, and the white flare matches into a bright round lamp in the next shot.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/rods3-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/rods3-b.jpg",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "rods4",
+     "title": "rods4",
+     "line": "Hot rodders in a concrete flood channel have a period precedent (an article title on the L.A. River, seen in search and not read), and the stacked arches with a car riding the wall give the frame a geometry and a sky that look like nothing else in a car sequence.  ·  Way out: The turquoise car reaches the lens and its dark flank passes at arm's length, a real wipe that opens on the next shot as the car clears frame.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "img/rods4-a.jpg",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "img/rods4-b.jpg",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -220,7 +220,7 @@ master`. *Skin: Story. This is also the [homepage](#the-homepage-is-the-prologue
 to `master`, no review. The optimisers take the wheel; we hand over our choices because, in a world
 we believe is only material, optimisation looks like wisdom. Life gets frictionless and a little
 dead; "nothing I do matters" becomes the mood. **The [EP1](./ep1.md) nodes live here.** *Skin:
-documentary-real (close and ordinary, per house style).*
+documentary-real (close and ordinary, per GPOM's PEOPLE register in [`look.md`](./look.md)).*
 
 ### Act 2 — The Collapse *(2034)*
 *Job: consequence made real; stakes; the AI ascends.* It goes South — drones and robot dogs that
@@ -323,8 +323,8 @@ the homepage must serve.)*
 
 ## Image direction — the register to resolve
 
-The house style ([`../../storytelling.md`](../../storytelling.md)) is **hyper-realistic documentary
-photography** — right for the **nodes** (Act 1, close and ordinary). But the **frame** (Acts 3–6) *is*
+GPOM's PEOPLE register ([`look.md`](./look.md); once written up as a BadCode-wide house style in
+`storytelling.md`, retired 2026-10-28) is **hyper-realistic documentary photography** — right for the **nodes** (Act 1, close and ordinary). But the **frame** (Acts 3–6) *is*
 science fiction — an AI alone on an empty Earth, the vault, the revert. Likely resolution: nodes stay
 documentary-real; the frame earns a distinct cosmic register, and the *contrast* does dramatic work
 (close human mistakes nested inside a vast cold frame). **Open thread** — settle before building.
@@ -406,7 +406,7 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   order and on what is deferred, parked or unfired.
 - [`scenes/`](./scenes/) — the **as-built plates** and their exact prompts, plus the build/grade
   scripts that made them.
-- [`songs/narration.md`](./songs/narration.md) — the **live narration**: house settings, house style,
+- [`songs/narration.md`](./songs/narration.md) — the **live narration**: GPOM narration settings and style,
   and each scene's words, boxes and picked take. Rounds are in
   [`songs/narration-history.md`](./songs/narration-history.md); the v5.5-era sheet
   ([`songs/archive/narration-v5.5.md`](./songs/archive/narration-v5.5.md)) keeps the per-cut tables and the bank (§6).
@@ -460,7 +460,7 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
 Related but no longer a folder: **the GPOM Short** — the 16-panel condensed teaser of this
 arc, **built & live at `/comics/gpom-short`**. Its story folder (`docs/stories/gpom-short/`)
 was deleted 2026-08-06 to keep this folder the single canon; the panel records live in git
-history, and its panel 1 became the brand register anchor at
+history, and its panel 1 became GPOM's register anchor (once called the brand register) at
 [`docs/images/register-anchor.md`](../../images/register-anchor.md). Two of its open threads
 fold back here: the Carrier's pinned look (wiry ~60, self-cut grey hair, navy wool jumper
 hand-darned in slightly-wrong green, glasses on a braided cord) and the COSMIC register it

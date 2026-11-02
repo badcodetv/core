@@ -13,7 +13,6 @@ blade of light, LED constellations.
 Provenance: this was panel 1 of the GPOM Short comic (`docs/stories/gpom-short/`
 — story folder deleted 2026-08-06; the comic itself is still live at
 `/comics/gpom-short`, and the full panel records live on in git history).
-Relocated here because the anchor is brand infrastructure, not story canon.
 
 **Scene (as authored for the comic):** Cold open. Monumental dark server hall,
 one thin vertical line of cool light — the backdrop for the species' commit log

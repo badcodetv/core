@@ -51,7 +51,7 @@ on 1 Oct floated spoken word, medieval or a bar song; both liked the bar song. N
 ### Documentary narration — the Suno route (EXPLORING, nothing generated)
 
 [`songs/narration.md`](./songs/narration.md), first draft 2026-09-29: voice and score in one Suno take, ten
-parts, workspace `mmt-narration`. Proposed settings (borrowed from GPOM, nothing measured on this film):
+parts, workspace `mmt-narration`. Proposed settings — **borrowed from GPOM — a candidate, not inherited; Kai to rule (2026-10-29 audit)**; nothing measured on this film:
 v6 · Style Influence 50 · Audio Influence 65 with a Voice · Weirdness 25 · Variety, Max Mode, Personalize
 off. Round 1 = P1 six ways: three palettes × with/without GPOM's saved Voice `badcode newsreader`. The
 template, verbatim:
@@ -75,6 +75,10 @@ warm, not sarcastic.
 **Documentary, after the recut (1 Oct):** an *"incredibly sarcastic"* narrator voiced with AI Studio (Kai
 *"mentions the West Country robot voice"*), interviewing **the soldier**, played real. Neither voice is
 built. See [`direction-2026-10-01.md`](./direction-2026-10-01.md).
+⚠️ **Flag for Kai (2026-10-29 audit):** the "West Country robot voice" is most likely GPOM's Maddie, the
+West Country delivery bot (Gemini TTS `Aoede`, Bristol — `../gitpush-origin-master/sound.md`; the match is
+an inference). Floated here, not ruled. Using it would put GPOM's voice on MMT's narrator; Kai to decide, and if
+it is taken, write its settings here as MMT's own.
 
 **Money For Something — the narrator** (over real clips): AI Studio, voice **`Zubenelgenubi`**, accent
 setting **British (Brixton)**, nothing else in the boxes (Jack's pick, [`money-for-something-RESUME.md`](./money-for-something-RESUME.md)).

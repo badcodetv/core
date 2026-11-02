@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/baker.jpg",
+ "made": "2026-10-28T11:40:38.454Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s studio portrait photograph on grainy colour film, head and shoulders, turned three-quarters towards the camera, against a plain mid-grey backdrop, lit by one soft key light from the left. A heavy-set Black man in his fifties with a shaved head, a broken nose, a double chin, a small scar through his left eyebrow and tired, wet brown eyes, in a sweat-stained white vest, flour dusted on his shoulders and forearms. Real skin: pores, sweat, deep lines on his forehead. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "012ae773-78a3-4079-bef8-cb8305b45a68"
+}

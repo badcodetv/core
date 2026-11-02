@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-29-33/00-b.jpg",
+ "made": "2026-10-29T17:01:52.970Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: a four-storey Chicago bakery building in 1928, sliced open top to bottom like a life-size film set, every floor visible at once, shot from a low angle in the snow-covered street, slightly off-centre and tilted, the elevated railway's iron legs cutting across the lower left corner. Bottom: the hidden mint, an iron printing press and a roaring coal furnace, stacked gold bars, gangsters in chalk-stripe suits and fedoras stripped to shirtsleeves. Above it the bakery with flour sacks and cold ovens; above that a tenement kitchen; at the very top a bare attic, frost on the rafters, an old woman in a grey wool shawl over her head huddled by a candle stub. A projected oil-and-dye light show washes the whole cutaway, real liquid-light swirls thrown from a projector across the street: in the basement the bubbles pool molten gold and blood orange, they thin through amber and sickly green on the middle floors, and reach the attic as faint cold violet and pale blue barely reaching her. Coal smoke leaks from cracked plaster; icicles hang from the top floor's cut edge. Every sign and wall stays blank.",
+ "source_id": "eed4a41e-8459-428a-a81f-d3c3b1d5243f"
+}

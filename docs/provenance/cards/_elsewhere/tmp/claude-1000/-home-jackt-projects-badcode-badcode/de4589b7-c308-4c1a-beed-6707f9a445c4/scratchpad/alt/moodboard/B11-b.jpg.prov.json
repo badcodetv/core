@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B11-b.jpg",
+ "made": "2026-10-28T12:46:25.010Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The steel vault door sags and runs like candle wax where a blowtorch's blue flame touches it, molten steel dripping onto the marble. Camera low on the marble floor. Two safecrackers in shirtsleeves kneel at the vault door with the blowtorch, goggles on their foreheads; behind them the man from the character reference, dressed exactly as in his portrait reference stands guard with a tommy gun held across his chest, pointed at the ceiling, sweating. Light: the blowtorch's hard blue-white flame; orange drips; the dark bank lobby behind. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/lippy.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/lippy.jpg"
+  ],
+  "character": "SM Lippy"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "38efd99a-b8c8-400e-a530-c05133fcea90"
+}

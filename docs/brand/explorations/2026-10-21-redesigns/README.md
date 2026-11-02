@@ -1,5 +1,11 @@
 # Logo redesigns — Flow exploration (2026-10-21)
 
+> 🗄️ **Archive — a record of one 2026-10-21 exploration, not a template.** The prompts below describe
+> BadCode as "making drum and bass", and some carry a near-black ground and a club setting: that was
+> one story's sound and look leaking into the brand at the time. There is no BadCode house sound or
+> look ([`docs/stories/STYLE.md`](../../../stories/STYLE.md)); the logo is the only house mark
+> ([`docs/brand/README.md`](../../README.md)). Do not reuse these prompts' style words.
+
 Jack: redesign the logo, using the reference (bench "Red o + white triangle + outline") as inspiration only,
 changed as much as wanted. **Exploration, not the logo** — Kai's ruled logo is "Saved version 5".
 (The earlier 2026-10-21-styles folder put the existing logo into scenes; that was a misread of this ask.)

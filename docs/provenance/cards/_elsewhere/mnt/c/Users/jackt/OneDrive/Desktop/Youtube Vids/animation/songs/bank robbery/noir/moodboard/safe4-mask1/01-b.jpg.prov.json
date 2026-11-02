@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/safe4-mask1/01-b.jpg",
+ "made": "2026-10-30T10:23:46.315Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A jeweller's shop in the 1920s on a hot, bright afternoon, seen from counter height across a glass case at about arm's length, on a 40mm lens. A broad robber in a chalk-striped mustard suit and a knitted plum balaclava has set a ruby tiara on top of his mask and is turning his head to admire it. Sewn on the forehead of the balaclava, below the tiara and large enough to read across the room, is a thin pale ring with one small red triangle inside it, set off centre toward 2 o'clock, its corners rounded. The elderly jeweller, in a bottle-green waistcoat with sleeve garters and a loupe pushed up on his brow, is holding up a silver hand mirror for him with both hands, his mouth tight, a man giving the worst fitting of his career. In the robber's gloved left hand hangs a fistful of pearl ropes. Behind them a second masked figure, this one in a bottle-green knit with the same sewn emblem on the forehead, sweeps a velvet tray of rings into an open doctor's bag. Hard sun comes from high on the right through a striped lemon and white awning outside the window, throwing slanted bars of shadow across the walnut cabinets, the emerald velvet and the side of the robber's face, and every stone in the glass case catches it with small white points. The walls are a deep painted peacock green, the air is dusty, and the shop's window glass is a bright blur of the street. Film grain, rich saturated dye colour, deep shadow inside the bars. The picture runs right to the edges of the frame.\n\nThanks.",
+ "source_id": "213378a3-6c6d-4b19-98ac-b5d3c6eab65a"
+}

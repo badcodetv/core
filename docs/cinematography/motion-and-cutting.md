@@ -35,16 +35,18 @@ reality. **P**
 the static frame to trap the viewer inside a character's logic. Neither is doing less work.
 **P**
 
-**🔴 The economy that governs our whole form:** in a body of work built from static or
-near-static shots, **a single moving shot lands with outsized force — and only if the stillness
+**🔴 The economy of a mostly-still cut:** in a body of work built from static or
+near-static shots (and Veo camera-locked makes many of ours start that way), **a single moving shot lands with outsized force — and only if the stillness
 around it is real rather than cheap.** *La Jetée* spends roughly 26 minutes as photographs and
-cashes its one moving shot exactly once. Budget motion like a scarce resource: motivated
+cashes its one moving shot exactly once. If the story's look is a still one, budget motion like a scarce resource: motivated
 stillness is free and always available; motivated movement is worth spending maybe once per
-sequence. **P**
+sequence. A story whose `look.md` wants a moving camera (a chase, a game, handheld realism) runs
+a different economy, and the camera moves go in post. **P**
 
 **Handheld is not truth.** It is a style that has been criticised as lazy shorthand for
-authenticity. Plenty of directors get more subjective urgency from a rock-steady camera. *(ruling
-R7)* **P**
+authenticity. Plenty of directors get more subjective urgency from a rock-steady camera. Chosen
+as a style in a story's `look.md` (British social realism uses it), it is legitimate; reached for
+as proof of realism, it is not. In Veo it goes in post. *(ruling R7)* **P**
 
 **The long take buys immersion and is also, by named practitioners, showing off.** Both readings
 are legitimate and depend entirely on whether the story needed it. **P**

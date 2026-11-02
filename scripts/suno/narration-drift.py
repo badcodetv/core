@@ -1,7 +1,9 @@
-"""Check every GPOM narration scene's Style and Exclude boxes against the house template.
+"""Check every GPOM narration scene's Style and Exclude boxes against GPOM's narration template.
+style-lint: story=gitpush-origin-master — a GPOM-only script kept in the shared Suno folder.
 
+GPOM only: the template is GPOM narration's style, not a BadCode default (docs/stories/STYLE.md).
 The live sheet (narration.md) carries one template fence with four {{BLANKS}}, the two allowed
-endings, and one house Exclude box. Each scene atom (a level-3 heading naming the atom in
+endings, and one GPOM Exclude box. Each scene atom (a level-3 heading naming the atom in
 backticks, followed by Style / Exclude / Lyrics fences) must be that template with the blanks
 filled, and that exact Exclude box. Anything else is drift: this prints the sentences that differ,
 so a change is deliberate rather than accidental. An atom whose heading carries a lock emoji is
@@ -36,10 +38,14 @@ def compare(style, template):
 def main(path):
     src = path.read_text()
     template = next(body for label, body in FENCE.findall(src) if label == "template")
-    house = src[src.index("## House style"):]
-    house = house[: house.index("\n## ", 1)]
-    house_exclude = next(body for label, body in FENCE.findall(house) if label == "")
-    endings = dict(re.findall(r"- \*\*(\w+):\*\* `([^`]+)`", house))
+    # The section was headed "## House style" until 2026-10-29; "## GPOM narration style" after.
+    head = next((h for h in ("## GPOM narration style", "## House style") if h in src), None)
+    if head is None:
+        sys.exit(f"{path}: no '## GPOM narration style' section (the template's endings + Exclude box)")
+    gpom = src[src.index(head):]
+    gpom = gpom[: gpom.index("\n## ", 1)]
+    gpom_exclude = next(body for label, body in FENCE.findall(gpom) if label == "")
+    endings = dict(re.findall(r"- \*\*(\w+):\*\* `([^`]+)`", gpom))
     candidates = {name: template.replace("{{ENDING}}", text) for name, text in endings.items()}
 
     drift = 0
@@ -67,11 +73,11 @@ def main(path):
                 print(f"      missing: {t}")
             for s in extra:
                 print(f"      extra:   {s}")
-        if exclude.strip() == house_exclude.strip():
-            print(f"✅ {name}: Exclude matches the house box")
+        if exclude.strip() == gpom_exclude.strip():
+            print(f"✅ {name}: Exclude matches the GPOM box")
         else:
             drift += 0 if frozen else 1
-            print(f"⚠️  {name}: Exclude differs from the house box{tag}")
+            print(f"⚠️  {name}: Exclude differs from the GPOM box{tag}")
     return 1 if drift else 0
 
 

@@ -1,0 +1,25 @@
+{
+ "round": 1,
+ "kai_round1": {
+  "at95": {"tc": "00:00:03:23", "beat": "1", "note": "it looks like ai slop, the cars teleport and the pschedelic trails/affects look too basic and simple. the setting looks very much like ai slop. THanks"},
+  "top": {"note": "Beat 1: it looks like ai slop, the cars teleport and the pschedelic trails/affects look too basic and simple. the setting looks very much like ai slop. THanks"}
+ },
+ "plan": [
+  {"h": "Why scene 1 fails (shot-craft + the Omni list)", "items": [
+   "Cars teleport: two fast cars crossing a corner is three things Omni cannot do: reach a new position, keep a small far-off shape coherent while it moves, and handle several movers. It redraws the cars between frames.",
+   "Trails look basic: 'red, green and blue copies' is a filter idea, not a thing in the world, so it comes out as flat neon ribbons pasted on.",
+   "Setting looks like AI: the 'named bundle' in docs/cinematography/symptoms.md: a perfect symmetrical cobbled street, everything wet and glossy, a moon in the sky, nothing that could only be this story's city."]},
+  {"h": "The fix I'd make (scene 1 only, about 4 stills + 2 clips)", "items": [
+   "A. My pick: INSIDE the getaway car, from the back seat, wide and low. The gangster in front fires his tommy gun up out of the side window; through the rear window the police car's two lamps chase. The city streaks past outside as real long-exposure light trails (streetlamps and the iron girders of an elevated railway smeared into bending ribbons of amber and red). Nothing outside has to keep its shape, so nothing teleports.",
+   "B. Under the elevated railway: one sedan already sliding sideways under the iron girders, sparks off the wheel rims, the layer a time-smear that stretches the car along its path like pulled toffee. One mover, continuing a state.",
+   "C. Keep the street but cut it into three 2-second shots (wheel, gun, police lamp) so the jumps hide in the cuts.",
+   "Setting either way: something only this city has (the elevated railway, a news-stand, steam from a manhole, litter), asymmetric, glossy only where a lamp hits, no moon."]},
+  {"h": "You decide", "items": [
+   "A, B or C for scene 1 (or 'make all three and I'll pick').",
+   "Is the 'AI setting' note only scene 1, or the whole film? If the whole film, the other two colour-trail scenes (14, 15) get the same upgrade, and I'd do a specificity pass on every street scene: that is a bigger round (new stills + clips)."]}
+ ],
+ "replies": {
+  "at95": "Agreed on all three. The teleport is Omni redrawing two fast cars at a corner; the trails are a filter idea with nothing physical behind them; the street is generic. My fix is A: put the camera inside the getaway car so the chase is lamps and light trails streaking past real windows, under an elevated railway. Details and two other options in the plan at the top. Your call on A/B/C, and on whether this goes film-wide.",
+  "top": "Same note as the frame note at 0:03; answered there and in the plan at the top."
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-17-25-16/04-b.jpg",
+ "made": "2026-10-29T16:54:22.378Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, midday, the top of a mountain of cash inside a brick vault that runs under the pavement. The ceiling is a grid of old pavement vault-lights, hundreds of round glass lenses set in iron, turned amethyst by years of sun; noon daylight pours through them in a rain of violet, lilac and pale gold discs that dapples the whole pile, shifting tone where the glass is chipped or clouded. The camera looks straight down from just under the ceiling, rotated off-square so the body lies diagonally across the frame. The mayor, a tall, skinny man in a bowler hat with a heavy gold chain of office round his neck, a long narrow face, hollow cheeks, a pencil-thin grey moustache, sprawls on his back on the rubber-banded bundles, arms flung wide, eyes glazed and half-open, the gold chain sliding on his chest, a single banknote laid over the lower half of his face like a newspaper on a beach. A shoe has come off; his sock has a hole at the toe. Bootprints and footsteps in the dust on the lenses cast faint shadows. No other light; the vault edges fall to black. The banknotes show only blurred engraving, no readable words.",
+ "source_id": "f9f4b1d8-63e6-4356-be0c-d1d019b3e66d"
+}

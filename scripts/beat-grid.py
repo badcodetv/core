@@ -2,7 +2,8 @@
 """
 Turn a music track into a beat/bar/phrase grid, and say whether to trust it.
 
-Written for BadCode's drum & bass: the tempo is never a mystery (we wrote the Suno prompt),
+First written for GPOM's and Camping's drum & bass tracks; it works on any track whose tempo is
+known (we wrote the Suno prompt),
 so this is about placing a cut *precisely*, not discovering the tempo.
 
     scripts/beat-grid.py TRACK.wav                     # report the grid and the confidence
@@ -35,7 +36,7 @@ AGREEMENT_TOLERANCE = 0.05
 # multiple of the median (so a dropped or doubled beat does not count against regularity).
 #
 # 🔴 Measured on aubio's times, NEVER librosa's: librosa quantises every beat to the analysis
-# hop (512 samples = 21.33ms at 48kHz), so its spread reads the same for a locked D&B track and
+# hop (512 samples = 21.33ms at 48kHz), so its spread reads the same for a locked GPOM D&B track and
 # for spoken narration, and tells you nothing at all.
 #
 # Measured across six real BadCode tracks, 2026-08-22. The one properly beat-locked track scores
@@ -87,7 +88,7 @@ def analyse(path: str, meter: int, bars_per_phrase: int, start_bpm: float | None
     duration = len(y) / sr
 
     # 🔴 aggregate=np.median is load-bearing, not a tuning choice. With the default mean this
-    # octave-errors on real drum & bass — measured 87.89 BPM against a true 175.78 on the same
+    # octave-errors on real drum & bass (a GPOM track) — measured 87.89 BPM against a true 175.78 on the same
     # file. It is what beat_track uses internally when handed audio rather than an envelope.
     onset_env = librosa.onset.onset_strength(y=y, sr=sr, aggregate=np.median)
     kwargs = {'start_bpm': start_bpm} if start_bpm else {}
@@ -178,7 +179,7 @@ def main() -> int:
     ap.add_argument('--emit', choices=['beat', 'bar', 'phrase'], help='print the grid times')
     ap.add_argument('--json', action='store_true', help='machine-readable output')
     ap.add_argument('--meter', type=int, default=4, help='beats per bar (default 4)')
-    ap.add_argument('--bars-per-phrase', type=int, default=8, help='D&B phrases in 8s and 16s')
+    ap.add_argument('--bars-per-phrase', type=int, default=8, help='bars per phrase (8 for dance-music phrasing; set it to the track)')
     ap.add_argument('--start-bpm', type=float, help='tempo prior — the BPM you asked Suno for')
     ap.add_argument('--limit', type=int, help='cap how many grid times are emitted')
     args = ap.parse_args()

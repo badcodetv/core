@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B08-a.jpg",
+ "made": "2026-10-28T12:45:17.034Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. Camera at table height in a hidden speakeasy back room, a cut-crystal whiskey glass in the left foreground splitting the part of the room seen through it into rainbow-fringed facets; the rest of the frame sharp. At a green-baize poker table piled with chips, banknotes and a whole ham, the man from the character reference, dressed exactly as in his portrait reference, and the man from the third reference, freeze mid-deal, cigars in their mouths, eyes swivelled to the open door, where the man from the second reference stands holding one small loaf. Light: a low brass lamp with a green glass shade pooling amber over the table; the doorway cold blue. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/mayor.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg",
+   "/home/jackt/.cache/sm-cast/baker2.jpg",
+   "/home/jackt/.cache/sm-cast/doorman.jpg"
+  ],
+  "character": "SM Mayor"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "655af41e-062c-49b4-a883-221b352d1d4e"
+}

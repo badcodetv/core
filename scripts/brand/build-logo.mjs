@@ -99,7 +99,7 @@ function stacked(ink) {
 write('badcode-lockup.svg', side(INK.dark)); write('badcode-lockup-reversed.svg', side(INK.light))
 write('badcode-stacked.svg', stacked(INK.dark)); write('badcode-stacked-reversed.svg', stacked(INK.light))
 
-// ---- favicon + avatar: the icon on its own near-black disc/square, so it reads on any tab bar or app.
+// ---- favicon + avatar: the icon on its own near-black disc/square, so it reads on any tab bar or app.  style-lint: ok (the logo is global)
 // Small-size floors: line >= 1.5px always; at 48px and under (the favicon cut) the dot grows to
 // >= 13% of the canvas, or at 16px it shrinks to a speck (checked 2026-09-29 for the dot; same floor
 // for the triangle, applied the bench's way: its corner reach is at least twice the floor).

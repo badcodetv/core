@@ -31,7 +31,7 @@ was not reached.
 | --- | --- | --- |
 | Perspective distortion is a function of camera *distance*, not focal length | **A** | Optical geometry. Uncontested; most film-education sources have it wrong |
 | Hard vs soft light shadow character | **A** | Source size relative to subject. Optics |
-| Lightness anchoring — darkness is judged relative to the brightest region groupable into the scene | **A** | Gilchrist's anchoring theory of lightness perception. **The mechanism under our #1 craft rule** |
+| Lightness anchoring — darkness is judged relative to the brightest region groupable into the scene | **A** | Gilchrist's anchoring theory of lightness perception. **The mechanism under the dark-look anchor rule (principle 11; GPOM's `look.md` makes it a rule)** |
 | Banding in dark gradients is bit-depth quantisation | **A** | Arithmetic: 8-bit gives 256 steps per channel; dark gradients occupy a small slice |
 | Dither/grain fixes banding by breaking quantisation edges | **A** | Signal processing. Film grain did this free for a century |
 | Full/limited range mismatch clips everything below a threshold to black | **A** | Metadata/signal fact, documented across broadcast and GPU engineering. **We shipped this bug in `camping.mp4`** |

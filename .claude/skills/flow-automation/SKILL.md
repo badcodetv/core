@@ -1,6 +1,6 @@
 ---
 name: flow-automation
-description: Use when DRIVING Google Flow — bringing the browser up, calling the flow MCP tools, recovering from a failed or hung call, running a batch, or changing @badcode/flow-mcp itself. Triggers on "generate this in Flow", "the flow call failed/hung/timed out", "flow_status says NOT_RUNNING", "run the batch", "why did that tool return nothing", "add a Flow tool", or any tool-level step inside make-comic, animate-slide, edit-panel, music-video-short, badcode-art-direction or new-image. Mechanics only — what the shot should BE belongs to shot-craft, what to WRITE in the prompt belongs to flow-prompt, and what it should LOOK like belongs to badcode-art-direction (panels) and new-image (brand imagery).
+description: Use when DRIVING Google Flow — bringing the browser up, calling the flow MCP tools, recovering from a failed or hung call, running a batch, or changing @badcode/flow-mcp itself. Triggers on "generate this in Flow", "the flow call failed/hung/timed out", "flow_status says NOT_RUNNING", "run the batch", "why did that tool return nothing", "add a Flow tool", or any tool-level step inside new-image, scene-images, scene-animation or variations. Mechanics only — what the shot should BE belongs to shot-craft, what to WRITE in the prompt belongs to flow-prompt, and what it should LOOK like is the story's own look.md.
 ---
 
 # Flow Automation

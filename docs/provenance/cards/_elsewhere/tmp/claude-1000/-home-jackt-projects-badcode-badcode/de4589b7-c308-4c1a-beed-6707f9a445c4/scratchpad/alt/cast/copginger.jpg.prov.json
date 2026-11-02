@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/copginger.jpg",
+ "made": "2026-10-28T11:48:58.247Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s studio portrait photograph on grainy colour film, head and shoulders, turned three-quarters towards the camera, against a plain mid-grey backdrop, lit by one soft key light from the left. A young American police officer, a lanky white man in his twenties with long ginger sideburns, a face full of freckles, sticking-out ears, a long thin nose and a nervous half-smile, in a dark blue peaked police cap with a badge and a long dark blue police coat with brass buttons and a high collar. Real skin: freckles, a few spots on his chin, pores. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "d399e75d-7cd1-49b9-83b4-33aa05ab82ff"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S8-slot-b.jpg",
+ "made": "2026-10-28T09:50:52.605Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1970s airbrushed film-poster painting: smooth photographic airbrush gradients, chrome-bright highlights on metal and jewellery, real faces. Camera low on the back stairs, looking up past a dark wooden banister post in the foreground left. A heavy-set gangster in a chalk-stripe three-piece suit and grey fedora, with a broad pockmarked face, a flattened boxer's nose and a toothpick, leans close to a plain steel door at the bottom of narrow brick back stairs and murmurs into its open slot, where only two wary eyes look out. He stands right of centre, his face large in frame. 1920s: bare brick, a fire bucket, a crate of empty milk bottles, a wet stone floor. A hot pink rim light from behind outlines the figures; the darkness fades from tangerine into ultramarine; one white key from the front left. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4d0caae2-ca16-4864-9ce1-7cfd76a31234"
+}

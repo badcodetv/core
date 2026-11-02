@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S1-press-b.jpg",
+ "made": "2026-10-28T09:41:03.193Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s film still on grainy film, in hard film-noir chiaroscuro with harsh high contrast, but with the colour pushed far beyond nature. Camera low at the height of the firebox, fresh banknotes scattered on the stone floor in the foreground. In a hidden 1920s basement print room, a huge cast-iron printing press throws sheets of banknotes into the air. Beside it a tall skinny man in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache, shovels coal into the press's red-hot firebox, grinning. Behind him an exhausted stoker in a soot-black vest sits slumped against the brick wall. Riveted pipes, brass gauges, steam. Key: a red neon tube off frame left floods everything crimson; a cold cyan light from a high window cuts across in hard slats through a venetian blind. Most of the frame is in deep shadow; the brightest values are the red edges on the faces and the slats of light. Every wet surface carries each light as a smeared vertical streak. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "226e9672-4a9c-42d6-b94f-588c8352c197"
+}

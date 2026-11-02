@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/pov4-safe1/01-a.jpg",
+ "made": "2026-10-30T10:18:42.679Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The instant a small safe leaves a wall, seen from across a narrow back alley at night in 1928, the camera at chest height against the opposite wall with a rusted iron drainpipe cut off by the left edge of the frame. An egg-yolk yellow sedan with black mudguards is parked at a hard angle on the right, its rear wheels spinning on the cobbles, thick grey tyre smoke lit deep ruby by its two small tail lamps. From its rear axle a heavy chain runs dead straight, rigid as a bar, across the alley and into a ragged hole in an oxblood brick wall painted with a flaking bottle-green band. The safe, a squat cast-iron box in chipped forest-green enamel with a brass dial, hangs in the air a foot outside the hole, tilted, chain wrapped twice around it, with bricks, mortar and a section of green wall still falling around it and hanging in a cloud of pale dust. The only other light is one bare amber bulb in a tin shade above a back door, high on the left, so the dust glows amber on one side and ruby on the other, and the far end of the alley falls away to true black. A figure in a plain black knitted balaclava leans out of the sedan's rear window, looking back at the hole with both arms hooked over the door. Falling bricks are slightly blurred, the chain and safe are sharp. Rich, saturated colour film with visible grain, hard shadows on the brick, and the picture running edge to edge across the whole 16:9 frame.\n\nThanks.",
+ "source_id": "61543341-4ec5-4d7a-bfad-7efc3245fee4"
+}

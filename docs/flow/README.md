@@ -114,9 +114,10 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 12. **Describe the absence positively.** "an empty street", not "no cars".
 13. **Change exactly one variable per test generation**, and never chain an extension
     off an unreviewed clip — errors compound forward.
-14. **Push past the airbrushed default with physical imperfections.** "visible pores
-    and subtle skin microtexture", fine grain, faint light leak. Bare "photorealistic"
-    gets you plastic.
+14. **For a photographic look, push past the airbrushed default with physical imperfections.**
+    "visible pores and subtle skin microtexture", fine grain, faint light leak. Bare
+    "photorealistic" gets you plastic. (Engine fact: the default is studio-perfect. Whether to
+    fight it with grain depends on the story's `look.md`; a drawn or glossy look may not.)
 15. **When a prompt is blocked, strip it to nothing and add words back one at a time** —
     and turn off Flow's "Enhance Prompt" first, because its auto-rewrite injects
     language that trips filters you never wrote.

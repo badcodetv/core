@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-17-25-16/01-a.jpg",
+ "made": "2026-10-29T16:54:22.285Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, early evening, inside a cramped radio studio above a furniture showroom. We look in from the engineer's booth through two thick panes of soundproof glass set a hand's width apart, so the room arrives doubled and trebled: each pane throws back its own faint reflection of the booth's rack of glowing valves, a stack of orange and violet ghosts floating over the studio. Through them, off-centre to the right and seen from below desk height, the mayor, a tall, skinny man in a bowler hat with a heavy gold chain of office round his neck, a long narrow face, hollow cheeks, a pencil-thin grey moustache, grins into a big chrome ribbon microphone, a typed script in his fingers turned edge-on. The chrome bulges his grin back at him, stretched. Above the far door a red glass lamp glows, blank. In that doorway a gangster in a chalk-stripe suit and fedora, pockmarked, toothpick in his teeth, thumbs through a fold of banknotes. Horsehair acoustic panels sag and stain; cigarette burns on the desk felt. The only hard light is one hanging bulb over the microphone; everything else falls to deep black. All paper, dials and lamps are blank, with no lettering anywhere.",
+ "source_id": "af917ec3-9782-44d0-a104-92b1132d4092"
+}

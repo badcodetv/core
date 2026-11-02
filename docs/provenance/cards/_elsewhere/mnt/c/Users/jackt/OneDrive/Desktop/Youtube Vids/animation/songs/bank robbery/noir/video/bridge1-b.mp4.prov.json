@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/bridge1-b.mp4",
+ "made": "2026-10-30T12:38:56.028Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera slides slowly and steadily to the left across the boat deck, at an even speed. The near black funnel passes across the frame from left to right, becoming larger, until it covers the whole lens. The band, parked cars, bridge and river keep their exact shape and stay where they are, and the cars do not move. One continuous shot, no cuts.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge1-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r2-bridge1-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "7be7936d-03b3-48bd-86cf-848fd6cbee26"
+}

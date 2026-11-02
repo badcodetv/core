@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/city1-b.mp4",
+ "made": "2026-10-30T12:05:06.252Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous sideways move, gathering speed. The camera slides left along the stone bank under the bridge, so the riveted oxblood girder sweeps across the view until its dark steel covers the whole frame. Mist creeps over the water and the bars of light ripple. The tower, windows and lamps stay steady, and every building keeps its shape.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-city1-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-city1-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "edb62413-1f07-469a-8bef-b03693599a5f"
+}

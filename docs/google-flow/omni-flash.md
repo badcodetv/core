@@ -2086,13 +2086,13 @@ observation.
 | **A stock anchor** — *"shot on 16mm film, natural grain"* | Biases toward the imperfections audiences read as authentic |
 | **~50mm, human field of view** | Stylised focal lengths read as commercial |
 | **Rough, unpolished audio; no music bed** | Music is the polish tell. For us this is free — the track is Suno's and goes on in post |
-| **A loose edit; no aggressive grade** | Post-side, but it is the same instinct as our grain-in-shadows rule |
+| **A loose edit; no aggressive grade** | Post-side, but it is the same instinct as GPOM's grain-in-shadows grade |
 
-🔴 **Rejected: "introduce accidental camera shake."** Widely recommended and **it contradicts our
-own house ruling** — [`motion-and-cutting.md` R7](../cinematography/motion-and-cutting.md):
-*handheld is a style, not truth; locked-off with the right content beats wobble every time.* It
-would also remove the locked camera that is our documented mitigation for the hinge/regeneration
-bug. **Our measured findings outrank the briefs.** Do not import it.
+🔴 **Rejected in Veo: "introduce accidental camera shake."** Widely recommended, but it would
+remove the locked camera that is our documented mitigation for the hinge/regeneration bug (Veo
+camera-locked, move in post). Handheld itself is a look, not a fault — see
+[`motion-and-cutting.md` R7](../cinematography/motion-and-cutting.md); a story whose `look.md` wants
+it adds the shake in Premiere or ffmpeg, where it is exact. **Our measured findings outrank the briefs.** Do not import it.
 
 Also restated and worth holding: **`photorealistic` and `cinematic` are noise words** — they
 appear beside CGI and digital painting throughout training data and average toward the waxy look
@@ -2700,3 +2700,19 @@ Found re-making The Bank Robbery short's 0:57 Ex shot (`docs/stories/bank-robber
   not what you don't; drop "flawless / 8K / hyperrealistic" (they airbrush). `[vendor]` Google Cloud guide 2026-03-05
   (https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana); `[community]` Luma.
 - **Veo 3.1 Preview models shut down 2026-10-22; Google points users to Omni Flash.** `[vendor]` https://ai.google.dev/gemini-api/docs/video
+
+## Psychedelic layers in motion — Speakeasy Mint ALT, 2026-10-28 `[observed, n=33 + 4 re-rolls]`
+
+Image-to-video on Frames from stills that already carry an optical "layer" (heat camera, oil light show, colour trails,
+kaleidoscope, newsprint dots, op-art rings, double exposure, melting). Record: `docs/stories/bank-robbery/songs/mv-speakeasy-mint-alt/picks.md`.
+- **Layers baked into the still survive the animation** when the prompt only continues them ("the rings ripple slowly
+  outward", "the kaleidoscope turns slowly clockwise"): heat camera, rings, kaleidoscope, dots and double exposure held 8s.
+- 🔴 **Naming the layer as objects makes objects.** "oil blobs drift" turned into solid blue balls and orange paddles
+  mid-clip; "soft patches of projected light slide across them" fixed it (1/1). "colour trails smearing behind them"
+  became solid neon ribbons; dropping the trail words (the still already has them) kept the cars but…
+- 🔴 **…an unqualified "police car" redrew as a modern white car with POLICE printed on it** (1/1). Keep the era on
+  every vehicle in the motion prompt ("the black 1920s police car").
+- **Breath as "slow clouds" billowed into smoke over the hands;** "thin faint wisps that fade" held (1/1).
+- **A silent block:** a kaleidoscope of hands counting banknotes, snapping rubber bands, a card game, a rat: no candidate
+  3×. "The whole pattern turns slowly clockwise; the lamp glows steady" landed first time. Cause not isolated.
+- Rough flash check (whole-frame brightness swings) passed on all 33, including three fires prompted "glow steadily".

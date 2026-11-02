@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/C13-a.jpg",
+ "made": "2026-10-28T12:30:45.821Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film. Staged like the opening titles of a 1960s spy film: the figures are almost photographic, but the space behind them dissolves into a flat flood of saturated colour, molten gold fading into deep magenta, with drifting smoke. Camera low at the height of the firebox, banknotes scattered on the stone floor in front. A huge cast-iron printing press glows red hot, spitting notes; beside it the man from the character reference shovels coal into its firebox, grinning, his eyes narrowed with glee; behind him an exhausted stoker in a soot-black vest sits slumped against the wall. One hard white spotlight from above. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": "SM Mayor"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a3dcd673-ad32-476d-b15f-64ac8eb0c3cf"
+}

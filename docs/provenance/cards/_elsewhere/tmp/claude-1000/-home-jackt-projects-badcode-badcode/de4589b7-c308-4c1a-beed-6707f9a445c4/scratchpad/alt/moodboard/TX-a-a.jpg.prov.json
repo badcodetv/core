@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/TX-a-a.jpg",
+ "made": "2026-10-28T10:21:59.824Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble, in real places. Extremely close inside the mouth of a 1920s basement furnace: glowing coal and half-burnt banknotes curling and blackening, the flames rising in one tall tongue of fire in the exact centre of the frame, the black iron rim of the furnace door at the very edges. Light: only the fire, white-yellow at its heart, deep orange at the edges, black beyond. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ae360abd-ab96-4dda-b82d-7b8acb4ba212"
+}

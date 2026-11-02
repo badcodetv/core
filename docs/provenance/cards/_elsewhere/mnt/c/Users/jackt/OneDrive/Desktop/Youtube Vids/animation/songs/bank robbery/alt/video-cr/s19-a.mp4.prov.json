@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s19-a.mp4",
+ "made": "2026-10-29T19:17:37.685Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. A tenement kitchen at night: the couple lean closer to the wooden radio set, the woman narrowing her eyes, the man slowly tilting his head as if a word stung him. The radio's round amber dial flickers brighter with the voice, and its light passes through the cut-glass water jug in the foreground: the facets split it into sliding diamonds of gold, green and violet that creep across the patterned tablecloth, the loaf on its board and up over both their faces, shifting as the dial pulses. The camera starts on the couple and racks focus to the jug, then slowly pushes in through the curved cut glass so the kitchen bends and multiplies in the facets. In the last two seconds the facets settle on a single wash of green light on the tablecloth, filling the frame. No on-screen text, no captions, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s19.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s19.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "fe2fba6e-b956-45f4-9ad4-037f218d7508"
+}

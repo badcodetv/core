@@ -43,7 +43,7 @@ except the media, which is on `D:\badcode-videos\magic-money-tree\`.
 ## Next moves, in the order recommended
 
 1. **Suno round 1** (`songs/narration.md` §4): part 1 six ways — palettes A felt piano / B English
-   pastoral / C colliery brass, each with and without the `badcode newsreader` Voice. Kai picks by ear.
+   pastoral / C colliery brass, each with and without the `badcode newsreader` Voice (GPOM's Voice and settings — borrowed from GPOM, a candidate, not inherited; Kai to rule, 2026-10-29 audit). Kai picks by ear.
    Record or listen only when Kai asks.
 2. **Kai edits the words**, using §6's trims (≈1.5 min saved). Mirror changes into `storyboard.md`.
 3. **Premiere**: create `magic-money-tree.prproj`, then `edit-plan.md` §9, after its §6 prerequisites

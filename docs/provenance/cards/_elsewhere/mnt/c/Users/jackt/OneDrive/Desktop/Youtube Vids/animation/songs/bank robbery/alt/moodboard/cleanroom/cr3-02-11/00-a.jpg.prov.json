@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/00-a.jpg",
+ "made": "2026-10-29T16:41:55.396Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: a basement bakery kitchen under a Chicago tenement, 1928, four in the morning. The camera sits on the flour-caked brick floor beside the open mouth of a coal-fired brick oven, tilted, looking up past the glowing door. In the left third of the frame stands the baker, a heavy-set Black man in his fifties, shaved head, broken nose, double chin, sweat-stained vest, flour on his forearms, eyes half shut, fists sunk in a slab of dough on a scarred maple bench. Two other bakers knead behind him, soft and half lost in the dark. The oven is the only light: deep orange and coal-red, falling off to black in the corners. Heat pouring from the oven mouth bends the air into a rippling mirage, so the baker's shoulders, the hanging copper pans and the soot-blackened ceiling joists wobble and stretch like a reflection in moving water, and the flour drifting in the air catches the fire as swirling clouds of amber, rose and violet sparks. Burst flour sacks, a coal scuttle, cracked tiles, grease on the brick. Ordinary skin with pores and sweat, film grain. Every surface free of lettering.",
+ "source_id": "76aab9a5-4c49-46f8-bda0-8e46d5481926"
+}

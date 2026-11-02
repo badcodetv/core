@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/den/01-b.jpg",
+ "made": "2026-10-30T10:04:01.753Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Extreme low angle along the top of a mahogany back bar, the camera resting among the bottles at the very moment the shelf gives way. A hidden iron lever has been thrown, and the long shelf has tipped down to the left on a hinge, so forty unlabelled bottles of ruby, amber, absinthe-green and cobalt glass are sliding in a tight, jostling line toward a square black hatch in the wall at the far end. The nearest bottle fills the right side of the frame, huge and motion-blurred along the direction of the slide, liquor tilting hard inside it. The farthest are tumbling into the hatch, one already gone to its neck, a spray of gin hanging in the air above the opening. A single brass lamp mounted behind the shelf shines through all that coloured glass from the back, casting long bars of red and green light across a sweat-damp plaster wall painted deep tobacco yellow. In the upper left, cut off by the frame at the wrist, a barman's thick hand in a rolled white shirtsleeve grips the lever. Everything further than the lever drops into darkness. Spilled liquor runs along the tilted wood in a thin bright line that catches the lamp. The image fills the frame edge to edge, with heavy shadow and rich, saturated colour held in the glass.\n\nThanks.",
+ "source_id": "1a582cee-4f4b-4a82-9146-88cf572efab5"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/bridge/01-b.jpg",
+ "made": "2026-10-30T10:07:46.336Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The lens sits a hand's width above the river at the very foot of an old stone slipway, where small ripples lap over the first wet step and one blurred ripple crosses the bottom of the frame. The slipway climbs away from us beneath the low, rust-stained iron belly of a bridge, its flaking paint a faded oxblood. At the top of the slope two 1930s cars are parked side by side, aimed straight down at us, their big bowl headlamps blazing warm white directly behind the band and flaring into the lens. So the five musicians are backlit: edges of hot light around a hat brim, a suit shoulder, the curve of an upright bass held by a very tall thin man, the bell of a stout older man's trumpet, a young man's clarinet, the rim of a cymbal behind which a grey-haired woman sits at a small drum kit. Nearest the water, a broad woman in her forties stands at a chrome spring-hung period microphone with her head lifted and her mouth closed, drawing a breath, the light catching one silver streak in her black hair and the deep plum wool of her double-breasted jacket. Their dark reflections stretch down the wet stones toward the camera, sharp in the standing puddles and smeared on the damp stone between, and the two headlamps run down the slope as long gold streaks that end at our feet. At the far left of the frame the open river carries broken bars of ruby and green from a city we cannot see. Grain sits in the deep shadow, and the image fills the frame edge to edge.\n\nThanks.",
+ "source_id": "a9c5e810-3cc8-4e2d-9d22-70ad78ac737d"
+}

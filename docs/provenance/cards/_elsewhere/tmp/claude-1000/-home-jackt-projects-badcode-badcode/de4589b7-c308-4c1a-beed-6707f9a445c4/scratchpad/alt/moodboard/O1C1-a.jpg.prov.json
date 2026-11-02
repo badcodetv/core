@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/O1C1-a.jpg",
+ "made": "2026-10-28T15:55:01.645Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. Camera at hub height, inches from the spinning spoked wooden wheel and black running board of a 1920s sedan tearing over wet cobbles at night, a sheet of water spraying off the tyre, the cobbles smeared into streaks by speed. Behind, the riveted iron girders of an elevated railway flick past, and the streetlamps stretch into long bending ribbons of amber and red light. One hard lamp catches the chrome hubcap. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "138c0695-6642-4554-84ef-3127a6c2245a"
+}

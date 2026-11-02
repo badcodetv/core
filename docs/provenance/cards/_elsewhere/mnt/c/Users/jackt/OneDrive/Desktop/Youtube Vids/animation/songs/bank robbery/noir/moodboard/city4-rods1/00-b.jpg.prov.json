@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/city4-rods1/00-b.jpg",
+ "made": "2026-10-30T10:30:27.648Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Downtown Los Angeles on a warm, dry night in 1929, looking steeply down Broadway from a roof ten storeys up, from behind a giant vertical theatre sign. The back of the sign fills the left third of the frame close to the lens: a raw steel frame painted rust red, tar-black conduit, and rows of bare bulb sockets spilling hot yellow light around their edges onto the girders. Past it the street drops away and leaves the frame toward the upper right at a sharp diagonal, a canyon of theatre marquees stacked one behind another. Their undersides are packed with white and amber bulbs that flood the pavement below; above them hang upright signs in ruby red neon, uranium green, cool blue argon and noviol gold, their shapes all seen edge-on so that the lettering collapses into unreadable slivers of colour. Striped awnings in plum and mustard are folded back along the shopfronts. Two pairs of polished streetcar rails run down the middle of the empty road, and they are the only hard reflections in the scene: thin bright lines carrying the colour of each sign they pass. A lone butter-yellow streetcar sits stopped at the far end with its interior lit, and a few parked sedans in maroon and black carry small smears of neon along their roofs. Above the marquees the office floors go abruptly dark, and the clear sky is near-black navy. Lens around 40mm, deep focus, glowing film colour with a light grain, running to every edge of the 16:9 frame.\n\nThanks.",
+ "source_id": "88b7bed6-a830-4baf-b2d1-9306f216adbb"
+}

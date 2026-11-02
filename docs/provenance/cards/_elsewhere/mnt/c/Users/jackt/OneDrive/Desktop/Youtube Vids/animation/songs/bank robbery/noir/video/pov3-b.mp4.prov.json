@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov3-b.mp4",
+ "made": "2026-10-30T11:37:39.087Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The car is already in the air, having left the raised bridge deck, and for a moment it hangs weightless above the green river, the wind flicking the driver's cuffs. The engine's weight then wins: the long cream bonnet tips slowly downward, the horizon and skyline climb out of the top of the frame, and the far tilted deck of the drawbridge swells towards us. The gloved hands stay locked on the wheel. Far below, the barge keeps moving and the water stays calm. The dark planks fill the whole view. On impact the car slams down and the view jolts once, hard. Filmed as one shot.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov3-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-pov3-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "55e56bdd-db2c-43e6-8829-d9afad8be78f"
+}

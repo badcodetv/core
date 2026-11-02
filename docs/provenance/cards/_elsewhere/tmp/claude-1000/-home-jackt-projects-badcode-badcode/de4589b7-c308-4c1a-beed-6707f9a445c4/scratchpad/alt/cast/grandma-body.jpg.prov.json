@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/grandma-body.jpg",
+ "made": "2026-10-28T11:42:20.556Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s full-length studio photograph on grainy colour film, the whole figure from head to shoes, standing facing the camera, slightly stooped, against a plain mid-grey backdrop, lit by one soft key light from the left. A frail, small white woman in her eighties with a deeply lined face, a grey wool shawl wrapped over her head and shoulders, a darned brown cardigan, a long faded black skirt, thick wool stockings and worn black lace-up boots. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "b12d33f5-27de-4ad3-827d-5ddd08b3da28"
+}

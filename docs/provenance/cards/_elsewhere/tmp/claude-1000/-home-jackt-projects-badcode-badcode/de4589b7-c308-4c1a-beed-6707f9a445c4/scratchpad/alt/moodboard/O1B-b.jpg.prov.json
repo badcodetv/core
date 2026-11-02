@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/O1B-b.jpg",
+ "made": "2026-10-28T15:54:13.775Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. Camera low on the cobbles beneath an elevated railway at night, the riveted iron girders overhead throwing a hard grid of shadows from one streetlamp. A single black 1920s sedan slides sideways across the wet street towards the camera with its wheels locked, a fan of orange sparks spraying from a scraping wheel rim, money sacks piled in its back window; the car is stretched along its own path like pulled toffee, a smeared amber and red trail of its own shape behind it. Off to the right, a news-stand with plain blank papers, steam curling from a manhole, litter in the gutter, a dented lamp post; the street is wet only where the lamp hits. Above, the lit windows of a train cross the girders. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a9bd5859-a2bc-4ba3-9b33-d104fc2f8201"
+}

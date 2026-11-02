@@ -10,6 +10,8 @@ song went 400+ takes as one voice (`docs/suno-gpt/same-song-traps.md`). Jack bui
 2026-10-24; Kai turned it into this skill on 2026-10-28 once the house style was removed from
 CLAUDE.md, memory and the skills (`docs/stories/STYLE.md`). What is left is the part that makes
 variety: **separate writers who cannot copy each other, and a gate that refuses shared wording.**
+A round is checked against itself here; a single prompt outside a round is checked against every past
+prompt by `scripts/variations/fresh.py` (a hook runs it before every Flow and `suno.mts` call).
 
 **You do not write the prompts. Not one word of them.** You collect raw inputs, spawn writers,
 run the gate, and run the round. Every step where the session paraphrases, retypes or "tidies"
@@ -35,7 +37,7 @@ Make a folder beside the work (Suno: `docs/stories/<story>/songs/<round>/`; Flow
 | --- | --- | --- |
 | `ask.md` | the human's message | **verbatim**: paste it, never summarise it |
 | `kind` | `suno` or `flow` | |
-| `story` | the story's slug | its `sound.md` / `look.md` goes into the brief verbatim |
+| `story` | the story's slug | **required**: its `sound.md` / `look.md` goes into the brief verbatim. A round for no story says so with an empty `nostory` file instead |
 | `explore` | empty file | finding a new style: only the story file's *Rules* and *Never* sections go in |
 | `lyrics.txt` | Suno: the lyric words, no tags | the gate checks every word survives |
 | `subject.md` | Flow: what the frame shows | the beat, from the scene's brief, verbatim |
@@ -44,6 +46,8 @@ Make a folder beside the work (Suno: `docs/stories/<story>/songs/<round>/`; Flow
 | `facts.md` | what was run last time, what the human said | facts and quotes only, no theories |
 | `keep.txt` | REFINE: the liked take's own box | verbatim from the engine's record, never from our notes |
 | `forbid.txt` | phrases no prompt may contain | e.g. the story's *Never* list |
+| `preamble.txt` | a LOCKED preamble from the story's file | verbatim; every prompt must start with it, and its words are exempt from the gate |
+| `locked-settings.json` | settings the story's file LOCKS for this part, e.g. `{"model": "Nano Banana 2", "aspect": "16:9"}` | only what the file says is locked; every prompt must use them, and the all-identical-settings check skips them |
 | `count` | how many | default: the ideas writer chooses (6–10, refine 4–6) |
 
 ## The loop
@@ -58,6 +62,10 @@ python3 scripts/variations/round.py brief <dir>    # brief.md + writers/ideas.as
    only `Read <path>.ask.md and do exactly what it says.` None sees another's text.
 4. `python3 scripts/variations/round.py gate <dir>`
    - ✅ → `round.json` + `round.gate` (a stamp; an edited round will not run).
+   - The gate fails: a voice phrase shared by two prompts (Suno), a 6-word run shared by two, **any
+     3-word phrase shared by more than half the round** (both kinds; keep.txt, preamble.txt and
+     function-word runs exempt), and **a round where every prompt has identical settings** (keys in
+     `locked-settings.json` aside). Flow writers choose `model` and `aspect` per prompt too.
    - 🟡 → `writers/<name>.redo.md` for each offender: spawn one subagent per redo file
      (`Read <path>.redo.md and do exactly what it says.`), then gate again.
    - 🔴 STOP after two rewrites. Tell the human. **No override exists, on purpose.**
@@ -66,7 +74,9 @@ python3 scripts/variations/round.py brief <dir>    # brief.md + writers/ideas.as
 6. **Run it.**
    - Suno: `python3 scripts/variations/round.py run <dir> <title> --yes` (`--only a,b` retries a
      Create that timed out, still from the stamped round). Mechanics: `suno-automation`.
-   - Flow: one `flow_generate_image` per `round.json` prompt, **text verbatim**, count 1.
+   - Flow: first `python3 scripts/variations/round.py check <dir>` (verifies the gate stamp; exit 1 =
+     the round was edited, do not run it). Then one `flow_generate_image` per `round.json` prompt,
+     **text verbatim**, with that prompt's own `model` and `aspect`, count 1.
      Stills are free; video asks Kai first (`scene-animation`).
 7. **Pick, then write it back.** The human picks. The pick (its prompt verbatim, the take or media
    id, the settings) goes into the story's `sound.md` / `look.md`, and Status moves to LOCKED for

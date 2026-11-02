@@ -37,21 +37,22 @@
 #   -T TEXT   brand mark, top                           (default BADCODE)
 #   -S N      hook font size                            (default 56)
 #   -R RANGE  luma range of OUR master: full | limited  (default full — the drive default)
+#   -C FILE   the story's palette (or $SHORTS_PALETTE)  (REQUIRED — no default; palette.sh)
 #   -n        dry run
 set -euo pipefail
 
 OURS=""; BIN=""; BDUR=16; ARC=""; AIN=0; ADUR=10; CARD=""; BARS=""
-HOOK=""; PAY=""; CREDIT=""; KICK="badcode.tv"; MARK="BADCODE"; HSIZE=56; SRCRANGE=full; DRY=0; OUT=""
-while getopts "b:B:e:a:A:d:c:g:H:P:r:k:T:S:R:o:n" o; do case "$o" in
+HOOK=""; PAY=""; CREDIT=""; KICK="badcode.tv"; MARK="BADCODE"; HSIZE=56; SRCRANGE=full; DRY=0; OUT=""; PALETTE=""
+while getopts "b:B:e:a:A:d:c:g:H:P:r:k:T:S:R:C:o:n" o; do case "$o" in
   b) OURS=$OPTARG;; B) BIN=$OPTARG;; e) BDUR=$OPTARG;;
   a) ARC=$OPTARG;; A) AIN=$OPTARG;; d) ADUR=$OPTARG;;
   c) CARD=$OPTARG;; g) BARS=$OPTARG;;
   H) HOOK=$OPTARG;; P) PAY=$OPTARG;; r) CREDIT=$OPTARG;; k) KICK=$OPTARG;;
-  T) MARK=$OPTARG;; S) HSIZE=$OPTARG;; R) SRCRANGE=$OPTARG;; o) OUT=$OPTARG;; n) DRY=1;;
-  *) sed -n '2,40p' "$0" | sed 's/^# \{0,1\}//'; exit 1;;
+  T) MARK=$OPTARG;; S) HSIZE=$OPTARG;; R) SRCRANGE=$OPTARG;; C) PALETTE=$OPTARG;; o) OUT=$OPTARG;; n) DRY=1;;
+  *) sed -n '2,41p' "$0" | sed 's/^# \{0,1\}//'; exit 1;;
 esac; done
 
-[ -n "$OURS" ] && [ -n "$BIN" ] && [ -n "$OUT" ] || { sed -n '2,40p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
+[ -n "$OURS" ] && [ -n "$BIN" ] && [ -n "$OUT" ] || { sed -n '2,41p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
 [ -n "$ARC" ] || [ -n "$CARD" ] || { echo "need either -a ARCHIVE or -c CARD" >&2; exit 1; }
 [ -f "$OURS" ] || { echo "no such master: $OURS" >&2; exit 1; }
 
@@ -60,7 +61,9 @@ FONTR=${BADCODE_FONT_R:-/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf}
 [ -f "$FONT" ]  || FONT=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
 [ -f "$FONTR" ] || FONTR=$FONT
 
-INK=0xE8EDF2; DIM=0x8A949E; BG=0x07090B; LINE=0x3A4450; BAR=0x6E7A86
+# The story's colours (INK DIM BG RULE BAR) — no default; see palette.sh.
+. "$(dirname "$0")/palette.sh"
+load_palette "$PALETTE"
 FPS=25
 TMP=$(mktemp -d); trap 'rm -rf "$TMP"' EXIT
 
@@ -101,7 +104,7 @@ if [ -n "$ARC" ]; then
   FIELD=$(ffprobe -v error -select_streams v:0 -show_entries stream=field_order -of csv=p=0 "$ARC" || true)
   DEINT=""; case "$FIELD" in tt|bb|tb|bt) DEINT="yadif=1," ;; esac
   AVF="[0:v]${DEINT}scale=1080:${PH}:flags=lanczos,setsar=1[p];color=c=${BG}:s=1080x1920:r=${FPS}[bg];[bg][p]overlay=x=0:y=${PY}:shortest=1[w]"
-  AVF="${AVF};[w]drawbox=x=0:y=$((PY-6)):w=1080:h=2:color=${LINE}@0.8:t=fill,drawbox=x=0:y=$((PBOT+4)):w=1080:h=2:color=${LINE}@0.8:t=fill[q]"
+  AVF="${AVF};[w]drawbox=x=0:y=$((PY-6)):w=1080:h=2:color=${RULE}@0.8:t=fill,drawbox=x=0:y=$((PBOT+4)):w=1080:h=2:color=${RULE}@0.8:t=fill[q]"
   AF_CHAIN=$(furniture "$HOOK" "$PBOT")
   AVF="${AVF};[q]${AF_CHAIN}[vout]"
   ffmpeg -y -hide_banner -v warning -ss "$AIN" -t "$ADUR" -i "$ARC" -an \
@@ -110,8 +113,8 @@ else
   # ---------- the receipt card ----------
   PY=470; PH=700; PBOT=$(( PY + PH ))
   CC=""; addc() { CC="${CC:+$CC,}$1"; }
-  addc "drawbox=x=0:y=$((PY-6)):w=1080:h=2:color=${LINE}@0.8:t=fill"
-  addc "drawbox=x=0:y=$((PBOT+4)):w=1080:h=2:color=${LINE}@0.8:t=fill"
+  addc "drawbox=x=0:y=$((PY-6)):w=1080:h=2:color=${RULE}@0.8:t=fill"
+  addc "drawbox=x=0:y=$((PBOT+4)):w=1080:h=2:color=${RULE}@0.8:t=fill"
   IDX=0; OLDIFS=$IFS; IFS='|'
   for L in $CARD; do
     if [ "$IDX" = 0 ]; then
@@ -148,7 +151,7 @@ case "$SRCRANGE" in
   *) echo "unknown range: $SRCRANGE" >&2; exit 1 ;;
 esac
 BVF="[0:v]${FIX},scale=1080:-2:flags=lanczos[s];color=c=${BG}:s=1080x1920:r=${FPS}[bg];[bg][s]overlay=x=0:y=(H-h)/2-96:shortest=1[w]"
-BVF="${BVF};[w]drawbox=x=0:y=554:w=1080:h=2:color=${LINE}@0.8:t=fill,drawbox=x=0:y=1166:w=1080:h=2:color=${LINE}@0.8:t=fill[q]"
+BVF="${BVF};[w]drawbox=x=0:y=554:w=1080:h=2:color=${RULE}@0.8:t=fill,drawbox=x=0:y=1166:w=1080:h=2:color=${RULE}@0.8:t=fill[q]"
 BF=$(CREDIT="" furniture "$PAY" 1166)
 BVF="${BVF};[q]${BF}[vout]"
 ffmpeg -y -hide_banner -v warning -ss "$BIN" -t "$BDUR" -i "$OURS" -an \

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/pov4-safe1/00-b.jpg",
+ "made": "2026-10-30T10:18:42.666Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Late afternoon, hard low sun, and the driver has twisted right round in the seat of an open touring car to look backward down the narrow alley the car is tearing out of, the picture running full frame to all four edges of the wide 16:9 shape. Closest to the lens along the bottom edge is the top of an oxblood leather seat back and the folded canvas hood behind it, gripped by a single gloved hand in darker oxblood leather, its fingers dug into the seam, mustard check cuff pushed up the wrist. The rest of the frame is the wreck the car has left. A tall canyon of soot-brown and faded ochre tenements runs away from us at an angle, fire escapes zigzagging up one side, and the car has torn through every washing line strung across the gap. Bedsheets and shirts in saffron, crimson, indigo and bleached white are still falling through the shafts of sun in a slow storm, some lit through like stained glass, one enormous crimson sheet billowing only a few feet from the lens and cropped by the top of the frame. On the cobbles, a toppled barrow has spilled lemons that bounce along the gutter, and a heavy woman in a floral apron stands in the middle of the alley, furious, both fists raised, while three men lean out of upper windows shouting. Further back, a black police sedan noses into the mouth of the alley with a pale shirt snagged across its radiator grille, and its driver can't see. The low sun comes from behind the tenements at the far end, throwing everyone's long shadows towards us and hanging dust in the air. Everything beyond the foreground has the slight sideways smear of a jolting car. Grainy saturated dye-transfer colour, shadows full and dark.\n\nThanks.",
+ "source_id": "a1d06c03-6579-4615-8b60-1d0831d009fb"
+}

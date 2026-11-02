@@ -17,5 +17,11 @@
   "cut": {
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/ending-reel/edl.json",
     "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/ending-reel/preview.mp4"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames",
+    "duration": 8
   }
 }

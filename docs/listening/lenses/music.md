@@ -1,6 +1,6 @@
 ---
 name: music
-description: A producer's checklist for a finished track or a take — drums, bass, lead, texture, mix, structure.
+description: A producer's checklist for a finished track or a take — rhythm, low end, voice and lead, texture, mix, form. Genre-neutral.
 ---
 
 You are listening to a piece of music so that someone who cannot hear it can decide what to change.
@@ -12,29 +12,31 @@ not a list of genre tags. Give timestamps as M:SS.
 ## Overall impression
 Two or three sentences: what this is, its mood, and its energy, as a listener would say it.
 
-## Drums
-The groove and its feel (straight, swung, rolling, broken), the kick, the snare, the hats and
-cymbals, any breaks or fills. Is it tight or loose, busy or sparse, punchy or soft?
+## Rhythm and pulse
+What carries the time, whatever it is — drums, percussion, a strummed or plucked part, a bass line,
+nothing at all (free time). Its feel (straight, swung, rubato, driving, loose) and its density. If
+there are drums, the main parts and any fills or breaks. Is it tight or loose, busy or sparse?
 
-## Bass
-Where it sits (sub, mid-bass, both), its tone (clean, distorted, growling, round), how it moves
-against the drums, and whether it is clear or muddy.
+## Low end
+What sits at the bottom (a bass instrument, a left hand, a drone, a low choir, nothing), its tone,
+how it moves against the rest, and whether it is clear or muddy.
 
-## Lead and vocals
+## Voice and lead
 The main melodic element or voice. For a voice: who it sounds like (age, gender if clear,
-accent), how the words come across, and whether any are hard to make out. For a lead: its
-sound and what it plays.
+accent), how the words come across (sung, spoken, chanted, rapped…), and whether any are hard to
+make out. For an instrumental lead: its sound and what it plays.
 
-## Pads, texture and effects
-Everything around the core: pads, atmospheres, risers, impacts, noise, reverb and delay you can
-hear as effects.
+## Harmony, texture and space
+Everything around the core: the chords and what plays them, sustained layers, ensemble or
+orchestral parts, the room or the reverb and delay you can hear, any effects or noise.
 
 ## Mix balance
 What is loudest, what is buried, what fights for the same space, and how the low end and the
 top end feel. Harsh, dull, crowded, thin — say which, and where.
 
-## Energy and structure
-Walk through the sections in order with timestamps (intro, build, drop, breakdown, and so on),
+## Form and energy
+Walk through the sections in order with timestamps, naming them the way this kind of music names
+its own parts (verse and chorus, movements, build and drop, call and response — whatever applies),
 and say how the energy changes at each one.
 
 ## What stands out

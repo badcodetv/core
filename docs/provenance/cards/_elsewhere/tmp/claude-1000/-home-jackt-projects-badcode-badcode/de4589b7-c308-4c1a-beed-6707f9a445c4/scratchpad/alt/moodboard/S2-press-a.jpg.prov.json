@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/S2-press-a.jpg",
+ "made": "2026-10-28T09:42:38.327Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic period photograph staged like the opening titles of a 1960s spy film: the figures are almost photographic, but the space behind them dissolves into a flat flood of saturated colour, molten gold fading into deep magenta, with drifting smoke. Camera low at the height of the firebox, fresh banknotes scattered on the stone floor in the foreground. In a hidden 1920s basement print room, a huge cast-iron printing press throws sheets of banknotes into the air. Beside it a tall skinny man in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache, shovels coal into the press's red-hot firebox, grinning. Behind him an exhausted stoker in a soot-black vest sits slumped against the brick wall. Riveted pipes, brass gauges, steam. One hard white spotlight from above. The figures are half in silhouette, cut out sharp against the colour; only the face nearest the camera is lit in full. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d63045ec-0fe2-45a4-b146-2ba253f8d579"
+}

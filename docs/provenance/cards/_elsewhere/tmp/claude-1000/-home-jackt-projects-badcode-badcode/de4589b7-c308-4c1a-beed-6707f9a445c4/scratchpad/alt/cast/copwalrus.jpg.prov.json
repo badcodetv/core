@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/copwalrus.jpg",
+ "made": "2026-10-28T11:47:49.091Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s studio portrait photograph on grainy colour film, head and shoulders, turned three-quarters towards the camera, against a plain mid-grey backdrop, lit by one soft key light from the left. An American police officer, a white man in his fifties with a huge grey walrus moustache, ruddy cheeks, a bulbous nose, puffy pale blue eyes and a double chin, in a dark blue peaked police cap with a badge and a long dark blue police coat with brass buttons and a high collar. Real skin: broken veins, pores, deep crow's feet. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "3d09c8c8-a826-42d3-bedb-899ce553c581"
+}

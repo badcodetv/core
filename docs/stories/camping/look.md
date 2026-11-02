@@ -221,9 +221,33 @@ gold headlights at night, plate `BAD C0DE`).
   stays off the table"*, and on 2026-09-29 Jack ruled the five world-cast city people
   ([`characters/world-cast.md`](./characters/world-cast.md)), with dignity rules. Ask before prompting
   a world leg.
+  **The re-cut and the breathing-room cut (2026-09-29/30)** — [`music-video-v2-recut.md`](./music-video-v2-recut.md)
+  holds the brief and the shot design; the rules every mv2 frame keeps:
+  - **Camera at sitting height** — the height of a person on the pavement (the intro catalogue: lens about
+    30 cm off the ground).
+  - **Gritty, never pitiful, never fun** (Jack, 2026-09-29): homeless people are never shown having a good
+    time (no boombox); gritty the way Bob is — cold, wet, tired, worn down — with dignity. No comeuppance joke.
+  - **Adults only** (Jack, 2026-09-28: *"Please do that again with no kids"*); crowds stated as adults.
+  - **No "homeless" in any Flow field**; the five world-cast Characters are cast by name
+    ([`characters/world-cast.md`](./characters/world-cast.md)), never described.
+  - **Lyric text goes ON the surfaces, never as captions** (Jack, 2026-09-28: *"The text was supposed to go on
+    top of the blank places like the cardboard and the gold plates"*); signs are generated blank and the words
+    tracked on in post with `scripts/camping-mv2/signtext.py`. Fonts: **Permanent Marker** for cardboard,
+    **Cinzel** (engraved or gold serif) for Tarquin's plaques, boards, gate and label, **DotGothic16** (amber LED
+    dots) for the gantry. Caption-style text only for cards with no sign (the stat card, the BADCODE end card).
+  - **Final text ruling** (Jack, 2026-09-30, supersedes "fill every blank card"): only his 11 chosen lines
+    (the recut file's table), each on its designed surface, appearing 2 frames before the first sung word
+    (Suno's own word alignment, not Whisper); everything else blank. 2026-10-01: two came off (`rc10`, `rc18`),
+    so nine show.
 - **Music video v1** (Premiere cut, [`music-video.md`](./music-video.md)) — cut from the film's frames.
 
 ## History
+
+- **The documentary preamble is shared with GPOM** (noted 2026-10-29, style-leak audit): the *Objects and
+  close details* line above is, word for word bar the orientation tail, GPOM's PEOPLE register
+  ([`../gitpush-origin-master/look.md`](../gitpush-origin-master/look.md)) — it was once the BadCode-wide
+  PEOPLE look in the `new-image` skill. There is no house look now: Camping keeps it because Camping's
+  accepted frames were made with it, not because it is shared. A change here does not change GPOM.
 
 - **Before 2026-10-28** this file was `style.md`, "thin notes" read alongside the global house look in
   the `badcode-art-direction` skill (35mm documentary, muted cool-neutral, observational,

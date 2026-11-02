@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe1-b.mp4",
+ "made": "2026-10-30T13:30:14.392Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous shot, locked off, at real speed. The heavy green safe drops onto the cobbles and the chain pulls tight. The yellow car drives forward to the right by about a third of its length, dragging the safe along the stones, sparks spraying from its steel corner. Loose bricks fall and lie still. The man leans in the window without moving, his mask exactly as it is. No speech.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-safe1-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-safe1-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "7381bf67-7af8-402c-a3e5-73358567c563"
+}

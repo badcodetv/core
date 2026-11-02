@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s30-a.mp4",
+ "made": "2026-10-29T19:37:43.688Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. The bread queue stands in the snow. The low winter sun hits the frost on the bakery window at left, and the ice crystals split it into thin prism rainbows that creep across the woman's coat and the man's cap as the light moves. At 2 seconds the whole line takes one shuffling step forward together. The woman hugs her sack tighter and the man grips his fan of notes, and their breath steams. The rainbow bands slide down the window glass and over the stacked bills in the wheelbarrow. From 5 seconds the camera tilts down and pushes slowly into the dark wooden rim of the wheelbarrow until its weathered planks fill the frame on a diagonal. Sound: boots on packed snow, a wooden wheel creaking. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s30.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s30.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "4d8d59d5-5ec3-4019-b8f8-8374cd4c04f5"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/06-a.jpg",
+ "made": "2026-10-29T16:41:55.642Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, Chicago, 1928: a hidden speakeasy back room, shot from table height, the lens pressed against a heavy cut-crystal whiskey decanter in the foreground so the far side of the room is seen through its facets. One hanging lamp with a green glass shade over a poker table; nothing else lit. The table is piled with clay chips, rubber-banded cash, and two whole smoked hams on greaseproof paper, cigar ash on the cigar-burned felt. Gangsters in chalk-stripe suits and fedoras, ordinary faces, one pockmarked, one with a toothpick, one with a scar through his eyebrow, have all frozen mid-hand and turned toward the door. Among them a tall, skinny man in a bowler hat, heavy gold chain of office round his neck, long narrow face, hollow cheeks, pencil-thin grey moustache. In the doorway, lit by a bare bulb in the corridor, a heavy-set Black man in his fifties, shaved head, broken nose, double chin, sweat-stained vest, flour on his forearms, holds one small loaf. The decanter's facets split him into a fan of six repeating copies, each edge fringed in amber, emerald and violet, the whisky staining half of them gold. Cards are face down.",
+ "source_id": "4c3a4b4a-6e84-4109-a1e0-406fb256ee41"
+}

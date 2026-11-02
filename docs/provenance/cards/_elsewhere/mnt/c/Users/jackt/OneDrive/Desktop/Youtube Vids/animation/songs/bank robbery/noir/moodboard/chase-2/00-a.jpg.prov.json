@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/chase-2/00-a.jpg",
+ "made": "2026-10-30T10:13:17.366Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night on a frozen river in winter 1930, with the camera almost lying on the ice and panning hard to follow a bootlegger's sedan as it crosses from right to left. The sedan is deep teal with cream wheels, squatting low on its rear springs, wooden crates stacked to the roof behind its side windows; it is sharp while its spokes have blurred into solid discs, its nose is dipped, and a tall plume of ice dust and snow tears off the back wheels, lit from inside by its own tail lamp. Its front is cut off by the left edge of the frame, with its headlamps throwing a hard beam ahead that shows blown snow crossing it. Thirty yards behind, in the plume, a police motorcycle and sidecar is leaning into the chase, its single headlamp a hot white point with a crouched rider in a long dark coat and peaked cap as a soft shape behind it. The far shore fills the upper third of the picture: a whole city's bulb signs and coated neon, dragged by the pan into horizontal bars of ruby, gold and uranium green. The black wind-polished ice below takes those same bars and stretches them toward the lens, longer and dimmer than their sources, broken up wherever white drift crosses them. A slab of pressure ridge rips past the bottom of the frame as a pale blur. The sky above the city is plain dark with a little of its glow. Fine grain and saturated dye colour, the image reaching all four edges with nothing around it.\n\nThanks.",
+ "source_id": "3031093b-b1ee-4ed4-a675-1294f1bb8941"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A11-b.jpg",
+ "made": "2026-10-28T10:42:13.386Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. The solid world is turning liquid: the round steel vault door sags and runs like candle wax where a blowtorch's blue flame touches it, dripping molten steel onto the marble. Camera low on the marble floor, a dropped tommy gun in the foreground lying on its side. Two gangsters in shirtsleeves and braces kneel at the vault door with a blowtorch, goggles pushed up on their foreheads, a fat gangster with a scar through his top lip standing behind them with a tommy gun held across his chest. Light: the blowtorch's hard blue-white flame; molten orange drips; the dark lobby behind. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "06547f70-38b9-4510-ab5f-2ca8048de03c"
+}

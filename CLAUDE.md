@@ -69,6 +69,22 @@ description: those load into every session, and that is how one story's style be
 (400+ Bank Robbery takes in one voice; every story's images in GPOM's dark register). Rules and templates:
 [`docs/stories/STYLE.md`](./docs/stories/STYLE.md). Check: `python3 scripts/style-lint.py`.
 
+## Rules are a loose guide (Jack, 2026-10-29)
+
+Rigid rules fly in the face of creativity. **Every creative rule in this repo is a guide, not a
+gate**: the skills, the engine manuals, a story's `look.md` / `sound.md` (even a LOCKED part), the
+saved research and memory. Use what is useful as a starting point and leave room to experiment;
+when you depart from a guide, say which one and why. Not loosened, because they are not taste: the
+law and footage licences, no AI people composited into real footage, accounts and money, the logo,
+the coin's trust statement, and engine mechanics that simply fail otherwise (policy blocks, UI traps).
+
+**The same-prompt check runs on every prompt.** `scripts/variations/fresh.py` compares a new prompt
+with every prompt already sent (recipe cards, specs, rounds) and flags an identical prompt, a near
+copy, or habit phrases that have crept into many prompts. A hook in `.claude/settings.json` runs it
+before every Flow generation and every `suno.mts` call; for anything else (an AI Studio profile, a
+prompt Kai or Jack will paste by hand) run it yourself. It reports, it never blocks: rewrite the
+repeat, or keep it on purpose and say so. Exploring rounds still go through `variations`.
+
 ## Repo map
 
 | Path | What | Start here if… |
@@ -90,7 +106,7 @@ description: those load into every session, and that is how one story's style be
 | `packages/premiere-mcp` | `@badcode/premiere-mcp` — the MCP server + UXP panel that drive Premiere from WSL ([tool reference](./packages/premiere-mcp/README.md)) | …you're changing the bridge itself |
 | `docs/video-fx/` | Which tool for the job — **[`hybrid-method.md`](./docs/video-fx/hybrid-method.md) (the lanes are LAYERS: Veo animates the world camera-locked, Premiere moves the camera, ffmpeg does what must be exact — and 8s is not a limit)**, lane choice (Flow / sourcing / ffmpeg / Premiere), **[`ffmpeg-catalogue.md`](./docs/video-fx/ffmpeg-catalogue.md) (319 video filters + the 133-plugin frei0r shelf — the twin of Premiere's catalogue; asked what effects we have, list BOTH)**, the free stack, the 20 research briefs, [`delivery.md`](./docs/video-fx/delivery.md) (**the QC gate before anything ships** — run `scripts/delivery-qc.sh`) and [`footage-sources.md`](./docs/video-fx/footage-sources.md) (68 footage sources, tiered green/amber/red; **the £100/£200-per-film footage budget** and the credits ruling live there). **No paid plugins; footage is free-first with a tiny licence budget as a stop gate** | …you're choosing an effect, wondering if a tool exists, looking for real footage, or about to upload |
 | `docs/story-craft/` | Story-craft toolkit (`story-craft` skill) — [`principles.md`](./docs/story-craft/principles.md) (30 graded principles + 16 house rulings), [`checklist.md`](./docs/story-craft/checklist.md) (the adversarial review pass), [`narrator.md`](./docs/story-craft/narrator.md), [`forms.md`](./docs/story-craft/forms.md), [`evidence.md`](./docs/story-craft/evidence.md), [`case-studies.md`](./docs/story-craft/case-studies.md); [`symptoms.md`](./docs/story-craft/symptoms.md) (**start here** when something is wrong and you don't know what) and [`briefs.md`](./docs/story-craft/briefs.md) (every "brief NN" resolved to its section) | …you're making a story more engaging or reviewing whether it is |
-| `docs/cinematography/` | Shot-craft toolkit (`shot-craft` skill) — **what a shot should BE**, tool-agnostic and built to outlive Flow: [`symptoms.md`](./docs/cinematography/symptoms.md) (**start here** when something looks flat / boring / "like AI" and you don't know why), [`principles.md`](./docs/cinematography/principles.md) (26 graded principles, 3 gates, 8 house rulings, 1 **open** ruling), [`frame.md`](./docs/cinematography/frame.md) (composition, depth, light, colour, lens), [`motion-and-cutting.md`](./docs/cinematography/motion-and-cutting.md) (**§4 = re-cutting footage that already exists**), [`stills.md`](./docs/cinematography/stills.md), [`registers.md`](./docs/cinematography/registers.md) (the monumental register **and its problem**), [`evidence.md`](./docs/cinematography/evidence.md) (grades + the never-cite list) | …you're designing a shot, judging one, or re-cutting a scene |
+| `docs/cinematography/` | Shot-craft toolkit (`shot-craft` skill) — **what a shot should BE**, tool-agnostic and built to outlive Flow: [`symptoms.md`](./docs/cinematography/symptoms.md) (**start here** when something looks flat / boring / "like AI" and you don't know why), [`principles.md`](./docs/cinematography/principles.md) (26 graded principles, 3 gates, 8 house rulings, 1 **open** ruling), [`frame.md`](./docs/cinematography/frame.md) (composition, depth, light, colour, lens), [`motion-and-cutting.md`](./docs/cinematography/motion-and-cutting.md) (**§4 = re-cutting footage that already exists**), [`stills.md`](./docs/cinematography/stills.md), [`registers.md`](./docs/cinematography/registers.md) (GPOM's monumental register **and its problem**, and the others a story may pick), [`evidence.md`](./docs/cinematography/evidence.md) (grades + the never-cite list) | …you're designing a shot, judging one, or re-cutting a scene |
 | `.claude/skills/` | The skills (22). Map below in **Skills**; the 2026-10-23 audit that shaped them is [`design/2026-10-23-skills-audit.md`](./design/2026-10-23-skills-audit.md). Retired skills sit in [`.claude/skills-archive/`](./.claude/skills-archive/README.md), not loaded | …you want to know which skill does what |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |
 | `apps/web` | The website (Vite + React + TS SPA) | …you're building pages/routes |

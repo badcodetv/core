@@ -484,3 +484,15 @@ beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
     loaded its key into the `before` snapshot, so it counted as new, the wait ended at once, and the harvest
     downloaded the previous clip again (caught only by md5). Wait until **no** top tile is pending (a percentage, or
     no media key), after a 30 s floor, and skip any tile already harvested or any file whose md5 is already on disk.
+
+## 2026-10-28: Characters, Speakeasy Mint ALT (10 made, project `706836d3`)
+
+- `flow_create_character` twice threw `CHARACTER_NOT_FOUND` for the name it had just typed; the Character existed as
+  "Untitled character" and the name appeared minutes later (once) or never (once). Renaming by id
+  (`/character/<id>` → Edit name → fill → Enter → Done) saved it. Bodies added afterwards with `flow_character_body`
+  (tile route) landed every time.
+- `scripts/flow/.tmp/br-make-chars.mjs` made 7/9 cleanly in one run; one `waitForURL` timeout left an unnamed
+  Character with its portrait; one portrait upload (the same image, three tries, two routes) hung at 99% and never
+  saved. A different portrait image of the same character went in first time. Cause unknown (a filter on that image
+  is a guess, not shown).
+- Scratch helpers: `sm-fix-chars.mjs`, `sm-baker-portrait.mjs`, `sm-rename.mjs`, `sm-verify.mjs` (tabs per Character id).

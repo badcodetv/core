@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-mask1-3/00-b.jpg",
+ "made": "2026-10-30T11:15:05.072Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A jeweller's shop in the 1920s on a hot, bright afternoon, seen from counter height across a glass case at about arm's length, on a 40mm lens. In the middle of the frame a broad man in a chalk-striped mustard suit, collar turned up and black leather gloves on, has set a ruby tiara on top of his mask and turned his head three-quarters toward us, tilted to admire himself. His whole head is in a hand-knitted balaclava of plum wool, slightly uneven knit-two-purl-two rib, its long neck tucked into his collar, with unbroken knit running across the place where his eyes and mouth would be. A thin cream wool ring is chain-stitched around his face, as wide as the face from brow to chin. High inside that ring, over his left eye and on the right of the picture, pressed up against the ring's inner edge, sits one small triangle cut from a single piece of solid red felt, its corners rounded, sewn flat with tiny stitches round its edge. The middle of the ring is bare plum wool. On the right the elderly jeweller, in a bottle-green waistcoat with sleeve garters and a loupe pushed up on his brow, holds up a silver hand mirror with both hands, mouth tight, a man giving the worst fitting of his career. A fistful of pearl ropes hangs from the masked man's gloved hand. Behind them at the back cabinet a second man, in the same hand-knitted mask made the same way but in bottle-green wool with an oatmeal ring and the same red felt triangle over his left eye, gloved, sweeps a velvet tray of rings into an open doctor's bag. Hard sun comes from high on the right through a striped lemon and white awning, throwing slanted bars of shadow across walnut cabinets, emerald velvet and the plum wool, and every stone in the case catches small white points. The walls are deep painted peacock green, the air dusty, the window a bright blur of street. Film grain, rich saturated dye colour, deep shadow inside the bars. The picture runs right to the edges of the frame.\n\nThanks.",
+ "source_id": "376a61fa-ea35-4ead-8b2a-6e00f9283ab3"
+}

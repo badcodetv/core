@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s08-a.mp4",
+ "made": "2026-10-29T18:59:12.590Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera behind a row of cut-glass whisky decanters. The gangsters and the mayor sit frozen at the poker table, every head turned to the baker in the doorway holding his small loaf. The camera dollies slowly sideways behind the decanters; their facets split the room into sliding, repeated slices, so the mayor's face and the baker's figure multiply, drift apart in amber and green, and snap back together as each facet passes, like a prism lens turning. The whisky inside sways with a faint amber glow. The only movement at the table is ash dropping from one cigar onto the chips. In the last 2 seconds the camera clears the glass and tilts up to the green-shaded lamp swinging gently over the table. Sound: a clock ticking, the lamp chain creaking. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s08.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s08.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "2e652e9c-d14f-48b8-ab39-e510f98487e9"
+}

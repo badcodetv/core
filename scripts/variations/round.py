@@ -17,17 +17,21 @@ writers, the sameness gate, and a stamp so nobody hand-edits the round.
   gate <dir>      reads writers/<name>.json, runs the sameness gate and the checks. Pass →
                   round.json + round.gate (the stamp). Fail → writers/<name>.redo.md for each
                   offender; after two rewrites a third failure is a STOP.
+  check <dir>     verifies round.json against its gate stamp and prints each prompt's settings.
+                  Exit 1 if the round was edited after the gate (or never gated). Flow rounds: run
+                  this BEFORE the session makes the calls — one flow_generate_image (or
+                  flow_generate_video) per round.json prompt, its text, model and aspect verbatim.
   run <dir> <title> [--yes] [--only a,b]
-                  Suno only: checks the stamp, then one Create per prompt, verbatim, via
-                  scripts/suno/suno.mts grid. Dry run without --yes. (Flow rounds are run by the
-                  session, one flow_generate_image call per round.json prompt, text verbatim.)
+                  Suno: checks the stamp, then one Create per prompt, verbatim, via
+                  scripts/suno/suno.mts grid. Dry run without --yes. Flow: the same as `check`.
 
 <dir> holds the raw inputs, never a paraphrase:
   ask.md        REQUIRED  the human's request, verbatim (paste it, do not summarise it).
                           (jack.md is still read, for old rounds.)
   kind          optional  "suno" (default) or "flow"
-  story         optional  the story's slug. Its sound.md (suno) or look.md (flow) goes into the
-                          brief verbatim, so a round stays inside the story's style.
+  story         REQUIRED  the story's slug. Its sound.md (suno) or look.md (flow) goes into the
+                          brief verbatim, so a round stays inside the story's style. A round that
+                          belongs to no story says so with an empty file named `nostory` instead.
   explore       optional  present = a round to FIND a style: only the story file's "Rules for this
                           story" and "Never" sections go in, not the locked style.
   lyrics.txt    suno: REQUIRED  the lyric words only, no cue tags
@@ -38,6 +42,12 @@ writers, the sameness gate, and a stamp so nobody hand-edits the round.
   keep.txt      optional  REFINE round: the liked take's own box/prompt, verbatim. Writers keep it
                           and change only what was asked; its words may be shared.
   forbid.txt    optional  phrases no prompt may contain, one per line (e.g. a story's "Never")
+  locked-settings.json  optional  settings the story's file LOCKS for this part, e.g.
+                          {"model": "Nano Banana 2", "aspect": "16:9"}. Writers are told to use them,
+                          the gate checks every prompt does, and the sameness gate's all-identical-
+                          settings failure then looks only at the other settings.
+  preamble.txt  optional  a LOCKED preamble from the story's look.md/sound.md, verbatim. Writers are
+                          told to use it as-is; its words are exempt from the sameness gate.
   count         optional  how many prompts (default: the ideas writer chooses)
   workspace     optional  Suno workspace for run
 """
@@ -52,9 +62,17 @@ from sameness import gate as sameness_gate  # noqa: E402
 SUNO_SETTINGS = """Settings you choose per prompt: model "v6" or "v6-wild"; variety "off"/"normal"/"high"/"extra"/"max";
 weirdness 0–100; styleInfluence 0–100; vocalGender "male"/"female"/null; durationSec 1–300; maxMode true/false."""
 
+FLOW_SETTINGS = """Settings you choose for your prompt, guided by the story's look above (if it names a model or
+aspect for this part, use that): "model" — the Flow model, e.g. "Nano Banana 2", "Nano Banana Pro" (stills) or
+"Omni Flash", "Veo 3.1 Fast" (clips); "aspect" — "16:9", "9:16", "1:1", "4:3", "3:4", "4:5", "21:9" (stills; clips
+are "16:9" or "9:16"). Unless the story fixes them (see above), the round's prompts must not all share one set of settings."""
+
+# Flow writers choose model and aspect too (2026-10-29): before, a Flow round had no way to say,
+# and every prompt fell through to the tool's defaults.
 KEYS = {"suno": ["name", "style", "exclude", "lyrics", "model", "variety", "weirdness",
                  "styleInfluence", "vocalGender", "durationSec", "maxMode"],
-        "flow": ["name", "prompt"]}
+        "flow": ["name", "prompt", "model", "aspect"]}
+FLOW_ASPECTS = ("1:1", "3:2", "2:3", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9", "1:4", "4:1", "1:8", "8:1")
 MAX_REWRITES = 2
 
 
@@ -118,6 +136,13 @@ def base_brief(d, kind):
         parts.append(style)
     if read(d, "forbid.txt"):
         parts.append("## Never write these\n\n" + read(d, "forbid.txt"))
+    if locked(d):
+        parts.append("## Settings the story fixes for this part\n\nUse exactly these values for these keys "
+                     "(choose the others yourself):\n\n```json\n" + json.dumps(locked(d), indent=2) + "\n```")
+    if read(d, "preamble.txt"):
+        parts.append("## The story's locked preamble\n\nStart your prompt with this text exactly as written "
+                     "(it is the story's own, and is exempt from the sameness check); write everything after it "
+                     "in your own words.\n\n```\n" + read(d, "preamble.txt") + "\n```")
     if kind == "suno":
         parts.append("## The lyrics\n\nUse these words exactly — do not change, add or remove any word or "
                      "spelling. You may add section tags and short directions in square brackets. Keep "
@@ -141,6 +166,11 @@ the engine's record:
 ```""" if keep else ""
 
 
+def locked(d):
+    f = Path(d) / "locked-settings.json"
+    return json.loads(f.read_text()) if f.exists() else {}
+
+
 def write_out(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text)
@@ -153,6 +183,9 @@ def brief(d):
     need = ["lyrics.txt"] if kind == "suno" else ["subject.md"]
     if not (read(d, "ask.md") or read(d, "jack.md")):
         sys.exit(f"🔴 {d/'ask.md'} is required (the human's words, verbatim)")
+    if not read(d, "story") and not (d / "nostory").exists():
+        sys.exit(f"🔴 {d/'story'} is required: the story's slug (its sound.md / look.md goes into the brief). "
+                 f"A round that belongs to no story must say so: create an empty file {d/'nostory'}.")
     for f in need:
         if not read(d, f):
             sys.exit(f"🔴 {d/f} is required for a {kind} round")
@@ -201,7 +234,7 @@ Write ONE prompt for this experiment, and only this one:
 
 {own}
 
-{SUNO_SETTINGS if kind == 'suno' else 'Write the prompt as one paragraph of plain description: what is in the frame, the camera, the light, the palette. No film titles, no artist names.'}
+{SUNO_SETTINGS if kind == 'suno' else 'Write the prompt as one paragraph of plain description: what is in the frame, the camera, the light, the palette. No film titles, no artist names.' + chr(10) + chr(10) + FLOW_SETTINGS}
 {extra}
 Write a short note on what shaped it (with source URLs) to `{(Path(d) / 'writers' / (idea['name'] + '.notes.md')).resolve()}`,
 and write ONLY a single JSON object to `{(Path(d) / 'writers' / (idea['name'] + '.json')).resolve()}`
@@ -238,6 +271,17 @@ def problems(d, kind, p):
             out.append("the lyric words are not exactly the given lyrics (a word was changed, added, dropped or reordered)")
         if len(p.get("style", "")) > 1000:  # Suno caps the Style box at 1,000 characters (SR7 lost a prompt to it)
             out.append(f"the Style box is {len(p['style'])} characters; Suno's limit is 1000")
+    if kind == "flow":
+        if not str(p.get("model") or "").strip():
+            out.append("no model — choose one, guided by the story's look")
+        if p.get("aspect") not in FLOW_ASPECTS:
+            out.append(f"aspect {p.get('aspect')!r} is not one of {', '.join(FLOW_ASPECTS)}")
+    for k, v in locked(d).items():
+        if p.get(k) != v:
+            out.append(f"{k} is {p.get(k)!r}, but the story fixes it at {v!r} for this part")
+    pre = read(d, "preamble.txt")
+    if pre and not (p.get("style", "") if kind == "suno" else text).strip().startswith(pre.strip()):
+        out.append("it does not start with the story's locked preamble, verbatim")
     for bad in filter(None, (l.strip().lower() for l in read(d, "forbid.txt").splitlines())):
         if bad in (p.get("style", "") if kind == "suno" else text).lower():
             out.append(f"it asks for '{bad}', which this story never allows")
@@ -256,7 +300,7 @@ def gate(d):
     passes = int(passes_f.read_text()) if passes_f.exists() else 0
     round_ = [prompts[n] for n in names]
     print(f"═══ gate, pass {passes + 1}")
-    offenders = sameness_gate(round_, read(d, "keep.txt"), kind)
+    offenders = sameness_gate(round_, read(d, "keep.txt"), kind, read(d, "preamble.txt"), tuple(locked(d)))
     faults = {n: f for n in names if (f := problems(d, kind, prompts[n]))}
     for n, f in faults.items():
         print(f"🔴 {n}: " + "; ".join(f))
@@ -285,14 +329,39 @@ def gate(d):
     sys.exit(f"\n🟡 {len(todo)} to rewrite: spawn one subagent per .redo.md, then run gate again.")
 
 
-def run(d, title, yes, only=None):
-    d = Path(d)
-    if kind_of(d) != "suno":
-        sys.exit("🔴 run is Suno only. A Flow round: one flow_generate_image per round.json prompt, verbatim.")
-    body = (d / "round.json").read_text()
+def stamped(d):
+    """round.json's text, or exit if it does not match the stamp the gate wrote."""
+    f = d / "round.json"
+    if not f.exists():
+        sys.exit(f"🔴 {f} does not exist — the round has not passed the gate.")
+    body = f.read_text()
     if hashlib.sha256(body.encode()).hexdigest() != read(d, "round.gate"):
         sys.exit("🔴 round.json does not match its gate stamp — it was edited after the gate, or never "
                  "gated. Re-run gate; never hand-edit a round.")
+    return body
+
+
+def check(d):
+    """Verify the stamp (both kinds) and print what each prompt will run with."""
+    d = Path(d)
+    kind = kind_of(d)
+    prompts = json.loads(stamped(d))
+    print(f"✅ round.json matches its gate stamp ({len(prompts)} prompts)")
+    for p in prompts:
+        if kind == "flow":
+            print(f"  {p['name']}: model={p['model']!r} aspect={p['aspect']!r}")
+        else:
+            print(f"  {p['name']}: {p['model']} variety={p['variety']} w={p['weirdness']} style={p['styleInfluence']}")
+    if kind == "flow":
+        print("\nRun each prompt with its own model and aspect, text verbatim (prompt → prompt, model → model, "
+              "aspect → aspect), count 1. Never change a word.")
+
+
+def run(d, title, yes, only=None):
+    d = Path(d)
+    if kind_of(d) != "suno":
+        return check(d)
+    body = stamped(d)
     workspace = read(d, "workspace") or None
     for p in json.loads(body):
         if only and p["name"] not in only:  # retry a Create that timed out, still from the stamped round
@@ -313,7 +382,7 @@ def run(d, title, yes, only=None):
 
 if __name__ == "__main__":
     a = sys.argv[1:]
-    cmds = {"brief": brief, "asks": asks, "gate": gate}
+    cmds = {"brief": brief, "asks": asks, "gate": gate, "check": check}
     if a[:1] and a[0] in cmds and len(a) == 2:
         cmds[a[0]](a[1])
     elif a[:1] == ["run"] and len(a) >= 3:

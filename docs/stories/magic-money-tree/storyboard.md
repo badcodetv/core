@@ -1148,7 +1148,7 @@ at whoever decides.
 add two words, *“I would know.”* It is the only place the film would admit who is speaking. It costs
 the rule in §2 that this film needs no knowledge of the wider BadCode story.
 
-**Material status:** original imagery in the BadCode brand register. Nothing to clear.
+**Material status:** original imagery, drafted in GPOM's near-black look (borrowed from GPOM — a candidate, not inherited; Kai to rule, 2026-10-29 audit). Nothing to clear.
 
 ## 4. Why this order holds together
 

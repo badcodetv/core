@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p01/01-a.jpg",
+ "made": "2026-10-30T15:06:30.324Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night, a 1920s city street after rain, a 16:9 picture filling the frame edge to edge. A money truck job at speed: an open black touring car runs alongside an armoured truck. A 35mm lens rides on the touring car's folded-down windscreen, looking back at a stubbled man of about sixty-five with a broad, scarred face and a grey felt hat, standing in the rear seat, chest-up and large in frame, turned near-frontal, mouth open mid-word. Canvas money bags split around his feet and banknotes whirl in an emerald beam from a tinted headlamp. Gold bulbs strung over the road light his mouth and jaw. The truck's lacquered flank fills the frame behind him, mirroring those gold bulbs as a sliding row of points. Thanks.",
+ "source_id": "bb854f26-1686-416f-8d2a-b187bc199e1a"
+}

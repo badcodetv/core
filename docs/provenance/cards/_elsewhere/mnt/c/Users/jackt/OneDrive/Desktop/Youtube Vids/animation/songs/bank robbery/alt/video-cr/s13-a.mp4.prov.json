@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s13-a.mp4",
+ "made": "2026-10-29T19:11:48.995Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera from inside the firebox looking out. The mayor drives the shovel forward and tips the coal onto the glowing bed in front of us; sparks burst up and the coals flare orange. The press behind him keeps turning, its rollers rolling the green and purple marbled ink so the swirls stretch and fold like oil on water, and banknotes keep slapping out and fluttering down. The rising heat over the coals makes a shimmering haze that bends the whole room, the press and the mayor's grin ripple and warp as if seen through moving water. Behind him the tired stoker leans back against the wall, wiping his brow, breathing slowly. After 6 seconds the camera pushes down into the coals as one lump splits open, and a fountain of white-hot sparks fills the frame and blooms to a white glow. Sound: coal rattling off the shovel, the press clanking. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s13.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s13.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "5d80c0fd-620c-43b8-87dc-3ddf21588163"
+}

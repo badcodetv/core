@@ -22,9 +22,9 @@ verbatim so any frame can be rebuilt or re-edited from the same words.
 > These are **image** prompts. Several of these stills are later turned into
 > video; the video prompts are a separate step and are not recorded here yet.
 >
-> Nothing here goes through
-> `.claude/skills/badcode-art-direction/SKILL.md`. Karen deliberately sits
-> outside the global BadCode register — see §1.
+> Karen's look is its own: [`look.md`](./look.md). Nothing here went through the
+> retired `badcode-art-direction` skill or its "global BadCode register" (there is
+> no global register now — 2026-10-29) — see §1.
 
 ---
 

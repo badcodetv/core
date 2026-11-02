@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A31-a.jpg",
+ "made": "2026-10-28T10:58:39.557Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. A double exposure: inside the silhouette of the crowd there is a second image of the secret mint beneath them, presses and money, in burning amber and red, while the face nearest the camera stays realistic and readable. Camera at the bottom of the back stairs looking up. The two crowds, red scarves and blue scarves together, pour down the narrow stairs towards the camera, every face turned down towards us, one man at the front holding a lantern. Light: the lantern; a red lamp over the steel door at the bottom; the wet steps holding both. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b75742f9-2a2d-41f7-941e-a17c9551c39e"
+}

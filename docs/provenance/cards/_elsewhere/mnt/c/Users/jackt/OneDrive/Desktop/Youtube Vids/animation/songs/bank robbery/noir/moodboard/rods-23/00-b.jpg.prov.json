@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/rods-23/00-b.jpg",
+ "made": "2026-10-30T10:31:58.991Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Seen from high up on the catwalk of a rusted water tower at the edge of a city in 1946, at night, a long straight road runs diagonally across black farmland from the bottom left corner toward the top right. Forty or so parked jalopies line both sides of it in two ragged, uneven rows, nose in, headlamps on, so that the road is a narrow corridor of yellow light with total darkness either side of it. Grown men and women in work clothes and hats stand on running boards and car roofs, tiny at this distance, their long shadows thrown across the tarmac by the headlamps. Down the middle of the corridor two roadsters run side by side at full throttle, the size of a thumbnail, one sulphur yellow, one deep plum, each dragging a low streak of grey exhaust that glows where the headlamps catch it; the plum car has its back end stepped out a little and is a door's width from the row of bumpers. A single iron girder of the water tower, rust-orange and slightly out of focus, cuts down the left edge of the frame close to the lens, lit from beneath by a faint reflected glow. Far off in the top right corner the city sits low and off to one side, an uneven scatter of amber windows and one red-lit radio mast, with big unlit dark blocks between them, the haze over it a dull rose. The sky holds no moon. Deep shadows, heavy grain, hot yellow against pure black. The picture runs to all four edges of the 16:9 frame.\n\nThanks.",
+ "source_id": "ba8d066e-fe07-47d7-b4cd-4c0d5ab680b0"
+}

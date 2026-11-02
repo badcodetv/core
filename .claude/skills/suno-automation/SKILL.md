@@ -1,6 +1,6 @@
 ---
 name: suno-automation
-description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running the weirdness pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand; also "mass generate", "run a grid", "try every permutation", "v6 vs Wild", "set the model", "set Variety". Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
+description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running a slider pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand; also "mass generate", "run a grid", "try every permutation", "v6 vs Wild", "set the model", "set Variety". Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
 ---
 
 # Suno Automation
@@ -57,7 +57,8 @@ v6 retired v5.5 on 2026-09-09 and added form state. **Mapped live and wired into
   logging the credit balance around each Create. **`pair` is now a one-axis grid.**
 
 What the controls *do* is `suno-prompt`'s side: [`suno-v6.md`](../../../docs/suno-gpt/files/suno-v6.md) §2.
-The proposed first round, **R1 = {v6, v6-wild} × weirdness {30, 60}**, is in §9 and awaits Kai.
+Which cells a round runs (model, Variety, the slider values) comes from the story's `sound.md`,
+never from this skill; §9 of `automation.md` records the grid mechanics.
 
 ✅ **A v6 Create costs 10 credits for 2 takes** — proven 2026-09-21 across twelve Creates
 (Camping r54), custom Duration included, so a pair is 20 credits exactly as on v5.5.
@@ -122,12 +123,13 @@ npx tsx scripts/suno/suno.mts extract \
 
 # 2 ── add how to file and grade it
 #      { ...boxes, model, title, workspace, voice, styleInfluence, audioInfluence, weirdness,
-#        variety, maxMode, vocalGender, personalize, grid }   ← model is REQUIRED
+#        variety, maxMode, vocalGender, personalize, grid }
+#      ← model AND the sliders are REQUIRED, copied from the story's sound.md
 
 # 3 ── load everything. Spends NO credits.
 npx tsx scripts/suno/suno.mts load /tmp/spec.json
 
-# 4 ── or load AND generate both halves of the pair
+# 4 ── or load AND generate both cells of a slider pair (the spec names both values)
 npx tsx scripts/suno/suno.mts pair /tmp/spec.json
 
 # 5 ── or a whole grid: preview it (free), then run it
@@ -163,7 +165,7 @@ off, asserts it before every Create, and never reads, writes or checks My Taste.
 should change all of the prompts… it's an atomic action."* Changing some leaves a **hybrid nobody
 designed**.
 
-📎 **This is not theoretical.** The GPOM newsreader profile sat in My Taste under **fourteen**
+📎 **This is not theoretical.** GPOM's narration taste profile sat in My Taste under **fourteen**
 Camping cover rounds and a scouting set, demanding *one voice* for a two-man duet and *almost no
 music* for a drum-and-bass track. Every "genre X didn't work" finding from those rounds is unsafe.
 
@@ -178,7 +180,7 @@ Every round is one of these. Naming which one you are doing is the discipline.
 
 **A round that changes a prompt *and* a slider tells you nothing**, because two variables moved.
 Within one atom you may run as many slider rounds as you like — that is the cheap axis, and it is
-where the pair at weirdness 30/60 lives.
+where a slider pair lives.
 
 ### 🔴 BOLD, NOT MEEK — a genre experiment rewrites the prompt, it does not patch it
 
@@ -203,7 +205,8 @@ Style boxes:
 are the casting phrase and nothing else.)*
 
 **What may be shared, and it is a short list:** the cast, the words, and the one musical constant
-the brief actually names (for Camping: a 174 BPM drum-and-bass foundation). **Everything else
+the brief actually names (Camping's brief named its drum foundation; another story's names its own,
+or none). **Everything else
 belongs to the variation** — and two categories matter more than the genre noun itself:
 
 - 🔑 **Mix and production language decides how a record sounds.** `wide, surgical, mastered loud
@@ -310,28 +313,26 @@ round is logged. Then stop and let the human listen and pick. Record the pick, a
 `load` freely. **Do not run `pair`, or click Create, unless the user asked for that round.**
 Report the credit balance (`status` returns it) rather than assuming.
 
-### 🔑 Every attempt is a PAIR
+### 🔑 The settings come from the story — and the spec must carry them
 
-Style influence **75**, run once at **weirdness 30** and once at **weirdness 60**, titled
-`…-w30` and `…-w60`. Sometimes 30 reads better, sometimes 60 does, and the rule that predicts
-which is **not yet known** — so both always run, and each pair is a data point toward stating it.
+**There are no house slider values.** Style Influence, Audio Influence and Weirdness are written in
+the story's `sound.md` (per track, beside the picked take's boxes) and copied into the spec. A spec
+without them is refused: `suno.mts` and `take-row.mts` no longer fill a missing slider or an
+`explore` / `narrow` cell with a built-in number (2026-10-29). If `sound.md` has no settings yet,
+that is an exploring round → `variations`.
 
-Never generate at only one setting. **Record which won and why.**
+**A slider round may pair two values chosen from the story's `sound.md`** (e.g. two weirdness
+values), titled by the value (`…-w<n>`). Which value reads better is not predictable in advance,
+so a pair is a cheap data point. **Record which won and why — in the story's `sound.md`.**
 
-**On v6 the pair is one row of a grid.** Model and Variety are new slider-round axes — a cell may
-change them and nothing else, and the pair runs inside every model the round tests (R1 is
-{v6, Wild} × {30, 60}). Proposed, awaiting Kai's ruling: `automation.md` §9.
+**On v6 a pair is one row of a grid.** Model and Variety are slider-round axes too — a cell may
+change them and nothing else. The grid mechanics are in `automation.md` §9.
 
 ### 🔑 Timing — narration lands within ±10s of the picture
 
 Narration is cut against **built picture**, so a take that misses its budget costs an edit.
-**Ruled 2026-08-24: within 10 seconds of the cut's budget.** Set `durationSec` in the spec.
-
-| Cut | Budget | `durationSec` |
-| --- | --- | --- |
-| 1 · awakening | 56s | 60 |
-| 2 · the push | ~27.8s | 30 |
-| 3 · plant room | 40s | 45 |
+**Ruled 2026-08-24: within 10 seconds of the cut's budget.** Set `durationSec` in the spec, from
+the cut's budget (a story's per-cut budgets live in its own files, e.g. GPOM's narration sheet).
 
 🔴 **Always aim slightly ABOVE the budget.** Suno's duration is a **target, not a contract**, and
 it **shortens reliably but repeatedly fails to stretch**. Long trims; short is a reshoot.
@@ -351,8 +352,8 @@ long:** the same lyrics on Auto the same day came back at 4:38 and 4:55. **Set t
 
 ### 🔑 Naming
 
-`<story>-<cut>-<revision>-<model>-w<weirdness>` — e.g. `gpom-cut1-A-v6-w30`,
-`gpom-cut1-A-wild-w60`; a grid that varies Variety or Max Mode adds `-var-<step>` / `-max`. The
+`<story>-<cut>-<revision>-<model>-w<weirdness>` — e.g. `gpom-cut1-A-v6-w<n>`,
+`gpom-cut1-A-wild-w<n>`; a grid that varies Variety or Max Mode adds `-var-<step>` / `-max`. The
 script builds these from the spec's `title` (the part up to the revision). The **letter is the
 prompt revision** and advances every time the prompt changes. Never a bare letter: the sheets also use
 A/B/C for scenes.
@@ -373,7 +374,7 @@ you do not set this run is a field someone else set, and **none of them error**:
 | What leaked | How it looked | What it cost |
 | --- | --- | --- |
 | **My Taste** | invisible from the create page | fourteen Camping rounds under another song's profile |
-| **A saved Voice** | 🔴 the worst one — **overrides the casting outright**, silently | a two-man duet generated as one newsreader |
+| **A saved Voice** | 🔴 the worst one — **overrides the casting outright**, silently | a two-man duet generated in GPOM's one narrator voice |
 | **Workspace** | takes simply appear somewhere else | twelve takes filed into another story, moved back by hand |
 | **Duration** | a number left behind by another sheet | every take clipped, or padded, with nothing saying so |
 
@@ -398,7 +399,7 @@ survives into the next run, and each one has now bitten us, in this order:
 | State | How it bit | Guard |
 | --- | --- | --- |
 | **Mode + attachment** | an inherited **Cover** form generated two narration pairs as covers of a Camping track — 40 credits, and a confident false diagnosis | `formMode()` aborts on wrong mode or any attachment |
-| **Saved Voice** | an *instrumental* generation ran with `badcode newsreader` still attached, because the spec simply had no `voice` key | `load` aborts if a Voice is on and the spec asks for none |
+| **Saved Voice** | an *instrumental* generation ran with GPOM's saved Voice (`badcode newsreader`) still attached, because the spec simply had no `voice` key | `load` aborts if a Voice is on and the spec asks for none |
 | **Duration** | **eight takes came back at 1:05 apiece from specs with no `durationSec` at all** — an earlier round had set 65 and omitting the field cleared nothing | `setDurationAuto()` runs whenever `durationSec` is absent |
 
 🔑 **The law: OMITTING A FIELD IS NOT THE SAME AS CLEARING IT.** Any spec field that maps to form
@@ -478,7 +479,7 @@ Full detail in the knowledge base; this is the short list.
 
 | Trap | What it looks like | The rule |
 | --- | --- | --- |
-| **Overwrite Styles?** | Attaching a Voice offers to replace your Style box with the persona's own — for `badcode newsreader` that's the orchestral 174 BPM chant. Box looks populated afterwards. | **Always Keep Current.** The script does this and logs it. |
+| **Overwrite Styles?** | Attaching a Voice offers to replace your Style box with the persona's own — for GPOM's saved Voice (`badcode newsreader`) that's GPOM's own track style. Box looks populated afterwards. | **Always Keep Current.** The script does this and logs it. |
 | **Lexical lyrics** | `fill()` puts all lines in ONE paragraph with raw `\n`. Renders convincingly, structurally destroyed. | Insert line by line. **Verify by counting `<p>`, never characters.** |
 | **Two panels mounted** | Selectors match twice; one copy hidden, one at negative `y`. | Scope to the Advanced panel via the styles wrapper; keep `offsetParent !== null`. |
 | **Navigation wipes the form** | Clicking Library or reloading clears everything. No draft recovery. | Never browse mid-load. Re-run `load`. |

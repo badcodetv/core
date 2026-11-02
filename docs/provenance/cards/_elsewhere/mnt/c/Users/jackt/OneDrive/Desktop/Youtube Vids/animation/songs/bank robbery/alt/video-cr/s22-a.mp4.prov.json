@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s22-a.mp4",
+ "made": "2026-10-29T19:21:33.898Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts. Low angle between the boots in the foreground, in the flour-dusted basement. The two police officers come down the last steps, tommy guns held upright with the muzzles pointed at the ceiling, and stop at the bottom, looking round, puzzled. The bakers in white hats stand stiffly by the sacks; the one with the trumpet slides it slowly behind his back. The mirror ball turns overhead, its specks drifting across the beams. The psychedelic layer is the ovens' heat: a rising haze shimmers out of every firebox and bends the brick wall and the iron ovens in slow ripples, and flour hanging in the air catches the mirror ball's beams as thin shafts of orange and white. By six seconds the haze ripples harder and the oven glow pulses. Camera pushes slowly forward along the floor toward the staircase. In the last second it settles on the pale, hazy daylight at the top of the stairs. Real-time speed, vintage film camera. Sound: footsteps on wooden stairs, crackling fires. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s22.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s22.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "ec67fdd3-1b8e-4b21-99af-17a05c5eca28"
+}

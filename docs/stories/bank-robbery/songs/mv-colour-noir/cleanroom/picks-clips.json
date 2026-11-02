@@ -1,0 +1,611 @@
+{
+ "title": "Colour Noir Clips",
+ "eyebrow": "Bank Robbery MV · colourful noir · clips",
+ "heading": "Colourful noir: the first clips",
+ "intro": "Your picked stills with no fixes needed, animated on Omni Flash, 8 seconds each, with the sound off because the song replaces it. Each clip ends on something the editor can cut on: a pillar crossing the lens, a whip pan, a headlamp flare. The poker table (den3) and riverboat (mask4) were refused by Flow, so they aren't here.",
+ "sections": [
+  {
+   "h": "Round 3: your new start frames",
+   "lede": "Simple and plain, from your notes. Pick a take, or leave a note.",
+   "groups": [
+    {
+     "slot": "r3-clip-pov1",
+     "title": "pov1",
+     "line": "Ends on: The barn has passed out of the right of the windscreen and the headlamps light empty road running into the dark.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/pov1-r3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/pov1-r3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-clip-pov3",
+     "title": "pov3",
+     "line": "Ends on: The car crosses into the tunnel and black fills everything beyond the windscreen, a clean place to cut.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/pov3-r3-a.mp4",
+       "label": "a"
+      }
+     ]
+    },
+    {
+     "slot": "r3-clip-rods1",
+     "title": "rods1",
+     "line": "Ends on: Same framing as the start, both cars in the same places with a longer tail of dust; it simply ends.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/rods1-r3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/rods1-r3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-clip-rods4",
+     "title": "rods4",
+     "line": "Ends on: The two cars a little closer in the channel, still well short of the camera; it simply ends.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/rods4-r3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/rods4-r3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-clip-safe1",
+     "title": "safe1",
+     "line": "Ends on: The safe scraping along the cobbles with sparks at its corner, chain taut and the car still in frame, ready to cut on the motion.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/safe1-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/safe1-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r3-clip-safe3",
+     "title": "safe3",
+     "line": "Ends on: Sedan and safe pass out of the bottom of the frame behind the rail, leaving the empty street and a line of sparks dying on the cobbles.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/safe3-r3-a.mp4",
+       "label": "a"
+      }
+     ]
+    },
+    {
+     "slot": "r3-clip-chase2",
+     "title": "chase2",
+     "line": "Ends on: The yellow car a little further across the junction with the steam still drifting; it simply ends.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/chase2-r3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/chase2-r3-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 2: your approved stills",
+   "lede": "One plain action per clip, as your notes asked. The singer isn't singing yet: lip sync comes later. The riverboat (mask4) was refused by Flow.",
+   "groups": [
+    {
+     "slot": "r2-clip-mask1",
+     "title": "mask1",
+     "line": "Ends on: The man holding his final tilt, no camera move, a clean cut point.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/mask1-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/mask1-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-mask3",
+     "title": "mask3",
+     "line": "Ends on: Locomotive steam covering the whole frame, cut at full coverage.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/mask3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/mask3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-safe4",
+     "title": "safe4",
+     "line": "Ends on: Headlamp glare blooming from the rear window until the lens flares out.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/safe4-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/safe4-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-den1",
+     "title": "den1",
+     "line": "Ends on: The same framing, the brush still circling; it simply ends.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/den1-a.mp4",
+       "label": "a"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-den4",
+     "title": "den4",
+     "line": "Ends on: A fast leftward whip pan, at peak blur on the orange furnace light.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/den4-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/den4-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-bridge1",
+     "title": "bridge1",
+     "line": "Ends on: The black funnel fully covering the lens.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/bridge1-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/bridge1-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-bridge2",
+     "title": "bridge2",
+     "line": "Ends on: The dark plum wool of his jacket filling the frame.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/bridge2-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/bridge2-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-bridge3",
+     "title": "bridge3",
+     "line": "Ends on: The same symmetrical frame with the shadows still swaying; it simply ends.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/bridge3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/bridge3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-bridge4",
+     "title": "bridge4",
+     "line": "Ends on: The headlamp's warm glare washing over the frame to near white.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/bridge4-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/bridge4-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "r2-clip-chase2",
+     "title": "chase2",
+     "line": "Ends on: The tank's dark iron leg covering the frame, cut at full coverage.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/chase2-r2-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/chase2-r2-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Car chases",
+   "lede": "Pick a take, or leave a note on what to change.",
+   "groups": [
+    {
+     "slot": "clip-chase1",
+     "title": "chase1",
+     "line": "Ends on: Full-frame black iron from the pillar passing the lens, cut inside the black.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/chase1-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/chase1-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-chase2",
+     "title": "chase2",
+     "line": "Ends on: Peak leftward motion blur past the tank's leg, travelling the same way as the roadster, ready to cut into a shot moving in that direction.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/chase2-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/chase2-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-chase3",
+     "title": "chase3",
+     "line": "Ends on: The motorcycle's headlamp flaring the whole frame white, cut on the flare into the next shot's brightest light.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/chase3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/chase3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-chase4",
+     "title": "chase4",
+     "line": "Ends on: Cabin and oval window both gone to black under the arch, cut on that black.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/chase4-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/chase4-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The first-person driver",
+   "lede": "Pick a take, or leave a note on what to change.",
+   "groups": [
+    {
+     "slot": "clip-pov1",
+     "title": "pov1",
+     "line": "Ends on: The green girder crosses the lens and the frame is fully black; cut inside that dark.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/pov1-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/pov1-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-pov2",
+     "title": "pov2",
+     "line": "Ends on: The whip pan to the right at peak blur, streaks of light crossing the dark pillar; cut at the peak.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/pov2-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/pov2-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-pov3",
+     "title": "pov3",
+     "line": "Ends on: Dark deck fills the frame and the car slams onto it with one hard jolt; cut on the impact, matching a jolt at the start of the next shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/pov3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/pov3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-pov4",
+     "title": "pov4",
+     "line": "Ends on: The crimson sheet covers the lens completely, a full frame of red cloth with light through the weave; cut there onto a red shape or light.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/pov4-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/pov4-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Hot rod racing",
+   "lede": "Pick a take, or leave a note on what to change.",
+   "groups": [
+    {
+     "slot": "clip-rods1",
+     "title": "rods1",
+     "line": "Ends on: Full-frame pale dust with no car or horizon visible, ready to cut to the next shot's camera clearing steam, smoke or fog.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/rods1-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/rods1-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-rods2",
+     "title": "rods2",
+     "line": "Ends on: Mid-whip, the vertical girder blurred across the full frame, ready to cut on the blur to a matching lamp post, pillar or exhaust stack.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/rods2-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/rods2-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-rods3",
+     "title": "rods3",
+     "line": "Ends on: The live headlamp's round white flare filling the frame, ready to match into a bright round lamp in the next shot.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/rods3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/rods3-b.mp4",
+       "label": "b"
+      }
+     ]
+    },
+    {
+     "slot": "clip-rods4",
+     "title": "rods4",
+     "line": "Ends on: The car's dark flank covering the full frame at arm's length, a real wipe ready to open on the next shot as the car clears.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/rods4-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/rods4-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Prohibition cities",
+   "lede": "Pick a take, or leave a note on what to change.",
+   "groups": [
+    {
+     "slot": "clip-city1",
+     "title": "city1",
+     "line": "Ends on: Dark girder steel across the whole frame, with the cut hidden on it.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/city1-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/city1-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The dragged safe",
+   "lede": "Pick a take, or leave a note on what to change.",
+   "groups": [
+    {
+     "slot": "clip-safe2",
+     "title": "safe2",
+     "line": "Ends on: Dark green iron filling the lens at the top of the safe's bounce, ready to cut to a dark shape of similar size moving out of the frame.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/safe2-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "c",
+       "src": "vid/safe2-c.mp4",
+       "label": "c"
+      }
+     ]
+    },
+    {
+     "slot": "clip-safe3",
+     "title": "safe3",
+     "line": "Ends on: The railing's dark upright blacks out the frame, replacing the suggested chimney because the railing is already in the start frame and nothing new has to appear.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "vid/safe3-a.mp4",
+       "label": "a"
+      },
+      {
+       "id": "b",
+       "src": "vid/safe3-b.mp4",
+       "label": "b"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

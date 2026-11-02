@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r2-bridge4/00-b.jpg",
+ "made": "2026-10-30T11:24:37.087Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Close and long-lens, about an 85mm view from low beside the front wing of a parked car: a huge chrome bowl headlamp burns out of focus at the extreme edge of the frame, cut in half by that edge, and it is the only light on the man who fills the other two-thirds of the picture. He is the singer, a broad man in his forties at a period microphone, thick through the neck and heavy in the jaw, his black hair combed back hard with brilliantine and going silver at the temple nearest the lamp. His nose was broken long ago and set with a bump and a slight lean, and heavy black eyebrows sit low over his closed eyes. He wears a deep plum chalk-stripe jacket with wide peaked lapels over a white collar and a dark knotted tie. The light rakes across him from the lamp and from low down, showing the pores, the grey in his stubble, the small lines around his eye, the weave of the wool, the scuffed chrome of the microphone and the one worn gold ring on the big hand wrapped around its stand; the far side of his face falls away into near black. His mouth is closed, his nostrils slightly flared and his chest lifted: the held instant before the next line. The night is cold, and the breath he has just let go hangs in the headlamp beam as a thin lit drift of vapour beside his cheek. Far behind him, gone soft, a stone bridge pier rises and four out-of-focus musicians stand in the outer spill of the beam: a very tall thin shape with a bass, a stout shape with the glint of a trumpet, a slim young man with a clarinet, a grey-haired woman behind a small drum kit. Beyond them the river is pure blur, big overlapping discs of red, pale gold and bottle green hanging in the dark. The picture fills the frame to every edge.\n\nThanks.",
+ "source_id": "25941154-24e1-4454-8f10-0170c845101b"
+}

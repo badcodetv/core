@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-02-11/04-b.jpg",
+ "made": "2026-10-29T16:41:55.580Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, Chicago, January 1928: a tenement attic under the slates, seen through a small attic window pane so thick with frost that only a ragged thawed patch in the lower corner stays clear. Through that patch, close and low, an old woman with a deeply lined face and a mole on her cheek, a grey wool shawl over her head, cups her cracked hands round one stub of tallow candle on an upturned crate. Her breath hangs as a lit cloud in front of her mouth. Icicles hang from the rough beams behind her; frost furs a cold iron stove, a chipped enamel jug, a hook with a man's old coat. The candle is the only light, and the black around it is total. The ice ferns on the glass catch that one flame and break it apart: every frost crystal throws a spectral starburst, violet, green and amber needles fanning across the frame, a ring of rainbow halo around the flame like a cold moon, the colour strongest where the ice is thickest. The camera sits slightly tilted, too close to the glass, as if someone is peering in from the roof. Any paper in the room is blank.",
+ "source_id": "23c3471f-3baa-41cd-8fce-2c5a07efbee7"
+}

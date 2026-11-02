@@ -1,5 +1,11 @@
 # Sketched white shadow — Flow exploration (2026-10-21)
 
+> 🗄️ **Archive — a record of one 2026-10-21 exploration, not a template.** The prompts below describe
+> BadCode as "making drum and bass", and some carry a near-black ground and a club setting: that was
+> one story's sound and look leaking into the brand at the time. There is no BadCode house sound or
+> look ([`docs/stories/STYLE.md`](../../../stories/STYLE.md)); the logo is the only house mark
+> ([`docs/brand/README.md`](../../README.md)). Do not reuse these prompts' style words.
+
 Jack asked for the logo with **white shadows, as if sketched, but subtle**, on the ring, the red triangle and
 `badcode`, in his variant of the o (red o + small white triangle + thick white outline, bench style
 "Red o + white triangle + outline"). This is an **exploration, not the logo** — Kai's ruled logo is still

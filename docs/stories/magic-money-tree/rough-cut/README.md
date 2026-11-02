@@ -98,7 +98,7 @@ read**, and **no Flow video credit without Kai's yes on the plate**.
    source attached, Personalize off. **Never let a Playwright MCP navigate that tab** (it drives
    the same Chrome; it cost a Suno form on 30 September).
 2. **Round 1:** `python3 scripts/narration-spec.py --round1` writes six P1 specs (palettes A, B,
-   C × with and without `badcode newsreader`) to `/tmp/mmt-specs/`. Run each with
+   C × with and without `badcode newsreader` — GPOM's Voice, borrowed from GPOM, a candidate, not inherited; Kai to rule, 2026-10-29 audit) to `/tmp/mmt-specs/`. Run each with
    `npx tsx scripts/suno/suno.mts pair <spec>` (one Create, two takes, 10 credits each; 60 in all).
 3. **Record** each take from preview (null-sink capture, `docs/suno-gpt/` playback-recording
    method) into `narration/takes/`. **Pick** by listening (Gemini listen tool) for: every line

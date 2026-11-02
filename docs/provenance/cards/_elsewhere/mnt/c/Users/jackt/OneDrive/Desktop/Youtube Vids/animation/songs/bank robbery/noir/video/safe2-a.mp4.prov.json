@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/safe2-a.mp4",
+ "made": "2026-10-30T12:12:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "flow_generate_video",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-safe2-a.jpg",
+ "why": "take a saved before the harvest timed out; take b lost",
+ "prompt": "Single tracking shot, camera low to the cobbles and moving with the safe at street speed. First three seconds: the yellow car pulls hard away, its rear squatting under the load, the chain snapping taut and the green iron safe jerking after it, scraping on its lower edge so the sparks spray from that edge only. Next three seconds: the safe slams over the bumps, the chain goes slack then taut, and the car rolls on its springs with its wheels on the ground, while the headlights far behind it grow closer. Last two seconds: the safe hits a raised ridge of cobbles, kicks up and lurches back at the lens until dark green iron fills the frame. Shop signs and the marquee stay soft with motion blur.\n\nThanks."
+}

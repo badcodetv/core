@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/lipsync/stills/p03/02-a.jpg",
+ "made": "2026-10-30T15:14:50.968Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Water-level view from a rowing skiff at night, 24mm, very close: a gaunt man of about 65 with grey stubble and hollow cheeks, hatless, in a soaked dark overcoat, sits at the oars with his hands low, his face three-quarter and filling the top half of the frame. Behind him the crew's own speedboat, set alight to destroy the evidence, burns against a timber pier, and the pier has caught: tall orange flames, sparks climbing. The black harbour water mirrors the whole blaze upside down in one long smear. A violet mercury tube on the next wharf, out of frame right, lights the near side of his face and his mouth; orange rims his wet hair. Thanks.",
+ "source_id": "07fa2e29-d36a-45c0-9b55-4eee403a4730"
+}

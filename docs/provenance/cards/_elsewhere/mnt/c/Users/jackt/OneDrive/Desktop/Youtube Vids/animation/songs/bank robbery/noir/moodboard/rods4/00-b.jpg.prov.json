@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/rods4/00-b.jpg",
+ "made": "2026-10-30T10:32:55.846Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A long telephoto view straight up a vast concrete flood channel at the end of a summer dusk in 1948, taken from the shallow water in the middle of the channel, looking through the arches of three concrete road bridges that the long lens has stacked up tight behind each other like a set of nested gateways. Under the nearest arch, two cut-down roadsters are coming straight at the camera, flat out, the channel otherwise empty. One, in chalky turquoise, stays on the flat floor, ploughing through a thin sheet of water so that each front wheel throws a tall curved wing of spray. The other, in mustard yellow with a bare engine, has climbed the sloped concrete bank on the left and rides it at a steep angle, body tilted nearly forty-five degrees, its two inside wheels light, a line of grit and water falling off it downhill. The drivers are grown men, goggled, bare-headed, heads low behind the cowls. The sky behind the bridges has gone to a deep bruised magenta with one band of hot apricot at the horizon, and that band lies on the wet channel floor as a single long stripe of colour running toward the lens, broken into bars where the cars have torn the water up. On the far bridge a lone iron lamp has just come on, its small pool of sodium-yellow light falling on the concrete below it. High on the bank at right, a few silhouetted men lean on a railing with their hats on. The concrete is stained with long dark streaks of rust and water, the near arch's underside nearly black. Heat shimmer and spray soften the far distance; dense film grain and saturated dusk colour. The picture runs to all four edges of the 16:9 frame.\n\nThanks.",
+ "source_id": "712539a5-4b5a-405e-a9ba-36d16eb001a7"
+}

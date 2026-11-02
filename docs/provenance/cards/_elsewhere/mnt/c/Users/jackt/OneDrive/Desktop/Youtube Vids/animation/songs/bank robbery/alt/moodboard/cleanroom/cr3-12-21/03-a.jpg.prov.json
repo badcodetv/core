@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-12-21/03-a.jpg",
+ "made": "2026-10-29T16:45:51.631Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed: Chicago, 1928, night, seen from inside a shut bakery, low behind its front-window display. In the near foreground, out of focus, a row of tall glass sweet jars and domed glass cake covers filled with boiled sweets in raspberry red, lime, violet and amber; the street beyond is seen partly through them, bent and swollen into coloured lenses, partly through the clear glass between. Outside on the dry, ash-scuffed pavement, under one gas street lamp, a red-scarf crowd and a blue-scarf crowd shove each other: working people, young and old, men and women, Black, white and South Asian, in worn coats and mismatched caps, team colour only on their scarves and on two hand-stitched cloth banners with no lettering. Fists grab collars, a hat is knocked flying. Walking calmly through the gap between them, unhurried, is a gangster in a chalk-stripe suit and fedora, a pockmarked face and a toothpick, a lumpy canvas sack of money over his shoulder. The lamp is the only light outside; inside, a flour-dusted counter edge and a cold proving tray sit in black shadow. Camera off-centre, framed low and slightly canted. Sweet jars and windows carry no labels or lettering.",
+ "source_id": "d570f211-bf8a-4020-8b86-51791796562a"
+}

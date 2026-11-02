@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/cast/stoker.jpg",
+ "made": "2026-10-28T11:51:04.457Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s studio portrait photograph on grainy colour film, head and shoulders, turned three-quarters towards the camera, against a plain mid-grey backdrop, lit by one soft key light from the left. A muscular white man in his thirties with a thick neck, a shaved head, a heavy brow, a broken nose, a cauliflower ear and exhausted bloodshot eyes, in a soot-blackened sleeveless vest, coal dust smeared across his face and shoulders, sweat cutting clean streaks through the soot. Real skin: pores, sweat, grime. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "4:3",
+  "numOutputs": 1
+ },
+ "source_id": "3ca8698f-74b9-41ea-9e32-e8fb672c0a1f"
+}

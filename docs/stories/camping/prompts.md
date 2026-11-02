@@ -2211,7 +2211,7 @@ anomalies** is one ([arXiv 2504.21334](https://arxiv.org/pdf/2504.21334)) `[acad
 ⚠️ **This is the exact inverse of the [`1m-l` call](#1m-l--the-clip--video--written-2026-09-13-unrun),
 where the shutter clause was deliberately subtracted.** That shot was slow — doors and walking — and
 the clause buys nothing on near-static motion. This one is the fastest thing in the film. **Same
-rule, opposite answer; the rule is about the motion, never about the house style.**
+rule, opposite answer; the rule is about the motion, never about the look.**
 
 #### ⚠️ The sweat droplets are deliberately not mentioned
 

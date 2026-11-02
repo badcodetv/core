@@ -365,7 +365,7 @@ streets, three of the four playground frames, the topsoil). None is bad; each re
 stronger frame already does. They stay on the timeline's tail for Kai to put back.
 
 **What has to be made:** **four Veo clips**, all from stills that already exist and are in the
-house register — the phone-blue street, the nurse, the gold spades, the dead sapling. One take
+(GPOM's) register — the phone-blue street, the nurse, the gold spades, the dead sapling. One take
 each, camera locked. B4 and B6 are already clips. No new stills, no re-shoot.
 
 #### Rows run

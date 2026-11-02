@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/mask4-city1/01-b.jpg",
+ "made": "2026-10-30T10:26:54.597Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A night on the Chicago River in 1928, seen from a hand's breadth above the water, from the shadow beneath a double-deck bascule bridge. The riveted underside of the bridge, painted oxblood red, crosses the top of the frame and runs down the left edge as a huge cropped girder close to a 28mm lens, its rivets catching wavering light thrown up off the river. Beyond it, a tall white terracotta tower with a clock at its crown stands to the right of centre, lit from below by banks of floodlights on the roofs opposite, so that it glows cream against a deep plum sky and its upper storeys fall away into dimness. Lower warehouses along the bank stay as dark blocks with only three or four amber windows. A moored tug, its hull bottle green and its wheelhouse cardinal red, sits against the far wall under one brass lamp. The water is almost-black green. Far off it holds a smooth pale column of the white tower; nearer the lens the same column breaks into long horizontal bars of cream and amber that stretch toward the camera, dimmer than the lights that make them. Thin mist lies on the surface. Three-strip colour film with fine grain, the image running to every edge of the 16:9 frame. All signs and painted lettering are too far off and too dim to make out.\n\nThanks.",
+ "source_id": "829537c8-98c4-49e9-8d0b-ba10adfda9da"
+}

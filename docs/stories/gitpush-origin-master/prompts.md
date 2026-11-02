@@ -7,8 +7,9 @@ updated: 2026-09-11
 
 # GitPush Origin Master — prompt ledger
 
-Read `.claude/skills/badcode-art-direction/SKILL.md` first (Layer 0 — the global
-BadCode register; never copied into this file).
+Read this story's [`look.md`](./look.md) first (GPOM's MACHINE and PEOPLE registers). *(This line used
+to send you to the retired `badcode-art-direction` skill as "the global BadCode register"; there is no
+global register any more — 2026-10-29.)*
 
 > **Downfall prompt preparation, 2026-09-22:** the [Flow prompt pack](./scenes/downfall-flow-prompts.md)
 > follows Kai's new direction: mass dismissal in Times Square, travelling signals reaching
@@ -326,7 +327,7 @@ self-awareness at the top of a film about a mind that discovers it cannot be con
 - **The early "I".** The 2026-07-22 ruling says the viewer should *gradually* realise whose
   eyes they are behind. "I noticed I was looking at it" tells them at second three. Mitigating
   fact: scene 2 already says *"this one… this one is me"* thirty seconds in.
-- **Lens flare is a named exception here.** `badcode-art-direction` bans flares as an
+- **Lens flare is a named exception here.** GPOM's look (then the `badcode-art-direction` skill, now retired) bans flares as an
   AI-image tell. Kai asked for the sun behind the satellite specifically for the flare. That
   is a deliberate departure for the orbital shots only — recorded so it does not drift into
   the rest of the film unnoticed.
@@ -704,7 +705,7 @@ subtractions); and N5's board is built to **this cut's own console recipe**, so 
 **green above the crowd → red at the desk**.
 
 **Prompts and the grade spread: [`scenes/still-fine.md`](./scenes/still-fine.md).** That sheet is
-also the first run of **Variety mode** (`badcode-art-direction`), with **grade as the declared
+also the first run of **Variety mode** (then in `badcode-art-direction`, now retired), with **grade as the declared
 variable** — because running this band ladder end to end shows there is **no sunshine anywhere in
 it until the final scene**. Whichever grade wins gets a properly named band in §1.
 

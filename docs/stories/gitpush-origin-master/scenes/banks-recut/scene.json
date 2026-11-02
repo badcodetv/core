@@ -140,5 +140,10 @@
   "boards": {
     "moodboard": "https://claude.ai/artifact/6rmnZ1kiuAMKsoprF4XYBB",
     "storyboard": "https://claude.ai/artifact/NQ6uNNHk2rDAowhZY1RsfN"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames"
   }
 }

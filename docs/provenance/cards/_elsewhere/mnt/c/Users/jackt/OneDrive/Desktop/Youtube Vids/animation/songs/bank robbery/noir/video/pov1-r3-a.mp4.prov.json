@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/pov1-r3-a.mp4",
+ "made": "2026-10-30T13:22:51.875Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous shot from the driver's eyes. The camera is fixed to the car, so the cabin, bonnet and gloved hands hold their place with a light judder from the road. The car rolls forward along the dirt road at an even pace. The poles and the red barn slide past on the right and stay planted. Nobody speaks.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-pov1-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-r3-pov1-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "562e2538-0f97-4a9d-acbe-0bf812a4ea6c"
+}

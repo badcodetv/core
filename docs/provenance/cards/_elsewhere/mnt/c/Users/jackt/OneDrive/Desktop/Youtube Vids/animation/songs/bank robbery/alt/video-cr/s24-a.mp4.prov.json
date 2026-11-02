@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s24-a.mp4",
+ "made": "2026-10-29T19:24:14.142Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts. Overhead on the stoker at the furnace. He swings one full shovel of banknotes into the open firebox. As the notes hit, the flame flares up in bands of colour as the inks burn, copper green, then violet, then sodium gold, like a chemistry flame test. Sparks shoot up toward the camera and leave short glowing streaks. The big riveted pipe beside him stays dark and cold all the way up. The glowing rectangle of light on the brick wall changes colour with the flame, and as the green burns brightest it starts to ripple like light through water. Camera locked off for five seconds, then drifts slowly sideways toward the wall. In the last second the rippling green rectangle of light on the brick fills the centre of the frame. Real-time speed, vintage film camera. Sound: the shovel scraping, a roar of flame. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s24.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s24.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "2065fa59-85d8-42fd-8829-643cb9f4d9ea"
+}

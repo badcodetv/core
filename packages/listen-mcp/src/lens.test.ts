@@ -75,8 +75,10 @@ describe('listLenses / loadLens', () => {
   })
   it('gives the music lens the headings the plan names', () => {
     expect(loadLens(LENS_DIR, 'music').headings).toEqual([
-      'Overall impression', 'Drums', 'Bass', 'Lead and vocals', 'Pads, texture and effects',
-      'Mix balance', 'Energy and structure', 'What stands out',
+      // Genre-neutral since 2026-10-29 (design/2026-10-29-style-leak-audit.md §1): the old
+      // Drums / Bass / Pads / "drop, breakdown" headings steered every listen towards electronic music.
+      'Overall impression', 'Rhythm and pulse', 'Low end', 'Voice and lead', 'Harmony, texture and space',
+      'Mix balance', 'Form and energy', 'What stands out',
     ])
   })
 })

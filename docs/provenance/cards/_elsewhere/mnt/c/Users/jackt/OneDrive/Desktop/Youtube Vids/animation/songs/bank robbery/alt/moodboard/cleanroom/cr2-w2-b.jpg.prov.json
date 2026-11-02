@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr2-w2-b.jpg",
+ "made": "2026-10-29T15:37:05.360Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a 1928 Chicago gangster feature, full-bleed, shot from high on the elevated railway: the camera hangs low between two creosote-black timber sleepers, tilted thirty degrees off level, looking straight down through riveted iron girders crusted with matte coal soot and pigeon lime onto a dry, frost-dulled street corner below. In the lower-left third a dented black 1927 Packard sedan, mud caked along its running boards, swings hard round the corner, rear tyres skidding wide across the streetcar rails, its open road ahead clear toward the right of frame. From its rear window a gloved arm holds a drum-fed Thompson gun with the muzzle raised straight up at the night sky. At the bottom-right edge only the single red lamp and chrome bumper of a police Ford are entering. The street is lit by one source: a theatre canopy of bare incandescent bulbs throwing hard amber light and long black shadows across sooty brick and trampled paper scraps. An unseen train overhead is braking: white-orange wheel sparks pour down past the lens in a dense curtain, and an old glass prism held in front of the lens splits them into smeared ribbons of violet, green and molten gold that spill across the girders and halate around every bulb. Deep blacks, coarse film grain; every sign blank and illegible.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e65f9c76-4953-43ca-b700-5f6ad021b512"
+}

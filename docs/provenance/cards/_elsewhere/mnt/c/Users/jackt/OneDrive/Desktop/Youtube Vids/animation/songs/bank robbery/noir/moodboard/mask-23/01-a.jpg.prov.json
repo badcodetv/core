@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/mask-23/01-a.jpg",
+ "made": "2026-10-30T10:25:33.215Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A mail train stopped dead at night in a deep pine cutting in falling snow, in the 1920s. The camera stands low in the snow beside the track, a few feet from the locomotive's front wheel, looking back along the length of the train on a wide 24mm lens. On the right, enormous and cropped by the frame, the black wet flank of the engine leaks white steam across the ground. The carriages behind it are painted deep maroon with mustard-yellow lining, unlettered, and curve away into the dark, and the sliding door of the third car stands open with a block of yellow lamplight pouring out onto the snow. From that door a long line of figures in knitted balaclavas and heavy coats passes grey canvas mail sacks hand to hand down the track toward us, a human chain with a jaunty rhythm, one sack in mid-air between two of them. Nearest the lens, filling the left third of the frame from the chest up, the last man in the line has a sack on his shoulder and has paused to look straight at us. His balaclava is knitted in burnt orange wool crusted with snowflakes, and sewn on its forehead, big and clear, is a thin pale ring with one small red triangle inside it, off centre toward 2 o'clock, with rounded corners. Along the embankment behind him, five mail clerks in dark waistcoats and peaked caps stand in a row with their hands up and snow gathering on their shoulders. A railway flare stuck in a drift on the far side burns a raw magenta-pink, lighting the falling flakes, the steam and one side of every figure, while the yellow door lights the other side, and between those two lights the pines stay truly dark. Falling snow close to the lens streaks soft and white. Coarse film grain, saturated colour. The image extends to every edge of the frame.\n\nThanks.",
+ "source_id": "dee8a124-be5b-4596-ba6d-651f983da62a"
+}

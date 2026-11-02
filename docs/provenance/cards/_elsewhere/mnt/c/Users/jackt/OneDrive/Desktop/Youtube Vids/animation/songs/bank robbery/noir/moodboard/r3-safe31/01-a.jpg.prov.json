@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r3-safe31/01-a.jpg",
+ "made": "2026-10-30T12:31:23.710Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The instant a small safe leaves a wall, seen from across a narrow back alley at night in 1928, the camera at chest height against the opposite wall with a rusted iron drainpipe cut off by the left edge of the frame. An egg-yolk yellow sedan with a tall upright body, separate black mudguards, a running board and spoked wheels stands at a hard angle on the right, its rear wheels spinning on wet-dark cobbles and throwing thick grey tyre smoke, lit deep red by its two small tail lamps. From its rear axle a heavy chain runs dead straight, rigid as a bar, across the alley and into a ragged hole in an oxblood brick wall with a flaking bottle-green painted band. The safe, a squat cast-iron box in chipped forest-green enamel with a brass dial, hangs tilted in the air a foot outside the hole with the chain wrapped around it, while bricks, mortar and pieces of green wall fall around it through a cloud of pale dust. One bare amber bulb in a tin shade above a wooden back door, high on the left, is the only other light, so the dust glows amber on one side and red on the other, and the far end of the alley drops into true black. A man leans far out of the sedan's rear window, big enough in the frame to read clearly, dark overcoat collar turned up, both leather-gloved hands gripping the door. He has twisted round so the front of his head faces the camera almost square on, turned only slightly toward the hole in the wall, and the whole front of his mask is lit by the amber bulb. His whole head is inside a hand-knitted balaclava of marine-blue wool, slightly uneven, with a ribbed neck tucked into the collar and continuous knit running unbroken across the place where eyes, nose and mouth would be. One thin ring of cream wool, chain-stitched by hand, is a wide oval that fills the whole front of his head, reaching from his brow to his chin and from cheek to cheek. Inside that ring, level with his left eye and close against the ring at the two o'clock position as we look at him, sits one small triangle of solid red felt with rounded corners, point downward, its hand-cut edge sewn down with tiny black running stitches. The middle of the ring and everything to the left of the triangle is bare blue knit. Falling bricks are slightly blurred, while the chain, safe and mask are sharp. Rich saturated colour film with visible grain and hard shadows on the brick, the picture running edge to edge across the whole 16:9 frame.\n\nThanks.",
+ "source_id": "7cd96ceb-d263-49e5-8c59-294682cffa9e"
+}

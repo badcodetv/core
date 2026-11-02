@@ -61,7 +61,7 @@ Measured 2026-09-18 with `ffprobe` + `signalstats`:
 This is **exactly the `camping.mp4` bug** in
 [`../video-fx/delivery.md`](../video-fx/delivery.md), and it is not confined to that one file —
 it is how the whole drive exports. A player that finds no tag assumes limited range and stretches
-16–235 out to 0–255, so **everything below 16 crushes to black**. On a near-black house register
+16–235 out to 0–255, so **everything below 16 crushes to black**. On a near-black look (GPOM's)
 that is not a grading nuance, it is the picture.
 
 🔑 **So no short is ever cut with a bare `ffmpeg -ss … -t …`.** `cut.sh` does the real
@@ -128,7 +128,7 @@ tool has three modes and the choice is a per-shot judgement (the `shot-craft` sk
 
 | Mode | What it does | Use it when |
 | --- | --- | --- |
-| **`slate`** *(house default)* | 16:9 window on a near-black 1080×1920 card, hairline above and below, hook text above, captions below, `badcode.tv` at the foot | The composition is the point — monumental wides, the car park, the forest, the crowd. **Near-black IS the brand, so the card reads as design, not as a crop failure.** |
+| **`slate`** *(the default mode; the card colours come from the story's palette, `-C`)* | 16:9 window on a 1080×1920 card (GPOM's palette: near-black), hairline above and below, hook text above, captions below, `badcode.tv` at the foot | The composition is the point — monumental wides, the car park, the forest, the crowd. **On GPOM's near-black palette the card reads as design, not as a crop failure.** |
 | **`crop`** | Full-bleed centre crop to 9:16, pannable with `-p` | A single figure centred in frame. Verified on Camping 238s (forest + star trails) — **survives completely**. Full-bleed wins attention; use it whenever the shot allows. |
 | **`full`** | Letterboxed 16:9 centred on black, no furniture | Music-video cuts where the track carries it and text would be noise |
 
@@ -292,17 +292,17 @@ Watch them, then re-run with nudged in-points. The commands:
 M="/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation"
 
 # C6 — the collision. The single best 30 seconds we own.
-scripts/shorts/cut.sh -i "$M/Camping Comic/Camping Video NEW!/camping jack/Camping story video.mp4" \
+scripts/shorts/cut.sh -C scripts/shorts/palettes/gpom.sh -i "$M/Camping Comic/Camping Video NEW!/camping jack/Camping story video.mp4" \
   -s 142 -t 30 -m slate -H 'NEITHER OF THEM\nSAID IT OUT LOUD' -k "badcode.tv" \
   -o out/C6-collision.mp4
 
 # K1 — fired by a laptop.
-scripts/shorts/cut.sh -i "$M/Karen/Karen VID NEW!/Karen story vid.mp4" \
+scripts/shorts/cut.sh -C scripts/shorts/palettes/gpom.sh -i "$M/Karen/Karen VID NEW!/Karen story vid.mp4" \
   -s 22 -t 24 -m slate -H 'FIRED BY A LAPTOP' -k "badcode.tv" \
   -o out/K1-redundant.mp4
 
 # C7 — the width of a payslip, full-bleed.
-scripts/shorts/cut.sh -i "$M/Camping Comic/Camping Video NEW!/camping jack/Camping story video.mp4" \
+scripts/shorts/cut.sh -C scripts/shorts/palettes/gpom.sh -i "$M/Camping Comic/Camping Video NEW!/camping jack/Camping story video.mp4" \
   -s 232 -t 20 -m crop -H 'THE GAP BETWEEN YOU\nAND THAT MAN' \
   -o out/C7-payslip.mp4
 
@@ -372,7 +372,7 @@ guessing stops.
 9:16 file out.
 
 ```
-scripts/shorts/cut.sh -i MASTER -s START -t DUR -o OUT.mp4 [-m slate|crop|full]
+scripts/shorts/cut.sh -C PALETTE -i MASTER -s START -t DUR -o OUT.mp4 [-m slate|crop|full]   # PALETTE = the story's, e.g. scripts/shorts/palettes/gpom.sh (every Karen/Camping short so far)
                       [-H 'HOOK\nLINE'] [-k KICKER] [-c captions.srt] [-S size]
                       [-p pan] [-T mark] [-L skip loudnorm] [-n dry run]
 ```

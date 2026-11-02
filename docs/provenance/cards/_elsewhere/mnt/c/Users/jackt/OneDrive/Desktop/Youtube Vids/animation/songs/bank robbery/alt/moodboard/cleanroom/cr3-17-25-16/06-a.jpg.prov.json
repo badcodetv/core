@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-17-25-16/06-a.jpg",
+ "made": "2026-10-29T16:54:22.424Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A frame from a 35mm feature film, full-bleed, 16:9: a small Chicago bakery at dawn, 1928, seen from the dusty floor behind the shop counter. In the near bottom-left corner, the edge of a wooden trapdoor is lifted a finger's width, and a thin line of acid-green light leaks from beneath it across the worn boards and up the underside of the counter. Above, on the counter's edge, stand three tall glass jars of boiled sweets, lemon drops, red humbugs and blue aniseed balls, cutting across the upper half of the frame. Through the jars, the open street door and the dry, grey morning street beyond are broken into curved, magnified pieces of yellow, red and blue, like a cracked church window. In those coloured fragments, two American police officers in peaked caps and long blue coats, one with a walrus moustache, one with ginger sideburns, walk away down the pavement, each with a long loaf tucked under his arm, one turning back to tip his cap. Low pale-gold sunlight comes flat through the door and is the only light in the shop; the shelves stay in brown shadow, crumbs and a broom on the floor. The shop sign and any lettering stay blank.",
+ "source_id": "b4a2a4e1-0fad-4f23-bfdb-b6271c819b9a"
+}

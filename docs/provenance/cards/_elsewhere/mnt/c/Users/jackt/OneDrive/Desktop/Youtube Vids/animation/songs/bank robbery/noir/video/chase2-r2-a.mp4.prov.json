@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/chase2-r2-a.mp4",
+ "made": "2026-10-30T12:57:44.510Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked off on the rooftop, one continuous shot. Far below, the tiny yellow 1920s roadster, with its separate mudguards, running boards and spoked wheels, drives steadily left along the road and out across the junction, a little dust trailing behind it. It stays the same car. The tram, other cars and pedestrians wait where they are. In the last second, the camera pans quickly left until the dark iron leg of the water tank fills the lens.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase2-b.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-chase2-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "2f8c25ce-7568-402a-bc0a-54c382258b86"
+}

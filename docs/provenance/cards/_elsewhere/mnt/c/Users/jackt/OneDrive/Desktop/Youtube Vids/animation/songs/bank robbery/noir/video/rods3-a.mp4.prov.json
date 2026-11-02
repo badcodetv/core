@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/video/rods3-a.mp4",
+ "made": "2026-10-30T11:43:30.642Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera is bolted to the back of a car ahead, so the black bumper bar stays fixed in the foreground and everything shudders with the cobbles. The green roadster chases hard down the wet tram tracks, closing the gap the whole time. Its nose pitches over each bump, the scraping chassis throws sparks from the rail, and the driver hauls on the wheel. The right headlamp keeps growing until its white glare blooms over the lens and fills the frame. The left lamp stays dead. Shop signs stay soft and unreadable. Continuous shot, no cuts.\n\nThanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods3-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/badcode-scenes/mv-colour-noir/plates/cn-rods3-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "0c8943f7-8b79-4dc3-b033-565c5864e9d7"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s01-b.mp4",
+ "made": "2026-10-29T18:41:30.488Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, vintage film camera. From behind the driver's gloved hands, the black 1920s sedan ahead pulls away under the elevated railway, rear tyres slipping on wet cobbles, its body rolling heavily on soft springs as it swerves right. The wiper blade sweeps across the windscreen twice. Every raindrop on the glass is a tiny lens: each one holds an upside-down copy of the sedan's red tail lamp and the purple sparks from the railway above, and each wiper pass drags those hundreds of little images into long violet and amber streaks that fan across the glass and slowly bead back up. After 6 seconds the camera leans past the wheel toward a lit amber shop window on the right, until one fat raindrop fills the frame with flickering orange light. Sound: engine roar, tyres hissing on wet stone, wiper thump. No dialogue, no on-screen text.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s01.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s01.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "0a19164f-bebd-4b69-8194-1c8253e592ed"
+}

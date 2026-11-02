@@ -28,6 +28,12 @@ changes, change it in the storyboard too.
 
 **Nothing has been generated.** Section 4 is the first round.
 
+> ⚠️ **Everything GPOM-derived on this sheet is borrowed from GPOM — a candidate, not inherited; Kai to rule (2026-10-29 audit).** The method, settings,
+> template, Exclude and `badcode newsreader` Voice below are GPOM's narration style, borrowed because
+> it was the only measured narration we had. BadCode has no house sound (`docs/stories/STYLE.md`): MMT's
+> narration is EXPLORING, and after the 1 Oct recut its narrator is an AI Studio voice, not this route
+> (`../sound.md`).
+
 ---
 
 ## 1. Length, and why it is ten parts
@@ -38,7 +44,7 @@ changes, change it in the storyboard too.
   1:40**, and long takes are where lines get skipped or garbled. Nobody has tested a 5-minute read.
 - **So the film is cut into ten parts of 25 seconds to 2 minutes**, each ending on a natural break in
   the story, so a seam between takes falls where the picture changes anyway. This is the GPOM model.
-- **Rule inherited from GPOM:** a take **20 seconds or more shorter than its twin** has probably
+- **Rule borrowed from GPOM (a candidate, not inherited):** a take **20 seconds or more shorter than its twin** has probably
   skipped lines. Check it says every line before judging it.
 
 | Part | Scenes | Movement | Words | Target | Set Duration to |
@@ -58,14 +64,14 @@ Duration is set about 15 seconds under the target, because Suno overshoots (GPOM
 70 → 1:29 to 1:35). P6 and P7 are the longest; if either garbles, split it at the scene boundary
 (P6 after scene 10; P7 after scene 10a) before changing anything else.
 
-## 2. House settings (proposed; nothing measured on this film yet)
+## 2. Settings — **borrowed from GPOM — a candidate, not inherited; Kai to rule (2026-10-29 audit)**
 
-Starting point is GPOM's house, which is the only narration setting we have evidence for.
+Starting point is GPOM's narration settings, the only narration settings we have evidence for. Nothing measured on this film yet.
 
 | Control | Value | Note |
 | --- | --- | --- |
 | Model | **v6** | |
-| Voice | **Test both** in round 1: `badcode newsreader` (GPOM's saved Voice) and **no Voice** | The storyboard says the narrator is BadCode's voice, which argues for the same Voice as GPOM. But Kai asked for an *English documentary narrator*, which may want a different, older, warmer voice. Round 1 decides |
+| Voice | **Test both** in round 1: `badcode newsreader` (GPOM's saved Voice) and **no Voice** | The storyboard says the narrator is BadCode's voice; there is no house voice, so that alone does not argue for GPOM's Voice. But Kai asked for an *English documentary narrator*, which may want a different, older, warmer voice. Round 1 decides |
 | Style Influence | **50** | GPOM: dropping from 75 fixed a muffled voice |
 | Audio Influence | **65** with the Voice; n/a without | |
 | Weirdness | **25** | GPOM: 35 garbled words |
@@ -73,11 +79,11 @@ Starting point is GPOM's house, which is the only narration setting we have evid
 | Vocal Gender | unset with the Voice; **Male** without it | |
 | Duration | per part, table above | |
 
-**House rules carried over:** generate verbatim from the block; words change only with Kai;
+**Working rules borrowed from GPOM's process:** generate verbatim from the block; words change only with Kai;
 **record only when Kai says "record"**; **listen (Gemini) only when Kai asks**; one copy of each
 part, in this file only.
 
-## 3. House style — one template, three palettes to try
+## 3. Narration style — one template adapted from GPOM's (a candidate), three palettes to try
 
 The Style box is one sentence frame for every part, so the ten takes sound like one film. Only the
 blanks change per part: `{{PALETTE}}` is fixed for the whole film once round 1 picks it; `{{ARC}}`
@@ -104,7 +110,7 @@ without a word. Test one palette across the whole film first.
 - **hollow:** `No drums at all. It ends hollow, the last note fading to nothing.`
 - **resolve:** `No drums at all. The music resolves quietly on his last line and rings out.`
 
-**The Exclude box, the same for every part** (GPOM's, plus the documentary-specific bans):
+**The Exclude box, the same for every part** (borrowed from GPOM's, plus the documentary-specific bans; a candidate):
 
 ```
 singing, sung vocals, humming, chanting, choir, rap, autotune, female vocals, synth, electronic, drum kit, drum machine, percussion, breakbeat, beat, groove, steady pulse, epic, cinematic trailer, bombastic, loud orchestra, dense orchestration, swelling climax, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music louder than the voice, music over the vocal
@@ -120,7 +126,7 @@ Bevan (`Anyeyerin Bevan`) · Mone (`Moan`) · Beveridge · Macmillan · reparati
 
 **Generate P1 only**, six ways: palettes **A, B, C** × **with and without** `badcode newsreader`.
 Same words, same settings otherwise. Kai picks the palette and the voice by ear; that pick becomes
-the house for P2 to P10. Six P1 takes cost less than one wrong full film.
+this film's narration settings for P2 to P10. Six P1 takes cost less than one wrong full film.
 
 If none of the six sounds like an English documentary narrator, the next lever is **the voice, not
 the palette** (skill: "Getting a specific voice"): probe-farm a narrator in his home genre, then

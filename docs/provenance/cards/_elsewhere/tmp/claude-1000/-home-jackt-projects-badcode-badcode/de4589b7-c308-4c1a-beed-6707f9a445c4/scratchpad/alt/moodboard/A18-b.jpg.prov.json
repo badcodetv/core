@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/A18-b.jpg",
+ "made": "2026-10-28T10:47:57.233Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A realistic 1920s photograph on grainy colour film: real people with real skin, pores and stubble. The photograph is breaking up into the coarse printing dots of a 1920s newspaper: at the edges of the frame the scene is nothing but huge cyan, magenta, yellow and black dots, shrinking towards the centre, where it becomes a fully realistic photograph. Camera low across a desk, a big chrome radio microphone large in the foreground. A tall skinny man in a bowler hat with a heavy gold mayoral chain round his neck, a long narrow face, hollow cheeks and a pencil-thin grey moustache grins into it, reading from a script, a lit red lamp on the wall behind him and a gangster in a fedora leaning in the doorway counting cash. Light: a warm desk lamp under his face; the studio behind in deep shadow. Plain margins with no writing. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d1b2c2cb-e705-4271-98b9-f885fb3bb71f"
+}

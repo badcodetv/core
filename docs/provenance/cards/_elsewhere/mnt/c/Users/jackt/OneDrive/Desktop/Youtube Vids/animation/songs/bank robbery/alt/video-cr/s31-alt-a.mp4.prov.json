@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/video-cr/s31-alt-a.mp4",
+ "made": "2026-10-29T19:47:09.715Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Single continuous shot, no scene cuts, real-time speed, shot on a vintage film camera. We look up through the diamond-shaped wooden trapdoor at the faces of the red-scarf and blue-scarf crowd leaning over the edge. Below us a fire burns with chemical colour: copper green, then potassium violet, then sodium orange, its flicker washing up across their faces in turns. Heat shimmer rises off the flames and ripples the air in front of the lens, so the faces bend gently like seen through water while staying the same people. At 3 seconds the nearest man in front grips the frame and swings his leg down through the hatch, and the others start climbing down after him, one after another. From 6 seconds a tongue of green and red flame flares up toward the lens, throwing round blooms of coloured light. Sound: boots on wooden rungs, fire roaring. No dialogue, no on-screen text, no captions.",
+ "model": "Omni Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s31-alt.jpg",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/picked-cr/s31-alt.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "a4173d3f-fa0d-46c4-b066-8696b5a53210"
+}

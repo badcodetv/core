@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-jackt-projects-badcode-badcode/de4589b7-c308-4c1a-beed-6707f9a445c4/scratchpad/alt/moodboard/B07-b.jpg",
+ "made": "2026-10-28T12:43:48.507Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A frame from a feature film set in the 1920s, shot on grainy 35mm colour film, the picture filling the frame edge to edge. The people come from the references; the setting, light and style come only from this description. The picture breaks up into the coarse printing dots of a 1920s newspaper at its edges, huge cyan, magenta, yellow and black dots shrinking to a fully real picture at the centre. Camera inside a storm drain looking up through the iron grate, envelopes fluttering down towards the lens. High above on a lit balcony, the man from the character reference, dressed exactly as in his portrait reference, flings a fistful of envelopes, grinning, flashbulbs popping below, a crowd's hands reaching up. Light: the balcony doors blazing amber; streetlamps; the wet grate bars shining. Thanks.",
+ "model": "Nano Banana 2",
+ "parent": "/home/jackt/.cache/sm-cast/mayor.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/sm-cast/mayor.jpg"
+  ],
+  "character": "SM Mayor"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "88fdead9-68a6-456a-b940-84e660bb1559"
+}

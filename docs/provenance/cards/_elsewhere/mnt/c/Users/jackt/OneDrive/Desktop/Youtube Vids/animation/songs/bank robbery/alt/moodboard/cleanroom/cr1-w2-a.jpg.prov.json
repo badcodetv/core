@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr1-w2-a.jpg",
+ "made": "2026-10-29T15:33:16.661Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A frame from a 1929 gangster film, shot on 35mm Kodak Vision3 500T through a 24mm anamorphic lens. The camera sits on wet cobblestones at night, about two inches above the surface of a puddle, with a slight Dutch tilt, framed the way David Lynch would frame it. The puddle fills the bottom third of the frame, black water with a thin film of spilled engine oil that shows faint bands of magenta, gold and peacock teal. It reflects the street upside down. A cobbled street runs diagonally from the far distance and passes just to the left of the lens, wet and shining under iron gas lamps that give off warm sodium-amber light. The brick buildings on either side have dark storefronts, fire escapes and glowing neon tubes bent into abstract arrows and cocktail-glass shapes in hot pink, electric cyan and emerald. Light mist hangs in the air and catches the neon in soft coloured haze. Coming down the middle of that street toward the camera, about forty metres away, is a black 1929 Packard sedan with its round headlights blazing and chrome grille shining. A man in a fedora leans out of the rear passenger window. His gloved hands hold a Thompson submachine gun with a drum magazine, its barrel angled steeply up at the night sky, away from everyone. About twenty metres behind it in the same lane is a black 1920s police touring car with a single spinning red lamp and a chrome bell. Its tyres follow the same straight line, and both cars are fully on the ground. Realistic, lived-in details: gutter water, a crushed cigarette butt floating in the puddle, moss between the stones, rust streaks on the lamp posts. Real photographic texture includes visible film grain, halation glowing around every light, oval anamorphic bokeh, deep crushed blacks, and colours pushed rich and dreamlike, but every object stays physically real. No text, letters, numbers or licence plates are readable anywhere in the image. Every sign is blank or plain neon tubing.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7ba66705-a1c4-4dff-ae5c-0621f6ead964"
+}

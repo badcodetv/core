@@ -111,7 +111,7 @@ more vote for a musical performance.
 
 ## Order of Information Inside the Prompt
 
-Suno weights words at the beginning of the prompt more heavily. Lead with what matters most. The recommended ordering applies to both pure tag and hybrid formats:
+Suno weights words at the beginning of the prompt more heavily (engine fact): lead with what matters most *for this song*. One possible order, from the guides, for both pure tag and hybrid formats — **not a template.** Running every prompt through the same skeleton is one of the ways we made the same song again ([`../same-song-traps.md`](../same-song-traps.md) trap 1); what leads depends on the song (an instrument family, a voice, a texture can go first):
 
 1. **Genre + subgenre + era** — establishes the sonic foundation
 2. **Tempo / BPM** — sets the rhythmic frame
@@ -932,3 +932,38 @@ These tag formats are documented as ineffective or inconsistent. Avoid them as p
 ### What does work for tempo
 
 BPM works reliably. Use either `140 BPM` or `BPM: 140`. Italian tempo markings (`Andante`, `Allegro`, `Vivace`, `Moderato`) also work and are useful when describing feel rather than exact speed.
+
+
+## Measured on Camping, 2026-09 (engine facts; the numbers are that song's)
+
+Moved here from memory on 2026-10-29 (style-leak audit). The mechanism is general; every number was measured on Camping takes.
+
+- **Variety comes from the named instrument family in the opening tokens, not the production
+  sentence**. Measured on
+  Camping takes, 2026-09-18 (MFCC + spectral contrast + chroma fingerprints): six lanes each led by a
+  different instrument family sat **1.7× further apart on average and 2.3× further at the extremes** than
+  three lanes that differed only in production language. One axis is not enough: lanes that changed only the guest instrument while the opening
+  sentence and the drum sentence stayed byte-identical still read as one record (r50–r53); moving the
+  beat/subgenre, the instrument family and the opening together did not (r54). Lanes sharing 68–74% of
+  the Style box were heard as "way too similar" (r69). Check: longest shared run between any two Style
+  boxes, before generating.
+- **Duration is the only measured pacing lever, and a set target is obeyed tightly**. v6, Camping: a 195 s target gave
+  12/12 takes at 3:14–3:16 (r48) and 24/24 within ~1 s (r54); 190 s gave 16/16 within a second (r70–r72);
+  Auto on the same lyrics ran 4:38 and 4:55 against a 2:46 reference. Same words in less time is a forced
+  speed-up. ⚠️ Obedience loosens when the target squeezes the words: at 155 s for the same ~60 lines, 9/14
+  landed on target but two came back at 2:43 and 2:58 (r55) — when using Duration for pacing, check the
+  returned length before blaming the prompt. ⬜ Whether Custom duration costs extra credits is unpriced.
+- **A ban loses to a positive instruction**.
+  An Exclude-box ban cannot beat a Style-box or lyric-cue instruction asking for the same thing:
+  `autotune` sat in the Exclude box the whole time and a tuned gang vocal still arrived, because Style
+  said "a room of men singing the hook in bare block harmony" and three cues said "half sung" (Camping
+  r66→r67, 2026-09-23); `shouting` was banned and still came, summoned by "hyping each other" (a hype
+  man). Fix order: (1) a positive target the unwanted thing cannot satisfy, (2) matching section cues,
+  (3) the bans last. Grep all three boxes for the summoning words before touching the Exclude list.
+- **The Lyrics box out-votes the Style box on casting**. An inherited cue reading
+  "an older English storyteller" beat a Style box asking for grime MCs (Camping r58–r59, 2026-09-21).
+  Rewrite every section cue when the cast changes; assert the old words are gone in code (a no-op
+  replace looks like success).
+- **An inherited Exclude list fights the next brief**.
+  Six times on Camping a carried-over ban blocked the thing asked for. Cross-lane bans are the worst: they travel forward as if they were rules. Read
+  the ban list against each round's brief.

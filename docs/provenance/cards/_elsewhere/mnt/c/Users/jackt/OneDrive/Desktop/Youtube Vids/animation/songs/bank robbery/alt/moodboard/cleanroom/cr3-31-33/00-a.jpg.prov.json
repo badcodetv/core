@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/alt/moodboard/cleanroom/cr3-31-33/00-a.jpg",
+ "made": "2026-10-29T17:04:02.681Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A full-bleed frame from a 35mm feature film, Chicago, 1928, night. The camera is down inside the open trapdoor behind a bakery counter, looking straight up through the square wooden hatch, the frame canted so the hatch sits as a tilted diamond. Ringed around its edge, faces lean over and stare down into the lens: working people young and old, men and women, Black, white and South Asian, some in red scarves, some in blue, shoulder to shoulder now, the shoving forgotten, a flour-dusted counter edge and a hanging oil lamp behind them. The only light comes from below, from the mint's furnace where copper blanks are melting: the flames burn green and blue-violet the way copper burns, so the faces are lit from underneath in shifting emerald and violet, with hot orange at the rims of nostrils and chins. Rising heat bends the air, so the ring of faces ripples and warps like a reflection in disturbed water, one face stretched long, another doubled. Splintered hatch boards, iron hinge rust, flour and coal grit drifting down through the light. Real skin, stubble, chapped lips, wet eyes. No lettering anywhere.",
+ "source_id": "9ec509af-b08a-4317-9f3b-27fef909e8e2"
+}

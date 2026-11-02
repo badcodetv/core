@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Build a SunoSpec for one GPOM narration atom, straight out of the v6 sheet.
+style-lint: story=gitpush-origin-master — a GPOM-only script kept in the shared Suno folder.
 
 The three prompt boxes are never retyped: they come from
 `suno.mts extract`, so the spec cannot drift from the sheet. Everything else
@@ -64,6 +65,12 @@ def build(atom: str) -> dict:
         "personalize": False,               # 🔴 always. My Taste is retired
         "styleInfluence": 75,
         "weirdness": [30],
+        # GPOM narration's explore spread (the two cells suno.mts used to apply to every story;
+        # moved here 2026-10-29, design/2026-10-29-style-leak-audit.md §1). GPOM's only.
+        "explore": [
+            {"model": "v6", "weirdness": 30, "styleInfluence": 75, "variety": "off"},
+            {"model": "v6-wild", "weirdness": 60, "styleInfluence": 60, "variety": "off"},
+        ],
     }
     if cfg["voice"]:
         spec["voice"] = cfg["voice"]

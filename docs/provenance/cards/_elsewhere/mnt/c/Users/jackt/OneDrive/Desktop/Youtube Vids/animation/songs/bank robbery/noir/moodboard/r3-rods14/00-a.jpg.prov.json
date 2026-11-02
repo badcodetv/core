@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/noir/moodboard/r3-rods14/00-a.jpg",
+ "made": "2026-10-30T12:29:31.208Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Two stripped-down 1929 racing roadsters run side by side across a dry alkali lakebed in the last hour of sun, seen in side view from a camera at hip height on a car keeping pace thirty metres away. Both cars point to the right of the frame, parallel, on the same heading. The nearer car, in oxblood red enamel, is half a length ahead; the farther car, in mustard yellow, sits just behind it and beyond it, its whole outline clear of the red one. Each is a tall, narrow, upright machine: a square radiator shell, separate curved mudguards, a flat running board, thin wire-spoked wheels on narrow tyres pressed firmly on the ground, and a small upright windscreen. Each driver is a grown man in a brown leather cap and goggles, both hands low on a wooden wheel. Bodies are plain and unlettered. A low, even trail of pale dust stretches straight back to the left edge from each rear wheel. The sun sits behind the camera and lays long black shadows under the cars on the cracked pinkish-white ground. The mountains behind are a band of dark plum beneath a deepening blue sky, softened by a gentle horizontal blur, while the cars stay sharp and their spokes blur into grey discs. Clear lakebed fills the space ahead of the lead car. Coarse colour film grain, dense reds and yellows, edge to edge in 16:9.\n\nThanks.",
+ "source_id": "ab6a647f-07a9-4d98-94f7-87c20f14ae19"
+}
