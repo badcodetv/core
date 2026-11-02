@@ -74,7 +74,7 @@
     "why": ""
    }
   },
-  "current": "r5",
+  "current": null,
   "r3": {
    "sequence": "gpom-3-B-door-r3",
    "guid": "52e588be-3e75-4950-8a52-69bef641fbe2",
@@ -119,7 +119,8 @@
     "state": "in sync",
     "why": ""
    }
-  }
+  },
+  "note": "scene B is cut from the film (28 Oct); every B sequence is in \"zz old sequences\""
  },
  "cut_history": [
   {

@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-10-28T18:33:46+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/R3zv1wejHA1pU7CSz39bta",
+  "what": "ending reel rebuilt on C round 7 (the card, no bunker exit): 2:49; reel.py now reads each scene's current cut from scene.json",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/reel.py && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-ending-reel <out>"
+ }
+]

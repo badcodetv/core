@@ -176,14 +176,14 @@
      "date": "2026-10-20"
     }
    ],
-   "premiere": "none in the film; gpom-3-B-door-r5 and earlier in \"zz old sequences\", untouched (once C r2 is built)"
+   "premiere": "none in the film; gpom-3-B-door-r5 and earlier in \"zz old sequences\", untouched"
   },
   {
    "id": "ending",
    "group": "Part 3 · The ending",
    "name": "The whole ending, end to end (C + D + E)",
-   "length": "3:00",
-   "state": "signed off · in Premiere: gpom-4-C-walkout-r1, D-rough1, E-rough2",
+   "length": "2:49",
+   "state": "signed off · in Premiere: gpom-4-C-walkout-r2, D-rough1, E-rough2",
    "tone": "premiere",
    "scene": "scenes/second-half-ending-reel",
    "timeline": "https://claude.ai/artifact/R3zv1wejHA1pU7CSz39bta",
@@ -192,7 +192,7 @@
     {
      "id": "c-walk-out",
      "name": "C · The walk out",
-     "state": "round 7: opens on \"Some negotiation later.\" (0:47)",
+     "state": "round 7: opens on \"Some negotiation later.\" (0:47) · Premiere gpom-4-C-walkout-r2",
      "tone": "wip",
      "scene": "scenes/second-half-c-walk-out",
      "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
@@ -272,6 +272,6 @@
     "what": "a bridge test, safe to delete"
    }
   ],
-  "bins": "Live sequences: bin \"00 the film (live sequences)\", the six tabs in film order. Every older version, test and probe: bin \"zz old sequences\" (Kai asked for the tidy, 28 Oct). Nothing deleted."
+  "bins": "Live sequences: bin \"00 the film (live sequences)\", five tabs in film order (1, A, C, D, E; scene B cut 28 Oct). Every older version, test and probe: bin \"zz old sequences\". Nothing deleted."
  }
 }

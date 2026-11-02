@@ -18,6 +18,10 @@ import subprocess
 ENDING = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending')
 OUT = ENDING / 'ending-reel'
 SCENES = ['C', 'D', 'E']
+SLUGS = {'C': 'second-half-c-walk-out', 'D': 'second-half-d-crossing', 'E': 'second-half-e-ending'}
+_STORY = pathlib.Path(__file__).resolve().parents[4] / 'docs/stories/gitpush-origin-master/scenes'
+# each scene's CURRENT cut folder, from its scene.json (C's round 7 lives in cut-later/, 28 Oct)
+CUT = {s: pathlib.Path(json.loads((_STORY / SLUGS[s] / 'scene.json').read_text())['cut']['edl']).parent for s in SCENES}
 # Crossfade INTO each scene after the first (seconds). 0 = hard cut.
 # C->D 0.4 s: ends before D's first word (Maddie's "Suits on" at 0.40 s) so it is never under a fade.
 XFADE = {'D': 0.4, 'E': 0.0}
@@ -32,7 +36,7 @@ def run(*a, capture=False):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    edls = {s: json.loads((ENDING / s / 'cut' / 'edl.json').read_text()) for s in SCENES}
+    edls = {s: json.loads((CUT[s] / 'edl.json').read_text()) for s in SCENES}
     # Offsets, frame-snapped.
     offs, t = {}, 0.0
     for s in SCENES:
@@ -64,7 +68,7 @@ def main():
 
     # Audio: join the finished scene mixes with the same joins, then two-pass loudnorm.
     raw = OUT / 'mix-raw.wav'
-    mixes = [ENDING / s / 'cut' / 'mix.wav' for s in SCENES]
+    mixes = [CUT[s] / 'mix.wav' for s in SCENES]
     fc, last = [], '[0:a]'
     for i, s in enumerate(SCENES[1:], 1):
         x = offs[SCENES[i - 1]] + edls[SCENES[i - 1]]['total'] - offs[s]
@@ -99,7 +103,7 @@ def main():
     fc.append(f'{last}fps={FPS},scale=in_range=tv:out_range=tv,lutyuv=y=clip(val\\,16\\,235):u=clip(val\\,16\\,240):'
               f'v=clip(val\\,16\\,240),format=yuv420p[vout]')
     prev = OUT / 'preview.mp4'
-    run('ffmpeg', '-loglevel', 'error', '-y', *sum((['-i', ENDING / s / 'cut' / 'preview.mp4'] for s in SCENES), []),
+    run('ffmpeg', '-loglevel', 'error', '-y', *sum((['-i', CUT[s] / 'preview.mp4'] for s in SCENES), []),
         '-i', mix, '-filter_complex', ';'.join(fc), '-map', '[vout]', '-map', f'{len(SCENES)}:a',
         '-c:v', 'libx264', '-preset', 'slow', '-crf', 18, '-pix_fmt', 'yuv420p',
         '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
@@ -120,7 +124,7 @@ def main():
                   "Tell Claude when you're done."),
         'fps': FPS, 'sample_rate': 48000, 'total': total,
         'scenes': [{'scene': s, 'offset': offs[s], 'dur': edls[s]['total'], 'sequence': edls[s].get('sequence'),
-                    'edl': str(ENDING / s / 'cut' / 'edl.json'), 'preview': str(ENDING / s / 'cut' / 'preview.mp4'),
+                    'edl': str(CUT[s] / 'edl.json'), 'preview': str(CUT[s] / 'preview.mp4'),
                     'xfade_in': XFADE.get(s, 0.0) if s != SCENES[0] else 0.0} for s in SCENES],
         'beats': beats, 'video': video, 'audio': audio, 'mix': str(mix), 'events': events,
         'flags': [
