@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/music/cues/m5-r3.wav",
+ "made": "2026-11-02T14:18:50+00:00",
+ "by": "claude",
+ "kind": "music",
+ "engine": "ffmpeg",
+ "tool": "afade + loudnorm I=-32",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/music/Comfortable Mystery 4.mp3",
+ "why": "Rough 3: cue re-cut longer to cover the inserts (Kevin MacLeod, CC BY 4.0)"
+}

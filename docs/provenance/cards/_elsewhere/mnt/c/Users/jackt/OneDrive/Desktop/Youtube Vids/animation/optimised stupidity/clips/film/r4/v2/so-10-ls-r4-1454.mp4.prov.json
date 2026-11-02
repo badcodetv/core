@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/r4/v2/so-10-ls-r4-1454.mp4",
+ "made": "2026-11-02T15:43:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "rough4-plan.py retime through the time map",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/lipsync/so-10-ls.mp4",
+ "why": "Rough 4: re-timed so mouths and screens stay on the faster voices",
+ "settings": {
+  "in": "0",
+  "dur_r3": "6.625",
+  "dur_r4": "6.0"
+ }
+}

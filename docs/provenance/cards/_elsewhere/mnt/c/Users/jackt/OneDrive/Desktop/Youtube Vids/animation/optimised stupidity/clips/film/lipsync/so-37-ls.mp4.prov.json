@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/lipsync/so-37-ls.mp4",
+ "made": "2026-11-02T14:18:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "LatentSync",
+ "tool": "scripts/lipsync/crop-sync-prep.py + latentsync-batch.py + crop-sync-compose.py",
+ "model": "LatentSync 1.5",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/video/so-37-37.mp4",
+ "why": "Rough 3: mouths synced to the voice lines, per speaker on a face crop, pasted back through a soft ellipse",
+ "inputs": {
+  "jobs": "docs/stories/stupidity-optimised/scenes/film/lipsync-r3/jobs.json",
+  "work": "~/.cache/badcode-scenes/stupidity-optimised/ls-r3/37/"
+ }
+}

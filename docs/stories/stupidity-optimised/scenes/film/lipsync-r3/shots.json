@@ -1,0 +1,574 @@
+[
+ {
+  "shot": 10,
+  "t0": 60.583333333333336,
+  "t1": 67.29166666666667,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/10/base.mp4",
+  "crops": [
+   {
+    "who": "sophie",
+    "box": [
+     260,
+     122,
+     656,
+     486
+    ],
+    "scale": 1.9409282700421941,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/10/synced-sophie.mp4",
+    "face_h": 118.5
+   }
+  ]
+ },
+ {
+  "shot": 11,
+  "t0": 72.125,
+  "t1": 76.95833333333333,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/11/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     342,
+     0,
+     950,
+     658
+    ],
+    "scale": 1.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/11/synced-brandon.mp4",
+    "face_h": 234.0
+   }
+  ]
+ },
+ {
+  "shot": 14,
+  "t0": 95.125,
+  "t1": 100.75,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/14/base.mp4",
+  "crops": [
+   {
+    "who": "plumbing",
+    "box": [
+     390,
+     0,
+     758,
+     340
+    ],
+    "scale": 1.6312056737588652,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/14/synced-plumbing.mp4",
+    "face_h": 141.0
+   }
+  ]
+ },
+ {
+  "shot": 17,
+  "t0": 115.16666666666667,
+  "t1": 118.625,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/17/base.mp4",
+  "crops": [
+   {
+    "who": "prophet3",
+    "box": [
+     198,
+     0,
+     990,
+     720
+    ],
+    "scale": 1.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/17/synced-prophet3.mp4",
+    "face_h": 293.5
+   }
+  ]
+ },
+ {
+  "shot": 18,
+  "t0": 118.79166666666667,
+  "t1": 120.08333333333333,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/18/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     472,
+     6,
+     850,
+     412
+    ],
+    "scale": 1.5862068965517242,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/18/synced-brandon.mp4",
+    "face_h": 145.0
+   }
+  ]
+ },
+ {
+  "shot": 21,
+  "t0": 131.79166666666666,
+  "t1": 135.875,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/21/base.mp4",
+  "crops": [
+   {
+    "who": "chad",
+    "box": [
+     202,
+     0,
+     1060,
+     720
+    ],
+    "scale": 1.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/21/synced-chad.mp4",
+    "face_h": 317.0
+   }
+  ]
+ },
+ {
+  "shot": 25,
+  "t0": 156.16666666666666,
+  "t1": 161.66666666666666,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/25/base.mp4",
+  "crops": [
+   {
+    "who": "prophet5",
+    "box": [
+     412,
+     0,
+     892,
+     436
+    ],
+    "scale": 1.25,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/25/synced-prophet5.mp4",
+    "face_h": 184.0
+   }
+  ]
+ },
+ {
+  "shot": 26,
+  "t0": 161.875,
+  "t1": 163.41666666666666,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/26/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     558,
+     226,
+     750,
+     436
+    ],
+    "scale": 3.108108108108108,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/26/synced-brandon.mp4",
+    "face_h": 74.0
+   }
+  ]
+ },
+ {
+  "shot": 27,
+  "t0": 168.58333333333334,
+  "t1": 170.29166666666666,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/27/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     556,
+     154,
+     724,
+     402
+    ],
+    "scale": 4.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/27/synced-brandon.mp4",
+    "face_h": 55.5
+   }
+  ]
+ },
+ {
+  "shot": 28,
+  "t0": 174.58333333333334,
+  "t1": 177.5,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/28/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     434,
+     118,
+     830,
+     448
+    ],
+    "scale": 1.7829457364341086,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/28/synced-brandon.mp4",
+    "face_h": 129.0
+   }
+  ]
+ },
+ {
+  "shot": 29,
+  "t0": 177.66666666666666,
+  "t1": 185.66666666666666,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/29/base.mp4",
+  "crops": [
+   {
+    "who": "sunbeam",
+    "box": [
+     172,
+     0,
+     1190,
+     720
+    ],
+    "scale": 1.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/29/synced-sunbeam.mp4",
+    "face_h": 392.0
+   }
+  ]
+ },
+ {
+  "shot": 32,
+  "t0": 193.08333333333334,
+  "t1": 197.20833333333334,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/32/base.mp4",
+  "crops": [
+   {
+    "who": "sophie",
+    "box": [
+     364,
+     152,
+     664,
+     482
+    ],
+    "scale": 2.0720720720720722,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/32/synced-sophie.mp4",
+    "face_h": 111.0
+   }
+  ]
+ },
+ {
+  "shot": 33,
+  "t0": 197.375,
+  "t1": 217.66666666666666,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/33/base.mp4",
+  "crops": [
+   {
+    "who": "prophet1",
+    "box": [
+     160,
+     0,
+     1176,
+     720
+    ],
+    "scale": 1.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/33/synced-prophet1.mp4",
+    "face_h": 391.0
+   }
+  ]
+ },
+ {
+  "shot": 37,
+  "t0": 236.70833333333334,
+  "t1": 239.70833333333334,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/37/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     610,
+     204,
+     756,
+     364
+    ],
+    "scale": 4.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/37/synced-brandon.mp4",
+    "face_h": 56.0
+   }
+  ]
+ },
+ {
+  "shot": 44,
+  "t0": 282.75,
+  "t1": 289.3333333333333,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/44/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     408,
+     94,
+     780,
+     482
+    ],
+    "scale": 1.803921568627451,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/44/synced-brandon.mp4",
+    "face_h": 127.5
+   }
+  ]
+ },
+ {
+  "shot": 47,
+  "t0": 305.6666666666667,
+  "t1": 316.625,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/47/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     172,
+     36,
+     526,
+     430
+    ],
+    "scale": 1.6911764705882353,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/47/synced-brandon.mp4",
+    "face_h": 136.0
+   },
+   {
+    "who": "gary",
+    "box": [
+     694,
+     0,
+     1098,
+     368
+    ],
+    "scale": 1.7424242424242424,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/47/synced-gary.mp4",
+    "face_h": 132.0
+   }
+  ]
+ },
+ {
+  "shot": 48,
+  "t0": 316.8333333333333,
+  "t1": 322.2083333333333,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/48/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     212,
+     114,
+     644,
+     590
+    ],
+    "scale": 1.3855421686746987,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/48/synced-brandon.mp4",
+    "face_h": 166.0
+   }
+  ]
+ },
+ {
+  "shot": 49,
+  "t0": 322.375,
+  "t1": 327.0,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/49/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     182,
+     120,
+     546,
+     488
+    ],
+    "scale": 1.9166666666666667,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/49/synced-brandon.mp4",
+    "face_h": 120.0
+   },
+   {
+    "who": "gary",
+    "box": [
+     722,
+     0,
+     1280,
+     570
+    ],
+    "scale": 1.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/49/synced-gary.mp4",
+    "face_h": 231.0
+   }
+  ]
+ },
+ {
+  "shot": 51,
+  "t0": 336.0416666666667,
+  "t1": 343.2083333333333,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/51/base.mp4",
+  "crops": [
+   {
+    "who": "jenny",
+    "box": [
+     206,
+     58,
+     738,
+     380
+    ],
+    "scale": 2.277227722772277,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/51/synced-jenny.mp4",
+    "face_h": 101.0
+   },
+   {
+    "who": "brandon",
+    "box": [
+     706,
+     46,
+     1068,
+     392
+    ],
+    "scale": 2.169811320754717,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/51/synced-brandon.mp4",
+    "face_h": 106.0
+   }
+  ]
+ },
+ {
+  "shot": 52,
+  "t0": 344.3333333333333,
+  "t1": 354.2916666666667,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/52/base.mp4",
+  "crops": [
+   {
+    "who": "jenny",
+    "box": [
+     420,
+     2,
+     824,
+     428
+    ],
+    "scale": 1.7164179104477613,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/52/synced-jenny.mp4",
+    "face_h": 134.0
+   },
+   {
+    "who": "brandon",
+    "box": [
+     720,
+     10,
+     1110,
+     424
+    ],
+    "scale": 1.9008264462809918,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/52/synced-brandon.mp4",
+    "face_h": 121.0
+   }
+  ]
+ },
+ {
+  "shot": 54,
+  "t0": 362.0416666666667,
+  "t1": 364.1666666666667,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/54/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     346,
+     60,
+     640,
+     384
+    ],
+    "scale": 2.0353982300884956,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/54/synced-brandon.mp4",
+    "face_h": 113.0
+   }
+  ]
+ },
+ {
+  "shot": 59,
+  "t0": 414.0,
+  "t1": 427.75,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/59/base.mp4",
+  "crops": [
+   {
+    "who": "giles",
+    "box": [
+     104,
+     0,
+     1196,
+     720
+    ],
+    "scale": 1.0,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/59/synced-giles.mp4",
+    "face_h": 420.0
+   }
+  ]
+ },
+ {
+  "shot": 64,
+  "t0": 483.875,
+  "t1": 491.0833333333333,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/64/base.mp4",
+  "crops": [
+   {
+    "who": "brandon",
+    "box": [
+     386,
+     86,
+     670,
+     392
+    ],
+    "scale": 2.149532710280374,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/64/synced-brandon.mp4",
+    "face_h": 107.0
+   },
+   {
+    "who": "jenny",
+    "box": [
+     738,
+     130,
+     980,
+     364
+    ],
+    "scale": 2.8395061728395063,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/64/synced-jenny.mp4",
+    "face_h": 81.0
+   }
+  ]
+ },
+ {
+  "shot": 70,
+  "t0": 516.625,
+  "t1": 519.8333333333334,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/70/base.mp4",
+  "crops": [
+   {
+    "who": "gary",
+    "box": [
+     518,
+     82,
+     768,
+     320
+    ],
+    "scale": 2.7710843373493974,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/70/synced-gary.mp4",
+    "face_h": 83.0
+   },
+   {
+    "who": "brandon",
+    "box": [
+     532,
+     440,
+     780,
+     700
+    ],
+    "scale": 2.5,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/70/synced-brandon.mp4",
+    "face_h": 92.0
+   }
+  ]
+ },
+ {
+  "shot": 72,
+  "t0": 527.0833333333334,
+  "t1": 530.125,
+  "base": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/72/base.mp4",
+  "crops": [
+   {
+    "who": "giles",
+    "box": [
+     734,
+     6,
+     1118,
+     420
+    ],
+    "scale": 1.554054054054054,
+    "synced": "/home/jackt/.cache/badcode-scenes/stupidity-optimised/ls-r3/72/synced-giles.mp4",
+    "face_h": 148.0
+   }
+  ]
+ }
+]

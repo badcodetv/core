@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/r4/gfx/gfx-62-plan-r4-9486.mov",
+ "made": "2026-11-02T15:43:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "rough4-plan.py retime through the time map",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-62-plan.mov",
+ "why": "Rough 4: re-timed so mouths and screens stay on the faster voices",
+ "settings": {
+  "in": "0",
+  "dur_r3": "4.2",
+  "dur_r4": "3.375"
+ }
+}

@@ -974,5 +974,53 @@
    "lufs": -17.0,
    "gain_db": 1.0
   }
- ]
+ ],
+ "lines_r3": [
+  {
+   "id": "059r3-jenny",
+   "replaces": "059-jenny",
+   "shot": 52,
+   "who": "jenny",
+   "by": "claude",
+   "take": "r3/059r3-jenny-b.wav",
+   "text": "They want to put an AI data centre on the rec. We've got a meeting, no money and forty chairs. Can you lift?",
+   "dur": 6.83,
+   "lufs": -16
+  },
+  {
+   "id": "065r3-brandon",
+   "replaces": "065-brandon",
+   "shot": 55,
+   "who": "brandon",
+   "by": "claude",
+   "take": "r3/065r3-brandon-b.wav",
+   "text": "I don't know how a data centre works. Nobody in this room does. But I've had computers telling me what to do my whole life, and I'm not having one run this town.",
+   "dur": 8.06,
+   "lufs": -16
+  },
+  {
+   "id": "088-narrator",
+   "new": true,
+   "after": "065r3-brandon",
+   "shot": "55b",
+   "who": "narrator",
+   "by": "claude",
+   "take": "r3/088-narrator-g.wav",
+   "text": "Ted's leaflet says the data centre will drink the town dry. Rubbish. England's pipes leak more water in a day than every data centre in England uses in a year. Nobody in that room knows how one works. They're not against the water. They're against the AI.",
+   "dur": 18.65,
+   "lufs": -16
+  },
+  {
+   "id": "072r3-narrator",
+   "replaces": "072-narrator",
+   "shot": 62,
+   "who": "narrator",
+   "by": "claude",
+   "take": "r3/072r3-narrator-c.wav",
+   "text": "Every good report earns the app more money, which buys it more computing power, which needs a bigger data centre, which needs this town to stop holding meetings. It's spying on a town so it can build itself a bigger brain. And he's carrying the chairs.",
+   "dur": 17.18,
+   "lufs": -16
+  }
+ ],
+ "r3_note": "Rough 3 (2026-11-02): trimmed and levelled files in clips/film/voices/trimmed-r3/, baked to -16 LUFS, so clip Volume 0 dB. Each take transcribed word for word; 088 reworded after 'It won't' kept reading as 'He won't'."
 }

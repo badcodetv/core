@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/r3/088-narrator-g.wav",
+ "made": "2026-11-02T13:25:16+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Ted's leaflet says the data centre will drink the town dry. Rubbish. England's pipes leak more water in a day than every data centre in England uses in a year. Nobody in that room knows how one works. They're not against the water. They're against the AI.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE: A woman in her fifties from the West Midlands, Dudley way.\n\n## THE SCENE: Alone at a bank of monitors at three in the morning with a bag of crisps, in a control room in Dudley, close to the desk microphone.\n\n### DIRECTOR'S NOTES\nStyle: Dry and deadpan with total authority, timing every joke. She has watched all the footage and is secretly enjoying this and secretly fond of him. Never a trailer voice, never sneering.\nAccent: West Midlands, natural and clear, as the place she lives, not a performance.\nPace: About 155 words a minute, conversational, lands each last word.\nClear articulation. Speak only the transcript.\n",
+  "profile_file": "docs/stories/stupidity-optimised/scenes/film/voices/narrator.md"
+ },
+ "settings": {
+  "voice": "Pulcherrima",
+  "temperature": 1,
+  "channels": 2
+ }
+}

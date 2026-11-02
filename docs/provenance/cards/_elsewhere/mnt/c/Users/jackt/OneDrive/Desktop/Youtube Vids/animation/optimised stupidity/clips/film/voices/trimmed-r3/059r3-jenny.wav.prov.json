@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/trimmed-r3/059r3-jenny.wav",
+ "made": "2026-11-02T13:38:55+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "silenceremove + volume",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/r3/059r3-jenny-b.wav",
+ "why": "Rough 3: silence-trimmed, levelled to -16 LUFS"
+}

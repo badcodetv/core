@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/fast-r4/033-narrator.wav",
+ "made": "2026-11-02T15:42:55+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "fast-voices.py: pause squeeze + rubberband",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/trimmed/033-narrator.wav",
+ "why": "Rough 4: Jack said they talk too slowly",
+ "settings": {
+  "tempo": "1.167",
+  "pauses_cut": "0.47"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/r4/music/m4-r4.wav",
+ "made": "2026-11-02T15:43:09+00:00",
+ "by": "claude",
+ "kind": "music",
+ "engine": "ffmpeg",
+ "tool": "cut to new length + fade out",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/music/cues/m4.wav",
+ "why": "Rough 4: cue cut to the tighter cut (Kevin MacLeod, CC BY 4.0)"
+}

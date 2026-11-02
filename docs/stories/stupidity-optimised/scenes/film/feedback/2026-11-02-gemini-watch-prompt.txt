@@ -1,0 +1,10 @@
+You are a harsh, specific film editor reviewing a rough cut of a 9-minute British dark-comedy short, "Stupidity Optimised". A lonely lad, Brandon, follows online gurus, gets hurt repeatedly, then an app ("Enough's Enough") fixes his life; it is secretly a private intelligence firm turning him into an asset to spy on a local campaign against an AI data centre; his handler Gary kills him at the gym. A dry female narrator comments throughout.
+
+Watch and listen to the whole thing. Give a timestamped (M:SS) list, in film order, of every problem, under these headings:
+1. SOUND BALANCE: every moment where background/clip sound (effects, music, or any speech-like babble baked into the clips) makes the narrator or a character hard to hear. Say what the competing sound is.
+2. LIP SYNC: every shot where a character's mouth is visibly moving but the voice doesn't match (or the mouth is still while a voice speaks as if they're on screen). Name the character if you can.
+3. STORY CLARITY: where a viewer would be confused about what is happening. In particular: is it clear the community meeting/campaign is against an AI data centre? Is it clear what the app is, and when he first uses it? Is any phone screen or app shown?
+4. PICTURE: glitches, a visible line across the frame, jump cuts, repeated footage, wrong characters, shots that don't match the line.
+5. MISSING: where on-screen text or a graphic is clearly needed (search bar, phone app, labels).
+6. The 5 best moments, and the 5 worst.
+Be concrete. No praise padding.

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/r3/065r3-brandon-a.wav",
+ "made": "2026-11-02T13:23:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I don't know how a data centre works. Nobody in this room does. But I've had computers telling me what to do my whole life, and I'm not having one run this town.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE: A lad of 22 from Medway in Kent.\n\n## THE SCENE: Talking into his phone in a small rented attic in Chatham.\n\n### DIRECTOR'S NOTES\nStyle: Eager and earnest, a little too fast, sentences running out of road. Means every word.\nAccent: Medway Kent, natural.\nPace: Quick and slightly breathless.\nClear articulation. Speak only the transcript.\n",
+  "profile_file": "docs/stories/stupidity-optimised/scenes/film/voices/brandon.md"
+ },
+ "settings": {
+  "voice": "Sadachbia",
+  "temperature": 1,
+  "channels": 2
+ }
+}

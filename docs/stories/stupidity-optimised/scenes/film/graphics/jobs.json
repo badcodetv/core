@@ -1,0 +1,161 @@
+[
+ {
+  "name": "06-search",
+  "scene": "search",
+  "dur": 5,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-06-search.mov"
+ },
+ {
+  "name": "35-lockad",
+  "scene": "lockad",
+  "dur": 5,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-35-lockad.mov"
+ },
+ {
+  "name": "36-firstuse",
+  "scene": "firstuse",
+  "dur": 8.2,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-36-firstuse.mov"
+ },
+ {
+  "name": "43-perms",
+  "scene": "perms",
+  "dur": 13,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-43-perms.mov"
+ },
+ {
+  "name": "46-partner",
+  "scene": "partner",
+  "dur": 8.4,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-46-partner.mov"
+ },
+ {
+  "name": "50-sorry",
+  "scene": "sorry",
+  "dur": 8.8,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-50-sorry.mov"
+ },
+ {
+  "name": "56-journal",
+  "scene": "journal",
+  "dur": 15.8,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-56-journal.mov"
+ },
+ {
+  "name": "63-goals",
+  "scene": "goals",
+  "dur": 14,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-63-goals.mov"
+ },
+ {
+  "name": "64-badge",
+  "scene": "badge",
+  "dur": 7.4,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-64-badge.mov"
+ },
+ {
+  "name": "66-complete",
+  "scene": "complete",
+  "dur": 3.5,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-66-complete.mov"
+ },
+ {
+  "name": "62-plan",
+  "scene": "plan",
+  "dur": 4.5,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-62-plan.mov"
+ },
+ {
+  "name": "flash",
+  "scene": "flash",
+  "dur": 0.9,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-flash.mov"
+ },
+ {
+  "name": "leaflet",
+  "scene": "leaflet",
+  "dur": 6.2,
+  "opaque": true,
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-leaflet.mp4"
+ },
+ {
+  "name": "label-1",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "UPTIME",
+   "GOING TO BED"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-1-uptime.mov"
+ },
+ {
+  "name": "label-2",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "FIELD FITNESS",
+   "THE GYM"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-2-field-fitness.mov"
+ },
+ {
+  "name": "label-3",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "SIGNATURE",
+   "ALLOW"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-3-signature.mov"
+ },
+ {
+  "name": "label-4",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "ACCESS",
+   "THE DOORWAY"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-4-access.mov"
+ },
+ {
+  "name": "label-5",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "SOURCE MEETING",
+   "THE DATE"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-5-source-meeting.mov"
+ },
+ {
+  "name": "label-6",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "INFILTRATION",
+   "THE CHAIRS"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-6-infiltration.mov"
+ },
+ {
+  "name": "label-7",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "DEBRIEF",
+   "THE JOURNAL"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-7-debrief.mov"
+ },
+ {
+  "name": "label-8",
+  "scene": "label",
+  "dur": 1.3,
+  "args": [
+   "HANDLER",
+   "GARY"
+  ],
+  "out": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/gfx/gfx-label-8-handler.mov"
+ }
+]

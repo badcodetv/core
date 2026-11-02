@@ -1,0 +1,231 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Stupidity Optimised rough 3 overlays (2026-11-02). Rendered frame by frame by render.mjs at 1280x720,
+     transparent background. window.render(scene, t) draws scene `scene` at t seconds. Every scene is a function
+     of time only, so any frame can be re-rendered. The app is invented: Enough's Enough (Jack, 2026-11-01). -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&family=Special+Elite&family=Patrick+Hand&family=Anton&family=Archivo+Black&display=swap');
+:root{--cream:#F3EEE4;--ink:#15171C;--mute:#8A857B;--line:#E2DBCD;--orange:#FF5A1F;--mint:#1F8A5B;--ios:#0A84FF}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1280px;height:720px;background:transparent;overflow:hidden;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;inset:0}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(0,0,0,0) 20%,rgba(0,0,0,.55) 75%)}
+/* phone */
+.phone{position:absolute;width:300px;height:620px;border-radius:52px;background:#0b0b0d;padding:11px;
+  box-shadow:0 0 0 2px #2a2a2e,0 0 0 4px #121214,0 40px 80px rgba(0,0,0,.55),0 10px 24px rgba(0,0,0,.4)}
+.screen{position:relative;width:100%;height:100%;border-radius:42px;overflow:hidden;background:var(--cream)}
+.island{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:92px;height:27px;border-radius:20px;background:#000;z-index:20}
+.status{position:absolute;top:0;left:0;right:0;height:46px;display:flex;justify-content:space-between;align-items:center;padding:4px 28px 0 30px;font-weight:600;font-size:14px;z-index:15;color:var(--ink)}
+.status.dark{color:#fff}
+.status .r{display:flex;gap:5px;align-items:center}
+.bat{width:24px;height:11px;border:1.5px solid currentColor;border-radius:3px;position:relative;opacity:.9}
+.bat:after{content:'';position:absolute;inset:1.5px;right:6px;background:currentColor;border-radius:1px}
+/* app chrome */
+.apphead{position:absolute;top:46px;left:0;right:0;height:54px;display:flex;align-items:center;gap:10px;padding:0 18px;border-bottom:1px solid var(--line);background:var(--cream);z-index:5}
+.logo{width:28px;height:28px;border-radius:50%;background:var(--ink);position:relative;flex:none}
+.logo:after{content:'';position:absolute;left:7px;right:7px;top:13px;height:2.5px;border-radius:2px;background:var(--orange)}
+.wordmark{font-family:'Instrument Serif',serif;font-size:23px;color:var(--ink);letter-spacing:-.2px}
+.wordmark i{color:var(--orange);font-style:normal}
+.body{position:absolute;top:100px;left:0;right:0;bottom:0;padding:16px 14px;display:flex;flex-direction:column;gap:10px}
+.bub{max-width:82%;padding:10px 13px;border-radius:18px;font-size:15px;line-height:1.3;transition:none}
+.bub.app{background:#fff;color:var(--ink);border-bottom-left-radius:6px;align-self:flex-start;box-shadow:0 1px 0 var(--line)}
+.bub.me{background:var(--ink);color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
+.dots{display:flex;gap:4px;padding:13px 14px}.dots span{width:7px;height:7px;border-radius:50%;background:var(--mute)}
+.card{background:#fff;border-radius:16px;padding:12px;border:1px solid var(--line);align-self:flex-start;width:82%}
+.card .k{font-size:10.5px;font-weight:700;letter-spacing:.9px;color:var(--orange);text-transform:uppercase}
+.card .t{font-family:'Instrument Serif',serif;font-size:20px;line-height:1.1;margin:5px 0 6px;color:var(--ink)}
+.card .m{font-size:12px;color:var(--mute)}
+.bar{height:5px;border-radius:3px;background:var(--line);margin-top:9px;overflow:hidden}.bar b{display:block;height:100%;background:var(--mint)}
+/* iOS-ish permission sheet */
+.scrim{position:absolute;inset:0;background:rgba(0,0,0,.32);z-index:30}
+.alert{position:absolute;left:24px;right:24px;top:50%;transform:translateY(-50%);background:rgba(242,242,247,.97);border-radius:16px;z-index:31;text-align:center;overflow:hidden}
+.alert .ic{width:46px;height:46px;border-radius:12px;background:var(--ink);margin:16px auto 8px;position:relative}
+.alert .ic:after{content:'';position:absolute;left:12px;right:12px;top:21px;height:4px;border-radius:2px;background:var(--orange)}
+.alert h3{font-size:15.5px;font-weight:600;padding:0 16px;line-height:1.25;color:#000}
+.alert p{font-size:12.5px;padding:6px 18px 14px;color:#333;line-height:1.3}
+.alert .btns{display:flex;border-top:1px solid #c8c8cc}
+.alert .btns div{flex:1;padding:12px 0;font-size:16px;color:var(--ios)}
+.alert .btns div+div{border-left:1px solid #c8c8cc;font-weight:600}
+.alert .btns div.hit{background:#d1d1d6}
+.alert .stack div{padding:11px 0;font-size:16px;color:var(--ios);border-top:1px solid #c8c8cc}
+.alert .stack div.hit{background:#d1d1d6}
+.tap{position:absolute;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.55);border:2px solid rgba(255,255,255,.9);z-index:40;transform:translate(-50%,-50%)}
+/* lock screen */
+.lock{position:absolute;inset:0;background:radial-gradient(120% 80% at 30% 10%,#3a3f52 0%,#1a1c26 55%,#0d0e13 100%)}
+.lock .time{position:absolute;top:78px;left:0;right:0;text-align:center;color:#fff;font-size:76px;font-weight:300;letter-spacing:-2px}
+.lock .date{position:absolute;top:60px;left:0;right:0;text-align:center;color:rgba(255,255,255,.85);font-size:15px;font-weight:600}
+.notif{position:absolute;left:10px;right:10px;background:rgba(245,242,236,.93);border-radius:20px;padding:11px 12px;display:flex;gap:10px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.notif .ni{width:36px;height:36px;border-radius:9px;background:var(--ink);flex:none;position:relative}
+.notif .ni:after{content:'';position:absolute;left:9px;right:9px;top:16.5px;height:3px;border-radius:2px;background:var(--orange)}
+.notif .nt{font-size:13px;font-weight:700;color:#111;display:flex;justify-content:space-between}
+.notif .nt span{font-weight:500;color:#777;font-size:12px}
+.notif .nb{font-size:13.5px;color:#222;line-height:1.28;margin-top:2px}
+.pts{color:var(--mint);font-weight:700}
+/* search */
+.search{position:absolute;top:58px;left:12px;right:12px}
+.sbox{background:#fff;border-radius:22px;height:44px;display:flex;align-items:center;padding:0 14px;gap:9px;font-size:16px;color:#111;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.sbox .g{width:16px;height:16px;border:2.5px solid #666;border-radius:50%;position:relative;flex:none}
+.caret{display:inline-block;width:2px;height:19px;background:var(--ios);vertical-align:middle;margin-left:1px}
+.sugg{background:#fff;border-radius:16px;margin-top:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.sugg div{padding:12px 16px;font-size:15.5px;border-top:1px solid #eee;color:#111;display:flex;gap:10px}
+.sugg div:first-child{border-top:0}.sugg b{font-weight:700}
+.sugg i{width:14px;height:14px;border:2px solid #aaa;border-radius:50%;margin-top:2px;flex:none}
+/* badge */
+.medal{width:150px;height:150px;border-radius:50%;margin:30px auto 14px;background:conic-gradient(from 200deg,#ffb36b,#ff5a1f,#c23c0e,#ff8a3d,#ffb36b);display:grid;place-items:center;box-shadow:0 10px 30px rgba(255,90,31,.35)}
+.medal div{width:118px;height:118px;border-radius:50%;background:var(--cream);display:grid;place-items:center;font-family:'Instrument Serif',serif;font-size:54px;color:var(--ink)}
+.confetti{position:absolute;width:8px;height:14px;border-radius:2px}
+/* labels */
+.label{position:absolute;left:56px;bottom:64px;font-family:'JetBrains Mono',monospace;font-weight:700;color:#fff;font-size:44px;letter-spacing:6px;padding:10px 22px 10px 18px;background:rgba(10,10,12,.86);border-left:8px solid #d7261e}
+.label small{display:block;font-size:13px;letter-spacing:3px;color:#b9b9b9;font-weight:500;margin-bottom:2px}
+.plan{position:absolute;right:48px;top:48px;background:#fff;border:3px solid #111;padding:14px 18px;font-family:Inter;color:#111;width:360px;box-shadow:6px 6px 0 rgba(0,0,0,.35)}
+.plan .h{font-size:12px;font-weight:800;letter-spacing:2px}
+.plan .b{font-size:30px;font-weight:800;line-height:1.05;margin-top:6px}
+.plan .s{font-size:12.5px;margin-top:8px;color:#333}
+/* leaflet */
+.leaf{position:absolute;inset:0;background:#6b5a48}
+.paper{position:absolute;left:250px;top:30px;width:780px;height:820px;background:#f7f5ef;transform:rotate(-3deg);box-shadow:0 30px 60px rgba(0,0,0,.5);padding:30px 52px;font-family:'Patrick Hand',cursive;color:#111;filter:contrast(1.15) grayscale(.25)}
+.paper:before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.025) 0 2px,transparent 2px 5px);pointer-events:none}
+.paper .top{font-family:Anton,Impact,sans-serif;font-size:92px;line-height:.92;letter-spacing:1px;text-align:center}
+.paper .top em{color:#d01818;font-style:normal}
+.paper .mid{font-family:'Archivo Black','Arial Black',sans-serif;font-size:52px;line-height:1;text-align:center;margin-top:20px;color:#0a3fbf}
+.paper .drop{width:120px;height:120px;margin:22px auto 6px;background:#3d8de0;border-radius:0 50% 50% 50%;transform:rotate(45deg);position:relative}
+.paper .drop:after{content:'';position:absolute;left:28px;top:28px;width:26px;height:26px;border-radius:50%;background:#fff;opacity:.7}
+.paper .foot{font-size:38px;text-align:center;margin-top:26px;line-height:1.2}
+.paper .foot u{text-decoration-thickness:3px}
+.paper .tear{position:absolute;bottom:40px;left:52px;right:52px;border-top:3px dashed #999;padding-top:10px;font-size:28px;text-align:center}
+/* ambulance light */
+.flash{position:absolute;inset:0;mix-blend-mode:normal}
+</style></head><body><div id="stage"></div>
+<script>
+const $=s=>document.querySelector(s);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const out=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const op=(t,a,fade=.18)=>clamp((t-a)/fade);
+// phone placement: slides up from below at `in`, down at `outT`. Returns transform + vignette opacity.
+function phoneWrap(inner,t,dur,{x=880,y=60,rot=-4,dark=false,vig=.9}={}){
+  const a=out(t/.45), b=1-ease((t-(dur-.4))/.4); const k=Math.min(a,b);
+  const ty=(1-k)*760; const r=rot+(1-k)*6;
+  return `<div class="vig" style="opacity:${(vig*k).toFixed(3)}"></div>
+  <div class="phone" style="left:${x}px;top:${y}px;transform:translateY(${ty}px) rotate(${r}deg)"><div class="screen">
+  <div class="island"></div>
+  <div class="status ${dark?'dark':''}"><span>${clock}</span><span class="r"><span style="font-size:11px">●●●</span><span class="bat"></span></span></div>
+  ${inner}</div></div>`;
+}
+let clock='23:47';
+const head=`<div class="apphead"><div class="logo"></div><div class="wordmark">enough's enough<i>.</i></div></div>`;
+function show(t,a,html,fade=.22){const o=op(t,a,fade);if(o<=0)return '';return `<div style="opacity:${o};transform:translateY(${(1-out(o))*10}px)">${html}</div>`}
+function typed(t,a,str,cps=14){const n=Math.floor(clamp((t-a)*cps,0,str.length));return str.slice(0,n)}
+function tapAt(t,at,x,y){const d=t-at;if(d<-0.25||d>0.35)return '';const s=d<0?1-(-d/.25)*.4:1+d*1.2;const o=d<0?1-(-d/.25):1-d/.35;return `<div class="tap" style="left:${x}px;top:${y}px;transform:translate(-50%,-50%) scale(${s});opacity:${clamp(o)}"></div>`}
+function alertBox(t,a,title,sub,allowAt,{opts=null}={}){
+  if(t<a)return ''; const o=op(t,a,.2), sc=.92+.08*out(o);
+  const hit=t>=allowAt&&t<allowAt+.4;
+  const btns=opts?`<div class="stack">${opts.map((s,i)=>`<div class="${(i===opts.length-1&&hit)?'hit':''}" ${i===opts.length-1?'style="font-weight:600"':''}>${s}</div>`).join('')}</div>`
+    :`<div class="btns"><div>Don't Allow</div><div class="${hit?'hit':''}">Allow</div></div>`;
+  return `<div class="scrim" style="opacity:${o}"></div><div class="alert" style="opacity:${o};transform:translateY(-50%) scale(${sc})">
+   <div class="ic"></div><h3>${title}</h3><p>${sub}</p>${btns}</div>`;
+}
+const S={};
+// ---- Scene 1: the search bar (shot 6). 5 s.
+S.search=(t)=>{clock='02:13';const q=typed(t,.5,'how to fix',9);
+ const sug=t>1.9?`<div class="sugg" style="opacity:${op(t,1.9)}">${['patient\'s ass','marriage','a burned leg','my life'].map((s,i)=>t>1.9+i*.28?`<div><i></i><span>how to fix <b>${s}</b></span></div>`:'').join('')}</div>`:'';
+ return phoneWrap(`<div style="position:absolute;inset:0;background:#f1f1f4"></div><div class="search"><div class="sbox"><span class="g"></span><span>${q}<span class="caret" style="opacity:${Math.floor(t*2.4)%2?0:1}"></span></span></div>${sug}</div>`,t,5,{x:900,y:50});
+};
+// ---- Scene 9: lock screen, the ad (shot 35). 5 s.
+S.lockad=(t)=>{clock='23:47';
+ const n=t>1.0?`<div class="notif" style="top:${230+(1-out(op(t,1,.3)))*-40}px;opacity:${op(t,1,.3)}"><div class="ni"></div><div style="flex:1"><div class="nt">Enough's Enough <span>now</span></div><div class="nb"><b>What's wrong?</b><br>Tap to talk. It's free.</div></div></div>`:'';
+ return phoneWrap(`<div class="lock"><div class="date">Thursday</div><div class="time">23:47</div>${n}</div>`,t,5,{x:860,y:60,dark:true});
+};
+// ---- Scene 10: first use (shot 36). Voice 031 starts at t=0.45 (What's wrong? / Go to bed / study / calendar). 8 s.
+S.firstuse=(t)=>{clock='23:52';
+ const b=`${head}<div class="body">
+ ${show(t,.45,`<div class="bub app">What's wrong?</div>`)}
+ ${t>1.3&&t<2.2?`<div class="bub me dots" style="background:var(--ink)"><span style="background:#777"></span><span style="background:#999"></span><span style="background:#bbb"></span></div>`:''}
+ ${show(t,2.2,`<div class="bub me">everything</div>`)}
+ ${show(t,2.9,`<div class="bub app">Go to bed. 10:30pm, every night.</div>`)}
+ ${show(t,4.0,`<div class="card"><div class="k">The study</div><div class="t">Sleep and next-day mood</div><div class="m">Peer reviewed · 4 min read</div><div class="bar"><b style="width:${clamp((t-4.2)*40,0,100)}%"></b></div></div>`)}
+ </div>${alertBox(t,5.4,`“Enough's Enough” Would Like to Access Your Calendar`,'So I can put bedtime in it.',7.0)}${tapAt(t,7.0,205,384)}`;
+ return phoneWrap(b,t,8.2,{x:880,y:55});
+};
+// ---- Scene 11: permissions over his day (shot 43). Lines at 0.4, 4.0, 7.7, 11.5 (35-38). 13 s.
+S.perms=(t)=>{clock='08:14';
+ const P=[[0.35,3.0,`“Enough's Enough” Would Like to Connect to Your Bank`,'To sort your money.',null],
+  [3.95,6.7,`Allow “Enough's Enough” to use your location?`,'To plan your runs.',['Allow Once','Allow While Using App','Always Allow']],
+  [7.65,10.3,`“Enough's Enough” Would Like to Access Your Contacts`,'To find you some mates.',null],
+  [11.45,12.05,`“Enough's Enough” Would Like to Access the Microphone`,'',null]];
+ let al='';for(let i=P.length-1;i>=0;i--){const [a,hit,ti,su,opts]=P[i];const end=i<P.length-1?P[i+1][0]:99;if(t>=a&&t<end){al=alertBox(t,a,ti,su,hit,{opts})+tapAt(t,hit,opts?150:205,opts?440:(su?384:372));break}}
+ const b=`${head}<div class="body">${show(0,0,`<div class="card"><div class="k">Today</div><div class="t">Run, 5k. Bed 10:30.</div><div class="m">Day 12 · on track</div><div class="bar"><b style="width:40%"></b></div></div>`)}</div>${al}`;
+ return phoneWrap(b,t,13,{x:900,y:50});
+};
+// ---- Scene 12: gym door (shot 46). Voice 044 at 0.4 for 7.4 s. 8.4 s.
+S.partner=(t)=>{clock='18:02';
+ const b=`${head}<div class="body">
+ ${show(t,.4,`<div class="bub app">People stick at it longer with a partner. There's a study.</div>`)}
+ ${show(t,3.6,`<div class="card"><div class="k">Partner found</div><div class="t">Gary, 50s</div><div class="m">0.0 miles away · Logistics</div></div>`)}
+ ${show(t,6.0,`<div class="bub app">He's behind you.</div>`)}</div>`;
+ return phoneWrap(b,t,8.4,{x:900,y:50});
+};
+// ---- Scene 13: on the stairs (shot 50). Voice 055 at 0.4 for 7.9 s. 8.8 s.
+S.sorry=(t)=>{clock='19:30';
+ const items=[['Say sorry',0.5],['Offer to pay',2.0],['Then leave',3.5],['Join a local group',5.2]];
+ const b=`${head}<div class="body"><div style="font-family:'Instrument Serif';font-size:28px;color:var(--ink);padding:4px 4px 6px">Tonight</div>
+ ${items.map(([s,a])=>show(t,a,`<div class="card" style="width:100%;display:flex;gap:10px;align-items:center;padding:13px"><span style="width:20px;height:20px;border-radius:6px;border:2px solid var(--ink);display:grid;place-items:center;font-size:13px;flex:none">${t>a+1.1?'✓':''}</span><span style="font-size:15px;color:var(--ink)">${s}</span></div>`)).join('')}</div>`;
+ return phoneWrap(b,t,8.8,{x:900,y:50});
+};
+// ---- Scene 14: the journal (shot 56). App prompt at 0.35, Brandon types 6.7..15.2. 15.8 s.
+S.journal=(t)=>{clock='23:58';
+ const entry='Best day of my life. Jenny says the vote\'s on the 14th. Mags has the bank details. Ted\'s doing the leaflets.';
+ const ty=typed(t,6.7,entry,12.6);
+ const b=`${head}<div class="body">
+ ${show(t,.35,`<div class="bub app">How did today make you feel?</div>`)}
+ ${show(t,2.0,`<div class="bub app">Who was there?</div>`)}
+ ${show(t,3.6,`<div class="bub app">What did they say?</div>`)}
+ ${t>6.6?`<div class="bub me">${ty}${t<15.3?'<span class="caret" style="background:#fff"></span>':''}</div>`:''}
+ ${show(t,15.4,`<div style="align-self:center;font-size:11.5px;color:var(--mute);margin-top:4px">Saved to your journal 🔒 Private</div>`)}</div>`;
+ return phoneWrap(b,t,15.8,{x:900,y:50});
+};
+// ---- Scene 16: daily goals (shot 63). Voices 073-075 at 0.4, 5.2, 9.8. 14 s.
+S.goals=(t)=>{clock='14:06';
+ const G=[[0.4,'Suggest moving the meeting to Tuesday.',50],[5.2,'Let the nice consultant finish.',75],[9.8,'Offer to handle the emails.',120]];
+ const streak=99;
+ const b=`<div class="lock"><div class="date">Saturday</div><div class="time">14:06</div>
+ ${G.map(([a,s,p],i)=>t>a?`<div class="notif" style="top:${222+ (G.filter(g=>t>g[0]).length-1-i)*92}px;opacity:${op(t,a,.25)}"><div class="ni"></div><div style="flex:1"><div class="nt">Enough's Enough <span>now</span></div><div class="nb"><b>Today's goal:</b> ${s} <span class="pts">+${p}</span></div></div></div>`:'').join('')}
+ <div style="position:absolute;bottom:40px;left:0;right:0;text-align:center;color:#fff;font-size:14px;font-weight:600;opacity:.9">🔥 ${streak}-day streak</div></div>`;
+ return phoneWrap(b,t,14,{x:900,y:50,dark:true});
+};
+// ---- Scene 16: the badge (shot 64). 7.4 s.
+S.badge=(t)=>{clock='14:31';
+ const k=out(op(t,.5,.5));
+ const conf=Array.from({length:18},(_,i)=>{const a=i*20,d=(t-.6)*140;if(t<.6||t>3)return '';return `<div class="confetti" style="left:${138+Math.cos(a)*d}px;top:${210+Math.sin(a)*d+ (t-.6)*(t-.6)*60}px;background:${['#ff5a1f','#1f8a5b','#15171c','#ffb36b'][i%4]};transform:rotate(${a*3+t*300}deg);opacity:${clamp(3-t)}"></div>`}).join('');
+ const b=`${head}<div class="body" style="text-align:center"><div class="medal" style="transform:scale(${.6+.4*k})"><div>100</div></div>
+ <div style="font-family:'Instrument Serif';font-size:30px;color:var(--ink)">Community Champion</div>
+ <div style="font-size:13.5px;color:var(--mute);margin-top:6px">100 days in a row. Your group trusts you.</div>
+ <div style="margin:16px auto 0;background:var(--ink);color:#fff;border-radius:22px;padding:11px 22px;font-weight:600;font-size:14px;display:inline-block">Share</div></div>${conf}`;
+ return phoneWrap(b,t,7.4,{x:120,y:50,rot:4});
+};
+// ---- Scene 16: goal complete, in his pocket (shot 66). 3.5 s, small, no phone.
+S.complete=(t)=>{const o=Math.min(op(t,.1,.3),1-op(t,3.0,.4));
+ return `<div class="notif" style="position:absolute;left:820px;top:40px;width:400px;opacity:${o};transform:translateY(${(1-out(op(t,.1,.4)))*-30}px)"><div class="ni"></div><div style="flex:1"><div class="nt">Enough's Enough <span>now</span></div><div class="nb"><b>Goal complete.</b> 101 days. <span class="pts">+500</span></div></div></div>`;
+};
+// ---- Scene 15: the labels on the replay. 1.25 s each, one scene per label (name passed in t's companion).
+S.label=(t,txt,sub)=>{const o=Math.min(op(t,.05,.08),1-op(t,1.15,.08));const sl=(1-out(op(t,.05,.2)))*-40;
+ return `<div class="label" style="opacity:${o};transform:translateX(${sl}px)"><small>${sub}</small>${txt}</div>`};
+// ---- the model shot: a planning notice. 4.5 s
+S.plan=(t)=>{const o=Math.min(op(t,.2,.3),1-op(t,4.1,.3));
+ return `<div class="plan" style="opacity:${o};transform:translateY(${(1-out(op(t,.2,.4)))*-20}px)"><div class="h">PLANNING APPLICATION</div><div class="b">AI DATA CENTRE</div><div class="s">Hyperscale, 24/7. Land at the recreation ground. Objections by the 14th.</div></div>`};
+// ---- Ted's leaflet: opaque full frame, slow push. 5 s
+S.leaflet=(t)=>{const z=1.0+t*.025;
+ return `<div class="leaf"></div><div style="position:absolute;inset:0;transform:scale(${z})"><div class="paper">
+ <div class="top">STOP THE <em>A.I.</em><br>DATA CENTRE!</div><div class="drop"></div>
+ <div class="mid">IT WILL DRINK<br>OUR TOWN DRY!!!</div>
+ <div class="foot">PUBLIC MEETING · <u>Thursday 7pm</u><br>St Barnabas Hall · Biscuits provided</div>
+ <div class="tear">Leaflet by Ted. Please do not put through number 9 again.</div></div></div>
+ <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 45%,rgba(0,0,0,.45) 100%)"></div>`};
+// ---- ambulance lights: a blue/red wash pulsing, 0.9 s
+S.flash=(t)=>{const p=t/.9;const pulse=(c,ph)=>Math.max(0,Math.sin((p*3+ph)*Math.PI))**3;const env=Math.sin(clamp(p)*Math.PI);
+ return `<div class="flash" style="background:radial-gradient(ellipse at 20% 40%,rgba(30,90,255,${.75*pulse(0,0)*env}) 0%,rgba(30,90,255,0) 70%)"></div>
+ <div class="flash" style="background:radial-gradient(ellipse at 80% 40%,rgba(255,30,40,${.6*pulse(0,.5)*env}) 0%,rgba(255,30,40,0) 70%)"></div>
+ <div class="flash" style="background:rgba(255,255,255,${.25*Math.max(0,1-Math.abs(p-.5)*6)})"></div>`};
+window.render=(name,t,a,b)=>{$('#stage').innerHTML=S[name](t,a,b);};
+window.fontsReady=document.fonts.ready.then(()=>true);
+</script></body></html>

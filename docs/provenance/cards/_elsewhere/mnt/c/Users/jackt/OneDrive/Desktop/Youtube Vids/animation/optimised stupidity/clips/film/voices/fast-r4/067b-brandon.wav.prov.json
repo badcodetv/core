@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/fast-r4/067b-brandon.wav",
+ "made": "2026-11-02T15:43:01+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "atrim 0-5.66 + 80ms fade",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/optimised stupidity/clips/film/voices/fast-r4/067-brandon.wav",
+ "why": "Rough 4: the take says Ted is doing the leaflets twice; the repeat cut"
+}

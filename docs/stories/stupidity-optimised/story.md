@@ -34,7 +34,7 @@ gesture from another man's thumb, a kill order.
 - Unwitting recruits: the Leyton warehouse case (UK men recruited over Telegram, some reportedly unaware
   who it was for) and the spycops (undercover police in over 1,000 groups, by reported figures).
 - AI for spotting and pitching to sources is a real think-tank proposal, not a shown practice.
-- The UK data-centre water row is real. The site in the film is fictional and explicitly water-cooled.
+- The UK data-centre water row is real. The site in the film is fictional. Since 2 November 2026 (Jack) the campaign is plainly against an **AI** data centre, and the narrator says the water argument doesn't hold, with sources: [`research-data-centre-water.md`](./research-data-centre-water.md).
 
 **Never claim a real service does this.** The contractor, agency and app are all invented.
 

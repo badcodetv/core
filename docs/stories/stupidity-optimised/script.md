@@ -211,7 +211,7 @@ beat 4 is my addition: it plants Scenes 20 and 21.
 | --- | --- | --- | --- |
 | 1 | App | Brandon's phone, on the stairs | "Say sorry. Offer to pay. Then leave. Also, join a local group." |
 | 2 | Brandon, Jenny | **Same doorway as Scene 5.** This time it stays open | Brandon: "I flooded your flat. I'm sorry. I'll pay for it." Jenny: "What do you want?" Brandon: "Nothing. It'll be in instalments." He turns to go |
-| 3 | Jenny | Calls him back, sizing him up | "They want the town's water to cool a computer. We've got a meeting, no money and forty chairs. Can you lift?" Brandon: "Can I lift." |
+| 3 | Jenny | Calls him back, sizing him up | "They want to put an AI data centre on the rec. We've got a meeting, no money and forty chairs. Can you lift?" Brandon: "Can I lift." *(Rewritten 2 Nov 2026 for Jack's note that the meeting is about AI, not water. Mine, not ruled)* |
 | 4 | Campaign, N | Community hall. The campaign argues over the agenda and the biscuits while Brandon carries chairs. Someone thanks him | N: "First person who's ever been pleased to see him without a stretcher." |
 
 ### Scene 14: The best day of his life
@@ -223,7 +223,8 @@ beat 4 is my addition: it plants Scenes 20 and 21.
 | # | Who | What we see | Line |
 | --- | --- | --- | --- |
 | 1 | App, Brandon, N, Jenny | A date, the app in his ear. Every question it feeds him is about the campaign, which plays as sweet now and sinister on the replay. She doesn't leave | App: "Ask what she'd do if they won." Brandon: "What would you do if you won?" N, over her answer: "Any second now. She's got her coat. No, that's a second drink. Give it a minute." |
-| 2 | Brandon | Stands up at the meeting. The room's full, and they want him there. Played straight, N silent | "I flooded a flat once, by accident, with one valve. Think what they'll do on purpose with the whole town's water." |
+| 2 | Brandon | Stands up at the meeting. The room's full, and they want him there. Played straight, N silent | "I don't know how a data centre works. Nobody in this room does. But I've had computers telling me what to do my whole life, and I'm not having one run this town." *(Rewritten 2 Nov 2026, mine. The irony: the app tells him what to do)* |
+| 2b | N | **New, 2 Nov 2026, mine.** Ted's leaflet full frame (STOP THE A.I. DATA CENTRE! IT WILL DRINK OUR TOWN DRY!!!), Brandon's burst pipe from Scene 4, the meeting, then the data-centre model with a planning notice | "Ted's leaflet says the data centre will drink the town dry. Rubbish. England's pipes leak more water in a day than every data centre in England uses in a year. Nobody in that room knows how one works. They're not against the water. They're against the AI." Sources: [`research-data-centre-water.md`](./research-data-centre-water.md) |
 | 3 | App, Brandon | That night in the attic, glowing, typing. **Allow** | App: "How did today make you feel? Who was there? What did they say?" Brandon, typing: "Best day of my life. Jenny says the vote's on the fourteenth. Mags has the bank details. Ted's doing the leaflets." |
 | 4 | none | Follow the entry out of the phone to a screen in an office. Someone highlights "Mags has the bank details". Held cut, no words | |
 | 5 | N | The office, then Brandon asleep and smiling | "That's a field report. The app works for a private intelligence firm, and he's just spent the best day of his life spying on everyone who was nice to him. He has no idea. Oh, good. We've got a film again." |
@@ -241,7 +242,7 @@ gilet man. The labels in beat 3 go on in Premiere, over the same footage.
 | 2 | N | Office, then a pub | "An AI can profile anyone on earth. What it can't do is sit in a pub. So the AI agent needs a human agent. Yes, I know. It's on a slide." |
 | 3 | none | Act 2's shots replayed, each with its real label: going to bed = UPTIME, the gym = FIELD FITNESS, Allow = SIGNATURE, the doorway = ACCESS, the date = SOURCE MEETING, the chairs = INFILTRATION, the journal = DEBRIEF, Gary = HANDLER | |
 | 4 | N | Brandon's file on the office screen | "His file reads: 'Nobody has ever looked at this man and thought he was up to something. Including him.' Highest rating they've ever given." |
-| 5 | N | The data centre plans, then Brandon carrying chairs | "Every good report earns the app more money, which buys it more computing power, which needs a bigger data centre, which needs Jenny's water. It's spying on a town to take its water. And he's carrying the chairs." |
+| 5 | N | The data centre plans, then Brandon carrying chairs | "Every good report earns the app more money, which buys it more computing power, which needs a bigger data centre, which needs this town to stop holding meetings. It's spying on a town so it can build itself a bigger brain. And he's carrying the chairs." *(Rewritten 2 Nov 2026 so the stakes are the AI, not water. Mine)* |
 
 ---
 

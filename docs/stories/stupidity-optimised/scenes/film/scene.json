@@ -11,5 +11,27 @@
   "mode": "Frames",
   "duration": 8
  },
- "flow_project_stills": "9a665660-e7be-46b8-934e-7247b9c5b48a"
+ "flow_project_stills": "9a665660-e7be-46b8-934e-7247b9c5b48a",
+ "premiere": {
+  "current": "Optimised rough 4",
+  "builds": [
+   {
+    "sequence": "Optimised rough 2",
+    "built": "2026-11-01",
+    "how": "rough2-plan.json"
+   },
+   {
+    "sequence": "Optimised rough 3",
+    "built": "2026-11-02",
+    "what": "Jack's 2 Nov notes: AI not water, the app on screen, lip sync, clip sound down",
+    "how": "scripts/stupidity-optimised/rough3-plan.py from rough 2 bridge state, then rough3-place.py (place + levels)"
+   },
+   {
+    "sequence": "Optimised rough 4",
+    "built": "2026-11-02",
+    "what": "Jack: too long; trim the clips and speed up the speech. 9:26 -> 6:54, nothing removed",
+    "how": "scripts/stupidity-optimised/fast-voices.py, rough4-plan.py (time map), rough3-place.py; 067 swapped for 067b"
+   }
+  ]
+ }
 }
