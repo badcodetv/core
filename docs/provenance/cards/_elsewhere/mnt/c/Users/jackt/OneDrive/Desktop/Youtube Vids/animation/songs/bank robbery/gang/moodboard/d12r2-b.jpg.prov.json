@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d12r2-b.jpg",
+ "made": "2026-11-03T13:40:35+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:56 'risk of default is really rather narrow'",
+ "prompt": "A music-video film still looking steeply down from a carved stone cornice onto a 1920s skyscraper ledge one brick wide, the street forty storeys below a dizzy grid of tiny black sedans and striped awnings. MARINE is in the shot; his mask and suit are exactly as in the attached reference image. Thin and fast, he presses his back flat to the limestone, shuffling sideways on two-tone shoes in a cream linen suit, one gloved hand spread on the wall, the other gripping a bulging canvas sack of banknotes over the drop. His marine-blue hand-knitted rib wool balaclava is tucked into his turned-up collar, smooth unbroken knit where the face would be, a large white wool ring stitched round the face from brow to chin, and a small rounded red felt triangle high over his left eye, on the right of the picture at two o'clock. Low late-afternoon sun rakes along the wall from the right, long shadow, 24mm lens, faint grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

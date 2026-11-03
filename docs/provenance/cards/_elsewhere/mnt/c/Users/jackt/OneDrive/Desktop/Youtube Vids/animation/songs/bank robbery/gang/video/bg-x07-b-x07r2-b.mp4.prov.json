@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-x07-b-x07r2-b.mp4",
+ "made": "2026-11-03T16:26:20+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off high camera, framing holds. The policemen bring their axes down into the oak barrels once each, and amber liquor gushes out and spreads slowly across the plank floor around the cards and chairs. The masked man carrying the crate walks steadily toward the open back door on the right. The masked man in the red suit holds the door still. The masks and the room stay unchanged. Audio: SFX of splitting wood, gushing liquid, heavy boots on boards.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x07r2-b.jpg",
+ "why": "mv-gang clip, writer w9",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x07r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "x07-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T16:17:47.005Z"
+ }
+}

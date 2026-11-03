@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x06-a.jpg",
+ "made": "2026-11-03T12:43:43+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, chorus 2 'action'",
+ "prompt": "A music-video still at night on open water: a long, low varnished mahogany speedboat tears across a black bay, bow lifted, white spray fanning from its hull, seen from low on the waterline with a telephoto lens so the distant shore lights compress behind it. From off-frame left, a Coast Guard cutter's searchlight throws a hard white beam that pins the boat and turns the spray to glitter. Stacked wooden liquor crates fill the stern under a loose tarp. MARINE, thin, in a cream linen suit and a marine-blue hand-knitted hood with a cream chain-stitched ring, grips the wheel; CRIMSON, in a charcoal pinstripe double-breasted suit and a crimson knitted hood with a cream ring under a grey fedora, kneels on the crates, a Thompson held pointing at the sky. Both look back into the light, so the small rounded red felt triangle over each man's right eye sits on the left of his face in the picture. Black gloves, collars up. Cold moonlight, grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

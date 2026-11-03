@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v04-a.jpg",
+ "made": "2026-11-03T12:43:39+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:27 'but where does it go? nobody knows!'",
+ "prompt": "A 1920s music-video still, 16:9, eye-level from a narrow cobbled street on a windy overcast afternoon, 28mm lens. Mid-ground left, a tired factory worker in a patched brown jacket and cloth cap has just torn open a small brown pay envelope; his few banknotes are lifting out of it on the wind. The notes stream away in a long loose ribbon down the street, tumbling past a fruit barrow and a lamp post, and fly in through the open tall window of a grand pale-stone bank with fluted columns at the far end of the street, its plain stone frieze bare. In the right foreground, close to the lens, PLUM shrugs enormously at the camera: plum hand-knitted balaclava, seamless knit face, cream chain-stitched face ring, small rounded red felt triangle high over his right eye, on the left side of his face as we see it. Chalk-striped mustard-yellow three-piece suit, black leather gloves, palms up, shoulders at his ears. Flat soft daylight, muted brick reds, grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

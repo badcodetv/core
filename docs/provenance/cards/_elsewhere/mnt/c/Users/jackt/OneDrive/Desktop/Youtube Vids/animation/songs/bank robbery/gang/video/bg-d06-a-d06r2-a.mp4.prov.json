@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d06-a-d06r2-a.mp4",
+ "made": "2026-11-03T15:17:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The masked man at the bar nods his head on a steady beat and performs with his hands only: his thumb jabs back over his shoulder twice toward the barman, and his other gloved hand chops flat on each beat, then holds. Behind him the barman keeps calmly pouring water from the tin jug into the whiskey bottle, the liquid paling. The mask, gloves and room stay unchanged. Audio: SFX of water trickling into glass, low basement room tone.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d06r2-a.jpg",
+ "why": "mv-gang clip, writer w9",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d06r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d06-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:04:22.707Z"
+ }
+}

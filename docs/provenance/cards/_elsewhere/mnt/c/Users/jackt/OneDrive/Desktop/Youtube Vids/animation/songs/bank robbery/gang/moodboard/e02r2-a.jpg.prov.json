@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/e02r2-a.jpg",
+ "made": "2026-11-03T13:40:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 2:27 'who has elastic bands, not plastic hands'",
+ "prompt": "A tight macro still on a steel-topped vault counter: two hands in black leather gloves, the shirt cuffs and a brown tweed sleeve pulled down over the wrists, stretch a tan rubber band and snap it round a fat brick of green banknotes, the band caught mid-recoil and blurred. The hands are BOTTLE's, and his gloves and tweed sleeve are exactly as in the attached reference image; his masked head stays out of frame. The engraving on the top note is soft and out of focus, an ornate border with no legible lettering. Around the brick lie more loose rubber bands, a brass teller's stamp and a heap of unbanded notes. Shot on a 100mm macro lens from just above counter height, shallow focus so the far edge of the counter dissolves into the gloom of the vault. Light comes from one green-shaded brass desk lamp to the left, pooling warm on the leather creases and the band's tension, the rest falling to deep shadow. Visible film grain, slight softness, nothing glossy.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

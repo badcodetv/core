@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x03-a.jpg",
+ "made": "2026-11-03T12:43:39+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, verse 5 'action'",
+ "prompt": "A music-video still: night, a blizzard over a frozen river, the white ice cracked in long dark lines. Shot on an 85mm lens from just behind the lead car's front fender, so the edge of a headlamp and a doorless black 1920s sedan fill the right of the frame, two more doorless cars queued behind. In the twin headlight beams, snow streaking through them, three gang members step out of the dark toward the convoy, 1920s Thompson prop guns held pointing up at the sky: CRIMSON in a grey fedora and charcoal pinstripe, BOTTLE in brown tweed with a bottle-green balaclava and oatmeal ring, SILVER in oxblood with a silver-grey balaclava and crimson ring. Each hand-knitted mask covers the whole head with seamless knit, a contrasting ring outlining the face and a rounded red felt triangle over the right eye, on the left of the picture. Black gloves, collars up, snow on the shoulders. Cold blue-white light, deep black beyond, heavy grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

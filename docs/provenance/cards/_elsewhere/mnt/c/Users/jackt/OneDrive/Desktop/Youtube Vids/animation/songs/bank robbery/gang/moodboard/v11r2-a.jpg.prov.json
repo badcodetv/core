@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v11r2-a.jpg",
+ "made": "2026-11-03T13:40:29+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 0:46 'remember kids, the Fed is not your friend'",
+ "prompt": "A music-video still at noon on the wide granite steps of an enormous columned stone building, shot with an ultra-wide lens from a few steps below, looking up. The overhead sun drops short, hard shadows under every column. SILVER, the tall one and the only gang member in the shot, leans down into the lens and wags one black-gloved index finger at the viewer. His mask and suit are exactly as in the attached reference image. The finger is large and slightly bulged by the lens, and his other gloved hand is planted on his hip. His silver-grey hand-knitted balaclava has a large white ring stitched round the face from brow to chin, smooth knit where the face would be, and a small rounded red felt triangle high over his left eye, on the right side of the picture. He wears an oxblood-red suit, a bow tie and an upturned collar, with the cuffs down over the gloves. Far behind him, at the top of the steps between the giant columns, a stout banker in a top hat hugs a fat cloth moneybag to his chest and peers back warily.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

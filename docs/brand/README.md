@@ -38,6 +38,27 @@ red circle** the full size of the letters. A bare triangle as the o "reads as an
 - **Below 48px use the favicon files** — they carry a heavier line floor and a bigger triangle, or at
   16px it shrinks to a speck.
 
+## The BadCode balaclava (Jack, 2026-11-03): every story, every time
+
+Anyone in a BadCode balaclava, in any story or film, is BadCode in person. Jack: *"making the rule for all
+balaclava usage to have the triangle over the right eye for all things we make with balaclavas so it is
+consistent, also that there is no skin showing implying it could potentially be a robot like git push, but
+no robot feature, just have gloves on and never show skin."*
+
+- **The mask is the jeweller's-shop mask** (Colour Noir `mask1` b, Jack 2026-11-03: *"the masks are wrong they
+  should be like the ones in [the jeweller's shop] with the triangle over the left eye and the white circle"*):
+  a large **white ring** stitched round the whole face, and the **red triangle over the wearer's LEFT eye**,
+  high inside the ring. Facing the camera, that puts the triangle on the **right of the picture**, at about
+  2 o'clock, the same as the logo. (This replaces the "right eye" reading of earlier the same day.)
+  Reference image (picked 2026-11-03): `Youtube Vids\animation\songs\bank robbery\gang\reference\lineup-a.jpg`, the six-man Bank Robbery gang facing camera.
+- **No skin, ever.** The balaclava has no eye, nose or mouth holes; its neck tucks into a collar; gloves on
+  both hands; cuffs over the wrists. Nothing human shows, so it *could* be a machine underneath (the
+  GitPush idea), but **no robot features**: no metal, no lights, no seams, no visor. Just cloth and gloves.
+- **Mask colours and cloth are free** (they belong to the story's look.md): a different colour per gang member is
+  fine. Fixed: the white ring, the triangle's eye, no skin.
+- Applies to the Money For Something host as well as any gang. Prompt wording is the story's business; this is
+  the rule, not a phrasing.
+
 ## The settings (the source of truth)
 
 Everything in `logo/` is generated from these by

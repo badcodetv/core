@@ -1,0 +1,38 @@
+{
+ "round": 2,
+ "kai_round1": {
+  "at126": "same scene twice, please put something else here. THanks\n",
+  "at884": "his triangle on his balaclava should always be on the left eye, on anyone wearing a badcode balaclava. change it \nTHanks ",
+  "at1459": "there is no one in the drivers seat thanks"
+ },
+ "plan": [
+  {
+   "h": "Your three notes",
+   "items": [
+    "0:05 same scene twice → a Colour Noir hot rod (rods3-b) after the gang walk.",
+    "0:36 triangle → the grandma clip mirrored, so it sits over his left eye.",
+    "1:00 empty driver's seat → that clip (x01-a) is out everywhere it appeared (1:00, 2:06, 3:14)."
+   ]
+  },
+  {
+   "h": "Also this round",
+   "items": [
+    "Ten Colour Noir action clips back in: safe dragged with sparks, the motorcycle-cop chase, the red car through the sparks, barrels from the driver's seat, the theatre-crowd drive, the safe out of the wall, the masked driver, hot rods (headlights, water tunnel, bridge).",
+    "Every cut moved onto the strongest drum hit near its line (at most 0.33 s); the 0:07 drop now cuts at 7.55 s.",
+    "Left out on purpose: the train-robbery and jeweller's-shop clips from Colour Noir: their masks break the left-eye / white-ring rule."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "c01-b (the gang chanting in the bank lobby) is still refused by Flow: keep the bank-doors shot there, or try a new still?",
+    "c02 still shows a readable BUTCHER'S SHOP sign."
+   ]
+  }
+ ],
+ "replies": {
+  "at126": "Fixed → a Colour Noir hot rod (rods3-b) at 0:04 instead of the second gang walk. → in Balaclava Gang 2",
+  "at884": "Fixed → this clip is mirrored, so his triangle is over his left eye. I checked every other gang clip: they already have it on the left eye. Two Colour Noir clips that break the rule are left out. → in Balaclava Gang 2",
+  "at1459": "Fixed → that clip (x01-a) is out everywhere: the safe dragged with sparks at 0:59, the motorcycle-cop chase at 2:06, hot rods in the water tunnel at 3:14. → in Balaclava Gang 2"
+ }
+}

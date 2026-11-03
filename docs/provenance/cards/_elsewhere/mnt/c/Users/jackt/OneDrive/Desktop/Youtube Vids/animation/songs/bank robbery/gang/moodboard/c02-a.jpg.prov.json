@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c02-a.jpg",
+ "made": "2026-11-03T12:43:46+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 1:04 'call the police, it's a robbery!'",
+ "prompt": "A music-video film still, 16:9, a rainy dusk street corner in 1920s America, shot from low by the kerb with a 24mm lens tilted slightly. A beat cop in a navy wool greatcoat and tall domed helmet clutches the earpiece of a red cast-iron police call box on its post, mouth wide, shouting into it, his other hand flung toward the road. Behind him a black Ford roadster with its fenders stripped tears past in a hard sideways blur, rear wheels spraying puddle water, spokes smeared into discs, while the cop stays crisp. At the wheel, half turned toward us, sits RUST: a hand-knitted rib-wool balaclava in rust-gold covering the whole head, smooth knit where the face would be, a black chain-stitched ring outlining the face, a small rounded red felt triangle high over his right eye, on the left of the picture, black double-breasted suit, white tie, black leather gloves gripping the wheel. A green-glass streetlamp and a lit butcher's window light the wet cobbles. Visible grain, soft edges.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

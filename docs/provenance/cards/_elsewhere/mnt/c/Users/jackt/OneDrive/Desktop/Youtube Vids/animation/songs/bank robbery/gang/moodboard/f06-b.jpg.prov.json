@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f06-b.jpg",
+ "made": "2026-11-03T12:43:46+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:56 'hungry people feed a revolution'",
+ "prompt": "A music-video film still, 16:9, a long city street at blue winter dusk, shot from very low with an ultrawide lens that bends the buildings away. Along the left pavement a bread line of thin men and women in worn overcoats and shawls waits with bowed heads beside a soup kitchen's steamed window; further down the street the same line has swung into the road as a crowd marching toward us, holding up flaming torches that light faces orange. Leading the march, close to the lens and towering over it, SILVER raps straight into the camera, one gloved arm thrust forward pointing into the lens, the other fist on his chest. SILVER: a hand-knitted rib-wool balaclava in silver-grey covering the whole head and neck tucked into his collar, smooth unbroken knit where the face would be, a crimson chain-stitched ring outlining the face, a small rounded red felt triangle high over his right eye, on the left side of the picture; oxblood-red suit, bow tie, black leather gloves. Torchlight from behind rims him. Grainy colour film.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

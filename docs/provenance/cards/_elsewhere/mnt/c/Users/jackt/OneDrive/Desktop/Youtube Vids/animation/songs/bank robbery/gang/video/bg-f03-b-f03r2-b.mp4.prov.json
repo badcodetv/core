@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-f03-b-f03r2-b.mp4",
+ "made": "2026-11-03T15:42:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off static camera, framing holds. The masked man in the armchair stays reclined, then lazily flicks the single banknote from his gloved hand toward the fireplace; it flutters down and lands in the flames, curls and burns. He sinks back into the chair and stays there. The fire flickers, snow keeps falling gently past the window, and the stack on the hearth stays put. SFX: the crackle and soft roar of the fire, a quiet whoosh as the note catches. No voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f03r2-b.jpg",
+ "why": "mv-gang clip, writer w2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f03r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "f03-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:33:36.268Z"
+ }
+}

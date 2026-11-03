@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f08r2-a.jpg",
+ "made": "2026-11-03T13:40:34+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 3:00 'it's time to give, not just to take'",
+ "prompt": "A 1920s music-video still, 16:9, looking steeply down from a second-floor iron fire escape with a 35mm lens onto a narrow tenement street in low golden late-afternoon sun raking in from the right. A black open-topped 1920s touring car with spoked wheels rolls at walking pace down the middle of the street. The masks and suits are exactly as in the attached reference image; RUST, MARINE and PLUM are in this shot. RUST drives in his rust-gold balaclava and black double-breasted suit with white tie. In the back seat MARINE, marine-blue balaclava and cream linen suit, and PLUM, plum balaclava and chalk-striped mustard-yellow suit, stand and fling handfuls of banknotes into the air with black-gloved hands. Each mask is seamless hand-knitted wool with a large white ring round the face and a small rounded red felt triangle high over the wearer's left eye. Grown men and women in worn coats and aprons crowd the stoops and lean from windows, cheering, arms up, catching notes. Washing lines strung overhead, peeling green and ochre paint, grain.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

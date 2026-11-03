@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg",
+ "made": "2026-11-03T12:48:20+00:00",
+ "by": "claude",
+ "engine": "Google Flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image only as the pattern for the masks, make a new picture: six men in sharp 1920s suits stand in a row facing the camera square on, against a plain warm grey painted wall in soft even daylight, full length, like a costume reference photograph. Each wears a hand-knitted rib-wool balaclava made exactly like the plum one in the provided image: it covers the whole head and neck, unbroken knit where the face would be with no eye or mouth holes, a large white wool ring chain-stitched round the whole face from brow to chin, and one small solid red felt triangle with rounded corners sewn high inside the ring over the man's left eye, so it sits on the right side of the picture at about two o'clock. Black leather gloves, collars up, no skin showing anywhere. From left to right: plum mask with a chalk-striped mustard-yellow three-piece suit; bottle-green mask with a brown tweed suit; crimson mask with a charcoal pinstripe double-breasted suit and a grey fedora; marine-blue mask with a cream linen suit; rust-gold mask with a black double-breasted suit and white tie; silver-grey mask with an oxblood-red suit and bow tie. Film grain, rich colour.\n\nThanks.",
+ "model": "Nano Banana 2",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/../noir/moodboard/r2-mask1-3/00-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/jackt/.cache/badcode-refs/gang/jeweller-mask1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cc315baa-4715-448f-a420-2df47a1efb9d",
+ "why": "gang mask reference after Jack's left-eye/white-ring ruling"
+}

@@ -1,0 +1,60 @@
+[
+ {
+  "at": "2026-11-03T12:44:21+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 1: 48 shots x 2 stills, clean room, every lyric line plus action",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-03T13:41:00+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 2: all 48 shots redone with jeweller-shop masks via line-up reference",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-03T14:49:43+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "what": "Jack's picks of stills to animate",
+  "decided": [
+   "Jack picked 34 round-2 stills to animate (list in picks.md); 'use these picks and continue'"
+  ],
+  "feedback": "feedback/moodboard-r3",
+  "feedback_docs": 38
+ },
+ {
+  "at": "2026-11-03T16:32:33+00:00",
+  "stage": "premiere",
+  "what": "Balaclava Gang 1 built: the version.wav on A1, 65 cuts on V1 to the lyrics, A2 muted"
+ },
+ {
+  "at": "2026-11-03T16:58:09+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Timeline page of Balaclava Gang 1: 65 shots on the lyrics, same as the Premiere sequence",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/assemble_cut.py && python3 scripts/scene/build-timeline.py docs/stories/bank-robbery/songs/mv-gang <out-dir>"
+ },
+ {
+  "at": "2026-11-03T17:11:23+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "what": "Jack's round 1 timeline notes (3) read and answered",
+  "decided": [
+   "Jack: 'pay attention to the notes', 'bring back some of the action clips from the last cut', 'listen and watch the video, so you can cut it to the beat'"
+  ],
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 3
+ },
+ {
+  "at": "2026-11-03T17:11:23+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Cut 2: notes fixed, Colour Noir action back, cuts on the drum hits; Balaclava Gang 2 built"
+ }
+]

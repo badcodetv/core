@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x02r2-b.jpg",
+ "made": "2026-11-03T13:40:33+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), outro 'action'",
+ "prompt": "A music-video still: three stripped-down 1920s roadsters, fenders off, engines bare, cut-down windscreens, race flat out across a cracked white dry lake bed at sunset, each dragging a long ochre dust plume. Shot wide on a 35mm lens from ground level ahead and to one side, the sun low behind the cars so every plume glows amber and the bodies go dark against it. The man in the shot is RUST, his mask and suit exactly as in the attached reference image. He drives the lead car, a bare-chassis speedster with two bucket seats and a round fuel tank behind, leaning into the wheel with black-gloved hands: rust-gold hand-knitted balaclava, smooth knit where the face would be, a large white wool ring round the face, a small rounded red felt triangle over his left eye, on the right of the picture as he heads toward camera; black double-breasted suit, white tie whipping back. Distant purple mountains, nothing else on the flat. Warm grainy 1930s colour film, slight halation.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

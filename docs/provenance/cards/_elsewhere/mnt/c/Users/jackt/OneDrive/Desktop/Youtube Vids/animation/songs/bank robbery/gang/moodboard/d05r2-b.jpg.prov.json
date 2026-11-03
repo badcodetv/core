@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d05r2-b.jpg",
+ "made": "2026-11-03T13:40:39+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:33 'the right and the left both witness the theft / blaming each other'",
+ "prompt": "A music-video film still, 16:9, in a sunlit 1920s brick downtown street at noon, hard sun from the right throwing short shadows. In the foreground, framed waist up with a 35mm lens at eye level, two men argue nose to nose, jabbing fingers into each other's faces: on the left of frame a stout banker in a grey morning coat and red carnation, on the right a lean man in a blue work shirt and flat cap, both red-faced and shouting. Behind them, in sharp focus down the pavement, PLUM and BOTTLE stroll away carrying a squat green steel bank safe between them by its handles, glancing back over their shoulders. Their masks and suits are exactly as in the attached reference image; the two men here are PLUM and BOTTLE. Each wears a hand-knitted rib-wool balaclava covering the whole head, smooth unbroken knit where the face would be, a large white wool ring stitched round the face from brow to chin, and a small rounded red felt triangle high inside the ring over the wearer's left eye, on the picture's right at about two o'clock as he looks back. PLUM: plum wool, chalk-striped mustard three-piece suit. BOTTLE: bottle-green wool, brown tweed suit. Black leather gloves, collars up. Shop awnings in brick red and teal, no lettering. Fine film grain.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

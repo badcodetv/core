@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f03-a.jpg",
+ "made": "2026-11-03T12:43:36+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:42 'own the printer and you don't fear winter'",
+ "prompt": "A music-video still, 16:9, a wide shot from across a rich 1920s study on an 85mm lens, the room compressed and warm. Firelight is the only light, orange on oxblood leather, walnut panelling and gilt book spines. Through a tall window on the right, snow falls blue-grey through the dark. A robber called RUST lounges in a deep buttoned leather armchair, his polished black shoes crossed on a footstool, one black-gloved hand dropping a banknote into the marble fireplace, where a blaze of green banknotes with blurred, unreadable engraving curls and burns. A loose stack of notes waits on the hearth. His rust-gold hand-knitted rib-wool balaclava covers head and neck with smooth unbroken knit over the face, a black chain-stitched ring outlining it, and a small rounded red felt triangle high over his right eye, which, as he turns his head toward us, sits on the left of the picture. Black double-breasted suit, white tie, collar up. Gentle film grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

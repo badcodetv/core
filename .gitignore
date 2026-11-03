@@ -66,3 +66,6 @@ scripts/suno/.my-taste-backup.txt
 # Python bytecode and throwaway scratch files
 __pycache__/
 .scratch/
+
+# Scene mood-board pages embed every still (MBs); rebuild with scripts/scene/build-moodboard.py
+docs/stories/**/moodboard.html

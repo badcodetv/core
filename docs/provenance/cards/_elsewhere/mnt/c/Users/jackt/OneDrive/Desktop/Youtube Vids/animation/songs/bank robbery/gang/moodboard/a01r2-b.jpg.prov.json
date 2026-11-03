@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/a01r2-b.jpg",
+ "made": "2026-11-03T13:40:28+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 0:00 'intro guitar'",
+ "prompt": "A music-video film still on slightly grainy colour film, taken through a long telephoto lens from the middle of a 1920s city street early on a clear morning. Six masked robbers walk side by side straight toward the camera. A low sun behind them throws their long shadows forward across the cobbles and streetcar rails. The six men are PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, left to right, and their masks and suits are exactly as in the attached reference image. Each wears a hand-knitted rib wool balaclava over his whole head and neck, with smooth unbroken knit where the face would be. A large white wool ring is stitched round the face from brow to chin, and a small rounded red felt triangle sits high inside the ring over his left eye, which puts it on the right side of the picture at about two o'clock. All six wear black leather gloves with their collars up. Each rests a 1920s Thompson prop gun on his shoulder, muzzle to the sky. Behind them, out of focus, rise the pale stone columns of a bank.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

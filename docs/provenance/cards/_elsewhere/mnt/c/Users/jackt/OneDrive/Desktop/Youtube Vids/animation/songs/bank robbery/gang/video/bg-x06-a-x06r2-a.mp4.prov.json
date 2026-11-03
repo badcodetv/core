@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-x06-a-x06r2-a.mp4",
+ "made": "2026-11-03T16:26:20+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds, the speedboat stays in the same place in frame as the dark water rushes past beneath it. White spray fans from the hull and falls back to the water. The searchlight beam from the left stays steady on the boat. The driver keeps both hands on the wheel; the kneeling man holds the drum-magazine prop still, pointed at the sky. The masks, the tarp and the crates stay unchanged. Audio: SFX of a roaring engine and slapping spray, wind.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x06r2-a.jpg",
+ "why": "mv-gang clip, writer w9",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x06r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "x06-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T16:17:21.564Z"
+ }
+}

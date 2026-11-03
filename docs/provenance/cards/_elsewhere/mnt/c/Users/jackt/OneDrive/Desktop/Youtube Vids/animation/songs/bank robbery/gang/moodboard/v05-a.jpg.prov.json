@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05-a.jpg",
+ "made": "2026-11-03T12:43:45+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:31 'means of production means a reduction'",
+ "prompt": "A cavernous 1920s factory machine room lit only by an orange furnace glow from the left and a row of caged bulbs overhead, iron flywheels and belts vanishing into smoky dark. Shot on a 24mm lens from a low angle. MARINE, a thin robber in a cream linen suit and two-tone shoes, wears a chunky hand-knitted marine-blue wool balaclava covering his whole head and neck, smooth knit where the face would be, a thin cream chain-stitched ring outlining the face, and one small rounded red felt triangle high over his right eye, facing the camera so it sits on the left side of the picture. Black leather gloves. He raps into the lens, one glove chopping down on the beat, the other thumb jabbing back over his shoulder. Behind him a factory owner in a top hat hauls a big brass lever while adult workers in overalls shrink back against the wall, made small. Grain, deep shadows.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

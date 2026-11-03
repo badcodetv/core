@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v12-a.jpg",
+ "made": "2026-11-03T12:43:36+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:49 'it prints all the dollars that the government spends'",
+ "prompt": "A music-video still from a 1920s Prohibition film: a huge black cast-iron cylinder printing press thunders in a whitewashed cellar, its rollers flinging sheets of green banknotes up into the air, hundreds of notes fluttering and tumbling everywhere. A robber called BOTTLE, three-quarters toward the camera, feeds a stack of blank paper into the press with black leather gloves; he wears a brown tweed suit, collar turned up, and a chunky hand-knitted bottle-green rib wool hood covering his entire head and neck, smooth knit where the face would be, an oatmeal wool ring chain-stitched round the face, one small rounded red felt triangle high over his right eye, on the left side of the picture. Hard noon daylight slants down through a grated pavement window, lighting the flying notes. Low side angle, 35mm lens, fine film grain, ochre walls, oily brass gears. The banknote engraving is soft and blurred.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

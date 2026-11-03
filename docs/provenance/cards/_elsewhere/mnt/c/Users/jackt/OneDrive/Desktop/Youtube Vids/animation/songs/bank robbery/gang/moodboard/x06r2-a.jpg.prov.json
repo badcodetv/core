@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x06r2-a.jpg",
+ "made": "2026-11-03T13:40:36+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), chorus 2 'action'",
+ "prompt": "A music-video still at night on open water: a long, low varnished mahogany speedboat tears across a black bay, bow lifted, white spray fanning from its hull, seen from low on the waterline with a telephoto lens so the distant shore lights compress behind it. The men in this shot are MARINE and CRIMSON, their masks and suits exactly as in the attached reference image. From off-frame left, a Coast Guard cutter's searchlight throws a hard white beam that pins the boat and turns the spray to glitter. Stacked wooden liquor crates fill the stern under a loose tarp. MARINE, thin, in a cream linen suit and a marine-blue hand-knitted hood with a large white ring, grips the wheel; CRIMSON, in a charcoal pinstripe double-breasted suit and a crimson knitted hood with a white ring under a grey fedora, kneels on the crates, a Thompson held pointing at the sky. Both look back into the light, so the small rounded red felt triangle over each man's left eye sits on the right of his face in the picture. Black gloves, collars up. Cold moonlight, grain.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

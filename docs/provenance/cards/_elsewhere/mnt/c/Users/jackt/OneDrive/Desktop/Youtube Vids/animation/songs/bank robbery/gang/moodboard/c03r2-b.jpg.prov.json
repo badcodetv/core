@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c03r2-b.jpg",
+ "made": "2026-11-03T13:40:30+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:07 'debasement! it happened in da basement!'",
+ "prompt": "A music-video still: six masked robbers crammed shoulder to shoulder in a low red-brick basement round a black iron printing press, all facing straight into the lens, gloved fists punched up, chanting. One bare bulb with a red glass shade hangs above them, the only light, throwing deep red over the brick and hard shadows under the arches. Each wears a hand-knitted rib wool hood covering head and neck, smooth knit where the face would be, a large white wool ring stitched round the face from brow to chin, and one small rounded red felt triangle high over his left eye, on the right of the picture at about two o'clock. All six men are in the shot, PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, and their masks and suits are exactly as in the attached reference image. Left to right: PLUM, plum hood, chalk-striped mustard suit; BOTTLE, bottle green, brown tweed; CRIMSON, crimson, charcoal pinstripe, grey fedora; MARINE, marine blue, cream linen; RUST, rust-gold, black suit, white tie; SILVER, silver-grey, oxblood suit, bow tie. Black gloves, collars up. Low fisheye lens, grainy colour film.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f05-a.jpg",
+ "made": "2026-11-03T12:43:44+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:51 'working people get paid in money ... print more'",
+ "prompt": "A music-video still inside a small 1920s corner bakery, a cramped warm room with mint-green tiled walls and empty wooden shelves, lit by one bare bulb hanging over the counter. RAP: RUST leans right into a wide-angle 18mm lens at chest height, close and slightly low, his gloved left hand thrust toward the camera counting off on three leather fingers, his right fist pressed to his chest. He wears a black double-breasted suit, white tie, black leather gloves, collar up; a seamless hand-knitted rust-gold rib wool hood covers his whole head and neck with smooth knit where the face would be, a thin black chain-stitched ring outlines the face, and one small rounded red felt triangle is sewn high over his right eye, on the left side of the picture. Behind him a worn working man in a flat cap and patched overalls has pushed a heaped wooden wheelbarrow of banknotes to the counter, and the baker hands him a single tiny bread roll. Plain film grain, soft lens falloff.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}
