@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x04-a.jpg",
+ "made": "2026-11-03T12:43:42+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, chorus 2 'action'",
+ "prompt": "Night, open farmland in 1924: a black steam locomotive halted on the line, its headlamp blazing sideways through great rolling clouds of white steam that fill the frame. Seen from low in the trackside ditch with a 35mm lens looking up at the roof of a dark-red wooden mail car. On the roof BOTTLE (bottle-green balaclava, oatmeal ring, brown tweed suit) heaves a plain canvas mail sack down to a black 1932 Ford sedan with its doors open, where RUST (rust-gold balaclava, black ring, black double-breasted suit) catches it. Beside Bottle, PLUM (plum balaclava, cream ring, mustard chalk-stripe suit) and SILVER (silver-grey balaclava, crimson ring, oxblood suit) face the lens, gloved fists punching the air. Each mask is hand-knitted rib wool, smooth knit where the face would be, with a rounded red felt triangle over the right eye, on the left of the picture. Car headlights glow amber through the steam.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v02r2-b.jpg",
+ "made": "2026-11-03T13:40:38+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 0:23 'each day, make hay, not free'",
+ "prompt": "A wide harvest-field still at hard high noon, 1920s Midwest, shot from far off on a 135mm lens so the stubble field and a red barn stack up flat behind. The mask and suit are exactly as in the attached reference image; the only man in this shot is BOTTLE. BOTTLE, a robber in a brown tweed suit, wears a chunky hand-knitted bottle-green wool balaclava covering his whole head and neck, seamless knit where the face would be, a large white wool ring stitched round the whole face from brow to chin, and one small rounded red felt triangle high inside the ring over his left eye; he is in three-quarter profile with his left side toward the camera, so the triangle is on the near side of his face. Black leather gloves, cuffs down. He drives a wooden pitchfork into a square hay bale and it bursts open, a fountain of banknotes with plain engraved borders spraying out among the straw. Short black shadows, dry dust, slight grain.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d08-b.jpg",
+ "made": "2026-11-03T12:43:41+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 1:44 'divide and conquer, just look at the hand'",
+ "prompt": "A close fisheye still on a crowded 1920s railway concourse at dusk, low camera tilted up: SILVER, the tall robber in an oxblood-red suit and bow tie, raps into the lens, pushing one black leather glove open-palm toward the camera, fingers spread, the glove filling a third of the frame and bulging in the lens like a conjurer's flourish. His mask is a hand-knitted silver-grey rib-wool hood, seamless knit where the face would be, a crimson chain-stitched ring outlining a face, and one small rounded red felt triangle high over his right eye, on the left side of the picture as he faces us. Just past the big glove, his other gloved hand slides a fat leather wallet out of a businessman's coat pocket behind him, the man gazing up at a station clock. Low window light from the right, cool blue dusk outside, warm lamps inside, grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

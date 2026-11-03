@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-f02-a-f02r2-a.mp4",
+ "made": "2026-11-03T15:42:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera at water level, framing holds. The bankers keep bailing: each dips his bucket into the boat and tips it over the side, water and a few soggy banknotes sloshing out, then dips again. The boat settles slowly lower in the water. The floating notes bob gently where they are. The ship, pier and boat stay exactly as they are; nothing new appears. SFX: water sloshing, buckets clanking, gulls far off. Ambient noise: quiet harbour lapping. No voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f02r2-a.jpg",
+ "why": "mv-gang clip, writer w10",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f02r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "f02-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:33:11.211Z"
+ }
+}

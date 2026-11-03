@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d01-a-d01r2-a.mp4",
+ "made": "2026-11-03T14:29:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The man shakes the fanned notes toward the lens on the beat, four small flicks of the wrist, the fan keeping its shape in his gloved hand, his head nodding in time. His other hand stays flat on the pile and pats it once on the last beat. The stacks on the table stay put and the lamp glows steadily. His hood and suit stay exactly the same; no one else appears. SFX: crisp paper riffle on each flick, quiet room tone. No voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d01r2-a.jpg",
+ "why": "mv-gang clip, writer w3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d01r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d01-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T14:26:01.915Z"
+ }
+}

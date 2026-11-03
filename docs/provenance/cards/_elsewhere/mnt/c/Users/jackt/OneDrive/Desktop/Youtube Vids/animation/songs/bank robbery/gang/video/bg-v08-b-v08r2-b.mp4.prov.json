@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v08-b-v08r2-b.mp4",
+ "made": "2026-11-03T16:13:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera looking straight down, framing holds. The man in the mask closes his raised glove around a cheque, pulls it down to his chest, then nods up at the lens twice on a slow beat. Pale cheques flutter down slowly and settle on hats and the street. The crowd shifts gently in place; every parked 1920s car stays parked and unchanged. Mask and gloves stay the same; nothing new enters the frame. SFX: paper fluttering. Ambient noise: murmuring crowd.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v08r2-b.jpg",
+ "why": "mv-gang clip, writer w11",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v08r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v08-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T16:04:10.489Z"
+ }
+}

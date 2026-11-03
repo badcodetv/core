@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d03r2-a.jpg",
+ "made": "2026-11-03T13:40:34+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:28 'mob, angry at their shitty little job'",
+ "prompt": "A 1920s music-video still, 16:9, shot from across a cinder road on a long telephoto lens that stacks the scene flat, at dusk. None of the six gang members from the attached reference image is in this shot; it shows only workers. A dense crowd of grown factory men and women in overalls, shawls and cloth caps presses against tall closed wrought-iron gates bound with a heavy chain, fists raised and shaking, mouths open shouting, one man rattling the bars with both hands. Behind the gates a soot-black brick mill rises with three tall chimneys pouring thick grey and orange-lit smoke into a bruised violet sky. The only strong light is the furnace glow spilling through the mill's lower windows, rimming the raised fists and caps in hot orange while the faces nearest us sit in cool blue shadow. Grimy red brick, rust on the gate scrolls, wet cinders underfoot. Heavy film grain, slight lens softness.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

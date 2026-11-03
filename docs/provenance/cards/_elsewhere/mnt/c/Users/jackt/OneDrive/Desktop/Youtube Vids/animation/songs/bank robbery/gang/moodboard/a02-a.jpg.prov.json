@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/a02-a.jpg",
+ "made": "2026-11-03T12:43:35+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:08 'Robbery!'",
+ "prompt": "A music-video still from a 1920s bank lobby, shot with a wide-angle lens from knee height on the marble floor. The tall brass-and-glass front doors burst inward. Shards of glass hang in the air, and hard morning sunlight blasts through the doorway behind the gang, so they arrive half-silhouetted with a rim of light. CRIMSON leads. His crimson hand-knitted balaclava has a cream ring stitched round the face outline, smooth knit where the face would be, and a small rounded red felt triangle high over his right eye, on the left side of the picture. He wears a grey fedora over the mask, a charcoal pinstripe double-breasted suit, black leather gloves and an upturned collar, and holds a 1920s Thompson prop gun straight up at the coffered ceiling. In the foreground, customers in mismatched period clothes flinch and duck: a woman in a cloche hat drops her handbag and a clerk flings up a ledger. Dust swirls in the light shafts.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

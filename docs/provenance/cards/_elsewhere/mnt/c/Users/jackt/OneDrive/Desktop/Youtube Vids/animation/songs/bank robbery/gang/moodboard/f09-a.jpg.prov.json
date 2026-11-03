@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f09-a.jpg",
+ "made": "2026-11-03T12:43:44+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 3:04 'don't just eat cake'",
+ "prompt": "A music-video still of a candlelit 1920s banquet in a dining room with deep teal walls and gilt mirrors, shot from table height with a 50mm lens looking up past the head of the table. A stout dowager in a lilac silk gown, ropes of pearls and a feathered headband sits in the foreground, a silver fork plunged into a towering five-tier white iced cake, her mouth open in mid-bite. Above her, through an opened glass skylight black with night, three gang members descend on taut ropes, gloved hands gripping, legs braced: PLUM in a chalk-striped mustard-yellow suit with a plum hood and cream ring; CRIMSON in a charcoal pinstripe with a crimson hood, cream ring and grey fedora; MARINE in cream linen with a marine-blue hood and cream ring. Each hood is seamless hand-knitted rib wool, smooth where the face would be, looking down at her, each with one small rounded red felt triangle high over his right eye, on the left side of the picture. Warm candlelight from below, cool moonlight from the skylight, grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

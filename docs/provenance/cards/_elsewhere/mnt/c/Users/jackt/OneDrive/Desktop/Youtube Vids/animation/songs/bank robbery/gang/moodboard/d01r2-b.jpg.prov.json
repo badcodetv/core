@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d01r2-b.jpg",
+ "made": "2026-11-03T13:40:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:23 'stacks and stacks of elastic cash'",
+ "prompt": "A music-video still: a scarred oak table in a cellar counting room piled high with bricks of green banknotes, each brick bound with a red rubber band, the stacks leaning and spilling. A broad robber called PLUM sits behind it and fans one brick of notes out toward the camera like a magician spreading cards, the notes splayed in a sharp arc close to the lens, his other gloved hand flat on the pile. He wears a chalk-striped mustard-yellow three-piece suit, black leather gloves, collar up, and a chunky hand-knitted plum rib wool hood covering head and neck, smooth knit where the face would be, a large white wool ring stitched round the face from brow to chin, one small rounded red felt triangle high over his left eye, on the right side of the picture at about two o'clock. His mask and suit are exactly as in the attached reference image; he is PLUM, the only man in this shot. A single green-shaded banker's lamp low on the table lights the money from below and to the side; teal-painted walls fall into shadow. 50mm lens at table height, shallow focus on the fanned notes, soft grain.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

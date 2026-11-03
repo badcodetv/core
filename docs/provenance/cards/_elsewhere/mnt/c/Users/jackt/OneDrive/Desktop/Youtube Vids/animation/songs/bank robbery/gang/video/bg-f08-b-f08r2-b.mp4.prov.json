@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-f08-b-f08r2-b.mp4",
+ "made": "2026-11-03T15:53:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The black 1920s open touring car rolls slowly forward down the street at walking pace, staying fully in frame and staying the same car. The two masked men standing in the back fling a few banknotes upward with gloved hands, twice each, and the notes flutter slowly down onto the cobbles. The people on the stoops and at the windows wave their arms and reach up. Masks and suits stay unchanged; no vehicles appear. SFX: engine putter, notes fluttering. Ambient noise: cheering street crowd.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f08r2-b.jpg",
+ "why": "mv-gang clip, writer w6",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f08r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "f08-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:42:51.877Z"
+ }
+}

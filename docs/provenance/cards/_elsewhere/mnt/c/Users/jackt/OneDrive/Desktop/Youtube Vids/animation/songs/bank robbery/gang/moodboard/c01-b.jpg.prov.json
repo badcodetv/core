@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c01-b.jpg",
+ "made": "2026-11-03T12:43:37+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 1:02 'Robbery, robbery!'",
+ "prompt": "A music-video still from 1920s America. Six masked robbers burst into a marble bank lobby, shot from waist height on a very wide 14mm lens a few feet from them, so the nearest gloved hands and knitted heads swell toward the camera while the columns bow away behind. Each wears a seamless hand-knitted rib wool hood over the whole head and neck, tucked into a turned-up collar, smooth knit where the face would be, a thin contrasting ring stitched round the face and one small rounded red felt triangle high over his right eye, on the left of the picture. Plum with cream ring in mustard chalk-stripe; bottle green with oatmeal ring in brown tweed; crimson with cream ring, grey fedora, charcoal pinstripe; marine blue in cream linen; rust-gold with black ring in black and white tie; silver-grey with crimson ring in oxblood. They thrust prop Thompsons and revolvers straight up at a brass chandelier, free fists pumping. Behind them customers in bowler hats lie flat on green-veined marble. Hard morning sun slants through tall windows in dusty shafts; grainy 1920s colour film.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

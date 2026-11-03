@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/a03r2-a.jpg",
+ "made": "2026-11-03T13:40:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 0:13 'instrumental'",
+ "prompt": "A music-video still: a black 1928 sedan skids sideways round a city street corner at noon, its rear wheels smoking, spokes blurred to discs, body rolled hard onto its outer springs. Shot from a low 24mm lens at kerb height as the car slides toward camera, a fruit stall's crates tumbling in its path. The two men in the shot are RUST and MARINE, their masks and suits exactly as in the attached reference image. RUST drives, gloved hands crossed on the wheel: rust-gold hand-knitted wool balaclava, seamless knit where the face would be, a large white wool ring round the face from brow to chin, a small rounded red felt triangle high over his left eye, on the right of the picture at two o'clock; black double-breasted suit, white tie. MARINE clings to the running board, cream linen suit flapping, marine-blue balaclava with the same white ring and red triangle over his left eye. Hard overhead sun, short black shadows, brick and green-painted shopfronts with blank awnings. Grainy 1950s Technicolor film, slight lens softness.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

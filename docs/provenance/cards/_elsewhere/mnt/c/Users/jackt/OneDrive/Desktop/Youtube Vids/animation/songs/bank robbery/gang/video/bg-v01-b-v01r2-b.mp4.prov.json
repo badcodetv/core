@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v01-b-v01r2-b.mp4",
+ "made": "2026-11-03T15:53:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The man in the mask nods his head on a steady slow beat. His pointing glove jabs toward the lens on each beat, four times, then holds still pointing. His raised glove shakes the branch twice, and a few banknotes flutter down slowly and settle in the grass. The mask, gloves and suit stay exactly the same. Background stays the same; nothing new enters the frame. SFX: leaves rustling, paper fluttering. Ambient noise: quiet orchard breeze.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v01r2-b.jpg",
+ "why": "mv-gang clip, writer w11",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v01r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v01-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:43:16.956Z"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v08-b.jpg",
+ "made": "2026-11-03T12:43:45+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:39 'stimulus checks are next. Get wrecked!'",
+ "prompt": "Looking straight down from a fourth-floor window onto a crowded 1920s city street under flat grey overcast light, 50mm lens, a stone ledge cropping the bottom edge. Hundreds of blank pale-green paper cheques with fine engraved borders flutter down like ticker tape over bowler hats, cloche hats and a stalled Model T. In the middle of the crowd RUST, a robber in a black double-breasted suit and white tie, wears a chunky hand-knitted rust-gold wool balaclava covering his whole head and neck, seamless knit where the face would be, a thin black chain-stitched ring outlining the face, and one small rounded red felt triangle high over his right eye; he looks up at the lens, so the triangle shows on the left side of the picture. He snatches a cheque out of the air with a black-gloved hand stretched high above the hats. Muted brick reds and greens, soft grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

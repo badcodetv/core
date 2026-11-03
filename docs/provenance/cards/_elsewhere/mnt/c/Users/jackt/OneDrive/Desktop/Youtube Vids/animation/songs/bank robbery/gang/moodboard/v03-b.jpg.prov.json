@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v03-b.jpg",
+ "made": "2026-11-03T12:43:39+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:25 'work and get paid though, earning that dough'",
+ "prompt": "A 1920s music-video still, 16:9, shot on an ultrawide lens from hip height inside a brick factory entrance hall at dawn. Cold grey light falls from tall wire-glass windows high on the left wall; one caged bulb glows amber over a brass punch clock on a wooden post. A long line of factory men in faded blue overalls and flat caps waits shoulder to shoulder, each holding a blank buff time card. In the foreground CRIMSON walks the line toward the lens, rapping straight into it: a crimson hand-knitted rib-wool balaclava covering his whole head and neck, smooth unbroken knit where the face would be, a cream chain-stitched ring outlining a face, one small rounded red felt triangle high over his right eye, on the left side of the picture. Grey fedora on the mask, charcoal pinstripe double-breasted suit, collar up, black leather gloves, one gloved hand chopping down on the beat, the other counting off fingers. Fine film grain, soft edges.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

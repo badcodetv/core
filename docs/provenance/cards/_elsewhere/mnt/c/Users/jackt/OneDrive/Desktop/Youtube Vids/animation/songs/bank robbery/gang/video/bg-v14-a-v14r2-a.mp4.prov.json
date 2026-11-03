@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v14-a-v14r2-a.mp4",
+ "made": "2026-11-03T16:16:59+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The man in the yellow suit holds the small glass out toward the man in black. The man in black nods on a steady beat, pushes his open palm toward the glass once to refuse it, then jabs his pointing finger straight at the lens on each beat and holds the point. Dust drifts slowly in the shafts of sunlight. Masks, gloves, the copper still and the barn stay unchanged. Audio: SFX of creaking timber, soft dripping from the still.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v14r2-a.jpg",
+ "why": "mv-gang clip, writer w9",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v14r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v14-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T16:14:01.641Z"
+ }
+}

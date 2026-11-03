@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d11r2-a.jpg",
+ "made": "2026-11-03T13:40:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:53 'stack up the vaults like a wheelbarrow'",
+ "prompt": "A music-video still: BOTTLE, the quiet one, shoves a wooden builder's wheelbarrow out through a massive round steel vault door. His mask and suit are exactly as in the attached reference image: a bottle-green hand-knitted rib wool hood over his whole head and neck, smooth knit where the face would be, a large white ring stitched round the face from brow to chin and one small rounded red felt triangle high over his left eye, on the right of the picture at about two o'clock as he faces us. The barrow is heaped far above its rim with banded bundles of green banknotes, and bundles slide off the front and tumble across the threshold. He wears his brown tweed suit, collar up, black leather gloves gripping the worn handles, cuffs down. Camera low on the floor at the door's hinge, 35mm, looking up the barrow at him. The only light is a caged bulb inside the vault behind him, rimming his wool in gold and throwing the open door's bolts into long shadows; grainy period colour film.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

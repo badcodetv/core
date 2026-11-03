@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d05-a-d05r2-a.mp4",
+ "made": "2026-11-03T15:17:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera on a tripod, framing holds. The two men in the foreground keep arguing: each jabs his pointing finger at the other twice, heads jutting forward, then they hold, glaring. Behind them the two masked men keep their slow walk along the pavement, the green safe level between them, staying small in the background. Masks, gloves and the safe keep their exact shape. Background stays the same; no new people or vehicles appear. Audio: street ambience, footsteps on stone, a distant horse's hooves; no voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d05r2-a.jpg",
+ "why": "mv-gang clip, writer w12",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d05r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d05-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:04:13.215Z"
+ }
+}

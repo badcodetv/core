@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d10-b.jpg",
+ "made": "2026-11-03T12:43:41+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 1:50 'it is the devil, with a radio station'",
+ "prompt": "A medium-close still in a cramped 1920s radio studio padded with quilted maroon fabric, lit by a single deep-red lamp low on the right so everything glows scarlet and falls into black. CRIMSON, the loud robber in a charcoal pinstripe double-breasted suit with a grey fedora pulled over his mask, raps over a big chrome ring-mounted radio microphone on a stand, leaning in, one gloved fist pumping beside it, the other gloved finger jabbing at the lens. His mask is a hand-knitted crimson rib-wool hood, smooth knit where the face would be, a cream chain-stitched ring outlining a face, and one small rounded red felt triangle high over his right eye, on the left side of the picture. On the padded wall behind him the low lamp throws his huge black shadow, and in the shadow two curved devil's horns rise from his head. 40mm lens, slight low angle, grain, a glowing valve set on a desk.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

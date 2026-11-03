@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v10-b.jpg",
+ "made": "2026-11-03T12:43:35+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:44 'sorry, did I interrupt your meeting?'",
+ "prompt": "A music-video still inside a walnut-panelled 1920s boardroom at mid-morning, shot on a wide-angle lens close to the doorway. MARINE has just stepped through the open door. He leans into the lens in close-up on the left of the frame, one black-gloved hand raised flat beside his head in a polite little apology wave. His marine-blue hand-knitted balaclava has a cream ring chain-stitched round the face outline, smooth knit where the face would be, and a small rounded red felt triangle high over his right eye, on the left side of the picture. He wears a cream linen suit with the collar turned up. Behind him on the right, a long mahogany table recedes, lined with old bankers in wing collars sitting in green leather chairs, all frozen. One holds a lit cigar halfway to his open mouth, another has stopped pouring from a decanter. Window light slices sideways through the hanging blue cigar smoke.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

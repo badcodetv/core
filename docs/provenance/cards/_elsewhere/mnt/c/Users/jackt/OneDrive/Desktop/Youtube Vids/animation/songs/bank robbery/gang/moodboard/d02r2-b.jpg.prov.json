@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d02r2-b.jpg",
+ "made": "2026-11-03T13:40:35+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:25 'distracted by a dyspraxic flash'",
+ "prompt": "A music-video still at night on a brick bank's back steps in 1920s America, shot head-on as a press photographer's bulb flash fires straight into the lens: a hard white burst blooms over the left of the frame, washing the brick to chalk and throwing a sharp black shadow behind. BOTTLE, a robber in a brown tweed suit, collar up, black leather gloves, stumbles toward camera mid-step, knees buckling, one gloved arm thrown across his head. The mask and suit are exactly as in the attached reference image; this is BOTTLE alone. His mask is a hand-knitted bottle-green rib-wool hood, smooth unbroken knit where the face would be, a large white wool ring stitched round the face from brow to chin, and one small rounded red felt triangle high inside it over his left eye, on the right side of the picture at about two o'clock. A canvas sack tumbles from his other glove, banknotes fanning into the air. Speed Graphic look, 35mm wide, frozen motion, harsh frontal flash, coarse grain, blank wall behind.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

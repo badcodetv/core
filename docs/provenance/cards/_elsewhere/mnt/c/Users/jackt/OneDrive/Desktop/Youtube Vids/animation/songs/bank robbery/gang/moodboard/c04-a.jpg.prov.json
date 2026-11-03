@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c04-a.jpg",
+ "made": "2026-11-03T12:43:36+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 1:10 'printer is burning'",
+ "prompt": "A music-video still: in a smoky cellar a black iron printing press is ablaze, orange flames climbing its frame, banknotes catching fire, curling and blackening as they drift off the rollers, grey smoke rolling across the ceiling beams. In the foreground a thin robber called MARINE stands with his back to the fire, unbothered, rapping straight into the lens: one black-gloved hand jabbing a straight-arm point at the camera, the other in his trouser pocket. He wears a cream linen suit with two-tone shoes, cuffs down over the wrists, collar up, and a chunky hand-knitted marine-blue rib wool hood covering head and neck, smooth knit where the face would be, a cream ring chain-stitched round the face, one small rounded red felt triangle high over his right eye, on the left side of the picture. The fire backlights him with a hot orange rim; his front falls into cool shadow. Close, 24mm wide lens at chest height, grainy film.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v07f-b-v07r2-b-mirrored.mp4",
+ "made": "2026-11-03T17:06:00+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "hflip",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v07-b-v07r2-b.mp4",
+ "why": "Jack 2026-11-03 timeline note: triangle must be on the left eye; mirrored"
+}

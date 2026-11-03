@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f01-a.jpg",
+ "made": "2026-11-03T12:43:41+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:35 'and this right here is a next level scam'",
+ "prompt": "A film still from a 14mm lens set on a riveted steel girder high above a 1920s city at dawn, the beam running away from the lens to a skyline wrapped in cold blue haze, the sun a pale disc behind it. In the foreground CRIMSON leans right into the camera, a gloved finger jabbing the lens and filling a third of the frame, his other hand flat on his chest: crimson hand-knitted rib wool balaclava, smooth knit where the face would be, a cream chain-stitched ring round the face, a small rounded red felt triangle over his right eye on the left of the picture, grey fedora on top, charcoal pinstripe double-breasted suit. Behind him PLUM, BOTTLE, MARINE, RUST and SILVER sit in a row along the beam, legs dangling over the void, counting fat bundles of banknotes in gloved hands. Grainy colour film, backlight, 16:9.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

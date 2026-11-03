@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v05-b-v05r2-b.mp4",
+ "made": "2026-11-03T15:53:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The man in the cream suit nods on a steady slow beat; his lower glove chops down on each beat, four times, while his raised glove jabs a thumb back over his shoulder twice. Behind him the man in the top hat hauls the brass lever down once, slowly, and the workers stay pressed against the wall. Masks, gloves and faces stay unchanged; nothing new enters the frame. SFX: a heavy lever clunk, machinery hum. Ambient noise: furnace roar.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r2-b.jpg",
+ "why": "mv-gang clip, writer w11",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v05-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:44:07.128Z"
+ }
+}

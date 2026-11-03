@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v06-a.jpg",
+ "made": "2026-11-03T12:43:35+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:33 'standards bleeding, landlords needing'",
+ "prompt": "A music-video still, 16:9, a winter dusk in 1920s New York. A robber called BOTTLE leans on the peeling green door frame of a brick tenement and raps straight into an ultrawide lens set low and close, one gloved finger jabbing at the camera. His bottle-green hand-knitted rib-wool balaclava covers his whole head and neck and tucks into his turned-up collar, with smooth unbroken knit where the face would be. An oatmeal ring is chain-stitched round it like the outline of a face, and a small red felt triangle with rounded corners sits high over his right eye, on the left of the picture. He wears a brown tweed suit and black leather gloves. Beside him, a fat landlord in a fur-collared overcoat and bowler holds his palm out to a gaunt man and wife in worn coats in the dim hallway. Grey snow-light from the street, wet cobbles, coarse film grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

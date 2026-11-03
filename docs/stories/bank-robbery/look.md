@@ -228,6 +228,12 @@ Mr Blue in a red and a blue tie.
   - US cops wear peaked caps, not helmets. Keep "1920s" on every vehicle in a motion prompt.
   - Cast through the 10 Flow Characters plus their portrait as a reference: "dressed exactly as in his portrait reference" ([`cast.md`](./songs/mv-speakeasy-mint-alt/cast.md)).
 
+- **Music video, "the balaclava gang"** — **EXPLORING** (Jack, 2026-11-03; [`songs/mv-gang/`](./songs/mv-gang/brief.md)).
+  The Colour Noir Prohibition world with more balaclavas: the jeweller's-shop gang (Colour Noir `mask1` b) and
+  more like them, each a different coloured hand-knitted balaclava and a sharp suit, rap to camera throughout;
+  the picture shows each lyric literally; more action (hot rods, Tommy guns, robberies). Every balaclava
+  follows the brand rule in [`docs/brand/README.md`](../../brand/README.md) (white ring, triangle over the wearer's left eye, no skin, gloves).
+
 ## History
 
 - **Round 1 and 2 look tests** (6 Oct): the four looks below tried on scene 9; two crowds holding red and

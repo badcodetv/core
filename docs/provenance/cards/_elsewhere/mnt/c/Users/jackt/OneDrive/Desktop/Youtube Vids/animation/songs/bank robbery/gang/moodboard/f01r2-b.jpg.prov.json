@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f01r2-b.jpg",
+ "made": "2026-11-03T13:40:35+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 2:35 'and this right here is a next level scam'",
+ "prompt": "A film still from a 14mm lens set on a riveted steel girder high above a 1920s city at dawn, the beam running away from the lens to a skyline wrapped in cold blue haze, the sun a pale disc behind it. All six men are in the shot, CRIMSON, PLUM, BOTTLE, MARINE, RUST and SILVER, their masks and suits exactly as in the attached reference image. In the foreground CRIMSON leans right into the camera, a gloved finger jabbing the lens and filling a third of the frame, his other hand flat on his chest: crimson hand-knitted rib wool balaclava, smooth knit where the face would be, a large white wool ring round the face, a small rounded red felt triangle over his left eye on the right of the picture, grey fedora on top. Behind him the other five sit in a row along the beam, legs dangling over the void, counting fat bundles of banknotes in gloved hands. Grainy colour film, backlight, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x01r2-a.jpg",
+ "made": "2026-11-03T13:40:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), chorus 2 'action'",
+ "prompt": "A music-video still at blue dusk: two black 1920s sedans race side by side down a wide city avenue, shot on a long 135mm lens from a camera car running alongside, so both cars stay sharp while the lamp posts and lit bakery windows behind streak sideways. The two men in the shot are CRIMSON and SILVER, their masks and suits exactly as in the attached reference image. On the near car's running board CRIMSON stands braced, grey fedora on top of his crimson hand-knitted balaclava, a large white ring round the face and a rounded red felt triangle high over his left eye, on the right of the picture at two o'clock; charcoal pinstripe double-breasted suit. He fires a 1920s Thompson prop gun with a drum magazine straight up at the sky, an orange muzzle flash lighting the knit. On the far car's running board SILVER, oxblood suit and bow tie, silver-grey balaclava with the same white ring and red triangle, fires his Thompson into the air too. Black leather gloves, cuffs down, collars up. Cool dusk sky, warm window light, coarse film grain.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

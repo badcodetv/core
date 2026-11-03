@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v14-b.jpg",
+ "made": "2026-11-03T12:43:43+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:01 'don't get high off your own supply'",
+ "prompt": "A music-video still inside a timber barn turned bootleg distillery, framed at eye level on a 35mm lens, hard afternoon sun slicing through gaps in the plank walls and catching floating dust. A tall hammered copper pot still with a coiled copper worm fills the right of the frame. RUST stands centre facing the camera, rapping: one black-gloved palm pushes a small glass of clear moonshine away to the side, the other hand points straight down the lens. His head is a hand-knitted rust-gold wool hood, smooth knit over the face, a black chain-stitched ring outlining it, a small rounded red felt triangle high over his right eye, on the left of the picture. Black double-breasted suit, white tie, collar up. Beside him PLUM, broad, in a chalk-striped mustard-yellow three-piece suit and a plum knitted hood with a cream ring and the same red triangle over his right eye, offers the glass with a gloved hand. Warm wood, green copper patina, film grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

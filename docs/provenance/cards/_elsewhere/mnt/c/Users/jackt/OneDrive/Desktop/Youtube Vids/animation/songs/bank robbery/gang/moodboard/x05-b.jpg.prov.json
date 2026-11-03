@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x05-b.jpg",
+ "made": "2026-11-03T12:43:42+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, chorus 2 'action'",
+ "prompt": "Bright midday in a 1920s hill town: a steep cobbled street of pastel clapboard houses drops away, shot from bumper height on the kerb with an 85mm lens panning with the action, the houses streaked sideways in motion blur. A cream-yellow 1932 Ford V8 sedan plunges downhill, nose dipped, rear wheels spinning to discs, RUST hunched at the wheel. Out of the rear window CRIMSON (crimson balaclava, cream ring, grey fedora, charcoal pinstripe) and MARINE (marine-blue balaclava, cream ring, cream linen) lean out pointing period Thompson prop guns straight up at the sky, orange muzzle flashes and brass casings spinning. Each hand-knitted rib wool mask shows smooth knit where the face would be and a rounded red felt triangle over the right eye, on the left of the picture as they turn back. Close behind, a goggled motorcycle cop in a leather cap on an olive police motorcycle with sidecar, dust lifting. Hard overhead sun, sharp shadows, grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

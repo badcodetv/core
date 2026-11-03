@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d07r2-b.jpg",
+ "made": "2026-11-03T13:40:35+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 1:39 'distraction is the attraction'",
+ "prompt": "A wide high-angle still from a gilded box seat over a 1920s vaudeville theatre: on the far stage a single hard white spotlight falls on a magician in tails lifting a white dove out of a top hat beside a red-and-gold lacquered cabinet. Everything else is warm darkness: rows of velvet seats in deep burgundy, a packed audience of men in bowlers and women in cloche hats all staring at the stage, their faces lit only by spill. Among them, crouched in the aisles and leaning between rows, the gang works: PLUM, MARINE and RUST, gloved fingers lifting wallets and pocket watches from coats. Their masks and suits are exactly as in the attached reference image: hand-knitted hoods in plum, marine blue and rust-gold, each with a large white ring round the face and a small red felt triangle over the left eye. 28mm lens, deep focus, amber footlight glow, film grain.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/reference/lineup-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

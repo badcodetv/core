@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v01-b.jpg",
+ "made": "2026-11-03T12:43:44+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:20 'they say, ya can't make money from a tree'",
+ "prompt": "A 1920s music-video still in an apple orchard at late afternoon, low sun behind the trees. PLUM, a broad robber in a chalk-striped mustard-yellow three-piece suit, wears a chunky hand-knitted plum wool balaclava covering his whole head and neck, smooth unbroken knit where the face would be, a thin cream chain-stitched ring outlining the face, and one small rounded red felt triangle high over his right eye, on the left side of the picture. Black leather gloves, collar up. He leans into a low 18mm lens, left glove filling a third of the frame, pointing straight into it, while his right glove grips a branch and shakes it hard. Green banknotes with plain engraved borders rain from the branches instead of leaves, backlit gold, a few blurred near the lens. Kodachrome-like colour, soft grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

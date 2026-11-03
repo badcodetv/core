@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/e03-b.jpg",
+ "made": "2026-11-03T12:43:47+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:32 'standard plans are for the working man'",
+ "prompt": "A music-video film still, 16:9, inside a wooden 1920s streetcar at early morning, low sun raking through the side windows in yellow bars across varnished slat seats and leather hand straps. Shot from the seat opposite with a 28mm lens at knee height, slightly tilted with the tram's sway. On the bench sits a tired worker in grease-stained overalls and a cloth cap, eyes half shut, a dented tin lunch pail on his knees, leaning with the motion. Beside him, shoulder to shoulder and swaying the same way, CRIMSON leans toward the camera rapping, counting off on three raised gloved fingers, his other hand chopping down on his knee. CRIMSON: a hand-knitted rib-wool balaclava in crimson covering the whole head, neck tucked into the collar, smooth knit where the face would be, a cream chain-stitched ring outlining the face, a small rounded red felt triangle high over his right eye, on the left of the picture, a grey fedora on top; charcoal pinstripe double-breasted suit, black leather gloves. Mustard-painted walls, brass rails, dust in the light, film grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

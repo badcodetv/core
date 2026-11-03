@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d10-a-d10r2-a.mp4",
+ "made": "2026-11-03T15:17:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. Seated behind the microphone, the masked man raps with his body: he jabs his gloved finger at the lens on each beat, four times, while his other fist pumps in time and his head nods steadily under the fedora. On the wall behind him his horned shadow repeats every movement exactly, the horns staying in place. Mask, hat and gloves unchanged; the microphone and valves stay still. SFX: a steady boom-bap beat, a soft valve hum, no voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d10r2-a.jpg",
+ "why": "mv-gang clip, writer w7",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d10r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d10-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T15:04:40.349Z"
+ }
+}

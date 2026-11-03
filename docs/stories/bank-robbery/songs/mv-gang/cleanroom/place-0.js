@@ -1,0 +1,13 @@
+const V=[["gang\\video\\bg-a01-a-a01r2-a.mp4", 0.0, 3.974], ["noir\\video\\rods3-b.mp4", 3.924, 3.672], ["gang\\video\\bg-a02-b-a02r2-b.mp4", 7.546, 5.925], ["gang\\video\\bg-a03-b-a03r2-b.mp4", 13.421, 3.58], ["gang\\video\\bg-x02-a-x02r2-a.mp4", 16.951, 3.161], ["gang\\video\\bg-v01-b-v01r2-b.mp4", 20.062, 5.019], ["gang\\video\\bg-v03-b-v03r2-b.mp4", 25.031, 3.278], ["gang\\video\\bg-d01-b-d01r2-b.mp4", 28.259, 3.277], ["gang\\video\\bg-v05-b-v05r2-b.mp4", 31.486, 1.861], ["gang\\video\\bg-v06-b-v06r2-b.mp4", 33.297, 2.744], ["gang\\video\\bg-v07f-b-v07r2-b-mirrored.mp4", 35.991, 2.651], ["gang\\video\\bg-v08-b-v08r2-b.mp4", 38.592, 4.856], ["gang\\video\\bg-a02-a-a02r2-a.mp4", 43.398, 3.092], ["gang\\video\\bg-v11-b-v11r2-b.mp4", 46.44, 2.186], ["gang\\video\\bg-v12-b-v12r2-b.mp4", 48.576, 2.953], ["gang\\video\\bg-v13-b-v13r2-b.mp4", 51.479, 3.811], ["gang\\video\\bg-x03-b-x03r2-b.mp4", 55.24, 4.021], ["noir\\video\\safe2-c.mp4", 59.211, 2.604], ["gang\\video\\bg-a02-b-a02r2-b.mp4", 61.765, 2.674], ["gang\\video\\bg-c02-b-c02r2-b.mp4", 64.389, 2.813], ["gang\\video\\bg-c03-a-c03r2-a.mp4", 67.152, 2.442], ["gang\\video\\bg-c04-a-c04r2-a.mp4", 69.544, 2.929]]; const S="Balaclava Gang 2"; const PRE="C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\bank robbery\\";
+const project=await helpers.activeProject(); const seq=await helpers.activeSequence(project);
+if(seq.name!==S) return {error:'wrong sequence',name:seq.name};
+const root=await project.getRootItem(); let bin=null; for(const k of await root.getItems()){ if(k.name==='Balaclava Gang clips'){ try{ const f=ppro.FolderItem.cast(k); if(f) bin=f; }catch(e){} } }
+if(!bin) return {error:'no clips bin'};
+const byPath={}; for(const it of await bin.getItems()){ try{ byPath[(await ppro.ClipProjectItem.cast(it).getMediaFilePath()).toLowerCase()]=it; }catch(e){} }
+const ed=ppro.SequenceEditor.getEditor(seq); const tk=s=>helpers.secondsToTick(Math.round(s*24)/24+0.002); let done=0; const fail=[];
+for(const [n,t,d] of V){ const p=PRE+n; try{ const item=byPath[p.toLowerCase()]; if(!item) throw 'not in bin'; const clip=ppro.ClipProjectItem.cast(item);
+  helpers.withTransaction(project,S+' in/out',ca=>ca.addAction(clip.createSetInOutPointsAction(tk(0),tk(d))));
+  helpers.withTransaction(project,S+' place',ca=>ca.addAction(ed.createOverwriteItemAction(item,tk(t),0,1)));
+  helpers.withTransaction(project,S+' clear',ca=>ca.addAction(clip.createClearInOutPointsAction())); done++; }catch(e){ fail.push([n,t,String(e).slice(0,100)]); } }
+const v1=(await (await seq.getVideoTrack(0)).getTrackItems(1,false)).length;
+return {done,fail,v1,mapped:Object.keys(byPath).length};

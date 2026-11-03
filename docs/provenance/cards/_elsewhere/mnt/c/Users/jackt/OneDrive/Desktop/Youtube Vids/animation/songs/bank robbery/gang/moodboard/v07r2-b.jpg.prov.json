@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v07r2-b.jpg",
+ "made": "2026-11-03T13:40:30+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 2 (masks corrected), 0:36 'grandma FREEZING'",
+ "prompt": "A music-video still, 16:9, a medium shot at eye level on a 50mm lens inside an unheated 1920s tenement flat at early morning. The only gang member in this shot is PLUM, and his mask and suit are exactly as in the attached reference image. Pale blue light comes sideways through a sash window furred with frost ferns on the inside of the glass. An old grandmother sits on a hard chair wrapped in three faded wool blankets, her breath a white cloud, a chipped cup of tea in her lap with a skin of ice on top. The cast-iron grate beside her is swept bare and cold. PLUM kneels at her side, turned three-quarters to the camera, draping his chalk-striped mustard-yellow jacket round her shoulders, now in his matching waistcoat and shirtsleeves with black leather gloves and cuffs buttoned. His plum hand-knitted rib-wool balaclava has smooth unbroken knit over the face, a large white wool ring stitched round it from brow to chin, and a small rounded red felt triangle high inside the ring over his left eye, on the right of the picture. Grey distemper walls, soft grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

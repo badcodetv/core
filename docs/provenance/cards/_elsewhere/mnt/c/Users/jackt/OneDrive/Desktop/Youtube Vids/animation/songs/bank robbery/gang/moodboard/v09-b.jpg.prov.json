@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v09-b.jpg",
+ "made": "2026-11-03T12:43:36+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:41 'rent seeking? I'm just about eating'",
+ "prompt": "A music-video still, 16:9, at night in a bare 1920s tenement kitchen lit by a single naked bulb hanging overhead, hard light from above and black shadows under everything. The camera sits at tabletop height on a wide 24mm lens. A robber called CRIMSON leans across a scrubbed pine table into the lens, holding up a fork with one single baked bean on it, while his other gloved hand counts off on two fingers. Beside him is an opened tin, empty. His crimson hand-knitted rib-wool balaclava covers his head and neck, smooth unbroken knit where the face would be, a cream ring chain-stitched round it, a small rounded red felt triangle high over his right eye, on the left of the picture, and a grey fedora on top. He wears a charcoal pinstripe double-breasted suit, collar up, black leather gloves. Pinned to the cracked plaster behind him is a rent demand with a big red stamp, its print blurred and unreadable.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

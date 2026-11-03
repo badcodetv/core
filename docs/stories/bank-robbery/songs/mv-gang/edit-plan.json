@@ -1,0 +1,457 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.9,
+  "clip": "a01-a",
+  "line": "intro guitar",
+  "dur": 3.9
+ },
+ {
+  "start": 3.9,
+  "end": 7.8,
+  "clip": "a01-b",
+  "line": "intro guitar",
+  "dur": 3.9
+ },
+ {
+  "start": 7.8,
+  "end": 13.4,
+  "clip": "a02-b",
+  "line": "Robbery!",
+  "dur": 5.6
+ },
+ {
+  "start": 13.4,
+  "end": 16.8,
+  "clip": "a03-b",
+  "line": "music",
+  "dur": 3.4
+ },
+ {
+  "start": 16.8,
+  "end": 20.14,
+  "clip": "x02-a",
+  "line": "music",
+  "dur": 3.34
+ },
+ {
+  "start": 20.14,
+  "end": 25.26,
+  "clip": "v01-b",
+  "line": "they say you can't make money from a tree / make hay",
+  "dur": 5.12
+ },
+ {
+  "start": 25.26,
+  "end": 28.5,
+  "clip": "v03-b",
+  "line": "work and get paid though",
+  "dur": 3.24
+ },
+ {
+  "start": 28.5,
+  "end": 31.3,
+  "clip": "d01-b",
+  "line": "where does it go? nobody knows (v04 not picked)",
+  "dur": 2.8
+ },
+ {
+  "start": 31.3,
+  "end": 33.34,
+  "clip": "v05-b",
+  "line": "means of production means a reduction",
+  "dur": 2.04
+ },
+ {
+  "start": 33.34,
+  "end": 35.92,
+  "clip": "v06-b",
+  "line": "standards bleeding, landlords needing",
+  "dur": 2.58
+ },
+ {
+  "start": 35.92,
+  "end": 38.68,
+  "clip": "v07-b",
+  "line": "quantitative easing, grandma freezing",
+  "dur": 2.76
+ },
+ {
+  "start": 38.68,
+  "end": 43.72,
+  "clip": "v08-b",
+  "line": "stimulus checks, get wrecked / rent seeking (v09 not picked)",
+  "dur": 5.04
+ },
+ {
+  "start": 43.72,
+  "end": 46.46,
+  "clip": "a02-a",
+  "line": "sorry, did I interrupt your meeting? (v10 not picked)",
+  "dur": 2.74
+ },
+ {
+  "start": 46.46,
+  "end": 48.68,
+  "clip": "v11-b",
+  "line": "remember kids, the Fed is not your friend",
+  "dur": 2.22
+ },
+ {
+  "start": 48.68,
+  "end": 51.66,
+  "clip": "v12-b",
+  "line": "it prints all the dollars that the government spends",
+  "dur": 2.98
+ },
+ {
+  "start": 51.66,
+  "end": 55.3,
+  "clip": "v13-b",
+  "line": "this fiat system is insistent on debt's existence",
+  "dur": 3.64
+ },
+ {
+  "start": 55.3,
+  "end": 59.48,
+  "clip": "x03-b",
+  "line": "so don't be hating on the credit rating",
+  "dur": 4.18
+ },
+ {
+  "start": 59.48,
+  "end": 61.86,
+  "clip": "x01-a",
+  "line": "or have resistance to the facts I'm stating",
+  "dur": 2.38
+ },
+ {
+  "start": 61.86,
+  "end": 64.6,
+  "clip": "c01-b",
+  "line": "Robbery, robbery!",
+  "dur": 2.74
+ },
+ {
+  "start": 64.6,
+  "end": 67.04,
+  "clip": "c02-b",
+  "line": "call the police, it's a robbery",
+  "dur": 2.44
+ },
+ {
+  "start": 67.04,
+  "end": 69.6,
+  "clip": "c03-a",
+  "line": "debasement, it happened in da basement",
+  "dur": 2.56
+ },
+ {
+  "start": 69.6,
+  "end": 72.52,
+  "clip": "c04-a",
+  "line": "printer is burning",
+  "dur": 2.92
+ },
+ {
+  "start": 72.52,
+  "end": 74.32,
+  "clip": "x04-a",
+  "line": "Robbery, robbery!",
+  "dur": 1.8
+ },
+ {
+  "start": 74.32,
+  "end": 77.36,
+  "clip": "c02-a",
+  "line": "call the police, it's a robbery",
+  "dur": 3.04
+ },
+ {
+  "start": 77.36,
+  "end": 79.98,
+  "clip": "c03-b",
+  "line": "debasement, it happened in da basement",
+  "dur": 2.62
+ },
+ {
+  "start": 79.98,
+  "end": 82.76,
+  "clip": "c04-b",
+  "line": "printer is burning",
+  "dur": 2.78
+ },
+ {
+  "start": 82.76,
+  "end": 85.14,
+  "clip": "d01-a",
+  "line": "stacks and stacks of elastic cash",
+  "dur": 2.38
+ },
+ {
+  "start": 85.14,
+  "end": 87.8,
+  "clip": "d02-b",
+  "line": "distracted by a dyspraxic flash",
+  "dur": 2.66
+ },
+ {
+  "start": 87.8,
+  "end": 90.06,
+  "clip": "d02-a",
+  "line": "mob, angry at their shitty little job (d03 not picked)",
+  "dur": 2.26
+ },
+ {
+  "start": 90.06,
+  "end": 95.26,
+  "clip": "d05-a",
+  "line": "the right and the left both witness the theft / blaming each other",
+  "dur": 5.2
+ },
+ {
+  "start": 95.26,
+  "end": 98.7,
+  "clip": "d06-a",
+  "line": "institutional, dilutional, the usual",
+  "dur": 3.44
+ },
+ {
+  "start": 98.7,
+  "end": 101.88,
+  "clip": "x02-a",
+  "line": "distraction is the attraction (d07 not picked)",
+  "dur": 3.18
+ },
+ {
+  "start": 101.88,
+  "end": 105.36,
+  "clip": "d08-b",
+  "line": "divide and conquer, just look at the hand",
+  "dur": 3.48
+ },
+ {
+  "start": 105.36,
+  "end": 108.42,
+  "clip": "a03-a",
+  "line": "not your standard propaganda, worth a couple grand (e02 not picked)",
+  "dur": 3.06
+ },
+ {
+  "start": 108.42,
+  "end": 113.46,
+  "clip": "d10-a",
+  "line": "state level manipulation, the devil with a radio station",
+  "dur": 5.04
+ },
+ {
+  "start": 113.46,
+  "end": 115.76,
+  "clip": "d11-a",
+  "line": "stack up the vaults like a wheelbarrow",
+  "dur": 2.3
+ },
+ {
+  "start": 115.76,
+  "end": 118.46,
+  "clip": "d12-b",
+  "line": "risk of default is really rather narrow",
+  "dur": 2.7
+ },
+ {
+  "start": 118.46,
+  "end": 121.16,
+  "clip": "x06-a",
+  "line": "Biggie said way back in ninety seven",
+  "dur": 2.7
+ },
+ {
+  "start": 121.16,
+  "end": 123.74,
+  "clip": "v14-a",
+  "line": "don't get high off your own supply",
+  "dur": 2.58
+ },
+ {
+  "start": 123.74,
+  "end": 126.48,
+  "clip": "c01-b",
+  "line": "Robbery, robbery!",
+  "dur": 2.74
+ },
+ {
+  "start": 126.48,
+  "end": 129.0,
+  "clip": "x01-a",
+  "line": "call the police, it's a robbery",
+  "dur": 2.52
+ },
+ {
+  "start": 129.0,
+  "end": 131.62,
+  "clip": "c03-b",
+  "line": "debasement, it happened in da basement",
+  "dur": 2.62
+ },
+ {
+  "start": 131.62,
+  "end": 134.44,
+  "clip": "c04-a",
+  "line": "printer is burning",
+  "dur": 2.82
+ },
+ {
+  "start": 134.44,
+  "end": 136.46,
+  "clip": "x04-a",
+  "line": "Robbery, robbery!",
+  "dur": 2.02
+ },
+ {
+  "start": 136.46,
+  "end": 139.3,
+  "clip": "c02-a",
+  "line": "call the police, it's a robbery",
+  "dur": 2.84
+ },
+ {
+  "start": 139.3,
+  "end": 141.94,
+  "clip": "c03-a",
+  "line": "debasement, it happened in da basement",
+  "dur": 2.64
+ },
+ {
+  "start": 141.94,
+  "end": 144.18,
+  "clip": "c04-b",
+  "line": "printer is burning",
+  "dur": 2.24
+ },
+ {
+  "start": 144.18,
+  "end": 146.62,
+  "clip": "x02-a",
+  "line": "you know the real star is Pablo Escobar",
+  "dur": 2.44
+ },
+ {
+  "start": 146.62,
+  "end": 149.66,
+  "clip": "d01-b",
+  "line": "who has elastic bands, not plastic hands (e02 not picked)",
+  "dur": 3.04
+ },
+ {
+  "start": 149.66,
+  "end": 152.1,
+  "clip": "d01-a",
+  "line": "stacking up the cash by the grands",
+  "dur": 2.44
+ },
+ {
+  "start": 152.1,
+  "end": 154.74,
+  "clip": "e03-a",
+  "line": "standard plans are for the working man",
+  "dur": 2.64
+ },
+ {
+  "start": 154.74,
+  "end": 157.04,
+  "clip": "f01-a",
+  "line": "and this right here is a next level scam",
+  "dur": 2.3
+ },
+ {
+  "start": 157.04,
+  "end": 159.84,
+  "clip": "x07-b",
+  "line": "ill gotten gains, no need to explain",
+  "dur": 2.8
+ },
+ {
+  "start": 159.84,
+  "end": 162.54,
+  "clip": "f02-a",
+  "line": "'bail' and 'out' will never mean the same",
+  "dur": 2.7
+ },
+ {
+  "start": 162.54,
+  "end": 164.92,
+  "clip": "f03-b",
+  "line": "own the printer and you don't fear winter",
+  "dur": 2.38
+ },
+ {
+  "start": 164.92,
+  "end": 170.08,
+  "clip": "v12-b",
+  "line": "crime is asset inflation, a wealth gap (f04 not picked)",
+  "dur": 5.16
+ },
+ {
+  "start": 170.08,
+  "end": 172.7,
+  "clip": "v03-b",
+  "line": "working people get paid in money (f05 not picked)",
+  "dur": 2.62
+ },
+ {
+  "start": 172.7,
+  "end": 175.94,
+  "clip": "d11-a",
+  "line": "so it's not very funny when you print more",
+  "dur": 3.24
+ },
+ {
+  "start": 175.94,
+  "end": 180.52,
+  "clip": "v05-b",
+  "line": "hungry people feed a revolution, retribution (f06 not picked)",
+  "dur": 4.58
+ },
+ {
+  "start": 180.52,
+  "end": 184.62,
+  "clip": "f08-b",
+  "line": "it's time to give, not just to take, but for heaven's sake",
+  "dur": 4.1
+ },
+ {
+  "start": 184.62,
+  "end": 188.46,
+  "clip": "v11-b",
+  "line": "don't just eat cake (f09 not picked)",
+  "dur": 3.84
+ },
+ {
+  "start": 188.46,
+  "end": 194.0,
+  "clip": "x03-b",
+  "line": "Robbery!",
+  "dur": 5.54
+ },
+ {
+  "start": 194.0,
+  "end": 199.14,
+  "clip": "x01-a",
+  "line": "Robbery!",
+  "dur": 5.14
+ },
+ {
+  "start": 199.14,
+  "end": 204.0,
+  "clip": "x07-b",
+  "line": "Robbery!",
+  "dur": 4.86
+ },
+ {
+  "start": 204.0,
+  "end": 209.6,
+  "clip": "a01-a",
+  "line": "Robbery! (end)",
+  "dur": 5.6
+ }
+]

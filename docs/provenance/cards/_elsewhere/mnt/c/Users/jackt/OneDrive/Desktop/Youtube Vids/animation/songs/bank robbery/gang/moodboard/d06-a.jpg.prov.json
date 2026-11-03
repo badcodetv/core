@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d06-a.jpg",
+ "made": "2026-11-03T12:43:42+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 1:35 'institutional, dilutional, the usual'",
+ "prompt": "A music-video still in a cramped 1920s basement speakeasy, shot low and close on a wide-angle lens. In the foreground, a robber called BOTTLE leans his elbows on a scuffed mahogany bar and raps straight into the lens. His thumb jabs back over his shoulder at the barman, his other gloved hand chops flat on the beat. His head is a chunky hand-knitted bottle-green wool hood, smooth knit where the face would be, ringed with oatmeal chain stitch from brow to chin, and one small rounded red felt triangle sewn high over his right eye, on the left of the picture. Brown tweed suit, collar up, black leather gloves. Behind him, a waistcoated barman calmly tips a tin water jug into an amber whiskey bottle with a blank label, the spirit visibly paling. Two bare amber bulbs on the back bar, plum walls, smoke, coarse film grain, deep shadow.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

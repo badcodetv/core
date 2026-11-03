@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f02-a.jpg",
+ "made": "2026-11-03T12:43:43+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:40 ''bail' and 'out' will never mean the same'",
+ "prompt": "A music-video still set on a grey-green 1920s harbour at overcast noon, seen from water level with a 35mm lens, the waterline cutting across the bottom third of the frame. Three portly bankers in black silk top hats, frock coats and gold watch chains sit in a small varnished wooden rowing boat that is sinking stern first, brown water already over the thwarts. Each banker scoops water out over the side with a tin bucket packed full of green banknotes, and the notes slosh out with the water and float around the hull in soggy drifts. The nearest banker's top hat is tipped back, cheeks puffed, sleeves soaked to the elbow. Behind them a tall steam liner's rust-red hull and a white wooden pier fill the background, softened by haze. Flat diffuse daylight from the left, muted Technicolor colour, coarse film grain, slight softness at the edges.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

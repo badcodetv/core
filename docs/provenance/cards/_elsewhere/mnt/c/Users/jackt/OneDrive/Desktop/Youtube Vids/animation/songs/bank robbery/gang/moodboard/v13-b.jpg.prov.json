@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v13-b.jpg",
+ "made": "2026-11-03T12:43:38+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 0:52 'this fiat system is insistent on debt's existence'",
+ "prompt": "A music-video still, 1920s bank archive basement: SILVER, a tall robber in a silver-grey hand-knitted rib wool hood covering his whole head and neck, smooth knit where the face would be, a crimson chain-stitched ring outlining the face and one small rounded red felt triangle high over his right eye, on the left of the picture, sits on top of a towering mound of thick bound ledgers with blank spines and loose paper slips, the whole heap wrapped round and round in heavy iron chains and padlocks. He wears an oxblood-red suit and bow tie, collar up, black gloves. He raps into the lens: leaning down toward a fisheye camera placed low at the foot of the pile, one gloved arm straight out pointing into the lens, the other hand a fist on his chest. Steel shelving bends away behind. Cold daylight falls from a single high barred window, dust hanging in the beam; grainy colour film.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

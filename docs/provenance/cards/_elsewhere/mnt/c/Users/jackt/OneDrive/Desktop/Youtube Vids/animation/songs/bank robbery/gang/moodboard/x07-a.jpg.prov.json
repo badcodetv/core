@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/x07-a.jpg",
+ "made": "2026-11-03T12:43:43+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, break 'action'",
+ "prompt": "A music-video still of a police raid on a 1920s roadhouse, seen from high in the rafters looking down on a wide lens. Uniformed policemen in long blue coats and peaked caps swing fire axes into a row of oak whiskey barrels; staves split and amber liquor gushes across the plank floor in a spreading flood, soaking scattered playing cards and overturned chairs. Car headlights blaze through the front windows from the left, throwing long shadows of the axes across the room. In the far right corner, a back door stands open to blue night: SILVER, tall, in an oxblood-red suit with a bow tie and a silver-grey hand-knitted hood with a crimson chain-stitched ring, holds it while BOTTLE, in brown tweed and a bottle-green hood with an oatmeal ring, slips through carrying a crate. Silver glances back up toward the camera, the small rounded red felt triangle high over his right eye showing on the left side of his face. Gloves on, collars up. Grain, hard shadows.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}

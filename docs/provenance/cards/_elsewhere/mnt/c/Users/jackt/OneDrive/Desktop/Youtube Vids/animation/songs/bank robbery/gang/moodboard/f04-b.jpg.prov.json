@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f04-b.jpg",
+ "made": "2026-11-03T12:43:44+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts",
+ "model": "Nano Banana 2",
+ "why": "mv-gang round 1, 2:45 'crime is asset inflation'",
+ "prompt": "A music-video still on a mansion lawn at golden late afternoon, shot from a low angle with a 24mm lens close behind SILVER. SILVER, the tall one, stands in the lower right foreground in an oxblood-red suit and bow tie, black leather gloves, arms folded, his head tipped back and turned three-quarters toward camera: a seamless hand-knitted silver-grey rib wool hood covers his whole head and neck, tucked into a turned-up collar, smooth knit where the face would be, a thin crimson chain-stitched ring outlining the face, and one small rounded red felt triangle sewn high over his right eye, on the left side of the picture. Above him a huge hot-air balloon stitched together from thousands of green banknotes swells as it inflates, burners roaring orange. In its wicker basket a pair of rich couples in furs and boaters wave. A white-columned mansion and clipped hedges behind. Warm low sun from the right, long shadows, fine grain.\n\nThanks.",
+ "settings": {
+  "aspect": "16:9"
+ }
+}
