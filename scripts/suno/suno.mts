@@ -1699,6 +1699,12 @@ const PLAYER_STATE = `(() => {
 })()`
 
 export async function recordTake(page: Page, key: string): Promise<RecordResult> {
+  // Recording captures Chrome's sound through a PulseAudio virtual speaker, which exists on Linux
+  // (WSL) only. On a Mac, say so plainly instead of failing deep inside pactl (2026-11-03).
+  if (process.platform !== 'linux') {
+    throw new Error('RECORD_UNSUPPORTED: `record` needs PulseAudio (Linux/WSL). On this machine, listen in the ' +
+      'browser and download by hand — everything else in suno.mts works here. See docs/misc/2026-11-03-mac-setup.md')
+  }
   requireCreate(page)
   const cap = await import('@badcode/listen-mcp/capture')
   const { mkdtempSync, mkdirSync, rmSync } = await import('node:fs')
