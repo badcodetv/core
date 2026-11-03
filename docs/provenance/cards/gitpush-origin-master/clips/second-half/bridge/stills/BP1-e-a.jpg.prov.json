@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP1-e-a.jpg",
+ "made": "2026-11-02T16:37:21.134Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only where the monitor sits. Take the monitor off the wall bracket: the same boxy grey-cased television now stands on a small wooden table at chest height in the middle of the tunnel, in front of the crowd, facing them, exactly where the television sits in the second image. The loudspeaker horn stays alone on the whitewashed wall above, with nothing beneath it but brick and cable. Its screen still gives only a soft red glow, the one light in the tunnel, catching the curve of the vault and the edges of the silhouetted heads in the foreground. Keep everything else the same: the people, their backs, the vault, the grain, the faded 16mm colour.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/BP1-d-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/BP1-d-a.jpg",
+   "/home/kai/.cache/badcode-refs/bridge/BP1-a-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9f5ac02b-3b1b-4a08-95b5-f96df8c220be"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-b-b.jpg",
+ "made": "2026-11-03T16:32:13.083Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "From beyond the Moon: the grey cratered limb of the Moon fills the bottom of frame, and far out in the black the Earth is a small disc whose night side glows red instead of gold, a thin crescent of daylight on its edge. Shot like a real space-mission photograph: fine grain, one hard sunlight source, deep black space. No text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ac814541-2483-4ade-a841-9395bc3dcf2f"
+}

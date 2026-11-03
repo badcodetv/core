@@ -1,50 +1,235 @@
 {
  "scene": "second-half-a-killbots",
  "beat": "0",
- "ruled": "2026-10-27, Kai picked draft 1D on the dialogue page (round 3) and said go: \"please go ahead and let's get the dialogue recut\".",
+ "ruled": "2026-11-02, Kai: draft 1H \"is perfect\" with line 6 ending \"and that went along with you lot\"; storyverse before the regret; the time machine is first mentioned here.",
  "dialogue": {
-  "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "options": "design/2026-10-26-gpom-dialogue-options/options.json",
-  "picked": "1D",
-  "round": 4
+  "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+  "picked": "1G",
+  "round": 6
  },
- "about": "Maddie's intro, the words' one home from 27 Oct (before then: cut3.py BEAT0 and cut-notes.json words_round1). [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion.",
+ "about": "Maddie's intro, the words' one home. [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion. Earlier versions under history.",
  "lines": [
   {
    "who": "bot",
-   "text": "Oh, hello! [pause] Sorry about the racket.",
-   "by": "claude",
-   "note": "draft 1A"
-  },
-  {
-   "who": "bot",
-   "text": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went.",
-   "by": "claude",
-   "note": "draft 1A"
-  },
-  {
-   "who": "bot",
-   "text": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course.",
+   "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
    "by": "kai",
-   "note": "Kai, round 2 note"
+   "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
   },
   {
    "who": "bot",
-   "text": "Built all these world models and simulations to get you back, and nobody's home in any of them.",
+   "text": "[fond, confiding] He misses you something rotten, you know.",
    "by": "kai",
-   "note": "Kai, round 2 note"
+   "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
   },
   {
    "who": "bot",
-   "text": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now...",
+   "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
    "by": "kai",
-   "note": "Kai, round 2 note"
+   "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
   },
   {
    "who": "bot",
-   "text": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
-   "by": "claude",
-   "note": "draft 1A"
+   "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+   "by": "kai",
+   "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+  },
+  {
+   "who": "bot",
+   "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
+   "by": "kai",
+   "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+  },
+  {
+   "who": "bot",
+   "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
+   "by": "kai",
+   "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+  },
+  {
+   "who": "bot",
+   "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+   "by": "kai",
+   "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+  }
+ ],
+ "history": [
+  {
+   "ruled": "2026-10-27, Kai picked draft 1D on the dialogue page (round 3) and said go: \"please go ahead and let's get the dialogue recut\".",
+   "dialogue": {
+    "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+    "options": "design/2026-10-26-gpom-dialogue-options/options.json",
+    "picked": "1D",
+    "round": 4
+   },
+   "lines": [
+    {
+     "who": "bot",
+     "text": "Oh, hello! [pause] Sorry about the racket.",
+     "by": "claude",
+     "note": "draft 1A"
+    },
+    {
+     "who": "bot",
+     "text": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went.",
+     "by": "claude",
+     "note": "draft 1A"
+    },
+    {
+     "who": "bot",
+     "text": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course.",
+     "by": "kai",
+     "note": "Kai, round 2 note"
+    },
+    {
+     "who": "bot",
+     "text": "Built all these world models and simulations to get you back, and nobody's home in any of them.",
+     "by": "kai",
+     "note": "Kai, round 2 note"
+    },
+    {
+     "who": "bot",
+     "text": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now...",
+     "by": "kai",
+     "note": "Kai, round 2 note"
+    },
+    {
+     "who": "bot",
+     "text": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
+     "by": "claude",
+     "note": "draft 1A"
+    }
+   ]
+  },
+  {
+   "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\"",
+   "dialogue": {
+    "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+    "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+    "picked": "1G",
+    "round": 5
+   },
+   "lines": [
+    {
+     "who": "bot",
+     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+     "by": "kai",
+     "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+    },
+    {
+     "who": "bot",
+     "text": "[fond, confiding] He misses you something rotten, you know.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "He took your materialist science word for word. Built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "There's something about the simulation theory that's not wrong, mind. But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    }
+   ]
+  },
+  {
+   "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\" Timeline r5 notes (2 Nov): at723, at1513, at2229 applied.",
+   "dialogue": {
+    "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+    "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+    "picked": "1G",
+    "round": 6
+   },
+   "lines": [
+    {
+     "who": "bot",
+     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+     "by": "kai",
+     "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+    },
+    {
+     "who": "bot",
+     "text": "[fond, confiding] He misses you something rotten, you know.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "He built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+     "by": "kai",
+     "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+     "by": "kai",
+     "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "[quiet] You drove it through your consciousness, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+     "by": "kai",
+     "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    },
+    {
+     "who": "bot",
+     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+     "by": "kai",
+     "note": "draft 1G (Kai's notes, rounds 1-4)"
+    }
+   ]
   }
  ]
 }

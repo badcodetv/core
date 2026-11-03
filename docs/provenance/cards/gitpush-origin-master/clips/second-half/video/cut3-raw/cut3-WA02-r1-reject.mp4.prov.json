@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-raw/cut3-WA02-r1-reject.mp4",
+ "made": "2026-11-02T16:47:36+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/gpom/second-half-video/run-cut3.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+ "why": "GPOM second half A, wide approach take 1: REJECT (bots morph into cannon-barrelled tanks, extra tank enters, dust swallows the pack)",
+ "source_id": "uf7CmbPKGbFMQ_rCinGg",
+ "prompt": "The camera does not move, locked on a long lens from far off. The pack of tracked military robots races from left to right along the foot of the slope at full speed, tracks churning, thick chalk dust boiling up and drifting back behind them. They stay low on the slope, far below the small shut green doors high on the right. The long grass in the foreground whips in the wind. Shot at 24fps with a 180-degree shutter, so the speed smears. The camera does not move.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "6s",
+  "count": "1",
+  "credits": "10",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

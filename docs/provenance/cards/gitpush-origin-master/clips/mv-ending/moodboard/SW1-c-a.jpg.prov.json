@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SW1-c-a.jpg",
+ "made": "2026-11-02T16:20:39.513Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Over the slate roofs and chimneys of a dark terraced English town at night, smoke drifting across the foreground; far beyond on a mountain the great ring-shaped eye is lit, its white aperture and red rim lights the brightest thing in frame, and red robes fill the streets between the houses below. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/TN1-a-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/TN1-a-b.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/EY1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "22ac16ec-e7f0-4428-b01f-c969494e1706"
+}

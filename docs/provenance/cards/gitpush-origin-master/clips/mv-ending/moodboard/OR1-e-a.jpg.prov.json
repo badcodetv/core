@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR1-e-a.jpg",
+ "made": "2026-11-02T16:38:55.852Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The whole night side of the Earth seen from far out in space, every continent covered in red light where the city lights should be, and the same satellite from the reference image a small dark silhouette against it. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/satellite.png",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/satellite.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a29f3a57-27b9-40b5-8371-49b2f3e6e90a"
+}

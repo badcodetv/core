@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR1-c-b.jpg",
+ "made": "2026-11-02T16:37:30.698Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Looking down past the solar wing of the same satellite from the reference image onto the British Isles at night from orbit: the islands outlined and filled with red points of light, the sea black, the satellite's panels lit faintly red from below. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/satellite.png",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/satellite.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cb40fcad-d723-4849-a82c-304d97a01a6d"
+}

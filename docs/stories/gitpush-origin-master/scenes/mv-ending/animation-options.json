@@ -1,0 +1,890 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Lock Veo's camera on every frame with a grid (streets, stadium, fields, ships' hulls, bridges, the city map); Premiere does the pushes and pulls.",
+   "why": "Camera moves are what make Veo redraw a scene. Where there's no grid (the valley, the cloud tops, the rise to the Earth's curve, the Moon) Veo may fly the camera, per GPOM's look.md.",
+   "source": "docs/video-fx/hybrid-method.md; look.md"
+  },
+  {
+   "rule": "The whole sequence is one long zoom out: every Premiere move from frame 7 onward is a PULL BACK (scale down), so the cuts feel like one continuous climb.",
+   "why": "Kai: 'we could be zooming out… a much wider zoom out to finish on.'",
+   "source": "picks.md 2026-11-03"
+  },
+  {
+   "rule": "Cuts quicken through the country (about two bars, 2.8s, each) and slow right down in orbit (four bars, 5.5s, each).",
+   "why": "The country frames share 193–211 with the sky; orbit has 19.5s for five frames, room to breathe at the end.",
+   "source": "brief.md timecodes; 174 BPM"
+  },
+  {
+   "rule": "Flashes at 3 a second or fewer: lightning, beams and lights going out are spaced a second apart.",
+   "why": "Photosensitivity.",
+   "source": "look.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Out of the explosion: they just keep walking.",
+   "options": [
+    {
+     "id": "a",
+     "label": "March through the fire",
+     "idea": "The column walks toward camera through the burning drone wreckage; flames and smoke do the rest.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the robes march forward, fires flicker, smoke rolls across."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow push in, eased, over the whole clip."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The red-robed robots march steadily forward toward the camera through the wreckage, robes swaying in step. The fires on the wet tarmac flicker and the smoke rolls slowly across the frame. Rain falls. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hard cut on the first bar after the Swindon explosion (161.96).",
+     "seconds": "3.5",
+     "risk": "Low. More than three robots may drift in step; crop if so."
+    },
+    {
+     "id": "b",
+     "label": "Smoke wipe",
+     "idea": "Smoke engulfs the frame and clears to reveal the column right in front of us.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; [00:00-00:02] thick smoke covers the frame, [00:02-00:05] it clears to show the column closer."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use the smoke as the cut point from Swindon."
+      }
+     ],
+     "veo_prompt": "The camera does not move. [00:00-00:02] Thick grey smoke rolls across and covers the whole frame. [00:02-00:05] The smoke thins and clears, and the red-robed robots stand in a column among the burning wreckage, marching forward. Rain falls, fires flicker. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "The smoke covers the hard cut from the Swindon explosion.",
+     "seconds": "4",
+     "risk": "Medium: Veo may redraw the column when it reveals it."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "The town still runs its little routine for nobody. The close shot.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Green to amber to red",
+     "idea": "The light changes on the beat while the robes march past underneath.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the light turns green, amber, red; the ranks march past."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Nothing: let it sit, the only still frame in the sequence."
+      }
+     ],
+     "veo_prompt": "The camera does not move. [00:00-00:02] The traffic light shows green. [00:02-00:03] It turns amber. [00:03-00:05] It turns red. Underneath, the red-robed robots keep marching past in two columns, splashing through puddles. Rain falls through the light. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Light changes land on the snare; cut on red.",
+     "seconds": "3",
+     "risk": "Low. Watch the lamp colours stay in the right order."
+    },
+    {
+     "id": "b",
+     "label": "Rack focus",
+     "idea": "Start on the raindrops on the lens, pull focus to the light.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; focus starts soft, sharpens on the light."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Very slow push in."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The image begins softly out of focus with raindrops on the lens, then the focus sharpens onto the traffic light as it turns red. The red-robed robots march past underneath. Rain falls. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on red.",
+     "seconds": "3",
+     "risk": "Medium: Veo focus pulls can be mushy."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "Who is watching: the eye, above everything we know.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The beam sweeps",
+     "idea": "The eye's beam swings across the roofs toward camera and floods the lens.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the beam sweeps across the rooftops and into the lens at the end."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Flash-to-white transition into the land."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The white beam from the ring-shaped eye on the mountain sweeps slowly across the rooftops and chimneys, smoke drifting through it, until [00:03-00:04] it swings into the lens and the frame floods white. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Out on the white flood into the land act (173).",
+     "seconds": "4",
+     "risk": "Low. Keep the white flood to one flash."
+    },
+    {
+     "id": "b",
+     "label": "Lightning",
+     "idea": "A single lightning flash behind the mountain lights the whole valley of rooftops.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; [00:02] one lightning flash; smoke drifting."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow push toward the eye."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Smoke drifts slowly across the dark rooftops. [00:02-00:03] A single lightning flash behind the mountain lights up the whole town for an instant. The eye's beam holds steady. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the lightning.",
+     "seconds": "4",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "Every street, door to door.",
+   "options": [
+    {
+     "id": "a",
+     "label": "They turn their heads",
+     "idea": "The whole street of robots turns to look at the camera at once.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the hooded robots' red eyes turn to camera in unison."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back down the street."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The rows of red-hooded robots standing in the terraced street all slowly turn their heads toward the camera at the same moment, their red eyes glowing. Rain falls, the street lamp flickers once. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the head turn.",
+     "seconds": "4",
+     "risk": "Medium: unison motion over many figures may wobble; the lamp flicker covers it."
+    },
+    {
+     "id": "b",
+     "label": "Lights go out",
+     "idea": "Street lamps go out one by one down the street toward us; only the red eyes remain.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the lamps go out from far to near."
+      },
+      {
+       "lane": "Premiere",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Rain falls on the terraced street. The street lamps go out one at a time from the far end toward the camera, until only the red eyes of the standing robots light the street. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut when the last lamp goes.",
+     "seconds": "4",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "The places people gather, filled with something else.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Floodlights bank off",
+     "idea": "The floodlight banks switch off in turn, leaving the red blocks glowing.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the floodlights switch off one bank at a time."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow crane-like push up (scale 100→115%)."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Inside the floodlit stadium filled with red-robed robots in ranks, the floodlight banks switch off one by one, [00:01], [00:02], [00:03], until the stadium is lit only by a dim red glow from the ranks. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the last bank going off.",
+     "seconds": "4",
+     "risk": "Low; flashes are slower than 3 a second."
+    },
+    {
+     "id": "b",
+     "label": "The ranks move as one",
+     "idea": "Every block takes one step forward in unison.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the blocks step forward together."
+      },
+      {
+       "lane": "Premiere",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The red-robed robots filling the pitch and the stands all take one step forward together, in perfect unison, then hold still. Mist drifts through the floodlights. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the step, on the downbeat.",
+     "seconds": "3",
+     "risk": "Medium: crowds this dense can shimmer."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "job": "Out of the towns, into the land itself.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Fly down the valley",
+     "idea": "No grid here, so Veo flies the camera down the valley along the red river.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera moves: a slow drone flight forward and down the valley along the river of robes, the ship's searchlight sweeping."
+      },
+      {
+       "lane": "Premiere",
+       "does": "None: Veo owns the move."
+      }
+     ],
+     "veo_prompt": "A slow aerial drone flight forward down the green Welsh valley at night, following the winding river of red-robed robots below. The ship's white searchlight sweeps across the hillside. Mist hangs on the hills. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Cut mid-move.",
+     "seconds": "5",
+     "risk": "Medium: aerial moves can redraw the village after ~4s; cut before."
+    },
+    {
+     "id": "b",
+     "label": "Locked, the searchlight moves",
+     "idea": "Camera still; the searchlight sweeps up the valley, the column flows.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the searchlight sweeps, the red column flows forward."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow push in."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The river of red-robed robots flows steadily along the valley floor. The hovering ship's white searchlight sweeps slowly across the column and up the hillside. Mist drifts. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the beam crossing the column.",
+     "seconds": "4",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "job": "The whole countryside, squared off.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Searchlights cross",
+     "idea": "The grid holds still; searchlights sweep across it.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; two searchlight beams sweep and cross over the grid of fields."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back, scale 115→100%: the first zoom-out."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Over the patchwork of fields filled with red ranks, two white searchlight beams sweep slowly across the land and cross each other. Low cloud drifts over the scene. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Out on a pull back, into the sky act.",
+     "seconds": "4",
+     "risk": "Low: the grid is locked so it won't redraw."
+    },
+    {
+     "id": "b",
+     "label": "Cloud swallows it",
+     "idea": "Cloud rolls in under the camera and covers the fields: the hand-off to the sky.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; [00:02-00:05] cloud rolls across below and covers the fields."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Use the cloud as the cut into frame 8."
+      }
+     ],
+     "veo_prompt": "The camera does not move. [00:00-00:02] The fields filled with red ranks lie still under the searchlights. [00:02-00:05] Low grey cloud rolls in below the camera and covers the whole land. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "The cloud wipes into the sky act.",
+     "seconds": "5",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "job": "Above it all, the ships are watching.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Beams strobe on",
+     "idea": "The ships' beams switch on one after another down onto the fields.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the beams switch on in turn; rain on the hulls."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow tilt-like push down (position move)."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Under the dark hulls of the hovering ships, the white beams switch on one after another, [00:01], [00:02], [00:03], lighting the red ranks in the fields far below. Rain streaks past the hulls. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the last beam.",
+     "seconds": "3",
+     "risk": "Low; keep the beams to 1 a second."
+    },
+    {
+     "id": "b",
+     "label": "Ships drift overhead",
+     "idea": "The fleet slides slowly across the frame overhead, revealing more ground.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the ships drift slowly across the top of frame."
+      },
+      {
+       "lane": "Premiere",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The huge dark ships drift slowly across the top of the frame, their beams sliding over the red ranks below. Rain streaks past. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut mid-drift.",
+     "seconds": "3",
+     "risk": "Medium: big hulls moving can morph."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "job": "The storm system around its centre.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The storm turns",
+     "idea": "The ships orbit the eye like a weather system; lightning inside the cloud.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the ships circle the eye; [00:02] and [00:04] lightning flashes."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow push into the eye."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The fleet of ships circles slowly around the ring-shaped eye on its mountain like a storm system turning. [00:02-00:03] Lightning flashes inside the cloud. [00:04-00:05] Another flash. The eye's beam holds steady. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the second lightning flash.",
+     "seconds": "4",
+     "risk": "Medium: circling motion can morph ships."
+    },
+    {
+     "id": "b",
+     "label": "The eye fires",
+     "idea": "The beam bursts brighter and the ships scatter outward.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; [00:02] the eye's beam blazes brighter, the ships peel outward."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Push into the flash."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Ships hover around the ring-shaped eye. [00:02-00:03] The eye's beam blazes brighter and the ships peel away outward in every direction. Thunder clouds churn. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the blaze.",
+     "seconds": "3",
+     "risk": "Medium."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "job": "Layer upon layer, to the horizon.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Rise up through the cloud",
+     "idea": "No grid: Veo rises the camera out of the cloud tops to reveal the fleet.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera moves: rises up out of the cloud to reveal layers of ships under the moon."
+      },
+      {
+       "lane": "Premiere",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "The camera rises slowly up out of the cloud tops at night to reveal hundreds of dark disc ships hovering in layers to the horizon, their white beams pointing down into the cloud, a crescent moon above. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Cut once the fleet is revealed.",
+     "seconds": "4",
+     "risk": "Medium: cloud fly-throughs can redraw."
+    },
+    {
+     "id": "b",
+     "label": "Locked, cloud flows",
+     "idea": "Camera still; cloud flows under the ships, beams glow through it.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; cloud flows, beams shimmer."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back: the zoom-out continues."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Thick cloud flows slowly beneath the layers of hovering ships, their white beams glowing through it. The crescent moon holds steady above. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the pull back.",
+     "seconds": "4",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "job": "Higher: whole towns become a pattern.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Beams sweep the region",
+     "idea": "The ships hold; beams sweep across the fields far below.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the beams sweep slowly; rain on the hulls."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Pull back hard: 120→100% in one bar."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Under the rain-wet hulls of the ships, the white beams sweep slowly across the region far below, the red grid of ranks glinting. Rain streaks past. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Fast: one or two bars.",
+     "seconds": "2",
+     "risk": "Low."
+    },
+    {
+     "id": "b",
+     "label": "Post only",
+     "idea": "Use the still with a Premiere zoom-out; no video needed.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Scale 130→100% over two bars, eased."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Fast: two bars.",
+     "seconds": "2",
+     "risk": "None; the still may look frozen."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "job": "Every crossing taken.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The columns cross",
+     "idea": "The robes stream across both bridges; tide and beams move.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the columns move along the bridges, beams reflect on the moving tide."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Red-robed robots stream steadily along both suspension bridges. The ships' white beams reflect and shimmer on the moving tide below. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Fast: two bars.",
+     "seconds": "3",
+     "risk": "Medium: tiny figures may shimmer, fine at this size."
+    },
+    {
+     "id": "b",
+     "label": "Bridge lights die",
+     "idea": "The bridge lights go out span by span; only red remains.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the bridge lights go out in turn."
+      },
+      {
+       "lane": "Premiere",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The lights along the suspension bridges go out section by section, [00:01], [00:02], [00:03], leaving only the red of the robots crossing and the ships' beams on the water. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the last light.",
+     "seconds": "3",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "job": "The eye's reach: a whole county.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The beam fires",
+     "idea": "The beam shoots out from the eye across the land; ships ride along it.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; [00:00-00:01] the beam fires across the country; ships slide along it."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Push along the beam's line."
+      }
+     ],
+     "veo_prompt": "The camera does not move. [00:00-00:01] The ring-shaped eye on the distant mountain fires its white beam flat across the dark countryside. [00:01-00:04] Ships slide along the beam like beads on a wire. Lightning flickers once in the clouds. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on the fire, on the downbeat.",
+     "seconds": "3",
+     "risk": "Medium: the beam may wobble."
+    },
+    {
+     "id": "b",
+     "label": "Post only",
+     "idea": "The still, pushed along the beam in Premiere.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Position move along the beam, scale 110→125%."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Two bars.",
+     "seconds": "2",
+     "risk": "None."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "job": "The capital, all red.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Cloud parts",
+     "idea": "Cloud drifts away to reveal the red city below.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; cloud drifts off the frame; the red streets pulse faintly."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Wisps of cloud drift away across the frame, revealing the whole city below, its streets glowing red, the black river curving through it. The ships' beams hold steady. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Two bars.",
+     "seconds": "3",
+     "risk": "Low."
+    },
+    {
+     "id": "b",
+     "label": "The red spreads",
+     "idea": "Orange streets turn red, spreading outward from the centre.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the city's light turns red from the centre outward."
+      },
+      {
+       "lane": "Premiere",
+       "does": "None."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Across the whole city seen from high above, the street lights change from orange to red, spreading outward from the centre to the edges over a few seconds. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut when the city is all red.",
+     "seconds": "4",
+     "risk": "Medium: Veo may redraw the street map; keep it short."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "job": "The whole country's arteries, and the curve of the Earth: the door into space.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Rise to the curve",
+     "idea": "No grid: Veo rises the camera until the Earth's curve fills the top.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera moves: a steady rise straight up, the curve of the Earth growing."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Cross-dissolve into orbit frame 16."
+      }
+     ],
+     "veo_prompt": "The camera rises steadily straight up from high above England at night, the red motorway veins and cities shrinking below, the curve of the Earth growing across the top of the frame, the searchlight beams standing up from the land. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Dissolve out into orbit (211).",
+     "seconds": "5",
+     "risk": "Medium: the map may redraw; cut by 4s."
+    },
+    {
+     "id": "b",
+     "label": "Locked, beams pulse",
+     "idea": "Camera still; the searchlights swing; veins pulse; Premiere pulls back.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; searchlight beams swing slowly; red veins pulse."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Pull back 130→100%, then dissolve."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The searchlight beams standing up from the land swing slowly. The red veins of the motorways pulse gently with light moving along them toward the cities. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Dissolve out into orbit.",
+     "seconds": "4",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "job": "Space, and Britain below: it's everywhere now.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The satellite drifts past",
+     "idea": "The satellite slides through frame; Britain turns slowly underneath.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the satellite drifts across; the Earth rotates slowly."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The satellite drifts slowly across the frame, its solar panels catching hard sunlight, while the Earth below rotates slowly, Britain glowing red. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hold four bars.",
+     "seconds": "5",
+     "risk": "Low: space shots are calm for Veo."
+    },
+    {
+     "id": "b",
+     "label": "Post only",
+     "idea": "The still with a slow Premiere pull-back and drift.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Scale 115→100% over four bars plus a slight rotation."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Four bars.",
+     "seconds": "5",
+     "risk": "None."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "job": "Pull back again: the whole continent.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Red light spreads",
+     "idea": "Europe's lights turn red, spreading across the land below the satellite.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the remaining gold lights go red; the satellite turns slowly."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Below the satellite, the last gold city lights across Europe turn red one region after another, until the whole continent glows red. The satellite rotates slowly. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hold four bars.",
+     "seconds": "5",
+     "risk": "Medium: map redraw; keep it short."
+    },
+    {
+     "id": "b",
+     "label": "Satellite turns",
+     "idea": "Only the satellite moves: a slow roll, sunlight sliding across it.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the satellite rolls slowly; sunlight glints."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The satellite rolls slowly in orbit, hard sunlight sliding across its panels. Europe glows red below. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hold four bars.",
+     "seconds": "5",
+     "risk": "Low."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "job": "Wider still: the whole planet, occupied. The opening's satellite in front.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Planet turns",
+     "idea": "The Earth turns slowly, more red land rolling into view.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the Earth rotates; the satellite drifts toward the camera."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The whole Earth rotates slowly, more continents glowing red rolling into view out of the darkness. The satellite drifts slowly toward the camera, catching the sun. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hold four bars.",
+     "seconds": "5",
+     "risk": "Low."
+    },
+    {
+     "id": "b",
+     "label": "The dawn goes red",
+     "idea": "The thin blue crescent of dawn on the edge turns red too.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the blue dawn edge slowly turns red."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The thin blue crescent of dawn along the Earth's edge slowly turns red, until the whole planet glows red. The satellite holds steady in the foreground. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hold four bars.",
+     "seconds": "5",
+     "risk": "Medium: colour change may look like a filter."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "job": "They've even built a ring round it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The ring turns",
+     "idea": "The ring of ship lights rotates around the red Earth.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the ring of lights turns slowly around the planet."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The thin ring of thousands of tiny white ship lights turns slowly around the red Earth. The planet rotates gently. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hold four bars.",
+     "seconds": "5",
+     "risk": "Low."
+    },
+    {
+     "id": "b",
+     "label": "Post only",
+     "idea": "The still with a slow Premiere pull-back.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "Scale 110→100% over four bars."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Four bars.",
+     "seconds": "5",
+     "risk": "None."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "job": "The widest shot of all: a small red planet in the dark. The end.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Hold and fade",
+     "idea": "Almost nothing moves: the Earth's red glow pulses once, then fade to black on the track's stop.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Locked camera; the Earth's red glow pulses slowly; stars steady."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow pull back, then fade to black on the stop (~230.5)."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Far out in space beyond the grey limb of the Moon, the small Earth hangs in the black, its night side glowing red, the glow pulsing slowly once. The stars hold steady. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Fade to black at the track's stop (~230.5).",
+     "seconds": "6",
+     "risk": "Low."
+    },
+    {
+     "id": "b",
+     "label": "Moonrise reveal",
+     "idea": "The Moon's limb rises into frame from below to reveal the red Earth.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera moves: a slow tilt up over the Moon's horizon reveals the Earth."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Fade out."
+      }
+     ],
+     "veo_prompt": "A slow upward move over the grey cratered horizon of the Moon reveals the small Earth hanging in black space beyond, its night side glowing red. Stars hold steady. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Fade out on the stop.",
+     "seconds": "6",
+     "risk": "Medium: camera moves can redraw the Earth."
+    }
+   ]
+  }
+ ]
+}

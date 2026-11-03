@@ -1,5 +1,5 @@
 {
- "spent": 684,
+ "spent": 848,
  "jobs": [
   {
    "key": "V6-1",
@@ -247,6 +247,76 @@
    "cost": 12,
    "at": "2026-10-23T16:50:00Z",
    "note": "scene B bunting test (Kai 23 Oct, no budget cap); scripts/scene/run.mts, Omni 1.1 Flash, 8 s, count 1, project 20b33d98; house price, not read off Flow; shb-b17b-v1-r2-shb-b17b-v1-calm-bunting.mp4"
+  },
+  {
+   "key": "WA02",
+   "cost": 10,
+   "at": "2026-11-02T16:43:11.604Z"
+  },
+  {
+   "key": "WA02-r2",
+   "cost": 10,
+   "at": "2026-11-02T16:45:59.365Z"
+  },
+  {
+   "key": "B0xx-9",
+   "cost": 12,
+   "at": "2026-11-02T19:57:44.208Z"
+  },
+  {
+   "key": "B0xx-10",
+   "cost": 12,
+   "at": "2026-11-02T20:00:17.238Z"
+  },
+  {
+   "key": "B0xx-10-r2",
+   "cost": 12,
+   "at": "2026-11-02T20:02:48.107Z"
+  },
+  {
+   "key": "B0xx-11",
+   "cost": 12,
+   "at": "2026-11-02T20:04:30.317Z"
+  },
+  {
+   "key": "B0xx-12",
+   "cost": 12,
+   "at": "2026-11-02T20:06:13.621Z"
+  },
+  {
+   "key": "B0xx-13",
+   "cost": 12,
+   "at": "2026-11-02T20:07:48.164Z"
+  },
+  {
+   "key": "B0xx-14",
+   "cost": 12,
+   "at": "2026-11-02T20:09:32.916Z"
+  },
+  {
+   "key": "B0xx-15",
+   "cost": 12,
+   "at": "2026-11-02T20:11:09.279Z"
+  },
+  {
+   "key": "B0xx-16",
+   "cost": 12,
+   "at": "2026-11-02T20:12:56.372Z"
+  },
+  {
+   "key": "B0xx-15-r2",
+   "cost": 12,
+   "at": "2026-11-02T20:19:36.711Z"
+  },
+  {
+   "key": "B0xx-15-r3",
+   "cost": 12,
+   "at": "2026-11-02T20:21:40.927Z"
+  },
+  {
+   "key": "B0xx-16-r2",
+   "cost": 12,
+   "at": "2026-11-02T20:23:26.387Z"
   }
  ],
  "keys": [
@@ -303,6 +373,20 @@
   "https://flow.google.com/asb/ANqvLOY9OkR9pJSd6L1o7yrHCIuX6vCYgmqYyHU26hU8hpUUJAwe-_oY11WKjSqfyqEJenqRIJE6miFZBf2qIuC8RfhhWrOzrDmo3Ne_q5adZoZg59z65MtNChUsnJOxi_Dkv5txz1po3yKF-HUV2uj1w5jHTpXsFSLCC8uw3cG1SA",
   "https://flow.google.com/asb/ANqvLObgOi3eehb7kx7S3TKqDvTDkTNlnrfqZFhUTLAkjoylZeRODACMn7EoTwbUI6YtdJNCb-EHjzrA8PqYXJPtp9ubPj3vNXEisjbYp2-feh4LG61GGh1REDspSG5W7GS508QaApVUgkb4kHPQAKIOmMmECh-unS35-kEZy6C0LQ",
   "https://flow.google.com/asb/ANqvLOaTzf19h8SIYzhgS0TjwOAPFua-VPKgJQIYVcPoPBNxCACxQNRKgRaNpMvEW8uqmGugjzXEGo-a4TzoKaSMw6u87X4S2eo-grGSCau3N3ATlSOSXJUfgkFIkyogTJ9KH7L1UTGKIh7AQHJWD3aUGTCArMZgi9Ca0ncRxmA1oA",
-  "https://flow.google.com/asb/ANqvLObHGABxux-jTw1upZ3fMmDozVjSwHauc22v5EyWe32hrMwx7DTQI66izBHH71YP5Gmb7j_wDes9279FLfEj3-C4toZnjOtlHcP0Ke2BcIBmNq8jawwG-iZVoTXcYeGQmUmF-dugwWKsd107l05c8KKPSeF-q1751fge2wmKjg"
+  "https://flow.google.com/asb/ANqvLObHGABxux-jTw1upZ3fMmDozVjSwHauc22v5EyWe32hrMwx7DTQI66izBHH71YP5Gmb7j_wDes9279FLfEj3-C4toZnjOtlHcP0Ke2BcIBmNq8jawwG-iZVoTXcYeGQmUmF-dugwWKsd107l05c8KKPSeF-q1751fge2wmKjg",
+  "https://flow.google.com/asb/ANqvLObKQ5S6oZiUzw2gWMzkNB1PjXdijn0vBE_QX1Q3P5v798DVtBuwd_-KWFYhaUaFl2hsqDfOap-TuM9cwyP78o89K15Fu6gT5YI_17Vx3mSKuUgmRFGlFortMGtxkdE-5D8YJmRuQAl3eSm2k4OmKEuf7CmbPKGbFMQ_rCinGg",
+  "https://flow.google.com/asb/ANqvLOYo5_X27L-ia1CaBbAhWcJpXb6dFpBTMrEKu7HWGLwHvFZwpzKOfzEMqb6QZ3GY7mn8TYp64ao3eEOOGOWg6LNqo2EUtbo8CMeEO2HacPlbk58WA_a_m-mXiPRAqC52G9wB4iWei93zL_0fL-t3D0V1kHuLBPh0jSo0xybosQ",
+  "https://flow.google.com/asb/ANqvLOYTjPz7iYLKAJ1b8Y900RkhISN8De3GMQY6uuqI1jCJcPsMRGTPZ0VBh_mNtV5DlJVsAsxRUcgdAcrAKZE4M6r7vEdj2SP3M8BKTyAS-AMda_DxntWe5Yh7iiWEiW7qFzMo4aSpARtc_2h4GyCleOBFBPsy8VZ4xaq-0hmm8A",
+  "https://flow.google.com/asb/ANqvLOZW1XdwD1RjkzXmAFtoqDtSC7bM4AImHbgJ0nnZBKaornjnxjU1NKzwQCTbKmZywL_WnvDIAukvAXnXRlzLUu8-YF-Ep6TZVyx5F7PRVsws3uMNNlg35oHnpcqJRqLEBVTjXHyNeFC9gsk_wboBaMG7jvvF_gJxiDDWp-LfTw",
+  "https://flow.google.com/asb/ANqvLOb3EvywnzwhmAvIMfebME9Ol__ZW1bl-DrcYAvy3tm0bT7HySKtetPvFSY7cSAv5JSqWVz4UXuJB0EISHmyjYzK3BETWA22zcO3xErEygN6sVdAeD4am67gGYvJTCIlNrQosT87shNXo4Tr2l8HAU-K0cUkzRfpi7WmT-BBNQ",
+  "https://flow.google.com/asb/ANqvLObhAedhDLVzwlXHoHRXwZQl5f9qRLEM7N3_cZ85Vjl8uA0IN19pibpA6UgZqeTZPvDbrs_ucX4YNZRo0lVryobIWRVsS0Uw0a4uFgMPX11Ga7f4DxcG-ZtXvs-EEWr71705MDh66sdMrUcp_dromD0n0UpLlTfAUvoopnOUIw",
+  "https://flow.google.com/asb/ANqvLOYZ1bX41v7Ot8pA3douZPs0a8OGTVYvLlE_HCQegZZX8571R_Go3Ybwleyodm0qdoJk5mddTS9QJJniN0iG5P3uXEttRiJk7f_0cjZUsAxFY3C9abI0xybugSPk6rJ-yD-OPqkSb5sX3KVoJXEK3EOmD1v6NZgmsiqF9k2vgQ",
+  "https://flow.google.com/asb/ANqvLOY4xA6N51K9c2aadRA4hPvQAOcGFoZs0GFgvIv_yde2p_qcZMvdDcBYgRiy65YpqWrPbPyazMUNfrOssFCEm8hricm6ltwnP4hBDT5ESRgp8O4fjn0WSOF1s2FK1Q6BSNs9R-l5Zqc59Ctr4eBbBN5qE6YS7QGH0PoC0Me1",
+  "https://flow.google.com/asb/ANqvLOYAFtfJ6fgjToxlEWJXmbASEJnpugTNLtiQJ4K7I9J6wFNS3T_jy4yKjOTpXL6WtNuy3KG_q_YrEk4QZd3p4Ks5O3uTG2E47a-UsftfIxNBZqymmsLd_z3zLGdRrTKN-W86mM7oydJCezCaAMZzDMX4Zuiw73U9CZRm0pYRIQ",
+  "https://flow.google.com/asb/ANqvLOZf4191e73_EfEsp3jqq88f5SBxMYZY_zn9sQMCuMYYtdUPfMQeo8xmWheInDMQywJsH1-_11olkr6FYMPcis-ZBnjjiXgLH0cmRwYrlBrePO_vlVCCmtbQOQejxbYvXjYv_WRVaPBPUVee-cKGnjg11iWn9ritfz9nxOhWxQ",
+  "https://flow.google.com/asb/ANqvLObg9hfJa8FpPM_FPUtyBsH6P8IvBU0dzcWT4pgISp6ErPYMvd99LnGfk7azgbUSLoDCvOrWtswVh4NET7XWBGMDccAAJPSeEUP-6_sjfsV-_6ERxapjjCme052wxZKVghVKAEUorfweoI6oF0IkSMJOqqt8uAAxzvb0mIFG",
+  "https://flow.google.com/asb/ANqvLOZKLlR_dhFrH3gThv5qSIoVde1e6HfOwO6pL2QjxbOkSLIFSwOD_q99vDUbqPaLgzuU5tbnXK0TFQQRveuNxOfyV_IIphW8l19MWkZFWDuYVNtEImTyzeeBYATfpaCBeSrasXc9-BaTyudXc-XqcdaAPedbvDkTdQS9dYwB1Q",
+  "https://flow.google.com/asb/ANqvLOY_WpsqRZWGwlu2QVl_ujUjkfjtuhnNVU899PrE8qSgM6xRJ4V01WVlzOTaUdD9wZwvRnYyZtF2deDeHcX8MmB2B0Jebv5ghLSHGqCG6syqYYaZcNJU8nIOfFfvncqiP0_vx55_oa0Kg1bUx5fawnAQa1StYjM_3pSG-jrA",
+  "https://flow.google.com/asb/ANqvLObB9S10Q_zwe-VE_pedw6KJjF1yLNUWM4GvI6Yqoly07u_R9tcKkVUN8jvSdJnvu6hrV0pPAMYMU5js20xMjMe4lza6CzpeW5mddayYBP0R1eY9Pv9xyATpYF2IA7jZPvA96fxDZTVMNAcNqPsbQX32fy5IOVqlelGEb-Yi9Q"
  ]
 }

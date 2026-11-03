@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-05.png",
+ "made": "2026-11-03T16:42:13+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "nano-banana",
+ "tool": "flow",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/p5-a.jpg",
+ "why": "GPOM second half A, stand-down option 05 (Kai note 2 Nov: V4 reads as the kill bot reversing; bots must stop well short of the door after racing toward it, then stand down under the HUD): over the hull, tracks dug in at the end of short skid marks, turf piled ahead, door far. Candidate p5-a.",
+ "source_id": "0a5089de-1fd6-4b7b-a0a2-ebb9227b59a3",
+ "prompt": "Using the first image for the robot's own point of view (its armoured grey hull and two rubber tracks at the bottom of frame, seen from just behind its sensor) and for the bunker entrance with its green blast doors, the second image for the long grassy chalk down, the overcast light and how far off the bunker is, and the third image for the tracked robot's design: a higher view from the top of the robot's sensor mast, looking forward and down over the whole front of its hull and both tracks to the slope ahead. The robot has stopped dead on the open hillside: its tracks are buried a hand deep at the end of two short skid marks in the chalk, the turf piled up in front of them. The long grassy slope climbs away for a long distance to the bunker entrance, small and grey with its shut green doors, just right of centre near the skyline. A curtain of chalk dust from the hard stop drifts forward over the hull and on up the slope. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+  "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+  "ref3": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

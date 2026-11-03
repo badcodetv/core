@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/LD1-e-a.jpg",
+ "made": "2026-11-02T16:26:30.088Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Very high aerial over the English countryside at night: the patchwork of fields between dark hedgerows, and every field filled solid with red-robed robots in a grid like a parade ground, the parade ground grown into the whole country, to the horizon, one searchlight beam crossing. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/RK1-c-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/RK1-c-a.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/WL4-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a77d91c2-ff3b-4a89-8511-370270b87f0e"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SW1-d-a.jpg",
+ "made": "2026-11-02T16:21:41.736Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A red-hooded robot in the near foreground at frame left, rain on its robe and metal face, red eyes lit; behind it a crashed drone burns on a motorway hard shoulder and the column of robed robots passes in the dark. The fire is the only light. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/WL3-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/WL3-a.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/e07.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e3791559-ae65-4db2-aab1-7f4d8b2a4036"
+}

@@ -551,6 +551,26 @@ D1_SPOKEN = {'[scoffs]'}
 # gpom-3-B-door-r3 plays stay as they are; the old lady's "Derek." reuses its d1 take.
 D2_SCENES = {'B': 'second-half-b-the-door'}
 D2_REUSE = {'Derek.': 'd1/17-18-lady-b.wav'}
+# Round D3 (2 Nov): draft 1G, Maddie's storyverse intro (scene A only), from the storyverse dialogue page
+# (design/2026-11-02-gpom-dialogue-maddie-storyverse/). New files go to voice3/d3/ so gpom-2-A-killbots-r2 keeps its d1
+# takes; "Oh, hello!" keeps the take that has been in the cut since round A1.
+D3_SCENES = {'A': 'second-half-a-killbots'}
+D3_REUSE = {'Oh, hello!': 'a1/00-0-bot-c.wav'}
+# Round D4 (2 Nov): Kai's timeline r5 notes on 1G (lines 2, 4, 6 reworded). Every phrase whose words are unchanged keeps
+# its D3 pick; only the changed phrases are voiced, into voice3/d4/.
+D4_SCENES = D3_SCENES
+# Round D5 (2 Nov): draft 1H (Kai's timeline r7 notes): same reuse rule, from every earlier storyverse round.
+D5_SCENES = D3_SCENES
+
+
+def d4_reuse(rounds=('d3',)):
+    out = dict(D3_REUSE)
+    for r in rounds:
+        doc = json.loads((V.S.SCENES / 'second-half-a-killbots' / f'voices-{r}.json').read_text())
+        for row in doc['lines']:
+            for ph in row['phrases']:
+                out.setdefault(ph['text'], ph.get('reused') or next(t['file'] for t in ph['takes'] if t['take'] == ph['pick']))
+    return out
 D1_REUSE = {'Oh, hello!': 'a1/00-0-bot-c.wav', 'Ever since you lot...': 'maddie/00-1-1-a.wav', 'went.': 'maddie/00-1-2-a.wav'}
 D1_CROWD = [  # (voice, who they are, accent)
     ('Orus', 'a man in his forties, a former bus driver', 'West Country, as heard in Swindon'),
@@ -594,7 +614,7 @@ def d1_jobs(rnd='d1'):
             'man': cast['man']['prompt']}
     voice = {'bot': 'Aoede', 'lady': cast['lady']['voice'], 'woman': cast['woman']['voice'], 'man': cast['man']['voice']}
     out, meta = [], {}
-    for sc, folder in (D1_SCENES if rnd == 'd1' else D2_SCENES).items():
+    for sc, folder in {'d1': D1_SCENES, 'd2': D2_SCENES, 'd3': D3_SCENES, 'd4': D4_SCENES, 'd5': D5_SCENES}[rnd].items():
         script = json.loads((V.S.SCENES / folder / 'script.json').read_text())
         beat, rows = script['beat'], []
         for i, ln in enumerate(script['lines']):
@@ -617,7 +637,7 @@ def d1_jobs(rnd='d1'):
                    'phrases': [], 'gaps': [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(gaps)]}
             for p, (ph, emo) in enumerate(zip(phrases, emos)):
                 stem = f'{V.bkey(beat)}-{i}-{who}' + (f'-p{p}' if len(phrases) > 1 else '')
-                reuse = (D1_REUSE if sc == 'A' else {}) if rnd == 'd1' else D2_REUSE
+                reuse = d4_reuse() if rnd == 'd4' else d4_reuse(('d4', 'd3')) if rnd == 'd5' else {'d1': D1_REUSE if sc == 'A' else {}, 'd2': D2_REUSE, 'd3': D3_REUSE}[rnd]
                 if ph in reuse:
                     row['phrases'].append({'p': p, 'text': ph, 'direction': emo, 'reused': reuse[ph]})
                     continue
@@ -761,9 +781,9 @@ def main():
 if __name__ == '__main__':
     if '--round' in sys.argv:
         rnd = sys.argv[sys.argv.index('--round') + 1].upper()
-        assert rnd in ('A1', 'A3', 'B2', 'D1', 'D2'), 'only --round A1 / A3 / B2 / D1 / D2 exist'
+        assert rnd in ('A1', 'A3', 'B2', 'D1', 'D2', 'D3', 'D4', 'D5'), 'only --round A1 / A3 / B2 / D1 / D2 / D3 / D4 / D5 exist'
         load_key()
-        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1, 'D2': lambda: main_d1('d2')}[rnd]()
+        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1, 'D2': lambda: main_d1('d2'), 'D3': lambda: main_d1('d3'), 'D4': lambda: main_d1('d4'), 'D5': lambda: main_d1('d5')}[rnd]()
     elif '--lines' in sys.argv:
         load_key()
         main_lines()

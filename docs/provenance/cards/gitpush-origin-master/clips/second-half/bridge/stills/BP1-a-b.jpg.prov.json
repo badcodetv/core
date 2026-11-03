@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP1-a-b.jpg",
+ "made": "2026-11-02T16:17:30.852Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the light and where they look. The wall lamp beside the loudspeaker horn is switched off. The only light now comes from an old television screen just below the camera, a cold bluish-white glow that lights the faces from the front and below. Every person is looking straight ahead and slightly down at that screen, not up, still and silent, a few mouths slightly open. The vaulted tunnel behind them falls away into darkness. Keep the same people, clothes, whitewashed brick vault, loudspeaker horn and composition, preserving the original 1980s British television drama 16mm look: faded colour, soft contrast, heavy grain. Full-frame image, no captions or on-screen text.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/crowd-N3a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/crowd-N3a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c70742d1-5c89-4973-8af2-faa640ab7c25"
+}

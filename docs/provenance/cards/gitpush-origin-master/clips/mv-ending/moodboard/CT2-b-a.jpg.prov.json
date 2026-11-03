@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-b-a.jpg",
+ "made": "2026-11-02T19:55:05.449Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the reference only for its colours and its red ranks, a new picture from the stratosphere looking down over England, the faint curve of the Earth across the top of frame: the motorway network glows as thin red veins joining dark cities, each city a red knot where the veins meet, the countryside between them pitch black. A handful of white searchlight beams stand up from the land like needles. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/LD1-e-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/LD1-e-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "bb5a7fe5-4226-4973-9b33-499c2fe39fd1"
+}

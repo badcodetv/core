@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-a-b.jpg",
+ "made": "2026-11-02T19:54:12.403Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "From thirty-five thousand feet, the whole of London spread out below: the Thames a black curving ribbon through the middle, and every street of the city traced in glowing red instead of orange streetlight, the roads packed with red robes too small to see one by one. Not one window lit. Dark disc ships hang at intervals beneath the camera, white beams dropping onto the city. Thin wisps of cloud drift past. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "fa3f231c-fb6b-4602-b724-0a41fef241b0"
+}

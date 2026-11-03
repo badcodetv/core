@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP1-b-a.jpg",
+ "made": "2026-11-02T16:18:49.817Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The same whitewashed vaulted Cold War bunker tunnel as the provided image, now at night with every enamel lamp off. Camera low behind a small cream-cased 1980s portable television set on the trestle table, its screen facing away from us so we see only its back and the cold glow spilling from its front. Beyond it, packed shoulder to shoulder down the tunnel, about forty tired men and women in worn jumpers and anoraks stand and watch the screen, their faces lit pale blue-white by it, the ones at the back sinking into darkness. Washing still hangs on the pipes overhead. One brighter region only: the glow of the screen on the nearest faces. 16:9 frame from a fictional near-future British film, styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain, slightly green shadows. No lettering anywhere.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/tunnel.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/tunnel.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f9bcab38-98b3-40aa-9af3-1bd66d52e025"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/LD1-a-a.jpg",
+ "made": "2026-11-02T16:23:12.988Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "From a motorway footbridge at night looking down a British motorway: all six lanes filled to the horizon with marching red-robed robots, their red eyes running away into the distance like tail lights, no vehicles anywhere, the gantries dark. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/MA1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/MA1-a-a.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/WL4-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9535e9fe-b761-469b-98a1-4d94f4142be4"
+}

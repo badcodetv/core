@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-03.png",
+ "made": "2026-11-02T16:28:15+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "nano-banana",
+ "tool": "flow",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p3-b.jpg",
+ "why": "GPOM second half A, wide approach option 03 (Kai note 2 Nov: bots too close to the door, needs a much wider shot of the approach): V9's low-in-the-grass framing pulled back, door smaller. Candidate p3-b.",
+ "source_id": "de6ed521-de81-4d9c-bb5b-35c0cc90a6c4",
+ "prompt": "Using the first image for the low camera in the long grass, the hillside, the bunker entrance and the film look, and the second image for the tracked military robots: the same place as the first image but seen from much further back down the hill. The camera sits low in long, wind-bent grass at the foot of a wide open down. A pack of four tracked military robots like the one in the second image races away from camera up the long empty slope, small in the middle of frame, long trails of dust streaming back towards us. At the very top of the down, far away and tiny against the grey sky, the concrete bunker entrance with its shut green blast doors. Most of the frame is open grassland and sky. The grass before the doors is clean, nothing burnt or wrecked. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S4r-a.jpg",
+  "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

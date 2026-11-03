@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-02.png",
+ "made": "2026-11-03T16:42:12+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "nano-banana",
+ "tool": "flow",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/p2-a.jpg",
+ "why": "GPOM second half A, stand-down option 02 (Kai note 2 Nov: V4 reads as the kill bot reversing; bots must stop well short of the door after racing toward it, then stand down under the HUD): over the hull as the whole pack pulls up across the slope, door a small notch far off. Candidate p2-a.",
+ "source_id": "20999be4-a85c-417c-a07e-1c4373f77e83",
+ "prompt": "Using the first image for the robot's own point of view (its armoured grey hull and two rubber tracks at the bottom of frame, seen from just behind its sensor) and for the bunker entrance with its green blast doors, the second image for the long grassy chalk down, the overcast light and how far off the bunker is, and the third image for the tracked robot's design: the view from behind the hull as the whole pack pulls up together. Either side of us, four more tracked robots like the one in the third image have stopped hard in a ragged line abreast across the hillside, noses dipped from braking, the dust they raised overtaking them and sliding on uphill. Far ahead and high up, the bunker entrance is a small grey notch with shut green doors on the skyline, a long way off. Nobody is moving. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+  "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+  "ref3": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

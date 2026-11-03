@@ -1,0 +1,15 @@
+{"title": "Stand-Down Picks", "eyebrow": "GPOM second half · scene A · picks", "heading": "The stand-down: stop short, don't reverse",
+ "intro": "Your note: the kill bot reverses at the stand-down. These six stills have the bots charging from far off and stopping well short of the door. The HUD (NEW OBJECTIVE: SUSTAIN ORGANIC LIFE) goes on top. Pick one and I animate it (slowing from speed to a dead stop, dust overtaking). Claude's pick: sd-01.",
+ "sections": [
+  {"h": "For reference", "lede": "The shot before (the wide approach, your pick wa-02) and what's in the cut now (the bot reverses under this HUD).", "groups": [
+    {"slot": "sd-ref", "title": "Before and now", "line": "No pick needed here.", "kind": "image",
+     "opts": [{"id": "wa02", "src": "sd/before-wa02.jpg", "label": "before: the wide approach"}, {"id": "now", "src": "sd/now-hud12.jpg", "label": "now: V4 under the HUD (reverses)"}]}]},
+  {"h": "The new stand-down", "lede": "Pick one. A note on the row is welcome.", "groups": [
+    {"slot": "sd-standdown", "title": "Stand-down plate (under the HUD)", "line": "Bots stop well short of the door, no backing up.", "kind": "image",
+     "opts": [
+      {"id": "sd-01", "src": "sd/sd-01.jpg", "label": "sd-01: braked dead over the hull (Claude's pick). Same view as now, furrows end under the tracks, door small under the reticle"},
+      {"id": "sd-02", "src": "sd/sd-02.jpg", "label": "sd-02: the pack pulls up ahead of us. Ties to wa-02's pack; still could read as moving"},
+      {"id": "sd-03", "src": "sd/sd-03.jpg", "label": "sd-03: along the gun barrel, door far and sharp", "warn": "barrel reads as aiming, not standing down"},
+      {"id": "sd-04", "src": "sd/sd-04.jpg", "label": "sd-04: wa-02's own camera a moment later, pack halted in a line", "warn": "not the bot's view, so the HUD reads as surveillance"},
+      {"id": "sd-05", "src": "sd/sd-05.jpg", "label": "sd-05: tracks dug in, turf piled up. Strongest dead stop; door a bit off the reticle"},
+      {"id": "sd-06", "src": "sd/sd-06.jpg", "label": "sd-06: low on one track, chalk gouge, door tiny", "warn": "better as an insert than under the HUD"}]}]}]}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP2-c-b.jpg",
+ "made": "2026-11-02T16:21:32.529Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Extreme close-up of the man from the provided image, same face, stubble and tired eyes: his eye pressed to the black rubber eyepiece of an old military periscope, seen in profile. A thin ring of cold grey daylight from the eyepiece lights his eyelashes and the top of his cheek; everything else is near-dark whitewashed bunker brick. His brow slowly unknits. 16:9 frame, styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. No lettering.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/derek.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/derek.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4be4e68c-5f3d-43ea-97a6-72c10a8c93cc"
+}

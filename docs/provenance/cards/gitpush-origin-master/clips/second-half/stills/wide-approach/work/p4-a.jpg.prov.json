@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p4-a.jpg",
+ "made": "2026-11-02T16:25:30.052Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the robot's own point of view, its angular armoured nose and the tops of its tracks in the bottom of frame, and the second image for the hillside and the bunker entrance: in natural colour, not red, the camera fixed low on the front of a tracked military robot racing at full speed across a wide open down. The bunker from the second image is far away, a small grey concrete notch with green doors near the top of the hill on the horizon, with a long empty slope of grass between it and us. Two more of the robots race alongside, small to the left and right, dragging dust. Grass and chalk streak past the lens with motion blur at the frame edges. Overcast grey daylight. A clean picture with no interface, no overlay, no tint. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": null,
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-pov-S5-a.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-pov-S5-a.jpg",
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7f3ec0ed-d124-4f20-939e-17416d319af3"
+}

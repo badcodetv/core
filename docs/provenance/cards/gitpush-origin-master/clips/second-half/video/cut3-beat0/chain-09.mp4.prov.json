@@ -1,0 +1,26 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+ "made": "2026-11-02T20:25:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/gpom/second-half-video/run-cut3.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-08.mp4",
+ "why": "Beat 0 continuous shot extension (Kai 2026-11-02: play at real speed under the longer speech). Chain clip 9, started from chain-08's true last frame (frame 191). Kept.",
+ "prompt": "The camera keeps tracking steadily backwards up the high street at the same speed. The small grey delivery robot keeps rolling towards the camera at the same pace, staying the same size in frame, the ruined shops sliding past on both sides. Its amber beacon pulses in a lively rhythm, as if it is chatting away. Its torn bunting sways across its front wheels. It never stops.",
+ "inputs": {
+  "start_frame": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-08-lastq.jpg"
+ },
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "count": "1",
+  "character": "West Country Bot",
+  "project": "be451638",
+  "job_key": "B0xx-9",
+  "credits": "12"
+ }
+}

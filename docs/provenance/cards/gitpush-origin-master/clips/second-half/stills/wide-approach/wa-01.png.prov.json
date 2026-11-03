@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-01.png",
+ "made": "2026-11-02T16:28:15+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "nano-banana",
+ "tool": "flow",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p1-b.jpg",
+ "why": "GPOM second half A, wide approach option 01 (Kai note 2 Nov: bots too close to the door, needs a much wider shot of the approach): very high aerial over the valley, door small upper right. Candidate p1-b.",
+ "source_id": "44b7556b-49ae-4767-b0e0-b15f1e55a750",
+ "prompt": "Using the first image for the hillside, the concrete bunker entrance with its green blast doors and the film look, and the second image for the tracked military robots: a very high aerial shot looking down across a broad Wiltshire valley of rough pale grass. The bunker entrance from the first image is small, set into the green chalk down in the upper right of frame, its green doors shut. Far below it, in the lower left, a pack of five tiny tracked military robots like the one in the second image tears across the open valley floor in a loose line, each dragging a long white trail of chalk dust behind it. Between the pack and the door lies a huge empty stretch of grass and a rising slope: they still have a long way to go. Overcast grey daylight, flat light, no sun. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S4r-a.jpg",
+  "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

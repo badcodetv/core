@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP2-a-b.jpg",
+ "made": "2026-11-02T16:20:51.359Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The man in the dark green ribbed jumper from the first image, same face, same dark tousled hair and stubble, now standing in the whitewashed vaulted bunker of the second image. A heavy grey-green Cold War periscope tube comes down through the curved ceiling on a counterweighted mount; he grips its two side handles and presses his eye to the rubber eyepiece, his whole body still, the other eye squeezed shut. A small disc of grey daylight from the eyepiece falls on his cheekbone, the only daylight in the bunker. Behind him in the dim tunnel, a woman in a cream cable-knit jumper and a few others wait and watch him, out of focus. Side-on medium shot, observed, not posed. 16:9 frame from a fictional near-future British film, styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. No lettering anywhere.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/derek.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/derek.jpg",
+   "/home/kai/.cache/badcode-refs/bridge/tunnel.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3e7a89f4-fa5c-4a72-9203-f613b8fb43f1"
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-1c-v2-dub.wav",
+ "made": "2026-11-02T16:28:00+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/06-07-1-man-c.wav",
+ "why": "Kai 2026-11-02: redo the Sandra/Derek lip sync by mouth mapping. One tempo per line drifted; now split into phrases, each laid 0-0.1 s after its mouth opening on the 12 fps tracked strip, b/p/m closures matched",
+ "inputs": {
+  "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-1c-v2-phrases.json"
+ },
+ "settings": {
+  "lufs": "-20.5"
+ }
+}

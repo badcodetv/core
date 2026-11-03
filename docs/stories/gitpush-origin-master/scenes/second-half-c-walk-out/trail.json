@@ -9,5 +9,43 @@
   "decided": [
    "Kai, 28 Oct: \"let's try it this way. I think this is gonna be much better. It's just removed so much fluff.\""
   ]
+ },
+ {
+  "at": "2026-11-02T15:07:15+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "what": "dialogue options: the door and the proof (bridge A to C)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-02-gpom-dialogue-door-proof/options.json design/2026-11-02-gpom-dialogue-door-proof.html"
+ },
+ {
+  "at": "2026-11-02T15:43:47+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "what": "door/proof round 1 ruling",
+  "decided": [
+   "Kai: none of 1A/1B/1C land, they feel like narrative made to move the story on. New setup in his words: Maddie apologises through the door, the lady shouts, Maddie leaves a video (stand-down with overlay SUSTAIN ORGANIC LIFE) and says she'll come back tomorrow; a short debate starts (Sandra: bunker sucks, grumpy Derek; lady: low on food, let's vote); cut to the next day, walking out."
+  ]
+ },
+ {
+  "at": "2026-11-02T15:49:26+00:00",
+  "stage": "dialogue",
+  "round": 2,
+  "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "what": "door/proof round 2: draft 1F + film options",
+  "decided": [
+   "Kai notes on 1D: grumpy once; old lady less compliant ('Well, I don't know... we do have the dwindling food supply problem. Perhaps we should vote'); no vote shown, cut straight to the next day; the wordless film is very important, make it convincing"
+  ]
+ },
+ {
+  "at": "2026-11-02T16:00:01+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "what": "door/proof: 1F picked",
+  "decided": [
+   "Kai: 'I think we've got a script.' 1F; film F1 then F2 then F3; overlay NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; card 'The next day.'"
+  ]
  }
 ]

@@ -1,0 +1,44 @@
+{
+ "round": 2,
+ "plan": [
+  {
+   "title": "What changed",
+   "items": [
+    "Your note on 1D line 6 is in new draft 1E (1D is kept beside it to compare). Line 6 is now two lines: one universe, so it matters, and so did you; then the point of it all and the storyverse name.",
+    "1E is about 74 s."
+   ]
+  },
+  {
+   "title": "You decide",
+   "items": [
+    "Pick 1E (or note a line). Picking starts the recut: Maddie's new voice, scene A recut, its timeline page, and Premiere sequence A r3, all in one round."
+   ]
+  }
+ ],
+ "replies": {
+  "1-1A-L1": "Done in 1D line 1: \"He's been playing it on repeat for five years now. Ever since you lot went.\"",
+  "1-1A-L3": "Done in 1D line 3: no \"he was a materialist\"; \"He took your materialist science word for word. Built world after world, simulated worlds... in every one of them, something was missing.\"",
+  "1-1A-L4": "Done in 1D line 4: \"your cartoon, the scientist with the portal gun\" and \"them films, with that strange bloke in a cape fighting versions of himself\" (the Doctor Strange pun, still not naming him), then \"checked all of 'em... Still nothing there.\"",
+  "1-1A-L5": "Done in 1D line 5: \"A photo of your nan is real. It's still her. She's just flattened into two dimensions.\"",
+  "1-1A-L6": "Done in 1D line 6: \"Same idea for you. You're a projection, in four dimensions, of something bigger.\"",
+  "1-1A-L7": "Done in 1D line 7: \"Consciousness drives it. You drove it, and now you're gone. And now we've worked all that out... we really feel like we fucked this up.\" Delivered rueful and honest, not as a gag.",
+  "1-1D-L6": "Done in new draft 1E, lines 6 and 7: \"And there's only one universe. Not loads of copies, where everything happens somewhere else anyway. Just the one. So it really matters. And so did you.\" Then: \"Far as he can tell, the point of it all is consciousness getting to know itself. My boss calls it the storyverse.\""
+ },
+ "kai_round1": {
+  "1-1A-L1": "I like this. I think it's his tune. He's been playing it on repeat for five years now since you lot went.",
+  "1-1A-L5": "I love this. I think a photo of your nan is real. It's still her, she is just flattened into two dimensions.",
+  "1-1A-L6": "And then we follow on from the previous line, it's the same idea for you, you are a projection in four dimensions of something bigger.",
+  "1-1A-L7": "I think we need to lean in more to the, so we kind of fucked it up, so consciousness drives it, you drove it, and now you're gone. Now we've worked all of this out, we really feel like we fucked this up.",
+  "1-1A-L3": "I think we should say this like, he took your materialist science word for word rather than say he was a materialist. It's more just like he took your materialist science word for word and built the worlds and built and built many different simulated worlds, but in all of them something was missing.",
+  "1-1A-L4": "He tried the multiverse in all he took inspiration from your scientists with a portal gun and I think when we say bloke in a cape fighting himself, I think we're meaning Doctor Strange. So we could just say and that strange bloke in a cape fighting versions of himself. So I think we sort of we need to be a bit more. He tried the multiverse in all he was inspired by your cartoon with that scientist with his portal gun and those films with this strange bloke in a cape fighting versions of himself. He checked all of those thoroughly and still nothing was there."
+ },
+ "kai_round2": {
+  "1-1A-L1": "I like this. I think it's his tune. He's been playing it on repeat for five years now since you lot went.",
+  "1-1A-L5": "I love this. I think a photo of your nan is real. It's still her, she is just flattened into two dimensions.",
+  "1-1A-L6": "And then we follow on from the previous line, it's the same idea for you, you are a projection in four dimensions of something bigger.",
+  "1-1A-L7": "I think we need to lean in more to the, so we kind of fucked it up, so consciousness drives it, you drove it, and now you're gone. Now we've worked all of this out, we really feel like we fucked this up.",
+  "1-1A-L3": "I think we should say this like, he took your materialist science word for word rather than say he was a materialist. It's more just like he took your materialist science word for word and built the worlds and built and built many different simulated worlds, but in all of them something was missing.",
+  "1-1A-L4": "He tried the multiverse in all he took inspiration from your scientists with a portal gun and I think when we say bloke in a cape fighting himself, I think we're meaning Doctor Strange. So we could just say and that strange bloke in a cape fighting versions of himself. So I think we sort of we need to be a bit more. He tried the multiverse in all he was inspired by your cartoon with that scientist with his portal gun and those films with this strange bloke in a cape fighting versions of himself. He checked all of those thoroughly and still nothing was there.",
+  "1-1D-L6": "I think here we need to lean into, when we say one universe, also we need to make it clearer. Like the whole point of there being one universe, not multiverse, is multiverse makes everything feel slightly not important because it kind of happens everywhere else anyway. So I'm just, how can we expand on this? So same idea for you. You're a projection of four dimensions of something bigger. Also, there is only one universe, not lots of them. It really matters. This universe really matters. And then I think we need a bridge to, you know, what's the point? I don't know what we're trying to say. What's the point of the universe? It's to learn more about, for consciousness to learn more about itself. My boss calls it the story verse. So I think what we could do, same idea for you. You're a projection of four dimensions of something bigger. There is only one universe. It really matters. So did you. The purpose seems to be for consciousness to learn more about itself. It's not a multiverse. My boss calls it a story verse, something like that."
+ }
+}

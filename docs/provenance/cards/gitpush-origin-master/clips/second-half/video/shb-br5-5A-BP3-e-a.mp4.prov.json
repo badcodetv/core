@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br5-5A-BP3-e-a.mp4",
+ "made": "2026-11-03T16:47:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Through the round periscope view: a thread of smoke rises from the burnt-out wreck and the crow settles its wings on it. [00:02-00:03] the little grey delivery robot's amber beacon pulses. [00:04-00:07] the delivery robot turns and trundles slowly out of the left of the circle, its torn bunting trailing. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP3-e-a.jpg",
+ "why": "Kai 3 Nov: 'go with all of your recommended options' (5A: Smoke, crow, Maddie leaves)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP3-e-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br5-5A",
+  "frame": 5,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T16:34:33.314Z"
+ }
+}

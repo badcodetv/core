@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-h-b.jpg",
+ "made": "2026-11-02T20:00:11.204Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the reference only for its ships and colours, a new picture from on top of a layer of hovering ships, much higher up: the rain-wet upper hulls with white running lights fill the near frame, and through the gaps a whole region of England far below, its towns dark patches, the fields between them a fine red grid of ranks, a beam falling from every ship. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/SK1-b-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/SK1-b-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e2b50e2d-2af2-49d3-abc2-7da88f959ac0"
+}

@@ -1,0 +1,76 @@
+{
+ "acts": [
+  {
+   "id": "film",
+   "title": "The film",
+   "beats": "1G: the film"
+  },
+  {
+   "id": "proof",
+   "title": "The boom and the periscope",
+   "beats": "1G: the boom, the periscope"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "film",
+   "title": "The film: the kill bot's run at their door",
+   "look": "kill-bot POV, overcast",
+   "line": "",
+   "stills": [
+    "wa-05"
+   ],
+   "anim": 1,
+   "beat": "film"
+  },
+  {
+   "n": 2,
+   "act": "film",
+   "title": "The room watches",
+   "look": "1980s BBC 16mm, TV light",
+   "line": "(after) Maddie: \"I'll leave you a film to watch. It's our best go at proving it.\"",
+   "stills": [
+    "BP1-e-b"
+   ],
+   "anim": 2,
+   "beat": "film"
+  },
+  {
+   "n": 3,
+   "act": "proof",
+   "title": "The boom",
+   "look": "16mm",
+   "line": "Maddie: \"Oh, and... thought you'd want to hear this bit for yourselves.\"",
+   "stills": [
+    "BP1-e-b"
+   ],
+   "anim": 3,
+   "beat": "proof"
+  },
+  {
+   "n": 4,
+   "act": "proof",
+   "title": "Derek at the periscope",
+   "look": "16mm",
+   "line": "",
+   "stills": [
+    "BP2-a-a"
+   ],
+   "anim": 4,
+   "beat": "proof"
+  },
+  {
+   "n": 5,
+   "act": "proof",
+   "title": "What he sees",
+   "look": "periscope, overcast",
+   "line": "Maddie: \"Right. I'll come back tomorrow.\"",
+   "stills": [
+    "BP3-e-a"
+   ],
+   "anim": 5,
+   "beat": "proof"
+  }
+ ]
+}

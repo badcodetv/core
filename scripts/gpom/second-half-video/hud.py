@@ -45,7 +45,7 @@ STATES = {
     'kill':   dict(col='0xFF3B2F', grade='hue=s=0,colorchannelmixer=rr=1.18:gg=0.36:bb=0.32,eq=contrast=1.12:brightness=0.02',
                    mode='KILL MODE', status='WEAPONS FREE', banner='KILL MODE ENGAGED'),
     'peace':  dict(col='0x46FF7E', grade='hue=s=0,colorchannelmixer=rr=0.42:gg=1.04:bb=0.55,eq=contrast=1.04',
-                   mode='STAND DOWN', status='RETURN TO PATROL', banner='STAND DOWN'),  # Kai 21 Oct: not PEACE MODE
+                   mode='STAND DOWN', status='NEW OBJECTIVE', banner='SUSTAIN ORGANIC LIFE', lock='NEW OBJECTIVE:'),  # Kai 21 Oct: not PEACE MODE; 2 Nov: NEW OBJECTIVE: SUSTAIN ORGANIC LIFE (matches the door's film)
 }
 
 # LAYOUT (1280x720)
@@ -174,8 +174,8 @@ def hud(state, a, txt, lock_on):
         f.append(box(x, y, w, h, 'black@0.98'))
         f.append(box(x, y, w, h, f'{c}@0.6', t=2))
     T = lock_on if (lock_on is not None and state != 'peace') else None
-    idle = 'NO TARGET' if state == 'peace' else 'SIGNAL SEARCH ...'
-    f.append(txt(idle, '(w-text_w)/2', LOCK_Y, 32, c, alpha=0.55, enable=f'lt(t,{T})' if T is not None else None))
+    idle = s.get('lock', 'NO TARGET') if state == 'peace' else 'SIGNAL SEARCH ...'
+    f.append(txt(idle, '(w-text_w)/2', LOCK_Y, 32, c, alpha=1.0 if state == 'peace' else 0.55, enable=f'lt(t,{T})' if T is not None else None))
     if T is not None:
         # the lock: brackets snap in (three sizes), label blinks for a second then holds
         for sz, t0, t1 in ((180, T, T + 0.12), (130, T + 0.12, T + 0.24), (96, T + 0.24, 1e9)):
@@ -185,7 +185,7 @@ def hud(state, a, txt, lock_on):
         f.append(txt(label, '(w-text_w)/2', LOCK_Y, 32, c, bold=True, enable=en))
         f.append(txt('BEARING 214   RANGE %{eif:max(40,1300-(t-' + str(T) + ')*60):d} M   HUMAN x2',
                      '(w-text_w)/2', LOCK_Y + 58, 22, c, alpha=0.9, enable=f'gte(t,{T})', box='black@0.7'))
-    f.append(txt(s['banner'], '(w-text_w)/2', BAN_Y, 44, c, bold=True, alpha=0.6 if state == 'patrol' else 1.0))
+    f.append(txt(s['banner'], '(w-text_w)/2', BAN_Y + (4 if len(s['banner']) > 17 else 0), 44 if len(s['banner']) <= 17 else 36, c, bold=True, alpha=0.6 if state == 'patrol' else 1.0))
     return f
 
 

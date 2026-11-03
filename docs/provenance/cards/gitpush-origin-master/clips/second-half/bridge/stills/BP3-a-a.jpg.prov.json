@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP3-a-a.jpg",
+ "made": "2026-11-02T16:23:00.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "View through an old military periscope from the bunker in the first image, looking out across the overcast chalk downland in front of it: a hard black circular edge frames a round window of grey daylight, with two thin black crosshair lines. Inside the circle, deep caterpillar-track scars gouged in the wet grass lead away from us over a gentle rise. Halfway up the field, one tracked machine like the one in the second image sits dead still in the long grass, its sensor turret dark and drooping, switched off, and a single crow has just landed on top of the turret, wings still half open. Flat overcast sky, muted greens and greys, fine grain, early-1980s scanned film. No lettering or numbers anywhere.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/exterior.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/exterior.jpg",
+   "/home/kai/.cache/badcode-refs/bridge/killbot.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "80160439-a14b-4913-a1b3-6c67c16817ba"
+}

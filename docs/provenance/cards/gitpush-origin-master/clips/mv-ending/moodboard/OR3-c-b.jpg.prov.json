@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-c-b.jpg",
+ "made": "2026-11-03T16:32:51.339Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "The whole Earth seen from deep space, its dark side glowing red over every landmass, and around it a thin flat ring made of thousands of tiny white ship lights, circling the planet like the ring of Saturn. Shot like a real space-mission photograph: fine grain, one hard sunlight source, deep black space. No text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ce44f223-896a-4ad4-9bac-9ab86ca64335"
+}

@@ -5,10 +5,17 @@ This / Maybe / No votes and a note per beat shared through the artifact db (coll
 
     python3 scripts/scene/build-moodboard.py <scene-dir> <out.html>
 
-Reads scene.json (title, heading, moodboard_intro, beats, existing, styles) and moodboard.json
+Reads scene.json (title, heading, moodboard_intro, beats, existing, styles, picked) and moodboard.json
 (rows [beat, id, look, prompt, style?]). Each still is <media>/moodboard/<id>.jpg; a row whose image
 is missing shows as "not generated" (blocked or failed), so the record stays honest. Images are
 shrunk to 760px and inlined, because the page may not fetch.
+
+`picked` (optional) is a list of [id, label] already chosen in earlier rounds: shown first as a
+"Picked so far" strip (no vote buttons; the votes stay on the stills in their beats).
+`board_round` (optional, a number): show only that round's stills as votable cards (the round is the
+number in the id, e.g. CT2-a is round 2); earlier rounds and `existing` cards leave the page (they stay
+in moodboard.json), and a beat with nothing new is left off. Use with `picked` (Kai, 2026-11-02:
+"show me only options that are genuinely new").
 """
 import html
 import pathlib
@@ -25,7 +32,12 @@ def main(scene_dir, out):
     cfg = sc.cfg
     beats = cfg['beats']
     cards = {b['key']: [] for b in beats}
-    for key, items in cfg.get('existing', {}).items():
+    only = cfg.get('board_round')
+    import re
+    def round_of(iid):
+        m = re.match(r'^[A-Za-z]+(\d+)-', iid)
+        return int(m.group(1)) if m else None
+    for key, items in ({} if only else cfg.get('existing', {})).items():
         for iid, look, rel in items:
             p = sc.media / rel
             if p.exists() and key in cards:
@@ -34,10 +46,16 @@ def main(scene_dir, out):
         key, iid, look, prompt = row[:4]
         if key not in cards:
             continue  # a beat cut from the scene stays in the record, off the board
+        if only and round_of(iid) != int(only):
+            continue  # an earlier round: its picks are in the strip, the rest leave the page
+        if only and not sc.still(iid):
+            continue  # nothing to pick from
         style = row[4] if len(row) > 4 else 'original'
         p = sc.still(iid)
         cards[key].append((iid, look, prompt, data_uri(p, 760) if p else None, False, style))
     sections = []
+    if only:
+        beats = [b for b in beats if cards[b['key']]]
     for b in beats:
         key = b['key']
         figs = []
@@ -60,13 +78,26 @@ def main(scene_dir, out):
   <textarea id="note-{key}" data-scene="{key}" rows="2" placeholder="e.g. B4's scale with B3's warmth"></textarea>
   <div class="saved" data-for="{key}"></div>
 </section>''')
+    picked = cfg.get('picked', [])
+    if picked:
+        figs = []
+        for iid, look in picked:
+            p = sc.still(iid)
+            if not p:
+                continue
+            figs.append(f'''<figure class="pickcard"><button class="frame" type="button" aria-label="Open {html.escape(look)} large"><img src="{data_uri(p, 760)}" alt="{html.escape(look)}" loading="lazy"></button>
+  <figcaption><span class="look">{html.escape(look)}</span><span class="iid">{iid}</span></figcaption></figure>''')
+        sections.insert(0, f'''<section class="scene picked" id="picked">
+  <header><span class="beat">so far</span><h2>Picked so far</h2><p>Your Thises from earlier rounds, in beat order. The new round builds on these.</p></header>
+  <div class="grid">{''.join(figs)}</div>
+</section>''')
     styles = cfg.get('styles', {})
     tpl = (HERE / 'moodboard-template.html').read_text()
     page = (tpl.replace('<!--TITLE-->', html.escape(cfg['title'] + ' mood board'))
             .replace('<!--HEADING-->', cfg.get('heading', html.escape(cfg['title'])))
             .replace('<!--INTRO-->', cfg.get('moodboard_intro', ''))
             .replace('<!--FILTERS-->', ''.join(f'<button type="button" data-f="{k}" aria-pressed="false">{html.escape(v)}</button>' for k, v in styles.items()))
-            .replace('<!--NAV-->', ''.join(f'<a href="#{b["key"]}">{html.escape(b.get("at", ""))} · {html.escape(b["name"])}</a>' for b in beats))
+            .replace('<!--NAV-->', ('<a href="#picked">Picked so far</a>' if picked else '') + ''.join(f'<a href="#{b["key"]}">{html.escape(b.get("at", ""))} · {html.escape(b["name"])}</a>' for b in beats))
             .replace('<!--SECTIONS-->', '\n'.join(sections)))
     pathlib.Path(out).write_text(page)
     n = sum(len(v) for v in cards.values())

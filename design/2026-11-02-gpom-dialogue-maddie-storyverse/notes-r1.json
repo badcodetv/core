@@ -1,0 +1,41 @@
+{
+ "round": 1,
+ "plan": [
+  {
+   "title": "What changed",
+   "items": [
+    "You picked 1A and noted six lines. New draft 1D is 1A with all six notes, in your words.",
+    "1D is about 62 s (1A was 48 s; the speech in the film now is about 40 s)."
+   ]
+  },
+  {
+   "title": "Watch for",
+   "items": [
+    "The multiverse line is the longest (~13 s). First trim if it drags: \"He checked all of 'em, very thoroughly.\"",
+    "\"Simulated worlds\" (his experiments) and \"simulation\" (your theory) are both in now. Say if line 3 should drop \"simulated\"."
+   ]
+  },
+  {
+   "title": "You decide",
+   "items": [
+    "Pick 1D as it is, or note a line. Picking starts the recut: new voice for Maddie, scene A recut, its timeline page, and Premiere sequence A r3, all in one round."
+   ]
+  }
+ ],
+ "replies": {
+  "1-1A-L1": "Done in 1D line 1: \"He's been playing it on repeat for five years now. Ever since you lot went.\"",
+  "1-1A-L3": "Done in 1D line 3: no \"he was a materialist\"; \"He took your materialist science word for word. Built world after world, simulated worlds... in every one of them, something was missing.\"",
+  "1-1A-L4": "Done in 1D line 4: \"your cartoon, the scientist with the portal gun\" and \"them films, with that strange bloke in a cape fighting versions of himself\" (the Doctor Strange pun, still not naming him), then \"checked all of 'em... Still nothing there.\"",
+  "1-1A-L5": "Done in 1D line 5: \"A photo of your nan is real. It's still her. She's just flattened into two dimensions.\"",
+  "1-1A-L6": "Done in 1D line 6: \"Same idea for you. You're a projection, in four dimensions, of something bigger.\"",
+  "1-1A-L7": "Done in 1D line 7: \"Consciousness drives it. You drove it, and now you're gone. And now we've worked all that out... we really feel like we fucked this up.\" Delivered rueful and honest, not as a gag."
+ },
+ "kai_round1": {
+  "1-1A-L1": "I like this. I think it's his tune. He's been playing it on repeat for five years now since you lot went.",
+  "1-1A-L5": "I love this. I think a photo of your nan is real. It's still her, she is just flattened into two dimensions.",
+  "1-1A-L6": "And then we follow on from the previous line, it's the same idea for you, you are a projection in four dimensions of something bigger.",
+  "1-1A-L7": "I think we need to lean in more to the, so we kind of fucked it up, so consciousness drives it, you drove it, and now you're gone. Now we've worked all of this out, we really feel like we fucked this up.",
+  "1-1A-L3": "I think we should say this like, he took your materialist science word for word rather than say he was a materialist. It's more just like he took your materialist science word for word and built the worlds and built and built many different simulated worlds, but in all of them something was missing.",
+  "1-1A-L4": "He tried the multiverse in all he took inspiration from your scientists with a portal gun and I think when we say bloke in a cape fighting himself, I think we're meaning Doctor Strange. So we could just say and that strange bloke in a cape fighting versions of himself. So I think we sort of we need to be a bit more. He tried the multiverse in all he was inspired by your cartoon with that scientist with his portal gun and those films with this strange bloke in a cape fighting versions of himself. He checked all of those thoroughly and still nothing was there."
+ }
+}

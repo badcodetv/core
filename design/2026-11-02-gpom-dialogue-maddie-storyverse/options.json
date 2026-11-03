@@ -1,0 +1,805 @@
+{
+ "page_title": "Maddie Storyverse Options",
+ "title": "GPOM: Maddie's intro, the storyverse turn",
+ "about": "This page lays out three combined drafts of Maddie's first speech, plus every writer's version ranked underneath. Nothing in the film, script or voice has changed yet.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone dry",
+   "title": "Bone-dry, fewest words that carry all seven beats",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Confession",
+   "title": "The confession, regret first, explanation after",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-02-confession.md"
+  },
+  {
+   "id": "03",
+   "name": "Roast",
+   "title": "The roast, the multiverse wink leads",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-03-roast.md"
+  },
+  {
+   "id": "04",
+   "name": "Lab log",
+   "title": "The lab log",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-04-lab-log.md"
+  },
+  {
+   "id": "05",
+   "name": "Gossip",
+   "title": "Gossip, Maddie telling tales on her boss",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-05-gossip.md"
+  },
+  {
+   "id": "06",
+   "name": "To camera",
+   "title": "Straight to camera, the simulation fixation",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-06-to-camera.md"
+  },
+  {
+   "id": "07",
+   "name": "One object",
+   "title": "One object carries it (the radio)",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-07-one-object.md"
+  },
+  {
+   "id": "08",
+   "name": "Photograph",
+   "title": "The photograph as spine",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-08-photograph.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft (Adams, Good Place, Pratchett)",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Kais words",
+   "title": "Kai's own words, barely touched",
+   "file": "design/2026-11-02-gpom-dialogue-maddie-storyverse/shape-10-kais-words.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "Maddie's intro: the storyverse turn",
+   "where": "Scene A, beat 0",
+   "scene": "second-half-a-killbots",
+   "target": "as short as possible, as long as needed (now ~40 s)",
+   "now_from": "scenes/second-half-a-killbots/script.json (draft 1D)",
+   "now": [
+    {
+     "who": "Maddie",
+     "line": "Oh, hello! [pause] Sorry about the racket."
+    },
+    {
+     "who": "Maddie",
+     "line": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went."
+    },
+    {
+     "who": "Maddie",
+     "line": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course."
+    },
+    {
+     "who": "Maddie",
+     "line": "Built all these world models and simulations to get you back, and nobody's home in any of them."
+    },
+    {
+     "who": "Maddie",
+     "line": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now..."
+    },
+    {
+     "who": "Maddie",
+     "line": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "Short and dry",
+     "length": "about 48 s",
+     "total": "~48 s",
+     "bet": "The fewest words that still land all seven beats; the photograph says real, the regret gets the room.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! [pause] Sorry about the racket. It's his tune. Five years now, since you lot went.",
+       "tags": [
+        "01",
+        "10"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "He was a materialist, see. Took your science word for word, built the worlds, and something was missing.",
+       "tags": [
+        "all"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry, weary] Tried the multiverse, an' all. Scientist with a portal gun. Bloke in a cape fighting himself. He checked it very thoroughly. Nothing.",
+       "tags": [
+        "01",
+        "03",
+        "09"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "You lot reckon it's a simulation. Not wrong, mind. But you're no fake in an alien's computer. You're real. A photo of your nan's real. It's her, flattened.",
+       "tags": [
+        "01",
+        "03",
+        "10"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "You're a projection: four dimensions of something bigger. One universe. My boss calls it the storyverse.",
+       "tags": [
+        "10",
+        "01"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] So we kind of fucked it up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Trims: drops 'nobody's home', 'quantum is stuff', 'plays it on repeat', 'wouldn't admit it'. Cheapest cut if still long: merge lines 3 and 4.",
+      "Protected lines kept verbatim; pause added before 'So we' so the pause does the crying.",
+      "Risk: clipped, the photograph has to carry 'real' alone; 'not wrong' could lose a physicist before the correction; the wink needs a weary read to register as a joke. Estimate is generous: bare reading may be ~42 s."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "Gossip and a parcel",
+     "length": "about 58 s",
+     "total": "~58 s",
+     "bet": "Gossip plus one handmade prop: a robot who tattles and shows you a parcel photo makes the physics funny and visible.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! [pause] Sorry about the racket. It's his tune. Plays it on repeat. [pause] Five years now, since you lot... [beat] went.",
+       "tags": [
+        "all",
+        "05"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding, lowering her voice] He misses you something rotten. [pause] [wry] Don't tell him I said.",
+       "tags": [
+        "Kai",
+        "05"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[gossipy] He's a materialist, my boss. Took your science word for word and built whole worlds out of it. [pause] Something was missing.",
+       "tags": [
+        "05",
+        "09"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[weary, dry] Tried the multiverse, 'course. Everyone does. Scientist with a portal gun, bloke in a cape punching his other selves. [shrug] Didn't take.",
+       "tags": [
+        "09",
+        "03",
+        "05"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[light, throwaway] You lot've got a thing about simulations. Not wrong, mind. [holds up a parcel photo] But see this? Parcel on a doorstep. Not fake. It's the parcel, flattened. That's you. Real.",
+       "tags": [
+        "09"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry] You only see four dimensions of something bigger. Like a flat bloke watching a ball go through: circle grows, circle shrinks, gone. One universe. He calls it the storyverse.",
+       "tags": [
+        "09",
+        "06",
+        "08"
+       ],
+       "s": "12"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] So we kind of fucked it up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Trims if long: cut the flat-bloke sentence (about 7 s), then it is a one-image speech.",
+      "Protected lines kept verbatim. 'Don't tell him I said' sits right after the protected line one, as in shape 05.",
+      "Risk: the parcel photo needs a prop shot; 'flattened' then 'flat bloke' is close to stacking flatness images; 'punching his other selves' may read as knowing parody; it is the longest draft."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "Kai's words",
+     "length": "about 54 s",
+     "total": "~54 s",
+     "bet": "Kai's own phrasing barely touched sounds like someone who means it, and the order is already right.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! [pause] Sorry about the racket. It's his tune. Plays it on repeat. [pause] It's been five years since you lot went.",
+       "tags": [
+        "10"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "He was a materialist, see. Took all your science word for word, built the worlds, and something was missing.",
+       "tags": [
+        "10",
+        "all"
+       ],
+       "s": "6.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry, weary] So he tried the multiverse. You know the sort. Mad scientist. Bloke in a cape fighting his other selves. [pause] Didn't work either. He checked very thoroughly.",
+       "tags": [
+        "10",
+        "03"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "You lot have this thing about simulations, and you're not wrong. [pause] But you're not some fake in an alien computer. You're the real deal. A projection: you only live in four dimensions, and there's loads more you can't see.",
+       "tags": [
+        "10"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "One universe. [pause] My boss calls it the storyverse.",
+       "tags": [
+        "10"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] So we kind of fucked it up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Closest to Kai's voice note; the order is his. Trim: remove 'He checked very thoroughly' (2 s).",
+      "Protected lines kept verbatim; 'One universe. [pause] My boss calls it the storyverse.' puts the name straight before the regret line.",
+      "Risk: 'a projection' is bare with no photograph, so a mate could say 'so it's the Matrix'; swap in the photo sentence from 1A if so. Clean twin for the swear if the director wants it: 'So we made a right mess of it.' (applies to every draft)."
+     ]
+    },
+    {
+     "id": "1D",
+     "name": "Short and dry, your notes",
+     "length": "about 62 s",
+     "total": "~62 s",
+     "bet": "1A with every one of Kai's six notes taken in his own words.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! [pause] Sorry about the racket. It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "He took your materialist science word for word. Built world after world, simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He checked all of 'em, very thoroughly. [beat] Still nothing there.",
+       "tags": [
+        "Kai",
+        "03"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "You lot reckon it's a simulation. Not wrong, mind. But you're no fake in an alien's computer. You're real. [pause] A photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "tags": [
+        "Kai",
+        "01"
+       ],
+       "s": "11"
+      },
+      {
+       "who": "Maddie",
+       "line": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] One universe. My boss calls it the storyverse.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Every line note from round 1 applied, in Kai's words where he gave them.",
+      "Longer than 1A (~48 s → ~62 s): the multiverse line grew most. If it drags when voiced, 'He checked all of 'em, very thoroughly' is the first trim.",
+      "'Simulated worlds' (line 3) and 'simulation' (line 5) now both appear: line 3 is the boss's experiments, line 5 is the audience's theory. If that blurs it, line 3 can say 'world after world' and drop 'simulated'.",
+      "The protected line changed on Kai's note: 'So we kind of fucked it up' became 'we really feel like we fucked this up'."
+     ]
+    },
+    {
+     "id": "1E",
+     "name": "1D, one universe that matters",
+     "length": "about 74 s",
+     "total": "~74 s",
+     "bet": "1D with Kai's line 6 note: one universe, so it matters, and so did you; the point is consciousness getting to know itself.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! [pause] Sorry about the racket. It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "He took your materialist science word for word. Built world after world, simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He checked all of 'em, very thoroughly. [beat] Still nothing there.",
+       "tags": [
+        "Kai",
+        "03"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "You lot reckon it's a simulation. Not wrong, mind. But you're no fake in an alien's computer. You're real. [pause] A photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "tags": [
+        "Kai",
+        "01"
+       ],
+       "s": "11"
+      },
+      {
+       "who": "Maddie",
+       "line": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. Not loads of copies, where everything happens somewhere else anyway. Just the one. [beat] So it really matters. [softer] And so did you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "12"
+      },
+      {
+       "who": "Maddie",
+       "line": "[thoughtful] Far as he can tell, the point of it all is consciousness getting to know itself. [pause] My boss calls it the storyverse.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Line 6 split in two on Kai's note: why one universe matters (a multiverse makes everything feel unimportant, because it all happens somewhere else anyway), then 'So did you', then the purpose and the storyverse name.",
+      "'Far as he can tell' keeps the purpose as the boss's best guess, not a fact (the Storyverse canon: the purpose is a reading, never a proof).",
+      "About 74 s now. Trims if it drags when voiced: 'He checked all of 'em, very thoroughly' (line 4), then 'Not loads of copies…' shortened to 'Not loads of them.'"
+     ]
+    },
+    {
+     "id": "1F",
+     "name": "1E, storyverse as the last word",
+     "length": "about 68 s",
+     "total": "~68 s",
+     "bet": "1E with Kai's three notes: the nan line tightened, the multiverse fluff gone, and the storyverse moved to the end as the mic drop.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! [pause] Sorry about the racket. It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "He took your materialist science word for word. Built world after world, simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He checked all of 'em, very thoroughly. [beat] Still nothing there.",
+       "tags": [
+        "Kai",
+        "03"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "You lot reckon it's a simulation. Not wrong, mind. But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "11"
+      },
+      {
+       "who": "Maddie",
+       "line": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [softer] And so did you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Order now: one universe, it matters, so did you → the regret → the point of it all → 'my boss calls it the storyverse' (the mic drop).",
+      "'Anyway! Patrol's out. Mind how you go.' still follows, because it links to the bus at the end. Ask: should it stay, or does the storyverse line end the speech?",
+      "About 68 s."
+     ]
+    },
+    {
+     "id": "1G",
+     "name": "1F, gentler on simulation",
+     "length": "about 69 s",
+     "total": "~69 s",
+     "bet": "1F with Kai's three notes: world models, 'something was missing' said twice as a refrain, and the simulation idea credited gently instead of pinned on 'you lot'.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! [pause] Sorry about the racket. It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "He took your materialist science word for word. Built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "There's something about the simulation theory that's not wrong, mind. But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "12"
+      },
+      {
+       "who": "Maddie",
+       "line": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [softer] And so did you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "'Something was missing' now closes both line 3 and line 4: a deliberate echo, on Kai's note.",
+      "Line 5 no longer says 'You lot reckon': many viewers have never heard of simulation theory and some dislike it.",
+      "'Patrol's out. Mind how you go.' kept after the storyverse line (no ruling yet; it is the bus link).",
+      "About 69 s."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "01",
+     "length": "~38 s",
+     "verdict": "Shortest and the only one near target, but 'projection' is never said and the photograph carries everything. Fails thin: a physicist stops at 'not wrong'. Best spine to borrow."
+    },
+    {
+     "rank": 2,
+     "shape": "09",
+     "length": "~53 s",
+     "verdict": "Best craft: delivery photo is a single prop that gives 'real' and a gag, flat bloke is the only second image. Fails: beat 5 is one 19 s block and risks a lecture."
+    },
+    {
+     "rank": 3,
+     "shape": "10",
+     "length": "~58 s",
+     "verdict": "Kai's order and phrasing, sounds spoken, resistance handled. Fails: one dense breath of cosmology; 'projection' bare."
+    },
+    {
+     "rank": 4,
+     "shape": "03",
+     "length": "~58 s",
+     "verdict": "The multiverse weariness and 'checked it very thoroughly' are the best deflation. Fails: 'door gun' is clumsy and the roast risks mocking fans we want."
+    },
+    {
+     "rank": 5,
+     "shape": "05",
+     "length": "~61 s",
+     "verdict": "'Don't tell him I said' plants the regret nicely. Fails: 'very proud of the name' makes the boss cuddly, 'the flat bit' reads badly, 61 s."
+    },
+    {
+     "rank": 6,
+     "shape": "02",
+     "length": "~61 s",
+     "verdict": "Regret-first is a real idea. Fails: 'he got it wrong' arrives before we know what, so it tells instead of landing, and it adds a second joke too many."
+    },
+    {
+     "rank": 7,
+     "shape": "06",
+     "length": "~73 s",
+     "verdict": "Direct address is right for 'you lot'. Fails: 73 s of talking down the lens with two images is a lecture."
+    },
+    {
+     "rank": 8,
+     "shape": "08",
+     "length": "~75 s",
+     "verdict": "Photo as spine is lovely. Fails: skip-found nan is an extra story, the longest draft, and flat/flattened/flat folk stacks flatness images."
+    },
+    {
+     "rank": 9,
+     "shape": "07",
+     "length": "~65 s",
+     "verdict": "The radio cut-out is a good beat. Fails: a radio implies a broadcaster, which sneaks the alien-computer idea back in; needs staging and a sound designer."
+    },
+    {
+     "rank": 10,
+     "shape": "04",
+     "length": "~65 s",
+     "verdict": "Clever structure. Fails: Experiment/Result goes mechanical by the third entry, reads as a sketch format, and the pattern break confuses."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "He misses you something rotten",
+     "Consciousness drives it... kind of fucked it up",
+     "Patrol's out. Mind how you go."
+    ],
+    "rows": {
+     "1A": [
+      "[fond, confiding] He misses you something rotten, you know.",
+      "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] So we kind of fucked it up.",
+      "Patrol's out. Mind how you go."
+     ],
+     "1B": [
+      "He misses you something rotten.",
+      "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] So we kind of fucked it up.",
+      "Patrol's out. Mind how you go."
+     ],
+     "1C": [
+      "[fond, confiding] He misses you something rotten, you know.",
+      "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] So we kind of fucked it up.",
+      "Patrol's out. Mind how you go."
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Length: the shortest honest draft is about 47 s and the fullest about 58 s, against 40 s now. Is the extra 7 to 18 s worth it for the multiverse and projection beats, or should one of them go?"
+  },
+  {
+   "id": "q2",
+   "text": "Prop: draft 1B has Maddie hold up a parcel photo. Do you want a prop in the shot, or should the photograph stay a spoken image only?"
+  },
+  {
+   "id": "q3",
+   "text": "Is 'projection' a word you want said aloud, or does 'real, like a photo of your nan' carry it without the word?"
+  },
+  {
+   "id": "q4",
+   "text": "The multiverse wink: portal gun and caped bloke fighting himself, with 'checked it very thoroughly'. Right level of knowing, or too close to naming them?"
+  },
+  {
+   "id": "q5",
+   "text": "Do you want the clean twin ('So we made a right mess of it') recorded as a spare take next to the swear?"
+  }
+ ]
+}

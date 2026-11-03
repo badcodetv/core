@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-05.png",
+ "made": "2026-11-02T16:28:16+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "nano-banana",
+ "tool": "flow",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p5-b.jpg",
+ "why": "GPOM second half A, wide approach option 05 (Kai note 2 Nov: bots too close to the door, needs a much wider shot of the approach): on board, over the turret, door far ahead. Candidate p5-b.",
+ "source_id": "cdfadb71-852d-48b3-982b-0bb658643c36",
+ "prompt": "Using the first image for the tracked military robot and its sensor turret, and the second image for the hillside, the bunker entrance and the film look: the view from high on the robot's own sensor turret, looking forward over its long armoured hull as it charges across open grassland. The hull and the back of the turret fill the bottom quarter of the frame, slightly out of focus. Far ahead, small and centred on the side of a green chalk down, the concrete bunker entrance with its shut green blast doors. A wide sweep of rough grass and a dusty track lie between. Dust boils up at the sides, the whole frame rattles with speed. Overcast grey daylight. A clean picture with no interface, no overlay, no tint. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg",
+  "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S4r-a.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

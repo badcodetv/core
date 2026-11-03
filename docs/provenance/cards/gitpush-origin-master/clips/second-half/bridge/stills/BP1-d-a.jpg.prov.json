@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP1-d-a.jpg",
+ "made": "2026-11-02T16:19:46.184Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Reverse angle of the provided scene: we are now behind the crowd in the same whitewashed brick vault, looking past the dark backs of their heads and shoulders, which fill the bottom of the frame in silhouette. Ahead of them, on a wall bracket under the loudspeaker horn, a boxy old cathode-ray monitor in a grey metal case is the only light in the tunnel; its screen glows a deep red. Nobody moves. The red light catches the curve of the vault and the edges of a few ears and cheeks. Keep the 1980s British television drama 16mm look of the reference: faded colour, soft contrast, heavy grain. The monitor screen shows only a soft red glow with no readable shapes, letters or numbers.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/crowd-N3a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/crowd-N3a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ffebc529-dfcc-442d-a004-211bfe2c4eb5"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SK1-c2-a.jpg",
+ "made": "2026-11-02T16:39:59.562Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Worm's-eye view from the wet pavement of a shuttered English shopping street after dark, looking straight up between the rooftops: the entire sky is blotted out by the flat undersides of enormous hovering craft packed edge to edge, each hull dotted with rows of small white lamps, no stars, no moon. Along the street below, red-hooded robots stand in rows, their red eyes lit. Photographic, 35mm grain, nothing written anywhere, no humans.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "915c4d08-28f9-4430-b140-c58044e29741"
+}

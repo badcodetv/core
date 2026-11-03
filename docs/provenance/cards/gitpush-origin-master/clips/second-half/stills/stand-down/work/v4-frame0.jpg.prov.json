@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+ "made": "2026-11-03T16:42:17+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V4.mp4",
+ "why": "Frame at 0.3 s of cut3-V4 (bot's-eye over-the-hull view), the POV/door reference for the stand-down stills",
+ "settings": {
+  "cmd": "ffmpeg -ss 0.3 -i cut3-V4.mp4 -frames:v 1 -q:v 2"
+ }
+}

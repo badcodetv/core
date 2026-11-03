@@ -1,0 +1,21 @@
+# Shape 09: Borrowed craft (Adams, Good Place, Pratchett)
+
+I took three moves from the research and pushed each as far as it goes, quoting none of them. From Adams: say the big thing is beyond words in plain words, then move on before anyone argues. From The Good Place: one handmade prop, used once, with a gag that lets the lecture end on a joke (here, Maddie's own proof-of-delivery photo, the one thing a delivery robot would carry). From Pratchett: the key line comes from a weary, exact speaker and goes flat, with no explaining after it. Cosmology gets three sentences at most, as gossip about the boss; the regret is one flat sentence and a pause. The photograph says "real" and a flat-folk aside says "why you can't see the rest", with no other flatness image.
+
+## Dialogue 1: Maddie's intro: the storyverse turn
+
+| Speaker | Line | Est. s |
+| --- | --- | --- |
+| Maddie | Oh, hello! [pause] Sorry about the racket. It's his tune. [beat] Five years he's had it on repeat. Five years since you lot... [beat] went. | 8 |
+| Maddie | [fond, confiding] He misses you something rotten, you know. [wry] Wouldn't say so. | 4 |
+| Maddie | [gossipy] He was a materialist, my boss. Took your science word for word and built whole worlds out of it. [pause] Something was missing. | 7 |
+| Maddie | [weary, dry] Tried the multiverse, 'course. Everyone does. Blokes with a gadget, blokes in capes punching themselves. [shrug] Didn't take. | 6 |
+| Maddie | [light, throwaway] You lot've got a thing about simulations. Not wrong, mind. [brisk, holds up a delivery photo] See this? Parcel on a doorstep. Not fake. It's the parcel, flattened. That's you. Real, and you only ever see four dimensions of something bigger. [wry] Like a flat bloke watching a ball go through: circle grows, circle shrinks, gone. One universe, that's all. Never mind the rest. He calls it the storyverse. | 19 |
+| Maddie | [flat, quiet] Consciousness drives it. You drove it, and now you're gone. [long pause] So we kind of fucked it up. | 6 |
+| Maddie | [bright again, brisk] Anyway! Patrol's out. Mind how you go. | 3 |
+| **Total** | | **53** |
+
+- **Why it works.** Every piece of cosmology is borrowed craft with the borrowing hidden. The multiverse is a weary aside that moves on (the Adams dodge), the delivery photo is the one domestic prop and doubles as the photograph image (the Good Place cursive trick), and the flat bloke is a ten-second gag that ends the lecture before it starts. Then the speech drops every joke and says the news in two flat sentences with a long pause (the Pratchett move). "Real" lands before "projection", "simulation" appears once and only to be corrected, and "storyverse" comes last as the boss's name, directly before the protected line. "We kind of fucked it up" keeps the hedge as the joke and the "we" owns it for the boss and the machines; the regret is reported through his missing us and her flat voice, never her pleading.
+- **Cuts from current.** "Nobody's home in any of them" (implies other universes exist and drags in theory). "Quantum physics is just... stuff" (a switch-off line for physicists and a vague one for everyone else). "We understand that now..." and the sad tag around it (replaced by the swear and the pause). "Built all these world models and simulations to get you back" (folded into "built whole worlds").
+- **Risk.** Beat 5 is still the longest block at about 19 s and carries a prop, a flat-folk gag and a four-dimension claim; a reader may feel lectured, and "a flat bloke" is the nearest thing to a Flatland quote. The photo needs a shot where Maddie can hold something up (prop cost for the picture). "Capes punching themselves" could read as naming Marvel if the joke is played too knowingly. "Dimensions" appears once, but "four dimensions of something bigger" is still physics-flavoured. Total length (about 53 s) is longer than the current 40 s, so it fails "as short as possible" unless the flat bloke goes.
+- **Protected lines.** "He misses you something rotten" survives verbatim (with "you know" after it). "Consciousness drives it. You drove it, and now you're gone. So we kind of fucked it up." survives verbatim, with a long pause inserted before "So". "Patrol's out. Mind how you go." survives verbatim.

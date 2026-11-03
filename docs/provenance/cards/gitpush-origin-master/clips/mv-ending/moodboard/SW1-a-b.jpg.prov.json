@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SW1-a-b.jpg",
+ "made": "2026-11-02T16:17:36.131Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Low at robot height on the edge of a wrecked English town at night after a battle: crashed grey drones smoking on wet tarmac in the foreground, and through the smoke a long column of red-hooded robots marching out of the town towards camera in rain. The only light is the red glow of the fires in the wreckage. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/e07.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/e07.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/MA1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2de04eb7-0155-4808-b48d-5c7eae387522"
+}

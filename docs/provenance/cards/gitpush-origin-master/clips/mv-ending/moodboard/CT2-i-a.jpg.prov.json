@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-i-a.jpg",
+ "made": "2026-11-02T20:00:44.686Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "From a high-altitude aircraft over the English Midlands: five cities spread across the dark land, three still glowing ordinary sodium orange, two already turned red, and red lines spreading out of the red ones along the roads toward the orange ones like an infection. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3c6071bd-81f4-4a7c-bed2-ae03f851f7d3"
+}

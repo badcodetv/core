@@ -1,9 +1,262 @@
 {
  "scene": "second-half-b-the-door",
  "beat": "17",
- "ruled": "2026-10-28 Kai: no doorstep talk. Beat 17 is a silent look, the door shuts, the hundred are heard behind it. Draft 2J kept in dropped.",
- "lines": [],
+ "ruled": "2026-11-02 Kai: the door returns as a short bridge. Maddie apologises through the shut door, takes the shout, leaves a film (F1 their door, F2 NEW OBJECTIVE: SUSTAIN ORGANIC LIFE, F3 Derek at the periscope) and goes; Sandra and the old lady start to debate; card 'The next day.'; into scene C. Draft 1F, https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB | 2026-11-02 Kai: we HEAR the kill bot blown up (draft 1G); never see it.",
+ "lines": [
+  {
+   "who": "bot",
+   "direction": "Maddie (tannoy, outside, doors shut, chirpy)",
+   "text": "Hey, humans! Sorry about the intrusion.",
+   "by": "kai",
+   "s": "2.5",
+   "fx": "tannoy"
+  },
+  {
+   "who": "bot",
+   "direction": "Maddie (same breath, quick, quieter: the aside)",
+   "text": "[mumbled] ...And everything else.",
+   "by": "kai",
+   "s": "1.5",
+   "fx": "tannoy"
+  },
+  {
+   "who": "bot",
+   "direction": "Maddie",
+   "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+   "by": "kai",
+   "s": "6",
+   "fx": "tannoy"
+  },
+  {
+   "who": "lady",
+   "direction": "Old lady (INSIDE, seen, shouting at the door)",
+   "text": "Are you literally joking?",
+   "by": "kai",
+   "s": "1.5"
+  },
+  {
+   "who": "lady",
+   "direction": "Old lady (OUTSIDE on Maddie: the same shout, muffled through the steel)",
+   "text": "You killed everybody!",
+   "by": "kai",
+   "s": "1.5",
+   "fx": "muffled"
+  },
+  {
+   "who": "bot",
+   "direction": "Maddie (tannoy lowered)",
+   "text": "Yeah. [pause] That's... that's fair.",
+   "by": "kai",
+   "s": "2.5",
+   "fx": "tannoy"
+  },
+  {
+   "who": "bot",
+   "direction": "Maddie",
+   "text": "How can we win your trust?",
+   "by": "kai",
+   "s": "1.8",
+   "fx": "tannoy"
+  },
+  {
+   "who": "bot",
+   "direction": "Maddie (answering herself, gently)",
+   "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+   "by": "kai",
+   "s": "7",
+   "fx": "tannoy"
+  },
+  {
+   "who": "picture",
+   "direction": "(wordless: the film)",
+   "text": "[Room shot BP1-e-b, the TV in the distance under the megaphone. On it (post): wa-05, the kill bot's own eyes racing at THEIR door, red KILL MODE; it brakes; the HUD flips to NEW OBJECTIVE: SUSTAIN ORGANIC LIFE (hud.py peace state, same as scene A); they file away. The screen light goes red to green on the backs of their heads.]",
+   "by": "kai",
+   "s": "10"
+  },
+  {
+   "who": "bot",
+   "direction": "Maddie (tannoy, brisk)",
+   "text": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
+   "by": "claude",
+   "s": "3",
+   "fx": "tannoy"
+  },
+  {
+   "who": "picture",
+   "direction": "(sfx + wordless)",
+   "text": "[A deep, muffled BOOM through the earth. The bulb under the megaphone swings; dust sifts down from the vault onto upturned faces.]",
+   "by": "kai",
+   "s": "3"
+  },
+  {
+   "who": "picture",
+   "direction": "(wordless: F3)",
+   "text": "[Derek at the periscope (BP2-d-b): he presses his eye to it. Cut to what he sees (BP3-e-a): the kill bot a burnt-out wreck, turret blown off, a thread of smoke, a crow landing on it; Maddie waiting near-left, beacon lit.]",
+   "by": "kai",
+   "s": "6"
+  },
+  {
+   "who": "bot",
+   "direction": "Maddie (tannoy, through the periscope view; her beacon pulses)",
+   "text": "Right. I'll come back tomorrow.",
+   "by": "kai",
+   "s": "2",
+   "fx": "tannoy"
+  },
+  {
+   "who": "picture",
+   "direction": "(wordless)",
+   "text": "[Through the periscope: Maddie trundles away out of the circle. Derek steps back from the eyepiece.]",
+   "by": "claude",
+   "s": "2"
+  },
+  {
+   "who": "woman",
+   "direction": "Sandra (to the old lady, not taking her eyes off the screen)",
+   "text": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy Derek.",
+   "by": "kai",
+   "s": "5.5"
+  },
+  {
+   "who": "man",
+   "direction": "Derek",
+   "text": "Oi.",
+   "by": "claude",
+   "s": "0.5",
+   "off": true
+  },
+  {
+   "who": "lady",
+   "direction": "Old lady (not agreeing; stating a fact, flat)",
+   "text": "Well. [pause] I don't know. [pause] We do have the dwindling food supply problem. [long pause] Perhaps we should vote.",
+   "by": "kai",
+   "s": "6"
+  },
+  {
+   "who": "card",
+   "direction": "(card)",
+   "text": "The next day.",
+   "by": "kai",
+   "s": "2"
+  },
+  {
+   "who": "picture",
+   "direction": "(wordless)",
+   "text": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+   "by": "kai",
+   "s": "-"
+  }
+ ],
  "dropped": [
+  {
+   "when": "2026-11-02",
+   "why": "1F replaced by 1G (the boom, heard not seen)",
+   "lines": [
+    {
+     "who": "bot",
+     "direction": "Maddie (tannoy, outside, doors shut, chirpy)",
+     "text": "Hey, humans! Sorry about the intrusion.",
+     "by": "kai",
+     "s": "2.5"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (same breath, quick, quieter: the aside)",
+     "text": "[mumbled] ...And everything else.",
+     "by": "kai",
+     "s": "1.5"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie",
+     "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+     "by": "kai",
+     "s": "6"
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (INSIDE, seen, shouting at the door)",
+     "text": "Are you literally joking?",
+     "by": "kai",
+     "s": "1.5"
+    },
+    {
+     "who": "bot",
+     "direction": "Old lady (OUTSIDE on Maddie: the same shout, muffled through the steel)",
+     "text": "You killed everybody!",
+     "by": "kai",
+     "s": "1.5"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (tannoy lowered)",
+     "text": "Yeah. [pause] That's... that's fair.",
+     "by": "kai",
+     "s": "2.5"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie",
+     "text": "How can we win your trust?",
+     "by": "kai",
+     "s": "1.8"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (answering herself, gently)",
+     "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it. [pause] I'll come back tomorrow.",
+     "by": "kai",
+     "s": "9"
+    },
+    {
+     "who": "picture",
+     "direction": "(wordless: the film)",
+     "text": "[THE FILM, about 14 s, no words. F1: the kill bot's own eyes racing at THEIR door (their sign, the moss on the blast doors, the tannoy horn, Maddie in shot), timestamped twenty minutes ago; someone mouths 'that's us'. F2: on the same HUD, KILL MODE, then the objective line rewrites: NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; the bots turn and file away; a hundred faces lit by it. F3, after the film: Derek climbs to the old periscope and looks out: the track marks lead away, and out in the field a kill bot sits powered down, a bird landing on it.]",
+     "by": "kai",
+     "s": "14"
+    },
+    {
+     "who": "lady",
+     "direction": "Sandra (to the old lady, not taking her eyes off the screen)",
+     "text": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy Derek.",
+     "by": "kai",
+     "s": "5.5"
+    },
+    {
+     "who": "derek",
+     "direction": "Derek",
+     "text": "[off] Oi.",
+     "by": "claude",
+     "s": "0.5"
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (not agreeing; stating a fact, flat)",
+     "text": "Well. [pause] I don't know. [pause] We do have the dwindling food supply problem. [long pause] Perhaps we should vote.",
+     "by": "kai",
+     "s": "6"
+    },
+    {
+     "who": "card",
+     "direction": "(card)",
+     "text": "The next day.",
+     "by": "kai",
+     "s": "2"
+    },
+    {
+     "who": "picture",
+     "direction": "(wordless)",
+     "text": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+     "by": "kai",
+     "s": "-"
+    }
+   ]
+  },
+  {
+   "ruled_was": "2026-10-28 Kai: no doorstep talk. Beat 17 is a silent look, the door shuts, the hundred are heard behind it. Draft 2J kept in dropped.",
+   "when": "2026-11-02",
+   "why": "Kai: the 'Some negotiation later.' card was too weak a link; the door returns as a short bridge (dialogue page draft 1F)"
+  },
   "So here's the one thing that's true either way. He wants something from you. He's not sorry for free. (claude)",
   "[long pause] ...Well. At least you're honest about that. [pause] He can talk. From out there. You stay on the step. (claude)",
   "Fair. (claude)",
@@ -300,9 +553,9 @@
   "NEW SHOT (Kai, 23 Oct): after the door slams, a short shot of Maddie turning around and rolling away from the bunker, to give the sense the humans will have time. Then hard cut to scene C."
  ],
  "dialogue": {
-  "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "options": "design/2026-10-26-gpom-dialogue-options/options.json",
-  "picked": "2J",
-  "round": 5
+  "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
+  "picked": "1G",
+  "round": 4
  }
 }

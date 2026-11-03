@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-c-b.jpg",
+ "made": "2026-11-02T19:55:41.147Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Seen from a hilltop many miles away: one colossal dark ship, wider than the whole British city beneath it, hovering low, its rim dotted with small white lights. A single enormous white beam falls from its centre and floods the city in cold light while the city's own lights are dead. Red columns of robed robots stream toward it along every road out of the dark countryside. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "561e67d4-b3b2-43d3-b42c-ca5e3d03143b"
+}

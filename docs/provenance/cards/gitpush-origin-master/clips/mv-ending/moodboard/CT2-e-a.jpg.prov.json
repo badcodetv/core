@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-e-a.jpg",
+ "made": "2026-11-02T19:57:27.422Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the reference only for the ring-shaped eye and the ships, a much wider new picture from high in the sky over Britain: on a far mountain the eye fires one white beam that runs flat across fifty miles of dark countryside, lighting a long strip of land packed with red ranks below it; ships ride along the beam like beads on a wire. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/SK1-d-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/SK1-d-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "725bf962-5729-4d75-93ff-4f6655fe9f29"
+}

@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-04.png",
+ "made": "2026-11-03T16:42:13+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "nano-banana",
+ "tool": "flow",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/p4-a.jpg",
+ "why": "GPOM second half A, stand-down option 04 (Kai note 2 Nov: V4 reads as the kill bot reversing; bots must stop well short of the door after racing toward it, then stand down under the HUD): wa-02's long-lens side-on camera a moment later: the pack halted in a line mid-slope, door high right. Candidate p4-a.",
+ "source_id": "0d37136e-90ad-48ab-9735-f8222d986091",
+ "prompt": "Using the first image exactly for the camera position, the long-lens compression, the hillside and the concrete bunker entrance high on the upper right with its shut green doors, and the second image for the tracked military robots: the same far-off side-on view a moment later. The pack of five tracked robots has come to a halt together in a loose line in the middle of the slope, still well below and far from the bunker, turrets level and facing up the hill toward it. The chalk dust they were kicking up rolls on past them and drifts up the slope to the right, thinning out. The tops of out-of-focus long grass blur across the very bottom of frame. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+  "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

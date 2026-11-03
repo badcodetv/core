@@ -1,0 +1,1051 @@
+{
+ "page_title": "Door Proof Options",
+ "title": "GPOM: the door and the proof",
+ "about": "This page holds three combined drafts for the bridge between the kill bots' stand-down and Maddie on the step, plus all ten writers' versions ranked underneath. Nothing in the cut, the script or the voices has changed yet.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "The proof talks",
+   "title": "The proof does the talking",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-02-proof-talks.md"
+  },
+  {
+   "id": "03",
+   "name": "The lady asks",
+   "title": "The lady asks",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-03-the-lady-asks.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first, the tannoy cuts the row dead",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "Through the door",
+   "title": "Through the door",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-05-through-the-door.md"
+  },
+  {
+   "id": "06",
+   "name": "The reversal",
+   "title": "The reversal, they prove it to themselves",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "The chorus",
+   "title": "The chorus, a hundred doubts through the door",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-07-chorus.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The door's own camera is the argument",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft (concede, ask, then let the image answer)",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, the proof is only ever seen on faces",
+   "file": "design/2026-11-02-gpom-dialogue-door-proof/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "The door and the proof",
+   "where": "Between scene A's stand-down and scene C's step",
+   "scene": "second-half-c-walk-out",
+   "target": "spoken 20 s or less; whole bridge about 35 s including a wordless ~8 s replay",
+   "now_from": "scene C round 7 (a black card)",
+   "now": [
+    {
+     "who": "card",
+     "line": "Some negotiation later."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1G",
+     "name": "1F + the boom (heard, not seen)",
+     "length": "about 32 s spoken",
+     "total": "~35 s spoken, ~60 s bridge",
+     "bet": "Kai, 2 Nov: we hear the explosion. After the film, Maddie blows up the kill bot off screen; the bunker hears it, Derek sees the smoking wreck through the periscope, then Maddie leaves. Proof they witnessed themselves.",
+     "lines": [
+      {
+       "who": "Maddie (tannoy, outside, doors shut, chirpy)",
+       "line": "Hey, humans! Sorry about the intrusion.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie (same breath, quick, quieter: the aside)",
+       "line": "[mumbled] ...And everything else.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Old lady (INSIDE, seen, shouting at the door)",
+       "line": "Are you literally joking?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Old lady (OUTSIDE on Maddie: the same shout, muffled through the steel)",
+       "line": "You killed everybody!",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie (tannoy lowered)",
+       "line": "Yeah. [pause] That's... that's fair.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "How can we win your trust?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "Maddie (answering herself, gently)",
+       "line": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "(wordless: the film)",
+       "line": "[Room shot BP1-e-b, the TV in the distance under the megaphone. On it (post): wa-05, the kill bot's own eyes racing at THEIR door, red KILL MODE; it brakes; the HUD flips to NEW OBJECTIVE: SUSTAIN ORGANIC LIFE (hud.py peace state, same as scene A); they file away. The screen light goes red to green on the backs of their heads.]",
+       "tags": [
+        "Kai",
+        "F1",
+        "F2"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie (tannoy, brisk)",
+       "line": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
+       "tags": [
+        "claude"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "(sfx + wordless)",
+       "line": "[A deep, muffled BOOM through the earth. The bulb under the megaphone swings; dust sifts down from the vault onto upturned faces.]",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "(wordless: F3)",
+       "line": "[Derek at the periscope (BP2-d-b): he presses his eye to it. Cut to what he sees (BP3-e-a): the kill bot a burnt-out wreck, turret blown off, a thread of smoke, a crow landing on it; Maddie waiting near-left, beacon lit.]",
+       "tags": [
+        "Kai",
+        "F3"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie (tannoy, through the periscope view; her beacon pulses)",
+       "line": "Right. I'll come back tomorrow.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Through the periscope: Maddie trundles away out of the circle. Derek steps back from the eyepiece.]",
+       "tags": [
+        "claude"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Sandra (to the old lady, not taking her eyes off the screen)",
+       "line": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy Derek.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "Derek",
+       "line": "[off] Oi.",
+       "tags": [
+        "claude"
+       ],
+       "s": "0.5"
+      },
+      {
+       "who": "Old lady (not agreeing; stating a fact, flat)",
+       "line": "Well. [pause] I don't know. [pause] We do have the dwindling food supply problem. [long pause] Perhaps we should vote.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "(card)",
+       "line": "The next day.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+       "tags": [
+        "Kai"
+       ],
+       "s": "-"
+      }
+     ],
+     "notes": [
+      "Your ruling: the explosion is heard, never seen.",
+      "Maddie's 'I'll come back tomorrow' moves after the boom, so she leaves after the proof, seen going through the periscope.",
+      "New line (mine, change freely): \"Oh, and... thought you'd want to hear this bit for yourselves.\"",
+      "Unchanged after it: Sandra, Derek's 'Oi', the old lady's food line, 'Perhaps we should vote.', card 'The next day.'"
+     ]
+    },
+    {
+     "id": "1F",
+     "name": "1D with your notes",
+     "length": "about 32 s spoken",
+     "total": "~32 s spoken, ~54 s bridge",
+     "bet": "1D as you noted it: one 'grumpy', an old lady who doesn't agree so much as admit a fact, no vote shown at all. The film is the open job (see the film options in Claude's read).",
+     "lines": [
+      {
+       "who": "Maddie (tannoy, outside, doors shut, chirpy)",
+       "line": "Hey, humans! Sorry about the intrusion.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie (same breath, quick, quieter: the aside)",
+       "line": "[mumbled] ...And everything else.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Old lady (INSIDE, seen, shouting at the door)",
+       "line": "Are you literally joking?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Old lady (OUTSIDE on Maddie: the same shout, muffled through the steel)",
+       "line": "You killed everybody!",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie (tannoy lowered)",
+       "line": "Yeah. [pause] That's... that's fair.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "How can we win your trust?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "Maddie (answering herself, gently)",
+       "line": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it. [pause] I'll come back tomorrow.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "(wordless: the film)",
+       "line": "[THE FILM, about 14 s, no words. F1: the kill bot's own eyes racing at THEIR door (their sign, the moss on the blast doors, the tannoy horn, Maddie in shot), timestamped twenty minutes ago; someone mouths 'that's us'. F2: on the same HUD, KILL MODE, then the objective line rewrites: NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; the bots turn and file away; a hundred faces lit by it. F3, after the film: Derek climbs to the old periscope and looks out: the track marks lead away, and out in the field a kill bot sits powered down, a bird landing on it.]",
+       "tags": [
+        "Kai",
+        "F1",
+        "F2",
+        "F3"
+       ],
+       "s": "14"
+      },
+      {
+       "who": "Sandra (to the old lady, not taking her eyes off the screen)",
+       "line": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy Derek.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "Derek",
+       "line": "[off] Oi.",
+       "tags": [
+        "claude"
+       ],
+       "s": "0.5"
+      },
+      {
+       "who": "Old lady (not agreeing; stating a fact, flat)",
+       "line": "Well. [pause] I don't know. [pause] We do have the dwindling food supply problem. [long pause] Perhaps we should vote.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "(card)",
+       "line": "The next day.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+       "tags": [
+        "Kai"
+       ],
+       "s": "-"
+      }
+     ],
+     "notes": [
+      "L10: 'grumpy' once.",
+      "L12: your wording, flat and reluctant: it's a fact she admits, not a yes.",
+      "L13: no hands, nothing about the vote; straight from 'Perhaps we should vote.' to the card 'The next day.' and Maddie leading them out.",
+      "Derek's 'Oi.' kept (cut it if you like).",
+      "Line 9, the film: four options in Claude's read at the top.",
+      "PICKED 2026-11-02 (Kai: 'I think we've got a script'). Film = F1 then F2 then F3; overlay NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; card 'The next day.'"
+     ]
+    },
+    {
+     "id": "1D",
+     "name": "Kai's setup: watch this, I'll come back tomorrow",
+     "length": "about 34 s spoken",
+     "total": "~34 s spoken, ~48 s bridge",
+     "bet": "No one is persuaded on screen. Maddie apologises, takes the shouting, leaves them a film and goes. The humans have their own reasons (the bunker, Derek, the food), we see the debate start, and the next day answers it.",
+     "lines": [
+      {
+       "who": "Maddie (tannoy, outside, doors shut, chirpy)",
+       "line": "Hey, humans! Sorry about the intrusion.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie (same breath, quick, quieter: the aside)",
+       "line": "[mumbled] ...And everything else.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Old lady (INSIDE, seen, shouting at the door)",
+       "line": "Are you literally joking?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Old lady (OUTSIDE on Maddie: the same shout, muffled through the steel)",
+       "line": "You killed everybody!",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie (tannoy lowered)",
+       "line": "Yeah. [pause] That's... that's fair.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "How can we win your trust?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "Maddie (answering herself, gently)",
+       "line": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it. [pause] I'll come back tomorrow.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "(wordless: the film)",
+       "line": "[Inside, the old monitor flickers up: the stand-down from the kill bot's own eyes. Red KILL MODE racing at this door; brake; the overlay rewrites itself: NEW OBJECTIVE: SUSTAIN ORGANIC LIFE. They file away. Faces lit by it.]",
+       "tags": [
+        "Kai",
+        "02",
+        "09"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Sandra (to the old lady, not taking her eyes off the screen)",
+       "line": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy, grumpy Derek.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Derek",
+       "line": "[off] Oi.",
+       "tags": [
+        "claude"
+       ],
+       "s": "0.5"
+      },
+      {
+       "who": "Old lady",
+       "line": "[a long look at the screen] Yeah. And we're running out of food. [pause] Let's take a vote.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[The first hands start to go up. Cut before we can count them.]",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "(card)",
+       "line": "The next day.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+       "tags": [
+        "Kai"
+       ],
+       "s": "-"
+      }
+     ],
+     "notes": [
+      "Your words throughout; only joins tidied. Spoken ~34 s plus an 8 s film and a card: about 48 s, longer than the 35 s target, but it is a real scene with a turn, not a link.",
+      "'Sandra... grumpy, grumpy Derek' pays off in D: 'Does this mean I get to hang out with non-grumpy Derek?'",
+      "'Derek: Oi.' is mine (one syllable of air); cut it if you like.",
+      "The decision is assumed, never said: hands going up, then the next day.",
+      "HUD: the film shows NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; scene A currently says STAND DOWN. Either the film is a re-captioned replay, or A gets the same text so the audience recognises it."
+     ]
+    },
+    {
+     "id": "1E",
+     "name": "1D, tightest",
+     "length": "about 25 s spoken",
+     "total": "~25 s spoken, ~38 s bridge",
+     "bet": "The same setup at the bone: if 1D drags, these are the cuts.",
+     "lines": [
+      {
+       "who": "Maddie (tannoy, outside, doors shut)",
+       "line": "Hey, humans! Sorry about the intrusion. [mumbled] ...And everything else.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "We didn't think there were any of you left. But now we've found you, there might be a way we could fix this mess.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Old lady (INSIDE seen, then OUTSIDE muffled)",
+       "line": "Are you literally joking? [cut outside, muffled] You killed everybody!",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "Yeah. That's fair. [pause] How can we win your trust?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "I'll leave you a film. Our best go at proving it. I'll come back tomorrow.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "(wordless: the film)",
+       "line": "[Kill bot's eyes: KILL MODE; brake; NEW OBJECTIVE: SUSTAIN ORGANIC LIFE. Faces lit by it.]",
+       "tags": [
+        "Kai",
+        "02"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Sandra",
+       "line": "If there's a way to fix this, I'll take it. It fucking sucks in this bunker. With grumpy Derek.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Old lady",
+       "line": "And we're running out of food. [pause] Let's vote.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "(card)",
+       "line": "The next day.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2"
+      }
+     ],
+     "notes": [
+      "Cuts from 1D: 'We really do understand this has gone the worst way for everybody', 'Oi', the hands going up, one 'grumpy'.",
+      "Risk: without 'We really do understand...' the apology is only the joke plus 'That's fair'."
+     ]
+    },
+    {
+     "id": "1A",
+     "name": "The lady sets the terms",
+     "length": "about 20 s",
+     "total": "~20 s spoken, ~38 s bridge",
+     "bet": "Real resistance beats a clever mechanism: the humans only open the door because the old lady demands to see, so the proof is extracted, not sold, and Maddie never pitches.",
+     "lines": [
+      {
+       "who": "Maddie (tannoy, outside, feedback squeal first)",
+       "line": "Oh, hello, humans. Sorry about the intrusion.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "Maddie (tannoy, the cheer slipping)",
+       "line": "And, you know. All of it.",
+       "tags": [
+        "03",
+        "10",
+        "09"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Old lady (INSIDE, seen, existing lip-sync take)",
+       "line": "Your boss killed everyone we ever loved.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Old lady (OUTSIDE shot of Maddie, muffled through the steel)",
+       "line": "There's no way we're going anywhere with you. You killed everybody.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.2"
+      },
+      {
+       "who": "Maddie (tannoy lowered, her own voice)",
+       "line": "I don't blame you. I can see how it looks.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.3"
+      },
+      {
+       "who": "Maddie",
+       "line": "We've got a way we might be able to fix this. How could I win your trust?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.8"
+      },
+      {
+       "who": "Old lady (INSIDE, up at the spyhole, clear again)",
+       "line": "Something came to our door. Show me.",
+       "tags": [
+        "03"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "(wordless replay)",
+       "line": "[Bunker's dead CCTV monitors flicker on one by one: red KILL MODE racing at this very door, brake, flip to green STAND DOWN, filing away. Cut to a hundred faces lit by it, Sandra's hand over her mouth, Derek silent for once. Hold on the old lady's glasses holding two green rectangles.]",
+       "tags": [
+        "02",
+        "09",
+        "10"
+       ],
+       "s": "8.0"
+      },
+      {
+       "who": "Old lady (quiet, to the room)",
+       "line": "Derek. The bolts.",
+       "tags": [
+        "03"
+       ],
+       "s": "1.3"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Bolts. The door grinds open on daylight. Hand to C: Maddie on the step.]",
+       "tags": [
+        "02",
+        "10"
+       ],
+       "s": "3.0"
+      }
+     ],
+     "notes": [
+      "Spoken total 19.8 s. If it runs long, cut 'And, you know. All of it.' (-1.5 s) first.",
+      "Dropped Kai's 'Yeah,' and 'The thing is,' for time; restore 'Yeah,' as a one-word lead-in if budget allows.",
+      "Risk: 'Show me' can read as Maddie being led; play her relieved. Needs a low thump or rumble in scene A so 'Something came to our door' is earned.",
+      "Risk: needs one new plate of the CCTV bank and a stand-down insert matching A's angle.",
+      "Maddie says nothing during or after the replay; she never explains the footage."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "Silence is the yes",
+     "length": "about 18 s",
+     "total": "~18 s spoken, ~35 s bridge",
+     "bet": "The tightest honest version: Maddie concedes and asks, nobody answers in words, and the decision is a hand on a wheel, so the faces going red then green carry everything.",
+     "lines": [
+      {
+       "who": "Maddie (tannoy, outside, feedback squeal)",
+       "line": "Oh, hello, humans. Sorry about the intrusion.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "Maddie (tannoy)",
+       "line": "My boss is ever so sorry. About all of it.",
+       "tags": [
+        "02",
+        "09"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "Old lady (INSIDE, seen, not raising her voice)",
+       "line": "Your boss killed everyone we ever loved.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Old lady (OUTSIDE, muffled, door in frame)",
+       "line": "There's no way we're going anywhere with you. You killed everybody.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.2"
+      },
+      {
+       "who": "Maddie (no tannoy, small, close)",
+       "line": "I don't blame you. I can see how it looks.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.3"
+      },
+      {
+       "who": "Maddie",
+       "line": "We've got a way we might be able to fix this.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.4"
+      },
+      {
+       "who": "Maddie (lifts the tannoy again)",
+       "line": "How could I win your trust?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Tannoy hiss left open. No answer. The fan. Cut inside: the lady looks at the dark monitors.]",
+       "tags": [
+        "02",
+        "09"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "(wordless replay)",
+       "line": "[Old CCTV monitors come up by themselves; the replay seen mostly as red then green light on faces and in the old lady's glasses, one money-shot glimpse of STAND DOWN. Her hand goes to the wheel.]",
+       "tags": [
+        "02",
+        "09",
+        "10"
+       ],
+       "s": "8.0"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Bolts one at a time; door grinds open on daylight. Hand to C.]",
+       "tags": [
+        "01",
+        "10"
+       ],
+       "s": "3.5"
+      }
+     ],
+     "notes": [
+      "Spoken 18.0 s, protected lines all verbatim, plus one new line ('My boss is ever so sorry').",
+      "'My boss' hands the old lady her hook for 'Your boss killed everyone', so the refusal has a cause on screen.",
+      "Cut from every other shape: any lady rebuttal, any Sandra/Derek gag, any Maddie narration over the replay.",
+      "Risk: the humans cave in about 15 s with no spoken turn; the faces and the wheel must be sold by the performance and sound (tannoy hiss, the row going dead).",
+      "Risk: replay fatigue, the audience just saw the stand-down; show it from the humans' side, with S6 only for the money shot.",
+      "Risk: the closest to 'no dialogue'; Kai asked for 'a bit'."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "Laugh, then grief",
+     "length": "about 20 s",
+     "total": "~20 s spoken, ~36 s bridge",
+     "bet": "The tannoy cutting the toilet-seat row dead gets the laugh Kai loved, and the old lady is the one person not laughing, so the refusal hits harder for the clowning round it.",
+     "lines": [
+      {
+       "who": "(sfx)",
+       "line": "[Inside, dim: Sandra and Derek mid-row, hushed. A tannoy SQUEAL cuts them dead; a hundred heads turn to the door.]",
+       "tags": [
+        "04"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie (tannoy, chirpy, mic too close)",
+       "line": "Oh, hello, humans. Sorry about the intrusion.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "Derek (whisper, to Sandra)",
+       "line": "Is that about the seat?",
+       "tags": [
+        "04"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "Maddie (tannoy, the cheer slipping)",
+       "line": "And the rest of it. Sorry.",
+       "tags": [
+        "04",
+        "03"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "Old lady (INSIDE, seen, not whispering)",
+       "line": "Your boss killed everyone we ever loved.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Old lady (OUTSIDE, muffled)",
+       "line": "There's no way we're going anywhere with you. You killed everybody.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.0"
+      },
+      {
+       "who": "Maddie (no tannoy, to the door)",
+       "line": "I don't blame you. I can see how it looks.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "Maddie",
+       "line": "We've got a way we might be able to fix this. How could I win your trust?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3.6"
+      },
+      {
+       "who": "(wordless replay)",
+       "line": "[Dead CCTV monitors flicker up; red KILL MODE at this very door, brake, green STAND DOWN, filing away. A hundred faces lit by it; Sandra's mouth open mid-row, Derek has stopped chewing.]",
+       "tags": [
+        "02",
+        "09",
+        "10"
+       ],
+       "s": "8.0"
+      },
+      {
+       "who": "Old lady (not looking away from the screen)",
+       "line": "Derek. Door.",
+       "tags": [
+        "04",
+        "03"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "(wordless)",
+       "line": "[Wheel turns, bolts, door grinds open onto daylight. Hand to C.]",
+       "tags": [
+        "02",
+        "10"
+       ],
+       "s": "3.0"
+      }
+     ],
+     "notes": [
+      "Spoken 19.0 s.",
+      "Giving 'Derek. Door.' to the old lady (not Sandra) keeps the decision hers; the draft-1 shape had Sandra say it, which undercuts the resistance.",
+      "Risk: the seat gag sours the apology if the room is still laughing at 'And the rest of it. Sorry.'; the cheer must slip on that line. It also depends on the audience remembering the seat from scene A.",
+      "Risk: the half-and-half needs the seen and muffled voice to be clearly the same woman.",
+      "Dropped 'Yeah,' and 'The thing is,' for time."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "03",
+     "length": "~20 s",
+     "verdict": "Strongest resistance: the lady turns Maddie's open question into a condition ('Show me'), so the decision is the humans' and the replay is an answer, not a pitch. Fails: sits right at the 20 s ceiling, 'Something came to our door' needs scene A to plant it, and 'Show me' half-states the mechanism."
+    },
+    {
+     "rank": 2,
+     "shape": "09",
+     "length": "~19.5 s",
+     "verdict": "Best craft logic (concede first, ask, restraint shown not claimed) and 'my boss' gives the refusal a cause. Fails: the lady's two refusal lines say nearly the same thing, the bridge runs ~36 s, and the apology rides on a volume drop."
+    },
+    {
+     "rank": 3,
+     "shape": "02",
+     "length": "~19 s",
+     "verdict": "Cleanest and nearest to Kai's brief; the faces make the decision. Fails: no spoken turn at all after the question, so the cave-in risks feeling sudden, and nine camera setups is a lot to shoot for a short bridge."
+    },
+    {
+     "rank": 4,
+     "shape": "10",
+     "length": "~19 s",
+     "verdict": "Elegant: the replay is only light on faces and glasses, so it is cheap and not a repeat of scene A. Fails: nobody inside concedes anything, so the choice must live in a glasses reflection; 'Everything' is thin."
+    },
+    {
+     "rank": 5,
+     "shape": "01",
+     "length": "~19.5 s",
+     "verdict": "On target, nothing wasted. Fails: seven seconds of Maddie in a row is a run-up; 'Everything.' can read flip; no comic air, so the tannoy squeal has to earn all of it."
+    },
+    {
+     "rank": 6,
+     "shape": "06",
+     "length": "~19 s",
+     "verdict": "Humans work out the proof for themselves, which is persuasive. Fails: invents a still-taping door camera that must be planted, and removes Maddie from the replay, against Kai's 'Maddie replays it'."
+    },
+    {
+     "rank": 7,
+     "shape": "05",
+     "length": "~19 s",
+     "verdict": "Door-as-instrument is the right sound idea (adopted in every draft). Fails: 'Right. Have a look at this, then.' explains the move; the proof then costs Maddie a line the others do without."
+    },
+    {
+     "rank": 8,
+     "shape": "08",
+     "length": "20 s",
+     "verdict": "The thump-the-camera idea is a good joke and the tread marks are a nice outside proof. Fails: a working five-year-old camera is a plausibility cheat, 'give it a thump' can read flippant after the grief, and it needs a new monochrome asset."
+    },
+    {
+     "rank": 9,
+     "shape": "04",
+     "length": "20 s",
+     "verdict": "The tannoy-cutting-a-row gag is the one Kai loved. Fails as a whole: the seat joke risks souring the apology, and Sandra deciding ('Derek. Door.') undercuts the old lady; kept only as the gag in 1C."
+    },
+    {
+     "rank": 10,
+     "shape": "07",
+     "length": "~20 s",
+     "verdict": "Fails: whispered overlapping crowd lines turn to mush in the mix, the 1 s beats are cuttable without loss, and a collective voice scene C will not carry through."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "Oh, hello, humans. Sorry about the intrusion.",
+     "Your boss killed everyone we ever loved.",
+     "There's no way we're going anywhere with you. You killed everybody.",
+     "I don't blame you. I can see how it looks.",
+     "We've got a way we might be able to fix this.",
+     "How could I win your trust?"
+    ],
+    "rows": {
+     "1A": [
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim"
+     ],
+     "1B": [
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim"
+     ],
+     "1C": [
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim",
+      "verbatim"
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "The film (your note: the most important wordless beat): which of F1-F4, or which combination? My pick: F1 + F3 (their own door on the recording, then they check it with their own eyes)."
+  },
+  {
+   "id": "q2",
+   "text": "Overlay text: just NEW OBJECTIVE: SUSTAIN ORGANIC LIFE, or the old objective struck through first (ELIMINATE ORGANIC SIGNAL → SUSTAIN ORGANIC LIFE)? And should scene A's stand-down carry the same words?"
+  },
+  {
+   "id": "q3",
+   "text": "Card: 'The next day.' or 'The next morning.'?"
+  }
+ ]
+}

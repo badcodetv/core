@@ -6,6 +6,10 @@
     python3 scripts/gpom/second-half-video/cut3.py A B --no-preview
     python3 scripts/gpom/second-half-video/cut3.py A B --tag d1   # Kai's dialogue-page picks (1D, 2H), 27 Oct
     python3 scripts/gpom/second-half-video/cut3.py B --tag br     # the bridge: no doorstep talk (Kai, 28 Oct)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d3     # Maddie's storyverse intro, draft 1G (2 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d4     # + Kai's timeline r5 notes (2 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d5     # + the wide approach WA02 in beat 10b (2 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d6     # draft 1H + the extended travelling shot (2 Nov)
 
 --tag X writes to clips/second-half/cut3/<scene>-X/ instead of cut3/<scene>/, so a round never rewrites the stems and
 lines an earlier Premiere sequence plays from. --tag d1 also swaps in the dialogue-page words: beat 0 from
@@ -55,8 +59,11 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
          'crowd': 'The hundred'}
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-D1 = TAG in ('d1', 'd2')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
+D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
 D2 = TAG == 'd2'
+D3 = TAG in ('d3', 'd4', 'd5', 'd6')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
+D4 = TAG in ('d4', 'd5', 'd6')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
+                  # the boss's firewall line cut, Maddie's 'That was close.' alone, HUD NEW OBJECTIVE
 BR = TAG == 'br'  # the bridge (Kai, 28 Oct): the doorstep talk cut; a look, the door shuts on her, voices behind it
 STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
 # Off screen, down the corridor behind the old lady: the corridor's room, further back and duller.
@@ -122,6 +129,8 @@ def take_named(beat, i, letter, phrase=None, fx=False):
 
 def lipinfo(name):
     """(dub wav, first speech at, last speech end, [(text, at, end)]) for a talking clip, clip time."""
+    if D4 and (LIP / f'cut3-lip-{name}-v2-phrases.json').exists():  # the mouth-mapped redo (2 Nov)
+        name = f'{name}-v2'
     d = json.loads((LIP / f'cut3-lip-{name}-phrases.json').read_text())
     ph = [(p['text'], p['at'], p['at'] + (p['to'] - p['from']) / p['tempo']) for p in d['phrases']]
     return LIP / f'cut3-lip-{name}-dub.wav', ph[0][1], max(p[2] for p in ph), ph
@@ -306,6 +315,17 @@ BEAT0 = [
 # D1_LINE_GAP: room after "Oh, hello! Sorry about the racket." for the radio to go down, and the longest after "We
 # understand that now..." so the sad line lands before her brisk "Anyway!" (Kai at l0-5, round 1: "a longer pause").
 D1_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 2.0}
+# Round D3 (2 Nov): draft 1G, nine lines. The longest rests: after the regret (line 6) so it lands, and after the
+# storyverse (line 7, Kai's mic drop) before her brisk "Anyway!".
+D3_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 0.9, 5: 1.0, 6: 1.4, 7: 2.0}
+# Round D6 (2 Nov): draft 1H, seven lines; the travelling shot extended to play at real speed (no slow-down), the
+# tune held at least 8 s before "Oh, hello!", and the shot starting after her opening turn (Kai: "just cut to her
+# rolling down the road").
+D6 = TAG == 'd6'
+D6_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 1.4, 5: 2.0}
+D6_SKIP = 2.5
+D6_LEAD = 8.0
+D3_CUES = {'went': 'Ever since you lot went.', 'mattered': 'my boss calls it the storyverse.'}
 
 
 def shown(text):
@@ -326,15 +346,36 @@ def d1_takes(row):
 def beat0_d1():
     """(phrases [(Take, gap after, text, line)], lines [(i, text, by)]) for beat 0 in draft 1D."""
     script = json.loads((S.SCENES / 'second-half-a-killbots' / 'script.json').read_text())
-    rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-a-killbots' / 'voices-d1.json').read_text())['lines']}
+    vf = f"voices-{ {'d5': 'd4', 'd6': 'd5'}.get(TAG, TAG)}.json" if D3 else 'voices-d1.json'
+    gaps = D6_LINE_GAP if D6 else D3_LINE_GAP if D3 else D1_LINE_GAP
+    rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-a-killbots' / vf).read_text())['lines']}
     seq, lines = [], []
     for i, ln in enumerate(script['lines']):
         tk = d1_takes(rows[i])
         for p, (take, g) in enumerate(tk):
             last = p == len(tk) - 1
-            seq.append((take, D1_LINE_GAP.get(i, 0.0) if last else g, rows[i]['phrases'][p]['text'], i))
+            seq.append((take, gaps.get(i, 0.0) if last else g, rows[i]['phrases'][p]['text'], i))
         lines.append((i, shown(ln['text']), ln['by']))
     return seq, lines
+
+
+def close_only(src, outdir):
+    """The beat-12 take from after its longest pause ("Good job. ... That was close." -> "That was close.")."""
+    out = outdir / 'audio-12-that-was-close.wav'
+    if not out.exists():
+        log = subprocess.run(['ffmpeg', '-i', str(src), '-af', 'silencedetect=n=-40dB:d=0.4', '-f', 'null', '-'],
+                             capture_output=True, text=True).stderr
+        ends = [float(x.split('silence_end: ')[1].split()[0]) for x in log.splitlines() if 'silence_end' in x]
+        starts = [float(x.split('silence_start: ')[1]) for x in log.splitlines() if 'silence_start' in x]
+        gaps = [(e - s0, e) for s0, e in zip(starts, ends) if s0 > 0.2]
+        at = max(gaps)[1] - 0.05
+        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{at:.3f}', '-i', str(src), '-af',
+                        'afade=t=in:d=0.02', str(out)], check=True)
+        subprocess.run([sys.executable, str(S.REPO / 'scripts/provenance/prov.py'), 'card', str(out), '--kind', 'voice',
+                        '--engine', 'ffmpeg', '--tool', 'scripts/gpom/second-half-video/cut3.py --tag d4',
+                        '--why', 'Kai at5600: just "That was close." (the take from after its pause)', '--parent', str(src),
+                        '--setting', f'from={at:.3f}'], check=True, capture_output=True)
+    return out
 
 
 def scene_a():
@@ -348,19 +389,45 @@ def scene_a():
                            'half the length it was. Everything after beat 0 is round 3 as you signed it off. Play it, click '
                            'any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. '
                            "Tell Claude when you're done.")
+    if D3:
+        c.meta['intro'] = ('Scene A, round 5: Maddie\'s storyverse intro, draft 1G from the storyverse dialogue page (your '
+                           'pick, 2 Nov). Everything after beat 0 is as before. Play it, click any beat, clip, line or '
+                           "sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.")
+    if D6:
+        c.meta['intro'] = ('Scene A, round 8: Maddie\'s intro is draft 1H (your notes of 2 Nov: storyverse, then the regret and '
+                           'the time machine). The travelling shot now plays at real speed (new clips added, no slow motion), '
+                           'starts with her already rolling, and the tune runs 8 s before she speaks. Everything else is round 7. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D4:
+        c.meta['intro'] = ('Scene A, round 6: your timeline notes of 2 Nov. Maddie\'s intro reworded (lines 3, 5, 7), the row '
+                           're-lip-synced by mouth-mapping with Derek\'s "I\'m really sorry, love.", the firewall line cut, '
+                           'Maddie\'s "That was close." on its own, and the stand-down reading NEW OBJECTIVE / SUSTAIN ORGANIC '
+                           'LIFE. ' + ('Round 7: the wide approach (your still pick wa-02) replaces the close race in 10b. ' if TAG == 'd5' else 'The wide approach shot is still to come (stills first). ') + 'Play it, click any beat, clip, line or '
+                           "sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.")
     m = c.m
 
     # ---- 0: the continuous travelling shot (eight chained clips), ~5 s of radio first, Kai's new opening
-    v6 = V / 'cut3-beat0-continuous-x.mp4'
-    graded, note = regrade_v6(v6, c.vdir / 'cut3-beat0-continuous-x-graded.mp4')
+    v6 = V / ('cut3-beat0-continuous-xx.mp4' if D6 else 'cut3-beat0-continuous-x.mp4')
+    graded, note = regrade_v6(v6, c.vdir / f'{v6.stem}-graded.mp4')
     c.flags.append(note.replace('six chained clips', 'eight chained clips').replace('48 s', '64 s'))
     if D1:
         seq, d1_lines = beat0_d1()
     else:
         seq = [(Take(p), g, text, k) for k, (p, g, text) in enumerate(BEAT0)]
     span = sum(tk.d + g for tk, g, _, _ in seq)
-    have = dur(v6)
-    lead = fr(min(6.5, max(5.0, have - span - 1.5)))
+    skip = D6_SKIP if D6 else 0.0  # d6: in after her opening turn
+    have = dur(v6) - skip
+    stretch = None
+    if have < (D6_LEAD if D6 else 5.0) + span + 1.5:  # D3: the speech outruns the 64 s shot, so the shot is slowed to fit (never the speech)
+        k = ((D6_LEAD if D6 else 5.0) + span + 1.5) / have
+        slow = c.vdir / f'cut3-beat0-continuous-x-graded-slow{k:.3f}.mp4'
+        if not slow.exists():
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(graded), '-an', '-vf',
+                            f'setpts={k:.5f}*PTS,framerate=fps=24', '-c:v', 'libx264', '-crf', '16', '-preset', 'medium',
+                            '-pix_fmt', 'yuv420p', str(slow)], check=True)
+        stretch, graded, have = k, slow, dur(slow) - skip * k
+        skip *= k
+    lead = fr(D6_LEAD) if D6 else fr(min(6.5, max(5.0, have - span - 1.5)))
     b = c.beat('0', 'Maddie on the high street', 0.0, act='Maddie',
                see='One unbroken travelling shot: the camera backs up the ruined high street and Maddie rolls after it, '
                    'her radio playing the tune for about 5 s before she notices us. "Oh, hello!" Then the radio goes '
@@ -386,6 +453,14 @@ def scene_a():
                        f'{end0 - talk_end:.1f} s after "Mind how you go", so the beat is shorter by the same. "Oh, hello!", '
                        '"Ever since you lot..." and "went." keep the takes already in the cut; every other phrase is new, '
                        'picked by measurement (voices-d1.json). Nobody has listened yet.')
+        if D3:
+            c.flags[-1] = (f'Beat 0, round {TAG.upper()}: draft {"1H" if D6 else "1G"}, the storyverse intro (your pick, 2 Nov). {lead:.2f} s of her radio '
+                           f'first, then her {len(seq)} phrases run {span:.1f} s (draft 1D ran about 40 s). "Oh, hello!" keeps '
+                           'its take; every other phrase is new, picked by measurement (voices-*.json). Nobody has listened yet.')
+        if stretch:
+            c.flags.append(f'Beat 0 picture: the speech is longer than the 63.7 s travelling shot, so the shot is slowed to '
+                           f'{100 / stretch:.0f}% speed (x{stretch:.3f}, frames blended) to cover it. Speech is not slowed. '
+                           'If the slow motion shows, the other way is to let her last lines run over beat 1.')
     else:
         c.flags.append(f'Beat 0: {lead:.2f} s of Maddie rolling with her radio before "Oh, hello!" (Kai asked for about '
                    f'5 s). Her twelve phrases with Kai\'s pauses (1.6 s after "Oh, hello!", 2.5 s after "...he misses '
@@ -395,11 +470,18 @@ def scene_a():
         c.flags.append('Beat 0 takes: Kai\'s audition picks for the new phrases ("Oh, hello!" c, "didn\'t notice you" a, '
                    '"racket down" a, "It\'s his tune" c, "Anyway..." a); the unchanged phrases keep their round-0 takes. Whisper '
                    'hears take c of "It\'s his tune" as "This is June" (takes a and b are there if your ear agrees).')
-    c.pic(graded, 0.0, 0.0, end0, '0', source=v6)
+    c.pic(graded, skip, 0.0, end0, '0', source=v6)
+    if D6:
+        c.flags.append(f'Beat 0 (round D6, Kai at76): the travelling shot is extended with new chained clips '
+                       f'({v6.name}) and plays at real speed{"" if not stretch else " (STILL SLOWED: the extension was too short)"}; '
+                       f'it starts {skip:.1f} s in, after her opening turn; {lead:.1f} s of the tune before "Oh, hello!", '
+                       'then the radio goes down after "Sorry about the racket."')
     if D1:  # by phrase text: "Sorry about the racket." is where the radio goes down
         at = {text: st for (_, _, text, _), st in zip(seq, starts)}
         m['hello'], m['racket'], m['bye'] = starts[0], at['Sorry about the racket.'], starts[-1]
-        m['went'], m['mattered'] = at['went.'], at['We understand that now...']
+        cue = dict(D3_CUES, mattered="So it's not a multiverse at all. My boss likes to call it the storyverse.") if D6 else D3_CUES
+        m['went'], m['mattered'] = ((at[cue['went']], at[cue['mattered']]) if D3 else
+                                    (at['went.'], at['We understand that now...']))
     else:
         m['hello'], m['racket'], m['bye'] = starts[0], starts[2], starts[-1]
         m['went'], m['mattered'] = starts[5], starts[8]
@@ -450,7 +532,7 @@ def scene_a():
 
     # ---- 6-7: the row, lip-synced; Derek's two new shots between Sandra's lines, held longer on the last
     rows = [('6', 'woman', '6-0', '6-0', LINES[('6', 0)]['text']),
-            ('7', 'man', '7d-0c', '7d-0', 'Oh, sorry, sorry, love.'),
+            ('7', 'man', '7d-0c', '7d-0', "I'm really sorry, love." if D4 else 'Oh, sorry, sorry, love.'),
             ('7', 'woman', '7-0', '7-0', LINES[('7', 0)]['text']),
             ('7', 'man', '7d-1c', '7d-1', 'But the world ended, Sandra!'),
             ('7', 'woman', '7-2', '7-2', LINES[('7', 2)]['text'])]
@@ -538,6 +620,8 @@ def scene_a():
              ('ai', 1, None), ('bot', A1 / '11-1-bot-b.wav', "No, honestly, it's real. Look, you can see for yourself."),
              ('ai', 2, None), ('bot', A1 / '11-2-bot-a.wav', 'Do you want some help with the malware?'),
              ('ai', 3, None)]
+    if D4:  # Kai at4781 (2 Nov): lose "Oh. And they've activated their firewalls."; straight to the malware offer
+        calls = [x for x in calls if x[:2] != ('ai', 2)]
     tt = s11 + 2.0  # the antenna first
     starts = []
     for k, (who, src, text) in enumerate(calls):
@@ -552,7 +636,8 @@ def scene_a():
         tt = e + GAP
     end11 = fr(starts[-1][1] + TAIL)
     # V3 throughout, with a 2.25 s cutaway to the far race (V8) on the boss's first and last lines
-    a1, a3 = fr(starts[1][0] - CUT_PRE), fr(starts[5][0] - CUT_PRE)
+    ais = [k for k, x in enumerate(starts) if x[2] == 'ai']
+    a1, a3 = fr(starts[ais[0]][0] - CUT_PRE), fr(starts[ais[-1]][0] - CUT_PRE)
     cuts = [s11, a1, a1 + 2.25, a3, a3 + 2.25, end11]
     srcs = [(v3, 0.0), (v8, 3.5), (v3, 2.0), (v8, 5.75), (v3, 4.0)]
     for (src, i0), x, z in zip(srcs, cuts, cuts[1:]):
@@ -575,7 +660,14 @@ def scene_a():
     e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
     c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
     d10b = fr(max(5.0, e + TAIL - t))
-    c.pic(V / 'cut3-V9.mp4', 0, t, t + d10b, '10b')
+    if TAG in ('d5', 'd6'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
+        c.pic(V / 'cut3-WA02.mp4', 0, t, t + d10b, '10b')
+        b['title'], b['see'] = 'The wide approach', ('Long lens through the grass: the pack races along the foot of the slope, the '
+                                                     'bunker door small and high on the right. Maddie over it.')
+        c.flags.append('Beat 10b (Kai at5110): V9 (too close to the door) replaced by WA02, the wide approach from your still '
+                       'pick wa-02 (Omni, take 2; take 1 turned the bots into tanks). The on-board stand-down (V4) is unchanged.')
+    else:
+        c.pic(V / 'cut3-V9.mp4', 0, t, t + d10b, '10b')
     m['s10b'], m['l10b'] = t, (t + LEAD, e)
     t = c.close(b, t + d10b)
 
@@ -594,8 +686,11 @@ def scene_a():
     c.pic(V / 'cut3-V10r.mp4', 0, s12 + 7.0, s12 + 12.5, '12')
     s_v3 = fr(s12 + 12.5)
     tk = Take(pathlib.Path(A3['media']) / MADDIE12['file'])
-    e = c.say('vox-maddie', tk, s_v3 + LEAD, '12', 'beat 12 Maddie: Good job. That was close.')
-    c.line(b, 0, 'bot', s_v3 + LEAD, e - s_v3 - LEAD, 'Good job. [pause] That was close.', 'kai')
+    l12 = 'Good job. [pause] That was close.'
+    if D4:  # Kai at5600 (2 Nov): just "That was close." -- the same take from after its pause
+        tk, l12 = Take(close_only(pathlib.Path(A3['media']) / MADDIE12['file'], c.dir)), 'That was close.'
+    e = c.say('vox-maddie', tk, s_v3 + LEAD, '12', f'beat 12 Maddie: {shown(l12)}')
+    c.line(b, 0, 'bot', s_v3 + LEAD, e - s_v3 - LEAD, l12, 'kai')
     end12 = fr(e + TAIL + 0.4)
     c.pic(v3, 3.0, s_v3, end12, '12')
     c.flags.append('Beat 12: the HUD now reads STAND DOWN (status RETURN TO PATROL), drawn by hud.py in ffmpeg. V10r '
@@ -604,6 +699,11 @@ def scene_a():
     c.flags.append('Beat 12 (round 3, Kai at4098): the boss\'s last line is gone; Maddie says "Good job." (pause) "That was '
                    'close." (round 3b, Kai at4138: "boss" cut out of the take, not re-voiced). Take a of four (voices.json): her cheeky Style/Pace replaced for this line, a soft '
                    '"Whew." from the [sighs] tag, its 4.25 s pause cut to ~1.85 s. Take c is the clean one without the sigh.')
+    if D4:
+        c.flags[-2] = c.flags[-2].replace('the HUD now reads STAND DOWN (status RETURN TO PATROL)',
+                                          'the HUD flips to NEW OBJECTIVE / SUSTAIN ORGANIC LIFE (Kai, 2 Nov: matches the door\'s film)')
+        c.flags[-1] = ('Beat 12 (Kai at5600, 2 Nov): Maddie says only "That was close." -- the same take, cut from after its '
+                       'pause (audio-12-that-was-close.wav), not re-voiced.')
     m['s12'], m['peace'], m['s_v3'], m['l12'] = s12, fr(s12 + peace), s_v3, (s_v3 + LEAD, e)
     t = c.close(b, end12)
     c.total = t
@@ -1314,6 +1414,6 @@ def run(key, do_preview=True):
 
 
 if __name__ == '__main__':
-    keys = [a for a in sys.argv[1:] if not a.startswith('--')] or ['A', 'B']
+    keys = [a for a in sys.argv[1:] if not a.startswith('--') and a != TAG] or ['A', 'B']
     for k in keys:
         run(k, '--no-preview' not in sys.argv)

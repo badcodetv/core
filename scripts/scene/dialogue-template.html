@@ -201,7 +201,7 @@ function rankList(d) {
     if (used.has(r.shape)) nm.append(el('span', 'used', 'lines used in the drafts'));
     sum.append(el('div', 'n', '#' + r.rank), nm, el('div', 'len', r.length), el('div', 'verdict', r.verdict));
     const body = el('div', 'body md');
-    const ap = el('details', 'approach'); ap.append(el('summary', '', "This writer's approach (same for both dialogues)"));
+    const ap = el('details', 'approach'); ap.append(el('summary', '', "This writer's approach"));
     const apb = el('div'); apb.innerHTML = s.intro_html; ap.append(apb);
     const ver = el('div'); ver.innerHTML = d.shapes_html[r.shape];
     body.append(ap, ver, slip(d.id + '-s' + r.shape, 'Note on writer ' + r.shape + "'s version (a line to steal?)"));
@@ -234,8 +234,9 @@ function dialoguePanel(d, n) {
     for (const [k, vals] of Object.entries(d.protected.rows)) { const r = el('tr'); r.append(el('td', '', k)); for (const x of vals) r.append(el('td', '', x)); t.append(r) }
     const w = el('div', 'md'), sc = el('div', 'tbl'); sc.append(t); w.append(sc); p.append(w);
   }
-  p.append(el('h3', '', 'Where the drafts came from: ten writers, ranked for this dialogue'));
-  p.append(el('p', 'lede', "Each writer took one approach and wrote both dialogues. Ranked harshly, best first. Open one to read that writer's whole version of this dialogue."));
+  p.append(el('hr'));
+  p.append(el('h3', '', 'Optional: the raw material the three drafts were blended from'));
+  p.append(el('p', 'lede', "You only need to pick from the three drafts above. Below are the " + d.ranking.length + " writers' own versions, each pushing one approach to the extreme. 1A, 1B and 1C are built from their best lines: each line's chip (like 09) says which writer it came from. Ranked harshly, best first. Read one only if you want to steal a line, and note it on that writer's slip."));
   p.append(rankList(d));
   return p;
 }

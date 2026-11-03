@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/LD1-c-b.jpg",
+ "made": "2026-11-02T16:24:58.033Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Inside an empty British football stadium at night, the floodlights on: the pitch and every stand filled with red-hooded robots standing in silent rows where the crowd used to be. Wide from the top of the stand. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/WL2-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/WL2-b.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/RK1-c-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3ae2799a-2f23-4197-aef2-f754f046c61e"
+}

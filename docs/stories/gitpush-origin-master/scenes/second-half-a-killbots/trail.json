@@ -30,5 +30,116 @@
   ],
   "feedback": "feedback/timeline-r4",
   "feedback_docs": 22
+ },
+ {
+  "at": "2026-11-02T13:37:55+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "what": "dialogue options: Maddie's intro, the storyverse turn (research + ten writers)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json design/2026-11-02-gpom-dialogue-maddie-storyverse.html"
+ },
+ {
+  "at": "2026-11-02T14:15:05+00:00",
+  "stage": "dialogue",
+  "round": 2,
+  "url": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "what": "draft 1D: 1A with Kai's six line notes",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json design/2026-11-02-gpom-dialogue-maddie-storyverse.html --notes design/2026-11-02-gpom-dialogue-maddie-storyverse/notes-r1.json",
+  "decided": [
+   "1A short and dry — I've put feedback in those boxes"
+  ]
+ },
+ {
+  "at": "2026-11-02T14:51:29+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "url": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "what": "draft 1E: Kai's note on 1D line 6 (one universe matters; purpose)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json design/2026-11-02-gpom-dialogue-maddie-storyverse.html --notes design/2026-11-02-gpom-dialogue-maddie-storyverse/notes-r2.json"
+ },
+ {
+  "at": "2026-11-02T14:58:42+00:00",
+  "stage": "dialogue",
+  "round": 4,
+  "url": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "what": "draft 1F: Kai's three notes on 1E (storyverse last)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json design/2026-11-02-gpom-dialogue-maddie-storyverse.html --notes design/2026-11-02-gpom-dialogue-maddie-storyverse/notes-r3.json"
+ },
+ {
+  "at": "2026-11-02T15:07:04+00:00",
+  "stage": "dialogue",
+  "round": 5,
+  "url": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "what": "draft 1G: Kai's three notes on 1F",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json design/2026-11-02-gpom-dialogue-maddie-storyverse.html --notes design/2026-11-02-gpom-dialogue-maddie-storyverse/notes-r4.json"
+ },
+ {
+  "at": "2026-11-02T15:42:41+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Maddie's storyverse intro, draft 1G voiced (speech 113 s, shot slowed to 53%); Premiere r3 held until Kai hears it",
+  "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D3 && python3 scripts/gpom/second-half-video/cut3.py A --tag d3 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <out-dir>",
+  "decided": [
+   "Kai, 2 Nov: \"So nailed it. That's the script.\" (1G)"
+  ]
+ },
+ {
+  "at": "2026-11-02T16:35:44+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 6: Kai's r5 notes (1G reworded, row re-lip-synced, Derek new line, firewall line cut, 'That was close.', HUD NEW OBJECTIVE); also in Premiere as gpom-2-A-killbots-r3 (in sync)",
+  "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D4 && python3 scripts/gpom/second-half-video/cut3.py A --tag d4 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <out-dir>",
+  "decided": [
+   "Kai, 2 Nov: \"Please proceed on all three.\" (lip sync, wide-shot stills, NEW OBJECTIVE)"
+  ]
+ },
+ {
+  "at": "2026-11-02T16:55:53+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 7: + the wide approach WA02 (Kai's still pick wa-02) in beat 10b; also in Premiere as gpom-2-A-killbots-r4 (in sync)",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d5 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <out-dir>",
+  "decided": [
+   "Kai's still picks (2 Nov): wa-scene-a = wa-02, wa-door-film = wa-05"
+  ]
+ },
+ {
+  "at": "2026-11-02T20:33:44+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 8: draft 1H + the travelling shot extended to real speed (no slow-down), 8 s of tune, in after the turn. Premiere r5 pending (bridge disabled in this session)",
+  "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D5 && python3 scripts/gpom/second-half-video/cut3.py A --tag d6 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <out-dir>",
+  "decided": [
+   "Kai, 2 Nov: \"draft 1H is perfect\" (+ 'and that went along with you lot'); \"we just need to do more shots\""
+  ]
+ },
+ {
+  "at": "2026-11-03T16:31:38+00:00",
+  "stage": "premiere",
+  "round": 8,
+  "what": "Premiere gpom-2-A-killbots-r5 built from A-d6 (71 clips, 212 s, in sync); r4 to zz old sequences; overview board v21"
+ },
+ {
+  "at": "2026-11-03T16:46:10+00:00",
+  "stage": "picks",
+  "round": 9,
+  "url": "https://claude.ai/artifact/4iu6nmoLseDNmRkoJGxa9w",
+  "what": "stand-down stills sd-01..06 (bots stop short of the door, no reversing)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/feedback/stand-down-picks.json <out>/index.html"
+ },
+ {
+  "at": "2026-11-03T17:01:42+00:00",
+  "stage": "picks",
+  "round": 9,
+  "url": "https://claude.ai/artifact/4iu6nmoLseDNmRkoJGxa9w",
+  "what": "Kai picked sd-01 for the stand-down",
+  "decided": [
+   "sd-01 (picked on the page, no note)"
+  ]
  }
 ]

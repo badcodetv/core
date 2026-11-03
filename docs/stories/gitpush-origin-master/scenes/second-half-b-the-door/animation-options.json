@@ -1,0 +1,346 @@
+{
+ "about": "Bridge (draft 1G) animation options, shot-craft designed, 2026-11-02. Stills picked by Kai. Omni 1.1 Flash, count 1.",
+ "sequence_notes": [
+  {
+   "rule": "One camera move in the sequence: the slow push in 2B (or the sweep in 5C)",
+   "why": "a still body of work makes one move land (look.md: camera movement default is nothing)",
+   "source": "look.md; shot-craft motion budget"
+  },
+  {
+   "rule": "Words, HUD, screen content and the red\u2192green light are post",
+   "why": "words are ffmpeg; the screen must match scene A exactly (hud.py peace state)",
+   "source": "hybrid-method.md"
+  },
+  {
+   "rule": "The explosion is sound and dust only",
+   "why": "Kai: 'let's just hear it'",
+   "source": "Kai 2026-11-02"
+  },
+  {
+   "rule": "Few movers: two or three per clip",
+   "why": "Omni fails at four or more moving people",
+   "source": "docs/google-flow/README.md"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "The film's opening. They must recognise THEIR door through the machine's own eyes: recognition is what makes the footage believable.",
+   "options": [
+    {
+     "id": "1A",
+     "label": "Ride the charge, then A's brake",
+     "idea": "Veo rides on the hull as it charges the door; cut to scene A's existing on-board stand-down shot (V4) for the brake and the HUD flip, so the moment it chose not to kill is footage we already made.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "world rushes, camera fixed to the hull"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "CRT texture + red KILL MODE HUD, then hud.py peace state on V4"
+      },
+      {
+       "lane": "Premiere",
+       "does": "none"
+      }
+     ],
+     "veo_prompt": "The camera does not move. Fixed to the back of the charging tracked machine: grass and chalk stream beneath the hull, dust billows either side, the green bunker door ahead grows larger as it races up the slope, the hull juddering. Shot at 24fps with a 180-degree shutter, fast motion smears. The camera does not move.",
+     "cut": "in: on the hull already moving \u00b7 out: hard cut to A's V4 before the door gets close",
+     "seconds": 6,
+     "risk": "the door may morph as it nears: cut by 4 s"
+    },
+    {
+     "id": "1B",
+     "label": "Post only: the still, shaken",
+     "idea": "No video credit: ffmpeg push-in on wa-05 with a juddering shake and the CRT/HUD. Small on the TV it reads; full frame it reads as a still.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "push 100\u2192115% with shake, CRT texture, HUD"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "in/out as 1A",
+     "seconds": 5,
+     "risk": "looks like a photograph if shown big"
+    },
+    {
+     "id": "1C",
+     "label": "Security-camera angle instead",
+     "idea": "Use A's own wide (WA02, already made) as a fixed security camera on the TV: the pack races in, brakes, turns. Their door from outside, not the bot's eyes.",
+     "lanes": [
+      {
+       "lane": "reuse WA02",
+       "does": "reuse WA02"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "CRT + timestamp burn-in"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "the race, then V4 for the flip",
+     "seconds": 6,
+     "risk": "loses the bot's POV, so the HUD flip needs V4 anyway"
+    }
+   ],
+   "recommended": {
+    "id": "1A",
+    "why": "recognition is the evidence, and the brake already exists in A, so one credit buys the whole film"
+   }
+  },
+  {
+   "n": 2,
+   "job": "The hundred become witnesses. Nobody speaks; the screen's red, then green, falls on them.",
+   "options": [
+    {
+     "id": "2A",
+     "label": "Living room, locked",
+     "idea": "The TV flickers, one man shifts his weight, a woman lifts a hand to her mouth. Camera still; the light does the work.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "flicker + two small movers"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "film composited on the TV, red\u2192green grade on heads and vault"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small television flickers, its red light trembling on the brick vault. The crowd watch in silence. One man shifts his weight; a woman slowly lifts her hand to her mouth. Fine grain alive. The camera does not move.",
+     "cut": "in: as Maddie's line ends \u00b7 out: on the green",
+     "seconds": 8,
+     "risk": "extra people appearing; keep movers to two"
+    },
+    {
+     "id": "2B",
+     "label": "Push in towards the screen",
+     "idea": "2A plus our one camera move of the sequence: Premiere pushes slowly over the backs of their heads towards the TV, 100\u2192110% across the film. The push is the realisation (they had us dead and stopped).",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "as 2A"
+      },
+      {
+       "lane": "Premiere",
+       "does": "eased push 100\u2192110%"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "as 2A"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The small television flickers, its red light trembling on the brick vault. The crowd watch in silence. One man shifts his weight; a woman slowly lifts her hand to her mouth. Fine grain alive. The camera does not move.",
+     "cut": "as 2A",
+     "seconds": 8,
+     "risk": "same as 2A; the push must end on the green, not before"
+    },
+    {
+     "id": "2C",
+     "label": "Post only",
+     "idea": "The still with live grain, the film composited, the grade. Free.",
+     "lanes": [
+      {
+       "lane": "ffmpeg only",
+       "does": "ffmpeg only"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "as 2A",
+     "seconds": 8,
+     "risk": "a held still reads as a scanned photo (look.md)"
+    }
+   ],
+   "recommended": {
+    "id": "2B",
+    "why": "our one camera move, spent on the realisation; the push ends on the green"
+   }
+  },
+  {
+   "n": 3,
+   "job": "The boom: the machine's power, heard and felt, never seen. The aftershock is in the room.",
+   "options": [
+    {
+     "id": "3A",
+     "label": "Dust from the vault",
+     "idea": "A jolt; dust sifts down through the red light; the horn rattles on its bracket; one man looks up. The rest stay frozen (few movers).",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "dust + horn + one head"
+      },
+      {
+       "lane": "sound",
+       "does": "muffled boom, a rattle"
+      }
+     ],
+     "veo_prompt": "The camera does not move. [00:00-00:01] a sudden jolt, the loudspeaker horn rattles on its bracket. [00:01-00:04] fine dust and grit sift down from the brick vault through the red light; one man slowly looks up at the ceiling while the others stand frozen. The camera does not move.",
+     "cut": "in: on the boom \u00b7 out: as the dust thins",
+     "seconds": 4,
+     "risk": "the TV may change; heads turning in unison"
+    },
+    {
+     "id": "3B",
+     "label": "Post jolt only",
+     "idea": "Free: a 6-frame camera jolt in ffmpeg on the room clip from 2, plus the boom. No falling dust.",
+     "lanes": [
+      {
+       "lane": "ffmpeg",
+       "does": "shake on the end of clip 2"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "the boom lands on the tail of 2",
+     "seconds": 2,
+     "risk": "weaker; no aftershock to see"
+    },
+    {
+     "id": "3C",
+     "label": "Lights up after the boom",
+     "idea": "After the dust, someone hits the switch and the lamps clank on: that leads into Derek's lit shot and gives the boom a consequence. Second still needed (the room with lamps on).",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "lamps flicker on"
+      },
+      {
+       "lane": "needs a new still",
+       "does": "needs a new still"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "between 3A and 4",
+     "seconds": 3,
+     "risk": "one more still to approve"
+    }
+   ],
+   "recommended": {
+    "id": "3A",
+    "why": "the boom needs an aftershock you can see; few movers keeps Omni safe"
+   }
+  },
+  {
+   "n": 4,
+   "job": "A human checks for himself. Trust becomes verification: Derek, the grump, is the one who goes to look.",
+   "options": [
+    {
+     "id": "4A",
+     "label": "He looks",
+     "idea": "He presses closer to the eyepiece, hands tighten on the handles, his frown loosens; Sandra takes one step nearer behind him.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "Derek + Sandra (two movers)"
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "a light red tint to match the room"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The man presses his eye harder to the periscope, his hands tightening on its handles; slowly his frown loosens. Behind him the woman in the cream jumper takes one step closer. The camera does not move.",
+     "cut": "in: as he reaches it \u00b7 out: hard cut to what he sees",
+     "seconds": 5,
+     "risk": "eyepiece light flicker"
+    },
+    {
+     "id": "4B",
+     "label": "He looks, and after",
+     "idea": "4A, plus a second clip from the same still after the view: he straightens up from the eyepiece and turns to Sandra, saying nothing. The reaction is the payoff. +1 credit.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "4A + a second 4 s clip"
+      }
+     ],
+     "veo_prompt": "The camera does not move. The man slowly straightens up from the periscope eyepiece and turns his head to look at the woman in the cream jumper behind him. She holds his gaze. The camera does not move.",
+     "cut": "4A before the view, this after it",
+     "seconds": 4,
+     "risk": "straightening is a state change; keep it small"
+    },
+    {
+     "id": "4C",
+     "label": "Post only",
+     "idea": "A slow Premiere push on the still towards his eye. Free.",
+     "lanes": [
+      {
+       "lane": "Premiere",
+       "does": "push 100\u2192112%"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "as 4A",
+     "seconds": 4,
+     "risk": "reads as a still"
+    }
+   ],
+   "recommended": {
+    "id": "4A",
+    "why": "he looks; the view itself is the payoff (4B adds his reaction for one more credit)"
+   }
+  },
+  {
+   "n": 5,
+   "job": "The proof the AI couldn't fake: the bot is a wreck, and Maddie, who did it, goes. Through his eyes, so it's his evidence.",
+   "options": [
+    {
+     "id": "5A",
+     "label": "Smoke, crow, Maddie leaves",
+     "idea": "Smoke threads up from the wreck, the crow settles; on 'Right. I'll come back tomorrow.' Maddie's beacon pulses, then she turns and trundles out of the circle.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "smoke, crow, Maddie (three movers, the limit)"
+      },
+      {
+       "lane": "post",
+       "does": "periscope circle held"
+      }
+     ],
+     "veo_prompt": "The camera does not move. Through the round periscope view: a thread of smoke rises from the burnt-out wreck and the crow settles its wings on it. [00:02-00:03] the little grey delivery robot's amber beacon pulses. [00:04-00:07] the delivery robot turns and trundles slowly out of the left of the circle, its torn bunting trailing. The camera does not move.",
+     "cut": "in: on the view \u00b7 out: as she clears the circle",
+     "seconds": 7,
+     "risk": "Maddie may redraw as she turns; fallback 5B"
+    },
+    {
+     "id": "5B",
+     "label": "Smoke and crow only",
+     "idea": "Maddie stays parked; her beacon pulses on her line. Her leaving is implied.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "smoke + crow"
+      }
+     ],
+     "veo_prompt": "The camera does not move. Through the round periscope view: a thread of smoke rises from the burnt-out wreck and the crow settles its wings on it. The little delivery robot's amber beacon pulses twice. The camera does not move.",
+     "cut": "as 5A",
+     "seconds": 5,
+     "risk": "low"
+    },
+    {
+     "id": "5C",
+     "label": "Periscope sweep",
+     "idea": "5B, but Premiere slides the picture inside a held circle (a post mask) as if Derek turns the periscope and finds the wreck. Our one camera move moves here instead of 2.",
+     "lanes": [
+      {
+       "lane": "Veo",
+       "does": "5B"
+      },
+      {
+       "lane": "Premiere",
+       "does": "pan inside a static circular mask"
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "as 5A",
+     "seconds": 6,
+     "risk": "needs the circle rebuilt in post; spends the camera move here"
+    }
+   ],
+   "recommended": {
+    "id": "5A",
+    "why": "her leaving is the scene's exit; 5B is the safe fallback if she redraws"
+   }
+  }
+ ]
+}

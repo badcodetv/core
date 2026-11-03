@@ -1,0 +1,122 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "mv-ending",
+  "prefix": "me",
+  "title": "GPOM Music-Video Ending",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> music-video ending",
+  "moodboard_intro": "Your round-1 picks are at the top (already chosen, nothing to do). Below them, only this round's new options: the missing middle scale between the fields and the planet. Tap This, Maybe or No; leave a note.",
+  "storyboard_intro": "The ending in order: 20 frames climbing from street to orbit, one long zoom out. Pick a still (where there are two) and one way to animate each. Nothing is generated until you've picked.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending",
+  "flow_project": "ecb26938-c035-4f88-937a-987cf1d13f26",
+  "beats": [
+    {
+      "key": "swindon",
+      "at": "161.96",
+      "name": "Out of Swindon",
+      "blurb": "Out of the explosion into night: the robes march over the wreckage, the eye lit above."
+    },
+    {
+      "key": "land",
+      "at": "173",
+      "name": "The land",
+      "blurb": "The army fills Britain: motorways, valleys, empty towns, rows past the horizon."
+    },
+    {
+      "key": "sky",
+      "at": "193",
+      "name": "The sky",
+      "blurb": "Fleets of ships, layer on layer, a weather system over England at night."
+    },
+    {
+      "key": "country",
+      "at": "202",
+      "name": "The country (middle scale)",
+      "blurb": "Round 2, Kai's missing scale: between the fields and the planet. Whole cities, counties, coastlines and the road network, seen from airliner height and above, red."
+    },
+    {
+      "key": "orbit",
+      "at": "211",
+      "name": "Orbit",
+      "blurb": "The opening's satellite; night-side Earth lit red, not gold. The planet is occupied."
+    }
+  ],
+  "existing": {
+    "orbit": [
+      [
+        "orbit2-last",
+        "The opening's satellite (reference)",
+        "/mnt/d/badcode-videos/gitpush-origin-master/clips/s01/brainstorm/sequence/bridge/orbit2-lastframe-8.0s.png"
+      ]
+    ]
+  },
+  "styles": {},
+  "looks": {
+    "night": "chorus 2's night world (night-blue, red robes, white searchlights)",
+    "orbit": "the opening's space: near-black, one hard light"
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
+    "storyboard": "https://claude.ai/artifact/9Ui1ATN8KdGCjep3ctWgPQ"
+  },
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/cut/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/cut/preview.mp4"
+  },
+  "picked": [
+    [
+      "SW1-a-b",
+      "Column out of the burning wreck"
+    ],
+    [
+      "SW1-c-a",
+      "The eye over the rooftops"
+    ],
+    [
+      "SW1-e-b",
+      "Traffic light still changing"
+    ],
+    [
+      "LD1-b-c",
+      "Welsh valley, one searchlight"
+    ],
+    [
+      "LD1-c-b",
+      "The stadium filled"
+    ],
+    [
+      "LD1-d-a",
+      "Terraced street filled"
+    ],
+    [
+      "LD1-e-b",
+      "Every field a parade ground"
+    ],
+    [
+      "SK1-a-a",
+      "Fleets above the clouds"
+    ],
+    [
+      "SK1-b-b",
+      "Down through the fleet"
+    ],
+    [
+      "SK1-d-a",
+      "Ships circling the eye"
+    ],
+    [
+      "OR1-a-b",
+      "Satellite over red Europe"
+    ],
+    [
+      "OR1-c-a",
+      "Past the solar wing onto red Britain"
+    ]
+  ],
+  "board_round": 2
+}

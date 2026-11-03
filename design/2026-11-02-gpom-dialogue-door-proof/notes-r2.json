@@ -1,0 +1,61 @@
+{
+ "round": 2,
+ "plan": [
+  {
+   "title": "What changed",
+   "items": [
+    "New draft 1F = 1D with your four notes. 1D kept to compare.",
+    "'Grumpy' once; the old lady states the food problem flatly and says 'Perhaps we should vote' (your words); no hands, straight to 'The next day.'"
+   ]
+  },
+  {
+   "title": "The film: why it is hard",
+   "items": [
+    "A video from an AI is weak evidence: it builds simulations (Derek even asks in scene D, 'How do I know this isn't one of your simulations?'). So the film can't just assert; it has to show something they can check, or something only real could show.",
+    "Four ways to make it convincing, mixable:"
+   ]
+  },
+  {
+   "title": "F1 · It is their own door",
+   "items": [
+    "The recording is the kill bot's own eyes racing at THEIR door: their faded sign, the moss on the blast doors, the tannoy horn, Maddie in frame. Timestamp: twenty minutes ago. Someone mouths 'that's us'. Recognition makes it real, and it's the footage the audience already saw, so it costs nothing."
+   ]
+  },
+  {
+   "title": "F2 · The objective rewrites itself",
+   "items": [
+    "On the HUD, KILL MODE; then the objective line is struck through and retyped letter by letter: ELIMINATE ORGANIC SIGNAL → SUSTAIN ORGANIC LIFE. The bots turn away. Slow enough to read; the hundred read it with us."
+   ]
+  },
+  {
+   "title": "F3 · They check it themselves",
+   "items": [
+    "The film ends; Derek goes up to the old periscope (Cold War bunkers had them) and looks out: the track marks lead away, and out in the field one kill bot sits powered down, a bird landing on it. Proof the AI didn't make. One new still + clip, and it gives Derek his grumpy, silent turn."
+   ]
+  },
+  {
+   "title": "F4 · Sustain organic life, demonstrated",
+   "items": [
+    "The film's last shot: a kill bot stopping dead for a hedgehog crossing its track, then going round it. Funny, tender, and it shows the new objective in action. Risk: cute; and the AI could fake it, so it works best after F1."
+   ]
+  },
+  {
+   "title": "You decide",
+   "items": [
+    "Pick 1F (or note lines), then the film: I'd do F1 + F2 inside the film, then F3 after it. About 14 s, no words. Stills are free; I'll make options for the periscope and the faces for you to approve before any video credit."
+   ]
+  }
+ ],
+ "replies": {
+  "1-1D-L9": "Agreed, it's the beat the whole bridge rests on. Four options at the top (F1-F4); my pick is F1 + F2 in the film, then F3, Derek at the periscope seeing it for real.",
+  "1-1D-L10": "Done in 1F: 'With grumpy Derek.'",
+  "1-1D-L12": "Done in 1F, your wording, flat: 'Well. I don't know. We do have the dwindling food supply problem. Perhaps we should vote.'",
+  "1-1D-L13": "Done in 1F: no hands, nothing about the vote; 'Perhaps we should vote.' cuts straight to 'The next day.' and Maddie leading them out."
+ },
+ "kai_round2": {
+  "1-1D-L9": "I think this scene is a very important scene, although it has no words, we need to really try our best to come up with a way to make this convincing.",
+  "1-1D-L13": "I don't think we show any hands we don't show anything about the vote we cut straight to the next day and then into the next scene where Maddy's leading them away",
+  "1-1D-L12": "I think this is too compliant. I think we should be it's not yeah and we're running out of food Let's take a vote because I agree. I think it's We should just state the fact Well, so like I don't know well we are running out and and we are we are we do have the dwindling food supply problem Perhaps we should vote. Let's say it that way",
+  "1-1D-L10": "I think here we only need to say grumpy once."
+ }
+}

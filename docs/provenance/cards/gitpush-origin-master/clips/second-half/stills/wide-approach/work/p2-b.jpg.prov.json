@@ -1,0 +1,24 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p2-b.jpg",
+  "made": "2026-11-02T16:23:04.429Z",
+  "by": "claude",
+  "engine": "google-flow",
+  "kind": "image",
+  "tool": "flow_edit_image",
+  "prompt": "Using the first image for the hillside, the bunker entrance with its green blast doors and the film look, and the second image for the tracked military robots: a long-lens shot from far off to the side, the distance compressed, heat shimmer and hanging dust softening the middle ground. A pack of five tracked military robots like the one in the second image crosses the frame from left to right at full speed along the bottom of a long grassy slope, side-on and small, their tracks throwing up chalk. High above them and far beyond, near the top of the down in the upper right, the concrete bunker entrance is a small grey notch with its shut green doors. The tops of out-of-focus long grass blur across the very bottom of frame. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+  "model": null,
+  "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+  "inputs": {
+    "references": [
+      "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+      "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-killbot-P1.jpg"
+    ],
+    "character": null
+  },
+  "settings": {
+    "aspect": "16:9",
+    "numOutputs": 2
+  },
+  "source_id": "0870aea8-f9f5-4057-ab59-c8e4da3596f1"
+}

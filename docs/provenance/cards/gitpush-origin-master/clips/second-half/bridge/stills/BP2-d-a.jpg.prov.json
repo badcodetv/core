@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP2-d-a.jpg",
+ "made": "2026-11-02T19:57:43.401Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the lighting so it matches the second image: it is night in the bunker and every enamel ceiling lamp is switched off. The tunnel falls to near-darkness. A faint red glow from a television somewhere down the tunnel washes the far wall and the woman in the cream jumper, who stands in shadow watching him. The one bright thing is a small disc of cold grey daylight from the periscope eyepiece lighting the man's eye and cheekbone. Keep the man, his pose at the periscope, the woman, the vault, the bunks and the composition exactly as they are, with the faded 16mm colour, soft contrast and heavy grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/BP2-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/BP2-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/bridge/BP1-e-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "22d1d365-8e54-41e6-b11f-cd1d74d487a1"
+}

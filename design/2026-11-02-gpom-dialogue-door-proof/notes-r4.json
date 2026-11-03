@@ -1,0 +1,36 @@
+{
+ "round": 4,
+ "plan": [
+  {
+   "title": "Draft 1G",
+   "items": [
+    "1F plus the boom you ruled (heard, not seen): the film, then Maddie on the tannoy, a muffled boom and falling dust, Derek at the periscope sees the smoking wreck, then Maddie: 'Right. I'll come back tomorrow.' and she goes.",
+    "One new line of mine: \"Oh, and... thought you'd want to hear this bit for yourselves.\" Note it if you want other words."
+   ]
+  }
+ ],
+ "replies": {
+  "1-1D-L9": "Agreed, it's the beat the whole bridge rests on. Four options at the top (F1-F4); my pick is F1 + F2 in the film, then F3, Derek at the periscope seeing it for real.",
+  "1-1D-L10": "Done in 1F: 'With grumpy Derek.'",
+  "1-1D-L12": "Done in 1F, your wording, flat: 'Well. I don't know. We do have the dwindling food supply problem. Perhaps we should vote.'",
+  "1-1D-L13": "Done in 1F: no hands, nothing about the vote; 'Perhaps we should vote.' cuts straight to 'The next day.' and Maddie leading them out.",
+  "q1": "Done: F1 then F2, then F3 after the film. Written into 1F's film line.",
+  "q2": "Done: NEW OBJECTIVE: SUSTAIN ORGANIC LIFE. I'll show it as KILL MODE flipping to that line on the same HUD (no strike-through) unless you say otherwise.",
+  "q3": "Done: 'The next day.'"
+ },
+ "kai_round2": {
+  "1-1D-L9": "I think this scene is a very important scene, although it has no words, we need to really try our best to come up with a way to make this convincing.",
+  "1-1D-L13": "I don't think we show any hands we don't show anything about the vote we cut straight to the next day and then into the next scene where Maddy's leading them away",
+  "1-1D-L12": "I think this is too compliant. I think we should be it's not yeah and we're running out of food Let's take a vote because I agree. I think it's We should just state the fact Well, so like I don't know well we are running out and and we are we are we do have the dwindling food supply problem Perhaps we should vote. Let's say it that way",
+  "1-1D-L10": "I think here we only need to say grumpy once."
+ },
+ "kai_round3": {
+  "1-1D-L9": "I think this scene is a very important scene, although it has no words, we need to really try our best to come up with a way to make this convincing.",
+  "q2": "Yeah, I think new objectives, sustain organic life is a good way to do it.",
+  "q1": "I think we've done it, Claude. In terms of the four film ideas, their own door, let me just, I'm just reading the four film ideas now, and I'll fill in the... I think F2, F2 might be the best one here. Like we watch the same screen display, just... Yeah, F1 and then F2, and then F3 afterwards. Yeah, that's brilliant. I love it. Let's do that. Exactly.",
+  "1-1D-L13": "I don't think we show any hands we don't show anything about the vote we cut straight to the next day and then into the next scene where Maddy's leading them away",
+  "1-1D-L12": "I think this is too compliant. I think we should be it's not yeah and we're running out of food Let's take a vote because I agree. I think it's We should just state the fact Well, so like I don't know well we are running out and and we are we are we do have the dwindling food supply problem Perhaps we should vote. Let's say it that way",
+  "1-1D-L10": "I think here we only need to say grumpy once.",
+  "q3": "I think the next day."
+ }
+}

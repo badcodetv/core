@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/p6-b.jpg",
+ "made": "2026-11-03T16:41:34.278Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the robot's rubber track, the bunker entrance with its green blast doors and the film look, the second image for the long grassy chalk down, the overcast light and how far off the bunker is, and the third image for the tracked robot's design: a low camera mounted at the robot's front corner, a hand's height above the turf. The heavy rubber track fills the left edge of the frame in sharp close-up, motionless, chalk and grass jammed in its treads, where it has just ground to a stop in a short gouge of white chalk. Dust and torn grass are still settling in the air. Far away up the long slope, small and in the middle of the frame, the concrete bunker entrance with its shut green doors on the skyline. Shallow focus on the track, the distance soft. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "674b218f-40d1-4d9a-8496-ccc0254af817"
+}

@@ -1,0 +1,27 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+ "made": "2026-11-02T20:26:50+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+ "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+ "inputs": {
+  "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+  "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+  "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+  "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+  "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+  "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+  "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+  "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+ },
+ "settings": {
+  "crf": "14",
+  "fps": "24",
+  "ramp_s": "6",
+  "chain_end_frames": "10-14:179, 9/15/16:191"
+ }
+}

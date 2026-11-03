@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP3-c-a.jpg",
+ "made": "2026-11-02T16:38:43.757Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only two things. One: the switched-off tracked machine is turned round so its rear faces us and its dark, drooping turret points away up the hill, away from the periscope; the crow still lands on top of it. Two: in the bottom-left of the circular view, close to the lens, the corner of the little delivery robot from the second image sits parked on the grass, facing away from us towards the field: its dented grey boxy body, one chunky black wheel, the short stalk with its amber beacon glowing softly, and a strip of torn, faded bunting hanging from its wheel. Keep the periscope circle, the crosshair lines, the track scars, the overcast sky and the film grain exactly the same.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/BP3-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/BP3-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/bridge/maddie.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6fb15b96-6355-48c5-8803-32b4d2ed0194"
+}

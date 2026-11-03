@@ -1,42 +1,67 @@
 {
- "duration": 8,
- "skip": [],
+ "about": "Bridge (draft 1G) clips, 2026-11-03. Storyboard frames are skipped; every clip is an extra row so the old door clips keep their names. Old file: video-jobs-2026-10-23-old-door.json.",
+ "video": {
+  "duration": 8
+ },
+ "anim_picks": {
+  "1": "1A",
+  "2": "2B",
+  "3": "3A",
+  "4": "4A",
+  "5": "5A"
+ },
+ "skip": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
  "extra": [
   {
-   "key": "b15-v2",
-   "n": 15,
-   "still": "shb-b15-v2-no-bunting",
-   "duration": 8,
-   "motion": "The camera does not move. The small grey delivery robot stays exactly where it is, parked outside on the threshold of the open blast doors; it does not move forward at all. It gives one small settle on its wheels and its amber beacon pulses bright and slow. Outside, the grass on the downs ripples in a light breeze. In the foreground the old woman, seen from behind, stays still; only her shoulders stiffen slightly. Nothing blows inside the corridor. The camera does not move.",
+   "key": "br1-1A",
+   "n": 1,
+   "still": "wa-05",
+   "duration": 6,
+   "motion": "The camera does not move. Fixed to the back of the charging tracked machine: grass and chalk stream beneath the hull, dust billows either side, the green bunker door ahead grows larger as it races up the slope, the hull juddering. Shot at 24fps with a 180-degree shutter, fast motion smears. The camera does not move.",
    "character": null,
-   "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v2 no bunting"
+   "why": "Kai 3 Nov: 'go with all of your recommended options' (1A: Ride the charge, then A's brake)"
   },
   {
-   "key": "b17b-v1",
-   "n": 17,
-   "still": "shb-b17b-v1-calm-bunting",
+   "key": "br2-2B",
+   "n": 2,
+   "still": "BP1-e-b",
    "duration": 8,
-   "motion": "The camera does not move. The small grey delivery robot rolls steadily away from the shut bunker, down the slope towards the camera along its own wheel tracks, bouncing gently over the tussocks, its amber beacon flashing. The long grass of the downs ripples in the wind and low grey clouds drift over the hill. The bunker's green steel doors stay shut. The camera does not move.",
+   "motion": "The camera does not move. The small television flickers, its red light trembling on the brick vault. The crowd watch in silence. One man shifts his weight; a woman slowly lifts her hand to her mouth. Fine grain alive. The camera does not move.",
    "character": null,
-   "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v1 calm bunting"
+   "why": "Kai 3 Nov: 'go with all of your recommended options' (2B: Push in towards the screen)"
   },
   {
-   "key": "b17b-v2",
-   "n": 17,
-   "still": "shb-b17b-v2-no-bunting",
-   "duration": 8,
-   "motion": "The camera does not move. The small grey delivery robot rolls steadily away from the shut bunker, down the slope towards the camera along its own wheel tracks, bouncing gently over the tussocks, its amber beacon flashing. The long grass of the downs ripples in the wind and low grey clouds drift over the hill. The bunker's green steel doors stay shut. The camera does not move.",
+   "key": "br3-3A",
+   "n": 3,
+   "still": "BP1-e-b",
+   "duration": 4,
+   "motion": "The camera does not move. [00:00-00:01] a sudden jolt, the loudspeaker horn rattles on its bracket. [00:01-00:04] fine dust and grit sift down from the brick vault through the red light; one man slowly looks up at the ceiling while the others stand frozen. The camera does not move.",
    "character": null,
-   "why": "Kai 23 Oct: 'the bunting is getting in the way of that shot. Could we try a couple of variations?' (one-off test) v2 no bunting"
+   "why": "Kai 3 Nov: 'go with all of your recommended options' (3A: Dust from the vault)"
   },
   {
-   "key": "b17b-v1-r2",
-   "n": 17,
-   "still": "shb-b17b-v1-calm-bunting",
-   "duration": 8,
-   "motion": "The camera does not move. The small grey delivery robot drives steadily and clearly down the slope straight towards the camera, growing larger in the frame second by second until it passes close by the lower edge of the frame, following its own two wheel tracks, which stay pressed into the grass behind it all the way back to the bunker. Its amber beacon flashes. The long grass ripples in the wind. The bunker's green steel doors stay shut. The camera does not move.",
+   "key": "br4-4A",
+   "n": 4,
+   "still": "BP2-a-a",
+   "duration": 6,
+   "motion": "The camera does not move. The man presses his eye harder to the periscope, his hands tightening on its handles; slowly his frown loosens. Behind him the woman in the cream jumper takes one step closer. The camera does not move.",
    "character": null,
-   "why": "re-roll of b17b-v1: she barely moved and her tracks melted away (lead/Kai 23 Oct: she must clearly roll away down the hill, tracks must hold)"
+   "why": "Kai 3 Nov: 'go with all of your recommended options' (4A: He looks)"
+  },
+  {
+   "key": "br5-5A",
+   "n": 5,
+   "still": "BP3-e-a",
+   "duration": 8,
+   "motion": "The camera does not move. Through the round periscope view: a thread of smoke rises from the burnt-out wreck and the crow settles its wings on it. [00:02-00:03] the little grey delivery robot's amber beacon pulses. [00:04-00:07] the delivery robot turns and trundles slowly out of the left of the circle, its torn bunting trailing. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: 'go with all of your recommended options' (5A: Smoke, crow, Maddie leaves)"
   }
  ]
 }

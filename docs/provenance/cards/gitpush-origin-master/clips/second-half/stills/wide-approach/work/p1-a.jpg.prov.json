@@ -1,0 +1,24 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p1-a.jpg",
+  "made": "2026-11-02T16:21:58.609Z",
+  "by": "claude",
+  "engine": "google-flow",
+  "kind": "image",
+  "tool": "flow_edit_image",
+  "prompt": "Using the first image for the hillside, the concrete bunker entrance with its green blast doors and the film look, and the second image for the tracked military robots: a very high aerial shot looking down across a broad Wiltshire valley of rough pale grass. The bunker entrance from the first image is small, set into the green chalk down in the upper right of frame, its green doors shut. Far below it, in the lower left, a pack of five tiny tracked military robots like the one in the second image tears across the open valley floor in a loose line, each dragging a long white trail of chalk dust behind it. Between the pack and the door lies a huge empty stretch of grass and a rising slope: they still have a long way to go. Overcast grey daylight, flat light, no sun. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+  "model": null,
+  "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+  "inputs": {
+    "references": [
+      "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+      "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-killbot-P1.jpg"
+    ],
+    "character": null
+  },
+  "settings": {
+    "aspect": "16:9",
+    "numOutputs": 2
+  },
+  "source_id": "3797e011-8189-4976-9bfb-e878245b29db"
+}

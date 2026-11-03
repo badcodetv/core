@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SK1-c-a.jpg",
+ "made": "2026-11-02T16:28:35.962Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "From a dark English high street at night looking up: the whole sky is a ceiling of ship undersides, hull after hull with rows of white lights, no stars visible, red-robed robots in ranks in the street below. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/SH1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/SH1-a-a.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/TN1-a-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "8f3c3b73-2a89-4c73-a525-819788e3914f"
+}

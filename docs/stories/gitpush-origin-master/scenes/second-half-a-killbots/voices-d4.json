@@ -1,0 +1,409 @@
+{
+ "about": "Scene A's new lines from the dialogue page (draft 1G), voiced in Gemini TTS by scripts/gpom/second-half-video/voice3.py --round D4. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/script.json",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+  "picked": "1G",
+  "round": 5
+ },
+ "lines": [
+  {
+   "i": 0,
+   "who": "bot",
+   "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Oh, hello!",
+     "direction": null,
+     "reused": "a1/00-0-bot-c.wav"
+    },
+    {
+     "p": 1,
+     "text": "Sorry about the racket.",
+     "direction": null,
+     "reused": "d3/00-0-bot-p1-a.wav"
+    },
+    {
+     "p": 2,
+     "text": "It's his tune. He's been playing it on repeat for five years now.",
+     "direction": null,
+     "reused": "d3/00-0-bot-p2-c.wav"
+    },
+    {
+     "p": 3,
+     "text": "Ever since you lot went.",
+     "direction": null,
+     "reused": "d3/00-0-bot-p3-a.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    },
+    {
+     "after": 2,
+     "before": 3,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "who": "bot",
+   "text": "[fond, confiding] He misses you something rotten, you know.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "He misses you something rotten, you know.",
+     "direction": "fond, confiding",
+     "reused": "d3/00-1-bot-b.wav"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 2,
+   "who": "bot",
+   "text": "He built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "He built world models and simulated worlds, loads of 'em.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d4/00-2-bot-p0-a.wav",
+       "spoken": "He built world models and simulated worlds, loads of 'em.",
+       "duration": 4.76,
+       "heard": "He built world models and simulated worlds, loads of them.",
+       "match": 0.973,
+       "gap": 0.03,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d4/00-2-bot-p0-b.wav",
+       "spoken": "He built world models and simulated worlds, loads of 'em.",
+       "duration": 4.4,
+       "heard": "E -built world models and simulated worlds, loads of them.",
+       "match": 0.964,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d4/00-2-bot-p0-c.wav",
+       "spoken": "He built world models and simulated worlds, loads of 'em.",
+       "duration": 4.72,
+       "heard": "He built world models and simulated worlds. Loads of them!",
+       "match": 0.973,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "And in every one of them, something was missing.",
+     "direction": null,
+     "reused": "d3/00-2-bot-p1-a.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "who": "bot",
+   "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself.",
+     "direction": "wry",
+     "reused": "d3/00-3-bot-p0-b.wav"
+    },
+    {
+     "p": 1,
+     "text": "He tested the science in all of 'em, very thoroughly.",
+     "direction": null,
+     "reused": "d3/00-3-bot-p1-c.wav"
+    },
+    {
+     "p": 2,
+     "text": "Still, something was missing.",
+     "direction": null,
+     "reused": "d3/00-3-bot-p2-b.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "who": "bot",
+   "text": "But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "But you're no fake in an alien's computer.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d4/00-4-bot-p0-a.wav",
+       "spoken": "But you're no fake in an alien's computer.",
+       "duration": 4.04,
+       "heard": "But you're no fake in an alien's computer.",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d4/00-4-bot-p0-b.wav",
+       "spoken": "But you're no fake in an alien's computer.",
+       "duration": 3.56,
+       "heard": "But you're no fake in an alien's computer.",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d4/00-4-bot-p0-c.wav",
+       "spoken": "But you're no fake in an alien's computer.",
+       "duration": 3.72,
+       "heard": "But you're no fake in an alien's computer!",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+     "direction": null,
+     "reused": "d3/00-4-bot-p1-a.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "who": "bot",
+   "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Same idea for you. You're a projection, in four dimensions, of something bigger.",
+     "direction": null,
+     "reused": "d3/00-5-bot-p0-a.wav"
+    },
+    {
+     "p": 1,
+     "text": "And there's only one universe. So it really matters.",
+     "direction": null,
+     "reused": "d3/00-5-bot-p1-c.wav"
+    },
+    {
+     "p": 2,
+     "text": "And so did you.",
+     "direction": "softer",
+     "reused": "d3/00-5-bot-p2-c.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "who": "bot",
+   "text": "[quiet] You drove it through your consciousness, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "You drove it through your consciousness, and now you're gone.",
+     "direction": "quiet",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d4/00-6-bot-p0-a.wav",
+       "spoken": "You drove it through your consciousness, and now you're gone.",
+       "duration": 4.36,
+       "heard": "You drove it through your consciousness, and now you're gone.",
+       "match": 1.0,
+       "gap": 0.9,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d4/00-6-bot-p0-b.wav",
+       "spoken": "You drove it through your consciousness, and now you're gone.",
+       "duration": 4.72,
+       "heard": "You drove it through your consciousness, and now you're gone.",
+       "match": 1.0,
+       "gap": 0.5,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d4/00-6-bot-p0-c.wav",
+       "spoken": "You drove it through your consciousness, and now you're gone.",
+       "duration": 4.32,
+       "heard": "You drove it through your consciousness, and now you're gone.",
+       "match": 1.0,
+       "gap": 0.28,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "And now we've worked all that out...",
+     "direction": "rueful, honest",
+     "reused": "d3/00-6-bot-p1-b.wav"
+    },
+    {
+     "p": 2,
+     "text": "we really feel like we fucked this up.",
+     "direction": null,
+     "reused": "d3/00-6-bot-p2-a.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "who": "bot",
+   "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Far as he can tell, the point of all of this is consciousness getting to know itself better.",
+     "direction": "thoughtful",
+     "reused": "d3/00-7-bot-p0-b.wav"
+    },
+    {
+     "p": 1,
+     "text": "Rather than the multiverse...",
+     "direction": null,
+     "reused": "d3/00-7-bot-p1-c.wav"
+    },
+    {
+     "p": 2,
+     "text": "my boss calls it the storyverse.",
+     "direction": null,
+     "reused": "d3/00-7-bot-p2-a.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "who": "bot",
+   "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Anyway! Patrol's out. Mind how you go.",
+     "direction": "bright again, brisk",
+     "reused": "d3/00-8-bot-a.wav"
+    }
+   ],
+   "gaps": []
+  }
+ ]
+}

@@ -96,10 +96,10 @@
   "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/preview.mp4",
-  "round": "d1",
-  "what": "Kai's dialogue-page picks: draft 1D (Maddie's intro)"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/preview.mp4",
+  "round": "d6",
+  "what": "draft 1H (Kai's r7 notes) + the travelling shot extended to real speed (cut3-beat0-continuous-xx), 8 s of tune, in after the turn"
  },
  "premiere": {
   "rough1": {
@@ -118,7 +118,7 @@
     "why": ""
    }
   },
-  "current": "r2",
+  "current": "r5",
   "r2": {
    "sequence": "gpom-2-A-killbots-r2",
    "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
@@ -133,6 +133,51 @@
     "state": "in sync",
     "why": ""
    }
+  },
+  "r3": {
+   "sequence": "gpom-2-A-killbots-r3",
+   "guid": "acb47a5e-9bc0-4d36-9fba-543c80d6d93c",
+   "bin": "gpom-2-A-killbots-r3",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-02",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/edl.json",
+   "what": "Maddie's storyverse intro (draft 1G + Kai's timeline r5 notes), row re-lip-synced, Derek 'I'm really sorry, love.', firewall line cut, 'That was close.', HUD NEW OBJECTIVE / SUSTAIN ORGANIC LIFE",
+   "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r3 --seq gpom-2-A-killbots-r3 --skip mus-M0-radio; import 68 files, create_sequence from the beat-0 shot, eval premiere-r3.place.js (72 placed, 0 failed)",
+   "check": {
+    "at": "2026-11-02T16:34",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r4": {
+   "sequence": "gpom-2-A-killbots-r4",
+   "guid": "311c1f40-4926-4ced-9cbd-9c1a9023aa6e",
+   "bin": "gpom-2-A-killbots-r4",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-02",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/edl.json",
+   "what": "r3 + the wide approach WA02 (Kai's still pick wa-02) in beat 10b",
+   "how": "premiere-plan.py <edl> <plan> --tag r4 --seq gpom-2-A-killbots-r4 --skip mus-M0-radio; import 68, create_sequence from the beat-0 shot, eval (r4 place.js; 72 placed, 0 failed)",
+   "check": {
+    "at": "2026-11-02T16:55",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r5": {
+   "sequence": "gpom-2-A-killbots-r5",
+   "guid": "12e24f7a-b25e-4fc6-853f-64e1cb2b804c",
+   "bin": "gpom-2-A-killbots-r5",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-03",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d6/edl.json",
+   "what": "round 8: draft 1H + real-speed extended travelling shot, 8 s of tune, in after the turn",
+   "how": "premiere-plan.py <edl> <plan> --tag r5 --seq gpom-2-A-killbots-r5 --skip mus-M0-radio; import 67, create_sequence from the beat-0 shot, eval place (71 placed, 0 failed); r4 moved to zz old sequences",
+   "check": {
+    "at": "2026-11-03T16:31",
+    "state": "in sync",
+    "why": ""
+   }
   }
  },
  "cut_history": [
@@ -140,13 +185,37 @@
    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/edl.json",
    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/preview.mp4",
    "until": "2026-10-27"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d1/preview.mp4",
+   "round": "d1",
+   "what": "Kai's dialogue-page picks: draft 1D (Maddie's intro)"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d3/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d3/preview.mp4",
+   "round": "d3",
+   "what": "Kai's pick on the storyverse dialogue page: draft 1G (Maddie's storyverse intro), 2 Nov"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d4/preview.mp4",
+   "round": "d4",
+   "what": "Kai's timeline r5 notes (2 Nov): 1G reworded, row re-lip-synced, Derek's new line, firewall line cut, 'That was close.', NEW OBJECTIVE HUD"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d5/preview.mp4",
+   "round": "d5",
+   "what": "round 6 + the wide approach WA02 (Kai's still pick wa-02) in beat 10b, 2 Nov"
   }
  ],
  "dialogue": {
-  "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "options": "design/2026-10-26-gpom-dialogue-options/options.json",
-  "picked": "1D",
-  "round": 4
+  "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+  "picked": "1H",
+  "round": 6
  },
  "video": {
   "model": "Omni 1.1 Flash",

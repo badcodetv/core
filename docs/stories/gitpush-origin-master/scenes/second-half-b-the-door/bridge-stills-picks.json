@@ -1,0 +1,164 @@
+{
+ "title": "Bridge Stills Picks",
+ "eyebrow": "GPOM \u00b7 the door and the proof \u00b7 stills round 4",
+ "heading": "The film and the periscope: still options",
+ "intro": "All picked: room BP1-e-b, view BP3-e-a, race wa-05. One last: your Derek pick (BP2-a-a) had the lamps on while the room is dark. BP2-d is the same shot at night, lit only by the TV's red glow down the tunnel and the eyepiece's daylight. Pick it (or keep BP2-a-a).",
+ "sections": [
+  {
+   "h": "F1\u2013F2 \u00b7 The film plays to the room",
+   "lede": "One brighter region per frame: the screen. The red glow turns green in post when the objective flips.",
+   "groups": [
+    {
+     "slot": "bp1-screen",
+     "title": "The room: the screen in the distance under the megaphone (picked)",
+     "line": "Over their shoulders: the monitor under the tannoy horn. Scene A's stand-down is composited into the red screen.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BP1-e-b",
+       "src": "s/BP1-e-b.jpg",
+       "label": "BP1-e-b: TV on a small table in front of the crowd, the horn alone on the wall above (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BP1-e-a",
+       "src": "s/BP1-e-a.jpg",
+       "label": "BP1-e-a: TV on a table pushed against the wall under the horn",
+       "warn": "still reads as under the horn"
+      },
+      {
+       "id": "BP1-d-a",
+       "src": "s/BP1-d-a.jpg",
+       "label": "BP1-d-a: monitor bigger, heads in silhouette",
+       "warn": ""
+      },
+      {
+       "id": "BP1-d-b",
+       "src": "s/BP1-d-b.jpg",
+       "label": "BP1-d-b: monitor smaller, more faces turned to it",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "F3 \u00b7 They check it themselves",
+   "lede": "After the film: Derek goes to the periscope.",
+   "groups": [
+    {
+     "slot": "bp2-derek",
+     "title": "NEW \u00b7 Derek at the periscope, darkened to match the room",
+     "line": "Sandra watching behind him.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BP2-d-b",
+       "src": "s/BP2-d-b.jpg",
+       "label": "BP2-d-b: your pick at night, framing kept (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BP2-d-a",
+       "src": "s/BP2-d-a.jpg",
+       "label": "BP2-d-a: darker still, tighter",
+       "warn": "framing drifted closer"
+      },
+      {
+       "id": "BP2-a-a",
+       "src": "s/BP2-a-a.jpg",
+       "label": "BP2-a-a: side-on, Sandra small in the tunnel",
+       "warn": "the bunker lamps are on here; the film shots are dark (I can darken it)"
+      },
+      {
+       "id": "BP2-a-b",
+       "src": "s/BP2-a-b.jpg",
+       "label": "BP2-a-b: closer, Sandra nearer",
+       "warn": "same lamp note"
+      },
+      {
+       "id": "BP2-c-b",
+       "src": "s/BP2-c-b.jpg",
+       "label": "BP2-c-b: eye to the eyepiece, close",
+       "warn": ""
+      },
+      {
+       "id": "BP2-c-c",
+       "src": "s/BP2-c-c.jpg",
+       "label": "BP2-c-c: closer still, profile, cold daylight on his eye",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "bp3-view",
+     "title": "NEW \u00b7 What he sees: the kill bot destroyed",
+     "line": "The proof the AI could not fake: the bots are gone and one sits switched off, a crow on it.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BP3-e-a",
+       "src": "s/BP3-e-a.jpg",
+       "label": "BP3-e-a: turret blown off beside the hull, split armour, crow on top (my pick: reads instantly)",
+       "warn": ""
+      },
+      {
+       "id": "BP3-e-b",
+       "src": "s/BP3-e-b.jpg",
+       "label": "BP3-e-b: hull wrecked, turret and track thrown further, smoke",
+       "warn": ""
+      },
+      {
+       "id": "BP3-d-a",
+       "src": "s/BP3-d-a.jpg",
+       "label": "BP3-d-a: bot squarely from behind, crow on it; Maddie waiting near-left, beacon lit (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BP3-d-b",
+       "src": "s/BP3-d-b.jpg",
+       "label": "BP3-d-b: same, Maddie bigger and closer",
+       "warn": ""
+      },
+      {
+       "id": "BP3-c-a",
+       "src": "s/BP3-c-a.jpg",
+       "label": "BP3-c-a: Maddie's corner only; bot side-on",
+       "warn": "turret still half towards us"
+      },
+      {
+       "id": "BP3-c-b",
+       "src": "s/BP3-c-b.jpg",
+       "label": "BP3-c-b: same, crow mid-landing",
+       "warn": "turret still half towards us"
+      },
+      {
+       "id": "BP3-a-a",
+       "src": "s/BP3-a-a.jpg",
+       "label": "BP3-a-a: periscope circle + crosshair: tracks lead to a dead kill bot, crow landing",
+       "warn": ""
+      },
+      {
+       "id": "BP3-a-b",
+       "src": "s/BP3-a-b.jpg",
+       "label": "BP3-a-b: periscope circle, the bot further, crow landing wings open (my favourite)",
+       "warn": ""
+      },
+      {
+       "id": "BP3-b-b",
+       "src": "s/BP3-b-b.jpg",
+       "label": "BP3-b-b: full frame: dead bot with crow, three more filing away over the brow",
+       "warn": "no periscope circle (could add in post)"
+      },
+      {
+       "id": "BP3-b-c",
+       "src": "s/BP3-b-c.jpg",
+       "label": "BP3-b-c: full frame, wider: the track scars up the hill, the pack small on the brow",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

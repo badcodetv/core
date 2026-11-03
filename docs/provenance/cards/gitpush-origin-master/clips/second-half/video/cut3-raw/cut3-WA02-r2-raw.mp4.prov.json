@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-raw/cut3-WA02-r2-raw.mp4",
+ "made": "2026-11-02T16:47:35+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/gpom/second-half-video/run-cut3.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+ "why": "GPOM second half A, wide approach (Kai 2 Nov: a much wider shot of the pack racing at the bunker door, far from it); take 2 of wa-02, kept",
+ "source_id": "V1kHuLBPh0jSo0xybosQ",
+ "prompt": "The camera does not move, locked on a distant long lens. The same five squat tracked robots, each topped by a boxy camera-sensor head, race side-on left to right along the foot of the slope at full speed, staying small and far away. Their tracks kick up long low trails of chalk dust that stream out behind them. The shut green doors stay high and distant on the hilltop. Foreground grass sways. The camera does not move.",
+ "settings": {
+  "mode": "Frames",
+  "frames": "start",
+  "aspect": "16:9",
+  "duration": "6s",
+  "count": "1",
+  "credits": "10",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

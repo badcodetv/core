@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SW1-b-a.jpg",
+ "made": "2026-11-02T16:19:28.959Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "High aerial over an English town's ring road at night: the town is dark, every street light out, and long rivers of red-robed hooded robots flow out of it along every road like spokes, small fires still burning in the town centre as the one warm light. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/MA1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/MA1-a-a.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/WL4-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "5f716888-10df-4613-bdce-85dd20d32e15"
+}

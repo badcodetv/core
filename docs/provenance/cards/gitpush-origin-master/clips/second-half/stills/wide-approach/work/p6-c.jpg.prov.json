@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p6-c.jpg",
+ "made": "2026-11-02T16:27:42.691Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the concrete bunker entrance, its green blast doors and the grassy down, and the second image for the tracked military robots: a high, fixed security-camera view from the top of the bunker entrance, looking down and out over the long grassy slope in front of the doors and the wide valley beyond. The edge of the concrete parapet and a few weeds sit in the bottom of frame. Far away down in the valley, small, a pack of five tracked military robots like the one in the second image is racing up towards the bunker, each pulling a long trail of chalk dust, with a long empty stretch of grass still between them and the doors. Overcast grey daylight, slightly washed out. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": null,
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-door-S10-c.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-door-S10-c.jpg",
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-killbot-P1.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "966aa611-7624-481b-9b20-7bb81d5c1f49"
+}

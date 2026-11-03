@@ -1,0 +1,74 @@
+[
+ {
+  "at": "2026-11-02T16:40:46+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
+  "what": "Mood board round 1: 41 stills across 4 beats (out of Swindon, land, sky, orbit), night",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/mv-ending <out.html>"
+ },
+ {
+  "at": "2026-11-02T19:52:57+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
+  "what": "votes read: 12 Thises, no notes",
+  "decided": [
+   "12 Thises (SW1-a-b, SW1-c-a, SW1-e-b, LD1-b-c, LD1-c-b, LD1-d-a, LD1-e-b, SK1-a-a, SK1-b-b, SK1-d-a, OR1-a-b, OR1-c-a); Kai: a missing scale between world and field, come up with more ideas, add my picks to the board"
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 13
+ },
+ {
+  "at": "2026-11-02T20:01:28+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
+  "what": "round 2: picks strip + new beat 'The country (middle scale)', 17 stills CT2-a..i",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/mv-ending <out.html>"
+ },
+ {
+  "at": "2026-11-02T20:03:45+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
+  "what": "board trimmed: round-1 picks strip on top, only round-2 stills below (board_round=2)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/mv-ending <out.html>",
+  "decided": [
+   "Kai: remove what wasn't picked in round 1; picks at the top; only genuinely new options to pick from"
+  ]
+ },
+ {
+  "at": "2026-11-03T16:27:15+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
+  "what": "round 2 votes read: 5 Thises, no notes",
+  "decided": [
+   "Round 2 Thises: CT2-a-a (London), CT2-b-b (motorway veins), CT2-d-b (estuary bridges), CT2-e-a (eye beam across country), CT2-h-a (region through the fleet). Kai: 'with everything I've selected… we'd have enough footage for the rest of the music video'"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 18
+ },
+ {
+  "at": "2026-11-03T16:35:16+00:00",
+  "stage": "storyboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/9Ui1ATN8KdGCjep3ctWgPQ",
+  "what": "storyboard: 20 frames (17 picks + 3 new wider orbit frames OR3), 40 animation options",
+  "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/gitpush-origin-master/scenes/mv-ending <out.html>"
+ },
+ {
+  "at": "2026-11-03T16:41:40+00:00",
+  "stage": "storyboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/9Ui1ATN8KdGCjep3ctWgPQ",
+  "what": "picks read: 19 animation picks, 1 note",
+  "decided": [
+   "Animation: 1b smoke wipe, 2a light changes, 3b lightning, 4b lamps go out, 5a floodlights off, 6a fly down the valley, 7a searchlights cross, 8a beams switch on, 9a storm turns, 10a rise through cloud, 11a beams sweep, 12a columns cross, 13a beam fires, 14a cloud parts, 15a rise to the curve, 16a satellite drifts, 17a red spreads, 18a planet turns (still OR3-a-a, by default), 20b moonrise reveal (last image)",
+   "Frame 19 (ring of ships) CUT. Kai: 'it looks too much like Saturn… number 18 is enough and then we skip to 20.'"
+  ],
+  "feedback": "feedback/storyboard-r1",
+  "feedback_docs": 20
+ }
+]

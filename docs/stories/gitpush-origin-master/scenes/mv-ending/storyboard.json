@@ -1,0 +1,233 @@
+{
+ "acts": [
+  {
+   "id": "swindon",
+   "title": "Out of Swindon (161.96–173, street height)",
+   "beats": "swindon"
+  },
+  {
+   "id": "land",
+   "title": "The land (173–193, town to country)",
+   "beats": "land"
+  },
+  {
+   "id": "sky",
+   "title": "The sky (193–202)",
+   "beats": "sky"
+  },
+  {
+   "id": "country",
+   "title": "The country, the middle scale (202–211)",
+   "beats": "country"
+  },
+  {
+   "id": "orbit",
+   "title": "Orbit: the long zoom out (211–230.5, the last 20 seconds)",
+   "beats": "orbit"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "swindon",
+   "title": "Column out of the burning wreck",
+   "look": "night",
+   "stills": [
+    "SW1-a-b"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "swindon",
+   "title": "Traffic light still changing",
+   "look": "night",
+   "stills": [
+    "SW1-e-b"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "swindon",
+   "title": "The eye over the rooftops",
+   "look": "night",
+   "stills": [
+    "SW1-c-a"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "land",
+   "title": "Terraced street filled",
+   "look": "night",
+   "stills": [
+    "LD1-d-a"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "land",
+   "title": "The stadium filled",
+   "look": "night",
+   "stills": [
+    "LD1-c-b"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "land",
+   "title": "The Welsh valley",
+   "look": "night",
+   "stills": [
+    "LD1-b-c"
+   ],
+   "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "land",
+   "title": "Every field a parade ground",
+   "look": "night",
+   "stills": [
+    "LD1-e-b"
+   ],
+   "anim": 7
+  },
+  {
+   "n": 8,
+   "act": "sky",
+   "title": "Down through the fleet",
+   "look": "night",
+   "stills": [
+    "SK1-b-b"
+   ],
+   "anim": 8
+  },
+  {
+   "n": 9,
+   "act": "sky",
+   "title": "Ships circling the eye",
+   "look": "night",
+   "stills": [
+    "SK1-d-a"
+   ],
+   "anim": 9
+  },
+  {
+   "n": 10,
+   "act": "sky",
+   "title": "Fleets above the clouds",
+   "look": "night",
+   "stills": [
+    "SK1-a-a"
+   ],
+   "anim": 10
+  },
+  {
+   "n": 11,
+   "act": "country",
+   "title": "A region through the fleet",
+   "look": "night",
+   "stills": [
+    "CT2-h-a"
+   ],
+   "anim": 11
+  },
+  {
+   "n": 12,
+   "act": "country",
+   "title": "The estuary bridges",
+   "look": "night",
+   "stills": [
+    "CT2-d-b"
+   ],
+   "anim": 12
+  },
+  {
+   "n": 13,
+   "act": "country",
+   "title": "The eye's beam across 50 miles",
+   "look": "night",
+   "stills": [
+    "CT2-e-a"
+   ],
+   "anim": 13
+  },
+  {
+   "n": 14,
+   "act": "country",
+   "title": "London from 35,000 ft",
+   "look": "night",
+   "stills": [
+    "CT2-a-a"
+   ],
+   "anim": 14
+  },
+  {
+   "n": 15,
+   "act": "country",
+   "title": "The motorways as red veins",
+   "look": "night",
+   "stills": [
+    "CT2-b-b"
+   ],
+   "anim": 15
+  },
+  {
+   "n": 16,
+   "act": "orbit",
+   "title": "Past the solar wing onto red Britain",
+   "look": "orbit",
+   "stills": [
+    "OR1-c-a"
+   ],
+   "anim": 16
+  },
+  {
+   "n": 17,
+   "act": "orbit",
+   "title": "The satellite over red Europe",
+   "look": "orbit",
+   "stills": [
+    "OR1-a-b"
+   ],
+   "anim": 17
+  },
+  {
+   "n": 18,
+   "act": "orbit",
+   "title": "The whole Earth, red, with the satellite",
+   "look": "orbit",
+   "stills": [
+    "OR3-a-a",
+    "OR3-a-b"
+   ],
+   "anim": 18
+  },
+  {
+   "n": 19,
+   "act": "orbit",
+   "title": "A ring of ships round the planet",
+   "look": "orbit",
+   "stills": [
+    "OR3-c-b",
+    "OR3-c-a"
+   ],
+   "anim": 19
+  },
+  {
+   "n": 20,
+   "act": "orbit",
+   "title": "Past the Moon: a red Earth (last image)",
+   "look": "orbit",
+   "stills": [
+    "OR3-b-a"
+   ],
+   "anim": 20
+  }
+ ]
+}

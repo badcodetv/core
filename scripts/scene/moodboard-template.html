@@ -38,6 +38,8 @@ nav a:hover, nav a:focus-visible { color: var(--fg); }
 .frame:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .card.chosen .frame { border-color: var(--yes); box-shadow: 0 0 0 2px var(--yes); }
 .made .frame { border-style: dashed; }
+.pickcard .frame { border-color: var(--yes); }
+.pickcard figcaption { display: flex; justify-content: space-between; gap: 8px; margin-top: 6px; }
 .missing { color: var(--muted); display: grid; place-items: center; height: 100%; font-size: 13px; }
 figcaption { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
 .look { font-weight: 600; }
@@ -86,7 +88,7 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const lb = $('#lb');
 $$('.frame').forEach(b => b.addEventListener('click', () => {
   const img = $('img', b); if (!img) return;
-  $('img', lb).src = img.src; $('p', lb).textContent = b.closest('.card').querySelector('.look').textContent;
+  $('img', lb).src = img.src; $('p', lb).textContent = b.closest('figure').querySelector('.look').textContent;
   lb.showModal();
 }));
 lb.addEventListener('click', () => lb.close());

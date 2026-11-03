@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SK1-d-a.jpg",
+ "made": "2026-11-02T16:34:09.540Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Wide at night: the great ring-shaped eye on its mountain with fleets of ships circling it like a storm system, a lightning flash inside the clouds, the eye's white aperture the bright centre of the frame. Night. Hyper-realistic 16:9 film photograph, fine grain, no lens flares. No people, no text, no lettering, no logos.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending-refs/EY4-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending-refs/EY4-c.jpg",
+   "/home/kai/.cache/badcode-mv-ending-refs/SH1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d16acf4a-727b-498b-9e9a-ffcc9ec33743"
+}

@@ -1,0 +1,624 @@
+{
+ "about": "Scene A's new lines from the dialogue page (draft 1G), voiced in Gemini TTS by scripts/gpom/second-half-video/voice3.py --round D5. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/script.json",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+  "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+  "picked": "1G",
+  "round": 6
+ },
+ "lines": [
+  {
+   "i": 0,
+   "who": "bot",
+   "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Oh, hello!",
+     "direction": null,
+     "reused": "a1/00-0-bot-c.wav"
+    },
+    {
+     "p": 1,
+     "text": "Sorry about the racket.",
+     "direction": null,
+     "reused": "d3/00-0-bot-p1-a.wav"
+    },
+    {
+     "p": 2,
+     "text": "It's his tune. He's been playing it on repeat for five years now.",
+     "direction": null,
+     "reused": "d3/00-0-bot-p2-c.wav"
+    },
+    {
+     "p": 3,
+     "text": "Ever since you lot went.",
+     "direction": null,
+     "reused": "d3/00-0-bot-p3-a.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    },
+    {
+     "after": 2,
+     "before": 3,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "who": "bot",
+   "text": "[fond, confiding] He misses you something rotten, you know.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "He misses you something rotten, you know.",
+     "direction": "fond, confiding",
+     "reused": "d3/00-1-bot-b.wav"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 2,
+   "who": "bot",
+   "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "He built world models and simulations, loads of 'em.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-2-bot-p0-a.wav",
+       "spoken": "He built world models and simulations, loads of 'em.",
+       "duration": 5.08,
+       "heard": "He built world models and simulations. Loads of them.",
+       "match": 0.97,
+       "gap": 0.18,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-2-bot-p0-b.wav",
+       "spoken": "He built world models and simulations, loads of 'em.",
+       "duration": 4.56,
+       "heard": "E -built world models and simulations. Loads of them!",
+       "match": 0.96,
+       "gap": 0.2,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-2-bot-p0-c.wav",
+       "spoken": "He built world models and simulations, loads of 'em.",
+       "duration": 4.68,
+       "heard": "He built world models and simulations, loads of them.",
+       "match": 0.97,
+       "gap": 0.33,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "And in every one of them, something was missing.",
+     "direction": null,
+     "reused": "d3/00-2-bot-p1-a.wav"
+    },
+    {
+     "p": 2,
+     "text": "As it turns out, the world is more than just a simulation.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-2-bot-p2-a.wav",
+       "spoken": "As it turns out, the world is more than just a simulation.",
+       "duration": 4.48,
+       "heard": "As it turns out, the world is more than just a simulation.",
+       "match": 1.0,
+       "gap": 0.45,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-2-bot-p2-b.wav",
+       "spoken": "As it turns out, the world is more than just a simulation.",
+       "duration": 5.2,
+       "heard": "As it turns out, the world is more than just a simulation.",
+       "match": 1.0,
+       "gap": 0.2,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-2-bot-p2-c.wav",
+       "spoken": "As it turns out, the world is more than just a simulation.",
+       "duration": 5.6,
+       "heard": "As it turns out, the world is more than just a simulation.",
+       "match": 1.0,
+       "gap": 0.25,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "who": "bot",
+   "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself.",
+     "direction": "wry",
+     "reused": "d3/00-3-bot-p0-b.wav"
+    },
+    {
+     "p": 1,
+     "text": "He tested the science in all of them theories, very thoroughly.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-3-bot-p1-a.wav",
+       "spoken": "He tested the science in all of them theories, very thoroughly.",
+       "duration": 5.28,
+       "heard": "He tested the science in all of them theories very thoroughly.",
+       "match": 1.0,
+       "gap": 0.35,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-3-bot-p1-b.wav",
+       "spoken": "He tested the science in all of them theories, very thoroughly.",
+       "duration": 4.56,
+       "heard": "It tested the science in all of M theories very thoroughly.",
+       "match": 0.941,
+       "gap": 0.12,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-3-bot-p1-c.wav",
+       "spoken": "He tested the science in all of them theories, very thoroughly.",
+       "duration": 4.8,
+       "heard": "He tested the science in all of them theories very thoroughly.",
+       "match": 1.0,
+       "gap": 0.25,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 2,
+     "text": "And still... something was missing.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-3-bot-p2-a.wav",
+       "spoken": "And still... something was missing.",
+       "duration": 3.64,
+       "heard": "And still, something was missing.",
+       "match": 1.0,
+       "gap": 0.62,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-3-bot-p2-b.wav",
+       "spoken": "And still... something was missing.",
+       "duration": 4.52,
+       "heard": "And still... something was missing.",
+       "match": 1.0,
+       "gap": 0.7,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-3-bot-p2-c.wav",
+       "spoken": "And still... something was missing.",
+       "duration": 3.76,
+       "heard": "And still, something was missing.",
+       "match": 1.0,
+       "gap": 0.65,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "who": "bot",
+   "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "As it turns out, there's only one universe.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-4-bot-p0-a.wav",
+       "spoken": "As it turns out, there's only one universe.",
+       "duration": 4.48,
+       "heard": "As it turns out, there's only one universe.",
+       "match": 1.0,
+       "gap": 0.4,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-4-bot-p0-b.wav",
+       "spoken": "As it turns out, there's only one universe.",
+       "duration": 3.72,
+       "heard": "As it turns out, there's only one universe.",
+       "match": 1.0,
+       "gap": 0.43,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-4-bot-p0-c.wav",
+       "spoken": "As it turns out, there's only one universe.",
+       "duration": 3.92,
+       "heard": "As it turns out, there's only one universe.",
+       "match": 1.0,
+       "gap": 0.3,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "So it really matters.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-4-bot-p1-a.wav",
+       "spoken": "So it really matters.",
+       "duration": 2.08,
+       "heard": "So it really matters.",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-4-bot-p1-b.wav",
+       "spoken": "So it really matters.",
+       "duration": 2.4,
+       "heard": "So it really matters!",
+       "match": 1.0,
+       "gap": 0.23,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-4-bot-p1-c.wav",
+       "spoken": "So it really matters.",
+       "duration": 2.6,
+       "heard": "So it really matters.",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 2,
+     "text": "And so did you.",
+     "direction": "softer",
+     "reused": "d3/00-5-bot-p2-c.wav"
+    },
+    {
+     "p": 3,
+     "text": "So it's not a multiverse at all. My boss likes to call it the storyverse.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-4-bot-p3-a.wav",
+       "spoken": "So it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "duration": 6.88,
+       "heard": "So, it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "match": 1.0,
+       "gap": 0.33,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-4-bot-p3-b.wav",
+       "spoken": "So it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "duration": 5.96,
+       "heard": "So it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "match": 1.0,
+       "gap": 0.48,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-4-bot-p3-c.wav",
+       "spoken": "So it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "duration": 6.4,
+       "heard": "So it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "match": 1.0,
+       "gap": 0.6,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    },
+    {
+     "after": 2,
+     "before": 3,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "who": "bot",
+   "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "And now we've worked all that out...",
+     "direction": "quiet, rueful, honest",
+     "reused": "d3/00-6-bot-p1-b.wav"
+    },
+    {
+     "p": 1,
+     "text": "we really feel like we fucked this up.",
+     "direction": null,
+     "reused": "d3/00-6-bot-p2-a.wav"
+    },
+    {
+     "p": 2,
+     "text": "And wish we could go back and change things.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-5-bot-p2-a.wav",
+       "spoken": "And wish we could go back and change things.",
+       "duration": 3.08,
+       "heard": "and wish we could go back and change things.",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-5-bot-p2-b.wav",
+       "spoken": "And wish we could go back and change things.",
+       "duration": 2.92,
+       "heard": "I wish we could go back and change things.",
+       "match": 0.952,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-5-bot-p2-c.wav",
+       "spoken": "And wish we could go back and change things.",
+       "duration": 3.24,
+       "heard": "I wish we could go back and change things.",
+       "match": 0.952,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 3,
+     "text": "My boss has even invented a time machine.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-5-bot-p3-a.wav",
+       "spoken": "My boss has even invented a time machine.",
+       "duration": 3.64,
+       "heard": "My boss has even invented a time machine!",
+       "match": 1.0,
+       "gap": 0.18,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-5-bot-p3-b.wav",
+       "spoken": "My boss has even invented a time machine.",
+       "duration": 3.24,
+       "heard": "My boss has even invented a time machine!",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-5-bot-p3-c.wav",
+       "spoken": "My boss has even invented a time machine.",
+       "duration": 7.08,
+       "heard": "My boss has even invented a time machine.",
+       "match": 1.0,
+       "gap": 0.33,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 4,
+     "text": "Problem is, it needs consciousness to drive it, and that went along with you lot.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "d5/00-5-bot-p4-a.wav",
+       "spoken": "Problem is, it needs consciousness to drive it, and that went along with you lot.",
+       "duration": 6.12,
+       "heard": "Problem is, it needs consciousness to drive it, and that went along with you lot.",
+       "match": 1.0,
+       "gap": 0.45,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d5/00-5-bot-p4-b.wav",
+       "spoken": "Problem is, it needs consciousness to drive it, and that went along with you lot.",
+       "duration": 5.84,
+       "heard": "Problem is, it needs consciousness to drive it. And that went along with you lot.",
+       "match": 1.0,
+       "gap": 0.48,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d5/00-5-bot-p4-c.wav",
+       "spoken": "Problem is, it needs consciousness to drive it, and that went along with you lot.",
+       "duration": 5.96,
+       "heard": "Problem is, it needs consciousness to drive it, and that went along with you lot.",
+       "match": 1.0,
+       "gap": 0.65,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    },
+    {
+     "after": 2,
+     "before": 3,
+     "seconds": 0.6
+    },
+    {
+     "after": 3,
+     "before": 4,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "who": "bot",
+   "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Anyway! Patrol's out. Mind how you go.",
+     "direction": "bright again, brisk",
+     "reused": "d3/00-8-bot-a.wav"
+    }
+   ],
+   "gaps": []
+  }
+ ]
+}

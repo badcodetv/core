@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP3-b-a.jpg",
+ "made": "2026-11-02T16:23:43.813Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A tracked robot like the one in the provided image, same body and sensor turret, now powered down and abandoned in long wet grass on an overcast English chalk hillside. Its turret sags forward, lenses dark, a little rain beaded on its armour. A crow stands on the turret, pecking at it. Behind it, two parallel track scars run up the slope and over the brow where three more of the same machines are small dark shapes trundling away in single file. Observed from low in the grass at a distance, the robot off-centre on the left, cool grey daylight, muted greens and slate greys, fine grain, early-1980s scanned film negative, subtle dust specks. No lettering.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/killbot.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/killbot.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d316e0db-c350-42ab-8df1-a8feaee6a862"
+}
