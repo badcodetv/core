@@ -713,6 +713,14 @@ MOUTH = {'lady0': 0.95,                    # br13: parted but still 0.42-0.83 (n
 # Round 6 re-shoots (Kai r5: horn hanging, no cap), read off 12 fps tracked strips: br16 "Derek" opens 0.25; br18
 # "If" 1.00, "I'd" ~3.45 (her mouth holds open 2.6-4.1, so this one is approximate); br17-alt lips pressed 0.9-2.4
 # (the hum), "Perhaps" opens 2.58; br19 measured when it lands.
+# Round 7 (Kai r6 at1803): Sandra's first half in four pieces, take time [a0, a1) -> br18 clip time, from the take's
+# whisper word times against br18's own words and mouth (12 fps strip): "If" 1.12 (mouth 1.0), "fix" 2.30, the long
+# held "I'd" 3.5-4.2 (her voice says it short, so "I'd love to" sits at its end), "take" 4.58.
+SANDRA_R7 = [(0.00, 1.22, 1.08, "If there's a way to"), (1.22, 1.90, 2.32, 'fix this,'),
+             (1.90, 2.58, 3.82, "I'd love to"), (2.58, 3.33, 4.60, 'take it.')]
+# Round 8: take c of voices-sandra-fit.json (whisper: fix 1.28, I'd 2.70, take 3.74) with its time 0 at br18 1.02:
+# fix 2.30 (mouth 2.30), I'd 3.72 (inside the long held "I'd" 3.5-4.2), take 4.76 (mouth 4.58; late, never early).
+SANDRA_FIT_AT = 1.02
 R6_MOUTH = {'derek': 0.27, 'sandra1': (1.00, 3.45), 'vote': (None, 2.60), 'hmm': 0.95, 'vote_in': 0.45, 'sandra2': 1.20}  # br19: "It" 1.17, speech to ~4.1 at x1.0
 VOTE_IN = 2.45                             # r4: br9 starts here, head settled, food-problem mouth cut away
 BOOM_JOLT = 0.35                           # br14: the horn lurches between 0.25 and 0.5 (contact sheet)
@@ -816,6 +824,8 @@ def main3():
         BR.update({7: VID / 'shb-br16-lady1c-LADY6.mp4', 9: VID / 'shb-br17-lady2c-LADY6-alt.mp4',
                    10: VID / 'shb-br18-sandra1c-SANDRA6.mp4', 15: VID / 'shb-br19-sandra2c-SANDRA7.mp4'})
         MOUTH.update(R6_MOUTH)
+    if ROUND3 >= 7:                              # Kai r6 at1665: the crowd shot's horn hangs too (chained from br14)
+        BR[12] = VID / 'shb-br20-crowd2-CROWD6.mp4'
 
     # 1 · the tannoy
     b1 = c.t
@@ -920,7 +930,10 @@ def main3():
     b11 = c.t
     t = line(14, 0, b11 + 0.6, 'vox-maddie', fx=True, ln=lines[14])
     d = t + 0.7 - b11
-    c.shot(seg('s13-crowd', BR[12], 0.0, d), d, '5', BR[12])
+    if ROUND3 >= 7:                              # br20's horn swings back up at ~1.9 s: its first 1.8 s, forward-back
+        c.shot(seg('s13-crowd', BR[12], 0.0, d, pingpong=1.8), d, '5', BR[12], looped=True)
+    else:
+        c.shot(seg('s13-crowd', BR[12], 0.0, d), d, '5', BR[12])
     c.beat('5', 'The periscope', b9, 'Derek checks: the kill bot is a wreck. "They\'ve blown up their own kill bot." '
            'Back inside, under the bent horn: "Right. I\'ll come back tomorrow."', [lines[13], lines[14]])
 
@@ -931,10 +944,28 @@ def main3():
     # whisper on the take: "this," ends 1.84, "I'd" 1.96; "it." ends 3.22, "It" 3.44
     pa, pb, pc = cut_at(f16, 0.0, 1.90, '16-a'), cut_at(f16, 1.90, 3.33, '16-b'), cut_at(f16, 3.33, None, '16-c', tempo=None if ROUND3 >= 6 else SANDRA2_TEMPO)
     m1, m2 = MOUTH['sandra1']
-    at = b12 + m1 - onset(pa)
-    c.sound('vox-sandra', pa, at, "line 16 (1/3): If there's a way to fix this,", gain=g16)
-    lines[16]['t'] = round(at, 3)
-    t = c.sound('vox-sandra', pb, b12 + m2 - onset(pb), "line 16 (2/3): I'd love to take it.", gain=g16)
+    if ROUND3 >= 8:                              # Kai r7 at1788: "choppy": one fresh take timed to br18, unbroken
+        sf = json.loads((SCENE / 'voices-sandra-fit.json').read_text())
+        fa = VOX / next(x['file'] for x in sf['takes'] if x['take'] == sf['pick'])
+        at = b12 + SANDRA_FIT_AT                 # the take's time 0 on br18's clip time
+        c.sound('vox-sandra', fa, at, "line 16 (1/2): If there's a way to fix this, I'd love to take it.",
+                gain=round(TARGET['dry'] - lufs(fa), 1))
+        lines[16]['t'] = round(at + onset(fa), 3)
+    elif ROUND3 >= 7:                            # Kai r6 at1803: "all over the shop": four pieces, each on its own word
+        lines[16]['t'] = None
+        for n, (a0, a1, clip_t, words) in enumerate(SANDRA_R7):
+            piece = cut_at(f16, a0, a1, f'16-r7-{n}')
+            ff('-i', piece, '-af', 'afade=t=in:d=0.01,areverse,afade=t=in:d=0.02,areverse', str(piece) + '.f.wav')
+            pf = pathlib.Path(str(piece) + '.f.wav')
+            at = b12 + clip_t - (onset(pf) if n == 0 else 0.0)
+            c.sound('vox-sandra', pf, at, f"line 16 ({n + 1}/5): {words}", gain=g16)
+            if lines[16]['t'] is None:
+                lines[16]['t'] = round(at, 3)
+    else:
+        at = b12 + m1 - onset(pa)
+        c.sound('vox-sandra', pa, at, "line 16 (1/3): If there's a way to fix this,", gain=g16)
+        lines[16]['t'] = round(at, 3)
+        t = c.sound('vox-sandra', pb, b12 + m2 - onset(pb), "line 16 (2/3): I'd love to take it.", gain=g16)
     d = 5.5 if ROUND3 >= 6 else 5.0              # br10 to its frame at 5.0 s, which br15 starts from (r6: br18 at 5.5)
     c.shot(seg('s14-sandra', BR[10], 0.0, d), d, '6', BR[10])
     b13 = c.t
@@ -1008,6 +1039,6 @@ def main3():
 
 if __name__ == '__main__':
     rnd = sys.argv[sys.argv.index('--round') + 1] if '--round' in sys.argv else '1'
-    if rnd in ('4', '5', '6'):
+    if rnd in ('4', '5', '6', '7', '8'):
         ROUND3, OUT3 = int(rnd), M / f'cut3/B-bridge-r{rnd}'
-    {'1': main, '2': main2, '3': main3, '4': main3, '5': main3, '6': main3}[rnd]()
+    {'1': main, '2': main2, '3': main3, '4': main3, '5': main3, '6': main3, '7': main3, '8': main3}[rnd]()

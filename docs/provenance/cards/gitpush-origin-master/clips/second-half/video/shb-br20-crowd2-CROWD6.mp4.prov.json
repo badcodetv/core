@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br20-crowd2-CROWD6.mp4",
+ "made": "2026-11-04T18:06:25+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. In the brick vault the survivors stand with their faces turned up towards the broken loudspeaker horn, which hangs down from its bent bracket, swaying very slightly; the last of the dust drifts down through the light of the bare bulbs. Nobody speaks; a few shift their weight. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/CROWD6.jpg",
+ "why": "Kai 4 Nov (timeline r6, at1665): 'the megaphone here is not hanging downwards'; Maddie's 'Right. I'll come back tomorrow' plays over it through the horn. Chained from the approved boom clip's frame.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/CROWD6.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br20-crowd2",
+  "frame": 20,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:05:24.327Z"
+ }
+}

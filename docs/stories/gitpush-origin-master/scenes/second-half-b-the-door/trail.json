@@ -327,5 +327,51 @@
     ],
     "feedback": "feedback/bridge-picks-r6",
     "feedback_docs": 4
+  },
+  {
+    "at": "2026-11-04T18:05:00+00:00",
+    "stage": "timeline",
+    "round": 6,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "round 6 (1:28): aside reading 2, hum b, 4 talking re-shoots with the horn hanging (br16-br19), Sandra's third phrase at x1.0; 5 video credits",
+    "rebuild": "python3 scripts/gpom/second-half-video/cut-bridge.py --round 6 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door /tmp/claude-1000/-home-kai-projects-badcode-badcode/d5544cdc-7aae-4f3b-b8a6-a6114b83a0b6/scratchpad/bridge-timeline"
+  },
+  {
+    "at": "2026-11-04T18:20:00+00:00",
+    "stage": "timeline",
+    "round": 6,
+    "what": "Kai's 2 new timeline round 6 notes (39 docs dumped), dumped to feedback/bridge-timeline-r6",
+    "decided": [
+      "Kai 4 Nov: 'This is perfect, apart from' the crowd shot's horn not hanging; Sandra's lip-sync 'all over the shop'; 'the old lady scene next is perfect'"
+    ],
+    "feedback": "feedback/bridge-timeline-r6",
+    "feedback_docs": 39
+  },
+  {
+    "at": "2026-11-04T18:21:00+00:00",
+    "stage": "timeline",
+    "round": 7,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "round 7 (1:28): crowd shot re-shot from br14's frame (br20, first 1.8 s ping-pong), Sandra in four pieces; 1 video credit",
+    "rebuild": "python3 scripts/gpom/second-half-video/cut-bridge.py --round 7 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door /tmp/claude-1000/-home-kai-projects-badcode-badcode/d5544cdc-7aae-4f3b-b8a6-a6114b83a0b6/scratchpad/bridge-timeline"
+  },
+  {
+    "at": "2026-11-04T18:40:00+00:00",
+    "stage": "timeline",
+    "round": 7,
+    "what": "Kai's 1 new timeline round 7 note (40 docs dumped), dumped to feedback/bridge-timeline-r7",
+    "decided": [
+      "Kai 4 Nov: 'one note about voice syncing, but apart from that, we're there'; Sandra's first sentence is choppy, regenerate the audio to the clip's timing"
+    ],
+    "feedback": "feedback/bridge-timeline-r7",
+    "feedback_docs": 40
+  },
+  {
+    "at": "2026-11-04T18:41:00+00:00",
+    "stage": "timeline",
+    "round": 8,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "round 8 (1:28): Sandra's first sentence = one fitted take (voices-sandra-fit.json, take c); no video credits",
+    "rebuild": "python3 scripts/gpom/second-half-video/cut-bridge.py --round 8 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door /tmp/claude-1000/-home-kai-projects-badcode-badcode/d5544cdc-7aae-4f3b-b8a6-a6114b83a0b6/scratchpad/bridge-timeline"
   }
 ]

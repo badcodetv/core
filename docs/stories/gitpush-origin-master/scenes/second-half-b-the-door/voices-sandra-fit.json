@@ -1,0 +1,91 @@
+{
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "text": "If there's a way to fix this, I'd love to take it.",
+ "anchor": {
+  "fix": 1.22,
+  "i'd": 2.6,
+  "take": 3.5
+ },
+ "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: wry and tired, deadpan; an even, unhurried pace; after 'fix this,' she stops for a real beat, almost a second, as if weighing it, then 'I'd love to take it.' quietly and flatly.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: even, unhurried.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+ "pick": "c",
+ "takes": [
+  {
+   "take": "a",
+   "file": "sandra-fit/16a-woman-a.wav",
+   "duration": 5.12,
+   "heard": "if there's a way to fix this i'd love to take it",
+   "first_word": 0.0,
+   "rel": {
+    "fix": 1.62,
+    "i'd": 3.02,
+    "take": 4.0
+   },
+   "err": 1.32
+  },
+  {
+   "take": "b",
+   "file": "sandra-fit/16a-woman-b.wav",
+   "duration": 5.48,
+   "heard": "if there's a way to fix this i'd love to take it",
+   "first_word": 0.0,
+   "rel": {
+    "fix": 1.48,
+    "i'd": 2.86,
+    "take": 4.32
+   },
+   "err": 1.34
+  },
+  {
+   "take": "c",
+   "file": "sandra-fit/16a-woman-c.wav",
+   "duration": 4.88,
+   "heard": "if there's a way to fix this i'd love to take it",
+   "first_word": 0.0,
+   "rel": {
+    "fix": 1.28,
+    "i'd": 2.7,
+    "take": 3.74
+   },
+   "err": 0.4
+  },
+  {
+   "take": "d",
+   "file": "sandra-fit/16a-woman-d.wav",
+   "duration": 5.48,
+   "heard": "if there's a way to fix this i'd love to take it",
+   "first_word": 0.0,
+   "rel": {
+    "fix": 1.46,
+    "i'd": 3.16,
+    "take": 4.38
+   },
+   "err": 1.68
+  },
+  {
+   "take": "e",
+   "file": "sandra-fit/16a-woman-e.wav",
+   "duration": 5.92,
+   "heard": "if there's a way to fix this i'd love to take it",
+   "first_word": 0.0,
+   "rel": {
+    "fix": 1.3,
+    "i'd": 3.12,
+    "take": 4.44
+   },
+   "err": 1.54
+  },
+  {
+   "take": "f",
+   "file": "sandra-fit/16a-woman-f.wav",
+   "duration": 5.44,
+   "heard": "if there's a way to fix this i'd love to take it",
+   "first_word": 0.0,
+   "rel": {
+    "fix": 1.36,
+    "i'd": 3.12,
+    "take": 4.28
+   },
+   "err": 1.44
+  }
+ ]
+}

@@ -13,7 +13,7 @@
    "length": "3:58",
    "state": "in Premiere",
    "tone": "premiere",
-   "premiere": "gpom-1-track-and-off-switch (was gpom-s01); runs straight into gpom-2-A-killbots-r10",
+   "premiere": "01 GPOM start (was gpom-s01); runs straight into 03 GPOM story A kill bots r11",
    "what": "Kai cuts this himself in Premiere. The drum & bass track is the downfall (Kai, 15 Oct). It was made before timeline pages existed, so there's no timeline page; the boards that fed each part are below.",
    "parts": [
     {
@@ -65,7 +65,7 @@
      "id": "mv-rest",
      "name": "MV ending: Swindon to orbit (music video only)",
      "at": "2:42",
-     "state": "in Premiere: gpom-1b-mv-ending-r1",
+     "state": "in Premiere: 02 GPOM music end r1",
      "tone": "wip",
      "what": "After the Swindon war the music video leaves the story: the red army takes the land, the sky, then the planet, ending in orbit on the opening's satellite. Night. Mood board: https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
      "scene": "scenes/mv-ending",
@@ -87,7 +87,7 @@
    "name": "Five years later: the off switch, Maddie explains",
    "state": "in Premiere",
    "tone": "premiere",
-   "premiere": "inside gpom-1-track-and-off-switch, its last stretch (Kai, 26 Oct)",
+   "premiere": "inside 01 GPOM start, its last stretch (Kai, 26 Oct)",
    "what": "The bright fake Swindon, the glitch, the delivery bot (Maddie) explains. Kai's cut, no timeline page.",
    "history": [
     {
@@ -102,13 +102,13 @@
    "id": "a-killbots",
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "A · Kill bots",
-   "length": "3:11",
-   "state": "round 13: overhead road rubble-strewn again",
+   "length": "3:00",
+   "state": "signed off (round 14): in Premiere as 03 GPOM story A kill bots r11",
    "tone": "wip",
    "scene": "scenes/second-half-a-killbots",
    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
-   "premiere": "gpom-story.prproj · sequence gpom-2-A-killbots-r10 (same-named bin, radio music left out); r2 to r9 in \"zz old sequences\"",
-   "what": "Maddie on the high street (her intro, cut between front, side and overhead views at sentence ends; draft 1I: the regret, no storyverse name or time machine yet; real speed, 8 s of his tune first), the kill-bot HUD, the toilet-seat row (lip sync re-made: new clips sized to the voices), the race, the wide approach (your still pick wa-02), the stand-down re-shot from your still pick sd-01 (brakes dead, no reversing; NEW OBJECTIVE / SUSTAIN ORGANIC LIFE), then the wide retreat (rt-01c-2). Round 13 (the overhead re-made with rubble on the road, slow) is on the page and in Premiere as gpom-2-A-killbots-r10: note it there.",
+   "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r11 (same-named bin, radio music left out); r2 to r10 in \"zz old sequences\"",
+   "what": "Maddie on the high street (her intro, cut between front, side and overhead views at sentence ends; draft 1I: the regret, no storyverse name or time machine yet; real speed, 8 s of his tune first), the kill-bot HUD, the toilet-seat row (lip sync re-made: new clips sized to the voices), the race, the wide approach (your still pick wa-02), the stand-down re-shot from your still pick sd-01 (brakes dead, no reversing; NEW OBJECTIVE / SUSTAIN ORGANIC LIFE), then the wide retreat (rt-01c-2). Round 14 (one line cut: \"And so did you\" goes straight to \"Anyway!\") is on the page and in Premiere as 03 GPOM story A kill bots r11: note it there.",
    "history": [
     {
      "name": "Dialogue options (the intro and the doorstep)",
@@ -170,8 +170,8 @@
    "id": "b-door",
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "B · The bridge: Maddie at the door",
-   "length": "1:25",
-   "state": "round 6: picks waiting (Maddie's aside x10, the hum, horn-down stills); then 4 talking re-shoots (4 Nov)",
+   "length": "1:28",
+   "state": "round 8: Sandra's first sentence as one fitted take; Kai: \"apart from that, we're there\" (4 Nov)",
    "tone": "wip",
    "scene": "scenes/second-half-b-the-door",
    "timeline": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
@@ -197,7 +197,7 @@
    "group": "Part 3 · The ending",
    "name": "The whole ending, end to end (C + D + E)",
    "length": "2:49",
-   "state": "signed off · in Premiere: gpom-4-C-walkout-r2, D-rough1, E-rough2",
+   "state": "signed off · in Premiere: 05 GPOM story C walk out r2, D-rough1, E-rough2",
    "tone": "premiere",
    "scene": "scenes/second-half-ending-reel",
    "timeline": "https://claude.ai/artifact/R3zv1wejHA1pU7CSz39bta",
@@ -206,7 +206,7 @@
     {
      "id": "c-walk-out",
      "name": "C · The walk out",
-     "state": "round 7: opens on \"Some negotiation later.\" (0:47) · Premiere gpom-4-C-walkout-r2",
+     "state": "round 8: card cut, opens on the walk; Maddie still over the brow (0:44) · page ahead of Premiere (r3 not built yet; 05 GPOM story C walk out r2 is round 7)",
      "tone": "wip",
      "scene": "scenes/second-half-c-walk-out",
      "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
@@ -234,8 +234,16 @@
   "project": "gpom-story.prproj (D:\\badcode-videos\\gitpush-origin-master)",
   "other": [
    {
-    "sequence": "gpom-1-track-and-off-switch",
-    "what": "Kai's cut: the opening, the push, the drop, the banks, the war, then five years later and the off switch (4:40). Was gpom-s01. Its end runs straight into gpom-2-A-killbots-r10"
+    "sequence": "00 RENDER music video",
+    "what": "The music video, ready to export (built 4 Nov): 01 GPOM start up to 2:42 (the war), then 02 GPOM music end. Nested, so it follows any change to those two. 3:52."
+   },
+   {
+    "sequence": "00 RENDER story",
+    "what": "The story film, ready to export (built 4 Nov): all of 01 GPOM start (4:40), then A, C, D, E (B, the bridge, goes in after A once it is built). Nested, so it follows any change to the scenes. 10:30 without B."
+   },
+   {
+    "sequence": "01 GPOM start",
+    "what": "Kai's cut: the opening, the push, the drop, the banks, the war, then five years later and the off switch (4:40). Was gpom-s01, then gpom-1-track-and-off-switch. Its end runs straight into 03 GPOM story A kill bots r11"
    },
    {
     "sequence": "gpom-the-gaze-cut-46",

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/CROWD6.jpg",
+ "made": "2026-11-04T18:04:55+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br14-boom2-BR4-boomstart.mp4",
+ "why": "chain frame from the approved boom clip br14 at 3.3 s (horn hanging): start of the crowd shot re-shoot (Kai r6 at1665)",
+ "settings": {
+  "t": "3.3"
+ }
+}

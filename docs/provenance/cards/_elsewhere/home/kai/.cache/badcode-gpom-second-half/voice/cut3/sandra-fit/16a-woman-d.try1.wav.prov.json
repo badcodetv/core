@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/sandra-fit/16a-woman-d.try1.wav",
+ "made": "2026-11-04T18:23:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "If there's a way to fix this, I'd love to take it.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: wry and tired, deadpan; an even, unhurried pace; after 'fix this,' she stops for a real beat, almost a second, as if weighing it, then 'I'd love to take it.' quietly and flatly.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: even, unhurried.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/sandra-fit/16a-woman-d.md"
+ },
+ "settings": {
+  "voice": "Autonoe",
+  "temperature": 1,
+  "channels": 2
+ }
+}

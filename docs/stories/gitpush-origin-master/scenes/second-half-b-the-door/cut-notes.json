@@ -1,29 +1,19 @@
 {
   "about": "The bridge (draft 1G) timeline rounds, from 3 Nov 2026. The old doorstep's rounds (Oct) are in cut-notes-2026-10-28-old-door.json.",
-  "round": 6,
+  "round": 8,
   "plan": [
     {
-      "h": "Round 6: picks first (the cut below is still round 5)",
+      "h": "Round 8 (1:28)",
       "items": [
-        "Picks page: https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S",
-        "Ten readings of Maddie's \"…And everything else.\", all subdued, apologetic, serious and regretful.",
-        "Three versions of the old lady's \"Hmm…\" before \"Perhaps we should vote.\"",
-        "New stills with the horn hanging down after the boom (and no cap on the man next to the old lady)."
-      ]
-    },
-    {
-      "h": "Then",
-      "items": [
-        "Re-shoot the four talking clips from the picked stills: the old lady's \"Derek, go and have a look\" and her vote, and Sandra's two halves. That's 4 video credits.",
-        "Lip-sync them again, frame by frame, with the same method as round 4.",
-        "The crowd shot under the horn (\"Right, I'll come back tomorrow\") already has it bent down, so it stays."
+        "Sandra's \"If there's a way to fix this, I'd love to take it.\" is a fresh take in her voice, directed with a beat after \"fix this,\". Of six takes, I picked the one whose words land closest to her mouth. It goes in as one unbroken take: no pieces, nothing sped up or slowed down.",
+        "Everything else is as round 7. No video credits."
       ]
     },
     {
       "h": "You decide",
       "items": [
-        "Pick on the picks page; that's the go for the 4 credits.",
-        "Premiere waits until this round is in."
+        "If this is it: I'll freeze the recipe (so the whole scene can be rebuilt later) and build it into Premiere as \"04 GPOM story B bridge r1\", after checking with the other session.",
+        "Her line in scene D is still in the old posh voice. Re-voice it? (The other session's scene.)"
       ]
     }
   ],
@@ -64,9 +54,12 @@
     "at972": "Round 5: done. I re-measured the screen: the black box was about 15 px too small each way. It now covers the whole red screen up to the bezel. After the boom the dead screen's red rim is greyed out until the dust hides it.",
     "at1221": "Round 5: done. Same fix: the green film now fills the whole screen to the bezel, with no red edge.",
     "at1890": "Round 5: done. Her first frame is held for a moment, so there's about half a second of quiet after \"grumpy Derek\" before \"Perhaps we should vote\". Her lips still match.",
-    "at126": "Round 6: ten readings are on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S), each a different way into subdued, apologetic, serious and regretful: a confession, a catch in the throat, a flat verdict, a child owning up, slow and careful, rueful understatement, a mourner, a formal apology, a long exhale, tender. Each is played through the tannoy, as in the film. Pick one.",
-    "at1408": "Round 6: agreed, this needs a re-shoot. A new still is on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S): the horn hangs down and the man on the right has no cap. Once you pick it, I'll make the new clip (1 credit) and lip-sync it again. Her vote shot comes from the same still, so it gets fixed too.",
-    "at1960": "Round 6: three versions of her \"Hmm…\" are on the picks page. It goes over her closed mouth before \"Perhaps we should vote\", so the pause is there and the lips still match. The horn: checked every shot after the boom. The old lady's two shots and Sandra's two have it upright; the crowd shot before Sandra has it bent. New stills for those four are on the picks page, then re-shoots (4 credits in all)."
+    "at126": "Round 6: ten readings are on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S), each a different way into subdued, apologetic, serious and regretful: a confession, a catch in the throat, a flat verdict, a child owning up, slow and careful, rueful understatement, a mourner, a formal apology, a long exhale, tender. Each is played through the tannoy, as in the film. Pick one. Round 6: done, your pick (reading 2, a catch in the throat) is in.",
+    "at1408": "Round 6: agreed, this needs a re-shoot. A new still is on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S): the horn hangs down and the man on the right has no cap. Once you pick it, I'll make the new clip (1 credit) and lip-sync it again. Her vote shot comes from the same still, so it gets fixed too. Round 6: done. Re-shot from your still A: the horn hangs, the man is bareheaded, and the line runs at natural speed on her mouth.",
+    "at1960": "Round 6: three versions of her \"Hmm…\" are on the picks page. It goes over her closed mouth before \"Perhaps we should vote\", so the pause is there and the lips still match. The horn: checked every shot after the boom. The old lady's two shots and Sandra's two have it upright; the crowd shot before Sandra has it bent. New stills for those four are on the picks page, then re-shoots (4 credits in all). Round 6: done. Your hum B sits on her pressed lips (this take thinks for about 1.5 s before speaking), then the line. All four shots after the boom now have the horn hanging.",
+    "at1665": "Round 7: done. Re-shot from the approved boom clip's frame, so the horn hangs and the dust is settling. Flow swung the horn back up 2 s in, so I use the first 1.8 s forward then back (it sways gently). 1 credit.",
+    "at1803": "Round 7: done. Your eye was right, it drifted. Her mouth draws \"I'd\" as one long held shape, so the two big phrases slid against it. Her line is now four pieces, each starting where her mouth (and the clip's own voice) starts that word: \"If there's a way to\" at 1.08 s, \"fix this,\" at 2.32, \"I'd love to\" at 3.82, \"take it.\" at 4.60. Nothing is sped up or slowed down.",
+    "at1788": "Round 8: done. A fresh take, timed to the clip rather than cut up: six new reads with a beat after \"fix this,\", scored against her mouth. Take C lands \"fix\" at 2.32 (her mouth 2.30), \"I'd\" at 3.86 inside her long held \"I'd\", \"take\" at 4.76 (her mouth 4.58, a touch late, never early). One piece, natural speed."
   },
   "kai_round1": {
     "at2048": {
@@ -310,7 +303,7 @@
       "items": [
         "Length: 91 s. The longest stretch left is the tannoy exchange (24 s). Trim there, or is the length fine now?",
         "Her one line in scene D is still the old (posh) voice. Re-voice it so she's one person? (It's the other session's scene; I'd ask it.)",
-        "Build it into Premiere as gpom-3-B-bridge-r1 once you're happy? (I'll check with the other session that Premiere is free first.)"
+        "Build it into Premiere as 04 GPOM story B bridge r1 once you're happy? (I'll check with the other session that Premiere is free first.)"
       ]
     }
   ],
@@ -360,7 +353,7 @@
     {
       "h": "You decide",
       "items": [
-        "Build it into Premiere as gpom-3-B-bridge-r1 now? (I'll check with the other session that Premiere is free first.)",
+        "Build it into Premiere as 04 GPOM story B bridge r1 now? (I'll check with the other session that Premiere is free first.)",
         "Her one line in scene D is still in the old posh voice. Re-voice it so she's one person? (It's the other session's scene, so I'd ask it.)"
       ]
     }
@@ -421,7 +414,7 @@
     {
       "h": "You decide",
       "items": [
-        "Build it into Premiere as gpom-3-B-bridge-r1 now? (I'll check with the other session first.)",
+        "Build it into Premiere as 04 GPOM story B bridge r1 now? (I'll check with the other session first.)",
         "The boom clip: keep it, or re-roll it (1 credit) for the horn and the second bulb?",
         "Her line in scene D is still in the old posh voice. Re-voice it? (The other session's scene.)"
       ]
@@ -485,7 +478,7 @@
     {
       "h": "You decide",
       "items": [
-        "Build it into Premiere as gpom-3-B-bridge-r1 now? (I'll check with the other session first.)",
+        "Build it into Premiere as 04 GPOM story B bridge r1 now? (I'll check with the other session first.)",
         "The boom clip: keep it, or re-roll it (1 credit)?",
         "Her line in scene D is still in the old posh voice. Re-voice it? (The other session's scene.)"
       ]
@@ -528,5 +521,146 @@
     "at972": "Round 5: done. I re-measured the screen: the black box was about 15 px too small each way. It now covers the whole red screen up to the bezel. After the boom the dead screen's red rim is greyed out until the dust hides it.",
     "at1221": "Round 5: done. Same fix: the green film now fills the whole screen to the bezel, with no red edge.",
     "at1890": "Round 5: done. Her first frame is held for a moment, so there's about half a second of quiet after \"grumpy Derek\" before \"Perhaps we should vote\". Her lips still match."
+  },
+  "kai_round6": {
+    "at1665": "This is perfect, apart from this, the megaphone here is not hanging downwards, it's facing still like it's not broken.",
+    "at1803": "Okay, so we now have the right background, but the lip-syncing here is suffering a bit. It feels like we've done a slight, I can't describe exactly, it's just all over the shop rather than too fast, too slow. It's varyingly not correct. Could we maybe try the lip-syncing again on this scene? The old lady scene next is perfect."
+  },
+  "plan_round6": [
+    {
+      "h": "Round 6 (1:28, was 1:25)",
+      "items": [
+        "Maddie's \"…And everything else.\" is your pick: reading 2, a catch in the throat.",
+        "The old lady's two shots and Sandra's two are re-shot from your stills: the horn hangs down after the boom, and there's no cap.",
+        "\"Hmmm…\" (your pick B) over her pressed lips, then \"Perhaps we should vote.\" There's about 0.7 s of quiet after \"grumpy Derek\".",
+        "Sandra's \"It sucks living in this bunker…\" now plays at normal speed. Her new mouth matches it, so the 88% slow-down is gone.",
+        "5 video credits: 4 clips, plus 1 because Flow mixed up the first Derek clip (that extra vote take turned out to be the better one, so it's the one in the cut)."
+      ]
+    },
+    {
+      "h": "Watch for",
+      "items": [
+        "Sandra's \"I'd love to take it\": her mouth stays open and fairly still through that stretch, so it's placed approximately. If it reads off, say early or late, or I can re-roll her first half (1 credit).",
+        "Nobody has listened to the new aside and hum in the mix yet."
+      ]
+    },
+    {
+      "h": "You decide",
+      "items": [
+        "Build it into Premiere as 04 GPOM story B bridge r1? (I'll check with the other session first.)",
+        "The boom clip: keep it, or re-roll it (1 credit)?",
+        "Her line in scene D is still in the old posh voice. Re-voice it? (The other session's scene.)"
+      ]
+    }
+  ],
+  "replies_round6": {
+    "at65": "Round 2: done. Agreed. The static bed goes almost silent, and I'm turning down the crackle inside her tannoy voice. Free.",
+    "at426": "Round 2: done. A new clip of her shouting \"Are you literally joking?\" (from her old close-up), voiced in her new voice.",
+    "at522": "Round 2: done. Will do: it'll be lightly muffled, so you clearly hear her through the door. Free.",
+    "at614": "Round 2: done. Same fix as the first note: static nearly gone.",
+    "at960": "Round 2: done. Agreed: the TV is off (dark glass) until the film starts, so there's no static overlay. Free (ffmpeg).",
+    "at1187": "Round 2: done. Got it: the confusion is our new charge clip ending right at the door, then scene A's shot starting further back. I'm dropping the first half: only A's shot, the race against the door, brake, flip. About 5 s. Free.",
+    "at1317": "Round 2: done. Yes: one fix for all of Maddie's tannoy lines.",
+    "at1371": "Round 2: done. Keeping the shot. The TV goes back to off (dark glass), tracked through the jolt, so the falling horn is the focus. Free.",
+    "at1463": "Round 2: done. New line, the old lady to Derek: \"Derek, go and have a look what that was.\" She needs a talking shot in the crowd (new still + clip).",
+    "at1477": "Round 2: done. Halving it: a brief look, then the view.",
+    "at1549": "Round 2: done. New line over the view: Derek, \"They've blown up their own kill bot.\" Kept simple, as you said. Shout if you want \"It's just the delivery robot out there\" too.",
+    "at1577": "Round 2: done. Yes: the view is Derek's line. Then we cut back inside to the crowd under the angled horn, and Maddie's \"Right. I'll come back tomorrow.\" comes through the tannoy.",
+    "at1677": "Round 2: done. Yes: back in the group under the (now angled) tannoy, Sandra seen saying it, no swearing: \"If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.\" Needs a Sandra talking shot.",
+    "at1911": "Round 2: done. Re-voicing her with no pause (her take had a 1.5 s gap) and a quicker read, and she gets her own shot in the crowd.",
+    "at1949": "Round 2: done your way: no shot of his own; on Sandra's second clip Derek leans in with his hands up as he says \"Oi.\"",
+    "at2048": "Round 2: done. Vindemiatrix (Yorkshire), your pick; the new words; two lip-synced clips (the second punched in a little).",
+    "at2254": "Round 2: done. Yes: no long pauses, a brisk read; the new words are already about half the length.",
+    "at40": "Round 3: done. Now \"Hello there, sorry about the intrusion.\", re-voiced coy and apologetic, not the party host. (New voice take, no credits.)",
+    "at424": "Round 3: done. Found it: Maddie's line was running into the old lady's shot, which pushed her voice 1.7 s late. The door shot now holds until Maddie stops, and the shout lands on her mouth's first movement (read by eye, frame by frame). Round 4: see the newer note just before it.",
+    "at1128": "Round 3: done. The TV film is now scene A's newest stand-down (A-d8, the bot far from the door), the same shot as A's ending. (Edit only.)",
+    "at1269": "Round 3: done. A new boom clip made from the room shot's very last frame, so nobody jumps. The film stays on the TV through the cut, and the jolt kills it. (1 credit.) Watch the horn: it drops further than before, and a second bulb appears.",
+    "at1718": "Round 3: done. Her voice was 0.9 s early. It's now in three phrases, each starting on its own mouth burst, read by eye. Round 4: see the newer note just before it.",
+    "at1795": "Round 3: done. Her second half is a new clip made from the first clip's last frame, so the cut doesn't jump. (1 credit.)",
+    "at1827": "Round 3: done. Same fix as above. The new second clip's mouth moves a touch slower than her voice, so that phrase is eased to 88% speed. Say if she sounds slow.",
+    "at1902": "Round 3: done. \"Oi\" is gone, so it cuts straight from \"grumpy Derek\" to the old lady.",
+    "at1952": "Round 3: done. Now just \"We do have a food problem. Perhaps we should vote.\", on one clip, in the same voice and read as her \"Derek, go and have a look\" line (same voice, new take). (No credits.) Round 4: now just \"Perhaps we should vote.\" (see at1942).",
+    "at772": "An old note from the first door scene (Oct); it was handled then.",
+    "b17": "An old note from the first door scene (Oct); it was handled then. The time machine now comes in scene D.",
+    "at407": "Round 4: done. You're right: her lips part at 0.4 s but don't move, so that isn't speech. The first real opening (\"Are\") is at 0.92 s. Her voice now starts there, 0.3 s later than before. (Edit only, no credits.)",
+    "at1764": "Round 4: done. Her mouth is shut from 2.75 to 3.6 s, and \"I'd\" opens at 3.67. The second half was placed at 3.40, which made it 0.27 s early. It now starts at 3.67. Only that phrase moved; the rest is untouched, so no chasing our tail.",
+    "at1942": "Round 4: done. She says only \"Perhaps we should vote.\" The food-problem line is gone, and the shot is cut so that we never see her mouth it. (Same take, no credits.)",
+    "at125": "Round 5: done. Re-voiced as the punchline, said sincerely and straight, every word landing. Of three new takes I picked the one that ends as a statement (the other two went up like a question). One Gemini voice take, no video credits.",
+    "at519": "Round 5: done. Louder (+6 dB) and much less muffled: the door filter now cuts far less of the voice, so the words land first and the door is just a hint.",
+    "at972": "Round 5: done. I re-measured the screen: the black box was about 15 px too small each way. It now covers the whole red screen up to the bezel. After the boom the dead screen's red rim is greyed out until the dust hides it.",
+    "at1221": "Round 5: done. Same fix: the green film now fills the whole screen to the bezel, with no red edge.",
+    "at1890": "Round 5: done. Her first frame is held for a moment, so there's about half a second of quiet after \"grumpy Derek\" before \"Perhaps we should vote\". Her lips still match.",
+    "at126": "Round 6: ten readings are on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S), each a different way into subdued, apologetic, serious and regretful: a confession, a catch in the throat, a flat verdict, a child owning up, slow and careful, rueful understatement, a mourner, a formal apology, a long exhale, tender. Each is played through the tannoy, as in the film. Pick one. Round 6: done, your pick (reading 2, a catch in the throat) is in.",
+    "at1408": "Round 6: agreed, this needs a re-shoot. A new still is on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S): the horn hangs down and the man on the right has no cap. Once you pick it, I'll make the new clip (1 credit) and lip-sync it again. Her vote shot comes from the same still, so it gets fixed too. Round 6: done. Re-shot from your still A: the horn hangs, the man is bareheaded, and the line runs at natural speed on her mouth.",
+    "at1960": "Round 6: three versions of her \"Hmm…\" are on the picks page. It goes over her closed mouth before \"Perhaps we should vote\", so the pause is there and the lips still match. The horn: checked every shot after the boom. The old lady's two shots and Sandra's two have it upright; the crowd shot before Sandra has it bent. New stills for those four are on the picks page, then re-shoots (4 credits in all). Round 6: done. Your hum B sits on her pressed lips (this take thinks for about 1.5 s before speaking), then the line. All four shots after the boom now have the horn hanging."
+  },
+  "kai_round7": {
+    "at1788": "Okay, I think the It Sucks Living In This Bunker It's Grumpy Derek is lip-synced perfectly. But the section before feels like it's very much cutting the audio up to try and lip-sync. It feels like we should be able to regenerate the audio to the specific time, maybe, and position the audio so that the lip-syncing... Just on the first sentence, if there's a way to fix this, I'd love to take it. That's the bit that's sort of choppy."
+  },
+  "plan_round7": [
+    {
+      "h": "Round 7 (1:28)",
+      "items": [
+        "The crowd shot under the horn (\"Right. I'll come back tomorrow.\") is re-shot from the boom clip's own frame, so the horn hangs. 1 credit.",
+        "Sandra's first half is re-synced in four pieces, each starting on its own word: \"If there's a way to\" / \"fix this,\" / \"I'd love to\" / \"take it.\" No credits."
+      ]
+    },
+    {
+      "h": "Watch for",
+      "items": [
+        "In the new crowd clip, Flow swung the horn back up at about 2 s. So the shot uses only its first 1.8 s, played forward then back (the striped clip on V1). The horn just sways gently. Say if you'd rather have a re-roll (1 credit).",
+        "Sandra: her clip holds a long open mouth on \"I'd\", so \"I'd love to\" sits at the end of that hold."
+      ]
+    },
+    {
+      "h": "You decide",
+      "items": [
+        "Build it into Premiere as 04 GPOM story B bridge r1? (I'll check with the other session first.)",
+        "Her line in scene D is still in the old posh voice. Re-voice it? (The other session's scene.)"
+      ]
+    }
+  ],
+  "replies_round7": {
+    "at65": "Round 2: done. Agreed. The static bed goes almost silent, and I'm turning down the crackle inside her tannoy voice. Free.",
+    "at426": "Round 2: done. A new clip of her shouting \"Are you literally joking?\" (from her old close-up), voiced in her new voice.",
+    "at522": "Round 2: done. Will do: it'll be lightly muffled, so you clearly hear her through the door. Free.",
+    "at614": "Round 2: done. Same fix as the first note: static nearly gone.",
+    "at960": "Round 2: done. Agreed: the TV is off (dark glass) until the film starts, so there's no static overlay. Free (ffmpeg).",
+    "at1187": "Round 2: done. Got it: the confusion is our new charge clip ending right at the door, then scene A's shot starting further back. I'm dropping the first half: only A's shot, the race against the door, brake, flip. About 5 s. Free.",
+    "at1317": "Round 2: done. Yes: one fix for all of Maddie's tannoy lines.",
+    "at1371": "Round 2: done. Keeping the shot. The TV goes back to off (dark glass), tracked through the jolt, so the falling horn is the focus. Free.",
+    "at1463": "Round 2: done. New line, the old lady to Derek: \"Derek, go and have a look what that was.\" She needs a talking shot in the crowd (new still + clip).",
+    "at1477": "Round 2: done. Halving it: a brief look, then the view.",
+    "at1549": "Round 2: done. New line over the view: Derek, \"They've blown up their own kill bot.\" Kept simple, as you said. Shout if you want \"It's just the delivery robot out there\" too.",
+    "at1577": "Round 2: done. Yes: the view is Derek's line. Then we cut back inside to the crowd under the angled horn, and Maddie's \"Right. I'll come back tomorrow.\" comes through the tannoy.",
+    "at1677": "Round 2: done. Yes: back in the group under the (now angled) tannoy, Sandra seen saying it, no swearing: \"If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.\" Needs a Sandra talking shot.",
+    "at1911": "Round 2: done. Re-voicing her with no pause (her take had a 1.5 s gap) and a quicker read, and she gets her own shot in the crowd.",
+    "at1949": "Round 2: done your way: no shot of his own; on Sandra's second clip Derek leans in with his hands up as he says \"Oi.\"",
+    "at2048": "Round 2: done. Vindemiatrix (Yorkshire), your pick; the new words; two lip-synced clips (the second punched in a little).",
+    "at2254": "Round 2: done. Yes: no long pauses, a brisk read; the new words are already about half the length.",
+    "at40": "Round 3: done. Now \"Hello there, sorry about the intrusion.\", re-voiced coy and apologetic, not the party host. (New voice take, no credits.)",
+    "at424": "Round 3: done. Found it: Maddie's line was running into the old lady's shot, which pushed her voice 1.7 s late. The door shot now holds until Maddie stops, and the shout lands on her mouth's first movement (read by eye, frame by frame). Round 4: see the newer note just before it.",
+    "at1128": "Round 3: done. The TV film is now scene A's newest stand-down (A-d8, the bot far from the door), the same shot as A's ending. (Edit only.)",
+    "at1269": "Round 3: done. A new boom clip made from the room shot's very last frame, so nobody jumps. The film stays on the TV through the cut, and the jolt kills it. (1 credit.) Watch the horn: it drops further than before, and a second bulb appears.",
+    "at1718": "Round 3: done. Her voice was 0.9 s early. It's now in three phrases, each starting on its own mouth burst, read by eye. Round 4: see the newer note just before it.",
+    "at1795": "Round 3: done. Her second half is a new clip made from the first clip's last frame, so the cut doesn't jump. (1 credit.)",
+    "at1827": "Round 3: done. Same fix as above. The new second clip's mouth moves a touch slower than her voice, so that phrase is eased to 88% speed. Say if she sounds slow.",
+    "at1902": "Round 3: done. \"Oi\" is gone, so it cuts straight from \"grumpy Derek\" to the old lady.",
+    "at1952": "Round 3: done. Now just \"We do have a food problem. Perhaps we should vote.\", on one clip, in the same voice and read as her \"Derek, go and have a look\" line (same voice, new take). (No credits.) Round 4: now just \"Perhaps we should vote.\" (see at1942).",
+    "at772": "An old note from the first door scene (Oct); it was handled then.",
+    "b17": "An old note from the first door scene (Oct); it was handled then. The time machine now comes in scene D.",
+    "at407": "Round 4: done. You're right: her lips part at 0.4 s but don't move, so that isn't speech. The first real opening (\"Are\") is at 0.92 s. Her voice now starts there, 0.3 s later than before. (Edit only, no credits.)",
+    "at1764": "Round 4: done. Her mouth is shut from 2.75 to 3.6 s, and \"I'd\" opens at 3.67. The second half was placed at 3.40, which made it 0.27 s early. It now starts at 3.67. Only that phrase moved; the rest is untouched, so no chasing our tail.",
+    "at1942": "Round 4: done. She says only \"Perhaps we should vote.\" The food-problem line is gone, and the shot is cut so that we never see her mouth it. (Same take, no credits.)",
+    "at125": "Round 5: done. Re-voiced as the punchline, said sincerely and straight, every word landing. Of three new takes I picked the one that ends as a statement (the other two went up like a question). One Gemini voice take, no video credits.",
+    "at519": "Round 5: done. Louder (+6 dB) and much less muffled: the door filter now cuts far less of the voice, so the words land first and the door is just a hint.",
+    "at972": "Round 5: done. I re-measured the screen: the black box was about 15 px too small each way. It now covers the whole red screen up to the bezel. After the boom the dead screen's red rim is greyed out until the dust hides it.",
+    "at1221": "Round 5: done. Same fix: the green film now fills the whole screen to the bezel, with no red edge.",
+    "at1890": "Round 5: done. Her first frame is held for a moment, so there's about half a second of quiet after \"grumpy Derek\" before \"Perhaps we should vote\". Her lips still match.",
+    "at126": "Round 6: ten readings are on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S), each a different way into subdued, apologetic, serious and regretful: a confession, a catch in the throat, a flat verdict, a child owning up, slow and careful, rueful understatement, a mourner, a formal apology, a long exhale, tender. Each is played through the tannoy, as in the film. Pick one. Round 6: done, your pick (reading 2, a catch in the throat) is in.",
+    "at1408": "Round 6: agreed, this needs a re-shoot. A new still is on the picks page (https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S): the horn hangs down and the man on the right has no cap. Once you pick it, I'll make the new clip (1 credit) and lip-sync it again. Her vote shot comes from the same still, so it gets fixed too. Round 6: done. Re-shot from your still A: the horn hangs, the man is bareheaded, and the line runs at natural speed on her mouth.",
+    "at1960": "Round 6: three versions of her \"Hmm…\" are on the picks page. It goes over her closed mouth before \"Perhaps we should vote\", so the pause is there and the lips still match. The horn: checked every shot after the boom. The old lady's two shots and Sandra's two have it upright; the crowd shot before Sandra has it bent. New stills for those four are on the picks page, then re-shoots (4 credits in all). Round 6: done. Your hum B sits on her pressed lips (this take thinks for about 1.5 s before speaking), then the line. All four shots after the boom now have the horn hanging.",
+    "at1665": "Round 7: done. Re-shot from the approved boom clip's frame, so the horn hangs and the dust is settling. Flow swung the horn back up 2 s in, so I use the first 1.8 s forward then back (it sways gently). 1 credit.",
+    "at1803": "Round 7: done. Your eye was right, it drifted. Her mouth draws \"I'd\" as one long held shape, so the two big phrases slid against it. Her line is now four pieces, each starting where her mouth (and the clip's own voice) starts that word: \"If there's a way to\" at 1.08 s, \"fix this,\" at 2.32, \"I'd love to\" at 3.82, \"take it.\" at 4.60. Nothing is sped up or slowed down."
   }
 }

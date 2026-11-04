@@ -45,10 +45,10 @@
     "storyboard": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r5/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r5/preview.mp4",
-    "how": "python3 scripts/gpom/second-half-video/voice-bridge.py --round 4 && python3 scripts/gpom/second-half-video/cut-bridge.py --round 5",
-    "what": "round 5: Kai's timeline r4 tweaks (4 Nov)"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/preview.mp4",
+    "how": "python3 scripts/gpom/second-half-video/voice-sandra-fit.py && python3 scripts/gpom/second-half-video/cut-bridge.py --round 8",
+    "what": "round 8: Kai's r7 note: Sandra's first sentence as one take fitted to her mouth (4 Nov)"
   },
   "premiere": {
     "rough1": {
@@ -163,9 +163,9 @@
   },
   "storyboard_intro": "The bridge (draft 1G): five shots, the stills you picked. Each has 2–3 ways to animate it; the recommended one is marked. Pick one option per frame (or note it). Nothing is spent until you have.",
   "cut_previous": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r4/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r4/preview.mp4",
-    "how": "python3 scripts/gpom/second-half-video/cut-bridge.py --round 4",
-    "what": "round 4: Kai's timeline r3 notes, lip-sync + the vote line (4 Nov)"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r7/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r7/preview.mp4",
+    "how": "python3 scripts/gpom/second-half-video/cut-bridge.py --round 7",
+    "what": "round 7: Kai's r6 notes: crowd shot's horn hanging, Sandra re-synced in four pieces (4 Nov)"
   }
 }
