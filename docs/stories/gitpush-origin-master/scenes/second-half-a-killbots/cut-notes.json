@@ -1,19 +1,19 @@
 {
   "about": "Kai's notes on the scene A (kill bots) timeline page https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
-  "round": 13,
+  "round": 14,
   "plan": [
     {
-      "h": "Round 13: your round 12 note (the overhead road)",
+      "h": "Round 14: your round 13 note (one line too many)",
       "items": [
-        "You said the road in the overhead was far too tidy next to the other shots. My bay-removal edit had wiped the rubble off the road too.",
-        "Fix: your still pick 9a (the clean overhead with rubble, potholes and weeds back across both lanes), animated again with Veo 3.1 Fast at the same slow crawl.",
-        "Overhead at 34.9 s: take b, which crawls. Overhead at 70.3 s: take a, slowed to three-quarter speed to match.",
-        "Everything else is round 12 as it was; the scene is the same 3:11."
+        "Cut: Maddie's line \"And now we've worked all that out... we really feel like we've messed this up. And wish we could go back and change things.\"",
+        "\"And so did you.\" now goes straight to \"Anyway! Patrol's out. Mind how you go.\", with the same pause as between her other lines.",
+        "The overhead shot that sat under that line goes with it, so the intro now has one overhead (0:35) and two side views. The last front stretch runs 18.5 s.",
+        "The scene is 10.75 s shorter: 3:00. Everything else is round 13."
       ]
     }
   ],
   "replies": {
-    "at1749": "Re-made from your still pick 9a: rubble, potholes and weeds back across the road, same slow crawl. Both overhead moments (0:35 and 1:10)."
+    "at1878": "Cut. \"And so did you\" goes straight to \"Anyway! Patrol's out. Mind how you go.\" The overhead under that line goes too."
   },
   "kai_round1": {
     "at3521": {
@@ -346,5 +346,22 @@
   },
   "kai_round13": {
     "at1749": "Hey Claude, so the problem with this shot is that the ground, the road, is far too tidy. On the other shots there's loads of debris and rocks and things on the street, whereas on this above shot the tarmac looks like it's just fresh and there's nothing actually on it, so we need to recut these with a much more rubble-strewn road, please."
+  },
+  "plan_round13": [
+    {
+      "h": "Round 13: your round 12 note (the overhead road)",
+      "items": [
+        "You said the road in the overhead was far too tidy next to the other shots. My bay-removal edit had wiped the rubble off the road too.",
+        "Fix: your still pick 9a (the clean overhead with rubble, potholes and weeds back across both lanes), animated again with Veo 3.1 Fast at the same slow crawl.",
+        "Overhead at 34.9 s: take b, which crawls. Overhead at 70.3 s: take a, slowed to three-quarter speed to match.",
+        "Everything else is round 12 as it was; the scene is the same 3:11."
+      ]
+    }
+  ],
+  "replies_round13": {
+    "at1749": "Re-made from your still pick 9a: rubble, potholes and weeds back across the road, same slow crawl. Both overhead moments (0:35 and 1:10)."
+  },
+  "kai_round14": {
+    "at1878": "I think we drop this. I think this is one line too many. I think we can go from We can cut that bit all entirely as it turns out there's only one universe so it really matters and and so did you and Then it then we can cut straight to Anyway mind how you go Patrols out mind how you go I think we can cut this part here because it's the bit that is a bit overindulgent in the dialogue"
   }
 }

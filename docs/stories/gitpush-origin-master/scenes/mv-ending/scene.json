@@ -123,7 +123,7 @@
   "premiere": {
     "current": "r1",
     "r1": {
-      "sequence": "gpom-1b-mv-ending-r1",
+      "sequence": "02 GPOM music end r1",
       "guid": "98e4c44c-3451-4395-8c5e-dc628ce2dded",
       "bin": "gpom-1b-mv-ending-r1",
       "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
@@ -135,7 +135,9 @@
         "at": "2026-11-04",
         "state": "in sync",
         "why": "17/17 V1 starts and in-points match the plan; V1 ends 68.54"
-      }
+      },
+      "was_named": "gpom-1b-mv-ending-r1",
+      "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     }
   }
 }

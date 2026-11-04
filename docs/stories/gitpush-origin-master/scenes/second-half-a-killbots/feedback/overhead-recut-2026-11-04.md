@@ -15,3 +15,6 @@ Plan: edit ia-top.png (no bays, clean, no grain) -> Kai approves still -> re-rol
 ## Round 12 note (Kai, 4 Nov)
 - at1749 @ 00:01:12:21: "the ground, the road, is far too tidy. On the other shots there's loads of debris and rocks and things on the street, whereas on this above shot the tarmac looks like it's just fresh and there's nothing actually on it, so we need to recut these with a much more rubble-strewn road, please."
 Read: the ia-07 edit cleared the road along with the bays (flagged to Kai at the time). Plan: edit ia-top2.png to put rubble back on the road (still no bay markings, no grain) -> still pick -> re-roll both overhead takes -> round 13.
+
+## Round 13 note (Kai, 4 Nov)
+- at1878 @ 00:01:18:06: drop script line 5 ("And now we've worked all that out... messed this up. And wish we could go back and change things") -- "one line too many... a bit overindulgent". "And so did you" -> "Anyway! Patrol's out. Mind how you go." Done in cut3.py --tag d12 (script.json keeps the line for older tags).

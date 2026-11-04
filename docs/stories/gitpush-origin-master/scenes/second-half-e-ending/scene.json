@@ -209,7 +209,7 @@
       "renamed_from": "gpom-sh-E-rough1"
     },
     "rough2": {
-      "sequence": "gpom-6-E-ending-r2",
+      "sequence": "07 GPOM story E ending r2",
       "bin": "gpom-6-E-ending-r2",
       "built": "2026-10-23",
       "what": "Parliament last shot under 'Now the real work starts.' + Flow-painted phone screens (overlay dropped)",
@@ -218,10 +218,12 @@
       "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut/edl.json",
       "renamed_from": "gpom-sh-E-rough2",
       "check": {
-        "at": "2026-11-04T17:48",
+        "at": "2026-11-04T18:17",
         "state": "in sync",
         "why": ""
-      }
+      },
+      "was_named": "gpom-6-E-ending-r2",
+      "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     },
     "current": "rough2"
   },

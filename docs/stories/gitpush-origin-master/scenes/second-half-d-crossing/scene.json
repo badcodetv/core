@@ -860,7 +860,7 @@
   },
   "premiere": {
     "rough1": {
-      "sequence": "gpom-5-D-crossing-r1",
+      "sequence": "06 GPOM story D crossing r1",
       "bin": "gpom-5-D-crossing-r1",
       "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
       "built": "2026-10-23",
@@ -869,10 +869,12 @@
       "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut/edl.json",
       "renamed_from": "gpom-sh-D-rough1",
       "check": {
-        "at": "2026-11-04T17:48",
+        "at": "2026-11-04T18:17",
         "state": "in sync",
         "why": ""
-      }
+      },
+      "was_named": "gpom-5-D-crossing-r1",
+      "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     },
     "current": "rough1"
   },

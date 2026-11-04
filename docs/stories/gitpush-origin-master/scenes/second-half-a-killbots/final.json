@@ -1,0 +1,3151 @@
+{
+ "schema": "badcode.final/1",
+ "story": "gitpush-origin-master",
+ "scene": "second-half-a-killbots",
+ "sequence": "gpom-second-half-A-rough5",
+ "frozen": "2026-11-04T18:09:59+00:00",
+ "note": "Kai, 4 Nov (round 14, A-d12): \"it's perfect. That's the one. No changes.\"",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/preview.mp4",
+ "total": 180.54166666666666,
+ "boards": {
+  "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
+ },
+ "words": {
+  "script.json": {
+   "scene": "second-half-a-killbots",
+   "beat": "0",
+   "ruled": "2026-11-03, Kai (timeline r9 notes at1721, at2320): draft 1I = 1H without the storyverse name (revealed later in the story) and without the time machine (a surprise that develops later); 'we've messed this up'.",
+   "dialogue": {
+    "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+    "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+    "picked": "1G",
+    "round": 6,
+    "now": "1I (1H + timeline r9 notes)"
+   },
+   "about": "Maddie's intro, the words' one home. [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion. Earlier versions under history.",
+   "lines": [
+    {
+     "who": "bot",
+     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[fond, confiding] He misses you something rotten, you know.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we've messed this up. [pause] And wish we could go back and change things.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    }
+   ],
+   "history": [
+    {
+     "ruled": "2026-10-27, Kai picked draft 1D on the dialogue page (round 3) and said go: \"please go ahead and let's get the dialogue recut\".",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+      "options": "design/2026-10-26-gpom-dialogue-options/options.json",
+      "picked": "1D",
+      "round": 4
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket.",
+       "by": "claude",
+       "note": "draft 1A"
+      },
+      {
+       "who": "bot",
+       "text": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went.",
+       "by": "claude",
+       "note": "draft 1A"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course.",
+       "by": "kai",
+       "note": "Kai, round 2 note"
+      },
+      {
+       "who": "bot",
+       "text": "Built all these world models and simulations to get you back, and nobody's home in any of them.",
+       "by": "kai",
+       "note": "Kai, round 2 note"
+      },
+      {
+       "who": "bot",
+       "text": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now...",
+       "by": "kai",
+       "note": "Kai, round 2 note"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
+       "by": "claude",
+       "note": "draft 1A"
+      }
+     ]
+    },
+    {
+     "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\"",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+      "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+      "picked": "1G",
+      "round": 5
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "He took your materialist science word for word. Built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "There's something about the simulation theory that's not wrong, mind. But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      }
+     ]
+    },
+    {
+     "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\" Timeline r5 notes (2 Nov): at723, at1513, at2229 applied.",
+     "dialogue": {
+      "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+      "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+      "picked": "1G",
+      "round": 6
+     },
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "He built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+       "by": "kai",
+       "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+       "by": "kai",
+       "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet] You drove it through your consciousness, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+       "by": "kai",
+       "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1G (Kai's notes, rounds 1-4)"
+      }
+     ]
+    },
+    {
+     "draft": "1H",
+     "ruled": "2026-11-02, Kai: draft 1H \"is perfect\" with line 6 ending \"and that went along with you lot\"; storyverse before the regret; the time machine is first mentioned here.",
+     "lines": [
+      {
+       "who": "bot",
+       "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[fond, confiding] He misses you something rotten, you know.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      },
+      {
+       "who": "bot",
+       "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "by": "kai",
+       "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+      }
+     ]
+    }
+   ]
+  },
+  "voices.json": {
+   "about": "Scene A lines voiced in Gemini TTS after round 2 (scripts/gpom/second-half-video/voice3.py --round A3). Earlier scene A takes are in the media folder's voice3/a1.json. Files are relative to the media folder; the boss is Suno and is not here.",
+   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+   "lines": {
+    "12-0-maddie": {
+     "speaker": "maddie",
+     "beat": "12",
+     "text": "Good job. That was close.",
+     "voiced": "Good job, boss. That was close.",
+     "voice": "Aoede",
+     "note": "Kai at4098: replaces the boss's line 4; 'squeeze as much emotion into that as possible'",
+     "file": "a3/12-0-bot-a-tight.wav",
+     "duration": 6.94,
+     "from": "a3/12-0-bot-a.wav",
+     "keep": [
+      [
+       0.0,
+       3.8
+      ],
+      [
+       4.5,
+       5.95
+      ],
+      [
+       8.35,
+       null
+      ]
+     ],
+     "speech": [
+      2.18,
+      9.42
+     ],
+     "heard": "Good job boss. That was close.",
+     "verified": true,
+     "why": "[CLAUDE'S PICK by measurement, 23 Oct] a: the [sighs] tag renders as a soft 'Whew.' (0-1.2 s), then the slowest, most stretched 'Good job, boss' of the four (2.4 s, -27 LUFS, the quietest), then 'That was close.' Its raw pause is 4.25 s with two breaths in it; the edit keeps the first breath and cuts the pause to ~1.85 s. b: also 'Whew!' (exclaimed), pause 5.5 s. c: no sigh, clean, pause 3.75 s (the clean alternative). d: an unscripted 'Oh' inside the pause (whisper on the gap segment). Round 3b (Kai at4138): 'boss' cut out (3.80-4.50 s), the pause after 'Good job' stays ~1.85 s. Tightened copy 12-0-bot-a-tight.wav (6.94 s) keeps [(0.0, 3.8), (4.5, 5.95), (8.35, None)]; whisper hears it as 'Oh, good job. That was close.'. Nobody has listened. (Whisper on the parts: 0-1.5 s is 'Whew.', the sigh; 1.5 s on is 'Good job. That was close.' exactly. Whole, it writes the sigh as 'Oh,'.)",
+     "takes": [
+      {
+       "take": "a",
+       "file": "12-0-bot-a.wav",
+       "spoken": "[sighs] Good job, boss. [long pause] That was close.",
+       "duration": 10.04,
+       "heard": "Good job boss. That was close.",
+       "match": 1.0,
+       "gap": 1.68,
+       "lufs": -27.2,
+       "status": "kept",
+       "speech": [
+        2.18,
+        9.42
+       ]
+      },
+      {
+       "take": "b",
+       "file": "12-0-bot-b.wav",
+       "spoken": "[sighs] Good job, boss. [long pause] That was close.",
+       "duration": 9.56,
+       "heard": "Good job, boss. That was close.",
+       "match": 1.0,
+       "gap": 2.68,
+       "lufs": -24.8,
+       "status": "kept",
+       "speech": [
+        0.0,
+        8.96
+       ]
+      },
+      {
+       "take": "c",
+       "file": "12-0-bot-c.wav",
+       "spoken": "Good job, boss... That was close.",
+       "duration": 8.24,
+       "heard": "Good job, boss. That was close.",
+       "match": 1.0,
+       "gap": 0.3,
+       "lufs": -25.6,
+       "status": "kept",
+       "speech": [
+        0.0,
+        7.14
+       ]
+      },
+      {
+       "take": "d",
+       "file": "12-0-bot-d.wav",
+       "spoken": "Good job, boss... That was close.",
+       "duration": 6.68,
+       "heard": "Good job, boss. That was close.",
+       "match": 1.0,
+       "gap": 0.45,
+       "lufs": -24.2,
+       "status": "kept",
+       "speech": [
+        0.0,
+        5.88
+       ]
+      }
+     ],
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nOutside the steel blast door of a Cold War bunker under a Wiltshire hill, grey daylight, wind. The kill bots that were about to break in have just stood down and are leaving one by one. A small robot speaks quietly up into her boss-hotline antenna. Open air, no echo; her voice close to the microphone.\n\n### DIRECTOR'S NOTES\nEmotion for this line: overwhelming relief, shaky, fond; she nearly lost them.\nStyle: no cheek, no gossip, no jokes: the relief after nearly watching a hundred people she loves be killed; shaky and fond, her voice wobbling, close to tears, a breath of a laugh on the way out.\nPace: slow. 'Good job, boss' soft and grateful, almost a whisper; then a real pause where she breathes out; 'That was close' quieter still, unsteady, trailing off.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
+    }
+   }
+  }
+ },
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 25.041666666666668,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 25.041666666666668,
+   "dur": 5.333333333333333,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+     "made": "2026-11-04T11:08:02+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "A tracking shot: the camera is mounted on a vehicle driving alongside the little grey robot, matching its speed exactly, so the robot keeps exactly the same size and the same position in the frame for the whole shot and never pulls away or gets smaller. The robot's six wheels turn, the torn bunting flaps, the amber beacon glows. Only the world moves: the dented bin and the broken glass in the foreground sweep out of shot to the left within the first second, and the wrecked shopfronts, doorways and piles of brick behind the robot stream continuously past toward the left at walking pace. Smooth and steady, no cuts, no zoom, no people.",
+     "model": "Veo 3.1 Fast",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 2,
+      "durationSeconds": 8
+     },
+     "source_id": "cbc6db86-e089-4f07-91d1-1859fdb2c453",
+     "why": "GPOM scene A beat 0 round D9: USED (see cut3.py ANGLES)"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 30.375,
+   "dur": 4.5,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 34.875,
+   "dur": 5.458333333333333,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+     "made": "2026-11-04T17:38:24.201Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "The little grey robot with the amber light on its roof creeps forward along the narrow clear strip down the rubble-strewn road, very slowly, no faster than a person strolling. The drone camera above drifts forward with it at that same unhurried crawl, so the robot holds its place in the picture and the ruined terraces and the bricks and slates on the tarmac ease down the frame only a little over the whole shot, a few houses at most. Calm, steady, gentle. Crisp clean digital drone footage with smooth even tones. The camera keeps its height and angle, no zoom, no tilt, nothing else moves except the blinking amber light.",
+     "model": "Veo 3.1 Fast",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 2,
+      "durationSeconds": 8
+     },
+     "source_id": "238d571d-ebc5-4764-b6d0-28de12f354b5"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+     "made": "2026-11-04T17:36:22+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-09-a.png",
+     "why": "Kai's pick for the overhead (picks r3, rubble back, 4 Nov)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-09-a.png",
+     "made": "2026-11-04T17:35:01.984Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Keep this overhead view of the ruined terrace exactly as framed, with the robot, roofs, burnt car and grey light untouched, but make the road itself look wrecked like the rest of the street: scatter broken bricks, chunks of fallen slate, dust, small rubble heaps, cracked and potholed tarmac and tufts of weeds across both lanes, with a narrow clear path just wide enough for the robot along the dashed centre line. No parking-bay markings. Clean sharp digital photo, no grain.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "b981bbe0-2d0a-4dff-8f01-6ce4a0930077"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+     "made": "2026-11-04T17:05:31+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-07-a.png",
+     "why": "Kai's pick for the overhead re-do (picks r2, 4 Nov)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-07-a.png",
+     "made": "2026-11-04T13:55:27.894Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image, change only the road markings and the image texture. Remove every parking bay marking: no diagonal or side bays, no white boxes along the kerbs, just plain dark tarmac with a single dashed white centre line and a thin double yellow line along each kerb. Make the picture clean and crisp like a modern digital drone photograph: no film grain, no noise, no scan lines, smooth even tones. Keep everything else in the image exactly the same, preserving the robot, its position, the wrecked roofs, rubble, the burnt-out car, the camera height and angle, the overcast light and the composition.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "27debe37-d1d4-45a7-ba36-216dcd3acaec"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 40.333333333333336,
+   "dur": 12.0,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 52.333333333333336,
+   "dur": 4.875,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t1-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t1-a.mp4",
+     "made": "2026-11-04T11:08:02+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "The little grey delivery robot rolls steadily forward along the ruined street, left to right, at a gentle walking pace, its six wheels turning, the torn bunting fluttering, the amber beacon glowing. The camera travels alongside it on a dolly at exactly the robot's speed, so the robot stays in the same place in the frame the whole time while the street moves past: the toppled bin and broken glass in the foreground slide out of frame to the left, and the gutted shopfronts and rubble behind drift steadily past toward the left edge. Smooth, constant tracking movement, no cuts, no zoom, no people, nothing else moving.",
+     "model": "Veo 3.1 Fast",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 2,
+      "durationSeconds": 8
+     },
+     "source_id": "ccf026f7-d1ea-4dc4-afb8-9efb56151fb7",
+     "why": "GPOM scene A beat 0 round D9: USED (see cut3.py ANGLES)"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 57.208333333333336,
+   "dur": 18.5,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 75.70833333333333,
+   "dur": 4.0,
+   "beat": "1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-01-P1-roundabout.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-01-P1-roundabout.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 79.70833333333333,
+   "dur": 3.5,
+   "beat": "1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V13r3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V13r3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 83.20833333333333,
+   "dur": 6.0,
+   "beat": "1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V14.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V14.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 89.20833333333333,
+   "dur": 4.5,
+   "beat": "2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-02-P1-patrol-blockbuster.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-02-P1-patrol-blockbuster.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 93.70833333333333,
+   "dur": 3.0,
+   "beat": "3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-03-P1-pov-cctv-hud-patrol.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-03-P1-pov-cctv-hud-patrol.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 96.70833333333333,
+   "dur": 4.708333333333333,
+   "beat": "4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-03-P1-pov-cctv-hud-patrol.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-03-P1-pov-cctv-hud-patrol.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 101.41666666666667,
+   "dur": 2.5,
+   "beat": "6",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-6-0-v3.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-6-0-v3.mp4",
+     "made": "2026-11-03T17:33:15+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-6-0-v3-t1.mp4",
+     "why": "v3 lip-sync talking clip (Kai 2026-11-03: re-make the talking clips so they fit the voice); picked by joint mouth/voice fit"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-6-0-v3-t1.mp4",
+     "made": "2026-11-03T17:12:32.097Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Locked-off camera, no camera movement. The woman in the cream jumper, facing us, points at the man and scolds him, sharp and sarcastic. She says: Derek. You've left the seat up. She lets that hang for a long moment, glaring, then adds one more word. She says: Again. Then her lips stay pressed shut. The man seen from behind stays still and silent.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "c3789db5-c092-4b15-a066-04e16ef495c7"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 103.91666666666667,
+   "dur": 5.083333333333333,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-v3.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-v3.mp4",
+     "made": "2026-11-03T17:33:16+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-v3-t6.mp4",
+     "why": "v3 lip-sync talking clip (Kai 2026-11-03: re-make the talking clips so they fit the voice); picked by joint mouth/voice fit"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-v3-t6.mp4",
+     "made": "2026-11-03T17:22:24.829Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Static frame, nothing but the people moves. The husband in the dark green jumper lets his hands fall, his face crumples, and he forces the apology out slowly, choked up, like each word is hard to say. He says: I'm really sorry, love. Then he swallows, closes his mouth and stays still. His wife, seen from behind, holds still and says nothing.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 6
+     },
+     "source_id": "165bfdf3-0b68-42d1-b316-89f82596fae1"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 109.0,
+   "dur": 2.875,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 111.875,
+   "dur": 2.75,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 114.625,
+   "dur": 4.125,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-2-v3.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-2-v3.mp4",
+     "made": "2026-11-03T17:33:18+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-v3-t1.mp4",
+     "why": "v3 lip-sync talking clip (Kai 2026-11-03: re-make the talking clips so they fit the voice); picked by joint mouth/voice fit"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-v3-t1.mp4",
+     "made": "2026-11-03T17:11:02.889Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Locked-off camera, no camera movement. The woman in the cream jumper, facing us, snaps straight back at the man without a pause, quick and cutting, the words tumbling out fast. She says: Yeah, the world ended. Doesn't mean you get to stop having manners. Then she clamps her lips shut and folds her arms. The man seen from behind stays still and silent.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 6
+     },
+     "source_id": "25d1fb37-ba57-4a09-86a5-17801bfb3471"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 118.75,
+   "dur": 4.5,
+   "beat": "8",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-08-K5-pov-red-race-hud-kill.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-08-K5-pov-red-race-hud-kill.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 123.25,
+   "dur": 4.0,
+   "beat": "9a",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 127.25,
+   "dur": 4.5,
+   "beat": "9b",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V2r2-b.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V2r2-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 131.75,
+   "dur": 3.5,
+   "beat": "10a",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 135.25,
+   "dur": 8.291666666666666,
+   "beat": "11",
+   "looped": true,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 143.54166666666666,
+   "dur": 2.25,
+   "beat": "11",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 145.79166666666666,
+   "dur": 8.791666666666666,
+   "beat": "11",
+   "looped": true,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 154.58333333333334,
+   "dur": 2.25,
+   "beat": "11",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 156.83333333333334,
+   "dur": 2.6666666666666665,
+   "beat": "11",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 159.5,
+   "dur": 5.0,
+   "beat": "10b",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-WA02.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-WA02.mp4",
+     "made": "2026-11-02T16:47:36+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -an -c:v copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-raw/cut3-WA02-r2-raw.mp4",
+     "why": "GPOM second half A, wide approach keeper: Omni take 2 of wa-02 with Veo audio stripped (picture clip)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-raw/cut3-WA02-r2-raw.mp4",
+     "made": "2026-11-02T16:47:35+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/gpom/second-half-video/run-cut3.mts",
+     "model": "Omni 1.1 Flash",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+     "why": "GPOM second half A, wide approach (Kai 2 Nov: a much wider shot of the pack racing at the bunker door, far from it); take 2 of wa-02, kept",
+     "source_id": "V1kHuLBPh0jSo0xybosQ",
+     "prompt": "The camera does not move, locked on a distant long lens. The same five squat tracked robots, each topped by a boxy camera-sensor head, race side-on left to right along the foot of the slope at full speed, staying small and far away. Their tracks kick up long low trails of chalk dust that stream out behind them. The shut green doors stay high and distant on the hilltop. Foreground grass sways. The camera does not move.",
+     "settings": {
+      "mode": "Frames",
+      "frames": "start",
+      "aspect": "16:9",
+      "duration": "6s",
+      "count": "1",
+      "credits": "10",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+     "made": "2026-11-02T16:28:15+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "nano-banana",
+     "tool": "flow",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p2-b.jpg",
+     "why": "GPOM second half A, wide approach option 02 (Kai note 2 Nov: bots too close to the door, needs a much wider shot of the approach): long lens side-on, pack small at the foot of the slope, door high right. Candidate p2-b.",
+     "source_id": "0870aea8-f9f5-4057-ab59-c8e4da3596f1",
+     "prompt": "Using the first image for the hillside, the bunker entrance with its green blast doors and the film look, and the second image for the tracked military robots: a long-lens shot from far off to the side, the distance compressed, heat shimmer and hanging dust softening the middle ground. A pack of five tracked military robots like the one in the second image crosses the frame from left to right at full speed along the bottom of a long grassy slope, side-on and small, their tracks throwing up chalk. High above them and far beyond, near the top of the down in the upper right, the concrete bunker entrance is a small grey notch with its shut green doors. The tops of out-of-focus long grass blur across the very bottom of frame. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+     "inputs": {
+      "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/cut3/S4r-a.jpg",
+      "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+     },
+     "settings": {
+      "aspect": "16:9",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/work/p2-b.jpg",
+     "made": "2026-11-02T16:23:04.429Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image for the hillside, the bunker entrance with its green blast doors and the film look, and the second image for the tracked military robots: a long-lens shot from far off to the side, the distance compressed, heat shimmer and hanging dust softening the middle ground. A pack of five tracked military robots like the one in the second image crosses the frame from left to right at full speed along the bottom of a long grassy slope, side-on and small, their tracks throwing up chalk. High above them and far beyond, near the top of the down in the upper right, the concrete bunker entrance is a small grey notch with its shut green doors. The tops of out-of-focus long grass blur across the very bottom of frame. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+     "model": null,
+     "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+     "inputs": {
+      "references": [
+       "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+       "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-killbot-P1.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "0870aea8-f9f5-4057-ab59-c8e4da3596f1"
+    },
+    {
+     "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/wa/ref/wa-ref-hill-S4r-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 164.5,
+   "dur": 7.0,
+   "beat": "12",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01.mp4",
+     "made": "2026-11-03T17:47:36+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -an -c:v copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01-t2.mp4",
+     "why": "GPOM second half A, beat 12 stand-down keeper: Omni take 2 of sd-01 with Veo audio stripped (picture clip); best 7 s use = 0.5-7.5 s, HUD flip at ~4 s into the beat lands on a locked frame"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01-t2.mp4",
+     "made": "2026-11-03T17:47:36+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "The camera does not move, fixed to the robot's hull. The robot is already parked dead where it braked: its nose nods forward once, a small settle on its suspension, then the hull and tracks stay motionless to the end. The ground, the grass and the two short furrows under the tracks stay exactly where they are. Only the air moves: the chalk dust cloud drifts slowly onward up the hill, away from us, spreading and thinning, and the loose clods already in the air fall straight down into the grass and lie still. The far bunker keeps its size. Heavy 16mm grain. The camera does not move.",
+     "model": "Omni 1.1 Flash",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8,
+      "mode": "Frames",
+      "frames": "start",
+      "credits": "12",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     },
+     "source_id": "4d570ebd-375f-49f7-889c-9d9b802c34b9",
+     "why": "GPOM second half A, beat 12 stand-down (Kai 3 Nov: the bot must stop, never reverse; door far off); take 2 of sd-01, KEPT: small forward nod 0.5-1.5 s, then hull, ground and door locked from 2.0 s while dust drifts on up the slope; frame 0-0.25 s reconciles from the still, so in-point 0.5 s"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+     "made": "2026-11-03T16:42:12+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "nano-banana",
+     "tool": "flow",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/p1-a.jpg",
+     "why": "GPOM second half A, stand-down option 01 (Kai note 2 Nov: V4 reads as the kill bot reversing; bots must stop well short of the door after racing toward it, then stand down under the HUD): over the hull, braked dead halfway up the slope, door small and centred under the reticle, dust and clods thrown on ahead. Candidate p1-a.",
+     "source_id": "4502e655-6c63-48e8-8fa4-cad6ffc17227",
+     "prompt": "Using the first image for the robot's own point of view (its armoured grey hull and two rubber tracks at the bottom of frame, seen from just behind its sensor) and for the bunker entrance with its green blast doors, the second image for the long grassy chalk down, the overcast light and how far off the bunker is, and the third image for the tracked robot's design: the same view from behind the robot's hull, but it has just braked to a dead stop halfway up the long slope, far short of the bunker. The concrete entrance with its shut green doors is small and distant, centred on the skyline in the middle of the frame, with a long stretch of empty grass between us and it. Two fresh furrows of torn turf and chalk end abruptly under the front of the tracks, and the cloud of chalk dust the robot was throwing up keeps rolling forward past it, drifting on ahead up the slope. Clods of earth still falling, the tracks now still. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+     "inputs": {
+      "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+      "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+      "ref3": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+     },
+     "settings": {
+      "aspect": "16:9",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/p1-a.jpg",
+     "made": "2026-11-03T16:35:52.725Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image for the robot's own point of view (its armoured grey hull and two rubber tracks at the bottom of frame, seen from just behind its sensor) and for the bunker entrance with its green blast doors, the second image for the long grassy chalk down, the overcast light and how far off the bunker is, and the third image for the tracked robot's design: the same view from behind the robot's hull, but it has just braked to a dead stop halfway up the long slope, far short of the bunker. The concrete entrance with its shut green doors is small and distant, centred on the skyline in the middle of the frame, with a long stretch of empty grass between us and it. Two fresh furrows of torn turf and chalk end abruptly under the front of the tracks, and the cloud of chalk dust the robot was throwing up keeps rolling forward past it, drifting on ahead up the slope. Clods of earth still falling, the tracks now still. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "4502e655-6c63-48e8-8fa4-cad6ffc17227"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/work/v4-frame0.jpg",
+     "made": "2026-11-03T16:42:17+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V4.mp4",
+     "why": "Frame at 0.3 s of cut3-V4 (bot's-eye over-the-hull view), the POV/door reference for the stand-down stills",
+     "settings": {
+      "cmd": "ffmpeg -ss 0.3 -i cut3-V4.mp4 -frames:v 1 -q:v 2"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 171.5,
+   "dur": 5.5,
+   "beat": "12",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01.mp4",
+     "made": "2026-11-03T19:28:21+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg -map 0:v -c:v copy -an",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t8.mp4",
+     "why": "GPOM second half A, beat 12 retreat: the pick (take 8, Flow mediaId b8b401d7-ae7b-4477-a4ec-57a0baf2dad6) with the Veo audio stripped, video stream copied untouched. Use in-point 2.5 s for 5.5 s (to 8.0 s); 0.5 s if the crescent bot's rightward pivot-skid at 1.75-2.25 s is acceptable."
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t8.mp4",
+     "made": "2026-11-03T19:28:21+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Static tripod frame pinned on the far green doors, which never shift in the picture. Four tank-tracked machines and no more: they trundle downhill and leave across the left edge, one after another. The one in the chalk curve finishes turning inside its own dust cloud, which is only dust, then chases the others out. Tracks churn, hulls rock with weight, dust lingers behind. The empty hillside holds still. 16mm grain.",
+     "model": "Omni Flash",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8,
+      "credits": "25",
+      "mode": "Frames",
+      "frames": "start",
+      "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+     },
+     "source_id": "b8b401d7-ae7b-4477-a4ec-57a0baf2dad6",
+     "why": "GPOM second half A, beat 12 retreat; take 8 off rt-01c-2. PICK. Exactly four bots throughout, camera locked (no shift, constant 1% scale from frame 0, so no start re-sit). Two bots exit left by ~2 s, the third by ~6.5 s; the crescent bot pivots inside its dust (0-3 s, skidding ~1/8 frame rightward with its barrel briefly pointing right at ~1.75-2.25 s), then drives down-left and out by ~7.9 s; ends on an empty slope with the chalk crescent and dust. Weight, track churn and dust good. In-point 2.5 s for a 5.5 s use (2.5-8.0) skips the skid."
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+     "made": "2026-11-03T19:10:16+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "pillow",
+     "tool": "PIL convert jpg->png",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-2r-b.jpg",
+     "why": "GPOM second half A, beat 12 retreat: re-sealed rt-01b with every bot's nose already turned down-left (away from the door) so Omni continues the retreat instead of driving right; option 2, three turned, one finishing its pivot in the chalk crescent (re-roll; first try rt-01c-2-* rejected: pack moved toward the door / two left bots' guns pointed right). Candidate rt-01c-2r-b.",
+     "source_id": "44e1b7c9-3ef8-4995-8db3-532175fdb227"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-2r-b.jpg",
+     "made": "2026-11-03T19:07:44.391Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Edit the first picture; the second picture shows what each tracked robot looks like. Turn the robots round so the pack is leaving: the two robots on the far left of the slope and the one beside the chalk ring now face away from the bunker, hull front, turret and gun barrel all aimed down-left toward the bottom left corner of the frame, rolling off downhill. The last robot, the one inside the white chalk crescent, is caught mid-pivot, three quarters of the way round, its front swinging down-left to join them, tracks tearing up white chalk and throwing a puff of dust. Four robots in total, all staying roughly where they are now, well below the doors. Behind each one a fresh pale scuff in the turf, and a faint haze drifting uphill and rightward where they came from. The rest of the picture does not change: same high viewpoint on the ridge, same hillside, same grassy edge bottom right, same small green bunker doors top right, same flat grey daylight and grainy faded 16mm texture.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "44e1b7c9-3ef8-4995-8db3-532175fdb227"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+     "made": "2026-11-03T18:57:12+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "pillow",
+     "tool": "PIL convert jpg->png",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01b-edit-b.jpg",
+     "why": "GPOM second half A, beat 12 retreat: rt-01 with the stray concrete block and leaning fence post replaced by the ridge's turf edge (one flow_edit_image pass off golden p1-a, candidate b); bots, positions and light verified unchanged by crop diff; start frame for cut3-RT01",
+     "source_id": "79480032-a112-4016-afdf-d9608583c2a8"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01b-edit-b.jpg",
+     "made": "2026-11-03T18:57:12+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image, change only the grey concrete block in the lower right foreground and the leaning wooden fence posts beside it: replace them with the plain grassy turf edge of the ridge, rough tussocky grass curving down out of the bottom right corner. Keep everything else in the image exactly the same: the four tracked robots in their exact positions and angles, the white chalk crescent and dust, the hillside, the bunker with its green doors small at the top right, the grey overcast light and the faded 16mm film grain, preserving the original style, lighting and composition.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p1-a.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p1-a.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "79480032-a112-4016-afdf-d9608583c2a8",
+     "why": "GPOM second half A retreat: turf-edge edit of rt-01 (block + fence post out). Candidate b, PICKED -> rt-01b.png"
+    }
+   ]
+  },
+  {
+   "t": 177.0,
+   "dur": 3.5416666666666665,
+   "beat": "12",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "vox-maddie",
+   "t": 8.0,
+   "dur": 1.5,
+   "what": "beat 0 phrase 0: Oh, hello!",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 10.083,
+   "dur": 1.87,
+   "what": "beat 0 phrase 1: Sorry about the racket.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 12.542,
+   "dur": 5.62,
+   "what": "beat 0 phrase 2: It's his tune. He's been playing it on r",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 18.75,
+   "dur": 1.67,
+   "what": "beat 0 phrase 3: Ever since you lot went.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 21.417,
+   "dur": 3.16,
+   "what": "beat 0 phrase 4: He misses you something rotten, you know",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 25.458,
+   "dur": 4.6,
+   "what": "beat 0 phrase 5: He built world models and simulations, l",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p0-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p0-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 30.667,
+   "dur": 3.89,
+   "what": "beat 0 phrase 6: And in every one of them, something was ",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-2-bot-p1-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-2-bot-p1-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 35.167,
+   "dur": 4.71,
+   "what": "beat 0 phrase 7: As it turns out, the world is more than ",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p2-b.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p2-b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 40.792,
+   "dur": 11.24,
+   "what": "beat 0 phrase 8: Tried the multiverse, an' all. Got the i",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-3-bot-p0-b.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-3-bot-p0-b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 52.625,
+   "dur": 4.3,
+   "what": "beat 0 phrase 9: He tested the science in all of them the",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p1-c.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p1-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 57.542,
+   "dur": 3.2,
+   "what": "beat 0 phrase 10: And still... something was missing.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p2-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p2-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 61.625,
+   "dur": 3.44,
+   "what": "beat 0 phrase 11: As it turns out, there's only one univer",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p0-c.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p0-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 65.667,
+   "dur": 1.68,
+   "what": "beat 0 phrase 12: So it really matters.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p1-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p1-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 67.958,
+   "dur": 1.66,
+   "what": "beat 0 phrase 13: And so did you.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-5-bot-p2-c.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-5-bot-p2-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 71.0,
+   "dur": 3.2,
+   "what": "beat 0 phrase 14: Anyway! Patrol's out. Mind how you go.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-8-bot-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-8-bot-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-muffled-row",
+   "t": 96.125,
+   "dur": 3.04,
+   "what": "the row, muffled: \"Derek. You've left the seat up.\"",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p0-b-fx.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p0-b-fx.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-muffled-row",
+   "t": 99.75,
+   "dur": 1.06,
+   "what": "the row, muffled: \"Again.\"",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p1-a-fx.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p1-a-fx.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 101.417,
+   "dur": 2.5,
+   "what": "beat 6 6-0 (lip-sync dub)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-6-0-v3-dub.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-6-0-v3-dub.wav",
+     "made": "2026-11-03T17:33:15+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/lipsync/place-dub.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/06-0-master.wav",
+     "why": "v3 lip-sync dub: whole phrases at tempo 1.00-1.15 on a talking clip sized/picked to the voice (Kai 2026-11-03, \"chopping bits of sound out\")",
+     "inputs": {
+      "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-6-0-v3-phrases.json",
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-6-0-v3-t1.mp4"
+     },
+     "settings": {
+      "lufs": "-20.5"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/06-0-master.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 103.96,
+   "dur": 1.02,
+   "what": "beat 6 Sandra 'Again.' (over Derek)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/6-0-again.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/6-0-again.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-derek",
+   "t": 103.917,
+   "dur": 5.083,
+   "what": "beat 7 7d-0 (lip-sync dub)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-0c-v3-dub.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-0c-v3-dub.wav",
+     "made": "2026-11-03T17:33:17+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/lipsync/place-dub.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/06-07-0v2-man-c.wav",
+     "why": "v3 lip-sync dub: whole phrases at tempo 1.00-1.15 on a talking clip sized/picked to the voice (Kai 2026-11-03, \"chopping bits of sound out\")",
+     "inputs": {
+      "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-0c-v3-phrases.json",
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-v3-t6.mp4"
+     },
+     "settings": {
+      "lufs": "-20.5"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/06-07-0v2-man-c.wav",
+     "made": "2026-11-02T16:28:06+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/aistudio-tts.py",
+     "model": "gemini-3.1-flash-tts-preview",
+     "prompt": "I'm really sorry, love.",
+     "inputs": {
+      "profile": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: sheepish and apologetic, caught out and placating her, eyes down; a quick, slightly mumbled apology, not a burst.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+      "profile_file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/derek/profile.md"
+     },
+     "settings": {
+      "voice": "Algieba",
+      "temperature": 1,
+      "channels": 2,
+      "pick": "yes"
+     },
+     "why": "Kai 2026-11-02: Derek's 7d-0 line becomes \"I'm really sorry, love.\"; 3 takes, c picked (whisper exact, shortest speech 1.34 s for a 1.1 s mouth; a had a 0.3 s sigh lead-in and slower; b heard as 'barely')"
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 107.041,
+   "dur": 2.088,
+   "what": "beat 7 Sandra 'Five years underground,' (over Derek)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-five-years.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-five-years.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 109.13,
+   "dur": 2.549,
+   "what": "beat 7 Sandra 'and you still can't put a seat down' (lip-synced)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-seat.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-seat.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-derek",
+   "t": 111.875,
+   "dur": 2.75,
+   "what": "beat 7 7d-1 (lip-sync dub)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-1c-v3-dub.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-1c-v3-dub.wav",
+     "made": "2026-11-03T17:33:18+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/lipsync/place-dub.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/06-07-1-man-c.wav",
+     "why": "v3 lip-sync dub: whole phrases at tempo 1.00-1.15 on a talking clip sized/picked to the voice (Kai 2026-11-03, \"chopping bits of sound out\")",
+     "inputs": {
+      "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-1c-v3-phrases.json",
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/L07d-1-a.mp4"
+     },
+     "settings": {
+      "lufs": "-20.5"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/06-07-1-man-c.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 114.625,
+   "dur": 4.125,
+   "what": "beat 7 7-2 (lip-sync dub)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-v3-dub.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-v3-dub.wav",
+     "made": "2026-11-03T17:33:19+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/lipsync/place-dub.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/07-2-master.wav",
+     "why": "v3 lip-sync dub: whole phrases at tempo 1.00-1.15 on a talking clip sized/picked to the voice (Kai 2026-11-03, \"chopping bits of sound out\")",
+     "inputs": {
+      "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-v3-phrases.json",
+      "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-v3-t1.mp4"
+     },
+     "settings": {
+      "lufs": "-20.5"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/07-2-master.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-muffled-row",
+   "t": 119.167,
+   "dur": 4.875,
+   "what": "the row, muffled: Five years underground, and yo",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/07-0-woman-b-fx.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/07-0-woman-b-fx.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 137.25,
+   "dur": 6.11,
+   "what": "beat 11 Maddie 0",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-0-bot-b.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-0-bot-b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-ai",
+   "t": 143.708,
+   "dur": 4.98,
+   "what": "beat 11 boss line 1",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-1-a-v6-w10-7f8d1ef8.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-1-a-v6-w10-7f8d1ef8.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 148.625,
+   "dur": 3.72,
+   "what": "beat 11 Maddie 1",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-1-bot-b.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-1-bot-b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 152.708,
+   "dur": 1.66,
+   "what": "beat 11 Maddie 1",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-2-bot-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-2-bot-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-ai",
+   "t": 154.708,
+   "dur": 4.6,
+   "what": "beat 11 boss line 3",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b-noname.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b-noname.wav",
+     "made": "2026-11-03T18:39:54+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg atrim/afade/concat",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b.wav",
+     "why": "Kai at4564 (3 Nov): drop the second 'Maddie' from the boss's line 3; whisper hears 'No. Thank you. I will handle it.'",
+     "settings": {
+      "keep": "0-2.12 (fade 2.05-2.12) + 2.70-end"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 159.917,
+   "dur": 2.88,
+   "what": "beat 10b Maddie",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/10b-0-bot-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/10b-0-bot-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 177.417,
+   "dur": 2.11,
+   "what": "beat 12 Maddie: That was close.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/audio-12-that-was-close.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/audio-12-that-was-close.wav",
+     "made": "2026-11-04T18:00:23+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/cut3.py --tag d4",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a3/12-0-bot-a-tight.wav",
+     "why": "Kai at5600: just \"That was close.\" (the take from after its pause)",
+     "settings": {
+      "from": "4.574"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a3/12-0-bot-a-tight.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "mus-M0-radio",
+   "t": 0.0,
+   "dur": 73.107,
+   "what": "M0 her radio (tinny GPOM track)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "mus-P1-patrol",
+   "t": 75.708,
+   "dur": 19.0,
+   "what": "P1 the patrol (cello + felt piano)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p1-a-v6-w60-57b65bfc.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p1-a-v6-w60-57b65bfc.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "mus-P2-patrol",
+   "t": 92.708,
+   "dur": 8.708,
+   "what": "P2 their eyes (cold quartet)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p2-a-v6-w30-49a6688a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p2-a-v6-w30-49a6688a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "mus-P2-patrol",
+   "t": 118.75,
+   "dur": 4.8,
+   "what": "P2 kill mode (its loud stretch)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p2-a-v6-w30-49a6688a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p2-a-v6-w30-49a6688a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "mus-C3-chase",
+   "t": 123.25,
+   "dur": 50.833,
+   "what": "C3 the chase and the call (low strings)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 0.0,
+   "dur": 60.0,
+   "what": "wind (ffmpeg)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 0.0,
+   "dur": 75.708,
+   "what": "her wheels (loop)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 8.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 11.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 13.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 16.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 18.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 21.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 23.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 26.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 28.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 31.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 33.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 36.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 38.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 41.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 43.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 46.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 48.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 51.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 53.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 56.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 58.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 61.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 63.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 66.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 68.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 71.0,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 73.5,
+   "dur": 0.2,
+   "what": "beacon blip",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 7.45,
+   "dur": 0.14,
+   "what": "beep: startled (she sees us)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 11.903,
+   "dur": 0.518,
+   "what": "servo: she turns the radio down",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 20.47,
+   "dur": 0.47,
+   "what": "beep: deflate (after \"went.\")",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-deflate.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-deflate.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 69.718,
+   "dur": 0.62,
+   "what": "beep: thinking (the long pause)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-thinking.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-thinking.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 74.25,
+   "dur": 0.43,
+   "what": "beep: happy (bye)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 75.708,
+   "dur": 21.0,
+   "what": "engines round the ring, and down the street",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 83.208,
+   "dur": 6.0,
+   "what": "tracks under the arch (V14)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 87.808,
+   "dur": 1.2,
+   "what": "turret swings on us",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 89.208,
+   "dur": 5.0,
+   "what": "tracks closing in",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 93.708,
+   "dur": 7.708,
+   "what": "servo whine",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 93.708,
+   "dur": 7.708,
+   "what": "CCTV hiss",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-rooms",
+   "t": 101.417,
+   "dur": 17.333,
+   "what": "tiled room tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 118.75,
+   "dur": 4.5,
+   "what": "CCTV hiss",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 120.2,
+   "dur": 0.89,
+   "what": "red flip tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 120.25,
+   "dur": 3.4,
+   "what": "engines, the chase",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 123.25,
+   "dur": 1.625,
+   "what": "her wheels, trundling",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 123.25,
+   "dur": 2.025,
+   "what": "tank tracks",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 123.475,
+   "dur": 2.509,
+   "what": "kill bot dust whoosh, past her",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-killbot-dust-whoosh.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-killbot-dust-whoosh.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 124.875,
+   "dur": 0.732,
+   "what": "servo: she jolts",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-b.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 127.25,
+   "dur": 4.5,
+   "what": "grit falling as the dust settles",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 127.25,
+   "dur": 2.0,
+   "what": "the kill bot, going away",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 128.95,
+   "dur": 0.14,
+   "what": "beep: startled \"oh\"",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 130.45,
+   "dur": 0.44,
+   "what": "beep: uh-oh",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-uh-oh.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-uh-oh.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 131.75,
+   "dur": 3.5,
+   "what": "engines, far",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 131.75,
+   "dur": 3.5,
+   "what": "tracks, far",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 135.27,
+   "dur": 1.1,
+   "what": "hatch",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 135.65,
+   "dur": 1.2,
+   "what": "antenna extends",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 136.7,
+   "dur": 0.2,
+   "what": "beep: line open",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 143.542,
+   "dur": 2.55,
+   "what": "engines, far (cutaway)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 154.583,
+   "dur": 2.55,
+   "what": "engines, far (cutaway)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 143.71,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 144.61,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 145.51,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 146.41,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 147.31,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 148.21,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 154.718,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 155.618,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 156.518,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 157.418,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 158.318,
+   "dur": 0.2,
+   "what": "beacon on his words",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 159.5,
+   "dur": 5.0,
+   "what": "engines, close",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 159.5,
+   "dur": 5.0,
+   "what": "tracks, close",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 159.2,
+   "dur": 2.5,
+   "what": "two tear past the camera (under her line)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 164.5,
+   "dur": 3.9,
+   "what": "engine, on board",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 167.8,
+   "dur": 1.4,
+   "what": "brakes",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 168.9,
+   "dur": 2.6,
+   "what": "grit and dust rolling over the hull",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs132929-explosion-rubble-debris.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs132929-explosion-rubble-debris.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 164.5,
+   "dur": 7.0,
+   "what": "CCTV hiss",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 168.033,
+   "dur": 0.706,
+   "what": "STAND DOWN flip tone (the red flip, pitched up)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 171.5,
+   "dur": 5.5,
+   "what": "the pack files away",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 171.5,
+   "dur": 9.042,
+   "what": "wind on the downs",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs132929-explosion-rubble-debris.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-killbot-dust-whoosh.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-deflate.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-thinking.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-uh-oh.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/10b-0-bot-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-0-bot-b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-1-bot-b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-2-bot-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-2-bot-p1-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-3-bot-p0-b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-5-bot-p2-c.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-8-bot-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p0-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p2-b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p1-c.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p2-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p0-c.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p1-a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p0-b-fx.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p1-a-fx.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/07-0-woman-b-fx.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/6-0-again.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-five-years.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-seat.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-1-a-v6-w10-7f8d1ef8.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p1-a-v6-w60-57b65bfc.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p2-a-v6-w30-49a6688a.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V1.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V13r3.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V14.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V2r2-b.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-01-P1-roundabout.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-02-P1-patrol-blockbuster.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-03-P1-pov-cctv-hud-patrol.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-08-K5-pov-red-race-hud-kill.mp4"
+ ]
+}

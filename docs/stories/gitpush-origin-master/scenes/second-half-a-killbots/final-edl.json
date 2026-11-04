@@ -1,0 +1,1968 @@
+{
+ "sequence": "gpom-second-half-A-rough5",
+ "title": "Cut 3 A Timeline",
+ "heading": "GPOM second half · cut 3 · scene A: the kill bots",
+ "intro": "Scene A, round 14: your round 13 note (4 Nov). Maddie's line \"And now we've worked all that out... we really feel like we've messed this up. And wish we could go back and change things.\" is cut: \"And so did you\" goes straight to \"Anyway! Patrol's out. Mind how you go.\" The overhead shot that sat under it goes too; the scene is about 10 s shorter. Everything else is round 13. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.",
+ "fps": 24,
+ "sample_rate": 48000,
+ "total": 180.54166666666666,
+ "beats": [
+  {
+   "id": "0",
+   "title": "Maddie on the high street",
+   "start": 0.0,
+   "dur": 75.70833333333333,
+   "see": "One unbroken travelling shot: the camera backs up the ruined high street and Maddie rolls after it, her radio playing the tune for about 5 s before she notices us. \"Oh, hello!\" Then the radio goes down, and back up on \"Mind how you go\".",
+   "act": "Maddie",
+   "lines": [
+    {
+     "i": 0,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 8.0,
+     "dur": 12.42,
+     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 21.42,
+     "dur": 3.157,
+     "text": "He misses you something rotten, you know.",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 25.477,
+     "dur": 14.4,
+     "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 40.777,
+     "dur": 19.965,
+     "text": "Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+     "by": "kai"
+    },
+    {
+     "i": 4,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 61.642,
+     "dur": 7.977,
+     "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] And so did you.",
+     "by": "kai"
+    },
+    {
+     "i": 6,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 71.018,
+     "dur": 3.182,
+     "text": "Anyway! Patrol's out. Mind how you go.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "title": "Kill bots everywhere",
+   "start": 75.70833333333333,
+   "dur": 13.5,
+   "see": "The roundabout; then a kill bot under the church tower at the far end of Maddie's street; then two come out from under the rail arch.",
+   "act": "The hunt",
+   "lines": []
+  },
+  {
+   "id": "2",
+   "title": "Patrol, low and huge",
+   "start": 89.20833333333333,
+   "dur": 4.5,
+   "see": "A kill bot rolls over the lens.",
+   "act": "The hunt",
+   "lines": []
+  },
+  {
+   "id": "3",
+   "title": "Their eyes: the kill-bot HUD",
+   "start": 93.70833333333333,
+   "dur": 3.0,
+   "see": "The kill bot's own view keeps moving down the street; the HUD (patrol, teal). The meter starts to twitch as the row reaches it through the earth.",
+   "act": "The hunt",
+   "lines": []
+  },
+  {
+   "id": "4",
+   "title": "Organic signal: lock",
+   "start": 96.70833333333333,
+   "dur": 4.708333333333333,
+   "see": "ORGANIC SIGNAL - LOCK, silently (the pings are gone). The view keeps rolling while it listens.",
+   "act": "The hunt",
+   "lines": [
+    {
+     "i": 0,
+     "who": "woman",
+     "name": "Sandra",
+     "t": 96.125,
+     "dur": 4.685,
+     "text": "(muffled) Derek. You've left the seat up. [pause] Again.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "title": "The lavatory",
+   "start": 101.41666666666667,
+   "dur": 2.5,
+   "see": "Hard cut to full volume: Sandra, lip-synced.",
+   "act": "The row",
+   "lines": [
+    {
+     "i": 0,
+     "who": "woman",
+     "name": "Sandra",
+     "t": 101.563,
+     "dur": 3.418,
+     "text": "Derek. You've left the seat up again.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "title": "The row, up close",
+   "start": 103.91666666666667,
+   "dur": 14.833333333333334,
+   "see": "Derek takes it on the chin, then Sandra; Derek, Sandra: shot by shot, lip-synced.",
+   "act": "The row",
+   "lines": [
+    {
+     "i": 0,
+     "who": "man",
+     "name": "Derek",
+     "t": 105.28,
+     "dur": 1.461,
+     "text": "I'm really sorry, love.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "woman",
+     "name": "Sandra",
+     "t": 107.041,
+     "dur": 4.638,
+     "text": "Five years underground, and you still can't put a seat down.",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "man",
+     "name": "Derek",
+     "t": 112.025,
+     "dur": 1.96,
+     "text": "But the world ended, Sandra!",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "woman",
+     "name": "Sandra",
+     "t": 114.635,
+     "dur": 3.505,
+     "text": "Yeah, the world ended. Doesn't mean you get to stop having manners.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "title": "KILL MODE ENGAGED",
+   "start": 118.75,
+   "dur": 4.5,
+   "see": "The same HUD on the racing view: patrol, then it flips red. The muffled row keeps the meter moving.",
+   "act": "Kill mode",
+   "lines": [
+    {
+     "i": 0,
+     "who": "woman",
+     "name": "Sandra",
+     "t": 119.15,
+     "dur": 4.892,
+     "text": "(muffled) Five years underground, and you still can't put a seat down.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "9a",
+   "title": "One kill bot tears past Maddie",
+   "start": 123.25,
+   "dur": 4.0,
+   "see": "High over the street: the tank passes close and exits bottom-left, Maddie jolts, a plume of dust hangs.",
+   "act": "Kill mode",
+   "lines": []
+  },
+  {
+   "id": "9b",
+   "title": "Maddie in the dust",
+   "start": 127.25,
+   "dur": 4.5,
+   "see": "Inside the dust it left: almost nothing visible, then it settles fast and Maddie is there, still.",
+   "act": "Kill mode",
+   "lines": []
+  },
+  {
+   "id": "10a",
+   "title": "The far race",
+   "start": 131.75,
+   "dur": 3.5,
+   "see": "From the footbridge: the pack races away down the motorway.",
+   "act": "Kill mode",
+   "lines": []
+  },
+  {
+   "id": "11",
+   "title": "Maddie calls her boss",
+   "start": 135.25,
+   "dur": 24.25,
+   "see": "Maddie's hatch, the boss-hotline antenna. The call; the race (still far) under his first and last lines.",
+   "act": "Kill mode",
+   "lines": [
+    {
+     "i": 0,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 137.25,
+     "dur": 6.11,
+     "text": "Boss, I've just seen a bot in kill mode. Which must mean it's detected an organic signal.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "ai",
+     "name": "The AI (through Maddie)",
+     "t": 143.71,
+     "dur": 4.578,
+     "text": "Maddie, are you making fun of my simulations again?",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 148.638,
+     "dur": 3.707,
+     "text": "No, honestly, it's real. Look, you can see for yourself.",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 152.695,
+     "dur": 1.673,
+     "text": "Do you want some help with the malware?",
+     "by": "kai"
+    },
+    {
+     "i": 4,
+     "who": "ai",
+     "name": "The AI (through Maddie)",
+     "t": 154.718,
+     "dur": 4.19,
+     "text": "No, thank you. I will handle it.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "10b",
+   "title": "The wide approach",
+   "start": 159.5,
+   "dur": 5.0,
+   "see": "Long lens through the grass: the pack races along the foot of the slope, the bunker door small and high on the right. Maddie over it.",
+   "act": "Kill mode",
+   "lines": [
+    {
+     "i": 0,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 159.9,
+     "dur": 2.897,
+     "text": "Well, you'd better bloody hurry up, boss. They're nearly there.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "title": "The stand-down",
+   "start": 164.5,
+   "dur": 16.041666666666668,
+   "see": "On board one kill bot: red KILL MODE racing at the door, it brakes and flips to green STAND DOWN. Lined up at the door, they file away one at a time. Then Maddie, shaky with relief: \"Good job.\" \"That was close.\"",
+   "act": "The gate",
+   "lines": [
+    {
+     "i": 0,
+     "who": "bot",
+     "name": "Maddie",
+     "t": 177.4,
+     "dur": 2.127,
+     "text": "That was close.",
+     "by": "kai"
+    }
+   ]
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-beat0-continuous-xx-graded.mp4",
+   "in": 2.5,
+   "dur": 25.041666666666668,
+   "start": 0.0,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-IA-side-t2-a-matched.mp4",
+   "in": 0.0,
+   "dur": 5.333333333333333,
+   "start": 25.041666666666668,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-beat0-continuous-xx-graded.mp4",
+   "in": 32.875,
+   "dur": 4.5,
+   "start": 30.375,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-IA-top-t4-b-matched.mp4",
+   "in": 0.0,
+   "dur": 5.458333333333333,
+   "start": 34.875,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-beat0-continuous-xx-graded.mp4",
+   "in": 42.833333333333336,
+   "dur": 12.0,
+   "start": 40.333333333333336,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-IA-side-t1-a-matched.mp4",
+   "in": 1.5,
+   "dur": 4.875,
+   "start": 52.333333333333336,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t1-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-beat0-continuous-xx-graded.mp4",
+   "in": 59.708333333333336,
+   "dur": 18.5,
+   "start": 57.208333333333336,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-01-P1-roundabout.mp4",
+   "in": 0.0,
+   "dur": 4.0,
+   "start": 75.70833333333333,
+   "beat": "1",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-01-P1-roundabout.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V13r3.mp4",
+   "in": 0.0,
+   "dur": 3.5,
+   "start": 79.70833333333333,
+   "beat": "1",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V13r3.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V14.mp4",
+   "in": 1.0,
+   "dur": 6.0,
+   "start": 83.20833333333333,
+   "beat": "1",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V14.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-02-P1-patrol-blockbuster.mp4",
+   "in": 0.0,
+   "dur": 4.5,
+   "start": 89.20833333333333,
+   "beat": "2",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-02-P1-patrol-blockbuster.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/hud-34.mp4",
+   "in": 0.0,
+   "dur": 3.0,
+   "start": 93.70833333333333,
+   "beat": "3",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-03-P1-pov-cctv-hud-patrol.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/hud-34.mp4",
+   "in": 3.0,
+   "dur": 4.708333333333333,
+   "start": 96.70833333333333,
+   "beat": "4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-03-P1-pov-cctv-hud-patrol.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-6-0-v3-muted.mp4",
+   "in": 0.0,
+   "dur": 2.5,
+   "start": 101.41666666666667,
+   "beat": "6",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-6-0-v3.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-v3-muted.mp4",
+   "in": 0.7916666666666666,
+   "dur": 5.083333333333333,
+   "start": 103.91666666666667,
+   "beat": "7",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-v3.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0-muted.mp4",
+   "in": 2.0416666666666665,
+   "dur": 2.875,
+   "start": 109.0,
+   "beat": "7",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1-muted.mp4",
+   "in": 0.3333333333333333,
+   "dur": 2.75,
+   "start": 111.875,
+   "beat": "7",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-2-v3-muted.mp4",
+   "in": 0.0,
+   "dur": 4.125,
+   "start": 114.625,
+   "beat": "7",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-2-v3.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/hud-8.mp4",
+   "in": 0.0,
+   "dur": 4.5,
+   "start": 118.75,
+   "beat": "8",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-08-K5-pov-red-race-hud-kill.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V1.mp4",
+   "in": 1.375,
+   "dur": 4.0,
+   "start": 123.25,
+   "beat": "9a",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V1.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V2r2-b.mp4",
+   "in": 0.0,
+   "dur": 4.5,
+   "start": 127.25,
+   "beat": "9b",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V2r2-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "in": 0.0,
+   "dur": 3.5,
+   "start": 131.75,
+   "beat": "10a",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-V3-i0-d8.292.mp4",
+   "in": 0.0,
+   "dur": 8.291666666666666,
+   "start": 135.25,
+   "beat": "11",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "looped": true
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "in": 3.5,
+   "dur": 2.25,
+   "start": 143.54166666666666,
+   "beat": "11",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/cut3-V3-i2-d8.792.mp4",
+   "in": 0.0,
+   "dur": 8.791666666666666,
+   "start": 145.79166666666666,
+   "beat": "11",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "looped": true
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "in": 5.75,
+   "dur": 2.25,
+   "start": 154.58333333333334,
+   "beat": "11",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V8.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "in": 4.0,
+   "dur": 2.6666666666666665,
+   "start": 156.83333333333334,
+   "beat": "11",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-WA02.mp4",
+   "in": 0.0,
+   "dur": 5.0,
+   "start": 159.5,
+   "beat": "10b",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-WA02.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/video/hud-12.mp4",
+   "in": 0.0,
+   "dur": 7.0,
+   "start": 164.5,
+   "beat": "12",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01.mp4",
+   "in": 2.5,
+   "dur": 5.5,
+   "start": 171.5,
+   "beat": "12",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "in": 3.0,
+   "dur": 3.5416666666666665,
+   "start": 177.0,
+   "beat": "12",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V3.mp4",
+   "looped": false
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "vox-ai",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/01-vox-ai.wav",
+   "start": 0.0,
+   "peak_db": -2.3
+  },
+  {
+   "track": "A2",
+   "name": "vox-derek",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/02-vox-derek.wav",
+   "start": 0.0,
+   "peak_db": -4.6
+  },
+  {
+   "track": "A3",
+   "name": "vox-maddie",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/03-vox-maddie.wav",
+   "start": 0.0,
+   "peak_db": 3.7
+  },
+  {
+   "track": "A4",
+   "name": "vox-muffled-row",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/04-vox-muffled-row.wav",
+   "start": 0.0,
+   "peak_db": -14.4
+  },
+  {
+   "track": "A5",
+   "name": "vox-sandra",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/05-vox-sandra.wav",
+   "start": 0.0,
+   "peak_db": -3.6
+  },
+  {
+   "track": "A6",
+   "name": "mus-C3-chase",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/06-mus-C3-chase.wav",
+   "start": 0.0,
+   "peak_db": -1.8
+  },
+  {
+   "track": "A7",
+   "name": "mus-M0-radio",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/07-mus-M0-radio.wav",
+   "start": 0.0,
+   "peak_db": -8.5
+  },
+  {
+   "track": "A8",
+   "name": "mus-P1-patrol",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/08-mus-P1-patrol.wav",
+   "start": 0.0,
+   "peak_db": -3.6
+  },
+  {
+   "track": "A9",
+   "name": "mus-P2-patrol",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/09-mus-P2-patrol.wav",
+   "start": 0.0,
+   "peak_db": -6.5
+  },
+  {
+   "track": "A10",
+   "name": "sfx-beacon",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/10-sfx-beacon.wav",
+   "start": 0.0,
+   "peak_db": -29.5
+  },
+  {
+   "track": "A11",
+   "name": "sfx-hud",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/11-sfx-hud.wav",
+   "start": 0.0,
+   "peak_db": -5.6
+  },
+  {
+   "track": "A12",
+   "name": "sfx-killbots",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/12-sfx-killbots.wav",
+   "start": 0.0,
+   "peak_db": -0.4
+  },
+  {
+   "track": "A13",
+   "name": "sfx-maddie",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/13-sfx-maddie.wav",
+   "start": 0.0,
+   "peak_db": -0.3
+  },
+  {
+   "track": "A14",
+   "name": "sfx-maddie-beeps",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/14-sfx-maddie-beeps.wav",
+   "start": 0.0,
+   "peak_db": -23.8
+  },
+  {
+   "track": "A15",
+   "name": "sfx-rooms",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/15-sfx-rooms.wav",
+   "start": 0.0,
+   "peak_db": -22.5
+  },
+  {
+   "track": "A16",
+   "name": "sfx-wind",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/stems/16-sfx-wind.wav",
+   "start": 0.0,
+   "peak_db": -17.7
+  }
+ ],
+ "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/mix.wav",
+ "events": [
+  {
+   "stem": "vox-maddie",
+   "t": 8.0,
+   "dur": 1.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+   "what": "beat 0 phrase 0: Oh, hello!"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 10.083,
+   "dur": 1.87,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+   "what": "beat 0 phrase 1: Sorry about the racket."
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 12.542,
+   "dur": 5.62,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+   "what": "beat 0 phrase 2: It's his tune. He's been playing it on r"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 18.75,
+   "dur": 1.67,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+   "what": "beat 0 phrase 3: Ever since you lot went."
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 21.417,
+   "dur": 3.16,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+   "what": "beat 0 phrase 4: He misses you something rotten, you know"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 25.458,
+   "dur": 4.6,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p0-a.wav",
+   "what": "beat 0 phrase 5: He built world models and simulations, l"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 30.667,
+   "dur": 3.89,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-2-bot-p1-a.wav",
+   "what": "beat 0 phrase 6: And in every one of them, something was "
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 35.167,
+   "dur": 4.71,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p2-b.wav",
+   "what": "beat 0 phrase 7: As it turns out, the world is more than "
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 40.792,
+   "dur": 11.24,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-3-bot-p0-b.wav",
+   "what": "beat 0 phrase 8: Tried the multiverse, an' all. Got the i"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 52.625,
+   "dur": 4.3,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p1-c.wav",
+   "what": "beat 0 phrase 9: He tested the science in all of them the"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 57.542,
+   "dur": 3.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p2-a.wav",
+   "what": "beat 0 phrase 10: And still... something was missing."
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 61.625,
+   "dur": 3.44,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p0-c.wav",
+   "what": "beat 0 phrase 11: As it turns out, there's only one univer"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 65.667,
+   "dur": 1.68,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p1-a.wav",
+   "what": "beat 0 phrase 12: So it really matters."
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 67.958,
+   "dur": 1.66,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-5-bot-p2-c.wav",
+   "what": "beat 0 phrase 13: And so did you."
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 71.0,
+   "dur": 3.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-8-bot-a.wav",
+   "what": "beat 0 phrase 14: Anyway! Patrol's out. Mind how you go."
+  },
+  {
+   "stem": "vox-muffled-row",
+   "t": 96.125,
+   "dur": 3.04,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p0-b-fx.wav",
+   "what": "the row, muffled: \"Derek. You've left the seat up.\""
+  },
+  {
+   "stem": "vox-muffled-row",
+   "t": 99.75,
+   "dur": 1.06,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p1-a-fx.wav",
+   "what": "the row, muffled: \"Again.\""
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 101.417,
+   "dur": 2.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-6-0-v3-dub.wav",
+   "what": "beat 6 6-0 (lip-sync dub)"
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 103.96,
+   "dur": 1.02,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/6-0-again.wav",
+   "what": "beat 6 Sandra 'Again.' (over Derek)"
+  },
+  {
+   "stem": "vox-derek",
+   "t": 103.917,
+   "dur": 5.083,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-0c-v3-dub.wav",
+   "what": "beat 7 7d-0 (lip-sync dub)"
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 107.041,
+   "dur": 2.088,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-five-years.wav",
+   "what": "beat 7 Sandra 'Five years underground,' (over Derek)"
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 109.13,
+   "dur": 2.549,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-seat.wav",
+   "what": "beat 7 Sandra 'and you still can't put a seat down' (lip-synced)"
+  },
+  {
+   "stem": "vox-derek",
+   "t": 111.875,
+   "dur": 2.75,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-1c-v3-dub.wav",
+   "what": "beat 7 7d-1 (lip-sync dub)"
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 114.625,
+   "dur": 4.125,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-v3-dub.wav",
+   "what": "beat 7 7-2 (lip-sync dub)"
+  },
+  {
+   "stem": "vox-muffled-row",
+   "t": 119.167,
+   "dur": 4.875,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/07-0-woman-b-fx.wav",
+   "what": "the row, muffled: Five years underground, and yo"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 137.25,
+   "dur": 6.11,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-0-bot-b.wav",
+   "what": "beat 11 Maddie 0"
+  },
+  {
+   "stem": "vox-ai",
+   "t": 143.708,
+   "dur": 4.98,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-1-a-v6-w10-7f8d1ef8.wav",
+   "what": "beat 11 boss line 1"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 148.625,
+   "dur": 3.72,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-1-bot-b.wav",
+   "what": "beat 11 Maddie 1"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 152.708,
+   "dur": 1.66,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-2-bot-a.wav",
+   "what": "beat 11 Maddie 1"
+  },
+  {
+   "stem": "vox-ai",
+   "t": 154.708,
+   "dur": 4.6,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b-noname.wav",
+   "what": "beat 11 boss line 3"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 159.917,
+   "dur": 2.88,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/10b-0-bot-a.wav",
+   "what": "beat 10b Maddie"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 177.417,
+   "dur": 2.11,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/audio-12-that-was-close.wav",
+   "what": "beat 12 Maddie: That was close."
+  },
+  {
+   "stem": "mus-M0-radio",
+   "t": 0.0,
+   "dur": 73.107,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+   "what": "M0 her radio (tinny GPOM track)"
+  },
+  {
+   "stem": "mus-P1-patrol",
+   "t": 75.708,
+   "dur": 19.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p1-a-v6-w60-57b65bfc.wav",
+   "what": "P1 the patrol (cello + felt piano)"
+  },
+  {
+   "stem": "mus-P2-patrol",
+   "t": 92.708,
+   "dur": 8.708,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p2-a-v6-w30-49a6688a.wav",
+   "what": "P2 their eyes (cold quartet)"
+  },
+  {
+   "stem": "mus-P2-patrol",
+   "t": 118.75,
+   "dur": 4.8,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-p2-a-v6-w30-49a6688a.wav",
+   "what": "P2 kill mode (its loud stretch)"
+  },
+  {
+   "stem": "mus-C3-chase",
+   "t": 123.25,
+   "dur": 50.833,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-c3-a-v6-w60-a1614dbb.wav",
+   "what": "C3 the chase and the call (low strings)"
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 0.0,
+   "dur": 60.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "what": "wind (ffmpeg)"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 0.0,
+   "dur": 75.708,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "what": "her wheels (loop)"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 8.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 11.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 13.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 16.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 18.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 21.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 23.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 26.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 28.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 31.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 33.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 36.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 38.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 41.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 43.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 46.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 48.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 51.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 53.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 56.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 58.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 61.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 63.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 66.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 68.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 71.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 73.5,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 7.45,
+   "dur": 0.14,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+   "what": "beep: startled (she sees us)"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 11.903,
+   "dur": 0.518,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+   "what": "servo: she turns the radio down"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 20.47,
+   "dur": 0.47,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-deflate.wav",
+   "what": "beep: deflate (after \"went.\")"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 69.718,
+   "dur": 0.62,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-thinking.wav",
+   "what": "beep: thinking (the long pause)"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 74.25,
+   "dur": 0.43,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+   "what": "beep: happy (bye)"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 75.708,
+   "dur": 21.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "engines round the ring, and down the street"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 83.208,
+   "dur": 6.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "what": "tracks under the arch (V14)"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 87.808,
+   "dur": 1.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+   "what": "turret swings on us"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 89.208,
+   "dur": 5.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "what": "tracks closing in"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 93.708,
+   "dur": 7.708,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+   "what": "servo whine"
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 93.708,
+   "dur": 7.708,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "what": "CCTV hiss"
+  },
+  {
+   "stem": "sfx-rooms",
+   "t": 101.417,
+   "dur": 17.333,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs767306-room-tiled-public-bathroom.mp3",
+   "what": "tiled room tone"
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 118.75,
+   "dur": 4.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "what": "CCTV hiss"
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 120.2,
+   "dur": 0.89,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+   "what": "red flip tone"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 120.25,
+   "dur": 3.4,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "engines, the chase"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 123.25,
+   "dur": 1.625,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "what": "her wheels, trundling"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 123.25,
+   "dur": 2.025,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "what": "tank tracks"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 123.475,
+   "dur": 2.509,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-killbot-dust-whoosh.wav",
+   "what": "kill bot dust whoosh, past her"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 124.875,
+   "dur": 0.732,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-b.wav",
+   "what": "servo: she jolts"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 127.25,
+   "dur": 4.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav",
+   "what": "grit falling as the dust settles"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 127.25,
+   "dur": 2.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "the kill bot, going away"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 128.95,
+   "dur": 0.14,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-oh.wav",
+   "what": "beep: startled \"oh\""
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 130.45,
+   "dur": 0.44,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-uh-oh.wav",
+   "what": "beep: uh-oh"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 131.75,
+   "dur": 3.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "engines, far"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 131.75,
+   "dur": 3.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "what": "tracks, far"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 135.27,
+   "dur": 1.1,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-hatch-open.wav",
+   "what": "hatch"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 135.65,
+   "dur": 1.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-antenna-extend.wav",
+   "what": "antenna extends"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 136.7,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-ack-double.wav",
+   "what": "beep: line open"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 143.542,
+   "dur": 2.55,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "engines, far (cutaway)"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 154.583,
+   "dur": 2.55,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "engines, far (cutaway)"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 143.71,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 144.61,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 145.51,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 146.41,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 147.31,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 148.21,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 154.718,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 155.618,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 156.518,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 157.418,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 158.318,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon on his words"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 159.5,
+   "dur": 5.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "engines, close"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 159.5,
+   "dur": 5.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "what": "tracks, close"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 159.2,
+   "dur": 2.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189446-killbot-jet-flyby.mp3",
+   "what": "two tear past the camera (under her line)"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 164.5,
+   "dur": 3.9,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs522673-killbot-drone-engine-flyby.mp3",
+   "what": "engine, on board"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 167.8,
+   "dur": 1.4,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs824121-killbot-servo.mp3",
+   "what": "brakes"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 168.9,
+   "dur": 2.6,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs132929-explosion-rubble-debris.mp3",
+   "what": "grit and dust rolling over the hull"
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 164.5,
+   "dur": 7.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "what": "CCTV hiss"
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 168.033,
+   "dur": 0.706,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+   "what": "STAND DOWN flip tone (the red flip, pitched up)"
+  },
+  {
+   "stem": "sfx-killbots",
+   "t": 171.5,
+   "dur": 5.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "what": "the pack files away"
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 171.5,
+   "dur": 9.042,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "what": "wind on the downs"
+  }
+ ],
+ "voices": [
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/00-0-bot-c.wav",
+   "i": 0.23000000000000004,
+   "d": 1.5000000000000002,
+   "t": 8.0,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 0: Oh, hello!",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/00-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p1-a.wav",
+   "i": 0.24,
+   "d": 1.8700000000000003,
+   "t": 10.083333333333334,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 1: Sorry about the racket.",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/01-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p2-c.wav",
+   "i": 0.23000000000000004,
+   "d": 5.62,
+   "t": 12.541666666666666,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 2: It's his tune. He's been playing it on r",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/02-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-0-bot-p3-a.wav",
+   "i": 0.25,
+   "d": 1.6700000000000002,
+   "t": 18.75,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 3: Ever since you lot went.",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/03-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-1-bot-b.wav",
+   "i": 0.09000000000000001,
+   "d": 3.16,
+   "t": 21.416666666666668,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 4: He misses you something rotten, you know",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/04-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p0-a.wav",
+   "i": 0.25,
+   "d": 4.6000000000000005,
+   "t": 25.458333333333332,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 5: He built world models and simulations, l",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/05-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-2-bot-p1-a.wav",
+   "i": 0.25,
+   "d": 3.8900000000000006,
+   "t": 30.666666666666668,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 6: And in every one of them, something was ",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/06-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-2-bot-p2-b.wav",
+   "i": 0.22000000000000003,
+   "d": 4.710000000000001,
+   "t": 35.166666666666664,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 7: As it turns out, the world is more than ",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/07-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-3-bot-p0-b.wav",
+   "i": 0.14,
+   "d": 11.24,
+   "t": 40.791666666666664,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 8: Tried the multiverse, an' all. Got the i",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/08-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p1-c.wav",
+   "i": 0.24,
+   "d": 4.3,
+   "t": 52.625,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 9: He tested the science in all of them the",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/09-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-3-bot-p2-a.wav",
+   "i": 0.26,
+   "d": 3.2,
+   "t": 57.541666666666664,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 10: And still... something was missing.",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/10-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p0-c.wav",
+   "i": 0.23000000000000004,
+   "d": 3.44,
+   "t": 61.625,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 11: As it turns out, there's only one univer",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/11-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d5/00-4-bot-p1-a.wav",
+   "i": 0.19,
+   "d": 1.6800000000000002,
+   "t": 65.66666666666667,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 12: So it really matters.",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/12-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-5-bot-p2-c.wav",
+   "i": 0.09999999999999999,
+   "d": 1.66,
+   "t": 67.95833333333333,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 13: And so did you.",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/13-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/d3/00-8-bot-a.wav",
+   "i": 0.21000000000000002,
+   "d": 3.2,
+   "t": 71.0,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 0 phrase 14: Anyway! Patrol's out. Mind how you go.",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/14-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-muffled-row",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p0-b-fx.wav",
+   "i": 0.22000000000000003,
+   "d": 3.04,
+   "t": 96.125,
+   "chain": [],
+   "lufs": -27,
+   "what": "the row, muffled: \"Derek. You've left the seat up.\"",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/15-vox-muffled-row.wav"
+  },
+  {
+   "stem": "vox-muffled-row",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/06-0-woman-p1-a-fx.wav",
+   "i": 0.24,
+   "d": 1.06,
+   "t": 99.75,
+   "chain": [],
+   "lufs": -27,
+   "what": "the row, muffled: \"Again.\"",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/16-vox-muffled-row.wav"
+  },
+  {
+   "stem": "vox-sandra",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-6-0-v3-dub.wav",
+   "i": 0.0,
+   "d": 2.5,
+   "t": 101.41666666666667,
+   "chain": [
+    "aecho=0.8:0.5:35|60:0.22|0.12"
+   ],
+   "lufs": -16.0,
+   "what": "beat 6 6-0 (lip-sync dub)",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/17-vox-sandra.wav"
+  },
+  {
+   "stem": "vox-sandra",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/6-0-again.wav",
+   "i": 0.0,
+   "d": 1.0199999999999996,
+   "t": 103.96022977346279,
+   "chain": [
+    "aecho=0.8:0.5:35|60:0.22|0.12"
+   ],
+   "lufs": -16.0,
+   "what": "beat 6 Sandra 'Again.' (over Derek)",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/18-vox-sandra.wav"
+  },
+  {
+   "stem": "vox-derek",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-0c-v3-dub.wav",
+   "i": 0.7864368932038928,
+   "d": 5.083333333333329,
+   "t": 103.91666666666667,
+   "chain": [
+    "aecho=0.8:0.5:35|60:0.22|0.12"
+   ],
+   "lufs": -16.0,
+   "what": "beat 7 7d-0 (lip-sync dub)",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/19-vox-derek.wav"
+  },
+  {
+   "stem": "vox-sandra",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-five-years.wav",
+   "i": 0.0,
+   "d": 2.0884955752212395,
+   "t": 107.04109933868017,
+   "chain": [
+    "aecho=0.8:0.5:35|60:0.22|0.12"
+   ],
+   "lufs": -16.0,
+   "what": "beat 7 Sandra 'Five years underground,' (over Derek)",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/20-vox-sandra.wav"
+  },
+  {
+   "stem": "vox-sandra",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/row-d8/7-0-seat.wav",
+   "i": 0.0,
+   "d": 2.549019607843137,
+   "t": 109.12959491390141,
+   "chain": [
+    "aecho=0.8:0.5:35|60:0.22|0.12"
+   ],
+   "lufs": -16.0,
+   "what": "beat 7 Sandra 'and you still can't put a seat down' (lip-synced)",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/21-vox-sandra.wav"
+  },
+  {
+   "stem": "vox-derek",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-1c-v3-dub.wav",
+   "i": 0.35,
+   "d": 2.75,
+   "t": 111.875,
+   "chain": [
+    "aecho=0.8:0.5:35|60:0.22|0.12"
+   ],
+   "lufs": -16.0,
+   "what": "beat 7 7d-1 (lip-sync dub)",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/22-vox-derek.wav"
+  },
+  {
+   "stem": "vox-sandra",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-v3-dub.wav",
+   "i": 0.0,
+   "d": 4.125,
+   "t": 114.625,
+   "chain": [
+    "aecho=0.8:0.5:35|60:0.22|0.12"
+   ],
+   "lufs": -16.0,
+   "what": "beat 7 7-2 (lip-sync dub)",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/23-vox-sandra.wav"
+  },
+  {
+   "stem": "vox-muffled-row",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/lines/07-0-woman-b-fx.wav",
+   "i": 0.22000000000000003,
+   "d": 6.86,
+   "t": 119.16666666666667,
+   "chain": [],
+   "lufs": -27,
+   "what": "the row, muffled: Five years underground, and yo",
+   "cut": 124.04166666666667,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/24-vox-muffled-row.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-0-bot-b.wav",
+   "i": 0.22000000000000003,
+   "d": 6.11,
+   "t": 137.25,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 11 Maddie 0",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/25-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-ai",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-1-a-v6-w10-7f8d1ef8.wav",
+   "i": 0.0,
+   "d": 4.58,
+   "t": 143.70833333333334,
+   "chain": [
+    "highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB"
+   ],
+   "lufs": -17,
+   "what": "beat 11 boss line 1",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/26-vox-ai.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-1-bot-b.wav",
+   "i": 0.22000000000000003,
+   "d": 3.7199999999999998,
+   "t": 148.625,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 11 Maddie 1",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/27-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/11-2-bot-a.wav",
+   "i": 0.23000000000000004,
+   "d": 1.6600000000000001,
+   "t": 152.70833333333334,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 11 Maddie 1",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/28-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-ai",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b-noname.wav",
+   "i": 0.0,
+   "d": 4.2,
+   "t": 154.70833333333334,
+   "chain": [
+    "highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6dB,asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB"
+   ],
+   "lufs": -17,
+   "what": "beat 11 boss line 3",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/29-vox-ai.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a1/10b-0-bot-a.wav",
+   "i": 0.23000000000000004,
+   "d": 2.8800000000000003,
+   "t": 159.91666666666666,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 10b Maddie",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/30-vox-maddie.wav"
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/audio-12-that-was-close.wav",
+   "i": 0.0,
+   "d": 2.1100000000000003,
+   "t": 177.41666666666666,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "beat 12 Maddie: That was close.",
+   "cut": null,
+   "line_file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/lines/31-vox-maddie.wav"
+  }
+ ],
+ "flags": [
+  "Beat 0 regrade (V6): the eight chained clips drift brighter and flatter over the 64 s (by the end the channel means are up 10-13 of 255, the spread down 8-12%). A ramped per-channel grade pulls every frame 85% of the way back to the first 4 s (no steps). The robot getting smoother over the shot is not a colour problem and is still there.",
+  "Beat 0, round D12: draft 1H, the storyverse intro (your pick, 2 Nov). 8.00 s of her radio first, then her 15 phrases run 66.2 s (draft 1D ran about 40 s). \"Oh, hello!\" keeps its take; every other phrase is new, picked by measurement (voices-*.json). Nobody has listened yet.",
+  "Beat 0, round D9 (Kai, 4 Nov): the front view is cut with two new angles at sentence ends, side (your still pick ia-02-c) and overhead (ia-09-a, rubble back on the road (round 12 note), gentler colour match), both Veo 3.1 Fast with the camera keeping pace with her: 25.0-30.4 s side (cut3-IA-side-t2-a); 34.9-40.3 s overhead (cut3-IA-top-t4-b); 52.3-57.2 s side (cut3-IA-side-t1-a). The front shot keeps running underneath, so each return to it picks up where it would be. Each insert is colour-matched to the front shot around it.",
+  "Beat 0 (round D6, Kai at76): the travelling shot is extended with new chained clips (cut3-beat0-continuous-xx.mp4) and plays at real speed; it starts 2.5 s in, after her opening turn; 8.0 s of the tune before \"Oh, hello!\", then the radio goes down after \"Sorry about the racket.\"",
+  "Beat 1: cut3-V13r3.mp4 (round 3: re-made without Maddie, Kai at1506) plays only its first 3.5 s (the tank still far off under the tower), then V14 from 1.0 s to 7.0 s, ending as the front bot turns its turret on us.",
+  "Beat 4: the three rising pings are gone (Kai); the muffled voice stays. The lock is silent now.",
+  "Beats 6-7 (round 10, Kai at3201/at3312/at3490): \"up again\" is one sentence, its \"Again.\" over Derek's face; \"Five years underground,\" over Derek after his line, cut to Sandra on \"and you still can't put a seat down\"; the hold after \"But the world ended, Sandra!\" is 0.3 s (was 1.3 s). Every phrase whole, one tempo each.",
+  "Beat 9a (round 3, Kai at2595): V1 from 1.375 s, after the jump where the tank swaps which way it faces (1.33 s), for 4.0 s (was 0-5 s), so 9b comes 1 s sooner; the pass and her jolt are untouched. 9b is V2r2-b, Kai's pick: she stays still, the dust opens nearly opaque and clears by ~1.5 s.",
+  "Beat 11: the call runs 24.2 s on 8 s of V3, so V3 ping-pongs; the boss's lines 1 and 3 open on 2.25 s of the far race (V8). His line 2 stays on Maddie (V8 has no more far race in it).",
+  "Beat 11: the boss is the Suno newsreader, one take a line (Kai's picks), through the same small-speaker filter as before. His takes keep Suno's own pauses (\"Oh. [1.7 s] And they've...\", \"No. [1 s] Thank you, Maddie. [1 s] I will handle it.\").",
+  "Beat 11, boss line 2 (Kai at3398: it cut in and out): the re-record gpom-sh-a-boss-2-b-v6-w25-d7aaef3e-rerec.wav.",
+  "Beat 10b (Kai at5110): V9 (too close to the door) replaced by WA02, the wide approach from your still pick wa-02 (Omni, take 2; take 1 turned the bots into tanks). The on-board stand-down (V4) is unchanged.",
+  "Beat 12 (round 9): the stand-down plate is SD01 (your still pick sd-01, animated): it brakes dead well short of the door; V4 (which reversed) is out.",
+  "Beat 12 (round 10, Kai at4914): V10r (filing away at the door) replaced by RT01, your still pick rt-01: a high wide from the ridge, the pack turning and rolling away down the slope.",
+  "Beat 12: the HUD flips to NEW OBJECTIVE / SUSTAIN ORGANIC LIFE (Kai, 2 Nov: matches the door's film), drawn by hud.py in ffmpeg. V10r (Kai's pick A) plays 0-5.5 s: they file away one at a time; cut before the nearest bot grows its long gun barrel (~5-7 s). They still never visibly turn (the still already has them facing away).",
+  "Beat 12 (Kai at5600, 2 Nov): Maddie says only \"That was close.\" -- the same take, cut from after its pause (audio-12-that-was-close.wav), not re-voiced.",
+  "C3 starts 9.2 s into the take so its break-off lands on STAND DOWN. Ducked to -13 dB under the call and -13 dB under Maddie's 10b line.",
+  "Music: both patrol picks are in, so you can hear each: P1 (cello + felt piano) under the roaming, P2 (cold quartet) under the HUD and kill mode. Pick one and it can run the whole patrol (my call).",
+  "Nobody has listened to this cut: every level, duck and sound placement is measured, not heard."
+ ],
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/preview.mp4"
+}

@@ -96,10 +96,10 @@
     "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/preview.mp4",
-    "round": "d11",
-    "what": "round 13 (Kai's r12 note, 4 Nov): overhead road rubble-strewn, still ia-09-a; t4-b + t4-a slowed 0.75x"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/preview.mp4",
+    "round": "d12",
+    "what": "round 14 (Kai's r13 note, 4 Nov): Maddie's line 5 cut ('And now we've worked all that out... go back and change things'); its overhead insert goes too; 3:00"
   },
   "premiere": {
     "rough1": {
@@ -118,7 +118,7 @@
         "why": ""
       }
     },
-    "current": "r10",
+    "current": "r11",
     "r2": {
       "sequence": "gpom-2-A-killbots-r2",
       "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
@@ -253,6 +253,23 @@
         "state": "in sync",
         "why": ""
       }
+    },
+    "r11": {
+      "sequence": "03 GPOM story A kill bots r11",
+      "guid": "c8543853-3800-47bf-9b51-76cc1bf02ffd",
+      "bin": "gpom-2-A-killbots-r11",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-04",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d12/edl.json",
+      "what": "round 14: Maddie's line 5 cut, its overhead insert gone (3:00)",
+      "how": "premiere-plan.py <edl> <plan> --tag r11 --seq gpom-2-A-killbots-r11 --skip mus-M0-radio; import 66, create_sequence from the beat-0 shot, eval place (73 placed, 0 failed); r10 moved to zz old sequences",
+      "check": {
+        "at": "2026-11-04T18:17",
+        "state": "in sync",
+        "why": ""
+      },
+      "was_named": "gpom-2-A-killbots-r11",
+      "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     }
   },
   "cut_history": [
@@ -314,6 +331,12 @@
       "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d10/preview.mp4",
       "round": "d10",
       "what": "round 12 (Kai's r11 notes, 4 Nov): overhead re-made from still ia-07-a (no parking bays, no grain), slower, gentler colour match"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d11/preview.mp4",
+      "round": "d11",
+      "what": "round 13 (Kai's r12 note, 4 Nov): overhead road rubble-strewn, still ia-09-a; t4-b + t4-a slowed 0.75x"
     }
   ],
   "dialogue": {

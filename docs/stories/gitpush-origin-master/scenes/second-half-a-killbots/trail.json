@@ -299,5 +299,26 @@
   "round": 13,
   "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
   "what": "Premiere gpom-2-A-killbots-r10 built from A-d11, in sync; r9 to zz old sequences"
+ },
+ {
+  "at": "2026-11-04T18:04:13+00:00",
+  "stage": "timeline",
+  "round": 14,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 14 (A-d12): Maddie's line 5 cut, its overhead insert gone, 3:00; Premiere gpom-2-A-killbots-r11 in sync",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d12",
+  "decided": [
+   "one line too many... cut straight to Anyway, mind how you go"
+  ]
+ },
+ {
+  "at": "2026-11-04T18:09:59+00:00",
+  "stage": "timeline",
+  "round": 14,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "signed off: round 14 frozen to final.json; Premiere gpom-2-A-killbots-r11",
+  "decided": [
+   "it's perfect. That's the one. No changes."
+  ]
  }
 ]
