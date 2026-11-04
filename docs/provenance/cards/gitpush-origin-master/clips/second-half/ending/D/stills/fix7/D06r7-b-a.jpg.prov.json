@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix7/D06r7-b-a.jpg",
+ "made": "2026-11-04T19:14:52.482Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the empty reclining chairs behind and beside the old woman: every one of them now has a person lying back in it, men and women in plain white clean-room suits, relaxed, eyes half closed, hands resting, some with a bag or a coat on their lap. Keep the old woman, her patchwork blanket, her green knitted cuff, her own hand reaching down from her chair to the brown mug on the floor, the small gleaming robot beside her, the chairs' design, the white floor, the light and the camera angle exactly the same, preserving the original style, lighting, and composition. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D06r6-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D06r6-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "241215e0-129f-4fab-9f10-69ad7f2aada6"
+}

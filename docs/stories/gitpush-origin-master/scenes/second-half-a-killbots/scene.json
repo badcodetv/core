@@ -264,7 +264,7 @@
       "what": "round 14: Maddie's line 5 cut, its overhead insert gone (3:00)",
       "how": "premiere-plan.py <edl> <plan> --tag r11 --seq gpom-2-A-killbots-r11 --skip mus-M0-radio; import 66, create_sequence from the beat-0 shot, eval place (73 placed, 0 failed); r10 moved to zz old sequences",
       "check": {
-        "at": "2026-11-04T18:17",
+        "at": "2026-11-04T20:12",
         "state": "in sync",
         "why": ""
       },

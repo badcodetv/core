@@ -48,6 +48,32 @@ E03_HEAD, E03_TAIL, E03_XF = 'E03r4-t1.mp4', 'E03xr4-t1.mp4', 0.3  # ending roun
 LINE_TEXT = 'I made it. Now the real work starts.'
 AI_TAKE_E2 = 'gpom-sh-end-ai-e2-h-v6-w10-22571839.wav'
 E2_PHRASES = [(0.00, 0.90, 'I made it.'), (4.08, 6.42, 'Now the real work starts.')]  # 0.05 s pads on the map
+# --tag r4 (Kai, 4 Nov, E timeline round 4): cut to Parliament ON "I made it." (at529: the bank sign skews and the bus
+# jumps at the end of E03, so leave it sooner), and a third sentence after a pause, stern, not angry (at699): "Don't
+# make me come back twice." It is cut from the 21 Oct take of atom -e1 (32047e7e, the same badcode newsreader Voice),
+# which already says it as its own sentence: speech 5.66-7.20 s on its level map, cut 5.60-7.45 (the tail's decay).
+R4 = E.TAG in ('r4', 'r5', 'r6')
+# --tag r5 (Kai, 4 Nov, after round 4): "Now the real work starts." is cut; "I made it." then, slower, "Don't make me
+# come back twice." as the landing punchline of the whole story. Until the slower Suno re-take exists, the 21 Oct
+# read stands in, after a longer pause.
+R5 = E.TAG in ('r5', 'r6')
+if R5:
+    E2_PHRASES = E2_PHRASES[:1]
+    LINE_TEXT = 'I made it.'
+AI_TAKE_E1 = 'gpom-sh-end-ai-e-a-v6-w10-32047e7e.wav'
+E3_PHRASE = (5.60, 7.45, "Don't make me come back twice.")
+STERN_GAP = 2.4 if E.TAG in ('r5', 'r6') else 1.4    # the pause before it (from the end of "Now the real work starts.")
+# --tag r6 (Kai, 4 Nov): his pick of Suno revision I, take 0ecce5dc ("I made it. Don't make me come back twice.", slower,
+# the punchline) for BOTH sentences. Level map (40 dB under peak, 20 ms): "I made it." 0.12-0.75 s, then a 7.7 s
+# silence (not used whole: the cut keeps the 2.4 s pause he approved in round 5), "Don't make me come back twice."
+# 8.54-10.70 s with its decay.
+if E.TAG == 'r6':
+    AI_TAKE_E2 = AI_TAKE_E1 = 'gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.wav'
+    E2_PHRASES = [(0.05, 0.95, 'I made it.')]
+    E3_PHRASE = (8.48, 10.75, "Don't make me come back twice.")
+    # Kai's Parliament pick e-b (E04r4a-e-b: his pick E04r4-a, edited for a light drizzle and a cleaner picture),
+    # animated as E04r4-t1 (Omni Flash, 10 s, camera locked). Played from 0.3 s.
+    E04_CLIP, E04_IN = 'E04r4-t1.mp4', 0.3
 CODA = 'gpom-sh-e-coda-a-v6-w60-18b34a9d.wav'
 # The coda's one edit (measured on its level envelope, 0.1 s frames): its opening piano phrase decays to a low point
 # at 9.05 s; the take's later phrase onset at 23.45 s follows straight on, skipping the first rise. The held-chord
@@ -280,7 +306,13 @@ def scene_e(sc):
         else:
             e = c.say('vox-ai', take, a_, b_, tt, f'e3: the AI, his own voice: "{w}"', chain=EQ, lufs=-17.5, ref=atom)
     line_end = e
-    c.line(b, 0, 'ai', L, line_end - L, LINE_TEXT, 'kai')
+    if R4:
+        a_, b_, w = E3_PHRASE
+        t3 = fr(line_end + STERN_GAP)
+        line_end = c.say('vox-ai', sc.media / 'suno' / AI_TAKE_E1, a_, b_, t3, f'e3: the AI, stern, his own voice: "{w}"',
+                         chain=EQ, lufs=-17.5, ref=(a_, b_))
+        m['stern'] = (t3, line_end)
+    c.line(b, 0, 'ai', L, line_end - L, LINE_TEXT + (' ' + E3_PHRASE[2] if R4 else ''), 'kai')
     b['lines'][-1]['name'] = 'The AI (opening to his own voice, for the first time)'
     # E round 3 (Kai): the last shot is the Houses of Parliament at night in the rain, so "Now the real work starts."
     # lands on that building (and we leave the bus shot before it jumps). "I made it." stays over the bus pulling away;
@@ -288,7 +320,9 @@ def scene_e(sc):
     # 1.0-1.5 s), a slow push 100 -> 106%, then the fade to black, which leaves at least 0.6 s of black under the last
     # note.
     total_e = fr(MUS_IN + ed(MUS_END) + 0.6)
-    cut_p = fr(L + (E2_PHRASES[1][0] - E2_PHRASES[0][0]) - 0.3)
+    if R4:
+        total_e = max(total_e, fr(line_end + TAIL + E03_HOLD + E03_FADE + 0.6))
+    cut_p = fr(L) if R4 else fr(L + (E2_PHRASES[1][0] - E2_PHRASES[0][0]) - 0.3)
     d03 = fr(cut_p - s3)
     pull = V / f'E03r4-pull-to-{d03:.3f}.mp4'
     if not pull.exists():
@@ -299,21 +333,48 @@ def scene_e(sc):
     dp = fr(end_p - cut_p)
     fade_at, fade_d = dp - E03_FADE, E03_FADE
     e04 = pathlib.Path(sc.clips['media']) / E04_CLIP
-    parl = V / f'E04p-push-{dp:.3f}.mp4'
+    parl = V / f'{pathlib.Path(E04_CLIP).stem}-push-{dp:.3f}.mp4'
+    if E.TAG in ('r4', 'r5') and not parl.exists():
+        # placeholder until the new Parliament shot is picked: the old 6 s clip played forward then back (looped)
+        fb = V / f'E04p-fb.mp4'
+        if not fb.exists():
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{E04_IN}', '-i', str(e04), '-filter_complex',
+                            '[0:v]split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]', '-map', '[v]', *C.ENC, str(fb)],
+                           check=True)
+        e04, E04_IN_ = fb, 0.0
+    else:
+        E04_IN_ = E04_IN
     if not parl.exists():
-        lips('move_keys.py', e04, parl, '--in', f'{E04_IN}', '--dur', f'{dp:.4f}',
+        lips('move_keys.py', e04, parl, '--in', f'{E04_IN_}', '--dur', f'{dp:.4f}',
              '--keys', f'0:1:640:360,{dp:.3f}:1.06:640:340', '--fade-out', f'{fade_at:.4f}:{fade_d}')
-    c.pic(parl, 0.0, cut_p, end_p, 'e3', source=e04)
-    c.flags.append(f'E04 (E round 3, Kai: "I want it to infer in that building"; pick E04p-a): the last shot is the '
+    pc = c.pic(parl, 0.0, cut_p, end_p, 'e3', source=e04)
+    if E.TAG in ('r4', 'r5'):
+        pc['looped'] = True
+    if E.TAG == 'r6':
+        c.flags.append(f'E round 6 (Kai, 4 Nov): the cut to Parliament is ON "I made it." ({L - s3:.1f} s into the bus '
+                       'shot; at529: the bank sign skews and the bus jumps at the end of E03). "Now the real work '
+                       f'starts." is cut; after a {STERN_GAP} s pause, "{E3_PHRASE[2]}", slower, the punchline. Both '
+                       'sentences from Kai\'s pick of Suno revision I, take 0ecce5dc. The last shot is the new, '
+                       'real-looking Houses of Parliament (Kai at699; his pick e-b: the embankment railing and '
+                       'lamppost, a light drizzle), E04r4-t1, Omni Flash 10 s, camera locked, a slow push in post.')
+    elif R4:
+        c.flags.append(f'E round 4 (Kai at529): the cut to Parliament is ON "I made it." ({L - s3:.1f} s into the bus '
+                       'shot), so the skewing bank sign and the bus\'s jump at the end of E03 are gone. (Kai at699): '
+                       f'"{E3_PHRASE[2]}" {STERN_GAP} s after "{E2_PHRASES[-1][2]}", stern, from the 21 Oct take '
+                       '32047e7e (same Voice); then a held beat and the fade. PLACEHOLDER picture: the old Parliament '
+                       'clip played forward then back, until the new, real-looking shot is picked.')
+    if E.TAG != 'r6': c.flags.append(f'E04 (E round 3, Kai: "I want it to infer in that building"; pick E04p-a): the last shot is the '
                    f'Houses of Parliament at night in the rain (E04p-t1, 8 s, Omni camera-locked: rain, river and clouds '
                    f'move, the building holds). The cut from the bus comes 0.3 s before "Now the real work starts.", so '
                    f'"I made it." stays over the bus pulling away; {dp:.1f} s of Parliament with a slow push 100 -> 106%, '
                    f'the fade to black starting {cut_p + fade_at - line_end:.1f} s after the last word.')
-    c.flags.append(f'The last line (Kai\'s pick, Suno rev H, take 22571839): "{LINE_TEXT}". "I made it." at '
+    if E.TAG != 'r6': c.flags.append(f'The last line (Kai\'s pick, Suno rev H, take 22571839): "{LINE_TEXT}". "I made it." at '
                    f'{L - s3:.1f} s into the shot, on the coda\'s held-chord pocket; the take\'s own 3.2 s pause is KEPT, so '
                    f'"Now the real work starts." lands as the cello\'s last phrase begins; it ends {line_end - s3:.1f} s in. '
                    'Cut on the take\'s silence map, not whisper.')
-    c.flags.append('E03 voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter so the voice is his before it '
+    if E.TAG == 'r6': c.flags.append('Voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter; "Don\'t make me come back '
+                   'twice." is his own voice, full range, close. The coda ducks 6 dB under both.')
+    else: c.flags.append('E03 voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter so the voice is his before it '
                    'changes; "Now the real work starts." is his own voice, full range, close (boom under 110 Hz off, -4 dB '
                    'at 200 Hz, +2 dB at 2.8 kHz), 1.5 dB quieter. The coda ducks 6 dB under both.')
     m['s3'], m['line'] = s3, (L, line_end)
@@ -321,7 +382,7 @@ def scene_e(sc):
     t = c.close(b, end_p)
 
     # ---- e4: black under the last note
-    total = fr(MUS_IN + ed(MUS_END) + 0.6)
+    total = total_e if R4 else fr(MUS_IN + ed(MUS_END) + 0.6)
     b = c.beat('e4', 'Black', t, act='The ending', see='Black. The last low piano note decays. No logo, no "We are BadCode".')
     c.pic(black(V / f'black-{total - t:.3f}.mp4', total - t), 0.0, t, total, 'e4', source='black')
     c.flags.append(f'E04: {total - t:.1f} s of black (scene.json planned 3 s): the coda\'s last low note sounds just '
@@ -442,10 +503,15 @@ def audio_e(c):
     L0, L1 = m['line']
     d = total - MUS_IN
     x = x[:int(d * SR)]
+    if len(x) < int(d * SR):  # r4 runs past the cue: silence (the last note has decayed by then)
+        x = np.concatenate([x, np.zeros((int(d * SR) - len(x), x.shape[1]), np.float32)])
     # ducked 6 dB under the line (its two phrases; the 3.2 s pause between them plays at full level)
     pts = [(0, 0), (0.6, 1)]
     for a_, b_, _ in E2_PHRASES:
         t0, t1 = L0 + a_ - MUS_IN, L0 + b_ - MUS_IN
+        pts += [(t0 - 0.4, 1), (t0, 0.5), (t1, 0.5), (t1 + 0.5, 1)]
+    if 'stern' in m:
+        t0, t1 = m['stern'][0] - MUS_IN, m['stern'][1] - MUS_IN
         pts += [(t0 - 0.4, 1), (t0, 0.5), (t1, 0.5), (t1 + 0.5, 1)]
     x *= C.env(len(x), sorted(pts + [(d - 0.6, 1), (d, 0)]))
     mx.add('mus-e-coda', x.astype(np.float32), MUS_IN, src,
@@ -508,7 +574,7 @@ E.SCENE_FNS['E'] = (scene_e, audio_e)
 if __name__ == '__main__':
     E.run('E', '--no-preview' not in sys.argv)
     # cut_end.run's QC note quotes scene C's overshoot numbers; put scene E's own in
-    p = E.CLIPS / 'ending' / 'E' / 'cut' / 'edl.json'
+    p = E.CLIPS / 'ending' / 'E' / (f'cut-{E.TAG}' if E.TAG else 'cut') / 'edl.json'
     data = json.loads(p.read_text())
     r = subprocess.run(['ffprobe', '-v', 'error', '-f', 'lavfi', '-i', f"movie={data['preview']},signalstats", '-show_entries',
                         'frame_tags=lavfi.signalstats.YMIN,lavfi.signalstats.YMAX,lavfi.signalstats.YLOW,'

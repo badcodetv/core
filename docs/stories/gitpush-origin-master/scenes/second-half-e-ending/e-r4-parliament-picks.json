@@ -1,0 +1,84 @@
+{
+ "title": "Parliament Shot Picks",
+ "eyebrow": "GPOM · E the ending · timeline round 4",
+ "heading": "The last shot: a Parliament that looks real",
+ "intro": "Round 2 (your note on a: right shot, a bit too rainy and too grainy): two edits of a with a light drizzle and a cleaner picture, at the top. Pick one and I animate it (one clip, about 12 credits). In the video the rain will be a fine drizzle too, and I can clean any grain left in post.",
+ "sections": [
+  {
+   "h": "Round 2: a, less rain, less grain",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "e04-r4b",
+     "title": "Pick the plate to animate",
+     "line": "My lean: e-b (clearer air, the building sharper). The first is a as you picked it.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "t/E04r4-a.jpg",
+       "label": "a as picked: heavy rain, grainy",
+       "warn": ""
+      },
+      {
+       "id": "e-a",
+       "src": "t/E04r4a-e-a.jpg",
+       "label": "e-a: lighter rain, cleaner, a little hazy",
+       "warn": ""
+      },
+      {
+       "id": "e-b",
+       "src": "t/E04r4a-e-b.jpg",
+       "label": "e-b: lighter rain, cleaner, clearer and a touch warmer",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The last shot (E04)",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "e04-r4",
+     "title": "Pick the plate",
+     "line": "The first one is what's in the cut now (the problem). My lean: a or b.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "t/now.jpg",
+       "label": "now: the postcard (the problem)",
+       "warn": ""
+      },
+      {
+       "id": "a",
+       "src": "t/E04r4-a.jpg",
+       "label": "a: from the embankment, wet railing and lamppost in front",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "t/E04r4-b.jpg",
+       "label": "b: long lens, the building fills the frame in the downpour",
+       "warn": "the clock faces glow quite bright"
+      },
+      {
+       "id": "c",
+       "src": "t/E04r4-c.jpg",
+       "label": "c: down the empty bridge towards it",
+       "warn": "the building is small and half hidden"
+      },
+      {
+       "id": "d",
+       "src": "t/E04r4-d.jpg",
+       "label": "d: high, through an office window, one building in a huge city",
+       "warn": "the window frame bars are odd"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

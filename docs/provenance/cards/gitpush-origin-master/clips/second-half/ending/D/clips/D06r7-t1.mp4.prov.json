@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D06r7-t1.mp4",
+ "made": "2026-11-04T19:23:28.349Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The frame holds perfectly still; only the people move. Steam rises from the brown mug on the white floor. The old woman lying back in her reclining chair, her own arm in its green knitted cuff already hanging down beside the chair, closes her fingers around the mug's handle and slowly lifts it up towards her chest, her elbow bending, until she holds it on top of the patchwork blanket and takes a small comforting breath. Her arm stays attached to her shoulder the whole time; no other hand appears. The gleaming robot beside her stays where it is, its amber light glowing softly. The people lying back in the chairs behind her shift a little and settle.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D06r7-b-a.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-ending/refs/D06r7-b-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "fc006a4b-7dd7-423c-9798-6dfa963bf0a6"
+}

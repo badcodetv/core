@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix7/D06r7-c-b.jpg",
+ "made": "2026-11-04T19:15:52.092Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, fill the row of empty reclining chairs around her: in each one a different survivor now lies back, wearing the same white clean-room suit, some dozing, some turned to look towards her, a rolled jumper or a small bag held on a lap. She stays exactly as she is in her own chair, the patchwork blanket on her legs, her arm in its green cuff stretched down to the brown mug on the floor. Change nothing else: the chair design, the white tiled floor, the pools of light under the chairs and the framing stay as they are, the same style and lighting. Plain picture, nothing written anywhere in it.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D06r6-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D06r6-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4d40ec2d-79ae-4938-bc50-f47d8787d4f5"
+}

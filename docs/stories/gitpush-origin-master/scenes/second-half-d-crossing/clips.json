@@ -12,7 +12,10 @@
    "plate": "../stills/D00-r2-b.jpg",
    "talking": false,
    "post": "beacon pulse timed to the AI's 'Suits on, please. It's a clean room.' (ffmpeg)",
-   "note": "A man hops into his suit leg past her bunting; a small blue chest logo shows on a suit at ~3.7 s (left edge), blur or crop if it reads."
+   "note": "A man hops into his suit leg past her bunting; a small blue chest logo shows on a suit at ~3.7 s (left edge), blur or crop if it reads.",
+   "file_round7": "D00r7-t1.mp4",
+   "plate_round7": "../stills/D00-r2-b.jpg",
+   "note_round7": "D round 5 (Kai at52, 4 Nov): fresh take from the same approved plate; the suit goes on in one continuous pull (the old take reset and pulled it up twice). Omni Flash, 6 s, count 1, Flow project baeda851. Used 0-3.46 s."
   },
   "D01": {
    "file": "D01-t2.mp4",
@@ -87,7 +90,10 @@
    "note": "Her hand picks the mug up and lifts it out of frame at ~6 s; robot wheels edge into the left of frame at 6-8 s (Maddie arriving, harmless). 'Is that tea?' off-screen over 0-3 s.",
    "file_round6": "D06r6-t1.mp4",
    "plate_round6": "../stills/fix6/D06r6-a.jpg",
-   "note_round6": "D round 4 (Kai at2525, pick D06r6-a): the old lady in her chair reaches down and lifts her own mug out of frame (~5.5 s). 8 s, 12 credits."
+   "note_round6": "D round 4 (Kai at2525, pick D06r6-a): the old lady in her chair reaches down and lifts her own mug out of frame (~5.5 s). 8 s, 12 credits.",
+   "file_round7": "D06r7-t1.mp4",
+   "plate_round7": "../stills/fix7/D06r7-b-a.jpg",
+   "note_round7": "D round 5 (Kai at889, pick D06r7-b-a): the old lady lying back in her own chair lifts her own mug up onto the blanket; every chair behind her occupied; gleaming Maddie beside her. Omni Flash, 8 s, count 1, Flow project 5817254d. Omni drifts the camera in slowly."
   },
   "D07": {
    "file": "D07-t1.mp4",

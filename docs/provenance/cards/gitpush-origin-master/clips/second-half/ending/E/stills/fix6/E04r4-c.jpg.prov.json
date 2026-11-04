@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix6/E04r4-c.jpg",
+ "made": "2026-11-04T19:41:07.278Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Seen from the empty pavement on the south end of Westminster Bridge late on a wet night, looking along the bridge towards the Palace of Westminster and its clock tower on the far side. The wet road surface and the stone parapet lead the eye in, puddles holding smeared reflections of the bridge's lamps, rain bouncing off the tarmac. The bridge is deserted: no cars, no buses, no people. The building ahead is half veiled by the downpour, its floodlights a soft creamy white, the clock tower partly lost in low cloud. The sky a sullen grey-brown, lit from beneath by the city. Taken at ordinary head height with a 35mm lens on colour negative film: soft natural grain, gentle halation around the nearest lamps, slightly cool, muted, a faint tilt to the horizon. Documentary and plain, like a frame from a British TV drama, not a postcard. Nothing written anywhere, no traffic signs, no flags.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "2951db89-384e-4ee7-b767-be23d782c5ae"
+}

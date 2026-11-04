@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix6/E04r4-a.jpg",
+ "made": "2026-11-04T19:39:50.564Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "An unremarkable documentary photograph taken on a rainy winter night in London, from the pavement of the Albert Embankment on the south bank of the Thames, at standing eye height. A wet black iron railing and the base of an old ornate lamppost run along the bottom-left of the frame, out of focus and beaded with rain. Across the dark, choppy river, the Houses of Parliament and the clock tower, lit by their real floodlights, a pale warm yellow-white, not orange. The sky is not black: it is the murky brown-grey glow of low city cloud lit from below, the way a real London night sky looks. Heavy rain softens the far building and lowers the contrast; the reflections on the water are broken and grey, not glowing. The framing is slightly off-centre and a little crooked, as if taken quickly by someone standing in the rain, the building not centred. Shot on 35mm film with fine natural grain, slight lens softness at the edges, muted colour, mixed light from the cold white LEDs of the embankment and the warm floodlights across the water, no lens flares, no glow, no bloom. No people, no boats, no signs, no text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "f8654c60-9f48-4f12-b6af-ca844f53c1fd"
+}

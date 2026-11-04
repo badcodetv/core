@@ -1,0 +1,516 @@
+{
+ "sequence": "gpom-second-half-C-rough4",
+ "title": "Ending C Timeline",
+ "heading": "GPOM second half · the ending · scene C: the walk out",
+ "intro": "Scene C, round 8: the \"Some negotiation later.\" card is gone (the bridge before it now ends on \"The next day.\"), so C opens straight on the long walk; and Maddie no longer slides down the hill over the brow. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.",
+ "fps": 24,
+ "sample_rate": 48000,
+ "total": 36.625,
+ "beats": [
+  {
+   "id": "c3",
+   "title": "The long walk",
+   "start": 0.0,
+   "dur": 10.5,
+   "see": "The rhyme of beat 0, withheld: tight on Maddie alone on the chalk track, as she was alone in Swindon; then the frame widens and a hundred people are walking behind her.",
+   "act": "The walk out",
+   "lines": [
+    {
+     "i": 0,
+     "who": "maddie",
+     "name": "Maddie",
+     "t": 1.0,
+     "dur": 1.4,
+     "text": "Careful now, humans.",
+     "by": "claude"
+    },
+    {
+     "i": 1,
+     "who": "maddie",
+     "name": "Maddie",
+     "t": 3.0,
+     "dur": 4.5,
+     "text": "I'm fairly sure there's no radiation round here.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "title": "The seat",
+   "start": 10.5,
+   "dur": 10.208333333333334,
+   "see": "Sandra and Derek, walking. The row one last time, and what it now means: nobody is coming back.",
+   "act": "The walk out",
+   "lines": [
+    {
+     "i": 0,
+     "who": "sandra",
+     "name": "Sandra",
+     "t": 11.57,
+     "dur": 2.112,
+     "text": "I hope you put that bloody seat down.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "derek",
+     "name": "Derek",
+     "t": 14.167,
+     "dur": 5.71,
+     "text": "Doesn't bloody matter now, love. We're not coming back, are we?",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "title": "Over the brow",
+   "start": 20.708333333333332,
+   "dur": 7.958333333333333,
+   "see": "From behind the hundred at the crest, every head turned down to the AI's building in the fold of the downs. They stop. Maddie waits just ahead of them, still.",
+   "act": "The building",
+   "lines": [
+    {
+     "i": 0,
+     "who": "derek",
+     "name": "Derek",
+     "t": 21.917,
+     "dur": 3.58,
+     "text": "Bloody hell. Look at that building.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "title": "Mind the step",
+   "start": 28.666666666666668,
+   "dur": 7.958333333333333,
+   "see": "At the foot of the black wall the amber seam has opened into a doorway with one low step. Maddie waits, asks them in, then goes up into the light.",
+   "act": "The building",
+   "lines": [
+    {
+     "i": 0,
+     "who": "maddie",
+     "name": "Maddie",
+     "t": 29.083,
+     "dur": 2.295,
+     "text": "Come in. Mind the step.",
+     "by": "kai"
+    }
+   ]
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/video/C03f-reveal.mp4",
+   "in": 0.0,
+   "dur": 10.5,
+   "start": 0.0,
+   "beat": "c3",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/C03f-chain.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c04r1-seat-t1.mp4",
+   "in": 1.2083333333333333,
+   "dur": 3.4166666666666665,
+   "start": 10.5,
+   "beat": "c4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c04r1-seat-t1.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c05r6-t1.mp4",
+   "in": 0.0,
+   "dur": 6.791666666666667,
+   "start": 13.916666666666666,
+   "beat": "c4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c05r6-t1.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/video/c06r3-t1-held-push-d7.958.mp4",
+   "in": 0.0,
+   "dur": 7.958333333333333,
+   "start": 20.708333333333332,
+   "beat": "c5",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c06r3-t1-held.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/video/C07-glass.mp4",
+   "in": 0.0,
+   "dur": 7.958333333333333,
+   "start": 28.666666666666668,
+   "beat": "c6",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/C07-t3.mp4",
+   "looped": false
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "vox-derek",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/01-vox-derek.wav",
+   "start": 0.0,
+   "peak_db": -0.1
+  },
+  {
+   "track": "A2",
+   "name": "vox-maddie",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/02-vox-maddie.wav",
+   "start": 0.0,
+   "peak_db": -2.4
+  },
+  {
+   "track": "A3",
+   "name": "vox-sandra",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/03-vox-sandra.wav",
+   "start": 0.0,
+   "peak_db": -4.6
+  },
+  {
+   "track": "A4",
+   "name": "mus-c-walk",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/04-mus-c-walk.wav",
+   "start": 0.0,
+   "peak_db": -5.6
+  },
+  {
+   "track": "A5",
+   "name": "sfx-beacon",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/05-sfx-beacon.wav",
+   "start": 0.0,
+   "peak_db": -32.6
+  },
+  {
+   "track": "A6",
+   "name": "sfx-crowd",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/06-sfx-crowd.wav",
+   "start": 0.0,
+   "peak_db": -8.8
+  },
+  {
+   "track": "A7",
+   "name": "sfx-maddie",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/07-sfx-maddie.wav",
+   "start": 0.0,
+   "peak_db": -12.0
+  },
+  {
+   "track": "A8",
+   "name": "sfx-maddie-beeps",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/08-sfx-maddie-beeps.wav",
+   "start": 0.0,
+   "peak_db": -26.7
+  },
+  {
+   "track": "A9",
+   "name": "sfx-room",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/09-sfx-room.wav",
+   "start": 0.0,
+   "peak_db": -33.6
+  },
+  {
+   "track": "A10",
+   "name": "sfx-wind",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/stems/10-sfx-wind.wav",
+   "start": 0.0,
+   "peak_db": -17.9
+  }
+ ],
+ "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/mix.wav",
+ "events": [
+  {
+   "stem": "vox-maddie",
+   "t": 1.0,
+   "dur": 1.4,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c2-0-maddie-r1c.wav",
+   "what": "c3 line 0 maddie: \"Careful now, humans.\""
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 3.0,
+   "dur": 4.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c2-1-maddie-r1c.wav",
+   "what": "c3 line 1 maddie: \"I'm fairly sure there's no radiation round here.\""
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 11.583,
+   "dur": 2.109,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c4-0-sandra-r1c.wav",
+   "what": "c4 line 0 sandra (lip-sync, x1.07)"
+  },
+  {
+   "stem": "vox-derek",
+   "t": 14.167,
+   "dur": 1.84,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c4-1-derek-r1c.wav",
+   "what": "c4 line 1 derek: \"Doesn't bloody matter now, love.\" (lip-sync, x1.15)"
+  },
+  {
+   "stem": "vox-derek",
+   "t": 18.583,
+   "dur": 1.3,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c4-1-derek-r1c.wav",
+   "what": "c4 line 1 derek: \"We're not coming back, are we?\" (lip-sync, x1.0)"
+  },
+  {
+   "stem": "vox-derek",
+   "t": 21.917,
+   "dur": 3.58,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c5-0-derek-r1b.wav",
+   "what": "c5 line 0 derek: \"Bloody hell. Look at that building.\" (awed, quiet)"
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 29.083,
+   "dur": 0.89,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c6-0-maddie-r1a.wav",
+   "what": "c6 line 0 maddie: \"Come in.\""
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 30.458,
+   "dur": 0.92,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c6-0-maddie-r1a.wav",
+   "what": "c6 line 0 maddie: \"Mind the step.\""
+  },
+  {
+   "stem": "mus-c-walk",
+   "t": 0.0,
+   "dur": 30.458,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/suno/gpom-sh-c-walk-a-v6-w30-cc128cb2.wav",
+   "what": "C-walk: lone violin and piano, the held cello note on the reveal"
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 0.0,
+   "dur": 36.625,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
+   "what": "wind on the downs (ffmpeg)"
+  },
+  {
+   "stem": "sfx-crowd",
+   "t": 0.0,
+   "dur": 20.708,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+   "what": "a hundred pairs of feet on the chalk (held under the walk)"
+  },
+  {
+   "stem": "sfx-crowd",
+   "t": 20.708,
+   "dur": 1.715,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+   "what": "they stop"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 7.65,
+   "dur": 0.43,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-happy.wav",
+   "what": "beep: happy (after the radiation joke)"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 0.0,
+   "dur": 10.5,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "what": "her wheels on the chalk track (loop)"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 1.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 4.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-beacon",
+   "t": 7.0,
+   "dur": 0.2,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
+   "what": "beacon blip"
+  },
+  {
+   "stem": "sfx-crowd",
+   "t": 28.667,
+   "dur": 7.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs653920-crowd-small-walla.mp3",
+   "what": "the hundred at the door: a low murmur that dies away as Maddie goes in"
+  },
+  {
+   "stem": "sfx-crowd",
+   "t": 28.667,
+   "dur": 0.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+   "what": "feet shifting at the door"
+  },
+  {
+   "stem": "sfx-room",
+   "t": 28.667,
+   "dur": 7.958,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/ending-src/doorway-hum.wav",
+   "what": "the doorway: a low hum (ffmpeg)"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 28.967,
+   "dur": 5.0,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-loop-8s.wav",
+   "what": "her wheels along the wall"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 33.567,
+   "dur": 0.518,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-servo-turn-a.wav",
+   "what": "servo: she turns back"
+  },
+  {
+   "stem": "sfx-maddie",
+   "t": 34.767,
+   "dur": 1.9,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/derived-maddie-wheels-stop.wav",
+   "what": "bump: up the step"
+  },
+  {
+   "stem": "sfx-maddie-beeps",
+   "t": 35.267,
+   "dur": 0.22,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-boop-ok.wav",
+   "what": "beep: ok, in she goes"
+  }
+ ],
+ "voices": [
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c2-0-maddie-r1c.wav",
+   "i": 0.28,
+   "d": 1.4,
+   "t": 1.0,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "c3 line 0 maddie: \"Careful now, humans.\"",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c2-1-maddie-r1c.wav",
+   "i": 0.2,
+   "d": 4.5,
+   "t": 3.0,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "c3 line 1 maddie: \"I'm fairly sure there's no radiation round here.\"",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-sandra",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c4-0-sandra-r1c.wav",
+   "i": 0.3,
+   "d": 2.2600000000000002,
+   "t": 11.583333333333334,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "c4 line 0 sandra (lip-sync, x1.07)",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-derek",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c4-1-derek-r1c.wav",
+   "i": 0.24,
+   "d": 2.0999999999999996,
+   "t": 14.166666666666666,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "c4 line 1 derek: \"Doesn't bloody matter now, love.\" (lip-sync, x1.15)",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-derek",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c4-1-derek-r1c.wav",
+   "i": 3.0,
+   "d": 1.2999999999999998,
+   "t": 18.583333333333332,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "c4 line 1 derek: \"We're not coming back, are we?\" (lip-sync, x1.0)",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-derek",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c5-0-derek-r1b.wav",
+   "i": 0.22,
+   "d": 3.5799999999999996,
+   "t": 21.916666666666668,
+   "chain": [],
+   "lufs": -17.5,
+   "what": "c5 line 0 derek: \"Bloody hell. Look at that building.\" (awed, quiet)",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c6-0-maddie-r1a.wav",
+   "i": 0.26,
+   "d": 0.8899999999999999,
+   "t": 29.083333333333332,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "c6 line 0 maddie: \"Come in.\"",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-maddie",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/voices/c6-0-maddie-r1a.wav",
+   "i": 1.3,
+   "d": 0.9200000000000002,
+   "t": 30.458333333333332,
+   "chain": [],
+   "lufs": -16.0,
+   "what": "c6 line 0 maddie: \"Mind the step.\"",
+   "cut": null,
+   "line_file": null
+  }
+ ],
+ "flags": [
+  "C round 5 (Kai reel at73): the opening door shot (C01) and Maddie's \"Go on. I promise you'll be okay.\" / \"You've got my word.\" are CUT: scene B now ends on \"Come back tomorrow\", the door slam and Maddie rolling away, so C opens on the first ones stepping out.",
+  "C round 3 (Kai reel at253/at440): Maddie was about twice her size in C01b and C02. Both plates were remade in two steps (the robot removed, then the canonical bot s3-bot-00b-a added back knee-high, sized against a bag in frame) and re-animated: c01br5-t1 (6 s), C02r5-t2 (8 s; C02 is framed a little wider than before and Omni drifts the camera). Bunting kept: this is outside the clean room.",
+  "Round 8 (Kai, 4 Nov, at44): the \"Some negotiation later.\" card is cut. The bridge before C (scene B, draft 1G) ends on its own \"The next day.\" card, so C opens on the long walk at 0:00. C01b and C02 (the bunker exit) stay cut; Maddie's two walk lines stay on the long walk.",
+  "C03 unchanged (Kai round 1: \"excellent shot\"): opens at 160% on Maddie alone, holds 1.5 s, eases out to 100% by 9.6 s so the hundred appear behind her. Music on it may change once it is in Premiere.",
+  "Round 9 (Kai, 4 Nov, at534): Sandra's \"It does matter. In ten thousand years, when the aliens dig up that bunker, they'll know it was you.\" is cut, with her C04b shot and Derek's flat look. The row ends on Derek's \"We're not coming back, are we?\"; C05 holds 0.7 s past his last word, then the cut to the building.",
+  "C round 6 (Kai at896, pick C05r6-b): Derek now walks level with Sandra, shoulder to shoulder (c05r6-t1, 12 credits). His line is on his mouth in two phrases (x1.15 and x1.0), read from the picture, not from Omni's own audio; the flat look is the clip's last 1.8 s as he turns to her.",
+  "C round 6 (Kai at299, pick c01br6-a): the step-out is on scene B's trampled grass, no mud, Maddie knee-high (c01br6-t1, 6 s, 10 credits): they stride out, he shades his eyes, the crowd follows.",
+  "Round 1 (Kai, lc4-0/lc4-1/bc4, Q1 a): the seat is four shots now: C04 (her line) -> C05 (his) -> C04b (her punchline) -> C05 again for his flat look, no reply. All four lines are lip-synced phrase by phrase on the mouth (lip-sync-dub), never on Omni's own audio.",
+  "c4 lip-sync: Sandra's seat line x1.07 (the b of \"bloody\" on her shut lips). Derek in four pieces: \"Doesn't\" x1.0, \"bloody matter now, love.\" x1.3 (the cap), \"We're not coming\" x1.0, \"back, are we?\" x1.0, each b landing on a lip closure (0.92-1.00 and 4.25-4.33 s of C05). Sandra's punchline in five pieces: x1.0 / x1.3 / x1.0 / x1.12 / x1.3. Her mouth gives the last phrase 0.8 s for 1.3 s of voice, so \"they'll know it was you.\" is at the 1.3 cap and the take's 0.5 s pause before it is gone: the line to listen to for squeeze. A slower Omni take of that phrase alone would fix it.",
+  "Round 8 (Kai, 4 Nov, at794): Maddie no longer slides down the hill in C06. Her patch of hillside is held as it is at 5.0 s for the first 5 s (hold_region.py, a feathered box, no generation), then the clip plays untouched: she sits still, then shifts a hand's width at most. The building's seam still lights end to end, and the crowd still breathes.",
+  "Round 2 (Kai, at1289): C06 re-animated without the old man on his stick and his helper (c06r3-t1); every head looks down at the building, nobody turns. The seam lights end to end from ~2 s. Omni rolls Maddie a short way forward and left down the slope (~2-6 s), as if leading them: it was not asked for, and it reads as her setting off ahead, so the shot plays whole. Kai to judge.",
+  "Round 2 (Kai, at1342): Maddie's \"He's been working on this one for quite a long time.\" is cut. Derek's \"Bloody hell. Look at that building.\" waits 1.2 s into the reveal and plays alone; then 3.2 s of the building and the wind before the cut to the door.",
+  "Not made: a Derek close-up for \"Bloody hell. Look at that building.\" He is among the backs in C06, so the line plays without a visible mouth. A close-up would need a new still and a lip-sync clip (~12 credits). Kai to rule.",
+  "Round 1 (Kai, lc6-0): \"Come in. Mind the step.\" is Maddie's now (the boss is silent in scene C). \"Come in.\" at 0.4 s into C07, \"Mind the step.\" 0.5 s later (the take's own gap was 0.25 s), so she goes up the step (~5.5 s) after the invitation.",
+  "C07: Maddie's reflection in the black glass left of the doorway is darkened (glass_window.py) so it does not read as a second robot inside.",
+  "Music unchanged (Kai: may change once it is in Premiere): C-walk enters on the long walk at 40.7 s into the take, its held low cello note on the reveal, no edit inside the music; ducked to 0.25 under all four seat lines (the seat scene is longer now) and to 0.5 under Derek at the crest; stops dead on \"Mind the step\". C01-C02 play on wind and the crowd.",
+  "Sound I made up for scene C: the hundred shifting their weight in the bunker (quiet), a hundred feet on chalk (the crowd-shuffle loop), the doorway hum (55/110 Hz + pink noise, ffmpeg), a happy beep after the radiation joke, the bump and boop as Maddie goes in. No birdsong: the library has none.",
+  "Colour: mean RGB measured on both sides of every cut; the biggest steps are c05r6-t1 -> c06r3-t1-held (40/255) (a change of place or light, not a drift inside a shot).",
+  "Nobody has listened to this cut: every level, duck and sound placement is measured, not heard.",
+  "delivery-qc on preview.mp4: 7 ok, 2 warn, 1 fail. FAIL TAGGED LIMITED RANGE, CONTENT IS FULL — whites will clip. Fix with: -vf 'scale=in_range=full:out_range=limited' -pix_fmt yuv420p -color | warn blacks reach 0 — shadow detail is already clipped before the platform re-encodes. Lift the floor a little | warn off the -14 LUFS target — platforms normalise, so this mostly costs you dynamics The range FAIL is x264 quantisation ringing on a few grain pixels per frame: the picture is clamped to 16-235 before the encode (cut3.LEGAL) and the encoder overshoots (3/247); cut 3 A's preview fails the same way. Not a range-tag mismatch. -16 LUFS is the house target for these scenes (the brief), not -14."
+ ],
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/preview.mp4"
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c06r3-t1-held.mp4",
+ "made": "2026-11-04T18:15:48+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "opencv",
+ "tool": "scripts/gpom/second-half-video/ending/hold_region.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/clips/c06r3-t1.mp4",
+ "why": "Kai at794 (4 Nov): Maddie slides down the hill; her region held at its 5.0 s state for 0-5 s",
+ "settings": {
+  "until": "5.0",
+  "box": "285,345,755,625",
+  "feather": "14"
+ }
+}

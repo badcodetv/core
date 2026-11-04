@@ -343,6 +343,35 @@ I made it.
 Now the real work starts.
 ```
 
+### `gpom-sh-end-ai-e3` — the last line, the punchline (scene E round 5) · **revision I (Kai, 4 Nov)**
+
+Kai, 4 Nov, after E round 4: *"we should remove the now the real work starts and we should just say don't make me come
+back twice… We need more emotion in it… slower and it's like the landing punchline of the whole story."* Earlier the
+same day (E timeline at699): stern, *"not angry, but stern"*. Replaces `-e2`'s second sentence; "I made it." is read again
+here so both sentences come from one take (the cut may still use `-e2`'s "I made it."). One read, no bracket cues
+(round G showed the cued double read trips Suno's lyric filter). Through `badcode newsreader`. by: kai.
+
+Settings: v6 · Voice `badcode newsreader` · Style Influence 50 · Audio Influence 65 · Weirdness **pair 25 / 10** · Duration 20 · Variety, Max Mode, Personalize Off · workspace `gpom-story`.
+
+Style:
+
+```
+Spoken word, voice only. One calm British male voice, a newsreader, close to the microphone, speaking slowly and quietly to one person late at night. No music at all: no score, no bed, no instruments, only his voice and long silences. The first sentence is tired and relieved, almost a breath. Then a long pause. The second sentence is the last line of the whole story: much slower, every word weighed and given its own space, heavy with feeling, the grief of someone who has watched everything end once already; firm and stern underneath, never angry, never shouted, never theatrical. Dry, dead booth, no reverb. He speaks only the words written.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, angry, shouting, trailer voice, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb, fast
+```
+
+Lyrics:
+
+```lyrics
+I made it.
+Don't make me come back twice.
+```
+
 ## The music
 
 ### `gpom-sh-c-walk` — scene C, lone violin and piano, open air
@@ -434,6 +463,22 @@ filter. `-e1` stays unfiltered and dry. Nothing is slowed (house rule).
 ## Round log
 
 New rounds at the top.
+
+### Round I (2026-11-04) · `-e3`, the punchline: "I made it." / "Don't make me come back twice." · 20 credits
+
+Kai's re-direction after E round 4 (cut "Now the real work starts."; the last line slower, with more emotion, the
+landing punchline). First sign-in attempt landed on the wrong Suno account (a free one, v6-mini only): nothing
+generated there, the style box filled and left. On the BadCode account: `pair` (`-v6-w25` / `-v6-w10`), Voice attached
+(`voice:already`), 7,150 → 7,130. Not listened to, not recorded; **Kai picks**.
+
+**Pick (Kai, 4 Nov: "This is the one Claude, that one works."): `gpom-sh-end-ai-e3-I-v6-w10` [0ecce5dc](https://suno.com/song/0ecce5dc-4d78-4330-a06e-8c0ee1200d0f)**, recorded with `record-checked.py` (19.84 s, try 1), never downloaded: `E/suno/gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.wav`. Level map: "I made it." 0.12–0.75 s, a 7.7 s silence, "Don't make me come back twice." 8.54–10.70 s. Whisper word-perfect. In E from cut-r6.
+
+| Take | Length | Link |
+| --- | --- | --- |
+| gpom-sh-end-ai-e3-I-v6-w25 | 0:20 | https://suno.com/song/6e751842-d7e7-4f9b-8445-96ba14be5ae2 |
+| gpom-sh-end-ai-e3-I-v6-w25 | 0:20 | https://suno.com/song/b37d9efa-5355-4282-ad67-e182ffe0a7e3 |
+| gpom-sh-end-ai-e3-I-v6-w10 | 0:20 | https://suno.com/song/b3da8150-ad01-4728-853b-2f7d28247a44 |
+| gpom-sh-end-ai-e3-I-v6-w10 | 0:20 | https://suno.com/song/0ecce5dc-4d78-4330-a06e-8c0ee1200d0f |
 
 ### Rounds G + H (2026-10-23) · the `-e2` last line, Kai's new words · G BLOCKED, H generated · 20 credits
 

@@ -304,108 +304,6 @@
     "superseded": "d1-1-sandra@r4"
    }
   },
-  "d3-1-maddie": {
-   "speaker": "maddie",
-   "frame": "D03c",
-   "text": "It's the time machine. You do understand what this will cost you.",
-   "voice": "Aoede",
-   "file": "voices/d3-1-maddie-r4a.wav",
-   "duration": 9.16,
-   "lead": 0.46,
-   "heard": "It's the time machine. You do understand what this will cost you.",
-   "verified": true,
-   "why": "[KAI'S PICK, 23 Oct, by ear on the picks page] d3-1-maddie-r4a.wav. (Was d3-1-maddie-r5b.wav, picked by measurement.) [r4+r5, hand pick] r5b: exact with the full stop, and the only take with the scripted pause and no other: 1.36 s after 'machine.', then the second sentence in one unbroken, slower run (5.62 s of speech, -17.2 LUFS). r5a is the alternative for Kai's ear: softer (-23.1 LUFS) and slower (7.54 s), with a halt before 'what this will cost you', but whisper hears a comma not a stop after 'machine'. r4c (the earlier auto-pick) has no real pause after the first sentence (gaps 0.34/0.54 s), which the direction asks for. r4a 9.16 s drags; r4b and r5c fail ('...is the', 'He's the').",
-   "takes": [
-    {
-     "take": "a",
-     "file": "d3-1-maddie-r4a.wav",
-     "duration": 9.16,
-     "expected": 4.62,
-     "heard": "It's the time machine. You do understand what this will cost you.",
-     "match": 1.0,
-     "gap": 1.93,
-     "status": "ok (attempt 2)",
-     "round": "r4",
-     "lufs": -27.7,
-     "true_peak": -13.3
-    },
-    {
-     "take": "b",
-     "file": "d3-1-maddie-r4b.wav",
-     "duration": 6.0,
-     "expected": 4.62,
-     "heard": "...is the time machine. You do understand -",
-     "match": 0.74,
-     "gap": 1.95,
-     "status": "ok (attempt 1)",
-     "round": "r4",
-     "lufs": -22.7,
-     "true_peak": -5.5
-    },
-    {
-     "take": "c",
-     "file": "d3-1-maddie-r4c.wav",
-     "duration": 6.6,
-     "expected": 4.62,
-     "heard": "It's the time machine. You do understand what this will cost you.",
-     "match": 1.0,
-     "gap": 0.55,
-     "status": "ok (attempt 1)",
-     "round": "r4",
-     "lufs": -20.7,
-     "true_peak": -7.9
-    },
-    {
-     "take": "a",
-     "file": "d3-1-maddie-r5a.wav",
-     "duration": 8.2,
-     "expected": 4.62,
-     "heard": "It's the time machine, you do understand what this will cost you.",
-     "match": 1.0,
-     "gap": 1.88,
-     "status": "ok (attempt 1)",
-     "round": "r5",
-     "lufs": -23.1,
-     "true_peak": -7.4
-    },
-    {
-     "take": "b",
-     "file": "d3-1-maddie-r5b.wav",
-     "duration": 6.4,
-     "expected": 4.62,
-     "heard": "It's the time machine. You do understand what this will cost you.",
-     "match": 1.0,
-     "gap": 1.33,
-     "status": "ok (attempt 1)",
-     "round": "r5",
-     "lufs": -17.2,
-     "true_peak": -5.4
-    },
-    {
-     "take": "c",
-     "file": "d3-1-maddie-r5c.wav",
-     "duration": 8.04,
-     "expected": 4.62,
-     "heard": "He's the time machine. You do understand what this will cost you.",
-     "match": 0.968,
-     "gap": 1.68,
-     "status": "ok (attempt 2)",
-     "round": "r5",
-     "lufs": -22.4,
-     "true_peak": -8.6
-    }
-   ],
-   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
-   "previous": null,
-   "prompts": {
-    "r4": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
-    "r5": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
-   },
-   "speech": [
-    0.46,
-    9.16
-   ]
-  },
   "d4-0-maddie": {
    "speaker": "maddie",
    "frame": "D06",
@@ -472,120 +370,6 @@
     ],
     "heard": "Milk? Two sugars. I kept your loyalty cards."
    }
-  },
-  "d6-0-lady": {
-   "speaker": "lady",
-   "frame": "D11",
-   "text": "When he arrives back in time, what will he do?",
-   "voice": "Sulafat",
-   "file": "voices/d6-0-lady-r4c.wav",
-   "duration": 5.0,
-   "speech": [
-    0.0,
-    4.22
-   ],
-   "lead": 0.0,
-   "heard": "When he arrives back in time, what will he do?",
-   "verified": true,
-   "why": "[r4] c: both heard as written; c 5.0s is closer to the ~3.85s the words take than a 5.12s; both heard as written; c 5.0s is closer to the ~3.85s the words take than b 5.04s",
-   "takes": [
-    {
-     "take": "a",
-     "file": "d6-0-lady-r4a.wav",
-     "duration": 5.12,
-     "expected": 3.85,
-     "heard": "When he arrives back in time, what will he do?",
-     "match": 1.0,
-     "gap": 0.55,
-     "status": "ok (attempt 1)",
-     "lufs": -13.4,
-     "true_peak": -1.3
-    },
-    {
-     "take": "b",
-     "file": "d6-0-lady-r4b.wav",
-     "duration": 5.04,
-     "expected": 3.85,
-     "heard": "When he arrives back in time, what will he do?",
-     "match": 1.0,
-     "gap": 0.45,
-     "status": "ok (attempt 1)",
-     "lufs": -14.3,
-     "true_peak": -2.0
-    },
-    {
-     "take": "c",
-     "file": "d6-0-lady-r4c.wav",
-     "duration": 5.0,
-     "expected": 3.85,
-     "heard": "When he arrives back in time, what will he do?",
-     "match": 1.0,
-     "gap": 0.55,
-     "status": "ok (attempt 1)",
-     "lufs": -14.6,
-     "true_peak": -1.8
-    }
-   ],
-   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: lying back in the chair, quiet, matter-of-fact, genuinely wanting to know, a little hope in it.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
-   "previous": {
-    "superseded": "d6-0-lady@r4"
-   }
-  },
-  "d6-1-maddie": {
-   "speaker": "maddie",
-   "frame": "D11",
-   "text": "He's going to try and convince you lot to sort your government out.",
-   "voice": "Aoede",
-   "file": "voices/d6-1-maddie-r4a.wav",
-   "duration": 4.28,
-   "speech": [
-    0.0,
-    3.82
-   ],
-   "lead": 0.0,
-   "heard": "He's going to try and convince you lot to sort your government out.",
-   "verified": true,
-   "why": "[r4] a: b failed (extra/missing word, or no silence to split in) ('Hm, he's going to try and convince you lot to sort your government out.', 0.98); both heard as written; a 4.28s is closer to the ~5.0s the words take than c 4.08s",
-   "takes": [
-    {
-     "take": "a",
-     "file": "d6-1-maddie-r4a.wav",
-     "duration": 4.28,
-     "expected": 5.0,
-     "heard": "He's going to try and convince you lot to sort your government out.",
-     "match": 1.0,
-     "gap": 0.15,
-     "status": "ok (attempt 1)",
-     "lufs": -16.6,
-     "true_peak": -2.9
-    },
-    {
-     "take": "b",
-     "file": "d6-1-maddie-r4b.wav",
-     "duration": 5.04,
-     "expected": 5.0,
-     "heard": "Hm, he's going to try and convince you lot to sort your government out.",
-     "match": 0.978,
-     "gap": 0.25,
-     "status": "ok (attempt 1)",
-     "lufs": -15.4,
-     "true_peak": -5.0
-    },
-    {
-     "take": "c",
-     "file": "d6-1-maddie-r4c.wav",
-     "duration": 4.08,
-     "expected": 5.0,
-     "heard": "He's going to try and convince you lot to sort your government out.",
-     "match": 1.0,
-     "gap": 0.12,
-     "status": "ok (attempt 1)",
-     "lufs": -19.6,
-     "true_peak": -5.3
-    }
-   ],
-   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: plain and clear, as simple as she can make it, every word distinct; fond, a little wry on 'you lot'; sincere: the whole plan in one sentence.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
-   "previous": null
   },
   "d7-0-sandra": {
    "speaker": "sandra",
@@ -761,146 +545,76 @@
     "superseded": "d9-0-maddie@r4"
    }
   },
-  "d3-2-lady": {
-   "speaker": "lady",
-   "frame": "D04",
-   "text": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-   "voice": "Sulafat",
-   "file": "voices/d3-2-lady-r7c.wav",
-   "duration": 11.48,
+  "d3-1-maddie": {
+   "speaker": "maddie",
+   "frame": "D03c",
+   "text": "It's the time machine. It'll send all of you back, to before it all went wrong. And it'll send him too, so he can help you avoid it.",
+   "voice": "Aoede",
+   "file": "voices/d3-1-maddie-r5e.wav",
+   "duration": 13.64,
    "speech": [
     0.0,
-    10.88
+    13.24
    ],
    "lead": 0.0,
-   "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+   "heard": "It's the time machine. It'll send all of you back to before it all went wrong. And it'll send him too, so he can help you avoid it.",
    "verified": true,
-   "why": "[r7, reel round 1, Kai at2108/at2566: stern, like her life depends on it] r7c: all 8 takes (r6 'measured and heavy', r7 'urgent, at a normal speaking pace') heard exactly as written. r7c is the shortest (10.8 s of speech; r6 ran 12.3-13.4 s), which matters because it has to sit on a lip-sync clip; its breaks fall where the line turns: a breath after 'Look,' (0.28 s), after 'humanity.' (0.34 s) and before 'I want to take that chance.' (0.62 s). -14.7 LUFS. Alternative for Kai's ear: r6c, heavier and slower (12.3 s). Nobody has listened: 'stern' is the prompt's, not a measurement.",
+   "why": "[r5] e: a failed (extra/missing word, or no silence to split in) ('It's the time machine, you do understand what this will cost you.', 0.33); b failed (extra/missing word, or no silence to split in) ('It's the time machine. You do understand what this will cost you.', 0.33); c failed (extra/missing word, or no silence to split in) ('He's the time machine. You do understand what this will cost you.', 0.30); d transcript less exact (0.99 vs 1.00: '...is the time machine. It'll send all of you back to before it all went wrong. And it'll send him too, so he can help you avoid it.')",
    "takes": [
     {
      "take": "a",
-     "file": "d3-2-lady-r6a.wav",
-     "duration": 14.0,
-     "expected": 11.15,
-     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-     "match": 1.0,
-     "gap": 0.8,
-     "status": "ok (attempt 1)",
-     "tag": "r6"
+     "file": "d3-1-maddie-r5a.wav",
+     "duration": 8.2,
+     "expected": 10.77,
+     "heard": "It's the time machine, you do understand what this will cost you.",
+     "match": 0.326,
+     "gap": 1.88,
+     "status": "kept"
     },
     {
      "take": "b",
-     "file": "d3-2-lady-r6b.wav",
-     "duration": 13.72,
-     "expected": 11.15,
-     "heard": "Look. This has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-     "match": 1.0,
-     "gap": 0.68,
-     "status": "ok (attempt 1)",
-     "tag": "r6"
+     "file": "d3-1-maddie-r5b.wav",
+     "duration": 6.4,
+     "expected": 10.77,
+     "heard": "It's the time machine. You do understand what this will cost you.",
+     "match": 0.326,
+     "gap": 1.33,
+     "status": "kept"
     },
     {
      "take": "c",
-     "file": "d3-2-lady-r6c.wav",
-     "duration": 13.08,
-     "expected": 11.15,
-     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-     "match": 1.0,
-     "gap": 0.83,
-     "status": "ok (attempt 1)",
-     "tag": "r6"
+     "file": "d3-1-maddie-r5c.wav",
+     "duration": 8.04,
+     "expected": 10.77,
+     "heard": "He's the time machine. You do understand what this will cost you.",
+     "match": 0.305,
+     "gap": 1.68,
+     "status": "kept"
     },
     {
      "take": "d",
-     "file": "d3-2-lady-r6d.wav",
-     "duration": 13.96,
-     "expected": 11.15,
-     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-     "match": 1.0,
-     "gap": 0.88,
-     "status": "ok (attempt 1)",
-     "tag": "r6"
+     "file": "d3-1-maddie-r5d.wav",
+     "duration": 14.84,
+     "expected": 10.77,
+     "heard": "...is the time machine. It'll send all of you back to before it all went wrong. And it'll send him too, so he can help you avoid it.",
+     "match": 0.992,
+     "gap": 1.3,
+     "status": "ok (attempt 1)"
     },
     {
-     "take": "a",
-     "file": "d3-2-lady-r7a.wav",
-     "duration": 13.08,
-     "expected": 11.15,
-     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "take": "e",
+     "file": "d3-1-maddie-r5e.wav",
+     "duration": 13.64,
+     "expected": 10.77,
+     "heard": "It's the time machine. It'll send all of you back to before it all went wrong. And it'll send him too, so he can help you avoid it.",
      "match": 1.0,
-     "gap": 1.0,
-     "status": "ok (attempt 1)",
-     "tag": "r7"
-    },
-    {
-     "take": "b",
-     "file": "d3-2-lady-r7b.wav",
-     "duration": 11.92,
-     "expected": 11.15,
-     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-     "match": 1.0,
-     "gap": 0.53,
-     "status": "ok (attempt 1)",
-     "tag": "r7"
-    },
-    {
-     "take": "c",
-     "file": "d3-2-lady-r7c.wav",
-     "duration": 11.48,
-     "expected": 11.15,
-     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-     "match": 1.0,
-     "gap": 0.62,
-     "status": "ok (attempt 1)",
-     "tag": "r7"
-    },
-    {
-     "take": "d",
-     "file": "d3-2-lady-r7d.wav",
-     "duration": 12.24,
-     "expected": 11.15,
-     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
-     "match": 1.0,
-     "gap": 0.68,
-     "status": "ok (attempt 1)",
-     "tag": "r7"
+     "gap": 1.75,
+     "status": "ok (attempt 3)"
     }
    ],
-   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the key line of the film, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and clear, every word careful, a little wonder in 'back, to before it all went wrong'; a breath; 'And it'll send him too' warm, fond of him; 'so he can help you avoid it' soft and hopeful, falling at the end.\nStyle: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
    "previous": {
-    "superseded": "d3-2-lady@r6"
-   },
-   "prompts": {
-    "r6": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: measured and heavy; a breath after 'Look,'; a short pause after 'humanity'; the last clause, 'I want to take that chance', slow and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
-    "r7": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
-   },
-   "speech_measured": {
-    "r6a": 13.4,
-    "r6b": 13.06,
-    "r6c": 12.32,
-    "r6d": 13.32,
-    "r7a": 12.38,
-    "r7b": 11.28,
-    "r7c": 10.76,
-    "r7d": 11.66
-   },
-   "phrases": {
-    "Look,": [
-     0.28,
-     0.7
-    ],
-    "this has been the worst possible outcome for humanity.": [
-     0.98,
-     5.18
-    ],
-    "If there's a chance we could go back in time to change it,": [
-     5.52,
-     8.94
-    ],
-    "I want to take that chance.": [
-     9.56,
-     11.04
-    ]
+    "superseded": "d3-1-maddie@r5"
    }
   }
  },
@@ -1435,6 +1149,368 @@
     5.44
    ],
    "superseded": "Reel round 1 (Kai 23 Oct): at2347 drops the lady's 'Is that tea?'; at2108/at2566 give the lady new, stern words in d3"
+  },
+  "d3-1-maddie@r5": {
+   "speaker": "maddie",
+   "frame": "D03c",
+   "text": "It's the time machine. You do understand what this will cost you.",
+   "voice": "Aoede",
+   "file": "voices/d3-1-maddie-r4a.wav",
+   "duration": 9.16,
+   "lead": 0.46,
+   "heard": "It's the time machine. You do understand what this will cost you.",
+   "verified": true,
+   "why": "[KAI'S PICK, 23 Oct, by ear on the picks page] d3-1-maddie-r4a.wav. (Was d3-1-maddie-r5b.wav, picked by measurement.) [r4+r5, hand pick] r5b: exact with the full stop, and the only take with the scripted pause and no other: 1.36 s after 'machine.', then the second sentence in one unbroken, slower run (5.62 s of speech, -17.2 LUFS). r5a is the alternative for Kai's ear: softer (-23.1 LUFS) and slower (7.54 s), with a halt before 'what this will cost you', but whisper hears a comma not a stop after 'machine'. r4c (the earlier auto-pick) has no real pause after the first sentence (gaps 0.34/0.54 s), which the direction asks for. r4a 9.16 s drags; r4b and r5c fail ('...is the', 'He's the').",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d3-1-maddie-r4a.wav",
+     "duration": 9.16,
+     "expected": 4.62,
+     "heard": "It's the time machine. You do understand what this will cost you.",
+     "match": 1.0,
+     "gap": 1.93,
+     "status": "ok (attempt 2)",
+     "round": "r4",
+     "lufs": -27.7,
+     "true_peak": -13.3
+    },
+    {
+     "take": "b",
+     "file": "d3-1-maddie-r4b.wav",
+     "duration": 6.0,
+     "expected": 4.62,
+     "heard": "...is the time machine. You do understand -",
+     "match": 0.74,
+     "gap": 1.95,
+     "status": "ok (attempt 1)",
+     "round": "r4",
+     "lufs": -22.7,
+     "true_peak": -5.5
+    },
+    {
+     "take": "c",
+     "file": "d3-1-maddie-r4c.wav",
+     "duration": 6.6,
+     "expected": 4.62,
+     "heard": "It's the time machine. You do understand what this will cost you.",
+     "match": 1.0,
+     "gap": 0.55,
+     "status": "ok (attempt 1)",
+     "round": "r4",
+     "lufs": -20.7,
+     "true_peak": -7.9
+    },
+    {
+     "take": "a",
+     "file": "d3-1-maddie-r5a.wav",
+     "duration": 8.2,
+     "expected": 4.62,
+     "heard": "It's the time machine, you do understand what this will cost you.",
+     "match": 1.0,
+     "gap": 1.88,
+     "status": "ok (attempt 1)",
+     "round": "r5",
+     "lufs": -23.1,
+     "true_peak": -7.4
+    },
+    {
+     "take": "b",
+     "file": "d3-1-maddie-r5b.wav",
+     "duration": 6.4,
+     "expected": 4.62,
+     "heard": "It's the time machine. You do understand what this will cost you.",
+     "match": 1.0,
+     "gap": 1.33,
+     "status": "ok (attempt 1)",
+     "round": "r5",
+     "lufs": -17.2,
+     "true_peak": -5.4
+    },
+    {
+     "take": "c",
+     "file": "d3-1-maddie-r5c.wav",
+     "duration": 8.04,
+     "expected": 4.62,
+     "heard": "He's the time machine. You do understand what this will cost you.",
+     "match": 0.968,
+     "gap": 1.68,
+     "status": "ok (attempt 2)",
+     "round": "r5",
+     "lufs": -22.4,
+     "true_peak": -8.6
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": null,
+   "prompts": {
+    "r4": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+    "r5": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the most important thing she will ever say, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and tender, close to tears but holding it together, almost pleading, every word careful, her voice breaking a little on 'cost you'.\nStyle: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it."
+   },
+   "speech": [
+    0.46,
+    9.16
+   ],
+   "superseded": "Kai round 5 (4 Nov): words changed or line cut"
+  },
+  "d6-0-lady@r5": {
+   "speaker": "lady",
+   "frame": "D11",
+   "text": "When he arrives back in time, what will he do?",
+   "voice": "Sulafat",
+   "file": "voices/d6-0-lady-r4c.wav",
+   "duration": 5.0,
+   "speech": [
+    0.0,
+    4.22
+   ],
+   "lead": 0.0,
+   "heard": "When he arrives back in time, what will he do?",
+   "verified": true,
+   "why": "[r4] c: both heard as written; c 5.0s is closer to the ~3.85s the words take than a 5.12s; both heard as written; c 5.0s is closer to the ~3.85s the words take than b 5.04s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d6-0-lady-r4a.wav",
+     "duration": 5.12,
+     "expected": 3.85,
+     "heard": "When he arrives back in time, what will he do?",
+     "match": 1.0,
+     "gap": 0.55,
+     "status": "ok (attempt 1)",
+     "lufs": -13.4,
+     "true_peak": -1.3
+    },
+    {
+     "take": "b",
+     "file": "d6-0-lady-r4b.wav",
+     "duration": 5.04,
+     "expected": 3.85,
+     "heard": "When he arrives back in time, what will he do?",
+     "match": 1.0,
+     "gap": 0.45,
+     "status": "ok (attempt 1)",
+     "lufs": -14.3,
+     "true_peak": -2.0
+    },
+    {
+     "take": "c",
+     "file": "d6-0-lady-r4c.wav",
+     "duration": 5.0,
+     "expected": 3.85,
+     "heard": "When he arrives back in time, what will he do?",
+     "match": 1.0,
+     "gap": 0.55,
+     "status": "ok (attempt 1)",
+     "lufs": -14.6,
+     "true_peak": -1.8
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: lying back in the chair, quiet, matter-of-fact, genuinely wanting to know, a little hope in it.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets; in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+   "previous": {
+    "superseded": "d6-0-lady@r4"
+   },
+   "superseded": "Kai round 5 (4 Nov): words changed or line cut"
+  },
+  "d6-1-maddie@r5": {
+   "speaker": "maddie",
+   "frame": "D11",
+   "text": "He's going to try and convince you lot to sort your government out.",
+   "voice": "Aoede",
+   "file": "voices/d6-1-maddie-r4a.wav",
+   "duration": 4.28,
+   "speech": [
+    0.0,
+    3.82
+   ],
+   "lead": 0.0,
+   "heard": "He's going to try and convince you lot to sort your government out.",
+   "verified": true,
+   "why": "[r4] a: b failed (extra/missing word, or no silence to split in) ('Hm, he's going to try and convince you lot to sort your government out.', 0.98); both heard as written; a 4.28s is closer to the ~5.0s the words take than c 4.08s",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d6-1-maddie-r4a.wav",
+     "duration": 4.28,
+     "expected": 5.0,
+     "heard": "He's going to try and convince you lot to sort your government out.",
+     "match": 1.0,
+     "gap": 0.15,
+     "status": "ok (attempt 1)",
+     "lufs": -16.6,
+     "true_peak": -2.9
+    },
+    {
+     "take": "b",
+     "file": "d6-1-maddie-r4b.wav",
+     "duration": 5.04,
+     "expected": 5.0,
+     "heard": "Hm, he's going to try and convince you lot to sort your government out.",
+     "match": 0.978,
+     "gap": 0.25,
+     "status": "ok (attempt 1)",
+     "lufs": -15.4,
+     "true_peak": -5.0
+    },
+    {
+     "take": "c",
+     "file": "d6-1-maddie-r4c.wav",
+     "duration": 4.08,
+     "expected": 5.0,
+     "heard": "He's going to try and convince you lot to sort your government out.",
+     "match": 1.0,
+     "gap": 0.12,
+     "status": "ok (attempt 1)",
+     "lufs": -19.6,
+     "true_peak": -5.3
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: plain and clear, as simple as she can make it, every word distinct; fond, a little wry on 'you lot'; sincere: the whole plan in one sentence.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "previous": null,
+   "superseded": "Kai round 5 (4 Nov): words changed or line cut"
+  },
+  "d3-2-lady@r5": {
+   "speaker": "lady",
+   "frame": "D04",
+   "text": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+   "voice": "Sulafat",
+   "file": "voices/d3-2-lady-r7c.wav",
+   "duration": 11.48,
+   "speech": [
+    0.0,
+    10.88
+   ],
+   "lead": 0.0,
+   "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+   "verified": true,
+   "why": "[r7, reel round 1, Kai at2108/at2566: stern, like her life depends on it] r7c: all 8 takes (r6 'measured and heavy', r7 'urgent, at a normal speaking pace') heard exactly as written. r7c is the shortest (10.8 s of speech; r6 ran 12.3-13.4 s), which matters because it has to sit on a lip-sync clip; its breaks fall where the line turns: a breath after 'Look,' (0.28 s), after 'humanity.' (0.34 s) and before 'I want to take that chance.' (0.62 s). -14.7 LUFS. Alternative for Kai's ear: r6c, heavier and slower (12.3 s). Nobody has listened: 'stern' is the prompt's, not a measurement.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d3-2-lady-r6a.wav",
+     "duration": 14.0,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.8,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "b",
+     "file": "d3-2-lady-r6b.wav",
+     "duration": 13.72,
+     "expected": 11.15,
+     "heard": "Look. This has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.68,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "c",
+     "file": "d3-2-lady-r6c.wav",
+     "duration": 13.08,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.83,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "d",
+     "file": "d3-2-lady-r6d.wav",
+     "duration": 13.96,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.88,
+     "status": "ok (attempt 1)",
+     "tag": "r6"
+    },
+    {
+     "take": "a",
+     "file": "d3-2-lady-r7a.wav",
+     "duration": 13.08,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 1.0,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "b",
+     "file": "d3-2-lady-r7b.wav",
+     "duration": 11.92,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.53,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "c",
+     "file": "d3-2-lady-r7c.wav",
+     "duration": 11.48,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.62,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    },
+    {
+     "take": "d",
+     "file": "d3-2-lady-r7d.wav",
+     "duration": 12.24,
+     "expected": 11.15,
+     "heard": "Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.",
+     "match": 1.0,
+     "gap": 0.68,
+     "status": "ok (attempt 1)",
+     "tag": "r7"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+   "previous": {
+    "superseded": "d3-2-lady@r6"
+   },
+   "prompts": {
+    "r6": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: measured and heavy; a breath after 'Look,'; a short pause after 'humanity'; the last clause, 'I want to take that chance', slow and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+    "r7": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: stern and grave, not soft, not reassuring, no smile: she answers Maddie as if her life depends on it, because it does; low, firm and deliberate, every word meant; 'Look,' sharp, then a breath; 'the worst possible outcome for humanity' hard and heavy; a short pause; 'I want to take that chance' slow and final, falling at the end.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, falling at the end.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says."
+   },
+   "speech_measured": {
+    "r6a": 13.4,
+    "r6b": 13.06,
+    "r6c": 12.32,
+    "r6d": 13.32,
+    "r7a": 12.38,
+    "r7b": 11.28,
+    "r7c": 10.76,
+    "r7d": 11.66
+   },
+   "phrases": {
+    "Look,": [
+     0.28,
+     0.7
+    ],
+    "this has been the worst possible outcome for humanity.": [
+     0.98,
+     5.18
+    ],
+    "If there's a chance we could go back in time to change it,": [
+     5.52,
+     8.94
+    ],
+    "I want to take that chance.": [
+     9.56,
+     11.04
+    ]
+   },
+   "superseded": "Kai round 5 (4 Nov): words changed or line cut"
   }
  }
 }

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D00r7-t1.mp4",
+ "made": "2026-11-04T19:17:43.956Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off camera, no camera movement at all. The small grey delivery robot waits in place among the people, its amber beacon gently pulsing bright and dim. Around it the survivors finish putting on their white suits in one smooth, continuous action each: a man steps his second boot into the suit leg and draws the suit up over his knee in a single unbroken pull, never stopping and never starting over. Others zip up and straighten their sleeves. Every movement only goes forward; nothing repeats or rewinds. The robot's torn bunting sways slightly as a leg brushes it.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D00-r2-b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-ending/refs/D00-r2-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 6
+ },
+ "source_id": "60f9e311-af80-4a44-97db-e65572e95b31"
+}

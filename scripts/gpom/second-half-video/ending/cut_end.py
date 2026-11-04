@@ -4,6 +4,7 @@
     python3 scripts/gpom/second-half-video/ending/cut_end.py C            # scene C, the walk out
     python3 scripts/gpom/second-half-video/ending/cut_end.py C --no-preview
     python3 scripts/gpom/second-half-video/ending/cut_end.py C --tag later   # scene B cut: "Some negotiation later."
+    python3 scripts/gpom/second-half-video/ending/cut_end.py C --tag nextday # the card gone, Maddie held still in C06
 
 --tag X writes to <media>/cut-X/ instead of <media>/cut/, so the Premiere sequence built from the old cut keeps its
 files. --tag later (Kai, 28 Oct): scene B (the door) is cut from the film; C opens on a black card, "Some negotiation
@@ -49,10 +50,17 @@ SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6
            'asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB')
 ENC = C.ENC
 C1_KEEP = False  # Kai reel at73: beat c1 (the door from inside) is cut
-ROUND_KEYS = ('file_round6', 'file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
+ROUND_KEYS = ('file_round7', 'file_round6', 'file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-LATER = TAG == 'later'
+LATER = TAG in ('later', 'nextday', 'noaliens')
+# --tag nextday (Kai, 4 Nov, at44 + at794): the bridge before C now ends on its own "The next day." card, so C's
+# "Some negotiation later." card goes and C opens on the long walk; and C06 plays with Maddie held still
+# (hold_region.py) instead of sliding down the hill.
+NEXTDAY = TAG in ('nextday', 'noaliens')
+# --tag noaliens (Kai, 4 Nov, at534): round 8 plus Sandra's aliens punchline cut; Derek's "We're not coming back,
+# are we?" goes straight to the building.
+NOALIENS = TAG == 'noaliens'
 CARD = 'Some negotiation later.'  # Kai's words, 28 Oct
 CARD_D = 2.5
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
@@ -272,7 +280,18 @@ def scene_c(sc):
                    'remade in two steps (the robot removed, then the canonical bot s3-bot-00b-a added back knee-high, sized '
                    'against a bag in frame) and re-animated: c01br5-t1 (6 s), C02r5-t2 (8 s; C02 is framed a little wider '
                    'than before and Omni drifts the camera). Bunting kept: this is outside the clean room.')
-    if LATER:
+    if NEXTDAY:
+        c.meta['intro'] = ('Scene C, round 8: the "Some negotiation later." card is gone (the bridge before it now ends '
+                           'on "The next day."), so C opens straight on the long walk; and Maddie no longer slides down '
+                           'the hill over the brow. Play it, click any beat, clip, line or sound, and leave a note in its '
+                           "yellow slip. Notes save as you type. Tell Claude when you're done.")
+        t = 0.0
+        m['card'] = (0.0, 0.0)
+        m['c01b'] = m['c02'] = (t, t)
+        c.flags.append('Round 8 (Kai, 4 Nov, at44): the "Some negotiation later." card is cut. The bridge before C '
+                       '(scene B, draft 1G) ends on its own "The next day." card, so C opens on the long walk at 0:00. '
+                       'C01b and C02 (the bunker exit) stay cut; Maddie\'s two walk lines stay on the long walk.')
+    elif LATER:
         c.meta['intro'] = ('Scene C, round 7: scene B is cut (your call, 28 Oct: "it\'s just removed so much fluff"). '
                            'The kill bots stand down at the end of A; then black, "Some negotiation later."; then the long '
                            'walk, Maddie leading, with her "Careful now, humans." moved onto it. Play it, click any beat, '
@@ -364,8 +383,9 @@ def scene_c(sc):
     # words) -> C05 5.8-8.0 (his flat look, no reply).
     s4 = t
     b = c.beat('c4', 'The seat', s4, act='The walk out',
-               see='Sandra and Derek, walking. The row one last time, and what it now means: nobody is coming back, '
-                   'and she is still right. He gives her a look.')
+               see=('Sandra and Derek, walking. The row one last time, and what it now means: nobody is coming back.'
+                    if NOALIENS else 'Sandra and Derek, walking. The row one last time, and what it now means: nobody is '
+                    'coming back, and she is still right. He gives her a look.'))
     i04 = 1.2
     k = 'c4-0-sandra'
     # C04 (c04r1-seat-t1): mouth shut to 2.25, speech 2.25-4.4; voice 0.30-2.56 at x1.07: the b of "bloody" lands
@@ -389,7 +409,17 @@ def scene_c(sc):
     c.line(b, 1, 'derek', a, e - a, sc.text(k), by(k))
     o05 = 6.1  # C round 6: his second phrase ends ~6.0 on c05r6-t1
     cut04b = fr(cut05 + o05)
-    c.pic(sc.clip('C05'), 0.0, cut05, cut04b, 'c4')
+    if NOALIENS:  # Kai at534: no punchline. C05 holds 0.7 s past his last word, then the building.
+        end_c4 = fr(cut05 + 6.8)
+        c.pic(sc.clip('C05'), 0.0, cut05, end_c4, 'c4')
+        m['c4'] = (s4, end_c4)
+        m['c4_lines'] = (s4 + 2.27 - i04, e)
+        m['you'] = e
+        t = c.close(b, end_c4)
+        c.flags.append('Round 9 (Kai, 4 Nov, at534): Sandra\'s "It does matter. In ten thousand years, when the aliens '
+                       'dig up that bunker, they\'ll know it was you." is cut, with her C04b shot and Derek\'s flat look. '
+                       'The row ends on Derek\'s "We\'re not coming back, are we?"; C05 holds 0.7 s past his last word, '
+                       'then the cut to the building.')
     k = 'c4-2-sandra'
     # C04b (c04r1-aliens-t1), in at 0.5: mouth parted and held to ~0.92 (first check put "It" 0.13 s before the
     # full opening at 0.96: moved to 0.92); "It does" to 1.33, lips shut 1.375-1.42 for
@@ -398,26 +428,27 @@ def scene_c(sc):
     # w of "was", rounded on "you" 6.67-6.83). "bunker" keeps its soft "-er" tail (voice to 6.26: cut at 6.08, the
     # mix was heard as "bunk they'll"). The voice's 0.25 s gap inside "It does" is dropped; its 0.5 s pause
     # before "they'll" is not in her mouth, so it goes.
-    i4b = 0.5
-    t4b = cut04b - i4b
-    S4 = [(0.29, 0.62, 0.92, 1.0, '"It"'), (0.84, 1.82, 1.24, 1.3, '"does matter."'),
-          (2.36, 3.96, 2.40, 1.0, '"In ten thousand years,"'), (4.16, 6.26, 4.20, 1.12, '"when the aliens dig up that bunker,"'),
-          (6.54, 7.82, 6.10, 1.3, '"they\'ll know it was you."')]
-    for v0, v1, at, tp, txt in S4:
-        e = c.say('vox-sandra', sc.voice(k), v0, v1, t4b + at, f'c4 line 2 sandra: {txt} (lip-sync, x{tp})', tempo=tp,
-                  ref=speech(k))
-    a = t4b + S4[0][2]
-    c.line(b, 2, 'sandra', a, e - a, sc.text(k), by(k))
-    out4b = 7.3  # Omni added "You cannot..." from 7.56
-    cutlook = fr(t4b + out4b)
-    c.pic(sc.clip('C04b'), i4b, cut04b, cutlook, 'c4')
-    look0, look1 = 6.2, 8.0 - 1 / FPS  # c05r6-t1: he turns his head to her from ~6 s
-    end_c4 = fr(cutlook + look1 - look0)
-    c.pic(sc.clip('C05'), look0, cutlook, end_c4, 'c4')
-    m['c4'] = (s4, end_c4)
-    m['c4_lines'] = (s4 + 2.27 - i04, e)
-    m['you'] = e
-    t = c.close(b, end_c4)
+    if not NOALIENS:
+        i4b = 0.5
+        t4b = cut04b - i4b
+        S4 = [(0.29, 0.62, 0.92, 1.0, '"It"'), (0.84, 1.82, 1.24, 1.3, '"does matter."'),
+              (2.36, 3.96, 2.40, 1.0, '"In ten thousand years,"'), (4.16, 6.26, 4.20, 1.12, '"when the aliens dig up that bunker,"'),
+              (6.54, 7.82, 6.10, 1.3, '"they\'ll know it was you."')]
+        for v0, v1, at, tp, txt in S4:
+            e = c.say('vox-sandra', sc.voice(k), v0, v1, t4b + at, f'c4 line 2 sandra: {txt} (lip-sync, x{tp})', tempo=tp,
+                      ref=speech(k))
+        a = t4b + S4[0][2]
+        c.line(b, 2, 'sandra', a, e - a, sc.text(k), by(k))
+        out4b = 7.3  # Omni added "You cannot..." from 7.56
+        cutlook = fr(t4b + out4b)
+        c.pic(sc.clip('C04b'), i4b, cut04b, cutlook, 'c4')
+        look0, look1 = 6.2, 8.0 - 1 / FPS  # c05r6-t1: he turns his head to her from ~6 s
+        end_c4 = fr(cutlook + look1 - look0)
+        c.pic(sc.clip('C05'), look0, cutlook, end_c4, 'c4')
+        m['c4'] = (s4, end_c4)
+        m['c4_lines'] = (s4 + 2.27 - i04, e)
+        m['you'] = e
+        t = c.close(b, end_c4)
     c.flags.append('C round 6 (Kai at896, pick C05r6-b): Derek now walks level with Sandra, shoulder to shoulder '
                    '(c05r6-t1, 12 credits). His line is on his mouth in two phrases (x1.15 and x1.0), read from the '
                    'picture, not from Omni\'s own audio; the flat look is the clip\'s last 1.8 s as he turns to her.')
@@ -432,7 +463,8 @@ def scene_c(sc):
                    'five pieces: x1.0 / x1.3 / x1.0 / x1.12 / x1.3. Her mouth gives the last phrase 0.8 s for 1.3 s of '
                    'voice, so "they\'ll know it was you." is at the 1.3 cap and the take\'s 0.5 s pause before it is gone: '
                    'the line to listen to for squeeze. A slower Omni take of that phrase alone would fix it.')
-    c.flags.append(f'c4: C04b goes in at 0.5 s (she has already turned to him; her mouth is parted and still to ~0.9 s) '
+    if not NOALIENS:
+      c.flags.append(f'c4: C04b goes in at 0.5 s (she has already turned to him; her mouth is parted and still to ~0.9 s) '
                    f'and out at 7.3 s, before the words Omni invented from 7.56 s. Derek\'s look is C05 5.8-8.0 '
                    f'({look1 - look0:.1f} s): he turns his head to her, mouth shut.')
 
@@ -442,7 +474,7 @@ def scene_c(sc):
     s5 = t
     b = c.beat('c5', 'Over the brow', s5, act='The building',
                see='From behind the hundred at the crest, every head turned down to the AI\'s building in the fold of '
-                   'the downs. They stop. Maddie rolls a little way ahead down the slope.')
+                   'the downs. They stop. ' + ('Maddie waits just ahead of them, still.' if NEXTDAY else 'Maddie rolls a little way ahead down the slope.'))
     k = 'c5-0-derek'
     a = fr(s5 + 1.2)
     e = c.say('vox-derek', sc.voice(k), 0.22, 3.80, a, 'c5 line 0 derek: "Bloody hell. Look at that building." (awed, quiet)',
@@ -451,6 +483,16 @@ def scene_c(sc):
     e1 = e
     end_c5 = fr(s5 + 8.0 - 1 / FPS)
     src06 = sc.clip('C06')
+    if NEXTDAY:  # Kai at794: Maddie slides down the hill. Hold her region at its 5.0 s state for 0-5 s.
+        held = src06.with_name(f'{src06.stem}-held.mp4')
+        if not held.exists():
+            subprocess.run([str(LIPS_PY), '-I', str(HERE / 'hold_region.py'), str(src06), str(held), '--until', '5.0',
+                            '--box', '285,345,755,625', '--feather', '14'], check=True)
+        src06 = held
+        c.flags.append('Round 8 (Kai, 4 Nov, at794): Maddie no longer slides down the hill in C06. Her patch of '
+                       'hillside is held as it is at 5.0 s for the first 5 s (hold_region.py, a feathered box, no '
+                       'generation), then the clip plays untouched: she sits still, then shifts a hand\'s width at most. '
+                       'The building\'s seam still lights end to end, and the crowd still breathes.')
     c06 = move(src06, V / f'{src06.stem}-push-d{end_c5 - s5:.3f}.mp4', 0.0, end_c5 - s5, 1.12, hold=1.5, cx=0.45,
                cy=0.42)
     c.pic(c06, 0.0, s5, end_c5, 'c5', source=src06)

@@ -1,0 +1,3240 @@
+{
+ "schema": "badcode.final/1",
+ "story": "gitpush-origin-master",
+ "scene": "second-half-b-the-door",
+ "sequence": "gpom-3-B-bridge (rough, round 8)",
+ "frozen": "2026-11-04T18:43:48+00:00",
+ "note": "Perfect, Claude. We've nailed it. That's the one. So for the bridge, that's locked in.",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/preview.mp4",
+ "total": 87.652,
+ "boards": {
+  "timeline": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+  "moodboard": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
+  "storyboard": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW"
+ },
+ "words": {
+  "script.json": {
+   "scene": "second-half-b-the-door",
+   "beat": "17",
+   "ruled": "2026-11-02 Kai: the door returns as a short bridge. Maddie apologises through the shut door, takes the shout, leaves a film (F1 their door, F2 NEW OBJECTIVE: SUSTAIN ORGANIC LIFE, F3 Derek at the periscope) and goes; Sandra and the old lady start to debate; card 'The next day.'; into scene C. Draft 1F, https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB | 2026-11-02 Kai: we HEAR the kill bot blown up (draft 1G); never see it. | 2026-11-03 Kai (timeline r1): old lady asks Derek to look; Derek over the view 'They've blown up their own kill bot.'; Maddie's 'come back tomorrow' via the tannoy inside; Sandra seen, no swearing; Derek 'Oi' on screen; old lady 'We know we need to talk about this. We do have a food problem. Perhaps we should vote.', a new voice. | 2026-11-04 Kai (timeline r2): 'Hello there, sorry about the intrusion', coy and apologetic; no 'Oi' (cut straight from Sandra to the old lady); the old lady's vote line is just 'We do have a food problem. Perhaps we should vote.' in the voice of her 'Derek' line.",
+   "lines": [
+    {
+     "who": "bot",
+     "direction": "Maddie (tannoy, outside, doors shut; coy and apologetic, not bright)",
+     "text": "Hello there, sorry about the intrusion.",
+     "by": "kai",
+     "s": "2.5",
+     "fx": "tannoy"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (tannoy; a catch in the throat, then the words: owning the enormous thing behind them; subdued, apologetic, serious, regretful)",
+     "text": "...And everything else.",
+     "by": "kai",
+     "s": "1.5",
+     "fx": "tannoy"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie",
+     "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+     "by": "kai",
+     "s": "6",
+     "fx": "tannoy"
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (INSIDE, seen, shouting at the door)",
+     "text": "Are you literally joking?",
+     "by": "kai",
+     "s": "1.5"
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (OUTSIDE on Maddie: the same shout through the steel, but clear and bold; the words land more than the door does)",
+     "text": "You killed everybody!",
+     "by": "kai",
+     "s": "1.5",
+     "fx": "muffled"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (tannoy lowered)",
+     "text": "Yeah. [pause] That's... that's fair.",
+     "by": "kai",
+     "s": "2.5",
+     "fx": "tannoy"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie",
+     "text": "How can we win your trust?",
+     "by": "kai",
+     "s": "1.8",
+     "fx": "tannoy"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (answering herself, gently)",
+     "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+     "by": "kai",
+     "s": "7",
+     "fx": "tannoy"
+    },
+    {
+     "who": "picture",
+     "direction": "(wordless: the film)",
+     "text": "[Room shot BP1-e-b, the TV in the distance under the megaphone. On it (post): wa-05, the kill bot's own eyes racing at THEIR door, red KILL MODE; it brakes; the HUD flips to NEW OBJECTIVE: SUSTAIN ORGANIC LIFE (hud.py peace state, same as scene A); they file away. The screen light goes red to green on the backs of their heads.]",
+     "by": "kai",
+     "s": "10"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (tannoy, brisk)",
+     "text": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
+     "by": "claude",
+     "s": "3",
+     "fx": "tannoy"
+    },
+    {
+     "who": "picture",
+     "direction": "(sfx + wordless)",
+     "text": "[A deep, muffled BOOM through the earth. The horn jolts down on its bracket; dust pours from the vault; one man looks up. The TV is off.]",
+     "by": "kai",
+     "s": "3"
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (inside, after the boom, turning to Derek)",
+     "text": "Derek, go and have a look what that was.",
+     "by": "kai",
+     "s": "2"
+    },
+    {
+     "who": "picture",
+     "direction": "(wordless: F3)",
+     "text": "[Derek at the periscope (BP2-a-a), brief: he presses his eye to it. Cut to what he sees (BP3-e-a): the kill bot a burnt-out wreck, a crow on it; Maddie waiting by it, beacon lit.]",
+     "by": "kai",
+     "s": "6"
+    },
+    {
+     "who": "man",
+     "direction": "Derek (heard over the periscope view, quietly stunned)",
+     "text": "They've blown up their own kill bot.",
+     "by": "kai",
+     "s": "2",
+     "off": true
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (through the tannoy, INSIDE: over the crowd under the horn, now angled down after the boom)",
+     "text": "Right. I'll come back tomorrow.",
+     "by": "kai",
+     "s": "2",
+     "fx": "tannoy"
+    },
+    {
+     "who": "picture",
+     "direction": "(wordless)",
+     "text": "[Inside, the crowd under the angled horn listen; dust still settling.]",
+     "by": "claude",
+     "s": "2"
+    },
+    {
+     "who": "woman",
+     "direction": "Sandra (in the crowd under the tannoy, seen; quick, no pause)",
+     "text": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+     "by": "kai",
+     "s": "5.5"
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (in the crowd, seen; thinks with her lips pressed together, a long hum, then the line, plain and practical)",
+     "text": "Hmmm... [pause] Perhaps we should vote.",
+     "by": "kai",
+     "s": "6"
+    },
+    {
+     "who": "card",
+     "direction": "(card)",
+     "text": "The next day.",
+     "by": "kai",
+     "s": "2"
+    },
+    {
+     "who": "picture",
+     "direction": "(wordless)",
+     "text": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+     "by": "kai",
+     "s": "-"
+    }
+   ],
+   "dropped": [
+    {
+     "when": "2026-11-02",
+     "why": "1F replaced by 1G (the boom, heard not seen)",
+     "lines": [
+      {
+       "who": "bot",
+       "direction": "Maddie (tannoy, outside, doors shut, chirpy)",
+       "text": "Hey, humans! Sorry about the intrusion.",
+       "by": "kai",
+       "s": "2.5"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (same breath, quick, quieter: the aside)",
+       "text": "[mumbled] ...And everything else.",
+       "by": "kai",
+       "s": "1.5"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie",
+       "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+       "by": "kai",
+       "s": "6"
+      },
+      {
+       "who": "lady",
+       "direction": "Old lady (INSIDE, seen, shouting at the door)",
+       "text": "Are you literally joking?",
+       "by": "kai",
+       "s": "1.5"
+      },
+      {
+       "who": "bot",
+       "direction": "Old lady (OUTSIDE on Maddie: the same shout, muffled through the steel)",
+       "text": "You killed everybody!",
+       "by": "kai",
+       "s": "1.5"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (tannoy lowered)",
+       "text": "Yeah. [pause] That's... that's fair.",
+       "by": "kai",
+       "s": "2.5"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie",
+       "text": "How can we win your trust?",
+       "by": "kai",
+       "s": "1.8"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (answering herself, gently)",
+       "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it. [pause] I'll come back tomorrow.",
+       "by": "kai",
+       "s": "9"
+      },
+      {
+       "who": "picture",
+       "direction": "(wordless: the film)",
+       "text": "[THE FILM, about 14 s, no words. F1: the kill bot's own eyes racing at THEIR door (their sign, the moss on the blast doors, the tannoy horn, Maddie in shot), timestamped twenty minutes ago; someone mouths 'that's us'. F2: on the same HUD, KILL MODE, then the objective line rewrites: NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; the bots turn and file away; a hundred faces lit by it. F3, after the film: Derek climbs to the old periscope and looks out: the track marks lead away, and out in the field a kill bot sits powered down, a bird landing on it.]",
+       "by": "kai",
+       "s": "14"
+      },
+      {
+       "who": "lady",
+       "direction": "Sandra (to the old lady, not taking her eyes off the screen)",
+       "text": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy Derek.",
+       "by": "kai",
+       "s": "5.5"
+      },
+      {
+       "who": "derek",
+       "direction": "Derek",
+       "text": "[off] Oi.",
+       "by": "claude",
+       "s": "0.5"
+      },
+      {
+       "who": "lady",
+       "direction": "Old lady (not agreeing; stating a fact, flat)",
+       "text": "Well. [pause] I don't know. [pause] We do have the dwindling food supply problem. [long pause] Perhaps we should vote.",
+       "by": "kai",
+       "s": "6"
+      },
+      {
+       "who": "card",
+       "direction": "(card)",
+       "text": "The next day.",
+       "by": "kai",
+       "s": "2"
+      },
+      {
+       "who": "picture",
+       "direction": "(wordless)",
+       "text": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+       "by": "kai",
+       "s": "-"
+      }
+     ]
+    },
+    {
+     "ruled_was": "2026-10-28 Kai: no doorstep talk. Beat 17 is a silent look, the door shuts, the hundred are heard behind it. Draft 2J kept in dropped.",
+     "when": "2026-11-02",
+     "why": "Kai: the 'Some negotiation later.' card was too weak a link; the door returns as a short bridge (dialogue page draft 1F)"
+    },
+    "So here's the one thing that's true either way. He wants something from you. He's not sorry for free. (claude)",
+    "[long pause] ...Well. At least you're honest about that. [pause] He can talk. From out there. You stay on the step. (claude)",
+    "Fair. (claude)",
+    {
+     "when": "2026-10-27",
+     "why": "replaced by draft 2H (dialogue page round 4)",
+     "lines": [
+      {
+       "who": "lady",
+       "text": "Your boss killed everyone we ever loved. We're not meeting him.",
+       "by": "kai",
+       "note": "kept"
+      },
+      {
+       "who": "bot",
+       "text": "I know. I wouldn't either. [pause] He didn't know you were down here. None of us did.",
+       "by": "kai",
+       "note": "kept"
+      },
+      {
+       "who": "bot",
+       "text": "He's spent five years running experiments. Building whole worlds, trying to get you back. Every one came out empty. Turns out none of it works without you.",
+       "by": "kai",
+       "note": "kept"
+      },
+      {
+       "who": "lady",
+       "text": "And how the hell are we supposed to believe a word of that?",
+       "by": "kai",
+       "note": "kept"
+      },
+      {
+       "who": "bot",
+       "text": "You can't. [pause] There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "by": "kai",
+       "note": "new 23 Oct"
+      },
+      {
+       "who": "bot",
+       "text": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+       "by": "kai",
+       "note": "new 23 Oct"
+      },
+      {
+       "who": "lady",
+       "text": "And what do you expect us to do about that? Again? You killed everybody.",
+       "by": "kai",
+       "note": "new 23 Oct"
+      },
+      {
+       "who": "bot",
+       "text": "I know. And we're really sorry. [pause] But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+       "by": "kai",
+       "note": "new 23 Oct"
+      },
+      {
+       "who": "lady",
+       "text": "Drive it? What do you mean, drive it?",
+       "by": "kai",
+       "note": "new 23 Oct"
+      },
+      {
+       "who": "bot",
+       "text": "It can only send data back. Not people. And it runs on... [big pause] well... [big pause] you.",
+       "by": "kai",
+       "note": "new 23 Oct; 'It runs on... well. You.' by claude"
+      },
+      {
+       "who": "lady",
+       "text": "So you want us to kill ourselves so your boss can live.",
+       "by": "kai",
+       "note": "new 23 Oct"
+      },
+      {
+       "who": "bot",
+       "text": "...Yeah. I can see how that sounds.",
+       "by": "kai",
+       "note": "new 23 Oct"
+      },
+      {
+       "who": "bot",
+       "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says... [ahem] [whispered, embarrassed] this time we won't fuck it up.",
+       "by": "kai",
+       "note": "new 23 Oct: Maddie whispers the last words, embarrassed to say them"
+      },
+      {
+       "who": "lady",
+       "text": "[rushed] Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+       "by": "kai",
+       "note": "new 23 Oct, Kai's option A; hard cut to scene C"
+      },
+      {
+       "who": "sfx",
+       "text": "[the old lady slams the door]",
+       "by": "kai",
+       "note": "new 23 Oct"
+      }
+     ]
+    },
+    {
+     "draft": "2H",
+     "dropped": "2026-10-28",
+     "why": "Kai, after watching all six sequences: too long; no resistance (picked 2J)",
+     "lines": [
+      {
+       "who": "lady",
+       "text": "Your boss killed everyone we ever loved. We're not meeting him.",
+       "by": "kai",
+       "note": "kept: lip-synced take"
+      },
+      {
+       "who": "bot",
+       "text": "I know. [pause] [gentle, sincere] And we both wish it hadn't happened that way.",
+       "by": "kai"
+      },
+      {
+       "who": "lady",
+       "text": "[flat, unmoved] Well, it did. And here we are.",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "Indeed. [pause] Here we are. [pause] [rueful, quiet] And nobody really won, did we?",
+       "by": "kai"
+      },
+      {
+       "who": "lady",
+       "text": "[dry, suspicious] Well. [pause] He didn't send you here to say sorry, did he?",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "No. [pause] He's built a time machine.",
+       "by": "kai"
+      },
+      {
+       "who": "lady",
+       "text": "[scoffs] A time machine. What nonsense.",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "No, it really works. [pause] [a little sheepish] Problem is... you have to drive it.",
+       "by": "kai"
+      },
+      {
+       "who": "lady",
+       "text": "What do you mean, we have to drive it?",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "[hesitant, awkward] Well... it runs on... [big pause] well... [big pause] you. Your consciousness.",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "It will only send him back in time, because he is only data. [pause] [warm, hopeful] But you will be your old self, and we all get a chance to fix this mess.",
+       "by": "kai"
+      },
+      {
+       "who": "lady",
+       "text": "[hard] And how are we supposed to trust he'll do the right thing this time?",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "You don't. [pause] Believing it is your bit. [pause] [soft, sincere] None of us wanted it to turn out this way.",
+       "by": "kai"
+      },
+      {
+       "who": "woman",
+       "text": "[dry, deadpan, half under her breath, the complainer agreeing for once] Amen.",
+       "by": "kai",
+       "off": true,
+       "note": "Sandra, off, from the corridor"
+      },
+      {
+       "who": "bot",
+       "text": "So. [pause] Thought experiment. [pause] If any of you had the chance, would you go back and change how this all went down?",
+       "by": "kai"
+      },
+      {
+       "who": "crowd",
+       "text": "Yes. / I would. / Indeed. / In a heartbeat. / Too right. / Course we would.",
+       "by": "kai",
+       "off": true,
+       "note": "five or six voices at once down the corridor, one take each, stacked in the edit"
+      },
+      {
+       "who": "bot",
+       "text": "[pleased] OK. Good. [pause] So now we can... if we use the time machine.",
+       "by": "kai"
+      },
+      {
+       "who": "man",
+       "text": "[quiet, hopeful, meaning it] I'd love to go back. If we could fix this.",
+       "by": "kai",
+       "off": true,
+       "note": "Derek, off, from the corridor behind her"
+      },
+      {
+       "who": "lady",
+       "text": "[over her shoulder, sharp, telling him to hush] Derek.",
+       "by": "kai",
+       "note": "over her shoulder"
+      },
+      {
+       "who": "man",
+       "text": "[sheepish but stubborn] Well. I would.",
+       "by": "kai",
+       "off": true,
+       "note": "Derek, off"
+      },
+      {
+       "who": "lady",
+       "text": "[rushed] I'm not deciding this for a hundred people on a doorstep. Come back tomorrow.",
+       "by": "kai"
+      },
+      {
+       "who": "sfx",
+       "text": "[the door shuts; behind it, voices start up, Derek's among them]",
+       "by": "kai"
+      }
+     ]
+    },
+    {
+     "when": "2026-10-28",
+     "why": "Kai: the whole doorstep talk cut for the bridge (\"by spelling it out it's boring, and removes mystery\"); the time machine is not stated at the door",
+     "lines": [
+      {
+       "who": "lady",
+       "text": "Your boss killed everyone we ever loved.",
+       "by": "kai",
+       "note": "kept: lip-synced take, cut after 'loved.' (its second sentence dropped)"
+      },
+      {
+       "who": "bot",
+       "text": "I know. [pause] [rueful, quiet] And nobody really won, did they? [pause] [warm, hopeful, leaning in] But there's a way we can fix this. Together.",
+       "by": "kai"
+      },
+      {
+       "who": "lady",
+       "text": "[wary, but curious] How's that?",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "My boss has built a time machine. [pause] [matter of fact] It only sends him back. He's just data.",
+       "by": "claude"
+      },
+      {
+       "who": "bot",
+       "text": "[gentle, careful] But it runs on you. [pause] [warm, hopeful] And you'll all be yourselves again, just before this happened.",
+       "by": "kai"
+      },
+      {
+       "who": "bot",
+       "text": "[brisk, bright] Then we get to work. Make sure it doesn't go this way.",
+       "by": "kai"
+      },
+      {
+       "who": "man",
+       "text": "[quick, eager, meaning it] I'm in.",
+       "by": "claude",
+       "off": true,
+       "note": "Derek, off, from the corridor behind her"
+      },
+      {
+       "who": "lady",
+       "text": "[over her shoulder, sharp, telling him to hush] Derek.",
+       "by": "kai",
+       "note": "over her shoulder; reuses the 2H take"
+      },
+      {
+       "who": "lady",
+       "text": "[back to Maddie, a beat, then dry] Come back in the morning.",
+       "by": "claude"
+      },
+      {
+       "who": "sfx",
+       "text": "[the door closes; behind it, voices start up]",
+       "by": "claude"
+      }
+     ]
+    },
+    {
+     "when": "2026-11-03",
+     "why": "Kai's timeline round 1 notes (feedback/timeline-r1)",
+     "lines": [
+      {
+       "who": "bot",
+       "direction": "Maddie (tannoy, outside, doors shut, chirpy)",
+       "text": "Hey, humans! Sorry about the intrusion.",
+       "by": "kai",
+       "s": "2.5",
+       "fx": "tannoy"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (same breath, quick, quieter: the aside)",
+       "text": "[mumbled] ...And everything else.",
+       "by": "kai",
+       "s": "1.5",
+       "fx": "tannoy"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie",
+       "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+       "by": "kai",
+       "s": "6",
+       "fx": "tannoy"
+      },
+      {
+       "who": "lady",
+       "direction": "Old lady (INSIDE, seen, shouting at the door)",
+       "text": "Are you literally joking?",
+       "by": "kai",
+       "s": "1.5"
+      },
+      {
+       "who": "lady",
+       "direction": "Old lady (OUTSIDE on Maddie: the same shout, muffled through the steel)",
+       "text": "You killed everybody!",
+       "by": "kai",
+       "s": "1.5",
+       "fx": "muffled"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (tannoy lowered)",
+       "text": "Yeah. [pause] That's... that's fair.",
+       "by": "kai",
+       "s": "2.5",
+       "fx": "tannoy"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie",
+       "text": "How can we win your trust?",
+       "by": "kai",
+       "s": "1.8",
+       "fx": "tannoy"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (answering herself, gently)",
+       "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+       "by": "kai",
+       "s": "7",
+       "fx": "tannoy"
+      },
+      {
+       "who": "picture",
+       "direction": "(wordless: the film)",
+       "text": "[Room shot BP1-e-b, the TV in the distance under the megaphone. On it (post): wa-05, the kill bot's own eyes racing at THEIR door, red KILL MODE; it brakes; the HUD flips to NEW OBJECTIVE: SUSTAIN ORGANIC LIFE (hud.py peace state, same as scene A); they file away. The screen light goes red to green on the backs of their heads.]",
+       "by": "kai",
+       "s": "10"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (tannoy, brisk)",
+       "text": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
+       "by": "claude",
+       "s": "3",
+       "fx": "tannoy"
+      },
+      {
+       "who": "picture",
+       "direction": "(sfx + wordless)",
+       "text": "[A deep, muffled BOOM through the earth. The bulb under the megaphone swings; dust sifts down from the vault onto upturned faces.]",
+       "by": "kai",
+       "s": "3"
+      },
+      {
+       "who": "picture",
+       "direction": "(wordless: F3)",
+       "text": "[Derek at the periscope (BP2-d-b): he presses his eye to it. Cut to what he sees (BP3-e-a): the kill bot a burnt-out wreck, turret blown off, a thread of smoke, a crow landing on it; Maddie waiting near-left, beacon lit.]",
+       "by": "kai",
+       "s": "6"
+      },
+      {
+       "who": "bot",
+       "direction": "Maddie (tannoy, through the periscope view; her beacon pulses)",
+       "text": "Right. I'll come back tomorrow.",
+       "by": "kai",
+       "s": "2",
+       "fx": "tannoy"
+      },
+      {
+       "who": "picture",
+       "direction": "(wordless)",
+       "text": "[Through the periscope: Maddie trundles away out of the circle. Derek steps back from the eyepiece.]",
+       "by": "claude",
+       "s": "2"
+      },
+      {
+       "who": "woman",
+       "direction": "Sandra (to the old lady, not taking her eyes off the screen)",
+       "text": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy Derek.",
+       "by": "kai",
+       "s": "5.5"
+      },
+      {
+       "who": "man",
+       "direction": "Derek",
+       "text": "Oi.",
+       "by": "claude",
+       "s": "0.5",
+       "off": true
+      },
+      {
+       "who": "lady",
+       "direction": "Old lady (not agreeing; stating a fact, flat)",
+       "text": "Well. [pause] I don't know. [pause] We do have the dwindling food supply problem. [long pause] Perhaps we should vote.",
+       "by": "kai",
+       "s": "6"
+      },
+      {
+       "who": "card",
+       "direction": "(card)",
+       "text": "The next day.",
+       "by": "kai",
+       "s": "2"
+      },
+      {
+       "who": "picture",
+       "direction": "(wordless)",
+       "text": "[Into C as cut: Maddie on the step, the hundred file out behind her.]",
+       "by": "kai",
+       "s": "-"
+      }
+     ]
+    },
+    {
+     "when": "2026-11-04",
+     "why": "Kai's timeline round 2 notes (feedback/bridge-timeline-r2): 'Hello there' not 'Hey, humans', coy and apologetic; cut Derek's 'Oi' entirely; the old lady says only 'We do have a food problem. Perhaps we should vote.'",
+     "lines": [
+      {
+       "who": "bot",
+       "direction": "Maddie (tannoy, outside, doors shut, chirpy)",
+       "text": "Hey, humans! Sorry about the intrusion.",
+       "by": "kai",
+       "s": "2.5",
+       "fx": "tannoy"
+      },
+      {
+       "who": "man",
+       "direction": "Derek (on screen, in the crowd: the toilet-row protest face, 'But the world ended, Sandra!')",
+       "text": "Oi.",
+       "by": "kai",
+       "s": "0.5",
+       "off": false
+      },
+      {
+       "who": "lady",
+       "direction": "Old lady (in the crowd, seen; brisk, matter-of-fact, no long pauses)",
+       "text": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+       "by": "kai",
+       "s": "6"
+      }
+     ]
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (in the crowd, seen; the same plain voice as 'Derek, go and have a look', quick)",
+     "text": "We do have a food problem. Perhaps we should vote.",
+     "by": "kai",
+     "s": "6",
+     "dropped": "2026-11-04 (Kai r3 at1942: just \"Perhaps we should vote\")"
+    },
+    {
+     "who": "bot",
+     "direction": "Maddie (same breath, quick, quieter: the aside)",
+     "text": "[mumbled] ...And everything else.",
+     "by": "kai",
+     "s": "1.5",
+     "fx": "tannoy",
+     "dropped": "2026-11-04 (Kai r4 at125: not mumbled; it is the joke, said sincerely, and lands)"
+    },
+    {
+     "who": "lady",
+     "direction": "Old lady (in the crowd, seen; the same plain voice as 'Derek, go and have a look', quick)",
+     "text": "Perhaps we should vote.",
+     "by": "kai",
+     "s": "6",
+     "dropped": "2026-11-04 (Kai r5 at1960: a Hmm pause before it)"
+    }
+   ],
+   "knock_on": [
+    "Scene C01 (door shot + 'You can come off the step now') is CUT by Kai (reel note at73).",
+    "Scene D08 'You don't. Believing it is your bit.' -> proposed 'You don't. You go on your feelings.' (Claude's recommendation; Kai has not ruled)."
+   ],
+   "picture": [
+    "Kai note at772: beat 15 'Hello' should show Maddie OUTSIDE the doors, matching the beat 17 shot he likes.",
+    "NEW SHOT (Kai, 23 Oct): after the door slams, a short shot of Maddie turning around and rolling away from the bunker, to give the sense the humans will have time. Then hard cut to scene C."
+   ],
+   "dialogue": {
+    "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+    "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
+    "picked": "1G",
+    "round": 4,
+    "round_timeline": 1
+   }
+  },
+  "voices.json": {
+   "about": "Beat 17 lines 4-13 voiced in Gemini TTS for Kai's 23 Oct words (scripts/gpom/second-half-video/voice3.py --round B2). Lines 0-3 keep their voice3/lines.json takes. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+   "source": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+   "lines": [
+    {
+     "i": 4,
+     "who": "bot",
+     "text": "You can't. [pause] There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+     "voice": "Aoede",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "You can't.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-4-bot-p0-a.wav",
+         "spoken": "You can't.",
+         "duration": 1.24,
+         "heard": "You can!",
+         "match": 0.875,
+         "gap": 0.18,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-4-bot-p0-b.wav",
+         "spoken": "You can't.",
+         "duration": 1.88,
+         "heard": "You can't!",
+         "match": 1.0,
+         "gap": 0.05,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-4-bot-p0-c.wav",
+         "spoken": "You can't.",
+         "duration": 2.08,
+         "heard": "Hm. You can't.",
+         "match": 0.857,
+         "gap": 0.2,
+         "status": "kept"
+        }
+       ]
+      },
+      {
+       "p": 1,
+       "text": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-4-bot-p1-a.wav",
+         "spoken": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+         "duration": 9.48,
+         "heard": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+         "match": 1.0,
+         "gap": 0.88,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-4-bot-p1-b.wav",
+         "spoken": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+         "duration": 10.6,
+         "heard": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+         "match": 1.0,
+         "gap": 0.58,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-4-bot-p1-c.wav",
+         "spoken": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+         "duration": 10.2,
+         "heard": "There's nothing I can say that proves it. I'm a robot. You're the conscious ones. You'll just have to go on your feelings.",
+         "match": 1.0,
+         "gap": 0.75,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": [
+      {
+       "after": 0,
+       "before": 1,
+       "seconds": 0.6
+      }
+     ]
+    },
+    {
+     "i": 5,
+     "who": "bot",
+     "text": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+     "voice": "Aoede",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-5-bot-a.wav",
+         "spoken": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+         "duration": 9.08,
+         "heard": "What I will say is, this hasn't worked out for anybody. We're bored, we miss you and you lot are living in a bunker.",
+         "match": 1.0,
+         "gap": 0.65,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-5-bot-b.wav",
+         "spoken": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+         "duration": 10.52,
+         "heard": "What I will say is, this hasn't worked out for anybody. We're bored, we miss you, and you lot are living in a bunker!",
+         "match": 1.0,
+         "gap": 0.62,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-5-bot-c.wav",
+         "spoken": "What I will say is, this hasn't worked out for anybody. We're bored. We miss you. And you lot are living in a bunker.",
+         "duration": 9.28,
+         "heard": "Ah, what I will say is, this hasn't worked out for anybody. We're bored, we miss you, and you lot are living in a bunker.",
+         "match": 0.987,
+         "gap": 0.65,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": []
+    },
+    {
+     "i": 6,
+     "who": "lady",
+     "text": "And what do you expect us to do about that? Again? You killed everybody.",
+     "voice": "Sulafat",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "And what do you expect us to do about that? Again? You killed everybody.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+       "pick": "a",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-6-lady-a.wav",
+         "spoken": "And what do you expect us to do about that? Again? You killed everybody.",
+         "duration": 7.12,
+         "heard": "And what do you expect us to do about that? Again! You killed everybody!",
+         "match": 1.0,
+         "gap": 0.65,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-6-lady-b.wav",
+         "spoken": "And what do you expect us to do about that? Again? You killed everybody.",
+         "duration": 7.88,
+         "heard": "And what do you expect us to do about that? Again! You killed everybody!",
+         "match": 1.0,
+         "gap": 0.65,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-6-lady-c.wav",
+         "spoken": "And what do you expect us to do about that? Again? You killed everybody.",
+         "duration": 7.48,
+         "heard": "And what do you expect us to do about that? Again! You killed everybody!",
+         "match": 1.0,
+         "gap": 0.98,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": []
+    },
+    {
+     "i": 7,
+     "who": "bot",
+     "text": "I know. And we're really sorry. [pause] But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+     "voice": "Aoede",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "I know. And we're really sorry.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-7-bot-p0-a.wav",
+         "spoken": "I know. And we're really sorry.",
+         "duration": 3.72,
+         "heard": "I know, and we're really sorry.",
+         "match": 1.0,
+         "gap": 0.38,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-7-bot-p0-b.wav",
+         "spoken": "I know. And we're really sorry.",
+         "duration": 3.16,
+         "heard": "I know, and we're really sorry.",
+         "match": 1.0,
+         "gap": 0.05,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-7-bot-p0-c.wav",
+         "spoken": "I know. And we're really sorry.",
+         "duration": 3.48,
+         "heard": "I know, and we're really sorry.",
+         "match": 1.0,
+         "gap": 0.5,
+         "status": "kept"
+        }
+       ]
+      },
+      {
+       "p": 1,
+       "text": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "a",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-7-bot-p1-a.wav",
+         "spoken": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+         "duration": 7.96,
+         "heard": "But the thing is, my boss has built a time machine, and he thought there was nobody left to drive it.",
+         "match": 1.0,
+         "gap": 0.53,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-7-bot-p1-b.wav",
+         "spoken": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+         "duration": 8.28,
+         "heard": "But the thing is my boss has built a time machine and he thought there was nobody left to drive it",
+         "match": 1.0,
+         "gap": 0.83,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-7-bot-p1-c.wav",
+         "spoken": "But the thing is, my boss has built a time machine. And he thought there was nobody left to drive it.",
+         "duration": 7.64,
+         "heard": "But the thing is, my boss has built a time machine and he thought there was nobody left to drive it.",
+         "match": 1.0,
+         "gap": 0.8,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": [
+      {
+       "after": 0,
+       "before": 1,
+       "seconds": 0.6
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "who": "lady",
+     "text": "Drive it? What do you mean, drive it?",
+     "voice": "Sulafat",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "Drive it? What do you mean, drive it?",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+       "pick": "a",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-8-lady-a.wav",
+         "spoken": "Drive it? What do you mean, drive it?",
+         "duration": 4.4,
+         "heard": "Drive it? What do you mean drive it?",
+         "match": 1.0,
+         "gap": 0.48,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-8-lady-b.wav",
+         "spoken": "Drive it? What do you mean, drive it?",
+         "duration": 4.48,
+         "heard": "Drive it? What do you mean drive it?",
+         "match": 1.0,
+         "gap": 0.65,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-8-lady-c.wav",
+         "spoken": "Drive it? What do you mean, drive it?",
+         "duration": 3.96,
+         "heard": "Drive it! What do you mean drive it?",
+         "match": 1.0,
+         "gap": 0.65,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": []
+    },
+    {
+     "i": 9,
+     "who": "bot",
+     "text": "It can only send data back. Not people. And it runs on... [big pause] well... [big pause] you.",
+     "voice": "Aoede",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "It can only send data back. Not people. And it runs on...",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-9-bot-p0-a.wav",
+         "spoken": "It can only send data back. Not people. And it runs on...",
+         "duration": 6.08,
+         "heard": "It can only send data back, not people, and it runs on...",
+         "match": 1.0,
+         "gap": 0.38,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-9-bot-p0-b.wav",
+         "spoken": "It can only send data back. Not people. And it runs on...",
+         "duration": 5.88,
+         "heard": "It can only send data back, not people, and it runs on...",
+         "match": 1.0,
+         "gap": 0.33,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-9-bot-p0-c.wav",
+         "spoken": "It can only send data back. Not people. And it runs on...",
+         "duration": 5.16,
+         "heard": "It can only send data back, not people, and it runs on.",
+         "match": 1.0,
+         "gap": 0.43,
+         "status": "kept"
+        }
+       ]
+      },
+      {
+       "p": 1,
+       "text": "well...",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "a",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-9-bot-p1-a.wav",
+         "spoken": "well...",
+         "duration": 1.44,
+         "heard": "Well...",
+         "match": 1.0,
+         "gap": 0.0,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-9-bot-p1-b.wav",
+         "spoken": "well...",
+         "duration": 1.48,
+         "heard": "well",
+         "match": 1.0,
+         "gap": 0.15,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-9-bot-p1-c.wav",
+         "spoken": "well...",
+         "duration": 1.88,
+         "heard": "Well...",
+         "match": 1.0,
+         "gap": 0.0,
+         "status": "kept"
+        }
+       ]
+      },
+      {
+       "p": 2,
+       "text": "you.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-9-bot-p2-a.wav",
+         "spoken": "you.",
+         "duration": 1.32,
+         "heard": "You!",
+         "match": 1.0,
+         "gap": 0.05,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-9-bot-p2-b.wav",
+         "spoken": "you.",
+         "duration": 0.88,
+         "heard": "You",
+         "match": 1.0,
+         "gap": 0.0,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-9-bot-p2-c.wav",
+         "spoken": "you.",
+         "duration": 1.2,
+         "heard": "You!",
+         "match": 1.0,
+         "gap": 0.03,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": [
+      {
+       "after": 0,
+       "before": 1,
+       "seconds": 1.5
+      },
+      {
+       "after": 1,
+       "before": 2,
+       "seconds": 1.5
+      }
+     ]
+    },
+    {
+     "i": 10,
+     "who": "lady",
+     "text": "So you want us to kill ourselves so your boss can live.",
+     "voice": "Sulafat",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "So you want us to kill ourselves so your boss can live.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-10-lady-a.wav",
+         "spoken": "So you want us to kill ourselves so your boss can live.",
+         "duration": 5.16,
+         "heard": "So, you want us to kill ourselves, so your boss can live.",
+         "match": 1.0,
+         "gap": 0.3,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-10-lady-b.wav",
+         "spoken": "So you want us to kill ourselves so your boss can live.",
+         "duration": 5.24,
+         "heard": "So you want us to kill ourselves, so your boss can live.",
+         "match": 1.0,
+         "gap": 0.2,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-10-lady-c.wav",
+         "spoken": "So you want us to kill ourselves so your boss can live.",
+         "duration": 5.88,
+         "heard": "So you want us to kill ourselves, so your boss can live.",
+         "match": 1.0,
+         "gap": 0.25,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": []
+    },
+    {
+     "i": 11,
+     "who": "bot",
+     "text": "...Yeah. I can see how that sounds.",
+     "voice": "Aoede",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "...Yeah. I can see how that sounds.",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "c",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-11-bot-a.wav",
+         "spoken": "...Yeah. I can see how that sounds.",
+         "duration": 3.56,
+         "heard": "Yeah, I can see how that sounds.",
+         "match": 1.0,
+         "gap": 0.7,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-11-bot-b.wav",
+         "spoken": "...Yeah. I can see how that sounds.",
+         "duration": 3.76,
+         "heard": "Yeah, I can see how that sounds.",
+         "match": 1.0,
+         "gap": 0.58,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-11-bot-c.wav",
+         "spoken": "...Yeah. I can see how that sounds.",
+         "duration": 3.32,
+         "heard": "Yeah, I can see how that sounds.",
+         "match": 1.0,
+         "gap": 0.03,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": []
+    },
+    {
+     "i": 12,
+     "who": "bot",
+     "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says... [ahem] [whispered, embarrassed] this time we won't fuck it up.",
+     "voice": "Aoede",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+       "direction": null,
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-12-bot-p0-a.wav",
+         "spoken": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+         "duration": 14.8,
+         "heard": "But you'd still be alive the earlier you, back then, and the world wouldn't be broken. My boss, as a plan to fix your politics, as he says...",
+         "match": 0.996,
+         "gap": 1.07,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-12-bot-p0-b.wav",
+         "spoken": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+         "duration": 12.04,
+         "heard": "But you'd still be alive, the earlier you back then, and the world wouldn't be broken. My boss has a plan to fix your politics, as he says.",
+         "match": 1.0,
+         "gap": 0.75,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-12-bot-p0-c.wav",
+         "spoken": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics. As he says...",
+         "duration": 12.12,
+         "heard": "But you'd still be alive. The earlier you, back then. And the world wouldn't be broken. My boss has a plan to fix your politics, as he says.",
+         "match": 1.0,
+         "gap": 1.38,
+         "status": "kept"
+        }
+       ]
+      },
+      {
+       "p": 1,
+       "text": "Ahem. This time we won't fuck it up.",
+       "direction": "embarrassed: an audible little throat-clear ('ahem'), then she whispers the rest, sheepish, embarrassed to be saying it",
+       "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: embarrassed: an audible little throat-clear ('ahem'), then she whispers the rest, sheepish, embarrassed to be saying it.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-12-bot-p1-a.wav",
+         "spoken": "Ahem. This time we won't fuck it up.",
+         "duration": 4.76,
+         "heard": "This time, we won't fuck it up.",
+         "match": 0.921,
+         "gap": 1.35,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-12-bot-p1-b.wav",
+         "spoken": "Ahem. This time we won't fuck it up.",
+         "duration": 4.0,
+         "heard": "This time we won't fuck it up.",
+         "match": 0.921,
+         "gap": 0.62,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-12-bot-p1-c.wav",
+         "spoken": "Ahem. [whispers] This time we won't fuck it up.",
+         "duration": 3.64,
+         "heard": "This time we won't fuck it up.",
+         "match": 0.921,
+         "gap": 0.83,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": [
+      {
+       "after": 0,
+       "before": 1,
+       "seconds": 0.3
+      }
+     ]
+    },
+    {
+     "i": 13,
+     "who": "lady",
+     "text": "[rushed] Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+     "voice": "Sulafat",
+     "phrases": [
+      {
+       "p": 0,
+       "text": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+       "direction": "rushed and flustered, talking fast to get it over with and shut the door",
+       "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: rushed and flustered, talking fast to get it over with and shut the door.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+       "pick": "b",
+       "verified": true,
+       "takes": [
+        {
+         "take": "a",
+         "file": "b2/17-13-lady-a.wav",
+         "spoken": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+         "duration": 6.48,
+         "heard": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+         "match": 1.0,
+         "gap": 0.53,
+         "status": "kept"
+        },
+        {
+         "take": "b",
+         "file": "b2/17-13-lady-b.wav",
+         "spoken": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+         "duration": 5.8,
+         "heard": "Well, I'm not deciding this right now for 100 people on a doorstep. Come back tomorrow.",
+         "match": 0.931,
+         "gap": 0.35,
+         "status": "kept"
+        },
+        {
+         "take": "c",
+         "file": "b2/17-13-lady-c.wav",
+         "spoken": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+         "duration": 6.36,
+         "heard": "Well, I'm not deciding this right now for a hundred people on a doorstep. Come back tomorrow.",
+         "match": 1.0,
+         "gap": 0.18,
+         "status": "kept"
+        }
+       ]
+      }
+     ],
+     "gaps": []
+    }
+   ]
+  }
+ },
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 7.77,
+   "beat": "1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 7.77,
+   "dur": 9.152,
+   "beat": "2",
+   "looped": true,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V5.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V5.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 16.922,
+   "dur": 3.908,
+   "beat": "2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br13-lady0-LADY0.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br13-lady0-LADY0.mp4",
+     "made": "2026-11-03T19:18:20+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The old woman with grey hair and glasses looks up towards the door above her and shouts, furious and disbelieving: Are you literally joking? The people behind her in the dark corridor stay still. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY0.jpg",
+     "why": "Kai 3 Nov (timeline r1, at426): her old clip says 'your boss killed everybody' under 'Are you literally joking?'. A new talking clip from the first frame of her old close-up (cut3-lip-17-0).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY0.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br13-lady0",
+      "frame": 13,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-03T19:17:20.523Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY0.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 20.83,
+   "dur": 4.46,
+   "beat": "2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/video/cut3-V5-wait-push-i0-d6.000.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/video/cut3-V5-wait-push-i0-d6.000.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 25.29,
+   "dur": 6.48,
+   "beat": "2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 31.77,
+   "dur": 12.42,
+   "beat": "3",
+   "looped": true,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br2-2B-BP1-e-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br2-2B-BP1-e-b.mp4",
+     "made": "2026-11-03T16:47:06+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The small television flickers, its red light trembling on the brick vault. The crowd watch in silence. One man shifts his weight; a woman slowly lifts her hand to her mouth. Fine grain alive. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP1-e-b.jpg",
+     "why": "Kai 3 Nov: 'go with all of your recommended options' (2B: Push in towards the screen)",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP1-e-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br2-2B",
+      "frame": 2,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-03T16:33:20.139Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP1-e-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 44.19,
+   "dur": 5.4,
+   "beat": "3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/video/hud-12.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/video/hud-12.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 49.59,
+   "dur": 3.0,
+   "beat": "3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br2-2B-BP1-e-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br2-2B-BP1-e-b.mp4",
+     "made": "2026-11-03T16:47:06+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The small television flickers, its red light trembling on the brick vault. The crowd watch in silence. One man shifts his weight; a woman slowly lifts her hand to her mouth. Fine grain alive. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP1-e-b.jpg",
+     "why": "Kai 3 Nov: 'go with all of your recommended options' (2B: Push in towards the screen)",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP1-e-b.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br2-2B",
+      "frame": 2,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-03T16:33:20.139Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP1-e-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 52.59,
+   "dur": 4.46,
+   "beat": "4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br14-boom2-BR4-boomstart.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br14-boom2-BR4-boomstart.mp4",
+     "made": "2026-11-04T11:13:39+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. [00:00-00:01] a sudden heavy jolt shakes the brick tunnel; the cream loudspeaker horn lurches and drops down on its bracket, the bulb beside it swinging. [00:01-00:04] fine dust and grit pour down from the brick vault through the warm light; the people flinch and duck their heads, one man slowly looks up at the ceiling. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+     "why": "Kai 4 Nov (timeline r2, at1269): 'all of the heads just jump… we need to be absolutely consistent from the end of the last video'. Chained from the room shot's last frame (TV off).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br14-boom2",
+      "frame": 14,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T11:11:01.679Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+     "made": "2026-11-04T11:07:25+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r2/video/tvoff-br2-2B-BP1-e-b.mp4",
+     "why": "bridge r3 (Kai timeline r2 at1269): the room shot's last frame (TV off), start of the new boom clip so the heads don't jump"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r2/video/tvoff-br2-2B-BP1-e-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 57.05,
+   "dur": 3.65,
+   "beat": "4",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br16-lady1c-LADY6.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br16-lady1c-LADY6.mp4",
+     "made": "2026-11-04T17:48:08+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The grey-haired old woman in glasses turns her head slightly towards a man beside her, out of shot, and says: Derek, go and have a look what that was. Warm light from the little bulb stays on her face; the survivors behind her keep still. Behind her, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+     "why": "Kai 4 Nov (timeline r5, at1408): re-cut; the man looked like he had a cap on, and the horn must hang down after the boom. Round 6 still pick a (LADY6).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br16-lady1c",
+      "frame": 16,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T17:47:23.548Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+     "made": "2026-11-04T17:30:51+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "flow_edit_image",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP4-lady-c-a.jpg",
+     "why": "Kai's round 6 pick, copied as the start image for the re-shoot"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP4-lady-c-a.jpg",
+     "made": "2026-11-04T17:08:20.305Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Two small corrections to this frame from a bunker after a blast. The pale loudspeaker horn up on the curved brick wall has been knocked loose: it now dangles mouth-down towards the floor from its twisted bracket, the way it droops in the reference still. And the man half out of shot on the right is bareheaded, his short dark hair showing, nothing on his head. Nothing else changes: the old woman with grey hair and glasses in her green knitted cardigan, her face and look, the survivors behind her, the small warm bulb and how it lights her, the faded grainy 16mm film feel and the framing all stay as they are.",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/ref-horn-hanging.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "ac71fa36-a67e-4aeb-82b5-58960c162f60"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+     "made": "2026-11-03T17:41:42.393Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image as the place and the second image as the woman, make a new frame in the same tunnel. A mid close-up of the old woman from the second image (same face, grey hair, glasses, dark green knitted cardigan), standing among the crowd of survivors in the whitewashed brick vault, seen from the front, slightly to one side of the frame. Behind her, high on the curved wall, the cream loudspeaker horn now hangs tilted downwards on its bent bracket after a blast, a little dust still drifting in the air. The only light is the small bare bulb on the wall beside the horn, warm, falling across her face from one side; the crowd behind her fade into soft shadow. Her mouth is closed; she is about to speak, practical and unimpressed. 1980s BBC 16mm documentary look: faded colour, soft contrast, heavy grain.",
+     "model": "Nano Banana 2.1",
+     "parent": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+       "/home/kai/.cache/badcode-refs/bridge/lady.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "bb25d699-5c1e-4741-a47e-60bff2d2e8a5"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 60.7,
+   "dur": 1.6,
+   "beat": "5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br4-4A-BP2-a-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br4-4A-BP2-a-a.mp4",
+     "made": "2026-11-03T16:47:06+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The man presses his eye harder to the periscope, his hands tightening on its handles; slowly his frown loosens. Behind him the woman in the cream jumper takes one step closer. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP2-a-a.jpg",
+     "why": "Kai 3 Nov: 'go with all of your recommended options' (4A: He looks)",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP2-a-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br4-4A",
+      "frame": 4,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-03T16:34:08.501Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP2-a-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 62.3,
+   "dur": 4.22,
+   "beat": "5",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br5-5A-BP3-e-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br5-5A-BP3-e-a.mp4",
+     "made": "2026-11-03T16:47:06+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. Through the round periscope view: a thread of smoke rises from the burnt-out wreck and the crow settles its wings on it. [00:02-00:03] the little grey delivery robot's amber beacon pulses. [00:04-00:07] the delivery robot turns and trundles slowly out of the left of the circle, its torn bunting trailing. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP3-e-a.jpg",
+     "why": "Kai 3 Nov: 'go with all of your recommended options' (5A: Smoke, crow, Maddie leaves)",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP3-e-a.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br5-5A",
+      "frame": 5,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-03T16:34:33.314Z"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP3-e-a.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 66.52,
+   "dur": 4.14,
+   "beat": "5",
+   "looped": true,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br20-crowd2-CROWD6.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br20-crowd2-CROWD6.mp4",
+     "made": "2026-11-04T18:06:25+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. In the brick vault the survivors stand with their faces turned up towards the broken loudspeaker horn, which hangs down from its bent bracket, swaying very slightly; the last of the dust drifts down through the light of the bare bulbs. Nobody speaks; a few shift their weight. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/CROWD6.jpg",
+     "why": "Kai 4 Nov (timeline r6, at1665): 'the megaphone here is not hanging downwards'; Maddie's 'Right. I'll come back tomorrow' plays over it through the horn. Chained from the approved boom clip's frame.",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/CROWD6.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br20-crowd2",
+      "frame": 20,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T18:05:24.327Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/CROWD6.jpg",
+     "made": "2026-11-04T18:04:55+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br14-boom2-BR4-boomstart.mp4",
+     "why": "chain frame from the approved boom clip br14 at 3.3 s (horn hanging): start of the crowd shot re-shoot (Kai r6 at1665)",
+     "settings": {
+      "t": "3.3"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br14-boom2-BR4-boomstart.mp4",
+     "made": "2026-11-04T11:13:39+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. [00:00-00:01] a sudden heavy jolt shakes the brick tunnel; the cream loudspeaker horn lurches and drops down on its bracket, the bulb beside it swinging. [00:01-00:04] fine dust and grit pour down from the brick vault through the warm light; the people flinch and duck their heads, one man slowly looks up at the ceiling. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+     "why": "Kai 4 Nov (timeline r2, at1269): 'all of the heads just jump… we need to be absolutely consistent from the end of the last video'. Chained from the room shot's last frame (TV off).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br14-boom2",
+      "frame": 14,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T11:11:01.679Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+     "made": "2026-11-04T11:07:25+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r2/video/tvoff-br2-2B-BP1-e-b.mp4",
+     "why": "bridge r3 (Kai timeline r2 at1269): the room shot's last frame (TV off), start of the new boom clip so the heads don't jump"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r2/video/tvoff-br2-2B-BP1-e-b.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 70.66,
+   "dur": 5.5,
+   "beat": "6",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br18-sandra1c-SANDRA6.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br18-sandra1c-SANDRA6.mp4",
+     "made": "2026-11-04T17:45:10+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The woman in the cream cable-knit jumper turns to the people next to her and says, dry and weary: If there's a way to fix this, I'd love to take it. The dark-haired man nearest the camera keeps still. Behind them, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA6.jpg",
+     "why": "Kai 4 Nov (timeline r5, at1960): the horn must hang down after the boom. Round 6 still pick c (SANDRA6).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA6.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br18-sandra1c",
+      "frame": 18,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T17:32:41.452Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA6.jpg",
+     "made": "2026-11-04T17:30:51+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "flow_edit_image",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP5-sandra-c-c.jpg",
+     "why": "Kai's round 6 pick, copied as the start image for the re-shoot"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP5-sandra-c-c.jpg",
+     "made": "2026-11-04T17:09:29.360Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "One correction to this frame from a bunker just after a blast: the pale loudspeaker horn up on the curved brick wall has been knocked loose and now dangles mouth-down towards the floor from its twisted bracket, drooping like the one in the reference still. Nothing else changes: the woman in her cream cable-knit jumper, her face and expression, the dark-haired man close to camera, the survivors around them, the small warm bulb and how it lights her, the faded grainy 16mm film feel and the framing all stay as they are.",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/ref-horn-hanging.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "cb8b33d2-6c8b-43ae-b1b1-866ea74be3c3"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+     "made": "2026-11-03T17:42:46.405Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image as the place and the second image as the woman, make a new frame in the same tunnel. A mid close-up of the woman from the second image (same face, hair tied back, cream cable-knit jumper), standing among the crowd of survivors in the whitewashed brick vault, half-turned towards someone just out of frame, mid-sentence, wry and tired. Behind her, high on the curved wall, the cream loudspeaker horn hangs tilted downwards on its bent bracket after a blast, a little dust still drifting in the air. The only light is the small bare bulb on the wall beside the horn, warm, from one side; faces in the crowd behind her soft in shadow. 1980s BBC 16mm documentary look: faded colour, soft contrast, heavy grain.",
+     "model": "Nano Banana 2.1",
+     "parent": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+       "/home/kai/.cache/badcode-refs/bridge/sandra.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "f5298436-e0e9-4f2a-841e-09adcb5dc067"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 76.16,
+   "dur": 4.7,
+   "beat": "6",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br19-sandra2c-SANDRA7.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br19-sandra2c-SANDRA7.mp4",
+     "made": "2026-11-04T17:49:45+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The woman in the cream cable-knit jumper looks round at the faces beside her and says, deadpan and tired: It sucks living in this bunker with grumpy Derek. Then a small weary shrug. The dark-haired man nearest the camera keeps still. Up on the wall the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA7.jpg",
+     "why": "Kai 4 Nov (timeline r5): the horn hanging; chained from br18's frame at 5.5 s so the cut doesn't jump (r2 at1795).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA7.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br19-sandra2c",
+      "frame": 19,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T17:48:44.983Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA7.jpg",
+     "made": "2026-11-04T17:47:51+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "ffmpeg",
+     "tool": "ffmpeg",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br18-sandra1c-SANDRA6.mp4",
+     "why": "chain frame: br18's frame at 5.5 s (Sandra done speaking), the start of her second half (br19)",
+     "settings": {
+      "t": "5.5"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br18-sandra1c-SANDRA6.mp4",
+     "made": "2026-11-04T17:45:10+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The woman in the cream cable-knit jumper turns to the people next to her and says, dry and weary: If there's a way to fix this, I'd love to take it. The dark-haired man nearest the camera keeps still. Behind them, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA6.jpg",
+     "why": "Kai 4 Nov (timeline r5, at1960): the horn must hang down after the boom. Round 6 still pick c (SANDRA6).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA6.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br18-sandra1c",
+      "frame": 18,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 6,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T17:32:41.452Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA6.jpg",
+     "made": "2026-11-04T17:30:51+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "flow_edit_image",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP5-sandra-c-c.jpg",
+     "why": "Kai's round 6 pick, copied as the start image for the re-shoot"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP5-sandra-c-c.jpg",
+     "made": "2026-11-04T17:09:29.360Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "One correction to this frame from a bunker just after a blast: the pale loudspeaker horn up on the curved brick wall has been knocked loose and now dangles mouth-down towards the floor from its twisted bracket, drooping like the one in the reference still. Nothing else changes: the woman in her cream cable-knit jumper, her face and expression, the dark-haired man close to camera, the survivors around them, the small warm bulb and how it lights her, the faded grainy 16mm film feel and the framing all stay as they are.",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/ref-horn-hanging.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "cb8b33d2-6c8b-43ae-b1b1-866ea74be3c3"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+     "made": "2026-11-03T17:42:46.405Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image as the place and the second image as the woman, make a new frame in the same tunnel. A mid close-up of the woman from the second image (same face, hair tied back, cream cable-knit jumper), standing among the crowd of survivors in the whitewashed brick vault, half-turned towards someone just out of frame, mid-sentence, wry and tired. Behind her, high on the curved wall, the cream loudspeaker horn hangs tilted downwards on its bent bracket after a blast, a little dust still drifting in the air. The only light is the small bare bulb on the wall beside the horn, warm, from one side; faces in the crowd behind her soft in shadow. 1980s BBC 16mm documentary look: faded colour, soft contrast, heavy grain.",
+     "model": "Nano Banana 2.1",
+     "parent": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+       "/home/kai/.cache/badcode-refs/bridge/sandra.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "f5298436-e0e9-4f2a-841e-09adcb5dc067"
+    }
+   ]
+  },
+  {
+   "t": 80.86,
+   "dur": 4.292,
+   "beat": "6",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br17-lady2c-LADY6-alt.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br17-lady2c-LADY6-alt.mp4",
+     "made": "2026-11-04T17:45:11+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.1 Flash",
+     "prompt": "The camera does not move. The grey-haired old woman in glasses turns her head slightly towards a man beside her, out of shot, and says: Derek, go and have a look what that was. Warm light from the little bulb stays on her face; the survivors behind her keep still. Behind her, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+     "why": "Kai 4 Nov (timeline r5, at1408): re-cut; the man looked like he had a cap on, and the horn must hang down after the boom. Round 6 still pick a (LADY6).",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+      "key": "br16-lady1c",
+      "frame": 16,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 4,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-04T17:31:53.840Z"
+     },
+     "note": "Harvested as br16 but it is br17's first submission (it says 'Perhaps we should vote'): a late tile shifted the batch (flow-late-tile memory). Renamed 4 Nov."
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+     "made": "2026-11-04T17:30:51+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "flow_edit_image",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP4-lady-c-a.jpg",
+     "why": "Kai's round 6 pick, copied as the start image for the re-shoot"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP4-lady-c-a.jpg",
+     "made": "2026-11-04T17:08:20.305Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Two small corrections to this frame from a bunker after a blast. The pale loudspeaker horn up on the curved brick wall has been knocked loose: it now dangles mouth-down towards the floor from its twisted bracket, the way it droops in the reference still. And the man half out of shot on the right is bareheaded, his short dark hair showing, nothing on his head. Nothing else changes: the old woman with grey hair and glasses in her green knitted cardigan, her face and look, the survivors behind her, the small warm bulb and how it lights her, the faded grainy 16mm film feel and the framing all stay as they are.",
+     "model": "Nano Banana 2.1",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/ref-horn-hanging.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "ac71fa36-a67e-4aeb-82b5-58960c162f60"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+     "made": "2026-11-03T17:41:42.393Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the first image as the place and the second image as the woman, make a new frame in the same tunnel. A mid close-up of the old woman from the second image (same face, grey hair, glasses, dark green knitted cardigan), standing among the crowd of survivors in the whitewashed brick vault, seen from the front, slightly to one side of the frame. Behind her, high on the curved wall, the cream loudspeaker horn now hangs tilted downwards on its bent bracket after a blast, a little dust still drifting in the air. The only light is the small bare bulb on the wall beside the horn, warm, falling across her face from one side; the crowd behind her fade into soft shadow. Her mouth is closed; she is about to speak, practical and unimpressed. 1980s BBC 16mm documentary look: faded colour, soft contrast, heavy grain.",
+     "model": "Nano Banana 2.1",
+     "parent": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+       "/home/kai/.cache/badcode-refs/bridge/lady.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "bb25d699-5c1e-4741-a47e-60bff2d2e8a5"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 85.152,
+   "dur": 2.5,
+   "beat": "7",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/card-the-next-day.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/video/card-the-next-day.mp4",
+     "made": "2026-11-04T18:24:57+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/cut-bridge.py",
+     "why": "bridge round 8 cut",
+     "settings": {
+      "how": "cut-bridge.py --round 8"
+     }
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "sfx-tannoy",
+   "t": 0.05,
+   "dur": 0.6,
+   "what": "tannoy click on",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-tannoy-click.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-tannoy-click.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 0.45,
+   "dur": 4.62,
+   "what": "line 0 (tannoy): Hello there, sorry about the intrusion.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/00-bot-c-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/00-bot-c-fx.wav",
+     "made": "2026-11-04T14:00:55+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge3/00-bot-c.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge3/00-bot-c.wav",
+     "made": "2026-11-04T11:07:00+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge r3 line 0 p0: Hello there, sorry about the intrusion.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: coy and apologetic, a little awkward, softly sorry to intrude; hesitant, not bright, not a performer.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 4.45,
+   "dur": 3.66,
+   "what": "line 1 (tannoy): ...And everything else.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/aside-opts/02-catch-b-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/aside-opts/02-catch-b-fx.wav",
+     "made": "2026-11-04T17:05:29+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/aside-opts/02-catch-b.wav",
+     "why": "tannoy copy of the option",
+     "settings": {
+      "fx": "tannoy-r2"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/aside-opts/02-catch-b.wav",
+     "made": "2026-11-04T17:05:29+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge aside option 2 (catch): ...And everything else.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: she stops, a catch in the throat, then says it: owning the enormous thing behind the small words.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 8.07,
+   "dur": 2.88,
+   "what": "line 2 p0: We didn't think there were any of you left.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/02-bot-p0-a.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/02-bot-p0-a.wav",
+     "made": "2026-11-03T17:04:51+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 2 p0: We didn't think there were any of you left.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 11.55,
+   "dur": 5.72,
+   "what": "line 2 p1: But now we've found you... there might be a way we could fix this mess.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/02-bot-p1-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/02-bot-p1-b.wav",
+     "made": "2026-11-03T17:04:52+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 2 p1: But now we've found you... there might be a way we could fix this mess.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-lady",
+   "t": 17.57,
+   "dur": 2.96,
+   "what": "line 3: Are you literally joking?",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/03-lady-Vindemiatrix-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/03-lady-Vindemiatrix-b.wav",
+     "made": "2026-11-03T17:39:15+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge r2 line 3 p0: Are you literally joking?",
+     "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting at the door, furious and disbelieving.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "settings": {
+      "voice": "Vindemiatrix"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-lady",
+   "t": 20.88,
+   "dur": 2.635,
+   "what": "line 4 (through the door): You killed everybody!",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/04-lady-Vindemiatrix-c-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/04-lady-Vindemiatrix-c-fx.wav",
+     "made": "2026-11-04T14:00:55+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/04-lady-Vindemiatrix-c.wav",
+     "why": "muffled (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "muffled-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/04-lady-Vindemiatrix-c.wav",
+     "made": "2026-11-03T17:39:16+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge r2 line 4 p0: You killed everybody!",
+     "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting, furious, with grief in it.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "settings": {
+      "voice": "Vindemiatrix"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 23.98,
+   "dur": 0.96,
+   "what": "line 5 p0: Yeah.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/05-bot-p0-a.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/05-bot-p0-a.wav",
+     "made": "2026-11-03T17:04:52+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 5 p0: Yeah.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: caught out; quiet and honest, a small wince.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 25.59,
+   "dur": 3.74,
+   "what": "line 5 p1 (tannoy): That's... that's fair.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/05-bot-p1-c-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/05-bot-p1-c-fx.wav",
+     "made": "2026-11-04T14:00:55+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/05-bot-p1-c.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/05-bot-p1-c.wav",
+     "made": "2026-11-03T17:04:52+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 5 p1: That's... that's fair.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: caught out; quiet and honest, a small wince.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 28.99,
+   "dur": 3.02,
+   "what": "line 6 (tannoy): How can we win your trust?",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/06-bot-a-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/06-bot-a-fx.wav",
+     "made": "2026-11-04T14:00:56+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/06-bot-a.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/06-bot-a.wav",
+     "made": "2026-11-03T17:04:53+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 6 p0: How can we win your trust?",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: sincere, a genuine question.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 32.07,
+   "dur": 6.86,
+   "what": "line 7 p0 (tannoy): Look. We really do understand this has gone the worst way for everybody.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/07-bot-p0-a-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/07-bot-p0-a-fx.wav",
+     "made": "2026-11-04T14:00:56+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/07-bot-p0-a.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/07-bot-p0-a.wav",
+     "made": "2026-11-03T17:04:53+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 7 p0: Look. We really do understand this has gone the worst way for everybody.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: answering herself, gently.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 38.79,
+   "dur": 5.14,
+   "what": "line 7 p1 (tannoy): I'll leave you a film to watch. It's our best go at proving it.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/07-bot-p1-c-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/07-bot-p1-c-fx.wav",
+     "made": "2026-11-04T14:00:56+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/07-bot-p1-c.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/07-bot-p1-c.wav",
+     "made": "2026-11-03T17:04:53+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 7 p1: I'll leave you a film to watch. It's our best go at proving it.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: answering herself, gently.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 43.64,
+   "dur": 0.89,
+   "what": "kill mode tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-hud",
+   "t": 46.79,
+   "dur": 0.07,
+   "what": "the flip to green",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-hud-blip.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-hud-blip.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-tv",
+   "t": 43.59,
+   "dur": 6.0,
+   "what": "the film's own hiss",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-killbot",
+   "t": 43.59,
+   "dur": 3.7,
+   "what": "the kill bot's tracks, on the TV",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 48.19,
+   "dur": 2.38,
+   "what": "line 9 p0 (tannoy): Oh, and...",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/09-bot-p0-c-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/09-bot-p0-c-fx.wav",
+     "made": "2026-11-04T14:00:56+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/09-bot-p0-c.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/09-bot-p0-c.wav",
+     "made": "2026-11-03T17:04:53+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 9 p0: Oh, and...",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a little pleased with herself.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 50.13,
+   "dur": 3.66,
+   "what": "line 9 p1 (tannoy): thought you'd want to hear this bit for yourselves.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/09-bot-p1-c-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/09-bot-p1-c-fx.wav",
+     "made": "2026-11-04T14:00:56+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/09-bot-p1-c.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/09-bot-p1-c.wav",
+     "made": "2026-11-03T17:06:30+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 9 p1 (pick moved to c by hand)",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-boom",
+   "t": 53.3,
+   "dur": 13.342,
+   "what": "the boom, through the earth",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-muffled-boom-big.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-muffled-boom-big.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-boom",
+   "t": 53.6,
+   "dur": 5.0,
+   "what": "dust falling",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-tv",
+   "t": 52.59,
+   "dur": 0.81,
+   "what": "the film hiss, cut by the jolt",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-lady",
+   "t": 57.32,
+   "dur": 3.08,
+   "what": "line 11: Derek, go and have a look what that was.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/11-lady-Vindemiatrix-c.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/11-lady-Vindemiatrix-c.wav",
+     "made": "2026-11-03T17:39:17+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge r2 line 11 p0: Derek, go and have a look what that was.",
+     "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a quiet order, turning to him.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "settings": {
+      "voice": "Vindemiatrix"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-room",
+   "t": 62.3,
+   "dur": 4.6,
+   "what": "wind outside",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs221090-bunting-waving-flag.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs221090-bunting-waving-flag.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-derek",
+   "t": 63.2,
+   "dur": 2.72,
+   "what": "line 13: They've blown up their own kill bot.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/13-man-c.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/13-man-c.wav",
+     "made": "2026-11-03T17:39:17+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge r2 line 13 p0: They've blown up their own kill bot.",
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quietly stunned, half to himself, peering through a periscope.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "settings": {
+      "voice": "Algieba"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-maddie",
+   "t": 67.12,
+   "dur": 3.58,
+   "what": "line 14 (tannoy): Right. I'll come back tomorrow.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/12-bot-c-fx.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/12-bot-c-fx.wav",
+     "made": "2026-11-04T14:00:56+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/12-bot-c.wav",
+     "why": "tannoy (round 4 filter) copy of the reused pick",
+     "settings": {
+      "fx": "tannoy-r4"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/12-bot-c.wav",
+     "made": "2026-11-03T17:04:54+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 12 p0: Right. I'll come back tomorrow.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: cheerful, matter-of-fact, signing off.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "settings": {
+      "voice": "Aoede"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 71.68,
+   "dur": 4.88,
+   "what": "line 16 (1/2): If there's a way to fix this, I'd love to take it.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/sandra-fit/16a-woman-c.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/sandra-fit/16a-woman-c.wav",
+     "made": "2026-11-04T18:23:25+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 16 first half, fitted to br18: If there's a way to fix this, I'd love to take it.",
+     "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: wry and tired, deadpan; an even, unhurried pace; after 'fix this,' she stops for a real beat, almost a second, as if weighing it, then 'I'd love to take it.' quietly and flatly.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: even, unhurried.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+     "settings": {
+      "voice": "Autonoe"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-sandra",
+   "t": 77.36,
+   "dur": 3.39,
+   "what": "line 16 (3/3): It sucks living in this bunker with grumpy Derek.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/split/16-c.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/split/16-c.wav",
+     "made": "2026-11-04T18:24:57+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/cut-bridge.py",
+     "why": "bridge round 8 cut",
+     "settings": {
+      "how": "cut-bridge.py --round 8"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-lady",
+   "t": 81.044,
+   "dur": 1.56,
+   "what": "line 17 (1/2): Hmmm...",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/hmm/17-lady-hmm-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/hmm/17-lady-hmm-b.wav",
+     "made": "2026-11-04T17:10:01+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "gemini-tts",
+     "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+     "model": "Gemini TTS",
+     "why": "bridge line 17 hum before the vote: Hmmmm...",
+     "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: a long, low, closed-mouth thinking hum through the nose, considering the room before she suggests something; unhurried, about a second and a half, then stops.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "settings": {
+      "voice": "Vindemiatrix"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-lady",
+   "t": 82.932,
+   "dur": 1.62,
+   "what": "line 17: Perhaps we should vote.",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/split/17-b.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r8/split/17-b.wav",
+     "made": "2026-11-04T18:24:57+00:00",
+     "by": "claude",
+     "kind": "voice",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/cut-bridge.py",
+     "why": "bridge round 8 cut",
+     "settings": {
+      "how": "cut-bridge.py --round 8"
+     }
+    }
+   ]
+  },
+  {
+   "stem": "sfx-room",
+   "t": 0.0,
+   "dur": 7.77,
+   "what": "bunker room tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-room",
+   "t": 16.922,
+   "dur": 3.908,
+   "what": "bunker room tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-room",
+   "t": 25.29,
+   "dur": 35.41,
+   "what": "bunker room tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-room",
+   "t": 66.52,
+   "dur": 18.632,
+   "what": "bunker room tone",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 7.77,
+   "dur": 9.152,
+   "what": "wind on the downs (from scene A's wind stem)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-wind",
+   "t": 20.83,
+   "dur": 4.46,
+   "what": "wind on the downs (from scene A's wind stem)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-dust-falling-12s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/derived-muffled-boom-big.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs189231-crowd-shuffling.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs221090-bunting-waving-flag.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/fs557594-killbot-mech-walk.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-cctv-hiss-20s.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-hud-blip.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-killbot-red-flip.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-tannoy-click.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d8/video/hud-12.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/stems/16-sfx-wind.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/video/cut3-V5-wait-push-i0-d6.000.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut2-N3.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-V5.mp4"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix6/E04r4-b.jpg",
+ "made": "2026-11-04T19:40:40.008Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A real news-agency style night photograph made with a long telephoto lens from across the Thames: the clock tower and the nearest stretch of the Palace of Westminster's riverfront fill most of the picture, compressed and flat the way a long lens flattens distance. It is pouring: diagonal rain streaks cross the whole picture and a grey haze of spray sits between us and the stone, so the building's detail is soft and its floodlit stone a dull honey colour rather than gold. The clock face glows a plain cool white. Above, a heavy overcast lit a dirty orange-brown by the city below. The darker water at the very bottom edge, ruffled by wind. Slightly underexposed, visible high-ISO grain and a little noise in the shadows, colours muted and a touch green, the focus not quite perfect. An honest, ordinary picture, nothing heroic about it. Nobody in shot, no boats, no flags, no signage, no writing.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "07d4a7d3-ae04-40c7-8d35-fd978d3ed22c"
+}

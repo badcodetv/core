@@ -47,5 +47,52 @@
   "decided": [
    "Kai: 'I think we've got a script.' 1F; film F1 then F2 then F3; overlay NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; card 'The next day.'"
   ]
+ },
+ {
+  "at": "2026-11-04T18:15:33+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah",
+  "what": "scene C round 8: the 'Some negotiation later.' card cut (C opens on the walk, 0:44); Maddie held still over the brow (hold_region.py, no credits)",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end.py C --tag nextday && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-c-walk-out <out>"
+ },
+ {
+  "at": "2026-11-04T18:15:41+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "what": "Kai's round 8 notes dumped to feedback/timeline-r8: at44 (drop the card), at794 (Maddie slides down the hill)",
+  "decided": [
+   "So, I think we can lose the some negotiation later screen."
+  ],
+  "feedback": "feedback/timeline-r8",
+  "feedback_docs": 15
+ },
+ {
+  "at": "2026-11-04T18:52:50+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "what": "Kai's note at534 dumped to feedback/timeline-r9",
+  "decided": [
+   "I reckon we can cut this whole sentence... leave Derek just say it doesn't matter we're not coming back are we and then we see the building"
+  ],
+  "feedback": "feedback/timeline-r9",
+  "feedback_docs": 16
+ },
+ {
+  "at": "2026-11-04T18:52:50+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah",
+  "what": "scene C round 9: Sandra's aliens punchline cut (0:37); Premiere 05 GPOM story C walk out r4, swapped into 00 RENDER story",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end.py C --tag noaliens && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-c-walk-out <out>"
+ },
+ {
+  "at": "2026-11-04T18:58:04+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "what": "signed off by Kai; recipe frozen",
+  "decided": [
+   "Ending C timeline is perfect. That's excellent. No changes."
+  ]
  }
 ]

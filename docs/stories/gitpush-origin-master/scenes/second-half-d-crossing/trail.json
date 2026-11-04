@@ -1,0 +1,45 @@
+[
+ {
+  "at": "2026-11-04T19:03:39+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "what": "Kai's round 5 notes dumped to feedback/timeline-r5 (9 new)",
+  "feedback": "feedback/timeline-r5",
+  "feedback_docs": 28
+ },
+ {
+  "at": "2026-11-04T19:03:40+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 5: Maddie's key line (r5e), the lady's answer and the d6 exchange cut, D10x for they sit (1:12); Premiere 06 GPOM story D crossing r2 in 00 RENDER story",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r5 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <out>"
+ },
+ {
+  "at": "2026-11-04T19:26:57+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 6: suits (D00r7) and tea (D06r7) re-made; Premiere 06 GPOM story D crossing r3 in 00 RENDER story",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r6 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <out>"
+ },
+ {
+  "at": "2026-11-04T19:27:05+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/Usu4hePvrwSBmTB4ZAx4P3",
+  "what": "tea picks page (D06r7 options); pick dumped to feedback/tea-picks-r5",
+  "decided": [
+   "pick b-a"
+  ]
+ },
+ {
+  "at": "2026-11-04T19:29:59+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "what": "signed off by Kai; recipe frozen",
+  "decided": [
+   "we've done it it's perfect that is so good"
+  ]
+ }
+]

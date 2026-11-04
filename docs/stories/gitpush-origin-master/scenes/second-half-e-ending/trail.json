@@ -1,0 +1,61 @@
+[
+ {
+  "at": "2026-11-04T19:43:11+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 4: cut to Parliament on 'I made it', stern third sentence, placeholder Parliament",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_e.py --tag r4 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending <out>"
+ },
+ {
+  "at": "2026-11-04T19:43:11+00:00",
+  "stage": "picks",
+  "round": 4,
+  "url": "https://claude.ai/artifact/JRhJQxByyZYMKeA5LKWpn1",
+  "what": "E04 Parliament plates r4 (a-d)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending/e-r4-parliament-picks.json <out>"
+ },
+ {
+  "at": "2026-11-04T19:43:18+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "what": "notes dumped (5; 2 new: at529, at699)",
+  "decided": [
+   "Kai at529: cut to Parliament at ~22 s when he starts 'I made it'",
+   "Kai at699: Parliament too cartoony AI, recut; add stern 'Don't make me come back twice.'"
+  ],
+  "feedback": "feedback/timeline-r4",
+  "feedback_docs": 5
+ },
+ {
+  "at": "2026-11-04T19:49:53+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 5: 'Now the real work starts' cut; I made it / Don't make me come back twice (stand-in read); placeholder Parliament",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_e.py --tag r5",
+  "decided": [
+   "Kai (chat): remove 'now the real work starts', just 'don't make me come back twice', slower, more emotion, the punchline"
+  ]
+ },
+ {
+  "at": "2026-11-04T20:05:50+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 6: Kai's Suno pick 0ecce5dc for both sentences",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_e.py --tag r6",
+  "decided": [
+   "Kai: 'This is the one Claude, that one works.' (0ecce5dc)"
+  ]
+ },
+ {
+  "at": "2026-11-04T20:13:36+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "what": "picks: Parliament e-b animated (E04r4-t1, 30 credits); Premiere 07 GPOM story E ending r3 built, in sync, swapped into 00 RENDER story",
+  "decided": [
+   "Kai picked e-b"
+  ]
+ }
+]

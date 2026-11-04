@@ -57,6 +57,9 @@ AI['d3n'] = (AI_D3B, 6.03, 7.84)  # gain reference: the sentence, not the silenc
 D3N_PAUSE = 1.1  # gap between the two pieces; with the pads, ~1.3 s of silence between "back." and "Me."
 REF.update({'d3n1': 'd3n', 'd3n2': 'd3n'})
 D6_PARTS = [('d6c', 0.0)]  # the admission, as placed (key, gap before it); with the round-C retake: d6a, d6b, d6c
+# --tag r5 (Kai, 4 Nov, D round 5): Maddie's new key line (at469), the lady's answer cut (at567/at715), the d6 question
+# and answer cut (at1091/at1178/at1285), the all-seated D10x shot for d6 (at1054/at1615). Writes <media>/cut-r5/.
+R5 = E.TAG in ('r5', 'r6')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
 INTERIOR_EXCLUDE = {'D14'}  # the dusk exterior keeps its own light
 BEACON = {'D00': ([536, 111], 34), 'D03': ([642, 455], 16), 'D03c': ([432, 92], 24), 'D08': ([627, 390], 20), 'D11': ([354, 290], 24),
           'D11b': (None, 30)}
@@ -220,93 +223,125 @@ def build(sc):
     S.piece('D02', S.clip('D02'), 0.0, s2, cut3c, 'd2', zoom=[[0.0, 1.0], [1.0, 1.0], [8.0, 1.05]])
     k = 'd3-1-maddie'
     mv = sc.voice(k)
-    # D round 3 (Kai reel at2055, 23 Oct): the old listening shot of the lady (D04r3-t1) is cut; from Maddie it goes
-    # straight to the rainbow on the lady's face (D04r4-t2). So all of Maddie's line has to play on D03cr3 (8 s): her
-    # take r4a in three phrases (silence map, 20 ms: "It's the time machine." 0.46-2.28, "You do understand" 4.20-5.80,
-    # "what this will cost you." 6.98-8.66), its pauses held to 1.35 s and 0.8 s (were 1.9 and 1.2), 0.3 s on her first.
-    tm = fr(cut3c + 0.3)
-    e1 = c.say('vox-maddie', mv, 0.40, 2.32, tm, 'd3 line 1 maddie: "It\'s the time machine."', ref=span(mv))
-    e2 = c.say('vox-maddie', mv, 4.14, 5.86, fr(e1 + 1.35), 'd3 line 1 maddie: "You do understand"', ref=span(mv))
-    e_m = c.say('vox-maddie', mv, 6.94, 8.74, fr(e2 + 0.8), 'd3 line 1 maddie: "what this will cost you."', ref=span(mv))
-    c.line(b, 1, 'maddie', tm + 0.05, e_m - tm - 0.05, sc.text(k), 'kai')
-    cut04 = fr(e_m + 0.05)
-    assert cut04 - cut3c <= 8.0 - 1 / FPS, cut04 - cut3c
-    first3c = cut04 - cut3c
-    S.piece('D03c', S.clip('D03c'), 0.0, cut3c, cut04, 'd3')
-    # ---- the lady's answer, ending round 2 (Kai reel at2108/at2566, 23 Oct): stern, Kai's words, 10.8 s of voice
-    # (take r7c). "what this will cost you." lands on her listening in the old D04r3-t1 (mouth shut to 2.75 s), then a
-    # punch-in cut (112%) to the new D04r4-t2, where she says the whole line. Its mouth (12 fps strip, mouth-map.py):
-    # runs 0.92-1.42 ("Look,"), 1.75-4.25, 5.21-7.63, 8.00-9.29. Her take: "Look," 0.26-0.66; "this has been the worst"
-    # 0.98-3.00 (a 0.14 s gap after it); "possible outcome for humanity." 3.14-5.18; "If there's a chance we could go
-    # back in time to change it," 5.52-8.88; "I want to take that chance." 9.54-11.04. Omni's run 2 is 1.7x too quick
-    # for the take's 4.2 s, so the first half goes on her mouth (x1.3) and "possible outcome for humanity." plays at its
-    # own speed over the hundred listening (D03cr3 from its start); the cut back to her skips the clip ahead to 0.2 s
-    # before run 3. The rest on her mouth: run 3 at x1.3, run 4 at x1.15. Late never early (+0.04 s).
-    k = 'd3-2-lady'
-    cut4b = cut04  # D round 3: straight from Maddie to the rainbow on her face (D04r3-t1 is out)
-    j0 = 0.45  # into D04r4-t2: 0.47 s of shut mouth before "Look,"
-    z4 = cut4b - j0
-    zin = [[0.0, 1.12]]
-    t_look = z4 + 0.92 + 0.04
-    say('vox-lady', k, 0.22, 0.68, t_look, 'd3 line 2 lady: "Look," (lip-sync, x1.0)')
-    t_a = z4 + 1.75 + 0.04
-    e_a = say('vox-lady', k, 0.94, 3.02, t_a, 'd3 line 2 lady: "this has been the worst" (lip-sync, x1.3)', tempo=1.3)
-    cut_away = fr(e_a + 0.04)
-    S.piece('D04', S.clip('D04'), j0, cut4b, cut_away, 'd3', zoom=zin)
-    t_b = fr(cut_away + 0.12)
-    e_b = say('vox-lady', k, 3.10, 5.22, t_b, 'd3 line 2 lady: "possible outcome for humanity." (over the hundred '
-              'listening, x1.0)')
-    back = fr(e_b + 0.30)
-    S.piece('D03c', S.clip('D03c'), 0.0, cut_away, back, 'd3')
-    j3 = 5.21 - 0.20
-    z4b = back - j3
-    e_c = say('vox-lady', k, 5.48, 8.92, z4b + 5.21 + 0.04, 'd3 line 2 lady: "If there\'s a chance we could go back in '
-              'time to change it," (lip-sync, x1.3)', tempo=1.3)
-    e_l = say('vox-lady', k, 9.50, 11.10, z4b + 8.00 + 0.04, 'd3 line 2 lady: "I want to take that chance." (lip-sync, '
-              'x1.15)', tempo=1.15)
-    c.line(b, 2, 'lady', t_look, e_l - t_look, sc.text(k), 'kai')
-    back3c = fr(min(max(e_l + 0.6, z4b + 9.29 + 0.6), z4b + 10.0 - 2 / FPS))  # the clip is 10 s
-    S.piece('D04', S.clip('D04'), j3, back, back3c, 'd3', zoom=zin)
-    m['lady_d3'] = (t_look, e_l)
-    # the breath after is the chairs (d4's overhead, held longer), cut ~0.6 s after her last word (the clip's end)
-    end_d3 = back3c
-    m['d3_lines'] = (a, e_l)
-    t = c.close(b, end_d3)
-    c.flags.append('d3 (Kai bd3/at713, the emotional height): the words are Kai\'s and Maddie says them; the boss is '
-                   'silent, and "You wouldn\'t follow how it works", "Us.", "You. And your consciousness." and "It only '
-                   'sends one back. Me." are all gone. Voices: Derek r5b and Maddie r4a are Kai\'s picks by ear; the lady is '
-                   'r7c (ending round 2, picked by measurement). Maddie is gleaming from here on with no bunting and no explanation (Kai, Q1).')
-    c.flags.append(f'd3 cut: Derek\'s hushed "What is it?" is asked of the vast room (D02 runs on into d3; the old '
-                   'wafer reveal D03-t2 is gone, because the battered Maddie with her bunting stands in the middle of it); '
-                   'cut to gleaming Maddie '
-                   f'(D03cr3, her beacon pulsing in the clip) and {tm - cut3c:.1f} s on her before she speaks. D round 3 (Kai '
-                   'at2055): her whole line plays on her, its pauses held to 1.35 s and 0.8 s so it fits her 8 s clip, '
-                   'and the cut goes straight to the rainbow on the lady\'s face (the old listening shot is out). The cut '
-                   'out of her face comes 0.6 s after her last word, onto the hundred chairs from above, held 2 s in silence '
-                   'before they turn: the breath after the height is on what it will cost.')
-    c.flags.append('d3 (Kai reel at2108/at2566, ending round 2): the lady no longer comforts Maddie. Stern, in Kai\'s '
-                   'words: "Look, this has been the worst possible outcome for humanity. If there\'s a chance we could go '
-                   'back in time to change it, I want to take that chance." (take r7c, 10.8 s). It answers Maddie\'s "You do '
-                   'understand what this will cost you." (Kai\'s pick, unchanged; nothing added). No "I trust your boss".')
-    c.flags.append(f'd3 lip-sync (the lady, D04r4-t2, at 112%): the cut comes straight from Maddie\'s "cost you.", 0.5 s '
-                   f'before her first word. Omni spoke her whole line 1.3-1.7x quicker than the '
-                   f'take. "Look," on her mouth at x1.0; "this has been the worst" at x1.3; "possible outcome for humanity." '
-                   f'at its own speed over the hundred listening (D03cr3 from its start, gleaming Maddie and the wafer); '
-                   f'back on her for "If there\'s a chance... change it," at x1.3 and "I want to take that chance." at x1.15. '
-                   f'Two phrases at x1.3 is the stretch cap: for Kai\'s ear.')
+    if R5:
+        # Take r5e, five phrases (silence map at -38 dB): "It's the time machine." 0.0-1.79; "It'll send all of you
+        # back," 2.70-4.84; "to before it all went wrong." 5.70-7.35; "And it'll send him too," 9.05-10.72; "so he can
+        # help you avoid it." 11.63-13.18. Its pauses held to 0.6 / 0.6 s so the first three fit her 8 s shot, 1.0 s before "And", 0.85 s before "so".
+        # The first three on her (D03c, 8 s); the cut to the hundred chairs from above lands in that breath, and the
+        # last two play over them.
+        tm = fr(cut3c + 0.25)
+        P = [(0.0, 1.85, 0.0), (2.64, 4.90, 0.6), (5.64, 7.41, 0.6), (8.99, 10.78, 1.0), (11.57, 13.24, 0.85)]
+        ends, t_ = [], tm
+        for i, (v0, v1, gap) in enumerate(P):
+            if i:
+                t_ = fr(ends[-1] + gap)
+            ends.append(c.say('vox-maddie', mv, v0, v1, t_, f'd3 line 1 maddie: phrase {i + 1} (r5e)', ref=span(mv)))
+        c.line(b, 1, 'maddie', tm, ends[-1] - tm, sc.text(k), 'kai')
+        cut05 = fr(ends[2] + 0.4)
+        assert cut05 - cut3c <= 8.0 - 1 / FPS, cut05 - cut3c
+        S.piece('D03c', S.clip('D03c'), 0.0, cut3c, cut05, 'd3')
+        end_d3 = fr(max(ends[-1] + 1.2, cut05 + 5.0))
+        d05 = end_d3 - cut05
+        S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, cut05, end_d3, 'd3', still=True,
+                zoom=[[0.0, 1.04], [1.5, 1.04], [d05, 1.12]], rot=[[0.0, 0.0], [1.5, 0.0], [d05, 2.0]])
+        m['lady_d3'] = (ends[-1], ends[-1])
+        m['d3_lines'] = (a, ends[-1])
+        t = c.close(b, end_d3)
+        c.flags.append('D round 5 (Kai at469): Maddie\'s line is now the film\'s key line, in Kai\'s words: "It\'s the time '
+                       'machine. It\'ll send all of you back, to before it all went wrong. And it\'ll send him too, so he can help '
+                       'you avoid it." (Gemini Aoede, take r5e, heard exactly). Three phrases on her, then the cut to the hundred '
+                       'chairs from above in the breath before "And", the last two over the chairs.')
+        c.flags.append('D round 5 (Kai at567/at715): the old lady\'s answer ("Look, this has been the worst possible outcome...") '
+                       'is cut with both its shots: the deal was made in the bunker. Her voice is no longer heard in D.')
+    if not R5:
+        # D round 3 (Kai reel at2055, 23 Oct): the old listening shot of the lady (D04r3-t1) is cut; from Maddie it goes
+        # straight to the rainbow on the lady's face (D04r4-t2). So all of Maddie's line has to play on D03cr3 (8 s): her
+        # take r4a in three phrases (silence map, 20 ms: "It's the time machine." 0.46-2.28, "You do understand" 4.20-5.80,
+        # "what this will cost you." 6.98-8.66), its pauses held to 1.35 s and 0.8 s (were 1.9 and 1.2), 0.3 s on her first.
+        tm = fr(cut3c + 0.3)
+        e1 = c.say('vox-maddie', mv, 0.40, 2.32, tm, 'd3 line 1 maddie: "It\'s the time machine."', ref=span(mv))
+        e2 = c.say('vox-maddie', mv, 4.14, 5.86, fr(e1 + 1.35), 'd3 line 1 maddie: "You do understand"', ref=span(mv))
+        e_m = c.say('vox-maddie', mv, 6.94, 8.74, fr(e2 + 0.8), 'd3 line 1 maddie: "what this will cost you."', ref=span(mv))
+        c.line(b, 1, 'maddie', tm + 0.05, e_m - tm - 0.05, sc.text(k), 'kai')
+        cut04 = fr(e_m + 0.05)
+        assert cut04 - cut3c <= 8.0 - 1 / FPS, cut04 - cut3c
+        first3c = cut04 - cut3c
+        S.piece('D03c', S.clip('D03c'), 0.0, cut3c, cut04, 'd3')
+        # ---- the lady's answer, ending round 2 (Kai reel at2108/at2566, 23 Oct): stern, Kai's words, 10.8 s of voice
+        # (take r7c). "what this will cost you." lands on her listening in the old D04r3-t1 (mouth shut to 2.75 s), then a
+        # punch-in cut (112%) to the new D04r4-t2, where she says the whole line. Its mouth (12 fps strip, mouth-map.py):
+        # runs 0.92-1.42 ("Look,"), 1.75-4.25, 5.21-7.63, 8.00-9.29. Her take: "Look," 0.26-0.66; "this has been the worst"
+        # 0.98-3.00 (a 0.14 s gap after it); "possible outcome for humanity." 3.14-5.18; "If there's a chance we could go
+        # back in time to change it," 5.52-8.88; "I want to take that chance." 9.54-11.04. Omni's run 2 is 1.7x too quick
+        # for the take's 4.2 s, so the first half goes on her mouth (x1.3) and "possible outcome for humanity." plays at its
+        # own speed over the hundred listening (D03cr3 from its start); the cut back to her skips the clip ahead to 0.2 s
+        # before run 3. The rest on her mouth: run 3 at x1.3, run 4 at x1.15. Late never early (+0.04 s).
+        k = 'd3-2-lady'
+        cut4b = cut04  # D round 3: straight from Maddie to the rainbow on her face (D04r3-t1 is out)
+        j0 = 0.45  # into D04r4-t2: 0.47 s of shut mouth before "Look,"
+        z4 = cut4b - j0
+        zin = [[0.0, 1.12]]
+        t_look = z4 + 0.92 + 0.04
+        say('vox-lady', k, 0.22, 0.68, t_look, 'd3 line 2 lady: "Look," (lip-sync, x1.0)')
+        t_a = z4 + 1.75 + 0.04
+        e_a = say('vox-lady', k, 0.94, 3.02, t_a, 'd3 line 2 lady: "this has been the worst" (lip-sync, x1.3)', tempo=1.3)
+        cut_away = fr(e_a + 0.04)
+        S.piece('D04', S.clip('D04'), j0, cut4b, cut_away, 'd3', zoom=zin)
+        t_b = fr(cut_away + 0.12)
+        e_b = say('vox-lady', k, 3.10, 5.22, t_b, 'd3 line 2 lady: "possible outcome for humanity." (over the hundred '
+                  'listening, x1.0)')
+        back = fr(e_b + 0.30)
+        S.piece('D03c', S.clip('D03c'), 0.0, cut_away, back, 'd3')
+        j3 = 5.21 - 0.20
+        z4b = back - j3
+        e_c = say('vox-lady', k, 5.48, 8.92, z4b + 5.21 + 0.04, 'd3 line 2 lady: "If there\'s a chance we could go back in '
+                  'time to change it," (lip-sync, x1.3)', tempo=1.3)
+        e_l = say('vox-lady', k, 9.50, 11.10, z4b + 8.00 + 0.04, 'd3 line 2 lady: "I want to take that chance." (lip-sync, '
+                  'x1.15)', tempo=1.15)
+        c.line(b, 2, 'lady', t_look, e_l - t_look, sc.text(k), 'kai')
+        back3c = fr(min(max(e_l + 0.6, z4b + 9.29 + 0.6), z4b + 10.0 - 2 / FPS))  # the clip is 10 s
+        S.piece('D04', S.clip('D04'), j3, back, back3c, 'd3', zoom=zin)
+        m['lady_d3'] = (t_look, e_l)
+        # the breath after is the chairs (d4's overhead, held longer), cut ~0.6 s after her last word (the clip's end)
+        end_d3 = back3c
+        m['d3_lines'] = (a, e_l)
+        t = c.close(b, end_d3)
+        c.flags.append('d3 (Kai bd3/at713, the emotional height): the words are Kai\'s and Maddie says them; the boss is '
+                       'silent, and "You wouldn\'t follow how it works", "Us.", "You. And your consciousness." and "It only '
+                       'sends one back. Me." are all gone. Voices: Derek r5b and Maddie r4a are Kai\'s picks by ear; the lady is '
+                       'r7c (ending round 2, picked by measurement). Maddie is gleaming from here on with no bunting and no explanation (Kai, Q1).')
+        c.flags.append(f'd3 cut: Derek\'s hushed "What is it?" is asked of the vast room (D02 runs on into d3; the old '
+                       'wafer reveal D03-t2 is gone, because the battered Maddie with her bunting stands in the middle of it); '
+                       'cut to gleaming Maddie '
+                       f'(D03cr3, her beacon pulsing in the clip) and {tm - cut3c:.1f} s on her before she speaks. D round 3 (Kai '
+                       'at2055): her whole line plays on her, its pauses held to 1.35 s and 0.8 s so it fits her 8 s clip, '
+                       'and the cut goes straight to the rainbow on the lady\'s face (the old listening shot is out). The cut '
+                       'out of her face comes 0.6 s after her last word, onto the hundred chairs from above, held 2 s in silence '
+                       'before they turn: the breath after the height is on what it will cost.')
+        c.flags.append('d3 (Kai reel at2108/at2566, ending round 2): the lady no longer comforts Maddie. Stern, in Kai\'s '
+                       'words: "Look, this has been the worst possible outcome for humanity. If there\'s a chance we could go '
+                       'back in time to change it, I want to take that chance." (take r7c, 10.8 s). It answers Maddie\'s "You do '
+                       'understand what this will cost you." (Kai\'s pick, unchanged; nothing added). No "I trust your boss".')
+        c.flags.append(f'd3 lip-sync (the lady, D04r4-t2, at 112%): the cut comes straight from Maddie\'s "cost you.", 0.5 s '
+                       f'before her first word. Omni spoke her whole line 1.3-1.7x quicker than the '
+                       f'take. "Look," on her mouth at x1.0; "this has been the worst" at x1.3; "possible outcome for humanity." '
+                       f'at its own speed over the hundred listening (D03cr3 from its start, gleaming Maddie and the wafer); '
+                       f'back on her for "If there\'s a chance... change it," at x1.3 and "I want to take that chance." at x1.15. '
+                       f'Two phrases at x1.3 is the stretch cap: for Kai\'s ear.')
 
     # ---- d4: a hundred chairs (L3 overhead, rotate + push), the tea (D06): unchanged picture; Maddie says the line
     s4 = t
     b = c.beat('d4', 'A hundred chairs', s4, act='The clean room',
                see='Overhead, a hundred chairs laid out like a chip. Then one chair: the old lady under her patchwork '
                    'blanket reaches down for her steaming mug of tea.')
-    d05 = 5.0  # round 1: held 2 s (was 1 s) as the breath after the lady's answer
-    S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, s4, s4 + d05, 'd4', still=True,
-            zoom=[[0.0, 1.04], [2.0, 1.04], [d05, 1.12]], rot=[[0.0, 0.0], [2.0, 0.0], [d05, 2.0]])
+    d05 = 0.0 if R5 else 5.0  # round 1: held 2 s (was 1 s) as the breath after the lady's answer; R5: in d3
+    if not R5:
+        S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, s4, s4 + d05, 'd4', still=True,
+                zoom=[[0.0, 1.04], [2.0, 1.04], [d05, 1.12]], rot=[[0.0, 0.0], [2.0, 0.0], [d05, 2.0]])
     s6 = fr(s4 + d05)
     # Reel round 1 (Kai at2347, 23 Oct): the lady's "Is that tea?" is dropped; Maddie just tells her, at the moment
     # the lady's question used to start.
-    a2 = fr(s6 + LEAD + 1.2)
+    a2 = fr(s6 + (LEAD + 0.6 if R5 else LEAD + 1.2))
     e2 = S.human('vox-maddie', 'd4-0-maddie', a2, 'd4', 0, 'maddie')
     end_d4 = fr(min(s6 + 8.0, max(s6 + 6.6, e2 + TAIL)))
     S.piece('D06', S.clip('D06'), 0.0, s6, end_d4, 'd4')
@@ -330,42 +365,55 @@ def build(sc):
     b = c.beat('d6', 'They sit', s6b, act='The plan',
                see='They sit, every one of them; nobody makes them. Lying back, the old lady asks what he will do when he '
                    'gets back, and Maddie says it as plainly as it can be said.')
-    i10, d10 = 0.4, 3.5  # D round 3 (Kai at2714): out before ~4 s, where the near man sits up and a figure sits in behind him
-    cut11 = fr(s6b + d10)
-    k = 'd6-0-lady'
-    q1 = fr(cut11 - 2.30 - 0.06)
-    say('vox-lady', k, 0.24, 2.56, q1, 'd6 line 0 lady: "When he arrives back in time," (over the wide: Omni\'s mouth is '
-        'x1.6 too quick for it)')
-    i11 = 3.10
-    z11 = cut11 - i11
-    eq = say('vox-lady', k, 3.36, 4.34, z11 + 3.66, 'd6 line 0 lady: "what will he do?" (lip-sync, x1.2)', tempo=1.2)
-    c.line(b, 0, 'lady', q1 + 0.04, eq - q1 - 0.04, sc.text(k), 'kai')
-    S.piece('D10n', S.clip('D10n'), i10, s6b, cut11, 'd6')
-    k = 'd6-1-maddie'
-    am = fr(eq + 0.45)
-    em = S.human('vox-maddie', k, am, 'd6', 1, 'maddie', what='d6 line 1 maddie: "He\'s going to try and convince you lot '
-                 'to sort your government out." (on the lady listening)')
-    end11 = fr(z11 + 8.0 - 1 / FPS)
-    S.piece('D11', S.clip('D11'), i11, cut11, end11, 'd6', zoom=[[i11, 1.0], [i11 + 1.0, 1.0], [8.0, 1.05]],
-            grade=LIFT)  # D11r3 sits ~30/255 under the wide it cuts from
-    # D round 4 (Kai at2787, pick D11c6-d): a silent close-up of the lady as the plan sinks in, before the hands
-    # (it cut too quickly to Sandra and Derek). D11c6-t1: she looks to the robot, her eyes fix, a breath, one small nod.
-    i11c, d11c = 1.2, 3.6
-    S.piece('D11c', S.clip('D11c'), i11c, end11, fr(end11 + d11c), 'd6', grade=LIFT)
-    end11c = fr(end11 + d11c)
-    m['q_lady'] = q1
-    m['maddie_d6'] = (am, em)
-    t = c.close(b, end11c)
-    c.flags.append(f'd6 (D round 4, Kai at2787): a silent close-up of the old lady (D11c6-t1, 6 s, 10 credits) holds '
-                   f'{d11c:.1f} s after Maddie\'s answer: her eyes fix on the robot, a breath, one small nod. Then the hands.')
-    c.flags.append('d6 (Kai ld6-0/ld6-1): the lady asks "When he arrives back in time, what will he do?" and Maddie '
-                   'answers "He\'s going to try and convince you lot to sort your government out." Who keeps the gains is '
-                   'no longer said here (Kai, Q2: the film has it right; the beneficiary rule is relaxed).')
-    c.flags.append(f'd6 lip-sync: on D11r3-t2 Omni spoke "When he arrives back in time," in 1.4 s against the take\'s 2.3 s '
-                   f'(x1.6, past any stretch), so that half of her question plays at its own speed over the wide of them '
-                   f'sitting (D10n), and the cut to her face lands as it ends; "what will he do?" is on her mouth at x1.2. '
-                   f'Maddie\'s answer plays on her listening (D11r3 to its end, a slow push 100 -> 105%)'
-                   + (f'; its last {em - end11:.1f} s runs over the cut to the hands.' if em > end11 else '.'))
+    if R5:
+        b['see'] = 'They sit, every one of them; nobody makes them. No words.'
+        d10r5 = 3.5
+        S.piece('D10x', S.clip('D10x'), 0.0, s6b, fr(s6b + d10r5), 'd6')
+        em = s6b
+        m['q_lady'] = s6b
+        m['maddie_d6'] = (s6b, s6b)
+        t = c.close(b, fr(s6b + d10r5))
+        c.flags.append('D round 5 (Kai at1054/at1615): "they sit" is now the D10x angle (the canonical room, everyone in '
+                       'their chair, as the crossing opens on), held 3.5 s with no words. The lady\'s "When he arrives back '
+                       'in time, what will he do?", Maddie\'s answer, and both their shots (D11, D11c) are cut (Kai '
+                       'at1091/at1178/at1285: Maddie has already said it). Straight on to Sandra and Derek\'s hands.')
+    if not R5:
+        i10, d10 = 0.4, 3.5  # D round 3 (Kai at2714): out before ~4 s, where the near man sits up and a figure sits in behind him
+        cut11 = fr(s6b + d10)
+        k = 'd6-0-lady'
+        q1 = fr(cut11 - 2.30 - 0.06)
+        say('vox-lady', k, 0.24, 2.56, q1, 'd6 line 0 lady: "When he arrives back in time," (over the wide: Omni\'s mouth is '
+            'x1.6 too quick for it)')
+        i11 = 3.10
+        z11 = cut11 - i11
+        eq = say('vox-lady', k, 3.36, 4.34, z11 + 3.66, 'd6 line 0 lady: "what will he do?" (lip-sync, x1.2)', tempo=1.2)
+        c.line(b, 0, 'lady', q1 + 0.04, eq - q1 - 0.04, sc.text(k), 'kai')
+        S.piece('D10n', S.clip('D10n'), i10, s6b, cut11, 'd6')
+        k = 'd6-1-maddie'
+        am = fr(eq + 0.45)
+        em = S.human('vox-maddie', k, am, 'd6', 1, 'maddie', what='d6 line 1 maddie: "He\'s going to try and convince you lot '
+                     'to sort your government out." (on the lady listening)')
+        end11 = fr(z11 + 8.0 - 1 / FPS)
+        S.piece('D11', S.clip('D11'), i11, cut11, end11, 'd6', zoom=[[i11, 1.0], [i11 + 1.0, 1.0], [8.0, 1.05]],
+                grade=LIFT)  # D11r3 sits ~30/255 under the wide it cuts from
+        # D round 4 (Kai at2787, pick D11c6-d): a silent close-up of the lady as the plan sinks in, before the hands
+        # (it cut too quickly to Sandra and Derek). D11c6-t1: she looks to the robot, her eyes fix, a breath, one small nod.
+        i11c, d11c = 1.2, 3.6
+        S.piece('D11c', S.clip('D11c'), i11c, end11, fr(end11 + d11c), 'd6', grade=LIFT)
+        end11c = fr(end11 + d11c)
+        m['q_lady'] = q1
+        m['maddie_d6'] = (am, em)
+        t = c.close(b, end11c)
+        c.flags.append(f'd6 (D round 4, Kai at2787): a silent close-up of the old lady (D11c6-t1, 6 s, 10 credits) holds '
+                       f'{d11c:.1f} s after Maddie\'s answer: her eyes fix on the robot, a breath, one small nod. Then the hands.')
+        c.flags.append('d6 (Kai ld6-0/ld6-1): the lady asks "When he arrives back in time, what will he do?" and Maddie '
+                       'answers "He\'s going to try and convince you lot to sort your government out." Who keeps the gains is '
+                       'no longer said here (Kai, Q2: the film has it right; the beneficiary rule is relaxed).')
+        c.flags.append(f'd6 lip-sync: on D11r3-t2 Omni spoke "When he arrives back in time," in 1.4 s against the take\'s 2.3 s '
+                       f'(x1.6, past any stretch), so that half of her question plays at its own speed over the wide of them '
+                       f'sitting (D10n), and the cut to her face lands as it ends; "what will he do?" is on her mouth at x1.2. '
+                       f'Maddie\'s answer plays on her listening (D11r3 to its end, a slow push 100 -> 105%)'
+                       + (f'; its last {em - end11:.1f} s runs over the cut to the hands.' if em > end11 else '.'))
 
     # ---- d7: the goodbye (D12 whole, then D12x's first stretch: the chained clip, so the grip carries on unbroken).
     s7 = t
@@ -665,7 +713,7 @@ E.SCENE_FNS['D'] = (scene_d, audio_from_cut)
 def main():
     key = 'D'
     sc = E.Scene(key)
-    E.C3.ROOT = sc.media / 'cut'
+    E.C3.ROOT = sc.media / (f'cut-{E.TAG}' if E.TAG else 'cut')
     c = scene_d(sc)
     mx = audio_from_cut(c)
     tracks, mix = C3.write(c, mx)

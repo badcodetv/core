@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix6/E04r4a-e-b.jpg",
+ "made": "2026-11-04T19:46:09.667Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the weather and the film texture: the heavy downpour becomes a light, fine drizzle, so there are only a few faint, thin rain streaks in the air and the far building, the bridge and the clock tower read clearly and sharply across the river; and the picture becomes clean, with only a very faint, fine grain, as if shot on a good modern camera at night. The railing and lamppost stay wet and beaded with water. Keep everything else in the image exactly the same, preserving the original framing, the lamppost and railing in the foreground, the river, the brown-grey night sky, the colours and the lighting.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/E04r4-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/E04r4-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "76514ed1-41b0-464e-91bb-901742edc662"
+}

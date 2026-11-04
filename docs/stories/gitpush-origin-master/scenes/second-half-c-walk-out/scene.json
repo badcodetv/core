@@ -387,10 +387,10 @@
   "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/preview.mp4",
-  "round": "later",
-  "what": "scene B cut from the film: black card \"Some negotiation later.\", then the long walk (Kai, 28 Oct)"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/preview.mp4",
+  "round": "noaliens",
+  "what": "round 9 (Kai, 4 Nov, at534): Sandra's aliens punchline cut; the row ends on Derek"
  },
  "round1": {
   "date": "2026-10-22",
@@ -420,9 +420,9 @@
     "why": ""
    }
   },
-  "current": "r2",
+  "current": "r4",
   "r2": {
-   "sequence": "gpom-4-C-walkout-r2",
+   "sequence": "05 GPOM story C walk out r2",
    "guid": "6c1a576d-5695-419a-a130-44224e3c08db",
    "bin": "gpom-4-C-walkout-r2",
    "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
@@ -431,7 +431,39 @@
    "what": "round 7: opens on the card \"Some negotiation later.\", then the long walk (0:47); scene B cut from the film",
    "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r2 --seq gpom-4-C-walkout-r2 (line files under cut-later/premiere/r2/lines/); cut_end.py --tag later wrote a new media folder, so r1 keeps its own files",
    "check": {
-    "at": "2026-11-04T17:48",
+    "at": "2026-11-04T18:17",
+    "state": "in sync",
+    "why": ""
+   },
+   "was_named": "gpom-4-C-walkout-r2",
+   "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
+  },
+  "r3": {
+   "sequence": "05 GPOM story C walk out r3",
+   "guid": "00ae3719-8a2a-4dc1-88c8-74db5d6b496b",
+   "bin": "05 GPOM story C walk out r3",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-04",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-nextday/edl.json",
+   "what": "round 8: the 'Some negotiation later.' card cut, C opens on the long walk; Maddie held still over the brow (0:44)",
+   "how": "scripts/scene/premiere-plan.py <edl> premiere-r3.json --tag r3 --seq '05 GPOM story C walk out r3' (lines under cut-nextday/premiere/r3/lines/); cut_end.py --tag nextday wrote its own media folder, so r2 keeps its files",
+   "check": {
+    "at": "2026-11-04T18:45",
+    "state": "in sync",
+    "why": ""
+   }
+  },
+  "r4": {
+   "sequence": "05 GPOM story C walk out r4",
+   "guid": "ed37f0cd-c6b7-4840-8207-56a326778af6",
+   "bin": "05 GPOM story C walk out r4",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "built": "2026-11-04",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-noaliens/edl.json",
+   "what": "round 9: Sandra's aliens punchline cut, the row ends on Derek (0:37)",
+   "how": "premiere-plan.py <edl> premiere-r4.json --tag r4 --seq '05 GPOM story C walk out r4'; cut_end.py --tag noaliens",
+   "check": {
+    "at": "2026-11-04T20:12",
     "state": "in sync",
     "why": ""
    }
@@ -441,6 +473,18 @@
   {
    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/edl.json",
    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut/preview.mp4"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-later/preview.mp4",
+   "round": "later",
+   "what": "scene B cut from the film: black card \"Some negotiation later.\", then the long walk (Kai, 28 Oct)"
+  },
+  {
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-nextday/edl.json",
+   "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/C/cut-nextday/preview.mp4",
+   "round": "nextday",
+   "what": "round 8 (Kai, 4 Nov): the \"Some negotiation later.\" card cut (at44); Maddie held still over the brow (at794)"
   }
  ],
  "video": {

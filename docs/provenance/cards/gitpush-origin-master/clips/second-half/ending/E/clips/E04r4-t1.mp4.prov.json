@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E04r4-t1.mp4",
+ "made": "2026-11-04T20:09:15.941Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Tripod-locked: the view never shifts, pans, tilts or zooms. A light night drizzle drifts down in fine, faint streaks. The wide river runs slowly from right to left, its surface rippling and breaking up the long reflections of the lights. Low brown-grey cloud slides slowly across the sky. Beads of water on the wet railing catch the light; a drop runs down the lamppost. Across the water the Houses of Parliament, the clock tower and the buildings beside it stay perfectly still and solid and keep their exact shape. No boats, no people, no text appear. The view never shifts.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/E04r4a-e-b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-ending/refs/E04r4a-e-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 10
+ },
+ "source_id": "17684b5d-6ea3-4c37-902c-ccbe29783a01"
+}

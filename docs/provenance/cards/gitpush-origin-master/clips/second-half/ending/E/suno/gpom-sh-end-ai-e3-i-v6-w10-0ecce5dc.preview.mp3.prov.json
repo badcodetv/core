@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.preview.mp3",
+ "made": "2026-11-04T20:03:12.365Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "0ecce5dc-4d78-4330-a06e-8c0ee1200d0f",
+ "inputs": {
+  "title": "gpom-sh-end-ai-e3-I-v6-w10",
+  "song": "https://suno.com/song/0ecce5dc-4d78-4330-a06e-8c0ee1200d0f"
+ },
+ "settings": {
+  "durationSec": 19.84
+ },
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.wav"
+}

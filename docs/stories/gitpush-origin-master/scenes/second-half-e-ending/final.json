@@ -1,0 +1,335 @@
+{
+ "schema": "badcode.final/1",
+ "story": "gitpush-origin-master",
+ "scene": "second-half-e-ending",
+ "sequence": "gpom-second-half-E-rough3",
+ "frozen": "2026-11-04T20:17:11+00:00",
+ "note": "Kai 4 Nov: \"Okay, perfect. I'd say let's send that.\"",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r6/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r6/preview.mp4",
+ "total": 32.583333333333336,
+ "boards": {
+  "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
+ },
+ "words": {
+  "voices.json": {
+   "about": "Human lines voiced in Gemini TTS (scripts/gpom/second-half-video/ending/voices.py). Files are relative to the media folder; the AI lines are Suno and are not here.",
+   "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E",
+   "lines": {
+    "e1-0-maddie": {
+     "speaker": "maddie",
+     "frame": "E01",
+     "text": "Mind how you go.",
+     "voice": "Aoede",
+     "file": "voices/e1-0-maddie-r1a-phone.wav",
+     "duration": 2.2,
+     "speech": [
+      0.0,
+      1.94
+     ],
+     "lead": 0.0,
+     "heard": "Mind how you go...",
+     "verified": true,
+     "why": "[r1, hand pick] a: all three heard as written; the direction is 'soft... a little lost', slow and trailing off, and a is the quietest (-17.0 LUFS against -15.3 b, -14.7 c) and the slowest (1.5 s of speech), and whisper hears it trailing ('Mind how you go...'). `file` is the phone version (voices.py PHONE, as the old e1-0-maddie-phone.wav); `dry` is the take.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "e1-0-maddie-r1a.wav",
+       "duration": 2.2,
+       "expected": 1.54,
+       "heard": "Mind how you go...",
+       "match": 1.0,
+       "gap": 0.1,
+       "status": "ok (attempt 1)",
+       "lufs": -17.0,
+       "true_peak": -6.0
+      },
+      {
+       "take": "b",
+       "file": "e1-0-maddie-r1b.wav",
+       "duration": 2.4,
+       "expected": 1.54,
+       "heard": "Mind how you go.",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)",
+       "lufs": -15.3,
+       "true_peak": -5.4
+      },
+      {
+       "take": "c",
+       "file": "e1-0-maddie-r1c.wav",
+       "duration": 2.0,
+       "expected": 1.54,
+       "heard": "Mind how you go",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "ok (attempt 1)",
+       "lufs": -14.7,
+       "true_peak": -5.5
+      }
+     ],
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent white room after everyone has gone: a hundred empty reclining chairs, a small robot alone among them, speaking softly to nobody. Dead quiet, no echo.\n\n### DIRECTOR'S NOTES\nEmotion for this line: soft, after a long silence, to the empty chairs; gentle and a little lost, trying to be cheerful for nobody; say 'how' with a clear, soft h, so it can never be heard as 'out'.\nStyle: alone now, no one to be cheeky for; small, soft and a little lost, the habit of being cheerful still there underneath.\nPace: slow and quiet, four soft words, no hurry; trailing off at the end.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "previous": {
+      "superseded": "e1-0-maddie@r1"
+     },
+     "dry": "voices/e1-0-maddie-r1a.wav",
+     "fx": "phone",
+     "filter": "highpass=f=380,highpass=f=380,lowpass=f=3000,lowpass=f=3000,volume=6dB,asoftclip=type=atan,acrusher=bits=10:mix=0.1,volume=-10dB"
+    }
+   },
+   "superseded": {
+    "e1-0-maddie@r1": {
+     "speaker": "maddie",
+     "frame": "E01",
+     "text": "...you go.",
+     "voice": "Aoede",
+     "file": "voices/e1-0-maddie-phone.wav",
+     "duration": 1.32,
+     "dry": "voices/e1-0-maddie-dry.wav",
+     "lead": 0.0,
+     "fx": "phone",
+     "filter": "highpass=f=380,highpass=f=380,lowpass=f=3000,lowpass=f=3000,volume=6dB,asoftclip=type=atan,acrusher=bits=10:mix=0.1,volume=-10dB",
+     "from": "D d9-1-maddie take b, cut at 1.715s (gap before 'you')",
+     "verified": true,
+     "why": "derived: not voiced separately (scene.json `from`)",
+     "superseded": "2026-10-22 Kai round 1 (cut-notes.json ld9-1, le1-0): 'Mind how you go.' moved whole from D16 to E01 and voiced on its own; the split tail is retired"
+    }
+   }
+  }
+ },
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 7.0,
+   "beat": "e1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01p-t1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01p-t1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 7.0,
+   "dur": 6.0,
+   "beat": "e2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E02p-t1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E02p-t1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 13.0,
+   "dur": 9.083333333333334,
+   "beat": "e3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r4-t1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r4-t1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 22.083333333333332,
+   "dur": 8.958333333333334,
+   "beat": "e3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E04r4-t1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E04r4-t1.mp4",
+     "made": "2026-11-04T20:09:15.941Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Tripod-locked: the view never shifts, pans, tilts or zooms. A light night drizzle drifts down in fine, faint streaks. The wide river runs slowly from right to left, its surface rippling and breaking up the long reflections of the lights. Low brown-grey cloud slides slowly across the sky. Beads of water on the wet railing catch the light; a drop runs down the lamppost. Across the water the Houses of Parliament, the clock tower and the buildings beside it stay perfectly still and solid and keep their exact shape. No boats, no people, no text appear. The view never shifts.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/badcode-gpom-ending/refs/E04r4a-e-b.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/badcode-gpom-ending/refs/E04r4a-e-b.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 10
+     },
+     "source_id": "17684b5d-6ea3-4c37-902c-ccbe29783a01"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-ending/refs/E04r4a-e-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 31.041666666666668,
+   "dur": 1.5416666666666667,
+   "beat": "e4",
+   "looped": false,
+   "file": "black",
+   "chain": [
+    {
+     "file": "black",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "vox-maddie-phone",
+   "t": 0.292,
+   "dur": 2.2,
+   "what": "e1: \"Mind how you go.\" from the phone (whole; phone filter)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/voices/e1-0-maddie-r1a-phone.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/voices/e1-0-maddie-r1a-phone.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-ai",
+   "t": 22.083,
+   "dur": 0.9,
+   "what": "e3: the AI, a trace of Maddie's speaker left: \"I made it.\"",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.wav",
+     "made": "2026-11-04T20:03:12.356Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "0ecce5dc-4d78-4330-a06e-8c0ee1200d0f",
+     "inputs": {
+      "title": "gpom-sh-end-ai-e3-I-v6-w10",
+      "song": "https://suno.com/song/0ecce5dc-4d78-4330-a06e-8c0ee1200d0f"
+     },
+     "settings": {
+      "durationSec": 19.84
+     }
+    }
+   ]
+  },
+  {
+   "stem": "vox-ai",
+   "t": 25.375,
+   "dur": 2.27,
+   "what": "e3: the AI, stern, his own voice: \"Don't make me come back twice.\"",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.wav",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-i-v6-w10-0ecce5dc.wav",
+     "made": "2026-11-04T20:03:12.356Z",
+     "by": "claude",
+     "kind": "music",
+     "engine": "suno",
+     "tool": "scripts/suno/suno.mts record",
+     "source_id": "0ecce5dc-4d78-4330-a06e-8c0ee1200d0f",
+     "inputs": {
+      "title": "gpom-sh-end-ai-e3-I-v6-w10",
+      "song": "https://suno.com/song/0ecce5dc-4d78-4330-a06e-8c0ee1200d0f"
+     },
+     "settings": {
+      "durationSec": 19.84
+     }
+    }
+   ]
+  },
+  {
+   "stem": "mus-e-coda",
+   "t": 7.0,
+   "dur": 25.583,
+   "what": "e-coda (edited: 0-9.05 s, then 23.45 s on), ducked under the line",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-e-coda-a-v6-w60-18b34a9d.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-e-coda-a-v6-w60-18b34a9d.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-bus",
+   "t": 0.0,
+   "dur": 13.03,
+   "what": "top deck, moving, then pulled in at the stop (recorded)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs264409-bus-interior-engine.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs264409-bus-interior-engine.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-rain",
+   "t": 0.0,
+   "dur": 13.03,
+   "what": "rain on the window, wet traffic outside (recorded)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs360783-rain-on-window-wet-traffic.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs360783-rain-on-window-wet-traffic.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-street",
+   "t": 13.0,
+   "dur": 18.442,
+   "what": "rain and traffic on the high street at night (recorded)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs723695-city-traffic-rainy-night.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs723695-city-traffic-rainy-night.mp3",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "sfx-bus-away",
+   "t": 13.0,
+   "dur": 5.461,
+   "what": "the bus departing from the stop, receding (recorded)",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs715718-bus-departs-stop.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs715718-bus-departs-stop.mp3",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01p-t1.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E02p-t1.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r4-t1.mp4",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs264409-bus-interior-engine.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs360783-rain-on-window-wet-traffic.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs715718-bus-departs-stop.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/sfx/fs723695-city-traffic-rainy-night.mp3",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-e-coda-a-v6-w60-18b34a9d.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/voices/e1-0-maddie-r1a-phone.wav",
+  "black"
+ ]
+}

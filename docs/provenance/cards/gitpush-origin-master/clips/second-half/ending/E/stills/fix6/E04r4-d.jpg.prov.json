@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix6/E04r4-d.jpg",
+ "made": "2026-11-04T19:41:34.784Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A wide, high view over central London on a rain-soaked night, as if from an upper-floor window of an office block across the river: the Houses of Parliament small in the middle distance beside the black curve of the Thames, surrounded by miles of ordinary lit city, office windows, rooftops, cranes with red warning lights, wet streets glinting. The parliament building is not dramatised: it is just one floodlit building among thousands, a little hazy through the rain. The cloud base is low and brown-orange, catching the city's light, with darker patches drifting. Raindrops and a few runs of water on the glass in front of the lens, slightly out of focus, catching the light. Muted, realistic colour, true night exposure, fine film grain, a little softness, no artificial glow. No people, no legible signs or text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "1bf54cf3-f62d-429d-b50c-8d1fabef352b"
+}

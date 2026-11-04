@@ -1,0 +1,9 @@
+{"title": "Tea Shot Picks", "eyebrow": "GPOM · D the clean room · timeline round 5", "heading": "The tea: her own hand, and people in the chairs",
+ "intro": "Your note at 0:37: the arm looked like it came from outside the shot, and the other chairs were empty. Four new stills: the old lady in her own chair reaching down for her own mug, every chair around her filled. Pick one and I animate it (one clip). Stills only so far, nothing spent.",
+ "sections": [{"h": "The tea (D06)", "lede": "", "groups": [
+  {"slot": "d06-r7", "title": "Pick the plate", "line": "b = the closer framing with gleaming Maddie beside her; c = wider, more of the room. The first one is what's in the cut now.", "kind": "image",
+   "opts": [{"id": "now", "src": "t/now.jpg", "label": "now: just the arm (the problem)", "warn": ""},
+            {"id": "b-a", "src": "t/D06r7-b-a.jpg", "label": "b-a: Maddie beside her, the chairs filled", "warn": ""},
+            {"id": "b-b", "src": "t/D06r7-b-b.jpg", "label": "b-b: the same, a coat on a lap behind", "warn": ""},
+            {"id": "c-a", "src": "t/D06r7-c-a.jpg", "label": "c-a: wider, a row of people lying back", "warn": ""},
+            {"id": "c-b", "src": "t/D06r7-c-b.jpg", "label": "c-b: wider, a man behind her turned towards her", "warn": ""}]}]}]}

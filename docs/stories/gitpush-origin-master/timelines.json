@@ -85,7 +85,7 @@
    "id": "off-switch",
    "group": "Part 1 · The music video (the downfall)",
    "name": "Five years later: the off switch, Maddie explains",
-   "state": "in Premiere",
+   "state": "out of the story film (4 Nov): 01 GPOM start now ends on the war (2:42); its music fade moved into A by Kai",
    "tone": "premiere",
    "premiere": "inside 01 GPOM start, its last stretch (Kai, 26 Oct)",
    "what": "The bright fake Swindon, the glitch, the delivery bot (Maddie) explains. Kai's cut, no timeline page.",
@@ -171,8 +171,8 @@
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "B · The bridge: Maddie at the door",
    "length": "1:28",
-   "state": "round 8: Sandra's first sentence as one fitted take; Kai: \"apart from that, we're there\" (4 Nov)",
-   "tone": "wip",
+   "state": "LOCKED (round 8, Kai 4 Nov: \"We've nailed it. That's the one.\") · Premiere 04 GPOM story B bridge r1, in sync, in 00 RENDER story after A",
+   "tone": "premiere",
    "scene": "scenes/second-half-b-the-door",
    "timeline": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
    "what": "Back in the film as the bridge (Kai, 2 Nov: \"Some negotiation later.\" was too weak a link). Doors shut: Maddie apologises over the tannoy, the old lady shouts back, Maddie leaves them a film (the kill bot's own eyes racing at their door, flipping to NEW OBJECTIVE: SUSTAIN ORGANIC LIFE), a boom they only hear, Derek sees the wreck through the periscope, \"Right. I'll come back tomorrow.\", Sandra and the old lady start to argue, card \"The next day.\" Then C. Stand-in shots for the tannoy exchange and the debate.",
@@ -190,7 +190,7 @@
      "date": "2026-10-20"
     }
    ],
-   "premiere": "none yet (round 1 is page only); the old doorstep sequences stay in \"zz old sequences\", untouched"
+   "premiere": "gpom-story.prproj · 04 GPOM story B bridge r1"
   },
   {
    "id": "ending",
@@ -206,24 +206,24 @@
     {
      "id": "c-walk-out",
      "name": "C · The walk out",
-     "state": "round 8: card cut, opens on the walk; Maddie still over the brow (0:44) · page ahead of Premiere (r3 not built yet; 05 GPOM story C walk out r2 is round 7)",
-     "tone": "wip",
+     "state": "SIGNED OFF (round 9, Kai 4 Nov: \"perfect... No changes.\") · Premiere 05 GPOM story C walk out r4, in sync, in 00 RENDER story",
+     "tone": "premiere",
      "scene": "scenes/second-half-c-walk-out",
      "timeline": "https://claude.ai/artifact/Txcv2zYfVUNBEg1tdrcyah"
     },
     {
      "id": "d-crossing",
      "name": "D · The clean room and the crossing",
-     "state": "in review",
-     "tone": "wip",
+     "state": "SIGNED OFF (round 6, Kai 4 Nov: \"it's perfect\") · Premiere 06 GPOM story D crossing r3, in sync, in 00 RENDER story",
+     "tone": "premiere",
      "scene": "scenes/second-half-d-crossing",
      "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
     },
     {
      "id": "e-ending",
      "name": "E · The bus, the last line",
-     "state": "last line in",
-     "tone": "wip",
+     "state": "SIGNED OFF (round 6, Kai 4 Nov: \"Okay, perfect. I'd say let's send that.\") · Premiere 07 GPOM story E ending r3, in sync, in 00 RENDER story",
+     "tone": "premiere",
      "scene": "scenes/second-half-e-ending",
      "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
     }
@@ -235,11 +235,11 @@
   "other": [
    {
     "sequence": "00 RENDER music video",
-    "what": "The music video, ready to export (built 4 Nov): 01 GPOM start up to 2:42 (the war), then 02 GPOM music end. Nested, so it follows any change to those two. 3:52."
+    "what": "The music video, ready to export (built 4 Nov): 01 GPOM start up to 2:42 (the war), then 02 GPOM music end. Nested, so it follows any change to those two. 3:52. Rendered 4 Nov: D:\\badcode-videos\\gitpush-origin-master\\renders\\GPOM-music-video-2026-11-04.mp4"
    },
    {
     "sequence": "00 RENDER story",
-    "what": "The story film, ready to export (built 4 Nov): all of 01 GPOM start (4:40), then A, C, D, E (B, the bridge, goes in after A once it is built). Nested, so it follows any change to the scenes. 10:30 without B."
+    "what": "The story film (4 Nov): 01 GPOM start to 2:42 (the war; the robot-arrival clip and its music fade moved into A by Kai), then A (r11), B (r1), C (r4), D (r3), E (r3). Nested. 9:32. Rendered: D:\\badcode-videos\\gitpush-origin-master\\renders\\GPOM-story-2026-11-04.mp4"
    },
    {
     "sequence": "01 GPOM start",
