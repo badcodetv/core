@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d01g-a-d01r2-a.mp4",
+ "made": "2026-11-04T15:33:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The plum-masked man behind the money table performs straight away. On the first beat he snaps the fanned brick of notes shut and taps it on the table; on the next he fans it open again toward the lens with a flourish, head cocked; then he pats the pile twice with his flat glove like a proud drummer, shoulders bouncing, and leans forward over the stacks, chin up. He keeps the same brick in his hand the whole time; the stacks stay put. Mask, gloves and suit never change. No speech; paper riffle, thumps on wood.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d01r2-a.jpg",
+ "why": "mv-gang r3 gesture clip (redo of d01-a), writer gw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d01r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d01g-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:20:11.230Z"
+ }
+}

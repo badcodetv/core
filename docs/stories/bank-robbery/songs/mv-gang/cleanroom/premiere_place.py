@@ -14,7 +14,7 @@ for r in json.load(open(HERE.parent / PLAN)):
     f = [NOIR / (r['clip'][3:] + '.mp4')] if r['clip'].startswith('cn:') else sorted(VID.glob(f"bg-{r['clip']}-*.mp4"))
     if not f or not f[0].exists(): missing.append((r['start'], r['clip'])); continue
     rel = ('noir\\video\\' if r['clip'].startswith('cn:') else 'gang\\video\\') + f[0].name
-    rows.append([rel, r['start'], round(min(r['dur'], 6.0) + (0.05 if r['dur'] < 6 else 0), 3)])
+    rows.append([rel, r['start'], round(min(r['dur'], 6.0) + (0.05 if r['dur'] < 6 else 0), 3), r.get('in', 0)])
 BODY = r"""const V=__V__; const S=__S__; const PRE=__PRE__;
 const project=await helpers.activeProject(); const seq=await helpers.activeSequence(project);
 if(seq.name!==S) return {error:'wrong sequence',name:seq.name};
@@ -22,8 +22,8 @@ const root=await project.getRootItem(); let bin=null; for(const k of await root.
 if(!bin) return {error:'no clips bin'};
 const byPath={}; for(const it of await bin.getItems()){ try{ byPath[(await ppro.ClipProjectItem.cast(it).getMediaFilePath()).toLowerCase()]=it; }catch(e){} }
 const ed=ppro.SequenceEditor.getEditor(seq); const tk=s=>helpers.secondsToTick(Math.round(s*24)/24+0.002); let done=0; const fail=[];
-for(const [n,t,d] of V){ const p=PRE+n; try{ const item=byPath[p.toLowerCase()]; if(!item) throw 'not in bin'; const clip=ppro.ClipProjectItem.cast(item);
-  helpers.withTransaction(project,S+' in/out',ca=>ca.addAction(clip.createSetInOutPointsAction(tk(0),tk(d))));
+for(const [n,t,d,i0] of V){ const p=PRE+n; try{ const item=byPath[p.toLowerCase()]; if(!item) throw 'not in bin'; const clip=ppro.ClipProjectItem.cast(item);
+  helpers.withTransaction(project,S+' in/out',ca=>ca.addAction(clip.createSetInOutPointsAction(tk(i0||0),tk((i0||0)+d))));
   helpers.withTransaction(project,S+' place',ca=>ca.addAction(ed.createOverwriteItemAction(item,tk(t),0,1)));
   helpers.withTransaction(project,S+' clear',ca=>ca.addAction(clip.createClearInOutPointsAction())); done++; }catch(e){ fail.push([n,t,String(e).slice(0,100)]); } }
 const v1=(await (await seq.getVideoTrack(0)).getTrackItems(1,false)).length;

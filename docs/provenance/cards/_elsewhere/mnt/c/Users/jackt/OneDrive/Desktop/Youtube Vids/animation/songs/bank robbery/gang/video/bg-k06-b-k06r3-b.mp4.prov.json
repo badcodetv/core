@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k06-b-k06r3-b.mp4",
+ "made": "2026-11-04T11:54:55+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "From the first frame the black 1920s sedan pulls away to the right along the cobbles, the two masked men inside sitting perfectly still, and it drives out of frame right by the fourth second. The policeman stays on one knee and shakes his raised fist twice. The upturned police car's wheels keep spinning. The oranges finish falling, bounce once and roll to a stop along the kerb. Locked-off camera, framing holds; nothing new enters the street, the bystanders stay where they are. SFX: a period car engine revving away, oranges thudding, a whistle in the distance. No speech, no music.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k06r3-b.jpg",
+ "why": "mv-gang r3 action clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k06r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k06-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:42:00.145Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k12m-a-k12r5-a.mp4",
+ "made": "2026-11-04T18:28:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first frame the cream roadster rolls slowly forward toward the lower left and stays fully in frame. The standing man keeps flinging fistfuls of notes from the sack in a steady rhythm, his raised arm pumping. The notes flutter and drift down onto the crowd, who snatch at them. The driver stays still, hands on the wheel. Same car, same masks and gloves throughout; no one new appears. SFX: idling engine, crowd cheering, paper rustling.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k12r5-a.jpg",
+ "why": "mask fix of k12-a (r3/mask-audit.md): new still k12r5-a, same motion as k12-a",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k12r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k12m-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:26:44.400Z"
+ }
+}

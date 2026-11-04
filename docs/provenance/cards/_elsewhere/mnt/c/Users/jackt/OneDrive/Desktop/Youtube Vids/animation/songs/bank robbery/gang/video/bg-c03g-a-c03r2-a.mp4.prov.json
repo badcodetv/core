@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-c03g-a-c03r2-a.mp4",
+ "made": "2026-11-04T15:33:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. All six masked men in the red basement start bouncing on the beat at once, fists pumping. First beat: all six stab gloved index fingers straight down at the floor together. Next beat: fists punch back up, heads nodding hard. The man in the grey fedora at centre-left leans forward and slaps the iron press twice with a flat palm. Next: all six give an exaggerated shoulder shrug, palms up, mock innocent, then point down at the floor again. Masks, suits and the hanging bulb never change. Sound: stamping shoes, palm slaps on iron. No speech.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c03r2-a.jpg",
+ "why": "mv-gang r3 gesture clip (redo of c03-a), writer gw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c03r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "c03g-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:18:56.300Z"
+ }
+}

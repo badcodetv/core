@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v14g-a-v14r2-a.mp4",
+ "made": "2026-11-04T15:58:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The rust-masked man in the black suit raps at the lens from the first moment. On the first beat his raised palm pushes firmly toward the offered glass, refusing it; on the next his pointing finger jabs at the camera twice; then he wags that finger side to side in a big mock-stern no, rolls his shoulders, and throws a hand flick at the glass. The plum-masked man beside him keeps holding out the same glass and only tilts his head. Masks and suits never change. No speech; creaking boards, cloth rustle.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v14r2-a.jpg",
+ "why": "mv-gang r3 gesture clip (redo of v14-a), writer gw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v14r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v14g-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:56:57.871Z"
+ }
+}

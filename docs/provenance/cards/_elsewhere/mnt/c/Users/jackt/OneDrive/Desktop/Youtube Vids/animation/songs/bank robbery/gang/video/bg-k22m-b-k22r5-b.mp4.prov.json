@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k22m-b-k22r5-b.mp4",
+ "made": "2026-11-04T18:43:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The elevated train rolls steadily on round the curve, the car swaying gently. The man on the outside step holds the brass grab rail, his body leaning out with the sway, the cash bag swinging in a slow arc over the drop and his white tie fluttering in the wind. In the window, the commuter keeps reading and holds the ticket out, never looking up. The trestle girders and sunlight stripes slide past steadily. Locked-off camera on the train, framing holds. SFX: clattering wheels, rattling steel, wind.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k22r5-b.jpg",
+ "why": "mask fix of k22-b (r3/mask-audit.md): new still k22r5-b, same motion as k22-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k22r5-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k22m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:29:11.557Z"
+ }
+}

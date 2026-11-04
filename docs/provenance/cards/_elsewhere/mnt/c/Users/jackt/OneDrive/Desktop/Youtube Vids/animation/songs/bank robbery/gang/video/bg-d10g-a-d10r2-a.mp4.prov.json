@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d10g-a-d10r2-a.mp4",
+ "made": "2026-11-04T15:49:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The man in the fedora attacks the chrome microphone from the first instant. First beat: his raised fist pumps down hard beside the mic as his pointing hand jabs at the lens. Next beat: he lunges forward over the mic, then rocks back. Next: both gloved hands rise and push up at the ceiling, mock-preacher, head tilted. Then he grabs the mic stand with one hand, elbow high, and the free hand waves slowly side to side. His horned shadow on the padded wall copies every move. No speech; cloth and desk thumps.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d10r2-a.jpg",
+ "why": "mv-gang r3 gesture clip (redo of d10-a), writer gw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d10r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d10g-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:34:54.980Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v06m-b-v06r5-a.mp4",
+ "made": "2026-11-04T18:58:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The man in the green balaclava in the doorway performs at the lens from the first instant, his upper gloved hand staying on the door edge. First beat: his pointing hand jabs the lens twice. Next beat: he flicks the back of that hand away, dismissive, toward the landlord. Next: head bobs hard on the beat, shoulders shrugging up and down. Then he rubs gloved finger and thumb together close to the lens, mocking money-grubbing. On the left the landlord keeps his palm out; the couple shrink back slightly. Snow and street stay still. Sound: cold wind, creaking door. No speech.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v06r5-a.jpg",
+ "why": "mask fix of v06g-b (r3/mask-audit.md): new still v06r5-a, same motion as v06g-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v06r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v06m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:45:58.168Z"
+ }
+}

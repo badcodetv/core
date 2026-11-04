@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k24-a-k24r3-a.mp4",
+ "made": "2026-11-04T13:30:13+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "From the first frame the man in green keeps tipping the burlap sack over the basket rim, and a steady stream of pale green notes pours out and flutters down into the cloud sea, each note drifting and tumbling slowly on the wind. The man in mustard holds his arms wide and pumps them up twice at the sky, delighted. The balloon, basket and ropes hold steady. Masks, gloves and suits unchanged. Locked-off camera, framing holds. SFX: wind, rustling paper, creaking wicker.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k24r3-a.jpg",
+ "why": "mv-gang r3 action clip, writer cw5",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k24r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k24-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T13:16:32.911Z"
+ }
+}

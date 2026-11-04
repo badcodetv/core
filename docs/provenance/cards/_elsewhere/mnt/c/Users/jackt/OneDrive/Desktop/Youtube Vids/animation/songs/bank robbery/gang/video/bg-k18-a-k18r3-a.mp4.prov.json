@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k18-a-k18r3-a.mp4",
+ "made": "2026-11-04T13:15:35+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The fallen house front gives one last small settling bump into the mud and goes still, dust and fine spray drifting slowly away on the breeze. The man standing in the window frame calmly finishes straightening his tie, then smooths his jacket lapels with both gloved hands and stands perfectly still, unbothered. Everything else stays put. Locked-off camera, framing holds, wardrobe and mask unchanged. SFX: a creak and soft thud of timber, dripping water, wind.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k18r3-a.jpg",
+ "why": "mv-gang r3 action clip, writer cw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k18r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k18-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T13:01:26.586Z"
+ }
+}

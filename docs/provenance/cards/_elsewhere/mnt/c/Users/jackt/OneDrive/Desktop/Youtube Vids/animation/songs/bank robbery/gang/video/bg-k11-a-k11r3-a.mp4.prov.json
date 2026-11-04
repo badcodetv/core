@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k11-a-k11r3-a.mp4",
+ "made": "2026-11-04T12:10:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off low camera, framing holds. The silver three-engine plane keeps climbing slowly upward, propellers spinning, wheels rising further off the field. The man hanging from it swings gently, legs dangling, and lifts his free gloved hand into a slow, bored, regal wave, side to side. The empty ladder sways. Far behind, the same three small black sedans bounce through the furrows, kicking up dust, never getting closer. SFX: roaring propellers, rushing wind, distant engines.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k11r3-a.jpg",
+ "why": "mv-gang r3 action clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k11r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k11-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:56:34.390Z"
+ }
+}

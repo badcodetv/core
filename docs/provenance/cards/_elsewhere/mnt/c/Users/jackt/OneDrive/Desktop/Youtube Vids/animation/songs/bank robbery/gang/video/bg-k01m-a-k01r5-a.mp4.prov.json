@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k01m-a-k01r5-a.mp4",
+ "made": "2026-11-04T17:57:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "From the first frame the six men keep walking down the steps toward the camera at one steady, unhurried pace, one step per beat, arms loose, heads level, nobody looks back. Behind them the orange fireball keeps rolling slowly upward and fades to smoke. A few blank paper notes flutter down and settle on the steps. The paper in the left man's glove keeps burning gently. Locked-off camera, framing holds; masks, suits and gloves stay exactly as they are. SFX: a deep low rumble, crackling fire, footsteps on stone. No speech, no music.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k01r5-a.jpg",
+ "why": "mask fix of k01-a (r3/mask-audit.md): new still k01r5-a, same motion as k01-a",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k01r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k01m-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T17:55:53.538Z"
+ }
+}

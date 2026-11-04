@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-e03g-a-e03r2-a.mp4",
+ "made": "2026-11-04T15:49:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The crimson-masked man in the fedora, sitting beside the dozing worker, raps at the lens from the first frame. On the first beat he jabs his three raised gloved fingers at the camera; on the next he chops his other hand down hard on his knee; then he jerks a thumb at the sleeping worker, gives an over-the-top shrug, and counts off on his fingers again, shoulders bouncing with the tram's sway. The worker stays asleep, swaying a little. Mask, hat and suit never change. No speech; tram rattle, slaps on cloth.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/e03r2-a.jpg",
+ "why": "mv-gang r3 gesture clip (redo of e03-a), writer gw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/e03r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "e03g-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:35:19.510Z"
+ }
+}

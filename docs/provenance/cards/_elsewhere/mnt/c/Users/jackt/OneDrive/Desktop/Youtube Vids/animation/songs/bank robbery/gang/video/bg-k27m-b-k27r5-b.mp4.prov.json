@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k27m-b-k27r5-b.mp4",
+ "made": "2026-11-04T18:43:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "From the first frame the clerk at the press freezes mid-turn, then slowly raises both hands beside his head, stiff with alarm. Through the round vault doorway the two masked men stand completely still, upright prop guns pointing at the ceiling, as if posing, the shelves behind them bare. The vault door, press and stack of green paper stay exactly where they are. Masks, gloves and suits unchanged; no one new appears. Locked-off camera, framing holds. SFX: lamp hum, a slow metal creak from the door.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k27r5-b.jpg",
+ "why": "mask fix of k27-b (r3/mask-audit.md): new still k27r5-b, same motion as k27-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k27r5-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k27m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:30:02.618Z"
+ }
+}

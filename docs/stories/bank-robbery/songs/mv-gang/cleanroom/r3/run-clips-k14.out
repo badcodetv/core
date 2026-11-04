@@ -1,0 +1,14 @@
+{"at":"2026-11-04T12:46:43.696Z","event":"wave","wave":1,"missing":1,"submitting":["k14-a"]}
+{"at":"2026-11-04T12:47:13.427Z","event":"submitted","key":"k14-a","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-04T12:47:13.435Z","event":"poll","fresh":1,"done":0,"want":1}
+{"at":"2026-11-04T12:47:27.450Z","event":"poll","fresh":1,"done":1,"want":1}
+{"have": ["a01-a", "a01-b", "a02-a", "a02-b", "a03-a", "a03-b", "c02-a", "c02-b", "c03-a", "c03-b", "c04-a", "c04-b", "d01-a", "d01-b", "d02-a", "d02-b", "d05-a", "d06-a", "d08-b", "d10-a", "d11-a", "d12-b", "e03-a", "f01-a", "f02-a", "f03-b", "f08-b", "k01-a", "k02-b", "k03-a", "k04-a", "k06-b", "k07-a", "k09-a", "k10-a", "k11-a", "k12-a", "k13-b", "k16-a", "v01-b", "v03-b", "v05-b", "v06-b", "v07-b", "v08-b", "v11-b", "v12-b", "v13-b", "v14-a", "x01-a", "x02-a", "x03-b", "x04-a", "x06-a", "x07-b"]}
+{"at":"2026-11-04T12:48:49.681Z","event":"wave-done","wave":1,"remaining":1}
+{"at":"2026-11-04T12:48:49.688Z","event":"wave","wave":2,"missing":1,"submitting":["k14-a"]}
+{"at":"2026-11-04T12:47:50.712Z","event":"submitted","key":"k14-a","wave":2,"cast":false,"attempt":1}
+{"at":"2026-11-04T12:47:50.720Z","event":"poll","fresh":1,"done":0,"want":1}
+{"at":"2026-11-04T12:48:04.228Z","event":"poll","fresh":1,"done":1,"want":1}
+{"have": ["a01-a", "a01-b", "a02-a", "a02-b", "a03-a", "a03-b", "c02-a", "c02-b", "c03-a", "c03-b", "c04-a", "c04-b", "d01-a", "d01-b", "d02-a", "d02-b", "d05-a", "d06-a", "d08-b", "d10-a", "d11-a", "d12-b", "e03-a", "f01-a", "f02-a", "f03-b", "f08-b", "k01-a", "k02-b", "k03-a", "k04-a", "k06-b", "k07-a", "k09-a", "k10-a", "k11-a", "k12-a", "k13-b", "k16-a", "v01-b", "v03-b", "v05-b", "v06-b", "v07-b", "v08-b", "v11-b", "v12-b", "v13-b", "v14-a", "x01-a", "x02-a", "x03-b", "x04-a", "x06-a", "x07-b"]}
+{"at":"2026-11-04T12:48:15.892Z","event":"wave-done","wave":2,"remaining":1}
+{"at":"2026-11-04T12:48:15.895Z","event":"stalled","wave":2,"remaining":1}
+{"at":"2026-11-04T12:48:15.901Z","event":"done","remaining":["k14-a"],"blocked":[]}

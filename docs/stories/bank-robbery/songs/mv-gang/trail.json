@@ -56,5 +56,94 @@
   "round": 2,
   "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
   "what": "Cut 2: notes fixed, Colour Noir action back, cuts on the drum hits; Balaclava Gang 2 built"
+ },
+ {
+  "at": "2026-11-04T10:53:03+00:00",
+  "stage": "moodboard",
+  "round": 4,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 3: the singer, 10 designs x 2 takes (clean room)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-04T11:12:21+00:00",
+  "stage": "moodboard",
+  "round": 5,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 3: 16 action parodies x 2 takes (clean room, line-up reference)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-04T11:36:58+00:00",
+  "stage": "moodboard",
+  "round": 5,
+  "what": "Jack's picks on the action round",
+  "decided": [
+   "Jack picked 13 action stills: k01a k02b k03a k04a k06b k07a k09a k10a k11a k12a k13b k14a k16a; 'please come up with more parodied action scenes... do more stills... clean room the ones i liked and make the videos'"
+  ],
+  "feedback": "feedback/moodboard-r5",
+  "feedback_docs": 51
+ },
+ {
+  "at": "2026-11-04T12:46:49+00:00",
+  "stage": "moodboard",
+  "round": 6,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 3b: 20 more action parodies x 2 takes (clean room, line-up reference)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-04T12:59:07+00:00",
+  "stage": "moodboard",
+  "round": 6,
+  "what": "Jack's picks on round 3b",
+  "decided": [
+   "Jack picked 12: k18a k19a k21a k22b k23a k24a k26a k27b k29a k30a k31b k36b; 'done thanks'"
+  ],
+  "feedback": "feedback/moodboard-r6",
+  "feedback_docs": 63
+ },
+ {
+  "at": "2026-11-04T14:06:09+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Cut 3 (Jack's brief): 214 beat cuts, 24 new action parodies, 43 lyric shots kept; Balaclava Gang 3 built",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r3/plan_r3.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/assemble_cut.py r3 && python3 scripts/scene/build-timeline.py docs/stories/bank-robbery/songs/mv-gang <out-dir>"
+ },
+ {
+  "at": "2026-11-04T15:06:44+00:00",
+  "stage": "moodboard",
+  "round": 7,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 3c: 12 sarcastic stage-rap gesture stills (g01-g12), 2 takes each, sealed writers w10-w12",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-04T15:17:53+00:00",
+  "stage": "moodboard",
+  "round": 7,
+  "what": "Jack's picks on the gesture round 3c",
+  "decided": [
+   "Jack: 'Add these picks but also just improve the gesturing of the existing rapping videos thanks' — picks g08-b g09-b g10-b g11-b g12-b"
+  ],
+  "feedback": "feedback/moodboard-r7",
+  "feedback_docs": 68
+ },
+ {
+  "at": "2026-11-04T16:04:00+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Cut 4: gesture picks g08-g12 on their lines + 12 rap clips redone with big sarcastic gestures; Balaclava Gang 4 built",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r3/plan_r3.py r4 && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/assemble_cut.py r4 && python3 scripts/scene/build-timeline.py docs/stories/bank-robbery/songs/mv-gang <out-dir>"
+ },
+ {
+  "at": "2026-11-04T19:33:21+00:00",
+  "stage": "timeline",
+  "round": 5,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Cut 5: 35 wrong-mask clips remade and swapped in (Balaclava Gang 5)",
+  "rebuild": "python3 cleanroom/r3/plan_r3.py r5 && python3 cleanroom/assemble_cut.py r5 && python3 scripts/scene/build-timeline.py . <out>"
  }
 ]

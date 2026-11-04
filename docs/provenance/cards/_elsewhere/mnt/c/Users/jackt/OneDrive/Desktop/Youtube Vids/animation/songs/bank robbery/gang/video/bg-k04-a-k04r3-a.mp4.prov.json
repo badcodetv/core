@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k04-a-k04r3-a.mp4",
+ "made": "2026-11-04T11:54:55+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "From the first frame the six men keep walking straight at the lens in their V formation, one stride per beat, open overcoats flaring behind them. The grey-masked man tugs his cuff straight once; the man on the far right glances down at his pocket watch, then snaps it shut. Nobody turns his head. The marquee bulbs keep chasing; rain glints on the cobbles. Long-lens compression, so they grow only slightly larger. Locked-off camera, framing holds; masks, suits and gloves unchanged. SFX: heavy footsteps on wet stone, light rain, a faint electric hum. No speech, no music.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k04r3-a.jpg",
+ "why": "mv-gang r3 action clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k04r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k04-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:41:35.604Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k02-b-k02r3-b.mp4",
+ "made": "2026-11-04T11:54:55+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "From the first frame the dark-green 1920s truck keeps rolling slowly forward across the lobby toward the lower left, then brakes and stops by the third second, rocking once on its springs. The barrels already on the floor roll a short way and come to rest; the split barrel keeps foaming. Dust drifts through the light shafts. The driver stays at the wheel; the man on the running board holds on, his prop gun still pointed at the ceiling. Locked-off camera, framing holds; the same truck, the same two men, nothing new enters. SFX: engine rumble, a brake squeal, bricks settling, barrels thudding. No speech, no music.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k02r3-b.jpg",
+ "why": "mv-gang r3 action clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k02r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k02-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:40:45.670Z"
+ }
+}

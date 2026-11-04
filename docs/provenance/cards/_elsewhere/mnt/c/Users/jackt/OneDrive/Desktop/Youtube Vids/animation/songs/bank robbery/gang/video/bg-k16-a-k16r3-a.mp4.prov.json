@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k16-a-k16r3-a.mp4",
+ "made": "2026-11-04T12:24:47+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first frame the man keeps firing the prop drum-magazine submachine gun straight up at the hanging globe lamps, braced wide, the barrel staying pointed upward. Bright flashes at the muzzle, small recoil in his shoulders. Each lamp he aims at bursts into falling glass, sparks drop and die out, and the near end of the hall grows darker while the far lamps glow. Plaster dust drifts. Mask, hat and gloves unchanged; no one else appears. SFX: rapid rattling bursts, glass shattering, echo in the marble hall.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k16r3-a.jpg",
+ "why": "mv-gang r3 action clip, writer cw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k16r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k16-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T12:12:07.069Z"
+ }
+}

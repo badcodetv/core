@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-g12-b-g12r3-b.mp4",
+ "made": "2026-11-04T15:52:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The silver-masked man in the oxblood suit keeps his left glove gripping the chrome microphone, elbow up and level, and works the crowd from the first moment. On the first beat his outstretched right arm sweeps wide over the audience, scattering banknotes; on the next he pulls the glove back and taps his chest twice, far too solemnly; then he flings the arm out again, palm up, chin lifted, knees bouncing in his wide stance. The crowd reaches up a little. Mask unchanged. No speech; crowd murmur, flutter of paper.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g12r3-b.jpg",
+ "why": "mv-gang r3 gesture clip (picked gesture still), writer gw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g12r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "g12-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:50:55.577Z"
+ }
+}

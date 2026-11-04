@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v11m-b-v11r5-a.mp4",
+ "made": "2026-11-04T19:27:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The masked man in the oxblood suit leans down to the lens on the stone steps and raps with mock-fatherly sternness. On the first beat his finger wags hard at the lens. On the next he whips the same hand round, thumb jerking back over his shoulder at the banker above, then turns back with an exaggerated slow head shake. Then he taps his own chest twice, spreads the hand open in a \"trust me, kid\" gesture, and wags the finger again, his other glove on his hip throughout. The banker at the top hugs his bag and stays put. Wind, cloth.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v11r5-a.jpg",
+ "why": "mask fix of v11g-b (r3/mask-audit.md): new still v11r5-a, same motion as v11g-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v11r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v11m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T19:14:19.925Z"
+ }
+}
