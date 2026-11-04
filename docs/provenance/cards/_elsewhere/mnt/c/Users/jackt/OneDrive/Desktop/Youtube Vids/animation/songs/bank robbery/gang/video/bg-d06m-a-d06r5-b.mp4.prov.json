@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d06m-a-d06r5-b.mp4",
+ "made": "2026-11-04T17:53:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The man in the green balaclava leans on the bar and performs straight into the lens from the first instant. First beat: his raised thumb jerks back over his shoulder at the barman, twice, sharp. Next beat: his lower gloved hand chops flat on the bar top, once per beat, like a metronome. Next: both palms open wide in an exaggerated shrug, head tilted. Then he counts off three gloved fingers close to the lens, head nodding on each. Behind him the barman calmly keeps pouring water from the tin jug into the bottle. Sound: palm thumps on wood. No speech.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d06r5-b.jpg",
+ "why": "mask fix of d06g-a (r3/mask-audit.md): new still d06r5-b, same motion as d06g-a",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d06r5-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d06m-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T17:40:56.657Z"
+ }
+}

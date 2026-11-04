@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-g11-b-g11r3-b.mp4",
+ "made": "2026-11-04T15:52:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The masked man sitting on the marble counter performs to the empty hall, sharp on the beat from the very first instant. First beat: his gloved hands finish the clap with a loud smack. Next beat: he twists toward the lens and spreads both palms wide, mock-amazed. Next: one hand flicks away over his shoulder, dismissive, the other chops down on his knee. Then a slow sarcastic clap again, chin tilted up, shoulders bouncing, boots swinging. The money sack stays put. No speech; claps echo off marble.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g11r3-b.jpg",
+ "why": "mv-gang r3 gesture clip (picked gesture still), writer gw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g11r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "g11-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:50:32.662Z"
+ }
+}

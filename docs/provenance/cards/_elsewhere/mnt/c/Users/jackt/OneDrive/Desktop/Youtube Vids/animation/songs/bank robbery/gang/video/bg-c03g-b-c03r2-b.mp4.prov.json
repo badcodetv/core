@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-c03g-b-c03r2-b.mp4",
+ "made": "2026-11-04T15:33:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The six masked men round the iron press perform together like a stadium act in a cellar. On the first beat all six punch their fists up at the low ceiling in unison. On the next they bounce at the knees, shoulders shrugging, heads nodding hard. Then the two in the middle slam both gloves flat on top of the press while the others point down at it with both hands, mock-outraged. Then all six throw both arms up, palms raised, and pump them on every beat. Nobody leaves their place. Stamps and cloth rustle.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c03r2-b.jpg",
+ "why": "mv-gang r3 gesture clip (redo of c03-b), writer gw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c03r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "c03g-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:19:22.163Z"
+ }
+}

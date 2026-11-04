@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-a03m-a-a03r5-a.mp4",
+ "made": "2026-11-04T17:39:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera at kerb height, framing holds. The black sedan finishes its sideways skid, rocks once on its springs and stops in place. Grey tyre smoke drifts and thins; the loose oranges roll a little and settle. The man on the running board grips the door frame and nods his shoulders on a steady beat. Same car, same street, masks unchanged, gloves on, nothing enters the frame. SFX: tyre screech dying out, a wooden crate thud, engine idle. No voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/a03r5-a.jpg",
+ "why": "mask fix of a03-a (r3/mask-audit.md): new still a03r5-a, same motion as a03-a",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/a03r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "a03m-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T17:26:07.974Z"
+ }
+}

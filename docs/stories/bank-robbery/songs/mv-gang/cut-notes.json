@@ -1,5 +1,5 @@
 {
- "round": 2,
+ "round": 5,
  "kai_round1": {
   "at126": "same scene twice, please put something else here. THanks\n",
   "at884": "his triangle on his balaclava should always be on the left eye, on anyone wearing a badcode balaclava. change it \nTHanks ",
@@ -7,26 +7,26 @@
  },
  "plan": [
   {
-   "h": "Your three notes",
+   "h": "Your note",
    "items": [
-    "0:05 same scene twice → a Colour Noir hot rod (rods3-b) after the gang walk.",
-    "0:36 triangle → the grandma clip mirrored, so it sits over his left eye.",
-    "1:00 empty driver's seat → that clip (x01-a) is out everywhere it appeared (1:00, 2:06, 3:14)."
+    "\"The masks are wrong in a lot of the clips\": I checked all 65 gang clips frame by frame and found 37 with the wrong mask (no triangle, triangle in the middle or on the wrong side, eye holes, goggles, red eyes). List: cleanroom/r3/mask-audit.md.",
+    "Each one got a new still (free), checked by eye before any video was made, then one new clip with the same motion as before. 35 of the 37 are in this cut, on the same beats as cut 4."
    ]
   },
   {
-   "h": "Also this round",
+   "h": "How the remakes came out",
    "items": [
-    "Ten Colour Noir action clips back in: safe dragged with sparks, the motorcycle-cop chase, the red car through the sparks, barrels from the driver's seat, the theatre-crowd drive, the safe out of the wall, the masked driver, hot rods (headlights, water tunnel, bridge).",
-    "Every cut moved onto the strongest drum hit near its line (at most 0.33 s); the 0:07 drop now cuts at 7.55 s.",
-    "Left out on purpose: the train-robbery and jeweller's-shop clips from Colour Noir: their masks break the left-eye / white-ring rule."
+    "Fixed (18): a01 (both), a02-b, a03-a, d01, f01, k01 (the ending), k03, k04, k18, k21, k26, k29, k30, k36, v05, v06, v12.",
+    "Better, small fault left (8): a02-a, a03-b, g11, k09, k12, k13, v07, x03.",
+    "Same fault came back (9): d06, f03, k22, k27, v03, v11, x07, k02, k19. The still was right, but the triangle slides to the middle as the clip moves, or is lost on the crimson mask.",
+    "Worse, old clip kept (2): d02 (grew goggles), k31 (round red eyes)."
    ]
   },
   {
-   "h": "You decide",
+   "h": "Known faults",
    "items": [
-    "c01-b (the gang chanting in the bank lobby) is still refused by Flow: keep the bank-doors shot there, or try a new still?",
-    "c02 still shows a readable BUTCHER'S SHOP sign."
+    "The 9 above plus d02 and k31 still break the mask rule. A second re-roll costs credits and may drift the same way; your call.",
+    "g09-b and k13 show a readable GIN crate; k12 marquee letters are garbled; k14 never rendered in Flow."
    ]
   }
  ],

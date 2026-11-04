@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-f01g-a-f01r2-a.mp4",
+ "made": "2026-11-04T15:49:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The man in the crimson balaclava and fedora at right performs at the lens from the first instant. First beat: his pointing finger jabs at the lens twice, hard. Next beat: the hand on his chest pats his heart with mock sincerity, head bowed. Next: he swings his pointing arm round to the five men on the beam, then back to the lens. Then both gloved hands spread wide in a grand shrug, shoulders bouncing on the beat. The five behind him keep quietly counting their banknotes, legs dangling. The girder stays solid. Sound: wind, rustling notes. No speech.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f01r2-a.jpg",
+ "why": "mv-gang r3 gesture clip (redo of f01-a), writer gw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/f01r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "f01g-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:35:43.902Z"
+ }
+}

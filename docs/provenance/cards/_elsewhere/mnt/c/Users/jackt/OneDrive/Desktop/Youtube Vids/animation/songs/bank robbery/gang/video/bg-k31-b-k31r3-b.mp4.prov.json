@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k31-b-k31r3-b.mp4",
+ "made": "2026-11-04T13:44:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "From the first frame the round slab of floor with the two seated men lowers slowly and steadily straight down toward the lens, perfectly level, as plaster dust and paint flakes keep falling through the shaft of daylight. The two men stay seated with legs crossed; the man on the right gives his cuff one small tug. Masks, suits and gloves stay exactly the same; the vault walls stay still. Locked-off camera looking up. SFX: creaking timber, trickling plaster, soft rumble.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k31r3-b.jpg",
+ "why": "mv-gang r3 action clip, writer cw6",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k31r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k31-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T13:31:33.247Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k07-a-k07r3-a.mp4",
+ "made": "2026-11-04T12:10:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off overhead camera, framing holds. From the first frame the black sedan keeps sliding sideways in its arc, rear wheels spinning, and rolls steadily toward the lower left of frame. The passenger keeps his arm straight up, prop pistol pointed at the sky, perfectly still and bored. Thick white tyre smoke billows and spreads behind the car under the lamp. The same one car the whole time; the street stays empty. SFX: tyre squeal, engine roar, rain hiss.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k07r3-a.jpg",
+ "why": "mv-gang r3 action clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k07r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k07-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:55:18.530Z"
+ }
+}

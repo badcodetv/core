@@ -1,0 +1,15 @@
+{"at":"2026-11-04T10:42:19.373Z","ev":"pair.start","pair":["h01","h02"],"project":"7d811978-fdaa-427b-928e-9afe8db1687b","attempt":1}
+{"at":"2026-11-04T10:43:00.660Z","ev":"pair.done","pair":["h01","h02"],"project":"7d811978-fdaa-427b-928e-9afe8db1687b","done":0,"failed":[{"i":"h01","code":"TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-04T10-44-11-839Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited, a captcha), add its exact wording to failure-card.ts so it aborts fast next time instead of timing out."}],"partial":true}
+{"at":"2026-11-04T10:43:07.623Z","ev":"pair.start","pair":["h01","h02"],"project":"817833de-86df-457f-ad74-81588537044a","attempt":2}
+{"at":"2026-11-04T10:44:43.164Z","ev":"pair.done","pair":["h01","h02"],"project":"817833de-86df-457f-ad74-81588537044a","done":2,"failed":[],"partial":false}
+{"at":"2026-11-04T10:44:48.909Z","ev":"pair.start","pair":["h03","h04"],"project":"4b8dc61c-2a4c-4f3b-93f9-6f2ff4d408af","attempt":1}
+{"at":"2026-11-04T10:46:10.932Z","ev":"pair.done","pair":["h03","h04"],"project":"4b8dc61c-2a4c-4f3b-93f9-6f2ff4d408af","done":2,"failed":[],"partial":false}
+{"at":"2026-11-04T10:46:16.977Z","ev":"pair.start","pair":["h05","h06"],"project":"1a5f65f4-74e1-4266-953d-6c944e29dd33","attempt":1}
+{"at":"2026-11-04T10:47:31.400Z","ev":"pair.done","pair":["h05","h06"],"project":"1a5f65f4-74e1-4266-953d-6c944e29dd33","done":1,"failed":[{"i":"h06","code":"TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-04T10-48-42-349Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited, a captcha), add its exact wording to failure-card.ts so it aborts fast next time instead of timing out."}],"partial":true}
+{"at":"2026-11-04T10:47:38.047Z","ev":"pair.start","pair":["h05","h06"],"project":"a651e1ef-9835-4317-bf12-483ef4ec1f90","attempt":2}
+{"at":"2026-11-04T10:48:49.835Z","ev":"pair.done","pair":["h05","h06"],"project":"a651e1ef-9835-4317-bf12-483ef4ec1f90","done":2,"failed":[],"partial":false}
+{"at":"2026-11-04T10:48:55.574Z","ev":"pair.start","pair":["h07","h08"],"project":"8b286793-b725-40c6-a74f-7d17afdd0471","attempt":1}
+{"at":"2026-11-04T10:50:17.349Z","ev":"pair.done","pair":["h07","h08"],"project":"8b286793-b725-40c6-a74f-7d17afdd0471","done":2,"failed":[],"partial":false}
+{"at":"2026-11-04T10:50:23.093Z","ev":"pair.start","pair":["h09","h10"],"project":"8e885b2b-a6d9-4955-9471-ccdb6afc9315","attempt":1}
+{"at":"2026-11-04T10:51:53.486Z","ev":"pair.done","pair":["h09","h10"],"project":"8e885b2b-a6d9-4955-9471-ccdb6afc9315","done":2,"failed":[],"partial":false}
+{"at":"2026-11-04T10:51:53.486Z","ev":"end"}

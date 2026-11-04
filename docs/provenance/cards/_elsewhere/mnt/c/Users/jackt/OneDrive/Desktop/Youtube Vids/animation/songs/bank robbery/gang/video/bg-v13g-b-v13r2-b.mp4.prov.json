@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v13g-b-v13r2-b.mp4",
+ "made": "2026-11-04T15:58:29+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The man in the oxblood suit, perched on the chained ledger heap, performs straight down into the lens from the first instant. First beat: his pointing arm jabs at the lens twice. Next beat: the chest fist opens and both palms press down on the beat, bouncing. Next: he slaps the chained ledgers beside him and spreads his arms wide, mock-outraged. Then he wags one finger slowly, head shaking, before a dismissive flick of the wrist. The chains, padlocks and books stay solid and still. No speech; chain clink, dust drifting in the light.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v13r2-b.jpg",
+ "why": "mv-gang r3 gesture clip (redo of v13-b), writer gw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v13r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v13g-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:56:32.543Z"
+ }
+}

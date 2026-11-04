@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d08g-b-d08r2-b.mp4",
+ "made": "2026-11-04T15:52:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The masked man in the oxblood suit raps into the lens while his other glove keeps the wallet held firmly in the businessman's pocket. On the first beat the big open glove thrusts toward the lens, fingers spread like a magician's flourish. On the next he twirls the hand in a showy circle, wiggles the fingers, and tilts his head the other way. Then he snaps the hand into a sly beckoning curl, shoulders bouncing, then shoves the palm forward again. The businessman keeps staring up at the clock and never notices. Station murmur, cloth sounds.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d08r2-b.jpg",
+ "why": "mv-gang r3 gesture clip (redo of d08-b), writer gw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d08r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d08g-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:49:15.238Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v03m-b-v03r5-a.mp4",
+ "made": "2026-11-04T18:58:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The man in the pinstripe suit swaggers slowly toward the lens along the line of workers, performing from the first instant. First beat: his flat hand chops down hard. Next beat: he counts off fingers right at the lens, one, two, three, exaggerated. Next: he rubs gloved thumb and fingers together, mock-greedy, then sweeps his arm down the line of workers like a game-show host. Then a big shrug, shoulders bouncing, head nodding. The workers stay in line, holding their cards, glancing at him only slightly. No speech; footsteps on boards.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v03r5-a.jpg",
+ "why": "mask fix of v03g-b (r3/mask-audit.md): new still v03r5-a, same motion as v03g-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v03r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v03m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:45:07.581Z"
+ }
+}

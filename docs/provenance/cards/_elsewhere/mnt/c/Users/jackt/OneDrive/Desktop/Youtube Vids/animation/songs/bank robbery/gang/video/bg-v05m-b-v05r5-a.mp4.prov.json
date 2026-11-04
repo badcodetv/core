@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v05m-b-v05r5-a.mp4",
+ "made": "2026-11-04T18:58:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The marine-masked man in the cream suit performs from his low lean right away. On the first beat his lower glove chops down hard; on the next his raised thumb stabs back over his shoulder at the man on the lever; then he swings round to face the lens, both palms pumping down twice, and gives a big mock-sorry shrug, head wobbling. Behind him the top-hatted owner keeps hauling the brass lever and the workers stay shrunk against the wall. Mask, gloves and suit never change. No speech; machine clank, furnace roar.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r5-a.jpg",
+ "why": "mask fix of v05g-b (r3/mask-audit.md): new still v05r5-a, same motion as v05g-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v05m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:45:33.120Z"
+ }
+}

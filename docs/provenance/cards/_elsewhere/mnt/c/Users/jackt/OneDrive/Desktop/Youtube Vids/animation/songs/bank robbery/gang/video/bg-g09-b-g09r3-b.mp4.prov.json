@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-g09-b-g09r3-b.mp4",
+ "made": "2026-11-04T15:52:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. From the first instant the masked man in the crimson balaclava raps through the brass megaphone, keeping it gripped in his right hand the whole time, foot planted on the gin crate. First beat: his flung-back free hand whips forward and chops down hard. Next beat: he jerks the megaphone up and down twice, chin thrust out. Next: free fist thumps his chest with mock solemnity. Then a big sweeping arm across the empty chairs as if to a cheering crowd, head bobbing on every beat. Dust drifts. Sound: boot stamps on wood, echoing hall. No speech.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g09r3-b.jpg",
+ "why": "mv-gang r3 gesture clip (picked gesture still), writer gw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g09r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "g09-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:49:41.974Z"
+ }
+}

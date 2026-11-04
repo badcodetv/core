@@ -65,3 +65,50 @@ Jack: *"please pay attention to the notes i left on the timeline page. also brin
 - Colour Noir action back (10): rods3-b, safe2-c, pov2-a, pov1-b, chase1-a, chase3-a, safe1-b, safe4-b, rods4-a, rods2-b. Left out: mask3-a (black rings, triangle on the right eye), mask1-b (the green robber's triangle on his right eye).
 - To the beat: listened (`docs/listening/log/2026-11-03-170503-the-version.md`: drop 0:07.5, chorus 1:02, 2:04, final 3:07.5; drums out 2:55–3:07) and tracked (~92.3 BPM, kick on 1 and 3). The beat tracker drifted up to ~0.35 s, so each cut snaps to the strongest percussive hit from 0.33 s before to 0.2 s after its line (`hits.json`, `cleanroom/plan_r2.py` → `edit-plan-r2.json`); 64 of 65 moved, max 0.33 s.
 - Built: `cut2/preview.mp4` (no black or frozen frames), Premiere `Balaclava Gang 2` (65 on V1, song A1, A2 muted, no gaps), page republished with replies (`cut-notes.json`). Page round 2 · Balaclava Gang 2 · in sync.
+
+## 2026-11-04: round 3 asked for: the singer, action parodies, sarcastic stage gestures, faster cut
+
+Jack on `Balaclava Gang 2`, verbatim: `cleanroom/r3/jack.md` (not enough action or Prohibition gloss; action-movie parodies with the balaclava men; the singer, a woman, raps throughout as "a harley quinn type character with a bat" in the balaclava style, stills of her to pick; the rappers gesture like a stage rapper, sarcastically; clean room; cut on the beat and much faster; timeline page once cut).
+- Research (web only, sealed): `cleanroom/r3/research.md` (30 action tropes moved to the 1920s, glossy period glamour vs AI slop, the bat-woman signature elements to avoid, stage-rap gesture vocabulary, fast cutting at 92 BPM, Nano Banana tips).
+- Shot list `cleanroom/r3/shots.py`: 10 singer designs (h), 16 action parodies (k), 12 gesture shots (g); briefs `make_briefs.py` → `brief-wN.md`.
+- Jack: *"smaller first"*: only the singer this round. The singer is ORIGINAL: no name of any existing character, none of its signature elements (diamond pattern, red/black split, jester hood, pigtails, face paint, mallet).
+- 5 sealed writers (w1–w5) → `cleanroom/prompts-r3.json`, run verbatim plus "Thanks.", Nano Banana 2, 16:9, 2 takes, no reference. Same-prompt check: no copies of past prompts; the shared mask sentence kept on purpose. 20 stills, two timeouts passed on retry. Round-2 board rows kept in `moodboard-r2.json`.
+- By eye: h03 triangle top-centre, h09a low-centre; h01, h03, h05, h07 legs read as skin or sheer stockings (rule: no skin); h02's background gang have plain masks.
+- Board republished (same link), singer only. Waiting on Jack's pick.
+
+## 2026-11-04: the singer dropped; action stills next
+
+Jack: *"maybe we forget her and focus on the action stills, then show me in the next scene link thanks"*. The singer is out (her 20 stills stay on disk, rows in `prompts-r3.json`, nothing picked). Writers w6–w9 run the 16 action parodies (k01–k16), with the six-man line-up reference attached, one prompt per Flow project. The gesture shots (g01–g12) are briefed but not run.
+- 2026-11-04: action round run. 4 sealed writers (w6–w9) → `prompts-r3.json` k01–k16; same-prompt check: only the mask wording repeats (10–22 words, kept on purpose). Nano Banana 2 with the line-up reference, one prompt per project; k13 timed out once, then passed. 32 stills, none a copy of the reference (`refdup.py`, now checks r2 and r3).
+- By eye: masks hold (white rings, triangle on the picture's right). Faults: k08a 1960s cars and police cars, k08b a 1940s car (wrong period); readable words on k06b (plate), k12 a/b ("THEATRE"), k13b ("GIN" crates); k11 the man on the ladder reads as unmasked at this size.
+- Board republished (same link), action only. Waiting on Jack's picks.
+
+## 2026-11-04: Jack's 13 action picks animated; 20 more parodies stilled
+
+Jack: *"please come up with more parodied action scenes that fit this please research the internet and do more stills in next scene. clean room the ones i liked and make the videos thanks"*. Dump: `feedback/moodboard-r5/`.
+- Picked (13): k01 a, k02 b, k03 a, k04 a, k06 b, k07 a, k09 a, k10 a, k11 a, k12 a, k13 b, k14 a, k16 a. Not picked: k05, k08, k15.
+- Clips: 3 sealed clip writers (`r3/make_clip_briefs.py` → `brief-clip-cwN.md` → `clip-cwN.md`, `r3/parse_clips.py` → `r3/clips.json`, appended to `video-jobs.json`); research = `research-clips.md` + `r3/research.md`. No repeats of past prompts. Omni 1.1 Flash, Frames, 16:9, 6 s via `scripts/scene/run.mts`. **12 made** (`gang\video\bg-k…-k…r3-….mp4`); **k14-a stalled** three waves (no clip came back), retried once more.
+- By eye on the clips (first/middle/last frames): masks hold, nothing morphs. Faults: k12-a marquees print garbled words mid-clip; k13-b "GIN" crates (from the still); k11-a ladder man reads unmasked when small.
+- More parodies: sealed web research `r3/research-more-action.md` (40 new set pieces, period facts graded; two real robberies with deaths to avoid: the 1927 armoured-car and 1922 Denver Mint). I picked 20 → `shots.py` MORE (k17–k36), 5 sealed writers w13–w17. 40 stills, none a copy of the reference; same-prompt check: only mask wording repeats.
+- By eye: k31 a/b masks show eye holes; k32 triangle big and centred; k33b mask looks holed.
+- Board republished (same link) with k17–k36. Waiting on Jack's picks.
+
+## 2026-11-04: cut 3 (`Balaclava Gang 3`), from Jack's cut-3 brief
+
+- Second clip run: 12 of 13 made (k18 k19 k21 k22-b k23 k24 k26 k27-b k29 k30 k31-b k36-b). k14-a stalled 5 times in Flow, even with a calmer prompt, so it is left out. Checked by eye: k30-a's silver mask may show two red marks, not one triangle.
+- Plan: `cleanroom/r3/plan_r3.py` → `edit-plan-r3.json`: 214 cuts, 0.98 s average, 43 lyric shots from cut 2, 24 action clips, every cut snapped to a drum hit. Choruses, drop and outro cut on every beat; verses and break every 2 beats; drums out (2:55–3:07) one bar per shot; half-beat flurries on "Robbery!".
+- Built: `cut3/preview.mp4` (209.6 s, no black, frozen frames or gaps). Premiere `Balaclava Gang 3` (720p at 24 fps, from a clip): song on A1, 214 cuts on V1, clip sound on A2 muted. 24 k clips imported into the bin "Balaclava Gang clips". Timeline page round 3 is the same link (https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1). Page and sequence are in sync.
+- Known: in the outro, the action clips come round in the same order as at the drop.
+
+## 2026-11-04: round 3c, the gestures
+
+- Jack: "do the gestures thanks". Sealed writers w10–w12 (briefs `cleanroom/r3/brief-w10..12.md`, web research only) wrote g01–g12. The same-prompt check flagged only the shared mask-rule sentence, kept on purpose. 24 stills (Nano Banana 2, line-up reference attached), all made. Mood board round 7 (the same link). Faults: g09 shows a GIN crate; g03's triangle sits near the centre; g04's masks are small in frame.
+- Jack's picks (`feedback/moodboard-r7`): g08-b, g09-b, g10-b, g11-b, g12-b. And: "Add these picks but also just improve the gesturing of the existing rapping videos thanks."
+- Round 3d clips: the 5 picks + 16 redos of the rap-to-camera clips (c03-a c03-b c04-a d01-a d06-a d08-b d10-a e03-a f01-a v01-b v03-b v05-b v06-b v11-b v13-b v14-a) with big sarcastic stage-rap moves, keys `<shot>g-<take>` (the old clips are kept). Sealed writers gw1–gw4 (`cleanroom/r3/make_gesture_clip_briefs.py`), jobs via `parse_gestures.py`.
+- Built cut 4: all 21 clips made. Checked by eye: v05g-b turns his back partway through; d08g-b barely moves; d10g-a swings the mic stand up like a pole. Each pick replaces the clip on its exact line (g08→d08g, g09→d10g, g10→v14g, g11→e03g, g12→f08), so d08g/d10g/e03g/v14g are not in the cut. `edit-plan-r4.json`, `cut4/preview.mp4` (209.6 s, no black, frozen frames or gaps). Premiere `Balaclava Gang 4`: song on A1, 214 cuts on V1, A2 muted. Timeline page round 4 (the same link). Awaiting Jack.
+
+## 2026-11-04 · Round 5: masks fixed (Balaclava Gang 5)
+- Jack: *"the masks are wrong in a lot of the clips, watch and look for it then replace it"*, *"make sure you analyse the clips properly for the wrong masks to replace, i dont want to waste credits or time"*, *"please do the all 37"*.
+- Audit of 65 gang clips: 37 wrong (`cleanroom/r3/mask-audit.md`). New stills r5 (Nano Banana 2, reference `gang-lineup-heads.jpg`), each checked by eye at full size, up to 3 tries (`r3/mask-picks.json`). One Omni clip per passed still with the old motion (`<shot>m-<take>`, `r3/make_mask_jobs.py`).
+- Clip check (`r3/mask-clip-check.md`): 18 fixed, 8 better, 9 same fault (the triangle drifts to the middle in motion, or is lost on Crimson), 2 worse (d02, k31: old clips kept, KEEP_OLD in plan_r3.py).
+- Built: `edit-plan-r5.json`, `cut5/preview.mp4` (209.6 s, no black or frozen frames, same timing as cut 4, 114 of 214 shots now remakes). Premiere `Balaclava Gang 5`: song on A1, 214 cuts on V1, no gaps, A2 muted, saved. 35 clips imported into the bin "Balaclava Gang clips". Timeline page round 5 (same link). Awaiting Jack; open question: re-roll the 11 still-wrong clips or not.

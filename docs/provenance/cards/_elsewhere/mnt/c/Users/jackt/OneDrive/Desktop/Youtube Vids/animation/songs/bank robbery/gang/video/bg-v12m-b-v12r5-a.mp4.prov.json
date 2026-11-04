@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v12m-b-v12r5-a.mp4",
+ "made": "2026-11-04T19:27:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The press rollers turn steadily. The man pushes the stack of blank paper forward into the press once with both gloved hands, then holds there, nodding his head on a slow steady beat. A few banknotes flutter down slowly and settle on the floor. His hood, gloves and suit stay exactly the same; no one else appears. SFX: heavy iron rollers clanking in rhythm, paper rustling. No voices, no music.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v12r5-a.jpg",
+ "why": "mask fix of v12-b (r3/mask-audit.md): new still v12r5-a, same motion as v12-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v12r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v12m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T19:14:29.007Z"
+ }
+}

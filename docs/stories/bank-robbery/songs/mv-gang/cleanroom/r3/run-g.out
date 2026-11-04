@@ -1,0 +1,27 @@
+{"at":"2026-11-04T14:53:17.717Z","ev":"pair.start","pair":["g01"],"project":"31356ca3-399e-4840-bf03-a522e56e1a59","attempt":1}
+{"at":"2026-11-04T14:54:10.473Z","ev":"pair.done","pair":["g01"],"project":"31356ca3-399e-4840-bf03-a522e56e1a59","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T14:54:16.494Z","ev":"pair.start","pair":["g02"],"project":"8f44dfe0-20ff-4b88-a02b-8e840c5fbcce","attempt":1}
+{"at":"2026-11-04T14:54:52.998Z","ev":"pair.done","pair":["g02"],"project":"8f44dfe0-20ff-4b88-a02b-8e840c5fbcce","done":0,"failed":[{"i":"g02","code":"Error: TIMEOUT: nothing finished in 90s — page text and screenshot written to /tmp/flow-timeout-2026-11-04T14-56-04-146Z.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited"}],"partial":true}
+{"at":"2026-11-04T14:55:00.030Z","ev":"pair.start","pair":["g02"],"project":"4358b1b1-e919-49ab-a91d-2659c2c3ccf7","attempt":2}
+{"at":"2026-11-04T14:55:43.162Z","ev":"pair.done","pair":["g02"],"project":"4358b1b1-e919-49ab-a91d-2659c2c3ccf7","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T14:55:50.187Z","ev":"pair.start","pair":["g03"],"project":"e6d1bfa6-2a4b-4b86-b833-24a3e2409c2a","attempt":1}
+{"at":"2026-11-04T14:56:42.073Z","ev":"pair.done","pair":["g03"],"project":"e6d1bfa6-2a4b-4b86-b833-24a3e2409c2a","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T14:56:47.927Z","ev":"pair.start","pair":["g04"],"project":"ad4033a0-4e0c-4267-b718-dd2aaed225a3","attempt":1}
+{"at":"2026-11-04T14:57:43.513Z","ev":"pair.done","pair":["g04"],"project":"ad4033a0-4e0c-4267-b718-dd2aaed225a3","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T14:57:49.953Z","ev":"pair.start","pair":["g05"],"project":"b30ae5c1-287c-4e0e-a2ab-94267c201b31","attempt":1}
+{"at":"2026-11-04T14:58:45.233Z","ev":"pair.done","pair":["g05"],"project":"b30ae5c1-287c-4e0e-a2ab-94267c201b31","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T14:58:51.210Z","ev":"pair.start","pair":["g06"],"project":"4cb3fd2f-2625-46b3-8272-663c2a862cb8","attempt":1}
+{"at":"2026-11-04T14:59:35.856Z","ev":"pair.done","pair":["g06"],"project":"4cb3fd2f-2625-46b3-8272-663c2a862cb8","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T14:59:41.723Z","ev":"pair.start","pair":["g07"],"project":"6a6b9dc1-5428-4792-b52f-36b9fe04b100","attempt":1}
+{"at":"2026-11-04T15:00:34.187Z","ev":"pair.done","pair":["g07"],"project":"6a6b9dc1-5428-4792-b52f-36b9fe04b100","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T15:00:40.702Z","ev":"pair.start","pair":["g08"],"project":"37e7c6df-81a4-4dfb-82b5-156b9431d48f","attempt":1}
+{"at":"2026-11-04T15:01:38.008Z","ev":"pair.done","pair":["g08"],"project":"37e7c6df-81a4-4dfb-82b5-156b9431d48f","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T15:01:43.900Z","ev":"pair.start","pair":["g09"],"project":"1279aaa3-86c5-4f55-bba7-761743988871","attempt":1}
+{"at":"2026-11-04T15:02:24.830Z","ev":"pair.done","pair":["g09"],"project":"1279aaa3-86c5-4f55-bba7-761743988871","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T15:02:30.608Z","ev":"pair.start","pair":["g10"],"project":"12bd6e06-ec5b-482c-8ba0-259d15cf074f","attempt":1}
+{"at":"2026-11-04T15:03:26.376Z","ev":"pair.done","pair":["g10"],"project":"12bd6e06-ec5b-482c-8ba0-259d15cf074f","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T15:03:33.245Z","ev":"pair.start","pair":["g11"],"project":"731a4e27-5fd0-40ae-a432-4068211256e0","attempt":1}
+{"at":"2026-11-04T15:04:39.100Z","ev":"pair.done","pair":["g11"],"project":"731a4e27-5fd0-40ae-a432-4068211256e0","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T15:04:45.410Z","ev":"pair.start","pair":["g12"],"project":"044e171d-6272-4156-9863-0a922e0ccdd6","attempt":1}
+{"at":"2026-11-04T15:05:59.730Z","ev":"pair.done","pair":["g12"],"project":"044e171d-6272-4156-9863-0a922e0ccdd6","done":1,"failed":[],"partial":false}
+{"at":"2026-11-04T15:05:59.730Z","ev":"end"}

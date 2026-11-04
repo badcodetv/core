@@ -1,0 +1,2142 @@
+[
+ {
+  "start": 0.0,
+  "section": "intro",
+  "clip": "k01-a",
+  "line": "",
+  "why": "action",
+  "end": 2.763,
+  "dur": 2.763,
+  "in": 0.0
+ },
+ {
+  "start": 2.763,
+  "section": "intro",
+  "clip": "k02-b",
+  "line": "",
+  "why": "action",
+  "end": 5.341,
+  "dur": 2.578,
+  "in": 0.0
+ },
+ {
+  "start": 5.341,
+  "section": "intro",
+  "clip": "k03-a",
+  "line": "",
+  "why": "action",
+  "end": 7.941,
+  "dur": 2.6,
+  "in": 0.0
+ },
+ {
+  "start": 7.941,
+  "section": "drop",
+  "clip": "k04-a",
+  "line": "",
+  "why": "action",
+  "end": 8.475,
+  "dur": 0.534,
+  "in": 0.0
+ },
+ {
+  "start": 8.475,
+  "section": "drop",
+  "clip": "k06-b",
+  "line": "",
+  "why": "action",
+  "end": 9.218,
+  "dur": 0.743,
+  "in": 0.0
+ },
+ {
+  "start": 9.218,
+  "section": "drop",
+  "clip": "k07-a",
+  "line": "",
+  "why": "action",
+  "end": 9.868,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 9.868,
+  "section": "drop",
+  "clip": "k09-a",
+  "line": "",
+  "why": "action",
+  "end": 10.519,
+  "dur": 0.651,
+  "in": 0.0
+ },
+ {
+  "start": 10.519,
+  "section": "drop",
+  "clip": "k10-a",
+  "line": "",
+  "why": "action",
+  "end": 11.146,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 11.146,
+  "section": "drop",
+  "clip": "k11-a",
+  "line": "",
+  "why": "action",
+  "end": 11.773,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 11.773,
+  "section": "drop",
+  "clip": "k12-a",
+  "line": "",
+  "why": "action",
+  "end": 12.423,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 12.423,
+  "section": "drop",
+  "clip": "k13-b",
+  "line": "",
+  "why": "action",
+  "end": 13.073,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 13.073,
+  "section": "drop",
+  "clip": "k16-a",
+  "line": "",
+  "why": "action",
+  "end": 13.723,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 13.723,
+  "section": "drop",
+  "clip": "k18-a",
+  "line": "",
+  "why": "action",
+  "end": 14.35,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 14.35,
+  "section": "drop",
+  "clip": "k19-a",
+  "line": "",
+  "why": "action",
+  "end": 14.884,
+  "dur": 0.534,
+  "in": 0.0
+ },
+ {
+  "start": 14.884,
+  "section": "drop",
+  "clip": "k21-a",
+  "line": "",
+  "why": "action",
+  "end": 15.557,
+  "dur": 0.673,
+  "in": 0.0
+ },
+ {
+  "start": 15.557,
+  "section": "drop",
+  "clip": "k22-b",
+  "line": "",
+  "why": "action",
+  "end": 16.3,
+  "dur": 0.743,
+  "in": 0.0
+ },
+ {
+  "start": 16.3,
+  "section": "drop",
+  "clip": "k23-a",
+  "line": "",
+  "why": "action",
+  "end": 16.951,
+  "dur": 0.651,
+  "in": 0.0
+ },
+ {
+  "start": 16.951,
+  "section": "drop",
+  "clip": "k24-a",
+  "line": "",
+  "why": "action",
+  "end": 17.578,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 17.578,
+  "section": "drop",
+  "clip": "k26-a",
+  "line": "",
+  "why": "action",
+  "end": 18.251,
+  "dur": 0.673,
+  "in": 0.0
+ },
+ {
+  "start": 18.251,
+  "section": "drop",
+  "clip": "k27-b",
+  "line": "",
+  "why": "action",
+  "end": 18.901,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 18.901,
+  "section": "drop",
+  "clip": "k29-a",
+  "line": "",
+  "why": "action",
+  "end": 19.551,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 19.551,
+  "section": "drop",
+  "clip": "k30-a",
+  "line": "",
+  "why": "action",
+  "end": 20.062,
+  "dur": 0.511,
+  "in": 0.0
+ },
+ {
+  "start": 20.062,
+  "section": "verse",
+  "clip": "v01-b",
+  "line": "they say you can't make money from a tree / make hay",
+  "why": "lyric shot (cut 2)",
+  "end": 21.455,
+  "dur": 1.393,
+  "in": 0.0
+ },
+ {
+  "start": 21.455,
+  "section": "verse",
+  "clip": "k31-b",
+  "line": "",
+  "why": "action",
+  "end": 22.756,
+  "dur": 1.301,
+  "in": 0.0
+ },
+ {
+  "start": 22.756,
+  "section": "verse",
+  "clip": "k36-b",
+  "line": "",
+  "why": "action",
+  "end": 24.033,
+  "dur": 1.277,
+  "in": 0.0
+ },
+ {
+  "start": 24.033,
+  "section": "verse",
+  "clip": "k01-a",
+  "line": "",
+  "why": "action",
+  "end": 25.356,
+  "dur": 1.323,
+  "in": 1.7
+ },
+ {
+  "start": 25.356,
+  "section": "verse",
+  "clip": "v03-b",
+  "line": "work and get paid though",
+  "why": "lyric shot (cut 2)",
+  "end": 26.61,
+  "dur": 1.254,
+  "in": 0.0
+ },
+ {
+  "start": 26.61,
+  "section": "verse",
+  "clip": "k02-b",
+  "line": "",
+  "why": "action",
+  "end": 27.91,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 27.91,
+  "section": "verse",
+  "clip": "d01-b",
+  "line": "where does it go? nobody knows (v04 not picked)",
+  "why": "lyric shot (cut 2)",
+  "end": 29.211,
+  "dur": 1.301,
+  "in": 0.0
+ },
+ {
+  "start": 29.211,
+  "section": "verse",
+  "clip": "k03-a",
+  "line": "",
+  "why": "action",
+  "end": 30.511,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 30.511,
+  "section": "verse",
+  "clip": "k04-a",
+  "line": "",
+  "why": "action",
+  "end": 31.788,
+  "dur": 1.277,
+  "in": 1.7
+ },
+ {
+  "start": 31.788,
+  "section": "verse",
+  "clip": "v05-b",
+  "line": "means of production means a reduction",
+  "why": "lyric shot (cut 2)",
+  "end": 32.996,
+  "dur": 1.208,
+  "in": 0.0
+ },
+ {
+  "start": 32.996,
+  "section": "verse",
+  "clip": "v06-b",
+  "line": "standards bleeding, landlords needing",
+  "why": "lyric shot (cut 2)",
+  "end": 34.342,
+  "dur": 1.346,
+  "in": 0.0
+ },
+ {
+  "start": 34.342,
+  "section": "verse",
+  "clip": "k06-b",
+  "line": "",
+  "why": "action",
+  "end": 35.666,
+  "dur": 1.324,
+  "in": 1.7
+ },
+ {
+  "start": 35.666,
+  "section": "verse",
+  "clip": "v07f-b",
+  "line": "quantitative easing, grandma freezing",
+  "why": "Jack: triangle on the left eye — the grandma clip mirrored",
+  "end": 36.943,
+  "dur": 1.277,
+  "in": 0.0
+ },
+ {
+  "start": 36.943,
+  "section": "verse",
+  "clip": "k07-a",
+  "line": "",
+  "why": "action",
+  "end": 38.243,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 38.243,
+  "section": "verse",
+  "clip": "v08-b",
+  "line": "stimulus checks, get wrecked / rent seeking (v09 not picked)",
+  "why": "lyric shot (cut 2)",
+  "end": 39.52,
+  "dur": 1.277,
+  "in": 0.0
+ },
+ {
+  "start": 39.52,
+  "section": "verse",
+  "clip": "k09-a",
+  "line": "",
+  "why": "action",
+  "end": 40.774,
+  "dur": 1.254,
+  "in": 1.7
+ },
+ {
+  "start": 40.774,
+  "section": "verse",
+  "clip": "k10-a",
+  "line": "",
+  "why": "action",
+  "end": 42.098,
+  "dur": 1.324,
+  "in": 1.7
+ },
+ {
+  "start": 42.098,
+  "section": "verse",
+  "clip": "k11-a",
+  "line": "",
+  "why": "action",
+  "end": 43.398,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 43.398,
+  "section": "verse",
+  "clip": "k12-a",
+  "line": "",
+  "why": "action",
+  "end": 44.698,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 44.698,
+  "section": "verse",
+  "clip": "k13-b",
+  "line": "",
+  "why": "action",
+  "end": 46.115,
+  "dur": 1.417,
+  "in": 1.7
+ },
+ {
+  "start": 46.115,
+  "section": "verse",
+  "clip": "v11-b",
+  "line": "remember kids, the Fed is not your friend",
+  "why": "lyric shot (cut 2)",
+  "end": 47.276,
+  "dur": 1.161,
+  "in": 0.0
+ },
+ {
+  "start": 47.276,
+  "section": "verse",
+  "clip": "k16-a",
+  "line": "",
+  "why": "action",
+  "end": 48.576,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 48.576,
+  "section": "verse",
+  "clip": "v12-b",
+  "line": "it prints all the dollars that the government spends",
+  "why": "lyric shot (cut 2)",
+  "end": 49.853,
+  "dur": 1.277,
+  "in": 0.0
+ },
+ {
+  "start": 49.853,
+  "section": "verse",
+  "clip": "k18-a",
+  "line": "",
+  "why": "action",
+  "end": 51.154,
+  "dur": 1.301,
+  "in": 1.7
+ },
+ {
+  "start": 51.154,
+  "section": "verse",
+  "clip": "v13-b",
+  "line": "this fiat system is insistent on debt's existence",
+  "why": "lyric shot (cut 2)",
+  "end": 52.431,
+  "dur": 1.277,
+  "in": 0.0
+ },
+ {
+  "start": 52.431,
+  "section": "verse",
+  "clip": "k19-a",
+  "line": "",
+  "why": "action",
+  "end": 53.731,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 53.731,
+  "section": "verse",
+  "clip": "k21-a",
+  "line": "",
+  "why": "action",
+  "end": 54.962,
+  "dur": 1.231,
+  "in": 1.7
+ },
+ {
+  "start": 54.962,
+  "section": "verse",
+  "clip": "k22-b",
+  "line": "",
+  "why": "action",
+  "end": 56.308,
+  "dur": 1.346,
+  "in": 1.7
+ },
+ {
+  "start": 56.308,
+  "section": "verse",
+  "clip": "k23-a",
+  "line": "",
+  "why": "action",
+  "end": 57.585,
+  "dur": 1.277,
+  "in": 1.7
+ },
+ {
+  "start": 57.585,
+  "section": "verse",
+  "clip": "k24-a",
+  "line": "",
+  "why": "action",
+  "end": 58.77,
+  "dur": 1.185,
+  "in": 1.7
+ },
+ {
+  "start": 58.77,
+  "section": "verse",
+  "clip": "k26-a",
+  "line": "",
+  "why": "action",
+  "end": 60.07,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 60.07,
+  "section": "verse",
+  "clip": "k27-b",
+  "line": "",
+  "why": "action",
+  "end": 61.463,
+  "dur": 1.393,
+  "in": 1.7
+ },
+ {
+  "start": 61.463,
+  "section": "verse",
+  "clip": "k29-a",
+  "line": "",
+  "why": "action",
+  "end": 62.113,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 62.113,
+  "section": "chorus",
+  "clip": "k30-a",
+  "line": "",
+  "why": "action",
+  "end": 62.322,
+  "dur": 0.209,
+  "in": 1.7
+ },
+ {
+  "start": 62.322,
+  "section": "chorus",
+  "clip": "k31-b",
+  "line": "",
+  "why": "action",
+  "end": 62.764,
+  "dur": 0.442,
+  "in": 1.7
+ },
+ {
+  "start": 62.764,
+  "section": "chorus",
+  "clip": "k36-b",
+  "line": "",
+  "why": "action",
+  "end": 63.414,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 63.414,
+  "section": "chorus",
+  "clip": "cn:rods3-b",
+  "line": "",
+  "why": "action",
+  "end": 64.041,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 64.041,
+  "section": "chorus",
+  "clip": "cn:safe2-c",
+  "line": "",
+  "why": "action",
+  "end": 64.691,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 64.691,
+  "section": "chorus",
+  "clip": "c02-b",
+  "line": "call the police, it's a robbery",
+  "why": "lyric shot (cut 2)",
+  "end": 65.341,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 65.341,
+  "section": "chorus",
+  "clip": "cn:pov2-a",
+  "line": "",
+  "why": "action",
+  "end": 65.991,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 65.991,
+  "section": "chorus",
+  "clip": "cn:pov1-b",
+  "line": "",
+  "why": "action",
+  "end": 66.641,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 66.641,
+  "section": "chorus",
+  "clip": "cn:chase1-a",
+  "line": "",
+  "why": "action",
+  "end": 67.291,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 67.291,
+  "section": "chorus",
+  "clip": "c03-a",
+  "line": "debasement, it happened in da basement",
+  "why": "lyric shot (cut 2)",
+  "end": 67.942,
+  "dur": 0.651,
+  "in": 0.0
+ },
+ {
+  "start": 67.942,
+  "section": "chorus",
+  "clip": "cn:chase3-a",
+  "line": "",
+  "why": "action",
+  "end": 68.569,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 68.569,
+  "section": "chorus",
+  "clip": "cn:safe1-b",
+  "line": "",
+  "why": "action",
+  "end": 69.219,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 69.219,
+  "section": "chorus",
+  "clip": "cn:safe4-b",
+  "line": "",
+  "why": "action",
+  "end": 69.846,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 69.846,
+  "section": "chorus",
+  "clip": "c04-a",
+  "line": "printer is burning",
+  "why": "lyric shot (cut 2)",
+  "end": 70.496,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 70.496,
+  "section": "chorus",
+  "clip": "cn:rods4-a",
+  "line": "",
+  "why": "action",
+  "end": 71.146,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 71.146,
+  "section": "chorus",
+  "clip": "cn:rods2-b",
+  "line": "",
+  "why": "action",
+  "end": 71.796,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 71.796,
+  "section": "chorus",
+  "clip": "a01-a",
+  "line": "",
+  "why": "action",
+  "end": 72.423,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 72.423,
+  "section": "chorus",
+  "clip": "a01-b",
+  "line": "",
+  "why": "action",
+  "end": 72.632,
+  "dur": 0.209,
+  "in": 0.0
+ },
+ {
+  "start": 72.632,
+  "section": "chorus",
+  "clip": "a02-a",
+  "line": "",
+  "why": "action",
+  "end": 73.073,
+  "dur": 0.441,
+  "in": 0.0
+ },
+ {
+  "start": 73.073,
+  "section": "chorus",
+  "clip": "a02-b",
+  "line": "",
+  "why": "action",
+  "end": 73.723,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 73.723,
+  "section": "chorus",
+  "clip": "a03-a",
+  "line": "",
+  "why": "action",
+  "end": 74.374,
+  "dur": 0.651,
+  "in": 0.0
+ },
+ {
+  "start": 74.374,
+  "section": "chorus",
+  "clip": "c02-a",
+  "line": "call the police, it's a robbery",
+  "why": "lyric shot (cut 2)",
+  "end": 75.024,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 75.024,
+  "section": "chorus",
+  "clip": "a03-b",
+  "line": "",
+  "why": "action",
+  "end": 75.674,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 75.674,
+  "section": "chorus",
+  "clip": "c02-b",
+  "line": "",
+  "why": "action",
+  "end": 76.301,
+  "dur": 0.627,
+  "in": 1.7
+ },
+ {
+  "start": 76.301,
+  "section": "chorus",
+  "clip": "c03-a",
+  "line": "",
+  "why": "action",
+  "end": 76.835,
+  "dur": 0.534,
+  "in": 1.7
+ },
+ {
+  "start": 76.835,
+  "section": "chorus",
+  "clip": "c03-b",
+  "line": "",
+  "why": "action",
+  "end": 77.485,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 77.485,
+  "section": "chorus",
+  "clip": "c03-b",
+  "line": "debasement, it happened in da basement",
+  "why": "lyric shot (cut 2)",
+  "end": 78.251,
+  "dur": 0.766,
+  "in": 1.7
+ },
+ {
+  "start": 78.251,
+  "section": "chorus",
+  "clip": "c04-a",
+  "line": "",
+  "why": "action",
+  "end": 78.901,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 78.901,
+  "section": "chorus",
+  "clip": "d01-a",
+  "line": "",
+  "why": "action",
+  "end": 79.528,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 79.528,
+  "section": "chorus",
+  "clip": "x02-a",
+  "line": "",
+  "why": "action",
+  "end": 80.155,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 80.155,
+  "section": "chorus",
+  "clip": "c04-b",
+  "line": "printer is burning",
+  "why": "lyric shot (cut 2)",
+  "end": 80.829,
+  "dur": 0.674,
+  "in": 0.0
+ },
+ {
+  "start": 80.829,
+  "section": "chorus",
+  "clip": "x03-b",
+  "line": "",
+  "why": "action",
+  "end": 81.456,
+  "dur": 0.627,
+  "in": 0.0
+ },
+ {
+  "start": 81.456,
+  "section": "chorus",
+  "clip": "x04-a",
+  "line": "",
+  "why": "action",
+  "end": 82.106,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 82.106,
+  "section": "chorus",
+  "clip": "x06-a",
+  "line": "",
+  "why": "action",
+  "end": 82.779,
+  "dur": 0.673,
+  "in": 0.0
+ },
+ {
+  "start": 82.779,
+  "section": "verse",
+  "clip": "d01-a",
+  "line": "stacks and stacks of elastic cash",
+  "why": "lyric shot (cut 2)",
+  "end": 84.033,
+  "dur": 1.254,
+  "in": 1.7
+ },
+ {
+  "start": 84.033,
+  "section": "verse",
+  "clip": "x07-b",
+  "line": "",
+  "why": "action",
+  "end": 85.357,
+  "dur": 1.324,
+  "in": 0.0
+ },
+ {
+  "start": 85.357,
+  "section": "verse",
+  "clip": "d02-b",
+  "line": "distracted by a dyspraxic flash",
+  "why": "lyric shot (cut 2)",
+  "end": 86.634,
+  "dur": 1.277,
+  "in": 0.0
+ },
+ {
+  "start": 86.634,
+  "section": "verse",
+  "clip": "k01-a",
+  "line": "",
+  "why": "action",
+  "end": 87.911,
+  "dur": 1.277,
+  "in": 3.4
+ },
+ {
+  "start": 87.911,
+  "section": "verse",
+  "clip": "k02-b",
+  "line": "",
+  "why": "action",
+  "end": 89.211,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 89.211,
+  "section": "verse",
+  "clip": "k03-a",
+  "line": "",
+  "why": "action",
+  "end": 90.395,
+  "dur": 1.184,
+  "in": 3.4
+ },
+ {
+  "start": 90.395,
+  "section": "verse",
+  "clip": "d05-a",
+  "line": "the right and the left both witness the theft / blaming each other",
+  "why": "lyric shot (cut 2)",
+  "end": 91.788,
+  "dur": 1.393,
+  "in": 0.0
+ },
+ {
+  "start": 91.788,
+  "section": "verse",
+  "clip": "k04-a",
+  "line": "",
+  "why": "action",
+  "end": 93.089,
+  "dur": 1.301,
+  "in": 3.4
+ },
+ {
+  "start": 93.089,
+  "section": "verse",
+  "clip": "k06-b",
+  "line": "",
+  "why": "action",
+  "end": 94.25,
+  "dur": 1.161,
+  "in": 3.4
+ },
+ {
+  "start": 94.25,
+  "section": "verse",
+  "clip": "k07-a",
+  "line": "",
+  "why": "action",
+  "end": 95.689,
+  "dur": 1.439,
+  "in": 3.4
+ },
+ {
+  "start": 95.689,
+  "section": "verse",
+  "clip": "d06-a",
+  "line": "institutional, dilutional, the usual",
+  "why": "lyric shot (cut 2)",
+  "end": 97.013,
+  "dur": 1.324,
+  "in": 0.0
+ },
+ {
+  "start": 97.013,
+  "section": "verse",
+  "clip": "k09-a",
+  "line": "",
+  "why": "action",
+  "end": 98.244,
+  "dur": 1.231,
+  "in": 3.4
+ },
+ {
+  "start": 98.244,
+  "section": "verse",
+  "clip": "k10-a",
+  "line": "",
+  "why": "action",
+  "end": 99.521,
+  "dur": 1.277,
+  "in": 3.4
+ },
+ {
+  "start": 99.521,
+  "section": "verse",
+  "clip": "k11-a",
+  "line": "",
+  "why": "action",
+  "end": 100.821,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 100.821,
+  "section": "verse",
+  "clip": "k12-a",
+  "line": "",
+  "why": "action",
+  "end": 102.005,
+  "dur": 1.184,
+  "in": 3.4
+ },
+ {
+  "start": 102.005,
+  "section": "verse",
+  "clip": "d08-b",
+  "line": "divide and conquer, just look at the hand",
+  "why": "lyric shot (cut 2)",
+  "end": 103.398,
+  "dur": 1.393,
+  "in": 0.0
+ },
+ {
+  "start": 103.398,
+  "section": "verse",
+  "clip": "k13-b",
+  "line": "",
+  "why": "action",
+  "end": 104.676,
+  "dur": 1.278,
+  "in": 3.4
+ },
+ {
+  "start": 104.676,
+  "section": "verse",
+  "clip": "k16-a",
+  "line": "",
+  "why": "action",
+  "end": 105.976,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 105.976,
+  "section": "verse",
+  "clip": "k18-a",
+  "line": "",
+  "why": "action",
+  "end": 107.276,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 107.276,
+  "section": "verse",
+  "clip": "k19-a",
+  "line": "",
+  "why": "action",
+  "end": 108.6,
+  "dur": 1.324,
+  "in": 3.4
+ },
+ {
+  "start": 108.6,
+  "section": "verse",
+  "clip": "d10-a",
+  "line": "state level manipulation, the devil with a radio station",
+  "why": "lyric shot (cut 2)",
+  "end": 109.854,
+  "dur": 1.254,
+  "in": 0.0
+ },
+ {
+  "start": 109.854,
+  "section": "verse",
+  "clip": "k21-a",
+  "line": "",
+  "why": "action",
+  "end": 111.154,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 111.154,
+  "section": "verse",
+  "clip": "k22-b",
+  "line": "",
+  "why": "action",
+  "end": 112.431,
+  "dur": 1.277,
+  "in": 3.4
+ },
+ {
+  "start": 112.431,
+  "section": "verse",
+  "clip": "k23-a",
+  "line": "",
+  "why": "action",
+  "end": 113.731,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 113.731,
+  "section": "verse",
+  "clip": "d11-a",
+  "line": "stack up the vaults like a wheelbarrow",
+  "why": "lyric shot (cut 2)",
+  "end": 115.055,
+  "dur": 1.324,
+  "in": 0.0
+ },
+ {
+  "start": 115.055,
+  "section": "verse",
+  "clip": "k24-a",
+  "line": "",
+  "why": "action",
+  "end": 116.286,
+  "dur": 1.231,
+  "in": 3.4
+ },
+ {
+  "start": 116.286,
+  "section": "verse",
+  "clip": "d12-b",
+  "line": "risk of default is really rather narrow",
+  "why": "lyric shot (cut 2)",
+  "end": 117.586,
+  "dur": 1.3,
+  "in": 0.0
+ },
+ {
+  "start": 117.586,
+  "section": "verse",
+  "clip": "k26-a",
+  "line": "",
+  "why": "action",
+  "end": 118.886,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 118.886,
+  "section": "verse",
+  "clip": "k27-b",
+  "line": "",
+  "why": "action",
+  "end": 120.186,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 120.186,
+  "section": "verse",
+  "clip": "k29-a",
+  "line": "",
+  "why": "action",
+  "end": 121.464,
+  "dur": 1.278,
+  "in": 3.4
+ },
+ {
+  "start": 121.464,
+  "section": "verse",
+  "clip": "v14-a",
+  "line": "don't get high off your own supply",
+  "why": "lyric shot (cut 2)",
+  "end": 122.741,
+  "dur": 1.277,
+  "in": 0.0
+ },
+ {
+  "start": 122.741,
+  "section": "verse",
+  "clip": "k30-a",
+  "line": "",
+  "why": "action",
+  "end": 124.041,
+  "dur": 1.3,
+  "in": 3.4
+ },
+ {
+  "start": 124.041,
+  "section": "chorus",
+  "clip": "k31-b",
+  "line": "",
+  "why": "action",
+  "end": 124.413,
+  "dur": 0.372,
+  "in": 3.4
+ },
+ {
+  "start": 124.413,
+  "section": "chorus",
+  "clip": "k36-b",
+  "line": "",
+  "why": "action",
+  "end": 124.691,
+  "dur": 0.278,
+  "in": 3.4
+ },
+ {
+  "start": 124.691,
+  "section": "chorus",
+  "clip": "k01-a",
+  "line": "",
+  "why": "action",
+  "end": 125.318,
+  "dur": 0.627,
+  "in": 5.1
+ },
+ {
+  "start": 125.318,
+  "section": "chorus",
+  "clip": "k02-b",
+  "line": "",
+  "why": "action",
+  "end": 125.991,
+  "dur": 0.673,
+  "in": 5.1
+ },
+ {
+  "start": 125.991,
+  "section": "chorus",
+  "clip": "k03-a",
+  "line": "",
+  "why": "action",
+  "end": 126.642,
+  "dur": 0.651,
+  "in": 5.1
+ },
+ {
+  "start": 126.642,
+  "section": "chorus",
+  "clip": "k04-a",
+  "line": "",
+  "why": "action",
+  "end": 127.292,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 127.292,
+  "section": "chorus",
+  "clip": "k06-b",
+  "line": "",
+  "why": "action",
+  "end": 127.942,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 127.942,
+  "section": "chorus",
+  "clip": "k07-a",
+  "line": "",
+  "why": "action",
+  "end": 128.569,
+  "dur": 0.627,
+  "in": 5.1
+ },
+ {
+  "start": 128.569,
+  "section": "chorus",
+  "clip": "k09-a",
+  "line": "",
+  "why": "action",
+  "end": 129.219,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 129.219,
+  "section": "chorus",
+  "clip": "c03-b",
+  "line": "debasement, it happened in da basement",
+  "why": "lyric shot (cut 2)",
+  "end": 129.869,
+  "dur": 0.65,
+  "in": 3.4
+ },
+ {
+  "start": 129.869,
+  "section": "chorus",
+  "clip": "k10-a",
+  "line": "",
+  "why": "action",
+  "end": 130.496,
+  "dur": 0.627,
+  "in": 5.1
+ },
+ {
+  "start": 130.496,
+  "section": "chorus",
+  "clip": "k11-a",
+  "line": "",
+  "why": "action",
+  "end": 131.146,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 131.146,
+  "section": "chorus",
+  "clip": "k12-a",
+  "line": "",
+  "why": "action",
+  "end": 131.796,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 131.796,
+  "section": "chorus",
+  "clip": "c04-a",
+  "line": "printer is burning",
+  "why": "lyric shot (cut 2)",
+  "end": 132.423,
+  "dur": 0.627,
+  "in": 3.4
+ },
+ {
+  "start": 132.423,
+  "section": "chorus",
+  "clip": "k13-b",
+  "line": "",
+  "why": "action",
+  "end": 133.074,
+  "dur": 0.651,
+  "in": 5.1
+ },
+ {
+  "start": 133.074,
+  "section": "chorus",
+  "clip": "k16-a",
+  "line": "",
+  "why": "action",
+  "end": 133.724,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 133.724,
+  "section": "chorus",
+  "clip": "k18-a",
+  "line": "",
+  "why": "action",
+  "end": 134.374,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 134.374,
+  "section": "chorus",
+  "clip": "k19-a",
+  "line": "",
+  "why": "action",
+  "end": 134.745,
+  "dur": 0.371,
+  "in": 5.1
+ },
+ {
+  "start": 134.745,
+  "section": "chorus",
+  "clip": "k21-a",
+  "line": "",
+  "why": "action",
+  "end": 135.024,
+  "dur": 0.279,
+  "in": 5.1
+ },
+ {
+  "start": 135.024,
+  "section": "chorus",
+  "clip": "k22-b",
+  "line": "",
+  "why": "action",
+  "end": 135.651,
+  "dur": 0.627,
+  "in": 5.1
+ },
+ {
+  "start": 135.651,
+  "section": "chorus",
+  "clip": "k23-a",
+  "line": "",
+  "why": "action",
+  "end": 136.301,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 136.301,
+  "section": "chorus",
+  "clip": "c02-a",
+  "line": "call the police, it's a robbery",
+  "why": "lyric shot (cut 2)",
+  "end": 136.951,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 136.951,
+  "section": "chorus",
+  "clip": "k24-a",
+  "line": "",
+  "why": "action",
+  "end": 137.601,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 137.601,
+  "section": "chorus",
+  "clip": "k26-a",
+  "line": "",
+  "why": "action",
+  "end": 138.252,
+  "dur": 0.651,
+  "in": 5.1
+ },
+ {
+  "start": 138.252,
+  "section": "chorus",
+  "clip": "k27-b",
+  "line": "",
+  "why": "action",
+  "end": 138.879,
+  "dur": 0.627,
+  "in": 5.1
+ },
+ {
+  "start": 138.879,
+  "section": "chorus",
+  "clip": "k29-a",
+  "line": "",
+  "why": "action",
+  "end": 139.529,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 139.529,
+  "section": "chorus",
+  "clip": "c03-a",
+  "line": "debasement, it happened in da basement",
+  "why": "lyric shot (cut 2)",
+  "end": 140.179,
+  "dur": 0.65,
+  "in": 3.4
+ },
+ {
+  "start": 140.179,
+  "section": "chorus",
+  "clip": "k30-a",
+  "line": "",
+  "why": "action",
+  "end": 140.829,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 140.829,
+  "section": "chorus",
+  "clip": "k31-b",
+  "line": "",
+  "why": "action",
+  "end": 141.479,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 141.479,
+  "section": "chorus",
+  "clip": "k36-b",
+  "line": "",
+  "why": "action",
+  "end": 142.106,
+  "dur": 0.627,
+  "in": 5.1
+ },
+ {
+  "start": 142.106,
+  "section": "chorus",
+  "clip": "c04-b",
+  "line": "printer is burning",
+  "why": "lyric shot (cut 2)",
+  "end": 142.756,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 142.756,
+  "section": "chorus",
+  "clip": "cn:rods3-b",
+  "line": "",
+  "why": "action",
+  "end": 143.406,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 143.406,
+  "section": "chorus",
+  "clip": "cn:safe2-c",
+  "line": "",
+  "why": "action",
+  "end": 143.917,
+  "dur": 0.511,
+  "in": 1.7
+ },
+ {
+  "start": 143.917,
+  "section": "chorus",
+  "clip": "cn:pov2-a",
+  "line": "",
+  "why": "action",
+  "end": 144.567,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 144.567,
+  "section": "break",
+  "clip": "cn:pov1-b",
+  "line": "",
+  "why": "action",
+  "end": 145.984,
+  "dur": 1.417,
+  "in": 1.7
+ },
+ {
+  "start": 145.984,
+  "section": "break",
+  "clip": "d01-b",
+  "line": "who has elastic bands, not plastic hands (e02 not picked)",
+  "why": "lyric shot (cut 2)",
+  "end": 147.284,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 147.284,
+  "section": "break",
+  "clip": "cn:chase1-a",
+  "line": "",
+  "why": "action",
+  "end": 148.561,
+  "dur": 1.277,
+  "in": 1.7
+ },
+ {
+  "start": 148.561,
+  "section": "break",
+  "clip": "cn:chase3-a",
+  "line": "",
+  "why": "action",
+  "end": 149.722,
+  "dur": 1.161,
+  "in": 1.7
+ },
+ {
+  "start": 149.722,
+  "section": "break",
+  "clip": "d01-a",
+  "line": "stacking up the cash by the grands",
+  "why": "lyric shot (cut 2)",
+  "end": 151.139,
+  "dur": 1.417,
+  "in": 3.4
+ },
+ {
+  "start": 151.139,
+  "section": "break",
+  "clip": "cn:safe1-b",
+  "line": "",
+  "why": "action",
+  "end": 152.439,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 152.439,
+  "section": "break",
+  "clip": "e03-a",
+  "line": "standard plans are for the working man",
+  "why": "lyric shot (cut 2)",
+  "end": 153.577,
+  "dur": 1.138,
+  "in": 0.0
+ },
+ {
+  "start": 153.577,
+  "section": "break",
+  "clip": "cn:safe4-b",
+  "line": "",
+  "why": "action",
+  "end": 155.016,
+  "dur": 1.439,
+  "in": 1.7
+ },
+ {
+  "start": 155.016,
+  "section": "verse",
+  "clip": "f01-a",
+  "line": "and this right here is a next level scam",
+  "why": "lyric shot (cut 2)",
+  "end": 156.177,
+  "dur": 1.161,
+  "in": 0.0
+ },
+ {
+  "start": 156.177,
+  "section": "verse",
+  "clip": "cn:rods4-a",
+  "line": "",
+  "why": "action",
+  "end": 157.594,
+  "dur": 1.417,
+  "in": 1.7
+ },
+ {
+  "start": 157.594,
+  "section": "verse",
+  "clip": "cn:rods2-b",
+  "line": "",
+  "why": "action",
+  "end": 158.894,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 158.894,
+  "section": "verse",
+  "clip": "a01-a",
+  "line": "",
+  "why": "action",
+  "end": 160.171,
+  "dur": 1.277,
+  "in": 1.7
+ },
+ {
+  "start": 160.171,
+  "section": "verse",
+  "clip": "f02-a",
+  "line": "'bail' and 'out' will never mean the same",
+  "why": "lyric shot (cut 2)",
+  "end": 161.495,
+  "dur": 1.324,
+  "in": 0.0
+ },
+ {
+  "start": 161.495,
+  "section": "verse",
+  "clip": "a01-b",
+  "line": "",
+  "why": "action",
+  "end": 162.749,
+  "dur": 1.254,
+  "in": 1.7
+ },
+ {
+  "start": 162.749,
+  "section": "verse",
+  "clip": "f03-b",
+  "line": "own the printer and you don't fear winter",
+  "why": "lyric shot (cut 2)",
+  "end": 164.049,
+  "dur": 1.3,
+  "in": 0.0
+ },
+ {
+  "start": 164.049,
+  "section": "verse",
+  "clip": "a02-a",
+  "line": "",
+  "why": "action",
+  "end": 165.233,
+  "dur": 1.184,
+  "in": 1.7
+ },
+ {
+  "start": 165.233,
+  "section": "verse",
+  "clip": "v12-b",
+  "line": "crime is asset inflation, a wealth gap (f04 not picked)",
+  "why": "lyric shot (cut 2)",
+  "end": 166.65,
+  "dur": 1.417,
+  "in": 1.7
+ },
+ {
+  "start": 166.65,
+  "section": "verse",
+  "clip": "a02-b",
+  "line": "",
+  "why": "action",
+  "end": 167.95,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 167.95,
+  "section": "verse",
+  "clip": "a03-a",
+  "line": "",
+  "why": "action",
+  "end": 169.204,
+  "dur": 1.254,
+  "in": 1.7
+ },
+ {
+  "start": 169.204,
+  "section": "verse",
+  "clip": "a03-b",
+  "line": "",
+  "why": "action",
+  "end": 170.504,
+  "dur": 1.3,
+  "in": 1.7
+ },
+ {
+  "start": 170.504,
+  "section": "verse",
+  "clip": "v03-b",
+  "line": "working people get paid in money (f05 not picked)",
+  "why": "lyric shot (cut 2)",
+  "end": 171.781,
+  "dur": 1.277,
+  "in": 1.7
+ },
+ {
+  "start": 171.781,
+  "section": "verse",
+  "clip": "c02-b",
+  "line": "",
+  "why": "action",
+  "end": 173.082,
+  "dur": 1.301,
+  "in": 3.4
+ },
+ {
+  "start": 173.082,
+  "section": "verse",
+  "clip": "d11-a",
+  "line": "so it's not very funny when you print more",
+  "why": "lyric shot (cut 2)",
+  "end": 174.359,
+  "dur": 1.277,
+  "in": 1.7
+ },
+ {
+  "start": 174.359,
+  "section": "verse",
+  "clip": "c03-a",
+  "line": "",
+  "why": "action",
+  "end": 175.009,
+  "dur": 0.65,
+  "in": 5.1
+ },
+ {
+  "start": 175.009,
+  "section": "breath",
+  "clip": "v05-b",
+  "line": "hungry people feed a revolution, retribution (f06 not picked)",
+  "why": "lyric shot (cut 2)",
+  "end": 177.586,
+  "dur": 2.577,
+  "in": 1.7
+ },
+ {
+  "start": 177.586,
+  "section": "breath",
+  "clip": "c03-b",
+  "line": "",
+  "why": "action",
+  "end": 180.21,
+  "dur": 2.624,
+  "in": 1.824
+ },
+ {
+  "start": 180.21,
+  "section": "breath",
+  "clip": "f08-b",
+  "line": "it's time to give, not just to take, but for heaven's sake",
+  "why": "lyric shot (cut 2)",
+  "end": 182.88,
+  "dur": 2.67,
+  "in": 0.0
+ },
+ {
+  "start": 182.88,
+  "section": "breath",
+  "clip": "c04-a",
+  "line": "",
+  "why": "action",
+  "end": 185.62,
+  "dur": 2.74,
+  "in": 1.94
+ },
+ {
+  "start": 185.62,
+  "section": "breath",
+  "clip": "v11-b",
+  "line": "don't just eat cake (f09 not picked)",
+  "why": "lyric shot (cut 2)",
+  "end": 187.64,
+  "dur": 2.02,
+  "in": 1.7
+ },
+ {
+  "start": 187.64,
+  "section": "outro",
+  "clip": "d01-a",
+  "line": "",
+  "why": "action",
+  "end": 188.267,
+  "dur": 0.627,
+  "in": 5.1
+ },
+ {
+  "start": 188.267,
+  "section": "outro",
+  "clip": "x02-a",
+  "line": "",
+  "why": "action",
+  "end": 188.755,
+  "dur": 0.488,
+  "in": 1.7
+ },
+ {
+  "start": 188.755,
+  "section": "outro",
+  "clip": "x03-b",
+  "line": "",
+  "why": "action",
+  "end": 189.243,
+  "dur": 0.488,
+  "in": 1.7
+ },
+ {
+  "start": 189.243,
+  "section": "outro",
+  "clip": "x04-a",
+  "line": "",
+  "why": "action",
+  "end": 189.893,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 189.893,
+  "section": "outro",
+  "clip": "x06-a",
+  "line": "",
+  "why": "action",
+  "end": 190.52,
+  "dur": 0.627,
+  "in": 1.7
+ },
+ {
+  "start": 190.52,
+  "section": "outro",
+  "clip": "x07-b",
+  "line": "",
+  "why": "action",
+  "end": 191.17,
+  "dur": 0.65,
+  "in": 1.7
+ },
+ {
+  "start": 191.17,
+  "section": "outro",
+  "clip": "k01-a",
+  "line": "",
+  "why": "action",
+  "end": 191.82,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 191.82,
+  "section": "outro",
+  "clip": "k02-b",
+  "line": "",
+  "why": "action",
+  "end": 192.47,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 192.47,
+  "section": "outro",
+  "clip": "k03-a",
+  "line": "",
+  "why": "action",
+  "end": 193.097,
+  "dur": 0.627,
+  "in": 1.527
+ },
+ {
+  "start": 193.097,
+  "section": "outro",
+  "clip": "k04-a",
+  "line": "",
+  "why": "action",
+  "end": 193.747,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 193.747,
+  "section": "outro",
+  "clip": "k06-b",
+  "line": "",
+  "why": "action",
+  "end": 194.072,
+  "dur": 0.325,
+  "in": 1.225
+ },
+ {
+  "start": 194.072,
+  "section": "outro",
+  "clip": "k07-a",
+  "line": "",
+  "why": "action",
+  "end": 194.397,
+  "dur": 0.325,
+  "in": 1.225
+ },
+ {
+  "start": 194.397,
+  "section": "outro",
+  "clip": "k09-a",
+  "line": "",
+  "why": "action",
+  "end": 195.048,
+  "dur": 0.651,
+  "in": 1.551
+ },
+ {
+  "start": 195.048,
+  "section": "outro",
+  "clip": "k10-a",
+  "line": "",
+  "why": "action",
+  "end": 195.698,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 195.698,
+  "section": "outro",
+  "clip": "k11-a",
+  "line": "",
+  "why": "action",
+  "end": 196.325,
+  "dur": 0.627,
+  "in": 1.527
+ },
+ {
+  "start": 196.325,
+  "section": "outro",
+  "clip": "k12-a",
+  "line": "",
+  "why": "action",
+  "end": 196.975,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 196.975,
+  "section": "outro",
+  "clip": "k13-b",
+  "line": "",
+  "why": "action",
+  "end": 197.625,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 197.625,
+  "section": "outro",
+  "clip": "k16-a",
+  "line": "",
+  "why": "action",
+  "end": 198.275,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 198.275,
+  "section": "outro",
+  "clip": "k18-a",
+  "line": "",
+  "why": "action",
+  "end": 198.902,
+  "dur": 0.627,
+  "in": 1.527
+ },
+ {
+  "start": 198.902,
+  "section": "outro",
+  "clip": "k19-a",
+  "line": "",
+  "why": "action",
+  "end": 199.227,
+  "dur": 0.325,
+  "in": 1.225
+ },
+ {
+  "start": 199.227,
+  "section": "outro",
+  "clip": "k21-a",
+  "line": "",
+  "why": "action",
+  "end": 199.552,
+  "dur": 0.325,
+  "in": 1.225
+ },
+ {
+  "start": 199.552,
+  "section": "outro",
+  "clip": "k22-b",
+  "line": "",
+  "why": "action",
+  "end": 200.202,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 200.202,
+  "section": "outro",
+  "clip": "k23-a",
+  "line": "",
+  "why": "action",
+  "end": 200.829,
+  "dur": 0.627,
+  "in": 1.527
+ },
+ {
+  "start": 200.829,
+  "section": "outro",
+  "clip": "k24-a",
+  "line": "",
+  "why": "action",
+  "end": 201.48,
+  "dur": 0.651,
+  "in": 1.551
+ },
+ {
+  "start": 201.48,
+  "section": "outro",
+  "clip": "k26-a",
+  "line": "",
+  "why": "action",
+  "end": 202.13,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 202.13,
+  "section": "outro",
+  "clip": "k27-b",
+  "line": "",
+  "why": "action",
+  "end": 202.78,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 202.78,
+  "section": "outro",
+  "clip": "k29-a",
+  "line": "",
+  "why": "action",
+  "end": 203.43,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 203.43,
+  "section": "outro",
+  "clip": "k30-a",
+  "line": "",
+  "why": "action",
+  "end": 204.08,
+  "dur": 0.65,
+  "in": 1.55
+ },
+ {
+  "start": 204.08,
+  "section": "outro",
+  "clip": "k31-b",
+  "line": "",
+  "why": "action",
+  "end": 205.0,
+  "dur": 0.92,
+  "in": 1.82
+ },
+ {
+  "start": 205.0,
+  "section": "outro",
+  "clip": "k01-a",
+  "line": "Robbery! (outro)",
+  "why": "the walk away from the explosion, held to the end",
+  "end": 209.6,
+  "dur": 4.6,
+  "in": 0.7
+ }
+]

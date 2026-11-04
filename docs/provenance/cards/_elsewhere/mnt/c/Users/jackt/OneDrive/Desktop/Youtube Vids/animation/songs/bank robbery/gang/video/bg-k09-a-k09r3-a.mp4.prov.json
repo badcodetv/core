@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k09-a-k09r3-a.mp4",
+ "made": "2026-11-04T12:10:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The wooden speedboat on the left keeps leaping through its wake, bow high, then drops and slaps back onto the water in a wide fan of white spray. The man in the stern foreground holds his point at the horizon, dead still, and lowers his chin to glance at the pocket watch in his other hand. The searchlight beam stays fixed. Wardrobe and crates unchanged. SFX: engine snarl, a heavy splash, wind and spray.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k09r3-a.jpg",
+ "why": "mv-gang r3 action clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k09r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k09-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:55:43.938Z"
+ }
+}

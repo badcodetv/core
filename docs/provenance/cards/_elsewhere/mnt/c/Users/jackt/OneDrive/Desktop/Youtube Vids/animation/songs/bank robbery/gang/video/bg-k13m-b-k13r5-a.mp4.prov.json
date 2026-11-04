@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-k13m-b-k13r5-a.mp4",
+ "made": "2026-11-04T18:28:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, high angle holds. From the first frame the bare bulb swings hard on its flex, its hard shadows sweeping across the tiled floor and crates. All five men stay frozen, arms locked, dead serious. On the second second, all five drop their thumbs at the same instant like a pistol hammer, and the man with the banana does the same, then they hold perfectly still. Smoke drifts in the beam. Masks and gloves unchanged; no one else enters. SFX: creaking flex, five tiny clicks in unison, low hum.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k13r5-a.jpg",
+ "why": "mask fix of k13-b (r3/mask-audit.md): new still k13r5-a, same motion as k13-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/k13r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "k13m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T18:26:53.713Z"
+ }
+}

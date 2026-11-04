@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-g08-b-g08r3-b.mp4",
+ "made": "2026-11-04T15:49:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The plum-masked man in the mustard suit performs to the lens from the first instant, mock-grand like a stage magician. On the first beat he wiggles his spread glove at the lens; on the next he snaps it into a fist and pops it open again; then he swirls it in a slow showy circle, head tilting the other way with each beat, shoulders bouncing. His hidden hand keeps the folded banknote and slides it deeper into his jacket pocket. Mask, gloves and suit never change. No speech; footlight hum, cloth rustle.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g08r3-b.jpg",
+ "why": "mv-gang r3 gesture clip (picked gesture still), writer gw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g08r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "g08-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:36:10.501Z"
+ }
+}

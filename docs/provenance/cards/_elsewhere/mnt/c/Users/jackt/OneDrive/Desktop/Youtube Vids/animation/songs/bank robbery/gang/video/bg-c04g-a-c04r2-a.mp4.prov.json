@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-c04g-a-c04r2-a.mp4",
+ "made": "2026-11-04T15:33:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. The man in the cream suit performs hard in front of the burning press, starting at once. First beat: his pointing arm snaps out straighter at the lens. Next beat: the pocket hand rips out and both palms pump down, hold it down, knees bouncing. Next: he thumbs back over his shoulder at the fire without looking, then shrugs huge, palms up. Then a fist thumps his chest twice, far too solemn, head nodding. Flames and drifting burning notes continue behind him. No speech; fire crackle, cloth.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c04r2-a.jpg",
+ "why": "mv-gang r3 gesture clip (redo of c04-a), writer gw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/c04r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "c04g-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T15:19:47.448Z"
+ }
+}

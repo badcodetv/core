@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-d02m-b-d02r5-a.mp4",
+ "made": "2026-11-04T17:53:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The white flash fades to dim night light over two seconds. The masked man finishes his stumble: one heavy step down onto the next stair, gloved arm still shielding his head, then he holds still, crouched. The sack drops onto the step and stays there. The few banknotes drift slowly down and settle on the stairs. Mask, gloves and suit unchanged; the wall and stairs stay the same; nothing else enters. SFX: a flash bulb pop, a boot on stone, papers fluttering.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d02r5-a.jpg",
+ "why": "mask fix of d02-b (r3/mask-audit.md): new still d02r5-a, same motion as d02-b",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/d02r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "d02m-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T17:40:31.483Z"
+ }
+}
