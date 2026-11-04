@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/16-woman-a.wav",
+ "made": "2026-11-03T17:39:18+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "model": "Gemini TTS",
+ "why": "bridge r2 line 16 p0: If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+ "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quick and wry, deadpan, all in one breath with no pause.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+ "settings": {
+  "voice": "Autonoe"
+ }
+}

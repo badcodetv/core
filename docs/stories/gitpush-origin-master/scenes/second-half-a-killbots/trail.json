@@ -141,5 +141,163 @@
   "decided": [
    "sd-01 (picked on the page, no note)"
   ]
+ },
+ {
+  "at": "2026-11-03T17:52:38+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 9 (A-d7): row lip sync v3 (23->8 pieces, x1.00-1.15; ~184 credits) + stand-down SD01 from sd-01 (~48 credits); Premiere gpom-2-A-killbots-r6 in sync",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d7 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <out>"
+ },
+ {
+  "at": "2026-11-03T18:49:38+00:00",
+  "stage": "picks",
+  "round": 10,
+  "url": "https://claude.ai/artifact/68gvs7rpQGBJh53iny8G2h",
+  "what": "retreat stills rt-01..06 (Kai at4914: wider, far from the door, turning away)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/feedback/retreat-picks.json <out>/index.html"
+ },
+ {
+  "at": "2026-11-03T18:49:38+00:00",
+  "stage": "other",
+  "round": 10,
+  "what": "cut A-d8 built (not yet published): 1I (at1721, at2320), row re-cut (at3201, at3312, at3490), boss no 'Maddie' (at4564); 191 s",
+  "decided": [
+   "Kai r9 notes dumped to feedback/timeline-r9"
+  ]
+ },
+ {
+  "at": "2026-11-03T18:55:06+00:00",
+  "stage": "picks",
+  "round": 10,
+  "url": "https://claude.ai/artifact/68gvs7rpQGBJh53iny8G2h",
+  "what": "Kai picked rt-01 for the retreat",
+  "decided": [
+   "rt-01 (picked on the page, no note)"
+  ]
+ },
+ {
+  "at": "2026-11-03T19:19:00+00:00",
+  "stage": "picks",
+  "round": 10,
+  "url": "https://claude.ai/artifact/68gvs7rpQGBJh53iny8G2h",
+  "what": "retreat round 2 (already turned) pick",
+  "decided": [
+   "rt-01c-2"
+  ]
+ },
+ {
+  "at": "2026-11-03T19:33:06+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 10 (A-d8): Kai's r9 notes (1I, row re-cut, boss no name, beacon after tune) + retreat RT01 (rt-01c-2, t8 from 2.5 s; 8 RT takes ~100-200 credits); Premiere gpom-2-A-killbots-r7 in sync",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d8 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <out>"
+ },
+ {
+  "at": "2026-11-04T10:34:22+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/LYGVbM8hFn2dQ7kM2EBZbb",
+  "what": "intro angle stills: side dolly + overhead for beat 0 (Kai, 4 Nov)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/feedback/intro-angle-picks.json <scratchpad>/picks-ia/index.html"
+ },
+ {
+  "at": "2026-11-04T10:53:30+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/LYGVbM8hFn2dQ7kM2EBZbb",
+  "what": "intro angle picks: side ia-02-c, overhead ia-05-b",
+  "decided": [
+   "side ia-02-c (45-degree is fine), overhead ia-05-b; the camera moves with Maddie at her speed down the road"
+  ]
+ },
+ {
+  "at": "2026-11-04T11:11:54+00:00",
+  "stage": "timeline",
+  "round": 11,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 11: beat 0 cut between front, side and overhead views (cut A-d9); Premiere gpom-2-A-killbots-r8",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d9 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-04T13:54:31+00:00",
+  "stage": "timeline",
+  "round": 11,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Kai's round 11 notes: only the overhead shot (grainy CRT look, too fast, too many parking bays)",
+  "decided": [
+   "so close... we just need to recut that one video"
+  ]
+ },
+ {
+  "at": "2026-11-04T13:56:14+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/LYGVbM8hFn2dQ7kM2EBZbb",
+  "what": "overhead re-do stills: ia-07-a/b (5b edited: no parking bays, no grain)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/feedback/intro-angle-picks-r2.json <scratchpad>/picks-ia/index.html"
+ },
+ {
+  "at": "2026-11-04T17:05:28+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/LYGVbM8hFn2dQ7kM2EBZbb",
+  "what": "Kai picked ia-07-a for the overhead",
+  "decided": [
+   "proceed with the one I've picked (ia-07-a)"
+  ]
+ },
+ {
+  "at": "2026-11-04T17:18:29+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 12 (A-d10): overhead re-made from ia-07-a (no bays, no grain), t2 + t3 slowed 0.75x, half-strength grade; Premiere gpom-2-A-killbots-r9 in sync; Veo 3.1 Fast ~3 gens (~60 credits)",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d10 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-04T17:33:29+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Kai's round 12 note: overhead road far too tidy, needs rubble like the other shots",
+  "decided": [
+   "recut these with a much more rubble-strewn road"
+  ]
+ },
+ {
+  "at": "2026-11-04T17:35:31+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/LYGVbM8hFn2dQ7kM2EBZbb",
+  "what": "overhead rubble stills: ia-08-a/b (5b, bays removed), ia-09-a/b (7a + rubble)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/feedback/intro-angle-picks-r3.json <scratchpad>/picks-ia/index.html"
+ },
+ {
+  "at": "2026-11-04T17:36:22+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/LYGVbM8hFn2dQ7kM2EBZbb",
+  "what": "Kai picked ia-09-a (7a with rubble)",
+  "decided": [
+   "ia-09-a"
+  ]
+ },
+ {
+  "at": "2026-11-04T17:43:58+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 13 (A-d11): overhead from ia-09-a (rubble back), t4-b + t4-a slowed 0.75x; Veo 3.1 Fast 1 call x2 (~40 credits); Premiere r10 pending (bridge held by another session)",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d11 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-04T17:48:15+00:00",
+  "stage": "premiere",
+  "round": 13,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Premiere gpom-2-A-killbots-r10 built from A-d11, in sync; r9 to zz old sequences"
  }
 ]

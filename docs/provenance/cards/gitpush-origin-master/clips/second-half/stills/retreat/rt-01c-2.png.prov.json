@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+ "made": "2026-11-03T19:10:16+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "pillow",
+ "tool": "PIL convert jpg->png",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-2r-b.jpg",
+ "why": "GPOM second half A, beat 12 retreat: re-sealed rt-01b with every bot's nose already turned down-left (away from the door) so Omni continues the retreat instead of driving right; option 2, three turned, one finishing its pivot in the chalk crescent (re-roll; first try rt-01c-2-* rejected: pack moved toward the door / two left bots' guns pointed right). Candidate rt-01c-2r-b.",
+ "source_id": "44e1b7c9-3ef8-4995-8db3-532175fdb227"
+}

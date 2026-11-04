@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-sheet.jpg",
+ "made": "2026-11-03T18:48:08+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "why": "Contact sheet of retreat options rt-01..rt-06 (3x2, left to right, top to bottom).",
+ "inputs": {
+  "rt01": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01.png",
+  "rt02": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-02.png",
+  "rt03": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-03.png",
+  "rt04": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-04.png",
+  "rt05": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-05.png",
+  "rt06": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-06.png"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+ "made": "2026-11-04T11:07:25+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r2/video/tvoff-br2-2B-BP1-e-b.mp4",
+ "why": "bridge r3 (Kai timeline r2 at1269): the room shot's last frame (TV off), start of the new boom clip so the heads don't jump"
+}

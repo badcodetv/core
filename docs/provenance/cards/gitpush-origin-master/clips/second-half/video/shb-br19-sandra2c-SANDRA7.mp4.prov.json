@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br19-sandra2c-SANDRA7.mp4",
+ "made": "2026-11-04T17:49:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The woman in the cream cable-knit jumper looks round at the faces beside her and says, deadpan and tired: It sucks living in this bunker with grumpy Derek. Then a small weary shrug. The dark-haired man nearest the camera keeps still. Up on the wall the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA7.jpg",
+ "why": "Kai 4 Nov (timeline r5): the horn hanging; chained from br18's frame at 5.5 s so the cut doesn't jump (r2 at1795).",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA7.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br19-sandra2c",
+  "frame": 19,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T17:48:44.983Z"
+ }
+}

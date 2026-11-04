@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t1-a.mp4",
+ "made": "2026-11-04T11:08:02+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The little grey delivery robot rolls steadily forward along the ruined street, left to right, at a gentle walking pace, its six wheels turning, the torn bunting fluttering, the amber beacon glowing. The camera travels alongside it on a dolly at exactly the robot's speed, so the robot stays in the same place in the frame the whole time while the street moves past: the toppled bin and broken glass in the foreground slide out of frame to the left, and the gutted shopfronts and rubble behind drift steadily past toward the left edge. Smooth, constant tracking movement, no cuts, no zoom, no people, nothing else moving.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "ccf026f7-d1ea-4dc4-afb8-9efb56151fb7",
+ "why": "GPOM scene A beat 0 round D9: USED (see cut3.py ANGLES)"
+}

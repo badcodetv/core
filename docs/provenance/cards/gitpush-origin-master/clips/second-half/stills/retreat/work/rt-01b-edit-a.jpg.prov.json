@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01b-edit-a.jpg",
+ "made": "2026-11-03T18:57:12+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the grey concrete block in the lower right foreground and the leaning wooden fence posts beside it: replace them with the plain grassy turf edge of the ridge, rough tussocky grass curving down out of the bottom right corner. Keep everything else in the image exactly the same: the four tracked robots in their exact positions and angles, the white chalk crescent and dust, the hillside, the bunker with its green doors small at the top right, the grey overcast light and the faded 16mm film grain, preserving the original style, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p1-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "dd1a825d-453f-4819-9789-e92ed5b4f60e",
+ "why": "GPOM second half A retreat: turf-edge edit of rt-01 (block + fence post out). Candidate a, not used (b kept hull detail closer)"
+}

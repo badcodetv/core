@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-08-b.png",
+ "made": "2026-11-04T17:34:16.616Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Take this aerial street picture and alter just two things. First, erase the white parking-bay lines painted along both kerbs, so the tarmac carries only a dashed white centre line and a thin double yellow line at each edge. Second, render it crisp and noise-free, like a modern digital drone photo with no film grain. Everything else stays as it is: all the broken bricks, slates, rubble heaps and weeds scattered across the road surface and pavements, the robot and its spot on the road, the wrecked roofs, the burnt-out car, the camera height and angle, and the grey overcast daylight.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3239858e-60c3-4ea0-acc7-db846367bbd0"
+}

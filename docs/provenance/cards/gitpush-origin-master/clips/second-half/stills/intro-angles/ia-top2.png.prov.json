@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+ "made": "2026-11-04T17:05:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "copy",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-07-a.png",
+ "why": "Kai's pick for the overhead re-do (picks r2, 4 Nov)"
+}

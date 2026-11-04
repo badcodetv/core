@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA7.jpg",
+ "made": "2026-11-04T17:47:51+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br18-sandra1c-SANDRA6.mp4",
+ "why": "chain frame: br18's frame at 5.5 s (Sandra done speaking), the start of her second half (br19)",
+ "settings": {
+  "t": "5.5"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r3/split/17-a.wav",
+ "made": "2026-11-04T11:17:48+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py --round 3",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge3/17-lady-a.wav",
+ "why": "old lady vote phrase 1/2 (0-2.30 s)"
+}

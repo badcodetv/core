@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+ "made": "2026-11-04T17:30:51+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "google-flow",
+ "tool": "flow_edit_image",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP4-lady-c-a.jpg",
+ "why": "Kai's round 6 pick, copied as the start image for the re-shoot"
+}

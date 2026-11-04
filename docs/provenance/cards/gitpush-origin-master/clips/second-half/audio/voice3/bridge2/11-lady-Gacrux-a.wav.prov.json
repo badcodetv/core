@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/11-lady-Gacrux-a.wav",
+ "made": "2026-11-03T17:39:17+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "model": "Gemini TTS",
+ "why": "bridge r2 line 11 p0: Derek, go and have a look what that was.",
+ "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a quiet order, turning to him.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+ "settings": {
+  "voice": "Gacrux"
+ }
+}

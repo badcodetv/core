@@ -1,0 +1,28 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01-t3.mp4",
+ "made": "2026-11-03T17:47:36+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera does not move, fixed to the robot's hull. For the first second the robot is still skidding a little way forward up the hill, tracks locked and ploughing deeper into the turf, the grass sliding in toward us under the hull; its nose dips as it comes to a dead stop. From then on hull, tracks and ground are frozen in place. The dust it threw up keeps travelling onward up the slope, away from us, slowly spreading and fading, and a few clods patter down into the grass ahead. The bunker on the skyline stays small. Heavy 16mm grain. The camera does not move.",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8,
+  "mode": "Frames",
+  "frames": "start",
+  "credits": "12",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ },
+ "source_id": "54eec2c3-9b20-4489-ad52-65648b5e9250",
+ "why": "GPOM second half A, beat 12 stand-down; take 3 of sd-01 (asked for a forward skid), REJECTED: no skid, a burst of large clods at 0.5 s and clods still flying 2-4.5 s across the HUD window"
+}

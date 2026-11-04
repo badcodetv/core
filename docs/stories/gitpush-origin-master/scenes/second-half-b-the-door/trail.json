@@ -1,186 +1,331 @@
 [
- {
-  "at": "2026-10-27T08:28:21+00:00",
-  "stage": "dialogue",
-  "round": 1,
-  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "what": "dialogue options: Maddie's intro + the doorstep (10 writers, 3 drafts each)",
-  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html"
- },
- {
-  "at": "2026-10-27T12:26:57+00:00",
-  "stage": "dialogue",
-  "round": 2,
-  "url": "https://claude.ai/artifact/Upi87NkHcqp3RgaGRrCBCP",
-  "what": "doorstep second-chance ideas: 7 Sonnet web researchers + Fable (high) options, 8 routes ranked",
-  "rebuild": "python3 scripts/design/build-reading-page.py design/2026-10-27-gpom-doorstep-second-chance/options.md design/2026-10-27-gpom-doorstep-second-chance.html --appendix design/2026-10-27-gpom-doorstep-second-chance --appendix-title 'The research in full' --title 'GPOM Doorstep Second Chance'"
- },
- {
-  "at": "2026-10-27T12:44:10+00:00",
-  "stage": "dialogue",
-  "round": 2,
-  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "what": "doorstep round 2: drafts 2D/2E/2F (slower opening, data-only, Derek off)",
-  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r2.json",
-  "decided": [
-   "Fable's option 2 + 'he's just the message' is the base; slow the opening ('we both wish it hadn't happened that way' / 'well it did and here we are'); time machine in subtly; Derek positive, not the conclusion; keep 'come back tomorrow'; 'you still can'; only data goes back; bus stays for the end"
-  ]
- },
- {
-  "at": "2026-10-27T17:25:31+00:00",
-  "stage": "dialogue",
-  "round": 3,
-  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "what": "dialogue round 3: 1D (intro) and 2G (doorstep) with Kai's line notes",
-  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r3.json",
-  "decided": [
-   "Kai r2 notes (feedback/r2/notes): 1A + his three lines; 2D reordered with 'what nonsense', drive question, data only, trust answered by 'believing it is your bit'; Derek in; no whisper, roll-away only"
-  ]
- },
- {
-  "at": "2026-10-27T18:49:18+00:00",
-  "stage": "dialogue",
-  "round": 4,
-  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "what": "dialogue options: doorstep 2H (Kai's round-3 line notes)",
-  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r4.json",
-  "decided": [
-   "Kai: 'apart from that, we're really there' — line 6 bare time machine, Sandra 'Amen', thought experiment, crowd cacophony, 'so now we can', Derek 'I'd love to go back'"
-  ]
- },
- {
-  "at": "2026-10-27T19:24:03+00:00",
-  "stage": "timeline",
-  "round": 2,
-  "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
-  "what": "the doorstep, draft 2H from the dialogue page; also in Premiere as gpom-3-B-door-r3 (in sync)",
-  "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D1 && python3 scripts/gpom/second-half-video/cut3.py B --tag d1 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out-dir>",
-  "decided": [
-   "Kai, 27 Oct: Sandra says just \"Amen\"; \"please go ahead and let's get the dialogue recut\""
-  ],
-  "feedback": "feedback/timeline-r2",
-  "feedback_docs": 2
- },
- {
-  "at": "2026-10-28T12:12:08+00:00",
-  "stage": "dialogue",
-  "round": 5,
-  "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-  "what": "dialogue options: short doorstep (2I, 2J, 2K) from Kai's watch note",
-  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r5.json"
- },
- {
-  "at": "2026-10-28T12:21:13+00:00",
-  "stage": "timeline",
-  "round": 3,
-  "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
-  "what": "scene B round 3: the short doorstep, draft 2J (1:08); Premiere gpom-3-B-door-r4",
-  "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D2 && python3 scripts/gpom/second-half-video/cut3.py B --tag d2 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>",
-  "decided": [
-   "Kai, 28 Oct: \"The price on the table is how we do this. Yeah, let's get it cut\""
-  ],
-  "feedback": "feedback/timeline-r3",
-  "feedback_docs": 2
- },
- {
-  "at": "2026-10-28T16:51:05+00:00",
-  "stage": "timeline",
-  "round": 4,
-  "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
-  "what": "scene B round 4: the bridge, no doorstep talk (0:34); Premiere gpom-3-B-door-r5; Kai's words in feedback/watch-2026-10-28/kai-chat-bridge.md",
-  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py B --tag br && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>",
-  "decided": [
-   "Kai, 28 Oct: \"by spelling it out it's boring, and removes mystery\" ... \"go for it ... we can lose the time machine as a stated idea\""
-  ]
- },
- {
-  "at": "2026-11-02T16:00:01+00:00",
-  "stage": "dialogue",
-  "round": 3,
-  "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
-  "what": "door/proof: 1F picked",
-  "decided": [
-   "Kai: 'I think we've got a script.' 1F; film F1 then F2 then F3; overlay NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; card 'The next day.'"
-  ]
- },
- {
-  "at": "2026-11-02T16:24:44+00:00",
-  "stage": "moodboard",
-  "round": 1,
-  "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
-  "what": "bridge stills (draft 1F film + periscope): BP1 faces/screen, BP2 Derek at periscope, BP3 periscope view; Flow project 20b33d98, Nano Banana 2",
-  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-stills-picks.json <out.html> (media: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/)"
- },
- {
-  "at": "2026-11-02T16:40:39+00:00",
-  "stage": "moodboard",
-  "round": 1,
-  "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
-  "what": "bridge stills round 1 picks + notes",
-  "decided": [
-   "Kai picks: faces BP1-a-b; Derek BP2-a-a; film race wa-05 (race page); scene A wa-02 (gpom-second-half's). Notes: screen must match the faces shot (TV not under the megaphone) -> BP1-e; periscope view: Maddie in shot (she sits outside the door), kill bot turned away so it isn't threatening -> BP3-c/BP3-d"
-  ],
-  "feedback": "feedback/moodboard-r1",
-  "feedback_docs": 6
- },
- {
-  "at": "2026-11-02T19:37:50+00:00",
-  "stage": "moodboard",
-  "round": 2,
-  "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
-  "what": "bridge stills round 2 picks + notes; round 3 = destroyed kill bot (BP3-e, Nano Banana 2.1)",
-  "decided": [
-   "Kai: screen BP1-e-b ('the screen in the distance and the megaphone... use this'); drop the faces-lit-by-screen shots entirely, one consistent setup; Derek BP2-a-a; view BP3-d-a with Maddie in shot, but the kill bot must be clearly destroyed (it could reactivate otherwise); don't watch the explosion"
-  ],
-  "feedback": "feedback/moodboard-r2",
-  "feedback_docs": 4
- },
- {
-  "at": "2026-11-02T19:47:48+00:00",
-  "stage": "moodboard",
-  "round": 3,
-  "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
-  "what": "bridge stills round 3: all picked",
-  "decided": [
-   "Kai: BP3-e-a ('that destroyed bot is exactly the right shot now'). Stills set complete: room BP1-e-b, Derek BP2-a-a, view BP3-e-a, film race wa-05"
-  ],
-  "feedback": "feedback/moodboard-r3",
-  "feedback_docs": 4
- },
- {
-  "at": "2026-11-02T19:58:13+00:00",
-  "stage": "dialogue",
-  "round": 4,
-  "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
-  "what": "draft 1G: the boom heard, not seen",
-  "decided": [
-   "Kai: 'we hear the explosion... let's just hear it' (option a)"
-  ]
- },
- {
-  "at": "2026-11-02T20:01:12+00:00",
-  "stage": "picks",
-  "what": "Derek still: keep BP2-a-a",
-  "decided": [
-   "Kai: the room shot (BP1-e-b) is already lit; the darkened Derek goes much darker. Measured mean brightness: room 65, BP2-a-a 64, BP2-d-b 17. Keep BP2-a-a; match the colour (a red tint) in post."
-  ]
- },
- {
-  "at": "2026-11-02T20:04:23+00:00",
-  "stage": "storyboard",
-  "round": 1,
-  "url": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW",
-  "what": "bridge storyboard: 5 frames, 2-3 shot-craft animation options each",
-  "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door design/2026-11-02-gpom-bridge-storyboard.html"
- },
- {
-  "at": "2026-11-03T16:32:14+00:00",
-  "stage": "storyboard",
-  "round": 1,
-  "url": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW",
-  "what": "storyboard picks: all recommended (by chat; page db empty, note in feedback/storyboard-r1/kai-chat-2026-11-03.md)",
-  "decided": [
-   "Kai 3 Nov (chat): all recommended — 1A, 2B, 3A, 4A, 5A; clips br1..br5, ~5 credits"
-  ]
- }
+  {
+    "at": "2026-10-27T08:28:21+00:00",
+    "stage": "dialogue",
+    "round": 1,
+    "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+    "what": "dialogue options: Maddie's intro + the doorstep (10 writers, 3 drafts each)",
+    "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html"
+  },
+  {
+    "at": "2026-10-27T12:26:57+00:00",
+    "stage": "dialogue",
+    "round": 2,
+    "url": "https://claude.ai/artifact/Upi87NkHcqp3RgaGRrCBCP",
+    "what": "doorstep second-chance ideas: 7 Sonnet web researchers + Fable (high) options, 8 routes ranked",
+    "rebuild": "python3 scripts/design/build-reading-page.py design/2026-10-27-gpom-doorstep-second-chance/options.md design/2026-10-27-gpom-doorstep-second-chance.html --appendix design/2026-10-27-gpom-doorstep-second-chance --appendix-title 'The research in full' --title 'GPOM Doorstep Second Chance'"
+  },
+  {
+    "at": "2026-10-27T12:44:10+00:00",
+    "stage": "dialogue",
+    "round": 2,
+    "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+    "what": "doorstep round 2: drafts 2D/2E/2F (slower opening, data-only, Derek off)",
+    "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r2.json",
+    "decided": [
+      "Fable's option 2 + 'he's just the message' is the base; slow the opening ('we both wish it hadn't happened that way' / 'well it did and here we are'); time machine in subtly; Derek positive, not the conclusion; keep 'come back tomorrow'; 'you still can'; only data goes back; bus stays for the end"
+    ]
+  },
+  {
+    "at": "2026-10-27T17:25:31+00:00",
+    "stage": "dialogue",
+    "round": 3,
+    "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+    "what": "dialogue round 3: 1D (intro) and 2G (doorstep) with Kai's line notes",
+    "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r3.json",
+    "decided": [
+      "Kai r2 notes (feedback/r2/notes): 1A + his three lines; 2D reordered with 'what nonsense', drive question, data only, trust answered by 'believing it is your bit'; Derek in; no whisper, roll-away only"
+    ]
+  },
+  {
+    "at": "2026-10-27T18:49:18+00:00",
+    "stage": "dialogue",
+    "round": 4,
+    "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+    "what": "dialogue options: doorstep 2H (Kai's round-3 line notes)",
+    "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r4.json",
+    "decided": [
+      "Kai: 'apart from that, we're really there' — line 6 bare time machine, Sandra 'Amen', thought experiment, crowd cacophony, 'so now we can', Derek 'I'd love to go back'"
+    ]
+  },
+  {
+    "at": "2026-10-27T19:24:03+00:00",
+    "stage": "timeline",
+    "round": 2,
+    "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+    "what": "the doorstep, draft 2H from the dialogue page; also in Premiere as gpom-3-B-door-r3 (in sync)",
+    "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D1 && python3 scripts/gpom/second-half-video/cut3.py B --tag d1 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out-dir>",
+    "decided": [
+      "Kai, 27 Oct: Sandra says just \"Amen\"; \"please go ahead and let's get the dialogue recut\""
+    ],
+    "feedback": "feedback/timeline-r2",
+    "feedback_docs": 2
+  },
+  {
+    "at": "2026-10-28T12:12:08+00:00",
+    "stage": "dialogue",
+    "round": 5,
+    "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+    "what": "dialogue options: short doorstep (2I, 2J, 2K) from Kai's watch note",
+    "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-10-26-gpom-dialogue-options/options.json design/2026-10-26-gpom-dialogue-options.html --notes design/2026-10-26-gpom-dialogue-options/notes-r5.json"
+  },
+  {
+    "at": "2026-10-28T12:21:13+00:00",
+    "stage": "timeline",
+    "round": 3,
+    "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+    "what": "scene B round 3: the short doorstep, draft 2J (1:08); Premiere gpom-3-B-door-r4",
+    "rebuild": "python3 scripts/gpom/second-half-video/voice3.py --round D2 && python3 scripts/gpom/second-half-video/cut3.py B --tag d2 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>",
+    "decided": [
+      "Kai, 28 Oct: \"The price on the table is how we do this. Yeah, let's get it cut\""
+    ],
+    "feedback": "feedback/timeline-r3",
+    "feedback_docs": 2
+  },
+  {
+    "at": "2026-10-28T16:51:05+00:00",
+    "stage": "timeline",
+    "round": 4,
+    "url": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+    "what": "scene B round 4: the bridge, no doorstep talk (0:34); Premiere gpom-3-B-door-r5; Kai's words in feedback/watch-2026-10-28/kai-chat-bridge.md",
+    "rebuild": "python3 scripts/gpom/second-half-video/cut3.py B --tag br && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>",
+    "decided": [
+      "Kai, 28 Oct: \"by spelling it out it's boring, and removes mystery\" ... \"go for it ... we can lose the time machine as a stated idea\""
+    ]
+  },
+  {
+    "at": "2026-11-02T16:00:01+00:00",
+    "stage": "dialogue",
+    "round": 3,
+    "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+    "what": "door/proof: 1F picked",
+    "decided": [
+      "Kai: 'I think we've got a script.' 1F; film F1 then F2 then F3; overlay NEW OBJECTIVE: SUSTAIN ORGANIC LIFE; card 'The next day.'"
+    ]
+  },
+  {
+    "at": "2026-11-02T16:24:44+00:00",
+    "stage": "moodboard",
+    "round": 1,
+    "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
+    "what": "bridge stills (draft 1F film + periscope): BP1 faces/screen, BP2 Derek at periscope, BP3 periscope view; Flow project 20b33d98, Nano Banana 2",
+    "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-stills-picks.json <out.html> (media: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/)"
+  },
+  {
+    "at": "2026-11-02T16:40:39+00:00",
+    "stage": "moodboard",
+    "round": 1,
+    "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
+    "what": "bridge stills round 1 picks + notes",
+    "decided": [
+      "Kai picks: faces BP1-a-b; Derek BP2-a-a; film race wa-05 (race page); scene A wa-02 (gpom-second-half's). Notes: screen must match the faces shot (TV not under the megaphone) -> BP1-e; periscope view: Maddie in shot (she sits outside the door), kill bot turned away so it isn't threatening -> BP3-c/BP3-d"
+    ],
+    "feedback": "feedback/moodboard-r1",
+    "feedback_docs": 6
+  },
+  {
+    "at": "2026-11-02T19:37:50+00:00",
+    "stage": "moodboard",
+    "round": 2,
+    "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
+    "what": "bridge stills round 2 picks + notes; round 3 = destroyed kill bot (BP3-e, Nano Banana 2.1)",
+    "decided": [
+      "Kai: screen BP1-e-b ('the screen in the distance and the megaphone... use this'); drop the faces-lit-by-screen shots entirely, one consistent setup; Derek BP2-a-a; view BP3-d-a with Maddie in shot, but the kill bot must be clearly destroyed (it could reactivate otherwise); don't watch the explosion"
+    ],
+    "feedback": "feedback/moodboard-r2",
+    "feedback_docs": 4
+  },
+  {
+    "at": "2026-11-02T19:47:48+00:00",
+    "stage": "moodboard",
+    "round": 3,
+    "url": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
+    "what": "bridge stills round 3: all picked",
+    "decided": [
+      "Kai: BP3-e-a ('that destroyed bot is exactly the right shot now'). Stills set complete: room BP1-e-b, Derek BP2-a-a, view BP3-e-a, film race wa-05"
+    ],
+    "feedback": "feedback/moodboard-r3",
+    "feedback_docs": 4
+  },
+  {
+    "at": "2026-11-02T19:58:13+00:00",
+    "stage": "dialogue",
+    "round": 4,
+    "url": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+    "what": "draft 1G: the boom heard, not seen",
+    "decided": [
+      "Kai: 'we hear the explosion... let's just hear it' (option a)"
+    ]
+  },
+  {
+    "at": "2026-11-02T20:01:12+00:00",
+    "stage": "picks",
+    "what": "Derek still: keep BP2-a-a",
+    "decided": [
+      "Kai: the room shot (BP1-e-b) is already lit; the darkened Derek goes much darker. Measured mean brightness: room 65, BP2-a-a 64, BP2-d-b 17. Keep BP2-a-a; match the colour (a red tint) in post."
+    ]
+  },
+  {
+    "at": "2026-11-02T20:04:23+00:00",
+    "stage": "storyboard",
+    "round": 1,
+    "url": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW",
+    "what": "bridge storyboard: 5 frames, 2-3 shot-craft animation options each",
+    "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door design/2026-11-02-gpom-bridge-storyboard.html"
+  },
+  {
+    "at": "2026-11-03T16:32:14+00:00",
+    "stage": "storyboard",
+    "round": 1,
+    "url": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW",
+    "what": "storyboard picks: all recommended (by chat; page db empty, note in feedback/storyboard-r1/kai-chat-2026-11-03.md)",
+    "decided": [
+      "Kai 3 Nov (chat): all recommended — 1A, 2B, 3A, 4A, 5A; clips br1..br5, ~5 credits"
+    ]
+  },
+  {
+    "at": "2026-11-03T17:15:58+00:00",
+    "stage": "timeline",
+    "round": 1,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "bridge rough cut round 1 (draft 1G voiced, five new clips + stand-ins, 98 s)",
+    "rebuild": "python3 scripts/gpom/second-half-video/voice-bridge.py && python3 scripts/gpom/second-half-video/cut-bridge.py && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>"
+  },
+  {
+    "at": "2026-11-03T17:35:48+00:00",
+    "stage": "timeline",
+    "round": 1,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "Kai's 17 notes on round 1, answered on the page",
+    "decided": [
+      "Kai 3 Nov (timeline r1): static far too loud; hear 'You killed everybody'; TV off until the film and after; film: lose the first half; old lady asks Derek to look; Derek shorter, says 'they've blown up their own kill bots'; Maddie's 'come back tomorrow' via the tannoy inside; Sandra seen, no swearing, no pause; Derek 'Oi' on screen; old lady new voice, new words, quicker"
+    ],
+    "feedback": "feedback/timeline-r1",
+    "feedback_docs": 17
+  },
+  {
+    "at": "2026-11-03T17:44:42+00:00",
+    "stage": "picks",
+    "round": 2,
+    "url": "https://claude.ai/artifact/FnDZVwKFUsFdf4X813sKKt",
+    "what": "round 2 picks: the old lady's new voice (3) and stills for the debate's talking shots (BP4 lady, BP5 Sandra, BP6 Derek)",
+    "rebuild": "python3 scripts/gpom/second-half-video/voice-bridge.py --round 2 && python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r2-picks.json <out>"
+  },
+  {
+    "at": "2026-11-03T18:47:36+00:00",
+    "stage": "picks",
+    "round": 2,
+    "url": "https://claude.ai/artifact/FnDZVwKFUsFdf4X813sKKt",
+    "what": "Kai's round 2 picks",
+    "decided": [
+      "Kai 3 Nov: old lady voice Vindemiatrix (Yorkshire); still BP4-lady-b",
+      "Kai 3 Nov: Sandra still BP5-sandra-b",
+      "Kai 3 Nov: no Derek shot; his 'Oi' over Sandra's shot, maybe hands up; no 180-degree reverse for one word"
+    ],
+    "feedback": "feedback/picks-r2",
+    "feedback_docs": 4
+  },
+  {
+    "at": "2026-11-03T19:25:41+00:00",
+    "stage": "timeline",
+    "round": 2,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "bridge round 2: timeline r1 notes + round 2 picks; 7 new clips, old lady in Vindemiatrix, 91 s",
+    "rebuild": "python3 scripts/gpom/second-half-video/voice-bridge.py --round 2 && ~/.cache/badcode-lips/venv/bin/python scripts/gpom/second-half-video/tv-off.py (br2, br3) && python3 scripts/gpom/second-half-video/cut-bridge.py --round 2 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door <out>"
+  },
+  {
+    "at": "2026-11-04T11:18:53+00:00",
+    "stage": "timeline",
+    "round": 3,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "bridge round 3 (1:27): Hello there coy; lip-sync by eye; A-d8 film; boom + Sandra chained; no Oi; short vote line",
+    "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door /tmp/claude-1000/-home-kai-projects-badcode-badcode/d5544cdc-7aae-4f3b-b8a6-a6114b83a0b6/scratchpad/bridge-timeline"
+  },
+  {
+    "at": "2026-11-04T11:19:00+00:00",
+    "stage": "timeline",
+    "round": 2,
+    "what": "Kai's 9 timeline round 2 notes, dumped to feedback/bridge-timeline-r2 (timeline-r2 is the old door scene's)",
+    "decided": [
+      "Kai 4 Nov: Hello there, coy; no Oi; vote line = We do have a food problem. Perhaps we should vote., in her Derek voice; use A's far-from-door stand-down; no jumps at the boom and Sandra cuts; fix the lip-sync"
+    ],
+    "feedback": "feedback/bridge-timeline-r2",
+    "feedback_docs": 9
+  },
+  {
+    "at": "2026-11-04T13:53:26+00:00",
+    "stage": "timeline",
+    "round": 4,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "round 4: lip-sync nudges (old lady 0.95, Sandra phrase 2 at 3.67), vote line shortened; 1:24",
+    "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door /tmp/claude-1000/-home-kai-projects-badcode-badcode/d5544cdc-7aae-4f3b-b8a6-a6114b83a0b6/scratchpad/bridge-timeline"
+  },
+  {
+    "at": "2026-11-04T13:53:00+00:00",
+    "stage": "timeline",
+    "round": 3,
+    "what": "Kai's 3 new timeline round 3 notes (29 docs dumped; the rest are rounds 1-2), dumped to feedback/bridge-timeline-r3 (timeline-r3 is the old door scene's)",
+    "decided": [
+      "Kai 4 Nov: mainly lip-sync; old lady's voice before her mouth opens; Sandra's 'I'd love to take it' 200-300 ms early, don't chase our tail; she says just 'Perhaps we should vote'"
+    ],
+    "feedback": "feedback/bridge-timeline-r3",
+    "feedback_docs": 29
+  },
+  {
+    "at": "2026-11-04T14:20:00+00:00",
+    "stage": "timeline",
+    "round": 4,
+    "what": "Kai's 5 new timeline round 4 notes (34 docs dumped; the rest are earlier rounds), dumped to feedback/bridge-timeline-r4 (timeline-r4 belongs to the old door scene)",
+    "decided": [
+      "Kai 4 Nov: '...And everything else' said sincerely, landing as a joke; 'You killed everybody' bolder, less muffled; the TV box/film bigger, no red border; half a second of pause before 'Perhaps we should vote'"
+    ],
+    "feedback": "feedback/bridge-timeline-r4",
+    "feedback_docs": 34
+  },
+  {
+    "at": "2026-11-04T14:21:00+00:00",
+    "stage": "timeline",
+    "round": 5,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "round 5 (1:25): Maddie's aside re-voiced, door shout clearer, TV screen box enlarged, vote pause",
+    "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door /tmp/claude-1000/-home-kai-projects-badcode-badcode/d5544cdc-7aae-4f3b-b8a6-a6114b83a0b6/scratchpad/bridge-timeline"
+  },
+  {
+    "at": "2026-11-04T17:30:00+00:00",
+    "stage": "timeline",
+    "round": 5,
+    "what": "Kai's 3 new timeline round 5 notes (37 docs dumped; the rest are earlier rounds), dumped to feedback/bridge-timeline-r5",
+    "decided": [
+      "Kai 4 Nov: 10 options for Maddie's '...And everything else' (subdued, apologetic, serious, regretful); re-cut 'Derek, go and have a look' (cap, horn upright); a 'Hmmm' before 'Perhaps we should vote'; the horn hangs down in every shot after the boom"
+    ],
+    "feedback": "feedback/bridge-timeline-r5",
+    "feedback_docs": 37
+  },
+  {
+    "at": "2026-11-04T17:31:00+00:00",
+    "stage": "picks",
+    "round": 6,
+    "url": "https://claude.ai/artifact/Li9PdKYRWKuuGVsVJ9cD9S",
+    "what": "bridge round 6 picks: 10 aside readings, 3 hums, horn-down stills for the old lady and Sandra",
+    "rebuild": "python3 scripts/gpom/second-half-video/voice-options-aside.py && python3 scripts/gpom/second-half-video/voice-hmm.py && python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/bridge-r6-picks.json <scratch>/bridge-picks6/index.html"
+  },
+  {
+    "at": "2026-11-04T17:32:00+00:00",
+    "stage": "timeline",
+    "round": 6,
+    "url": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
+    "what": "round 6 answers on the page (cut unchanged: still round 5) pointing at the picks page",
+    "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-b-the-door /tmp/claude-1000/-home-kai-projects-badcode-badcode/d5544cdc-7aae-4f3b-b8a6-a6114b83a0b6/scratchpad/bridge-timeline"
+  },
+  {
+    "at": "2026-11-04T18:00:00+00:00",
+    "stage": "picks",
+    "round": 6,
+    "what": "Kai's round 6 picks (4)",
+    "decided": [
+      "Kai 4 Nov: aside reading 2 (catch in the throat); hum b; old lady still a (BP4-lady-c-a); Sandra still c (BP5-sandra-c-c)"
+    ],
+    "feedback": "feedback/bridge-picks-r6",
+    "feedback_docs": 4
+  }
 ]

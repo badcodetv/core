@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r5/preview.mp4",
+ "made": "2026-11-04T14:05:22+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py",
+ "why": "bridge round 5 rough cut",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r5/edl.json"
+ }
+}

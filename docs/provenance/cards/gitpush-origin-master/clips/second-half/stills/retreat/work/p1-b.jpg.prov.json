@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p1-b.jpg",
+ "made": "2026-11-03T18:41:32.994Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the chalk down, the grey light and the film look, the second image for the concrete bunker entrance with its shut green doors and how far down the slope the robots stopped, and the third image for the tracked robot's design: a high, wide view from up on the ridge beside the bunker, looking down and across the whole long slope. In the near corner of the frame, the turfed concrete shoulder of the bunker and a leaning fence post, the green doors just visible and small at the far right edge. Far below, halfway down the hillside, five tracked robots like the one in the third image are wheeling round where they stopped: two are already side-on and pointing back downhill, one is mid-pivot with a crescent of torn turf and white chalk under its tracks, the last two still face up the hill. A long empty stretch of grass lies between them and the doors. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d46d3d5d-5b1b-48dd-a31e-834ec2fd7895"
+}

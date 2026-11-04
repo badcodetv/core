@@ -431,7 +431,7 @@
    "what": "round 7: opens on the card \"Some negotiation later.\", then the long walk (0:47); scene B cut from the film",
    "how": "scripts/scene/premiere-plan.py <edl> <plan> --tag r2 --seq gpom-4-C-walkout-r2 (line files under cut-later/premiere/r2/lines/); cut_end.py --tag later wrote a new media folder, so r1 keeps its own files",
    "check": {
-    "at": "2026-11-03T16:31",
+    "at": "2026-11-04T17:48",
     "state": "in sync",
     "why": ""
    }

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-0-v3-t4.mp4",
+ "made": "2026-11-03T17:19:14.544Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Static frame, nothing but the people moves. Facing us, Sandra in her cable-knit jumper aims a finger at her husband. Her first word is long and drawn out in disbelief, then the rest comes in one bitter run. She says: Five years underground, and you still can't put a seat down. When the sentence ends her mouth closes and she glares. Her husband, seen from behind, holds still and says nothing.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "14c1d39c-1e23-4be9-b47f-ef12396e983a"
+}

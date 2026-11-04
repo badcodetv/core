@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+ "made": "2026-11-03T17:41:42.393Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image as the place and the second image as the woman, make a new frame in the same tunnel. A mid close-up of the old woman from the second image (same face, grey hair, glasses, dark green knitted cardigan), standing among the crowd of survivors in the whitewashed brick vault, seen from the front, slightly to one side of the frame. Behind her, high on the curved wall, the cream loudspeaker horn now hangs tilted downwards on its bent bracket after a blast, a little dust still drifting in the air. The only light is the small bare bulb on the wall beside the horn, warm, falling across her face from one side; the crowd behind her fade into soft shadow. Her mouth is closed; she is about to speak, practical and unimpressed. 1980s BBC 16mm documentary look: faded colour, soft contrast, heavy grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+   "/home/kai/.cache/badcode-refs/bridge/lady.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "bb25d699-5c1e-4741-a47e-60bff2d2e8a5"
+}

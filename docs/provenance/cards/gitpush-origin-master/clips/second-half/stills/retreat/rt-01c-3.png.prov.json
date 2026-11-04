@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-3.png",
+ "made": "2026-11-03T19:10:16+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "pillow",
+ "tool": "PIL convert jpg->png",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-3r-a.jpg",
+ "why": "GPOM second half A, beat 12 retreat: re-sealed rt-01b with every bot's nose already turned down-left (away from the door) so Omni continues the retreat instead of driving right; option 3, pack bunched, heavy dust (re-roll; first try rt-01c-3-* rejected: only three bots visible). Candidate rt-01c-3r-a.",
+ "source_id": "561ee6a4-fb15-462c-bdbb-a12d48480929"
+}

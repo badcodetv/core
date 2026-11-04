@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-01-a.png",
+ "made": "2026-11-04T10:28:29.273Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the ruined English high street, the grey overcast light and the film look, and the second image exactly for the robot's design (dented boxy grey body, six chunky black wheels, amber beacon on a short stalk, torn faded bunting strung across its wheels): a side-on tracking shot, the camera on a dolly travelling alongside the robot at its own speed, low at wheel height, about two metres away. The robot fills the middle third of the frame in full profile, rolling left to right down the middle of the cracked road, all six wheels visible, the bunting fluttering back from the wheels. Behind it, the gutted shopfronts on the far side of the street are smeared into a slight horizontal motion blur: smashed windows, rubble on the pavement, a church tower far down the street at the right edge. Bricks and broken slates on the tarmac in the sharp foreground. The amber beacon is the one warm point in the frame. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, no lens flares. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/b0/full12.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/b0/full12.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "20f16537-a3d7-461e-9ecf-9a534127cbd7"
+}

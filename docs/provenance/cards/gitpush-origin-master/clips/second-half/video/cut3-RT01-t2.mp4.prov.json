@@ -1,0 +1,28 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t2.mp4",
+ "made": "2026-11-03T19:03:29+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Fixed tripod, no cuts: the view stays exactly where it is while the four tracked robots retreat. Each robot pivots on its tracks until its nose points at the left edge of the picture, then rolls off leftward along the hillside toward the valley on the far left, its back to the green doors, getting smaller. Heavy machines: hulls lurch and sway over the bumps, tracks churn, chalk dust and clods of turf kick up behind each one. The green doors at top right stay shut and still. Real speed, 16mm film grain, natural motion blur.",
+ "model": "Omni Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8,
+  "credits": "25",
+  "mode": "Frames",
+  "frames": "start",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ },
+ "source_id": "b293a9e4-f9f0-4dba-be39-61fa028575a7",
+ "why": "GPOM second half A, beat 12 retreat; take 2 of rt-01b, REJECTED: the pack still drives right toward the mound/door side (keeps the plate's rightward headings) instead of turning about and leaving left; weight and dust good"
+}

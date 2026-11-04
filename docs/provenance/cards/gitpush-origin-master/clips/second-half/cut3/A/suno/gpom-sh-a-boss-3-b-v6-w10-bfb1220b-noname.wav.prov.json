@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b-noname.wav",
+ "made": "2026-11-03T18:39:54+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atrim/afade/concat",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A/suno/gpom-sh-a-boss-3-b-v6-w10-bfb1220b.wav",
+ "why": "Kai at4564 (3 Nov): drop the second 'Maddie' from the boss's line 3; whisper hears 'No. Thank you. I will handle it.'",
+ "settings": {
+  "keep": "0-2.12 (fade 2.05-2.12) + 2.70-end"
+ }
+}

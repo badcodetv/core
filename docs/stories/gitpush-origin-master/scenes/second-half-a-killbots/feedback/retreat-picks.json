@@ -1,0 +1,117 @@
+{
+ "title": "Retreat Picks",
+ "eyebrow": "GPOM second half · scene A · picks",
+ "heading": "After the stand-down: a wide retreat",
+ "intro": "Round 2. You picked rt-01, but the video model wouldn't turn the bots round: in all four takes they kept driving the way their noses pointed, right, toward the door. So here is rt-01 again with every bot already turned to face down-left, away from the door, and the concrete block painted out. The clip then just carries them on down the hill. Pick one. Claude's pick: rt-01c-2.",
+ "sections": [
+  {
+   "h": "Round 2: already turned",
+   "lede": "Same camera and light as your pick; the bots already face away from the door.",
+   "groups": [
+    {
+     "slot": "rt-retreat-2",
+     "title": "Retreat start frame",
+     "line": "Pick one; the clip continues them down the slope.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "rt-01c-2",
+       "src": "rt/rt-01c-2.jpg",
+       "label": "rt-01c-2: closest to your rt-01 layout; three turned, one finishing its turn in the chalk crescent (Claude's pick)"
+      },
+      {
+       "id": "rt-01c-1",
+       "src": "rt/rt-01c-1.jpg",
+       "label": "rt-01c-1: all four turned and rolling, each with its own chalk loop",
+       "warn": "the pack is rearranged into one even line, a bit like a parade"
+      },
+      {
+       "id": "rt-01c-3",
+       "src": "rt/rt-01c-3.jpg",
+       "label": "rt-01c-3: bunched, heavy dust rolling up toward the door",
+       "warn": "the fourth bot is half lost in the dust; bots drawn bigger"
+      },
+      {
+       "id": "rt-01b",
+       "src": "rt/rt-01b.jpg",
+       "label": "for reference: rt-01b, your pick cleaned up (bots still facing right: this is the one that wouldn't turn)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 1 (picked rt-01)",
+   "lede": "The shot before it (the stand-down, sd-01) and the shot being replaced (V10r, at the door).",
+   "groups": [
+    {
+     "slot": "rt-ref",
+     "title": "Before and now",
+     "line": "No pick needed here.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "sd01",
+       "src": "rt/before-sd01.jpg",
+       "label": "before: the stand-down"
+      },
+      {
+       "id": "now",
+       "src": "rt/now-v10r.jpg",
+       "label": "now: V10r, filing away at the door"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The retreat",
+   "lede": "Pick one. A note on the row is welcome.",
+   "groups": [
+    {
+     "slot": "rt-retreat",
+     "title": "Retreat (replaces V10r)",
+     "line": "Wide, far from the door, turning away.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "rt-01",
+       "src": "rt/rt-01.jpg",
+       "label": "rt-01: high wide from the ridge by the bunker, pack well down the hill and turning, one mid-pivot in a chalk crescent (Claude's pick)",
+       "warn": "a stray concrete block in the foreground reads as a second pillbox; easy to paint out"
+      },
+      {
+       "id": "rt-02",
+       "src": "rt/rt-02.jpg",
+       "label": "rt-02: low long lens in the grass, the nearest bot swinging round, clods flying",
+       "warn": "least wide; may read as too close again"
+      },
+      {
+       "id": "rt-03",
+       "src": "rt/rt-03.jpg",
+       "label": "rt-03: steep aerial, chalk hairpin loops where they turned, door tiny",
+       "warn": "the slope has gone flat; loops look designed"
+      },
+      {
+       "id": "rt-04",
+       "src": "rt/rt-04.jpg",
+       "label": "rt-04: the wide approach's own camera, pack higher up heading down-left",
+       "warn": "the turn isn't legible; feels like a repeat of the approach"
+      },
+      {
+       "id": "rt-05",
+       "src": "rt/rt-05.jpg",
+       "label": "rt-05: extreme wide from the next hill over a fence post, pack fanning out down the slope. The widest, the clearest retreat; bots tiny"
+      },
+      {
+       "id": "rt-06",
+       "src": "rt/rt-06.jpg",
+       "label": "rt-06: from the bunker doorway looking down at them filing away",
+       "warn": "doors are open here (shut everywhere else); single file echoes V10r"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

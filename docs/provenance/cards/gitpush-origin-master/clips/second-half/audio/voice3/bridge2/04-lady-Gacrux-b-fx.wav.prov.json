@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/04-lady-Gacrux-b-fx.wav",
+ "made": "2026-11-03T17:39:16+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/04-lady-Gacrux-b.wav",
+ "why": "muffled copy of the pick",
+ "settings": {
+  "fx": "muffled"
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "title": "Bridge Round 6 Picks",
+ "eyebrow": "GPOM · the bridge · timeline round 5 notes",
+ "round": 3,
+ "heading": "Maddie's aside, the old lady's hum, and the horn hanging down",
+ "intro": "From your timeline round 5 notes. Pick one per row. Nothing is spent until you pick. The voices were checked by the speech checker only; nobody has listened.",
+ "sections": [
+  {
+   "h": "Voices",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "aside-r6",
+     "round": 3,
+     "title": "Maddie: \"…And everything else.\"",
+     "line": "Ten readings of subdued, apologetic, serious and regretful, all in her voice and through the tannoy as in the film. The first one is what's in the cut now.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "now",
+       "src": "a/aside-now.mp3",
+       "label": "now (round 5): the straight punchline",
+       "warn": ""
+      },
+      {
+       "id": "1",
+       "src": "a/aside-01.mp3",
+       "label": "1: confession: a quiet confession, barely above a murmur, as the full weight of what she means finally lands on her",
+       "warn": ""
+      },
+      {
+       "id": "2",
+       "src": "a/aside-02.mp3",
+       "label": "2: catch: she stops, a catch in the throat, then says it: owning the enormous thing behind the small words",
+       "warn": ""
+      },
+      {
+       "id": "3",
+       "src": "a/aside-03.mp3",
+       "label": "3: verdict: flat and plain, no performance at all, like reading out a verdict against herself",
+       "warn": ""
+      },
+      {
+       "id": "4",
+       "src": "a/aside-04.mp3",
+       "label": "4: owning up: small and ashamed, like a child owning up to something far too big to fix",
+       "warn": ""
+      },
+      {
+       "id": "5",
+       "src": "a/aside-05.mp3",
+       "label": "5: careful: slow and heavy, each word set down carefully, as if it might break",
+       "warn": ""
+      },
+      {
+       "id": "6",
+       "src": "a/aside-06.mp3",
+       "label": "6: understatement: rueful, knowing the words are absurdly too small for what happened, saying them softly anyway",
+       "warn": ""
+      },
+      {
+       "id": "7",
+       "src": "a/aside-07.mp3",
+       "label": "7: mourner: grief in it: a mourner speaking at a funeral she herself caused",
+       "warn": ""
+      },
+      {
+       "id": "8",
+       "src": "a/aside-08.mp3",
+       "label": "8: formal: a formal, dignified apology she truly means; measured and grave, nothing cute about it",
+       "warn": ""
+      },
+      {
+       "id": "9",
+       "src": "a/aside-09.mp3",
+       "label": "9: exhale: a long breath out first, then the words carried almost on that breath, sad and tired",
+       "warn": ""
+      },
+      {
+       "id": "10",
+       "src": "a/aside-10.mp3",
+       "label": "10: tender: gentle and sincere, warm with regret, as if to someone she hurt and still cares about",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "hmm-r6",
+     "round": 3,
+     "title": "The old lady: \"Hmm…\" before \"Perhaps we should vote.\"",
+     "line": "Her own voice, thinking before she speaks. It goes over her closed mouth, so it doesn't need a new clip.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "a",
+       "src": "a/hmm-a.mp3",
+       "label": "a: 2.04 s",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "a/hmm-b.mp3",
+       "label": "b: 1.56 s",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "a/hmm-c.mp3",
+       "label": "c: 1.68 s",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Stills for the re-shoots (the horn hanging after the boom)",
+   "lede": "Once you pick, these become new talking clips: the old lady's two shots (\"Derek, go and have a look\" and the vote) and Sandra's two. That's 4 video credits, then the lip-sync again.",
+   "groups": [
+    {
+     "slot": "lady-still-r6",
+     "round": 3,
+     "title": "The old lady (both her shots)",
+     "line": "The horn hangs down, and the man on the right has no cap.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "s/lady-now.jpg",
+       "label": "now: horn upright, man in a cap",
+       "warn": ""
+      },
+      {
+       "id": "a",
+       "src": "s/lady-a.jpg",
+       "label": "a: horn drooping, tilted",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "s/lady-b.jpg",
+       "label": "b: horn hanging straight down (my pick)",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "sandra-still-r6",
+     "round": 3,
+     "title": "Sandra (her line's second half is chained from the first clip's frame)",
+     "line": "Only the horn changes.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "s/sandra-now.jpg",
+       "label": "now: horn upright",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "s/sandra-b.jpg",
+       "label": "b: horn drooping",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "s/sandra-c.jpg",
+       "label": "c: horn hanging down (my pick)",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r5/split/16-c.wav",
+ "made": "2026-11-04T14:05:22+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py",
+ "why": "bridge round 5 cut (Kai r4 tweaks)",
+ "settings": {
+  "how": "cut-bridge.py --round 5"
+ }
+}

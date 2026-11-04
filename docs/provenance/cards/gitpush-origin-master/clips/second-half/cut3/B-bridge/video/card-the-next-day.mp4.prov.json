@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge/video/card-the-next-day.mp4",
+ "made": "2026-11-03T17:15:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py",
+ "why": "Kai's card, draft 1G",
+ "settings": {
+  "text": "The next day."
+ }
+}

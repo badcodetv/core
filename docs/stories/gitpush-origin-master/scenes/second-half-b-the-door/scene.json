@@ -40,15 +40,15 @@
     }
   ],
   "boards": {
-    "timeline": "https://claude.ai/artifact/Vz218v2P2kNKhDxQH2U2f8",
+    "timeline": "https://claude.ai/artifact/4uBRnD5yJaUxYjRXaWBcK1",
     "moodboard": "https://claude.ai/artifact/9fjvWaqJn3Gx3d9YGpkgia",
     "storyboard": "https://claude.ai/artifact/B84sEzk2892UiwbovFtfSW"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-br/preview.mp4",
-    "round": "br",
-    "what": "the bridge: the doorstep talk cut, the look, the door shuts, voices behind it (Kai, 28 Oct)"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r5/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r5/preview.mp4",
+    "how": "python3 scripts/gpom/second-half-video/voice-bridge.py --round 4 && python3 scripts/gpom/second-half-video/cut-bridge.py --round 5",
+    "what": "round 5: Kai's timeline r4 tweaks (4 Nov)"
   },
   "premiere": {
     "rough1": {
@@ -161,5 +161,11 @@
     "aspect": "16:9",
     "mode": "Frames"
   },
-  "storyboard_intro": "The bridge (draft 1G): five shots, the stills you picked. Each has 2–3 ways to animate it; the recommended one is marked. Pick one option per frame (or note it). Nothing is spent until you have."
+  "storyboard_intro": "The bridge (draft 1G): five shots, the stills you picked. Each has 2–3 ways to animate it; the recommended one is marked. Pick one option per frame (or note it). Nothing is spent until you have.",
+  "cut_previous": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r4/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r4/preview.mp4",
+    "how": "python3 scripts/gpom/second-half-video/cut-bridge.py --round 4",
+    "what": "round 4: Kai's timeline r3 notes, lip-sync + the vote line (4 Nov)"
+  }
 }

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-03-b.png",
+ "made": "2026-11-04T10:30:38.276Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the bombed-out market-town street, the overcast sky and the grade, and the second image exactly for the little delivery robot (dented boxy grey body, six chunky black wheels, amber beacon on a short stalk, torn faded bunting on its wheels): a wider travelling side view from across the road, as if from a camera car keeping pace, the robot small in profile in the lower half rolling left to right past the shells of a pub, a bookmaker and a charity shop with their glass blown out. Half-fallen scaffolding and a burnt-out car in the gutter between camera and robot, softly blurred by the camera's movement. The street stretches away on both sides, empty of people; the church tower stands above the rooftops. The beacon on the robot is the single spot of warm amber. Hyper-realistic documentary photograph, 35mm film, fine natural grain, muted cool-neutral palette, no lens flares. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/b0/full70.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/b0/full70.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "516ff0e9-073b-4073-86c1-eee24c79d638"
+}

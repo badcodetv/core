@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-v3-t7.mp4",
+ "made": "2026-11-03T17:36:21.004Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Static frame, nothing but the people moves. Caught out, the husband in the green knit jumper lowers his arms and looks his wife in the eye, then gives a slow, sincere apology, lingering on the word sorry. He says: I'm really sorry, love. Then his lips close and he waits, silent. His wife, seen from behind, holds still and says nothing.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 6
+ },
+ "source_id": "cc04f961-c0f0-45ad-993d-77f6222a46f5"
+}

@@ -1,0 +1,138 @@
+{
+ "title": "Intro Angle Picks",
+ "eyebrow": "GPOM second half \u00b7 scene A \u00b7 picks \u00b7 round 2",
+ "heading": "The overhead shot, cleaned up",
+ "intro": "Your round 11 notes: the overhead shot looked grainy, like a CRT monitor, she moved too fast, and there were too many parking bays. The grain came from my still prompt (it asked for film grain) and my colour match made it crunchier. These two are edits of your pick 5b with the bays and grain taken out. Stills only, no video credit spent. Pick one (or note what to change); then I animate it with her crawling at the front-shot pace and soften the colour match.",
+ "sections": [
+  {
+   "h": "Beat 0: overhead view",
+   "lede": "The two overhead moments sit at 0:35 and 1:10.",
+   "groups": [
+    {
+     "slot": "ia-top-now",
+     "title": "For reference: the overhead in round 11",
+     "line": "Grainy, bays down both sides.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "ia/top-now.jpg",
+       "label": "round 11 frame (0:36)"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "ia-top2",
+     "title": "Overhead, cleaned",
+     "line": "Same framing as 5b: no parking bays, a dashed centre line and yellow lines at the kerbs, no grain.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ia-07-a",
+       "src": "ia/ia-07-a.jpg",
+       "label": "7a: cleaned 5b"
+      },
+      {
+       "id": "ia-07-b",
+       "src": "ia/ia-07-b.jpg",
+       "label": "7b: cleaned 5b, second take"
+      }
+     ],
+     "round": 2
+    }
+   ]
+  },
+  {
+   "h": "Beat 0: Maddie on the high street",
+   "lede": "Now: the camera backs up the street in front of her (frame below, for reference).",
+   "groups": [
+    {
+     "slot": "ia-now",
+     "title": "For reference: the shot now",
+     "line": "Not a pick, just the front view these cut with.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "ia/now.jpg",
+       "label": "the front view (current)"
+      }
+     ]
+    },
+    {
+     "slot": "ia-side",
+     "title": "Side: the camera alongside her at her speed",
+     "line": "The shopfronts slide past behind her.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ia-01-a",
+       "src": "ia/ia-01-a.jpg",
+       "label": "1a: low, wheel height, three-quarter"
+      },
+      {
+       "id": "ia-01-b",
+       "src": "ia/ia-01-b.jpg",
+       "label": "1b: low, side-on, further back"
+      },
+      {
+       "id": "ia-02-b",
+       "src": "ia/ia-02-b.jpg",
+       "label": "2b: side-on, bin and glass in the foreground"
+      },
+      {
+       "id": "ia-02-c",
+       "src": "ia/ia-02-c.jpg",
+       "label": "2c: the same, closer"
+      },
+      {
+       "id": "ia-03-b",
+       "src": "ia/ia-03-b.jpg",
+       "label": "3b: wide from across the road, burnt car, the church tower"
+      }
+     ]
+    },
+    {
+     "slot": "ia-top",
+     "title": "Overhead: looking down on her as she drives",
+     "line": "4 = straight down close, 5 = straight down high, 6 = high and behind.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ia-04-a",
+       "src": "ia/ia-04-a.jpg",
+       "label": "4a: straight down, low drone"
+      },
+      {
+       "id": "ia-04-b",
+       "src": "ia/ia-04-b.jpg",
+       "label": "4b: straight down, tighter"
+      },
+      {
+       "id": "ia-05-a",
+       "src": "ia/ia-05-a.jpg",
+       "label": "5a: straight down from rooftop height, whole street"
+      },
+      {
+       "id": "ia-05-b",
+       "src": "ia/ia-05-b.jpg",
+       "label": "5b: the same, burnt car"
+      },
+      {
+       "id": "ia-06-a",
+       "src": "ia/ia-06-a.jpg",
+       "label": "6a: high and behind, looking down the street"
+      },
+      {
+       "id": "ia-06-b",
+       "src": "ia/ia-06-b.jpg",
+       "label": "6b: higher, the church tower ahead"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "round": 2
+}

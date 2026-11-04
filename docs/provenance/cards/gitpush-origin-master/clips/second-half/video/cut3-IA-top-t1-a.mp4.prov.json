@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t1-a.mp4",
+ "made": "2026-11-04T11:08:02+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Seen from high above, the little grey delivery robot with its glowing amber beacon trundles steadily up the centre of the wrecked street toward the top of the frame at a gentle walking pace. The camera flies forward with it at exactly the same speed, looking straight down, so the robot stays in the same spot in the frame while the street scrolls past underneath: the broken roofs, chimney stacks, rubble heaps and the burnt-out car glide steadily down and out of the bottom of the frame as new stretches of ruined terrace come in at the top. Smooth, constant aerial travel, no tilt, no zoom, no people, nothing else moving.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "291b8ad8-6f04-4aba-b9ed-d416a9b2d17c",
+ "why": "GPOM scene A beat 0 round D9: USED (see cut3.py ANGLES)"
+}

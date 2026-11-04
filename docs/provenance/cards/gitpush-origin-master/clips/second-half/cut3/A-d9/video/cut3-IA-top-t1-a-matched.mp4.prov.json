@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d9/video/cut3-IA-top-t1-a-matched.mp4",
+ "made": "2026-11-04T11:08:02+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "cut3.py match_grade",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t1-a.mp4",
+ "why": "GPOM scene A beat 0, round D9: per-channel mean and spread matched to the front travelling shot around its insert point (Kai, 4 Nov: three angles at sentence ends)"
+}

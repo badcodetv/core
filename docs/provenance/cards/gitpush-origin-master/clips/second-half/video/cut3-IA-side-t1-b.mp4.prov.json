@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t1-b.mp4",
+ "made": "2026-11-04T10:56:11.673Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The little grey delivery robot rolls steadily forward along the ruined street, left to right, at a gentle walking pace, its six wheels turning, the torn bunting fluttering, the amber beacon glowing. The camera travels alongside it on a dolly at exactly the robot's speed, so the robot stays in the same place in the frame the whole time while the street moves past: the toppled bin and broken glass in the foreground slide out of frame to the left, and the gutted shopfronts and rubble behind drift steadily past toward the left edge. Smooth, constant tracking movement, no cuts, no zoom, no people, nothing else moving.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "70cbea84-8bdf-4a57-b9ff-2b815a12e693"
+}

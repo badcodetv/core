@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-04-b.png",
+ "made": "2026-11-04T10:31:39.301Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the ruined high street, its rubble and the cold grey light, and the second image exactly for the robot (dented boxy grey body, six chunky black wheels, amber beacon on a short stalk, torn faded bunting across its wheels): a top-down shot looking straight down from about five metres up, like a drone hovering over the street and travelling with it. The robot is seen from directly above in the centre of the frame, its flat grey lid and the amber beacon pointing up at us, wheels and bunting peeking out at its sides, heading toward the top of the frame. Around it the cracked tarmac fills the frame: faded white road markings running past, scattered bricks, roof slates, shattered glass, a drain cover, the kerb and the edge of the pavement along one side with a fallen shop sign face-down. Hyper-realistic documentary photograph, 35mm film, fine natural grain, muted cool-neutral palette, no lens flares. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/b0/full12.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0d90f9d-ddbf-43a5-ae1b-16968b1f6d47/scratchpad/b0/full12.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "82478ca9-23b1-422d-be8b-16ef6bc3d00e"
+}

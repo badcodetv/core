@@ -1,0 +1,30 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br17-lady2c-LADY6-alt.mp4",
+ "made": "2026-11-04T17:45:11+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The grey-haired old woman in glasses turns her head slightly towards a man beside her, out of shot, and says: Derek, go and have a look what that was. Warm light from the little bulb stays on her face; the survivors behind her keep still. Behind her, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+ "why": "Kai 4 Nov (timeline r5, at1408): re-cut; the man looked like he had a cap on, and the horn must hang down after the boom. Round 6 still pick a (LADY6).",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/LADY6.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br16-lady1c",
+  "frame": 16,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T17:31:53.840Z"
+ },
+ "note": "Harvested as br16 but it is br17's first submission (it says 'Perhaps we should vote'): a late tile shifted the batch (flow-late-tile memory). Renamed 4 Nov."
+}

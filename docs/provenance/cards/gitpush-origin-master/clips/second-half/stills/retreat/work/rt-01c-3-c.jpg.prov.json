@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-3-c.jpg",
+ "made": "2026-11-03T19:08:53.582Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Edit the first picture; the second picture shows what each tracked robot looks like. The pack has wheeled about and is pulling away together as one tight cluster, almost touching, hull fronts, turrets and gun barrels all aimed down-left toward the bottom left corner of the frame, the bunker at their backs. Four robots in total, grouped on the left half of the slope roughly where they are now, well below the doors. The grass round them is ripped into overlapping loops of bare white chalk where they spun, and a big billow of pale chalk dust rolls off behind them, up and to the right, hanging over the ground they just left. The rest of the picture does not change: same high viewpoint on the ridge, same hillside, same grassy edge bottom right, same small green bunker doors top right, same flat grey daylight and grainy faded 16mm texture.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "295b56aa-3215-481a-8fa9-50601ff7e544"
+}

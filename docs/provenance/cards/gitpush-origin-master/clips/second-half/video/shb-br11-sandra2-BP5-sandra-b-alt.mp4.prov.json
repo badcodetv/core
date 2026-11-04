@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br11-sandra2-BP5-sandra-b-alt.mp4",
+ "made": "2026-11-03T19:17:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP5-sandra-b.jpg",
+ "why": "Kai 3 Nov: Sandra's second sentence; Derek's 'Oi' over the same shot, the foreground man lifting his hands (Kai: no reverse shot for one word) (misfiled by the runner, renamed by transcript 3 Nov)",
+ "prompt": "The camera does not move. The woman in the cream cable-knit jumper says, deadpan: It sucks living in this bunker with grumpy Derek. [00:04-00:06] the dark-haired man in the foreground turns his head towards her and lifts both hands, palms up, in outraged protest. The camera does not move.",
+ "settings": {
+  "duration": "6"
+ }
+}

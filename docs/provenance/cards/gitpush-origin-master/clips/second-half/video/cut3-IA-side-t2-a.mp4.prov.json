@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+ "made": "2026-11-04T11:08:02+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "A tracking shot: the camera is mounted on a vehicle driving alongside the little grey robot, matching its speed exactly, so the robot keeps exactly the same size and the same position in the frame for the whole shot and never pulls away or gets smaller. The robot's six wheels turn, the torn bunting flaps, the amber beacon glows. Only the world moves: the dented bin and the broken glass in the foreground sweep out of shot to the left within the first second, and the wrecked shopfronts, doorways and piles of brick behind the robot stream continuously past toward the left at walking pace. Smooth and steady, no cuts, no zoom, no people.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "cbc6db86-e089-4f07-91d1-1859fdb2c453",
+ "why": "GPOM scene A beat 0 round D9: USED (see cut3.py ANGLES)"
+}

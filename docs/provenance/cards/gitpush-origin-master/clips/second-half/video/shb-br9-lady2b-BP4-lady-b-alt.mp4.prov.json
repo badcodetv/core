@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br9-lady2b-BP4-lady-b-alt.mp4",
+ "made": "2026-11-03T19:17:46+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP4-lady-b.jpg",
+ "why": "Kai 3 Nov: her new vote line, second half (misfiled by the runner, renamed by transcript 3 Nov)",
+ "prompt": "The camera does not move. The old woman with grey hair and glasses looks at the people around her and says, flat and practical: We do have a food problem. Perhaps we should vote. Then she holds their gaze. The crowd behind her stand still. The camera does not move.",
+ "settings": {
+  "duration": "6"
+ }
+}

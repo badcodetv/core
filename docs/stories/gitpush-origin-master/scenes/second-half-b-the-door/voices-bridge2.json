@@ -1,0 +1,1055 @@
+{
+ "about": "Scene B bridge lines (draft 1G), voiced in Gemini TTS by scripts/gpom/second-half-video/voice-bridge.py. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
+  "picked": "1G",
+  "round": 4,
+  "round_timeline": 1
+ },
+ "lines": [
+  {
+   "i": 0,
+   "who": "bot",
+   "text": "Hey, humans! Sorry about the intrusion.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Hey, humans! Sorry about the intrusion.",
+     "direction": "chirpy and bright, calling out through a megaphone to people behind a steel door",
+     "reused": "bridge/00-bot-a.wav",
+     "fx_file": "bridge2/00-bot-a-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 1,
+   "who": "bot",
+   "text": "[mumbled] ...And everything else.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "...And everything else.",
+     "direction": "mumbled",
+     "reused": "bridge/01-bot-b.wav",
+     "fx_file": "bridge2/01-bot-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 2,
+   "who": "bot",
+   "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "We didn't think there were any of you left.",
+     "direction": null,
+     "reused": "bridge/02-bot-p0-a.wav",
+     "fx_file": "bridge2/02-bot-p0-a-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "But now we've found you... there might be a way we could fix this mess.",
+     "direction": null,
+     "reused": "bridge/02-bot-p1-b.wav",
+     "fx_file": "bridge2/02-bot-p1-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "who": "lady",
+   "text": "Are you literally joking?",
+   "off": false,
+   "fx": null,
+   "voice": "Gacrux",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Are you literally joking?",
+     "direction": "shouting at the door, furious and disbelieving",
+     "audition": {
+      "Gacrux": {
+       "pick": "a",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting at the door, furious and disbelieving.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/03-lady-Gacrux-a.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 2.92,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.1,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/03-lady-Gacrux-b.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 2.68,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.1,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/03-lady-Gacrux-c.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 3.2,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.15,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      },
+      "Vindemiatrix": {
+       "pick": "b",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting at the door, furious and disbelieving.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/03-lady-Vindemiatrix-a.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 3.16,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.12,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/03-lady-Vindemiatrix-b.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 2.96,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.05,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/03-lady-Vindemiatrix-c.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 3.04,
+         "heard": "Are you literally jorking?",
+         "match": 0.98,
+         "gap": 0.15,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      },
+      "Callirrhoe": {
+       "pick": "a",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Birmingham shopkeeper in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting at the door, furious and disbelieving.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Midlands English, as heard in Birmingham; down to earth, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/03-lady-Callirrhoe-a.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 3.08,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.08,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/03-lady-Callirrhoe-b.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 2.84,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.08,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/03-lady-Callirrhoe-c.wav",
+         "spoken": "Are you literally joking?",
+         "duration": 2.6,
+         "heard": "Are you literally joking?",
+         "match": 1.0,
+         "gap": 0.08,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      }
+     },
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting at the door, furious and disbelieving.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge2/03-lady-Gacrux-a.wav",
+       "spoken": "Are you literally joking?",
+       "duration": 2.92,
+       "heard": "Are you literally joking?",
+       "match": 1.0,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge2/03-lady-Gacrux-b.wav",
+       "spoken": "Are you literally joking?",
+       "duration": 2.68,
+       "heard": "Are you literally joking?",
+       "match": 1.0,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge2/03-lady-Gacrux-c.wav",
+       "spoken": "Are you literally joking?",
+       "duration": 3.2,
+       "heard": "Are you literally joking?",
+       "match": 1.0,
+       "gap": 0.15,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [],
+   "audition": [
+    "Gacrux",
+    "Vindemiatrix",
+    "Callirrhoe"
+   ]
+  },
+  {
+   "i": 4,
+   "who": "lady",
+   "text": "You killed everybody!",
+   "off": false,
+   "fx": "muffled",
+   "voice": "Gacrux",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "You killed everybody!",
+     "direction": "shouting, furious, with grief in it",
+     "audition": {
+      "Gacrux": {
+       "pick": "b",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting, furious, with grief in it.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/04-lady-Gacrux-a.wav",
+         "spoken": "You killed everybody!",
+         "duration": 2.68,
+         "heard": "YOU KILLED EVERYBODY!",
+         "match": 1.0,
+         "gap": 0.2,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/04-lady-Gacrux-b.wav",
+         "spoken": "You killed everybody!",
+         "duration": 3.36,
+         "heard": "You killed everybody!",
+         "match": 1.0,
+         "gap": 0.18,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/04-lady-Gacrux-c.wav",
+         "spoken": "You killed everybody!",
+         "duration": 3.04,
+         "heard": "You killed everybody!",
+         "match": 1.0,
+         "gap": 0.2,
+         "status": "ok (attempt 1)"
+        }
+       ],
+       "fx_file": "bridge2/04-lady-Gacrux-b-fx.wav"
+      },
+      "Vindemiatrix": {
+       "pick": "c",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting, furious, with grief in it.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/04-lady-Vindemiatrix-a.wav",
+         "spoken": "You killed everybody!",
+         "duration": 2.44,
+         "heard": "You killed everybody!",
+         "match": 1.0,
+         "gap": 0.23,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/04-lady-Vindemiatrix-b.wav",
+         "spoken": "You killed everybody!",
+         "duration": 2.64,
+         "heard": "YOU KILLED EVERYBODY!",
+         "match": 1.0,
+         "gap": 0.15,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/04-lady-Vindemiatrix-c.wav",
+         "spoken": "You killed everybody!",
+         "duration": 2.6,
+         "heard": "You killed everybody!",
+         "match": 1.0,
+         "gap": 0.12,
+         "status": "ok (attempt 1)"
+        }
+       ],
+       "fx_file": "bridge2/04-lady-Vindemiatrix-c-fx.wav"
+      },
+      "Callirrhoe": {
+       "pick": "b",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Birmingham shopkeeper in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting, furious, with grief in it.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Midlands English, as heard in Birmingham; down to earth, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/04-lady-Callirrhoe-a.wav",
+         "spoken": "You killed everybody!",
+         "duration": 3.04,
+         "heard": "YOU KILLED EVERYBODY!",
+         "match": 1.0,
+         "gap": 0.2,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/04-lady-Callirrhoe-b.wav",
+         "spoken": "You killed everybody!",
+         "duration": 2.84,
+         "heard": "YOU KILLED EVERYBODY!",
+         "match": 1.0,
+         "gap": 0.1,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/04-lady-Callirrhoe-c.wav",
+         "spoken": "You killed everybody!",
+         "duration": 2.84,
+         "heard": "YOU KILLED EVERYBODY!",
+         "match": 1.0,
+         "gap": 0.25,
+         "status": "ok (attempt 1)"
+        }
+       ],
+       "fx_file": "bridge2/04-lady-Callirrhoe-b-fx.wav"
+      }
+     },
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting, furious, with grief in it.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge2/04-lady-Gacrux-a.wav",
+       "spoken": "You killed everybody!",
+       "duration": 2.68,
+       "heard": "YOU KILLED EVERYBODY!",
+       "match": 1.0,
+       "gap": 0.2,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge2/04-lady-Gacrux-b.wav",
+       "spoken": "You killed everybody!",
+       "duration": 3.36,
+       "heard": "You killed everybody!",
+       "match": 1.0,
+       "gap": 0.18,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge2/04-lady-Gacrux-c.wav",
+       "spoken": "You killed everybody!",
+       "duration": 3.04,
+       "heard": "You killed everybody!",
+       "match": 1.0,
+       "gap": 0.2,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge2/04-lady-Gacrux-b-fx.wav"
+    }
+   ],
+   "gaps": [],
+   "audition": [
+    "Gacrux",
+    "Vindemiatrix",
+    "Callirrhoe"
+   ]
+  },
+  {
+   "i": 5,
+   "who": "bot",
+   "text": "Yeah. [pause] That's... that's fair.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Yeah.",
+     "direction": "caught out; quiet and honest, a small wince",
+     "reused": "bridge/05-bot-p0-a.wav",
+     "fx_file": "bridge2/05-bot-p0-a-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "That's... that's fair.",
+     "direction": "caught out; quiet and honest, a small wince",
+     "reused": "bridge/05-bot-p1-c.wav",
+     "fx_file": "bridge2/05-bot-p1-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "who": "bot",
+   "text": "How can we win your trust?",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "How can we win your trust?",
+     "direction": "sincere, a genuine question",
+     "reused": "bridge/06-bot-a.wav",
+     "fx_file": "bridge2/06-bot-a-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 7,
+   "who": "bot",
+   "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Look. We really do understand this has gone the worst way for everybody.",
+     "direction": "answering herself, gently",
+     "reused": "bridge/07-bot-p0-a.wav",
+     "fx_file": "bridge2/07-bot-p0-a-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "I'll leave you a film to watch. It's our best go at proving it.",
+     "direction": "answering herself, gently",
+     "reused": "bridge/07-bot-p1-c.wav",
+     "fx_file": "bridge2/07-bot-p1-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "who": "bot",
+   "text": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Oh, and...",
+     "direction": "brisk, a little pleased with herself",
+     "reused": "bridge/09-bot-p0-c.wav",
+     "fx_file": "bridge2/09-bot-p0-c-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "thought you'd want to hear this bit for yourselves.",
+     "direction": "brisk, a little pleased with herself",
+     "reused": "bridge/09-bot-p1-c.wav",
+     "fx_file": "bridge2/09-bot-p1-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "who": "lady",
+   "text": "Derek, go and have a look what that was.",
+   "off": false,
+   "fx": null,
+   "voice": "Gacrux",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Derek, go and have a look what that was.",
+     "direction": "brisk, a quiet order, turning to him",
+     "audition": {
+      "Gacrux": {
+       "pick": "a",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a quiet order, turning to him.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/11-lady-Gacrux-a.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 3.28,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.23,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/11-lady-Gacrux-b.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 3.32,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.38,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/11-lady-Gacrux-c.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 3.2,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.43,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      },
+      "Vindemiatrix": {
+       "pick": "c",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a quiet order, turning to him.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/11-lady-Vindemiatrix-a.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 2.88,
+         "heard": "Derek, go and have a look at what that was.",
+         "match": 0.962,
+         "gap": 0.35,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/11-lady-Vindemiatrix-b.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 2.92,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.43,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/11-lady-Vindemiatrix-c.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 3.08,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.38,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      },
+      "Callirrhoe": {
+       "pick": "c",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Birmingham shopkeeper in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a quiet order, turning to him.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Midlands English, as heard in Birmingham; down to earth, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/11-lady-Callirrhoe-a.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 2.92,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.38,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/11-lady-Callirrhoe-b.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 3.2,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.55,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/11-lady-Callirrhoe-c.wav",
+         "spoken": "Derek, go and have a look what that was.",
+         "duration": 2.96,
+         "heard": "Derek, go and have a look what that was.",
+         "match": 1.0,
+         "gap": 0.35,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      }
+     },
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a quiet order, turning to him.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge2/11-lady-Gacrux-a.wav",
+       "spoken": "Derek, go and have a look what that was.",
+       "duration": 3.28,
+       "heard": "Derek, go and have a look what that was.",
+       "match": 1.0,
+       "gap": 0.23,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge2/11-lady-Gacrux-b.wav",
+       "spoken": "Derek, go and have a look what that was.",
+       "duration": 3.32,
+       "heard": "Derek, go and have a look what that was.",
+       "match": 1.0,
+       "gap": 0.38,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge2/11-lady-Gacrux-c.wav",
+       "spoken": "Derek, go and have a look what that was.",
+       "duration": 3.2,
+       "heard": "Derek, go and have a look what that was.",
+       "match": 1.0,
+       "gap": 0.43,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [],
+   "audition": [
+    "Gacrux",
+    "Vindemiatrix",
+    "Callirrhoe"
+   ]
+  },
+  {
+   "i": 13,
+   "who": "man",
+   "text": "They've blown up their own kill bot.",
+   "off": true,
+   "fx": null,
+   "voice": "Algieba",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "They've blown up their own kill bot.",
+     "direction": "quietly stunned, half to himself, peering through a periscope",
+     "pick": "c",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quietly stunned, half to himself, peering through a periscope.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge2/13-man-a.wav",
+       "spoken": "They've blown up their own kill bot.",
+       "duration": 2.72,
+       "heard": "They've blown up their own killbot!",
+       "match": 0.986,
+       "gap": 0.23,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge2/13-man-b.wav",
+       "spoken": "They've blown up their own kill bot.",
+       "duration": 3.4,
+       "heard": "HE 'VE BLOWN UP THEIR OWN KILL BOT!",
+       "match": 0.957,
+       "gap": 0.2,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge2/13-man-c.wav",
+       "spoken": "They've blown up their own kill bot.",
+       "duration": 2.72,
+       "heard": "They've blown up their own killbot!",
+       "match": 0.986,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 14,
+   "who": "bot",
+   "text": "Right. I'll come back tomorrow.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Right. I'll come back tomorrow.",
+     "direction": "cheerful, matter-of-fact, signing off",
+     "reused": "bridge/12-bot-c.wav",
+     "fx_file": "bridge2/12-bot-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 16,
+   "who": "woman",
+   "text": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+   "off": false,
+   "fx": null,
+   "voice": "Autonoe",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+     "direction": "quick and wry, deadpan, all in one breath with no pause",
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quick and wry, deadpan, all in one breath with no pause.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge2/16-woman-a.wav",
+       "spoken": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+       "duration": 6.72,
+       "heard": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+       "match": 1.0,
+       "gap": 0.12,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge2/16-woman-b.wav",
+       "spoken": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+       "duration": 6.72,
+       "heard": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker, we grumpy derrick!",
+       "match": 0.959,
+       "gap": 0.38,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge2/16-woman-c.wav",
+       "spoken": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+       "duration": 7.64,
+       "heard": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker, we grumpy Derek.",
+       "match": 0.979,
+       "gap": 0.45,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 17,
+   "who": "man",
+   "text": "Oi.",
+   "off": false,
+   "fx": null,
+   "voice": "Algieba",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Oi.",
+     "direction": "indignant protest, wounded and outraged, like a man accused of leaving the toilet seat up",
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: indignant protest, wounded and outraged, like a man accused of leaving the toilet seat up.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge2/17-man-a.wav",
+       "spoken": "Oi.",
+       "duration": 0.96,
+       "heard": "Oi!",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge2/17-man-b.wav",
+       "spoken": "Oi.",
+       "duration": 0.92,
+       "heard": "Oi!",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge2/17-man-c.wav",
+       "spoken": "Oi.",
+       "duration": 1.16,
+       "heard": "Oi!",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 18,
+   "who": "lady",
+   "text": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+   "off": false,
+   "fx": null,
+   "voice": "Gacrux",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+     "direction": "brisk and matter-of-fact, quick, no long pauses; the practical one",
+     "audition": {
+      "Gacrux": {
+       "pick": "a",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk and matter-of-fact, quick, no long pauses; the practical one.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/18-lady-Gacrux-a.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 7.52,
+         "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote?",
+         "match": 1.0,
+         "gap": 0.62,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/18-lady-Gacrux-b.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 7.48,
+         "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "match": 1.0,
+         "gap": 1.25,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/18-lady-Gacrux-c.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 7.8,
+         "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "match": 1.0,
+         "gap": 0.8,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      },
+      "Vindemiatrix": {
+       "pick": "c",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk and matter-of-fact, quick, no long pauses; the practical one.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/18-lady-Vindemiatrix-a.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 6.6,
+         "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "match": 1.0,
+         "gap": 0.8,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/18-lady-Vindemiatrix-b.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 7.16,
+         "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "match": 1.0,
+         "gap": 0.85,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/18-lady-Vindemiatrix-c.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 6.44,
+         "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "match": 1.0,
+         "gap": 0.65,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      },
+      "Callirrhoe": {
+       "pick": "a",
+       "verified": true,
+       "prompt": "# AUDIO PROFILE\nThe old lady, a retired Birmingham shopkeeper in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk and matter-of-fact, quick, no long pauses; the practical one.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Midlands English, as heard in Birmingham; down to earth, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+       "takes": [
+        {
+         "take": "a",
+         "file": "bridge2/18-lady-Callirrhoe-a.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 6.68,
+         "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "match": 1.0,
+         "gap": 0.55,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "b",
+         "file": "bridge2/18-lady-Callirrhoe-b.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 6.96,
+         "heard": "We know we need to talk about this, we do have a food problem. Perhaps we should vote?",
+         "match": 1.0,
+         "gap": 0.83,
+         "status": "ok (attempt 1)"
+        },
+        {
+         "take": "c",
+         "file": "bridge2/18-lady-Callirrhoe-c.wav",
+         "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+         "duration": 6.44,
+         "heard": "We know we need to talk about this, we do have a food problem, perhaps we should vote.",
+         "match": 1.0,
+         "gap": 0.75,
+         "status": "ok (attempt 1)"
+        }
+       ]
+      }
+     },
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk and matter-of-fact, quick, no long pauses; the practical one.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge2/18-lady-Gacrux-a.wav",
+       "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+       "duration": 7.52,
+       "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote?",
+       "match": 1.0,
+       "gap": 0.62,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge2/18-lady-Gacrux-b.wav",
+       "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+       "duration": 7.48,
+       "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+       "match": 1.0,
+       "gap": 1.25,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge2/18-lady-Gacrux-c.wav",
+       "spoken": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+       "duration": 7.8,
+       "heard": "We know we need to talk about this. We do have a food problem. Perhaps we should vote.",
+       "match": 1.0,
+       "gap": 0.8,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [],
+   "audition": [
+    "Gacrux",
+    "Vindemiatrix",
+    "Callirrhoe"
+   ]
+  }
+ ]
+}

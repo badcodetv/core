@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-a.jpg",
+ "made": "2026-11-03T17:42:46.399Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image as the place and the second image as the woman, make a new frame in the same tunnel. A mid close-up of the woman from the second image (same face, hair tied back, cream cable-knit jumper), standing among the crowd of survivors in the whitewashed brick vault, half-turned towards someone just out of frame, mid-sentence, wry and tired. Behind her, high on the curved wall, the cream loudspeaker horn hangs tilted downwards on its bent bracket after a blast, a little dust still drifting in the air. The only light is the small bare bulb on the wall beside the horn, warm, from one side; faces in the crowd behind her soft in shadow. 1980s BBC 16mm documentary look: faded colour, soft contrast, heavy grain.",
+ "model": "Nano Banana 2.1",
+ "parent": "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/bridge/room-after-boom.jpg",
+   "/home/kai/.cache/badcode-refs/bridge/sandra.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "59c2dbca-bdf2-4cd1-857e-9abc3b4b9e60"
+}

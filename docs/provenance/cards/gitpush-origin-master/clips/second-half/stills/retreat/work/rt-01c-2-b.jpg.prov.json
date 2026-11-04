@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-2-b.jpg",
+ "made": "2026-11-03T19:06:34.280Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image as the scene and the second image for the tracked robot's design, change only the four tracked robots: three of them have already turned right round and are heading off down the slope, their blunt noses and guns pointing down and to the left toward the valley, away from the green doors at the top right. The fourth, nearest the white chalk crescent, is still finishing its pivot inside that crescent, swung most of the way round so it too is nearly facing down-left, its tracks gouging the chalk and kicking up a puff of white dust. Exactly four robots. Fresh chalk scuffs mark where the other three swung round, and a little dust hangs up and to the right behind them, uphill where they came from. Keep everything else in the image exactly the same: the high camera on the ridge, the long slope, the turf edge in the lower right, the bunker with its green doors small at the top right, the grey overcast light and the faded 16mm film grain, preserving the original style, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b1c773b8-5116-4e7f-bc9f-0ab0bb263bc7"
+}

@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-a-slow.mp4",
+ "made": "2026-11-04T17:38:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-a.mp4",
+ "why": "Kai r12: rubble overhead; t4-a ran quicker than t4-b, slowed for the second overhead slot",
+ "settings": {
+  "speed": "0.75"
+ }
+}

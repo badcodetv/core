@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/lip-v3-closures.jpg",
+ "made": "2026-11-03T17:38:33+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "ffmpeg",
+ "tool": "scratchpad contact.py over mouth-track.py strips",
+ "why": "Contact strip: 12 fps tracked mouth vs dub loudness, b/p/m voice moments marked"
+}

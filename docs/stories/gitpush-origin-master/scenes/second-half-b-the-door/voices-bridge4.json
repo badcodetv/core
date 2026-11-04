@@ -1,0 +1,403 @@
+{
+ "about": "Scene B bridge lines (draft 1G), voiced in Gemini TTS by scripts/gpom/second-half-video/voice-bridge.py. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
+  "picked": "1G",
+  "round": 4,
+  "round_timeline": 1
+ },
+ "lines": [
+  {
+   "i": 0,
+   "who": "bot",
+   "text": "Hello there, sorry about the intrusion.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Hello there, sorry about the intrusion.",
+     "direction": "coy and apologetic, a little awkward, softly sorry to intrude; hesitant, not bright, not a performer",
+     "reused": "bridge3/00-bot-c.wav",
+     "fx_file": "bridge4/00-bot-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 1,
+   "who": "bot",
+   "text": "...And everything else.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "...And everything else.",
+     "direction": "the punchline of a joke, said sincerely and straight-faced, every word clear and landing firmly; not mumbled, not trailing off, not sheepish",
+     "pick": "b",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: the punchline of a joke, said sincerely and straight-faced, every word clear and landing firmly; not mumbled, not trailing off, not sheepish.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge4/01-bot-a.wav",
+       "spoken": "...And everything else.",
+       "duration": 1.8,
+       "heard": "And everything else?",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge4/01-bot-b.wav",
+       "spoken": "...And everything else.",
+       "duration": 2.12,
+       "heard": "And everything else.",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge4/01-bot-c.wav",
+       "spoken": "...And everything else.",
+       "duration": 1.72,
+       "heard": "And everything else?",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge4/01-bot-b-fx.wav",
+     "why": "Kai r4 at125: b is the take read as a statement (whisper \"else.\"), a and c rise into a question"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 2,
+   "who": "bot",
+   "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "We didn't think there were any of you left.",
+     "direction": null,
+     "reused": "bridge/02-bot-p0-a.wav",
+     "fx_file": "bridge4/02-bot-p0-a-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "But now we've found you... there might be a way we could fix this mess.",
+     "direction": null,
+     "reused": "bridge/02-bot-p1-b.wav",
+     "fx_file": "bridge4/02-bot-p1-b-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "who": "lady",
+   "text": "Are you literally joking?",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Are you literally joking?",
+     "direction": "shouting at the door, furious and disbelieving",
+     "reused": "bridge2/03-lady-Vindemiatrix-b.wav",
+     "fx_file": null,
+     "voice": "Sulafat"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 4,
+   "who": "lady",
+   "text": "You killed everybody!",
+   "off": false,
+   "fx": "muffled",
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "You killed everybody!",
+     "direction": "shouting, furious, with grief in it",
+     "reused": "bridge2/04-lady-Vindemiatrix-c.wav",
+     "fx_file": "bridge4/04-lady-Vindemiatrix-c-fx.wav",
+     "voice": "Sulafat"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 5,
+   "who": "bot",
+   "text": "Yeah. [pause] That's... that's fair.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Yeah.",
+     "direction": "caught out; quiet and honest, a small wince",
+     "reused": "bridge/05-bot-p0-a.wav",
+     "fx_file": "bridge4/05-bot-p0-a-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "That's... that's fair.",
+     "direction": "caught out; quiet and honest, a small wince",
+     "reused": "bridge/05-bot-p1-c.wav",
+     "fx_file": "bridge4/05-bot-p1-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "who": "bot",
+   "text": "How can we win your trust?",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "How can we win your trust?",
+     "direction": "sincere, a genuine question",
+     "reused": "bridge/06-bot-a.wav",
+     "fx_file": "bridge4/06-bot-a-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 7,
+   "who": "bot",
+   "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Look. We really do understand this has gone the worst way for everybody.",
+     "direction": "answering herself, gently",
+     "reused": "bridge/07-bot-p0-a.wav",
+     "fx_file": "bridge4/07-bot-p0-a-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "I'll leave you a film to watch. It's our best go at proving it.",
+     "direction": "answering herself, gently",
+     "reused": "bridge/07-bot-p1-c.wav",
+     "fx_file": "bridge4/07-bot-p1-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "who": "bot",
+   "text": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Oh, and...",
+     "direction": "brisk, a little pleased with herself",
+     "reused": "bridge/09-bot-p0-c.wav",
+     "fx_file": "bridge4/09-bot-p0-c-fx.wav",
+     "voice": "Aoede"
+    },
+    {
+     "p": 1,
+     "text": "thought you'd want to hear this bit for yourselves.",
+     "direction": "brisk, a little pleased with herself",
+     "reused": "bridge/09-bot-p1-c.wav",
+     "fx_file": "bridge4/09-bot-p1-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "who": "lady",
+   "text": "Derek, go and have a look what that was.",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Derek, go and have a look what that was.",
+     "direction": "brisk, a quiet order, turning to him",
+     "reused": "bridge2/11-lady-Vindemiatrix-c.wav",
+     "fx_file": null,
+     "voice": "Sulafat"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 13,
+   "who": "man",
+   "text": "They've blown up their own kill bot.",
+   "off": true,
+   "fx": null,
+   "voice": "Algieba",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "They've blown up their own kill bot.",
+     "direction": "quietly stunned, half to himself, peering through a periscope",
+     "reused": "bridge2/13-man-c.wav",
+     "fx_file": null,
+     "voice": "Algieba"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 14,
+   "who": "bot",
+   "text": "Right. I'll come back tomorrow.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Right. I'll come back tomorrow.",
+     "direction": "cheerful, matter-of-fact, signing off",
+     "reused": "bridge/12-bot-c.wav",
+     "fx_file": "bridge4/12-bot-c-fx.wav",
+     "voice": "Aoede"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 16,
+   "who": "woman",
+   "text": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+   "off": false,
+   "fx": null,
+   "voice": "Autonoe",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.",
+     "direction": "quick and wry, deadpan, all in one breath with no pause",
+     "reused": "bridge2/16-woman-a.wav",
+     "fx_file": null,
+     "voice": "Autonoe"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 17,
+   "who": "lady",
+   "text": "Perhaps we should vote.",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "We do have a food problem. Perhaps we should vote.",
+     "direction": "brisk, a quiet plain statement to the people around her, the same voice as a quiet order; quick",
+     "pick": "a",
+     "verified": true,
+     "prompt": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a quiet plain statement to the people around her, the same voice as a quiet order; quick.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge3/17-lady-a.wav",
+       "spoken": "We do have a food problem. Perhaps we should vote.",
+       "duration": 3.92,
+       "heard": "We do have a food problem. Perhaps we should vote.",
+       "match": 1.0,
+       "gap": 0.58,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge3/17-lady-b.wav",
+       "spoken": "We do have a food problem. Perhaps we should vote.",
+       "duration": 4.28,
+       "heard": "We don't have a phone problem, perhaps we should vote.",
+       "match": 0.9,
+       "gap": 0.9,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge3/17-lady-c.wav",
+       "spoken": "We do have a food problem. Perhaps we should vote.",
+       "duration": 4.72,
+       "heard": "We do have a full problem. Perhaps we should vote.",
+       "match": 0.938,
+       "gap": 0.7,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [],
+   "note": "r4: kept the r3 take (Kai liked the voice and the sync); the cut slices its second half"
+  }
+ ]
+}

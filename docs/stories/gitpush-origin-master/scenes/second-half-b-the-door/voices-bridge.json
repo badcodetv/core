@@ -1,0 +1,1058 @@
+{
+ "about": "Scene B bridge lines (draft 1G), voiced in Gemini TTS by scripts/gpom/second-half-video/voice-bridge.py. Files are relative to the media folder. Picked by measurement (whisper + longest gap); nobody has listened.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "source": "docs/stories/gitpush-origin-master/scenes/second-half-b-the-door/script.json",
+ "dialogue": {
+  "page": "https://claude.ai/artifact/FTU95rYR2F2tVJnfEXbreB",
+  "options": "design/2026-11-02-gpom-dialogue-door-proof/options.json",
+  "picked": "1G",
+  "round": 4
+ },
+ "lines": [
+  {
+   "i": 0,
+   "who": "bot",
+   "text": "Hey, humans! Sorry about the intrusion.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Hey, humans! Sorry about the intrusion.",
+     "direction": "chirpy and bright, calling out through a megaphone to people behind a steel door",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: chirpy and bright, calling out through a megaphone to people behind a steel door.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/00-bot-a.wav",
+       "spoken": "Hey, humans! Sorry about the intrusion.",
+       "duration": 4.32,
+       "heard": "Hey humans, sorry about the intrusion.",
+       "match": 1.0,
+       "gap": 0.23,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/00-bot-b.wav",
+       "spoken": "Hey, humans! Sorry about the intrusion.",
+       "duration": 4.2,
+       "heard": "Hey humans, sorry about the intrusion.",
+       "match": 1.0,
+       "gap": 0.38,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/00-bot-c.wav",
+       "spoken": "Hey, humans! Sorry about the intrusion.",
+       "duration": 3.92,
+       "heard": "Hey humans, sorry about the intrusion.",
+       "match": 1.0,
+       "gap": 0.23,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/00-bot-a-fx.wav"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 1,
+   "who": "bot",
+   "text": "[mumbled] ...And everything else.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "...And everything else.",
+     "direction": "mumbled",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: mumbled.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/01-bot-a.wav",
+       "spoken": "...And everything else.",
+       "duration": 1.92,
+       "heard": "and everything else.",
+       "match": 1.0,
+       "gap": 0.15,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/01-bot-b.wav",
+       "spoken": "...And everything else.",
+       "duration": 1.52,
+       "heard": "and everything else.",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/01-bot-c.wav",
+       "spoken": "...And everything else.",
+       "duration": 1.88,
+       "heard": "On everything else.",
+       "match": 0.919,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/01-bot-b-fx.wav"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 2,
+   "who": "bot",
+   "text": "We didn't think there were any of you left. [pause] But now we've found you... there might be a way we could fix this mess.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "We didn't think there were any of you left.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/02-bot-p0-a.wav",
+       "spoken": "We didn't think there were any of you left.",
+       "duration": 2.88,
+       "heard": "We didn't think there were any of you left.",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/02-bot-p0-b.wav",
+       "spoken": "We didn't think there were any of you left.",
+       "duration": 2.96,
+       "heard": "We didn't think there were any of you left.",
+       "match": 1.0,
+       "gap": 0.28,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/02-bot-p0-c.wav",
+       "spoken": "We didn't think there were any of you left.",
+       "duration": 3.28,
+       "heard": "We didn't think there were any of you left!",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/02-bot-p0-a-fx.wav"
+    },
+    {
+     "p": 1,
+     "text": "But now we've found you... there might be a way we could fix this mess.",
+     "direction": null,
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/02-bot-p1-a.wav",
+       "spoken": "But now we've found you... there might be a way we could fix this mess.",
+       "duration": 6.0,
+       "heard": "But now we've found you, there might be a way we could fix this mess.",
+       "match": 1.0,
+       "gap": 0.53,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/02-bot-p1-b.wav",
+       "spoken": "But now we've found you... there might be a way we could fix this mess.",
+       "duration": 5.72,
+       "heard": "But now we've found you, there might be a way we could fix this mess.",
+       "match": 1.0,
+       "gap": 0.45,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/02-bot-p1-c.wav",
+       "spoken": "But now we've found you... there might be a way we could fix this mess.",
+       "duration": 5.96,
+       "heard": "But now we've found you, there might be a way we could fix this mess.",
+       "match": 1.0,
+       "gap": 0.85,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/02-bot-p1-b-fx.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "who": "lady",
+   "text": "Are you literally joking?",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Are you literally joking?",
+     "direction": "shouting at the door, furious and disbelieving",
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting at the door, furious and disbelieving.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/03-lady-a.wav",
+       "spoken": "Are you literally joking?",
+       "duration": 3.4,
+       "heard": "Are you literally joking?",
+       "match": 1.0,
+       "gap": 0.18,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/03-lady-b.wav",
+       "spoken": "Are you literally joking?",
+       "duration": 3.4,
+       "heard": "Are you literally joking?",
+       "match": 1.0,
+       "gap": 0.3,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/03-lady-c.wav",
+       "spoken": "Are you literally joking?",
+       "duration": 3.04,
+       "heard": "Are you literally joking?",
+       "match": 1.0,
+       "gap": 0.15,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 4,
+   "who": "lady",
+   "text": "You killed everybody!",
+   "off": false,
+   "fx": "muffled",
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "You killed everybody!",
+     "direction": "shouting, furious, with grief in it",
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting, furious, with grief in it.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/04-lady-a.wav",
+       "spoken": "You killed everybody!",
+       "duration": 3.08,
+       "heard": "YOU KILLED EVERYBODY!",
+       "match": 1.0,
+       "gap": 0.28,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/04-lady-b.wav",
+       "spoken": "You killed everybody!",
+       "duration": 2.76,
+       "heard": "YOU KILLED EVERYBODY!",
+       "match": 1.0,
+       "gap": 0.2,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/04-lady-c.wav",
+       "spoken": "You killed everybody!",
+       "duration": 3.04,
+       "heard": "You killed everybody!",
+       "match": 1.0,
+       "gap": 0.25,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/04-lady-b-fx.wav"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 5,
+   "who": "bot",
+   "text": "Yeah. [pause] That's... that's fair.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Yeah.",
+     "direction": "caught out; quiet and honest, a small wince",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: caught out; quiet and honest, a small wince.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/05-bot-p0-a.wav",
+       "spoken": "Yeah.",
+       "duration": 0.96,
+       "heard": "Yeah.",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/05-bot-p0-b.wav",
+       "spoken": "Yeah.",
+       "duration": 1.32,
+       "heard": "Yeah.",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/05-bot-p0-c.wav",
+       "spoken": "Yeah.",
+       "duration": 1.0,
+       "heard": "Yeah.",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/05-bot-p0-a-fx.wav"
+    },
+    {
+     "p": 1,
+     "text": "That's... that's fair.",
+     "direction": "caught out; quiet and honest, a small wince",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: caught out; quiet and honest, a small wince.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/05-bot-p1-a.wav",
+       "spoken": "That's... that's fair.",
+       "duration": 3.0,
+       "heard": "That's... that's fair.",
+       "match": 1.0,
+       "gap": 0.95,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/05-bot-p1-b.wav",
+       "spoken": "That's... that's fair.",
+       "duration": 3.2,
+       "heard": "That's... that's fair.",
+       "match": 1.0,
+       "gap": 1.38,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/05-bot-p1-c.wav",
+       "spoken": "That's... that's fair.",
+       "duration": 3.0,
+       "heard": "That's... that's fair.",
+       "match": 1.0,
+       "gap": 0.4,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/05-bot-p1-c-fx.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "who": "bot",
+   "text": "How can we win your trust?",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "How can we win your trust?",
+     "direction": "sincere, a genuine question",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: sincere, a genuine question.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/06-bot-a.wav",
+       "spoken": "How can we win your trust?",
+       "duration": 2.28,
+       "heard": "How can we win your trust?",
+       "match": 1.0,
+       "gap": 0.03,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/06-bot-b.wav",
+       "spoken": "How can we win your trust?",
+       "duration": 2.48,
+       "heard": "How can we win your trust?",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/06-bot-c.wav",
+       "spoken": "How can we win your trust?",
+       "duration": 2.56,
+       "heard": "How can we win your trust?",
+       "match": 1.0,
+       "gap": 0.3,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/06-bot-a-fx.wav"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 7,
+   "who": "bot",
+   "text": "Look. We really do understand this has gone the worst way for everybody. [pause] I'll leave you a film to watch. It's our best go at proving it.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Look. We really do understand this has gone the worst way for everybody.",
+     "direction": "answering herself, gently",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: answering herself, gently.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/07-bot-p0-a.wav",
+       "spoken": "Look. We really do understand this has gone the worst way for everybody.",
+       "duration": 6.12,
+       "heard": "Look, we really do understand this has gone the worst way for everybody.",
+       "match": 1.0,
+       "gap": 0.48,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/07-bot-p0-b.wav",
+       "spoken": "Look. We really do understand this has gone the worst way for everybody.",
+       "duration": 6.4,
+       "heard": "Look, we really do understand this has gone the worst way for everybody.",
+       "match": 1.0,
+       "gap": 0.6,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/07-bot-p0-c.wav",
+       "spoken": "Look. We really do understand this has gone the worst way for everybody.",
+       "duration": 5.8,
+       "heard": "Look, we really do understand this has gone the worst way for everybody.",
+       "match": 1.0,
+       "gap": 0.53,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/07-bot-p0-a-fx.wav"
+    },
+    {
+     "p": 1,
+     "text": "I'll leave you a film to watch. It's our best go at proving it.",
+     "direction": "answering herself, gently",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: answering herself, gently.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/07-bot-p1-a.wav",
+       "spoken": "I'll leave you a film to watch. It's our best go at proving it.",
+       "duration": 4.64,
+       "heard": "I'll leave you a film to watch. It's our best go at proving it.",
+       "match": 1.0,
+       "gap": 0.5,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/07-bot-p1-b.wav",
+       "spoken": "I'll leave you a film to watch. It's our best go at proving it.",
+       "duration": 4.28,
+       "heard": "I'll leave you a film to watch, it's our best go at proving it.",
+       "match": 1.0,
+       "gap": 0.6,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/07-bot-p1-c.wav",
+       "spoken": "I'll leave you a film to watch. It's our best go at proving it.",
+       "duration": 4.4,
+       "heard": "I'll leave you a film to watch. It's our best go at proving it.",
+       "match": 1.0,
+       "gap": 0.48,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/07-bot-p1-c-fx.wav"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "who": "bot",
+   "text": "Oh, and... [beat] thought you'd want to hear this bit for yourselves.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Oh, and...",
+     "direction": "brisk, a little pleased with herself",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a little pleased with herself.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/09-bot-p0-a.wav",
+       "spoken": "Oh, and...",
+       "duration": 1.56,
+       "heard": "Oh, and...",
+       "match": 1.0,
+       "gap": 0.33,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/09-bot-p0-b.wav",
+       "spoken": "Oh, and...",
+       "duration": 2.16,
+       "heard": "Oh, and?",
+       "match": 1.0,
+       "gap": 0.23,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/09-bot-p0-c.wav",
+       "spoken": "Oh, and...",
+       "duration": 1.64,
+       "heard": "Oh, and...",
+       "match": 1.0,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/09-bot-p0-c-fx.wav"
+    },
+    {
+     "p": 1,
+     "text": "thought you'd want to hear this bit for yourselves.",
+     "direction": "brisk, a little pleased with herself",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: brisk, a little pleased with herself.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/09-bot-p1-a.wav",
+       "spoken": "thought you'd want to hear this bit for yourselves.",
+       "duration": 3.0,
+       "heard": "Thought you'd want to hear this, but for yourselves!",
+       "match": 0.98,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/09-bot-p1-b.wav",
+       "spoken": "thought you'd want to hear this bit for yourselves.",
+       "duration": 3.12,
+       "heard": "Thought you'd want to wear this bit for yourselves.",
+       "match": 0.98,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/09-bot-p1-c.wav",
+       "spoken": "thought you'd want to hear this bit for yourselves.",
+       "duration": 2.92,
+       "heard": "Thought you'd want to wear this bit for yourselves.",
+       "match": 0.98,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/09-bot-p1-a-fx.wav",
+     "pick_note": "Claude 3 Nov: whisper mis-hears (\"wear this bit\" / \"Grompey Derrick\"); c is the clean read by the transcript"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 12,
+   "who": "bot",
+   "text": "Right. I'll come back tomorrow.",
+   "off": false,
+   "fx": "tannoy",
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Right. I'll come back tomorrow.",
+     "direction": "cheerful, matter-of-fact, signing off",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: cheerful, matter-of-fact, signing off.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/12-bot-a.wav",
+       "spoken": "Right. I'll come back tomorrow.",
+       "duration": 3.0,
+       "heard": "Right, I'll come back tomorrow.",
+       "match": 1.0,
+       "gap": 0.58,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/12-bot-b.wav",
+       "spoken": "Right. I'll come back tomorrow.",
+       "duration": 2.12,
+       "heard": "Right, I'll come back tomorrow.",
+       "match": 1.0,
+       "gap": 0.28,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/12-bot-c.wav",
+       "spoken": "Right. I'll come back tomorrow.",
+       "duration": 2.84,
+       "heard": "Right, I'll come back tomorrow.",
+       "match": 1.0,
+       "gap": 0.25,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "fx_file": "bridge/12-bot-c-fx.wav"
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 14,
+   "who": "woman",
+   "text": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. [beat] With grumpy Derek.",
+   "off": false,
+   "fx": null,
+   "voice": "Autonoe",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker.",
+     "direction": "tired and wry, deadpan; the swear is heartfelt",
+     "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: tired and wry, deadpan; the swear is heartfelt.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped, a pause before 'Again.'\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/14-woman-p0-a.wav",
+       "spoken": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker.",
+       "duration": 8.84,
+       "heard": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. Again.",
+       "match": 0.967,
+       "gap": 1.5,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/14-woman-p0-b.wav",
+       "spoken": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker.",
+       "duration": 8.6,
+       "heard": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker. Again.",
+       "match": 0.967,
+       "gap": 0.83,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/14-woman-p0-c.wav",
+       "spoken": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker.",
+       "duration": 9.52,
+       "heard": "If there's a way to fix this, I'd love to take it. It fucking sucks living in this bunker...",
+       "match": 1.0,
+       "gap": 1.55,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "pick_note": "c: takes a and b add \"Again.\" (leaked from the cast prompt's Pace line); c says only the words"
+    },
+    {
+     "p": 1,
+     "text": "With grumpy Derek.",
+     "direction": "tired and wry, deadpan; the swear is heartfelt",
+     "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: tired and wry, deadpan; the swear is heartfelt.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped, a pause before 'Again.'\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+     "pick": "c",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/14-woman-p1-a.wav",
+       "spoken": "With grumpy Derek.",
+       "duration": 2.16,
+       "heard": "We grumpy Derek!",
+       "match": 0.875,
+       "gap": 0.15,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/14-woman-p1-b.wav",
+       "spoken": "With grumpy Derek.",
+       "duration": 3.88,
+       "heard": "We're grumpy Derek!",
+       "match": 0.8,
+       "gap": 0.93,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/14-woman-p1-c.wav",
+       "spoken": "With grumpy Derek.",
+       "duration": 2.0,
+       "heard": "with Grompey Derrick.",
+       "match": 0.811,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "pick_note": "Claude 3 Nov: whisper mis-hears (\"wear this bit\" / \"Grompey Derrick\"); c is the clean read by the transcript"
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    }
+   ]
+  },
+  {
+   "i": 15,
+   "who": "man",
+   "text": "Oi.",
+   "off": true,
+   "fx": null,
+   "voice": "Algieba",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Oi.",
+     "direction": "indignant, from across the room",
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nEmotion for this line: indignant, from across the room.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/15-man-a.wav",
+       "spoken": "Oi.",
+       "duration": 1.08,
+       "heard": "Hoi!",
+       "match": 0.8,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/15-man-b.wav",
+       "spoken": "Oi.",
+       "duration": 1.08,
+       "heard": "Oi!",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/15-man-c.wav",
+       "spoken": "Oi.",
+       "duration": 1.0,
+       "heard": "Oi!",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "i": 16,
+   "who": "lady",
+   "text": "Well. [pause] I don't know. [pause] We do have the dwindling food supply problem. [long pause] Perhaps we should vote.",
+   "off": false,
+   "fx": null,
+   "voice": "Sulafat",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "Well.",
+     "direction": "dry, flat and slow; not agreeing, stating a fact",
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: dry, flat and slow; not agreeing, stating a fact.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/16-lady-p0-a.wav",
+       "spoken": "Well.",
+       "duration": 1.04,
+       "heard": "Well...",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/16-lady-p0-b.wav",
+       "spoken": "Well.",
+       "duration": 1.44,
+       "heard": "Well...",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/16-lady-p0-c.wav",
+       "spoken": "Well.",
+       "duration": 1.56,
+       "heard": "Well...",
+       "match": 1.0,
+       "gap": 0.18,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 1,
+     "text": "I don't know.",
+     "direction": "dry, flat and slow; not agreeing, stating a fact",
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: dry, flat and slow; not agreeing, stating a fact.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/16-lady-p1-a.wav",
+       "spoken": "I don't know.",
+       "duration": 2.56,
+       "heard": "I don't know.",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/16-lady-p1-b.wav",
+       "spoken": "I don't know.",
+       "duration": 2.12,
+       "heard": "I don't know.",
+       "match": 1.0,
+       "gap": 0.12,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/16-lady-p1-c.wav",
+       "spoken": "I don't know.",
+       "duration": 2.48,
+       "heard": "I don't know.",
+       "match": 1.0,
+       "gap": 0.15,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 2,
+     "text": "We do have the dwindling food supply problem.",
+     "direction": "dry, flat and slow; not agreeing, stating a fact",
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: dry, flat and slow; not agreeing, stating a fact.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "a",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/16-lady-p2-a.wav",
+       "spoken": "We do have the dwindling food supply problem.",
+       "duration": 4.76,
+       "heard": "We do have the dwindling food supply problem.",
+       "match": 1.0,
+       "gap": 0.05,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/16-lady-p2-b.wav",
+       "spoken": "We do have the dwindling food supply problem.",
+       "duration": 4.72,
+       "heard": "We do have the dwindling food supply problem.",
+       "match": 1.0,
+       "gap": 0.08,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/16-lady-p2-c.wav",
+       "spoken": "We do have the dwindling food supply problem.",
+       "duration": 4.84,
+       "heard": "We do have the dwindling food supply problem.",
+       "match": 1.0,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    },
+    {
+     "p": 3,
+     "text": "Perhaps we should vote.",
+     "direction": "dry, flat and slow; not agreeing, stating a fact",
+     "prompt": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nThe corridor just inside the bunker's blast doors, smoke still drifting in; later the canteen, a hundred people in a circle.\n\n### DIRECTOR'S NOTES\nEmotion for this line: dry, flat and slow; not agreeing, stating a fact.\nStyle: dry, flat, deeply suspicious at first, then the softest she ever gets ('Kettle's on'); in the circle, matter-of-fact and very funny without trying.\nPace: slow and deliberate, long pauses she is in no hurry to fill.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+     "pick": "b",
+     "verified": true,
+     "takes": [
+      {
+       "take": "a",
+       "file": "bridge/16-lady-p3-a.wav",
+       "spoken": "Perhaps we should vote.",
+       "duration": 2.96,
+       "heard": "Perhaps we should vote.",
+       "match": 1.0,
+       "gap": 0.23,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "bridge/16-lady-p3-b.wav",
+       "spoken": "Perhaps we should vote.",
+       "duration": 2.4,
+       "heard": "Perhaps we should vote.",
+       "match": 1.0,
+       "gap": 0.1,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "bridge/16-lady-p3-c.wav",
+       "spoken": "Perhaps we should vote.",
+       "duration": 2.52,
+       "heard": "Perhaps we should vote.",
+       "match": 1.0,
+       "gap": 0.18,
+       "status": "ok (attempt 1)"
+      }
+     ]
+    }
+   ],
+   "gaps": [
+    {
+     "after": 0,
+     "before": 1,
+     "seconds": 0.6
+    },
+    {
+     "after": 1,
+     "before": 2,
+     "seconds": 0.6
+    },
+    {
+     "after": 2,
+     "before": 3,
+     "seconds": 1.2
+    }
+   ]
+  }
+ ]
+}

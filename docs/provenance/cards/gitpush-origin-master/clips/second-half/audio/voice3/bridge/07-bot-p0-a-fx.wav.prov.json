@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/07-bot-p0-a-fx.wav",
+ "made": "2026-11-03T17:04:53+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/07-bot-p0-a.wav",
+ "why": "tannoy copy of the pick",
+ "settings": {
+  "fx": "tannoy"
+ }
+}

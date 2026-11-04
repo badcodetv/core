@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01.mp4",
+ "made": "2026-11-03T17:47:36+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg -an -c:v copy",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01-t2.mp4",
+ "why": "GPOM second half A, beat 12 stand-down keeper: Omni take 2 of sd-01 with Veo audio stripped (picture clip); best 7 s use = 0.5-7.5 s, HUD flip at ~4 s into the beat lands on a locked frame"
+}

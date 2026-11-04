@@ -62,6 +62,123 @@
    "motion": "The camera does not move. Through the round periscope view: a thread of smoke rises from the burnt-out wreck and the crow settles its wings on it. [00:02-00:03] the little grey delivery robot's amber beacon pulses. [00:04-00:07] the delivery robot turns and trundles slowly out of the left of the circle, its torn bunting trailing. The camera does not move.",
    "character": null,
    "why": "Kai 3 Nov: 'go with all of your recommended options' (5A: Smoke, crow, Maddie leaves)"
+  },
+  {
+   "key": "br7-lady1",
+   "n": 7,
+   "still": "BP4-lady-b",
+   "duration": 4,
+   "motion": "The camera does not move. The old woman with grey hair and glasses turns her head a little towards a man beside her, just out of frame, and says: Derek, go and have a look what that was. Her face stays lit by the warm bulb; the crowd behind her stand still. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov (timeline r1): the old lady asks Derek to look; still pick BP4-lady-b"
+  },
+  {
+   "key": "br8-lady2a",
+   "n": 8,
+   "still": "BP4-lady-b",
+   "duration": 4,
+   "motion": "The camera does not move. The old woman with grey hair and glasses looks at the people around her and says, flat and practical: We know we need to talk about this. The crowd behind her stand still. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: her new vote line, first half (split so the mouth matches the voice's pace)"
+  },
+  {
+   "key": "br9-lady2b",
+   "n": 9,
+   "still": "BP4-lady-b",
+   "duration": 6,
+   "motion": "The camera does not move. The old woman with grey hair and glasses looks at the people around her and says, flat and practical: We do have a food problem. Perhaps we should vote. Then she holds their gaze. The crowd behind her stand still. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: her new vote line, second half"
+  },
+  {
+   "key": "br10-sandra1",
+   "n": 10,
+   "still": "BP5-sandra-b",
+   "duration": 6,
+   "motion": "The camera does not move. The woman in the cream cable-knit jumper turns to the people beside her and says, wry and tired: If there's a way to fix this, I'd love to take it. The man in the foreground stays still. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: Sandra seen in the crowd, no swearing; still pick BP5-sandra-b"
+  },
+  {
+   "key": "br11-sandra2",
+   "n": 11,
+   "still": "BP5-sandra-b",
+   "duration": 6,
+   "motion": "The camera does not move. The woman in the cream cable-knit jumper says, deadpan: It sucks living in this bunker with grumpy Derek. [00:04-00:06] the dark-haired man in the foreground turns his head towards her and lifts both hands, palms up, in outraged protest. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: Sandra's second sentence; Derek's 'Oi' over the same shot, the foreground man lifting his hands (Kai: no reverse shot for one word)"
+  },
+  {
+   "key": "br12-crowd",
+   "n": 12,
+   "still": "BR3-end",
+   "duration": 6,
+   "motion": "The camera does not move. In the whitewashed brick tunnel the crowd stand looking up at the cream loudspeaker horn, which hangs bent downwards on its bracket after the blast. The last fine dust drifts down slowly through the warm light of the bulb beside it. One woman brushes dust off her shoulder. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: Maddie's 'Right. I'll come back tomorrow.' through the tannoy inside, over the crowd under the angled horn; from the boom clip's last frame"
+  },
+  {
+   "key": "br13-lady0",
+   "n": 13,
+   "still": "LADY0",
+   "duration": 4,
+   "character": null,
+   "motion": "The camera does not move. The old woman with grey hair and glasses looks up towards the door above her and shouts, furious and disbelieving: Are you literally joking? The people behind her in the dark corridor stay still. The camera does not move.",
+   "why": "Kai 3 Nov (timeline r1, at426): her old clip says 'your boss killed everybody' under 'Are you literally joking?'. A new talking clip from the first frame of her old close-up (cut3-lip-17-0)."
+  },
+  {
+   "key": "br14-boom2",
+   "n": 14,
+   "still": "BR4-boomstart",
+   "duration": 4,
+   "character": null,
+   "motion": "The camera does not move. [00:00-00:01] a sudden heavy jolt shakes the brick tunnel; the cream loudspeaker horn lurches and drops down on its bracket, the bulb beside it swinging. [00:01-00:04] fine dust and grit pour down from the brick vault through the warm light; the people flinch and duck their heads, one man slowly looks up at the ceiling. The camera does not move.",
+   "why": "Kai 4 Nov (timeline r2, at1269): 'all of the heads just jump… we need to be absolutely consistent from the end of the last video'. Chained from the room shot's last frame (TV off)."
+  },
+  {
+   "key": "br15-sandra2b",
+   "n": 15,
+   "still": "SANDRA5",
+   "duration": 6,
+   "character": null,
+   "motion": "The camera does not move. The woman in the cream cable-knit jumper glances at the people beside her and says, deadpan and wry: It sucks living in this bunker with grumpy Derek. Then she gives a small tired shrug. The dark-haired man in the foreground stays still. The camera does not move.",
+   "why": "Kai 4 Nov (timeline r2, at1795): the cut between Sandra's two halves jumps; chained from br10's frame at 5.0 s. No 'Oi' (at1902), so no hands up."
+  },
+  {
+   "key": "br16-lady1c",
+   "n": 16,
+   "still": "LADY6",
+   "duration": 4,
+   "character": null,
+   "motion": "The camera does not move. The grey-haired old woman in glasses turns her head slightly towards a man beside her, out of shot, and says: Derek, go and have a look what that was. Warm light from the little bulb stays on her face; the survivors behind her keep still. Behind her, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+   "why": "Kai 4 Nov (timeline r5, at1408): re-cut; the man looked like he had a cap on, and the horn must hang down after the boom. Round 6 still pick a (LADY6)."
+  },
+  {
+   "key": "br17-lady2c",
+   "n": 17,
+   "still": "LADY6",
+   "duration": 6,
+   "character": null,
+   "motion": "The camera does not move. The grey-haired old woman in glasses looks round at the people near her, lips pressed together, thinking for a moment, then says, plain and practical: Perhaps we should vote. Then she waits for an answer. The survivors behind her keep still. Behind her, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+   "why": "Kai 4 Nov (timeline r5, at1960): a 'Hmmm' pause, then only 'Perhaps we should vote.' (at1942); the horn hanging. Round 6 still pick a."
+  },
+  {
+   "key": "br18-sandra1c",
+   "n": 18,
+   "still": "SANDRA6",
+   "duration": 6,
+   "character": null,
+   "motion": "The camera does not move. The woman in the cream cable-knit jumper turns to the people next to her and says, dry and weary: If there's a way to fix this, I'd love to take it. The dark-haired man nearest the camera keeps still. Behind them, the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+   "why": "Kai 4 Nov (timeline r5, at1960): the horn must hang down after the boom. Round 6 still pick c (SANDRA6)."
+  },
+  {
+   "key": "br19-sandra2c",
+   "n": 19,
+   "still": "SANDRA7",
+   "duration": 6,
+   "character": null,
+   "motion": "The camera does not move. The woman in the cream cable-knit jumper looks round at the faces beside her and says, deadpan and tired: It sucks living in this bunker with grumpy Derek. Then a small weary shrug. The dark-haired man nearest the camera keeps still. Up on the wall the loudspeaker horn stays hanging down on its bent bracket. The camera does not move.",
+   "why": "Kai 4 Nov (timeline r5): the horn hanging; chained from br18's frame at 5.5 s so the cut doesn't jump (r2 at1795)."
   }
  ]
 }

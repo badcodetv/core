@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br14-boom2-BR4-boomstart.mp4",
+ "made": "2026-11-04T11:13:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. [00:00-00:01] a sudden heavy jolt shakes the brick tunnel; the cream loudspeaker horn lurches and drops down on its bracket, the bulb beside it swinging. [00:01-00:04] fine dust and grit pour down from the brick vault through the warm light; the people flinch and duck their heads, one man slowly looks up at the ceiling. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+ "why": "Kai 4 Nov (timeline r2, at1269): 'all of the heads just jump… we need to be absolutely consistent from the end of the last video'. Chained from the room shot's last frame (TV off).",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BR4-boomstart.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br14-boom2",
+  "frame": 14,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 4,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:11:01.679Z"
+ }
+}

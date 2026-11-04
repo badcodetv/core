@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-0-v3-t1.mp4",
+ "made": "2026-11-03T17:06:33.862Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off camera, no camera movement. The furious woman in the cream jumper, facing us, jabs her finger at the man and lays into him, spitting out each word with slow, withering contempt. She says: Five years underground, and you still can't put a seat down. Then she presses her lips together and glares at him. The man seen from behind stays still and silent.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "a3266b25-07e4-4093-b526-41773bd5269e"
+}

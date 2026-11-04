@@ -1,0 +1,28 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t5.mp4",
+ "made": "2026-11-03T19:28:21+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Fixed tripod on the ridge, a single unbroken high wide view. The pack carries on along its present heading: all four tracked machines roll down the hillside toward the valley at the lower left, their backs to the green doors. The one inside the white chalk curve completes the last of its turn and falls in behind. Tracks churn, hulls lurch and sway with real weight, dust drifts up and to the right behind them. No other machines appear. Heavy 16mm grain.",
+ "model": "Omni Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8,
+  "credits": "25",
+  "mode": "Frames",
+  "frames": "start",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ },
+ "source_id": "2b441595-7bfd-4ef1-b1e0-cf732cf21adb",
+ "why": "GPOM second half A, beat 12 retreat; take 5, first off rt-01c-2 (Kai's approved plate, noses down-left). REJECTED: the lead bot drives right toward the mound and the door, and a fifth bot rolls in at bottom left near the end. Camera measured locked (no shift, constant 1% scale from frame 0)."
+}

@@ -1,0 +1,28 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t8.mp4",
+ "made": "2026-11-03T19:28:21+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Static tripod frame pinned on the far green doors, which never shift in the picture. Four tank-tracked machines and no more: they trundle downhill and leave across the left edge, one after another. The one in the chalk curve finishes turning inside its own dust cloud, which is only dust, then chases the others out. Tracks churn, hulls rock with weight, dust lingers behind. The empty hillside holds still. 16mm grain.",
+ "model": "Omni Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8,
+  "credits": "25",
+  "mode": "Frames",
+  "frames": "start",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ },
+ "source_id": "b8b401d7-ae7b-4477-a4ec-57a0baf2dad6",
+ "why": "GPOM second half A, beat 12 retreat; take 8 off rt-01c-2. PICK. Exactly four bots throughout, camera locked (no shift, constant 1% scale from frame 0, so no start re-sit). Two bots exit left by ~2 s, the third by ~6.5 s; the crescent bot pivots inside its dust (0-3 s, skidding ~1/8 frame rightward with its barrel briefly pointing right at ~1.75-2.25 s), then drives down-left and out by ~7.9 s; ends on an empty slope with the chalk crescent and dust. Weight, track churn and dust good. In-point 2.5 s for a 5.5 s use (2.5-8.0) skips the skid."
+}

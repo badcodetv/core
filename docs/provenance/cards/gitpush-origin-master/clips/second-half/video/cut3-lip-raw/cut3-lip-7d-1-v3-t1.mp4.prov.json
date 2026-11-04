@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-1-v3-t1.mp4",
+ "made": "2026-11-03T17:23:57.603Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Static frame, nothing but the people moves. The husband in the dark green jumper flings his hands wide and shouts at his wife, exasperated, at full volume. He says: But the world ended, Sandra! Then his mouth shuts and he holds still, staring at her, hands still spread. His wife, seen from behind, holds still and says nothing.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 6
+ },
+ "source_id": "0e9ec71a-df9f-4e7c-b5be-36e80ef684b8"
+}

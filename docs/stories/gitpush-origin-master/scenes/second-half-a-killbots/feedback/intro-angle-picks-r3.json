@@ -1,0 +1,187 @@
+{
+ "title": "Intro Angle Picks",
+ "eyebrow": "GPOM second half \u00b7 scene A \u00b7 picks \u00b7 round 3",
+ "heading": "The overhead shot, with the rubble back",
+ "intro": "Your round 12 note: the road in the overhead shot is far too tidy compared with the other shots. My last edit cleared the road along with the parking bays. Four stills, no video credit spent. 8a and 8b go back to your original 5b and only remove the bay lines and the grain, so its rubble stays. 9a and 9b take 7a and pile rubble, potholes and weeds back onto the road. Pick one; I then animate it slowly, as in round 12, for both overhead moments.",
+ "sections": [
+  {
+   "h": "Beat 0: overhead view (round 3)",
+   "lede": "The overhead moments are at 0:35 and 1:10.",
+   "groups": [
+    {
+     "slot": "ia-top-now12",
+     "round": 3,
+     "title": "For reference: the overhead in round 12",
+     "line": "Clean, but the road is bare.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now12",
+       "src": "ia/top-now12.jpg",
+       "label": "round 12 frame (1:12)"
+      }
+     ]
+    },
+    {
+     "slot": "ia-top3",
+     "round": 3,
+     "title": "Overhead, rubble back on the road",
+     "line": "8 = your original 5b, bay lines and grain removed. 9 = 7a with rubble added.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ia-08-a",
+       "src": "ia/ia-08-a.jpg",
+       "label": "8a: 5b, bays removed, its own rubble"
+      },
+      {
+       "id": "ia-08-b",
+       "src": "ia/ia-08-b.jpg",
+       "label": "8b: the same, second take (a white road arrow crept in)"
+      },
+      {
+       "id": "ia-09-a",
+       "src": "ia/ia-09-a.jpg",
+       "label": "9a: 7a with rubble across both lanes"
+      },
+      {
+       "id": "ia-09-b",
+       "src": "ia/ia-09-b.jpg",
+       "label": "9b: 7a, the most wrecked: potholes, weeds, rubble everywhere"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Beat 0: overhead view",
+   "lede": "The two overhead moments sit at 0:35 and 1:10.",
+   "groups": [
+    {
+     "slot": "ia-top-now",
+     "title": "For reference: the overhead in round 11",
+     "line": "Grainy, bays down both sides.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "ia/top-now.jpg",
+       "label": "round 11 frame (0:36)"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "ia-top2",
+     "title": "Overhead, cleaned",
+     "line": "Same framing as 5b: no parking bays, a dashed centre line and yellow lines at the kerbs, no grain.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ia-07-a",
+       "src": "ia/ia-07-a.jpg",
+       "label": "7a: cleaned 5b"
+      },
+      {
+       "id": "ia-07-b",
+       "src": "ia/ia-07-b.jpg",
+       "label": "7b: cleaned 5b, second take"
+      }
+     ],
+     "round": 2
+    }
+   ]
+  },
+  {
+   "h": "Beat 0: Maddie on the high street",
+   "lede": "Now: the camera backs up the street in front of her (frame below, for reference).",
+   "groups": [
+    {
+     "slot": "ia-now",
+     "title": "For reference: the shot now",
+     "line": "Not a pick, just the front view these cut with.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "now",
+       "src": "ia/now.jpg",
+       "label": "the front view (current)"
+      }
+     ]
+    },
+    {
+     "slot": "ia-side",
+     "title": "Side: the camera alongside her at her speed",
+     "line": "The shopfronts slide past behind her.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ia-01-a",
+       "src": "ia/ia-01-a.jpg",
+       "label": "1a: low, wheel height, three-quarter"
+      },
+      {
+       "id": "ia-01-b",
+       "src": "ia/ia-01-b.jpg",
+       "label": "1b: low, side-on, further back"
+      },
+      {
+       "id": "ia-02-b",
+       "src": "ia/ia-02-b.jpg",
+       "label": "2b: side-on, bin and glass in the foreground"
+      },
+      {
+       "id": "ia-02-c",
+       "src": "ia/ia-02-c.jpg",
+       "label": "2c: the same, closer"
+      },
+      {
+       "id": "ia-03-b",
+       "src": "ia/ia-03-b.jpg",
+       "label": "3b: wide from across the road, burnt car, the church tower"
+      }
+     ]
+    },
+    {
+     "slot": "ia-top",
+     "title": "Overhead: looking down on her as she drives",
+     "line": "4 = straight down close, 5 = straight down high, 6 = high and behind.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ia-04-a",
+       "src": "ia/ia-04-a.jpg",
+       "label": "4a: straight down, low drone"
+      },
+      {
+       "id": "ia-04-b",
+       "src": "ia/ia-04-b.jpg",
+       "label": "4b: straight down, tighter"
+      },
+      {
+       "id": "ia-05-a",
+       "src": "ia/ia-05-a.jpg",
+       "label": "5a: straight down from rooftop height, whole street"
+      },
+      {
+       "id": "ia-05-b",
+       "src": "ia/ia-05-b.jpg",
+       "label": "5b: the same, burnt car"
+      },
+      {
+       "id": "ia-06-a",
+       "src": "ia/ia-06-a.jpg",
+       "label": "6a: high and behind, looking down the street"
+      },
+      {
+       "id": "ia-06-b",
+       "src": "ia/ia-06-b.jpg",
+       "label": "6b: higher, the church tower ahead"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "round": 3
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-v3-t4.mp4",
+ "made": "2026-11-03T17:04:49.325Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera does not move. The man in the dark green jumper lets his arms fall and, deflated and sorry, speaks to the woman in a low, slow, sad voice, taking his time over each word. He says: I'm really sorry, love. When he finishes he shuts his mouth and stays quiet. The woman with her back to us does not move or speak.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 6
+ },
+ "source_id": "2e45e47b-f105-43c7-9304-d8f0e63e0b7b"
+}

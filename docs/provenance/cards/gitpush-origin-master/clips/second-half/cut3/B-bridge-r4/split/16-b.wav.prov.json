@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r4/split/16-b.wav",
+ "made": "2026-11-04T13:52:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py",
+ "why": "bridge round 4 cut (Kai r3 lip-sync notes)",
+ "settings": {
+  "how": "cut-bridge.py --round 4"
+ }
+}

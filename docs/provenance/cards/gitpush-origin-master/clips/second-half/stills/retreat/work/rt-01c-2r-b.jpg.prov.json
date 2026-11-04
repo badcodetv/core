@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-2r-b.jpg",
+ "made": "2026-11-03T19:07:44.391Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Edit the first picture; the second picture shows what each tracked robot looks like. Turn the robots round so the pack is leaving: the two robots on the far left of the slope and the one beside the chalk ring now face away from the bunker, hull front, turret and gun barrel all aimed down-left toward the bottom left corner of the frame, rolling off downhill. The last robot, the one inside the white chalk crescent, is caught mid-pivot, three quarters of the way round, its front swinging down-left to join them, tracks tearing up white chalk and throwing a puff of dust. Four robots in total, all staying roughly where they are now, well below the doors. Behind each one a fresh pale scuff in the turf, and a faint haze drifting uphill and rightward where they came from. The rest of the picture does not change: same high viewpoint on the ridge, same hillside, same grassy edge bottom right, same small green bunker doors top right, same flat grey daylight and grainy faded 16mm texture.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "44e1b7c9-3ef8-4995-8db3-532175fdb227"
+}

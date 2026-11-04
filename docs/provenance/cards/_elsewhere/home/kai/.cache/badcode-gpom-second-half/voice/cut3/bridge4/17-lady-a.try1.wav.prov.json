@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/bridge4/17-lady-a.try1.wav",
+ "made": "2026-11-04T14:00:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Perhaps we should vote.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nThe old lady, a retired Sheffield school dinner lady in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: in the crowd, seen; the same plain voice as 'Derek, go and have a look', quick.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: Northern English, as heard in Yorkshire, around Sheffield; plain-spoken, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/bridge4/17-lady-a.md"
+ },
+ "settings": {
+  "voice": "Vindemiatrix",
+  "temperature": 1,
+  "channels": 2
+ }
+}

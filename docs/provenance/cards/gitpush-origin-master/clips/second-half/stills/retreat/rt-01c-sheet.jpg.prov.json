@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-sheet.jpg",
+ "made": "2026-11-03T19:10:16+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "pillow",
+ "tool": "PIL",
+ "why": "Contact sheet: rt-01b (plate) + retreat re-seal options rt-01c-1..3, 2x2 labelled.",
+ "inputs": {
+  "plate": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+  "o1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-1.png",
+  "o2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-2.png",
+  "o3": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01c-3.png"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP4-lady-c-a.jpg",
+ "made": "2026-11-04T17:08:20.305Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Two small corrections to this frame from a bunker after a blast. The pale loudspeaker horn up on the curved brick wall has been knocked loose: it now dangles mouth-down towards the floor from its twisted bracket, the way it droops in the reference still. And the man half out of shot on the right is bareheaded, his short dark hair showing, nothing on his head. Nothing else changes: the old woman with grey hair and glasses in her green knitted cardigan, her face and look, the survivors behind her, the small warm bulb and how it lights her, the faded grainy 16mm film feel and the framing all stay as they are.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP4-lady-b.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/ref-horn-hanging.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "ac71fa36-a67e-4aeb-82b5-58960c162f60"
+}

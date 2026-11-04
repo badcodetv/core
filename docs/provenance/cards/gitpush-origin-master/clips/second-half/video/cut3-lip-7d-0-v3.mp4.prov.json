@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-0-v3.mp4",
+ "made": "2026-11-03T17:33:16+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "copy",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-v3-t6.mp4",
+ "why": "v3 lip-sync talking clip (Kai 2026-11-03: re-make the talking clips so they fit the voice); picked by joint mouth/voice fit"
+}

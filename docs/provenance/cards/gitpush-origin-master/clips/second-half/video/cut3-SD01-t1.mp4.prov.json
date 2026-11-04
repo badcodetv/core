@@ -1,0 +1,28 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-SD01-t1.mp4",
+ "made": "2026-11-03T17:47:35+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera does not move, fixed to the robot's hull. The robot has just stopped hard: in the first second its hull dips forward and rocks once on its tracks, then it holds perfectly still for the rest of the shot. The cloud of chalk dust rolls on ahead up the slope, away from the camera, thinning as it goes, and the flying clods of earth drop into the grass ahead and lie still. The bunker stays small and distant on the skyline. Heavy 16mm grain. The camera does not move.",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8,
+  "mode": "Frames",
+  "frames": "start",
+  "credits": "12",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ },
+ "source_id": "befb5ad0-a41e-4ed3-a6d6-334abbfe55fe",
+ "why": "GPOM second half A, beat 12 stand-down (Kai 3 Nov: the bot must stop, never reverse; door far off); take 1 of sd-01, REJECTED: furrows lengthen ahead of the bot (reads as backing up), big clods fly at the lens, hull redrawn"
+}

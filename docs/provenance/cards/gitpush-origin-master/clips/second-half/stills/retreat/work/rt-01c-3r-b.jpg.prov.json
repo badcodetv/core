@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/rt-01c-3r-b.jpg",
+ "made": "2026-11-03T19:09:49.448Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Edit the first picture; the second picture shows what each tracked robot looks like. The pack has wheeled about and is pulling away bunched close together in a tight two-by-two block, four separate robots, each one fully visible with clear grass between them, hull fronts, turrets and gun barrels all aimed down-left toward the bottom left corner of the frame, the bunker at their backs. They sit on the left half of the slope roughly where they are now, well below the doors. The grass round them is ripped into overlapping loops of bare white chalk where they spun, and a big billow of pale chalk dust rolls off behind them, up and to the right, over the ground they just left. Leave the camera exactly as it is, the same high wide view from the ridge with the whole hillside, the grassy edge in the bottom right corner and the small green bunker doors fully in frame at the top right, in the same flat grey daylight and grainy faded 16mm texture.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2e28b6f7-2a6c-40da-a8b9-d659d01f0b6b"
+}

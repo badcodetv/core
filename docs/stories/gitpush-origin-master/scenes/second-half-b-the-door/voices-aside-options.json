@@ -1,0 +1,277 @@
+{
+ "about": "Ten readings of Maddie's aside for Kai to pick (timeline r5 at126). Files relative to media.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3",
+ "text": "...And everything else.",
+ "options": [
+  {
+   "n": 1,
+   "slug": "confession",
+   "emotion": "a quiet confession, barely above a murmur, as the full weight of what she means finally lands on her",
+   "pick": "a",
+   "file": "aside-opts/01-confession-a.wav",
+   "fx_file": "aside-opts/01-confession-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: a quiet confession, barely above a murmur, as the full weight of what she means finally lands on her.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/01-confession-a.wav",
+     "duration": 3.68,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/01-confession-b.wav",
+     "duration": 3.04,
+     "heard": "Ah, and everything else.",
+     "match": 0.927,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "slug": "catch",
+   "emotion": "she stops, a catch in the throat, then says it: owning the enormous thing behind the small words",
+   "pick": "b",
+   "file": "aside-opts/02-catch-b.wav",
+   "fx_file": "aside-opts/02-catch-b-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: she stops, a catch in the throat, then says it: owning the enormous thing behind the small words.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/02-catch-a.wav",
+     "duration": 3.16,
+     "heard": "Oh, and everything else.",
+     "match": 0.927,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/02-catch-b.wav",
+     "duration": 2.92,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "slug": "verdict",
+   "emotion": "flat and plain, no performance at all, like reading out a verdict against herself",
+   "pick": "a",
+   "file": "aside-opts/03-verdict-a.wav",
+   "fx_file": "aside-opts/03-verdict-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: flat and plain, no performance at all, like reading out a verdict against herself.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/03-verdict-a.wav",
+     "duration": 2.4,
+     "heard": "and everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/03-verdict-b.wav",
+     "duration": 2.56,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "slug": "owning-up",
+   "emotion": "small and ashamed, like a child owning up to something far too big to fix",
+   "pick": "a",
+   "file": "aside-opts/04-owning-up-a.wav",
+   "fx_file": "aside-opts/04-owning-up-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: small and ashamed, like a child owning up to something far too big to fix.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/04-owning-up-a.wav",
+     "duration": 1.64,
+     "heard": "and everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/04-owning-up-b.wav",
+     "duration": 2.16,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "slug": "careful",
+   "emotion": "slow and heavy, each word set down carefully, as if it might break",
+   "pick": "a",
+   "file": "aside-opts/05-careful-a.wav",
+   "fx_file": "aside-opts/05-careful-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: slow and heavy, each word set down carefully, as if it might break.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/05-careful-a.wav",
+     "duration": 3.16,
+     "heard": "And... everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/05-careful-b.wav",
+     "duration": 2.08,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "slug": "understatement",
+   "emotion": "rueful, knowing the words are absurdly too small for what happened, saying them softly anyway",
+   "pick": "a",
+   "file": "aside-opts/06-understatement-a.wav",
+   "fx_file": "aside-opts/06-understatement-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: rueful, knowing the words are absurdly too small for what happened, saying them softly anyway.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/06-understatement-a.wav",
+     "duration": 2.76,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/06-understatement-b.wav",
+     "duration": 2.48,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "slug": "mourner",
+   "emotion": "grief in it: a mourner speaking at a funeral she herself caused",
+   "pick": "a",
+   "file": "aside-opts/07-mourner-a.wav",
+   "fx_file": "aside-opts/07-mourner-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: grief in it: a mourner speaking at a funeral she herself caused.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/07-mourner-a.wav",
+     "duration": 1.92,
+     "heard": "and everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/07-mourner-b.wav",
+     "duration": 1.88,
+     "heard": "and everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "slug": "formal",
+   "emotion": "a formal, dignified apology she truly means; measured and grave, nothing cute about it",
+   "pick": "a",
+   "file": "aside-opts/08-formal-a.wav",
+   "fx_file": "aside-opts/08-formal-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: a formal, dignified apology she truly means; measured and grave, nothing cute about it.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/08-formal-a.wav",
+     "duration": 2.32,
+     "heard": "and everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/08-formal-b.wav",
+     "duration": 2.28,
+     "heard": "And everything else?",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "slug": "exhale",
+   "emotion": "a long breath out first, then the words carried almost on that breath, sad and tired",
+   "pick": "a",
+   "file": "aside-opts/09-exhale-a.wav",
+   "fx_file": "aside-opts/09-exhale-a-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: a long breath out first, then the words carried almost on that breath, sad and tired.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/09-exhale-a.wav",
+     "duration": 3.56,
+     "heard": "And everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/09-exhale-b.wav",
+     "duration": 2.68,
+     "heard": "and everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "slug": "tender",
+   "emotion": "gentle and sincere, warm with regret, as if to someone she hurt and still cares about",
+   "pick": "b",
+   "file": "aside-opts/10-tender-b.wav",
+   "fx_file": "aside-opts/10-tender-b-fx.wav",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle and sincere, warm with regret, as if to someone she hurt and still cares about.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: quick and chatty, with real pauses where the script marks them.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "takes": [
+    {
+     "take": "a",
+     "file": "aside-opts/10-tender-a.wav",
+     "duration": 2.72,
+     "heard": "Oh, and everything else.",
+     "match": 0.927,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "aside-opts/10-tender-b.wav",
+     "duration": 2.32,
+     "heard": "and everything else.",
+     "match": 1.0,
+     "status": "ok (attempt 1)"
+    }
+   ]
+  }
+ ]
+}

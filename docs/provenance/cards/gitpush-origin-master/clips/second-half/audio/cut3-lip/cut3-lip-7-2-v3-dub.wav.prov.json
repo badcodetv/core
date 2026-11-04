@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-v3-dub.wav",
+ "made": "2026-11-03T17:33:19+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/07-2-master.wav",
+ "why": "v3 lip-sync dub: whole phrases at tempo 1.00-1.15 on a talking clip sized/picked to the voice (Kai 2026-11-03, \"chopping bits of sound out\")",
+ "inputs": {
+  "phrases": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-v3-phrases.json",
+  "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-v3-t1.mp4"
+ },
+ "settings": {
+  "lufs": "-20.5"
+ }
+}

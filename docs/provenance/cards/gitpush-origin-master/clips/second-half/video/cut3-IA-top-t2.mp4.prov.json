@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t2.mp4",
+ "made": "2026-11-04T17:08:55.873Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The little grey robot with the amber light on its roof creeps forward along the centre of the empty road, very slowly, no faster than a person strolling. The drone camera above drifts forward with it at that same unhurried crawl, so the robot holds its place in the picture and the ruined terraces ease down the frame only a little over the whole shot, a few houses at most. Calm, steady, gentle. Crisp clean digital drone footage with smooth even tones. The camera keeps its height and angle, no zoom, no tilt, nothing else moves except the blinking amber light.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "a6bb03ad-ec4d-44ed-b7a3-0f8b6fcd4564"
+}

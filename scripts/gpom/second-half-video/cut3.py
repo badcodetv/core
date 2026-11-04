@@ -10,6 +10,8 @@
     python3 scripts/gpom/second-half-video/cut3.py A --tag d4     # + Kai's timeline r5 notes (2 Nov)
     python3 scripts/gpom/second-half-video/cut3.py A --tag d5     # + the wide approach WA02 in beat 10b (2 Nov)
     python3 scripts/gpom/second-half-video/cut3.py A --tag d6     # draft 1H + the extended travelling shot (2 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d7     # + the row lip sync v3 (re-made clips) + the stand-down SD01 (3 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d8     # Kai's r9 notes: draft 1I, the row re-cut on reaction shots, boss without 'Maddie' (3 Nov)
 
 --tag X writes to clips/second-half/cut3/<scene>-X/ instead of cut3/<scene>/, so a round never rewrites the stems and
 lines an earlier Premiere sequence plays from. --tag d1 also swaps in the dialogue-page words: beat 0 from
@@ -59,10 +61,17 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
          'crowd': 'The hundred'}
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
+D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
 D2 = TAG == 'd2'
-D3 = TAG in ('d3', 'd4', 'd5', 'd6')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
-D4 = TAG in ('d4', 'd5', 'd6')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
+D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12')
+D8 = TAG in ('d8', 'd9', 'd10', 'd11', 'd12')
+D12 = TAG == 'd12'  # Kai r13 (at1878): drop line 5 ('And now we've worked all that out... go back and change things'), 'And so did you' -> 'Anyway!'
+D11 = TAG in ('d11', 'd12')  # Kai r12 (at1749): overhead road far too tidy -> ia-top3 (ia-09-a, rubble), t4 takes
+D10 = TAG in ('d10', 'd11', 'd12')  # Kai r11 notes (4 Nov): overhead grainy/too fast/too many bays -> ia-top2 (ia-07-a), t2 clips, softer grade
+D9 = TAG in ('d9', 'd10', 'd11', 'd12')  # Kai, 4 Nov: beat 0 cut between three angles (front, side, overhead) at sentence ends  # Kai's timeline r9 notes (3 Nov)
+RT01_IN = 2.5  # the retreat clip's in-point: past the crescent bot's slide to the right (t8, 0-2.5 s)
+D3 = TAG in ('d3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
+D4 = TAG in ('d4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
                   # the boss's firewall line cut, Maddie's 'That was close.' alone, HUD NEW OBJECTIVE
 BR = TAG == 'br'  # the bridge (Kai, 28 Oct): the doorstep talk cut; a look, the door shuts on her, voices behind it
 STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
@@ -129,12 +138,101 @@ def take_named(beat, i, letter, phrase=None, fx=False):
 
 def lipinfo(name):
     """(dub wav, first speech at, last speech end, [(text, at, end)]) for a talking clip, clip time."""
-    if D4 and (LIP / f'cut3-lip-{name}-v2-phrases.json').exists():  # the mouth-mapped redo (2 Nov)
+    if D7 and (LIP / f'cut3-lip-{name}-v3-phrases.json').exists():  # re-made talking clips sized to the voice (3 Nov)
+        name = f'{name}-v3'
+    elif D4 and (LIP / f'cut3-lip-{name}-v2-phrases.json').exists():  # the mouth-mapped redo (2 Nov)
         name = f'{name}-v2'
     d = json.loads((LIP / f'cut3-lip-{name}-phrases.json').read_text())
     ph = [(p['text'], p['at'], p['at'] + (p['to'] - p['from']) / p['tempo']) for p in d['phrases']]
     return LIP / f'cut3-lip-{name}-dub.wav', ph[0][1], max(p[2] for p in ph), ph
 
+
+
+def row_piece(c, src, a, b, tempo, name):
+    """One phrase of a lip-sync master, cut whole (no slicing inside it), at a tempo; 8 ms fades."""
+    out = c.dir / 'row-d8' / f'{name}.wav'
+    out.parent.mkdir(parents=True, exist_ok=True)
+    d = (b - a) / tempo
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(src), '-af',
+                    f'atrim={a}:{b},asetpts=N/SR/TB,atempo={tempo},afade=t=in:d=0.008,afade=t=out:st={d - 0.008:.4f}:d=0.008',
+                    str(out)], check=True)
+    return out, d
+
+
+def row_d8(c, t, m, LINES):
+    """Kai's timeline r9 notes (3 Nov) on the row:
+    at3201 "Derek, you've left the seat up again" as one sentence: Sandra's 'Again.' follows 'up' straight away, and
+           lands on Derek's face (the start of his re-made clip, before he speaks), so her mouth's own pause never shows;
+    at3312 'Five years underground,' (the phrase whose lips were out) plays over Derek's face after his line, and we cut
+           to Sandra on 'and you still can't put a seat down', which is in sync;
+    at3490 a shorter hold on Derek after 'But the world ended, Sandra!' (0.3 s, was 1.3 s)."""
+    t0 = t
+    tb = lambda name: json.loads((LIP / f'cut3-lip-{name}-v3-phrases.json').read_text())['phrases']
+    s6, d7a, s7, d7b, s72 = tb('6-0'), tb('7d-0c'), tb('7-0'), tb('7d-1c'), tb('7-2')
+    up_end = s6[1]['at'] + (s6[1]['to'] - s6[1]['from']) / s6[1]['tempo']
+    # Sandra, 6-0: 'Derek.' 'You've left the seat up' on her face
+    b6 = c.beat('6', 'The lavatory', t0, act='The row', see='Hard cut to full volume: Sandra, lip-synced.')
+    cut1 = fr(t0 + up_end + 0.04)
+    c.pic(V / 'cut3-lip-6-0-v3-muted.mp4', 0.0, t0, cut1, '6', source=V / 'cut3-lip-6-0-v3.mp4')
+    c.dub('vox-sandra', LIP / 'cut3-lip-6-0-v3-dub.wav', 0.0, cut1 - t0, t0, 'beat 6 6-0 (lip-sync dub)', chain=[TILE])
+    again, d_again = row_piece(c, s6[2]['src'], s6[2]['from'], s6[2]['to'], 1.0, '6-0-again')
+    t_again = t0 + up_end + 0.08
+    c.dub('vox-sandra', again, 0.0, d_again, t_again, "beat 6 Sandra 'Again.' (over Derek)", chain=[TILE])
+    c.line(b6, 0, 'woman', t0 + s6[0]['at'], t_again + d_again - t0 - s6[0]['at'], "Derek. You've left the seat up again.", 'kai')
+    c.close(b6, cut1)
+    # Derek, 7d-0 v3: reacts under 'Again.', says his line, holds under 'Five years underground,'
+    b7 = c.beat('7', 'The row, up close', cut1, act='The row',
+                see='Derek takes it on the chin, then Sandra; Derek, Sandra: shot by shot, lip-synced.')
+    d_line = (d7a[0]['to'] - d7a[0]['from']) / d7a[0]['tempo']
+    t_dl = t_again + d_again + 0.3
+    i0d = d7a[0]['at'] - (t_dl - cut1)
+    assert i0d >= 0.5, i0d
+    t_dend = t_dl + d_line
+    five, d_five = row_piece(c, s7[0]['src'], s7[0]['from'], s7[0]['to'], s7[0]['tempo'], '7-0-five-years')
+    rest, d_rest = row_piece(c, s7[1]['src'], s7[1]['from'], s7[1]['to'], s7[1]['tempo'], '7-0-seat')
+    t_five = t_dend + 0.3
+    t_rest = t_five + d_five
+    cut2 = fr(t_rest - CUT_PRE)
+    assert i0d + (cut2 - cut1) <= 6.0 + 1e-6, i0d + (cut2 - cut1)
+    c.pic(V / 'cut3-lip-7d-0-v3-muted.mp4', i0d, cut1, cut2, '7', source=V / 'cut3-lip-7d-0-v3.mp4')
+    c.dub('vox-derek', LIP / 'cut3-lip-7d-0c-v3-dub.wav', i0d, i0d + (cut2 - cut1), cut1, 'beat 7 7d-0 (lip-sync dub)',
+          chain=[TILE])
+    c.line(b7, 0, 'man', t_dl, d_line, "I'm really sorry, love.", 'kai')
+    c.dub('vox-sandra', five, 0.0, d_five, t_five, "beat 7 Sandra 'Five years underground,' (over Derek)", chain=[TILE])
+    c.dub('vox-sandra', rest, 0.0, d_rest, t_rest, "beat 7 Sandra 'and you still can't put a seat down' (lip-synced)",
+          chain=[TILE])
+    c.line(b7, 1, 'woman', t_five, t_rest + d_rest - t_five, LINES[('7', 0)]['text'], 'kai')
+    # Sandra, 7-0 (old clip, synced on the second phrase)
+    i0s = s7[1]['at'] - CUT_PRE
+    t_rend = t_rest + d_rest
+    d_at = d7b[0]['at']
+    i0b = max(0.0, d_at - CUT_PRE)
+    cut3 = fr(t_rend + GAP - (d_at - i0b))
+    c.pic(V / 'cut3-lip-7-0-muted.mp4', i0s, cut2, cut3, '7', source=V / 'cut3-lip-7-0.mp4')
+    # Derek, 7d-1: 'But the world ended, Sandra!', a short hold (Kai at3490)
+    d_b = (d7b[0]['to'] - d7b[0]['from']) / d7b[0]['tempo']
+    t_b = cut3 + (d_at - i0b)
+    t_bend = t_b + d_b
+    s_at = s72[0]['at']
+    t_s = t_bend + 0.3 + GAP
+    i0c = max(0.0, s_at - CUT_PRE)
+    cut4 = fr(t_s - (s_at - i0c))
+    c.pic(V / 'cut3-lip-7d-1-muted.mp4', i0b, cut3, cut4, '7', source=V / 'cut3-lip-7d-1.mp4')
+    c.dub('vox-derek', LIP / 'cut3-lip-7d-1c-v3-dub.wav', i0b, i0b + (cut4 - cut3), cut3, 'beat 7 7d-1 (lip-sync dub)',
+          chain=[TILE])
+    c.line(b7, 2, 'man', t_b, d_b, 'But the world ended, Sandra!', 'kai')
+    # Sandra, 7-2 v3
+    d_s = (s72[0]['to'] - s72[0]['from']) / s72[0]['tempo']
+    end = fr(t_s + d_s + TAIL)
+    c.pic(V / 'cut3-lip-7-2-v3-muted.mp4', i0c, cut4, end, '7', source=V / 'cut3-lip-7-2-v3.mp4')
+    c.dub('vox-sandra', LIP / 'cut3-lip-7-2-v3-dub.wav', i0c, i0c + (end - cut4), cut4, 'beat 7 7-2 (lip-sync dub)',
+          chain=[TILE])
+    c.line(b7, 3, 'woman', t_s, d_s, LINES[('7', 2)]['text'], 'kai')
+    m['s6'] = t0
+    c.flags.append('Beats 6-7 (round 10, Kai at3201/at3312/at3490): "up again" is one sentence, its "Again." over Derek\'s '
+                   'face; "Five years underground," over Derek after his line, cut to Sandra on "and you still can\'t put a seat '
+                   'down"; the hold after "But the world ended, Sandra!" is 0.3 s (was 1.3 s). Every phrase whole, one tempo each.')
+    return c.close(b7, end)
 
 # ---------------------------------------------------------------- the cut being built
 
@@ -321,7 +419,9 @@ D3_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 0.9, 5: 1.0, 6: 1.4, 7: 2.0}
 # Round D6 (2 Nov): draft 1H, seven lines; the travelling shot extended to play at real speed (no slow-down), the
 # tune held at least 8 s before "Oh, hello!", and the shot starting after her opening turn (Kai: "just cut to her
 # rolling down the road").
-D6 = TAG == 'd6'
+D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')
+# Round D7 (3 Nov): Kai's 'chopped' lip-sync note -> v3 (clips re-made to the voice, whole phrases, x1.00-1.15);
+# the stand-down plate V4 (reversed) -> SD01, animated from his still pick sd-01.
 D6_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 1.4, 5: 2.0}
 D6_SKIP = 2.5
 D6_LEAD = 8.0
@@ -343,14 +443,75 @@ def d1_takes(row):
     return out
 
 
+# Kai, 4 Nov: beat 0 is one front view for 86 s; cut between three angles at sentence ends. Each insert runs from the
+# gap after phrase a to the gap after phrase b (beat-0 phrase indices); the front shot keeps its own time underneath,
+# so every return to it is where it would have been. (clip, in-point, a, b)
+ANGLES = [('cut3-IA-side-t2-a.mp4', 0.0, 4, 5),   # side: "He built world models and simulations, loads of 'em."
+          ('cut3-IA-top-t1-a.mp4', 0.0, 6, 7),    # overhead: "As it turns out, the world is more than just a simulation."
+          ('cut3-IA-side-t1-a.mp4', 1.5, 8, 9),   # side: "He tested the science in all of them theories..."
+          ('cut3-IA-top-t1-b.mp4', 1.6, 13, 15)]  # overhead: "And now we've worked all that out... we've messed this up."
+if D10:  # Kai r11 (at887, at1728): the overhead was grainy ("like a CRT monitor"), too fast, too many parking bays -> new still
+    ANGLES[1] = ('cut3-IA-top-t2.mp4', 0.0, 6, 7)       # ia-07-a (5b, bays and grain removed), slow crawl
+    ANGLES[3] = ('cut3-IA-top-t3-slow.mp4', 1.6, 13, 15)  # second take, slowed to 0.75x
+if D11:  # Kai r12 (at1749): 'far too tidy' -> 7a with rubble (ia-09-a)
+    ANGLES[1] = ('cut3-IA-top-t4-b.mp4', 0.0, 6, 7)
+    ANGLES[3] = ('cut3-IA-top-t4-a-slow.mp4', 1.6, 13, 15)
+if D12:  # line 5 is gone, so its overhead insert goes with it
+    del ANGLES[3]
+
+
+def match_grade(src, ref, r0, r1, out):
+    """Move src's per-channel mean and spread onto the front shot's over [r0, r1] (one constant gain + offset)."""
+    if out.exists():
+        return out
+    w, h = 320, 180
+    def stats(f, ss=None, t=None):
+        a = ['ffmpeg', '-loglevel', 'error'] + (['-ss', f'{ss:.3f}', '-t', f'{t:.3f}'] if ss is not None else []) + \
+            ['-i', str(f), '-vf', f'scale={w}:{h}', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-']
+        x = np.frombuffer(subprocess.run(a, capture_output=True, check=True).stdout, np.uint8).reshape(-1, h, w, 3)
+        x = x.astype(np.float32)
+        return x.mean((0, 1, 2)), x.std((0, 1, 2))
+    ms, ss_ = stats(src)
+    mr, sr = stats(ref, r0, r1 - r0)
+    g = sr / ss_
+    if D10:  # r11: a full contrast match crunched the grain; move the means fully but only half the spread
+        g = 1 + 0.5 * (g - 1)
+    o = mr - g * ms
+    ex = ':'.join(f'{c}=clip(val*{g[i]:.4f}+{o[i]:.2f}\\,0\\,255)' for i, c in enumerate('rgb'))
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(src), '-an', '-vf', f'format=rgb24,lutrgb={ex},format=yuv420p',
+                    '-c:v', 'libx264', '-crf', '16', '-preset', 'medium', str(out)], check=True)
+    return out
+
+
+def beat0_angles(c, graded, skip, end0, starts, v6):
+    cuts = [fr((starts[k][1] + starts[k + 1][0]) / 2) for k in range(len(starts) - 1)]  # mid-gap after phrase k
+    t, used = 0.0, []
+    for name, i0, a, b in ANGLES:
+        t0, t1 = cuts[a], cuts[b]
+        assert i0 + (t1 - t0) <= 8.0, (name, t0, t1)
+        c.pic(graded, skip + t, t, t0, '0', source=v6)
+        src = V / name
+        m = match_grade(src, graded, skip + t0, skip + t1, c.vdir / f'{src.stem}-matched.mp4')
+        c.pic(m, i0, t0, t1, '0', source=src)
+        used.append(f'{t0:.1f}-{t1:.1f} s {"side" if "side" in name else "overhead"} ({src.stem})')
+        t = t1
+    c.pic(graded, skip + t, t, end0, '0', source=v6)
+    c.flags.append('Beat 0, round D9 (Kai, 4 Nov): the front view is cut with two new angles at sentence ends, '
+                   'side (your still pick ia-02-c) and overhead (' + ('ia-09-a, rubble back on the road (round 12 note), gentler colour match' if D11 else 'ia-07-a, re-made after your round 11 notes, gentler colour match' if D10 else 'ia-05-b') + '), both Veo 3.1 Fast with the camera keeping pace with her: '
+                   + '; '.join(used) + '. The front shot keeps running underneath, so each return to it picks up where it would be. '
+                   'Each insert is colour-matched to the front shot around it.')
+
+
 def beat0_d1():
     """(phrases [(Take, gap after, text, line)], lines [(i, text, by)]) for beat 0 in draft 1D."""
     script = json.loads((S.SCENES / 'second-half-a-killbots' / 'script.json').read_text())
-    vf = f"voices-{ {'d5': 'd4', 'd6': 'd5'}.get(TAG, TAG)}.json" if D3 else 'voices-d1.json'
+    vf = f"voices-{ {'d5': 'd4', 'd6': 'd5', 'd7': 'd5', 'd8': 'd6', 'd9': 'd6', 'd10': 'd6', 'd11': 'd6', 'd12': 'd6'}.get(TAG, TAG)}.json" if D3 else 'voices-d1.json'
     gaps = D6_LINE_GAP if D6 else D3_LINE_GAP if D3 else D1_LINE_GAP
     rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-a-killbots' / vf).read_text())['lines']}
     seq, lines = [], []
     for i, ln in enumerate(script['lines']):
+        if D12 and i == 5:  # Kai at1878 (4 Nov): 'one line too many... a bit overindulgent'
+            continue
         tk = d1_takes(rows[i])
         for p, (take, g) in enumerate(tk):
             last = p == len(tk) - 1
@@ -393,7 +554,37 @@ def scene_a():
         c.meta['intro'] = ('Scene A, round 5: Maddie\'s storyverse intro, draft 1G from the storyverse dialogue page (your '
                            'pick, 2 Nov). Everything after beat 0 is as before. Play it, click any beat, clip, line or '
                            "sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.")
-    if D6:
+    if D12:
+        c.meta['intro'] = ('Scene A, round 14: your round 13 note (4 Nov). Maddie\'s line "And now we\'ve worked all that out... we really feel '
+                           'like we\'ve messed this up. And wish we could go back and change things." is cut: "And so did you" goes straight '
+                           'to "Anyway! Patrol\'s out. Mind how you go." The overhead shot that sat under it goes too; the scene is about 10 s shorter. '
+                           "Everything else is round 13. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D11:
+        c.meta['intro'] = ('Scene A, round 13: your round 12 note (4 Nov): the overhead road was far too tidy. Both overhead moments are re-made from your '
+                           'still pick 9a (the clean overhead with rubble, potholes and weeds back on the road), at the same slow crawl. '
+                           "Everything else is round 12. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D10:
+        c.meta['intro'] = ('Scene A, round 12: your round 11 notes (4 Nov) were only about the overhead view. It is re-made from your '
+                           'still pick 7a (the same framing with the parking bays and the grain taken out), she crawls at her front-shot '
+                           'pace, and the colour match is gentler. Everything else is round 11 as you signed it off. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D9:
+        c.meta['intro'] = ('Scene A, round 11: your note of 4 Nov. Maddie\'s walk down the street now cuts between three views at the ends '
+                           'of her sentences: the front view, a side view keeping pace with her (your pick ia-02-c) and an overhead view '
+                           'travelling with her (ia-05-b). Everything else is round 10 as you signed it off. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D8:
+        c.meta['intro'] = ('Scene A, round 10: your timeline notes of 3 Nov. Maddie\'s intro is draft 1I (no storyverse name yet, '
+                           'no time machine yet, "we\'ve messed this up"); the row re-cut so Sandra\'s "up again" is one sentence and '
+                           'her "Five years underground," lands on Derek\'s face; a shorter hold after "But the world ended, Sandra!"; '
+                           'the boss says "No, thank you. I will handle it." The wider retreat shot is still to come (stills first). '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D7:
+        c.meta['intro'] = ('Scene A, round 9: the row\'s lip sync re-made (new talking clips sized to the voices, so each line '
+                           'plays as whole phrases, no chopping), and the stand-down re-shot from your still pick sd-01: the bot '
+                           'brakes dead well short of the door, no reversing. Everything else is round 8. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D6:
         c.meta['intro'] = ('Scene A, round 8: Maddie\'s intro is draft 1H (your notes of 2 Nov: storyverse, then the regret and '
                            'the time machine). The travelling shot now plays at real speed (new clips added, no slow motion), '
                            'starts with her already rolling, and the tune runs 8 s before she speaks. Everything else is round 7. '
@@ -470,7 +661,10 @@ def scene_a():
         c.flags.append('Beat 0 takes: Kai\'s audition picks for the new phrases ("Oh, hello!" c, "didn\'t notice you" a, '
                    '"racket down" a, "It\'s his tune" c, "Anyway..." a); the unchanged phrases keep their round-0 takes. Whisper '
                    'hears take c of "It\'s his tune" as "This is June" (takes a and b are there if your ear agrees).')
-    c.pic(graded, skip, 0.0, end0, '0', source=v6)
+    if D9:
+        beat0_angles(c, graded, skip, end0, starts, v6)
+    else:
+        c.pic(graded, skip, 0.0, end0, '0', source=v6)
     if D6:
         c.flags.append(f'Beat 0 (round D6, Kai at76): the travelling shot is extended with new chained clips '
                        f'({v6.name}) and plays at real speed{"" if not stretch else " (STILL SLOWED: the extension was too short)"}; '
@@ -479,7 +673,8 @@ def scene_a():
     if D1:  # by phrase text: "Sorry about the racket." is where the radio goes down
         at = {text: st for (_, _, text, _), st in zip(seq, starts)}
         m['hello'], m['racket'], m['bye'] = starts[0], at['Sorry about the racket.'], starts[-1]
-        cue = dict(D3_CUES, mattered="So it's not a multiverse at all. My boss likes to call it the storyverse.") if D6 else D3_CUES
+        cue = (dict(D3_CUES, mattered='And so did you.') if D8 else  # 1I: the storyverse name comes later (Kai at1721)
+               dict(D3_CUES, mattered="So it's not a multiverse at all. My boss likes to call it the storyverse.") if D6 else D3_CUES)
         m['went'], m['mattered'] = ((at[cue['went']], at[cue['mattered']]) if D3 else
                                     (at['went.'], at['We understand that now...']))
     else:
@@ -531,37 +726,41 @@ def scene_a():
     t = c.close(b4, end4)
 
     # ---- 6-7: the row, lip-synced; Derek's two new shots between Sandra's lines, held longer on the last
-    rows = [('6', 'woman', '6-0', '6-0', LINES[('6', 0)]['text']),
-            ('7', 'man', '7d-0c', '7d-0', "I'm really sorry, love." if D4 else 'Oh, sorry, sorry, love.'),
-            ('7', 'woman', '7-0', '7-0', LINES[('7', 0)]['text']),
-            ('7', 'man', '7d-1c', '7d-1', 'But the world ended, Sandra!'),
-            ('7', 'woman', '7-2', '7-2', LINES[('7', 2)]['text'])]
-    info = [lipinfo(n) for _, _, n, _, _ in rows]
-    ins = [0.0] + [max(0.0, at - CUT_PRE) for _, at, _, _ in info[1:]]
-    beats, li = {}, {}
-    for k, ((bid, who, name, clip, text), (wav, at, end, ph)) in enumerate(zip(rows, info)):
-        if bid not in beats:
-            beats[bid] = c.beat(bid, {'6': 'The lavatory', '7': 'The row, up close'}[bid], t, act='The row',
-                                see={'6': 'Hard cut to full volume: Sandra, lip-synced.',
-                                     '7': 'Derek, Sandra, Derek, Sandra: shot by shot, lip-synced; we hold on Derek '
-                                          'after "But the world ended, Sandra!"'}[bid])
-            if k:
-                c.close(beats[rows[k - 1][0]], t)
-        i0 = ins[k]
-        hold = 1.3 if name == '7d-1c' else 0.0  # Kai: "pause on Derek a bit longer"
-        out = (end + hold + (GAP - (info[k + 1][1] - ins[k + 1]))) if k + 1 < len(rows) else end + TAIL
-        c.pic(V / f'cut3-lip-{clip}-muted.mp4', i0, t, t + out - i0, bid, source=V / f'cut3-lip-{clip}.mp4')
-        stem = {'woman': 'vox-sandra', 'man': 'vox-derek'}[who]
-        c.dub(stem, wav, i0, out, t, f'beat {bid} {name} (lip-sync dub)', chain=[TILE])
-        i = li[bid] = li.get(bid, -1) + 1
-        c.line(beats[bid], i, who, t + at - i0, end - at, text, 'kai')
-        t = fr(t + out - i0)
-    m['s6'] = beats['6']['start']
-    t = c.close(beats['7'], t)
-    c.flags.append('Beat 7: Derek\'s two new shots play Kai\'s audition picks (take c of both), re-placed on the same '
-                   'talking clips (they were dubbed with take a). Whisper hears take c of "But the world ended, Sandra!" '
-                   'as "What the world ends, it\'s Sandra" (it also misheard take a\'s siblings); take a reads clean if '
-                   'your ear agrees.')
+    if D8:  # Kai's r9 notes: 'up again' one sentence; 'Five years underground,' on Derek; shorter hold on Derek
+        t = row_d8(c, t, m, LINES)
+    else:
+        v3c = '-v3' if D7 else ''  # the re-made clips (7-0 and 7d-1 kept their old clips: no new take beat them)
+        rows = [('6', 'woman', '6-0', '6-0' + v3c, LINES[('6', 0)]['text']),
+                ('7', 'man', '7d-0c', '7d-0' + v3c, "I'm really sorry, love." if D4 else 'Oh, sorry, sorry, love.'),
+                ('7', 'woman', '7-0', '7-0', LINES[('7', 0)]['text']),
+                ('7', 'man', '7d-1c', '7d-1', 'But the world ended, Sandra!'),
+                ('7', 'woman', '7-2', '7-2' + v3c, LINES[('7', 2)]['text'])]
+        info = [lipinfo(n) for _, _, n, _, _ in rows]
+        ins = [0.0] + [max(0.0, at - CUT_PRE) for _, at, _, _ in info[1:]]
+        beats, li = {}, {}
+        for k, ((bid, who, name, clip, text), (wav, at, end, ph)) in enumerate(zip(rows, info)):
+            if bid not in beats:
+                beats[bid] = c.beat(bid, {'6': 'The lavatory', '7': 'The row, up close'}[bid], t, act='The row',
+                                    see={'6': 'Hard cut to full volume: Sandra, lip-synced.',
+                                         '7': 'Derek, Sandra, Derek, Sandra: shot by shot, lip-synced; we hold on Derek '
+                                              'after "But the world ended, Sandra!"'}[bid])
+                if k:
+                    c.close(beats[rows[k - 1][0]], t)
+            i0 = ins[k]
+            hold = 1.3 if name == '7d-1c' else 0.0  # Kai: "pause on Derek a bit longer"
+            out = (end + hold + (GAP - (info[k + 1][1] - ins[k + 1]))) if k + 1 < len(rows) else end + TAIL
+            c.pic(V / f'cut3-lip-{clip}-muted.mp4', i0, t, t + out - i0, bid, source=V / f'cut3-lip-{clip}.mp4')
+            stem = {'woman': 'vox-sandra', 'man': 'vox-derek'}[who]
+            c.dub(stem, wav, i0, out, t, f'beat {bid} {name} (lip-sync dub)', chain=[TILE])
+            i = li[bid] = li.get(bid, -1) + 1
+            c.line(beats[bid], i, who, t + at - i0, end - at, text, 'kai')
+            t = fr(t + out - i0)
+        m['s6'] = beats['6']['start']
+        t = c.close(beats['7'], t)
+        c.flags.append('Beat 7: Derek\'s two new shots play Kai\'s audition picks (take c of both), re-placed on the same '
+                       'talking clips (they were dubbed with take a). Whisper hears take c of "But the world ended, Sandra!" '
+                       'as "What the world ends, it\'s Sandra" (it also misheard take a\'s siblings); take a reads clean if '
+                       'your ear agrees.')
 
     # ---- 8: same HUD, patrol -> KILL MODE; the row muffled under it as a bed
     s8 = t
@@ -627,6 +826,8 @@ def scene_a():
     for k, (who, src, text) in enumerate(calls):
         if who == 'ai':
             tk, chain, text = Take(SUNO_A / BOSS[src]), [SPEAKER], BOSS_TEXT[src]
+            if D8 and src == 3:  # Kai at4564 (3 Nov): no second 'Maddie' -- the same take with the name cut out
+                tk, text = Take(SUNO_A / BOSS[3].replace('.wav', '-noname.wav')), 'No, thank you. I will handle it.'
             e = c.say('vox-ai', tk, tt, '11', f'beat 11 boss line {src}', chain=chain, lufs=-17)
         else:
             tk = Take(src)
@@ -660,7 +861,7 @@ def scene_a():
     e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
     c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
     d10b = fr(max(5.0, e + TAIL - t))
-    if TAG in ('d5', 'd6'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
+    if TAG in ('d5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
         c.pic(V / 'cut3-WA02.mp4', 0, t, t + d10b, '10b')
         b['title'], b['see'] = 'The wide approach', ('Long lens through the grass: the pack races along the foot of the slope, the '
                                                      'bunker door small and high on the right. Maddie over it.')
@@ -678,12 +879,21 @@ def scene_a():
                    'Lined up at the door, they file away one at a time. Then Maddie, shaky with relief: "Good job." '
                    '"That was close."')
     v4 = V / 'cut3-V4.mp4'
+    if D7 and (V / 'cut3-SD01.mp4').exists():  # Kai: the bot reversed under the HUD -> his still pick sd-01, braked dead
+        v4 = V / 'cut3-SD01.mp4'
+        c.flags.append('Beat 12 (round 9): the stand-down plate is SD01 (your still pick sd-01, animated): it brakes dead well '
+                       'short of the door; V4 (which reversed) is out.')
     peace = 3.6
     c.huds.append(dict(name='hud-12', src=str(v4), d=7.0, args=['--state', 'kill', '--lock', '0',
                                                                  '--flip-to', f'peace@{peace}'],
-                       meter=['sfx-killbots'], t0=s12))
+                       meter=['sfx-killbots'], t0=s12, ss=0.5 if v4.stem == 'cut3-SD01' else 0.0))  # SD01: first 0.25 s re-sits
     c.pic(c.vdir / 'hud-12.mp4', 0.0, s12, s12 + 7.0, '12', source=v4, hud='hud-12')
-    c.pic(V / 'cut3-V10r.mp4', 0, s12 + 7.0, s12 + 12.5, '12')
+    if D8 and (V / 'cut3-RT01.mp4').exists():  # Kai at4914: much wider, far from the door, turning and retreating (his pick rt-01)
+        c.pic(V / 'cut3-RT01.mp4', RT01_IN, s12 + 7.0, s12 + 12.5, '12')
+        c.flags.append('Beat 12 (round 10, Kai at4914): V10r (filing away at the door) replaced by RT01, your still pick rt-01: '
+                       'a high wide from the ridge, the pack turning and rolling away down the slope.')
+    else:
+        c.pic(V / 'cut3-V10r.mp4', 0, s12 + 7.0, s12 + 12.5, '12')
     s_v3 = fr(s12 + 12.5)
     tk = Take(pathlib.Path(A3['media']) / MADDIE12['file'])
     l12 = 'Good job. [pause] That was close.'
@@ -780,7 +990,7 @@ def audio_a(c):
     wind = wind_file()
     fx('sfx-wind', wind, 0, en['3'], rms=-34, fi=1.0, fo=0.05, what='wind (ffmpeg)')
     loop_wheels(fx, 'sfx-maddie', 0.0, en['0'], rms=-31, fi=0.5, fo=0.3, what='her wheels (loop)')
-    for k in np.arange(0.5, en['0'] - 0.5, 2.5):
+    for k in np.arange(8.5 if D8 else 0.5, en['0'] - 0.5, 2.5):  # d8 (Kai at50): no blips under the opening tune
         fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon blip')
     fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-oh.wav', hello - 0.55, rms=-30, what='beep: startled (she sees us)')
     fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', down - 0.05, rms=-32, what='servo: she turns the radio down')
@@ -1332,7 +1542,7 @@ def make_huds(c):
             base = pingpong(src, 0.0, h['d'], c.vdir / f"{src.stem}-i0-d{h['d']:.3f}.mp4")
         out = c.vdir / f"{h['name']}.mp4"
         trimmed = c.vdir / f"{h['name']}-base.mp4"
-        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(base), '-t', f"{h['d']:.4f}", '-vf',
+        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f"{h.get('ss', 0.0):.4f}", '-i', str(base), '-t', f"{h['d']:.4f}", '-vf',
                         f'fps={FPS}', *ENC, str(trimmed)], check=True)
         subprocess.run([sys.executable, str(HERE / 'hud.py'), str(trimmed), str(out), '--audio', h['wav'],
                         '--no-audio-out', *h['args']], check=True)

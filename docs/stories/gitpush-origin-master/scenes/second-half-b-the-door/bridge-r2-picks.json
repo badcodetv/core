@@ -1,0 +1,106 @@
+{
+ "title": "Bridge Round 2 Picks",
+ "eyebrow": "GPOM · the bridge · timeline round 1 notes",
+ "heading": "New faces and a new voice for the debate",
+ "intro": "From your timeline notes: the old lady, Sandra and Derek each get their own talking shot in the crowd, under the tannoy horn that's now hanging bent after the boom. Pick one still per row, and the old lady's new voice (each clip plays her four lines in order: \"Are you literally joking?\", \"You killed everybody!\" (through the door), \"Derek, go and have a look what that was.\", \"We know we need to talk about this...\"). Nothing is spent until you pick.",
+ "sections": [
+  {
+   "h": "The old lady's voice",
+   "lede": "Less posh, still older and dry. Same words in each. Her one line in scene D would change too.",
+   "groups": [
+    {
+     "slot": "lady-voice",
+     "title": "Her new voice",
+     "line": "Three voices, picked by the speech checker; nobody has listened.",
+     "kind": "audio",
+     "opts": [
+      {
+       "id": "Gacrux",
+       "src": "a/lady-Gacrux.mp3",
+       "label": "Gacrux: Wiltshire, warm but dry",
+       "warn": ""
+      },
+      {
+       "id": "Vindemiatrix",
+       "src": "a/lady-Vindemiatrix.mp3",
+       "label": "Vindemiatrix: Yorkshire (Sheffield), plain-spoken",
+       "warn": ""
+      },
+      {
+       "id": "Callirrhoe",
+       "src": "a/lady-Callirrhoe.mp3",
+       "label": "Callirrhoe: Birmingham, down to earth",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The talking shots",
+   "lede": "Each becomes a lip-synced clip (about 1 credit each). Lit by the wall bulb by the horn; the TV is off.",
+   "groups": [
+    {
+     "slot": "bp4-lady",
+     "title": "The old lady in the crowd",
+     "line": "\"Derek, go and have a look what that was.\" and \"We know we need to talk about this. We do have a food problem. Perhaps we should vote.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BP4-lady-a",
+       "src": "s/BP4-lady-a.jpg",
+       "label": "a: closer, crowd to her left, the horn behind (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BP4-lady-b",
+       "src": "s/BP4-lady-b.jpg",
+       "label": "b: a little wider, crowd facing the horn",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "bp5-sandra",
+     "title": "Sandra in the crowd",
+     "line": "\"If there's a way to fix this, I'd love to take it. It sucks living in this bunker with grumpy Derek.\"",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BP5-sandra-a",
+       "src": "s/BP5-sandra-a.jpg",
+       "label": "a: turned to her right, the horn above her (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BP5-sandra-b",
+       "src": "s/BP5-sandra-b.jpg",
+       "label": "b: tighter, a man's shoulder in the foreground",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "bp6-derek",
+     "title": "Derek protesting: \"Oi.\"",
+     "line": "The toilet-row face: hands spread, outraged.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "BP6-derek-a",
+       "src": "s/BP6-derek-a.jpg",
+       "label": "a: centre of the crowd, hands out (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "BP6-derek-b",
+       "src": "s/BP6-derek-b.jpg",
+       "label": "b: further back, more crowd around him",
+       "warn": "red glow on the vault (the TV is off now)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

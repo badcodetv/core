@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/voice/cut3/bridge4/01-bot-b-fx.wav",
+ "made": "2026-11-04T14:01:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/voice/cut3/bridge4/01-bot-b.wav",
+ "why": "tannoy copy of the r4 pick b",
+ "settings": {
+  "fx": "tannoy-r2"
+ }
+}

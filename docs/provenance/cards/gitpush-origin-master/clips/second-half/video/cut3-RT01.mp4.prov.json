@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01.mp4",
+ "made": "2026-11-03T19:28:21+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg -map 0:v -c:v copy -an",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t8.mp4",
+ "why": "GPOM second half A, beat 12 retreat: the pick (take 8, Flow mediaId b8b401d7-ae7b-4477-a4ec-57a0baf2dad6) with the Veo audio stripped, video stream copied untouched. Use in-point 2.5 s for 5.5 s (to 8.0 s); 0.5 s if the crescent bot's rightward pivot-skid at 1.75-2.25 s is acceptable."
+}

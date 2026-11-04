@@ -1,12 +1,13 @@
 {
  "scene": "second-half-a-killbots",
  "beat": "0",
- "ruled": "2026-11-02, Kai: draft 1H \"is perfect\" with line 6 ending \"and that went along with you lot\"; storyverse before the regret; the time machine is first mentioned here.",
+ "ruled": "2026-11-03, Kai (timeline r9 notes at1721, at2320): draft 1I = 1H without the storyverse name (revealed later in the story) and without the time machine (a surprise that develops later); 'we've messed this up'.",
  "dialogue": {
   "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
   "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
   "picked": "1G",
-  "round": 6
+  "round": 6,
+  "now": "1I (1H + timeline r9 notes)"
  },
  "about": "Maddie's intro, the words' one home. [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion. Earlier versions under history.",
  "lines": [
@@ -36,13 +37,13 @@
   },
   {
    "who": "bot",
-   "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
+   "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you.",
    "by": "kai",
    "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
   },
   {
    "who": "bot",
-   "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
+   "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we've messed this up. [pause] And wish we could go back and change things.",
    "by": "kai",
    "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
   },
@@ -228,6 +229,54 @@
      "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
      "by": "kai",
      "note": "draft 1G (Kai's notes, rounds 1-4)"
+    }
+   ]
+  },
+  {
+   "draft": "1H",
+   "ruled": "2026-11-02, Kai: draft 1H \"is perfect\" with line 6 ending \"and that went along with you lot\"; storyverse before the regret; the time machine is first mentioned here.",
+   "lines": [
+    {
+     "who": "bot",
+     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[fond, confiding] He misses you something rotten, you know.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    },
+    {
+     "who": "bot",
+     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+     "by": "kai",
+     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
     }
    ]
   }

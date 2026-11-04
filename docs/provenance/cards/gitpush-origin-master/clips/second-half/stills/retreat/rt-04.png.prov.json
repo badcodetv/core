@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-04.png",
+ "made": "2026-11-03T18:48:03+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "nano-banana",
+ "tool": "flow",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/work/p4-a.jpg",
+ "why": "GPOM second half A, retreat option 04 (Kai note on cut3-V10r: too close to the door after the stand-down, wooden; needs a much wider shot of the pack turning and retreating from mid-slope): wa-02's own side-on long lens through the grass, later: the pack stalled halfway up and wheeling back down-left, door high right. Candidate p4-a.",
+ "source_id": "8c0449fe-a281-4e19-a247-8aabae52f295",
+ "prompt": "Using the first image exactly for the camera position, the long-lens compression, the foreground grass and the concrete bunker entrance high on the upper right with its shut green doors, the second image for how far up the slope the robots stopped, and the third image for the tracked robot's design: the same far-off side-on view through the grass, later. The pack of five robots is no longer at the foot of the slope but stalled halfway up it, well below the bunker, and is wheeling round in a ragged line: the lead robot has turned through half a circle and points back down and to the left, the others are swinging round behind it at different angles, tracks skidding sideways and scuffing up chalk. A thin haze of dust hangs over them and drifts uphill toward the doors. Overcast grey sky. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "inputs": {
+  "ref1": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/wide-approach/wa-02.png",
+  "ref2": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/stand-down/sd-01.png",
+  "ref3": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/P1-patrol-blockbuster.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-RT01-t4.mp4",
+ "made": "2026-11-03T19:03:30+00:00",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off wide shot, the camera never moves. The four tracked robots swing their noses round to the left, skidding on their tracks and ripping up white chalk, then drive heavily leftward across the hillside and down into the valley, leaving the picture on its left side one after another. Hulls bounce on the rough turf, dust trails behind them. Only these four robots. 16mm grain.",
+ "model": "Omni Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/retreat/rt-01b.png",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8,
+  "credits": "25",
+  "mode": "Frames",
+  "frames": "start",
+  "flow_project": "f96cac0e-9d56-43e0-aade-89f87deea2b8"
+ },
+ "source_id": "e6b6a808-da29-4b06-aac1-5fef2af399c3",
+ "why": "GPOM second half A, beat 12 retreat; take 4 of rt-01b, REJECTED: bots lurch/slide up-right at 0.5-1.5 s, a fifth bot enters from the left edge ~4 s, one bot drives up toward the door 4-7.5 s"
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/bridge2/04-lady-Gacrux-b.try1.wav",
+ "made": "2026-11-03T17:37:52+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "You killed everybody!",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nThe old lady, a Wiltshire farmer's widow in her seventies: the one the hundred survivors listen to.\n\n## THE SCENE\nA Cold War bunker under a Wiltshire hill, five years underground with a hundred people. A robot that works for the machine that killed everyone is at the door.\n\n### DIRECTOR'S NOTES\nEmotion for this line: shouting, furious, with grief in it.\nStyle: dry, flat and practical; deeply suspicious; nobody's fool, never theatrical.\nPace: brisk; no long pauses.\nAccent: West Country, as heard in rural Wiltshire; warm but dry, not posh. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the nan in a British drama who everyone secretly does what she says.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/cut3/bridge2/04-lady-Gacrux-b.md"
+ },
+ "settings": {
+  "voice": "Gacrux",
+  "temperature": 1,
+  "channels": 2
+ }
+}

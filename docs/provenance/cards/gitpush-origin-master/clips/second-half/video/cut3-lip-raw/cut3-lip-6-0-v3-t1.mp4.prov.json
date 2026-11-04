@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-6-0-v3-t1.mp4",
+ "made": "2026-11-03T17:12:32.097Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off camera, no camera movement. The woman in the cream jumper, facing us, points at the man and scolds him, sharp and sarcastic. She says: Derek. You've left the seat up. She lets that hang for a long moment, glaring, then adds one more word. She says: Again. Then her lips stay pressed shut. The man seen from behind stays still and silent.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "c3789db5-c092-4b15-a066-04e16ef495c7"
+}

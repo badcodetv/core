@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br15-sandra2b-SANDRA5.mp4",
+ "made": "2026-11-04T11:13:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The woman in the cream cable-knit jumper glances at the people beside her and says, deadpan and wry: It sucks living in this bunker with grumpy Derek. Then she gives a small tired shrug. The dark-haired man in the foreground stays still. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA5.jpg",
+ "why": "Kai 4 Nov (timeline r2, at1795): the cut between Sandra's two halves jumps; chained from br10's frame at 5.0 s. No 'Oi' (at1902), so no hands up.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA5.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br15-sandra2b",
+  "frame": 15,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:12:34.668Z"
+ }
+}

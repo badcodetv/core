@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br10-sandra1-BP5-sandra-b.mp4",
+ "made": "2026-11-03T19:21:25+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The woman in the cream cable-knit jumper turns to the people beside her and says, wry and tired: If there's a way to fix this, I'd love to take it. The man in the foreground stays still. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP5-sandra-b.jpg",
+ "why": "Kai 3 Nov: Sandra seen in the crowd, no swearing; still pick BP5-sandra-b",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/BP5-sandra-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/second-half-b-the-door",
+  "key": "br10-sandra1",
+  "frame": 10,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T19:20:25.164Z"
+ }
+}

@@ -13,7 +13,7 @@
    "length": "3:58",
    "state": "in Premiere",
    "tone": "premiere",
-   "premiere": "gpom-1-track-and-off-switch (was gpom-s01); runs straight into gpom-2-A-killbots-r9",
+   "premiere": "gpom-1-track-and-off-switch (was gpom-s01); runs straight into gpom-2-A-killbots-r10",
    "what": "Kai cuts this himself in Premiere. The drum & bass track is the downfall (Kai, 15 Oct). It was made before timeline pages existed, so there's no timeline page; the boards that fed each part are below.",
    "parts": [
     {
@@ -103,12 +103,12 @@
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "A · Kill bots",
    "length": "3:11",
-   "state": "round 12: overhead view re-made (clean, slower)",
+   "state": "round 13: overhead road rubble-strewn again",
    "tone": "wip",
    "scene": "scenes/second-half-a-killbots",
    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
-   "premiere": "gpom-story.prproj · sequence gpom-2-A-killbots-r9 (same-named bin, radio music left out); r2 to r8 in \"zz old sequences\"",
-   "what": "Maddie on the high street (her intro, cut between front, side and overhead views at sentence ends; draft 1I: the regret, no storyverse name or time machine yet; real speed, 8 s of his tune first), the kill-bot HUD, the toilet-seat row (lip sync re-made: new clips sized to the voices), the race, the wide approach (your still pick wa-02), the stand-down re-shot from your still pick sd-01 (brakes dead, no reversing; NEW OBJECTIVE / SUSTAIN ORGANIC LIFE), then the wide retreat (rt-01c-2). Round 12 (the overhead re-made: clean, slower) is on the page and in Premiere as gpom-2-A-killbots-r9: note it there.",
+   "premiere": "gpom-story.prproj · sequence gpom-2-A-killbots-r10 (same-named bin, radio music left out); r2 to r9 in \"zz old sequences\"",
+   "what": "Maddie on the high street (her intro, cut between front, side and overhead views at sentence ends; draft 1I: the regret, no storyverse name or time machine yet; real speed, 8 s of his tune first), the kill-bot HUD, the toilet-seat row (lip sync re-made: new clips sized to the voices), the race, the wide approach (your still pick wa-02), the stand-down re-shot from your still pick sd-01 (brakes dead, no reversing; NEW OBJECTIVE / SUSTAIN ORGANIC LIFE), then the wide retreat (rt-01c-2). Round 13 (the overhead re-made with rubble on the road, slow) is on the page and in Premiere as gpom-2-A-killbots-r10: note it there.",
    "history": [
     {
      "name": "Dialogue options (the intro and the doorstep)",
@@ -235,7 +235,7 @@
   "other": [
    {
     "sequence": "gpom-1-track-and-off-switch",
-    "what": "Kai's cut: the opening, the push, the drop, the banks, the war, then five years later and the off switch (4:40). Was gpom-s01. Its end runs straight into gpom-2-A-killbots-r9"
+    "what": "Kai's cut: the opening, the push, the drop, the banks, the war, then five years later and the off switch (4:40). Was gpom-s01. Its end runs straight into gpom-2-A-killbots-r10"
    },
    {
     "sequence": "gpom-the-gaze-cut-46",

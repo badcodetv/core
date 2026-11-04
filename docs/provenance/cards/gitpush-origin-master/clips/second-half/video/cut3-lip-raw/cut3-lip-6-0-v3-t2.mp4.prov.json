@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-6-0-v3-t2.mp4",
+ "made": "2026-11-03T17:14:24.289Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off camera, no camera movement. Facing us, the woman in the cable-knit jumper jabs a finger at the man and tells him off in a slow, heavy, deadpan voice. She says: Derek. You've left the seat up. A long pause while she stares him down. She says: Again. After that her mouth stays shut. The man seen from behind does not move or speak.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "01cbd8bd-ee6e-420a-8c4f-390cc5083b9d"
+}

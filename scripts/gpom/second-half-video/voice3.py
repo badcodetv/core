@@ -561,6 +561,8 @@ D3_REUSE = {'Oh, hello!': 'a1/00-0-bot-c.wav'}
 D4_SCENES = D3_SCENES
 # Round D5 (2 Nov): draft 1H (Kai's timeline r7 notes): same reuse rule, from every earlier storyverse round.
 D5_SCENES = D3_SCENES
+# Round D6 (3 Nov): draft 1I (Kai's timeline r9 notes: no storyverse name, no time machine, 'we've messed this up').
+D6_SCENES = D3_SCENES
 
 
 def d4_reuse(rounds=('d3',)):
@@ -614,7 +616,7 @@ def d1_jobs(rnd='d1'):
             'man': cast['man']['prompt']}
     voice = {'bot': 'Aoede', 'lady': cast['lady']['voice'], 'woman': cast['woman']['voice'], 'man': cast['man']['voice']}
     out, meta = [], {}
-    for sc, folder in {'d1': D1_SCENES, 'd2': D2_SCENES, 'd3': D3_SCENES, 'd4': D4_SCENES, 'd5': D5_SCENES}[rnd].items():
+    for sc, folder in {'d1': D1_SCENES, 'd2': D2_SCENES, 'd3': D3_SCENES, 'd4': D4_SCENES, 'd5': D5_SCENES, 'd6': D6_SCENES}[rnd].items():
         script = json.loads((V.S.SCENES / folder / 'script.json').read_text())
         beat, rows = script['beat'], []
         for i, ln in enumerate(script['lines']):
@@ -637,7 +639,7 @@ def d1_jobs(rnd='d1'):
                    'phrases': [], 'gaps': [{'after': p, 'before': p + 1, 'seconds': g} for p, g in enumerate(gaps)]}
             for p, (ph, emo) in enumerate(zip(phrases, emos)):
                 stem = f'{V.bkey(beat)}-{i}-{who}' + (f'-p{p}' if len(phrases) > 1 else '')
-                reuse = d4_reuse() if rnd == 'd4' else d4_reuse(('d4', 'd3')) if rnd == 'd5' else {'d1': D1_REUSE if sc == 'A' else {}, 'd2': D2_REUSE, 'd3': D3_REUSE}[rnd]
+                reuse = d4_reuse() if rnd == 'd4' else d4_reuse(('d4', 'd3')) if rnd == 'd5' else d4_reuse(('d5', 'd4', 'd3')) if rnd == 'd6' else {'d1': D1_REUSE if sc == 'A' else {}, 'd2': D2_REUSE, 'd3': D3_REUSE}[rnd]
                 if ph in reuse:
                     row['phrases'].append({'p': p, 'text': ph, 'direction': emo, 'reused': reuse[ph]})
                     continue
@@ -781,9 +783,9 @@ def main():
 if __name__ == '__main__':
     if '--round' in sys.argv:
         rnd = sys.argv[sys.argv.index('--round') + 1].upper()
-        assert rnd in ('A1', 'A3', 'B2', 'D1', 'D2', 'D3', 'D4', 'D5'), 'only --round A1 / A3 / B2 / D1 / D2 / D3 / D4 / D5 exist'
+        assert rnd in ('A1', 'A3', 'B2', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6'), 'only --round A1 / A3 / B2 / D1 / D2 / D3 / D4 / D5 / D6 exist'
         load_key()
-        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1, 'D2': lambda: main_d1('d2'), 'D3': lambda: main_d1('d3'), 'D4': lambda: main_d1('d4'), 'D5': lambda: main_d1('d5')}[rnd]()
+        {'A1': main_a1, 'A3': main_a3, 'B2': main_b2, 'D1': main_d1, 'D2': lambda: main_d1('d2'), 'D3': lambda: main_d1('d3'), 'D4': lambda: main_d1('d4'), 'D5': lambda: main_d1('d5'), 'D6': lambda: main_d1('d6')}[rnd]()
     elif '--lines' in sys.argv:
         load_key()
         main_lines()

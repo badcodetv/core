@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/B-bridge-r2/split/18-lady-Vindemiatrix-c-1.wav",
+ "made": "2026-11-03T19:25:20+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut-bridge.py --round 2",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/18-lady-Vindemiatrix-c.wav",
+ "why": "the old lady's take split at its sentence break"
+}

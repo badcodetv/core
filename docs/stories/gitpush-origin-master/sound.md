@@ -431,7 +431,7 @@ line in the scenes' `voices*.json`.
 | --- | --- | --- | --- |
 | **Sandra** (the woman in the toilet-seat row) | `Autonoe` | Northern, Lancashire (Bolton) | sharp, sarcastic, every line a jab; quick and clipped; funny because she is completely serious |
 | **Derek** (her husband) | `Algieba` | Scouse, Liverpool | indignant and exasperated in the row; in the circle angry and frightened, the first to say no; bursts, getting louder |
-| **The old lady** | `Sulafat` | old-fashioned RP, 1950s BBC, Home Counties | dry, flat, deeply suspicious, then the softest she ever gets ("Kettle's on"); slow and deliberate, long pauses |
+| **The old lady** | `Vindemiatrix` (from 3 Nov; was `Sulafat`) | Northern English, Yorkshire (Sheffield), plain-spoken, not posh | dry, flat and practical; deeply suspicious; brisk, no long pauses. Kai, 3 Nov (bridge timeline r1): *"she's got really posh to the extent where she's a bit annoying... a different voice"*; picked by ear from three on https://claude.ai/artifact/FnDZVwKFUsFdf4X813sKKt. Her prompt: `LADY_AUDITION` + `lady_profile` in `scripts/gpom/second-half-video/voice-bridge.py`. Scene D's one line ("When he arrives back in time, what will he do?") is still Sulafat |
 | **The crowd** (the hundred, "five or six voices at once down the corridor, one take each, stacked in the edit") | `Orus` · `Leda` · `Schedar` · `Vindemiatrix` · `Zubenelgenubi` · `Gacrux` | Swindon West Country (bus driver, 40s; woman, 20s) · educated Wiltshire (retired teacher, 70s) · Welsh, Newport (nurse, 50s) · Bristolian (builder, 30s) · Northern, Leeds (grandmother, 60s) | per line in `scenes/second-half-b-the-door/voices-d1.json` |
 
 Every human prompt ends its accent line with **"Never American"** (and most with "never Received

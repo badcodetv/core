@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge4/04-lady-Vindemiatrix-c-fx.wav",
+ "made": "2026-11-04T14:00:55+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge2/04-lady-Vindemiatrix-c.wav",
+ "why": "muffled (round 4 filter) copy of the reused pick",
+ "settings": {
+  "fx": "muffled-r4"
+ }
+}

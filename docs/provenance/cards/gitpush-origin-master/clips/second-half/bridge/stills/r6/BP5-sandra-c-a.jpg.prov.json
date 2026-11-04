@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/BP5-sandra-c-a.jpg",
+ "made": "2026-11-04T17:09:29.207Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "One correction to this frame from a bunker just after a blast: the pale loudspeaker horn up on the curved brick wall has been knocked loose and now dangles mouth-down towards the floor from its twisted bracket, drooping like the one in the reference still. Nothing else changes: the woman in her cream cable-knit jumper, her face and expression, the dark-haired man close to camera, the survivors around them, the small warm bulb and how it lights her, the faded grainy 16mm film feel and the framing all stay as they are.",
+ "model": "Nano Banana 2.1",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/BP5-sandra-b.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bridge/stills/r6/ref-horn-hanging.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "e62f2d18-4afd-4705-868a-e334c49f9fcb"
+}

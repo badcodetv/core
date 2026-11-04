@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/bridge/14-woman-p1-c.wav",
+ "made": "2026-11-03T17:06:30+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/voice-bridge.py",
+ "model": "Gemini TTS",
+ "why": "bridge line 14 p1 (pick moved to c by hand)",
+ "settings": {
+  "voice": "Autonoe"
+ }
+}

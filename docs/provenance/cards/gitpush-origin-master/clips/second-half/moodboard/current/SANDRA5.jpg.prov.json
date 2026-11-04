@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/current/SANDRA5.jpg",
+ "made": "2026-11-04T11:07:25+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/shb-br10-sandra1-BP5-sandra-b.mp4",
+ "why": "bridge r3 (Kai timeline r2 at1795): br10's frame at 5.0 s, start of Sandra's second half so the cut doesn't jump"
+}
