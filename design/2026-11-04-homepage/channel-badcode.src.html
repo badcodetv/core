@@ -1,0 +1,436 @@
+<title>Channel BadCode</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Instrument+Serif:ital@0;1&family=Oswald:wght@500;700&family=Share+Tech+Mono&family=VT323&family=Public+Sans:wght@400;700;800&display=swap">
+<style>
+/* Layout: a front room at night. The TV and its remote are the page's one big object; the ideas to vote on sit underneath like the TV guide on the coffee table. */
+:root{
+  color-scheme:dark;
+  --room:#1d1b18; --room2:#26231f; --paper:#2e2a25; --fg:#ece6da; --muted:#a89f90; --line:#4a443b;
+  --red:#cc2b37; --amber:#E8A33D; --osd:#5cff6a; --day:#E9E7E1; --hivis:#F5D300;
+  --ui:"Archivo",system-ui,sans-serif; --voice:"Instrument Serif",Georgia,serif;
+  --crt:"Oswald","Arial Narrow",sans-serif; --mono:"Share Tech Mono",ui-monospace,monospace; --tt:"VT323",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--room);color:var(--fg);font:16px/1.5 var(--ui);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 80px;background-image:radial-gradient(ellipse at 50% 0%,#3a3328 0,transparent 60%)}
+.wrap{max-width:1180px;margin:0 auto;display:grid;gap:44px}
+header.top{display:grid;gap:10px;max-width:720px}
+h1{font:800 clamp(1.9rem,4.6vw,3rem)/1 var(--ui);font-stretch:72%;margin:0;text-wrap:balance}
+.lede{font:1.3rem/1.35 var(--voice);margin:0;color:var(--fg)}
+.how{color:var(--muted);margin:0;max-width:68ch}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+
+/* ---------- the set ---------- */
+.lounge{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:28px;align-items:end}
+@media (max-width:760px){.lounge{grid-template-columns:minmax(0,1fr)}}
+.set{background:linear-gradient(#2b2925,#191816);border-radius:22px;padding:22px 22px 18px;box-shadow:0 30px 60px rgba(0,0,0,.55),inset 0 1px 0 #4a463f;display:grid;gap:12px;min-width:0}
+.bezel{background:#0c0c0c;border-radius:18px;padding:14px;box-shadow:inset 0 0 0 2px #000,inset 0 6px 18px rgba(0,0,0,.9)}
+.screen{position:relative;aspect-ratio:4/3;width:100%;max-width:100%;overflow:hidden;border-radius:4% / 5.5%;background:#050505;container-type:inline-size;isolation:isolate}
+.screen::before{content:"";position:absolute;inset:0;z-index:40;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,transparent 55%,rgba(0,0,0,.55) 100%),repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px);transition:opacity .3s}
+.screen::after{content:"";position:absolute;inset:0;z-index:41;pointer-events:none;background:linear-gradient(130deg,rgba(255,255,255,.07),transparent 40%)}
+.clean .screen::before{opacity:0}
+.badge{display:flex;justify-content:space-between;align-items:center;padding:0 6px}
+.badge svg{height:22px;width:auto;color:#cfc8bb}
+.led{width:16px;height:16px}
+.led path{fill:#3a1418;transition:fill .2s}
+.on .led path{fill:var(--red);filter:drop-shadow(0 0 4px var(--red))}
+.off .led path{fill:var(--red);opacity:.55}
+.knobs{display:flex;gap:10px;align-items:center;color:#8d867a;font:600 .75rem var(--ui)}
+.knobs i{width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#58534b,#1c1a17)}
+
+/* layers inside the screen */
+.layer{position:absolute;inset:0;display:none}
+.layer.on{display:block}
+canvas.snow{position:absolute;inset:0;width:100%;height:100%;z-index:30;opacity:0;image-rendering:pixelated;pointer-events:none}
+.static canvas.snow{opacity:.9}
+.osd{position:absolute;top:4cqw;right:5cqw;z-index:35;font:7cqw var(--mono);color:var(--osd);text-shadow:0 0 1.4cqw rgba(92,255,106,.6);opacity:0;transition:opacity .2s}
+.osd.show{opacity:1}
+.osd small{display:block;font-size:2.6cqw;text-align:right}
+.offmask{position:absolute;inset:0;z-index:38;background:#050505;display:grid;place-items:center;pointer-events:none;transition:opacity .25s}
+.offmask .dot{width:1.6cqw;height:1.6cqw;border-radius:50%;background:#fff;box-shadow:0 0 3cqw 1cqw rgba(255,255,255,.6);opacity:0}
+.powering .offmask .dot{animation:pon .9s ease-out forwards}
+@keyframes pon{0%{opacity:1;transform:scale(1)}40%{opacity:1;transform:scale(60,.4)}100%{opacity:0;transform:scale(80,40)}}
+.powerdown .offmask .dot{animation:poff .6s ease-in forwards}
+@keyframes poff{0%{opacity:1;transform:scale(80,.6)}60%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.2)}}
+.isOn .offmask{opacity:0}
+.tear{animation:tear .45s steps(6)}
+@keyframes tear{20%{transform:skewX(12deg) translateX(-5%)}45%{transform:skewX(-8deg) translateX(6%);filter:hue-rotate(80deg)}70%{transform:translateY(-3%)}}
+
+/* ident */
+.ident{background:#050505;display:grid;place-items:center}
+.ident svg{width:42cqw}
+.ident .r{stroke-dasharray:180;stroke-dashoffset:180;animation:draw 1s ease forwards}
+.ident .t{opacity:0;animation:tri .3s .9s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes tri{from{opacity:0;transform:translate(-6px,6px)}to{opacity:1}}
+.ident p{position:absolute;bottom:12cqw;width:100%;text-align:center;font:500 3cqw var(--crt);letter-spacing:.3em;color:#cfc8bb;margin:0}
+
+/* hijack opener */
+.boring{background:#fff;color:#333;padding:6cqw;font:2.6cqw/1.5 Arial,sans-serif}
+.boring h4{margin:0 0 2cqw;font-size:4cqw;color:#1d4f91}
+.boring i{display:block;height:2.4cqw;background:#e8e8e8;margin:2cqw 0;border-radius:2px}
+.host{background:repeating-linear-gradient(90deg,#57534e 0 3cqw,#6b6660 3cqw 6cqw);display:grid;place-items:center}
+.host svg{height:86%}
+
+/* CH1 stories */
+.c1{background:#000;padding:9cqw 0}
+.c1 .frame{position:absolute;inset:9cqw 0;overflow:hidden}
+.c1 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.05)}
+.c1 .blank{position:absolute;inset:0;background:radial-gradient(#3a3631,#121110);display:grid;place-items:center;font:3cqw var(--mono);color:#8d867a}
+.c1 .cap{position:absolute;left:0;right:0;bottom:0;padding:16cqw 5cqw 3cqw;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.c1 .cap b{display:block;font:700 7.4cqw/0.95 var(--crt);text-transform:uppercase;color:#f1ebe0;text-shadow:0 0 1.6cqw rgba(232,163,61,.35)}
+.c1 .cap span{display:block;font:2.5cqw/1.35 var(--ui);color:#d9d1c3;max-width:60ch;margin-top:1cqw}
+.c1 .bug{position:absolute;top:2.6cqw;left:4cqw;font:500 2.6cqw var(--crt);letter-spacing:.14em;color:var(--amber)}
+.c1 .pg{position:absolute;bottom:2.6cqw;right:4cqw;font:2.4cqw var(--mono);color:#8d867a}
+.c1 .pg2{position:absolute;bottom:2.6cqw;left:4cqw;font:2.4cqw var(--mono);color:var(--amber)}
+
+/* CH2 news */
+.c2{background:radial-gradient(circle at 40% 35%,#2b2420,#090909)}
+.c2 .bug{position:absolute;top:4cqw;left:5cqw;font:500 2.8cqw var(--crt);letter-spacing:.12em;color:var(--amber)}
+.c2 .seg{position:absolute;left:5cqw;top:14cqw;font:12cqw/1 var(--mono);color:#E0301E;text-shadow:0 0 3cqw rgba(224,48,30,.55)}
+.c2 .seg small{display:block;font-size:3cqw;color:#9C9A96;letter-spacing:.1em}
+.c2 .found{position:absolute;right:6cqw;top:16cqw;text-align:right;font:2.6cqw var(--mono);color:#cfc8bb}
+.c2 .found b{display:block;font:7cqw var(--mono);color:#f1ebe0}
+.c2 .lower{position:absolute;left:0;right:0;bottom:11cqw;background:var(--amber);color:#0b0b0b;font:700 4cqw var(--crt);padding:1cqw 5cqw;text-transform:uppercase}
+.c2 .lower small{display:block;font:500 2.4cqw var(--crt);letter-spacing:.08em}
+.c2 .tick{position:absolute;left:0;right:0;bottom:4cqw;font:2.8cqw var(--mono);color:#E9E7E1;white-space:nowrap;overflow:hidden;background:#111;padding:.8cqw 0}
+.c2 .tick span{display:inline-block;animation:tk 22s linear infinite}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+/* CH3 government: the one clean picture */
+.c3{background:var(--day);color:#151515;font-family:"Public Sans",var(--ui)}
+.c3 .ppb{position:absolute;inset:0;background:#151515;color:#fff;display:grid;place-content:center;text-align:center;padding:8cqw;transition:opacity .5s}
+.c3 .ppb p{margin:0;font:400 3.2cqw/1.4 "Public Sans",sans-serif}
+.c3 .ppb b{display:block;font:800 5.2cqw/1.1 "Public Sans",sans-serif;margin-top:2cqw}
+.c3.go .ppb{opacity:0}
+.c3 .bar{background:#151515;color:#fff;padding:2.4cqw 5cqw;display:flex;align-items:center;gap:2cqw;font:700 3cqw "Public Sans",sans-serif}
+.c3 .bar svg{width:5cqw}
+.c3 .body{padding:4cqw 5cqw}
+.c3 h4{margin:0;font:800 7cqw/1 "Public Sans",sans-serif}
+.c3 .said{display:grid;grid-template-columns:1fr 1fr;gap:3cqw;margin-top:4cqw}
+.c3 .said div{border-left:1.2cqw solid #b1b4b6;padding:1cqw 2.4cqw;font:3cqw/1.35 "Public Sans",sans-serif}
+.c3 .said div:last-child{border-color:#00703c}
+.c3 .said small{display:block;font:700 2.2cqw "Public Sans",sans-serif;color:#505a5f;margin-bottom:.6cqw}
+.c3 .start{position:absolute;left:5cqw;bottom:9cqw;background:#00703c;color:#fff;font:700 3.4cqw "Public Sans",sans-serif;padding:1.8cqw 4cqw;box-shadow:0 .7cqw 0 #002d18}
+.c3 .haz{position:absolute;left:0;right:0;bottom:0;height:4cqw;background:repeating-linear-gradient(45deg,var(--hivis) 0 3cqw,#151515 3cqw 6cqw)}
+.c3 .amend{position:absolute;right:5cqw;bottom:10cqw;font:2.4cqw "Public Sans",sans-serif;color:#505a5f}
+
+/* CH4 songs */
+.c4{background:#0b0716;color:#fff}
+.c4 .bug{position:absolute;top:4cqw;left:5cqw;font:700 4cqw var(--crt);letter-spacing:.06em;color:#ff4fd8}
+.c4 ol{position:absolute;left:5cqw;right:40cqw;top:14cqw;margin:0;padding:0;list-style:none;display:grid;gap:2cqw}
+.c4 li{font:700 4.4cqw/1 var(--crt);text-transform:uppercase;display:flex;gap:2.4cqw;align-items:baseline}
+.c4 li i{font:3.4cqw var(--mono);color:#ff4fd8;font-style:normal}
+.c4 li.now{color:#ffe14f}
+.c4 .eq{position:absolute;right:6cqw;bottom:14cqw;display:flex;gap:1cqw;align-items:flex-end;height:30cqw}
+.c4 .eq b{width:3.2cqw;background:linear-gradient(#ff4fd8,#ffe14f);animation:eq 1s ease-in-out infinite alternate}
+@keyframes eq{from{height:10%}to{height:100%}}
+.c4 .dial{position:absolute;left:5cqw;bottom:5cqw;font:2.8cqw var(--mono);color:#bdb3d6}
+
+/* CH0 test card */
+.c0{background:#7a7a7a}
+.c0 .bars{position:absolute;inset:0;display:grid;grid-template-columns:repeat(7,1fr)}
+.c0 .bars i:nth-child(1){background:#c0c0c0}.c0 .bars i:nth-child(2){background:#c0c000}.c0 .bars i:nth-child(3){background:#00b4b4}.c0 .bars i:nth-child(4){background:#00c000}.c0 .bars i:nth-child(5){background:#c000c0}.c0 .bars i:nth-child(6){background:#c00000}.c0 .bars i:nth-child(7){background:#0000c0}
+.c0 .disc{position:absolute;left:50%;top:50%;width:62cqw;height:62cqw;transform:translate(-50%,-50%);border-radius:50%;background:#e8e4da;border:1.4cqw solid #111;overflow:hidden;display:grid;place-items:center}
+.c0 .disc svg{width:80%}
+.c0 .cap{position:absolute;left:0;right:0;bottom:3cqw;text-align:center;font:3cqw var(--mono);color:#fff;text-shadow:0 0 .6cqw #000}
+
+/* closedown */
+.cd{background:#050505;display:grid;place-content:center;text-align:center;padding:8cqw;gap:3cqw}
+.cd svg{width:22cqw;margin:0 auto}
+.cd p{margin:0;font:4cqw/1.3 var(--crt);color:#cfc8bb}
+.cd small{font:3cqw var(--mono);color:#8d867a}
+
+/* guide */
+.gd{background:#0e2452;color:#fff;padding:4cqw 5cqw;font-family:var(--crt)}
+.gd h4{margin:0 0 2cqw;font:700 5cqw var(--crt);color:#ffe14f;display:flex;justify-content:space-between}
+.gd h4 small{font:3cqw var(--mono);color:#cfd8ff}
+.gd table{width:100%;border-collapse:collapse;font:500 3.1cqw/1.25 var(--crt)}
+.gd td{padding:1.1cqw 1cqw;border-bottom:.2cqw solid #2c4a8a;vertical-align:top}
+.gd td:first-child{font-family:var(--mono);color:#ffe14f;width:12cqw}
+.gd td:nth-child(2){color:#9fb4ff;width:16cqw}
+.gd tr.now td{background:#1b3a7a}
+
+/* teletext */
+.tt{background:#000;color:#fff;font-family:var(--tt)}
+.tt.mix{background:rgba(0,0,0,.25)}
+.tt .in{position:absolute;left:2.5cqw;top:1.6cqw;width:calc(95cqw / 1.62);transform:scaleX(1.62);transform-origin:0 0;font-size:3.05cqw;line-height:1;white-space:pre}
+.tt .in div{height:1em}
+.tt .r{color:#ff2020}.tt .y{color:#ffff00}.tt .g{color:#00ff00}.tt .m{color:#ff00ff}.tt .c{color:#7fd7ff}.tt .w{color:#fff}.tt .b{color:#5a6bff}
+.tt .bb{background:#0000ff}.tt .br{background:#ff0000}.tt .by{background:#ffff00;color:#000}.tt .bk{background:#000}
+.tt .dh{display:inline-block;transform:scaleY(2);transform-origin:0 0}
+.tt .fl{animation:fl 1s steps(1) infinite}
+@keyframes fl{50%{visibility:hidden}}
+.tt.day{background:#fff}.tt.day .in{color:#000}
+.tt.day .w{color:#000}
+
+/* ---------- remote ---------- */
+.remote{background:linear-gradient(#2a2826,#141312);border-radius:40px 40px 60px 60px;padding:22px 16px 26px;display:grid;gap:12px;box-shadow:0 20px 40px rgba(0,0,0,.5),inset 0 1px 0 #48443d;justify-self:center;width:190px}
+@media (max-width:760px){.remote{width:100%;max-width:420px;border-radius:24px}}
+.remote .row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.remote .row.four{grid-template-columns:repeat(4,1fr)}
+.remote button{font:700 .82rem var(--ui);color:#e9e3d8;background:#3a3733;border:0;border-radius:10px;padding:10px 0;cursor:pointer;box-shadow:0 3px 0 #0b0a09;transition:transform .05s}
+.remote button:active{transform:translateY(2px);box-shadow:0 1px 0 #0b0a09}
+.remote .pwr{background:var(--red);color:#fff}
+.remote .ft{height:22px;padding:0}
+.remote .lbl{font:600 .7rem var(--ui);color:#8d867a;text-align:center;margin:0}
+.remote .brand{display:flex;justify-content:center}
+.remote .brand svg{width:80px;color:#8d867a}
+.remote button[aria-pressed="true"]{background:#e9e3d8;color:#141312}
+.belowset{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;color:var(--muted);font-size:.9rem}
+.belowset label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.belowset input{accent-color:var(--amber)}
+.hint{font-size:.88rem;color:var(--muted);margin:0}
+
+/* ---------- ideas ---------- */
+.ideas h2{font:800 2rem/1 var(--ui);font-stretch:78%;margin:0 0 6px}
+.ideas .fine{color:var(--muted);margin:0 0 16px;max-width:70ch}
+.group{display:grid;gap:10px;margin-top:22px}
+.group h3{margin:0;font:700 1.1rem var(--ui);color:var(--amber)}
+.idea{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+@media (max-width:640px){.idea{grid-template-columns:minmax(0,1fr)}}
+.idea b{display:block;font-weight:700}
+.idea p{margin:2px 0 0;color:#d4ccbe;font-size:.95rem}
+.idea .tag{display:inline-block;font:600 .72rem var(--ui);color:#141312;background:var(--amber);border-radius:99px;padding:1px 8px;margin-left:6px;vertical-align:2px}
+.idea .v{display:flex;gap:6px;align-items:start;flex-wrap:wrap}
+.idea .v button{font:600 .82rem var(--ui);padding:6px 10px;border-radius:7px;border:1.5px solid #7d7568;background:transparent;color:var(--fg);cursor:pointer}
+.idea .v button[aria-pressed="true"]{background:var(--fg);color:var(--room);border-color:var(--fg)}
+.idea .who{grid-column:1/-1;font-size:.8rem;color:var(--muted);margin:0}
+.idea .who:empty{display:none}
+.notes{display:grid;gap:8px;margin-top:22px}
+.notes textarea{font:inherit;width:100%;min-height:90px;background:var(--paper);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:10px}
+.status{font-size:.85rem;color:var(--muted);margin:0;min-height:1.2em}
+.allnotes{display:grid;gap:8px}
+.allnotes p{margin:0;background:var(--room2);border-radius:8px;padding:8px 12px;font-size:.92rem}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <h1>Channel BadCode</h1>
+  <p class="lede">The whole website is a television. You switch it on, and BadCode has already taken over the signal.</p>
+  <p class="how">This TV works. Press the red button on the remote to switch it on, change channels with the numbers, press TEXT for teletext, GUIDE for the listings. Keyboard: 0–4, arrows, T, G, M. On a phone the screen fills the width and the remote sits below it. Under the set are all the ideas for growing this, to vote on. The stills are frames from the films; the figures are examples.</p>
+</header>
+
+<div class="lounge">
+  <div class="set off" id="set">
+    <div class="bezel"><div class="screen" id="scr" role="region" aria-label="TV screen" aria-live="polite">
+      <div class="layer ident" data-l="ident"><svg viewBox="-34 -34 68 68" aria-hidden="true"><circle class="r" r="27.75" fill="none" stroke="#e8e2d6" stroke-width="4.5" transform="rotate(-90)"/><path class="t" d="M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z" fill="#cc2b37"/></svg><p id="idtxt">BADCODE ONE</p></div>
+      <div class="layer boring" data-l="boring"><h4>Public consultation: your views on local services</h4><i></i><i style="width:70%"></i><i style="width:85%"></i><i style="width:40%"></i><i style="width:60%"></i></div>
+      <div class="layer host" data-l="host"><svg viewBox="0 0 100 120" aria-label="The BadCode host: a white balaclava with a red triangle eyepatch"><path d="M18 120 C18 80 22 62 50 62 C78 62 82 80 82 120Z" fill="#1d1c1b"/><ellipse cx="50" cy="40" rx="24" ry="30" fill="#f2f0ea"/><rect x="33" y="34" width="34" height="11" rx="5" fill="#2a2522"/><path d="M57 33 L68 36 L62 46 Z" fill="#cc2b37" stroke="#cc2b37" stroke-linejoin="round" stroke-width="2"/><circle cx="41" cy="39.5" r="2" fill="#ddd"/></svg></div>
+
+      <div class="layer c1" data-l="c1"><div class="frame" id="c1f"></div><span class="bug">BADCODE ONE · STORIES</span><span class="pg2">◀ ▶ next film</span><span class="pg" id="c1p">1/4</span></div>
+
+      <div class="layer c2" data-l="c2"><span class="bug">MONEY FOR SOMETHING · working name</span>
+        <div class="seg"><small>NURSES</small>£0</div>
+        <div class="found">Money found this week<b>£4.2bn</b>example figure</div>
+        <div class="lower" id="c2h">We have seen this one<small>It doesn't end well. Next bulletin Tuesday.</small></div>
+        <div class="tick"><span>FOUND FOR NURSES: £0 ◂ MONEY FOUND THIS WEEK: £4.2BN (EXAMPLE) ◂ I HAVE ALREADY SEEN NEXT WEEK. IT'S WORSE ◂ PRESS TEXT FOR P300 ◂ FOUND FOR NURSES: £0 ◂ MONEY FOUND THIS WEEK: £4.2BN (EXAMPLE) ◂ I HAVE ALREADY SEEN NEXT WEEK. IT'S WORSE ◂ PRESS TEXT FOR P300 ◂ </span></div></div>
+
+      <div class="layer c3" data-l="c3">
+        <div class="bar"><svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="27.75" fill="none" stroke="#fff" stroke-width="4.5"/><path d="M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z" fill="#cc2b37"/></svg>The BadCode Government</div>
+        <div class="body"><h4 id="c3h">We promise to enact Future Proof.</h4>
+          <div class="said"><div><small>The Cabinet said</small><span id="c3a">“There is no money for that.”</span></div><div><small>BadCode says</small><span id="c3b">It was found on Tuesday. For someone else.</span></div></div></div>
+        <span class="start">Read the manifesto ▸</span><span class="amend">Manifesto last amended 07:12 today</span><div class="haz"></div>
+        <div class="ppb"><p>There now follows a party political broadcast on behalf of</p><b>The BadCode Government</b><p style="margin-top:3cqw;opacity:.7">Not a real party. Yet.</p></div></div>
+
+      <div class="layer c4" data-l="c4"><span class="bug">BADCODE HITS</span><ol id="c4l"></ol><div class="eq"><b style="animation-delay:-.2s"></b><b style="animation-delay:-.7s"></b><b style="animation-delay:-.4s"></b><b style="animation-delay:-.9s"></b><b></b></div><span class="dial">Four songs, one from each story · ◀ ▶ to pick</span></div>
+
+      <div class="layer c0" data-l="c0"><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="disc"><svg viewBox="0 0 100 120" aria-label="Test card: the BadCode host"><ellipse cx="50" cy="44" rx="26" ry="32" fill="#f2f0ea" stroke="#111" stroke-width="1"/><rect x="31" y="38" width="38" height="12" rx="6" fill="#2a2522"/><path d="M58 36 L71 40 L64 51 Z" fill="#cc2b37" stroke="#cc2b37" stroke-linejoin="round" stroke-width="2"/><path d="M22 120 C22 86 26 76 50 76 C74 76 78 86 78 120Z" fill="#1d1c1b"/></svg></div><div class="cap">TEST CARD B · BADCODE · 1 kHz</div></div>
+
+      <div class="layer cd" data-l="cd"><svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="27.75" fill="none" stroke="#cfc8bb" stroke-width="4.5"/><path d="M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z" fill="#cc2b37"/></svg><p>BadCode has now closed down.<br>Programmes resume at 6am.<br>The future doesn't close.</p><small>Please remember to switch off your set. We'll keep watching.</small></div>
+
+      <div class="layer gd" data-l="gd"><h4>Tonight on BadCode <small id="gdd"></small></h4><table><tbody id="gdb"></tbody></table></div>
+
+      <div class="layer tt" data-l="tt"><div class="in" id="tti"></div></div>
+
+      <canvas class="snow" id="snow" width="160" height="120"></canvas>
+      <div class="osd" id="osd"></div>
+      <div class="offmask"><span class="dot"></span></div>
+    </div></div>
+    <div class="badge">
+      <svg viewBox="78 -38 270 76" aria-label="badcode"><g transform="translate(86 15)"><g fill="none" stroke="currentColor" stroke-width="4.5"><circle cx="17.25" cy="-15" r="15"/><line x1="2.25" y1="-46.5" x2="2.25" y2="2.25"/><circle cx="55.65" cy="-15" r="15"/><line x1="70.65" y1="-32.25" x2="70.65" y2="2.25"/><circle cx="94.05" cy="-15" r="15"/><line x1="109.05" y1="-46.5" x2="109.05" y2="2.25"/><path d="M143.6 -4.96A15 15 0 1 1 143.6 -25.04"/><circle cx="204" cy="-15" r="15"/><line x1="219" y1="-46.5" x2="219" y2="2.25"/><path d="M254.22 -5.77A15 15 0 1 1 257.4 -15"/><line x1="227.4" y1="-15" x2="259.65" y2="-15"/></g><circle cx="165.6" cy="-15" r="17.25" fill="#cc2b37"/></g></svg>
+      <span class="knobs"><i></i><i></i><svg class="led" viewBox="0 -14 20 16" aria-label="Standby light"><path d="M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z"/></svg></span>
+    </div>
+  </div>
+
+  <div class="remote" role="group" aria-label="Remote control">
+    <div class="row"><span></span><button class="pwr" data-k="power" aria-label="Power">⏻</button><span></span></div>
+    <div class="row"><button data-k="1">1</button><button data-k="2">2</button><button data-k="3">3</button></div>
+    <div class="row"><button data-k="4">4</button><button data-k="0">0</button><button data-k="mute" aria-pressed="true">MUTE</button></div>
+    <div class="row"><button data-k="left" aria-label="Previous">◀</button><button data-k="up" aria-label="Channel up">CH▲</button><button data-k="right" aria-label="Next">▶</button></div>
+    <div class="row"><button data-k="text">TEXT</button><button data-k="down" aria-label="Channel down">CH▼</button><button data-k="guide">GUIDE</button></div>
+    <div class="row four"><button class="ft" data-k="red" style="background:#d22" aria-label="Red: news"></button><button class="ft" data-k="green" style="background:#1b1" aria-label="Green: Future Proof"></button><button class="ft" data-k="yellow" style="background:#dd2" aria-label="Yellow: government"></button><button class="ft" data-k="blue" style="background:#33d" aria-label="Blue: stories"></button></div>
+    <p class="lbl">News · Future · Govt · Stories</p>
+    <div class="brand"><svg viewBox="78 -38 270 76" aria-hidden="true"><g transform="translate(86 15)"><g fill="none" stroke="currentColor" stroke-width="5"><circle cx="17.25" cy="-15" r="15"/><line x1="2.25" y1="-46.5" x2="2.25" y2="2.25"/><circle cx="55.65" cy="-15" r="15"/><line x1="70.65" y1="-32.25" x2="70.65" y2="2.25"/><circle cx="94.05" cy="-15" r="15"/><line x1="109.05" y1="-46.5" x2="109.05" y2="2.25"/><path d="M143.6 -4.96A15 15 0 1 1 143.6 -25.04"/><circle cx="204" cy="-15" r="15"/><line x1="219" y1="-46.5" x2="219" y2="2.25"/><path d="M254.22 -5.77A15 15 0 1 1 257.4 -15"/><line x1="227.4" y1="-15" x2="259.65" y2="-15"/></g><circle cx="165.6" cy="-15" r="17.25" fill="#cc2b37"/></g></svg></div>
+  </div>
+</div>
+<div class="belowset">
+  <label><input type="checkbox" id="opt-clean"> Clean signal (no scanlines or static)</label>
+  <label><input type="checkbox" id="opt-night"> Pretend it's 2am</label>
+  <label><input type="checkbox" id="opt-hijack" checked> Hijack when switched on</label>
+</div>
+
+<section class="ideas">
+  <h2>Ways to grow it</h2>
+  <p class="fine">Everything a TV could give us. The ones tagged “on the set” are working on the TV above. Pick <b>Yes</b>, <b>Maybe</b> or <b>No</b> on each; your picks save under your name.</p>
+  <div id="ideas"></div>
+  <div class="notes"><label for="gnote"><b>Anything else?</b> A note on the whole direction.</label><textarea id="gnote" placeholder="e.g. teletext should be the main way in, not the extra"></textarea><p class="status" id="gstat"></p><div class="allnotes" id="allnotes"></div></div>
+</section>
+</div>
+
+<script>
+(function(){
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const wait=ms=>new Promise(r=>setTimeout(r,RM?0:ms));
+const set=$('#set'), scr=$('#scr'), snow=$('#snow'), sx=snow.getContext('2d'), osd=$('#osd');
+const STILLS={gpom:'{{STILL_gpom}}',camping:'{{STILL_camping}}',karen:'{{STILL_karen}}'};
+const FILMS=[
+ {t:'Git Push Origin Master',d:"Somebody pushed the code live without checking it. This code is a disaster, and the developers aren't fixing it.",img:'gpom'},
+ {t:'Camping',d:'A City financier parks his BMW across two bays in the Waitrose car park, right beside a tent, and has a few words for the man living in it.',img:'camping'},
+ {t:'Karen Will Lead the Revolution',d:'Karen has lost her job, and she would like to speak to the manager. She has all day.',img:'karen'},
+ {t:'The Bank Robbery',d:"Eleven politicians and pundits in black suits and thin black ties. One bank, one plan, eleven code names. Now, who's running point?",img:null},
+];
+const CHN={0:'TEST CARD',1:'BADCODE ONE',2:'MONEY FOR SOMETHING',3:'BADCODE GOVT',4:'BADCODE HITS'};
+let on=false, ch=2, film=0, song=0, ttOn=false, ttPage=100, guide=false, busy=0, muted=true, actx=null, tone=null;
+
+/* sound: clicks and static only after the viewer unmutes */
+function ac(){ if(!actx){ try{ actx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} } return actx; }
+function hiss(ms){ if(muted||!ac()) return; const n=actx.sampleRate*ms/1000, b=actx.createBuffer(1,n,actx.sampleRate), d=b.getChannelData(0); for(let i=0;i<n;i++) d[i]=(Math.random()*2-1)*.12; const s=actx.createBufferSource(); s.buffer=b; s.connect(actx.destination); s.start(); }
+function thunk(){ if(muted||!ac()) return; const o=actx.createOscillator(), g=actx.createGain(); o.frequency.value=60; g.gain.setValueAtTime(.4,actx.currentTime); g.gain.exponentialRampToValueAtTime(.001,actx.currentTime+.25); o.connect(g).connect(actx.destination); o.start(); o.stop(actx.currentTime+.3); }
+function setTone(v){ if(tone){ tone.stop(); tone=null; } if(v&&!muted&&ac()){ const o=actx.createOscillator(), g=actx.createGain(); o.frequency.value=1000; g.gain.value=.03; o.connect(g).connect(actx.destination); o.start(); tone=o; } }
+
+let snowing=false;
+function snowLoop(){ if(!snowing) return; const im=sx.createImageData(160,120); for(let i=0;i<im.data.length;i+=4){ const v=Math.random()*255|0; im.data[i]=im.data[i+1]=im.data[i+2]=v; im.data[i+3]=255; } sx.putImageData(im,0,0); setTimeout(snowLoop,70); }
+async function burst(ms){ if($('#opt-clean').checked||RM){ return; } scr.classList.add('static'); snowing=true; snowLoop(); hiss(ms); await wait(ms); snowing=false; scr.classList.remove('static'); }
+function show(l){ $$('.layer',scr).forEach(x=>x.classList.toggle('on',x.dataset.l===l)); set.classList.toggle('clean', l==='c3'||$('#opt-clean').checked); setTone(l==='c0'||l==='cd'); }
+let osdT; function flashOsd(n){ osd.innerHTML=`${n}<small>${CHN[n]}</small>`; osd.classList.add('show'); clearTimeout(osdT); osdT=setTimeout(()=>osd.classList.remove('show'),2200); }
+const isNight=()=>{ if($('#opt-night').checked) return true; const h=+new Intl.DateTimeFormat('en-GB',{hour:'numeric',hourCycle:'h23',timeZone:'Europe/London'}).format(new Date()); return h>=1&&h<6; };
+
+function paintFilm(){ const f=FILMS[film], fr=$('#c1f'); fr.innerHTML = (f.img?`<img alt="A frame from ${f.t}" src="${STILLS[f.img]}">`:`<div class="blank">NO PICTURE YET</div>`)+`<div class="cap"><b>${f.t}</b><span>${f.d}</span></div>`; $('#c1p').textContent=`${film+1}/4`; }
+function paintSongs(){ $('#c4l').innerHTML=FILMS.map((f,i)=>`<li class="${i===song?'now':''}"><i>0${i+1}</i>${f.t}</li>`).join(''); }
+const GOV=[["We promise to enact Future Proof.","“There is no money for that.”","It was found on Tuesday. For someone else."],["Every law gets tested before you live in it.","“We will review this in due course.”","We reviewed it. It failed. Here is the postmortem."],["Name who it leaves out, every time.","“This benefits hard-working families.”","Which ones? We counted. Here's the list."]];
+let govI=0, govT;
+function startGov(){ const c3=$('[data-l=c3]'); c3.classList.remove('go'); clearTimeout(govT); govT=setTimeout(()=>{ c3.classList.add('go'); },RM?0:2600); }
+setInterval(()=>{ govI=(govI+1)%GOV.length; const g=GOV[govI]; $('#c3h').textContent=g[0]; $('#c3a').textContent=g[1]; $('#c3b').textContent=g[2]; },6000);
+
+function render(){ if(!on) return;
+  if(ttOn){ show('tt'); drawTT(ttPage); return; }
+  if(guide){ show('gd'); paintGuide(); return; }
+  if(isNight() && ch!==0){ show('cd'); return; }
+  show('c'+ch); if(ch===1) paintFilm(); if(ch===4) paintSongs(); if(ch===3) startGov();
+}
+async function tune(n){ if(!on) return; ch=((n%5)+5)%5; ttOn=false; guide=false; syncKeys(); flashOsd(ch); thunk(); await burst(200); render(); }
+
+async function powerOn(){ on=true; set.classList.remove('off'); set.classList.add('on'); scr.classList.remove('powerdown'); scr.classList.add('powering'); thunk(); await wait(500); scr.classList.add('isOn');
+  if($('#opt-hijack').checked && !isNight()){ show('boring'); await wait(1400); scr.classList.add('tear'); await burst(450); scr.classList.remove('tear'); show('host'); await wait(1000); }
+  $('#idtxt').textContent=CHN[ch]; show('ident'); await wait(1500); render(); flashOsd(ch); }
+async function powerOff(){ on=false; ttOn=false; guide=false; syncKeys(); setTone(false); scr.classList.remove('powering','isOn'); scr.classList.add('powerdown'); set.classList.remove('on'); set.classList.add('off'); await wait(600); show(''); }
+function syncKeys(){ $('[data-k=text]').setAttribute('aria-pressed',ttOn); $('[data-k=guide]').setAttribute('aria-pressed',guide); }
+
+/* guide */
+function paintGuide(){ const d=new Date(); $('#gdd').textContent=d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});
+  const rows=[['18:00','BADCODE ONE','Git Push Origin Master. A machine from the future pushes a fix.'],['18:20','BADCODE HITS','The songs, back to back, from each story.'],['19:00','MONEY FOR SOMETHING','This week’s news, read by someone who has seen next week.',1],['19:05','BADCODE GOVT','Party political broadcast on behalf of the BadCode Government.'],['19:10','BADCODE ONE','Camping. Then Karen Will Lead the Revolution.'],['20:00','BADCODE ONE','The Bank Robbery. Eleven code names, one plan.'],['01:00','ALL CHANNELS','Closedown. The test card. The future keeps going.']];
+  $('#gdb').innerHTML=rows.map(r=>`<tr class="${r[3]?'now':''}"><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join(''); }
+
+/* teletext: 40 columns, 23 rows */
+const d0=new Date(), stamp=()=>{ const d=new Date(); return d.toLocaleDateString('en-GB',{weekday:'short',day:'2-digit',month:'short'}).replace(',','')+' '+d.toTimeString().slice(0,8); };
+const pad=(s,n)=>s+' '.repeat(Math.max(0,n-s.length));
+const head=p=>`<span class="w">P${p}</span> <span class="y">BADCODE</span>  <span class="w">${stamp()}</span>`;
+const PAGES={
+ 100:p=>[head(p),'',`<span class="bb y dh">${pad(' BADCODE TEXT',40)}</span>`,'',`<span class="c"> Received from a future that went wrong</span>`,'',`<span class="w"> Stories .......................... </span><span class="y">200</span>`,`<span class="w"> News: Money For Something ........ </span><span class="y">300</span>`,`<span class="w"> The BadCode Government ........... </span><span class="y">400</span>`,`<span class="w"> Songs ............................ </span><span class="y">500</span>`,`<span class="w"> Tonight on BadCode ............... </span><span class="y">600</span>`,`<span class="g"> Future Proof: the bit that works . 888</span>`,'',`<span class="r fl"> NURSES: £0</span><span class="w">  see 300</span>`,'',`<span class="m"> We have seen how this ends. We came</span>`,`<span class="m"> back to change it. Press a number.</span>`,'','','',`<span class="br w"> News </span><span class="g"> Future </span><span class="y"> Govt </span><span class="c"> Stories</span>`],
+ 200:p=>[head(p),'',`<span class="br w dh">${pad(' STORIES',40)}</span>`,'',...FILMS.flatMap((f,i)=>[`<span class="y"> ${(f.t).toUpperCase().slice(0,38)}</span>`,`<span class="w">   Film and song. Coming to YouTube</span>`]),'',`<span class="c"> Each film works on its own. They also</span>`,`<span class="c"> share one universe. Watch the order:</span>`,`<span class="w"> 1 GPOM  2 Camping  3 Karen  4 Robbery</span>`,'',`<span class="g"> Switch to channel 1 for pictures</span>`,'','',`<span class="br w"> News </span><span class="g"> Future </span><span class="y"> Govt </span><span class="c"> Stories</span>`],
+ 300:p=>[head(p),'',`<span class="br w dh">${pad(' MONEY FOR SOMETHING',40)}</span>`,'',`<span class="w"> working name. The news, weekly,</span>`,`<span class="w"> read by someone who has seen next week</span>`,'',`<span class="w"> NURSES ...................... </span><span class="r fl">£0</span>`,`<span class="w"> MONEY FOUND THIS WEEK ... </span><span class="y">£4.2BN</span>`,`<span class="b">                        (example figure)</span>`,'',`<span class="y"> 301</span><span class="w"> This week's headlines</span>`,`<span class="y"> 302</span><span class="w"> The vocabulary card</span>`,`<span class="y"> 303</span><span class="w"> Spoilers: what happens next</span>`,'',`<span class="m"> "See you next week. I've already seen</span>`,`<span class="m">  it. It's worse."</span>`,'','',`<span class="br w"> News </span><span class="g"> Future </span><span class="y"> Govt </span><span class="c"> Stories</span>`],
+ 302:p=>[head(p),'',`<span class="bb y dh">${pad(' THE VOCABULARY CARD',40)}</span>`,'',`<span class="w"> Poor, and moved abroad:</span>`,`<span class="y">                         IMMIGRANT</span>`,'',`<span class="w"> Rich, and moved abroad:</span>`,`<span class="g">                         EXPAT</span>`,'',`<span class="c"> One new pair every week.</span>`],
+ 400:p=>[head(p),'',`<span class="by dh">${pad(' THE BADCODE GOVERNMENT',40)}</span>`,'',`<span class="w"> MANIFESTO        last amended </span><span class="y">07:12</span>`,'',`<span class="r"> THE CABINET SAID</span><span class="w">   |</span><span class="g"> BADCODE SAYS</span>`,`<span class="w"> "No money for that"| Found Tuesday,</span>`,`<span class="w">                    | for someone else</span>`,`<span class="w"> "Review in due     | Reviewed. Failed.</span>`,`<span class="w">  course"           | Postmortem: 401</span>`,'',`<span class="y"> PLEDGE 1</span><span class="w"> Test every law first</span>`,`<span class="y"> PLEDGE 2</span><span class="w"> Publish every postmortem</span>`,`<span class="y"> PLEDGE 3</span><span class="w"> Name who it leaves out</span>`,'',`<span class="g"> We promise to enact Future Proof: 888</span>`,`<span class="b"> Not a real party. Yet.</span>`,'',`<span class="br w"> News </span><span class="g"> Future </span><span class="y"> Govt </span><span class="c"> Stories</span>`],
+ 500:p=>[head(p),'',`<span class="m dh">${pad(' BADCODE HITS',40)}</span>`,'',...FILMS.map((f,i)=>`<span class="y"> 50${i+1}</span><span class="w"> ${f.t.slice(0,32)}</span>`),'',`<span class="c"> One song for every story. YouTube,</span>`,`<span class="c"> SoundCloud and Spotify soon.</span>`],
+ 600:p=>[head(p),'',`<span class="bb y dh">${pad(' TONIGHT',40)}</span>`,'',`<span class="y"> 18.00</span><span class="w"> BC1  Git Push Origin Master</span>`,`<span class="y"> 18.20</span><span class="w"> HITS The songs</span>`,`<span class="y"> 19.00</span><span class="w"> MFS  Money For Something</span>`,`<span class="y"> 19.05</span><span class="w"> GOVT Party political broadcast</span>`,`<span class="y"> 19.10</span><span class="w"> BC1  Camping, then Karen</span>`,`<span class="y"> 20.00</span><span class="w"> BC1  The Bank Robbery</span>`,`<span class="y"> 01.00</span><span class="w"> Closedown</span>`],
+ 888:p=>[`P888 SUBTITLES (WHAT WE MEANT)  ${stamp().slice(0,10)}`,'',`<span class="dh">${pad(' FUTURE PROOF',40)}</span>`,'','  The first lit place in BadCode.','','  Run the country like working software:','','  1 Small parts, not one big machine','  2 Test every law before release','  3 Decide from the data, in public','  4 When it breaks, publish the','    postmortem and fix it','','  Write one rule. Test it on someone','  it affects. Change it when they say','  what it misses.','','  100 back to the index'],
+};
+function drawTT(p){ const f=PAGES[p]; const tt=$('[data-l=tt]'); tt.classList.toggle('day',p===888); const lines=f?f(p):[head(p),'',`<span class="w"> Page ${p} not found.</span>`,`<span class="c"> We saw you'd try that.</span>`,'',`<span class="y"> 100</span><span class="w"> index</span>`];
+  $('#tti').innerHTML=lines.map(l=>`<div>${l||'&nbsp;'}</div>`).join(''); }
+setInterval(()=>{ if(on&&ttOn){ const h=$('#tti div'); if(h&&ttPage!==888) h.innerHTML=head(ttPage); } },1000);
+let typed='';
+function digit(k){ if(ttOn){ typed=(typed+k).slice(-3); if(typed.length<3){ $('#tti div').innerHTML=`<span class="w">P${typed.padEnd(3,'-')}</span> <span class="y">BADCODE</span>  <span class="w">searching</span>`; return; } ttPage=+typed; typed=''; drawTT(ttPage); return; } tune(+k); }
+const CH2PAGE={0:100,1:200,2:300,3:400,4:500};
+
+const keys={
+  power:()=>on?powerOff():powerOn(),
+  up:()=>tune(ch+1), down:()=>tune(ch-1),
+  left:()=>{ if(!on) return; if(ch===1&&!ttOn){ film=(film+3)%4; paintFilm(); } else if(ch===4&&!ttOn){ song=(song+3)%4; paintSongs(); } },
+  right:()=>{ if(!on) return; if(ch===1&&!ttOn){ film=(film+1)%4; paintFilm(); } else if(ch===4&&!ttOn){ song=(song+1)%4; paintSongs(); } },
+  text:()=>{ if(!on) return; ttOn=!ttOn; guide=false; if(ttOn) ttPage=CH2PAGE[ch]; syncKeys(); render(); },
+  guide:()=>{ if(!on) return; guide=!guide; ttOn=false; syncKeys(); render(); },
+  mute:()=>{ muted=!muted; $('[data-k=mute]').setAttribute('aria-pressed',muted); if(!muted) ac()&&actx.resume&&actx.resume(); render(); },
+  red:()=>fast(300), green:()=>fast(888), yellow:()=>fast(400), blue:()=>fast(200),
+};
+function fast(p){ if(!on) return; ttOn=true; guide=false; ttPage=p; syncKeys(); render(); }
+$$('.remote button').forEach(b=>b.onclick=()=>{ const k=b.dataset.k; if(/^\d$/.test(k)){ if(on) digit(k); } else keys[k](); });
+document.addEventListener('keydown',e=>{ if(e.target.closest('textarea,input')) return; const m={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',t:'text',g:'guide',m:'mute',p:'power'}[e.key]; if(/^\d$/.test(e.key)&&on){ digit(e.key); e.preventDefault(); } else if(m){ keys[m](); if(e.key.startsWith('Arrow')) e.preventDefault(); } });
+$('#opt-clean').onchange=()=>render(); $('#opt-night').onchange=()=>render();
+
+/* start: the set on and on channel 2, so the page has a picture at rest */
+on=true; set.classList.remove('off'); set.classList.add('on'); scr.classList.add('isOn'); paintFilm(); paintSongs(); render(); flashOsd(2);
+
+/* ===== ideas and votes ===== */
+const IDEAS=[
+ ['The set',[
+  ['power','Switching on is the hello','The page loads with the TV off; the first tap is the power button. A white dot blooms into the picture.',true],
+  ['hijack','BadCode hijacks the signal','A dull council page for a second, then the picture tears and the balaclava host is there, silent.',true],
+  ['remote','The remote is the menu','Numbers, channel up and down, TEXT, GUIDE, four colour buttons. On a phone it docks under the screen.',true],
+  ['osd','Green channel numbers','The old on-screen display in the corner whenever you change channel.',true],
+  ['led','The standby light is the triangle','When the TV is off, only the red triangle glows. The logo is the off switch.',true],
+  ['clean','Clean signal setting','One switch turns off scanlines, static and motion. Accessibility built into the joke.',true],
+ ]],
+ ['The channels',[
+  ['c1','BadCode One: the films','One film fills the screen, title in the big CRT letters, flick left and right. OK opens it on YouTube.',true],
+  ['c2','Money For Something: the news','The bulletin as a live channel: the tally, money found this week, the ticker, next bulletin countdown.',true],
+  ['c3','BadCode Govt: the clean channel','Opens on a party political broadcast card, then the only picture with no static: daylight, a manifesto, Cabinet said / BadCode says.',true],
+  ['c4','BadCode Hits: the songs','A music channel for the four songs, like The Box. Dial a track.',true],
+  ['c0','Channel 0: the test card','A BadCode test card with the host in the middle and the 1 kHz tone.',true],
+  ['c5','Channel 5 that won\'t tune in','A channel you can almost get: snow and a ghost picture of the next story. A teaser for what is coming.',false],
+  ['ppb','Party political broadcasts break in','Now and then the Government interrupts the other channels, the way real ones did.',false],
+ ]],
+ ['Teletext',[
+  ['text','TEXT on every channel','The real words of the site (story blurbs, the manifesto, the headlines) live as teletext pages, fast and readable. Search engines and screen readers get plain text.',true],
+  ['pages','Page numbers as addresses','badcode.tv/300 is the news, /400 the manifesto. The address bar is the page number.',false],
+  ['p888','P888 is the subtitles: what we meant','Future Proof lives on 888, the old subtitles page, in daylight.',true],
+  ['404','Page not found from the future','Type a page that doesn\'t exist: “We saw you’d try that.”',true],
+  ['mix','MIX: teletext over the picture','The old MIX button laid the text over the programme. Captions over the film.',false],
+  ['quiz','A teletext game','A Bamboozle-style quiz: four answers, four colour buttons, all about who gets the money.',false],
+  ['reveal','REVEAL hides the answer','The old REVEAL button for the punchline: the joke is hidden until you press it.',false],
+ ]],
+ ['Time',[
+  ['guide','GUIDE: tonight\'s listings','A TV guide with the week\'s schedule; the bulletin has a real slot (for example Tuesday 7pm).',true],
+  ['closedown','Closedown at night','Between 1am and 6am UK time the station closes: “Programmes resume at 6am. The future doesn\'t close.”',true],
+  ['live','Live when the bulletin airs','At bulletin time the news channel goes LIVE and the set switches itself to channel 2.',false],
+  ['future','Clock from 2054','Sometimes the teletext clock slips to a date in the future.',false],
+ ]],
+ ['Around the set',[
+  ['announcer','A continuity announcer','The BadCode voice between channels: “Coming up on BadCode One...” Sound off until you ask.',false],
+  ['idents','A new ident every time','The ring and triangle animate differently each time you tune in, like the BBC Two idents.',false],
+  ['ads','Ad breaks that are ours','Breaks with short ads for Future Proof policies, and “this break is sponsored by you subscribing”.',false],
+  ['vhs','The VHS shelf','Past bulletins as tapes on a shelf beside the TV. Record button = subscribe.',false],
+  ['room','The room changes by channel','The front room behind the set lights up differently: cinema dark, strip-light studio, daylight for the Government.',false],
+  ['weather','The weather for 2054','A weather map of Britain on the news channel, with the forecast from the future.',false],
+ ]],
+];
+const box=$('#ideas');
+box.innerHTML=IDEAS.map(([g,list])=>`<div class="group"><h3>${g}</h3>${list.map(([id,t,d,live])=>`<div class="idea" data-i="${id}"><div><b>${t}${live?'<span class="tag">on the set</span>':''}</b><p>${d}</p></div><div class="v" role="group" aria-label="Your pick on: ${t.replace(/"/g,'')}"><button data-p="yes" aria-pressed="false">Yes</button><button data-p="maybe" aria-pressed="false">Maybe</button><button data-p="no" aria-pressed="false">No</button></div><p class="who" id="w-${id}"></p></div>`).join('')}</div>`).join('');
+
+let mine={ideas:{},note:''}, ref=null, user=null, everyone=[];
+function paintMine(){ $$('.idea').forEach(el=>{ const p=mine.ideas[el.dataset.i]; $$('[data-p]',el).forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===p)); }); const ta=$('#gnote'); if(document.activeElement!==ta) ta.value=mine.note||''; }
+async function paintAll(){ let ps={}; try{ ps=user?await user.profiles(everyone.map(e=>e.id)):{}; }catch(e){} const nm=id=>(ps[id]&&ps[id].name)||'Someone';
+  $$('.idea').forEach(el=>{ const id=el.dataset.i; const bits=everyone.filter(e=>(e.d.ideas||{})[id]).map(e=>`${nm(e.id)}: ${({yes:'Yes',maybe:'Maybe',no:'No'})[e.d.ideas[id]]}`); $('#w-'+id).textContent=bits.join(', '); });
+  const an=$('#allnotes'); an.innerHTML=''; everyone.filter(e=>e.d.note).forEach(e=>{ const p=document.createElement('p'); p.textContent=`${nm(e.id)}: ${e.d.note}`; an.appendChild(p); }); }
+let saving=Promise.resolve();
+function save(){ const st=$('#gstat'); if(!ref){ st.textContent='Picks save when this page is opened signed in to claude.ai.'; return; } mine.updated=new Date().toISOString();
+  saving=saving.then(()=>ref.set(mine)).then(()=>st.textContent='Saved.').catch(e=>st.textContent= e&&e.code==='permission_denied'?'You can view this page but not vote on it.':'Could not save. Try again in a moment.'); }
+$$('.idea').forEach(el=>$$('[data-p]',el).forEach(b=>b.onclick=()=>{ const id=el.dataset.i; mine.ideas[id]= mine.ideas[id]===b.dataset.p? null : b.dataset.p; paintMine(); save(); }));
+let nt; $('#gnote').oninput=e=>{ mine.note=e.target.value; clearTimeout(nt); nt=setTimeout(save,700); };
+(async()=>{ try{ const c=window.claude; if(!c||!c.use) return; const [db,u]=await Promise.all([c.use('db'),c.use('user')]); user=u; if(!db||!u) return; const uid=await u.id(); if(!uid) return; ref=db.doc('votes/'+uid);
+  db.collection('votes').onSnapshot(s=>{ everyone=s.docs.filter(d=>d.exists).map(d=>({id:d.id,d:d.data()||{}})); const me=everyone.find(e=>e.id===uid); if(me){ mine={ideas:me.d.ideas||{},note:me.d.note||''}; paintMine(); } paintAll(); }); }catch(e){} })();
+})();
+</script>

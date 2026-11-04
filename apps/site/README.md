@@ -1,33 +1,66 @@
-# apps/site — badcode.tv
+# apps/site — badcode.tv (Channel BadCode)
 
-The live website for now: one static page that maps to our content and our socials. No build
-step, no framework. The full React app in `apps/web` is separate and is not what badcode.tv serves.
+The website is a television. Its three strands are channels, and number keys pick a programme within one:
 
-- `public/` is the whole site. `index.html` holds the four stories and the social links.
-- To add a link when a video or account goes live: in `index.html`, swap the
-  `<span class="soon">…</span>` for `<a href="URL">…</a>` with the same words.
-- Brand files in `public/` are copies from `docs/brand/logo/`. If the logo changes, copy them again.
+| Remote | Channel | Programmes | Address |
+| --- | --- | --- | --- |
+| STORIES | BadCode One | 1–4 the films, 5–8 their songs | `/stories`, `/stories/1` … `/stories/8` |
+| NEWS | Money For Something (working name) | 1 = latest bulletin, then older ones | `/news`, `/news/2` … |
+| GOVT | The BadCode Government | 1 the manifesto, 2 Future Proof | `/government`, `/government/2` (also `/future-proof`) |
+| 0 | Test card | about BadCode | `/about` |
+| TEXT | Teletext on any channel | 100 index, 200 stories (201–204), 300 news, 400 manifesto, 700 follow, 800 about, 888 Future Proof | `/text/100` … |
 
-## Preview
+Every address is a real page with its own title and link-preview picture, plus a plain-text copy of
+what is on screen for screen readers, search engines and browsers without JavaScript.
 
-    npx serve apps/site/public
+## Change what's on it
 
-## Deploy (Cloudflare)
+**`src/content.json` holds every word, picture and link.** To make a film play, put its YouTube id
+(the 11 characters after `watch?v=`) in that story's `film` (or `songVideo`). A news bulletin
+is an entry in `news.bulletins`: `{"title": "...", "youtube": "..."}`. A social account goes
+live when its `url` is filled in. Blurbs and stills are setup only: no twist and no ending (Kai, 2026-10-22).
 
-It is a Cloudflare Worker that only serves static files (`wrangler.jsonc`).
+The story stills are in `public/stills/`, one frame per film (800×600 WebP), cut with ffmpeg from the
+films on `D:\badcode-videos`. Git Push Origin Master is from 0:09 of `renders/gpom-second-half-rough2.mp4`.
+Camping is from 3:08.5 of `camping.mp4`: Kai picked it over the camp-fire shot, which gives the plot away.
+Karen is from 2:48.5 of `All Day to Complain - yes.mp4`. The Bank Robbery has no still yet: its film
+isn't on this machine, so its channel shows "PICTURE COMING". To add one, put the file in `stills/`
+and give it a `still` in `content.json`.
 
-    cd apps/site
-    npx wrangler login     # once, opens a browser
-    npx wrangler deploy    # prints a *.workers.dev address
+## Files
 
-To serve it on badcode.tv, the domain's DNS must be on Cloudflare; then uncomment `routes` in
-`wrangler.jsonc` and deploy again.
+- `src/content.json`: the content (above)
+- `src/page.html`: the one page template every address is built from
+- `src/tv.css`, `src/tv.js`: the TV. Plain CSS and JS, no framework
+- `public/`: static files copied as-is (stills, logo, favicons). The old one-page map
+  (`public/index.html`, `404.html`, `styles.css`) is no longer shipped and can be deleted.
+- `build.mjs`: builds everything into `dist/` (git-ignored)
 
-## Story stills
+## Build and preview
 
-`public/stills/` holds one frame per story, 800×600 WebP (4:3), cut with ffmpeg from the films on
-`D:\badcode-videos`. The instant-photo look (paper border, tilt, faded film colour) is CSS, so the
-files stay plain frames. Git Push Origin Master: 0:09 of `renders/gpom-second-half-rough2.mp4`.
-Camping: 3:08.5 of `camping.mp4` (Bob's tent, the wank tank, the Waitrose sign; Kai asked for this
-over the camp-fire shot, which gave the plot away). Karen: 2:48.5 of `All Day to Complain - yes.mp4`
-(real footage, not the cartoon shots). The Bank Robbery is a blank, undeveloped photo for now.
+    node apps/site/build.mjs                       # → apps/site/dist (needs Node 18+, nothing to install)
+    python3 -m http.server 8080 -d apps/site/dist  # open http://localhost:8080
+
+## Deploy (Cloudflare Pages)
+
+The build output, `dist/`, is uploaded to the Cloudflare Pages project `badcode-web`. Run these from
+the repo root. The script is `scripts/site/deploy.sh`, and every upload is logged in
+`scripts/site/releases.tsv`.
+
+    ./stack site login     # once, opens a browser
+    ./stack site preview   # a preview at <branch>.badcode-web.pages.dev
+    ./stack site deploy    # production, www.badcode.tv (manual only; a push never deploys)
+    ./stack site status
+
+**DNS stays at Gandi** (Kai, 2026-11-04). `www.badcode.tv` is a CNAME at Gandi pointing to the Pages
+project. The bare `badcode.tv` redirects to `www`, because Pages only serves a bare domain when Cloudflare
+runs the DNS. That is also why this is Pages and not a Worker: a Worker's custom domain needs the
+zone on Cloudflare too. `wrangler.jsonc` is left over from the Worker setup and the Pages deploy doesn't use it.
+
+## Where the design came from
+
+`design/2026-11-04-homepage/`: the 10-agent research (`concepts.md`), the eight-concept picking
+page, the Channel BadCode prototype with its list of ideas, and the six rules Kai approved on
+2026-11-04: channel = section, number = programme; the video plays inside the TV; TEXT holds the
+words; every state has a real address; it is always on (the hijack plays on the first visit only,
+and closedown between 1 and 6am never blocks a button); and the extras stay few.

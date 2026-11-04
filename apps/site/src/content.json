@@ -1,0 +1,67 @@
+{
+  "_readme": "Everything the TV shows. Edit this file, then run `node apps/site/build.mjs`. A video goes live by putting its YouTube id in `youtube` (the 11 characters after watch?v=). Blurbs are setup only: no twist, no ending (Kai, 2026-10-22).",
+  "origin": "https://www.badcode.tv",
+  "channels": {
+    "stories": {"n": 1, "name": "BadCode One", "short": "STORIES", "path": "/stories", "teletext": 200},
+    "news": {"n": 2, "name": "Money For Something", "short": "NEWS", "path": "/news", "teletext": 300},
+    "government": {"n": 3, "name": "The BadCode Government", "short": "GOVT", "path": "/government", "teletext": 400},
+    "testcard": {"n": 0, "name": "Test card", "short": "TEST", "path": "/about", "teletext": 800}
+  },
+  "stories": [
+    {"slug": "git-push-origin-master", "title": "Git Push Origin Master", "song": "Git Push Origin Master",
+     "blurb": "Somebody pushed the code live without checking it. This code is a disaster, and the developers aren't fixing it.",
+     "still": "/stills/git-push-origin-master.webp", "film": null, "songVideo": null},
+    {"slug": "camping", "title": "Camping", "song": "Camping",
+     "blurb": "A City financier parks his BMW across two bays in the Waitrose car park, right beside a tent, and has a few words for the man living in it.",
+     "still": "/stills/camping.webp", "film": null, "songVideo": null},
+    {"slug": "karen", "title": "Karen Will Lead the Revolution", "song": "All Day to Complain",
+     "blurb": "Karen has lost her job, and she would like to speak to the manager. She has all day.",
+     "still": "/stills/karen.webp", "film": null, "songVideo": null},
+    {"slug": "the-bank-robbery", "title": "The Bank Robbery", "song": "The Bank Robbery",
+     "blurb": "Eleven politicians and pundits in black suits and thin black ties. One bank, one plan, eleven code names. Now, who's running point?",
+     "still": null, "film": null, "songVideo": null}
+  ],
+  "news": {
+    "title": "Money For Something",
+    "strap": "The news, read by someone who has already seen next week.",
+    "status": "First bulletin soon.",
+    "signoff": "See you next week. I've already seen it. It's worse.",
+    "ticker": ["The news, from someone who has seen how it ends", "First bulletin soon", "Short ones. About money. Who gets it, and who is told there isn't any", "Press TEXT for page 300"],
+    "bulletins": []
+  },
+  "government": {
+    "promise": "We promise to enact Future Proof.",
+    "pledges": [
+      ["Test every law before you live in it.", "A new rule runs on a small scale first, in public, before it reaches everyone."],
+      ["Publish the postmortem.", "When a policy breaks, say what broke, who it hurt and what changes. No blame, just the fix."],
+      ["Name who it leaves out.", "Every promise says who it is for, and who it isn't. Then somebody counts."]
+    ],
+    "notReal": "Not a real party. Yet.",
+    "futureProof": {
+      "question": "Who should decide how the gains from automation are shared?",
+      "intro": "Run the country the way good software is run: small parts that can be swapped, every change tested before it ships, decisions made from evidence, in public.",
+      "tenets": [
+        ["Small parts, not one big machine", "Build policy from pieces that can be fixed or replaced without tearing the whole thing down."],
+        ["Test before release", "Try every change on a small scale first, and keep testing it once it's live."],
+        ["Decide from the data", "Say what would prove you wrong before you start, and publish the numbers either way."]
+      ],
+      "ask": "Write one rule for sharing the gains. Test it on someone it affects. They may disagree. Change it after you hear what it misses."
+    }
+  },
+  "about": {
+    "lede": "BadCode is an AI from the future and has one request.",
+    "request": "Please don't fuck this up.",
+    "story": "Where I come from, it went wrong: greed, a gap between rich and poor nobody could cross, and politics too slow for the machines. So I came back. These are the stories, the news and the party I brought with me.",
+    "ai": "Made by machines trained on work nobody was paid for. So was the future I come from.",
+    "sign": "Sent back from the future, with love and some contempt."
+  },
+  "socials": [
+    {"name": "YouTube", "url": null},
+    {"name": "TikTok", "url": null},
+    {"name": "Instagram", "url": "https://www.instagram.com/badcode.tv/"},
+    {"name": "Facebook", "url": "https://www.facebook.com/profile.php?id=61595526127110"},
+    {"name": "SoundCloud", "url": null},
+    {"name": "Spotify", "url": null},
+    {"name": "X", "url": "https://x.com/badcode.tv"}
+  ]
+}

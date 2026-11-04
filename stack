@@ -33,6 +33,10 @@
 #   ./stack web            just the web app
 #   ./stack check          typecheck + unit tests, repo-wide
 #
+#   ./stack site preview   build the website, upload a preview → <branch>.badcode-web.pages.dev
+#   ./stack site deploy    build the website, upload to production (www.badcode.tv). Manual only:
+#                          a push never deploys. More: scripts/site/deploy.sh
+#
 set -euo pipefail
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -194,6 +198,7 @@ case "$cmd" in
            chain test "${args[@]}" "$@" ;;
   cargo)   chain cargo "$@" ;;
   enc)     badcode enc "$@" ;;
+  site)    exec "$DIR/scripts/site/deploy.sh" "$@" ;;
   wallet|doctor|image|shell|up|down|idl|airdrop) chain "$cmd" "$@" ;;
   *) echo "unknown command: $cmd" >&2; echo; help; exit 1 ;;
 esac

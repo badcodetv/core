@@ -1,0 +1,680 @@
+<title>BadCode Front Door</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=Big+Shoulders+Stencil+Display:wght@800&family=Share+Tech+Mono&family=Oswald:wght@500;700&family=VT323&family=JetBrains+Mono:wght@700&family=Barlow+Condensed:wght@600&family=Libre+Caslon+Text:wght@400;700&family=Courier+Prime&family=Caveat:wght@700&family=Anton&family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Rubik+Mono+One&family=Saira+Stencil+One&family=Barlow:wght@500;700&family=Permanent+Marker&family=Overpass:wght@800&display=swap">
+<style>
+/* Layout: a contact sheet. One row per concept: words on the left, a playable miniature on the right; stacks on a phone. */
+:root{
+  --bg:#e2e1dc; --sheet:#f1f0ec; --fg:#1a1a1c; --muted:#5d5c58; --line:#c6c4bd; --red:#cc2b37; --ok:#2f6b45;
+  --ui:"Archivo",system-ui,sans-serif; --voice:"Instrument Serif",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1b1d;--sheet:#242427;--fg:#ecebe6;--muted:#a3a19b;--line:#3a3a3e;--red:#e0414c;--ok:#6fbf8a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1b1d;--sheet:#242427;--fg:#ecebe6;--muted:#a3a19b;--line:#3a3a3e;--red:#e0414c;--ok:#6fbf8a;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--ui);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 80px}
+.wrap{max-width:1180px;margin:0 auto;display:grid;gap:56px}
+header.top{display:grid;gap:18px;max-width:760px}
+header.top svg{width:200px;height:auto;color:var(--fg)}
+h1{font:800 clamp(2rem,5vw,3.4rem)/1 var(--ui);font-stretch:72%;margin:0;text-wrap:balance}
+.lede{font:1.35rem/1.35 var(--voice);margin:0;max-width:62ch}
+.how{color:var(--muted);margin:0;max-width:66ch}
+.strands{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.strands li{border:1.5px solid var(--fg);border-radius:99px;padding:4px 12px;font-weight:600;font-size:.9rem}
+.concept{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px;align-items:start;border-top:1.5px solid var(--fg);padding-top:22px}
+@media (max-width:820px){.concept{grid-template-columns:minmax(0,1fr)}}
+.words{display:grid;gap:12px;min-width:0}
+.rank{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.concept h2{font:800 2rem/1 var(--ui);font-stretch:80%;margin:0;text-wrap:balance}
+.pitch{margin:0;font-weight:500}
+.line{font:italic 1.3rem/1.3 var(--voice);margin:0;padding-left:14px;border-left:3px solid var(--red)}
+details{border-top:1px solid var(--line);padding-top:8px}
+summary{cursor:pointer;font-weight:600}
+details dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;margin:10px 0 0;font-size:.92rem}
+dt{color:var(--muted)} dd{margin:0}
+.sw{display:flex;flex-wrap:wrap;gap:6px}
+.sw span{width:22px;height:22px;border-radius:4px;border:1px solid var(--line)}
+details a{color:inherit}
+.vote{display:grid;gap:8px;background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:12px}
+.vote .btns{display:flex;flex-wrap:wrap;gap:6px}
+.vote button,.btn{font:600 .9rem var(--ui);padding:7px 12px;border-radius:7px;border:1.5px solid var(--fg);background:transparent;color:var(--fg);cursor:pointer}
+.vote button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.vote textarea{font:inherit;font-size:.92rem;width:100%;min-height:54px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--fg);padding:8px;resize:vertical}
+.tally{font-size:.85rem;color:var(--muted);margin:0}
+.status{font-size:.8rem;color:var(--muted);margin:0;min-height:1.2em}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.stagewrap{display:grid;gap:8px;min-width:0}
+.stage{position:relative;width:100%;max-width:100%;aspect-ratio:16/10;overflow:hidden;border-radius:6px;container-type:inline-size;isolation:isolate;user-select:none}
+.stagebar{display:flex;justify-content:space-between;gap:8px;font-size:.85rem;color:var(--muted);flex-wrap:wrap}
+.grafts ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.grafts li label{display:flex;gap:10px;align-items:flex-start;background:var(--sheet);border:1px solid var(--line);border-radius:8px;padding:10px;cursor:pointer;height:100%}
+.grafts input{margin-top:4px;accent-color:var(--red)}
+.grafts b{display:block}
+.grafts .who{display:block;color:var(--muted);font-size:.8rem;margin-top:4px}
+section h2.sec{font:800 1.8rem/1 var(--ui);font-stretch:80%;margin:0 0 6px}
+.fine{color:var(--muted);font-size:.85rem;max-width:70ch}
+
+/* ===== 1 WEDGE ===== */
+.wedge{background:#111010;color:#EDE6D6}
+.wedge svg.ring{position:absolute;width:20cqw;right:3cqw;top:3cqw;transition:all .7s cubic-bezier(.7,0,.2,1)}
+.wedge .slab{position:absolute;left:-6%;width:112%;padding:2.2cqw 9cqw;transform-origin:left center;transition:transform .55s cubic-bezier(.2,.9,.2,1),opacity .3s}
+.wedge .s1{top:22%;background:#D7261E;color:#111010;transform:rotate(-8deg)}
+.wedge .s2{top:46%;background:#EDE6D6;color:#111010;transform:rotate(-8deg)}
+.wedge .s3{bottom:6%;left:6%;width:88%;background:#f4f2ee;color:#111;padding:0;border-top:2.4cqw solid #111;transform:none}
+.wedge .s1 b{font:800 6.5cqw/0.9 "Big Shoulders Stencil Display","Archivo Black",sans-serif;display:block;letter-spacing:.02em}
+.wedge .s1 small{font:400 1.8cqw "Archivo",sans-serif}
+.wedge .s2 .tick{font:2.4cqw/1.3 "Archivo Black",sans-serif;white-space:nowrap;display:block}
+.wedge .s2 .tick span{display:inline-block;animation:tk 14s linear infinite}
+@keyframes tk{to{transform:translateX(-50%)}}
+.wedge .gov{display:flex;align-items:center;justify-content:space-between;gap:2cqw;padding:2cqw 3cqw}
+.wedge .gov h3{margin:0;font:700 3cqw/1.1 "Archivo",sans-serif}
+.wedge .gov p{margin:.4cqw 0 0;font:1.7cqw/1.3 "Archivo",sans-serif}
+.wedge .gov .go{background:#00703c;color:#fff;font:700 2cqw "Archivo",sans-serif;padding:1.2cqw 2.4cqw;box-shadow:0 .4cqw 0 #002d18;white-space:nowrap}
+.wedge.intro svg.ring{width:44cqw;right:28cqw;top:8cqw}
+.wedge.intro .slab{opacity:0}
+.wedge.intro .s1{transform:translateX(-60%) rotate(-8deg)}
+.wedge.intro .s2{transform:translateX(60%) rotate(-8deg)}
+.wedge.intro .s3{transform:translateY(120%)}
+.wedge .arc{transition:transform .5s cubic-bezier(.2,.9,.2,1),opacity .5s}
+.wedge.split .a1{transform:translate(-30px,-20px)} .wedge.split .a2{transform:translate(30px,-10px)} .wedge.split .a3{transform:translate(0,32px)}
+.wedge.split .arc{opacity:0}
+.wedge .tri{transition:transform .35s cubic-bezier(.8,0,.2,1)}
+.wedge.hit .tri{transform:translate(-10px,8px) scale(1.5)}
+
+/* ===== 2 CHANNEL ===== */
+.channel{background:#1a1918;display:grid;grid-template-rows:1fr auto;padding:2cqw;gap:1.6cqw}
+.channel .tube{position:relative;border-radius:3cqw/4cqw;overflow:hidden;background:#0B0B0C;box-shadow:inset 0 0 6cqw rgba(0,0,0,.8)}
+.channel .tube::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.28) 0 2px,transparent 2px 4px);pointer-events:none;z-index:5;transition:opacity .4s}
+.channel.clean .tube::after{opacity:0}
+.channel canvas.noise{position:absolute;inset:0;width:100%;height:100%;z-index:6;opacity:0;image-rendering:pixelated;pointer-events:none}
+.channel.static canvas.noise{opacity:.85}
+.channel .ch{position:absolute;inset:0;display:none}
+.channel .ch.on{display:block}
+.channel.tear .tube{animation:tear .5s steps(6)}
+@keyframes tear{0%{transform:none}20%{transform:skewX(14deg) translateX(-6%)}40%{transform:skewX(-8deg) translateX(8%);filter:hue-rotate(90deg)}60%{transform:translateY(-4%)}100%{transform:none}}
+.channel .bug{position:absolute;top:2cqw;left:2.4cqw;font:2cqw "Share Tech Mono",monospace;color:#9C9A96;z-index:4}
+.channel .live{position:absolute;top:2cqw;right:2.4cqw;font:2cqw "Share Tech Mono",monospace;color:#E0301E;z-index:4}
+.channel .boring{background:#fff;color:#333;padding:3cqw;font:1.8cqw/1.5 Arial,sans-serif}
+.channel .boring h4{margin:0 0 1cqw;font-size:2.6cqw;color:#1d4f91}
+.channel .boring i{display:block;height:1.6cqw;background:#e8e8e8;margin:1.2cqw 0;border-radius:2px}
+.channel .host{background:repeating-linear-gradient(90deg,#57534e 0 2cqw,#6b6660 2cqw 4cqw);display:grid;place-items:center}
+.channel .host svg{height:84%}
+.channel .c1{background:#000;display:grid;align-content:center;padding:0 5cqw;border-block:5cqw solid #000}
+.channel .c1 p{margin:0;color:#E8A33D;font:500 1.6cqw "Oswald",sans-serif;letter-spacing:.12em}
+.channel .c1 ol{margin:1cqw 0 0;padding:0;list-style:none;display:grid;gap:.4cqw}
+.channel .c1 li{font:700 4.4cqw/1 "Oswald",sans-serif;color:#E9E7E1;text-transform:uppercase}
+.channel .c2{background:radial-gradient(circle at 40% 40%,#2a2522,#0B0B0C)}
+.channel .c2 .seg{position:absolute;left:5cqw;top:9cqw;font:5.5cqw "Share Tech Mono",monospace;color:#E0301E;text-shadow:0 0 2cqw rgba(224,48,30,.6)}
+.channel .c2 .seg small{display:block;font-size:2cqw;color:#9C9A96}
+.channel .c2 .lower{position:absolute;left:0;right:0;bottom:6.5cqw;background:#E8A33D;color:#0B0B0C;font:700 2.8cqw "Oswald",sans-serif;padding:.6cqw 3cqw;text-transform:uppercase}
+.channel .c2 .tick{position:absolute;left:0;right:0;bottom:2.4cqw;font:1.9cqw "Share Tech Mono",monospace;color:#E9E7E1;white-space:nowrap;overflow:hidden}
+.channel .c2 .tick span{display:inline-block;animation:tk 16s linear infinite}
+.channel .c3{background:#E9E7E1;color:#1a1a1a;padding:4cqw 5cqw}
+.channel .c3 .haz{position:absolute;left:0;right:0;bottom:0;height:3cqw;background:repeating-linear-gradient(45deg,#F5D300 0 2cqw,#1a1a1a 2cqw 4cqw)}
+.channel .c3 h4{margin:0;font:700 6cqw/0.95 "Oswald",sans-serif;text-transform:uppercase}
+.channel .c3 p{font:1.9cqw/1.4 "Archivo",sans-serif;max-width:40ch}
+.channel .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1cqw}
+.channel .strip button{font:2.2cqw "Share Tech Mono",monospace;background:#2b2927;color:#E9E7E1;border:0;border-radius:1cqw;padding:1.2cqw;cursor:pointer;box-shadow:0 .5cqw 0 #000}
+.channel .strip button[aria-pressed="true"]{background:#E0301E;color:#0B0B0C}
+
+/* ===== 3 P100 ===== */
+.tele{background:#000;color:#fff;font-family:"VT323",monospace;display:grid;grid-template-rows:1fr auto}
+.tele .scr{padding:2cqw 3cqw;font-size:4.1cqw;line-height:1.02;white-space:pre;overflow:hidden}
+.tele .scr div{min-height:1.02em}
+.tele .r{color:#ff0000}.tele .y{color:#ffff00}.tele .g{color:#00ff00}.tele .m{color:#ff00ff}.tele .w{color:#fff}
+.tele .bgb{background:#0000ff}.tele .bgr{background:#ff0000;color:#fff}
+.tele .fl{animation:fl 1s steps(1) infinite}
+@keyframes fl{50%{visibility:hidden}}
+.tele.day{background:#fff}.tele.day .scr{color:#000}
+.tele canvas{position:absolute;right:4cqw;top:9cqw;width:18cqw;image-rendering:pixelated}
+.tele .fast{display:grid;grid-template-columns:repeat(4,1fr)}
+.tele .fast button{font:3.4cqw "VT323",monospace;border:0;padding:1cqw;cursor:pointer;color:#000}
+
+/* ===== 4 DEPARTURES ===== */
+.dep{background:#121212;color:#FFB000;padding:3cqw 3.4cqw;display:grid;grid-template-rows:auto 1fr auto;gap:1.5cqw}
+.dep .head{display:flex;justify-content:space-between;align-items:center;color:#EFEBE2;font:600 2.2cqw "Barlow Condensed",sans-serif;letter-spacing:.08em}
+.dep .clock{display:flex;align-items:center;gap:1.6cqw;font:700 3cqw "JetBrains Mono",monospace;color:#EFEBE2}
+.dep .clock svg{width:6cqw}
+.dep table{width:100%;border-collapse:separate;border-spacing:0 .6cqw;font:700 2.6cqw "JetBrains Mono",monospace}
+.dep td{padding:0}
+.dep .pl{color:#EFEBE2;width:5cqw;font-family:"Barlow Condensed",sans-serif;font-size:2.4cqw}
+.dep .f{display:inline-block;width:1.05em;text-align:center;background:#1e1e1f;border-bottom:1px solid #000;margin-right:1px;line-height:1.35}
+.dep .st{text-align:right;white-space:nowrap}
+.dep tr.p2 .f{color:#ffcc55} .dep tr.p3 .f{color:#EFEBE2}
+.dep .next{background:#D7261E;color:#fff;font:700 2.8cqw "JetBrains Mono",monospace;padding:1cqw 2cqw;display:flex;justify-content:space-between}
+
+/* ===== 5 BALLOT ===== */
+.ballot{background:repeating-linear-gradient(90deg,#b89b6a 0 7cqw,#ad905f 7cqw 7.4cqw);display:grid;place-items:center}
+.ballot .paper{width:64%;background:#E9E1C9;color:#1A1A1A;box-shadow:0 1cqw 3cqw rgba(0,0,0,.35);position:relative;font-family:"Courier Prime",monospace}
+.ballot .bh{display:flex;justify-content:space-between;padding:1.4cqw 2cqw;border-bottom:.4cqw solid #1A1A1A;font-size:1.7cqw}
+.ballot .row{display:grid;grid-template-columns:3cqw 1fr 6cqw 6cqw;align-items:center;border-bottom:.25cqw solid #1A1A1A;min-height:8.4cqw}
+.ballot .row>*{padding:0 1cqw}
+.ballot .n{font:700 2.6cqw "Libre Caslon Text",serif;text-align:center;border-right:.25cqw solid #1A1A1A;align-self:stretch;display:grid;place-items:center}
+.ballot .nm{font:700 2.2cqw/1.1 "Libre Caslon Text",serif;font-variant:small-caps;letter-spacing:.03em}
+.ballot .nm small{display:block;font:400 1.5cqw/1.3 "Courier Prime",monospace;font-variant:normal;letter-spacing:0;margin-top:.3cqw}
+.ballot .em{display:grid;place-items:center;font:700 2.2cqw "Libre Caslon Text",serif}
+.ballot .box{width:5.4cqw;height:5.4cqw;border:.35cqw solid #1A1A1A;background:#fff;cursor:pointer;padding:0;position:relative}
+.ballot .box svg{position:absolute;inset:8%;width:84%;height:84%}
+.ballot .box path{stroke:#4B4B4D;stroke-width:9;stroke-linecap:round;fill:none;stroke-dasharray:130;stroke-dashoffset:130;transition:stroke-dashoffset .35s ease-out}
+.ballot .box.x path{stroke-dashoffset:0}
+.ballot .foot{padding:1.2cqw 2cqw;font-size:1.6cqw}
+.ballot .stamp{position:absolute;right:4%;bottom:14%;font:700 4cqw "Libre Caslon Text",serif;color:#cc2b37;border:.5cqw solid #cc2b37;padding:.3cqw 1.6cqw;transform:rotate(-12deg) scale(2.4);opacity:0;transition:transform .18s cubic-bezier(.6,0,1,1),opacity .1s;mix-blend-mode:multiply}
+.ballot.stamped .stamp{transform:rotate(-12deg);opacity:.85}
+.ballot .pencil{position:absolute;left:4%;top:-2%;font:700 3.2cqw "Caveat",cursive;color:#2a2a2a;transform:rotate(-6deg)}
+
+/* ===== 6 HOARDING ===== */
+.hoard{background:#5A3A32;background-image:linear-gradient(#4a2e27 2px,transparent 2px),linear-gradient(90deg,#4a2e27 2px,transparent 2px);background-size:9cqw 4cqw,18cqw 8cqw;background-position:0 0,0 0}
+.hoard .p{position:absolute;top:8%;width:28%;height:70%;transform-origin:top center;transition:transform .5s cubic-bezier(.2,1.4,.4,1),clip-path .5s;cursor:pointer;border:0;padding:0;text-align:left}
+.hoard .p .face,.hoard .p .under{position:absolute;inset:0;padding:2cqw}
+.hoard .p .face{transition:clip-path .5s ease}
+.hoard .p.peeled .face{clip-path:polygon(0 0,100% 0,100% 30%,30% 100%,0 100%)}
+.hoard .under{background:#C9C5BC;color:#1C1C1C;font:2.2cqw/1.25 "Special Elite","Courier Prime",monospace;display:flex;align-items:flex-end;justify-content:flex-end;text-align:right}
+.hoard .under b{font:2.6cqw "Archivo Black",sans-serif;display:block;color:#888}
+.hoard .p1{left:5%;transform:rotate(-1.5deg)} .hoard .p2{left:36%;transform:rotate(1deg)} .hoard .p3{left:67%;transform:rotate(4deg)}
+.hoard.intro .p{transform:scaleY(0)}
+.hoard .p1 .face{background:#0e0e0e;color:#EDE6D6;background-image:radial-gradient(circle at 50% 30%,#3a332c,#0e0e0e 70%)}
+.hoard .p1 .face em{font:italic 700 3.2cqw/1 "Bodoni Moda",serif;display:block}
+.hoard .p1 .face ul{list-style:none;padding:0;margin:2cqw 0 0;font:1.5cqw/1.5 "Archivo",sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.hoard .p2 .face{background:#f4f1ea;color:#1C1C1C}
+.hoard .p2 .mast{background:#D7261E;color:#fff;font:2.4cqw/1 "Anton",sans-serif;padding:.8cqw 1cqw;margin:-2cqw -2cqw 1.4cqw}
+.hoard .p2 .hl{font:5.6cqw/0.92 "Anton",sans-serif;text-transform:uppercase}
+.hoard .p2 .bx{border:.3cqw solid #1C1C1C;margin-top:1.6cqw;padding:.8cqw;font:1.5cqw "Courier Prime",monospace}
+.hoard .p3 .face{background:#F3C613;color:#1C1C1C}
+.hoard .p3 .face h4{margin:0;font:3cqw/1.05 "Rubik Mono One",sans-serif;color:#D7261E}
+.hoard .p3 .face ol{margin:1.4cqw 0 0;padding-left:2.4cqw;font:700 1.5cqw/1.35 "Archivo",sans-serif}
+.hoard .ros{width:6cqw;height:6cqw;border-radius:50%;background:radial-gradient(circle,#fff 0 30%,#D7261E 31% 55%,#1F4D3A 56%);position:absolute;right:1.6cqw;bottom:1.6cqw}
+.hoard .stencil{position:absolute;left:5%;bottom:5%;font:2.6cqw "Saira Stencil One",sans-serif;color:#EDE6D6;opacity:.9;display:flex;align-items:center;gap:1.4cqw}
+.hoard .stencil svg{width:5cqw}
+
+/* ===== 7 YEAR ZERO ===== */
+.yz{--s:50%}
+.yz .side{position:absolute;inset:0}
+.yz .ruin{background:radial-gradient(ellipse at 30% 80%,#C8551B,#5a2008 60%,#17130F);color:#ffd9c2}
+.yz .clean{background:#ECEAE4;background-image:linear-gradient(#2B3A5522 1px,transparent 1px),linear-gradient(90deg,#2B3A5522 1px,transparent 1px);background-size:4cqw 4cqw;color:#2B3A55;clip-path:inset(0 0 0 var(--s))}
+.yz .obj{position:absolute;bottom:16%;display:grid;place-items:center;text-align:center}
+.yz .scrn{left:6%;width:28%;height:38%} .yz .tv{left:39%;width:22%;height:30%} .yz .pod{left:68%;width:26%;height:44%}
+.yz .ruin .obj{background:#2a1a12;border:.5cqw solid #17130F;font:3cqw "Saira Stencil One",sans-serif;color:#C8551B}
+.yz .ruin .scrn{transform:skewX(-6deg)} .yz .ruin .pod{transform:rotate(-24deg);transform-origin:bottom left}
+.yz .ruin .static{background:repeating-linear-gradient(0deg,#3a2a20 0 3px,#1a120c 3px 6px)}
+.yz .clean .obj{background:#fff;border:.5cqw solid #2B3A55;font:700 2.4cqw/1.1 "Barlow",sans-serif}
+.yz .clean .pod{background:#F5D300}
+.yz .note{position:absolute;font:1.9cqw/1.15 "Permanent Marker",cursive;background:#fff8c8;color:#1a1a1a;padding:.8cqw 1.2cqw;transform:rotate(-3deg);box-shadow:0 .3cqw .6cqw rgba(0,0,0,.2);max-width:28cqw}
+.yz .n1{right:4%;top:10%} .yz .n2{left:42%;top:8%;transform:rotate(2deg)}
+.yz .yr{position:absolute;top:4%;left:4%;font:4.4cqw "Saira Stencil One",sans-serif;color:#C8551B}
+.yz .yr2{position:absolute;top:4%;right:4%;font:700 4cqw "Barlow",sans-serif;color:#2B3A55}
+.yz .crane{position:absolute;right:30%;top:0;width:.4cqw;height:20%;background:#2B3A55;transform-origin:top;animation:sw 6s ease-in-out infinite alternate}
+.yz .crane::after{content:"";position:absolute;bottom:-2cqw;left:-1cqw;width:2.4cqw;height:2cqw;background:#F5D300}
+@keyframes sw{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+.yz .seam{position:absolute;top:0;bottom:0;left:var(--s);width:.6cqw;margin-left:-.3cqw;background:#fffbe6;box-shadow:0 0 3cqw 1cqw rgba(255,240,180,.8);pointer-events:none;z-index:3}
+.yz input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4;margin:0}
+.yz .rev{position:absolute;bottom:3%;right:3%;z-index:5;font:700 1.8cqw "Barlow",sans-serif;background:#2B3A55;color:#fff;border:0;padding:1cqw 1.8cqw;border-radius:.6cqw;cursor:pointer}
+.yz .cap{position:absolute;bottom:3%;left:3%;z-index:5;font:1.8cqw "Barlow",sans-serif;color:#fff;background:rgba(0,0,0,.45);padding:.6cqw 1.2cqw}
+.yz.ripping .clean{transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)} .yz.ripping .seam{transition:left 1.1s cubic-bezier(.7,0,.2,1)}
+
+/* ===== 8 PLUG ===== */
+.plug{background:#0E0D0C;transition:background .3s}
+.plug .room{position:absolute;left:8%;right:8%;top:8%;height:52%;display:grid;place-items:center;opacity:.12;transition:opacity .25s}
+.plug.lit .room{opacity:1}
+.plug .scene{display:none;width:100%;height:100%;padding:3cqw;border-radius:1cqw}
+.plug .scene.on{display:block}
+.plug .sc1{background:linear-gradient(170deg,rgba(255,255,230,.92),rgba(255,250,210,.7));color:#111;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.plug .sc1 em{font:italic 4.2cqw/1 "Instrument Serif",serif;display:block}
+.plug .sc1 p{font:800 2.3cqw/1.4 "Overpass",sans-serif;margin:1.4cqw 0 0;text-transform:uppercase}
+.plug .sc2{background:#B9C2C9;color:#111}
+.plug .sc2 .big{font:7cqw "Share Tech Mono",monospace;color:#cc2b37}
+.plug .sc2 p{font:800 2.2cqw "Overpass",sans-serif;margin:0}
+.plug .sc3{background:#FFD94A;color:#111}
+.plug .sc3 h4{margin:0;font:800 5cqw/1 "Overpass",sans-serif}
+.plug .sc3 p{font:1.9cqw/1.35 "Archivo",sans-serif;margin:1cqw 0 0;max-width:46ch}
+.plug .meter{position:absolute;top:2.4cqw;left:3cqw;font:2.4cqw "Share Tech Mono",monospace;color:#cc2b37;z-index:3}
+.plug .cap{position:absolute;top:2.4cqw;right:3cqw;font:italic 2.4cqw "Instrument Serif",serif;color:#E6DFCF;z-index:3}
+.plug .lead{position:absolute;left:18%;right:18%;bottom:6%;height:9%;background:#E6DFCF;border-radius:1.2cqw;box-shadow:inset 0 -.6cqw 0 #c9c1ad;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;justify-items:center}
+.plug .lead::after{content:"";position:absolute;right:6%;top:20%;width:5cqw;height:3cqw;border-radius:50%;background:radial-gradient(#5B3B24,transparent 70%)}
+.plug .sock{width:4cqw;height:4cqw;border-radius:.6cqw;background:#cfc7b3;box-shadow:inset 0 .3cqw .4cqw rgba(0,0,0,.25)}
+.plug .plugs{position:absolute;left:18%;right:18%;bottom:17%;display:grid;grid-template-columns:repeat(4,1fr);justify-items:center;z-index:2}
+.plug .plugs button{width:6.4cqw;height:7.4cqw;border-radius:1cqw 1cqw .6cqw .6cqw;border:0;cursor:pointer;font:800 1.4cqw "Overpass",sans-serif;color:#fff;transition:transform .18s cubic-bezier(.6,0,1,1);display:grid;place-items:end center;padding-bottom:.8cqw}
+.plug .plugs button[aria-pressed="true"]{transform:translateY(5.6cqw)}
+.plug .pb1{background:#232323;outline:1px solid #555} .plug .pb2{background:#cc2b37} .plug .pb3{background:#F5D300;color:#111!important}
+.plug .flex{position:absolute;inset:0;pointer-events:none}
+.plug .pilot{animation:pil 2.4s ease-in-out infinite}
+@keyframes pil{50%{opacity:.25}}
+.plug.flick .room{animation:flk .4s steps(4)}
+@keyframes flk{0%{opacity:.2}30%{opacity:1}50%{opacity:.4}100%{opacity:1}}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <svg viewBox="-8 -38 361.65 76" role="img" aria-label="BadCode"><circle cx="30" cy="0" r="27.75" fill="none" stroke="currentColor" stroke-width="4.5"/><path d="M43.38 -12.51A2.97 2.97 0 0 1 46.33 -8.29L42.77 -0.66A2.97 2.97 0 0 1 37.64 -0.21L32.82 -7.11A2.97 2.97 0 0 1 34.99 -11.77Z" fill="#cc2b37"/><g transform="translate(86 15)"><g fill="none" stroke="currentColor" stroke-width="4.5"><circle cx="17.25" cy="-15" r="15"/><line x1="2.25" y1="-46.5" x2="2.25" y2="2.25"/><circle cx="55.65" cy="-15" r="15"/><line x1="70.65" y1="-32.25" x2="70.65" y2="2.25"/><circle cx="94.05" cy="-15" r="15"/><line x1="109.05" y1="-46.5" x2="109.05" y2="2.25"/><path d="M143.6 -4.96A15 15 0 1 1 143.6 -25.04"/><circle cx="204" cy="-15" r="15"/><line x1="219" y1="-46.5" x2="219" y2="2.25"/><path d="M254.22 -5.77A15 15 0 1 1 257.4 -15"/><line x1="227.4" y1="-15" x2="259.65" y2="-15"/></g><circle cx="165.6" cy="-15" r="17.25" fill="#cc2b37"/></g></svg>
+  <h1>Eight ways in to the BadCode homepage</h1>
+  <p class="lede">One page has to say what BadCode is in five seconds: it tells stories, it reads the news, and it is running for government.</p>
+  <ul class="strands" aria-label="The three strands"><li>Stories: four films and four songs</li><li>News bulletin: working name Money For Something</li><li>The BadCode Government: promises Future Proof</li></ul>
+  <p class="how">Ten researchers each searched the web a different way (joke parties, fake broadcasters, teletext, street posters, live counters, and so on). One merge turned their 30 ideas into these eight. Every picture on the right is a rough working toy: tap it, drag it, change the channel. Pick <b>Build this</b>, <b>Borrow bits</b> or <b>Not this</b> on each, leave a note, and tick any small ideas at the bottom you want whichever concept wins to steal. Figures shown are examples, not real numbers.</p>
+</header>
+
+<!-- 1 CHANNEL -->
+<section class="concept" data-id="channel">
+  <div class="words">
+    <span class="rank">Research ranking: 1 of 8</span>
+    <h2>Channel BadCode</h2>
+    <p class="pitch">A boring council page gets hijacked. BadCode takes over the signal, and it turns out to run three channels.</p>
+    <p class="line">“Sorry to interrupt your programme. It ends badly.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#0B0B0C"></span><span style="background:#E0301E"></span><span style="background:#9C9A96"></span><span style="background:#E8A33D"></span><span style="background:#E9E7E1"></span><span style="background:#F5D300"></span></dd>
+      <dt>Type</dt><dd>Share Tech Mono for channel bugs, Oswald for lower thirds, Public Sans on channel 3</dd>
+      <dt>Strands</dt><dd>1 Stories: letterboxed trailer wall. 2 News: the bulletin, ticker and the Nurses £0 counter. 3 Government: the only clean picture, in daylight.</dd>
+      <dt>Motion</dt><dd>Tape damage at 12 frames a second; worse static late at night; channel 3 switches every effect off.</dd>
+      <dt>Steals</dt><dd><a href="https://www.artofthetitle.com/title/the-day-today/">The Day Today titles</a>, <a href="https://buck.co/sandbox/moshing">Buck datamoshing</a>, the 1987 Max Headroom signal hijack</dd>
+      <dt>Risk</dt><dd>VHS nostalgia is crowded and shaders are heavy on cheap phones. Needs live data (today's date, this week's tally) so it isn't a tribute act.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage channel" id="m-channel">
+      <div class="tube">
+        <span class="bug">CH <b id="ch-n">2</b></span><span class="live">● LIVE</span>
+        <div class="ch boring"><h4>Public consultation: your views on local services</h4><i></i><i style="width:70%"></i><i style="width:85%"></i><i style="width:40%"></i></div>
+        <div class="ch host" aria-hidden="true"><svg viewBox="0 0 100 120"><path d="M20 120 C20 80 22 60 50 60 C78 60 80 80 80 120Z" fill="#1d1c1b"/><ellipse cx="50" cy="40" rx="24" ry="30" fill="#f2f0ea"/><rect x="33" y="34" width="34" height="11" rx="5" fill="#2a2522"/><path d="M57 33 L68 36 L62 46 Z" fill="#cc2b37" stroke="#cc2b37" stroke-linejoin="round" stroke-width="2"/><circle cx="41" cy="39.5" r="2" fill="#ddd"/></svg></div>
+        <div class="ch c1"><p>CHANNEL 1: STORIES</p><ol><li>Git Push Origin Master</li><li>Camping</li><li>Karen Will Lead the Revolution</li><li>The Bank Robbery</li></ol></div>
+        <div class="ch c2"><div class="seg"><small>NURSES</small>£0</div><div class="lower">We have seen this one. It doesn't end well.</div><div class="tick"><span>MONEY FOUND THIS WEEK: £4.2BN (EXAMPLE) ◂ FOUND FOR NURSES: £0 ◂ NEXT BULLETIN: TUESDAY ◂ MONEY FOUND THIS WEEK: £4.2BN (EXAMPLE) ◂ FOUND FOR NURSES: £0 ◂ NEXT BULLETIN: TUESDAY ◂ </span></div></div>
+        <div class="ch c3"><h4>Future Proof:<br>building</h4><p>The BadCode Government promises to enact Future Proof: laws that get tested before you have to live in them.</p><div class="haz"></div></div>
+        <canvas class="noise" width="120" height="75"></canvas>
+      </div>
+      <div class="strip" role="group" aria-label="Channels"><button data-ch="1">1 FILMS</button><button data-ch="2" aria-pressed="true">2 NEWS</button><button data-ch="3">3 GOVT</button></div>
+    </div>
+    <div class="stagebar"><span>Change the channel. Number keys 1–3 work too.</span><button class="btn" data-replay="channel">Replay the hijack</button></div>
+  </div>
+</section>
+
+<!-- 2 YEAR ZERO -->
+<section class="concept" data-id="yearzero">
+  <div class="words">
+    <span class="rank">Research ranking: 2 of 8</span>
+    <h2>Year Zero / Year Now</h2>
+    <p class="pitch">The screen is split down the middle: the future that went wrong on the left, the building site where you fix it on the right. You drag the seam.</p>
+    <p class="line">“Left is what happened. Right is what you do instead. Drag.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#C8551B"></span><span style="background:#17130F"></span><span style="background:#ECEAE4"></span><span style="background:#F5D300"></span><span style="background:#2B3A55"></span><span style="background:#cc2b37"></span></dd>
+      <dt>Type</dt><dd>Saira Stencil on the ruined side, Barlow on the clean side, Permanent Marker for the taped notes</dd>
+      <dt>Strands</dt><dd>Three objects that exist in both timelines: a cinema screen (Stories), a TV (News), a podium (Government). Burnt out on the left, working on the right.</dd>
+      <dt>Motion</dt><dd>One rip of daylight on load. A Revert button snaps everything clean, the GPOM git revert as a gesture.</dd>
+      <dt>Steals</dt><dd><a href="https://en.wikipedia.org/wiki/Year_Zero_(game)">Nine Inch Nails, Year Zero</a>, <a href="https://github.com/acaudwell/Gource">Gource</a>, the <a href="https://en.wikipedia.org/wiki/Sator_Square">Sator square</a></dd>
+      <dt>Risk</dt><dd>The clean side can tip into start-up optimism; it must stay handmade (tape, tea rings, marker). Keep the ruin small; GPOM's dark register is already overused.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage yz" id="m-yearzero">
+      <div class="side ruin"><span class="yr">2054</span>
+        <div class="obj scrn static">NO SIGNAL</div><div class="obj tv static"></div><div class="obj pod">VOTE</div></div>
+      <div class="side clean"><span class="yr2">Now</span><div class="crane"></div>
+        <div class="obj scrn">▶ Four films<br>four songs</div><div class="obj tv">News<br>this week</div><div class="obj pod">Future<br>Proof</div>
+        <div class="note n1">Continuous integration: we test the law before you live in it</div>
+        <div class="note n2">Postmortem every Friday. No blame, just fixes</div></div>
+      <div class="seam"></div>
+      <input type="range" min="0" max="100" value="50" aria-label="Move the line between the two timelines" id="yz-r">
+      <span class="cap">This is what you do next</span>
+      <button class="rev">git revert</button>
+    </div>
+    <div class="stagebar"><span>Drag anywhere to move the seam. On a phone it would run top to bottom.</span><button class="btn" data-replay="yearzero">Replay the rip</button></div>
+  </div>
+</section>
+
+<!-- 3 WEDGE -->
+<section class="concept" data-id="wedge">
+  <div class="words">
+    <span class="rank">Research ranking: 3 of 8</span>
+    <h2>The Wedge</h2>
+    <p class="pitch">The logo is already a 1919 poster: a red triangle against a ring. On load the triangle drives through the ring and breaks it into the three strands.</p>
+    <p class="line">“We tried subtle. You were busy.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#111010"></span><span style="background:#D7261E"></span><span style="background:#EDE6D6"></span><span style="background:#8A857C"></span><span style="background:#F2B705"></span></dd>
+      <dt>Type</dt><dd>Big Shoulders Stencil for the slabs, Archivo Black for the ticker, plain sans on the Government slab</dd>
+      <dt>Strands</dt><dd>Stories and News are tilted slabs that clatter in like machine parts. The Government slab is the only flat, upright, official-looking one. That's the joke.</dd>
+      <dt>Motion</dt><dd>One violent move on load, then the slabs slide mechanically. Nothing soft.</dd>
+      <dt>Steals</dt><dd><a href="https://en.wikipedia.org/wiki/Beat_the_Whites_with_the_Red_Wedge">El Lissitzky's Red Wedge</a>, <a href="https://en.wikipedia.org/wiki/Alexander_Rodchenko">Rodchenko</a>, <a href="https://en.wikipedia.org/wiki/Channel_4_idents_and_presentation">Channel 4 idents</a>, the GOV.UK form style</dd>
+      <dt>Risk</dt><dd>Red wedge on black reads as communist to a reader drifting right. Postbox red, no Soviet type, and the very British Government slab sets the tone.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage wedge" id="m-wedge">
+      <svg class="ring" viewBox="-34 -34 68 68" aria-hidden="true"><g fill="none" stroke="#EDE6D6" stroke-width="4.5"><path class="arc a1" d="M-24 -13.9 A27.75 27.75 0 0 1 24 -13.9"/><path class="arc a2" d="M24 -13.9 A27.75 27.75 0 0 1 0 27.75"/><path class="arc a3" d="M0 27.75 A27.75 27.75 0 0 1 -24 -13.9"/></g><path class="tri" d="M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z" fill="#cc2b37"/></svg>
+      <div class="slab s1"><b>Stories</b><small>Git Push Origin Master. Camping. Karen Will Lead the Revolution. The Bank Robbery.</small></div>
+      <div class="slab s2"><span class="tick"><span>NEWS ▲ NURSES: £0 ▲ MONEY FOUND THIS WEEK: £4.2BN (EXAMPLE) ▲ WE HAVE SEEN THIS ONE ▲ NEWS ▲ NURSES: £0 ▲ MONEY FOUND THIS WEEK: £4.2BN (EXAMPLE) ▲ WE HAVE SEEN THIS ONE ▲ </span></span></div>
+      <div class="slab s3"><div class="gov"><div><h3>The BadCode Government</h3><p>Promises to enact Future Proof. Manifesto updated today.</p></div><span class="go">Start now ▸</span></div></div>
+    </div>
+    <div class="stagebar"><span>One hit on load, then quiet.</span><button class="btn" data-replay="wedge">Replay the hit</button></div>
+  </div>
+</section>
+
+<!-- 4 BALLOT -->
+<section class="concept" data-id="ballot">
+  <div class="words">
+    <span class="rank">Research ranking: 4 of 8</span>
+    <h2>X Marks the Spot</h2>
+    <p class="pitch">A ballot paper with three candidates. All of them are BadCode. Already phone-shaped, already British.</p>
+    <p class="line">“Choose carefully. You didn't last time.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#E9E1C9"></span><span style="background:#1A1A1A"></span><span style="background:#4B4B4D"></span><span style="background:#cc2b37"></span><span style="background:#B89B6A"></span></dd>
+      <dt>Type</dt><dd>Libre Caslon small caps for candidates, Courier Prime for the descriptions, Caveat for pencil</dd>
+      <dt>Strands</dt><dd>Identical rows, told apart only by name, description and the emblem box. Future Proof opens as a lit ballot box.</dd>
+      <dt>Motion</dt><dd>The cursor is the pencil on a string. Somebody very fast fills in all three, a stamp says COUNTED, and the pencil is handed to you. After you vote: “You voted BadCode. So did everyone.”</dd>
+      <dt>Steals</dt><dd><a href="https://www.loonyparty.com/">Monster Raving Loony Party</a>, <a href="https://en.wikipedia.org/wiki/Gnarr">Jón Gnarr's Best Party</a>, <a href="https://www.thejuicemedia.com/">The Juice Media</a></dd>
+      <dt>Risk</dt><dd>Electoral law: no real constituencies, no Electoral Commission wording, a printed “not a real election” line. Equal rows suit three strands today, less so if one grows.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage ballot" id="m-ballot">
+      <div class="paper">
+        <span class="pencil">vote here →</span>
+        <div class="bh"><span>BALLOT PAPER</span><span>No. 000100</span></div>
+        <div class="row"><span class="n">1</span><span class="nm">BadCode, Stories<small>Films and songs. Four so far.</small></span><span class="em">▶</span><button class="box" aria-label="Mark Stories" aria-pressed="false"><svg viewBox="0 0 50 50"><path d="M8 8 L42 42 M42 8 L8 42"/></svg></button></div>
+        <div class="row"><span class="n">2</span><span class="nm">BadCode, Money For Something<small>The news. Weekly, regrettably.</small></span><span class="em">£0</span><button class="box" aria-label="Mark News" aria-pressed="false"><svg viewBox="0 0 50 50"><path d="M8 8 L42 42 M42 8 L8 42"/></svg></button></div>
+        <div class="row"><span class="n">3</span><span class="nm">BadCode, The Government<small>Promises to enact Future Proof.</small></span><span class="em" style="color:#cc2b37">▲</span><button class="box" aria-label="Mark Government" aria-pressed="false"><svg viewBox="0 0 50 50"><path d="M8 8 L42 42 M42 8 L8 42"/></svg></button></div>
+        <div class="foot">Not a real election. Yet.</div>
+        <span class="stamp">COUNTED</span>
+      </div>
+    </div>
+    <div class="stagebar"><span>Tap a box to mark it yourself.</span><button class="btn" data-replay="ballot">Replay the count</button></div>
+  </div>
+</section>
+
+<!-- 5 PLUG -->
+<section class="concept" data-id="plug">
+  <div class="words">
+    <span class="rank">Research ranking: 5 of 8</span>
+    <h2>The Plug</h2>
+    <p class="pitch">A scuffed extension lead on a prepayment meter. Plug a strand in and the room powers up as it.</p>
+    <p class="line">“The future is on a meter. Plug something in.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#E6DFCF"></span><span style="background:#0E0D0C"></span><span style="background:#cc2b37"></span><span style="background:#232323"></span><span style="background:#B9C2C9"></span><span style="background:#FFD94A"></span></dd>
+      <dt>Type</dt><dd>Overpass heavy for moulded labels, a seven-segment face for the meter, Instrument Serif italics for deadpan captions</dd>
+      <dt>Strands</dt><dd>Black flex to a projector (Stories). Red flex to a studio monitor (News). Hi-vis flex to a building-site floodlight (Government): the only warm daylight.</dd>
+      <dt>Motion</dt><dd>A mains thunk and a bulb flicker. Pull the plug and the room goes dark. The meter ticks down as a joke and never blocks anything.</dd>
+      <dt>Steals</dt><dd><a href="https://www.creativebloq.com/news/3d-car-portfolio">Bruno Simon's one-verb site</a>, <a href="https://discourse.threejs.org/t/my-portfolio-is-a-retro-workshop-desk-you-can-actually-use/95359">the usable workshop desk</a></dd>
+      <dt>Risk</dt><dd>The joke must aim at whoever set the tariff, never at the person on the meter. Lives or dies on art direction; a stock 3D model kills it.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage plug" id="m-plug">
+      <span class="meter">METER £<span id="pl-m">0.43</span></span><span class="cap">Plug something in.</span>
+      <div class="room">
+        <div class="scene sc1"><em>Now showing</em><p>Git Push Origin Master<br>Camping<br>Karen Will Lead the Revolution<br>The Bank Robbery</p></div>
+        <div class="scene sc2"><p>NURSES</p><div class="big">£0</div><p>Money found this week: £4.2bn (example)</p></div>
+        <div class="scene sc3"><h4>Future Proof</h4><p>The BadCode Government promises to run the country like working software: small parts, tested before release, fixed in public when they break.</p></div>
+      </div>
+      <svg class="flex" viewBox="0 0 160 100" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke-width="1.1"><path d="M53 72 C50 50 80 40 80 66" stroke="#444"/><path d="M80 72 C80 50 80 40 80 66" stroke="#7a1d24"/><path d="M107 72 C110 50 80 40 80 66" stroke="#b39b00"/></g><circle class="pilot" cx="80" cy="90" r="1.4" fill="#cc2b37"/></svg>
+      <div class="plugs"><button class="pb1" data-pl="1" aria-pressed="false">FILM</button><button class="pb2" data-pl="2" aria-pressed="false">NEWS</button><button class="pb3" data-pl="3" aria-pressed="false">GOVT</button></div>
+      <div class="lead"><span class="sock"></span><span class="sock"></span><span class="sock"></span><span class="sock"></span></div>
+    </div>
+    <div class="stagebar"><span>Tap a plug. Tap again to pull it out.</span><span></span></div>
+  </div>
+</section>
+
+<!-- 6 HOARDING -->
+<section class="concept" data-id="hoarding">
+  <div class="words">
+    <span class="rank">Research ranking: 6 of 8</span>
+    <h2>The Hoarding</h2>
+    <p class="pitch">A boarded-up high-street shop. Someone else's promises are pasted on it; BadCode's three posters go up on top.</p>
+    <p class="line">“Previously: someone else's promises.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#5A3A32"></span><span style="background:#C9C5BC"></span><span style="background:#1C1C1C"></span><span style="background:#cc2b37"></span><span style="background:#F3C613"></span><span style="background:#1F4D3A"></span></dd>
+      <dt>Type</dt><dd>Anton for the tabloid, Bodoni italic for the cinema poster, Rubik Mono One for the leaflet, typewriter for the small print</dd>
+      <dt>Strands</dt><dd>Each strand is a different kind of poster on different paper: a cinema one-sheet, a tabloid front page, a council-style party leaflet. Peel a corner to see the slogan it answers.</dd>
+      <dt>Motion</dt><dd>A paste roller, posters unrolling wet, the third one crooked, corners that peel.</dd>
+      <dt>Steals</dt><dd><a href="https://en.wikipedia.org/wiki/Die_PARTEI">Die PARTEI</a>, <a href="https://history.blog.gov.uk/2014/06/27/keep-calm-and-carry-on-the-compromise-behind-the-slogan">the 1939 Ministry of Information trio</a>, <a href="https://barnbrook.net/work/dismaland-cruel-designs/">Barnbrook's Dismaland</a></dd>
+      <dt>Risk</dt><dd>Street-art grunge is the most copied look here; it needs real photographed paste and staples. Under-posters must be invented slogans, no real faces or party layouts.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage hoard" id="m-hoarding">
+      <button class="p p1" aria-label="Peel the stories poster"><span class="under"><span><b>Previously</b>A brighter future for hard-working families.</span></span><span class="face"><em>Four films from a future that already happened</em><ul><li>Git Push Origin Master</li><li>Camping</li><li>Karen</li><li>The Bank Robbery</li></ul></span></button>
+      <button class="p p2" aria-label="Peel the news poster"><span class="under"><span><b>Previously</b>We must all live within our means.</span></span><span class="face"><div class="mast">MONEY FOR SOMETHING</div><div class="hl">Nurses get £0</div><div class="bx">MONEY FOUND THIS WEEK: £4.2BN (example)</div></span></button>
+      <button class="p p3" aria-label="Peel the government poster"><span class="under"><span><b>Previously</b>Tough choices for a stronger tomorrow.</span></span><span class="face"><h4>Vote Future Proof</h4><ol><li>Test every law before you live in it</li><li>Publish the postmortem</li><li>Name who it leaves out</li></ol><span class="ros"></span></span></button>
+      <div class="stencil"><svg viewBox="-34 -34 68 68"><circle r="27.75" fill="none" stroke="#EDE6D6" stroke-width="4.5"/><path d="M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z" fill="#cc2b37"/></svg>BADCODE. ISSUED FROM THE FUTURE.</div>
+    </div>
+    <div class="stagebar"><span>Tap a poster to peel it.</span><button class="btn" data-replay="hoarding">Paste them up again</button></div>
+  </div>
+</section>
+
+<!-- 7 DEPARTURES -->
+<section class="concept" data-id="departures">
+  <div class="words">
+    <span class="rank">Research ranking: 7 of 8</span>
+    <h2>Departures</h2>
+    <p class="pitch">A station departures board. Every service to the future is delayed, and BadCode knows why.</p>
+    <p class="line">“All services to the future are delayed. We've seen the cause. It's not the leaves.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#121212"></span><span style="background:#FFB000"></span><span style="background:#EFEBE2"></span><span style="background:#D7261E"></span><span style="background:#3A3A3C"></span></dd>
+      <dt>Type</dt><dd>A dot-matrix or flap face for the board, Barlow Condensed for platform labels, Public Sans inside</dd>
+      <dt>Strands</dt><dd>Platform 1 Stories, platform 2 News tallies, platform 3 the manifesto, struck through when the real cabinet contradicts it.</dd>
+      <dt>Motion</dt><dd>Hundreds of flaps clatter and settle. Stories clack slowly, News never stops, Government lands with one thunk. The station clock is the logo, with the triangle as the second hand.</dd>
+      <dt>Steals</dt><dd><a href="https://github.com/c-hinck10/splitflap-js">splitflap-js</a>, <a href="https://www.creativeapplications.net/project/signal-to-noise-by-labau-512-mechanical-split-flaps-and-the-noise-of-data">LAb[au] Signal to Noise</a>, <a href="https://www.us-debt-clock.com/">the debt clock</a></dd>
+      <dt>Risk</dt><dd>Small text, no room for the films' pictures. Rows must open into rich pages or it's a one-visit novelty.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage dep" id="m-departures">
+      <div class="head"><span>DEPARTURES</span><span class="clock"><svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="27.75" fill="none" stroke="#EFEBE2" stroke-width="4.5"/><g id="dep-hand"><path d="M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z" fill="#D7261E"/></g></svg><span id="dep-t">--:--</span></span></div>
+      <table aria-label="Example departures"><tbody id="dep-b"></tbody></table>
+      <div class="next"><span>NEXT BULLETIN</span><span id="dep-n">00:03:12</span></div>
+    </div>
+    <div class="stagebar"><span>Example figures. The countdown is a mock.</span><button class="btn" data-replay="departures">Flip the board again</button></div>
+  </div>
+</section>
+
+<!-- 8 P100 -->
+<section class="concept" data-id="p100">
+  <div class="words">
+    <span class="rank">Research ranking: 8 of 8</span>
+    <h2>P100</h2>
+    <p class="pitch">BadCode is the last teletext service still running. You get around by page number.</p>
+    <p class="line">“P100. The only service still running. Ask yourself why.”</p>
+    <details><summary>Colour, type, strands, sources, risk</summary><dl>
+      <dt>Colour</dt><dd class="sw"><span style="background:#000"></span><span style="background:#ff0000"></span><span style="background:#ffff00"></span><span style="background:#00ff00"></span><span style="background:#ff00ff"></span><span style="background:#fff"></span></dd>
+      <dt>Type</dt><dd>Bedstead (a free teletext font) for the real thing, VT323 here as a stand-in; Atkinson Hyperlegible for long reads</dd>
+      <dt>Strands</dt><dd>P200 Stories as a TV guide, P300 News headlines, P400 the manifesto with “Cabinet said / BadCode says”. P888, Future Proof, is the only page that breaks into daylight.</dd>
+      <dt>Motion</dt><dd>The page draws line by line. Subpages cycle. Flash is kept for the tally.</dd>
+      <dt>Steals</dt><dd><a href="https://www.raspberrypi.com/news/keeping-ceefax-alive-with-nms-ceefax-the-magpi-118/">NMS Ceefax</a>, <a href="https://timpotter.dev/projects/ceefax/">Tim Potter's Ceefax</a>, <a href="https://wepresent.wetransfer.com/story/teletext-creative-legacy/">Craig Oldham on teletext</a></dd>
+      <dt>Risk</dt><dd>Skews over 40 and can read as nostalgia, not a warning. The films get no picture until a page opens. The research suggests it as a hidden page inside another concept.</dd>
+    </dl></details>
+    <div class="vote" data-vote></div>
+  </div>
+  <div class="stagewrap">
+    <div class="stage tele" id="m-p100" tabindex="0" aria-label="Teletext demo. Type a page number.">
+      <div class="scr" id="tt-s"></div>
+      <canvas id="tt-c" width="24" height="24" aria-hidden="true"></canvas>
+      <div class="fast"><button style="background:#ff0000;color:#fff" data-pg="300">NEWS</button><button style="background:#00ff00" data-pg="888">FUTURE</button><button style="background:#ffff00" data-pg="400">GOVT</button><button style="background:#fff" data-pg="200">STORIES</button></div>
+    </div>
+    <div class="stagebar"><span>Tap the coloured keys, or click the screen and type 100, 200, 300, 400 or 888.</span><span></span></div>
+  </div>
+</section>
+
+<section class="grafts">
+  <h2 class="sec">Small moves any winner can borrow</h2>
+  <p class="fine">Tick the ones you want, whichever concept wins.</p>
+  <ul id="grafts"></ul>
+</section>
+
+<section>
+  <h2 class="sec">What happens next</h2>
+  <p class="fine">Pick one or two concepts to build properly (with real stills, the real logo animation and live figures) as a homepage you can open on your phone. The research behind this page is in the repo at design/2026-11-04-homepage/ (concepts.md and research.json). The logo is fixed and not up for change: every mock uses its real shape and red.</p>
+</section>
+</div>
+
+<script>
+(function(){
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const wait = ms => new Promise(r=>setTimeout(r,RM?0:ms));
+const minis = {};
+
+/* CHANNEL */
+(function(){
+  const st=$('#m-channel'), chs=$$('.ch',st), cv=$('canvas.noise',st), cx=cv.getContext('2d');
+  let noiseOn=false, cur=2;
+  function noise(){ if(!noiseOn) return; const d=cx.createImageData(120,75); for(let i=0;i<d.data.length;i+=4){const v=Math.random()*255|0; d.data[i]=d.data[i+1]=d.data[i+2]=v; d.data[i+3]=255;} cx.putImageData(d,0,0); setTimeout(noise,83); }
+  function show(cls){ chs.forEach(c=>c.classList.toggle('on',c.classList.contains(cls))); }
+  async function burst(ms){ st.classList.add('static'); noiseOn=true; noise(); await wait(ms); noiseOn=false; st.classList.remove('static'); }
+  async function tune(n){ cur=n; $$('.strip button',st).forEach(b=>b.setAttribute('aria-pressed',b.dataset.ch==n)); $('#ch-n').textContent=n; await burst(220); show('c'+n); st.classList.toggle('clean',n==3); }
+  minis.channel = async ()=>{ st.classList.remove('clean'); show('boring'); await wait(1500); st.classList.add('tear'); await burst(500); st.classList.remove('tear'); show('host'); await wait(1000); await tune(2); };
+  $$('.strip button',st).forEach(b=>b.onclick=()=>tune(+b.dataset.ch));
+  st.tabIndex=0; st.addEventListener('keydown',e=>{ if('123'.includes(e.key)&&e.key) tune(+e.key); });
+  show('c2');
+})();
+
+/* YEAR ZERO */
+(function(){
+  const st=$('#m-yearzero'), r=$('#yz-r');
+  const set=v=>{ st.style.setProperty('--s',v+'%'); r.value=v; };
+  r.oninput=()=>{ st.classList.remove('ripping'); set(r.value); };
+  $('.rev',st).onclick=()=>{ st.classList.add('ripping'); set(0); };
+  minis.yearzero = async ()=>{ st.classList.remove('ripping'); set(100); await wait(700); st.classList.add('ripping'); set(50); };
+})();
+
+/* WEDGE */
+(function(){
+  const st=$('#m-wedge');
+  minis.wedge = async ()=>{ st.classList.remove('split','hit'); st.classList.add('intro'); await wait(900); st.classList.add('hit'); await wait(350); st.classList.add('split'); await wait(250); st.classList.remove('intro','hit'); await wait(600); st.classList.remove('split'); };
+})();
+
+/* BALLOT */
+(function(){
+  const st=$('#m-ballot'), boxes=$$('.box',st);
+  const mark=(b,on)=>{ b.classList.toggle('x',on); b.setAttribute('aria-pressed',on); };
+  boxes.forEach(b=>b.onclick=()=>{ mark(b,!b.classList.contains('x')); st.classList.remove('stamped'); });
+  minis.ballot = async ()=>{ st.classList.remove('stamped'); boxes.forEach(b=>mark(b,false)); await wait(900); for(const b of boxes){ mark(b,true); await wait(260);} await wait(300); st.classList.add('stamped'); };
+  boxes.forEach(b=>mark(b,true)); st.classList.add('stamped');
+})();
+
+/* PLUG */
+(function(){
+  const st=$('#m-plug'), btns=$$('.plugs button',st), sc=$$('.scene',st), m=$('#pl-m');
+  btns.forEach(b=>b.onclick=()=>{ const on=b.getAttribute('aria-pressed')!=='true'; btns.forEach(x=>x.setAttribute('aria-pressed',false)); sc.forEach(s=>s.classList.remove('on'));
+    if(on){ b.setAttribute('aria-pressed',true); sc[+b.dataset.pl-1].classList.add('on'); st.classList.add('lit'); st.classList.remove('flick'); void st.offsetWidth; st.classList.add('flick'); } else st.classList.remove('lit'); });
+  let pence=43; setInterval(()=>{ pence = pence<=1?43:pence-1; m.textContent=(pence/100).toFixed(2); },3000);
+  sc[2].classList.add('on');
+})();
+
+/* HOARDING */
+(function(){
+  const st=$('#m-hoarding'), ps=$$('.p',st);
+  ps.forEach(p=>p.onclick=()=>p.classList.toggle('peeled'));
+  minis.hoarding = async ()=>{ ps.forEach(p=>{ p.classList.remove('peeled'); p.style.transform='scaleY(0)'; }); await wait(350); for(const p of ps){ p.style.transform=''; await wait(380);} };
+})();
+
+/* DEPARTURES */
+(function(){
+  const rows=[['1','GIT PUSH ORIGIN MASTER','ON TIME',''],['1','CAMPING','ON TIME',''],['1','KAREN WILL LEAD THE REV','ON TIME',''],['1','THE BANK ROBBERY','ON TIME',''],['2','NURSES','£0','p2'],['2','MONEY FOUND THIS WEEK','£4.2BN','p2'],['3','MANIFESTO','14 CHANGES','p3'],['3','FUTURE PROOF','BUILDING','p3']];
+  const W=23, CH='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789£.';
+  const tb=$('#dep-b');
+  tb.innerHTML=rows.map(r=>`<tr class="${r[3]}"><td class="pl">${r[0]}</td><td>${[...r[1].padEnd(W)].map(c=>`<span class="f" data-c="${c}">${c===' '?'&nbsp;':c}</span>`).join('')}</td><td class="st">${r[2]}</td></tr>`).join('');
+  const cells=$$('.f',tb);
+  minis.departures = async ()=>{ if(RM) return; const t0=performance.now();
+    cells.forEach((c,i)=>{ c.dataset.end = 400 + (i%W)*45 + Math.floor(i/W)*60; });
+    const step=()=>{ const t=performance.now()-t0; let busy=false;
+      cells.forEach(c=>{ if(t<+c.dataset.end){ busy=true; c.textContent=CH[Math.random()*CH.length|0]; } else c.innerHTML = c.dataset.c===' '?'&nbsp;':c.dataset.c; });
+      if(busy) setTimeout(step,55); };
+    step(); };
+  const hand=$('#dep-hand'), tt=$('#dep-t'), nx=$('#dep-n'); let left=192;
+  setInterval(()=>{ const d=new Date(); hand.setAttribute('transform',`rotate(${d.getSeconds()*6})`); tt.textContent=d.toTimeString().slice(0,5); left=left<=0?192:left-1; nx.textContent='00:'+String(left/60|0).padStart(2,'0')+':'+String(left%60).padStart(2,'0'); },1000);
+})();
+
+/* P100 */
+(function(){
+  const st=$('#m-p100'), scr=$('#tt-s'), cv=$('#tt-c'), cx=cv.getContext('2d');
+  // the mark as mosaic: ring plus triangle drawn at 24px, shown pixelated
+  function mark(on){ cx.clearRect(0,0,24,24); cx.strokeStyle='#fff'; cx.lineWidth=2; cx.beginPath(); cx.arc(12,12,10,0,7); cx.stroke(); if(on){ cx.fillStyle='#ff0000'; cx.beginPath(); cx.moveTo(14,6); cx.lineTo(18,8); cx.lineTo(15,12); cx.closePath(); cx.fill(); } }
+  let blink=true; setInterval(()=>{ blink=!blink; mark(blink||st.dataset.pg!=='100'); },700); mark(true);
+  const d=new Date(), stamp=d.toDateString().slice(0,10)+' '+d.toTimeString().slice(0,5);
+  const H=p=>[`<span class="w">P${p}  </span><span class="y">BADCODE</span><span class="w">  ${stamp}</span>`,''];
+  const P={
+    100:[...H(100),'<span class="bgb y"> THE LAST SERVICE STILL RUNNING     </span>','','<span class="w"> STORIES ................. </span><span class="y">200</span>','<span class="w"> NEWS .................... </span><span class="y">300</span>','<span class="w"> GOVERNMENT .............. </span><span class="y">400</span>','<span class="g"> THE BIT THAT WORKS ...... 888</span>','','<span class="r fl"> NURSES: £0</span>','',' <span class="m">We have seen how this ends.</span>'],
+    200:[...H(200),'<span class="bgr"> STORIES          FILM + SONG EACH  </span>','','<span class="y"> GIT PUSH ORIGIN MASTER</span>','<span class="w">   A machine pushes the future</span>','<span class="y"> CAMPING</span>','<span class="w">   A banker goes back to nature</span>','<span class="y"> KAREN WILL LEAD THE REVOLUTION</span>','<span class="y"> THE BANK ROBBERY</span>','','<span class="g"> 8 VIDEOS ON YOUTUBE       1/1</span>'],
+    300:[...H(300),'<span class="bgr"> MONEY FOR SOMETHING  (WORKING NAME)</span>','','<span class="w"> NURSES ................... </span><span class="r fl">£0</span>','<span class="w"> MONEY FOUND THIS WEEK .. </span><span class="y">£4.2BN</span>','<span class="w">                         (example)</span>','','<span class="y"> NEXT BULLETIN: TUESDAY</span>','',' <span class="m">I have already seen it. It is worse.</span>'],
+    400:[...H(400),'<span class="bgb y"> THE BADCODE GOVERNMENT  MANIFESTO </span>','<span class="w"> LAST AMENDED 07:12 TODAY</span>','','<span class="r"> CABINET SAID</span><span class="w">     |</span><span class="g"> BADCODE SAYS</span>','<span class="w"> "No money for  | It was found</span>','<span class="w">  that."        | on Tuesday.</span>','','<span class="w"> PLEDGE 1: Test every law first</span>','<span class="w"> PLEDGE 2: Publish the postmortem</span>','',' <span class="y">Promises to enact Future Proof 888</span>'],
+    888:[`P888  FUTURE PROOF   ${stamp}`,'','  THE FIRST LIT PLACE IN BADCODE','','  1 Composition over inheritance','  2 Continuous integration','  3 Data-driven decisions','','  Write one rule. Test it on','  someone it affects.','','  100 back to the index'],
+  };
+  let token=0;
+  async function go(p){ if(!P[p]) return; st.dataset.pg=p; const my=++token; st.classList.toggle('day',p=='888'); scr.innerHTML=''; for(const l of P[p]){ if(my!==token) return; const div=document.createElement('div'); div.innerHTML=l||'&nbsp;'; scr.appendChild(div); await wait(60);} }
+  $$('.fast button',st).forEach(b=>b.onclick=()=>go(b.dataset.pg));
+  let typed=''; st.addEventListener('keydown',e=>{ if(/\d/.test(e.key)){ typed=(typed+e.key).slice(-3); if(typed.length===3){ go(typed); typed=''; } } });
+  minis.p100 = ()=>go(100);
+  go(100);
+})();
+
+/* replay buttons + play once when scrolled into view */
+$$('[data-replay]').forEach(b=>b.onclick=()=>minis[b.dataset.replay]&&minis[b.dataset.replay]());
+const seen=new Set();
+const io=new IntersectionObserver(es=>es.forEach(e=>{ const id=e.target.id.slice(2); if(e.isIntersecting && !seen.has(id)){ seen.add(id); minis[id]&&minis[id](); } }),{threshold:.5});
+$$('.stage').forEach(s=>io.observe(s));
+
+/* ===== votes (shared, one document per person) ===== */
+const GRAFTS=[
+ ['eye','The eye follows you','The triangle turns toward your cursor or finger, and the ring narrows when you get close. Never a webcam.'],
+ ['footnotes','Honest footnotes on every number','Each counter starts from the latest real figure, with its source and date in small print.'],
+ ['hansard','Receipts link to Hansard','Every Government line links to the speech it answers, on TheyWorkForYou.'],
+ ['tworeds','A bad number and a good number','One per strand, like the Climate Clock: “days since promise” beside “lines filed today”.'],
+ ['ugly','One deliberately cheap page','The Government sign-up looks like a council leaflet, beside two slick strands.'],
+ ['pages','Page numbers everywhere','Typing 100, 200 or 300 anywhere jumps strands (from P100).'],
+ ['404','A 404 from the future','“We saw you'd try this address.”'],
+ ['imprint','“Promoted by BadCode, on behalf of the future”','A small election-leaflet imprint at the foot of every page.'],
+ ['sticker','The triangle as a sticker','Slapped on photos and corners with deadpan captions. Cheaper and funnier than a hero image.'],
+ ['light','The light changes by strand','Night cinema, studio strip lights, then daylight for Future Proof. Daylight is always last.'],
+ ['codes','Catalogue numbers','BC-01, BC-02, BC-03, so the strands feel like sub-labels of one parent.'],
+ ['endcard','A code on every YouTube end card','It unlocks something on the homepage, like the Year Zero trail.'],
+ ['idle','It picks for you','After a few idle seconds: “You were going to click that.”'],
+];
+const ul=$('#grafts');
+ul.innerHTML=GRAFTS.map(g=>`<li><label><input type="checkbox" id="g-${g[0]}" data-g="${g[0]}"><span><b>${g[1]}</b>${g[2]}<span class="who" id="gw-${g[0]}"></span></span></label></li>`).join('');
+
+const PICKS=[['build','Build this'],['borrow','Borrow bits'],['no','Not this']];
+$$('[data-vote]').forEach(v=>{ const id=v.closest('.concept').dataset.id;
+  v.innerHTML=`<div class="btns" role="group" aria-label="Your pick">${PICKS.map(p=>`<button data-p="${p[0]}" aria-pressed="false">${p[1]}</button>`).join('')}</div>
+  <textarea id="note-${id}" placeholder="A note on this one (optional)"></textarea>
+  <p class="tally" id="t-${id}">Picks will show here once someone votes.</p><p class="status" id="s-${id}"></p>`; });
+
+let mine={concepts:{},grafts:{}}, ref=null, user=null, everyone=[];
+function paintMine(){
+  $$('.concept').forEach(c=>{ const id=c.dataset.id, m=mine.concepts[id]||{};
+    $$('[data-p]',c).forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===m.pick));
+    const ta=$('#note-'+id); if(document.activeElement!==ta) ta.value=m.note||''; });
+  $$('[data-g]').forEach(i=>i.checked=!!mine.grafts[i.dataset.g]);
+}
+async function paintAll(){
+  const ids=everyone.map(e=>e.id); let ps={}; try{ ps=user? await user.profiles(ids):{}; }catch(e){}
+  const nm=id=>(ps[id]&&ps[id].name)||'Someone';
+  $$('.concept').forEach(c=>{ const id=c.dataset.id; const bits=[];
+    everyone.forEach(e=>{ const m=(e.d.concepts||{})[id]; if(m&&m.pick){ const lab=PICKS.find(p=>p[0]===m.pick)[1]; bits.push(`${nm(e.id)}: ${lab}${m.note?` (“${m.note}”)`:''}`);} });
+    const t=$('#t-'+id); t.textContent = bits.length? bits.join('. ') : 'No picks yet.'; });
+  GRAFTS.forEach(g=>{ const who=everyone.filter(e=>(e.d.grafts||{})[g[0]]).map(e=>nm(e.id)); $('#gw-'+g[0]).textContent = who.length? 'Ticked by '+who.join(', '):''; });
+}
+let saving=Promise.resolve();
+function save(id){ if(!ref){ if(id) $('#s-'+id).textContent='Picks save when you open this page signed in to claude.ai.'; return; }
+  mine.updated=new Date().toISOString();
+  saving=saving.then(()=>ref.set(mine)).then(()=>{ if(id) $('#s-'+id).textContent='Saved.'; }).catch(e=>{ if(id) $('#s-'+id).textContent = e&&e.code==='permission_denied' ? 'You can view this page but not vote on it.' : 'Could not save. Try again in a moment.'; }); }
+$$('.concept').forEach(c=>{ const id=c.dataset.id;
+  $$('[data-p]',c).forEach(b=>b.onclick=()=>{ const m=mine.concepts[id]||(mine.concepts[id]={}); m.pick = m.pick===b.dataset.p? null : b.dataset.p; paintMine(); save(id); });
+  let tmr; $('#note-'+id).oninput=e=>{ const m=mine.concepts[id]||(mine.concepts[id]={}); m.note=e.target.value; clearTimeout(tmr); tmr=setTimeout(()=>save(id),700); };
+});
+$$('[data-g]').forEach(i=>i.onchange=()=>{ mine.grafts[i.dataset.g]=i.checked; save(); });
+
+(async()=>{
+  try{
+    const c=window.claude; if(!c||!c.use) return;
+    const [db,u]=await Promise.all([c.use('db'),c.use('user')]); user=u; if(!db||!u) return;
+    const uid=await u.id(); if(!uid) return;
+    ref=db.doc('votes/'+uid);
+    db.collection('votes').onSnapshot(snap=>{ everyone=snap.docs.filter(d=>d.exists).map(d=>({id:d.id,d:d.data()||{}}));
+      const me=everyone.find(e=>e.id===uid); if(me){ mine={concepts:me.d.concepts||{},grafts:me.d.grafts||{}}; paintMine(); } paintAll(); });
+  }catch(e){}
+})();
+})();
+</script>

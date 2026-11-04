@@ -1,0 +1,846 @@
+[
+ {
+  "lens": "Spoof and fringe political parties: how a joke party looks official enough to be funny. The search results said little about visuals. The design moves below come from what the sources say plus my own knowledge of these parties, and a few are extrapolations, marked as such.",
+  "references": [
+   {
+    "name": "Official Monster Raving Loony Party",
+    "url": "https://www.loonyparty.com/",
+    "what": "UK's longest-running spoof party. Yellow and black colours, a rosette as its emblem, and a legal ballot-paper name. The 2015 manifesto had 98 proposals, one of them to tick rather than cross the ballot.",
+    "steal": "Treat the rosette and the ballot-paper name as the logo. Only the party's yellow and black are confirmed by the sources. Rosettes, numbered pledges, and a deadpan 'Official' prefix on everything are the real-politics furniture that makes the joke work."
+   },
+   {
+    "name": "Count Binface 2024 campaign site (designed by Andy Clarke)",
+    "url": "https://stuffandnonsense.co.uk/blog/project-companion-count-binface/",
+    "what": "A Squarespace campaign site built in under a week. It uses an original illustrated portrait, bold colour, expressive display type and a rocket graphic in the footer. The key calls to action were moved to the top.",
+    "steal": "A joke party can have a rigorous, usable site if the character sits in the type and the illustration. Pair one absurd mascot portrait with strong call-to-action hierarchy."
+   },
+   {
+    "name": "Count Binface case study",
+    "url": "https://stuffandnonsense.co.uk/portfolio-count-binface",
+    "what": "Designer's write-up of the palette, logo mark and new graphic portrait.",
+    "steal": "One flat colour palette, a bold logo mark and a graphic portrait of the figurehead, used as a campaign kit rather than a one-off."
+   },
+   {
+    "name": "The Juice Media: Honest Government Ads",
+    "url": "https://www.thejuicemedia.com/",
+    "what": "Parody public-service announcements spoken in the government's own voice. Their descriptions use lines like 'The Government has made an ad about the state of the world', with a trademark symbol. Some ads are made for the UK, US and Brazil.",
+    "steal": "Use the official-announcement register with the honesty switched on, and put a TM mark on absurd things. The bureaucratic voice saying the quiet part is the same move as BadCode's narrator."
+   },
+   {
+    "name": "Die PARTEI (Germany)",
+    "url": "https://en.wikipedia.org/wiki/Die_PARTEI",
+    "what": "Satirical party whose posters copy the layout of rival parties' posters and turn their issues into over-literal demands. Its 2013 slogan was 'Inhalte \u00fcberwinden' ('overcome content').",
+    "steal": "Copy real party layouts and swap in the logical conclusion. The BadCode Government could answer each real cabinet statement in the same poster template, with receipts."
+   },
+   {
+    "name": "Die PARTEI, official leaflet (PDF)",
+    "url": "https://www.die-partei.de/documents/Flugblatt1.pdf",
+    "what": "The party's own printed leaflet, an example of its house format.",
+    "steal": "A dense, officious leaflet format with a number for every demand. Unconfirmed: I did not read the PDF, so check it before relying on it."
+   },
+   {
+    "name": "Best Party, Reykjavik (Jon Gnarr)",
+    "url": "https://en.wikipedia.org/wiki/Gnarr",
+    "what": "Won Reykjavik's 2010 council election. Its campaign video reused Tina Turner's 'The Best'. It built a deliberately ugly website, and its candidates were celebrities.",
+    "steal": "A deliberate anti-polish moment. BadCode could use one jarringly lo-fi, council-leaflet-ugly page for the party strand against two slick ones, with a pop-song hook."
+   },
+   {
+    "name": "Who Else Were You Going to Vote for? (Yale Globalist)",
+    "url": "https://globalist.yale.edu/in-the-magazine/theme/who-else-were-you-going-to-vote-for",
+    "what": "Article on the Best Party's campaign, with a box-style party graphic of Gnarr.",
+    "steal": "The straight-faced, who-else-were-you-going-to-vote-for tone is the slogan register for a reader who distrusts every party."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "THE BALLOT PAPER",
+    "concept": "The homepage is a real-looking UK ballot paper: buff-brown card, a thick black border, and a numbered column of candidates with a box beside each. The three candidates are the three strands. 'BADCODE STORIES', 'BADCODE NEWS' and 'THE BADCODE GOVERNMENT' sit in a typewriter-and-grotesque county-council face, each with a tiny emblem at the right: the ring and triangle, the eyepatch balaclava, and a rosette. The party row carries the full ballot-style wording ('Stories (Films and Songs)', 'News (Weekly, Regrettably)'). Pencil on a string hangs at the side. Clicking a box draws a hand-pencilled X and the paper slides into that strand's home. The logo's red triangle is the one saturated colour on the page.",
+    "strands": "Each strand is one ballot row with its own emblem and a one-line descriptor. Stories gets a film-strip glyph and the four titles as sub-candidates, News gets the eyepatch face and a live tally ('Nurses: \u00a30'), and the Government gets the rosette and 'promises: Future Proof'. They are told apart by emblem, not colour, as on real ballots. Under the paper sits a small-print strip: 'Vote early. We have seen how it ends.'",
+    "hero": "In the first 5 seconds a polling booth curtain-card drops and a pencil on a string swings. A big red X is already pre-marked in one box and then rubs out, as if the page voted for you and thought better of it. A voice-over line from the future types out: 'Choose carefully. You didn't last time.'",
+    "reader_fit": "Everyone knows the ballot, so no explanation is needed. It speaks the language of voting without talking down, and it recasts the reader as someone whose vote mattered and was ignored. It is plain paper, with no tech sheen to read as crypto.",
+    "risk": "A ballot clone can read like a real election instruction, and electoral law forbids misleading voters, so it must be obviously fictional (BadCode's own party name, no real candidates, a printed 'not a real election' footer). It also treats the three strands as equals, so any one that dominates later will feel mismatched."
+   },
+   {
+    "name": "THE WALL OF POSTERS",
+    "concept": "The homepage is a pasted-over hoarding at a bus stop or on a boarded-up shop. Die PARTEI-style rival-party posters are layered under three fresh ones. Each of BadCode's three strands is a full poster in a different printing process: stories as a cinema one-sheet, news as a tabloid front page, the Government as a council campaign leaflet with a rosette. Scroll peels the top poster off to reveal the next, with the real cabinet's slogans underneath being answered line by line. Torn paper, wheatpaste wrinkles and staples are real textures. The ring and triangle logo is stamped as a small sticker on all three.",
+    "strands": "Each strand has its own paper stock, ink and slogan, so you can tell them apart from across the room. Stories gets glossy black with film-grain, News gets newsprint grey with a headline in heavy slab type, and the Government gets flat yellow-and-red campaign poster stock with a numbered pledge list. The peel order is the site nav. Copy: the underlying slogan is the real government line (paraphrased and kept fictional), and BadCode's poster pasted across it gives the opposite conclusion.",
+    "hero": "In the first 5 seconds a wheatpaste roller runs down the screen and pastes a poster over an old one. The man in the balaclava is already on it, looking right at you. His eyepatch triangle is the only thing not covered in glue. A caption follows: 'Previously: someone else's promises.'",
+    "reader_fit": "Hoardings are the working-class high street's own media, and it matches that reader's daily experience of promises pasted over other promises. The tone is 'they plastered over it', which is aimed at the decision-maker, not the reader.",
+    "risk": "Can read as street-art grunge, which is a very common look, so the wheatpaste texture needs real photographic detail. Real politicians' posters are risky: use paraphrased fictional slogans, never real faces."
+   },
+   {
+    "name": "THE PARTY POLITICAL BROADCAST (with the rosette)",
+    "concept": "The site is built as the opening of a UK party political broadcast: a 4:3 screen, a slate card ('A PARTY POLITICAL BROADCAST BY THE BADCODE PARTY'), a rosette in the corner, and a wobbling cut to a podium. The three strands are three 'channels' you can flick between on a retro remote or a row of numbered buttons, like terrestrial TV 1, 2 and 3. Channel 1 is stories, 2 is news with the live tally, and 3 is the Government, a static manifesto page set in council-leaflet type. The Best Party move is a single lo-fi page for the Government channel that is deliberately ugly and cheap, with clip-art, a pop-song hook playing and a 'join now' form, so the contrast with the cinematic stories channel sharpens the jokes. The page ends with the legally required 'Promoted by BadCode, on behalf of the future'.",
+    "strands": "Three TV channels, each with a distinct screen treatment: stories as letterboxed cinema with colour-grade, news as a ticker-and-lower-third bulletin with the man in the balaclava as a still behind the bulletin desk, and the Government as flat council-leaflet graphic with the rosette. The channel number badge is the only shared device. A manifesto ticker runs at the bottom across all three, so the daily manifesto update is visible everywhere.",
+    "hero": "In the first 5 seconds a CRT warms up with a line-roll and a 'PARTY POLITICAL BROADCAST' slate holds for two seconds. Then a rosette stamps on, a wobbling cut flicks to the balaclava man at a podium, and a caption reads 'This broadcast has been brought to you by the future.' Press any key and the channel flicks.",
+    "reader_fit": "Everyone over 20 in the UK grew up with the party political broadcast and the channel 1-4 habit, so the format is instantly legible. It reads as telly, not tech, and it sounds like the voice they already tune out, now saying something they can't.",
+    "risk": "A retro CRT look is a crowded style and could feel nostalgic rather than bold, and the three-channel set-up can feel like a menu instead of a place. Mitigation: commit to one channel-flick transition and make the Government channel properly ugly so the joke has a punchline."
+   }
+  ]
+ },
+ {
+  "lens": "Fictional in-universe broadcasters and satirical news: the homepage as a broadcaster's own presentation (idents, Ceefax, test card, hijacked signal, in-universe corporate site).",
+  "references": [
+   {
+    "name": "The Day Today title sequence (Art of the Title)",
+    "url": "https://www.artofthetitle.com/title/the-day-today/",
+    "what": "1994 BAFTA-winning parody news graphics: five months of deliberately excessive, dense, shifting CGI that exaggerates every news-opening cliche.",
+    "steal": "Over-the-top authority. Parody the real thing by making the chrome too grand: spinning globe, ticker, 'LIVE' tags and fake gravitas wrapped around a deadpan line. Corporate blue and red with absurd depth."
+   },
+   {
+    "name": "Chris Morris: Graphics Content (Dr North)",
+    "url": "https://drnorth.wordpress.com/2014/03/09/chris-morris-graphics-content/",
+    "what": "Essay on how Morris's graphics worked. Brass Eye drops The Day Today's blue-and-red template for a harsher, more intense look.",
+    "steal": "One broadcaster can wear two skins. The news strand can be glossy and the party strand harsher, from the same studio."
+   },
+   {
+    "name": "Max Headroom: 20 Minutes into the Future / Network 23",
+    "url": "https://en.wikipedia.org/wiki/Max_Headroom:_20_Minutes_into_the_Future",
+    "what": "Fictional network and an AI copy of a reporter, glitching in front of a geometric corrugated backdrop.",
+    "steal": "The AI presenter that stutters in and out of the signal, over hard geometric backdrops. Glitch used as character rather than decoration."
+   },
+   {
+    "name": "Max Headroom broadcast signal intrusion, 1987 (Discovery UK)",
+    "url": "https://www.discoveryuk.com/mysteries/max-headroom-broadcast-signal-intrusion-tvs-strangest-hack/",
+    "what": "A masked figure hijacked Chicago TV for about 25 seconds, imitating the Max Headroom backdrop.",
+    "steal": "The masked broadcaster who takes over a normal screen. BadCode as a pirate signal seizing a dull page, the balaclava man never speaking."
+   },
+   {
+    "name": "Ceefax - Tim Potter",
+    "url": "https://timpotter.dev/projects/ceefax/",
+    "what": "Live-data web recreation of Ceefax football pages with Mode 7 block colours and typography.",
+    "steal": "Navigation by page number (100, 200, 300) and a tiny palette of 7 saturated colours on black, rendered in a browser with live data."
+   },
+   {
+    "name": "Teletext and Ceefax Block Graphics (CodeFronts)",
+    "url": "https://codefronts.com/design-styles/css-retro-designs/teletext-and-ceefax-block-graphics/",
+    "what": "CSS-only demo of the 40x25 grid, seven colours and 2x3 mosaic sub-cells.",
+    "steal": "A buildable recipe: monospaced grid, mosaic block characters, double-height headlines. The logo triangle can be drawn from mosaic blocks."
+   },
+   {
+    "name": "BBC Two 1991-2001 idents (Lambie-Nairn)",
+    "url": "https://en.wikipedia.org/wiki/BBC_Two_1991%E2%80%932001_idents",
+    "what": "One fixed mark, nine playful variants. Market research found they changed the channel's perception from dull and worthy to witty and surprising.",
+    "steal": "One logo, many surprising micro-scenes. The ring and triangle can be the fixed object while a different tiny world happens around it for each strand."
+   },
+   {
+    "name": "Channel 4 idents and presentation",
+    "url": "https://en.wikipedia.org/wiki/Channel_4_idents_and_presentation",
+    "what": "1982 ident built the numeral 4 out of abstract shapes that assemble differently each time; later trailers used negative space.",
+    "steal": "Shapes that fly together to form the mark. Three strands as three fragments that assemble into the BadCode ring."
+   },
+   {
+    "name": "Cloverfield viral sites (Tagruato, Slusho)",
+    "url": "https://cloverfield.fandom.com/wiki/Cloverfield_Alternate_Reality_game",
+    "what": "In-universe corporate sites that looked like boring real businesses, later 'hacked' by in-fiction groups.",
+    "steal": "Play the homepage as the real thing, a government site and a TV channel site, with fiction leaking through in small hacks."
+   },
+   {
+    "name": "Severance / Lumon Industries site",
+    "url": "https://lumon.industries/company/severance/media",
+    "what": "A fictional company's own corporate site, deadpan and cold.",
+    "steal": "Total commitment to the in-universe institution. Make the Government strand a genuine-looking civil service portal."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "Channel Zero: the Pirate Signal",
+    "concept": "The homepage is a 1980s-90s UK TV set receiving BadCode. First the screen is a dull, believable government-style page, then the signal is hijacked. Test-card static rolls, the balaclava man with the red-triangle eyepatch fills a corrugated-metal backdrop and says nothing, and the ring-and-triangle logo wipes in. Then the screen divides into three channels, each with its own ident. Visitors flip between them with a big channel dial (1, 2, 3) or by typing a number on the keyboard. Material: black glass, scanlines, a red phosphor glow that is the only colour the logo uses, with a heavy, warm and broken look rather than neon. No cyan.",
+    "strands": "Three TV channels. Channel 1 STORIES is a film-trailer wall in letterbox with tape-label titles. Channel 2 NEWS is a live studio with a ticker, the 'Nurses: \u00a30' tally and 'Money found this week' bug. Channel 3 GOVERNMENT is a party political broadcast: a lectern, a flag-less blue, a manifesto crawl. Each has a different ident, different type and a different sound (film grain hiss, newsroom stings, a stiff fanfare). The channel number is always in the corner, so you always know which strand you are in.",
+    "hero": "In the first five seconds a respectable page glitches, the picture tears sideways, the balaclava man appears for exactly one second without moving his mouth, and three numbered channels snap into place with a hard cut and a tuning bleep.",
+    "reader_fit": "Everyone in the UK knows telly: four channels, the remote, the dull party political broadcast. It speaks in a language they already own and does not need explaining or lecturing. The joke lands on the powerful, not on the viewer.",
+    "risk": "The retro pastiche can read as nostalgia or a Max Headroom tribute rather than a live news source about now. It needs live data (today's date, this week's numbers) to feel current, and the glitch must be restrained so it does not hurt usability or accessibility."
+   },
+   {
+    "name": "Page 100",
+    "concept": "The homepage is a Teletext service, with BadCode as the only broadcaster left. A 40x25 grid of mosaic blocks in 7 hard colours on black, a double-height flashing header, and a three-digit page number in the corner. You navigate by typing numbers or using four coloured Fastext buttons (red, green, yellow, blue) at the bottom. Page 100 is the index. The logo's ring is drawn in block mosaic and the triangle is a single red block-stepped wedge. It is quick, typed, honest and oddly warm. The newest items are real headlines with the BadCode counter-reading, updated daily.",
+    "strands": "Page numbers separate the strands the way real Ceefax did. 100-199 STORIES: each film a page with a one-line summary and a thumbnail drawn in mosaic. 200-299 NEWS (the Money For Something bulletin), with 'Nurses: \u00a30' and 'Money found this week' as permanent top-line fields. 300-399 GOVERNMENT, with manifesto clauses as numbered pages and a 'Cabinet said / BadCode says' two-column table. Each strand gets one colour block family: red for news, yellow for government, magenta and white for stories. The Fastext bar always offers the other two.",
+    "hero": "The page builds itself line by line the way real teletext did, top to bottom, with the red triangle block arriving last, and a cursor types '100'. Then it flashes the three section headings in turn.",
+    "reader_fit": "It carries a Ceefax memory many over-40 British readers hold (football scores, the Cup, the lottery numbers). It is plain, fast, text-first and works on a cheap phone, which matters for a reader who is not a design audience. It feels like a public service, not a startup.",
+    "risk": "A strictly typed grid is limiting for video: you cannot show film trailers well. Mitigate by letting each page 'open up' into a full-colour video player. Also, the retro-nerd read could be read as hobbyist/insider, so keep copy plain."
+   },
+   {
+    "name": "The Broadcast Day",
+    "concept": "The homepage is one scrolling 24-hour TV schedule for a broadcaster that is secretly three things. You scroll down through the day from 'Closedown' to 'Closedown', and the page changes character as the clock moves. Morning is the Test Card and Stories, a slot-by-slot listing with a Radio Times-style programme blurb in the narrator's voice. Early evening is the live 'Money For Something' bulletin with a news-studio frame and countdown. The Party Political Broadcast arrives at 10pm with an absurd pomposity of a civil-service palette, then the day ends on the national-anthem-style closedown where the ring-and-triangle logo ticks like a clock and the balaclava man stares from the test card. Colours: Test card bars (red, blue, yellow) as a restrained footer, warm cream paper listings, black for night.",
+    "strands": "Every strand is a programme genre in the same schedule. Stories are the 'Drama and Film' slots (the eight videos as a listings grid with a runtime and a rating of 'Mandatory'). News is the 'News at Ten' slot, a live-feeling card with timestamp and tally gags. Government is the 'Party Political Broadcast' slot in a stuffy lectern frame, with the manifesto as the broadcast script. You always know which strand you are in because the clock time and slot label (DRAMA / NEWS / POLITICS) sit in the corner like a bug.",
+    "hero": "The first five seconds are the Test Card F rotating in with a drone, a clock reading the real current time, and a title card 'You are watching BadCode. Programmes follow.' Then the card dissolves up into the schedule as the narrator voice-over reads the first listing.",
+    "reader_fit": "It borrows the Radio Times and the TV listings that every British household has argued over, so the structure is instantly understood. It uses a familiar shared ritual (the evening schedule) to hold three different things without needing a manifesto to explain them. The tone is wry, never preachy.",
+    "risk": "A long scroll can bury the Government strand, since it sits late in the 'day'. Mitigate with a pinned three-item programme strip at the top and a 'Skip to' control. It could also feel like a gimmick if the schedule copy is not funny line by line."
+   }
+  ]
+ },
+ {
+  "lens": "Signals and messages from the future: homepage as a received transmission, not a designed site. Instructions-for-strangers design (Voyager cover, Rosetta Disk), decodable grids (Arecibo), layered warnings for unreadable futures (WIPP), palindromes (Sator/Tenet), glyph systems (Arrival).",
+  "references": [
+   {
+    "name": "Voyager Golden Record cover",
+    "url": "https://science.nasa.gov/mission/voyager/golden-record-cover",
+    "what": "Etched aluminium cover whose only job is to teach a stranger how to play the record: stylus diagram, waveform of the first image, hydrogen-transition time unit, pulsar map. Jon Lomberg and Sagan's team.",
+    "steal": "The instructions ARE the design. A diagram-only front door that teaches the visitor how to 'play' the site: three drawn glyphs, a stylus line, a tiny 'how to read this' key. Drawn-line pictograms in one colour on a plain metal ground."
+   },
+   {
+    "name": "Rosetta Disk (Long Now)",
+    "url": "https://rosettaproject.org/disk/concept/",
+    "what": "Nickel disk; the face is a spiral of text in eight languages that shrinks past legibility, so the design itself says 'zoom in for more'. 13,000 pages, 1,500 languages, readable only under magnification.",
+    "steal": "Scale as navigation: a headline spiral that tapers inward, each ring a deeper layer. Scroll or zoom to descend into a strand. Readable at once at the outer ring, a rabbit hole inside."
+   },
+   {
+    "name": "Arecibo message (1974)",
+    "url": "https://www.seti.org/news-archive/news-archive-detail?id=409",
+    "what": "1,679 bits, a semiprime (23 x 73), so the only sensible grid reveals the picture: numbers, DNA, a human, the solar system, the dish. Sent to M13.",
+    "steal": "A page that is a bitmap before it is a layout: a 23x73 field of on/off cells that resolves into the three strand glyphs. The reveal moment is noise snapping to image. Try the wrong orientation first, then the right one."
+   },
+   {
+    "name": "Long-term nuclear waste warning messages (Sandia/WIPP, 'Landscape of Thorns')",
+    "url": "https://en.wikipedia.org/wiki/Long-term_nuclear_waste_warning_messages",
+    "what": "10,000-year markers built in layers: 'something man-made is here', then 'it is dangerous', then detail; spikes, menacing earthworks, the 'This place is not a place of honor' text.",
+    "steal": "Multi-level messaging: level 1 is felt (shape, spikes, colour), level 2 is a one-line warning, level 3 is the full text. Homepage tells a ten-second story at three depths. Tone: flat, neutral, absolute warning voice, which matches BadCode's authority."
+   },
+   {
+    "name": "Heptapod logograms (Arrival)",
+    "url": "https://en.wikipedia.org/wiki/Heptapod_languages",
+    "what": "Circular ink-in-smoke logograms by Martine Bertrand and Patrice Vermette; ~100 glyphs, each a whole sentence in one ring; Wolfram analysed them as a real undeciphered script.",
+    "steal": "Each strand gets a ring-glyph sentence, drawn with ink-bleed edges. They echo the BadCode ring logo naturally. Hovering 'decodes' the ring into plain English."
+   },
+   {
+    "name": "Sator Square / Tenet",
+    "url": "https://en.wikipedia.org/wiki/Sator_Square",
+    "what": "5x5 Latin palindrome SATOR AREPO TENET OPERA ROTAS, readable in all four directions, with TENET at the centre forming a cross.",
+    "steal": "Layout that reads the same forwards and backwards: a 3-strand palindromic grid where timestamps run both ways, the centre cell is the logo eye, and scrolling down then up shows 'before' and 'after' versions of the same headline (bad branch / good branch)."
+   },
+   {
+    "name": "Crypt of Civilization (Georgia, sealed 1940, opens 8113)",
+    "url": "https://en.wikipedia.org/wiki/Crypt_of_Civilization",
+    "what": "Room-sized time capsule with a plaque addressed to the people of 8113 and a 'language integrator' machine to teach English.",
+    "steal": "Address the visitor as 'the people of the year you are in' with a seal and a date lock; a literal 'Do not open until' countdown that opens to a bulletin. And the cautionary angle: capsules carry their makers' blind spots, which the narrator can mock."
+   },
+   {
+    "name": "Future Library (Katie Paterson)",
+    "url": "https://en.wikipedia.org/wiki/Future_Library",
+    "what": "A forest planted in Norway to supply paper for 100 years of sealed manuscripts, unread until 2114. (Described in search results, not fetched in full.)",
+    "steal": "Deposits as a ritual: the bulletin and the party posts accumulate on the page as dated rings, like tree rings, one per week."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "RECEIVED (the Arecibo wall)",
+    "concept": "The homepage opens as a black screen of pulsing red-and-white static, exactly 23 columns by 73 rows of square cells, like raw bits off a dish. Over four seconds the noise snaps, Arecibo-style, into a hand-sized pictogram sheet: three big drawn figures, a ring eye (storytelling: a reel/film frame inside the ring), a talking-head eyepatch silhouette inside a broadcast arc (news), and a podium/lectern with a tiny red triangle flag (party). Beneath each is a binary count line that is actually the strand's latest item count. Each pictogram is a link; scrolling zooms into the strand and the grid rearranges itself to that strand's own look. The grid is coloured from off-white bone on warm black, with the logo's red as the only accent, so it never reads as crypto.",
+    "strands": "Told apart by pictogram AND by how the cells behave: Storytelling cells stay as a still image (frames of the four films dithered into the bit grid); News cells scroll like a ticker bar every few seconds with the Nurses: \u00a30 tally in 1-bit digits; Party cells flicker and re-sort daily as the manifesto edits. Each pictogram is labelled in plain words under it (Stories, The Bulletin, The Government) in a round drawn lowercase face.",
+    "hero": "First 5 seconds: static, a single click-clack of a tuning dial, the noise freezes into the three figures, and the eye in the ring blinks once, red triangle swivelling toward the cursor. A caption types in: RECEIVED 04.11.2026 FROM: LATER.",
+    "reader_fit": "Everything is a picture first and words second, so nobody has to read a manifesto to get it. The 'bits' look is a bit spy-radio-geeky and nostalgic, not political-left coded. The date stamp keeps it about this week.",
+    "risk": "1-bit and dithered visuals can feel cold, techy and exclusive, which risks the geeky crypto-adjacent register; also mobile 23x73 grids need careful handling (rotate to 73x23 wide). Keep a plain-language nav line visible so the pictograms never carry the whole meaning."
+   },
+   {
+    "name": "THIS PLACE IS NOT A PLACE OF HONOUR (the three-tier warning marker)",
+    "concept": "The homepage is a monument. A huge dark slab, textured like basalt with relief-carved edges, fills the screen, and the three strands rise from it as three enormous spikes (Landscape of Thorns), each spike a different height and tilt. Information comes in WIPP's levels. Level one is pure form: the spikes, the red triangle eye in the sky. Level two is a short carved line on each spike in the flat warning voice: 'WHAT YOU SEE HERE IS A STORY.' 'WHAT YOU HEAR HERE IS THE NEWS, BEFORE IT HAPPENS.' 'THE PEOPLE WHO RUN THIS PLACE ARE NOT REAL, AND NEITHER ARE THE PEOPLE WHO RUN YOURS.' (dark, sarcastic, total authority.) Level three is a click: each spike opens its full content. Light comes from a low raking sun so the carving reads in shadow; type is chunky chiselled caps, bone-grey on near black, with the logo's red only on the triangle.",
+    "strands": "Three spikes, three heights that update: the Storytelling spike is tallest and slowest (the monument that grows), the News spike has a small LED ticker cut into its face, the Government spike has a ledger of daily amendments chiselled and re-chiselled in a pale scar. The surface of each spike is a different material (stone, brushed steel, and a worn paper-stack texture).",
+    "hero": "First 5 seconds: the camera drifts in over a flat desert horizon at dusk, the spikes slowly fan out, the red triangle sits in the sky like a sun, and a single chiselled sentence fades in: 'THIS PLACE IS A MESSAGE.' Then the page unfolds from that line.",
+    "reader_fit": "Monumental, blunt, physical, with no jargon: it looks like something built by people with authority and a sense of humour, which the working-class reader (a mixture of industrial heritage and cynicism about suits) can respect. The warning voice also lets BadCode be dark and funny without sermonising, and it nurtures by 'warning' rather than blaming.",
+    "risk": "Heavy 3D/WebGL on cheap phones; the nuclear-waste mood is bleak and could swamp the nurturing note, and the 'GPOM is dark and monumental' register is already overused in this project. Needs a lighter Future Proof daylight section so the page ends in warmth."
+   },
+   {
+    "name": "THE SATOR PAGE (a homepage that reads the same both ways)",
+    "concept": "The homepage is one 5x5 palindromic word square, with the five words replaced by BadCode's own: the outer ring reads STORY / NEWS / PARTY forwards and backwards (invented palindromic-ish chiasmus, e.g. NEWS-SWEN in-joke style with rotated tiles), with the logo's off-centre red triangle sitting in the central cell where TENET would be. Each tile is a huge button of lettering on a paper-white stamped-card; moving the cursor tilts the whole square, and the square can be flipped 180 degrees by a switch labelled WHICH WAY IS IT GOING?, which turns the whole homepage into its mirror: the bad branch (dark, grey, grim) becomes the good branch (daylight, Future Proof building-site yellow-and-hi-vis). Content is the same either way, with reversed and corrected headlines. A permanent footer reads 'ROTAS' mirrored.",
+    "strands": "Row and column mapping: the top row is Storytelling (films and songs as small rolled reel-and-record tiles), the middle row is the News (a live ticker running left to right, and the same ticker running right to left in the opposite row), the bottom row is the Government (an amendment log running upward). The flip switch is the Future Proof spine: pressing it is literally 'revert the commit'.",
+    "hero": "First 5 seconds: tiles arrive one by one with a clack, then the whole square slowly rotates 180 degrees on its own and back, proving it reads both ways, and a deadpan line says: 'This reads the same in both directions. Our timeline did not.'",
+    "reader_fit": "Puzzle with a punchline; no politics needed to understand it. The flip is a one-click joke about a rigged economy that could be fixed, which suits a reader who suspects both options on the ballot are the same tile.",
+    "risk": "Cute word-play can eat the message; five-letter constraints make real content hard to fit and the flip can confuse users on first load. Needs a clear tap target and a fallback list view for accessibility and SEO."
+   }
+  ]
+ },
+ {
+  "lens": "Award-winning experimental sites and three-arm umbrella layouts (Awwwards, One Page Love, Brutalist Websites). Honest caveat: the search tool returned thin snippets and I did not find a verified three-division Awwwards SOTD. References below are what the searches actually surfaced, and I mark where the \"move to steal\" is my inference from the description, not something I inspected. Open the pages before building.",
+  "references": [
+   {
+    "name": "Acte (Montreal record label) on One Page Love",
+    "url": "https://onepagelove.com/acte",
+    "what": "Brutalist one-page label site, described as having a changing background colour and minimal floating content blocks.",
+    "steal": "Give each strand its own full-page background colour that the whole page takes on as you scroll or hover into it, so the colour alone tells you where you are. Text sits as small floating blocks on a flat field (inferred from the description; not inspected)."
+   },
+   {
+    "name": "Accordion Gallery V2 (Framer component, GSAP)",
+    "url": "https://www.framer.com/marketplace/components/accordion-gallery-v2/",
+    "what": "Panels where the hovered or tapped one grows to fill the track while neighbours lean away in subtle 3D, desaturate and dim.",
+    "steal": "The exact hero for a three-arm homepage: three vertical panels, hover or tap expands one and dims the other two, the way a camera pulls focus."
+   },
+   {
+    "name": "Showcase Accordion (Framer component, GSAP)",
+    "url": "https://www.framer.com/marketplace/components/showcase-accordion/",
+    "what": "Closed panels are slim strips with a vertical title and thumbnail, opening into a full-bleed image with a floating info card and a button.",
+    "steal": "Collapsed state as slim strips with vertical titles (STORIES / NEWS / PARTY), expanded state with one floating card holding the single call to action."
+   },
+   {
+    "name": "GSAP forum: expand div on click to fullscreen (Flip)",
+    "url": "https://gsap.com/community/forums/topic/37259-expand-div-on-click-to-fullscreen/",
+    "what": "Thread recommending GSAP Flip for teasers that expand to full screen from wherever they sit on the page.",
+    "steal": "Clicking a strand panel expands it into that strand's own full page with no cut, so the three arms feel like three rooms of one building rather than three links."
+   },
+   {
+    "name": "GSAP forum: accordion with Flip",
+    "url": "https://greensock.com/forums/topic/30334-gsap-accordion-with-flip/",
+    "what": "Implementation notes on Flip accordions, including a reversible timeline for the collapse step.",
+    "steal": "Practical recipe for making the collapse back to the triptych as smooth as the expand."
+   },
+   {
+    "name": "RCA Records on Awwwards",
+    "url": "https://awwwards.com/sites/rca-records",
+    "what": "Label site described as eclectic, interactive and experimental, with a musical variable typeface and a 404-page beat sampler.",
+    "steal": "A variable typeface that responds to the cursor or scroll as the identity, and a 404 page that is a toy. For BadCode, a 404 that is the narrator announcing it saw this coming."
+   },
+   {
+    "name": "Luaka Bop on Awwwards (Site of the Day, 7.3)",
+    "url": "https://awwwards.com/sites/luaka-bop",
+    "what": "A label with many artists and releases, recognised as a Site of the Day.",
+    "steal": "Treat a roster as a catalogue where each release has its own character within one frame. Details of the interaction not verified; open it before copying."
+   },
+   {
+    "name": "Sub-Label Recordings (Manchester, four sub-labels)",
+    "url": "https://siiimple.com/category/record-label",
+    "what": "Record-label gallery on Siiimple; the search surfaced a UK label that runs four sub-labels under one name.",
+    "steal": "The sub-label model itself: one parent mark, each arm gets its own small tag line and catalogue number, like a pressing code on a record sleeve."
+   },
+   {
+    "name": "Creative Bloq: Are brutalist sites the web's punk rock moment?",
+    "url": "https://www.creativebloq.com/features/are-brutalist-sites-the-webs-punk-rock-moment",
+    "what": "Feature on brutalist web design as a punk move, with dividing lines between sections listed as a typical trait.",
+    "steal": "Hard rules and visible structure as a deliberate political register: a site that looks like a leaflet or a ransom note, not a startup."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "THE THREE-WAY SPLIT (a pressing plant, three records)",
+    "concept": "Full-screen triptych of three tall panels, each a different physical medium: STORIES is a glossy black vinyl sleeve with a film still, NEWS is a CRT-green-grey tickertape wall, PARTY is a cheap red-ink election leaflet on newsprint stock. Hovering or tapping a panel grows it to about 70% width while the other two dim and shrink to slim strips with vertical titles (accordion focus-pull), and the whole page background shifts to that arm's colour. Clicking expands it to a full page with a GSAP Flip, no cut. The BadCode ring-and-triangle logo sits fixed at the exact seam where the three panels meet, so the triangle looks like it is deciding which panel to look at.",
+    "strands": "Told apart by material, not just colour: stories = glossy, dark, cinematic grain, serif film-credit type; news = flat, flickering, monospaced ticker type with the live Nurses: \u00a30 tally scrolling; party = paper, halftone, big blunt sans in red and cream like a rosette poster. Each has a one-word label and a catalogue number (BC-01, BC-02, BC-03).",
+    "hero": "Page loads black. The logo's triangle opens like an eye at the centre; two vertical lines slice the screen into three, and each panel flicks on with its own sound-less pop of material: film grain, scanlines, paper flash. The triangle then slowly drifts toward whichever panel the cursor leans to, as if sizing it up.",
+    "reader_fit": "Zero explaining. A working-class reader sees a film, a news ticker and a leaflet in two seconds, three things they already know. The party panel looks like the leaflet through their door, not like crypto or a think-tank.",
+    "risk": "Accordion panels are a known component, so execution has to carry it: materials must be properly different and the seam logo must be pixel-perfect. On mobile it has to become three stacked bands, which loses the side-by-side hover and needs its own tap behaviour."
+   },
+   {
+    "name": "THE ELECTION NIGHT SWINGOMETER",
+    "concept": "The homepage is a broadcast election-night studio. One giant dial (a swingometer needle, ending in the red triangle) sits in the middle of a dark stage, and three sectors on the dial are the arms. The needle follows the cursor or your scroll and swings between STORIES, NEWS and PARTY; where it points, that sector lights up with a live preview in a studio monitor, and a chyron lower-third gives the arm's one-line description in the narrator's voice. Scrolling swings the needle through all three, then drops you into whichever you stopped on. Beneath the dial runs a constant ticker with the news bulletin's running gags (Nurses: \u00a30, money found this week).",
+    "strands": "Each arm is a monitor on the studio wall with its own bug and chyron style: STORIES has a letterboxed film frame, NEWS a live-bulletin red bar, PARTY a manifesto-poll graphic with a daily-updated percentage of 'promises kept vs the cabinet'. The three share one studio, so they read as one broadcaster with three shows.",
+    "hero": "A fake channel idents sequence of about 4 seconds: bars and tone, then a chyron drops: 'THIS HAS ALREADY HAPPENED', and the needle snaps from dead centre to its first position with a thunk. The man in the white balaclava is a silhouette in the studio gloom, never seen speaking.",
+    "reader_fit": "UK election-night imagery (the swingometer is a very British object) is instantly familiar and slightly funny to the exact reader we want. Treats politics as a spectacle they already watch, then turns the dial on it.",
+    "risk": "It leans heavily on the party strand as a joke format, which could make Future Proof read as satire only and not as a serious offer. Needs a clear sincere panel inside the party page. Also a lot of bespoke illustration and motion for a two-person team."
+   },
+   {
+    "name": "CARRIER PIGEON, THREE LETTERBOXES (the door-to-door site)",
+    "concept": "A brutalist, almost unstyled homepage built like a terraced-street doormat: one big flat field in off-white with hard black rules, and three letterbox slots cut into the page with different brass-style labels (STORIES, NEWS, PARTY). Hovering a slot makes something push through from behind it: a film strip, a ticker of paper, a leaflet. Clicking pulls it all the way through and it unfolds into that arm's page. The background colour changes by section as you scroll, in the manner of the Acte label site, but the three colours are the cheap ink colours of UK print: newsagent-red, chip-shop-yellow-cream and bus-ticket-blue-grey (not cyan).",
+    "strands": "Strands are three delivered objects: film strip with frame numbers (stories), a ragged teletype strip of headlines (news), a folded A5 manifesto (party). Each has its own cursor: a clapper, a stopwatch, a ballot pencil on a string.",
+    "hero": "Cursor is a hand. The page is silent and bare for a beat, then the first slot rattles and a paper corner pokes out with 'Already read this' written on it in biro. Moving over the next slots fires the same rattle, each with its own item.",
+    "reader_fit": "Zero tech gloss. It feels like something that came through the door, not something that wants your data. Lowest-barrier tone of the three ideas, and the closest to the 'never condescend' rule.",
+    "risk": "Understated by design, so on a feed of award sites it may look like not enough was done. The hero moment depends entirely on small, well-timed motion and sound-free polish; if the push-through animation is clunky the whole concept dies."
+   }
+  ]
+ },
+ {
+  "lens": "Collectives that built a whole fictional universe or posed as a state/company: Gorillaz, Banksy/Barnbrook Dismaland, NIN Year Zero ARG, Metahaven, KLF/JAMs/K Foundation, Yes Men. The shared trick is that the institution is the interface, and the joke is delivered in the deadpan grammar of a real bureaucracy.",
+  "references": [
+   {
+    "name": "Gorillaz Kong Studios (original Flash site and 2020s revival)",
+    "url": "https://kongstudios.gorillaz.com",
+    "what": "The band's home and studio built as a navigable building. You explore rooms and corridors, with a room per member, mini-games and easter eggs, instead of using a menu.",
+    "steal": "The homepage is a building with three rooms and no nav bar. Each strand is a department with its own door, light and sound. Walking between them is the navigation. Keep it to one screen of rooms, not a free-roam game."
+   },
+   {
+    "name": "Gorillaz app (looking glass into the Spirit House)",
+    "url": "https://www.lovethework.com/work-awards/campaigns/official-gorillaz-app-675569",
+    "what": "Award-winning app where 3D menu objects open portals into rooms of a virtual house.",
+    "steal": "Objects as menu items. Each strand is one physical prop that opens into its world (a TV, a ballot box, a film reel) rather than a text link."
+   },
+   {
+    "name": "Banksy's Dismaland: Cruel Designs (Barnbrook)",
+    "url": "https://barnbrook.net/work/dismaland-cruel-designs/",
+    "what": "Barnbrook's identity for Dismaland drew on the naive graphic language of state-produced documents and slideshows, to blur fact and fiction. The branding 'writes a cheque the event doesn't cash'.",
+    "steal": "Council-notice and civil-service flat graphics (plain sans, lanyards, wayfinding arrows, 'Please queue here') used with total sincerity. The bleakness lives in the typography, not in the effects."
+   },
+   {
+    "name": "Hyperallergic on Dismaland",
+    "url": "https://hyperallergic.com/231114/banksys-new-apocalyptic-theme-park-is-designed-to-disappoint/",
+    "what": "Coverage of a park built to disappoint, with fake staff, fake signage and a frayed, run-down finish.",
+    "steal": "Staff in uniform who stay in character, such as a 'Customer Disappointment Officer' tooltip. A homepage microcopy tone of cheerful institutional disappointment."
+   },
+   {
+    "name": "Nine Inch Nails Year Zero ARG (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Year_Zero_(game)",
+    "what": "A network of sites from the album's dystopian future, including state propaganda and a resistance site. The resistance site, Open Source Resistance, is set in the present, 15 years before the rest.",
+    "steal": "Time-split structure. Future sites look corrupted and 'hacked', while the present-day site is clean. This maps directly onto BadCode: the future that went wrong is damaged, and Future Proof is the only clean, lit place."
+   },
+   {
+    "name": "Year Zero campaign timeline",
+    "url": "https://www.wikiwand.com/en/articles/Campaign_timeline_of_Year_Zero",
+    "what": "The discovery trail that began with a hidden message on a tour shirt, leading to real-world events such as a staged raid at a gig.",
+    "steal": "One cryptic physical clue that leads to the site. For BadCode, a stamp or code in the video end-cards that unlocks something on the homepage."
+   },
+   {
+    "name": "Metahaven, Uncorporate Identity (e-flux)",
+    "url": "https://www.e-flux.com/announcements/110683/e-flux-presents-metahaven-book-launch-amp-conversation/",
+    "what": "A 608-page book framed as a corporate identity manual, covering state branding, Sealand and WikiLeaks.",
+    "steal": "The homepage as a Brand Standards Manual for a state: a numbered grid of crests, usage rules, and 'do not' sections. It lets three brands share one logo system with a visible rulebook."
+   },
+   {
+    "name": "The KLF / JAMs / K Foundation stunts (Gigwise)",
+    "url": "https://www.gigwise.com/features/3221510/the-klf-s-top-10-stunts",
+    "what": "Pseudonymous identities (KLF, Timelords, K Foundation, JAMs), the pyramid-and-ghetto-blaster logo, an ice-cream van, and burning a million pounds on camera.",
+    "steal": "One recurring absurd vehicle or prop that follows the user across all three strands, plus one visible act of expensive nonsense treated as public record (a live 'money found this week' counter)."
+   },
+   {
+    "name": "The KLF returns (Rolling Stone Italia)",
+    "url": "https://www.rollingstone.it/musica/classifiche-liste-musica/sono-tornati-i-klf-e-queste-sono-le-5-cose-piu-matte-che-hanno-fatto/546257/",
+    "what": "A retrospective of the KLF's wildest moves, including the pyramid emblem as a deliberate parody of Illuminati iconography.",
+    "steal": "Turning an all-seeing-eye cliche into your own emblem. BadCode's ring-and-triangle already does this."
+   },
+   {
+    "name": "The Yes Men: Dow and WTO hoaxes",
+    "url": "https://press.theyesmen.org/press-archive/wikipedia.html",
+    "what": "Lookalike institutional sites (gatt.org, dow-chemical.com) so convincing that real emails and TV bookings arrived.",
+    "steal": "The spoof is credible because it looks like a real organisation's site. Do this for the Government strand, but only as an invented party, never a lookalike of a real body, and with a visible 'this is satire' stamp."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "THE DEPARTMENT OF BAD CODE",
+    "concept": "The homepage is the front hall of a government building that has clearly already been through the apocalypse. Three numbered doors stand in a flat, council-signage corridor: Department of Stories (Dept. 01), Department of Broadcasting (Dept. 02), Office of the Government (Dept. 03). Everything is typeset like a Metahaven brand-standards manual crossed with Barnbrook's Dismaland signage: off-white paper, black Grotesk caps, red used only where the logo's triangle and circle appear. Each door has an official wayfinding arrow and a plaque in the narrator's voice ('Dept. 02: Telling you what happened before it happens'). Clicking a door does a hard-cut walk-in to that department's own palette and sound.",
+    "strands": "Told apart by room material and a single wayfinding colour system rather than by logo. Stories is a dim cinema foyer with a poster rail and ticket stubs. Broadcasting is a studio control room: wall of CRTs, a ticker, the balaclava host's silhouette as a shadow on the glass. Government is a polling-station booth with a ballot slot, daylight coming through the window, and Future Proof pinned as a notice on a board.",
+    "hero": "First 5 seconds: a flat, off-white lobby fades in with a single red triangle eye in the ceiling that slowly turns to track the cursor. A stamped notice drops with a thud: 'WELCOME. YOU ARE VISITOR 1 OF 100. PLEASE TAKE A NUMBER.' Three numbered ticket dispensers lie below, each with a different department number.",
+    "reader_fit": "It speaks the language everyone has stood in: queues, forms, 'take a number', council notices. The reader already distrusts institutions, and here the institution is honest about being broken. No jargon, no crypto, no left-wing signalling.",
+    "risk": "Pure bureaucratic drabness can read as grey and boring. Needs a strong rhythm of red stamps and one clear animation per door, or it loses the 'crazy' brief."
+   },
+   {
+    "name": "YEAR ZERO / YEAR NOW: THE TWO-TIMELINE LOBBY",
+    "concept": "Stolen from the Year Zero ARG: the page is split vertically into two timelines. The left is 'the future that went wrong', corrupted, glitched, burnt-out sodium orange and smoke-black. The right is 'now', a clean daylight building site in Future Proof white and hi-vis yellow, scaffolding and plans pinned up. The three strands are three objects that exist on both sides. Stories: a cinema screen (burned out on the left, a new film showing on the right). News: a TV (static on the left, live bulletin on the right). Government: a podium (empty and toppled on the left, with a manifesto board on the right). A draggable seam in the middle lets the visitor wipe the page between timelines.",
+    "strands": "Strand identity comes from the object, constant on both sides, so the viewer learns three objects and sees them in two states. Corruption (chromatic tearing, scanline decay, crossed-out text) marks the bad branch; typeset blueprints and hard-hat yellow mark the repairable one.",
+    "hero": "First 5 seconds: the page loads fully in ruin, smoke and orange, then a thin vertical line of daylight rips down from the top and the right side snaps clean. A caption in plain type: 'THIS IS WHAT YOU DO NEXT.' The seam is draggable from the first frame.",
+    "reader_fit": "It makes the stakes visible without a lecture: this is the broken future, this is the fix, and you can drag between them. It pads out the answers (Future Proof) exactly as Kai wanted, because the clean side is the invitation. It avoids blaming the reader.",
+    "risk": "The split can make Future Proof's clean side look like a different brand or a corporate-optimism site. The bright side has to stay grubby and handmade (marker, tape, tea stains) so it does not feel like a startup."
+   },
+   {
+    "name": "THE BADCODE PARTY CONFERENCE PASS",
+    "concept": "The whole site is a lanyard and event pass for a political conference that is also a film festival and a TV channel. The homepage is a huge laminated pass on a lanyard that swings with the cursor. The front shows the logo, a barcode, 'ACCESS: ALL AREAS', and three coloured access bars along the bottom (film strip, red tally light, ballot tick). Scroll flips the pass over to show the back: a venue map in Dismaland style with three 'stages' as hall numbers. Entering a stage zooms the pass into a full-screen venue view. Small flourishes: a clipboard 'delegate number', a rubber stamp for visited strands, and a live 'money found this week' ticker like conference small print.",
+    "strands": "Told apart by the three access bars (cinema/ broadcast/ party), by the hall names on the map (Screening Room, Newsroom, Party HQ) and by stamp colours. Each hall has a different crowd noise: popcorn rustle, studio hum, applause.",
+    "hero": "First 5 seconds: black screen, then a lanyard drops in from above with a physical swing and settles on the cursor. The barcode flickers once as if scanned, and a polite voice-over line (text on screen) says: 'Welcome, delegate. Please do not panic. We have already seen how this ends.'",
+    "reader_fit": "Everyone knows a conference lanyard, so it is instantly legible and a little ridiculous. It treats the visitor as a member of something rather than a target. It also gives the spoof party a believable ritual (membership, delegate number) without asking anyone to join anything real.",
+    "risk": "A lanyard pass is a one-joke frame. It must hand off quickly to real content (the eight videos, the bulletin) or it becomes a gimmick that gets in the way."
+   }
+  ]
+ },
+ {
+  "lens": "State visual identity and agitprop: how authority is drawn (Lissitzky's Red Wedge, wartime Ministry of Information posters, Tutill union banners, Labour 1945, GOV.UK, Fairey, British fringe-party ephemera). Eight searches used. GOV.UK parody, Labour 1945 cover and Rodchenko palette searches returned thin or conflicting results, so those are flagged as unverified.",
+  "references": [
+   {
+    "name": "Beat the Whites with the Red Wedge (El Lissitzky, 1919)",
+    "url": "https://en.wikipedia.org/wiki/Beat_the_Whites_with_the_Red_Wedge",
+    "what": "Lithograph poster: a red acute triangle driven into a white circle on a dark ground, from Lissitzky's Suprematist period. Artforum (https://www.artforum.com/features/el-lissitzky-the-avant-garde-and-the-russian-revolution-213152/) argues he used non-objective forms so the poster would be universally intelligible.",
+    "steal": "BadCode's logo is already this poster: red triangle plus thin ring. Make the homepage the act of the wedge hitting the circle. Three flat shapes and almost no words is a whole argument that needs no translation. Caveat: the Wikipedia page notes the slogan 'wedge' phrase has contested origins, and the Soviet context is a loaded association, so use the form, not the politics."
+   },
+   {
+    "name": "Keep Calm and Carry On / Ministry of Information 1939 poster trio",
+    "url": "https://history.blog.gov.uk/2014/06/27/keep-calm-and-carry-on-the-compromise-behind-the-slogan",
+    "what": "Three posters drafted in 1939 by the shadow Ministry of Information: 'Freedom is in Peril', 'Your Courage, Your Cheerfulness, Your Resolution', 'Keep Calm and Carry On'. Each carries only the King's crown over a plain block of colour and big sans capitals. Wikipedia (https://en.wikipedia.org/wiki/Keep_Calm_and_Carry_On) notes the 'Your Courage' poster was resented because 'Your' read as the common people suffering for the upper classes.",
+    "steal": "A SET of three posters with one shared crest and one shared type system is the cleanest way to make three strands feel like one authority. Swap the crown for the red triangle. The resentment of 'Your Courage' is also a gift: BadCode can send up that tone-deaf top-down voice."
+   },
+   {
+    "name": "George Tutill trade union banners",
+    "url": "https://en.wikipedia.org/wiki/George_Tutill",
+    "what": "The City Road, London firm that Art UK (https://batch.artuk.org/discover/stories/trade-union-banners-kaleidoscopic-symbolism-and-strength-in-unity) says made about 75% of UK union banners. Standard format: a painted central roundel, foliage, and lettering on painted streamers, two-sided silk, influenced by Walter Crane's socialist illustration.",
+    "steal": "The roundel-with-scroll format maps straight onto the BadCode ring logo. Silk that sways, gold fringe, hand-painted streamer lettering. This is the working-class UK visual vocabulary for 'we stand together', and it is the opposite of tech or crypto."
+   },
+   {
+    "name": "People's History Museum banner collection",
+    "url": "https://phm.org.uk/collections-display?irn=10334",
+    "what": "Catalogue of real union and branch banners with imagery descriptions (e.g. Crane-derived winged figures, handshakes).",
+    "steal": "Real iconography to quote: handshake, rising sun, winged figure, 'Unity is Strength' streamers. Rework as BadCode versions (the eye, the triangle, 'Nurses: \u00a30')."
+   },
+   {
+    "name": "Labour 'Let Us Face the Future' (1945)",
+    "url": "https://www.chartist.org.uk/let-us-face-the-future-1945/",
+    "what": "The 1945 Labour manifesto, a 12-page pamphlet. Time's contemporary report (https://content.time.com/time/magazine/article/0,9171,856486,00.html) says it had a red and white cover. IBTimes (https://www.ibtimes.co.uk/labours-election-manifestos-new-politics-longest-suicide-note-history-1496080) describes a large red 'V'. Accounts conflict, so check an archive scan before copying any detail.",
+    "steal": "The title is the permission slip: 'Let Us Face the Future' is nearly Future Proof's name already. Steal the austerity: red and white, a pamphlet short enough to read in a queue, a promise stated in one line. Verify the actual cover from the Labour archive before quoting its look."
+   },
+   {
+    "name": "GOV.UK Design System",
+    "url": "https://en.wikipedia.org/wiki/Gov.uk",
+    "what": "The UK state's UI language: black header bar, thick yellow focus outline, green 'Start now' button, one-thing-per-page question flow, plain-English headings. Searches for established parodies found none I could cite, only lookalike implementations such as NotGovUK (https://673a967623d885a4c6a0bd02--notgovuk.netlify.app).",
+    "steal": "Everyone in the UK has used it to renew a passport or claim something, so it reads as 'real and boring and mine'. The green Start button, the yellow focus ring and the 'Check before you start' box are instantly recognisable. Use these for the Government strand ONLY. Do not use the crown, the GOV.UK name or the exact brand mark: a parody of the style, not an impersonation."
+   },
+   {
+    "name": "Shepard Fairey / Obey Giant (Andr\u00e9 the Giant Has a Posse, 1989)",
+    "url": "https://en.wikipedia.org/wiki/Shepard_Fairey",
+    "what": "A sticker campaign that began in 1989 and grew from a grainy portrait with a deadpan caption into the OBEY propaganda image. Fairey cites the film They Live as the basis for the word 'obey' (per the Obey Giant sources).",
+    "steal": "Repetition as authority. One face or mark stuck everywhere until it feels official. The eyepatch triangle as a sticker you find on things all over the page, with a deadpan caption, is cheaper and funnier than any hero image."
+   },
+   {
+    "name": "Rodchenko constructivist poster language",
+    "url": "https://en.wikipedia.org/wiki/Alexander_Rodchenko",
+    "what": "Diagonal compositions, clipped photographic figures set into flat geometric fields, slab headlines. The 1924 Lengiz 'Books' poster is the best-known example. My search found little on exact palette, so the red-and-black claim is conventional wisdom, not verified.",
+    "steal": "Everything tilted 15-30 degrees, photos cut into hard-edged shapes, headline type as a structural block. Gives energy to the Storytelling strand without any 3D."
+   },
+   {
+    "name": "Official Monster Raving Loony Party ephemera",
+    "url": "https://vote.wales/voting-information/party-list/8c74ac6d-e7ab-411a-b0da-8bec191e2344",
+    "what": "The UK's best-known joke party, formed 1982. Its registered ballot emblems include a top hat marked 'Vote Loony'. The People's History Museum holds a 1984 'Vote Sutch Monster Party' sticker (https://phm.org.uk/collections-display?irn=46952). I found no good source on its leaflet design, only press coverage.",
+    "steal": "British voters already accept a joke party on the real ballot. The lesson is the emblem box: a tiny registered logo that sits on an official ballot beside Labour and Tory. BadCode's triangle fits that box exactly."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "THE WEDGE",
+    "concept": "The homepage is one 1919 poster. Black ground, a huge thin white ring, and the red triangle (the logo's eye) at 2 o'clock. As the page loads the triangle accelerates and drives through the ring, which breaks into three arcs. Each arc is stretched into a diagonal constructivist slab that fills a third of the screen, tilted 20 degrees and slightly overlapping the others. Scrolling slides the slabs like machine parts so one of them fills the screen. Type is heavy slab capitals, white on red or black, no gradients, no glow. Materials are flat litho ink and visible paper grain. Everything is red, off-white (warm newsprint, not pure white), black and one spot of gold reserved for Future Proof's 'lit' section.",
+    "strands": "Slab 1 STORIES: the diagonal band is a strip of clipped film frames cut into hard-edged shapes like Rodchenko photomontage, with a title stamped across it. Slab 2 NEWS: a band that scrolls headline text in a ticker, with the 'Nurses: \u00a30' counter set large in a red block that flips like a station departures board. Slab 3 GOVERNMENT: the only slab that is perfectly horizontal and upright, off-white with a black bar and a green 'Start now' button. It is the one that wants to look official, and its straightness against the other two tilted slabs is the joke. The three are told apart by angle and surface, not by three colours.",
+    "hero": "First 5 seconds: black screen, then a silent thin ring appears. The red triangle shoots in from the corner with a single hard sound and splits the ring into three pieces that fly to their slabs, each slab labelled in one word (TELL / REPORT / RULE or similar). No loading spinner, no cookie bar until after.",
+    "reader_fit": "It is flat, loud, and wordless enough to land in two seconds on a phone. It carries the look of British political print, which this reader recognises, without sounding like a tech product or a crypto launch. It never explains itself, so it does not condescend. The red triangle is already the brand, so nothing is borrowed.",
+    "risk": "Lissitzky's poster is a Bolshevik civil-war image, and a UK working-class reader drifting right could read red wedge on black as 'communist'. Mitigate by using the form without Soviet text, keeping the red closer to postbox red than hammer-and-sickle crimson, and letting the Government strand's GOV.UK-style parody carry the British tone."
+   },
+   {
+    "name": "THE MINISTRY HOARDING",
+    "concept": "A brick wall pasted over with posters, seen head-on and slightly cropped, like a real UK hoarding. Three large posters in the exact 1939 Ministry of Information format sit in the middle: one flat colour field, the triangle in the crown's place, and one blunt line of white capitals. Behind and around them are older torn bills, stickers and wheatpaste edges. The camera does not move; the wall does. Hovering lifts a poster's corner like glue that hasn't dried, revealing the strand's content underneath. Type is a heavy British grotesque in white capitals, plus a typewriter face for small print. Colours are the wartime set: Ministry red with a slightly faded finish, bottle green, and dirty cream paper stock.",
+    "strands": "Poster one in red: 'YOUR FILMS, YOUR SONGS' style line for STORIES, with the EP covers pasted as small bills on it. Poster two in cream and black: NEWS, headed like a wartime bulletin with a daily-changing line, and the week's tally as a pencilled-in box. Poster three in GOV.UK-inspired green: GOVERNMENT, with a mock 'Start now' button and a small box 'Have you checked what your Cabinet said today?'. Because all three share one crest, one margin and one type system, the eye reads them as a single authority issuing three notices. They differ by what is pasted on top of them: film stills, a news scroll, a form.",
+    "hero": "First 5 seconds: an empty brick wall. A hand-pasting sound; the three posters unroll one after another from top to bottom with wet edges, the third one landing slightly crooked. Then a stencilled line appears on the wall beneath: 'BADCODE. ISSUED FROM THE FUTURE.' with the eye-ring logo as a circular franking stamp.",
+    "reader_fit": "Hoardings, wartime posters and notices are shared British furniture, so this feels like a thing the reader has seen all their life. The 'Your Courage' resentment is a known British irritant, so sending up the top-down voice earns trust. It is tactile and low-tech, the opposite of a SaaS page.",
+    "risk": "Nostalgia can read as cosy and pro-establishment, and wartime 'keep calm' is saturated by merchandise. It must be bent: every poster should have one line that is slightly wrong in a menacing, funny way, so it plays as BadCode's voice rather than a Keep Calm tea towel."
+   },
+   {
+    "name": "X MARKS THE SPOT",
+    "concept": "The homepage is a UK ballot paper: cream stock, black rules, a numbered list of boxes, the little voting pencil on a string as the cursor. Three candidates stand for election, each with an emblem box. The joke is that they are all the same party: the emblem in each box is the BadCode triangle, with a different name and 'description' line beside it. The visitor places their X, but the X snaps to wherever they click and stamps with a wet ink sound. After voting, the screen shows 'You voted for BadCode. So did everyone.' and the chosen strand opens. Fairey-style, the triangle sticker also appears over the rest of the page: on a lamp post photo, on a bus stop, in a corner, each with a different deadpan caption. Type is a plain serif ballot face (Times-like) and small caps, black on cream, with one red X.",
+    "strands": "Candidate 1: 'STORY, Teller of' (STORIES), emblem box shows an EP cover thumbnail. Candidate 2: 'MONEY, For Something' (NEWS), emblem shows the 'Nurses: \u00a30' tally in miniature. Candidate 3: 'GOVERNMENT, The BadCode' (PARTY), with the green Start-style button inside its box and the line 'Promises to enact Future Proof'. They are told apart by the description line and the object inside the emblem box, since the rules and layout are identical, which is the point: three ways to vote, one candidate. Future Proof's section reveals a lit, daylight-yellow ballot box.",
+    "hero": "First 5 seconds: the cursor is a pencil, and a ballot paper fills the screen with all three boxes empty. After two seconds, an X is drawn in the third box by itself, then another in the second, then the first, as though a very fast voter filled it in. A rubber stamp comes down on the corner: 'COUNTED'. The pencil is handed back to you.",
+    "reader_fit": "Everybody in the UK has stood in a polling booth with that pencil, so it is instantly legible, and it flatters the reader's agency (a vote is theirs) while quietly mocking the choice on offer. The humour is dry and adult. It gives the political party strand a real-world hook without asking anyone to join anything.",
+    "risk": "A fake ballot invites 'this is election interference or disinformation' reading if it looks too real, and an emblem box beside real party names could be confused with a real registration. Keep it clearly a joke: no real party names, no real constituency, the 'COUNTED' stamp and an in-world disclaimer, and do not use the Electoral Commission's actual layout or wording."
+   }
+  ]
+ },
+ {
+  "lens": "Working-class British vernacular: Teletext, rave flyers, fanzines, tabloids, betting shops, Argos. Six standard searches (budget kept under 10); no page fetches. Tabloid font and terrace-banner searches were thin, so those references are weaker.",
+  "references": [
+   {
+    "name": "NMS Ceefax (Nathan Dane's Ceefax recreation)",
+    "url": "https://www.raspberrypi.com/news/keeping-ceefax-alive-with-nms-ceefax-the-magpi-118/",
+    "what": "A working public Ceefax clone with live news and a Met Office weather map, in the original 8-colour palette and 40x24 grid.",
+    "steal": "The constraint is the brand. Fixed grid, 8 flat colours, blocky mosaic graphics, numbered pages (P100 Stories, P200 News, P300 Government). Page numbers become the navigation: the visitor types 1-0-0."
+   },
+   {
+    "name": "The Creative Legacy of Teletext (Craig Oldham, WeTransfer)",
+    "url": "https://wepresent.wetransfer.com/story/teletext-creative-legacy/",
+    "what": "A designer's account of how teletext's hardware limits forced a deliberate, readable graphic language.",
+    "steal": "Use it to justify the look. Chunky mosaic block-graphics for the three strand emblems, plus the 'subpage cycling' rhythm of a page that turns over by itself."
+   },
+   {
+    "name": "Hyperallergic: The Retro Aesthetics of Teletext Art",
+    "url": "https://hyperallergic.com/the-retro-aesthetics-of-teletext-art.md",
+    "what": "Coverage of artists making full images from teletext block characters.",
+    "steal": "Proof that the Logo's ring and triangle can be redrawn as 2x3 teletext mosaic blocks and still read. A pixelated eye that is still the eye."
+   },
+   {
+    "name": "phatmedia UK Rave Flyer archive (Dave Nicholson)",
+    "url": "https://velocitypress.uk/rarest-uk-acid-house-flyers/",
+    "what": "The largest online collection of original UK acid house and rave flyers, 1988-89 onwards, also published as a book.",
+    "steal": "Fluoro colour blocks, smileys, photocopy grain, and cramped info-dense layouts with 'tickets \u00a38 / info line' text. A 'bulletin' that is a flyer with a hotline number."
+   },
+   {
+    "name": "Ex-TRACTS (Julia von Dorpp, 99 UK rave flyers)",
+    "url": "https://archive.thevinylfactory.com/?p=169772",
+    "what": "A book focused on the typography, symbols and logos of 90s rave flyers.",
+    "steal": "Mismatched hand-cut type, a logo stamped on everything, flyers read as a pile. Three flyers dropped on the floor as the homepage's three strands."
+   },
+   {
+    "name": "Club Rave Party Art archive",
+    "url": "https://peoplesgdarchive.org/item/2248/club-rave-party-art",
+    "what": "An archive of 80s-90s flyers, publications, audio and video.",
+    "steal": "Flyers shown in context, as dated, folded, pocket-worn objects. Use the same worn-paper treatment for the party's manifesto."
+   },
+   {
+    "name": "Punk fanzine cut-and-paste (Sniffin' Glue scholarship, core.ac.uk)",
+    "url": "https://core.ac.uk/download/42151156.pdf",
+    "what": "Academic work on British DIY fanzine production: cut-n-paste letterforms, photocopied collage, hand-scrawled text.",
+    "steal": "The rule that the seams must show. Ransom-note headlines, photocopy black, staple marks. This is the Storytelling-strand fanzine skin."
+   },
+   {
+    "name": "Argos catalogue archive (Book of Dreams)",
+    "url": "https://www.techradar.com/uk/news/flick-through-45-years-of-retro-gadgets-in-a-huge-online-archive-of-argos-catalogues",
+    "what": "A 45-year online archive of the Argos catalogue, shared nostalgia for the 'book of dreams'.",
+    "steal": "The catalogue-number-plus-price grid and the pencil order slip. Film cards become 'Cat. No. 4821, \u00a30.00', and the visitor 'writes down' the item they want."
+   },
+   {
+    "name": "Ladbrokes/Racing Post betting shop display (paperless move, 2019)",
+    "url": "https://sbcnews.co.uk/retail/2019/08/01/ladbrokes-goes-paperless-with-racing-post-digital-betting-shop-display/",
+    "what": "Details of the wall-of-form-sheets and 'departure board' next-race screens that fill UK betting shops.",
+    "steal": "Dense odds rows on a dark screen with a countdown to 'next off'. The news strand can be a live board where policies are runners and the 'odds' on each are honest."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "P100 (the Ceefax Front Door)",
+    "concept": "The homepage is a full-screen teletext service, 40x24 monospaced grid, 8 flat colours on black, a 'BADCODE CEEFAX' header with the date and a ticking clock. The logo is rebuilt from teletext mosaic blocks, so the ring is chunky and the red triangle is a block of red. Navigation is page numbers, and the visitor can type three digits on the keyboard or tap the coloured Fastext buttons at the bottom (red, green, yellow, cyan-as-white). Pages turn with the real teletext 'redraw' flicker line by line rather than a smooth fade. A scrolling ticker at the top carries the day's real-news-versus-BadCode lines.",
+    "strands": "Three index lines on P100, each with its own number and colour. 'P200 STORIES' is yellow on blue, with film and song listings as a TV guide. 'P300 NEWS: Money For Something' is white on red, headline-only with a 'Nurses: \u00a30' tally in a flashing box. 'P400 GOVERNMENT' is black on green, a manifesto in numbered clauses with a 'last amended 07:12 today' stamp. Future Proof is the one page that breaks the grid into a lit, white-background 'building site' page. The strands differ by colour, number and page-header furniture, not by layout.",
+    "hero": "Black screen, then the teletext 'redraws' line by line in about 2 seconds, assembling the ring and the red-triangle eye in blocks. The eye 'blinks' (the old <blink> flash), and the three index lines populate with a typed-in page number cursor.",
+    "reader_fit": "Teletext was the page everyone checked for football scores and the lottery. It carries no pretension, no design-studio signature and no crypto hint. It also suits a deadpan authoritative voice: 'the service that told you the news before the news did'. It works on a phone, because it is just big text.",
+    "risk": "Teletext nostalgia skews older and could read as a joke about the past rather than a warning from the future. The monospaced grid may also fight long reading (manifesto and Future Proof need a calm reading mode)."
+   },
+   {
+    "name": "The Flyer Pile",
+    "concept": "The homepage is a pavement or pub-table of dropped, photocopied rave flyers, A5 and slightly overlapping, with tape, creases and boot-print smudges. Each strand is a loud flyer in its own format. Hover or tap lifts one, and a pinch or flick sends it to the floor to show the next. The info line is real: every flyer ends with 'INFO LINE: 0800 BAD CODE' that plays a voice message on click. Fluoro acid yellow, hot pink, photocopy black, and one flat red that is only ever the logo's red.",
+    "strands": "Strand 1 is a gig flyer, 'TWO FILMS. TWO SONGS. EIGHT TIMES. ENTRY: FREE', with ticket-stub cut-outs per story. Strand 2 is a pirate radio flyer, 'LIVE ON THE AIR: MONEY FOR SOMETHING, Wednesdays', with a frequency dial graphic and a countdown to the next bulletin. Strand 3 is a campaign leaflet in the same photocopied style, a candidate flyer reading 'VOTE FUTURE PROOF', with the party's rosette in red triangle form. The shared logo stamp is on all three, the way a promoter's tag would be.",
+    "hero": "Flyers fall into frame from above, one by one, in about 3 seconds, and land in a pile. The last to land is the big red-triangle eye, stamped on top with an audible thunk.",
+    "reader_fit": "The 90s rave scene is cross-class, hard-won, and carries its own folk memory of Britain losing its commons (the Criminal Justice Act, the free party). Flyers are physical, tactile, handed over by a stranger, which is the opposite of corporate. It talks to the reader as a mate, not a campaign.",
+    "risk": "Rave imagery skews to a specific generation and might read as party and not politics. The pile layout is hard to make accessible and responsive, and stacked flyers hide content."
+   },
+   {
+    "name": "The Next Off (betting shop wall)",
+    "concept": "The homepage is the wall of a bookies: a bank of three big dark screens plus a paper racing sheet pinned to the left, and a bored fluorescent light flickering above. The voice is the shop's: a countdown to 'next off' on every screen, with a tannoy-style line of copy. The 'odds' are honest and mean something: each runner is an outcome the viewer is already betting their life on, e.g. 'Rent goes up: 1/50. Wages keep pace: 66/1'. Sans-serif condensed type in white and amber on near-black, green race-card baize, a single red marker-pen circle around the thing that matters. Click a screen to go full-screen into the strand.",
+    "strands": "Screen 1 (left) is 'RACE CARD: NOW SHOWING', a form-guide listing of the films and songs with times, runners and 'going: heavy'. Screen 2 (centre, biggest) is the news bulletin: a looping silent clip with a lower-third strip and a running tally 'NURSES \u00a30 / MONEY FOUND THIS WEEK \u00a3___'. Screen 3 (right) is the manifesto as an 'ANTE-POST MARKET': policies as outcomes with BadCode Government odds against the real cabinet's, updated daily. The strands are told apart by which screen, plus each screen's colour tab.",
+    "hero": "The wall flickers on. The three screens sync to one countdown, 'NEXT OFF 00:05', and when it hits zero every screen flashes to the red-triangle eye for a beat before the content resolves into the three boards.",
+    "reader_fit": "The reader knows exactly how to read this: odds, form, and the sense that the house wins. It makes the argument about rigged systems in the reader's own vocabulary, with no explanation needed, and it lets the news strand be the loudest thing on the wall.",
+    "risk": "Gambling imagery may be unwelcome to some of the audience and could imply we endorse betting. Dark and dense also drifts toward the 'crypto trading terminal' look we killed; it needs paper, baize and fluorescent grime to stay a bookies."
+   }
+  ]
+ },
+ {
+  "lens": "Interaction metaphors for choosing between three things: TV channel dial, radio tuner, fruit machine, trivision prism, split-flap board, three doors, triptych. Search found few ready-made \"pick one of three\" sites, so the references are mostly technique building blocks, not finished homepages.",
+  "references": [
+   {
+    "name": "threevision (npm, three.js)",
+    "url": "https://npmjs.com/package/threevision",
+    "what": "A three.js component modelled on traditional trivision billboards. It can show more than three images or videos on rotating slats.",
+    "steal": "Slat-flip transition between faces. Each strand is a billboard face that turns over on a mechanical, slightly late rotation, not a fade."
+   },
+   {
+    "name": "Prismify",
+    "url": "https://theglander.github.io/Prismify",
+    "what": "A library for CSS-powered 3D prisms of HTML elements, rotated by CSS variables on the X and Y axes.",
+    "steal": "A real three-faced HTML prism (3 faces at 120 degrees) that scrolling or dragging rotates, with live HTML (links, text) on every face. The same transform-style: preserve-3d approach is documented in David DeSandro's 3D transforms tutorials (https://www.github.com/desandro/3dtransforms/blob/gh-pages/box.md)."
+   },
+   {
+    "name": "splitflap-js",
+    "url": "https://github.com/c-hinck10/splitflap-js",
+    "what": "A framework-agnostic split-flap (Solari board) core with a React wrapper. It has setMessage(), play(), next() and reset(), and CSS-variable theming.",
+    "steal": "Headlines and tallies that clatter into place letter by letter, such as 'NURSES: \u00a30' or 'MONEY FOUND THIS WEEK'. Search results also list qrion25/splitflap and a vanilla 'FlipOff' project as alternatives; I did not open any of them."
+   },
+   {
+    "name": "Radio Garden (Studio Puckey)",
+    "url": "https://swling.com/blog/2016/12/radio-garden-an-addictive-way-to-scan-online-radio-stations",
+    "what": "A globe you turn like a radio dial. Static plays between stations and resolves into a station as you home in on it.",
+    "steal": "Audible and visual static between strands that clears as you land on one. Choosing is the act of tuning in, and the in-between state is deliberately imperfect."
+   },
+   {
+    "name": "Low-poly room where you fly into the CRT (three.js forum)",
+    "url": "https://discourse.threejs.org/t/a-low-poly-room-where-you-fly-into-the-crt/92694",
+    "what": "A three.js portfolio set in a room. The camera flies into a CRT, and the screen carries a real interactive HTML terminal mapped onto the glass.",
+    "steal": "The home screen is an object in a room. Moving into the screen is the navigation, and the content on the glass stays clickable."
+   },
+   {
+    "name": "Retro workshop desk portfolio (three.js forum, React Three Fiber)",
+    "url": "https://discourse.threejs.org/t/my-portfolio-is-a-retro-workshop-desk-you-can-actually-use/95359",
+    "what": "A portfolio where inserting a Famicom cartridge makes the game play live on a CRT through a render-target portal. The idle screen shows a DVD screensaver.",
+    "steal": "Insert-a-thing-to-change-what-the-screen-shows. Three cartridges or tapes in a drawer, and an idle screensaver that bounces the BadCode triangle."
+   },
+   {
+    "name": "@mesmotronic/three-crtpass",
+    "url": "https://www.pkgstats.com/pkg:@mesmotronic/three-crtpass",
+    "what": "A post-processing pass that makes any three.js scene look like it is on a CRT.",
+    "steal": "A cheap way to make any strand look like it is being broadcast, with scanlines, curvature and bleed."
+   },
+   {
+    "name": "JS slot machine (Web Animations API, vanilla)",
+    "url": "https://github.com/athulkrishna-dev/Js_slot_machine",
+    "what": "A vanilla HTML/CSS/JS slot machine that uses the Web Animations API for the reels. Other repos in the results include bitchwhocodes/html5-slot-machine and a 3D-cylinder reel generator (nuxy/slot-machine-gen).",
+    "steal": "Reels that spin and settle on staggered timings, with a faux-3D cylinder look. The search found no hold or nudge implementation, so those would be built by hand."
+   },
+   {
+    "name": "3D door CSS technique and advent-calendar pattern",
+    "url": "https://raw.org/software/graphics/css-3d-advent-calendar/",
+    "what": "Hinged 3D doors in pure CSS: a perspective container, a left-hinge transform-origin, and buttons that toggle the open state so it works by keyboard and touch.",
+    "steal": "Three tall hinged doors that swing open towards the viewer, with each strand lit behind its door. Nothing found covers Monty Hall logic, so that is custom JS."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "THE PLUG",
+    "concept": "The homepage is a close-up of a dead UK mains extension block (cream plastic, scuffed, a burn mark) with three sockets, and BadCode's three strands are three chunky plugs on three fat flexes dangling off-screen. The visitor drags a plug into a socket and the whole page powers up as that strand: the screen behind lights, the room hums and the fuse rattles. Socket 1 powers a CRT showing the film reel, socket 2 a news-studio monitor, socket 3 a building-site floodlight. The fuse is the logo, and the red triangle is the pilot light. Pulling a plug out drops the page back to dark.",
+    "strands": "Each strand is a plug with a different moulded label, a different cable colour, and a different thing it powers. Stories: a black flex into a cinema-style projector glow. News: a red flex into a flickering studio monitor. Party: a yellow-and-black hi-vis flex into a floodlight, which is the only warm daylight on the site. Unplugged, the page is nearly black with a single red triangle LED. The three flexes loop up into the ring of the logo.",
+    "hero": "First 5 seconds: the room is dark and a tired single red LED blinks. A deadpan caption types out: 'The future is on a meter. Plug something in.' The three plugs sway into frame on their flexes. One of them (the party plug) is already sparking slightly. Dragging any plug makes the whole screen thunk on with a mains hum and a bulb-warming flicker.",
+    "reader_fit": "The reader knows what a cheap extension lead, a fuse and a prepayment meter are. The metaphor reaches the pocket (energy bills, the cost of living) without a single economics word. It is tactile, domestic and funny, with no jargon and no virtue-signalling.",
+    "risk": "Dragging a physical plug is fiddly on phones and a cable physics demo can feel gimmicky or heavy. It needs a fallback tap-to-plug mode, and the skeuomorphic rendering has to be art-directed with care or it reads as a stock 3D asset."
+   },
+   {
+    "name": "THE FRUIT MACHINE",
+    "concept": "The homepage is a pub fruit machine, the sticky carpeted kind with a flashing bulb border, glowing in the corner of a dark pub. Three reels each carry the BadCode symbols: the red-triangle eye, a 'microphone with a balaclava', and a ballot-box-as-spreadsheet. The visitor presses HOLD and NUDGE buttons and lands on a strand. A single spin leaves the reels in a different state each visit: three triangles is the jackpot and opens a cheeky 'all three' showreel. A 'WIN' light bank doubles as a navigation panel. The reels' small readout shows 'Money found this week: \u00a3___' that ticks up on a split-flap-style counter.",
+    "strands": "Each reel is one strand: Reel 1 is stories (film clapper, tape, balaclava), Reel 2 is news (microphone, headline strip), Reel 3 is the party (rosette, hi-vis, a hand with a pen). Holding a reel and spinning the others pulls up that strand's content on the machine's backglass, a lit panel above the reels. After a spin the three winning symbols spell out the strand you landed on, and the machine pays out by dropping the strand's tile into the tray.",
+    "hero": "First 5 seconds: the machine wakes from attract mode, bulbs chasing round the frame, a cheap synth jingle, the reels free-spinning behind a coin slot reading 'INSERT YOUR VOTE'. Click once and the reels stop, one by one, with a clunk, on triangle, triangle, triangle. The backglass lights up with 'YOU'VE BEEN HAD. NOW PICK A SIDE.'",
+    "reader_fit": "Everyone in the target group has stood in front of a pub fruit machine, and the shared joke about 'the house always wins' is the economics point already made. The machine is visibly rigged, which is exactly the BadCode voice. It is nostalgic, funny and unpretentious.",
+    "risk": "Gambling imagery may sit badly with a party that preaches economic fairness, and with problem-gambling sensitivities in the UK. It also makes choosing a strand feel random when it should be deliberate. Mitigation: make it explicitly an anti-gambling joke where the machine is rigged and every reel only ever stops on the strand you chose with HOLD."
+   },
+   {
+    "name": "TRIVISION",
+    "concept": "The homepage is a giant roadside three-sided trivision billboard, the kind of rotating slat sign you see on a retail park, shot at dusk from a lay-by with traffic lights going past. The billboard rotates every few seconds on its slats between three adverts: a film poster for the stories, a newsreader ad for the bulletin, and a hi-vis political campaign poster for the Government. Each advert is a fully designed poster with a tagline in a different typeface. The visitor can scroll to rotate the board by hand or tap a pole-mounted control box (a grey junction box with three buttons) to pick one. Between rotations, the three slats briefly show the whole site's tagline in fragments.",
+    "strands": "Face 1 (stories) is a matte, cinematic, dark poster with film-grain and a pull-quote; Face 2 (news) is a hard red-and-white broadcast ident with a ticker along the bottom; Face 3 (the party) is a flat yellow-and-black campaign poster with a rosette and a large plain-English promise. When the slats turn, the whole surrounding scene's light shifts to match the face (night cinema, studio fluorescent, daylight). The logo ring is bolted on top of the billboard like a lamp.",
+    "hero": "First 5 seconds: a lay-by at dusk, lorries passing, and the billboard slats snap round with a clatter from an advert for 'BADCODE' to three distinct posters, ending on a cheerful one that says 'THE FUTURE HAS ALREADY HAPPENED. IT WAS RUBBISH.' The camera pushes slowly toward the board.",
+    "reader_fit": "A trivision on a retail-park roundabout is the most British piece of public advertising there is. It says 'we are an ordinary thing you pass on the way home', not 'we are an art project'. Posters are the native language of UK politics, the Saturday-night telly and the cinema.",
+    "risk": "A rotating sign is passive, so the visitor may wait for the next face rather than choosing, and slats can reduce legibility on mobile. It needs a clear manual control, and a 'seen it, jump' fast path so a returning visitor is never made to wait."
+   }
+  ]
+ },
+ {
+  "lens": "Live data and receipts: tickers, clocks, counters and trackers that make a homepage feel alive and accountable every day. Eight searches were run, and I did not fetch any pages. Where I could not verify a design detail, the reference says so.",
+  "references": [
+   {
+    "name": "Climate Clock, Union Square (Golan and Boyd, 2020)",
+    "url": "https://www.smithsonianmag.com/smart-news/clock-new-york-counts-down-time-remaining-avert-climate-disaster-180975881/",
+    "what": "A civic clock built from a real one. The Metronome was turned into a public countdown to the carbon-budget deadline, in red. A second green number, the 'lifeline', shows renewable share. Artists Gan Golan and Andrew Boyd cite the Doomsday Clock and the National Debt Clock as influences.",
+    "steal": "Two numbers in opposite colours that race each other: a red 'deadline' against a green 'lifeline'. The page reads as a duel and the viewer works out who is winning. We could run one pair per strand. The mounted-on-a-building feel, a giant digital sign bolted over something ordinary, is also worth stealing."
+   },
+   {
+    "name": "Wealth, Shown to Scale (Matt Korostoff, 1-pixel-wealth)",
+    "url": "https://hacktivis.me/git/mirror/1-pixel-wealth/file/index.html.html",
+    "what": "A scroll site where one pixel is $1,000. You scroll a long, empty page past ordinary wealth figures to reach a billionaire's fortune, one screen at a time. Mirrors and classroom versions exist, for example https://oadouglas.github.io/Wealth-To-Scale-Adapted-For-Classroom. The author is Korostoff, not neal.fun.",
+    "steal": "The joke is the effort. Scroll distance is the argument. A homepage where one tiny row stands for a nurse's weekly pay and the scrolling takes forever to reach the first tick of a chairman's pay needs no caption. The page proves the point by being tedious."
+   },
+   {
+    "name": "US debt clock sites (us-debt-clock.com and similar)",
+    "url": "https://www.us-debt-clock.com/",
+    "what": "Dense walls of fast-ticking dollar figures with per-citizen and per-taxpayer breakdowns. A forum page shows a $39.69 trillion figure with the note 'Algorithmically projected from latest Treasury data'. Another clone, USDebtClock.co, names the Treasury Fiscal Data API as its source and interpolates each second from a 30-day average growth rate. I could not retrieve usdebtclock.org's own page, so its exact layout is unverified.",
+    "steal": "Honest fakery. The ticking is a projection from the latest real figure, and the footnote says so. This is a good model for our 'money found this week' counter: it ticks live, and the small print gives the source and the method. The per-person divisor ('per household', 'per nurse') is the other steal."
+   },
+   {
+    "name": "Doomsday Clock, Bulletin of the Atomic Scientists",
+    "url": "https://news.uchicago.edu/story/doomsday-clock-moves-closest-ever-apocalypse-89-seconds-midnight",
+    "what": "One hand and one number, reset by a committee about once a year. It stood at 90 seconds to midnight in 2023 and at 89 seconds in the January announcement described here. The range runs from 17 minutes in 1991 to 89 seconds.",
+    "steal": "A rare, ceremonial update with a long history strip behind it. A homepage 'dial' that moves only when BadCode rules on it, with every past setting kept, would turn the live-data idea into an event. Seven minutes to midnight in 1947 and 89 seconds now is a ready-made archive timeline."
+   },
+   {
+    "name": "TheyWorkForYou (mySociety)",
+    "url": "https://www.theyworkforyou.com/about/",
+    "what": "A UK charity's parliamentary monitor. It covers Hansard for the Commons, Lords, Scottish Parliament and NI Assembly, with voting records, the Register of Members' Interests, an API and RSS. Every section has a permalink. Commons debates go back to 1918.",
+    "steal": "The receipt is a permalink to the real record. Each BadCode Government claim could carry a small link to the Hansard passage it answers. Because the data is open, the cabinet's own words can be pulled in as a live feed. The visual tone is plain public-record paper, which carries more weight than slickness."
+   },
+   {
+    "name": "Worldometer",
+    "url": "https://www.worldometers.info/about/",
+    "what": "A homepage of live counters whose numbers roll as change unfolds. Its About page says they are generated by a proprietary real-time estimate algorithm drawing on official sources. A review calls the layout basic, mostly tables, graphs and numbers. I could not confirm how it animates the digits.",
+    "steal": "A wall of unrelated counters that all move at once and make the page feel like a control room. Plain styling is part of the authority. Counter rows named for our own jokes ('Nurses: \u00a30', 'Consultancy fees this hour') would make the same wall funny."
+   },
+   {
+    "name": "Forbes Real-Time Billionaires",
+    "url": "https://www.fundssociety.com/en/news/private-banking/forbes-releases-real-time-global-billionaires-ranking",
+    "what": "A ranked list that updates with the market. A 2014 launch article says public holdings are revalued about every 5 minutes while markets are open and private holdings once a day. That cadence may have changed. Bloomberg's index, by contrast, is a daily close-of-day ranking and not a true ticker (https://www.bloomberg.com/billionaires/).",
+    "steal": "A leaderboard whose rows shuffle position as the numbers move. A ranked table of 'who got paid this week' with arrows and rank changes makes the news strand look like a league table. Bloomberg's daily-close rhythm suggests a ceremonial 'closing bell' each evening."
+   },
+   {
+    "name": "Split-flap displays and LAb[au] 'Signal To Noise'",
+    "url": "https://www.creativeapplications.net/project/signal-to-noise-by-labau-512-mechanical-split-flaps-and-the-noise-of-data",
+    "what": "The clattering mechanical departure board. LAb[au]'s installation uses 512 recycled split-flaps to turn data into sound and pattern. The Wikipedia entry is at https://en.wikipedia.org/wiki/Split-flap_display.",
+    "steal": "A UK railway departures board is the one object every working-class Brit has stared at in the cold. Use flipping letters, with the clatter as sound, for the strand names and for headlines. It is tactile, familiar and not crypto."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "DEPARTURES",
+    "concept": "The homepage is a full-viewport railway station departures board in black enamel, amber and off-white split-flap letters. It has the clatter, the slightly stiff flips and a scuffed bezel. Every row is a 'service' leaving from BadCode. The board re-flips every few seconds with real, dated content. 'Platform' is the strand, 'Status' is a live receipt ('DELAYED: Nurses, 0 days since last pay rise'), and 'Calling at' lists the contents. A BadCode Government row shows 'Today's manifesto: 14 changes, 1 contradicts the Chancellor, 0 apologies'. Clicking a row opens that strand. The ring-and-triangle eye sits as the station clock above the board, and its triangle is the second hand.",
+    "strands": "Three platforms, three row families. Platform 1 STORIES in off-white with a film-and-song glyph, rows are the four stories and eight videos, status is 'RUNNING' or 'NOW SHOWING'. Platform 2 BULLETIN is amber and flips fastest because it is the topical one, with rows that are headlines, the 'Nurses: \u00a30' tally and 'money found this week'. Platform 3 GOVERNMENT is a slower, heavier row in the logo red, with manifesto lines struck through when the real cabinet contradicts them. The platform number and the speed of the flip tell them apart, and the sound does too: stories clack slowly, news clacks nonstop, government gives one heavy thunk.",
+    "hero": "On load the board is blank and silent. For one beat it is pitch black with only the eye-clock. Then the whole board clatters into life, hundreds of flaps at once, settling letter by letter from left to right until the three platform names land: STORIES, BULLETIN, GOVERNMENT. A single red row flips last: 'NEXT DEPARTURE: 00:03:12', counting down to the next bulletin drop. Tap the screen and the sound can be toggled.",
+    "reader_fit": "Everyone in the UK has stood under a departures board in the cold and been told 'delayed' with no explanation. It borrows the language of a service that does not work and flips it. A board is plain, municipal and not slick, and it carries authority without condescension. Nothing about it reads as crypto, tech bro or activist.",
+    "risk": "The board is a metaphor that could swallow the content. Rows are small text, so the films and the music have no visual room, and a station gimmick fades after the first visit. Mitigate by letting each row expand into a window onto the strand. The sound must default to off. Real accessibility work is needed too, because flipping text is hard to read for some people."
+   },
+   {
+    "name": "THE SCALE OF IT",
+    "concept": "The homepage borrows Wealth, Shown to Scale and makes the scroll the whole identity. The first screen is a tall, nearly empty field of cream paper with one tiny red triangle at the top and a ruler down the left edge in pounds. As you scroll, the page unrolls through a long strip where one pixel equals a fixed sum. The three strands are three markers on the strip, each placed at the amount of money it is about. The strip runs through a nurse's yearly pay, then a household bill, then a consultancy fee, a ministerial contract, and a billionaire's fortune, with BadCode's three doors cut into the paper at those points. The ruler is the navigation, and a live counter in the corner shows how far you have scrolled in pounds and in minutes of your own life.",
+    "strands": "Each strand sits at a different altitude on the ruler. STORIES is at the human end, near a nurse's annual salary, drawn as a lit window with a thumbnail of each film. The BULLETIN sits mid-way at the figure of the week's story (a hospital contract, a consultancy bill), and its number changes daily, so the page grows or shrinks on every visit. GOVERNMENT sits at the far end, where the page has become a mile of blank paper, with a single door that opens only after a long scroll. Colour changes with depth: warm cream and ink at the bottom, then pale grey, then white with a hard red rule. A fast-scrolling 'skip' button exists because the tedium is the point but should not be a trap.",
+    "hero": "The first five seconds are quiet. The red triangle drifts down the page on its own, and a caption in small caps types out: 'This is a nurse's year, to scale.' It is one pixel high. The page scrolls itself a few hundred pixels, then stops, and a sentence says 'The next door is ten thousand times further.' The viewer realises the page is a measuring tape before any menu appears.",
+    "reader_fit": "It makes the point the reader already feels in their own bank balance without telling them what to think, which respects the rule never to say 'you've been duped'. The reader does the arithmetic. It also uses ordinary sums in pounds, such as a nurse's wage and a household bill, and avoids billionaire-bashing as the opening move.",
+    "risk": "It is a one-trick page that people recognise from the original and from copies, so it may feel borrowed. Long scrolls hurt on mobile and hide the three strands from anyone who does not scroll. The fix is a fixed three-door nav strip always visible at the bottom, and a clear credit to the idea. The figures must be sourced and dated, since a wrong sum on a page about receipts is fatal."
+   },
+   {
+    "name": "THE RACE",
+    "concept": "The page is a live duel between two numbers in the manner of the Climate Clock's red deadline and green lifeline, scaled up to fill the whole screen. On the left, in hard red, is 'what they said': a ticking count of days since the last promise, pounds announced, pounds delivered. On the right, in a warm sodium-lamp yellow, is 'what we filed': BadCode's manifesto lines, receipts and bulletins. The two columns run like a split-screen sports scoreboard with enormous seven-segment digits. In between sits the eye of the logo as a referee. Beneath the scoreboard the three strands appear as three 'commentary boxes', each with a live feed. Numbers are projected from the latest real figure and labelled as projections, in the manner of the debt clocks.",
+    "strands": "The scoreboard is the umbrella, and the three strands are the three commentary boxes beneath it. STORIES is a dark box with a looping film poster and a small 'Now showing' tag, the one place the scoreboard goes quiet. BULLETIN is a news-ticker strip that crawls along the bottom of the whole screen, always moving, with the presenter's red-triangle eyepatch silhouette in a corner. GOVERNMENT is the manifesto column itself, a daily-updating list in the yellow half, each line with a small Hansard link as its receipt. Typography separates them: seven-segment for numbers, a heavy grotesque for the bulletin, a typewriter face for the manifesto.",
+    "hero": "The screen opens as a stadium scoreboard powering on: the digits flick through 8s and settle. The left number is 'DAYS SINCE PROMISE: 1,204' in red, the right number is 'LINES FILED TODAY: 14' in yellow, and a hard buzzer-like tick marks each second. The referee eye blinks once, and a caption reads 'Same news. Opposite conclusions. Receipts kept.' The tick sound is the only audio and it is muted until the viewer chooses.",
+    "reader_fit": "A scoreboard is the football-terrace language of a pub, readable at a glance and fair-minded in form: two sides, one score, receipts. It does not preach. It also lets the reader decide who is winning, which is the opposite of condescension.",
+    "risk": "Fabricated or stale numbers are the main danger. A page about receipts with one wrong figure loses its point, so every counter needs a source line and an 'estimated' flag. A two-column duel also pushes the storytelling strand to the margin, and on narrow phones the split-screen has to stack. Finally, the richer the live feed, the more daily maintenance it demands from two people, so the first version should run from a single JSON file written by the Government agents."
+   }
+  ]
+ },
+ {
+  "lens": "Contrarian creative coding: make the homepage behave like a machine that has already seen how it ends. Eyes, terminals, git history, tape decay and net-art rule-breaking, rather than a tidy brand site.",
+  "references": [
+   {
+    "name": "WebGazer.js (Brown HCI)",
+    "url": "https://github.com/roachhd/webgazer",
+    "what": "Browser JS that turns a webcam into a rough eye tracker, with calibration. It runs entirely client-side.",
+    "steal": "Don't actually use the webcam (creepy, permission wall, and wrong for this reader). Steal the idea of a gaze: the logo-eye finds where YOU are looking and the page reacts. A mouse/touch proxy is enough, since research shows cursor position correlates closely with gaze."
+   },
+   {
+    "name": "Framer 'Cursor Eye Mascot' / three.js eye-follow components",
+    "url": "https://www.framer.com/marketplace/components/cursor-eye-mascot/",
+    "what": "Pupils that track the cursor across the whole viewport, some WebGL versions with eyelid squints that respond to cursor distance.",
+    "steal": "Pupil tracking across the whole viewport with an eyelid squint as the cursor gets close. Here the pupil is the red triangle, rotating to point at you and narrowing the ring like an eyelid."
+   },
+   {
+    "name": "term-website / Termfolio (xterm.js)",
+    "url": "https://solomonneas.dev/projects/termfolio",
+    "what": "A site that is a real shell: tab completion, history, URL routes that auto-run commands (visiting /projects runs `cd projects && ls`).",
+    "steal": "Routes as commands. Each strand is a command that runs on load (`git log --stories`, `tail -f news`, `cat manifesto`), and the nav is a prompt the visitor can also type into, with big tap-targets for people who won't."
+   },
+   {
+    "name": "Gource",
+    "url": "https://github.com/acaudwell/Gource",
+    "what": "OpenGL visualisation of a repo's history as a growing tree: directories are branches, files are leaves, contributors are avatars flying about and committing.",
+    "steal": "The tree growing out of one root and then forking is the BadCode origin myth already. Render it as a time-lapse of the world's history, with the bad branch dying and the good branch (Future Proof) sprouting into daylight."
+   },
+   {
+    "name": "CRTFilter (WebGL library)",
+    "url": "https://redinvader.itch.io/crtfilter",
+    "what": "WebGL post-process with barrel distortion, scanlines, dot mask, flicker and VHS tracking artefacts.",
+    "steal": "A rolling tracking bar and tape jitter as a whole-page layer. Tune each strand's amount of decay: lots on News (it is a transmission), none on Future Proof (clean daylight)."
+   },
+   {
+    "name": "Spectral 3D ghost effect (three.js + GLSL, FreeFrontend)",
+    "url": "https://freefrontend.com/code/interactive-spectral-3d-ghost-effect-2026-02-23/",
+    "what": "Mouse-tracking entity with time-quantised jitter, VHS glitch and bloom in a custom shader pass.",
+    "steal": "Time-quantised jitter (it snaps on 12fps steps rather than smoothly), which feels like tape damage instead of a digital shimmer. The pattern would also fit a masked news-host silhouette that follows the cursor."
+   },
+   {
+    "name": "JODI, wwwwwwwww.jodi.org (1995)",
+    "url": "https://en.wikipedia.org/wiki/Jodi_(art_collective)",
+    "what": "Net-art landmark that deliberately breaks the layout: letter noise, error text and a maze of dead ends that turns out to be readable source.",
+    "steal": "Make the break part of the joke. Source code or a 'error: timeline diverged' message leaks out of the page, and a small number of readable truths are buried in the noise (the receipts)."
+   },
+   {
+    "name": "Bruno Simon's drivable portfolio (Awwwards SOTM Nov 2019)",
+    "url": "https://www.creativebloq.com/news/3d-car-portfolio",
+    "what": "Three.js world where you drive a car between project signs with keyboard or touch.",
+    "steal": "Proof that a visitor will play with a homepage if the controls take one second to learn. The lesson is a single verb for the whole site, not a drivable 3D world."
+   },
+   {
+    "name": "Buck sandbox: moshing",
+    "url": "https://buck.co/sandbox/moshing",
+    "what": "Studio experiment in datamoshing: motion vectors from one clip drag pixels from another.",
+    "steal": "A transition that smears one strand's footage into the next, so scrolling from Stories to News looks like the video codec has failed. The history is bleeding through."
+   }
+  ],
+  "ideas": [
+   {
+    "name": "THE GAZE",
+    "concept": "The whole homepage is one enormous logo-eye on a near-black field: a thin ring the size of the viewport, with a red triangle pupil. The pupil tracks your cursor or finger, rotating to face you, and the ring narrows like an eyelid as you get close. Dragging the pupil toward a region of the ring is how you choose. The ring is split in three arcs, each a strand, and scrolling pushes you through the iris into that strand. The eye behaves as though it already knows which one you'll pick. Idle for 4 seconds and it picks for you, with a deadpan caption.",
+    "strands": "The ring is divided into three arcs at 10, 2 and 6 o'clock. Top-left arc (STORIES) is warm projector flicker with film-gate sprocket marks and tiny poster thumbnails drifting in it. Right arc (NEWS) is a sickly broadcast blue-grey, with a lower-third ticker running round the arc itself and a pulsing 'Nurses: \u00a30' counter. Bottom arc (GOVERNMENT) is the one lit place: flat, bright, building-site hi-vis yellow-green (#d8e24a) against black, with a plain stencil crest. Pupil hovering an arc floods the ring-interior with that strand's live content, like the eye is reading it.",
+    "hero": "Black screen. A thin white ring draws itself in, then the red triangle snaps in, off-centre at 2 o'clock, and swivels to the exact pixel of your cursor. It holds there for a beat and then a single deadpan line types underneath: 'You were going to click that.' Then the three arcs light up in sequence.",
+    "reader_fit": "No explaining or lecturing, just a gimmick that's a laugh within a second and works with a thumb on a phone (tilt/touch replaces the mouse). The sarcasm makes the visitor feel noticed, not studied, and the three strands are plain-worded: Stories, News, Government.",
+    "risk": "Only the eye is memorable and the three destinations can feel like thin portals. A cursor-follow eye is also a familiar cliche (mascot widgets), so the unusual part, the eyelid and arc selection, has to be built well and run smoothly on a cheap Android."
+   },
+   {
+    "name": "git log --all --graph",
+    "concept": "The homepage is a live terminal, black with pure white monospace and the logo's red used only for the cursor block and for HEAD. On load it runs `git log --graph --all` and prints an ASCII branch history that is the lore: a long bad branch running to a dead end labelled 'humanity: removed', and a branch forking off it. Commits are scrollable and clickable and each commit message is a piece of content (a film, a bulletin, a policy). A prompt at the bottom accepts typing (`help`, `news`, `vote`, `sudo undo`), and every command also exists as a big tap button above it for people who will never type.",
+    "strands": "Three long-lived branches checked out in parallel, each in its own column of the graph: `stories/` (commits are films and songs, hash-style IDs like 'a3f9 Karen Will Lead the Revolution'), `news/` (a commit per bulletin, newest at the top, pushed daily, with the 'Nurses: \u00a30' tally as a CI status badge that stays red), and `government/` (the only branch with a green 'passing' build and a merged pull request called future-proof). Each branch has its own text colour: amber for stories, white for news, and an unnatural bright green for government.",
+    "hero": "Black screen, a cursor blinks, and in 5 seconds a real git graph prints itself line by line: the bad branch grows to a dead end with `* 2054  (bad-timeline) humanity: removed` in red, and a fork is drawn with a single `|\\` that opens into three branches. A final line: `$ git checkout -b better`.",
+    "reader_fit": "Dead plain, no jargon you can't skim past. It is a printed record and receipts, which reads as honest to a reader who distrusts polish, and the dry authority is the narrator's voice. The risk to guard is reading as 'developer in-joke', so every commit message is written in plain pub English.",
+    "risk": "It is a terminal-portfolio cliche (see Termfolio/CLIfolio) and risks reading as a programmer's site, not a working-class UK one. Mitigation: the typed prompt is optional garnish, the buttons do all the work, and the lore is in the graph, not the jargon."
+   },
+   {
+    "name": "THE SIGNAL",
+    "concept": "The homepage is a television that is picking up three channels from a broken future. A full-screen CRT/VHS shader (barrel curve, scanlines, rolling tracking bar, tape jitter snapped to 12fps) sits over the page, and a tuner dial at the bottom is the nav. Turning it is dragging, or tapping the channel numbers 1, 2, 3. Between channels it datamoshes: the previous channel's footage smears into the next one along motion vectors, and static briefly spells readable truths. The set's reception is driven by the visitor's real clock: late evening gets deeper static and a 'broadcasting from 2054' caption, daytime is cleaner.",
+    "strands": "CH 1 STORIES: letterboxed film, grainy, warm, projecting a looping scrap of the current films as thumbnails on a 'VHS shelf' strip, with film sprocket holes down the edges. CH 2 NEWS: the broadcast, with a picture-in-picture of the masked host (white balaclava, red-triangle eyepatch, never speaking) and a scrolling lower-third ticker plus the 'Nurses: \u00a30' tally in a chunky seven-segment display. CH 3 GOVERNMENT: the only clean channel, with all CRT effects fading to zero: flat daylight, hi-vis yellow on pale concrete grey, plain sans type, a hoarding sign reading 'FUTURE PROOF: BUILDING' that overwrites the static, the sole lit place in the set.",
+    "hero": "The screen is dead grey static. A tuner clunks, the picture rolls vertically once, and the tracking bar settles on the ring-and-triangle logo, which is the idle channel, with the triangle blinking like a standby light. After 3 seconds it dissolves in a datamosh smear into CH 2, the news, and the host's lower-third reads 'WE HAVE SEEN THIS BULLETIN BEFORE.'",
+    "reader_fit": "Everyone knows the TV, and the point lands without a word of politics: the news is broken, here's a channel that isn't. It's nostalgic and tactile, works on a phone, and the 'bad reception' joke is familiar from every 90s living room, so it feels like theirs. The Government channel being the only clean picture says the thing without a sermon.",
+    "risk": "Heavy shader passes will struggle on cheap phones and can hurt legibility and accessibility (flicker, motion). It needs a reduced-motion and low-power fallback that keeps the look as static CSS, and the retro-VHS aesthetic is itself widely overused, so execution has to be unusually specific to BadCode."
+   }
+  ]
+ }
+]
