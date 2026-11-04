@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR4-plate-b.jpg",
+ "made": "2026-11-04T10:53:46.763Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, remove only the satellite and its solar panels, filling that area with the same red-lit map of France, Britain and the English Channel that lies beneath it, continuing the glowing red road web naturally. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending/OR1-a-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending/OR1-a-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2550e46e-6f42-414e-a810-9beaed2a508d"
+}

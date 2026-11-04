@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-15-CT2-b-b.mp4",
+ "made": "2026-11-03T17:47:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera rises steadily straight up from high above England at night, the red motorway veins and cities shrinking below, the curve of the Earth growing across the top of the frame, the searchlight beams standing up from the land. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-b-b.jpg",
+ "why": "Rise to the curve",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/CT2-b-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "15",
+  "frame": 15,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T17:35:07.775Z"
+ }
+}

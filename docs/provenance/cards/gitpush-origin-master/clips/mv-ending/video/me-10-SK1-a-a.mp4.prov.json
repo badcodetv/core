@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-10-SK1-a-a.mp4",
+ "made": "2026-11-03T17:33:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera rises slowly up out of the cloud tops at night to reveal hundreds of dark disc ships hovering in layers to the horizon, their white beams pointing down into the cloud, a crescent moon above. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SK1-a-a.jpg",
+ "why": "Rise up through the cloud",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SK1-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "10",
+  "frame": 10,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T17:20:29.521Z"
+ }
+}

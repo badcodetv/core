@@ -36,6 +36,15 @@ dialog img { max-width:96vw; max-height:80vh; display:block; margin:0 auto; curs
 .lbbar .lbl { font:500 13px var(--mono); min-width:0; text-align:center }
 .lbbar button { background:#1e1c17; color:#ece6da; border-color:#38342b }
 .lbbar button.pk[aria-pressed="true"] { background:#7fc6a0; color:#15140f; border-color:#7fc6a0 }
+/* Rounds: groups from this round are flagged New and come first; earlier rounds fold into one closed panel. */
+.tag { font:600 11px var(--mono); letter-spacing:.06em; text-transform:uppercase; border-radius:3px; padding:2px 6px; margin-left:8px; vertical-align:2px; white-space:nowrap }
+.tag.new { background:var(--acc); color:var(--card) } .tag.got { background:var(--pickbg); color:var(--pick) } .tag.none { border:1px solid var(--line); color:var(--dim) }
+.grp.isnew { border-top:3px solid var(--acc) }
+.todo { border:1px solid var(--acc); border-radius:6px; padding:10px 12px; display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline }
+.todo a { color:var(--acc); font-weight:600 }
+details.old { border:1px solid var(--line); border-radius:6px; padding:10px 12px }
+details.old > summary { cursor:pointer; font:600 15px var(--ui) } details.old[open] > summary { margin-bottom:14px }
+details.old .grp { opacity:.85 }
 </style>
 <div class="wrap">
  <header><div class="eyebrow" id="eb"></div><h1 id="hd"></h1><p class="lede" id="in"></p>
@@ -58,6 +67,7 @@ async function save(slot, patch) { if (!db) { $('st').textContent = 'Sign in to 
 function toggle(slot, id) { P[slot] = P[slot] === id ? '' : id; paint(); save(slot, { pick: P[slot] }) }
 function paint() {
   for (const b of document.querySelectorAll('.card button.pk')) { const on = P[b.dataset.slot] === b.dataset.id; b.setAttribute('aria-pressed', on); b.textContent = on ? 'Picked' : 'Pick'; b.closest('.card').classList.toggle('on', on) }
+  for (const t of OLDG) { const p = P[t.dataset.slot]; t.className = 'tag ' + (p ? 'got' : 'none'); t.textContent = p ? 'Picked: ' + (LBL[t.dataset.slot + '/' + p] || p) : 'Not picked' }
   if (lb.open) showLb() }
 
 // Lightbox: the image large, its label, Pick, and the arrows step through the same row's images.
@@ -74,10 +84,27 @@ lb.querySelector('img').onclick = () => lb.close();
 lb.addEventListener('click', e => { if (e.target === lb) lb.close() });
 lb.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') step(-1); if (e.key === 'ArrowRight') step(1) });
 
-for (const s of D.sections) {
-  const sec = el('section', 'sec'); sec.append(el('h2', '', s.h)); if (s.lede) sec.append(el('p', 'lede', s.lede));
+// Rounds (optional): spec "round": N; a group's "round" defaults to 1. With N > 1, this round's groups
+// come first with a New tag; earlier groups fold into one closed panel, each tagged with the viewer's pick.
+const R = D.round || 1, isNew = g => (g.round || 1) >= R;
+const OLDG = [], LBL = {};
+for (const s of D.sections) for (const g of s.groups) for (const x of g.opts) LBL[g.slot + '/' + x.id] = x.label;
+let oldBox = null;
+if (R > 1) {
+  const fresh = D.sections.flatMap(s => s.groups.filter(isNew));
+  const todo = el('div', 'todo'); todo.append(el('strong', '', `New in round ${R}: ${fresh.length} to pick`));
+  for (const g of fresh) { const a = el('a', '', g.title); a.href = '#g-' + g.slot; todo.append(a) }
+  $('secs').append(todo);
+  oldBox = el('details', 'old'); oldBox.append(el('summary', '', 'Already reviewed in earlier rounds (your picks are kept)'));
+}
+const order = R > 1 ? [...D.sections.map(s => ({ ...s, groups: s.groups.filter(isNew) })), ...D.sections.map(s => ({ ...s, groups: s.groups.filter(g => !isNew(g)), old: true }))] : D.sections;
+for (const s of order) {
+  if (!s.groups.length) continue;
+  const sec = el('section', 'sec'); sec.append(el('h2', '', s.h)); if (s.lede && !s.old) sec.append(el('p', 'lede', s.lede));
   for (const g of s.groups) {
-    const gr = el('div', 'grp'); gr.append(el('h3', '', g.title)); if (g.line) gr.append(el('div', 'line', g.line));
+    const gr = el('div', 'grp'); gr.id = 'g-' + g.slot; const h3 = el('h3', '', g.title); gr.append(h3); if (g.line) gr.append(el('div', 'line', g.line));
+    if (R > 1 && !s.old) { gr.classList.add('isnew'); h3.append(el('span', 'tag new', 'New')) }
+    if (s.old) { const t = el('span', 'tag none', 'Not picked'); t.dataset.slot = g.slot; h3.append(t); OLDG.push(t) }
     const o = el('div', 'opts');
     g.opts.forEach((x, i) => {
       const c = el('div', 'card'); c.append(el('div', 'v', x.label));
@@ -93,8 +120,9 @@ for (const s of D.sections) {
     const l = el('label', 'status', 'Note'), ta = el('textarea'); ta.id = 'n-' + g.slot; l.htmlFor = ta.id; let t; ta.oninput = () => { N[g.slot] = ta.value; clearTimeout(t); t = setTimeout(() => save(g.slot, { note: ta.value }), 700) };
     gr.append(o, l, ta); sec.append(gr);
   }
-  $('secs').append(sec);
+  (s.old ? oldBox : $('secs')).append(sec);
 }
+if (oldBox) $('secs').append(oldBox);
 paint();
 (async () => { db = await claude.use('db'); const user = await claude.use('user');
   if (!db || !user) { db = null; $('st').textContent = 'Sign in to save picks'; return }

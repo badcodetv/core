@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-20-r3e-OR4-a-b.mp4",
+ "made": "2026-11-04T14:13:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR4-a-b.jpg",
+ "why": "Kai 4 Nov picked still OR4-a-b for shot 20",
+ "prompt": "One of the 20-r3a/b/c prompts in video-jobs.json (same still); a duplicate take harvested 2026-11-04",
+ "settings": {
+  "duration": "8",
+  "aspect": "16:9"
+ }
+}

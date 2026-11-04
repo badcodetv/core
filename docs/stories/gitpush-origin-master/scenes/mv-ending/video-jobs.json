@@ -1,6 +1,194 @@
 {
- "anim_picks": {"1":"b","2":"a","3":"b","4":"b","5":"a","6":"a","7":"a","8":"a","9":"a","10":"a","11":"a","12":"a","13":"a","14":"a","15":"a","16":"a","17":"a","18":"a","20":"b"},
- "still_picks": {"18":"OR3-a-a"},
- "skip": [19],
- "cast": {}
+ "anim_picks": {
+  "1": "b",
+  "2": "a",
+  "3": "b",
+  "4": "b",
+  "5": "a",
+  "6": "a",
+  "7": "a",
+  "8": "a",
+  "9": "a",
+  "10": "a",
+  "11": "a",
+  "12": "a",
+  "13": "a",
+  "14": "a",
+  "15": "a",
+  "16": "a",
+  "17": "a",
+  "18": "a",
+  "20": "b"
+ },
+ "still_picks": {
+  "18": "OR3-a-a"
+ },
+ "skip": [
+  19
+ ],
+ "cast": {},
+ "extra": [
+  {
+   "key": "17-v1",
+   "n": 17,
+   "still": "OR1-a-b",
+   "duration": 8,
+   "motion": "The camera does not move. The satellite holds perfectly still. [00:00-00:02] A few last gold city lights glow in the east of Europe. [00:02-00:05] They turn red one cluster at a time, east to west, until the whole continent is red. [00:05-00:08] Everything holds, red. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Locked: the last lights turn red"
+  },
+  {
+   "key": "17-v2",
+   "n": 17,
+   "still": "OR1-a-b",
+   "duration": 8,
+   "motion": "The camera does not move. Time-lapse: the satellite stays fixed in place while the Earth turns quickly beneath it, cloud bands streaming across Europe and the red web of lights sliding steadily from right to left under the satellite. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Time-lapse: the planet turns beneath"
+  },
+  {
+   "key": "17-v3",
+   "n": 17,
+   "still": "OR1-a-b",
+   "duration": 8,
+   "motion": "The camera slowly circles around the satellite at a steady distance, its white body and solar panels turning against the red web of Europe far below, which shifts slowly behind it with parallax. Hard sunlight glints across the panels. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Orbit the satellite: parallax"
+  },
+  {
+   "key": "18-v1",
+   "n": 18,
+   "still": "OR3-a-a",
+   "duration": 8,
+   "motion": "The camera does not move. The satellite drifts closer and closer toward the camera until its solar panel slides right across the lens, filling the frame with dark panel cells for a moment, then passes out of frame, leaving the whole red Earth alone in black space. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Foreground wipe: the satellite passes the lens"
+  },
+  {
+   "key": "18-v2",
+   "n": 18,
+   "still": "OR3-a-a",
+   "duration": 8,
+   "motion": "The camera pulls straight back away from the Earth fast and steadily, the red planet shrinking in the black, the satellite falling away behind into the distance until it is a small point of light. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Fast pull-back"
+  },
+  {
+   "key": "18-v3",
+   "n": 18,
+   "still": "OR3-a-a",
+   "duration": 8,
+   "motion": "The camera does not move. [00:00-00:03] The red Earth turns slowly. [00:03-00:05] The sun breaks over the curved edge of the planet in one hard white starburst, its light catching the satellite. [00:05-00:08] The glare settles and the red night side glows on beneath it. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Sunrise over the edge"
+  },
+  {
+   "key": "20-v1",
+   "n": 20,
+   "still": "OR3-b-a",
+   "duration": 8,
+   "motion": "The camera rises slowly and pulls back away from the grey cratered surface of the Moon, the horizon curving and falling away below while the small red Earth hangs still in the black ahead. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Pull back off the Moon"
+  },
+  {
+   "key": "20-v2",
+   "n": 20,
+   "still": "OR3-b-a",
+   "duration": 8,
+   "motion": "The camera does not move. The image begins focused on the grey dust and rocks of the Moon's surface in the near foreground, with the small red Earth soft and blurred far beyond. [00:03-00:05] The focus slowly pulls to the Earth, which becomes sharp, red, and small in the black. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Rack focus from the Moon dust"
+  },
+  {
+   "key": "20-v3",
+   "n": 20,
+   "still": "OR3-b-a",
+   "duration": 8,
+   "motion": "The camera does not move. A long still hold: the small Earth hangs in black above the grey Moon, its night side glowing red, with one last tiny point of gold light on it. [00:04-00:05] The gold point turns red. [00:05-00:08] Nothing else moves. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Locked hold: the last gold light goes"
+  },
+  {
+   "key": "17-p1",
+   "n": 17,
+   "still": "OR4-plate-a",
+   "duration": 8,
+   "motion": "The camera does not move. Only the planet below moves: the Earth turns slowly, so Britain, France and the red web of roads slide steadily from right to left across the frame, and the white cloud bands over the Atlantic drift along with them. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 4 Nov: 'we shouldn't see the satellite rotate, we should see the earth move underneath it' (clean plate; the still satellite is laid back on top in post)"
+  },
+  {
+   "key": "17-p2",
+   "n": 17,
+   "still": "OR4-plate-a",
+   "duration": 8,
+   "motion": "The camera does not move. Time-lapse from a fixed camera in orbit: the ground races beneath from upper right to lower left, red city lights streaking past, cloud sweeping over the Channel and the curve of the Atlantic rolling in from the left. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 4 Nov: 'we shouldn't see the satellite rotate, we should see the earth move underneath it' (clean plate, time-lapse; satellite laid on top in post)"
+  },
+  {
+   "key": "17-r2",
+   "n": 17,
+   "still": "OR1-a-b",
+   "duration": 8,
+   "motion": "The camera does not move. The satellite is fixed to the lens: identical shape, angle and size in every frame, like a model held on a stand in front of the camera. Beneath it the Earth turns slowly, Europe's red web of lights and the Atlantic clouds sliding from right to left under the motionless satellite. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 4 Nov: 'we shouldn't see the satellite rotate, we should see the earth move underneath it' (pure Veo, satellite told to hold)"
+  },
+  {
+   "key": "18-r2a",
+   "n": 18,
+   "still": "OR3-a-a",
+   "duration": 8,
+   "motion": "There is exactly one spacecraft in this whole shot: the white satellite already in frame, and no other appears. [00:00-00:02] That same satellite drifts toward the lens until its solar panel sweeps across the frame. [00:02-00:08] The camera pulls back fast and steadily, the red Earth shrinking in black space, the one satellite falling away with it until both are tiny points. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 4 Nov: 'really like the zoom out… but we've got two satellites that appear… recut… just with one satellite' (same wipe, one satellite)"
+  },
+  {
+   "key": "18-r2b",
+   "n": 18,
+   "still": "OR3-a-a",
+   "duration": 8,
+   "motion": "The lone white satellite is the only spacecraft anywhere in the shot. The camera pulls back fast and steadily from the start; the satellite stays small in front of the planet and shrinks with it, until the Earth is a small red-and-blue dot among the stars. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 4 Nov: 'really like the zoom out… but we've got two satellites that appear… recut… just with one satellite' (pull-back only, no wipe)"
+  },
+  {
+   "key": "18-r2c",
+   "n": 18,
+   "still": "OR3-a-a",
+   "duration": 8,
+   "motion": "The white satellite, the only one in the shot, glides out of frame to the left in the first two seconds and is gone. Then the camera pulls back fast and steadily, the red Earth alone in the black, shrinking until it is a tiny dot. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 4 Nov: 'really like the zoom out… but we've got two satellites that appear… recut… just with one satellite' (satellite exits, then pull-back)"
+  },
+  {
+   "key": "20-r3a",
+   "n": 20,
+   "still": "OR4-a-b",
+   "duration": 8,
+   "motion": "The camera does not move. Above the still grey lunar horizon, the Earth turns slowly on its axis: Africa and Europe's red city light slide steadily toward its edge while India rotates into view, the blue rim of atmosphere glowing on the sunlit side. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+   "character": null,
+   "why": "Kai 4 Nov picked still OR4-a-b for the last shot (Earth recognisable over the Moon); three different moves, as before: locked: Earth visibly turns"
+  },
+  {
+   "key": "20-r3b",
+   "n": 20,
+   "still": "OR4-a-b",
+   "duration": 8,
+   "motion": "The camera cranes slowly upward from just above the cratered lunar surface, so the grey horizon sinks toward the bottom of the frame and the red Earth rises higher into the black sky, staying centred. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 4 Nov picked still OR4-a-b for the last shot (Earth recognisable over the Moon); three different moves, as before: crane up: Earthrise"
+  },
+  {
+   "key": "20-r3c",
+   "n": 20,
+   "still": "OR4-a-b",
+   "duration": 8,
+   "motion": "A long, slow push in toward the Earth across the Moon's horizon: the cratered ground slides under the lens and out of the bottom of the frame, and the red-lit planet grows steadily larger until the continents fill the middle of the picture. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+   "character": null,
+   "why": "Kai 4 Nov picked still OR4-a-b for the last shot (Earth recognisable over the Moon); three different moves, as before: slow push in to Earth"
+  }
+ ]
 }

@@ -70,5 +70,113 @@
   ],
   "feedback": "feedback/storyboard-r1",
   "feedback_docs": 20
+ },
+ {
+  "at": "2026-11-03T18:03:43+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "19 clips (Omni 1.1 Flash, 8s, 19 video generations), QC'd; flags on 6, 13, 15, 16, 17, 20",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/mv-ending/picks.json <out-dir>/index.html  (media: 960px copies of <media>/video/me-*.mp4 at v/)"
+ },
+ {
+  "at": "2026-11-03T18:53:22+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "clip picks read: 14 keeps, 5 unpicked (02, 13, 17, 18, 20)",
+  "decided": [
+   "Keep: 01, 03-12, 14, 15, 16. Not picked: 02 traffic light, 13 eye beam, 17 Europe, 18 whole Earth, 20 Moon. Kai on 01: 'I like this about two seconds in onwards… use this exact clip, just edit the first two seconds away.'"
+  ],
+  "feedback": "feedback/clips-r1",
+  "feedback_docs": 14
+ },
+ {
+  "at": "2026-11-03T19:41:20+00:00",
+  "stage": "clips",
+  "round": 2,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "orbit re-roll: 9 clips (17/18/20 × 3 approaches; 9 video generations) added as a pick-one section",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/mv-ending/picks.json <out-dir>/index.html"
+ },
+ {
+  "at": "2026-11-04T10:26:19+00:00",
+  "stage": "clips",
+  "round": 2,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "Clips page v3: round-2 orbit re-roll flagged New and listed first; round-1 clips folded into a closed 'Already reviewed' panel tagged with Kai's pick (Kai 4 Nov: can't tell new ones from ones already turned down)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/mv-ending/picks.json /tmp/claude-1000/-home-kai-projects-badcode-badcode/d6f36a66-eb3b-447d-97f2-01905837bf4f/scratchpad/mv-clips/index.html"
+ },
+ {
+  "at": "2026-11-04T12:12:35+00:00",
+  "stage": "clips",
+  "round": 2,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "Read clips round 2 picks + notes (14 keeps, orbit notes)",
+  "decided": [
+   "orbit-17: none picked; 'the satellite shouldn't be rotating… we should see the earth move underneath it'",
+   "orbit-18: v1; 'really like the zoom out… two satellites appear… recut… just with one satellite'",
+   "orbit-20: none picked; 'doesn't look like Earth… generic red splodge… make Earth itself be recognisable'"
+  ],
+  "feedback": "feedback/clips-r2",
+  "feedback_docs": 17
+ },
+ {
+  "at": "2026-11-04T12:12:35+00:00",
+  "stage": "clips",
+  "round": 3,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "Clips page v4: round 3 answers the orbit notes: 17 (4 takes, satellite held / Earth-only plates), 18 (5 one-satellite takes), 20 (4 new stills OR4-a/b, recognisable Earth, for picking before animation)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/mv-ending/picks.json /tmp/claude-1000/-home-kai-projects-badcode-badcode/d6f36a66-eb3b-447d-97f2-01905837bf4f/scratchpad/mv-clips/index.html"
+ },
+ {
+  "at": "2026-11-04T13:44:49+00:00",
+  "stage": "clips",
+  "round": 3,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "Read clips round 3 picks",
+  "decided": [
+   "orbit-17: r2 (satellite holds, Earth turns beneath)",
+   "orbit-18: r2e (pull-back, one satellite drifts across the planet)",
+   "orbit-20 still: OR4-a-b (smaller recognisable red Earth high over the Moon)"
+  ],
+  "feedback": "feedback/clips-r3",
+  "feedback_docs": 20
+ },
+ {
+  "at": "2026-11-04T14:13:22+00:00",
+  "stage": "clips",
+  "round": 4,
+  "url": "https://claude.ai/artifact/ALp4AEZcFa114WJE5A71HZ",
+  "what": "Clips page v5: shot 20 animated from OR4-a-b, six takes (3 push-ins, crane-up, turning, near-still)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/mv-ending/picks.json /tmp/claude-1000/-home-kai-projects-badcode-badcode/d6f36a66-eb3b-447d-97f2-01905837bf4f/scratchpad/mv-clips/index.html"
+ },
+ {
+  "at": "2026-11-04T16:57:54+00:00",
+  "stage": "clips",
+  "round": 4,
+  "what": "Kai's round-4 pick read (shot 20)",
+  "decided": [
+   "20 → r3d (me-20-r3d-OR4-a-b: camera rises, the Moon sinks away, Earth alone in black). Clip list locked."
+  ],
+  "feedback": "feedback/clips-r4",
+  "feedback_docs": 21
+ },
+ {
+  "at": "2026-11-04T17:07:55+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Web2Ja1DTnmYpYzBad5iZL",
+  "what": "Rough cut 1: 17 locked clips cut to the song 161.96→230.5 on the beat, 4s e07 lead-in",
+  "rebuild": "python3 scripts/gpom/mv-ending/cut1.py && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/mv-ending <out-dir>"
+ },
+ {
+  "at": "2026-11-04T17:40:44+00:00",
+  "stage": "premiere",
+  "round": 1,
+  "what": "Built gpom-1b-mv-ending-r1 in gpom-story.prproj (bin of the same name; sequence filed in '00 the film (live sequences)'); tabs reset to the film in order",
+  "decided": [
+   "Kai: 'No changes… Let's cut that in Premiere… as a new sequence in the currently open Premiere project'"
+  ]
  }
 ]

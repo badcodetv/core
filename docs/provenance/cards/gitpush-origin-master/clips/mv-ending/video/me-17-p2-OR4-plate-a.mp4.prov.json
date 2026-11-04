@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-17-p2-OR4-plate-a.mp4",
+ "made": "2026-11-04T12:09:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Time-lapse from a fixed camera in orbit: the ground races beneath from upper right to lower left, red city lights streaking past, cloud sweeping over the Channel and the curve of the Atlantic rolling in from the left. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR4-plate-a.jpg",
+ "why": "Kai 4 Nov: 'we shouldn't see the satellite rotate, we should see the earth move underneath it' (clean plate, time-lapse; satellite laid on top in post)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR4-plate-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "17-p2",
+  "frame": 17,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:56:25.125Z"
+ }
+}

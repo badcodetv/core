@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-18-v1-OR3-a-a.mp4",
+ "made": "2026-11-03T19:11:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The satellite drifts closer and closer toward the camera until its solar panel slides right across the lens, filling the frame with dark panel cells for a moment, then passes out of frame, leaving the whole red Earth alone in black space. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-a-a.jpg",
+ "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Foreground wipe: the satellite passes the lens",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "18-v1",
+  "frame": 18,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T18:58:12.043Z"
+ }
+}

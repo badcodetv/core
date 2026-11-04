@@ -406,5 +406,41 @@
   "OR3-c-b",
   "A ring of ships round the planet",
   "The whole Earth seen from deep space, its dark side glowing red over every landmass, and around it a thin flat ring made of thousands of tiny white ship lights, circling the planet like the ring of Saturn. Shot like a real space-mission photograph: fine grain, one hard sunlight source, deep black space. No text, no lettering, no logos."
+ ],
+ [
+  "orbit",
+  "OR4-plate-a",
+  "Clean plate: Europe with the satellite removed (for shot 17 composite)",
+  "edit of OR1-a-b: remove only the satellite, fill with the red map beneath"
+ ],
+ [
+  "orbit",
+  "OR4-plate-b",
+  "Clean plate (second candidate)",
+  "same edit"
+ ],
+ [
+  "orbit",
+  "OR4-a-a",
+  "Earth over the Moon, recognisable: red continents, blue rim",
+  "edit of OR3-b-a with the 18-v1 Earth as reference: larger recognisable Earth"
+ ],
+ [
+  "orbit",
+  "OR4-a-b",
+  "Earth over the Moon, recognisable (2)",
+  "same edit"
+ ],
+ [
+  "orbit",
+  "OR4-b-a",
+  "Earthrise: half daylit Earth, half red night",
+  "fresh: Earthrise over lunar horizon, day side blue/Sahara, night side red city light"
+ ],
+ [
+  "orbit",
+  "OR4-b-b",
+  "Earthrise: half daylit Earth, half red night (2)",
+  "same"
  ]
 ]

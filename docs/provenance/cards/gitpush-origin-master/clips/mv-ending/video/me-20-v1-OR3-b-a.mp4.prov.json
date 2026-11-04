@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-20-v1-OR3-b-a.mp4",
+ "made": "2026-11-03T19:25:10+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera rises slowly and pulls back away from the grey cratered surface of the Moon, the horizon curving and falling away below while the small red Earth hangs still in the black ahead. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-b-a.jpg",
+ "why": "Kai 3 Nov: re-roll the orbit, 'genuinely different approaches to the cinematography': Pull back off the Moon",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-b-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "20-v1",
+  "frame": 20,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T19:12:29.380Z"
+ }
+}

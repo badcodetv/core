@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-18-r2b-OR3-a-a.mp4",
+ "made": "2026-11-04T12:09:37+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The lone white satellite is the only spacecraft anywhere in the shot. The camera pulls back fast and steadily from the start; the satellite stays small in front of the planet and shrinks with it, until the Earth is a small red-and-blue dot among the stars. Shot like real orbital footage at 24fps with a 180-degree shutter.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-a-a.jpg",
+ "why": "Kai 4 Nov: 'really like the zoom out… but we've got two satellites that appear… recut… just with one satellite' (pull-back only, no wipe)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-a-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "18-r2b",
+  "frame": 18,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:56:35.576Z"
+ }
+}

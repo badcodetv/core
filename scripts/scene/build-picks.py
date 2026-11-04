@@ -8,6 +8,8 @@ picks.json:
    "sections": [{"h": "...", "lede": "...", "groups": [
       {"slot": "e5-parl", "title": "...", "line": "...", "kind": "image|video|audio|link",
        "opts": [{"id": "a", "src": "e5/a.jpg", "label": "a: closer", "warn": ""}]}]}]}   # link options use "href"
+Rounds (optional): top-level "round": N and a group "round" (default 1). With N > 1 the page lists this round's
+groups first, tagged New, and folds earlier rounds into one closed panel that shows the viewer's pick per group.
 `src` paths are the page's published files: publish out.html with every media file at its `src` path and
 `capabilities: {db:{}, user:{}}`. Every image opens large on click (arrows step through the row; Pick works there).
 Picks land in db collection `picks`, doc `<slot>__<user>` {slot, pick, note, by, at}: dump it into the repo before

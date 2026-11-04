@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-03-SW1-c-a.mp4",
+ "made": "2026-11-03T17:18:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Smoke drifts slowly across the dark rooftops. [00:02-00:03] A single lightning flash behind the mountain lights up the whole town for an instant. The eye's beam holds steady. shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SW1-c-a.jpg",
+ "why": "Lightning",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/SW1-c-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "03",
+  "frame": 3,
+  "option": "b"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-03T17:04:57.922Z"
+ }
+}

@@ -62,7 +62,8 @@
   },
   "boards": {
     "moodboard": "https://claude.ai/artifact/1iiPuJNHfcEYFWpcnCon9e",
-    "storyboard": "https://claude.ai/artifact/9Ui1ATN8KdGCjep3ctWgPQ"
+    "storyboard": "https://claude.ai/artifact/9Ui1ATN8KdGCjep3ctWgPQ",
+    "timeline": "https://claude.ai/artifact/Web2Ja1DTnmYpYzBad5iZL"
   },
   "cut": {
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/cut/edl.json",
@@ -118,5 +119,23 @@
       "Past the solar wing onto red Britain"
     ]
   ],
-  "board_round": 2
+  "board_round": 2,
+  "premiere": {
+    "current": "r1",
+    "r1": {
+      "sequence": "gpom-1b-mv-ending-r1",
+      "guid": "98e4c44c-3451-4395-8c5e-dc628ce2dded",
+      "bin": "gpom-1b-mv-ending-r1",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-04",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/cut/edl-premiere.json",
+      "what": "Timeline round 1 as noted ('No changes'): the ending alone, 0 = film 161.96; V1 17 locked clips with handles, A1 the main track from track time 168.96 to its end",
+      "how": "scripts/gpom/mv-ending/cut1.py -> scripts/scene/premiere-plan.py edl-premiere.json premiere-r1.json --tag r1 --seq gpom-1b-mv-ending-r1",
+      "check": {
+        "at": "2026-11-04",
+        "state": "in sync",
+        "why": "17/17 V1 starts and in-points match the plan; V1 ends 68.54"
+      }
+    }
+  }
 }

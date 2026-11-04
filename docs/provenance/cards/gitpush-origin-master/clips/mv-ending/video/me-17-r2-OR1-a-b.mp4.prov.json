@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-17-r2-OR1-a-b.mp4",
+ "made": "2026-11-04T11:56:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. The satellite is fixed to the lens: identical shape, angle and size in every frame, like a model held on a stand in front of the camera. Beneath it the Earth turns slowly, Europe's red web of lights and the Atlantic clouds sliding from right to left under the motionless satellite. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR1-a-b.jpg",
+ "why": "Kai 4 Nov: 'we shouldn't see the satellite rotate, we should see the earth move underneath it' (pure Veo, satellite told to hold)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR1-a-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "17-r2",
+  "frame": 17,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:42:48.484Z"
+ }
+}

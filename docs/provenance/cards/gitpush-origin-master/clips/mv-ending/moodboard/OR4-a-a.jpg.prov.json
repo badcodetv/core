@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR4-a-a.jpg",
+ "made": "2026-11-04T10:55:07.133Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "In the first picture, swap the small featureless red ball above the Moon for the planet shown in the second picture: a recognisable Earth, about three times larger, with the outlines of Europe, Africa and India traced in glowing red city lights on its night side, dark oceans between them, and a thin blue line of atmosphere along its sunlit edge. Leave the grey cratered lunar horizon, the stars and the black sky as they are, with the same photographic grain and hard light.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-mv-ending/OR3-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-mv-ending/OR3-b-a.jpg",
+   "/home/kai/.cache/badcode-mv-ending/earth-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7176724a-d6d8-49df-9d7a-2315c894cb77"
+}

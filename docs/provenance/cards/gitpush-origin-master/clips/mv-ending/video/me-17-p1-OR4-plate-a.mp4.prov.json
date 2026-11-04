@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-17-p1-OR4-plate-a.mp4",
+ "made": "2026-11-04T11:56:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera does not move. Only the planet below moves: the Earth turns slowly, so Britain, France and the red web of roads slide steadily from right to left across the frame, and the white cloud bands over the Atlantic drift along with them. Shot like real orbital footage at 24fps with a 180-degree shutter. The camera does not move.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR4-plate-a.jpg",
+ "why": "Kai 4 Nov: 'we shouldn't see the satellite rotate, we should see the earth move underneath it' (clean plate; the still satellite is laid back on top in post)",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR4-plate-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/mv-ending",
+  "key": "17-p1",
+  "frame": 17,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-04T11:41:55.393Z"
+ }
+}

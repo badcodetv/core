@@ -1,0 +1,554 @@
+{
+ "title": "GPOM MV Ending Clips",
+ "eyebrow": "GPOM music-video ending · clips round 1",
+ "heading": "The ending, animated: 19 clips",
+ "intro": "Each clip is 8 seconds; you'll use 2–5 seconds of each in Premiere. Tap Keep on the ones you're happy with; for anything else, write the re-roll in that clip's note. Amber lines are what I saw when checking.",
+ "sections": [
+  {
+   "h": "The last shot: Earth from the Moon, animated",
+   "lede": "Your still b, three moves asked for, six takes back. Labels say what each actually does.",
+   "groups": [
+    {
+     "slot": "orbit-20-r4",
+     "round": 4,
+     "title": "20. Earth over the Moon: the final shot",
+     "line": "After the 18 pull-back. Tip: any push-in can be played BACKWARDS in Premiere to become a pull-away that ends on Earth over the Moon.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "r3d",
+       "src": "v/me-20-r3d-OR4-a-b.mp4",
+       "label": "d: camera rises, the Moon sinks away, Earth hangs alone in black",
+       "warn": "Earthrise in reverse; ends on Earth alone with a sliver of Moon."
+      },
+      {
+       "id": "r3b",
+       "src": "v/me-20-r3b-OR4-a-b.mp4",
+       "label": "b: steady push in, Earth grows to fill the frame, stays framed",
+       "warn": "Cleanest push-in. Reversed = a pull-away to finish on."
+      },
+      {
+       "id": "r3c",
+       "src": "v/me-20-r3c-OR4-a-b.mp4",
+       "label": "c: push in, Moon drops out of frame, continents fill the middle",
+       "warn": ""
+      },
+      {
+       "id": "r3a",
+       "src": "v/me-20-r3a-OR4-a-b.mp4",
+       "label": "a: fastest push in; Earth ends cropped at the right edge",
+       "warn": "Earth runs off the right edge in the last second."
+      },
+      {
+       "id": "r3e",
+       "src": "v/me-20-r3e-OR4-a-b.mp4",
+       "label": "e: locked, Earth slowly turns over the Moon",
+       "warn": "Subtle; the quiet ending."
+      },
+      {
+       "id": "r3f",
+       "src": "v/me-20-r3f-OR4-a-b.mp4",
+       "label": "f: locked, nearly still",
+       "warn": "Held frame, good under a fade."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Orbit round 3: your notes answered",
+   "lede": "17: the satellite holds and the Earth moves. 18: your zoom-out with one satellite. 20: a planet you can tell is Earth (stills first; I animate the one you pick).",
+   "groups": [
+    {
+     "slot": "orbit-17-r3",
+     "round": 3,
+     "title": "17. The satellite over Europe: Earth moves, satellite holds",
+     "line": "Your note: 'we shouldn't see the satellite rotate, we should see the earth move underneath it.'",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "r2",
+       "src": "v/me-17-r2-OR1-a-b.mp4",
+       "label": "r2: satellite holds dead still, Earth turns beneath it",
+       "warn": "Best fit to your note. Europe's red fades into cloud after ~4s as the Atlantic rolls in; cut around 4s."
+      },
+      {
+       "id": "p2",
+       "src": "v/me-17-p2-OR4-plate-a.mp4",
+       "label": "p2: Europe slides past, stays red all 8s (no satellite yet)",
+       "warn": "Earth only, from a clean plate: the still satellite would be laid on top in post. Storm swirls in at ~6s."
+      },
+      {
+       "id": "p3",
+       "src": "v/me-17-p3-OR4-plate-a.mp4",
+       "label": "p3: slow gentle drift, Europe red throughout (no satellite yet)",
+       "warn": "Earth only; satellite laid on top in post. Calmest of the three."
+      },
+      {
+       "id": "p1",
+       "src": "v/me-17-p1-OR4-plate-a.mp4",
+       "label": "p1: Earth turns fast into daylight over the Sahara (no satellite yet)",
+       "warn": "Red is gone by ~4s, ends on a daylit desert. Probably not."
+      }
+     ]
+    },
+    {
+     "slot": "orbit-18-r3",
+     "round": 3,
+     "title": "18. The zoom-out, one satellite",
+     "line": "Your note: 'really like the zoom out… but we've got two satellites… recut… just with one satellite.'",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "r2d",
+       "src": "v/me-18-r2d-OR3-a-a.mp4",
+       "label": "r2d: the satellite itself sweeps past the lens, then the fast pull-back",
+       "warn": "Closest to the v1 you liked, and the lens wipe is the same satellite now. A small satellite shows again from ~3s as we pull away; trim there if it reads as a second one."
+      },
+      {
+       "id": "r2a",
+       "src": "v/me-18-r2a-OR3-a-a.mp4",
+       "label": "r2a: pull-back, the Milky Way opens up behind the Earth",
+       "warn": "No lens wipe. One satellite, gone by 3s. The widest, most beautiful ending."
+      },
+      {
+       "id": "r2e",
+       "src": "v/me-18-r2e-OR3-a-a.mp4",
+       "label": "r2e: pull-back, satellite drifts across the planet's face",
+       "warn": "One satellite; no wipe."
+      },
+      {
+       "id": "r2b",
+       "src": "v/me-18-r2b-OR3-a-a.mp4",
+       "label": "r2b: satellite leaves, then a clean pull-back to a dot",
+       "warn": ""
+      },
+      {
+       "id": "r2c",
+       "src": "v/me-18-r2c-OR3-a-a.mp4",
+       "label": "r2c: near twin of r2b",
+       "warn": "Almost the same as r2b."
+      }
+     ]
+    },
+    {
+     "slot": "orbit-20-still",
+     "round": 3,
+     "title": "20. Earth from the Moon: pick a still to animate",
+     "line": "Your note: 'it just doesn't look like Earth… a generic red splodge.' These are stills; nothing is animated until you pick.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "OR4-a-a",
+       "src": "s/OR4-a-a.jpg",
+       "label": "a: big red-lit Earth over the Moon",
+       "warn": ""
+      },
+      {
+       "id": "OR4-a-b",
+       "src": "s/OR4-a-b.jpg",
+       "label": "b: smaller, higher in the sky",
+       "warn": ""
+      },
+      {
+       "id": "OR4-b-a",
+       "src": "s/OR4-b-a.jpg",
+       "label": "c: half daylit (blue, Sahara), half red night",
+       "warn": ""
+      },
+      {
+       "id": "OR4-b-b",
+       "src": "s/OR4-b-b.jpg",
+       "label": "d: half daylit, half red, sitting on the horizon",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Out of Swindon",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-01",
+     "title": "1. Column out of the burning wreck",
+     "line": "Smoke wipe: Smoke engulfs the frame and clears to reveal the column right in front of us.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-01-SW1-a-b.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-02",
+     "title": "2. Traffic light still changing",
+     "line": "Green to amber to red: The light changes on the beat while the robes march past underneath.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-02-SW1-e-b.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-03",
+     "title": "3. The eye over the rooftops",
+     "line": "Lightning: A single lightning flash behind the mountain lights the whole valley of rooftops.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-03-SW1-c-a.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The land",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-04",
+     "title": "4. Terraced street filled",
+     "line": "Lights go out: Street lamps go out one by one down the street toward us; only the red eyes remain.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-04-LD1-d-a.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-05",
+     "title": "5. The stadium filled",
+     "line": "Floodlights bank off: The floodlight banks switch off in turn, leaving the red blocks glowing.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-05-LD1-c-b.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-06",
+     "title": "6. The Welsh valley",
+     "line": "Fly down the valley: No grid here, so Veo flies the camera down the valley along the red river.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-06-LD1-b-c.mp4",
+       "label": "Keep",
+       "warn": "Mid-clip a bright white building appears in the village for a moment; the valley shifts a little as the camera flies. Use the first ~4s."
+      }
+     ]
+    },
+    {
+     "slot": "clip-07",
+     "title": "7. Every field a parade ground",
+     "line": "Searchlights cross: The grid holds still; searchlights sweep across it.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-07-LD1-e-b.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The sky",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-08",
+     "title": "8. Down through the fleet",
+     "line": "Beams strobe on: The ships' beams switch on one after another down onto the fields.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-08-SK1-b-b.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-09",
+     "title": "9. Ships circling the eye",
+     "line": "The storm turns: The ships orbit the eye like a weather system; lightning inside the cloud.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-09-SK1-d-a.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-10",
+     "title": "10. Fleets above the clouds",
+     "line": "Rise up through the cloud: No grid: Veo rises the camera out of the cloud tops to reveal the fleet.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-10-SK1-a-a.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The country (middle scale)",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-11",
+     "title": "11. A region through the fleet",
+     "line": "Beams sweep the region: The ships hold; beams sweep across the fields far below.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-11-CT2-h-a.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-12",
+     "title": "12. The estuary bridges",
+     "line": "The columns cross: The robes stream across both bridges; tide and beams move.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-12-CT2-d-b.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-13",
+     "title": "13. The eye's beam across 50 miles",
+     "line": "The beam fires: The beam shoots out from the eye across the land; ships ride along it.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-13-CT2-e-a.mp4",
+       "label": "Keep",
+       "warn": "The beam is already firing at the first frame (no 'fire' moment); ships slide along it as asked."
+      }
+     ]
+    },
+    {
+     "slot": "clip-14",
+     "title": "14. London from 35,000 ft",
+     "line": "Cloud parts: Cloud drifts away to reveal the red city below.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-14-CT2-a-a.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-15",
+     "title": "15. The motorways as red veins",
+     "line": "Rise to the curve: No grid: Veo rises the camera until the Earth's curve fills the top.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-15-CT2-b-b.mp4",
+       "label": "Keep",
+       "warn": "Veo redraws halfway: the motorway map becomes Britain from orbit by 5s. That may be a gift (a ready-made bridge into frame 16) or a re-roll."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Orbit",
+   "lede": "",
+   "groups": [
+    {
+     "slot": "clip-16",
+     "title": "16. Past the solar wing onto red Britain",
+     "line": "The satellite drifts past: The satellite slides through frame; Britain turns slowly underneath.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-16-OR1-c-a.mp4",
+       "label": "Keep",
+       "warn": "The satellite turns and grows, and its shape changes after ~5s. Use the first ~4s."
+      }
+     ]
+    },
+    {
+     "slot": "clip-17",
+     "title": "17. The satellite over red Europe",
+     "line": "Red light spreads: Europe's lights turn red, spreading across the land below the satellite.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-17-OR1-a-b.mp4",
+       "label": "Keep",
+       "warn": "Backwards: patches of gold appear at 2–5s instead of going red, and the satellite tumbles and changes shape. Re-roll candidate."
+      }
+     ]
+    },
+    {
+     "slot": "clip-18",
+     "title": "18. The whole Earth, red, with the satellite",
+     "line": "Planet turns: The Earth turns slowly, more red land rolling into view.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-18-OR3-a-a.mp4",
+       "label": "Keep",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "clip-20",
+     "title": "20. Past the Moon: a red Earth (last image)",
+     "line": "Moonrise reveal: The Moon's limb rises into frame from below to reveal the red Earth.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "keep",
+       "src": "v/me-20-OR3-b-a.mp4",
+       "label": "Keep",
+       "warn": "The 'moonrise' move barely happens: it's a near-still hold. Fine for a fade-out ending; re-roll if you wanted the reveal."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Orbit re-roll: three approaches per shot",
+   "lede": "Pick one per shot (or none). Labels say what each clip actually does on screen; Veo didn't always follow its brief.",
+   "groups": [
+    {
+     "slot": "orbit-17",
+     "title": "17. The satellite over Europe",
+     "line": "Three tries: locked, time-lapse, circling.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v1",
+       "src": "v/me-17-v1-OR1-a-b.mp4",
+       "label": "v1: satellite spins in place, a sun glint",
+       "warn": "The satellite changes shape as it turns; Europe stays red throughout."
+      },
+      {
+       "id": "v2",
+       "src": "v/me-17-v2-OR1-a-b.mp4",
+       "label": "v2: camera drifts, the Earth's edge and daylight swing in",
+       "warn": "Satellite morphs; ends on a daylit Earth, not red."
+      },
+      {
+       "id": "v3",
+       "src": "v/me-17-v3-OR1-a-b.mp4",
+       "label": "v3: satellite turns slowly, the curve of the Earth appears",
+       "warn": "Steadiest of the three for ~5s; then the satellite grows and changes."
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "orbit-18",
+     "title": "18. The whole red Earth",
+     "line": "Three tries: lens wipe, fast pull-back, sunrise.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v1",
+       "src": "v/me-18-v1-OR3-a-a.mp4",
+       "label": "v1: the satellite crosses the lens, then a fast pull-back to a tiny red Earth",
+       "warn": "My pick for the last zoom-out: the planet shrinks to a dot."
+      },
+      {
+       "id": "v2",
+       "src": "v/me-18-v2-OR3-a-a.mp4",
+       "label": "v2: sunrise starburst over the edge",
+       "warn": "Lens flare hits the satellite at ~5s; clean."
+      },
+      {
+       "id": "v3",
+       "src": "v/me-18-v3-OR3-a-a.mp4",
+       "label": "v3: sunrise, the glare holds",
+       "warn": "Like v2, with the sun held longer."
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "orbit-20",
+     "title": "20. Past the Moon (last image)",
+     "line": "Three tries: pull back, rack focus, the last light.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "v1",
+       "src": "v/me-20-v1-OR3-b-a.mp4",
+       "label": "v1: the Moon's horizon shifts slowly",
+       "warn": "Very little motion; Veo barely moved the camera."
+      },
+      {
+       "id": "v2",
+       "src": "v/me-20-v2-OR3-b-a.mp4",
+       "label": "v2: a still hold (the focus pull didn't happen)",
+       "warn": "Almost static."
+      },
+      {
+       "id": "v3",
+       "src": "v/me-20-v3-OR3-b-a.mp4",
+       "label": "v3: a still hold, the red Earth",
+       "warn": "Almost static; the 'last gold light' isn't visible at this size."
+      }
+     ],
+     "round": 2
+    }
+   ]
+  }
+ ],
+ "round": 4
+}

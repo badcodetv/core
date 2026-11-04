@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/video/me-18-r2e-OR3-a-a.mp4",
+ "made": "2026-11-04T12:11:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-ending/moodboard/OR3-a-a.jpg",
+ "why": "Kai 4 Nov: 18-v1 zoom-out but with one satellite",
+ "prompt": "One of the 18-r2a/r2b/r2c prompts in video-jobs.json (same still, so the first-frame matcher can't tell which); a duplicate take harvested 2026-11-04",
+ "settings": {
+  "duration": "8",
+  "aspect": "16:9"
+ }
+}
