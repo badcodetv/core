@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q12r7-b.jpg",
+ "made": "2026-11-05T14:21:33+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"So it's not very funny when you print more\"",
+ "prompt": "A frame from a 1920s period feature film: all six masked robbers, PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, stand in a tight wedge on the wooden deck of a Hudson river ferry, rapping straight into the lens, caught at the peak of one synchronised finger wag. Their masks and suits are exactly as in the attached reference image, every mask copied exactly from its close-up: white wool ring round the face, the small red felt triangle over each man's LEFT eye, so on the right side of the picture. CRIMSON leads nearest the lens; each man's right gloved hand is raised beside his head, index finger up, other fingers curled, thumb tucked, all wagging \"not funny\", except SILVER at the back, whose finger is still only at his chest. A deckhand coils rope behind them, ignoring it. Eye-level medium-wide, 35mm, the six filling the 16:9 frame, every mask large. Low winter sun from the left, a hazy 1920s skyline of stone towers across grey water. Shot on 35mm film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

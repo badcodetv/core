@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-y05-a-y05r8-a.mp4",
+ "made": "2026-11-05T16:37:03+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, tripod-stable, no zoom, pan or tilt; one continuous shot. The man leans on the standing barrel with both gloved hands flat on its rim. Whiskey keeps glugging from the split barrel at his feet and spreads slowly across the cobbles in a widening amber puddle. He straightens his back, plants both hands on the barrel lid and gives it one firm, heavy pat, then rests there, deadpan. His head stays still, angled down at the spill; his knitted mask does not change. Sound: liquid gurgling, a dull wooden thump.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y05r8-a.jpg",
+ "why": "mv-gang r8 mask fix, writer cy2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y05r8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "y05-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:24:01.040Z"
+ }
+}

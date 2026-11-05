@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p09r6-b.jpg",
+ "made": "2026-11-05T12:06:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: CRIMSON and PLUM together, the stage of a movie palace in front of the screen, on \"Distraction is the attraction\"",
+ "prompt": "A frame from a feature film: two masked robbers rap straight into the lens from the stage of a gilded 1920s movie palace, standing on the bare boards just in front of the giant white screen. The masks and suits are exactly as in the attached reference image; the men are CRIMSON and PLUM, masks copied exactly from the close-ups: rib-knit wool over head and neck, no holes, a white wool ring round the face, one small rounded red felt triangle high over each man's left eye, on the right of the picture. CRIMSON, nearest, is frozen at the peak of a finger jab, black-gloved index finger stabbing at the lens, huge and slightly soft in the foreground, his masked face sharp behind it. PLUM, a step back, gives a palms-up shrug. Low angle from the orchestra pit, 24mm. The only light is the projector beam from the back of the hall, cutting through smoke and throwing their shadows enormous across the screen. Below the stage lip, a tuxedoed usher holds a gloved finger to his lips. 35mm film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

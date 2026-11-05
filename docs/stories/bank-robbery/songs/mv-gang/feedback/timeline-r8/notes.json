@@ -1,0 +1,35 @@
+{
+  "round": "8",
+  "kai_round1": {
+    "at126": "same scene twice, please put something else here. THanks\n",
+    "at884": "his triangle on his balaclava should always be on the left eye, on anyone wearing a badcode balaclava. change it \nTHanks ",
+    "at1459": "there is no one in the drivers seat thanks"
+  },
+  "plan": [
+    {
+      "h": "Your cut-7 notes",
+      "items": [
+        "\"add back some more of the action clips, the rapping to the camera should be alongside action clips\": action is about two thirds of the screen time; rap to camera is 33 % (cut 7: 42 %) and never two rap shots in a row, each one with action either side.",
+        "\"hold the clips for as long as you have been\": 79 cuts at 2.65 s on average, the same as cut 7.",
+        "\"only cut it to the beat sometimes, when its a big drop\": fast beat cuts only at the four drops: the first \"Robbery!\" (0:07), into chorus 1 (1:02), into chorus 2 (2:03) and into the outro (3:07). Each is about four quick shots, then a held one.",
+        "Masks: wide shots where the mask was too small to hold were remade from closer stills (y01-y06); the five rap shots that slipped were re-shot with the head held steady (motion in the hands and body). Research: cleanroom/r8/research.md."
+      ]
+    }
+  ],
+  "replies": {
+    "at42": "Out: z01 is gone. The opening is now y01, a new getaway still shot from close behind the seats, so the masks stay big and on.",
+    "at205": "Re-shot (z02y): same still, but the head is held steady and the motion is in the hands and body, so the mask doesn't slip.",
+    "at218": "Same re-shot z02y: the eye hole was the mask stretching on a head turn; it is kept still now.",
+    "at251": "k07 replaced by y02, a new burnout shot from a closer still: the mask is big enough to hold its ring and triangle.",
+    "at622": "k03m replaced by y03 (the white-suit Tommy-gun shot), the cleanest mask of the new batch.",
+    "at882": "p03 re-shot (p03y) with a steady head, and started 2.6 s in to skip the frames where it slipped. It now sits at 0:42 between action shots.",
+    "at1382": "k18m replaced by y04, the man stepping out of the wrecked house, shot from a closer still.",
+    "at1625": "z05 replaced by y05, the barrels off the lorry from a closer still. The triangle is faint at that size: say if it still reads wrong.",
+    "at1689": "z06 re-shot (z06y) with a steady head; the mask holds the whole way through.",
+    "at2429": "k24 is out; its remake (y06, the balloon) is at 0:24, and an action shot covers this spot.",
+    "at2476": "g08 re-shot (g08y) with a steady head; the mask holds.",
+    "at2761": "q07 is dropped (its mask could not be held); an action shot is here instead.",
+    "at4240": "v05 re-shot (v05y), started 2.4 s in past the slip; now at 2:54 between action shots.",
+    "at4880": "pov2 now plays once, at 2:20; the outro here is action."
+  }
+}

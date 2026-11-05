@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p11-b-p11r6-b.mp4",
+ "made": "2026-11-05T12:46:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The crouched masked man performs from the first instant, bouncing on bent knees with every beat. On the first beat his raised finger wags a stern \"no\" at the lens. On the next he springs forward from the hips, finger jabbing at the camera. Then his hip hand flips up into an over-the-top shrug. Then back to the deep crouch, finger wagging again. The dockhand on the barrel keeps sipping his tea; the men behind keep lifting crates slowly. Car and boat stay still. Mask, gloves and suit unchanged. SFX: boots thudding on wet planks, cloth, clinking bottles, lapping water.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p11r6-b.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p11r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p11-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:33:26.798Z"
+ }
+}

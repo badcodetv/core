@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q06r7-a.jpg",
+ "made": "2026-11-05T14:21:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Institutional, dilutional, the usual\"",
+ "prompt": "A frame from a 1920s period feature film: RUST, the driver in a black double-breasted suit and white tie, raps straight into the lens on the wide marble steps of a city courthouse, one foot up on the step above, leaning in, his left glove raised and counting three fingers (index, middle and ring up, thumb folding the little finger down) at the camera, his right glove gripping a heavy chrome microphone. His mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: hand-knitted rust-gold rib wool over his whole head and neck, no holes, a large white wool ring round the face, one small rounded red felt triangle high over his LEFT eye, on the RIGHT of the picture. Black leather gloves, collar up, no skin. Behind him tall fluted columns rise; a clerk in a long dark coat carries a stack of tied files up the steps without a glance. Low morning sun rakes in from the left, throwing long column shadows across the pale marble. Low angle from two steps below, 24mm, his body filling the left two-thirds, 35mm film grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

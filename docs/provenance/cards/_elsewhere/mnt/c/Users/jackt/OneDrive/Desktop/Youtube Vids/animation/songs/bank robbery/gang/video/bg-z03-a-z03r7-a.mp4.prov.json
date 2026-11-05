@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z03-a-z03r7-a.mp4",
+ "made": "2026-11-05T15:23:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds, moving with the plane. The man on the ladder sways gently in the wind, gripping the rung. He lifts the canvas cash bag up to chest height and gives it one slow, cocky shake towards the lens, then lets it drop back to hang at his side and settles, swaying. His jacket flaps steadily; the fields below drift slowly backwards. His knitted mask, gloves and suit stay exactly as they are, his head facing the lens throughout. SFX: engine drone, rushing wind, creaking rope.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z03r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z03r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z03-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T15:09:28.918Z"
+ }
+}

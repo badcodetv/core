@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z02-a-z02r7-a.mp4",
+ "made": "2026-11-05T15:23:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera fixed to the car's bonnet, framing holds. The driver hauls the wheel hard to the left and both men sway together with the swerve, then settle upright, heads still facing the lens. Behind them the street streams away; the fruit cart finishes tipping, oranges bounce across the cobbles, and the policeman stumbles clear and stays behind. The passenger keeps his gloved hand braced on the windscreen frame. Both knitted masks, suits and gloves stay exactly as they are; no one new appears. SFX: engine roar, tyre squeal, oranges thudding, a police whistle.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z02r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z02r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z02-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T15:09:03.576Z"
+ }
+}

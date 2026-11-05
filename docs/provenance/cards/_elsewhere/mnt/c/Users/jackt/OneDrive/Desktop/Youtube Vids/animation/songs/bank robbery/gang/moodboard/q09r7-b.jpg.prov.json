@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q09r7-b.jpg",
+ "made": "2026-11-05T14:21:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"You know the real star is Pablo Escobar\"",
+ "prompt": "A frame from a 1920s period feature film: RUST, the masked robber, leans across a pool table straight toward the lens, rapping, caught at the peak of a showman's presentation. His mask and black double-breasted suit with white tie are exactly as in the attached reference image, the mask copied exactly from its close-up: white wool ring round the face, the small red felt triangle over his LEFT eye, so on the right side of the picture. His left gloved hand is flat on the green baize; his right arm is flung wide, palm up, fingers together, presenting the empty dark doorway beside him like introducing the real star. Behind him an old man in shirtsleeves and waistcoat chalks his cue, not looking up. Low angle from table height, 28mm, RUST filling the left half of the 16:9 frame, his mask large and sharp. Lit only by one green-shaded lamp hanging low over the felt; beyond it the hall falls to inky black. Shot on 35mm film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

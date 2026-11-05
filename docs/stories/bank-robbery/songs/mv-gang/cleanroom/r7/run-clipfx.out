@@ -1,0 +1,62 @@
+{"at":"2026-11-05T14:21:19.184Z","event":"wave","wave":1,"missing":2,"submitting":["v05x-a","v11x-a"]}
+{"at":"2026-11-05T14:21:49.094Z","event":"submitted","key":"v05x-a","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-05T14:22:13.682Z","event":"submitted","key":"v11x-a","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-05T14:22:13.692Z","event":"poll","fresh":1,"done":0,"want":2}
+{"at":"2026-11-05T14:22:28.702Z","event":"poll","fresh":1,"done":0,"want":2}
+{"at":"2026-11-05T14:22:43.714Z","event":"poll","fresh":1,"done":0,"want":2}
+{"at":"2026-11-05T14:22:57.569Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:23:12.594Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:23:26.451Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:23:41.463Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:23:55.303Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:24:10.318Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:24:24.177Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:24:39.203Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:24:53.077Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:25:08.103Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:25:21.966Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:25:36.995Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:25:54.313Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:26:09.361Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:26:23.225Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:26:38.528Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:26:52.400Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:27:07.434Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:27:22.448Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:27:36.309Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:27:51.340Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:28:05.476Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:28:20.797Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:28:34.686Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:28:52.678Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:29:06.522Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:29:21.552Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:29:35.446Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:29:53.883Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:30:08.049Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:30:23.343Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:30:37.230Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:30:52.299Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:31:06.181Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:31:21.497Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:31:35.312Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:31:52.792Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:32:06.635Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:32:21.676Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:32:36.208Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:32:51.234Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:33:07.919Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:33:25.951Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:33:39.865Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:33:56.079Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:34:09.957Z","event":"poll","fresh":1,"done":1,"want":2}
+{"at":"2026-11-05T14:34:36.289Z","event":"harvested","i":0,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/inbox/raw-000.mp4"}
+{"at":"2026-11-05T14:34:40.390Z","event":"harvested","i":1,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/inbox/raw-001.mp4"}
+raw-000.mp4: v11x-a (21)
+raw-001.mp4: v05x-a (9)
+  -> bg-v11x-a-v11r5-a.mp4
+  -> bg-v05x-a-v05r5-a.mp4
+{"have": ["a01-a", "a01-b", "a01m-a", "a01m-b", "a02-a", "a02-b", "a02m-a", "a02m-b", "a03-a", "a03-b", "a03m-a", "a03m-b", "c02-a", "c02-b", "c03-a", "c03-b", "c03g-a", "c03g-b", "c04-a", "c04-b", "c04g-a", "d01-a", "d01-b", "d01g-a", "d01m-a", "d02-a", "d02-b", "d02m-b", "d05-a", "d06-a", "d06g-a", "d06m-a", "d08-b", "d08g-b", "d10-a", "d10g-a", "d11-a", "d12-b", "e03-a", "e03g-a", "f01-a", "f01g-a", "f01m-a", "f02-a", "f03-b", "f03m-b", "f08-b", "g08-b", "g09-b", "g10-b", "g11-b", "g11m-b", "g12-b", "k01-a", "k01m-a", "k02-b", "k02m-b", "k03-a", "k03m-a", "k04-a", "k04m-a", "k06-b", "k07-a", "k09-a", "k09m-a", "k10-a", "k11-a", "k12-a", "k12m-a", "k13-b", "k13m-b", "k16-a", "k18-a", "k18m-a", "k19-a", "k19m-a", "k21-a", "k21m-a", "k22-b", "k22m-b", "k23-a", "k24-a", "k26-a", "k26m-a", "k27-b", "k27m-b", "k29-a", "k29m-a", "k30-a", "k30m-a", "k31-b", "k31m-b", "k36-b", "k36m-b", "p01-a", "p02-a", "p03-b", "p04-b", "p05-a", "p06-b", "p08-b", "p10-b", "p11-b", "p12-a", "p15-a", "p16-a", "v01-b", "v01g-b", "v03-b", "v03g-b", "v03m-b", "v05-b", "v05g-b", "v05m-b", "v05x-a", "v06-b", "v06g-b", "v06m-b", "v07-b", "v07m-b", "v08-b", "v11-b", "v11g-b", "v11m-b", "v11x-a", "v12-b", "v12m-b", "v13-b", "v13g-b", "v14-a", "v14g-a", "x01-a", "x02-a", "x03-b", "x03m-b", "x04-a", "x06-a", "x07-b", "x07m-b"]}
+{"at":"2026-11-05T14:34:56.757Z","event":"wave-done","wave":1,"remaining":0}
+{"at":"2026-11-05T14:34:56.786Z","event":"all-present","wave":2}
+{"at":"2026-11-05T14:34:56.814Z","event":"done","remaining":[],"blocked":[]}

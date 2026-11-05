@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y01r8-a.jpg",
+ "made": "2026-11-05T16:05:07+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 8: closer remake for Jack's mask/slop note, intro (instrumental)",
+ "prompt": "A still frame from a feature film, shot from the back seat of a black 1920s sedan already rolling fast down a narrow brick street at dusk. The camera sits low behind the front bench, looking forward over the shoulders of RUST at the wheel and CRIMSON beside him, their masked heads large in frame, filling the upper third, seen from behind and slightly to one side. The masks and suits are exactly as in the attached reference image, with the masks copied exactly from its close-ups: hand-knitted rib wool over the whole head, the large white ring and the small red felt triangle over each man's left eye on the side facing away from us. RUST's black-gloved hands haul the wheel left; CRIMSON's grey fedora sits on his mask. Through the dusty windscreen a gas-lit shopfront swings past, soft. The only light is the low orange sun through the glass. Shot on 35mm motion-picture film, fine grain, 16:9, the picture filling the frame edge to edge.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

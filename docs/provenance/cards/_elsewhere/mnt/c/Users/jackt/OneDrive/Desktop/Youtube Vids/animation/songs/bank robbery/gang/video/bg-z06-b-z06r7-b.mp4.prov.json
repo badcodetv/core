@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z06-b-z06r7-b.mp4",
+ "made": "2026-11-05T15:23:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The man on the right leans back on the sack truck handles and the two men wheel the black safe slowly toward the lens, one steady metre, the man on the left keeping his gloved palm flat on its side. They stop, the safe rocks once and settles, and the man on the left lifts his chin at the camera, unbothered. The safe stays one solid iron box; the vault door, bulb and walls stay as they are. Masks, suits and gloves unchanged. SFX: iron wheels grinding on stone, a creak, a low thud.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z06r7-b.jpg",
+ "why": "mv-gang r7 clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z06r7-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z06-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T15:10:45.227Z"
+ }
+}

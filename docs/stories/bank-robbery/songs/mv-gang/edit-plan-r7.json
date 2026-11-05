@@ -1,0 +1,762 @@
+[
+ {
+  "start": 0.0,
+  "section": "intro",
+  "clip": "z01-b",
+  "line": "",
+  "why": "action (fix for your note)",
+  "end": 4.063,
+  "dur": 4.063,
+  "in": 0.0
+ },
+ {
+  "start": 4.063,
+  "section": "intro",
+  "clip": "k01m-a",
+  "line": "",
+  "why": "action",
+  "end": 7.291,
+  "dur": 3.228,
+  "in": 0.0
+ },
+ {
+  "start": 7.291,
+  "section": "flurry",
+  "clip": "k03m-a",
+  "line": "",
+  "why": "action",
+  "end": 7.941,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 7.941,
+  "section": "flurry",
+  "clip": "k04m-a",
+  "line": "",
+  "why": "action",
+  "end": 8.475,
+  "dur": 0.534,
+  "in": 0.0
+ },
+ {
+  "start": 8.475,
+  "section": "flurry",
+  "clip": "z02-a",
+  "line": "",
+  "why": "action (fix for your note)",
+  "end": 9.218,
+  "dur": 0.743,
+  "in": 0.0
+ },
+ {
+  "start": 9.218,
+  "section": "flurry",
+  "clip": "k07-a",
+  "line": "",
+  "why": "action",
+  "end": 11.773,
+  "dur": 2.555,
+  "in": 0.0
+ },
+ {
+  "start": 11.773,
+  "section": "drop",
+  "clip": "p06-b",
+  "line": "",
+  "why": "the gang rapping to camera",
+  "end": 14.35,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 14.35,
+  "section": "drop",
+  "clip": "k09m-a",
+  "line": "",
+  "why": "action",
+  "end": 16.951,
+  "dur": 2.601,
+  "in": 0.0
+ },
+ {
+  "start": 16.951,
+  "section": "drop",
+  "clip": "z04-b",
+  "line": "",
+  "why": "action (fix for your note)",
+  "end": 19.551,
+  "dur": 2.6,
+  "in": 0.0
+ },
+ {
+  "start": 19.551,
+  "section": "drop",
+  "clip": "p01-a",
+  "line": "They say, you can't make money from a tree",
+  "why": "rapping to camera on its line",
+  "end": 21.989,
+  "dur": 2.438,
+  "in": 0.0
+ },
+ {
+  "start": 21.989,
+  "section": "verse",
+  "clip": "q01-b",
+  "line": "Let's see each day, make hay not free",
+  "why": "rapping to camera on its line",
+  "end": 24.683,
+  "dur": 2.694,
+  "in": 0.0
+ },
+ {
+  "start": 24.683,
+  "section": "verse",
+  "clip": "k03m-a",
+  "line": "",
+  "why": "action",
+  "end": 27.167,
+  "dur": 2.484,
+  "in": 2.1
+ },
+ {
+  "start": 27.167,
+  "section": "verse",
+  "clip": "k04m-a",
+  "line": "",
+  "why": "action",
+  "end": 29.861,
+  "dur": 2.694,
+  "in": 2.1
+ },
+ {
+  "start": 29.861,
+  "section": "verse",
+  "clip": "q02-a",
+  "line": "Means of production, means of reduction",
+  "why": "rapping to camera on its line",
+  "end": 32.438,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 32.438,
+  "section": "verse",
+  "clip": "k07-a",
+  "line": "",
+  "why": "action",
+  "end": 35.016,
+  "dur": 2.578,
+  "in": 2.1
+ },
+ {
+  "start": 35.016,
+  "section": "verse",
+  "clip": "p03-b",
+  "line": "Quantitative easing, grandma freezing",
+  "why": "rapping to camera on its line",
+  "end": 37.547,
+  "dur": 2.531,
+  "in": 0.0
+ },
+ {
+  "start": 37.547,
+  "section": "verse",
+  "clip": "k09m-a",
+  "line": "",
+  "why": "action",
+  "end": 40.078,
+  "dur": 2.531,
+  "in": 2.1
+ },
+ {
+  "start": 40.078,
+  "section": "verse",
+  "clip": "z03-a",
+  "line": "",
+  "why": "action (fix for your note)",
+  "end": 42.748,
+  "dur": 2.67,
+  "in": 0.0
+ },
+ {
+  "start": 42.748,
+  "section": "verse",
+  "clip": "k10-a",
+  "line": "",
+  "why": "action",
+  "end": 45.441,
+  "dur": 2.693,
+  "in": 0.0
+ },
+ {
+  "start": 45.441,
+  "section": "verse",
+  "clip": "k12m-a",
+  "line": "",
+  "why": "action",
+  "end": 47.81,
+  "dur": 2.369,
+  "in": 0.0
+ },
+ {
+  "start": 47.81,
+  "section": "verse",
+  "clip": "q04-a",
+  "line": "It prints all the dollars that the government spends",
+  "why": "rapping to camera on its line",
+  "end": 53.081,
+  "dur": 5.271,
+  "in": 0.0
+ },
+ {
+  "start": 53.081,
+  "section": "verse",
+  "clip": "k16-a",
+  "line": "",
+  "why": "action",
+  "end": 55.658,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 55.658,
+  "section": "verse",
+  "clip": "k18m-a",
+  "line": "",
+  "why": "action",
+  "end": 58.12,
+  "dur": 2.462,
+  "in": 0.0
+ },
+ {
+  "start": 58.12,
+  "section": "verse",
+  "clip": "p05-a",
+  "line": "Have resistance to the facts I'm stating",
+  "why": "rapping to camera on its line",
+  "end": 63.414,
+  "dur": 5.294,
+  "in": 0.0
+ },
+ {
+  "start": 63.414,
+  "section": "chorus",
+  "clip": "p06-b",
+  "line": "Call the police, it's a robbery",
+  "why": "rapping to camera on its line",
+  "end": 65.991,
+  "dur": 2.577,
+  "in": 2.1
+ },
+ {
+  "start": 65.991,
+  "section": "chorus",
+  "clip": "z05-a",
+  "line": "",
+  "why": "action (fix for your note)",
+  "end": 68.569,
+  "dur": 2.578,
+  "in": 0.0
+ },
+ {
+  "start": 68.569,
+  "section": "chorus",
+  "clip": "z06-b",
+  "line": "",
+  "why": "action (fix for your note)",
+  "end": 71.146,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 71.146,
+  "section": "chorus",
+  "clip": "p12-a",
+  "line": "",
+  "why": "the gang rapping to camera",
+  "end": 73.723,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 73.723,
+  "section": "chorus",
+  "clip": "c02-a",
+  "line": "call the police, it's a robbery",
+  "why": "rapping to camera on its line",
+  "end": 76.301,
+  "dur": 2.578,
+  "in": 0.0
+ },
+ {
+  "start": 76.301,
+  "section": "chorus",
+  "clip": "k10-a",
+  "line": "",
+  "why": "action",
+  "end": 78.901,
+  "dur": 2.6,
+  "in": 2.1
+ },
+ {
+  "start": 78.901,
+  "section": "chorus",
+  "clip": "k12m-a",
+  "line": "",
+  "why": "action",
+  "end": 80.155,
+  "dur": 1.254,
+  "in": 2.1
+ },
+ {
+  "start": 80.155,
+  "section": "flurry",
+  "clip": "k13m-b",
+  "line": "",
+  "why": "action",
+  "end": 80.829,
+  "dur": 0.674,
+  "in": 0.0
+ },
+ {
+  "start": 80.829,
+  "section": "flurry",
+  "clip": "k16-a",
+  "line": "",
+  "why": "action",
+  "end": 81.456,
+  "dur": 0.627,
+  "in": 2.1
+ },
+ {
+  "start": 81.456,
+  "section": "flurry",
+  "clip": "k18m-a",
+  "line": "",
+  "why": "action",
+  "end": 82.106,
+  "dur": 0.65,
+  "in": 2.1
+ },
+ {
+  "start": 82.106,
+  "section": "flurry",
+  "clip": "k19m-a",
+  "line": "",
+  "why": "action",
+  "end": 84.033,
+  "dur": 1.927,
+  "in": 0.0
+ },
+ {
+  "start": 84.033,
+  "section": "verse",
+  "clip": "q05-b",
+  "line": "Distracted by a dyspraxic flash",
+  "why": "rapping to camera on its line",
+  "end": 89.211,
+  "dur": 5.178,
+  "in": 0.0
+ },
+ {
+  "start": 89.211,
+  "section": "verse",
+  "clip": "z07-a",
+  "line": "The right and the left both witness the theft",
+  "why": "rapping to camera on its line",
+  "end": 91.788,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 91.788,
+  "section": "verse",
+  "clip": "k22m-b",
+  "line": "",
+  "why": "action",
+  "end": 94.25,
+  "dur": 2.462,
+  "in": 0.0
+ },
+ {
+  "start": 94.25,
+  "section": "verse",
+  "clip": "d06m-a",
+  "line": "institutional, dilutional, the usual",
+  "why": "rapping to camera on its line",
+  "end": 99.521,
+  "dur": 5.271,
+  "in": 0.0
+ },
+ {
+  "start": 99.521,
+  "section": "verse",
+  "clip": "k24-a",
+  "line": "",
+  "why": "action",
+  "end": 102.005,
+  "dur": 2.484,
+  "in": 0.0
+ },
+ {
+  "start": 102.005,
+  "section": "verse",
+  "clip": "g08-b",
+  "line": "divide and conquer, just look at the hand",
+  "why": "rapping to camera on its line",
+  "end": 104.676,
+  "dur": 2.671,
+  "in": 0.0
+ },
+ {
+  "start": 104.676,
+  "section": "verse",
+  "clip": "k27m-b",
+  "line": "",
+  "why": "action",
+  "end": 107.276,
+  "dur": 2.6,
+  "in": 0.0
+ },
+ {
+  "start": 107.276,
+  "section": "verse",
+  "clip": "g09-b",
+  "line": "state level manipulation, the devil with a radio station",
+  "why": "rapping to camera on its line",
+  "end": 109.854,
+  "dur": 2.578,
+  "in": 0.0
+ },
+ {
+  "start": 109.854,
+  "section": "verse",
+  "clip": "k21m-a",
+  "line": "",
+  "why": "action",
+  "end": 112.431,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 112.431,
+  "section": "verse",
+  "clip": "q07-b",
+  "line": "Stack up the vaults like a wheelbarrow",
+  "why": "rapping to camera on its line",
+  "end": 117.586,
+  "dur": 5.155,
+  "in": 0.0
+ },
+ {
+  "start": 117.586,
+  "section": "verse",
+  "clip": "k29m-a",
+  "line": "",
+  "why": "action",
+  "end": 120.186,
+  "dur": 2.6,
+  "in": 0.0
+ },
+ {
+  "start": 120.186,
+  "section": "verse",
+  "clip": "q08-a",
+  "line": "Biggie said, wait! / Rockin' 97",
+  "why": "rapping to camera on its line",
+  "end": 122.741,
+  "dur": 2.555,
+  "in": 0.0
+ },
+ {
+  "start": 122.741,
+  "section": "verse",
+  "clip": "k23-a",
+  "line": "",
+  "why": "action",
+  "end": 125.318,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 125.318,
+  "section": "chorus",
+  "clip": "k24-a",
+  "line": "",
+  "why": "action",
+  "end": 127.942,
+  "dur": 2.624,
+  "in": 2.1
+ },
+ {
+  "start": 127.942,
+  "section": "chorus",
+  "clip": "c03g-b",
+  "line": "debasement, it happened in da basement",
+  "why": "rapping to camera on its line",
+  "end": 130.496,
+  "dur": 2.554,
+  "in": 0.0
+ },
+ {
+  "start": 130.496,
+  "section": "chorus",
+  "clip": "k27m-b",
+  "line": "",
+  "why": "action",
+  "end": 133.074,
+  "dur": 2.578,
+  "in": 2.1
+ },
+ {
+  "start": 133.074,
+  "section": "chorus",
+  "clip": "k30m-a",
+  "line": "",
+  "why": "action",
+  "end": 135.651,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 135.651,
+  "section": "chorus",
+  "clip": "p12-a",
+  "line": "Call the police, it's a robbery",
+  "why": "rapping to camera on its line",
+  "end": 138.252,
+  "dur": 2.601,
+  "in": 2.1
+ },
+ {
+  "start": 138.252,
+  "section": "chorus",
+  "clip": "k31-b",
+  "line": "",
+  "why": "action",
+  "end": 140.829,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 140.829,
+  "section": "chorus",
+  "clip": "k29m-a",
+  "line": "",
+  "why": "action",
+  "end": 143.406,
+  "dur": 2.577,
+  "in": 2.1
+ },
+ {
+  "start": 143.406,
+  "section": "chorus",
+  "clip": "q09-a",
+  "line": "You know the real star is Pablo Escobar",
+  "why": "rapping to camera on its line",
+  "end": 145.984,
+  "dur": 2.578,
+  "in": 0.0
+ },
+ {
+  "start": 145.984,
+  "section": "break",
+  "clip": "k36m-b",
+  "line": "",
+  "why": "action",
+  "end": 151.139,
+  "dur": 5.155,
+  "in": 0.0
+ },
+ {
+  "start": 151.139,
+  "section": "break",
+  "clip": "g11m-b",
+  "line": "standard plans are for the working man",
+  "why": "rapping to camera on its line",
+  "end": 156.177,
+  "dur": 5.038,
+  "in": 0.0
+ },
+ {
+  "start": 156.177,
+  "section": "verse",
+  "clip": "cn:rods3-b",
+  "line": "",
+  "why": "action",
+  "end": 158.894,
+  "dur": 2.717,
+  "in": 0.0
+ },
+ {
+  "start": 158.894,
+  "section": "verse",
+  "clip": "cn:safe2-c",
+  "line": "",
+  "why": "action",
+  "end": 161.495,
+  "dur": 2.601,
+  "in": 0.0
+ },
+ {
+  "start": 161.495,
+  "section": "verse",
+  "clip": "q11-a",
+  "line": "Own a printer and you don't feel winter",
+  "why": "rapping to camera on its line",
+  "end": 164.049,
+  "dur": 2.554,
+  "in": 0.0
+ },
+ {
+  "start": 164.049,
+  "section": "verse",
+  "clip": "k30m-a",
+  "line": "",
+  "why": "action",
+  "end": 166.65,
+  "dur": 2.601,
+  "in": 2.1
+ },
+ {
+  "start": 166.65,
+  "section": "verse",
+  "clip": "k31-b",
+  "line": "",
+  "why": "action",
+  "end": 169.204,
+  "dur": 2.554,
+  "in": 2.1
+ },
+ {
+  "start": 169.204,
+  "section": "verse",
+  "clip": "q12-b",
+  "line": "So it's not very funny when you print more",
+  "why": "rapping to camera on its line",
+  "end": 171.781,
+  "dur": 2.577,
+  "in": 0.0
+ },
+ {
+  "start": 171.781,
+  "section": "verse",
+  "clip": "cn:pov2-a",
+  "line": "",
+  "why": "action",
+  "end": 174.359,
+  "dur": 2.578,
+  "in": 0.0
+ },
+ {
+  "start": 174.359,
+  "section": "verse",
+  "clip": "v05x-a",
+  "line": "Hungry people feed a revolution",
+  "why": "rapping to camera on its line",
+  "end": 176.866,
+  "dur": 2.507,
+  "in": 0.0
+ },
+ {
+  "start": 176.866,
+  "section": "breath",
+  "clip": "k36m-b",
+  "line": "",
+  "why": "action",
+  "end": 182.207,
+  "dur": 5.341,
+  "in": 0.423
+ },
+ {
+  "start": 182.207,
+  "section": "breath",
+  "clip": "v11x-a",
+  "line": "don't just eat cake",
+  "why": "rapping to camera on its line",
+  "end": 187.64,
+  "dur": 5.433,
+  "in": 0.0
+ },
+ {
+  "start": 187.64,
+  "section": "flurry",
+  "clip": "cn:rods3-b",
+  "line": "",
+  "why": "action",
+  "end": 188.267,
+  "dur": 0.627,
+  "in": 2.1
+ },
+ {
+  "start": 188.267,
+  "section": "flurry",
+  "clip": "cn:safe2-c",
+  "line": "",
+  "why": "action",
+  "end": 189.243,
+  "dur": 0.976,
+  "in": 2.1
+ },
+ {
+  "start": 189.243,
+  "section": "flurry",
+  "clip": "cn:chase1-a",
+  "line": "",
+  "why": "action",
+  "end": 189.893,
+  "dur": 0.65,
+  "in": 0.0
+ },
+ {
+  "start": 189.893,
+  "section": "flurry",
+  "clip": "cn:chase3-a",
+  "line": "",
+  "why": "action",
+  "end": 193.097,
+  "dur": 3.204,
+  "in": 0.0
+ },
+ {
+  "start": 193.097,
+  "section": "outro",
+  "clip": "p16-a",
+  "line": "",
+  "why": "the gang rapping to camera",
+  "end": 198.275,
+  "dur": 5.178,
+  "in": 0.0
+ },
+ {
+  "start": 198.275,
+  "section": "outro",
+  "clip": "cn:pov2-a",
+  "line": "",
+  "why": "action",
+  "end": 203.43,
+  "dur": 5.155,
+  "in": 0.61
+ },
+ {
+  "start": 203.43,
+  "section": "outro",
+  "clip": "cn:safe4-b",
+  "line": "",
+  "why": "action",
+  "end": 205.0,
+  "dur": 1.57,
+  "in": 0.0
+ },
+ {
+  "start": 205.0,
+  "section": "outro",
+  "clip": "k01m-a",
+  "line": "Robbery! (outro)",
+  "why": "the walk away from the explosion, held to the end",
+  "end": 209.6,
+  "dur": 4.6,
+  "in": 0.8
+ }
+]

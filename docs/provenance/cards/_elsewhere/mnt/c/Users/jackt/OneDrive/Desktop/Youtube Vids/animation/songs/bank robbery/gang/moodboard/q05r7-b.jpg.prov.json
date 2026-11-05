@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q05r7-b.jpg",
+ "made": "2026-11-05T14:21:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Distracted by a dyspraxic flash\"",
+ "prompt": "A frame from a 1920s period feature film: MARINE, the thin man in a cream linen suit and two-tone shoes, raps straight into the lens from the dim wings of a vaudeville stage, frozen at the peak of a sarcastic magician's flourish, his left glove flung open beside his head with all five fingers spread, his right glove holding a heavy chrome microphone to his knitted mouth, knees bent, torso tipped toward the camera. His mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: hand-knitted marine-blue rib wool over his whole head and neck, no holes, a large white wool ring round the face, one small rounded red felt triangle high over his LEFT eye, on the RIGHT of the picture. Black leather gloves, collar up, no skin. Behind him, through the gap in the velvet drapes, a chorus line of women in beaded costumes kicks under hot amber footlight; beside him a stagehand in shirtsleeves holds a rope on the pin rail, bored. One follow-spot spills sideways into the wings; the shadows fall to inky black. Waist-up, 28mm, eye level, 35mm film grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p04r6-b.jpg",
+ "made": "2026-11-05T12:06:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: SILVER alone, an art deco hotel lobby, on \"Remember kids, the Fed is not your friend\"",
+ "prompt": "A still frame from a feature film: SILVER alone, the tall robber, chin dipped, staring up through the knit straight into the lens mid-rap, two gloved fingers pressed to his temple in a \"think\" tap, the other two fingers curled and the thumb tucked. His mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: silver-grey rib-knit wool, white wool ring, small red felt triangle over his LEFT eye, on the right side of the picture at two o'clock. Oxblood suit, bow tie, black leather gloves, no skin. Close-up from just above his eye line, 85mm lens, his head and shoulders filling the right half of the 16:9 frame. He stands in an art deco hotel lobby of black-and-gold marble; a frosted-glass uplighter beside him throws hard light up his face, the rest falls into shadow. Behind, soft, a grey-haired elevator operator in a pillbox cap stands at the bronze lift door, holding a single gold coin on a silver tray, expressionless. 35mm film, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

@@ -1,0 +1,9 @@
+=== CLIP v05x-a ===
+Locked-off camera, no camera movement. From the first frame the masked man in the cream suit raps to the lens with his whole body, chest and mask facing camera throughout, no turning. On the first beat he rubs his stomach in a slow mock-sad circle; on the next he pats it twice; then he mimes spooning empty air to his chin and shakes his head; then he drops into a crouch and drives one gloved fist high, theatrically clenched, shoulders bouncing on every beat. His knitted mask stays exactly as it is. Others stay in place, watching. Sound of the machine and boots on the floor.
+ENDS_ON: The man in the cream suit squared to the lens in a low crouch, one gloved fist raised high, mask face-on, the gentleman in the top hat still at the press behind.
+WHY: Hunger mimed on the belly turning into a raised fist plays "hungry people feed a revolution" with the body facing camera the whole time, so there is no spin to teleport.
+
+=== CLIP v11x-a ===
+Locked-off camera, no camera movement. From the first frame the masked man in the maroon suit raps to the lens, leaning in. On the first beat he wags his raised finger at camera, mock-stern; on the next he tips his head up to the sky, exasperated; then he mimes holding a dainty invisible slice of cake between thumb and finger, little finger out, raises it to chin height, stops dead, and shakes his head at the lens; then he slides the empty hand forward, offering it to the viewer, and wags the finger again. Mask stays exactly as it is; other hand stays on his hip.
+ENDS_ON: The man leaning in on the steps, one gloved hand held out flat towards the lens as if offering a slice, the other on his hip, mask face-on, the top-hatted man still at the top of the steps.
+WHY: The posh pinkie-out slice he refuses to eat and then offers to the viewer plays "don't just eat cake" as give-not-take, mimed with empty hands so nothing new appears.

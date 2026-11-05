@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z01-b-z01r7-b.mp4",
+ "made": "2026-11-05T15:08:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The sedan surges straight toward the lens for about two metres, then brakes hard: the nose dips, the body rocks once on its springs and settles, still fully in frame. Straw and dust keep rolling out of the doorway behind it and drift down. Both men stay seated facing the camera, the driver's gloves gripping the wheel, heads steady; their knitted masks, hats and suits stay exactly as they are, sharp behind the windscreen. SFX: engine roar, tyre squeal on cobbles, springs creak, straw settling.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z01r7-b.jpg",
+ "why": "mv-gang r7 clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z01r7-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z01-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:55:36.662Z"
+ }
+}

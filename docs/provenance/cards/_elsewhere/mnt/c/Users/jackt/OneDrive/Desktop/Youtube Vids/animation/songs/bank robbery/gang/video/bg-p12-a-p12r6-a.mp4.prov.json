@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p12-a-p12r6-a.mp4",
+ "made": "2026-11-05T13:01:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The six masked men perform in unison to the lens on a fast beat from the first instant. First beat: the five raised arms chop down to point at the lens together; the man in the mustard mask finally throws his arm straight up, alone. Next beat: he snaps it down, late again. Next: all six bounce on bent knees and roll their shoulders. Next: all six fling both arms out wide. The band keeps playing; the dancers sway in place. Masks, gloves and suits stay unchanged. SFX: brass band, stamps on the stage, applause.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p12r6-a.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p12r6-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p12-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:47:21.758Z"
+ }
+}

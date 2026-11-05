@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p15r6-a.jpg",
+ "made": "2026-11-05T12:06:11+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: PLUM alone, a luxury Pullman dining car on a moving train, on \"Crime is asset inflation, passive creation\"",
+ "prompt": "A frame from a feature film: PLUM, the broad masked robber in a chalk-striped mustard-yellow three-piece suit, standing in the aisle of a luxury 1920s Pullman dining car, rapping straight into the lens, caught at the top of a big shrug, both shoulders up, gloved palms open and turned up at waist height, head cocked to one side. His mask and suit are exactly as in the attached reference image, the mask copied exactly from PLUM's close-up: plum rib-knit wool over the head and neck, no holes, a large white wool ring round the face, one small rounded red felt triangle high over his LEFT eye, on the right of the picture at two o'clock. Black leather gloves, no skin. Medium shot from the end of the car, eye-level, 85mm, mahogany panelling and white tablecloths compressed behind him. Warm light from small shaded table lamps, golden fields streaking past the windows. Beside him a porter in a white jacket holds out a silver tray with one boiled egg, gazing at nothing. 35mm film, fine grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

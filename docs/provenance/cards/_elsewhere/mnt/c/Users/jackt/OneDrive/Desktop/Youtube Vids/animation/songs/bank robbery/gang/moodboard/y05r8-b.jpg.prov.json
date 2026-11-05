@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y05r8-b.jpg",
+ "made": "2026-11-05T16:05:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 8: closer remake for Jack's mask/slop note, Call the police, it's a robbery",
+ "prompt": "A frame from a 1920s feature film: PLUM stands on the lowered tailgate of an open-bed 1920s delivery truck in a cobbled warehouse alley at dawn, both gloved hands still pressed flat against a second oak whiskey barrel, staring down in deadpan stillness at the one he has just shoved off. The mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: knitted plum rib wool over his whole head, no holes, a large white ring round the face, one small red felt triangle high over his LEFT eye, on the right side of the picture. Black leather gloves, collar up, chalk-striped mustard worsted. Camera low on the cobbles beside the split barrel, 28mm, looking up: burst staves, iron hoops and spreading amber whiskey fill the lower foreground, his masked head and chest large in the upper right, three-quarter to the lens. One low sun down the alley from behind the camera, red brick and green-painted doors. 35mm film, fine grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

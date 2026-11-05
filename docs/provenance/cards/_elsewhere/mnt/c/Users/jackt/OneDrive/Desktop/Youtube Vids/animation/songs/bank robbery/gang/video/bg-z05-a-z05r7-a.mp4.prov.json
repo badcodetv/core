@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z05-a-z05r7-a.mp4",
+ "made": "2026-11-05T15:23:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. Whiskey keeps glugging from the split barrel, the amber sheet spreading slowly across the cobbles toward the lens. On the truck bed the man straightens up from the tailgate, brushes one gloved palm against the other twice, then rests both hands on his hips and stands still, facing the camera, head steady. His knitted mask, gloves and suit stay exactly as they are. The barrel stays where it lies; the lane stays the same. SFX: liquid glugging and splashing, two leather claps, a distant lamp hum.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z05r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z05r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z05-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T15:10:18.768Z"
+ }
+}

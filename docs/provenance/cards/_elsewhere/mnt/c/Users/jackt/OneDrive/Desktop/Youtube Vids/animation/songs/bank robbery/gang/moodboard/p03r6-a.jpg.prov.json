@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p03r6-a.jpg",
+ "made": "2026-11-05T12:06:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: BOTTLE alone, a late-night diner, on \"Quantitative easing, grandma freezing\"",
+ "prompt": "A still frame from a feature film: BOTTLE alone, the quiet robber, standing square at a late-night diner counter, caught at the top of a big shrug, both shoulders up, both gloved palms open and turned up at waist height, head cocked, looking straight into the camera mid-rap. His mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: bottle-green rib-knit wool, white wool ring, small red felt triangle over his LEFT eye, on the right side of the picture at two o'clock. Brown tweed, black leather gloves, no skin. Medium shot, eye level, 40mm lens, frontal, BOTTLE just right of centre. The only light is one milk-glass ceiling globe above him, falling off to dark booths; the front window is frosted with ice. On the round stool beside him an elderly woman in a moth-eaten cardigan and knitted hat clutches a mug of coffee for warmth, staring ahead, unimpressed. 35mm film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

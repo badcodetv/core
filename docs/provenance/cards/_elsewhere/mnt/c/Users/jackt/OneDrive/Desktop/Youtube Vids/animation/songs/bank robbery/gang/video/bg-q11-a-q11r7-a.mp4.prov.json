@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-q11-a-q11r7-a.mp4",
+ "made": "2026-11-05T15:08:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first instant the masked man bounces on the beat, holding his lapels. On the first beat he flaps the jacket shut and open like wings, showing the stuffed lining; on the next he does it again, bigger; then he lets go of one lapel and pats the bundles of notes twice, smug, and grips the lapel again, rocking his shoulders. The bundles stay tucked in the lining. The man at the brazier warms his hands and stares, hardly moving. Snow drifts down; the coals flicker. Mask and suit stay exactly as they are. SFX: crackling fire, cloth flaps.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q11r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q11r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "q11-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:54:42.412Z"
+ }
+}

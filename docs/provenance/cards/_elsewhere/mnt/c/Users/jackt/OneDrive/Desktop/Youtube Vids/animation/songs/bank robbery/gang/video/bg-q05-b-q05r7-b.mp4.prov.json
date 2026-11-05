@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-q05-b-q05r7-b.mp4",
+ "made": "2026-11-05T14:53:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first instant the man raps with the microphone held tight to his masked mouth. On the first beat his spread glove snaps shut into a fist; on the next it bursts open again, a magician's flash; then the open hand sweeps slowly across in front of his chest, like a conjuror waving a cloth, and flings wide again. Knees bounce on every beat, torso dipping towards the lens. He keeps the microphone the whole time. The dancers keep kicking; the stagehand stands bored, holding his rope. Mask and gloves stay exactly as they are. SFX: tap of heels, cloth.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q05r7-b.jpg",
+ "why": "mv-gang r7 clip, writer cw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q05r7-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "q05-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:40:02.565Z"
+ }
+}

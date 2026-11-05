@@ -1423,6 +1423,350 @@
    "motion": "Locked-off high camera, framing holds. The policemen bring their axes down into the oak barrels once each, and amber liquor gushes out and spreads slowly across the plank floor around the cards and chairs. The masked man carrying the crate walks steadily toward the open back door on the right. The masked man in the red suit holds the door still. The masks and the room stay unchanged. Audio: SFX of splitting wood, gushing liquid, heavy boots on boards.\n\nThanks.",
    "character": null,
    "why": "mask fix of x07-b (r3/mask-audit.md): new still x07r5-b, same motion as x07-b"
+  },
+  {
+   "key": "p01-a",
+   "n": 0,
+   "still": "p01r6-a",
+   "motion": "Locked-off camera, framing holds. The masked man moves from the first instant. His raised gloved hand chops down hard on the beat, then chops again; his other hand slaps flat on the bar. On the next beat he jabs one finger straight at the lens, head shoved forward. Then he rocks both shoulders and bounces at the knees, chopping again, never still. The old barman keeps his hand resting on the lever, bored, barely blinking. Mask, gloves and suit unchanged; nothing new appears. SFX: glove slaps on wood, bottles clink faintly, quiet bar hum.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw1"
+  },
+  {
+   "key": "p05-a",
+   "n": 0,
+   "still": "p05r6-a",
+   "motion": "Locked-off camera, framing holds. The crouching man in the hat moves from the first instant: he taps both temples twice on the beat, then flings both hands open toward the lens, then bobs on bent knees, tapping again, feet planted on the beam. Behind him the four standing men nod together on each beat; the seated man holds his sandwich still against his mask and stares. Everyone stays on the girder. Masks, gloves and suits unchanged; nothing new appears. SFX: wind gusting, steel creaking, distant city traffic far below.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw1"
+  },
+  {
+   "key": "p10-b",
+   "n": 0,
+   "still": "p10r6-b",
+   "motion": "Locked-off camera, framing holds. The masked man moves from the first instant: his raised hand pumps the horn sign down on the beat, twice, then swings it out to point at the lens, then back to the horns. His other hand keeps a tight grip on the microphone ring as he bobs his head and dips his shoulders on every beat, leaning into the mic. Behind him the shirt-sleeved man calmly keeps clopping the coconut halves. Mask, gloves and suit unchanged; nothing new appears. SFX: coconut clops, cloth rustle, the low hum of the studio.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw1"
+  },
+  {
+   "key": "p15-a",
+   "n": 0,
+   "still": "p15r6-a",
+   "motion": "Locked-off camera, framing holds. The masked man moves from the first instant: from the shrug he drops both shoulders, then snaps them up again on the beat, palms up. On the next beat he swings one gloved hand to present the egg on the porter's tray, then counts off two fingers at the lens, then shrugs big again, head cocked. The porter stays still holding the tray level, egg in place, gazing at nothing. Fields stream past the windows. Mask, gloves and suit unchanged; nothing new appears. SFX: rails clacking, cutlery rattling softly.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw1"
+  },
+  {
+   "key": "p02-a",
+   "n": 0,
+   "still": "p02r6-a",
+   "motion": "Locked-off camera, framing holds. The masked man performs from the first instant, head bobbing hard on every beat. On the first beat his pointing finger jabs at the lens twice, sharp. On the next he snaps the hand back and chops it flat down through the air. Then a huge sarcastic shrug, both palms up, head cocked. Then he leans in and jabs at the lens again. The porter keeps slowly pushing his loaded cart, staying in frame. Mask, hat, gloves and suit unchanged; no new objects. SFX: leather glove creaks, cloth swishes, cart wheels, echoing station hall.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw2"
+  },
+  {
+   "key": "p06-b",
+   "n": 0,
+   "still": "p06r6-b",
+   "motion": "Locked-off camera, framing holds. The six masked men perform at once from the first instant. On the first beat all raised fists pump up twice in unison; the man in the orange mask is late, his fist only reaching shoulder height each time. On the next beat they all drop to flat palms chopping down together. Then they all bounce at the knees, heads nodding hard. Then all fists punch up again, orange still late. Behind the grille the grey teller keeps counting banknotes, never looking up. Masks, suits and gloves unchanged; nobody new appears. SFX: shoe stamps, cloth, rustling banknotes, marble echo.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw2"
+  },
+  {
+   "key": "p11-b",
+   "n": 0,
+   "still": "p11r6-b",
+   "motion": "Locked-off camera, framing holds. The crouched masked man performs from the first instant, bouncing on bent knees with every beat. On the first beat his raised finger wags a stern \"no\" at the lens. On the next he springs forward from the hips, finger jabbing at the camera. Then his hip hand flips up into an over-the-top shrug. Then back to the deep crouch, finger wagging again. The dockhand on the barrel keeps sipping his tea; the men behind keep lifting crates slowly. Car and boat stay still. Mask, gloves and suit unchanged. SFX: boots thudding on wet planks, cloth, clinking bottles, lapping water.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw2"
+  },
+  {
+   "key": "p16-a",
+   "n": 0,
+   "still": "p16r6-a",
+   "motion": "Locked-off camera, framing holds. The six masked men in the ring perform at once from the first instant, staring up at the lens. On the first beat every raised fist pumps up twice in unison; the green-masked man in front is a beat late, his fist only reaching chest height. On the next beat they all bounce at the knees, heads nodding hard. Then all thump a fist to their chest together. Then every fist punches straight up again, green still late. Smoke drifts slowly through the window light. Masks, suits and gloves unchanged; nobody new appears. SFX: stamps on canvas, creaking ropes, cloth, echoing gym.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw2"
+  },
+  {
+   "key": "p03-b",
+   "n": 0,
+   "still": "p03r6-b",
+   "motion": "Locked-off camera, framing holds. The masked man performs to the lens on a fast beat from the first instant. First beat: his shrug drops, both gloved palms slap down flat on the counter. Next beat: he leans in over the counter, head pushed toward the lens. Next: his right hand chops down through the air twice. Next: his left hand jabs a finger at the lens. Next: a huge slow shrug, palms up, head cocked. The old woman sips her coffee, staring ahead. Mask, gloves and suit stay unchanged. SFX: palms on counter, tweed rustle, a mug set down, quiet diner hum.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw3"
+  },
+  {
+   "key": "p07-b",
+   "n": 0,
+   "still": "p07r6-b",
+   "motion": "Locked-off camera, framing holds. The masked man performs to the lens on a fast beat from the first instant. First beat: his flat palm lifts and chops back down on the cash stack. Next beat: he straightens up, rolling his shoulders. Next: he points down at the stack with two fingers, head tilted. Next: he pats the stack three times like a dog's head. Next: he leans low over the hood, head pushed at the lens. The cash stays in place on the hood; the mechanic's legs stay still on the creeper. Mask, gloves and suit stay unchanged. SFX: gloved slaps on paper, hood thud, a dripping tap.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw3"
+  },
+  {
+   "key": "p12-a",
+   "n": 0,
+   "still": "p12r6-a",
+   "motion": "Locked-off camera, framing holds. The six masked men perform in unison to the lens on a fast beat from the first instant. First beat: the five raised arms chop down to point at the lens together; the man in the mustard mask finally throws his arm straight up, alone. Next beat: he snaps it down, late again. Next: all six bounce on bent knees and roll their shoulders. Next: all six fling both arms out wide. The band keeps playing; the dancers sway in place. Masks, gloves and suits stay unchanged. SFX: brass band, stamps on the stage, applause.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw3"
+  },
+  {
+   "key": "p04-b",
+   "n": 0,
+   "still": "p04r6-b",
+   "motion": "Locked-off camera, framing holds. The masked man performs straight at the lens from the first instant, mock-serious. First beat: two gloved fingers tap his temple twice, sharp. Next beat: the same hand snaps out, index finger jabbing at the lens. Next: palm flat, edge down, chopping the air twice. Next: both shoulders shrug high, gloved palm turned up, head cocked. Then the two fingers return to his temple, tapping. The elevator operator stays still behind him, holding the tray level, coin in place. Mask, gloves and suit unchanged. SFX: leather glove creaks, cloth rustles, quiet lobby hum.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw4"
+  },
+  {
+   "key": "p08-b",
+   "n": 0,
+   "still": "p08r6-b",
+   "motion": "Locked-off high camera, framing holds. The masked man lands from his jump within the first half second, knees bending deep, and keeps bouncing on the beat. On each landing his arms swing: both index fingers point left, then both point right, then both jab up at the lens. Next beat: arms flung wide again, shoulders bobbing, heels lifting. He stays on the same spot of cobbles. The two old men in the windows stay leaning out, sip their tea once, blank. Steam drifts. Suit and mask unchanged. SFX: shoe soles slap wet cobbles, cloth flaps, distant drip.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw4"
+  },
+  {
+   "key": "p13-a",
+   "n": 0,
+   "still": "p13r6-a",
+   "motion": "Locked-off low camera, framing holds. The masked man leans over the table and performs at the lens from the first instant. First beat: his raised gloved fist chops down hard toward the felt, stopping just above it. Next beat: back up, fist pumping twice beside his shoulder. Next: he hunches forward, head pushed toward the lens, shoulders rolling. Next: flat palm chops down again. His other hand stays gripping the table rail. Behind, the croupier keeps raking chips, eyes down. Dice and chips stay where they lie. Mask, gloves, suit unchanged. SFX: glove thuds near felt, chips click, faint rake scrape.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r6 rap-to-camera clip, writer cw4"
+  },
+  {
+   "key": "v05x-a",
+   "n": 0,
+   "still": "v05r5-a",
+   "motion": "Locked-off camera, no camera movement. From the first frame the masked man in the cream suit raps to the lens with his whole body, chest and mask facing camera throughout, no turning. On the first beat he rubs his stomach in a slow mock-sad circle; on the next he pats it twice; then he mimes spooning empty air to his chin and shakes his head; then he drops into a crouch and drives one gloved fist high, theatrically clenched, shoulders bouncing on every beat. His knitted mask stays exactly as it is. Others stay in place, watching. Sound of the machine and boots on the floor.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip fix (Jack's cut-6 note)"
+  },
+  {
+   "key": "v11x-a",
+   "n": 0,
+   "still": "v11r5-a",
+   "motion": "Locked-off camera, no camera movement. From the first frame the masked man in the maroon suit raps to the lens, leaning in. On the first beat he wags his raised finger at camera, mock-stern; on the next he tips his head up to the sky, exasperated; then he mimes holding a dainty invisible slice of cake between thumb and finger, little finger out, raises it to chin height, stops dead, and shakes his head at the lens; then he slides the empty hand forward, offering it to the viewer, and wags the finger again. Mask stays exactly as it is; other hand stays on his hip.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip fix (Jack's cut-6 note)"
+  },
+  {
+   "key": "z01-b",
+   "n": 0,
+   "still": "z01r7-b",
+   "motion": "Locked-off camera, framing holds. The sedan surges straight toward the lens for about two metres, then brakes hard: the nose dips, the body rocks once on its springs and settles, still fully in frame. Straw and dust keep rolling out of the doorway behind it and drift down. Both men stay seated facing the camera, the driver's gloves gripping the wheel, heads steady; their knitted masks, hats and suits stay exactly as they are, sharp behind the windscreen. SFX: engine roar, tyre squeal on cobbles, springs creak, straw settling.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw1"
+  },
+  {
+   "key": "z05-a",
+   "n": 0,
+   "still": "z05r7-a",
+   "motion": "Locked-off camera, framing holds. Whiskey keeps glugging from the split barrel, the amber sheet spreading slowly across the cobbles toward the lens. On the truck bed the man straightens up from the tailgate, brushes one gloved palm against the other twice, then rests both hands on his hips and stands still, facing the camera, head steady. His knitted mask, gloves and suit stay exactly as they are. The barrel stays where it lies; the lane stays the same. SFX: liquid glugging and splashing, two leather claps, a distant lamp hum.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw1"
+  },
+  {
+   "key": "q02-a",
+   "n": 0,
+   "still": "q02r7-a",
+   "motion": "Locked-off camera, framing holds. He performs from the first half-second, sharp moves on the beat: on the first beat his outstretched arm sweeps palm-up, presenting the car body like a showroom host; on the next his near glove pinches thumb and finger almost shut at the lens; then a flat-palm chop down; then both shoulders up in a slow sarcastic shrug; then a deep nod, chin down. His hands stay below his chin. The worker keeps tightening his bolt, never looking up. Knitted mask, gloves and suit unchanged. SFX: ratchet clicks, cloth rustle, factory hum.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw1"
+  },
+  {
+   "key": "q08-a",
+   "n": 0,
+   "still": "q08r7-a",
+   "motion": "Locked-off camera, framing holds. Both men perform from the first half-second, sharp moves on the beat. The man on the left thrusts his flat palm at the lens twice, a hard stop sign, then wags one gloved finger side to side, then chops the palm down; his other glove keeps hold of the chrome microphone throughout. The man on the right keeps his hand cupped at his ear, leans further toward the brass horn, nods deeply on each beat and pops his shoulders. Behind the counter the shopkeeper keeps calmly winding the gramophone. Masks, hat, gloves and suits unchanged. SFX: gramophone crank, crackle, leather creak.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw1"
+  },
+  {
+   "key": "z02-a",
+   "n": 0,
+   "still": "z02r7-a",
+   "motion": "Locked-off camera fixed to the car's bonnet, framing holds. The driver hauls the wheel hard to the left and both men sway together with the swerve, then settle upright, heads still facing the lens. Behind them the street streams away; the fruit cart finishes tipping, oranges bounce across the cobbles, and the policeman stumbles clear and stays behind. The passenger keeps his gloved hand braced on the windscreen frame. Both knitted masks, suits and gloves stay exactly as they are; no one new appears. SFX: engine roar, tyre squeal, oranges thudding, a police whistle.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw2"
+  },
+  {
+   "key": "z06-b",
+   "n": 0,
+   "still": "z06r7-b",
+   "motion": "Locked-off camera, framing holds. The man on the right leans back on the sack truck handles and the two men wheel the black safe slowly toward the lens, one steady metre, the man on the left keeping his gloved palm flat on its side. They stop, the safe rocks once and settles, and the man on the left lifts his chin at the camera, unbothered. The safe stays one solid iron box; the vault door, bulb and walls stay as they are. Masks, suits and gloves unchanged. SFX: iron wheels grinding on stone, a creak, a low thud.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw2"
+  },
+  {
+   "key": "q04-a",
+   "n": 0,
+   "still": "q04r7-a",
+   "motion": "Locked-off camera, framing holds. From the first half-second the man raps with his whole body, knees bouncing on the beat, feet planted on the step. On the first beat his raised finger jabs up at the racing paper twice; on the next his other glove rubs the money sign hard at the lens; then both arms snap wide, palms down; then a big sarcastic shrug, palms up; then the finger jabs up again. Hands stay below and beside his masked face. The pressman keeps reading, bored. Mask, suit and gloves unchanged. SFX: rotary presses clattering, paper hissing.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw2"
+  },
+  {
+   "key": "q09-a",
+   "n": 0,
+   "still": "q09r7-a",
+   "motion": "Locked-off camera, framing holds. From the first half-second the man raps with his body, leaning over the table, his left glove staying flat on the baize. On the first beat his open right hand sweeps grandly toward the dark doorway; on the next it jabs a finger at the lens; then he shrugs, palm up, head cocked; then a deep nod on the downbeat; then the presenting sweep again, too much, held. His masked face stays toward camera. The old man keeps chalking his cue, never looking up. Mask, suit and gloves unchanged. SFX: lamp hum, chalk squeak, balls clicking softly.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw2"
+  },
+  {
+   "key": "z03-a",
+   "n": 0,
+   "still": "z03r7-a",
+   "motion": "Locked-off camera, framing holds, moving with the plane. The man on the ladder sways gently in the wind, gripping the rung. He lifts the canvas cash bag up to chest height and gives it one slow, cocky shake towards the lens, then lets it drop back to hang at his side and settles, swaying. His jacket flaps steadily; the fields below drift slowly backwards. His knitted mask, gloves and suit stay exactly as they are, his head facing the lens throughout. SFX: engine drone, rushing wind, creaking rope.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw3"
+  },
+  {
+   "key": "z07-a",
+   "n": 0,
+   "still": "z07r7-a",
+   "motion": "Locked-off camera, framing holds. From the first instant the man in the middle bounces on the beat, knees flexing. On the first beat his open gloved hands rise and fall in turn like weighing scales, left up, right down, then swap; on the next he drops both shoulders hard; then a big slow shrug, palms up, head cocked a little. He repeats the scales, steady to the end, feet planted on the cobbles. The two men in the doorways keep leaning, barely moving. Masks, gloves and suits stay exactly as they are. SFX: cloth rustle, dripping water, distant city.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw3"
+  },
+  {
+   "key": "q05-b",
+   "n": 0,
+   "still": "q05r7-b",
+   "motion": "Locked-off camera, framing holds. From the first instant the man raps with the microphone held tight to his masked mouth. On the first beat his spread glove snaps shut into a fist; on the next it bursts open again, a magician's flash; then the open hand sweeps slowly across in front of his chest, like a conjuror waving a cloth, and flings wide again. Knees bounce on every beat, torso dipping towards the lens. He keeps the microphone the whole time. The dancers keep kicking; the stagehand stands bored, holding his rope. Mask and gloves stay exactly as they are. SFX: tap of heels, cloth.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw3"
+  },
+  {
+   "key": "q11-a",
+   "n": 0,
+   "still": "q11r7-a",
+   "motion": "Locked-off camera, framing holds. From the first instant the masked man bounces on the beat, holding his lapels. On the first beat he flaps the jacket shut and open like wings, showing the stuffed lining; on the next he does it again, bigger; then he lets go of one lapel and pats the bundles of notes twice, smug, and grips the lapel again, rocking his shoulders. The bundles stay tucked in the lining. The man at the brazier warms his hands and stares, hardly moving. Snow drifts down; the coals flicker. Mask and suit stay exactly as they are. SFX: crackling fire, cloth flaps.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw3"
+  },
+  {
+   "key": "z04-b",
+   "n": 0,
+   "still": "z04r7-b",
+   "motion": "Locked-off tripod camera, the framing holds. One action only: a fourth bullet punches through the upper door panel, opening a new small hole; a hard shaft of daylight snaps through it into the dusty dark, and a short puff of pale wood splinters spits from the hole towards the lens and falls. The man flinches once, pressing flatter to the wall, gun kept upright, then stays still. Dust drifts slowly through the four light beams to the end. His knitted mask, hat and gloves stay exactly as they are; nothing new enters. SFX: one sharp wooden crack, splinters pattering, then a low room hum.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw4"
+  },
+  {
+   "key": "q01-b",
+   "n": 0,
+   "still": "q01r7-b",
+   "motion": "Locked-off camera, framing holds. From the first half-second he performs to the lens, foot staying on the crate: on the first beat his lower glove chops down flat, edge first; on the next he leans further over his knee toward the lens; then the chop again, harder; then he tugs his lapel with the other glove, chin lifting in mock pride; then a slow, smug head nod on the downbeat, and he repeats the chop. Head turns stay small; his mask and suit stay exactly as they are. The pigeon keeper keeps scattering grain, back turned. SFX: glove thumps, cloth rustle, pigeons cooing, distant city.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw4"
+  },
+  {
+   "key": "q07-b",
+   "n": 0,
+   "still": "q07r7-b",
+   "motion": "Locked-off camera, framing holds. From the first half-second all six perform to the lens on the beat. The man in front chops his flat glove down onto his heap of notes, beat after beat; on the third beat he looks up and gives a slow, smug shrug. Behind him the five bounce at the knees, free gloves jabbing toward the lens on each beat, then all heave their barrow handles up together and drop them. Wheelbarrows and notes stay in place; masks, hats and suits stay exactly as they are. The old clerk keeps typing, never looking up. SFX: thumps on paper, clattering keys, a vault hum.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw4"
+  },
+  {
+   "key": "q12-b",
+   "n": 0,
+   "still": "q12r7-b",
+   "motion": "Locked-off camera, framing holds. From the first half-second all six wag their raised index fingers side to side in unison, on the beat, the fingers staying beside their heads, clear of the masks. The man at the back right lifts his finger late and joins in. On the fourth beat they all stop together, snap the finger down to point at the lens, then give one slow, sarcastic head shake. Feet stay planted; heads turn only slightly; masks, hat and suits stay exactly as they are. The deckhand keeps coiling rope, ignoring them. SFX: gulls, water lapping, a ferry engine thrum, creaking deck.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r7 clip, writer cw4"
+  },
+  {
+   "key": "y01-b",
+   "n": 0,
+   "still": "y01r8-b",
+   "motion": "Locked camera fixed in the back seat, moving with the car; no zoom, pan or tilt. The car is already rolling fast. From the first moment the driver on the left hauls the wheel hard left with both gloved hands, his shoulders and elbows leaning into the turn; the heavy car body rolls on its springs and both men sway with it, then settle as it straightens. Through the windscreen the brick street swings and slides past. Both men keep facing forward. The masks and the grey hat stay exactly as they are: white ring, red triangle, no holes. Engine roar, tyres drumming on cobbles. No speech.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer cy1"
+  },
+  {
+   "key": "y02-a",
+   "n": 0,
+   "still": "y02r8-a",
+   "motion": "Locked camera low at the wet kerb; no zoom, pan or tilt. The car is already sliding broadside, its rear wheel spinning in place and pouring thick white smoke that rolls left along the cobbles. The heavy car slides only a short way right, staying in frame, then the tyre grips and the body rocks once on its springs and settles. The man leaning from the window keeps the gun pointed straight up at the sky in both gloved hands and pumps it upward twice, head steady toward the lens. The driver stays at the wheel. Both masks stay exactly as they are: white ring, red triangle, no holes. Tyre screech, engine.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer cy1"
+  },
+  {
+   "key": "y03-a",
+   "n": 0,
+   "still": "y03r8-a",
+   "motion": "Slow motion, locked camera; no zoom, pan or tilt. He keeps flying sideways through the air, travelling only a little to the right and sinking slightly as gravity takes him, his cream jacket flapping and his trouser legs rippling. He holds the gun pointed straight up at the ceiling in both gloved hands the whole time. His head stays square to the lens and large in frame. Behind him glass crystals fall steadily, glint in the window light and bounce off the marble counter. The mask stays exactly as it is: white ring, red triangle, no holes. Tinkling glass, cloth snapping. No speech.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer cy1"
+  },
+  {
+   "key": "y04-a",
+   "n": 0,
+   "still": "y04r8-a",
+   "motion": "Locked-off camera, tripod-stable, no zoom, pan or tilt; one continuous shot. The man stands still in the window frame of the fallen house front. At once his gloved hand brushes the dust off his lapel in two firm strokes, then he squares his shoulders, tugs his jacket straight with one hand and sets his feet, the carpet bag held steady at his side. A last puff of plaster dust settles round his boots. His head stays square to the lens throughout; his knitted mask does not change. Sound: settling timber creaks, a cloth brush, a distant dog.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer cy2"
+  },
+  {
+   "key": "y05-a",
+   "n": 0,
+   "still": "y05r8-a",
+   "motion": "Locked-off camera, tripod-stable, no zoom, pan or tilt; one continuous shot. The man leans on the standing barrel with both gloved hands flat on its rim. Whiskey keeps glugging from the split barrel at his feet and spreads slowly across the cobbles in a widening amber puddle. He straightens his back, plants both hands on the barrel lid and gives it one firm, heavy pat, then rests there, deadpan. His head stays still, angled down at the spill; his knitted mask does not change. Sound: liquid gurgling, a dull wooden thump.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer cy2"
+  },
+  {
+   "key": "y06-a",
+   "n": 0,
+   "still": "y06r8-a",
+   "motion": "Locked-off camera, tripod-stable, no zoom, pan or tilt; one continuous shot. The two men hold the canvas sack between them over the basket rim and give it two hard, shared shakes, so a thick stream of banknotes tumbles out and flutters away down towards the clouds. On the third beat they lift the empty sack and hold it out flat, deadpan, facing the lens. Their heads stay square to the camera and do not turn; both knitted masks stay exactly as they are. The ropes sway a little. Sound: wind, flapping paper, creaking wicker.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer cy2"
+  },
+  {
+   "key": "p03y-b",
+   "n": 0,
+   "still": "p03r6-b",
+   "motion": "Locked-off camera, no zoom, pan or tilt; one continuous shot. He stays standing in place behind the counter, facing the lens, head nearly still. On the first beat his shrug drops and pops back up, gloved palms bouncing; on the next both arms swing in and slap flat on the counter; then one palm sweeps sideways towards the old woman, presenting her; then a big double shrug again, shoulders to his ears. Hands stay below the mask. The old woman sips her coffee, unimpressed. His mask stays exactly as in the first frame: white ring, one red triangle, no holes. Diner hum, palm slaps.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer pf"
+  },
+  {
+   "key": "z06y-b",
+   "n": 0,
+   "still": "z06r7-b",
+   "motion": "Locked-off camera, no zoom, pan or tilt; one continuous shot. The two men stand upright either side of the safe, heads facing the lens. On the first beat the man in the mustard suit raps the safe's top twice with his gloved knuckles; on the next he pats it like a prize horse; then his free hand points down at it and back to his own chest. The man in brown tweed rocks the sack truck a little on its wheels, the safe tilting, and nods on the beat. Masks stay exactly as in the first frame: white ring, one red triangle, no holes. Bulb sways slightly; knocks on iron.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer pf"
+  },
+  {
+   "key": "g08y-b",
+   "n": 0,
+   "still": "g08r5-b",
+   "motion": "Locked-off camera, no zoom, pan or tilt; one continuous shot. The big gloved hand in the foreground stays up, fingers spread, never passing over his face: on each beat it wiggles its fingers like a stage magician, then snaps them, then waves slowly side to side. Behind his back, in plain view, his other hand keeps slowly pushing the folded banknote deeper into his jacket pocket until it is gone inside. His head stays where it is, tilted showily, facing the lens. His mask stays exactly as in the first frame: white ring, one red triangle, no holes. Smoke drifts in the spotlight. A finger snap, cloth rustle.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer pf"
+  },
+  {
+   "key": "v05y-a",
+   "n": 0,
+   "still": "v05r5-a",
+   "motion": "Locked-off camera, no zoom, pan or tilt; one continuous shot. He stays planted in his crouch, facing the lens, head square, no spin. On the first beat his lower glove chops down through the air; on the next his raised thumb jabs back over his shoulder at the man on the lever; then both fists pump at chest height twice; then the chop again, harder. His knees bounce on every beat. Hands stay clear of his face. His mask stays exactly as in the first frame: white ring, one red triangle, no holes. The owner hauls the lever, the workers shrink back. Furnace roar, flywheels turning.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer pf"
+  },
+  {
+   "key": "z02y-b",
+   "n": 0,
+   "still": "z02r7-b",
+   "motion": "Camera locked to the car's bonnet, no zoom, pan or tilt; one continuous shot. The car swerves hard down the street from the first moment. The driver in the crimson mask and hat yanks the wheel left, then right, on the beat, shoulders and elbows heaving. The man in the cream suit beside him slams both gloved hands flat on the dashboard and braces, chest rocking with each swerve. Both heads stay square to the lens. Masks stay exactly as in the first frame: white ring, one small red triangle high on the right of each face, no holes. Oranges keep falling; the policeman stumbles clear. Engine roar, tyres squeal.\n\nThanks.",
+   "character": null,
+   "why": "mv-gang r8 mask fix, writer pf2"
   }
  ]
 }

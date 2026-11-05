@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z04r7-b.jpg",
+ "made": "2026-11-05T14:21:26+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (fix), on \"intro (instrumental)\"",
+ "prompt": "A frame from a feature film: inside a dark 1920s bank storeroom, CRIMSON presses his back flat against the plaster wall beside a heavy oak door, his Thompson held upright against his chest, muzzle to the ceiling. Three fresh bullet holes in the door let hard white daylight punch through as narrow dusty shafts across the room, and a small puff of pale splinters hangs beside his shoulder. Medium-close, shot at eye level with a 35mm lens, his masked head and shoulders filling the left half of the 16:9 frame, the door sharp on the right. The masks and suits are exactly as in the attached reference image, the masks copied exactly from its close-ups; the man is CRIMSON. His hand-knitted rib-wool balaclava covers head and neck, tucked into his collar, with no holes, a large white wool ring round the face, and one small rounded red felt triangle high over his left eye, on the right side of the picture. Black leather gloves. Shadows deep and inky, shot on 35mm motion-picture film, fine grain.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

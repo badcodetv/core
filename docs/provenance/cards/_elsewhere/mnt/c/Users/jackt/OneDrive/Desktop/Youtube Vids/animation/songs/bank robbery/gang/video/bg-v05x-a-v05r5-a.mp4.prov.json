@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v05x-a-v05r5-a.mp4",
+ "made": "2026-11-05T14:34:55+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. From the first frame the masked man in the cream suit raps to the lens with his whole body, chest and mask facing camera throughout, no turning. On the first beat he rubs his stomach in a slow mock-sad circle; on the next he pats it twice; then he mimes spooning empty air to his chin and shakes his head; then he drops into a crouch and drives one gloved fist high, theatrically clenched, shoulders bouncing on every beat. His knitted mask stays exactly as it is. Others stay in place, watching. Sound of the machine and boots on the floor.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r5-a.jpg",
+ "why": "mv-gang r7 clip fix (Jack's cut-6 note)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v05x-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:21:41.871Z"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p14r6-b.jpg",
+ "made": "2026-11-05T12:06:11+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: BOTTLE alone, a barbershop, on \"Stand up plans are for the working man\"",
+ "prompt": "A frame from a feature film: BOTTLE, the masked robber in a brown tweed suit, rapping straight into the lens in a 1920s barbershop, stabbing his gloved left index finger at the camera, arm half-extended, the other three fingers curled and the thumb on top; the fingertip is very close to the lens and appears large and slightly soft in the lower right of the frame, while his masked face behind it is sharp. His mask and suit are exactly as in the attached reference image, the mask copied exactly from BOTTLE's close-up: bottle-green rib-knit wool over the head and neck, no holes, a large white wool ring round the face, one small rounded red felt triangle high over his LEFT eye, on the right of the picture at two o'clock. Black leather gloves, no skin. Eye-level, 24mm, a metre away. Hard morning daylight from a side window, porcelain chairs and shaving mugs behind. A barber in a white coat keeps lathering a customer whose face is under a hot towel, not looking up. 35mm film, fine grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

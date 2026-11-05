@@ -1,0 +1,4 @@
+=== CLIP z02y-b ===
+Camera locked to the car's bonnet, no zoom, pan or tilt; one continuous shot. The car swerves hard down the street from the first moment. The driver in the crimson mask and hat yanks the wheel left, then right, on the beat, shoulders and elbows heaving. The man in the cream suit beside him slams both gloved hands flat on the dashboard and braces, chest rocking with each swerve. Both heads stay square to the lens. Masks stay exactly as in the first frame: white ring, one small red triangle high on the right of each face, no holes. Oranges keep falling; the policeman stumbles clear. Engine roar, tyres squeal.
+ENDS_ON: Both men still facing the lens, masks unchanged, driver mid-turn of the wheel, passenger braced on the dashboard, oranges scattered on the cobbles behind.
+WHY: The energy goes into arms, shoulders and the swerving car while both heads stay square and large, so the triangles never rotate past the safe zone.

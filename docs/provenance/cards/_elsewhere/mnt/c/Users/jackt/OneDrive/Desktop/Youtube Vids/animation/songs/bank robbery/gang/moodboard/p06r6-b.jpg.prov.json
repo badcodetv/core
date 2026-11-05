@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p06r6-b.jpg",
+ "made": "2026-11-05T12:06:10+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: all six, a marble bank lobby, mid-robbery, on \"Call the police, it's a robbery\"",
+ "prompt": "A 1920s feature-film frame on 35mm. The masks and suits are exactly as in the attached reference image; the shot holds all six: PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, masks copied exactly from its close-ups: rib-knit wool over the whole head, no holes, a white wool ring round the face, one small rounded red felt triangle high over each man's left eye, on the right of the picture. Black leather gloves, cuffs over the wrists, collars up. In a marble bank lobby, the six cluster off-centre left, all staring into the lens mid-rap, each with one gloved fist punched straight up in unison; RUST's fist is still only at shoulder height, late. Behind a bronze grille a grey teller keeps counting banknotes, never looking up. Low wide shot from the marble floor, 24mm, looking up at the coffered ceiling. One hard skylight shaft falls on the gang; the hall sinks to shadow. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

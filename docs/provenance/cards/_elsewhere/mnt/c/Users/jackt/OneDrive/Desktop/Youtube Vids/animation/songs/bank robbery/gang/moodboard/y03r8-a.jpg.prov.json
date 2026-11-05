@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y03r8-a.jpg",
+ "made": "2026-11-05T16:05:08+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 8: closer remake for Jack's mask/slop note, Robbery, robbery!",
+ "prompt": "A still frame from a feature film: MARINE frozen mid-dive, flying sideways through a marble 1920s bank lobby, his masked head and shoulders filling the left half of the 16:9 frame from a metre away, mask turned square to the lens, his cream linen suit jacket flaring. He is exactly as in the attached reference image, the mask copied exactly from its close-up: marine-blue rib knit over the whole head and neck, no eye, nose or mouth holes, a large white wool ring brow to chin, one small solid red felt triangle with rounded corners high over his left eye, on the right side of the picture. Both black-gloved fists hold a Thompson pointed up at the ceiling. Behind him, soft, a brass chandelier sheds glass crystals that hang in the air above green marble counters. Lit by one high arched window to the right, deep shadow on the left. 35mm film, fine grain, filling the frame edge to edge.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

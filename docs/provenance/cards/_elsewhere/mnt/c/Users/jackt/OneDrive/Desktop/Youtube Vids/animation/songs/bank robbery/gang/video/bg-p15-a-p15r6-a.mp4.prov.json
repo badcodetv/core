@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p15-a-p15r6-a.mp4",
+ "made": "2026-11-05T13:01:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The masked man moves from the first instant: from the shrug he drops both shoulders, then snaps them up again on the beat, palms up. On the next beat he swings one gloved hand to present the egg on the porter's tray, then counts off two fingers at the lens, then shrugs big again, head cocked. The porter stays still holding the tray level, egg in place, gazing at nothing. Fields stream past the windows. Mask, gloves and suit unchanged; nothing new appears. SFX: rails clacking, cutlery rattling softly.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p15r6-a.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p15r6-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p15-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:48:26.599Z"
+ }
+}

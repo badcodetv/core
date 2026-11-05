@@ -1,0 +1,24 @@
+{
+  "round": "9",
+  "kai_round1": {
+    "at126": "same scene twice, please put something else here. THanks\n",
+    "at884": "his triangle on his balaclava should always be on the left eye, on anyone wearing a badcode balaclava. change it \nTHanks ",
+    "at1459": "there is no one in the drivers seat thanks"
+  },
+  "plan": [
+    {
+      "h": "Your cut-8 notes",
+      "items": [
+        "\"make more cuts and maybe have the clips halfed in time, let some run longer than the others\": 128 cuts (cut 8: 79). Action shots are mostly half a bar (~1.3 s), with a longer hold (2.6-5 s) every few shots; your picks get the long holds.",
+        "\"lots of action shots and sprinkled in rapping gesturing to the camera shots\": rap and gesture to camera are about 20 % of the screen time, one line each, always with action either side.",
+        "Your screenshot clips are all in: the boxing ring (p16, on \"Hungry people feed a revolution\"), the balloon (the fixed y06), the dining car (p15), the elevated train (k22m), the train roof (x04), the snow (x03m), the salt flats (x02), Grand Central (p02, on \"Earning that dough\") and the fixed plane (z03).",
+        "Beat flurries are still only at the four big drops."
+      ]
+    }
+  ],
+  "replies": {
+    "at5": "y01 is out (the eye showed through the green mask). The opening is now the burnout (y02), then the salt-flats racer. A remake from the reference image is still to do: say if you want it.",
+    "at922": "Done: the grandma freezing in her chair (v07m) plays on \"grandma freezing\" at 0:35.",
+    "at2688": "Done: the devil-horn shadow in the booth (d10) plays on \"It is the devil with the radio station\" at 1:50."
+  }
+}

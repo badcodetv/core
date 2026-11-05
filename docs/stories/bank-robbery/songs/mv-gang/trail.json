@@ -145,5 +145,73 @@
   "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
   "what": "Cut 5: 35 wrong-mask clips remade and swapped in (Balaclava Gang 5)",
   "rebuild": "python3 cleanroom/r3/plan_r3.py r5 && python3 cleanroom/assemble_cut.py r5 && python3 scripts/scene/build-timeline.py . <out>"
+ },
+ {
+  "at": "2026-11-05T12:06:11+00:00",
+  "stage": "moodboard",
+  "round": 8,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 6 rap-to-camera stills, p01-p16 x2",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-05T13:34:43+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Balaclava Gang 6: cut 5 + 12 rap-to-camera clips, 35 cuts",
+  "rebuild": "python3 cleanroom/r6/plan_r6.py && python3 cleanroom/assemble_cut.py r6 && python3 scripts/scene/build-timeline.py . <out>"
+ },
+ {
+  "at": "2026-11-05T14:21:49+00:00",
+  "stage": "moodboard",
+  "round": 9,
+  "url": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+  "what": "Round 7: 7 fixes (z01-z07) + 12 rap-to-camera (q01-q12), x2",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/bank-robbery/songs/mv-gang docs/stories/bank-robbery/songs/mv-gang/moodboard.html"
+ },
+ {
+  "at": "2026-11-05T15:32:02+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Balaclava Gang 7: 76 held cuts, 3 flurries, ~42% rap to camera, all noted shots fixed",
+  "rebuild": "python3 cleanroom/r7/plan_r7.py && python3 cleanroom/assemble_cut.py r7 && python3 scripts/scene/build-timeline.py . <out>"
+ },
+ {
+  "at": "2026-11-05T17:34:43+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Cut 8 (Balaclava Gang 8): 79 held cuts, action first with rap to camera beside it (33%), beat flurries only at the four drops, masks fixed (y01-y06, z02y, p03y, z06y, g08y, v05y), q07 and z01 out, pov2 once",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r8/plan_r8.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/assemble_cut.py r8 && python3 scripts/scene/build-timeline.py docs/stories/bank-robbery/songs/mv-gang <out>",
+  "decided": [
+   "Jack's cut-7 notes (feedback/timeline-r7/notes): more action, rap alongside action, same holds, beat cuts only at big drops; stay on Omni"
+  ],
+  "feedback": "feedback/timeline-r8",
+  "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-05T17:53:33+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Cut 9 (Balaclava Gang 9): 128 cuts, action mostly half a bar with longer holds, rap/gesture sprinkled (20%), Jack's 9 screenshot picks in, grandma and devil lines illustrated, y01 out",
+  "rebuild": "python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/r9/plan_r9.py && python3 docs/stories/bank-robbery/songs/mv-gang/cleanroom/assemble_cut.py r9 && python3 scripts/scene/build-timeline.py docs/stories/bank-robbery/songs/mv-gang <out>",
+  "decided": [
+   "Jack's cut-8 notes (feedback/timeline-r8/notes + screenshots in chat): more cuts, halve the clips, vary lengths, lots of action, sprinkle rap; use p16 y06 p15 k22m x04 x03m x02 p02 z03"
+  ],
+  "feedback": "feedback/timeline-r9",
+  "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-05T18:24:25+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1",
+  "what": "Cut 9 fix: y02 burnout out (body attached to the car), opens on a02m",
+  "decided": [
+   "Jack in chat: remove the first clip, his body looks attached to the car"
+  ]
  }
 ]

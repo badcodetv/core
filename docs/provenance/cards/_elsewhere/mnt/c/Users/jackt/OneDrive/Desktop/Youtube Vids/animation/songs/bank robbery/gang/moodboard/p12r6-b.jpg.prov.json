@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p12r6-b.jpg",
+ "made": "2026-11-05T12:06:10+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: all six, a packed jazz club, on the bandstand, on \"Call the police, it's a robbery\"",
+ "prompt": "A frame from a feature film: six masked robbers rap straight into the lens from the bandstand of a packed 1920s jazz club, a brass band of horn players and a drummer behind them, dancers in mismatched coloured dresses and suits crowding the floor in front. The masks and suits are exactly as in the attached reference image; the men, left to right, are PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, masks copied exactly from the close-ups: rib-knit wool over head and neck, no holes, a white wool ring round each face, one small rounded red felt triangle high over each man's left eye, on the right of the picture. Five men have flung their right gloved arms straight up in unison, palms open like a hold-up; RUST is a beat late, his arm only halfway up. Wide, low angle from the dance floor, 21mm, the six spanning the frame, soft heads of dancers along the bottom edge. A single follow-spot from the balcony behind the camera pools hard white light on the six, the club beyond in warm darkness. 35mm film, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}
