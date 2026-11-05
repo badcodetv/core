@@ -1,0 +1,44 @@
+# 14 - Pillar 3: data-driven decisions ("no proposal without its experiment")
+
+Searches used: 8 of 8. Solidity: P = primary/official, S = secondary (press, summaries), H = hearsay. Search snippets only; full texts NOT opened, so verify numbers before they go on a slide.
+
+## Evidence bank
+
+| Fact | Solidity | Source |
+|---|---|---|
+| "Test, Learn, Adapt" (Haynes, Service, Goldacre, Torgerson; Cabinet Office BIT, June 2012; GOV.UK date 14 Jun, BIT update says July). Nine steps in three phases: Test / Learn / Adapt. Argues RCTs are routine in medicine, development and internet firms but rare in domestic policy. | P | https://www.gov.uk/government/publications/test-learn-adapt-developing-public-policy-with-randomised-controlled-trials |
+| HMRC overdue-tax letters: control letter paid 67.5%, national-norm line 72.5%, postcode-norm line 79.0%. Best letter estimated at ~GBP160m collected in 6 weeks. 11 variants tested. (Sample sizes differ by summary: 200k+ vs 140k.) Cost of the "experiment": a sentence in a letter. | S (decision lab / World Bank blog; primary is Hallsworth, List, Metcalfe, Vlaev paper) | https://thedecisionlab.com/intervention/how-normative-messaging-increased-tax-compliance-by-15 ; https://blogs.worldbank.org/voices/ongoing-impact-nudging-people-pay-their-taxes |
+| What Works Network: nine independent What Works Centres + affiliates, run via the Evaluation Task Force; members commit to IMPACT principles. (I could not confirm the current list; check GOV.UK.) | P/S | https://www.gov.uk/what-works-network |
+| Finland basic income trial 2017-18 (random sample of unemployment-benefit recipients vs control): no group-level employment effect in year 1; small effects overall (muddied by the 2018 activation model); families with children saw better employment; recipients reported less stress, depression, loneliness, better view of own finances. | P (ministry / Kela / VATT) | https://stm.fi/en/-/perustulokokeilun-tulokset-tyollisyysvaikutukset-vahaisia-toimeentulo-ja-psyykkinen-terveys-koettiin-paremmaksi ; https://vatt.fi/en/-/perustulon-tyollisyysvaikutukset-jaivat-vahaisiksi |
+| Stockton SEED: 125 residents, USD500/month for 24 months. Year-1 full-time employment 28% to 40% (+12 pts) vs comparison 32% to 37% (+5). Small sample, one city, year-1 figures. | S (Penn / CBS) | https://penntoday.upenn.edu/news/guaranteed-income-increases-employment-improves-financial-and-physical-health ; https://cbsnews.com/news/basic-guaranteed-income-stockton-experiment |
+| Scared Straight: Campbell review (Petrosino et al. 2013), 9 randomised studies, 946 youths: programmes "likely to have a harmful effect", increase offending vs doing nothing. Popular, intuitive, harmful, and only a trial found out. | P (abstract) | https://ideas.repec.org/a/wly/camsys/v9y2013i1p1-55.html |
+| Troubled Families: government said ~99% of ~120,000 families "turned around" (2015). Independent NIESR evaluation (Oct 2016) found no consistent evidence of significant or systematic impact. Public Accounts Committee said the claim misled. Gov then dropped "turned around" for "significant and sustained progress". Note NIESR says the two numbers measure different things (payment-by-results counts vs attributable impact) - so say "counted success vs measured success", not "lied". | S (NIESR, press) | https://www.niesr.ac.uk/?p=37705 ; https://www.publicsectorexecutive.com/News/misleading-to-claim-troubled-families-programme-worked/159623 |
+| Universal Credit: NAO 2013 said set up without leaders knowing how it would work, over-ambitious timetable; SMF argued pilots didn't test key features (real-time info, monthly payment). NAO 2018: not value for money but "no practical choice" but to continue. Pilot existed but tested the wrong things - careful: this is "badly piloted", not "no pilot". | S | https://www.smf.co.uk/?p=15189 ; https://holyrood.com/articles/news/universal-credit-not-value-money-reports-national-audit-office |
+
+Gaps: nothing verified on Goldacre quotes, BIT's wider catalogue, or EEF's current status. Don't quote Goldacre on a slide until the paper's text is read.
+
+## Honest-framing rules for this pillar
+- Finland and Stockton are NOT "proof UBI works". Finland's result was modest on jobs; the point is the country ran a real trial and published an awkward answer. Hero = the method, not the policy.
+- Name the decision-maker: "ministers announced it", not "the government of experts" or "the system". Not "you've been duped".
+- The reader (working-class, UK, right-drifting) is not anti-test: "try it small first, keep what works" is common sense (cf. any shop trialling a new till). Avoid making it a left-vs-right frame: tests can kill policies anyone loves.
+- Canon caveat (future-proof.md): not everything reduces to an experiment; judgement calls and diplomacy stay human. Put it on a slide as an honest aside; it buys trust.
+
+## 10 meme / joke concepts
+
+1. **"Phase 3 trial: the pill vs. the policy."** Two-panel drake. Drake rejects "Drug: 3 phases, 10,000 volunteers, placebo group, years of results." Drake approves "Policy: a man said 'it'll work' on the radio." Template is a format, no real person needed. Line: "Your paracetamol had more scrutiny than your pension."
+2. **"Fully tested: one letter, 11 versions."** Show the HMRC letter as the hero: add one sentence ("most people in your postcode have already paid") and payment went 67.5% to 79%. Punchline: "Nobody changed a law. They changed a sentence, and measured it. Imagine if we did that on purpose." (Check the primary paper for the exact figures.)
+3. **"Scared Straight: it sounded great."** Slide shows a "reasonable-sounding idea" stamp, then "Result: kids offended MORE." Narrator: "Common sense is a hypothesis, not a result." Dark, sarcastic, nurturing: the contempt is for the untested idea, not the people who wanted to help.
+4. **"99% turned around."** Distracted-boyfriend or "this is fine" variant: ministers' dashboard says 99% success; independent evaluation says "no consistent impact". Frame as counted vs measured. Narrator: "If you mark your own homework in a payment-by-results scheme, it comes back with full marks."
+5. **"Software has staging. Politics has production."** Dev-meme: two environments. Staging: "we tested it on 125 people first." Production: "we tested it on 67 million of you, live, no rollback." Ties to the engineering skin of Future Proof.
+6. **"The Finnish Experiment, a love story."** Finland: "We gave 2,000 people a basic income, randomly chosen, to see what happens." Result slide: "Less stress, jobs: meh." Everyone else: "...they just LOOKED?" Message: a boring, honest, awkward answer is the product. (Use sample size from the report; I did not verify the 2,000 figure, so omit until checked.)
+7. **"Pilot (tests the wrong thing)."** Universal Credit as "we piloted the easy bit": a bridge test that checks the paint but not whether the bridge holds weight. SMF's point (pilots skipped monthly payment and real-time data). Line: "A pilot that avoids the hard part isn't a pilot. It's a press release with a spreadsheet."
+8. **"Peer review for press releases."** Mock stamp: "Announced: Monday. Evidence: ____. Experiment: ____. Exit criteria: ____." Three blank lines on every policy poster. The deck's recurring device: a **policy label with a "How we'll know" box**, like a nutrition label. Reusable visual across the slideshow.
+9. **"The Wall of 'Still Doing It'."** Montage of things being done for decades with no measured result, counterweighted by one thing that got cancelled because the test said no (Scared Straight in the research literature). Frame: "Cancelling a thing that doesn't work isn't failure. It's the only free money in politics." Aimed at the reader's "waste" instinct, no left/right coding. (Need a verified list of 2-3 UK items before use.)
+10. **"Stop. Rollback."** Big red button meme: "git revert" for policy. Slide: "Every serious system has a way to say 'that was wrong, undo it'. Name one policy with an undo button." Ends with Test, Learn, Adapt as the three-word loop (the paper's own title) doubling as the pillar's tagline. Talk-to-camera beat: Kai holds up the button.
+
+## Suggested spine for the pillar-3 slides
+Hook: drug trial vs policy (1) -> tiny cheap test that worked (2) -> intuitive idea that harmed (3) -> counted vs measured (4) -> staging/production (5) -> "How we'll know" label (8) -> undo button (10). Finland / Stockton / UC as optional detail slides, never as "proof of X".
+
+## Notes for the deck skill
+- Reusable device: the "How we'll know" label (what we're testing, who gets it first, what number means stop). Works as a template slide in any BadCode meme deck.
+- Memes here are *formats* (drake, this-is-fine, distracted); don't use real people's faces or real organisation branding as the joke target. HMRC/NIESR/NAO are cited as sources, not mocked.

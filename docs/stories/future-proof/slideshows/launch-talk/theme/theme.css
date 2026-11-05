@@ -1,0 +1,90 @@
+/* Future Proof · "Update Available" (picked by Kai 2026-11-05).
+   Britain is an old computer that has clicked "remind me later" since 1872.
+   Stage is 1600x900 logical px. Single-world look: these colours are the slide, not the page theme. */
+#stage{
+  --desk:#3b7f86; --win:#d4d3cc; --hi:#ffffff; --lo:#8a8982; --dk:#4e4d48;
+  --bar:#1f3070; --bar2:#3c55a8; --ok:#2d9a4c; --warn:#ffd43b; --err:#d22d2d; --ink:#141618;
+  --pix:"Silkscreen",ui-monospace,monospace; --sans:"Atkinson Hyperlegible",system-ui,sans-serif; --mono:"VT323","Courier New",monospace;
+  font-family:var(--sans); color:var(--ink);
+}
+#stage .desk{position:absolute;inset:0;background:var(--desk) repeating-linear-gradient(0deg,transparent 0 6px,rgba(255,255,255,.035) 6px 12px)}
+#stage .desk.dark{background:#16212b repeating-linear-gradient(0deg,transparent 0 6px,rgba(255,255,255,.03) 6px 12px)}
+/* taskbar: the running gag, the clock says 1872 */
+#stage .task{position:absolute;left:0;right:0;bottom:0;height:52px;background:var(--win);box-shadow:inset 0 3px 0 var(--hi);display:flex;align-items:center;gap:10px;padding:0 10px;font:700 20px var(--sans);z-index:9}
+#stage .task .start{display:flex;align-items:center;gap:8px;padding:5px 14px;box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi)}
+#stage .task .start i{width:18px;height:18px;background:conic-gradient(var(--err) 0 25%,var(--ok) 0 50%,var(--bar2) 0 75%,var(--warn) 0)}
+#stage .task .tab{padding:5px 14px;box-shadow:inset 3px 3px 0 var(--dk),inset -3px -3px 0 var(--hi);font-weight:400;max-width:420px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#stage .task .clock{margin-left:auto;padding:5px 14px;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);font:400 20px var(--pix)}
+/* window */
+#stage .win{position:absolute;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi),inset -6px -6px 0 var(--lo),12px 12px 0 rgba(0,0,0,.28);padding:6px;display:flex;flex-direction:column}
+#stage .tb{background:linear-gradient(90deg,var(--bar),var(--bar2));color:#fff;font:400 22px/1 var(--pix);padding:9px 12px;display:flex;justify-content:space-between;gap:12px;flex:none}
+#stage .tb .x{display:flex;gap:6px}
+#stage .tb .x span{width:26px;height:22px;background:var(--win);color:var(--ink);font:700 16px/22px var(--sans);text-align:center;box-shadow:inset -2px -2px 0 var(--dk),inset 2px 2px 0 var(--hi)}
+#stage .wb{padding:26px 30px;font-size:34px;line-height:1.3;flex:1;min-height:0;display:flex;flex-direction:column;gap:18px}
+#stage .wb h3{font:700 54px/1.08 var(--sans);margin:0;text-wrap:balance}
+#stage .wb .small{font-size:24px;color:#3d3f42}
+#stage .row{display:flex;gap:26px;align-items:flex-start}
+#stage .ico{flex:none;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font:700 58px var(--sans);color:#fff;background:var(--bar2)}
+#stage .ico.error{background:var(--err)}
+#stage .ico.warn{background:var(--warn);color:var(--ink);border-radius:0;clip-path:polygon(50% 4%,98% 96%,2% 96%)}
+#stage .ico.question{background:var(--bar2)}
+#stage .ico.ok{background:var(--ok)}
+#stage .btns{display:flex;gap:22px;justify-content:flex-end;padding:0 30px 24px;flex:none}
+#stage .btn{font:700 28px var(--sans);padding:12px 32px;min-width:150px;text-align:center;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi)}
+#stage .btn.off{color:#8a8982;text-shadow:1px 1px 0 #fff}
+#stage .btn.gone{text-decoration:line-through;text-decoration-thickness:4px;text-decoration-color:var(--err)}
+#stage .task .clock.tick{background:var(--ok);color:#fff}
+#stage .btn.def{outline:3px solid var(--ink);outline-offset:-1px}
+#stage .prog{height:44px;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);background:#fff;padding:6px;display:flex;gap:4px}
+#stage .prog i{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--ok) 0 22px,transparent 22px 26px)}
+#stage .prog.err i{background:repeating-linear-gradient(90deg,var(--err) 0 22px,transparent 22px 26px)}
+#stage .plabel{font-size:26px;color:#3d3f42}
+/* meme captions: classic top/bottom text, in this world's type */
+#stage .cap{position:absolute;left:60px;right:60px;text-align:center;font:700 64px/1.05 var(--sans);color:#fff;text-transform:uppercase;text-wrap:balance;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill;text-shadow:0 5px 0 var(--ink);z-index:8}
+#stage .cap.top{top:34px}
+#stage .cap.bottom{bottom:84px}
+#stage .cap.sm{font-size:48px}
+/* sticky note */
+#stage .sticky{position:absolute;background:var(--warn);padding:22px 26px;font:700 34px/1.15 var(--sans);box-shadow:8px 8px 0 rgba(0,0,0,.25);transform:rotate(-3deg);z-index:7}
+/* lists and fields */
+#stage .lines{font:400 34px/1.35 var(--mono);background:#fff;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);padding:18px 22px;flex:1;min-height:0;overflow:hidden}
+#stage .lines div{display:flex;justify-content:space-between;gap:24px}
+#stage .lines .tot{border-top:3px dashed var(--ink);margin-top:10px;padding-top:10px;font-weight:700}
+#stage .fields{display:grid;grid-template-columns:auto 1fr;gap:12px 26px;font-size:32px}
+#stage .fields dt{font-weight:700;color:#3d3f42}
+#stage .fields dd{margin:0}
+#stage .fields .hl{background:var(--warn);padding:0 8px}
+/* toasts */
+#stage .toast{position:absolute;right:40px;width:640px;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi),10px 10px 0 rgba(0,0,0,.25);padding:6px}
+#stage .toast .tb{font-size:18px}
+#stage .toast .wb{font-size:28px;padding:16px 20px}
+/* wallpaper text */
+#stage .wall{position:absolute;left:80px;top:90px;width:760px;color:#fff;font:700 76px/1.02 var(--sans);text-wrap:balance}
+#stage .wall small{display:block;font:400 30px/1.3 var(--sans);margin-top:22px;opacity:.9}
+/* desktop icon */
+#stage .icon{position:absolute;width:150px;text-align:center;color:#fff;font:400 22px/1.2 var(--sans)}
+#stage .icon i{display:block;width:84px;height:84px;margin:0 auto 8px;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi);font:700 44px/84px var(--pix);color:var(--bar);font-style:normal}
+#stage .icon span{background:var(--bar);padding:2px 6px}
+/* split labels */
+#stage .plab{font:400 26px var(--pix);color:#fff;background:var(--ink);padding:6px 12px;align-self:flex-start}
+/* boot / title */
+#stage .boot{position:absolute;inset:0;background:#0f1a3a;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px;text-align:center}
+#stage .boot h1{font:400 128px/1 var(--pix);margin:0;letter-spacing:.02em}
+#stage .boot p{font:400 38px/1.3 var(--sans);margin:0;max-width:1100px;opacity:.92}
+#stage .boot .prog{width:640px;background:#0f1a3a;box-shadow:0 0 0 4px #fff}
+#stage .boot .prog i{background:repeating-linear-gradient(90deg,#fff 0 22px,transparent 22px 26px)}
+/* fatal screen */
+#stage .fatal{position:absolute;inset:0;background:#0b3fa8;color:#fff;font:400 40px/1.35 var(--mono);padding:110px 140px;display:flex;flex-direction:column;gap:34px}
+#stage .fatal .hd{align-self:center;background:#d4d3cc;color:#0b3fa8;padding:2px 18px;font:400 40px var(--pix)}
+#stage .fatal .big{font:700 66px/1.12 var(--sans)}
+/* diagram window */
+#stage .scene-mount{position:relative;flex:1;min-height:0;background:#000;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);overflow:hidden}
+#stage .scene-mount canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+#stage .dcap{font:700 40px/1.15 var(--sans);text-wrap:balance}
+#stage .dsmall{font:400 24px var(--pix);color:#3d3f42}
+#stage .tag3d{position:absolute;font:400 22px/1 var(--pix);color:#fff;background:var(--ink);padding:5px 8px;white-space:nowrap;transform:translate(-50%,-100%);pointer-events:none}
+#stage .tag3d.ok{background:var(--ok)}#stage .tag3d.err{background:var(--err)}#stage .tag3d.warn{background:var(--warn);color:var(--ink)}
+/* reveal */
+#stage [data-step].on{animation:fp-pop .22s steps(3,end)}
+@keyframes fp-pop{from{transform:scale(.96);opacity:.4}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){#stage [data-step].on{animation:none}}

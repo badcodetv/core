@@ -110,9 +110,11 @@
       const g = C.government;
       const bar = `<div class="bar"><svg viewBox="-34 -34 68 68" aria-hidden="true"><circle r="27.75" fill="none" stroke="#fff" stroke-width="4.5"/><path d="${MARK_TRI}" fill="#cc2b37"/></svg>The BadCode Government</div>`;
       if (s.p === 2) {
+        // Future Proof is a talk: the slideshow plays inside the screen (built by scripts/slideshow/build.py --public,
+        // source docs/stories/future-proof/slideshows/launch-talk/). Click it to step; ◀ ▶ on its own bar.
         const f = g.futureProof;
-        prog.innerHTML = `<div class="p-gov fp">${bar}<div class="body"><p class="q">Future Proof</p><h1>${esc(f.question)}</h1><p class="lead">${esc(f.intro)}</p>
-          <ol>${f.tenets.map(t => `<li><b>${esc(t[0])}</b><span>${esc(t[1])}</span></li>`).join('')}</ol><p class="ask">${esc(f.ask)}</p><p class="notreal">${esc(g.notReal)} Press ◀ for the manifesto.</p></div><div class="haz"></div></div>`;
+        prog.innerHTML = `<div class="p-fp"><iframe src="${esc(f.talk)}" title="Future Proof: the talk" allow="fullscreen" allowfullscreen></iframe>
+          <a class="fp-full" href="${esc(f.talk)}">Full screen</a></div>`;
       } else {
         const seen = store.get('bc-ppb');
         prog.innerHTML = `<div class="p-gov">${bar}<div class="body"><p class="q">The manifesto</p><h1>${esc(g.promise)}</h1>

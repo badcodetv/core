@@ -6,7 +6,7 @@ The website is a television. Its three strands are channels, and number keys pic
 | --- | --- | --- | --- |
 | STORIES | BadCode One | 1–4 the films, 5–8 their songs | `/stories`, `/stories/1` … `/stories/8` |
 | NEWS | Money For Something (working name) | 1 = latest bulletin, then older ones | `/news`, `/news/2` … |
-| GOVT | The BadCode Government | 1 the manifesto, 2 Future Proof | `/government`, `/government/2` (also `/future-proof`) |
+| GOVT | The BadCode Government | 1 the manifesto, 2 Future Proof (the talk plays in the screen) | `/government`, `/government/2` (also `/future-proof`) |
 | 0 | Test card | about BadCode | `/about` |
 | TEXT | Teletext on any channel | 100 index, 200 stories (201–204), 300 news, 400 manifesto, 700 follow, 800 about, 888 Future Proof | `/text/100` … |
 
@@ -35,6 +35,20 @@ and give it a `still` in `content.json`.
 - `public/`: static files copied as-is (stills, logo, favicons). The old one-page map
   (`public/index.html`, `404.html`, `styles.css`) is no longer shipped and can be deleted.
 - `build.mjs`: builds everything into `dist/` (git-ignored)
+
+## The Future Proof talk (GOVT 2)
+
+GOVT programme 2 plays the Future Proof slideshow inside the screen, in an iframe of
+`/future-proof/talk/`. That page is a static file in `public/future-proof/talk/index.html`, generated
+from the deck (`docs/stories/future-proof/slideshows/launch-talk/`, the `new-slideshow` skill). After
+any change to the deck, regenerate it, then build the site:
+
+    python3 scripts/slideshow/build.py docs/stories/future-proof/slideshows/launch-talk \
+        --public apps/site/public/future-proof/talk/index.html --home /future-proof/
+    node apps/site/build.mjs
+
+Opened on its own (the "Full screen" link), the talk shows a "Back to the TV" link. The words of
+Future Proof for teletext page 888 and the plain-text page still come from `content.json`.
 
 ## Build and preview
 

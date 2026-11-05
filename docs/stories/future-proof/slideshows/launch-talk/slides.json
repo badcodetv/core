@@ -1,0 +1,543 @@
+{
+ "title": "Future Proof: the launch talk",
+ "round": 2,
+ "slides": [
+  {
+   "id": "1",
+   "layout": "dialog",
+   "title": "Ballot.exe",
+   "task": "ballot.exe",
+   "icon": "error",
+   "image": {
+    "file": "mel-booth.jpg",
+    "prompt": "Mel in a polling booth, mug in hand, holding a ballot paper with a single box printed EVERYTHING beside it; the dog waits outside, its lead on the hook"
+   },
+   "heading": "Why can't I vote on more than one thing?",
+   "text": "You have selected **ONE (1)** cross.\nYour cross will now be applied to: **EVERYTHING**.",
+   "buttons": [
+    "OK",
+    "Also OK"
+   ],
+   "reveal": {
+    "text": 1
+   }
+  },
+  {
+   "id": "2",
+   "layout": "release",
+   "title": "About This System",
+   "task": "about.exe",
+   "heading": "Democracy, version 1872",
+   "image": {
+    "file": "about-candle.jpg",
+    "prompt": "a single small lit candle on a plain grey background, framed like a software logo"
+   },
+   "lines": [
+    [
+     "Parliament",
+     "1200s"
+    ],
+    [
+     "Secret ballot",
+     "1872"
+    ],
+    [
+     "Light bulb",
+     "not invented yet (1878)"
+    ]
+   ],
+   "footer": "Known issues: all of them.",
+   "buttons": [
+    "Remind me later",
+    "Check for updates"
+   ],
+   "bottom": "OLDER THAN THE LIGHT BULB.",
+   "reveal": {
+    "lines": 1,
+    "bottom": 3,
+    "footer": 3
+   }
+  },
+  {
+   "id": "3",
+   "layout": "split",
+   "task": "changelog.txt",
+   "left": {
+    "title": "lightbulb.exe",
+    "label": "v1878 → today",
+    "image": {
+     "file": "smart-bulb.jpg",
+     "prompt": "a smart light bulb glowing a soft purple, a phone beside it showing a colour wheel"
+    },
+    "lines": [
+     "Dimmable",
+     "16 million colours",
+     "Talks to your phone"
+    ]
+   },
+   "right": {
+    "title": "ballot.exe",
+    "label": "v1872 → today",
+    "image": {
+     "file": "booth-pencil-string.jpg",
+     "prompt": "the shelf in a polling booth, a stubby pencil tied to it on a length of string"
+    },
+    "lines": [
+     "Pencil",
+     "String (added)"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "4",
+   "layout": "dialog",
+   "title": "Democracy 2.0 Setup · 3 updates ready",
+   "task": "Update Available",
+   "icon": "warn",
+   "heading": "Restart Britain to\nfinish installing?",
+   "w": 980,
+   "progress": {
+    "pct": 3,
+    "label": "Installing... (since 1872)"
+   },
+   "small": "Only the administrator can install updates.",
+   "buttons": [
+    "Remind me later",
+    "~Restart now (admin only)"
+   ],
+   "sticky": "who's the\nadministrator?",
+   "reveal": {
+    "sticky": 1
+   }
+  },
+  {
+   "id": "5",
+   "layout": "diagram",
+   "title": "pub.sim",
+   "task": "pub.sim",
+   "scene": "pub",
+   "caption": "VOTE ON EACH POLICY: ALL THREE LOSE. VOTE FOR THE PARTY: IT WINS.",
+   "small": "same five people. same opinions.",
+   "steps": 3
+  },
+  {
+   "id": "6",
+   "layout": "split",
+   "task": "cookie_settings.exe",
+   "left": {
+    "title": "Your vote: cookie settings",
+    "image": {
+     "file": "mel-ballot-banner.jpg",
+     "prompt": "a cookie-consent banner stretched across a ballot paper; Mel in the corner, mug raised, one eyebrow up"
+    },
+    "heading": "We value your democracy.",
+    "text": "By voting, you accept every policy in the bundle. Even the ones you can't stand.",
+    "buttons": [
+     "Accept all",
+     "Accept all"
+    ]
+   },
+   "right": {
+    "title": "Update Available",
+    "heading": "Install 'Manage preferences'?",
+    "text": "Note: the next election is also a bundle.",
+    "buttons": [
+     "Remind me after the next election",
+     "Install"
+    ]
+   },
+   "bottom": "WORKING AS DESIGNED. THAT'S THE BUG.",
+   "reveal": {
+    "bottom": 1,
+    "right": 2
+   }
+  },
+  {
+   "id": "7",
+   "layout": "split",
+   "task": "parliament.exe",
+   "left": {
+    "title": "Parliament.exe",
+    "image": {
+     "file": "red-button-desk.jpg",
+     "prompt": "one huge red button on an otherwise empty desk"
+    },
+    "heading": "Apply this law to **EVERYONE, ALL AT ONCE**?",
+    "buttons": [
+     "Yes",
+     "YES"
+    ]
+   },
+   "right": {
+    "title": "Law Installer",
+    "heading": "Undo is not available for this action.",
+    "text": "Installing...\nplease do not turn off your country.",
+    "buttons": [
+     "OK"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "8",
+   "layout": "diagram",
+   "title": "build.log",
+   "task": "build.log",
+   "scene": "tower",
+   "caption": "ONE OF THESE HAS AN UNDO.",
+   "small": "politics: drop the whole tower, then schedule a review",
+   "steps": 3
+  },
+  {
+   "id": "9",
+   "layout": "dialog",
+   "title": "Edit",
+   "task": "edit_undo.exe",
+   "icon": "warn",
+   "image": {
+    "file": "ctrl-z-statute.jpg",
+    "prompt": "a keyboard with the Ctrl and Z keys glowing, beside a thick statute book with a sticky note on it reading UNDO?"
+   },
+   "heading": "Undo is not available for this law.",
+   "text": "Review: normally 3 to 5 years later.",
+   "small": "Central record of whether that happened: **none**.",
+   "buttons": [
+    "We'll look into it",
+    "OK"
+   ],
+   "reveal": {
+    "buttons": 1
+   }
+  },
+  {
+   "id": "10",
+   "layout": "picture",
+   "title": "sandbox_vs_live.jpg",
+   "task": "testing.exe",
+   "image": {
+    "file": "sandbox-vs-bus.jpg",
+    "prompt": "two halves side by side: left, a bright room with a TEST HERE FIRST banner and little boxes of app icons on tables; right, Mel and the dog at a bus stop under a sign reading 14: DELAYED, a timetable pinned to the post"
+   },
+   "top": "MONEY APPS: TESTED FIRST (SINCE 2016)",
+   "bottom": "YOUR BUS TIMETABLE DOESN'T GET A SANDBOX. IT GOES STRAIGHT TO LIVE. ON YOU.",
+   "side": {
+    "title": "Update Available",
+    "text": "**Test it first, everywhere?**",
+    "buttons": [
+     "Remind me when it's someone else's problem",
+     "Install"
+    ]
+   },
+   "reveal": {
+    "bottom": 1,
+    "side": 2
+   }
+  },
+  {
+   "id": "11",
+   "layout": "split",
+   "task": "compare.exe",
+   "left": {
+    "title": "pill.exe",
+    "image": {
+     "file": "pill-trial-record.jpg",
+     "prompt": "a pill bottle trailing a long paper trial record across a table, a small CONTROL GROUP sign beside it"
+    },
+    "heading": "A PILL",
+    "lines": [
+     "Years of trials",
+     "A control group"
+    ],
+    "buttons": [
+     "Prescribe"
+    ]
+   },
+   "right": {
+    "title": "policy.exe",
+    "image": {
+     "file": "empty-lectern.jpg",
+     "prompt": "a microphone on an empty lectern under a banner reading TRUST US, nobody at it"
+    },
+    "heading": "A POLICY",
+    "text": "A confident announcement.",
+    "buttons": [
+     "Run on everyone",
+     "Run on everyone"
+    ]
+   },
+   "bottom": "SIDE EFFECTS MAY INCLUDE: ALL OF US.",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "12",
+   "layout": "diagram",
+   "title": "letters.xls",
+   "task": "letters.xls",
+   "scene": "letters",
+   "caption": "SAME LETTER, ONE EXTRA LINE: **67.5% → 79%** PAID",
+   "small": "HMRC, overdue tax",
+   "steps": 2
+  },
+  {
+   "id": "13",
+   "layout": "dialog",
+   "title": "Letter from the taxman",
+   "task": "post.exe",
+   "icon": "info",
+   "image": {
+    "file": "mel-doormat.jpg",
+    "prompt": "Mel on the doormat opening a brown envelope, the dog looking up at it"
+   },
+   "heading": "Most people in your postcode have already paid.",
+   "buttons": [
+    "Pay",
+    "Move house"
+   ],
+   "bottom": "PEER PRESSURE. NOW EVIDENCE-BASED.",
+   "reveal": {
+    "buttons": 1,
+    "bottom": 1
+   }
+  },
+  {
+   "id": "14",
+   "layout": "release",
+   "title": "Release notes",
+   "task": "democracy_2.0_notes.txt",
+   "heading": "DEMOCRACY 2.0: what's new",
+   "lines": [
+    "1. Vote issue by issue, not one bundle.",
+    "2. Change laws small. Check them. Keep an undo.",
+    "3. No policy without its experiment."
+   ],
+   "footer": "Download size: smaller than one manifesto.",
+   "buttons": [
+    "Install",
+    "Remind me later"
+   ],
+   "reveal": {
+    "lines": 1,
+    "footer": 4
+   }
+  },
+  {
+   "id": "15",
+   "layout": "dialog",
+   "title": "Update Available",
+   "task": "Update Available",
+   "icon": "warn",
+   "heading": "Remind me later?",
+   "small": "You have used all your laters. (154 years of them.)",
+   "buttons": [
+    "Install now",
+    "~Remind me later (0 left)"
+   ],
+   "bottom": "REMINDER FROM: LATER. IT'S LATER.",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "16",
+   "layout": "toasts",
+   "task": "Notifications (4)",
+   "wall": {
+    "heading": "PARTIAL UPDATES FOUND NEARBY",
+    "small": "other people are already rethinking this.\nalso: theyworkforyou.com · What Works Network (gov.uk/guidance/what-works-network)\nthousands more: participedia.net"
+   },
+   "toasts": [
+    {
+     "title": "Sortition Foundation",
+     "text": "jury service, but for the bins\nsortitionfoundation.org"
+    },
+    {
+     "title": "PB Scotland",
+     "text": "council money, voted on in a village hall\npbscotland.scot"
+    },
+    {
+     "title": "FixMyStreet",
+     "text": "somebody gave the country a bug tracker\nfixmystreet.com"
+    },
+    {
+     "title": "Pol.is",
+     "text": "Taiwan, on Uber: four camps became two\npol.is"
+    }
+   ],
+   "reveal": {}
+  },
+  {
+   "id": "17",
+   "layout": "dialog",
+   "title": "Democracy 2.0 Setup",
+   "task": "Update Available",
+   "icon": "warn",
+   "heading": "DEMOCRACY 2.0",
+   "text": "**4%.** Fastest it's moved since 1872.",
+   "progress": {
+    "pct": 4,
+    "label": "Installing..."
+   },
+   "small": "(button removed by the future)",
+   "buttons": [
+    "Install now",
+    "~~Remind me later"
+   ],
+   "sticky": "...me?",
+   "top": "WE'RE MOVING.",
+   "bottom": "BUS 14: ARRIVING. (UNRELATED.)",
+   "reveal": {
+    "text": 1,
+    "top": 2,
+    "bottom": 3
+   },
+   "clockTo": {
+    "text": "1873",
+    "step": 2
+   }
+  },
+  {
+   "id": "A1",
+   "layout": "split",
+   "task": "referendum_wizard.exe",
+   "left": {
+    "title": "door_1",
+    "image": {
+     "file": "mel-door-small.jpg",
+     "prompt": "Mel, mug in hand and dog at heel, walking calmly through the first of two plain doors; its sign reads ASK OFTEN, ON SMALL THINGS"
+    },
+    "heading": "Ask often, on small things",
+    "buttons": [
+     "Enter"
+    ]
+   },
+   "right": {
+    "title": "door_2",
+    "image": {
+     "file": "giant-door.jpg",
+     "prompt": "a second door, absurdly huge, its sign reading ONE GIANT VOTE, ONCE, ON EVERYTHING"
+    },
+    "heading": "One giant vote, once, on everything",
+    "buttons": [
+     "Enter"
+    ]
+   },
+   "bottom": "JUST A BUNDLE WITH A BIGGER BOX.",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "A2",
+   "layout": "split",
+   "task": "security_centre.exe",
+   "left": {
+    "title": "paper.exe",
+    "image": {
+     "file": "ballot-box-padlock.jpg",
+     "prompt": "Mel holding a folded paper ballot beside a ballot box with a padlock on it"
+    },
+    "heading": "Paper",
+    "text": "Stays for the big ones."
+   },
+   "right": {
+    "title": "phone.exe",
+    "image": {
+     "file": "phone-question.jpg",
+     "prompt": "a phone on a table whose screen shows only a large question mark"
+    },
+    "heading": "Phone",
+    "text": "Secret, secure voting from a phone: not cracked yet."
+   },
+   "bottom": "MORE VOTES. NOT MORE PHONES.",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "A3",
+   "layout": "ticket",
+   "title": "Issue tracker",
+   "task": "issue #1",
+   "heading": "FEATURE: take teenagers round a prison to scare them off crime",
+   "image": {
+    "file": "scared_straight_final_FINAL.jpg",
+    "prompt": "an empty prison corridor with a guided-tour rope barrier and a TOUR STARTS HERE sign, no people"
+   },
+   "fields": [
+    [
+     "Status",
+     "SOUNDED GREAT"
+    ],
+    [
+     "Tested by",
+     "9 controlled trials"
+    ],
+    [
+     "Result",
+     "MORE REOFFENDING"
+    ]
+   ],
+   "highlight": "Result",
+   "reveal": {
+    "highlight": 1
+   }
+  },
+  {
+   "id": "A4",
+   "layout": "dialog",
+   "title": "Proportional representation?",
+   "task": "pr.exe",
+   "icon": "question",
+   "image": {
+    "file": "tangled-ballot-box.jpg",
+    "prompt": "a ballot box wrapped in a tangled sign; Mel declining it politely with a raised hand and a smile"
+   },
+   "heading": "Different argument. Also a party fight.",
+   "text": "Ours is smaller and stranger: you choose each thing, not the package.",
+   "buttons": [
+    "Want both",
+    "Also want both"
+   ]
+  },
+  {
+   "id": "A5",
+   "layout": "dialog",
+   "title": "AI.exe",
+   "task": "ai.exe",
+   "icon": "info",
+   "image": {
+    "file": "laptop-and-pen.jpg",
+    "prompt": "a laptop pointed at a spread of sticky-note opinions on a wall, a person beside it holding a pen over a sheet to sign, wearing a plain name tag with an invented name"
+   },
+   "heading": "AI can sort a few thousand opinions into a map.",
+   "text": "It decides nothing. A named person signs. Somebody checks their work.",
+   "small": "(coming from me, this is rich)",
+   "buttons": [
+    "Sign",
+    "Check"
+   ]
+  },
+  {
+   "id": "A6",
+   "layout": "picture",
+   "title": "several_boxes.jpg",
+   "task": "elsewhere.exe",
+   "image": {
+    "file": "ballot-and-calendar.jpg",
+    "prompt": "a ballot paper with several separate boxes next to a wall calendar with several dates circled"
+   },
+   "top": "DOES ANYWHERE VOTE ISSUE BY ISSUE?",
+   "bottom": "YES. THE RESULTS GO EVERY WHICH WAY.",
+   "reveal": {
+    "bottom": 1
+   }
+  }
+ ]
+}

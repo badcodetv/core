@@ -1,0 +1,186 @@
+<title>/*__TITLE__*/</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+/*__THEME_HEAD__*/
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+/* Engine chrome (story-neutral). The theme owns everything inside #stage. */
+:root{--e-bg:#202226;--e-bar:#2b2e33;--e-fg:#eef0f3;--e-muted:#a6acb6;--e-line:#3b3f46;--e-keep:#6cc07a;--e-change:#e7b04a;--e-cut:#f0857b;--e-ui:system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{background:var(--e-bg);color:var(--e-fg);font:15px/1.45 var(--e-ui);overflow:hidden}
+#app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:minmax(0,1fr) auto;padding-top:env(safe-area-inset-top,0px)}
+#viewport{position:relative;overflow:hidden;min-width:0}
+#stage{position:absolute;left:0;top:0;width:1600px;height:900px;transform-origin:0 0;overflow:hidden}
+#stage [data-step]{visibility:hidden}
+#stage [data-step].on{visibility:visible}
+.e-slot{position:relative;width:100%;height:100%;display:grid;place-items:center;overflow:hidden;background:repeating-conic-gradient(#c9c9c4 0 25%,#e2e2dd 0 50%) 0 0/24px 24px;color:#2a2c30}
+.e-slot img{width:100%;height:100%;object-fit:cover;display:block}
+.e-slot .e-ph{max-width:86%;background:rgba(255,255,255,.88);padding:14px 18px;font:15px/1.35 var(--e-ui);border:1px dashed #6d6f73}
+.e-slot .e-ph b{display:block;font-size:12px;letter-spacing:.04em;color:#6d6f73;margin-bottom:4px}
+#bar{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px;background:var(--e-bar);border-top:1px solid var(--e-line);padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+#bar button{font:600 14px var(--e-ui);background:#3a3e45;color:var(--e-fg);border:0;border-radius:6px;padding:7px 12px;cursor:pointer}
+#bar button[aria-pressed="true"]{background:var(--e-fg);color:var(--e-bar)}
+#bar .pos{font-variant-numeric:tabular-nums;min-width:150px}
+#bar .grow{flex:1}
+#bar .keys{color:var(--e-muted);font-size:13px}
+button:focus-visible,textarea:focus-visible{outline:3px solid #6ea2ff;outline-offset:2px}
+#drawer{width:360px;max-width:92vw;background:var(--e-bar);border-left:1px solid var(--e-line);overflow:auto;padding:16px;display:grid;gap:12px;align-content:start}
+#drawer h2{margin:0;font-size:18px}
+#drawer .meta{color:var(--e-muted);font-size:13px}
+#drawer .say{font-size:16px;line-height:1.5;border-left:3px solid var(--e-line);padding-left:10px}
+#drawer .pic{color:var(--e-muted);font-size:13px}
+.vb{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.vb button{font:700 14px var(--e-ui);padding:8px 4px;border-radius:6px;border:1.5px solid var(--e-line);background:transparent;color:var(--e-fg);cursor:pointer}
+.vb [data-v="keep"][aria-pressed="true"]{background:var(--e-keep);color:#111;border-color:var(--e-keep)}
+.vb [data-v="change"][aria-pressed="true"]{background:var(--e-change);color:#111;border-color:var(--e-change)}
+.vb [data-v="cut"][aria-pressed="true"]{background:var(--e-cut);color:#111;border-color:var(--e-cut)}
+#drawer textarea{width:100%;box-sizing:border-box;min-height:110px;font:14px/1.4 var(--e-ui);background:var(--e-bg);color:var(--e-fg);border:1px solid var(--e-line);border-radius:6px;padding:8px}
+#drawer .others div{background:var(--e-bg);border-radius:6px;padding:6px 8px;font-size:13px;margin-top:4px}
+#drawer .status{font-size:12px;color:var(--e-muted);min-height:1em}
+#grid{position:absolute;inset:0;overflow:auto;padding:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;align-content:start;background:var(--e-bg)}
+#grid .cell{cursor:pointer;border:0;background:none;padding:0;color:var(--e-fg);text-align:left;font:13px var(--e-ui)}
+#grid .thumb{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:4px;outline:2px solid transparent}
+#grid .cell.cur .thumb{outline-color:#6ea2ff}
+#grid .thumb>div{position:absolute;left:0;top:0;width:1600px;height:900px;transform-origin:0 0;pointer-events:none}
+#grid .thumb [data-step]{visibility:visible}
+#grid .thumb [data-until]{display:none!important}
+#grid .tag{display:flex;justify-content:space-between;margin-top:4px;color:var(--e-muted)}
+#grid .tag b.keep{color:var(--e-keep)}#grid .tag b.change{color:var(--e-change)}#grid .tag b.cut{color:var(--e-cut)}
+body.clean #bar,body.clean #drawer{display:none}
+/* public build: the website copy. No notes, no grid; a way back to the site when opened on its own */
+body.public #b-notes,body.public #b-grid,body.public #drawer,body.public .keys{display:none}
+#b-home{display:none;color:var(--e-fg);text-decoration:none;font:600 14px var(--e-ui);padding:7px 12px;border-radius:6px;background:#3a3e45}
+body.public:not(.embedded) #b-home{display:inline-block}
+body.embedded #b-full{display:none}
+@media (max-width:760px){#app{grid-template-columns:minmax(0,1fr)}#drawer{position:fixed;right:0;top:0;bottom:0;z-index:5}}
+</style>
+/*__THEME_CSS__*/
+
+<div id="app">
+  <div id="viewport"><div id="stage" role="region" aria-roledescription="slide" aria-live="polite"></div><div id="grid" hidden></div></div>
+  <aside id="drawer" hidden aria-label="Notes on this slide">
+    <h2 id="d-title"></h2>
+    <div class="meta" id="d-meta"></div>
+    <div class="say" id="d-say"></div>
+    <div class="pic" id="d-pic"></div>
+    <div class="vb" role="group" aria-label="Verdict"><button type="button" data-v="keep" aria-pressed="false">Keep</button><button type="button" data-v="change" aria-pressed="false">Change</button><button type="button" data-v="cut" aria-pressed="false">Cut</button></div>
+    <label for="d-note" class="meta">Your note on this slide</label>
+    <textarea id="d-note" placeholder="What to change, or why"></textarea>
+    <div class="status" id="d-status">Notes load in a moment.</div>
+    <div class="others" id="d-others"></div>
+  </aside>
+  <div id="bar">
+    <button type="button" id="b-prev" aria-label="Previous">◀</button>
+    <button type="button" id="b-next" aria-label="Next">▶</button>
+    <span class="pos" id="pos"></span>
+    <a id="b-home" href="/*__HOME__*/">← Back to the TV</a>
+    <span class="grow"></span>
+    <span class="keys">← → step · G grid · N notes · H hide bar · F full screen</span>
+    <button type="button" id="b-grid" aria-pressed="false">Grid</button>
+    <button type="button" id="b-notes" aria-pressed="false">Notes</button>
+    <button type="button" id="b-full">Full screen</button>
+  </div>
+</div>
+
+<script>
+const DECK=/*__DATA__*/null;
+const PUBLIC=/*__PUBLIC__*/false;
+if(PUBLIC)document.documentElement.classList.add("public");
+window.THEME={layouts:{},scenes:{},helpers:{}};
+</script>
+<script>
+/*__THEME_JS__*/
+</script>
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const t=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\n/g,"<br>");
+const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+/* image slot: a generated picture once it exists, a labelled placeholder until then */
+function slot(img){img=img||{};
+  if(img.src)return `<div class="e-slot"><img src="${esc(img.src)}" alt="${esc(img.alt||img.prompt||"")}"></div>`;
+  if(PUBLIC)return `<div class="e-slot"><div class="e-ph"><b>${esc(img.file||"picture.jpg")}</b>Picture coming soon.</div></div>`;
+  return `<div class="e-slot"><div class="e-ph"><b>PICTURE NOT MADE YET${img.file?" · "+esc(img.file):""}</b>${esc(img.prompt||"")}</div></div>`}
+Object.assign(THEME.helpers,{esc,t,slot,reduced});
+const H=THEME.helpers;
+const slides=DECK.slides.filter(s=>!s.hidden);
+let idx=0,step=0,scene=null;
+const stage=$("#stage"),vp=$("#viewport");
+const fmt=x=>Math.floor(x/60)+":"+String(x%60).padStart(2,"0");
+function renderInto(el,s){
+  const fn=THEME.layouts[s.layout]||THEME.layouts.fallback;
+  el.innerHTML=fn?fn(s,H):`<pre style="color:#fff;padding:40px">${esc(JSON.stringify(s,null,2))}</pre>`;
+}
+function fit(){const w=vp.clientWidth,h=vp.clientHeight,k=Math.min(w/1600,h/900);stage.style.transform=`translate(${(w-1600*k)/2}px,${(h-900*k)/2}px) scale(${k})`}
+new ResizeObserver(fit).observe(vp);
+function maxStep(s){let m=0;stage.querySelectorAll("[data-step]").forEach(e=>m=Math.max(m,+e.dataset.step));return Math.max(m,(s.steps||1)-1)}
+function applyStep(){stage.querySelectorAll("[data-step]").forEach(e=>e.classList.toggle("on",+e.dataset.step<=step));stage.querySelectorAll("[data-until]").forEach(e=>e.hidden=step>=+e.dataset.until);if(scene&&scene.step)scene.step(step)}
+function show(i,st){
+  if(scene&&scene.stop)scene.stop();scene=null;
+  idx=Math.max(0,Math.min(slides.length-1,i));const s=slides[idx];
+  renderInto(stage,s);
+  const mount=stage.querySelector(".scene-mount");
+  if(mount&&s.scene){const make=THEME.scenes[s.scene];
+    if(make&&window.THREE){try{scene=make(mount,s,H)}catch(e){console.error(e);mount.innerHTML=`<div class="e-slot"><div class="e-ph"><b>3D SCENE FAILED · ${esc(s.scene)}</b>${esc(e.message)}</div></div>`}}
+    else mount.innerHTML=`<div class="e-slot"><div class="e-ph"><b>3D SCENE NOT BUILT YET · ${esc(s.scene)}</b>${esc(s.visual||"")}</div></div>`}
+  const ms=maxStep(s);step=st==="end"?ms:Math.min(st||0,ms);applyStep();
+  try{history.replaceState(null,"","#s-"+s.id)}catch(e){}
+  pos();paintDrawer();markGrid();
+}
+function pos(){const s=slides[idx],ms=maxStep(s);$("#pos").textContent=`${s.id} · ${idx+1} of ${slides.length}`+(s.at!=null?` · ${fmt(s.at)}`:" · appendix")+(ms?` · step ${step+1}/${ms+1}`:"")}
+function next(){const ms=maxStep(slides[idx]);if(step<ms){step++;applyStep();pos()}else if(idx<slides.length-1)show(idx+1,0)}
+function prev(){if(step>0){step--;applyStep();pos()}else if(idx>0)show(idx-1,"end")}
+/* grid */
+let gridBuilt=false;
+function buildGrid(){const g=$("#grid");
+  g.innerHTML=slides.map((s,i)=>`<button type="button" class="cell" data-i="${i}"><div class="thumb"><div></div></div><div class="tag"><span>${esc(s.id)} · ${esc(s.layout)}</span><b></b></div></button>`).join("");
+  g.querySelectorAll(".cell").forEach(c=>{const s=slides[+c.dataset.i],inner=c.querySelector(".thumb>div");
+    if(s.scene){inner.innerHTML=(THEME.layouts[s.layout]||(()=>""))(s,H);const m=inner.querySelector(".scene-mount");if(m)m.innerHTML=`<div class="e-slot"><div class="e-ph"><b>3D SCENE · ${esc(s.scene)}</b>plays in the slide view</div></div>`}
+    else renderInto(inner,s);
+    c.addEventListener("click",()=>{toggleGrid(false);show(+c.dataset.i,0)})});
+  gridBuilt=true;sizeGrid();markGrid()}
+function sizeGrid(){document.querySelectorAll("#grid .thumb").forEach(th=>{const k=th.clientWidth/1600;th.firstElementChild.style.transform=`scale(${k})`})}
+new ResizeObserver(()=>{if(!$("#grid").hidden)sizeGrid()}).observe($("#grid"));
+function markGrid(){if(!gridBuilt)return;document.querySelectorAll("#grid .cell").forEach(c=>{const s=slides[+c.dataset.i];c.classList.toggle("cur",+c.dataset.i===idx);const m=st.mine[s.id]||{},b=c.querySelector(".tag b");b.className=m.v||"";b.textContent=(m.v||"")+(m.n?" ✎":"")})}
+function toggleGrid(on){const g=$("#grid");on=on??g.hidden;g.hidden=!on;$("#b-grid").setAttribute("aria-pressed",String(on));if(on){if(scene&&scene.stop){scene.stop();scene=null}if(!gridBuilt)buildGrid();else{sizeGrid();markGrid()}g.querySelector(".cell.cur")?.scrollIntoView({block:"center"})}else show(idx,step)}
+function toggleDrawer(on){const d=$("#drawer");on=on??d.hidden;d.hidden=!on;$("#b-notes").setAttribute("aria-pressed",String(on));setTimeout(fit,0)}
+/* notes (db) */
+const st={uid:null,mine:{},all:[],names:{},db:null,ref:null};
+function paintDrawer(){const s=slides[idx];if(!s)return;
+  $("#d-title").textContent=`Slide ${s.id}`+(s.title?`: ${s.title}`:"");
+  $("#d-meta").textContent=`${s.type||""} · ${s.layout}`+(s.secs?` · ${s.secs}s`:"");
+  $("#d-say").innerHTML=s.say?t(s.say):"<i>No spoken line.</i>";
+  $("#d-pic").textContent=s.visual?"Picture brief: "+s.visual:"";
+  const m=st.mine[s.id]||{};document.querySelectorAll(".vb button").forEach(b=>b.setAttribute("aria-pressed",String(m.v===b.dataset.v)));
+  const ta=$("#d-note");if(document.activeElement!==ta)ta.value=m.n||"";
+  $("#d-others").innerHTML=st.all.filter(r=>r.id!==st.uid&&r.slides&&r.slides[s.id]).map(r=>{const o=r.slides[s.id];return `<div><b>${esc(st.names[r.id]||"Someone")}</b>${o.v?": "+esc(o.v):""}${o.n?"<br>"+esc(o.n):""}</div>`}).join("");
+}
+let q=Promise.resolve();
+function save(){if(!st.ref)return;const data={slides:st.mine,round:DECK.round||1,updatedAt:new Date().toISOString()};q=q.then(()=>st.ref.set(data)).then(()=>{$("#d-status").textContent="Saved."},()=>{$("#d-status").textContent="Could not save. Tell Claude instead."})}
+document.querySelectorAll(".vb button").forEach(b=>b.addEventListener("click",()=>{if(!st.ref)return;const id=slides[idx].id,m=st.mine[id]=st.mine[id]||{};m.v=m.v===b.dataset.v?null:b.dataset.v;paintDrawer();markGrid();save()}));
+let h;$("#d-note").addEventListener("input",()=>{if(!st.ref)return;$("#d-status").textContent="Saving…";const id=slides[idx].id;clearTimeout(h);h=setTimeout(()=>{const m=st.mine[id]=st.mine[id]||{};m.n=$("#d-note").value.trim();save();markGrid()},800)});
+if(PUBLIC){document.body.classList.add("public");try{if(window.self!==window.top)document.body.classList.add("embedded")}catch(e){document.body.classList.add("embedded")}}
+(async()=>{if(PUBLIC)return;const timer=setTimeout(()=>{$("#d-status").textContent="Notes are not available in this view. Tell Claude your notes instead."},10000);
+  let db=null,user=null;try{db=await claude.use("db");user=await claude.use("user")}catch(e){}
+  if(!db||!user){clearTimeout(timer);$("#d-status").textContent="Sign in to leave notes, or tell Claude your notes.";$("#d-note").disabled=true;return}
+  st.uid=await user.id();st.ref=db.doc("notes/"+st.uid);
+  db.collection("notes").onSnapshot(async snap=>{clearTimeout(timer);st.all=snap.docs.map(d=>Object.assign({id:d.id},d.data()));
+    const me=st.all.find(r=>r.id===st.uid);if(me&&me.slides)st.mine=JSON.parse(JSON.stringify(me.slides));
+    try{const ids=st.all.map(r=>r.id).filter(i=>i!==st.uid);if(ids.length){const ps=await user.profiles(ids);ids.forEach(i=>st.names[i]=(ps[i]&&ps[i].name)||"Someone")}}catch(e){}
+    $("#d-status").textContent="Notes save as you type.";paintDrawer();markGrid()},()=>{clearTimeout(timer);$("#d-status").textContent="Notes could not load. Tell Claude your notes instead."});
+})();
+/* controls */
+$("#b-next").onclick=next;$("#b-prev").onclick=prev;
+$("#b-grid").onclick=()=>toggleGrid();$("#b-notes").onclick=()=>toggleDrawer();
+$("#b-full").onclick=()=>{document.documentElement.requestFullscreen?.().catch(()=>{})};
+vp.addEventListener("click",e=>{if($("#grid").hidden&&!e.target.closest("button,a"))next()});
+addEventListener("keydown",e=>{if(e.target.closest("textarea,input"))return;
+  const k=e.key;if(["ArrowRight"," ","PageDown"].includes(k)){e.preventDefault();next()}else if(["ArrowLeft","PageUp"].includes(k)){e.preventDefault();prev()}
+  else if(k==="Home")show(0,0);else if(k==="End")show(slides.length-1,0);else if(!PUBLIC&&(k==="g"||k==="G"))toggleGrid();else if(!PUBLIC&&(k==="n"||k==="N"))toggleDrawer();
+  else if(k==="h"||k==="H"){document.body.classList.toggle("clean");setTimeout(fit,0)}else if(k==="f"||k==="F")document.documentElement.requestFullscreen?.().catch(()=>{});
+  else if(k==="Escape"&&!$("#grid").hidden)toggleGrid(false)});
+const m=location.hash.match(/^#s-([^@]+)(@end)?$/);const start=m?slides.findIndex(s=>s.id===m[1]):0;
+fit();show(start<0?0:start,m&&m[2]?"end":0);
+})();
+</script>

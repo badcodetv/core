@@ -1,0 +1,299 @@
+<title>Future Proof Deck Looks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Libre+Caslon+Display&family=Public+Sans:wght@400;600;800&family=Silkscreen:wght@400;700&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Courier+Prime:wght@400;700&family=Archivo:wdth,wght@62..125,400..900&display=swap">
+<style>
+/* Layout: a quiet picking sheet; each look is one band with three 16:9 sample slides, live 3D on the third. */
+:root{
+  --bg:#f4f5f7; --panel:#ffffff; --fg:#1d2027; --muted:#5b616e; --line:#d9dce3; --pick:#2f6b3a;
+  --ui:"Atkinson Hyperlegible",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171c;--panel:#1e2128;--fg:#eceef2;--muted:#a3a9b6;--line:#343944;--pick:#7fc88b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15171c;--panel:#1e2128;--fg:#eceef2;--muted:#a3a9b6;--line:#343944;--pick:#7fc88b;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--ui)}
+.wrap{max-width:1180px;margin:0 auto;padding-block:32px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 12px;text-wrap:balance}
+header.top p{max-width:66ch;margin:0 0 10px;color:var(--muted)}
+.tally{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.tally span{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:4px 12px;font-size:14px}
+.tally b{color:var(--pick)}
+section.look{margin-top:56px;border-top:1px solid var(--line);padding-top:28px}
+.lookhead{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 24px;align-items:start}
+.lookhead h2{margin:0;font-size:28px;line-height:1.15}
+.lookhead .pitch{margin:6px 0 0;max-width:70ch}
+.serves{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 24px;margin:14px 0 0;font-size:15px;color:var(--muted)}
+.serves strong{color:var(--fg)}
+.swatches{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap}
+.swatches i{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:block}
+.vote{display:flex;flex-direction:column;gap:8px;min-width:200px}
+.vote button{font:700 15px var(--ui);padding:10px 16px;border-radius:8px;border:2px solid var(--pick);background:transparent;color:var(--pick);cursor:pointer}
+.vote button[aria-pressed="true"]{background:var(--pick);color:var(--panel)}
+.vote button:focus-visible,textarea:focus-visible,.crack:focus-visible{outline:3px solid #4b8bff;outline-offset:2px}
+.vote .who{font-size:13px;color:var(--muted);min-height:1.2em}
+textarea{width:100%;box-sizing:border-box;min-height:64px;font:15px/1.4 var(--ui);background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-top:14px}
+.saved{font-size:13px;color:var(--muted);min-height:1.2em}
+.slides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+@media (max-width:900px){.slides{grid-template-columns:minmax(0,1fr)}.lookhead{grid-template-columns:minmax(0,1fr)}}
+.slide{container-type:inline-size;aspect-ratio:16/9;max-width:100%;position:relative;overflow:hidden;border-radius:6px;box-shadow:0 0 0 1px var(--line)}
+.cap{font-size:13px;color:var(--muted);margin-top:6px}
+.slide canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.crack{position:absolute;right:3cqw;bottom:3cqw;font-size:max(12px,2.6cqw);padding:.5em .9em;cursor:pointer;z-index:2}
+.dlabel{position:absolute;left:4cqw;top:4cqw;right:4cqw;z-index:2;pointer-events:none}
+
+/* ---------- Look A: Museum of Old Tech ---------- */
+.museum{--wall:#e9ebe8;--label:#1f2326;--brass:#a8823a;--glass:#c3d0d3;--rope:#8f2228;background:var(--wall);color:var(--label)}
+.museum .t1{position:absolute;inset:0;padding:7cqw 8cqw;display:flex;flex-direction:column;justify-content:center}
+.museum .t1 h3{font:400 7.4cqw/1.02 "Libre Caslon Display",Georgia,serif;margin:0;max-width:16ch}
+.museum .t1 p{font:400 2.2cqw/1.4 "Public Sans",sans-serif;margin:3cqw 0 0;border-top:.3cqw solid var(--brass);padding-top:1.6cqw;max-width:40ch}
+.museum .case{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:4cqw;padding:6cqw}
+.museum .exhibit{display:flex;flex-direction:column;justify-content:flex-end}
+.museum .obj{flex:1;background:linear-gradient(180deg,#f4f6f5 0,var(--glass) 100%);border:.3cqw solid #b7c3c6;display:grid;place-items:center;font:400 9cqw "Libre Caslon Display",serif;color:#6d7477}
+.museum .card{background:#fff;padding:1.6cqw 2cqw;margin-top:1.8cqw;font:400 1.75cqw/1.35 "Public Sans",sans-serif;box-shadow:0 .3cqw .8cqw rgba(0,0,0,.08)}
+.museum .card b{display:block;font-weight:800;font-size:2cqw}
+.museum .card .status{color:var(--rope);font-weight:800}
+.museum.dg .dlabel{font:400 3.4cqw/1.1 "Libre Caslon Display",serif}
+.museum .crack{font-family:"Public Sans",sans-serif;font-weight:600;background:var(--label);color:var(--wall);border:0}
+
+/* ---------- Look B: Update Available ---------- */
+.update{--desk:#3b7f86;--win:#d4d3cc;--bar:#1f3070;--ok:#2d9a4c;--warn:#ffd43b;--ink:#141618;background:var(--desk) repeating-linear-gradient(0deg,transparent 0 .6cqw,rgba(255,255,255,.035) .6cqw 1.2cqw);color:var(--ink)}
+.update .win{position:absolute;left:10%;right:10%;top:16%;background:var(--win);box-shadow:inset -.3cqw -.3cqw 0 #8a8982,inset .3cqw .3cqw 0 #fff,.8cqw .8cqw 0 rgba(0,0,0,.25)}
+.update .tb{background:var(--bar);color:#fff;font:400 2.1cqw "Silkscreen",monospace;padding:.9cqw 1.4cqw;display:flex;justify-content:space-between}
+.update .body{padding:2.6cqw 3cqw;font:400 2.5cqw/1.35 "Atkinson Hyperlegible",sans-serif}
+.update .body h3{font:700 4.6cqw/1.1 "Atkinson Hyperlegible",sans-serif;margin:0 0 1.4cqw}
+.update .prog{height:2.6cqw;border:.25cqw solid #6f6e68;background:#fff;margin:1.6cqw 0 .6cqw}
+.update .prog i{display:block;height:100%;width:3%;background:var(--ok)}
+.update .btns{display:flex;gap:2cqw;justify-content:flex-end;padding:0 3cqw 2.4cqw}
+.update .btns span{font:700 2.1cqw "Atkinson Hyperlegible",sans-serif;padding:.9cqw 2cqw;background:var(--win);box-shadow:inset -.25cqw -.25cqw 0 #6f6e68,inset .25cqw .25cqw 0 #fff}
+.update .err{position:absolute;inset:0;display:grid;place-items:center}
+.update .err .win{position:relative;left:auto;right:auto;top:auto;width:76%}
+.update .ico{float:left;width:6cqw;height:6cqw;border-radius:50%;background:#d22d2d;color:#fff;display:grid;place-items:center;font:700 4cqw "Atkinson Hyperlegible";margin:0 2cqw 1cqw 0}
+.update.dg .dlabel{font:400 2.6cqw/1.2 "Silkscreen",monospace;color:#fff}
+.update .crack{font-family:"Silkscreen",monospace;background:var(--win);color:var(--ink);border:0;box-shadow:inset -.25cqw -.25cqw 0 #6f6e68,inset .25cqw .25cqw 0 #fff}
+
+/* ---------- Look C: Bundle Deal ---------- */
+.bundle{--sticker:#ffd60a;--shelf:#d0202a;--paper:#fdfdfb;--ink:#1c1915;--deal:#1546c2;background:var(--sticker);color:var(--ink)}
+.bundle .t1{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:6cqw 7cqw}
+.bundle .t1 h3{font:800 8.2cqw/.92 "Bricolage Grotesque",sans-serif;font-stretch:75%;margin:0;letter-spacing:-.02em;max-width:13ch}
+.bundle .edge{position:absolute;left:0;right:0;bottom:0;background:var(--shelf);color:#fff;font:800 3cqw "Bricolage Grotesque",sans-serif;font-stretch:80%;padding:1.6cqw 7cqw;display:flex;justify-content:space-between}
+.bundle .rc{position:absolute;inset:0;background:#e9e4d6;display:grid;place-items:center}
+.bundle .receipt{width:46%;background:var(--paper);padding:2.6cqw 2.8cqw 3.6cqw;font:400 1.75cqw/1.35 "Courier Prime",monospace;box-shadow:0 .6cqw 1.4cqw rgba(0,0,0,.18);transform:rotate(-2deg);clip-path:polygon(0 0,100% 0,100% 96%,95% 100%,90% 96%,85% 100%,80% 96%,75% 100%,70% 96%,65% 100%,60% 96%,55% 100%,50% 96%,45% 100%,40% 96%,35% 100%,30% 96%,25% 100%,20% 96%,15% 100%,10% 96%,5% 100%,0 96%)}
+.bundle .receipt .row{display:flex;justify-content:space-between;gap:1cqw}
+.bundle .receipt hr{border:0;border-top:.2cqw dashed #777;margin:1cqw 0}
+.bundle .rc .tag{position:absolute;right:9%;top:14%;background:var(--sticker);font:800 3.2cqw/1 "Bricolage Grotesque",sans-serif;font-stretch:75%;padding:1.4cqw 2cqw;transform:rotate(6deg);border-radius:50%/40%}
+.bundle.dg .dlabel{font:800 3.6cqw/1 "Bricolage Grotesque",sans-serif;font-stretch:75%}
+.bundle .crack{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;background:var(--shelf);color:#fff;border:0}
+
+/* ---------- Look D: Building Site (Oct prototype) ---------- */
+.site{--day:#f3f5ef;--ink:#17202b;--blue:#2752c4;--hivis:#ff6914;--concrete:#d9dcd3;background:var(--day);color:var(--ink)}
+.site .t1{position:absolute;inset:0;padding:6cqw 7cqw;display:flex;flex-direction:column;justify-content:center;background:var(--blue) linear-gradient(rgba(255,255,255,.12) 1px,transparent 1px) 0 0/4cqw 4cqw,linear-gradient(90deg,rgba(255,255,255,.12) 1px,transparent 1px) 0 0/4cqw 4cqw;color:#fff}
+.site .t1 h3{font:900 7.6cqw/.95 "Archivo",sans-serif;font-stretch:75%;margin:0;max-width:14ch}
+.site .t1 p{font:400 2.1cqw "Atkinson Hyperlegible";margin:2.4cqw 0 0;opacity:.9}
+.site .hoard{position:absolute;inset:0;display:grid;place-items:center;background:var(--concrete)}
+.site .board{width:78%;background:#fff;border:1cqw solid var(--hivis);padding:3cqw}
+.site .board h4{font:900 4.6cqw/1 "Archivo",sans-serif;font-stretch:75%;margin:0 0 2cqw}
+.site .board dl{display:grid;grid-template-columns:auto 1fr;gap:.6cqw 2cqw;margin:0;font:400 2.1cqw/1.3 "Atkinson Hyperlegible"}
+.site .board dt{font-weight:700}
+.site .board dd{margin:0}
+.site .tape{position:absolute;left:-5%;right:-5%;bottom:9%;height:3.4cqw;background:repeating-linear-gradient(45deg,var(--hivis) 0 2.4cqw,var(--ink) 2.4cqw 4.8cqw);transform:rotate(-3deg)}
+.site.dg .dlabel{font:900 3.8cqw/1 "Archivo",sans-serif;font-stretch:75%}
+.site .crack{font-family:"Archivo",sans-serif;font-weight:800;background:var(--hivis);color:var(--ink);border:0}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <h1>Future Proof: four looks for the meme deck</h1>
+  <p>Each look shows the same three slides: the opening question, one meme, and the one diagram that cracks the party slab into bricks. Press the button on the third slide to crack it. The memes here are built from type to show the frame; the real ones will be pictures we make.</p>
+  <p>Pick one, or say what to steal from another in the note. Kai and Jack both vote.</p>
+  <div class="tally" id="tally" aria-live="polite"><span>Votes load in a moment.</span></div>
+</header>
+
+<section class="look" data-look="museum">
+  <div class="lookhead">
+    <div>
+      <h2>Museum of Old Tech</h2>
+      <p class="pitch">The voting system sits in a glass case next to the gas lamp and the telegraph, with a polite label saying it is still in daily use. The deck is a gallery tour of obsolete machines, and the joke is that one of them still runs the country.</p>
+      <div class="serves"><div><strong>Serves:</strong> the "older than the light bulb" hook, quietly and with total authority. Feels calm and trustworthy for a sceptical reader.</div><div><strong>Undermines:</strong> pace. A museum is slow, and the memes have to bring all the energy.</div></div>
+      <div class="swatches"><i style="background:#e9ebe8"></i><i style="background:#1f2326"></i><i style="background:#a8823a"></i><i style="background:#c3d0d3"></i><i style="background:#8f2228"></i></div>
+    </div>
+    <div class="vote"><button type="button" class="pickbtn" aria-pressed="false">Pick this look</button><div class="who"></div></div>
+  </div>
+  <div class="slides">
+    <div><div class="slide museum"><div class="t1"><h3>Why can't I vote on more than one thing?</h3><p>Gallery 1. Machines we stopped using, and one we didn't.</p></div></div><div class="cap">Title</div></div>
+    <div><div class="slide museum"><div class="case">
+      <div class="exhibit"><div class="obj">☏</div><div class="card"><b>Candlestick telephone</b>c. 1890s<br><span class="status">Retired.</span></div></div>
+      <div class="exhibit"><div class="obj">✕</div><div class="card"><b>The secret ballot</b>1872<br><span class="status">Still in daily use. Please do not touch.</span></div></div>
+    </div></div><div class="cap">Meme: the exhibit label</div></div>
+    <div><div class="slide museum dg"><div class="dlabel">One vote, every five years, for the whole slab.</div><canvas></canvas><button class="crack" type="button">Crack it</button></div><div class="cap">Diagram (live 3D): marble on a plinth</div></div>
+  </div>
+  <label class="cap" for="note-museum">Note on this look</label>
+  <textarea id="note-museum" class="note" placeholder="What works, what to change, what to steal for another look"></textarea><div class="saved"></div>
+</section>
+
+<section class="look" data-look="update">
+  <div class="lookhead">
+    <div>
+      <h2>Update Available</h2>
+      <p class="pitch">Britain is an old computer that has been clicking "remind me later" since 1872. Every slide is a desktop with a pop-up on it: error boxes, progress bars stuck at 3%, patch notes. Error-box jokes are already a meme language people know.</p>
+      <div class="serves"><div><strong>Serves:</strong> pillar 2 (laws that update and can be rolled back) and the "we have the technology" hook. Fast and very meme-native.</div><div><strong>Undermines:</strong> it is a tech joke, and the reader rules say name the decision-maker, not the technology. The pop-ups must blame people, not the machine.</div></div>
+      <div class="swatches"><i style="background:#3b7f86"></i><i style="background:#d4d3cc"></i><i style="background:#1f3070"></i><i style="background:#2d9a4c"></i><i style="background:#ffd43b"></i></div>
+    </div>
+    <div class="vote"><button type="button" class="pickbtn" aria-pressed="false">Pick this look</button><div class="who"></div></div>
+  </div>
+  <div class="slides">
+    <div><div class="slide update"><div class="win"><div class="tb"><span>DEMOCRACY.EXE</span><span>_ □ x</span></div><div class="body"><h3>Why can't I vote on more than one thing?</h3>Installing update 2 of 1,000,000…<div class="prog"><i></i></div>Last updated 1872. Time remaining: 5 years.</div></div></div><div class="cap">Title</div></div>
+    <div><div class="slide update"><div class="err"><div class="win"><div class="tb"><span>GENERAL ELECTION</span><span>x</span></div><div class="body"><div class="ico">!</div>You have selected 1 item: <b>the whole party</b>. It includes 47 policies you didn't ask for. To pick only the ones you want, please wait for a different century.</div><div class="btns"><span>OK</span><span>Also OK</span></div></div></div></div><div class="cap">Meme: the error box with no real choice</div></div>
+    <div><div class="slide update dg"><div class="dlabel">One vote, every five years, for the whole slab.</div><canvas></canvas><button class="crack" type="button">Crack it</button></div><div class="cap">Diagram (live 3D): one grey block breaks into bricks</div></div>
+  </div>
+  <label class="cap" for="note-update">Note on this look</label>
+  <textarea id="note-update" class="note" placeholder="What works, what to change, what to steal for another look"></textarea><div class="saved"></div>
+</section>
+
+<section class="look" data-look="bundle">
+  <div class="lookhead">
+    <div>
+      <h2>Bundle Deal</h2>
+      <p class="pitch">The corner shop and the big supermarket: yellow price stickers, shelf-edge labels and till receipts. A party is a multipack you have to buy whole, and the deck keeps asking why you can't just buy the one thing you came in for.</p>
+      <div class="serves"><div><strong>Serves:</strong> pillar 1 dead centre, in the reader's own everyday world. Loud, cheap-looking on purpose, and the funniest of the four.</div><div><strong>Undermines:</strong> it can look like a discount ad. It needs the narrator's authority to stop it reading as a gimmick.</div></div>
+      <div class="swatches"><i style="background:#ffd60a"></i><i style="background:#d0202a"></i><i style="background:#fdfdfb"></i><i style="background:#1c1915"></i><i style="background:#1546c2"></i></div>
+    </div>
+    <div class="vote"><button type="button" class="pickbtn" aria-pressed="false">Pick this look</button><div class="who"></div></div>
+  </div>
+  <div class="slides">
+    <div><div class="slide bundle"><div class="t1"><h3>Why can't I vote on more than one thing?</h3></div><div class="edge"><span>WAS: 1 vote per 5 years</span><span>NOW: same</span></div></div><div class="cap">Title</div></div>
+    <div><div class="slide bundle"><div class="rc"><div class="receipt">
+      <div style="text-align:center;font-weight:700">GENERAL ELECTION<br>STORE NO. 650</div><hr>
+      <div class="row"><span>1x PARTY BUNDLE</span><span>5 YRS</span></div>
+      <div class="row"><span>&nbsp;incl. thing you wanted</span><span>1</span></div>
+      <div class="row"><span>&nbsp;incl. things you didn't</span><span>46</span></div><hr>
+      <div class="row"><b>CHANGE GIVEN</b><b>0.00</b></div>
+      <div style="text-align:center;margin-top:1cqw">NO REFUNDS. NO EXCHANGES.<br>SEE YOU IN 2029.</div>
+    </div><div class="tag">ONLY<br>OPTION</div></div></div><div class="cap">Meme: the till receipt</div></div>
+    <div><div class="slide bundle dg"><div class="dlabel">One vote, every five years, for the whole slab.</div><canvas></canvas><button class="crack" type="button">Crack it</button></div><div class="cap">Diagram (live 3D): a shrink-wrapped multipack splits into items</div></div>
+  </div>
+  <label class="cap" for="note-bundle">Note on this look</label>
+  <textarea id="note-bundle" class="note" placeholder="What works, what to change, what to steal for another look"></textarea><div class="saved"></div>
+</section>
+
+<section class="look" data-look="site">
+  <div class="lookhead">
+    <div>
+      <h2>Building Site</h2>
+      <p class="pitch">From the October Future Proof microsite: daylight, blueprints, hi-vis and hoardings. Politics is under construction and the deck is the planning notice. This is the one you already agreed to in spirit (Future Proof is the first lit place in BadCode).</p>
+      <div class="serves"><div><strong>Serves:</strong> continuity with the microsite, and the idea that we are building something, not just moaning.</div><div><strong>Undermines:</strong> it is the most "designed" and the least meme-like; building-site jokes are thinner than shop or computer jokes.</div></div>
+      <div class="swatches"><i style="background:#f3f5ef"></i><i style="background:#17202b"></i><i style="background:#2752c4"></i><i style="background:#ff6914"></i><i style="background:#d9dcd3"></i></div>
+    </div>
+    <div class="vote"><button type="button" class="pickbtn" aria-pressed="false">Pick this look</button><div class="who"></div></div>
+  </div>
+  <div class="slides">
+    <div><div class="slide site"><div class="t1"><h3>Why can't I vote on more than one thing?</h3><p>Drawing no. 1 of 3. Not to scale. Older than the light bulb.</p></div></div><div class="cap">Title</div></div>
+    <div><div class="slide site"><div class="hoard"><div class="board"><h4>Planning notice: better politics</h4><dl><dt>Applicant</dt><dd>You, apparently</dd><dt>Current structure</dt><dd>Listed building, 1872. Do not alter.</dd><dt>Objections</dt><dd>Everyone currently living in it rent-free</dd><dt>Completion</dt><dd>Never. That's the point.</dd></dl></div><div class="tape"></div></div></div><div class="cap">Meme: the planning notice</div></div>
+    <div><div class="slide site dg"><div class="dlabel">One vote, every five years, for the whole slab.</div><canvas></canvas><button class="crack" type="button">Crack it</button></div><div class="cap">Diagram (live 3D): a concrete slab breaks into blocks</div></div>
+  </div>
+  <label class="cap" for="note-site">Note on this look</label>
+  <textarea id="note-site" class="note" placeholder="What works, what to change, what to steal for another look"></textarea><div class="saved"></div>
+</section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const LOOKS={
+  museum:{bg:0xe9ebe8,slab:0xf2f0ea,rough:.35,metal:0,bricks:[0xa8823a,0x8f2228,0x6f8d94,0x1f2326,0xc9b48a,0x5d6b4f],plinth:0x1f2326,after:"One vote per brick."},
+  update:{bg:0x3b7f86,slab:0x9b9a93,rough:.9,metal:0,bricks:[0x2d9a4c,0xffd43b,0xd22d2d,0x1f3070,0xd4d3cc,0x8a6fd1],plinth:0x1f3070,after:"UPDATE COMPLETE: ONE VOTE PER BRICK."},
+  bundle:{bg:0xffd60a,slab:0xdfe6ea,rough:.15,metal:0,bricks:[0xd0202a,0x1546c2,0x1c1915,0x2f9e44,0xff7a00,0xfdfdfb],plinth:0xd0202a,after:"Buy the one thing you came in for."},
+  site:{bg:0xf3f5ef,slab:0xc9ccc3,rough:1,metal:0,bricks:[0xff6914,0x2752c4,0x17202b,0xffc61a,0x6b8f3a,0xb4b8ad],plinth:0x17202b,after:"One vote per block."}
+};
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.querySelectorAll(".slide.dg").forEach(el=>{
+  const key=el.closest("section").dataset.look, L=LOOKS[key];
+  const canvas=el.querySelector("canvas"), btn=el.querySelector(".crack"), label=el.querySelector(".dlabel");
+  const before=label.textContent;
+  if(!window.THREE){label.textContent=before+" (3D could not load.)";btn.hidden=true;return}
+  const renderer=new THREE.WebGLRenderer({canvas,antialias:true});
+  renderer.setPixelRatio(Math.min(2,devicePixelRatio));
+  const scene=new THREE.Scene(); scene.background=new THREE.Color(L.bg);
+  const cam=new THREE.PerspectiveCamera(32,16/9,.1,100); cam.position.set(5.5,4.2,8.5); cam.lookAt(0,.6,0);
+  scene.add(new THREE.HemisphereLight(0xffffff,0x888888,.75));
+  const sun=new THREE.DirectionalLight(0xffffff,.8); sun.position.set(4,8,5); scene.add(sun);
+  const plinth=new THREE.Mesh(new THREE.BoxGeometry(5.2,.5,2.4),new THREE.MeshStandardMaterial({color:L.plinth,roughness:.8}));
+  plinth.position.y=-.25; scene.add(plinth);
+  const COLS=6,ROWS=3,W=.7,H=.5,D=1.1, bricks=[];
+  for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++){
+    const m=new THREE.Mesh(new THREE.BoxGeometry(W,H,D),new THREE.MeshStandardMaterial({color:L.slab,roughness:L.rough,metalness:L.metal}));
+    const home=new THREE.Vector3((c-(COLS-1)/2)*W,H/2+r*H,0);
+    const i=r*COLS+c, ang=(i/18)*Math.PI*2;
+    const out=new THREE.Vector3((c-(COLS-1)/2)*1.05,.35+r*.95+(i%2)*.25,Math.sin(ang)*.9);
+    m.position.copy(home); scene.add(m);
+    bricks.push({m,home,out,rot:new THREE.Euler((i%3-1)*.35,(i%5-2)*.25,(i%4-1.5)*.15),col:new THREE.Color(L.bricks[i%L.bricks.length]),base:new THREE.Color(L.slab),delay:i*.03});
+  }
+  let t=0,target=0,last=performance.now(),dirty=true;
+  function size(){const w=el.clientWidth,h=el.clientHeight;if(!w)return;renderer.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();dirty=true}
+  new ResizeObserver(size).observe(el); size();
+  function ease(x){x=Math.min(1,Math.max(0,x));return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
+  function frame(now){
+    const dt=Math.min(.05,(now-last)/1000); last=now;
+    if(t!==target){t+=Math.sign(target-t)*dt*1.1; if(Math.abs(target-t)<.02||reduce)t=target; dirty=true}
+    if(dirty){
+      bricks.forEach(b=>{const k=ease((t-b.delay)/(1-.55));
+        b.m.position.lerpVectors(b.home,b.out,k);
+        b.m.rotation.set(b.rot.x*k,b.rot.y*k,b.rot.z*k);
+        b.m.material.color.copy(b.base).lerp(b.col,k);
+        b.m.scale.setScalar(1-.12*k);});
+      renderer.render(scene,cam); dirty=false;
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  btn.addEventListener("click",()=>{target=target?0:1;btn.textContent=target?"Put it back":"Crack it";label.textContent=target?L.after:before;dirty=true});
+});
+
+/* ---------- votes ---------- */
+const NAMES={museum:"Museum of Old Tech",update:"Update Available",bundle:"Bundle Deal",site:"Building Site"};
+const state={uid:null,mine:{pick:null,notes:{}},all:[]};
+const tally=document.getElementById("tally");
+function render(){
+  const counts={}; state.all.forEach(v=>{if(v.pick)(counts[v.pick]=counts[v.pick]||[]).push(v.id)});
+  document.querySelectorAll("section.look").forEach(s=>{
+    const k=s.dataset.look, b=s.querySelector(".pickbtn");
+    b.setAttribute("aria-pressed",String(state.mine.pick===k)); b.textContent=state.mine.pick===k?"Your pick":"Pick this look";
+  });
+  return counts;
+}
+async function paintNames(counts){
+  let profiles={};
+  try{const user=await claude.use("user"); if(user){const ids=state.all.map(v=>v.id); profiles=ids.length?await user.profiles(ids):{}}}catch(e){}
+  const nm=id=>(profiles[id]&&profiles[id].name)||(id===state.uid?"You":"Someone");
+  document.querySelectorAll("section.look").forEach(s=>{const ids=counts[s.dataset.look]||[];s.querySelector(".who").textContent=ids.length?"Picked by "+ids.map(nm).join(", "):""});
+  const parts=Object.keys(NAMES).filter(k=>counts[k]).map(k=>`<span>${NAMES[k]}: <b>${counts[k].length}</b></span>`);
+  tally.innerHTML=parts.length?parts.join(""):"<span>No picks yet. Yours will show here.</span>";
+}
+(async()=>{
+  const timer=setTimeout(()=>{tally.innerHTML="<span>Votes are not available in this view. Tell Claude your pick instead.</span>"},10000);
+  let db=null,user=null;
+  try{db=await claude.use("db"); user=await claude.use("user")}catch(e){}
+  if(!db||!user){clearTimeout(timer);tally.innerHTML="<span>Sign in to vote, or tell Claude your pick.</span>";document.querySelectorAll(".pickbtn,.note").forEach(x=>x.disabled=true);return}
+  state.uid=await user.id();
+  const mineRef=db.doc("votes/"+state.uid);
+  db.collection("votes").onSnapshot(snap=>{
+    clearTimeout(timer);
+    state.all=snap.docs.map(d=>Object.assign({id:d.id},d.data()));
+    const me=state.all.find(v=>v.id===state.uid);
+    if(me){state.mine.pick=me.pick||null;state.mine.notes=Object.assign({},me.notes||{});
+      document.querySelectorAll("section.look").forEach(s=>{const ta=s.querySelector(".note");if(document.activeElement!==ta)ta.value=state.mine.notes[s.dataset.look]||""})}
+    paintNames(render());
+  },()=>{clearTimeout(timer);tally.innerHTML="<span>Votes could not load. Tell Claude your pick instead.</span>"});
+  let saving=Promise.resolve();
+  function save(msgEl){
+    const data={pick:state.mine.pick,notes:state.mine.notes,updatedAt:new Date().toISOString()};
+    saving=saving.then(()=>mineRef.set(data)).then(()=>{if(msgEl)msgEl.textContent="Note saved."},()=>{if(msgEl)msgEl.textContent="Could not save. Tell Claude instead."});
+  }
+  document.querySelectorAll("section.look").forEach(s=>{
+    const k=s.dataset.look;
+    s.querySelector(".pickbtn").addEventListener("click",()=>{state.mine.pick=state.mine.pick===k?null:k;paintNames(render());save()});
+    const ta=s.querySelector(".note"),msg=s.querySelector(".saved");let h;
+    ta.addEventListener("input",()=>{msg.textContent="Saving…";clearTimeout(h);h=setTimeout(()=>{const v=ta.value.trim();if((state.mine.notes[k]||"")===v){msg.textContent="";return}state.mine.notes[k]=v;save(msg)},900)});
+  });
+})();
+})();
+</script>

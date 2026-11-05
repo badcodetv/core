@@ -1,0 +1,204 @@
+<title>/*__TITLE__*/ script</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap">
+<style>
+/* Layout: a running script; a sticky rail of parts with timecodes, then one row per slide (timecode | what's seen and said | your verdict). */
+:root{
+  --bg:#f5f6f4; --paper:#ffffff; --fg:#1b1e22; --muted:#5f6670; --line:#dcdfdc;
+  --keep:#2f6b3a; --change:#a86a00; --cut:#b3261e; --diag:#3557a8; --mark:#fff3c4;
+  --ui:"Atkinson Hyperlegible",system-ui,sans-serif; --read:"Literata",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141619;--paper:#1c1f23;--fg:#e9ebee;--muted:#a1a8b2;--line:#30353b;--keep:#7cc489;--change:#e7b04a;--cut:#f08a80;--diag:#8fa9ec;--mark:#3d3417;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141619;--paper:#1c1f23;--fg:#e9ebee;--muted:#a1a8b2;--line:#30353b;--keep:#7cc489;--change:#e7b04a;--cut:#f08a80;--diag:#8fa9ec;--mark:#3d3417;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--ui)}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 96px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;grid-template-columns:210px minmax(0,1fr);gap:32px}
+@media (max-width:860px){.wrap{grid-template-columns:minmax(0,1fr)}.rail{position:static!important;max-height:none!important}}
+.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);align-self:start;max-height:calc(100vh - 32px);overflow:auto;font-size:14px}
+.rail h1{font-size:20px;line-height:1.2;margin:0 0 4px}
+.rail .meta{color:var(--muted);margin:0 0 16px}
+.rail ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.rail a{display:grid;grid-template-columns:44px 1fr;gap:6px;padding:5px 6px;border-radius:6px;text-decoration:none}
+.rail a:hover{background:var(--paper)}
+.rail .tc{color:var(--muted);font-variant-numeric:tabular-nums}
+.mine{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:4px}
+.mine b.k{color:var(--keep)}.mine b.c{color:var(--change)}.mine b.x{color:var(--cut)}
+.filters{margin-top:14px;display:grid;gap:6px}
+.filters label{display:flex;gap:8px;align-items:center;cursor:pointer}
+main{min-width:0}
+.intro{max-width:70ch}
+.intro p{margin:0 0 10px}
+details.block{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:10px 0;padding:0 16px}
+details.block>summary{cursor:pointer;padding:12px 0;font-weight:700}
+.md{padding-bottom:14px;max-width:80ch;font-size:15px}
+.md ul{padding-left:20px}.md li{margin:4px 0}
+.md table{border-collapse:collapse;font-size:13px;min-width:640px}
+.md td,.md th{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+.tablewrap{overflow-x:auto}
+code{font-size:.9em;background:var(--bg);padding:1px 4px;border-radius:4px;overflow-wrap:anywhere}
+h2.part{font-size:24px;line-height:1.2;margin:48px 0 4px;scroll-margin-top:16px;text-wrap:balance}
+.partnote{color:var(--muted);margin:0 0 12px;max-width:75ch}
+.slide{display:grid;grid-template-columns:72px minmax(0,1fr) 230px;gap:18px;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:18px;margin:10px 0;scroll-margin-top:16px}
+@media (max-width:1050px){.slide{grid-template-columns:60px minmax(0,1fr)}.verdict{grid-column:1/-1}}
+.slide.diagram{border-left:4px solid var(--diag)}
+.slide.v-cut{opacity:.6}
+.num{font-weight:700;font-size:22px;line-height:1}
+.typ{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+.slide.diagram .typ{color:var(--diag);font-weight:700}
+.tcode{display:block;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:2px}
+.body{min-width:0;display:grid;gap:10px}
+.onscreen{font-weight:700;font-size:19px;line-height:1.3;text-wrap:balance}
+.atitle{font-weight:700;font-size:19px}
+.visual{color:var(--muted);font-size:15px}
+.visual i{font-style:normal;font-weight:700;color:var(--fg)}
+.say{font-family:var(--read);font-size:18px;line-height:1.55;border-left:3px solid var(--line);padding-left:14px;max-width:62ch}
+.src{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+.src summary{cursor:pointer;width:max-content}
+body.nosrc .src{display:none}
+.flag{background:var(--mark);padding:0 3px;border-radius:3px}
+.verdict{display:grid;gap:8px;align-content:start}
+.vbtns{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.vbtns button{font:700 14px var(--ui);padding:7px 4px;border-radius:6px;border:1.5px solid var(--line);background:transparent;color:var(--fg);cursor:pointer}
+.vbtns button[data-v="keep"][aria-pressed="true"]{background:var(--keep);border-color:var(--keep);color:var(--paper)}
+.vbtns button[data-v="change"][aria-pressed="true"]{background:var(--change);border-color:var(--change);color:var(--paper)}
+.vbtns button[data-v="cut"][aria-pressed="true"]{background:var(--cut);border-color:var(--cut);color:var(--paper)}
+button:focus-visible,textarea:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #4b8bff;outline-offset:2px}
+textarea{width:100%;box-sizing:border-box;min-height:58px;font:14px/1.4 var(--ui);background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:7px 9px;resize:vertical}
+.saved{font-size:12px;color:var(--muted);min-height:1em}
+.others{font-size:13px;display:grid;gap:4px}
+.others div{background:var(--bg);border-radius:6px;padding:6px 8px}
+.others b{font-weight:700}
+.status{font-size:13px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="Parts of the deck">
+    <h1>/*__TITLE__*/</h1>
+    <p class="meta" id="meta"></p>
+    <ol id="nav"></ol>
+    <div class="mine" id="mine" aria-live="polite"></div>
+    <div class="filters">
+      <label><input type="checkbox" id="f-diag"> Only diagrams</label>
+      <label><input type="checkbox" id="f-noted"> Only slides with notes</label>
+      <label><input type="checkbox" id="f-nosrc"> Hide sources</label>
+    </div>
+  </nav>
+  <main>
+    <div class="intro">
+      <p>The whole talk, slide by slide: what's on screen, what the picture shows, and the line the narrator says. Timecodes assume the scripted pace, before laughs.</p>
+      <p>Mark each slide <b>Keep</b>, <b>Change</b> or <b>Cut</b>, and leave a note where you have one. Claude reads the notes when you say so. Diagrams (the live 3D slides) have a blue edge; the meme straight after each one lands its joke.</p>
+      <p class="status" id="status">Notes load in a moment.</p>
+    </div>
+    <div id="pre"></div>
+    <div id="deck"></div>
+    <div id="post"></div>
+  </main>
+</div>
+
+<script>
+const DATA=/*__DATA__*/null;
+(function(){
+const $=s=>document.querySelector(s);
+const fmt=t=>Math.floor(t/60)+":"+String(t%60).padStart(2,"0");
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function inline(s){
+  s=esc(s);
+  s=s.replace(/`([^`]+)`/g,"<code>$1</code>");
+  s=s.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");
+  s=s.replace(/(https?:\/\/[^\s)<]+[^\s)<.,;:])/g,'<a href="$1" target="_blank" rel="noopener">$1</a>');
+  s=s.replace(/\b(CHECK|CUT-IF|GATE|unverified)\b/g,'<span class="flag">$1</span>');
+  return s;
+}
+function md(text){
+  const out=[];let list=null,table=null;
+  const flush=()=>{if(list){out.push("<ul>"+list.join("")+"</ul>");list=null}if(table){out.push('<div class="tablewrap"><table>'+table.join("")+"</table></div>");table=null}};
+  for(const raw of text.split("\n")){const l=raw.trim();
+    if(/^\|/.test(l)){if(/^\|\s*-/.test(l))continue;const cells=l.replace(/^\||\|$/g,"").split("|").map(c=>"<td>"+inline(c.trim())+"</td>");if(list){out.push("<ul>"+list.join("")+"</ul>");list=null}(table=table||[]).push("<tr>"+cells.join("")+"</tr>");continue}
+    if(/^(- |\d+\. )/.test(l)){if(table){out.push('<div class="tablewrap"><table>'+table.join("")+"</table></div>");table=null}(list=list||[]).push("<li>"+inline(l.replace(/^(- |\d+\. )/,""))+"</li>");continue}
+    flush(); if(l&&l!=="---")out.push("<p>"+inline(l)+"</p>");
+  }
+  flush();return out.join("");
+}
+const main=DATA.slides.filter(s=>s.secs), diagrams=main.filter(s=>s.type==="diagram").length;
+$("#meta").textContent=`${main.length} slides, ${fmt(DATA.runtime)} scripted. ${main.length-diagrams-main.filter(s=>s.type==="title").length} memes, ${diagrams} diagrams.`;
+const noteBlock=n=>`<details class="block"><summary>${esc(n.title)}</summary><div class="md">${md(n.md)}</div></details>`;
+$("#pre").innerHTML=DATA.notes.filter(n=>n.n<3).map(noteBlock).join("");
+$("#post").innerHTML='<h2 class="part" id="notes">Ledger, legal, timing and open flags</h2>'+DATA.notes.filter(n=>n.n>4).map(noteBlock).join("");
+const nav=[];let html="";
+for(const p of DATA.sections){
+  const ss=DATA.slides.filter(s=>s.part===p.id); if(!ss.length)continue;
+  const at=ss[0].at; nav.push(`<li><a href="#${p.id}"><span class="tc">${at!=null?fmt(at):"extra"}</span><span>${esc(p.title.replace(/\s*\(.*?\)\s*/g," ").replace(/, 5s each/,"").trim())}</span></a></li>`);
+  html+=`<h2 class="part" id="${p.id}">${esc(p.title)}</h2>`+(p.note?`<p class="partnote">${inline(p.note)}</p>`:"");
+  for(const s of ss){const f=s.fields;
+    const extra=Object.keys(f).filter(k=>!["Visual","On-screen","Say","Source"].includes(k));
+    html+=`<article class="slide ${s.type}" id="s-${s.id}" data-id="${s.id}">
+      <div><span class="num">${s.id}</span><span class="typ">${s.type==="diagram"?"diagram, 3D":s.type}</span>${s.secs?`<span class="tcode">${fmt(s.at)} · ${s.secs}s</span>`:""}</div>
+      <div class="body">
+        ${s.title?`<div class="atitle">${inline(s.title)}</div>`:""}
+        ${f["On-screen"]?`<div class="onscreen">${inline(f["On-screen"])}</div>`:""}
+        ${f.Visual?`<div class="visual"><i>Picture:</i> ${inline(f.Visual)}</div>`:""}
+        ${f.Say?`<div class="say">${inline(f.Say)}</div>`:""}
+        ${extra.map(k=>`<div class="visual"><i>${esc(k)}:</i> ${inline(f[k])}</div>`).join("")}
+        ${f.Source?`<details class="src"><summary>Source</summary>${inline(f.Source)}</details>`:""}
+      </div>
+      <div class="verdict">
+        <div class="vbtns" role="group" aria-label="Verdict on slide ${s.id}"><button type="button" data-v="keep" aria-pressed="false">Keep</button><button type="button" data-v="change" aria-pressed="false">Change</button><button type="button" data-v="cut" aria-pressed="false">Cut</button></div>
+        <label class="status" for="n-${s.id}">Your note</label>
+        <textarea id="n-${s.id}" placeholder="What to change, or why"></textarea>
+        <div class="saved"></div>
+        <div class="others"></div>
+      </div></article>`;
+  }
+}
+nav.push('<li><a href="#notes"><span class="tc"></span><span>Ledger and flags</span></a></li>');
+$("#deck").innerHTML=html; $("#nav").innerHTML=nav.join("");
+
+/* state */
+const st={uid:null,mine:{},all:[],names:{}};
+function applyFilters(){
+  const d=$("#f-diag").checked,n=$("#f-noted").checked;
+  document.body.classList.toggle("nosrc",$("#f-nosrc").checked);
+  document.querySelectorAll(".slide").forEach(el=>{const id=el.dataset.id;
+    const noted=st.all.some(r=>r.slides&&r.slides[id]&&(r.slides[id].v||r.slides[id].n));
+    el.hidden=(d&&!el.classList.contains("diagram"))||(n&&!noted)});
+}
+["#f-diag","#f-noted","#f-nosrc"].forEach(s=>$(s).addEventListener("change",applyFilters));
+function paint(){
+  let k=0,c=0,x=0;
+  document.querySelectorAll(".slide").forEach(el=>{const id=el.dataset.id,m=st.mine[id]||{};
+    el.querySelectorAll(".vbtns button").forEach(b=>b.setAttribute("aria-pressed",String(m.v===b.dataset.v)));
+    el.classList.toggle("v-cut",m.v==="cut");
+    const ta=el.querySelector("textarea"); if(document.activeElement!==ta&&ta.value!==(m.n||""))ta.value=m.n||"";
+    const others=st.all.filter(r=>r.id!==st.uid&&r.slides&&r.slides[id]&&(r.slides[id].v||r.slides[id].n));
+    el.querySelector(".others").innerHTML=others.map(r=>{const o=r.slides[id];return `<div><b>${esc(st.names[r.id]||"Someone")}</b>${o.v?": "+o.v:""}${o.n?"<br>"+esc(o.n):""}</div>`}).join("");
+    if(m.v==="keep")k++;if(m.v==="change")c++;if(m.v==="cut")x++;});
+  const total=DATA.slides.length;
+  $("#mine").innerHTML=`<span>Your marks: <b class="k">${k} keep</b>, <b class="c">${c} change</b>, <b class="x">${x} cut</b></span><span class="tc">${total-k-c-x} of ${total} unmarked</span>`;
+  applyFilters();
+}
+paint();
+(async()=>{
+  const timer=setTimeout(()=>{$("#status").textContent="Notes are not available in this view. Tell Claude your notes instead."},10000);
+  let db=null,user=null;
+  try{db=await claude.use("db");user=await claude.use("user")}catch(e){}
+  if(!db||!user){clearTimeout(timer);$("#status").textContent="Sign in to leave notes, or tell Claude your notes instead.";document.querySelectorAll(".verdict button,.verdict textarea").forEach(e=>e.disabled=true);return}
+  st.uid=await user.id();
+  const ref=db.doc("notes/"+st.uid);
+  db.collection("notes").onSnapshot(async snap=>{
+    clearTimeout(timer);
+    st.all=snap.docs.map(d=>Object.assign({id:d.id},d.data()));
+    const me=st.all.find(r=>r.id===st.uid); if(me&&me.slides)st.mine=JSON.parse(JSON.stringify(me.slides));
+    try{const ids=st.all.map(r=>r.id).filter(i=>i!==st.uid);if(ids.length){const ps=await user.profiles(ids);ids.forEach(i=>st.names[i]=(ps[i]&&ps[i].name)||"Someone")}}catch(e){}
+    $("#status").textContent=st.all.length>1?`Notes from ${st.all.length} readers are shown under each slide.`:"Your notes save as you type.";
+    paint();
+  },()=>{clearTimeout(timer);$("#status").textContent="Notes could not load. Tell Claude your notes instead."});
+  let q=Promise.resolve();
+  const save=msg=>{const data={slides:st.mine,updatedAt:new Date().toISOString()};q=q.then(()=>ref.set(data)).then(()=>{if(msg)msg.textContent="Saved."},()=>{if(msg)msg.textContent="Could not save. Tell Claude instead."})};
+  document.querySelectorAll(".slide").forEach(el=>{const id=el.dataset.id,msg=el.querySelector(".saved");
+    el.querySelectorAll(".vbtns button").forEach(b=>b.addEventListener("click",()=>{const m=st.mine[id]=st.mine[id]||{};m.v=m.v===b.dataset.v?null:b.dataset.v;paint();save(msg)}));
+    const ta=el.querySelector("textarea");let h;
+    ta.addEventListener("input",()=>{msg.textContent="Saving…";clearTimeout(h);h=setTimeout(()=>{const m=st.mine[id]=st.mine[id]||{};const v=ta.value.trim();if((m.n||"")===v){msg.textContent="";return}m.n=v;save(msg)},900)});
+  });
+})();
+})();
+</script>

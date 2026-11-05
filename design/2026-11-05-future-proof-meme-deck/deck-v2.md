@@ -1,0 +1,567 @@
+# Future Proof: deck v2 (meme-laden, 2026-11-05)
+
+Replaces the v1 outline in `synthesis.md`. Applies Kai's rulings (meme-laden; three.js diagrams only where they earn it, each followed by a meme; open on "Why can't I vote on more than one thing?"; hook "older than the light bulb"; the narrator from the future, performable by Kai) and the fixes in `critique.md`.
+
+**The form:** ten minutes on a stage with a projector, one meme after another while making a point. A diagram appears only when a mechanism is faster to see than to say, and the very next slide is a meme that lands its joke.
+
+**NO LOOK IS SET HERE.** No palette, typeface or art style. Every "Visual" line below says what is IN the picture (people, objects, text, layout), never how it is rendered. The look is chosen separately (`story-style` / front-end design). Slide TYPE is the only formatting decision: `meme`, `diagram (three.js)`, `title`.
+
+## Contents
+1. Rules this deck runs on
+2. Mel, the recurring voter
+3. Main deck, slides 1-58 (cold open 1-7, pillar 1 8-17, pillar 2 18-25, pillar 3 26-38, close 39-58)
+4. Appendix (backup slides, Q&A)
+5. Fact ledger: every claim, source URL, check status
+6. Image-source and legal column
+7. Timing, cuts and shorts
+8. Critique fixes: where each landed
+9. Open flags for Kai and Jack
+
+---
+
+## 1. Rules this deck runs on
+
+- **Meme grammar, own images.** We borrow LAYOUTS (two-panel no/yes, two buttons, ladder, receipt, fake app screen, label, group chat, stamp, error dialog). We never use a copied still, a known template character (no Drake, no dog-in-fire, no distracted-boyfriend photo) or a real person's likeness (research/19). Every picture is generated or drawn fresh, with a recipe card.
+- **The voter is never the butt.** The joke lands on the design (the bundle, the box, the five-year gap) or on a decision-maker named by act ("whoever designed the ballot", "the department that ran the scheme"). Mel is the one who noticed.
+- **Name decision-makers, not technology.** Software words are the narrator's in-joke and always arrive after the plain picture (pizza first, "composition over inheritance" second).
+- **No Swiss/referendum trap on a slide.** One ballot-with-several-boxes picture, no count, no results. "So, referendums?" is an appendix answer (A1).
+- **No "experts" anywhere.** The call to action is "write one rule, say how we'd know, show it to the person it would hit."
+- **No repeated jokes.** The "government updates slowly" joke is told once (slide 5). The bundle joke has one new object per slide (receipt, package screen, crate buttons, album, pizza).
+- **No real-organisation branding.** No GOV.UK crown, typeface or colours; no Lewis face/logo/colours; no project logos in the montage (name and URL as plain text only).
+- **Narrator register.** Sarcasm carries the diagnosis; care carries the re-aim (voice.md). Spoken lines work from a human mouth: short sentences, no screen-description ("on the left you can see"), one idea per breath. The narrator-from-the-future flavour ("where I'm from") is used three times at most.
+- **Every number has a source URL and a status** in section 5 before it can stay on a slide.
+- **AI disclosure.** The pictures are AI-made; the one-line honest disclosure lives in the voiceover/description per `docs/using-ai.md`, never as an apology slide.
+
+## 2. Mel, the recurring voter
+
+One invented, ordinary UK adult. Name chosen because it fits anyone. Mel has: a mug, a dog, a phone, a bus stop where the bus arrives when it feels like it, a bank app, and exactly one cross every five years.
+
+- Mel appears in the corner or middle of roughly two thirds of the memes, always reacting calmly or noticing something, never confused, never dumb, never shouting.
+- Mel is never given a party, a newspaper, a flat cap or a catchphrase. No cosplay of the audience.
+- Mel's town is never named. The bad bus, the pothole and the beach stand in for "your place".
+- Character sheet (content only, no style): adult, plain clothes, mug usually in hand, dog usually at their feet. One consistent face and outfit across all slides so viewers recognise Mel in 0.5 seconds.
+- Arc: slide 1 Mel asks. Pillar 1 is Mel's ballot. Pillar 2 is the rule that hit Mel's town and was never checked. Pillar 3 is Mel getting a notice that their town is the trial, with the stop number printed on it. Close: Mel writes one rule.
+
+---
+
+## 3. Main deck
+
+Format per slide: **number · TYPE · seconds**, then Visual / On-screen / Say / Source. "Say" is the narrator's line, speakable by Kai. "src" paths are inside `design/2026-11-05-future-proof-meme-deck/research/` unless stated.
+
+### COLD OPEN (1-7)
+
+### 1 · meme · 8s
+- **Visual:** Mel at a polling-station booth holding a ballot paper that has a single box. Printed beside the box, the words "EVERYTHING". Dog waiting outside, lead on the hook.
+- **On-screen:** top "WHY CAN'T I VOTE ON MORE THAN ONE THING?" / bottom "(the box says everything)"
+- **Say:** "Why can't I vote on more than one thing? Go on, say it out loud. It's a very good question and nobody has ever answered it."
+- **Source:** framing, no fact. UK ballot is one cross for one candidate (common knowledge).
+
+### 2 · meme · 8s
+- **Visual:** a job-application style "profile card" for Mel: smiling headshot-style picture of Mel, mug, dog. Fields filled in as jokes.
+- **On-screen:** "MEET MEL. Likes: buses that turn up. Bins that get emptied. Bills that make sense. Gets: 1 cross. Every 5 years."
+- **Say:** "This is Mel. Mel has views on buses, bins and bills. Mel gets one cross, every five years, to cover all of them. We'll be following Mel."
+- **Source:** framing. "every 5 years" = the five-year maximum between general elections (CHECK: Parliament's five-year limit, Dissolution and Calling of Parliament Act 2022; no repo file covers it, verify on parliament.uk before printing "5").
+
+### 3 · diagram (three.js) · 18s
+- **Visual:** a horizontal timeline that scrolls left to right, one marker landing every beat. Markers: 1265 Parliament; 1832 Great Reform Act; 1872 secret ballot; Dec 1878 first public Swan lamp; 1879 Edison's lamp; 2007 smartphone. A glowing bulb lights up at 1878-79, then the camera pulls back to show the first three markers sitting to its left. Phone appears at the far right.
+- **On-screen:** "OLDER THAN THE LIGHT BULB" with the markers carrying only year plus a two-word label.
+- **Say:** "Parliament is from the 1200s. The Reform Act is 1832. We voted out loud, in public, until the secret ballot in 1872. The light bulb turned up in 1878. So the way we pick a government is older than the light bulb. Your phone is nineteen."
+- **Source:** research/15-before-electricity.md timeline. 1265: https://www.parliament.uk/demontfort/ (P) and https://en.wikipedia.org/wiki/Simon_de_Montfort%27s_Parliament (S). 1832 and 1872: https://en.wikipedia.org/wiki/Reform_Acts (S). Swan Dec 1878 / Edison 1879: https://gracesguide.co.uk/Electric_Lighting (S). iPhone 2007 [GK, verify]. Wording rule from 15: "older than the light bulb" is about Parliament, the Reform Act and the secret ballot only. Do NOT say "before electricity" (false: Faraday 1831) and do NOT put the 1885 single-seat map on the "older than" side (it is after the bulb). Say "1200s" and "over 150 years", never "760" (the "first parliament" label is contested; critique 5).
+
+### 4 · meme · 9s
+- **Visual:** two-panel "then / now". Top panel: a crowd at an open public vote, a person on a platform calling out names, everyone watching each other. Bottom panel: Mel alone in a booth with a pencil and a folded paper. (Use a public-domain pre-1900 engraving of a hustings for the top panel if a clean file is found and its licence checked, otherwise an original image.)
+- **On-screen:** top "VOTING, 1871: SHOUT IT OUT, EVERYONE WATCHING" / bottom "VOTING, 1872: THE SECRET BALLOT (the big update)"
+- **Say:** "Before 1872 you voted out loud, with everybody watching. The secret ballot was the big update. Version two. We've been on it ever since."
+- **Source:** https://en.wikipedia.org/wiki/Reform_Acts (S) for Ballot Act 1872. "Out loud, with everybody watching": open voting at the hustings is [GK], verify wording against Commons Library "History of the parliamentary franchise" (not yet opened). Note: do NOT add "with your boss watching" (not sourced).
+
+### 5 · meme · 8s
+- **Visual:** a software "release notes" screen (generic, no real brand, no GOV.UK look) on Mel's phone, Mel looking at it over the mug. A plain generic app window, not a government page.
+- **On-screen:** "GOVERNMENT v1832 . Patches: 1.9 (1928) . Known issues: all of them . Next update: whenever, five years max"
+- **Say:** "Version 1832. Last big patch, 1928. Known issues: all of them. Somebody was meant to ship the next one. Nobody did."
+- **Source:** research/15 "version-number joke" (v1832, patched 1.9 in 1928). 1928 Equal Franchise Act: https://en.wikipedia.org/wiki/Reform_Acts (S). This is the deck's ONE "slow updates" joke. Target is whoever never shipped the patch (decision-makers), not the system, not voters.
+
+### 6 · meme · 9s
+- **Visual:** split screen, "bank" vs "ballot". Left: Mel's phone showing a bank app asking Mel to prove it's them (face scan, code, fingerprint) to move a small sum. Right: Mel with a ballot paper and a pencil, one cross.
+- **On-screen:** left "BANK: PROVE IT'S YOU TO MOVE £50" / right "COUNTRY: ONE CROSS. SEE YOU IN 2029."
+- **Say:** "Your bank asks you to prove who you are to move fifty quid. The country asks for one cross, once, and then goes quiet for five years. You're the sane one in this picture."
+- **Source:** framing from research/21-ai-voting-hook.md ("framing only, no stat"). The invented "10 questions" and "14 questions" of earlier drafts are NOT used (critique 5). "£50" is illustrative. "2029" is the latest date for the next general election (CHECK, see slide 2).
+
+### 7 · title · 8s
+- **Visual:** the words FUTURE PROOF full frame. Mel small in a corner, mug in hand, looking at the title.
+- **On-screen:** "FUTURE PROOF" / "three ideas from software that politics never installed"
+- **Say:** "Future Proof. Three ideas from software that politics never installed. Ten minutes. Bring your own opinions."
+- **Source:** canon framing, research/01-canon.md (the three tenets). No look chosen here.
+
+### PILLAR 1: COMPOSITION OVER INHERITANCE (8-17)
+*Plain version: vote on things one at a time instead of buying a party bundle.*
+
+### 8 · meme · 10s
+- **Visual:** a till receipt, longer than Mel is tall, held up by Mel in the shop. Lines like: "Housing (wanted)", "Bus route (wanted)", "Thing you hate x6", "Thing you can't stand x3" and a total line.
+- **On-screen:** header "PARTY MEAL DEAL, 5-YEAR" / footer "TOTAL: YOUR WHOLE SAY. NO REFUNDS. CAN'T TAKE THE PICKLES OFF."
+- **Say:** "You can't take the pickles off. You wanted the sandwich. The meal deal came with crisps you hate and a drink you can't stand. And the meal deal has never once asked what you wanted."
+- **Source:** research/12-pillar1-memes.md concept 1 (The Till) and concept 5 (Meal Deal). Analogy only, no stat.
+
+### 9 · meme · 9s
+- **Visual:** a fake "Choose your package" screen of a generic cable provider: two big tiles, "Package A" and "Package B", each a long list of bundled items, one of which Mel circled in the corner. A "Cancel: 60 months" line at the bottom.
+- **On-screen:** "PACKAGE A: Tax + Water + Schools + Border + 396 more. PACKAGE B: [the same 400, different ones]. CANCEL ANYTIME* (*five years)"
+- **Say:** "You'd never accept this from a telly provider. Four hundred channels, you watch three, and you can't cancel for five years."
+- **Source:** research/12 analogy bank (Sky bundle, "best opener"). "400" is a joke number, not a stat: the line says "channels" not "policies". Generic provider, no brand.
+
+### 10 · meme · 9s
+- **Visual:** two-buttons layout, original: two big red buttons on a desk. Each button is a huge cardboard crate stamped "WHOLE BUNDLE". Mel's hand rests between them, perfectly calm, one eyebrow raised. Above each crate a label: the one thing Mel wants, and a small "+ 40 others" tag.
+- **On-screen:** "BOTH BUTTONS COME WITH THE CRATE"
+- **Say:** "Two buttons. Each one is a crate. Somebody designed it that way, and it wasn't Mel."
+- **Source:** layout from research/12 (Two Buttons, "best fit"), re-made with an original picture. Butt of the joke moved from the sweating voter to the crate (critique 7).
+
+### 11 · diagram (three.js) · 18s
+- **Visual:** one solid slab labelled "PARTY" sits in the middle. Slow crack, then it falls apart into labelled bricks: "Buses", "Bins", "Bills", "Housing", "Schools", "Water". On the right the same bricks are lifted one at a time and placed onto a plain base by Mel's cursor. Only two labels per phase on screen.
+- **On-screen:** "A PARTY IS A SLAB. AN ISSUE IS A BRICK." small: "software calls it composition over inheritance"
+- **Say:** "Software people have a name for this. Composition over inheritance. The slab is what you inherit: all of it, whatever's inside. Bricks are what you choose. We keep handing out slabs."
+- **Source:** canon pillar 1, research/01-canon.md; research/12 concept 9 for the "bundling" idea (named concept: https://en.wikipedia.org/wiki/Bundling_(public_choice), S). Keep jargon as a caption AFTER the picture, never the setup (research/04 DON'T 12).
+
+### 12 · meme · 8s
+- **Visual:** two-panel no/yes layout with original characters: top panel Mel in front of a giant vinyl record labelled "ONE ALBUM, PRESSED EVERY 5 YEARS" with Mel shaking head; bottom panel Mel with phone, tapping a single song, nodding.
+- **On-screen:** top "ONE VOTE. 400 PROMISES. 5 YEARS." / bottom "ONE VOTE PER ISSUE. ANY WEEK."
+- **Say:** "Music let you stop buying the album. Politics still sells you the album, pressed once, every five years."
+- **Source:** research/12 analogy bank 2 (streaming vs the album). "Drake" is a layout only; no name, no pose (critique 10).
+
+### 13 · diagram (three.js) · 20s
+- **Visual:** five people at a pub table (Mel is one), a pint each, glowing "Sun party" and "Moon party" beer mats. Three policy cards float above: "Policy 1", "Policy 2", "Policy 3" (Sun party's three policies). Phase 1, "Vote on each policy": each card gets a red 3-2 against. Phase 2, "Vote for a party": all five slide into party stacks and Sun party wins 3-2. Voters keep their opinions, just the ballot changes.
+- **On-screen:** phase 1 "EVERY POLICY LOSES 3-2." phase 2 "THE PARTY THAT OFFERS ALL THREE WINS 3-2." tag "same five people. same opinions."
+- **Say:** "Five people in a pub. The Sun party offers three policies. Take them one at a time, and every single one loses, three to two. Vote for the party and the Sun party wins, three to two. Same people. Same opinions. Only the ballot changed."
+- **Source:** worked example is OURS (checked by hand: three Sun voters each like exactly two of the three policies and dislike a different one; two Moon voters dislike all three; so each policy loses 3-2 while the party wins 3-2). The paradox is the Ostrogorski paradox: https://www.newamerica.org/insights/the-paradoxical-reason-republicans-win-elections-despite-unpopular-policies/ (S), and bundled vs issue-by-issue giving opposite results: https://arxiv.org/abs/2307.11873v1 (preprint, summary only read). No real parties, no real policies, three people in a pub (critique 7 fix: tiny, concrete, local; no bar charts of abstract voters). Party names are neutral invented objects (sun/moon).
+
+### 14 · meme · 8s
+- **Visual:** Mel in the polling booth. A speech bubble from the ballot box: "YOU VOTED FOR ALL OF IT." Mel's thought bubble: a bus.
+- **On-screen:** box "YOU VOTED FOR ALL OF IT." / Mel "I VOTED FOR THE BUS."
+- **Say:** "You vote for the bus. The box hears 'all of it'. Nobody asked the box to do that. Somebody built it that way."
+- **Source:** lands the slide 13 mechanism; no fact. The decision-maker is the designer of the ballot (research/12 voice notes: "whoever designed the ballot").
+
+### 15 · meme · 7s
+- **Visual:** a ballot paper with several separate boxes, each beside a plain one-line question, each with a pencil tick. No flag, no country, no results shown. Mel holds it up, impressed.
+- **On-screen:** "A BALLOT WITH SEVERAL BOXES." small "(tick each one)"
+- **Say:** "A ballot with more than one box. Some places have managed it. The pencils held up fine."
+- **Source:** a visual only (critique 2). Basis: Switzerland votes issue by issue, https://www.admin.ch/gov/en/start/documentation/votes.html (S via search; research/11). Do NOT print "332", do NOT name a result, do NOT say "referendum" on the slide. Q&A answer is appendix A1.
+
+### 16 · meme · 9s
+- **Visual:** a small-town welcome sign, fields behind, with an extra sign underneath: "NO PARTY WHIP. HERE IT'S JUST THE VOTES." Mel's dog sniffing the sign.
+- **On-screen:** "FROME, SOMERSET: A TOWN COUNCIL WITH NO PARTY WHIP" / "ask: how's the bin collection? (still happening.)"
+- **Say:** "Frome, in Somerset. No party whip on the town council. They just vote on each thing, on its merits. The roads are still there."
+- **Source:** explore-directory.md #4. https://en.wikipedia.org/wiki/Independents_for_Frome (S, Wikipedia only; group's own site unchecked). Fact to keep: independents have run the council since 2011 (10 of 17 seats in 2011, all 17 in 2015, 2019, 2022). Town-council power only; do not oversell. Critique: not left-coded.
+
+### 17 · meme · 8s
+- **Visual:** a pizza split into two halves, one half pineapple-free, one half the other thing, a delighted Mel with a slice of each. A small "ALLOWED" stamp.
+- **On-screen:** "HALF AND HALF IS ALLOWED ON A PIZZA." / "ASK FOR IT ON A COUNTRY."
+- **Say:** "You can order a pizza half and half. A country, apparently, is a set menu. Composition. It's pizza."
+- **Source:** research/12 analogy bank (set menu vs a la carte). Closes Pillar 1 on the "bricks" idea with a joke so the jargon is paid off.
+
+### PILLAR 2: CONTINUOUS INTEGRATION (18-25)
+*Plain version: change things in small pieces, check each one, keep an undo.*
+
+### 18 · meme · 9s
+- **Visual:** a presenter at a lectern pointing at a tiny model village labelled "PILOT: 12 HOUSEHOLDS". Behind the presenter the real town, huge, with a banner "LIVE: ALL OF YOU". Mel at the back with a mug, quietly writing "who measures this?" on a notepad.
+- **On-screen:** "WORKED IN THE BRIEFING. NOW IT'S LIVE. ON YOU."
+- **Say:** "It worked in the briefing room. Now it's live, on all of us, and nobody wrote down how we'd know."
+- **Source:** research/13-pillar2-ci.md concept 3 ("Works on my machine"). Generic presenter, no real minister, no real policy named.
+
+### 19 · diagram (three.js) · 18s
+- **Visual:** two construction scenes side by side. LEFT: a tower of bricks assembled one brick at a time; each brick, as it lands, lights a green tick; one brick lights red, and a big curved "revert" arm lifts it off cleanly while the tower stays standing. RIGHT: a crane lowers one huge monolith, whole, from a height; no ticks anywhere; a small caption "five years of building". Both loop once.
+- **On-screen:** left "SMALL. CHECKED. UNDOABLE." right "ONE DROP. NO TICKS."
+- **Say:** "This is the idea from software. Small pieces. Check each one. A big undo button. It isn't move fast and break things. It's move small, check, and be able to take it back. Politics does the other thing: it drops the whole tower at once, and keeps the receipt in a drawer."
+- **Source:** research/13 section 1 ("the green tick": nothing goes live unless the check passes; rolled back in minutes; "government has no green tick and no undo button"). Do NOT cite a deploy rate (the "100,000 a day" claim is unsourced; the only sourced figure is "every 11.6 seconds", 2011 talk, secondary: https://www.slideshare.net/slideshow/light-talk-meet-up-jenkinsbr-2013-jenkins-alm-da-integrao-contnua-prticas-de-devops/29049214). Trap guard: the voiceover says "not move fast and break things" aloud.
+
+### 20 · meme · 8s
+- **Visual:** a keyboard with the Ctrl and Z keys glowing, a huge statute book on the desk, the book's cover a clean sticky note "UNDO?". A second panel: the same book with a sticky note "WE'LL LOOK INTO IT".
+- **On-screen:** "EVERY APP YOU OWN HAS UNDO." / "THE LAW: 'WE'LL REVIEW IT IN 3-5 YEARS.'"
+- **Say:** "Every app on your phone has undo. A law gets a review, three to five years later, if someone remembers."
+- **Source:** research/13 section 3: since 2008 Acts are normally meant to be reviewed 3-5 years after enactment (Cabinet Manual), https://www.wfd.org/what-we-do/resources/post-legislative-scrutiny-uk-parliament (S). "If someone remembers" is the joke; the next slide carries the sourced fact.
+
+### 21 · meme · 9s
+- **Visual:** a filing cabinet in an empty corridor, the top drawer labelled "DID THIS LAW WORK?", the drawer open, one lonely paperclip inside. Mel looks into it with the dog.
+- **On-screen:** "NOBODY KEEPS THE COUNT." small "(Lords written answer: no central record of reviews)"
+- **Say:** "A written answer in the Lords says there's no central record of how many of those reviews departments even do. I'm not saying none. I'm saying nobody's counting."
+- **Source:** research/13 section 3: https://parallelparliament.co.uk/question/HL2377/legislation-parliamentary-scrutiny (Hansard mirror, P-ish). Do NOT assert a count of unreviewed Acts (none found). Decision-maker named: "departments".
+
+### 22 · meme · 11s
+- **Visual:** a calendar strip, 1989 to 1993, with a map of Scotland's outline highlighted at 1989 and a big red "REVERT" button pressed at 1991, then a new sign "COUNCIL TAX 1993". Mel checks the date on a bus shelter poster.
+- **On-screen:** "SCOTLAND, 1989: WENT FIRST. NO STOP RULE WE CAN FIND. SCRAPPING ANNOUNCED 1991. REPLACED 1993."
+- **Say:** "The poll tax. Scotland went first, in 1989, a year ahead of England and Wales. Abolition announced in 1991. Council tax in 1993. The people who set it up had to clear it up, and we can find no written number that would have made it stop."
+- **Source:** research/13 section 3: https://en.wikipedia.org/wiki/Poll_tax_(Great_Britain) (S, Wikipedia only; CHECK against a primary before print). Dates from the file: Scotland 1 April 1989, abolition announced 21 March 1991, Council Tax from 1993. "Went first" not "pilot" (it was phased, not formally a pilot). Non-partisan: names who set it up and scrapped it (one government), not a party. "Nobody had written down what number would make it stop" is an inference: soften to "no stop rule that we can find" if a primary disagrees.
+
+### 23 · meme · 9s
+- **Visual:** a bug-tracker screen (generic) with a ticket: "BUG: raw sewage on the beach. STATUS: open. OPENED: years ago. ASSIGNED TO: ???". Mel, standing on a beach with the dog, holding up the phone with the ticket on it.
+- **On-screen:** "ASSIGNED TO: ???"
+- **Say:** "Every bug tracker has an 'assigned to' box. Here it says: ask the regulator, ask the owners, ask the minister. Three names and no owner."
+- **Source:** research/20-uk-audience.md: sewage a high priority for 73% of Reform voters and 75% of Green voters, https://www.newstatesman.com/politics/uk-politics/2025/07/i-blame-maggie-how-sewage-radicalised-england (S, snippet level, not for the slide itself). **CONDITIONAL:** keep only if the "who is assigned" names (the regulator, the owners, the ministers who set the rules) are checked against a primary and named by act; otherwise cut (critique 6). Ends into slide 24/25's fix. If cut, the deck loses nothing structural.
+
+### 24 · meme · 9s
+- **Visual:** two doors in a hall. Door one, "SANDBOX: NEW MONEY APPS", a cheerful testing room with a "test here first" banner. Door two, "BUS TIMETABLE", no room, just a long drop. Mel peering through the keyhole of the second.
+- **On-screen:** "NEW MONEY APPS GET A SAFE SANDBOX." / "THE BUS TIMETABLE GETS PRODUCTION."
+- **Say:** "The financial regulator gives new money apps a safe place to test before launch. Nobody offered one to the bus timetable."
+- **Source:** research/13 section 3: FCA regulatory sandbox, announced Nov 2015, first cohort 7 Nov 2016, https://www.crowdfundinsider.com/2016/11/92162-first-class-fca-reveals-24-fintech-firms-accepted-regulatory-sandbox/ (S); year-one report https://fca.org.uk/news/press-releases/financial-conduct-authority-outlines-lessons-learned-year-one-its-regulatory-sandbox (P-derived). Do NOT say "world first" (FCA's own unverified claim). "Bus timetable" is a joke, not a claim that no bus is tested.
+
+### 25 · meme · 8s
+- **Visual:** a plain card, three short lines, Mel nodding in the corner holding a thumbs-up mug. Nothing else on screen.
+- **On-screen:** "CHANGE SMALL." / "CHECK IT." / "KEEP AN UNDO."
+- **Say:** "That's it. Change small. Check it. Keep an undo. Software worked this out decades ago. We're allowed to ask for it."
+- **Source:** canon framing, research/01-canon.md. This is the straight "care re-aim" beat after the Pillar 2 diagnosis jokes (voice.md: sarcasm carries the diagnosis, care carries the re-aim).
+
+### PILLAR 3: DATA-DRIVEN (26-38)
+*Plain version: no policy without its experiment, and a number that says stop.*
+
+### 26 · meme · 9s
+- **Visual:** two-panel no/yes. Top: a pill bottle with a thick paper trail behind it, a "CONTROL GROUP" sign, calendar pages flying. Bottom: a megaphone and a banner "IT'LL WORK, TRUST US" over a country map.
+- **On-screen:** top "A PILL: YEARS OF TRIALS, A CONTROL GROUP." / bottom "A POLICY: A CONFIDENT ANNOUNCEMENT."
+- **Say:** "A pill gets years of trials before it's on your bathroom shelf. A policy gets a confident announcement."
+- **Source:** "Test, Learn, Adapt" (Cabinet Office / Behavioural Insights Team, 2012): RCTs are routine in medicine, rare in domestic policy. https://www.gov.uk/government/publications/test-learn-adapt-developing-public-policy-with-randomised-controlled-trials (P). The invented "500 people" of v1 is dropped (critique 5). Layout only, no Drake.
+
+### 27 · diagram (three.js) · 16s
+- **Visual:** two envelopes fan out. A bar chart appears with two bars: left "plain letter" at 67.5%, right "the postcode line" at 79%, rising together. A small tag on the tall bar: "most people in your postcode have already paid".
+- **On-screen:** "SAME LETTER, ONE EXTRA LINE: 67.5% → 79% PAID." small "HMRC, overdue tax"
+- **Say:** "HMRC tried different versions of one letter on people who owed tax, and measured which got paid. The plain letter: sixty-seven and a half percent. Add the line saying most people in your postcode had already paid: seventy-nine. Nobody passed a law. They tested a sentence."
+- **Source:** research/14-pillar3-data.md: control 67.5%, national-norm line 72.5%, postcode-norm line 79.0%; 11 variants. https://thedecisionlab.com/intervention/how-normative-messaging-increased-tax-compliance-by-15 (S); https://blogs.worldbank.org/voices/ongoing-impact-nudging-people-pay-their-taxes (S); primary is Hallsworth, List, Metcalfe, Vlaev (not yet read). FACT-CHECK 2026-11-05: the Decision Lab page reports only THREE message variants vs control (national 72.5%, postcode 79%, town 83%), not eleven, and town (83%) beat postcode; the World Bank blog gives no rates and names the Behavioural Insights Team. So the slide no longer says "eleven" or "best of"; it states only the confirmed control and postcode figures. Say "one extra line", it is accurate for that comparison. Sample sizes differ by summary (200k+ vs 140k): do NOT print one. The "~£160m in six weeks" is an estimate: not on the slide.
+
+### 28 · meme · 11s
+- **Visual:** a "reasonable-sounding idea" stamp in green over a group of teenagers on a coach heading to a prison gate. Second panel: the same stamp, now a red "RESULT: MORE OFFENDING." Mel is not in this slide (a history one-off).
+- **On-screen:** "SOUNDED GREAT." / "RESULT: MORE REOFFENDING." / "COMMON SENSE IS A HYPOTHESIS."
+- **Say:** "Scared Straight. Take teenagers to meet prisoners, frighten them off crime. Plenty of people were sure it would work. A review of nine controlled trials found it made reoffending worse. Common sense is a hypothesis, not a result. Tests kill good-sounding ideas from every side."
+- **Source:** research/14: Campbell systematic review (Petrosino et al. 2013), 9 randomised studies, 946 youths, programmes "likely to have a harmful effect": https://ideas.repec.org/a/wly/camsys/v9y2013i1p1-55.html (P, abstract). Name the "everybody": the programme designers and the officials who ran it (the "1970s" date is unsourced in research and was removed in fact-check; critique 11). The closing sentence keeps the "tough on crime" viewer on side: the test is neutral.
+
+### 29 · meme · 10s
+- **Visual:** a dashboard screen showing "99% TURNED AROUND" next to a stack of paper labelled "INDEPENDENT EVALUATION". The independent paper is stamped "NO CONSISTENT IMPACT FOUND". A scales icon with "COUNTED" on one pan and "MEASURED" on the other. Mel's mug on the desk between them.
+- **On-screen:** "COUNTED SUCCESS vs MEASURED SUCCESS"
+- **Say:** "A government department counted ninety-nine percent of a hundred and twenty thousand families as turned around. The independent evaluation found no consistent impact. One counted. One measured. They're not the same sum."
+- **Source:** research/14: Troubled Families 2015 claim (~99% of ~120,000 "turned around") vs NIESR independent evaluation Oct 2016, https://www.niesr.ac.uk/?p=37705 (S); https://www.publicsectorexecutive.com/News/misleading-to-claim-troubled-families-programme-worked/159623 (S). NIESR says the two figures measure different things (payment-by-results counts vs attributable impact): so "counted vs measured", never "lied". Name the actor: "a government department" (critique 5); no party named. Avoid "marked its own homework".
+
+### 30 · meme · 11s
+- **Visual:** a rubber stamp reading "THE COMPUTER IS PRESUMED TO BE RIGHT" coming down on a stack of paperwork. In the background a small figure at a counter, sketched with dignity, holding a document. No joke at the figure's expense. A single label on the stamp handle: "NO TEST ATTACHED".
+- **On-screen:** "WHO DECIDED A COMPUTER SHOULD BE PRESUMED RIGHT? WHAT TEST DID IT PASS?"
+- **Say:** "Since the year 2000, English law has presumed a computer is working properly unless you can prove it isn't. Hundreds of sub-postmasters were prosecuted by the Post Office. Somebody decided that rule. It never had a test. I'd like one."
+- **Source:** research/13 section 3: https://www.gov.uk/government/news/use-of-computer-evidence-in-court-to-be-interrogated (P); https://www.benthamsgaze.org/2022/06/30/the-legal-rule-that-computers-are-presumed-to-be-operating-correctly-unforeseen-and-unjust-consequences/ (S). FACT-CHECK: the 736 / "over 15 years" figure is NOT on either fetched page (gov.uk says "hundreds" wrongly convicted; Bentham's Gaze says "hundreds" prosecuted from 1999). Slide now says "hundreds". Re-add 736 only after a primary (Post Office Horizon inquiry) is read. This is the AI-hook slide (critique 12): the decision-maker is the rule's authors and the prosecutor, not "AI". The punchline is the missing check, never the victims (research/13 traps). No welfare-algorithm claim is made: none was researched.
+
+### 31 · meme · 9s
+- **Visual:** a food-nutrition-style label stuck on a government leaflet. The label has three boxes: "WHAT WE'RE TESTING: ____", "WHO GETS IT FIRST: ____", "WHAT NUMBER MEANS STOP: ____". The boxes empty. Mel holding the leaflet at arm's length.
+- **On-screen:** "HOW WE'LL KNOW" with the three boxes.
+- **Say:** "Every policy gets a label. What we're testing. Who gets it first. What number means stop. If it can't fill in the label, it isn't ready."
+- **Source:** research/14 concept 8 ("peer review for press releases", the reusable "How we'll know" label). Layout only; the one reusable device of the deck, used on slides 31, 33 and 56.
+
+### 32 · diagram (three.js) · 18s
+- **Visual:** two identical towns side by side, each with a bus route. One town glows "TRIAL"; its bus timetable changes. A big lever for "ALL 40 TOWNS" sits locked in the middle. A number ticks up beside the trial town, a green band "GO" and a red band "STOP". The lever stays locked until the number crosses the green band; a second run shows the number falling into the red band and the lever dropping away.
+- **On-screen:** "NO POLICY WITHOUT ITS EXPERIMENT." small "lever unlocks only when the number says go"
+- **Say:** "Two towns, alike as peas. One gets the new bus timetable first. The lever for the other forty stays locked until the number says go. If the number says stop, we stop, and nobody is embarrassed. That's the whole trick."
+- **Source:** canon pillar 3 and honest-framing rules, research/14 (hero is the method, not the policy; tests can kill policies anyone loves). Neutral topic on purpose (a bus timetable).
+
+### 33 · meme · 9s
+- **Visual:** Mel at the bus stop reading an official notice pinned up: "YOUR TOWN IS THE TRIAL. WHAT WE'RE MEASURING. THE NUMBER THAT MEANS STOP. THE DATE THIS ENDS." The "How we'll know" label from slide 31 is printed on it. Mel gives the notice a small, satisfied nod.
+- **On-screen:** "RULE ONE: MEL IS TOLD."
+- **Say:** "Rule one: Mel is told. If your town is the trial, there's a notice, a number, and a date it ends. Not a secret experiment. A public one."
+- **Source:** research/14 notes: "the data says" can sound like technocrats overriding the reader: pair with a person's consequence and make it public. Answers critique 1 (a person runs through all three pillars).
+
+### 34 · meme · 8s
+- **Visual:** a set of weighing scales, "EXPERIMENT" on one side, "JUDGEMENT" on the other, a hand-drawn "BOTH" in the middle. Mel on a stool adjusting it with a screwdriver.
+- **On-screen:** "SOME THINGS YOU JUST HAVE TO DECIDE."
+- **Say:** "Some decisions aren't experiments. They stay with people who have to look us in the eye. This is for the thousand small things nobody ever measured."
+- **Source:** canon caveat (future-proof.md via research/14: "not everything reduces to an experiment; judgement calls and diplomacy stay human"). An honest aside that buys trust.
+
+### 35 · diagram (three.js) · 16s
+- **Visual:** a street with a brightly painted suggestion box on the left and a big plain building ("DECISION") on the right. A pipe runs from the box towards the building and stops in mid-air with a gap. Two gauges on the pipe: "10,000 signatures: a reply" and "100,000: considered for debate". Ideas flow in, spill out of the pipe end onto the pavement.
+- **On-screen:** "A SUGGESTION BOX WITH NO WIRE." small "10,000 = a reply. 100,000 = considered for debate."
+- **Say:** "Petitions do get a reply at ten thousand signatures, and they're considered for a debate at a hundred thousand. The reply can still be no. The ideas go in. There's no wire to the decision. That's the gap."
+- **Source:** research/21: petition thresholds https://petition.parliament.uk/help and https://guidetoprocedure.parliament.uk/articles/7KsdfkXF (P). Worked example (the "make lying in Parliament illegal" petition, govt response "does not intend to introduce legislation"): https://www.bigissue.com/latest/petition-to-make-lying-in-parliament-illegal-could-get-mps-debate (S). "Considered" not "debated automatically". Not a swipe at anyone: it names a missing wire.
+
+### 36 · meme · 7s
+- **Visual:** an email on Mel's phone, generic inbox, a polite auto-reply. Mel's dog eating a letter, innocently.
+- **On-screen:** "THANK YOU FOR YOUR IDEA. IT HAS BEEN NOTED. STATUS: NO."
+- **Say:** "Thank you for your idea. It has been noted. Noted is where ideas go to retire."
+- **Source:** joke over slide 35's gap, no fact. Generic, no real department's inbox.
+
+### 37 · diagram (three.js) · 18s
+- **Visual:** a big field of small coloured dots, each one a grumble. The dots drift and clump into four clusters (the camps). Between the clusters, a glowing band forms and brightens: "WHERE WE AGREE". The clusters pull slightly towards the band; two of the camps merge. A label "NO WINNER, NO ALGORITHM CHOOSING".
+- **On-screen:** "MAPS OF AGREEMENT, NOT A WINNER."
+- **Say:** "Imagine every grumble sorted into the views people actually hold, with the ground they share lit up. A tool called Pol.is did a version of this in Taiwan, over Uber: four camps on the argument collapsed to two, and the process produced a shared agenda for the government to answer. The machine's job is to show the disagreement. Never to settle it."
+- **Source:** research/21: https://scrapbox.io/nishio-en/How_the_discussion_on_Uber_has_evolved_in_vTaiwan (S/H, figures self-reported); https://eprints.soton.ac.uk/496942/1/Sorting_a_Public_2023_AAM.docx (confirms two-group sorting). Do NOT print participant counts (3,000 / 4,000 / 1,875 conflict, research/11, research/21). Say "camps" and "a shared agenda for the government to answer" only. FACT-CHECK: the Nishio page confirms four groups merging into two but does NOT say what the government did with the result; the vTaiwan promise is to reflect consensus in the assembly or explain why not. Pairs an awe slide after the grumbles (research/04 DO 9). AI is a summariser of disagreement, never a decider (research/21).
+
+### 38 · meme · 8s
+- **Visual:** a table with a laptop on it and a person next to it signing a paper with a plain visible name tag (any invented name). A sign above: "THE MACHINE SUMMARISES. A NAMED PERSON SIGNS." Mel across the table, arms folded, satisfied.
+- **On-screen:** "THE MACHINE SUMMARISES. A NAMED PERSON SIGNS."
+- **Say:** "A computer can summarise a million opinions. A named person signs the decision. If you can't find the name, the answer is no."
+- **Source:** research/21: pitch AI as a summariser of disagreement, "name who owns and audits the model, or it is 'the machine decides' and feeds the wrong fear" (the-reader.md via research/04). Habermas Machine and Collective Constitutional AI are small and early (https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input, P): not cited on the slide.
+
+### CLOSE: SEND THEM OUT (39-58)
+
+### 39 · meme · 9s
+- **Visual:** Mel at the end of a long corridor of fifteen open doors, each with a different hand-painted sign, light spilling out, the dog already running through one.
+- **On-screen:** "YOU ARE NOT THE FIRST."
+- **Say:** "Here's the good news. You're not the first. People are already trying this, in town halls and on websites, mostly for free. Here's a fast tour. Pause the video, open a tab, pick one."
+- **Source:** explore-directory.md header ("others already trying"). All URLs below checked live 2026-11-05 per that file.
+
+### MONTAGE: "OTHER PEOPLE ARE ALREADY RETHINKING THIS" (40-54), 5s each
+Format: meme per project, one picture of our own per slide (no logos, no real people), project name and URL as plain text, one short line. Order: the directory's order, with small-ideas.org as one ordinary stop among the fifteen. Mel pops into the corner of each.
+
+### 40 · meme · 5s
+- **Visual:** Mel spreading a handful of play-money tokens across ten jars.
+- **On-screen:** "RADICALXCHANGE . radicalxchange.org"
+- **Say:** "Spend your votes like a budget. RadicalxChange."
+- **Source:** explore-directory.md #1; https://www.radicalxchange.org. Caution: US-centred, founder-led, crypto-adjacent: keep to the voting idea; Edinburgh 2027 event (3 Nov 2026 post).
+
+### 41 · meme · 5s
+- **Visual:** a jury-summons envelope addressed "RE: YOUR BIN COLLECTION".
+- **On-screen:** "SORTITION FOUNDATION . sortitionfoundation.org"
+- **Say:** "Jury service, but for the bin collection. Sortition Foundation."
+- **Source:** explore-directory.md #2; https://www.sortitionfoundation.org. Caution: you cannot self-apply, you only get in if invited: say "go and read how".
+
+### 42 · meme · 5s
+- **Visual:** a folding table in a village hall with a ballot box on it and a bag labelled "COUNCIL MONEY".
+- **On-screen:** "PB SCOTLAND . pbscotland.scot"
+- **Say:** "A village hall, a ballot box and the council's actual money. PB Scotland."
+- **Source:** explore-directory.md #3; https://pbscotland.scot. Dates on the site conflict slightly: no exact dates on stage.
+
+### 43 · meme · 5s
+- **Visual:** a self-assembly flat-pack box labelled "DEMOCRACY" with an Allen key and a half-built council chamber.
+- **On-screen:** "FLATPACK DEMOCRACY . en.wikipedia.org/wiki/Independents_for_Frome"
+- **Say:** "A DIY guide to a town with no party whip. Flatpack Democracy."
+- **Source:** explore-directory.md #4. Book Flatpack Democracy (2014, 2.0 in 2019). Wikipedia link only (group site unchecked). Not a repeat of slide 16's joke: this is "read the guide".
+
+### 44 · meme · 5s
+- **Visual:** a suggestion box with a plug and a cable, plugged into a city hall.
+- **On-screen:** "CONSUL . consuldemocracy.org"
+- **Say:** "Free software cities use for proposals and budget votes. Your council could copy it. CONSUL."
+- **Source:** explore-directory.md #5; https://consuldemocracy.org. Use "250+ cities and organisations" (site's own figure) if a number is spoken.
+
+### 45 · meme · 5s
+- **Visual:** a pothole with a little bug-report flag planted in it and a "FIXED" sticker on the next one.
+- **On-screen:** "FIXMYSTREET . fixmystreet.com"
+- **Say:** "Somebody finally gave the country a bug tracker. Turns out the bug is the pothole."
+- **Source:** explore-directory.md #6; https://www.fixmystreet.com/ (site's own counts on 5 Nov 2026: 22,068 reports past week, 54,285 fixed past month: say "tens of thousands a week"). mySociety is the umbrella: https://www.mysociety.org/.
+
+### 46 · meme · 5s
+- **Visual:** a "new pull request" screen with the reviewer slot filled by a rosette and a house icon.
+- **On-screen:** "WRITETOTHEM . writetothem.com"
+- **Say:** "A pull request to your MP. One box. Please read the contributing guide."
+- **Source:** explore-directory.md #7; https://www.writetothem.com/ (no dates on page, loads and works).
+
+### 47 · meme · 5s
+- **Visual:** a suggestion drop-box with a paper slip in Mel's hand labelled "one small fix".
+- **On-screen:** "SMALL-IDEAS.ORG . small-ideas.org  [VERIFY FIRST]"
+- **Say:** "Small ideas dot org. Ordinary people sending in the small fixes they want. Add yours."
+- **Source:** research/20-uk-audience.md: submissions open until 12 Nov (2026), 50 picked by a cross-party panel and developed into proposals; MoneySavingExpert tip 13 Oct 2026, snippet only: https://www.moneysavingexpert.com/tips/2026/10/13 (S). Also research/10-small-ideas.md. **GATE:** nothing on this slide until Kai has opened the live site, confirmed who runs it, how it ends and the year. It is one of fifteen, given the same five seconds as the rest. No Lewis face, logo or colours; credit it, don't claim it. If unverified, the montage runs 14 and this slot is cut.
+
+### 48 · meme · 5s
+- **Visual:** a group of people round a table with a laptop, one of them holding a "PROPOSAL" card, hands raised, a gentle "AGREED" tick.
+- **On-screen:** "LOOMIO . loomio.com"
+- **Say:** "Decide one thing properly, as a group. Built by a worker-owned co-op. Loomio."
+- **Source:** explore-directory.md #8; https://www.loomio.com. Caution: case studies include NYC-DSA: present as a tool, not a movement.
+
+### 49 · meme · 5s
+- **Visual:** a thick set of terms-and-conditions pages with a yellow highlighter running through them held by Mel.
+- **On-screen:** "THEYWORKFORYOU . theyworkforyou.com"
+- **Say:** "How your MP actually voted, issue by issue. It's the small print, with someone else having read it."
+- **Source:** explore-directory.md #9; https://www.theyworkforyou.com/ (Commons divisions dated 4 Nov 2026; also covers Scottish Parliament, Senedd, NI Assembly).
+
+### 50 · meme · 5s
+- **Visual:** a clipboard with a map pin and a ballot-box icon, a volunteer's hand-drawn badge.
+- **On-screen:** "DEMOCRACY CLUB . democracyclub.org.uk"
+- **Say:** "Who's standing, and where to vote. Built by volunteers. Democracy Club."
+- **Source:** explore-directory.md #10; https://democracyclub.org.uk. The "PDF and a prayer" line in the directory is dropped (unverified joke claim). "Volunteers" per the site's own volunteer invitation (CHECK).
+
+### 51 · meme · 5s
+- **Visual:** a plain office door with a small brass plate "DID IT WORK?" and a stack of nine folders.
+- **On-screen:** "WHAT WORKS NETWORK . gov.uk/what-works-network"
+- **Say:** "The government already has nine centres that check what works. They're free to read."
+- **Source:** explore-directory.md #11; https://www.gov.uk/guidance/what-works-network (updated 4 Nov 2026; nine centres plus 3 affiliates and 1 programme). Say "nine centres", no larger number. No GOV.UK branding on the picture.
+
+### 52 · meme · 5s
+- **Visual:** Mel about to share a chart with a big red arrow, then a magnifying glass over it.
+- **On-screen:** "FULL FACT . fullfact.org"
+- **Say:** "Before you repost the chart with the red arrow: check the chart with the red arrow."
+- **Source:** explore-directory.md #12; https://fullfact.org/. Caution: checks claims, doesn't run policy experiments: keep that distinction honest.
+
+### 53 · meme · 5s
+- **Visual:** a shelf of cardboard boxes, each labelled with a different country and a tiny experiment inside, Mel peering in.
+- **On-screen:** "PARTICIPEDIA . participedia.net"
+- **Say:** "Two thousand four hundred democratic experiments, in a hundred and sixty countries. Somebody told you nobody had tried."
+- **Source:** explore-directory.md #13; https://participedia.net (site counts 5 Nov 2026: 2,442 cases, 160 countries; counts will move).
+
+### 54 · meme · 5s
+- **Visual:** two crowds on opposite sides of a river, a little bridge forming in the middle labelled "WE BOTH SAID YES TO THIS".
+- **On-screen:** "POL.IS . pol.is  (explainer: compdemocracy.org)"
+- **Say:** "A map of where the other side secretly agrees with you. Pol.is."
+- **Source:** explore-directory.md #14; https://pol.is and https://compdemocracy.org. The "since 2012 / better mood than the comment section" line is dropped (year unchecked). pol.is rendered only its title: link the explainer too.
+
+### 55 · meme · 9s
+- **Visual:** an empty plot of ground with a sign, "YOURS". A path from Mel's bus stop leads to it. Mel stands at the edge with the dog, holding a plain notepad. In the sky, small and far away, a finished, unlovely building labelled "THE OTHER BRANCH".
+- **On-screen:** "THE GOOD BRANCH ISN'T WRITTEN."
+- **Say:** "Where I'm from, we know exactly how the bad version ends. We finished it. The good one is blank. Nobody's walked it. That isn't a problem. That's the opening."
+- **Source:** canon: "the bad branch is finished; the good branch is unwritten", research/01-canon.md (load-bearing structural fact). Ends open, never "here is the plan".
+
+### 56 · meme · 10s
+- **Visual:** the "How we'll know" label from slide 31 on a plain piece of paper, now with Mel's handwriting filling it in: one rule, how we'd know, who it would hit. A pencil.
+- **On-screen:** "WRITE ONE RULE. SAY HOW WE'D KNOW. SHOW IT TO THE PERSON IT WOULD HIT."
+- **Say:** "So. Pick one thing you'd change. Write the rule. Say how we'd know if it worked. Show it to the person it would land on. No sign-up. Nobody needs to reply."
+- **Source:** canon first action (research/01-canon.md: "write one rule, test it on someone affected, revise; no signup, no reply needed"). "Experts" removed from the CTA (critique 4).
+
+### 57 · meme · 7s
+- **Visual:** a plain fork-in-the-road signpost. One path labelled "CHANGE IT", one labelled "KEEP IT", both with the same small rain cloud over them.
+- **On-screen:** "YOU'RE NOT GAMBLING BY CHANGING THE SYSTEM. YOU'RE GAMBLING BY KEEPING IT."
+- **Say:** "You are not gambling by changing the system. You are gambling by keeping it."
+- **Source:** research/01-canon.md (canon line, as quoted in synthesis.md slide 35). "I mean it" removed (critique 11): the narrator doesn't need to say it.
+
+### 58 · title · 6s
+- **Visual:** the words FUTURE PROOF, with the list of fifteen names beneath. Mel gives a small wave.
+- **On-screen:** "FUTURE PROOF" / "other people are already rethinking this. go and look." / badcode.tv/future-proof (CHECK: deployment unverified, research/01)
+- **Say:** "Future Proof. Other people are already rethinking this. Go and look."
+- **Source:** research/01-canon.md (route `/future-proof` intended, deployment unverified); explore-directory.md.
+
+---
+
+## 4. Appendix: backup slides and Q&A
+
+Not in the ten minutes. Each is a one-slide answer for a hand-raise, or a slot in the long web version. Types: meme unless marked. Same fields in short form.
+
+### A1 · meme · "So, referendums?"
+- **Visual:** two doors: "ASK MORE OFTEN, LOW STAKES, PAPER STAYS FOR THE BIG ONE" and "ONE BIG BINDING VOTE". Mel taking the first.
+- **Say:** "No. Not the 2016 vote. Ask more often, on more things, with the big binding vote still on paper, and start where the stakes are low." (Keep it in the room; never on the main deck. Critique 2.)
+- **Source:** research/21 (advisory first; binding secret ballots from a phone are a hard unsolved problem; Schneier https://www.schneier.com/blog/archives/2026/01/internet-voting-is-too-insecure-for-use-in-elections.html S/H; LSE https://blogs.lse.ac.uk/politicsandpolicy/internet-voting-coming-to-a-computer-near-you-though-more-research-is-needed-to-eliminate-the-risks S/H).
+
+### A2 · meme · "Can't we hack it?"
+- **Visual:** a ballot box with a padlock, a phone with a "?" Mel holds the paper ballot.
+- **Say:** "Agreed: voting from a phone, in secret, securely, is a hard unsolved problem. We're not asking for that first. Estonia shows people use it. It doesn't prove it's safe. Both are true."
+- **Source:** research/21 table: Estonia 51% online in 2023 (https://en.wikipedia.org/wiki/Electronic_voting_in_Estonia S; official https://ria.ee/en/i-voting-20-years-progress P not opened); voter can verify "stored" not "tallied as cast"; 2014 expert-team breach claim. Do not assert Estonia's security or effect.
+
+### A3 · meme · "Does Switzerland really do this?"
+- **Visual:** a ballot with several boxes next to a calendar of dates.
+- **Say:** "Yes. They vote on questions one at a time, several times a year. Results can go any way. That's what it is to ask people."
+- **Source:** research/11: https://www.admin.ch/gov/en/start/documentation/votes.html (S via search): 332 voting days since 1848 (CHECK on the page before printing; other counts of proposals conflict 617-689). Q&A only. Direct votes can go either way (the reader may like or dislike a result: don't hide it).
+
+### A4 · meme · "A pilot that tests the paint"
+- **Visual:** a bridge being tested by painting it, not loading it; a lorry waiting.
+- **Say:** "A pilot that dodges the hard part isn't a pilot. It's a press release with a spreadsheet."
+- **Source:** research/14: Universal Credit, NAO 2013 (set up without leaders knowing how it would work), SMF (pilots didn't test real-time information or monthly payment), https://www.smf.co.uk/?p=15189 ; https://holyrood.com/articles/news/universal-credit-not-value-money-reports-national-audit-office (S). "Badly piloted", not "no pilot" (research/14). Contested politically: use only as backup.
+
+### A5 · meme · "Laws with an expiry date"
+- **Visual:** a milk carton with a use-by date next to a statute book with a blank where the date goes.
+- **Say:** "One academic search of the statute book found nineteen Acts with an expiry date. Your milk has one. And a sunset clause that renews by default is just a test nobody reads."
+- **Source:** research/13: UCL paper, https://discovery-pp.ucl.ac.uk/10091123/1/Xanthaki_2019%20Ranchordas%20Sunset%20clauses.pdf (S, 19 Acts in one study's search); renew-by-default: https://psaparliaments.org/2016/10/05/do-sunset-clauses-work/ (S). Retained EU Law sunset is a counter-example of a sunset with no test: https://ukconstitutionallaw.org/2022/10/10/kate-ollerenshaw-more-haste-less-speed-sunset-clauses-in-the-retained-eu-law-revocation-and-reform-bill/ (S).
+
+### A6 · diagram (three.js) · "Tokens, not just votes" (quadratic voting)
+- **Visual:** a hundred tokens spread across a row of bills, no bar holding more than a handful.
+- **Say:** "Colorado's House Democrats tried this: a hundred tokens each across 107 bills. Nobody put all their tokens on one. It was non-binding, and it's a good small test."
+- **Source:** research/11: https://www.radicalxchange.org/wiki/colorado-qv/ ; https://coloradosun.com/2024/01/05/colorado-legisalture-quadratic-voting-lawsuit/ (S; URL as spelled in research/11, may be truncated, CHECK). Not evidence of effect. Followed by a meme in the long cut.
+
+### A7 · meme · "We tried the pure version and it broke" (liquid democracy)
+- **Visual:** a chain of hands passing a baton until one huge hand holds all of them.
+- **Say:** "Germany's Pirate Party tried the purest version: delegate per topic, take it back any time. Power drifted to a few super-delegates and activity fell off. That's the bug report."
+- **Source:** research/11: LiquidFeedback, 13,836 registered users (2010-13), activity dropped ~180 days after the 2011 congress (S academic). Credibility slide: shows we read the post-mortem.
+
+### A8 · meme · "Where did participatory budgeting start?"
+- **Visual:** a map pin on a Brazilian city, a lock on the pin.
+- **Say:** "Porto Alegre. Its programme was later reported suspended, which is a lesson in itself: even good things need an undo and a reason to restart."
+- **Source:** explore-directory.md "also worth knowing" (Participatory Budgeting Project, https://www.participatorybudgeting.org). Do NOT quote adoption numbers: sources disagree. Brazil infant-mortality study (Goncalves 2013) is observational: hedged, research/11.
+
+### A9 · meme · "Does a basic income work?" (method, not policy)
+- **Visual:** two towns, one random sample receiving a monthly envelope, the other not.
+- **Say:** "Finland ran a real trial and published an awkward answer: small effect on jobs, better wellbeing. The point isn't the answer. The point is that someone ran the test."
+- **Source:** research/14: Finland: https://stm.fi/en/-/perustulokokeilun-tulokset-tyollisyysvaikutukset-vahaisia-toimeentulo-ja-psyykkinen-terveys-koettiin-paremmaksi ; https://vatt.fi/en/-/perustulon-tyollisyysvaikutukset-jaivat-vahaisiksi (P). Stockton SEED: 125 residents, USD500 a month for 24 months, year-1 full-time employment 28% to 40% vs 32% to 37% comparison (https://penntoday.upenn.edu/news/guaranteed-income-increases-employment-improves-financial-and-physical-health ; https://cbsnews.com/news/basic-guaranteed-income-stockton-experiment, S). Not "proof UBI works".
+
+### A10 · meme · "Why not just proportional representation?"
+- **Visual:** a ballot box with a tangled sign, Mel declining politely.
+- **Say:** "That's a different argument and a party fight. This is smaller: you choose each thing, not a package."
+- **Source:** research/20: YouGov Feb 2025 PR support (Reform 67%); early-2026 Reform voters' PR support fell to 45%, FPTP rose to 31%: https://yougov.com/en-gb/articles/51504-do-britons-support-shifting-to-proportional-representation ; https://yougov.com/en-gb/articles/53890-support-for-p... (URL truncated in research/20, CHECK). Q&A only: do NOT lead with PR.
+
+### A11 · meme · "Where does the AI sit in all this?"
+- **Visual:** a laptop pointing at a spread of opinions; a named person with the pen.
+- **Say:** "As a summariser of disagreement, with a named owner who audits it. Never a decider."
+- **Source:** research/21 (Habermas Machine, Science Oct 2024, 439 UK residents, paper not read; https://equalitybylot.com/2024/10/21/nobel-prize-winning-ai-technology-creates-the-habermas-machine/ S; CCAI, https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input P). Small and early: no numbers on a slide.
+
+### A12 · meme · "What about the sewage thing?" (if slide 23 is cut)
+- **Visual:** the open ticket from slide 23 with a name finally typed into "assigned to".
+- **Say:** "Voters of opposite parties both rank it near the top. A fix with a test and an undo would be a rare thing everyone wants."
+- **Source:** research/20: https://www.newstatesman.com/politics/uk-politics/2025/07/i-blame-maggie-how-sewage-radicalised-england (S, snippet level). Only if the decision-makers are named from a primary.
+
+---
+
+## 5. Fact ledger (everything a slide asserts)
+
+Status: OK = sourced in research; CHECK = needs a primary before it leaves draft; GK = general knowledge, verify; CUT-IF = cut the slide if the check fails.
+
+| # | Claim on slide | Source (file + URL) | Status |
+| --- | --- | --- | --- |
+| 2, 6 | Max five years between general elections; next by 2029 | none in research | CHECK (parliament.uk) |
+| 3 | De Montfort parliament 1265 | research/15; https://www.parliament.uk/demontfort/ | OK (label contested; say "1200s") |
+| 3 | Reform Act 1832 | research/15; https://en.wikipedia.org/wiki/Reform_Acts | OK (S) |
+| 3, 4 | Secret ballot 1872 | research/15; same URL | OK (S) |
+| 3 | Swan lamp Dec 1878, Edison 1879 | research/15; https://gracesguide.co.uk/Electric_Lighting | OK (S) |
+| 3 | iPhone 2007, "nineteen" | research/15 | GK, verify |
+| 4 | Public voting before 1872 | research/15; Commons Library franchise history | CHECK wording |
+| 5 | Equal Franchise Act 1928 | research/15 | OK (S) |
+| 11 | "Bundling" is a named concept | https://en.wikipedia.org/wiki/Bundling_(public_choice) | OK (S) |
+| 13 | Ostrogorski paradox; bundled vs issue-by-issue can reverse | https://www.newamerica.org/insights/the-paradoxical-reason-republicans-win-elections-despite-unpopular-policies/ ; https://arxiv.org/abs/2307.11873v1 | OK; example is ours, hand-checked |
+| 15 | Some countries vote issue by issue | https://www.admin.ch/gov/en/start/documentation/votes.html | OK (no number on slide) |
+| 16 | Frome independents since 2011, no whip | https://en.wikipedia.org/wiki/Independents_for_Frome | CHECK (own site) |
+| 19 | The "green tick" explanation | research/13 section 1 | OK (explanatory) |
+| 20 | Acts normally reviewed 3-5 years after enactment | https://www.wfd.org/what-we-do/resources/post-legislative-scrutiny-uk-parliament | OK (S) |
+| 21 | No central record of PLS reviews | https://parallelparliament.co.uk/question/HL2377/legislation-parliamentary-scrutiny | OK (Hansard mirror) |
+| 22 | Poll tax Scotland 1989, abolition announced 1991, Council Tax 1993 | https://en.wikipedia.org/wiki/Poll_tax_(Great_Britain) | CHECK primary |
+| 23 | Sewage a priority across parties; decision-makers named | https://www.newstatesman.com/politics/uk-politics/2025/07/i-blame-maggie-how-sewage-radicalised-england | CUT-IF unverified |
+| 24 | FCA sandbox: Nov 2015 announced, first cohort 7 Nov 2016 | https://www.crowdfundinsider.com/2016/11/92162-first-class-fca-reveals-24-fintech-firms-accepted-regulatory-sandbox/ | OK (S) |
+| 26 | RCTs routine in medicine, rare in domestic policy | https://www.gov.uk/government/publications/test-learn-adapt-developing-public-policy-with-randomised-controlled-trials | OK (P) |
+| 27 | HMRC 67.5% control, 79% postcode-norm line (Decision Lab: 3 variants, town 83% was best; "11 variants" REMOVED) | https://thedecisionlab.com/intervention/how-normative-messaging-increased-tax-compliance-by-15 ; https://blogs.worldbank.org/voices/ongoing-impact-nudging-people-pay-their-taxes | OK for 67.5 vs 79 only; read the Hallsworth paper before adding more |
+| 28 | Scared Straight: 9 trials, 946 youths, harmful | https://ideas.repec.org/a/wly/camsys/v9y2013i1p1-55.html | OK (P abstract) |
+| 29 | Troubled Families 99% vs NIESR no consistent impact | https://www.niesr.ac.uk/?p=37705 ; https://www.publicsectorexecutive.com/News/misleading-to-claim-troubled-families-programme-worked/159623 | OK (S) |
+| 30 | Computer-presumed-correct since 2000; 736 prosecuted over 15 years | https://www.gov.uk/government/news/use-of-computer-evidence-in-court-to-be-interrogated ; https://www.benthamsgaze.org/2022/06/30/the-legal-rule-that-computers-are-presumed-to-be-operating-correctly-unforeseen-and-unjust-consequences/ | 736 REMOVED (unsourced); slide says "hundreds" |
+| 35 | Petition thresholds 10,000 reply / 100,000 considered for debate | https://petition.parliament.uk/help ; https://guidetoprocedure.parliament.uk/articles/7KsdfkXF | OK (P) |
+| 37 | vTaiwan/Pol.is Uber: camps collapsed to two, government agreed to ratify | https://scrapbox.io/nishio-en/How_the_discussion_on_Uber_has_evolved_in_vTaiwan ; https://eprints.soton.ac.uk/496942/1/Sorting_a_Public_2023_AAM.docx | OK for four-to-two camps; government-outcome wording softened |
+| 40-54 | the 15 projects, their URLs and one-line claims | explore-directory.md (checked live 2026-11-05) | OK; dates and counts perishable |
+| 47 | small-ideas.org: until 12 Nov, 50 picked by cross-party panel | https://www.moneysavingexpert.com/tips/2026/10/13 | CHECK; GATE, cut if unverified |
+| 55, 57 | "bad branch finished, good branch unwritten"; "not gambling by changing" | research/01-canon.md | OK (canon) |
+
+Claims deliberately NOT used (and why): "before electricity" (false: research/15); "760 years" (label contested); "100,000+ deploys a day" (unsourced: research/13); "10 / 14 questions at the bank" (invented); "a pill on 500 people" (invented); Swiss "332" (CHECK, kept to the appendix); "one sentence changed" for HMRC (best of 11 versions); "world first" for the FCA sandbox (unverified); vTaiwan participant counts (conflict); an Estonia or Colorado safety/effect claim; any count of unreviewed Acts; Billionaire Coin (cut from the main deck: critique 10, and the coin trust statement is never said as one).
+
+## 6. Image-source and legal column
+
+Every image is **original** (generated or drawn fresh, recipe card per image, same-prompt check per prompt) unless noted. Layouts borrowed, never the known template images.
+
+- Original, all 48 memes and the 8 diagram scenes. No stills, no logos, no real people. Mel is a single invented character with one reference image, reused.
+- Slide 4 top panel: public-domain pre-1900 engraving if a clean file is found and its licence read; otherwise original (amber until checked).
+- No watermarked stock, no film/TV/pop music under any slide (research/19 red list); score is our own (Suno, per the story's sound.md, chosen separately) or none.
+- Nothing impersonates a real organisation: fake app screens (slides 5, 9, 23, 36), the cable-style screen (9) and the department-style notice (33) use no real logo, crown, typeface or brand colours. The montage uses plain text for names.
+- Named real bodies appear only as facts in public acts (HMRC, NIESR, the Post Office, the FCA): cited as sources, never mocked as a person.
+- UK s30A fair dealing is narrow and Shazam v Only Fools [2022] rejected the defence (research/19). Do not rely on it for anything here.
+
+## 7. Timing, cuts and shorts
+
+- **Scripted runtime:** 58 slides. Diagrams 8 (3, 11, 13, 19, 27, 32, 35, 37) at 16-20s each; 2 titles (7, 58); 48 memes (about 8 to 11s in the body, 5s in the montage). Total scripted time is 521s (8:41); with laughs and Kai's asides that is the ten minutes. Memes are 5-11s; the punchline of every slide lands in the last two seconds.
+- **Ratio:** 48 memes to 8 diagrams is 6 to 1, over Kai's "roughly 4". To reach 4 to 1: promote three memes with real mechanisms to short diagrams (slide 8 the till, slide 21 the empty filing cabinet, slide 22 the poll-tax timeline) and cut the pill/policy slide (26) and the judgement aside (34). Or drop two diagrams (35, 37) into the appendix. Kai's call.
+- **Presenting:** 521s scripted (8:41) plus roughly 80s of laughs and breathing room is about ten minutes on a stage; the video version is the scripted time straight.
+- **Two-minute cut (10 slides):** 1, 3, 6, 8, 10, 13, 19, 27, 32, 56.
+- **Vertical 9:16 shorts (each is one slide plus its follow-up meme):** 6 (bank vs ballot), 8 (the till), 10 (crate buttons), 17 (pizza), 28 (Scared Straight), 29 (counted vs measured). Avoid 23 and 22 as shorts (partisan reading risk).
+- **Montage-only short:** 39-54 plus 56, "15 places to start" (about 100 seconds).
+- **If the montage runs long:** cut to 12 (drop Loomio, Full Fact, Democracy Club) and say the rest in the description.
+- **If slide 47 is unverified:** montage is 14.
+
+## 8. Critique fixes: where each landed
+
+1. Lecture, no protagonist: Mel runs through all three pillars (2, 8, 14, 18, 33, 56); slide 13 is three people in a pub, not an abstract chart; v1's Ostrogorski bar chart, post-legislative review and FCA sandbox essays are now a pub table (13), one meme line (21) and one meme (24).
+2. Swiss and referendum trap: slide 15 is a visual with no count; "So, referendums?" is A1.
+3. Slide 31 Lewis ladder: no ladder of brains. small-ideas.org is one of fifteen in the montage (47), gated on verification.
+4. "Experts" and "probably wrong": removed. CTA is slide 56. Humility lives in slide 55.
+5. Shaky numbers: dropped or hedged (see section 5, "not used").
+6. Sewage: now a conditional "assigned to ???" ticket (23), cut if the owners are not named from a primary.
+7. Voter as the butt: crate buttons (10), the box that "hears all of it" (14), five people in a pub (13).
+8. Pacing and repeated joke: "slow updates" told once (5); CD-ROM and kettle dropped; no more than two evidence slides without a visual laugh.
+9. Look chosen by stealth: no cursor, hoarding, blueprint or daylight specified; "construction site" appears only as "an empty plot" with no look attached (55) and is subject to the look decision.
+10. Legal: layouts only; no Drake/This Is Fine/Distracted Boyfriend; no GOV.UK pastiche; Billionaire Coin out.
+11. Voice slips: Kai's opener is a question (1), not a postmortem; "I mean it" removed; Scared Straight names who was sure (28); the poll tax names who set it up and scrapped it (22).
+12. AI hook: slide 30 (who decided a computer is presumed right, what test it passed) and slide 38 (a named person signs).
+
+## 9. Open flags for Kai and Jack
+
+1. **Look is unset.** Nothing in this file implies one. Slide 55 (an empty plot) and slide 19 (a tower) are content metaphors, free to be redrawn in any look.
+2. **Slide 47 (small-ideas.org):** needs Kai to open the live site first. Everything about it rests on one MoneySavingExpert snippet.
+3. **Slide 2 / 6 / 5 "five years, 2029":** verify the dissolution rule before it goes on screen.
+4. **Slide 23 (water ticket):** keep only with named decision-makers.
+5. **Slide 30 (Post Office/Horizon):** the victims are real; read the 736 wording against a primary and keep the joke on the missing check.
+6. **Ratio:** 6 to 1 against Kai's "roughly 4 to 1": options in section 7.
+7. **Who speaks:** the narrator-from-the-future flavour is light (slides 55 and a few asides); Kai can do it straight. If the AI voice reads it, add the narrator lines "where I'm from" (max three).
+8. **Mel:** one invented character with a single reference image: approve the casting before any generation.
+9. **The URL `badcode.tv/future-proof`** is intended, deployment unverified (research/01).

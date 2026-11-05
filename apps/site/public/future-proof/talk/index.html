@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>
+<title>Future Proof: the launch talk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Silkscreen:wght@400;700&family=VT323&display=swap">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+/* Engine chrome (story-neutral). The theme owns everything inside #stage. */
+:root{--e-bg:#202226;--e-bar:#2b2e33;--e-fg:#eef0f3;--e-muted:#a6acb6;--e-line:#3b3f46;--e-keep:#6cc07a;--e-change:#e7b04a;--e-cut:#f0857b;--e-ui:system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{background:var(--e-bg);color:var(--e-fg);font:15px/1.45 var(--e-ui);overflow:hidden}
+#app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:minmax(0,1fr) auto;padding-top:env(safe-area-inset-top,0px)}
+#viewport{position:relative;overflow:hidden;min-width:0}
+#stage{position:absolute;left:0;top:0;width:1600px;height:900px;transform-origin:0 0;overflow:hidden}
+#stage [data-step]{visibility:hidden}
+#stage [data-step].on{visibility:visible}
+.e-slot{position:relative;width:100%;height:100%;display:grid;place-items:center;overflow:hidden;background:repeating-conic-gradient(#c9c9c4 0 25%,#e2e2dd 0 50%) 0 0/24px 24px;color:#2a2c30}
+.e-slot img{width:100%;height:100%;object-fit:cover;display:block}
+.e-slot .e-ph{max-width:86%;background:rgba(255,255,255,.88);padding:14px 18px;font:15px/1.35 var(--e-ui);border:1px dashed #6d6f73}
+.e-slot .e-ph b{display:block;font-size:12px;letter-spacing:.04em;color:#6d6f73;margin-bottom:4px}
+#bar{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px;background:var(--e-bar);border-top:1px solid var(--e-line);padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+#bar button{font:600 14px var(--e-ui);background:#3a3e45;color:var(--e-fg);border:0;border-radius:6px;padding:7px 12px;cursor:pointer}
+#bar button[aria-pressed="true"]{background:var(--e-fg);color:var(--e-bar)}
+#bar .pos{font-variant-numeric:tabular-nums;min-width:150px}
+#bar .grow{flex:1}
+#bar .keys{color:var(--e-muted);font-size:13px}
+button:focus-visible,textarea:focus-visible{outline:3px solid #6ea2ff;outline-offset:2px}
+#drawer{width:360px;max-width:92vw;background:var(--e-bar);border-left:1px solid var(--e-line);overflow:auto;padding:16px;display:grid;gap:12px;align-content:start}
+#drawer h2{margin:0;font-size:18px}
+#drawer .meta{color:var(--e-muted);font-size:13px}
+#drawer .say{font-size:16px;line-height:1.5;border-left:3px solid var(--e-line);padding-left:10px}
+#drawer .pic{color:var(--e-muted);font-size:13px}
+.vb{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.vb button{font:700 14px var(--e-ui);padding:8px 4px;border-radius:6px;border:1.5px solid var(--e-line);background:transparent;color:var(--e-fg);cursor:pointer}
+.vb [data-v="keep"][aria-pressed="true"]{background:var(--e-keep);color:#111;border-color:var(--e-keep)}
+.vb [data-v="change"][aria-pressed="true"]{background:var(--e-change);color:#111;border-color:var(--e-change)}
+.vb [data-v="cut"][aria-pressed="true"]{background:var(--e-cut);color:#111;border-color:var(--e-cut)}
+#drawer textarea{width:100%;box-sizing:border-box;min-height:110px;font:14px/1.4 var(--e-ui);background:var(--e-bg);color:var(--e-fg);border:1px solid var(--e-line);border-radius:6px;padding:8px}
+#drawer .others div{background:var(--e-bg);border-radius:6px;padding:6px 8px;font-size:13px;margin-top:4px}
+#drawer .status{font-size:12px;color:var(--e-muted);min-height:1em}
+#grid{position:absolute;inset:0;overflow:auto;padding:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;align-content:start;background:var(--e-bg)}
+#grid .cell{cursor:pointer;border:0;background:none;padding:0;color:var(--e-fg);text-align:left;font:13px var(--e-ui)}
+#grid .thumb{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:4px;outline:2px solid transparent}
+#grid .cell.cur .thumb{outline-color:#6ea2ff}
+#grid .thumb>div{position:absolute;left:0;top:0;width:1600px;height:900px;transform-origin:0 0;pointer-events:none}
+#grid .thumb [data-step]{visibility:visible}
+#grid .thumb [data-until]{display:none!important}
+#grid .tag{display:flex;justify-content:space-between;margin-top:4px;color:var(--e-muted)}
+#grid .tag b.keep{color:var(--e-keep)}#grid .tag b.change{color:var(--e-change)}#grid .tag b.cut{color:var(--e-cut)}
+body.clean #bar,body.clean #drawer{display:none}
+/* public build: the website copy. No notes, no grid; a way back to the site when opened on its own */
+body.public #b-notes,body.public #b-grid,body.public #drawer,body.public .keys{display:none}
+#b-home{display:none;color:var(--e-fg);text-decoration:none;font:600 14px var(--e-ui);padding:7px 12px;border-radius:6px;background:#3a3e45}
+body.public:not(.embedded) #b-home{display:inline-block}
+body.embedded #b-full{display:none}
+@media (max-width:760px){#app{grid-template-columns:minmax(0,1fr)}#drawer{position:fixed;right:0;top:0;bottom:0;z-index:5}}
+</style>
+<style>
+/* Future Proof · "Update Available" (picked by Kai 2026-11-05).
+   Britain is an old computer that has clicked "remind me later" since 1872.
+   Stage is 1600x900 logical px. Single-world look: these colours are the slide, not the page theme. */
+#stage{
+  --desk:#3b7f86; --win:#d4d3cc; --hi:#ffffff; --lo:#8a8982; --dk:#4e4d48;
+  --bar:#1f3070; --bar2:#3c55a8; --ok:#2d9a4c; --warn:#ffd43b; --err:#d22d2d; --ink:#141618;
+  --pix:"Silkscreen",ui-monospace,monospace; --sans:"Atkinson Hyperlegible",system-ui,sans-serif; --mono:"VT323","Courier New",monospace;
+  font-family:var(--sans); color:var(--ink);
+}
+#stage .desk{position:absolute;inset:0;background:var(--desk) repeating-linear-gradient(0deg,transparent 0 6px,rgba(255,255,255,.035) 6px 12px)}
+#stage .desk.dark{background:#16212b repeating-linear-gradient(0deg,transparent 0 6px,rgba(255,255,255,.03) 6px 12px)}
+/* taskbar: the running gag, the clock says 1872 */
+#stage .task{position:absolute;left:0;right:0;bottom:0;height:52px;background:var(--win);box-shadow:inset 0 3px 0 var(--hi);display:flex;align-items:center;gap:10px;padding:0 10px;font:700 20px var(--sans);z-index:9}
+#stage .task .start{display:flex;align-items:center;gap:8px;padding:5px 14px;box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi)}
+#stage .task .start i{width:18px;height:18px;background:conic-gradient(var(--err) 0 25%,var(--ok) 0 50%,var(--bar2) 0 75%,var(--warn) 0)}
+#stage .task .tab{padding:5px 14px;box-shadow:inset 3px 3px 0 var(--dk),inset -3px -3px 0 var(--hi);font-weight:400;max-width:420px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#stage .task .clock{margin-left:auto;padding:5px 14px;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);font:400 20px var(--pix)}
+/* window */
+#stage .win{position:absolute;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi),inset -6px -6px 0 var(--lo),12px 12px 0 rgba(0,0,0,.28);padding:6px;display:flex;flex-direction:column}
+#stage .tb{background:linear-gradient(90deg,var(--bar),var(--bar2));color:#fff;font:400 22px/1 var(--pix);padding:9px 12px;display:flex;justify-content:space-between;gap:12px;flex:none}
+#stage .tb .x{display:flex;gap:6px}
+#stage .tb .x span{width:26px;height:22px;background:var(--win);color:var(--ink);font:700 16px/22px var(--sans);text-align:center;box-shadow:inset -2px -2px 0 var(--dk),inset 2px 2px 0 var(--hi)}
+#stage .wb{padding:26px 30px;font-size:34px;line-height:1.3;flex:1;min-height:0;display:flex;flex-direction:column;gap:18px}
+#stage .wb h3{font:700 54px/1.08 var(--sans);margin:0;text-wrap:balance}
+#stage .wb .small{font-size:24px;color:#3d3f42}
+#stage .row{display:flex;gap:26px;align-items:flex-start}
+#stage .ico{flex:none;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font:700 58px var(--sans);color:#fff;background:var(--bar2)}
+#stage .ico.error{background:var(--err)}
+#stage .ico.warn{background:var(--warn);color:var(--ink);border-radius:0;clip-path:polygon(50% 4%,98% 96%,2% 96%)}
+#stage .ico.question{background:var(--bar2)}
+#stage .ico.ok{background:var(--ok)}
+#stage .btns{display:flex;gap:22px;justify-content:flex-end;padding:0 30px 24px;flex:none}
+#stage .btn{font:700 28px var(--sans);padding:12px 32px;min-width:150px;text-align:center;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi)}
+#stage .btn.off{color:#8a8982;text-shadow:1px 1px 0 #fff}
+#stage .btn.gone{text-decoration:line-through;text-decoration-thickness:4px;text-decoration-color:var(--err)}
+#stage .task .clock.tick{background:var(--ok);color:#fff}
+#stage .btn.def{outline:3px solid var(--ink);outline-offset:-1px}
+#stage .prog{height:44px;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);background:#fff;padding:6px;display:flex;gap:4px}
+#stage .prog i{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--ok) 0 22px,transparent 22px 26px)}
+#stage .prog.err i{background:repeating-linear-gradient(90deg,var(--err) 0 22px,transparent 22px 26px)}
+#stage .plabel{font-size:26px;color:#3d3f42}
+/* meme captions: classic top/bottom text, in this world's type */
+#stage .cap{position:absolute;left:60px;right:60px;text-align:center;font:700 64px/1.05 var(--sans);color:#fff;text-transform:uppercase;text-wrap:balance;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill;text-shadow:0 5px 0 var(--ink);z-index:8}
+#stage .cap.top{top:34px}
+#stage .cap.bottom{bottom:84px}
+#stage .cap.sm{font-size:48px}
+/* sticky note */
+#stage .sticky{position:absolute;background:var(--warn);padding:22px 26px;font:700 34px/1.15 var(--sans);box-shadow:8px 8px 0 rgba(0,0,0,.25);transform:rotate(-3deg);z-index:7}
+/* lists and fields */
+#stage .lines{font:400 34px/1.35 var(--mono);background:#fff;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);padding:18px 22px;flex:1;min-height:0;overflow:hidden}
+#stage .lines div{display:flex;justify-content:space-between;gap:24px}
+#stage .lines .tot{border-top:3px dashed var(--ink);margin-top:10px;padding-top:10px;font-weight:700}
+#stage .fields{display:grid;grid-template-columns:auto 1fr;gap:12px 26px;font-size:32px}
+#stage .fields dt{font-weight:700;color:#3d3f42}
+#stage .fields dd{margin:0}
+#stage .fields .hl{background:var(--warn);padding:0 8px}
+/* toasts */
+#stage .toast{position:absolute;right:40px;width:640px;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi),10px 10px 0 rgba(0,0,0,.25);padding:6px}
+#stage .toast .tb{font-size:18px}
+#stage .toast .wb{font-size:28px;padding:16px 20px}
+/* wallpaper text */
+#stage .wall{position:absolute;left:80px;top:90px;width:760px;color:#fff;font:700 76px/1.02 var(--sans);text-wrap:balance}
+#stage .wall small{display:block;font:400 30px/1.3 var(--sans);margin-top:22px;opacity:.9}
+/* desktop icon */
+#stage .icon{position:absolute;width:150px;text-align:center;color:#fff;font:400 22px/1.2 var(--sans)}
+#stage .icon i{display:block;width:84px;height:84px;margin:0 auto 8px;background:var(--win);box-shadow:inset -3px -3px 0 var(--dk),inset 3px 3px 0 var(--hi);font:700 44px/84px var(--pix);color:var(--bar);font-style:normal}
+#stage .icon span{background:var(--bar);padding:2px 6px}
+/* split labels */
+#stage .plab{font:400 26px var(--pix);color:#fff;background:var(--ink);padding:6px 12px;align-self:flex-start}
+/* boot / title */
+#stage .boot{position:absolute;inset:0;background:#0f1a3a;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px;text-align:center}
+#stage .boot h1{font:400 128px/1 var(--pix);margin:0;letter-spacing:.02em}
+#stage .boot p{font:400 38px/1.3 var(--sans);margin:0;max-width:1100px;opacity:.92}
+#stage .boot .prog{width:640px;background:#0f1a3a;box-shadow:0 0 0 4px #fff}
+#stage .boot .prog i{background:repeating-linear-gradient(90deg,#fff 0 22px,transparent 22px 26px)}
+/* fatal screen */
+#stage .fatal{position:absolute;inset:0;background:#0b3fa8;color:#fff;font:400 40px/1.35 var(--mono);padding:110px 140px;display:flex;flex-direction:column;gap:34px}
+#stage .fatal .hd{align-self:center;background:#d4d3cc;color:#0b3fa8;padding:2px 18px;font:400 40px var(--pix)}
+#stage .fatal .big{font:700 66px/1.12 var(--sans)}
+/* diagram window */
+#stage .scene-mount{position:relative;flex:1;min-height:0;background:#000;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);overflow:hidden}
+#stage .scene-mount canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+#stage .dcap{font:700 40px/1.15 var(--sans);text-wrap:balance}
+#stage .dsmall{font:400 24px var(--pix);color:#3d3f42}
+#stage .tag3d{position:absolute;font:400 22px/1 var(--pix);color:#fff;background:var(--ink);padding:5px 8px;white-space:nowrap;transform:translate(-50%,-100%);pointer-events:none}
+#stage .tag3d.ok{background:var(--ok)}#stage .tag3d.err{background:var(--err)}#stage .tag3d.warn{background:var(--warn);color:var(--ink)}
+/* reveal */
+#stage [data-step].on{animation:fp-pop .22s steps(3,end)}
+@keyframes fp-pop{from{transform:scale(.96);opacity:.4}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){#stage [data-step].on{animation:none}}
+
+</style>
+
+<div id="app">
+  <div id="viewport"><div id="stage" role="region" aria-roledescription="slide" aria-live="polite"></div><div id="grid" hidden></div></div>
+  <aside id="drawer" hidden aria-label="Notes on this slide">
+    <h2 id="d-title"></h2>
+    <div class="meta" id="d-meta"></div>
+    <div class="say" id="d-say"></div>
+    <div class="pic" id="d-pic"></div>
+    <div class="vb" role="group" aria-label="Verdict"><button type="button" data-v="keep" aria-pressed="false">Keep</button><button type="button" data-v="change" aria-pressed="false">Change</button><button type="button" data-v="cut" aria-pressed="false">Cut</button></div>
+    <label for="d-note" class="meta">Your note on this slide</label>
+    <textarea id="d-note" placeholder="What to change, or why"></textarea>
+    <div class="status" id="d-status">Notes load in a moment.</div>
+    <div class="others" id="d-others"></div>
+  </aside>
+  <div id="bar">
+    <button type="button" id="b-prev" aria-label="Previous">◀</button>
+    <button type="button" id="b-next" aria-label="Next">▶</button>
+    <span class="pos" id="pos"></span>
+    <a id="b-home" href="/future-proof/">← Back to the TV</a>
+    <span class="grow"></span>
+    <span class="keys">← → step · G grid · N notes · H hide bar · F full screen</span>
+    <button type="button" id="b-grid" aria-pressed="false">Grid</button>
+    <button type="button" id="b-notes" aria-pressed="false">Notes</button>
+    <button type="button" id="b-full">Full screen</button>
+  </div>
+</div>
+
+<script>
+const DECK={"title": "Future Proof: the launch talk", "round": 2, "slides": [{"id": "1", "type": "meme", "secs": 7, "at": 0, "title": "Ballot.exe", "say": "\"Why can't I vote on more than one thing? Buses. Bins. Bills. One cross.\" Click: \"And the cross does the rest.\"", "onscreen": "heading \"Why can't I vote on more than one thing?\" / click: \"You have selected ONE (1) cross. Your cross will now be applied to: EVERYTHING.\" / buttons \"OK\" · \"Also OK\"", "layout": "dialog", "task": "ballot.exe", "icon": "error", "image": {"file": "mel-booth.jpg", "prompt": "Mel in a polling booth, mug in hand, holding a ballot paper with a single box printed EVERYTHING beside it; the dog waits outside, its lead on the hook"}, "heading": "Why can't I vote on more than one thing?", "text": "You have selected **ONE (1)** cross.\nYour cross will now be applied to: **EVERYTHING**.", "buttons": ["OK", "Also OK"], "reveal": {"text": 1}}, {"id": "2", "type": "meme", "secs": 10, "at": 7, "title": "About This System", "say": "\"Here's what you're running. Parliament: the twelve-hundreds. Secret ballot: 1872. The light bulb: 1878.\" Beat. \"The way you pick a government is older than the light bulb.\"", "onscreen": "heading \"Democracy, version 1872\" / lines, one per click: \"Parliament: 1200s\" · \"Secret ballot: 1872\" · \"Light bulb: not invented yet (1878)\" / footer \"Known issues: all of them.\" / bottom caption \"OLDER THAN THE LIGHT BULB.\"", "layout": "release", "task": "about.exe", "heading": "Democracy, version 1872", "image": {"file": "about-candle.jpg", "prompt": "a single small lit candle on a plain grey background, framed like a software logo"}, "lines": [["Parliament", "1200s"], ["Secret ballot", "1872"], ["Light bulb", "not invented yet (1878)"]], "footer": "Known issues: all of them.", "buttons": ["Remind me later", "Check for updates"], "bottom": "OLDER THAN THE LIGHT BULB.", "reveal": {"lines": 1, "bottom": 3, "footer": 3}}, {"id": "3", "type": "meme", "secs": 9, "at": 17, "title": "", "say": "\"The light bulb's had a few updates since. It dims. It changes colour. It talks to your phone.\" Click: \"The ballot got a pencil. On a string.\"", "onscreen": "left \"LIGHT BULB, since 1878: dimmable · 16 million colours · talks to your phone\" / right \"BALLOT, since 1872:\" then, on the click, \"a pencil. On a string.\"", "layout": "split", "task": "changelog.txt", "left": {"title": "lightbulb.exe", "label": "v1878 → today", "image": {"file": "smart-bulb.jpg", "prompt": "a smart light bulb glowing a soft purple, a phone beside it showing a colour wheel"}, "lines": ["Dimmable", "16 million colours", "Talks to your phone"]}, "right": {"title": "ballot.exe", "label": "v1872 → today", "image": {"file": "booth-pencil-string.jpg", "prompt": "the shelf in a polling booth, a stubby pencil tied to it on a length of string"}, "lines": ["Pencil", "String (added)"]}, "reveal": {"right": 1}}, {"id": "4", "type": "meme", "secs": 14, "at": 26, "title": "Democracy 2.0 Setup · 3 updates ready", "say": "\"Three updates. Stuck at three percent since 1872, because every time it's ready, somebody clicks...\" Click: \"...remind me later. Not you, Mel. You're a standard user. The administrator is whoever's in charge that year.\" Beat. \"And they've got a lot on.\"", "onscreen": "behind: \"DEMOCRACY 2.0 SETUP · 3 updates ready\" and progress 3% \"Installing... (since 1872)\" / front: heading \"Restart Britain to finish installing?\" / buttons \"Remind me later\" · \"Restart now\" (greyed) / small \"Only the administrator can install updates.\" / sticky (Mel) \"who's the administrator?\"", "layout": "dialog", "task": "Update Available", "icon": "warn", "heading": "Restart Britain to\nfinish installing?", "w": 980, "progress": {"pct": 3, "label": "Installing... (since 1872)"}, "small": "Only the administrator can install updates.", "buttons": ["Remind me later", "~Restart now (admin only)"], "sticky": "who's the\nadministrator?", "reveal": {"sticky": 1}}, {"id": "5", "type": "diagram", "secs": 13, "at": 40, "title": "pub.sim", "say": "\"Five people in a pub. The Sun party has three policies. Vote on each one: every one loses, three-two. Vote for the party: Sun wins, three-two. Same five people. Same opinions.\" Beat. \"Slightly more pints.\"", "onscreen": "phase 1 \"VOTE ON EACH POLICY: ALL THREE LOSE 3-2\" / phase 2 \"VOTE FOR THE PARTY: SUN PARTY WINS 3-2\" / small \"same five people. same opinions.\"", "layout": "diagram", "task": "pub.sim", "scene": "pub", "caption": "VOTE ON EACH POLICY: ALL THREE LOSE. VOTE FOR THE PARTY: IT WINS.", "small": "same five people. same opinions.", "steps": 3}, {"id": "6", "type": "meme", "secs": 16, "at": 53, "title": "", "say": "\"Every website lets you untick the cookies. Your ballot: accept all, or accept all.\" Click: \"It's working as designed. That's the bug. Software calls the fix composition over inheritance. You'd call it 'manage preferences'.\" Click: \"Remind me after the next election.\" Beat. \"Which is also a bundle.\"", "onscreen": "heading \"We value your democracy.\" / text \"By voting, you accept all policies in this bundle, including the ones you can't stand.\" / buttons \"Accept all\" · \"Accept all\" / greyed link \"Manage preferences (coming soon since 1872)\" / click 1: bottom \"IT'S WORKING EXACTLY AS DESIGNED. THAT'S THE BUG.\" / click 2, the nag: \"Install 'Manage preferences'?\" · buttons \"Remind me after the next election\" · \"Install\" · small \"Note: the next election is also a bundle.\"", "layout": "split", "task": "cookie_settings.exe", "left": {"title": "Your vote: cookie settings", "image": {"file": "mel-ballot-banner.jpg", "prompt": "a cookie-consent banner stretched across a ballot paper; Mel in the corner, mug raised, one eyebrow up"}, "heading": "We value your democracy.", "text": "By voting, you accept every policy in the bundle. Even the ones you can't stand.", "buttons": ["Accept all", "Accept all"]}, "right": {"title": "Update Available", "heading": "Install 'Manage preferences'?", "text": "Note: the next election is also a bundle.", "buttons": ["Remind me after the next election", "Install"]}, "bottom": "WORKING AS DESIGNED. THAT'S THE BUG.", "reveal": {"bottom": 1, "right": 2}}, {"id": "7", "type": "meme", "secs": 7, "at": 69, "title": "", "say": "\"Here's how a law goes live. Everyone. All at once. Two buttons. Both yes.\" Click: \"And there's no undo.\"", "onscreen": "heading \"Apply this law to EVERYONE, ALL AT ONCE?\" / buttons \"Yes\" · \"YES\" / click: \"Undo is not available for this action.\" with the bar label \"Installing... please do not turn off your country.\"", "layout": "split", "task": "parliament.exe", "left": {"title": "Parliament.exe", "image": {"file": "red-button-desk.jpg", "prompt": "one huge red button on an otherwise empty desk"}, "heading": "Apply this law to **EVERYONE, ALL AT ONCE**?", "buttons": ["Yes", "YES"]}, "right": {"title": "Law Installer", "heading": "Undo is not available for this action.", "text": "Installing...\nplease do not turn off your country.", "buttons": ["OK"]}, "reveal": {"right": 1}}, {"id": "8", "type": "diagram", "secs": 15, "at": 76, "title": "build.log", "say": "\"Software ships in small bricks. Tick. Tick. That one's wrong: lift it out, the tower's fine. Not move fast and break things. Move small, and keep the undo.\" Beat. \"Politics drops the whole tower off a crane, then schedules a review.\"", "onscreen": "left \"SMALL. CHECKED. UNDOABLE.\" / right \"ONE DROP. NO TICKS.\"", "layout": "diagram", "task": "build.log", "scene": "tower", "caption": "ONE OF THESE HAS AN UNDO.", "small": "politics: drop the whole tower, then schedule a review", "steps": 3}, {"id": "9", "type": "meme", "secs": 12, "at": 91, "title": "Edit", "say": "\"That review comes three to five years later. How many actually happen? The Lords were told: nobody keeps a central record.\" Click: \"Your phone has Ctrl-Z. Your country has 'we'll look into it'.\"", "onscreen": "heading \"Undo is not available for this law.\" / text \"Review: normally 3 to 5 years later.\" / small \"Central record of whether that happened: none.\" / click: buttons \"We'll look into it\" · \"OK\"", "layout": "dialog", "task": "edit_undo.exe", "icon": "warn", "image": {"file": "ctrl-z-statute.jpg", "prompt": "a keyboard with the Ctrl and Z keys glowing, beside a thick statute book with a sticky note on it reading UNDO?"}, "heading": "Undo is not available for this law.", "text": "Review: normally 3 to 5 years later.", "small": "Central record of whether that happened: **none**.", "buttons": ["We'll look into it", "OK"], "reveal": {"buttons": 1}}, {"id": "10", "type": "meme", "secs": 12, "at": 103, "title": "sandbox_vs_live.jpg", "say": "\"And it can be done. Since 2016 the regulator has given new money apps a sandbox to test in first.\" Click: \"Your bus timetable gets tested on you.\" Click: \"Everywhere? Remind me when it's someone else's problem.\"", "onscreen": "left \"NEW MONEY APPS: a safe sandbox to test in first (since 2016)\" / right \"YOUR BUS TIMETABLE: straight to live\" / click 1: bottom \"TESTED ON YOU.\" / click 2, the nag: \"Install 'test it first' everywhere?\" · buttons \"Remind me when it's someone else's problem\" · \"Install\"", "layout": "picture", "task": "testing.exe", "image": {"file": "sandbox-vs-bus.jpg", "prompt": "two halves side by side: left, a bright room with a TEST HERE FIRST banner and little boxes of app icons on tables; right, Mel and the dog at a bus stop under a sign reading 14: DELAYED, a timetable pinned to the post"}, "top": "MONEY APPS: TESTED FIRST (SINCE 2016)", "bottom": "YOUR BUS TIMETABLE DOESN'T GET A SANDBOX. IT GOES STRAIGHT TO LIVE. ON YOU.", "side": {"title": "Update Available", "text": "**Test it first, everywhere?**", "buttons": ["Remind me when it's someone else's problem", "Install"]}, "reveal": {"bottom": 1, "side": 2}}, {"id": "11", "type": "meme", "secs": 10, "at": 115, "title": "", "say": "\"A pill gets years of trials before it's allowed in your bathroom cabinet. A policy gets a confident announcement.\" Click: \"Side effects may include: all of us.\"", "onscreen": "left \"A PILL: years of trials · a control group\" · button \"Prescribe\" / right \"A POLICY: a confident announcement\" · buttons \"Run on everyone\" · \"Run on everyone\" / click: small print under the right window \"Side effects may include: all of us.\"", "layout": "split", "task": "compare.exe", "left": {"title": "pill.exe", "image": {"file": "pill-trial-record.jpg", "prompt": "a pill bottle trailing a long paper trial record across a table, a small CONTROL GROUP sign beside it"}, "heading": "A PILL", "lines": ["Years of trials", "A control group"], "buttons": ["Prescribe"]}, "right": {"title": "policy.exe", "image": {"file": "empty-lectern.jpg", "prompt": "a microphone on an empty lectern under a banner reading TRUST US, nobody at it"}, "heading": "A POLICY", "text": "A confident announcement.", "buttons": ["Run on everyone", "Run on everyone"]}, "bottom": "SIDE EFFECTS MAY INCLUDE: ALL OF US.", "reveal": {"bottom": 1}}, {"id": "12", "type": "diagram", "secs": 14, "at": 125, "title": "letters.xls", "say": "\"The other way. HMRC wrote to people who owed tax. Plain letter: sixty-seven and a half percent paid. Add one line, 'most people in your postcode have already paid': seventy-nine.\" Beat. \"Nobody passed a law. They tested a sentence.\"", "onscreen": "caption \"SAME LETTER, ONE EXTRA LINE: 67.5% → 79% PAID\" / small \"HMRC, overdue tax\"", "layout": "diagram", "task": "letters.xls", "scene": "letters", "caption": "SAME LETTER, ONE EXTRA LINE: **67.5% → 79%** PAID", "small": "HMRC, overdue tax", "steps": 2}, {"id": "13", "type": "meme", "secs": 6, "at": 139, "title": "Letter from the taxman", "say": "\"Your neighbours have paid. Two options.\" Click: \"Peer pressure. Now evidence-based.\"", "onscreen": "heading \"Most people in your postcode have already paid.\" / click: buttons \"Pay\" · \"Move house\" / bottom \"PEER PRESSURE. NOW EVIDENCE-BASED.\"", "layout": "dialog", "task": "post.exe", "icon": "info", "image": {"file": "mel-doormat.jpg", "prompt": "Mel on the doormat opening a brown envelope, the dog looking up at it"}, "heading": "Most people in your postcode have already paid.", "buttons": ["Pay", "Move house"], "bottom": "PEER PRESSURE. NOW EVIDENCE-BASED.", "reveal": {"buttons": 1, "bottom": 1}}, {"id": "14", "type": "meme", "secs": 11, "at": 145, "title": "Release notes", "say": "\"So that's the update. Vote issue by issue. Change laws small, check them, keep an undo. No policy without its experiment.\" Click: \"Download size: smaller than one manifesto.\"", "onscreen": "heading \"DEMOCRACY 2.0: what's new\" / one per click: \"1. Vote issue by issue, not one bundle.\" · \"2. Change laws small. Check them. Keep an undo.\" · \"3. No policy without its experiment.\" / footer \"Download size: smaller than one manifesto.\"", "layout": "release", "task": "democracy_2.0_notes.txt", "heading": "DEMOCRACY 2.0: what's new", "lines": ["1. Vote issue by issue, not one bundle.", "2. Change laws small. Check them. Keep an undo.", "3. No policy without its experiment."], "footer": "Download size: smaller than one manifesto.", "buttons": ["Install", "Remind me later"], "reveal": {"lines": 1, "footer": 4}}, {"id": "15", "type": "meme", "secs": 13, "at": 156, "title": "Update Available", "say": "\"Every time, somebody clicked remind me later. Well. Hello. I'm from later.\" Click: \"I've seen how it ends when nobody installs it. I am the reminder. And I'd quite like you lot to make it.\"", "onscreen": "heading \"Remind me later?\" / small \"You have used all your laters. (154 years of them.)\" / buttons \"Install now\" · \"Remind me later\" (greyed) / click: toast \"Reminder from: later. It's later.\"", "layout": "dialog", "task": "Update Available", "icon": "warn", "heading": "Remind me later?", "small": "You have used all your laters. (154 years of them.)", "buttons": ["Install now", "~Remind me later (0 left)"], "bottom": "REMINDER FROM: LATER. IT'S LATER.", "reveal": {"bottom": 1}}, {"id": "16", "type": "meme", "secs": 16, "at": 169, "title": "", "say": "\"Somebody's had the mouse since 1872. Ask for a go. Other people already are. Jury service, for the bins. Council money, voted on in a village hall. A bug tracker for potholes. How your MP voted, issue by issue. In Taiwan, four camps became two. Go and look.\"", "onscreen": "wall \"PARTIAL UPDATES FOUND NEARBY\" / small \"other people are already rethinking this. thousands more: participedia.net\" / toasts: - \"Sortition Foundation · jury service, but for the bin collection · sortitionfoundation.org\" - \"PB Scotland · the council's actual money, voted on in a village hall · pbscotland.scot\" - \"FixMyStreet · somebody gave the country a bug tracker · fixmystreet.com\" - \"TheyWorkForYou · how your MP voted, issue by issue · theyworkforyou.com\" - \"What Works Network · nine centres that check what works · gov.uk/guidance/what-works-network\" - \"Pol.is · in Taiwan, an argument about Uber went from four camps to two · pol.is\"", "layout": "toasts", "task": "Notifications (4)", "wall": {"heading": "PARTIAL UPDATES FOUND NEARBY", "small": "other people are already rethinking this.\nalso: theyworkforyou.com · What Works Network (gov.uk/guidance/what-works-network)\nthousands more: participedia.net"}, "toasts": [{"title": "Sortition Foundation", "text": "jury service, but for the bins\nsortitionfoundation.org"}, {"title": "PB Scotland", "text": "council money, voted on in a village hall\npbscotland.scot"}, {"title": "FixMyStreet", "text": "somebody gave the country a bug tracker\nfixmystreet.com"}, {"title": "Pol.is", "text": "Taiwan, on Uber: four camps became two\npol.is"}], "reveal": {}}, {"id": "17", "type": "title", "secs": 12, "at": 185, "title": "Democracy 2.0 Setup", "say": "\"So I've taken the liberty of removing a button.\" Click: \"Four percent. Don't laugh. Fastest it's moved since 1872.\" Click: \"Ooh. Eighteen seventy-three. We're moving.\" Click: \"...Unrelated.\"", "onscreen": "heading \"DEMOCRACY 2.0\" / buttons \"Install now\" · \"~~Remind me later~~\" / small \"(button removed by the future)\" / sticky \"...me?\" / click 1: progress 3% → 4% \"Installing... (fastest it's moved since 1872)\" / click 2: clock 1872 → 1873 / click 3: toast \"Bus 14: arriving (unrelated)\"", "layout": "dialog", "task": "Update Available", "icon": "warn", "heading": "DEMOCRACY 2.0", "text": "**4%.** Fastest it's moved since 1872.", "progress": {"pct": 4, "label": "Installing..."}, "small": "(button removed by the future)", "buttons": ["Install now", "~~Remind me later"], "sticky": "...me?", "top": "WE'RE MOVING.", "bottom": "BUS 14: ARRIVING. (UNRELATED.)", "reveal": {"text": 1, "top": 2, "bottom": 3}, "clockTo": {"text": "1873", "step": 2}}]};
+const PUBLIC=true;
+if(PUBLIC)document.documentElement.classList.add("public");
+window.THEME={layouts:{},scenes:{},helpers:{}};
+</script>
+<script>
+/* Shared 3D helpers for this theme's diagram scenes (three.js r128, global THREE).
+   A scene is THEME.scenes[name] = (mount, slide, H) => ({ step(n), stop() }).
+   - mount: the .scene-mount div (position:relative). Put the canvas and any labels inside it.
+   - step(n): called on every step change (0 .. slide.steps-1). Animate towards that state.
+   - stop(): cancel the frame loop, dispose the renderer, remove listeners.
+   Look: flat, low-poly, chunky, in the theme palette below; labels are HTML tags (.tag3d). */
+(function(){
+const P={desk:0x3b7f86,win:0xd4d3cc,dk:0x4e4d48,bar:0x1f3070,bar2:0x3c55a8,ok:0x2d9a4c,warn:0xffd43b,err:0xd22d2d,ink:0x141618,white:0xffffff,
+  bricks:[0x2d9a4c,0xffd43b,0xd22d2d,0x3c55a8,0xe58a2e,0x8a6fd1]};
+THEME.palette=P;
+THEME.three={
+  /* setup(mount,{bg,fov,cam:[x,y,z],look:[x,y,z]}) -> {renderer,scene,camera,render(),loop(fn),stop(),label(text,cls),place(label,vec3)} */
+  setup(mount,o={}){
+    const renderer=new THREE.WebGLRenderer({antialias:true});
+    renderer.setPixelRatio(Math.min(2,window.devicePixelRatio||1));
+    mount.appendChild(renderer.domElement);
+    const scene=new THREE.Scene();scene.background=new THREE.Color(o.bg??P.desk);
+    const camera=new THREE.PerspectiveCamera(o.fov||35,16/9,.1,200);
+    camera.position.set(...(o.cam||[0,4,12]));const look=new THREE.Vector3(...(o.look||[0,1,0]));camera.lookAt(look);
+    scene.add(new THREE.HemisphereLight(0xffffff,0x6a6a6a,.8));
+    const sun=new THREE.DirectionalLight(0xffffff,.75);sun.position.set(5,10,7);scene.add(sun);
+    const labels=[];
+    function size(){const w=mount.clientWidth,h=mount.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}
+    const ro=new ResizeObserver(size);ro.observe(mount);size();
+    const v=new THREE.Vector3();
+    function place(el,pos){v.copy(pos).project(camera);el.style.left=((v.x+1)/2*mount.clientWidth)+"px";el.style.top=((1-v.y)/2*mount.clientHeight)+"px";el.style.display=v.z>1?"none":""}
+    function render(){labels.forEach(l=>l.obj&&place(l.el,l.obj.getWorldPosition(new THREE.Vector3()).add(l.off)));renderer.render(scene,camera)}
+    let raf=0,last=performance.now(),fn=null;
+    function tick(now){const dt=Math.min(.05,(now-last)/1000);last=now;if(fn)fn(dt,now/1000);render();raf=requestAnimationFrame(tick)}
+    return {renderer,scene,camera,render,
+      loop(f){fn=f;last=performance.now();raf=requestAnimationFrame(tick)},
+      /* label(text,cls,obj,offset): an HTML tag that follows a 3D object */
+      label(text,cls="",obj=null,off=[0,0,0]){const el=document.createElement("div");el.className="tag3d "+cls;el.textContent=text;mount.appendChild(el);const l={el,obj,off:new THREE.Vector3(...off)};labels.push(l);return l},
+      stop(){cancelAnimationFrame(raf);ro.disconnect();renderer.dispose();scene.traverse(o=>{o.geometry&&o.geometry.dispose();o.material&&(Array.isArray(o.material)?o.material.forEach(m=>m.dispose()):o.material.dispose())});mount.innerHTML=""}};
+  },
+  box(w,h,d,color,o={}){return new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshStandardMaterial({color,roughness:o.rough??.85,flatShading:true}))},
+  /* ease toward a target: x += (to-x)*k, frame-rate independent */
+  damp(x,to,rate,dt){return x+(to-x)*(1-Math.exp(-rate*dt))},
+  ease(x){x=Math.min(1,Math.max(0,x));return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
+};
+})();
+
+/* Future Proof · "Update Available" layouts. Field reference: LAYOUTS.md beside this file.
+   Every layout returns HTML for the 1600x900 stage. H = engine helpers {esc, t, slot, reduced}. */
+(function(){
+const L=THEME.layouts;
+const S=(s,f)=>s.reveal&&s.reveal[f]!=null?` data-step="${s.reveal[f]}"`:"";   // reveal a field on step n
+const task=(s,H)=>`<div class="task"><span class="start"><i></i>BRITAIN</span><span class="tab">${H.esc(s.task||s.title||"")}</span>${s.clockTo?`<span class="clock" data-until="${s.clockTo.step}">${H.esc(s.clock||"1872")}</span><span class="clock tick" data-step="${s.clockTo.step}">${H.esc(s.clockTo.text)}</span>`:`<span class="clock">${H.esc(s.clock||"1872")}</span>`}</div>`;
+const caps=(s,H)=>(s.top?`<div class="cap top${s.top.length>70?" sm":""}"${S(s,"top")}>${H.t(s.top)}</div>`:"")+(s.bottom?`<div class="cap bottom${s.bottom.length>70?" sm":""}"${S(s,"bottom")}>${H.t(s.bottom)}</div>`:"");
+const win=(H,{title,x,y,w,h,body,buttons,cls="",attr="",battr=""})=>`<div class="win ${cls}" style="left:${x}px;top:${y}px;width:${w}px;${h?`height:${h}px`:""}"${attr}><div class="tb"><span>${H.esc(title||"")}</span><span class="x"><span>_</span><span>□</span><span>×</span></span></div><div class="wb">${body||""}</div>${buttons&&buttons.length?`<div class="btns"${battr}>${buttons.map((b,i)=>{const off=b.startsWith("~"),gone=b.startsWith("~~");return `<span class="btn${i===0?" def":""}${off?" off":""}${gone?" gone":""}">${H.esc(b.replace(/^~+/,""))}</span>`}).join("")}</div>`:""}</div>`;
+const icon=k=>k?`<div class="ico ${k}">${{error:"×",warn:"!",question:"?",ok:"✓",info:"i"}[k]||"i"}</div>`:"";
+const prog=(p,H)=>{if(!p)return"";return `<div class="prog${p.err?" err":""}"><i style="width:${Math.max(3,Math.min(100,p.pct||0))}%"></i></div>${p.label?`<div class="plabel">${H.t(p.label)}</div>`:""}`};
+const sticky=(s,H)=>s.sticky?`<div class="sticky" style="right:70px;top:${s.top?190:80}px;max-width:420px"${S(s,"sticky")}>${H.t(s.sticky)}</div>`:"";
+const frame=(s,H,inner)=>`<div class="desk${s.dark?" dark":""}"></div>${inner}${sticky(s,H)}${caps(s,H)}${task(s,H)}`;
+const box=s=>{const top=s.top?(s.top.length>70?200:170):70,bot=s.bottom?(s.bottom.length>70?250:220):90;return {y:top,h:900-top-bot}};
+
+L.dialog=(s,H)=>{const b=box(s),w=s.w||(s.image?1360:1120),x=(1600-w)/2;
+  const text=`<div class="row">${icon(s.icon)}<div style="display:flex;flex-direction:column;gap:16px;min-width:0">${s.heading?`<h3>${H.t(s.heading)}</h3>`:""}${s.text?`<div${S(s,"text")}>${H.t(s.text)}</div>`:""}${s.small?`<div class="small">${H.t(s.small)}</div>`:""}</div></div>`;
+  const body=s.image?`<div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;height:100%;min-height:0"><div style="min-height:0">${H.slot(s.image)}</div><div style="display:flex;flex-direction:column;gap:18px">${text}${prog(s.progress,H)}</div></div>`:text+prog(s.progress,H);
+  return frame(s,H,win(H,{title:s.title,x,y:b.y,w,h:s.image?b.h:null,body,buttons:s.buttons,attr:S(s,"window"),battr:S(s,"buttons")}))};
+
+L.picture=(s,H)=>{const b=box(s),w=Math.round(b.h*1.55)+40,x=(1600-w)/2;
+  const side=s.side?win(H,{title:s.side.title,x:Math.min(x+w-260,1600-660),y:b.y+b.h-260,w:620,body:`<div class="row">${icon(s.side.icon)}<div>${H.t(s.side.text||"")}</div></div>`,buttons:s.side.buttons,attr:S(s,"side")}):"";
+  return frame(s,H,win(H,{title:s.title||(s.image&&s.image.file)||"picture.jpg",x,y:b.y,w,h:b.h,body:`<div style="flex:1;min-height:0;margin:-14px -18px">${H.slot(s.image)}</div>`})+side)};
+
+L.split=(s,H)=>{const b=box(s),w=700,g=60,x0=(1600-2*w-g)/2;
+  const pane=(p,x,f)=>p?win(H,{title:p.title,x,y:b.y,w,h:b.h,attr:S(s,f),body:`${p.label?`<div class="plab">${H.esc(p.label)}</div>`:""}${p.image?`<div style="flex:1;min-height:0">${H.slot(p.image)}</div>`:""}${p.heading?`<h3 style="font-size:44px">${H.t(p.heading)}</h3>`:""}${p.text?`<div>${H.t(p.text)}</div>`:""}${p.lines?`<div class="lines">${p.lines.map(l=>`<div>${Array.isArray(l)?`<span>${H.esc(l[0])}</span><span>${H.esc(l[1])}</span>`:`<span>${H.esc(l)}</span>`}</div>`).join("")}</div>`:""}`,buttons:p.buttons}):"";
+  return frame(s,H,pane(s.left,x0,"left")+pane(s.right,x0+w+g,"right"))};
+
+L.release=(s,H)=>{const b=box(s),w=s.image?1080:1180,x=s.image?60:(1600-w)/2;
+  const pic=s.image?win(H,{title:s.image.file||"photo.jpg",x:1160,y:b.y+40,w:400,h:Math.min(520,b.h-40),body:`<div style="flex:1;min-height:0;margin:-14px -18px">${H.slot(s.image)}</div>`}):"";
+  return frame(s,H,pic+win(H,{title:s.title||"Release notes",x,y:b.y,w,h:b.h,buttons:s.buttons,body:`${s.heading?`<h3>${H.t(s.heading)}</h3>`:""}<div class="lines">${(s.lines||[]).map((l,i)=>`<div${s.reveal&&s.reveal.lines!=null?` data-step="${s.reveal.lines+i}"`:""}>${Array.isArray(l)?`<span>${H.esc(l[0])}</span><span>${H.esc(l[1])}</span>`:`<span>${H.t(l)}</span>`}</div>`).join("")}</div>${s.footer?`<div class="small"${S(s,"footer")}>${H.t(s.footer)}</div>`:""}`}))};
+
+L.ticket=(s,H)=>{const b=box(s),w=s.image?1400:1120,x=(1600-w)/2;
+  const f=`<dl class="fields">${(s.fields||[]).map(([k,v])=>`<dt>${H.esc(k)}</dt><dd${k===s.highlight?S(s,"highlight"):""}>${k===s.highlight?`<span class="hl">${H.t(v)}</span>`:H.t(v)}</dd>`).join("")}</dl>`;
+  const body=`${s.heading?`<h3>${H.t(s.heading)}</h3>`:""}${s.image?`<div style="display:grid;grid-template-columns:2fr 3fr;gap:26px;flex:1;min-height:0"><div style="min-height:0">${H.slot(s.image)}</div>${f}</div>`:f}`;
+  return frame(s,H,win(H,{title:s.title||"Issue tracker",x,y:b.y,w,h:b.h,body,buttons:s.buttons}))};
+
+L.list=(s,H)=>{const b=box(s),w=s.image?1400:900,x=(1600-w)/2;
+  const lines=`<div class="lines">${s.heading?`<div style="justify-content:center;font-weight:700">${H.t(s.heading)}</div>`:""}${(s.rows||[]).map(r=>`<div><span>${H.esc(r[0])}</span><span>${H.esc(r[1]??"")}</span></div>`).join("")}${s.total?`<div class="tot"${S(s,"total")}><span>${H.esc(s.total[0])}</span><span>${H.esc(s.total[1]??"")}</span></div>`:""}${s.footer?`<div style="display:block;text-align:center;margin-top:10px"${S(s,"footer")}>${H.t(s.footer)}</div>`:""}</div>`;
+  const body=s.image?`<div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;flex:1;min-height:0"><div style="min-height:0">${H.slot(s.image)}</div>${lines}</div>`:lines;
+  return frame(s,H,win(H,{title:s.title||"Order summary",x,y:b.y,w,h:b.h,body,buttons:s.buttons}))};
+
+L.toasts=(s,H)=>{const ts=s.toasts||[];
+  const wall=s.wall?`<div class="wall">${H.t(s.wall.heading||"")}${s.wall.small?`<small>${H.t(s.wall.small)}</small>`:""}</div>`:"";
+  const img=s.image?win(H,{title:s.image.file||"photo.jpg",x:80,y:s.wall?430:90,w:720,h:s.wall?380:720,body:`<div style="flex:1;min-height:0;margin:-14px -18px">${H.slot(s.image)}</div>`}):"";
+  const gap=Math.min(190,Math.floor(680/Math.max(1,ts.length)));
+  return frame(s,H,wall+img+ts.map((x,i)=>`<div class="toast" style="bottom:${80+(ts.length-1-i)*gap}px"${s.reveal?` data-step="${i}"`:""}><div class="tb"><span>${H.esc(x.title||"Notification")}</span><span class="x"><span>×</span></span></div><div class="wb">${H.t(x.text||"")}</div></div>`).join(""))};
+
+L.title=(s,H)=>`<div class="boot"><h1>${H.t(s.heading||"")}</h1>${s.sub?`<p${S(s,"sub")}>${H.t(s.sub)}</p>`:""}${s.progress?`<div class="prog"><i style="width:${Math.max(3,Math.min(100,s.progress.pct||0))}%"></i></div>${s.progress.label?`<p style="font-size:26px">${H.t(s.progress.label)}</p>`:""}`:""}${s.image?`<div style="width:280px;height:280px;position:absolute;right:60px;bottom:60px">${H.slot(s.image)}</div>`:""}</div>`;
+
+L.link=(s,H)=>{const img=s.image?win(H,{title:s.image.file||"photo.jpg",x:90,y:110,w:760,h:600,body:`<div style="flex:1;min-height:0;margin:-14px -18px">${H.slot(s.image)}</div>`}):"";
+  return frame(s,H,`<div class="icon" style="left:1430px;top:700px"><i>${H.esc((s.name||"?")[0])}</i><span>${H.esc(s.name||"")}</span></div>`+img+win(H,{title:"Open web page?",x:s.image?700:300,y:s.image?330:220,w:820,buttons:["Open","Remind me in 5 years"],body:`<div class="row">${icon("question")}<div style="display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:46px">${H.esc(s.name||"")}</h3><div style="font:400 30px var(--mono);overflow-wrap:anywhere">${H.esc(s.url||"")}</div>${s.line?`<div>${H.t(s.line)}</div>`:""}</div></div>`})+(s.n?`<div class="sticky" style="right:60px;top:60px">${H.esc(s.n)}</div>`:""))};
+
+L.card=(s,H)=>{const b=box(s),w=1000,x=s.image?120:(1600-w)/2;
+  return frame(s,H,win(H,{title:s.title||"Tip of the day",x,y:b.y,w,buttons:s.buttons||["Close"],body:`<div class="row">${icon(s.icon||"info")}<div style="display:flex;flex-direction:column;gap:22px">${s.heading?`<h3>${H.t(s.heading)}</h3>`:""}${(s.lines||[]).map((l,i)=>`<div style="font:700 52px/1.1 var(--sans)" data-step="${i}">${H.t(l)}</div>`).join("")}</div></div>`})+(s.image?`<div style="position:absolute;right:60px;bottom:80px;width:300px;height:300px">${H.slot(s.image)}</div>`:""))};
+
+L.fatal=(s,H)=>`<div class="fatal"><div class="hd">${H.esc(s.code||"BRITAIN")}</div><div class="big">${H.t(s.big||"")}</div>${s.text?`<div${S(s,"text")}>${H.t(s.text)}</div>`:""}${s.footer?`<div style="margin-top:auto"${S(s,"footer")}>${H.t(s.footer)}</div>`:""}</div>`;
+
+L.diagram=(s,H)=>{const w=1460,x=70;
+  return frame(s,H,win(H,{title:s.title||"diagram.exe",x,y:30,w,h:790,body:`${s.caption?`<div class="dcap">${H.t(s.caption)}</div>`:""}<div class="scene-mount"></div>${s.small?`<div class="dsmall">${H.t(s.small)}</div>`:""}`}))};
+
+L.fallback=(s,H)=>frame(s,H,win(H,{title:"slide "+s.id,x:200,y:100,w:1200,body:`<h3>${H.t(s.onscreen||"")}</h3><div class="small">${H.t(s.visual||"")}</div>`}));
+})();
+
+/* Slide 37: maps of agreement, not a winner.
+   step 0: a field of grey dots scattered over the floor, each one a grumble.
+   step 1: the dots drift and clump into four coloured camps.
+   step 2: a glowing band forms between them, WHERE WE AGREE; some dots from every camp settle in it,
+   the camps pull towards it and four become two (as on vTaiwan's Uber debate). No winner is marked. */
+THEME.scenes.dots=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,8.6,9.0],look:[0,-.5,.6],fov:40});
+  let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  const floor=T.box(15,.2,7.6,0x1f4a50);floor.position.set(0,-.1,0);k.scene.add(floor);
+  const bandMat=new THREE.MeshStandardMaterial({color:P.warn,emissive:new THREE.Color(P.warn),emissiveIntensity:.6,transparent:true,opacity:0,flatShading:true});
+  const band=new THREE.Mesh(new THREE.BoxGeometry(1.9,.06,7.2),bandMat);band.position.set(0,.04,0);k.scene.add(band);
+  /* four camps (x, z) and where each settles once two pairs merge */
+  const camps=[[-4.6,-2],[-4.2,2],[4.4,-2.1],[4.7,1.9]],merged=[[-3.6,0],[-3.6,0],[3.6,0],[3.6,0]];
+  const cols=[P.bricks[4],P.err,P.bar2,P.bricks[5]];
+  const geo=new THREE.IcosahedronGeometry(.17,0),grey=new THREE.Color(0xb8b7b0);
+  const dots=[];
+  for(let i=0;i<160;i++){const c=i%4,shared=i%6===0,r=Math.sqrt(rnd())*1.25,a=rnd()*6.283;
+    const m=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({color:grey,flatShading:true}));m.position.y=.2;k.scene.add(m);
+    const ox=Math.cos(a)*r,oz=Math.sin(a)*r*.85;
+    dots.push({m,c,shared,col:new THREE.Color(cols[c]),
+      p0:new THREE.Vector3((rnd()-.5)*13.6,.2,(rnd()-.5)*6.6),
+      p1:new THREE.Vector3(camps[c][0]+ox,.2,camps[c][1]+oz),
+      p2:shared?new THREE.Vector3((rnd()-.5)*1.4,.24,(rnd()-.5)*6.4):new THREE.Vector3(merged[c][0]+ox*1.15,.2,merged[c][1]+oz*1.9),
+      ph:rnd()*6.283,delay:rnd()*.25});}
+  const anchors=camps.map(([x,z])=>{const o=new THREE.Object3D();o.position.set(x,.3,z);k.scene.add(o);return o});
+  const campL=anchors.map((o,i)=>{const l=k.label("CAMP "+(i+1),"",o,[0,0,-1.25]);l.el.style.opacity=0;return l});
+  const sides=[[-3.6,0],[3.6,0]].map(([x,z])=>{const o=new THREE.Object3D();o.position.set(x,.3,z);k.scene.add(o);return o});
+  const twoL=sides.map((o,i)=>{const l=k.label(["CAMPS 1+2","CAMPS 3+4"][i],"",o,[0,0,-2.35]);l.el.style.opacity=0;return l});
+  const agree=k.label("WHERE WE AGREE","warn",band,[0,.3,-3.45]);agree.el.style.opacity=0;agree.el.style.fontSize="30px";
+  const noWin=k.label("NO WINNER, NO ALGORITHM CHOOSING","",band,[0,.2,3.9]);noWin.el.style.opacity=0;
+  const white=new THREE.Color(P.white);
+  let target=0,t=0;
+  k.loop((dt,now)=>{t=H.reduced?target:T.damp(t,target,2.6,dt);
+    const g=T.ease((t-1)*1.3);
+    bandMat.opacity=.8*g;bandMat.emissiveIntensity=.4+.3*g*(1+Math.sin(now*2.2))/2;
+    dots.forEach(d=>{const a=T.ease(t*1.3-d.delay),b=T.ease((t-1)*1.4-d.delay);
+      const p=d.p0.clone().lerp(d.p1,a).lerp(d.p2,b);
+      if(!H.reduced){p.x+=Math.sin(now*.7+d.ph)*.06;p.z+=Math.cos(now*.6+d.ph)*.06;}
+      d.m.position.copy(p);
+      d.m.material.color.copy(grey).lerp(d.col,a);if(d.shared)d.m.material.color.lerp(white,b*.7);});
+    const c1=T.ease(t*1.3-.3);campL.forEach(l=>l.el.style.opacity=String(c1*(1-g)));
+    twoL.forEach(l=>l.el.style.opacity=String(g));
+    agree.el.style.opacity=String(g);noWin.el.style.opacity=String(T.ease((t-1.5)*2));
+  });
+  return {step(n){target=n},stop(){k.stop()}};
+};
+
+/* Slide 27: "Same letter, one extra line: 67.5% -> 79% paid." (HMRC, overdue tax)
+   step 0: one envelope splits into two and they fan out: PLAIN LETTER / + POSTCODE LINE
+           (the second one carries a yellow extra line).
+   step 1: the envelopes drop to the floor and two bars rise behind them together,
+           to 67.5% and 79%; the tall bar gets the tag about the postcode. */
+THEME.scenes.letters=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,2.6,11.5],look:[0,1.75,0],fov:34});
+  const vals=slide.values||[67.5,79],FULL=4.2,X=[-2.1,2.1];
+  const floor=T.box(9,.24,3,P.win);floor.position.set(0,-.12,0);k.scene.add(floor);
+  function tag(text,cls,obj,off){const l=k.label(text,cls,obj,off);l.el.style.opacity=0;return l}
+  const bars=vals.map((v,i)=>{const m=T.box(1.9,1,1.3,i?P.ok:0x8b8a83);m.position.set(X[i],0,-.3);k.scene.add(m);
+    const lab=tag(v+"%",i?"ok":"",m,[0,.2,0]);lab.el.style.fontSize="36px";lab.el.style.padding="8px 12px";return {m,h:FULL*v/100,lab}});
+  const note=tag("MOST IN YOUR POSTCODE PAID","warn",bars[1].m,[0,1.05,0]);
+  function envelope(extra){const g=new THREE.Group();
+    const body=T.box(2.4,1.5,.1,0xf4f1e6);g.add(body);
+    [-1,1].forEach(s=>{const f=T.box(1.45,.07,.04,P.dk);f.position.set(s*.6,.38,.07);f.rotation.z=-s*.55;g.add(f)});
+    const addr=T.box(.9,.08,.03,0x9b9a93);addr.position.set(0,-.25,.07);g.add(addr);
+    const addr2=T.box(.7,.08,.03,0x9b9a93);addr2.position.set(-.1,-.42,.07);g.add(addr2);
+    if(extra){const l=T.box(1.6,.14,.03,P.warn);l.position.set(0,-.6,.07);g.add(l)}
+    k.scene.add(g);return g}
+  const env=[envelope(false),envelope(true)];
+  const envLab=[tag("PLAIN LETTER","",env[0],[0,1.0,0]),tag("+ POSTCODE LINE","warn",env[1],[0,1.0,0])];
+  let target=0,t=-1;
+  k.loop(dt=>{t=H.reduced?target:T.damp(t,target,2.8,dt);
+    const fan=T.ease((t+.85)/.75),rise=T.ease(t),drop=T.ease(t*1.4);
+    env.forEach((g,i)=>{const s=i?1:-1;
+      const fx=s*.15+(X[i]-s*.15)*fan,fy=1.9,fr=s*-.18*fan;
+      g.position.set(fx,fy+(.42-fy)*drop,.4+(1.25-.4)*drop);
+      g.rotation.set(-.35*drop,0,fr*(1-drop));
+      g.scale.setScalar(1-.45*drop);
+      envLab[i].el.style.opacity=String(fan>.9&&drop<.2?1:0);});
+    bars.forEach((b,i)=>{const h=Math.max(.001,b.h*rise);b.m.visible=rise>.01;b.m.scale.y=h;b.m.position.y=h/2;
+      b.lab.off.y=h/2+.2;b.lab.el.style.opacity=String(rise>.05?1:0);
+      b.lab.el.textContent=(Math.round(vals[i]*rise*10)/10).toFixed(vals[i]%1?1:0)+"%";});
+    note.off.y=bars[1].h*rise/2+1.0;note.el.style.opacity=String(rise>.95?1:0);
+  });
+  return {step(n){target=n},stop(){k.stop()}};
+};
+
+/* Slide 35: "A suggestion box with no wire."
+   step 0: the street: a bright suggestion box, a plain DECISION building, a pipe from the box
+           that stops short of the building (a gap), two gauges on the pipe (10,000 / 100,000), needles at rest.
+   step 1: ideas drop into the box, the needles swing up, ideas spill out of the pipe end onto the
+           pavement and pile up; "NO WIRE" lights over the gap. */
+THEME.scenes.pipe=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,4.1,15.8],look:[.4,2.75,0],fov:30});
+  const add=(m,x,y,z=0)=>{m.position.set(x,y,z);k.scene.add(m);return m};
+  const mat=c=>new THREE.MeshStandardMaterial({color:c,roughness:.8,flatShading:true});
+  add(T.box(26,.2,8,0x2f6a70),0,-.1,0);                 // road
+  add(T.box(26,.24,3,0xb9b7ae),0,.12,.6);                // pavement
+  /* suggestion box: bright, striped, on a post */
+  const BX=-6.4,BY=2.3,PY=2.6,END=1.1,BLD=6.2;
+  add(T.box(.35,1.4,.35,P.dk),BX,.9);
+  add(T.box(2,1.8,1.6,P.bricks[4]),BX,BY);
+  [P.bricks[0],P.bricks[1],P.bricks[3]].forEach((c,i)=>add(T.box(2.04,.22,1.64,c),BX,BY-.55+i*.55));
+  add(T.box(1.1,.12,.5,P.ink),BX,BY+.92);                // slot
+  k.label("YOUR IDEAS","warn",null).obj=add(new THREE.Object3D(),BX,BY+1.35);
+  /* DECISION: big, plain, door shut */
+  add(T.box(4.2,6,3,0xa9a8a1),BLD,3.1,-.6);
+  add(T.box(1.2,2,.1,P.dk),BLD,1.15,.95);
+  for(let r=0;r<3;r++)for(let c=0;c<3;c++)add(T.box(.7,.7,.1,0x7d7c76),BLD-1.3+c*1.3,2.9+r*1.15,.95);
+  k.label("DECISION","",null).obj=add(new THREE.Object3D(),BLD,6.4,-.6);
+  /* the pipe: box side → END, then nothing */
+  const pipe=new THREE.Mesh(new THREE.CylinderGeometry(.32,.32,END-BX-1,10),mat(0x8a8f96));
+  pipe.rotation.z=Math.PI/2;add(pipe,(BX+1+END)/2,PY);
+  add(new THREE.Mesh(new THREE.CylinderGeometry(.4,.4,.25,10),mat(0x6d727a)),END,PY).rotation.z=Math.PI/2;
+  [-4.3,-1.6,.6].forEach(x=>add(T.box(.18,PY-.2,.18,P.dk),x,(PY-.2)/2+.2));
+  const gapTag=k.label("NO WIRE","err",null);gapTag.obj=add(new THREE.Object3D(),(END+BLD-2.1)/2,PY+.35);gapTag.el.style.opacity=0;
+  /* gauges on top of the pipe */
+  const gauges=[[-4.3,"10,000: A REPLY"],[-1.6,"100,000: CONSIDERED FOR DEBATE"]].map(([x,t],i)=>{
+    add(T.box(.15,.5,.15,P.dk),x,PY+.5);
+    const face=new THREE.Mesh(new THREE.CylinderGeometry(.62,.62,.16,16),mat(P.white));face.rotation.x=Math.PI/2;add(face,x,PY+1.35,.1);
+    add(new THREE.Mesh(new THREE.TorusGeometry(.62,.07,5,16),mat(P.ink)),x,PY+1.35,.18);
+    const n=new THREE.Group();add(n,x,PY+1.35,.24);const nd=T.box(.08,.5,.04,P.err);nd.position.y=.25;n.add(nd);
+    const lab=k.label(t,"",null);lab.obj=add(new THREE.Object3D(),x+(i?1.1:0),PY+(i?2.95:2.15));
+    return {n,lab};
+  });
+  /* ideas: a few in flight, a heap that grows on the pavement under the gap */
+  const N=10,HEAP=34,HX=(END+BLD-2.1)/2+.1;
+  const cube=c=>{const m=T.box(.34,.34,.34,c);m.visible=false;k.scene.add(m);return m};
+  const fly=[...Array(N)].map((_,i)=>({m:cube(P.bricks[i%6]),o:i/N}));
+  const heap=[...Array(HEAP)].map((_,i)=>{const m=cube(P.bricks[(i*5)%6]);
+    const layer=i<16?0:i<26?1:i<32?2:3,ring=[16,10,6,2][layer],j=i-[0,16,26,32][layer],r=[1.15,.8,.45,.15][layer];
+    const a=j/ring*Math.PI*2+layer;m.position.set(HX+Math.cos(a)*r*1.3,.41+layer*.3,.6+Math.sin(a)*r*.7);m.rotation.y=a*1.7;return m});
+  let target=0,t=0,clock=0;
+  k.loop(dt=>{
+    t=H.reduced?target:T.damp(t,target,4,dt);
+    const on=target>=1;clock=on?clock+dt:0;
+    gauges.forEach((g,i)=>{g.n.rotation.z=1.1-t*(i?1.6:2.1)+(on&&!H.reduced?Math.sin(clock*9+i)*.05:0)});
+    gapTag.el.style.opacity=String(T.ease((t-.4)*2));
+    const shown=H.reduced?(on?HEAP:0):Math.min(HEAP,Math.floor(clock*16));
+    heap.forEach((m,i)=>m.visible=i<shown);
+    fly.forEach(f=>{const u=on&&!H.reduced?(clock*.8+f.o)%1:-1;f.m.visible=u>=0&&!(u>.32&&u<.62);
+      if(u<0)return;
+      if(u<=.32){const e=u/.32;f.m.position.set(BX+(f.o-.5)*.5,BY+3.4-e*2.4,.2)}           // posted into the box
+      else{const e=(u-.62)/.38;f.m.position.set(END+.3+e*(HX-END+(f.o-.5)*1.4),PY-e*e*(PY-.6)+e*.4,.6*e)} // out of the end, onto the heap
+      f.m.rotation.set(u*6,u*4,0);});
+  });
+  return {step(n){target=n;if(!n)clock=0},stop(){k.stop()}};
+};
+
+/* Slide 13: the Ostrogorski pub. Five people, the Sun party's three policies.
+   Opinions (1 = for): three Sun voters each like two policies and dislike a different one,
+   two Moon voters dislike all three. So every policy loses 3-2, and the party wins 3-2.
+   step 0: the table, five people, a pint each, the Sun and Moon beer mats, three policy cards.
+   step 1: vote on each policy: everyone's opinions light up, each card gets 2 for / 3 against, LOSES 3-2.
+   step 2: vote for a party: the cards go, each person drops a token on a mat, SUN WINS 3-2.
+   The opinion lights stay on in step 2: same people, same opinions. */
+THEME.scenes.pub=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,4.6,12.6],look:[0,2.1,0],fov:38});
+  const glow=(m,c,i)=>{m.material.emissive=new THREE.Color(c);m.material.emissiveIntensity=i;return m};
+  const add=(m,x,y,z)=>{m.position.set(x,y,z);k.scene.add(m);return m};
+  /* seats, left to right: name, opinion on policies 1-3 */
+  const people=[["MEL",[0,1,1]],["",[0,0,0]],["",[1,0,1]],["",[0,0,0]],["",[1,1,0]]];
+  const shirts=[P.bricks[4],P.bricks[5],P.bar2,P.dk,P.ok];
+  add(T.box(13.4,.3,3.2,0x7a5232),0,-.15,.3);
+  add(T.box(13.4,.7,.25,0x5e3f26),0,-.6,1.8);
+  const sunMat=add(glow(new THREE.Mesh(new THREE.CylinderGeometry(.85,.85,.08,8),new THREE.MeshStandardMaterial({color:P.warn,flatShading:true})),P.warn,.35),-5.6,.04,.6);
+  const moonMat=add(glow(new THREE.Mesh(new THREE.CylinderGeometry(.85,.85,.08,8),new THREE.MeshStandardMaterial({color:P.bar2,flatShading:true})),P.bar2,.45),5.6,.04,.6);
+  k.label("SUN PARTY","warn",sunMat,[0,-.2,1.25]);k.label("MOON PARTY","",moonMat,[0,-.2,1.25]);
+  const seat=[-3.6,-1.8,0,1.8,3.6];
+  const tok=new THREE.CylinderGeometry(.42,.42,.18,8);let sunN=0,moonN=0;
+  const folk=people.map(([name,op],i)=>{const x=seat[i];
+    add(T.box(1.1,1.5,.8,shirts[i]),x,.75,-1);
+    const head=add(T.box(.72,.72,.72,0xe2b48c),x,1.92,-1);
+    add(T.box(.36,.62,.36,0xe5a62e),x+.55,.31,0);add(T.box(.38,.12,.38,P.white),x+.55,.66,0);
+    if(name)k.label(name,"",head,[0,.55,0]);
+    const lights=op.map((o,j)=>{const m=add(glow(T.box(.3,.3,.3,o?P.ok:P.err),o?P.ok:P.err,.5),x-.45+j*.42,.15,.95);m.scale.setScalar(.001);return m});
+    const sun=op.some(o=>o);const n=sun?sunN++:moonN++;
+    const t=add(new THREE.Mesh(tok,new THREE.MeshStandardMaterial({color:sun?P.warn:P.bar2,flatShading:true})),x,.1,.3);t.visible=false;
+    return {op,lights,t,from:new THREE.Vector3(x,2.6,.3),to:new THREE.Vector3(sun?-5.6:5.6,.17+n*.2,.6),delay:i*.08};
+  });
+  const cards=[0,1,2].map(j=>{const x=(j-1)*3.4;
+    const c=add(T.box(2.5,1.25,.14,P.win),x,4.35,-.6);
+    const lab=k.label("POLICY "+(j+1),"",c,[0,.22,0]);
+    const chips=folk.map((f,i)=>{const m=add(T.box(.34,.34,.34,f.op[j]?P.ok:P.err),x-.84+i*.42,3.45,-.4);m.scale.setScalar(.001);return m});
+    const res=k.label("LOSES 3-2","err",c,[0,1.15,0]);res.el.style.opacity=0;
+    return {c,lab,chips,res,home:c.position.clone(),grey:new THREE.Color(P.win),red:new THREE.Color(0xe8a3a3),delay:j*.15};
+  });
+  const hold=new THREE.Object3D();hold.position.set(0,4.6,0);k.scene.add(hold);
+  const win=k.label("SUN WINS 3-2","ok",hold);win.el.style.opacity=0;win.el.style.fontSize="34px";
+  const sunT=k.label("3","warn",sunMat,[0,1.25,0]),moonT=k.label("2","",moonMat,[0,1.05,0]);
+  [sunT,moonT].forEach(l=>{l.el.style.opacity=0;l.el.style.fontSize="34px"});
+  let target=0,t=0;
+  k.loop(dt=>{t=H.reduced?target:T.damp(t,target,3,dt);
+    const a=T.ease(t*1.2),b=T.ease((t-1)*1.25);
+    folk.forEach(f=>{f.lights.forEach(m=>m.scale.setScalar(Math.max(.001,a)));
+      const c=T.ease((t-1)*1.6-f.delay);f.t.visible=c>.01;
+      const p=f.from.clone().lerp(f.to,c);p.y+=Math.sin(c*Math.PI)*1.2;f.t.position.copy(p);});
+    cards.forEach(cd=>{const s=T.ease(t*1.4-cd.delay);
+      cd.chips.forEach(m=>m.scale.setScalar(Math.max(.001,s*(1-b))));
+      cd.c.material.color.copy(cd.grey).lerp(cd.red,s);
+      cd.c.position.copy(cd.home);cd.c.position.y+=b*3;cd.c.scale.setScalar(Math.max(.001,1-b));
+      cd.res.el.style.opacity=String(s*(1-b));cd.lab.el.style.opacity=String(1-b);});
+    const w=T.ease((t-1.4)*1.8);win.el.style.opacity=String(w);sunT.el.style.opacity=moonT.el.style.opacity=String(w);
+  });
+  return {step(n){target=n},stop(){k.stop()}};
+};
+
+/* Slide 11: "A party is a slab. An issue is a brick."
+   step 0: one grey slab labelled PARTY. step 1: it cracks into six labelled bricks.
+   step 2: Mel's picks are lifted one at a time onto a plain base on the right. */
+THEME.scenes.slab=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,4.6,12.5],look:[0,1.1,0],fov:34});
+  const names=(slide.bricks||["Buses","Bins","Bills","Housing","Schools","Water"]);
+  const picks=slide.picks||[0,1,3];
+  const base=T.box(5.6,.3,2,P.win);base.position.set(4.5,-.15,0);k.scene.add(base);
+  const plinth=T.box(6.2,.3,2.4,P.bar);plinth.position.set(-2.4,-.15,0);k.scene.add(plinth);
+  const bricks=names.map((n,i)=>{const c=i%3,r=Math.floor(i/3);
+    const m=T.box(1.6,.9,1.6,0x9b9a93);k.scene.add(m);
+    const home=new THREE.Vector3(-2.4+(c-1)*1.6,.45+r*.9,0);
+    const crack=new THREE.Vector3(-2.4+(c-1)*2.05,.55+r*1.35,(r?-.3:.3));
+    const pi=picks.indexOf(i);const pick=pi<0?null:new THREE.Vector3(4.5+(pi-1)*1.75,.45,0);
+    m.position.copy(home);
+    const lab=k.label(n.toUpperCase(),"",m,[0,.75,0]);lab.el.style.opacity=0;
+    return {m,home,crack,pick,lab,col:new THREE.Color(P.bricks[i%P.bricks.length]),grey:new THREE.Color(0x9b9a93),delay:i*.06};
+  });
+  const party=k.label("PARTY","err",bricks[4].m,[0,1.0,0]);
+  let target=0,t=0;
+  k.loop(dt=>{t=H.reduced?target:T.damp(t,target,3.2,dt);
+    bricks.forEach(b=>{const a=T.ease(Math.min(1,t)*1.25-b.delay),c=T.ease((t-1)*1.6-b.delay*3);
+      const p=b.home.clone().lerp(b.crack,a);if(b.pick&&t>1)p.lerp(b.pick,c);
+      b.m.position.copy(p);b.m.rotation.y=(b.delay-.15)*a*1.4*(1-(b.pick?c:0));
+      b.m.material.color.copy(b.grey).lerp(b.col,a);
+      b.lab.el.style.opacity=String(a);});
+    party.el.style.opacity=String(1-T.ease(t*1.6));
+  });
+  return {step(n){target=n},stop(){k.stop()}};
+};
+
+/* Slide 3: "Older than the light bulb."
+   step 0: close on the left, 1265 / 1832 / 1872 land one at a time.
+   step 1: camera moves right, Swan 1878 and Edison 1879 land, the bulb lights,
+           a bracket over the first three reads OLDER THAN THE BULB.
+   step 2: camera pulls back, the phone lands at 2007 on the far right.
+   The track is not to scale: breaks (gaps) mark the long stretches. */
+THEME.scenes.timeline=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[-5.2,2.6,9],look:[-5.2,1.6,0],fov:34});
+  [[-9.6,-7.1],[-6.5,5.3],[6.0,9.8]].forEach(([a,b])=>{const m=T.box(b-a,.22,.7,P.win);m.position.set((a+b)/2,-.11,0);k.scene.add(m)});
+  const marks=[
+    {x:-8.5,y:"1265",n:"PARLIAMENT",h:1.1,at:-.85,c:P.bar2},
+    {x:-5,y:"1832",n:"REFORM ACT",h:2.4,at:-.55,c:P.bar2},
+    {x:-1.6,y:"1872",n:"SECRET BALLOT",h:1.1,at:-.25,c:P.bar2},
+    {x:1.4,y:"1878",n:"SWAN LAMP",h:2.4,at:.15,c:P.warn},
+    {x:3.3,y:"1879",n:"EDISON LAMP",h:1.1,at:.4,c:P.warn},
+  ];
+  function tag(text,cls,obj,off){const l=k.label(text,cls,obj,off);l.el.style.whiteSpace="pre";l.el.style.textAlign="center";l.el.style.lineHeight="1.15";l.el.style.opacity=0;return l}
+  marks.forEach(m=>{const g=new THREE.Group();g.position.x=m.x;
+    const post=T.box(.16,m.h,.16,P.dk);post.position.y=m.h/2;g.add(post);
+    const cap=T.box(.6,.32,.6,m.c);cap.position.y=m.h;g.add(cap);
+    k.scene.add(g);m.g=g;m.lab=tag(m.y+"\n"+m.n,m.c===P.warn?"warn":"",cap,[0,.3,0]);});
+  /* the bulb: low-poly glass on a screw base, between Swan and Edison */
+  const bulb=new THREE.Group();bulb.position.set(2.35,4.45,0);bulb.userData.y=4.45;
+  const glassM=new THREE.MeshStandardMaterial({color:0x9b9a93,emissive:P.warn,emissiveIntensity:0,flatShading:true,roughness:.6});
+  const glass=new THREE.Mesh(new THREE.IcosahedronGeometry(.5,1),glassM);bulb.add(glass);
+  const screw=T.box(.38,.34,.38,P.dk);screw.position.y=-.55;bulb.add(screw);
+  const halo=new THREE.Mesh(new THREE.IcosahedronGeometry(.95,1),new THREE.MeshBasicMaterial({color:P.warn,transparent:true,opacity:0,depthWrite:false}));bulb.add(halo);
+  const lamp=new THREE.PointLight(P.warn,0,9);bulb.add(lamp);k.scene.add(bulb);
+  /* bracket over the first three */
+  const br=new THREE.Group();br.position.set(-5.05,4.25,0);
+  const bar=T.box(7.4,.14,.14,P.err);br.add(bar);
+  [-3.7,3.7].forEach(x=>{const e=T.box(.14,.45,.14,P.err);e.position.set(x,-.22,0);br.add(e)});
+  k.scene.add(br);const brLab=tag("OLDER THAN THE BULB","err",bar,[0,.25,0]);
+  /* the phone */
+  const phone=new THREE.Group();phone.position.set(8,0,0);
+  const body=T.box(.95,1.7,.16,P.ink);body.position.y=.85;phone.add(body);
+  const scr=T.box(.78,1.4,.04,P.bar2);scr.position.set(0,.88,.09);phone.add(scr);
+  k.scene.add(phone);const phLab=tag("2007\nSMARTPHONE","ok",body,[0,1.05,0]);
+  const cams=[[-5.2,2.6,9,-5.2,1.6],[-2.4,3,12,-2.4,2.2],[0,3.2,16,0,2.3]];
+  let target=0,t=-1;const look=new THREE.Vector3();
+  function grow(g,a){g.visible=a>.01;g.scale.setScalar(Math.max(.001,a));g.position.y=(g.userData.y||0)+(1-a)*2.5}
+  k.loop(dt=>{t=H.reduced?target:T.damp(t,target,2.6,dt);
+    const c=Math.max(0,Math.min(2,t)),i=Math.min(1,Math.floor(c)),f=T.ease(c-i),A=cams[i],B=cams[i+1];
+    const q=A.map((v,j)=>v+(B[j]-v)*f);k.camera.position.set(q[0],q[1],q[2]);look.set(q[3],q[4],0);k.camera.lookAt(look);
+    marks.forEach(m=>{const a=T.ease((t-m.at)/.3);grow(m.g,a);m.lab.el.style.opacity=String(a>.9?1:0)});
+    const lit=T.ease((t-.55)/.4);grow(bulb,T.ease((t-.05)/.3));
+    glassM.color.setHex(0x9b9a93).lerp(new THREE.Color(P.warn),lit);glassM.emissiveIntensity=lit*.9;
+    halo.material.opacity=lit*.28;lamp.intensity=lit*1.6;
+    const b=T.ease((t-.75)/.25);br.visible=b>.01;br.scale.set(Math.max(.001,b),1,1);brLab.el.style.opacity=String(b>.9?1:0);
+    const p=T.ease((t-1.3)/.4);grow(phone,p);phLab.el.style.opacity=String(p>.9?1:0);
+  });
+  return {step(n){target=n},stop(){k.stop()}};
+};
+
+/* Appendix A6: "Tokens, not just votes" (quadratic voting).
+   step 0: one voter's 100 tokens in a single pile in front of a row of bills ("ALL ON ONE?").
+   step 1: the tokens fly out and spread across the bills; no stack holds more than a handful. */
+THEME.scenes.tokens=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,8.5,19],look:[0,.7,.4],fov:25});
+  const counts=slide.counts||[8,5,9,6,7,4,8,9,6,7,5,9,8,9];   /* sums to 100 */
+  const n=counts.length,GAP=1.1,TH=.2;
+  const bx=i=>(i-(n-1)/2)*GAP;
+  /* the row of bills: paper sheets with printed lines, on a long desk */
+  const desk=T.box(n*GAP+.8,.3,2.2,P.bar);desk.position.set(0,-.15,-1);k.scene.add(desk);
+  for(let i=0;i<n;i++){
+    const s=T.box(.9,.06,1.2,P.white);s.position.set(bx(i),.03,-1.1);k.scene.add(s);
+    for(let j=0;j<3;j++){const l=T.box(j?.55:.7,.02,.07,j?0x9b9a93:P.ink);l.position.set(bx(i)-(j?.07:0),.07,-1.55+j*.18);k.scene.add(l)}
+    const seal=T.box(.2,.03,.2,P.err);seal.position.set(bx(i)+.25,.07,-.65);k.scene.add(seal);
+  }
+  const wallet=T.box(3.4,.3,2,P.dk);wallet.position.set(0,-.15,2.6);k.scene.add(wallet);
+  /* 100 tokens, one shared geometry and material */
+  const geo=new THREE.CylinderGeometry(.34,.34,TH*.9,10);
+  const mat=new THREE.MeshStandardMaterial({color:P.warn,roughness:.6,flatShading:true});
+  const tokens=[];let id=0;
+  counts.forEach((c,b)=>{for(let h=0;h<c;h++){
+    const m=new THREE.Mesh(geo,mat);k.scene.add(m);
+    const g=id++,gx=g%5,gz=Math.floor(g/5)%4,gy=Math.floor(g/20);
+    const pile=new THREE.Vector3(-1.2+gx*.6,TH/2+gy*TH,2.05+gz*.37);
+    const bill=new THREE.Vector3(bx(b),.06+TH/2+h*TH,-1.1);
+    tokens.push({m,pile,bill,delay:(b/n)*.4+h*.01});
+  }});
+  const pileAnchor=new THREE.Object3D();pileAnchor.position.set(0,1.3,2.6);k.scene.add(pileAnchor);
+  const top=counts.indexOf(Math.max(...counts));
+  const highAnchor=new THREE.Object3D();highAnchor.position.set(bx(top),.06+counts[top]*TH+.35,-1.1);k.scene.add(highAnchor);
+  const hundred=k.label("100 TOKENS","warn",pileAnchor,[2.9,-.6,0]);
+  const q=k.label("ALL ON ONE?","err",pileAnchor,[-2.9,-.6,0]);
+  const bills=k.label(n+" BILLS","",desk,[-n*GAP/2+1.2,-.3,1.2]);
+  const spread=k.label("A HANDFUL EACH","ok",highAnchor,[0,.2,0]);
+  let target=0,t=0;
+  k.loop(dt=>{t=H.reduced?target:T.damp(t,target,3.6,dt);
+    tokens.forEach(o=>{const a=T.ease((t-o.delay)/.5);
+      o.m.position.copy(o.pile).lerp(o.bill,a);o.m.position.y+=Math.sin(Math.PI*a)*2.2;
+      o.m.rotation.x=a>.98?0:Math.sin(Math.PI*a)*1.2;});
+    const f=T.ease(t*1.8),g=T.ease((t-.7)/.3);
+    hundred.el.style.opacity=q.el.style.opacity=String(1-f);
+    spread.el.style.opacity=String(g);
+  });
+  return {step(s){target=s},stop(){k.stop()}};
+};
+
+/* Slide 19: "Small. Checked. Undoable." vs "One drop. No ticks."
+   step 0: LEFT four bricks land one by one, each lights a green tick; RIGHT a crane holds a monolith up high.
+   step 1: a fifth brick lands and lights red; the curved REVERT arm comes down and lifts it off; the tower stands.
+   step 2: the crane lets the monolith go: it drops whole, thuds, no ticks anywhere.
+   Time runs on a clock s: step(n) jumps s to n (earlier steps finish at once) and plays to n+1. */
+THEME.scenes.tower=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,4.6,19.5],look:[0,3.5,0],fov:33});
+  const BW=2.2,BH=.62,LX=-4.6,RX=4.4,N=4;
+  const add=(m,x,y,z=0)=>{m.position.set(x,y,z);k.scene.add(m);return m};
+  add(T.box(24,.2,7,0x2f6a70),0,-.1,0);
+  add(T.box(3.4,.3,2.2,P.bar),LX,.15);
+  add(T.box(3.8,.3,2.4,P.bar),RX,.15);
+  /* left: the small bricks, each with its tick tag */
+  const cols=[P.bricks[3],P.bricks[4],P.bricks[5],P.bricks[1]];
+  const bricks=[...Array(N+1)].map((_,i)=>{
+    const m=add(T.box(BW,BH,1.5,i<N?cols[i]:0x9b9a93),LX,9);
+    const home=.3+BH/2+i*BH;
+    const tag=k.label(i<N?"✓":"✗",i<N?"ok":"err",m,[BW/2+.45,-.12,0]);tag.el.style.opacity=0;
+    return {m,home,tag};
+  });
+  const red=bricks[N];
+  /* the revert arm: a curved claw on a rod that comes down over the top brick */
+  const arm=new THREE.Group();k.scene.add(arm);
+  const claw=new THREE.Mesh(new THREE.TorusGeometry(1.35,.17,6,14,Math.PI),new THREE.MeshStandardMaterial({color:P.warn,roughness:.8,flatShading:true}));
+  arm.add(claw);const rod=T.box(.28,5,.28,P.warn);rod.position.y=1.35+2.5;arm.add(rod);
+  const armTag=k.label("REVERT","warn",claw,[-2.3,.2,0]);
+  const ARM_UP=new THREE.Vector3(LX-3.4,4.9,0),ARM_DOWN=new THREE.Vector3(LX,red.home-.05,0);
+  /* right: crane, cable, monolith */
+  add(T.box(.45,7.4,.45,P.warn),RX+3.2,3.7);
+  add(T.box(5.4,.35,.45,P.warn),RX+1.1,7.25);
+  add(T.box(.9,.6,.9,P.dk),RX+3.2,7.75);
+  const cable=add(T.box(.07,1,.07,P.ink),RX,6.5);
+  const MH=3.1,HANG=6.95-.9-MH/2,LAND=.3+MH/2;
+  const mono=add(T.box(2.8,MH,1.8,0x8d8c86),RX,HANG);
+  const yrs=k.label("ONE BIG DROP","",mono,[0,MH/2+.15,0]);
+  const noT=k.label("NO TICKS","err",mono,[0,MH/2+.15,0]);noT.el.style.opacity=0;
+  const dust=[...Array(8)].map((_,i)=>{const d=add(T.box(.3,.3,.3,0xbdbbb2),RX,.3);d.visible=false;d.a=i/8*Math.PI*2;return d});
+  const leftTag=k.label("SMALL. CHECKED. UNDOABLE.","ok",null);
+  const rightTag=k.label("ONE DROP. NO TICKS.","err",null);
+  leftTag.obj=new THREE.Object3D();leftTag.obj.position.set(LX,-.9,1.2);k.scene.add(leftTag.obj);
+  rightTag.obj=new THREE.Object3D();rightTag.obj.position.set(RX,-.9,1.2);k.scene.add(rightTag.obj);
+  rightTag.el.style.opacity=0;
+  const seg=(s,a,b)=>Math.min(1,Math.max(0,(s-a)/(b-a)));
+  let s=0,target=0;
+  /* land brick: falls from above with an ease-in, tiny settle */
+  function landY(home,u){const e=u*u;return home+(1-e)*7}
+  k.loop(dt=>{
+    s=H.reduced?target+1:Math.min(target+1,s+dt*.95);
+    // step 0: four bricks, staggered
+    for(let i=0;i<N;i++){const u=seg(s,i*.2,i*.2+.18),b=bricks[i];
+      b.m.position.y=landY(b.home,u);b.tag.el.style.opacity=u>=1?"1":"0";}
+    // step 1: red brick lands, lights red, arm grips and lifts it away
+    const ur=seg(s,1,1.22),down=seg(s,1.3,1.55),lift=seg(s,1.6,1.95);
+    const ap=ARM_UP.clone().lerp(ARM_DOWN,T.ease(down));
+    if(lift>0)ap.copy(ARM_DOWN).lerp(ARM_UP,T.ease(lift));
+    arm.position.copy(ap);arm.rotation.z=lift>0?T.ease(lift)*.3:(1-T.ease(down))*.3;
+    if(lift>0)red.m.position.set(ap.x,ap.y+.05,0);else red.m.position.set(LX,landY(red.home,ur),0);
+    red.m.rotation.z=arm.rotation.z*(lift>0?1:0);
+    const lit=ur>=1;red.m.material.color.setHex(lit?P.err:0x9b9a93);
+    red.tag.el.style.opacity=lit&&lift<.6?"1":"0";
+    armTag.el.style.opacity=s>=1?"1":"0";
+    leftTag.el.style.opacity=String(seg(s,1.9,2));
+    // step 2: the monolith drops whole
+    const f=seg(s,2,2.38),e=f*f;
+    mono.position.y=HANG+(LAND-HANG)*e;
+    cable.position.y=f>0?6.95-.15:6.5;cable.scale.y=f>0?.3:1;
+    const thud=seg(s,2.38,2.75);
+    dust.forEach(d=>{d.visible=thud>0&&thud<1;const r=1.6+thud*1.8;d.position.set(RX+Math.cos(d.a)*r,.3+Math.sin(thud*Math.PI)*.9,Math.sin(d.a)*r*.5);d.scale.setScalar(1-thud*.7)});
+    k.camera.position.y=4.6+(thud>0&&thud<.4?Math.sin(thud*60)*.06:0);
+    yrs.el.style.opacity=f>0?"0":"1";
+    noT.el.style.opacity=String(seg(s,2.5,2.7));rightTag.el.style.opacity=String(seg(s,2.6,2.8));
+  });
+  return {step(n){target=n;s=Math.max(Math.min(s,n+1),n)},stop(){k.stop()}};
+};
+
+/* Slide 32: "No policy without its experiment."
+   step 0: two identical towns; the left one is the TRIAL and gets the new (green) bus timetable.
+           A gauge between them has a green GO band and a red STOP band; the ALL 40 TOWNS lever is locked.
+   step 1: the number rises into GO; the padlock falls off, the lever swings down, the other town gets the new bus.
+   step 2: a second run: the number falls into STOP; the lever drops away and the other town keeps the old bus. */
+THEME.scenes.towns=function(mount,slide,H){
+  const T=THEME.three,P=THEME.palette;
+  const k=T.setup(mount,{cam:[0,6.2,12.4],look:[0,1.5,0],fov:34});
+  const add=(m,x,y,z)=>{m.position.set(x,y,z);k.scene.add(m);return m};
+  const OLD=new THREE.Color(P.warn),NEW=new THREE.Color(P.ok);
+  function town(cx,trial){
+    const g=new THREE.Group();g.position.x=cx;k.scene.add(g);
+    if(trial){const ring=T.box(4.6,.16,4,P.warn);ring.position.y=-.1;g.add(ring)}
+    const ground=T.box(4.2,.2,3.6,0x9fc58a);g.add(ground);
+    const road=[[0,1.25,3.4,.5],[0,-1.25,3.4,.5],[1.5,0,.5,3],[-1.5,0,.5,3]];
+    road.forEach(([x,z,w,d])=>{const r=T.box(w,.06,d,P.dk);r.position.set(x,.12,z);g.add(r)});
+    [[-.55,-.35,P.bar2,1.1],[.5,-.4,P.err,.8],[-.5,.45,0xe58a2e,.7],[.55,.4,P.win,1.3]].forEach(([x,z,c,h])=>{
+      const b=T.box(.75,h,.6,c);b.position.set(x,.1+h/2,z);g.add(b)});
+    const stop=T.box(.12,.9,.12,P.ink);stop.position.set(1.95,.55,1.55);g.add(stop);
+    const sign=T.box(.4,.3,.08,trial?P.ok:P.warn);sign.position.set(1.95,1.05,1.55);g.add(sign);
+    const bus=T.box(.75,.4,.38,P.warn,{rough:.6});bus.position.y=.35;g.add(bus);
+    return {g,bus,sign,u:trial?0:.5};
+  }
+  const A=town(-5.4,true),B=town(5.4,false);
+  k.label("TRIAL","warn",A.g,[0,2.2,0]);
+  /* gauge: STOP band at the bottom, GO band at the top, the number rides a marker */
+  const GX=-2.15,LO=.2,HI=4.2;
+  add(T.box(.9,.2,.9,P.dk),GX,.1,0);
+  add(T.box(.55,1.2,.55,P.err),GX,.2+.6,0);
+  add(T.box(.55,1.6,.55,0x9b9a93),GX,1.4+.8,0);
+  add(T.box(.55,1.2,.55,P.ok),GX,3+.6,0);
+  const goT=k.label("GO","ok",null);const stT=k.label("STOP","err",null);
+  const marker=add(T.box(1.1,.14,.8,P.ink),GX,2.2,0);
+  const num=k.label("50","",marker,[-.95,.25,0]);
+  /* lever: base + padlock + handle that swings on a pivot */
+  const LX=1.6,lever=new THREE.Group();lever.position.set(LX,0,0);k.scene.add(lever);
+  const base=T.box(2.2,.5,1.4,P.bar);base.position.y=.25;lever.add(base);
+  const pivot=new THREE.Group();pivot.position.set(0,.55,0);lever.add(pivot);
+  const arm=T.box(.22,2.2,.22,P.win);arm.position.y=1.1;pivot.add(arm);
+  const knob=T.box(.55,.55,.55,P.err);knob.position.y=2.3;pivot.add(knob);
+  const lock=T.box(.6,.5,.25,P.warn);lock.position.set(0,.8,.72);lever.add(lock);
+  const shack=T.box(.36,.32,.1,P.dk);shack.position.set(0,1.15,.72);lever.add(shack);
+  const anchor=add(new THREE.Object3D(),LX,3.4,0);
+  const all=k.label("ALL 40 TOWNS","",anchor,[0,.35,0]);
+  const state=k.label("LOCKED","err",anchor,[0,-.25,0]);
+  const vtmp=new THREE.Vector3();
+  let target=0,t=0;
+  k.loop((dt)=>{t=H.reduced?target:T.damp(t,target,2.4,dt);
+    const a=T.ease(t),b=T.ease(t-1);
+    const val=50+38*a-70*b;
+    marker.position.y=LO+(HI-LO)*val/100;
+    num.el.textContent=String(Math.round(val));
+    num.el.className="tag3d "+(val>=70?"ok":val<=30?"err":"");
+    /* band tags sit on the band, to the left of the gauge */
+    k.camera.updateMatrixWorld();
+    [[goT,3.6],[stT,.8]].forEach(([l,y])=>{vtmp.set(GX+.5,y,0).project(k.camera);
+      l.el.style.left=((vtmp.x+1)/2*mount.clientWidth+40)+"px";l.el.style.top=((1-vtmp.y)/2*mount.clientHeight+14)+"px"});
+    const un=T.ease((50+38*a-66)/8);           /* unlocks only once the number is in GO */
+    lock.position.y=.8-un*1.2;shack.position.y=1.15-un*1.2;lock.rotation.z=shack.rotation.z=un*.9;
+    lock.visible=shack.visible=un<.95;
+    pivot.rotation.z=-un*1.1;
+    lever.position.y=-6*b;lever.rotation.z=-.6*b;lever.visible=b<.97;
+    state.el.textContent=b>.5?"STOPPED":un>.5?"UNLOCKED":"LOCKED";
+    state.el.className="tag3d "+(b>.5?"err":un>.5?"ok":"err");
+    A.bus.material.color.copy(OLD).lerp(NEW,Math.min(1,t*3));
+    const on=un*(1-b);B.bus.material.color.copy(OLD).lerp(NEW,on);B.sign.material.color.copy(OLD).lerp(NEW,on);
+    [A,B].forEach((tw,i)=>{const fast=i?on:1;if(!H.reduced)tw.u=(tw.u+Math.max(0,dt)*(.07+.07*fast))%1;
+      const s=tw.u*4,q=Math.floor(s),f=s-q,rx=1.5,rz=1.25;
+      const pts=[[-rx,rz],[rx,rz],[rx,-rz],[-rx,-rz],[-rx,rz]];
+      const p0=pts[q],p1=pts[q+1];
+      tw.bus.position.x=p0[0]+(p1[0]-p0[0])*f;tw.bus.position.z=p0[1]+(p1[1]-p0[1])*f;
+      tw.bus.rotation.y=q%2?Math.PI/2:0;});
+  });
+  return {step(n){target=n},stop(){k.stop()}};
+};
+
+</script>
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const t=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\n/g,"<br>");
+const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+/* image slot: a generated picture once it exists, a labelled placeholder until then */
+function slot(img){img=img||{};
+  if(img.src)return `<div class="e-slot"><img src="${esc(img.src)}" alt="${esc(img.alt||img.prompt||"")}"></div>`;
+  if(PUBLIC)return `<div class="e-slot"><div class="e-ph"><b>${esc(img.file||"picture.jpg")}</b>Picture coming soon.</div></div>`;
+  return `<div class="e-slot"><div class="e-ph"><b>PICTURE NOT MADE YET${img.file?" · "+esc(img.file):""}</b>${esc(img.prompt||"")}</div></div>`}
+Object.assign(THEME.helpers,{esc,t,slot,reduced});
+const H=THEME.helpers;
+const slides=DECK.slides.filter(s=>!s.hidden);
+let idx=0,step=0,scene=null;
+const stage=$("#stage"),vp=$("#viewport");
+const fmt=x=>Math.floor(x/60)+":"+String(x%60).padStart(2,"0");
+function renderInto(el,s){
+  const fn=THEME.layouts[s.layout]||THEME.layouts.fallback;
+  el.innerHTML=fn?fn(s,H):`<pre style="color:#fff;padding:40px">${esc(JSON.stringify(s,null,2))}</pre>`;
+}
+function fit(){const w=vp.clientWidth,h=vp.clientHeight,k=Math.min(w/1600,h/900);stage.style.transform=`translate(${(w-1600*k)/2}px,${(h-900*k)/2}px) scale(${k})`}
+new ResizeObserver(fit).observe(vp);
+function maxStep(s){let m=0;stage.querySelectorAll("[data-step]").forEach(e=>m=Math.max(m,+e.dataset.step));return Math.max(m,(s.steps||1)-1)}
+function applyStep(){stage.querySelectorAll("[data-step]").forEach(e=>e.classList.toggle("on",+e.dataset.step<=step));stage.querySelectorAll("[data-until]").forEach(e=>e.hidden=step>=+e.dataset.until);if(scene&&scene.step)scene.step(step)}
+function show(i,st){
+  if(scene&&scene.stop)scene.stop();scene=null;
+  idx=Math.max(0,Math.min(slides.length-1,i));const s=slides[idx];
+  renderInto(stage,s);
+  const mount=stage.querySelector(".scene-mount");
+  if(mount&&s.scene){const make=THEME.scenes[s.scene];
+    if(make&&window.THREE){try{scene=make(mount,s,H)}catch(e){console.error(e);mount.innerHTML=`<div class="e-slot"><div class="e-ph"><b>3D SCENE FAILED · ${esc(s.scene)}</b>${esc(e.message)}</div></div>`}}
+    else mount.innerHTML=`<div class="e-slot"><div class="e-ph"><b>3D SCENE NOT BUILT YET · ${esc(s.scene)}</b>${esc(s.visual||"")}</div></div>`}
+  const ms=maxStep(s);step=st==="end"?ms:Math.min(st||0,ms);applyStep();
+  try{history.replaceState(null,"","#s-"+s.id)}catch(e){}
+  pos();paintDrawer();markGrid();
+}
+function pos(){const s=slides[idx],ms=maxStep(s);$("#pos").textContent=`${s.id} · ${idx+1} of ${slides.length}`+(s.at!=null?` · ${fmt(s.at)}`:" · appendix")+(ms?` · step ${step+1}/${ms+1}`:"")}
+function next(){const ms=maxStep(slides[idx]);if(step<ms){step++;applyStep();pos()}else if(idx<slides.length-1)show(idx+1,0)}
+function prev(){if(step>0){step--;applyStep();pos()}else if(idx>0)show(idx-1,"end")}
+/* grid */
+let gridBuilt=false;
+function buildGrid(){const g=$("#grid");
+  g.innerHTML=slides.map((s,i)=>`<button type="button" class="cell" data-i="${i}"><div class="thumb"><div></div></div><div class="tag"><span>${esc(s.id)} · ${esc(s.layout)}</span><b></b></div></button>`).join("");
+  g.querySelectorAll(".cell").forEach(c=>{const s=slides[+c.dataset.i],inner=c.querySelector(".thumb>div");
+    if(s.scene){inner.innerHTML=(THEME.layouts[s.layout]||(()=>""))(s,H);const m=inner.querySelector(".scene-mount");if(m)m.innerHTML=`<div class="e-slot"><div class="e-ph"><b>3D SCENE · ${esc(s.scene)}</b>plays in the slide view</div></div>`}
+    else renderInto(inner,s);
+    c.addEventListener("click",()=>{toggleGrid(false);show(+c.dataset.i,0)})});
+  gridBuilt=true;sizeGrid();markGrid()}
+function sizeGrid(){document.querySelectorAll("#grid .thumb").forEach(th=>{const k=th.clientWidth/1600;th.firstElementChild.style.transform=`scale(${k})`})}
+new ResizeObserver(()=>{if(!$("#grid").hidden)sizeGrid()}).observe($("#grid"));
+function markGrid(){if(!gridBuilt)return;document.querySelectorAll("#grid .cell").forEach(c=>{const s=slides[+c.dataset.i];c.classList.toggle("cur",+c.dataset.i===idx);const m=st.mine[s.id]||{},b=c.querySelector(".tag b");b.className=m.v||"";b.textContent=(m.v||"")+(m.n?" ✎":"")})}
+function toggleGrid(on){const g=$("#grid");on=on??g.hidden;g.hidden=!on;$("#b-grid").setAttribute("aria-pressed",String(on));if(on){if(scene&&scene.stop){scene.stop();scene=null}if(!gridBuilt)buildGrid();else{sizeGrid();markGrid()}g.querySelector(".cell.cur")?.scrollIntoView({block:"center"})}else show(idx,step)}
+function toggleDrawer(on){const d=$("#drawer");on=on??d.hidden;d.hidden=!on;$("#b-notes").setAttribute("aria-pressed",String(on));setTimeout(fit,0)}
+/* notes (db) */
+const st={uid:null,mine:{},all:[],names:{},db:null,ref:null};
+function paintDrawer(){const s=slides[idx];if(!s)return;
+  $("#d-title").textContent=`Slide ${s.id}`+(s.title?`: ${s.title}`:"");
+  $("#d-meta").textContent=`${s.type||""} · ${s.layout}`+(s.secs?` · ${s.secs}s`:"");
+  $("#d-say").innerHTML=s.say?t(s.say):"<i>No spoken line.</i>";
+  $("#d-pic").textContent=s.visual?"Picture brief: "+s.visual:"";
+  const m=st.mine[s.id]||{};document.querySelectorAll(".vb button").forEach(b=>b.setAttribute("aria-pressed",String(m.v===b.dataset.v)));
+  const ta=$("#d-note");if(document.activeElement!==ta)ta.value=m.n||"";
+  $("#d-others").innerHTML=st.all.filter(r=>r.id!==st.uid&&r.slides&&r.slides[s.id]).map(r=>{const o=r.slides[s.id];return `<div><b>${esc(st.names[r.id]||"Someone")}</b>${o.v?": "+esc(o.v):""}${o.n?"<br>"+esc(o.n):""}</div>`}).join("");
+}
+let q=Promise.resolve();
+function save(){if(!st.ref)return;const data={slides:st.mine,round:DECK.round||1,updatedAt:new Date().toISOString()};q=q.then(()=>st.ref.set(data)).then(()=>{$("#d-status").textContent="Saved."},()=>{$("#d-status").textContent="Could not save. Tell Claude instead."})}
+document.querySelectorAll(".vb button").forEach(b=>b.addEventListener("click",()=>{if(!st.ref)return;const id=slides[idx].id,m=st.mine[id]=st.mine[id]||{};m.v=m.v===b.dataset.v?null:b.dataset.v;paintDrawer();markGrid();save()}));
+let h;$("#d-note").addEventListener("input",()=>{if(!st.ref)return;$("#d-status").textContent="Saving…";const id=slides[idx].id;clearTimeout(h);h=setTimeout(()=>{const m=st.mine[id]=st.mine[id]||{};m.n=$("#d-note").value.trim();save();markGrid()},800)});
+if(PUBLIC){document.body.classList.add("public");try{if(window.self!==window.top)document.body.classList.add("embedded")}catch(e){document.body.classList.add("embedded")}}
+(async()=>{if(PUBLIC)return;const timer=setTimeout(()=>{$("#d-status").textContent="Notes are not available in this view. Tell Claude your notes instead."},10000);
+  let db=null,user=null;try{db=await claude.use("db");user=await claude.use("user")}catch(e){}
+  if(!db||!user){clearTimeout(timer);$("#d-status").textContent="Sign in to leave notes, or tell Claude your notes.";$("#d-note").disabled=true;return}
+  st.uid=await user.id();st.ref=db.doc("notes/"+st.uid);
+  db.collection("notes").onSnapshot(async snap=>{clearTimeout(timer);st.all=snap.docs.map(d=>Object.assign({id:d.id},d.data()));
+    const me=st.all.find(r=>r.id===st.uid);if(me&&me.slides)st.mine=JSON.parse(JSON.stringify(me.slides));
+    try{const ids=st.all.map(r=>r.id).filter(i=>i!==st.uid);if(ids.length){const ps=await user.profiles(ids);ids.forEach(i=>st.names[i]=(ps[i]&&ps[i].name)||"Someone")}}catch(e){}
+    $("#d-status").textContent="Notes save as you type.";paintDrawer();markGrid()},()=>{clearTimeout(timer);$("#d-status").textContent="Notes could not load. Tell Claude your notes instead."});
+})();
+/* controls */
+$("#b-next").onclick=next;$("#b-prev").onclick=prev;
+$("#b-grid").onclick=()=>toggleGrid();$("#b-notes").onclick=()=>toggleDrawer();
+$("#b-full").onclick=()=>{document.documentElement.requestFullscreen?.().catch(()=>{})};
+vp.addEventListener("click",e=>{if($("#grid").hidden&&!e.target.closest("button,a"))next()});
+addEventListener("keydown",e=>{if(e.target.closest("textarea,input"))return;
+  const k=e.key;if(["ArrowRight"," ","PageDown"].includes(k)){e.preventDefault();next()}else if(["ArrowLeft","PageUp"].includes(k)){e.preventDefault();prev()}
+  else if(k==="Home")show(0,0);else if(k==="End")show(slides.length-1,0);else if(!PUBLIC&&(k==="g"||k==="G"))toggleGrid();else if(!PUBLIC&&(k==="n"||k==="N"))toggleDrawer();
+  else if(k==="h"||k==="H"){document.body.classList.toggle("clean");setTimeout(fit,0)}else if(k==="f"||k==="F")document.documentElement.requestFullscreen?.().catch(()=>{});
+  else if(k==="Escape"&&!$("#grid").hidden)toggleGrid(false)});
+const m=location.hash.match(/^#s-([^@]+)(@end)?$/);const start=m?slides.findIndex(s=>s.id===m[1]):0;
+fit();show(start<0?0:start,m&&m[2]?"end":0);
+})();
+</script>
+
+</body></html>

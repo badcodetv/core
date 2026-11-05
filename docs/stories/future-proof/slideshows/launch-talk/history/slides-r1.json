@@ -1,0 +1,1536 @@
+{
+ "title": "Future Proof: the launch talk",
+ "round": 1,
+ "slides": [
+  {
+   "id": "1",
+   "layout": "dialog",
+   "title": "GENERAL ELECTION",
+   "task": "ballot.exe",
+   "icon": "question",
+   "heading": "Why can't I vote on more than one thing?",
+   "text": "You may select **1** box.\nThe box says: EVERYTHING.",
+   "buttons": [
+    "OK",
+    "Also OK"
+   ],
+   "image": {
+    "file": "mel-booth.jpg",
+    "prompt": "Mel in a polling booth holding a ballot paper with one box labelled EVERYTHING; dog waiting outside, lead on the hook"
+   }
+  },
+  {
+   "id": "2",
+   "layout": "ticket",
+   "title": "User Accounts",
+   "task": "user_accounts.exe",
+   "heading": "MEET MEL",
+   "fields": [
+    [
+     "Name",
+     "Mel"
+    ],
+    [
+     "Likes",
+     "Buses that turn up.\nBins that get emptied.\nBills that make sense."
+    ],
+    [
+     "Permissions",
+     "1 cross"
+    ],
+    [
+     "Frequency",
+     "Every 5 years"
+    ]
+   ],
+   "highlight": "Permissions",
+   "reveal": {
+    "highlight": 1
+   },
+   "image": {
+    "file": "mel-profile.jpg",
+    "prompt": "profile picture of Mel, an ordinary UK adult in plain clothes, smiling, mug in hand, dog at their feet"
+   }
+  },
+  {
+   "id": "3",
+   "layout": "diagram",
+   "title": "history.exe",
+   "scene": "timeline",
+   "caption": "OLDER THAN THE LIGHT BULB",
+   "small": "1265 parliament · 1832 reform act · 1872 secret ballot · 1878 the bulb",
+   "steps": 3
+  },
+  {
+   "id": "4",
+   "layout": "split",
+   "task": "voting_v2.exe",
+   "left": {
+    "title": "voting_1871.exe",
+    "label": "1871",
+    "image": {
+     "file": "open-vote-1871.jpg",
+     "prompt": "a crowd at an open public vote: a man on a raised platform calling out names, everyone watching each other"
+    },
+    "heading": "SHOUT IT OUT",
+    "text": "Everyone watching."
+   },
+   "right": {
+    "title": "voting_1872.exe",
+    "label": "v2.0 · 1872",
+    "image": {
+     "file": "mel-booth-pencil.jpg",
+     "prompt": "Mel alone in a polling booth with a pencil and a folded ballot paper"
+    },
+    "heading": "THE SECRET BALLOT",
+    "text": "(the big update)"
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "5",
+   "layout": "release",
+   "title": "Update Available",
+   "task": "Update Available (since 1928)",
+   "heading": "GOVERNMENT v1832: release notes",
+   "lines": [
+    [
+     "Version",
+     "1832"
+    ],
+    [
+     "Last patch",
+     "1.9 (1928)"
+    ],
+    [
+     "Known issues",
+     "all of them"
+    ],
+    [
+     "Next update",
+     "whenever. five years max."
+    ],
+    [
+     "Next patch owner",
+     "whoever was meant to ship it"
+    ]
+   ],
+   "reveal": {
+    "bottom": 1
+   },
+   "buttons": [
+    "Remind me later",
+    "Remind me in 5 years"
+   ],
+   "bottom": "NEXT PATCH: NEVER SHIPPED"
+  },
+  {
+   "id": "6",
+   "layout": "split",
+   "task": "bank.app / country.exe",
+   "left": {
+    "title": "bank.app",
+    "label": "BANK",
+    "image": {
+     "file": "mel-bank-app.jpg",
+     "prompt": "Mel's phone showing a bank app asking Mel to prove it's them with a face scan, a code and a fingerprint to move a small sum"
+    },
+    "heading": "PROVE IT'S YOU",
+    "text": "to move £50",
+    "buttons": [
+     "Face scan",
+     "Code",
+     "Thumb"
+    ]
+   },
+   "right": {
+    "title": "country.exe",
+    "label": "COUNTRY",
+    "image": {
+     "file": "mel-ballot-pencil.jpg",
+     "prompt": "Mel holding a ballot paper and a pencil, making one cross"
+    },
+    "heading": "ONE CROSS.",
+    "text": "See you in 2029.",
+    "buttons": [
+     "OK"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "7",
+   "layout": "title",
+   "heading": "FUTURE PROOF",
+   "sub": "three ideas from software that politics never installed",
+   "progress": {
+    "pct": 3,
+    "label": "Installing 3 updates... 3% (remind me later?)"
+   },
+   "image": {
+    "file": "mel-corner-title.jpg",
+    "prompt": "Mel small, mug in hand, looking up at something to the left of frame"
+   }
+  },
+  {
+   "id": "8",
+   "layout": "list",
+   "title": "receipt_5yr.txt",
+   "task": "meal_deal.exe",
+   "heading": "PARTY MEAL DEAL, 5-YEAR",
+   "rows": [
+    [
+     "Housing (wanted)",
+     "✓"
+    ],
+    [
+     "Bus route (wanted)",
+     "✓"
+    ],
+    [
+     "Thing you hate",
+     "x6"
+    ],
+    [
+     "Thing you can't stand",
+     "x3"
+    ],
+    [
+     "Pickles",
+     "can't remove"
+    ]
+   ],
+   "total": [
+    "TOTAL",
+    "YOUR WHOLE SAY"
+   ],
+   "footer": "NO REFUNDS.\nCAN'T TAKE THE PICKLES OFF.",
+   "reveal": {
+    "total": 1,
+    "footer": 1
+   },
+   "image": {
+    "file": "mel-receipt.jpg",
+    "prompt": "Mel in a shop holding up a till receipt longer than Mel is tall, reading it calmly"
+   }
+  },
+  {
+   "id": "9",
+   "layout": "split",
+   "task": "choose_your_package.exe",
+   "left": {
+    "title": "Package A",
+    "label": "PACKAGE A",
+    "lines": [
+     "Tax",
+     "Water",
+     "Schools",
+     "Border",
+     "+ 396 more"
+    ],
+    "buttons": [
+     "Select"
+    ]
+   },
+   "right": {
+    "title": "Package B",
+    "label": "PACKAGE B",
+    "lines": [
+     "The same 400.",
+     "Different ones."
+    ],
+    "buttons": [
+     "Select"
+    ]
+   },
+   "bottom": "CANCEL ANYTIME* (*five years)",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "10",
+   "layout": "dialog",
+   "title": "choose.exe",
+   "task": "choose.exe",
+   "icon": "question",
+   "heading": "Pick one.",
+   "text": "Each button comes with the whole crate.",
+   "small": "Button layout designed by: not Mel.",
+   "buttons": [
+    "Bus route + 40 others",
+    "Bin day + 40 others"
+   ],
+   "bottom": "BOTH BUTTONS COME WITH THE CRATE",
+   "reveal": {
+    "bottom": 1
+   },
+   "image": {
+    "file": "mel-two-crates.jpg",
+    "prompt": "two big red buttons on a desk, each one a huge cardboard crate stamped WHOLE BUNDLE with a label above it naming one thing plus a small '+ 40 others' tag; Mel's hand rests calmly between them"
+   }
+  },
+  {
+   "id": "11",
+   "layout": "diagram",
+   "title": "slab.exe",
+   "scene": "slab",
+   "caption": "A party is a slab. An issue is a brick.",
+   "small": "software calls it composition over inheritance",
+   "steps": 3
+  },
+  {
+   "id": "12",
+   "layout": "split",
+   "task": "music.exe",
+   "left": {
+    "title": "album.exe",
+    "label": "POLITICS",
+    "image": {
+     "file": "mel-album.jpg",
+     "prompt": "Mel in front of a giant vinyl record labelled ONE ALBUM, PRESSED EVERY 5 YEARS, shaking their head"
+    },
+    "heading": "ONE VOTE. 400 PROMISES. 5 YEARS.",
+    "buttons": [
+     "Buy whole album"
+    ]
+   },
+   "right": {
+    "title": "single.exe",
+    "label": "MUSIC",
+    "image": {
+     "file": "mel-single.jpg",
+     "prompt": "Mel with a phone, tapping a single song, nodding"
+    },
+    "heading": "ONE VOTE PER ISSUE. ANY WEEK.",
+    "buttons": [
+     "Play"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "13",
+   "layout": "diagram",
+   "title": "pub.exe",
+   "scene": "pub",
+   "caption": "Every policy loses 3-2. The party that offers all three wins 3-2.",
+   "small": "same five people. same opinions.",
+   "steps": 3
+  },
+  {
+   "id": "14",
+   "layout": "dialog",
+   "title": "ballot_box.exe",
+   "task": "ballot_box.exe",
+   "icon": "error",
+   "heading": "YOU VOTED FOR ALL OF IT.",
+   "text": "Input: the bus.\nRecorded: everything.",
+   "small": "Built this way by: whoever designed the ballot.",
+   "buttons": [
+    "OK",
+    "OK (all of it)"
+   ],
+   "bottom": "\"I VOTED FOR THE BUS.\"",
+   "reveal": {
+    "bottom": 1
+   },
+   "image": {
+    "file": "mel-booth-bus.jpg",
+    "prompt": "Mel in a polling booth, a speech bubble coming from the ballot box, and Mel's thought bubble showing a bus"
+   }
+  },
+  {
+   "id": "15",
+   "layout": "list",
+   "title": "ballot_several_boxes.form",
+   "task": "ballot.exe (new version)",
+   "heading": "A BALLOT WITH SEVERAL BOXES",
+   "rows": [
+    [
+     "Question one",
+     "☑"
+    ],
+    [
+     "Question two",
+     "☑"
+    ],
+    [
+     "Question three",
+     "☑"
+    ],
+    [
+     "Question four",
+     "☑"
+    ]
+   ],
+   "footer": "(tick each one)",
+   "image": {
+    "file": "mel-several-boxes.jpg",
+    "prompt": "Mel holding up a ballot paper with several separate boxes, each beside a plain one-line question, each with a pencil tick; no flag, no country, no results; Mel looks impressed"
+   }
+  },
+  {
+   "id": "16",
+   "layout": "picture",
+   "title": "frome_welcome_sign.jpg",
+   "task": "frome.jpg",
+   "image": {
+    "file": "frome-sign.jpg",
+    "prompt": "a small-town welcome sign with fields behind, an extra sign underneath reading NO PARTY WHIP. HERE IT'S JUST THE VOTES., Mel's dog sniffing the sign"
+   },
+   "top": "FROME, SOMERSET: A TOWN COUNCIL WITH NO PARTY WHIP",
+   "reveal": {
+    "side": 1,
+    "bottom": 1
+   },
+   "side": {
+    "title": "Frome Town Council",
+    "icon": "ok",
+    "text": "Bin collection:\nstill happening.",
+    "buttons": [
+     "OK"
+    ]
+   },
+   "bottom": "THE ROADS ARE STILL THERE."
+  },
+  {
+   "id": "17",
+   "layout": "picture",
+   "title": "half_and_half.jpg",
+   "task": "order_britain.exe",
+   "image": {
+    "file": "mel-pizza.jpg",
+    "prompt": "a pizza split into two halves with different toppings, a delighted Mel holding a slice of each, a small ALLOWED stamp on the box"
+   },
+   "top": "HALF AND HALF IS ALLOWED ON A PIZZA.",
+   "bottom": "ASK FOR IT ON A COUNTRY.",
+   "side": {
+    "title": "Order: Britain",
+    "icon": "error",
+    "text": "Half and half not available.\nThis country is a set menu.",
+    "buttons": [
+     "OK"
+    ]
+   },
+   "reveal": {
+    "bottom": 1,
+    "side": 1
+   }
+  },
+  {
+   "id": "18",
+   "layout": "picture",
+   "title": "pilot_12_households.jpg",
+   "task": "works_on_my_machine.exe",
+   "image": {
+    "file": "pilot-briefing.jpg",
+    "prompt": "a presenter at a lectern pointing at a tiny model village labelled PILOT: 12 HOUSEHOLDS; behind them the real town, huge, with a banner LIVE: ALL OF YOU; Mel at the back with a mug, writing on a notepad"
+   },
+   "top": "WORKED IN THE BRIEFING.",
+   "bottom": "NOW IT'S LIVE. ON YOU.",
+   "sticky": "who measures this?\n— Mel",
+   "reveal": {
+    "bottom": 1,
+    "sticky": 1
+   }
+  },
+  {
+   "id": "19",
+   "layout": "diagram",
+   "title": "deploy.exe",
+   "scene": "tower",
+   "caption": "Small. Checked. Undoable.",
+   "small": "the other way: one drop, no ticks, five years of building",
+   "steps": 3
+  },
+  {
+   "id": "20",
+   "layout": "split",
+   "task": "undo.exe",
+   "left": {
+    "title": "every_app.exe",
+    "label": "EVERY APP YOU OWN",
+    "image": {
+     "file": "ctrl-z-keys.jpg",
+     "prompt": "a keyboard with the Ctrl and Z keys glowing"
+    },
+    "heading": "Edit > Undo",
+    "text": "Ctrl + Z",
+    "buttons": [
+     "Undo"
+    ]
+   },
+   "right": {
+    "title": "the_law.exe",
+    "label": "THE LAW",
+    "image": {
+     "file": "statute-book-sticky.jpg",
+     "prompt": "a huge statute book on a desk with a sticky note on the cover reading WE'LL LOOK INTO IT"
+    },
+    "heading": "Undo not available.",
+    "text": "\"We'll review it in 3-5 years.\"",
+    "buttons": [
+     "Remind me later"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "21",
+   "layout": "dialog",
+   "title": "Search: did this law work?",
+   "task": "search.exe",
+   "icon": "warn",
+   "heading": "NOBODY KEEPS THE COUNT.",
+   "text": "Search: reviews departments actually did\nResult: **no central record**",
+   "small": "(Lords written answer: no central record of reviews)",
+   "progress": {
+    "pct": 40,
+    "label": "Searching the drawer..."
+   },
+   "buttons": [
+    "Search again",
+    "Remind me later"
+   ],
+   "reveal": {
+    "text": 1
+   },
+   "image": {
+    "file": "empty-filing-drawer.jpg",
+    "prompt": "a filing cabinet in an empty corridor, top drawer labelled DID THIS LAW WORK? open with one lonely paperclip inside; Mel and the dog looking into it"
+   }
+  },
+  {
+   "id": "22",
+   "layout": "release",
+   "title": "poll_tax: version history",
+   "task": "poll_tax.exe",
+   "heading": "POLL TAX: CHANGELOG",
+   "lines": [
+    [
+     "1989",
+     "deployed: Scotland first"
+    ],
+    [
+     "1991",
+     "scrapping announced"
+    ],
+    [
+     "1993",
+     "replaced by Council Tax"
+    ]
+   ],
+   "reveal": {
+    "bottom": 1
+   },
+   "buttons": [
+    "Revert",
+    "Remind me later"
+   ],
+   "bottom": "STOP RULE: NONE WE CAN FIND."
+  },
+  {
+   "id": "23",
+   "layout": "ticket",
+   "title": "Issue tracker",
+   "task": "BUG: beach.exe",
+   "heading": "BUG: raw sewage on the beach",
+   "fields": [
+    [
+     "Status",
+     "Open"
+    ],
+    [
+     "Opened",
+     "years ago"
+    ],
+    [
+     "Priority",
+     "you tell me"
+    ],
+    [
+     "Assigned to",
+     "???"
+    ]
+   ],
+   "highlight": "Assigned to",
+   "reveal": {
+    "highlight": 1
+   },
+   "image": {
+    "file": "mel-beach-ticket.jpg",
+    "prompt": "Mel standing on a beach with the dog, holding up a phone showing a bug-tracker ticket"
+   }
+  },
+  {
+   "id": "24",
+   "layout": "split",
+   "task": "testing.exe",
+   "left": {
+    "title": "sandbox.exe",
+    "label": "NEW MONEY APPS",
+    "image": {
+     "file": "door-sandbox.jpg",
+     "prompt": "a door in a hall labelled SANDBOX: NEW MONEY APPS opening onto a cheerful testing room with a TEST HERE FIRST banner"
+    },
+    "heading": "A SAFE SANDBOX.",
+    "buttons": [
+     "Test first"
+    ]
+   },
+   "right": {
+    "title": "bus_timetable.exe",
+    "label": "BUS TIMETABLE",
+    "image": {
+     "file": "door-bus-timetable.jpg",
+     "prompt": "a door in a hall labelled BUS TIMETABLE with no room behind it, just a long drop; Mel peering through its keyhole"
+    },
+    "heading": "PRODUCTION.",
+    "buttons": [
+     "Deploy to everyone"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "25",
+   "layout": "card",
+   "title": "Tip of the day",
+   "task": "tips.exe",
+   "icon": "ok",
+   "heading": "Did you know?",
+   "lines": [
+    "CHANGE SMALL.",
+    "CHECK IT.",
+    "KEEP AN UNDO."
+   ],
+   "buttons": [
+    "Close",
+    "Show at startup"
+   ],
+   "image": {
+    "file": "mel-thumbs-up-mug.jpg",
+    "prompt": "Mel nodding, holding a mug with a thumbs-up on it"
+   }
+  },
+  {
+   "id": "26",
+   "layout": "split",
+   "top": "A PILL vs A POLICY",
+   "task": "Compare: pill.exe / policy.exe",
+   "left": {
+    "title": "pill_setup.exe",
+    "label": "A PILL",
+    "image": {
+     "file": "pill-trial-trail.jpg",
+     "prompt": "a pill bottle on a bathroom shelf with a long paper trail of trial reports behind it, a sign reading CONTROL GROUP, calendar pages flying past"
+    },
+    "lines": [
+     [
+      "Years of trials",
+      "✓"
+     ],
+     [
+      "Control group",
+      "✓"
+     ]
+    ],
+    "buttons": [
+     "Install"
+    ]
+   },
+   "right": {
+    "title": "policy_setup.exe",
+    "label": "A POLICY",
+    "image": {
+     "file": "policy-megaphone.jpg",
+     "prompt": "a megaphone on a stand in front of a map of the country, a banner over the map reading IT'LL WORK, TRUST US"
+    },
+    "lines": [
+     [
+      "A confident announcement",
+      "✓"
+     ],
+     [
+      "That's it",
+      "✓"
+     ]
+    ],
+    "buttons": [
+     "Ship it",
+     "Ship it louder"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "27",
+   "layout": "diagram",
+   "title": "letters.exe",
+   "scene": "letters",
+   "caption": "SAME LETTER, ONE EXTRA LINE: **67.5% → 79%** PAID.",
+   "small": "HMRC, overdue tax",
+   "steps": 2
+  },
+  {
+   "id": "28",
+   "layout": "ticket",
+   "title": "Issue tracker: policy",
+   "task": "Bug #1: Scared Straight",
+   "heading": "Scared Straight: take teenagers to meet prisoners, frighten them off crime",
+   "fields": [
+    [
+     "Status",
+     "SHIPPED"
+    ],
+    [
+     "Owner",
+     "the programme's designers and the officials who ran it"
+    ],
+    [
+     "Confidence",
+     "Very high. It sounded great."
+    ],
+    [
+     "Tested by",
+     "a review of 9 controlled trials"
+    ],
+    [
+     "Result",
+     "MORE REOFFENDING"
+    ]
+   ],
+   "highlight": "Result",
+   "bottom": "COMMON SENSE IS A HYPOTHESIS.",
+   "reveal": {
+    "highlight": 1,
+    "bottom": 2
+   }
+  },
+  {
+   "id": "29",
+   "layout": "split",
+   "top": "COUNTED SUCCESS vs MEASURED SUCCESS",
+   "task": "Two sums, one programme",
+   "left": {
+    "title": "department_dashboard.exe",
+    "label": "COUNTED",
+    "heading": "99% TURNED AROUND",
+    "text": "of ~120,000 families\ncounted by: a government department",
+    "buttons": [
+     "Celebrate"
+    ]
+   },
+   "right": {
+    "title": "independent_evaluation.pdf",
+    "label": "MEASURED",
+    "heading": "NO CONSISTENT IMPACT FOUND",
+    "text": "the independent evaluation",
+    "buttons": [
+     "Read it"
+    ]
+   },
+   "reveal": {
+    "right": 1
+   }
+  },
+  {
+   "id": "30",
+   "layout": "dialog",
+   "title": "presumption.dll",
+   "task": "presumption.dll (no test attached)",
+   "icon": "warn",
+   "heading": "Rule loaded: the computer is presumed right",
+   "text": "Since 2000, in English law. Prove it isn't working.\nTest attached: **none**",
+   "buttons": [
+    "Show me the test",
+    "Who decided this?"
+   ],
+   "image": {
+    "file": "presumed-right-stamp.jpg",
+    "prompt": "a big rubber stamp reading THE COMPUTER IS PRESUMED TO BE RIGHT coming down on a stack of paperwork, a label on the stamp handle reading NO TEST ATTACHED; in the background a small figure at a post-office-style counter holding a document, standing with dignity"
+   },
+   "bottom": "WHO DECIDED A COMPUTER SHOULD BE PRESUMED RIGHT? WHAT TEST DID IT PASS?",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "31",
+   "layout": "list",
+   "title": "Policy Setup Wizard",
+   "task": "Policy Setup: required fields empty",
+   "heading": "HOW WE'LL KNOW",
+   "rows": [
+    [
+     "WHAT WE'RE TESTING",
+     "____"
+    ],
+    [
+     "WHO GETS IT FIRST",
+     "____"
+    ],
+    [
+     "WHAT NUMBER MEANS STOP",
+     "____"
+    ]
+   ],
+   "footer": "Setup can't continue: if it can't fill in the label, it isn't ready.",
+   "buttons": [
+    "< Back",
+    "Next >"
+   ],
+   "image": {
+    "file": "mel-label-leaflet.jpg",
+    "prompt": "Mel holding a government leaflet at arm's length, a nutrition-style label stuck on it with three empty boxes: WHAT WE'RE TESTING, WHO GETS IT FIRST, WHAT NUMBER MEANS STOP; mug in the other hand"
+   },
+   "reveal": {
+    "footer": 1
+   }
+  },
+  {
+   "id": "32",
+   "layout": "diagram",
+   "title": "trial.exe",
+   "scene": "towns",
+   "caption": "NO POLICY WITHOUT ITS EXPERIMENT.",
+   "small": "lever unlocks only when the number says go",
+   "steps": 3
+  },
+  {
+   "id": "33",
+   "layout": "toasts",
+   "task": "Notifications (3)",
+   "wall": {
+    "heading": "RULE ONE:\nMEL IS TOLD.",
+    "small": "not a secret experiment. a public one."
+   },
+   "image": {
+    "file": "mel-bus-stop-notice.jpg",
+    "prompt": "Mel at a bus stop with the dog, reading an official notice pinned to the shelter: YOUR TOWN IS THE TRIAL, WHAT WE'RE MEASURING, THE NUMBER THAT MEANS STOP, THE DATE THIS ENDS, with the HOW WE'LL KNOW label printed on it; Mel gives a small satisfied nod"
+   },
+   "toasts": [
+    {
+     "title": "Trial notice",
+     "text": "**Your town is the trial.**"
+    },
+    {
+     "title": "What we're measuring",
+     "text": "...and the number that means stop."
+    },
+    {
+     "title": "Calendar",
+     "text": "The date this ends: on the notice."
+    }
+   ],
+   "reveal": {
+    "toasts": 1
+   }
+  },
+  {
+   "id": "34",
+   "layout": "dialog",
+   "title": "Decision type",
+   "task": "Experiment or judgement?",
+   "icon": "question",
+   "heading": "Run this as an experiment?",
+   "text": "Some things you just have to decide.",
+   "small": "Those stay with people who have to look us in the eye.",
+   "buttons": [
+    "Both",
+    "Experiment",
+    "Judgement"
+   ],
+   "image": {
+    "file": "mel-scales.jpg",
+    "prompt": "a set of weighing scales labelled EXPERIMENT on one pan and JUDGEMENT on the other, a hand-drawn BOTH in the middle; Mel on a stool adjusting the scales with a screwdriver, dog watching"
+   }
+  },
+  {
+   "id": "35",
+   "layout": "diagram",
+   "title": "petition_pipe.exe",
+   "scene": "pipe",
+   "caption": "A SUGGESTION BOX WITH NO WIRE.",
+   "small": "10,000 = a reply. 100,000 = considered for debate.",
+   "steps": 2
+  },
+  {
+   "id": "36",
+   "layout": "dialog",
+   "title": "Inbox: automatic reply",
+   "task": "Ideas (retired)",
+   "icon": "ok",
+   "heading": "Thank you for your idea.",
+   "text": "It has been noted.",
+   "progress": {
+    "pct": 100,
+    "label": "Noting... complete"
+   },
+   "buttons": [
+    "OK",
+    "Noted"
+   ],
+   "image": {
+    "file": "dog-eats-letter.jpg",
+    "prompt": "Mel's phone on a kitchen table showing a generic inbox with a polite automatic reply; Mel's dog beside it innocently chewing a paper letter"
+   },
+   "bottom": "STATUS: NO.",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "37",
+   "layout": "diagram",
+   "title": "agreement_map.exe",
+   "scene": "dots",
+   "caption": "MAPS OF AGREEMENT, NOT A WINNER.",
+   "small": "no winner, no algorithm choosing",
+   "steps": 3
+  },
+  {
+   "id": "38",
+   "layout": "picture",
+   "title": "signed.jpg",
+   "task": "Decision: awaiting signature",
+   "image": {
+    "file": "named-person-signs.jpg",
+    "prompt": "a table with a laptop on it, a person beside it signing a paper, wearing a plain visible name tag with an invented name; a sign above reads THE MACHINE SUMMARISES. A NAMED PERSON SIGNS.; Mel across the table, arms folded, satisfied"
+   },
+   "top": "THE MACHINE SUMMARISES.",
+   "bottom": "A NAMED PERSON SIGNS.",
+   "side": {
+    "title": "Decision",
+    "icon": "error",
+    "text": "Signed by: **(no name found)**\nAnswer: **NO**",
+    "buttons": [
+     "OK"
+    ]
+   },
+   "reveal": {
+    "bottom": 1,
+    "side": 2
+   }
+  },
+  {
+   "id": "39",
+   "layout": "picture",
+   "title": "you_are_not_the_first.jpg",
+   "task": "15 windows open",
+   "image": {
+    "file": "mel-fifteen-doors.jpg",
+    "prompt": "Mel at the end of a long corridor of fifteen open doors, each with a different hand-painted sign, light spilling out, the dog already running through one of them"
+   },
+   "bottom": "YOU ARE NOT THE FIRST.",
+   "sticky": "pause the video.\nopen a tab.\npick one.",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "40",
+   "layout": "link",
+   "name": "RadicalxChange",
+   "url": "radicalxchange.org",
+   "line": "Spend your votes like a budget.",
+   "n": "1 of 15",
+   "task": "Open web page? (1 of 15)",
+   "image": {
+    "file": "montage-radicalxchange.jpg",
+    "prompt": "Mel spreading a handful of play-money tokens across ten jars, dog watching"
+   }
+  },
+  {
+   "id": "41",
+   "layout": "link",
+   "name": "Sortition Foundation",
+   "url": "sortitionfoundation.org",
+   "line": "Jury service, but for the bin collection.",
+   "n": "2 of 15",
+   "task": "Open web page? (2 of 15)",
+   "image": {
+    "file": "montage-sortition-foundation.jpg",
+    "prompt": "a jury-summons envelope addressed RE: YOUR BIN COLLECTION, held by Mel next to a wheelie bin"
+   }
+  },
+  {
+   "id": "42",
+   "layout": "link",
+   "name": "PB Scotland",
+   "url": "pbscotland.scot",
+   "line": "A village hall, a ballot box and the council's actual money.",
+   "n": "3 of 15",
+   "task": "Open web page? (3 of 15)",
+   "image": {
+    "file": "montage-pb-scotland.jpg",
+    "prompt": "a folding table in a village hall with a ballot box on it and a bag labelled COUNCIL MONEY; Mel in the queue in the corner"
+   }
+  },
+  {
+   "id": "43",
+   "layout": "link",
+   "name": "Flatpack Democracy",
+   "url": "en.wikipedia.org/wiki/Independents_for_Frome",
+   "line": "A DIY guide to a town with no party whip.",
+   "n": "4 of 15",
+   "task": "Open web page? (4 of 15)",
+   "image": {
+    "file": "montage-flatpack-democracy.jpg",
+    "prompt": "a self-assembly flat-pack box labelled DEMOCRACY with an Allen key and a half-built council chamber; Mel reading the instructions in the corner"
+   }
+  },
+  {
+   "id": "44",
+   "layout": "link",
+   "name": "CONSUL",
+   "url": "consuldemocracy.org",
+   "line": "Free software cities use for proposals and budget votes. Your council could copy it.",
+   "n": "5 of 15",
+   "task": "Open web page? (5 of 15)",
+   "image": {
+    "file": "montage-consul.jpg",
+    "prompt": "a suggestion box with a plug and a cable, plugged into a city hall; Mel holding the plug in the corner"
+   }
+  },
+  {
+   "id": "45",
+   "layout": "link",
+   "name": "FixMyStreet",
+   "url": "fixmystreet.com",
+   "line": "Somebody finally gave the country a bug tracker. The bug is the pothole.",
+   "n": "6 of 15",
+   "task": "Open web page? (6 of 15)",
+   "image": {
+    "file": "montage-fixmystreet.jpg",
+    "prompt": "a pothole with a little bug-report flag planted in it and a FIXED sticker on the next pothole along; Mel and the dog stepping round it"
+   }
+  },
+  {
+   "id": "46",
+   "layout": "link",
+   "name": "WriteToThem",
+   "url": "writetothem.com",
+   "line": "A pull request to your MP. One box.",
+   "n": "7 of 15",
+   "task": "Open web page? (7 of 15)",
+   "image": {
+    "file": "montage-writetothem.jpg",
+    "prompt": "a generic new pull request screen on Mel's phone, the reviewer slot filled by a rosette and a house icon"
+   }
+  },
+  {
+   "id": "47",
+   "layout": "link",
+   "name": "small-ideas.org",
+   "url": "small-ideas.org",
+   "line": "Ordinary people sending in the small fixes they want. Add yours. **[VERIFY FIRST]**",
+   "n": "8 of 15",
+   "task": "VERIFY FIRST: small-ideas.org",
+   "image": {
+    "file": "montage-small-ideas-org.jpg",
+    "prompt": "a suggestion drop-box, Mel's hand posting a paper slip labelled one small fix"
+   },
+   "note": "GATE (deck 47): nothing on this slide until Kai has opened the live site and confirmed who runs it, how it ends and the year. If unverified, the montage runs 14 and this slot is cut (renumber n)."
+  },
+  {
+   "id": "48",
+   "layout": "link",
+   "name": "Loomio",
+   "url": "loomio.com",
+   "line": "Decide one thing properly, as a group.",
+   "n": "9 of 15",
+   "task": "Open web page? (9 of 15)",
+   "image": {
+    "file": "montage-loomio.jpg",
+    "prompt": "a group of people round a table with a laptop, one holding a PROPOSAL card, hands raised, a gentle AGREED tick; Mel among them"
+   }
+  },
+  {
+   "id": "49",
+   "layout": "link",
+   "name": "TheyWorkForYou",
+   "url": "theyworkforyou.com",
+   "line": "How your MP actually voted, issue by issue.",
+   "n": "10 of 15",
+   "task": "Open web page? (10 of 15)",
+   "image": {
+    "file": "montage-theyworkforyou.jpg",
+    "prompt": "a thick set of terms-and-conditions pages with a yellow highlighter running through them, held by Mel"
+   }
+  },
+  {
+   "id": "50",
+   "layout": "link",
+   "name": "Democracy Club",
+   "url": "democracyclub.org.uk",
+   "line": "Who's standing, and where to vote. Built by volunteers.",
+   "n": "11 of 15",
+   "task": "Open web page? (11 of 15)",
+   "image": {
+    "file": "montage-democracy-club.jpg",
+    "prompt": "a clipboard with a map pin and a ballot-box icon, and a volunteer's hand-drawn badge; Mel in the corner"
+   }
+  },
+  {
+   "id": "51",
+   "layout": "link",
+   "name": "What Works Network",
+   "url": "gov.uk/what-works-network",
+   "line": "Nine centres that check what works. Free to read.",
+   "n": "12 of 15",
+   "task": "Open web page? (12 of 15)",
+   "image": {
+    "file": "montage-what-works-network.jpg",
+    "prompt": "a plain office door with a small brass plate reading DID IT WORK? and a stack of nine folders beside it; Mel knocking"
+   }
+  },
+  {
+   "id": "52",
+   "layout": "link",
+   "name": "Full Fact",
+   "url": "fullfact.org",
+   "line": "Before you repost the chart with the red arrow: check the chart with the red arrow.",
+   "n": "13 of 15",
+   "task": "Open web page? (13 of 15)",
+   "image": {
+    "file": "montage-full-fact.jpg",
+    "prompt": "Mel about to share a chart with a big red arrow on a phone, a magnifying glass held over it"
+   }
+  },
+  {
+   "id": "53",
+   "layout": "link",
+   "name": "Participedia",
+   "url": "participedia.net",
+   "line": "2,442 cases from 160 countries. Somebody said nobody had tried.",
+   "n": "14 of 15",
+   "task": "Open web page? (14 of 15)",
+   "image": {
+    "file": "montage-participedia.jpg",
+    "prompt": "a shelf of cardboard boxes, each labelled with a different country and a tiny experiment inside, Mel peering into one"
+   }
+  },
+  {
+   "id": "54",
+   "layout": "link",
+   "name": "Pol.is",
+   "url": "pol.is · explainer: compdemocracy.org",
+   "line": "A map of where the other side secretly agrees with you.",
+   "n": "15 of 15",
+   "task": "Open web page? (15 of 15)",
+   "image": {
+    "file": "montage-pol-is.jpg",
+    "prompt": "two crowds on opposite sides of a river, a little bridge forming in the middle labelled WE BOTH SAID YES TO THIS; Mel and the dog on the bridge"
+   }
+  },
+  {
+   "id": "55",
+   "layout": "picture",
+   "title": "branches.jpg",
+   "task": "git status: good branch (empty)",
+   "image": {
+    "file": "mel-empty-plot.jpg",
+    "prompt": "an empty plot of ground with a sign reading YOURS; a path leads to it from Mel's bus stop; Mel stands at the edge with the dog, holding a plain notepad; far away in the sky, small, a finished unlovely building labelled THE OTHER BRANCH"
+   },
+   "top": "THE GOOD BRANCH",
+   "bottom": "ISN'T WRITTEN.",
+   "side": {
+    "title": "git status",
+    "icon": "info",
+    "text": "branch **bad**: finished.\nbranch **good**: no commits yet.",
+    "buttons": [
+     "Commit something"
+    ]
+   },
+   "reveal": {
+    "side": 1
+   }
+  },
+  {
+   "id": "56",
+   "layout": "card",
+   "title": "Tip of the day",
+   "task": "Tip of the day (do not dismiss)",
+   "icon": "info",
+   "lines": [
+    "Write one rule.",
+    "Say how we'd know.",
+    "Show the person it would hit."
+   ],
+   "buttons": [
+    "Close",
+    "Next tip"
+   ],
+   "image": {
+    "file": "mel-fills-label.jpg",
+    "prompt": "the HOW WE'LL KNOW label on a plain piece of paper, filled in with Mel's handwriting: one rule, how we'd know, who it would hit; a pencil beside it"
+   }
+  },
+  {
+   "id": "57",
+   "layout": "dialog",
+   "title": "Confirm",
+   "task": "Remind me later (since 1872)",
+   "icon": "warn",
+   "heading": "Changing the system is a gamble. Are you sure?",
+   "buttons": [
+    "Keep it",
+    "Change it"
+   ],
+   "image": {
+    "file": "signpost-same-cloud.jpg",
+    "prompt": "a plain fork-in-the-road signpost, one path labelled CHANGE IT and the other KEEP IT, the same small rain cloud hanging over both paths"
+   },
+   "bottom": "YOU'RE NOT GAMBLING BY CHANGING THE SYSTEM. YOU'RE GAMBLING BY KEEPING IT.",
+   "reveal": {
+    "bottom": 1
+   }
+  },
+  {
+   "id": "58",
+   "layout": "title",
+   "heading": "FUTURE PROOF",
+   "sub": "other people are already rethinking this. go and look.",
+   "progress": {
+    "pct": 83,
+    "label": "RadicalxChange · Sortition Foundation · PB Scotland · Flatpack Democracy\nCONSUL · FixMyStreet · WriteToThem · small-ideas.org · Loomio\nTheyWorkForYou · Democracy Club · What Works Network\nFull Fact · Participedia · Pol.is\n\nbadcode.tv/future-proof"
+   },
+   "image": {
+    "file": "mel-wave.jpg",
+    "prompt": "Mel giving a small wave, mug in the other hand, dog at their feet"
+   },
+   "note": "badcode.tv/future-proof is CHECK (deployment unverified, research/01); drop small-ideas.org from the list if slide 47 is cut."
+  },
+  {
+   "id": "A1",
+   "layout": "split",
+   "top": "So, referendums?",
+   "task": "Referendum Wizard",
+   "left": {
+    "title": "DOOR 1",
+    "image": {
+     "file": "mel-door-one.jpg",
+     "prompt": "Mel, mug in hand and dog at heel, calmly walking through the first of two plain doors in a corridor; the sign on the first door reads ASK MORE OFTEN, LOW STAKES FIRST"
+    },
+    "heading": "Ask more often",
+    "text": "Low stakes first. Paper stays for the big one.",
+    "buttons": [
+     "Enter"
+    ]
+   },
+   "right": {
+    "title": "DOOR 2",
+    "heading": "One big binding vote",
+    "text": "Everything on one question. No undo.",
+    "buttons": [
+     "We've been through this door"
+    ]
+   },
+   "bottom": "No. Not the 2016 one.",
+   "reveal": {
+    "bottom": 1
+   },
+   "steps": 1
+  },
+  {
+   "id": "A2",
+   "layout": "toasts",
+   "task": "Security Centre",
+   "wall": {
+    "heading": "Can't we hack it?",
+    "small": "Agreed: voting from a phone, in secret, securely, is a hard unsolved problem."
+   },
+   "image": {
+    "file": "mel-paper-ballot-padlock.jpg",
+    "prompt": "Mel holding a folded paper ballot beside a ballot box with a padlock on it; on the table next to them a phone whose screen shows only a large question mark"
+   },
+   "toasts": [
+    {
+     "title": "Estonia",
+     "text": "People use it. ✓"
+    },
+    {
+     "title": "Estonia",
+     "text": "Proves it's safe? **Not shown.**"
+    },
+    {
+     "title": "Both of these are true",
+     "text": "So we're not asking for phone voting first."
+    }
+   ],
+   "reveal": {},
+   "steps": 3
+  },
+  {
+   "id": "A3",
+   "layout": "dialog",
+   "top": "Does Switzerland really do this?",
+   "title": "Calendar reminder",
+   "task": "Calendar: Switzerland",
+   "icon": "info",
+   "heading": "Vote: one question at a time",
+   "text": "Several times a year.\nResults can go any way.",
+   "buttons": [
+    "That's what asking is",
+    "Remind Britain later"
+   ],
+   "image": {
+    "file": "ballot-several-boxes-calendar.jpg",
+    "prompt": "a ballot paper with several separate questions, each with its own yes and no box, lying next to a wall calendar with several dates across the year circled"
+   },
+   "bottom": "Yes. Results may vary.",
+   "reveal": {
+    "bottom": 1
+   },
+   "steps": 1
+  },
+  {
+   "id": "A4",
+   "layout": "dialog",
+   "title": "pilot_test.exe",
+   "task": "Pilot (paint only)",
+   "icon": "ok",
+   "heading": "Pilot complete",
+   "text": "Tested: the paint.\nNot tested: the weight.",
+   "progress": {
+    "pct": 100,
+    "label": "Paint 100% · Load 0%"
+   },
+   "small": "Signed off by whoever designed the pilot.",
+   "buttons": [
+    "Publish press release",
+    "Attach spreadsheet"
+   ],
+   "image": {
+    "file": "bridge-paint-test.jpg",
+    "prompt": "workers in hard hats carefully painting a new bridge as their test of it, a clipboard ticked; a loaded lorry waiting at the end of the bridge, engine off, nobody letting it on"
+   },
+   "bottom": "That's not a pilot. It's a press release.",
+   "reveal": {
+    "bottom": 1
+   },
+   "steps": 1
+  },
+  {
+   "id": "A5",
+   "layout": "split",
+   "top": "Your milk has an expiry date",
+   "task": "Statute book (no date)",
+   "left": {
+    "title": "milk.jpg",
+    "label": "MILK",
+    "image": {
+     "file": "milk-use-by.jpg",
+     "prompt": "a carton of milk on a kitchen counter with its use-by date clearly printed on the side"
+    },
+    "heading": "Use by: printed"
+   },
+   "right": {
+    "title": "the_law.jpg",
+    "label": "THE LAW",
+    "image": {
+     "file": "statute-book-blank-date.jpg",
+     "prompt": "a thick statute book open on a desk at a page with an empty box labelled EXPIRES and nothing written in it"
+    },
+    "heading": "Expires: ____",
+    "text": "One study's search: 19 Acts with a date."
+   },
+   "bottom": "Renews by default? A test nobody reads.",
+   "reveal": {
+    "bottom": 1
+   },
+   "steps": 1
+  },
+  {
+   "id": "A6",
+   "layout": "diagram",
+   "title": "tokens.exe",
+   "task": "tokens.exe",
+   "scene": "tokens",
+   "caption": "100 tokens each. 107 bills. Nobody put them all on one.",
+   "small": "Colorado House Democrats · non-binding · a good small test",
+   "steps": 2
+  },
+  {
+   "id": "A7",
+   "layout": "ticket",
+   "title": "Issue tracker · liquid-democracy",
+   "task": "Bug report (closed, learned)",
+   "heading": "BUG: power drifts to a few super-delegates",
+   "fields": [
+    [
+     "Tested by",
+     "Germany's Pirate Party"
+    ],
+    [
+     "Build",
+     "the purest version: delegate per topic, take it back any time"
+    ],
+    [
+     "Expected",
+     "everyone's say, passed along"
+    ],
+    [
+     "Actual",
+     "power drifted to a few super-delegates; activity fell off"
+    ],
+    [
+     "Status",
+     "post-mortem read"
+    ]
+   ],
+   "highlight": "Actual",
+   "reveal": {
+    "highlight": 1
+   },
+   "image": {
+    "file": "hands-baton-one-hand.jpg",
+    "prompt": "a long line of ordinary hands passing batons along, each hand handing on its baton, until at the end one enormous hand holds all of the batons at once"
+   },
+   "steps": 1
+  },
+  {
+   "id": "A8",
+   "layout": "dialog",
+   "title": "Maps · participatory budgeting",
+   "task": "Maps: Porto Alegre",
+   "icon": "warn",
+   "heading": "It started here: Porto Alegre, Brazil",
+   "text": "Status: later reported **suspended**.",
+   "small": "Even good things need an undo, and a reason to restart.",
+   "buttons": [
+    "Restart (reason needed)",
+    "Undo"
+   ],
+   "image": {
+    "file": "map-pin-lock.jpg",
+    "prompt": "a paper map of a Brazilian city with a single map pin pushed into it, and a small padlock locked onto the pin"
+   },
+   "steps": 0
+  },
+  {
+   "id": "A9",
+   "layout": "release",
+   "top": "Does a basic income work?",
+   "title": "finland_trial_results.txt",
+   "task": "Test results (awkward)",
+   "heading": "Trial results: published",
+   "lines": [
+    [
+     "Effect on jobs",
+     "small"
+    ],
+    [
+     "Wellbeing",
+     "better"
+    ],
+    [
+     "Proves it works?",
+     "not the point"
+    ],
+    [
+     "Someone ran the test?",
+     "YES"
+    ]
+   ],
+   "reveal": {
+    "lines": 1
+   },
+   "footer": "Finland ran a real trial and published the awkward answer.",
+   "sticky": "the test is the point",
+   "steps": 4
+  },
+  {
+   "id": "A10",
+   "layout": "dialog",
+   "title": "Different argument detected",
+   "task": "Party fight (not this one)",
+   "icon": "info",
+   "heading": "Proportional representation?",
+   "text": "Different argument. Also a party fight.",
+   "small": "This one is smaller: you choose each thing, not a package.",
+   "buttons": [
+    "No, thank you",
+    "Back to the small thing"
+   ],
+   "image": {
+    "file": "mel-declines-tangled-sign.jpg",
+    "prompt": "Mel politely raising a hand to say no thank you in front of a ballot box with a hopelessly tangled signpost on top, arrows knotted in every direction; dog sitting patiently"
+   },
+   "steps": 0
+  },
+  {
+   "id": "A11",
+   "layout": "card",
+   "title": "Tip of the day",
+   "task": "Where the AI sits",
+   "icon": "info",
+   "heading": "Where does the AI sit?",
+   "lines": [
+    "Summarises the disagreement.",
+    "A named person audits it.",
+    "Decides: **never**."
+   ],
+   "image": {
+    "file": "laptop-opinions-named-pen.jpg",
+    "prompt": "a laptop pointing at a wide spread of sticky notes with different opinions on them; beside it a person wearing a name badge holds the only pen"
+   },
+   "steps": 2,
+   "buttons": []
+  },
+  {
+   "id": "A12",
+   "layout": "ticket",
+   "title": "Issue tracker · #23",
+   "task": "#23 sewage (assigned!)",
+   "heading": "BUG: raw sewage on the beach",
+   "fields": [
+    [
+     "Status",
+     "open"
+    ],
+    [
+     "Opened",
+     "years ago"
+    ],
+    [
+     "Wanted fixed by",
+     "voters of opposite parties, both near the top"
+    ],
+    [
+     "Fix needs",
+     "a test and an undo"
+    ],
+    [
+     "Assigned to",
+     "one owner, by name (finally)"
+    ]
+   ],
+   "highlight": "Assigned to",
+   "reveal": {
+    "highlight": 1,
+    "sticky": 2
+   },
+   "sticky": "a rare thing everyone wants",
+   "image": {
+    "file": "ticket-assigned-name.jpg",
+    "prompt": "Mel on a beach with the dog, holding up a phone showing a bug ticket where the ASSIGNED TO box has a name typed in at last"
+   },
+   "steps": 2
+  }
+ ]
+}
