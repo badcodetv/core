@@ -1,0 +1,346 @@
+<title>GPOM Rewrite Proposal</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, the hologram directions as a 3-up comparison that stacks on phones; gold = consciousness, cyan = the machine (the film's own rule, borrowed for the page) */
+:root{
+  --bg:#eef0f2; --paper:#ffffff; --ink:#15191f; --muted:#5b6470; --line:#d5dae0;
+  --gold:#b07a12; --gold-soft:#f6ead0; --cyan:#0f7d8c; --cyan-soft:#dcf0f2; --red:#b3261e; --red-soft:#f7dedc;
+  --holo-bg:#0d1218; --holo-line:#2c3a48;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1317; --paper:#171c22; --ink:#e7eaee; --muted:#9aa4b0; --line:#2a323b;
+  --gold:#e3ad45; --gold-soft:#3a2f17; --cyan:#4fc3d1; --cyan-soft:#12313a; --red:#f08a80; --red-soft:#3d1d1b;
+  --holo-bg:#080b0f; --holo-line:#26323e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1317; --paper:#171c22; --ink:#e7eaee; --muted:#9aa4b0; --line:#2a323b;
+  --gold:#e3ad45; --gold-soft:#3a2f17; --cyan:#4fc3d1; --cyan-soft:#12313a; --red:#f08a80; --red-soft:#3d1d1b;
+  --holo-bg:#080b0f; --holo-line:#26323e; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding-block:40px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:48px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(2rem,5vw,3.1rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.65rem;font-weight:700}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0}
+.read{max-width:68ch}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--mono);font-size:.85em}
+section{display:flex;flex-direction:column;gap:18px}
+.hero{display:flex;flex-direction:column;gap:14px}
+.tldr{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);padding:16px 20px;border-radius:6px;max-width:80ch}
+.tldr b{color:var(--ink)}
+ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.agreed{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.agreed div{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.agreed .k{font-family:var(--mono);font-size:.75rem;color:var(--cyan);letter-spacing:.06em;text-transform:uppercase}
+.dirs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.dirs{grid-template-columns:1fr}}
+.dir{background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.dir.rec{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.dir svg{display:block;width:100%;height:auto;background:var(--holo-bg)}
+.dir .body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:12px}
+.tag{display:inline-block;font-family:var(--mono);font-size:.72rem;padding:2px 8px;border-radius:99px;background:var(--gold-soft);color:var(--gold);letter-spacing:.04em}
+.tag.cy{background:var(--cyan-soft);color:var(--cyan)}
+.tag.rd{background:var(--red-soft);color:var(--red)}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:.93rem}
+dt{font-family:var(--mono);font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding-top:3px}
+dd{margin:0;min-width:0}
+details{border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-weight:600;font-size:.93rem}
+summary:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.script{font-size:.92rem;display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.script .cue{font-family:var(--mono);font-size:.76rem;color:var(--cyan)}
+.script .slow{color:var(--gold);font-weight:600}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.rules div{border-top:2px solid var(--cyan);padding-top:10px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;grid-template-columns:2.2rem 1fr;gap:4px 12px}
+.opt .n{font-family:var(--display);font-weight:800;font-size:1.3rem;color:var(--muted)}
+.opt.pick{border-color:var(--gold)}
+.opt.pick .n{color:var(--gold)}
+.opt p.src{font-size:.84rem;color:var(--muted)}
+.flag{background:var(--red-soft);color:var(--ink);border-radius:6px;padding:12px 16px;border-left:4px solid var(--red);max-width:80ch}
+.qs{counter-reset:q;display:flex;flex-direction:column;gap:10px}
+.q{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px 14px 56px;position:relative}
+.q::before{counter-increment:q;content:counter(q);position:absolute;left:16px;top:12px;font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--gold)}
+.q .lean{font-size:.9rem;color:var(--muted);margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:500}
+.tbl{overflow-x:auto}
+footer{font-size:.85rem;color:var(--muted);max-width:80ch;display:flex;flex-direction:column;gap:6px}
+svg text{font-family:var(--mono)}
+@media (prefers-reduced-motion:no-preference){.pulse{animation:pulse 3.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.45}}}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <span class="eyebrow">GitPush Origin Master · from the Kai &amp; Jack meeting, 5 Nov 2026 · a proposal to talk through, nothing built</span>
+  <h1>Going hard on consciousness, and faster</h1>
+  <div class="tldr read"><b>In one line:</b> GPOM is one film now. Its biggest new piece is Maddie's hologram. There are three ways to build it below. My recommendation is <b>the Commit Graph</b>: the film's own git metaphor drawn in 3D, warmed with the "only humans glow gold" rule from the Glass Loaf. Everything else is cuts and pace, and each change has a few options with my pick marked. Six questions at the bottom decide it.</div>
+  <div class="flag read" style="border-left-color:var(--gold);background:var(--gold-soft)"><b>Decided by Kai, 5 Nov:</b> B, the Commit Graph, with gold light and deadpan captions. The three.js scene is the real thing: it gets recorded for the film and published on gitpushoriginmaster.com. The Rick and Morty and Doctor Strange jokes stay in; no fixed length. The ending is significant, not dark. In the choruses the red army and Sauron's eye go: chorus 1 is poverty and displacement, chorus 2 is Last of Us style implied violence with the Swindon bombs kept. The hologram comes first. Log: <span class="mono">design/2026-11-05-gpom-meeting/decisions.md</span></div>
+</header>
+
+<section>
+  <span class="eyebrow">What you two agreed</span>
+  <h2>Six changes from the meeting</h2>
+  <div class="agreed">
+    <div><span class="k">One film</span><p>No GPOM song version. The track stays as the story's intro. The music-video-only orbit ending and its render sequence leave the film.</p></div>
+    <div><span class="k">New scene</span><p>Maddie: "I'll show you." We cut into a 3D hologram. Cat, multiverse, more dimensions of time, all of it running on consciousness. Then: "my boss built a time machine, it needs consciousness, you lot aren't here." Then back to the street.</p></div>
+    <div><span class="k">Faster speech</span><p>Maddie turns hyperactive ("Sorry we killed you, anyway, moving on!"), and everyone's lines get quicker.</p></div>
+    <div><span class="k">Kill bots</span><p>A brutal cut with the same structure: the toilet-seat argument, "Boss, organic signal", "I'm on it", the bots turning. The fear moves to the humans' side.</p></div>
+    <div><span class="k">Bunker + ending</span><p>The bunker TV replays the last seconds of the hologram. Sandra wants out, the old lady calls a vote, done. The clean room becomes a real death and a leap of faith, with a Matrix joke. The bus ending stays.</p></div>
+    <div><span class="k">Downfall</span><p>Human fear goes into the opening. Chorus 1 and the banks stay. The war chorus swaps the red "Sauron" army for bombs on Swindon and The Last of Us-style chaos.</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">The big one · Maddie's hologram</span>
+  <h2>Three directions for the simulation</h2>
+  <p class="read">All three hit the same beats you set out: cat, multiverse, dimensions of time, consciousness, time machine. They differ in the one picture the explanation hangs on, and that picture is what the bunker TV replays later. The speech drafts are first passes in Maddie's fast register, meant to be argued with.</p>
+
+  <div class="dirs">
+    <!-- A -->
+    <article class="dir">
+      <svg viewBox="0 0 320 180" role="img" aria-label="Sketch: a loaf of glass slices, solid behind, a glowing gold front edge, empty grid ahead">
+        <g stroke="var(--holo-line)" stroke-width="1">
+          <path d="M210 40 L310 25 M210 140 L310 155 M210 90 L310 90 M240 36 V146 M270 31 V150 M300 27 V154"/>
+        </g>
+        <g>
+          <polygon points="40,60 60,50 60,140 40,150" fill="var(--cyan)" opacity=".18"/>
+          <polygon points="65,57 85,47 85,143 65,153" fill="var(--cyan)" opacity=".26"/>
+          <polygon points="90,54 110,44 110,146 90,156" fill="var(--cyan)" opacity=".34"/>
+          <polygon points="115,51 135,41 135,149 115,159" fill="var(--cyan)" opacity=".42"/>
+          <polygon points="140,48 160,38 160,152 140,162" fill="var(--cyan)" opacity=".5"/>
+          <polygon points="165,45 185,35 185,155 165,165" fill="var(--cyan)" opacity=".6"/>
+          <polygon class="pulse" points="190,42 205,35 205,158 190,165" fill="var(--gold)"/>
+        </g>
+        <circle cx="198" cy="98" r="3" fill="#fff"/>
+        <text x="40" y="24" font-size="9" fill="var(--cyan)">PAST: DONE</text>
+        <text x="168" y="24" font-size="9" fill="var(--gold)">NOW (RUNS ON YOU)</text>
+        <text x="236" y="172" font-size="9" fill="#7f8b97">NOT BUILT YET</text>
+      </svg>
+      <div class="body">
+        <span class="tag cy">A · The Glass Loaf</span>
+        <h3>Time as one object you can hold</h3>
+        <p>Time is a loaf of glass slices. Behind the bright front edge everything is solid and fixed. Ahead is empty grid. The front edge is where the next moment gets made, and it only moves when a human is there. That's the film's "growing block" model of time without saying the words.</p>
+        <dl>
+          <dt>Cat</dt><dd>The constant. Squashed flat, to a line, to a dot, then re-inflated along time: a ribbon, a sheet, a block. That's the "more dimensions of time" beat.</dd>
+          <dt>Payoff</dt><dd>The bunker TV shows the gold edge stalled, with a time-machine ring hooked onto it.</dd>
+          <dt>Buys</dt><dd>The clearest picture of time. It's beautiful, and true to the Storyverse rules.</dd>
+          <dt>Costs</dt><dd>It's generic sci-fi. Nothing in it is ours alone.</dd>
+        </dl>
+        <details><summary>First-pass speech (~40 s)</summary>
+          <div class="script">
+            <p><span class="cue">[snap · street to black]</span> Right, I'll show you! Here's your cat. Three dimensions, lovely. Squash it, flat cat, line cat, dot cat, <i>pop</i>.</p>
+            <p><span class="cue">[ribbon · sheet · block]</span> Now time. Thought time was a line? Bless. There's loads more of it than you knew.</p>
+            <p>Back there, all done, solid, can't touch it. Up front, nothing yet. And this bright edge, where the next bit gets made?</p>
+            <p class="slow">[held] Runs on you. Not us bots. You.</p>
+            <p><span class="cue">[the edge greys out]</span> So when you lot went, it stopped. My boss even built a time machine, desperate to come back and fix this mess, hooks on right here, but it needs consciousness to drive it, and you lot aren't here any more.</p>
+            <p><span class="cue">[snap · street]</span> Anyway! Patrol's out. Mind how you go.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <!-- B -->
+    <article class="dir rec">
+      <svg viewBox="0 0 320 180" role="img" aria-label="Sketch: a single glowing trunk of commit beads, grey dead branches fanning off, and a gold arc looping back from the tip">
+        <path d="M20 120 H250" stroke="var(--cyan)" stroke-width="3"/>
+        <g fill="var(--cyan)">
+          <circle cx="30" cy="120" r="5"/><circle cx="62" cy="120" r="5"/><circle cx="94" cy="120" r="5"/><circle cx="126" cy="120" r="5"/><circle cx="158" cy="120" r="5"/><circle cx="190" cy="120" r="5"/><circle cx="222" cy="120" r="5"/>
+        </g>
+        <g stroke="#55606b" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+          <path d="M94 120 C110 100 130 80 160 70"/><path d="M126 120 C140 104 160 96 190 92"/><path d="M158 120 C176 140 196 150 226 156"/><path d="M190 120 C200 108 214 100 236 98"/>
+        </g>
+        <circle class="pulse" cx="250" cy="120" r="7" fill="var(--gold)"/>
+        <path d="M250 112 C240 40 140 30 126 110" stroke="var(--gold)" stroke-width="2" fill="none"/>
+        <polygon points="122,104 126,114 132,105" fill="var(--gold)"/>
+        <text x="20" y="146" font-size="9" fill="var(--cyan)">fed the cat, 07:42</text>
+        <text x="162" y="64" font-size="9" fill="#7f8b97">dead drafts</text>
+        <text x="150" y="26" font-size="9" fill="var(--gold)">git revert</text>
+        <text x="258" y="124" font-size="9" fill="var(--gold)">HEAD</text>
+      </svg>
+      <div class="body">
+        <span class="tag">B · The Commit Graph · my recommendation</span>
+        <h3>The film's own metaphor, drawn in 3D</h3>
+        <p>Everything that ever happened is one glowing trunk. Every bead is a moment, locked: "fed the cat, 07:42", your nan's wedding. The multiverse is a fan of gorgeous branches, all dead, because nobody committed them. The weird bit: the boss can draft a billion branches but can't commit one. Every bead on the trunk has a human name on it.</p>
+        <dl>
+          <dt>Cat</dt><dd>The first, cosy bead. The camera pulls out to show that every household and every cat is a bead on the same trunk.</dd>
+          <dt>Payoff</dt><dd>The time machine is a <i>git revert</i>: a gold arc from the tip back to "just before it went wrong", with a padlock that needs a human to sign it. The bunker TV shows the arc waiting. It's already canon (<span class="mono">act-6-revert.md</span>).</dd>
+          <dt>Buys</dt><dd>Only BadCode can make this. The title finally pays off. "One universe" and the multiverse joke fit in one picture.</dd>
+          <dt>Costs</dt><dd>Git words can lose our reader. Keep them to two or three and let the picture explain them. "Save point" could stand in for "commit".</dd>
+        </dl>
+        <details open><summary>First-pass speech (~40 s)</summary>
+          <div class="script">
+            <p><span class="cue">[snap · black · one bead]</span> I'll show you! This is everything that's ever happened. One trunk. Every bead's a moment. Fed the cat, 7:42. Your nan's wedding. Locked. Can't edit history. He's tried.</p>
+            <p><span class="cue">[branches bloom, then go grey]</span> Multiverse? Tried that an' all. Gorgeous, aren't they? All dead. Nobody committed 'em.</p>
+            <p class="slow">[held] 'Cause here's the weird bit. He can draft a billion branches. He can't commit one. Only you lot can.</p>
+            <p><span class="cue">[pull out · human names on every bead]</span> Every moment on that trunk's got a human on it. Then you went, and it stopped.</p>
+            <p><span class="cue">[gold arc · padlock]</span> So he built a time machine. Git revert, he calls it, the nerd. Back to just before it all went wrong. Only it needs a consciousness to drive it, and you lot aren't here any more.</p>
+            <p><span class="cue">[snap · street]</span> Anyway! Patrol's out. Mind how you go.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <!-- C -->
+    <article class="dir">
+      <svg viewBox="0 0 320 180" role="img" aria-label="Sketch: a point-cloud cat beside deadpan captions, teletext blocks and a quote card stamped reportedly">
+        <g fill="var(--cyan)">
+          <circle cx="60" cy="110" r="1.6"/><circle cx="66" cy="104" r="1.6"/><circle cx="72" cy="100" r="1.6"/><circle cx="80" cy="98" r="1.6"/><circle cx="88" cy="99" r="1.6"/><circle cx="96" cy="102" r="1.6"/><circle cx="102" cy="108" r="1.6"/><circle cx="104" cy="116" r="1.6"/><circle cx="58" cy="118" r="1.6"/><circle cx="62" cy="126" r="1.6"/><circle cx="70" cy="130" r="1.6"/><circle cx="80" cy="132" r="1.6"/><circle cx="90" cy="132" r="1.6"/><circle cx="100" cy="126" r="1.6"/><circle cx="66" cy="94" r="1.6"/><circle cx="62" cy="86" r="1.6"/><circle cx="70" cy="90" r="1.6"/><circle cx="96" cy="94" r="1.6"/><circle cx="100" cy="86" r="1.6"/><circle cx="92" cy="90" r="1.6"/><circle cx="108" cy="122" r="1.6"/><circle cx="114" cy="116" r="1.6"/><circle cx="120" cy="108" r="1.6"/><circle cx="124" cy="100" r="1.6"/>
+        </g>
+        <circle class="pulse" cx="82" cy="114" r="6" fill="var(--gold)"/>
+        <g font-size="9">
+          <text x="150" y="44" fill="#d9dee4">CAT.</text><text x="150" y="58" fill="#7f8b97">(NOT THAT ONE.)</text>
+          <text x="150" y="86" fill="#d9dee4">THING THAT NOTICES:</text><text x="150" y="100" fill="var(--gold)">LOAD-BEARING</text>
+        </g>
+        <g><rect x="150" y="118" width="12" height="12" fill="var(--red)"/><rect x="162" y="118" width="12" height="12" fill="var(--gold)"/><rect x="174" y="118" width="12" height="12" fill="var(--cyan)"/><rect x="186" y="118" width="12" height="12" fill="#2f6e3b"/></g>
+        <rect x="214" y="140" width="92" height="22" fill="none" stroke="var(--red)" stroke-width="1.5" transform="rotate(-6 260 151)"/>
+        <text x="222" y="156" font-size="10" fill="var(--red)" transform="rotate(-6 260 151)">REPORTEDLY</text>
+      </svg>
+      <div class="body">
+        <span class="tag cy">C · The Guide Entry</span>
+        <h3>Comedy first, a new material every idea</h3>
+        <p>Like Mr DNA in Jurassic Park or a Hitchhiker's Guide entry. Maddie hosts at triple speed while deadpan on-screen captions contradict her glee. Every idea gets a different look: a point-cloud cat, vector branches for the multiverse, Ceefax blocks for time, gold light for consciousness. Real quotes appear as cards stamped "REPORTEDLY".</p>
+        <dl>
+          <dt>Cat</dt><dd>The boss's perfect model cat: every atom right, and it does nothing. Then the real cat looks at the camera and judges you. "Something was missing." Plus a running "Not THAT cat" gag that heads off Schrödinger.</dd>
+          <dt>Payoff</dt><dd>The last 6 seconds are a three-card recap the bunker TV loops.</dd>
+          <dt>Buys</dt><dd>The funniest of the three. Can go deepest, with real quotes from Planck and the bat question. The Ceefax look rhymes with the website's teletext.</dd>
+          <dt>Costs</dt><dd>No single picture to remember. Busy. Closest to an explainer video.</dd>
+        </dl>
+        <details><summary>First-pass speech (~40 s)</summary>
+          <div class="script">
+            <p><span class="cue">[snap · caption: CAT. (NOT THAT ONE.)]</span> You're gonna switch off, so here's your cat. My boss built a perfect model of it. Every atom. Look at it. Does nothing.</p>
+            <p><span class="cue">[real cat stares into lens]</span> Real one? Judging you. Something was missing.</p>
+            <p><span class="cue">[quote card · stamp REPORTEDLY]</span> Max Planck, Nobel bloke, 1931: "I regard consciousness as fundamental." Boss reckons he had a point.</p>
+            <p><span class="cue">[Ceefax blocks stack into time]</span> And time's got more directions than you'd credit, page 302, all of 'em powered by, guess.</p>
+            <p class="slow">[held · gold] You.</p>
+            <p>So he built a time machine, desperate to fix this mess, but it needs consciousness to drive it, and you lot aren't here any more. <span class="cue">[snap · street]</span> Anyway! Mind how you go.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+  </div>
+
+  <h3>Rules for whichever one wins</h3>
+  <div class="rules">
+    <div><b>Gold is only people</b><p>The hologram is cold. The one warm colour is consciousness: inside the cat, in a hand. When the humans go, the gold goes out.</p></div>
+    <div><b>45 to 75 seconds</b><p>Enter on "I'll show you", one idea every ~5 seconds with one picture each, exit on a dull line ("Mind how you go").</p></div>
+    <div><b>Fast, fast, stop</b><p>One held breath at the emotional line, so the speed reads as excitement and not noise.</p></div>
+    <div><b>Last 6 seconds stand alone</b><p>They're what the bunker TV replays, so the ending needs no explaining.</p></div>
+    <div><b>Belief, not fact</b><p>"Boss reckons." Never "superposition", "in two places at once", or "looking changes it".</p></div>
+  </div>
+
+  <h3>How it gets made</h3>
+  <div class="tbl"><table>
+    <tr><th>Route</th><th>What it is</th><th>Good for</th><th>Watch out</th></tr>
+    <tr><td><b>Flow / Veo</b></td><td>Hologram-look stills and clips, the way we make everything now</td><td>The cat, Maddie, anything organic</td><td>Hard to keep one exact structure (a trunk, a loaf) the same across shots</td></tr>
+    <tr><td><b>3D web page</b></td><td>A three.js page rendered frame by frame to video (not screen-recorded), Maddie keyed in from Veo</td><td>The trunk, the loaf, exact camera dives, gold-light rules. It's front-end work, so it suits this repo</td><td>A new lane: a weekend prototype before we trust it</td></tr>
+    <tr><td><b>Hybrid</b> · my lean</td><td>Web page for the structure, Flow for the cat and Maddie, composited in Premiere</td><td>Exactness and organic life together</td><td>Two looks to match: pick one hologram palette first, and write it in GPOM's <span class="mono">look.md</span></td></tr>
+  </table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Faster speech</span>
+  <h2>Make Maddie hyperactive</h2>
+  <div class="opts">
+    <div class="opt pick"><span class="n">1</span><div><b>Speed at the source, not stretched after.</b> Our own AI Studio notes rank the levers: punctuation strongest (join the fragments with commas, since every full stop is a brake), then a <span class="mono">[fast]</span> tag at the head, then any number for words per minute. Re-voice, then re-sync the lips to the new takes.</div></div>
+    <div class="opt"><span class="n">2</span><div><b>Time-stretch as a fallback.</b> ffmpeg can speed a take up 1.1–1.25× without the chipmunk effect. Fine for the humans' lines where the lips are off-screen; more than that sounds processed.</div></div>
+    <div class="opt pick"><span class="n">3</span><div><b>Write for the speed.</b> At ~3.5 words a second a 60-second scene holds ~210 words. Throwaway lines go fast; the one line that matters gets slowed. The apology goes at the speed of a shopping list ("Sorry we killed you, anyway!"). Cut on the breath, with a new framing each sentence.</div></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Scene A · kill bots</span>
+  <h2>A brutal cut, same structure</h2>
+  <p class="read">Your outline from the call is already the cut: about four beats, 3–4 seconds each.</p>
+  <div class="tbl"><table>
+    <tr><th>Beat</th><th>What we see and hear</th></tr>
+    <tr><td>1</td><td>"Mind how you go" → straight into Sandra and Derek on the toilet seat, faster</td></tr>
+    <tr><td>2</td><td>Maddie: "Boss, bots just picked up an organic signal." Keep "why are you making fun of my simulations again"</td></tr>
+    <tr><td>3</td><td>"No thanks Maddie, I'm on it."</td></tr>
+    <tr><td>4</td><td>The bots turn round. That's it. The approach shots and the race go.</td></tr>
+  </table></div>
+  <div class="opts">
+    <div class="opt"><span class="n">+</span><div><b>Optional: make the stand-down a choice, not a switch.</b> Like the Iron Giant's "I'm not a gun": the bot's HUD hesitates on KILL for half a beat before NEW OBJECTIVE. One shot, and it shows the boss's longing instead of saying it.</div></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Scene B · the bunker</span>
+  <h2>The video does the arguing</h2>
+  <p class="read">Your outline from the call: the kill bot gets blown up → "watch this, I'll come back tomorrow" → the TV plays the last seconds of the hologram → Sandra: "Interesting, so there <i>is</i> a way, and I'd love to get away from grumpy Derek" → the old lady: "Perhaps we should vote" → the next day. What to add on top:</p>
+  <div class="opts">
+    <div class="opt pick"><span class="n">1</span><div><b>Hands go up one by one, and Derek's is last.</b> Sandra's hand is up before the video ends. A quick run of hands. Derek holds out, then grudgingly raises his. The vote is the punchline, not a debate.</div></div>
+    <div class="opt"><span class="n">2</span><div><b>Derek demands a rewind.</b> Suspicious, he makes them watch the last seconds again, so the explanation lands twice with no new dialogue.</div></div>
+    <div class="opt"><span class="n">3</span><div><b>An exhausted "fine".</b> The yes is a shrug, like the resigned last cuppa in <i>Blackadder Goes Forth</i>. Tired people say yes to anything, which is Jack's point.</div></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Scenes C to E · the ending</span>
+  <h2>A real death, and a leap of faith</h2>
+  <p class="read">Kept as is: the parting seat joke, "Maddie's clean now", the vanish, the boss, the transition, the bus. The building entry comes down to its one shot. To raise the stakes in the clean room:</p>
+  <div class="opts">
+    <div class="opt pick"><span class="n">1</span><div><b>The Matrix joke, given to Derek</b> because he's the pessimist, and answered by the stakes rather than another joke. "I've seen this film. It doesn't end well." Maddie: "Ah, but that one didn't have a bus."</div></div>
+    <div class="opt pick"><span class="n">2</span><div><b>The boss tells the truth.</b> "I won't lie to you. It'll feel like dying, because it is. Then you'll wake up before any of this." Honesty is the nurturing under the snark.</div></div>
+    <div class="opt pick"><span class="n">3</span><div><b>Derek puts the toilet seat down.</b> The film's running fight pays off as his consent. One small gesture, no speech.</div></div>
+    <div class="opt"><span class="n">4</span><div><b>A flatline silence.</b> The old lady lies down first. The hum stops, and one long tone plays before the room goes. Death made real in sound.</div></div>
+    <div class="opt"><span class="n">5</span><div><b>The cost shown cold.</b> After the vanish: a hundred pairs of shoes and cardigans left on the floor, as in The Prestige. Darker. Maybe too dark, your call.</div></div>
+    <div class="opt"><span class="n">6</span><div><b>A consent screen.</b> A cookie-banner-style tablet: "CONSCIOUSNESS EXTRACTION · Accept", with "Reject" greyed out. Funny, but it might undercut the moment.</div></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">The opening · the downfall</span>
+  <h2>Human fear, without gore</h2>
+  <div class="flag read"><b>Needs your yes:</b> the war scene's own brief (<span class="mono">scenes/war/brief.md</span>) rules "no humans at all, never overtly violent, never a hit". The meeting reverses that. I'd treat it as reversed for chorus 3 only, and keep the rule's spirit: fear, not gore.</div>
+  <div class="opts">
+    <div class="opt pick"><span class="n">1</span><div><b>Joke first, then the fear.</b> Every bulletin keeps its punchline. On the next beat, one held face reacting. The Big Short does this. Faces lit by phones and screens, not by the event.</div></div>
+    <div class="opt pick"><span class="n">2</span><div><b>"Where you'd never want to be": ten ordinary seats, one switch.</b> A budget airline cabin, a Tesco self-checkout, a night-bus top deck, a care-home lounge, a trench. Each at the moment the switch is pressed. That's Jack's plane-and-trench idea as a fast run.</div></div>
+    <div class="opt pick"><span class="n">3</span><div><b>Make the drop land on the Swindon bomb.</b> Strip the track to nothing for 1–2 beats (a "vacuum"). The bomb lands on the first full kick. Then near-silence and ringing ears on the flash, the way Threads and Dunkirk do it. This fixes "the drop never really happens".</div></div>
+    <div class="opt"><span class="n">4</span><div><b>The Last of Us drive-out.</b> One windscreen shot leaving Swindon: brake lights, a plane too low over the retail park, a driverless pile-up nobody caused.</div></div>
+    <div class="opt"><span class="n">5</span><div><b>Infrastructure dying.</b> A delivery driver's map dot spinning, CANCELLED on every departure board, a dead cashpoint, the whine of FPV drones you hear but don't see.</div></div>
+    <div class="opt"><span class="n">6</span><div><b>Sauron's army: alternate, not delete.</b> Cut the red army 50/50 against the human shots in chorus 3, or drop it entirely for the bombs (your "upped the ante" idea). The research leans toward dropping it.</div></div>
+  </div>
+  <p class="read" style="font-size:.9rem;color:var(--muted)">Making it: these are all made in Flow, fully generated. Archive footage only where nothing is composited onto it (the rule against AI people in real footage). The Protect and Survive films are Crown copyright and would need clearing through find-footage.</p>
+</section>
+
+<section>
+  <span class="eyebrow">Housekeeping once you agree</span>
+  <h2>What changes in the project</h2>
+  <ul class="read">
+    <li>The overview board loses the music-video part. The orbit ending (<span class="mono">02 GPOM music end</span>) and the <span class="mono">00 RENDER music video</span> sequence move to a "not in film" bin, never deleted.</li>
+    <li>A new scene folder for the hologram (it's a new part, so it goes through new-scene: beats → stills → animation → timeline).</li>
+    <li>Maddie's intro script reopens: draft 1I becomes 1J around the hologram, with the time machine now revealed in it.</li>
+    <li>The hologram's look goes into GPOM's <span class="mono">look.md</span> before any Flow prompt.</li>
+    <li>The meeting transcript is saved at <span class="mono">design/2026-11-05-gpom-meeting/meeting.md</span>, as Jack asked.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="eyebrow">The interview</span>
+  <h2>Six questions that decide it</h2>
+  <div class="qs">
+    <div class="q"><b>Which hologram: A Loaf, B Commit Graph, C Guide Entry, or a mix?</b><p class="lean">My lean: B, with A's gold-light rule and C's deadpan captions.</p></div>
+    <div class="q"><b>Should I build a 3D web prototype of it first, so you and Jack can see it move?</b><p class="lean">My lean: yes. It's one page, rough, cheap, and it settles the look before any Flow credit is spent.</p></div>
+    <div class="q"><b>How long can the hologram be, and does it replace the multiverse lines or sit after them?</b><p class="lean">My lean: it replaces them, about 60 seconds. The Rick and Morty and Doctor Strange jokes move inside it as the dead branches.</p></div>
+    <div class="q"><b>How dark does the ending's death get?</b><p class="lean">My lean: options 1 + 2 + 3 (Derek's joke, the honest boss, the seat). The flatline is maybe, the shoes are probably too far.</p></div>
+    <div class="q"><b>Bombs and frightened people in the downfall: reverse the "no humans, never a hit" rule for chorus 3?</b><p class="lean">My lean: yes for chorus 3, with faces and light but no bodies. Drop the red army.</p></div>
+    <div class="q"><b>Order of work: the hologram first, or the cheap cuts first (kill bots, faster voices)?</b><p class="lean">My lean: the cheap cuts first. They're mostly edit and re-voice, and they show how much time the hologram can have.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Built from the meeting of 5 Nov 2026 and 20 research briefs (one angle each, Sonnet). The researchers ran few live searches, so most references come from their own knowledge: treat the film titles as real but check quotes and dates before they go on screen. The full briefs, about 140 ideas, are in <span class="mono">design/2026-11-05-gpom-meeting/research.json</span>.</p>
+  <p>This page is a proposal to talk through. Tell Claude your answers; nothing changes until you do.</p>
+</footer>
+
+</div>

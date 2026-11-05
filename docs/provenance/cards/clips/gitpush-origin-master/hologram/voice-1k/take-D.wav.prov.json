@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/take-D.wav",
+ "made": "2026-11-05T17:06:15+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "And since you lot went? Five years of string, and not one bead on it.\n\nHe drafts all day, look. World models, simulations, billions of maybes. Lovely. Nobody in 'em. Not one of 'em lands.\n\nAnd now we've worked all that out, we really feel like we've messed this up.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+  "profile_file": "design/2026-11-05-gpom-meeting/voice-1k/profile.md"
+ },
+ "settings": {
+  "voice": "Aoede",
+  "temperature": 1,
+  "channels": 2
+ }
+}

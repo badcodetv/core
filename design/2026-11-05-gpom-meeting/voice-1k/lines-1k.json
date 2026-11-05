@@ -1,0 +1,181 @@
+[
+ {
+  "id": "c01",
+  "take": "A",
+  "beat": "lead",
+  "text": "This is your life, see. One decision at a time.",
+  "src_in": 0,
+  "src_out": 3.988,
+  "dur": 3.988,
+  "file": "voice/c01.mp3",
+  "heard": "This  is  your  life,  see?  One  decision  at  a  time."
+ },
+ {
+  "id": "c02",
+  "take": "A",
+  "beat": "bead1",
+  "text": "Toast, not cereal.",
+  "src_in": 4.11,
+  "src_out": 6.742,
+  "dur": 2.632,
+  "file": "voice/c02.mp3",
+  "heard": "Toast,  not  cereal."
+ },
+ {
+  "id": "c03",
+  "take": "A",
+  "beat": "bead2",
+  "text": "Said sorry first.",
+  "src_in": 6.85,
+  "src_out": 8.898,
+  "dur": 2.048,
+  "file": "voice/c03.mp3",
+  "heard": "Said  sorry  first."
+ },
+ {
+  "id": "c04",
+  "take": "A",
+  "beat": "bead3",
+  "text": "Got married.",
+  "src_in": 9.35,
+  "src_out": 11.405,
+  "dur": 2.056,
+  "file": "voice/c04.mp3",
+  "heard": "Got  married."
+ },
+ {
+  "id": "c05",
+  "take": "A",
+  "beat": "commits",
+  "text": "You lot call 'em decisions. He calls 'em commits.",
+  "src_in": 12.95,
+  "src_out": 17.64,
+  "dur": 4.69,
+  "file": "voice/c05.mp3",
+  "heard": "You  lot  call  them  decisions.  Equals  and  commits."
+ },
+ {
+  "id": "c06",
+  "take": "B",
+  "beat": "open",
+  "text": "And every time, there were loads of others you could've picked.",
+  "src_in": 0,
+  "src_out": 4.323,
+  "dur": 4.323,
+  "file": "voice/c06.mp3",
+  "heard": "And  every  time,  there  were  loads  of  others  you  could  have  picked."
+ },
+ {
+  "id": "c07",
+  "take": "B",
+  "beat": "maybes",
+  "text": "Some of your lot reckon they all happen somewhere. The multiverse. He tried that an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself.",
+  "src_in": 4.51,
+  "src_out": 18.833,
+  "dur": 14.323,
+  "file": "voice/c07.mp3",
+  "heard": "Some  of  your  lot  reckon  they  will  all  happen  somewhere,  the  multiverse.  He  tried  that  and  all,  got  it  off  your  cartoon,  the  scientist  with  the  portal  gun,  and  that  strange  bloke  in  the  cape  fighting  virgins  of  himself."
+ },
+ {
+  "id": "c08",
+  "take": "B",
+  "beat": "maybes",
+  "text": "Nah. Nothing's alive and dead at once. It just isn't decided yet.",
+  "src_in": 20.07,
+  "src_out": 25.645,
+  "dur": 5.575,
+  "file": "voice/c08.mp3",
+  "heard": "Now,  nothing's  a  lie  even  dead  at  once,  it  just  isn't  decided  yet."
+ },
+ {
+  "id": "c09",
+  "take": "B",
+  "beat": "pick",
+  "text": "He can draft a billion of these. He can't pick one. Only your consciousness can.",
+  "src_in": 26.53,
+  "src_out": 34.275,
+  "dur": 7.745,
+  "file": "voice/c09.mp3",
+  "heard": "He  can  draft  a  billion  of  these.  He  can't  pick  one.  Only  your  consciousness  can."
+ },
+ {
+  "id": "c10",
+  "take": "C10b-b",
+  "beat": "toRiver",
+  "text": "And that's just you. Everybody's doing it, all at once.",
+  "src_in": 0,
+  "src_out": 5.19,
+  "dur": 5.19,
+  "file": "voice/c10.mp3",
+  "heard": "And  that's  just  you.  Everybody's  doing  it  all  at  once.",
+  "direction": "matter-of-fact; pitch falls through 'you' (measured: 225 Hz -> 165 Hz)"
+ },
+ {
+  "id": "c11",
+  "take": "C11b",
+  "beat": "river",
+  "text": "Turns out there's only one universe, one story, and you lot were writing it. A storyverse. So it really matters. And so did you.",
+  "src_in": 0,
+  "src_out": 13.2,
+  "dur": 13.2,
+  "file": "voice/c11.mp3",
+  "heard": "Turns  out  there's  only  one  universe.  One  story.  And  you  lot  were  writing  it.  So  it  really  matters.  And  so  did  you."
+ },
+ {
+  "id": "c12",
+  "take": "D",
+  "beat": "flyDown",
+  "text": "And since you lot went? Five years of string, and not one bead on it.",
+  "src_in": 0,
+  "src_out": 6.376,
+  "dur": 6.376,
+  "file": "voice/c12.mp3",
+  "heard": "And  since  you  lot  went,  five  years  a  string  and  not  one  beat  on  it."
+ },
+ {
+  "id": "c13",
+  "take": "D2",
+  "beat": "flyDown",
+  "text": "He drafts all day, look. World models, simulations, billions of maybes. Lovely. Nobody in 'em. Not one of 'em lands.",
+  "src_in": 0,
+  "src_out": 12.382,
+  "dur": 12.382,
+  "file": "voice/c13.mp3",
+  "heard": "He  drafts  all  day,  look,  world  models,  simulations,  billions  of  babies.  Lovely.  Nobody  in  them.  Not  one  of  them  lands.",
+  "cut": "Kai 5 Nov: lose the drafts line; straight to 'And now we've worked all that out'"
+ },
+ {
+  "id": "c14",
+  "take": "D2",
+  "beat": "flyDown",
+  "text": "And now we've worked all that out, we really feel like we've messed this up.",
+  "src_in": 13.17,
+  "src_out": 19.904,
+  "dur": 6.734,
+  "file": "voice/c14.mp3",
+  "heard": "And  now  we've  worked  all  that  out.  We  really  feel  like  we've  messed  this  up."
+ },
+ {
+  "id": "c15",
+  "take": "E",
+  "beat": "arcDraw",
+  "text": "So he's built a time machine. Back to just before it all went wrong.",
+  "src_in": 0,
+  "src_out": 8.461,
+  "dur": 5.2,
+  "file": "voice/c15.mp3",
+  "heard": "So,  he's  built  a  time  machine.  Dick  River,  he  calls  it,  the  nerd,  back  to  just  before  it  all  went  wrong.",
+  "edit": "spliced: take E 0-2.62 + 5.82-8.46 ('Git revert, he calls it, the nerd' cut: 'git' came out strange)"
+ },
+ {
+  "id": "c16",
+  "take": "E",
+  "beat": "arcHold",
+  "text": "Only problem is, it needs a consciousness to drive it. And, well, you lot aren't here any more.",
+  "src_in": 8.47,
+  "src_out": 15.846,
+  "dur": 7.376,
+  "file": "voice/c16.mp3",
+  "heard": "Only  problem  is,  he  needs  a  consciousness  to  drive  it,  and  well,  you  lot  aren't  here  anymore."
+ }
+]
