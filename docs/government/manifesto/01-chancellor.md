@@ -1,19 +1,35 @@
 ---
 title: Chancellor of the Exchequer
-line: A gas shock abroad should not be paid off by mortgages at home.
+line: Every pound has an address, and if public money builds the machine, the public owns a slice.
 ---
 ## Position
 
-Bank Rate before 5 November: 3.75%.
-Bank Rate now: 4%, by eight votes to one.
-Inflation in September: 3.5%, with energy prices tied to the Middle East conflict a main driver.
+Bank Rate since 5 November: 4%, up from 3.75%.
 
-A higher Bank Rate does not reopen a shipping lane. It does add 0.25 points to every tracker mortgage, and to the interest the government pays on its own debt. The shock started abroad. The bill is being posted to people with loans here. That is a decision, and decisions have addresses.
+Your energy price cap: up 4% in October.
 
-So the Treasury will publish a ledger with every rate decision and every Budget measure: who pays, who receives, by household, in pounds. The Bank stays independent. The Treasury's job is to show, in public, who carries what it decides.
+Power for data centres in the AI zones: up to £24 off every megawatt-hour from 2027, by ministers' decision.
 
-The same ledger goes on every big automation deal. When a machine does the job, the saving goes into somebody's account. We'll print the account name.
+Who pays for that: ministers say nobody else. We'd print the receipt.
 
-The test. Run the ledger on the next two rate decisions first, in public, and let anyone correct it. It has failed if it can't be built from public figures within four weeks, or if a year on not one decision has cited it. Then we publish the postmortem and stop.
+Every saving lands in somebody's account, every shock on somebody's bill, and nobody prints the names. That is a decision, and decisions have addresses.
 
-Who it leaves out: the people the statistics miss. Informal debts, cash work, anyone who never answers a survey. We'll list them under every ledger, so the gap is counted too.
+The ledger. Every Budget and public deal with a tech firm comes with who pays and who gains, by household, in pounds, within four weeks. The Bank stays independent; we ask it to do the same yearly.
+
+The slice. Where public cash, land, cheap power or a guarantee helps build a private data centre, the public gets what any investor would: a share, in a national fund, host town paid first.
+
+The windfall. One standing Windfall Act: when a shock abroad hands power or oil firms a windfall, the levy switches on, every pound goes on the standing charge, and it switches off when prices fall back.
+
+Your pension owns shares in firms swapping jobs for machines; someone else casts its votes. Nest, the state's own scheme, goes first: job-cutting votes published within a month, and members drawn by lot choose how theirs are cast. Fails if under 1 in 20 choose in two seasons, or it costs over 0.01% of the fund a year.
+
+The money. Fiscal rules kept, every measure scored by the forecaster, no rise in income tax, employee NI or VAT rates on working people. Overspend and new roll-outs pause.
+
+The test. The next publicly backed data centre carries a slice, against deals without one. Fails if those firms build a fifth less per pound of support after three years (provisional). Each stops on its date unless Parliament votes to keep it, on the published review. Passes, and it goes national.
+
+Judgement calls, reviewed every Budget: the 2% digital services tax stays, never traded for a tariff threat; training a machine on your songs or photos for profit needs your permission, and sellers say what it learned from. We make our own pictures and music with these machines.
+
+Not promised: a cheque, a date, or that the machines pay off the debt.
+
+Left out, and counted: profit booked abroad, with nothing here to slice; anyone with no workplace pension.
+
+Who signs: the Chancellor. Who decides whether it stays: your MP, with the write-up in front of them.
