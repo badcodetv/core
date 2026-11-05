@@ -101,11 +101,17 @@ const results = await parallel(BEATS.map((b, i) => () => agent(
 Your beat: **${b.beat}** (${b.region === 'uk' ? 'UK news' : 'world news, for its effect on the UK'}).
 Ministers who usually care: ${b.posts.join(', ')}.
 
-Find the news on your beat from the last 24 hours (published on ${date} or the day before). Use WebSearch and, if needed, WebFetch.
-HARD LIMIT: at most 6 web searches in total. Count them. The whole sweep shares one search budget, so stop at 6 even if you want more.
+Find the news on your beat from the last 48 hours (published on ${date} or the two days before).
+
+How to work (search results alone have no dates, so you must open pages):
+1. Start by OPENING a dated news page with WebFetch: a section front for your beat (for example bbc.co.uk/news/<section>, theguardian.com/<section>, gov.uk/search/news-and-communications, a wire such as apnews.com or reuters.com) or the articles your searches find. Article pages and section fronts carry dates; search snippets do not.
+2. Use WebSearch (HARD LIMIT: at most 6 searches in total, count them; the whole sweep shares one budget) to find the stories, then WebFetch the 2 to 6 most promising articles to confirm what happened and when. WebFetch does not count against the search limit, but keep it to about 8 pages.
+3. A story counts if its newest development is in the window, even when the story itself is older (a vote today on a bill from last month counts).
+
+You may return an empty list ONLY after you have opened at least three dated pages and found nothing in the window; never return empty because the search snippets lacked dates.
 Do not write any files and do not call any memory or Bob tools: just return the items.
 
-Return the 2 to 5 most important stories on your beat (fewer if the day is quiet, none if nothing new happened). Skip opinion pieces, live blogs with no news, and stories older than two days.
+Return the 2 to 5 most important stories on your beat (fewer only if the beat is genuinely quiet). Skip opinion pieces and live blogs with no news.
 
 ${RULES}`,
   { label: `beat ${i + 1}: ${b.beat}`, phase: 'Research', model: 'sonnet', schema: ITEMS_SCHEMA },
