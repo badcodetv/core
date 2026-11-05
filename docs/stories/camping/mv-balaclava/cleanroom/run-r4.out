@@ -1,0 +1,3 @@
+{"at":"2026-11-05T18:52:23.080Z","ev":"pair.start","pair":["r4"],"project":"45680727-9ad6-41ae-bb00-08ad54165947","attempt":1}
+{"at":"2026-11-05T18:52:58.491Z","ev":"pair.done","pair":["r4"],"project":"45680727-9ad6-41ae-bb00-08ad54165947","done":1,"failed":[],"partial":false}
+{"at":"2026-11-05T18:52:58.491Z","ev":"end"}

@@ -1,0 +1,59 @@
+[
+ {
+  "at": "2026-11-05T18:53:33+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Tc95mWsa81QThUnHFv4Dbc",
+  "what": "Round 1: 12 clean-room balaclava designs (6 rough sleeper, 6 posh), x2 takes, plus the current rap frames",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/camping/mv-balaclava docs/stories/camping/mv-balaclava/moodboard.html"
+ },
+ {
+  "at": "2026-11-05T19:16:10+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "what": "Jack's reply to round 1 in chat (no votes on the page)",
+  "decided": [
+   "No picks; more designs, massively different; fixed: balaclava, red triangle over left eye, the circle; creative material/pattern/fabric"
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-05T19:33:30+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/Tc95mWsa81QThUnHFv4Dbc",
+  "what": "Round 2: 16 clean-room masks, each a different material (ideas writer + 4 sealed writers), x2, on top of round 1",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/camping/mv-balaclava docs/stories/camping/mv-balaclava/moodboard.html"
+ },
+ {
+  "at": "2026-11-05T19:39:57+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "what": "Jack's picks on round 2",
+  "decided": [
+   "Rough sleeper = a7r2-a (Duct Tape Armour); posh = b1r2-b (Estate Tweed Squire); Jack: never show skin"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 2
+ },
+ {
+  "at": "2026-11-05T20:34:26+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/Tc95mWsa81QThUnHFv4Dbc",
+  "what": "Round 3: picks a7 (duct tape) and b1 (tweed) in all 18 rap shots incl. 4 maybes, reference-attached, skin-checked",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/camping/mv-balaclava docs/stories/camping/mv-balaclava/moodboard.html"
+ },
+ {
+  "at": "2026-11-05T20:38:19+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "what": "Jack's take picks on round 3; told to save, not act",
+  "decided": [
+   "Animate: s02r3-a s03r3-b s04r3-b s05r3-b s06r3-b, t01r3-a t02r3-b t03r3-a t04r3-b t05r3-b t06r3-a t07r3-b t08r3-a, maybes m12r3-b m13r3-a m19r3-a m23r3-b (maybes count); s01 no pick; do nothing until next session"
+  ],
+  "feedback": "feedback/moodboard-r3",
+  "feedback_docs": 21
+ }
+]
