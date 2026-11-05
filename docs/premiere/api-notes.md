@@ -2087,3 +2087,17 @@ Default path `…/frames/<seq>-100s.png`: Premiere wrote `…-100s.png.png`, so 
 with `EXPORT_FAILED` although the frame was there. Also, an `outPath` under WSL `/tmp` can never work (Windows Premiere
 cannot write there). Workaround: let it fail, then read the `.png.png`. Fix belongs in the tool (strip the extension it
 appends, or check for both names).
+
+## 2026-11-05: Karen music re-cut built from an edl (108 clips, one eval)
+
+- ✅ **The fast path held again:** `helpers.resolveProjectItem(project, id)` → `ClipProjectItem.cast(item).createSetInOutPointsAction`
+  → `createOverwriteItemAction(item, t, 0, 1)` → `createClearInOutPointsAction`, each in its own transaction: 108 clips placed in one
+  `premiere_eval`, every start within a frame of the edl.
+- 🔴 **`createOverwriteItemAction` with a `ClipProjectItem` found by walking a bin threw `Invalid parameter` again** (as on 2026-09-11).
+  Resolve by id through `helpers.resolveProjectItem` and pass THAT item to the overwrite; the cast is only for the in/out actions.
+- 🔴 **A bin item's `.id` is `undefined` in eval; use `await item.getId()`.** A lookup keyed on `it.id` silently found nothing.
+- ✅ **Cloning the target sequence gives exact settings:** `createCloneAction()` on "Karen music" (4K 25 fps) → rename → empty it with
+  one `createRemoveItemsAction` over a selection of every track item (186 removed). Track mute states carry over.
+- ✅ **Scale to fill, per source size:** Motion (`getComponentAtIndex(1)`) param 1 via `param.createSetValueAction(param.createKeyframe(s), true)`:
+  1080p → 200, 720p (Flow Omni clips) → 300 in a 4K sequence. Without it every clip sits small in the middle.
+- Frame rounding left one one-frame gap in 108 joins (210.72→210.76); closed with `createSetEndAction` on the clip before.

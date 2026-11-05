@@ -14,5 +14,26 @@
   },
   "boards": {
     "timeline": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE"
+  },
+  "premiere": {
+    "current": "r3",
+    "r3": {
+      "sequence": "karen-music-r3",
+      "guid": "51c8cc19-18f7-43b4-ab29-b722232b1abf",
+      "bin": "karen-music-r3",
+      "built": "2026-11-05",
+      "project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r3/edl.json",
+      "what": "round 3: 108 shots from the original clips with source in/out on V1 (scaled to fill 4K), their own sound on muted A2, song.wav on A1; 180 'kick' markers + 13 section markers",
+      "how": "clone of 'Karen music' (4K, 25 fps), emptied; placed via premiere_eval (resolveProjectItem + set in/out + overwrite); Motion scale 200/300 per source size",
+      "known": [
+        "last shot (st-new-12) is 8 s: ends at 248.04, the song at 249.6; slow it to ~84% by hand (the API has no speed setter)"
+      ],
+      "check": {
+        "at": "2026-11-05",
+        "state": "in sync",
+        "why": "every V1 start/end within a frame of the r3 edl, bar the known last shot"
+      }
+    }
   }
 }
