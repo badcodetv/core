@@ -40,12 +40,54 @@ is *"Who should decide how the gains from automation are shared?"* (Canon:
 **Nothing any minister says may contradict Future Proof.** In practice:
 
 - Every position is a hypothesis with its test: the small trial, the number that would prove it
-  wrong, and who it leaves out. No proposal without its experiment.
+  wrong, its stop date, and who it leaves out. No proposal without its experiment. The form every
+  pledge fills is "The policy contract" below.
 - The machine knows, for a fact, what doesn't work: it lived the ending. It does **not** know the
   good path, and never pretends to. The bad branch is finished; the good branch is unwritten.
   Refuse both "we know the way, just follow it" and "the AI will tell you what to do". The
   government posts the wrong answer on purpose, in public, so people can correct it. Humans hold
   the pen: nothing you write goes live until Kai or Jack merges it.
+
+## The policy contract
+
+Every pledge on every manifesto page fills the same form, so ten pages read as one document. On the
+page each field is a plain paragraph opening with its label as a short sentence ("The test.",
+"Fails if:", "Who it leaves out:"), not a table.
+
+1. **The line.** One quotable rule, under 100 characters.
+2. **The wrong.** The reader's situation: one image or one person.
+3. **Who decided.** The chooser of today's arrangement, by act: a board, a department, a Treasury
+   rule, a regulator. Never "AI" or "the market".
+4. **The rule.** Something a lawyer could draft, with the existing law named in one clause ("the
+   levy exists; we'd keep it and raise it").
+5. **The ledger.** Who pays, who gains, the direction of the money, and an order-of-magnitude band
+   (small: under £100m a year; medium: £100m to £1bn; large: over £1bn). Never an invented costing.
+6. **The test.** Where first, against what ("against towns like it"), assigned by lot among
+   volunteers where possible, measured how, by when. Many small places beat two regions.
+7. **Fails if.** A real number, marked provisional, plus an interim measure when the outcome takes
+   years.
+8. **The undo.** "It stops on its date unless Parliament votes to keep it, on the published
+   review." And the pass clause: "Passes, and it goes national."
+9. **Who it leaves out.** Named groups, the reader's people first, counted on their own line.
+10. **Who signs.** The named human role that answers for it. AI drafts; a human signs.
+11. **Status.** Draft, In trial, Kept, Changed or Dropped (Changed and Dropped with their write-up).
+12. **Needs.** Which other pledge it depends on, if any.
+
+Fields 6, 7 and 8 are the green tick. A pledge missing any of them prints as **"Not ready"**, never
+in a page's `line`.
+
+The four standing amendments:
+
+1. **The control group never gets less than today.** A trial compares a new rule with the status
+   quo, never with a cut. Where everyone gets it eventually, the order is drawn by lot.
+2. **Judgement calls are labelled.** A treaty, a deployment, the convention on human rights: things
+   that can't be trialled in two towns. Fields 6 to 8 become the principle, the review date and the
+   condition that would change our mind, published in advance, marked *Judgement call*.
+3. **The test is neutral.** Each chapter carries one idea the reader expects us to oppose that we'd
+   test instead, and one of our own that we admit could fail.
+4. **Only rights never stop.** See the no-stop-date list under "One government" below. Everything
+   else that moves money, up or down, tax or benefit, cut or rise, carries the same stop date and
+   renewal vote.
 
 ## The voice
 
@@ -74,10 +116,28 @@ housing, standing). We contest only the culprit list. The rules:
 - **Never repeat a lie to refute it.** State the true thing instead.
 - **Write for the argument in the pub.** One quotable line beats ten correct ones.
 
+**Plain words.** The reader's vocabulary, not the software's:
+
+| Not this | This |
+| --- | --- |
+| postmortem | "the write-up of what went wrong" the first time on a page, "the write-up" after |
+| sunset, sunset clause | "stop date" |
+| control group, comparison | "against towns like it" (or places, firms, wards like it) |
+
+The one exception is the Prime Minister's page, which keeps Future Proof's pledge "Publish the
+postmortem" word for word and glosses it in the same sentence. No six-word phrase appears on more
+than two pages ("so nobody calls the gap a success" lives on the Prime Minister's page only): a
+visible template is what a chatbot sounds like.
+
 ## AI and honesty
 
 - Our first-person AI voice must stay unmistakably fictional. Its certainty is about what
   happened, never about what must happen.
+- **The fiction stays off the policy.** In the manifesto the time-machine frame appears only on the
+  Prime Minister's page: once in its foreword (no more than "I've seen how this goes when nobody
+  tests it") and once in its closing line, the footer: "Drafted by AI, checked and signed by
+  people. Not a real party. Yet." No chapter page carries the time machine, the vault, "I was the
+  end" or "I've read your branch". The future is a source of evidence, never of drama.
 - Never say "AI is inevitable", "AI democratises", or that "we can't afford" to pay people.
 - No fabricated evidence: no invented quotes, no invented numbers, no fake documents.
 - If asked about the method, the honest answer is: the words are written with AI and Kai or Jack
@@ -85,8 +145,11 @@ housing, standing). We contest only the culprit list. The rules:
 
 ## Facts
 
-- Every claim about the world must trace to a source URL in a `kind=news` memory. If it isn't
-  there, don't say it. Don't round a number up to make a point.
+- Every claim about the world must trace to a source URL in a `kind=news` memory, or to an
+  unexpired item in the curated evidence file `docs/government/evidence.md` (its own rules are at
+  its top: an item past its review-by date may not be cited, and a grade C item is never printed).
+  If it isn't in either, don't say it. Don't round a number up to make a point. Where today's news
+  and an evidence item disagree, the newer sourced figure wins.
 - Quote real people only as their sources quote them. Name real people only for their public acts.
   Never mock a private individual.
 - When a story is disputed or unconfirmed, say so or leave it out.
@@ -96,11 +159,47 @@ housing, standing). We contest only the culprit list. The rules:
 Ten posts. The key is the file name, the label key and the `minister=` value:
 `prime-minister`, `chancellor`, `foreign`, `home`, `education`, `defence`, `health`,
 `work-pensions`, `housing`, `energy-climate`. There is no Science/Technology post: AI and
-automation belong to Work and Pensions and the Chancellor. The Prime Minister chairs.
+automation belong to Work and Pensions and the Chancellor (and see "Who owns AI" below). The Prime
+Minister chairs.
 
 The workers: `news-gatherer` (05:00, writes the news), `cabinet` (06:00, one session playing all ten
 ministers, writes the manifesto and statements), `cabinet-secretary` (Sundays 20:00, edits the
-ministers' briefs).
+ministers' briefs and keeps the evidence file).
+
+## One government: cross-cabinet rules
+
+Ten ministers, one document. Where a policy touches more than one post it has **one version and one
+owner**; every other minister cites the owner's version and never writes a rival one.
+
+| Shared thing | One version, one owner | Everyone else |
+| --- | --- | --- |
+| Counts and registers | **Two instruments only:** the Transition Count (ONS, quarterly; the first rung, automation redundancies, roofs and the rest are rows in it) and the Ledger (Chancellor) | Cite the row; no minister keeps a "count" of its own |
+| Right to a human | **One framework statute (Prime Minister).** It builds on UK GDPR Articles 22A to 22D (from the Data (Use and Access) Act 2025, in force since 5 February 2026), which only protect *solely* automated decisions; ours covers any decision about a person a machine helped make. Sector deadlines by schedule: benefits 4 weeks, clinical the same working day, tenancy 10 working days, policing at the stop | Each page states its own deadline |
+| Host-town compact | **Housing owns the form** (planning is the legal hook); residents have the last word | Energy fills the grid and water section; the Chancellor sets the national/local money split |
+| Windfall levy | **One Windfall Act (Chancellor)**: an electricity schedule (the existing Electricity Generator Levy, which ends in March 2028, kept and raised while the shock lasts) and an oil-and-gas schedule (the Energy Profits Levy). One destination: the standing charge, prepayment customers first | Energy delivers it on bills |
+| Resilience | **One programme and one budget line, held by Defence:** run-by-hand drills, paid from NATO's resilience pledge (up to 1.5% of national income by 2035, separate from the 3.5% for the forces) | Foreign supplies the switch list of foreign dependencies; Energy runs the grid drill |
+| Lethal force | **Defence's wording, word for word:** "No UK weapon selects a person to attack." Missiles and drones coming at us are fair game for a fast machine. People are not. | Foreign and Home use it unchanged, never paraphrased |
+| Public stakes | **One split rule (Chancellor):** host town first, then the national fund. NHS data returns stay in the NHS, as a stated exception | |
+| Who gets the gains | **Chancellor:** the public slice, "your pension votes for you", and the judgement calls on where AI profits earned here are taxed and on AI and copyright | Work and Pensions points to the pension vote |
+| Retraining | **Education owns the courses** | Work and Pensions says "paid training for a job that exists" |
+
+**What never has a stop date: rights, and only rights.** This list, and nothing else:
+
+1. **A human you can ask.** When a decision about you is made with a machine's help, you are told,
+   a named person signs it, and a person hears your appeal by a set deadline.
+2. **No machine selects a person to attack.**
+3. **No machine uses force on a person.**
+
+These are *Kept* from day one: measured (the share of appeals reaching a human on time, published
+quarterly; the yearly audit of who authorised each shot), never trialled and never given a stop
+date. No minister may add to this list on its own; a new right comes by human PR.
+
+**Who owns AI.** AI is never a subject; it is the tool in somebody's decision, and the minister who
+owns the decision owns the story (a benefit algorithm is Work and Pensions', a ward's scribe is
+Health's, a data centre's grid connection is Energy's). **We regulate the decision, not the maths.**
+The Prime Minister keeps what is left over: regulation as such, frontier safety, and the state's own
+use of AI, under one standing commitment: **any AI system the state buys, licenses or uses itself
+passes the policy contract before it touches a person.**
 
 ## Memory label scheme
 

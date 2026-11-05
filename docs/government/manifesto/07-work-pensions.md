@@ -1,19 +1,29 @@
 ---
 title: Work and Pensions
-line: Before a firm automates your job, you get a say in where the saving goes.
+line: Before a firm automates your job, you get a say in the saving, and a human reads your claim.
 ---
 ## Position
 
-Nobody's job gets taken by weather. A person decides.
+Nobody's job gets taken by weather. A board decides, on a weekday, and the saving goes somewhere. The law makes it consult the forty people it was about. Being told isn't a say.
 
-You can see it this week. Goldman Sachs reportedly looked at its AI coding tools and decided its engineers keep them and its traders and bankers don't. Fine. That's a decision, made by people, with names. So is every decision to swap a team for software. So is the saving, which goes somewhere.
+Then the letter comes, from a system too. Of the PIP decisions taken to a tribunal hearing, the department loses two in three, about ten months later. That's a long wait to be told you were right.
 
-Prices are up 3.5% on the year and the Bank has just put rates up. People don't need another lecture about adapting. They need a seat at the table where the saving gets split.
+Five rules, and the minister signs for each.
 
-So here is the rule we want tested. Before an employer replaces jobs with automation, the people whose jobs are affected get a binding say in how the gains are shared. Shorter hours on the same pay, a share of the profit, or retraining for a job that actually exists at the end. They choose. The board doesn't choose for them.
+One. The redundancy form firms already send the government asks if a machine now does the work. A count, not a charge, so nobody gains by lying.
 
-The test. Twelve months with volunteer employers in one region, workers electing their own reps. Compare them with similar firms that automated without it. If the affected workers end up no better off, we publish it and drop the rule.
+Two. Before a firm automates jobs, the people in them pick who speaks for them and choose the split: a shorter week on the same pay, a profit share, or paid training for a job that exists. Binding, where employers sign up.
 
-Who it leaves out: agency staff, gig workers and the self-employed, who have no table to sit at. And the young person whose first job was never created at all. They get counted separately, so nobody calls the gap a success.
+Three. Any benefit decision that stops, lowers or sanctions you names who signed it, says if a machine helped, and gets a human review within four weeks. The fraud check stays. Nobody's money stops until a person signs.
 
-That is a first draft, posted on purpose. Write a better rule.
+Four. Nothing that lowers your benefit starts before its review reports. New Universal Credit claims got a smaller health top-up in April, with no published test against its own aim. It gets a test.
+
+Five. You paid in. Lose your job after two years of National Insurance, for any reason, and get up to a year's support tied to your old pay. Firms making large redundancies pay in. Two regions first.
+
+The triple lock stays this parliament. Before the pension age rises, we publish how long people stay healthy, region by region, and MPs vote on that rise alone.
+
+The test. Rule two runs two years with volunteer firms drawn by lot, against firms like them, found by rule one's count. Fails if workers aren't 5% better off in pay or hours, or the trial firms invest a tenth less than the others. It stops on its date unless Parliament votes to keep it, on the published review. Passes, and it goes national.
+
+Who it leaves out: agency, gig and self-employed workers, and the young whose first job never existed. Counted on their own line. Benefit trials start in England and Wales.
+
+The board decides on a weekday. So can the forty people it was about.
