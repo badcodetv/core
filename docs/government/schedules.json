@@ -5,7 +5,7 @@
     "cron": "0 5 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": false,
+    "enabled": true,
     "message": "Run today's news sweep."
   },
   {
@@ -14,7 +14,7 @@
     "cron": "0 6 * * *",
     "timezone": "Europe/London",
     "keep_sessions": 14,
-    "enabled": false,
+    "enabled": true,
     "message": "Sit today's cabinet."
   },
   {
@@ -23,7 +23,7 @@
     "cron": "0 20 * * 0",
     "timezone": "Europe/London",
     "keep_sessions": 8,
-    "enabled": false,
+    "enabled": true,
     "message": "Run this week's personnel review."
   }
 ]
