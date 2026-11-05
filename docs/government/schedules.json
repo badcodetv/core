@@ -1,0 +1,29 @@
+[
+  {
+    "name": "gov-1-news",
+    "worker": "news-gatherer",
+    "cron": "0 5 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": false,
+    "message": "Run today's news sweep."
+  },
+  {
+    "name": "gov-2-cabinet",
+    "worker": "cabinet",
+    "cron": "0 6 * * *",
+    "timezone": "Europe/London",
+    "keep_sessions": 14,
+    "enabled": false,
+    "message": "Sit today's cabinet."
+  },
+  {
+    "name": "gov-3-personnel",
+    "worker": "cabinet-secretary",
+    "cron": "0 20 * * 0",
+    "timezone": "Europe/London",
+    "keep_sessions": 8,
+    "enabled": false,
+    "message": "Run this week's personnel review."
+  }
+]

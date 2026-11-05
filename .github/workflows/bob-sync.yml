@@ -1,0 +1,32 @@
+name: bob-sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/government/workers/**
+      - docs/government/ministers/**
+      - docs/government/shared.md
+      - docs/government/schedules.json
+      - scripts/government/sync-bob.mjs
+  workflow_dispatch:
+
+concurrency: bob-sync
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Sync workers and schedules to Bob
+        run: node scripts/government/sync-bob.mjs --apply
+        env:
+          BOB_MCP_KEY: ${{ secrets.BOB_MCP_KEY_BADCODE }}
