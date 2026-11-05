@@ -50,7 +50,7 @@ the lines.
 
 ## Agent / character voices
 
-The per-story AI agents (the "BadCode government", built in a separate project) and in-story
+The AI agents (the BadCode government, configured in `docs/government/` and run in Bob) and in-story
 characters can each have a distinct delivery, cast per story in its `sound.md`. Ideas explored so
 far (a list to pick from, not a default):
 
