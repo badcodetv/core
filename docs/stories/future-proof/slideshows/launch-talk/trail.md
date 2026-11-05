@@ -13,3 +13,4 @@ One line per published page, round and ruling. Newest last.
 - 2026-11-05 · engine/theme: appendix headings may omit the type; `clockTo` (taskbar clock ticks on a click), `~` greyed and `~~` struck-through buttons, toasts fit up to ~6; tower's "five years" label → "ONE BIG DROP" (the five-year fact is still CHECK)
 - 2026-11-05 · round 2 published to the same links: preview https://claude.ai/artifact/LNreQcESnsdmBZD1HVEaCB · script https://claude.ai/artifact/H3SLnrtgVraXpLvput1Axw
 - 2026-11-05 · Kai: "I like this a lot… right pacing… love some of the effects" → into main and onto the website: GOVT 2 / badcode.tv/future-proof plays the talk in the TV; full screen at /future-proof/talk/ (public build). Content rework next.
+- 2026-11-05 · scanlines over the talk on GOVT 2; pushed e631b050, auto-deployed by site-deploy.yml; live at https://www.badcode.tv/future-proof/
