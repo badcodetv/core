@@ -8,15 +8,19 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync } fr
 import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { readManifesto, bodyHtml } from './manifesto.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const src = join(here, 'src'), pub = join(here, 'public'), dist = join(here, 'dist');
 const C = JSON.parse(readFileSync(join(src, 'content.json'), 'utf8'));
+// The government's manifesto comes from the files its cabinet writes, never from content.json.
+C.government.manifesto = readManifesto(join(here, '..', '..', 'docs', 'government', 'manifesto'));
 const tpl = readFileSync(join(src, 'page.html'), 'utf8');
 const css = readFileSync(join(src, 'tv.css'), 'utf8'), js = readFileSync(join(src, 'tv.js'), 'utf8');
 const V = createHash('sha256').update(css + js + JSON.stringify(C)).digest('hex').slice(0, 10);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const O = C.origin, S = C.stories, G = C.government, N = C.news, A = C.about;
+const M = G.manifesto, CAB = M.filter(m => m.post !== 'prime-minister');
 const DEFAULT_IMG = O + '/avatar-1024.png';
 const SITE_DESC = `${A.lede} ${A.request.replace('fuck', 'f***')} Stories, the news, and a party of its own.`;
 
@@ -35,10 +39,12 @@ const plainBody = {
   story: i => `<h1>${esc(S[i].title)}</h1>${story(S[i], i)}`,
   song: i => `<h1>${esc(S[i].song)}</h1><p>The song from ${esc(S[i].title)}. ${S[i].songVideo ? `<a href="https://www.youtube.com/watch?v=${esc(S[i].songVideo)}">Watch on YouTube</a>` : 'Coming to YouTube.'}</p>`,
   news: () => `<h1>${esc(N.title)}</h1><p>${esc(N.strap)} ${esc(N.status)}</p><p>${esc(N.signoff)}</p>`,
-  gov: () => `<h1>The BadCode Government</h1><p>${esc(G.promise)}</p><ol>${G.pledges.map(p => `<li><strong>${esc(p[0])}</strong> ${esc(p[1])}</li>`).join('')}</ol><p>${esc(G.notReal)}</p>`,
+  gov: () => `<h1>The BadCode Government</h1><p>${esc(G.promise)}</p><h2>The cabinet</h2><ul>${CAB.map(m => `<li><a href="/government/${m.post}"><strong>${esc(m.title)}</strong></a>: ${esc(m.line)}</li>`).join('')}</ul><p>${esc(G.notReal)}</p>`,
+  minister: m => `<h1>${esc(m.title)}</h1><p><strong>${esc(m.line)}</strong></p>${bodyHtml(m.body)}<p><a href="/government">The whole cabinet</a>. ${esc(G.notReal)}</p>`,
+  cabinetText: () => `<h1>The cabinet, as teletext</h1><ul>${CAB.map((m, i) => `<li>Page ${402 + i}: <a href="/government/${m.post}">${esc(m.title)}</a>: ${esc(m.line)}</li>`).join('')}</ul>`,
   fp: () => `<h1>Future Proof</h1><p><strong>${esc(G.futureProof.question)}</strong></p><p>${esc(G.futureProof.intro)}</p><ol>${G.futureProof.tenets.map(t => `<li><strong>${esc(t[0])}.</strong> ${esc(t[1])}</li>`).join('')}</ol><p>${esc(G.futureProof.ask)}</p>`,
   about: () => `<h1>About BadCode</h1><p>${esc(A.lede)} ${esc(A.request)}</p><p>${esc(A.story)}</p>`,
-  text: () => `<h1>BadCode Text</h1><p>The words of BadCode as teletext pages: 100 index, 200 stories, 300 news, 400 the manifesto, 700 follow, 800 about, 888 Future Proof.</p>`,
+  text: () => `<h1>BadCode Text</h1><p>The words of BadCode as teletext pages: 100 index, 200 stories, 300 news, 400 the manifesto, 401 the cabinet (402 to 411, one minister each), 700 follow, 800 about, 888 Future Proof.</p>`,
   missing: () => `<h1>Page not found</h1><p>We saw you'd try that. <a href="/">Back to the TV.</a></p>`,
 };
 
@@ -49,10 +55,13 @@ const routes = [
   ...S.map((s, i) => ({ path: `/stories/${i + 5}`, title: `${s.song} (song) · BadCode`, desc: `The song from ${s.title}.`, img: s.still, body: plainBody.song(i) })),
   { path: '/news', title: `${N.title} · BadCode`, desc: N.strap, body: plainBody.news() },
   { path: '/government', title: 'The BadCode Government', desc: `${G.promise} ${G.notReal}`, body: plainBody.gov() },
+  ...CAB.map(m => ({ path: `/government/${m.post}`, title: `${m.title} · The BadCode Government`, desc: m.line, body: plainBody.minister(m) })),
   { path: '/government/2', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
   { path: '/future-proof', canon: '/government/2', title: 'Future Proof · BadCode', desc: G.futureProof.question, body: plainBody.fp() },
   { path: '/about', title: 'About · BadCode', desc: SITE_DESC, body: plainBody.about() },
   ...[100, 200, 201, 202, 203, 204, 300, 400, 700, 800, 888].map(p => ({ path: `/text/${p}`, title: `Page ${p} · BadCode Text`, desc: 'BadCode, as teletext.', body: plainBody.text() })),
+  { path: '/text/401', title: 'Page 401 · BadCode Text', desc: 'The BadCode cabinet, as teletext.', body: plainBody.cabinetText() },
+  ...CAB.map((m, i) => ({ path: `/text/${402 + i}`, title: `Page ${402 + i} · BadCode Text`, desc: `${m.title}: ${m.line}`, body: plainBody.minister(m) })),
 ];
 
 const slash = p => (p === '/' || p.endsWith('/') ? p : p + '/');

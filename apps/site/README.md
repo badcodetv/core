@@ -6,14 +6,18 @@ The website is a television. Its three strands are channels, and number keys pic
 | --- | --- | --- | --- |
 | STORIES | BadCode One | 1–4 the films, 5–8 their songs | `/stories`, `/stories/1` … `/stories/8` |
 | NEWS | Money For Something (working name) | 1 = latest bulletin, then older ones | `/news`, `/news/2` … |
-| GOVT | The BadCode Government | 1 the manifesto, 2 Future Proof (the talk plays in the screen) | `/government`, `/government/2` (also `/future-proof`) |
+| GOVT | The BadCode Government | 1 the manifesto (the cabinet; each minister at `/government/<post>`), 2 Future Proof (the talk plays in the screen) | `/government`, `/government/2` (also `/future-proof`) |
 | 0 | Test card | about BadCode | `/about` |
-| TEXT | Teletext on any channel | 100 index, 200 stories (201–204), 300 news, 400 manifesto, 700 follow, 800 about, 888 Future Proof | `/text/100` … |
+| TEXT | Teletext on any channel | 100 index, 200 stories (201–204), 300 news, 400 manifesto, 401 the cabinet (402–410 one minister each), 700 follow, 800 about, 888 Future Proof | `/text/100` … |
 
 Every address is a real page with its own title and link-preview picture, plus a plain-text copy of
 what is on screen for screen readers, search engines and browsers without JavaScript.
 
 ## Change what's on it
+
+**The government's manifesto is not in `content.json`.** `build.mjs` reads it from
+`docs/government/manifesto/*.md` (`manifesto.mjs`), which the BadCode government writes through its
+rolling PR (`docs/government/README.md`). Merge that PR and the site redeploys with it.
 
 **`src/content.json` holds every word, picture and link.** To make a film play, put its YouTube id
 (the 11 characters after `watch?v=`) in that story's `film` (or `songVideo`). A news bulletin
@@ -63,7 +67,7 @@ the repo root. The script is `scripts/site/deploy.sh`, and every upload is logge
 
     ./stack site login     # once, opens a browser
     ./stack site preview   # a preview at <branch>.badcode-web.pages.dev
-    ./stack site deploy    # production, www.badcode.tv (manual only; a push never deploys)
+    ./stack site deploy    # production, www.badcode.tv (a push to main that touches apps/site or docs/government/manifesto deploys by itself: .github/workflows/site-deploy.yml)
     ./stack site status
 
 **DNS stays at Gandi** (Kai, 2026-11-04). `www.badcode.tv` is a CNAME at Gandi pointing to the Pages
