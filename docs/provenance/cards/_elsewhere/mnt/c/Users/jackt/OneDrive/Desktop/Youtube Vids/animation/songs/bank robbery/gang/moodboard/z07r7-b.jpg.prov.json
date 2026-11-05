@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z07r7-b.jpg",
+ "made": "2026-11-05T14:21:26+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (fix), on \"The right and the left both witness the theft\"",
+ "prompt": "A frame from a feature film: a narrow 1920s brick tenement alley at night, iron fire escapes zigzagging up both walls, washing lines overhead. MARINE stands on wet cobbles in the middle, rapping to the camera, both gloved hands held out at shoulder height, palms up like weighing scales, frozen mid-bounce with his shoulders dropped on the beat. A few paces behind him, in doorways on either side, RUST and SILVER lean on the frames watching him, softer in focus. All three are ordinary men of the same height; the tops of their heads sit well below the lintels of the doorways behind them. Shot at eye level from about five metres back, 35mm lens, MARINE medium, slightly left of centre in the 16:9 frame. The masks and suits are exactly as in the attached reference image, the masks copied exactly from its close-ups; the men are MARINE, RUST and SILVER. Each hand-knitted rib-wool balaclava covers head and neck, tucked into the collar, with no holes, a large white wool ring round the face, and one small rounded red felt triangle high over the left eye, on the right side of the picture. Black leather gloves. One gas lamp on the wall lights him; deep shadows; 35mm film grain.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

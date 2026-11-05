@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z03r7-b.jpg",
+ "made": "2026-11-05T14:21:25+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (fix), on \"Sorry, did I interrupt your meeting?\"",
+ "prompt": "A frame from a feature film set in 1920s rural America: MARINE hangs from a rope ladder beneath a low-flying silver corrugated-metal trimotor plane over green and gold farm fields on a clear summer morning. The camera hangs level with him a couple of metres away, 50mm lens, so his masked head and shoulders are large in the right half of the frame, facing the lens, while the plane's fixed wheel and the underside of the wing cut across the top edge. The mask and suit are exactly as in the attached reference image, the mask copied exactly from the close-up: the small red triangle sits over his left eye, on the right side of the picture. His black-gloved left hand grips a wooden rung; his right hand holds a bulging canvas cash bag at his side. His cream linen jacket flaps back in the wind, two-tone shoes on the lower rung, the fields far below and slightly soft. Hard sunlight from one side, with crisp shadow on the wool. Shot on 35mm motion-picture film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

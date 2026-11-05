@@ -22,13 +22,17 @@
   --beat: #7e70ff; --vid: #6252d6; --vox: #3fae75; --mus: #4b8fe0; --sfx: #d4923a; --note: #f2c230; --head: #ff4a3d;
   --slip: #2b2816; --slip-line: #5d5428; --sel: #f2f3f5; color-scheme: dark }
 body { background: var(--bg); color: var(--fg); font: 15px/1.45 var(--body) }
-.wrap { max-width: 1400px; margin: 0 auto; padding-block: 20px 80px;
+.wrap { max-width: 1700px; margin: 0 auto; padding-block: 20px 80px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
   display: flex; flex-direction: column; gap: 16px }
 header h1 { font: 700 clamp(26px, 4vw, 36px)/1.1 var(--ui); margin: 0; text-wrap: balance }
 header p { margin: 4px 0 0; color: var(--dim); max-width: 75ch }
 .meta { font: 12.5px var(--mono); color: var(--dim); margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px 18px }
-.top { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 16px }
+.top { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px }
+/* Cinema mode (Jack 2026-11-05): the player takes the full width, as tall as the window allows; the 'now' panel sits under it. */
+.monitor video { width: min(100%, calc(80vh * 16 / 9)); margin: 0 auto }
+.now { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.3fr); gap: 10px 20px; align-items: start }
+@media (max-width: 860px) { .now { grid-template-columns: 1fr } }
 .box { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; min-width: 0 }
 .monitor { padding: 10px }
 video { display: block; width: 100%; max-width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 3px }
@@ -38,7 +42,7 @@ button { font: 600 13px var(--ui); letter-spacing: .03em; color: var(--fg); back
   border-radius: 4px; padding: 6px 10px; cursor: pointer }
 button:hover { border-color: var(--dim) } button:focus-visible, textarea:focus-visible { outline: 2px solid var(--beat); outline-offset: 1px }
 button.primary { background: var(--beat); border-color: var(--beat); color: #fff }
-.now { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px }
+.now { padding: 14px 16px }
 .eyebrow { font: 600 11.5px var(--ui); text-transform: uppercase; letter-spacing: .09em; color: var(--dim) }
 .now h2 { font: 700 22px/1.15 var(--ui); margin: 0 }
 .sub { font-size: 17px; min-height: 2.9em; border-left: 3px solid var(--vox); padding: 2px 0 2px 10px }
@@ -168,6 +172,21 @@ const FPS = D.fps;
 const tc = s => { const f = Math.round(s * FPS), ff = f % FPS, t = Math.floor(f / FPS);
   return [Math.floor(t / 3600), Math.floor(t / 60) % 60, t % 60, ff].map(n => String(n).padStart(2, '0')).join(':') };
 const vid = $('vid'), scroller = $('scroller'), lanes = $('lanes');
+// Full-quality stream: fetch the hq pieces in order and append them to one MediaSource; any failure falls back to media/cut.mp4.
+(function hq() {
+  const H = D.hq, MS = window.ManagedMediaSource || window.MediaSource;
+  if (!H || !H.parts || !H.parts.length || !MS || !MS.isTypeSupported(H.codec)) return;
+  const back = () => { try { vid.removeAttribute('src'); vid.disableRemotePlayback = false } catch (e) {} vid.src = 'media/cut.mp4' };
+  const ms = new MS(); vid.disableRemotePlayback = true; vid.src = URL.createObjectURL(ms);
+  ms.addEventListener('sourceopen', async () => {
+    try {
+      const sb = ms.addSourceBuffer(H.codec);
+      const done = () => new Promise((ok, no) => { sb.addEventListener('updateend', ok, { once: true }); sb.addEventListener('error', no, { once: true }) });
+      for (const p of H.parts) { const r = await fetch(p); if (!r.ok) throw new Error(p); sb.appendBuffer(await r.arrayBuffer()); await done() }
+      if (ms.readyState === 'open') ms.endOfStream();
+    } catch (e) { console.warn('hq stream failed, using the small copy', e); back() }
+  }, { once: true });
+})();
 const beatAt = t => D.beats.find(b => t >= b.t && t < b.t + b.d) || D.beats[D.beats.length - 1];
 const NOTES = {};           // key -> note text (mine)
 const SLIPS = {};           // key -> [{ta, st}]

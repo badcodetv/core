@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q10r7-b.jpg",
+ "made": "2026-11-05T14:21:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"All gotten gains, no need to explain\"",
+ "prompt": "A frame from a 1920s period feature film: BOTTLE, the masked robber, stands in a grand hotel kitchen at night, rapping straight into the lens, caught at the top of a huge shrug. His mask and brown tweed suit are exactly as in the attached reference image, the mask copied exactly from its close-up: white wool ring round the face, the small red felt triangle over his LEFT eye, so on the right side of the picture. Both shoulders are hiked up, both black-gloved palms turned up and open at waist height, his head cocked: no need to explain. On the steel counter beside him sits a bulging canvas sack. Behind him a chef in whites keeps whisking a copper bowl, eyes on the bowl. Medium shot at chest height, 35mm, BOTTLE on the left third of the 16:9 frame, mask large and readable, rows of copper pans hanging behind. One caged bulb over the range is the only light, warm on the copper, the far kitchen dark. Shot on 35mm film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

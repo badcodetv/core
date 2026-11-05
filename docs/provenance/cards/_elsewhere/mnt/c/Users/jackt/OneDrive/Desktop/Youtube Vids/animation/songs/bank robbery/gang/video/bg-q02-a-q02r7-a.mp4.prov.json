@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-q02-a-q02r7-a.mp4",
+ "made": "2026-11-05T14:53:28+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. He performs from the first half-second, sharp moves on the beat: on the first beat his outstretched arm sweeps palm-up, presenting the car body like a showroom host; on the next his near glove pinches thumb and finger almost shut at the lens; then a flat-palm chop down; then both shoulders up in a slow sarcastic shrug; then a deep nod, chin down. His hands stay below his chin. The worker keeps tightening his bolt, never looking up. Knitted mask, gloves and suit unchanged. SFX: ratchet clicks, cloth rustle, factory hum.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q02r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q02r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "q02-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:39:13.463Z"
+ }
+}

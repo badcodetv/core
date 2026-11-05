@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p05r6-b.jpg",
+ "made": "2026-11-05T12:06:10+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: all six, the steel girders of a skyscraper going up, high over the city, on \"Have resistance to the facts I'm stating\"",
+ "prompt": "A 1929 feature-film frame on 35mm. The masks and suits are exactly as in the attached reference image; the shot holds all six: PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, masks copied exactly from its close-ups: rib-knit wool over the whole head, no holes, a white wool ring round the face, one small rounded red felt triangle high over each man's left eye, on the right of the picture. Black leather gloves, cuffs over the wrists, collars up. High on a skyscraper's riveted steel, CRIMSON stands at the very end of an I-beam in the left foreground, hunched forward, knees bent, frozen tapping two gloved fingers on his temple, staring into the lens. The other five stand along the girder behind him, all looking into the lens; BOTTLE sits with his legs dangling, holding an unbitten sandwich against his knitted mouth. Wide 21mm lens from above, the hazy city far below. Hard low sun from the left, no fill. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

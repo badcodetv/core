@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-q04-a-q04r7-a.mp4",
+ "made": "2026-11-05T14:53:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second the man raps with his whole body, knees bouncing on the beat, feet planted on the step. On the first beat his raised finger jabs up at the racing paper twice; on the next his other glove rubs the money sign hard at the lens; then both arms snap wide, palms down; then a big sarcastic shrug, palms up; then the finger jabs up again. Hands stay below and beside his masked face. The pressman keeps reading, bored. Mask, suit and gloves unchanged. SFX: rotary presses clattering, paper hissing.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q04r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q04r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "q04-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:39:38.626Z"
+ }
+}

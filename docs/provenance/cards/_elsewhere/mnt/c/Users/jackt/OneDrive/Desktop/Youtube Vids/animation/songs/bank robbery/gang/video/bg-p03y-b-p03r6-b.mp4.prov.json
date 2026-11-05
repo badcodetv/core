@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p03y-b-p03r6-b.mp4",
+ "made": "2026-11-05T16:08:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no zoom, pan or tilt; one continuous shot. He stays standing in place behind the counter, facing the lens, head nearly still. On the first beat his shrug drops and pops back up, gloved palms bouncing; on the next both arms swing in and slap flat on the counter; then one palm sweeps sideways towards the old woman, presenting her; then a big double shrug again, shoulders to his ears. Hands stay below the mask. The old woman sips her coffee, unimpressed. His mask stays exactly as in the first frame: white ring, one red triangle, no holes. Diner hum, palm slaps.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p03r6-b.jpg",
+ "why": "mv-gang r8 mask fix, writer pf",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p03r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p03y-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:05:21.485Z"
+ }
+}

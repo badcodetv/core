@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y02r8-b.jpg",
+ "made": "2026-11-05T16:05:08+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 8: closer remake for Jack's mask/slop note, work can get paid though",
+ "prompt": "A still frame from a feature film: a low shot from the wet kerb at night, the lens a metre from a black 1920s sedan sliding broadside past, its near side filling the frame, white tyre smoke rolling from the rear wheel behind it. BOTTLE leans out of the open passenger window toward the lens, head and shoulders large, a third of the frame high, his mask three-quarter to camera, a Thompson held up at the sky in both black-gloved hands. RUST sits just behind him at the wheel, turned three-quarter toward us. Both are exactly as in the attached reference image, the masks copied exactly from its close-ups: bottle-green and rust-gold rib knit over the whole head, no holes, a large white ring round the face, one small solid red triangle high over each man's left eye, on the right of the picture. Lit only by one street lamp above, the paint reflecting it. 35mm film, fine grain, 16:9, edge to edge.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

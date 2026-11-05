@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y04r8-a.jpg",
+ "made": "2026-11-05T16:05:08+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 8: closer remake for Jack's mask/slop note, standards bleeding, landlords needing",
+ "prompt": "A frame from a 1920s feature film: BOTTLE stands untouched and upright in the empty window opening of a two-storey timber house front that has just fallen flat around him into a muddy country-town street after a storm, brushing plaster dust off his tweed lapel with one gloved hand, the other gripping a carpet bag. The mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: knitted bottle-green rib wool over his whole head, no holes, a large white ring round the face, one small red felt triangle high over his LEFT eye, on the right side of the picture. Black leather gloves, collar up. A low wide-angle shot, 24mm, the lens at ankle height a metre away: splintered blue-painted clapboard and the window sill fill the foreground, his masked head large in the upper third, facing the camera. Low late sun breaks through from the left, puddles dull, shadows deep. Shot on 35mm motion-picture film, fine grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

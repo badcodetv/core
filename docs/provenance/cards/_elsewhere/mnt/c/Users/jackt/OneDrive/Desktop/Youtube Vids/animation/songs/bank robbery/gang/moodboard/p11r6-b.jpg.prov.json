@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p11r6-b.jpg",
+ "made": "2026-11-05T12:06:10+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: MARINE alone, a river dock at night, a rum-running boat unloading, on \"Don't get high off your own supply\"",
+ "prompt": "A frame from a feature film: a thin masked robber raps straight into the lens on a wooden river dock at night while a low varnished mahogany speedboat is unloaded behind him, crates of bottles passing hand to hand onto stacked barrels, far-shore lights scattered across the black water. The mask and suit are exactly as in the attached reference image; the man is MARINE, his mask copied exactly from the close-up: rib-knit wool over head and neck, no holes, a white wool ring round the face, one small rounded red felt triangle high over his left eye, on the right of the picture. He is caught mid-bounce, knees bent, heels off the planks, folded forward from the hips toward the camera, his right gloved index finger raised and wagging a stern no at the lens, the left glove flat and palm-down at his hip. Full figure from knee height, 85mm, the dock compressed behind him. The only light is a parked sedan's headlamps raking in from the left, long shadows across wet planks. On a barrel behind him a dockhand in a flat cap sips from a china teacup. 35mm film, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p01-a-p01r6-a.mp4",
+ "made": "2026-11-05T12:31:16+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The masked man moves from the first instant. His raised gloved hand chops down hard on the beat, then chops again; his other hand slaps flat on the bar. On the next beat he jabs one finger straight at the lens, head shoved forward. Then he rocks both shoulders and bounces at the knees, chopping again, never still. The old barman keeps his hand resting on the lever, bored, barely blinking. Mask, gloves and suit unchanged; nothing new appears. SFX: glove slaps on wood, bottles clink faintly, quiet bar hum.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p01r6-a.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p01r6-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p01-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:16:41.011Z"
+ }
+}

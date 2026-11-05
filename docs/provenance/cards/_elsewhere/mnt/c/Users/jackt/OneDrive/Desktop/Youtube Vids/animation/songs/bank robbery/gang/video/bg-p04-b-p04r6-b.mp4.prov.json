@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p04-b-p04r6-b.mp4",
+ "made": "2026-11-05T12:31:16+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The masked man performs straight at the lens from the first instant, mock-serious. First beat: two gloved fingers tap his temple twice, sharp. Next beat: the same hand snaps out, index finger jabbing at the lens. Next: palm flat, edge down, chopping the air twice. Next: both shoulders shrug high, gloved palm turned up, head cocked. Then the two fingers return to his temple, tapping. The elevator operator stays still behind him, holding the tray level, coin in place. Mask, gloves and suit unchanged. SFX: leather glove creaks, cloth rustles, quiet lobby hum.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p04r6-b.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p04r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p04-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:17:52.171Z"
+ }
+}

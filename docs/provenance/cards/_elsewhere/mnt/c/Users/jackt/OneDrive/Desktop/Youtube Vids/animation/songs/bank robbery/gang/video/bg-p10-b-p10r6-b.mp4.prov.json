@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p10-b-p10r6-b.mp4",
+ "made": "2026-11-05T12:46:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The masked man moves from the first instant: his raised hand pumps the horn sign down on the beat, twice, then swings it out to point at the lens, then back to the horns. His other hand keeps a tight grip on the microphone ring as he bobs his head and dips his shoulders on every beat, leaning into the mic. Behind him the shirt-sleeved man calmly keeps clopping the coconut halves. Mask, gloves and suit unchanged; nothing new appears. SFX: coconut clops, cloth rustle, the low hum of the studio.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p10r6-b.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p10r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p10-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:33:02.145Z"
+ }
+}

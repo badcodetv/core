@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-y01-b-y01r8-b.mp4",
+ "made": "2026-11-05T16:37:03+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked camera fixed in the back seat, moving with the car; no zoom, pan or tilt. The car is already rolling fast. From the first moment the driver on the left hauls the wheel hard left with both gloved hands, his shoulders and elbows leaning into the turn; the heavy car body rolls on its springs and both men sway with it, then settle as it straightens. Through the windscreen the brick street swings and slides past. Both men keep facing forward. The masks and the grey hat stay exactly as they are: white ring, red triangle, no holes. Engine roar, tyres drumming on cobbles. No speech.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y01r8-b.jpg",
+ "why": "mv-gang r8 mask fix, writer cy1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y01r8-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "y01-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:23:19.390Z"
+ }
+}

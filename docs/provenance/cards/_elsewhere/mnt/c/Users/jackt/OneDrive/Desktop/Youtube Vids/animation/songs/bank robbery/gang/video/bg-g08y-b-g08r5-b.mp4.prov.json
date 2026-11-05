@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-g08y-b-g08r5-b.mp4",
+ "made": "2026-11-05T16:08:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no zoom, pan or tilt; one continuous shot. The big gloved hand in the foreground stays up, fingers spread, never passing over his face: on each beat it wiggles its fingers like a stage magician, then snaps them, then waves slowly side to side. Behind his back, in plain view, his other hand keeps slowly pushing the folded banknote deeper into his jacket pocket until it is gone inside. His head stays where it is, tilted showily, facing the lens. His mask stays exactly as in the first frame: white ring, one red triangle, no holes. Smoke drifts in the spotlight. A finger snap, cloth rustle.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g08r5-b.jpg",
+ "why": "mv-gang r8 mask fix, writer pf",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/g08r5-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "g08y-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:04:55.818Z"
+ }
+}

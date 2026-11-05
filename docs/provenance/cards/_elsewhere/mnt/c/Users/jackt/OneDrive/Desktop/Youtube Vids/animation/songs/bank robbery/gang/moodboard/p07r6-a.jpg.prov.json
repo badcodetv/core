@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p07r6-a.jpg",
+ "made": "2026-11-05T12:06:10+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: RUST alone, a garage full of lacquered getaway cars, on \"Stacks and stacks of elastic cash\"",
+ "prompt": "A 1920s feature-film frame on 35mm. The mask and suit are exactly as in the attached reference image; only RUST is in the shot, his mask copied exactly from its close-up: rust-gold rib-knit wool over the whole head, no holes, a white wool ring round the face, one small rounded red felt triangle high over his left eye, on the right of the picture. Black double-breasted suit, white tie, black leather gloves, cuffs over the wrists, collar up. In a garage of lacquered maroon sedans with freestanding headlamps, RUST leans over a car's long hood, glaring up into the lens, frozen at the bottom of a flat-palm chop, his gloved palm landing edge-down across a neat stack of banknote bundles bound in elastic bands. A mechanic's legs stick out from under the car on a creeper, unbothered. Close, low, 28mm lens at hood level. Lit only by one caged bare bulb hanging above, glaring on the lacquer; beyond it, inky shadow. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

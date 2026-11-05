@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-q09-a-q09r7-a.mp4",
+ "made": "2026-11-05T15:08:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second the man raps with his body, leaning over the table, his left glove staying flat on the baize. On the first beat his open right hand sweeps grandly toward the dark doorway; on the next it jabs a finger at the lens; then he shrugs, palm up, head cocked; then a deep nod on the downbeat; then the presenting sweep again, too much, held. His masked face stays toward camera. The old man keeps chalking his cue, never looking up. Mask, suit and gloves unchanged. SFX: lamp hum, chalk squeak, balls clicking softly.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q09r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q09r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "q09-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:54:18.008Z"
+ }
+}

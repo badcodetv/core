@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v11x-a-v11r5-a.mp4",
+ "made": "2026-11-05T14:34:55+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no camera movement. From the first frame the masked man in the maroon suit raps to the lens, leaning in. On the first beat he wags his raised finger at camera, mock-stern; on the next he tips his head up to the sky, exasperated; then he mimes holding a dainty invisible slice of cake between thumb and finger, little finger out, raises it to chin height, stops dead, and shakes his head at the lens; then he slides the empty hand forward, offering it to the viewer, and wags the finger again. Mask stays exactly as it is; other hand stays on his hip.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v11r5-a.jpg",
+ "why": "mv-gang r7 clip fix (Jack's cut-6 note)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v11r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v11x-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:22:09.695Z"
+ }
+}

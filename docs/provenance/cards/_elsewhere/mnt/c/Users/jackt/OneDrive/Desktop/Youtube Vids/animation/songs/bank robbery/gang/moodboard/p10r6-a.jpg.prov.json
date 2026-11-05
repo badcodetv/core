@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p10r6-a.jpg",
+ "made": "2026-11-05T12:06:10+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: SILVER alone, a 1920s radio broadcasting studio, on \"It is the devil with the radio station\"",
+ "prompt": "A frame from a feature film: a tall masked robber raps straight into the lens inside a 1920s radio broadcasting studio, its walls hung with heavy maroon drapes and the floor laid with a worn oriental rug. The mask and suit are exactly as in the attached reference image; the man is SILVER, his mask copied exactly from the close-up: rib-knit wool over head and neck, no holes, a white wool ring round the face, one small rounded red felt triangle high over his left eye, on the right of the picture. He hunches over a big ring-framed carbon microphone on a floor stand, left glove gripping the ring, chin dipped so his masked face glares up into the lens, right gloved hand raised beside his temple with only the index and little fingers extended like a horn. Medium close-up from just above his eye line, 40mm, his mask filling the right half of the frame. One hanging pendant lamp over the microphone, everything past it inky dark. Beside him a shirt-sleeved sound-effects man in sleeve garters calmly clops two coconut halves together. 35mm film, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

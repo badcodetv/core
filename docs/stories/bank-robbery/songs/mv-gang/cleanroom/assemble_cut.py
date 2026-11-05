@@ -4,14 +4,14 @@ Same cuts as the Premiere sequence (edit-plan.json, c01-b → a02-b / a02-a beca
     python3 assemble_cut.py"""
 import glob, json, pathlib, subprocess, sys
 R = sys.argv[1] if len(sys.argv) > 1 else ''
-CUTDIR = {'r2': 'cut2', 'r3': 'cut3', 'r4': 'cut4', 'r5': 'cut5'}.get(R, 'cut')
+CUTDIR = {'r2': 'cut2', 'r3': 'cut3', 'r4': 'cut4', 'r5': 'cut5', 'r6': 'cut6', 'r7': 'cut7', 'r8': 'cut8', 'r9': 'cut9'}.get(R, 'cut')
 HERE = pathlib.Path(__file__).parent
 SC = HERE.parent
 cfg = json.load(open(SC / 'scene.json'))
 MEDIA = pathlib.Path(cfg['media']); VID = MEDIA / 'video'; CUT = MEDIA / CUTDIR; PARTS = CUT / 'parts'
 PARTS.mkdir(parents=True, exist_ok=True)
 SONG = pathlib.Path(cfg['song'])
-plan = json.load(open(SC / {'r2': 'edit-plan-r2.json', 'r3': 'edit-plan-r3.json', 'r4': 'edit-plan-r4.json', 'r5': 'edit-plan-r5.json'}.get(R, 'edit-plan.json')))
+plan = json.load(open(SC / {'r2': 'edit-plan-r2.json', 'r3': 'edit-plan-r3.json', 'r4': 'edit-plan-r4.json', 'r5': 'edit-plan-r5.json', 'r6': 'edit-plan-r6.json', 'r7': 'edit-plan-r7.json', 'r8': 'edit-plan-r8.json', 'r9': 'edit-plan-r9.json'}.get(R, 'edit-plan.json')))
 NOIR = MEDIA.parent / 'noir' / 'video'
 def resolve(ref):
     return NOIR / (ref[3:] + '.mp4') if ref.startswith('cn:') else sorted(VID.glob(f'bg-{ref}-*.mp4'))[0]
@@ -27,9 +27,11 @@ for i, r in enumerate(plan):
     src = resolve(clip)
     frames_s = round(r['start'] * 24); frames_e = round(r['end'] * 24); d = (frames_e - frames_s) / 24
     part = PARTS / f'{i:03d}.mp4'
-    if not part.exists():
+    key = f"{src}|{r.get('in', 0):.3f}|{d:.4f}"; tag = part.with_suffix('.src')  # rebuild a cached part when its row changed
+    if not part.exists() or not tag.exists() or tag.read_text() != key:
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f"{r.get('in', 0):.3f}", '-i', str(src), '-t', f'{d:.4f}', '-an',
                         '-vf', 'scale=1280:720,fps=24,setsar=1', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', str(part)], check=True)
+        tag.write_text(key)
     listfile.append(f"file '{part}'")
     b = beat_of(r.get('start_line', r['start']))
     video.append({'file': str(part), 'start': frames_s / 24, 'dur': d, 'beat': b, 'source': str(src), 'looped': False})
@@ -40,7 +42,7 @@ prev = CUT / 'preview.mp4'
 subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', str(CUT / 'list.txt'), '-i', str(SONG),
                 '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', str(prev)], check=True)
 total = 209.6
-SEQ = {'r2': 'Balaclava Gang 2', 'r3': 'Balaclava Gang 3', 'r4': 'Balaclava Gang 4', 'r5': 'Balaclava Gang 5'}.get(R, 'Balaclava Gang 1')
+SEQ = {'r2': 'Balaclava Gang 2', 'r3': 'Balaclava Gang 3', 'r4': 'Balaclava Gang 4', 'r5': 'Balaclava Gang 5', 'r6': 'Balaclava Gang 6', 'r7': 'Balaclava Gang 7', 'r8': 'Balaclava Gang 8', 'r9': 'Balaclava Gang 9'}.get(R, 'Balaclava Gang 1')
 edl = {'sequence': SEQ, 'title': 'Balaclava Gang Timeline', 'heading': f'The Bank Robbery MV: the balaclava gang, {SEQ}',
        'intro': f'The {SEQ} cut (same as the Premiere sequence in bank robbery.prproj): {len(plan)} shots on the beat of "the version.wav". '
                 'Play it, click any section, shot or line and leave a note in its yellow slip, or pin one to a frame. Tell Claude when you are done.',
@@ -52,9 +54,9 @@ edl = {'sequence': SEQ, 'title': 'Balaclava Gang Timeline', 'heading': f'The Ban
        'flags': ([
     'Cut 3: a cut every beat in the choruses and after the drop (about 0.65 s), half-beat flurries on each "Robbery!", every 2 beats in the verses with the lyric shot on its line, a bar a shot in the drums-out breath (2:55-3:07), and the walk away from the explosion held to the end.',
     'The new action parodies (k clips) are in twice as often as anything else; repeats use a different stretch of the clip.',
-    'Known faults: k12-a marquees print garbled words; k13-b "GIN" crates; k11-a ladder man reads unmasked when small.'] if R in ('r3', 'r4', 'r5') else []) + ([
+    'Known faults: k12-a marquees print garbled words; k13-b "GIN" crates; k11-a ladder man reads unmasked when small.'] if R in ('r3', 'r4', 'r5', 'r6') else []) + ([
     'Cut 4: the rap-to-camera clips redone with big sarcastic stage-rap gestures (clip names with a g, e.g. v01g-b), and your five gesture picks (g08-g12) on their lines.',
-    'Gesture clip faults: v05g-b turns his back mid-clip; d08g-b barely moves; d10g-a swings the mic stand up like a pole; g09-b shows a GIN crate.'] if R in ('r4', 'r5') else []) + (['Cut 5: the 37 clips with a wrong mask (r3/mask-audit.md) remade from new stills, same motion; names with an m, e.g. k01m-a.'] if R == 'r5' else []) + ['c01-b (the gang chanting in the bank lobby) was refused by Flow three times: the doors-bursting-in clips stand in at 1:02 and 2:04.',
+    'Gesture clip faults: v05g-b turns his back mid-clip; d08g-b barely moves; d10g-a swings the mic stand up like a pole; g09-b shows a GIN crate.'] if R in ('r4', 'r5', 'r6', 'r7', 'r8', 'r9') else []) + (['Cut 5: the 37 clips with a wrong mask (r3/mask-audit.md) remade from new stills, same motion; names with an m, e.g. k01m-a.'] if R in ('r5', 'r6', 'r7', 'r8', 'r9') else []) + (['Cut 7 (your cut-6 notes): shots now hold a bar or two (about 2.6 s, was 1 s); fast cutting only in three short bursts (the first "Robbery!", the end of chorus 1, the run into the outro), each followed by a held shot. Rapping to camera on verse openers, punchlines and the hooks, mixed with action. Your rejected shots are out; their fixes (z01-z07, v05x, v11x) are in.'] if R == 'r7' else []) + (['Cut 8 (your cut-7 notes): more action, with rapping to camera set beside it (about 30% rap, never two rap shots in a row); shots still hold about 2.6 s; fast beat cuts only at the four big drops (0:07, 1:02, 2:04, 3:07). Mask fixes: y01-y06 remake the wide shots from closer stills; z02, p03, z06, g08 and v05 re-shot with the head held still; q07 and z01 out; pov2 plays once.'] if R == 'r8' else []) + (['Cut 9 (your cut-8 notes): about twice as many cuts. Action shots mostly half a bar (~1.3 s) with a longer hold every few shots; rapping and gesturing to camera sprinkled in (about 20%, one line each, action either side). Your screenshot picks are in: the boxing ring, the balloon (fixed y06), the dining car, the elevated train, the train roof, the snow, the salt flats, Grand Central and the fixed plane (z03). Grandma freezing on her line, the devil-horn booth on the devil line; y01 is out (eye showing).'] if R == 'r9' else []) + (['Cut 6 (5 Nov meeting: fewer repeats, more rapping at the camera): your 14 rap-to-camera picks (p clips) each on its own line, then swapped in for the extra uses of the most repeated clips (35 of 214 cuts are now rapping to camera, never two in a row; no clip is used more than 5 times, against 8 for the most repeated in cut 5). p07 (garage) and p13 (gambling den) stalled in Flow on every try, so they are not in. Same cut points as cut 5; timing not touched.'] if R in ('r6',) else []) + ['c01-b (the gang chanting in the bank lobby) was refused by Flow three times: the doors-bursting-in clips stand in at 1:02 and 2:04.',
                  'Lines whose still was not picked use the nearest picked clip (marked "not picked" in the line text).',
                  ('Cuts snapped to the strongest drum hit near each line (within 0.33 s).' if R == 'r2' else 'Cuts sit on Whisper\'s line starts (loose by ~0.3 s), not yet on the beat.'),
                  ('Shop sign readable in c02 ("BUTCHER\'S SHOP"). Colour Noir action clips are back (marked in the line text).' if R == 'r2' else 'Shop signs readable in x01 ("BAKERY") and c02 ("BUTCHER\'S SHOP").')]}

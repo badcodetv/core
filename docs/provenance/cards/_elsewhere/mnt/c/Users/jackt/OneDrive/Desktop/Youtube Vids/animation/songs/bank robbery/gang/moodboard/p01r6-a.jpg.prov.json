@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p01r6-a.jpg",
+ "made": "2026-11-05T12:06:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: PLUM alone, a speakeasy bar, on \"They say, you can't make money from a tree\"",
+ "prompt": "A still frame from a feature film: PLUM alone, the broad robber, hunched toward the lens behind a speakeasy's curved walnut bar, frozen at the bottom of a downward chop, his left gloved hand flat and edge-down, elbow high, his head pushed forward, staring straight into the camera mid-rap. His mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: plum rib-knit wool over the whole head, the white wool ring round the face, the small red felt triangle over his LEFT eye, on the right side of the picture at two o'clock. Black leather gloves, no skin. Low angle, 24mm lens at chest height, PLUM filling the left two-thirds of the 16:9 frame. The only light is the row of bare bulbs glowing behind the shelved bottles, rimming his shoulders; the shadows are deep and inky. Behind him an old barman keeps one hand resting on the bottle-chute lever, bored. Shot on 35mm motion-picture film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

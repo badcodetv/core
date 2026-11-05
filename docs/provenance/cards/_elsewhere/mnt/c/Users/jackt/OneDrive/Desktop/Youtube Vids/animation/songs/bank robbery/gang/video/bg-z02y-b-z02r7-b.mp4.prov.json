@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z02y-b-z02r7-b.mp4",
+ "made": "2026-11-05T16:08:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Camera locked to the car's bonnet, no zoom, pan or tilt; one continuous shot. The car swerves hard down the street from the first moment. The driver in the crimson mask and hat yanks the wheel left, then right, on the beat, shoulders and elbows heaving. The man in the cream suit beside him slams both gloved hands flat on the dashboard and braces, chest rocking with each swerve. Both heads stay square to the lens. Masks stay exactly as in the first frame: white ring, one small red triangle high on the right of each face, no holes. Oranges keep falling; the policeman stumbles clear. Engine roar, tyres squeal.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z02r7-b.jpg",
+ "why": "mv-gang r8 mask fix, writer pf2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z02r7-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z02y-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:06:12.766Z"
+ }
+}

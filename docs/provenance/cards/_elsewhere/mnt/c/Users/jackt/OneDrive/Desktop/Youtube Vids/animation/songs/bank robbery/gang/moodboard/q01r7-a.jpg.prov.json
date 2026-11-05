@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q01r7-a.jpg",
+ "made": "2026-11-05T14:21:27+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Let's see each day, make hay not free\"",
+ "prompt": "A frame from a feature film: PLUM raps straight into the lens on a tar rooftop at dawn, beside the timber legs of a wooden water tower, the city's brick towers hazy below. The mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: knitted plum wool, the white ring round the face, the small red triangle over his left eye, on the right side of the picture. He has one shoe up on a crate, leaning over his knee toward the lens, frozen at the bottom of a flat-palm chop with his left glove, while his right glove holds his own lapel with vain pride. Behind him a pigeon keeper in shirtsleeves scatters grain from a tin, his back turned. Low, close, 24mm, his broad body filling the left two-thirds of the frame. The only light is the low sun from the left, raking gold across the mustard chalk-stripe, the shadows cool and deep. 35mm motion-picture film, fine grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

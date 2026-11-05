@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p06-b-p06r6-b.mp4",
+ "made": "2026-11-05T12:46:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The six masked men perform at once from the first instant. On the first beat all raised fists pump up twice in unison; the man in the orange mask is late, his fist only reaching shoulder height each time. On the next beat they all drop to flat palms chopping down together. Then they all bounce at the knees, heads nodding hard. Then all fists punch up again, orange still late. Behind the grille the grey teller keeps counting banknotes, never looking up. Masks, suits and gloves unchanged; nobody new appears. SFX: shoe stamps, cloth, rustling banknotes, marble echo.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p06r6-b.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p06r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p06-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:31:41.108Z"
+ }
+}

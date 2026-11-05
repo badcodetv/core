@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p16-a-p16r6-a.mp4",
+ "made": "2026-11-05T13:01:45+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. The six masked men in the ring perform at once from the first instant, staring up at the lens. On the first beat every raised fist pumps up twice in unison; the green-masked man in front is a beat late, his fist only reaching chest height. On the next beat they all bounce at the knees, heads nodding hard. Then all thump a fist to their chest together. Then every fist punches straight up again, green still late. Smoke drifts slowly through the window light. Masks, suits and gloves unchanged; nobody new appears. SFX: stamps on canvas, creaking ropes, cloth, echoing gym.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p16r6-a.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p16r6-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p16-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:49:00.943Z"
+ }
+}

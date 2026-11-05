@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q04r7-b.jpg",
+ "made": "2026-11-05T14:21:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"It prints all the dollars that the government spends\"",
+ "prompt": "A frame from a feature film: SILVER raps straight into the lens in a 1920s newspaper press hall, the rotary presses running, wide paper webs racing overhead on rollers. The mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: knitted silver-grey wool, the white ring round the face, the small red triangle over his left eye, on the right side of the picture. Tall, he stands on an iron step between two presses, his right arm flung straight up, the gloved index finger pointing at the racing paper; his left glove is held toward the lens, rubbing the thumb across the fingertips, the money sign. Behind him a pressman in a folded paper hat and inky apron reads a fresh sheet, utterly bored, its print a soft grey blur. Low, wide, 21mm, the webs streaking into the top of the frame. One light: an enamel pendant lamp just above him, the far presses sinking into inky black. 35mm film grain, slight halation round the lamp. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

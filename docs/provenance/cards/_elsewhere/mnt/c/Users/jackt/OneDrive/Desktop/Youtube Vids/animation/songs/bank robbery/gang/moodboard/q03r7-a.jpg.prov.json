@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q03r7-a.jpg",
+ "made": "2026-11-05T14:21:27+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Rent seeking, I'm just about eating\"",
+ "prompt": "A frame from a feature film: CRIMSON raps straight into the lens across a landlord's rent office desk, hunched forward from the hips, his left glove planted flat on a fat open ledger, his right glove patting his waistcoat over an empty stomach. The mask, suit and grey fedora are exactly as in the attached reference image, the mask copied exactly from its close-up: knitted crimson wool, the white ring round the face, the small red triangle over his left eye, on the right side of the picture, the fedora sitting on top of the mask. Seated behind him, the landlord in sleeve garters and a green eyeshade keeps writing with a dip pen, unbothered. Along the panelled wall a queue of adult tenants in worn coats hold envelopes and stare blankly. Low angle from the desktop, 24mm, his masked head large and close in the right half of the frame. The only light is a green-shaded desk lamp low on the desk, the queue falling into shadow. The ledger's columns blur into soft grey lines. 35mm film. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

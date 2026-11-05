@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p16r6-b.jpg",
+ "made": "2026-11-05T12:06:11+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 6, rap to camera: all six, the ring of a smoky boxing gym, on \"Hungry people feed a revolution\"",
+ "prompt": "A frame from a feature film: all six masked robbers, PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, packed close together inside the canvas ring of a smoky 1920s boxing gym, all staring straight up into the lens mid-rap, five of them with a gloved fist thrust straight up overhead in perfect unison, BOTTLE's fist only halfway up, a beat late. Their masks and suits are exactly as in the attached reference image, the masks copied exactly from the close-ups: rib-knit wool over each whole head and neck, no holes, a large white wool ring round each face, one small rounded red felt triangle high over each man's LEFT eye, on the right of each face in the picture at two o'clock. Black leather gloves, no skin. High angle from above the top rope, 35mm, the group filling the frame so every mask reads large. Hard daylight shafts from tall windows behind, cutting through chalk dust and cigarette smoke; heavy bags and ropes fall to shadow. Shot on 35mm motion-picture film, fine grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

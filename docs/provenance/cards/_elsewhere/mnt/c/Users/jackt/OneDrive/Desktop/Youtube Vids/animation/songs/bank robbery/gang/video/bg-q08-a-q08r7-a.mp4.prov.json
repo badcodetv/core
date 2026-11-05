@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-q08-a-q08r7-a.mp4",
+ "made": "2026-11-05T15:08:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. Both men perform from the first half-second, sharp moves on the beat. The man on the left thrusts his flat palm at the lens twice, a hard stop sign, then wags one gloved finger side to side, then chops the palm down; his other glove keeps hold of the chrome microphone throughout. The man on the right keeps his hand cupped at his ear, leans further toward the brass horn, nods deeply on each beat and pops his shoulders. Behind the counter the shopkeeper keeps calmly winding the gramophone. Masks, hat, gloves and suits unchanged. SFX: gramophone crank, crackle, leather creak.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q08r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q08r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "q08-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:53:51.256Z"
+ }
+}

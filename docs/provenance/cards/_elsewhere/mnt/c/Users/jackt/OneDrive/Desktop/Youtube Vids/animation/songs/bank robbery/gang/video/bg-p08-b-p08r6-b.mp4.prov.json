@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-p08-b-p08r6-b.mp4",
+ "made": "2026-11-05T12:46:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off high camera, framing holds. The masked man lands from his jump within the first half second, knees bending deep, and keeps bouncing on the beat. On each landing his arms swing: both index fingers point left, then both point right, then both jab up at the lens. Next beat: arms flung wide again, shoulders bobbing, heels lifting. He stays on the same spot of cobbles. The two old men in the windows stay leaning out, sip their tea once, blank. Steam drifts. Suit and mask unchanged. SFX: shoe soles slap wet cobbles, cloth flaps, distant drip.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p08r6-b.jpg",
+ "why": "mv-gang r6 rap-to-camera clip, writer cw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/p08r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "p08-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T12:32:36.483Z"
+ }
+}

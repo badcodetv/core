@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q02r7-a.jpg",
+ "made": "2026-11-05T14:21:27+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Means of production, means of reduction\"",
+ "prompt": "A frame from a feature film: BOTTLE raps straight into the lens on a 1920s car assembly line, standing beside a bare steel car body on a wooden trolley, its wooden-spoke wheels not yet fitted. The mask and suit are exactly as in the attached reference image, the mask copied exactly from its close-up: knitted bottle-green wool, the white ring round the face, the small red triangle over his left eye, on the right side of the picture. His right glove rests flat on the car's raw bonnet; his left glove is held close to the lens, thumb and index finger pinched almost shut, a tiny gap between them, the other fingers curled. His head is tilted, deadpan. Behind him a worker in denim overalls and a cap tightens a bolt on the chassis and never looks up. Medium close, eye level, 28mm, the line of half-built bodies receding behind. One light: daylight shafts from high factory windows on the left through dust, the far end falling to dark. 35mm film grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

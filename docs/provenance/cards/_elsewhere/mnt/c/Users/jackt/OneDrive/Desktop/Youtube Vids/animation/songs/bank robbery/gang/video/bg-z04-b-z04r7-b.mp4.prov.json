@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z04-b-z04r7-b.mp4",
+ "made": "2026-11-05T15:23:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off tripod camera, the framing holds. One action only: a fourth bullet punches through the upper door panel, opening a new small hole; a hard shaft of daylight snaps through it into the dusty dark, and a short puff of pale wood splinters spits from the hole towards the lens and falls. The man flinches once, pressing flatter to the wall, gun kept upright, then stays still. Dust drifts slowly through the four light beams to the end. His knitted mask, hat and gloves stay exactly as they are; nothing new enters. SFX: one sharp wooden crack, splinters pattering, then a low room hum.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z04r7-b.jpg",
+ "why": "mv-gang r7 clip, writer cw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z04r7-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z04-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T15:09:53.290Z"
+ }
+}

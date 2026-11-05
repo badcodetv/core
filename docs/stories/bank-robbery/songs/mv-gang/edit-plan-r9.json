@@ -1,0 +1,1282 @@
+[
+ {
+  "start": 0.0,
+  "clip": "a02m-a",
+  "why": "action (y02 out: body attached to the car)",
+  "line": "",
+  "end": 4.063,
+  "dur": 4.063,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 4.063,
+  "clip": "x02-a",
+  "why": "your pick",
+  "line": "",
+  "end": 7.291,
+  "dur": 3.228,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 7.291,
+  "clip": "y03-a",
+  "why": "flurry",
+  "line": "",
+  "end": 7.941,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 7.941,
+  "clip": "y04-a",
+  "why": "flurry",
+  "line": "",
+  "end": 8.591,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 8.591,
+  "clip": "y05-a",
+  "why": "flurry",
+  "line": "",
+  "end": 9.218,
+  "dur": 0.627,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 9.218,
+  "clip": "z02y-b",
+  "why": "flurry",
+  "line": "",
+  "end": 9.868,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 9.868,
+  "clip": "z04-b",
+  "why": "action",
+  "line": "",
+  "end": 11.146,
+  "dur": 1.278,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 11.146,
+  "clip": "y06-a",
+  "why": "your pick",
+  "line": "",
+  "end": 13.723,
+  "dur": 2.577,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 13.723,
+  "clip": "z06y-b",
+  "why": "action",
+  "line": "",
+  "end": 15.0,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 15.0,
+  "clip": "k04m-a",
+  "why": "action",
+  "line": "",
+  "end": 16.3,
+  "dur": 1.3,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 16.3,
+  "clip": "k09m-a",
+  "why": "action",
+  "line": "",
+  "end": 17.601,
+  "dur": 1.301,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 17.601,
+  "clip": "k10-a",
+  "why": "action",
+  "line": "",
+  "end": 18.251,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 18.251,
+  "clip": "k12m-a",
+  "why": "action",
+  "line": "",
+  "end": 18.901,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 18.901,
+  "clip": "k13m-b",
+  "why": "action",
+  "line": "",
+  "end": 20.178,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 20.178,
+  "clip": "k16-a",
+  "why": "action",
+  "line": "",
+  "end": 22.105,
+  "dur": 1.927,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 22.105,
+  "clip": "q01-b",
+  "why": "rapping to camera on its line",
+  "line": "Let's see each day, make hay not free",
+  "end": 24.683,
+  "dur": 2.578,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 24.683,
+  "clip": "k19m-a",
+  "why": "action",
+  "line": "",
+  "end": 26.61,
+  "dur": 1.927,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 26.61,
+  "clip": "p02-a",
+  "why": "your pick: Grand Central, rapping to camera",
+  "line": "Earning that dough, but where does it go?",
+  "end": 29.211,
+  "dur": 2.601,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 29.211,
+  "clip": "z03-a",
+  "why": "your pick",
+  "line": "",
+  "end": 33.088,
+  "dur": 3.877,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 33.088,
+  "clip": "k21m-a",
+  "why": "action",
+  "line": "",
+  "end": 34.366,
+  "dur": 1.278,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 34.366,
+  "clip": "k23-a",
+  "why": "action",
+  "line": "",
+  "end": 35.666,
+  "dur": 1.3,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 35.666,
+  "clip": "v07m-b",
+  "why": "grandma freezing (your note)",
+  "line": "Quantitive easing, grandma freezing",
+  "end": 38.243,
+  "dur": 2.577,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 38.243,
+  "clip": "k27m-b",
+  "why": "action",
+  "line": "",
+  "end": 39.52,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 39.52,
+  "clip": "k29m-a",
+  "why": "action",
+  "line": "",
+  "end": 40.774,
+  "dur": 1.254,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 40.774,
+  "clip": "k30m-a",
+  "why": "action",
+  "line": "",
+  "end": 42.098,
+  "dur": 1.324,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 42.098,
+  "clip": "k31-b",
+  "why": "action",
+  "line": "",
+  "end": 43.398,
+  "dur": 1.3,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 43.398,
+  "clip": "x04-a",
+  "why": "your pick",
+  "line": "",
+  "end": 45.999,
+  "dur": 2.601,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 45.999,
+  "clip": "k36m-b",
+  "why": "action",
+  "line": "",
+  "end": 47.926,
+  "dur": 1.927,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 47.926,
+  "clip": "q04-a",
+  "why": "rapping to camera on its line",
+  "line": "It prints all the dollars that the government spends",
+  "end": 50.503,
+  "dur": 2.577,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 50.503,
+  "clip": "a01m-a",
+  "why": "action",
+  "line": "",
+  "end": 51.78,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 51.78,
+  "clip": "a02m-a",
+  "why": "action",
+  "line": "",
+  "end": 53.081,
+  "dur": 1.301,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 53.081,
+  "clip": "a03m-a",
+  "why": "action",
+  "line": "",
+  "end": 53.731,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 53.731,
+  "clip": "x06-a",
+  "why": "action",
+  "line": "",
+  "end": 54.381,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 54.381,
+  "clip": "x07m-b",
+  "why": "action",
+  "line": "",
+  "end": 55.658,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 55.658,
+  "clip": "d11-a",
+  "why": "action",
+  "line": "",
+  "end": 56.959,
+  "dur": 1.301,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 56.959,
+  "clip": "d12-b",
+  "why": "action",
+  "line": "",
+  "end": 58.236,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 58.236,
+  "clip": "p05-a",
+  "why": "rapping to camera on its line",
+  "line": "Have resistance to the facts I'm stating",
+  "end": 60.836,
+  "dur": 2.6,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 60.836,
+  "clip": "cn:rods3-b",
+  "why": "action",
+  "line": "",
+  "end": 62.113,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 62.113,
+  "clip": "cn:safe2-c",
+  "why": "flurry",
+  "line": "",
+  "end": 62.764,
+  "dur": 0.651,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 62.764,
+  "clip": "cn:chase1-a",
+  "why": "flurry",
+  "line": "",
+  "end": 63.414,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 63.414,
+  "clip": "cn:chase3-a",
+  "why": "flurry",
+  "line": "",
+  "end": 64.064,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 64.064,
+  "clip": "cn:safe4-b",
+  "why": "flurry",
+  "line": "",
+  "end": 64.714,
+  "dur": 0.65,
+  "in": 0.0,
+  "section": "flurry"
+ },
+ {
+  "start": 64.714,
+  "clip": "cn:rods4-a",
+  "why": "action",
+  "line": "",
+  "end": 65.991,
+  "dur": 1.277,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 65.991,
+  "clip": "cn:rods2-b",
+  "why": "action",
+  "line": "",
+  "end": 67.291,
+  "dur": 1.3,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 67.291,
+  "clip": "a03m-a",
+  "why": "action (y02 out: body attached to the car)",
+  "line": "",
+  "end": 68.569,
+  "dur": 1.278,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 68.569,
+  "clip": "y03-a",
+  "why": "action",
+  "line": "",
+  "end": 69.846,
+  "dur": 1.277,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 69.846,
+  "clip": "y04-a",
+  "why": "action",
+  "line": "",
+  "end": 71.146,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 71.146,
+  "clip": "y05-a",
+  "why": "action",
+  "line": "",
+  "end": 72.423,
+  "dur": 1.277,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 72.423,
+  "clip": "z02y-b",
+  "why": "action",
+  "line": "",
+  "end": 73.723,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 73.723,
+  "clip": "c02-a",
+  "why": "rapping to camera on its line",
+  "line": "call the police, it's a robbery",
+  "end": 76.324,
+  "dur": 2.601,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 76.324,
+  "clip": "z04-b",
+  "why": "action",
+  "line": "",
+  "end": 77.601,
+  "dur": 1.277,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 77.601,
+  "clip": "z06y-b",
+  "why": "action",
+  "line": "",
+  "end": 78.901,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 78.901,
+  "clip": "k01m-a",
+  "why": "action",
+  "line": "",
+  "end": 80.155,
+  "dur": 1.254,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 80.155,
+  "clip": "k04m-a",
+  "why": "action",
+  "line": "",
+  "end": 80.829,
+  "dur": 0.674,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 80.829,
+  "clip": "k09m-a",
+  "why": "action",
+  "line": "",
+  "end": 81.479,
+  "dur": 0.65,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 81.479,
+  "clip": "k10-a",
+  "why": "action",
+  "line": "",
+  "end": 82.779,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 82.779,
+  "clip": "k12m-a",
+  "why": "action",
+  "line": "",
+  "end": 84.033,
+  "dur": 1.254,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 84.033,
+  "clip": "q05-b",
+  "why": "rapping to camera on its line",
+  "line": "Distracted by a dyspraxic flash",
+  "end": 86.634,
+  "dur": 2.601,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 86.634,
+  "clip": "k13m-b",
+  "why": "action",
+  "line": "",
+  "end": 87.934,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 87.934,
+  "clip": "k22m-b",
+  "why": "your pick",
+  "line": "",
+  "end": 91.788,
+  "dur": 3.854,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 91.788,
+  "clip": "k16-a",
+  "why": "action",
+  "line": "",
+  "end": 93.089,
+  "dur": 1.301,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 93.089,
+  "clip": "k19m-a",
+  "why": "action",
+  "line": "",
+  "end": 94.366,
+  "dur": 1.277,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 94.366,
+  "clip": "d06m-a",
+  "why": "rapping to camera on its line",
+  "line": "institutional, dilutional, the usual",
+  "end": 96.99,
+  "dur": 2.624,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 96.99,
+  "clip": "k21m-a",
+  "why": "action",
+  "line": "",
+  "end": 98.244,
+  "dur": 1.254,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 98.244,
+  "clip": "k23-a",
+  "why": "action",
+  "line": "",
+  "end": 99.521,
+  "dur": 1.277,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 99.521,
+  "clip": "k27m-b",
+  "why": "action",
+  "line": "",
+  "end": 100.821,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 100.821,
+  "clip": "k29m-a",
+  "why": "action",
+  "line": "",
+  "end": 102.121,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 102.121,
+  "clip": "g08y-b",
+  "why": "rapping to camera on its line",
+  "line": "divide and conquer, just look at the hand",
+  "end": 104.676,
+  "dur": 2.555,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 104.676,
+  "clip": "y06-a",
+  "why": "your pick",
+  "line": "",
+  "end": 107.276,
+  "dur": 2.6,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 107.276,
+  "clip": "k30m-a",
+  "why": "action",
+  "line": "",
+  "end": 108.577,
+  "dur": 1.301,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 108.577,
+  "clip": "k31-b",
+  "why": "action",
+  "line": "",
+  "end": 110.504,
+  "dur": 1.927,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 110.504,
+  "clip": "d10-a",
+  "why": "the devil-horn shadow in the booth (your note)",
+  "line": "It is the devil with the radio station",
+  "end": 113.081,
+  "dur": 2.577,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 113.081,
+  "clip": "k36m-b",
+  "why": "action",
+  "line": "",
+  "end": 114.381,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 114.381,
+  "clip": "a01m-a",
+  "why": "action",
+  "line": "",
+  "end": 115.055,
+  "dur": 0.674,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 115.055,
+  "clip": "a02m-a",
+  "why": "action",
+  "line": "",
+  "end": 115.659,
+  "dur": 0.604,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 115.659,
+  "clip": "a03m-a",
+  "why": "action",
+  "line": "",
+  "end": 116.959,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 116.959,
+  "clip": "x06-a",
+  "why": "action",
+  "line": "",
+  "end": 118.236,
+  "dur": 1.277,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 118.236,
+  "clip": "x07m-b",
+  "why": "action",
+  "line": "",
+  "end": 120.186,
+  "dur": 1.95,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 120.186,
+  "clip": "q08-a",
+  "why": "rapping to camera on its line",
+  "line": "Biggie said, wait! / Rockin' 97",
+  "end": 122.741,
+  "dur": 2.555,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 122.741,
+  "clip": "d11-a",
+  "why": "action",
+  "line": "",
+  "end": 123.391,
+  "dur": 0.65,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 123.391,
+  "clip": "d12-b",
+  "why": "flurry",
+  "line": "",
+  "end": 124.041,
+  "dur": 0.65,
+  "in": 1.7,
+  "section": "flurry"
+ },
+ {
+  "start": 124.041,
+  "clip": "cn:rods3-b",
+  "why": "flurry",
+  "line": "",
+  "end": 124.691,
+  "dur": 0.65,
+  "in": 1.7,
+  "section": "flurry"
+ },
+ {
+  "start": 124.691,
+  "clip": "cn:safe2-c",
+  "why": "flurry",
+  "line": "",
+  "end": 125.341,
+  "dur": 0.65,
+  "in": 1.7,
+  "section": "flurry"
+ },
+ {
+  "start": 125.341,
+  "clip": "cn:chase1-a",
+  "why": "flurry",
+  "line": "",
+  "end": 125.991,
+  "dur": 0.65,
+  "in": 1.7,
+  "section": "flurry"
+ },
+ {
+  "start": 125.991,
+  "clip": "cn:chase3-a",
+  "why": "action",
+  "line": "",
+  "end": 127.942,
+  "dur": 1.951,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 127.942,
+  "clip": "c03g-b",
+  "why": "rapping to camera on its line",
+  "line": "debasement, it happened in da basement",
+  "end": 130.496,
+  "dur": 2.554,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 130.496,
+  "clip": "cn:safe4-b",
+  "why": "action",
+  "line": "",
+  "end": 131.796,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 131.796,
+  "clip": "cn:rods4-a",
+  "why": "action",
+  "line": "",
+  "end": 133.074,
+  "dur": 1.278,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 133.074,
+  "clip": "cn:rods2-b",
+  "why": "action",
+  "line": "",
+  "end": 134.374,
+  "dur": 1.3,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 134.374,
+  "clip": "x06-a",
+  "why": "action (y02 out: body attached to the car)",
+  "line": "",
+  "end": 135.651,
+  "dur": 1.277,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 135.651,
+  "clip": "p12-a",
+  "why": "rapping to camera on its line",
+  "line": "Call the police, it's a robbery",
+  "end": 138.252,
+  "dur": 2.601,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 138.252,
+  "clip": "y03-a",
+  "why": "action",
+  "line": "",
+  "end": 139.529,
+  "dur": 1.277,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 139.529,
+  "clip": "z03-a",
+  "why": "your pick",
+  "line": "",
+  "end": 142.106,
+  "dur": 2.577,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 142.106,
+  "clip": "y04-a",
+  "why": "action",
+  "line": "",
+  "end": 143.406,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 143.406,
+  "clip": "q09-a",
+  "why": "rapping to camera on its line",
+  "line": "You know the real star is Pablo Escobar",
+  "end": 145.984,
+  "dur": 2.578,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 145.984,
+  "clip": "x03m-b",
+  "why": "your pick",
+  "line": "",
+  "end": 148.561,
+  "dur": 2.577,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 148.561,
+  "clip": "x04-a",
+  "why": "your pick",
+  "line": "",
+  "end": 152.439,
+  "dur": 3.878,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 152.439,
+  "clip": "x02-a",
+  "why": "your pick",
+  "line": "",
+  "end": 155.016,
+  "dur": 2.577,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 155.016,
+  "clip": "y05-a",
+  "why": "action",
+  "line": "",
+  "end": 155.667,
+  "dur": 0.651,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 155.667,
+  "clip": "y06-a",
+  "why": "action",
+  "line": "",
+  "end": 156.944,
+  "dur": 1.277,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 156.944,
+  "clip": "z02y-b",
+  "why": "action",
+  "line": "",
+  "end": 158.244,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 158.244,
+  "clip": "z04-b",
+  "why": "action",
+  "line": "",
+  "end": 159.544,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 159.544,
+  "clip": "k22m-b",
+  "why": "your pick",
+  "line": "",
+  "end": 164.049,
+  "dur": 4.505,
+  "in": 0.305,
+  "section": "verse"
+ },
+ {
+  "start": 164.049,
+  "clip": "p15-a",
+  "why": "your pick: the dining car, rapping to camera",
+  "line": "Crime is asset inflation, passive creation",
+  "end": 166.65,
+  "dur": 2.601,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 166.65,
+  "clip": "z03-a",
+  "why": "action",
+  "line": "",
+  "end": 167.927,
+  "dur": 1.277,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 167.927,
+  "clip": "z06y-b",
+  "why": "action",
+  "line": "",
+  "end": 169.227,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 169.227,
+  "clip": "q12-b",
+  "why": "rapping to camera on its line",
+  "line": "So it's not very funny when you print more",
+  "end": 171.781,
+  "dur": 2.554,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 171.781,
+  "clip": "k01m-a",
+  "why": "action",
+  "line": "",
+  "end": 173.082,
+  "dur": 1.301,
+  "in": 1.7,
+  "section": "verse"
+ },
+ {
+  "start": 173.082,
+  "clip": "k04m-a",
+  "why": "action",
+  "line": "",
+  "end": 174.382,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 174.382,
+  "clip": "p16-a",
+  "why": "your pick: the gang in the boxing ring",
+  "line": "Hungry people feed a revolution",
+  "end": 178.26,
+  "dur": 3.878,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 178.26,
+  "clip": "k09m-a",
+  "why": "action",
+  "line": "",
+  "end": 180.883,
+  "dur": 2.623,
+  "in": 0.123,
+  "section": "verse"
+ },
+ {
+  "start": 180.883,
+  "clip": "k10-a",
+  "why": "action",
+  "line": "",
+  "end": 182.207,
+  "dur": 1.324,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 182.207,
+  "clip": "v11x-a",
+  "why": "rapping to camera on its line",
+  "line": "don't just eat cake",
+  "end": 184.947,
+  "dur": 2.74,
+  "in": 0.0,
+  "section": "verse"
+ },
+ {
+  "start": 184.947,
+  "clip": "k12m-a",
+  "why": "action",
+  "line": "",
+  "end": 187.664,
+  "dur": 2.717,
+  "in": 0.217,
+  "section": "verse"
+ },
+ {
+  "start": 187.664,
+  "clip": "k13m-b",
+  "why": "flurry",
+  "line": "",
+  "end": 188.383,
+  "dur": 0.719,
+  "in": 3.4,
+  "section": "flurry"
+ },
+ {
+  "start": 188.383,
+  "clip": "k16-a",
+  "why": "flurry",
+  "line": "",
+  "end": 189.127,
+  "dur": 0.744,
+  "in": 3.4,
+  "section": "flurry"
+ },
+ {
+  "start": 189.127,
+  "clip": "k19m-a",
+  "why": "flurry",
+  "line": "",
+  "end": 189.87,
+  "dur": 0.743,
+  "in": 3.4,
+  "section": "flurry"
+ },
+ {
+  "start": 189.87,
+  "clip": "k21m-a",
+  "why": "flurry",
+  "line": "",
+  "end": 190.52,
+  "dur": 0.65,
+  "in": 3.4,
+  "section": "flurry"
+ },
+ {
+  "start": 190.52,
+  "clip": "k22m-b",
+  "why": "action",
+  "line": "",
+  "end": 191.82,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 191.82,
+  "clip": "k23-a",
+  "why": "action",
+  "line": "",
+  "end": 193.12,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 193.12,
+  "clip": "k27m-b",
+  "why": "action",
+  "line": "",
+  "end": 194.397,
+  "dur": 1.277,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 194.397,
+  "clip": "k29m-a",
+  "why": "action",
+  "line": "",
+  "end": 195.048,
+  "dur": 0.651,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 195.048,
+  "clip": "k30m-a",
+  "why": "action",
+  "line": "",
+  "end": 195.698,
+  "dur": 0.65,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 195.698,
+  "clip": "k31-b",
+  "why": "action",
+  "line": "",
+  "end": 196.975,
+  "dur": 1.277,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 196.975,
+  "clip": "k36m-b",
+  "why": "action",
+  "line": "",
+  "end": 198.275,
+  "dur": 1.3,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 198.275,
+  "clip": "a01m-a",
+  "why": "action",
+  "line": "",
+  "end": 199.576,
+  "dur": 1.301,
+  "in": 3.4,
+  "section": "verse"
+ },
+ {
+  "start": 199.576,
+  "clip": "x03m-b",
+  "why": "your pick",
+  "line": "",
+  "end": 205.0,
+  "dur": 5.424,
+  "in": 0.272,
+  "section": "verse"
+ },
+ {
+  "start": 205.0,
+  "end": 209.6,
+  "clip": "k01m-a",
+  "why": "the walk away from the explosion, held to the end",
+  "line": "Robbery! (outro)",
+  "dur": 4.6,
+  "in": 0.8,
+  "section": "verse"
+ }
+]

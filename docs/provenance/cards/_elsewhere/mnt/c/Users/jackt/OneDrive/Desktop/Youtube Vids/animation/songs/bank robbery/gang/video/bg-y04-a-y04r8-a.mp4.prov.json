@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-y04-a-y04r8-a.mp4",
+ "made": "2026-11-05T16:37:03+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, tripod-stable, no zoom, pan or tilt; one continuous shot. The man stands still in the window frame of the fallen house front. At once his gloved hand brushes the dust off his lapel in two firm strokes, then he squares his shoulders, tugs his jacket straight with one hand and sets his feet, the carpet bag held steady at his side. A last puff of plaster dust settles round his boots. His head stays square to the lens throughout; his knitted mask does not change. Sound: settling timber creaks, a cloth brush, a distant dog.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y04r8-a.jpg",
+ "why": "mv-gang r8 mask fix, writer cy2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y04r8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "y04-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:23:50.959Z"
+ }
+}

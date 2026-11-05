@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q11r7-b.jpg",
+ "made": "2026-11-05T14:21:33+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Own a printer and you don't feel winter\"",
+ "prompt": "A frame from a 1920s period feature film: SILVER, the tall masked robber, stands by a coal brazier on a snowy city street at dusk, rapping straight into the lens, caught at the peak of throwing his jacket open. His mask and oxblood-red suit with bow tie are exactly as in the attached reference image, the mask copied exactly from its close-up: white wool ring round the face, the small red felt triangle over his LEFT eye, so on the right side of the picture. Each black-gloved hand holds one lapel wide, showing the lining stuffed with bundles of plain green paper notes, their printing too small to read. Beside him a thin man in a flat cap and threadbare overcoat holds his bare hands to the coals and stares at him flatly. Low angle, 28mm, SILVER filling the left two-thirds of the 16:9 frame, mask large. The brazier's orange glow lights them from below; snow drifts through blue dusk, the brick tenements behind soft. Shot on 35mm film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

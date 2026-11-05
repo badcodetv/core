@@ -112,3 +112,49 @@ Jack: *"please come up with more parodied action scenes that fit this please res
 - Audit of 65 gang clips: 37 wrong (`cleanroom/r3/mask-audit.md`). New stills r5 (Nano Banana 2, reference `gang-lineup-heads.jpg`), each checked by eye at full size, up to 3 tries (`r3/mask-picks.json`). One Omni clip per passed still with the old motion (`<shot>m-<take>`, `r3/make_mask_jobs.py`).
 - Clip check (`r3/mask-clip-check.md`): 18 fixed, 8 better, 9 same fault (the triangle drifts to the middle in motion, or is lost on Crimson), 2 worse (d02, k31: old clips kept, KEEP_OLD in plan_r3.py).
 - Built: `edit-plan-r5.json`, `cut5/preview.mp4` (209.6 s, no black or frozen frames, same timing as cut 4, 114 of 214 shots now remakes). Premiere `Balaclava Gang 5`: song on A1, 214 cuts on V1, no gaps, A2 muted, saved. 35 clips imported into the bin "Balaclava Gang clips". Timeline page round 5 (same link). Awaiting Jack; open question: re-roll the 11 still-wrong clips or not.
+
+## 2026-11-05 · Round 6: rapping to camera (stills written, not yet run)
+- Jack: *"come up with stills of them rapping at the camera at cinematic cool prohabition era places, rapping like eminem does live in the early 200s, with how they gesture. please clean room it and research the internet"*; show them on the mood board once done. From the 5 Nov meeting (`docs/misc/2026-11-05-meeting.md`): replace repeated clips with more rapping to camera, the whole band, not overboard.
+- Most repeated in cut 5: c03 (8 times), k01/d01/c04 (6), most k clips (5).
+- Research (web only, sealed): `cleanroom/r6/research.md`. Caveat: no written source breaks Eminem's moves down; the 26 moves are graded WEAK (described from footage knowledge).
+- 16 shots (`cleanroom/r6/shots.py`): each on its own lyric line, in a different Prohibition place, 4 group shots; 4 sealed writers → `prompts-r6.json`; board rows in `moodboard.json` (round-7 rows kept in `moodboard-r7.json`), beat `rap` added to scene.json.
+- Same-prompt check: no identical or near copies of 1,956 past prompts; only the mask sentence repeats, on purpose.
+- Not run: the Flow browser had been launched from inside Claude's command sandbox, where Chromium renders nothing (even `data:` pages hang). Needs a launch outside it: `./scripts/flow-chrome.sh`. Then: `ROUND=-r6 PER_PROJECT=1 REF=$HOME/.cache/badcode-refs/gang/gang-lineup-heads.jpg npx tsx docs/stories/bank-robbery/songs/mv-gang/cleanroom/run_stills.mts`, then rebuild and republish the mood board.
+- **Run (later the same day):** Flow worked once the flow MCP launched its own browser (outside the sandbox). Nano Banana 2, line-up-heads reference, one prompt per project: 32 stills, all made (p10 timed out once, then passed). Recipe cards written by the runner.
+- By eye on a contact sheet: masks hold on the solo shots (white ring, triangle on the picture's right). Faults: p11-a MARINE in a dark suit (b is right, cream linen); p07's mechanic on the floor reads like a body; CRIMSON's triangle hard to see (p02, p09); masks small in the group shots (p05, p06, p12, p16); thin black bars at the edges on some.
+- Mood board republished, same link (version 8): https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF. Waiting on Jack's picks; dump them to `feedback/moodboard-r8/`.
+
+## 2026-11-05 · Cut 6 (`Balaclava Gang 6`)
+- Jack's picks (`feedback/moodboard-r8/`): p01 a, p02 a, p03 b, p04 b, p05 a, p06 b, p07 b, p08 b, p10 b, p11 b, p12 a, p13 a, p15 a, p16 a (not p09, p14). "uxp is open."
+- Clips: 4 sealed clip writers (`r6/make_clip_briefs.py` → `brief-clip-cwN.md` → `clip-cwN.md`, `r6/parse_clips.py` → `r6/clips.json`, `video-jobs.json`); research = `r6/research.md` §1 and §4 + `research-clips.md` §1–3. Same-prompt check: p02 and p13 near round 3's gesture clips on the shared locked-camera and mask wording, kept. Omni via `scripts/scene/run.mts`: **12 made**. p07-b and p13-a stalled every wave (5), no clip. By eye on first/middle/last frames: masks, suits and people hold, nothing morphs.
+- Plan `r6/plan_r6.py` → `edit-plan-r6.json`: cut 5's 214 cut points kept; each rap clip on its own line, then in place of the extra uses of the most repeated clips, never two rap clips next to each other (a first version bunched 15 in a row in chorus 2, so re-planned). 35 rap cuts; most used clip now 5 times (was 8, c03).
+- Built: `cut6/preview.mp4` (209.6 s, no black frames). Premiere: `Balaclava Gang 6` = clone of `Balaclava Gang 5` with the 35 rap cuts overwritten on V1/A2 (35 bg-p clips on V1, 214 items, no gaps), 12 clips imported to "Balaclava Gang clips", saved. A1 (song) muted in both 5 and 6, as found. Timeline page round 6, same link. Awaiting Jack.
+
+## 2026-11-05 · Round 7: Jack's cut-6 notes (fixes, longer holds, more rap to camera)
+- Jack verbatim + his 10 timeline notes, each with its shot: `cleanroom/r7/jack.md` (dump `feedback/timeline-r6/`; at126, at884, at1459 there are the old round-1 notes).
+- Research (web only, sealed): `cleanroom/r7/research.md`: pacing (ASL 2.3–3 s, ~70–90 cuts, 3–4 flurries, each followed by a held shot), 35–40 % performance, Veo-family fixes (mask drift, the spin, scale, destruction), gestures for the noted lines. Rap-specific numbers are graded WEAK (none published).
+- Stills: 7 fixes **z01–z07** (named z because f01–f09 are already verse-5 shots) and 12 new rap shots **q01–q12** (`r7/shots.py`, 5 sealed writers, `prompts-r7.json`). Same-prompt check: none identical; near matches only on the shared mask sentence. 38 stills, all made, cards written. Round-6 board rows kept in `moodboard-r8.json`.
+- By eye: z04 is the door from inside with light through bullet holes; z05 one split barrel; z06 the safe on a sack truck; z07 MARINE at normal scale. Faults: q08 reversed shop-window lettering; z01 b barely shows the driver; q04 newspapers may print text.
+- Clip-only fixes v05x-a (no spin) and v11x-a (cake mime) from their r5 stills: `r7/brief-clip-fx.md` → `clip-fx.md` → `clips-fx.json`, running.
+- Planner `r7/plan_r7.py` (→ `edit-plan-r7.json`) written; dry run on cut-6 material: 81 cuts, 2.6 s average. Builds after Jack's picks.
+- Mood board version 9, same link. Waiting on Jack's picks.
+- **Picks** (`feedback/moodboard-r9/`): z01 b, z02 a, z03 a, z04 b, z05 a, z06 b, z07 a; q01 b, q02 a, q04 a, q05 b, q07 b, q08 a, q09 a, q11 a, q12 b (not q03, q06, q10). 4 sealed clip writers (`r7/make_clip_briefs.py` → `clip-cwN.md` → `r7/clips.json`), no repeats. 16 clips made, plus v05x-a and v11x-a. By eye: all hold; z06's safe may change shape mid-clip.
+- **Cut 7 (`Balaclava Gang 7`)**: `r7/plan_r7.py` → `edit-plan-r7.json`: 76 cuts, 2.8 s average, 3 flurries (0:07, 1:20, 3:07), rap to camera ~42 % of screen time (a little over the 35–40 % research guide), never two rap shots in a row in verses/hooks; fixes near their noted times; rejected clips excluded. `cut7/preview.mp4` 209.6 s, no black. Premiere: clone of Gang 6, all 76 cuts overwritten (76 on V1, no gaps), saved. Timeline page round 7 (same link) with a reply on every note. Awaiting Jack.
+
+## 2026-11-05 · Round 8: Jack's cut-7 notes → Cut 8 (`Balaclava Gang 8`)
+
+- **Notes:** 12 × "fix the mask", z01 "ai slop", pov2 "only play it once"; plus "add back more action, rapping alongside action, hold as long as you have been, beat cuts only at big drops". Jack chose to stay on Omni (not Veo 3.1).
+- **Research:** `cleanroom/r8/research.md` (clean room: masks, the action/rap mix, beat cuts at drops).
+- **Mask fixes:** wide shots remade from closer stills, y01-b, y02-a, y03-a, y04-a, y05-a, y06-a (all six checked by eye; y05/y06 triangles faint). Performers re-shot with a steady head: z02y-b, p03y-b (in at 2.6 s), z06y-b, g08y-b, v05y-a (in at 2.4 s). q07 and z01 dropped.
+- **Cut:** `cleanroom/r8/plan_r8.py` → `edit-plan-r8.json` → `gang/cut8/`. 79 cuts, 2.65 s average, rap 33 %, flurries at 0:07, 1:02, 2:03, 3:07 only. 209.6 s, no black.
+- **Premiere:** `Balaclava Gang 8` (clone of 7, all 79 overwritten, no gaps, saved).
+- **Page:** https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1 versions 11–12; replies on every note in `cut-notes.json`. Awaiting Jack.
+
+## 2026-11-05 · Round 9: Jack's cut-8 notes → Cut 9 (`Balaclava Gang 9`)
+
+- **Asked (chat):** "make more cuts and maybe have the clips halfed in time, let some run longer than the others, lots of action shots and sprinkled in rapping gesturing to the camera shots", plus use the clips he screenshotted. Matched by eye against a contact sheet: p16-a (boxing ring), y06-a (balloon, the fixed one), p15-a (dining car), k22m-b (elevated train), x04-a (train roof), x03m-b (snow), x02-a (salt flats), p02-a (Grand Central), z03-a (the fixed plane).
+- **Page notes:** at5 y01 green mask shows the eye → y01 out (a reference-image remake is offered, not made); at922 grandma freezing → v07m-b on the line; at2688 devil with the radio station → d10-a (devil-horn shadow in the booth).
+- **Cut:** `cleanroom/r9/plan_r9.py` → `edit-plan-r9.json` → `gang/cut9/`. 128 cuts; action ~1.6 s average (mostly 2 beats, holds of 4-6), rap 20 %, never two rap shots together; flurries at the four drops. 209.6 s, no black.
+- **Premiere:** `Balaclava Gang 9` (clone of 8, all 128 overwritten, no gaps, saved).
+- **Page:** https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1 versions 13-14. Awaiting Jack.
+- **Fix (chat, same evening):** "remove the first clip and put something else there, his body looks attached to the car" → y02-a (the burnout) out at all three uses: 0:00 a02m-a (the gang storming the bank), 1:07 a03m-a, 2:14 x06-a. Premiere and page (versions 15-16) updated. Also fixed `assemble_cut.py`: it reused a cached part by row number even when the row's clip changed (cut 8's page showed the old clip at the three spots changed late); parts now carry a `.src` tag and rebuild when it differs.

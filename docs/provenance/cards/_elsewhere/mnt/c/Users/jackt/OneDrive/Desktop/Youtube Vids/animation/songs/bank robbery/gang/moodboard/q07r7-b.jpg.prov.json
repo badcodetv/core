@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q07r7-b.jpg",
+ "made": "2026-11-05T14:21:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Stack up the vaults like a wheelbarrow\"",
+ "prompt": "A frame from a 1920s period feature film: all six robbers, PLUM, BOTTLE, CRIMSON, MARINE, RUST and SILVER, rap straight into the lens inside a steel bank vault lined with brass safe-deposit boxes, each man gripping the handles of a wooden wheelbarrow heaped with banded banknotes. Their masks and suits are exactly as in the attached reference image, the masks copied exactly from its close-ups: hand-knitted rib wool over the whole head and neck, no holes, a large white wool ring round each face, one small rounded red felt triangle high over each man's LEFT eye, on the RIGHT of the picture. Black leather gloves, collars up, no skin. CRIMSON, in his grey fedora, stands closest, frozen mid-chop, his right glove flat and edge-down striking his heap of notes. Behind him, in two staggered rows, five men lift their barrow handles together to the same height, except BOTTLE, still halfway. In the corner an elderly clerk in sleeve garters works an adding machine, never looking up. One caged bulb hangs overhead; the corners fall to black. Waist-up, 24mm, chest height, 35mm film grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

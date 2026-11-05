@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y06r8-b.jpg",
+ "made": "2026-11-05T16:05:09+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 8: closer remake for Jack's mask/slop note, Crime is asset inflation, passive creation",
+ "prompt": "A frame from a 1920s feature film: PLUM and BOTTLE lean side by side over the wicker rim of a gas-balloon basket high above a sunlit sea of white cloud, tipping a canvas sack between them so loose banknotes pour out over the edge and flutter away below. The masks and suits are exactly as in the attached reference image, each mask copied exactly from its close-up: PLUM in plum and BOTTLE in bottle-green knitted rib wool over the whole head, no holes, a large white ring round each face, one small red felt triangle high over each man's LEFT eye, on the right side of the picture. Black leather gloves, collars up. The camera hangs just outside the basket at rim height a metre and a half away, 35mm, both masked heads large and facing the lens; the rigging ropes and the curve of the striped envelope rise behind them. Hard high sun from the upper left, plain green-grey notes with blank faces. 35mm film, fine grain. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9"
+ }
+}

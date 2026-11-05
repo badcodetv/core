@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z01r7-a.jpg",
+ "made": "2026-11-05T14:21:24+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (fix), on \"intro (instrumental)\"",
+ "prompt": "A frame from a feature film set in 1920s Chicago: a black 1920s sedan bursts nose-first out of the open loading doors of a soot-stained red-brick warehouse into a cobbled side street at dusk, the front wheels just over the threshold, a cloud of straw and sawdust rolling out behind it. The camera sits low on the cobbles a few metres ahead of the car, 50mm lens, and the flat glass windscreen fills the middle of the frame, so RUST at the wheel and PLUM beside him are large and sharp, both facing the lens. The masks and suits are exactly as in the attached reference image, the masks copied exactly from the close-ups: on each man the small red triangle sits over his left eye, on the right side of the picture. Both men wear black leather gloves, RUST's hands at ten and two on the wheel. The only light is the warehouse's single bare bulb behind them and the last amber sky, with deep shadow inside the cab. Shot on 35mm motion-picture film, fine grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

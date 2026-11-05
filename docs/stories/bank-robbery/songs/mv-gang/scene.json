@@ -1,168 +1,232 @@
 {
- "story": "bank-robbery",
- "scene": "mv-gang",
- "prefix": "bg",
- "title": "Balaclava Gang: Action",
- "heading": "The Bank Robbery music video: the balaclava gang",
- "moodboard_intro": "ROUND 3c, GESTURES: twelve sarcastic stage-rapper moves (g01 to g12), two takes each, from three sealed writers using only web research. Each is caught at the peak of the move on its line: the chop in the vault, the empty-drawer shrug, counting off in the idle factory, the mock bow in the boardroom, and so on. Tap This, Maybe or No; leave a note on any. Faults I saw: g09 shows a readable GIN crate; g03's triangle sits near the centre of the mask; g04's masks are small in frame.",
- "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang",
- "song": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/the version.wav",
- "beats": [
-  {
-   "key": "intro",
-   "name": "Intro",
-   "at": "0:00–0:20",
-   "blurb": "The gang walks in; the doors burst; the getaway skids."
+  "story": "bank-robbery",
+  "scene": "mv-gang",
+  "prefix": "bg",
+  "title": "Balaclava Gang: Action",
+  "heading": "The Bank Robbery music video: the balaclava gang",
+  "moodboard_intro": "ROUND 7, from your cut-6 notes. FIXES (z01–z07): new versions of the shots you rejected: the getaway driver (z01), two in the car (z02), the plane (z03, framed close so the mask reads), the door shot from inside with light punching through bullet holes (z04), one split barrel spilling whiskey (z05), the safe wheeled out on a sack truck (z06), MARINE in the alley at normal size (z07). RAP TO CAMERA (q01–q12): twelve new rap shots in new places for a better mix through the song. Two takes each; tap This on the takes to animate. Faults I saw: q08's shop window prints back-to-front lettering; z01 b barely shows the driver; q04's newspapers may print text. v05 (no spin) and v11 (the cake mime) are being re-animated from their old stills, no pick needed.",
+  "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang",
+  "song": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/the version.wav",
+  "beats": [
+    {
+      "key": "intro",
+      "name": "Intro",
+      "at": "0:00–0:20",
+      "blurb": "The gang walks in; the doors burst; the getaway skids."
+    },
+    {
+      "key": "verse1",
+      "name": "Verse 1",
+      "at": "0:20–0:41",
+      "blurb": "Money from a tree, make hay, where does it go, grandma freezing, stimulus checks."
+    },
+    {
+      "key": "verse2",
+      "name": "Verse 2",
+      "at": "0:41–1:02",
+      "blurb": "Rent seeking, the meeting, the Fed, the printer, fiat debt."
+    },
+    {
+      "key": "chorus",
+      "name": "Chorus",
+      "at": "1:02–1:23 (and 2:04, 2:24)",
+      "blurb": "Robbery! Call the police! Debasement in the basement, the printer burning."
+    },
+    {
+      "key": "verse3",
+      "name": "Verse 3",
+      "at": "1:23–1:44",
+      "blurb": "Elastic cash, the flash, the angry mob, blame, dilution, distraction, the hand."
+    },
+    {
+      "key": "verse4",
+      "name": "Verse 4",
+      "at": "1:44–2:04",
+      "blurb": "The devil's radio station, vaults like a wheelbarrow, the narrow ledge, your own supply."
+    },
+    {
+      "key": "break",
+      "name": "Break",
+      "at": "2:24–2:35",
+      "blurb": "Elastic bands, the working man."
+    },
+    {
+      "key": "verse5",
+      "name": "Verse 5",
+      "at": "2:35–3:07",
+      "blurb": "The scam, bail out, winter, inflation, print more, revolution, give, cake."
+    },
+    {
+      "key": "action",
+      "name": "Action",
+      "at": "anywhere",
+      "blurb": "Hot rods, Tommy guns, chases, rum-runners, raids: Jack's 'more cool action'."
+    },
+    {
+      "key": "gestures",
+      "at": "through",
+      "name": "Sarcastic stage-rap gestures",
+      "blurb": "Big stage-rapper moves (chop, shrug, counting off, hand on heart, the spin), caught at the peak and done sarcastically, each on its line."
+    },
+    {
+      "key": "rap",
+      "name": "Rapping to camera",
+      "at": "across the song",
+      "blurb": "Round 6: the gang raps straight into the lens in sixteen Prohibition places, each on its own lyric line, with big early-2000s stage moves."
+    },
+    {
+      "key": "fixes",
+      "name": "Fixes from your cut-6 notes",
+      "at": "across the song",
+      "blurb": "New versions of the shots you rejected: the getaway driver, two in the car, the plane, the door, the barrels, the safe, MARINE in the alley."
+    }
+  ],
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
+    "timeline": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1"
   },
-  {
-   "key": "verse1",
-   "name": "Verse 1",
-   "at": "0:20–0:41",
-   "blurb": "Money from a tree, make hay, where does it go, grandma freezing, stimulus checks."
+  "existing": {
+    "intro": [
+      [
+        "cn-mask1-b",
+        "The jeweller's-shop gang from Colour Noir",
+        "../noir/moodboard/r2-mask1-3/00-b.jpg"
+      ],
+      [
+        "gang-lineup",
+        "The mask reference used for round 2",
+        "reference/lineup-a.jpg"
+      ]
+    ]
   },
-  {
-   "key": "verse2",
-   "name": "Verse 2",
-   "at": "0:41–1:02",
-   "blurb": "Rent seeking, the meeting, the Fed, the printer, fiat debt."
+  "flow_project": "9849e924-f5b1-411f-b0b7-49221714949a",
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames",
+    "duration": 6
   },
-  {
-   "key": "chorus",
-   "name": "Chorus",
-   "at": "1:02–1:23 (and 2:04, 2:24)",
-   "blurb": "Robbery! Call the police! Debasement in the basement, the printer burning."
+  "premiere": {
+    "current": "cut7",
+    "cut1": {
+      "sequence": "Balaclava Gang 1",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-03",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut/edl.json",
+      "how": "cleanroom/premiere_place.py evals from edit-plan.json",
+      "check": {
+        "state": "in sync",
+        "why": "page built from the same edit plan"
+      }
+    },
+    "cut2": {
+      "sequence": "Balaclava Gang 2",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-03",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut2/edl.json",
+      "what": "Jack's timeline notes r1 + Colour Noir action back + cuts on the drum hits",
+      "how": "cleanroom/premiere_place.py --plan edit-plan-r2.json",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r2.json"
+      }
+    },
+    "cut3": {
+      "sequence": "Balaclava Gang 3",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-04",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut3/edl.json",
+      "what": "Jack's cut-3 brief: 214 beat cuts, 24 new action parodies, lyric shots kept",
+      "how": "cleanroom/r3/plan_r3.py + cleanroom/premiere_place.py --plan edit-plan-r3.json",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r3.json"
+      }
+    },
+    "cut4": {
+      "sequence": "Balaclava Gang 4",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-04",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut4/edl.json",
+      "what": "cut 3 + Jack's gesture picks g08-g12 + 12 rap clips redone with big sarcastic gestures",
+      "how": "cleanroom/r3/plan_r3.py r4 + cleanroom/premiere_place.py --plan edit-plan-r4.json",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r4.json"
+      }
+    },
+    "cut5": {
+      "sequence": "Balaclava Gang 5",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-04",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut5/edl.json",
+      "what": "cut 4 with the wrong-mask clips remade (35 swapped in; d02 and k31 kept as the remake was worse)",
+      "how": "cleanroom/r3/plan_r3.py r5 + cleanroom/premiere_place.py --plan edit-plan-r5.json",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r5.json"
+      }
+    },
+    "cut6": {
+      "sequence": "Balaclava Gang 6",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-05",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut6/edl.json",
+      "what": "cut 5 + 12 rap-to-camera clips (round 6) on their lines and in place of repeats, 35 cuts",
+      "how": "clone of Balaclava Gang 5 + cleanroom/r6/plan_r6.py + cleanroom/premiere_place.py --plan edit-plan-r6.json --only <p clips>",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r6.json"
+      }
+    },
+    "cut7": {
+      "sequence": "Balaclava Gang 7",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-05",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut7/edl.json",
+      "what": "Jack's cut-6 notes: 76 cuts held on the bar, 3 flurries, ~42 % rap to camera, all noted shots fixed (z01-z07, v05x, v11x), 9 new rap clips (q)",
+      "how": "clone of Balaclava Gang 6 + cleanroom/r7/plan_r7.py + cleanroom/premiere_place.py --plan edit-plan-r7.json (all 76 overwritten)",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r7.json"
+      }
+    },
+    "cut8": {
+      "sequence": "Balaclava Gang 8",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-05",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut8/edl.json",
+      "what": "Jack's cut-7 notes: 79 held cuts (2.65 s average), action first with rap to camera beside it (33 %), beat flurries only at the four drops, every noted mask fixed or the shot cut, pov2 once",
+      "how": "clone of Balaclava Gang 7 + cleanroom/r8/plan_r8.py + cleanroom/premiere_place.py --plan edit-plan-r8.json (all 79 overwritten)",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r8.json"
+      }
+    },
+    "cut9": {
+      "sequence": "Balaclava Gang 9",
+      "bin": "Balaclava Gang clips",
+      "built": "2026-11-05",
+      "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
+      "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut9/edl.json",
+      "what": "Jack's cut-8 notes: 128 cuts, action mostly half a bar (~1.3 s) with longer holds now and then, rap/gesture to camera sprinkled (20 %), his 9 screenshot picks in, grandma and devil lines illustrated, y01 out; y02 burnout removed at all 3 uses (Jack: body attached to the car), opens on a02m",
+      "how": "clone of Balaclava Gang 8 + cleanroom/r9/plan_r9.py + cleanroom/premiere_place.py --plan edit-plan-r9.json (all 128 overwritten)",
+      "check": {
+        "state": "in sync",
+        "why": "page and sequence built from edit-plan-r9.json"
+      }
+    }
   },
-  {
-   "key": "verse3",
-   "name": "Verse 3",
-   "at": "1:23–1:44",
-   "blurb": "Elastic cash, the flash, the angry mob, blame, dilution, distraction, the hand."
-  },
-  {
-   "key": "verse4",
-   "name": "Verse 4",
-   "at": "1:44–2:04",
-   "blurb": "The devil's radio station, vaults like a wheelbarrow, the narrow ledge, your own supply."
-  },
-  {
-   "key": "break",
-   "name": "Break",
-   "at": "2:24–2:35",
-   "blurb": "Elastic bands, the working man."
-  },
-  {
-   "key": "verse5",
-   "name": "Verse 5",
-   "at": "2:35–3:07",
-   "blurb": "The scam, bail out, winter, inflation, print more, revolution, give, cake."
-  },
-  {
-   "key": "action",
-   "name": "Action",
-   "at": "anywhere",
-   "blurb": "Hot rods, Tommy guns, chases, rum-runners, raids: Jack's 'more cool action'."
-  },
-  {
-   "key": "gestures",
-   "at": "through",
-   "name": "Sarcastic stage-rap gestures",
-   "blurb": "Big stage-rapper moves (chop, shrug, counting off, hand on heart, the spin), caught at the peak and done sarcastically, each on its line."
+  "cut": {
+    "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut9/edl.json",
+    "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut9/preview.mp4"
   }
- ],
- "boards": {
-  "moodboard": "https://claude.ai/artifact/5BjXvFxB36RYqijxRGGRQF",
-  "timeline": "https://claude.ai/artifact/8jVNcLhe45pFMDwXoodHH1"
- },
- "existing": {
-  "intro": [
-   [
-    "cn-mask1-b",
-    "The jeweller's-shop gang from Colour Noir",
-    "../noir/moodboard/r2-mask1-3/00-b.jpg"
-   ],
-   [
-    "gang-lineup",
-    "The mask reference used for round 2",
-    "reference/lineup-a.jpg"
-   ]
-  ]
- },
- "flow_project": "9849e924-f5b1-411f-b0b7-49221714949a",
- "video": {
-  "model": "Omni 1.1 Flash",
-  "aspect": "16:9",
-  "mode": "Frames",
-  "duration": 6
- },
- "premiere": {
-  "current": "cut2",
-  "cut1": {
-   "sequence": "Balaclava Gang 1",
-   "bin": "Balaclava Gang clips",
-   "built": "2026-11-03",
-   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
-   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut/edl.json",
-   "how": "cleanroom/premiere_place.py evals from edit-plan.json",
-   "check": {
-    "state": "in sync",
-    "why": "page built from the same edit plan"
-   }
-  },
-  "cut2": {
-   "sequence": "Balaclava Gang 2",
-   "bin": "Balaclava Gang clips",
-   "built": "2026-11-03",
-   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
-   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut2/edl.json",
-   "what": "Jack's timeline notes r1 + Colour Noir action back + cuts on the drum hits",
-   "how": "cleanroom/premiere_place.py --plan edit-plan-r2.json",
-   "check": {
-    "state": "in sync",
-    "why": "page and sequence built from edit-plan-r2.json"
-   }
-  },
-  "cut3": {
-   "sequence": "Balaclava Gang 3",
-   "bin": "Balaclava Gang clips",
-   "built": "2026-11-04",
-   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
-   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut3/edl.json",
-   "what": "Jack's cut-3 brief: 214 beat cuts, 24 new action parodies, lyric shots kept",
-   "how": "cleanroom/r3/plan_r3.py + cleanroom/premiere_place.py --plan edit-plan-r3.json",
-   "check": {
-    "state": "in sync",
-    "why": "page and sequence built from edit-plan-r3.json"
-   }
-  },
-  "cut4": {
-   "sequence": "Balaclava Gang 4",
-   "bin": "Balaclava Gang clips",
-   "built": "2026-11-04",
-   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
-   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut4/edl.json",
-   "what": "cut 3 + Jack's gesture picks g08-g12 + 12 rap clips redone with big sarcastic gestures",
-   "how": "cleanroom/r3/plan_r3.py r4 + cleanroom/premiere_place.py --plan edit-plan-r4.json",
-   "check": {
-    "state": "in sync",
-    "why": "page and sequence built from edit-plan-r4.json"
-   }
-  },
-  "cut5": {
-   "sequence": "Balaclava Gang 5",
-   "bin": "Balaclava Gang clips",
-   "built": "2026-11-04",
-   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/bank robbery.prproj",
-   "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut5/edl.json",
-   "what": "cut 4 with the wrong-mask clips remade (35 swapped in; d02 and k31 kept as the remake was worse)",
-   "how": "cleanroom/r3/plan_r3.py r5 + cleanroom/premiere_place.py --plan edit-plan-r5.json",
-   "check": {
-    "state": "in sync",
-    "why": "page and sequence built from edit-plan-r5.json"
-   }
-  }
- },
- "cut": {
-  "edl": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut5/edl.json",
-  "preview": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/cut5/preview.mp4"
- }
 }

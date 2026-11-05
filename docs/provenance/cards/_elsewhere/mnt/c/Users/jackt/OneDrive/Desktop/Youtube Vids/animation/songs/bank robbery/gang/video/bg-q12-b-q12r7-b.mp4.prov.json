@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-q12-b-q12r7-b.mp4",
+ "made": "2026-11-05T15:08:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first half-second all six wag their raised index fingers side to side in unison, on the beat, the fingers staying beside their heads, clear of the masks. The man at the back right lifts his finger late and joins in. On the fourth beat they all stop together, snap the finger down to point at the lens, then give one slow, sarcastic head shake. Feet stay planted; heads turn only slightly; masks, hat and suits stay exactly as they are. The deckhand keeps coiling rope, ignoring them. SFX: gulls, water lapping, a ferry engine thrum, creaking deck.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q12r7-b.jpg",
+ "why": "mv-gang r7 clip, writer cw4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q12r7-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "q12-b",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T14:55:10.115Z"
+ }
+}

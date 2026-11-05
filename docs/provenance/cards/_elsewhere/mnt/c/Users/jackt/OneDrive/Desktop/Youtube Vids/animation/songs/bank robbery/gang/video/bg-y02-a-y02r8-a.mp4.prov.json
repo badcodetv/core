@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-y02-a-y02r8-a.mp4",
+ "made": "2026-11-05T16:37:03+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked camera low at the wet kerb; no zoom, pan or tilt. The car is already sliding broadside, its rear wheel spinning in place and pouring thick white smoke that rolls left along the cobbles. The heavy car slides only a short way right, staying in frame, then the tyre grips and the body rocks once on its springs and settles. The man leaning from the window keeps the gun pointed straight up at the sky in both gloved hands and pumps it upward twice, head steady toward the lens. The driver stays at the wheel. Both masks stay exactly as they are: white ring, red triangle, no holes. Tyre screech, engine.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y02r8-a.jpg",
+ "why": "mv-gang r8 mask fix, writer cy1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y02r8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "y02-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:23:32.105Z"
+ }
+}

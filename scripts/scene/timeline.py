@@ -40,11 +40,24 @@ def build(data, preview, out):
     media.mkdir(parents=True, exist_ok=True)
     proxy = media / 'cut.mp4'
     if not proxy.exists() or proxy.stat().st_mtime < preview.stat().st_mtime:
-        # ~300 kb/s keeps a 5-minute cut under the 15 MB file limit; longer cuts need a lower rate.
-        kbps = max(120, min(300, int(15e6 * 8 / 1000 / max(data['total'], 1)) - 90))
-        _ff('-i', preview, '-vf', 'scale=640:-2', '-c:v', 'libx264', '-preset', 'slow', '-b:v', f'{kbps}k',
+        # As sharp as the 15 MB file limit allows (14.5 MB target, 64 kb/s audio): a 3.5-minute cut gets ~480 kb/s at 960 wide;
+        # a long cut falls back to 640 wide. (Jack 2026-11-05: the 640 / 300 kb/s proxy was too blurry to judge a cut.)
+        kbps = max(120, min(1500, int(14.5e6 * 8 / 1000 / max(data['total'], 1)) - 74))
+        width = 1280 if kbps >= 900 else 960 if kbps >= 380 else 640
+        _ff('-i', preview, '-vf', f'scale={width}:-2', '-c:v', 'libx264', '-preset', 'slow', '-b:v', f'{kbps}k',
             '-maxrate', f'{int(kbps * 1.2)}k', '-bufsize', f'{kbps * 2}k', '-pix_fmt', 'yuv420p',
             '-c:a', 'aac', '-b:a', '64k', '-ac', '2', '-movflags', '+faststart', proxy)
+    # Full-quality copy (Jack 2026-11-05: "why is the video in such low quality"): one fragmented MP4 at 720p, cut into byte pieces
+    # under the 15 MB file limit; the page streams them back together with Media Source Extensions (cut.mp4 stays as the fallback).
+    hq = media / 'hq.mp4'
+    if not hq.exists() or hq.stat().st_mtime < preview.stat().st_mtime:
+        _ff('-i', preview, '-vf', 'scale=1280:-2', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-maxrate', '4000k', '-bufsize', '8000k',
+            '-profile:v', 'high', '-level', '4.0', '-pix_fmt', 'yuv420p', '-g', '48', '-c:a', 'aac', '-b:a', '128k', '-ac', '2',
+            '-movflags', 'frag_keyframe+empty_moov+default_base_moof', hq)
+        for old in media.glob('hq-*.mp4'): old.unlink()
+        blob, size = hq.read_bytes(), 14_000_000
+        for i in range(0, len(blob), size): (media / f'hq-{i // size:02d}.mp4').write_bytes(blob[i:i + size])
+    hq_parts = sorted(f'media/{p.name}' for p in media.glob('hq-*.mp4'))
     clips = []
     for k, c in enumerate(data['video']):
         th = media / f'c{k:02d}.jpg'
@@ -63,6 +76,7 @@ def build(data, preview, out):
     seq = data.get('sequence', 'rough cut')
     page = {'total': data['total'], 'fps': data.get('fps', 24), 'beats': beats, 'clips': clips, 'tracks': tracks,
             'flags': data.get('flags', []), 'sequence': seq,
+            'hq': {'parts': hq_parts, 'codec': 'video/mp4; codecs="avc1.640028, mp4a.40.2"'},
             'replies': data.get('replies', {}), 'plan': data.get('plan', []), 'round': data.get('round'),
             'heading': data.get('heading', seq),
             'intro': data.get('intro', f'The {seq} cut. Play it, click any beat, clip, line or sound, and leave a note '
@@ -71,4 +85,5 @@ def build(data, preview, out):
     html = html.replace('<title>Cut Timeline</title>', f"<title>{data.get('title', 'Cut Timeline')}</title>", 1)
     (out / 'index.html').write_text(html.replace('/*DATA*/null', json.dumps(page, ensure_ascii=False)))
     return {'beats': len(beats), 'clips': len(clips), 'tracks': len(tracks), 'events': len(data['events']),
-            'proxyMB': round(proxy.stat().st_size / 1e6, 1), 'files': sorted(f'media/{p.name}' for p in media.iterdir())}
+            'proxyMB': round(proxy.stat().st_size / 1e6, 1), 'hqMB': round(hq.stat().st_size / 1e6, 1),
+            'files': sorted(f'media/{p.name}' for p in media.iterdir() if p.name != 'hq.mp4')}

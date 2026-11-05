@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-z07-a-z07r7-a.mp4",
+ "made": "2026-11-05T15:25:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds. From the first instant the man in the middle bounces on the beat, knees flexing. On the first beat his open gloved hands rise and fall in turn like weighing scales, left up, right down, then swap; on the next he drops both shoulders hard; then a big slow shrug, palms up, head cocked a little. He repeats the scales, steady to the end, feet planted on the cobbles. The two men in the doorways keep leaning, barely moving. Masks, gloves and suits stay exactly as they are. SFX: cloth rustle, dripping water, distant city.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z07r7-a.jpg",
+ "why": "mv-gang r7 clip, writer cw3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/z07r7-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "z07-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T15:24:05.726Z"
+ }
+}

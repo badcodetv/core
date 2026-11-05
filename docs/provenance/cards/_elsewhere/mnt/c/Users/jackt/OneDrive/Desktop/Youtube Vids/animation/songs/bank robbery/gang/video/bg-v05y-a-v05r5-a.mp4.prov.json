@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-v05y-a-v05r5-a.mp4",
+ "made": "2026-11-05T16:08:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, no zoom, pan or tilt; one continuous shot. He stays planted in his crouch, facing the lens, head square, no spin. On the first beat his lower glove chops down through the air; on the next his raised thumb jabs back over his shoulder at the man on the lever; then both fists pump at chest height twice; then the chop again, harder. His knees bounce on every beat. Hands stay clear of his face. His mask stays exactly as in the first frame: white ring, one red triangle, no holes. The owner hauls the lever, the workers shrink back. Furnace roar, flywheels turning.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r5-a.jpg",
+ "why": "mv-gang r8 mask fix, writer pf",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/v05r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "v05y-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:05:46.866Z"
+ }
+}

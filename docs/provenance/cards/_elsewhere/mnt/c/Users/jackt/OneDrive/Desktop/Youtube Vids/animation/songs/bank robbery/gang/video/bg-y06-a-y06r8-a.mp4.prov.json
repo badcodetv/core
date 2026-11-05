@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/video/bg-y06-a-y06r8-a.mp4",
+ "made": "2026-11-05T16:39:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, tripod-stable, no zoom, pan or tilt; one continuous shot. The two men hold the canvas sack between them over the basket rim and give it two hard, shared shakes, so a thick stream of banknotes tumbles out and flutters away down towards the clouds. On the third beat they lift the empty sack and hold it out flat, deadpan, facing the lens. Their heads stay square to the camera and do not turn; both knitted masks stay exactly as they are. The ropes sway a little. Sound: wind, flapping paper, creaking wicker.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y06r8-a.jpg",
+ "why": "mv-gang r8 mask fix, writer cy2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/y06r8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/bank-robbery/songs/mv-gang",
+  "key": "y06-a",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 6,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-05T16:38:31.160Z"
+ }
+}

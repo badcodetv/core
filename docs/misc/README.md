@@ -6,6 +6,7 @@ if a theme accumulates, promote it to its own section.
 
 Current residents:
 
+- [`2026-11-05-meeting.md`](./2026-11-05-meeting.md) — Jack and Kai, 5 Nov 2026: balaclava MV works (more rapping to camera, fewer repeats), BadCode shorts format, GPOM re-cut notes (Maddie's simulation scene, faster speech, humans in the intro), no GPOM song, 7 videos to YouTube private
 - [`2026-10-15-meeting.md`](./2026-10-15-meeting.md) — Jack and Kai, 15 Oct 2026: narration not lip-sync, the protest as the distraction, Karen's cliffhanger, Tarquin's ayahuasca ending, GPOM simplified, the BadCode universe
 - [`2026-10-14-meeting.md`](./2026-10-14-meeting.md) — Jack and Kai, 14 Oct 2026: short-form only, the bank robbery short, the balaclava presenter
 - [`home-graph.md`](./home-graph.md) — homepage graph/structure notes

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/bank robbery/gang/moodboard/q08r7-b.jpg",
+ "made": "2026-11-05T14:21:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Bank Robbery MV round 7 (rap to camera), on \"Biggie said, wait! / Rockin' 97\"",
+ "prompt": "A frame from a 1920s period feature film: PLUM and CRIMSON rap straight into the lens inside a narrow radio-and-gramophone shop, its back wall stacked floor to ceiling with brass and painted-tin horn speakers and walnut cabinet radios. Their masks and suits are exactly as in the attached reference image, the masks copied exactly from its close-ups: hand-knitted rib wool over the whole head and neck, no holes, a large white wool ring round each face, one small rounded red felt triangle high over each man's LEFT eye, on the RIGHT of the picture. Black leather gloves, collars up, no skin. CRIMSON, grey fedora on his mask, stands close on the left, frozen mid-shout, his left glove thrust flat at the lens, palm out, fingers together, a stop sign; his right glove holds a heavy chrome microphone. PLUM, broad in a chalk-striped mustard suit, leans in on the right, one glove cupped behind his ear toward a big horn. Behind the counter the shopkeeper calmly winds a gramophone. Daylight falls through the shop window from the right; the shop sign beyond the glass is soft and unreadable. Waist-up, 28mm, eye level, 35mm film grain, 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "~/.cache/badcode-refs/gang/gang-lineup-heads.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}
