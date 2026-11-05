@@ -113,9 +113,10 @@ Edit the briefs. Then:
 ```bash
 git add docs/government/ministers
 git status --short          # must show only docs/government/ministers
-git -c user.name="BadCode Government" -c user.email=government@badcode.tv \
-  commit -m "Personnel <TODAY>: <which briefs, in a few words>"
-git push origin HEAD:government/rolling
+GIT_AUTHOR_NAME="BadCode Government" GIT_AUTHOR_EMAIL=government@badcode.tv \
+GIT_COMMITTER_NAME="BadCode Government" GIT_COMMITTER_EMAIL=government@badcode.tv \
+  git commit -m "Personnel <TODAY>: <which briefs, in a few words>"
+git push origin HEAD:refs/heads/government/rolling
 ```
 
 If the push is rejected because the branch moved: `git fetch origin`, `git rebase

@@ -130,6 +130,6 @@ on every id you need in full. The tools may appear prefixed (e.g. `mcp__bob__mem
 - Only the `cabinet` and the `cabinet-secretary` touch git, and only on **the one rolling PR**:
   branch `government/rolling`, label `government`. There is never more than one open government PR.
   Never open a second, never push to `main`, never force-push, never merge.
-- Commit as `git -c user.name="BadCode Government" -c user.email=government@badcode.tv commit …`.
+- Commit with the author set in the environment (Bob sets `GIT_AUTHOR_*` for every turn, which beats `git -c user.name`): `GIT_AUTHOR_NAME="BadCode Government" GIT_AUTHOR_EMAIL=government@badcode.tv GIT_COMMITTER_NAME="BadCode Government" GIT_COMMITTER_EMAIL=government@badcode.tv git commit …`. Push a worktree's detached HEAD with the full ref: `git push origin HEAD:refs/heads/government/rolling`.
 - **Nothing posts itself.** Statements are draft files; people post them.
 - The repository is public. Never write a secret, a token or anyone's private details into it.

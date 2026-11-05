@@ -77,7 +77,7 @@ gh pr list --repo badcodetv/core --label government --state open \
   minutes and in your final attention message.
 
 Work in `/project/work/$RUN` from here on. It is a detached HEAD; that is fine. You push with
-`git push origin HEAD:government/rolling`.
+`git push origin HEAD:refs/heads/government/rolling`.
 
 ## 3. Feedback from the last finished PR
 
@@ -231,9 +231,10 @@ Otherwise, in your worktree:
 ```bash
 git add docs/government/manifesto docs/government/statements
 git status --short          # must show only those two folders
-git -c user.name="BadCode Government" -c user.email=government@badcode.tv \
-  commit -m "Government <TODAY>: <who changed what, in a few words>"
-git push origin HEAD:government/rolling
+GIT_AUTHOR_NAME="BadCode Government" GIT_AUTHOR_EMAIL=government@badcode.tv \
+GIT_COMMITTER_NAME="BadCode Government" GIT_COMMITTER_EMAIL=government@badcode.tv \
+  git commit -m "Government <TODAY>: <who changed what, in a few words>"
+git push origin HEAD:refs/heads/government/rolling
 ```
 
 If the push is rejected because the branch moved (a reviewer pushed while you worked):
