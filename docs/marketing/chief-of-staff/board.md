@@ -6,13 +6,13 @@
 > repo (`/chief-of-staff`). Kai, 15 October 2026: "manage this in this repository and just as a final
 > step, publish it to the artifact simply as a way of me and Jack sharing it with each other."
 
-Updated 15 October 2026.
+Updated 5 November 2026.
 
 ## Do next
 
-1. **Jack: open the accounts.** YouTube, a Facebook Page, TikTok and Instagram, all with the same name and the triangle logo from `docs/brand/logo/`. *Why first: nothing can go out without them, and it's an hour's work.*
-2. **Jack: start the mailing list, "Transmissions"** (Kit or Substack). *Why: it's the one audience no platform can take away, and it costs nothing to open before there's anything to send.*
-3. **Claude: cut the Camping serial** (seven parts, already specced with in-points) and run the delivery check. Jack signs off the cuts. *Why: Camping is finished and has sound, so it's the fastest way from nothing published to something published.*
+1. **Jack: start the mailing list, "Transmissions"** (Kit or Substack). *Why: the accounts are open (YouTube, Facebook Page, TikTok, Instagram, SoundCloud, X), so the list is the last thing missing before posting, and it's the one audience no platform can take away.*
+2. **Kai: deploy badcode.tv** (the one-page map in `apps/site/`, built 22 October, not live). *Why: every short needs somewhere to point people, and it's finished.*
+3. **Claude: cut each first-release film into a serial of shorts** (GPOM, Camping, Karen, Bank Robbery, in that order; Camping's seven parts are already specced) and run the delivery check. Jack signs off the cuts. *Why: one film becomes 7 to 10 posts, and posting often is what gives a new account its chances.*
 
 ## Then
 
@@ -36,8 +36,8 @@ Updated 15 October 2026.
 
 Tell Claude your answer in the repo. A sentence is enough.
 
-- **Kai: what goes out first, while Money For Something isn't ready?** My recommendation: the Camping serial, one part at a time, while the balaclava pipeline gets built.
-- **Both: which name do the accounts use?** My recommendation: `badcode` everywhere, or one fallback used identically if it's taken.
+- **Both: do the songs go to SoundCloud and Spotify now?** The plan says "not now", but the 22 October first-release ruling says yes. My recommendation: yes. Spotify through a distributor that declares AI use (DistroKid); SoundCloud for the drum & bass scene only, because it won't distribute or pay out on Suno-made tracks.
+- **Jack: which logo o is official on the accounts?** Your red-disc variant is on every profile; the brand file still says the solid red o. My recommendation: Kai rules one, and the other gets swapped.
 - **Jack: is this plan right?** One goal, the next list, what we're not doing. No dates. Kai has said yes.
 
 ## Gone out

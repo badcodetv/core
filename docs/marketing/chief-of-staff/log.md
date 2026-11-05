@@ -3,6 +3,16 @@
 Every ruling and every weekly review, newest first. One entry per event, a few lines each.
 Format: `## YYYY-MM-DD — what` then who said what, in their words where possible.
 
+## 2026-11-05 — Board caught up with the 22 October first-release ruling; growth question
+
+Kai, 22 October (recorded in `docs/stories/gitpush-origin-master/ep1.md`): the first release is four
+stories in order, GPOM, Camping, Karen, The Bank Robbery, each a film and a song on YouTube, songs also on
+SoundCloud and Spotify. That answers the open "what goes out first" decision. The accounts are open
+(`docs/marketing/social-media-accounts.md`) and the handle fallback `badcode.tv` is in use, so those came
+off the board. Kai asked how to grow the channel once things are up; answered from `platform-playbooks.md`
+and `money-for-something-reach.md`, no new research. Plan §8 still says SoundCloud and Spotify "not now":
+now an open decision for both.
+
 ## 2026-10-19 — Kai: checked against other chief-of-staff prompts; three fixes applied
 
 Kai asked whether ours is the best chief-of-staff pattern going. Compared with loganhc's
