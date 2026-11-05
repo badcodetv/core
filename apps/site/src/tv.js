@@ -95,6 +95,7 @@
   function renderProg(gesture) {
     clearTimeout(govTimer); stopVideo();
     tv.classList.toggle('daylight', state.ch === 'government');
+    tv.classList.toggle('fp-on', state.ch === 'government' && state.p === 2); // the talk: broadcast, so scanlines back on
     const s = state;
     if (s.ch === 'stories') {
       const i = (s.p - 1) % S.length, st = S[i], song = s.p > S.length, vid = song ? st.songVideo : st.film;
