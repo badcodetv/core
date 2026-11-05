@@ -14,8 +14,9 @@ for the whole government: every worker, every minister's brief and every schedul
 folder, and a GitHub Action copies them into Bob on every merge. Nobody edits a prompt in Bob by
 hand. Design and reasoning: [`design/2026-11-05-badcode-government.md`](../../design/2026-11-05-badcode-government.md).
 
-**Nothing an agent writes reaches `main` without Kai or Jack merging it.** And a merged manifesto
-change does **not** change badcode.tv until someone runs `./stack site deploy`.
+**Nothing an agent writes reaches `main` without Kai or Jack merging it.** A merged manifesto change
+is **live on badcode.tv within minutes**: the `site-deploy` Action rebuilds and publishes the site on
+every push to main that touches `docs/government/manifesto/` (GOVT 1, `/government/<post>/`, teletext 401–410).
 
 ## The cabinet
 
@@ -161,8 +162,8 @@ merge on your say-so.
 `chief-of-staff`), then mark them `status: posted` with the `url:` (see
 [`statements/README.md`](./statements/README.md)).
 
-**Then deploy the site**, if the manifesto changed and you want badcode.tv to show it:
-`./stack site deploy`. Merging alone does not change the live site.
+**The site updates itself**: merging runs the `site-deploy` Action, and badcode.tv shows the new
+manifesto a few minutes later. To undo, revert the merge on GitHub (that redeploys too).
 
 ## How to change a minister
 

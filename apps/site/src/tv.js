@@ -16,6 +16,8 @@
   const clean = () => tv.classList.contains('clean') || RM;
   const wait = ms => new Promise(r => setTimeout(r, clean() ? 0 : ms));
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  // a manifesto body, escaped: "## x" becomes <h2>, other blank-line blocks <p> (same rule as build.mjs)
+  const bodyHtml = b => String(b).split(/\n\s*\n/).map(x => x.trim()).filter(Boolean).map(x => x.startsWith('## ') ? `<h2>${esc(x.slice(3))}</h2>` : `<p>${esc(x.replace(/\s*\n\s*/g, ' '))}</p>`).join('');
 
   const MARK_TRI = 'M13.38 -12.51A2.97 2.97 0 0 1 16.33 -8.29L12.77 -0.66A2.97 2.97 0 0 1 7.64 -0.21L2.82 -7.11A2.97 2.97 0 0 1 4.99 -11.77Z';
   const HOST = '<svg class="host" viewBox="0 0 100 120" role="img" aria-label="The BadCode host: a white balaclava with a red triangle eyepatch"><path d="M18 120 C18 80 22 62 50 62 C78 62 82 80 82 120Z" fill="#1d1c1b"/><ellipse cx="50" cy="40" rx="24" ry="30" fill="#f2f0ea"/><rect x="33" y="34" width="34" height="11" rx="5" fill="#2a2522"/><path d="M57 33 L68 36 L62 46 Z" fill="#cc2b37" stroke="#cc2b37" stroke-linejoin="round" stroke-width="2"/><circle cx="41" cy="39.5" r="2" fill="#ddd"/></svg>';
@@ -23,6 +25,8 @@
 
   const CH = ['stories', 'news', 'government', 'testcard'];
   const S = C.stories;
+  // the cabinet: every minister but the PM, whose line is the promise heading (docs/government/manifesto/)
+  const CAB = (C.government.manifesto || []).filter(m => m.post !== 'prime-minister');
   const count = { stories: S.length * 2, news: Math.max(1, C.news.bulletins.length), government: 2, testcard: 1 };
 
   // ---------- state + addresses ----------
@@ -34,6 +38,7 @@
     if ((m = path.match(/^\/text\/(\d{3})$/))) return { ch: 'stories', p: 1, text: +m[1] };
     if (path === '/future-proof') return { ch: 'government', p: 2, text: null };
     if (path === '/about') return { ch: 'testcard', p: 1, text: null };
+    if ((m = path.match(/^\/government\/([a-z-]+)$/)) && CAB.some(x => x.post === m[1])) return { ch: 'government', p: 1, text: null, minister: m[1] };
     for (const ch of ['stories', 'news', 'government']) {
       if (path === C.channels[ch].path) return { ch, p: 1, text: null };
       if ((m = path.match(new RegExp('^' + C.channels[ch].path + '/(\\d+)$')))) {
@@ -47,13 +52,14 @@
     // Pages serves dir/index.html, so every address ends in a slash (no redirect hop)
     if (s.text) return '/text/' + s.text + '/';
     if (s.ch === 'testcard') return '/about/';
+    if (s.ch === 'government' && s.p === 1 && s.minister) return '/government/' + s.minister + '/';
     return C.channels[s.ch].path + (s.p > 1 ? '/' + s.p : '') + '/';
   }
   function titleFor(s) {
     if (s.text) return `Page ${s.text} · BadCode Text`;
     if (s.ch === 'stories') { const st = S[(s.p - 1) % S.length]; return (s.p > S.length ? `${st.song} (song)` : st.title) + ' · BadCode'; }
     if (s.ch === 'news') return 'Money For Something · BadCode';
-    if (s.ch === 'government') return (s.p === 2 ? 'Future Proof' : 'The BadCode Government') + ' · BadCode';
+    if (s.ch === 'government') { const mm = s.p === 1 && s.minister && CAB.find(x => x.post === s.minister); return (s.p === 2 ? 'Future Proof' : mm ? mm.title + ' · The BadCode Government' : 'The BadCode Government') + (mm ? '' : ' · BadCode'); }
     return 'About · BadCode';
   }
   function commit(push) {
@@ -117,8 +123,12 @@
           <a class="fp-full" href="${esc(f.talk)}">Full screen</a></div>`;
       } else {
         const seen = store.get('bc-ppb');
-        prog.innerHTML = `<div class="p-gov">${bar}<div class="body"><p class="q">The manifesto</p><h1>${esc(g.promise)}</h1>
-          <ol>${g.pledges.map(t => `<li><b>${esc(t[0])}</b><span>${esc(t[1])}</span></li>`).join('')}</ol><p class="notreal">${esc(g.notReal)} Press 2 for Future Proof.</p></div><div class="haz"></div>
+        const mm = s.minister && CAB.find(x => x.post === s.minister);
+        const inner = mm
+          ? `<p class="q"><a class="back" href="/government/" data-cabinet>◀ The cabinet</a></p><h1>${esc(mm.title)}</h1><p class="lead"><b>${esc(mm.line)}</b></p><div class="mbody">${bodyHtml(mm.body)}</div>`
+          : `<p class="q">The manifesto</p><h1>${esc(g.promise)}</h1>
+          <ul class="cab">${CAB.map(x => `<li><a href="/government/${x.post}/" data-minister="${x.post}"><b>${esc(x.title)}</b><span>${esc(x.line)}</span></a></li>`).join('')}</ul>`;
+        prog.innerHTML = `<div class="p-gov">${bar}<div class="body">${inner}<p class="notreal">${esc(g.notReal)} Press 2 for Future Proof.</p></div><div class="haz"></div>
           <div class="ppb${seen || clean() ? ' gone' : ''}"><p>There now follows a party political broadcast on behalf of</p><b>The BadCode Government</b></div></div>`;
         if (!seen && !clean()) { store.set('bc-ppb', '1'); govTimer = setTimeout(() => { const p = $('.ppb', prog); if (p) p.classList.add('gone'); }, 2600); }
       }
@@ -126,6 +136,8 @@
       prog.innerHTML = `<div class="p-test"><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="disc">${HOST}</div><div class="cap">TEST CARD B · BADCODE · press TEXT for page 800, about BadCode</div></div>`;
     }
     const pb = $('[data-play]', prog); if (pb) pb.onclick = () => { const v = videoFor(state); if (v) play(v); };
+    $$('[data-minister]', prog).forEach(a => { a.onclick = e => { e.preventDefault(); state = { ch: 'government', p: 1, text: null, minister: a.dataset.minister }; render(false); commit(true); }; });
+    const cb = $('[data-cabinet]', prog); if (cb) cb.onclick = e => { e.preventDefault(); state = { ch: 'government', p: 1, text: null }; render(false); commit(true); };
   }
 
   // ---------- teletext ----------
@@ -149,11 +161,13 @@
         L('w', ' Each film works on its own. They also'), L('w', ' share one universe.'), '', L('g', ' Channel 1 for pictures: press STORIES')],
       300: () => [head(p), '', title('br w', 'MONEY FOR SOMETHING'), '', ...wrap(n.strap), '', L('y', ' ' + n.status), '', ...wrap(n.ticker[2]), '', L('m', ' "' + n.signoff.slice(0, 35)), L('m', '  ' + n.signoff.slice(35) + '"'), '', L('b', ' Working name.')],
       400: () => [head(p), '', title('by', 'THE BADCODE GOVERNMENT'), '', L('w', ' THE MANIFESTO'), '', ...g.pledges.flatMap((pl, i) => [L('y', ` PLEDGE ${i + 1}`) + L('w', ' ' + pl[0].slice(0, 28)), ...wrap(pl[1], 34, '   ').map(x => L('c', x)), '']),
-        `<span class="g"> ${esc(g.promise.slice(0, 33))} </span>${link(888, '888', 'g')}`, L('b', ' ' + g.notReal)],
+        `<span class="g"> ${esc(g.promise.slice(0, 33))} </span>${link(888, '888', 'g')}`, dots('The cabinet', 401)],
+      401: () => [head(p), '', title('by', 'THE CABINET'), '', ...CAB.map((x, i) => dots(x.title.slice(0, 30), 402 + i)), '', L('c', ' Each minister reads the news daily.'), L('c', ' The manifesto moves with it.'), `<span class="w"> Manifesto </span>${link(400, '400')}`],
       700: () => [head(p), '', title('bb y', 'FOLLOW BADCODE'), '', ...C.socials.map(s => s.url ? `<span class="w"> </span><a class="y" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(pad(s.name, 12))}</a><span class="g">open</span>` : `<span class="w"> ${esc(pad(s.name, 12))}</span><span class="b">soon</span>`)],
       800: () => [head(p), '', title('bb y', 'ABOUT BADCODE'), '', ...wrap(a.lede), L('r', ' ' + a.request), '', ...wrap(a.story), '', ...wrap(a.ai).map(x => L('c', x)), '', ...wrap(a.sign).map(x => L('m', x))],
       888: () => [`P888 SUBTITLES: WHAT WE MEANT ${stamp().slice(0, 10)}`, '', `<span class="dh">${esc(pad(' FUTURE PROOF', W))}</span>`, '', ...wrap(g.futureProof.question), '', ...g.futureProof.tenets.map((t, i) => ` ${i + 1} ${t[0]}`), '', ...wrap(g.futureProof.ask), '', ' Channel 3, programme 2, has the rest.', ' ' + '100 back to the index'],
     };
+    CAB.forEach((x, i) => { P[402 + i] = () => { const body = wrap(x.body.replace(/^## .*$/gm, '').replace(/\s+/g, ' '), 37).slice(0, 11); return [head(402 + i), '', title('by', x.title.toUpperCase().slice(0, 38)), '', ...wrap(x.line).map(l => L('y', l)), '', ...body.map(l => L('w', l)), '', L('c', ' MORE: badcode.tv/government'), `<span class="w"> The cabinet </span>${link(401, '401')}`]; }; });
     for (let i = 0; i < S.length; i++) {
       P[201 + i] = () => { const st = S[i]; return [head(201 + i), '', title('br w', st.title.toUpperCase().slice(0, 38)), '', ...wrap(st.blurb), '', L('y', ' Film: ') + L('w', st.film ? 'on YouTube now' : 'coming to YouTube'), L('y', ' Song: ') + L('w', st.song.slice(0, 31)), '', `<span class="w"> Picture: STORIES, then </span>${L('y', String(i + 1))}`, `<span class="w"> All stories </span>${link(200, '200')}`]; };
     }
@@ -215,7 +229,7 @@
     tune({ ch, p: 1 });
   }
   function step(d) {
-    if (state.text) { const order = [100, 200, ...S.map((_, i) => 201 + i), 300, 400, 700, 800, 888]; const i = order.indexOf(state.text); goText(order[(i + d + order.length) % order.length]); return; }
+    if (state.text) { const order = [100, 200, ...S.map((_, i) => 201 + i), 300, 400, 401, ...CAB.map((_, i) => 402 + i), 700, 800, 888]; const i = order.indexOf(state.text); goText(order[(i + d + order.length) % order.length]); return; }
     const n = count[state.ch]; tune({ ch: state.ch, p: ((state.p - 1 + d + n) % n) + 1 });
   }
   function chStep(d) { const i = CH.indexOf(state.ch); tune({ ch: CH[(i + d + CH.length) % CH.length], p: 1 }); }

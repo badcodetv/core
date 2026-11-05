@@ -107,6 +107,16 @@ button.pill{cursor:pointer;background:var(--cream);color:#111;border:0;font-weig
 .p-gov li{border-left:1.4cqmin solid #00703c;padding:.6cqmin 0 .6cqmin 2.6cqmin;counter-increment:p}
 .p-gov li b{display:block;font:800 clamp(16px,3.4cqmin,28px)/1.2 var(--gov-type)}
 .p-gov li b::before{content:"Pledge " counter(p) ". ";color:#00703c}
+.p-gov ul.cab li{border:0;padding:0}
+.p-gov ul.cab li b::before{content:none}
+.p-gov ul.cab{list-style:none;margin:4cqmin 0 0;padding:0;display:grid;gap:1.6cqmin}
+.p-gov ul.cab a{display:block;color:inherit;text-decoration:none;border-left:1.4cqmin solid #00703c;padding:.4cqmin 0 .4cqmin 2.6cqmin}
+.p-gov ul.cab a:hover b,.p-gov ul.cab a:focus-visible b{text-decoration:underline}
+.p-gov ul.cab b{display:block;font:800 clamp(14px,2.8cqmin,24px)/1.2 var(--gov-type)}
+.p-gov ul.cab span{display:block;font:clamp(14px,2.5cqmin,20px)/1.35 var(--gov-type);max-width:60ch}
+.p-gov a.back{color:#00703c;text-decoration:none;font-weight:700}
+.p-gov .mbody{max-width:62ch;font:clamp(15px,2.6cqmin,20px)/1.5 var(--gov-type)}
+.p-gov .mbody h2{font:800 clamp(16px,3cqmin,26px)/1.2 var(--gov-type);margin:3cqmin 0 1cqmin}
 .p-gov.fp li b::before{content:counter(p) ". "}
 .p-gov li span{display:block;font:clamp(14px,2.6cqmin,20px)/1.45 var(--gov-type);color:#383f43;max-width:56ch}
 .p-gov .q{margin:0 0 2cqmin;font:700 clamp(13px,2.4cqmin,18px) var(--gov-type);color:#505a5f}

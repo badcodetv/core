@@ -8,7 +8,9 @@
 #   ./stack site status      the last deployments Cloudflare holds
 #   ./stack site login       sign wrangler in to Cloudflare (browser), if no token is in .env
 #
-# Deploying is MANUAL on purpose (Kai, 2026-11-04): a git push never deploys anything.
+# Deploying was manual until 2026-11-05. Kai, 2026-11-05: a push to main that touches apps/site/** or
+# docs/government/manifesto/** now deploys through .github/workflows/site-deploy.yml (same build,
+# same pinned wrangler). This script still works for previews and hand deploys.
 # Rollback: Cloudflare dashboard → Workers & Pages → badcode-web → Deployments → "Rollback",
 # or check out an older commit and `./stack site deploy` again.
 #

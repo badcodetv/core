@@ -34,8 +34,8 @@
 #   ./stack check          typecheck + unit tests, repo-wide
 #
 #   ./stack site preview   build the website, upload a preview → <branch>.badcode-web.pages.dev
-#   ./stack site deploy    build the website, upload to production (www.badcode.tv). Manual only:
-#                          a push never deploys. More: scripts/site/deploy.sh
+#   ./stack site deploy    build the website, upload to production (www.badcode.tv). A push to main
+#                          that touches the site or the manifesto also deploys (site-deploy Action). More: scripts/site/deploy.sh
 #
 set -euo pipefail
 
