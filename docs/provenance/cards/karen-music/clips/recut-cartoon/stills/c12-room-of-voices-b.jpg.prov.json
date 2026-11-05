@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/stills/c12-room-of-voices-b.jpg",
+ "made": "2026-11-05T16:40:42.133Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Use the attached image as the style reference: match its palette, flatness, hard-edged light and matte painted texture exactly. Not photorealistic. Make a new picture with this content; do not copy the reference's composition.\n\nSTYLE LOCK — ILLUSTRATED REGISTER (keep identical every time):\n\nStyle: flat graphic illustration in a mid-century modern poster register, painted in matte gouache on board, with visible canvas tooth and fine even grain as though the finished board were photographed.\n\nPresent-day constraint: the drawing convention is mid-century, the depicted world is contemporary — modern clothing, modern vehicles, modern architecture and signage. Style only, never period.\n\nPalette: restrict to two families. Deep desaturated navy, slate-blue and near-black charcoal carry every unlit surface; warm amber, ochre and sodium-orange carry every lit surface. Permit one saturated accent colour and keep it rare.\n\nForm: reduce everything to flat geometric planes — rectangles, trapezoids, wedges. Architecture becomes plain extruded blocks; windows become punched rectangles of warm light; keep surface detail at the scale of large flat shapes.\n\nLight: one motivated source, emitted as hard-edged pools and shafts, with shadows falling as clean flat geometric wedges with crisp borders.\n\nFigures: elegant, slightly elongated, reading close to silhouette. Hair is a single flat mass; clothing is flat shapes; imply facial features with shadow and leave them undrawn.\n\nDepth: stack flat planes of stepped value so the layers read as separate cut-out cards.\n\nComposition: cinematic widescreen, strong central framing, generous negative space, hard scale contrast between a small figure and a large architectural mass.\n\nSurface: clean edges carrying a slight painterly imperfection; calm, graphic and still.\n\nKeep the frame free of lettering, signage copy, logos and watermarks.\n\nSCENE:\nSubject: Karen (fictional), a woman in her early fifties with one flat mass of shoulder-length auburn hair, in the foreground at a payphone, seen from behind, receiver at her ear, the cord stretched taut.\nAction: behind and beyond her stands a huge crowd of elongated silhouettes, each holding a telephone receiver at its side.\nEnvironment: a wide navy plaza at night.\nLighting: one hard-edged amber shaft falls on Karen from above; the crowd is lit by small pools of amber, one under each figure.\nDetails: Karen large in the left foreground, the crowd filling the middle distance to the frame edges; features undrawn.\nCompose for a 16:9 frame.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/karen-refs/8.jpeg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/karen-refs/8.jpeg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "700deda2-8471-46b4-ba02-7304942187b6"
+}

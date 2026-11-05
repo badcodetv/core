@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/stills/c10-searchlights-a.jpg",
+ "made": "2026-11-05T16:37:45.479Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Use the attached image as the style reference: match its palette, flatness, hard-edged light and matte painted texture exactly. Not photorealistic. Make a new picture with this content; do not copy the reference's composition.\n\nSTYLE LOCK — ILLUSTRATED REGISTER (keep identical every time):\n\nStyle: flat graphic illustration in a mid-century modern poster register, painted in matte gouache on board, with visible canvas tooth and fine even grain as though the finished board were photographed.\n\nPresent-day constraint: the drawing convention is mid-century, the depicted world is contemporary — modern clothing, modern vehicles, modern architecture and signage. Style only, never period.\n\nPalette: restrict to two families. Deep desaturated navy, slate-blue and near-black charcoal carry every unlit surface; warm amber, ochre and sodium-orange carry every lit surface. Permit one saturated accent colour and keep it rare.\n\nForm: reduce everything to flat geometric planes — rectangles, trapezoids, wedges. Architecture becomes plain extruded blocks; windows become punched rectangles of warm light; keep surface detail at the scale of large flat shapes.\n\nLight: one motivated source, emitted as hard-edged pools and shafts, with shadows falling as clean flat geometric wedges with crisp borders.\n\nFigures: elegant, slightly elongated, reading close to silhouette. Hair is a single flat mass; clothing is flat shapes; imply facial features with shadow and leave them undrawn.\n\nDepth: stack flat planes of stepped value so the layers read as separate cut-out cards.\n\nComposition: cinematic widescreen, strong central framing, generous negative space, hard scale contrast between a small figure and a large architectural mass.\n\nSurface: clean edges carrying a slight painterly imperfection; calm, graphic and still.\n\nKeep the frame free of lettering, signage copy, logos and watermarks.\n\nSCENE:\nSubject: the flat, monumental columned facade of a government building, seen straight on.\nAction: static; two searchlight beams cross in a tall X over the facade.\nEnvironment: a wide flight of steps in the foreground, a dark navy night sky above.\nLighting: the beams are hard-edged amber shafts; everything they do not touch stays deep navy.\nDetails: columns reduced to flat vertical bars; strong symmetry; no lettering on the pediment.\nCompose for a 16:9 frame.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/karen-refs/7.jpeg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/karen-refs/7.jpeg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e9783b03-9179-48fd-bee5-9270383d392d"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c08-hanging-receivers.mp4",
+ "made": "2026-11-05T16:59:04.622Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. In every booth the dangling receiver swings slowly back and forth on its cord, each one slightly out of step with the next; rain keeps falling. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "e5448faa-4915-4f5f-94cc-a28219018bc9"
+}

@@ -1,0 +1,32 @@
+[
+ {
+  "at": "2026-11-05T17:14:41+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Round 1 re-cut: 99 beat-snapped shots, cartoon choruses + break (11 hitchcock + 14 new c01-c14), photo verses from music + story projects",
+  "rebuild": "python3 scripts/karen/mv_recut.py r1 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline"
+ },
+ {
+  "at": "2026-11-05T17:37:17+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Round 2: verse shots start on the strong beat of each sung line; no photographic Karen; band in the gaps; choruses + break unchanged (notes: feedback/timeline-r1/kai-chat.md)",
+  "rebuild": "python3 scripts/karen/mv_recut.py r2 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline",
+  "decided": [
+   "Kai: no Karen in the phone box, more abstract, lose every photograph of actual Karen, verses on the beat, more Aarron and the band"
+  ]
+ },
+ {
+  "at": "2026-11-05T18:04:09+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Round 3: every non-chorus cut one beat later onto the kick (r2 was on the snare); verse 1 opens on the drop at 27.33 s; sax held; Aarron walking replaced. Notes: feedback/timeline-r2/notes",
+  "rebuild": "python3 scripts/karen/mv_recut.py r3 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline",
+  "decided": [
+   "Kai: shift the timing first, preview it, before any new footage"
+  ]
+ }
+]

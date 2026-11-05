@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
+ "made": "2026-11-05T17:02:59.470Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The windows of the building light up warm amber, row by row from the bottom floor to the top, until the dome itself glows at its rim. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "82bdf33c-19e2-4b4e-a956-59a4eb47efda"
+}

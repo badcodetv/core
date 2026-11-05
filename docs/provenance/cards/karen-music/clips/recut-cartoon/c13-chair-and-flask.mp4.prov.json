@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c13-chair-and-flask.mp4",
+ "made": "2026-11-05T17:05:31.832Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Rain keeps falling in thin streaks, steam curls up from the flask, and the light in the booth flickers softly. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/karen-plates/c13-chair-and-flask.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c13-chair-and-flask.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "742bd2c3-5c52-454e-841b-e507e3b6b46f"
+}

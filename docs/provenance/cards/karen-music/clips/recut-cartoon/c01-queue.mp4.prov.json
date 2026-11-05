@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c01-queue.mp4",
+ "made": "2026-11-05T16:46:13.205Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The whole queue shuffles slowly forward one step at a time toward the lit window, every figure moving together, their short shadows sliding with them. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "bc3165be-5b76-46e6-acce-e63564758502"
+}

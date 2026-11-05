@@ -1,0 +1,230 @@
+{
+ "source": "Gemini listen 2026-11-05 (times), lyric sheet songs/all-day-to-complain.md (words); times shifted by the measured chorus starts where Gemini was late",
+ "lines": [
+  {
+   "t": 5.5,
+   "who": "clerk",
+   "text": "(Thank you for calling \u2026 Press three to speak to an adviser.)"
+  },
+  {
+   "t": 22.5,
+   "who": "karen",
+   "text": "Three."
+  },
+  {
+   "t": 33.2,
+   "who": "karen",
+   "text": "Monday. Nine-oh-five. Got a chair and a flask,"
+  },
+  {
+   "t": 35.3,
+   "who": "karen",
+   "text": "thirty years of service and one simple ask."
+  },
+  {
+   "t": 38.2,
+   "who": "clerk",
+   "text": "(Ma'am, I'm only the front desk, I can't authorise that)"
+  },
+  {
+   "t": 42.1,
+   "who": "karen",
+   "text": "Then fetch me the desk that sits behind the desk you sat at."
+  },
+  {
+   "t": 45.9,
+   "who": "clerk",
+   "text": "(My supervisor's in a meeting, she's not free until three)"
+  },
+  {
+   "t": 50.0,
+   "who": "karen",
+   "text": "Three's fine. I'm free at three. Three is lo-o-ovely to me."
+  },
+  {
+   "t": 55.5,
+   "who": "clerk",
+   "text": "(There's really nothing further I can do at this level)"
+  },
+  {
+   "t": 58.5,
+   "who": "karen",
+   "text": "Sweeeetheart. There is always a level above the level."
+  },
+  {
+   "t": 62.0,
+   "who": "karen",
+   "text": "So put down the script, and pick up the phone"
+  },
+  {
+   "t": 67.0,
+   "who": "clerk",
+   "text": "(I'm sorry, I can't help you) That's OK."
+  },
+  {
+   "t": 69.5,
+   "who": "clerk",
+   "text": "(You'll have to wait in line) That's OK."
+  },
+  {
+   "t": 72.7,
+   "who": "clerk",
+   "text": "(Somebody will be with you)"
+  },
+  {
+   "t": 75.5,
+   "who": "karen",
+   "text": "Take your time \u2014 I've got all day to complain,"
+  },
+  {
+   "t": 78.4,
+   "who": "choir",
+   "text": "(all day to complain, all day to complain)"
+  },
+  {
+   "t": 83.7,
+   "who": "karen",
+   "text": "Regional office, Thursday. Rain on the glass."
+  },
+  {
+   "t": 86.5,
+   "who": "clerk",
+   "text": "(Ms Bell, I've escalated it, that's all I can pass.)"
+  },
+  {
+   "t": 89.2,
+   "who": "karen",
+   "text": "Borough office, Tuesday, and they gave me a code."
+  },
+  {
+   "t": 92.0,
+   "who": "clerk",
+   "text": "(A caseworker will call you) \u2014 nobody phoned."
+  },
+  {
+   "t": 94.5,
+   "who": "karen",
+   "text": "Week three, a councilman's assistant\u2026"
+  },
+  {
+   "t": 99.4,
+   "who": "clerk",
+   "text": "(Hold, Ma'am, give me a second)"
+  },
+  {
+   "t": 101.8,
+   "who": "karen",
+   "text": "\u2014 he thinks I'll just throw in the towel."
+  },
+  {
+   "t": 104.8,
+   "who": "karen",
+   "text": "State house, Friday, and they put me on the good hold:"
+  },
+  {
+   "t": 108.0,
+   "who": "karen",
+   "text": "Vivaldi. Second movement. I know where it folds."
+  },
+  {
+   "t": 113.6,
+   "who": "karen",
+   "text": "So put down the script, and pick up the phone"
+  },
+  {
+   "t": 118.3,
+   "who": "clerk",
+   "text": "(I'm sorry, I can't help you) That's OK. (You'll have to wait in line)"
+  },
+  {
+   "t": 124.2,
+   "who": "clerk",
+   "text": "(Somebody will be with you) Take your time \u2014 I've got all day to complain"
+  },
+  {
+   "t": 130.0,
+   "who": "choir",
+   "text": "(all day to complain, all day to complain)"
+  },
+  {
+   "t": 151.5,
+   "who": "karen",
+   "text": "Six weeks in a phone box on Lexington and Third,"
+  },
+  {
+   "t": 157.0,
+   "who": "karen",
+   "text": "sun, snow, sun again, and not one word."
+  },
+  {
+   "t": 161.5,
+   "who": "karen",
+   "text": "They automated my floor. Kept the hold music though. The machine can do my job \u2014 it just can't do slow."
+  },
+  {
+   "t": 169.0,
+   "who": "karen",
+   "text": "And here's the part they never printed in the manual, dear:"
+  },
+  {
+   "t": 173.5,
+   "who": "karen",
+   "text": "every system you ever built runs on people hanging up. So don't."
+  },
+  {
+   "t": 181.2,
+   "who": "karen",
+   "text": "Deputy Secretary. Somebody's aide's aide."
+  },
+  {
+   "t": 184.0,
+   "who": "clerk",
+   "text": "(Ma'am, this line is for emergencies) \u2014 well. Look what I made."
+  },
+  {
+   "t": 188.8,
+   "who": "karen",
+   "text": "Chief of Staff at midnight, sounding tired and small,"
+  },
+  {
+   "t": 193.2,
+   "who": "clerk",
+   "text": "(Who IS this woman?)"
+  },
+  {
+   "t": 195.0,
+   "who": "karen",
+   "text": "Karen. From the payphone. That's all."
+  },
+  {
+   "t": 199.2,
+   "who": "clerk",
+   "text": "(I'm sorry, I can't help you) That's OK."
+  },
+  {
+   "t": 202.5,
+   "who": "clerk",
+   "text": "(There is nobody above me) That's OK. (Ma'am \u2014 I'm putting you through)"
+  },
+  {
+   "t": 207.0,
+   "who": "karen",
+   "text": "Take your ti-i-ime \u2014 I've got all day to complain,"
+  },
+  {
+   "t": 210.2,
+   "who": "choir",
+   "text": "(all day to complain, all day to complain)"
+  },
+  {
+   "t": 216.5,
+   "who": "clerk",
+   "text": "(Hello? \u2026 Karen? This is the President.)"
+  },
+  {
+   "t": 226.8,
+   "who": "karen",
+   "text": "Hold, please."
+  }
+ ]
+}

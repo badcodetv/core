@@ -1,0 +1,86 @@
+{
+ "about": "Round 2 (Claude, 2026-11-05, on Kai's round-1 notes). Choruses + break: unchanged from r1 (2-beat cuts from the measured hits — 'timed brilliantly'). Everything else: every shot is [clip id, AT beat index, in-point s, why]; the beat index must be a strong beat (song-map.json 'strong'); a shot ends where the next begins. Each sung line starts a new shot on the strong beat nearest its first word (r1 started verse 1's shots 10 beats before the vocal, so every shot ran a line ahead). No photographic Karen anywhere (no face, no figure, no POV hands): abstract offices, phones, the paper trail, the TV world; Aarron and the band (mv-clip-1/16/17, st-new-25, mv-maybe-4 macro) are the recurring thread in the instrumental gaps.",
+ "inherit": {"from": "r1", "sections": ["chorus-1", "chorus-2", "break", "final-chorus"]},
+ "at": {
+  "intro": [
+   ["st-new-12", 0, 0.5, "god's-eye Manhattan under the dial tone"],
+   ["mv-maybe-1", 6, 0.0, "'Thank you for calling' the towers light into a telephone"],
+   ["mv-clip-26", 14, 1.0, "'your call is important to us' a phone blinks at an empty desk"],
+   ["mv-clip-4", 20, 2.0, "'press three to speak to an adviser'"],
+   ["mv-maybe-4", 26, 0.0, "the band's instruments, close: sax keys, cymbal"],
+   ["mv-clip-17", 32, 1.0, "'Three.' the band comes in: Aarron at the sampler"]
+  ],
+  "verse-1": [
+   ["mv-clip-1", 38, 1.0, "the band: keyboard and upright bass"],
+   ["mv-maybe-4", 42, 3.0, "close on the instruments"],
+   ["st-new-25", 44, 1.0, "Aarron walks up with his DJ desk"],
+   ["mv-clip-6", 48, 1.0, "'Monday. Nine-oh-five.' the cubicle farm"],
+   ["mv-clip-14", 50, 1.0, "'thirty years of service' her empty desk, her mug"],
+   ["st-new-13", 54, 1.0, "'Ma'am, I'm only the front desk'"],
+   ["mv-clip-3", 56, 2.0, "'I can't authorise that' a clerk hangs up"],
+   ["mv-clip-7", 60, 2.0, "'fetch me the desk that sits behind the desk'"],
+   ["mv-clip-28", 62, 2.0, "the file goes up the hall"],
+   ["mv-clip-5", 66, 1.0, "'my supervisor's in a meeting'"],
+   ["mv-clip-17", 70, 5.0, "the band, between lines"],
+   ["st-new-20", 72, 1.0, "'Three's fine. I'm free at three.'"],
+   ["st-vids-red-pin-map-red-pin-zoom-map", 76, 1.0, "the map, the pin"],
+   ["st-new-16", 80, 1.0, "'nothing further I can do at this level'"],
+   ["mv-clip-29", 84, 2.0, "'Sweetheart. There is always a level above the level.'"],
+   ["mv-clip-30", 86, 1.0, "up the marble corridor"]
+  ],
+  "pre-chorus-1": [
+   ["mv-clip-31", 88, 1.0, "the heavy door opens"],
+   ["mv-clip-21", 90, 2.0, "'So put down the script' a suited hand reaches"],
+   ["mv-clip-32", 92, 1.5, "'and pick up the phone'"],
+   ["mv-clip-8", 94, 2.0, "every clerk on the phone, into the hit"]
+  ],
+  "verse-2": [
+   ["mv-clip-17", 120, 1.0, "the band, one bar"],
+   ["st-new-15", 122, 1.0, "'Regional office, Thursday. Rain on the glass.'"],
+   ["mv-clip-19", 126, 2.0, "'Ms Bell, I've escalated it'"],
+   ["mv-clip-18", 130, 1.0, "'Borough office, Tuesday, they gave me a code'"],
+   ["mv-clip-27", 134, 2.0, "'A caseworker will call you — nobody phoned.'"],
+   ["st-new-18", 138, 1.0, "'Week three, a councilman's assistant'"],
+   ["mv-maybe-4", 142, 5.0, "the band, close"],
+   ["st-new-42", 144, 1.0, "'Hold, Ma'am, give me a second'"],
+   ["mv-clip-3", 148, 5.0, "'he thinks I'll just throw in the towel' the phone goes down"],
+   ["st-vids-yellow-pin-map", 152, 0.0, "'State house, Friday, the good hold'"],
+   ["mv-clip-16", 156, 1.0, "Aarron at the sampler in the rain"],
+   ["mv-clip-1", 158, 5.0, "'Vivaldi. Second movement.'"],
+   ["mv-clip-17", 162, 6.0, "'I know where it folds.' the sax"]
+  ],
+  "pre-chorus-2": [
+   ["mv-clip-4", 166, 6.0, "'So put down the script'"],
+   ["mv-clip-21", 168, 5.0, "'and pick up the phone'"],
+   ["mv-clip-8", 170, 6.0, "into the hit"]
+  ],
+  "bridge": [
+   ["st-new-12", 214, 4.0, "the city from above as the funk drops in"],
+   ["st-vids-red-pin-map-red-pin-zoom-map", 222, 4.0, "'Six weeks in a phone box on Lexington and Third'"],
+   ["st-vids-train", 230, 1.0, "'sun, snow, sun again, and not one word'"],
+   ["mv-clip-14", 237, 4.0, "'They automated my floor.'"],
+   ["st-new-40", 243, 1.0, "'The machine can do my job' the gold AI glitches"],
+   ["mv-clip-27", 247, 5.0, "'here's the part they never printed in the manual'"],
+   ["st-new-34", 255, 1.0, "'every system you ever built runs on people hanging up' people keep coming up the stairs"],
+   ["mv-clip-1", 261, 7.0, "'So don't.' the band comes back"]
+  ],
+  "verse-3": [
+   ["mv-clip-31", 265, 4.0, "'Deputy Secretary. Somebody's aide's aide.'"],
+   ["st-new-31", 269, 1.0, "'this line is for emergencies' — 'look what I made'"],
+   ["st-new-33", 273, 1.0, "the writers' room sees it on TV"],
+   ["mv-clip-32", 277, 4.0, "'Chief of Staff at midnight, sounding tired and small'"],
+   ["st-new-35", 281, 1.0, "the room erupts"],
+   ["st-new-36", 283, 1.0, "'Who IS this woman?'"],
+   ["st-old-12", 285, 1.0, "'Karen. From the payphone.' the play count climbing"],
+   ["st-new-32", 287, 1.0, "'That's all.' the writers' room, the show on the wall"]
+  ],
+  "outro": [
+   ["st-new-37", 317, 1.0, "'Hello? … Karen? This is the President.'"],
+   ["st-old-20", 323, 1.0, "the statesman, on air"],
+   ["mv-clip-17", 329, 2.0, "the band winds down"],
+   ["st-new-47", 333, 0.0, "'Hold, please.' over the courthouse into the night"],
+   ["mv-clip-1", 345, 3.0, "the held chord"],
+   ["st-new-12", 351, 3.0, "up and away, to the last hit"]
+  ]
+ }
+}

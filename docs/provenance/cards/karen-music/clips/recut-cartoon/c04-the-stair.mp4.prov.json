@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c04-the-stair.mp4",
+ "made": "2026-11-05T16:50:26.554Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The woman climbs the stair steadily, step after step, toward the lit doorway at the top; the amber wedge from the doorway holds still. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "2958470c-bae3-4668-97cb-983d2593aab1"
+}

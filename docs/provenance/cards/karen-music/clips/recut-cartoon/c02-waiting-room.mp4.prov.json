@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c02-waiting-room.mp4",
+ "made": "2026-11-05T16:47:41.729Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The hands of the big wall clock sweep round fast, hours passing in seconds, while the amber shaft of light slides slowly across the floor; the woman on the bench does not move at all. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/karen-plates/c02-waiting-room.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c02-waiting-room.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "16eff1b3-d720-472d-ae16-c7e72f7c6d27"
+}

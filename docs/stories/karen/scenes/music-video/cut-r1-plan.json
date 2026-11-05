@@ -1,0 +1,128 @@
+{
+ "about": "Karen music video re-cut, round 1 (Claude, 2026-11-05). Every shot is [clip id, beats, in-point seconds (optional), why]. Beats come from song-map.json; a section's last shot fills to the section end. Verses/intro/bridge/outro = photo pool, choruses/break = cartoon pool (Kai's rule). Ids: catalogue.json, plus c01..c14 = the new cartoon clips (new-cartoon-shots.md).",
+ "sections": {
+  "intro": [
+   ["st-new-12", 8, 0.5, "god's-eye Manhattan, slow rise, under the phone menu"],
+   ["mv-maybe-1", 8, 0.0, "tower windows light into a telephone"],
+   ["mv-clip-6", 8, 1.0, "cubicle farm, one woman on the phone"],
+   ["mv-clip-4", 6, 2.0, "receptionist answers ('press three to speak to an adviser')"],
+   ["mv-clip-2", null, 1.0, "'Three.' Karen's POV in the payphone"]
+  ],
+  "verse-1": [
+   ["mv-clip-11", 4, 1.0, "'Monday, nine-oh-five, a chair and a flask'"],
+   ["mv-clip-9", 4, 2.0, "Karen in the payphone from a passing cab"],
+   ["st-new-13", 4, 1.0, "'Ma'am, I'm only the front desk'"],
+   ["st-new-23", 4, 1.0, "Karen, close, unimpressed"],
+   ["mv-clip-7", 4, 2.0, "'fetch me the desk that sits behind the desk'"],
+   ["mv-clip-28", 4, 2.0, "the file travels up the hall"],
+   ["mv-clip-5", 4, 1.0, "'my supervisor's in a meeting'"],
+   ["st-new-21", 4, 1.0, "'Three's fine. I'm free at three.'"],
+   ["mv-clip-12", 4, 2.0, "summer at the payphone"],
+   ["st-new-16", 4, 1.0, "'nothing further I can do at this level'"],
+   ["mv-clip-29", 4, 2.0, "'Sweetheart.' the file climbs: marble hall"],
+   ["mv-clip-30", null, 1.0, "'a level above the level'"]
+  ],
+  "pre-chorus-1": [
+   ["mv-clip-3", 2, 2.0, "'put down the script' a clerk hangs up"],
+   ["mv-clip-32", 2, 1.5, "'pick up the phone' an official picks up"],
+   ["st-old-8", null, 2.0, "Karen ranting, push in, into the hit"]
+  ],
+  "chorus-1": [
+   ["mv-hitch-4", 2, 3.0, "HIT: the booth in the rain"],
+   ["c08-hanging-receivers", 2, 1.0, "'I'm sorry, I can't help you'"],
+   ["c13-chair-and-flask", 2, 1.0, "'That's OK.'"],
+   ["c01-queue", 2, 1.5, "'You'll have to wait in line'"],
+   ["mv-hitch-2", 2, 3.0, "'That's OK.' the cord spiral"],
+   ["c02-waiting-room", 2, 1.0, "'Somebody will be with you'"],
+   ["c03-desk-behind-desk", 2, 1.0, "'Take your time'"],
+   ["mv-hitch-6", 2, 3.0, "the paper tower"],
+   ["mv-hitch-9", 2, 3.0, "'I've got all day to complain'"],
+   ["mv-hitch-7", 2, 3.0, "silhouettes on plinths, falling"],
+   ["mv-hitch-3", 2, 1.0, "the cubicle grid (first half only: it morphs later)"],
+   ["mv-hitch-1", null, 3.0, "'all day to complain' the booth, the desk phone"]
+  ],
+  "verse-2": [
+   ["mv-clip-10", 4, 1.0, "'Regional office, Thursday. Rain on the glass.'"],
+   ["st-old-21", 4, 1.0, "Karen through the wet glass"],
+   ["mv-clip-19", 4, 2.0, "'Ms Bell, I've escalated it'"],
+   ["mv-clip-18", 4, 1.0, "'Borough office, Tuesday, they gave me a code'"],
+   ["mv-clip-26", 4, 1.0, "'a caseworker will call you' (blinking phone, empty chair)"],
+   ["st-new-18", 4, 1.0, "'Week three, a councilman's assistant'"],
+   ["st-new-20", 4, 1.0, "'Hold, Ma'am, give me a second'"],
+   ["st-old-9", 4, 1.0, "'he thinks I'll just throw in the towel'"],
+   ["st-vids-time", 4, 2.0, "'State house, Friday, the good hold' day into night"],
+   ["mv-clip-17", 4, 2.0, "'Vivaldi. Second movement.'"],
+   ["mv-clip-1", null, 2.0, "'I know where it folds'"]
+  ],
+  "pre-chorus-2": [
+   ["st-old-7", 2, 2.0, "'put down the script'"],
+   ["mv-clip-21", 2, 2.0, "'pick up the phone' the suited hand, her file"],
+   ["st-new-11", null, 2.0, "Karen, push in to her face, into the hit"]
+  ],
+  "chorus-2": [
+   ["c05-switchboard", 2, 0.5, "HIT: the switchboard lights"],
+   ["c14-the-dial", 2, 2.0, "'I'm sorry, I can't help you'"],
+   ["mv-hitch-11", 2, 3.0, "receiver sinking underwater"],
+   ["c07-hold-music", 2, 1.5, "'You'll have to wait in line' hold music"],
+   ["mv-hitch-5", 2, 3.0, "'That's OK.' she walks"],
+   ["c06-the-wires", 2, 1.5, "'Somebody will be with you'"],
+   ["mv-hitch-12", 2, 4.0, "the bar, the trio"],
+   ["c04-the-stair", 2, 1.0, "'Take your time' she climbs"],
+   ["mv-hitch-10", 2, 3.0, "'all day to complain' the atrium"],
+   ["c01-queue", 2, 4.5, "the queue again"],
+   ["c08-hanging-receivers", 2, 4.5, "the receivers again"],
+   ["mv-hitch-2", null, 6.0, "the spiral, deeper"]
+  ],
+  "break": [
+   ["c09-the-spy", 4, 0.5, "the spy riff: Karen under the lamp"],
+   ["c10-searchlights", 2, 1.0, "brass stab"],
+   ["c14-the-dial", 1, 4.0, "stab"],
+   ["mv-hitch-5", 2, 6.0, "the walk"],
+   ["c10-searchlights", 1, 4.0, "stab"],
+   ["c09-the-spy", 4, 3.0, "the lamp blinks out"],
+   ["mv-hitch-4", null, 6.0, "back to the booth as it drops away"]
+  ],
+  "bridge": [
+   ["st-new-46", 8, 0.0, "'Six weeks in a phone box on Lexington and Third' day into night"],
+   ["st-new-19", 4, 1.0, "'sun, snow'"],
+   ["st-new-15", 4, 1.0, "'sun again, and not one word' clouds roll in"],
+   ["mv-clip-14", 8, 1.0, "'They automated my floor'"],
+   ["st-new-6", 4, 2.0, "'the machine can do my job'"],
+   ["st-new-43", 6, 1.0, "'here's the part they never printed in the manual'"],
+   ["mv-clip-13", 6, 1.0, "'runs on people hanging up'"],
+   ["mv-maybe-9", 5, 1.0, "the long walk away"],
+   ["st-new-11", null, 4.0, "'So don't.'"]
+  ],
+  "verse-3": [
+   ["mv-clip-31", 4, 1.0, "'Deputy Secretary. Somebody's aide's aide.' the heavy door"],
+   ["st-new-29", 4, 1.0, "'this line is for emergencies' — 'look what I made'"],
+   ["st-old-14", 4, 1.0, "the crowd, Aarron playing"],
+   ["mv-clip-27", 4, 2.0, "'Chief of Staff at midnight' the empty boardroom"],
+   ["st-new-33", 4, 1.0, "'Who IS this woman?'"],
+   ["st-new-38", null, 1.0, "'Karen. From the payphone. That's all.'"]
+  ],
+  "final-chorus": [
+   ["c11-the-dome", 2, 0.0, "HIT, crash cymbal: the dome, dark"],
+   ["c12-room-of-voices", 2, 1.0, "'I'm sorry, I can't help you' the room of voices"],
+   ["mv-hitch-9", 2, 6.0, "'That's OK.'"],
+   ["c04-the-stair", 2, 4.0, "'There is nobody above me'"],
+   ["c10-searchlights", 2, 6.0, "'That's OK.'"],
+   ["c06-the-wires", 2, 4.5, "'Ma'am, I'm putting you through'"],
+   ["c05-switchboard", 1, 4.0, "through"],
+   ["c14-the-dial", 1, 6.0, "through"],
+   ["mv-hitch-10", 2, 6.0, "'Take your ti-i-ime' rising"],
+   ["mv-hitch-4", 2, 7.0, "the booth"],
+   ["c12-room-of-voices", 2, 5.0, "'all day to complain'"],
+   ["mv-hitch-2", 2, 8.0, "the spiral"],
+   ["c11-the-dome", null, 5.0, "every window lit"]
+  ],
+  "outro": [
+   ["st-new-37", 6, 1.0, "'Hello? ... Karen? This is the President.'"],
+   ["mv-clip-33", 6, 1.0, "every phone in the chain at once"],
+   ["st-new-27", 8, 1.0, "Karen at dusk, on the line"],
+   ["st-vids-time", 8, 0.0, "'Hold, please.' day into night again"],
+   ["mv-maybe-7", 6, 1.0, "Karen on the ferry, the skyline, the held chord"],
+   ["st-vids-ending-credits", null, 0.0, "out over the courthouse to the last hit"]
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+ "made": "2026-11-05T17:06:47.653Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The dial turns clockwise, stops, then spins smoothly back to rest, as if a number has just been dialled by an unseen hand. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "ab01a40f-d6fa-4a02-97d8-48d7134dfae3"
+}
