@@ -65,6 +65,7 @@ for sec in song['sections']:
             starts.append((0.0 if at == 0 else beats[at], cid, inp, why, sid))
         continue
     k = min(range(len(beats)), key=lambda i: abs(beats[i] - sec['start']))
+    k += _plan.get('inherit', {}).get('shift', {}).get(sid, 0)  # r4: move a whole inherited section onto the kick
     t = 0.0 if sid == 'intro' else beats[k]
     for cid, nb, inp, why in plan[sid]:
         starts.append((t, cid, inp, why, sid))
@@ -125,7 +126,7 @@ prev = out / 'preview.mp4'
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(pic), '-i', SONG, '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
                 '-c:a', 'aac', '-b:a', '192k', '-shortest', str(prev)], check=True)
 
-INTRO = {'r3': ('Round 3: the timing fix. Every cut outside the choruses now lands on the kick (beats 1 and 3) instead of the snare; verse 1 opens exactly on the drop at 27.33 s. Choruses unchanged. Play it and note anything that still feels off.'), 'r2': ('Round 2. Your notes: no photographic Karen, more abstract, more of Aarron and the band, and the verses on the '
+INTRO = {'r4': ('Round 4: the choruses onto the kick. Both choruses, the spy-riff break and the final chorus started on a snare beat, so every chorus cut was half a bar off, as you heard. Each now starts one beat later, on the kick, with the same cuts; the verses are round 3, unchanged.'), 'r3': ('Round 3: the timing fix. Every cut outside the choruses now lands on the kick (beats 1 and 3) instead of the snare; verse 1 opens exactly on the drop at 27.33 s. Choruses unchanged. Play it and note anything that still feels off.'), 'r2': ('Round 2. Your notes: no photographic Karen, more abstract, more of Aarron and the band, and the verses on the '
                  'beat. Every verse shot now starts on the strong beat where its sung line starts (round 1 ran a line ahead in '
                  'verse 1), the band fills the gaps between lines, and the choruses and break are exactly as before. '
                  'Click any section or shot and leave a note in its yellow slip.')}

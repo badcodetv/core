@@ -28,5 +28,13 @@
   "decided": [
    "Kai: shift the timing first, preview it, before any new footage"
   ]
+ },
+ {
+  "at": "2026-11-06T09:14:33+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Round 4: chorus 1, chorus 2, the break and the final chorus each one beat later, onto the kick (they started on the snare). Notes: feedback/timeline-r3/kai-chat.md. Premiere: karen-music-r4",
+  "rebuild": "python3 scripts/karen/mv_recut.py r4 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline"
  }
 ]
