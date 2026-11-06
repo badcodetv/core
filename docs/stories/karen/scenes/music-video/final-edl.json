@@ -1,0 +1,1749 @@
+{
+ "sequence": "karen-music-r4",
+ "title": "Karen Music Re-cut",
+ "round": 4,
+ "heading": "All Day to Complain: the re-cut",
+ "intro": "Round 4: the choruses onto the kick. Both choruses, the spy-riff break and the final chorus started on a snare beat, so every chorus cut was half a bar off, as you heard. Each now starts one beat later, on the kick, with the same cuts; the verses are round 3, unchanged.",
+ "fps": 25,
+ "total": 249.6,
+ "beats": [
+  {
+   "id": "intro",
+   "title": "Intro: the phone menu",
+   "start": 0.0,
+   "dur": 26.633,
+   "see": "6 shots over 38 beats (high boundary). phone menu over the groove; 'Three.' then the band; checked: verse music starts 26.47",
+   "act": "photo",
+   "lines": [
+    {
+     "i": 0,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 5.5,
+     "dur": 17.0,
+     "text": "(Thank you for calling \u2026 Press three to speak to an adviser.)",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "karen",
+     "name": "Karen",
+     "t": 22.5,
+     "dur": 4.13,
+     "text": "Three.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "verse-1",
+   "title": "Verse 1: Monday, nine-oh-five",
+   "start": 26.633,
+   "dur": 34.807,
+   "see": "16 shots over 51 beats (firm boundary). Monday, nine-oh-five ... a level above the level",
+   "act": "photo",
+   "lines": [
+    {
+     "i": 0,
+     "who": "karen",
+     "name": "Karen",
+     "t": 33.2,
+     "dur": 2.1,
+     "text": "Monday. Nine-oh-five. Got a chair and a flask,",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "karen",
+     "name": "Karen",
+     "t": 35.3,
+     "dur": 2.9,
+     "text": "thirty years of service and one simple ask.",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 38.2,
+     "dur": 3.9,
+     "text": "(Ma'am, I'm only the front desk, I can't authorise that)",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "karen",
+     "name": "Karen",
+     "t": 42.1,
+     "dur": 3.8,
+     "text": "Then fetch me the desk that sits behind the desk you sat at.",
+     "by": "kai"
+    },
+    {
+     "i": 4,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 45.9,
+     "dur": 4.1,
+     "text": "(My supervisor's in a meeting, she's not free until three)",
+     "by": "kai"
+    },
+    {
+     "i": 5,
+     "who": "karen",
+     "name": "Karen",
+     "t": 50.0,
+     "dur": 5.5,
+     "text": "Three's fine. I'm free at three. Three is lo-o-ovely to me.",
+     "by": "kai"
+    },
+    {
+     "i": 6,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 55.5,
+     "dur": 3.0,
+     "text": "(There's really nothing further I can do at this level)",
+     "by": "kai"
+    },
+    {
+     "i": 7,
+     "who": "karen",
+     "name": "Karen",
+     "t": 58.5,
+     "dur": 2.94,
+     "text": "Sweeeetheart. There is always a level above the level.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "pre-chorus-1",
+   "title": "Pre-chorus 1",
+   "start": 61.44,
+   "dur": 4.76,
+   "see": "4 shots over 7 beats (firm boundary). 'So put down the script, and pick up the phone' (start estimated from pre-chorus 2's lead-in)",
+   "act": "photo",
+   "lines": [
+    {
+     "i": 0,
+     "who": "karen",
+     "name": "Karen",
+     "t": 62.0,
+     "dur": 4.2,
+     "text": "So put down the script, and pick up the phone",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "chorus-1",
+   "title": "Chorus 1 (cartoon)",
+   "start": 66.2,
+   "dur": 16.37,
+   "see": "12 shots over 24 beats (verified boundary). band hits together; chorus music repeats at 118.3 and 198.8 (measured, 0.91/0.90 match)",
+   "act": "cartoon",
+   "lines": [
+    {
+     "i": 0,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 67.0,
+     "dur": 2.5,
+     "text": "(I'm sorry, I can't help you) That's OK.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 69.5,
+     "dur": 3.2,
+     "text": "(You'll have to wait in line) That's OK.",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 72.7,
+     "dur": 2.8,
+     "text": "(Somebody will be with you)",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "karen",
+     "name": "Karen",
+     "t": 75.5,
+     "dur": 2.9,
+     "text": "Take your time \u2014 I've got all day to complain,",
+     "by": "kai"
+    },
+    {
+     "i": 4,
+     "who": "choir",
+     "name": "Choir",
+     "t": 78.4,
+     "dur": 4.17,
+     "text": "(all day to complain, all day to complain)",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "verse-2",
+   "title": "Verse 2: Regional office",
+   "start": 82.57,
+   "dur": 30.697,
+   "see": "13 shots over 45 beats (firm boundary). Regional office ... Vivaldi, second movement",
+   "act": "photo",
+   "lines": [
+    {
+     "i": 0,
+     "who": "karen",
+     "name": "Karen",
+     "t": 83.7,
+     "dur": 2.8,
+     "text": "Regional office, Thursday. Rain on the glass.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 86.5,
+     "dur": 2.7,
+     "text": "(Ms Bell, I've escalated it, that's all I can pass.)",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "karen",
+     "name": "Karen",
+     "t": 89.2,
+     "dur": 2.8,
+     "text": "Borough office, Tuesday, and they gave me a code.",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 92.0,
+     "dur": 2.5,
+     "text": "(A caseworker will call you) \u2014 nobody phoned.",
+     "by": "kai"
+    },
+    {
+     "i": 4,
+     "who": "karen",
+     "name": "Karen",
+     "t": 94.5,
+     "dur": 4.9,
+     "text": "Week three, a councilman's assistant\u2026",
+     "by": "kai"
+    },
+    {
+     "i": 5,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 99.4,
+     "dur": 2.4,
+     "text": "(Hold, Ma'am, give me a second)",
+     "by": "kai"
+    },
+    {
+     "i": 6,
+     "who": "karen",
+     "name": "Karen",
+     "t": 101.8,
+     "dur": 3.0,
+     "text": "\u2014 he thinks I'll just throw in the towel.",
+     "by": "kai"
+    },
+    {
+     "i": 7,
+     "who": "karen",
+     "name": "Karen",
+     "t": 104.8,
+     "dur": 3.2,
+     "text": "State house, Friday, and they put me on the good hold:",
+     "by": "kai"
+    },
+    {
+     "i": 8,
+     "who": "karen",
+     "name": "Karen",
+     "t": 108.0,
+     "dur": 5.27,
+     "text": "Vivaldi. Second movement. I know where it folds.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "pre-chorus-2",
+   "title": "Pre-chorus 2",
+   "start": 113.267,
+   "dur": 4.76,
+   "see": "3 shots over 7 beats (firm boundary). 'So put down the script' heard at 1:53.6",
+   "act": "photo",
+   "lines": [
+    {
+     "i": 0,
+     "who": "karen",
+     "name": "Karen",
+     "t": 113.6,
+     "dur": 4.43,
+     "text": "So put down the script, and pick up the phone",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "chorus-2",
+   "title": "Chorus 2 (cartoon)",
+   "start": 118.027,
+   "dur": 16.37,
+   "see": "12 shots over 24 beats (verified boundary). heavier chorus (Gemini said 1:59.8; the audio says 1:58.3)",
+   "act": "cartoon",
+   "lines": [
+    {
+     "i": 0,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 118.3,
+     "dur": 5.9,
+     "text": "(I'm sorry, I can't help you) That's OK. (You'll have to wait in line)",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 124.2,
+     "dur": 5.8,
+     "text": "(Somebody will be with you) Take your time \u2014 I've got all day to complain",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "choir",
+     "name": "Choir",
+     "t": 130.0,
+     "dur": 4.4,
+     "text": "(all day to complain, all day to complain)",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "break",
+   "title": "Break: the spy riff (cartoon)",
+   "start": 134.397,
+   "dur": 12.26,
+   "see": "7 shots over 18 beats (rough boundary). spy riff, brass stabs; style is a choice: it is neither verse nor chorus",
+   "act": "cartoon?",
+   "lines": []
+  },
+  {
+   "id": "bridge",
+   "title": "Bridge: six weeks in a phone box",
+   "start": 146.657,
+   "dur": 34.11,
+   "see": "8 shots over 51 beats (rough boundary). quiet half-time; 'Six weeks in a phone box' 2:31.5 ... 'So don't.' ~3:00",
+   "act": "photo",
+   "lines": [
+    {
+     "i": 0,
+     "who": "karen",
+     "name": "Karen",
+     "t": 151.5,
+     "dur": 5.5,
+     "text": "Six weeks in a phone box on Lexington and Third,",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "karen",
+     "name": "Karen",
+     "t": 157.0,
+     "dur": 4.5,
+     "text": "sun, snow, sun again, and not one word.",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "karen",
+     "name": "Karen",
+     "t": 161.5,
+     "dur": 7.5,
+     "text": "They automated my floor. Kept the hold music though. The machine can do my job \u2014 it just can't do slow.",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "karen",
+     "name": "Karen",
+     "t": 169.0,
+     "dur": 4.5,
+     "text": "And here's the part they never printed in the manual, dear:",
+     "by": "kai"
+    },
+    {
+     "i": 4,
+     "who": "karen",
+     "name": "Karen",
+     "t": 173.5,
+     "dur": 7.27,
+     "text": "every system you ever built runs on people hanging up. So don't.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "verse-3",
+   "title": "Verse 3: Deputy Secretary",
+   "start": 180.767,
+   "dur": 17.717,
+   "see": "8 shots over 26 beats (firm boundary). Deputy Secretary ... Karen. From the payphone. (verse music matches at 180.6)",
+   "act": "photo",
+   "lines": [
+    {
+     "i": 0,
+     "who": "karen",
+     "name": "Karen",
+     "t": 181.2,
+     "dur": 2.8,
+     "text": "Deputy Secretary. Somebody's aide's aide.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 184.0,
+     "dur": 4.8,
+     "text": "(Ma'am, this line is for emergencies) \u2014 well. Look what I made.",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "karen",
+     "name": "Karen",
+     "t": 188.8,
+     "dur": 4.4,
+     "text": "Chief of Staff at midnight, sounding tired and small,",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 193.2,
+     "dur": 1.8,
+     "text": "(Who IS this woman?)",
+     "by": "kai"
+    },
+    {
+     "i": 4,
+     "who": "karen",
+     "name": "Karen",
+     "t": 195.0,
+     "dur": 3.48,
+     "text": "Karen. From the payphone. That's all.",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "final-chorus",
+   "title": "Final chorus (cartoon)",
+   "start": 198.484,
+   "dur": 17.74,
+   "see": "13 shots over 26 beats (verified boundary). crash cymbal arrives, the record opens up",
+   "act": "cartoon",
+   "lines": [
+    {
+     "i": 0,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 199.2,
+     "dur": 3.3,
+     "text": "(I'm sorry, I can't help you) That's OK.",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 202.5,
+     "dur": 4.5,
+     "text": "(There is nobody above me) That's OK. (Ma'am \u2014 I'm putting you through)",
+     "by": "kai"
+    },
+    {
+     "i": 2,
+     "who": "karen",
+     "name": "Karen",
+     "t": 207.0,
+     "dur": 3.2,
+     "text": "Take your ti-i-ime \u2014 I've got all day to complain,",
+     "by": "kai"
+    },
+    {
+     "i": 3,
+     "who": "choir",
+     "name": "Choir",
+     "t": 210.2,
+     "dur": 6.02,
+     "text": "(all day to complain, all day to complain)",
+     "by": "kai"
+    }
+   ]
+  },
+  {
+   "id": "outro",
+   "title": "Outro: the President",
+   "start": 216.224,
+   "dur": 33.376,
+   "see": "6 shots over 42 beats (rough boundary). 'Hello? Karen? This is the President.' ~3:36; held chord ~3:55; last hit ~4:04",
+   "act": "photo?",
+   "lines": [
+    {
+     "i": 0,
+     "who": "clerk",
+     "name": "Clerk",
+     "t": 216.5,
+     "dur": 10.3,
+     "text": "(Hello? \u2026 Karen? This is the President.)",
+     "by": "kai"
+    },
+    {
+     "i": 1,
+     "who": "karen",
+     "name": "Karen",
+     "t": 226.8,
+     "dur": 22.8,
+     "text": "Hold, please.",
+     "by": "kai"
+    }
+   ]
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/000.mp4",
+   "start": 0.0,
+   "dur": 5.52,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "looped": false,
+   "in": 0.5,
+   "why": "god's-eye Manhattan under the dial tone",
+   "id": "st-new-12"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/001.mp4",
+   "start": 5.52,
+   "dur": 5.44,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+   "looped": false,
+   "in": 2.51,
+   "why": "'Thank you for calling' the clouds roll over the city",
+   "id": "st-new-15"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/002.mp4",
+   "start": 10.96,
+   "dur": 4.12,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/26.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'your call is important to us' a phone blinks at an empty desk",
+   "id": "mv-clip-26"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/003.mp4",
+   "start": 15.08,
+   "dur": 3.4,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/4.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'press three to speak to an adviser'",
+   "id": "mv-clip-4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/004.mp4",
+   "start": 18.48,
+   "dur": 4.72,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+   "looped": false,
+   "in": 0.0,
+   "why": "the sax (Kai r2: landed perfectly; now held longer)",
+   "id": "mv-maybe-4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/005.mp4",
+   "start": 23.2,
+   "dur": 4.12,
+   "beat": "intro",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "straight to the band, through the 'Three.' hit to the drop",
+   "id": "mv-clip-17"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/006.mp4",
+   "start": 27.32,
+   "dur": 2.76,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/new maybes/1.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "THE DROP (27.33 s, measured): a completely new picture: the towers light into a telephone",
+   "id": "mv-maybe-1"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/007.mp4",
+   "start": 30.08,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the band: keyboard and upright bass",
+   "id": "mv-clip-1"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/008.mp4",
+   "start": 31.44,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "Aarron at the sampler (replaces him walking, Kai r2)",
+   "id": "mv-clip-16"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/009.mp4",
+   "start": 34.16,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/6.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Monday. Nine-oh-five.' the cubicle farm",
+   "id": "mv-clip-6"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/010.mp4",
+   "start": 35.52,
+   "dur": 2.76,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'thirty years of service' her empty desk, her mug",
+   "id": "mv-clip-14"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/011.mp4",
+   "start": 38.28,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/13.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Ma'am, I'm only the front desk'",
+   "id": "st-new-13"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/012.mp4",
+   "start": 39.64,
+   "dur": 2.68,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/3.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'I can't authorise that' a clerk hangs up",
+   "id": "mv-clip-3"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/013.mp4",
+   "start": 42.32,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/7.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'fetch me the desk that sits behind the desk'",
+   "id": "mv-clip-7"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/014.mp4",
+   "start": 43.68,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/28.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "the file goes up the hall",
+   "id": "mv-clip-28"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/015.mp4",
+   "start": 46.4,
+   "dur": 2.8,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/5.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'my supervisor's in a meeting'",
+   "id": "mv-clip-5"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/016.mp4",
+   "start": 49.2,
+   "dur": 1.32,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "looped": false,
+   "in": 5.0,
+   "why": "the band, between lines",
+   "id": "mv-clip-17"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/017.mp4",
+   "start": 50.52,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/20.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Three's fine. I'm free at three.'",
+   "id": "st-new-20"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/018.mp4",
+   "start": 53.24,
+   "dur": 2.76,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the map, the pin",
+   "id": "st-vids-red-pin-map-red-pin-zoom-map"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/019.mp4",
+   "start": 56.0,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/16.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'nothing further I can do at this level'",
+   "id": "st-new-16"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/020.mp4",
+   "start": 58.72,
+   "dur": 1.32,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/29.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'Sweetheart. There is always a level above the level.'",
+   "id": "mv-clip-29"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/021.mp4",
+   "start": 60.04,
+   "dur": 1.4,
+   "beat": "verse-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/30.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "up the marble corridor",
+   "id": "mv-clip-30"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/022.mp4",
+   "start": 61.44,
+   "dur": 1.4,
+   "beat": "pre-chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the heavy door opens",
+   "id": "mv-clip-31"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/023.mp4",
+   "start": 62.84,
+   "dur": 1.28,
+   "beat": "pre-chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/21.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'So put down the script' a suited hand reaches",
+   "id": "mv-clip-21"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/024.mp4",
+   "start": 64.12,
+   "dur": 1.4,
+   "beat": "pre-chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/32.mp4",
+   "looped": false,
+   "in": 1.5,
+   "why": "'and pick up the phone'",
+   "id": "mv-clip-32"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/025.mp4",
+   "start": 65.52,
+   "dur": 1.36,
+   "beat": "pre-chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "every clerk on the phone, into the hit",
+   "id": "mv-clip-8"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/026.mp4",
+   "start": 66.88,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "HIT: the booth in the rain",
+   "id": "mv-hitch-4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/027.mp4",
+   "start": 68.24,
+   "dur": 1.4,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c08-hanging-receivers.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'I'm sorry, I can't help you'",
+   "id": "c08-hanging-receivers"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/028.mp4",
+   "start": 69.64,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c13-chair-and-flask.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'That's OK.'",
+   "id": "c13-chair-and-flask"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/029.mp4",
+   "start": 71.0,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c01-queue.mp4",
+   "looped": false,
+   "in": 1.5,
+   "why": "'You'll have to wait in line'",
+   "id": "c01-queue"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/030.mp4",
+   "start": 72.36,
+   "dur": 1.32,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "'That's OK.' the cord spiral",
+   "id": "mv-hitch-2"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/031.mp4",
+   "start": 73.68,
+   "dur": 1.4,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c02-waiting-room.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Somebody will be with you'",
+   "id": "c02-waiting-room"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/032.mp4",
+   "start": 75.08,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c03-desk-behind-desk.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Take your time'",
+   "id": "c03-desk-behind-desk"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/033.mp4",
+   "start": 76.44,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/6.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "the paper tower",
+   "id": "mv-hitch-6"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/034.mp4",
+   "start": 77.8,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "'I've got all day to complain'",
+   "id": "mv-hitch-9"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/035.mp4",
+   "start": 79.16,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/7.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "silhouettes on plinths, falling",
+   "id": "mv-hitch-7"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/036.mp4",
+   "start": 80.52,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/3.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the cubicle grid (first half only: it morphs later)",
+   "id": "mv-hitch-3"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/037.mp4",
+   "start": 81.88,
+   "dur": 1.4,
+   "beat": "chorus-1",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/1.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "'all day to complain' the booth, the desk phone",
+   "id": "mv-hitch-1"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/038.mp4",
+   "start": 83.28,
+   "dur": 1.36,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the band, one bar",
+   "id": "mv-clip-17"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/039.mp4",
+   "start": 84.64,
+   "dur": 2.68,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Regional office, Thursday. Rain on the glass.'",
+   "id": "st-new-15"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/040.mp4",
+   "start": 87.32,
+   "dur": 2.72,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/19.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'Ms Bell, I've escalated it'",
+   "id": "mv-clip-19"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/041.mp4",
+   "start": 90.04,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/18.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Borough office, Tuesday, they gave me a code'",
+   "id": "mv-clip-18"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/042.mp4",
+   "start": 92.8,
+   "dur": 2.72,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'A caseworker will call you \u2014 nobody phoned.'",
+   "id": "mv-clip-27"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/043.mp4",
+   "start": 95.52,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/18.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Week three, a councilman's assistant'",
+   "id": "st-new-18"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/044.mp4",
+   "start": 98.28,
+   "dur": 1.32,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+   "looped": false,
+   "in": 5.0,
+   "why": "the band, close",
+   "id": "mv-maybe-4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/045.mp4",
+   "start": 99.6,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/42.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Hold, Ma'am, give me a second'",
+   "id": "st-new-42"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/046.mp4",
+   "start": 102.36,
+   "dur": 2.68,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/3.mp4",
+   "looped": false,
+   "in": 5.0,
+   "why": "'he thinks I'll just throw in the towel' the phone goes down",
+   "id": "mv-clip-3"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/047.mp4",
+   "start": 105.04,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-story/vids/vids/yellow pin map/yellow pin map.mp4",
+   "looped": false,
+   "in": 0.0,
+   "why": "'State house, Friday, the good hold'",
+   "id": "st-vids-yellow-pin-map"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/048.mp4",
+   "start": 107.8,
+   "dur": 1.4,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "Aarron at the sampler in the rain",
+   "id": "mv-clip-16"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/049.mp4",
+   "start": 109.2,
+   "dur": 2.68,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "looped": false,
+   "in": 5.0,
+   "why": "'Vivaldi. Second movement.'",
+   "id": "mv-clip-1"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/050.mp4",
+   "start": 111.88,
+   "dur": 2.72,
+   "beat": "verse-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "'I know where it folds.' the sax",
+   "id": "mv-clip-17"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/051.mp4",
+   "start": 114.6,
+   "dur": 1.36,
+   "beat": "pre-chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/4.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "'So put down the script'",
+   "id": "mv-clip-4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/052.mp4",
+   "start": 115.96,
+   "dur": 1.36,
+   "beat": "pre-chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/21.mp4",
+   "looped": false,
+   "in": 5.0,
+   "why": "'and pick up the phone'",
+   "id": "mv-clip-21"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/053.mp4",
+   "start": 117.32,
+   "dur": 1.4,
+   "beat": "pre-chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "into the hit",
+   "id": "mv-clip-8"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/054.mp4",
+   "start": 118.72,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c05-switchboard.mp4",
+   "looped": false,
+   "in": 0.5,
+   "why": "HIT: the switchboard lights",
+   "id": "c05-switchboard"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/055.mp4",
+   "start": 120.08,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "'I'm sorry, I can't help you'",
+   "id": "c14-the-dial"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/056.mp4",
+   "start": 121.44,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/11.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "receiver sinking underwater",
+   "id": "mv-hitch-11"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/057.mp4",
+   "start": 122.8,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c07-hold-music.mp4",
+   "looped": false,
+   "in": 1.5,
+   "why": "'You'll have to wait in line' hold music",
+   "id": "c07-hold-music"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/058.mp4",
+   "start": 124.16,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "'That's OK.' she walks",
+   "id": "mv-hitch-5"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/059.mp4",
+   "start": 125.52,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c06-the-wires.mp4",
+   "looped": false,
+   "in": 1.5,
+   "why": "'Somebody will be with you'",
+   "id": "c06-the-wires"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/060.mp4",
+   "start": 126.88,
+   "dur": 1.4,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/12.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "the bar, the trio",
+   "id": "mv-hitch-12"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/061.mp4",
+   "start": 128.28,
+   "dur": 1.32,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c04-the-stair.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Take your time' she climbs",
+   "id": "c04-the-stair"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/062.mp4",
+   "start": 129.6,
+   "dur": 1.4,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "'all day to complain' the atrium",
+   "id": "mv-hitch-10"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/063.mp4",
+   "start": 131.0,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c01-queue.mp4",
+   "looped": false,
+   "in": 4.5,
+   "why": "the queue again",
+   "id": "c01-queue"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/064.mp4",
+   "start": 132.36,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c08-hanging-receivers.mp4",
+   "looped": false,
+   "in": 4.5,
+   "why": "the receivers again",
+   "id": "c08-hanging-receivers"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/065.mp4",
+   "start": 133.72,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "the spiral, deeper",
+   "id": "mv-hitch-2"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/066.mp4",
+   "start": 135.08,
+   "dur": 2.72,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
+   "looped": false,
+   "in": 0.5,
+   "why": "the spy riff: Karen under the lamp",
+   "id": "c09-the-spy"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/067.mp4",
+   "start": 137.8,
+   "dur": 1.4,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "brass stab",
+   "id": "c10-searchlights"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/068.mp4",
+   "start": 139.2,
+   "dur": 0.64,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "stab",
+   "id": "c14-the-dial"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/069.mp4",
+   "start": 139.84,
+   "dur": 1.36,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "the walk",
+   "id": "mv-hitch-5"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/070.mp4",
+   "start": 141.2,
+   "dur": 0.68,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "stab",
+   "id": "c10-searchlights"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/071.mp4",
+   "start": 141.88,
+   "dur": 2.76,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "the lamp blinks out",
+   "id": "c09-the-spy"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/072.mp4",
+   "start": 144.64,
+   "dur": 2.72,
+   "beat": "break",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "back to the booth as it drops away",
+   "id": "mv-hitch-4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/073.mp4",
+   "start": 147.36,
+   "dur": 5.44,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "looped": false,
+   "in": 2.51,
+   "why": "the city from above as the funk drops in",
+   "id": "st-new-12"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/074.mp4",
+   "start": 152.8,
+   "dur": 5.32,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "'Six weeks in a phone box on Lexington and Third'",
+   "id": "st-vids-red-pin-map-red-pin-zoom-map"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/075.mp4",
+   "start": 158.12,
+   "dur": 4.6,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-story/vids/vids/train/Train.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'sun, snow, sun again, and not one word'",
+   "id": "st-vids-train"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/076.mp4",
+   "start": 162.72,
+   "dur": 4.08,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "'They automated my floor.'",
+   "id": "mv-clip-14"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/077.mp4",
+   "start": 166.8,
+   "dur": 2.64,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/40.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'The machine can do my job' the gold AI glitches",
+   "id": "st-new-40"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/078.mp4",
+   "start": 169.44,
+   "dur": 5.2,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
+   "looped": false,
+   "in": 4.75,
+   "why": "'here's the part they never printed in the manual'",
+   "id": "mv-clip-27"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/079.mp4",
+   "start": 174.64,
+   "dur": 4.08,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/34.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'every system you ever built runs on people hanging up' people keep coming up the stairs",
+   "id": "st-new-34"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/080.mp4",
+   "start": 178.72,
+   "dur": 2.68,
+   "beat": "bridge",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "looped": false,
+   "in": 7.0,
+   "why": "'So don't.' the band comes back",
+   "id": "mv-clip-1"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/081.mp4",
+   "start": 181.4,
+   "dur": 2.76,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "'Deputy Secretary. Somebody's aide's aide.'",
+   "id": "mv-clip-31"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/082.mp4",
+   "start": 184.16,
+   "dur": 2.72,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/31.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'this line is for emergencies' \u2014 'look what I made'",
+   "id": "st-new-31"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/083.mp4",
+   "start": 186.88,
+   "dur": 2.76,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/33.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the writers' room sees it on TV",
+   "id": "st-new-33"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/084.mp4",
+   "start": 189.64,
+   "dur": 2.68,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/32.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "'Chief of Staff at midnight, sounding tired and small'",
+   "id": "mv-clip-32"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/085.mp4",
+   "start": 192.32,
+   "dur": 1.4,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/35.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the room erupts",
+   "id": "st-new-35"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/086.mp4",
+   "start": 193.72,
+   "dur": 1.36,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/36.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Who IS this woman?'",
+   "id": "st-new-36"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/087.mp4",
+   "start": 195.08,
+   "dur": 1.32,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-story/old clips/12.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Karen. From the payphone.' the play count climbing",
+   "id": "st-old-12"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/088.mp4",
+   "start": 196.4,
+   "dur": 2.8,
+   "beat": "verse-3",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/32.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'That's all.' the writers' room, the show on the wall",
+   "id": "st-new-32"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/089.mp4",
+   "start": 199.2,
+   "dur": 1.32,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
+   "looped": false,
+   "in": 0.0,
+   "why": "HIT, crash cymbal: the dome, dark",
+   "id": "c11-the-dome"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/090.mp4",
+   "start": 200.52,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c12-room-of-voices.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'I'm sorry, I can't help you' the room of voices",
+   "id": "c12-room-of-voices"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/091.mp4",
+   "start": 201.88,
+   "dur": 1.4,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "'That's OK.'",
+   "id": "mv-hitch-9"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/092.mp4",
+   "start": 203.28,
+   "dur": 1.32,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c04-the-stair.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "'There is nobody above me'",
+   "id": "c04-the-stair"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/093.mp4",
+   "start": 204.6,
+   "dur": 1.4,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "'That's OK.'",
+   "id": "c10-searchlights"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/094.mp4",
+   "start": 206.0,
+   "dur": 1.32,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c06-the-wires.mp4",
+   "looped": false,
+   "in": 4.5,
+   "why": "'Ma'am, I'm putting you through'",
+   "id": "c06-the-wires"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/095.mp4",
+   "start": 207.32,
+   "dur": 0.72,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c05-switchboard.mp4",
+   "looped": false,
+   "in": 4.0,
+   "why": "through",
+   "id": "c05-switchboard"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/096.mp4",
+   "start": 208.04,
+   "dur": 0.68,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "through",
+   "id": "c14-the-dial"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/097.mp4",
+   "start": 208.72,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
+   "looped": false,
+   "in": 6.0,
+   "why": "'Take your ti-i-ime' rising",
+   "id": "mv-hitch-10"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/098.mp4",
+   "start": 210.08,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+   "looped": false,
+   "in": 7.0,
+   "why": "the booth",
+   "id": "mv-hitch-4"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/099.mp4",
+   "start": 211.44,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c12-room-of-voices.mp4",
+   "looped": false,
+   "in": 5.0,
+   "why": "'all day to complain'",
+   "id": "c12-room-of-voices"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/100.mp4",
+   "start": 212.8,
+   "dur": 1.4,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+   "looped": false,
+   "in": 8.0,
+   "why": "the spiral",
+   "id": "mv-hitch-2"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/101.mp4",
+   "start": 214.2,
+   "dur": 2.68,
+   "beat": "final-chorus",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
+   "looped": false,
+   "in": 5.0,
+   "why": "every window lit",
+   "id": "c11-the-dome"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/102.mp4",
+   "start": 216.88,
+   "dur": 4.12,
+   "beat": "outro",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/37.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "'Hello? \u2026 Karen? This is the President.'",
+   "id": "st-new-37"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/103.mp4",
+   "start": 221.0,
+   "dur": 4.08,
+   "beat": "outro",
+   "source": "/mnt/d/badcode-videos/karen-story/old clips/20.mp4",
+   "looped": false,
+   "in": 1.0,
+   "why": "the statesman, on air",
+   "id": "st-old-20"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/104.mp4",
+   "start": 225.08,
+   "dur": 2.72,
+   "beat": "outro",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "looped": false,
+   "in": 2.0,
+   "why": "the band winds down",
+   "id": "mv-clip-17"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/105.mp4",
+   "start": 227.8,
+   "dur": 8.16,
+   "beat": "outro",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/47.mp4",
+   "looped": false,
+   "in": 0.0,
+   "why": "'Hold, please.' over the courthouse into the night",
+   "id": "st-new-47"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/106.mp4",
+   "start": 235.96,
+   "dur": 4.12,
+   "beat": "outro",
+   "source": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "looped": false,
+   "in": 3.0,
+   "why": "the held chord",
+   "id": "mv-clip-1"
+  },
+  {
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/segs/107.mp4",
+   "start": 240.08,
+   "dur": 9.52,
+   "beat": "outro",
+   "source": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "looped": false,
+   "in": 0.0,
+   "why": "up and away, to the last hit",
+   "id": "st-new-12"
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "mus-song"
+  }
+ ],
+ "events": [
+  {
+   "stem": "mus-song",
+   "t": 0.0,
+   "dur": 249.6,
+   "what": "All Day to Complain (song.wav)",
+   "src": "/mnt/d/badcode-videos/karen-music/song.wav"
+  }
+ ],
+ "flags": [
+  "intro: 'st-new-12' starts on beat 0, which is not a strong beat",
+  "intro: 'mv-maybe-4' starts on beat 26, which is not a strong beat",
+  "intro 5.52s: 'st-new-15' in-point moved 4.0->2.5s to fit 5.44s",
+  "bridge 147.36s: 'st-new-12' in-point moved 4.0->2.5s to fit 5.44s",
+  "bridge 169.44s: 'mv-clip-27' in-point moved 5.0->4.8s to fit 5.20s",
+  "outro 240.08s: 'st-new-12' in-point moved 3.0->0.0s to fit 9.52s",
+  "outro 240.08s: 'st-new-12' is 8.0s, needs 9.52s: slowed to 84% speed"
+ ]
+}

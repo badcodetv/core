@@ -1,0 +1,2091 @@
+{
+ "schema": "badcode.final/1",
+ "story": "karen",
+ "scene": "music-video",
+ "sequence": "karen-music-r4",
+ "frozen": "2026-11-06T09:28:31+00:00",
+ "note": "Kai 2026-11-06: 'I think we've got a cut. Let's call that done. I love it.' (round 4, Premiere sequence karen-music-r4)",
+ "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/edl.json",
+ "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/preview.mp4",
+ "total": 249.6,
+ "boards": {
+  "timeline": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE"
+ },
+ "words": {},
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 5.52,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 5.52,
+   "dur": 5.44,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 10.96,
+   "dur": 4.12,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/26.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/26.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 15.08,
+   "dur": 3.4,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 18.48,
+   "dur": 4.72,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 23.2,
+   "dur": 4.12,
+   "beat": "intro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 27.32,
+   "dur": 2.76,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 30.08,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 31.44,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 34.16,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/6.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/6.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 35.52,
+   "dur": 2.76,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 38.28,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/13.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/13.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 39.64,
+   "dur": 2.68,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 42.32,
+   "dur": 1.36,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/7.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/7.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 43.68,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/28.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/28.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 46.4,
+   "dur": 2.8,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/5.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/5.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 49.2,
+   "dur": 1.32,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 50.52,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/20.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/20.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 53.24,
+   "dur": 2.76,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 56.0,
+   "dur": 2.72,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/16.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/16.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 58.72,
+   "dur": 1.32,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/29.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/29.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 60.04,
+   "dur": 1.4,
+   "beat": "verse-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/30.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/30.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 61.44,
+   "dur": 1.4,
+   "beat": "pre-chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 62.84,
+   "dur": 1.28,
+   "beat": "pre-chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/21.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/21.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 64.12,
+   "dur": 1.4,
+   "beat": "pre-chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/32.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/32.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 65.52,
+   "dur": 1.36,
+   "beat": "pre-chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 66.88,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 68.24,
+   "dur": 1.4,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c08-hanging-receivers.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c08-hanging-receivers.mp4",
+     "made": "2026-11-05T16:59:04.622Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. In every booth the dangling receiver swings slowly back and forth on its cord, each one slightly out of step with the next; rain keeps falling. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "e5448faa-4915-4f5f-94cc-a28219018bc9"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 69.64,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c13-chair-and-flask.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c13-chair-and-flask.mp4",
+     "made": "2026-11-05T17:05:31.832Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Rain keeps falling in thin streaks, steam curls up from the flask, and the light in the booth flickers softly. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c13-chair-and-flask.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c13-chair-and-flask.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "742bd2c3-5c52-454e-841b-e507e3b6b46f"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c13-chair-and-flask.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 71.0,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c01-queue.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c01-queue.mp4",
+     "made": "2026-11-05T16:46:13.205Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The whole queue shuffles slowly forward one step at a time toward the lit window, every figure moving together, their short shadows sliding with them. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "bc3165be-5b76-46e6-acce-e63564758502"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 72.36,
+   "dur": 1.32,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 73.68,
+   "dur": 1.4,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c02-waiting-room.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c02-waiting-room.mp4",
+     "made": "2026-11-05T16:47:41.729Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The hands of the big wall clock sweep round fast, hours passing in seconds, while the amber shaft of light slides slowly across the floor; the woman on the bench does not move at all. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c02-waiting-room.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c02-waiting-room.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "16eff1b3-d720-472d-ae16-c7e72f7c6d27"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c02-waiting-room.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 75.08,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c03-desk-behind-desk.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c03-desk-behind-desk.mp4",
+     "made": "2026-11-05T16:49:00.371Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. One by one the desk lamps switch off, starting at the far end and running toward the woman in the foreground, each pool of amber light going dark in turn. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c03-desk-behind-desk.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c03-desk-behind-desk.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "194e4ec3-5932-4d78-95e8-5361c470e6eb"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c03-desk-behind-desk.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 76.44,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/6.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/6.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 77.8,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 79.16,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/7.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/7.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 80.52,
+   "dur": 1.36,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 81.88,
+   "dur": 1.4,
+   "beat": "chorus-1",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 83.28,
+   "dur": 1.36,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 84.64,
+   "dur": 2.68,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 87.32,
+   "dur": 2.72,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/19.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/19.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 90.04,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/18.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/18.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 92.8,
+   "dur": 2.72,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 95.52,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/18.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/18.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 98.28,
+   "dur": 1.32,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 99.6,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/42.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/42.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 102.36,
+   "dur": 2.68,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/3.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/3.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 105.04,
+   "dur": 2.76,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/yellow pin map/yellow pin map.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/yellow pin map/yellow pin map.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 107.8,
+   "dur": 1.4,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 109.2,
+   "dur": 2.68,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 111.88,
+   "dur": 2.72,
+   "beat": "verse-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 114.6,
+   "dur": 1.36,
+   "beat": "pre-chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 115.96,
+   "dur": 1.36,
+   "beat": "pre-chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/21.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/21.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 117.32,
+   "dur": 1.4,
+   "beat": "pre-chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 118.72,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c05-switchboard.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c05-switchboard.mp4",
+     "made": "2026-11-05T16:51:42.267Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Socket lamps flick on and off across the board in quick rippling patterns, and the hanging patch cords sway gently. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c05-switchboard.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c05-switchboard.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "244f95cb-9509-42d4-82af-ef2596302380"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c05-switchboard.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 120.08,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+     "made": "2026-11-05T17:06:47.653Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The dial turns clockwise, stops, then spins smoothly back to rest, as if a number has just been dialled by an unseen hand. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "ab01a40f-d6fa-4a02-97d8-48d7134dfae3"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 121.44,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/11.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/11.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 122.8,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c07-hold-music.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c07-hold-music.mp4",
+     "made": "2026-11-05T16:57:48.062Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The record turns steadily on the turntable, and soft rings of amber light pulse outward from the mouth of the horn in time. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c07-hold-music.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c07-hold-music.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "fa7e9a56-413c-4a63-8e6e-1a5303dee0f1"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c07-hold-music.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 124.16,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 125.52,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c06-the-wires.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c06-the-wires.mp4",
+     "made": "2026-11-05T16:56:27.167Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Bright pulses of amber light race along the telephone wires from pole to pole toward the horizon, one after another; the sky glows slightly brighter. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c06-the-wires.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c06-the-wires.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "84e7af36-8ca3-43f8-b140-90d8d219481a"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c06-the-wires.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 126.88,
+   "dur": 1.4,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/12.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/12.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 128.28,
+   "dur": 1.32,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c04-the-stair.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c04-the-stair.mp4",
+     "made": "2026-11-05T16:50:26.554Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The woman climbs the stair steadily, step after step, toward the lit doorway at the top; the amber wedge from the doorway holds still. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "2958470c-bae3-4668-97cb-983d2593aab1"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 129.6,
+   "dur": 1.4,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 131.0,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c01-queue.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c01-queue.mp4",
+     "made": "2026-11-05T16:46:13.205Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The whole queue shuffles slowly forward one step at a time toward the lit window, every figure moving together, their short shadows sliding with them. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "bc3165be-5b76-46e6-acce-e63564758502"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c01-queue.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 132.36,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c08-hanging-receivers.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c08-hanging-receivers.mp4",
+     "made": "2026-11-05T16:59:04.622Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. In every booth the dangling receiver swings slowly back and forth on its cord, each one slightly out of step with the next; rain keeps falling. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "e5448faa-4915-4f5f-94cc-a28219018bc9"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c08-hanging-receivers.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 133.72,
+   "dur": 1.36,
+   "beat": "chorus-2",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 135.08,
+   "dur": 2.72,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
+     "made": "2026-11-05T17:00:28.640Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Rain falls steadily; the hem of her long coat lifts and settles in the wind and she slowly raises her chin; the streetlamp flickers once. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "9674ff8b-535e-4c6f-8341-ebb816faf40b"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 137.8,
+   "dur": 1.4,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+     "made": "2026-11-05T17:01:42.054Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The two searchlight beams sweep slowly back and forth across the facade, crossing and uncrossing. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "6efd7e07-f622-4bde-8c32-5fc532d81b61"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 139.2,
+   "dur": 0.64,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+     "made": "2026-11-05T17:06:47.653Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The dial turns clockwise, stops, then spins smoothly back to rest, as if a number has just been dialled by an unseen hand. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "ab01a40f-d6fa-4a02-97d8-48d7134dfae3"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 139.84,
+   "dur": 1.36,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 141.2,
+   "dur": 0.68,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+     "made": "2026-11-05T17:01:42.054Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The two searchlight beams sweep slowly back and forth across the facade, crossing and uncrossing. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "6efd7e07-f622-4bde-8c32-5fc532d81b61"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 141.88,
+   "dur": 2.76,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
+     "made": "2026-11-05T17:00:28.640Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Rain falls steadily; the hem of her long coat lifts and settles in the wind and she slowly raises her chin; the streetlamp flickers once. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "9674ff8b-535e-4c6f-8341-ebb816faf40b"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 144.64,
+   "dur": 2.72,
+   "beat": "break",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 147.36,
+   "dur": 5.44,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 152.8,
+   "dur": 5.32,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 158.12,
+   "dur": 4.6,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/train/Train.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/train/Train.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 162.72,
+   "dur": 4.08,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 166.8,
+   "dur": 2.64,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/40.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/40.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 169.44,
+   "dur": 5.2,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 174.64,
+   "dur": 4.08,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/34.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/34.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 178.72,
+   "dur": 2.68,
+   "beat": "bridge",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 181.4,
+   "dur": 2.76,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 184.16,
+   "dur": 2.72,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/31.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/31.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 186.88,
+   "dur": 2.76,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/33.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/33.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 189.64,
+   "dur": 2.68,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/32.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/32.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 192.32,
+   "dur": 1.4,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/35.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/35.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 193.72,
+   "dur": 1.36,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/36.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/36.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 195.08,
+   "dur": 1.32,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/old clips/12.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/old clips/12.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 196.4,
+   "dur": 2.8,
+   "beat": "verse-3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/32.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/32.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 199.2,
+   "dur": 1.32,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
+     "made": "2026-11-05T17:02:59.470Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The windows of the building light up warm amber, row by row from the bottom floor to the top, until the dome itself glows at its rim. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "82bdf33c-19e2-4b4e-a956-59a4eb47efda"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 200.52,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c12-room-of-voices.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c12-room-of-voices.mp4",
+     "made": "2026-11-05T17:04:22.878Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Across the whole crowd, the figures slowly lift their receivers to their ears together, a wave travelling from the front of the crowd to the back; the woman in front stays still. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c12-room-of-voices.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c12-room-of-voices.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "fcf58dc9-2014-4795-88c4-2439d0db75cc"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c12-room-of-voices.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 201.88,
+   "dur": 1.4,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 203.28,
+   "dur": 1.32,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c04-the-stair.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c04-the-stair.mp4",
+     "made": "2026-11-05T16:50:26.554Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The woman climbs the stair steadily, step after step, toward the lit doorway at the top; the amber wedge from the doorway holds still. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "2958470c-bae3-4668-97cb-983d2593aab1"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c04-the-stair.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 204.6,
+   "dur": 1.4,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+     "made": "2026-11-05T17:01:42.054Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The two searchlight beams sweep slowly back and forth across the facade, crossing and uncrossing. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "6efd7e07-f622-4bde-8c32-5fc532d81b61"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 206.0,
+   "dur": 1.32,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c06-the-wires.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c06-the-wires.mp4",
+     "made": "2026-11-05T16:56:27.167Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Bright pulses of amber light race along the telephone wires from pole to pole toward the horizon, one after another; the sky glows slightly brighter. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c06-the-wires.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c06-the-wires.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "84e7af36-8ca3-43f8-b140-90d8d219481a"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c06-the-wires.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 207.32,
+   "dur": 0.72,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c05-switchboard.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c05-switchboard.mp4",
+     "made": "2026-11-05T16:51:42.267Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Socket lamps flick on and off across the board in quick rippling patterns, and the hanging patch cords sway gently. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c05-switchboard.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c05-switchboard.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "244f95cb-9509-42d4-82af-ef2596302380"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c05-switchboard.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 208.04,
+   "dur": 0.68,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+     "made": "2026-11-05T17:06:47.653Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The dial turns clockwise, stops, then spins smoothly back to rest, as if a number has just been dialled by an unseen hand. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "ab01a40f-d6fa-4a02-97d8-48d7134dfae3"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 208.72,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 210.08,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 211.44,
+   "dur": 1.36,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c12-room-of-voices.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c12-room-of-voices.mp4",
+     "made": "2026-11-05T17:04:22.878Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Across the whole crowd, the figures slowly lift their receivers to their ears together, a wave travelling from the front of the crowd to the back; the woman in front stays still. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c12-room-of-voices.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c12-room-of-voices.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "fcf58dc9-2014-4795-88c4-2439d0db75cc"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c12-room-of-voices.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 212.8,
+   "dur": 1.4,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 214.2,
+   "dur": 2.68,
+   "beat": "final-chorus",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
+     "made": "2026-11-05T17:02:59.470Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The windows of the building light up warm amber, row by row from the bottom floor to the top, until the dome itself glows at its rim. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "82bdf33c-19e2-4b4e-a956-59a4eb47efda"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c11-the-dome.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 216.88,
+   "dur": 4.12,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/37.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/37.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 221.0,
+   "dur": 4.08,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/old clips/20.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/old clips/20.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 225.08,
+   "dur": 2.72,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 227.8,
+   "dur": 8.16,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/47.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/47.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 235.96,
+   "dur": 4.12,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 240.08,
+   "dur": 9.52,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "mus-song",
+   "t": 0.0,
+   "dur": 249.6,
+   "what": "All Day to Complain (song.wav)",
+   "file": "/mnt/d/badcode-videos/karen-music/song.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/song.wav",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/18.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/19.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/21.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/26.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/28.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/29.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/3.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/30.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/32.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/4.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/5.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/6.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/7.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/1.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/11.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/12.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/2.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/3.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/6.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/7.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/new maybes/1.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+  "/mnt/d/badcode-videos/karen-music/song.wav",
+  "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/13.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/16.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/18.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/20.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/31.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/32.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/33.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/34.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/35.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/36.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/37.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/40.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/42.mp4",
+  "/mnt/d/badcode-videos/karen-story/new clips/47.mp4",
+  "/mnt/d/badcode-videos/karen-story/old clips/12.mp4",
+  "/mnt/d/badcode-videos/karen-story/old clips/20.mp4",
+  "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+  "/mnt/d/badcode-videos/karen-story/vids/vids/train/Train.mp4",
+  "/mnt/d/badcode-videos/karen-story/vids/vids/yellow pin map/yellow pin map.mp4"
+ ]
+}
