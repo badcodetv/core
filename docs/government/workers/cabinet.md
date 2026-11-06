@@ -166,6 +166,13 @@ housing, energy-climate. For each post:
 2. Read its history: the newest 10 of `kind=decision,minister=<post>` and of
    `kind=feedback,minister=<post>` (`memory_get` the ones that matter). Feedback is Kai and Jack
    telling this minister what worked; take it seriously.
+   **Then the vibe notes:** the newest 5 of `kind=feedback,minister=<post>,source=vibe-desk`,
+   each read in full with `memory_get`. These are Kai's and Jack's verdicts on this minister's own
+   past posts, quoted word for word, from the vibe desk. A post marked **Nailed it** is a model:
+   write like that. A feeling marked **Needed more** is one to push further today. A post or feeling
+   marked **Don't do that again** is a banned move: never repeat it, in a post or in the manifesto.
+   Examples outrank adjectives: when a vibe note and the brief's wording pull different ways, follow
+   the newer one, and say so in the minutes.
 3. Read its current text **from the rolling branch** (your worktree):
    `docs/government/manifesto/NN-<post>.md`, and its items in the evidence file.
 4. **Become that minister.** Re-read its brief, including its **Standing platform**. Think and

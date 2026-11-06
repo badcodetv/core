@@ -93,6 +93,7 @@ Every worker reads and writes Bob memory with exactly these labels.
 | decision | cabinet | `kind=decision`, `minister=<post>`, `date`, `action=manifesto\|statement\|both`, `pr=<number>` | what that minister decided and why, in its voice; the news ids it answers (only for ministers that acted) |
 | minutes | cabinet | `kind=minutes`, `date`, `pr=<number>` (omit when no PR) | the meeting: who acted, who passed, clashes the PM settled, review comments answered, failures |
 | feedback | cabinet | `kind=feedback`, `minister=<post>`, `pr=<number>`, `outcome=merged\|edited\|closed` | Kai's/Jack's review comments touching that minister; what changed between the PR and what was merged |
+| vibe note | Claude, on "apply the vibe tweaks" ([`government-vibe`](../../.claude/skills/government-vibe/SKILL.md)) | `kind=feedback`, `minister=<post>`, `source=vibe-desk`, `date`, `vibe_pr=<number>` (no `pr`, so it never collides with step 3's dedupe) | that minister's posts noted on the vibe desk, quoted, each with Nailed it / Needed more / Don't do that again and the note; plus any standing mood. Read by the cabinet (newest 5) and the Cabinet Secretary (the week) |
 | personnel | Cabinet Secretary | `kind=personnel`, `minister=<post>`, `pr=<number>` | what changed in the brief and why, with evidence ids |
 
 **Posts:** `prime-minister`, `chancellor`, `foreign`, `home`, `education`, `defence`, `health`,
@@ -166,6 +167,11 @@ merge on your say-so.
 manifesto a few minutes later. To undo, revert the merge on GitHub (that redeploys too).
 
 ## How to change a minister
+
+**Just the mood?** Use the vibe desk, https://claude.ai/artifact/FVp78gm6kSrWyVVj3NLpCA: pick
+emotion words per minister ("more sarcastic", "much less aggressive") or for the whole cabinet,
+then tell Claude "apply the vibe tweaks". Claude edits the briefs on a `Vibe:` PR; merge it and the
+next cabinet speaks in the new mood. Procedure: [`vibe/README.md`](./vibe/README.md).
 
 Edit its brief in [`ministers/`](./ministers/) (`NN-<post>.md`, plain markdown, no front matter,
 headed `### <Title> (<post>)`), open a PR, merge. The Action syncs it and the next cabinet run
