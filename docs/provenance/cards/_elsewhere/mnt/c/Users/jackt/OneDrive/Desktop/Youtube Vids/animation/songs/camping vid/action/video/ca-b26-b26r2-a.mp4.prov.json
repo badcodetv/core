@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b26-b26r2-a.mp4",
+ "made": "2026-11-06T17:34:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man's raised gloved palm slams flat against the steel lattice gate with a jolt, his shoulder driving in behind it; the gate shudders and rattles under the impact. [00:02-00:08] The staff member's gloved hand keeps hauling the gate along its track, the lattice scissoring closed in front of him; the man holds his palm pressed hard to the cold bars, fingers spread, jaw clenched, nostrils flaring, breathing hard through his teeth, eyes locked through the bars, unblinking and unsmiling. Rain streaks past the street lamp behind him and the red night bus pulls away out of frame. Locked low camera from inside the station, slight handheld tremor; the tiles, handrail and steps stay exactly as in the image. Real-time speed.\nSFX: a heavy metallic slam and rattle of the steel gate, the gate's rollers grinding along the track, rain spattering on the steps, a bus engine pulling away. Ambience: echoing tiled stairwell, distant wet traffic hiss. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b26r2-a.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b26r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b26",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:31:12.912Z"
+ }
+}

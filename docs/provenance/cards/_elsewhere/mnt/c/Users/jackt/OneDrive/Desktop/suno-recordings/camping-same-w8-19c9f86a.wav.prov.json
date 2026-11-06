@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-same-w8-19c9f86a.wav",
+ "made": "2026-11-06T16:48:09.849Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "19c9f86a-ace7-4cef-ad7e-ebe08b361b11",
+ "inputs": {
+  "title": "Camping same w8",
+  "song": "https://suno.com/song/19c9f86a-ace7-4cef-ad7e-ebe08b361b11"
+ },
+ "settings": {
+  "durationSec": 215
+ }
+}

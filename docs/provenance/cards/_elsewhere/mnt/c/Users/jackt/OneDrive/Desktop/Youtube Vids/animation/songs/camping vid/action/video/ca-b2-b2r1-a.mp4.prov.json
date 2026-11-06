@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b2-b2r1-a.mp4",
+ "made": "2026-11-06T17:30:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man slams both cupped handfuls of cold water hard into his face, the water bursting off his skin and spraying in sharp droplets against the green tiles and over the chipped sink, his shoulders flinching at the cold shock, eyes squeezed shut, mouth tight. [00:02-00:08] He scrubs his palms down his face once, roughly, water streaming off his beard and dripping from his chin into the basin, then bends straight back to the tap, cups his hands under it and throws a second splash, head bowed, breathing hard through his nose, expression flat and grim throughout. The man waiting by the door in the background stays where he is, soft and out of focus; the sink, taps, towel, mirror and tiles stay exactly as in the image. Camera at eye level, handheld with a slight shake, braced and steady on him. Filmed at normal real-time speed.\nSFX: splash of water hitting his face, droplets pattering on ceramic and tile, a tap running, a sharp intake of breath at the cold. Ambience: echoey tiled room, faint hum of a building. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b2r1-a.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b2r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b2",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:15:27.667Z"
+ }
+}

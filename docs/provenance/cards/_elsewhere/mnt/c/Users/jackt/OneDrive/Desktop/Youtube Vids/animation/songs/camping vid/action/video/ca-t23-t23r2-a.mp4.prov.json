@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t23-t23r2-a.mp4",
+ "made": "2026-11-06T17:38:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man drops from the helicopter skid and lands hard on the pad, both feet slamming down flat, knees compressing deep under his weight, then springing back up; the champagne bottle swings in his fist and his jacket snaps in the rotor wash. [00:02-00:08] Without breaking stride he walks straight at the camera, chin up, cold smirk, eyes on the lens, as the rotor wash blasts grit and dry leaves past him toward us and the windsock thrashes flat behind; the helicopter keeps hovering in place, its blades a blurred disc. Camera almost on the deck, ultra-wide and looking up, braced and shaking in the downdraft, holding position as he looms into the frame. Shot in real time at normal speed. The helicopter, the river and the skyline stay exactly as in the image.\nSFX: the deafening chop of rotor blades, a turbine whine, two heavy boot impacts on concrete, grit and leaves rattling across the pad and against the camera. Ambience: strong wind roar from the downdraft. Audio contains only these sounds; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t23r2-a.jpg",
+ "why": "action clip, sealed motion writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t23r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t23",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:35:44.713Z"
+ }
+}

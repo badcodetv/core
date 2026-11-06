@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-x3-x3r1-a.mp4",
+ "made": "2026-11-06T17:44:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man drives forward across the bridge in hard, heavy strides, each boot slamming down into the wet pavement and kicking up spray from the puddles, the heavy holdall swinging and dragging with real weight against his leg, the rolled tent on his back jolting with every step. [00:02-00:08] He keeps powering on at a fast march through the driving rain, head up, chin raised, jaw set and mouth closed, eyes narrowed and fixed straight ahead, expression grim and defiant throughout, rain streaking past him. Buses and black cabs hiss past through the spray on the road behind, and the commuters under umbrellas hurry the other way. The bridge, the river and the skyline stay exactly as in the image. Camera handheld, tracking backwards ahead of him at his walking speed with a slight shake, rain drops on the lens. Filmed at normal real-time speed.\nSFX: heavy boots splashing through puddles, the holdall thumping against his leg, rain hammering the pavement, tyres hissing on wet road, a bus engine passing. Ambience: wind and steady rain on a wide bridge. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x3r1-a.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x3r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "x3",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:43:10.374Z"
+ }
+}

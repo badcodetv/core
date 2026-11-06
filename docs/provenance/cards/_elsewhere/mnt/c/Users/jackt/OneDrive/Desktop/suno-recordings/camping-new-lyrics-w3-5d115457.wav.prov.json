@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-new-lyrics-w3-5d115457.wav",
+ "made": "2026-11-06T13:41:16.216Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "5d115457-12eb-490e-8137-96c332b5f76d",
+ "inputs": {
+  "title": "Camping new lyrics w3",
+  "song": "https://suno.com/song/5d115457-12eb-490e-8137-96c332b5f76d"
+ },
+ "settings": {
+  "durationSec": 214.56
+ }
+}

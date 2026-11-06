@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b22-b22r2-a.mp4",
+ "made": "2026-11-06T17:30:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man heaves the rolled bedding the last of the way up onto his shoulder with a hard jolt, his body twisting under its weight and his knees dipping before he braces and straightens, the bundle settling heavily, the guard's torch beam staying fixed on him from the left edge of frame. [00:02-00:08] He turns his back on the guard and strides away across the wet stone forecourt with heavy, planted steps, the bundle rocking on his shoulder, head up, jaw tight, lips pressed thin, eyes fixed straight ahead, expression grim and set throughout, while the torch beam follows him and the commuters keep crossing the background with their wheeled cases, not looking over. The guard stays at the edge of the frame; the arches and brickwork stay exactly as in the image. Camera at eye level, locked off with a slight handheld shake. Filmed at normal real-time speed.\nSFX: heavy thump of the bundle landing on his shoulder, a strained breath, his boots on wet stone, wheeled cases rumbling over paving. Ambience: cold early-morning station forecourt, distant train announcements as an indistinct echo, traffic hum. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b22r2-a.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b22r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b22",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:16:02.680Z"
+ }
+}

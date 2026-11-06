@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-x4-x4r1-a.mp4",
+ "made": "2026-11-06T17:46:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man's front heel strikes the tarmac hard and he drives forward into a fast, aggressive stride toward the left of frame, long coat flaring and snapping behind him, phone at his ear, a sneering half-laugh on his face. [00:02-00:08] He powers straight across the junction without breaking pace, document case swinging; a cyclist brakes hard and swerves around him and office workers step smartly out of his path. The camera tracks with him at pavement level, low and braced, keeping pace so he stays sharp while the crowd, the red buses and the columned Royal Exchange slide past behind. The buildings and junction stay exactly as in the image. Real-time speed, firm heavy footfalls, coat fabric lagging and swinging with weight.\nSFX: hard leather-soled footsteps on tarmac, a bicycle brake squealing and tyres skidding, coat fabric flapping, a bus engine idling and hissing. Ambience: loud City morning rush, traffic and crowd footsteps. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x4r1-a.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x4r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "x4",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:43:44.462Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b24-b24r2-b.mp4",
+ "made": "2026-11-06T17:30:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man's boot slams down onto the damp cardboard with his full weight, a hard impact that flattens it against the paving and squirts dirty water and grit out from under the edges. [00:02-00:08] He stamps twice more with heavy, planted blows along the cardboard, each one flattening another fold, arms out for balance, then stands on it and grinds his heel down to press it flat. His jaw is tight, eyes dark and fixed on the cardboard, expression flat, grim and tired throughout. Joggers and office workers keep passing along the river walk in the soft background, none of them looking at him. The bench with its metal armrests, the trees and the river stay exactly as in the image. Camera low at knee height, locked off with a slight handheld shake. Filmed at normal real-time speed.\nSFX: three heavy wet stamps on cardboard, water splashing on stone, grit scattering, cardboard creasing under a boot. Ambience: cold riverside morning, a jogger's footsteps passing, distant city traffic, wind in bare branches. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b24r2-b.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b24r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b24",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:17:10.154Z"
+ }
+}

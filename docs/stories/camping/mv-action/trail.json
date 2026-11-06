@@ -1,0 +1,40 @@
+[
+ {
+  "at": "2026-11-06T15:11:34+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/XNEc7Q7fADNmZjpVhRtCz3",
+  "what": "Round 1: 17 action shots (b1-b6 Bob, t2-t6 Tarquin, x1-x6 mirrored pairs), 44 stills, NB2 with @Bob/@Tarquin; t1 never returned",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/camping/mv-action docs/stories/camping/mv-action/moodboard.html"
+ },
+ {
+  "at": "2026-11-06T15:55:16+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "what": "Jack's picks and notes on round 1",
+  "decided": [
+   "Picks (page votes): b1r1-a b2r1-a b6r1-b t2r1-a t3r1-a t4r1-a t6r1-a x2r1-c x3r1-a x4r1-a x5r1-b x6r1-a. Jack: 'we may need more, it presented bob as too happy in some of them, he leaves a bleak life it should refelect that. Tarquin is doing basically nothing so more action like action shots please.'"
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 12
+ },
+ {
+  "at": "2026-11-06T16:20:11+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/XNEc7Q7fADNmZjpVhRtCz3",
+  "what": "Round 2: bleak Bob (b22-b26) + Tarquin action (t21-t26, u23, u25), 14 shots, 29 stills; b21 never returned",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/camping/mv-action docs/stories/camping/mv-action/moodboard.html"
+ },
+ {
+  "at": "2026-11-06T17:12:14+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "what": "Jack's picks on round 2",
+  "decided": [
+   "24 picks to animate (r1 12 kept + 12 from r2; t21r2-a left unvoted, t21r2-b ticked). Jack: 'song 2 maybe.mov is the new song for the new sequence but keep the other sequences ... ive picked the stills, please make the videos and put them in premiere in the new sequence. Please clean room it all.'"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 25
+ }
+]

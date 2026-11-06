@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b23-b23r2-b.mp4",
+ "made": "2026-11-06T17:30:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man finishes the throw and a heavy sheet of muddy water flies from the cut-down bottle, arcing through the floodlights and splattering hard onto the tarmac. [00:02-00:08] He immediately drags the bottle back, plunges it into the pool inside the tent and flings out another scoop with a hard, fast arm, water slopping and splashing, rain hammering down on him and drumming on the sagging flysheet, water running off his face and beard. His eyes are narrowed against the rain, jaw set, mouth closed, expression grim and exhausted throughout. Behind him the shoppers under umbrellas hurry to their cars without looking over and car headlights glare through the downpour. The tent, the car park and the lamps stay exactly as in the image. Camera at tent height, side-on, handheld with a slight shake, braced. Filmed at normal real-time speed.\nSFX: water splattering onto tarmac, the bottle scraping and sloshing in the puddle, heavy rain drumming on the tent fabric. Ambience: torrential rain on a car park, car doors shutting, engines starting in the distance. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b23r2-b.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b23r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b23",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:16:36.521Z"
+ }
+}

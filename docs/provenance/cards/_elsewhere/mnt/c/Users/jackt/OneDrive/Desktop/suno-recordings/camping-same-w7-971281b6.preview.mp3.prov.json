@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-same-w7-971281b6.preview.mp3",
+ "made": "2026-11-06T16:27:17.431Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "971281b6-d511-474e-a0e9-ba976b375588",
+ "inputs": {
+  "title": "Camping same w7",
+  "song": "https://suno.com/song/971281b6-d511-474e-a0e9-ba976b375588"
+ },
+ "settings": {
+  "durationSec": 214.2
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-same-w7-971281b6.wav"
+}

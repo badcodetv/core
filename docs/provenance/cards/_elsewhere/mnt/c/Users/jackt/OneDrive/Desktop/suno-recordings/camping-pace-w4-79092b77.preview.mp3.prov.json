@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-pace-w4-79092b77.preview.mp3",
+ "made": "2026-11-06T14:28:27.809Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "79092b77-6996-4f0f-9cb0-9498dbde9860",
+ "inputs": {
+  "title": "Camping pace w4",
+  "song": "https://suno.com/song/79092b77-6996-4f0f-9cb0-9498dbde9860"
+ },
+ "settings": {
+  "durationSec": 214.56
+ },
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-pace-w4-79092b77.wav"
+}

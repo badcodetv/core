@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t4-t4r1-a.mp4",
+ "made": "2026-11-06T17:40:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man drives his heels into the horse's flanks and the chestnut horse explodes forward into a full gallop, hooves striking hard into the sand and throwing clods of it up behind, the rider thrown forward low over its neck, face fierce and pleased. [00:02-00:08] Horse and rider thunder away along the track to the right, mane and tail streaming, sand spraying with every stride; the two joggers jerk back further onto the grass, one stumbling, hands raised. The camera pans fast with the horse at matching speed, tracking alongside, the plane trees and mist whipping past behind; the track, trees and Knightsbridge rooftops stay consistent. Real-time speed: heavy hooves, the full weight and momentum of the horse.\nSFX: hooves pounding into soft sand, a horse snorting hard, leather tack creaking, sand spattering, joggers' trainers skidding on wet grass. Ambience: early-morning park, birdsong, distant traffic. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t4r1-a.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t4r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t4",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:39:04.050Z"
+ }
+}

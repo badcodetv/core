@@ -1,0 +1,11 @@
+import { chromium } from 'playwright'
+const b = await chromium.connectOverCDP('http://localhost:9222')
+const p = await b.contexts()[0].newPage()
+await p.goto('https://suno.com/song/03e29295-d33a-4db7-b566-64a58e83a196', { waitUntil: 'domcontentloaded' })
+await p.waitForTimeout(6000)
+await p.getByText('Show more', { exact: true }).first().click().catch(() => {})
+await p.waitForTimeout(1000)
+const t = await p.evaluate(() => document.body.innerText)
+const a = t.indexOf('Lyrics'), z = t.indexOf('Show less')
+console.log(t.slice(a, z > a ? z : a + 6000))
+await p.close(); process.exit(0)

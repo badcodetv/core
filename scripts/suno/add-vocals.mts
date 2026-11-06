@@ -5,7 +5,7 @@
  *
  *   npx tsx scripts/suno/add-vocals.mts <writer.md> <title> [--yes]     (FLOW_CDP_PORT, default 9222)
  *
- * Writer file format: === TITLE / STYLE / EXCLUDE / SLIDERS (audio_strength= weirdness= style_influence=) / LYRICS / WHY ===
+ * Writer file format: === TITLE / STYLE / EXCLUDE / SLIDERS (audio_strength= weirdness= style_influence= [variety=]) / LYRICS / WHY ===
  * Without --yes it fills and reads back only. Never Cover (Jack 2026-10-22).
  */
 import { chromium, type Page } from 'playwright'
@@ -63,6 +63,8 @@ out.exclude = await fillChecked(page, 'input[placeholder="Exclude styles"]', exc
 out.w = await setSlider(page, 'Weirdness', sl.weirdness)
 out.s = await setSlider(page, 'Style Influence', sl.style_influence)
 out.a = await setSlider(page, 'Audio Influence', sl.audio_strength)
+// Variety (0/1/2; 0 = Suno keeps the style words as written). Added 2026-11-06 for the pace round.
+if (sl.variety !== undefined) out.v = await setSlider(page, 'Variety', sl.variety)
 const t = page.locator('input[placeholder="Song Title (Optional)"]').first()
 await t.fill(title); await t.blur()
 // read back

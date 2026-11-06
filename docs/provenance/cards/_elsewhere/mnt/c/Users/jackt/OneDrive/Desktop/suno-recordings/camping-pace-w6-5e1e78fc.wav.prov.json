@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-pace-w6-5e1e78fc.wav",
+ "made": "2026-11-06T14:45:35.943Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "5e1e78fc-2756-4f2e-8150-53788dccadb6",
+ "inputs": {
+  "title": "Camping pace w6",
+  "song": "https://suno.com/song/5e1e78fc-2756-4f2e-8150-53788dccadb6"
+ },
+ "settings": {
+  "durationSec": 214.92
+ }
+}

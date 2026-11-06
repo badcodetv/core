@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-x5-x5r1-b.mp4",
+ "made": "2026-11-06T17:46:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man swings the boot down hard and hammers the heel onto the metal tent peg, driving it deep into the muddy verge with a heavy impact, mud spitting up, his free hand yanking the guy line taut. [00:02-00:08] He raises the boot and hammers the peg twice more with full force, his whole body behind each strike, then wrenches the guy line tight, while the wind gusts hard, the tent flysheet bellies and snaps against its poles, and leaves and a crisp packet skitter across the wet tarmac. His jaw is clenched, his mouth set hard, eyes narrowed against the wind on the peg, expression grim and determined throughout. The lone shopper keeps pushing the trolley in the soft background; the supermarket, the lamps and the car park stay exactly as in the image. Camera low on the wet tarmac, handheld with a slight shake, braced and steady. Filmed at normal real-time speed.\nSFX: three hard metal clanks of boot on peg, the guy line twanging tight, tent fabric flapping and snapping in the gusts, leaves scraping across tarmac. Ambience: gusting night wind in an empty car park, a distant trolley rattle. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x5r1-b.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x5r1-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "x5",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:44:53.583Z"
+ }
+}

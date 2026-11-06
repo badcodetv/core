@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t24-t24r2-b.mp4",
+ "made": "2026-11-06T17:38:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The ball and the clod of torn turf fly hard into the spectators; the turf bursts against a picnic table, soil spraying over glasses and plates, and the row of guests duck, recoil and stumble back from the table. [00:02-00:08] The chestnut pony thunders on at full gallop past the camera to the right, hooves striking the grass and throwing up more flecks of earth, the man leaning out of the saddle with the mallet raised, teeth bared, not looking back. Camera at ground level on the grass, locked with a slight Dutch tilt, giving a hard jolt as the pony passes and clods of earth spatter toward the lens. Shot in real time at normal speed, every hoof strike landing with weight. The river, trees, marquees and cars stay exactly as in the image; the pony keeps four legs and the rider stays in the saddle.\nSFX: the sharp crack of a mallet echoing, drumming hooves on turf, the pony snorting, soil thudding onto a wooden table, a glass shattering, startled gasps from the guests. Ambience: open summer field, light breeze, distant crowd murmur. Audio contains only these sounds; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t24r2-b.jpg",
+ "why": "action clip, sealed motion writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t24r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t24",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:36:38.276Z"
+ }
+}

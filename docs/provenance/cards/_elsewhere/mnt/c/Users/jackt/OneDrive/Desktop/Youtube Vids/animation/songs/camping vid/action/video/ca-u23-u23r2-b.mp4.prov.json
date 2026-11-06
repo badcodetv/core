@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-u23-u23r2-b.mp4",
+ "made": "2026-11-06T17:42:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man heaves the armchair up and shoves it over the lip of the skip; it tips, falls and crashes down onto the rubble with real weight, bouncing once, a leg snapping off and the broken picture frame shattering beneath it. [00:02-00:08] He brushes his palms off against each other with bored contempt, lip curled, and turns back toward the open front door for the next load without looking at anyone; on the pavement the old woman flinches at the crash and clutches the carrier bag and the plant tighter, and the neighbours in their doorways stay where they are. Camera across the street at eye level, braced handheld with a slight shake. Shot in real time at normal speed; light drizzle keeps falling. The terrace, the skip and the street stay exactly as in the image; nobody new appears.\nSFX: a heavy wooden armchair crashing into a metal skip, splintering wood, breaking glass, the skip ringing with a dull metallic boom, palms slapping together. Ambience: drizzle on wet brick and pavement, water trickling in the gutter, a quiet residential street. Audio contains only these sounds; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/u23r2-b.jpg",
+ "why": "action clip, sealed motion writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/u23r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "u23",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:40:12.404Z"
+ }
+}

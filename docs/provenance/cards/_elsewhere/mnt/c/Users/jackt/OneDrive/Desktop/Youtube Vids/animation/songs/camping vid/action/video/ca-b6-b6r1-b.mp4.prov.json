@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b6-b6r1-b.mp4",
+ "made": "2026-11-06T17:34:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man dips the lit match down to the stove and the gas catches with a sudden pop, the blue flame ring flaring up hard under the dented kettle, the match flame flickering in the cold wind as he shields it with his gloved hand, his face lit from below, eyes fixed on the burner, mouth closed and expression flat and tired. [00:02-00:08] He shakes the match out with one sharp flick and pulls both hands in close to the stove to warm them, shoulders hunched against the cold, while in the foreground the legs of passers-by stride quickly past on the wet pavement without slowing and the night bus pulls away in the background with its lights streaking. The shutter, the blanket, the cardboard and the kettle stay exactly as in the image. Camera low on the pavement, locked off with a slight handheld shake. Filmed at normal real-time speed.\nSFX: match hiss, soft whump of gas catching and a steady roar of the burner, footsteps slapping on wet pavement, a bus engine pulling away. Ambience: late-night street, cold wind, distant traffic. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b6r1-b.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b6r1-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b6",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:31:49.259Z"
+ }
+}

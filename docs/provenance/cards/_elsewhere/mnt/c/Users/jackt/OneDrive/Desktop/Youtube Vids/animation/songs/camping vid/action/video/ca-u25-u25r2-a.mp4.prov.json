@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-u25-u25r2-a.mp4",
+ "made": "2026-11-06T17:42:42+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man's arm snaps forward to the end of the throw and his fist flies open; the banknotes burst out into a wide spinning cloud and a gust whips them out over the street, tumbling and fluttering down toward the road. [00:02-00:08] He leans over the balustrade, head tipped back in a delighted sneer, watching; far below the crowd surges off the pavement into the road with arms up, grabbing at the falling notes, the black cab brakes hard with its lights flaring and the cyclist swerves around them, a red bus keeping its line. Camera high, just behind his shoulder, locked off with a slight handheld shake. Shot in real time at normal speed; the notes fall under gravity with the wind. The hotel, the street and the buses stay exactly as in the image; the notes carry no readable print.\nSFX: a fistful of paper notes fluttering and snapping in the wind, tyres squealing as the cab brakes, a car horn blaring below, a bicycle bell. Ambience: wet night street far below, traffic hiss, faint shouts carried up from the crowd. Audio contains only these sounds; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/u25r2-a.jpg",
+ "why": "action clip, sealed motion writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/u25r2-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "u25",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:41:22.642Z"
+ }
+}

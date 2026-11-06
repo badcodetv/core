@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t25-t25r2-b.mp4",
+ "made": "2026-11-06T17:38:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man swings his legs over the closed ticket gate and drops down on the near side, landing with both feet slapping the floor, knees bending to absorb the weight, the leather briefcase swinging wide on its handle and making the nearest commuter jerk back. [00:02-00:08] He straightens and strides straight toward the camera without a glance behind, a bored, entitled smirk, briefcase swinging at his side; the station worker in the hi-vis vest steps after him with one arm raised, and the commuters at the gates stop tapping and stare. Camera at eye level, braced handheld with a slight shake, staying put as he walks out of frame past the lens. Shot in real time at normal speed. The gates, the tiled walls and the crowd stay exactly as in the image; nobody new appears, no readable signs.\nSFX: a hand slapping on the steel gate, shoes landing hard on the tiled floor, the briefcase whooshing, ticket gates beeping and clunking. Ambience: a crowded echoing ticket hall in the morning rush, footsteps and a low murmur of the crowd. Audio contains only these sounds; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t25r2-b.jpg",
+ "why": "action clip, sealed motion writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t25r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t25",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:37:13.068Z"
+ }
+}

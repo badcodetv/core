@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t3-t3r1-a.mp4",
+ "made": "2026-11-06T17:40:53+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The heavy ring of brass keys drops from the top of its rise and the man's hand snaps out sideways and snatches it from the air with a hard metallic clack, the keys jangling and swinging from his fist, without him even looking at them. [00:02-00:08] He flicks his wrist and hurls the ring straight back up high, catches it again with a careless slap of the palm, and pockets his hand, a lazy smirk on his face, chin raised at the street. Behind him every window of the white terrace stays dark and still; the two passers-by keep walking along the pavement, one glancing up at the empty houses. Static camera across the street, slight handheld breathing; the columns, tiled steps, dead plant and terrace stay exactly as in the image. Real-time speed; the keys have real weight and fall fast under gravity.\nSFX: a heavy bunch of keys jangling, a sharp metallic clack as they are caught, a leather-palmed slap, footsteps on paving stones. Ambience: a quiet, empty, expensive street, distant traffic, a bird. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t3r1-a.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t3r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t3",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:37:50.294Z"
+ }
+}

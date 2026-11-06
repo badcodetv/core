@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b25-b25r2-b.mp4",
+ "made": "2026-11-06T17:34:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man lunges hard to his left, planted boot skidding on the wet cobbles, and his outstretched gloved hand snatches at the flying cardboard sheet; the gust rips it past his fingertips and it tumbles end over end down the street. [00:02-00:08] He staggers, catches his weight, clamps the stack tighter under his arm and stamps two heavy steps after the sheet, head down into the wind, jaw clenched, breath streaming in the cold, expression flat and set throughout. The traders behind keep hosing and stacking without looking; the train on the viaduct rumbles on across the frame. Handheld telephoto, slight shake, camera braced; the arches, stalls and street stay exactly as in the image. Real-time speed, full weight and momentum in every step.\nSFX: wind gust buffeting, cardboard flapping and scraping across wet cobbles, boots slapping on wet stone, hose spray hissing, a train rumbling and clattering overhead. Ambience: cold market street, crates knocking. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b25r2-b.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b25r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b25",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:30:37.112Z"
+ }
+}

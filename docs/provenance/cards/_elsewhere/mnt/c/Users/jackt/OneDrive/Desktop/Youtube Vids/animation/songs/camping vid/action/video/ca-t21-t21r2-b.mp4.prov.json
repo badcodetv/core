@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t21-t21r2-b.mp4",
+ "made": "2026-11-06T17:34:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man's arm completes its sweep across the desk with full force, his body twisting through the swing; the keyboard cartwheels off the edge, a storm of paper bursts toward the lens and the coffee cup tumbles past the camera, coffee splattering across a monitor with real weight. [00:02-00:08] He staggers with the momentum, catches himself with a planted foot, then hammers both fists down on the bare desk twice and throws his head back in a triumphant roar, eyes wide and gloating; behind him, out of focus, the traders stay frozen with their hands on their heads, the red charts on every screen still plunging. Camera at desk height with the Dutch tilt, handheld and braced, a small jolt as the paper hits the lens. Shot in real time at normal speed; paper flutters and drops under gravity. The trading floor, the screens and the window view stay exactly as in the image.\nSFX: a plastic keyboard clattering onto the floor, paper whipping and slapping, coffee splashing on glass, two heavy fist thumps on a desk, a hoarse wordless roar. Ambience: air-conditioned office hum, distant phones ringing. Audio contains only these sounds; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t21r2-b.jpg",
+ "why": "action clip, sealed motion writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t21r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t21",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:32:53.615Z"
+ }
+}

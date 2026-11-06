@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings/camping-same-w7-dba594b7.wav",
+ "made": "2026-11-06T16:34:14.436Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "dba594b7-c470-4191-a599-2414f1738b98",
+ "inputs": {
+  "title": "Camping same w7",
+  "song": "https://suno.com/song/dba594b7-c470-4191-a599-2414f1738b98"
+ },
+ "settings": {
+  "durationSec": 213.76
+ }
+}

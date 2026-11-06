@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t2-t2r1-a.mp4",
+ "made": "2026-11-06T17:34:31+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man shoves the chrome throttle lever fully forward; the engine roars, the bow kicks up out of the water and the whole hull slams down hard on the chop, jolting him in his seat as a white sheet of spray bursts off both sides. [00:02-00:08] The speedboat hammers on down the river at full speed, hull smacking each wave, spray whipping past and spattering the lens, his hand gripping the wheel, wind tearing at him, mouth open in a reckless whoop with no sound of voice. Tower Bridge and the lit City towers stream backwards behind him with strong parallax; the blue light of a police launch flickers far behind. Camera rigged low on the bow, locked to the boat and shaking with each impact. Real-time speed, full weight and momentum.\nSFX: a powerful inboard engine roaring to full throttle, hull slamming on waves, spray hissing and drumming on fibreglass, wind blasting. Ambience: wide night river, a faint distant siren. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t2r1-a.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t2r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t2",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:32:20.146Z"
+ }
+}

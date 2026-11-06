@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-b1-b1r1-a.mp4",
+ "made": "2026-11-06T17:30:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man rips himself upward on the green steel bar in one hard, explosive pull, his whole body weight hauled up until his chin clears the bar, gloved fingers wrapped tight with knuckle tension, the bar flexing slightly in its frame, a thick burst of breath steaming from his gritted teeth. [00:02-00:08] He drops back down to straight arms with a jolt and immediately drives up again for two more fast, grinding reps, the last one shaking and slower with strain, his jaw clenched and his eyes fixed hard on the bar, expression grim and set throughout, breath clouding in the cold. The joggers keep running along the path in the soft background; the mist, the trees, the skyline and the frosted grass stay exactly as in the image. Camera low in the grass, handheld with a slight shake, braced and locked on him. Filmed at normal real-time speed.\nSFX: steel bar creaking under his weight, gloves squeaking on metal, sharp effortful breaths through his teeth, a grunt on each pull. Ambience: quiet frosty park at dawn, distant birds, faint far-off city traffic hum. Audio contains only these sounds; speech, music, singing, score are absent. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b1r1-a.jpg",
+ "why": "action clip, sealed motion writer c1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/b1r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "b1",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:14:55.647Z"
+ }
+}

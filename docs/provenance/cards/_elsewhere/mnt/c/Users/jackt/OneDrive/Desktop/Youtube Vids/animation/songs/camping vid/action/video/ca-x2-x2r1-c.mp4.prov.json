@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-x2-x2r1-c.mp4",
+ "made": "2026-11-06T17:44:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The man tips the heavy crystal decanter steeply and the wine glugs out in a thick, fast dark ribbon, crashing into the oversized glass and surging up its sides. [00:02-00:08] He keeps pouring without stopping; the glass fills to the brim and overflows, wine sloshing over the rim, running down the stem and splashing across the white tablecloth in a spreading red stain, while he watches with a satisfied, bored smirk and does not stop. The waiter behind him stays still, ignored; the diners and arcade stay soft in the background. Static side-on camera at chest height, slight handheld breathing; the market roof, table and decanter stay exactly as in the image. Real-time speed; the wine is heavy liquid that glugs, splashes and soaks into the cloth.\nSFX: wine glugging from a decanter neck, liquid splashing into crystal and spattering onto linen, a crystal clink of decanter on glass. Ambience: busy lunchtime arcade, cutlery and plates clattering, distant footsteps on cobbles. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x2r1-c.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/x2r1-c.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "x2",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T17:41:58.384Z"
+ }
+}
