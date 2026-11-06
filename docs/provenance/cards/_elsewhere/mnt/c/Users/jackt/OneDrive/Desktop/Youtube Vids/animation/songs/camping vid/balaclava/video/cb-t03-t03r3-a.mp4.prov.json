@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t03-t03r3-a.mp4",
+ "made": "2026-11-06T11:19:51+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds still; the editor adds any camera move. The seated man keeps his masked head square to the lens and delivers a verse with his gloved hands: palms turn open, then fingertips press together, then both hands roll outward from his chest, on a steady beat, with small nods and his shoulders easing back. Plate, glass and tablecloth stay put; the diners behind keep eating quietly. Ambient noise: soft restaurant murmur, cutlery clinks. No voices, no music.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t03r3-a.jpg",
+ "why": "balaclava rap clip r4, writer w3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t03r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t03",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:06:23.801Z"
+ }
+}

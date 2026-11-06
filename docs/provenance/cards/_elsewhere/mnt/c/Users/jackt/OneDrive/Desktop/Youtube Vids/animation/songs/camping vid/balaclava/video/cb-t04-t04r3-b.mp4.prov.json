@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t04-t04r3-b.mp4",
+ "made": "2026-11-06T11:19:51+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera low below him, framing holds; the editor adds camera moves. The man stays bent over the lens, one gloved hand gripping the rail. He dips his masked head toward the camera on each beat, three hard nods, shoulders rolling forward with menace, while his lower gloved hand tugs his jacket front straight once. His face stays turned down into the lens throughout the nods. Clouds drift slowly; the city below stays still. Ambient noise: high wind, faint distant traffic. No voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t04r3-b.jpg",
+ "why": "balaclava rap clip r4, writer w3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t04r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t04",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:06:49.459Z"
+ }
+}

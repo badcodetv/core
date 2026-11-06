@@ -1,0 +1,210 @@
+[
+ {
+  "file": "cb-m12-m12r3-b.mp4",
+  "track": 1,
+  "start": 25.64,
+  "dur": 0.88,
+  "in": 0.04,
+  "was": "clips/12.mp4"
+ },
+ {
+  "file": "cb-m12-m12r3-b.mp4",
+  "track": 1,
+  "start": 26.52,
+  "dur": 0.4,
+  "in": 0.92,
+  "was": "clips/12.mp4"
+ },
+ {
+  "file": "cb-m12-m12r3-b.mp4",
+  "track": 1,
+  "start": 26.92,
+  "dur": 0.96,
+  "in": 1.32,
+  "was": "clips/12.mp4"
+ },
+ {
+  "file": "cb-m12-m12r3-b.mp4",
+  "track": 1,
+  "start": 27.88,
+  "dur": 0.88,
+  "in": 2.28,
+  "was": "clips/12.mp4"
+ },
+ {
+  "file": "cb-s01-s01r3-a.mp4",
+  "track": 3,
+  "start": 28.76,
+  "dur": 1.44,
+  "in": 3.12,
+  "was": "bob rapping/1.mp4"
+ },
+ {
+  "file": "cb-s02-s02r3-a.mp4",
+  "track": 3,
+  "start": 31.04,
+  "dur": 1.92,
+  "in": 0.48,
+  "was": "bob rapping/1.1.mp4"
+ },
+ {
+  "file": "cb-s02-s02r3-a.mp4",
+  "track": 3,
+  "start": 33.8,
+  "dur": 0.88,
+  "in": 4.72,
+  "was": "bob rapping/1.1.mp4"
+ },
+ {
+  "file": "cb-s02-s02r3-a.mp4",
+  "track": 3,
+  "start": 35.36,
+  "dur": 0.8,
+  "in": 6.28,
+  "was": "bob rapping/1.1.mp4"
+ },
+ {
+  "file": "cb-s03-s03r3-b.mp4",
+  "track": 3,
+  "start": 39.04,
+  "dur": 1.44,
+  "in": 0.0,
+  "was": "bob rapping/2.mp4"
+ },
+ {
+  "file": "cb-s03-s03r3-b.mp4",
+  "track": 3,
+  "start": 40.48,
+  "dur": 6.72,
+  "in": 1.24,
+  "was": "bob rapping/2.mp4"
+ },
+ {
+  "file": "cb-s04-s04r3-b.mp4",
+  "track": 4,
+  "start": 47.2,
+  "dur": 1.28,
+  "in": 1.0,
+  "was": "bob rapping/3.mov"
+ },
+ {
+  "file": "cb-s04-s04r3-b.mp4",
+  "track": 3,
+  "start": 49.68,
+  "dur": 2.12,
+  "in": 3.76,
+  "was": "bob rapping/3.mov"
+ },
+ {
+  "file": "cb-s05-s05r3-b.mp4",
+  "track": 3,
+  "start": 52.64,
+  "dur": 7.92,
+  "in": 0.0,
+  "was": "bob rapping/4.mp4"
+ },
+ {
+  "file": "cb-s05-s05r3-b.mp4",
+  "track": 3,
+  "start": 60.56,
+  "dur": 0.92,
+  "in": 2.0,
+  "was": "bob rapping/4.mp4"
+ },
+ {
+  "file": "cb-s06-s06r3-b.mp4",
+  "track": 4,
+  "start": 62.68,
+  "dur": 6.2,
+  "in": 1.76,
+  "was": "bob rapping/5.5.mp4"
+ },
+ {
+  "file": "cb-t04-t04r3-b.mp4",
+  "track": 3,
+  "start": 90.44,
+  "dur": 2.2,
+  "in": 0.0,
+  "was": "Tarquin rapping/3.mp4"
+ },
+ {
+  "file": "cb-t03-t03r3-a.mp4",
+  "track": 4,
+  "start": 93.44,
+  "dur": 5.16,
+  "in": 0.0,
+  "was": "Tarquin rapping/2.1.mp4"
+ },
+ {
+  "file": "cb-t04-t04r3-b.mp4",
+  "track": 3,
+  "start": 99.56,
+  "dur": 1.8,
+  "in": 6.16,
+  "was": "Tarquin rapping/3.mp4"
+ },
+ {
+  "file": "cb-t05-t05r3-b.mp4",
+  "track": 3,
+  "start": 101.68,
+  "dur": 4.88,
+  "in": 0.0,
+  "was": "Tarquin rapping/4.3.mp4"
+ },
+ {
+  "file": "cb-t06-t06r3-a.mp4",
+  "track": 4,
+  "start": 107.8,
+  "dur": 2.0,
+  "in": 0.52,
+  "was": "Tarquin rapping/4.4.mp4"
+ },
+ {
+  "file": "cb-t06-t06r3-a.mp4",
+  "track": 4,
+  "start": 109.8,
+  "dur": 1.32,
+  "in": 2.72,
+  "was": "Tarquin rapping/4.4.mp4"
+ },
+ {
+  "file": "cb-t06-t06r3-a.mp4",
+  "track": 4,
+  "start": 111.12,
+  "dur": 1.28,
+  "in": 4.72,
+  "was": "Tarquin rapping/4.4.mp4"
+ },
+ {
+  "file": "cb-t07-t07r3-b.mp4",
+  "track": 3,
+  "start": 113.2,
+  "dur": 4.36,
+  "in": 0.0,
+  "was": "Tarquin rapping/5.mp4"
+ },
+ {
+  "file": "cb-t07-t07r3-b.mp4",
+  "track": 3,
+  "start": 118.24,
+  "dur": 2.28,
+  "in": 4.36,
+  "was": "Tarquin rapping/5.mp4"
+ },
+ {
+  "file": "cb-t08-t08r3-a.mp4",
+  "track": 2,
+  "start": 123.6,
+  "dur": 7.92,
+  "in": 0.0,
+  "was": "Tarquin rapping/6.mp4"
+ },
+ {
+  "file": "cb-t08-t08r3-a.mp4",
+  "track": 2,
+  "start": 131.52,
+  "dur": 2.08,
+  "in": 2.0,
+  "was": "Tarquin rapping/6.mp4"
+ }
+]

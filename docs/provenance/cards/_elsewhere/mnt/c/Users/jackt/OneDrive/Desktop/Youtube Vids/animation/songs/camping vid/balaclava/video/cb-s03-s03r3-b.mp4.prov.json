@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s03-s03r3-b.mp4",
+ "made": "2026-11-06T11:05:00+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds; the editor adds any camera move. The man works the rhythm low: both black-gloved hands pump downward in front of his stomach on every beat, fingers spread, while his bowed head nods with them. Halfway through he lifts his head to face the lens and sweeps one open glove out toward the city, then back to the low pump. Everything behind him stays as it is; windows glow steadily. Ambient noise: cold wind across the roof, faint city hum. No voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s03r3-b.jpg",
+ "why": "balaclava rap clip r4, writer w1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s03r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s03",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T10:51:05.117Z"
+ }
+}

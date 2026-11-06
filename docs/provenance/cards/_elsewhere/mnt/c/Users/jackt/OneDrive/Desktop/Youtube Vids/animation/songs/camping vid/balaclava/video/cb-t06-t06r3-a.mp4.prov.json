@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t06-t06r3-a.mp4",
+ "made": "2026-11-06T11:23:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds; the editor adds any camera move. The man stays reclined, head still and angled to the lens as in the first frame, nodding slowly on the beat. He tips the cocktail toward the lens twice in time, then his gloved hand lifts off the laptop, palm open, and waves lazily side to side, then settles back on the keys. Palms sway gently, the sea laps, everything else holds. Ambient noise: soft surf and wind in the palms, no voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06r3-a.jpg",
+ "why": "balaclava rap clip r4, writer w4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t06",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:20:12.704Z"
+ }
+}

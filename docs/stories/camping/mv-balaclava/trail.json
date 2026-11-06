@@ -55,5 +55,21 @@
   ],
   "feedback": "feedback/moodboard-r3",
   "feedback_docs": 21
+ },
+ {
+  "at": "2026-11-06T10:27:09+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/WVScfLPy242nXzuExhH2y9",
+  "what": "Premiere sequence 'camping' as it is now, rap-to-camera slots marked SWAP",
+  "rebuild": "python3 scripts/camping-mv2/balaclava-timeline.py <.bridge/state-camping.json> <media>/cut && python3 scripts/scene/build-timeline.py docs/stories/camping/mv-balaclava <out-dir>"
+ },
+ {
+  "at": "2026-11-06T11:49:14+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/WVScfLPy242nXzuExhH2y9",
+  "what": "camping balaclava 1: all 13 talking-to-camera shots replaced by the balaclava men",
+  "rebuild": "python3 scripts/camping-mv2/balaclava-timeline.py '<.bridge/state-camping balaclava 1.json>' <media>/cut 'camping balaclava 1' && python3 scripts/scene/build-timeline.py docs/stories/camping/mv-balaclava <out-dir>"
  }
 ]

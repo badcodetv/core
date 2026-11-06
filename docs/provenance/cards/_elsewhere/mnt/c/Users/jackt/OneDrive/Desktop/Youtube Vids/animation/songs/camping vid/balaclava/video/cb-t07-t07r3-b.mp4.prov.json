@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t07-t07r3-b.mp4",
+ "made": "2026-11-06T11:23:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Static tripod shot, no camera movement; the editor adds the moves. The man pushes off his thighs and straightens, then both gloved hands jab forward toward the lens on the beat, fingers spread, chopping down hard four times while his shoulders pump and his head nods sharply, still facing straight on. He finishes with one finger stabbing at the camera. The car and the parked cars stay exactly where they are. Ambient noise: low fluorescent hum and a concrete echo, no voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t07r3-b.jpg",
+ "why": "balaclava rap clip r4, writer w4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t07r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t07",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:20:39.179Z"
+ }
+}

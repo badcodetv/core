@@ -204,6 +204,9 @@ async function collect(baseline: Set<string>, want: number) {
     await sleep(15_000)
   }
   await hardReload()
+  // 2026-11-06: 4 s after the reload the grid could still be empty, so nothing was harvested and the wave was re-submitted.
+  await page.locator('flow-video-tile').first().waitFor({ timeout: 30_000 }).catch(() => {})
+  await sleep(2000)
   const list = await topTiles(want + 4)
   let order = readdirSync(INBOX).filter(f => f.endsWith('.mp4')).length
   for (const [i, t] of list.entries()) {

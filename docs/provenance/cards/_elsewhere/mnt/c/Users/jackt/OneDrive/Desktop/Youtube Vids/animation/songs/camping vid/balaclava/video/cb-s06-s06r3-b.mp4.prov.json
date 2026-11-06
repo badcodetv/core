@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s06-s06r3-b.mp4",
+ "made": "2026-11-06T11:19:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Static camera on a tripod, framing holds; the editor adds camera moves. Seated against the wall, the man keeps his head facing the lens and nods on the beat. His gloved hands pull in and clasp at his chest, then fling open wide toward the camera, palms up, three times in rhythm, shoulders shrugging as they open. Last time he holds them out, cupped, as if offering. The lamps glow steadily; the tent and tray stay put. Ambient noise: river lapping, wind, a distant city hum.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s06r3-b.jpg",
+ "why": "balaclava rap clip r4, writer w2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s06r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s06",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:06:00.273Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s05-s05r3-b.mp4",
+ "made": "2026-11-06T11:19:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds; the editor adds camera moves. The man keeps walking slowly toward the lens with a heavy, rolling swagger, head facing straight into the camera. His left gloved hand chops down hard on every beat, four times, while his shoulders dip with each step. On the last step he stops and leans forward, both hands opening at waist height. The flame flickers; tents and bin bag stay still. Ambient noise: fire crackle, distant traffic hum, footsteps on grit.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s05r3-b.jpg",
+ "why": "balaclava rap clip r4, writer w2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s05r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s05",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:05:36.170Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t08-t08r3-a.mp4",
+ "made": "2026-11-06T11:23:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Camera fixed at eye level, framing holds; camera moves come later in the edit. The man stays square to the lens. He folds his arms tight across his chest for two beats, head bobbing, then unfolds them and works both gloved hands in front of his chest, rolling and flicking on each beat, a pointed finger stabbing toward the lens now and then. Behind him the guests keep chatting where they stand, sipping champagne; no one walks in. Ambient noise: garden-party murmur and clinking glasses, no clear words.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08r3-a.jpg",
+ "why": "balaclava rap clip r4, writer w4",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t08",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:22:07.752Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s02-s02r3-a.mp4",
+ "made": "2026-11-06T11:05:00+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds; the editor adds any camera move. From the wide shrug, the man brings both black-gloved hands in to his chest, then throws them back out wide on the beat, palms up, three times, his shoulders bouncing with each throw. His masked head stays facing the lens with small nods. The pale car stays parked where it is; the oil drum keeps burning, firelight flickering. Ambient noise: rain dripping, fire crackle, distant road hum. No voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02r3-a.jpg",
+ "why": "balaclava rap clip r4, writer w1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02r3-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s02",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T10:50:58.452Z"
+ }
+}

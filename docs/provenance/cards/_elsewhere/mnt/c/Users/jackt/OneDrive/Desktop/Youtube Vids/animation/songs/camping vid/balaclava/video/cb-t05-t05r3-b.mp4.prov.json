@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t05-t05r3-b.mp4",
+ "made": "2026-11-06T11:19:51+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds still; the editor adds any camera move. Standing on the deck, the man finishes pulling his glove snug with a sharp tug, then lifts both gloved hands to chest height and spreads them palms out, pushing forward on the beat in a lecturing rhythm while his masked head nods, facing the lens. His feet stay planted. The sea glitters gently, the deck and seating stay as they are. Ambient noise: soft wind, water lapping the hull. No voices, no music.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t05r3-b.jpg",
+ "why": "balaclava rap clip r4, writer w3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t05r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t05",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T11:07:13.223Z"
+ }
+}

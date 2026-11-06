@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-m12-m12r3-b.mp4",
+ "made": "2026-11-06T11:05:00+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, framing holds; the editor adds camera moves. From the first frame the man snaps into the bar: his right gloved hand jabs forward toward the lens, finger pointing, as his chin drops in a hard nod. He pulls the hand back and jabs again on each beat, four times, the left hand pumping low at his hip. Head stays square to the camera, feet planted. The drum fire flickers. Ambient noise: fire crackle, low traffic rumble under the concrete.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r3-b.jpg",
+ "why": "balaclava rap clip r4, writer w2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r3-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "m12",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-06T10:50:36.888Z"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/premiere/cb-t03-t03r3-a.mp4",
+ "made": "2026-11-06T11:49:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t03-t03r3-a.mp4",
+ "why": "1080p silent copy for the camping balaclava 1 sequence (no scaling in Premiere)",
+ "settings": {
+  "vf": "scale=1920:1080:flags=lanczos",
+  "crf": "14",
+  "audio": "none"
+ }
+}

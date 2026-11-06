@@ -4,7 +4,7 @@
   "prefix": "cb",
   "title": "Camping: Balaclava Rappers",
   "heading": "Camping music video: the two balaclava rappers",
-  "moodboard_intro": "ROUND 3: your picks in every rap shot. Duct-tape man (a7) in all of Bob's rap-to-camera shots, tweed squire (b1) in all of Tarquin's, same place, framing and pose as the original (originals and your pick at the start of each section). s01\u2013s06 replace Bob rapping 1, 1.1, 2, 3, 4, 5.5; t01\u2013t08 replace Tarquin rapping 1, 2, 2.1, 3, 4.3, 4.4, 5, 6; m12, m13, m19, m23 are the maybes (loose clips 12, 13, 19, 23): only used if you say they count as rapping. Every still checked by eye for skin: none seen (m12-a's hands are the one to look at closely). Seven shots have three takes (a, b, c) because Flow echoed your reference on a first pass and they were redone. Tap This on the take to animate for each shot (or No on any you want redone). Rounds 1 and 2 are below.",
+  "moodboard_intro": "ROUND 3: your picks in every rap shot. Duct-tape man (a7) in all of Bob's rap-to-camera shots, tweed squire (b1) in all of Tarquin's, same place, framing and pose as the original (originals and your pick at the start of each section). s01–s06 replace Bob rapping 1, 1.1, 2, 3, 4, 5.5; t01–t08 replace Tarquin rapping 1, 2, 2.1, 3, 4.3, 4.4, 5, 6; m12, m13, m19, m23 are the maybes (loose clips 12, 13, 19, 23): only used if you say they count as rapping. Every still checked by eye for skin: none seen (m12-a's hands are the one to look at closely). Seven shots have three takes (a, b, c) because Flow echoed your reference on a first pass and they were redone. Tap This on the take to animate for each shot (or No on any you want redone). Rounds 1 and 2 are below.",
   "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava",
   "beats": [
     {
@@ -140,13 +140,31 @@
   },
   "premiere": {
     "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/camping vid Copy-test_1.prproj",
-    "clips": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips"
+    "clips": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/clips",
+    "current": "balaclava1",
+    "balaclava1": {
+      "sequence": "camping balaclava 1",
+      "guid": "be8580a3-51ac-432c-9af2-7155272f3765",
+      "bin": "balaclava clips",
+      "built": "2026-11-06",
+      "from": "camping (clone, untouched)",
+      "how": "docs/stories/camping/mv-balaclava/premiere/swap.py → place-0..2.js via premiere_eval",
+      "what": "26 overwrites: every rap-to-camera item replaced by its balaclava clip (1080p silent copies), same track/span/in point"
+    }
   },
   "boards": {
-    "moodboard": "https://claude.ai/artifact/Tc95mWsa81QThUnHFv4Dbc"
+    "moodboard": "https://claude.ai/artifact/Tc95mWsa81QThUnHFv4Dbc",
+    "timeline": "https://claude.ai/artifact/WVScfLPy242nXzuExhH2y9"
   },
   "picked": {
     "rough": "a7r2-a",
     "posh": "b1r2-b"
-  }
+  },
+  "video": {
+    "model": "Omni 1.1 Flash",
+    "aspect": "16:9",
+    "mode": "Frames",
+    "duration": 8
+  },
+  "flow_project": "76a7474d-c201-4f7c-8492-3b2c684de501"
 }
