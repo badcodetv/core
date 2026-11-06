@@ -1,6 +1,6 @@
 ---
 title: GPOM second half, scene A (kill bots): the boss's lines + the music
-status: ✅ all picks recorded (23 Oct) — boss lines 1–4, patrol P1/P2, chase C3; in the scene A round 2 rebuild
+status: ✅ all picks recorded (23 Oct) — boss lines 1–4, patrol P1/P2, chase C3; 5 Nov round 5: quicker boss lines 1 + 3 recorded (boss-r18/)
 kind: one narrator take (the boss, dry) + two instrumental cues (P the patrol, C the chase and the call)
 model: v6
 workspace: gpom-story
@@ -253,6 +253,58 @@ It was useful to keep that zero-day up my sleeve.
 [End]
 ```
 
+## Round 5: boss lines 1 and 3, quicker (cut round 18)
+
+Kai, cut round 18 (5 Nov): the boss's two lines in the call need to be quicker, and **re-recorded, not just sped
+up**. Only the delivery changes: the same Voice, the same calm British newsreader, now brisk and quick. Settings are
+round 2's (v6 · Voice `badcode newsreader` · SI 50 · AI 65 · pair w25 / w10 · Duration 15 · Variety, Max Mode,
+Personalize Off · `gpom-story`). Line 3 says the words the cut already uses, "No, thank you. I will handle it." (round
+10 cut "Maddie" out of the take by hand; this read never says it).
+
+### `gpom-sh-a-boss-1` revision B — "making fun of my simulations", brisk
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, brisk, quick and mildly amused. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, brisk, mildly amused]
+Maddie, are you making fun of my simulations again?
+[End]
+```
+
+### `gpom-sh-a-boss-3` revision C — "I will handle it", brisk
+
+Style:
+
+```
+Spoken word, voice only. One calm British male newsreader on a private phone call, brisk, quick, calm and firm. No music. Dry, close-mic'd, no reverb.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb
+```
+
+Lyrics:
+
+```lyrics
+[Spoken, brisk, calm, firm]
+No, thank you. I will handle it.
+[End]
+```
+
 ## Cue P — the patrol (~45 s)
 
 Under the kill bots roaming, the HUD hearing a muffled human argument, then kill mode. Eerie and
@@ -358,6 +410,40 @@ vocals, singing, choir, pizzicato, plucked strings, string quartet, string ensem
 ## Round log
 
 New rounds at the top.
+
+### Round 5 (2026-11-05) · boss lines 1 and 3 quicker (cut round 18) · picked by measurement, recorded
+
+Kai asked for these two lines re-recorded faster (not sped up) and authorised the recording. 4 Creates (2 pairs, w25 +
+w10) = **40 credits expected**; the on-page counter read 7,000 before and after (stale again, as in round 3). Workspace
+`gpom-story`; form was empty and idle before loading (one Suno tab opened on channel 1). All 8 takes recorded
+(`record-checked.py`, never downloaded) to `/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/`.
+The listen tool was not run.
+
+| Take | Length | Link | Measured |
+| --- | --- | --- | --- |
+| gpom-sh-a-boss-1-B-v6-w10 | 0:06 | https://suno.com/song/67d3ebbb-c2e7-4aa9-a639-d47a6be5a9ae | ✗ opens on a ~0.25 s pure ~490 Hz tone |
+| gpom-sh-a-boss-1-B-v6-w10 | 0:06 | https://suno.com/song/6e9f7089-58a6-47eb-af02-a832b30b54fa | ✗ the same tone |
+| gpom-sh-a-boss-1-B-v6-w25 | 0:06 | https://suno.com/song/148779af-c790-4dd9-8c78-7f08036a5bd6 | ✅ **pick**: clean, words right |
+| gpom-sh-a-boss-1-B-v6-w25 | 0:06 | https://suno.com/song/76980c9b-e753-42c2-ab61-7940a39c6892 | ✗ the same tone |
+| gpom-sh-a-boss-3-C-v6-w10 | 0:07 | https://suno.com/song/56012b1c-393a-410d-b2d4-51420855d697 | ✗ a held sung-like note (233/282 Hz) after the words |
+| gpom-sh-a-boss-3-C-v6-w10 | 0:05 | https://suno.com/song/1c2df008-8e72-469a-88f7-0a7323716767 | ✗ a 0.8 s 466 Hz tone after "it." |
+| gpom-sh-a-boss-3-C-v6-w25 | 0:06 | https://suno.com/song/d447089a-aa36-4b83-a0e8-c8c547f376f2 | ✅ **pick**: clean, quickest read |
+| gpom-sh-a-boss-3-C-v6-w25 | 0:08 | https://suno.com/song/f6a70f8b-0cd5-44f6-bde9-3e76faf4b148 | ✗ a tone near the end, 3.5 s of dead air |
+
+**What "brisk" did.** On line 1, nothing measurable: every take reads "are you making fun of my simulations again?" in
+~2.6 s exactly like the round 2 pick, and every take (old and new) stops ~1.1–1.5 s after "Maddie,". On line 3 it
+worked on one take: d447089a says "Thank you, I will handle it" in one breath (speech 2.69 s against the old 4.12 s).
+
+**The picks** (faster-whisper small.en hears every word; no bed in the pauses, -52 to -59 dB below the voice; f0
+around 55–70 Hz like the old picks). The pause after the first word is closed to 0.3 s, because no take had none over
+0.4 s; head and tail trimmed to 0.1 s:
+- line 1: `boss-r18/gpom-sh-a-boss-1-b-v6-w25-148779af-tight.wav`, **3.51 s** (old pick trimmed the same way: 4.70 s;
+  raw 6.76 s). Pauses kept: `takes/…148779af-trim.wav`, 4.72 s (no shorter than the old).
+- line 3: `boss-r18/gpom-sh-a-boss-3-c-v6-w25-d447089a-tight.wav`, **2.36 s** (old `-noname` trimmed the same way:
+  4.32 s; raw 5.42 s). Pauses kept: `takes/…d447089a-trim.wav`, 2.90 s.
+
+⚠ The first record of d447089a came back 5.00 s (the stale-duration bug, `automation.md` §10); the re-record is 6.36 s
+and replaced it in `takes/`.
 
 ### Round 4 (2026-10-23) · Kai's round 3 picks recorded · no Creates
 

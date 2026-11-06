@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/transition/ht-01-swoop-b.mp4",
+ "made": "2026-11-05T19:55:40.474Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One smooth continuous camera move: the camera glides forward down the street toward the robot, drops low until it is skimming the tarmac, and slides in under the robot's front edge between its wheels, tipping slightly upward. The robot stays parked and still.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/street-45.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/street-45.jpg",
+  "end": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-01-b.png",
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 8
+ },
+ "source_id": "aaabe089-8708-4883-a8fc-c167ba4cd39b"
+}

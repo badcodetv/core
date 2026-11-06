@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1k/hologram-1k.mp4",
+ "made": "2026-11-05T19:14:58+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "three.js",
+ "tool": "scratchpad record.mjs (headless Chromium, SwiftShader, window.hologram.frameAt) + ffmpeg x264",
+ "why": "Maddie's commit-graph hologram, draft 1K, film render for scene A",
+ "inputs": {
+  "page": "design/2026-11-05-gpom-meeting/lookdev/index.html",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1k/lines-1k.json"
+ },
+ "settings": {
+  "fps": "25",
+  "size": "1920x1080",
+  "frames": "2579",
+  "timing": "page default layout (db edits/current empty)"
+ }
+}

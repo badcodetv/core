@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hs-00-c.png",
+ "made": "2026-11-05T19:35:00.953Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the little round television under the robot: it is not there. In its place, between the front wheels, the underside of the grey body is closed by a flat square hatch, the same dented grey metal as the rest of the body, its edges a thin dark seam with a small hinge line along the front edge, sitting flush so you would barely notice it. No screen, no glow, no light underneath. Keep everything else in the image exactly the same, the torn bunting, the amber beacon, the wheels, the ruined street, the camera height and the framing, the overcast light and the grain.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hs-01-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hs-01-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f6a834e1-22eb-4ca1-9d68-0e0a5fe4f212"
+}

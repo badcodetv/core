@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-04-a.png",
+ "made": "2026-11-05T19:46:35.537Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Robot copied exactly from the second picture; street and grade from the first. The camera sits flat on the tarmac in the middle of the gap beneath the robot, aimed steeply upward but not quite vertical, so the bottom fifth of the frame is the road surface running away between the rear tyres, and the rest is the robot's dark underside overhead. Its wheels stand on the road at both sides of the frame, the near front pair huge and close at the top corners, the middle and rear pairs smaller, every tyre clearly touching the ground. The undercarriage between them is black shadow with a few dull bolts. Overcast daylight leaks in from the sides only. Photographic, 16:9, nothing written.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-01-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-01-b.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "4f18b24a-61f6-4598-98db-62008cf99d81"
+}

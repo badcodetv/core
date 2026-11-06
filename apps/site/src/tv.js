@@ -25,9 +25,11 @@
 
   const CH = ['stories', 'news', 'government', 'testcard'];
   const S = C.stories;
+  // STORIES 9 (after the films and their songs): The Storyverse, Maddie's hologram, played inside the screen
+  const SV = S.length * 2 + 1, SVP = C.storyverse;
   // the cabinet: every minister but the PM, whose line is the promise heading (docs/government/manifesto/)
   const CAB = (C.government.manifesto || []).filter(m => m.post !== 'prime-minister');
-  const count = { stories: S.length * 2, news: Math.max(1, C.news.bulletins.length), government: 2, testcard: 1 };
+  const count = { stories: SV, news: Math.max(1, C.news.bulletins.length), government: 2, testcard: 1 };
 
   // ---------- state + addresses ----------
   let state = { ch: 'stories', p: 1, text: null };
@@ -37,6 +39,7 @@
     if (path === '/') return null;
     if ((m = path.match(/^\/text\/(\d{3})$/))) return { ch: 'stories', p: 1, text: +m[1] };
     if (path === '/future-proof') return { ch: 'government', p: 2, text: null };
+    if (path === '/storyverse') return { ch: 'stories', p: SV, text: null };
     if (path === '/about') return { ch: 'testcard', p: 1, text: null };
     if ((m = path.match(/^\/government\/([a-z-]+)$/)) && CAB.some(x => x.post === m[1])) return { ch: 'government', p: 1, text: null, minister: m[1] };
     for (const ch of ['stories', 'news', 'government']) {
@@ -57,6 +60,7 @@
   }
   function titleFor(s) {
     if (s.text) return `Page ${s.text} · BadCode Text`;
+    if (s.ch === 'stories' && s.p === SV) return SVP.title + ' · BadCode';
     if (s.ch === 'stories') { const st = S[(s.p - 1) % S.length]; return (s.p > S.length ? `${st.song} (song)` : st.title) + ' · BadCode'; }
     if (s.ch === 'news') return 'Money For Something · BadCode';
     if (s.ch === 'government') { const mm = s.p === 1 && s.minister && CAB.find(x => x.post === s.minister); return (s.p === 2 ? 'Future Proof' : mm ? mm.title + ' · The BadCode Government' : 'The BadCode Government') + (mm ? '' : ' · BadCode'); }
@@ -83,7 +87,7 @@
   }
 
   // ---------- video ----------
-  function videoFor(s) { if (s.ch === 'stories') { const st = S[(s.p - 1) % S.length]; return s.p > S.length ? st.songVideo : st.film; } if (s.ch === 'news') { const b = C.news.bulletins[s.p - 1]; return b && b.youtube; } return null; }
+  function videoFor(s) { if (s.ch === 'stories' && s.p === SV) return null; if (s.ch === 'stories') { const st = S[(s.p - 1) % S.length]; return s.p > S.length ? st.songVideo : st.film; } if (s.ch === 'news') { const b = C.news.bulletins[s.p - 1]; return b && b.youtube; } return null; }
   function stopVideo() { video.innerHTML = ''; video.classList.remove('on'); tv.classList.remove('playing'); }
   function play(id) {
     video.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1" title="${esc(titleFor(state))}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
@@ -96,8 +100,14 @@
     clearTimeout(govTimer); stopVideo();
     tv.classList.toggle('daylight', state.ch === 'government');
     tv.classList.toggle('fp-on', state.ch === 'government' && state.p === 2); // the talk: broadcast, so scanlines back on
+    tv.classList.toggle('sv-on', state.ch === 'stories' && state.p === SV); // the hologram brings its own CRT: the TV's scanlines step aside
     const s = state;
-    if (s.ch === 'stories') {
+    if (s.ch === 'stories' && s.p === SV) {
+      // The Storyverse: Maddie's hologram plays inside the screen. A static page derived from the editor page by
+      // apps/site/storyverse.mjs (source design/2026-11-05-gpom-meeting/lookdev/index.html); it asks for a tap, for the sound.
+      prog.innerHTML = `<div class="p-sv"><iframe src="${esc(SVP.hologram)}" title="${esc(SVP.title)}: Maddie's hologram" allow="autoplay; fullscreen"></iframe>
+        <a class="fp-full" href="${esc(SVP.hologram)}">Full screen</a></div>`;
+    } else if (s.ch === 'stories') {
       const i = (s.p - 1) % S.length, st = S[i], song = s.p > S.length, vid = song ? st.songVideo : st.film;
       const pic = st.still ? `<img class="still" src="${esc(st.still)}" alt="">` : `<div class="blank"><span>PICTURE COMING</span></div>`;
       const sleeve = song ? `<div class="sleeve">${st.still ? `<img src="${esc(st.still)}" alt="">` : ''}</div>` : '';
@@ -158,7 +168,8 @@
       100: () => [head(p), '', title('bb y', 'BADCODE TEXT'), '', L('c', ' Received from a future that went wrong'), '',
         dots('Stories: films and songs', 200), dots('News: Money For Something', 300), dots('The BadCode Government', 400), dots('Future Proof', 888), dots('Follow BadCode', 700), dots('About BadCode', 800), '',
         L('m', ' We have seen how this ends. We came'), L('m', ' back to change it. Type a page, or'), L('m', ' press a colour below.')],
-      200: () => [head(p), '', title('br w', 'STORIES'), '', ...S.flatMap((st, i) => [`<span class="w"> ${i + 1} </span>${link(201 + i, st.title.toUpperCase().slice(0, 34))}`, L('c', `   song ${i + 5}: ${st.song.slice(0, 30)}`)]), '',
+      200: () => [head(p), '', title('br w', 'STORIES'), '', ...S.flatMap((st, i) => [`<span class="w"> ${i + 1} </span>${link(201 + i, st.title.toUpperCase().slice(0, 34))}`, L('c', `   song ${i + 5}: ${st.song.slice(0, 30)}`)]),
+        `<span class="w"> ${SV} </span>${L('y', SVP.title.toUpperCase().slice(0, 34))}`, L('c', "   Maddie's hologram"), '',
         L('w', ' Each film works on its own. They also'), L('w', ' share one universe.'), '', L('g', ' Channel 1 for pictures: press STORIES')],
       300: () => [head(p), '', title('br w', 'MONEY FOR SOMETHING'), '', ...wrap(n.strap), '', L('y', ' ' + n.status), '', ...wrap(n.ticker[2]), '', L('m', ' "' + n.signoff.slice(0, 35)), L('m', '  ' + n.signoff.slice(35) + '"'), '', L('b', ' Working name.')],
       400: () => [head(p), '', title('by', 'THE BADCODE GOVERNMENT'), '', L('w', ' THE MANIFESTO'), '', ...g.pledges.flatMap((pl, i) => [L('y', ` PLEDGE ${i + 1}`) + L('w', ' ' + pl[0].slice(0, 28)), ...wrap(pl[1], 34, '   ').map(x => L('c', x)), '']),

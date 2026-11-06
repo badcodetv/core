@@ -21,6 +21,12 @@
      "blurb": "Eleven politicians and pundits in black suits and thin black ties. One bank, one plan, eleven code names. Now, who's running point?",
      "still": null, "film": null, "songVideo": null}
   ],
+  "storyverse": {
+    "title": "The Storyverse",
+    "blurb": "Maddie, a delivery robot, explains why your choices matter.",
+    "hologram": "/storyverse/hologram/",
+    "still": "/stills/storyverse.webp"
+  },
   "news": {
     "title": "Money For Something",
     "strap": "The news, read by someone who has already seen next week.",

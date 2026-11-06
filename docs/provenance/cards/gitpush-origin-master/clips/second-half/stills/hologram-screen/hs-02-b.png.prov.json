@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hs-02-b.png",
+ "made": "2026-11-05T19:00:58.283Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Take the attached photograph of the grey delivery robot with the little round tube television fixed beneath its body, and move in close: the small screen now fills the centre of the picture, about a third of the frame wide, its curved bulging glass and thick rounded grey surround sharp, faint horizontal scanlines across the glass and a thin bright white horizontal line glowing across the middle of the tube as if it is just switching on. Around it, out of focus, the dented grey underside, two rivets, a corner of torn faded bunting and the black tyres. Reflections of the grey sky slide across the glass. Same overcast daylight, same muted cool palette and fine film grain as the original. Photographic, 16:9, nothing written anywhere in the picture.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hs-01-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hs-01-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1c926c47-86ef-4e99-a7b7-084c9a5cef25"
+}

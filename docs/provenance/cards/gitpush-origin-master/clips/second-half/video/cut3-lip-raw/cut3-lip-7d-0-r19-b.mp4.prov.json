@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-r19-b.mp4",
+ "made": "2026-11-05T21:41:18.032Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The shot stays fixed; only the people move. Derek, the husband in the dark green jumper, stands silent for a second taking the telling-off, then mumbles a quick, sheepish apology, running the words together. He says: I'm really sorry, love. Then his mouth closes and he looks at the floor. His wife, her back to us, stays quiet and still.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 6
+ },
+ "source_id": "2c195829-76a6-469a-a55f-f2c3b61a65c7"
+}

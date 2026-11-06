@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/gpom-sh-a-boss-3-c-v6-w25-f6a70f8b.preview.mp3",
+ "made": "2026-11-05T21:07:29+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "f6a70f8b-0cd5-44f6-bde9-3e76faf4b148",
+ "inputs": {
+  "title": "gpom-sh-a-boss-3-C-v6-w25",
+  "song": "https://suno.com/song/f6a70f8b-0cd5-44f6-bde9-3e76faf4b148"
+ },
+ "settings": {
+  "durationSec": 7.56,
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+  "atom": "gpom-sh-a-boss-3 revision C",
+  "round": "5"
+ },
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/gpom-sh-a-boss-3-c-v6-w25-f6a70f8b.wav",
+ "why": "Kai, GPOM scene A cut round 18: the boss's line re-recorded quicker (brisk delivery), not sped up"
+}

@@ -4,7 +4,7 @@ The website is a television. Its three strands are channels, and number keys pic
 
 | Remote | Channel | Programmes | Address |
 | --- | --- | --- | --- |
-| STORIES | BadCode One | 1–4 the films, 5–8 their songs | `/stories`, `/stories/1` … `/stories/8` |
+| STORIES | BadCode One | 1–4 the films, 5–8 their songs, 9 The Storyverse (Maddie's hologram plays in the screen) | `/stories`, `/stories/1` … `/stories/9` (also `/storyverse`) |
 | NEWS | Money For Something (working name) | 1 = latest bulletin, then older ones | `/news`, `/news/2` … |
 | GOVT | The BadCode Government | 1 the manifesto (the cabinet; each minister at `/government/<post>`), 2 Future Proof (the talk plays in the screen) | `/government`, `/government/2` (also `/future-proof`) |
 | 0 | Test card | about BadCode | `/about` |
@@ -53,6 +53,24 @@ any change to the deck, regenerate it, then build the site:
 
 Opened on its own (the "Full screen" link), the talk shows a "Back to the TV" link. The words of
 Future Proof for teletext page 888 and the plain-text page still come from `content.json`.
+
+## The Storyverse (STORIES 9)
+
+STORIES programme 9 plays Maddie's hologram inside the screen, in an iframe of `/storyverse/hologram/`.
+That page, `public/storyverse/hologram/index.html`, is **generated**: `storyverse.mjs` derives it from the
+hologram's editor page, `design/2026-11-05-gpom-meeting/lookdev/index.html` (look locked), keeping the scene
+code and the default timing and dropping the editor (timeline, sliders, subtitles, saving). `build.mjs`
+regenerates it on every build, so never edit it by hand. If the editor page changes shape so the derivation
+no longer understands it, the build warns and keeps the last copy. It needs a tap to start (for the sound), plays
+once from the CRT switch-on to the switch-off, then offers to watch again. three.js comes from jsdelivr.
+
+The voice is `public/storyverse/hologram/voice/cNN.mp3` (96 kbps mono), encoded from the WAV masters on D:.
+After a line is re-voiced, re-encode:
+
+    node apps/site/storyverse.mjs --voice /mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/clips
+
+Its link-preview still is `public/stills/storyverse.webp` (a frame of the choices, 27 s in). Its words are
+`storyverse` in `content.json`: setup only (Kai knowingly let the hologram itself reveal parts of GPOM).
 
 ## Build and preview
 

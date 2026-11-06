@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-02-b.png",
+ "made": "2026-11-05T19:41:00.966Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Second image is the little grey delivery robot: copy it exactly. First image gives the ruined street, the white sky and the colour grade. New camera position: lying on its back on the tarmac directly beneath the robot, lens pointing straight up at the sky. The robot's flat underbelly fills almost the whole picture, seen from below: plain grey sheet metal in deep shadow, nearly black in the middle, a few rivets and a seam catching faint light, the inner sides of the black tyres cutting into the four corners, a ragged strip of the bunting hanging down at the top edge. Only thin slivers of pale overcast sky show around the outside edges. No screen, no lights, nothing glowing. Dark, quiet, still. Photographic, 16:9, no writing anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33b6b754-f9c4-4e38-b97d-dde95cd4029b/scratchpad/maddie/street-45.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33b6b754-f9c4-4e38-b97d-dde95cd4029b/scratchpad/maddie/street-45.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "77e0b3ee-7c45-477a-9c9f-e8526643bac3"
+}

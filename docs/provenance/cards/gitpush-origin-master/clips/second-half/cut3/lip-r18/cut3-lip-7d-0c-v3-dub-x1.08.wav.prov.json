@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/lip-r18/cut3-lip-7d-0c-v3-dub-x1.08.wav",
+ "made": "2026-11-05T20:58:44+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atempo=1.08",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7d-0c-v3-dub.wav",
+ "why": "round 18 faster voices: the dub sped with its shot by the same factor"
+}

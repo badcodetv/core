@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/clips/c00-bridge.wav",
+ "made": "2026-11-05T20:25:52+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atrim splice 0-5.95 + 7.45-10.48",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/take-F.wav",
+ "why": "bridge line, pause tightened"
+}

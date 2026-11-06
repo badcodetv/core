@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/clips/c00-bridge-r19.wav",
+ "made": "2026-11-05T21:44:03+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atrim 0-2.75 + 3.22-end, acrossfade 20 ms",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/clips/c00-bridge.wav",
+ "why": "round 19 (Kai at742): 'you know' cut from 'He made me learn a little presentation, you know.' (2.73-3.24 s, its own pause kept)"
+}

@@ -281,6 +281,26 @@
     }
    ],
    "gaps": []
+  },
+  {
+   "i": "bridge",
+   "who": "bot",
+   "text": "He made me learn a little presentation, you know. In case any of you ever came back. Go on, then. Gather round.",
+   "off": false,
+   "voice": "Aoede",
+   "phrases": [
+    {
+     "p": 0,
+     "text": "He made me learn a little presentation, you know. In case any of you ever came back. Go on, then. Gather round.",
+     "reused": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/clips/c00-bridge.wav",
+     "words": {
+      "back. ends": 5.4,
+      "Gather round! ends": 8.8
+     }
+    }
+   ],
+   "gaps": [],
+   "note": "round 16 (Kai, 5 Nov): the bridge into the hologram, after line 1; take F, pause tightened (its card). Absolute path: not under the media folder."
   }
  ]
 }

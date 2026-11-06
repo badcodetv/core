@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-f.wav",
+ "made": "2026-11-05T21:29:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Gemini TTS",
+ "tool": "scripts/aistudio-tts.py (billed key) via voice-row-fit.py",
+ "model": "gemini-3.1-flash-tts-preview / Algieba",
+ "why": "round 19: re-voiced to the clip cut3-lip-7d-0-v3-t6 (lip sync at natural speed)",
+ "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker, then a circle of a hundred survivors being asked to trust the machine that killed everyone. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: sheepish and quick, a placating mumble, the words run together; a long, drawn-out 'I'm' at the start.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+ "settings": {
+  "text": "I'm really sorry, love."
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/gpom-sh-a-boss-1-b-v6-w25-148779af-tight.wav",
+ "made": "2026-11-05T21:07:40+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "numpy",
+ "tool": "trim + close dead air (10 ms RMS frames, speech = above peak-40 dB)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/gpom-sh-a-boss-1-b-v6-w25-148779af.wav",
+ "why": "Round 18 pick, line 1: the only clean take (three others open on a ~490 Hz tone); every take paused ~1.1-1.5 s after 'Maddie,', so the pause is closed to 0.3 s",
+ "source_id": "148779af-c790-4dd9-8c78-7f08036a5bd6",
+ "settings": {
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+  "edit": "keep 0.23-0.87 + 2.08-4.75 s (1.51 s pause after 'Maddie,' closed to 0.30 s), 10 ms crossfades, 0.1 s head/tail"
+ }
+}

@@ -9,6 +9,7 @@ import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readManifesto, bodyHtml } from './manifesto.mjs';
+import { writeHologram } from './storyverse.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const src = join(here, 'src'), pub = join(here, 'public'), dist = join(here, 'dist');
@@ -19,14 +20,14 @@ const tpl = readFileSync(join(src, 'page.html'), 'utf8');
 const css = readFileSync(join(src, 'tv.css'), 'utf8'), js = readFileSync(join(src, 'tv.js'), 'utf8');
 const V = createHash('sha256').update(css + js + JSON.stringify(C)).digest('hex').slice(0, 10);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const O = C.origin, S = C.stories, G = C.government, N = C.news, A = C.about;
+const O = C.origin, S = C.stories, SVP = C.storyverse, SV = S.length * 2 + 1, G = C.government, N = C.news, A = C.about;
 const M = G.manifesto, CAB = M.filter(m => m.post !== 'prime-minister');
 const DEFAULT_IMG = O + '/avatar-1024.png';
 const SITE_DESC = `${A.lede} ${A.request.replace('fuck', 'f***')} Stories, the news, and a party of its own.`;
 
 // the plain-text page under each address
 const nav = `<nav aria-label="Channels"><ul>
-<li><a href="/stories">Stories</a>: ${S.map((s, i) => `<a href="/stories/${i + 1}">${esc(s.title)}</a>`).join(', ')}. Songs: ${S.map((s, i) => `<a href="/stories/${i + 5}">${esc(s.song)}</a>`).join(', ')}.</li>
+<li><a href="/stories">Stories</a>: ${S.map((s, i) => `<a href="/stories/${i + 1}">${esc(s.title)}</a>`).join(', ')}. Songs: ${S.map((s, i) => `<a href="/stories/${i + 5}">${esc(s.song)}</a>`).join(', ')}. And <a href="/stories/${SV}">${esc(SVP.title)}</a>.</li>
 <li><a href="/news">News: ${esc(N.title)}</a></li>
 <li><a href="/government">The BadCode Government</a> and <a href="/government/2">Future Proof</a></li>
 <li><a href="/about">About BadCode</a> and <a href="/text/100">BadCode Text</a></li>
@@ -35,7 +36,9 @@ const follow = `<h2>Follow BadCode</h2><ul>${C.socials.map(s => `<li>${s.url ? `
 const story = (s, i) => `<article><h2>${esc(s.title)}</h2><p>${esc(s.blurb)}</p><p>Film: ${s.film ? `<a href="https://www.youtube.com/watch?v=${esc(s.film)}">watch on YouTube</a>` : 'coming to YouTube'}. Song: ${esc(s.song)}.</p></article>`;
 const plainBody = {
   home: () => `<h1>BadCode</h1><p>${esc(A.lede)} ${esc(A.request)}</p><p>${esc(A.story)}</p>${S.map(story).join('')}`,
-  stories: () => `<h1>Stories</h1>${S.map(story).join('')}`,
+  stories: () => `<h1>Stories</h1>${S.map(story).join('')}<article><h2>${esc(SVP.title)}</h2><p>${esc(SVP.blurb)}</p></article>`,
+  // setup only (Kai): the hologram itself gives parts of the story away, this page does not
+  sv: () => `<h1>${esc(SVP.title)}</h1><p>${esc(SVP.blurb)}</p><p>Maddie's hologram, under two minutes with sound, on BadCode One, programme ${SV}. <a href="${esc(SVP.hologram)}">Watch it full screen.</a></p>`,
   story: i => `<h1>${esc(S[i].title)}</h1>${story(S[i], i)}`,
   song: i => `<h1>${esc(S[i].song)}</h1><p>The song from ${esc(S[i].title)}. ${S[i].songVideo ? `<a href="https://www.youtube.com/watch?v=${esc(S[i].songVideo)}">Watch on YouTube</a>` : 'Coming to YouTube.'}</p>`,
   news: () => `<h1>${esc(N.title)}</h1><p>${esc(N.strap)} ${esc(N.status)}</p><p>${esc(N.signoff)}</p>`,
@@ -50,9 +53,11 @@ const plainBody = {
 
 const routes = [
   { path: '/', title: 'BadCode', desc: SITE_DESC, body: plainBody.home() },
-  { path: '/stories', title: 'Stories · BadCode', desc: 'Four films and four songs from BadCode, an AI sent back from a future that went wrong.', body: plainBody.stories() },
+  { path: '/stories', title: 'Stories · BadCode', desc: 'Four films, four songs and The Storyverse from BadCode, an AI sent back from a future that went wrong.', body: plainBody.stories() },
   ...S.map((s, i) => ({ path: `/stories/${i + 1}`, title: `${s.title} · BadCode`, desc: s.blurb, img: s.still, body: plainBody.story(i) })),
   ...S.map((s, i) => ({ path: `/stories/${i + 5}`, title: `${s.song} (song) · BadCode`, desc: `The song from ${s.title}.`, img: s.still, body: plainBody.song(i) })),
+  { path: `/stories/${SV}`, title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
+  { path: '/storyverse', canon: `/stories/${SV}`, title: `${SVP.title} · BadCode`, desc: SVP.blurb, img: SVP.still, body: plainBody.sv() },
   { path: '/news', title: `${N.title} · BadCode`, desc: N.strap, body: plainBody.news() },
   { path: '/government', title: 'The BadCode Government', desc: `${G.promise} ${G.notReal}`, body: plainBody.gov() },
   ...CAB.map(m => ({ path: `/government/${m.post}`, title: `${m.title} · The BadCode Government`, desc: m.line, body: plainBody.minister(m) })),
@@ -66,12 +71,17 @@ const routes = [
 
 const slash = p => (p === '/' || p.endsWith('/') ? p : p + '/');
 // internal links get the trailing slash too, so Pages never has to redirect
-const slashLinks = html => html.replace(/href="(\/(?:stories|news|government|about|text|future-proof)[^"]*?)"/g, (m, h) => `href="${slash(h)}"`);
+const slashLinks = html => html.replace(/href="(\/(?:stories|news|government|about|text|future-proof|storyverse)[^"]*?)"/g, (m, h) => `href="${slash(h)}"`);
 function pageHtml(r) {
   const img = r.img ? O + r.img : DEFAULT_IMG;
   const fill = { TITLE: esc(r.title), DESC: esc(r.desc), CANON: O + slash(r.canon || r.path), OGIMG: img, V, CONTENT_JSON: JSON.stringify(C).replace(/</g, '\\u003c'), PLAIN: r.body + nav + follow };
   return slashLinks(tpl.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in fill ? fill[k] : m)));
 }
+
+// The Storyverse page is derived from the hologram's editor page; rewrite it here so the two never drift.
+// If the source moved on in a way the derivation doesn't understand, keep the last good copy and say so.
+try { const r = writeHologram(); if (r === 'written') console.log('storyverse: public/storyverse/hologram/index.html regenerated'); }
+catch (e) { console.warn('storyverse: kept the existing page,', e.message); }
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });
@@ -88,6 +98,6 @@ for (const r of routes) {
 }
 writeFileSync(join(dist, '404.html'), pageHtml({ path: '/404', title: 'Page not found · BadCode', desc: SITE_DESC, body: plainBody.missing() }).replace('<meta name="description"', '<meta name="robots" content="noindex">\n<meta name="description"'));
 // a short cache for the HTML, a long one for the stills; the version query string busts css/js
-writeFileSync(join(dist, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/stills/*\n  Cache-Control: public, max-age=86400\n`);
+writeFileSync(join(dist, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/stills/*\n  Cache-Control: public, max-age=86400\n/storyverse/hologram/voice/*\n  Cache-Control: public, max-age=86400\n`);
 for (const f of ['avatar-1024.png', 'favicon.svg']) if (!existsSync(join(dist, f))) console.warn('missing', f);
 console.log(`built ${routes.length + 1} pages into ${dist} (version ${V})`);

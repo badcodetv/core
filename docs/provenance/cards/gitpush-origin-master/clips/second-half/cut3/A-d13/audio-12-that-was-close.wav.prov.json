@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d13/audio-12-that-was-close.wav",
+ "made": "2026-11-05T20:11:38+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/cut3.py --tag d4",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/a3/12-0-bot-a-tight.wav",
+ "why": "Kai at5600: just \"That was close.\" (the take from after its pause)",
+ "settings": {
+  "from": "4.574"
+ }
+}

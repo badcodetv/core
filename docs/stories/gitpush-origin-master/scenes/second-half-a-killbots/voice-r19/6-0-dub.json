@@ -1,0 +1,21 @@
+{
+ "duration": 8.043,
+ "phrases": [
+  {
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-a.wav",
+   "from": 0.26,
+   "to": 1.0,
+   "at": 0.0,
+   "tempo": 1.07,
+   "text": "Derek."
+  },
+  {
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-a.wav",
+   "from": 1.0,
+   "to": 3.12,
+   "at": 0.6916,
+   "tempo": 1.07,
+   "text": "You've left the seat up."
+  }
+ ]
+}

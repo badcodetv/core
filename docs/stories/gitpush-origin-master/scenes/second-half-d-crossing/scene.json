@@ -914,7 +914,7 @@
       "what": "page round 6: round 5 plus the re-made suits (D00r7) and tea (D06r7, pick b-a) shots (1:12)",
       "how": "cut_end_d.py --tag r6; premiere-plan.py <edl> premiere-r3.json --tag r3 --seq '06 GPOM story D crossing r3'",
       "check": {
-        "at": "2026-11-04T20:12",
+        "at": "2026-11-05T21:51",
         "state": "in sync",
         "why": ""
       }

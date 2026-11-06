@@ -1,0 +1,506 @@
+[
+ [
+  0.593,
+  "cut3-lip-7d-0-v3-t3",
+  "7d-0c-b.wav",
+  1.6458,
+  1.08,
+  {
+   "corr": 0.593,
+   "shut": 0.0
+  },
+  "i'm really sorry love"
+ ],
+ [
+  0.549,
+  "cut3-lip-7d-0-v3-t3",
+  "06-07-0v2-man-c.wav",
+  1.9583,
+  1.08,
+  {
+   "corr": 0.549,
+   "shut": 0.0
+  },
+  "i'm really sorry love"
+ ],
+ [
+  0.481,
+  "cut3-lip-7d-0-v3-t3",
+  "7d-0c-a.wav",
+  2.0208,
+  0.97,
+  {
+   "corr": 0.481,
+   "shut": 0.0
+  },
+  "i'm really sorry love"
+ ],
+ [
+  0.415,
+  "cut3-lip-7d-0-v3-t3",
+  "7d-0c-e.wav",
+  1.8125,
+  1.05,
+  {
+   "corr": 0.615,
+   "shut": 0.1
+  },
+  "i'm really sorry love"
+ ],
+ [
+  0.313,
+  "cut3-lip-7d-0-v3-t4",
+  "7d-0c-a.wav",
+  1.5417,
+  1.04,
+  {
+   "corr": 0.58,
+   "shut": 0.133
+  },
+  "i'm really sorry love i'm really sorry love"
+ ],
+ [
+  0.286,
+  "cut3-lip-7d-0-v3-t4",
+  "06-07-0v2-man-c.wav",
+  1.5,
+  1.03,
+  {
+   "corr": 0.564,
+   "shut": 0.139
+  },
+  "i'm really sorry love i'm really sorry love"
+ ],
+ [
+  0.219,
+  "cut3-lip-7d-0-v3-t3",
+  "7d-0c-f.wav",
+  1.8125,
+  1.08,
+  {
+   "corr": 0.582,
+   "shut": 0.182
+  },
+  "i'm really sorry love"
+ ],
+ [
+  0.189,
+  "cut3-lip-7d-0-v3-t3",
+  "7d-0c-c.wav",
+  1.8542,
+  1.08,
+  {
+   "corr": 0.552,
+   "shut": 0.182
+  },
+  "i'm really sorry love"
+ ],
+ [
+  0.153,
+  "cut3-lip-7d-0-v3-t4",
+  "7d-0c-e.wav",
+  1.5,
+  1.06,
+  {
+   "corr": 0.563,
+   "shut": 0.205
+  },
+  "i'm really sorry love i'm really sorry love"
+ ],
+ [
+  0.132,
+  "cut3-lip-7d-0-v3-t6",
+  "7d-0c-a.wav",
+  2.125,
+  1.07,
+  {
+   "corr": 0.477,
+   "shut": 0.172
+  },
+  "i'm really sorry love"
+ ],
+ [
+  0.031,
+  "cut3-lip-7d-0-v3-t7",
+  "7d-0c-a.wav",
+  2.5,
+  1.08,
+  {
+   "corr": 0.582,
+   "shut": 0.276
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.09,
+  "cut3-lip-7d-0-v3-t6",
+  "06-07-0v2-man-c.wav",
+  2.0625,
+  1.08,
+  {
+   "corr": 0.498,
+   "shut": 0.294
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.116,
+  "cut3-lip-7d-0-v3-t1",
+  "7d-0c-a.wav",
+  2.4167,
+  1.08,
+  {
+   "corr": 0.435,
+   "shut": 0.276
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.267,
+  "cut3-lip-7d-0-v3-t7",
+  "06-07-0v2-man-c.wav",
+  2.4167,
+  1.08,
+  {
+   "corr": 0.498,
+   "shut": 0.382
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.414,
+  "cut3-lip-7d-0-v3-t6",
+  "7d-0c-e.wav",
+  2.0417,
+  1.06,
+  {
+   "corr": 0.355,
+   "shut": 0.385
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.449,
+  "cut3-lip-7d-0-v3-t1",
+  "06-07-0v2-man-c.wav",
+  2.375,
+  1.08,
+  {
+   "corr": 0.316,
+   "shut": 0.382
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.465,
+  "cut3-lip-7d-0-v3-t4",
+  "7d-0c-c.wav",
+  1.5417,
+  1.08,
+  {
+   "corr": 0.22,
+   "shut": 0.342
+  },
+  "i'm really sorry love i'm really sorry love"
+ ],
+ [
+  -0.489,
+  "cut3-lip-7d-0-v3-t7",
+  "7d-0c-e.wav",
+  2.4167,
+  1.06,
+  {
+   "corr": 0.434,
+   "shut": 0.462
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.586,
+  "cut3-lip-7d-0-v3-t4",
+  "7d-0c-b.wav",
+  1.5,
+  1.08,
+  {
+   "corr": 0.124,
+   "shut": 0.355
+  },
+  "i'm really sorry love i'm really sorry love"
+ ],
+ [
+  -0.632,
+  "cut3-lip-7d-0-v3-t4",
+  "7d-0c-f.wav",
+  1.5,
+  1.08,
+  {
+   "corr": 0.168,
+   "shut": 0.4
+  },
+  "i'm really sorry love i'm really sorry love"
+ ],
+ [
+  -0.672,
+  "cut3-lip-7d-0-v3-t1",
+  "7d-0c-e.wav",
+  2.375,
+  1.06,
+  {
+   "corr": 0.251,
+   "shut": 0.462
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.672,
+  "cut3-lip-7d-0-v3-t5",
+  "7d-0c-a.wav",
+  2.9167,
+  1.08,
+  {
+   "corr": 0.156,
+   "shut": 0.414
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.689,
+  "cut3-lip-7d-0-v3-t2",
+  "7d-0c-f.wav",
+  2.1667,
+  0.97,
+  {
+   "corr": 0.081,
+   "shut": 0.385
+  },
+  "i'm i'm really sorry love"
+ ],
+ [
+  -0.694,
+  "cut3-lip-7d-0-v3-t2",
+  "7d-0c-c.wav",
+  2.1667,
+  0.97,
+  {
+   "corr": 0.163,
+   "shut": 0.429
+  },
+  "i'm i'm really sorry love"
+ ],
+ [
+  -0.78,
+  "cut3-lip-7d-0-v3-t6",
+  "7d-0c-b.wav",
+  2.0208,
+  1.08,
+  {
+   "corr": 0.153,
+   "shut": 0.467
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.901,
+  "cut3-lip-7d-0-v3-t2",
+  "7d-0c-b.wav",
+  2.3333,
+  0.97,
+  {
+   "corr": 0.185,
+   "shut": 0.543
+  },
+  "i'm i'm really sorry love"
+ ],
+ [
+  -0.922,
+  "cut3-lip-7d-0-v3-t5",
+  "06-07-0v2-man-c.wav",
+  2.9167,
+  1.08,
+  {
+   "corr": 0.078,
+   "shut": 0.5
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -0.97,
+  "cut3-lip-7d-0-v3-t7",
+  "7d-0c-b.wav",
+  2.3958,
+  1.08,
+  {
+   "corr": 0.096,
+   "shut": 0.533
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.035,
+  "cut3-lip-7d-0-v3-t1",
+  "7d-0c-b.wav",
+  2.3542,
+  1.06,
+  {
+   "corr": -0.002,
+   "shut": 0.516
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.035,
+  "cut3-lip-7d-0-v3-t6",
+  "7d-0c-c.wav",
+  2.0833,
+  1.08,
+  {
+   "corr": 0.018,
+   "shut": 0.526
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.038,
+  "cut3-lip-7d-0-v3-t2",
+  "7d-0c-a.wav",
+  2.1042,
+  1.05,
+  {
+   "corr": 0.028,
+   "shut": 0.533
+  },
+  "i'm i'm really sorry love"
+ ],
+ [
+  -1.079,
+  "cut3-lip-7d-0-v3-t2",
+  "06-07-0v2-man-c.wav",
+  2.0417,
+  1.07,
+  {
+   "corr": 0.098,
+   "shut": 0.588
+  },
+  "i'm i'm really sorry love"
+ ],
+ [
+  -1.116,
+  "cut3-lip-7d-0-v3-t5",
+  "7d-0c-e.wav",
+  2.8958,
+  1.08,
+  {
+   "corr": 0.012,
+   "shut": 0.564
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.209,
+  "cut3-lip-7d-0-v3-t6",
+  "7d-0c-f.wav",
+  2.0625,
+  1.07,
+  {
+   "corr": -0.02,
+   "shut": 0.595
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.316,
+  "cut3-lip-7d-0-v3-t7",
+  "7d-0c-c.wav",
+  2.4583,
+  1.08,
+  {
+   "corr": 0.105,
+   "shut": 0.711
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.322,
+  "cut3-lip-7d-0-v3-t7",
+  "7d-0c-f.wav",
+  2.4167,
+  1.08,
+  {
+   "corr": 0.106,
+   "shut": 0.714
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.325,
+  "cut3-lip-7d-0-v3-t2",
+  "7d-0c-e.wav",
+  2.0417,
+  1.06,
+  {
+   "corr": -0.043,
+   "shut": 0.641
+  },
+  "i'm i'm really sorry love"
+ ],
+ [
+  -1.368,
+  "cut3-lip-7d-0-v3-t5",
+  "7d-0c-b.wav",
+  2.9167,
+  1.08,
+  {
+   "corr": -0.168,
+   "shut": 0.6
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.591,
+  "cut3-lip-7d-0-v3-t1",
+  "7d-0c-c.wav",
+  2.4167,
+  1.08,
+  {
+   "corr": -0.117,
+   "shut": 0.737
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.628,
+  "cut3-lip-7d-0-v3-t1",
+  "7d-0c-f.wav",
+  2.375,
+  1.08,
+  {
+   "corr": -0.142,
+   "shut": 0.743
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.937,
+  "cut3-lip-7d-0-v3-t5",
+  "7d-0c-c.wav",
+  2.9167,
+  1.08,
+  {
+   "corr": -0.305,
+   "shut": 0.816
+  },
+  "i'm really sorry love"
+ ],
+ [
+  -1.956,
+  "cut3-lip-7d-0-v3-t5",
+  "7d-0c-f.wav",
+  2.875,
+  1.08,
+  {
+   "corr": -0.299,
+   "shut": 0.829
+  },
+  "i'm really sorry love"
+ ]
+]

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1k-24/hologram-1k-24fps-voice.wav",
+ "made": "2026-11-05T20:15:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Gemini TTS",
+ "tool": "ffmpeg adelay+amix from edit.json",
+ "model": "Aoede",
+ "why": "voice bed placed on the 24 fps hologram's timeline",
+ "inputs": {
+  "clips": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/clips",
+  "edit": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1k-24/edit.json"
+ }
+}

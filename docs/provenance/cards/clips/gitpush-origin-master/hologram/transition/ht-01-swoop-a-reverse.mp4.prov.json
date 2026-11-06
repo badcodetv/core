@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/transition/ht-01-swoop-a-reverse.mp4",
+ "made": "2026-11-05T20:11:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg reverse",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/transition/ht-01-swoop-a.mp4"
+}

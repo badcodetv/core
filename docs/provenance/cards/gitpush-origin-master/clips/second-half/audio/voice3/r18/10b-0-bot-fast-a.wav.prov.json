@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r18/10b-0-bot-fast-a.wav",
+ "made": "2026-11-05T20:56:56+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Gemini TTS",
+ "tool": "scripts/aistudio-tts.py (billed key)",
+ "model": "gemini-3.1-flash-tts-preview / Aoede",
+ "why": "round 18 faster voices (Kai, 5 Nov meeting): Pace fast, clipped, [fast] tag; take a",
+ "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war, then a Cold War bunker under a Wiltshire hill. She is the only friendly thing left, and she knows it.\n\n### DIRECTOR'S NOTES\nEmotion for this line: urgent, rattled.\nStyle: dry, warm and cheeky, apologetic for her boss but fond of him; quick, natural conversational rhythm, a bit of a gossip; clear articulation.\nPace: fast, clipped, joining phrases with commas; no gaps between phrases.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+ "settings": {
+  "text": "[fast] Well, you'd better bloody hurry up, boss, they're nearly there."
+ }
+}

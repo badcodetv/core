@@ -320,5 +320,134 @@
   "decided": [
    "it's perfect. That's the one. No changes."
   ]
+ },
+ {
+  "at": "2026-11-05T20:16:20+00:00",
+  "stage": "timeline",
+  "round": 15,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 15 (A-d13): draft 1K hologram in via a swoop under Maddie (swoop 24.92, hologram 32.83-136.00, pull-out 136.00-143.92); old monologue + side/overhead inserts out; street sound down under the hologram; 4:14",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d13 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A",
+  "decided": [
+   "2026-11-05, Kai: draft 1K hologram in (commit graph), replaces the old monologue"
+  ]
+ },
+ {
+  "at": "2026-11-05T20:20:22+00:00",
+  "stage": "premiere",
+  "round": 15,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Premiere '03 GPOM story A kill bots r12' built from A-d13, in sync (77 placed, 0 failed); Kai's r11 A1 music tail (Git Push Origin Master.mp3 168.96-179.13 at 0-10.17 s) carried over, its audio fade not (bridge has no audio transitions); frames: D:\\badcode-videos\\gitpush-origin-master\\frames\\r12-A-*.jpg"
+ },
+ {
+  "at": "2026-11-05T20:32:05+00:00",
+  "stage": "timeline",
+  "round": 15,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 15 notes dumped (no new page notes; Kai's notes came in chat)",
+  "decided": [
+   "No swoop and no pull-out. No funky camera work.",
+   "New bridge line: He made me learn a little presentation, you know. In case any of you ever came back. Go on, then. Gather round."
+  ],
+  "feedback": "feedback/timeline-r15",
+  "feedback_docs": 49
+ },
+ {
+  "at": "2026-11-05T20:32:31+00:00",
+  "stage": "timeline",
+  "round": 16,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 16 (A-d14): no swoop/pull-out; bridge line 24.92-33.38; street fades to black 33.38-34.38; hologram 34.38-137.54; fade-up 137.54-138.54 on continuous street; 4:08",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d14 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-05T20:35:10+00:00",
+  "stage": "premiere",
+  "round": 16,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Premiere '03 GPOM story A kill bots r13' built from A-d14, in sync (78 placed incl. Kai's r11 A1 music tail, 0 failed; its audio fade still to add by hand); frames D:\\badcode-videos\\gitpush-origin-master\\frames\\r13-A-*.jpg"
+ },
+ {
+  "at": "2026-11-05T20:52:02+00:00",
+  "stage": "timeline",
+  "round": 16,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 16 page notes dumped (none new); round 17 brief came via the coordinator",
+  "decided": [
+   "the brutal kill-bot cut (Kai approved): hard cut to the row; drop 1-4, 8, 9b, 10a; call trimmed; stand-down on RT01, no HUD; bridge loudness-matched"
+  ],
+  "feedback": "feedback/timeline-r16",
+  "feedback_docs": 49
+ },
+ {
+  "at": "2026-11-05T20:52:02+00:00",
+  "stage": "timeline",
+  "round": 17,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 17 (A-d15): brutal kill-bot cut; 6 143.67, 7 146.17, 9a 161.00, 11 165.00, 10b 183.17, 12 188.17; bridge part A +3.9 dB; 3:15",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d15 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-05T20:54:22+00:00",
+  "stage": "premiere",
+  "round": 17,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Premiere '03 GPOM story A kill bots r14' built from A-d15, in sync (61 placed incl. Kai's A1 music tail, 0 failed); frames D:\\badcode-videos\\gitpush-origin-master\\frames\\r14-A-*.jpg"
+ },
+ {
+  "at": "2026-11-05T21:06:03+00:00",
+  "stage": "timeline",
+  "round": 18,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 18 (A-d16): faster voices; row sped picture+voice (x1.08-1.15), 0.2 s gaps, lip offsets unchanged from v3 by measurement; Maddie re-voiced fast (Gemini billed, 8 takes); boss re-records pending; 3:11",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d16 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A",
+  "decided": [
+   "faster speech: punctuation + [fast] at source, atempo as a fallback",
+   "please spend effort getting the lip syncing perfect for the spoken lines"
+  ]
+ },
+ {
+  "at": "2026-11-05T21:14:59+00:00",
+  "stage": "timeline",
+  "round": 18,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 18 page republished with the Suno boss re-records (tight takes): 3:08"
+ },
+ {
+  "at": "2026-11-05T21:14:59+00:00",
+  "stage": "premiere",
+  "round": 18,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Premiere '03 GPOM story A kill bots r16' built from A-d16 final (Suno boss in), in sync; r15 built before the boss landed, marked stale; stems placed from stems-r16 copies (Premiere cached the same-path stems); lip frame pairs D:\\badcode-videos\\gitpush-origin-master\\frames\\r15-A-lip-*.jpg"
+ },
+ {
+  "at": "2026-11-05T21:49:57+00:00",
+  "stage": "timeline",
+  "round": 18,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 18 notes (dumped by the coordinator): at742, at3777, at4194, at4230",
+  "decided": [
+   "we should loose Maddie saying 'you know' here",
+   "This clip looks speeded up - are we able to re-render it to get better lip synching? ... it's a pivotal scene and we really need the lip synching to work",
+   "We should loose this line altogether - it should go from 'simulations again' direct to the next shot",
+   "We should not have this cut at all"
+  ],
+  "feedback": "feedback/timeline-r18",
+  "feedback_docs": 53
+ },
+ {
+  "at": "2026-11-05T21:49:57+00:00",
+  "stage": "timeline",
+  "round": 19,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 19 (A-d17): row at natural speed, lips re-fitted (voice-row-fit.py: 2 new Omni talking clips 7d-0/7-2, 2 re-voices 7-0/7d-1, 6-0 kept v3); 'you know' cut; boss line 3 and the V3 cut-back gone; 3:06; Flow 2 calls x2 candidates (Omni Flash 6 s, ~80 credits list), Gemini 36 TTS calls",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d17 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-05T21:53:09+00:00",
+  "stage": "premiere",
+  "round": 19,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Premiere '03 GPOM story A kill bots r17' built from A-d17, in sync (57 placed incl. Kai's A1 music tail, 0 failed); frames D:\\badcode-videos\\gitpush-origin-master\\frames\\r17-A-*.jpg"
  }
 ]

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/transition/ht-02-tilt-a.mp4",
+ "made": "2026-11-05T19:59:57.958Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One slow continuous camera move: the camera creeps forward along the road under the robot and tilts upward until it is looking up at the robot's dark underside. The robot stays parked and still.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-01-b.png",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-01-b.png",
+  "end": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-04-a.png",
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 6
+ },
+ "source_id": "b5a22a50-b283-49db-b44e-feacc881985e"
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/cut3-lip-7-2-r19-dub.wav",
+ "made": "2026-11-05T21:44:27+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py (voice-row-fit.py r19)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut3-lip/07-2-master.wav",
+ "why": "round 19 dub for cut3-lip-7-2-r19-b: one take, unbroken, x1.12"
+}

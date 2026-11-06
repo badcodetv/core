@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hs-01-a.png",
+ "made": "2026-11-05T18:59:50.242Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the bombed-out market-town street, the overcast sky and the grade, and the second image exactly for the little delivery robot (dented boxy grey body, six chunky black wheels, amber beacon on a short stalk, torn faded bunting strung across its front wheels): the camera is low, almost on the tarmac, a metre in front of the robot, tilted up to look under the front of its body. Set into the flat underside of the grey body, between the front wheels and just behind the bunting, is a small round old-fashioned cathode-ray tube screen about the size of a saucer, with a thick rounded grey bezel and slightly bulging curved glass. The screen glows a faint cold grey-blue with fine horizontal scanlines and a single tiny bright white dot at its centre, the only light under the robot; its glow catches the dents and rivets around it. The street and the church tower above the rooftops are soft behind. Hyper-realistic documentary photograph, 35mm film, fine natural grain, muted cool-neutral palette, no lens flares. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33b6b754-f9c4-4e38-b97d-dde95cd4029b/scratchpad/maddie/street-45.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33b6b754-f9c4-4e38-b97d-dde95cd4029b/scratchpad/maddie/street-45.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "18b4830c-901f-47f4-ad1e-0696f7151320"
+}

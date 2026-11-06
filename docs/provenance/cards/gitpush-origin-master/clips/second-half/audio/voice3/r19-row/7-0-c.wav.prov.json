@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-c.wav",
+ "made": "2026-11-05T21:30:20+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Gemini TTS",
+ "tool": "scripts/aistudio-tts.py (billed key) via voice-row-fit.py",
+ "model": "gemini-3.1-flash-tts-preview / Autonoe",
+ "why": "round 19: re-voiced to the clip L07-0-a (lip sync at natural speed)",
+ "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA tiled lavatory in a Cold War bunker under a hill, five years underground with a hundred people and one toilet. Echo off the tiles.\n\n### DIRECTOR'S NOTES\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: brisk and cutting, the words tumbling out, building; 'Five years underground,' fast, straight into the rest.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+ "settings": {
+  "text": "Five years underground, and you still can't put a seat down."
+ }
+}

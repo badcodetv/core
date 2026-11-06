@@ -1,0 +1,675 @@
+{
+ "6-0": {
+  "takes": [
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-a.wav",
+    "heard": "derek you've left the seat up again",
+    "miss": [],
+    "score": 0.278,
+    "at": 0.0,
+    "tempo": 1.07,
+    "detail": {
+     "corr": 0.506,
+     "shut": 0.114
+    },
+    "bounds": [
+     [
+      0.26,
+      1.0
+     ],
+     [
+      1.0,
+      3.12
+     ],
+     [
+      3.12,
+      4.6
+     ]
+    ],
+    "speech": 2.86,
+    "maxgap": 0.8
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-b.wav",
+    "heard": "derek you've left the seat up again",
+    "miss": [],
+    "score": -0.018,
+    "at": 0.125,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.382,
+     "shut": 0.2
+    },
+    "bounds": [
+     [
+      0.23,
+      1.08
+     ],
+     [
+      1.08,
+      3.0
+     ],
+     [
+      3.0,
+      4.6
+     ]
+    ],
+    "speech": 2.77,
+    "maxgap": 0.85
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-c.wav",
+    "heard": "derek you've left the sea top again",
+    "miss": [
+     "seat",
+     "up"
+    ],
+    "score": 0.051,
+    "at": 0.0,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.414,
+     "shut": 0.182
+    },
+    "bounds": [
+     [
+      0.26,
+      1.04
+     ],
+     [
+      1.04,
+      3.0
+     ],
+     [
+      3.0,
+      4.72
+     ]
+    ],
+    "speech": 2.74,
+    "maxgap": 0.68
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-d.wav",
+    "heard": "derek you've left the seat upagain",
+    "miss": [
+     "up",
+     "again"
+    ],
+    "score": -9
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-e.wav",
+    "heard": "derek you've left the seat upagain",
+    "miss": [
+     "up",
+     "again"
+    ],
+    "score": -9
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-f.wav",
+    "heard": "derek you've left the seat up again",
+    "miss": [],
+    "score": -0.127,
+    "at": 0.0417,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.397,
+     "shut": 0.262
+    },
+    "bounds": [
+     [
+      0.26,
+      0.92
+     ],
+     [
+      0.92,
+      3.59
+     ],
+     [
+      3.59,
+      4.61
+     ]
+    ],
+    "speech": 3.33,
+    "maxgap": 0.69
+   }
+  ],
+  "pick": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/6-0-a.wav"
+ },
+ "7d-0c": {
+  "takes": [
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-a.wav",
+    "heard": "i'm really sorry love",
+    "miss": [],
+    "score": 0.132,
+    "at": 2.125,
+    "tempo": 1.07,
+    "detail": {
+     "corr": 0.477,
+     "shut": 0.172
+    },
+    "bounds": [
+     [
+      0.23,
+      1.66
+     ]
+    ],
+    "speech": 1.43,
+    "maxgap": 0.0
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-b.wav",
+    "heard": "i'm really sorry love",
+    "miss": [],
+    "score": -0.78,
+    "at": 2.0208,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.153,
+     "shut": 0.467
+    },
+    "bounds": [
+     [
+      0.3,
+      2.42
+     ]
+    ],
+    "speech": 2.12,
+    "maxgap": 0.22
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-c.wav",
+    "heard": "i'm really sorry love",
+    "miss": [],
+    "score": -1.035,
+    "at": 2.0833,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.018,
+     "shut": 0.526
+    },
+    "bounds": [
+     [
+      0.31,
+      2.74
+     ]
+    ],
+    "speech": 2.43,
+    "maxgap": 0.01
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-d.wav",
+    "heard": "i'm really sorry lough",
+    "miss": [
+     "love"
+    ],
+    "score": -0.246,
+    "at": 2.0833,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.421,
+     "shut": 0.333
+    },
+    "bounds": [
+     [
+      0.25,
+      2.06
+     ]
+    ],
+    "speech": 1.81,
+    "maxgap": 0.0
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-e.wav",
+    "heard": "i'm really sorry love",
+    "miss": [],
+    "score": -0.414,
+    "at": 2.0417,
+    "tempo": 1.06,
+    "detail": {
+     "corr": 0.355,
+     "shut": 0.385
+    },
+    "bounds": [
+     [
+      0.27,
+      2.23
+     ]
+    ],
+    "speech": 1.96,
+    "maxgap": 0.0
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-f.wav",
+    "heard": "i'm really sorry love",
+    "miss": [],
+    "score": -1.209,
+    "at": 2.0625,
+    "tempo": 1.07,
+    "detail": {
+     "corr": -0.02,
+     "shut": 0.595
+    },
+    "bounds": [
+     [
+      0.23,
+      2.65
+     ]
+    ],
+    "speech": 2.42,
+    "maxgap": 0.15
+   }
+  ],
+  "pick": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-0c-a.wav"
+ },
+ "7-0": {
+  "takes": [
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-a.wav",
+    "heard": "five years underground and you still can't put a seat down",
+    "miss": [],
+    "score": 0.31,
+    "at": 0.4002,
+    "tempo": 1.06,
+    "detail": {
+     "corr": 0.401,
+     "shut": 0.045
+    },
+    "bounds": [
+     [
+      0.28,
+      2.02
+     ],
+     [
+      2.02,
+      4.9
+     ]
+    ],
+    "speech": 4.62,
+    "maxgap": 0.12
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-b.wav",
+    "heard": "five years underground and you still can't put a seat down",
+    "miss": [],
+    "score": 0.268,
+    "at": 0.0723,
+    "tempo": 1.02,
+    "detail": {
+     "corr": 0.379,
+     "shut": 0.056
+    },
+    "bounds": [
+     [
+      0.31,
+      2.0
+     ],
+     [
+      2.0,
+      4.83
+     ]
+    ],
+    "speech": 4.52,
+    "maxgap": 0.19
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-c.wav",
+    "heard": "five years underground and you still can't put a seat down",
+    "miss": [],
+    "score": 0.341,
+    "at": 0.0695,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.454,
+     "shut": 0.057
+    },
+    "bounds": [
+     [
+      0.28,
+      2.14
+     ],
+     [
+      2.14,
+      5.2
+     ]
+    ],
+    "speech": 4.92,
+    "maxgap": 0.21
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-d.wav",
+    "heard": "five years underground and you still can't put a seat down",
+    "miss": [],
+    "score": 0.295,
+    "at": -0.0995,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.413,
+     "shut": 0.059
+    },
+    "bounds": [
+     [
+      0.29,
+      2.4
+     ],
+     [
+      2.4,
+      5.2
+     ]
+    ],
+    "speech": 4.91,
+    "maxgap": 0.19
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-e.wav",
+    "heard": "five years underground and you still can't put a seat down",
+    "miss": [],
+    "score": 0.282,
+    "at": 0.0994,
+    "tempo": 1.04,
+    "detail": {
+     "corr": 0.413,
+     "shut": 0.065
+    },
+    "bounds": [
+     [
+      0.23,
+      2.12
+     ],
+     [
+      2.12,
+      4.64
+     ]
+    ],
+    "speech": 4.41,
+    "maxgap": 0.08
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-f.wav",
+    "heard": "five years underground and you still can't put a seat down",
+    "miss": [],
+    "score": 0.308,
+    "at": 0.0369,
+    "tempo": 1.05,
+    "detail": {
+     "corr": 0.391,
+     "shut": 0.042
+    },
+    "bounds": [
+     [
+      0.19,
+      2.12
+     ],
+     [
+      2.12,
+      5.11
+     ]
+    ],
+    "speech": 4.92,
+    "maxgap": 0.12
+   }
+  ],
+  "pick": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-0-c.wav"
+ },
+ "7d-1c": {
+  "takes": [
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-a.wav",
+    "heard": "but the wales ends at sandsley",
+    "miss": [
+     "world",
+     "ended",
+     "sandra"
+    ],
+    "score": 0.772,
+    "at": 0.3333,
+    "tempo": 0.99,
+    "detail": {
+     "corr": 0.772,
+     "shut": 0.0
+    },
+    "bounds": [
+     [
+      0.28,
+      2.38
+     ]
+    ],
+    "speech": 2.1,
+    "maxgap": 0.09
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-b.wav",
+    "heard": "but the world ended sandra",
+    "miss": [],
+    "score": 0.771,
+    "at": 0.3333,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.771,
+     "shut": 0.0
+    },
+    "bounds": [
+     [
+      0.25,
+      2.64
+     ]
+    ],
+    "speech": 2.39,
+    "maxgap": 0.11
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-c.wav",
+    "heard": "but the world ended sandra",
+    "miss": [],
+    "score": 0.76,
+    "at": 0.5208,
+    "tempo": 0.97,
+    "detail": {
+     "corr": 0.76,
+     "shut": 0.0
+    },
+    "bounds": [
+     [
+      0.28,
+      2.18
+     ]
+    ],
+    "speech": 1.9,
+    "maxgap": 0.06
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-d.wav",
+    "heard": "but the whale dended sandra",
+    "miss": [
+     "world",
+     "ended"
+    ],
+    "score": 0.782,
+    "at": 0.5417,
+    "tempo": 1.03,
+    "detail": {
+     "corr": 0.782,
+     "shut": 0.0
+    },
+    "bounds": [
+     [
+      0.25,
+      2.17
+     ]
+    ],
+    "speech": 1.92,
+    "maxgap": 0.07
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-e.wav",
+    "heard": "but the world ended sandra",
+    "miss": [],
+    "score": 0.8,
+    "at": 0.3333,
+    "tempo": 0.97,
+    "detail": {
+     "corr": 0.8,
+     "shut": 0.0
+    },
+    "bounds": [
+     [
+      0.24,
+      2.17
+     ]
+    ],
+    "speech": 1.93,
+    "maxgap": 0.08
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-f.wav",
+    "heard": "but the world's ended sandra",
+    "miss": [
+     "world"
+    ],
+    "score": 0.78,
+    "at": 0.3333,
+    "tempo": 1.03,
+    "detail": {
+     "corr": 0.78,
+     "shut": 0.0
+    },
+    "bounds": [
+     [
+      0.28,
+      2.43
+     ]
+    ],
+    "speech": 2.15,
+    "maxgap": 0.07
+   }
+  ],
+  "pick": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-e.wav"
+ },
+ "7-2": {
+  "takes": [
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-2-a.wav",
+    "heard": "yeah the world ended doesn't mean you get to stop having manners",
+    "miss": [],
+    "score": -0.364,
+    "at": -0.0208,
+    "tempo": 1.05,
+    "detail": {
+     "corr": 0.355,
+     "shut": 0.36
+    },
+    "bounds": [
+     [
+      0.32,
+      5.23
+     ]
+    ],
+    "speech": 4.91,
+    "maxgap": 0.43
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-2-b.wav",
+    "heard": "yeah the world ended doesn't mean you get to stop having manners",
+    "miss": [],
+    "score": -0.001,
+    "at": -0.0208,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.479,
+     "shut": 0.24
+    },
+    "bounds": [
+     [
+      0.26,
+      4.42
+     ]
+    ],
+    "speech": 4.16,
+    "maxgap": 0.17
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-2-c.wav",
+    "heard": "yeah the world ended doesn't mean you get to stop having manners",
+    "miss": [],
+    "score": -0.252,
+    "at": 0.0,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.34,
+     "shut": 0.296
+    },
+    "bounds": [
+     [
+      0.26,
+      4.64
+     ]
+    ],
+    "speech": 4.38,
+    "maxgap": 0.34
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-2-d.wav",
+    "heard": "yeah the world ended doesn't mean you get to stop having manners",
+    "miss": [],
+    "score": 0.432,
+    "at": -0.0208,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.664,
+     "shut": 0.116
+    },
+    "bounds": [
+     [
+      0.2,
+      4.2
+     ]
+    ],
+    "speech": 4.0,
+    "maxgap": 0.37
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-2-e.wav",
+    "heard": "yeah the world ended doesn't mean you get to stop having manners",
+    "miss": [],
+    "score": -0.067,
+    "at": -0.0208,
+    "tempo": 1.07,
+    "detail": {
+     "corr": 0.445,
+     "shut": 0.256
+    },
+    "bounds": [
+     [
+      0.25,
+      4.69
+     ]
+    ],
+    "speech": 4.44,
+    "maxgap": 0.3
+   },
+   {
+    "take": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-2-f.wav",
+    "heard": "yeah the world ended doesn't mean you get to stop having manners",
+    "miss": [],
+    "score": -0.097,
+    "at": -0.0208,
+    "tempo": 1.08,
+    "detail": {
+     "corr": 0.466,
+     "shut": 0.282
+    },
+    "bounds": [
+     [
+      0.24,
+      4.68
+     ]
+    ],
+    "speech": 4.44,
+    "maxgap": 0.31
+   }
+  ],
+  "pick": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7-2-d.wav"
+ }
+}

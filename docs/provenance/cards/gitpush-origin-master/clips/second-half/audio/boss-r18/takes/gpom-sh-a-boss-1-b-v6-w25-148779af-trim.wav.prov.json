@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/gpom-sh-a-boss-1-b-v6-w25-148779af-trim.wav",
+ "made": "2026-11-05T21:07:41+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "numpy",
+ "tool": "trim + close dead air (10 ms RMS frames, speech = above peak-40 dB)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/gpom-sh-a-boss-1-b-v6-w25-148779af.wav",
+ "why": "Round 18 line 1 pick with its own pauses kept (alternative to -tight)",
+ "source_id": "148779af-c790-4dd9-8c78-7f08036a5bd6",
+ "settings": {
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+  "edit": "keep 0.23-4.75 s, 0.1 s head/tail, pauses kept"
+ }
+}

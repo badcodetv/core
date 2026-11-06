@@ -1,0 +1,16 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/gpom-sh-a-boss-3-c-v6-w25-d447089a-tight.wav",
+ "made": "2026-11-05T21:07:41+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "numpy",
+ "tool": "trim + close dead air (10 ms RMS frames, speech = above peak-40 dB)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/boss-r18/takes/gpom-sh-a-boss-3-c-v6-w25-d447089a.wav",
+ "why": "Round 18 pick, line 3: the quickest clean read ('Thank you, I will handle it' in one breath); pause after 'No.' closed to 0.3 s",
+ "source_id": "d447089a-aa36-4b83-a0e8-c8c547f376f2",
+ "settings": {
+  "sheet": "docs/stories/gitpush-origin-master/songs/second-half-scene-a-music.md",
+  "edit": "keep 0.28-0.80 + 1.34-2.98 s (0.84 s pause after 'No.' closed to 0.30 s), 10 ms crossfades, 0.1 s head/tail"
+ }
+}

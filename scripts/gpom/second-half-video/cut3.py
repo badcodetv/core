@@ -12,6 +12,11 @@
     python3 scripts/gpom/second-half-video/cut3.py A --tag d6     # draft 1H + the extended travelling shot (2 Nov)
     python3 scripts/gpom/second-half-video/cut3.py A --tag d7     # + the row lip sync v3 (re-made clips) + the stand-down SD01 (3 Nov)
     python3 scripts/gpom/second-half-video/cut3.py A --tag d8     # Kai's r9 notes: draft 1I, the row re-cut on reaction shots, boss without 'Maddie' (3 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d13    # draft 1K: swoop under Maddie -> the hologram -> pull-out (5 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d14    # Kai r15: no swoop; bridge line, street fades to black -> hologram -> fade up (5 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d15    # the brutal kill-bot cut after beat 0; bridge loudness-matched (5 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d16    # faster voices: the row sped (picture+voice), Maddie re-voiced fast (5 Nov)
+    python3 scripts/gpom/second-half-video/cut3.py A --tag d17    # Kai r18 notes: the row at natural speed, lips re-fitted (voice-row-fit.py) (5 Nov)
 
 --tag X writes to clips/second-half/cut3/<scene>-X/ instead of cut3/<scene>/, so a round never rewrites the stems and
 lines an earlier Premiere sequence plays from. --tag d1 also swaps in the dialogue-page words: beat 0 from
@@ -61,17 +66,22 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
          'crowd': 'The hundred'}
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
+D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
 D2 = TAG == 'd2'
-D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12')
-D8 = TAG in ('d8', 'd9', 'd10', 'd11', 'd12')
+D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')
+D8 = TAG in ('d8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')
+D17 = TAG == 'd17'  # round 19 (Kai r18 notes at3777/at742/at4194/at4230): the row at natural speed, re-voiced/re-rendered for the lips; 'you know' cut; boss line 3 cut; no V3 cut-back
+D16 = TAG in ('d16', 'd17')  # round 18 (Kai, 5 Nov meeting): faster voices -- the row sped picture+voice together, Maddie re-voiced fast, boss re-recorded
+D15 = TAG in ('d15', 'd16', 'd17')  # Kai 5 Nov: the brutal kill-bot cut (6, 7, 9a, 11 trimmed, 10b, 12 without HUD); bridge loudness-matched
+D14 = TAG in ('d14', 'd15', 'd16', 'd17')  # Kai r15 notes (5 Nov): no swoop/pull-out ("no funky camera work"); bridge line c00; street fades to black and back up
+D13 = TAG in ('d13', 'd14', 'd15', 'd16', 'd17')  # Kai 5 Nov: draft 1K, the old monologue (lines 2-4) and its inserts out; swoop -> hologram -> pull-out
 D12 = TAG == 'd12'  # Kai r13 (at1878): drop line 5 ('And now we've worked all that out... go back and change things'), 'And so did you' -> 'Anyway!'
-D11 = TAG in ('d11', 'd12')  # Kai r12 (at1749): overhead road far too tidy -> ia-top3 (ia-09-a, rubble), t4 takes
-D10 = TAG in ('d10', 'd11', 'd12')  # Kai r11 notes (4 Nov): overhead grainy/too fast/too many bays -> ia-top2 (ia-07-a), t2 clips, softer grade
-D9 = TAG in ('d9', 'd10', 'd11', 'd12')  # Kai, 4 Nov: beat 0 cut between three angles (front, side, overhead) at sentence ends  # Kai's timeline r9 notes (3 Nov)
+D11 = TAG in ('d11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # Kai r12 (at1749): overhead road far too tidy -> ia-top3 (ia-09-a, rubble), t4 takes
+D10 = TAG in ('d10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # Kai r11 notes (4 Nov): overhead grainy/too fast/too many bays -> ia-top2 (ia-07-a), t2 clips, softer grade
+D9 = TAG in ('d9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # Kai, 4 Nov: beat 0 cut between three angles (front, side, overhead) at sentence ends  # Kai's timeline r9 notes (3 Nov)
 RT01_IN = 2.5  # the retreat clip's in-point: past the crescent bot's slide to the right (t8, 0-2.5 s)
-D3 = TAG in ('d3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
-D4 = TAG in ('d4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
+D3 = TAG in ('d3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
+D4 = TAG in ('d4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
                   # the boss's firewall line cut, Maddie's 'That was close.' alone, HUD NEW OBJECTIVE
 BR = TAG == 'br'  # the bridge (Kai, 28 Oct): the doorstep talk cut; a look, the door shuts on her, voices behind it
 STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
@@ -419,7 +429,7 @@ D3_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 0.9, 5: 1.0, 6: 1.4, 7: 2.0}
 # Round D6 (2 Nov): draft 1H, seven lines; the travelling shot extended to play at real speed (no slow-down), the
 # tune held at least 8 s before "Oh, hello!", and the shot starting after her opening turn (Kai: "just cut to her
 # rolling down the road").
-D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12')
+D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')
 # Round D7 (3 Nov): Kai's 'chopped' lip-sync note -> v3 (clips re-made to the voice, whole phrases, x1.00-1.15);
 # the stand-down plate V4 (reversed) -> SD01, animated from his still pick sd-01.
 D6_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 1.4, 5: 2.0}
@@ -505,7 +515,7 @@ def beat0_angles(c, graded, skip, end0, starts, v6):
 def beat0_d1():
     """(phrases [(Take, gap after, text, line)], lines [(i, text, by)]) for beat 0 in draft 1D."""
     script = json.loads((S.SCENES / 'second-half-a-killbots' / 'script.json').read_text())
-    vf = f"voices-{ {'d5': 'd4', 'd6': 'd5', 'd7': 'd5', 'd8': 'd6', 'd9': 'd6', 'd10': 'd6', 'd11': 'd6', 'd12': 'd6'}.get(TAG, TAG)}.json" if D3 else 'voices-d1.json'
+    vf = f"voices-{ {'d5': 'd4', 'd6': 'd5', 'd7': 'd5', 'd8': 'd6', 'd9': 'd6', 'd10': 'd6', 'd11': 'd6', 'd12': 'd6', 'd13': 'd6', 'd14': 'd6', 'd15': 'd6', 'd16': 'd6', 'd17': 'd6'}.get(TAG, TAG)}.json" if D3 else 'voices-d1.json'
     gaps = D6_LINE_GAP if D6 else D3_LINE_GAP if D3 else D1_LINE_GAP
     rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-a-killbots' / vf).read_text())['lines']}
     seq, lines = [], []
@@ -518,6 +528,195 @@ def beat0_d1():
             seq.append((take, gaps.get(i, 0.0) if last else g, rows[i]['phrases'][p]['text'], i))
         lines.append((i, shown(ln['text']), ln['by']))
     return seq, lines
+
+
+# Round D13 (Kai, 5 Nov): draft 1K. Beat 0 keeps the street up to "He misses you something rotten, you know.", then the
+# camera swoops down the street and under Maddie (ht-01-swoop-a, Veo, its first frame IS the front shot at 45.0 s), fades
+# to black into her hologram (the three.js Commit Graph, recorded at 24 fps with its voice already timed to it, starting
+# and ending on black with a CRT switch-on/off), then the swoop reversed fades up from black and lands back on the front
+# shot at the very frame it left (45.0 s), for "Anyway! Patrol's out. Mind how you go."
+HOLO = pathlib.Path('/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram')
+SWOOP = HOLO / 'transition' / 'ht-01-swoop-a.mp4'
+SWOOP_R = HOLO / 'transition' / 'ht-01-swoop-a-reverse.mp4'  # ffmpeg reverse of SWOOP (card beside it)
+H_PIC = HOLO / 'render-1k-24' / 'hologram-1k-24fps-picture.mp4'
+H_VOX = HOLO / 'render-1k-24' / 'hologram-1k-24fps-voice.wav'
+H_EDIT = HOLO / 'render-1k-24' / 'edit.json'
+H_LINES = S.REPO / 'design' / '2026-11-05-gpom-meeting' / 'voice-1k' / 'lines-1k.json'
+SWOOP_AT = 45.0  # measured: the swoop's first frame matches the graded front shot at 45.0 s (mean abs diff 0.8/255)
+H_FADE = 1.0     # the swoop fades to black over its last second; the pull-out fades up over its first
+BACK_LEAD = 0.6  # back on the street: this long before "Anyway!"
+BRIDGE = HOLO / 'voice-1k' / 'clips' / 'c00-bridge.wav'
+if TAG == 'd17':  # Kai at742: 'you know' cut (2.73-3.24 s, 0.49 s out), so the pause moves earlier with it
+    BRIDGE = HOLO / 'voice-1k' / 'clips' / 'c00-bridge-r19.wav'
+BRIDGE_SPLIT = 5.51 if TAG == 'd17' else 6.0  # the pause between "...came back." (speech to 5.78 s) and "Go on, then." (from 6.60 s), clip time  # d14: "He made me learn a little presentation... Gather round."
+
+
+class Span:
+    """A window of a file already timed to the picture (no speech trimming)."""
+
+    def __init__(self, path, i, d):
+        self.path, self.i, self.d = pathlib.Path(path), i, d
+
+
+def frames_dur(p):
+    n = int(subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-count_packets', '-show_entries',
+                            'stream=nb_read_packets', '-of', 'csv=p=0', str(p)], capture_output=True, text=True,
+                           check=True).stdout.strip())
+    return n / FPS
+
+
+def holo_media(c):
+    """The swoop faded out, the pull-out (reversed swoop) faded in, the hologram at 1280x720: all silent."""
+    if not SWOOP_R.exists():
+        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(SWOOP), '-an', '-vf', 'reverse', *ENC,
+                        str(SWOOP_R)], check=True)
+        subprocess.run([sys.executable, str(S.REPO / 'scripts/provenance/prov.py'), 'card', str(SWOOP_R), '--kind',
+                        'video', '--engine', 'ffmpeg', '--tool', 'ffmpeg reverse', '--parent', str(SWOOP)], check=True)
+    d = frames_dur(SWOOP)
+    out = {}
+    for key, src, vf in (('in', SWOOP, f'fade=t=out:st={d - H_FADE:.4f}:d={H_FADE}'),
+                         ('out', SWOOP_R, f'fade=t=in:st=0:d={H_FADE}'),
+                         ('holo', H_PIC, 'scale=1280:720:flags=lanczos,setsar=1')):
+        if D14 and key != 'holo':  # round 16: no swoop
+            continue
+        o = c.vdir / f"{src.stem}-{ {'in': 'fadeout', 'out': 'fadein', 'holo': '720'}[key]}.mp4"
+        if not o.exists():
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(src), '-an', '-vf', vf, *ENC, str(o)],
+                           check=True)
+        out[key] = o
+    return out, d, frames_dur(H_PIC)
+
+
+def beat0_d13(c, m):
+    script = json.loads((S.SCENES / 'second-half-a-killbots' / 'script.json').read_text())
+    rows = {r['i']: r for r in json.loads((S.SCENES / 'second-half-a-killbots' / 'voices-d6.json').read_text())['lines']}
+    street = [ln for ln in script['lines'] if not ln.get('id') and ln.get('part') != 'bridge']
+    bridge_ln = next((ln for ln in script['lines'] if ln.get('part') == 'bridge'), None)
+    holo = {ln['id']: ln for ln in script['lines'] if ln.get('id')}
+    assert len(street) == 3, 'script.json beat 0 (1K): two street lines, the hologram lines (with ids), then "Anyway!"'
+    v6 = V / 'cut3-beat0-continuous-xx.mp4'
+    graded, note = regrade_v6(v6, c.vdir / f'{v6.stem}-graded.mp4')
+    c.flags.append(note.replace('six chained clips', 'eight chained clips').replace('48 s', '64 s'))
+    media, d_sw, d_h = holo_media(c)
+    b = c.beat('0', 'Maddie on the high street', 0.0, act='Maddie',
+               see='The travelling shot: Maddie rolls after the camera, her radio playing the tune before she notices us. '
+                   '"Oh, hello!" Then the camera swoops down the street and under her, into her hologram (the Commit '
+                   'Graph); it pulls back out to the street for "Anyway! Patrol\'s out. Mind how you go."')
+    skip, lead = D6_SKIP, fr(D6_LEAD)
+    # the street: lines 0 and 1, exactly as round 14
+    s, li, starts, at = lead, 0, [], {}
+    for row_i, gap_after in ((0, D6_LINE_GAP[0]), (1, None)):
+        a0 = s
+        tk = d1_takes(rows[row_i])
+        for p, (take, g) in enumerate(tk):
+            a = s
+            s = c.say('vox-maddie', take, s, '0', f'beat 0 phrase {len(starts)}: {rows[row_i]["phrases"][p]["text"][:40]}')
+            starts.append((a, s))
+            at[rows[row_i]['phrases'][p]['text']] = (a, s)
+            if p < len(tk) - 1:
+                s += g
+        c.line(b, li, 'bot', a0, s - a0, shown(street[li]['text']), street[li]['by'])
+        li += 1
+        if gap_after:
+            s += gap_after
+    e1 = s
+    if D14:
+        # Kai r15: no swoop. The bridge line, then the street fades to black as "Gather round." ends; the hologram (it opens
+        # on black with its CRT switch-on); then the street fades up from black, its source time carrying on from the black.
+        a = fr(e1 + GAP)
+        brow = rows['bridge']
+        tk = Take(BRIDGE)
+        if D15:
+            # Kai: the bridge sounded quieter than her other lines. Measured (r16 line file): "He made me learn... came back."
+            # sat at -19.4/-21.0 LUFS against her neighbours' ~-16, while "Go on, then. Gather round." is a raised call
+            # (-10/-12) that the whole-line normalisation pulled everything down for. Split at the pause (clip 6.0 s): the
+            # presentation part is matched to her lines (-16 LUFS); the call keeps exactly its round-16 level.
+            cut = BRIDGE_SPLIT
+            pa, pb = Span(BRIDGE, tk.i, cut - tk.i), Span(BRIDGE, cut, tk.i + tk.d - cut)
+            l_all = lufs_of(C.decode(BRIDGE, tk.i, tk.d))
+            l_a, l_b = lufs_of(C.decode(BRIDGE, pa.i, pa.d)), lufs_of(C.decode(BRIDGE, pb.i, pb.d))
+            r16_gain = -16.0 - l_all
+            b_lufs = l_b + r16_gain
+            c.say('vox-maddie', pa, a, '0', 'beat 0: the bridge, "He made me learn... came back."')
+            eb = c.say('vox-maddie', pb, a + (cut - tk.i), '0', 'beat 0: the bridge, "Go on, then. Gather round."', lufs=b_lufs)
+            m['bridge_gain'] = (-16.0 - l_a) - r16_gain
+            c.flags.append(f'Beat 0 bridge loudness (round 17): its presentation part ("He made me learn... came back.") was '
+                           f'{-16.0 - (l_a + r16_gain):.1f} dB under her other lines (it measured {l_a + r16_gain:.1f} LUFS in round 16); it is '
+                           f'now matched at -16 LUFS (+{m["bridge_gain"]:.1f} dB). "Go on, then. Gather round." keeps its round-16 level '
+                           f'({b_lufs:.1f} LUFS, a raised call). Timing unchanged.')
+            print(f'bridge: part A +{m["bridge_gain"]:.2f} dB (was {l_a + r16_gain:.2f} LUFS), part B kept at {b_lufs:.2f} LUFS')
+        else:
+            eb = c.say('vox-maddie', tk, a, '0', 'beat 0: the bridge, "...Gather round."')
+        c.line(b, li, 'bot', a, eb - a, shown(bridge_ln['text']), bridge_ln['by'])
+        li += 1
+        t_sw = fr(eb)                # the fade to black starts as "round" ends
+        t_h = fr(t_sw + H_FADE)
+        t_p = fr(t_h + d_h)
+        t_b = t_p                    # the street is back from the first frame of the fade-up
+        src_left = skip + t_h        # where the street was when it went black
+        fo = c.vdir / f'street-fadeout-{skip + t_sw:.3f}.mp4'
+        fi = c.vdir / f'street-fadein-{src_left:.3f}.mp4'
+        for o, ss, vf in ((fo, skip + t_sw, f'fade=t=out:st=0:d={H_FADE}'), (fi, src_left, f'fade=t=in:st=0:d={H_FADE}')):
+            if not o.exists():
+                subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{ss:.4f}', '-i', str(graded), '-an', '-t',
+                                f'{H_FADE:.4f}', '-vf', vf, *ENC, str(o)], check=True)
+        c.pic(graded, skip, 0.0, t_sw, '0', source=v6)
+        c.pic(fo, 0.0, t_sw, t_h, '0', source=v6)
+        c.pic(media['holo'], 0.0, t_h, t_p, '0', source=H_PIC)
+        c.pic(fi, 0.0, t_p, fr(t_p + H_FADE), '0', source=v6)
+    else:
+        t_sw = fr(e1 + GAP)
+        t_h = fr(t_sw + d_sw)
+        t_p = fr(t_h + d_h)
+        t_b = fr(t_p + d_sw)
+        c.pic(graded, skip, 0.0, t_sw, '0', source=v6)
+        c.pic(media['in'], 0.0, t_sw, t_h, '0', source=SWOOP)
+        c.pic(media['holo'], 0.0, t_h, t_p, '0', source=H_PIC)
+        c.pic(media['out'], 0.0, t_p, t_b, '0', source=SWOOP_R)
+    # the hologram's voice: its 15 lines, cut from the one wav at the page's clip starts (edit.json)
+    clips = json.loads(H_EDIT.read_text())['ED']['clips']
+    durs = {r['id']: r['dur'] for r in json.loads(H_LINES.read_text())}
+    for cid, cl in sorted(clips.items(), key=lambda kv: kv[1]['start']):
+        ln = holo[cid]
+        st, dd = cl['start'], durs[cid]
+        e = c.say('vox-maddie', Span(H_VOX, st, dd), t_h + st, '0', f'beat 0 hologram {cid}: {shown(ln["text"])[:40]}')
+        c.line(b, li, 'bot', t_h + st, dd, shown(ln['text']), ln['by'])
+        li += 1
+    assert li == (3 if D14 else 2) + len(holo), (li, len(holo))
+    # back on the street, on the frame the swoop left
+    tb = d1_takes(rows[6])
+    assert len(tb) == 1
+    a = fr(t_p + H_FADE + 0.4) if D14 else fr(t_b + BACK_LEAD)
+    e = c.say('vox-maddie', tb[0][0], a, '0', 'beat 0: Anyway! Patrol\'s out. Mind how you go.')
+    c.line(b, li, 'bot', a, e - a, shown(street[2]['text']), street[2]['by'])
+    end0 = fr(e + 1.5)
+    if D14:
+        c.pic(graded, src_left + H_FADE, fr(t_p + H_FADE), end0, '0', source=v6)
+    else:
+        c.pic(graded, SWOOP_AT + 1 / FPS, t_b, end0, '0', source=v6)
+    m['hello'], m['racket'], m['went'] = at['Oh, hello!'], at['Sorry about the racket.'], at['Ever since you lot went.']
+    m['mattered'] = (t_sw, t_sw) if D14 else (e1, e1)  # the thinking beep: into the hologram
+    m['bye'] = (a, e)
+    m['holo'] = dict(sw=t_sw, h=t_h, p=t_p, b=t_b)
+    c.flags.append(f'Beat 0, round 15 (draft 1K, Kai 5 Nov): the street to "He misses you something rotten, you know." as '
+                   f'round 14; the old monologue (world models, multiverse, "only one universe... And so did you") and its '
+                   f'three side/overhead inserts are out. {t_sw:.2f} s: the swoop down the street and under Maddie '
+                   f'(ht-01-swoop-a, {d_sw:.2f} s), fading to black over its last {H_FADE:g} s. {t_h:.2f} s: her hologram '
+                   f'(the Commit Graph, {d_h:.2f} s, 1920x1080 scaled to 720p), its voice the take already timed to it, cut '
+                   f'into its {len(holo)} lines. {t_p:.2f} s: the pull-out (the swoop reversed, fading up from black). '
+                   f'{t_b:.2f} s: back on the front shot at the very frame the swoop starts from (45.0 s in), "Anyway!" '
+                   f'{BACK_LEAD:g} s later.')
+    c.flags.append('Beat 0 cut in: the swoop\'s first frame is the front shot at 45.0 s, but we leave the front shot at '
+                   f'{skip + t_sw:.1f} s (after line 1), so the cut into the swoop is a small jump forward along the street; '
+                   'the way back out is seamless.')
+    if D14:
+        c.flags[-2:] = [f'Beat 0, round 16 (Kai\'s round 15 notes, 5 Nov): no swoop and no pull-out. After "He misses you something '
+                        f'rotten, you know." comes the bridge ("He made me learn a little presentation... Gather round."), to '
+                        f'{t_sw:.2f} s. The street shot fades to black over {H_FADE:g} s as "round" ends ({t_sw:.2f}-{t_h:.2f} s); the '
+                        f'hologram plays {t_h:.2f}-{t_p:.2f} s (it opens and closes on black, with its CRT switch-on and off); the street '
+                        f'fades up {t_p:.2f}-{t_p + H_FADE:.2f} s from the very source frame it left ({src_left:.2f} s in), so she is '
+                        f'still driving; "Anyway!" at {a:.2f} s.']
+    return c.close(b, end0)
 
 
 def close_only(src, outdir):
@@ -554,7 +753,41 @@ def scene_a():
         c.meta['intro'] = ('Scene A, round 5: Maddie\'s storyverse intro, draft 1G from the storyverse dialogue page (your '
                            'pick, 2 Nov). Everything after beat 0 is as before. Play it, click any beat, clip, line or '
                            "sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.")
-    if D12:
+    if D17:
+        c.meta['intro'] = ('Scene A, round 19: your round 18 notes. The argument is back at natural speed, with the lips re-fitted shot by '
+                           'shot: two new talking clips (Derek\'s "I\'m really sorry, love" and Sandra\'s "Yeah, the world ended...") and '
+                           'Derek\'s "But the world ended" and Sandra\'s "and you still can\'t put a seat down" re-voiced to their clips. '
+                           '"You know" is cut from Maddie\'s presentation line; the boss\'s "No, thank you. I will handle it." is gone and '
+                           'the call goes from "simulations again" straight to the wide approach, with no cut back. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D16:
+        c.meta['intro'] = ('Scene A, round 18: faster voices (your note at the 5 Nov meeting). The row is quicker: each lip-synced '
+                           'shot and its voice sped together (x1.08-1.15) so the mouths stay matched, 0.2 s between lines. Maddie\'s call, '
+                           'her "hurry up, boss" and "That was close." are re-voiced fast at source (same voice and profile, a fast, clipped pace). '
+                           'Beat 0 and the hologram are untouched. Everything else is round 17. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D15:
+        c.meta['intro'] = ('Scene A, round 17: the brutal kill-bot cut. Beat 0 is round 16 (the bridge line now as loud as her other lines). '
+                           'After "Mind how you go." a hard cut to the lavatory row; then one kill bot tears past Maddie, the first bot we see; '
+                           'her call to the boss, trimmed to three lines; the wide approach; the bots turning away at the door, with no HUD '
+                           '(the red and green screens are saved for the bunker TV later); "That was close." The roundabout, the patrol, '
+                           'both HUDs, the dust and the far race are gone. Chase music arrives with the bot and resolves at the stand-down. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D14:
+        c.meta['intro'] = ('Scene A, round 16: your round 15 notes (5 Nov). No swoop, no pull-out. After "He misses you something rotten, '
+                           'you know." Maddie says "He made me learn a little presentation, you know. In case any of you ever came back. '
+                           'Go on, then. Gather round." and the street fades to black as she finishes; her hologram plays; then the street '
+                           'fades back up, still driving, into "Anyway! Patrol\'s out. Mind how you go." Sound as round 15: the street '
+                           'fades with the picture, only a low wind under the hologram. Everything after beat 0 is as before. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D13:
+        c.meta['intro'] = ('Scene A, round 15: the hologram is in, via a swoop under Maddie (draft 1K, 5 Nov). After "He misses you something '
+                           'rotten, you know." the camera swoops down the street and under her, fades to black, and her hologram plays: the '
+                           'Commit Graph, her 15 lines. Then it pulls back out (the swoop reversed) to the street for "Anyway! Patrol\'s out. '
+                           'Mind how you go." The old monologue and its side and overhead shots are gone; the street music and effects drop '
+                           'right down under the hologram. Everything after beat 0 is round 14, later by the length change. '
+                           "Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done.")
+    elif D12:
         c.meta['intro'] = ('Scene A, round 14: your round 13 note (4 Nov). Maddie\'s line "And now we\'ve worked all that out... we really feel '
                            'like we\'ve messed this up. And wish we could go back and change things." is cut: "And so did you" goes straight '
                            'to "Anyway! Patrol\'s out. Mind how you go." The overhead shot that sat under it goes too; the scene is about 10 s shorter. '
@@ -597,90 +830,95 @@ def scene_a():
                            "sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.")
     m = c.m
 
-    # ---- 0: the continuous travelling shot (eight chained clips), ~5 s of radio first, Kai's new opening
-    v6 = V / ('cut3-beat0-continuous-xx.mp4' if D6 else 'cut3-beat0-continuous-x.mp4')
-    graded, note = regrade_v6(v6, c.vdir / f'{v6.stem}-graded.mp4')
-    c.flags.append(note.replace('six chained clips', 'eight chained clips').replace('48 s', '64 s'))
-    if D1:
-        seq, d1_lines = beat0_d1()
+    if D13:
+        t = beat0_d13(c, m)
+        if D15:
+            return rest_d15(c, t, m)
     else:
-        seq = [(Take(p), g, text, k) for k, (p, g, text) in enumerate(BEAT0)]
-    span = sum(tk.d + g for tk, g, _, _ in seq)
-    skip = D6_SKIP if D6 else 0.0  # d6: in after her opening turn
-    have = dur(v6) - skip
-    stretch = None
-    if have < (D6_LEAD if D6 else 5.0) + span + 1.5:  # D3: the speech outruns the 64 s shot, so the shot is slowed to fit (never the speech)
-        k = ((D6_LEAD if D6 else 5.0) + span + 1.5) / have
-        slow = c.vdir / f'cut3-beat0-continuous-x-graded-slow{k:.3f}.mp4'
-        if not slow.exists():
-            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(graded), '-an', '-vf',
-                            f'setpts={k:.5f}*PTS,framerate=fps=24', '-c:v', 'libx264', '-crf', '16', '-preset', 'medium',
-                            '-pix_fmt', 'yuv420p', str(slow)], check=True)
-        stretch, graded, have = k, slow, dur(slow) - skip * k
-        skip *= k
-    lead = fr(D6_LEAD) if D6 else fr(min(6.5, max(5.0, have - span - 1.5)))
-    b = c.beat('0', 'Maddie on the high street', 0.0, act='Maddie',
-               see='One unbroken travelling shot: the camera backs up the ruined high street and Maddie rolls after it, '
-                   'her radio playing the tune for about 5 s before she notices us. "Oh, hello!" Then the radio goes '
-                   'down, and back up on "Mind how you go".')
-    s, starts, by_line = lead, [], {}
-    for k, (tk, g, text, li) in enumerate(seq):
-        a = s
-        s = c.say('vox-maddie', tk, s, '0', f'beat 0 phrase {k}: {text[:40]}')
+        # ---- 0: the continuous travelling shot (eight chained clips), ~5 s of radio first, Kai's new opening
+        v6 = V / ('cut3-beat0-continuous-xx.mp4' if D6 else 'cut3-beat0-continuous-x.mp4')
+        graded, note = regrade_v6(v6, c.vdir / f'{v6.stem}-graded.mp4')
+        c.flags.append(note.replace('six chained clips', 'eight chained clips').replace('48 s', '64 s'))
+        if D1:
+            seq, d1_lines = beat0_d1()
+        else:
+            seq = [(Take(p), g, text, k) for k, (p, g, text) in enumerate(BEAT0)]
+        span = sum(tk.d + g for tk, g, _, _ in seq)
+        skip = D6_SKIP if D6 else 0.0  # d6: in after her opening turn
+        have = dur(v6) - skip
+        stretch = None
+        if have < (D6_LEAD if D6 else 5.0) + span + 1.5:  # D3: the speech outruns the 64 s shot, so the shot is slowed to fit (never the speech)
+            k = ((D6_LEAD if D6 else 5.0) + span + 1.5) / have
+            slow = c.vdir / f'cut3-beat0-continuous-x-graded-slow{k:.3f}.mp4'
+            if not slow.exists():
+                subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(graded), '-an', '-vf',
+                                f'setpts={k:.5f}*PTS,framerate=fps=24', '-c:v', 'libx264', '-crf', '16', '-preset', 'medium',
+                                '-pix_fmt', 'yuv420p', str(slow)], check=True)
+            stretch, graded, have = k, slow, dur(slow) - skip * k
+            skip *= k
+        lead = fr(D6_LEAD) if D6 else fr(min(6.5, max(5.0, have - span - 1.5)))
+        b = c.beat('0', 'Maddie on the high street', 0.0, act='Maddie',
+                   see='One unbroken travelling shot: the camera backs up the ruined high street and Maddie rolls after it, '
+                       'her radio playing the tune for about 5 s before she notices us. "Oh, hello!" Then the radio goes '
+                       'down, and back up on "Mind how you go".')
+        s, starts, by_line = lead, [], {}
+        for k, (tk, g, text, li) in enumerate(seq):
+            a = s
+            s = c.say('vox-maddie', tk, s, '0', f'beat 0 phrase {k}: {text[:40]}')
+            if not D1:
+                c.line(b, k, 'bot', a, s - a, text, 'kai')
+            by_line.setdefault(li, [a, s])[1] = s
+            starts.append((a, s))
+            s += g
+        if D1:
+            for i, text, by in d1_lines:
+                a, e = by_line[i]
+                c.line(b, i, 'bot', a, e - a, text, by)
+        talk_end = starts[-1][1]
+        end0 = fr(min(have, talk_end + 1.5))
+        if D1:
+            c.flags.append(f'Beat 0, round D1: draft 1D from the dialogue page (your pick, 27 Oct). {lead:.2f} s of her radio '
+                           f'first, then her {len(seq)} phrases run {span:.1f} s (was about 55 s); the travelling shot is cut '
+                           f'{end0 - talk_end:.1f} s after "Mind how you go", so the beat is shorter by the same. "Oh, hello!", '
+                           '"Ever since you lot..." and "went." keep the takes already in the cut; every other phrase is new, '
+                           'picked by measurement (voices-d1.json). Nobody has listened yet.')
+            if D3:
+                c.flags[-1] = (f'Beat 0, round {TAG.upper()}: draft {"1H" if D6 else "1G"}, the storyverse intro (your pick, 2 Nov). {lead:.2f} s of her radio '
+                               f'first, then her {len(seq)} phrases run {span:.1f} s (draft 1D ran about 40 s). "Oh, hello!" keeps '
+                               'its take; every other phrase is new, picked by measurement (voices-*.json). Nobody has listened yet.')
+            if stretch:
+                c.flags.append(f'Beat 0 picture: the speech is longer than the 63.7 s travelling shot, so the shot is slowed to '
+                               f'{100 / stretch:.0f}% speed (x{stretch:.3f}, frames blended) to cover it. Speech is not slowed. '
+                               'If the slow motion shows, the other way is to let her last lines run over beat 1.')
+        else:
+            c.flags.append(f'Beat 0: {lead:.2f} s of Maddie rolling with her radio before "Oh, hello!" (Kai asked for about '
+                       f'5 s). Her twelve phrases with Kai\'s pauses (1.6 s after "Oh, hello!", 2.5 s after "...he misses '
+                       f'you") run {span:.1f} s; the 8-clip shot ({have:.1f} s) is cut {end0 - talk_end:.1f} s after "Mind how '
+                       f'you go", {have - end0:.1f} s before its own end. Speech is not slowed.')
         if not D1:
-            c.line(b, k, 'bot', a, s - a, text, 'kai')
-        by_line.setdefault(li, [a, s])[1] = s
-        starts.append((a, s))
-        s += g
-    if D1:
-        for i, text, by in d1_lines:
-            a, e = by_line[i]
-            c.line(b, i, 'bot', a, e - a, text, by)
-    talk_end = starts[-1][1]
-    end0 = fr(min(have, talk_end + 1.5))
-    if D1:
-        c.flags.append(f'Beat 0, round D1: draft 1D from the dialogue page (your pick, 27 Oct). {lead:.2f} s of her radio '
-                       f'first, then her {len(seq)} phrases run {span:.1f} s (was about 55 s); the travelling shot is cut '
-                       f'{end0 - talk_end:.1f} s after "Mind how you go", so the beat is shorter by the same. "Oh, hello!", '
-                       '"Ever since you lot..." and "went." keep the takes already in the cut; every other phrase is new, '
-                       'picked by measurement (voices-d1.json). Nobody has listened yet.')
-        if D3:
-            c.flags[-1] = (f'Beat 0, round {TAG.upper()}: draft {"1H" if D6 else "1G"}, the storyverse intro (your pick, 2 Nov). {lead:.2f} s of her radio '
-                           f'first, then her {len(seq)} phrases run {span:.1f} s (draft 1D ran about 40 s). "Oh, hello!" keeps '
-                           'its take; every other phrase is new, picked by measurement (voices-*.json). Nobody has listened yet.')
-        if stretch:
-            c.flags.append(f'Beat 0 picture: the speech is longer than the 63.7 s travelling shot, so the shot is slowed to '
-                           f'{100 / stretch:.0f}% speed (x{stretch:.3f}, frames blended) to cover it. Speech is not slowed. '
-                           'If the slow motion shows, the other way is to let her last lines run over beat 1.')
-    else:
-        c.flags.append(f'Beat 0: {lead:.2f} s of Maddie rolling with her radio before "Oh, hello!" (Kai asked for about '
-                   f'5 s). Her twelve phrases with Kai\'s pauses (1.6 s after "Oh, hello!", 2.5 s after "...he misses '
-                   f'you") run {span:.1f} s; the 8-clip shot ({have:.1f} s) is cut {end0 - talk_end:.1f} s after "Mind how '
-                   f'you go", {have - end0:.1f} s before its own end. Speech is not slowed.')
-    if not D1:
-        c.flags.append('Beat 0 takes: Kai\'s audition picks for the new phrases ("Oh, hello!" c, "didn\'t notice you" a, '
-                   '"racket down" a, "It\'s his tune" c, "Anyway..." a); the unchanged phrases keep their round-0 takes. Whisper '
-                   'hears take c of "It\'s his tune" as "This is June" (takes a and b are there if your ear agrees).')
-    if D9:
-        beat0_angles(c, graded, skip, end0, starts, v6)
-    else:
-        c.pic(graded, skip, 0.0, end0, '0', source=v6)
-    if D6:
-        c.flags.append(f'Beat 0 (round D6, Kai at76): the travelling shot is extended with new chained clips '
-                       f'({v6.name}) and plays at real speed{"" if not stretch else " (STILL SLOWED: the extension was too short)"}; '
-                       f'it starts {skip:.1f} s in, after her opening turn; {lead:.1f} s of the tune before "Oh, hello!", '
-                       'then the radio goes down after "Sorry about the racket."')
-    if D1:  # by phrase text: "Sorry about the racket." is where the radio goes down
-        at = {text: st for (_, _, text, _), st in zip(seq, starts)}
-        m['hello'], m['racket'], m['bye'] = starts[0], at['Sorry about the racket.'], starts[-1]
-        cue = (dict(D3_CUES, mattered='And so did you.') if D8 else  # 1I: the storyverse name comes later (Kai at1721)
-               dict(D3_CUES, mattered="So it's not a multiverse at all. My boss likes to call it the storyverse.") if D6 else D3_CUES)
-        m['went'], m['mattered'] = ((at[cue['went']], at[cue['mattered']]) if D3 else
-                                    (at['went.'], at['We understand that now...']))
-    else:
-        m['hello'], m['racket'], m['bye'] = starts[0], starts[2], starts[-1]
-        m['went'], m['mattered'] = starts[5], starts[8]
-    t = c.close(b, end0)
+            c.flags.append('Beat 0 takes: Kai\'s audition picks for the new phrases ("Oh, hello!" c, "didn\'t notice you" a, '
+                       '"racket down" a, "It\'s his tune" c, "Anyway..." a); the unchanged phrases keep their round-0 takes. Whisper '
+                       'hears take c of "It\'s his tune" as "This is June" (takes a and b are there if your ear agrees).')
+        if D9:
+            beat0_angles(c, graded, skip, end0, starts, v6)
+        else:
+            c.pic(graded, skip, 0.0, end0, '0', source=v6)
+        if D6:
+            c.flags.append(f'Beat 0 (round D6, Kai at76): the travelling shot is extended with new chained clips '
+                           f'({v6.name}) and plays at real speed{"" if not stretch else " (STILL SLOWED: the extension was too short)"}; '
+                           f'it starts {skip:.1f} s in, after her opening turn; {lead:.1f} s of the tune before "Oh, hello!", '
+                           'then the radio goes down after "Sorry about the racket."')
+        if D1:  # by phrase text: "Sorry about the racket." is where the radio goes down
+            at = {text: st for (_, _, text, _), st in zip(seq, starts)}
+            m['hello'], m['racket'], m['bye'] = starts[0], at['Sorry about the racket.'], starts[-1]
+            cue = (dict(D3_CUES, mattered='And so did you.') if D8 else  # 1I: the storyverse name comes later (Kai at1721)
+                   dict(D3_CUES, mattered="So it's not a multiverse at all. My boss likes to call it the storyverse.") if D6 else D3_CUES)
+            m['went'], m['mattered'] = ((at[cue['went']], at[cue['mattered']]) if D3 else
+                                        (at['went.'], at['We understand that now...']))
+        else:
+            m['hello'], m['racket'], m['bye'] = starts[0], starts[2], starts[-1]
+            m['went'], m['mattered'] = starts[5], starts[8]
+        t = c.close(b, end0)
 
     # ---- 1: the roundabout, then down Maddie's own street (V13, only while the tank is far off), then the arch (V14)
     b = c.beat('1', 'Kill bots everywhere', t, act='The hunt',
@@ -861,7 +1099,7 @@ def scene_a():
     e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
     c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
     d10b = fr(max(5.0, e + TAIL - t))
-    if TAG in ('d5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
+    if TAG in ('d5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
         c.pic(V / 'cut3-WA02.mp4', 0, t, t + d10b, '10b')
         b['title'], b['see'] = 'The wide approach', ('Long lens through the grass: the pack races along the foot of the slope, the '
                                                      'bunker door small and high on the right. Maddie over it.')
@@ -920,7 +1158,372 @@ def scene_a():
     return c
 
 
+# ---------------------------------------------------------------- round 18: faster voices (Kai, 5 Nov meeting)
+# The row: each lip-synced shot's picture AND its dub are sped by the same factor, so the mouths stay where they were
+# fitted (v3). The v3 dubs already run at tempo 1.00-1.15 against the TTS masters, so a shot's factor is capped where
+# its on-face voice would pass ~1.25 combined (the warble limit is ~1.3): 7d-0 ("I'm really sorry, love", already 1.15)
+# gets 1.08; the rest 1.15. Pieces laid over the other person's face are not lip-bound and take their own tempo (<=1.25).
+LIP18 = ROOT / 'lip-r18'
+ROW18 = {'6-0': ('cut3-lip-6-0-v3-muted.mp4', '6-0', 1.15), '7d-0': ('cut3-lip-7d-0-v3-muted.mp4', '7d-0c', 1.08),
+         '7-0': ('cut3-lip-7-0-muted.mp4', '7-0', 1.15), '7d-1': ('cut3-lip-7d-1-muted.mp4', '7d-1c', 1.15),
+         '7-2': ('cut3-lip-7-2-v3-muted.mp4', '7-2', 1.15)}
+ROW18_GAP = 0.2   # Kai: the gaps between lines to the minimum that still reads
+OFFFACE_MAX = 1.25
+AGAIN_TEMPO = 1.12  # 'Again.' over Derek's face (was 1.00)
+VOX18 = AU / 'voice3' / 'r18'  # Maddie's fast re-voices (Pace fast, clipped, [fast]); picks by measurement
+MADDIE18 = {'11-0': VOX18 / '11-0-bot-fast-a.wav', '10b-0': VOX18 / '10b-0-bot-fast-a.wav', '12-0': VOX18 / '12-0-bot-fast-b.wav'}
+BOSS18 = AU / 'boss-r18'  # Suno re-records of the boss's two lines (another agent); the old takes until they land
+
+
+def boss18(src):
+    """The picked boss re-record for line `src` (1 = simulations, 3 = handle it), only once the picks are written:
+    boss-r18/picks.json {"1": "<file>.wav", "3": "<file>.wav"}. The folder fills with raw takes first; never guess."""
+    pj = BOSS18 / 'picks.json'
+    if not pj.exists():
+        return None
+    f = json.loads(pj.read_text()).get(str(src))
+    return BOSS18 / f if f else None
+
+
+ROW19 = {'6-0': ('cut3-lip-6-0-v3-muted.mp4', '6-0', 'v3'), '7d-0': ('cut3-lip-7d-0-r19-muted.mp4', '7d-0c', 'r19'),
+         '7-0': ('cut3-lip-7-0-muted.mp4', '7-0', 'r19'), '7d-1': ('cut3-lip-7d-1-muted.mp4', '7d-1c', 'r19'),
+         '7-2': ('cut3-lip-7-2-r19-muted.mp4', '7-2', 'r19')}
+
+
+def lip19():
+    """Round 19: natural picture speed. Each shot's clip and its fitted phrase table (voice-row-fit.py: re-voiced to the
+    clip, or a new talking clip, picked by a joint fit of voice loudness on the tracked mouth); 6-0 keeps v3 (it fitted best)."""
+    out = {}
+    for key, (vid, pname, ver) in ROW19.items():
+        ph = json.loads((LIP / f'cut3-lip-{pname}-{ver}-phrases.json').read_text())['phrases']
+        out[key] = (V / vid, ph, 1.0, LIP / f'cut3-lip-{pname}-{ver}-dub.wav')
+    return out
+
+
+def lip18(c):
+    """Sped copies of the row's muted clips, dubs and phrase tables (factor per shot); returns {key: (video, phrases, k)}."""
+    LIP18.mkdir(parents=True, exist_ok=True)
+    out = {}
+    for key, (vid, pname, k) in ROW18.items():
+        src_v = V / vid
+        v = LIP18 / f'{src_v.stem}-x{k:.2f}.mp4'
+        if not v.exists():
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(src_v), '-an', '-vf', f'setpts=PTS/{k},fps={FPS}',
+                            *ENC, str(v)], check=True)
+            subprocess.run([sys.executable, str(S.REPO / 'scripts/provenance/prov.py'), 'card', str(v), '--kind', 'video',
+                            '--engine', 'ffmpeg', '--tool', f'ffmpeg setpts=PTS/{k}', '--parent', str(src_v),
+                            '--why', 'round 18 faster voices: the lip-synced shot sped with its dub by the same factor'],
+                           check=True, capture_output=True)
+        ph = json.loads((LIP / f'cut3-lip-{pname}-v3-phrases.json').read_text())
+        dub = LIP / f'cut3-lip-{pname}-v3-dub.wav'
+        d = LIP18 / f'{dub.stem}-x{k:.2f}.wav'
+        if not d.exists():
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(dub), '-af', f'atempo={k}', str(d)], check=True)
+            subprocess.run([sys.executable, str(S.REPO / 'scripts/provenance/prov.py'), 'card', str(d), '--kind', 'voice',
+                            '--engine', 'ffmpeg', '--tool', f'ffmpeg atempo={k}', '--parent', str(dub),
+                            '--why', 'round 18 faster voices: the dub sped with its shot by the same factor'],
+                           check=True, capture_output=True)
+        for q in ph['phrases']:
+            q['at'] = q['at'] / k
+            q['tempo'] = q['tempo'] * k
+        ph['video'], ph['dub'], ph['factor'] = str(v), str(d), k
+        (LIP18 / f'cut3-lip-{pname}-r18-phrases.json').write_text(json.dumps(ph, indent=1))
+        out[key] = (v, ph['phrases'], k, d)
+    return out
+
+
+def row_d16(c, t, m, LINES):
+    """row_d8 on the sped shots, 0.2 s between lines (see ROW18); round 19: natural speed, re-fitted (ROW19)."""
+    L = lip19() if D17 else lip18(c)
+    t0 = t
+    v6, s6, k6, dub6 = L['6-0']
+    v7d0, d7a, k7d0, dub7d0 = L['7d-0']
+    v70, s7, k70, dub70 = L['7-0']
+    v7d1, d7b, k7d1, dub7d1 = L['7d-1']
+    v72, s72, k72, dub72 = L['7-2']
+    up_end = s6[1]['at'] + (s6[1]['to'] - s6[1]['from']) / s6[1]['tempo']
+    b6 = c.beat('6', 'The lavatory', t0, act='The row', see='Hard cut to full volume: Sandra, lip-synced.')
+    cut1 = fr(t0 + up_end + 0.04)
+    c.pic(v6, 0.0, t0, cut1, '6', source=V / 'cut3-lip-6-0-v3.mp4')
+    c.dub('vox-sandra', dub6, 0.0, cut1 - t0, t0, f'beat 6 6-0 (lip-sync dub, x{k6:.2f} with its shot)', chain=[TILE])
+    again, d_again = row_piece(c, s6[2]['src'], s6[2]['from'], s6[2]['to'], 1.0 if D17 else AGAIN_TEMPO,
+                               '6-0-again-r19' if D17 else '6-0-again-r18')
+    t_again = t0 + up_end + 0.06
+    c.dub('vox-sandra', again, 0.0, d_again, t_again, "beat 6 Sandra 'Again.' (over Derek)", chain=[TILE])
+    c.line(b6, 0, 'woman', t0 + s6[0]['at'], t_again + d_again - t0 - s6[0]['at'], "Derek. You've left the seat up again.", 'kai')
+    c.close(b6, cut1)
+    b7 = c.beat('7', 'The row, up close', cut1, act='The row',
+                see='Derek takes it on the chin, then Sandra; Derek, Sandra: shot by shot, lip-synced.')
+    d_line = (d7a[0]['to'] - d7a[0]['from']) / d7a[0]['tempo']
+    t_dl = t_again + d_again + ROW18_GAP
+    i0d = d7a[0]['at'] - (t_dl - cut1)
+    assert i0d >= 0.3, i0d
+    t_dend = t_dl + d_line
+    sfx18 = 'r19' if D17 else 'r18'
+    five, d_five = row_piece(c, s7[0]['src'], s7[0]['from'], s7[0]['to'], min(s7[0]['tempo'], OFFFACE_MAX), f'7-0-five-years-{sfx18}')
+    rest, d_rest = row_piece(c, s7[1]['src'], s7[1]['from'], s7[1]['to'], s7[1]['tempo'], f'7-0-seat-{sfx18}')
+    t_five = t_dend + ROW18_GAP
+    t_rest = t_five + d_five
+    cut2 = fr(t_rest - CUT_PRE)
+    assert i0d + (cut2 - cut1) <= dur(v7d0) + 1e-6, (i0d + (cut2 - cut1), dur(v7d0))
+    c.pic(v7d0, i0d, cut1, cut2, '7', source=V / 'cut3-lip-7d-0-v3.mp4')
+    c.dub('vox-derek', dub7d0, i0d, i0d + (cut2 - cut1), cut1, f'beat 7 7d-0 (lip-sync dub, x{k7d0:.2f} with its shot)', chain=[TILE])
+    c.line(b7, 0, 'man', t_dl, d_line, "I'm really sorry, love.", 'kai')
+    c.dub('vox-sandra', five, 0.0, d_five, t_five, "beat 7 Sandra 'Five years underground,' (over Derek)", chain=[TILE])
+    c.dub('vox-sandra', rest, 0.0, d_rest, t_rest, "beat 7 Sandra 'and you still can't put a seat down' (lip-synced)", chain=[TILE])
+    c.line(b7, 1, 'woman', t_five, t_rest + d_rest - t_five, LINES[('7', 0)]['text'], 'kai')
+    i0s = s7[1]['at'] - CUT_PRE
+    t_rend = t_rest + d_rest
+    d_at = d7b[0]['at']
+    i0b = max(0.0, d_at - CUT_PRE)
+    cut3 = fr(t_rend + ROW18_GAP - (d_at - i0b))
+    c.pic(v70, i0s, cut2, cut3, '7', source=V / 'cut3-lip-7-0.mp4')
+    d_b = (d7b[0]['to'] - d7b[0]['from']) / d7b[0]['tempo']
+    t_b = cut3 + (d_at - i0b)
+    t_bend = t_b + d_b
+    s_at = s72[0]['at']
+    t_s = t_bend + ROW18_GAP
+    i0c = max(0.0, s_at - CUT_PRE)
+    cut4 = fr(t_s - (s_at - i0c))
+    c.pic(v7d1, i0b, cut3, cut4, '7', source=V / 'cut3-lip-7d-1.mp4')
+    c.dub('vox-derek', dub7d1, i0b, i0b + (cut4 - cut3), cut3, f'beat 7 7d-1 (lip-sync dub, x{k7d1:.2f} with its shot)', chain=[TILE])
+    c.line(b7, 2, 'man', t_b, d_b, 'But the world ended, Sandra!', 'kai')
+    d_s = (s72[0]['to'] - s72[0]['from']) / s72[0]['tempo']
+    end = fr(t_s + d_s + TAIL)
+    assert i0c + (end - cut4) <= dur(v72) + 0.5 / FPS, (i0c + (end - cut4), dur(v72))
+    c.pic(v72, i0c, cut4, end, '7', source=V / 'cut3-lip-7-2-v3.mp4')
+    c.dub('vox-sandra', dub72, i0c, i0c + (end - cut4), cut4, f'beat 7 7-2 (lip-sync dub, x{k72:.2f} with its shot)', chain=[TILE])
+    c.line(b7, 3, 'woman', t_s, d_s, LINES[('7', 2)]['text'], 'kai')
+    m['s6'] = t0
+    m['row18'] = {'6-0': (t0, 0.0, k6), '7d-0': (cut1, i0d, k7d0), '7-0': (cut2, i0s, k70), '7d-1': (cut3, i0b, k7d1),
+                  '7-2': (cut4, i0c, k72)}
+    if D17:
+        c.flags.append('Beats 6-7, round 19 (Kai at3777: the speed-up read as sped-up footage): every talking shot at natural '
+                       'speed. 6-0 Sandra: the v3 clip and voice (it fitted best of everything tried). 7d-0 Derek: a NEW talking '
+                       'clip (Flow, Omni Flash, from the approved still) with a fast re-voice laid unbroken at x1.02. 7-0 Sandra: '
+                       'the same clip, re-voiced to it (x1.08, one take). 7d-1 Derek: the same clip, re-voiced to it (x0.97). '
+                       '7-2 Sandra: a NEW talking clip with her original voice at x1.12. Each pairing picked by a joint fit of the '
+                       'voice loudness on the tracked mouth (voice-row-fit.py); no voice placed before a mouth opens.')
+    c.flags.append('Beats 6-7, round 18 (faster voices): every lip-synced shot and its dub sped by the same factor, so the '
+                   f'mouths stay where they were fitted: 6-0 x{k6:.2f}, 7d-0 x{k7d0:.2f} (its line was already at 1.15 against the '
+                   f'voice master, so capped there), 7-0 x{k70:.2f}, 7d-1 x{k7d1:.2f}, 7-2 x{k72:.2f}; frame sampling, no '
+                   f'interpolation. "Again." (over Derek) x{AGAIN_TEMPO}, "Five years underground," (over Derek) '
+                   f'x{min(s7[0]["tempo"], OFFFACE_MAX):.2f}. {ROW18_GAP:g} s between lines.')
+    return c.close(b7, end)
+
+
+RT01_D15 = 3.0  # round 17: the bots turning away at the door, the whole stand-down now (no HUD)
+
+
+def rest_d15(c, t, m):
+    """Round 17 (Kai, 5 Nov): the brutal kill-bot cut. After "Mind how you go.": hard cut to the row (6-7), one kill bot
+    tears past Maddie (9a, the first bot we see), the call trimmed to three lines (11), the wide approach (10b), the bots
+    turning away at the door (12, no HUD: the red/green screens are saved for the bunker TV), "That was close." Beats 1-4,
+    8, 9b and 10a are gone."""
+    # ---- 6-7: the row, exactly as round 16, from a hard cut (round 18: sped, picture and voice together)
+    t = row_d16(c, t, m, LINES) if D16 else row_d8(c, t, m, LINES)
+    # ---- 9a: one kill bot tears past Maddie
+    b = c.beat('9a', 'One kill bot tears past Maddie', t, act='Kill mode',
+               see='The first kill bot we see: high over the street, it passes close and exits bottom-left, Maddie jolts, '
+                   'a plume of dust hangs.')
+    c.pic(V / 'cut3-V1.mp4', V1_IN, t, t + D9A, '9a')
+    m['s9a'] = t
+    t = c.close(b, t + D9A)
+    # ---- 11: the call, three lines
+    s11 = t
+    b = c.beat('11', 'Maddie calls her boss', s11, act='Kill mode',
+               see="Maddie's hatch, the boss-hotline antenna. Three lines; the race (far) under the boss's two.")
+    v3, v8 = V / 'cut3-V3.mp4', V / 'cut3-V8.mp4'
+    calls = [('bot', A1 / '11-0-bot-b.wav', "Boss, I've just seen a bot in kill mode. Which must mean it's detected an "
+                                            'organic signal.'),
+             ('ai', 1, None), ('ai', 3, None)]
+    if D16:
+        calls[0] = ('bot', MADDIE18['11-0'], calls[0][2])
+    if D17:  # Kai at4194: lose "No, thank you. I will handle it." -- straight from 'simulations again' to the next shot
+        calls = calls[:2]
+    tt = s11 + 2.0  # the antenna first
+    starts = []
+    for k, (who, src, text) in enumerate(calls):
+        if who == 'ai':
+            tk, text = Take(SUNO_A / BOSS[src]), BOSS_TEXT[src]
+            if src == 3:  # Kai at4564: no second 'Maddie'
+                tk, text = Take(SUNO_A / BOSS[3].replace('.wav', '-noname.wav')), 'No, thank you. I will handle it.'
+            if D16 and boss18(src):
+                tk = Take(boss18(src))
+            e = c.say('vox-ai', tk, tt, '11', f'beat 11 boss line {src}' + (f' (r18 re-record {tk.path.name})' if D16 and boss18(src) else ''),
+                      chain=[SPEAKER], lufs=-17)
+        else:
+            e = c.say('vox-maddie', Take(src), tt, '11', 'beat 11 Maddie 0')
+        c.line(b, k, who, tt, e - tt, text, 'kai')
+        starts.append((tt, e, who))
+        tt = e + GAP
+    end11 = fr(starts[-1][1] + TAIL)
+    if D17:  # Kai at4230: no cut back to V3 -- the call ends on the far race under 'simulations again', then 10b
+        a1 = fr(starts[1][0] - CUT_PRE)
+        assert 3.5 + (end11 - a1) <= dur(v8) + 0.5 / FPS, (end11 - a1, dur(v8))
+        c.pic(v3, 0.0, s11, a1, '11')
+        c.pic(v8, 3.5, a1, end11, '11')
+        m['s11'], m['calls'], m['end11'], m['v8cuts'] = s11, starts, end11, [(a1, end11)]
+        c.flags.append(f'Beat 11 (round 19, Kai at4194/at4230): two lines, her report and "making fun of my simulations again?"; '
+                       f'"No, thank you. I will handle it." is cut. V3 (the hatch) to the boss\'s line, then the far race (V8) '
+                       f'under it to the cut to the wide approach: no cut back to V3.')
+        t = c.close(b, end11)
+        return rest_d15_after_call(c, t, m)
+    a1, a3 = fr(starts[1][0] - CUT_PRE), fr(starts[2][0] - CUT_PRE)
+    # V3 throughout, a 2.25 s cutaway to the far race (V8) on each of the boss's lines (back-to-back lines: the second
+    # cutaway follows straight on if they overlap)
+    cuts = [s11, a1, fr(a1 + 2.25), max(a3, fr(a1 + 2.25)), fr(max(a3, a1 + 2.25) + 2.25), end11]
+    srcs = [(v3, 0.0), (v8, 3.5), (v3, 2.0), (v8, 5.75), (v3, 4.0)]
+    for (src, i0), x, z in zip(srcs, cuts, cuts[1:]):
+        if z > x:
+            c.pic(src, i0, x, z, '11')
+    c.flags.append(f'Beat 11 (round 17): three lines, Maddie\'s report, "making fun of my simulations", "No, thank you. I will handle it."; '
+                   f'"No, honestly, it\'s real..." and the malware offer are cut. {end11 - s11:.1f} s on V3 with the far race (V8) '
+                   'cut in on each of the boss\'s lines, as before.')
+    m['s11'], m['calls'], m['end11'] = s11, starts, end11
+    m['v8cuts'] = [(cuts[1], cuts[2]), (cuts[3], cuts[4])]
+    t = c.close(b, end11)
+    return rest_d15_after_call(c, t, m)
+
+
+def rest_d15_after_call(c, t, m):
+    v3 = V / 'cut3-V3.mp4'
+    # ---- 10b: the wide approach, Maddie over it
+    b = c.beat('10b', 'The wide approach', t, act='Kill mode',
+               see='Long lens through the grass: the pack races along the foot of the slope, the bunker door small and high on '
+                   'the right. Maddie over it.')
+    tk = Take(MADDIE18['10b-0'] if D16 else A1 / '10b-0-bot-a.wav')
+    e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
+    c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
+    d10b = fr(max(5.0, e + TAIL - t))
+    c.pic(V / 'cut3-WA02.mp4', 0, t, t + d10b, '10b')
+    m['s10b'], m['l10b'] = t, (t + LEAD, e)
+    t = c.close(b, t + d10b)
+    # ---- 12: the bots turn away at the door (RT01, no HUD); Maddie
+    s12 = t
+    b = c.beat('12', 'The stand-down', s12, act='The gate',
+               see='No HUD: from the ridge, the pack turns away from the bunker door and rolls off down the slope. Then Maddie, '
+                   'shaky with relief: "That was close."')
+    c.pic(V / 'cut3-RT01.mp4', RT01_IN, s12, s12 + RT01_D15, '12')
+    s_v3 = fr(s12 + RT01_D15)
+    tk = Take(MADDIE18['12-0']) if D16 else Take(close_only(pathlib.Path(A3['media']) / MADDIE12['file'], c.dir))
+    e = c.say('vox-maddie', tk, s_v3 + LEAD, '12', 'beat 12 Maddie: That was close.')
+    c.line(b, 0, 'bot', s_v3 + LEAD, e - s_v3 - LEAD, 'That was close.', 'kai')
+    end12 = fr(e + TAIL + 0.4)
+    c.pic(v3, 3.0, s_v3, end12, '12')
+    c.flags.append(f'Beat 12 (round 17): no HUD (Kai: the red KILL MODE and green STAND DOWN are saved for the bunker TV). '
+                   f'RT01 from {RT01_IN} s for {RT01_D15:g} s is the stand-down, then Maddie on V3: "That was close." (the line as '
+                   'it has been since your 2 Nov note, the take from after its pause; the full "Good job. That was close." take is there if wanted).')
+    c.flags.append('Round 17: beats 1-4 (roundabout, V13r3, V14, the patrol over the lens, the patrol HUD and the muffled row under it), '
+                   'beat 8 (KILL MODE HUD), 9b (the dust) and 10a (the far race) are cut.')
+    m['s12'], m['peace'], m['s_v3'], m['l12'] = s12, s12, s_v3, (s_v3 + LEAD, e)
+    t = c.close(b, end12)
+    c.total = t
+    return c
+
+
+def audio_a_d15(c):
+    """Round 17's sound: beat 0 as round 16; no patrol music; the chase (C3) arrives with the bot tearing past Maddie,
+    ducked under the call and her 10b line, its break-off landing as the pack turns away (beat 12); no HUD sounds."""
+    m, total = c.m, c.total
+    mx = C.Mix(total)
+    voices(c, mx)
+    sfx = json.loads((SFX / 'index.json').read_text())
+    RADIO = sfx['filters']['M0_tinny_radio']
+    fx = sfx_adder(mx)
+    B = {b['id']: b for b in c.beats}
+    st = {k: b['start'] for k, b in B.items()}
+    en = {k: b['start'] + b['dur'] for k, b in B.items()}
+    # ---- M0, her radio: exactly as rounds 15-16
+    hello, down, up, d0, bye = m['hello'][0], m['racket'][1], m['bye'][1] - 1.3, en['0'], m['bye'][1]
+    hp = m['holo']['p']
+    x = C.level(C.decode(C.MUSIC['M0'], 0.0, m['holo']['h'], af=RADIO), rms=-23)
+    x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.25, 1), (hello, 0.2), (down - 0.1, 0.2), (down + 0.7, 0),
+                        (len(x) / SR, 0)])
+    mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], 'M0 her radio (tinny GPOM track), the opening')
+    y = C.level(C.decode(C.MUSIC['M0'], max(0.0, C.DROP - (up - hp)), d0 - hp, af=RADIO), rms=-23)
+    y *= C.env(len(y), [(0, 0), (up - 0.3 - hp, 0), (up + 0.3 - hp, 0.35), (bye - hp, 0.35), (bye + 0.3 - hp, 1),
+                        (d0 - 0.03 - hp, 1), (d0 - hp, 0)])
+    mx.add('mus-M0-radio', y, hp, C.MUSIC['M0'], 'M0 her radio, back after the fade-up (the drop on "Mind how you go")')
+    # ---- C3 the chase: from the bot tearing past Maddie (9a) to the stand-down; its break-off (one low held note)
+    # lands as the pack turns away (beat 12), and the note rings on under "That was close."
+    s2, stop = m['s9a'], m['peace']
+    d = stop - s2
+    tail = min(dur(C3) - C3_BREAK, total - stop)
+    assert d <= C3_BREAK, d
+    x = C.decode(C3, C3_BREAK - d, d + tail)
+    x = C.level(x, rms=-18, peak=-1)
+    da = m['calls'][0][0] - 0.3 - s2
+    db = m['calls'][-1][1] + 0.2 - s2
+    e10b = m['l10b'][1] - s2
+    x *= C.env(len(x), [(0, 0.0), (0.15, 1), (da, 1), (da + 0.4, 0.22), (db, 0.22), (db + 0.4, 1),
+                        (m['l10b'][0] - s2 - 0.2, 1), (m['l10b'][0] - s2, 0.22), (e10b, 0.22), (e10b + 0.3, 1),
+                        (len(x) / SR - 1.5, 1), (len(x) / SR, 0)])
+    mx.add('mus-C3-chase', x, s2, C3, 'C3 the chase (low strings), from the bot tearing past her')
+    c.flags.append(f'Music (round 17): no patrol music (P1/P2 gone with beats 1-4 and 8). C3 the chase comes in with the bot '
+                   f'tearing past Maddie (9a), starting {C3_BREAK - d:.1f} s into the take so its break-off lands as the pack turns '
+                   f'away (beat 12); ducked to -13 dB under the call and her 10b line; its held note rings under "That was close."')
+    # ---- sfx: beat 0 as round 16
+    H = m['holo']
+    wind = wind_file()
+    fx('sfx-wind', wind, 0, H['h'] + 0.5, rms=-34, fi=1.0, fo=1.5, tile=True, what='wind (ffmpeg), the street')
+    fx('sfx-wind', wind, H['h'] - 1.0, H['p'] - H['h'] + 2.0, src_in=7.0, rms=-46, fi=1.5, fo=1.5, tile=True,
+       what='wind, a low bed under the hologram')
+    fx('sfx-wind', wind, H['p'] - 0.5, en['0'] - H['p'] + 0.5, src_in=13.0, rms=-34, fi=2.0, fo=0.05, tile=True,
+       what='wind, the street again (to the hard cut)')
+    loop_wheels(fx, 'sfx-maddie', 0.0, H['sw'] + 1.0, rms=-31, fi=0.5, fo=1.0, what='her wheels (loop), fading with the picture')
+    loop_wheels(fx, 'sfx-maddie', H['b'], en['0'] - H['b'], rms=-31, fi=1.0, fo=0.05, what='her wheels (loop), rolling again')
+    for k in np.arange(8.5, en['0'] - 0.5, 2.5):
+        if H['h'] - 0.5 <= k < H['p']:
+            continue
+        fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon blip')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-oh.wav', hello - 0.55, rms=-30, what='beep: startled (she sees us)')
+    fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', down - 0.05, rms=-32, what='servo: she turns the radio down')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-deflate.wav', m['went'][1] + 0.05, rms=-32, what='beep: deflate (after "went.")')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-thinking.wav', m['mattered'][1] + 0.1, rms=-34, what='beep: thinking (into the hologram)')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-happy.wav', m['bye'][1] + 0.05, rms=-31, what='beep: happy (bye)')
+    # ---- 6-7: the tiled room
+    fx('sfx-rooms', SFX / 'fs767306-room-tiled-public-bathroom.mp3', st['6'], en['7'] - st['6'], src_in=10, rms=-42,
+       fi=0.02, fo=0.05, what='tiled room tone')
+    # ---- 9a: the pass (placed in clip time, so they follow V1_IN)
+    s = st['9a'] - V1_IN
+    loop_wheels(fx, 'sfx-maddie', st['9a'], 3.0 - V1_IN, rms=-34, fi=0.05, fo=0.2, what='her wheels, trundling')
+    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', st['9a'], 3.4 - V1_IN, rms=-26, fi=0.05, fo=0.6, what='tank tracks')
+    fx('sfx-maddie', MS / 'derived-maddie-killbot-dust-whoosh.wav', s + 1.6, peak=-3, af='pan=stereo|c0=c1|c1=c0',
+       what='kill bot dust whoosh, past her')
+    fx('sfx-maddie', MS / 'derived-maddie-servo-turn-b.wav', s + 3.0, rms=-30, what='servo: she jolts')
+    fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s + 3.0, en['9a'] - (s + 3.0) + 1.5, src_in=30,
+       rms=-32, fo=1.5, what='the kill bot, going away (into the call)')
+    fx('sfx-wind', wind, st['9a'], en['9a'] - st['9a'], src_in=25.0, rms=-38, fi=0.05, fo=0.3, tile=True, what='wind, the street')
+    # ---- 11: hatch and antenna on V3; the far engines on each V8 cutaway; the beacon on the boss's words
+    fx('sfx-maddie', MS / 'derived-maddie-hatch-open.wav', m['s11'] + 0.02, rms=-26, what='hatch')
+    fx('sfx-maddie', MS / 'derived-maddie-antenna-extend.wav', m['s11'] + 0.4, rms=-26, what='antenna extends')
+    fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-ack-double.wav', m['s11'] + 1.45, rms=-32, what='beep: line open')
+    for a, z in m['v8cuts']:
+        fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', a, z - a + 0.3, src_in=40, rms=-31,
+           fi=0.05, fo=0.3, what='engines, far (cutaway)')
+    for a, e, who in m['calls']:
+        if who == 'ai':
+            for k in np.arange(a, e, 0.9):
+                fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-34, what='beacon on his words')
+    # ---- 10b: the close race
+    s = st['10b']
+    fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s, en['10b'] - s, src_in=10, rms=-30, fi=0.05,
+       fo=0.2, what='engines, close')
+    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s, en['10b'] - s, rms=-30, peak=-3, fo=0.3, what='tracks, close')
+    fx('sfx-killbots', SFX / 'fs189446-killbot-jet-flyby.mp3', s - 0.3, 2.5, src_in=4, rms=-32, peak=-3, fi=0.3, fo=0.8,
+       what='two tear past the camera (under her line)')
+    # ---- 12: the pack turns away (no HUD sounds); wind on the downs to the end
+    s = st['12']
+    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s, RT01_D15 + 1.5, rms=-30, fi=0.1, fo=2.0,
+       what='the pack turns away')
+    fx('sfx-wind', wind, s, total - s, src_in=20, rms=-36, fi=0.5, fo=0.5, tile=True, what='wind on the downs')
+    return mx
+
+
 def audio_a(c):
+    if D15:
+        return audio_a_d15(c)
     m, total = c.m, c.total
     mx = C.Mix(total)
     voices(c, mx)
@@ -939,11 +1542,25 @@ def audio_a(c):
     down = m['racket'][1]
     up = m['bye'][1] - 1.3
     d0 = en['0']
-    x = C.level(C.decode(C.MUSIC['M0'], C.DROP - up, d0, af=RADIO), rms=-23)
     bye = m['bye'][1]
-    x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.25, 1), (hello, 0.2), (down - 0.1, 0.2), (down + 0.7, 0),
-                        (up - 0.3, 0), (up + 0.3, 0.35), (bye, 0.35), (bye + 0.3, 1), (d0 - 0.03, 1), (d0, 0)])
-    mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], 'M0 her radio (tinny GPOM track)')
+    if D13:
+        # The radio is already at nothing from "racket" to just before "Mind how you go", so it plays in two pieces:
+        # the opening exactly as round 14 (from the top of the track), cut at the hologram; then from the pull-out,
+        # cued so the drop lands on "Mind how you go" as before.
+        hp = m['holo']['p']
+        x = C.level(C.decode(C.MUSIC['M0'], 0.0, m['holo']['h'], af=RADIO), rms=-23)
+        x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.25, 1), (hello, 0.2), (down - 0.1, 0.2), (down + 0.7, 0),
+                            (len(x) / SR, 0)])
+        mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], 'M0 her radio (tinny GPOM track), the opening')
+        y = C.level(C.decode(C.MUSIC['M0'], max(0.0, C.DROP - (up - hp)), d0 - hp, af=RADIO), rms=-23)
+        y *= C.env(len(y), [(0, 0), (up - 0.3 - hp, 0), (up + 0.3 - hp, 0.35), (bye - hp, 0.35), (bye + 0.3 - hp, 1),
+                            (d0 - 0.03 - hp, 1), (d0 - hp, 0)])
+        mx.add('mus-M0-radio', y, hp, C.MUSIC['M0'], 'M0 her radio, back after the pull-out (the drop on "Mind how you go")')
+    else:
+        x = C.level(C.decode(C.MUSIC['M0'], C.DROP - up, d0, af=RADIO), rms=-23)
+        x *= C.env(len(x), [(0, 0), (0.3, 1), (hello - 0.25, 1), (hello, 0.2), (down - 0.1, 0.2), (down + 0.7, 0),
+                            (up - 0.3, 0), (up + 0.3, 0.35), (bye, 0.35), (bye + 0.3, 1), (d0 - 0.03, 1), (d0, 0)])
+        mx.add('mus-M0-radio', x, 0.0, C.MUSIC['M0'], 'M0 her radio (tinny GPOM track)')
     # Patrol: P1 (solo cello + felt piano) under beat 1-2, crossfading into P2 (cold quartet) for the HUD (3-4),
     # dead on the hard cut to the lavatory; P2 returns under kill mode (8), out at 9a where C3 starts.
     a, z = st['1'], st['3']
@@ -988,10 +1605,37 @@ def audio_a(c):
 
     # ---- sfx
     wind = wind_file()
-    fx('sfx-wind', wind, 0, en['3'], rms=-34, fi=1.0, fo=0.05, what='wind (ffmpeg)')
-    loop_wheels(fx, 'sfx-maddie', 0.0, en['0'], rms=-31, fi=0.5, fo=0.3, what='her wheels (loop)')
-    for k in np.arange(8.5 if D8 else 0.5, en['0'] - 0.5, 2.5):  # d8 (Kai at50): no blips under the opening tune
-        fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon blip')
+    if D13:
+        # The street carries on through the swoop; under the hologram (her presentation) only a low wind bed; the street
+        # comes back with the pull-out. She is parked in the swoop and the pull-out, so her wheels stop for both.
+        H = m['holo']
+        fx('sfx-wind', wind, 0, H['h'] + 0.5, rms=-34, fi=1.0, fo=1.5, tile=True, what='wind (ffmpeg), the street')
+        fx('sfx-wind', wind, H['h'] - 1.0, H['p'] - H['h'] + 2.0, src_in=7.0, rms=-46, fi=1.5, fo=1.5, tile=True,
+           what='wind, a low bed under the hologram')
+        fx('sfx-wind', wind, H['p'] - 0.5, en['3'] - H['p'] + 0.5, src_in=13.0, rms=-34, fi=2.0, fo=0.05, tile=True,
+           what='wind, the street again (from the pull-out)')
+        loop_wheels(fx, 'sfx-maddie', 0.0, H['sw'] + (1.0 if D14 else 1.5), rms=-31, fi=0.5, fo=1.0 if D14 else 1.5,
+                    what='her wheels (loop), fading with the picture' if D14 else 'her wheels (loop), stopping in the swoop')
+        loop_wheels(fx, 'sfx-maddie', H['b'], en['0'] - H['b'], rms=-31, fi=1.0 if D14 else 0.4, fo=0.3, what='her wheels (loop), rolling again')
+        for k in np.arange(8.5, en['0'] - 0.5, 2.5):
+            if H['h'] - 0.5 <= k < H['p']:
+                continue
+            fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon blip')
+        c.flags.append(f"Beat 0 sound (round 15): the street (wind, wheels, beacon) runs on through the swoop; from "
+                       f"{H['h']:.1f} s to {H['p']:.1f} s, under the hologram, only wind at -46 dB RMS (12 dB under the "
+                       "street's) and her voice; the street comes back up with the pull-out. Her wheels stop in the swoop "
+                       "(she is parked in it) and roll again when we are back on the front shot. The radio is already "
+                       "silent from \"racket\" until \"Mind how you go\", as before; it returns on its drop.")
+        if D14:
+            c.flags[-1] = (f"Beat 0 sound (round 16): the street (wind, wheels, beacon) runs on under the bridge line and fades down "
+                           f"with the picture ({H['sw']:.1f}-{H['h']:.1f} s); under the hologram ({H['h']:.1f}-{H['p']:.1f} s) only wind "
+                           "at -46 dB RMS and her voice; the street comes back up with the fade-up, her wheels rolling again. The radio "
+                           "is silent from \"racket\" until \"Mind how you go\", and its drop still lands there.")
+    else:
+        fx('sfx-wind', wind, 0, en['3'], rms=-34, fi=1.0, fo=0.05, what='wind (ffmpeg)')
+        loop_wheels(fx, 'sfx-maddie', 0.0, en['0'], rms=-31, fi=0.5, fo=0.3, what='her wheels (loop)')
+        for k in np.arange(8.5 if D8 else 0.5, en['0'] - 0.5, 2.5):  # d8 (Kai at50): no blips under the opening tune
+            fx('sfx-beacon', SFX / 'synth-beacon-blip.wav', k, rms=-36, what='beacon blip')
     fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-oh.wav', hello - 0.55, rms=-30, what='beep: startled (she sees us)')
     fx('sfx-maddie', MS / 'derived-maddie-servo-turn-a.wav', down - 0.05, rms=-32, what='servo: she turns the radio down')
     fx('sfx-maddie-beeps', MS / 'synth-maddie-beep-deflate.wav', m['went'][1] + 0.05, rms=-32,

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-03-b.png",
+ "made": "2026-11-05T19:45:33.500Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep the first picture's idea: we lie on the road under the little grey robot and gaze up at its belly. Fix one thing: it must plainly be standing on the road, not hovering. Use a very wide lens, so the frame takes in all six chunky black tyres around the edge of the picture, each one squashed slightly where its tread presses onto the cracked tarmac, with bits of brick and grit right beside them, the road surface visible in a ring all the way round the frame between the tyres. The belly in the centre stays in deep shadow, almost black, with only a seam or two faintly lit, and the torn bunting hangs down off the front. Beyond the tyres, the broken shopfronts lean in toward the white sky. Robot copied exactly from the second picture. Photographic, 16:9, nothing written.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-02-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/hologram-screen/hu-02-a.png",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/simulation/stills/s3/s3-bot-00b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1f278e71-c587-40c7-92a0-3966178ea26d"
+}

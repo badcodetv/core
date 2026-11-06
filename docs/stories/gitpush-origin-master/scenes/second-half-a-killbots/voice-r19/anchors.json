@@ -1,0 +1,312 @@
+{
+ "6-0": {
+  "clip": "cut3-lip-6-0-v3-t1",
+  "heard": "derek you've left the seat up again",
+  "lag": -0.125,
+  "corr": 0.71,
+  "anchors": {
+   "derek": -0.125,
+   "you've": 0.755,
+   "left": 1.455,
+   "seat": 1.795,
+   "up": 1.975
+  },
+  "mouth_opens": [
+   0.17,
+   1.0,
+   1.5,
+   1.71,
+   4.42
+  ],
+  "words": [
+   [
+    "derek",
+    0.0,
+    0.28
+   ],
+   [
+    "you've",
+    0.88,
+    1.58
+   ],
+   [
+    "left",
+    1.58,
+    1.74
+   ],
+   [
+    "the",
+    1.74,
+    1.92
+   ],
+   [
+    "seat",
+    1.92,
+    2.1
+   ],
+   [
+    "up",
+    2.1,
+    4.0
+   ],
+   [
+    "again",
+    4.58,
+    4.86
+   ]
+  ]
+ },
+ "7d-0c": {
+  "clip": "cut3-lip-7d-0-v3-t6",
+  "heard": "i'm really sorry love",
+  "lag": -0.375,
+  "corr": 0.59,
+  "anchors": {
+   "i'm": 1.665,
+   "really": 2.305,
+   "sorry": 2.545,
+   "love": 2.865
+  },
+  "mouth_opens": [
+   2.17,
+   2.71,
+   3.21
+  ],
+  "words": [
+   [
+    "i'm",
+    2.04,
+    2.68
+   ],
+   [
+    "really",
+    2.68,
+    2.92
+   ],
+   [
+    "sorry",
+    2.92,
+    3.24
+   ],
+   [
+    "love",
+    3.24,
+    3.44
+   ]
+  ]
+ },
+ "7-0": {
+  "clip": "L07-0-a",
+  "heard": "five years underground and you still can't put a seat down",
+  "lag": -0.125,
+  "corr": 0.71,
+  "anchors": {
+   "five": -0.125,
+   "years": 0.135,
+   "underground": 0.575,
+   "and": 1.295,
+   "you": 2.515,
+   "still": 2.655,
+   "can't": 3.035,
+   "put": 3.475,
+   "seat": 3.735,
+   "down": 3.935
+  },
+  "mouth_opens": [
+   0.38,
+   1.29,
+   1.67,
+   2.33,
+   2.83,
+   3.67
+  ],
+  "words": [
+   [
+    "five",
+    0.0,
+    0.26
+   ],
+   [
+    "years",
+    0.26,
+    0.7
+   ],
+   [
+    "underground",
+    0.7,
+    1.42
+   ],
+   [
+    "and",
+    1.42,
+    2.64
+   ],
+   [
+    "you",
+    2.64,
+    2.78
+   ],
+   [
+    "still",
+    2.78,
+    3.16
+   ],
+   [
+    "can't",
+    3.16,
+    3.6
+   ],
+   [
+    "put",
+    3.6,
+    3.7
+   ],
+   [
+    "a",
+    3.7,
+    3.86
+   ],
+   [
+    "seat",
+    3.86,
+    4.06
+   ],
+   [
+    "down",
+    4.06,
+    4.46
+   ]
+  ]
+ },
+ "7d-1c": {
+  "clip": "L07d-1-a",
+  "heard": "but the world ended sandra",
+  "lag": 0.0,
+  "corr": 0.87,
+  "anchors": {
+   "but": 0.0,
+   "world": 0.52,
+   "ended": 0.82,
+   "sandra": 1.44
+  },
+  "mouth_opens": [
+   0.58,
+   0.83,
+   1.79
+  ],
+  "words": [
+   [
+    "but",
+    0.0,
+    0.4
+   ],
+   [
+    "the",
+    0.4,
+    0.52
+   ],
+   [
+    "world",
+    0.52,
+    0.82
+   ],
+   [
+    "ended",
+    0.82,
+    1.28
+   ],
+   [
+    "sandra",
+    1.44,
+    1.8
+   ]
+  ]
+ },
+ "7-2": {
+  "clip": "cut3-lip-7-2-v3-t1",
+  "heard": "yeah the world ended doesn't mean you get to stop having manners",
+  "lag": 0.208,
+  "corr": 0.77,
+  "anchors": {
+   "yeah": 0.208,
+   "world": 0.788,
+   "ended": 1.068,
+   "doesn't": 1.488,
+   "mean": 2.008,
+   "get": 2.248,
+   "stop": 2.468,
+   "having": 2.648,
+   "manners": 2.948
+  },
+  "mouth_opens": [
+   0.62,
+   1.79,
+   1.96,
+   2.46,
+   2.58,
+   2.79
+  ],
+  "words": [
+   [
+    "yeah",
+    0.0,
+    0.2
+   ],
+   [
+    "the",
+    0.5,
+    0.58
+   ],
+   [
+    "world",
+    0.58,
+    0.86
+   ],
+   [
+    "ended",
+    0.86,
+    1.28
+   ],
+   [
+    "doesn't",
+    1.28,
+    1.8
+   ],
+   [
+    "mean",
+    1.8,
+    1.92
+   ],
+   [
+    "you",
+    1.92,
+    2.04
+   ],
+   [
+    "get",
+    2.04,
+    2.14
+   ],
+   [
+    "to",
+    2.14,
+    2.26
+   ],
+   [
+    "stop",
+    2.26,
+    2.44
+   ],
+   [
+    "having",
+    2.44,
+    2.74
+   ],
+   [
+    "manners",
+    2.74,
+    3.04
+   ]
+  ]
+ }
+}

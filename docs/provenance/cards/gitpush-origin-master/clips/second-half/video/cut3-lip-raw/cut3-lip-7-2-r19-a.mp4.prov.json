@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7-2-r19-a.mp4",
+ "made": "2026-11-05T21:39:06.926Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked-off camera, the frame holds still. The woman in the cream jumper, facing us, fires straight back at the man the instant he finishes, quick, sharp and sarcastic, each word crisp. She says: Yeah, the world ended. Doesn't mean you get to stop having manners. Then she shuts her mouth and folds her arms. The man seen from behind does not move or speak.",
+ "model": "Omni Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-sandra-SB07b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 6
+ },
+ "source_id": "2320b2fb-a425-4d7f-8a78-591dfd1d2d4c"
+}

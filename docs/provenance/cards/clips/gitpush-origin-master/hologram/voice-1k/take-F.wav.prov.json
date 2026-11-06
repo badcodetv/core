@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1k/take-F.wav",
+ "made": "2026-11-05T20:25:52+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Gemini TTS",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "Aoede",
+ "why": "bridge line before the hologram (Kai picked option 1)",
+ "prompt": "[softly] He made me learn a little presentation, you know. In case any of you ever came back. [short pause] [brightly] Go on, then. Gather round.\n\nHe made me learn a little presentation, you know. In case any of you ever came back. [short pause] Go on, then. Gather round.",
+ "inputs": {
+  "profile": "design/2026-11-05-gpom-meeting/voice-1k/profile-bridge.md"
+ }
+}
