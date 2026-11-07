@@ -1,3 +1,5 @@
+> ⚠ **Scoped (2026-11-07): Bank Robbery round-3 ACTION clips only. Do not paste into any other brief.** Its restraint advice (subtle evolution, one primary motion, small gesture vocabulary, count then stop) made every rap-to-camera clip stiff when it was reused. See `docs/google-flow/same-clip-traps.md`. New jobs get fresh web research.
+
 # Clean-room research: image-to-video clips (Omni Flash in Flow; Veo 3.x Fast as nearest documented relative)
 
 Web only, 2026-11-03. Tags: [vendor] = Google or the tool maker; [tested] = someone ran it and reported results; [reported] = blogs, forums, press; [inference] = my reasoning, not evidence. **Thin** = one weak source.

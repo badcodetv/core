@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t04r5-a.jpg",
+ "made": "2026-11-07T11:00:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w2 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Bright overcast day on a glass-walled rooftop terrace in the City of London, office towers behind. Full shot from knee height, slightly wide lens. The man in the attached reference strides toward the camera with a lordly swagger: chest out, chin tipped up, leaning back from the waist, feet mid-step on the decking. A handheld microphone is held near his mask with the elbow cocked high and out; his free hand is raised flat, palm down, at the top of a chopping stroke. Clear space to his left for him to pace. Mask: white ring round the face, small red triangle high over his left eye, no eye or mouth openings. Gloves on, no skin anywhere. No readable words.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/posh-tweed.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

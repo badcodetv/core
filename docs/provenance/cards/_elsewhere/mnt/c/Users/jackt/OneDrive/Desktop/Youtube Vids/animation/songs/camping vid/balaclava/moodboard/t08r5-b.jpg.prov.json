@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08r5-b.jpg",
+ "made": "2026-11-07T11:00:33+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w3 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Medium-wide shot at a warm-evening garden party at an English country house, golden light, the camera low at the pool edge looking up, blurred guests in suits holding champagne behind him. The man in the attached reference stands up on a wrought-iron garden chair above the crowd, legs wide, knees bent, rocking back. His gloved right hand grips a handheld microphone at his mask; his gloved left hand thrusts a full champagne flute straight up in the air like a trophy, arm fully extended, with clear sky above it. Two guests turn to cheer with raised glasses. His mask has no eye or mouth openings: a white ring round the face, a small red triangle high inside the ring on the right-hand side of the picture. Gloves on, no skin anywhere. No readable words.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/posh-tweed.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

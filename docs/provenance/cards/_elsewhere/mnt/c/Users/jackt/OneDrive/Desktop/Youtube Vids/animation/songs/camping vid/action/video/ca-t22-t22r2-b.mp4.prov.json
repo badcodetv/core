@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t22-t22r2-b.mp4",
+ "made": "2026-11-07T09:28:35+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] The huge black SUV slides sideways through the puddle with momentum and weight, its body leaning hard on its suspension, and the sheet of dirty water crashes down over the bus queue; the commuters flinch, hunch and turn their backs as it slaps over their umbrellas and coats. [00:02-00:08] The tyres bite, the car snaps straight and powers past the camera to the left, a second wave of spray slapping across the lens, while through the side window the man keeps one hand on the wheel and laughs at the drenched queue. Camera on the wet kerb at road level, locked off with a hard jolt as the spray hits; rain streaks through the headlights the whole time. Shot in real time at normal speed. The street, the bus stop, the river and the number plate stay exactly as in the image; nobody new appears.\nSFX: tyres screeching on wet tarmac, a big engine revving hard, a wave of water crashing onto umbrellas and pavement, spray drumming on the lens, gasps and shouts from the queue. Ambience: heavy rain hammering on the road and the bus shelter roof. Audio contains only these sounds; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t22r2-b.jpg",
+ "why": "action clip, sealed motion writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t22r2-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t22",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T09:26:55.851Z"
+ }
+}

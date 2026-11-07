@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t07p-t07r5-a.mp4",
+ "made": "2026-11-07T10:38:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Energetic movement throughout: perched on the bonnet of the black saloon, the masked man rocks hard on his raised knee, his whole torso pitching forward and back on the beat. The mic stays tight to his mask. His other hand cracks the white card down like a hammer on each rhyme, flicking it back up beside his head between hits. Then he hops down off the car, landing in a wide crouch, and yanks his trouser pockets inside out toward the lens, shrugging big. The camera does not move. Sound: strip-light buzz, echoing car park.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t07r5-a.jpg",
+ "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t07r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t07p",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T10:37:16.202Z"
+ }
+}

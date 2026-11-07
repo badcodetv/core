@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/video/ca-t6-t6r1-a.mp4",
+ "made": "2026-11-07T09:28:35+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "[00:00-00:02] Without looking up from the phone in his other hand, the man snaps the white bidding paddle straight up high with a flick of the wrist; at the rostrum the auctioneer's gavel slams down hard. [00:02-00:08] The man drops the paddle onto his knee and keeps thumbing his phone, face bored and untroubled; the young woman beside him sags back in her chair, her own paddle falling into her lap, and the young man turns away, jaw tight. The rest of the room stirs, a few heads turning toward the man, catalogues lowering. Slight handheld telephoto push between the shoulders of the seated bidders, the man and the couple sharp; the chandelier, chairs and room stay exactly as in the image. Real-time speed.\nSFX: a single sharp gavel crack on wood, a ripple of murmuring and chairs creaking, paper catalogues rustling, the soft tap of a thumb on a phone screen. Ambience: a large echoing hotel ballroom. Audio contains only these sound effects; speech, music, singing, score excluded. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t6r1-a.jpg",
+ "why": "action clip, sealed motion writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/action/moodboard/t6r1-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-action",
+  "key": "t6",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T09:27:24.426Z"
+ }
+}

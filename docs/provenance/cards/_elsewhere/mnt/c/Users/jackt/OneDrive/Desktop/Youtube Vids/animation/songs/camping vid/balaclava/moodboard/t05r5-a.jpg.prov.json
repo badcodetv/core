@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t05r5-a.jpg",
+ "made": "2026-11-07T11:00:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w3 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Full-body shot from a low angle on the aft deck of a big white motor yacht at sea on a clear day, the camera at knee height near the stern rail looking up, wake and open blue water behind. The man in the attached reference strides toward the lens in a wide, swaggering stance, chest thrown out, weight on his front foot, knees bent. His gloved right hand holds a handheld microphone tight to his mask, elbow high and out. His free arm is flung out sideways, palm open, as if presenting the whole yacht. Empty teak deck to his left for him to stroll. His mask has no eye or mouth openings: a white ring round the face, a small red triangle high inside the ring on the right-hand side of the picture. Gloves on, cuffs over wrists, no skin anywhere. No readable words.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/posh-tweed.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

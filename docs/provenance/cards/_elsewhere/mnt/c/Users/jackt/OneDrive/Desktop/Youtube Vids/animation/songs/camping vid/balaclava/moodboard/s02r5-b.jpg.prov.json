@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02r5-b.jpg",
+ "made": "2026-11-07T11:00:30+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w1 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Wet night under a motorway flyover, rain dripping from the concrete edge, an oil drum fire throwing orange light and sparks upward. Medium-wide shot from just behind the drum, low, flames soft in the foreground. The man in the attached reference is crouched low on the far side of the fire, one knee nearly down on the wet ground, springing up, a handheld microphone gripped tight to his mask and his free gloved arm flung out wide to the side, palm open, as if pointing at a shop door far off frame. Puddles reflect the fire. Mask with the white ring and a small red triangle over his left eye, on the right of the picture. Gloves on, no skin. No readable words in the frame.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

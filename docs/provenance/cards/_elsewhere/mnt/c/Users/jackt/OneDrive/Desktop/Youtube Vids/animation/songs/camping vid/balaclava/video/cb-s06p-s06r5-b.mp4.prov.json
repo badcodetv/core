@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s06p-s06r5-b.mp4",
+ "made": "2026-11-07T10:34:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Energetic movement throughout, starting instantly. Low and wide, he bounces hard on bent knees and prowls with heavy stamping steps along the wet paving toward the river wall and back, shoulders rolling. His outstretched arm sweeps wide like a man holding a door open, then his cupped glove thrusts at the lens, begging, again and again on the beat, head jutting forward and nodding sharply, mask facing the camera. His coat swings with every bounce. Static camera. Sound: drizzle on stone, the river lapping, distant traffic, no voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s06r5-b.jpg",
+ "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s06r5-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s06p",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T10:33:10.705Z"
+ }
+}

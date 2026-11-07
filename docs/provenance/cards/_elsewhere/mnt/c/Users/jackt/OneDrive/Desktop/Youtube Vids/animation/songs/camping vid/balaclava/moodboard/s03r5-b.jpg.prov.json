@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s03r5-b.jpg",
+ "made": "2026-11-07T11:00:30+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w1 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Dusk on a flat London rooftop, the city lighting up below in purple and orange haze, a vent stack and a low parapet behind. Full-length shot from slightly above and to one side, the skyline wrapping round him with open sky for his raised arm. The man in the attached reference is caught mid-hop, both feet just off the gravel, knees tucked, chin jutting forward, one gloved fist thrown straight up and the other hand flicking a mocking pointed finger down at the city below. No microphone, both hands free. Mask with the white ring and a small red triangle over his left eye, on the right of the picture. Gloves on, no skin anywhere. No readable words anywhere in the frame.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

@@ -1,5 +1,7 @@
 # Google Flow — engine reference
 
+> 🛑 **Performer stiff / every clip the same?** [`same-clip-traps.md`](./same-clip-traps.md) (2026-11-07).
+
 **What this folder is:** everything we know about the *models* Google Flow runs on, and how to
 drive them well. Volatile, versioned knowledge with a shelf life measured in months.
 

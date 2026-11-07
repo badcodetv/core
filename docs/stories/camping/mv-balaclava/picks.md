@@ -95,3 +95,19 @@ m13 (always under a higher track), m19, m23 (not on the timeline). Not to camera
   whether that one should go now Bob is gone from the picture.
 - Runner fix: `scripts/scene/run.mts` now waits for the tiles after its reload (it saved nothing on the first run); `scripts/scene/harvest.mts`
   pulls every finished tile from the open project when a run misses them.
+
+## Round 5: stage rap, not a geography teacher (2026-11-07)
+
+Jack: *"i asked for the balaclava guy to rap and gesture like eminem on stage, he kind of raps and gestures like a geography
+teacher, so fix that, is there something in the prompt or in the repo that is affecting it"* (full words: `../mv-song2/cleanroom/jack.md`).
+- **Cause found** (`docs/google-flow/same-clip-traps.md`): the r4 clip briefs pasted in Bank Robbery's recycled action-clip research
+  (subtle, one primary motion, small gesture vocabulary, count then stop), quoted Jack's "make it simple" note from another video,
+  told writers to match the talking originals, and the stills were chest-up, two seated, no mic. Fixed in the repo: the old research
+  file is fenced off, `fresh.py` now lists DAMPERS, the trap doc is linked from CLAUDE.md, the scene-animation skill and memory.
+- Fresh web research (sealed): `../mv-song2/cleanroom/research-stage-rap.md`. Sealed still writers w1–w3 (`cleanroom/r5/brief-w*.md`)
+  → `prompts-r5.json`: medium-wide/full-body performance stills from low angles, mid-move, a mic in most. NB2 with the design
+  reference, one prompt per project, 26 stills. Mask check at full size (`cleanroom/r5/mask-check.md`): s04 and t05 failed both takes
+  (bowed head; centred triangle), re-rolled as s04x/t05x and passed. Picks: `cleanroom/r5/picks.json`.
+- Motion: sealed writers c1–c3 (picked still + fresh research, no old prompts or strips, damper words banned) → jobs `<shot>p` in
+  `video-jobs.json` (old clips kept). fresh.py: no copies, no dampers. Omni Flash, Frames, 8 s, rolling queue.
+- Then: swapped into the rap slots of `camping song 2 beat 1` (`../mv-song2/cut/swap_rap.py`).

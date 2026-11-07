@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s05p-s05r5-a.mp4",
+ "made": "2026-11-07T10:34:50+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Fast, aggressive live energy from the very first frame. From his deep squat he pumps up and down on bent knees to the beat, boots planted in the dirt, shoulders riding every bounce, mic pressed to his mask. His free hand stabs a pointing finger at the lens on each stressed word while his head snaps forward on the downbeat, mask facing the camera. Midway he springs up out of the squat and punches his free arm straight above his head, still bouncing hard. Static camera. Sound: crackling drum fire, traffic rumbling on the flyover above, no voices.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s05r5-a.jpg",
+ "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s05r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s05p",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T10:32:41.560Z"
+ }
+}

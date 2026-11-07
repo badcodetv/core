@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t08p-t08r5-a.mp4",
+ "made": "2026-11-07T10:38:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Fast-paced party energy from the first second: standing on the garden chair with his feet planted wide on it, the masked man pumps his knees up and down on the beat, the chair rocking under him. He thrusts the champagne flute straight up into the air on every beat, wine sloshing, and the guests around him punch their glasses up in time and cheer. His head snaps forward on each downbeat, the mic pressed to his mask. He leans out over the pool side toward the lens on the punchline, flute swinging. Static camera. Sound: crowd chatter, cheering, clinking glasses.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08r5-a.jpg",
+ "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08r5-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t08p",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T10:37:45.312Z"
+ }
+}

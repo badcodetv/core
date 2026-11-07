@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s01r5-a.jpg",
+ "made": "2026-11-07T11:00:30+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w1 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Night, a narrow London brick alley with wheelie bins along one wall and a wall vent pouring steam into the lamplight. A wide shot straight down the alley from waist height, the man in the attached reference small enough that the whole of him and the ground around him are in frame. He is mid-stride coming toward the camera, weight rolling onto one foot, shoulders dipped and swinging, both gloved arms out from his sides, one hand flicked open at the lens and the other pointing back over his shoulder. Mask with the white ring and a small red triangle over his left eye, on the right of the picture. Gloves on, no skin anywhere. No readable words anywhere.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

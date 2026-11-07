@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t03r5-b.jpg",
+ "made": "2026-11-07T11:00:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w2 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Evening in a fine-dining restaurant, dark panelled walls, brass table lamps glowing, diners blurred behind. Medium-wide shot from table height across a white tablecloth, glasses in the foreground. The man in the attached reference has risen from his seat and stands with one foot planted up on his chair, knee high, leaning right over the table toward the lens, one gloved hand braced flat on the cloth, the other arm raised behind his head mid-swing, finger pointed down at the camera as if at someone beneath him. Head room above the raised hand. Mask: white ring round the face, small red triangle high over his left eye, no eye or mouth openings. Gloves on, no skin anywhere. No readable words.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/posh-tweed.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

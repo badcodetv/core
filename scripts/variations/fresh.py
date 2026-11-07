@@ -11,6 +11,10 @@ It never blocks. It reports, and the writer decides:
   - NEAR COPY (a long shared run) → the old prompt is being reused with a word swapped
   - HABIT PHRASES                 → phrases that sit in many past prompts: the wording that turns
                                     every prompt into the same prompt (the 400-take Bank Robbery trap)
+  - DAMPERS                       → words that shrink a performer's motion (subtle, minimal, "then stops",
+                                    "head square to the lens"...). Fine on a product shot; on anyone who should
+                                    perform they give the "geography teacher" (Jack 2026-11-07, Camping rappers).
+                                    See docs/google-flow/same-clip-traps.md.
 
   python3 scripts/variations/fresh.py "the prompt text"        (or pipe it on stdin)
   python3 scripts/variations/fresh.py --kind suno --json  < style.txt
@@ -91,10 +95,21 @@ def corpus(kind):
     return out
 
 
+DAMPERS = [r"\bsubtle\b", r"\bminimal\b", r"\bgentle\b", r"\bgently\b", r"\bslight(ly)?\b", r"\bsmall (nod|gesture|move)",
+           r"then (he |she |they )?stops?\b", r"\bholds? (still|steady)\b", r"\b(square|facing) (to )?the lens\b",
+           r"\bhead (stays|held|kept) (still|square)", r"\bone (primary )?(motion|action|move) only\b",
+           r"\b(four|three|two) times\b", r"\brestrained\b", r"\bcalm(ly)?\b"]
+
+
+def dampers(prompt):
+    t = prompt.lower()
+    return sorted({m.group(0) for d in DAMPERS for m in re.finditer(d, t)})
+
+
 def check(prompt, kind="any"):
     ws = words(prompt)
     past = corpus(kind)
-    res = {"compared_with": len(past), "identical": [], "near": [], "habits": []}
+    res = {"compared_with": len(past), "identical": [], "near": [], "habits": [], "dampers": dampers(prompt)}
     if len(ws) < 6:
         return res
     norm = " ".join(ws)
@@ -129,6 +144,9 @@ def report(res):
     if res["habits"]:
         lines.append("HABIT PHRASES (already in many past prompts — the wording that makes every prompt the same): "
                      + "; ".join(f"\"{h['phrase']}\" ×{h['in_past_prompts']}" for h in res["habits"]))
+    if res.get("dampers"):
+        lines.append("DAMPERS (shrink a performer's motion; fine for a still object, wrong for anyone who should perform): "
+                     + ", ".join(f'"{d}"' for d in res["dampers"]))
     return lines
 
 

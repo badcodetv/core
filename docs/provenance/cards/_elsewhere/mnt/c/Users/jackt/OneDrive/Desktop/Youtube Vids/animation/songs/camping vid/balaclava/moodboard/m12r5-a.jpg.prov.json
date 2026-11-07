@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r5-a.jpg",
+ "made": "2026-11-07T11:00:29+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w1 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Night under a concrete road flyover in London, sodium light falling through the gap between the carriageways and a haze hanging in it. The man in the attached reference raps straight at the lens, shot from a low angle at knee height, framed from his boots to above his head. He is caught lunging forward onto his front foot, knees deeply bent, torso pitched toward the camera, a handheld microphone pressed to his mask with the elbow high, his free gloved arm thrust out with the index finger stabbing right at the viewer. Empty concrete stretches to his left. His mask has the white ring and a small red triangle over his left eye, on the right of the picture. Gloves on, no skin anywhere. No readable words in the frame.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

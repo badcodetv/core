@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s05r5-a.jpg",
+ "made": "2026-11-07T11:00:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w2 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Night under a concrete flyover, small tents behind and a drum fire throwing orange light up from below. Full-body shot from ground level, the lens low and close to his boots, looking up. The man in the attached reference is caught mid-rap in a deep crouch: feet wide, knees bent hard, torso pitched forward over the lens, a handheld microphone gripped tight to his mask, his free arm thrust straight at the camera with one gloved finger pointing. Smoke and sparks rise past him. Space above his head and to his right. Mask: white ring round the face, small red triangle high over his left eye, no eye or mouth openings. Gloves on, no skin anywhere. No readable words.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

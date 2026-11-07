@@ -32,6 +32,7 @@ For each frame, write 2–3 ways to animate it into `animation-options.json`
 How a story moves (dramatic or still, which elements carry the motion) is its `look.md`'s call:
 read it before writing options. Method rules that have held on every story:
 - **Lock Veo's camera.** "The camera does not move." at the start and end. Premiere does every push, zoom and pan, eased (hybrid method).
+- **A performer needs a performance still and its own research** (Jack 2026-11-07, "like a geography teacher"): medium-wide, mid-move, a prop in hand; fresh web research per job, never another round's research file or another video's notes. `docs/google-flow/same-clip-traps.md`; `fresh.py` lists DAMPERS.
 - **Offer real options, not a twinkle.** A vague "subtle movement" prompt gets vague motion. How big the options go is the story's call (GPOM's `look.md`: animate dramatically — dive, storm, hard flashes).
 - **Few movers.** Omni struggles past about three moving figures. Give the rest of the motion to the environment and one actor (what the environment is — rain, haze, light, crowd, paper — comes from the frame and the look).
 - **Words are ffmpeg.** Never ask Veo for readable text.

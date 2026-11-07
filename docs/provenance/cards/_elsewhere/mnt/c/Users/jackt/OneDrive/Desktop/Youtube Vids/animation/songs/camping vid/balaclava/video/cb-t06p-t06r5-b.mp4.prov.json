@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t06p-t06r5-b.mp4",
+ "made": "2026-11-07T10:55:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Aggressive and fast throughout: from his low lunge the masked man springs up and bounces forward toward the lens in short, hard hops, sand spraying from his shoes. Both gloved hands shove at the camera in rhythm, the pointing finger stabbing, the open palm pushing out like he is shooing someone off his beach. His head jerks forward on each beat, chin jutting. On the last line he flings both arms wide in disgust and drops back into the crouch. Locked-off static camera. Sound: surf breaking, palm leaves rustling.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06r5-b.jpg",
+ "why": "stage-rap redo r5 (Jack 2026-11-07 \"geography teacher\"), writer c3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06r5-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t06p",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T10:54:10.901Z"
+ }
+}

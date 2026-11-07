@@ -31,7 +31,12 @@ Page: https://claude.ai/artifact/XNEc7Q7fADNmZjpVhRtCz3 — round 1 picked (12, 
 - Placement plan `premiere/place.py` → `plan.json` + `place-N.js`: every clip 2 bars on V7, one every 6 bars from 15.1 s to 206 s,
   Bob's first, Tarquin's middle, mirrored pairs at the end; in point 0.2 s. Mute V7 = the old cut.
 
-## ▶ RESUME HERE
+## 2026-11-07 · 22 clips on V7
+- 22 of 24 clips made; checked by eye (frames at 30/50/97 %): the used part (0.2–2.9 s) is clean. Late in the clip (never used): t23 a leg fills the frame, t25 a shoulder, t24 and x6 the subject leaves frame. x4 is the man the writers flagged (the still did not match).
+- 1080p silent copies in `<media>/video/premiere/`, imported to bin `action clips`; `place-0/1` run (t6, t22 skipped): **22 clips on V7 of `camping song 2`**, 2.72 s each, saved. t6 and t22 then landed (rolling runner, SEED=0) and were placed: **all 24 on V7**, saved. t22 matches its still; t6 opens wider than its still (Tarquin small mid-crowd in the auction room).
+- Next: Jack watches `camping song 2`. Open: the old cut on V1–V6 is not on song 2's beat (see above), so the action clips sit over it every 6 bars; a beat re-cut of the whole picture to song 2 is not done.
+
+## ▶ RESUME HERE (older steps; 1–3 done for 22 clips)
 1. Clips: check `<media>/video/` has all 24 `ca-*.mp4` (re-run `SEED=0 npx tsx scripts/scene/run-rolling.mts docs/stories/camping/mv-action`
    for any missing — it skips what is on disk). Frame-check them (contact sheet, Bob never smiling, no morphs).
 2. 1080p silent copies → `<media>/video/premiere/` (ffmpeg scale=1920:1080:flags=lanczos, -an), import to bin `action clips`.

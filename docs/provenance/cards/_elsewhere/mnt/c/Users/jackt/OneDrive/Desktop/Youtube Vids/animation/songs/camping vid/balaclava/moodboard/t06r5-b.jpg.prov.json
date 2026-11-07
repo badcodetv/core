@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06r5-b.jpg",
+ "made": "2026-11-07T11:00:32+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w3 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Wide shot on a private tropical beach on a bright day, the camera low on the sand looking up, palms and a white sun lounger behind him, sea glittering. The man in the attached reference has just sprung up off the lounger and lunges at the lens, torso pitched hard forward, one knee bent deep, the other leg driving back in the sand. No microphone: both gloved arms are thrown forward, one finger stabbing straight at the camera, the other hand open and spread in outrage. Plenty of empty sand on either side and sky above his hands. His mask has no eye or mouth openings: a white ring round the face, a small red triangle high inside the ring on the right-hand side of the picture. Gloves on, no skin anywhere. No readable words.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/posh-tweed.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

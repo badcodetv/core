@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s06r5-b.jpg",
+ "made": "2026-11-07T11:00:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "scripts: mv-balaclava/cleanroom/run_stills.mts (editImage, reference attached)",
+ "model": "Nano Banana 2",
+ "why": "Camping stage-rap redo r5, sealed writer w2 (Jack 2026-11-07 \"geography teacher\")",
+ "prompt": "Night on the Thames embankment, the river wall running diagonally away, lamp light on wet stone, his small green tent beside him. Wide shot at eye level from a few metres along the wall. The man in the attached reference is mid-stride, prowling toward the camera, one boot up on the low step of the wall, shoulders rolled forward, head jutting. One gloved arm swings out wide and stiff as if holding a door open; the other hand is cupped out at the lens like a bowl. Empty pavement ahead of him for the walk. Mask: white ring round the face, small red triangle high over his left eye, no eye or mouth openings. Gloves on, no skin anywhere. No readable words.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}
