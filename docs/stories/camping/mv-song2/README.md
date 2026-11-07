@@ -45,3 +45,34 @@ flashes exactly on eighth notes (0.174 s, frame-rounded), landing on a beat: 13.
   `cut/swap_rap.py`, same slots and lengths; holds over 4.2 s split on the beat nearest the middle (second half re-enters
   0.8 s in); s05p used to 5 s (jacket changes after), t06p to 4 s (head turns side-on). No old rap clip left, no slivers. Saved.
 - Flags for Jack: s03p turns side-on ~3.5 s (triangle out of view briefly); the split holds repeat a move (a jump cut on the beat).
+
+## Round 6: Venom-style rap clips (2026-11-07) — ▶ RESUME HERE: `camping song 2 beat 2` BUILT, awaiting Jack
+
+Jack said the stage-rap clips "float in the air". All 13 were redone, grounded (see `../mv-balaclava/picks.md` "Round 6").
+Clips `cb-<shot>v-*.mp4` (1080p copies in `balaclava/video/premiere/`), all checked. Flags: t06 turns side-on briefly at ~1 s
+and ~7 s (triangle out of view); t04 goes quiet after ~4 s.
+**Built:** `camping song 2 beat 1` cloned to **`camping song 2 beat 2`** (beat 1 untouched); the 13 clips are in bin `venom rap clips`;
+`cut/swap_venom.py` (run on beat 1's state) → 34 overwrites on V1, same slots. A slot split in two now carries on through the clip
+(the second piece starts where the first ended) rather than repeating a move. Checked: all 34 match the plan, no r5 piece left, no
+slivers, every other V1 piece unchanged. Saved.
+
+## Round 7: T3 rap clips + the beat re-cut (2026-11-07 evening) — ▶ RESUME HERE: `camping song 2 beat 4` BUILT, awaiting Jack
+
+Jack: *"just use T3 locked, understated style for all the clips for rap gesturing then put it in a new sequence, once they are in,
+watch and listen to it, then cut it to the beat with complete freedom, since the cutting/trimming does not match the beat"*.
+- **`camping song 2 beat 3`**: clone of beat 2, every r6 rap piece swapped for its T3 clip (`cut/swap_t3.py`, bin `t3 rap clips`),
+  old timing. Checked: 34 pieces match, nothing else moved. Saved.
+- **Why the cut was off the beat (measured, `analysis/bars.py`, `analysis/grid.py`):** the song is **88 BPM**, straight, snare on 2 and 4
+  (listening log `docs/listening/log/2026-11-07-152100-…`); librosa's beat list was EIGHTH notes (172-176) and ran ~57 ms late (up to
+  169). Only **12 of 167** cuts in beat 2 sat on a real beat (median 179 ms off). Downbeat phase from the big energy entrances
+  (99.0, 205.4, 210.9 s all land on the "1"); local drum drift ±30 ms, +60 ms in the last 30 s, followed.
+- Fresh sealed web research `cleanroom/research-beat-cut.md` (hip-hop cuts cluster on bar lines; picture early is safe, late is not;
+  sections open on the one; verses hold, hooks 2 beats to a bar, bridge long holds).
+- **`camping song 2 beat 4`** (`cut/recut.py` → `edl-beat4.json` → `cut/build4.py`): a clone of beat 3, cleared and rebuilt. Same shots in
+  the same order (lyric matching kept), every cut re-placed on the beat 0-1 frame early, sections open on their downbeat (verse 1 19.87,
+  hook 1 55.32, verse 2 77.13, hook 2 120.76, bridge 142.59, hook 3 183.55, outro 205.41), min holds verse/hook 2 beats, bridge 1 bar;
+  Jack's stutters rebuilt as 3-frame flashes an eighth apart over the 2 beats before the landing beat (13.73, 105.09, 126.23, 131.68,
+  187.66). 19 short pieces merged into neighbours and 12 dropped (`cut/recut-report.json`). Checked from the saved state: 134 pieces
+  match the plan, **all 86 main cuts 0-2 frames before the beat**, median shot 1.36 s. Saved.
+- Not watched as a render (Jack's no-renders rule): checked structurally only. Flags: the downbeat reading is measured, not
+  confirmed by ear (rap lines come in on beat 2 under it); the first 0.72 s is now black before the logo.

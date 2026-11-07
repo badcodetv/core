@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s01t1-s01r6-b.mp4",
+ "made": "2026-11-07T15:14:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s01r6-b.jpg",
+ "why": "r7 gesture option, pattern T1 (Jack 2026-11-07 'terrible gesturing'); template label for m12 inferred from Flow grid order + camera behaviour",
+ "prompt": "One continuous handheld shot, no cuts. Filmed like a back-alley freestyle on a camcorder: the operator is close, shuffling backwards between the bins, with a real arm's small drift. The masked rapper from the start frame drops the hood-pull and raps into the lens, feet planted, weight in his heels, knees bouncing. One hand stays clamped on his collar; the other drops off the mask and works: a hard downward fist at about 2s, a palms-down not-having-it wave at about 5s, a finger flicked at the lens at about 7s. Head dips on each accent. The mask stays still over his mouth. Real-time, no slow motion. Sound: the vent hissing, no music, no vocals, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

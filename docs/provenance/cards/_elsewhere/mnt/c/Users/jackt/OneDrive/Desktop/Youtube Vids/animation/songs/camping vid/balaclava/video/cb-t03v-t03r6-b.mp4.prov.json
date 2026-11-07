@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t03v-t03r6-b.mp4",
+ "made": "2026-11-07T13:07:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera. He raps down into the lens, leaning on his flat hand, and the tablecloth creases under his weight. His pointing finger flicks down at the floor three times, short and clipped, stopping dead each time, then returns to his waistcoat. His head gives small, curt nods and tips a little to one side, never past a quarter turn. His shoulders stay square, a contemptuous calm. Behind him the diners keep eating. Sound: cutlery on china, low murmured talk.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t03r6-b.jpg",
+ "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t03r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t03v",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T12:55:06.258Z"
+ }
+}

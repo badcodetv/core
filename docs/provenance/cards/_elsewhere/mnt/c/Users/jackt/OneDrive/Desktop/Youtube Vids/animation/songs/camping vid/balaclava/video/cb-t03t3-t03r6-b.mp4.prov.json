@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t03t3-t03r6-b.mp4",
+ "made": "2026-11-07T17:19:26+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t03r6-b.jpg",
+ "why": "r7 T3 rap gesture (Jack 2026-11-07: \"just use T3 locked, understated style for all the clips\"); runner had misnamed it, renamed by content",
+ "prompt": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked man in tweed leans over the white tablecloth, his left glove flat on the table and staying there. His right hand, already pointing down, taps the finger toward the floor once, slow and deliberate, then lifts into a lazy limp-wristed wave of dismissal, then rests on his hip. His head tilts slightly with each stressed word, unhurried, superior; the body barely moves. Understated, smug, controlled, nothing theatrical. Feet planted. The mask stays still over his mouth. Diners behind carry on eating. Real-time, no slow motion, no scene cuts. Sound: cutlery on china, low murmured conversation, a cork popping, no music, no singing, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

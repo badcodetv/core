@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-m12t1-m12r6-b.mp4",
+ "made": "2026-11-07T15:14:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r6-b.jpg",
+ "why": "r7 gesture option, pattern T1 (Jack 2026-11-07 'terrible gesturing'); template label for m12 inferred from Flow grid order + camera behaviour",
+ "prompt": "One continuous handheld shot, no cuts. Filmed like a 2000s grime DVD freestyle on a camcorder: the operator is close, walking backwards slowly, with a real arm's small drift. The masked rapper from the start frame raps straight into the lens, feet planted, weight in his heels, knees giving a small bounce. His lower hand keeps hold of his jacket zip; the hand at his temple does the talking: it presses the temple, is flung down at about 2s, chops sideways at chest height at about 5s, then jabs one finger at the lens at about 7s. Head dips forward on each accent; shoulders roll. The mask stays still over his mouth. Real-time, no slow motion. Sound: lorries rumbling overhead, no music, no vocals, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

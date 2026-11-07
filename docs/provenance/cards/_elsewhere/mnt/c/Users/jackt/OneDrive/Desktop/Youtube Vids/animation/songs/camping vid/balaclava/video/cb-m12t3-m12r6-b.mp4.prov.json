@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-m12t3-m12r6-b.mp4",
+ "made": "2026-11-07T15:14:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r6-b.jpg",
+ "why": "r7 gesture option, pattern T3 (Jack 2026-11-07 'terrible gesturing'); template label for m12 inferred from Flow grid order + camera behaviour",
+ "prompt": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked rapper raps to the lens with an understated, controlled performance, already mid-line from the first frame: his head nods in time, chin dipping on the stressed words. His left hand stays gripping the front of his jacket. His right finger presses hard into his temple, then the hand drops and turns at the wrist, a short flat chop at chest height, then an open palm pushed once toward the lens and pulled back. Nothing theatrical, no arms above the shoulders. Weight rocks from foot to foot, feet planted. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: flyover traffic rumbling overhead, dripping water, no music, no singing, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

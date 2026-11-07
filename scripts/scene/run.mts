@@ -54,6 +54,18 @@ for (const s of all) {
 }
 const only = process.argv.slice(3)
 const shots = all.filter(s => s.plate && (!only.length || only.includes(s.key)))
+// Clips are named by FIRST FRAME (match.py), so two unmade jobs on the same still can't be told apart: on 2026-11-07
+// (Camping r7) five prompt patterns per still were all filed under the first key and the "missing" one was re-sent wave
+// after wave (~20 wasted clips). Refuse unless every unmade job sharing a still is the only one in the job list.
+{
+  const unmade = all.filter(s => s.plate && !(existsSync(s.out) && statSync(s.out).size > 0))
+  const byStill = new Map<string, string[]>()
+  for (const s of unmade) byStill.set(s.still ?? '', [...(byStill.get(s.still ?? '') ?? []), s.key])
+  const clash = [...byStill.entries()].filter(([, ks]) => ks.length > 1 && ks.some(k => shots.some(s => s.key === k)))
+  if (clash.length && !process.env.ALLOW_SHARED_STILL)
+    throw new Error(`unmade jobs share a start frame, so their clips would be misnamed: ${clash.map(([st, ks]) => `${st}: ${ks.join(' ')}`).join('; ')}. ` +
+      'Make them in separate scenes/projects, drop the extras from video-jobs.json, or set ALLOW_SHARED_STILL=1 and name the clips by hand.')
+}
 mkdirSync(STAGE, { recursive: true })
 mkdirSync(INBOX, { recursive: true })
 

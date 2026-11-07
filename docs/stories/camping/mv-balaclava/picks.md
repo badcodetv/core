@@ -111,3 +111,44 @@ teacher, so fix that, is there something in the prompt or in the repo that is af
 - Motion: sealed writers c1–c3 (picked still + fresh research, no old prompts or strips, damper words banned) → jobs `<shot>p` in
   `video-jobs.json` (old clips kept). fresh.py: no copies, no dampers. Omni Flash, Frames, 8 s, rolling queue.
 - Then: swapped into the rap slots of `camping song 2 beat 1` (`../mv-song2/cut/swap_rap.py`).
+
+## Round 6: grounded, Venom-style (2026-11-07)
+
+Jack: *"he seems to float in the air, ai slop is present when he does anything ... watch this [Eminem, Venom] ... to see how he
+does this, as in gesturing and rapping at the camera ... clean room it all and research the internet"* (verbatim: `cleanroom/r6/jack.md`).
+- **Why r5 floated:** its writers had him prowl or stride at a locked camera, jump, lunge and squat-and-spring, framed full-body small in
+  the frame. The feet slid, the body glided forward, and the mask swelled near the lens (`cleanroom/r6/failures.md`). The r5 brief was an
+  over-correction of the "geography teacher" note ("continue that energy", banned every calm word).
+- **The reference, watched frame by frame** (`cleanroom/r6/venom-observed.md`; frame sheets in `<media>/reference/venom/`, local only):
+  rooted on one spot, wide stance, knees bent, weight low; mostly chest-up, handheld close, short elbow/wrist gestures cut off hard
+  (temple tap, a claw thrown down, a fist pumped down, a palm chop, a boxer's guard), no mic, no travel.
+- Fresh sealed web research `cleanroom/r6/research.md`; 3 sealed writers each wrote still + clip (`r6/brief-w*.md` → `w*.md` →
+  `prompts-r6.json`, `r6/clips-r6.json`). fresh.py: no copies; the counts and "subtle handheld" dampers kept on purpose (the research
+  and the reference call for tight gestures; this time stiffness is not the fault).
+- Stills: NB2 + design reference, one per project. t04 and t06 were blocked by Flow twice and rewritten by their writers (no rail or
+  height cues; no "clawed"). Mask check `r6/mask-check.md`; picks `r6/picks.json`.
+- Clips: jobs `<shot>v` in `video-jobs.json` (Omni Flash, Frames, 8 s). All checked on 2 fps strips: on the spot, feet planted on the
+  wides, masks hold. 1080p silent copies at the clip's own 24 fps in `<media>/video/premiere/`.
+- Premiere: `cut/swap_venom.py` (in `../mv-song2/`) overwrites every `cb-<shot>p-` piece in a clone **`camping song 2 beat 2`**,
+  same slots; `beat 1` untouched.
+
+## Round 7: five gesture patterns, picked on a page (2026-11-07)
+
+Jack: *"the new sequence has terrible gesturing ... maybe show the 5 examples ... I will choose them from the link"*, then *"dont do 65
+clips just do a few ... like 5"* (verbatim: `cleanroom/r7/jack.md`). Round 6's hands hover at the chest in tiny repeated pumps
+(`r7/failures-r6.md`).
+- Fresh web research `r7/research-prompts.md` (no proven Omni rap prompt exists online; 5 best-bet patterns T1-T5). Five sealed
+  writers, one per pattern, wrote all 13 shots (`r7/t1..t5.md` → `r7/clips-r7.json`; 65 jobs `<shot><t>` in `video-jobs.json`).
+- Only 6 clips made (the 65-clip run was stopped): **m12 in all five patterns** + s01 T1, from the r6 start frames.
+- ⚠ **Runner trap:** `run.mts` names clips by FIRST FRAME, so five jobs on one still all came back as "m12t1" (four went to dupes) and
+  the next wave re-downloaded them. The m12 labels were fixed by hand from Flow's grid order (newest first: T5 T4 T3 T2 T1), checked
+  against what each clip does (T4 shows a phone and zooms; T1's camera moves). Never put two jobs on one still in one run.
+- Page: https://claude.ai/artifact/Ybta5HtYWYvW5RVFBHP88Y (`r7/build_page.py`, picks in db `picks`). Next: dump picks into
+  `feedback/`, write the winning pattern for all 13 (prompts already in `r7/t<n>.md`), one clip per shot, swap into a new sequence.
+- My read before Jack's: all five still keep the hands near the chest; the start frame (chest-up, hands at the chest) seems to pin
+  the gesture more than the prompt does [inference, untested]. T4 drew a phone into the frame.
+- **Jack picked T3** (locked, understated) for all. 12 T3 clips made (`cb-<shot>t3-*`; spares `t3b`/`t3c`). ⚠ The runner trap struck
+  again inside the T3 run (the unmade T1/T2 jobs on the same stills took the names): ~20 extra T3 takes were made. Fixed in the repo:
+  `scripts/scene/run.mts` now refuses to run while two unmade jobs share a start frame; the 47 unmade r7 jobs were dropped from
+  `video-jobs.json` (prompts kept in `r7/clips-r7.json`). Built into `camping song 2 beat 3` and the beat re-cut `beat 4`
+  (`../mv-song2/README.md`, Round 7).

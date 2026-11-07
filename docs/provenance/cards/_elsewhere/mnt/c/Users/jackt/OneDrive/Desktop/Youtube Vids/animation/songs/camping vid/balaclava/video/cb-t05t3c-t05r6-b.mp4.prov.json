@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t05t3c-t05r6-b.mp4",
+ "made": "2026-11-07T17:19:26+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t05r6-b.jpg",
+ "why": "r7 T3 rap gesture (Jack 2026-11-07: \"just use T3 locked, understated style for all the clips\"); runner had misnamed it, renamed by content",
+ "prompt": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked man in tweed keeps his left glove on the steel rail, his body swaying gently with the deck. His right hand, already curled in a beckoning finger, beckons once toward himself, then flips over into a slow pointing gesture at the lens on the stressed word, then taps the ring hand against his own chest. His head cocks to one side and back, relaxed, entitled. Understated, controlled, nothing theatrical, no arms above the shoulders. Feet planted on the deck. The mask stays still over his mouth. The wake churns behind him. Real-time, no slow motion, no scene cuts. Sound: engine thrum, hull slapping water, wind, a gull, no music, no singing, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

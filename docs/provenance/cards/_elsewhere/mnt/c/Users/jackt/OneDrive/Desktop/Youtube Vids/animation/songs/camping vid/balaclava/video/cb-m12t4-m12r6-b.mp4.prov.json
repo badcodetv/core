@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-m12t4-m12r6-b.mp4",
+ "made": "2026-11-07T15:14:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r6-b.jpg",
+ "why": "r7 gesture option, pattern T4 (Jack 2026-11-07 'terrible gesturing'); template label for m12 inferred from Flow grid order + camera behaviour",
+ "prompt": "Phone footage, as if a mate is filming from two metres away under the flyover: one continuous take, the slight shake of a real arm, one natural smartphone zoom in at about 4 seconds. The masked rough sleeper is mid-verse, shoulders angled to his mates off-frame left, head on the lens. His finger presses hard into his temple, then snaps off and stabs once at the lens. For the last bars he squares up fully to the lens and slaps a flat hand to his chest. Knees bounce, shoulders hunched, body rocking forward on the hits. Clipped, never sweeping, no move repeated. Feet planted, mask still over the mouth. Real-time speed. Diegetic sound: traffic rumbling overhead, a distant siren. No music, no vocals, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

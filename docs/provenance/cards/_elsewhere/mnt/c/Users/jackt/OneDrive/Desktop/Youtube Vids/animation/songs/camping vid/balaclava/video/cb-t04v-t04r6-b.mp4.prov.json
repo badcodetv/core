@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t04v-t04r6-b.mp4",
+ "made": "2026-11-07T13:25:21+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "A short push-in over the first three seconds, then the camera holds. His hand stays on the bar table, his weight leaning into it. His flat palm chops sideways at chest height four times, quick and hard, stopping dead on each chop, then flicks back over his shoulder in dismissal and returns to his lapel. His chin jerks up on each chop and his chest rocks forward. His head keeps facing the lens. Sound: wind across the terrace, glasses clinking, a distant helicopter.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t04r6-b.jpg",
+ "why": "venom redo r6, writer w2 (still rewritten after a Flow block)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t04r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t04v",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T13:23:49.110Z"
+ }
+}

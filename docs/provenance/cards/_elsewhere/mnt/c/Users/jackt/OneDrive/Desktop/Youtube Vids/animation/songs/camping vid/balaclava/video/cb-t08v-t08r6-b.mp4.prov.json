@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t08v-t08r6-b.mp4",
+ "made": "2026-11-07T13:22:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "A slow, short push-in towards him. His right hand chops sideways at chest height twice, flat and clipped, stopping dead, then flicks backwards once from the wrist in a dismissive wave and drops to his chest. His upper body rocks forward on each chop. Then he lifts the champagne flute a few inches towards the lens in a small, smug toast and holds it still. The guests behind keep chatting. Sound: party murmur, glasses clinking, a light breeze in the trees.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08r6-b.jpg",
+ "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t08v",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T13:10:00.755Z"
+ }
+}

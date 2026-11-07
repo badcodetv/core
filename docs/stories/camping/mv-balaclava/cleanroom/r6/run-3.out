@@ -1,0 +1,19 @@
+{"at":"2026-11-07T13:23:27.024Z","event":"wave","wave":1,"missing":2,"submitting":["t04v","t06v"]}
+{"at":"2026-11-07T13:23:55.470Z","event":"submitted","key":"t04v","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-07T13:24:19.487Z","event":"submitted","key":"t06v","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-07T13:24:19.508Z","event":"poll","fresh":2,"done":1,"want":2}
+{"at":"2026-11-07T13:24:34.527Z","event":"poll","fresh":2,"done":1,"want":2}
+{"at":"2026-11-07T13:24:47.066Z","event":"poll","fresh":2,"done":1,"want":2}
+{"at":"2026-11-07T13:25:02.091Z","event":"poll","fresh":2,"done":2,"want":2}
+{"at":"2026-11-07T13:25:11.658Z","event":"harvested","i":0,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-000.mp4"}
+{"at":"2026-11-07T13:25:16.153Z","event":"harvested","i":1,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-001.mp4"}
+{"at":"2026-11-07T13:25:18.385Z","event":"harvested","i":4,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-002.mp4"}
+raw-000.mp4: t06v (16)
+raw-001.mp4: t04v (17)
+raw-002.mp4: t05v (10)
+  -> cb-t06v-t06r6-b.mp4
+  -> cb-t04v-t04r6-b.mp4
+{"have": ["m12", "m12p", "m12v", "s01", "s01p", "s01v", "s02", "s02p", "s02v", "s03", "s03p", "s03v", "s04", "s04p", "s04v", "s05", "s05p", "s05v", "s06", "s06p", "s06v", "t03", "t03p", "t03v", "t04", "t04p", "t04v", "t05", "t05p", "t05v", "t06", "t06p", "t06v", "t07", "t07p", "t07v", "t08", "t08p", "t08v"]}
+{"at":"2026-11-07T13:25:22.123Z","event":"wave-done","wave":1,"remaining":0}
+{"at":"2026-11-07T13:25:22.141Z","event":"all-present","wave":2}
+{"at":"2026-11-07T13:25:22.157Z","event":"done","remaining":[],"blocked":[]}

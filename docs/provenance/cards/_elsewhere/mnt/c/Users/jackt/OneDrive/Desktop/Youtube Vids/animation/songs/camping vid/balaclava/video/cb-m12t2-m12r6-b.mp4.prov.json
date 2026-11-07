@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-m12t2-m12r6-b.mp4",
+ "made": "2026-11-07T15:14:34+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r6-b.jpg",
+ "why": "r7 gesture option, pattern T2 (Jack 2026-11-07 'terrible gesturing'); template label for m12 inferred from Flow grid order + camera behaviour",
+ "prompt": "Single continuous shot, no scene cuts. Handheld on a very wide lens, the camera starts on this framing and pushes in, low and slightly below his mask, until he fills the frame at arm's length. He jabs the finger off his temple and leans in from the waist, chin down, the triangle kept on the lens. On the next accent his gloved hand snaps forward out past the frame edge, blurring close to the glass, then drops back to his chest and holds. A beat of stillness, then a clawed hand flicked down at the lens. Each move is short and sharp, peaks hard, stops dead; never broad or sweeping. Feet planted. Normal speed. Under the flyover, sodium light, thin fog. Ambient sound only: traffic rumbling overhead, dripping water. No music, no vocals, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

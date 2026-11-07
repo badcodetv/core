@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t06v-t06r6-b.mp4",
+ "made": "2026-11-07T13:25:21+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld camera, very close, swinging slightly with him. His head tips back once as if laughing, then he ducks forward hard into the lens. His open right hand jerks up in front of his mask and is thrown down past the lens so fast it smears with motion blur, then comes back to his chest. Two hard nods, his shoulders rolling forward each time. His left hand stays against his jacket. Sound: surf breaking, palm fronds rattling in a warm wind.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06r6-b.jpg",
+ "why": "venom redo r6, writer w3 (still rewritten after a Flow block)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t06v",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T13:24:14.215Z"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02r6-b.jpg",
+ "made": "2026-11-07T13:32:49+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Camping MV balaclava rap round 6 (Venom-style, grounded), sealed writer w1",
+ "prompt": "A wet night under a motorway flyover. A locked-off camera at waist height frames the man in the attached reference from head to boots, large in the middle of the frame. His feet are planted wider than his shoulders on wet tarmac, knees bent, weight low and forward, shoulders hunched. One hard white work light high behind him throws a black shadow forward across the wet ground, joined to his boots. His right gloved hand is flat at chest height, mid-chop; his left hangs at his side. His mask: a white ring round the face and a small red triangle high inside it over his left eye, on the right-hand side of the picture, no openings. Gloves on, no skin. No microphone. Puddles, concrete pillars. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

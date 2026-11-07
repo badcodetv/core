@@ -71,5 +71,13 @@
   "url": "https://claude.ai/artifact/WVScfLPy242nXzuExhH2y9",
   "what": "camping balaclava 1: all 13 talking-to-camera shots replaced by the balaclava men",
   "rebuild": "python3 scripts/camping-mv2/balaclava-timeline.py '<.bridge/state-camping balaclava 1.json>' <media>/cut 'camping balaclava 1' && python3 scripts/scene/build-timeline.py docs/stories/camping/mv-balaclava <out-dir>"
+ },
+ {
+  "at": "2026-11-07T15:15:43+00:00",
+  "stage": "picks",
+  "round": 7,
+  "url": "https://claude.ai/artifact/Ybta5HtYWYvW5RVFBHP88Y",
+  "what": "5 gesture prompt patterns (T1-T5) on m12 + s01 T1, vs the beat 2 clip",
+  "rebuild": "python3 docs/stories/camping/mv-balaclava/cleanroom/r7/build_page.py <out-dir>"
  }
 ]

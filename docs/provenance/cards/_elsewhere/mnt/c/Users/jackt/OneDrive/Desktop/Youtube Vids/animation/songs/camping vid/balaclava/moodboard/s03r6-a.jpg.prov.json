@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s03r6-a.jpg",
+ "made": "2026-11-07T13:32:49+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Camping MV balaclava rap round 6 (Venom-style, grounded), sealed writer w1",
+ "prompt": "Dusk on a flat London rooftop: tar felt, a low brick parapet, a metal extractor unit, the city's lights coming on far below under a grey-blue sky. The man in the attached reference is framed waist-up from a low angle, the camera below his chest looking up, the skyline behind his shoulders. He leans forward from the waist over the lens, head down. His right gloved hand points two fingers down at the lens; his left grips his jacket. His mask: a white ring round the face and a small red triangle high inside the ring over his left eye, on the right-hand side of the picture, with no eye or mouth openings. Gloves on, no skin anywhere. No microphone. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

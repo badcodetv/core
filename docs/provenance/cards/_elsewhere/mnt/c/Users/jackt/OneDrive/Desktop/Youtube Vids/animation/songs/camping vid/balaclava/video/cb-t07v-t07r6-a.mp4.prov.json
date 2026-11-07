@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t07v-t07r6-a.mp4",
+ "made": "2026-11-07T13:22:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera. His feet stay planted on the concrete and the car takes his weight; his knees give a small tight bounce. His right fist pumps down at waist height four times, short and hard, stopping dead each time, while his left hand grips the edge of the car's wing. On the last pump he slaps his own jacket pocket flat with an open glove and leaves it there. His shadow stays joined to his shoes. Sound: ventilation hum, a distant car door thudding, tyres squeaking on a ramp.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t07r6-a.jpg",
+ "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w3",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t07r6-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t07v",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T13:09:34.101Z"
+ }
+}

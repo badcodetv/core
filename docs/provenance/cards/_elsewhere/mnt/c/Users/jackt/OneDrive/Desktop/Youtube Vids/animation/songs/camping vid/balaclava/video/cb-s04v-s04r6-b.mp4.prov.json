@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s04v-s04r6-b.mp4",
+ "made": "2026-11-07T13:07:41+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera. From the boxer's guard his right hand drops to chest height and rubs thumb against fingers, quick, twice, then slams down as a fist into his open left palm and stops dead. His shoulders jolt with the impact, his head nods hard three times, and his torso rocks forward towards the lens and back. His feet do not move. Ambient sound: the lamp buzzing, a bottle rolling on wet ground. No speech or singing.\n\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s04r6-b.jpg",
+ "why": "venom redo r6 (Jack 2026-11-07 \"he seems to float\"), writer w1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s04r6-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s04v",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T12:53:52.393Z"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s04t3-s04r6-b.mp4",
+ "made": "2026-11-07T17:19:25+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s04r6-b.jpg",
+ "why": "r7 T3 rap gesture (Jack 2026-11-07: \"just use T3 locked, understated style for all the clips\"); runner had misnamed it, renamed by content",
+ "prompt": "One continuous shot, camera locked off at chest height, medium shot, framed as the start frame. The masked rapper starts with both fists up by his mask like a boxer's guard, and breaks it at once: his left hand drops to grip his jacket zip and stays there. His right hand works close to his body: thumb jerked back over his shoulder, a stop, then a rub of gloved finger and thumb at chest height, then a short sideways chop. He leans in from the waist on the stressed words, head forward and down, then pulls back upright. Controlled, nothing theatrical, no arms above the shoulders. Feet planted, no sliding. The mask stays still over his mouth. Real-time, no slow motion, no scene cuts. Sound: steam hissing from a vent, a distant car alarm, footsteps far off, no music, no singing, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

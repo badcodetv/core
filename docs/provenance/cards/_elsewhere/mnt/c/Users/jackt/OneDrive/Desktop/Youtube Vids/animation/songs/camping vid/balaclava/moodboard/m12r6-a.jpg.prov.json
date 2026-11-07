@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/m12r6-a.jpg",
+ "made": "2026-11-07T13:32:48+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Camping MV balaclava rap round 6 (Venom-style, grounded), sealed writer w1",
+ "prompt": "A night photograph under a concrete road flyover in London. The man in the attached reference is framed chest-up, shot from slightly below at arm's length, leaning in from the waist towards the lens, head forward and down. His gloved right index finger presses against the side of his mask at the temple; his left hand grips the front of his jacket. His mask: a white ring round the face and a small red triangle high inside the ring over his left eye, on the right-hand side of the picture, with no eye or mouth openings. Behind him, raw concrete pillars, one sodium streetlight and a faint orange haze. Gloves on, no skin anywhere. No microphone. 16:9.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/rough-duct-tape.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t07t3-t07r6-a.mp4",
+ "made": "2026-11-07T17:19:26+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "Google Flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t07r6-a.jpg",
+ "why": "r7 T3 rap gesture (Jack 2026-11-07: \"just use T3 locked, understated style for all the clips\"); runner had misnamed it, renamed by content",
+ "prompt": "One continuous shot, camera locked off at chest height from the front, wide as in the start frame. The masked man in tweed sits on the bonnet of the black saloon, his left glove resting flat on his knee and staying there, his shoes planted on the concrete. His right hand lifts off his knee and pats the bonnet beside him twice, a stop, then rises to pat his breast pocket, then turns out into an open empty palm toward the lens and drops. His head tilts in a slow, smug nod; his shoulders shrug once. Understated, controlled, nothing theatrical, no arms above the shoulders. The mask stays still over his mouth. The car does not move. Real-time, no slow motion, no scene cuts. Sound: fluorescent tube buzzing, a distant car door echoing, dripping water, no music, no singing, no dialogue.\nThanks.",
+ "settings": {
+  "mode": "Frames",
+  "aspect": "16:9",
+  "duration": "8",
+  "resolution": "720p"
+ }
+}

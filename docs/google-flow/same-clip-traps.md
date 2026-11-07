@@ -43,3 +43,24 @@ The clean room (fresh web research + sealed writers) was breached by things pass
   free hand does on the rhyme. Keep the anti-morph advice for objects.
 - **Run `scripts/variations/fresh.py`** — it now also lists DAMPERS (subtle, minimal, "then stops", "square to the lens",
   "four times"...). A damper on a performer needs a reason.
+
+## The over-correction (round 5 → 6, 2026-11-07)
+
+Jack, after the "geography teacher" fix: *"he seems to float in the air, ai slop is present when he does anything"*.
+The round-5 brief banned every calm word and asked the clip to "continue that energy", so the writers reached for travel and
+size: prowling at the lens, jumps, lunges, squat-and-spring, wide frames with lots of floor. **[ours]** The engine cannot plant
+feet that travel: they slide, the body glides and the face swells near the lens (`docs/stories/camping/mv-balaclava/cleanroom/r6/failures.md`).
+The fix that worked (round 6) came from the reference performer, not from more or less energy: rooted on one spot, chest-up or
+waist-up mostly, short hard gestures from the elbow and wrist, a handheld close camera, and on a wide, a hard shadow joined to the
+feet. **[ours]**, research `docs/stories/camping/mv-balaclava/cleanroom/r6/research.md`.
+
+- **Watch the reference the director names** and describe what the body does, frame by frame, before any writer starts.
+- **A damper list is a guide, not a ban.** "Subtle handheld", counts and "stops dead" were right here; a ban on them caused the float.
+- **No travel towards a locked camera** for a performer: it is the commonest float.
+
+## Round 7 (2026-11-07): five prompt patterns, one still each
+
+Jack picked the **T3 "locked medium, understated"** pattern (`docs/stories/camping/mv-balaclava/cleanroom/r7/research-prompts.md`) over a
+handheld freestyle, a fisheye push-in, a phone take and timecoded accents, all from the same start frame. **[ours]** The phone-take
+pattern drew a phone into the frame. My read before his pick: the start frame's pose (hands at the chest) set the gesture more than any
+prompt did [inference, untested].

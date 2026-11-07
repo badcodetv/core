@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t03r6-a.jpg",
+ "made": "2026-11-07T13:32:50+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "Google Flow",
+ "tool": "run_stills.mts (editImage)",
+ "model": "Nano Banana 2",
+ "why": "Camping MV balaclava rap round 6 (Venom-style, grounded), sealed writer w2",
+ "prompt": "The man in the attached reference, exactly as he is, standing at his table in an evening fine-dining restaurant, dark wood panelled walls, warm lamp light, blurred diners at white tablecloths behind him. Waist-up, camera low at table height looking slightly up at him. His mask has no eye or mouth openings: a white ring round the face and a small red triangle high inside the ring over his left eye, on the right of the picture. He leans down towards the lens from the waist, one gloved hand pressed flat on the white tablecloth taking his weight, the other index finger pointing down at the floor beside his hip. Gloves on, no skin. Rich warm colour, no readable words.\n\nThanks.",
+ "inputs": {
+  "reference": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/reference/posh-tweed.jpg"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "outputs": "2"
+ }
+}
