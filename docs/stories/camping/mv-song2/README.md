@@ -76,3 +76,15 @@ watch and listen to it, then cut it to the beat with complete freedom, since the
   match the plan, **all 86 main cuts 0-2 frames before the beat**, median shot 1.36 s. Saved.
 - Not watched as a render (Jack's no-renders rule): checked structurally only. Flags: the downbeat reading is measured, not
   confirmed by ear (rap lines come in on beat 2 under it); the first 0.72 s is now black before the logo.
+
+## Round 9: `camping song 2 beat 5` (2026-11-07 night) — ▶ RESUME HERE: cloned, NOT yet built
+
+Jack: *"do Ghostface Killah for all clips ... make a new sequence, also those 4 bits where it flashes to black to the beat that i asked
+you to keep, get rid of and do your own version but only do it for the start and end where bob is running through the tunnel"*.
+- **`camping song 2 beat 5`** = a clone of beat 4 (beat 4 checked untouched first: 106/24/4 pieces = plan). Beat 4 untouched.
+- `cut/recut5.py` → `edl-beat5.json`: every T3 piece → that shot's Ghostface clip (`../mv-balaclava/cleanroom/r9/picks.json`); stutters
+  at 103.68, 124.84, 130.28 closed (rap clip runs on / next shot starts on the first flash's beat); the start (10.96-13.68) and end
+  (186.24-187.60) stutters replaced by an accelerating tunnel-run cut from `clips/2.mp4` on the 88 BPM grid, no black: start =
+  back view 2 beats, running at us 1 beat, face 1/8, shout 1/8 → m12; end = back view 1 beat, running at us 1/8, face 1/8 → 16.mov.
+- `cut/build5.py` → `b5-clear.js` + `b5-place-N.js` (premiere_eval on beat 5, active). Before: import the 1080p copies
+  (`../mv-balaclava/cleanroom/r9/to1080.sh`, bin `ghostface rap clips`). Waits on the s01 clip (recut5 needs every shot's pick).

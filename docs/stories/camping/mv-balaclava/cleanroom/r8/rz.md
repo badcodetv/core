@@ -1,0 +1,7 @@
+=== t06rz (RZA (Wu-Tang Clan)) ===
+STILL:
+Low, close, wide-angle shot from waist height, tilted slightly off level, on a bright private tropical beach with palms, pale sand and sea behind. The man in the attached reference is caught mid-lunge towards the lens, off-centre on the left of frame: feet planted wide in the sand, knees bent, his whole upper body pitched diagonally forward, one shoulder dropped low. One arm is flung out wide at hip height, gloved palm open and blurred with motion; the other swings low across his body. His head is cocked to one side but his masked face points into the lens, so close that the wide lens bends him slightly. Harsh tropical sunlight, a real ordinary beach, nothing written anywhere.
+Thanks.
+CLIP:
+One continuous shot, low and wide at waist height, with a slight handheld sway. His feet stay planted in the sand the whole time; all the motion comes from the knees, hips and shoulders. He rocks his upper body side to side like a pendulum, dropping one shoulder then the other, lurching his masked face right up into the lens and pulling back. On every beat an arm swings loose and wide: a backhand sweep out to the side, an open palm flung down at the lens, then the other arm swinging low across his body. His head cocks and nods hard with each lurch, never pausing, jacket swinging with him to the last second. Sound: surf, wind in the palms, sand crunching underfoot.
+Thanks.

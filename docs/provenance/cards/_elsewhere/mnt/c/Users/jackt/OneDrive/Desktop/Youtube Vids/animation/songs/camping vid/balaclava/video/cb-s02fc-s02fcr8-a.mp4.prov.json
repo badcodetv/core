@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s02fc-s02fcr8-a.mp4",
+ "made": "2026-11-07T20:07:51+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "One continuous close shot, camera static with a faint handheld drift. Feet stay planted the whole time; all the movement is in his upper body. He sways slowly side to side, loose and lazy, one shoulder rolling forward on each sway. The reaching hand flicks twice from the wrist towards the lens, fingers fanning, then drops back. He leans in close, then settles back with a small late nod. Both hands cross low in front of his stomach, fingers flicking down and out, held a beat, released. He keeps swaying and flicking to the last second. Sound: traffic rumbling overhead, rain dripping into puddles.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02fcr8-a.jpg",
+ "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), 50 Cent, sealed writer",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02fcr8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s02fc",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T19:54:14.047Z"
+ }
+}

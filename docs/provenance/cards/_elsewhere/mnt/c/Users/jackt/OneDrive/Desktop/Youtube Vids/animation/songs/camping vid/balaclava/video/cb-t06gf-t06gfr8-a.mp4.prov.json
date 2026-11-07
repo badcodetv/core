@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t06gf-t06gfr8-a.mp4",
+ "made": "2026-11-07T20:24:38+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Low wide-angle camera, locked off, close on him. He raps hard and choppy, every move snapping out and stopping dead. Feet stay planted in the sand while his hunched torso rocks side to side above them. 0-2 seconds: both flat palms sweep across his belly and flick out. 2-4 seconds: he jabs his thumb back at his own chest three times, shoulders pumping left, right. 4-6 seconds: one flat hand chops sideways at waist height while his head dips and juts at the lens. 6-8 seconds: he leans right into the lens, both hands spread low, still rocking. Ambient sound: surf, wind in palm fronds.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06gfr8-a.jpg",
+ "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Ghostface Killah (Wu-Tang Clan), sealed writer",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06gfr8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t06gf",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T20:09:50.140Z"
+ }
+}

@@ -1,0 +1,7 @@
+=== s02em (Eminem) ===
+STILL:
+Night, under a wet concrete motorway flyover in London: rain-dark pillars, orange sodium light, puddles on the tarmac, a parked van far behind. The man in the attached reference stands very close to a wide-angle lens, shot from slightly below and framed off-centre, his head and hunched shoulders filling the right two-thirds of the frame. He leans hard into the lens mid-line, chin driven forward, head cocked a little to one side, his mask square to the camera so the red triangle shows. One gloved hand jabs a pointing finger straight at the lens, low in the frame and blurred with speed; the other fist is clenched against his chest. Feet planted wide. Gritty music-video photograph, 16:9, no words or signs anywhere.
+Thanks.
+CLIP:
+One continuous handheld shot, wide lens, close and slightly low; the camera holds its place and his feet stay planted. He stabs the pointing finger at the lens twice, each jab stopping dead. He snaps both arms crossed tight over his chest, holds one beat, then flings them straight out sideways at shoulder height. He slaps a flat hand onto his chest, then lunges his face towards the lens and jabs the finger again to finish. Between moves his head juts forward on every accent and his hunched shoulders jerk up with the stresses: lean in, pull back, lean in. Sharp starts, hard stops, never a smooth wave. Sound: rain dripping off concrete, tyres hissing overhead, distant traffic.
+Thanks.

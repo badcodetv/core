@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s03g-s03gr9-a.mp4",
+ "made": "2026-11-07T21:02:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Low wide-angle camera, locked off, very close on him. Sneering, aggressive delivery, choppy moves that snap and hold. Feet stay planted; his upper body sways side to side, drifting across the frame. 0-2 seconds: he leans right into the lens, head dipping and jutting. 2-4 seconds: shoulders roll and pump alternately, the whole torso riding them. 4-6 seconds: both splayed palms sweep across his belly, then flick out wide. 6-8 seconds: thumb jabs back at his chest twice, the other hand chopping once at his hip. Ambient sound: wind gusting, the city's distant traffic hum.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s03gr9-a.jpg",
+ "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g1",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s03gr9-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s03g",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T20:59:27.889Z"
+ }
+}

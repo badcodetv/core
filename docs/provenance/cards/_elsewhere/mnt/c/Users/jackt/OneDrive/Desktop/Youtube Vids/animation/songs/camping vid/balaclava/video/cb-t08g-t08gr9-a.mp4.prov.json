@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t08g-t08gr9-a.mp4",
+ "made": "2026-11-07T21:33:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Low wide-angle camera, locked off, close on him. He raps with lazy, smug arrogance, every move snapping out and stopping short. Feet stay planted on the paving while his torso rocks side to side. 0-2 seconds: his free hand chops flat across his belly twice while the wine sloshes in the low glass. 2-4 seconds: shoulders pump alternately, head dipping and jutting at the lens. 4-6 seconds: his free palm sweeps low and flicks out dismissively. 6-8 seconds: his thumb jabs back at his chest, then he leans into the lens, glass swinging low. Ambient sound: garden chatter, clinking glasses, birdsong.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08gr9-a.jpg",
+ "why": "r9 Ghostface style for all rap clips (Jack 2026-11-07 night), sealed writer g2",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t08gr9-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t08g",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T21:21:07.071Z"
+ }
+}

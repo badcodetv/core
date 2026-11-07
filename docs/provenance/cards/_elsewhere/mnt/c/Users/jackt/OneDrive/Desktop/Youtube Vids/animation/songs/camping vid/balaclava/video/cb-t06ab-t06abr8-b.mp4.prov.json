@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-t06ab-t06abr8-b.mp4",
+ "made": "2026-11-07T20:24:38+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld, slightly low, one continuous medium shot; the camera stays put. Feet stay planted in the sand the whole time. The raised finger jabs the sky twice, then the arm drops and the loose gloved hand rolls at the wrist beside his head, fingers spread, flicking like a man telling a story at dinner. He sways from the hips, shoulders shaking as he laughs, head nodding late and lazy. He leans towards the lens, pats the air palm-down, slaps his hand to his masked forehead in mock disbelief, then flings it out wide, palm up, shrugging. The champagne slops on every move. Sound: surf, palm fronds rustling, distant gulls.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06abr8-b.jpg",
+ "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Action Bronson, sealed writer",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/t06abr8-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "t06ab",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T20:08:19.862Z"
+ }
+}

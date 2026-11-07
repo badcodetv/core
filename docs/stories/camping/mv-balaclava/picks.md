@@ -152,3 +152,33 @@ clips just do a few ... like 5"* (verbatim: `cleanroom/r7/jack.md`). Round 6's h
   `scripts/scene/run.mts` now refuses to run while two unmade jobs share a start frame; the 47 unmade r7 jobs were dropped from
   `video-jobs.json` (prompts kept in `r7/clips-r7.json`). Built into `camping song 2 beat 3` and the beat re-cut `beat 4`
   (`../mv-song2/README.md`, Round 7).
+
+## Round 8: eight rappers, clean room (2026-11-07 evening)
+
+Jack: *"it still looks strange and boring and ai slop like ... gesture like action bronson, eminem, rza, wu tang, kendrick lamar,
+50 cent, and so on, make like 8 versions"* (verbatim: `cleanroom/r8/jack.md`). T3's failure (`r8/failures-t3.md`): every clip
+repeated its start pose (finger to the temple, other hand on the lapel), centred, dead in the last seconds.
+- Fresh web engine research `r8/research-engine.md` (no tested Veo/Omni rap source; motion transfer from a real clip reported
+  strongest; a mid-gesture blurred start still primes motion).
+- Eight sealed writers, one per rapper, each watched his videos frame by frame (`r8/<key>-observed.md`) and wrote a NEW start still +
+  clip (`r8/<key>.md` → `prompts-r8.json`, `r8/clips-r8.json`). Bob at s02 (flyover): Eminem, 50 Cent, Method Man, Kendrick.
+  Tarquin at t06 (beach): Action Bronson, RZA, Ghostface, Rick Ross (Rick Ross is my "and so on" pick).
+- Stills NB2 + reference, `ROUND=-r8 run_stills.mts`; mask check `r8/mask-check.md`. Clips jobs `s02em`… in `video-jobs.json`,
+  `cb-<key>-<still>.mp4`. fresh.py: no repeats bar the required mask sentence.
+- Page: https://claude.ai/artifact/QTyxei2Ae3cZuWDuBA24hK (`r8/build_page.py`, picks in db `picks`). Next: dump picks into `feedback/`,
+  write the picked style for all 13 shots (new stills + clips), swap into a new sequence cloned from `camping song 2 beat 4`.
+
+## Round 9: Ghostface for every rap clip (2026-11-07 night) — ▶ RESUME HERE
+
+Jack picked **Ghostface Killah** on the round-8 page: *"do Ghostface Killah for all clips and redo them all, and make a new sequence"*
+(verbatim: `cleanroom/r9/jack.md`).
+- Two sealed writers (`r9/brief-g1.md` Bob's 7 shots, `r9/brief-g2.md` Tarquin's 5) from the round-8 Ghostface observation, the
+  round-8 engine research and the picked t06gf prompt as the target → `r9/g1.md`, `r9/g2.md` → `prompts-r9.json`, `r9/clips-r9.json`
+  (`r9/parse.py`). t06 keeps its round-8 clip `cb-t06gf-t06gfr8-a`.
+- Stills (ids `<shot>g`, files `<shot>gr9-a/b.jpg`), mask check `r9/mask-check.md`, picks `r9/picks.json`.
+  - **s01 trap:** the alley shot came back three times with FINGERLESS gloves (bare fingertips) although the reference has full
+    gloves; failed takes kept as `s01gr9-*-fingerless*.jpg`. Writer rewrote it with closed fists: **not yet run**.
+  - s05 was blocked by Flow twice (silent "Failed"); rewritten without the tents, passed.
+- Clips: jobs `<shot>g` in `video-jobs.json` (11, s01 missing), run started 2026-11-07 20:58 → `r9/run.out`.
+- Next: run s01g still (`ROUND=-r9 REF=<local rough-duct-tape.jpg> PER_PROJECT=1 npx tsx run_stills.mts s01g`), check gloves, add its
+  job (`python3 r9/parse.py jobs s01=<take>`), make its clip; strip-check all 12 clips; `r9/to1080.sh`; then beat 5 (`../mv-song2/README.md`).

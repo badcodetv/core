@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/cb-s02em-s02emr8-a.mp4",
+ "made": "2026-11-07T20:07:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "One continuous handheld shot, wide lens, close and slightly low; the camera holds its place and his feet stay planted. He stabs the pointing finger at the lens twice, each jab stopping dead. He snaps both arms crossed tight over his chest, holds one beat, then flings them straight out sideways at shoulder height. He slaps a flat hand onto his chest, then lunges his face towards the lens and jabs the finger again to finish. Between moves his head juts forward on every accent and his hunched shoulders jerk up with the stresses: lean in, pull back, lean in. Sharp starts, hard stops, never a smooth wave. Sound: rain dripping off concrete, tyres hissing overhead, distant traffic.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02emr8-a.jpg",
+ "why": "r8 rapper-style options (Jack 2026-11-07 \"gesture like action bronson, eminem ...\"), Eminem, sealed writer",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/moodboard/s02emr8-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-balaclava",
+  "key": "s02em",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-07T19:53:42.893Z"
+ }
+}
