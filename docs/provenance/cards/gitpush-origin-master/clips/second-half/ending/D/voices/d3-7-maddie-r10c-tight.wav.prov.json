@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-7-maddie-r10c-tight.wav",
+ "made": "2026-11-06T21:11:02+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atrim+concat",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-7-maddie-r10c.wav",
+ "why": "D round 10: pauses held to 0.45 s (0.75 s after \"Not this you.\"); words untouched"
+}

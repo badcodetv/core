@@ -130,8 +130,8 @@ async function submit(s: Shot) {
     for (let i = 0; i < 10; i++) { await sleep(500); if (await clickText('I agree')) break }
   }
   // Item 15/57: the first Frames lookup of a process can race the popover; one retry clears it.
-  try { await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: 8, count: 1, frames: true }) }
-  catch { await sleep(1500); await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: 8, count: 1, frames: true }) }
+  try { await c.ensureVideoConfigRebuilt({ model: 'Omni 1.2 Flash', aspect: '16:9', duration: 8, count: 1, frames: true }) }
+  catch { await sleep(1500); await c.ensureVideoConfigRebuilt({ model: 'Omni 1.2 Flash', aspect: '16:9', duration: 8, count: 1, frames: true }) }
   await c.fillFrameSlotRebuilt('Start', s.plate!)
   // Cast by "@" mention (rebuild doc items 30-33). The ingredients button the MCP's
   // addCharacterToPromptRebuilt clicks does not exist in Frames mode (probe 2026-10-17), but "@"

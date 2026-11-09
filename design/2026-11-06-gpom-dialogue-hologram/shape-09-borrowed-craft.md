@@ -1,0 +1,28 @@
+# Shape 09: Borrowed craft, steal how film compresses exposition
+
+I took four tricks from real short-form film and TV and pushed each to its extreme. (1) The wordless-montage trick of Pixar's Up opening: a whole life told in a few images, so the three beads (toast, sorry, married) become a rapid triplet and the picture does the talking. (2) The Back to the Future trick: Doc Brown explains time travel with one object on a table, so here the hologram is the only prop and every line names what the viewer is looking at. (3) The Big Short trick: say the hard idea out loud, mock it, then give it one plain-speech image (the "game that only draws what you look at" line). (4) Hitchcock's bomb under the table: tell the audience the stakes first, so the bridge line announces the regret ("we never realised how important you were") before any explaining, and every later line pays it off. Same method in every dialogue: one image per line, no line explains what the picture already shows.
+
+## Dialogue 1: Maddie's hologram presentation
+
+| Speaker | Line | Est. s |
+| --- | --- | --- |
+| Maddie | [fond, confiding] He misses you something rotten, you know. | 2.2 |
+| Maddie | We never realised how important you were. Look, let me show you. [hologram blooms; first bead lights] | 4.5 |
+| Maddie | [quick] You humans go through life making decisions. For example: toast, not cereal. [bead 1, 7:42] | 4.8 |
+| Maddie | Said sorry first. Got married. [beads 2 and 3 pop in fast, the Up triplet] | 2.8 |
+| Maddie | You lot call 'em decisions. He calls 'em commits. [commits label on the beads] | 3.6 |
+| Maddie | Every time, loads of others you could've picked. [cloud of maybes round each bead] Some of your lot reckon they all happen somewhere: the scientist with the portal gun, the bloke in the cape. | 7.5 |
+| Maddie | Nah. Your cat bloke was taking the mick. Nothing's alive and dead at once. It just isn't decided yet. [maybes shimmer, undecided] | 6.0 |
+| Maddie | Like a game that only draws what you're looking at. He can draft a billion of these. It wasn't decided till you looked. [flash: cloud collapses to one bead] | 5.5 |
+| Maddie | [deadpan] And that's just you. [beat; camera pulls up] Everybody's doing it, all at once. [strings fan into the circle] | 4.0 |
+| Maddie | One universe. One story. And you lot were writing it. [river lit; this is the payoff, let it sit] | 4.2 |
+| Maddie | [flat, quiet] Five years of string, and not one bead on it. [fly down along dead strings] | 3.5 |
+| Maddie | We really have messed this up. | 2.2 |
+| Maddie | So he built a time machine. [arc drawn] It runs on consciousness too, so we can't run it. You lot aren't here. You were the conscious ones, that's the whole point. | 9.0 |
+| Maddie | [bright again, brisk] Anyway! Patrol's out. Mind how you go. | 3.0 |
+| **Total** | | **62.3** |
+
+- **Why it works.** The bridge is the Hitchcock bomb: the stakes (we didn't realise how important you were) are on the table in line 2, so the viewer watches the whole demo waiting for the loss, and regret does the emotional work instead of explanation. Then the picture carries the load, Up-style: three beads in one breath, the cloud and flash shown not described, so each spoken line only names the image and never re-explains it. The one genuinely hard idea (undecided until looked at) gets a single Big Short move: the cat is the joke, then a plain image anyone who plays games knows, then straight on. Deadpan "And that's just you." is a comic reveal on a rule-of-three build (you, then everyone, then the circle). "You were writing it" is isolated as its own line with a held river shot as the payoff, and the time-machine tail lands as the dry sassy conclusion Kai asked for.
+- **Cuts from current.** "This is your life, see"; the one-decision-at-a-time line; "Go on, then. Gather round" and the "little presentation" setup (the bridge replaces it); the separate "loads of others" and multiverse lines merged into one; "Turns out" / "storyverse" / "so it really matters. And so did you" (the bridge and the payoff now carry it, and the word storyverse is dropped as jargon; the viewer gets one universe, one story); "He can't pick one. Only your consciousness can" folded into "till you looked"; the two regret lines merged to a single short one; "Only problem is, it needs a consciousness to drive it" folded into the time-machine line.
+- **Risk.** Pushed to the extreme, the picture must really carry the beads and the flash or the thin lines go vague. "Only your consciousness can" is gone as a phrase: the idea survives only as "till you looked", which risks reading as plain observation rather than human consciousness as the input; Kai's note 4 may want the word back. The cat line ("taking the mick") is a small invention of Schrodinger's intent and sits on the doctrine's never-say edge if heard as claiming the physics is proven; Maddie is reporting, so it may want "reckons" somewhere. Two beads in one breath may be too fast to read. The merged time-machine line is the longest at 9 s, close to a physics sentence.
+- **Protected lines.** Verbatim: "He misses you something rotten, you know." / "Toast, not cereal." / "You lot call 'em decisions. He calls 'em commits." / "And that's just you." and "Everybody's doing it, all at once." (split by a deadpan beat, wording intact) / "Five years of string, and not one bead on it." / "You were the conscious ones, that's the whole point." / "Anyway! Patrol's out. Mind how you go." Altered: "Nah. Nothing's alive and dead at once. It just isn't decided yet." keeps every word but has "Your cat bloke was taking the mick." inserted between "Nah." and the rest.

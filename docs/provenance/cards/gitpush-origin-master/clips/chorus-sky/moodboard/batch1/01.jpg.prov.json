@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/batch1/01.jpg",
+ "made": "2026-11-09T14:32:47.884Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Street level in the middle of the Shibuya scramble crossing in Tokyo at night: the whole crowd has stopped dead mid-crossing and every face is turned up, lit cold white from above. Above them the whole sky is filled with thousands of small bright white lights slowly descending through low cloud, evenly spread like a vast silent meteor storm, and far off on the horizon bright flashes light up the underside of the clouds. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, landscape orientation. 16:9 frame from a fictional near-future film, no captions, logos, brand names, lettering or readable on-screen text; every screen and billboard shows only abstract colour.",
+ "source_id": "9cd73cdb-0f9a-40d8-98c9-a754d63a8841"
+}

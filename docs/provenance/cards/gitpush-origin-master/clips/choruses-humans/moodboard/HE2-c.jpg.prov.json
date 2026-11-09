@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/HE2-c.jpg",
+ "made": "2026-11-06T19:28:31.429Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same car park and night as this frame, seen from the driver's seat of a parked car through the windscreen: the lamps, a couple of shoppers standing frozen ahead, and far above the roofs a tilting searchlight in the sky.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/HE1-a-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/HE1-a-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "26b27ae9-daea-448a-83fd-3024968d490c"
+}

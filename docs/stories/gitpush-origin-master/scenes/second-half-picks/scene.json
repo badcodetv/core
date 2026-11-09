@@ -8,7 +8,7 @@
     "picks": "https://claude.ai/artifact/3DDbvoAxmABJAboca6A3co"
   },
   "video": {
-    "model": "Omni 1.1 Flash",
+    "model": "Omni 1.2 Flash",
     "aspect": "16:9",
     "mode": "Frames",
     "duration": 8

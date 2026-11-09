@@ -66,22 +66,24 @@ fr, probe = C.fr, C.probe
 NAMES = {'ai': 'The AI (through Maddie)', 'bot': 'Maddie', 'woman': 'Sandra', 'man': 'Derek', 'lady': 'The old lady',
          'crowd': 'The hundred'}
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
-D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
+D1 = TAG in ('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')  # the dialogue-page rounds: d1 = drafts 1D + 2H (27 Oct), d2 = draft 2J (28 Oct, scene B)
 D2 = TAG == 'd2'
-D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')
-D8 = TAG in ('d8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')
-D17 = TAG == 'd17'  # round 19 (Kai r18 notes at3777/at742/at4194/at4230): the row at natural speed, re-voiced/re-rendered for the lips; 'you know' cut; boss line 3 cut; no V3 cut-back
-D16 = TAG in ('d16', 'd17')  # round 18 (Kai, 5 Nov meeting): faster voices -- the row sped picture+voice together, Maddie re-voiced fast, boss re-recorded
-D15 = TAG in ('d15', 'd16', 'd17')  # Kai 5 Nov: the brutal kill-bot cut (6, 7, 9a, 11 trimmed, 10b, 12 without HUD); bridge loudness-matched
-D14 = TAG in ('d14', 'd15', 'd16', 'd17')  # Kai r15 notes (5 Nov): no swoop/pull-out ("no funky camera work"); bridge line c00; street fades to black and back up
-D13 = TAG in ('d13', 'd14', 'd15', 'd16', 'd17')  # Kai 5 Nov: draft 1K, the old monologue (lines 2-4) and its inserts out; swoop -> hologram -> pull-out
+D7 = TAG in ('d7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')
+D8 = TAG in ('d8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')
+D19 = TAG == 'd19'  # round 21 (Kai r20, 6 Nov): Sandra re-edited onto Derek (no LatentSync); d03 ends on 'yet'
+D18 = TAG in ('d18', 'd19')  # round 20 (Kai r19 notes + dialogue 1D, 6 Nov): ending re-ordered (motorway -> call on Maddie -> wide approach -> stand-down), argument mouths redrawn (LatentSync), hologram 1D
+D17 = TAG in ('d17', 'd18', 'd19')  # round 19 (Kai r18 notes at3777/at742/at4194/at4230): the row at natural speed, re-voiced/re-rendered for the lips; 'you know' cut; boss line 3 cut; no V3 cut-back
+D16 = TAG in ('d16', 'd17', 'd18', 'd19')  # round 18 (Kai, 5 Nov meeting): faster voices -- the row sped picture+voice together, Maddie re-voiced fast, boss re-recorded
+D15 = TAG in ('d15', 'd16', 'd17', 'd18', 'd19')  # Kai 5 Nov: the brutal kill-bot cut (6, 7, 9a, 11 trimmed, 10b, 12 without HUD); bridge loudness-matched
+D14 = TAG in ('d14', 'd15', 'd16', 'd17', 'd18', 'd19')  # Kai r15 notes (5 Nov): no swoop/pull-out ("no funky camera work"); bridge line c00; street fades to black and back up
+D13 = TAG in ('d13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')  # Kai 5 Nov: draft 1K, the old monologue (lines 2-4) and its inserts out; swoop -> hologram -> pull-out
 D12 = TAG == 'd12'  # Kai r13 (at1878): drop line 5 ('And now we've worked all that out... go back and change things'), 'And so did you' -> 'Anyway!'
-D11 = TAG in ('d11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # Kai r12 (at1749): overhead road far too tidy -> ia-top3 (ia-09-a, rubble), t4 takes
-D10 = TAG in ('d10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # Kai r11 notes (4 Nov): overhead grainy/too fast/too many bays -> ia-top2 (ia-07-a), t2 clips, softer grade
-D9 = TAG in ('d9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # Kai, 4 Nov: beat 0 cut between three angles (front, side, overhead) at sentence ends  # Kai's timeline r9 notes (3 Nov)
+D11 = TAG in ('d11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')  # Kai r12 (at1749): overhead road far too tidy -> ia-top3 (ia-09-a, rubble), t4 takes
+D10 = TAG in ('d10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')  # Kai r11 notes (4 Nov): overhead grainy/too fast/too many bays -> ia-top2 (ia-07-a), t2 clips, softer grade
+D9 = TAG in ('d9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')  # Kai, 4 Nov: beat 0 cut between three angles (front, side, overhead) at sentence ends  # Kai's timeline r9 notes (3 Nov)
 RT01_IN = 2.5  # the retreat clip's in-point: past the crescent bot's slide to the right (t8, 0-2.5 s)
-D3 = TAG in ('d3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
-D4 = TAG in ('d4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
+D3 = TAG in ('d3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')  # draft 1G, Maddie's storyverse intro (2 Nov, scene A only): voices-<tag>.json
+D4 = TAG in ('d4', 'd5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')  # d5 adds the wide approach (WA02) in beat 10b. Kai's timeline r5 notes (2 Nov): 1G reworded, the row re-lip-synced (v2 dubs), Derek's new line,
                   # the boss's firewall line cut, Maddie's 'That was close.' alone, HUD NEW OBJECTIVE
 BR = TAG == 'br'  # the bridge (Kai, 28 Oct): the doorstep talk cut; a look, the door shuts on her, voices behind it
 STEM = {'bot': 'vox-maddie', 'lady': 'vox-lady', 'woman': 'vox-sandra', 'man': 'vox-derek', 'crowd': 'vox-crowd'}
@@ -269,6 +271,13 @@ class Cut:
     def pic(self, src, i0, t0, t1, beat, source=None, hud=None):
         t0, t1 = fr(t0), fr(t1)
         assert t1 > t0, (src, t0, t1)
+        if D18:  # round 20 (Kai at3436): the argument's mouths redrawn to the round 19 voices (LatentSync 1.6, redraw.py);
+            # each -ls24 file starts at that shot's round 19 in-point and runs its round 19 length
+            m = re.search(r'lip-([0-9]+[a-z]?-[0-9]+)', pathlib.Path(src).name)
+            if m and m.group(1) in LS20 and USE_LS:
+                source, i0 = source or src, i0 - LS20[m.group(1)]
+                src = LS_DIR / f'{m.group(1)}-ls24.mp4'
+                assert -1e-3 <= i0 and i0 + (t1 - t0) <= dur(src) + 0.5 / FPS, (src, i0, t1 - t0, dur(src))
         c = dict(file=str(src), **{'in': fr(i0)}, dur=fr(t1 - t0), start=t0, beat=beat,
                  source=str(source or src), looped=False)
         if hud:
@@ -429,7 +438,7 @@ D3_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 0.9, 5: 1.0, 6: 1.4, 7: 2.0}
 # Round D6 (2 Nov): draft 1H, seven lines; the travelling shot extended to play at real speed (no slow-down), the
 # tune held at least 8 s before "Oh, hello!", and the shot starting after her opening turn (Kai: "just cut to her
 # rolling down the road").
-D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17')
+D6 = TAG in ('d6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19')
 # Round D7 (3 Nov): Kai's 'chopped' lip-sync note -> v3 (clips re-made to the voice, whole phrases, x1.00-1.15);
 # the stand-down plate V4 (reversed) -> SD01, animated from his still pick sd-01.
 D6_LINE_GAP = {0: 1.0, 1: 0.9, 2: 0.9, 3: 0.9, 4: 1.4, 5: 2.0}
@@ -546,9 +555,20 @@ SWOOP_AT = 45.0  # measured: the swoop's first frame matches the graded front sh
 H_FADE = 1.0     # the swoop fades to black over its last second; the pull-out fades up over its first
 BACK_LEAD = 0.6  # back on the street: this long before "Anyway!"
 BRIDGE = HOLO / 'voice-1k' / 'clips' / 'c00-bridge.wav'
-if TAG == 'd17':  # Kai at742: 'you know' cut (2.73-3.24 s, 0.49 s out), so the pause moves earlier with it
+if TAG in ('d17', 'd18', 'd19'):  # Kai at742: 'you know' cut (2.73-3.24 s, 0.49 s out), so the pause moves earlier with it
     BRIDGE = HOLO / 'voice-1k' / 'clips' / 'c00-bridge-r19.wav'
-BRIDGE_SPLIT = 5.51 if TAG == 'd17' else 6.0  # the pause between "...came back." (speech to 5.78 s) and "Go on, then." (from 6.60 s), clip time  # d14: "He made me learn a little presentation... Gather round."
+if TAG in ('d18', 'd19'):  # round 20: dialogue 1D voiced and rendered (hologram-1d agent, 6 Nov); the bridge is one part
+    H_PIC = HOLO / 'render-1d-24' / 'hologram-1d-24fps-picture.mp4'
+    H_VOX = HOLO / 'render-1d-24' / 'hologram-1d-24fps-voice.wav'
+    H_EDIT = HOLO / 'render-1d-24' / 'edit.json'
+    H_LINES = S.REPO / 'design' / '2026-11-05-gpom-meeting' / 'voice-1d' / 'lines-1d.json'
+    BRIDGE = HOLO / 'voice-1d' / 'clips' / 'c00-bridge.wav'
+BRIDGE_SPLIT = 5.51 if TAG in ('d17', 'd18', 'd19') else 6.0  # the pause between "...came back." (speech to 5.78 s) and "Go on, then." (from 6.60 s), clip time  # d14: "He made me learn a little presentation... Gather round."
+
+
+LS_DIR = pathlib.Path('/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-r19')
+USE_LS = TAG == 'd18'  # round 21 (Kai: 'the lip-sync's not so great on Sandra... LatentSync not working so well'): back to round 19's clips
+LS20 = {'6-0': 0.0, '7d-0': 1.125, '7-0': 1.625, '7d-1': 0.16666666666666666, '7-2': 0.0}  # round 19 in-points
 
 
 class Span:
@@ -626,7 +646,7 @@ def beat0_d13(c, m):
         a = fr(e1 + GAP)
         brow = rows['bridge']
         tk = Take(BRIDGE)
-        if D15:
+        if D15 and not D18:
             # Kai: the bridge sounded quieter than her other lines. Measured (r16 line file): "He made me learn... came back."
             # sat at -19.4/-21.0 LUFS against her neighbours' ~-16, while "Go on, then. Gather round." is a raised call
             # (-10/-12) that the whole-line normalisation pulled everything down for. Split at the pause (clip 6.0 s): the
@@ -674,7 +694,8 @@ def beat0_d13(c, m):
         c.pic(media['holo'], 0.0, t_h, t_p, '0', source=H_PIC)
         c.pic(media['out'], 0.0, t_p, t_b, '0', source=SWOOP_R)
     # the hologram's voice: its 15 lines, cut from the one wav at the page's clip starts (edit.json)
-    clips = json.loads(H_EDIT.read_text())['ED']['clips']
+    ej = json.loads(H_EDIT.read_text())
+    clips = ej.get('ED', ej)['clips']
     durs = {r['id']: r['dur'] for r in json.loads(H_LINES.read_text())}
     for cid, cl in sorted(clips.items(), key=lambda kv: kv[1]['start']):
         ln = holo[cid]
@@ -753,7 +774,9 @@ def scene_a():
         c.meta['intro'] = ('Scene A, round 5: Maddie\'s storyverse intro, draft 1G from the storyverse dialogue page (your '
                            'pick, 2 Nov). Everything after beat 0 is as before. Play it, click any beat, clip, line or '
                            "sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.")
-    if D17:
+    if D18:
+        c.meta['intro'] = "Scene A, round 20: your round 19 notes and the dialogue you picked (1D). Maddie's presentation is new: the cold open on toast, Schrödinger's joke, 'you are writing it, a storyverse', the regret and the time machine, with the hologram re-rendered to it (round cloud, three dives, the ping on 'looks', the circle of beads, one smooth move to the side view). The argument's mouths are redrawn to the voices. The ending is re-ordered: the motorway, her call on her the whole time, the wide approach, the turn-away. 2:34. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Tell Claude when you're done."
+    elif D17:
         c.meta['intro'] = ('Scene A, round 19: your round 18 notes. The argument is back at natural speed, with the lips re-fitted shot by '
                            'shot: two new talking clips (Derek\'s "I\'m really sorry, love" and Sandra\'s "Yeah, the world ended...") and '
                            'Derek\'s "But the world ended" and Sandra\'s "and you still can\'t put a seat down" re-voiced to their clips. '
@@ -1099,7 +1122,7 @@ def scene_a():
     e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
     c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
     d10b = fr(max(5.0, e + TAIL - t))
-    if TAG in ('d5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
+    if TAG in ('d5', 'd6', 'd7', 'd8', 'd9', 'd10', 'd11', 'd12', 'd13', 'd14', 'd15', 'd16', 'd17', 'd18', 'd19'):  # Kai at5110 (2 Nov): far wider, the pack racing at the door from far off -- WA02 (his still pick wa-02)
         c.pic(V / 'cut3-WA02.mp4', 0, t, t + d10b, '10b')
         b['title'], b['see'] = 'The wide approach', ('Long lens through the grass: the pack races along the foot of the slope, the '
                                                      'bunker door small and high on the right. Maddie over it.')
@@ -1315,6 +1338,25 @@ def row_d16(c, t, m, LINES):
 RT01_D15 = 3.0  # round 17: the bots turning away at the door, the whole stand-down now (no HUD)
 
 
+def row_on_derek(c):
+    """Round 21 (Kai, 6 Nov, picked 'Re-edit around her'): Sandra's face stays only on her opening line (6-0, which
+    measured in sync). 'and you still can't put a seat down' (7-0) and 'Yeah, the world ended. Doesn't mean you get to stop
+    having manners.' (7-2) play over Derek taking it: his shot before each runs on through her line. Measured on the
+    tracked mouth: in both Derek clips his mouth is shut from ~3.6 s to the end, so the run-ons (ping-ponged past 6 s)
+    show him silent. Voices untouched."""
+    v = c.video
+    k70 = next(i for i, x in enumerate(v) if 'lip-7-0' in x['file'])
+    k72 = next(i for i, x in enumerate(v) if 'lip-7-2' in x['file'])
+    for k in (k70, k72):
+        v[k - 1]['dur'] = fr(v[k - 1]['dur'] + v[k]['dur'])
+    for k in sorted((k70, k72), reverse=True):
+        del v[k]
+    c.flags.append('Beats 6-7, round 21 (Kai: Sandra\'s lip sync not good, re-edit around her): back to round 19\'s clips (no '
+                   'LatentSync). Sandra on screen only for "Derek. You\'ve left the seat up again."; "and you still can\'t put a seat '
+                   'down" and "Yeah, the world ended. Doesn\'t mean you get to stop having manners." play over Derek taking it '
+                   '(his mouth shut, measured), each Derek shot running on through her line, ping-ponged past its 6 s.')
+
+
 def rest_d15(c, t, m):
     """Round 17 (Kai, 5 Nov): the brutal kill-bot cut. After "Mind how you go.": hard cut to the row (6-7), one kill bot
     tears past Maddie (9a, the first bot we see), the call trimmed to three lines (11), the wide approach (10b), the bots
@@ -1322,6 +1364,18 @@ def rest_d15(c, t, m):
     8, 9b and 10a are gone."""
     # ---- 6-7: the row, exactly as round 16, from a hard cut (round 18: sped, picture and voice together)
     t = row_d16(c, t, m, LINES) if D16 else row_d8(c, t, m, LINES)
+    if D19:
+        row_on_derek(c)
+    if D18:  # Kai at3874: no bot tearing past Maddie (and no wobble): straight to the tanks on the motorway
+        b = c.beat('9a', 'The kill bots on the motorway', t, act='Kill mode',
+                   see='The pack races down the abandoned motorway in its own dust: the first time we see them.')
+        c.pic(V / 'cut3-V8.mp4', V8_IN18, t, t + D9A18, '9a')
+        m['s9a'] = t
+        c.flags.append(f'Beat 9a (round 20, Kai at3874/at4171): the bot tearing past Maddie is cut; the scene goes straight from '
+                       f'the row to the tanks on the motorway (V8 {V8_IN18:g}-{V8_IN18 + D9A18:g} s). We see the pack twice: here, '
+                       'and racing across the field to the bunker. No KILL MODE or STAND DOWN screens.')
+        t = c.close(b, t + D9A18)
+        return call_d18(c, t, m)
     # ---- 9a: one kill bot tears past Maddie
     b = c.beat('9a', 'One kill bot tears past Maddie', t, act='Kill mode',
                see='The first kill bot we see: high over the street, it passes close and exits bottom-left, Maddie jolts, '
@@ -1386,15 +1440,49 @@ def rest_d15(c, t, m):
     return rest_d15_after_call(c, t, m)
 
 
+V8_IN18, D9A18 = 0.0, 4.0  # round 20: the motorway, its first 4 s (the pack nearest, most dust)
+MADDIE20 = {'11-0': AU / 'voice3' / 'r20' / '11-0-bot-b.wav', '10b-0': AU / 'voice3' / 'r20' / '10b-0-bot-b.wav'}
+LINE20 = {'11-0': 'Boss, can you see those bots? In kill mode. They must have detected an organic signal.',
+          '10b-0': "Quick, boss, hurry up! They're nearly there."}
+
+
+def call_d18(c, t, m):
+    """Round 20 (Kai at4079/at4171): Maddie calls the boss with the new line, and we stay on her (V3) for the boss's
+    reply too; then the wide approach."""
+    s11 = t
+    b = c.beat('11', 'Maddie calls her boss', s11, act='Kill mode',
+               see="Maddie's hatch, the boss-hotline antenna. Her report and the boss's reply, on her the whole time.")
+    v3 = V / 'cut3-V3.mp4'
+    tt, starts = s11 + 2.0, []
+    for k, who in enumerate(('bot', 'ai')):
+        if who == 'bot':
+            e = c.say('vox-maddie', Take(MADDIE20['11-0']), tt, '11', 'beat 11 Maddie 0 (round 20 line)')
+            text = LINE20['11-0']
+        else:
+            tk = Take(boss18(1)) if boss18(1) else Take(SUNO_A / BOSS[1])
+            e = c.say('vox-ai', tk, tt, '11', f'beat 11 boss line 1 ({tk.path.name})', chain=[SPEAKER], lufs=-17)
+            text = BOSS_TEXT[1]
+        c.line(b, k, who, tt, e - tt, text, 'kai')
+        starts.append((tt, e, who))
+        tt = e + GAP
+    end11 = fr(starts[-1][1] + TAIL)
+    c.pic(v3, 0.0, s11, end11, '11')  # past 8 s V3 ping-pongs (she hardly moves), as in earlier rounds
+    m['s11'], m['calls'], m['end11'], m['v8cuts'] = s11, starts, end11, []
+    c.flags.append('Beat 11 (round 20, Kai at4079/at4171): her new line, "' + LINE20['11-0'] + '", then the boss\'s reply with '
+                   'the picture staying on Maddie (V3) throughout; no cutaway.')
+    t = c.close(b, end11)
+    return rest_d15_after_call(c, t, m)
+
+
 def rest_d15_after_call(c, t, m):
     v3 = V / 'cut3-V3.mp4'
     # ---- 10b: the wide approach, Maddie over it
     b = c.beat('10b', 'The wide approach', t, act='Kill mode',
                see='Long lens through the grass: the pack races along the foot of the slope, the bunker door small and high on '
                    'the right. Maddie over it.')
-    tk = Take(MADDIE18['10b-0'] if D16 else A1 / '10b-0-bot-a.wav')
+    tk = Take(MADDIE20['10b-0'] if D18 else MADDIE18['10b-0'] if D16 else A1 / '10b-0-bot-a.wav')
     e = c.say('vox-maddie', tk, t + LEAD, '10b', 'beat 10b Maddie')
-    c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
+    c.line(b, 0, 'bot', t + LEAD, e - t - LEAD, LINE20['10b-0'] if D18 else "Well, you'd better bloody hurry up, boss. They're nearly there.", 'kai')
     d10b = fr(max(5.0, e + TAIL - t))
     c.pic(V / 'cut3-WA02.mp4', 0, t, t + d10b, '10b')
     m['s10b'], m['l10b'] = t, (t + LEAD, e)
@@ -1485,16 +1573,22 @@ def audio_a_d15(c):
     # ---- 6-7: the tiled room
     fx('sfx-rooms', SFX / 'fs767306-room-tiled-public-bathroom.mp3', st['6'], en['7'] - st['6'], src_in=10, rms=-42,
        fi=0.02, fo=0.05, what='tiled room tone')
-    # ---- 9a: the pass (placed in clip time, so they follow V1_IN)
+    if D18:  # ---- 9a (round 20): the motorway, the pack in its dust
+        s = st['9a']
+        fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', s, D9A18 + 0.3, rms=-28, fi=0.05, fo=0.4, what='tank tracks, the pack')
+        fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s, D9A18 + 1.0, src_in=40, rms=-30, fi=0.05,
+           fo=1.0, what='engines (into the call)')
+        fx('sfx-wind', wind, s, D9A18, src_in=25.0, rms=-40, fi=0.05, fo=0.3, tile=True, what='wind, the motorway')
     s = st['9a'] - V1_IN
-    loop_wheels(fx, 'sfx-maddie', st['9a'], 3.0 - V1_IN, rms=-34, fi=0.05, fo=0.2, what='her wheels, trundling')
-    fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', st['9a'], 3.4 - V1_IN, rms=-26, fi=0.05, fo=0.6, what='tank tracks')
-    fx('sfx-maddie', MS / 'derived-maddie-killbot-dust-whoosh.wav', s + 1.6, peak=-3, af='pan=stereo|c0=c1|c1=c0',
-       what='kill bot dust whoosh, past her')
-    fx('sfx-maddie', MS / 'derived-maddie-servo-turn-b.wav', s + 3.0, rms=-30, what='servo: she jolts')
-    fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s + 3.0, en['9a'] - (s + 3.0) + 1.5, src_in=30,
-       rms=-32, fo=1.5, what='the kill bot, going away (into the call)')
-    fx('sfx-wind', wind, st['9a'], en['9a'] - st['9a'], src_in=25.0, rms=-38, fi=0.05, fo=0.3, tile=True, what='wind, the street')
+    if not D18:  # the pass (placed in clip time, so they follow V1_IN)
+        loop_wheels(fx, 'sfx-maddie', st['9a'], 3.0 - V1_IN, rms=-34, fi=0.05, fo=0.2, what='her wheels, trundling')
+        fx('sfx-killbots', SFX / 'fs557594-killbot-mech-walk.mp3', st['9a'], 3.4 - V1_IN, rms=-26, fi=0.05, fo=0.6, what='tank tracks')
+        fx('sfx-maddie', MS / 'derived-maddie-killbot-dust-whoosh.wav', s + 1.6, peak=-3, af='pan=stereo|c0=c1|c1=c0',
+           what='kill bot dust whoosh, past her')
+        fx('sfx-maddie', MS / 'derived-maddie-servo-turn-b.wav', s + 3.0, rms=-30, what='servo: she jolts')
+        fx('sfx-killbots', SFX / 'fs522673-killbot-drone-engine-flyby.mp3', s + 3.0, en['9a'] - (s + 3.0) + 1.5, src_in=30,
+           rms=-32, fo=1.5, what='the kill bot, going away (into the call)')
+        fx('sfx-wind', wind, st['9a'], en['9a'] - st['9a'], src_in=25.0, rms=-38, fi=0.05, fo=0.3, tile=True, what='wind, the street')
     # ---- 11: hatch and antenna on V3; the far engines on each V8 cutaway; the beacon on the boss's words
     fx('sfx-maddie', MS / 'derived-maddie-hatch-open.wav', m['s11'] + 0.02, rms=-26, what='hatch')
     fx('sfx-maddie', MS / 'derived-maddie-antenna-extend.wav', m['s11'] + 0.4, rms=-26, what='antenna extends')

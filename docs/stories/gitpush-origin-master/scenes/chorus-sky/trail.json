@@ -1,0 +1,23 @@
+[
+ {
+  "at": "2026-11-09T14:39:09+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/RRb4Xr1ckXnXdFV3AMkNoF",
+  "what": "the sky, then the silence: 6 places full / looking up / empty (2 each), 4 sky-light looks, 2 faces; 30 stills",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/chorus-sky <out.html>"
+ },
+ {
+  "at": "2026-11-09T17:09:16+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/RRb4Xr1ckXnXdFV3AMkNoF",
+  "what": "Kai's votes and notes on round 1",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/chorus-sky <out.html>",
+  "decided": [
+   "This: full + empty of all six places (SB1-a/SB1-c-a, TS1-a/TS1-c-a, PC1-a/PC1-c-b, ST1-a/ST1-c-a, MW1-a/MW1-c-b, CB1-a/CB1-c-b); no sky shots. Kai: 'I don't like the meteor storm thing… I like busy scenario, empty scenario.' TS: hoardings need actual stuff on them; empty shot could have broken TV-malfunction screens. PC: same, adverts on boards; no bus in the empty shot. MW: empty shot no cars at all, buildings dark. CB: empty shot dark, no lights."
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 16
+ }
+]

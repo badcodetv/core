@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1d-24/hologram-1d-24fps-picture.mp4",
+ "made": "2026-11-06T21:45:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "three.js",
+ "tool": "design/2026-11-06-gpom-hologram-1d/record.mjs (headless Chrome, window.hologram.frameAt) + ffmpeg x264, 24 fps",
+ "why": "hologram 1D, Kai r20 at1403: d03 ends on 'yet', the ping and collapse on 'yet'",
+ "inputs": {
+  "page": "design/2026-11-06-gpom-hologram-1d/index.html",
+  "builder": "design/2026-11-06-gpom-hologram-1d/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1d/lines-1d.json"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1d-24/edit.json"
+ }
+}

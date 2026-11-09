@@ -1,0 +1,193 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "choruses-humans",
+  "prefix": "ch",
+  "title": "GPOM Choruses: the humans",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> the choruses, with people",
+  "moodboard_intro": "Round 2: three new camera angles on each of your 12 picks: the same place, people and light, framed so they can be intercut with the pick. Your picks are in the strip at the top. Tap This, Maybe or No; leave a note per beat.",
+  "storyboard_intro": "Frames in story order. Pick one still and one way to animate each.",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans",
+  "flow_project": "7c30dbaf-9efd-4f94-84e6-49c3314cad21",
+  "premiere": {
+    "sequence": "01 GPOM start",
+    "chorus1": [
+      62.583,
+      74.083
+    ],
+    "chorus2": [
+      106.917,
+      128.708
+    ],
+    "chorus2_second_pass": 117.71
+  },
+  "existing": {
+    "trader": [
+      [
+        "ch1-WL2-b",
+        "chorus 1 today: the robot choir",
+        "existing/ch1-WL2-b.jpg"
+      ]
+    ],
+    "tower": [
+      [
+        "ch1-EY4-c",
+        "chorus 1 today: the eye",
+        "existing/ch1-EY4-c.jpg"
+      ]
+    ],
+    "cash": [
+      [
+        "ch2-SH1-c",
+        "chorus 2 today: the ships",
+        "existing/ch2-SH1-c.jpg"
+      ]
+    ],
+    "empty": [
+      [
+        "ch2-TN1-a",
+        "chorus 2 today: the beam over the town",
+        "existing/ch2-TN1-a.jpg"
+      ]
+    ]
+  },
+  "beats": [
+    {
+      "key": "trader",
+      "at": "62.58 · chorus 1",
+      "name": "The trader, a week later",
+      "blurb": "The man from the trading desk in the opening, after the sackings."
+    },
+    {
+      "key": "bread",
+      "at": "chorus 1",
+      "name": "The woman and the loaf",
+      "blurb": "The woman from the corner shop in the opening. Now she can't pay for the bread."
+    },
+    {
+      "key": "doorway",
+      "at": "chorus 1",
+      "name": "The doorway",
+      "blurb": "One of the sacked office workers, sleeping in the doorway of the tower that sacked him."
+    },
+    {
+      "key": "tower",
+      "at": "~71 · chorus 1",
+      "name": "Who gained",
+      "blurb": "The tower lit up and busy with nobody at a desk, or the boardroom toasting over the queue. The beneficiary and the cost in one frame."
+    },
+    {
+      "key": "cash",
+      "at": "106.92 · chorus 2",
+      "name": "The money stops",
+      "blurb": "First pass: cash machines dead, the bank's shutter down."
+    },
+    {
+      "key": "shelves",
+      "at": "chorus 2",
+      "name": "Nothing on the shelves",
+      "blurb": "Empty aisles, a petrol queue."
+    },
+    {
+      "key": "flicker",
+      "at": "chorus 2",
+      "name": "The lights stutter",
+      "blurb": "A terraced street at dusk, people at windows and on doorsteps."
+    },
+    {
+      "key": "gridlock",
+      "at": "117.71 · chorus 2",
+      "name": "Everyone leaves",
+      "blurb": "Second pass: the M4 out of Swindon jammed at night. Sets up the war's empty M4."
+    },
+    {
+      "key": "backseat",
+      "at": "chorus 2",
+      "name": "Looking back",
+      "blurb": "The glow over town, seen from a back seat. Fire only as a glow."
+    },
+    {
+      "key": "heli",
+      "at": "chorus 2",
+      "name": "Far off",
+      "blurb": "A helicopter's light spiralling down in the distance, tiny and silent (Kai's idea)."
+    },
+    {
+      "key": "lookup",
+      "at": "chorus 2",
+      "name": "Something in the sky",
+      "blurb": "Faces turned up at lights we don't see: the drones arriving."
+    },
+    {
+      "key": "lightsout",
+      "at": "chorus 2",
+      "name": "The town goes dark",
+      "blurb": "Swindon losing power district by district."
+    },
+    {
+      "key": "empty",
+      "at": "~128 · chorus 2",
+      "name": "Gone",
+      "blurb": "Last frame before black: nobody left. A car door open, engine running. Then black, then the war's grey morning."
+    }
+  ],
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/RuyCTKTbrHAqDeH4UvcxfE",
+    "timeline": "https://claude.ai/artifact/8gX5wpQjdyW3krCtRV14jN"
+  },
+  "board_round": 2,
+  "picked": [
+    [
+      "TR1-b-c",
+      "round 1 pick"
+    ],
+    [
+      "BD1-b-c",
+      "round 1 pick"
+    ],
+    [
+      "DW1-a-a",
+      "round 1 pick"
+    ],
+    [
+      "CA1-a-a",
+      "round 1 pick"
+    ],
+    [
+      "SH1-a-a",
+      "round 1 pick"
+    ],
+    [
+      "SH1-b-a",
+      "round 1 pick"
+    ],
+    [
+      "GR1-a-a",
+      "round 1 pick"
+    ],
+    [
+      "GR1-c-b",
+      "round 1 pick"
+    ],
+    [
+      "BS1-a-a",
+      "round 1 pick"
+    ],
+    [
+      "HE1-a-b",
+      "round 1 pick"
+    ],
+    [
+      "LO1-b-b",
+      "round 1 pick"
+    ],
+    [
+      "EM1-b-a",
+      "round 1 pick"
+    ]
+  ],
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/cut/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/cut/preview.mp4",
+    "how": "python3 scripts/gpom/choruses/cut_humans.py"
+  }
+}

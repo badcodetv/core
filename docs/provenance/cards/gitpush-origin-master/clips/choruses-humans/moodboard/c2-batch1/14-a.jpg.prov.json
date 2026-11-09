@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/14-a.jpg",
+ "made": "2026-11-06T18:57:00.714Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Low angle at night up at a group of strangers on a street corner looking up into the sky with the same frozen expression, one woman's hand on another's arm, pale cold light falling on their faces from above. 35mm documentary photograph, grain, observational, no readable writing anywhere.",
+ "source_id": "9d002277-0c45-496f-afad-df53cd53359f"
+}

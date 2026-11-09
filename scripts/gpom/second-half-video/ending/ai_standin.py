@@ -44,7 +44,7 @@ def main():
     for t in 'ab':
         w = OUT / f'ai-d3b-standin-{t}.wav'
         if not w.exists():
-            subprocess.run(['uv', 'run', '-q', '--with', 'google-genai', 'python3', str(REPO / 'scripts/aistudio-tts.py'),
+            subprocess.run(['uv', 'run', '-q', '--with', 'google-genai<2', 'python3', str(REPO / 'scripts/aistudio-tts.py'),
                             str(work / 'ai-d3b.txt'), str(w), '--profile', str(work / 'ai-d3b.md'), '--voice', VOICE],
                            check=True, env=os.environ)
         wavs.append(w)

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/05.jpg",
+ "made": "2026-11-09T17:47:33.967Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Inside a car at night, close on the steering wheel turning by itself, the driver's hands lifted off it and held up in the air at the edge of frame, the door-lock pin pushed down, the dashboard lights all gone cold white, through the windscreen the car in front lurching forward. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "c925b5b2-3713-4a4c-8ebb-9d0766c1c5f8"
+}

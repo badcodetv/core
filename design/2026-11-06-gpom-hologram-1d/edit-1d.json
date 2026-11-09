@@ -1,0 +1,70 @@
+{
+ "segs": {
+  "lead": 0.3,
+  "bead1": 6.69,
+  "bead2": 0.5,
+  "bead3": 0.6,
+  "open": 2.5,
+  "maybes": 14.95,
+  "pick": 1.8,
+  "settle": 0.8,
+  "toRiver": 4.5,
+  "river": 11.47,
+  "flyDown": 12.99,
+  "arcDraw": 2.5,
+  "arcHold": 12.83,
+  "off": 1.2
+ },
+ "clips": {
+  "d01": {
+   "start": 0.35,
+   "text": "You humans go through life making decisions. For example: toast, not cereal.",
+   "needsVoice": false
+  },
+  "d02": {
+   "start": 7.79,
+   "text": "Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape.",
+   "needsVoice": false
+  },
+  "d03": {
+   "start": 16.92,
+   "text": "Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet.",
+   "needsVoice": false
+  },
+  "d04": {
+   "start": 28.24,
+   "text": "And that's just you. Everybody's doing it, all at once.",
+   "needsVoice": false
+  },
+  "d05": {
+   "start": 32.74,
+   "text": "So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse.",
+   "needsVoice": false
+  },
+  "d06": {
+   "start": 42.23,
+   "text": "But then you lot went away. So now we have five years of string, and not one bead on it.",
+   "needsVoice": false
+  },
+  "d07": {
+   "start": 51.04,
+   "text": "Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it.",
+   "needsVoice": false
+  }
+ },
+ "exc": [
+  [
+   12.05,
+   14.91
+  ],
+  [
+   15.01,
+   16.82
+  ],
+  [
+   21.62,
+   23.34
+  ]
+ ],
+ "draft": "1D"
+}

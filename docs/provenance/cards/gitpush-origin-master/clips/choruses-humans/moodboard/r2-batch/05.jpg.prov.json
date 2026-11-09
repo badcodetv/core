@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/05.jpg",
+ "made": "2026-11-06T19:48:38.427Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Ground level on a motorway at night where every car has been abandoned: close beside one empty hatchback with its driver's door hanging open, the small interior light on, keys in the ignition, a long line of empty cars beyond blinking amber hazards. No people. Grainy 35mm, deep night, amber light, no lettering.",
+ "source_id": "a8606cd0-64f3-42ff-90bb-e0df1aa36c49"
+}

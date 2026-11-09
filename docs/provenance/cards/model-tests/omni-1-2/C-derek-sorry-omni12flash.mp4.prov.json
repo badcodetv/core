@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/model-tests/omni-1-2/C-derek-sorry-omni12flash.mp4",
+ "made": "2026-11-09T19:21:28+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/flow-tests/model-ab.mts",
+ "model": "Omni 1.2 Flash",
+ "parent": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg",
+ "why": "model A/B: same plate + prompt as /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/cut3-lip-7d-0-r19-a.mp4 (Omni 1.1 Flash)",
+ "source_id": "1f214f32-466e-45d3-a5a5-8a5617d3dc9c",
+ "prompt": "The shot stays fixed; only the people move. Derek, the husband in the dark green jumper, stands silent for a second taking the telling-off, then mumbles a quick, sheepish apology, running the words together. He says: I'm really sorry, love. Then his mouth closes and he looks at the floor. His wife, her back to us, stays quiet and still.",
+ "inputs": {
+  "start": "/home/kai/.cache/badcode-gpom-second-half/lip-v3/v3-derek-SB07c.jpg"
+ },
+ "settings": {
+  "durationSeconds": "6",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "9118d5f2-4c83-4a57-a15d-049b85796627"
+ }
+}

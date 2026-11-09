@@ -65,8 +65,8 @@ document. The prompt gets the description only.
 
 ## 🔴 Video is Omni Flash now: read `docs/google-flow/` first
 
-`docs/flow/` below was written for Veo. Since 2026-09 the video model we use is Omni 1.1 Flash (Jack's standing
-process rule), and what it does is recorded in [`docs/google-flow/`](../../../docs/google-flow/README.md)
+`docs/flow/` below was written for Veo. Since 2026-09 the video model we use is Omni Flash (Jack's standing
+process rule), **Omni 1.2 Flash since 2026-11-09** ([the switch and its A/B](../../../docs/google-flow/2026-11-09-omni-1-2-sweep.md): 1.2 may cut to a second shot of its own, and Google now advises "Do not X" where our 1.1 finding was that negatives backfire, untested on 1.2), and what it does is recorded in [`docs/google-flow/`](../../../docs/google-flow/README.md)
 (`omni-flash.md`, `nano-banana-2.md`, the dated sweeps). **Open that README before writing any video prompt:** its
 first section is the list of moves the model cannot do and the rules for the words (keep it short; name the
 story's colours and lights from its `look.md`, because unnamed the model goes muted; never describe an attached

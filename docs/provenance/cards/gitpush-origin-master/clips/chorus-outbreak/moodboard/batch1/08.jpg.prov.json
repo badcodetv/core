@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/08.jpg",
+ "made": "2026-11-09T17:47:34.015Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "At ground level behind a crowd of people running away along a motorway hard shoulder at night, seen only from behind as dark shapes with bags and coats, towards a towering orange wall of burning cars and smoke on the carriageway ahead; abandoned cars with open doors line the frame. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "a0f3fc55-19ea-4802-a8ac-e3240e6adb3e"
+}

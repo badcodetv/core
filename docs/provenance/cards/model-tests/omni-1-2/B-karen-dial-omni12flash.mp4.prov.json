@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/model-tests/omni-1-2/B-karen-dial-omni12flash.mp4",
+ "made": "2026-11-09T19:20:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/flow-tests/model-ab.mts",
+ "model": "Omni 1.2 Flash",
+ "parent": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+ "why": "model A/B: same plate + prompt as /mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4 (Omni 1.1 Flash)",
+ "source_id": "14d8626a-a680-456f-a545-5d7f3c9e91f5",
+ "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The dial turns clockwise, stops, then spins smoothly back to rest, as if a number has just been dialled by an unseen hand. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+ "inputs": {
+  "start": "/home/kai/.cache/karen-plates/c14-the-dial.jpg"
+ },
+ "settings": {
+  "durationSeconds": "8",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "de2158e1-8dc7-4702-b499-3c7668e8334c"
+ }
+}

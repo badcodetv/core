@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/TR2-a.jpg",
+ "made": "2026-11-06T19:13:13.680Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Treat the provided frame as one shot of a film scene. Make the next shot of that same scene: same man, same soaked grey jacket, same bus shelter, same rain and overcast light, same grain. New camera position: a wide shot from across the wet road, the shelter and the man small on the left, a driverless van blurring past through the foreground.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/TR1-b-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/TR1-b-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "9e771a04-7466-47dc-96e7-47eb806e4983"
+}

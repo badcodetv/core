@@ -449,5 +449,100 @@
   "round": 19,
   "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
   "what": "Premiere '03 GPOM story A kill bots r17' built from A-d17, in sync (57 placed incl. Kai's A1 music tail, 0 failed); frames D:\\badcode-videos\\gitpush-origin-master\\frames\\r17-A-*.jpg"
+ },
+ {
+  "at": "2026-11-06T19:08:03+00:00",
+  "stage": "timeline",
+  "round": 19,
+  "what": "Kai's round 19 notes dumped to feedback/timeline-r19: 17 new (hologram script + cloud camera, the argument's lip sync, the ending re-ordered)",
+  "feedback": "feedback/timeline-r19",
+  "feedback_docs": 70
+ },
+ {
+  "at": "2026-11-06T19:24:37+00:00",
+  "stage": "timeline",
+  "round": 19,
+  "what": "lip sync (Kai at3436): row measured shot by shot on the assembled d17 cut (scripts/lipsync/row-measure.py); worst errors = voice 0.2-0.25 s early on single phrases in 6-0, 7-0, 7d-1 (7-2 0.13 s early); picture re-timing tried (picture-warp.py) and did not converge; no new cut built; next = audio-driven mouth re-render (LatentSync), install awaits Kai's permission"
+ },
+ {
+  "at": "2026-11-06T19:24:41+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "what": "hologram rewrite brief: spine ruled, 10 writers launched (design/2026-11-06-gpom-dialogue-hologram/)",
+  "decided": [
+   "Kai: A ('it wasn't decided until you looked') with B's line ('you were writing it') as its payoff; about 60 s"
+  ]
+ },
+ {
+  "at": "2026-11-06T19:28:04+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/2cJoJw6UMpSVMvEHKGr1zh",
+  "what": "dialogue options: hologram presentation (3 drafts, commits line dropped per Kai)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-06-gpom-dialogue-hologram/options.json design/2026-11-06-gpom-dialogue-hologram.html",
+  "decided": [
+   "Kai: drop 'He calls 'em commits', too technical"
+  ]
+ },
+ {
+  "at": "2026-11-06T19:44:11+00:00",
+  "stage": "dialogue",
+  "round": 2,
+  "url": "https://claude.ai/artifact/2cJoJw6UMpSVMvEHKGr1zh",
+  "what": "round 2: Kai's 6 notes on 1A dumped (design/2026-11-06-gpom-dialogue-hologram/feedback/r1), draft 1D written, replies on the page",
+  "decided": [
+   "Kai: 1A is the pick (Conscious, carried), rebuilt on his notes"
+  ]
+ },
+ {
+  "at": "2026-11-06T19:59:30+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "url": "https://claude.ai/artifact/2cJoJw6UMpSVMvEHKGr1zh",
+  "what": "round 3: Kai's spoken line changes applied to draft 1D (~65 s est.)",
+  "decided": [
+   "Kai: 'you are writing it' in present tense, for the viewer watching now, over story logic"
+  ]
+ },
+ {
+  "at": "2026-11-06T20:05:57+00:00",
+  "stage": "timeline",
+  "round": 19,
+  "what": "LatentSync redraw of the argument (5 shots, Kai ran it, ~5 min GPU): row-side-by-side.mp4 in /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-r19; measured mixed (6-0, 7-2 worse by tracker; faces intact)"
+ },
+ {
+  "at": "2026-11-06T20:54:27+00:00",
+  "stage": "timeline",
+  "round": 20,
+  "what": "hologram 1D rendered: voice-1d (6 takes + E2 re-voice, Gemini Aoede, 7 TTS calls), render-1d-24 74.25 s, page design/2026-11-06-gpom-hologram-1d/ (make.py from the 1K lookdev page)"
+ },
+ {
+  "at": "2026-11-06T20:59:42+00:00",
+  "stage": "timeline",
+  "round": 20,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 20 (A-d18): dialogue 1D voiced + hologram 1D render, argument mouths redrawn (LatentSync), ending re-ordered (motorway, call on Maddie, wide approach, stand-down); 2:34; 17 notes answered",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d18 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A",
+  "decided": [
+   "Kai: lock 1D and work through all round 19 notes to round 20"
+  ]
+ },
+ {
+  "at": "2026-11-06T21:45:49+00:00",
+  "stage": "timeline",
+  "round": 20,
+  "what": "hologram 1D re-rendered for Kai r20 at1403: d03 re-voiced (take C2) to end 'It just isn't decided yet.'; ping + collapse on 'yet'; later clips 0.6 s earlier; 73.63 s"
+ },
+ {
+  "at": "2026-11-06T21:50:12+00:00",
+  "stage": "timeline",
+  "round": 21,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 21 (A-d19): Kai's r20 notes (feedback/timeline-r20); Sandra re-edited onto Derek (round 19 clips, no LatentSync); d03 ends on 'yet' (hologram re-rendered); 2:34",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d19 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A",
+  "decided": [
+   "Kai: re-edit around Sandra (LatentSync not good on her)",
+   "Kai: the cat line ends 'It just isn't decided yet.'"
+  ]
  }
 ]

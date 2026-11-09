@@ -64,7 +64,7 @@ weirdness 0–100; styleInfluence 0–100; vocalGender "male"/"female"/null; dur
 
 FLOW_SETTINGS = """Settings you choose for your prompt, guided by the story's look above (if it names a model or
 aspect for this part, use that): "model" — the Flow model, e.g. "Nano Banana 2", "Nano Banana Pro" (stills) or
-"Omni Flash", "Veo 3.1 Fast" (clips); "aspect" — "16:9", "9:16", "1:1", "4:3", "3:4", "4:5", "21:9" (stills; clips
+"Omni 1.2 Flash" (clips; our video model from 2026-11-09), "Veo 3.1 Lite"; "aspect" — "16:9", "9:16", "1:1", "4:3", "3:4", "4:5", "21:9" (stills; clips
 are "16:9" or "9:16"). Unless the story fixes them (see above), the round's prompts must not all share one set of settings."""
 
 # Flow writers choose model and aspect too (2026-10-29): before, a Flow round had no way to say,

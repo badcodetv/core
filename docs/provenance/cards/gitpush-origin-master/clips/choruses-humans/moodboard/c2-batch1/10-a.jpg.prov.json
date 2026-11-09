@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/10-a.jpg",
+ "made": "2026-11-06T18:57:00.647Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night, back seat of a car crawling out of town: a young woman with a dog on her lap has turned to look back through the rear window, where an orange glow lights the underside of low clouds over the distant rooftops. Her face in shadow, the glow reflected in the glass. 35mm documentary photograph, grain, deep blue interior, the far orange glow the only warmth, no flames visible, no readable writing anywhere.",
+ "source_id": "7e0ecb95-2c43-4c4f-a31a-383d766b5f51"
+}

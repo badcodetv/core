@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/SH3-a.jpg",
+ "made": "2026-11-06T19:20:17.678Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Cover this petrol station scene from a new position, keeping the queue of cars, the bagged pumps, the drivers and the bright canopy at night as they are. Camera now inside one of the queuing cars, through the windscreen and wipers, the canopy glare ahead and brake lights in front.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/SH1-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/SH1-b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "1722c306-e325-47b3-9758-ae2299a01c8e"
+}

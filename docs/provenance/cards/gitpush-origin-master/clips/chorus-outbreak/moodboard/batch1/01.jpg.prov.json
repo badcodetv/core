@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/01.jpg",
+ "made": "2026-11-09T17:47:33.901Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Extreme close-up of a paper cup of water standing in a car's dashboard holder at night, concentric ripples trembling across the water's surface, beyond it out of focus through the windscreen a wall of red brake-light circles and orange motorway lamps. Shallow depth of field, the rim of the cup sharp, everything else soft. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "ed7705e7-7b7f-4cfc-9950-9bcaf586641a"
+}

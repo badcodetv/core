@@ -93,7 +93,7 @@ Money For Something:
 - **Never write audience, laughter, applause, comedy or newsreader in a talking-clip prompt** (each one
   summoned crowd noise or was refused); name the sound as the speaker's voice plus an empty room's hum
   (Jack ruled out studio laughter, 4 Oct).
-- Video: Omni 1.1 Flash, **Frames**, 720p, 8 s (Ingredients re-stages the room). Host v2 talks off screen
+- Video: Omni 1.2 Flash (→ Omni 1.2 Flash from 2026-11-09: Fast, Quality and Omni 1.1 leave Flow on 5 Dec; Kai saw no difference in the A/B), **Frames**, 720p, 8 s (Ingredients re-stages the room). Host v2 talks off screen
   (TTS), so a few stock movement clips from plate H1 are reused.
 
 ## Anchors

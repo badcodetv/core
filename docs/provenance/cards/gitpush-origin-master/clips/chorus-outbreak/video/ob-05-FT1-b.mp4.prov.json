@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-05-FT1-b.mp4",
+ "made": "2026-11-09T19:24:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The giant steel crane leg slams its foot down onto the flyover full of abandoned cars; the deck cracks and a wall of dust and debris surges towards the camera, and when it reaches the camera the view jolts backwards and shakes hard, grit hitting the lens. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/FT1-b.jpg",
+ "why": "The shockwave hits the camera",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/FT1-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "05",
+  "frame": 5,
+  "option": "c"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T19:11:22.610Z"
+ }
+}

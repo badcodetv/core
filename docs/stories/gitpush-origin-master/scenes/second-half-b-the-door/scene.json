@@ -133,9 +133,9 @@
    "what": "the bridge, round 8 (1:28), locked by Kai 4 Nov: \"We've nailed it. That's the one.\"",
    "how": "edl-premiere.json (the edl plus each stem's file) -> scripts/scene/premiere-plan.py --tag r1 --seq '04 GPOM story B bridge r1'; lines under B-bridge-r8/premiere/r1/lines/",
    "check": {
-    "at": "2026-11-05T21:51",
-    "state": "in sync",
-    "why": ""
+    "at": "2026-11-09T19:14",
+    "state": "edited in Pr",
+    "why": "61 effects added"
    }
   }
  },
@@ -172,7 +172,7 @@
   }
  },
  "video": {
-  "model": "Omni 1.1 Flash",
+  "model": "Omni 1.2 Flash",
   "aspect": "16:9",
   "mode": "Frames"
  },

@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-9-maddie-r13b.wav",
+ "made": "2026-11-09T17:52:17+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Gemini TTS",
+ "tool": "scripts/gpom/second-half-video/ending/voices_fix.py D r13",
+ "model": "Aoede",
+ "why": "GPOM scene D round 13 (Kai, 9 Nov, dialogue 1I)",
+ "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle and honest; 'It's a bit like dying.' plain and kind, no drama; 'Mostly like nodding off in front of the telly.' warmer, a small comfort, the faintest fond smile.\nStyle: no jokes, no cheek, no gossip, never sarcastic or condescending: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+ "inputs": {
+  "text": "It's a bit like dying. Mostly like nodding off in front of the telly."
+ }
+}

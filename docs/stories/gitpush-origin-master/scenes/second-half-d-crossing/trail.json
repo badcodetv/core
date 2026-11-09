@@ -41,5 +41,207 @@
   "decided": [
    "we've done it it's perfect that is so good"
   ]
+ },
+ {
+  "at": "2026-11-06T18:44:25+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/W1GrGb1W8meMiHaxLkYffj",
+  "what": "dialogue options: the crossing's cost said plainly (wafer + two-hands goodbye)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-06-gpom-dialogue-crossing-cost/options.json design/2026-11-06-gpom-dialogue-crossing-cost.html"
+ },
+ {
+  "at": "2026-11-06T19:18:01+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "url": "https://claude.ai/artifact/W1GrGb1W8meMiHaxLkYffj",
+  "what": "dialogue round 1 answered: drafts 1D and 2D",
+  "decided": [
+   "Kai 6 Nov: wafer = 1C 'Count the chairs' + 'you'll still be you, before it went wrong, and we'll have a chance to fix it' (1D); goodbye = 'I'm looking forward to hanging out with you before the world ended' / 'Yes me too love, are you ready for this?', hands then fade to white (2D). Questions left to Claude's judgement."
+  ]
+ },
+ {
+  "at": "2026-11-06T19:23:05+00:00",
+  "stage": "dialogue",
+  "round": 2,
+  "url": "https://claude.ai/artifact/W1GrGb1W8meMiHaxLkYffj",
+  "what": "dialogue round 2: wafer ending picked",
+  "decided": [
+   "Kai 6 Nov: 'I'm going to go with your pick, 1F.' (Don't worry, Derek / He? / He's only data, love. Data travels. / Right.)"
+  ]
+ },
+ {
+  "at": "2026-11-06T19:40:30+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 7: the crossing's cost said plainly (dialogue 1F + 2D voiced, 12 Gemini takes); picture re-cut from existing clips; 1:57",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r7 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-06T20:00:57+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 8: brutal cut to 1:26 (Kai r7 notes); LatentSync on D07 pending",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r8 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-06T20:01:05+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "what": "Kai's round-7 notes dumped to feedback/timeline-r7 (9 new)",
+  "feedback": "feedback/timeline-r7",
+  "feedback_docs": 37
+ },
+ {
+  "at": "2026-11-06T20:13:24+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "what": "Premiere 06 GPOM story D crossing r5 built (gpom-chorus), in sync, swapped into 00 RENDER story (9:45.6)"
+ },
+ {
+  "at": "2026-11-06T20:33:45+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "what": "Kai's round-8 notes dumped to feedback/timeline-r8 (5 new)",
+  "feedback": "feedback/timeline-r8",
+  "feedback_docs": 42
+ },
+ {
+  "at": "2026-11-06T20:33:45+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 9: Maddie empathetic, no Will it hurt, the promise short; 1:15",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r9 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-06T20:35:31+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "what": "Premiere 06 GPOM story D crossing r6 built (gpom-chorus), in sync, in 00 RENDER story (9:34.75)"
+ },
+ {
+  "at": "2026-11-06T21:13:23+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "what": "Kai's round-9 note dumped to feedback/timeline-r9 (1 new)",
+  "feedback": "feedback/timeline-r9",
+  "feedback_docs": 43
+ },
+ {
+  "at": "2026-11-06T21:13:23+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 10: the key line re-worded (at978); 1:19",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r10 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-06T21:15:41+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "what": "Premiere 06 GPOM story D crossing r7 built (gpom-chorus), in sync, in 00 RENDER story (9:38.4)"
+ },
+ {
+  "at": "2026-11-06T21:24:00+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "what": "Kai's round-10 note dumped to feedback/timeline-r10 (1 new)",
+  "feedback": "feedback/timeline-r10",
+  "feedback_docs": 44
+ },
+ {
+  "at": "2026-11-06T21:24:00+00:00",
+  "stage": "timeline",
+  "round": 11,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 11: goodbye = Derek's whisper only; music crossfade (at1242); 1:19",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r11 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-06T21:25:46+00:00",
+  "stage": "timeline",
+  "round": 11,
+  "what": "Premiere 06 GPOM story D crossing r8 built (gpom-chorus), in sync, in 00 RENDER story (9:38.4)"
+ },
+ {
+  "at": "2026-11-09T12:51:58+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "what": "Kai's round-12 notes dumped to feedback/timeline-r12 (7 new: lady asks 'afterwards', Derek asks 'what will it feel like', hands, chairs layout, grade jump) + chat: up the ante",
+  "feedback": "feedback/timeline-r12",
+  "feedback_docs": 51
+ },
+ {
+  "at": "2026-11-09T12:51:58+00:00",
+  "stage": "timeline",
+  "round": 12,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 12: notes answered on the page; cut unchanged pending the dialogue pick"
+ },
+ {
+  "at": "2026-11-09T12:51:58+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "url": "https://claude.ai/artifact/W1GrGb1W8meMiHaxLkYffj",
+  "what": "dialogue options round 3: 1H/1I/1J, the hundred choose the sacrifice",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-06-gpom-dialogue-crossing-cost/options.json design/2026-11-06-gpom-dialogue-crossing-cost.html --notes design/2026-11-06-gpom-dialogue-crossing-cost/notes-r3.json"
+ },
+ {
+  "at": "2026-11-09T17:52:39+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 13: dialogue 1I (they choose: 'take a seat'), lady 'And afterwards?', 'my love', hands grade matched; 1:24",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r13 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T17:52:46+00:00",
+  "stage": "dialogue",
+  "round": 3,
+  "what": "dialogue page r3 notes dumped",
+  "decided": [
+   "1I: 'I won't switch it on unless you want it... take a seat' — really emotionally important, incredible tenderness, great; Derek: 'are you ready for this my love? keep it really simple'"
+  ],
+  "feedback": "feedback/dialogue-r3",
+  "feedback_docs": 4
+ },
+ {
+  "at": "2026-11-09T17:52:46+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 13: dialogue 1I (they choose: 'take a seat'), lady 'And afterwards?', 'my love', hands grade matched; 1:24",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r13 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T18:33:30+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "what": "Premiere 06 GPOM story D crossing r9 built (karen-music-video session), in sync, swapped into 00 RENDER story (E +5 s; 9:43.4)"
+ },
+ {
+  "at": "2026-11-09T18:33:30+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "what": "Lady's 'And afterwards?' lip-synced (LatentSync, Kai ran it); page republished"
+ },
+ {
+  "at": "2026-11-09T19:14:53+00:00",
+  "stage": "timeline",
+  "round": 13,
+  "what": "Kai's round-13 notes dumped (8 new)",
+  "feedback": "feedback/timeline-r13",
+  "feedback_docs": 59
+ },
+ {
+  "at": "2026-11-09T19:14:53+00:00",
+  "stage": "timeline",
+  "round": 14,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "D round 14: Hundred+question one take, Sandra's jeopardy, vow with pauses, no Thank you, hands quick to white; 1:26. Premiere r10 in sync, in 00 RENDER story (9:45.3)",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r14 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
  }
 ]

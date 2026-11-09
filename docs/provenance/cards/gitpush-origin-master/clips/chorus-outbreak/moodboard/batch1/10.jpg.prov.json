@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/10.jpg",
+ "made": "2026-11-09T17:47:34.062Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Looking straight up from the quayside at night at one giant steel leg of a container gantry crane as it wrenches its wheels off the rail, the steel rail snapping and bending up, bolts and sparks raining down, the crane's boom vanishing into dark low cloud far above with its red lamp. A dock worker's abandoned hard hat on the wet concrete in the foreground. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "277cfd42-30c8-44f0-8562-f604015c5b73"
+}

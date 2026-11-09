@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/model-tests/omni-1-2/A-van-shelter-omni12flash.mp4",
+ "made": "2026-11-09T19:19:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/flow-tests/model-ab.mts",
+ "model": "Omni 1.2 Flash",
+ "parent": "/home/kai/.cache/flow-refs/choruses/vid/TR2-a.jpg",
+ "why": "model A/B: same plate + prompt as /mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/video/TR2-a.mp4 (Veo 3.1 Fast)",
+ "source_id": "13b3dd6a-21d9-4714-a647-09aea1aad00e",
+ "prompt": "The van in the foreground speeds past left to right, blurred, kicking up spray; behind it the man in the shelter is revealed hunched over his box; rain keeps falling hard. Realistic, documentary 35mm grain, no text.",
+ "inputs": {
+  "start": "/home/kai/.cache/flow-refs/choruses/vid/TR2-a.jpg"
+ },
+ "settings": {
+  "durationSeconds": "4",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "9f230fc4-2659-43a6-98ef-1d49fa2b086d"
+ }
+}

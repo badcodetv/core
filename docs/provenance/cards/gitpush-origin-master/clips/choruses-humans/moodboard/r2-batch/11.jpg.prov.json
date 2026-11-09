@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/11.jpg",
+ "made": "2026-11-06T19:48:38.495Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Night on a hilltop above a large English town: a lone man in a long coat seen from behind as a silhouette in the foreground, watching the town below where half the lights have already gone out and the rest are going. Grainy 35mm, deep blue night, orange city lights, no lettering.",
+ "source_id": "b1583de4-71dd-4b23-988b-aee81d576d90"
+}

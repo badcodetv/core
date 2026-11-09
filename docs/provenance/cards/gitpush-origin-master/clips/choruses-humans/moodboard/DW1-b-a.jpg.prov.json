@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/DW1-b-a.jpg",
+ "made": "2026-11-06T18:46:51.857Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of these sacked office workers, show a close, low view of one of the same men lying in a sleeping bag on wet paving in an office doorway at night, still wearing his shirt and loosened tie, his old company lanyard around his neck, eyes open, rain dripping from the canopy, his cardboard office box beside his head. Documentary 35mm still, fine grain, cold blue night, the lobby light falling across his face, no writing, signs or logos anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/e03-pass.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/e03-pass.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b66106f5-a684-4ae3-bbd7-fb3f599a2741"
+}

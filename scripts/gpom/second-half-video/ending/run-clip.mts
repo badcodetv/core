@@ -155,7 +155,7 @@ try {
     await c.ensureAgentOff()
     await c.uploadToProject(staged)
     for (let i = 0; i < 10; i++) { await sleep(500); if (await clickText('I agree')) break }
-    const cfg = { model: 'Omni 1.1 Flash', aspect: '16:9', duration, count, frames: true }
+    const cfg = { model: 'Omni 1.2 Flash', aspect: '16:9', duration, count, frames: true }
     try { await c.ensureVideoConfigRebuilt(cfg) } catch { await sleep(1500); await c.ensureVideoConfigRebuilt(cfg) }
     try { await c.fillFrameSlotRebuilt('Start', basename(staged)) }
     catch (err) {

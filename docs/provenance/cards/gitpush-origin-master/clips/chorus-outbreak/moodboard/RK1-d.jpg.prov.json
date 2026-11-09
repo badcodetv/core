@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/RK1-d.jpg",
+ "made": "2026-11-09T17:49:40.042Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Over the slate roofs of a British terraced street at night, a giant steel dock crane is caught mid-stride: its four legs now bend at huge riveted knee joints like a heron's, one leg lifted high and stepping over a row of houses, the long boom held out level like a neck, a red lamp at its tip. Behind it three more do the same in step. Chimneys and a lit lamp post in the foreground, a few people running away down the street. Shot on 35mm film at night in Britain, grain visible, true blacks, no flare or glow, widescreen. Nothing legible: no signage, plates or lettering.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "349bf6f1-f3f8-47ea-9c12-4b8b0c8f432f"
+}

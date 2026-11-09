@@ -1,23 +1,42 @@
 {
  "about": "Kai's notes on the scene A (kill bots) timeline page https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 19,
+ "round": 21,
  "plan": [
   {
-   "h": "Round 19: your round 18 notes",
+   "h": "Round 21: your round 20 notes",
    "items": [
-    "The argument is back at natural speed: no sped-up picture anywhere. Each shot re-fitted on the tracked mouth: Derek's \"I'm really sorry, love\" and Sandra's \"Yeah, the world ended...\" are NEW talking clips from the same stills; \"and you still can't put a seat down\" and \"But the world ended, Sandra!\" are re-voiced to their clips; the lavatory keeps its clip and voice (it already fitted best).",
-    "\"You know\" is cut from Maddie's presentation line (0.5 s).",
-    "The boss's \"No, thank you. I will handle it.\" is gone: \"making fun of my simulations again?\" plays over the far race and cuts straight to the wide approach. No cut back to her hatch.",
-    "The scene is 3:06 (was 3:08).",
-    "You decide: Derek's first line is the tightest fit (his clip mouths it in about a second; the fastest voice is 1.4 s), so a little of \"sorry, love\" runs past his lips. If it shows, a cutaway or another clip is the next step."
+    "The cat line ends 'It just isn't decided yet.' and stops; the flash and collapse land on 'yet'. Hologram re-rendered (73.6 s).",
+    "Sandra (your pick, 're-edit around her'): back to round 19's clips, no LatentSync. Her face stays only on 'Derek. You've left the seat up again.' (it measured in sync); 'and you still can't put a seat down' and 'Yeah, the world ended. Doesn't mean you get to stop having manners.' play over Derek taking it, his mouth shut (tracked frame by frame).",
+    "Everything else as round 20."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Derek's 'But the world ended, Sandra!' still lands a quarter-second before his mouth by measurement. Leave it, or cut it onto Sandra's back too?",
+    "Still open from round 20: the hologram end pose (matrix at the right edge) and the time machine's pull-back; your old music note (Chopin, not Beethoven's 5th)."
    ]
   }
  ],
  "replies": {
-  "at742": "Cut: \"He made me learn a little presentation, in case any of you ever came back.\" (0.5 s out, her own pause kept). Everything after it moves up with it.",
-  "at3777": "Yes. No speed-up any more: every shot of the row plays at natural speed. This one (Sandra, \"Yeah, the world ended...\") is a new talking clip from the same still, with her own voice fitted to its mouth; Derek's \"I'm really sorry, love\" is new too, and his \"But the world ended\" and her \"and you still can't put a seat down\" are re-voiced to their clips. Each was picked by measuring the voice against the tracked mouth, then checked by eye frame by frame.",
-  "at4194": "Gone. The call is her report and \"making fun of my simulations again?\", then straight into the wide approach.",
-  "at4230": "Removed. The far race runs under \"simulations again\" right up to the cut to the wide approach."
+  "at971": "Done: 'This is your life, see' is cut. The hologram opens straight on the first bead, 07:42 toast, and her first line is 'You humans go through life making decisions. For example: toast, not cereal.', said quickly.",
+  "at614": "Done: after 'He misses you something rotten, you know.' the bridge is now 'We didn't realise how important you were. Look, please let me show you.'",
+  "at839": "Done: the presentation is about 74 s against 1:43 before, and the whole scene is 2:34 (was 3:06). Every section's meaning kept.",
+  "at1167": "Done, via the dialogue page: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided till a consciousness looks.' then 'So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse.' Front-loaded, regret not a joke.",
+  "at1463": "Done: 'Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape.' One coherent bit, both jokes kept.",
+  "at1944": "Done: while the cloud is up the camera dives into it three times, to different points (on the scientist, the bloke and 'alive and dead'), then the collapse.",
+  "at2070": "Done: a quick ping of light from the ball on 'looks' (under half a second), then the cloud collapses, then the widening to the river.",
+  "at2190": "Done: 'And that's just you' re-voiced deadpan. The river is now everyone's golden beads in a round bundle (a cylinder seen side-on), our string on its edge.",
+  "at2407": "Done: in the river the camera starts further back and jumps closer to the front; decisions come faster, and every lane reaches the cut-off exactly as the camera leaves.",
+  "at2511": "Done: leaving the cloud is one smooth move straight to the side view where every lane stops, landing on 'away'. No in-between stops.",
+  "at2692": "Partly: the matrix is higher (2.2 units) and the time machine zooms back out to the wide shot. The end pose is wider than your frame so the matrix fits; it now sits at the right edge, not centred. Your eye needed (You decide).",
+  "at3030": "Done: 'He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.'",
+  "at3154": "Done, merged into one: 'But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it.'",
+  "at3436": "Round 21: LatentSync didn't hold up on Sandra, so it's out. Re-edited around her instead: her face only on her first line, then her other two lines over Derek taking it (his mouth measured shut).",
+  "at3874": "Done: the bot tearing past Maddie (and her wobble) is cut. From the row straight to the tanks on the motorway. We see the pack twice: the motorway, then racing across the field to the bunker. No kill mode or sustain mode screens.",
+  "at4079": "Done: her new line, voiced: 'Boss, can you see those bots? In kill mode. They must have detected an organic signal.'",
+  "at4171": "Done: the motorway now comes before her call, and during the boss's reply we stay on Maddie (the shot ping-pongs past its 8 s; she hardly moves).",
+  "at1403": "Done: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet.' and nothing after it. Re-voiced; the ping and collapse moved onto 'yet'; everything after it 0.6 s earlier."
  },
  "kai_round1": {
   "at3521": {
@@ -444,5 +463,84 @@
   "at4230": "We should not have this cut at all",
   "at742": "we should loose Maddie saying \"you know\" here - it's the second time after the previous sentence",
   "at3777": "This clip looks speeded up - are we able to re-render it to get better lip synching?\n\nI think the same might be true of the entire argument - it's a pivotal scene and we really need the lip synching to work"
+ },
+ "plan_round19": [
+  {
+   "h": "Round 19: your round 18 notes",
+   "items": [
+    "The argument is back at natural speed: no sped-up picture anywhere. Each shot re-fitted on the tracked mouth: Derek's \"I'm really sorry, love\" and Sandra's \"Yeah, the world ended...\" are NEW talking clips from the same stills; \"and you still can't put a seat down\" and \"But the world ended, Sandra!\" are re-voiced to their clips; the lavatory keeps its clip and voice (it already fitted best).",
+    "\"You know\" is cut from Maddie's presentation line (0.5 s).",
+    "The boss's \"No, thank you. I will handle it.\" is gone: \"making fun of my simulations again?\" plays over the far race and cuts straight to the wide approach. No cut back to her hatch.",
+    "The scene is 3:06 (was 3:08).",
+    "You decide: Derek's first line is the tightest fit (his clip mouths it in about a second; the fastest voice is 1.4 s), so a little of \"sorry, love\" runs past his lips. If it shows, a cutaway or another clip is the next step."
+   ]
+  }
+ ],
+ "replies_round19": {
+  "at742": "Cut: \"He made me learn a little presentation, in case any of you ever came back.\" (0.5 s out, her own pause kept). Everything after it moves up with it.",
+  "at3777": "Yes. No speed-up any more: every shot of the row plays at natural speed. This one (Sandra, \"Yeah, the world ended...\") is a new talking clip from the same still, with her own voice fitted to its mouth; Derek's \"I'm really sorry, love\" is new too, and his \"But the world ended\" and her \"and you still can't put a seat down\" are re-voiced to their clips. Each was picked by measuring the voice against the tracked mouth, then checked by eye frame by frame.",
+  "at4194": "Gone. The call is her report and \"making fun of my simulations again?\", then straight into the wide approach.",
+  "at4230": "Removed. The far race runs under \"simulations again\" right up to the cut to the wide approach."
+ },
+ "kai_round19": {
+  "at3154": "Okay, so my previous comment is now this sentence, so I think we need to merge the previous sentence with this one. I think they're saying the same thing and find a better, more kind of interesting, more direct way of saying it. It's like, we can't do it though, because you lot aren't here. You were the conscious ones, that's the whole point, as a kind of sassy conclusion.",
+  "at2407": "This is excellent. This part where we go in the middle, obviously we've just described making the whole thing a circle. I do wonder if it would be interesting to be closer to the front and somehow make the pace of decisions faster in this section without running out of road. So, you know, there's some key variables to adjust there. So maybe we start further back and then we can jump in further to the front and then the pace of decision making can be faster. Does that make sense?",
+  "at971": "So I think we need to immediately start with toast not cereal at 7.42 as the first thing we see. So at the moment when we start off with a black screen we should start off with the time stamp at which I'm leaving this note is where this scene should start. The previous text, this is your life C, cut that. Toast not cereal. Say you humans go through life making decisions. Toast not cereal. That's the line to say here as the first line. So it's pretty quickly into the presentation now right it's like the first thing we see is the first node with 7.42. You humans go through life making decisions. For example toast not cereal and let's say it quite quickly and then move on.",
+  "at3874": "I don't think we need this scene, and the way that Maddy wobbles, I've never liked that much anyway. So I think we should just cut immediately to the motorway with the tanks running down the motorway. Then we only see the tanks twice. The first is them running down the motorway. Then we see Maddy calling the boss. Then we see them chasing across the field, almost at the bunker, and Maddy says, Quick boss, hurry up, and then we see them turning around. And we don't see kill mode or sustain mode at all, because that's for later.",
+  "at4171": "So this scene is what should have happened before we see Maddy ring the boss. And when the boss says this line, we should still be looking at Maddy.",
+  "at4079": "So just to be clear there would be we would have seen the them running down the motorway just before this scene And Maddy should say boss. Can you see those bots? In kill mode, it's not I've just seen Because I think we don't have the kill bot right next to Maddy. That's the point So we just need to adjust this particular line. So it's like boss. Can you see those bots in kill mode? They must have detected an organic signal is what this needs to say",
+  "at2070": "So yeah, this would be the point that you'd get like a flash before all the rest of them appear. And how we, what I mean is, this is just at the end of only your consciousness can, and we've collapsed the decision cloud. So I'd want to see a flash of light, almost from that ball that eventually fills the whole screen, maybe if it's really ambitious, I don't know, like a, or at least a very quick glow, like a quick light ping, like ping rather than the light switches on. It's like a quick flash of light. This is the decision that collapsed the cloud as a visual. And then obviously we're going to go into then the widening to the river.",
+  "at3436": "So the lip syncing here is really bad. I think it would be really good if we could just recut this a few times and spend a lot of effort on the lip syncing because this scene is integral and it's very, very important. So how can we please get this argument seen where the lip syncing is acceptable? Are we doing it wrong by even trying to lip sync? The problem with the Google Flow video model is when we try to use it to generate character voice, it always sounds very artificial and not very fun. So, yeah, I think what would be great is if we could, I mean, I really like the way it is, it's just the lip syncing is really off. Let's say that. It's not that we need to recut the scene at all. I really like the character expressions. I really like the voices. It's just the synchronisation between them is off just generally. And in some cases, it's really bad. In some cases, it's okay. But the whole sequence of Sandra and Derek arguing here, we need to do a much better job of lip syncing. So are you able to spend effort and tokens? In which case, please proceed and make a plan for how we can hone in on this particular part, having good lip syncing. Thank you.",
+  "at1167": "so we've already covered the decisions and I don't think we should try and make a joke here I think I think here is where we need to show huge regret because we you know let's just tell them up front it turned out that it's not a multiverse it's a story verse and you humans your humans consciousness was driving decisions the whole time we need to you know but how do we explain that in a non overwhelming way is a difficult challenge so I think we've already covered the idea of you going through the day in decisions you know it as it turned you know okay I've got an idea I think we need to do a bit of work on this so I'm planting a flag in the form of this feedback for us to do a bit of a back-and-forth on a script concept but Schrodinger's cat was actually a joke about the ridiculousness of the idea that the cat is both alive and dead and I think that might be a really good bridge right now to say so it's not it's both alive and dead at the same time it's that it's not decided yet because that's the crucial concept and the point of that being the crucial concept is that as consciousness experiences the world it collapses the wave function and has some input to that feedback loop which is the mechanism that people experience in the form of having some control over their destiny and putting positive energy into situations in order to get a good outcome the sort of unexplainable nature of the link between human energy and material outcomes over various time dimensions is the kind of whole point of the story verse it's like you have a malleable stage humans that you can tell your story upon the whole point is that you make this interesting somehow so how can we really I think I think it might be a fun thing because Schrodinger's cat is very common so it might be a fun thing to go did you know that actually Schrodinger used his cat as a joke and most people don't know this or we need a way of like challenging it's not alive and dead at the same time is that it's not decided yet like a computer game with render only when you look it's like the Truman Show for everyone let's say that it's like the Truman Show but for everyone all at the same time I think maybe that's the key thing that we do say and we do this early so I'm leaving this all this feedback right here because this is the crucial moment of the whole script which is how we say you know Schrodinger's cat was a joke it's not decided yet you get some input into how it turns out it's a story verse not a multiverse and we we front load the whole thing",
+  "at614": "So, I think here we need, I think we need to land a bridge into the presentation much better, so, up until now, he misses you something rotten you know, although he wouldn't admit it, we've all realised how important you were to the world, please let me explain. And so, as opposed to this right now, I think it's more like, you know, we didn't realise how important you were, look, let me explain to you what I mean.",
+  "at2511": "And at the point that the camera starts to animate out of the middle of the decision cloud, it should go immediately to the place in one movement where it's looking sideways exactly at the cutoff point. At the moment there's a couple of stages that it goes through until it gets to there. So I don't want to mess around. As soon as we decide to come out of that decision cloud, we should have got to the end. All of the lanes should have got to the cutoff point because our decision cloud animation code will have worked out the pace at which each decision can be made so we don't run out of space, but right at the end we all end up at the end. The camera cuts now out of the cloud to start looking sideways where every decision just stopped. And it's this idea that that's where humans went away. But we need to do this transition now in one smooth movement rather than the couple of stages that it currently does it with.",
+  "at2190": "I think then the way she says, and that's just you, she just needs to say, and that's just you. She says it currently too excitedly. I think she should say, and that's just you, far more deadpan. And she should say, you know, and that's just you, everyone's doing it all at once, but not, and that's just you in this sort of excited way. It should be much more deadpan than that. Second bit of feedback about this whole section is I think perhaps the river should be a circle. At the moment, it's like an elongated collection of strands, whereas if we were distributing them randomly within a circle, that would be, I think, visually much more pleasing. Thank you.",
+  "at839": "I just want to plant a quick note at this timeline to say this entire presentation at the moment looks a little long, and we really need to value the viewer's patience and for them not to decide, oh, this is just turning into some boring physics lecture and run away. So I would challenge you to be brutal with the edit without losing the crucial meaning of any of the sections, please. Thank you.",
+  "at3030": "I think this is where we need to say, but of course, having worked out that the universe runs on consciousness, the time machine also runs on consciousness, so it's not, you know, so we can't run it, because all the humans are gone.",
+  "at2692": "And just to refer to the previous comment, this right here would be the example of the end point from, this would be the end. At the moment, there's a couple of tween points in between. So this would be the end of the animation. As soon as we start animating from out from the middle of the decision cloud, we just animate straight to here. The second thing to say would be, obviously, the decision cloud would be a circle. I love the empty string and the decision, the probability matrix that's animated at the end of it is brilliant. I think it could be slightly higher up and that when we start to draw the time machine back, we can then zoom back out to this position. So there's a bit of feedback on that.",
+  "at1463": "So, I think, yeah, the, I think we need the previous line, OK, now I've just rewound onto this line. Every time there's loads of others you could have picked, I think we just need, after, you know, we've clearly made a big decision in the lines before, so I think that replaces this, and also some of your lot, I reckon they have them somewhere. I think we can get the Rick and Morty joke and the Doctor Strange joke in there though. So, what I'm saying is, please can we merge this section and the previous section with the previous change into a coherent script.",
+  "at1944": "I wonder if we could do some really clever camera work right here because if the idea is like we went to this one, or this one, or this one real quick, and we did it really quickly, I wonder if this period of time where we're just staring at all of the possibilities of each decision, because this text is quite long. So I think we could go in and out in and out quite quickly, maybe two or three times. Also, so again, everything up until now, we need to kind of rethink how we're going to pace this script. I think we might be able to kind of say everything quicker. It is obviously the crucial thing to say consciousness, it's your consciousness that allowed you to decide and commit might be how we talk about that. So we need to work with the words as well. But yeah, I think during this time and before, we should have gone in and out, in and out, in and out, like three times to different points in that decision cloud, just as a camera animation to make the point that like, we could go here or we could go there or we could go here, zoom back out, and then we collapse into where we actually decided, i.e. we collapsed the wave function. And it might be worth thinking about some kind of visual effect that the moment of collapse like a quick flash of light around the commit ball or I don't know, like, what do you think about that? But yeah, the script as well, obviously, I'm marking various things in this comment right here. Thank you."
+ },
+ "plan_round20": [
+  {
+   "h": "Round 20: your round 19 notes (2:34, was 3:06)",
+   "items": [
+    "Maddie's presentation is dialogue 1D, picked on the dialogue page (https://claude.ai/artifact/2cJoJw6UMpSVMvEHKGr1zh): cold open on toast, Schrödinger's joke as the fulcrum, 'you are writing it, a storyverse', the regret and the time machine in your words. Voiced fresh; 'and that's just you' deadpan.",
+    "The hologram re-rendered to it: a round cloud, three quick dives into it, a ping of light on 'looks', everyone's beads as a round bundle with our string on its edge, faster decisions, one smooth move out to the side view where the lanes stop, the matrix higher.",
+    "The argument: every mouth redrawn to the voices with LatentSync (a local tool that repaints only the lower face). Faces and voices unchanged.",
+    "The ending: motorway tanks, Maddie's call on her the whole time (new line), the wide approach with 'Quick, boss, hurry up!', the turn-away, 'That was close.' No bot tearing past her, no wobble, no KILL MODE / STAND DOWN."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "The redrawn mouths: keep, or back to round 19's? (side by side: D:\\badcode-videos\\gitpush-origin-master\\clips\\second-half\\video\\latentsync-r19\\row-side-by-side.mp4)",
+    "The hologram's end pose: the matrix now sits at the right edge, not centred; and the camera pulls back to the wide shot when the time machine draws. Right reading of your note?",
+    "Your old music note (Chopin, not Beethoven's 5th; an easy way to pick music per scene) is still open: next round, or park it?"
+   ]
+  }
+ ],
+ "replies_round20": {
+  "at971": "Done: 'This is your life, see' is cut. The hologram opens straight on the first bead, 07:42 toast, and her first line is 'You humans go through life making decisions. For example: toast, not cereal.', said quickly.",
+  "at614": "Done: after 'He misses you something rotten, you know.' the bridge is now 'We didn't realise how important you were. Look, please let me show you.'",
+  "at839": "Done: the presentation is about 74 s against 1:43 before, and the whole scene is 2:34 (was 3:06). Every section's meaning kept.",
+  "at1167": "Done, via the dialogue page: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided till a consciousness looks.' then 'So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse.' Front-loaded, regret not a joke.",
+  "at1463": "Done: 'Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape.' One coherent bit, both jokes kept.",
+  "at1944": "Done: while the cloud is up the camera dives into it three times, to different points (on the scientist, the bloke and 'alive and dead'), then the collapse.",
+  "at2070": "Done: a quick ping of light from the ball on 'looks' (under half a second), then the cloud collapses, then the widening to the river.",
+  "at2190": "Done: 'And that's just you' re-voiced deadpan. The river is now everyone's golden beads in a round bundle (a cylinder seen side-on), our string on its edge.",
+  "at2407": "Done: in the river the camera starts further back and jumps closer to the front; decisions come faster, and every lane reaches the cut-off exactly as the camera leaves.",
+  "at2511": "Done: leaving the cloud is one smooth move straight to the side view where every lane stops, landing on 'away'. No in-between stops.",
+  "at2692": "Partly: the matrix is higher (2.2 units) and the time machine zooms back out to the wide shot. The end pose is wider than your frame so the matrix fits; it now sits at the right edge, not centred. Your eye needed (You decide).",
+  "at3030": "Done: 'He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.'",
+  "at3154": "Done, merged into one: 'But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it.'",
+  "at3436": "Done a new way: the five shots' mouths are redrawn to the voices with LatentSync 1.6 (open source, runs on your GPU, repaints only the lower face; expressions and voices untouched). Re-timing could never fix it: Flow drew the mouths about 1.25x faster than the voices. Watch the side by side and say keep or back (You decide).",
+  "at3874": "Done: the bot tearing past Maddie (and her wobble) is cut. From the row straight to the tanks on the motorway. We see the pack twice: the motorway, then racing across the field to the bunker. No kill mode or sustain mode screens.",
+  "at4079": "Done: her new line, voiced: 'Boss, can you see those bots? In kill mode. They must have detected an organic signal.'",
+  "at4171": "Done: the motorway now comes before her call, and during the boss's reply we stay on Maddie (the shot ping-pongs past its 8 s; she hardly moves)."
+ },
+ "kai_round20": {
+  "at1403": "I think here we say it just isn't decided yet and leave it there.",
+  "chat": "the lip-sync's not so great on Sandra... might be better to just try and recut it altogether"
  }
 }

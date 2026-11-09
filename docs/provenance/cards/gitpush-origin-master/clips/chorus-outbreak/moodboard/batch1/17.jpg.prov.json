@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/17.jpg",
+ "made": "2026-11-09T17:47:34.308Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "The vast container port of Rotterdam at night seen across the water: dozens of ship-to-shore container gantry cranes, the giant steel A-frame dock cranes with a long boom, standing on four splayed steel legs, a single red aviation lamp at the top of each have stood up off their rails and are wading out into the harbour, the quays dark, fires on the horizon. Night, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no signs, logos or screen text.",
+ "source_id": "c7932260-17a6-47cd-af47-931b698bf11d"
+}

@@ -104,7 +104,7 @@ disorientating and cinematic."*
   when the costume matters (Barry's hi-vis).
 - **Talking:** full narration with several narrator voices, **no lip-sync** (15 Oct 2026 call). Mouths on
   screen are avoided.
-- **Engines:** stills Nano Banana 2, 16:9; clips Omni 1.1 Flash, 720p, 8 s, camera locked.
+- **Engines:** stills Nano Banana 2, 16:9; clips Omni 1.2 Flash, 720p, 8 s, camera locked (→ Omni 1.2 Flash from 2026-11-09: Fast, Quality and Omni 1.1 leave Flow on 5 Dec; Kai saw no difference in the A/B).
 - **Flow video is 16:9 or 9:16 only**; a 2.39 crop happens in Premiere.
 
 ## Anchors

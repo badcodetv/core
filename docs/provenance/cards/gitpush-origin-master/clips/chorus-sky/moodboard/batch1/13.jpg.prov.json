@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/batch1/13.jpg",
+ "made": "2026-11-09T14:32:48.109Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "A huge city skyline at night seen from a rooftop, a few people standing on the roof in silhouette looking up: thousands of tiny red points of light hanging motionless in a perfectly even grid across the whole sky, like a constellation that should not be there. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, landscape orientation. 16:9 frame from a fictional near-future film, no captions, logos, brand names, lettering or readable on-screen text; every screen and billboard shows only abstract colour.",
+ "source_id": "5f9617d6-1149-4cb8-8755-0a9d898509a5"
+}

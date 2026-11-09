@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/02.jpg",
+ "made": "2026-11-09T17:47:33.911Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Through a passenger's side window at night, long lens: the next three lanes of a jammed British motorway stacked tight, families in their cars lit by dashboard glow, a man standing on the hard shoulder staring back the way they came, a far-off orange glow under the clouds behind him. Rain beads on the glass in the foreground. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "8d2fe3e4-2efb-4080-8862-d55439478513"
+}

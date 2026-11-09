@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-r19/7-2-ls24.mp4",
+ "made": "2026-11-06T20:05:57+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "latentsync",
+ "tool": "scripts/lipsync/redraw.py",
+ "model": "LatentSync 1.6 (a229c39)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-r19/7-2-in.mp4",
+ "why": "Kai at3436: redraw the argument's mouths to the round 19 voices",
+ "inputs": {
+  "voice": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/latentsync-r19/7-2-voice.wav"
+ },
+ "settings": {
+  "steps": "20",
+  "guidance": "1.5"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/GR3-b.jpg",
+ "made": "2026-11-06T19:23:18.434Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The people walking the hard shoulder in this frame, filmed again from the top of the grass embankment: a wide view of the jammed motorway, and a thin line of adults with luggage walking along its edge in the headlights, small against the dark fields. Same night, same grain.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/GR1-c-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/GR1-c-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "bc839ece-f3a5-438f-9975-b105904e412f"
+}

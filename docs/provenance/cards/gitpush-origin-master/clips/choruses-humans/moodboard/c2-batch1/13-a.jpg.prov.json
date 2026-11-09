@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/13-a.jpg",
+ "made": "2026-11-06T18:57:00.702Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night, a crowd of ordinary people on a concrete motorway footbridge, all stopped and looking up at the sky, their faces faintly lit by cold moving lights out of frame above them, a jammed motorway glowing red below. 35mm documentary photograph, grain, cold blue light on faces, awe and fear, no readable writing anywhere.",
+ "source_id": "a676e36a-599c-461c-9f57-4139568fff4e"
+}

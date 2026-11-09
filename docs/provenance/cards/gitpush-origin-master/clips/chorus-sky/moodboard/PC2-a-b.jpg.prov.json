@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/PC2-a-b.jpg",
+ "made": "2026-11-09T17:00:35.785Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same photograph, same umbrellas, crowd, black cab and red buses, same rainy night. One change: the huge curved screen above the fountain, now a blurry wash, shows a crisp bright invented advert across its panels with no logos and no lettering: a glossy orange fizzy drink splashing on one panel, a silver phone on deep blue on another, a pair of white trainers on hot pink on a third. Sharp, saturated, glowing onto the wet road. Nothing else moves or changes.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/PC1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/PC1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "eaced3bb-11ce-4619-a08f-4aac913121f9"
+}

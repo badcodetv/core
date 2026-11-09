@@ -54,10 +54,10 @@
   "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d17/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d17/preview.mp4",
-  "round": "d17",
-  "what": "round 19 (Kai's r18 notes): the row at natural speed, lips re-fitted (2 new Flow talking clips, 2 re-voices); 'you know' cut; boss line 3 cut; no V3 cut-back; 3:06"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d19/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d19/preview.mp4",
+  "round": "d19",
+  "what": "round 21 (Kai r20): Sandra re-edited onto Derek, round 19 clips; d03 ends on 'yet'; 2:34"
  },
  "premiere": {
   "rough1": {
@@ -333,9 +333,9 @@
     "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
    ],
    "check": {
-    "at": "2026-11-05T21:51",
-    "state": "in sync",
-    "why": ""
+    "at": "2026-11-09T19:14",
+    "state": "edited in Pr",
+    "why": "116 effects added"
    }
   }
  },
@@ -443,7 +443,7 @@
   "round": 6
  },
  "video": {
-  "model": "Omni 1.1 Flash",
+  "model": "Omni 1.2 Flash",
   "aspect": "16:9",
   "mode": "Frames",
   "duration": 8

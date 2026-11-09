@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-14-sandra-r14c-tight.wav",
+ "made": "2026-11-09T19:05:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/ending/tighten.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-14-sandra-r14c.wav",
+ "why": "D round 14: her hesitation held to 0.9 s; words untouched"
+}

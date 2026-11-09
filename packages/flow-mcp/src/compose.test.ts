@@ -90,6 +90,10 @@ describe('videoModelAlreadySelected', () => {
     // Renamed "Omni 1.1 Flash" in the 2026-09-13 rebuild; the old name still resolves to it.
     expect(videoModelAlreadySelected('Omni 1.1 Flasharrow_drop_down', 'Omni Flash')).toBe(true)
     expect(videoModelAlreadySelected('Omni 1.1 Flash arrow_drop_down', 'Omni 1.1 Flash')).toBe(true)
+    // 2026-11-09: Flow tags a retiring model "Leaving 5 Dec"; 1.2 is a different model.
+    expect(videoModelAlreadySelected('Omni 1.1 Flash Leaving 5 Decarrow_drop_down', 'Omni 1.1 Flash')).toBe(true)
+    expect(videoModelAlreadySelected('Omni 1.2 Flasharrow_drop_down', 'Omni 1.2 Flash')).toBe(true)
+    expect(videoModelAlreadySelected('Omni 1.2 Flasharrow_drop_down', 'Omni 1.1 Flash')).toBe(false)
     expect(videoModelAlreadySelected('Veo 3.1 - Qualityarrow_drop_down', 'Veo 3.1 - Quality')).toBe(true)
   })
 

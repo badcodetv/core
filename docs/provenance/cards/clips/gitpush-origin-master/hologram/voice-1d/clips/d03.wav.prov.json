@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1d/clips/d03.wav",
+ "made": "2026-11-06T21:07:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1d/split.py (faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1d/take-C2.wav",
+ "why": "hologram 1D d03, Kai r20 at1403: ends 'It just isn't decided yet.'"
+}

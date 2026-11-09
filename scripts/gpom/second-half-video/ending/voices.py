@@ -88,20 +88,28 @@ STYLE_BEAT = {
     ('D', 'd3', 'derek'): ("Style: no anger left in him at all; a big, blunt man made small and quiet by what he is "
                            "looking at, gentle and frightened, close to the microphone.",
                            "Pace: slow, three soft words with air between them; never loud, never quick."),
-    ('D', 'd3', 'maddie'): ("Style: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, "
+    ('D', 'd3', 'maddie'): ("Style: no jokes, no cheek, no gossip, never sarcastic or condescending: tonight she is the kindest person in the room, "
                             "telling people she loves the hardest truth there is; warm, low and intimate, voice "
                             "thick with feeling but steady.",
                             "Pace: slow and careful; a real pause after the first sentence; the second sentence "
                             "softer and slower still, letting it land."),
+    # D round 13 (Kai, 9 Nov, dialogue 1I): her "Thank you." as the hundred sit; as kind as at the wafer.
+    ('D', 'd6', 'maddie'): ("Style: no jokes, no cheek: the kindest person in the room, moved almost past speaking, "
+                            "watching people she loves choose to die for everyone else; very soft and close.",
+                            "Pace: two quiet words, slow, with air before them."),
+    # D round 7 (Kai, 6 Nov, dialogue 1F): Sandra's one question at the wafer is not a jab.
+    ('D', 'd3', 'sandra'): ("Style: no sarcasm, no jab: for once she is small and frightened, asking the one thing she "
+                            "needs to know; quiet and close to the microphone.",
+                            "Pace: three soft words, unhurried."),
     # Reel round 1 (Kai at2108/at2566, 23 Oct): her new line is NOT comforting. Stern, grave, as if her life depends on it.
     ('D', 'd3', 'lady'): ("Style: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is "
                           "choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every "
                           "word meant, steel under the age in her voice; no tears, no smile.",
                           # r6 (23 Oct) read it "measured and heavy": 12.4 s of speech, too long for one lip-sync clip.
                           # r7: urgent, at a normal speaking pace; the weight is in the voice, not the tempo.
-                          "Pace: urgent and steady, at a normal speaking pace, never slow or drawn out; one quick breath "
-                          "after 'Look,'; no long pauses; the last clause, 'I want to take that chance', firm and final, "
-                          "falling at the end."),
+                          # D round 13 (9 Nov): her only line is now "And afterwards?"; the old pace quoted "Look," and
+                          # "I want to take that chance", which Gemini can speak aloud.
+                          "Pace: two quiet words, unhurried, the question falling at the end; no long pauses."),
     ('E', 'e1', 'maddie'): ("Style: alone now, no one to be cheeky for; small, soft and a little lost, the habit of "
                             "being cheerful still there underneath.",
                             "Pace: slow and quiet, four soft words, no hurry; trailing off at the end."),
@@ -109,6 +117,13 @@ STYLE_BEAT = {
 # A beat whose take lost the speaker's accent (reel round 1, Kai at1581: d1 "doesn't sound like Maddie, it's not the
 # West Country accent we heard before"). The cast profile's Accent line is replaced for that beat only.
 ACCENT_BEAT = {
+    # D round 7: the wafer is now six Maddie lines; keep every one in her own accent.
+    ('D', 'd3', 'maddie'): ("Accent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds "
+                            "everywhere else in the film: the warm rolled West Country burr, round open vowels, the "
+                            "Bristolian lilt. Never American, never Received Pronunciation, never neutral."),
+    ('D', 'd6', 'maddie'): ("Accent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds "
+                            "everywhere else in the film: the warm rolled West Country burr, round open vowels, the "
+                            "Bristolian lilt. Never American, never Received Pronunciation, never neutral."),
     ('D', 'd1', 'maddie'): ("Accent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds "
                             "everywhere else in the film: the warm rolled West Country burr, round open vowels, the "
                             "Bristolian lilt; being polite makes the accent broader, never posher. Never American, never "
@@ -122,7 +137,11 @@ SCRUB = [(", a pause before 'Again.'", '.'), (" ('Kettle's on')", '')]
 # (word, only for this speaker or None, note)
 PRON = [('seat', None, "the word is 'seat', as in the toilet seat: a long, clear 'ee'; never 'sit'"),
         # Bristol drops the h: whisper heard "Mind out" (= "watch out") on 3 of 4 takes of "Mind how you go".
-        ('how', 'maddie', "say 'how' with a clear, soft h, so it can never be heard as 'out'")]
+        ('how', 'maddie', "say 'how' with a clear, soft h, so it can never be heard as 'out'"),
+        # D round 7: whisper heard "you'll be there with you" for "he'll be there with you" on both takes (h dropped).
+        ("he'll", 'maddie', "say 'he'll' with a clear, breathy h and a long 'ee' (HEE-ul): it means the boss, so it must "
+                            "never be heard as 'you'll' or 'ill'; lean on it a little"),
+        ('he', 'derek', "the word is 'he', the pronoun: a clear h and a long, rising 'ee', as in 'HE?'; never 'hey'")]
 RETAKES = ['ab', 'cd', 'ef']
 SPLIT_WORD = 'you'  # scene.json D16 `split`: cut at the gap before "you"
 SPLIT_MIN = 0.2  # seconds of silence a split take must have between its halves  # first pair, then up to two more pairs while no take is heard correctly

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/GR2-b.jpg",
+ "made": "2026-11-06T19:22:02.657Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Find a new angle on this motorway jam at night; keep the red river of tail-lights and the empty other side. Camera now much higher and wider, as if from a hill above the M4: the jam runs for miles across dark countryside towards the horizon, the town's orange glow behind.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/GR1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/GR1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "05ed878d-e013-4f26-9d05-dc15ab402e0b"
+}

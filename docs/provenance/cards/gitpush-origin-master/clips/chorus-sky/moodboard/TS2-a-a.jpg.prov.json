@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/TS2-a-a.jpg",
+ "made": "2026-11-09T16:59:32.980Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same photograph, same crowd and cabs, same buildings and grey weather. The one change: the big electronic screens that are currently blank swirls now each show a bright invented advert with no logos and no lettering. One shows an ice-cold drink can splashing, one a shiny phone on an orange backdrop, one a red sports car, one trainers on electric blue, one a gold perfume bottle, one a burger in close-up. Saturated, punchy, glowing colours spilling onto the wet pavement. Nothing else moves or changes.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/TS1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/TS1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1ed0b7d2-900e-4b31-a89a-097d272cee89"
+}

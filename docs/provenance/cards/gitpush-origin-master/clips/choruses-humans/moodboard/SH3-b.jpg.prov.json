@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/SH3-b.jpg",
+ "made": "2026-11-06T19:20:29.219Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Cover this petrol station scene from a new position, keeping the night, the canopy light and the queue as they are. Camera now close on one pump hooded in a black bin bag taped at the neck, a driver standing beside it with his arms folded, staring at it.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/SH1-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/SH1-b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "99fc6070-f0ad-409a-a8f2-1c0135b28189"
+}

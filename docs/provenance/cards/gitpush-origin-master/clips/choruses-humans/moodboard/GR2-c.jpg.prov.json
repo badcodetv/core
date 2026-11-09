@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/GR2-c.jpg",
+ "made": "2026-11-06T19:22:21.273Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Find a new angle on this motorway jam at night from the same footbridge, turned around: now we face the oncoming headlights of the same jammed lanes crawling towards camera, a wall of white headlamps and wipers, the empty carriageway beside them.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/GR1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/GR1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "55f9d486-5de4-4ff3-80d3-1d6f8d8434a8"
+}

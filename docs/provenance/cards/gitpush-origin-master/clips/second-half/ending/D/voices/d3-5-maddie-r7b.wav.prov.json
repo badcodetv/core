@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-5-maddie-r7b.wav",
+ "made": "2026-11-06T19:40:55+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/ending/voices_fix.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "GPOM scene D round 7 (d3-5-maddie); dialogue draft 1F/2D, Kai 6 Nov",
+ "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: tender, with the faintest dry smile in it; 'Not much.' honest; 'Less than the last five years.' gentle gallows humour, a kindness, never a wisecrack.\nStyle: no jokes, no cheek, no gossip: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+ "inputs": {
+  "text": "Not much. Less than the last five years."
+ },
+ "settings": {
+  "voice": "Aoede"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/BD1-c-c.jpg",
+ "made": "2026-11-06T18:45:35.457Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of this woman in her worn coat, show her in a long queue inside a cold church hall food bank, trestle tables of tins and loaves at the far end, volunteers behind them, the queue made up of ordinary working people including men in office shirts, her face tired and patient. Documentary 35mm still, fine grain, cold daylight from high windows, muted cool palette, observational, wide landscape frame, no writing, signs or logos anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/BR3-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/BR3-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "430746a1-99a4-484b-bad7-8b0665826ded"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/GR3-a.jpg",
+ "made": "2026-11-06T19:23:08.088Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The people walking the hard shoulder in this frame, filmed again from in front of them: adults only, carrying suitcases and bags, walking towards camera, faces tired and lit from behind by the stationary headlights, long shadows reaching towards us. Same night, same road, same grain.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/GR1-c-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/GR1-c-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "b15bde34-8c91-4eee-b471-60c086f773ef"
+}

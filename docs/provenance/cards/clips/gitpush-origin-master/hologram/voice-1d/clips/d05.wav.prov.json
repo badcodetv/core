@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1d/clips/d05.wav",
+ "made": "2026-11-06T20:16:05+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1d/split.py (faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1d/take-E.wav",
+ "why": "hologram draft 1D (d05), Kai locked 1D 6 Nov",
+ "settings": {
+  "src_in": "0",
+  "src_out": "8.89"
+ }
+}

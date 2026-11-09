@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/16.jpg",
+ "made": "2026-11-09T17:47:34.295Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Side-on wide shot at night of a giant steel crane leg planting its foot down onto a concrete motorway flyover full of abandoned cars: the deck cracking, a ring of dust and debris blasting out sideways, car alarms flashing, the leg rising out of frame. Lit by burning cars and the flyover's last working lamps. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "7bd12bce-ddb2-4ae4-a48a-abd350698a68"
+}

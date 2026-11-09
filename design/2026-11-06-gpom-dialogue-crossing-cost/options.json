@@ -1,0 +1,1540 @@
+{
+ "page_title": "Crossing Dialogue Options",
+ "title": "GPOM crossing: the cost, said plainly",
+ "about": "This page offers three drafts for each of two lines of dialogue in the crossing scene (the wafer, then the goodbye), built from ten writers' versions and ranked harshly. Nothing in the film, the scripts or the voices has changed yet.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone dry",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Plain logic",
+   "title": "The logic said plainly",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first, the jokes carry the argument",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "Other side wins",
+   "title": "The other side wins",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-05-other-side-wins.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal, the listener gets there first",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "The chorus",
+   "title": "The chorus",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-07-chorus.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The place is the argument",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft: the leaflet, the bomb under the table, the kettle",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, plant backwards",
+   "file": "design/2026-11-06-gpom-dialogue-crossing-cost/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "The wafer: what it costs",
+   "where": "Scene D, beat d3, over the giant wafer then the empty chair pattern",
+   "scene": "second-half-d-crossing",
+   "target": "about 18-25 s",
+   "now_from": "round 11 cut, 12.5s to 46.2s",
+   "now": [
+    {
+     "who": "DEREK",
+     "line": "What is it?"
+    },
+    {
+     "who": "MADDIE",
+     "line": "It's the time machine. And it runs on you. Can you see how many chairs there are?"
+    },
+    {
+     "who": "DEREK",
+     "line": "Hundred."
+    },
+    {
+     "who": "MADDIE",
+     "line": "Yeah. It runs on all of you, all at once. It's a bit like dying. Mostly like nodding off in front of the telly."
+    },
+    {
+     "who": "DEREK",
+     "line": "And then?"
+    },
+    {
+     "who": "MADDIE",
+     "line": "You don't wake up. Not this you. But the you before it all went wrong will be there, with a chance to fix it. And he'll be there with you this time."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "The bill read back",
+     "length": "about 22 s",
+     "total": "~22 s",
+     "bet": "The humans finish Maddie's sentences, so the audience hears the cost from the people paying it and the bravery is how fast and flat they are.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. It can only send him. He's just data. But it has to run on something...",
+       "tags": [
+        "06",
+        "10",
+        "03"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Us.",
+       "tags": [
+        "06"
+       ],
+       "s": "0.6"
+      },
+      {
+       "who": "MADDIE",
+       "line": "All hundred of you, love. All at once.",
+       "tags": [
+        "06",
+        "all"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "DEREK",
+       "line": "And we don't wake up.",
+       "tags": [
+        "06"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "MADDIE",
+       "line": "No. Nodding off, mostly. Bit like dying, if I'm honest.",
+       "tags": [
+        "04",
+        "09",
+        "10"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Will it hurt?",
+       "tags": [
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not much. Less than the...",
+       "tags": [
+        "06"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Last five years. Yes, go on.",
+       "tags": [
+        "06"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "Right. Any chance of a brew first?",
+       "tags": [
+        "06",
+        "10"
+       ],
+       "s": "2.3"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Kettle's on.",
+       "tags": [
+        "06",
+        "04"
+       ],
+       "s": "0.9"
+      }
+     ],
+     "notes": [
+      "Protected line kept: 'What is it?' verbatim.",
+      "Trim if long: drop 'Yes, go on.' (0.5 s) or the last two lines (3.2 s) and end on Derek's brew.",
+      "Risk: the trailing 'run on something...' and 'Less than the...' need an unfinished-rise read from TTS, or Sandra talks over nothing; the timeline must cut her in tight.",
+      "Risk: 'Last five years' becomes Sandra's joke, not Maddie's; this departs from Kai's candidate by mouth only.",
+      "'Bit like dying' is spoken once, hedged, so it is said without being grotesque."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "Don't dress it up",
+     "length": "about 22 s",
+     "total": "~22 s",
+     "bet": "The humans refuse to be managed: Sandra forces the plain version out of Maddie, and Derek turns practical, so the resistance is real and Maddie concedes.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. It runs on you. All hundred of you, all at once.",
+       "tags": [
+        "05",
+        "04",
+        "01",
+        "all"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Don't dress it up, love. What does it do to us?",
+       "tags": [
+        "05"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "MADDIE",
+       "line": "He wanted me to be gentle. Straight, then. Feels like nodding off. Bit like dying. You won't wake up.",
+       "tags": [
+        "05"
+       ],
+       "s": "5.0"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Will it hurt?",
+       "tags": [
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not much. Less than the last five years, he says. He's never actually tried it, mind.",
+       "tags": [
+        "05",
+        "10",
+        "04"
+       ],
+       "s": "4.0"
+      },
+      {
+       "who": "DEREK",
+       "line": "And him?",
+       "tags": [
+        "07"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Only him. He's just data, see.",
+       "tags": [
+        "05",
+        "07",
+        "10"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "DEREK",
+       "line": "Tell him to get it right.",
+       "tags": [
+        "05"
+       ],
+       "s": "1.8"
+      }
+     ],
+     "notes": [
+      "Protected line kept: 'What is it?' verbatim.",
+      "Trim: drop 'mind' and 'see' if the West Country reads twee; cut 'He's never actually tried it' (1.4 s) to land near 20 s.",
+      "Risk: 'Tell him to get it right' must be gruff and practical, not a speech; if it reads as a moral, end on 'He's just data.'",
+      "Dropped from 05: 'The rest of us can't go', which puts Maddie among the left-behind and may be wrong in canon.",
+      "Risk: 'He wanted me to be gentle' makes the boss look soft; check against his scenes."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "Count the chairs",
+     "length": "about 23 s",
+     "total": "~23 s",
+     "bet": "The room makes the argument: a hundred chairs, no spare one for him, and a long hold on the empty grid does the grieving instead of words.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. Count the chairs, love.",
+       "tags": [
+        "08"
+       ],
+       "s": "2.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "...Hundred.",
+       "tags": [
+        "08"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It runs on you. All of you, all at once. That's what the chairs are for.",
+       "tags": [
+        "08",
+        "all"
+       ],
+       "s": "3.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "08",
+        "04",
+        "09"
+       ],
+       "s": "3.4"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Will it hurt?",
+       "tags": [
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not much. Less than the last five years.",
+       "tags": [
+        "02",
+        "08",
+        "01"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "DEREK",
+       "line": "And then?",
+       "tags": [
+        "02"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "You don't wake up. There's no chair for him, love. He's only data. He's the one going.",
+       "tags": [
+        "08",
+        "02"
+       ],
+       "s": "4.2"
+      },
+      {
+       "who": "(hold)",
+       "line": "[overhead chair grid; Maddie's beacon dims a touch]",
+       "tags": [
+        "02"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "DEREK",
+       "line": "Right.",
+       "tags": [
+        "08",
+        "01"
+       ],
+       "s": "1.0"
+      }
+     ],
+     "notes": [
+      "Protected line kept: 'What is it?' verbatim.",
+      "Needs about 3 s of held empty chair grid on 'Count the chairs'; if the shot cannot hold, cut the counting and Maddie's chairs line.",
+      "Derek's count is cut to a murmured '...Hundred' because TTS rarely voices counting well.",
+      "Risk: the joke is Maddie's and could sound cruel; keep her read soft. 'He's only data' sits before the final hold so it does not land cold.",
+      "Ends in silence, not tea: the mug is already planted in d4 and stops steaming in the crossing."
+     ]
+    },
+    {
+     "id": "1D",
+     "name": "Count the chairs, then the way back",
+     "length": "about 25 s",
+     "total": "~25 s",
+     "bet": "1C as picked, with Kai's ending: this version of them goes, but back then they are still themselves, and that is the viewer, now.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. Count the chairs, love.",
+       "tags": [
+        "08"
+       ],
+       "s": "2.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "...Hundred.",
+       "tags": [
+        "08"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It runs on you. All of you, all at once.",
+       "tags": [
+        "08",
+        "all"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "08",
+        "04",
+        "09"
+       ],
+       "s": "3.4"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Will it hurt?",
+       "tags": [
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not much. Less than the last five years.",
+       "tags": [
+        "02",
+        "08",
+        "01"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "DEREK",
+       "line": "And then?",
+       "tags": [
+        "02"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "You don't wake up. Not this you. He's only data, so he's the one going.",
+       "tags": [
+        "08",
+        "02"
+       ],
+       "s": "3.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "[warmer] Back to before it all went wrong. And you'll be there. Still you. And this time, we've got a chance to fix it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5.6"
+      },
+      {
+       "who": "DEREK",
+       "line": "Right.",
+       "tags": [
+        "08",
+        "01"
+       ],
+       "s": "1.0"
+      }
+     ],
+     "notes": [
+      "1C as picked. Your ending added as Maddie's last line, in your words ('before it all went wrong', 'still you', 'a chance to fix it'); 'we' because the boss goes too.",
+      "'That's what the chairs are for' and the silent hold are cut to make room; 'There's no chair for him' folded into 'he's the one going'.",
+      "'Not this you' squares the two halves: this version of them stops, the one back then (the viewer) carries on.",
+      "Departure from the writers' rule 'no stated moral': 'a chance to fix it' is the call to the viewer, by Kai's note. Kept to one line, said warmly, not preached."
+     ]
+    },
+    {
+     "id": "1E",
+     "name": "Your order, word for word",
+     "length": "about 26 s",
+     "total": "~26 s",
+     "bet": "Kai's own sequence: the cost, then the promise, then Derek's 'he?' and the plain reason. Ends on the reason.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. Count the chairs, love.",
+       "tags": [
+        "08"
+       ],
+       "s": "2.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "...Hundred.",
+       "tags": [
+        "08"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It runs on you. All of you, all at once.",
+       "tags": [
+        "08",
+        "all"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "08",
+        "04",
+        "09"
+       ],
+       "s": "3.4"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Will it hurt?",
+       "tags": [
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not much. Less than the last five years.",
+       "tags": [
+        "02",
+        "08",
+        "01"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "DEREK",
+       "line": "And then?",
+       "tags": [
+        "02"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "You don't wake up. Not this you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "[warmer] But you'll be you, just before it all went wrong. With a chance to fix it this time. And he'll be there with you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6.0"
+      },
+      {
+       "who": "DEREK",
+       "line": "What do you mean, he?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "MADDIE",
+       "line": "He's data, love. Data can travel.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.2"
+      }
+     ],
+     "notes": [
+      "Same as 1D up to Derek's 'And then?'; only the ending changes.",
+      "'You'll be you' rather than 'the real you': 'real' could make a viewer think this version was a simulation, which the film has played with.",
+      "'With a chance to fix it' keeps your words; it is the one line aimed at the viewer."
+     ]
+    },
+    {
+     "id": "1F",
+     "name": "Don't worry, Derek",
+     "length": "about 27 s",
+     "total": "~27 s",
+     "bet": "The same promise said straight to Derek, who has been the doubter all film, so the warmth has an address. Derek gets the last word.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. Count the chairs, love.",
+       "tags": [
+        "08"
+       ],
+       "s": "2.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "...Hundred.",
+       "tags": [
+        "08"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It runs on you. All of you, all at once.",
+       "tags": [
+        "08",
+        "all"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "08",
+        "04",
+        "09"
+       ],
+       "s": "3.4"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Will it hurt?",
+       "tags": [
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not much. Less than the last five years.",
+       "tags": [
+        "02",
+        "08",
+        "01"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "DEREK",
+       "line": "And then?",
+       "tags": [
+        "02"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "You don't wake up. Not this you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "[softly] Don't worry, Derek. You'll be you again. Just before it all went wrong. And this time, he'll be there with you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6.0"
+      },
+      {
+       "who": "DEREK",
+       "line": "He?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "0.6"
+      },
+      {
+       "who": "MADDIE",
+       "line": "He's only data, love. Data travels.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "DEREK",
+       "line": "[beat] Right.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      }
+     ],
+     "notes": [
+      "Same as 1D up to Derek's 'And then?'; only the ending changes.",
+      "'You'll be you' rather than 'the real you': 'real' could make a viewer think this version was a simulation, which the film has played with.",
+      "'With a chance to fix it' keeps your words; it is the one line aimed at the viewer."
+     ]
+    },
+    {
+     "id": "1G",
+     "name": "Shortest",
+     "length": "about 23 s",
+     "total": "~23 s",
+     "bet": "The fewest words that still carry all four facts: this you stops, the you back then carries on, he goes with you, because he is data.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. Count the chairs, love.",
+       "tags": [
+        "08"
+       ],
+       "s": "2.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "...Hundred.",
+       "tags": [
+        "08"
+       ],
+       "s": "1.2"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It runs on you. All of you, all at once.",
+       "tags": [
+        "08",
+        "all"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "08",
+        "04",
+        "09"
+       ],
+       "s": "3.4"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Will it hurt?",
+       "tags": [
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not much. Less than the last five years.",
+       "tags": [
+        "02",
+        "08",
+        "01"
+       ],
+       "s": "2.2"
+      },
+      {
+       "who": "DEREK",
+       "line": "And then?",
+       "tags": [
+        "02"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Not this you. You'll be you, just before it all went wrong. And this time he'll be there too.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5.0"
+      },
+      {
+       "who": "DEREK",
+       "line": "Why him?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "MADDIE",
+       "line": "He's data, love. He can travel.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.8"
+      }
+     ],
+     "notes": [
+      "Same as 1D up to Derek's 'And then?'; only the ending changes.",
+      "'You'll be you' rather than 'the real you': 'real' could make a viewer think this version was a simulation, which the film has played with.",
+      "'With a chance to fix it' keeps your words; it is the one line aimed at the viewer."
+     ]
+    },
+    {
+     "id": "1H",
+     "name": "Make sure they don't waste it",
+     "length": "about 30 s",
+     "total": "~30 s",
+     "bet": "Maddie asks if they're sure. The lady answers for all hundred: it's worth it. Then she hands the job to the people back then, which means us.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. And it runs on you. Can you see how many chairs there are?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "DEREK",
+       "line": "Hundred.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "What will it feel like?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.3"
+      },
+      {
+       "who": "MADDIE",
+       "line": "A bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3.6"
+      },
+      {
+       "who": "LADY",
+       "line": "And afterwards?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Are you sure, my love? There's no coming back from this. Not for this you.",
+       "tags": [
+        "claude"
+       ],
+       "s": "4.0"
+      },
+      {
+       "who": "LADY",
+       "line": "If it gives them another go, it's worth it.",
+       "tags": [
+        "claude"
+       ],
+       "s": "2.4"
+      },
+      {
+       "who": "LADY",
+       "line": "Just make sure they don't waste it.",
+       "tags": [
+        "claude"
+       ],
+       "s": "1.8"
+      }
+     ],
+     "notes": [
+      "Your seven notes are in the first seven lines: Derek asks what it feels like, the lady asks what happens after, and Maddie answers in two things.",
+      "'Them' means the people back then. To the viewer, that's us. Nobody says the moral; the lady just asks a favour.",
+      "Picture: the lady speaks on her close-up (D11c, given a mouth with the lip-sync tool). Derek's question goes over the chairs, so his angry-looking face (D07) is out."
+     ]
+    },
+    {
+     "id": "1I",
+     "name": "Sitting down is the yes",
+     "length": "about 30 s",
+     "total": "~30 s",
+     "bet": "Nobody makes a speech. Maddie says she won't switch it on unless they choose it, and the hundred sitting down in silence is the vote.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. And it runs on you. Can you see how many chairs there are?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "DEREK",
+       "line": "Hundred.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "What will it feel like?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.3"
+      },
+      {
+       "who": "MADDIE",
+       "line": "A bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3.6"
+      },
+      {
+       "who": "LADY",
+       "line": "And afterwards?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "I won't switch it on unless you want it. All of you. If you're sure... take a seat.",
+       "tags": [
+        "claude"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "",
+       "line": "(silence: the hundred sit down, the last one standing sits)",
+       "tags": [
+        "claude"
+       ],
+       "s": "4.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "(quietly) Thank you.",
+       "tags": [
+        "claude"
+       ],
+       "s": "1.0"
+      }
+     ],
+     "notes": [
+      "The 'they sit' shot already exists, so the choice is shown, not said. It turns a pretty shot into the moment they decide.",
+      "Quietest of the three. The risk is that a viewer reads the sitting as obedience, not courage. 'Unless you want it' is there to stop that."
+     ]
+    },
+    {
+     "id": "1J",
+     "name": "The door's open",
+     "length": "about 29 s",
+     "total": "~29 s",
+     "bet": "Maddie offers them a way out and means it. Nobody takes it, and the lady says so dryly. The bravery is the joke.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "What is it?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "It's the time machine. And it runs on you. Can you see how many chairs there are?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "DEREK",
+       "line": "Hundred.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "0.8"
+      },
+      {
+       "who": "DEREK",
+       "line": "What will it feel like?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.3"
+      },
+      {
+       "who": "MADDIE",
+       "line": "A bit like dying. Mostly like nodding off in front of the telly.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3.6"
+      },
+      {
+       "who": "LADY",
+       "line": "And afterwards?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7.0"
+      },
+      {
+       "who": "MADDIE",
+       "line": "You can still say no. Nobody'd blame you. Door's right there.",
+       "tags": [
+        "claude"
+       ],
+       "s": "3.4"
+      },
+      {
+       "who": "",
+       "line": "(a beat: nobody moves)",
+       "tags": [
+        "claude"
+       ],
+       "s": "1.5"
+      },
+      {
+       "who": "LADY",
+       "line": "Nobody's moving, love.",
+       "tags": [
+        "claude"
+       ],
+       "s": "1.4"
+      }
+     ],
+     "notes": [
+      "The funniest and warmest of the three, and the closest to the film's voice. It shows they choose, but says less about why it's worth it."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "06",
+     "length": "~21 s",
+     "verdict": "Best bravery on the page: the humans reach the cost one beat ahead of Maddie, so nobody is managed and nobody speechifies. Fails on TTS: trailing-off and overlap need direction, 'Last five years' moves to Sandra's mouth, and the tea ending is the common exit."
+    },
+    {
+     "rank": 2,
+     "shape": "05",
+     "length": "~24 s",
+     "verdict": "Only shape with real resistance (Sandra refuses the soft version) and Maddie conceding is a care move. Fails: 'The rest of us can't go' muddles Maddie's status; 'A bit like dying' and 'only him' twice make it dense; top of target."
+    },
+    {
+     "rank": 3,
+     "shape": "08",
+     "length": "~22 s",
+     "verdict": "The chairs make 'only he goes' visible and 'nodding off in front of the telly' is the right euphemism. Fails: counting is bad TTS, needs a 3 s hold, no one resists, the joke is in Maddie's mouth."
+    },
+    {
+     "rank": 4,
+     "shape": "04",
+     "length": "~21 s",
+     "verdict": "Clean question order (what, how, hurt, after) and the 'Is there tea?' beat is bravery as bad timing. Fails: 'Bit like dying, if I'm honest' is blunt, tea risks sitcom, the 'after' answer is stated twice."
+    },
+    {
+     "rank": 5,
+     "shape": "10",
+     "length": "~24 s",
+     "verdict": "Cost said once with 'dying' named and softened in the same breath; the cuppa is planted for the mug. Fails: one overloaded Maddie line (dying, nodding off, no waking, only he goes) is heavy for TTS; no resistance."
+    },
+    {
+     "rank": 6,
+     "shape": "07",
+     "length": "~24 s",
+     "verdict": "Old lady questions give the cost as Q&A and the silence beat is good. Fails: 'Anyone want out?' is nearly a stated moral, four voices blur, and no beat breathes."
+    },
+    {
+     "rank": 7,
+     "shape": "09",
+     "length": "~24 s",
+     "verdict": "Consent-leaflet order is sound and the facts are unmistakable. Fails: it is shape 04 with extra exposition ('Data can travel'), top of target, nothing new on resistance."
+    },
+    {
+     "rank": 8,
+     "shape": "02",
+     "length": "~20 s",
+     "verdict": "The best use of silence and shots already in the film. Fails Kai's brief: 'dropping off' never says 'a bit like dying', so the stakes are softer than asked; 4 s of holds may drag."
+    },
+    {
+     "rank": 9,
+     "shape": "03",
+     "length": "~22 s",
+     "verdict": "Chain of logic is easy to follow. Fails: reads as a briefing, no resistance, the joke is relayed second-hand, 'Not people' and 'Only he goes back' repeat."
+    },
+    {
+     "rank": 10,
+     "shape": "01",
+     "length": "~17.5 s",
+     "verdict": "Fewest words. Fails: under target, 'sleep' and 'nodding off' together read as reassurance, never says dying, Derek has no reaction beyond 'Right.', and 'I'm sorry' is the only warmth."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "What is it?"
+    ],
+    "rows": {
+     "1A": [
+      "What is it?"
+     ],
+     "1B": [
+      "What is it?"
+     ],
+     "1C": [
+      "What is it?"
+     ]
+    }
+   }
+  },
+  {
+   "id": "2",
+   "label": "The goodbye: two hands",
+   "where": "Scene D, beat d7, over two hands across the gap between Sandra's and Derek's chairs, just before the crossing",
+   "scene": "second-half-d-crossing",
+   "target": "about 6-10 s",
+   "now_from": "36.5s to 46.7s",
+   "now": [
+    {
+     "who": "SANDRA",
+     "line": "Does this mean I get to hang out with non-grumpy Derek?"
+    },
+    {
+     "who": "DEREK",
+     "line": "Yes, love. Are you ready for this?"
+    }
+   ],
+   "drafts": [
+    {
+     "id": "2A",
+     "name": "Say nothing, hold the hands",
+     "length": "about 7.5 s",
+     "total": "~7.5 s",
+     "bet": "The shot already carries the love, so two words from each side and long holds beat any line.",
+     "lines": [
+      {
+       "who": "(hold)",
+       "line": "[two hands across the gap; tea steaming; room tone]",
+       "tags": [
+        "02"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "SANDRA",
+       "line": "[barely] Seat down?",
+       "tags": [
+        "02",
+        "01",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "(hold)",
+       "line": "[Derek's hand closes on hers]",
+       "tags": [
+        "02"
+       ],
+       "s": "2.0"
+      },
+      {
+       "who": "DEREK",
+       "line": "[gruff] Seat down.",
+       "tags": [
+        "02",
+        "01",
+        "all"
+       ],
+       "s": "1.0"
+      },
+      {
+       "who": "(hold)",
+       "line": "[her thumb moves once; nothing more]",
+       "tags": [
+        "02"
+       ],
+       "s": "1.5"
+      }
+     ],
+     "notes": [
+      "Uses Claude's candidate 'Seat down?' / 'Seat down.' as given.",
+      "Risk: the opening hold must not be scored with a swell, and Derek's concession must be a long soft beat, not a quip.",
+      "Risk: leans on the seat row being set up earlier; if it was not, plant it in d3 to d6 or this is two odd words.",
+      "No future tense, no reunion; the crossing follows straight after the thumb."
+     ]
+    },
+    {
+     "id": "2B",
+     "name": "Cut off",
+     "length": "about 7 s",
+     "total": "~7 s",
+     "bet": "Love is said by refusing to say it: Derek starts the sentence couples dread and Sandra shuts it down with the row.",
+     "lines": [
+      {
+       "who": "DEREK",
+       "line": "Sandra. I've always...",
+       "tags": [
+        "06"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "SANDRA",
+       "line": "I know. Seat down.",
+       "tags": [
+        "06"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "DEREK",
+       "line": "[beat] ...Seat down.",
+       "tags": [
+        "06",
+        "03"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "(hold)",
+       "line": "[hands; a long beat before the first light goes out]",
+       "tags": [
+        "06"
+       ],
+       "s": "2.0"
+      }
+     ],
+     "notes": [
+      "Written 5.0 s by shape 06; the 2 s hold brings it into the 6 to 10 s target.",
+      "Risk: 'I know' reads cold unless Sandra softens on the second beat. 'I've always...' is as near as anyone gets to saying it; it is cut off, so it stays sideways.",
+      "Echo 'Seat down' carries 'I love you' and 'me too' in two words, with no future tense.",
+      "Depends on the seat row being planted earlier."
+     ]
+    },
+    {
+     "id": "2C",
+     "name": "The lie and the night",
+     "length": "about 7.4 s",
+     "total": "~7.4 s",
+     "bet": "Derek tells one last comforting lie, Sandra lets him have it, and she gives the sleep euphemism as her last words.",
+     "lines": [
+      {
+       "who": "SANDRA",
+       "line": "[quietly, not looking] Seat down?",
+       "tags": [
+        "10",
+        "04",
+        "09"
+       ],
+       "s": "1.6"
+      },
+      {
+       "who": "DEREK",
+       "line": "[beat] Seat down, love. Always was.",
+       "tags": [
+        "10"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "SANDRA",
+       "line": "[a breath, almost a laugh] Liar.",
+       "tags": [
+        "10",
+        "04",
+        "01"
+       ],
+       "s": "1.8"
+      },
+      {
+       "who": "SANDRA",
+       "line": "Night, you lump.",
+       "tags": [
+        "04"
+       ],
+       "s": "1.4"
+      }
+     ],
+     "notes": [
+      "Written from 10 (the lie) with the 04 'Night' ending; Derek's 'Night, love' is dropped so Sandra gets the last word.",
+      "Risk: 'Night' can read as 'see you in the morning' if voiced bright; it must be low and slow, and the crossing must follow with no recovery beat.",
+      "Risk: Derek lying out loud to comfort her could turn sentimental if overplayed.",
+      "'Always was' is clear here because it follows 'Seat down, love': he claims it was always down."
+     ]
+    },
+    {
+     "id": "2D",
+     "name": "Before the world ended",
+     "length": "about 7 s",
+     "total": "~7 s",
+     "bet": "Kai's own: keep the cut's shape, but Sandra's joke now points back in time, not to an afterwards. Hands, then fade to white.",
+     "lines": [
+      {
+       "who": "SANDRA",
+       "line": "You know what? I'm looking forward to hanging out with you. Before the world ended.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3.6"
+      },
+      {
+       "who": "DEREK",
+       "line": "Yes, me too, love. Are you ready for this?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.6"
+      },
+      {
+       "who": "(hold)",
+       "line": "[the two hands; the screen fades up to white]",
+       "tags": [
+        "Kai"
+       ],
+       "s": "1.0"
+      }
+     ],
+     "notes": [
+      "Kai's words. Derek's line is the take already in the cut ('Yes, love. Are you ready for this?') with 'me too' added, so it needs a fresh voice take.",
+      "Works with 1D: Sandra is looking forward to the 'still you' back then."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "10",
+     "length": "~6 s",
+     "verdict": "Cleanest: the last exchange is the row, he lies, she knows and takes it; 'Liar' as the last word is love. No future tense. Fails: bottom of target, and relies on the row being known."
+    },
+    {
+     "rank": 2,
+     "shape": "06",
+     "length": "~5 s",
+     "verdict": "Most original: love left unsaid by interruption. Fails: under target without a held beat, 'I know' risks coldness, and 'I've always...' edges toward stating it."
+    },
+    {
+     "rank": 3,
+     "shape": "01",
+     "length": "~6.8 s",
+     "verdict": "Right length and the row is perfect. Fails: 'Always was' after 'Liar' is ambiguous and may read as muddy."
+    },
+    {
+     "rank": 4,
+     "shape": "02",
+     "length": "~7.5 s",
+     "verdict": "Best restraint; the shot does the work. Fails: no resistance or jab at all, and the holds are the writing, so a weak shot or swelling score ruins it."
+    },
+    {
+     "rank": 5,
+     "shape": "04",
+     "length": "~7 s",
+     "verdict": "'Night' is the right euphemism and fits the sleep. Fails: 'Night, love' / 'Night, you lump' is a double goodnight that can imply a morning, and it is a touch neat."
+    },
+    {
+     "rank": 6,
+     "shape": "09",
+     "length": "~7.5 s",
+     "verdict": "Marriage in one object. Fails: 'Never once. Always up.' is a reversal TTS and a first listen will misread."
+    },
+    {
+     "rank": 7,
+     "shape": "03",
+     "length": "~7.8 s",
+     "verdict": "Sandra stating 'nothing after' leaves no doubt. Fails: the bluntest line in the scene next to euphemism, and 'I get the last word' sounds like triumph."
+    },
+    {
+     "rank": 8,
+     "shape": "08",
+     "length": "~5 s",
+     "verdict": "Closing the gap is a good image. Fails: 'Gap's too wide' is on the nose over a shot that shows the gap, and 5 s needs dead air."
+    },
+    {
+     "rank": 9,
+     "shape": "05",
+     "length": "~8.2 s",
+     "verdict": "Fails: Sandra asks him to admit he never left it up, which inverts the row (she nags 'Seat down?'), so it confuses the very joke it relies on; sweet with no sting."
+    },
+    {
+     "rank": 10,
+     "shape": "07",
+     "length": "~7.3 s",
+     "verdict": "Fails the brief: the old lady speaks first, so it is not the last thing two married people say to each other; 'Always' is ambiguous."
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "Should Maddie say 'bit like dying' aloud? All three wafer drafts do, hedged once ('if I'm honest' or 'mostly nodding off'), because you asked for the humans to know. The alternative is 'nodding off' alone, which is softer and risks reading as reassurance."
+  },
+  {
+   "id": "q2",
+   "text": "Whose mouth is 'Less than the last five years'? Maddie relaying the boss ('he says') is kinder to the humans; Sandra or Derek saying it themselves (draft 1A) makes the joke their bravery but moves it off your candidate."
+  },
+  {
+   "id": "q3",
+   "text": "Does the old lady speak in d3 or d7? Only the chorus shape used her, and 'Anyone want out?' came too close to a stated moral, so none of the six drafts has her. Do you want her voiced at all?"
+  },
+  {
+   "id": "q4",
+   "text": "Is the toilet-seat row planted earlier in the film? Every goodbye draft depends on it; if it is not, it needs one earlier plant (d3 to d6) or the goodbye is two odd words."
+  },
+  {
+   "id": "q5",
+   "text": "Should the goodbye keep Derek's comforting lie ('Always was') or should he concede for real, or should it stay silent? 2C tells a lie, 2B cuts him off, 2A says almost nothing; they set very different tones for the crossing that follows."
+  }
+ ]
+}

@@ -74,7 +74,7 @@ The words live in the repo and the media lives outside it (the clips/ convention
   "existing": {"door": [["NOW-door", "On the timeline now (replace)", "moodboard/current/NOW-door.jpg"]]},
   "styles": {"<style key>": "<a look named in the story's look.md>"},
   "looks": {"<look key>": "<a look named in the story's look.md>"},
-  "video": {"model": "Omni 1.1 Flash", "aspect": "<16:9 | 9:16, from look.md>", "mode": "Frames", "duration": 8},
+  "video": {"model": "Omni 1.2 Flash", "aspect": "<16:9 | 9:16, from look.md>", "mode": "Frames", "duration": 8},
   "boards": {"moodboard": "<artifact url>", "storyboard": "<artifact url>", "timeline": "<artifact url>"},
   "cut": {"edl": "<media>/cut/edl.json", "preview": "<media>/cut/preview.mp4"}
 }

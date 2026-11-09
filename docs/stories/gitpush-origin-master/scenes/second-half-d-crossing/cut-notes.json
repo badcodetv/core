@@ -1,72 +1,6 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 6,
- "plan": [
-  {
-   "h": "Round 5: done on this page (edit + one new voice take)",
-   "items": [
-    "Maddie's key line, in your words (at469): \"It's the time machine. It'll send all of you back, to before it all went wrong. And it'll send him too, so he can help you avoid it.\" Three phrases on her, then the hundred chairs from above for the last two.",
-    "The old lady's answer is cut, with both its shots (at567, at715). Her voice is no longer in D at all, so the old-voice question is gone too.",
-    "They sit (at1054, at1615): now your canonical shot, everyone in their chairs (the same angle the crossing opens on), 3.5 s, no words. The lady's question, Maddie's answer and the two close-ups are cut (at1091, at1178, at1285).",
-    "D is 1:12 (was 1:30)."
-   ]
-  },
-  {
-   "h": "Round 6: the two shots re-made (Flow)",
-   "items": [
-    "Suits on (at52): a fresh take from the same approved still; the suit goes on in one continuous pull, no reset. One 6 s Omni Flash clip.",
-    "The tea (at889): your pick b-a. The old lady lies back in her own chair and lifts her own mug up onto her blanket; every chair behind her is occupied; gleaming Maddie beside her. One 8 s clip. Omni drifts the camera in a little."
-   ]
-  },
-  {
-   "h": "You decide",
-   "items": [
-    "Wording: I used \"so he can help you avoid it\" (not \"fix it\"). Say if you want \"fix it\".",
-    "Premiere: 06 GPOM story D crossing r3, swapped into 00 RENDER story."
-   ]
-  }
- ],
- "replies": {
-  "top": "Round 6: every round-5 note is done, including the two re-made shots (the suits, the tea).",
-  "ld1-0": "Yes: Maddie says 'Suits on, please. It's a clean room.' Voiced.",
-  "ld1-1": "Yes: Sandra, worried, under her breath: 'I hope this bloody plan works.' D won't explain the plan; the bunker scene sets it up (they reset, they don't die). New Sandra lip-sync clip on the same shot.",
-  "at296": "Agreed. The walk to the centre and the mud both go: the shot becomes the hundred coming through the doors into the room, stopping, the wafer in the middle. That sets up the next shot beside it.",
-  "bd2": "Yes: a new vast white room, the wafer alone in the middle, spotless floor, nobody walking to it. New still, one clip (about 12 credits).",
-  "bd3": "Done as you wrote it. Derek: 'What is it?' / Maddie: 'It's the time machine. You do understand what this will cost you.' / The lady: 'Yes. Don't worry, we understand.' 'You. And your consciousness.' and 'It only sends one back. Me.' are cut, and the boss says nothing. All three voiced with the heaviest emotional direction yet (Maddie close to tears, breaking on 'cost you'; the lady comforting her). New lady lip-sync clip.",
-  "at713": "Agreed: no mud anywhere in the clean room. D03c remade with clean boots, and Maddie gleaming from here on with no explanation, like their clean suits. One question on her bunting in the panel (Q1).",
-  "ld4-1": "Yes: Maddie says 'Milk, two sugars. I kept your loyalty cards.' Works even better from her: she's the one who delivered their shopping.",
-  "bd5": "Cut, the whole test (Derek's simulation question, the admission, Derek sitting first). D is about 18 s shorter.",
-  "ld6-0": "Yes: the lady to Maddie: 'When he arrives back in time, what will he do?' New lip-sync clip on her.",
-  "ld6-1": "Yes, in your words, as plainly as it goes: Maddie: 'He's going to try and convince you lot to sort your government out.' This replaces the boss's 'the companies kept the gains' line; see Q2.",
-  "ld7-0": "Seat joke gone. Sandra: 'Does this mean I get to hang out with non-grumpy Derek?'",
-  "ld7-1": "Derek answers her: 'Yes, love. Are you ready for this?' So it ends on 'ready', right before the light. And understood: the empty-chairs note is for the next shot (the overhead, D13), not this one.",
-  "bd7": "Thank you. The shot stays exactly as it is.",
-  "bd8": "Yes: D13 (the overhead, which reads as empty chairs) goes, and the crossing opens on the 'they sit' shot again, where everyone is clearly in a chair. The lights come up on it, chained from its last frame.",
-  "at2259": "Agreed, it's a still with a zoom. D14p (the prints at the doorway) gets re-made as real video: wind in the grass, chalk dust over the prints, the doorway light breathing. No post zoom.",
-  "at2379": "Thank you. D14 (the building at dusk) stays.",
-  "bd9": "Yes to all of it: the music carries over from the crossing, the cup-of-tea shot goes, straight to Maddie. New D16 from the same angle as the 'they sit' shot, Maddie gleaming and the right size against the chairs.",
-  "ld9-1": "Yes: Maddie says only 'Boss...', then a long silence (about 4 s). 'Mind how you go' moves to the start of E, on the phone.",
-  "reel-at1581": "Agreed, and found why: her direction for this line said 'polite and brisk, a host with house rules', which pulled her prim and neutral. Re-voiced with the accent pushed for this line only ('strong, broad West Country... being polite makes it broader, never posher'). 8 new takes; picked by measuring each against an RP read and a broad-Bristol read of the same words: the old take was the most RP of all, the new pick is the most West Country of the clean ones. Nobody has listened yet: your ear decides.",
-  "reel-at2108": "Both done. (a) The vast-room shot is re-made with the wafer big again, filling the middle of the frame; the rainbow on her face stays (it's from the clip of her, which is kept as the look). (b) Her new line, in your words, voiced stern and grave, not reassuring: 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' It's 10.8 s, so it gets a new lip-sync clip of her with the rainbow on her face, and the middle of it plays over a cutaway. The 'I trust your boss' part is dropped, per your later note.",
-  "reel-at2347": "Done: 'Is that tea?' is gone. Maddie just tells her: 'Milk, two sugars. I kept your loyalty cards.'",
-  "reel-at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
-  "reel-at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
-  "reel-at2055": "Done: the listening shot is cut. Maddie's whole line now plays on her (its pauses held a little tighter so it fits her clip), and it cuts straight to the rainbow on the old lady's face as she answers.",
-  "reel-at2525": "Done: 'Milk, two sugars.' only, and with your pick (D06r6-a) the old lady, lying back in her chair, reaches down and lifts her own mug. One 8 s clip (12 credits).",
-  "reel-at2714": "Done: the shot now ends before the man nearest the camera sits up and someone sits in behind him (it plays 3.5 s, was 5.6). The rest of the clip covers the beat: the lady's question starts over it as before.",
-  "reel-at2787": "Done with your pick (D11c6-d): after Maddie's answer, 3.6 s on the old lady's face, silent: her eyes fix on the robot, a breath, one small nod. Then the hands. One 6 s clip (10 credits).",
-  "reel-at3282": "Done: the white now fades up over 1.5 s while their hands are still gripping. They never let go on screen.",
-  "at52": "Done: a fresh take of the suits shot from its approved still. The suit goes on in one continuous pull; no reset. → in 06 GPOM story D crossing r3.",
-  "at469": "Done, in your words: \"It's the time machine. It'll send all of you back, to before it all went wrong. And it'll send him too, so he can help you avoid it.\" One new voice take (Aoede, heard exactly). The first three phrases are on her; the cut to the hundred chairs lands in the breath before \"And\". → in 06 GPOM story D crossing r3.",
-  "at567": "Done: the lady's whole answer is cut, with both her shots. Maddie's line now goes straight to the chairs. → in r3.",
-  "at715": "Same cut: this stretch is gone. → in r3.",
-  "at889": "Done with your pick (b-a): she lies back in her own chair and lifts her own mug up onto the blanket; no arm from outside; every chair behind her has someone in it. → in r3.",
-  "at1054": "Done the way you suggested in your later note: \"they sit\" is now D10x, the shot of everyone already in their chairs (the angle the crossing opens on). No odd middle chair. → in r3.",
-  "at1091": "Done: the lady's question and Maddie's answer are cut. We go from the chairs straight to Sandra and Derek holding hands. → in r3.",
-  "at1178": "Done, same cut. → in r3.",
-  "at1285": "Done: her silent close-up is cut too. → in r3.",
-  "at1615": "Yes: this is now the canonical \"everybody sat\" shot, used for \"they sit\" as well (3.5 s, before the hands) and again as the crossing opens. → in r3."
- },
+ "round": 14,
  "kai_round1": {
   "at2259": {
    "note": " I think this scene here needs to be an actual video. It looks like it's a photograph just zoomed in.",
@@ -532,6 +466,409 @@
    "key": "at713",
    "note": "I think this shot, the problem with this shot is the mud on the boots, it's a clean room. Also, I think we might be able to clean Maddy up, because in the same way that everyone else has got clean clothes, Maddy could now be gleaming without an explanation. I think that would be a nice note.",
    "tc": "00:00:29:17"
+  }
+ },
+ "plan_round6": [
+  {
+   "h": "Round 5: done on this page (edit + one new voice take)",
+   "items": [
+    "Maddie's key line, in your words (at469): \"It's the time machine. It'll send all of you back, to before it all went wrong. And it'll send him too, so he can help you avoid it.\" Three phrases on her, then the hundred chairs from above for the last two.",
+    "The old lady's answer is cut, with both its shots (at567, at715). Her voice is no longer in D at all, so the old-voice question is gone too.",
+    "They sit (at1054, at1615): now your canonical shot, everyone in their chairs (the same angle the crossing opens on), 3.5 s, no words. The lady's question, Maddie's answer and the two close-ups are cut (at1091, at1178, at1285).",
+    "D is 1:12 (was 1:30)."
+   ]
+  },
+  {
+   "h": "Round 6: the two shots re-made (Flow)",
+   "items": [
+    "Suits on (at52): a fresh take from the same approved still; the suit goes on in one continuous pull, no reset. One 6 s Omni Flash clip.",
+    "The tea (at889): your pick b-a. The old lady lies back in her own chair and lifts her own mug up onto her blanket; every chair behind her is occupied; gleaming Maddie beside her. One 8 s clip. Omni drifts the camera in a little."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Wording: I used \"so he can help you avoid it\" (not \"fix it\"). Say if you want \"fix it\".",
+    "Premiere: 06 GPOM story D crossing r3, swapped into 00 RENDER story."
+   ]
+  }
+ ],
+ "replies_round6": {
+  "top": "Round 6: every round-5 note is done, including the two re-made shots (the suits, the tea).",
+  "ld1-0": "Yes: Maddie says 'Suits on, please. It's a clean room.' Voiced.",
+  "ld1-1": "Yes: Sandra, worried, under her breath: 'I hope this bloody plan works.' D won't explain the plan; the bunker scene sets it up (they reset, they don't die). New Sandra lip-sync clip on the same shot.",
+  "at296": "Agreed. The walk to the centre and the mud both go: the shot becomes the hundred coming through the doors into the room, stopping, the wafer in the middle. That sets up the next shot beside it.",
+  "bd2": "Yes: a new vast white room, the wafer alone in the middle, spotless floor, nobody walking to it. New still, one clip (about 12 credits).",
+  "bd3": "Done as you wrote it. Derek: 'What is it?' / Maddie: 'It's the time machine. You do understand what this will cost you.' / The lady: 'Yes. Don't worry, we understand.' 'You. And your consciousness.' and 'It only sends one back. Me.' are cut, and the boss says nothing. All three voiced with the heaviest emotional direction yet (Maddie close to tears, breaking on 'cost you'; the lady comforting her). New lady lip-sync clip.",
+  "at713": "Agreed: no mud anywhere in the clean room. D03c remade with clean boots, and Maddie gleaming from here on with no explanation, like their clean suits. One question on her bunting in the panel (Q1).",
+  "ld4-1": "Yes: Maddie says 'Milk, two sugars. I kept your loyalty cards.' Works even better from her: she's the one who delivered their shopping.",
+  "bd5": "Cut, the whole test (Derek's simulation question, the admission, Derek sitting first). D is about 18 s shorter.",
+  "ld6-0": "Yes: the lady to Maddie: 'When he arrives back in time, what will he do?' New lip-sync clip on her.",
+  "ld6-1": "Yes, in your words, as plainly as it goes: Maddie: 'He's going to try and convince you lot to sort your government out.' This replaces the boss's 'the companies kept the gains' line; see Q2.",
+  "ld7-0": "Seat joke gone. Sandra: 'Does this mean I get to hang out with non-grumpy Derek?'",
+  "ld7-1": "Derek answers her: 'Yes, love. Are you ready for this?' So it ends on 'ready', right before the light. And understood: the empty-chairs note is for the next shot (the overhead, D13), not this one.",
+  "bd7": "Thank you. The shot stays exactly as it is.",
+  "bd8": "Yes: D13 (the overhead, which reads as empty chairs) goes, and the crossing opens on the 'they sit' shot again, where everyone is clearly in a chair. The lights come up on it, chained from its last frame.",
+  "at2259": "Agreed, it's a still with a zoom. D14p (the prints at the doorway) gets re-made as real video: wind in the grass, chalk dust over the prints, the doorway light breathing. No post zoom.",
+  "at2379": "Thank you. D14 (the building at dusk) stays.",
+  "bd9": "Yes to all of it: the music carries over from the crossing, the cup-of-tea shot goes, straight to Maddie. New D16 from the same angle as the 'they sit' shot, Maddie gleaming and the right size against the chairs.",
+  "ld9-1": "Yes: Maddie says only 'Boss...', then a long silence (about 4 s). 'Mind how you go' moves to the start of E, on the phone.",
+  "reel-at1581": "Agreed, and found why: her direction for this line said 'polite and brisk, a host with house rules', which pulled her prim and neutral. Re-voiced with the accent pushed for this line only ('strong, broad West Country... being polite makes it broader, never posher'). 8 new takes; picked by measuring each against an RP read and a broad-Bristol read of the same words: the old take was the most RP of all, the new pick is the most West Country of the clean ones. Nobody has listened yet: your ear decides.",
+  "reel-at2108": "Both done. (a) The vast-room shot is re-made with the wafer big again, filling the middle of the frame; the rainbow on her face stays (it's from the clip of her, which is kept as the look). (b) Her new line, in your words, voiced stern and grave, not reassuring: 'Look, this has been the worst possible outcome for humanity. If there's a chance we could go back in time to change it, I want to take that chance.' It's 10.8 s, so it gets a new lip-sync clip of her with the rainbow on her face, and the middle of it plays over a cutaway. The 'I trust your boss' part is dropped, per your later note.",
+  "reel-at2347": "Done: 'Is that tea?' is gone. Maddie just tells her: 'Milk, two sugars. I kept your loyalty cards.'",
+  "reel-at2566": "Understood, and done as you clarified: her new line answers Maddie's 'You do understand what this will cost you.' (your pick, kept as it is; it already reads as 'are you sure about this', so nothing is added). No 'I trust your boss' line. And the music keeps going here (next note).",
+  "reel-at2622": "Done: the clean-room piano no longer stops under the lady's question. It carries on under the speech (dipped under the voices like everywhere else) and hands over to the cello on the hands.",
+  "reel-at2055": "Done: the listening shot is cut. Maddie's whole line now plays on her (its pauses held a little tighter so it fits her clip), and it cuts straight to the rainbow on the old lady's face as she answers.",
+  "reel-at2525": "Done: 'Milk, two sugars.' only, and with your pick (D06r6-a) the old lady, lying back in her chair, reaches down and lifts her own mug. One 8 s clip (12 credits).",
+  "reel-at2714": "Done: the shot now ends before the man nearest the camera sits up and someone sits in behind him (it plays 3.5 s, was 5.6). The rest of the clip covers the beat: the lady's question starts over it as before.",
+  "reel-at2787": "Done with your pick (D11c6-d): after Maddie's answer, 3.6 s on the old lady's face, silent: her eyes fix on the robot, a breath, one small nod. Then the hands. One 6 s clip (10 credits).",
+  "reel-at3282": "Done: the white now fades up over 1.5 s while their hands are still gripping. They never let go on screen.",
+  "at52": "Done: a fresh take of the suits shot from its approved still. The suit goes on in one continuous pull; no reset. → in 06 GPOM story D crossing r3.",
+  "at469": "Done, in your words: \"It's the time machine. It'll send all of you back, to before it all went wrong. And it'll send him too, so he can help you avoid it.\" One new voice take (Aoede, heard exactly). The first three phrases are on her; the cut to the hundred chairs lands in the breath before \"And\". → in 06 GPOM story D crossing r3.",
+  "at567": "Done: the lady's whole answer is cut, with both her shots. Maddie's line now goes straight to the chairs. → in r3.",
+  "at715": "Same cut: this stretch is gone. → in r3.",
+  "at889": "Done with your pick (b-a): she lies back in her own chair and lifts her own mug up onto the blanket; no arm from outside; every chair behind her has someone in it. → in r3.",
+  "at1054": "Done the way you suggested in your later note: \"they sit\" is now D10x, the shot of everyone already in their chairs (the angle the crossing opens on). No odd middle chair. → in r3.",
+  "at1091": "Done: the lady's question and Maddie's answer are cut. We go from the chairs straight to Sandra and Derek holding hands. → in r3.",
+  "at1178": "Done, same cut. → in r3.",
+  "at1285": "Done: her silent close-up is cut too. → in r3.",
+  "at1615": "Yes: this is now the canonical \"everybody sat\" shot, used for \"they sit\" as well (3.5 s, before the hands) and again as the crossing opens. → in r3."
+ },
+ "plan_round7": [
+  {
+   "h": "Round 7: the cost, said plainly (your dialogue picks, voiced)",
+   "items": [
+    "The wafer is now draft 1F: 'Count the chairs, love' / 'Hundred.' / 'It runs on you... Bit like dying. Mostly like nodding off in front of the telly.' / 'Will it hurt?' / 'Not much. Less than the last five years.' / 'And then?' / 'You don't wake up. Not this you. Don't worry, Derek. You'll be you again. Just before it all went wrong. And this time, he'll be there with you.' / 'He?' / 'He's only data, love. Data travels.' / 'Right.'",
+    "The goodbye is your 2D: 'You know what? I'm looking forward to hanging out with you. Before the world ended.' / 'Yes, me too, love. Are you ready for this?' Then the hands and the fade to white, as before.",
+    "Twelve new Gemini takes, every one heard as written. Long pauses inside Maddie's takes shortened (never sped up). 'he'll' re-voiced with a clear h: the first takes were heard as 'you'll'."
+   ]
+  },
+  {
+   "h": "Picture: no new shots, no credits",
+   "items": [
+    "Maddie by the wafer -> the hundred empty chairs from above (Derek counts, Sandra asks, both off-screen) -> Sandra's face for 'Less than the last five years' -> Derek, arms folded, 'And then?' on his mouth -> the old lady's nod on 'You'll be you again' -> back to Maddie's beacon for 'he'll be there with you' -> Derek's 'He?' -> Derek walks to his chair and lies back on 'Right.': he goes first.",
+    "These are the shots from the old 'is this a simulation' test that was cut in round 1, now back in use."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Length: the scene is 1:57 (was 1:12); the wafer alone is 58 s. It is the words you picked at a calm pace. If it drags, the first trims I'd make: 'Mostly like nodding off in front of the telly.' and 'Hundred.'",
+    "The empty chairs from above hold 15 s (a still with a slow turn). A new shot would help there; say if you want one.",
+    "Derek's lip sync on 'And then?' and 'He?' is approximate."
+   ]
+  }
+ ],
+ "replies_round7": {
+  "top": "Round 7 is your dialogue picks voiced and cut in; notes on any line or shot as before."
+ },
+ "kai_round7": {
+  "at1400": "So this whole section is just far too indulgent in terms of time and doesn't offer much, I think we just need to cut to the chase here, it's just like, you know, look, you'll go back, it'll still be you before it all went wrong, and he'll, and he will be there with you this time. That's all we need to say, and we can bypass this entire section please, because I think it's far too long.",
+  "at1849": "So, yeah, this is the shot we need to try to get to quickly, right? Because it's like everyone's there ready to be almost like annihilated. We need to, I mean, somehow the music should change. I think that might be something because at the moment the music's very cute and like positive major chords, keyboard, cute, niceness. Instead, if all of a sudden it felt a bit like mournful, like violin-y, cello mournful tune, I'm sure Suno would do a great job of that as this kind of sacrifice. I don't, you know, I think that's basically what's going on, right? And we need to feel it. The main point of what I'm saying is this is where we need to try to get to quickly in this whole scene.",
+  "at942": "So, it feels like Derek says, and then, in terms of text, but the lip sync is way out here.",
+  "at991": "And by way out, I mean he's still speaking at this point after many syllables, but he's just said two in terms of the actual text he should have said, so yeah, we need to recut this for the lip sync of what he actually says.\nIt's worth saying with the previous note I just added at the same time stamp that we've in the other thread GPOM intro added the skill for lip-syncing to be much better So I think that we might be in the situation where we could use that new skill\n\n\"gpom-intro\"",
+  "at1951": "I think that Derek needs to say there needs to be a pause between me to love okay I think Sandra should say um you know what I'm looking you know she should say you know I'm looking forward to seeing Derek before the world ended that's it",
+  "at2152": "It must be said right at the end of this clip they let go slightly of their hands where I expect them to grip their hands slightly tighter if anything, so Maybe we need to you know Right either cut it before they slightly let go or let's recut it where they grip tighter as the ending",
+  "at2360": "So, the cut from them holding hands back to the chairs, back to them holding hands, we shouldn't see the chairs, it should go from them holding hands to immediately fading out to white. So, like, yeah, we need to lose entirely this whole chair section before.",
+  "at2104": "So there needs to be a pause between yes, me too, love, pause, and then are you ready for this needs to be whispered in a tender way.",
+  "at1750": "Again, I think we're wasting the viewers time with this. I know it's cute, but it doesn't offer much. We need to be brutal."
+ },
+ "plan_round8": [
+  {
+   "h": "Round 8: brutal, as you asked (1:26, was 1:57)",
+   "items": [
+    "Cut to the chase (at1400): 'He?', 'He's only data, love. Data travels.', 'Right.' and Derek walking to his chair are gone. Maddie's line is now yours: 'You don't wake up. Not this you. But look, you'll go back. It'll still be you, before it all went wrong. And he'll be there with you this time.'",
+    "The tea is cut whole (at1750). From the promise it goes straight to everyone in their chairs.",
+    "The cello comes in on 'they sit' and the cute piano goes out there (at1849).",
+    "The goodbye (at1951, at2104): Sandra 'You know, I'm looking forward to seeing Derek before the world ended.' Derek 'Yes, me too, love.' a pause, then whispered 'Are you ready for this?'",
+    "The hands (at2152, at2360): no cut back to the chairs; they go straight to white, full white by 3.7 s of the clip, before the grip loosens (it loosens from ~4.5 s)."
+   ]
+  },
+  {
+   "h": "Lip sync",
+   "items": [
+    "'And then?' (at942/at991): Derek's mouth redrawn with LatentSync to his two syllables, shut after. Premiere builds as 06 GPOM story D crossing r5."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Music: the existing cello now starts on 'they sit'. If it still isn't mournful enough, a new violin-and-cello Suno cue is the next step (Suno credits).",
+    "The empty chairs from above still hold 15 s under Maddie's 'It runs on you...' line."
+   ]
+  }
+ ],
+ "replies_round8": {
+  "top": "Round 8: every round-7 note acted on, including the LatentSync lip sync on \"And then?\".",
+  "at942": "Done with LatentSync (the gpom-intro mouth redraw, run by you): Derek's mouth now opens only on 'And then?' and stays shut after. [GPU, no credits]",
+  "at991": "Done: the redrawn clip (D07-ls) replaces the old one; his mouth no longer keeps going after the two syllables.",
+  "at1400": "Done, cut to the chase in your words: \"You don't wake up. Not this you. But look, you'll go back. It'll still be you, before it all went wrong. And he'll be there with you this time.\" He? / data travels / Right and Derek's walk are gone. [new voice take + edit]",
+  "at1750": "Done: the tea is cut whole. [edit only]",
+  "at1849": "Done for now: we reach this shot ~20 s sooner, and the cello cue (the mournful one) now starts right here, the cute piano ends here. A new violin/cello Suno cue is the next step if it's still not mournful enough. [edit only]",
+  "at1951": "Done: Sandra says \"You know, I'm looking forward to seeing Derek before the world ended.\" It now starts over the last of 'they sit'. [new voice take]",
+  "at2104": "Done: \"Yes, me too, love.\" then a 1.3 s pause, then \"Are you ready for this?\" whispered, tender, as its own take. [new voice takes]",
+  "at2152": "Done: the cut to white is full by 3.7 s of the hands clip; their grip starts to loosen at ~4.5 s, so it is never seen. [edit only]",
+  "at2360": "Done: the chairs shot between the hands is gone; the hands go straight to white, then the prints at the door. [edit only]"
+ },
+ "kai_round8": {
+  "at849": "I don't think we should do will it hurt not much less than the last five years. We should cut these lines",
+  "at1147": "I think this part waffles far too much I think we should just cut it out and see what happens I think let's just like skip over this whole explanation I think it's like already intended like we're going back to fix it",
+  "at1275": "I think the idea of like he'll be there with you this time is the one thing we should say like we need to skip over all of this big waffle-y sentences but we should definitely say like look you know it's gonna be fine he will be there this time",
+  "at331": "It sounds like Maddy's being a bit sarcastic and condescending here. She should say it's the time machine, there's a hundred chairs, it runs on you, she should be empathetic.",
+  "at557": "I think, let's find a way that the previous sentence gets Derek to say the 100, so Maddy should be empathetic, like, you know, she shouldn't say count the chairs, love, it sounds like she's being sarcastic, it's more like, it's a time machine, and it runs on you, can you see how many chairs there are? Derek should say 100. Then Maddy can say yeah, it runs on all of you at once. It's a bit like dying, mostly like nodding off in front of the telly, I like that."
+ },
+ "plan_round9": [
+  {
+   "h": "Round 9: the wafer, kind and short (1:15, was 1:26)",
+   "items": [
+    "Maddie, empathetic, your words: \"It's the time machine. And it runs on you. Can you see how many chairs there are?\" / Derek: \"Hundred.\" / \"Yeah. It runs on all of you, all at once. It's a bit like dying. Mostly like nodding off in front of the telly.\"",
+    "\"Will it hurt? / Not much...\" is cut, with Sandra's shot: the chairs go straight to Derek's \"And then?\" (his LatentSync mouth).",
+    "The waffle is gone: \"You don't wake up. Not this you. But look, it's going to be fine. He'll be there with you this time.\"",
+    "Her voice direction now says 'never sarcastic or condescending'; three new takes, pauses shortened (words never sped up)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "The take says \"it's going to be fine\" (the 'gonna' take was heard as \"he's gonna be fine\", so I didn't use it). Say if you want 'gonna' re-voiced.",
+    "The empty chairs from above now hold 12.5 s under Derek's count and Maddie's answer."
+   ]
+  }
+ ],
+ "replies_round9": {
+  "top": "Round 9: all five round-8 notes acted on.",
+  "at331": "Done: she's not sarcastic any more. New line in your words, \"It's the time machine. And it runs on you. Can you see how many chairs there are?\", and her direction now says never sarcastic or condescending. [new voice take]",
+  "at557": "Done: her question gets Derek to say \"Hundred.\", then \"Yeah. It runs on all of you, all at once. It's a bit like dying. Mostly like nodding off in front of the telly.\" [new voice take]",
+  "at849": "Done: \"Will it hurt? / Not much, less than the last five years\" is cut, with Sandra's shot. [edit only]",
+  "at1147": "Done: the explanation (\"you'll go back, it'll still be you, before it all went wrong\") is cut. [new voice take]",
+  "at1275": "Done: \"You don't wake up. Not this you. But look, it's going to be fine. He'll be there with you this time.\" [new voice take]"
+ },
+ "kai_round9": {
+  "at978": "I think we need to say you don't wake up not this you but the you before it went wrong will be there and they will get they will have a chance to fix it"
+ },
+ "plan_round10": [
+  {
+   "h": "Round 10: the key line (1:19)",
+   "items": [
+    "Maddie: \"You don't wake up. Not this you. But the you before it all went wrong will be there, with a chance to fix it. And he'll be there with you this time.\" One new take, pauses shortened.",
+    "It runs 1.3 s longer than Derek and the old lady's nod, so its last words land back on Maddie's beacon."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "I kept \"And he'll be there with you this time.\" from your last round as well. If it's one idea too many now, it can go and the line ends on \"a chance to fix it.\""
+   ]
+  }
+ ],
+ "replies_round10": {
+  "top": "Round 10: your one note, done.",
+  "at978": "Done: \"You don't wake up. Not this you. But the you before it all went wrong will be there, with a chance to fix it. And he'll be there with you this time.\" (kept your last round's promise too; say if it should go). [new voice take]"
+ },
+ "kai_round10": {
+  "at1242": "Okay so I think we should just not say I'm looking forward to seeing Derek before the world ended. The music changes I don't think we should change the music we should keep the continuity of the music we should drop Sandra saying you know I'm looking forward to seeing Derek before the world ended. We should just cut to Derek saying are you ready for this with the holding hands and fade to white."
+ },
+ "plan": [
+  {
+   "h": "Round 14: more jeopardy, quicker goodbye (1:26)",
+   "items": [
+    "Derek: 'Hundred. ... What will it feel like?' is one take now, with a long pause his own and his voice the same all through, small and vulnerable.",
+    "After Maddie's answer, Sandra, frightened: 'I don't like the idea of... it feels like dying.' Maddie, with long pauses: 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' No 'take a seat': a breath, then they sit, in silence (no 'Thank you').",
+    "The goodbye is quick: in on the hands as they meet, 'Are you ready for this, my love?' at once, white. Hands to white is 3.8 s (was 11.7)."
+   ]
+  },
+  {
+   "h": "Stand-ins until the new shots",
+   "items": [
+    "Sandra says her line on her old listening shot (mouth shut, the battered Maddie behind her), and Maddie's vow plays on her wafer shot from the start of the scene, its last frame held 2.6 s.",
+    "New shots needed, all from the final Maddie shot's room as the one chair layout: the chairs from above, everyone seated, and a two-shot of Sandra speaking with clean Maddie beside her. Plus the hands reaching together. Stills first, for you to pick."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Is Maddie's pause length right (held to 1.2 s each)? Say 'go on the shots' for the stills."
+   ]
+  }
+ ],
+ "replies": {
+  "top": "Round 14: every words-and-timing note done; the picture notes need new shots (stills first).",
+  "at542": "Done: one take, 'Hundred. ... What will it feel like?', a 1.9 s pause in it, his voice the same throughout, vulnerable on the question. [new voice]",
+  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come]",
+  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video]",
+  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video]",
+  "at1284": "Done: 'Thank you' is gone. They sit in silence. [edit only]",
+  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come]",
+  "at1575": "Done: hands to white is now 3.8 s, a third of before. [edit only]",
+  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video]"
+ },
+ "plan_round11": [
+  {
+   "h": "Round 11: the goodbye, quieter (1:19)",
+   "items": [
+    "Sandra's line and 'Yes, me too, love' are gone. The hands find each other and grip (the first hands shot plays whole), Derek whispers 'Are you ready for this?', and they go to white.",
+    "The music no longer changes: the piano fades out over ~3 s under 'they sit' while the cello rises beneath it (it was a hard switch with a swell in 1 s)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "If 'keep the continuity' meant one cue the whole way (the piano carrying on through the crossing, no cello), say so and I'll do that instead."
+   ]
+  }
+ ],
+ "replies_round11": {
+  "top": "Round 11: your note, done.",
+  "at1242": "Done: no Sandra, no 'me too'. Straight to the hands, Derek's whispered 'Are you ready for this?', then white. The music no longer switches: piano and cello cross over slowly under 'they sit'. [edit only]"
+ },
+ "kai_round12": {
+  "at1428": {
+   "note": "There's a noticeable grading shift between this and the previous shot. I don't know if it's an artifact of the length of the AI, but it's like a cut that is of the same shot, if that makes sense.",
+   "tc": "00:00:59:12",
+   "beat": "d8"
+  },
+  "at1233": {
+   "note": "The way this looks is that Sandra is desperately trying to encourage Derek to hold her hand, whereas we should have them both reaching out their hands together. So it doesn't look like she's looking for attention. It should look like they are both deciding to hold hands.",
+   "tc": "00:00:51:09",
+   "beat": "d7"
+  },
+  "at1025": {
+   "note": "So to be clear, this shot should be of the old lady asking Maddy what will happen afterwards, before her response.",
+   "tc": "00:00:42:17",
+   "beat": "d3"
+  },
+  "at701": {
+   "note": "I think here, after Derek says 100, he should say, what does it feel, what will it feel like? And Maddy shouldn't say, yeah, it runs in all of you all at once. I think that's already become established. She should just say, it's a bit like dying, mostly like, but it'll feel mostly like nodding off in front of the telly. But Derek needs to ask her, what will it feel like beforehand?",
+   "tc": "00:00:29:05",
+   "beat": "d3"
+  },
+  "at940": {
+   "note": "I think this response should be the answer to the old lady's question in place of Derek asking the question. The old lady should say, what will happen once this is, once we've, what will happen after this is this? And I think Maddy should explain, well, two things. First of all, you will be you just before it all went wrong. Second of all, he will be there. But the lady needs to ask the question, what will happen afterwards? And then Maddy's explanation should be, well, you will be there, but just before it all went wrong. And then also, he will be there with you and you'll both have a chance to fix it. That's what we should say.",
+   "tc": "00:00:39:04",
+   "beat": "d3"
+  },
+  "at803": {
+   "note": "The lip-syncing trick that we're using, it really does, like Derek's face here just looks pissed off, which is too strong, and I don't think it should be Derek speaking here, I think it should be the old lady that says, what will happen when he arrives back in time? I think Derek's already asked the what will it feel like question, so we should cut to the old lady at this point.",
+   "tc": "00:00:33:11",
+   "beat": "d3"
+  },
+  "at1153": {
+   "note": "Hey, Claude. So the only issue here is the inconsistency between this shot and the final shot with Maddy. In the final shot with Maddy, she's where a chair is in this shot. So are we able, please, to make the two shots consistent? I'd kind of prefer, almost, to take the final shot with Maddy as the canonical version and make this shot be based on that layout of chairs, if that makes sense. It's just a consistency issue.",
+   "tc": "00:00:48:01",
+   "beat": "d6"
+  }
+ },
+ "plan_round12": [
+  {
+   "h": "Round 12: the sacrifice, made obvious (not cut yet)",
+   "items": [
+    "Your words notes plus your chat note ('up the ante') are now three drafts on the dialogue page (https://claude.ai/artifact/W1GrGb1W8meMiHaxLkYffj): 1H, 1I, 1J. All three use your new order: Derek asks 'What will it feel like?', the lady asks 'And afterwards?', and Maddie answers in two things. Then the hundred choose. My pick is 1H.",
+    "Pick one there and I'll voice it, re-cut, and land it here and in Premiere together."
+   ]
+  },
+  {
+   "h": "Picture, after the words are picked",
+   "items": [
+    "Lady's question on her close-up, given a mouth with the lip-sync tool (needs you to run one command). Derek's question goes over the chairs, so his angry-looking face is gone.",
+    "Hands: a new take where they both reach together (new Flow video).",
+    "Chairs: a new 'they sit' still drawn from the final Maddie shot's layout. You approve the still, then I animate it.",
+    "Grading jump between the two hands shots: colour-matched in ffmpeg (no new video)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Pick a draft on the dialogue page. Say go on the three new shots (one still to approve, two Flow videos)."
+   ]
+  }
+ ],
+ "replies_round12": {
+  "top": "Round 12: read. Words go to the dialogue page first; picture fixes are listed below.",
+  "at701": "Yes: Derek asks 'What will it feel like?' after 'Hundred', and Maddie's answer drops 'It runs on all of you'. In all three drafts on the dialogue page. [new voice take]",
+  "at803": "Agreed. Derek's 'And then?' (the angry lip-sync) is cut. The lady asks 'And afterwards?' instead. Derek's new question plays over the chairs, not his face. [new voice + lip-sync]",
+  "at940": "Written as Maddie: 'Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.' Each new draft adds a moment where they choose (your chat note). [new voice take]",
+  "at1025": "Yes: this shot (the lady's close-up) becomes her asking 'And afterwards?', given a mouth with LatentSync (the lip-sync tool). You run one command. [lip-sync]",
+  "at1153": "Will do: a new still of everyone seated, with the chairs laid out as in the final Maddie shot. You approve it, then I animate it. [new still + video]",
+  "at1233": "Will re-roll the hands so both reach out together, from the same plate. [new Flow video]",
+  "at1428": "It's a chained extension of the same shot, and the colour drifted. I'll colour-match its start to the end of the first shot in ffmpeg. If the hands are re-rolled, I re-chain from the new take. [edit only]"
+ },
+ "kai_round13": {
+  "dialogue page": "1I line 8 ('I won't switch it on unless you want it... take a seat'): 'really emotionally important... incredible tenderness... great'; 2D: 'Derek should just say, are you ready for this my love? Keep it really simple.'"
+ },
+ "plan_round13": [
+  {
+   "h": "Round 13: they choose it (1:24)",
+   "items": [
+    "The wafer, in your order: 'Hundred.' / Derek 'What will it feel like?' / 'It's a bit like dying. Mostly like nodding off in front of the telly.' / the lady, on her close-up, 'And afterwards?' / Maddie 'Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.'",
+    "Then the choice (dialogue 1I): Maddie, as tender as she gets, 'I won't switch it on unless you want it. All of you. If you're sure... take a seat.' The cut to them sitting lands on 'take a seat'. They sit; nobody makes them. Maddie, barely there: 'Thank you.'",
+    "The goodbye: Derek's whisper is now 'Are you ready for this, my love?'",
+    "The jump at the hands join is gone: the second hands shot had been given its own white balance."
+   ]
+  },
+  {
+   "h": "Still to come",
+   "items": [
+    "The lady's mouth is done: LatentSync redrew her close-up to 'And afterwards?' (you ran it, 87 s).",
+    "New shots, once you say go: the hands both reaching together (at1233), and the seated room laid out like the final Maddie shot (at1153)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Is the vow tender enough? It's on Sandra listening, then Maddie. Is 'Thank you' right, or should they sit in silence?"
+   ]
+  }
+ ],
+ "replies_round13": {
+  "top": "Round 13: dialogue 1I and your seven notes are in. 1:24.",
+  "at701": "Done: after 'Hundred', Derek asks 'What will it feel like?' and Maddie says only 'It's a bit like dying. Mostly like nodding off in front of the telly.' [new voices]",
+  "at803": "Done: Derek's 'And then?' and his angry-looking shot (D07) are gone. The lady asks 'And afterwards?' [new voice]",
+  "at940": "Done in your words: 'Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.' It plays on the lady, then her hands. [new voice]",
+  "at1025": "Done: this shot is the lady asking 'And afterwards?', her mouth redrawn by LatentSync to the line. [lip-sync]",
+  "at1153": "Not yet: a new seated-room still with the final Maddie shot's chair layout, for you to approve, then a Flow video. Say go. [new still + video]",
+  "at1233": "Not yet: a re-roll of the hands, both reaching together. Say go. [new Flow video]",
+  "at1428": "Fixed: the second hands shot had been given its own white balance. It now shares the first one's, so the join is invisible (saturation 7.9 vs 7.8). [edit only]"
+ },
+ "kai_round14": {
+  "at509": {
+   "note": "Hey, Claude. So this arrangement of chairs does not line up with the last arrangement of chairs where Maddy's in a gap. We need to make the arrangement of chairs be consistent. So possibly we should have a character that is the arrangement of chairs. I don't know. Like can we please make the chair layout consistent? On the very last scene of this whole, the very last picture on this whole thing, Maddy is in a gap in the chair. Equally halfway through the scene, there's another arrangement where there's a chair in the gap. So we're not being consistent with the layout of chairs and we need to be. Thank you.",
+   "tc": "00:00:21:05",
+   "beat": "d3"
+  },
+  "at1575": {
+   "note": "Yeah, I think this whole scene could be one third the length until we end up faded out to white.",
+   "tc": "00:01:05:15",
+   "beat": "d8"
+  },
+  "at1938": {
+   "note": "Okay, so I think, yeah, this is the canonical layout of the seats and we need to go back to where we've got other layouts of the seats and make it be this layout, please.",
+   "tc": "00:01:20:18",
+   "beat": "d9"
+  },
+  "at1231": {
+   "note": "So again, the layout of the room needs to be consistent with the last frame where Maddy is. Also, it would be good if we, you know, take the last scene where there are blankets and things and let's just retrofit back to this scene with people in the chair to keep the consistency, I think.",
+   "tc": "00:00:51:07",
+   "beat": "d6"
+  },
+  "at1068": {
+   "note": "OK, we need another pause here. I think maybe Sandra should say I don't like the sound of it will feel like dying. I think we need to add a bit more jeopardy here, to which Maddy can then say I won't switch it on unless you want it, all of you, if you're sure. Get rid of take a seat. Also, with Maddy's response, she needs to have lots of pauses between each of those. I won't switch it on unless you want it, pause, all of you, pause, and only if you're sure. Also, so yes, Sandra should say I don't like the idea of pause, it feels like dying. And then, yeah, Maddy needs to be like, look, I get it. We'll only do this if you're up for it, essentially, but in the words that I've just said. Also, a continuity thing, Maddy needs to be clean Maddy in this room here.",
+   "tc": "00:00:44:12",
+   "beat": "d3"
+  },
+  "at1284": {
+   "note": "I don't think we need to thank you I think the fact that they all sit down is the yeah let's lose the thank you altogether",
+   "tc": "00:00:53:12",
+   "beat": "d6"
+  },
+  "at542": {
+   "note": "I think we need to pause a bit more between 100 and what will it feel like? And I'd like a couple of recuts of what will it feel like? Because Derek's voice all of a sudden is sort of slightly higher timbre than he says 100. It might be worth us doing a single cut of him saying 100, pause, what will it feel like? That might actually be the better option is to just merge those two sentences into one generation and use the emotional prompting of the model to handle the pause. And also, like, emotionally, Derek should be sort of slightly vulnerable when he asks this question.",
+   "tc": "00:00:22:14",
+   "beat": "d3"
+  },
+  "at1342": {
+   "note": "Again, here we need the cut where they just both hold hands rather than Sandra reaching out for Derek's hand.\nAnd more generally, this scene should be quicker. It should be straight away to them go, Derek saying, are you ready for this love? And then the fade to white.",
+   "tc": "00:00:55:22",
+   "beat": "d7"
   }
  }
 }

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/video/LO2-e.mp4",
+ "made": "2026-11-06T21:38:24.417Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Below the man on the hill the town's lights go out in waves rolling towards him; he takes a slow step back. Realistic, documentary 35mm grain, no text.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/home/kai/.cache/flow-refs/choruses/vid/LO2-e.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/flow-refs/choruses/vid/LO2-e.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 4
+ },
+ "source_id": "476e03dc-570b-4b25-ab1f-f6a0d49c2ef6"
+}

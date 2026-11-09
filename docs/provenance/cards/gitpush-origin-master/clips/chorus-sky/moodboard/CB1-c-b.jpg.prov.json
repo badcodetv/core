@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/CB1-c-b.jpg",
+ "made": "2026-11-09T14:38:38.132Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, keep exactly the same framing, camera position, buildings, light and weather, but remove every single person: the place is completely deserted. Towels, parasols and flip-flops left across the empty sand and the wave-pattern pavement, the hotel windows still lit. A thin haze of dust drifts low across the ground. Keep everything else exactly the same, preserving the original style, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/CB1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/CB1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2525c103-6ac3-472e-b8c5-9df274bae4d9"
+}

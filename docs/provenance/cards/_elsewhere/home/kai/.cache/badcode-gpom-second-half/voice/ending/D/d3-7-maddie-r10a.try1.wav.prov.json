@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-7-maddie-r10a.try1.wav",
+ "made": "2026-11-06T21:10:22+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "You don't wake up. Not this you. But the you before it all went wrong will be there, with a chance to fix it. And he'll be there with you this time.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: 'You don't wake up. Not this you.' plain, steady and kind; a breath; then warmer, with real hope: 'But the you before it all went wrong will be there, with a chance to fix it.' 'And he'll be there with you this time.' the promise, warm and certain, falling gently at the end; say 'he'll' with a clear, breathy h and a long 'ee' (HEE-ul): it means the boss, so it must never be heard as 'you'll' or 'ill'; lean on it a little.\nStyle: no jokes, no cheek, no gossip, never sarcastic or condescending: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-7-maddie-r10a.md"
+ },
+ "settings": {
+  "voice": "Aoede",
+  "temperature": 1,
+  "channels": 2
+ }
+}

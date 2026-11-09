@@ -463,9 +463,9 @@
    "what": "round 9: Sandra's aliens punchline cut, the row ends on Derek (0:37)",
    "how": "premiere-plan.py <edl> premiere-r4.json --tag r4 --seq '05 GPOM story C walk out r4'; cut_end.py --tag noaliens",
    "check": {
-    "at": "2026-11-05T21:51",
-    "state": "in sync",
-    "why": ""
+    "at": "2026-11-09T19:14",
+    "state": "edited in Pr",
+    "why": "40 effects added"
    }
   }
  },
@@ -488,7 +488,7 @@
   }
  ],
  "video": {
-  "model": "Omni 1.1 Flash",
+  "model": "Omni 1.2 Flash",
   "aspect": "16:9",
   "mode": "Frames",
   "duration": 8

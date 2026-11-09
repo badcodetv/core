@@ -1,0 +1,80 @@
+{
+ "story": "gitpush-origin-master",
+ "scene": "chorus-outbreak",
+ "prefix": "ob",
+ "title": "GPOM Chorus: Outbreak Night",
+ "heading": "GitPush Origin Master <span class=\"tri\">\u25b2</span> the chorus: Outbreak Night + the Rumbling",
+ "moodboard_intro": "Round 1. The half-chorus between the banks and the war, 32 beats, about 11 s. The night our machines woke up: the cars on an evacuation motorway lock their doors and drive themselves, then the port cranes stand up and walk through the city. Shots in film order, two or three cinematography options each (lens, height, angle). Tap This, Maybe or No, and leave a note per shot.",
+ "storyboard_intro": "Kai's 7 picks in film order across the 32 beats (11 s). Each frame has three ways to shoot it. The camera work is the point: pick the move per frame, and leave a note if you want a different one.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak",
+ "flow_project": "7c30dbaf-9efd-4f94-84e6-49c3314cad21",
+ "premiere": {
+  "sequence": "01 GPOM start",
+  "slot": [
+   106.917,
+   117.954
+  ],
+  "song_in": 113.917
+ },
+ "board_round": 1,
+ "beats": [
+  {
+   "key": "CA",
+   "at": "beats 1-4",
+   "name": "Inside the car",
+   "blurb": "A jammed evacuation motorway at night, from inside one car. The cup of water on the dashboard ripples on the kick, and we don't yet know why."
+  },
+  {
+   "key": "LK",
+   "at": "beats 5-8",
+   "name": "The cars wake",
+   "blurb": "Every headlight flips cold white at once, the locks drop, and the wheels turn with no hands on them."
+  },
+  {
+   "key": "FR",
+   "at": "beats 9-12",
+   "name": "Fire down the lanes",
+   "blurb": "A chain of fire runs down the stopped traffic. People flee, small and seen from behind."
+  },
+  {
+   "key": "CR",
+   "at": "beats 13-16",
+   "name": "The cranes stand up",
+   "blurb": "The scale break. The port's container cranes pull free of their rails and stand. That was the tremor."
+  },
+  {
+   "key": "RK",
+   "at": "beats 17-22",
+   "name": "The rank walks",
+   "blurb": "A line of cranes walks across the skyline in step on the kick. A British terraced street for scale."
+  },
+  {
+   "key": "FT",
+   "at": "beats 23-26",
+   "name": "The foot",
+   "blurb": "One foot comes down on a motorway flyover. It is here."
+  },
+  {
+   "key": "GL",
+   "at": "beats 27-28",
+   "name": "Everywhere",
+   "blurb": "One beat each: Rotterdam, Shanghai, New York."
+  },
+  {
+   "key": "EN",
+   "at": "beats 29-32",
+   "name": "The bookend",
+   "blurb": "The opening frame again, with the driver's seat empty. The car drives itself in a convoy toward a town. Then black, into the war."
+  }
+ ],
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/9cbB2BCapQJx89CfXJAHVR",
+  "storyboard": "https://claude.ai/artifact/Q1N135fLAyA9rZadxhqRpD"
+ },
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ }
+}

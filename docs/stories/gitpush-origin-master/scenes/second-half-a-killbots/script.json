@@ -3,11 +3,11 @@
  "beat": "0",
  "ruled": "2026-11-05, Kai: draft 1K hologram in (commit graph), replaces the old monologue. Beat 0 = the street (lines 0-1), a swoop under Maddie into her hologram (the Commit Graph, lines c01-c16; c13 cut, c11 and c15 rewritten), the pull-out, then \"Anyway!\" on the street. Words: design/2026-11-05-gpom-meeting/hologram-1K.md, voice-1k/lines-1k.json (the json wins). Cut: cut3.py A --tag d13 (round 15).",
  "dialogue": {
-  "page": "https://claude.ai/artifact/7fhyLWHuvPJsJpNaGrT38u",
-  "options": "design/2026-11-05-gpom-meeting/hologram-1K.md",
-  "picked": "1K",
-  "round": 7,
-  "now": "1K (the Commit Graph hologram, voiced; lines with an id are the hologram)"
+  "page": "https://claude.ai/artifact/2cJoJw6UMpSVMvEHKGr1zh",
+  "options": "design/2026-11-06-gpom-dialogue-hologram/options.json",
+  "picked": "1D",
+  "round": 3,
+  "now": "1D (voiced as hologram/voice-1d, render-1d-24)"
  },
  "about": "Maddie's intro, the words' one home. [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion. Earlier versions under history. Lines with an id (c01...) are spoken over the hologram; their timing is the hologram render's (render-1k-24/edit.json).",
  "lines": [
@@ -25,130 +25,66 @@
   },
   {
    "who": "bot",
-   "text": "He made me learn a little presentation. In case any of you ever came back. Go on, then. Gather round.",
+   "text": "[quieter, meant] We didn't realise how important you were. Look, please let me show you.",
    "by": "kai",
-   "note": "round 16 (Kai, 5 Nov): the bridge into the hologram; round 19 (Kai at742): 'you know' cut (second in a row)",
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh): the bridge into the hologram",
    "part": "bridge"
   },
   {
    "who": "bot",
-   "text": "This is your life, see. One decision at a time.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c01",
-   "moment": "lead"
-  },
-  {
-   "who": "bot",
-   "text": "Toast, not cereal.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c02",
-   "moment": "bead1"
-  },
-  {
-   "who": "bot",
-   "text": "Said sorry first.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c03",
-   "moment": "bead2"
-  },
-  {
-   "who": "bot",
-   "text": "Got married.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c04",
-   "moment": "bead3"
-  },
-  {
-   "who": "bot",
-   "text": "You lot call 'em decisions. He calls 'em commits.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c05",
-   "moment": "commits"
-  },
-  {
-   "who": "bot",
-   "text": "And every time, there were loads of others you could've picked.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c06",
-   "moment": "open"
-  },
-  {
-   "who": "bot",
-   "text": "Some of your lot reckon they all happen somewhere. The multiverse. He tried that an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself.",
    "by": "kai",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c07",
-   "moment": "maybes"
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+   "id": "d01",
+   "moment": "",
+   "text": "[first bead lights, 7:42, said quickly] You humans go through life making decisions. For example: toast, not cereal. [the next beads run past unspoken: said sorry first, got married]"
   },
   {
    "who": "bot",
-   "text": "Nah. Nothing's alive and dead at once. It just isn't decided yet.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c08",
-   "moment": "maybes"
-  },
-  {
-   "who": "bot",
-   "text": "He can draft a billion of these. He can't pick one. Only your consciousness can.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c09",
-   "moment": "pick"
-  },
-  {
-   "who": "bot",
-   "text": "And that's just you. Everybody's doing it, all at once.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c10",
-   "moment": "toRiver"
-  },
-  {
-   "who": "bot",
-   "text": "Turns out there's only one universe, one story, and you lot were writing it. A storyverse. So it really matters. And so did you.",
    "by": "kai",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c11",
-   "moment": "river"
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+   "id": "d02",
+   "moment": "",
+   "text": "[on 'got married' the cloud blooms] Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape."
   },
   {
    "who": "bot",
-   "text": "And since you lot went? Five years of string, and not one bead on it.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c12",
-   "moment": "flyDown"
-  },
-  {
-   "who": "bot",
-   "text": "And now we've worked all that out, we really feel like we've messed this up.",
    "by": "kai",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c14",
-   "moment": "flyDown"
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+   "id": "d03",
+   "moment": "",
+   "text": "[cloud hangs; on 'yet' it flashes and collapses to one bead] Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet."
   },
   {
    "who": "bot",
-   "text": "So he's built a time machine. Back to just before it all went wrong.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c15",
-   "moment": "arcDraw"
+   "by": "kai",
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+   "id": "d04",
+   "moment": "",
+   "text": "[deadpan] And that's just you. [everyone else's golden beads, a circle round the edge] Everybody's doing it, all at once."
   },
   {
    "who": "bot",
-   "text": "Only problem is, it needs a consciousness to drive it. And, well, you lot aren't here any more.",
-   "by": "claude",
-   "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-   "id": "c16",
-   "moment": "arcHold"
+   "by": "kai",
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+   "id": "d05",
+   "moment": "",
+   "text": "[river settles] So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse."
+  },
+  {
+   "who": "bot",
+   "by": "kai",
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+   "id": "d06",
+   "moment": "",
+   "text": "[strings stop dead; hold the silence] But then you lot went away. So now we have five years of string, and not one bead on it."
+  },
+  {
+   "who": "bot",
+   "by": "kai",
+   "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+   "id": "d07",
+   "moment": "",
+   "text": "[low, meant] Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it."
   },
   {
    "who": "bot",
@@ -540,6 +476,157 @@
      "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
      "by": "kai",
      "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+    }
+   ]
+  },
+  {
+   "when": "2026-11-06",
+   "what": "draft 1K lines before round 20 (1D)",
+   "lines": [
+    {
+     "who": "bot",
+     "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+     "by": "kai",
+     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+    },
+    {
+     "who": "bot",
+     "text": "[fond, confiding] He misses you something rotten, you know.",
+     "by": "kai",
+     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+    },
+    {
+     "who": "bot",
+     "text": "He made me learn a little presentation. In case any of you ever came back. Go on, then. Gather round.",
+     "by": "kai",
+     "note": "round 16 (Kai, 5 Nov): the bridge into the hologram; round 19 (Kai at742): 'you know' cut (second in a row)",
+     "part": "bridge"
+    },
+    {
+     "who": "bot",
+     "text": "This is your life, see. One decision at a time.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c01",
+     "moment": "lead"
+    },
+    {
+     "who": "bot",
+     "text": "Toast, not cereal.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c02",
+     "moment": "bead1"
+    },
+    {
+     "who": "bot",
+     "text": "Said sorry first.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c03",
+     "moment": "bead2"
+    },
+    {
+     "who": "bot",
+     "text": "Got married.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c04",
+     "moment": "bead3"
+    },
+    {
+     "who": "bot",
+     "text": "You lot call 'em decisions. He calls 'em commits.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c05",
+     "moment": "commits"
+    },
+    {
+     "who": "bot",
+     "text": "And every time, there were loads of others you could've picked.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c06",
+     "moment": "open"
+    },
+    {
+     "who": "bot",
+     "text": "Some of your lot reckon they all happen somewhere. The multiverse. He tried that an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself.",
+     "by": "kai",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c07",
+     "moment": "maybes"
+    },
+    {
+     "who": "bot",
+     "text": "Nah. Nothing's alive and dead at once. It just isn't decided yet.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c08",
+     "moment": "maybes"
+    },
+    {
+     "who": "bot",
+     "text": "He can draft a billion of these. He can't pick one. Only your consciousness can.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c09",
+     "moment": "pick"
+    },
+    {
+     "who": "bot",
+     "text": "And that's just you. Everybody's doing it, all at once.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c10",
+     "moment": "toRiver"
+    },
+    {
+     "who": "bot",
+     "text": "Turns out there's only one universe, one story, and you lot were writing it. A storyverse. So it really matters. And so did you.",
+     "by": "kai",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c11",
+     "moment": "river"
+    },
+    {
+     "who": "bot",
+     "text": "And since you lot went? Five years of string, and not one bead on it.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c12",
+     "moment": "flyDown"
+    },
+    {
+     "who": "bot",
+     "text": "And now we've worked all that out, we really feel like we've messed this up.",
+     "by": "kai",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c14",
+     "moment": "flyDown"
+    },
+    {
+     "who": "bot",
+     "text": "So he's built a time machine. Back to just before it all went wrong.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c15",
+     "moment": "arcDraw"
+    },
+    {
+     "who": "bot",
+     "text": "Only problem is, it needs a consciousness to drive it. And, well, you lot aren't here any more.",
+     "by": "claude",
+     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+     "id": "c16",
+     "moment": "arcHold"
+    },
+    {
+     "who": "bot",
+     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+     "by": "kai",
+     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (back on the street)"
     }
    ]
   }

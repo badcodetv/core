@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/TR1-c-b.jpg",
+ "made": "2026-11-06T18:43:49.919Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of this trader, show the same man in a long row of plastic chairs in a beige government job centre waiting room under fluorescent strip lights, holding a paper queue ticket, his grey jacket and lanyard-less shirt, surrounded by other office workers in suits waiting the same way, nobody talking. Documentary 35mm still, fine grain, flat institutional light, muted beige and grey, observational and unposed, wide landscape frame, no writing, signs or logos anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/MK5-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/MK5-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ea8b6f74-9096-47e6-ad33-2bcdee496d2d"
+}

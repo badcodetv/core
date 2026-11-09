@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/cut-r1/music-pass.wav",
+ "made": "2026-11-08T12:21:00+00:00",
+ "by": "claude",
+ "kind": "music",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+ "why": "chorus 2 first chant pass, song 113.917 s, 32 beats",
+ "settings": {
+  "start": "113.917",
+  "dur": "11.042"
+ }
+}

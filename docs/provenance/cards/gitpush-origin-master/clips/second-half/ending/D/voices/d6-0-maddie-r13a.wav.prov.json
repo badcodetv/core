@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d6-0-maddie-r13a.wav",
+ "made": "2026-11-09T17:52:17+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "Gemini TTS",
+ "tool": "scripts/gpom/second-half-video/ending/voices_fix.py D r13",
+ "model": "Aoede",
+ "why": "GPOM scene D round 13 (Kai, 9 Nov, dialogue 1I)",
+ "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: very quietly, as they all sit; moved, almost no voice; two words of gratitude, no smile.\nStyle: no jokes, no cheek: the kindest person in the room, moved almost past speaking, watching people she loves choose to die for everyone else; very soft and close.\nPace: two quiet words, slow, with air before them.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+ "inputs": {
+  "text": "Thank you."
+ }
+}

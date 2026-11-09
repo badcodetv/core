@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/11-b.jpg",
+ "made": "2026-11-06T18:57:00.674Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "View through the rear window of a car at night: a town receding behind a line of tail-lights, a dull orange glow under the clouds above it, the dark silhouette of the headrests in the foreground. 35mm photograph, grain, no flames visible, no readable writing anywhere.",
+ "source_id": "5919baec-1417-4ebc-821e-779d14bb7c3a"
+}

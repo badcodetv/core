@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/GR3-c.jpg",
+ "made": "2026-11-06T19:23:37.368Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The people walking the hard shoulder in this frame, filmed again at ankle height from behind: suitcase wheels rattling over the wet tarmac, adult legs and shoes walking away into the headlight glare. Same night, same grain.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/GR1-c-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/GR1-c-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "c80b7720-d7dd-4e7b-a494-de5395f99540"
+}

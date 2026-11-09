@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/MW1-c-a.jpg",
+ "made": "2026-11-09T14:37:48.961Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, keep exactly the same framing, camera position, buildings, light and weather, but remove every single person: the place is completely deserted. Every car left where it stopped across every level, doors open, headlights still on, nobody anywhere. A thin haze of dust drifts low across the ground. Keep everything else exactly the same, preserving the original style, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/MW1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/MW1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "0f713f60-02bb-4a36-8238-bde13c766904"
+}

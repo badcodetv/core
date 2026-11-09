@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/EN1-b.jpg",
+ "made": "2026-11-09T17:48:41.638Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Wide shot at first grey light of a British motorway with no people anywhere: a long, perfectly spaced convoy of empty cars with no drivers drives in formation along all lanes towards a small town on the horizon, every car's lights the same cold white, smoke rising from the town, abandoned vehicles on the verge. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "4b335279-7100-475f-b4a7-5a1617d28aa6"
+}

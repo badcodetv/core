@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-1-derek-r7a.wav",
+ "made": "2026-11-06T19:40:56+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/ending/voices_fix.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "GPOM scene D round 7 (d7-1-derek); dialogue draft 1F/2D, Kai 6 Nov",
+ "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: warm, a small breath of a laugh on 'Yes, me too, love'; then quieter and tender, serious, holding her hand: 'Are you ready for this?'.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+ "inputs": {
+  "text": "Yes, me too, love. Are you ready for this?"
+ },
+ "settings": {
+  "voice": "Algieba"
+ }
+}

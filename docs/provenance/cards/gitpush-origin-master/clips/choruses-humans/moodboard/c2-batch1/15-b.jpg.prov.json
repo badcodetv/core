@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/15-b.jpg",
+ "made": "2026-11-06T18:57:00.731Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night, wide view from a hill above Swindon: the town spread out below, and half of it has gone completely dark, the darkness spreading through the streets as districts lose power one after another, the remaining half still lit orange. 35mm photograph, grain, deep night blue, no fire, no readable writing anywhere.",
+ "source_id": "122dfee9-d503-4e24-be74-e7ac907399f7"
+}

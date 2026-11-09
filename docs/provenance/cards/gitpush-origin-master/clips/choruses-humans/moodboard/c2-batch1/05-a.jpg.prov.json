@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/05-a.jpg",
+ "made": "2026-11-06T18:57:00.552Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A Victorian terraced street in Swindon at dusk, the streetlights stuttering on and off down the row, a family of adults standing at a front bay window looking out up the street with worried faces, a television's glow behind them. 35mm documentary photograph, fine grain, cold blue dusk, observational, no readable writing anywhere.",
+ "source_id": "36e4d769-bbd1-473a-b7a7-43e3721ca27a"
+}

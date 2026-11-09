@@ -163,7 +163,7 @@ files intact; music and sfx stems are shared, so a rebuild that changes a stem m
 
 1. `premiere_import` every file in `plan.files`, `bin: "<the sequence name>"`
 2. `premiere_create_sequence({name, fromItems: [<the first V1 clip's item id>]})`, which makes it active
-3. `premiere_eval` with the contents of `place.js`. It refuses to run unless the active sequence has the right name; it returns the clip counts per track. Compare them with the plan
+3. `premiere_eval` with the contents of `place.js`, pasted in as the code: the panel cannot read files from disk (`fs` answers "Route not found", 2026-11-06). It refuses to run unless the active sequence has the right name; it returns the clip counts per track. Compare them with the plan
 4. `premiere_get_sequence` → `premiere-check.py --write` (it must say in sync), export two or three frames and look, `premiere_save`
 
 Layout: picture on V1 with in/out, one audio track per stem (voices, then music, then effects), each voice

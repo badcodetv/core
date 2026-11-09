@@ -1,0 +1,422 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Camera moves are the point (Kai: 'the cinematography on this is really important with the camera work'). Each frame offers a locked-Veo + Premiere move, a Veo camera move, and a post treatment.",
+   "why": "The hybrid method keeps the picture stable; a Veo move buys a real camera but risks a redraw. Kai chooses per frame.",
+   "source": "docs/video-fx/hybrid-method.md; Kai 9 Nov"
+  },
+  {
+   "rule": "Shot sizes run close \u2192 wide \u2192 close: cup, fire, skyline, giant, foot, the world, the cup again.",
+   "why": "Opening and closing on the same object is the bookend; the widest frame (Rotterdam) is just before the return.",
+   "source": "brief.md; motion-and-cutting.md \u00a72"
+  },
+  {
+   "rule": "Every cut and every impact lands on the kick at 174 BPM; footfalls every 4 beats.",
+   "why": "The walk is the drum.",
+   "source": "brief.md"
+  },
+  {
+   "rule": "Flashes at 3 a second or fewer (hazards, alarms).",
+   "why": "Photosensitivity.",
+   "source": "look.md"
+  },
+  {
+   "rule": "Generate 8 s per clip and cut the 1-2 s where the motion peaks.",
+   "why": "Each beat is short; the extra seconds are handles.",
+   "source": "scene-animation skill"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Put us in a seat and start the dread: something enormous is walking, and we can't see it.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Footfalls in the water",
+     "idea": "Locked macro. The rings jump on every footfall; between them the water stills. Premiere jolts the frame a few pixels on each kick, so the picture is felt before it is understood.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: the water's surface jumps into sharp concentric rings at regular intervals, stilling in between; the brake lights beyond stay soft."
+      },
+      {
+       "lane": "Premiere",
+       "does": "A 3-frame position jolt (6 px down, eased back) on each kick; slow push 100\u2192104%."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Close on the paper cup of water in the dashboard holder. At regular heavy intervals the water's surface jolts into sharp concentric rings and the cup shudders, then the water settles until the next jolt. The red brake-lights beyond the windscreen stay soft and out of focus. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cold open on beat 1 of the half-chorus.",
+     "seconds": "1.4",
+     "risk": "Low. Veo may ripple continuously rather than in jolts; the Premiere jolts carry the rhythm anyway."
+    },
+    {
+     "id": "b",
+     "label": "Rack focus to the horizon",
+     "idea": "Veo pulls focus from the cup to the windscreen: far off over the jam, a red lamp rises into the cloud. We see a hint, not the thing. The one camera move Veo does best.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "A focus pull only (camera body still): cup sharp \u2192 cup soft, windscreen sharp, a red lamp rising far away."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Hold; a small eased push across the pull."
+      }
+     ],
+     "veo_prompt": "The camera body stays still while the focus slowly pulls from the trembling cup of water in the foreground to the view through the windscreen: a jammed motorway of red tail-lights, and far off above it a single red light climbs slowly up into the low cloud. The water ripples throughout. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Beat 1; the red light reaches the cloud on beat 4.",
+     "seconds": "1.4",
+     "risk": "Medium. Veo can invent a shape instead of a lamp; it should stay a point of light."
+    },
+    {
+     "id": "c",
+     "label": "The lamps go out toward us",
+     "idea": "Locked. The ripple starts, then the orange motorway lamps go out one by one from the horizon toward us, and the brake lights flip to cold white: the machines waking, seen past the cup.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: the lamps go out in sequence toward camera, the tail-lights turn cold white."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Slow push 100\u2192106%."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The paper cup of water trembles in rings. [00:01-00:03] Beyond the windscreen the orange motorway lamps switch off one after another, from the far horizon towards the camera. [00:03-00:04] Every red tail-light ahead turns the same harsh cold white at once. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Beat 1; the white flip lands on beat 4, into the fire.",
+     "seconds": "1.4",
+     "risk": "Low-medium. The lamps may go out all at once; it still reads."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "The cost and the speed: the fire is coming down the lanes toward us, and nobody is in the cars.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Push into the fire",
+     "idea": "Locked: fire jumps car to car toward the lens, hazard lights blinking in unison (the machines' heartbeat). Premiere pushes in, toward the danger, which is the wrong way to move.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: fire leaps car to car toward camera, hazards blink together, smoke rolls."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Push 100\u2192112%, eased in."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grain."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Far down the carriageway the fire leaps from one abandoned car to the next, each one catching with a burst of flame, the chain racing towards the camera. All the cars' hazard lights blink on and off together in the same rhythm. Black smoke rolls low over the wet tarmac. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hard cut on beat 5 (the white flip).",
+     "seconds": "2.1",
+     "risk": "Low. Fire and smoke are what Veo does best."
+    },
+    {
+     "id": "b",
+     "label": "The camera runs",
+     "idea": "Veo moves: a low backward dolly along the tarmac as the fire chases the camera. This is the one spend of a big Veo camera move in the scene, the TLOU run.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Low backward dolly along the tarmac, fire gaining."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Add light handheld shake in post (Warp-free Transform wiggle)."
+      }
+     ],
+     "veo_prompt": "Low to the wet tarmac between two lanes of abandoned cars with open doors, the camera moves steadily backwards down the road as a chain of burning cars erupts one after another, the fire gaining on the camera. Hazard lights blink in unison. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Beat 5.",
+     "seconds": "2.1",
+     "risk": "Medium-high: a camera move over a grid of cars may redraw the scene; generate 8 s and use the first 2."
+    },
+    {
+     "id": "c",
+     "label": "Slow motion on the nearest car",
+     "idea": "Real time until the nearest car catches on beat 8, then Premiere ramps to 30%: the fireball blooms slowly in front of the open door.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: the chain catches, the nearest car bursts into a fireball."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Speed ramp 100% \u2192 30% on beat 8, eased; push 100\u2192105%."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The fire leaps from car to car towards the camera, and the nearest car beside the open door bursts into a rolling fireball, glass and sparks spraying outward. Smoke rolls across the road. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Beat 5; ramp on beat 8.",
+     "seconds": "2.1",
+     "risk": "Low. Slow motion shows any Veo smear, so check the frames at 30%."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "The scale break: the tremor was this. The city's own cranes pull themselves out of the towers.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Tilt up with them",
+     "idea": "Locked wide; the cranes wrench free and rise, concrete crumbling. Premiere tilts up (frame scaled 115%, position eased upward) so we rise with them.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: cranes tear free of the towers and rise, concrete falls, jibs swing."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Scale 115%, position eased from low to high over the shot (a tilt up)."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Across the city the tall tower cranes wrench themselves free of the half-built towers: concrete crumbles and falls away from their bases, their jibs swing round slowly, and they rise higher on their own, red lamps at their tips. Below, the streets of headlights keep streaming. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hard cut on beat 11, the music hit.",
+     "seconds": "1.4",
+     "risk": "Medium. Veo may only swing the jibs; the falling concrete must sell it."
+    },
+    {
+     "id": "b",
+     "label": "A witness on the hill",
+     "idea": "The same Veo clip with a handheld feel added in post. We are someone on the terraced hill watching, and the shake grows as they rise.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "As (a)."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Handheld wobble (Transform with wiggle), growing over the shot; a slight push."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Beat 11.",
+     "seconds": "1.4",
+     "risk": "Low (post only)."
+    },
+    {
+     "id": "c",
+     "label": "The rise from behind the roofs",
+     "idea": "Veo cranes the camera up from behind the terraced roofs to reveal the skyline as the cranes stand: a reveal shot, the scale arriving.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera rises from behind the chimney pots to reveal the skyline and the rising cranes."
+      }
+     ],
+     "veo_prompt": "The camera rises slowly from behind the dark slate roofs and chimney pots of a terraced street to reveal the city skyline, where the tall tower cranes are tearing themselves free of the half-built towers and rising, concrete falling from their bases, red lamps at their tips. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Beat 11.",
+     "seconds": "1.4",
+     "risk": "Medium-high: Veo redraws the skyline as it rises, so use the first seconds."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The Godzilla frame: it is over us, it does not notice us, and it keeps walking.",
+   "options": [
+    {
+     "id": "a",
+     "label": "The Godzilla tilt",
+     "idea": "Locked; the leg swings forward over the traffic, sparks raining, people ducking. Premiere tilts from the cars up to the crane's body, the classic monster reveal (Godzilla 2014).",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: the middle leg swings forward over the traffic, sparks and dust fall, people duck between cars."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Scale 120%, position eased from bottom (cars) to top (the crane body)."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The enormous steel crane straddling the motorway swings its middle leg slowly forward over the jammed traffic; sparks and dust shower down from its joints onto the cars, and the people between the cars duck and run. Its floodlights sweep across the roofs of the cars. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Hard cut on beat 15.",
+     "seconds": "2.1",
+     "risk": "Medium. Keep the people few and small; Veo may merge them."
+    },
+    {
+     "id": "b",
+     "label": "Look up as it passes",
+     "idea": "Veo moves: the camera tilts up following the leg as it passes over the lens. It's the one shot where the camera is scared.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "The camera tilts up to follow the leg passing overhead."
+      }
+     ],
+     "veo_prompt": "Low on the hard shoulder, the camera slowly tilts up to follow a colossal jointed steel crane leg as it swings forward over the camera and the jammed cars, sparks and grit falling towards the lens, floodlights blazing down. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Beat 15.",
+     "seconds": "2.1",
+     "risk": "Medium-high: a tilt reveals new geometry that Veo has to invent."
+    },
+    {
+     "id": "c",
+     "label": "Every step on the kick",
+     "idea": "Locked as (a), but Premiere cuts the clip into the steps: a jolt and a dust puff on each footfall, every 4 beats, so the walk is the drum.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "As (a)."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Impact jolts (8 px, 3 frames) on beats 16 and 20; push 100\u2192108%."
+      },
+      {
+       "lane": "ffmpeg",
+       "does": "Grain."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Beat 15.",
+     "seconds": "2.1",
+     "risk": "Low (post on the (a) clip)."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "Close the distance: it lands, here, and the road we were on breaks.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Punch on the hit",
+     "idea": "Locked; the foot plants, the deck cracks, the dust ring blasts out. Premiere punches in (100\u2192108% in 2 frames) and shakes on the impact, on the kick.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: the foot plants, deck cracks, dust and debris blast sideways, car alarms flash."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Zoom punch 100\u2192108% over 2 frames on the hit, a 6-frame shake."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The giant steel crane leg plants its foot down onto the flyover: the concrete deck cracks and sags, a ring of dust and debris blasts out sideways across the abandoned cars, their alarm lights flashing, and the dust rolls towards the camera. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "Cut on beat 21; the hit on beat 22.",
+     "seconds": "1.4",
+     "risk": "Low-medium. The foot should plant once; if it bounces, cut on the first contact."
+    },
+    {
+     "id": "b",
+     "label": "Slow-motion landing",
+     "idea": "Godzilla Minus One weight: Premiere runs the impact at 35%, so the dust ring spreads slowly, then snaps back to real time for the cut.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "As (a)."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Speed ramp 35% across the impact, back to 100% for the last 4 frames."
+      }
+     ],
+     "veo_prompt": null,
+     "cut": "Beat 21.",
+     "seconds": "1.4",
+     "risk": "Low."
+    },
+    {
+     "id": "c",
+     "label": "The shockwave hits the camera",
+     "idea": "Veo: the dust wave reaches the lens and the camera is shoved back and shaken. The audience gets hit.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "The impact; the dust wave hits the camera, which jolts back and shakes."
+      }
+     ],
+     "veo_prompt": "The giant steel crane leg slams its foot down onto the flyover full of abandoned cars; the deck cracks and a wall of dust and debris surges towards the camera, and when it reaches the camera the view jolts backwards and shakes hard, grit hitting the lens. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+     "cut": "Beat 21.",
+     "seconds": "1.4",
+     "risk": "Medium: Veo shake can look synthetic; Premiere can do the shake instead."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "job": "It is everywhere: the same thing on the other side of the world.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Pull back across the water",
+     "idea": "Locked; the cranes wade forward into the harbour, the water churning, fires flickering. Premiere pulls back 112\u2192100%, the first move away from the action: the world, not one city.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: the cranes wade out, water churns around their legs, fires flicker on the horizon."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Pull back 112\u2192100%, eased out."
+      }
+     ],
+     "veo_prompt": "The camera does not move. The giant dock cranes wade slowly forward into the dark harbour, the black water churning white around their steel legs, their red lamps swaying. Fires flicker on the far horizon. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. One continuous shot, no cuts.",
+     "cut": "Hard cut on beat 25.",
+     "seconds": "1.0",
+     "risk": "Low."
+    },
+    {
+     "id": "b",
+     "label": "Aerial rise over the port",
+     "idea": "Veo flies: a rising aerial pull-back over the water as the cranes wade out. There is no grid in water and sky, so Veo can move here.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "A rising aerial pull-back over the harbour."
+      }
+     ],
+     "veo_prompt": "A slow rising aerial pull-back over the dark harbour as the giant dock cranes wade out into the water in a line, white water churning around their legs, the port behind them dark and fires burning on the horizon. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "cut": "Beat 25.",
+     "seconds": "1.0",
+     "risk": "Medium: the cranes may morph as more of them come into view."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "job": "The button: the first car again, and nobody is driving. The convoy is the army. Black on beat 32.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Push to the windscreen, then black",
+     "idea": "Locked; the wheel turns slightly by itself, the convoy ahead moves off, and one ripple crosses the cup as a crane steps on the horizon. Premiere pushes toward the windscreen and cuts to black on beat 32.",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "Camera locked: the steering wheel turns slightly by itself, the convoy ahead pulls away, one ripple crosses the cup."
+      },
+      {
+       "lane": "Premiere",
+       "does": "Push 100\u2192110% toward the windscreen; cut to black on beat 32."
+      }
+     ],
+     "veo_prompt": "The camera does not move. Inside the car the steering wheel turns slightly by itself as the car drives on, the empty driver's seat belt swaying. Ahead the convoy of driverless cars moves steadily on. On the orange horizon a giant crane takes a slow step, and a single ring crosses the water in the paper cup. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. One continuous shot, no cuts.",
+     "cut": "Cut on beat 28; black on beat 32.",
+     "seconds": "1.7",
+     "risk": "Low."
+    },
+    {
+     "id": "b",
+     "label": "The Last of Us dolly",
+     "idea": "Veo moves: a slow dolly forward between the front seats toward the windscreen, the empty seat passing on our left (the HBO ep 1 rig, now with nobody in the car).",
+     "lanes": [
+      {
+       "lane": "Veo (Omni 1.1 Flash)",
+       "does": "A slow dolly forward between the front seats toward the windscreen."
+      }
+     ],
+     "veo_prompt": "The camera glides slowly forward from the back seat between the two front seats towards the windscreen, passing the empty driver's seat with its belt hanging and the steering wheel turning slightly by itself, the convoy of driverless cars ahead and giant cranes walking on the orange horizon. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "cut": "Beat 28; black on beat 32.",
+     "seconds": "1.7",
+     "risk": "Medium: the interior may redraw as the camera passes the seats."
+    }
+   ]
+  }
+ ]
+}

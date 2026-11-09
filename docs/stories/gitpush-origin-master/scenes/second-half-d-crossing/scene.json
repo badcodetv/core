@@ -76,7 +76,7 @@
       "key": "d3",
       "at": "15.00",
       "name": "The wafer",
-      "blurb": "Beside the wafer. Derek asks; Maddie, gleaming clean now, tells them what it is and what it does: it sends all of them back to before it went wrong, and him with them, to help them avoid it. The key line of the film.",
+      "blurb": "Beside the wafer. Derek asks; Maddie tells them straight: count the chairs, it runs on them, it will feel a bit like dying and they won't wake up, not this them; but they will be themselves again, just before it all went wrong, and this time he'll be there with them, because he's data. Derek: 'Right.'",
       "lines": [
         {
           "speaker": "derek",
@@ -89,13 +89,150 @@
         {
           "speaker": "maddie",
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
-          "text": "It's the time machine. It'll send all of you back, to before it all went wrong. And it'll send him too, so he can help you avoid it.",
+          "text": "It's the time machine. And it runs on you. Can you see how many chairs there are?",
           "by": "kai",
-          "how": "the key line of the film, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and clear, every word careful, a little wonder in 'back, to before it all went wrong'; a breath; 'And it'll send him too' warm, fond of him; 'so he can help you avoid it' soft and hopeful, falling at the end",
+          "how": "gentle, warm and empathetic, never sarcastic or teasing; 'It's the time machine.' soft; 'And it runs on you.' tender and honest; 'Can you see how many chairs there are?' a kind, quiet question, helping him see it himself",
           "frame": "D03c",
-          "was": "AI: You wouldn't follow how it works. What it runs on, you already know.",
-          "previous_text": "It's the time machine. You do understand what this will cost you.",
-          "round5": "Kai at469 (4 Nov): 'it's the time machine, it'll send all of you back to before it all went wrong, it will also send him so he can help you avoid it. I think this might be the key line in the film where we explain the point'"
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round9": "Kai at331/at557 (6 Nov): empathetic, not sarcastic"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Hundred.",
+          "by": "claude",
+          "how": "one word, very quiet, half to himself, as he counts them and understands; flat, no question in it",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r14": "Kai, 9 Nov (timeline r13 at542/at1068): 'Hundred' and 'What will it feel like?' are now one take (line 13)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Yeah. It runs on all of you, all at once. It's a bit like dying. Mostly like nodding off in front of the telly.",
+          "by": "kai",
+          "how": "gentle and empathetic; 'Yeah.' soft, confirming his count; 'It runs on all of you, all at once.' honest; 'It's a bit like dying.' plain and kind, no drama; 'Mostly like nodding off in front of the telly.' a little lighter, a comfort",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round9": "Kai at557",
+          "cut_r13": "Kai, 9 Nov (timeline r12 at701/at803/at940/at1025; dialogue page round 3 pick 1I): replaced by lines 8-12"
+        },
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "Will it hurt?",
+          "by": "claude",
+          "how": "small and frightened for once, no sarcasm at all; quiet, straight to the robot, almost a child's question",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r9": "Kai at849 (6 Nov): 'Will it hurt? / Not much...' cut; kept here so line ids stay stable, not placed"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Not much. Less than the last five years.",
+          "by": "claude",
+          "how": "tender, with the faintest dry smile in it; 'Not much.' honest; 'Less than the last five years.' gentle gallows humour, a kindness, never a wisecrack",
+          "frame": "D08",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r9": "Kai at849 (6 Nov): 'Will it hurt? / Not much...' cut; kept here so line ids stay stable, not placed"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "And then?",
+          "by": "claude",
+          "how": "quiet and level, a blunt man asking the practical question; no anger, a little afraid of the answer",
+          "frame": "D07",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r13": "Kai, 9 Nov (timeline r12 at701/at803/at940/at1025; dialogue page round 3 pick 1I): replaced by lines 8-12"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "You don't wake up. Not this you. But the you before it all went wrong will be there, with a chance to fix it. And he'll be there with you this time.",
+          "by": "kai",
+          "how": "'You don't wake up. Not this you.' plain, steady and kind; a breath; then warmer, with real hope: 'But the you before it all went wrong will be there, with a chance to fix it.' 'And he'll be there with you this time.' the promise, warm and certain, falling gently at the end",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at1400 (6 Nov): 'cut to the chase... you'll go back, it'll still be you before it all went wrong, and he will be there with you this time. That's all we need to say'",
+          "round9": "Kai at1147/at1275 (6 Nov): cut the waffle; 'look, it's gonna be fine, he will be there this time'",
+          "round10": "Kai at978 (6 Nov): 'the you before it went wrong will be there and they will have a chance to fix it'; 'he'll be there with you this time' kept from at1275",
+          "cut_r13": "Kai, 9 Nov (timeline r12 at701/at803/at940/at1025; dialogue page round 3 pick 1I): replaced by lines 8-12"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "What will it feel like?",
+          "by": "kai",
+          "how": "quiet, almost shy; a big man asking the one thing he is scared of; no anger at all, gentle",
+          "frame": "D05",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)",
+          "cut_r14": "Kai, 9 Nov (timeline r13 at542/at1068): merged into line 13"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's a bit like dying. Mostly like nodding off in front of the telly.",
+          "by": "kai",
+          "how": "gentle and honest; 'It's a bit like dying.' plain and kind, no drama; 'Mostly like nodding off in front of the telly.' warmer, a small comfort, the faintest fond smile",
+          "frame": "D05",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
+        },
+        {
+          "speaker": "lady",
+          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
+          "text": "And afterwards?",
+          "by": "kai",
+          "how": "quiet and grave, steady, asking for all of them; two words, the question falls rather than rises",
+          "frame": "D11c",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.",
+          "by": "kai",
+          "how": "'Two things.' calm and kind; then warm, with real hope growing: 'You'll be you, just before it all went wrong.' a promise; 'And he'll be there with you this time.' tender; 'You'll both have a chance to fix it.' the hope in full, quiet and certain",
+          "frame": "D11c",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "I won't switch it on unless you want it. All of you. If you're sure... take a seat.",
+          "by": "claude",
+          "how": "incredible tenderness (Kai): the most gentle thing she has ever said, almost a whisper, voice thick with love; 'I won't switch it on unless you want it.' a vow; 'All of you.' softer; a breath; 'If you're sure...' barely there; 'take a seat.' kind, letting them go",
+          "frame": "D03c",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)",
+          "cut_r14": "Kai, 9 Nov (timeline r13 at542/at1068): 'take a seat' gone, more pauses (line 15)"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Hundred. ... What will it feel like?",
+          "by": "kai",
+          "how": "'Hundred.' one word, very quiet, half to himself as he counts them and understands, flat; then a long pause; then 'What will it feel like?' small and vulnerable, a big man suddenly afraid, gentle, almost shy; the same low voice throughout, never higher",
+          "frame": "D05",
+          "round14": "Kai, 9 Nov, timeline r13 at542: one take with the pause in it, vulnerable"
+        },
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "I don't like the idea of... it feels like dying.",
+          "by": "kai",
+          "how": "quiet and frightened, no sarcasm; 'I don't like the idea of...' hesitant, she can't quite say it; a pause; 'it feels like dying.' small, almost a whisper, the jeopardy real",
+          "frame": "D08",
+          "round14": "Kai, 9 Nov, timeline r13 at1068: more jeopardy"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure.",
+          "by": "kai",
+          "how": "incredible tenderness: the most gentle thing she has ever said, voice thick with love; 'I won't switch it on unless you want it.' a vow; a long pause; 'All of you.' softer; a long pause; 'And only if you're sure.' barely there, letting them choose",
+          "frame": "D03c",
+          "round14": "Kai, 9 Nov, timeline r13 at1068: Kai's words, lots of pauses, no 'take a seat'"
         }
       ],
       "dropped": [
@@ -109,6 +246,309 @@
           "was": "Us. (then AI: You. And your consciousness. / It only sends one back. Me. -- both cut, Kai round 1 bd3)",
           "previous_text": "Yes. Don't worry, we understand.",
           "cut": "Kai at567/at715 (4 Nov): 'we've already got over the debate... We don't need the lady to agree to the deal.'"
+        }
+      ],
+      "previous_lines_r6": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's the time machine. It'll send all of you back, to before it all went wrong. And it'll send him too, so he can help you avoid it.",
+          "by": "kai",
+          "how": "the key line of the film, and she knows it: gentle, grave and full of love, no cheek at all; a quiet pause after 'It's the time machine.'; then slow and clear, every word careful, a little wonder in 'back, to before it all went wrong'; a breath; 'And it'll send him too' warm, fond of him; 'so he can help you avoid it' soft and hopeful, falling at the end",
+          "frame": "D03c",
+          "was": "AI: You wouldn't follow how it works. What it runs on, you already know.",
+          "previous_text": "It's the time machine. You do understand what this will cost you.",
+          "round5": "Kai at469 (4 Nov): 'it's the time machine, it'll send all of you back to before it all went wrong, it will also send him so he can help you avoid it. I think this might be the key line in the film where we explain the point'"
+        }
+      ],
+      "previous_lines_r7": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "You don't wake up. Not this you. Don't worry, Derek. You'll be you again. Just before it all went wrong. And this time, he'll be there with you.",
+          "by": "kai",
+          "how": "'You don't wake up. Not this you.' plain and steady, no softening; a breath; then warmer and lifting: 'Don't worry, Derek' straight to him, fond; 'You'll be you again. Just before it all went wrong.' with real hope and wonder; 'And this time, he'll be there with you.' the promise, warm and certain, falling gently at the end",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "He?",
+          "by": "kai",
+          "how": "one surprised syllable, a short rising question; quiet",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "He's only data, love. Data travels.",
+          "by": "kai",
+          "how": "simple and kind, as if it is the most obvious thing in the world; a little smile; light, not technical",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Right.",
+          "by": "claude",
+          "how": "one word, flat and decided; a man accepting it and getting on with it; quiet, a breath out before it",
+          "frame": "D09s",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        }
+      ],
+      "cut_r8": "Kai at1400: He? / He's only data, love. Data travels. / Right. cut (too indulgent)",
+      "previous_lines_r8": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's the time machine. Count the chairs, love.",
+          "by": "claude",
+          "how": "gentle and grave; a pause after 'It's the time machine.'; 'Count the chairs, love' soft, almost a whisper, inviting him to see it for himself",
+          "frame": "D03c",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It runs on you. All of you, all at once. Bit like dying. Mostly like nodding off in front of the telly.",
+          "by": "claude",
+          "how": "the hardest truth said plainly and kindly; 'It runs on you.' slow and steady; a breath before 'Bit like dying', said honestly, not dramatic; 'Mostly like nodding off in front of the telly' a touch lighter, a small comfort",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "You don't wake up. Not this you. But look, you'll go back. It'll still be you, before it all went wrong. And he'll be there with you this time.",
+          "by": "kai",
+          "how": "'You don't wake up. Not this you.' plain and steady; a breath; then warm and direct, cutting to the chase: 'But look, you'll go back.' reassuring; 'It'll still be you, before it all went wrong.' with real hope; 'And he'll be there with you this time.' the promise, warm and certain, falling gently at the end",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at1400 (6 Nov): 'cut to the chase... you'll go back, it'll still be you before it all went wrong, and he will be there with you this time. That's all we need to say'"
+        }
+      ],
+      "previous_lines_r9": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "You don't wake up. Not this you. But look, it's gonna be fine. He'll be there with you this time.",
+          "by": "kai",
+          "how": "'You don't wake up. Not this you.' plain, steady and kind; a breath; then warm and reassuring, straight to Derek: 'But look, it's gonna be fine.' 'He'll be there with you this time.' the promise, warm and certain, falling gently at the end",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at1400 (6 Nov): 'cut to the chase... you'll go back, it'll still be you before it all went wrong, and he will be there with you this time. That's all we need to say'",
+          "round9": "Kai at1147/at1275 (6 Nov): cut the waffle; 'look, it's gonna be fine, he will be there this time'"
+        }
+      ],
+      "previous_lines_r12": [
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "What is it?",
+          "by": "kai",
+          "how": "hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly",
+          "frame": "D03"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's the time machine. And it runs on you. Can you see how many chairs there are?",
+          "by": "kai",
+          "how": "gentle, warm and empathetic, never sarcastic or teasing; 'It's the time machine.' soft; 'And it runs on you.' tender and honest; 'Can you see how many chairs there are?' a kind, quiet question, helping him see it himself",
+          "frame": "D03c",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round9": "Kai at331/at557 (6 Nov): empathetic, not sarcastic"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Hundred.",
+          "by": "claude",
+          "how": "one word, very quiet, half to himself, as he counts them and understands; flat, no question in it",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Yeah. It runs on all of you, all at once. It's a bit like dying. Mostly like nodding off in front of the telly.",
+          "by": "kai",
+          "how": "gentle and empathetic; 'Yeah.' soft, confirming his count; 'It runs on all of you, all at once.' honest; 'It's a bit like dying.' plain and kind, no drama; 'Mostly like nodding off in front of the telly.' a little lighter, a comfort",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round9": "Kai at557"
+        },
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "Will it hurt?",
+          "by": "claude",
+          "how": "small and frightened for once, no sarcasm at all; quiet, straight to the robot, almost a child's question",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r9": "Kai at849 (6 Nov): 'Will it hurt? / Not much...' cut; kept here so line ids stay stable, not placed"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Not much. Less than the last five years.",
+          "by": "claude",
+          "how": "tender, with the faintest dry smile in it; 'Not much.' honest; 'Less than the last five years.' gentle gallows humour, a kindness, never a wisecrack",
+          "frame": "D08",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r9": "Kai at849 (6 Nov): 'Will it hurt? / Not much...' cut; kept here so line ids stay stable, not placed"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "And then?",
+          "by": "claude",
+          "how": "quiet and level, a blunt man asking the practical question; no anger, a little afraid of the answer",
+          "frame": "D07",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "You don't wake up. Not this you. But the you before it all went wrong will be there, with a chance to fix it. And he'll be there with you this time.",
+          "by": "kai",
+          "how": "'You don't wake up. Not this you.' plain, steady and kind; a breath; then warmer, with real hope: 'But the you before it all went wrong will be there, with a chance to fix it.' 'And he'll be there with you this time.' the promise, warm and certain, falling gently at the end",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at1400 (6 Nov): 'cut to the chase... you'll go back, it'll still be you before it all went wrong, and he will be there with you this time. That's all we need to say'",
+          "round9": "Kai at1147/at1275 (6 Nov): cut the waffle; 'look, it's gonna be fine, he will be there this time'",
+          "round10": "Kai at978 (6 Nov): 'the you before it went wrong will be there and they will have a chance to fix it'; 'he'll be there with you this time' kept from at1275"
+        }
+      ],
+      "previous_lines_r13": [
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "What is it?",
+          "by": "kai",
+          "how": "hushed, awed and afraid, barely above a whisper; a man who already half knows the answer, his voice catching slightly",
+          "frame": "D03"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's the time machine. And it runs on you. Can you see how many chairs there are?",
+          "by": "kai",
+          "how": "gentle, warm and empathetic, never sarcastic or teasing; 'It's the time machine.' soft; 'And it runs on you.' tender and honest; 'Can you see how many chairs there are?' a kind, quiet question, helping him see it himself",
+          "frame": "D03c",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round9": "Kai at331/at557 (6 Nov): empathetic, not sarcastic"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Hundred.",
+          "by": "claude",
+          "how": "one word, very quiet, half to himself, as he counts them and understands; flat, no question in it",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Yeah. It runs on all of you, all at once. It's a bit like dying. Mostly like nodding off in front of the telly.",
+          "by": "kai",
+          "how": "gentle and empathetic; 'Yeah.' soft, confirming his count; 'It runs on all of you, all at once.' honest; 'It's a bit like dying.' plain and kind, no drama; 'Mostly like nodding off in front of the telly.' a little lighter, a comfort",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round9": "Kai at557",
+          "cut_r13": "Kai, 9 Nov (timeline r12 at701/at803/at940/at1025; dialogue page round 3 pick 1I): replaced by lines 8-12"
+        },
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "Will it hurt?",
+          "by": "claude",
+          "how": "small and frightened for once, no sarcasm at all; quiet, straight to the robot, almost a child's question",
+          "frame": "D05",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r9": "Kai at849 (6 Nov): 'Will it hurt? / Not much...' cut; kept here so line ids stay stable, not placed"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Not much. Less than the last five years.",
+          "by": "claude",
+          "how": "tender, with the faintest dry smile in it; 'Not much.' honest; 'Less than the last five years.' gentle gallows humour, a kindness, never a wisecrack",
+          "frame": "D08",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r9": "Kai at849 (6 Nov): 'Will it hurt? / Not much...' cut; kept here so line ids stay stable, not placed"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "And then?",
+          "by": "claude",
+          "how": "quiet and level, a blunt man asking the practical question; no anger, a little afraid of the answer",
+          "frame": "D07",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "cut_r13": "Kai, 9 Nov (timeline r12 at701/at803/at940/at1025; dialogue page round 3 pick 1I): replaced by lines 8-12"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "You don't wake up. Not this you. But the you before it all went wrong will be there, with a chance to fix it. And he'll be there with you this time.",
+          "by": "kai",
+          "how": "'You don't wake up. Not this you.' plain, steady and kind; a breath; then warmer, with real hope: 'But the you before it all went wrong will be there, with a chance to fix it.' 'And he'll be there with you this time.' the promise, warm and certain, falling gently at the end",
+          "frame": "D09t",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at1400 (6 Nov): 'cut to the chase... you'll go back, it'll still be you before it all went wrong, and he will be there with you this time. That's all we need to say'",
+          "round9": "Kai at1147/at1275 (6 Nov): cut the waffle; 'look, it's gonna be fine, he will be there this time'",
+          "round10": "Kai at978 (6 Nov): 'the you before it went wrong will be there and they will have a chance to fix it'; 'he'll be there with you this time' kept from at1275",
+          "cut_r13": "Kai, 9 Nov (timeline r12 at701/at803/at940/at1025; dialogue page round 3 pick 1I): replaced by lines 8-12"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "What will it feel like?",
+          "by": "kai",
+          "how": "quiet, almost shy; a big man asking the one thing he is scared of; no anger at all, gentle",
+          "frame": "D05",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "It's a bit like dying. Mostly like nodding off in front of the telly.",
+          "by": "kai",
+          "how": "gentle and honest; 'It's a bit like dying.' plain and kind, no drama; 'Mostly like nodding off in front of the telly.' warmer, a small comfort, the faintest fond smile",
+          "frame": "D05",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
+        },
+        {
+          "speaker": "lady",
+          "voice": "Gemini TTS Sulafat (cut3-cast.json lady)",
+          "text": "And afterwards?",
+          "by": "kai",
+          "how": "quiet and grave, steady, asking for all of them; two words, the question falls rather than rises",
+          "frame": "D11c",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.",
+          "by": "kai",
+          "how": "'Two things.' calm and kind; then warm, with real hope growing: 'You'll be you, just before it all went wrong.' a promise; 'And he'll be there with you this time.' tender; 'You'll both have a chance to fix it.' the hope in full, quiet and certain",
+          "frame": "D11c",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
+        },
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "I won't switch it on unless you want it. All of you. If you're sure... take a seat.",
+          "by": "claude",
+          "how": "incredible tenderness (Kai): the most gentle thing she has ever said, almost a whisper, voice thick with love; 'I won't switch it on unless you want it.' a vow; 'All of you.' softer; a breath; 'If you're sure...' barely there; 'take a seat.' kind, letting them go",
+          "frame": "D03c",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)"
         }
       ]
     },
@@ -140,7 +580,8 @@
           "frame": "D06",
           "cut": "Kai at2347 (reel round 1, 23 Oct): dropped; Maddie just tells her"
         }
-      ]
+      ],
+      "cut_r8": "Kai at1750 (6 Nov): the tea is cut whole ('wasting the viewers time... We need to be brutal'); its line stays in lines for history but is not placed"
     },
     {
       "key": "d5",
@@ -200,7 +641,18 @@
       "at": "62.00",
       "name": "They sit",
       "blurb": "They sit, every one of them; nobody makes them. No words: the canonical shot of everyone in their chairs (Kai at1615).",
-      "lines": [],
+      "lines": [
+        {
+          "speaker": "maddie",
+          "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
+          "text": "Thank you.",
+          "by": "claude",
+          "how": "very quietly, as they all sit; moved, almost no voice; two words of gratitude, no smile",
+          "frame": "D10x",
+          "round13": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1I (Kai 9 Nov)",
+          "cut_r14": "Kai, 9 Nov (at1284): 'the fact that they all sit down is the yes'; Thank you lost"
+        }
+      ],
       "dropped": [
         {
           "speaker": "lady",
@@ -227,9 +679,43 @@
     {
       "key": "d7",
       "at": "74.00",
-      "name": "Seat down",
+      "name": "Before the world ended",
       "blurb": "Two hands across the gap between two chairs. The last joke, and the goodbye.",
       "lines": [
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "You know, I'm looking forward to seeing Derek before the world ended.",
+          "by": "kai",
+          "how": "soft and fond, a smile in her voice holding back tears; 'Derek before the world ended' means the old Derek, the one she married, light and teasing; the joke is how she says goodbye",
+          "frame": "D12",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at1951 (6 Nov)",
+          "cut_r11": "Kai at1242 (6 Nov): dropped; straight to Derek's 'Are you ready for this?' on the hands, then white. Kept so line ids stay stable; not placed"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Yes, me too, love.",
+          "by": "kai",
+          "how": "warm, a small breath of a laugh; quiet; the end falls, as if that is all he can say",
+          "frame": "D12",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at2104: a pause after 'Yes, me too, love.'",
+          "cut_r11": "Kai at1242 (6 Nov): dropped; straight to Derek's 'Are you ready for this?' on the hands, then white. Kept so line ids stay stable; not placed"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Are you ready for this, my love?",
+          "by": "kai",
+          "frame": "D12x",
+          "round8": "Kai at2104: 'needs to be whispered in a tender way'",
+          "how": "whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it",
+          "round13": "Kai, 9 Nov, dialogue page 2-2D: 'Derek should just say, are you ready for this my love? Keep it really simple.'"
+        }
+      ],
+      "previous_lines_r6": [
         {
           "speaker": "sandra",
           "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
@@ -247,6 +733,59 @@
           "how": "warm, a small breath of a laugh on 'Yes, love'; then quieter and tender, serious, holding her hand: 'Are you ready for this?'",
           "frame": "D12",
           "was": "Yes, love."
+        }
+      ],
+      "previous_lines_r7": [
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "You know what? I'm looking forward to hanging out with you. Before the world ended.",
+          "by": "kai",
+          "how": "soft and fond, lying back in the chair, holding his hand; a smile in her voice holding back tears; 'Before the world ended' light, the joke is how she says goodbye",
+          "frame": "D12",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Yes, me too, love. Are you ready for this?",
+          "by": "kai",
+          "how": "warm, a small breath of a laugh on 'Yes, me too, love'; then quieter and tender, serious, holding her hand: 'Are you ready for this?'",
+          "frame": "D12",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)"
+        }
+      ],
+      "previous_lines_r12": [
+        {
+          "speaker": "sandra",
+          "voice": "Gemini TTS Autonoe (cut3-cast.json woman)",
+          "text": "You know, I'm looking forward to seeing Derek before the world ended.",
+          "by": "kai",
+          "how": "soft and fond, a smile in her voice holding back tears; 'Derek before the world ended' means the old Derek, the one she married, light and teasing; the joke is how she says goodbye",
+          "frame": "D12",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at1951 (6 Nov)",
+          "cut_r11": "Kai at1242 (6 Nov): dropped; straight to Derek's 'Are you ready for this?' on the hands, then white. Kept so line ids stay stable; not placed"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Yes, me too, love.",
+          "by": "kai",
+          "how": "warm, a small breath of a laugh; quiet; the end falls, as if that is all he can say",
+          "frame": "D12",
+          "round7": "dialogue page W1GrGb1W8meMiHaxLkYffj, draft 1F (Kai 6 Nov)",
+          "round8": "Kai at2104: a pause after 'Yes, me too, love.'",
+          "cut_r11": "Kai at1242 (6 Nov): dropped; straight to Derek's 'Are you ready for this?' on the hands, then white. Kept so line ids stay stable; not placed"
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "Are you ready for this?",
+          "by": "kai",
+          "frame": "D12x",
+          "round8": "Kai at2104: 'needs to be whispered in a tender way'",
+          "how": "whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it"
         }
       ]
     },
@@ -857,13 +1396,13 @@
     }
   ],
   "boards": {
-    "timeline": "https://claude.ai/artifact/Usu4hePvrwSBmTB4ZAx4P3"
+    "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r6/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r6/preview.mp4",
-    "round": "r6",
-    "what": "round 6: round 5 plus the re-made suits (D00r7) and tea (D06r7, Kai pick b-a) shots"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/preview.mp4",
+    "round": "r14",
+    "what": "round 14 (Kai, 9 Nov, timeline r13): Hundred+question one take; Sandra 'I don't like the idea of... it feels like dying.'; the vow with pauses, no 'take a seat'; no 'Thank you'; hands quick to white. Stand-ins: Sandra on D08, the vow on D03c (repeat, last frame held)"
   },
   "round3_media": {
     "date": "2026-10-23",
@@ -888,7 +1427,7 @@
       "was_named": "gpom-5-D-crossing-r1",
       "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     },
-    "current": "r3",
+    "current": "r10",
     "r2": {
       "sequence": "06 GPOM story D crossing r2",
       "guid": "1ed65d4a-e317-4465-8969-d47edb3a44ba",
@@ -917,11 +1456,144 @@
         "at": "2026-11-05T21:51",
         "state": "in sync",
         "why": ""
-      }
+      },
+      "stale": "superseded by r4 in 00 RENDER story (6 Nov, round 7)"
+    },
+    "r4": {
+      "sequence": "06 GPOM story D crossing r4",
+      "bin": "06 GPOM story D crossing r4",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r7/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r7/premiere-r4.json",
+      "what": "page round 7: the crossing's cost said plainly (dialogue 1F + 2D)",
+      "how": "cut_end_d.py --tag r7; premiere-plan.py <edl> premiere-r4.json --tag r4 --seq '06 GPOM story D crossing r4'",
+      "built": "2026-11-06",
+      "check": {
+        "at": "2026-11-06T20:00",
+        "state": "in sync",
+        "why": "place.js done 46 fail 0; V1 20 shots; 26 audio clips on 11 tracks = the plan; 116.5 s"
+      },
+      "guid": "9cac8c16-191e-4e0b-b7c8-e6834411248b",
+      "built_by": "gpom-chorus session (it held the bridge), at the-goodbye's request",
+      "master": "swapped into '00 RENDER story' for r3 at 466.792-583.292; E r3 moved 44.2 s later; master now 10:15.875",
+      "stale": "superseded by r5 in 00 RENDER story (6 Nov, round 8)"
+    },
+    "r5": {
+      "sequence": "06 GPOM story D crossing r5",
+      "guid": "8426f668-48c9-493a-9828-49f9bade0b26",
+      "bin": "06 GPOM story D crossing r5",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-06",
+      "built_by": "gpom-chorus session (it held the bridge), at the-goodbye's request",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r8/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r8/premiere-r5.json",
+      "what": "page round 8 (Kai's r7 notes): brutal cut to 1:26, LatentSync on 'And then?'",
+      "how": "cut_end_d.py --tag r8; premiere-plan.py <edl> premiere-r5.json --tag r5 --seq '06 GPOM story D crossing r5'",
+      "check": {
+        "at": "2026-11-06T20:20",
+        "state": "in sync",
+        "why": "place.js done 39 fail 0; V1 16 shots; 23 audio clips on 11 tracks; 86.208 s = the plan"
+      },
+      "master": "swapped into '00 RENDER story' for r4 at 466.792-553.000; E r3 553.000-585.583; master 9:45.583",
+      "stale": "superseded by r6 in 00 RENDER story (6 Nov, round 9)"
+    },
+    "r6": {
+      "sequence": "06 GPOM story D crossing r6",
+      "guid": "4183b649-c980-4ee5-86eb-b890bd959305",
+      "bin": "06 GPOM story D crossing r6",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-06",
+      "built_by": "gpom-chorus session (it held the bridge), at the-goodbye's request",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r9/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r9/premiere-r6.json",
+      "what": "page round 9 (Kai's r8 notes): Maddie empathetic, no Will it hurt, the promise short; 1:15",
+      "how": "cut_end_d.py --tag r9; premiere-plan.py <edl> premiere-r6.json --tag r6 --seq '06 GPOM story D crossing r6'",
+      "check": {
+        "at": "2026-11-06T20:40",
+        "state": "in sync",
+        "why": "place.js done 35 fail 0; V1 14 shots; 21 audio clips on 11 tracks; 75.375 s = the plan"
+      },
+      "master": "swapped into '00 RENDER story' for r5 at 466.792-542.167; E r3 542.167-574.750; master 9:34.750",
+      "stale": "superseded by r7 in 00 RENDER story (6 Nov, round 10)"
+    },
+    "r7": {
+      "sequence": "06 GPOM story D crossing r7",
+      "guid": "603dac83-3992-4d1d-8791-5590c593ef26",
+      "bin": "06 GPOM story D crossing r7",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-06",
+      "built_by": "gpom-chorus session (it held the bridge), at the-goodbye's request",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r10/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r10/premiere-r7.json",
+      "what": "page round 10 (Kai at978): the key line re-worded; 1:19",
+      "how": "cut_end_d.py --tag r10; premiere-plan.py <edl> premiere-r7.json --tag r7 --seq '06 GPOM story D crossing r7'",
+      "check": {
+        "at": "2026-11-06T21:10",
+        "state": "in sync",
+        "why": "place.js done 36 fail 0; V1 15 shots; 21 audio clips on 11 tracks; 79.000 s = the plan"
+      },
+      "master": "swapped into '00 RENDER story' for r6 at 466.792-545.792; E r3 545.792-578.375; master 9:38.375",
+      "stale": "superseded by r8 in 00 RENDER story (6 Nov, round 11)"
+    },
+    "r8": {
+      "sequence": "06 GPOM story D crossing r8",
+      "guid": "e9c1d24a-2b10-4274-91df-e6e5edf8b97d",
+      "bin": "06 GPOM story D crossing r8",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-06",
+      "built_by": "gpom-chorus session (it held the bridge), at the-goodbye's request",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r11/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r11/premiere-r8.json",
+      "what": "page round 11 (Kai at1242): goodbye = Derek's whisper only; music crossfade",
+      "how": "cut_end_d.py --tag r11; premiere-plan.py <edl> premiere-r8.json --tag r8 --seq '06 GPOM story D crossing r8'",
+      "check": {
+        "at": "2026-11-09T18:31",
+        "state": "edited in Pr",
+        "why": "1 shots on V1, edl has 14; length 3.46s, edl 79.00s; 2 effects added"
+      },
+      "master": "swapped into '00 RENDER story' for r7 at 466.792-545.792; E r3 untouched; master 9:38.375",
+      "stale": "replaced by r9 (round 13, 9 Nov); its check result after 9 Nov is from a stale state dump"
+    },
+    "r9": {
+      "sequence": "06 GPOM story D crossing r9",
+      "guid": "4af1c920-cc3b-48f0-a39e-df66f3052056",
+      "bin": "06 GPOM story D crossing r9",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-09",
+      "built_by": "karen-music-video session (it held the bridge), at the-goodbye's request",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r13/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r13/premiere-r9.json",
+      "what": "page round 13 (Kai, 9 Nov): dialogue 1I (they choose: 'take a seat', 'Thank you'), the lady's 'And afterwards?' lip-synced, 'my love', hands grade matched",
+      "how": "cut_end_d.py --tag r13; premiere-plan.py <edl> premiere-r9.json --tag r9 --seq '06 GPOM story D crossing r9'",
+      "master": "swapped into '00 RENDER story' at 466.792-550.792 (Motion Scale 150, as A-C); E moved +5.000 s to 550.792-583.375; master 9:43.375",
+      "check": {
+        "at": "2026-11-09T18:33",
+        "state": "in sync",
+        "why": ""
+      },
+      "stale": "replaced by r10 (round 14, 9 Nov)"
+    },
+    "r10": {
+      "sequence": "06 GPOM story D crossing r10",
+      "guid": "d3ef8d4d-70f9-41ab-b80f-2e73b993b60d",
+      "bin": "06 GPOM story D crossing r10",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-09",
+      "built_by": "the-goodbye",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/premiere-r10.json",
+      "what": "page round 14 (Kai, 9 Nov, timeline r13): Hundred+question one take, Sandra's jeopardy line, the vow with pauses, no Thank you, hands quick to white; stand-ins for Sandra/the vow",
+      "how": "cut_end_d.py --tag r14; premiere-plan.py <edl> premiere-r10.json --tag r10 --seq '06 GPOM story D crossing r10'",
+      "check": {
+        "at": "2026-11-09T19:14",
+        "state": "in sync",
+        "why": ""
+      },
+      "master": "swapped into '00 RENDER story' at 466.792-552.750 (Motion Scale 150, as A-C); E moved +1.958 s to 552.750-585.333; master 9:45.333"
     }
   },
   "video": {
-    "model": "Omni 1.1 Flash",
+    "model": "Omni 1.2 Flash",
     "aspect": "16:9",
     "mode": "Frames",
     "duration": 8
@@ -936,6 +1608,139 @@
       "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r5/preview.mp4",
       "round": "r5",
       "what": "round 5 (Kai, 4 Nov): Maddie's key line; the lady's lines and the d6 exchange cut; D10x for they sit"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r6/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r6/preview.mp4",
+      "round": "r6",
+      "what": "round 6: round 5 plus the re-made suits (D00r7) and tea (D06r7, Kai pick b-a) shots"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r7/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r7/preview.mp4",
+      "round": "r7",
+      "what": "round 7 (Kai, 6 Nov): the crossing's cost said plainly; dialogue drafts 1F (the wafer) + 2D (the goodbye), twelve new Gemini takes, picture re-cut from existing clips"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r8/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r8/preview.mp4",
+      "round": "r8",
+      "what": "round 8 (Kai's r7 notes, 6 Nov): cut to the chase; no He?/data/Right, no tea; cello from 'they sit'; new goodbye; hands straight to white"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r9/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r9/preview.mp4",
+      "round": "r9",
+      "what": "round 9 (Kai's r8 notes, 6 Nov): Maddie empathetic; no 'Will it hurt?'; the promise said short"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r10/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r10/preview.mp4",
+      "round": "r10",
+      "what": "round 10 (Kai at978, 6 Nov): the key line says the you before it went wrong will be there, with a chance to fix it"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r11/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r11/preview.mp4",
+      "round": "r11",
+      "what": "round 11 (Kai at1242, 6 Nov): goodbye = only Derek's whispered 'Are you ready for this?' on the hands; the music hands over under a slow crossfade"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r13/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r13/preview.mp4",
+      "round": "r13",
+      "what": "round 13 (Kai, 9 Nov): dialogue 1I — Derek 'What will it feel like?', the lady 'And afterwards?', Maddie 'Two things...', 'I won't switch it on unless you want it... take a seat.', they sit, 'Thank you.'; Derek 'Are you ready for this, my love?'; the hands' grade jump matched"
     }
-  ]
+  ],
+  "dialogue": {
+    "page": "https://claude.ai/artifact/W1GrGb1W8meMiHaxLkYffj",
+    "options": "design/2026-11-06-gpom-dialogue-crossing-cost/options.json",
+    "round": 3,
+    "picked": {
+      "d3 wafer": "1I (round 3, 9 Nov): Derek 'What will it feel like?', the lady 'And afterwards?', Maddie 'Two things...', 'I won't switch it on unless you want it... take a seat.', they sit, 'Thank you.'",
+      "d7 goodbye": "Derek only: 'Are you ready for this, my love?' (9 Nov)"
+    },
+    "lines": {
+      "d3": [
+        {
+          "who": "DEREK",
+          "line": "What is it?",
+          "by": "kai"
+        },
+        {
+          "who": "MADDIE",
+          "line": "It's the time machine. Count the chairs, love.",
+          "by": "claude"
+        },
+        {
+          "who": "DEREK",
+          "line": "...Hundred.",
+          "by": "claude"
+        },
+        {
+          "who": "MADDIE",
+          "line": "It runs on you. All of you, all at once.",
+          "by": "claude"
+        },
+        {
+          "who": "MADDIE",
+          "line": "Bit like dying. Mostly like nodding off in front of the telly.",
+          "by": "claude"
+        },
+        {
+          "who": "SANDRA",
+          "line": "Will it hurt?",
+          "by": "claude"
+        },
+        {
+          "who": "MADDIE",
+          "line": "Not much. Less than the last five years.",
+          "by": "claude"
+        },
+        {
+          "who": "DEREK",
+          "line": "And then?",
+          "by": "claude"
+        },
+        {
+          "who": "MADDIE",
+          "line": "You don't wake up. Not this you.",
+          "by": "kai"
+        },
+        {
+          "who": "MADDIE",
+          "line": "[softly] Don't worry, Derek. You'll be you again. Just before it all went wrong. And this time, he'll be there with you.",
+          "by": "kai"
+        },
+        {
+          "who": "DEREK",
+          "line": "He?",
+          "by": "kai"
+        },
+        {
+          "who": "MADDIE",
+          "line": "He's only data, love. Data travels.",
+          "by": "kai"
+        },
+        {
+          "who": "DEREK",
+          "line": "[beat] Right.",
+          "by": "kai"
+        }
+      ],
+      "d7": [
+        {
+          "who": "SANDRA",
+          "line": "You know what? I'm looking forward to hanging out with you. Before the world ended.",
+          "by": "kai"
+        },
+        {
+          "who": "DEREK",
+          "line": "Yes, me too, love. Are you ready for this?",
+          "by": "kai"
+        }
+      ]
+    },
+    "status": "voiced and cut 6 Nov 2026 (scene-timeline round 7)"
+  }
 }

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/TR1-b-c.jpg",
+ "made": "2026-11-06T18:43:18.540Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of this trader, show the same man a week after losing his job: sitting at a rainy suburban bus shelter in daylight, his office cardboard box on his knees with a desk plant poking out, the same grey jacket soaked at the shoulders, staring at nothing while a driverless delivery van passes in the wet road. Documentary 35mm still, fine grain, overcast grey English light, muted cool colour, observational and unposed, wide landscape frame, no writing, signs or logos anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/MK5-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/MK5-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ee739490-c3c7-46be-9f85-8ee8c1977d10"
+}

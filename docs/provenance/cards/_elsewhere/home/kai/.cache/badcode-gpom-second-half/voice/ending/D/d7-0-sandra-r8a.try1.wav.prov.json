@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d7-0-sandra-r8a.try1.wav",
+ "made": "2026-11-06T19:57:31+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "You know, I'm looking forward to seeing Derek before the world ended.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: soft and fond, a smile in her voice holding back tears; 'Derek before the world ended' means the old Derek, the one she married, light and teasing; the joke is how she says goodbye.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d7-0-sandra-r8a.md"
+ },
+ "settings": {
+  "voice": "Autonoe",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-3-maddie-r9b.wav",
+ "made": "2026-11-06T20:33:25+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/ending/voices_fix.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "GPOM scene D round 9 (d3-3-maddie); Kai r8 timeline notes",
+ "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: gentle and empathetic; 'Yeah.' soft, confirming his count; 'It runs on all of you, all at once.' honest; 'It's a bit like dying.' plain and kind, no drama; 'Mostly like nodding off in front of the telly.' a little lighter, a comfort.\nStyle: no jokes, no cheek, no gossip, never sarcastic or condescending: tonight she is the kindest person in the room, telling people she loves the hardest truth there is; warm, low and intimate, voice thick with feeling but steady.\nPace: slow and careful; a real pause after the first sentence; the second sentence softer and slower still, letting it land.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+ "inputs": {
+  "text": "Yeah. It runs on all of you, all at once. It's a bit like dying. Mostly like nodding off in front of the telly."
+ },
+ "settings": {
+  "voice": "Aoede"
+ }
+}

@@ -19,13 +19,45 @@ Worked records: `docs/stories/bank-robbery/short-shots.md` § "Cut 7c" and `docs
 3. **Late is forgiven, early is not.** Audio a frame early (~45 ms) is already noticeable; late is tolerated about three
    times further. Every phrase starts 0–0.1 s *after* the mouth opens, never before.
 
+## Redraw the mouth first: LatentSync (2026-11-06)
+
+When a row's mouths were drawn at a different speed from the voice (re-timing won't converge), **redraw the mouth to the
+voice** with LatentSync 1.6 (open source, local GPU, keeps the face and expression, redraws the lower face; no Flow credits).
+**Before using it, check it is installed:**
+
+```bash
+scripts/lipsync/latentsync-setup.sh check     # INSTALLED, or NOT INSTALLED + what's missing
+```
+
+If it says NOT INSTALLED, **ask the user (Kai or Jack) "LatentSync isn't installed on this machine. Shall I install it? About 10 GB,
+Linux/WSL with an NVIDIA GPU only."** On a yes, run `scripts/lipsync/latentsync-setup.sh install` (pinned commit, same on
+every machine). Never install it unasked. Not available on macOS (Tom): use the procedure below or a cutaway.
+
+**Running it** (Kai, 2026-11-06: *"rather than me running bash commands… something we should be able to do via a skill"*).
+The user names the scene and the lines in plain words ("lip sync the argument in kill bots"); never ask them for shot ids.
+Find the scene's current cut (`scene.json` `cut.edl`), then:
+
+```bash
+python3 scripts/lipsync/redraw.py list <edl>               # the talking shots (lip-<id> on V1) and who speaks in each
+python3 scripts/lipsync/redraw.py prep <edl> <dir> [ids]   # muted picture as cut + only the on-screen speaker's voice
+python3 scripts/lipsync/redraw.py run  <dir> [ids]         # LatentSync, ~40-85 s of GPU per shot
+python3 scripts/lipsync/redraw.py post <edl> <dir> [ids]   # back to 24 fps, row-before.mp4 / row-after.mp4 with the mix
+```
+
+`<dir>` = `D:\badcode-videos\<story>\clips\…\video\latentsync-<round>\`. `run` executes downloaded model code, so the
+auto-mode safety check refuses it unless `.claude/settings.json` allows `Bash(bash scripts/lipsync/latentsync-row.sh:*)`;
+without the rule, give the user the `! bash scripts/lipsync/latentsync-row.sh <dir> <ids>` line to run themselves.
+After `post`: measure with `row-measure.py`, look at frame strips for changed faces, smeared teeth or a seam round the
+mouth, show the user row-before/row-after side by side, card every `-ls24.mp4`, and swap the five files into the next
+round's V1 (same lengths and voices, so nothing else moves).
+
 ## The procedure
 
 **1. Voice first.** Render the line in AI Studio in the character's voice (profiles live in the story's
 `narration/profiles/`). It is the master; everything is fitted to it. Write names the way they must be said
 (`Ay-Eye Sean`, not `A.I. Sean`, which made a 1.2 s pause).
 
-**2. The talking clip.** Flow, Omni Flash, **Frames mode** with the still as start image. 🔑 **Size each clip to the voice,
+**2. The talking clip.** Flow, Omni 1.2 Flash (since 2026-11-09; lip-sync not yet re-checked on 1.2, and talking takes past ~10 s drop lines per the sweep), **Frames mode** with the still as start image. 🔑 **Size each clip to the voice,
 not to 8 seconds:** give a clip only as many words as the TTS speaks in about 5–6 s (Karen 10f: three clips, 11 / 15 / 5 words,
 for a 13 s line). Packed clips make Omni rush, and a rushed mouth can't take the voice without warble. The prompt carries the exact line:
 `He says: <the words>` (no quotation marks), plus `The phone stays pressed to his ear the whole time` or whatever must not
@@ -124,6 +156,7 @@ put correctly placed dubs 0.35 s "late".
 | Cut Sandra's line into four word-group pieces to chase a clip that holds one long open "I'd" (GPOM bridge r7, 2026-11-04) | Every word landed and Kai still heard it: "choppy... cutting the audio up to try and lip-sync". **Re-voice to the clip instead**: read the clip's word anchors (its own audio's word starts, checked on the strip), direct the TTS with the rhythm the clip has ("a real beat after 'fix this,'"), make six takes, score each by its word starts against the anchors, and lay the best one unbroken (`scripts/gpom/second-half-video/voice-sandra-fit.py`, take c within 0.25 s) |
 | Re-voicing a fitted lip-synced line to make a scene faster (GPOM scene A round 18, 2026-11-05) | Not needed: **speed the muted shot (`setpts=PTS/k`, frame sampling) and its fitted dub (`atempo=k`) by the same factor** and every mouth stays where it was fitted (measured: onsets unchanged within a frame against round 17). Cap k so the dub's own tempo times k stays at or under ~1.25 (a dub already at 1.15 got k = 1.08). Pieces laid over the other person's face can take their own tempo. `cut3.py --tag d16`, `lip18()` **Rejected by Kai the next round: it reads as sped-up footage (see the next row).** |
 | Sped the picture with its dub (round 18) | Kai, round 18 at3777: "This clip looks speeded up." x1.08-1.15 on a talking shot reads as sped-up footage even when the lips match. Round 19 went back to natural speed and re-fitted instead: `scripts/gpom/second-half-video/voice-row-fit.py` voices six takes in the cast voice, fits each WHOLE take on the tracked mouth (loudness vs mouth gap, onset + one tempo 0.97-1.15, no voice before an opening), cross-fits every existing clip of the shot first (free), and only then renders new clips. Gotchas: a clip that opens on a held parted mouth fools the fit (window it to the clip's own speech), and a clip whose mouth track is mostly missing scores well on almost nothing (gate on missing frames). Confirm the final onsets on the 12 fps strip: rounded lips read as nearly shut to the detector |
+| Re-timed the PICTURE to the whole voice (DTW of mouth gap vs loudness, then per-phrase anchors, rate clamped 0.85-1.18, frames sampled) on the round 19 row (GPOM scene A, 2026-11-06, Kai at3436 "the lip syncing here is really bad") | Did not converge: fixing one phrase moved the next 0.1-0.25 s the wrong way, because Omni drew the mouths at its own syllable rhythm (~1.2-1.3x the voice), so no single time map lines up every syllable. `scripts/lipsync/row-measure.py` (measures an assembled cut shot by shot) found the real errors: the voice 0.2-0.25 s EARLY on single phrases inside 6-0, 7-0 and 7d-1, which onset fitting and whole-take scores both miss. Next is an audio-driven mouth re-render (LatentSync 1.6 fits the local RTX 4090, 24 GB); installing it needs Kai's permission |
 
 ## Tools
 
@@ -131,6 +164,8 @@ put correctly placed dubs 0.35 s "late".
 | --- | --- |
 | `scripts/lipsync/mouth-map.py` | Mouth open/shut strip and shut→open moments from the picture (wraps `scripts/bank-robbery/lips.py`) |
 | `scripts/lipsync/place-dub.py` | Builds a dub track from a phrase table; prints voice onsets; levels it |
+| `scripts/lipsync/row-measure.py` | Measures lip sync on an ASSEMBLED cut, shot by shot, against the on-screen speaker's stem: lag, early onsets, voice over a shut mouth, a 12 fps strip with loudness under each frame |
+| `scripts/lipsync/picture-warp.py` | Re-times the picture to a whole voice (DTW or per-phrase anchors, rate clamped). Tried 2026-11-06; did not converge on Omni clips |
 | `scripts/lipsync/mouth-track.py` | Tracked 12 fps mouth close-up strip (timestamps burned in) + percentile-rescaled open/shut strip; for faces that move or rest with the mouth parted |
 | `scripts/bank-robbery/dtwsync.py` | Older automatic time-warp onto the clip's own speech. `global` mode is safe-ish; `warp` squashes words. Backup only |
 | `scripts/karen/tarquin-lipsync.py` | The Karen 10b2 one-off that led here (own-speech placement, late-only slide) |

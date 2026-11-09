@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/RK1-e.jpg",
+ "made": "2026-11-09T17:50:07.853Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "From the hard shoulder of a jammed motorway at night, looking up as an enormous steel container crane strides over the carriageway: one jointed leg planted on each side of the road, a third leg swinging forward above the traffic, dust and sparks falling from its knee, cars below lit by its floodlights, people ducking between them. Shot on 35mm film at night in Britain, grain visible, true blacks, no flare or glow, widescreen. Nothing legible: no signage, plates or lettering.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "fcc22b70-ae1f-4e6c-9173-6925dded4c60"
+}

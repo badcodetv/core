@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-0-sandra-r7a.wav",
+ "made": "2026-11-06T19:40:56+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/gpom/second-half-video/ending/voices_fix.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "GPOM scene D round 7 (d7-0-sandra); dialogue draft 1F/2D, Kai 6 Nov",
+ "prompt": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: soft and fond, lying back in the chair, holding his hand; a smile in her voice holding back tears; 'Before the world ended' light, the joke is how she says goodbye.\nStyle: sharp, sarcastic, every line a jab; not shouting at first, then loud. Funny because she is completely serious.\nPace: quick and clipped.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+ "inputs": {
+  "text": "You know what? I'm looking forward to hanging out with you. Before the world ended."
+ },
+ "settings": {
+  "voice": "Autonoe"
+ }
+}

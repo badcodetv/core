@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/MW2-c-a.jpg",
+ "made": "2026-11-09T17:01:18.924Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same aerial view of the motorway interchange at dusk, same camera, same sky and horizon. Now every carriageway, slip road and flyover is completely bare: not a single car, lorry or van anywhere, just grey empty tarmac and lane markings. The whole city below has lost power: every window, warehouse, streetlight and gantry sign is dark. Only the last cold dusk light in the clouds shows the shapes. Keep the framing and the roads identical.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/MW1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/MW1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ae029474-8d4e-45c0-b77c-b51f7269bbae"
+}

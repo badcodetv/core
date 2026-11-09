@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/FT1-c.jpg",
+ "made": "2026-11-09T17:50:33.521Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Ground level on a motorway flyover at night as a vast flat steel foot, the base of a walking dock crane's leg with its rail wheels torn off, slams down onto the carriageway thirty metres away: a wave of dust, grit and shattered windscreen glass rolling towards the camera, empty cars bucking up off the road, the leg disappearing up into the dark. Shot on 35mm film at night in Britain, grain visible, true blacks, no flare or glow, widescreen. Nothing legible: no signage, plates or lettering.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "90a2139c-91d3-476d-ba9f-cc0fe9131003"
+}

@@ -96,7 +96,7 @@ visible pores, a faint razor shadow along the jaw, uneven tone, a matte sheen ra
 - **Never put "homeless" or any destitution word in a Flow field** — prompt or Character Name
   (`@homeless-Tarquin` renamed `@Future-Tarquin`, 2026-08-24; [`characters/world-cast.md`](./characters/world-cast.md)).
 - **Faces do the emotional work in stillness** — the 5d smile-fade is a held face, not an action.
-- **Video:** Omni Flash (ruled 2026-08-25); a changing face on a moving shot went to Veo 3.1 Fast (5d).
+- **Video:** Omni 1.2 Flash (Omni Flash ruled 2026-08-25; a changing face on a moving shot went to Veo 3.1 Fast (5d)) (→ Omni 1.2 Flash from 2026-11-09: Fast, Quality and Omni 1.1 leave Flow on 5 Dec; Kai saw no difference in the A/B).
   Lightning, flashes and lettering are layered in Premiere/ffmpeg, never asked of Flow (10a/10b).
 
 ### Where warmth is allowed (and only here)

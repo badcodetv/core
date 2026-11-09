@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/04.jpg",
+ "made": "2026-11-09T17:47:33.959Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Very long telephoto lens looking straight down a jammed motorway at night: hundreds of stopped cars compressed into one stacked wall, every headlight blazing cold white straight down the lens at once, and in front of the glare small dark silhouettes of people climbing out of windows and running towards camera between the bumpers. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "e553b688-4908-4324-93b2-31a129ed7af6"
+}

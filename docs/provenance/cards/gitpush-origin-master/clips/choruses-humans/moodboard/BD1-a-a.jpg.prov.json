@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/BD1-a-a.jpg",
+ "made": "2026-11-06T18:44:36.636Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, keep the same woman, the same corner shop counter and the same loaf of bread. Change only the moment: the card machine has declined her card, and she slowly sets the loaf back down on the counter, eyes lowered, the shopkeeper's hand just in frame. Keep the same night, the same rain on the window, the same lighting, grain and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/BR3-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/BR3-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "7460d4b4-3f17-4840-8879-4a456b5d951f"
+}

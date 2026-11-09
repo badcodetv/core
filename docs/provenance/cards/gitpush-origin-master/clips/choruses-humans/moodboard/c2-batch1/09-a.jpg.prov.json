@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/09-a.jpg",
+ "made": "2026-11-06T18:57:00.634Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night on the hard shoulder of a jammed motorway: families of adults who have abandoned their cars walk along it carrying suitcases and rucksacks, lit from behind by the headlights of stationary traffic, long shadows ahead of them. 35mm documentary photograph, grain, muted night colour, nobody hurt, no readable writing anywhere.",
+ "source_id": "42aac821-1eb2-45ad-9e0c-be2e1b297314"
+}

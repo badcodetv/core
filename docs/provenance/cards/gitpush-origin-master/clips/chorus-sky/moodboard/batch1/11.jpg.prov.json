@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/batch1/11.jpg",
+ "made": "2026-11-09T14:32:48.085Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "On the crowded Copacabana promenade in Rio at sunset: the whole beach has stood up and turned to the sky, faces lit cold white from above. Above them the whole sky is filled with thousands of small bright white lights slowly descending through low cloud, evenly spread like a vast silent meteor storm, and far off on the horizon bright flashes light up the underside of the clouds. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, landscape orientation. 16:9 frame from a fictional near-future film, no captions, logos, brand names, lettering or readable on-screen text; every screen and billboard shows only abstract colour.",
+ "source_id": "70ecccc1-38be-4064-af09-9af3e44120f1"
+}

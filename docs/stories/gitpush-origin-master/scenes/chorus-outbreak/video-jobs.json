@@ -1,0 +1,54 @@
+{
+ "anim_picks": {
+  "1": "b",
+  "2": "b",
+  "3": "c",
+  "4": "b",
+  "5": "c",
+  "6": "b",
+  "7": "b"
+ },
+ "still_picks": {
+  "7": "EN1-a2-b"
+ },
+ "skip": [],
+ "cast": {},
+ "extra": [
+  {
+   "key": "03-r2",
+   "n": 3,
+   "still": "CR1-c",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera pushes slowly in towards the skyline. [00:00-00:02] The tallest tower crane jolts. [00:02-00:06] Its whole steel mast lifts straight up out of the top of the half-built tower, chunks of concrete breaking away and falling down the tower's side, the crane staying one solid rigid steel lattice with its red lamp. [00:06-00:08] The other cranes lean and begin to lift. The terraced roofs stay dark in the foreground. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 9 Nov: iterate until there are no artefacts. 03 r1: the rise made the cranes ghost into smoke. Slow push, solid steel, no smoke."
+  },
+  {
+   "key": "03-r3",
+   "n": 3,
+   "still": "CR1-c",
+   "duration": 8,
+   "character": null,
+   "motion": "Slow push in. Across the skyline every tower crane rips itself up out of its half-built tower at once, rising several storeys into the night, their long jibs swinging round, steel lattice rigid and solid, red lamps at the tips, chunks of concrete tumbling from the towers. The rivers of headlights below keep streaming. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 9 Nov: iterate until clean. Second take on 03: all the cranes rise together."
+  },
+  {
+   "key": "04-r2",
+   "n": 4,
+   "still": "RK1-e",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera tilts slowly upward. The enormous steel crane straddling the motorway lifts its right leg, one rigid steel column, clear off the road and swings it forward over the jammed cars in one slow heavy step, sparks and grit showering down from the joint, the people between the cars ducking and running. The leg stays straight and solid. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 9 Nov: iterate until clean. 04 r1: a beam bent like rubber and no stride. Ask for one rigid leg, one step."
+  },
+  {
+   "key": "04-r3",
+   "n": 4,
+   "still": "RK1-e",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera holds low and tilts up slightly. With a deep shudder the giant steel crane over the motorway takes one step forward: the whole structure leans, its left leg lifts and plants further down the road, the ground shaking, dust bursting up around the foot, sparks falling from its joints onto the cars, people running away between them. Solid steel, it does not bend. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 9 Nov: iterate until clean. Second take on 04: the whole crane steps."
+  }
+ ]
+}

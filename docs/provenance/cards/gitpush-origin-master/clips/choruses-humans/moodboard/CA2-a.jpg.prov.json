@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/CA2-a.jpg",
+ "made": "2026-11-06T19:17:31.290Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same high street, same queue, same dusk and wet pavement, same grain as this frame; only the camera moves. Now we look out from the cash machine itself: the row of faces in the queue lit flat blue by its dead screen, the man at the front close to lens, the others staring past him.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/CA1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/CA1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "35645b3b-9c94-4a47-9742-cb53e686a7a6"
+}

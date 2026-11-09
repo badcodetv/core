@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/PC2-c-a-a.jpg",
+ "made": "2026-11-09T17:06:59.968Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Piccadilly Circus at night in the rain, same camera, same buildings, fountain and curved screen. Now no one at all: no people, no umbrellas, no buses, no taxis, no vehicles of any kind, just the empty wet road shining under the streetlamps. The big curved screen is malfunctioning: the advert torn into horizontal bands of shifted colour, split red green and blue, blocks of corrupted pixels and static, one panel dead black.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/PC2-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/PC2-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "50141711-9fac-422f-8f9d-4331af116e24"
+}

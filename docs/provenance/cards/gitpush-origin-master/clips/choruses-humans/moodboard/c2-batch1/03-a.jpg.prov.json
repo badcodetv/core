@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/03-a.jpg",
+ "made": "2026-11-06T18:57:00.525Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A supermarket aisle at night with every shelf stripped bare, one fluorescent tube flickering, a single woman in a parka standing still with an empty trolley, looking down the long empty aisle. 35mm documentary photograph, fine grain, sickly green-white strip light the only light, observational, no readable writing anywhere.",
+ "source_id": "7b3168b9-fcba-4bbd-89ed-1b057efee762"
+}

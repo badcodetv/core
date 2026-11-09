@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/batch1/02.jpg",
+ "made": "2026-11-09T14:32:47.913Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Times Square in New York at dusk, seen from the red steps: packed shoulder to shoulder with people, yellow cabs nose to tail, the giant screens glowing on every building. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, landscape orientation. 16:9 frame from a fictional near-future film, no captions, logos, brand names, lettering or readable on-screen text; every screen and billboard shows only abstract colour.",
+ "source_id": "41f5e870-764d-4a3e-82e2-c39dde968c6c"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/SB1-c-a.jpg",
+ "made": "2026-11-09T14:34:16.883Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, keep exactly the same framing, camera position, buildings, light and weather, but remove every single person: the place is completely deserted. Umbrellas and a dropped shopping bag lie on the wet crossing, the screens still glow over the empty junction. A thin haze of dust drifts low across the ground. Keep everything else exactly the same, preserving the original style, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/SB1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/SB1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "ac188b83-c6dc-424f-a6be-4e7a89b47896"
+}

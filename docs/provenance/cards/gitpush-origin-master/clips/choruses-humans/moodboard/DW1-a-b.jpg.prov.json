@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/DW1-a-b.jpg",
+ "made": "2026-11-06T18:46:22.079Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of these sacked office workers in the rain, show one of the same men in his suit a week later at night, bedding down in a sleeping bag in the doorway of the same glass office tower, his cardboard office box beside him as a pillow, rain falling on the plaza, the tower lobby lit and empty behind the glass. Seen from across the wet plaza, small in frame. Documentary 35mm still, fine grain, cold blue night, the lobby glow the one bright area, no writing, signs or logos anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/e03-pass.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/e03-pass.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c78da001-d68d-48cb-b182-8188ddeb919f"
+}

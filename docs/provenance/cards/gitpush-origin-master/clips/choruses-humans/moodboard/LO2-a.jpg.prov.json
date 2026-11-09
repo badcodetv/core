@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/LO2-a.jpg",
+ "made": "2026-11-06T19:39:08.040Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same blackout over Swindon as this frame, now down inside it: a long terraced street at night where the houses at the far end have already gone dark and the porch lights and windows nearer to us are going out one after another, the last streetlamp still on in the foreground.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/LO1-b-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/LO1-b-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "48aa37a9-c50a-4347-bfad-2ea632f08364"
+}

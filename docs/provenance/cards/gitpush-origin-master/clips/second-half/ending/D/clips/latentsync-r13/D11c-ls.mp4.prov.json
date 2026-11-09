@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/latentsync-r13/D11c-ls.mp4",
+ "made": "2026-11-09T18:27:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "LatentSync 1.6 (local GPU)",
+ "tool": "scripts/lipsync/latentsync-row.sh",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/latentsync-r13/D11c-in.mp4",
+ "why": "GPOM D round 13: the lady's 'And afterwards?' (Kai at1025)",
+ "inputs": {
+  "voice": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/latentsync-r13/D11c-voice.wav"
+ },
+ "settings": {
+  "steps": "20",
+  "guidance": "1.5"
+ }
+}

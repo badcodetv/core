@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/09.jpg",
+ "made": "2026-11-06T19:48:38.472Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Through the windscreen of a parked car in a supermarket car park at night: two shoppers standing still ahead between the cars, and far above the roofs a helicopter's searchlight tilting in the black sky. Grainy 35mm, sodium orange, dashboard dark in the foreground, no lettering.",
+ "source_id": "3cca5823-ddeb-4e52-9540-18e82a13e156"
+}

@@ -42,6 +42,7 @@ export function modelAlreadySelected(label: string | null, model: string): boole
  * been guessed wrong, and both matter (see canonicalVideoModel / videoModelAlreadySelected).
  */
 export const VIDEO_MODELS = [
+  'Omni 1.2 Flash',
   'Omni 1.1 Flash',
   'Veo 3.1 - Lite',
   'Veo 3.1 - Fast',
@@ -83,7 +84,8 @@ export function canonicalVideoModel(model: string): string {
  * wrongly kept.
  */
 export function videoModelAlreadySelected(label: string | null, model: string): boolean {
-  const shown = (label ?? '').replace(/arrow_drop_down\s*$/i, '').trim()
+  // Flow tags a retiring model "Leaving 5 Dec" in the menu and trigger (seen 2026-11-09); it is not part of the name.
+  const shown = (label ?? '').replace(/arrow_drop_down\s*$/i, '').replace(/\s*Leaving\s+\d{1,2}\s+[A-Za-z]{3,9}\s*$/i, '').trim()
   return normaliseModel(shown) === normaliseModel(canonicalVideoModel(model))
 }
 
@@ -107,8 +109,21 @@ export type VideoDuration = (typeof VIDEO_DURATIONS)[number]
  * `1x`/`x1` bug that quietly billed for months. Ask for 10s on Veo and we throw instead.
  */
 export function maxDurationForModel(model: string): number {
-  return /omni.*flash/i.test(canonicalVideoModel(model)) ? 10 : 8
+  const m = canonicalVideoModel(model)
+  if (usesLengthSlider(m)) return 15
+  return /omni.*flash/i.test(m) ? 10 : 8
 }
+
+/**
+ * Omni 1.2 Flash has no 4/6/8/10 tabs: its popover carries a Length SLIDER, 3–15 seconds in
+ * one-second steps (`input[type=range][aria-label=Length]`, min 0 max 12, value = seconds − 3;
+ * the label beside it reads "Length6 sec"). Seen live 2026-11-09.
+ */
+export function usesLengthSlider(model: string): boolean {
+  return /omni\s*1\.2/i.test(canonicalVideoModel(model))
+}
+export const SLIDER_MIN_SECONDS = 3
+export const SLIDER_MAX_SECONDS = 15
 
 /**
  * Read the clip length back out of the collapsed config-trigger label.

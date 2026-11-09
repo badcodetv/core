@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/EN1-a2-b.jpg",
+ "made": "2026-11-09T18:53:25.849Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep this car interior and everything in it exactly as it is: the empty driver's seat, hanging belt, wheel, the cup in its holder, the convoy of cars with cold white headlights outside. Change one thing: the dark shapes on the orange horizon beyond the windscreen become the distant silhouettes of three giant steel dock cranes with long booms, walking on tall angled legs, a small red lamp on top of each. No figures shaped like people anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/ob-EN1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/ob-EN1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "80ea7bbe-0b3a-4e58-b5fd-f5f481573b6a"
+}

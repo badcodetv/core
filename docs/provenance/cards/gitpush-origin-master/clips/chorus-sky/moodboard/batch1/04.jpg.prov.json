@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/batch1/04.jpg",
+ "made": "2026-11-09T14:32:47.973Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Piccadilly Circus in London on a drizzly night, seen from across the junction: crowds around the statue fountain, red double-decker buses and black cabs, the curved wall of screens glowing. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, landscape orientation. 16:9 frame from a fictional near-future film, no captions, logos, brand names, lettering or readable on-screen text; every screen and billboard shows only abstract colour.",
+ "source_id": "5a2b80fe-e3d9-408d-a966-ddb11712a161"
+}

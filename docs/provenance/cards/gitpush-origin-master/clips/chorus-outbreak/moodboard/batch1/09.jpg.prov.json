@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/09.jpg",
+ "made": "2026-11-09T17:47:34.039Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "From a motorway bridge at night, looking across a British river estuary to a container port: a row of ship-to-shore container gantry cranes, the giant steel A-frame dock cranes with a long boom, standing on four splayed steel legs, a single red aviation lamp at the top of each. The nearest crane has torn its legs free of the rails and lifted one leg high off the quay, sparks and concrete dust pouring down, a stacked container ship beneath it. Stopped traffic and a crash barrier in the foreground. The port floodlights and the red lamps are the only light. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "b3a7d86e-2e1b-4191-9fe5-7b13e12e0939"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/02-a.jpg",
+ "made": "2026-11-06T18:57:00.495Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A crowd of ordinary British people in coats outside a high street bank whose steel shutter is pulled down to the pavement; one man rests his flat palm on the shutter, others hold up phones, a woman holds a shopping bag of tins. Early evening, drizzle, streetlights just coming on. 35mm documentary photograph, grain, muted slate and sodium tones, nobody hurt, no readable writing anywhere.",
+ "source_id": "f40875b5-70d9-415f-9d9a-847a2f59db1f"
+}

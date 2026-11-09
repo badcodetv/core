@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/EN1-a.jpg",
+ "made": "2026-11-09T17:48:13.676Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Seen from the back seat of a family hatchback at night: the driver's seat is empty, the seat belt hanging, the steering wheel turning slightly by itself as the car drives on its own along an empty motorway in a tight convoy of other driverless cars, all their headlights cold white. Far ahead on the horizon the silhouettes of giant walking cranes against an orange glow. A paper cup of water in the dashboard holder, still. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "71ac5c25-48a2-4818-b4d8-6e5bf629bf65"
+}

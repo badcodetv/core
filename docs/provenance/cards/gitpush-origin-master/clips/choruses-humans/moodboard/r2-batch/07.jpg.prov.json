@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/07.jpg",
+ "made": "2026-11-06T19:48:38.452Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Close at road level on a motorway at night: a suitcase burst open in the lane, folded clothes spilled over the wet tarmac, the amber hazard lights of empty cars blurred behind. No people. Grainy 35mm, night, no lettering.",
+ "source_id": "fd6aba96-efcc-4691-8094-8981de2e4442"
+}

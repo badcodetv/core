@@ -9,6 +9,12 @@ Models, credits, aspect, duration, and the surfaces beyond the prompt box.
 
 ## 1. Model / feature matrix
 
+> 🔴 **2026-11-09: this matrix is being retired.** Google removes **Veo 3.1 Fast, Veo 3.1 Quality and Omni 1.1 Flash**
+> from Flow on **5 Dec 2026** (Veo Extend went on 5 Nov). What stays: **Omni 1.2 Flash** (3–15 s slider, 360p/720p,
+> ~2× Omni 1.1's credits at 720p) and **Veo 3.1 Lite**. Omni 1.2 is our video model from 2026-11-09 (Kai).
+> Current facts, sources and our A/B: [`docs/google-flow/2026-11-09-omni-1-2-sweep.md`](../google-flow/2026-11-09-omni-1-2-sweep.md).
+> The table and the credit table in §2 below describe the old line-up and are kept as the record.
+
 ✅ **Settled 2026-08-18 against Google's own published matrix**, which we had never read. It
 resolves most of what this file used to hedge about — and it disagrees with us in one place
 that matters. Verbatim from *Learn about Google Flow models & supported features*:

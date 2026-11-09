@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/batch1/07.jpg",
+ "made": "2026-11-09T14:32:48.032Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Inside a packed British football stadium at night: the players have stopped on the pitch and sixty thousand fans are standing, every face turned up past the floodlights. Above them the whole sky is filled with thousands of small bright white lights slowly descending through low cloud, evenly spread like a vast silent meteor storm, and far off on the horizon bright flashes light up the underside of the clouds. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, landscape orientation. 16:9 frame from a fictional near-future film, no captions, logos, brand names, lettering or readable on-screen text; every screen and billboard shows only abstract colour.",
+ "source_id": "13184581-8063-43a5-aaa4-7cc606a20565"
+}

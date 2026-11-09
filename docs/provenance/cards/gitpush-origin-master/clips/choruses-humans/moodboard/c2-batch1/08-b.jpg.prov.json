@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/08-b.jpg",
+ "made": "2026-11-06T18:57:00.617Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night inside a car stuck in motorway gridlock: a woman at the wheel gripping it with both hands, her face lit red by the brake lights ahead, bin bags of clothes and a duvet piled on the back seat. 35mm documentary photograph, grain, red and dark blue, tense and quiet, no readable writing anywhere.",
+ "source_id": "df8dea1f-141f-407b-81a0-786dbed824ac"
+}

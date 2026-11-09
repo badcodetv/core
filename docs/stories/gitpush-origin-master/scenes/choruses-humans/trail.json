@@ -1,0 +1,70 @@
+[
+ {
+  "at": "2026-11-06T18:59:13+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/RuyCTKTbrHAqDeH4UvcxfE",
+  "what": "Round 1: 65 stills across 13 beats. Chorus 1 = the opening's people a week later (Kai: 1A); chorus 2 = things stop working, then the night flight out of Swindon, ending on black",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/choruses-humans /tmp/claude-1000/-home-kai-projects-badcode-badcode/33b6b754-f9c4-4e38-b97d-dde95cd4029b/scratchpad/choruses/moodboard.html"
+ },
+ {
+  "at": "2026-11-06T19:12:08+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/RuyCTKTbrHAqDeH4UvcxfE",
+  "what": "Round 1 votes read (12 This, no notes)",
+  "decided": [
+   "Kai picked 12: TR1-b-c, BD1-b-c, DW1-a-a, CA1-a-a, SH1-a-a, SH1-b-a, GR1-a-a, GR1-c-b, BS1-a-a, HE1-a-b, LO1-b-b, EM1-b-a. Kai: treble the picks, same scene and atmosphere in different compositions so both can be used together"
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 12
+ },
+ {
+  "at": "2026-11-06T19:49:28+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/RuyCTKTbrHAqDeH4UvcxfE",
+  "what": "Round 2: 34 new angles on Kai's 12 round 1 picks (same place, people and light; framed to intercut). Picks shown in the strip",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/choruses-humans /tmp/claude-1000/-home-kai-projects-badcode-badcode/33b6b754-f9c4-4e38-b97d-dde95cd4029b/scratchpad/choruses/moodboard.html"
+ },
+ {
+  "at": "2026-11-06T20:23:08+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/RuyCTKTbrHAqDeH4UvcxfE",
+  "what": "Round 2 votes read (26 This, no notes)",
+  "decided": [
+   "Kai picked 26: TR1-b-c TR2-a TR2-c BD1-b-c BD2-c DW1-a-a DW2-d CA1-a-a CA2-a CA2-e SH1-a-a SH2-d SH1-b-a SH2-f GR1-a-a GR2-d GR2-f GR1-c-b BS1-a-a BS2-f HE1-a-b HE2-f LO1-b-b LO2-e EM1-b-a EM2-f. Kai ruling: cut chorus 1 entirely (the monitor zoom IS chorus 1, straight into the banks); chorus 2 halved to one pass, filled only with these picks"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 26
+ },
+ {
+  "at": "2026-11-06T21:42:25+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/YNw3nRctYVNgTaAfpMtGnU",
+  "what": "26 animated chorus clips (Veo 3.1 Fast, 4 s) to pick ~13 from",
+  "rebuild": "see clips-board/README.md"
+ },
+ {
+  "at": "2026-11-08T12:21:30+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/8gX5wpQjdyW3krCtRV14jN",
+  "what": "14 picked clips on the beat over chorus 2's first pass (11.04 s), ending on black",
+  "rebuild": "python3 scripts/gpom/choruses/cut_humans.py && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/choruses-humans /tmp/claude-1000/-home-kai-projects-badcode-badcode/33b6b754-f9c4-4e38-b97d-dde95cd4029b/scratchpad/chorus-timeline"
+ },
+ {
+  "at": "2026-11-08T12:21:36+00:00",
+  "stage": "clips",
+  "round": 1,
+  "url": "https://claude.ai/artifact/YNw3nRctYVNgTaAfpMtGnU",
+  "what": "Kai's clip picks dumped",
+  "decided": [
+   "This on 14: TR1-b-c TR2-a BD1-b-c BD2-c CA1-a-a SH1-b-a GR1-a-a GR2-d GR2-f BS1-a-a BS2-f HE1-a-b LO2-e EM1-b-a (Kai: 'we possibly have enough to work with here')"
+  ],
+  "feedback": "feedback/clips-r1",
+  "feedback_docs": 14
+ }
+]

@@ -18,7 +18,7 @@ import {
 } from './batch'
 export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
-import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected, videoCountAlreadySelected } from './compose'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected, videoCountAlreadySelected, usesLengthSlider, SLIDER_MIN_SECONDS } from './compose'
 import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
 import { mediaIdFromContentUrl } from './media-url'
@@ -2972,6 +2972,22 @@ export class FlowClient {
     }
   }
 
+  /**
+   * Omni 1.2 Flash's Length slider (3–15s). A scripted value change does not reach Angular's
+   * mat-slider (measured 2026-11-09: the input read 1, the label still said 6 sec), but the
+   * keyboard does: focus, Home (= 3s), then one ArrowRight per extra second.
+   */
+  private async setLengthSlider(seconds: number, model: string): Promise<void> {
+    const slider = this.page.locator('.cdk-overlay-container input[type=range][aria-label="Length"]').first()
+    if (!(await slider.count())) throw new Error(`VIDEO_OPTION_UNAVAILABLE: Length slider on ${model}`)
+    const want = String(seconds - SLIDER_MIN_SECONDS)
+    if ((await slider.inputValue()) === want) return
+    await slider.focus()
+    await this.page.keyboard.press('Home')
+    for (let k = 0; k < seconds - SLIDER_MIN_SECONDS; k++) await this.page.keyboard.press('ArrowRight')
+    if ((await slider.inputValue()) !== want) throw new Error(`VIDEO_DURATION_NOT_APPLIED: slider reads ${await slider.inputValue()}, wanted ${want} (${seconds}s)`)
+  }
+
   /** Set every video control in the Settings popover and verify the trigger label. */
   private async ensureVideoConfigRebuilt(c: { model: string; aspect: VideoAspect; duration: number; count: number; frames: boolean }): Promise<void> {
     await this.openSettings()
@@ -2990,7 +3006,7 @@ export class FlowClient {
       await fam.click()
       const item = this.page
         .locator('.cdk-overlay-container button[role="menuitem"]')
-        .filter({ hasText: new RegExp(`^\\s*(volume_up)?\\s*${escapeRegExp(c.model)}\\s*$`) })
+        .filter({ hasText: new RegExp(`^\\s*(volume_up)?\\s*${escapeRegExp(canonicalVideoModel(c.model))}\\s*(Leaving\\s+\\d{1,2}\\s+[A-Za-z]{3,9})?\\s*$`) })
         .first()
       await item.waitFor({ state: 'visible', timeout: 10_000 }).catch(() => { throw new Error(`VIDEO_MODEL_UNAVAILABLE: ${c.model}`) })
       await item.click()
@@ -3001,7 +3017,8 @@ export class FlowClient {
     await pick(new RegExp(`${escapeRegExp(c.aspect)}$`), `aspect ${c.aspect}`)
     const p720 = radio(/^720p$/)
     if ((await p720.count()) && !(await checked(p720))) await p720.click()
-    await pick(new RegExp(`^${c.duration}s$`), `${c.duration}s`)
+    if (usesLengthSlider(c.model)) await this.setLengthSlider(c.duration, c.model)
+    else await pick(new RegExp(`^${c.duration}s$`), `${c.duration}s`)
     await pick(new RegExp(`^x${c.count}$`), `x${c.count}`)
     await this.closeSettings()
     // The label lags the popover (measured: read straight after Escape it still said 8s, and said

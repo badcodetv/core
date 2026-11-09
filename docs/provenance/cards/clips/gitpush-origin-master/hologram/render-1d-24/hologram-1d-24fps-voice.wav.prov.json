@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1d-24/hologram-1d-24fps-voice.wav",
+ "made": "2026-11-06T21:45:49+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "adelay/amix at edit-1d.json starts",
+ "why": "1D hologram voice, Kai r20 at1403 (d03 ends on 'yet')",
+ "inputs": {
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1d-24/edit.json"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/BS2-b.jpg",
+ "made": "2026-11-06T19:26:03.301Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The same woman and dog in the back of the same car at night, now seen from outside, behind the car, through its rear window: her pale face looking back at us, the dog's head at the glass, the orange glow of the town reflected across the window over them.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/BS1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/BS1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "8257f71b-c51a-491a-8f79-5acbe6b45a53"
+}

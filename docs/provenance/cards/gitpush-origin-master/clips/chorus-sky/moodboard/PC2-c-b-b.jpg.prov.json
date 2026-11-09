@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/PC2-c-b-b.jpg",
+ "made": "2026-11-09T17:07:52.782Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The rainy Piccadilly Circus night exactly as framed, but emptied: the road and pavements bare, no pedestrians, no red buses, no black cab, no traffic at all, only rain on wet tarmac. The curved advertising screen is breaking down like a failing TV: the pictures smeared into jagged stripes, colours split, frozen corrupted blocks, flicker of static, some panels gone dark.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/PC2-a-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/PC2-a-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cc127e68-f4ff-4edd-831a-f992c8504609"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/04-b.jpg",
+ "made": "2026-11-06T18:57:00.543Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A petrol station forecourt on a ring road at night, a long line of cars with headlights on waiting at pumps wrapped in black bin bags, drivers standing by their open doors. The forecourt canopy lights are the one bright source. 35mm documentary photograph, grain, muted colour, no readable writing anywhere.",
+ "source_id": "f6ee4d6a-7fac-484d-905f-98cad8bbbdb7"
+}

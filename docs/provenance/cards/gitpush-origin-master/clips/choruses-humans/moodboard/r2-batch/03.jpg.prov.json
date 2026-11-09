@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/03.jpg",
+ "made": "2026-11-06T19:48:38.383Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Over the shoulder of a man in a grey hooded coat at a cash machine at dusk: his finger jabbing the keypad, the screen blank flat blue, his breath fogging in the cold, the waiting queue out of focus behind him. Grainy 35mm, cool grey, the screen lighting his knuckles, no readable lettering.",
+ "source_id": "34031191-1a4b-41a8-b47e-1235bca007f7"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/04.jpg",
+ "made": "2026-11-06T19:48:38.415Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "High above a rainy office plaza at night, looking straight down the glass face of a tower: far below, a single lit doorway with one tiny figure lying in a sleeping bag, rain streaking down through the frame. Grainy 35mm, cold blue night, the doorway the one bright patch, no lettering.",
+ "source_id": "60631fa1-7843-4f3a-927f-4edcbea54110"
+}

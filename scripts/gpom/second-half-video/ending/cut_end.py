@@ -50,7 +50,7 @@ SPEAKER = ('highpass=f=300,highpass=f=300,lowpass=f=3400,lowpass=f=3400,volume=6
            'asoftclip=type=atan,acrusher=bits=12:mix=0.15,volume=-3dB')
 ENC = C.ENC
 C1_KEEP = False  # Kai reel at73: beat c1 (the door from inside) is cut
-ROUND_KEYS = ('file_round7', 'file_round6', 'file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
+ROUND_KEYS = ('file_round13', 'file_round8', 'file_round7', 'file_round6', 'file_round5', 'file_round4', 'file_round3', 'file_round2_kai')  # newest first
 fr, dur = C.fr, C3.dur
 TAG = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else None
 LATER = TAG in ('later', 'nextday', 'noaliens')

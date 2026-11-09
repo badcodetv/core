@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/16-b.jpg",
+ "made": "2026-11-06T18:57:00.741Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "An empty terraced street at night with no people at all: a family hatchback stopped in the middle of the road with its driver's door wide open, headlights on, exhaust curling in the cold air, a front door left open behind it. 35mm documentary photograph, grain, the headlights the only light, eerie stillness, no readable writing anywhere.",
+ "source_id": "73f24f0b-c030-4115-9c98-96ef156b4c65"
+}

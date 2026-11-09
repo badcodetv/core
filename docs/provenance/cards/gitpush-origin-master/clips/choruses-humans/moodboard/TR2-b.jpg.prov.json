@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/TR2-b.jpg",
+ "made": "2026-11-06T19:13:24.319Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Treat the provided frame as one shot of a film scene. Make the next shot of that same scene: same man, same jacket, same shelter, same rain and grey light, same grain. New camera position: a tight profile close-up of his face through the rain-streaked shelter glass, the desk plant from his box just in the bottom of frame, eyes fixed on nothing.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/TR1-b-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/TR1-b-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "3bbaed75-74dc-4b33-966d-955df8e63a17"
+}

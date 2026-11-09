@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/00-a.jpg",
+ "made": "2026-11-06T18:57:00.314Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Dusk on an ordinary Swindon high street. A queue of a dozen people at a cash machine set into a bank wall; its screen glows a blank flat blue, and a man at the front presses the keypad again and again while the others watch him, phones in hand. Grey English evening, wet pavement, shop shutters half down. Shot like a 35mm documentary photograph, fine grain, muted greys, the blue screen lighting the faces. No readable writing anywhere.",
+ "source_id": "2ec2ca97-d1e0-4943-9e5b-c0dd756f0b45"
+}

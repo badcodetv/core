@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r20/10b-0-bot-b.wav",
+ "made": "2026-11-06T20:08:35+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "why": "round 20 ending (Kai at4079/at3874)",
+ "prompt": "[urgent, fast] Quick, boss, hurry up! They're nearly there.",
+ "inputs": {
+  "profile_file": "docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/voice-r20/10b-0.profile.md"
+ },
+ "settings": {
+  "voice": "Aoede"
+ }
+}

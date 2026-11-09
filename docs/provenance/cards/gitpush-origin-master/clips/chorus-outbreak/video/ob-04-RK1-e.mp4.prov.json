@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-04-RK1-e.mp4",
+ "made": "2026-11-09T19:24:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Low on the hard shoulder, the camera slowly tilts up to follow a colossal jointed steel crane leg as it swings forward over the camera and the jammed cars, sparks and grit falling towards the lens, floodlights blazing down. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/RK1-e.jpg",
+ "why": "Look up as it passes",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/RK1-e.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "04",
+  "frame": 4,
+  "option": "b"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T19:10:57.381Z"
+ }
+}

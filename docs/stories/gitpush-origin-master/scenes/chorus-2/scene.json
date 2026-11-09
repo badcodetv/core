@@ -102,7 +102,7 @@
     "clips": "https://claude.ai/artifact/KDw9dRfPJCvdsZs9TXK4C5"
   },
   "video": {
-    "model": "Omni 1.1 Flash",
+    "model": "Omni 1.2 Flash",
     "aspect": "16:9",
     "mode": "Frames"
   }

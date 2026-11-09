@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/SH2-a.jpg",
+ "made": "2026-11-06T19:19:04.710Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A second set-up in the stripped supermarket from this frame: the woman, her empty trolley, the bare shelves and the flickering strip light all unchanged. Camera now directly behind her at trolley height, looking past her shoulder down the endless empty aisle.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/SH1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/SH1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "ced153a0-0921-47ef-baad-b5fa6decc770"
+}

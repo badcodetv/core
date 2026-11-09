@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/SH2-c.jpg",
+ "made": "2026-11-06T19:19:33.052Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A second set-up in the stripped supermarket from this frame: same woman in her parka, same sickly strip light. Camera now a close-up of her face from the front, hands on the trolley handle, the flickering tube above her and bare shelving out of focus either side.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/SH1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/SH1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "9c1a65a7-314d-49e3-818a-36b2342a2fa5"
+}

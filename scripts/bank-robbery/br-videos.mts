@@ -51,7 +51,7 @@ async function one(p: { id: string; prompt: string }) {
   const plate = `${S}/plates/${SET}-${nn}.jpg`
   await c.reloadProject(); await closeAgentPanel(); await c.ensureAgentOff()
   await upload(plate)
-  await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: 8, count: 1, frames: true })
+  await c.ensureVideoConfigRebuilt({ model: 'Omni 1.2 Flash', aspect: '16:9', duration: 8, count: 1, frames: true })
   await c.fillFrameSlotRebuilt('Start', `${SET}-${nn}.jpg`)
   await page.evaluate(() => window.scrollTo(0, 0)).catch(() => {})
   const before = await keys()

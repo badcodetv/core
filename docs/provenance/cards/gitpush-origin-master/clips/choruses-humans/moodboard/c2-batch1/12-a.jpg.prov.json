@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/12-a.jpg",
+ "made": "2026-11-06T18:57:00.680Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night, a supermarket car park on the edge of an English town: a few people loading cars stop and turn to look at something far over the rooftops, where a small helicopter's searchlight tilts and slowly spirals downward in the distance, tiny in the frame. 35mm documentary photograph, grain, sodium car park light, distant and quiet, no fire, no readable writing anywhere.",
+ "source_id": "84c44fbd-5d86-4351-a6ba-72b7f88e84de"
+}

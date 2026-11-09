@@ -175,7 +175,7 @@ def tts(name, take):
     open(pf, 'w').write(prof); open(tf, 'w').write(text + '\n')
     out = f'{OUT}/{name}-{take}.wav'
     if not os.path.exists(out):
-        subprocess.run(f'set -a; . ./.env; set +a; uv run -q --with google-genai python3 scripts/aistudio-tts.py {tf} {out} '
+        subprocess.run(f'set -a; . ./.env; set +a; uv run -q --with "google-genai<2" python3 scripts/aistudio-tts.py {tf} {out} '
                        f'--profile {pf} --voice {cast["voice"]}', shell=True, cwd=REPO, capture_output=True, check=True)
         subprocess.run([sys.executable, f'{REPO}/scripts/provenance/prov.py', 'card', out, '--kind', 'voice', '--engine',
                         'Gemini TTS', '--model', f'gemini-3.1-flash-tts-preview / {cast["voice"]}', '--tool',

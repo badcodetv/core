@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/EM2-c.jpg",
+ "made": "2026-11-06T19:38:30.894Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "On this same abandoned motorway at night: a close ground-level shot of a suitcase that has burst open in the lane, folded clothes spilling onto the wet tarmac, the hazard lights of the empty cars blinking amber behind it, nobody anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/EM1-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/EM1-b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "fb5f68a6-db01-4ac5-9973-11a33a523c6a"
+}

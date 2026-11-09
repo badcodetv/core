@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/DW2-c.jpg",
+ "made": "2026-11-06T19:16:44.794Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Another angle on the scene in this frame. Keep the tower, the doorway, the rain and the night exactly as they are. Camera now high up the tower looking straight down the glass facade to the plaza far below, the lit doorway a small rectangle with one tiny figure in a sleeping bag, rain streaking past the lens.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/DW1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/DW1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "fa05e877-fcd9-4b12-a95b-3c8e5ee3f49d"
+}

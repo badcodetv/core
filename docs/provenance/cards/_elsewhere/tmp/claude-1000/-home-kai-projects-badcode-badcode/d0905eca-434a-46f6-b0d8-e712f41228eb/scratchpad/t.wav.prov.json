@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0905eca-434a-46f6-b0d8-e712f41228eb/scratchpad/t.wav",
+ "made": "2026-11-06T19:28:58+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "He?",
+ "inputs": {
+  "profile": "A quiet man.\n",
+  "profile_file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/d0905eca-434a-46f6-b0d8-e712f41228eb/scratchpad/p.md"
+ },
+ "settings": {
+  "voice": "Algieba",
+  "temperature": 1,
+  "channels": 2
+ }
+}

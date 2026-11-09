@@ -1,0 +1,73 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "chorus-sky",
+  "prefix": "sk",
+  "title": "GPOM Chorus: the sky, then the silence",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> the chorus: the sky, then the silence",
+  "moodboard_intro": "Round 1. The one half-chorus (about 11 s) between the banks and the war. The world's busiest places, three ways each: full of people, the people looking up at the sky, and the same frame empty. Plus four looks for the lights in the sky and two close-ups of faces. Tap This, Maybe or No; leave a note per beat.",
+  "storyboard_intro": "Frames in order: the sky (beats 1-16), the cut, the silence (beats 17-32).",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky",
+  "flow_project": "7c30dbaf-9efd-4f94-84e6-49c3314cad21",
+  "premiere": {
+    "sequence": "01 GPOM start",
+    "slot": [
+      106.917,
+      117.954
+    ],
+    "song_in": 113.917
+  },
+  "board_round": 1,
+  "beats": [
+    {
+      "key": "LT",
+      "at": "the threat",
+      "name": "What's in the sky",
+      "blurb": "Four looks for the lights over the cities. The autonomous army arriving, seen only as light."
+    },
+    {
+      "key": "SB",
+      "at": "world",
+      "name": "Tokyo, Shibuya crossing",
+      "blurb": "Full, looking up, empty."
+    },
+    {
+      "key": "TS",
+      "at": "world",
+      "name": "New York, Times Square",
+      "blurb": "Full, looking up, empty."
+    },
+    {
+      "key": "PC",
+      "at": "world",
+      "name": "London, Piccadilly Circus",
+      "blurb": "Full, looking up, empty."
+    },
+    {
+      "key": "ST",
+      "at": "world",
+      "name": "A football stadium",
+      "blurb": "Full, looking up, empty: the floodlights still on."
+    },
+    {
+      "key": "MW",
+      "at": "world",
+      "name": "A motorway interchange",
+      "blurb": "Full, looking up, empty: every car left where it stopped."
+    },
+    {
+      "key": "CB",
+      "at": "world",
+      "name": "Rio, Copacabana",
+      "blurb": "Full, looking up, empty."
+    },
+    {
+      "key": "FC",
+      "at": "close",
+      "name": "Faces",
+      "blurb": "Close on people looking up, lit from above. Awe and fear, never pain."
+    }
+  ],
+  "boards": {
+    "moodboard": "https://claude.ai/artifact/RRb4Xr1ckXnXdFV3AMkNoF"
+  }
+}

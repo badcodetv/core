@@ -189,13 +189,17 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
 | --- | --- | --- |
 | `motion` only | text→video | |
 | `startImage` | animate | The path with the most live proof. Falls back to Frames on `ANIMATE_NOT_FOUND`, visibly (`via: 'frames-fallback'`) |
-| `startImage` + `endImage` | frames | Needs a Veo 3.1 tier — Omni Flash rejects a last frame |
+| `startImage` + `endImage` | frames | Omni 1.1 rejects a last frame; **Omni 1.2 untested** (Flow's help page says Veo 3.1 Lite only, one creator used it on 1.2). Veo 3.1 Lite is the safe tier |
 | `endImage` alone | ✗ | Not a mode. Refused up front |
 
 **Two constraints that decide the call before you write it** (Google-published, see
 [`platform-controls.md`](../../../docs/flow/platform-controls.md) §1):
 
-- **A cast character cannot run on Veo 3.1 Quality**, and forces 8s. Character shots top out at Fast.
+- 🔴 **From 5 Dec 2026 Flow keeps only Omni 1.2 Flash and Veo 3.1 Lite.** Veo 3.1 Fast, Veo 3.1 Quality and Omni 1.1 Flash
+  are retired; Omni 1.2 Flash is our video model from 2026-11-09 (Kai, after the A/B in
+  `docs/google-flow/2026-11-09-omni-1-2-sweep.md`). It costs ~2× Omni 1.1 at 720p; 360p is the cheap draft.
+- ~~A cast character cannot run on Veo 3.1 Quality, and forces 8s. Character shots top out at Fast.~~ Moot once Fast and
+  Quality leave; whether 1.2 holds a cast character is untested.
 - **Veo audio is always on and cannot be disabled.** Strip it: `ffmpeg -i in.mp4 -c:v copy -an out.mp4`.
 
 ---
@@ -219,7 +223,7 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
 | `ANIMATE_WRONG_SOURCE` | Guard caught the wrong still, **before credits** | Good. That is the guard working |
 | `PROJECT_NOT_FOUND` on a project you can see | Project tiles rendered without `<a href>` | `goto` the known `/project/<uuid>` directly; reload through the error boundary |
 | Tools hang **right after a video call** | Video mode poisoned the picker | Known and fixed, but if it recurs: any image call flips the bar back. §4 law 2 |
-| `VIDEO_DURATION_UNAVAILABLE` | 10s asked of a Veo tier | 10s is Omni Flash only — and absent on our account since 2026-08-18 |
+| `VIDEO_DURATION_UNAVAILABLE` | A length the model lacks | Veo tiers: 4/6/8s. Omni 1.1: up to 10s. **Omni 1.2: any whole second 3–15**, on a slider (law 25) |
 | `VIDEO_REFINE_NOT_A_MEDIA_ID` | You passed the `.mp4` path | Pass the **mediaId** `flow_generate_video` returned |
 
 **You are not charged for a failed generation**, including an audio-stage kill. Protect the
@@ -275,7 +279,7 @@ Full method, including what ffmpeg can do that Premiere cannot:
 
 ---
 
-## 4. The twenty-four laws
+## 4. The twenty-five laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -400,6 +404,12 @@ explain most of what you will see.
     `browser-channel.sh up/claim` unsandboxed, and make sure `outPath`'s folder exists, because a missing folder
     gives the same ENOENT. The Characters UI on the rebuilt Flow (still unmapped in the MCP) has its hand-driven
     recipe in `docs/flow/automation-2026-09-rebuild.md` items 25–28.
+
+25. 🔴 **Omni 1.2 Flash sets length with a SLIDER, not tabs** (seen 2026-11-09). `input[type=range][aria-label=Length]`, min 0
+    max 12, value = seconds − 3 (3–15 s). A scripted `value` + input/change event moves the input but **not** Angular's
+    mat-slider (the label still read the old length); the keyboard works: focus, `Home`, then one `ArrowRight` per second.
+    The tab click on a 1.2 popover fails as `VIDEO_OPTION_UNAVAILABLE: 4s`. `setLengthSlider` in `flow-client.ts` does it;
+    a running MCP server needs a restart to pick it up. The same popover now also offers **360p** beside 720p.
 
 ---
 

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/LO2-c.jpg",
+ "made": "2026-11-06T19:34:51.598Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same view of the blackout over Swindon as this frame, with a lone man in a coat standing on the hilltop in the foreground, seen from behind as a dark silhouette against the remaining lit half of the town, watching it go.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/LO1-b-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/LO1-b-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "19d45513-5063-4f9e-be86-e6728f69bada"
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r14b-tight.wav",
+ "made": "2026-11-09T19:05:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/ending/tighten.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r14b.wav",
+ "why": "D round 14: Kai wants lots of pauses: held to 1.2 s; words untouched"
+}

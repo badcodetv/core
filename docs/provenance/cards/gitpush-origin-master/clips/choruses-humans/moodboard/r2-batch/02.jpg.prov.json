@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/02.jpg",
+ "made": "2026-11-06T19:48:38.372Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Long lens from far down a wet Swindon high street at dusk: a queue of people in coats stretching back past five shopfronts towards one small blue-lit cash machine, compressed into one long line, phones glowing in hands, shop shutters half down. Grainy 35mm, grey evening light, no readable lettering.",
+ "source_id": "7b27dc08-38d2-46bd-a4aa-4cfd004eba5e"
+}

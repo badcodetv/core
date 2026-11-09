@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/07-b.jpg",
+ "made": "2026-11-06T18:57:00.589Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Night, high viewpoint from a motorway footbridge over the M4 near Swindon: every lane heading out of town is jammed solid with cars, a river of red tail-lights for miles into the dark, the opposite carriageway completely empty. 35mm photograph, grain, deep night blues and the red lights, no readable writing anywhere.",
+ "source_id": "1ad60d30-9270-4f3d-a8c4-389954fb980f"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/TS2-c-c-a.jpg",
+ "made": "2026-11-09T17:06:09.229Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Times Square exactly as pictured, buildings, adverts and overcast light unchanged, but deserted: not one person on the plaza or the pavements. Taxis sit abandoned mid-street, some doors open. The big screens are glitching like a broken television: the adverts smeared into jagged horizontal stripes, colour channels split, blocks of corrupted pixels, static, a few screens dead black. Low drifting dust.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/TS2-a-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/TS2-a-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "01666b20-34b5-41ca-b083-509ad88dabf6"
+}

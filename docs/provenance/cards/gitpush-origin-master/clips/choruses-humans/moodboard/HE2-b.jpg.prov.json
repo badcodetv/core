@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/HE2-b.jpg",
+ "made": "2026-11-06T19:28:20.372Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same car park and night as this frame, seen wider from the far corner: in the dark sky above the rooftops a helicopter's white searchlight swings and tilts as it drops, small but clearly visible, and the scattered shoppers below have all stopped to watch. No fire.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/HE1-a-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/HE1-a-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "c2d37b0d-f4ed-4e50-99f7-494223758b02"
+}

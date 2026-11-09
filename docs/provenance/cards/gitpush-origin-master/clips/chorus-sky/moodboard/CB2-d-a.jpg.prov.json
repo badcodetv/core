@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/CB2-d-a.jpg",
+ "made": "2026-11-09T17:04:29.502Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Total blackout. Every light in this picture is switched off: every hotel and apartment window is black, every promenade streetlamp is out, the beach kiosks are dark. The tower blocks stand as dark unlit shapes against a dim blue sky, the sand and the wave-pattern pavement barely visible. Same framing, same buildings, same empty beach.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/CB2-c-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/CB2-c-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "668d8176-c3ea-4e8a-ab06-75078acc2f9b"
+}

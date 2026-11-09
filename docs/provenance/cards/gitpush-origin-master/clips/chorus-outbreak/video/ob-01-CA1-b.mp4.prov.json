@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-01-CA1-b.mp4",
+ "made": "2026-11-09T19:24:09+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera body stays still while the focus slowly pulls from the trembling cup of water in the foreground to the view through the windscreen: a jammed motorway of red tail-lights, and far off above it a single red light climbs slowly up into the low cloud. The water ripples throughout. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/CA1-b.jpg",
+ "why": "Rack focus to the horizon",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/CA1-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "01",
+  "frame": 1,
+  "option": "b"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T19:09:44.627Z"
+ }
+}

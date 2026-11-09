@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/01-b.jpg",
+ "made": "2026-11-06T18:57:00.480Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Close on a hand at a cash machine slot at dusk, pulling back a bank card, the machine's screen dark and dead, other hands and coats crowding behind out of focus. 35mm documentary photograph, fine grain, cool grey light, observational, no readable writing anywhere.",
+ "source_id": "9655e2ed-dc5b-4047-815a-86a1fb4bd7bd"
+}

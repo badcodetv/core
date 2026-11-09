@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-0-sandra-r7a-tight.wav",
+ "made": "2026-11-06T19:40:56+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atrim+concat",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-0-sandra-r7a.wav",
+ "why": "D round 7: pauses inside the take held to 0.5s ({1: 0.6} by index) so the wafer does not drag; words untouched, never slowed or sped"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/EM2-a.jpg",
+ "made": "2026-11-06T19:37:53.298Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Inside this same abandoned motorway at night, no people anywhere: camera low beside one empty car with its door hanging open, the little interior light on, keys dangling in the ignition, amber hazards blinking along the line of cars beyond.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/EM1-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/EM1-b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "d5b74467-d0c5-44f7-8b3b-15f1f0ecef57"
+}

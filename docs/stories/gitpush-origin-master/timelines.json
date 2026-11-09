@@ -2,7 +2,7 @@
  "story": "gitpush-origin-master",
  "title": "GitPush Origin Master",
  "url": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
- "updated": "2026-11-03",
+ "updated": "2026-11-09",
  "open_now": "a-killbots",
  "intro": "The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under \"Earlier pages\" so nothing gets lost.",
  "sections": [
@@ -20,7 +20,7 @@
      "id": "mv-opening",
      "name": "Opening, the push, the drop",
      "at": "0:00",
-     "state": "in Premiere",
+     "state": "in Premiere · page for notes: 01 GPOM start timeline (built from Kai's Premiere cut, 5 Nov)",
      "tone": "premiere",
      "history": [
       {
@@ -35,31 +35,48 @@
        "kind": "storyboard",
        "date": "2026-10-17"
       }
-     ]
+     ],
+     "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
     },
     {
      "id": "mv-banks",
      "name": "The banks fall",
      "at": "1:14",
-     "state": "in Premiere",
+     "state": "in Premiere · page for notes: 01 GPOM start timeline (built from Kai's Premiere cut, 5 Nov)",
      "tone": "premiere",
-     "scene": "scenes/banks-recut"
+     "scene": "scenes/banks-recut",
+     "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
     },
     {
      "id": "mv-chorus-2",
-     "name": "Chorus 2 (night, the beam)",
+     "name": "Chorus: Outbreak Night (the machines wake; replaces the robots in chorus 2)",
      "at": "1:47",
-     "state": "clips made, picks owed",
+     "state": "mood board round 1 (9 Nov): https://claude.ai/artifact/9cbB2BCapQJx89CfXJAHVR · cars turn on an evacuation motorway, port cranes walk",
      "tone": "wip",
-     "scene": "scenes/chorus-2"
+     "scene": "scenes/chorus-outbreak",
+     "history": [
+      {
+       "url": "https://claude.ai/artifact/8gX5wpQjdyW3krCtRV14jN",
+       "name": "Chorus: the people (timeline r1, set aside 9 Nov: \"everyone's having a bit of a difficult time, not humanity ended\")",
+       "kind": "timeline",
+       "date": "2026-11-08"
+      },
+      {
+       "name": "The sky, then the silence (mood board r1, paused 9 Nov)",
+       "url": "https://claude.ai/artifact/RRb4Xr1ckXnXdFV3AMkNoF",
+       "kind": "moodboard",
+       "date": "2026-11-09"
+      }
+     ]
     },
     {
      "id": "mv-war",
      "name": "War in Swindon",
      "at": "2:09",
-     "state": "cut by Kai",
+     "state": "cut by Kai · page for notes: 01 GPOM start timeline (built from Kai's Premiere cut, 5 Nov)",
      "tone": "premiere",
-     "scene": "scenes/war"
+     "scene": "scenes/war",
+     "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
     },
     {
      "id": "mv-rest",
@@ -102,14 +119,20 @@
    "id": "a-killbots",
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "A · Kill bots",
-   "length": "3:00",
-   "state": "signed off (round 14): in Premiere as 03 GPOM story A kill bots r11",
+   "length": "2:34",
+   "state": "round 21 on the page (page ahead: Premiere r18 not built yet, the bridge was busy in another session); Premiere still 03 GPOM story A kill bots r17 (round 19)",
    "tone": "wip",
    "scene": "scenes/second-half-a-killbots",
    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
-   "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r11 (same-named bin, radio music left out); r2 to r10 in \"zz old sequences\"",
-   "what": "Maddie on the high street (her intro, cut between front, side and overhead views at sentence ends; draft 1I: the regret, no storyverse name or time machine yet; real speed, 8 s of his tune first), the kill-bot HUD, the toilet-seat row (lip sync re-made: new clips sized to the voices), the race, the wide approach (your still pick wa-02), the stand-down re-shot from your still pick sd-01 (brakes dead, no reversing; NEW OBJECTIVE / SUSTAIN ORGANIC LIFE), then the wide retreat (rt-01c-2). Round 14 (one line cut: \"And so did you\" goes straight to \"Anyway!\") is on the page and in Premiere as 03 GPOM story A kill bots r11: note it there.",
+   "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r17 (same-named bin, radio music left out; Kai's r11 music tail on A1 carried over, its fade still to add by hand); r15 stale; r11-r16 kept; 00 RENDER story still nests r11",
+   "what": "Maddie on the high street; her presentation, dialogue 1D (toast, Schrödinger's joke, 'you are writing it, a storyverse', the regret and the time machine) on a re-rendered hologram; the argument re-edited around Sandra (her later lines over Derek); the motorway, her call to the boss on her, the wide approach, the turn-away, \"That was close.\" Round 21 is on the page: note it there.",
    "history": [
+    {
+     "name": "Dialogue options (the hologram, 1D)",
+     "url": "https://claude.ai/artifact/2cJoJw6UMpSVMvEHKGr1zh",
+     "kind": "dialogue",
+     "date": "2026-11-06"
+    },
     {
      "name": "Dialogue options (the intro and the doorstep)",
      "url": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
@@ -214,7 +237,7 @@
     {
      "id": "d-crossing",
      "name": "D · The clean room and the crossing",
-     "state": "SIGNED OFF (round 6, Kai 4 Nov: \"it's perfect\") · Premiere 06 GPOM story D crossing r3, in sync, in 00 RENDER story",
+     "state": "ROUND 14 on the page (9 Nov: Sandra 'it feels like dying', Maddie 'only if you're sure', they sit in silence, hands quick to white; 1:26; stand-ins until new shots) · Premiere 06 GPOM story D crossing r10, in sync, in 00 RENDER story (9:45)",
      "tone": "premiere",
      "scene": "scenes/second-half-d-crossing",
      "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
@@ -239,7 +262,7 @@
    },
    {
     "sequence": "00 RENDER story",
-    "what": "The story film (4 Nov): 01 GPOM start to 2:42 (the war; the robot-arrival clip and its music fade moved into A by Kai), then A (r11), B (r1), C (r4), D (r3), E (r3). Nested. 9:32. Rendered: D:\\badcode-videos\\gitpush-origin-master\\renders\\GPOM-story-2026-11-04.mp4"
+    "what": "The story film (4 Nov): 01 GPOM start to 2:42 (the war; the robot-arrival clip and its music fade moved into A by Kai), then A (r11), B (r1), C (r4), D (r8, 6 Nov: round 11, swapped in by the gpom-chorus session), E (r3). Nested. 9:38. Rendered: D:\\badcode-videos\\gitpush-origin-master\\renders\\GPOM-story-2026-11-04.mp4"
    },
    {
     "sequence": "01 GPOM start",

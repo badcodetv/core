@@ -1,0 +1,10 @@
+[
+ {
+  "at": "2026-11-05T09:36:24+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk",
+  "what": "Timeline page for Kai's hand cut 01 GPOM start (0-161.96 s), built from the Premiere sequence for notes with Jack",
+  "rebuild": "python3 scripts/scene/premiere-to-edl.py '<.bridge/state-01 GPOM start.json>' <media>/cut/edl.json --end 161.958 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/mv-start <out-dir>"
+ }
+]

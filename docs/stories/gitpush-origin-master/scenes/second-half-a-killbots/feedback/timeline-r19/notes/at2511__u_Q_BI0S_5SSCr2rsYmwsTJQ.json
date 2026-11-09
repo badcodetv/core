@@ -1,0 +1,8 @@
+{
+  "at": 1793991448466,
+  "beat": "0",
+  "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+  "key": "at2511",
+  "note": "And at the point that the camera starts to animate out of the middle of the decision cloud, it should go immediately to the place in one movement where it's looking sideways exactly at the cutoff point. At the moment there's a couple of stages that it goes through until it gets to there. So I don't want to mess around. As soon as we decide to come out of that decision cloud, we should have got to the end. All of the lanes should have got to the cutoff point because our decision cloud animation code will have worked out the pace at which each decision can be made so we don't run out of space, but right at the end we all end up at the end. The camera cuts now out of the cloud to start looking sideways where every decision just stopped. And it's this idea that that's where humans went away. But we need to do this transition now in one smooth movement rather than the couple of stages that it currently does it with.",
+  "tc": "00:01:44:15"
+}

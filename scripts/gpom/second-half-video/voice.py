@@ -139,7 +139,7 @@ def tts(job, wav_out, work):
     for attempt in range(1, 4):
         tmp = work / f'{key}.try{attempt}.wav'
         tmp.unlink(missing_ok=True)
-        r = subprocess.run(['uv', 'run', '-q', '--with', 'google-genai', 'python3', str(REPO / 'scripts/aistudio-tts.py'),
+        r = subprocess.run(['uv', 'run', '-q', '--with', 'google-genai<2', 'python3', str(REPO / 'scripts/aistudio-tts.py'),
                             str(work / f'{key}.txt'), str(tmp), '--profile', str(prof), '--voice', job['voice']],
                            capture_output=True, text=True, env=os.environ)
         if r.returncode or not tmp.exists():
@@ -293,7 +293,7 @@ def run(job):
     last = ''
     for attempt in range(1, 4):
         tmp = WORK / f'{key}.wav'
-        r = subprocess.run(['uv', 'run', '-q', '--with', 'google-genai', 'python3', str(REPO / 'scripts/aistudio-tts.py'),
+        r = subprocess.run(['uv', 'run', '-q', '--with', 'google-genai<2', 'python3', str(REPO / 'scripts/aistudio-tts.py'),
                             str(WORK / f'{key}.txt'), str(tmp), '--profile', str(prof), '--voice', voice],
                            capture_output=True, text=True, env=os.environ)
         if r.returncode or not tmp.exists():

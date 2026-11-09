@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/11.jpg",
+ "made": "2026-11-09T17:47:34.082Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "A British city skyline at night seen from a hill of terraced houses: the tall tower cranes on every building site have pulled themselves out of their concrete bases and stand on their own, their jibs swinging, red lamps at the top, half-built towers cracking where they were attached; the streets below are rivers of headlights. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "0d6f9037-9219-40b4-8b8a-bc8ac40a6a3d"
+}

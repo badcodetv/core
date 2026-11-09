@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/video/GR1-a-a.mp4",
+ "made": "2026-11-06T20:48:31.154Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera rises slowly up and back from the footbridge, revealing the red river of brake lights stretching even further into the dark; a ripple of brake lights runs back along the jam. Realistic, documentary 35mm grain, no text.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/home/kai/.cache/flow-refs/choruses/vid/GR1-a-a.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/flow-refs/choruses/vid/GR1-a-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 4
+ },
+ "source_id": "4dcd0f0f-4212-4d04-8e16-ed4ebeb365c8",
+ "note": "harvest-shifted: saved under another job's name by flow_generate_video, re-attributed by first frame; source_id may be wrong"
+}

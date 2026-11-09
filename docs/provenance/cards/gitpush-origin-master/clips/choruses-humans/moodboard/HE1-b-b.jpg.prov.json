@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/HE1-b-b.jpg",
+ "made": "2026-11-06T18:58:10.273Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Night over the rooftops of an English town, seen from a quiet residential street: in the middle distance a police helicopter tilts sideways, its white searchlight beam swinging wildly across the clouds as it slowly drops below the roofline. Two neighbours in coats on the pavement in the foreground watch it, small and still. No fire, no smoke. 35mm documentary photograph, grain, cold blue night, the searchlight the one bright stroke, no readable writing anywhere.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b634ca10-9744-4827-8394-66a9ca3ca82d"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/video/HE2-f.mp4",
+ "made": "2026-11-06T21:36:59.451Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Through the windscreen the searchlight in the sky swings, tilts and drops below the roofline; the two shoppers ahead step back towards the car. Realistic, documentary 35mm grain, no text.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/home/kai/.cache/flow-refs/choruses/vid/HE2-f.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/flow-refs/choruses/vid/HE2-f.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 4
+ },
+ "source_id": "096b7a2e-0573-4280-8542-aebd465cad63",
+ "note": "harvest-shifted: saved under another job's name by flow_generate_video, re-attributed by first frame; source_id may be wrong"
+}

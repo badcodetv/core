@@ -1,0 +1,16 @@
+{
+  "story": "gitpush-origin-master",
+  "scene": "mv-start",
+  "prefix": "ms",
+  "title": "01 GPOM start",
+  "heading": "GitPush Origin Master <span class=\"tri\">▲</span> 01 start (the music video, Kai's hand cut)",
+  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start",
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/mv-start/cut/preview.mp4",
+    "how": "premiere-to-edl.py from the bridge dump of '01 GPOM start'; preview = first 161.958 s of renders/GPOM-story-2026-11-04.mp4 (01 is nested at 0-161.96 in 00 RENDER story)"
+  },
+  "boards": {
+    "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
+  }
+}

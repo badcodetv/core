@@ -1,0 +1,282 @@
+{
+ "beats": [
+  {
+   "key": "money",
+   "name": "The money goes",
+   "blurb": "The trader, the woman at the shop window, the man in the doorway.",
+   "at": "1"
+  },
+  {
+   "key": "cash",
+   "name": "The money stops",
+   "blurb": "The dead cash machine.",
+   "at": "2"
+  },
+  {
+   "key": "shops",
+   "name": "Nothing to buy",
+   "blurb": "Empty shelves, the petrol queue, the bagged pumps.",
+   "at": "3"
+  },
+  {
+   "key": "flight",
+   "name": "Everyone leaves",
+   "blurb": "The M4 jam, the walkers, the woman and her dog.",
+   "at": "4"
+  },
+  {
+   "key": "sky",
+   "name": "Something in the sky",
+   "blurb": "The helicopter coming down.",
+   "at": "5"
+  },
+  {
+   "key": "dark",
+   "name": "The lights go out",
+   "blurb": "Swindon blacking out.",
+   "at": "6"
+  },
+  {
+   "key": "gone",
+   "name": "Gone",
+   "blurb": "The abandoned motorway. Then black, then the war.",
+   "at": "7"
+  }
+ ],
+ "clips": [
+  {
+   "key": "TR1-b-c",
+   "still": "TR1-b-c",
+   "beat": "money",
+   "file": "v/TR1-b-c.mp4",
+   "what": "van sprays the bus shelter; he flinches over his box",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "TR2-a",
+   "still": "TR2-a",
+   "beat": "money",
+   "file": "v/TR2-a.mp4",
+   "what": "wide: van blurs past, trader small in the shelter",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "TR2-a-2",
+   "still": "TR2-a-2",
+   "beat": "money",
+   "file": "v/TR2-a-2.mp4",
+   "what": "spare take of the wide",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "BD1-b-c",
+   "still": "BD1-b-c",
+   "beat": "money",
+   "file": "v/BD1-b-c.mp4",
+   "what": "shop lights switch off behind her; she walks away",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "BD2-c",
+   "still": "BD2-c",
+   "beat": "money",
+   "file": "v/BD2-c.mp4",
+   "what": "the shop window from across the street, rain",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "DW1-a-a",
+   "still": "DW1-a-a",
+   "beat": "money",
+   "file": "v/DW1-a-a.mp4",
+   "what": "wind blows cardboard across the plaza; lobby lights go out",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "DW2-d",
+   "still": "DW2-d",
+   "beat": "money",
+   "file": "v/DW2-d.mp4",
+   "what": "straight down the tower to the lit doorway, rain past lens",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "CA1-a-a",
+   "still": "CA1-a-a",
+   "beat": "cash",
+   "file": "v/CA1-a-a.mp4",
+   "what": "he hits the cash machine; screen dies; queue presses in",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "CA2-a",
+   "still": "CA2-a",
+   "beat": "cash",
+   "file": "v/CA2-a.mp4",
+   "what": "from the machine: the blue light drops off his face",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "CA2-e",
+   "still": "CA2-e",
+   "beat": "cash",
+   "file": "v/CA2-e.mp4",
+   "what": "over the shoulder: keypad, screen flickers to black",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "SH1-a-a",
+   "still": "SH1-a-a",
+   "beat": "shops",
+   "file": "v/SH1-a-a.mp4",
+   "what": "strip lights go out one by one towards her",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "SH2-d",
+   "still": "SH2-d",
+   "beat": "shops",
+   "file": "v/SH2-d.mp4",
+   "what": "through the windscreen: wipers, the queue inches on",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "SH1-b-a",
+   "still": "SH1-b-a",
+   "beat": "shops",
+   "file": "v/SH1-b-a.mp4",
+   "what": "last pump bagged; drivers get out and stare",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "SH2-f",
+   "still": "SH2-f",
+   "beat": "shops",
+   "file": "v/SH2-f.mp4",
+   "what": "wind whips the bag; he kicks the pump and walks off",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "GR1-a-a",
+   "still": "GR1-a-a",
+   "beat": "flight",
+   "file": "v/GR1-a-a.mp4",
+   "what": "camera rises: the jam goes on for miles",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "GR2-d",
+   "still": "GR2-d",
+   "beat": "flight",
+   "file": "v/GR2-d.mp4",
+   "what": "two walkers pass camera dragging suitcases",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "GR2-f",
+   "still": "GR2-f",
+   "beat": "flight",
+   "file": "v/GR2-f.mp4",
+   "what": "the line of walkers along the hard shoulder",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "BS1-a-a",
+   "still": "BS1-a-a",
+   "beat": "flight",
+   "file": "v/BS1-a-a.mp4",
+   "what": "streetlight sweeps over her; glow pulses on the clouds",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "BS1-a-a-2",
+   "still": "BS1-a-a-2",
+   "beat": "flight",
+   "file": "v/BS1-a-a-2.mp4",
+   "what": "spare take of the back seat",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "BS2-f",
+   "still": "BS2-f",
+   "beat": "flight",
+   "file": "v/BS2-f.mp4",
+   "what": "the dog's ears prick; it turns to the window",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "HE1-a-b",
+   "still": "HE1-a-b",
+   "beat": "sky",
+   "file": "v/HE1-a-b.mp4",
+   "what": "helicopter spirals down behind the roofs; shoppers hurry",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "HE2-f",
+   "still": "HE2-f",
+   "beat": "sky",
+   "file": "v/HE2-f.mp4",
+   "what": "through the windscreen: the searchlight drops below the roofs",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "LO1-b-b",
+   "still": "LO1-b-b",
+   "beat": "dark",
+   "file": "v/LO1-b-b.mp4",
+   "what": "the blackout sweeps across the town",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "LO2-e",
+   "still": "LO2-e",
+   "beat": "dark",
+   "file": "v/LO2-e.mp4",
+   "what": "the man on the hill as the lights go out below",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "EM2-f",
+   "still": "EM2-f",
+   "beat": "gone",
+   "file": "v/EM2-f.mp4",
+   "what": "wind drags spilled clothes across the empty lane",
+   "verdict": "",
+   "tag": "ok"
+  },
+  {
+   "key": "EM1-b-a",
+   "still": "EM1-b-a",
+   "beat": "gone",
+   "file": "v/EM1-b-a.mp4",
+   "what": "camera drifts down the lane of abandoned cars",
+   "verdict": "",
+   "tag": "ok"
+  }
+ ]
+}

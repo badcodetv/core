@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/12.jpg",
+ "made": "2026-11-09T17:47:34.104Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Eye level down a narrow British terraced street at night, chimney pots and a lit street lamp in the foreground, cars parked nose to tail: beyond the rooftops, filling the sky, a line of ship-to-shore container gantry cranes, the giant steel A-frame dock cranes with a long boom, standing on four splayed steel legs, a single red aviation lamp at the top of each, walking together on their four legs like enormous animals, the same leg lifted on every one, dwarfing the houses. Small figures run down the street towards camera. Extreme telephoto compression. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "3b0a3178-458e-49eb-881b-52dc04fb4613"
+}

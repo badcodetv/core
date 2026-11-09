@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/15.jpg",
+ "made": "2026-11-09T17:47:34.263Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "From the deck of a motorway flyover at night looking straight up as a colossal steel foot, the wheeled base of a container crane's leg, comes down out of the dark directly overhead, its shadow covering the stopped cars, grit falling, one car's headlights pointing up at it, the red lamp far above in cloud. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "eacfdf48-edaa-466c-990f-6ebd30efd9c8"
+}

@@ -6,7 +6,7 @@
  * settled by running it against the live UI on 2026-08-12, not from Google's documentation,
  * which is wrong about two of them.
  */
-import { VIDEO_DURATIONS, canonicalVideoModel, maxDurationForModel } from './compose'
+import { SLIDER_MAX_SECONDS, SLIDER_MIN_SECONDS, VIDEO_DURATIONS, canonicalVideoModel, maxDurationForModel, usesLengthSlider } from './compose'
 
 /**
  * `animate` — one start frame, the long-proven Animate-menuitem path.
@@ -51,6 +51,11 @@ export function videoRequestError(req: {
 
 /** The two duration rules, shared by generate and refine (which validates it only if asked). */
 function durationError(canonicalModel: string, seconds: number): string | null {
+  if (usesLengthSlider(canonicalModel)) {
+    return Number.isInteger(seconds) && seconds >= SLIDER_MIN_SECONDS && seconds <= SLIDER_MAX_SECONDS
+      ? null
+      : `VIDEO_DURATION_INVALID: ${seconds}s — ${canonicalModel} takes whole seconds ${SLIDER_MIN_SECONDS}–${SLIDER_MAX_SECONDS}`
+  }
   if (!(VIDEO_DURATIONS as readonly number[]).includes(seconds)) {
     return `VIDEO_DURATION_INVALID: ${seconds}s — Flow offers ${VIDEO_DURATIONS.join('/')}s`
   }

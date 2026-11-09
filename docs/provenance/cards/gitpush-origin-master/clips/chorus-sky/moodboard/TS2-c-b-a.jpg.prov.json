@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/TS2-c-b-a.jpg",
+ "made": "2026-11-09T17:05:20.375Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same view of Times Square, same buildings and adverts, same grey light. Every person is gone; the pavements and plaza are completely deserted. The yellow cabs are left stopped in the road with doors hanging open. The advertising screens are failing: the pictures torn into horizontal bands of shifted colour, frozen half-frames, rows of dead pixels, green and magenta interference, some panels gone black. A thin haze of dust low across the ground.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/TS2-a-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/TS2-a-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c8ff6be2-f8ce-4a5a-b347-650dc7ea89f9"
+}

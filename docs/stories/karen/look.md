@@ -119,7 +119,7 @@ Prompts are signed off `Thanks.` (Jack's habit).
   non-resembling, shot from behind — no flags, seals or office of state.
 - **Flow's personality field stays empty** on every Character (Kai, 2026-08-11).
 - **Engines:** stills Nano Banana Pro (16:9, 3–4 candidates) for the acts; Nano Banana 2 for the
-  2026-10-19 ending; clips Gemini Omni Flash, **8 s** (Kai, 2026-08-18), camera locked. Fired by hand, not
+  2026-10-19 ending; clips Gemini Omni 1.2 Flash (→ Omni 1.2 Flash from 2026-11-09: Fast, Quality and Omni 1.1 leave Flow on 5 Dec; Kai saw no difference in the A/B), **8 s** (Kai, 2026-08-18), camera locked. Fired by hand, not
   by automation (Kai, 2026-08-16).
 - **Talking shots are dubbed**: no mouth on screen where possible (the ending's two men are seen from
   behind at a night window, phone to the ear).

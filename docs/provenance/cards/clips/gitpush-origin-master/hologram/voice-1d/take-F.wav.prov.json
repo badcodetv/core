@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1d/take-F.wav",
+ "made": "2026-11-06T20:10:26+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA dead English market town five years after the war. She projects a hologram out of her eye and talks the viewer through it, a bit giddy: it's her boss's big idea and she's showing it off.\n\n### DIRECTOR'S NOTES\nStyle: dry, warm and cheeky, a bit of a gossip, quick and bright; softer and honest on the sad lines, then brisk again.\nPace: fast and chatty, joining phrases with commas. Leave a clear one-second silence between paragraphs.\nAccent: West Country, as heard in Bristol. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.\n",
+  "profile_file": "design/2026-11-05-gpom-meeting/voice-1k/profile.md"
+ },
+ "settings": {
+  "voice": "Aoede",
+  "temperature": 1,
+  "channels": 2
+ }
+}

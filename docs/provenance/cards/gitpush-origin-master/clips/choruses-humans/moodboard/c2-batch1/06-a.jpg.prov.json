@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/06-a.jpg",
+ "made": "2026-11-06T18:57:00.562Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "An older man in a cardigan and slippers on his terraced doorstep at dusk, a mug in his hand, looking up the street as the streetlights flicker; neighbours on other doorsteps doing the same. 35mm documentary photograph, fine grain, cold dusk with warm hallway light behind him, no readable writing anywhere.",
+ "source_id": "1676b3fc-2856-4069-8bcc-3a484a0763e7"
+}

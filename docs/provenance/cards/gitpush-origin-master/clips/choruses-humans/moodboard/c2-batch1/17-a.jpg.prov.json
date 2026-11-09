@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/c2-batch1/17-a.jpg",
+ "made": "2026-11-06T18:57:00.746Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The M4 at night jammed with abandoned cars, every one empty, doors open, hazard lights blinking amber in a long line into the dark, a dropped suitcase on the tarmac, no people anywhere. 35mm photograph, grain, deep night with amber hazard lights, no readable writing anywhere.",
+ "source_id": "05dfaf0e-f816-416b-800a-bc4530c102dd"
+}

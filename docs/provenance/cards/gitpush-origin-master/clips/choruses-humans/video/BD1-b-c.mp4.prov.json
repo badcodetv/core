@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/video/BD1-b-c.mp4",
+ "made": "2026-11-06T20:37:57.849Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Inside the shop the shelf lights switch off one row at a time until the window goes dark; the woman stays a moment, then turns and walks away into the rain. Realistic, documentary 35mm grain, no text.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/home/kai/.cache/flow-refs/choruses/vid/BD1-b-c.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/flow-refs/choruses/vid/BD1-b-c.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 4
+ },
+ "source_id": "45ab18e0-501d-4e16-85df-84c43897dc2c",
+ "note": "harvest-shifted: saved under another job's name by flow_generate_video, re-attributed by first frame; source_id may be wrong"
+}

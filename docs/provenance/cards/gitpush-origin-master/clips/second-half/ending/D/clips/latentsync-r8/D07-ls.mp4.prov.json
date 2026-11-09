@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/latentsync-r8/D07-ls.mp4",
+ "made": "2026-11-06T20:08:48+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "latentsync-1.6",
+ "tool": "scripts/lipsync/latentsync-row.sh",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D07-t1.mp4",
+ "why": "GPOM D round 8: Derek's mouth redrawn to 'And then?' (Kai at942/at991)",
+ "inputs": {
+  "voice": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/latentsync-r8/D07-voice.wav"
+ }
+}

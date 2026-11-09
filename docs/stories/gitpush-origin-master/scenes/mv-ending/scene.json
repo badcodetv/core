@@ -55,7 +55,7 @@
     "orbit": "the opening's space: near-black, one hard light"
   },
   "video": {
-    "model": "Omni 1.1 Flash",
+    "model": "Omni 1.2 Flash",
     "aspect": "16:9",
     "mode": "Frames",
     "duration": 8
@@ -132,9 +132,9 @@
       "what": "Timeline round 1 as noted ('No changes'): the ending alone, 0 = film 161.96; V1 17 locked clips with handles, A1 the main track from track time 168.96 to its end",
       "how": "scripts/gpom/mv-ending/cut1.py -> scripts/scene/premiere-plan.py edl-premiere.json premiere-r1.json --tag r1 --seq gpom-1b-mv-ending-r1",
       "check": {
-        "at": "2026-11-04",
-        "state": "in sync",
-        "why": "17/17 V1 starts and in-points match the plan; V1 ends 68.54"
+        "at": "2026-11-09T19:14",
+        "state": "edited in Pr",
+        "why": "length 69.58s, edl 68.54s"
       },
       "was_named": "gpom-1b-mv-ending-r1",
       "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"

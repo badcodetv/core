@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/01.jpg",
+ "made": "2026-11-06T19:48:38.355Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Insert inside a car at night: a brown dog resting its head on a woman's knee in the back seat, her hand on its neck, the dog's ears up and eyes on the window, a sliver of orange light from outside across its fur. Grainy 35mm, dark blue interior, no lettering.",
+ "source_id": "6fe4dbaf-59e2-48dd-91f7-9e7fbfd1a908"
+}

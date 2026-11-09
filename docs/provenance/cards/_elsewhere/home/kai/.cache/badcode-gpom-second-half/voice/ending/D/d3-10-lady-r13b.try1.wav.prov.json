@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-10-lady-r13b.try1.wav",
+ "made": "2026-11-09T17:36:44+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "And afterwards?",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nThe old lady: an Englishwoman of the old school in her eighties who has run the bunker's kitchen for five years and is frightened of nothing.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet and grave, steady, asking for all of them; two words, the question falls rather than rises.\nStyle: no softness and no comfort; a stern, grave old woman who has seen the worst happen and is choosing, with total conviction, to risk everything to undo it; low, firm and deliberate, every word meant, steel under the age in her voice; no tears, no smile.\nPace: two quiet words, unhurried, the question falling at the end; no long pauses.\nAccent: old-fashioned Received Pronunciation, as heard on the BBC in the 1950s; clipped, precise, Home Counties. Never American.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the formidable grandmother in a British drama who everyone, including the robot, does what she says.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-10-lady-r13b.md"
+ },
+ "settings": {
+  "voice": "Sulafat",
+  "temperature": 1,
+  "channels": 2
+ }
+}

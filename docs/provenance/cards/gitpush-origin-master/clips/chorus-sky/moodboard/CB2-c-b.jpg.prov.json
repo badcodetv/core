@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-sky/moodboard/CB2-c-b.jpg",
+ "made": "2026-11-09T17:01:57.690Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same view along Copacabana beach and its wave-pattern promenade, same camera, same buildings and mountain. Now the beach and promenade are completely deserted, no one anywhere, a few abandoned towels and parasols left on the sand. The power is gone: every hotel window, every streetlamp, both big screens are black. The scene is lit only by a dim blue last light in the sky, the towers standing as dark silhouettes. Keep the framing identical.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/sky/CB1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/sky/CB1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a0c76b11-521a-47c7-92f8-e6b314622980"
+}

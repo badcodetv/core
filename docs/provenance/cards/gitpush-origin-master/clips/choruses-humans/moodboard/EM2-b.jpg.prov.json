@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/EM2-b.jpg",
+ "made": "2026-11-06T19:38:20.260Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Over this same abandoned motorway at night, much higher and wider: the whole carriageway a frozen line of empty cars with open doors, amber hazard lights pulsing for a mile into the dark, fields black on either side, nobody anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/EM1-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/EM1-b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "ca29afe3-897b-4347-9fdd-d618e60ce64e"
+}

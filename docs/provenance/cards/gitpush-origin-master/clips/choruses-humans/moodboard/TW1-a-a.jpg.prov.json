@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/TW1-a-a.jpg",
+ "made": "2026-11-06T18:47:39.742Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of this glass office tower, show its base at night from the street: a row of sleeping bags and flattened cardboard boxes along the whole glass frontage, office workers in suits lying in them, while behind the glass every floor of the tower now glows with rows of server racks and blue status lights where the desks used to be, nobody inside. Documentary 35mm still, fine grain, rain, cold blue night, the server glow the bright area, no writing, signs or logos anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/TO4-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/TO4-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d0c0b2be-7c2e-4093-82af-10d4860b0b51"
+}

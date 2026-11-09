@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/18.jpg",
+ "made": "2026-11-09T17:47:34.346Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "High above the river in Shanghai at night, the glass towers' lights going out floor by floor: tower cranes and harbour cranes walk along the riverbank between the skyscrapers, the river full of stopped boats. Night, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no signs, logos or screen text.",
+ "source_id": "5adaf76f-e795-467b-9c3f-3cdc6476d63a"
+}

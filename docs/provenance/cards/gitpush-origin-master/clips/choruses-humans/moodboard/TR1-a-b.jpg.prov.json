@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/TR1-a-b.jpg",
+ "made": "2026-11-06T18:42:05.414Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of this trader, show the same man one week after he was sacked: alone at a small kitchen table in a cramped rented flat at night, the same grey jacket and tired face, an open laptop the only light on his face, a pile of unopened envelopes and a supermarket meal deal beside it, rain on the dark window behind him. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation. 16:9 frame from a fictional near-future British film, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/MK5-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/MK5-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "1d7505cc-a02c-4528-a5be-d553f0c5dbdd"
+}

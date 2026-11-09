@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/13.jpg",
+ "made": "2026-11-09T17:47:34.126Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "High aerial at night over a jammed British motorway interchange: a long line of ship-to-shore container gantry cranes, the giant steel A-frame dock cranes with a long boom, standing on four splayed steel legs, a single red aviation lamp at the top of each walking across it in step, each leg taller than the flyovers, the jammed cars streaming beneath them in the same direction like a river, fires burning on one carriageway, the city behind dark. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "f1b4e535-0ead-476a-a8ff-d5fade2f90eb"
+}

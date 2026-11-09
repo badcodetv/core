@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/03.jpg",
+ "made": "2026-11-09T17:47:33.923Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Straight down from a drone high above an eight-lane British motorway at night: the jam of cars fills the frame edge to edge in perfect rows, and every single headlight has switched at once to the same harsh cold white, lighting the tarmac like a stage. A few tiny figures between the lanes, frozen. The sodium lamps along the verge have gone dark. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "f5f54cc2-3cc2-4ffa-8ea0-36d07842413b"
+}

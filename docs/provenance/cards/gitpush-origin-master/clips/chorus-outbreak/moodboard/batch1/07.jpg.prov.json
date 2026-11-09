@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/batch1/07.jpg",
+ "made": "2026-11-09T17:47:34.006Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "High aerial at night over a vast British motorway interchange of stacked concrete flyovers, every lane jammed: a line of fire runs along one curving flyover like a lit fuse, an overturned fuel tanker burning at the barrier, black smoke drifting over the town beyond where the streetlights are going out district by district. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "a9976423-9708-4df2-8b5d-368c41ad1022"
+}

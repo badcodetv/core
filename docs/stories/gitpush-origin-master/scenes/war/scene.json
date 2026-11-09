@@ -83,7 +83,7 @@
     "moodboard": "https://claude.ai/artifact/E3uJbc3dhd1bytChnDaj9i"
   },
   "video": {
-    "model": "Omni 1.1 Flash",
+    "model": "Omni 1.2 Flash",
     "aspect": "16:9",
     "mode": "Frames"
   }

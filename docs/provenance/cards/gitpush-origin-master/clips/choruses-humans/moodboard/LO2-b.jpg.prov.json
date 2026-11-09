@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/LO2-b.jpg",
+ "made": "2026-11-06T19:34:40.802Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same blackout over Swindon as this frame, from a closer, lower vantage point on the edge of town: the line between the lit and the dark streets runs right through the middle of the frame, roofs and chimneys on the lit side, nothing at all on the other.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/LO1-b-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/LO1-b-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "e9d5b4d3-db87-45b7-8142-0a664f79a3b6"
+}

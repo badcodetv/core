@@ -105,7 +105,9 @@
     "own_audio": "word-perfect, 1.40-3.80",
     "mouth": "1.38-4.17 (opens 1.38 2.71 3.00 3.42)",
     "fit": "voice 2.74 s over 2.79 s = x0.98"
-   }
+   },
+   "file_round8": "latentsync-r8/D07-ls.mp4",
+   "round8": "Kai at942/at991 (6 Nov): mouth redrawn to 'And then?' at clip 1.5 s with LatentSync 1.6 (scripts/lipsync/latentsync-row.sh, run by Kai); shut after"
   },
   "D08": {
    "file": "D08-t1.mp4",
@@ -324,7 +326,9 @@
    "out": 6.0,
    "plate": "../stills/fix6/D11c6-d.jpg",
    "talking": false,
-   "note": "D round 4 (Kai at2787, pick D11c6-d): silent close-up of the lady, the plan sinking in: eyes fix on the robot, a breath, one small nod (lips part slightly ~2.2-3 s). 6 s, 10 credits."
+   "note": "D round 4 (Kai at2787, pick D11c6-d): silent close-up of the lady, the plan sinking in: eyes fix on the robot, a breath, one small nod (lips part slightly ~2.2-3 s). 6 s, 10 credits.",
+   "file_round13": "latentsync-r13/D11c-ls.mp4",
+   "round13": "Kai, 9 Nov (timeline r12 at1025): the lady asks 'And afterwards?' on her close-up; mouth redrawn by LatentSync 1.6 (Kai ran latentsync-row.sh, 87 s); voice placed at clip time 1.1 s"
   }
  },
  "credits_review1": 94,

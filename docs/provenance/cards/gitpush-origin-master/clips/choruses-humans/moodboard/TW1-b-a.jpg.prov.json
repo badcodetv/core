@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/TW1-b-a.jpg",
+ "made": "2026-11-06T18:48:26.076Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image of this boardroom celebration, keep the same executives, champagne and city view at night. Change only the window: far below on the wet plaza, a long queue of tiny people in office clothes winds around the block in the rain, lit by streetlights. The executives raise their glasses, not looking down. Keep the same lighting, grain and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/TO1T2-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/TO1T2-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "30aa0eaa-fba5-4105-b997-2a3d32c89a2b"
+}

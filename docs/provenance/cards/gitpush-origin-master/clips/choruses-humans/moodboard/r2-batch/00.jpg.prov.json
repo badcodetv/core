@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/00.jpg",
+ "made": "2026-11-06T19:48:38.344Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "Seen from outside a slow-moving car at night, through its rear window: a woman in a dark coat in the back seat looking back towards us, a brown dog's head pressed against the glass beside her, a dull orange glow over a town reflected across the window. Grainy 35mm, deep night blue, the reflected glow the only warmth, no flames, no lettering.",
+ "source_id": "2bfd8b45-0258-4999-a2fc-cd1e07f892a8"
+}

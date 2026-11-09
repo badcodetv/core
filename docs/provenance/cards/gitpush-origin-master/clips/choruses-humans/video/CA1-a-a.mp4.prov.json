@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/video/CA1-a-a.mp4",
+ "made": "2026-11-06T20:41:48.571Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The man at the front hits the cash machine with the flat of his hand; its blue screen flickers and dies to black; the queue presses forward, people lifting their phones, voices rising. Realistic, documentary 35mm grain, no text.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/home/kai/.cache/flow-refs/choruses/vid/CA1-a-a.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/flow-refs/choruses/vid/CA1-a-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 4
+ },
+ "source_id": "38ca76cc-9036-4c08-bf36-35dc9dc7bd20",
+ "note": "harvest-shifted: saved under another job's name by flow_generate_video, re-attributed by first frame; source_id may be wrong"
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-7-maddie-r8b-tight.wav",
+ "made": "2026-11-06T20:00:58+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg atrim+concat",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-7-maddie-r8b.wav",
+ "why": "D round 8: pauses held to 0.4s (0.75 s after \"Not this you.\", 0.5 s before \"And he'll\"); words untouched"
+}

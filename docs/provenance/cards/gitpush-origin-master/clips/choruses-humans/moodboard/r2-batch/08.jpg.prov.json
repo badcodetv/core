@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/r2-batch/08.jpg",
+ "made": "2026-11-06T19:48:38.462Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "prompt": "A wide view of a supermarket car park at night under sodium lamps: shoppers scattered between parked cars have all stopped and turned, and above the rooftops a helicopter's white searchlight swings as it tilts and drops, small but clearly visible. No fire. Grainy 35mm, orange lamplight and dark sky, no lettering.",
+ "source_id": "2f5896ba-0e5b-4dc6-8ad6-5ef394edc7cd"
+}

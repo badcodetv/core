@@ -422,7 +422,7 @@ server.registerTool(
       "project and RESET to Omni Flash on a fresh project, so this call always sets them rather than trusting whatever " +
       'was last selected. model and aspect are REQUIRED, from the story\'s docs/stories/<story>/look.md — there is no ' +
       'default (2026-10-29); the values used are recorded on the result\'s recipe card. Recorded models: "Omni Flash", ' +
-      '"Veo 3.1 Lite" (10 credits), "Veo 3.1 Fast" (20), "Veo 3.1 Quality" (100 — 5x Fast, 10x Lite), ' +
+      '"Omni 1.2 Flash" (our video model from 2026-11-09; length any whole second 3–15 via its slider), "Veo 3.1 Lite" (10 credits), and until Flow retires them on 5 Dec 2026 "Omni 1.1 Flash", "Veo 3.1 Fast" (20), "Veo 3.1 Quality" (100), ' +
       '"Veo 3.1 Lite[Lower Priority]". aspect is "16:9" or "9:16". ' +
       'count (1-4, default 1) sets how many candidate clips Flow generates in this turn — ALL of them are harvested, ' +
       'the first at outPath and the set under `candidates` with -a/-b/-c/-d suffixes. Two candidates cost one turn\'s ' +

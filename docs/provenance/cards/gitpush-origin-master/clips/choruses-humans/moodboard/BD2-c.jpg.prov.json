@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/BD2-c.jpg",
+ "made": "2026-11-06T19:14:57.545Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Treat the provided frame as one shot of a film scene. Make another shot of that same scene: same woman, same coat, same window, same rain and night, same grain. New camera position: a close insert of her reflection in the wet shop glass overlapping the loaves behind it, her hands deep in her coat pockets.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/BD1-b-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/BD1-b-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "9ad49321-48b7-4e72-82f8-002ba776dc22"
+}

@@ -1,0 +1,596 @@
+[
+ [
+  "trader",
+  "TR1-a-a",
+  "chorus 1",
+  "Using the provided image of this trader, show the same man one week after he was sacked: alone at a small kitchen table in a cramped rented flat at night, the same grey jacket and tired face, an open laptop the only light on his face, a pile of unopened envelopes and a supermarket meal deal beside it, rain on the dark window behind him. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation. 16:9 frame from a fictional near-future British film, no captions, logos, lettering or on-screen text."
+ ],
+ [
+  "trader",
+  "TR1-a-b",
+  "chorus 1",
+  "Using the provided image of this trader, show the same man one week after he was sacked: alone at a small kitchen table in a cramped rented flat at night, the same grey jacket and tired face, an open laptop the only light on his face, a pile of unopened envelopes and a supermarket meal deal beside it, rain on the dark window behind him. Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation. 16:9 frame from a fictional near-future British film, no captions, logos, lettering or on-screen text."
+ ],
+ [
+  "trader",
+  "TR1-b-a",
+  "chorus 1",
+  "(echoed the reference unchanged, rejected) Using the provided image of this trader, show the same man a week after losing his job: sitting at a rainy suburban bus shelter in daylight, his office cardboard box on his knees with a desk plant poking out, the same grey jacket soaked at the shoulders, staring at nothing while a driverless delivery van passes in the wet road. Documentary 35mm still, fine grain, overcast grey English light, muted cool colour, observational and unposed, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "trader",
+  "TR1-b-b",
+  "chorus 1",
+  "Using the provided image of this trader, show the same man a week after losing his job: sitting at a rainy suburban bus shelter in daylight, his office cardboard box on his knees with a desk plant poking out, the same grey jacket soaked at the shoulders, staring at nothing while a driverless delivery van passes in the wet road. Documentary 35mm still, fine grain, overcast grey English light, muted cool colour, observational and unposed, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "trader",
+  "TR1-b-c",
+  "chorus 1",
+  "Using the provided image of this trader, show the same man a week after losing his job: sitting at a rainy suburban bus shelter in daylight, his office cardboard box on his knees with a desk plant poking out, the same grey jacket soaked at the shoulders, staring at nothing while a driverless delivery van passes in the wet road. Documentary 35mm still, fine grain, overcast grey English light, muted cool colour, observational and unposed, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "trader",
+  "TR1-c-a",
+  "chorus 1",
+  "(echoed the reference unchanged, rejected) Using the provided image of this trader, show the same man in a long row of plastic chairs in a beige government job centre waiting room under fluorescent strip lights, holding a paper queue ticket, his grey jacket and lanyard-less shirt, surrounded by other office workers in suits waiting the same way, nobody talking. Documentary 35mm still, fine grain, flat institutional light, muted beige and grey, observational and unposed, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "trader",
+  "TR1-c-b",
+  "chorus 1",
+  "Using the provided image of this trader, show the same man in a long row of plastic chairs in a beige government job centre waiting room under fluorescent strip lights, holding a paper queue ticket, his grey jacket and lanyard-less shirt, surrounded by other office workers in suits waiting the same way, nobody talking. Documentary 35mm still, fine grain, flat institutional light, muted beige and grey, observational and unposed, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "trader",
+  "TR1-c-c",
+  "chorus 1",
+  "Using the provided image of this trader, show the same man in a long row of plastic chairs in a beige government job centre waiting room under fluorescent strip lights, holding a paper queue ticket, his grey jacket and lanyard-less shirt, surrounded by other office workers in suits waiting the same way, nobody talking. Documentary 35mm still, fine grain, flat institutional light, muted beige and grey, observational and unposed, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "trader",
+  "TR2-a",
+  "chorus 1",
+  "Treat the provided frame as one shot of a film scene. Make the next shot of that same scene: same man, same soaked grey jacket, same bus shelter, same rain and overcast light, same grain. New camera position: a wide shot from across the wet road, the shelter and the man small on the left, a driverless van blurring past through the foreground."
+ ],
+ [
+  "trader",
+  "TR2-b",
+  "chorus 1",
+  "Treat the provided frame as one shot of a film scene. Make the next shot of that same scene: same man, same jacket, same shelter, same rain and grey light, same grain. New camera position: a tight profile close-up of his face through the rain-streaked shelter glass, the desk plant from his box just in the bottom of frame, eyes fixed on nothing."
+ ],
+ [
+  "trader",
+  "TR2-c",
+  "chorus 1",
+  "Treat the provided frame as one shot of a film scene. Make the next shot of that same scene: same man, same box, same shelter, same rain and grey light, same grain. New camera position: behind him, over his shoulder, looking out past the box at the empty wet suburban road and the semi-detached houses opposite."
+ ],
+ [
+  "bread",
+  "BD1-a-a",
+  "chorus 1",
+  "Using the provided image, keep the same woman, the same corner shop counter and the same loaf of bread. Change only the moment: the card machine has declined her card, and she slowly sets the loaf back down on the counter, eyes lowered, the shopkeeper's hand just in frame. Keep the same night, the same rain on the window, the same lighting, grain and composition."
+ ],
+ [
+  "bread",
+  "BD1-a-b",
+  "chorus 1",
+  "Using the provided image, keep the same woman, the same corner shop counter and the same loaf of bread. Change only the moment: the card machine has declined her card, and she slowly sets the loaf back down on the counter, eyes lowered, the shopkeeper's hand just in frame. Keep the same night, the same rain on the window, the same lighting, grain and composition."
+ ],
+ [
+  "bread",
+  "BD1-b-a",
+  "chorus 1",
+  "(echoed the reference unchanged, rejected) Using the provided image of this woman in her worn coat, show her outside the same corner shop at night in the rain, on the pavement looking in through the lit shop window at the bread on the shelf, her hands empty in her pockets, her reflection faint in the glass, the shop's warm light on her face the only light in the street. Documentary 35mm still, fine grain, muted cool palette with the shop window as the one warm patch, observational, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "bread",
+  "BD1-b-b",
+  "chorus 1",
+  "Using the provided image of this woman in her worn coat, show her outside the same corner shop at night in the rain, on the pavement looking in through the lit shop window at the bread on the shelf, her hands empty in her pockets, her reflection faint in the glass, the shop's warm light on her face the only light in the street. Documentary 35mm still, fine grain, muted cool palette with the shop window as the one warm patch, observational, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "bread",
+  "BD1-b-c",
+  "chorus 1",
+  "Using the provided image of this woman in her worn coat, show her outside the same corner shop at night in the rain, on the pavement looking in through the lit shop window at the bread on the shelf, her hands empty in her pockets, her reflection faint in the glass, the shop's warm light on her face the only light in the street. Documentary 35mm still, fine grain, muted cool palette with the shop window as the one warm patch, observational, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "bread",
+  "BD1-c-a",
+  "chorus 1",
+  "(echoed the reference unchanged, rejected) Using the provided image of this woman in her worn coat, show her in a long queue inside a cold church hall food bank, trestle tables of tins and loaves at the far end, volunteers behind them, the queue made up of ordinary working people including men in office shirts, her face tired and patient. Documentary 35mm still, fine grain, cold daylight from high windows, muted cool palette, observational, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "bread",
+  "BD1-c-b",
+  "chorus 1",
+  "Using the provided image of this woman in her worn coat, show her in a long queue inside a cold church hall food bank, trestle tables of tins and loaves at the far end, volunteers behind them, the queue made up of ordinary working people including men in office shirts, her face tired and patient. Documentary 35mm still, fine grain, cold daylight from high windows, muted cool palette, observational, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "bread",
+  "BD1-c-c",
+  "chorus 1",
+  "Using the provided image of this woman in her worn coat, show her in a long queue inside a cold church hall food bank, trestle tables of tins and loaves at the far end, volunteers behind them, the queue made up of ordinary working people including men in office shirts, her face tired and patient. Documentary 35mm still, fine grain, cold daylight from high windows, muted cool palette, observational, wide landscape frame, no writing, signs or logos anywhere."
+ ],
+ [
+  "bread",
+  "BD2-a",
+  "chorus 1",
+  "Treat the provided frame as one shot of a film scene. Make another shot of that same scene: same woman, same coat, same shop window, same rain and night light, same grain. New camera position: from inside the shop, looking out through the glass past the loaves on the shelf at her face in the rain, the warm shop light on her."
+ ],
+ [
+  "bread",
+  "BD2-b",
+  "chorus 1",
+  "Treat the provided frame as one shot of a film scene. Make another shot of that same scene: same woman, same shop, same rain and night, same grain. New camera position: a wide shot from across the street, the shop the only lit window in a dark row of shuttered shops, her small figure standing in its light."
+ ],
+ [
+  "bread",
+  "BD2-c",
+  "chorus 1",
+  "Treat the provided frame as one shot of a film scene. Make another shot of that same scene: same woman, same coat, same window, same rain and night, same grain. New camera position: a close insert of her reflection in the wet shop glass overlapping the loaves behind it, her hands deep in her coat pockets."
+ ],
+ [
+  "doorway",
+  "DW1-a-a",
+  "chorus 1",
+  "Using the provided image of these sacked office workers in the rain, show one of the same men in his suit a week later at night, bedding down in a sleeping bag in the doorway of the same glass office tower, his cardboard office box beside him as a pillow, rain falling on the plaza, the tower lobby lit and empty behind the glass. Seen from across the wet plaza, small in frame. Documentary 35mm still, fine grain, cold blue night, the lobby glow the one bright area, no writing, signs or logos anywhere."
+ ],
+ [
+  "doorway",
+  "DW1-a-b",
+  "chorus 1",
+  "Using the provided image of these sacked office workers in the rain, show one of the same men in his suit a week later at night, bedding down in a sleeping bag in the doorway of the same glass office tower, his cardboard office box beside him as a pillow, rain falling on the plaza, the tower lobby lit and empty behind the glass. Seen from across the wet plaza, small in frame. Documentary 35mm still, fine grain, cold blue night, the lobby glow the one bright area, no writing, signs or logos anywhere."
+ ],
+ [
+  "doorway",
+  "DW1-b-a",
+  "chorus 1",
+  "(echoed the reference unchanged, rejected) Using the provided image of these sacked office workers, show a close, low view of one of the same men lying in a sleeping bag on wet paving in an office doorway at night, still wearing his shirt and loosened tie, his old company lanyard around his neck, eyes open, rain dripping from the canopy, his cardboard office box beside his head. Documentary 35mm still, fine grain, cold blue night, the lobby light falling across his face, no writing, signs or logos anywhere."
+ ],
+ [
+  "doorway",
+  "DW1-b-b",
+  "chorus 1",
+  "Using the provided image of these sacked office workers, show a close, low view of one of the same men lying in a sleeping bag on wet paving in an office doorway at night, still wearing his shirt and loosened tie, his old company lanyard around his neck, eyes open, rain dripping from the canopy, his cardboard office box beside his head. Documentary 35mm still, fine grain, cold blue night, the lobby light falling across his face, no writing, signs or logos anywhere."
+ ],
+ [
+  "doorway",
+  "DW1-b-c",
+  "chorus 1",
+  "Using the provided image of these sacked office workers, show a close, low view of one of the same men lying in a sleeping bag on wet paving in an office doorway at night, still wearing his shirt and loosened tie, his old company lanyard around his neck, eyes open, rain dripping from the canopy, his cardboard office box beside his head. Documentary 35mm still, fine grain, cold blue night, the lobby light falling across his face, no writing, signs or logos anywhere."
+ ],
+ [
+  "doorway",
+  "DW2-a",
+  "chorus 1",
+  "Another angle on the scene in this frame. Keep the man, the sleeping bag, the box, the tower lobby, the rain and the cold blue night exactly as they are. Camera now low and close beside him on the wet paving: he lies curled in the sleeping bag with the office box at his head, the lobby glow behind him through the glass."
+ ],
+ [
+  "doorway",
+  "DW2-b",
+  "chorus 1",
+  "Another angle on the scene in this frame. Keep the man, the sleeping bag, the box, the tower, the rain and the night exactly as they are. Camera now inside the empty warm lobby, looking out through the tall glass doors at the shape of him lying in the doorway, the dark rainy plaza beyond."
+ ],
+ [
+  "doorway",
+  "DW2-d",
+  "chorus 1",
+  "High above a rainy office plaza at night, looking straight down the glass face of a tower: far below, a single lit doorway with one tiny figure lying in a sleeping bag, rain streaking down through the frame. Grainy 35mm, cold blue night, the doorway the one bright patch, no lettering."
+ ],
+ [
+  "tower",
+  "TW1-a-a",
+  "chorus 1",
+  "Using the provided image of this glass office tower, show its base at night from the street: a row of sleeping bags and flattened cardboard boxes along the whole glass frontage, office workers in suits lying in them, while behind the glass every floor of the tower now glows with rows of server racks and blue status lights where the desks used to be, nobody inside. Documentary 35mm still, fine grain, rain, cold blue night, the server glow the bright area, no writing, signs or logos anywhere."
+ ],
+ [
+  "tower",
+  "TW1-a-b",
+  "chorus 1",
+  "Using the provided image of this glass office tower, show its base at night from the street: a row of sleeping bags and flattened cardboard boxes along the whole glass frontage, office workers in suits lying in them, while behind the glass every floor of the tower now glows with rows of server racks and blue status lights where the desks used to be, nobody inside. Documentary 35mm still, fine grain, rain, cold blue night, the server glow the bright area, no writing, signs or logos anywhere."
+ ],
+ [
+  "tower",
+  "TW1-b-a",
+  "chorus 1",
+  "Using the provided image of this boardroom celebration, keep the same executives, champagne and city view at night. Change only the window: far below on the wet plaza, a long queue of tiny people in office clothes winds around the block in the rain, lit by streetlights. The executives raise their glasses, not looking down. Keep the same lighting, grain and composition."
+ ],
+ [
+  "tower",
+  "TW1-b-b",
+  "chorus 1",
+  "Using the provided image of this boardroom celebration, keep the same executives, champagne and city view at night. Change only the window: far below on the wet plaza, a long queue of tiny people in office clothes winds around the block in the rain, lit by streetlights. The executives raise their glasses, not looking down. Keep the same lighting, grain and composition."
+ ],
+ [
+  "cash",
+  "CA1-a-a",
+  "chorus 2",
+  "Dusk on an ordinary Swindon high street. A queue of a dozen people at a cash machine set into a bank wall; its screen glows a blank flat blue, and a man at the front presses the keypad again and again while the others watch him, phones in hand. Grey English evening, wet pavement, shop shutters half down. Shot like a 35mm documentary photograph, fine grain, muted greys, the blue screen lighting the faces. No readable writing anywhere."
+ ],
+ [
+  "cash",
+  "CA1-a-b",
+  "chorus 2",
+  "Dusk on an ordinary Swindon high street. A queue of a dozen people at a cash machine set into a bank wall; its screen glows a blank flat blue, and a man at the front presses the keypad again and again while the others watch him, phones in hand. Grey English evening, wet pavement, shop shutters half down. Shot like a 35mm documentary photograph, fine grain, muted greys, the blue screen lighting the faces. No readable writing anywhere."
+ ],
+ [
+  "cash",
+  "CA1-b-a",
+  "chorus 2",
+  "Close on a hand at a cash machine slot at dusk, pulling back a bank card, the machine's screen dark and dead, other hands and coats crowding behind out of focus. 35mm documentary photograph, fine grain, cool grey light, observational, no readable writing anywhere."
+ ],
+ [
+  "cash",
+  "CA1-b-b",
+  "chorus 2",
+  "Close on a hand at a cash machine slot at dusk, pulling back a bank card, the machine's screen dark and dead, other hands and coats crowding behind out of focus. 35mm documentary photograph, fine grain, cool grey light, observational, no readable writing anywhere."
+ ],
+ [
+  "cash",
+  "CA1-c-a",
+  "chorus 2",
+  "A crowd of ordinary British people in coats outside a high street bank whose steel shutter is pulled down to the pavement; one man rests his flat palm on the shutter, others hold up phones, a woman holds a shopping bag of tins. Early evening, drizzle, streetlights just coming on. 35mm documentary photograph, grain, muted slate and sodium tones, nobody hurt, no readable writing anywhere."
+ ],
+ [
+  "cash",
+  "CA1-c-b",
+  "chorus 2",
+  "A crowd of ordinary British people in coats outside a high street bank whose steel shutter is pulled down to the pavement; one man rests his flat palm on the shutter, others hold up phones, a woman holds a shopping bag of tins. Early evening, drizzle, streetlights just coming on. 35mm documentary photograph, grain, muted slate and sodium tones, nobody hurt, no readable writing anywhere."
+ ],
+ [
+  "cash",
+  "CA2-a",
+  "chorus 2",
+  "Same high street, same queue, same dusk and wet pavement, same grain as this frame; only the camera moves. Now we look out from the cash machine itself: the row of faces in the queue lit flat blue by its dead screen, the man at the front close to lens, the others staring past him."
+ ],
+ [
+  "cash",
+  "CA2-d",
+  "chorus 2",
+  "Long lens from far down a wet Swindon high street at dusk: a queue of people in coats stretching back past five shopfronts towards one small blue-lit cash machine, compressed into one long line, phones glowing in hands, shop shutters half down. Grainy 35mm, grey evening light, no readable lettering."
+ ],
+ [
+  "cash",
+  "CA2-e",
+  "chorus 2",
+  "Over the shoulder of a man in a grey hooded coat at a cash machine at dusk: his finger jabbing the keypad, the screen blank flat blue, his breath fogging in the cold, the waiting queue out of focus behind him. Grainy 35mm, cool grey, the screen lighting his knuckles, no readable lettering."
+ ],
+ [
+  "shelves",
+  "SH1-a-a",
+  "chorus 2",
+  "A supermarket aisle at night with every shelf stripped bare, one fluorescent tube flickering, a single woman in a parka standing still with an empty trolley, looking down the long empty aisle. 35mm documentary photograph, fine grain, sickly green-white strip light the only light, observational, no readable writing anywhere."
+ ],
+ [
+  "shelves",
+  "SH1-a-b",
+  "chorus 2",
+  "A supermarket aisle at night with every shelf stripped bare, one fluorescent tube flickering, a single woman in a parka standing still with an empty trolley, looking down the long empty aisle. 35mm documentary photograph, fine grain, sickly green-white strip light the only light, observational, no readable writing anywhere."
+ ],
+ [
+  "shelves",
+  "SH1-b-a",
+  "chorus 2",
+  "A petrol station forecourt on a ring road at night, a long line of cars with headlights on waiting at pumps wrapped in black bin bags, drivers standing by their open doors. The forecourt canopy lights are the one bright source. 35mm documentary photograph, grain, muted colour, no readable writing anywhere."
+ ],
+ [
+  "shelves",
+  "SH1-b-b",
+  "chorus 2",
+  "A petrol station forecourt on a ring road at night, a long line of cars with headlights on waiting at pumps wrapped in black bin bags, drivers standing by their open doors. The forecourt canopy lights are the one bright source. 35mm documentary photograph, grain, muted colour, no readable writing anywhere."
+ ],
+ [
+  "shelves",
+  "SH2-a",
+  "chorus 2",
+  "A second set-up in the stripped supermarket from this frame: the woman, her empty trolley, the bare shelves and the flickering strip light all unchanged. Camera now directly behind her at trolley height, looking past her shoulder down the endless empty aisle."
+ ],
+ [
+  "shelves",
+  "SH2-b",
+  "chorus 2",
+  "A second set-up in the stripped supermarket from this frame: same woman, trolley, bare shelves and greenish strip light. Camera now high in the ceiling looking down over the tops of several empty aisles, her lone figure and trolley tiny in one of them."
+ ],
+ [
+  "shelves",
+  "SH2-c",
+  "chorus 2",
+  "A second set-up in the stripped supermarket from this frame: same woman in her parka, same sickly strip light. Camera now a close-up of her face from the front, hands on the trolley handle, the flickering tube above her and bare shelving out of focus either side."
+ ],
+ [
+  "shelves",
+  "SH2-d",
+  "chorus 2",
+  "Cover this petrol station scene from a new position, keeping the queue of cars, the bagged pumps, the drivers and the bright canopy at night as they are. Camera now inside one of the queuing cars, through the windscreen and wipers, the canopy glare ahead and brake lights in front."
+ ],
+ [
+  "shelves",
+  "SH2-e",
+  "chorus 2",
+  "Cover this petrol station scene from a new position, keeping the night, the canopy light and the queue as they are. Camera now close on one pump hooded in a black bin bag taped at the neck, a driver standing beside it with his arms folded, staring at it."
+ ],
+ [
+  "shelves",
+  "SH2-f",
+  "chorus 2",
+  "Cover this petrol station scene from a new position, keeping the night and the queue as they are. Camera now far back across the dark ring road: the forecourt canopy a lone white island of light, the line of headlights snaking out of it and along the road."
+ ],
+ [
+  "flicker",
+  "FL1-a-a",
+  "chorus 2",
+  "A Victorian terraced street in Swindon at dusk, the streetlights stuttering on and off down the row, a family of adults standing at a front bay window looking out up the street with worried faces, a television's glow behind them. 35mm documentary photograph, fine grain, cold blue dusk, observational, no readable writing anywhere."
+ ],
+ [
+  "flicker",
+  "FL1-a-b",
+  "chorus 2",
+  "A Victorian terraced street in Swindon at dusk, the streetlights stuttering on and off down the row, a family of adults standing at a front bay window looking out up the street with worried faces, a television's glow behind them. 35mm documentary photograph, fine grain, cold blue dusk, observational, no readable writing anywhere."
+ ],
+ [
+  "flicker",
+  "FL1-b-a",
+  "chorus 2",
+  "An older man in a cardigan and slippers on his terraced doorstep at dusk, a mug in his hand, looking up the street as the streetlights flicker; neighbours on other doorsteps doing the same. 35mm documentary photograph, fine grain, cold dusk with warm hallway light behind him, no readable writing anywhere."
+ ],
+ [
+  "flicker",
+  "FL1-b-b",
+  "chorus 2",
+  "An older man in a cardigan and slippers on his terraced doorstep at dusk, a mug in his hand, looking up the street as the streetlights flicker; neighbours on other doorsteps doing the same. 35mm documentary photograph, fine grain, cold dusk with warm hallway light behind him, no readable writing anywhere."
+ ],
+ [
+  "gridlock",
+  "GR1-a-a",
+  "chorus 2",
+  "Night, high viewpoint from a motorway footbridge over the M4 near Swindon: every lane heading out of town is jammed solid with cars, a river of red tail-lights for miles into the dark, the opposite carriageway completely empty. 35mm photograph, grain, deep night blues and the red lights, no readable writing anywhere."
+ ],
+ [
+  "gridlock",
+  "GR1-a-b",
+  "chorus 2",
+  "Night, high viewpoint from a motorway footbridge over the M4 near Swindon: every lane heading out of town is jammed solid with cars, a river of red tail-lights for miles into the dark, the opposite carriageway completely empty. 35mm photograph, grain, deep night blues and the red lights, no readable writing anywhere."
+ ],
+ [
+  "gridlock",
+  "GR1-b-a",
+  "chorus 2",
+  "Night inside a car stuck in motorway gridlock: a woman at the wheel gripping it with both hands, her face lit red by the brake lights ahead, bin bags of clothes and a duvet piled on the back seat. 35mm documentary photograph, grain, red and dark blue, tense and quiet, no readable writing anywhere."
+ ],
+ [
+  "gridlock",
+  "GR1-b-b",
+  "chorus 2",
+  "Night inside a car stuck in motorway gridlock: a woman at the wheel gripping it with both hands, her face lit red by the brake lights ahead, bin bags of clothes and a duvet piled on the back seat. 35mm documentary photograph, grain, red and dark blue, tense and quiet, no readable writing anywhere."
+ ],
+ [
+  "gridlock",
+  "GR1-c-a",
+  "chorus 2",
+  "Night on the hard shoulder of a jammed motorway: families of adults who have abandoned their cars walk along it carrying suitcases and rucksacks, lit from behind by the headlights of stationary traffic, long shadows ahead of them. 35mm documentary photograph, grain, muted night colour, nobody hurt, no readable writing anywhere."
+ ],
+ [
+  "gridlock",
+  "GR1-c-b",
+  "chorus 2",
+  "Night on the hard shoulder of a jammed motorway: families of adults who have abandoned their cars walk along it carrying suitcases and rucksacks, lit from behind by the headlights of stationary traffic, long shadows ahead of them. 35mm documentary photograph, grain, muted night colour, nobody hurt, no readable writing anywhere."
+ ],
+ [
+  "gridlock",
+  "GR2-a",
+  "chorus 2",
+  "Find a new angle inside this motorway jam at night; the cars, the red tail-lights, the empty opposite carriageway and the darkness stay as they are. Camera now at road level standing between two stationary lanes, tail-lights stacked to the horizon, a driver's arm resting out of an open window."
+ ],
+ [
+  "gridlock",
+  "GR2-b",
+  "chorus 2",
+  "Find a new angle on this motorway jam at night; keep the red river of tail-lights and the empty other side. Camera now much higher and wider, as if from a hill above the M4: the jam runs for miles across dark countryside towards the horizon, the town's orange glow behind."
+ ],
+ [
+  "gridlock",
+  "GR2-c",
+  "chorus 2",
+  "Find a new angle on this motorway jam at night from the same footbridge, turned around: now we face the oncoming headlights of the same jammed lanes crawling towards camera, a wall of white headlamps and wipers, the empty carriageway beside them."
+ ],
+ [
+  "gridlock",
+  "GR2-d",
+  "chorus 2",
+  "The people walking the hard shoulder in this frame, filmed again from in front of them: adults only, carrying suitcases and bags, walking towards camera, faces tired and lit from behind by the stationary headlights, long shadows reaching towards us. Same night, same road, same grain."
+ ],
+ [
+  "gridlock",
+  "GR2-e",
+  "chorus 2",
+  "The people walking the hard shoulder in this frame, filmed again from the top of the grass embankment: a wide view of the jammed motorway, and a thin line of adults with luggage walking along its edge in the headlights, small against the dark fields. Same night, same grain."
+ ],
+ [
+  "gridlock",
+  "GR2-f",
+  "chorus 2",
+  "The people walking the hard shoulder in this frame, filmed again at ankle height from behind: suitcase wheels rattling over the wet tarmac, adult legs and shoes walking away into the headlight glare. Same night, same grain."
+ ],
+ [
+  "backseat",
+  "BS1-a-a",
+  "chorus 2",
+  "Night, back seat of a car crawling out of town: a young woman with a dog on her lap has turned to look back through the rear window, where an orange glow lights the underside of low clouds over the distant rooftops. Her face in shadow, the glow reflected in the glass. 35mm documentary photograph, grain, deep blue interior, the far orange glow the only warmth, no flames visible, no readable writing anywhere."
+ ],
+ [
+  "backseat",
+  "BS1-a-b",
+  "chorus 2",
+  "Night, back seat of a car crawling out of town: a young woman with a dog on her lap has turned to look back through the rear window, where an orange glow lights the underside of low clouds over the distant rooftops. Her face in shadow, the glow reflected in the glass. 35mm documentary photograph, grain, deep blue interior, the far orange glow the only warmth, no flames visible, no readable writing anywhere."
+ ],
+ [
+  "backseat",
+  "BS1-b-a",
+  "chorus 2",
+  "View through the rear window of a car at night: a town receding behind a line of tail-lights, a dull orange glow under the clouds above it, the dark silhouette of the headrests in the foreground. 35mm photograph, grain, no flames visible, no readable writing anywhere."
+ ],
+ [
+  "backseat",
+  "BS1-b-b",
+  "chorus 2",
+  "View through the rear window of a car at night: a town receding behind a line of tail-lights, a dull orange glow under the clouds above it, the dark silhouette of the headrests in the foreground. 35mm photograph, grain, no flames visible, no readable writing anywhere."
+ ],
+ [
+  "backseat",
+  "BS2-e",
+  "chorus 2",
+  "Seen from outside a slow-moving car at night, through its rear window: a woman in a dark coat in the back seat looking back towards us, a brown dog's head pressed against the glass beside her, a dull orange glow over a town reflected across the window. Grainy 35mm, deep night blue, the reflected glow the only warmth, no flames, no lettering."
+ ],
+ [
+  "backseat",
+  "BS2-f",
+  "chorus 2",
+  "Insert inside a car at night: a brown dog resting its head on a woman's knee in the back seat, her hand on its neck, the dog's ears up and eyes on the window, a sliver of orange light from outside across its fur. Grainy 35mm, dark blue interior, no lettering."
+ ],
+ [
+  "heli",
+  "HE1-a-a",
+  "chorus 2",
+  "Night, a supermarket car park on the edge of an English town: a few people loading cars stop and turn to look at something far over the rooftops, where a small helicopter's searchlight tilts and slowly spirals downward in the distance, tiny in the frame. 35mm documentary photograph, grain, sodium car park light, distant and quiet, no fire, no readable writing anywhere."
+ ],
+ [
+  "heli",
+  "HE1-a-b",
+  "chorus 2",
+  "Night, a supermarket car park on the edge of an English town: a few people loading cars stop and turn to look at something far over the rooftops, where a small helicopter's searchlight tilts and slowly spirals downward in the distance, tiny in the frame. 35mm documentary photograph, grain, sodium car park light, distant and quiet, no fire, no readable writing anywhere."
+ ],
+ [
+  "heli",
+  "HE1-b-a",
+  "chorus 2",
+  "Night over the rooftops of an English town, seen from a quiet residential street: in the middle distance a police helicopter tilts sideways, its white searchlight beam swinging wildly across the clouds as it slowly drops below the roofline. Two neighbours in coats on the pavement in the foreground watch it, small and still. No fire, no smoke. 35mm documentary photograph, grain, cold blue night, the searchlight the one bright stroke, no readable writing anywhere."
+ ],
+ [
+  "heli",
+  "HE1-b-b",
+  "chorus 2",
+  "Night over the rooftops of an English town, seen from a quiet residential street: in the middle distance a police helicopter tilts sideways, its white searchlight beam swinging wildly across the clouds as it slowly drops below the roofline. Two neighbours in coats on the pavement in the foreground watch it, small and still. No fire, no smoke. 35mm documentary photograph, grain, cold blue night, the searchlight the one bright stroke, no readable writing anywhere."
+ ],
+ [
+  "heli",
+  "HE2-e",
+  "chorus 2",
+  "A wide view of a supermarket car park at night under sodium lamps: shoppers scattered between parked cars have all stopped and turned, and above the rooftops a helicopter's white searchlight swings as it tilts and drops, small but clearly visible. No fire. Grainy 35mm, orange lamplight and dark sky, no lettering."
+ ],
+ [
+  "heli",
+  "HE2-f",
+  "chorus 2",
+  "Through the windscreen of a parked car in a supermarket car park at night: two shoppers standing still ahead between the cars, and far above the roofs a helicopter's searchlight tilting in the black sky. Grainy 35mm, sodium orange, dashboard dark in the foreground, no lettering."
+ ],
+ [
+  "lookup",
+  "LU1-a-a",
+  "chorus 2",
+  "Night, a crowd of ordinary people on a concrete motorway footbridge, all stopped and looking up at the sky, their faces faintly lit by cold moving lights out of frame above them, a jammed motorway glowing red below. 35mm documentary photograph, grain, cold blue light on faces, awe and fear, no readable writing anywhere."
+ ],
+ [
+  "lookup",
+  "LU1-a-b",
+  "chorus 2",
+  "Night, a crowd of ordinary people on a concrete motorway footbridge, all stopped and looking up at the sky, their faces faintly lit by cold moving lights out of frame above them, a jammed motorway glowing red below. 35mm documentary photograph, grain, cold blue light on faces, awe and fear, no readable writing anywhere."
+ ],
+ [
+  "lookup",
+  "LU1-b-a",
+  "chorus 2",
+  "Low angle at night up at a group of strangers on a street corner looking up into the sky with the same frozen expression, one woman's hand on another's arm, pale cold light falling on their faces from above. 35mm documentary photograph, grain, observational, no readable writing anywhere."
+ ],
+ [
+  "lookup",
+  "LU1-b-b",
+  "chorus 2",
+  "Low angle at night up at a group of strangers on a street corner looking up into the sky with the same frozen expression, one woman's hand on another's arm, pale cold light falling on their faces from above. 35mm documentary photograph, grain, observational, no readable writing anywhere."
+ ],
+ [
+  "lightsout",
+  "LO1-a-a",
+  "chorus 2",
+  "Night, wide view from a hill above Swindon: the town spread out below, and half of it has gone completely dark, the darkness spreading through the streets as districts lose power one after another, the remaining half still lit orange. 35mm photograph, grain, deep night blue, no fire, no readable writing anywhere."
+ ],
+ [
+  "lightsout",
+  "LO1-a-b",
+  "chorus 2",
+  "Night, wide view from a hill above Swindon: the town spread out below, and half of it has gone completely dark, the darkness spreading through the streets as districts lose power one after another, the remaining half still lit orange. 35mm photograph, grain, deep night blue, no fire, no readable writing anywhere."
+ ],
+ [
+  "lightsout",
+  "LO1-b-a",
+  "chorus 2",
+  "Night panorama of Swindon from a hilltop: the left half of the town is a field of orange streetlights, the right half is already pitch black with not one window lit, and the boundary between them cuts straight through the streets like a blackout spreading block by block. Overcast sky faintly lit from below on the lit side only. 35mm photograph, grain, deep blue-black, no fire, no readable writing anywhere."
+ ],
+ [
+  "lightsout",
+  "LO1-b-b",
+  "chorus 2",
+  "Night panorama of Swindon from a hilltop: the left half of the town is a field of orange streetlights, the right half is already pitch black with not one window lit, and the boundary between them cuts straight through the streets like a blackout spreading block by block. Overcast sky faintly lit from below on the lit side only. 35mm photograph, grain, deep blue-black, no fire, no readable writing anywhere."
+ ],
+ [
+  "lightsout",
+  "LO2-a",
+  "chorus 2",
+  "Same blackout over Swindon as this frame, now down inside it: a long terraced street at night where the houses at the far end have already gone dark and the porch lights and windows nearer to us are going out one after another, the last streetlamp still on in the foreground."
+ ],
+ [
+  "lightsout",
+  "LO2-d",
+  "chorus 2",
+  "From the edge of an English town at night, a low view across rooftops and chimneys: the left side of the frame still lit with orange streetlights and windows, the right side completely black, the boundary cutting through the streets as the power fails. No fire. Grainy 35mm, night, no lettering."
+ ],
+ [
+  "lightsout",
+  "LO2-e",
+  "chorus 2",
+  "Night on a hilltop above a large English town: a lone man in a long coat seen from behind as a silhouette in the foreground, watching the town below where half the lights have already gone out and the rest are going. Grainy 35mm, deep blue night, orange city lights, no lettering."
+ ],
+ [
+  "empty",
+  "EM1-a-a",
+  "chorus 2",
+  "An empty terraced street at night with no people at all: a family hatchback stopped in the middle of the road with its driver's door wide open, headlights on, exhaust curling in the cold air, a front door left open behind it. 35mm documentary photograph, grain, the headlights the only light, eerie stillness, no readable writing anywhere."
+ ],
+ [
+  "empty",
+  "EM1-a-b",
+  "chorus 2",
+  "An empty terraced street at night with no people at all: a family hatchback stopped in the middle of the road with its driver's door wide open, headlights on, exhaust curling in the cold air, a front door left open behind it. 35mm documentary photograph, grain, the headlights the only light, eerie stillness, no readable writing anywhere."
+ ],
+ [
+  "empty",
+  "EM1-b-a",
+  "chorus 2",
+  "The M4 at night jammed with abandoned cars, every one empty, doors open, hazard lights blinking amber in a long line into the dark, a dropped suitcase on the tarmac, no people anywhere. 35mm photograph, grain, deep night with amber hazard lights, no readable writing anywhere."
+ ],
+ [
+  "empty",
+  "EM1-b-b",
+  "chorus 2",
+  "The M4 at night jammed with abandoned cars, every one empty, doors open, hazard lights blinking amber in a long line into the dark, a dropped suitcase on the tarmac, no people anywhere. 35mm photograph, grain, deep night with amber hazard lights, no readable writing anywhere."
+ ],
+ [
+  "empty",
+  "EM2-d",
+  "chorus 2",
+  "Ground level on a motorway at night where every car has been abandoned: close beside one empty hatchback with its driver's door hanging open, the small interior light on, keys in the ignition, a long line of empty cars beyond blinking amber hazards. No people. Grainy 35mm, deep night, amber light, no lettering."
+ ],
+ [
+  "empty",
+  "EM2-e",
+  "chorus 2",
+  "From high on an embankment above a motorway at night: the whole carriageway a frozen line of abandoned cars with open doors, amber hazard lights pulsing into the distance, black fields either side, not one person. Grainy 35mm, deep blue-black, no lettering."
+ ],
+ [
+  "empty",
+  "EM2-f",
+  "chorus 2",
+  "Close at road level on a motorway at night: a suitcase burst open in the lane, folded clothes spilled over the wet tarmac, the amber hazard lights of empty cars blurred behind. No people. Grainy 35mm, night, no lettering."
+ ]
+]

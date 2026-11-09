@@ -1,0 +1,92 @@
+{
+ "acts": [
+  {
+   "id": "cars",
+   "title": "The cars (beats 1-10): inside one car, then the fire",
+   "beats": "CA FR"
+  },
+  {
+   "id": "cranes",
+   "title": "The cranes (beats 11-27): they stand, they walk, they land",
+   "beats": "CR RK FT GL"
+  },
+  {
+   "id": "end",
+   "title": "The bookend (beats 28-32), then black into the war",
+   "beats": "EN"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "cars",
+   "title": "The cup trembles (beats 1-4, 1.4 s)",
+   "look": "night",
+   "stills": [
+    "CA1-b"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "cars",
+   "title": "Fire runs down the lanes (beats 5-10, 2.1 s)",
+   "look": "night",
+   "stills": [
+    "FR1-a"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "cranes",
+   "title": "The city's cranes pull free (beats 11-14, 1.4 s)",
+   "look": "night",
+   "stills": [
+    "CR1-c"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "cranes",
+   "title": "A crane strides over the motorway (beats 15-20, 2.1 s)",
+   "look": "night",
+   "stills": [
+    "RK1-e"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "cranes",
+   "title": "The foot lands on the flyover (beats 21-24, 1.4 s)",
+   "look": "night",
+   "stills": [
+    "FT1-b"
+   ],
+   "anim": 5
+  },
+  {
+   "n": 6,
+   "act": "cranes",
+   "title": "Everywhere: Rotterdam (beats 25-27, 1.0 s)",
+   "look": "night",
+   "stills": [
+    "GL1-a"
+   ],
+   "anim": 6
+  },
+  {
+   "n": 7,
+   "act": "end",
+   "title": "The empty driver's seat (beats 28-32, 1.7 s), then black",
+   "look": "night",
+   "stills": [
+    "EN1-a",
+    "EN1-a2-b"
+   ],
+   "anim": 7
+  }
+ ]
+}

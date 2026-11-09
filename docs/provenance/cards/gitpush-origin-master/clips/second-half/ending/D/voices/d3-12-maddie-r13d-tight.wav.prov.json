@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-12-maddie-r13d-tight.wav",
+ "made": "2026-11-09T17:52:17+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/ending/tighten.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-12-maddie-r13d.wav",
+ "why": "D round 13: pauses held to 0.6 s (tender, Kai); words untouched"
+}

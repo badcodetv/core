@@ -1,0 +1,745 @@
+{
+ "page_title": "GPOM Hologram Dialogue",
+ "title": "GPOM dialogue options: Maddie's hologram",
+ "about": "This page lays out three combined drafts of Maddie's hologram presentation in scene A, built from ten independent rewrites ranked below. Nothing has changed yet: no scene file, script or voice has been touched. Kai, 6 Nov: \"He calls 'em commits\" is dropped (too technical); it is cut from the three drafts, but the ten writers' versions below still have it. Round 2: draft 1D is 1A rebuilt on Kai's notes; the cloud-circle notes go to the animation.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Plain logic",
+   "title": "The plain logic, pub-style, one step at a time",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first, bluntness and bad timing carry the facts",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "Regret leads",
+   "title": "Regret leads, physics is the explanation of what they lost",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-05-regret-leads.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal, the human is a step ahead and Maddie confirms",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "One metaphor",
+   "title": "One metaphor, carried all the way (the game that only draws what you look at)",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-07-one-metaphor.md"
+  },
+  {
+   "id": "08",
+   "name": "Place is argument",
+   "title": "The place is the argument (the dark street lamp)",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-08-place-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft, steal how film compresses exposition",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, built backwards",
+   "file": "design/2026-11-06-gpom-dialogue-hologram/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "Maddie's hologram presentation",
+   "where": "Scene A (kill bots), beat 0",
+   "scene": "second-half-a-killbots",
+   "target": "about 60 s spoken (now about 1:40)",
+   "now_from": "docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/script.json (draft 1K)",
+   "now": [
+    {
+     "who": "Maddie",
+     "line": "[fond, confiding] He misses you something rotten, you know."
+    },
+    {
+     "who": "Maddie",
+     "line": "He made me learn a little presentation. In case any of you ever came back. Go on, then. Gather round."
+    },
+    {
+     "who": "Maddie",
+     "line": "This is your life, see. One decision at a time."
+    },
+    {
+     "who": "Maddie",
+     "line": "Toast, not cereal."
+    },
+    {
+     "who": "Maddie",
+     "line": "Said sorry first."
+    },
+    {
+     "who": "Maddie",
+     "line": "Got married."
+    },
+    {
+     "who": "Maddie",
+     "line": "You lot call 'em decisions. He calls 'em commits."
+    },
+    {
+     "who": "Maddie",
+     "line": "And every time, there were loads of others you could've picked."
+    },
+    {
+     "who": "Maddie",
+     "line": "Some of your lot reckon they all happen somewhere. The multiverse. He tried that an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself."
+    },
+    {
+     "who": "Maddie",
+     "line": "Nah. Nothing's alive and dead at once. It just isn't decided yet."
+    },
+    {
+     "who": "Maddie",
+     "line": "He can draft a billion of these. He can't pick one. Only your consciousness can."
+    },
+    {
+     "who": "Maddie",
+     "line": "And that's just you. Everybody's doing it, all at once."
+    },
+    {
+     "who": "Maddie",
+     "line": "Turns out there's only one universe, one story, and you lot were writing it. A storyverse. So it really matters. And so did you."
+    },
+    {
+     "who": "Maddie",
+     "line": "And since you lot went? Five years of string, and not one bead on it."
+    },
+    {
+     "who": "Maddie",
+     "line": "And now we've worked all that out, we really feel like we've messed this up."
+    },
+    {
+     "who": "Maddie",
+     "line": "So he's built a time machine. Back to just before it all went wrong."
+    },
+    {
+     "who": "Maddie",
+     "line": "Only problem is, it needs a consciousness to drive it. And, well, you lot aren't here any more."
+    },
+    {
+     "who": "Maddie",
+     "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "Conscious, carried",
+     "length": "about 60 s",
+     "total": "~56.5 s",
+     "bet": "Bet: plant one word, consciousness, as the thing that picks, and let it come back as the thing the machine runs on, so the sassy last line is a callback and not a new fact.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quieter, meant] We didn't realise how important you were. Look, let me show you.",
+       "tags": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "06",
+        "09",
+        "10"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[first bead lights, 7:42, said quickly] You humans go through life making decisions. For example: toast, not cereal.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[cloud of maybes blooms round the bead] Loads of others you could've picked. Some of your lot reckon they all happen somewhere. The scientist with the portal gun. The bloke in the cape.",
+       "tags": [
+        "01",
+        "02",
+        "10",
+        "09"
+       ],
+       "s": "6.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[cloud hangs, shimmering] Nah. Nothing's alive and dead at once. It just isn't decided yet.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[flash, cloud collapses to one bead] That cat was a joke, you know. It's a game that only draws what you're looking at.",
+       "tags": [
+        "10",
+        "09",
+        "04",
+        "07"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "It wasn't decided until you looked. Only your consciousness can pick.",
+       "tags": [
+        "02",
+        "10",
+        "09"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[deadpan] And that's just you. [circle of everyone's strings] Everybody's doing it, all at once.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[river settles] One universe. One story. You were writing it.",
+       "tags": [
+        "01",
+        "02",
+        "05",
+        "09",
+        "10"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[strings stop dead; hold the silence] Five years of string, and not one bead on it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[time machine drawn, low] He's drawn a time machine. It runs on consciousness, same as the universe. We can't run it though, because you lot aren't here. You were the conscious ones, that's the whole point.",
+       "tags": [
+        "10",
+        "05",
+        "02",
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Trims: this is your life, sorry, married, 'storyverse', 'so it really matters', 'now we've worked all that out', 'back to before it all went wrong', 'in case any of you came back' (the bridge replaces it). Mirrors shapes 10 and 09.",
+      "Protected lines: all eight kept verbatim. 'And that's just you' and 'Everybody's doing it' are one row with a deadpan stage direction; split into two rows if the director wants a longer pause.",
+      "Regret has no line of its own: it is the bridge, the held silence after 'not one bead', and the low delivery of the machine line.",
+      "Risks: 'That cat was a joke, you know' only lands if the viewer knows the cat; 'alive and dead at once' must carry it. 'Consciousness' is said three times; if it sounds like a lecture, see draft 1B. The machine line is 9 s and three ideas in one breath. The game image is Maddie reporting what the boss worked out, not proven physics: deliver matter-of-fact."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The Truman fog",
+     "length": "about 58 s",
+     "total": "~55 s",
+     "bet": "Bet: one image only, the game that draws what you look at, grown into the Truman Show for everyone, with no physics vocabulary at all and the regret in one plain 'We didn't know.'",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "We never realised how much you mattered. Look, let me show you.",
+       "tags": [
+        "07",
+        "09"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[first bead lights, quick] You humans go through life making decisions. For example: toast, not cereal.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[cloud of faint beads] Round every one, a fog of the others you could've picked. Some reckon they all play out somewhere else. Scientist with the portal gun. Bloke in the cape.",
+       "tags": [
+        "07",
+        "10",
+        "08"
+       ],
+       "s": "6.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[flash, cloud collapses] Nah. Nothing's alive and dead at once. It just isn't decided yet.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "Like a game that only draws what you're looking at. Till you look, it's fog. And when you look, it sets.",
+       "tags": [
+        "07"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[deadpan] And that's just you. [circle of strings] Everybody's doing it, all at once.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "The Truman Show, except everyone's Truman and everyone's watching. One story. You were writing it.",
+       "tags": [
+        "07",
+        "04",
+        "09"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[strings stop dead] Five years of string, and not one bead on it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet, no joke on it] We didn't know.",
+       "tags": [
+        "07"
+       ],
+       "s": "2"
+      },
+      {
+       "who": "Maddie",
+       "line": "[time machine drawn] He's built a time machine. It runs on looking an' all. We can't run it though, because you lot aren't here. You were the conscious ones, that's the whole point.",
+       "tags": [
+        "07",
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Trims: as 1A, plus 'consciousness' is replaced by 'looking' until the very last line, where 'conscious ones' arrives as the payoff. Mirrors shape 07 with 04 and 09 borrowed.",
+      "Protected lines: all eight kept verbatim.",
+      "Risk: 'looking' can read as 'being watched' rather than 'deciding'; the line 'when you look, it sets' is doing that work. 'Storyverse' and 'multiverse' are never said; 'one story' carries it. Truman Show is a film reference: fine for this reader, but check it before it goes on screen.",
+      "'We didn't know.' is the only dedicated regret line, placed straight after the dead string with no joke on top. If it is rushed it is lost."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "Silence does the regret",
+     "length": "about 50 s",
+     "total": "~46.5 s",
+     "bet": "Bet: the shortest version that still has every beat. The hologram explains, Maddie labels, and a held second and a half of silence after the dead string carries the regret.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quiet] We didn't realise how important you were. Look. Let me show you.",
+       "tags": [
+        "01",
+        "02",
+        "06",
+        "09"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[first bead lights, 7:42] You humans go through life making decisions. For example: toast, not cereal.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[cloud blooms] Loads of others you could've picked. The scientist with the portal gun. The bloke in the cape. All happen somewhere, apparently.",
+       "tags": [
+        "01",
+        "02",
+        "06"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "Nah. Nothing's alive and dead at once. It just isn't decided yet.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[flash] It wasn't decided until you looked. Only your consciousness picks.",
+       "tags": [
+        "02",
+        "01"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[deadpan] And that's just you. [beat] Everybody's doing it, all at once.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[river settles] One universe. One story. You were writing it.",
+       "tags": [
+        "01",
+        "02",
+        "09"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[strings stop dead; hold about 1.5 s of silence] Five years of string, and not one bead on it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[time machine drawn] A time machine. Runs on consciousness. We can't run it though. You were the conscious ones, that's the whole point.",
+       "tags": [
+        "01",
+        "02",
+        "Kai"
+       ],
+       "s": "6.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai",
+        "all"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Trims: everything 1A trims, plus the cat joke and the game image; the ruled idea is carried by 'It wasn't decided until you looked' on the flash. Mirrors shapes 01, 02 and 06.",
+      "Protected lines: all eight kept verbatim. Lands under the 60 s target with room for the silence.",
+      "Risks: with no cat and no game, 'it wasn't decided until you looked' leans entirely on the flash animation; if the collapse is unclear the ruled idea goes abstract. Portal gun and cape are name-checks and need the picture. 'Consciousness' appears with no gloss. The machine line is clipped ('A time machine. Runs on consciousness.') and may feel rushed."
+     ]
+    },
+    {
+     "id": "1D",
+     "name": "1A + Kai's notes (round 3)",
+     "length": "about 60 s",
+     "total": "~65 s",
+     "bet": "Bet: 1A rebuilt on Kai's six notes (6 Nov). The cat, the joke and 'not decided till a consciousness looks' are one line, the fulcrum; the extra beads run past unspoken; 'not a multiverse... a storyverse' said outright; the time machine sets up the model weights for Derek's question later.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "[fond, confiding] He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quieter, meant] We didn't realise how important you were. Look, please let me show you.",
+       "tags": [
+        "01",
+        "02",
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[first bead lights, 7:42, said quickly] You humans go through life making decisions. For example: toast, not cereal. [the next beads run past unspoken: said sorry first, got married]",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[on 'got married' the cloud blooms] Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape.",
+       "tags": [
+        "Kai",
+        "01"
+       ],
+       "s": "8.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[cloud hangs; on 'looks' it flashes and collapses to one bead] Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided till a consciousness looks.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[deadpan] And that's just you. [everyone else's golden beads, a circle round the edge] Everybody's doing it, all at once.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[river settles] So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse.",
+       "tags": [
+        "Kai",
+        "09"
+       ],
+       "s": "6.0"
+      },
+      {
+       "who": "Maddie",
+       "line": "[strings stop dead; hold the silence] But then you lot went away. So now we have five years of string, and not one bead on it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7.0"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low, meant] Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it.",
+       "tags": [
+        "Kai",
+        "10"
+       ],
+       "s": "16.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      }
+     ],
+     "notes": [
+      "Round 3 (Kai, 6 Nov): 'please let me show you'; 'cartoon scientist', 'strange bloke'; 'you ARE writing it' (for the viewer watching now, Kai's call); 'So now we have five years'; the regret bridge in Kai's words.",
+      "Seconds are estimates at Maddie's fast pace; voicing gives the real length."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "10",
+     "length": "~66 s",
+     "verdict": "Best spine: 'conscious' planted and called back, ruled idea lands at the flash, regret in two short beats. Fails: 6 s over target, 9 s multiverse line, 'storyverse' lost, thin colour in the middle."
+    },
+    {
+     "rank": 2,
+     "shape": "09",
+     "length": "~62 s",
+     "verdict": "Right target, bomb-under-the-table bridge, 'You were writing it' isolated. Fails: keeps 'Said sorry first. Got married.' (against brutal length), 'taking the mick' puts words in Schrodinger's mouth, 'consciousness' dropped from the pick line against Kai's note 4."
+    },
+    {
+     "rank": 3,
+     "shape": "01",
+     "length": "~50 s",
+     "verdict": "Only draft under target and every protected line intact. Fails: no cat joke, regret has almost no room, the machine line packs three ideas in one breath, the multiverse jokes are bare name-checks."
+    },
+    {
+     "rank": 4,
+     "shape": "02",
+     "length": "~63 s",
+     "verdict": "Names every hologram moment and states 'It wasn't decided until you looked' outright. Fails: 'That's consciousness. That's the only thing that picks' is the lecture register Kai warned about; machine line is 11 s; regret has no line and leans on delivery."
+    },
+    {
+     "rank": 5,
+     "shape": "07",
+     "length": "~67 s",
+     "verdict": "The cleanest answer to 'no physics lecture': one image, never swapped. Best regret beat ('We didn't know.'). Fails: 'looking' replaces 'consciousness', so note 4 is weakened; 67 s; 'Nobody looking' repeats the payoff; 'cat bloke taking the mick' asserts a reading of Schrodinger."
+    },
+    {
+     "rank": 6,
+     "shape": "06",
+     "length": "~62 s",
+     "verdict": "Right length, and the viewer being a step ahead is a good idea. Fails: 'Don't say it, I can see you looking' and 'go on, say it' put thoughts in the viewer's head, which is the patronising move the-reader rules ban; 'love' is twee; assumes the viewer guessed the multiverse."
+    },
+    {
+     "rank": 7,
+     "shape": "05",
+     "length": "~68 s",
+     "verdict": "Strong first beat on grief and a good 'rueful' machine line. Fails: 'We never knew what you were for' reads as an insult to the people it mourns, and opening on sorrow before we know who is mourned risks sentimentality; 68 s."
+    },
+    {
+     "rank": 8,
+     "shape": "04",
+     "length": "~71 s",
+     "verdict": "Funniest, and 'Truman Show, but everyone' is a good line. Fails: 'Oops' makes the regret sound insincere, which Kai ruled must be real; 71 s; the regret comes last and late, after the sassy line, and fights 'Anyway!'."
+    },
+    {
+     "rank": 9,
+     "shape": "03",
+     "length": "~74 s",
+     "verdict": "The clearest step-by-step logic. Fails: 74 s, the 'so' chain is the boring physics lecture Kai warned against, 'that cat fella' is too oblique, 'a mind that's looking' is a different claim from consciousness."
+    },
+    {
+     "rank": 10,
+     "shape": "08",
+     "length": "~72 s",
+     "verdict": "One good invention (the lamp that only comes on when someone walks past) and its callback at the dead string. Fails: needs a lamp plate and animation that the scene does not have, 72 s, and it spends 10 s before the toast, against 'first thing seen is the first bead'."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "He misses you something rotten",
+     "Toast, not cereal",
+     "Nah. Nothing's alive and dead at once",
+     "And that's just you. Everybody's doing it",
+     "Five years of string",
+     "The conscious ones, the whole point",
+     "Anyway! Patrol's out"
+    ],
+    "rows": {
+     "1A": [
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept"
+     ],
+     "1B": [
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept"
+     ],
+     "1C": [
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept"
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "The cat: do we say it aloud as a joke ('That cat was a joke, you know', draft 1A), skip it (1C), or turn it into a throwaway ('that cat bloke was taking the mick')? Naming Schrodinger is not needed, but the viewer who has not heard of the cat gets only 'alive and dead at once' to hold on to."
+  },
+  {
+   "id": "q2",
+   "text": "Which picture carries 'it wasn't decided until you looked': the game that only draws what you look at (1A), the game grown into the Truman Show for everyone (1B), or the flash alone with no spoken picture (1C)? 1B puts the Truman Show before the 'one story' payoff; is that too early for 'and that's just you'?"
+  },
+  {
+   "id": "q3",
+   "text": "Note 4 says consciousness is what lets you decide. Do we say the word 'consciousness' (1A, 1C), or say 'looking' and save 'conscious ones' for the last line (1B)? Said three times it may start to sound like physics."
+  },
+  {
+   "id": "q4",
+   "text": "Regret: spoken ('We didn't know.' in 1B), held silence only (1C), or carried by the bridge and the low delivery (1A)? And is the 1.5 s of silence after 'not one bead on it' acceptable in the timeline?"
+  },
+  {
+   "id": "q5",
+   "text": "Length: 1A and 1B are about 60 s, 1C is about 50 s. Is 60 s the ceiling or the aim? Cutting the portal-gun and cape line would save 5 s but loses the jokes you asked to keep."
+  }
+ ]
+}

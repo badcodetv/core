@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/GR2-a.jpg",
+ "made": "2026-11-06T19:21:52.259Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Find a new angle inside this motorway jam at night; the cars, the red tail-lights, the empty opposite carriageway and the darkness stay as they are. Camera now at road level standing between two stationary lanes, tail-lights stacked to the horizon, a driver's arm resting out of an open window.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/GR1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/GR1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "59bf0f11-ec50-4038-8d29-1431be64e0fd"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/video/LO1-b-b.mp4",
+ "made": "2026-11-06T21:14:20.929Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The darkness sweeps across the lit half of the town district by district, street by street, until only a few scattered lights remain. Realistic, documentary 35mm grain, no text.",
+ "model": "Veo 3.1 Fast",
+ "parent": "/home/kai/.cache/flow-refs/choruses/vid/LO1-b-b.jpg",
+ "inputs": {
+  "start": "/home/kai/.cache/flow-refs/choruses/vid/LO1-b-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 4
+ },
+ "source_id": "eb0ce43a-5900-4711-ab94-ec3013fa8ee4",
+ "note": "harvest-shifted: saved under another job's name by flow_generate_video, re-attributed by first frame; source_id may be wrong"
+}

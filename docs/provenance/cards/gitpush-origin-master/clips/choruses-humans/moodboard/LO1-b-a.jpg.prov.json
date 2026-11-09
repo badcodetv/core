@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/LO1-b-a.jpg",
+ "made": "2026-11-06T18:58:37.973Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Night panorama of Swindon from a hilltop: the left half of the town is a field of orange streetlights, the right half is already pitch black with not one window lit, and the boundary between them cuts straight through the streets like a blackout spreading block by block. Overcast sky faintly lit from below on the lit side only. 35mm photograph, grain, deep blue-black, no fire, no readable writing anywhere.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b9386522-0390-4043-b411-40e25d07eca1"
+}

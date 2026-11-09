@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/choruses-humans/moodboard/SH2-b.jpg",
+ "made": "2026-11-06T19:19:15.120Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A second set-up in the stripped supermarket from this frame: same woman, trolley, bare shelves and greenish strip light. Camera now high in the ceiling looking down over the tops of several empty aisles, her lone figure and trolley tiny in one of them.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-refs/choruses/r2/SH1-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-refs/choruses/r2/SH1-a-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "e98f39d3-9044-4130-8258-1c03857ffc6e"
+}
