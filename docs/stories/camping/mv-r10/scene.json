@@ -14,7 +14,7 @@
  "flow_project": "72255ea1-f3e6-4714-b415-a5cc21ab3bc0",
  "prompts": "../mv-song2/cleanroom/r10/",
  "premiere": {
-  "current": "beat7",
+  "current": "beat9",
   "beat6": {
    "sequence": "camping song 2 beat 6",
    "guid": "a393e8ea-abc0-4087-b246-d56c16951b6b",
@@ -42,6 +42,34 @@
     "at": "2026-11-09",
     "state": "in sync",
     "why": "138/18 pieces match the plan (du09 trimmed to 183.52)"
+   }
+  },
+  "beat8": {
+   "sequence": "camping song 2 beat 8",
+   "guid": "d24fa021-60c5-4c62-97d1-25526144dd40",
+   "built": "2026-11-09",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/camping vid Copy-test_1.prproj",
+   "edl": "docs/stories/camping/mv-song2/cut/edl-beat8.json",
+   "what": "beat 7 + Jack's note at1154 (ly07 at 44.36)",
+   "how": "clone of beat 7, one overwrite + its orphan muted A2 clip removed",
+   "check": {
+    "at": "2026-11-09",
+    "state": "in sync",
+    "why": "0 video differences from edl-beat8"
+   }
+  },
+  "beat9": {
+   "sequence": "camping song 2 beat 9",
+   "guid": "b369b773-27c0-43cb-8c2d-2426e6a81f76",
+   "built": "2026-11-09",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/camping vid Copy-test_1.prproj",
+   "edl": "docs/stories/camping/mv-song2/cut/edl-beat9.json",
+   "what": "beat 8 + Jack's 3:15 note (clip 33 at 194.48)",
+   "how": "clone of beat 8, one overwrite",
+   "check": {
+    "at": "2026-11-09",
+    "state": "in sync",
+    "why": "0 video differences"
    }
   }
  },

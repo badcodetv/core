@@ -133,3 +133,19 @@ https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM, dumped to `../mv-r10/feedback
 - `cut/recut7.py` → `edl-beat7.json` → `cut/build7.py`: beat 6 cloned to beat 7, cleared (192), rebuilt: V1 138 / V2 18, all match,
   no slivers, du09 trimmed to 183.52. Saved. Page round 2 · camping song 2 beat 7 · in sync.
 - Open for Jack: the wine twice (118.7 V1, 121.4 V2); the wine clip pours rather than drinks.
+
+## Round 12: `camping song 2 beat 8` (2026-11-09 pm) — BUILT
+
+Jack: *"read my notes please and only make those changes, change nothing else this is literelly perfect"* — one new note (at1154,
+0:46): no rapping there. Beat 7 cloned to beat 8 and ONE shot overwritten: 44.36-47.08 clip 13 → ly07 (money in the gutter) from 5.0 s,
+the car rolling in on the drop (`cut/recut8.py` → `edl-beat8.json`); its orphan muted A2 clip removed. Checked: 0 other video
+differences. Saved. Page round 3 · camping song 2 beat 8 · in sync. Seven suggestions are on the page (cut-notes.json plan), NOT done:
+Bob's verse-1 action sandwich, one look for the TV DJ in hooks 1-2, more opening pulses, ly07 and the wine each used twice, du01's
+triangle; the ending was listened to and is clean.
+
+## Round 13: `camping song 2 beat 9` (2026-11-09 pm) — ▶ RESUME HERE: BUILT, awaiting Jack
+
+Jack (chat): *"at 3 mins 15 seconds, bobs bag dissapears, please use an action clip from a prevoius camping music video sequence there
+instead"*. Beat 8 cloned to beat 9, ONE shot: 194.48-195.84 x3 → Jack's clip 33 (boot stamping into the mud by a MANAGER badge; in the
+earlier song-2 sequences, not in beat 8), from 2.2 s (`cut/recut9.py` → `edl-beat9.json`). Checked: 0 other video differences. Saved.
+Page round 4 · camping song 2 beat 9 · in sync. The seven round-3 suggestions still wait for Jack.

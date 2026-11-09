@@ -23,5 +23,34 @@
   "url": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM",
   "what": "camping song 2 beat 7: all 20 round-1 notes done, Jack's beat-6 ending kept, page frame-exact",
   "rebuild": "python3 scripts/camping-mv2/song2-timeline.py '<.bridge/state-camping song 2 beat 7.json>' <media>/cut 'camping song 2 beat 7' && python3 scripts/scene/build-timeline.py docs/stories/camping/mv-r10 <out-dir>"
+ },
+ {
+  "at": "2026-11-09T12:42:18+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM",
+  "what": "Jack's round-2 notes dumped (one new: at1154)",
+  "decided": [
+   "read my notes please and only make those changes, change nothing else this is literelly perfect"
+  ],
+  "feedback": "feedback/timeline-r2",
+  "feedback_docs": 21
+ },
+ {
+  "at": "2026-11-09T12:42:18+00:00",
+  "stage": "timeline",
+  "round": 3,
+  "url": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM",
+  "what": "camping song 2 beat 8: at1154 done (ly07 at 44.36), suggestions on the page, not done"
+ },
+ {
+  "at": "2026-11-09T12:47:46+00:00",
+  "stage": "timeline",
+  "round": 4,
+  "url": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM",
+  "what": "camping song 2 beat 9: Jack's 3:15 note (bag vanishes) -> clip 33",
+  "decided": [
+   "at 3 mins 15 seconds, bobs bag dissapears, please use an action clip from a prevoius camping music video sequence there instead"
+  ]
  }
 ]

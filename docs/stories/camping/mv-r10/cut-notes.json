@@ -1,19 +1,23 @@
 {
- "round": 2,
+ "round": 4,
  "plan": [
   {
-   "h": "Round 2: all 20 notes are in `camping song 2 beat 7`",
+   "h": "Round 4: `camping song 2 beat 9`",
    "items": [
-    "The page now plays beat 7 frame-exact (the round-1 page ran up to 1.4 s ahead of the song; fixed).",
-    "Your own Premiere edit on beat 6 (the ending cut to the logo at 3:32.2, song ends 3:34.6) is kept in beat 7.",
-    "Also: the rest of the Glastonbury clip (60.0-64.8) is gone too: the DJ from behind and the stands instead."
+    "0:44.4: money in the gutter (your round-2 note), kept.",
+    "3:14.5-3:15.8: Bob's vanishing bag (x3) out; your clip 33 from the earlier sequences in: a boot stamping into the mud by a MANAGER badge, under \"...but I do want change\". Beat 9 = beat 8 + this one shot (checked)."
    ]
   },
   {
-   "h": "You decide",
+   "h": "Suggestions only, NOT done (say which you want)",
    "items": [
-    "The wine is now on V1 (118.7) and the hook-2 montage also opens on it (121.4, V2): keep both or swap the second?",
-    "Our wine clip is Tarquin pouring, not drinking: fine?"
+    "Bob's verse 1 has long masked-rap holds (0:27-0:31, 0:39.6-0:43.7, 0:50.5-0:55.3) where Tarquin's verse now has action between: sandwich Bob's the same way on his lines (\"you got cheese but I want cheddar\", \"please sir can I have some more\").",
+    "The old TV-DJ clips in hook 1 (1:06-1:17: crowd-surfing, smiley-face screen, beer into the TV) and hook 2 (2:04-2:11 supermarket/office, 2:14 motorway) are a different-looking character from the new stadium DJ: swap for the new stadium DJ shots so he is one man all the way through.",
+    "The opening pulses only on 2 beats (0:04.1, 0:04.8): carry the floodlight pulse on every beat to 0:05.5, or flicker it through the riser too.",
+    "The money in the gutter is now in twice (0:44 and 2:49): use the other take (ly07-b) or a fresh one at 2:49.",
+    "The wine is in twice (1:58.7 V1, 2:01.4 V2) and it is a pour, not a drink.",
+    "du01 (2:24-2:26): the posh man's triangle sits on the wrong eye in profile; a one-shot re-make.",
+    "The ending is fine: the song finishes on its own pitch-down drop into silence at 3:34.6 (listened)."
    ]
   }
  ],
@@ -37,7 +41,8 @@
   "at4174": "New material. Same clip, du05: re-made with the mask closed over the mouth. \u2192 done in `camping song 2 beat 7`.",
   "at4327": "New material. du06 (head bowed hides the triangle): re-made with the head lower but the face turned up enough to show the triangle over his left eye. \u2192 done in `camping song 2 beat 7`.",
   "at4369": "New material. du07: re-made with the scarf and balaclava covering the whole neck, no skin. \u2192 done in `camping song 2 beat 7`.",
-  "at5021": "Edit only. Headphones clip out; the tent city at night with the fire (film clip 29) instead. \u2192 done in `camping song 2 beat 7`."
+  "at5021": "Edit only. Headphones clip out; the tent city at night with the fire (film clip 29) instead. \u2192 done in `camping song 2 beat 7`.",
+  "at1154": "Edit only. Bob in the alley (clip 13) is out; the money in the gutter (ly07) is in, starting so the car rolls in on the drop (0:44.4) and the splash breaks on \"insane\". Nothing else changed. \u2192 done in `camping song 2 beat 8`."
  },
  "kai_round1": {
   "at4369": "keep this the same i love it, however the mask is wrong we shouldnt see his neck, never show skin on the balaclava badcode guys. please replace it with a very similar clip. thanks",
@@ -60,5 +65,16 @@
   "at1948": "make the clip change when the beat changes around here, as in the start of this line \"You are intent on living in a tent, it's a lack of work ethic, it's pathetic, getting paralytic.\" should be where this clip is cut to thanks ",
   "at1448": "remove this clip it is ai slop, of the badcode dj at glastonbury. THanks. ",
   "at3386": "cut this so he is already riding the horse, as in so it starts mid gallop. THanks"
- }
+ },
+ "kai_round2": {
+  "at1154": "please have no bob or tarquin rapping, please replace this clip with something else, maybe  an action clip that fits the lyrics, or just that clip of money in the gutter, you decide. THanks"
+ },
+ "chat_notes": [
+  {
+   "at": "2026-11-09",
+   "by": "jack",
+   "note": "at 3 mins 15 seconds, bobs bag dissapears, please use an action clip from a prevoius camping music video sequence there instead. THansk",
+   "done": "beat 9: clip 33 at 194.48"
+  }
+ ]
 }
