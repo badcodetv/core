@@ -3,10 +3,10 @@
  "story": "karen",
  "scene": "music-video",
  "sequence": "karen-music-r4",
- "frozen": "2026-11-06T09:28:31+00:00",
- "note": "Kai 2026-11-06: 'I think we've got a cut. Let's call that done. I love it.' (round 4, Premiere sequence karen-music-r4)",
- "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/edl.json",
- "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/preview.mp4",
+ "frozen": "2026-11-09T14:57:07+00:00",
+ "note": "Kai 2026-11-09: 'I think we've got a final cut. I've changed some things in Premiere, but let's call this done.' (his hand edit on Premiere sequence karen-music-r4, after round 5)",
+ "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-final/edl.json",
+ "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-final/preview.mp4",
  "total": 249.6,
  "boards": {
   "timeline": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE"
@@ -14,14 +14,14 @@
  "words": {},
  "shots": [
   {
-   "t": 0.0,
+   "t": 0,
    "dur": 5.52,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-12.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-12.mp4",
      "missing": true
     }
    ]
@@ -31,10 +31,10 @@
    "dur": 5.44,
    "beat": "intro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-15.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-15.mp4",
      "missing": true
     }
    ]
@@ -93,7 +93,7 @@
   },
   {
    "t": 27.32,
-   "dur": 2.76,
+   "dur": 5.48,
    "beat": "verse-1",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/1.mp4",
@@ -105,34 +105,8 @@
    ]
   },
   {
-   "t": 30.08,
-   "dur": 1.36,
-   "beat": "verse-1",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 31.44,
+   "t": 32.8,
    "dur": 2.72,
-   "beat": "verse-1",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 34.16,
-   "dur": 1.36,
    "beat": "verse-1",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/6.mp4",
@@ -161,10 +135,10 @@
    "dur": 1.36,
    "beat": "verse-1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/13.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-13.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/13.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-13.mp4",
      "missing": true
     }
    ]
@@ -239,10 +213,10 @@
    "dur": 2.72,
    "beat": "verse-1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/20.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-20.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/20.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-20.mp4",
      "missing": true
     }
    ]
@@ -252,23 +226,23 @@
    "dur": 2.76,
    "beat": "verse-1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-red-pin-map-red-pin-zoom-map.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-red-pin-map-red-pin-zoom-map.mp4",
      "missing": true
     }
    ]
   },
   {
-   "t": 56.0,
+   "t": 56,
    "dur": 2.72,
    "beat": "verse-1",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/16.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-16.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/16.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-16.mp4",
      "missing": true
     }
    ]
@@ -437,7 +411,7 @@
    ]
   },
   {
-   "t": 71.0,
+   "t": 71,
    "dur": 1.36,
    "beat": "chorus-1",
    "looped": false,
@@ -623,34 +597,21 @@
    ]
   },
   {
-   "t": 83.28,
-   "dur": 1.36,
+   "t": 83.32,
+   "dur": 2.36,
    "beat": "verse-2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-15.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-15.mp4",
      "missing": true
     }
    ]
   },
   {
-   "t": 84.64,
-   "dur": 2.68,
-   "beat": "verse-2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 87.32,
-   "dur": 2.72,
+   "t": 85.68,
+   "dur": 3.04,
    "beat": "verse-2",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/19.mp4",
@@ -662,8 +623,8 @@
    ]
   },
   {
-   "t": 90.04,
-   "dur": 2.76,
+   "t": 88.72,
+   "dur": 4.08,
    "beat": "verse-2",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/18.mp4",
@@ -676,7 +637,7 @@
   },
   {
    "t": 92.8,
-   "dur": 2.72,
+   "dur": 1.36,
    "beat": "verse-2",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/27.mp4",
@@ -688,40 +649,27 @@
    ]
   },
   {
-   "t": 95.52,
-   "dur": 2.76,
+   "t": 94.16,
+   "dur": 4.12,
    "beat": "verse-2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/18.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-18.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/18.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-18.mp4",
      "missing": true
     }
    ]
   },
   {
    "t": 98.28,
-   "dur": 1.32,
+   "dur": 4.08,
    "beat": "verse-2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-42.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 99.6,
-   "dur": 2.76,
-   "beat": "verse-2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/42.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/42.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-42.mp4",
      "missing": true
     }
    ]
@@ -741,33 +689,20 @@
   },
   {
    "t": 105.04,
-   "dur": 2.76,
+   "dur": 2.64,
    "beat": "verse-2",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/yellow pin map/yellow pin map.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-yellow-pin-map.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/yellow pin map/yellow pin map.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-yellow-pin-map.mp4",
      "missing": true
     }
    ]
   },
   {
-   "t": 107.8,
-   "dur": 1.4,
-   "beat": "verse-2",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 109.2,
-   "dur": 2.68,
+   "t": 107.68,
+   "dur": 2.84,
    "beat": "verse-2",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
@@ -779,8 +714,8 @@
    ]
   },
   {
-   "t": 111.88,
-   "dur": 2.72,
+   "t": 110.52,
+   "dur": 4.08,
    "beat": "verse-2",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
@@ -1063,7 +998,7 @@
    ]
   },
   {
-   "t": 131.0,
+   "t": 131,
    "dur": 1.36,
    "beat": "chorus-2",
    "looped": false,
@@ -1355,26 +1290,26 @@
   },
   {
    "t": 147.36,
-   "dur": 5.44,
+   "dur": 4.08,
    "beat": "bridge",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-12.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-12.mp4",
      "missing": true
     }
    ]
   },
   {
-   "t": 152.8,
-   "dur": 5.32,
+   "t": 151.44,
+   "dur": 6.68,
    "beat": "bridge",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-red-pin-map-red-pin-zoom-map.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-red-pin-map-red-pin-zoom-map.mp4",
      "missing": true
     }
    ]
@@ -1384,10 +1319,10 @@
    "dur": 4.6,
    "beat": "bridge",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/vids/vids/train/Train.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-train.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/vids/vids/train/Train.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-train.mp4",
      "missing": true
     }
    ]
@@ -1410,10 +1345,10 @@
    "dur": 2.64,
    "beat": "bridge",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/40.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-40.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/40.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-40.mp4",
      "missing": true
     }
    ]
@@ -1436,10 +1371,10 @@
    "dur": 4.08,
    "beat": "bridge",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/34.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-34.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/34.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-34.mp4",
      "missing": true
     }
    ]
@@ -1459,7 +1394,7 @@
   },
   {
    "t": 181.4,
-   "dur": 2.76,
+   "dur": 1.4,
    "beat": "verse-3",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/31.mp4",
@@ -1471,27 +1406,27 @@
    ]
   },
   {
-   "t": 184.16,
-   "dur": 2.72,
+   "t": 182.8,
+   "dur": 3.72,
    "beat": "verse-3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/31.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-31.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/31.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-31.mp4",
      "missing": true
     }
    ]
   },
   {
-   "t": 186.88,
-   "dur": 2.76,
+   "t": 186.52,
+   "dur": 3.12,
    "beat": "verse-3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/33.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-33.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/33.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-33.mp4",
      "missing": true
     }
    ]
@@ -1514,10 +1449,10 @@
    "dur": 1.4,
    "beat": "verse-3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/35.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-35.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/35.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-35.mp4",
      "missing": true
     }
    ]
@@ -1527,10 +1462,10 @@
    "dur": 1.36,
    "beat": "verse-3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/36.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-36.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/36.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-36.mp4",
      "missing": true
     }
    ]
@@ -1540,10 +1475,10 @@
    "dur": 1.32,
    "beat": "verse-3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/old clips/12.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-old-12.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/old clips/12.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-old-12.mp4",
      "missing": true
     }
    ]
@@ -1553,10 +1488,10 @@
    "dur": 2.8,
    "beat": "verse-3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/32.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-32.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/32.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-32.mp4",
      "missing": true
     }
    ]
@@ -1719,7 +1654,7 @@
    ]
   },
   {
-   "t": 206.0,
+   "t": 206,
    "dur": 1.32,
    "beat": "final-chorus",
    "looped": false,
@@ -1903,7 +1838,7 @@
   },
   {
    "t": 214.2,
-   "dur": 2.68,
+   "dur": 1.36,
    "beat": "final-chorus",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c11-the-dome.mp4",
@@ -1938,34 +1873,142 @@
    ]
   },
   {
-   "t": 216.88,
-   "dur": 4.12,
+   "t": 215.56,
+   "dur": 3.2,
    "beat": "outro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/37.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/37.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c09-the-spy.mp4",
+     "made": "2026-11-05T17:00:28.640Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Rain falls steadily; the hem of her long coat lifts and settles in the wind and she slowly raises her chin; the streetlamp flickers once. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "9674ff8b-535e-4c6f-8341-ebb816faf40b"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c09-the-spy.jpg",
      "missing": true
     }
    ]
   },
   {
-   "t": 221.0,
-   "dur": 4.08,
+   "t": 218.76,
+   "dur": 1.56,
    "beat": "outro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/old clips/20.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/old clips/20.mp4",
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c14-the-dial.mp4",
+     "made": "2026-11-05T17:06:47.653Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The dial turns clockwise, stops, then spins smoothly back to rest, as if a number has just been dialled by an unseen hand. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "ab01a40f-d6fa-4a02-97d8-48d7134dfae3"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c14-the-dial.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 220.32,
+   "dur": 1.36,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/5.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 221.68,
+   "dur": 0.68,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/recut-cartoon/c10-searchlights.mp4",
+     "made": "2026-11-05T17:01:42.054Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "Create an 8-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The two searchlight beams sweep slowly back and forth across the facade, crossing and uncrossing. The camera does not move. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Quiet room tone, no music, no dialogue.",
+     "model": "Omni Flash",
+     "parent": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "inputs": {
+      "start": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 1,
+      "durationSeconds": 8
+     },
+     "source_id": "6efd7e07-f622-4bde-8c32-5fc532d81b61"
+    },
+    {
+     "file": "/home/kai/.cache/karen-plates/c10-searchlights.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 222.36,
+   "dur": 2.72,
+   "beat": "outro",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/karen-music/clips/hitchcock/4.mp4",
      "missing": true
     }
    ]
   },
   {
    "t": 225.08,
-   "dur": 2.72,
+   "dur": 8.0,
    "beat": "outro",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
@@ -1977,21 +2020,8 @@
    ]
   },
   {
-   "t": 227.8,
-   "dur": 8.16,
-   "beat": "outro",
-   "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/47.mp4",
-   "chain": [
-    {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/47.mp4",
-     "missing": true
-    }
-   ]
-  },
-  {
-   "t": 235.96,
-   "dur": 4.12,
+   "t": 233.08,
+   "dur": 7.0,
    "beat": "outro",
    "looped": false,
    "file": "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
@@ -2007,10 +2037,10 @@
    "dur": 9.52,
    "beat": "outro",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+   "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-47.mp4",
    "chain": [
     {
-     "file": "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
+     "file": "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-47.mp4",
      "missing": true
     }
    ]
@@ -2034,7 +2064,6 @@
  "no_card": [
   "/mnt/d/badcode-videos/karen-music/clips/1.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/14.mp4",
-  "/mnt/d/badcode-videos/karen-music/clips/16.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/17.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/18.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/19.mp4",
@@ -2052,6 +2081,25 @@
   "/mnt/d/badcode-videos/karen-music/clips/6.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/7.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/8.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-12.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-13.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-15.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-16.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-18.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-20.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-31.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-32.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-33.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-34.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-35.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-36.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-40.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-42.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-47.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-old-12.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-red-pin-map-red-pin-zoom-map.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-train.mp4",
+  "/mnt/d/badcode-videos/karen-music/clips/from-story/st-vids-yellow-pin-map.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/hitchcock/1.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/hitchcock/10.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/hitchcock/11.mp4",
@@ -2065,27 +2113,6 @@
   "/mnt/d/badcode-videos/karen-music/clips/hitchcock/9.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/new maybes/1.mp4",
   "/mnt/d/badcode-videos/karen-music/clips/new maybes/4.mp4",
-  "/mnt/d/badcode-videos/karen-music/song.wav",
-  "/mnt/d/badcode-videos/karen-story/new clips/12.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/13.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/15.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/16.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/18.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/20.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/31.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/32.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/33.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/34.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/35.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/36.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/37.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/40.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/42.mp4",
-  "/mnt/d/badcode-videos/karen-story/new clips/47.mp4",
-  "/mnt/d/badcode-videos/karen-story/old clips/12.mp4",
-  "/mnt/d/badcode-videos/karen-story/old clips/20.mp4",
-  "/mnt/d/badcode-videos/karen-story/vids/vids/red pin map/red pin zoom map.mp4",
-  "/mnt/d/badcode-videos/karen-story/vids/vids/train/Train.mp4",
-  "/mnt/d/badcode-videos/karen-story/vids/vids/yellow pin map/yellow pin map.mp4"
+  "/mnt/d/badcode-videos/karen-music/song.wav"
  ]
 }
