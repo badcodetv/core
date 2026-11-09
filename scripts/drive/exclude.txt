@@ -9,3 +9,12 @@ Adobe Premiere Pro Auto-Save/**
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Script outputs a cut script rebuilds in a minute from the clips (Kai 2026-11-09: sync the
+# sources, not the renders). A cut's edl.json and preview.mp4 still go up.
+cut-*/segs/**
+cut-*/picture.mp4
+**/cut-*/segs/**
+**/cut-*/picture.mp4
+# Finished renders: re-exported from the Premiere project, and the master lives on YouTube
+renders/**

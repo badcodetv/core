@@ -10,7 +10,13 @@ scripts/drive/drive.sh pull   karen-music --go # Drive -> D:
 ```
 
 - **Copy only, never delete.** A file is replaced only by a newer copy (`--update`). Without `--go` every command is a dry run.
-- **Skipped:** Premiere preview caches, Auto-Save, `.bridge/` (exclude.txt).
+- **Skipped (exclude.txt):** Premiere preview caches, Auto-Save, `.bridge/`; anything a script rebuilds
+  (a cut's `segs/` and `picture.mp4`); and `renders/` (finished exports: re-export from the project).
+  Sources, projects, edl.json and preview.mp4 go up.
+- **Built not to hang:** a connection that goes quiet for 60 s is dropped and retried, the run retries
+  5 times, and it ends with `done: N file(s) copied, nothing failed` or `FAILED ... rerun the same command`.
+  A rerun is always safe: what's already there is skipped. Every real run is logged to `~/.cache/badcode-drive/`.
+- **`status` counts everything:** it prints how many files each way and the first 20, never a silent cap.
 - **Folder map:** `folders.json`, matched by Drive folder ID (the Drive names differ from the D: names, one has a trailing space). Add a row for a new project.
 - ⚠ If two people edit the same `.prproj` between syncs, the newer one wins and the other's changes are lost. Push when you finish a session, pull before you start one.
 - **One-time setup:** `rclone config create badcode drive scope drive`, then sign in as kaiyadavenport@gmail.com in the browser link it prints. The Drive folders belong to Jack's "Badcode - Official"; files Kai uploads count against Kai's storage.
