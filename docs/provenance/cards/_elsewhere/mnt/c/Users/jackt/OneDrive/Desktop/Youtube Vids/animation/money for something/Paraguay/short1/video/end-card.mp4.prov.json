@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/short1/video/end-card.mp4",
+ "made": "2026-11-09T16:01:10.713Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous locked-off webcam shot; the camera never moves. [0-2s] The reporter lifts the blank card a little closer to the webcam and holds it steady. [2-5s] He raises one finger of his other hand, taps the card once, firmly, and lowers the hand. [5-8s] He holds completely still, card up, head level toward the lens. The monitor behind keeps showing the dim crowd moving. Slight webcam flicker and compression. Audio: room tone and one chair creak only. Do not add speech, music, cuts, text or writing on the card. Do not morph his hands, head or the card. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/paraguay-s1/end-card-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/paraguay-s1/end-card-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "count": 1,
+  "durationSeconds": null
+ },
+ "source_id": "2853a4e1-b12b-4dd0-a48c-bf741cee590f"
+}

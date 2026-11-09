@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/presenter/moodboard/pp1-1a-b.jpg",
+ "made": "2026-11-09T14:08:50.948Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photorealistic medium shot, 16:9, of a masked presenter on a 1989 American public-access cable show, captured on a tripod camcorder: slightly soft, reds bleeding a little, the white areas clipping. He stands beside a folding table against a brown carpet backdrop, jabbing a gloved finger at a hand-drawn chart on an easel whose marker line plunges off the bottom of the board, his other hand raised palm-up in a shrug. A charcoal-grey rib-knit balaclava covers his whole head, the face one continuous unbroken knitted surface, the crown shaped with decreases, light pilling on the cheeks. A large cream-white felt ring is stitched around the face, and one small solid red felt triangle with rounded corners sits high inside the ring on the right side of the picture, at two o'clock. Crumpled black suit jacket, white shirt buttoned to the throat over the hood's neck, plain black leather gloves creased at the knuckles, cuffs past the wrists. A single overhead fluorescent tube lights him from above. Off-centre framing, head large in frame. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "300e96c1-0f90-4530-8764-1126f67ac63c"
+}

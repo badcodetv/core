@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/short1/video/scrum-nod-r2.mp4",
+ "made": "2026-11-09T16:02:36.142Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous handheld phone shot, the operator standing still, with only small arm micro-jitter. [0-2s] The reporter in the foreground turns his head and shoulders to face the camera square-on. [2-5s] He gives one slow, deep, grateful nod, head dipping and rising, then holds completely still. Behind him, out of focus, the suited man is carried away over the heads into the dark, and around 5s a blank cardboard placard drops from the crowd onto the road. Audio: crowd cheer swelling, whistles, drums, cardboard slapping tarmac. Do not add speech, music, cuts or text. Do not morph faces or hands. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/paraguay-s1/scrum-nod-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/paraguay-s1/scrum-nod-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "count": 1,
+  "durationSeconds": null
+ },
+ "source_id": "d988536e-0f78-4de4-af91-4dffad20955a"
+}

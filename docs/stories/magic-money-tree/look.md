@@ -48,6 +48,13 @@ The host on the club set is made by **reference, not by description**: attach `m
 (`scripts/money-for-something/oct26/prompts/plate-H1.txt`). Settings: Nano Banana 2 · 16:9 · x2 · Flow project
 `cb27208c-4b16-426d-9144-c394f2735c15` ("mmt jack").
 
+**Money For Something — Paraguay special presenter (Jack's pick, 2026-11-09):** `pp2-06-a` from the clean-room board
+(`scenes/paraguay-presenter/`): a turquoise ripstop-nylon hood with the thin cream ring tracing the face and the red
+triangle inside over his left eye, navy padded touchline coat zipped to the chin, striped scarf, black padded gloves with
+a ring-and-triangle patch, a stick mic with a plain flag. Made by reference: attach
+`Paraguay\presenter\reference\presenter-pick-pp2-06-a.jpg`; describe position, action and expression only. For this
+special only; the club-set host D1 stays the show's host elsewhere.
+
 ## Rules for this story
 
 Documentary:

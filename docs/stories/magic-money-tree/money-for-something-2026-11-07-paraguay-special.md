@@ -1,5 +1,10 @@
 # Money For Something special: Paraguay (Ueno Bank), 2026-11-07
 
+> **Status 2026-11-09 (resume here):** presenter picked (`pp2-06-a`, scenes/paraguay-presenter/, look.md); footage and
+> copyright answer in `money-for-something-2026-11-09-paraguay-footage.md`; format and shorts in
+> `money-for-something-2026-11-09-paraguay-mockumentary.md`; **short 1 v1 built** in `Paraguay.prproj`
+> (`scenes/paraguay-s1/README.md`), awaiting Jack's joke punch-up. Media: Desktop `animation\money for something\Paraguay\`.
+
 Jack asked (2026-11-07) for an MFS special on Paraguay's bank freeze, made the way the last
 meeting said the work should be: not the usual moaning.
 
@@ -208,3 +213,17 @@ Memes (each 10–15 s, real clip ~4–6 s, Flow ~6–8 s):
    badly) · Step 3: the real clip. **Don't.**
 6. **Vox pop.** Flow: the host doorsteps an anonymous protester with a mic, after the real clip.
    Line left for Jack.
+
+## Jack 2026-11-09: the format — Channel 5 Andrew Callaghan, funny like South Park
+
+Jack: *"i kind of want to do a channel 5 andrew callaghan but funny in a south park way, please save/remember this in the file thanks"*
+
+- **What that means (reading, not yet ruled):** the presenter is a roving street reporter, big handheld mic,
+  doorstepping people in the crowd, deadpan, long handheld takes, letting people talk themselves into a hole
+  (the Channel 5 / *This Place Rules* register); and the comedy is South Park's: blunt, absurd escalation, everyone
+  a fool including the reporter, the point landed by a ridiculous moment rather than a speech.
+- Fits memes 2, 5 and 6 above (sign flip, tutorial, vox pop) best: the presenter in the crowd with a mic.
+- **Never in a prompt:** the names (Andrew Callaghan, Channel 5, South Park) stay out of every Flow field (real
+  person, and a recreation of a specific show is off-limits); prompts describe the register in plain words.
+- Interviewees in Flow are invented and anonymous-but-shown; never Cubas, never Peña.
+- Footage and copyright research for the real clip: `money-for-something-2026-11-09-paraguay-footage.md`.

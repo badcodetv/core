@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/jackt/.cache/flow-test/tea.jpg",
+ "made": "2026-11-09T13:34:14.789Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A cup of tea on a wooden kitchen table by a window, morning light. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 1
+ },
+ "source_id": "dacfb970-627c-457a-8c00-f5115a1d0820"
+}

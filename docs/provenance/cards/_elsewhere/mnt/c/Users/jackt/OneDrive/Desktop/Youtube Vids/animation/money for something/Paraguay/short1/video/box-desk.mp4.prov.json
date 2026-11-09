@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/short1/video/box-desk.mp4",
+ "made": "2026-11-09T16:00:11.306Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "One continuous locked-off webcam shot; the camera never moves. [0-3s] The reporter leans in closer toward the monitor below the camera, head tilting as if reading something serious. [3-6s] He sits back a little, picks up the pen and writes a short note on the pad. [6-8s] He looks up and nods once, slowly, then holds still. Slight webcam flicker and compression. Audio: quiet room tone, a chair creak, pen scratching paper. Do not add speech, music, cuts, text or graphics. Do not morph his head, hands or the headset. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/paraguay-s1/box-desk-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/paraguay-s1/box-desk-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "count": 1,
+  "durationSeconds": null
+ },
+ "source_id": "85f1d611-eb97-41d9-b53a-1605acce3a05"
+}

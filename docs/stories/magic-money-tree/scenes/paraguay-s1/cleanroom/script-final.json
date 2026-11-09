@@ -1,0 +1,97 @@
+{
+  "title": "Sir, Quick Question",
+  "engine": "A deadpan masked reporter puts a polite, serious interview question to a politician who is being carried out of the protest over the crowd's heads. The answer never comes, and the silence is the joke. Then he names the fix like a man reading the football results.",
+  "voice_direction": "Flat, courteous English local-news correspondent; unhurried, never raises his voice, never laughs. Slightly out of breath on the street lines, nothing else. The swear gets exactly the same polite tone as the question. About 2 words a second, with real silences left in.",
+  "beats": [
+    {
+      "t": "0.0-5.5",
+      "part": "REAL",
+      "picture": "The real phone video from frame one, already mid-shove: night, packed crowd, the bald man in the dark jacket being pushed back and out, water flying, phones up. BadCode logo bug top-left. Credit small, bottom-left: 'Video: @Raulbogarin on X'. Streamer box TOP-RIGHT, in the top third and clear of the button rail: the reporter at a cheap desk in a headset, leaning in to his monitor, then gravely writing a note and nodding once.",
+      "vo": "Three million savers. Bank's gone. So a politician turned up to help.",
+      "on_screen": "Big summary line, held 0.3-5.5: 'THEIR BANK WENT BUST. THEN A POLITICIAN SHOWED UP.'",
+      "meme_flash": "4.7-5.5: species card (still meme-species): grainy suit's back with a red circle; text 'OPPORTUNISTUS SUITUS' / 'STATUS: NOT ENDANGERED'.",
+      "sound": "Real clip audio up: '¡Fuera!' chant, whistles, 'Payo!' near the phone. A cheap news-desk sting under the summary line. A woodblock tick on the species card."
+    },
+    {
+      "t": "5.5-9.0",
+      "part": "REMADE",
+      "picture": "HARD CUT. Vertical, handheld phone, night, sodium streetlight and phone torches. A man in a suit, face pixelated, rides overhead on the crowd's raised palms, still gripping his sign. The reporter jogs alongside, holding his stick mic up to the pixelated face, perfectly composed.",
+      "vo": "Sir. What's the plan for the pensioners?",
+      "on_screen": "Sign text (post): 'I'M HERE TO LISTEN'. Over-official lower-third: 'FACE PIXELATED FOR LEGAL REASONS'.",
+      "meme_flash": "",
+      "sound": "Drums, whistles, indistinct chanting, footsteps on tarmac."
+    },
+    {
+      "t": "9.0-11.5",
+      "part": "REMADE",
+      "picture": "Same take. The pause: the suit floats away over the heads, out of reach. The reporter stops dead, mic still held up into the empty air where the face was, and does not move.",
+      "vo": "",
+      "on_screen": "",
+      "meme_flash": "9.6-10.4 (post graphic, not generated): grey old-computer error box: 'PENSIONER_PLAN.EXE IS NOT RESPONDING' with two buttons [WAIT] [WAIT].",
+      "sound": "The crowd drops to a thin hiss for the pause; one lone whistle."
+    },
+    {
+      "t": "11.5-15.5",
+      "part": "REMADE",
+      "picture": "The reporter turns to the phone camera and gives one slow, grateful nod, as if he had just been handed a full policy briefing. Far behind him the suit is carried off into the dark; the sign drops out of the crowd onto the road.",
+      "vo": "He came to listen. They are not fucking having it.",
+      "on_screen": "Lower-third: '4 DAYS: BANK SEIZED → PRESIDENT REMOVED'.",
+      "meme_flash": "14.6-15.4: the floating-suit still (meme-lilo), text 'OUT OF OFFICE'.",
+      "sound": "The crowd roars back up; the sign slaps on the tarmac."
+    },
+    {
+      "t": "15.5-18.5",
+      "part": "END",
+      "picture": "Cut to the streamer desk, now full-frame. The reporter holds a plain card up to the webcam and taps it once with a gloved finger. His monitor behind him shows the night crowd, so the cut back to frame 1 (him in the box over that crowd) loops.",
+      "vo": "Simple fix. The ref can't own the team.",
+      "on_screen": "Card text (post): 'BANK OWNER. BANK INSPECTOR. PICK ONE.'",
+      "meme_flash": "",
+      "sound": "Room tone, a cheap chair creak; the real clip's '¡Fuera!' chant cuts in on the last frame so the loop restarts mid-chant."
+    }
+  ],
+  "flow_shots": [
+    {
+      "id": "box-desk",
+      "for": "streamer box",
+      "kind": "video",
+      "aspect": "9:16",
+      "describe": "The reporter in the attached image sits at a cheap cluttered desk in a small dark room, a gaming headset over his hood, a ring light flat on the front, a purple LED strip and monitor glow behind. Locked-off webcam view, slightly high and close, soft compressed webcam image. Over 8 seconds he leans in toward a monitor below the camera, then picks up a pen, writes a short note seriously and nods once. One continuous shot, no cuts. Room tone only, no speech, no music."
+    },
+    {
+      "id": "scrum-carry",
+      "for": "remade (5.5-11.5)",
+      "kind": "video",
+      "aspect": "9:16",
+      "start_frame": "Night street demonstration under sodium-orange streetlight and white phone torches, phone-camera look (noisy blacks, blown phone lights, wide lens). An anonymous man in a dark suit is already up on the crowd's raised palms, holding a blank cardboard sign to his chest. The reporter in the attached image is beside him at shoulder height, holding his stick mic up toward him.",
+      "describe": "From the start frame: one continuous handheld phone shot, the operator jogging, with footstep bob and micro-jitter. The jeering, laughing crowd passes the suited man along on raised palms like a carnival crowd-surf, away down the street. The reporter jogs alongside holding the mic up to him. After 4 seconds the reporter stops dead and keeps the mic held up into empty air while the man drifts away over the heads. Ambience only: drums, whistles, indistinct chanting. No dialogue, no music, no scene cuts. Suit's face pixelated in post."
+    },
+    {
+      "id": "scrum-nod",
+      "for": "remade (11.5-15.5)",
+      "kind": "video",
+      "aspect": "9:16",
+      "describe": "Same night street and phone look. The reporter in the attached image, in the foreground, turns to face the phone camera and gives one slow, grateful nod, then holds still. Far behind him, out of focus, a suited man is carried away overhead into the dark end of the street and a blank placard falls from the crowd onto the road. Handheld micro-jitter, camera otherwise steady. Ambience only: crowd cheer, whistles, drums. No speech, no music, no scene cuts."
+    },
+    {
+      "id": "end-card",
+      "for": "end",
+      "kind": "video",
+      "aspect": "9:16",
+      "describe": "Same desk and webcam set-up as box-desk, framed full screen. The reporter in the attached image lifts a plain white card up to the webcam with one gloved hand, holds it steady and taps it once with a finger of the other hand. Behind him the monitor shows a dim night crowd. Locked camera, flat ring-light look. Room tone and a chair creak only, no speech, no music."
+    },
+    {
+      "id": "meme-species",
+      "for": "meme flash 4.7-5.5",
+      "kind": "still",
+      "aspect": "9:16",
+      "describe": "Nature-encyclopedia style species card: a grainy telephoto photo of the back of an anonymous man in a dark suit in a night crowd, a hand-drawn red circle around him, with a plain band at the bottom left empty for a name and status added in post."
+    },
+    {
+      "id": "meme-lilo",
+      "for": "meme flash 14.6-15.4 (and thumbnail)",
+      "kind": "still",
+      "aspect": "9:16",
+      "describe": "An anonymous man in a dark suit lying flat and calm on a sea of raised palms at night, seen from slightly below, like a man on a lilo drifting out to sea, sodium streetlight and phone torches. Face pixelated in post."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/short1/video/scrum-carry.mp4",
+ "made": "2026-11-09T15:55:41.911Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "From the start frame, one continuous handheld phone shot: the operator jogs alongside, so the picture bobs with each footstep and has small micro-jitter. [0-4s] The laughing, jeering crowd passes the suited man along on raised palms, carnival style, away down the street; the reporter jogs beside him, mic held up toward him. [4-8s] The reporter stops dead, mic still raised into empty air, while the man drifts on over the heads into the dark. Audio: drums, whistles, indistinct chanting, footsteps on tarmac. Do not add speech, music, cuts or text. Do not morph faces or hands. Thanks.",
+ "model": "Omni Flash",
+ "parent": "/home/jackt/.cache/paraguay-s1/scrum-carry-a.jpg",
+ "inputs": {
+  "start": "/home/jackt/.cache/paraguay-s1/scrum-carry-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "count": 1,
+  "durationSeconds": null
+ },
+ "source_id": "ec4cdeb8-fe47-4dad-b262-2bf790b5cf45"
+}

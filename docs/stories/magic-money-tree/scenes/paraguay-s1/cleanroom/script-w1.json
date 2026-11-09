@@ -1,0 +1,89 @@
+{
+  "title": "Subbed Off Before Kick-Off",
+  "engine": "The masked reporter covers the scrum as a football match: pitch-side pundit, the politician is a late substitute the home end won't have, the crowd reviews him like VAR and sends him off; the way out is a rule of the game.",
+  "voice_direction": "Flat, weary northern English football pundit on his fourth match of the day: mid-pace, dry, never laughs, never raises his voice even when the crowd does; treats the whole thing as routine tactical analysis.",
+  "beats": [
+    {
+      "t": "0.0-6.0",
+      "part": "REAL",
+      "picture": "The real phone clip from frame one: night, packed street, a bald man in a dark jacket being shoved back through the crowd, whistles, people shouting at him. BadCode logo bug top-left. Credit bottom: 'Video: @Raulbogarin on X'. Streamer box TOP-RIGHT (top third, clear of the button rail): the masked reporter at a cheap desk with a gaming headset over his hood, lit by a ring light, RGB strip behind; he slowly leans toward the desk mic, then at 4.5 s holds up a red card to the webcam, deadpan.",
+      "vo": "Late substitution here. He's come on to show his support. The home end have reviewed that.",
+      "on_screen": "Big summary line (held 0.5-6.0): 'BANK GOES BUST. POLITICIAN SHOWS UP. CROWD: GET OUT.' Small lower-third, slightly-too-official news style: 'LIVE: ASUNCION, PARAGUAY. HOME 3,000,000 - 0 AWAY'.",
+      "meme_flash": "At 4.6-5.3 s: full-screen red card held up in a gloved hand against a stadium floodlight, text 'STRAIGHT RED'.",
+      "sound": "Real clip audio up: chants of 'Fuera!', whistles. Under the VO a faint stadium-crowd bed and a referee's whistle sting on the red card."
+    },
+    {
+      "t": "6.0-9.5",
+      "part": "REMADE",
+      "picture": "HARD CUT. Vertical phone look, night, sodium streetlight and phone torches. A man in a suit, face pixelated, clutching a hopeful sign, is lifted and carried overhead by a jeering, laughing crowd, out of the street like a trophy nobody wanted. The masked reporter runs alongside at the man's shoulder with his stick mic held up to him, flag on the mic.",
+      "vo": "Oh, he's off. Subbed before he's touched the ball.",
+      "on_screen": "Caption pinned under the blur: 'face pixelated for legal reasons'. Sign text added in post: 'I'M ONE OF YOU'. Someone in the crowd holds up a fourth-official board, numbers added in post: red 'HIM' / green 'NOBODY'.",
+      "meme_flash": "At 8.4-9.0 s: a VAR monitor graphic, text 'CHECK COMPLETE: FANS'.",
+      "sound": "Handheld crowd ambience, drums, whistles, indistinct chanting; a crowd 'ohhhh' swell as he goes up."
+    },
+    {
+      "t": "9.5-11.0",
+      "part": "REMADE",
+      "picture": "Still carried overhead, the pixelated man drifts past; the reporter stops running and holds the mic straight up at him, waiting for a post-match comment. Nobody says anything. The man floats away over the heads.",
+      "vo": "",
+      "on_screen": "Lower-third: 'POST-MATCH INTERVIEW: UNAVAILABLE'.",
+      "meme_flash": "",
+      "sound": "The crowd noise dips for one beat of near silence: just a single whistle and a drum hit."
+    },
+    {
+      "t": "11.0-16.5",
+      "part": "REMADE",
+      "picture": "The reporter turns to the phone camera, walking backwards through the cheering crowd, mic at his chest. Behind him the suited man is carried off into the dark at the end of the street. People raise phones and fists, celebrating like a late winner.",
+      "vo": "Four days from the bank going bust to the gaffer getting sacked. Fans win at home.",
+      "on_screen": "Lower-third: 'FULL TIME: BANK SEIZED TUE. PRESIDENT REMOVED FRI.'",
+      "meme_flash": "At 15.6-16.3 s: a 1990s-style league-table graphic, top row 'THE FANS', bottom row 'THE BOARD', text 'RELEGATED'.",
+      "sound": "Crowd erupts into a goal-celebration roar; a cheap brass stab under it."
+    },
+    {
+      "t": "16.5-19.5",
+      "part": "END",
+      "picture": "Back in the streamer box, now full-screen: the reporter at his cheap desk holds up a pundit's tactics whiteboard to the webcam. On it (added in post) a stick-figure referee and a team badge with a big X between them. He taps it once with a gloved finger. Last frame: he puts the red card back up, matching the start of the loop.",
+      "vo": "Tactical note: the ref can't own a team.",
+      "on_screen": "Big text: 'RULE ONE: THE REF CAN'T OWN A TEAM.' Small under it: 'Bank regulator. Bank owner. Pick one.'",
+      "meme_flash": "",
+      "sound": "Referee's long final whistle that bleeds into the real clip's 'Fuera!' chant as it loops."
+    }
+  ],
+  "flow_shots": [
+    {
+      "id": "box-desk",
+      "for": "streamer box",
+      "describe": "The reporter in the attached image sitting at a cheap cluttered desk in a small dark bedroom, a gaming headset worn over his hood, a desk mic in front of him, ring light in front so the light is flat, an RGB LED strip glowing purple behind him. Locked-off webcam view, slightly high wide angle, soft compressed webcam quality. He leans toward the mic, then slowly raises a red card to the camera and holds it there. Vertical framing that crops cleanly to a small square box. Room tone only, no speech."
+    },
+    {
+      "id": "box-tactics",
+      "for": "end",
+      "describe": "Same desk set-up and webcam view as box-desk. The reporter in the attached image holds a blank white tactics whiteboard up to the camera with one gloved hand and taps it once with a finger of the other, then lowers it and lifts a red card. Locked camera, flat ring-light look. Room tone only, no speech."
+    },
+    {
+      "id": "remade-lift-start",
+      "for": "remade",
+      "describe": "Start still, vertical 9:16, night street packed with a celebrating demonstration under sodium-orange streetlights and phone torches. A generic anonymous man in a dark suit is already up on the crowd's raised hands, held aloft and clutching a blank cardboard sign to his chest. The reporter in the attached image is beside him at shoulder height, holding his stick mic up toward the man. Phone-camera look: noisy blacks, blown phone lights, wide lens."
+    },
+    {
+      "id": "remade-lift-run",
+      "for": "remade",
+      "describe": "From remade-lift-start: one continuous handheld phone shot, the operator jogging, footstep bob and micro-jitter. The jeering, laughing crowd passes the suited man along on raised palms, carnival-style, carrying him away down the street. The reporter jogs alongside keeping the mic held up to him, then stops and holds the mic straight up as the man floats past. Ambience: drums, whistles, indistinct chanting. No dialogue, no music, no scene cuts."
+    },
+    {
+      "id": "remade-walkback",
+      "for": "remade",
+      "describe": "One continuous handheld phone shot at night: the reporter in the attached image walks backwards toward the camera through a cheering crowd, mic held at his chest, while far behind him a man in a suit is carried away overhead into the dark end of the street. People raise phones and fists as if celebrating a late goal. Ambience: crowd roar, whistles, drums. No dialogue, no music, no scene cuts."
+    },
+    {
+      "id": "meme-red-card",
+      "for": "meme",
+      "describe": "Still: a black-gloved hand holding up a plain red card against a blinding stadium floodlight at night, shallow focus. Text 'STRAIGHT RED' added in post."
+    },
+    {
+      "id": "meme-var",
+      "for": "meme",
+      "describe": "Still: a pitch-side video review monitor on a stand at night, screen glowing blank. Text 'CHECK COMPLETE: FANS' added in post."
+    }
+  ]
+}

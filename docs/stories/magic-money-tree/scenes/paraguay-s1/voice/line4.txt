@@ -1,0 +1,1 @@
+Simple fix. The ref can't own the team.

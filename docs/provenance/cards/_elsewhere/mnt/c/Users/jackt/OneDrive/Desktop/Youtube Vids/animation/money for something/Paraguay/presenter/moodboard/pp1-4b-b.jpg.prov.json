@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/presenter/moodboard/pp1-4b-b.jpg",
+ "made": "2026-11-09T14:01:43.621Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photorealistic 16:9 phone-camera frame from a cluttered desk in a cramped spare-room home studio. A masked presenter leans into the lens mid-rant, one gloved finger jabbing at the camera, slightly soft in the foreground, the other hand flung open beside his head. His head is a midnight-blue merino balaclava, fine rib knit with crown decreases and a loose thread at the temple, one continuous knitted surface over the whole face, tucked into a charcoal roll-neck. A cream felt ring is appliquéd around the face with a visible running stitch; a small solid red felt triangle with rounded corners sits high inside it at two o'clock, on the right side of the frame. Plain black leather gloves. Behind him: a crooked foam panel, an ironing board, a laundry basket, a glass of red wine on a shelf. The only light is grey daylight from a window at frame left. Wide phone lens, off-centre. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9892a07d-76b3-4099-87f8-d105f3884812"
+}

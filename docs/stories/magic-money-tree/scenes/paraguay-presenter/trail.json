@@ -1,0 +1,18 @@
+[
+ {
+  "at": "2026-11-09T14:09:47+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/RzMfb1pvSD6QoHLQUpeo9W",
+  "what": "Round 1: 12 clean-room presenter designs x2 (8 studio, 4 street reporter)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/magic-money-tree/scenes/paraguay-presenter docs/stories/magic-money-tree/scenes/paraguay-presenter/moodboard.html"
+ },
+ {
+  "at": "2026-11-09T15:01:33+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/RzMfb1pvSD6QoHLQUpeo9W",
+  "what": "Round 2: 12 different presenters, mask matched to Camping/Bank Robbery via mask-sheet reference",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/magic-money-tree/scenes/paraguay-presenter docs/stories/magic-money-tree/scenes/paraguay-presenter/moodboard.html"
+ }
+]

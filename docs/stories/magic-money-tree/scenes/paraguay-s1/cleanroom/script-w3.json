@@ -1,0 +1,98 @@
+{
+  "title": "Return Him to the Wild",
+  "engine": "Wildlife documentary: the reporter narrates the protest as a hushed nature film, the crowd is a herd defending its territory and the suited politician is a rare opportunist species being caught and released back into the wild.",
+  "voice_direction": "Hushed, reverent, close-mic British nature-documentary whisper, slow and fascinated, never laughing; the swear and the punchlines get exactly the same awed whisper as the facts.",
+  "beats": [
+    {
+      "t": "0.0-3.0",
+      "part": "REAL",
+      "picture": "Real phone video, night: packed crowd shoving the bald man in the dark jacket toward the edge of frame, water flying. BadCode logo bug top-left, credit 'Video: @Raulbogarin on X' small bottom-left. Streamer box top-right: the masked reporter at a cheap desk in a headset, pressing a pair of binoculars against his mask, aimed at his own monitor.",
+      "vo": "Night falls. The herd's bank has vanished.",
+      "on_screen": "THEIR BANK GOT SEIZED. THEN A POLITICIAN SHOWED UP.",
+      "meme_flash": "",
+      "sound": "Real clip audio up: '¡Fuera!' chant, whistles, 'Payo!' near the phone. Under it, a soft nature-doc string pad fades in."
+    },
+    {
+      "t": "3.0-6.0",
+      "part": "REAL",
+      "picture": "Real clip continues: the man is pushed out through the crowd, people jeering. Streamer box: the reporter slowly lowers the binoculars and leans in to the monitor, very still, like a man in a hide.",
+      "vo": "And here: a politician. Trying to blend in.",
+      "on_screen": "",
+      "meme_flash": "At 5.2 s, 0.7 s: a nature-encyclopedia species card, a grainy photo of a generic suit's back with a red circle round it. Text: 'OPPORTUNISTUS SUITUS. STATUS: NOT ENDANGERED'.",
+      "sound": "Chant continues; a single soft woodblock tick on the species card."
+    },
+    {
+      "t": "6.0-9.5",
+      "part": "REMADE",
+      "picture": "HARD CUT to the remade scrum, vertical phone look, night, sodium streetlight and phone torches. The reporter is crouched low among the protesters' legs as if in long grass, stick mic held up. A few metres off, a man in a suit with a pixelated face holds up a hand-painted sign reading 'I'M HERE TO LISTEN' (sign text added in post). The crowd turns toward him.",
+      "vo": "Closer now. He's brought a sign. He's here to listen.",
+      "on_screen": "Lower-third, too-official news style: 'FACE PIXELATED FOR LEGAL REASONS'.",
+      "meme_flash": "",
+      "sound": "Remade crowd ambience: indistinct chanting, drums, whistles. The string pad swells slightly, reverent."
+    },
+    {
+      "t": "9.5-13.5",
+      "part": "REMADE",
+      "picture": "The crowd lifts the suited man overhead on raised palms, his sign still held up, and passes him away above their heads. The reporter jogs alongside, crouched, mic angled up at the man like he's recording birdsong. The man's legs bicycle in the air.",
+      "vo": "The herd listens. The herd is not fucking having it.",
+      "on_screen": "",
+      "meme_flash": "At 12.6 s, 0.8 s: a fishing-show still of a big fish being gently put back in a river, the fish's face pixelated. Text: 'CATCH & RELEASE'.",
+      "sound": "Crowd roar rises as he goes up; a cheesy whoosh as he passes overhead."
+    },
+    {
+      "t": "13.5-15.5",
+      "part": "REMADE",
+      "picture": "From the reporter's low POV: the suited man is carried off into the dark over the crowd, sign last to disappear. The reporter, in the foreground, gives a small solemn nod to camera.",
+      "vo": "Catch. And release.",
+      "on_screen": "BANK SEIZED MONDAY. PRESIDENT REMOVED FRIDAY.",
+      "meme_flash": "At 15.0 s, 0.5 s: a polluted canal with two swans drawn badly onto it. Text: 'NATURE IS HEALING'.",
+      "sound": "Chant fades into the distance; nature-doc strings resolve on a warm chord."
+    },
+    {
+      "t": "15.5-19.0",
+      "part": "END",
+      "picture": "Cut to the streamer desk, now full frame: the reporter puts the binoculars down, picks up a plain index card and holds it to the webcam (card text added in post: 'WAY OUT: BANK REGULATORS WHO NEVER OWNED THE BANK'). Behind his head the monitor shows the crowd again, looping back to frame 1.",
+      "vo": "Conservation tip: never hire the fox to inspect the henhouse.",
+      "on_screen": "WAY OUT: BANK REGULATORS WHO NEVER OWNED THE BANK.",
+      "meme_flash": "At 18.2 s, 0.6 s: a cartoon fox in a hi-vis vest and lanyard holding a clipboard in a henhouse, chickens staring. Text: 'INSPECTOR'.",
+      "sound": "Room tone, a cheap chair creak; then the real clip's '¡Fuera!' chant cuts back in on the last frame so the loop restarts mid-chant."
+    }
+  ],
+  "flow_shots": [
+    {
+      "id": "desk-binoculars",
+      "for": "streamer box",
+      "describe": "The reporter in the attached image at a cheap cluttered desk, gaming headset over his hood, ring light flat on the front, RGB strip glowing behind. Locked webcam angle, slightly high and wide, soft compressed webcam image. He holds binoculars to his mask aimed at a monitor below camera, then slowly lowers them and leans in, very still. No speech, room tone only. 9:16."
+    },
+    {
+      "id": "desk-card",
+      "for": "end",
+      "describe": "Same desk and webcam framing as desk-binoculars, full frame. The reporter in the attached image sets the binoculars down, picks up a blank white index card and holds it steadily up to the webcam for two seconds. Monitor behind shows a night crowd. Locked camera. No speech, room tone and a chair creak only. 9:16."
+    },
+    {
+      "id": "crouch-in-crowd",
+      "for": "remade",
+      "describe": "Night street demonstration, huge chanting crowd, sodium-orange streetlight mixed with white phone torches, vertical phone footage with handheld micro-jitter and noisy shadows. The reporter in the attached image is crouched low between protesters' legs as if hiding in long grass, stick mic raised. A few metres away an anonymous man in a dark suit holds up a blank hand-painted placard; the crowd turns toward him. One continuous shot, no cuts. Ambience only: indistinct chanting, drums, whistles, no speech. Face of the suited man pixelated in post."
+    },
+    {
+      "id": "lifted-overhead",
+      "for": "remade",
+      "describe": "Same night demonstration and phone look. Start frame already shows the anonymous suited man aloft on the crowd's raised palms, blank placard still in his hands, legs pedalling in the air; the jeering, laughing crowd passes him away overhead like a carnival crowd-surf. The reporter in the attached image jogs alongside in the foreground, crouched, angling his stick mic up at him. Handheld running bob, one continuous shot. Ambience only, crowd roar and whistles, no speech. Face pixelated in post."
+    },
+    {
+      "id": "carried-into-dark",
+      "for": "remade",
+      "describe": "Low handheld POV in the night crowd: the suited man is carried away above heads into the dark until only his placard is visible, then gone. The reporter in the attached image, in the foreground, turns to the phone camera and gives one small solemn nod. One continuous shot, chanting fading into the distance, no speech."
+    },
+    {
+      "id": "species-card",
+      "for": "meme",
+      "describe": "A nature-encyclopedia style species card: grainy telephoto photo of the back of an anonymous man in a suit in a crowd, a red circle drawn round him, empty space for a Latin name and conservation status added in post."
+    },
+    {
+      "id": "fox-inspector",
+      "for": "meme",
+      "describe": "Simple flat cartoon of a fox wearing a hi-vis vest and lanyard, holding a clipboard, standing inside a henhouse while the hens stare at him. Space for a one-word caption added in post."
+    }
+  ]
+}

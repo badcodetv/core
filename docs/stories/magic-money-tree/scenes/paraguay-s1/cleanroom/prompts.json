@@ -1,0 +1,38 @@
+[
+  {
+    "id": "box-desk",
+    "ref": true,
+    "still": "Vertical 9:16 frame grabbed from a cheap laptop webcam. The reporter in the attached image sits at a cluttered cheap desk in a small, dark spare room, a gaming headset on his head with its boom mic near his chin. He leans slightly forward, shoulders hunched, the blank front of his head tilted down toward a monitor just below the camera, one hand resting on the desk beside a cheap ballpoint pen and a small notepad. A ring light directly behind the camera gives flat, shadowless front light; behind him a purple LED strip along a shelf and the cold blue glow of a second monitor. The camera sits slightly high and close, his head and shoulders off-centre. Soft, compressed webcam image, mild wide-angle distortion, noisy shadows, a slight white-balance mismatch between the warm ring light and the cold monitor. Real clutter: an energy-drink can, tangled cables, a crumpled takeaway bag. Every screen, label and page is blank, with no readable text or logos anywhere. Thanks.",
+    "video": "One continuous locked-off webcam shot; the camera never moves. [0-3s] The reporter leans in closer toward the monitor below the camera, head tilting as if reading something serious. [3-6s] He sits back a little, picks up the pen and writes a short note on the pad. [6-8s] He looks up and nods once, slowly, then holds still. Slight webcam flicker and compression. Audio: quiet room tone, a chair creak, pen scratching paper. Do not add speech, music, cuts, text or graphics. Do not morph his head, hands or the headset. Thanks."
+  },
+  {
+    "id": "scrum-carry",
+    "ref": true,
+    "still": "Vertical 9:16 frame from a phone video shot at night in the middle of a packed street demonstration. Sodium-orange streetlights overhead mixed with harsh white phone torches; blown highlights on the phone lights, crushed noisy blacks, a wide phone lens with slight edge distortion, the framing a little tilted. An anonymous man in a dark suit lies back on the raised palms of the crowd at head height, carried along like a carnival crowd-surf, clutching a blank cardboard sign to his chest; his face is turned up and away from the camera, lost in shadow. The reporter in the attached image walks right beside him in the crowd, arm extended, holding his stick mic up toward the suited man's head, his body upright and composed, his head angled attentively toward the man as if waiting for an answer. Around them laughing, jeering people with raised arms and phones held up, varied faces partly motion-blurred, the background crowd softer and out of focus. The sign and every surface are blank: no readable text, no logos. Thanks.",
+    "video": "From the start frame, one continuous handheld phone shot: the operator jogs alongside, so the picture bobs with each footstep and has small micro-jitter. [0-4s] The laughing, jeering crowd passes the suited man along on raised palms, carnival style, away down the street; the reporter jogs beside him, mic held up toward him. [4-8s] The reporter stops dead, mic still raised into empty air, while the man drifts on over the heads into the dark. Audio: drums, whistles, indistinct chanting, footsteps on tarmac. Do not add speech, music, cuts or text. Do not morph faces or hands. Thanks."
+  },
+  {
+    "id": "scrum-nod",
+    "ref": true,
+    "still": "Vertical 9:16 frame from a handheld phone video at night on a street packed with a demonstration: sodium-orange streetlight and white phone torches, noisy shadows, blown phone lights, a wide phone lens. The reporter in the attached image stands in the foreground, waist-up and slightly off-centre, his body three-quarters to the camera and his head turned back over his shoulder toward the far end of the street, his stick mic lowered to his chest, standing very still. Far behind him, small and out of focus, a man in a dark suit rides on the raised hands of the crowd toward the dark end of the street, his back to the camera. Cheering people fill the mid-ground, soft and motion-blurred, phones held up. No readable text, signs or logos anywhere. Thanks.",
+    "video": "One continuous handheld phone shot, the operator standing still, with only small arm micro-jitter. [0-2s] The reporter in the foreground turns his head and shoulders to face the camera square-on. [2-5s] He gives one slow, deep, grateful nod, head dipping and rising, then holds completely still. Behind him, out of focus, the suited man is carried away over the heads into the dark, and around 5s a blank cardboard placard drops from the crowd onto the road. Audio: crowd cheer swelling, whistles, drums, cardboard slapping tarmac. Do not add speech, music, cuts or text. Do not morph faces or hands. Thanks."
+  },
+  {
+    "id": "end-card",
+    "ref": true,
+    "still": "Vertical 9:16 frame grabbed from a cheap laptop webcam, full screen. A small, dark spare room with a cluttered cheap desk: a ring light right behind the camera giving flat, shadowless light, a purple LED strip and monitor glow behind. The reporter in the attached image sits square to the webcam, a gaming headset on his head, holding a plain blank white card up beside his head with one hand, the card tilted slightly toward the lens; his other hand rests on the desk, his head level and facing the lens with deadpan stillness. Over his shoulder a monitor shows a dim, blurry night crowd under orange streetlight, with no interface. Soft compressed webcam image, slightly high wide angle, noisy shadows. The card and every screen are completely blank: no writing, letters, numbers or logos. Thanks.",
+    "video": "One continuous locked-off webcam shot; the camera never moves. [0-2s] The reporter lifts the blank card a little closer to the webcam and holds it steady. [2-5s] He raises one finger of his other hand, taps the card once, firmly, and lowers the hand. [5-8s] He holds completely still, card up, head level toward the lens. The monitor behind keeps showing the dim crowd moving. Slight webcam flicker and compression. Audio: room tone and one chair creak only. Do not add speech, music, cuts, text or writing on the card. Do not morph his hands, head or the card. Thanks."
+  },
+  {
+    "id": "meme-species",
+    "ref": false,
+    "still": "Vertical 9:16 image laid out like a page from an old nature field guide. The top two-thirds is a grainy, long-lens telephoto photograph taken at night: the back of an anonymous man in a dark suit standing in a dense crowd, seen from behind and slightly above, shoulders hunched, his head small and turned away, sodium-orange light, heavy noise and soft focus, like a rare animal photographed from a hide. A rough hand-drawn red marker circle loops around him. The bottom third is a plain, empty cream paper band with a thin dark border, completely blank: no letters, numbers or symbols anywhere in the image. Thanks.",
+    "video": ""
+  },
+  {
+    "id": "meme-lilo",
+    "ref": false,
+    "still": "Vertical 9:16 phone photo at night. An anonymous man in a dark suit lies flat on his back, completely relaxed, hands folded on his chest and ankles crossed, floating on a sea of raised open palms like a man on a lilo drifting out to sea. Seen from slightly below and from the side, near his shoes, so his head is small, tipped back and turned away from the camera into shadow. Sodium-orange streetlight and a few white phone torches above, noisy deep blacks, blown highlights on the lights, the crowd's hands and arms soft with motion blur, the mood cheerful and mocking. No signs, no text, no logos. Thanks.",
+    "video": ""
+  }
+]

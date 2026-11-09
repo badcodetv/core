@@ -1,0 +1,30 @@
+{
+ "story": "magic-money-tree",
+ "scene": "paraguay-presenter",
+ "prefix": "pp",
+ "title": "MFS Paraguay presenter",
+ "heading": "Money For Something <span class=\"tri\">▲</span> the Paraguay presenter",
+ "moodboard_intro": "The BadCode presenter for the Paraguay shorts: the Money For Something comic, now in the BadCode balaclava (white ring, red triangle over his left eye), gloves, no skin. Clean-room round: every design written by a separate writer from web research only. Tap This, Maybe or No; leave a note.",
+ "storyboard_intro": "",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/presenter",
+ "flow_project": "5b6e2aa0-7b29-408d-8b9c-a429cf1104ff",
+ "beats": [
+  {
+   "key": "r2",
+   "at": "r2",
+   "name": "Round 2: twelve different presenters",
+   "blurb": "Mask now matches Camping and Bank Robbery (thin ring tracing the face, small red triangle inside over his left eye; the mask strip was attached as a reference). Every one a different kind of TV presenter. Tap This / Maybe / No; leave a note."
+  },
+  {
+   "key": "presenter",
+   "at": "r1",
+   "name": "Round 1: first designs",
+   "blurb": "Pick his design: mask colour and cloth, suit, gloves (plain or with the logo), and the set."
+  }
+ ],
+ "existing": {},
+ "styles": {},
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/RzMfb1pvSD6QoHLQUpeo9W"
+ }
+}

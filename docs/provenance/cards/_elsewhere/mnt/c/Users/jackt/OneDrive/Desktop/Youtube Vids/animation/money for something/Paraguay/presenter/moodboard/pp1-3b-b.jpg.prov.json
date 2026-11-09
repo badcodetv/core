@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/presenter/moodboard/pp1-3b-b.jpg",
+ "made": "2026-11-09T13:59:43.031Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photorealistic 16:9 waist-up shot from a dated 1970s local TV den set, on slightly grainy colour film, the presenter's head large in the upper frame, the walls softening behind. Dark walnut panelling, brown-and-orange geometric wallpaper, a crammed bookshelf, an overflowing ashtray. A masked host leans out of a cracked oxblood leather armchair, pouring red wine from a heavy decanter into a glass he can never drink, head cocked at the camera. His olive moss-stitch wool balaclava covers his whole head as one unbroken knitted surface, slightly bobbled; a cream-white embroidered ring circles the face and a solid red felt triangle with rounded corners sits high inside it on the right side of the frame, at two o'clock. Black leather gloves each carry a small stitched patch of the same ring and triangle on the back, running into brown corduroy cuffs; a mustard roll-neck swallows the hood's neck. One warm table lamp lights him from frame left. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "eb8e8ee5-ec27-48e7-a77d-e74810ade405"
+}

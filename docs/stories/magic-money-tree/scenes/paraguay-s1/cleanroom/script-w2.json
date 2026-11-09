@@ -1,0 +1,98 @@
+{
+  "title": "Sir, Quick Question",
+  "engine": "The masked reporter is the earnest straight man: deadly polite, serious interview questions put to people too busy carrying a politician out of the square to answer; every gap where an answer should be is the joke.",
+  "voice_direction": "Southern English, flat local-news correspondent, unhurried and courteous even while jogging; never raises his voice, never laughs, every question asked as if it deserves a full answer. Slight breathlessness from running, nothing else gives away the chaos.",
+  "beats": [
+    {
+      "t": "0.0-6.0",
+      "part": "REAL",
+      "picture": "The real phone video, from frame one already mid-shove: night, packed crowd, the bald man in the dark jacket being pushed back and out, phones up, water flying. BadCode logo bug top-left. Top-right streamer box: the reporter at a cheap desk in a headset, lit by a ring light and monitor glow, leaning in to watch, then gravely writing something on a notepad and nodding once.",
+      "vo": "Three million savers. One bank. Gone overnight. So a politician turned up to help.",
+      "on_screen": "Big summary text: BANK DIES. POLITICIAN SHOWS UP. CROWD SAYS NO. / small credit bottom: Video: @Raulbogarin on X",
+      "meme_flash": "",
+      "sound": "Real clip audio up: '¡Fuera!' chant, whistles, 'Payo!' near the phone. A soft news-desk sting under the summary text."
+    },
+    {
+      "t": "6.0-9.0",
+      "part": "REMADE",
+      "picture": "HARD CUT. Vertical, handheld, night. A man in a suit with a pixelated face is being carried overhead on the crowd's raised palms, still clutching a hopeful sign (text added in post: I'M ONE OF YOU). The reporter jogs alongside, stick mic held up towards the pixelated face, perfectly composed.",
+      "vo": "Sir. Serious question. What's your plan for the pensioners?",
+      "on_screen": "Lower-third, over-official news style: FACE PIXELATED FOR LEGAL REASONS",
+      "meme_flash": "",
+      "sound": "Crowd roar, drums, whistles, footsteps on tarmac, mic cable rattle."
+    },
+    {
+      "t": "9.0-11.0",
+      "part": "REMADE",
+      "picture": "The pause. The suit floats on away over the heads, out of reach. The reporter stops running and stays exactly where he is, mic still held up into the empty air where the face was. He does not move.",
+      "vo": "",
+      "on_screen": "",
+      "meme_flash": "0.8 s: a grey old-computer error box: 'PENSIONER_PLAN.EXE IS NOT RESPONDING' with two buttons [WAIT] [WAIT]",
+      "sound": "Crowd ambience drops to a thin hiss for the pause; one lone whistle."
+    },
+    {
+      "t": "11.0-14.0",
+      "part": "REMADE",
+      "picture": "The reporter lowers the mic politely to a woman in the crowd who is busy passing the suited man's legs along overhead. Without looking at him and without stopping, she points one arm firmly at the dark end of the street.",
+      "vo": "Madam, sorry. Where's he going?",
+      "on_screen": "Arrow graphic along her pointing arm, labelled: OUT",
+      "meme_flash": "0.6 s: a cheap map pin graphic, 'YOU ARE HERE' crossed out, 'YOU ARE LEAVING' underneath",
+      "sound": "Chant swells again: indistinct, rhythmic. A tiny cartoon 'boing' as the arrow lands."
+    },
+    {
+      "t": "14.0-16.5",
+      "part": "REMADE",
+      "picture": "The reporter turns to the phone camera and gives one slow, grateful nod (the toddler nod), as if he has just been handed a thorough policy briefing. Behind him, far off, the sign drops out of the crowd onto the road.",
+      "vo": "Thank you. Very clear.",
+      "on_screen": "",
+      "meme_flash": "0.7 s: white bold text on black: SIR, THIS IS A BANK RUN",
+      "sound": "The sign slaps on tarmac. Crowd cheers."
+    },
+    {
+      "t": "16.5-19.5",
+      "part": "END",
+      "picture": "Same street, the reporter still facing camera, mic held to his own chest like an anchor signing off; behind him the crowd is already lifting a second identical pixelated suit, this one clutching a clipboard. Last frame matches the real clip's shove so it loops.",
+      "vo": "Small fix: bank owners don't get to inspect banks.",
+      "on_screen": "BANK OWNERS ≠ BANK INSPECTORS / underneath, smaller: Four days. Crowd 1, Suits 0.",
+      "meme_flash": "",
+      "sound": "The '¡Fuera!' chant returns on the cut, matching the real clip's opening so the loop is seamless."
+    }
+  ],
+  "flow_shots": [
+    {
+      "id": "box-desk",
+      "for": "streamer box",
+      "describe": "The reporter in the attached image sits at a cheap cluttered desk wearing a gaming headset, ring light flat on him, a purple LED strip and monitor glow behind. Locked webcam angle, slightly high and close, compressed soft webcam look. He leans in watching a screen, then picks up a pen and seriously writes a note, then nods once. No speech, room tone only. 9:16."
+    },
+    {
+      "id": "remade-carry",
+      "for": "remade",
+      "describe": "Night street demonstration, vertical phone footage, handheld with running footstep bob. A man in a dark suit, face kept anonymous, rides along on the raised palms of a jeering, laughing crowd, holding a blank placard. The reporter in the attached image jogs beside him holding a stick mic up towards him. Sodium streetlight and phone torches. One continuous shot, crowd sound and drums, no dialogue. Suit's face pixelated in post."
+    },
+    {
+      "id": "remade-pause",
+      "for": "remade",
+      "describe": "Same street, vertical phone footage. The reporter in the attached image stops still, mic held up into empty air, while the suited man on the crowd's raised hands drifts away over the heads into the dark. The reporter does not move at all. Camera holds, slight handheld drift. One continuous shot, crowd ambience, no speech."
+    },
+    {
+      "id": "remade-point",
+      "for": "remade",
+      "describe": "Same street, vertical phone footage, closer. A middle-aged woman in the crowd is busy passing a suited man's legs along overhead; the reporter in the attached image politely lowers his stick mic towards her. Without looking at him she points one arm firmly down the dark street. One continuous shot, crowd chanting indistinctly, no speech."
+    },
+    {
+      "id": "remade-nod",
+      "for": "remade",
+      "describe": "The reporter in the attached image turns to face the phone camera and gives one slow, grateful nod. Behind him, out of focus, a blank placard falls from the crowd onto the road. Vertical, handheld micro-jitter, night streetlight. One continuous shot, crowd cheer, no speech."
+    },
+    {
+      "id": "end-second-suit",
+      "for": "end",
+      "describe": "The reporter in the attached image stands facing the phone camera, mic held to his chest like a news anchor signing off. Behind him the crowd lifts a second anonymous suited man holding a clipboard up onto their raised palms and starts carrying him off. Vertical, handheld, night. One continuous shot, crowd chant, no speech. Face pixelated in post."
+    },
+    {
+      "id": "meme-floating-suit",
+      "for": "meme",
+      "describe": "A still: a lone suited man lying flat on a sea of raised palms at night, seen from slightly below, like a man on a lilo drifting out to sea; spare for a meme flash or the thumbnail. Face pixelated in post."
+    }
+  ]
+}

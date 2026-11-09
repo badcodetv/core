@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/Paraguay/presenter/moodboard/pp1-5a-a.jpg",
+ "made": "2026-11-09T14:02:46.473Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A photorealistic 16:9 frame from a cheap street-interview documentary, shot handheld on a shoulder camcorder with a slightly wide lens, the hard midday Asuncion sun the only light, short black shadows on hot pavement. A presenter wears a mustard-yellow chunky rib-knit wool balaclava over his whole head, the knit one continuous unbroken surface across the face, pilled and fuzzy, its neck tucked into a crumpled black suit jacket and a creased white shirt. A cream-white felt ring is stitched around the face area, and one small solid red felt triangle with rounded corners sits high inside it at two o'clock, on the right side of the image. In plain black leather gloves, cuffs over the wrists, he thrusts a huge grey foam-covered microphone at a bored middle-aged man in a sweat-stained polo holding a plastic shopping bag, who stares flatly past it. Behind them a bank's dented steel shutter is pulled down, blank and streaked with grime, a dusty motorbike at the kerb, background softly out of focus, framing off-centre. Thanks.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "b479b4f0-f8ef-40d0-81ea-9ec4dec6c52a"
+}
