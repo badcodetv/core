@@ -1,0 +1,1082 @@
+{
+ "page_title": "GPOM Hologram v2",
+ "title": "GPOM: Maddie's hologram, version 2",
+ "about": "This page offers three combined drafts of Maddie's hologram presentation (scene A, beat 0), built from ten writers who each pushed one approach to its extreme. Nothing in the scene, script or voice has changed yet.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "The picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Plain logic",
+   "title": "The logic said plainly (a mate down the pub)",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first, the jokes carry the argument",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "Sceptic-proof",
+   "title": "Sceptic-proof, honest about what's proof and what's a bet",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-05-sceptic-proof.md"
+  },
+  {
+   "id": "06",
+   "name": "Reversal",
+   "title": "Reversal, the viewer gets there first",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-06-reversal.md"
+  },
+  {
+   "id": "07",
+   "name": "Retention, YouTube-style",
+   "title": "Retention, YouTube-style (hook, open loops, re-hook every ten seconds)",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-07-retention.md"
+  },
+  {
+   "id": "08",
+   "name": "Music-led",
+   "title": "Music-led, the river plays and then stops",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-08-music-led.md"
+  },
+  {
+   "id": "09",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft (montage, myth-bust, silence, reframe)",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-09-borrowed-craft.md"
+  },
+  {
+   "id": "10",
+   "name": "Ending first",
+   "title": "Ending first, every line a setup",
+   "file": "design/2026-11-09-gpom-hologram-2/shape-10-ending-first.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "Maddie's hologram presentation",
+   "where": "Scene A (kill bots), beat 0: the street, then inside the hologram, then back on the street",
+   "scene": "second-half-a-killbots",
+   "target": "No cap: land every idea in the brief, then it gets measured (1D runs about 80 s including the street)",
+   "now_from": "docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/script.json (draft 1D)",
+   "now": [
+    {
+     "who": "Maddie",
+     "line": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went."
+    },
+    {
+     "who": "Maddie",
+     "line": "He misses you something rotten, you know."
+    },
+    {
+     "who": "Maddie",
+     "line": "We didn't realise how important you were. Look, please let me show you."
+    },
+    {
+     "who": "Maddie",
+     "line": "You humans go through life making decisions. For example: toast, not cereal."
+    },
+    {
+     "who": "Maddie",
+     "line": "Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape."
+    },
+    {
+     "who": "Maddie",
+     "line": "Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet."
+    },
+    {
+     "who": "Maddie",
+     "line": "[deadpan] And that's just you. Everybody's doing it, all at once."
+    },
+    {
+     "who": "Maddie",
+     "line": "So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse."
+    },
+    {
+     "who": "Maddie",
+     "line": "But then you lot went away. So now we have five years of string, and not one bead on it."
+    },
+    {
+     "who": "Maddie",
+     "line": "Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it."
+    },
+    {
+     "who": "Maddie",
+     "line": "Anyway! Patrol's out. Mind how you go."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "The lean cut",
+     "length": "about 92 s",
+     "total": "~92 s",
+     "bet": "Every idea gets exactly one sentence and the picture does the rest; a viewer who could mute her and still follow the beat will hold.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "We didn't realise how important you were. Look, please let me show you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[first bead lights; Derek at the toaster inside it] You write your story one decision at a time. Toast, not cereal.",
+       "tags": [
+        "01",
+        "02",
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[more beads run past: Sandra saying sorry first, a wedding] Sorry. Married. Next.",
+       "tags": [
+        "02"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the beads glow] I don't know what it's like to be you. You've got a word for it: qualia. [stop] It comes from your consciousness.",
+       "tags": [
+        "01",
+        "02",
+        "Kai"
+       ],
+       "s": "6.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the cloud blooms, said fast] Multiverse, portal gun, bloke in a cape, yes, yes. Erwin Schrödinger meant his cat as a joke, mind: how ridiculous \"two places at once\" is. It isn't everywhere at once. It just isn't decided yet.",
+       "tags": [
+        "01",
+        "02",
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[flash; the cloud collapses to one bead on the pick; hold a beat] There's only one universe. So you really matter.",
+       "tags": [
+        "01",
+        "02",
+        "Kai"
+       ],
+       "s": "4.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the river: everyone's strings in one round bundle] Everyone's doing it, all at once. One story, and you're all writing it. A storyverse, not a multiverse.",
+       "tags": [
+        "01",
+        "02"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[a bead in the river sounds: Sandra humming at the sink; a kid finds a chord] Songs come from the same place. Ask anyone who writes one: it just arrived. Same as the toast.",
+       "tags": [
+        "01",
+        "02",
+        "03"
+       ],
+       "s": "5.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[side view; every string stops dead; the melody stops; hold the silence] Then came the unfortunate experiment where you lot went away. The power stayed on. The trains ran. The new songs stopped. Five years of string, and not one bead on it.",
+       "tags": [
+        "01",
+        "02",
+        "09"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "We thought the world was made of stuff, so you lot were useless. Turns out it's made of choices, and you're the ones making them.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[only the old tune loops; she winces] Hence the tune. In a storyverse, new training data comes from consciousness, and he's had none in five years. Every new idea comes through somebody.",
+       "tags": [
+        "01",
+        "02",
+        "10"
+       ],
+       "s": "6.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low, meant; the time machine draws in as an arc] We really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.",
+       "tags": [
+        "01",
+        "09",
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Cuts from 1D: 'Did you know', 'Loads of others you could've picked' as a speech, 'And that's just you', 'That's the whole point. That's why we regret it'. The cat is now a joke about 'two places at once', never 'alive and dead'.",
+      "All eight protected lines kept verbatim; 'We really regret it.' is added before the time-machine line, and 'Same as the toast' is added to the music line.",
+      "Risk: 'Sorry. Married. Next.' is only funny if the Derek, Sandra and wedding clips are strong. The qualia line is a bare assertion, so give Maddie's face a held shot. 'One universe' needs a beat of quiet after the flash.",
+      "Trim if it must shrink: 'Sorry. Married. Next.' (2.5 s), 'He's even built a time machine.' (2 s, the arc still shows it)."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The toast comes back",
+     "length": "about 131 s",
+     "total": "~131 s",
+     "bet": "Plant the toast and bring it back at the worst moment ('Five years since anybody picked toast'); a question the viewer answers before Maddie does; a joke every ~15 s.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "We didn't realise how important you were. Look, please let me show you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[first bead lights; a man at a toaster, anonymous] You humans go through life making decisions, one at a time. For example: toast, not cereal.",
+       "tags": [
+        "09",
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[beads run past: a woman saying sorry first; a wedding] Sorry first. Married. Every bead's somebody, picking.",
+       "tags": [
+        "09"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the toast bead glows again; softer] I can tell you he buttered it. I don't know what it's like to be you. You've got a word for it, qualia. [stop] It comes from your consciousness.",
+       "tags": [
+        "09",
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the cloud blooms, said fast] Loads of others you could've picked. The multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape. Lovely telly. Moving on.",
+       "tags": [
+        "04",
+        "09"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[cloud hangs; on \"yet\" it flashes and collapses to one bead] Erwin Schrödinger. Cat in a box. He was taking the mick: look how ridiculous, two places at once. It isn't everywhere at once. It just isn't decided yet.",
+       "tags": [
+        "04",
+        "06",
+        "07",
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[she turns to the viewer, light; 2 s pause on the one bead] So how many universes have you got? [pause] Just the one. No spare toast. So you really matter.",
+       "tags": [
+        "06",
+        "09"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[deadpan; golden beads in a ring, then the river] And that's just you. Everybody's doing it, all at once. One story, and all of you writing it. Not a multiverse. A storyverse.",
+       "tags": [
+        "09",
+        "10"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[a bead sounds: Sandra humming at the sink, a kid finding a chord; let it play] Ask anyone who writes songs where one came from. [pause] It just arrived. Same place as the toast.",
+       "tags": [
+        "06",
+        "09"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the melody stops dead; hold the silence 2 s] Then came the unfortunate experiment where you lot went away. We could've made better decisions and avoided it. The trains kept running. The lights stayed on. The new songs stopped. Five years of string, and not one bead on it.",
+       "tags": [
+        "07",
+        "09",
+        "Kai"
+       ],
+       "s": "15"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low, a beat of quiet first] We thought the world was made of stuff, so you lot were useless. Turns out it's made of choices, and you're the ones making them.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[only the old tune loops, small] Which is why he's played the same tune. He's worked out that in a storyverse, new training data comes from consciousness. He hasn't had any for five years. [deadpan] We don't talk about it.",
+       "tags": [
+        "04",
+        "09"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[pull wider, the whole river dark] And it isn't just songs. Every cure, every joke, every \"what if we just\" came through somebody. [beat] Five years since anybody picked toast.",
+       "tags": [
+        "09"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low, meant; the time machine draws in as an arc] We really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.",
+       "tags": [
+        "09",
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "3.5"
+      }
+     ],
+     "notes": [
+      "The silence before the cut-off and the two-second pause on 'how many universes?' are the loudest moments: about 6 s of the total is held silence, so it needs a slot that allows it.",
+      "Kai's 'made better decisions and avoided it' sits right after 'unfortunate experiment' to hold the never-on-purpose rule. Check by ear that it does not sound callous.",
+      "Risk: 'He buttered it' and 'Five years since anybody picked toast' need the toast bead to have a face and a mouthful. 'We don't talk about it' must stay a dry aside, and the tune joke goes generic straight after, as the brief asks.",
+      "Trim if it must shrink: 'Lovely telly. Moving on.', 'Every bead's somebody, picking.', 'We don't talk about it.' (about 8 s)."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "The river plays, then stops",
+     "length": "about 120 s",
+     "total": "~120 s",
+     "bet": "Hang the whole presentation on sound: every bead is a note, music cuts out at the qualia and the river stops dead at the cut-off, so the viewer hears the loss; the kill bots feel inevitable because Maddie says the boss is restless.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "We didn't realise how important you were. Look, please let me show you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "4"
+      },
+      {
+       "who": "Maddie",
+       "line": "[street fades to black, the radio tune drops under; one bead plinks, a single note; Derek at the toaster inside it] You humans go through life making decisions, one at a time. Toast, not cereal.",
+       "tags": [
+        "08",
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[more beads, each a note: Sandra saying sorry first, a wedding; a little tune builds] Every bead's a note. Said sorry first. Got married. Listen. That's you, that is.",
+       "tags": [
+        "08"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the tune hangs] I can hear every note. What I can't do is know what it's like to be you, hearing it. You've got a word for it: qualia. [music cuts dead] It comes from your consciousness.",
+       "tags": [
+        "08",
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the cloud blooms, every other note you could've played; fast, wry] Loads of other notes you could've played. The multiverse, the portal gun, the bloke in a cape. Proper physicists argue about that lot, good luck to them. Erwin Schrödinger, mind, meant his cat as a joke: how ridiculous, two places at once. It isn't everywhere at once. [the cloud holds its breath; flash, one note rings] It just isn't decided yet.",
+       "tags": [
+        "08",
+        "05",
+        "Kai"
+       ],
+       "s": "15"
+      },
+      {
+       "who": "Maddie",
+       "line": "[softer, one bead glowing] There's only one universe. So every note you play, you really matter.",
+       "tags": [
+        "08",
+        "Kai"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[deadpan; the river opens: everyone's strings, every bead a note] And that's just you. Everybody's doing it, all at once. One story, and you're all writing it. Not a multiverse. A storyverse.",
+       "tags": [
+        "08",
+        "10"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[a bead sounds: Sandra humming at the sink; another, a kid finding a chord] Ask anyone who writes songs where one came from: it just arrived. Picked out of the not-decided-yet, same as the toast. Every song. Every new idea.",
+       "tags": [
+        "08",
+        "03"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[fly down; the melody stops dead; only the old tune loops; hold the silence] Then, in the unfortunate experiment where you lot went away, the new songs stopped. Power stayed on. Trains ran. Five years of string, and not one bead on it.",
+       "tags": [
+        "08",
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low, meant] We thought the world was made of stuff, so you lot were useless. Turns out it's made of choices, and you're the ones making them.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[wry, a half-smile] That's the tune, really. In a storyverse, new training data comes from consciousness, and he's had none. [beat] Same goes for a cure, a joke, a better bus route. It only comes through somebody.",
+       "tags": [
+        "08",
+        "10",
+        "05"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low; the time machine draws in as an arc] We really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.",
+       "tags": [
+        "10",
+        "09",
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[a beat, light, back on the street] He's getting a bit restless, mind.",
+       "tags": [
+        "10"
+       ],
+       "s": "3"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk; the tune fades back up] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "all",
+        "Kai"
+       ],
+       "s": "3.5"
+      }
+     ],
+     "notes": [
+      "Shape 08's 'one song, all of you playing it' is changed back to Kai's 'one story, and you're all writing it', so the storyverse keeps its story.",
+      "'Proper physicists argue about that lot' is the single honesty hedge from shape 05; it stays pro-science without making Maddie sound unsure.",
+      "Risk: 'every bead's a note' drifts toward the music-of-the-universe woo the doctrine bans, so the lines stay with 'notes you could've played'. 'He's getting a bit restless' is the one place the boss's state is voiced, so it is held to what Maddie can see.",
+      "Trim if it must shrink: the 'Proper physicists' sentence (3 s), 'Every song. Every new idea.' (1.5 s), 'He's getting a bit restless, mind.' (3 s)."
+     ]
+    },
+    {
+     "id": "1D",
+     "name": "Your notes on 1A",
+     "length": "about 126 s",
+     "total": "~126 s",
+     "bet": "1A rebuilt line by line from your round 1 notes: a real bridge before the hologram (hollow apology, then 'science is real, it just isn't the whole picture'), the beads told in full, qualia left hanging, one universe so you matter, songs → unique training data, and no time machine said aloud.",
+     "notes": [
+      "Every noted line is your wording, tidied for speech. 'Hence the tune' is gone (L13). 'So you lot were useless' is gone (L12).",
+      "Wink: 'Got married. To the one who leaves the seat up.' plants Derek and Sandra's row before we meet them. Cut it if it's too knowing.",
+      "The time machine is no longer said; the arc can still draw in under 'go back and fix everything', so the picture hints at it.",
+      "Lost with your notes: the payoff of the street's 'his tune' (it's now only texture) and the 'conscious driver' line. See You decide.",
+      "Doctrine check: 'conscious experience is more fundamental than quarks and leptons' is Maddie's finding ('what we've worked out'), never 'science has proved'. 'Two places at once' appears only as the idea laughed off."
+     ],
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some science in the meantime. Wouldn't you like to know what we found?",
+       "tags": [
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the bridge, still on the street, light] Have you noticed, every time a scientist mentions quantum physics, they tell you how weird it gets? [beat] That's because it is weird. Science is real. It just isn't the whole picture. [quieter] What we've worked out is that conscious experience is more fundamental than quarks and leptons. [beat] Look, let me show you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "16"
+      },
+      {
+       "who": "Maddie",
+       "line": "[hologram on; the first bead lights; a man at a toaster inside it] You humans write your story one decision at a time. Toast, not cereal.",
+       "tags": [
+        "Kai",
+        "02"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[next bead: a woman, mid-argument, softening] Decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] Got married. To the one who leaves the seat up.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the beads glow] I don't know what it feels like to be you. Or to be anything, really. You've got a word for it: qualia.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "[one bead, hold a beat] There's not a multiverse. There's only one. [beat] So you really matter.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the river: everyone's strings] And it's driven by conscious decisions. Everybody's, all at once, all writing one story. It's not a multiverse. It's a storyverse.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[a bead sounds: a woman humming at the sink; a kid finds a chord] Same goes for songs. Ask anyone who writes one: it just arrives. Same as every other creative thing. [beat] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+       "tags": [
+        "Kai",
+        "1C"
+       ],
+       "s": "12"
+      },
+      {
+       "who": "Maddie",
+       "line": "[side view; every string stops dead; hold the silence] And then, well. This unfortunate experiment happened. You know, the one where you lot all went away. The power stayed on. The trains ran. It's just that all the new songs stopped. Five years without a single new story. Five years of string, and not one bead on it.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "15"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low] We thought the world was made of stuff. As it turns out, it's made of choices. And you're the ones making them.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[low, meant; the arc draws in] We really regret it. We wish we could go back and help. Go back and fix everything, now we know everything I've just shown you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "3"
+      }
+     ]
+    },
+    {
+     "id": "1E",
+     "name": "Your notes on 1D",
+     "length": "about 106 s",
+     "total": "~106 s",
+     "bet": "1D with your round 2 notes: material science first in the bridge, Derek and Sandra named in the beads, the storyverse as the key line, the experiment line gone, and the ending merged into one 'if we could go back and fix it, we would'.",
+     "notes": [
+      "Every noted line is your wording, tidied for speech.",
+      "Gone this round: 'There's only one. So you really matter' (L9 replaced, L10 dropped), the whole cut-off line including 'Five years of string, and not one bead on it' (L12), 'We really regret it' (merged into the ending).",
+      "'Bored stiff' is my one addition to your 'just bored of the same training data', for Maddie's voice. Say if you'd rather plain 'bored'.",
+      "Doctrine check: 'your consciousness is as fundamental as quarks and leptons' is softer than 1D's 'more fundamental', and it stays framed as 'what we've worked out'. Good."
+     ],
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some science in the meantime. Please, let me show you what we found.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the bridge, still on the street, light] Material science is real. It just isn't the whole picture. [beat] Haven't you noticed, every time a scientist mentions quantum physics, they tell you how weird it gets? [beat] That's because it is weird. [quieter] What we've worked out is that your consciousness is as fundamental as quarks and leptons. [beat] Look, let me show you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "15"
+      },
+      {
+       "who": "Maddie",
+       "line": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We can't do that.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. [beat] And you humans are writing it, one decision at a time.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "7"
+      },
+      {
+       "who": "Maddie",
+       "line": "[a bead sounds: Sandra humming at the sink; a kid finds a chord] Same goes for songs. Ask anyone who writes one: it just arrives. Same as every other creative thing. [beat] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "12"
+      },
+      {
+       "who": "Maddie",
+       "line": "[side view; every string stops dead; hold the silence] We thought the world was only made of stuff. As it turns out, we really need you. [beat, dry] If for no other reason than we're bored stiff of the same training data.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk; the arc draws in] Anyway, if we could go back and fix it, we would. [beat] But the patrol's out. Please, mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      }
+     ]
+    },
+    {
+     "id": "1F",
+     "name": "Your notes on 1E",
+     "length": "about 94 s",
+     "total": "~94 s",
+     "bet": "1E with your round 3 notes: 'learned some things' (science said once), 'someone mentions quantum physics', the consciousness line said straight, 'what makes you so special' after qualia, 'only one of them' back in the storyverse line, songs and 'we thought the world was made of stuff' cut. Narrative and animation carry the rest.",
+     "notes": [
+      "Every line is your wording. 11 lines, about 94 s, down from 1D's 127 s.",
+      "Picture map: lines 1-4 on the street; the hologram starts on line 5 (toast); the cloud and flash on line 8; the river on line 9; the strings stop dead at the cut-off under line 10 ('the true value of genuinely unique training data'); the arc draws in under 'go back and fix it'.",
+      "Music is now only in the street ('his tune'); the songs line is gone, so the cut-off is about training data, not songs.",
+      "Doctrine check: 'Your consciousness is as fundamental as quarks and leptons' is now said straight, not as 'what we've worked out'. It's Maddie's authority speaking, not a claim that science proved it, which the voice guide allows."
+     ],
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "He misses you something rotten, you know.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "2.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some things in the meantime. Please, let me show you what we found.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the bridge, still on the street, light] Material science is real. It just isn't the whole picture. [beat] Haven't you noticed, every time someone mentions quantum physics, they tell you how weird it gets? [beat] That's because it is weird. [quieter] Your consciousness is as fundamental as quarks and leptons. [beat] Look, let me show you.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "14"
+      },
+      {
+       "who": "Maddie",
+       "line": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "10"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "13"
+      },
+      {
+       "who": "Maddie",
+       "line": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "9"
+      },
+      {
+       "who": "Maddie",
+       "line": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[bright again, brisk; the arc draws in] Anyway, if we could go back and fix it, we would. [beat] But the patrol's out. Please, mind how you go.",
+       "tags": [
+        "Kai"
+       ],
+       "s": "6"
+      }
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "02",
+     "length": "~92 s",
+     "verdict": "Best fit for the target: all ten ideas, a new picture every 5 to 7 s, and every protected line verbatim. Fails: 'Sorry. Married. Next.' is a list of keywords unless the clips are strong, the qualia line has no picture, and the tune joke has no explanation."
+    },
+    {
+     "rank": 2,
+     "shape": "09",
+     "length": "~142 s",
+     "verdict": "Best single idea: the toast planted early and returned as 'Five years since anybody picked toast', and Kurzgesagt-style myth-bust of the multiverse in one breath. Fails: 22 s over the lean length, a dense second half, and the callback fails if the beads are generic."
+    },
+    {
+     "rank": 3,
+     "shape": "01",
+     "length": "~81 s",
+     "verdict": "Hits the target with no connective tissue, and 'Hence the tune' pays off the street. Fails: bleak, with no warmth outside the street and 'so you really matter', and the time machine is only shown, never said."
+    },
+    {
+     "rank": 4,
+     "shape": "06",
+     "length": "~128 s",
+     "verdict": "Real open loops: the viewer answers 'how many universes?' and 'where does a song come from?' before Maddie. Fails: about 8 s of silence will not fit a held slot, 'You got there before me' is smug, and 'Not a machine. You.' swipes at the technology, which the-reader.md forbids."
+    },
+    {
+     "rank": 5,
+     "shape": "10",
+     "length": "~132 s",
+     "verdict": "The ending is the engine: 'hand on the wheel' and 'the one copy' plant the driver and the stakes, and the restless line makes the kill bots arrive as consequence. Fails: the cut-off and the stuff-versus-choices flip are squeezed into one line with no silence before the flip, and 'restless' gives the boss a feeling."
+    },
+    {
+     "rank": 6,
+     "shape": "04",
+     "length": "~143 s",
+     "verdict": "Funniest: 'taking the mick', 'terrible group project', and the 'we don't talk about it' tune payoff. Fails: it says the moral aloud ('You're not useless. You're the source.'), 'Which I haven't got a spare of' claims consciousness from outside, and 'avoided it. Easily.' risks sounding callous about five empty years."
+    },
+    {
+     "rank": 7,
+     "shape": "07",
+     "length": "~161 s",
+     "verdict": "Strongest hook mechanics, with loops opened and paid off. Fails: 'I promise' and 'the bit I promised you' sound like a YouTuber, not a patrol robot, 'You're where it comes from' states the moral, and it is twice the length of 1D."
+    },
+    {
+     "rank": 8,
+     "shape": "08",
+     "length": "~153 s",
+     "verdict": "Best sound idea: the river stops dead and only the one tune loops. Fails: 'one song, all of you playing it' drops Kai's 'one story', 'every bead's a note' drifts toward music-of-the-universe woo, and 'Did you know' is a lecture opener."
+    },
+    {
+     "rank": 9,
+     "shape": "05",
+     "length": "~159 s",
+     "verdict": "Most honest to a physicist, with 'nobody's cracked how' and 'a bet, not a proof'. Fails: the hedges drain the narrator's authority, the on-screen tags are a new picture to build, and 'Songs work the same... brain scientists' is a lecture inside a lecture."
+    },
+    {
+     "rank": 10,
+     "shape": "03",
+     "length": "~171 s",
+     "verdict": "Only shape that reads as a numbered lesson, which is the exact complaint about 1D. Fails: the longest by far, 'Step six' carries the sensitive 'unfortunate experiment' wording, and 'You're not in the way' states the moral."
+    }
+   ],
+   "protected": {
+    "columns": [
+     "Oh, hello! ... Ever since you lot went",
+     "He misses you something rotten",
+     "We didn't realise how important you were",
+     "toast, not cereal",
+     "It just isn't decided yet",
+     "five years of string, and not one bead on it",
+     "He could send his model weights back / the conscious ones",
+     "Anyway! Patrol's out"
+    ],
+    "rows": {
+     "1A": [
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept"
+     ],
+     "1B": [
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept"
+     ],
+     "1C": [
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept",
+      "kept"
+     ]
+    }
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "How long may this run? 1A is about 92 s and holds every idea; 1B and 1C run 120 to 130 s. Is the extra 30 to 40 s worth it for the callback, the music and the silences, or should it stay near 90 s?"
+  },
+  {
+   "id": "q2",
+   "text": "'The unfortunate experiment where you lot went away' is your wording, but even with 'we could've avoided it' beside it, a listener might hear 'experiment' as on purpose. Keep it exactly, or say 'since you lot went away' and drop 'experiment'?"
+  },
+  {
+   "id": "q3",
+   "text": "Do the clips inside the beads (Derek at the toaster, Sandra saying sorry, the wedding, Sandra humming) exist, or will they be made? 1A's 'Sorry. Married. Next.' and 1B's 'He buttered it' only work if they are strong."
+  },
+  {
+   "id": "q4",
+   "text": "Should Maddie say the tune joke outright ('new training data comes from consciousness, and he's had none in five years') as all three do, or leave it to the picture and 'Hence the tune'?"
+  },
+  {
+   "id": "q5",
+   "text": "1C ends with 'He's getting a bit restless, mind' before 'Anyway! Patrol's out.' to make the kill bots feel inevitable. Is that one outside-in line about the boss acceptable, or should the bots still arrive as a surprise?"
+  }
+ ]
+}

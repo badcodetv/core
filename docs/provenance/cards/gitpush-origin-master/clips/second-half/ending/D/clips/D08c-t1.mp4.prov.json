@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D08c-t1.mp4",
+ "made": "2026-11-09T20:06:15+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D08c-r14-b.jpg",
+ "why": "D round 15: Kai picked D08c b; Sandra speaks her d3-14 line (to be lip-synced with LatentSync)",
+ "source_id": "32142436-1296-47e6-bf98-ce354e034229",
+ "prompt": "One continuous shot, the camera holds still. The woman in the cream polo neck looks at the man, uneasy, and speaks quietly, hesitating halfway: I don't like the idea of... it feels like dying. She swallows and her eyes drop for a moment, then come back up to him. The man on the left stays still, listening. The small robot behind them waits, its orange lamp slowly turning. No cuts.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D08c-r14-b.jpg"
+ },
+ "settings": {
+  "durationSeconds": "8",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "bc32c6f1-652e-4330-a59b-0d6bb1d0d6a1"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-c.jpg",
+ "made": "2026-11-09T20:42:10.540Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Keep just his face and hair from the provided photo; everything else is new. Early sunlight pours low and golden through a net-curtained kitchen window. He wears a faded grey t-shirt and stands in the centre, a slice of bread in one hand, the other paused above a cereal box, half smiling at his own dithering. Warm amber light, soft brown shadows, the faded colours of an old 1990s photo print. Simple tiled wall behind him.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "d5755616-1dd1-4527-963a-58b7d76d7e95"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/06-a.jpg",
+ "made": "2026-11-09T20:36:54.247Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From the stern deck of an overloaded Mersey ferry, a crowd of adult silhouettes at the rail in coats with bags, warm deck lights on their backs. Across black water, the Liverpool docks: a row of giant container cranes, booms lifting upright like necks rising, sparks showering where one has pulled a leg off its rail. Behind the port a fuel depot erupts in a dome of orange light that streaks across the water. 35mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "31c766a6-e32f-4e2c-92a0-c0e8839d4589"
+}

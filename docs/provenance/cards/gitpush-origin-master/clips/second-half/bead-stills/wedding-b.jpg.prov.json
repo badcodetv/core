@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-b.jpg",
+ "made": "2026-11-09T20:48:08.688Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A brand-new picture using only the man's face and hair from the provided photo, a few years younger and overjoyed. Medium close shot outside a modest registry office: he is centred in an ill-fitting navy suit with a carnation, grinning helplessly at his bride, who stands nearest the camera with her back to us, brown hair pinned up with a small white flower. Coloured paper confetti drifts between them. Soft grey English daylight, plain brick behind, natural colour, 35mm grain, unposed and caught in the moment. No lettering anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "d0137ad7-5fa7-4acb-8fd5-85087bed418a"
+}

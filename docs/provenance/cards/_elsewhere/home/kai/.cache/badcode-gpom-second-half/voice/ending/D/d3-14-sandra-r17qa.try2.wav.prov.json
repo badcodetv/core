@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-14-sandra-r17qa.try2.wav",
+ "made": "2026-11-09T21:06:42+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I don't like the idea of... it feels like dying.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nSandra, a working-class woman from Bolton, Lancashire in her fifties, married to Derek for thirty years.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: quiet and frightened, no sarcasm; 'I don't like the idea of...' hesitant, she can't quite say it; a pause; 'it feels like dying.' small, almost a whisper, the jeopardy real.\nStyle: no sarcasm, no jab: frightened and uneasy, blurting it out quietly before she loses her nerve; close to the microphone.\nPace: quick and nervous; I don't like the idea of comes out fast, in about one second, then she breaks off for a full second; it feels like dying also quick, about one second, the last word falling away.\nAccent: Northern English, as heard in Lancashire, around Bolton. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the wife in a British sitcom row that the whole street can hear.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-14-sandra-r17qa.md"
+ },
+ "settings": {
+  "voice": "Autonoe",
+  "temperature": 1,
+  "channels": 2
+ }
+}

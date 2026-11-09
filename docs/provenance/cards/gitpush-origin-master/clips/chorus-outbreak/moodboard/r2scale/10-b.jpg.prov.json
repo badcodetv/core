@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/10-b.jpg",
+ "made": "2026-11-09T20:36:54.321Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "The head of a 1990s Midlands cul-de-sac of semi-detached houses: a streetlight, wheelie bins, and a car on a driveway with its door open, interior light on and driver's seat empty. Small adults in dressing gowns stand on their front lawns, all facing the same way. Over the fields beyond the last rooftops stand Ratcliffe-on-Soar's cooling towers with red warning lamps, and a huge orange fireball climbs out of the centre tower into the cloud. 35mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "46863414-6f72-422d-b2b9-0624adedb395"
+}

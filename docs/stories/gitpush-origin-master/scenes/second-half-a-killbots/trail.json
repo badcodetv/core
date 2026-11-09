@@ -544,5 +544,73 @@
    "Kai: re-edit around Sandra (LatentSync not good on her)",
    "Kai: the cat line ends 'It just isn't decided yet.'"
   ]
+ },
+ {
+  "at": "2026-11-09T19:58:54+00:00",
+  "stage": "dialogue",
+  "round": 4,
+  "url": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+  "what": "dialogue options: hologram version 2 (Kai's music/consciousness brief, 3 drafts 1A-1C)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-09-gpom-hologram-2/options.json design/2026-11-09-gpom-hologram-2.html"
+ },
+ {
+  "at": "2026-11-09T20:13:38+00:00",
+  "stage": "dialogue",
+  "round": 5,
+  "url": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+  "what": "hologram v2 round 1: Kai's 12 line notes on 1A answered; draft 1D added",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-09-gpom-hologram-2/options.json design/2026-11-09-gpom-hologram-2.html --notes design/2026-11-09-gpom-hologram-2/notes-r1.json"
+ },
+ {
+  "at": "2026-11-09T20:21:47+00:00",
+  "stage": "dialogue",
+  "round": 6,
+  "url": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+  "what": "hologram v2 round 2: Kai's 10 notes on 1D answered; draft 1E added",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-09-gpom-hologram-2/options.json design/2026-11-09-gpom-hologram-2.html --notes design/2026-11-09-gpom-hologram-2/notes-r1.json"
+ },
+ {
+  "at": "2026-11-09T20:28:17+00:00",
+  "stage": "dialogue",
+  "round": 7,
+  "url": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+  "what": "hologram v2 round 3: Kai's 6 notes on 1E answered; draft 1F added",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-09-gpom-hologram-2/options.json design/2026-11-09-gpom-hologram-2.html --notes design/2026-11-09-gpom-hologram-2/notes-r1.json"
+ },
+ {
+  "at": "2026-11-09T20:30:47+00:00",
+  "stage": "dialogue",
+  "round": 7,
+  "url": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+  "what": "hologram v2: 1F locked",
+  "decided": [
+   "perfect Claude this is great I love it I think lock it let's go"
+  ]
+ },
+ {
+  "at": "2026-11-09T20:51:40+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/5Qo1DsorPu4AG3dGuitoZy",
+  "what": "bead stills for hologram 1F: Derek at the toaster, Sandra says sorry, the wedding (4 options each)",
+  "rebuild": "python3 scripts/scene/build-picks.py design/2026-11-09-gpom-hologram-2/bead-stills/picks.json design/2026-11-09-gpom-hologram-2/bead-stills/bead-stills-picks.html"
+ },
+ {
+  "at": "2026-11-09T20:53:19+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/5Qo1DsorPu4AG3dGuitoZy",
+  "what": "bead stills picked: derek-a, sandra-a, wedding-a",
+  "decided": [
+   "picked those (derek a, sandra a, wedding a)"
+  ]
+ },
+ {
+  "at": "2026-11-09T21:40:36+00:00",
+  "stage": "timeline",
+  "round": 22,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 22: dialogue 1F voiced, hologram 1F with Kai's bead stills (derek-a, sandra-a, wedding-a), b01/b02 and f07b on the street; 3:20",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d20 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
  }
 ]

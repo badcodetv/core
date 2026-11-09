@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D11b-t2b.mp4",
+ "made": "2026-11-09T22:07:33+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix18/D11b-r18-b.jpg",
+ "why": "D round 19 (Kai at944: 'she needs to be clean Maddy, because she's in the clean room now'; still pick D11b-r18 b): the lady's hands with clean Maddie",
+ "source_id": "58ebe20a-e3ba-4c97-b249-5d145fbb9aa2",
+ "prompt": "A locked-off close shot that never moves. The old woman's hands rest folded on the knitted patchwork blanket in her lap; over a few seconds her fingers tighten very slightly around each other and one thumb strokes the back of her other hand, then settles. Beside her the spotless white robot sits completely still, its amber lamp glowing steadily, never blinking. Her white suit sleeves rise gently with her breathing. Calm, quiet, no cuts, no music.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix18/D11b-r18-b.jpg"
+ },
+ "settings": {
+  "durationSeconds": "6",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "25b3c258-b5b9-41d8-a1f2-c700e5f18a91"
+ }
+}

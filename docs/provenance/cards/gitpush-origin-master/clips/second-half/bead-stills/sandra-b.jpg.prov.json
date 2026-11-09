@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-b.jpg",
+ "made": "2026-11-09T20:44:44.409Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Take only her face and hair from the provided photo for a new picture, with the opposite feeling: the fury is gone. Big close-up of her face filling the centre of the square, eyes wet, mouth just opening on the word sorry, jaw unclenched, brows lifted and soft, a strand of hair loose. Soft overcast window light from the side, the background a plain blurred grey wall. Real skin with lines and freckles, unretouched, fine 35mm grain, muted natural colour.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "80804585-2394-48c5-9a68-ccb42f2ea0cc"
+}

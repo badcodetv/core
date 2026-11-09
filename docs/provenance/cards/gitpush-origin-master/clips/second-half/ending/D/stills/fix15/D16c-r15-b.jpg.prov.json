@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D16c-r15-b.jpg",
+ "made": "2026-11-09T20:01:04.168Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Take every person out of this room. Each chair is left empty exactly where it stands, with whatever its owner brought still on it: the patchwork blanket, the knitted throws, the mugs on the floor, a few limp white suits draped over seats as if their wearers simply vanished. The small spotless robot stays where it is, the same small size, orange lamp lit. The chair lights still glow. Same room, same chair layout, same cables and hub, same viewpoint and cold white light; no clothing heaped on the open floor.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r15s-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r15s-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a34647a5-3754-4e3c-bcec-a65a604da9ab"
+}

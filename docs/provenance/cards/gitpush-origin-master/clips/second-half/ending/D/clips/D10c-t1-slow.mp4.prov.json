@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow.mp4",
+ "made": "2026-11-09T20:26:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1.mp4",
+ "why": "D round 16: one unbroken seated shot under the end of the vow and the silent 'they sit' (~12.4 s)",
+ "prompt": "setpts=1.3*PTS,fps=24"
+}

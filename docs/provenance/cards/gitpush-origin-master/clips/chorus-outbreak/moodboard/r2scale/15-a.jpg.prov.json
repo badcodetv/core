@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/15-a.jpg",
+ "made": "2026-11-09T20:36:54.387Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Through the curved edge of a space-station window: Great Britain and Ireland below, amber city clusters joined by thin threads of motorway light, a faint green aurora over the thin blue atmosphere line. Across the Midlands and the South the clusters are going dark in a ragged wave, while London is still lit. Over the dark patches, small white points swell into orange blooms under the cloud. Long lens. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "f2fec28b-4670-475a-8dc1-d2e2558fd8ef"
+}

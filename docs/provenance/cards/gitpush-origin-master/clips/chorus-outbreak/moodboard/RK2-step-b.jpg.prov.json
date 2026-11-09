@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/RK2-step-b.jpg",
+ "made": "2026-11-09T20:07:27.562Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the giant steel crane's pose: its nearest leg is now lifted high off the motorway mid-step, the huge wheeled foot hanging in the air above the stopped cars, its knee joint bent, chunks of torn tarmac and dust pouring down from the raised foot, the other legs still planted. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition. No writing anywhere in the frame.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/flow-ref/ob-RK1-e.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/flow-ref/ob-RK1-e.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 3
+ },
+ "source_id": "c167456c-9185-466d-ae38-6d75d1dc0a5d"
+}

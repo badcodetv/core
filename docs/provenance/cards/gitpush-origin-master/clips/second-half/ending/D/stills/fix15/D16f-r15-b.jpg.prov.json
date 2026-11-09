@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D16f-r15-b.jpg",
+ "made": "2026-11-09T20:01:48.510Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Clean up this photo of the empty chair room: the battered robot in the centre becomes small and spotless, about a third of its current size, smooth pale grey with no mud, scratches or bunting, its orange lamp lit; and the crumpled white suit and the pair of black gloves on the floor in the foreground are gone, leaving bare white tiles and cables there. The chairs, their blankets and mugs and draped suits, the layout, the hub, the camera position and the light are untouched.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D16f-r1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D16f-r1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e8c3e907-6c81-4dd8-a574-52c0fa2dca84"
+}

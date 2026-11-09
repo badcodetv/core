@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D11c-t2b.mp4",
+ "made": "2026-11-09T21:36:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix6/D11c6-d.jpg",
+ "why": "D round 18 (Kai, 9 Nov after r17: 'the old lady when she says afterwards the lip-sync is off'): re-shot with her words and their timing in the prompt, as worked for Sandra",
+ "source_id": "225960d8-7bbe-42fb-aa94-fd2a121181b7",
+ "prompt": "One continuous close-up, the camera holds completely still on the old woman in glasses resting her head against the dark chair. For the first second she listens, eyes on someone off to the right. At about one and a quarter seconds she lifts her chin slightly and asks, quietly and plainly: And afterwards? Two words, done in under a second. Then her lips close and stay closed; she waits for the answer, still looking right, and gives one small slow breath. No cuts, no music.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix6/D11c6-d.jpg"
+ },
+ "settings": {
+  "durationSeconds": "6",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "d1cf0e7b-f86b-4e22-8eb9-2d507a8c0add"
+ }
+}

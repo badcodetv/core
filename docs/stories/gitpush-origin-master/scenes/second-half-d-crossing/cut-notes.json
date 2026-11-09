@@ -1,6 +1,6 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 14,
+ "round": 19,
  "kai_round1": {
   "at2259": {
    "note": " I think this scene here needs to be an actual video. It looks like it's a photograph just zoomed in.",
@@ -670,37 +670,36 @@
  },
  "plan": [
   {
-   "h": "Round 14: more jeopardy, quicker goodbye (1:26)",
+   "h": "Round 19: clean Maddie beside the lady (1:25.5)",
    "items": [
-    "Derek: 'Hundred. ... What will it feel like?' is one take now, with a long pause his own and his voice the same all through, small and vulnerable.",
-    "After Maddie's answer, Sandra, frightened: 'I don't like the idea of... it feels like dying.' Maddie, with long pauses: 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' No 'take a seat': a breath, then they sit, in silence (no 'Thank you').",
-    "The goodbye is quick: in on the hands as they meet, 'Are you ready for this, my love?' at once, white. Hands to white is 3.8 s (was 11.7)."
-   ]
-  },
-  {
-   "h": "Stand-ins until the new shots",
-   "items": [
-    "Sandra says her line on her old listening shot (mouth shut, the battered Maddie behind her), and Maddie's vow plays on her wafer shot from the start of the scene, its last frame held 2.6 s.",
-    "New shots needed, all from the final Maddie shot's room as the one chair layout: the chairs from above, everyone seated, and a two-shot of Sandra speaking with clean Maddie beside her. Plus the hands reaching together. Stills first, for you to pick."
+    "The lady's hands on the patchwork now have clean, gleaming Maddie beside her, no bunting (your still pick b, animated with Omni 1.2).",
+    "The overhead stays as it was: you picked 'now' over the clean-Maddie stills."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Is Maddie's pause length right (held to 1.2 s each)? Say 'go on the shots' for the stills."
+    "The overhead's chair lights still pulse a little. A deflicker filter on the existing clip would calm them at no cost; say if you want it.",
+    "Scene E's phone still shows D's old last frame; it changes when E is next cut."
    ]
   }
  ],
  "replies": {
   "top": "Round 14: every words-and-timing note done; the picture notes need new shots (stills first).",
   "at542": "Done: one take, 'Hundred. ... What will it feel like?', a 1.9 s pause in it, his voice the same throughout, vulnerable on the question. [new voice]",
-  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come]",
-  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video]",
-  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video]",
+  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come] → in r15: Sandra speaks on her new two-shot with clean Maddie; lip-sync to come. → in r16: lip-synced.",
+  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video] → in r15: the overhead (D05c) is the new layout; the seated room waits on your pick. → in r16: every chair shot is now the final shot's layout.",
+  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video] → round-15 still made with a much smaller Maddie; on the picks page. → in r16: D10c, the seated room with Maddie small.",
   "at1284": "Done: 'Thank you' is gone. They sit in silence. [edit only]",
-  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come]",
+  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come] → in r15: D12h, both reach at once and hold. → in r16: the hands already held (D12k).",
   "at1575": "Done: hands to white is now 3.8 s, a third of before. [edit only]",
-  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video]"
+  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video] → the last shot re-made with clean small Maddie, no suit on the floor; on the picks page. → in r16: the new last shot (D16n).",
+  "at1141": "Re-shot Sandra twice with the words timed in the video prompt, made a quicker, nervous voice take, and laid it on her mouth phrase by phrase. [new video + voice] Your pick a-d. → in r17.",
+  "at1300": "Cut earlier: the seated room now comes 0.4 s into Maddie's promise (was 1.5 s), and Sandra comes in sooner too. Promise re-voiced in four moods on the picks page; you picked plain (le). [new voice] → in r17.",
+  "at1446": "The old take itself was cut off mid-'sure'. The new take (le) is whole, with 'sure' complete. → in r17.",
+  "at1477": "Done as you said: the room piano fades to silence under the promise, then the crossing cello fades in as they sit. [edit only] → in r17.",
+  "at502": "Made clean-Maddie stills with one steady light under every chair; you picked 'now', so the overhead is unchanged. A free deflicker filter can still calm the lights if you want. → kept as is in r19.",
+  "at944": "Clean, gleaming Maddie beside her hands, no bunting: new still (your pick b), animated. [new video] → in r19."
  },
  "plan_round11": [
   {
@@ -869,6 +868,221 @@
    "note": "Again, here we need the cut where they just both hold hands rather than Sandra reaching out for Derek's hand.\nAnd more generally, this scene should be quicker. It should be straight away to them go, Derek saying, are you ready for this love? And then the fade to white.",
    "tc": "00:00:55:22",
    "beat": "d7"
+  }
+ },
+ "plan_round14": [
+  {
+   "h": "Round 14: more jeopardy, quicker goodbye (1:26)",
+   "items": [
+    "Derek: 'Hundred. ... What will it feel like?' is one take now, with a long pause his own and his voice the same all through, small and vulnerable.",
+    "After Maddie's answer, Sandra, frightened: 'I don't like the idea of... it feels like dying.' Maddie, with long pauses: 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' No 'take a seat': a breath, then they sit, in silence (no 'Thank you').",
+    "The goodbye is quick: in on the hands as they meet, 'Are you ready for this, my love?' at once, white. Hands to white is 3.8 s (was 11.7)."
+   ]
+  },
+  {
+   "h": "Stand-ins until the new shots",
+   "items": [
+    "Sandra says her line on her old listening shot (mouth shut, the battered Maddie behind her), and Maddie's vow plays on her wafer shot from the start of the scene, its last frame held 2.6 s.",
+    "New shots needed, all from the final Maddie shot's room as the one chair layout: the chairs from above, everyone seated, and a two-shot of Sandra speaking with clean Maddie beside her. Plus the hands reaching together. Stills first, for you to pick."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Is Maddie's pause length right (held to 1.2 s each)? Say 'go on the shots' for the stills."
+   ]
+  }
+ ],
+ "replies_round14": {
+  "top": "Round 14: every words-and-timing note done; the picture notes need new shots (stills first).",
+  "at542": "Done: one take, 'Hundred. ... What will it feel like?', a 1.9 s pause in it, his voice the same throughout, vulnerable on the question. [new voice]",
+  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come]",
+  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video]",
+  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video]",
+  "at1284": "Done: 'Thank you' is gone. They sit in silence. [edit only]",
+  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come]",
+  "at1575": "Done: hands to white is now 3.8 s, a third of before. [edit only]",
+  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video]"
+ },
+ "plan_round15": [
+  {
+   "h": "Round 15: your chair picks in (1:26)",
+   "items": [
+    "'Hundred.' now plays over the new overhead (your pick c): the final shot's chair layout from straight above, empty, clean small Maddie in the gap, the camera sinking slowly.",
+    "Sandra says 'I don't like the idea of... it feels like dying.' on her new two-shot (your pick b), with the clean Maddie behind her. The start of Maddie's vow plays on Sandra listening.",
+    "The hands: both reach at once and hold; nobody reaches for anybody. In on the grip, the whisper, white."
+   ]
+  },
+  {
+   "h": "Still to come",
+   "items": [
+    "Sandra's mouth: Omni's own mouth for now; LatentSync redraws it to the line (one command for you).",
+    "The rest of the vow still plays on Maddie's earlier shot (a repeat), and 'they sit' and the last shot are the old ones, until you pick the round-15 stills (smaller Maddie; the room with the people gone)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Picks page (same link as before): the seated room with a smaller Maddie, the new last shot, and a still of the hands already held if you prefer it to the reach."
+   ]
+  }
+ ],
+ "replies_round15": {
+  "top": "Round 14: every words-and-timing note done; the picture notes need new shots (stills first).",
+  "at542": "Done: one take, 'Hundred. ... What will it feel like?', a 1.9 s pause in it, his voice the same throughout, vulnerable on the question. [new voice]",
+  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come] → in r15: Sandra speaks on her new two-shot with clean Maddie; lip-sync to come.",
+  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video] → in r15: the overhead (D05c) is the new layout; the seated room waits on your pick.",
+  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video] → round-15 still made with a much smaller Maddie; on the picks page.",
+  "at1284": "Done: 'Thank you' is gone. They sit in silence. [edit only]",
+  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come] → in r15: D12h, both reach at once and hold.",
+  "at1575": "Done: hands to white is now 3.8 s, a third of before. [edit only]",
+  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video] → the last shot re-made with clean small Maddie, no suit on the floor; on the picks page."
+ },
+ "kai_round16": {
+  "at1141": {
+   "at": 1794257355822,
+   "beat": "d3",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at1141",
+   "note": "Okay, this lip syncing is awful. We need to really recut this scene and focus on the lip syncing. I'm not convinced by our lip syncing tool. Let's just try cutting it and trying to use time codes in the video prompt might be useful.",
+   "tc": "00:00:47:13"
+  },
+  "at1300": {
+   "at": 1794257399924,
+   "beat": "d3",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at1300",
+   "note": "I think we need to cut just slightly earlier than we have done in this. And I think that we should recut the Maddy's voice. She's too, what's the word, timid in the way that she's saying these words. In fact, what would be really useful would be to have some kind of like choice screen we could go through the options and just sort of alter the emotion in Maddy's voice.",
+   "tc": "00:00:54:04"
+  },
+  "at1446": {
+   "at": 1794257423154,
+   "beat": "d3",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at1446",
+   "note": "Also, the word sure is cut off at the end here, so I think this speech is cut off too early.",
+   "tc": "00:01:00:06"
+  },
+  "at1477": {
+   "at": 1794257510757,
+   "beat": "d6",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at1477",
+   "note": "Also, at this exact moment, the music changes dramatically. And it would be really... Both tunes are good, it's just that they're very different to each other and they don't transition nicely. So, I think we might just need to re-cut the music for this whole scene.   Having said that, the music at the end really is very good. So maybe, I mean, what could work is that we fade out the music beforehand to silence, and then we start the end. When Maddy's saying, I won't switch it on unless you want all of you and only if you're sure, maybe we fade the music to silence when she says that for dramatic effect. Then we can fade the final piece of music in. Okay, let's do that.\nHaving said that, the music at the end really is very good. So maybe, I mean, what could work is that we fade out the music beforehand to silence, and then we start the end. When Maddy's saying, I won't switch it on unless you want all of you and only if you're sure, maybe we fade the music to silence when she says that for dramatic effect. Then we can fade the final piece of music in. Okay, let's do that.",
+   "tc": "00:01:01:13"
+  }
+ },
+ "plan_round16": [
+  {
+   "h": "Round 16: one room, no stand-ins (1:27)",
+   "items": [
+    "Sandra's mouth now says her line (LatentSync), with clean Maddie behind her.",
+    "Maddie's 'All of you... and only if you're sure' lands on the hundred, seated in the final shot's layout with Maddie small among them (your pick b). The same shot runs on, unbroken, as they settle in silence and the chair lights swell.",
+    "The hands are already held (your pick a): the grip tightens, his thumb strokes her hand, the whisper, white.",
+    "The last shot is that same room with the people gone (your pick ca): clean small Maddie, nothing on the floor; her lamp glows on 'Boss...', then she turns to face the empty chairs."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Hearing 'All of you' over people already seated slightly anticipates their yes. If it reads as too early, I'll cut to the seated shot on 'only if you're sure' instead.",
+    "Scene E's phone still shows D's old last frame; it changes when E is next cut."
+   ]
+  }
+ ],
+ "replies_round16": {
+  "top": "Round 14: every words-and-timing note done; the picture notes need new shots (stills first).",
+  "at542": "Done: one take, 'Hundred. ... What will it feel like?', a 1.9 s pause in it, his voice the same throughout, vulnerable on the question. [new voice]",
+  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come] → in r15: Sandra speaks on her new two-shot with clean Maddie; lip-sync to come. → in r16: lip-synced.",
+  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video] → in r15: the overhead (D05c) is the new layout; the seated room waits on your pick. → in r16: every chair shot is now the final shot's layout.",
+  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video] → round-15 still made with a much smaller Maddie; on the picks page. → in r16: D10c, the seated room with Maddie small.",
+  "at1284": "Done: 'Thank you' is gone. They sit in silence. [edit only]",
+  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come] → in r15: D12h, both reach at once and hold. → in r16: the hands already held (D12k).",
+  "at1575": "Done: hands to white is now 3.8 s, a third of before. [edit only]",
+  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video] → the last shot re-made with clean small Maddie, no suit on the floor; on the picks page. → in r16: the new last shot (D16n)."
+ },
+ "plan_round17": [
+  {
+   "h": "Round 17: Sandra in sync, a plain promise, no music clash (1:25.5)",
+   "items": [
+    "Sandra is a new shot (your pick a-d): the video prompt timed each phrase, and a quicker, nervous read is laid on her mouth phrase by phrase, landing 0.05 s after it opens.",
+    "She comes in sooner, straight off the line before (0.23 s gap), and Maddie's promise follows 0.4 s after her. The cut then goes to the seated room 0.4 s into the promise, not 1.5 s.",
+    "Maddie's promise is the plain reading (your pick le), the whole take, with 'sure' complete.",
+    "Music: the room piano fades to silence under the promise (gone by about 57 s), a moment of quiet, then the crossing cello fades in as they sit (about 60 s)."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Sandra's line now starts 0.23 s after the line before ends, which reads as her blurting it out. If it feels rushed, I can hold the shot longer before she speaks, but her mouth timing would have to move with it.",
+    "Scene E's phone still shows D's old last frame; it changes when E is next cut."
+   ]
+  }
+ ],
+ "replies_round17": {
+  "top": "Round 14: every words-and-timing note done; the picture notes need new shots (stills first).",
+  "at542": "Done: one take, 'Hundred. ... What will it feel like?', a 1.9 s pause in it, his voice the same throughout, vulnerable on the question. [new voice]",
+  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come] → in r15: Sandra speaks on her new two-shot with clean Maddie; lip-sync to come. → in r16: lip-synced.",
+  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video] → in r15: the overhead (D05c) is the new layout; the seated room waits on your pick. → in r16: every chair shot is now the final shot's layout.",
+  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video] → round-15 still made with a much smaller Maddie; on the picks page. → in r16: D10c, the seated room with Maddie small.",
+  "at1284": "Done: 'Thank you' is gone. They sit in silence. [edit only]",
+  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come] → in r15: D12h, both reach at once and hold. → in r16: the hands already held (D12k).",
+  "at1575": "Done: hands to white is now 3.8 s, a third of before. [edit only]",
+  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video] → the last shot re-made with clean small Maddie, no suit on the floor; on the picks page. → in r16: the new last shot (D16n).",
+  "at1141": "Re-shot Sandra twice with the words timed in the video prompt, made a quicker, nervous voice take, and laid it on her mouth phrase by phrase. [new video + voice] Your pick a-d. → in r17.",
+  "at1300": "Cut earlier: the seated room now comes 0.4 s into Maddie's promise (was 1.5 s), and Sandra comes in sooner too. Promise re-voiced in four moods on the picks page; you picked plain (le). [new voice] → in r17.",
+  "at1446": "The old take itself was cut off mid-'sure'. The new take (le) is whole, with 'sure' complete. → in r17.",
+  "at1477": "Done as you said: the room piano fades to silence under the promise, then the crossing cello fades in as they sit. [edit only] → in r17."
+ },
+ "kai_round17": {
+  "chat": "brilliant Claude it's brilliant what an excellent cut the only thing I would say is the old lady when she says afterwards the lip-sync is off but you've fixed Sandra's lip-sync perfectly and everything else now is perfect about this scene"
+ },
+ "plan_round18": [
+  {
+   "h": "Round 18: the old lady in sync (1:25.5)",
+   "items": [
+    "Your note after round 17 (in chat): the old lady's 'And afterwards?' was off. Her close-up is re-shot with her two words timed in the prompt, and a quicker take of her voice is laid on her mouth, landing 0.02 s after it opens (your pick a-b).",
+    "Nothing else changed: Sandra, the plain promise, and the music are as in round 17."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Scene E's phone still shows D's old last frame; it changes when E is next cut."
+   ]
+  }
+ ],
+ "replies_round18": {
+  "top": "Round 14: every words-and-timing note done; the picture notes need new shots (stills first).",
+  "at542": "Done: one take, 'Hundred. ... What will it feel like?', a 1.9 s pause in it, his voice the same throughout, vulnerable on the question. [new voice]",
+  "at1068": "Done: Sandra 'I don't like the idea of... it feels like dying.' / Maddie 'I won't switch it on unless you want it. ... All of you. ... And only if you're sure.' with long pauses; 'take a seat' gone. Clean Maddie here needs the new two-shot; for now Sandra is on her old shot (battered Maddie behind). [new voices; new shot to come] → in r15: Sandra speaks on her new two-shot with clean Maddie; lip-sync to come. → in r16: lip-synced.",
+  "at509": "Agreed: one layout, the final shot's. New overhead and seated-room stills built from that frame, for you to pick. [new stills + video] → in r15: the overhead (D05c) is the new layout; the seated room waits on your pick. → in r16: every chair shot is now the final shot's layout.",
+  "at1231": "Agreed: the seated room re-made from the final shot (same layout, its blankets and things), with people in the chairs. [new still + video] → round-15 still made with a much smaller Maddie; on the picks page. → in r16: D10c, the seated room with Maddie small.",
+  "at1284": "Done: 'Thank you' is gone. They sit in silence. [edit only]",
+  "at1342": "Done for speed: in on the hands as they meet, the whisper at once, then white. The both-reach-together shot is still to make. [edit now; new video to come] → in r15: D12h, both reach at once and hold. → in r16: the hands already held (D12k).",
+  "at1575": "Done: hands to white is now 3.8 s, a third of before. [edit only]",
+  "at1938": "Yes: this is the canonical layout. Every other chair shot gets re-made from it. [new stills + video] → the last shot re-made with clean small Maddie, no suit on the floor; on the picks page. → in r16: the new last shot (D16n).",
+  "at1141": "Re-shot Sandra twice with the words timed in the video prompt, made a quicker, nervous voice take, and laid it on her mouth phrase by phrase. [new video + voice] Your pick a-d. → in r17.",
+  "at1300": "Cut earlier: the seated room now comes 0.4 s into Maddie's promise (was 1.5 s), and Sandra comes in sooner too. Promise re-voiced in four moods on the picks page; you picked plain (le). [new voice] → in r17.",
+  "at1446": "The old take itself was cut off mid-'sure'. The new take (le) is whole, with 'sure' complete. → in r17.",
+  "at1477": "Done as you said: the room piano fades to silence under the promise, then the crossing cello fades in as they sit. [edit only] → in r17."
+ },
+ "kai_round18": {
+  "at502": {
+   "at": 1794261110858,
+   "beat": "d3",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at502",
+   "note": "Hey, Claude. So, two bits of feedback here. The first is it feels like this scene flickers because I think the lights under the chairs are trying to glow and I think that's an issue. I think we should possibly just recut various angles of this scene. Second thing is Maddy needs to be clean Maddy in this scene and I'll also mark that further down as we still have dirty Maddy with the bunting on, so she needs to be clean Maddy in this scene here.",
+   "tc": "00:00:20:22"
+  },
+  "at944": {
+   "at": 1794261126382,
+   "beat": "d3",
+   "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+   "key": "at944",
+   "note": "This is also where she needs to be clean, Maddy, because she's in the clean room now.",
+   "tc": "00:00:39:08"
   }
  }
 }

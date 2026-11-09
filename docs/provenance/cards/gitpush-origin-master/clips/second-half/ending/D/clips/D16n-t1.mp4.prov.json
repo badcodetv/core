@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D16n-t1.mp4",
+ "made": "2026-11-09T20:36:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D16c-r15-a.jpg",
+ "why": "D round 16: Kai picked D16n ca (picks r15): the last shot, the seated room with the people gone, clean small Maddie, no suit on the floor",
+ "source_id": "69063fac-7bce-4a93-97b8-169a36b4ecdd",
+ "prompt": "A calm, locked-off shot of a bright white hall full of reclining chairs with blankets and mugs on them. The soft rings of light under the chairs fade gently, a few at a time. The little grey delivery robot in the middle stays still, then its orange lamp glows once and it rolls a tiny turn to face the chairs, and stops. One continuous shot, no cuts.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D16c-r15-a.jpg"
+ },
+ "settings": {
+  "durationSeconds": "8",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "f8d38452-cc30-4002-a5b3-e274f9505333"
+ }
+}

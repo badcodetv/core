@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-d.jpg",
+ "made": "2026-11-09T20:50:05.101Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The two people in the provided photos, faces and hair only, at their own wedding reception; a new picture. A cheap disposable-camera snapshot with hard on-camera flash in a pub function room: the room behind falls away to black. Centred, she in a simple cream dress and he in a loosened tie press cheek to cheek, both mid-laugh, eyes creased, a half pint and a paper plate of sausage rolls on the table in front. Slightly blown-out skin, flat flash shadows, warm cheap-print colour. Nothing written anywhere, no date stamp.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "6044eed4-615b-44c9-9ae7-2763f4549f90"
+}

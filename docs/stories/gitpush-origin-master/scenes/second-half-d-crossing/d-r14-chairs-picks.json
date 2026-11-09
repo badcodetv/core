@@ -1,0 +1,94 @@
+{
+ "title": "Crossing Chairs Picks",
+ "eyebrow": "GPOM scene D · round 14 · stills",
+ "heading": "One room, one chair layout",
+ "intro": "Every chair shot is now made from the final Maddie shot (the reference at the bottom), so the layout matches everywhere. Pick one per row; I animate the picks next. Stills only so far: no video credits spent.",
+ "sections": [
+  {
+   "h": "The new shots",
+   "lede": "Made by editing the final shot itself, so the chairs can't drift.",
+   "groups": [
+    {
+     "slot": "D05c",
+     "title": "From above (replaces the old wafer pattern, 'Hundred')",
+     "line": "Empty chairs, waiting; clean Maddie in the gap.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "c",
+       "src": "r14/D05c-r14-c.jpg",
+       "label": "c: empty, waiting (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r14/D05c-r14-b.jpg",
+       "label": "b: blankets already on the chairs",
+       "warn": "reads as after, not before"
+      }
+     ]
+    },
+    {
+     "slot": "D10c",
+     "title": "They sit (replaces the old 'they sit' angle)",
+     "line": "Every chair taken, their blankets and tea with them; clean Maddie in the gap.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r14/D10c-r14-a.jpg",
+       "label": "a: (my pick) closest to the final shot's framing",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r14/D10c-r14-b.jpg",
+       "label": "b: a touch wider",
+       "warn": ""
+      }
+     ]
+    },
+    {
+     "slot": "D08c",
+     "title": "Sandra: 'I don't like the idea of... it feels like dying.'",
+     "line": "Her shot with the battered Maddie swapped for the clean one. I'll animate her speaking and lip-sync it.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r14/D08c-r14-a.jpg",
+       "label": "a: (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r14/D08c-r14-b.jpg",
+       "label": "b",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "The reference",
+   "lede": "The final shot: the canonical layout (your at1938).",
+   "groups": [
+    {
+     "slot": "ref",
+     "title": "Final Maddie shot",
+     "line": "For comparison only.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ref",
+       "src": "r14/D16f-r1-a.jpg",
+       "label": "the canonical layout",
+       "warn": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

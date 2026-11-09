@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D05c-r14-a.jpg",
+ "made": "2026-11-09T19:50:09.104Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "From the room in this picture, make a new shot: the camera straight above, looking directly down at the floor from the ceiling, the whole arrangement seen as a flat plan. Every chair stands exactly where it stands here, in the same rows and spacing, all of them empty and waiting, each ringed by its soft white floor light; the round platform in the middle and the dark cables snaking across the white floor are the same. A small spotless pale grey delivery robot with a lit amber beacon waits in the open gap at the centre, no bunting. Nobody is sitting yet. Same clean, bright, cool white clean-room light and the same photographic realism as the picture.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D16f-r1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D16f-r1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "0ed44874-06b7-4d73-823e-d261e13c5a54"
+}

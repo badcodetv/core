@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/14-b.jpg",
+ "made": "2026-11-09T20:36:54.380Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From the edge of the White Cliffs above Dover, with grass in the foreground: below, a ribbon of queued lorry and car headlights coils down the A20 into the port, and small figures with torches stand on the cliff road. In the harbour every ferry and tug, lights on, turns away from the quay in a line and steers itself out to sea. A container ship burns on the Channel horizon. 50mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "34ecdd6d-f47c-490b-ae95-bd884cf0c8f4"
+}

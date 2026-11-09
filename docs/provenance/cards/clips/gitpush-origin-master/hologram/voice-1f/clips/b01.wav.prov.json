@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/b01.wav",
+ "made": "2026-11-09T20:40:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-b01-4.wav",
+ "why": "hologram 1F line b01 (Kai locked draft 1F, 9 Nov); take picked as whisper-verbatim",
+ "prompt": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some things in the meantime. Please, let me show you what we found.",
+ "inputs": {
+  "heard": "We didn't realise how important you were. Which, after everything that's gone down, sounds pretty all -oh, I know. But we've learned some things in the meantime. Please, let me show you what we found.",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+ },
+ "settings": {
+  "src_in": "0.05",
+  "src_out": "13.81"
+ }
+}

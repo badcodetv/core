@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/04-b.jpg",
+ "made": "2026-11-09T20:36:54.222Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From the top of Primrose Hill, a line of small adult silhouettes stands with backs to us, a few raised phones glowing blank. Below them spreads central London: the towers of the City and a dozen tower cranes over building sites, every crane jib swung to point the same way, east. Three districts have already gone black; a substation fireball rises from one, and a cold cyan flash lights the cloud over another. 50mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "463e1776-928b-480a-b66a-2ebeef618663"
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/f05.wav",
+ "made": "2026-11-09T20:40:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f05-3.wav",
+ "why": "hologram 1F line f05 (Kai locked draft 1F, 9 Nov); take picked as whisper-verbatim",
+ "prompt": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+ "inputs": {
+  "heard": "So it's not a multiverse, it's a story -verse. There's only one of them and it's really important and you humans are writing it, one decision at a time.",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+ },
+ "settings": {
+  "src_in": "0.05",
+  "src_out": "11.35"
+ }
+}

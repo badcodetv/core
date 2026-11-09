@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/07-a.jpg",
+ "made": "2026-11-09T20:36:54.272Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Waist height on wet sand at a Victorian seaside town: a slab-sided car-carrier ship with its deck lights blazing has driven itself bow-first up the shingle and towers over the beach huts and the sea wall. Small figures run inland along the promenade under streetlamps, and the terrace windows are going dark street by street. On the headland behind, a fuel depot fireball rises into low cloud and lights the whole bay. 35mm wide. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "9db0bc7d-a4bf-4707-895d-593f2d15e0bc"
+}

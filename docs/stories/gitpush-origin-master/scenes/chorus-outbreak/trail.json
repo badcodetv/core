@@ -27,5 +27,90 @@
   "url": "https://claude.ai/artifact/Q1N135fLAyA9rZadxhqRpD",
   "what": "Storyboard r1: 7 picked frames, 2-3 camera options each (locked Veo + Premiere move, Veo camera move, post treatment); EN1-a2-b offered beside EN1-a",
   "rebuild": "python3 scripts/scene/build-storyboard.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak <out.html>"
+ },
+ {
+  "at": "2026-11-09T20:08:30+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/SsqThCJiHXre1V6eYPzMXp",
+  "what": "All 11 clips with verdicts + RK2-step a/b/c lifted-leg stills for approval",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak/picks.json <out.html>"
+ },
+ {
+  "at": "2026-11-09T20:17:05+00:00",
+  "stage": "picks",
+  "round": 1,
+  "what": "Kai's clip picks read from the picks page",
+  "decided": [
+   "Kai picked f1 01, f2 02, f3 r3, f4 r3, f5 05, f6 06; no step still picked; 07 is the only take"
+  ],
+  "feedback": "feedback/picks-r1",
+  "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-09T20:21:58+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/GhgLphPdKSMs8PXNdsAjvH",
+  "what": "Rough cut r1: Kai's 7 picks cut to the beat, 11.04 s on the main track from 113.917 s",
+  "rebuild": "python3 scripts/scene/beatcut.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak docs/stories/gitpush-origin-master/scenes/chorus-outbreak/cut-r1.json <media>/cut/preview.mp4 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak <out-dir>"
+ },
+ {
+  "at": "2026-11-09T20:37:32+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "url": "https://claude.ai/artifact/9cbB2BCapQJx89CfXJAHVR",
+  "what": "Round 2: 16 city-to-orbit scale shots from a 10-agent web sweep (research/scale-research.json), 2 stills each",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak <out.html>"
+ },
+ {
+  "at": "2026-11-09T20:40:21+00:00",
+  "stage": "moodboard",
+  "round": 2,
+  "what": "Kai's round 2 votes",
+  "decided": [
+   "This: MP2-a, BD2-a, PH2-a, PH2-b, WS2-a, VD2-b, CH2-b, DX2-b, RW2-a, DV2-a. Kai: 'let's just cut videos of all of these'"
+  ],
+  "feedback": "feedback/moodboard-r2",
+  "feedback_docs": 17
+ },
+ {
+  "at": "2026-11-09T21:12:25+00:00",
+  "stage": "picks",
+  "round": 2,
+  "url": "https://claude.ai/artifact/FysUZ1XJxJhDobBStkGC9p",
+  "what": "Three sequences of all 17 clips (A outward, B only the big ones, C close/far), 32 beats each, cut by beatcut.py from cut-r2a/b/c.json; pick one for Premiere",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak/sequences-r2.json <out>/index.html"
+ },
+ {
+  "at": "2026-11-09T21:21:20+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/FysUZ1XJxJhDobBStkGC9p",
+  "what": "Six sequences (A-F), empty-car ending cut from all",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak/sequences-r2.json <out>/index.html",
+  "decided": [
+   "Kai 9 Nov: 'get rid of' the sideways car ending clip ('it's really confusing'); 'double the number of options'"
+  ]
+ },
+ {
+  "at": "2026-11-09T21:23:40+00:00",
+  "stage": "picks",
+  "round": 3,
+  "url": "https://claude.ai/artifact/FysUZ1XJxJhDobBStkGC9p",
+  "what": "Kai's sequence pick",
+  "decided": [
+   "Kai 9 Nov: picked E (London); 'we've got our cut now. Much better.'"
+  ],
+  "feedback": "feedback/picks-r3",
+  "feedback_docs": 1
+ },
+ {
+  "at": "2026-11-09T21:24:06+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/GhgLphPdKSMs8PXNdsAjvH",
+  "what": "Cut r2 = sequence E (London), 12 shots on the beat, from cut-r2e.json",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/chorus-outbreak <out-dir>"
  }
 ]

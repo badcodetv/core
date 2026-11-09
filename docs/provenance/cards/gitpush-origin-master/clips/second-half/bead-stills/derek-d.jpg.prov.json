@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-d.jpg",
+ "made": "2026-11-09T20:43:52.070Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Borrow only his face and hair from the provided photo for a new picture. Bright high-key studio image like a frozen frame from a cheerful breakfast television advert: a spotless white kitchen, saturated primary colours, a glossy red pop-up toaster and a blank yellow cereal box with nothing printed on it. He stands dead centre facing camera in a crisp blue shirt, one finger raised over the two in an exaggerated eeny-meeny pose, eyebrows up. Even shadowless light, simple white background, nothing written anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "0fcba75c-ee94-4f8d-9f99-4af89c4f602f"
+}

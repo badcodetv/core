@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-07-EN1-a2-b.mp4",
+ "made": "2026-11-09T20:05:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera glides slowly forward from the back seat between the two front seats towards the windscreen, passing the empty driver's seat with its belt hanging and the steering wheel turning slightly by itself, the convoy of driverless cars ahead and giant cranes walking on the orange horizon. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/EN1-a2-b.jpg",
+ "why": "The Last of Us dolly",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/EN1-a2-b.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "07",
+  "frame": 7,
+  "option": "b"
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T19:53:12.372Z"
+ }
+}

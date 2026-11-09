@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D10c-r15-a.jpg",
+ "made": "2026-11-09T19:59:21.350Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only the size of the small delivery robot in the centre: make it much smaller, about half its current height and width, so its box top sits no higher than the backs of the nearby seated people's chairs and it looks like a small pet-sized machine beside them. Keep it in the same spot in the gap, the same gleaming clean pale grey body with its amber beacon glowing, its six wheels on the floor. Keep everything else in the image exactly the same: every seated person, the blankets and mugs, the chairs and their layout, the cables, the central platform, the camera angle, the lighting and the style.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r14-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r14-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9c127a58-bcb1-4f94-a74d-da4c510e189a"
+}

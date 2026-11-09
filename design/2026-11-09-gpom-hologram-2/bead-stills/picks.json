@@ -1,0 +1,32 @@
+{
+  "title": "Bead Stills",
+  "eyebrow": "GPOM scene A · Maddie's hologram · bead stills",
+  "heading": "Three small pictures inside the beads",
+  "intro": "Each of these plays small, inside a glowing round bead, under one line of the hologram. Judge them as a circle in the middle of the square: one clear action, readable at thumbnail size. Four different ideas per picture (the look is the variable: a = the second half's 1980s BBC 16mm, the others break it). Stills only: no video credit spent. Pick one per row and leave a note.",
+  "sections": [
+    {"h": "1 · Derek at the toaster", "lede": "Under: \"For example: Derek picks toast, not cereal.\" The viewer hasn't met him yet; he must read as an ordinary bloke and be the Derek of the toilet row (SB07c).",
+     "groups": [{"slot": "bead-derek", "title": "Derek picks toast", "line": "Recommended: b (hand between the bread and the box, his face right above it; reads instantly in a circle)", "kind": "image",
+       "opts": [
+         {"id": "a", "src": "media/derek-a.jpg", "label": "a: 16mm BBC, the whole dithering pose in a run-down kitchen", "warn": ""},
+         {"id": "b", "src": "media/derek-b.jpg", "label": "b: close on the choice, hand between bread and box, soft cream background", "warn": ""},
+         {"id": "c", "src": "media/derek-c-clean.jpg", "label": "c: warm low morning sun, an old photo print; he smiles at his own dithering", "warn": "Off-centre for a circle; the box was cleaned of a real brand in an edit"},
+         {"id": "d", "src": "media/derek-d.jpg", "label": "d: breaks the look: advert-bright primary colours, eeny-meeny finger", "warn": ""}
+       ]}]},
+    {"h": "2 · Sandra says sorry first", "lede": "Under: \"Sandra decided to say sorry first, even though it wasn't her fault.\" Recognisably SB07b's Sandra.",
+     "groups": [{"slot": "bead-sandra", "title": "Sandra says sorry first", "line": "Recommended: a (her reach toward his green-jumper shoulder is the apology in one gesture; cast from her Flow character)", "kind": "image",
+       "opts": [
+         {"id": "a", "src": "media/sandra-a.jpg", "label": "a: 16mm BBC front room, the anger draining, her hand reaching to his shoulder", "warn": ""},
+         {"id": "b", "src": "media/sandra-b.jpg", "label": "b: big close-up, wet eyes, mouth opening on 'sorry'", "warn": "Strong face, but may read as grief rather than an apology"},
+         {"id": "c", "src": "media/sandra-c.jpg", "label": "c: seen from the hallway, her hand on his folded arm, his back to us", "warn": "Faces small: weak inside a bead"},
+         {"id": "d", "src": "media/sandra-d.jpg", "label": "d: breaks the look: night, one lamp, like an oil painting, her open hand held out", "warn": "Likeness drifted (hair down, painterly)"}
+       ]}]},
+    {"h": "3 · They got married", "lede": "Under: \"They got married.\" A modest, happy, real UK wedding.",
+     "groups": [{"slot": "bead-wedding", "title": "They got married", "line": "Recommended: a (both faces hold, centred, confetti; matches the 16mm). Close second: d", "kind": "image",
+       "opts": [
+         {"id": "a", "src": "media/wedding-a.jpg", "label": "a: 16mm BBC, registry office steps, both laughing in confetti", "warn": ""},
+         {"id": "b", "src": "media/wedding-b.jpg", "label": "b: his face, grinning at her; she has her back to us", "warn": "A stray child's head in the foreground"},
+         {"id": "c", "src": "media/wedding-c.jpg", "label": "c: wide from across a wet street, friends throwing confetti", "warn": "The couple are small: weak inside a bead"},
+         {"id": "d", "src": "media/wedding-d.jpg", "label": "d: breaks the look: disposable-camera flash at the pub reception, pint and sausage rolls", "warn": ""}
+       ]}]}
+  ]
+}

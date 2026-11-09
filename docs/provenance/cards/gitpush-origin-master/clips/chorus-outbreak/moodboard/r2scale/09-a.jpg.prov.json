@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/09-a.jpg",
+ "made": "2026-11-09T20:36:54.304Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From a low hillside, framed through one arch of the long Victorian brick viaduct at Stockport, which crosses a valley of terraced streets: a commuter train stopped dead mid-span, its carriage lights dying car by car, a few small silhouettes at the windows, sparks spitting from the overhead line. Beyond is the city skyline with tower cranes, whole sectors gone dark, and an orange fireball and a smoke column on the horizon. 85mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "ee695b97-82d0-46fc-8007-ea99e66e9e7e"
+}

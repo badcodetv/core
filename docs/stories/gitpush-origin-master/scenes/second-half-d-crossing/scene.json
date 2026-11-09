@@ -1399,10 +1399,11 @@
     "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/preview.mp4",
-    "round": "r14",
-    "what": "round 14 (Kai, 9 Nov, timeline r13): Hundred+question one take; Sandra 'I don't like the idea of... it feels like dying.'; the vow with pauses, no 'take a seat'; no 'Thank you'; hands quick to white. Stand-ins: Sandra on D08, the vow on D03c (repeat, last frame held)"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/preview.mp4",
+    "round": "r19",
+    "what": "round 19 (Kai, timeline r18 + picks r19): clean Maddie beside the lady's hands (D11b-t2b); overhead kept (pick 'now'); rest as r18.",
+    "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r19"
   },
   "round3_media": {
     "date": "2026-10-23",
@@ -1427,7 +1428,7 @@
       "was_named": "gpom-5-D-crossing-r1",
       "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     },
-    "current": "r10",
+    "current": "r15",
     "r2": {
       "sequence": "06 GPOM story D crossing r2",
       "guid": "1ed65d4a-e317-4465-8969-d47edb3a44ba",
@@ -1589,7 +1590,93 @@
         "state": "in sync",
         "why": ""
       },
-      "master": "swapped into '00 RENDER story' at 466.792-552.750 (Motion Scale 150, as A-C); E moved +1.958 s to 552.750-585.333; master 9:45.333"
+      "master": "swapped into '00 RENDER story' at 466.792-552.750 (Motion Scale 150, as A-C); E moved +1.958 s to 552.750-585.333; master 9:45.333",
+      "master_removed": "replaced in 00 RENDER story by r11 (2026-11-09)"
+    },
+    "r11": {
+      "sequence": "06 GPOM story D crossing r11",
+      "guid": "440314b8-22e1-450f-90ba-895dcd285bfe",
+      "bin": "06 GPOM story D crossing r11",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-09",
+      "built_by": "the-goodbye",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r15/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r15/premiere-r11.json",
+      "what": "page round 15 (Kai, chairs picks r14): new overhead D05c, Sandra's two-shot D08c (Omni mouth; LatentSync to come), hands D12h held together; stand-ins: vow tail on D03c, D10x, D16",
+      "how": "cut_end_d.py --tag r15; premiere-plan.py <edl> premiere-r11.json --tag r11 --seq '06 GPOM story D crossing r11'",
+      "check": {
+        "at": "2026-11-09T20:16",
+        "state": "in sync",
+        "why": ""
+      },
+      "master": "swapped into '00 RENDER story' at 466.792-553.125 (Motion Scale 150); E moved +0.375 s to 553.125-585.708; master 9:45.708",
+      "master_removed": "replaced in 00 RENDER story by r12 (2026-11-09)"
+    },
+    "r12": {
+      "sequence": "06 GPOM story D crossing r12",
+      "guid": "f67272bd-665d-4b4d-b696-6bbb278581bf",
+      "bin": "06 GPOM story D crossing r12",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-09",
+      "built_by": "the-goodbye",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r16/edl.json",
+      "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r16/premiere-r12.json",
+      "what": "page round 16 (Kai, picks r15): Sandra lip-synced, vow end + they sit on D10c, hands held D12k, last shot D16n; no stand-ins",
+      "how": "cut_end_d.py --tag r16; premiere-plan.py <edl> premiere-r12.json --tag r12 --seq '06 GPOM story D crossing r12'",
+      "check": {
+        "at": "2026-11-09T20:40",
+        "state": "in sync",
+        "why": ""
+      },
+      "master_removed": "2026-11-09: replaced by r13 in '00 RENDER story'"
+    },
+    "r13": {
+      "sequence": "06 GPOM story D crossing r13",
+      "guid": "bdbcbd6c-560c-4936-b9ab-a9daa079529c",
+      "bin": "06 GPOM story D crossing r13",
+      "built": "2026-11-09",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r17/edl.json",
+      "what": "round 17: Sandra D08c-t2a with the fitted quick take (a-d), plain vow (le), cut earlier, room music to silence under the vow",
+      "how": "premiere-plan.py --tag r13",
+      "check": {
+        "at": "2026-11-09T21:27",
+        "state": "in sync",
+        "why": ""
+      },
+      "master_removed": "2026-11-09: replaced by r14 in '00 RENDER story'"
+    },
+    "r14": {
+      "sequence": "06 GPOM story D crossing r14",
+      "guid": "f4c62e23-1416-4528-815b-bb391f6a3888",
+      "bin": "06 GPOM story D crossing r14",
+      "built": "2026-11-09",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r18/edl.json",
+      "what": "round 18: the old lady D11c-t2a with her quick take fitted (a-b); rest as r17",
+      "how": "premiere-plan.py --tag r14",
+      "check": {
+        "at": "2026-11-09T21:46",
+        "state": "in sync",
+        "why": ""
+      },
+      "master_removed": "2026-11-09: replaced by r15 in '00 RENDER story'"
+    },
+    "r15": {
+      "sequence": "06 GPOM story D crossing r15",
+      "guid": "56824ca2-9f4e-461f-8cb4-6cb93d762efe",
+      "bin": "06 GPOM story D crossing r15",
+      "built": "2026-11-09",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/edl.json",
+      "what": "round 19: clean Maddie beside the lady's hands (D11b-t2b); rest as r18",
+      "how": "premiere-plan.py --tag r15",
+      "check": {
+        "at": "2026-11-09T22:11",
+        "state": "in sync",
+        "why": ""
+      },
+      "master": "swapped into '00 RENDER story' at 466.792-552.292 (Motion Scale 150); E unchanged at 552.292-584.875; master 9:44.9"
     }
   },
   "video": {
@@ -1650,6 +1737,40 @@
       "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r13/preview.mp4",
       "round": "r13",
       "what": "round 13 (Kai, 9 Nov): dialogue 1I — Derek 'What will it feel like?', the lady 'And afterwards?', Maddie 'Two things...', 'I won't switch it on unless you want it... take a seat.', they sit, 'Thank you.'; Derek 'Are you ready for this, my love?'; the hands' grade jump matched"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r14/preview.mp4",
+      "round": "r14",
+      "what": "round 14 (Kai, 9 Nov, timeline r13): Hundred+question one take; Sandra 'I don't like the idea of... it feels like dying.'; the vow with pauses, no 'take a seat'; no 'Thank you'; hands quick to white. Stand-ins: Sandra on D08, the vow on D03c (repeat, last frame held)"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r15/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r15/preview.mp4",
+      "round": "r15",
+      "what": "round 15 (Kai, 9 Nov, chairs picks r14): new overhead D05c (c), Sandra's two-shot D08c (b) with clean Maddie, hands D12h (both reach and hold). Stand-ins: the vow tail on D03c, D10x, D16.",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r15"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r16/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r16/preview.mp4",
+      "round": "r16",
+      "what": "round 16 (Kai, picks r15): Sandra lip-synced (D08c-ls), the vow's end and 'they sit' on the seated room D10c (b), hands held D12k (a), last shot D16n (ca). No stand-ins.",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r16"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r17/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r17/preview.mp4",
+      "round": "r17",
+      "what": "round 17 (Kai, timeline r16 + picks r17): Sandra re-shot D08c-t2a with a quick take fitted phrase by phrase (a-d), the plain vow (le) with 'sure' whole, cut 1.1 s earlier into the seated room, room music to silence under the vow then the crossing piece.",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r17"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r18/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r18/preview.mp4",
+      "round": "r18",
+      "what": "round 18 (Kai, after r17 + picks r18): the old lady's 'And afterwards?' re-shot D11c-t2a with a quick take fitted to her mouth (a-b); everything else as r17.",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r18"
     }
   ],
   "dialogue": {

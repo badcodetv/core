@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D10c-r15s-a.jpg",
+ "made": "2026-11-09T19:59:58.166Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Shrink the little six-wheeled delivery robot in the middle of this photo to roughly a third of its present size, small enough that a seated adult beside it would tower over it, about knee height, like a picnic cool box on wheels. It stays where it is in the gap, still spotless pale grey, the orange lamp on top lit. Nothing else moves or changes: the hundred reclining people, their throws and mugs, every chair and cable, the round hub, the viewpoint and the light are left as they are.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r14-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r14-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "745f484e-9447-409a-8878-c3e3fddab5cd"
+}

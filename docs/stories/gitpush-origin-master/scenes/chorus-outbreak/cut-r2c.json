@@ -1,0 +1,109 @@
+{
+ "song": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+ "song_in": 113.917,
+ "bpm": 174,
+ "fps": 24,
+ "sequence": "gpom-chorus-outbreak-r2c",
+ "round": 2,
+ "note": "Round 2 option C: Close / far. All 17 clips (Kai 9 Nov: \"cut videos of all of these\"); in-points at each clip's peak.",
+ "shots": [
+  {
+   "clip": "ob-01-CA1-b.mp4",
+   "beats": 2,
+   "in": 3.5,
+   "why": "cup ripples, red light rising",
+   "beat": "CA"
+  },
+  {
+   "clip": "ob-s10-DV2-a.mp4",
+   "beats": 2,
+   "in": 4.3,
+   "why": "Dover: flash over the Channel",
+   "beat": "S3"
+  },
+  {
+   "clip": "ob-02-FR1-a.mp4",
+   "beats": 2,
+   "in": 1.3,
+   "why": "first fireballs over the jam",
+   "beat": "FR"
+  },
+  {
+   "clip": "ob-s08-DX2-b.mp4",
+   "beats": 3,
+   "in": 4.4,
+   "why": "Drax: the cooling towers go up",
+   "beat": "S3"
+  },
+  {
+   "clip": "ob-05-FT1-b.mp4",
+   "beats": 2,
+   "in": 0.3,
+   "why": "foot lands, dust ring",
+   "beat": "FT"
+  },
+  {
+   "clip": "ob-s09-RW2-a.mp4",
+   "beats": 3,
+   "in": 2.5,
+   "why": "Rotterdam from Fenland: the chain of blasts",
+   "beat": "S3"
+  },
+  {
+   "clip": "ob-03-r3-CR1-c.mp4",
+   "beats": 2,
+   "in": 1.6,
+   "why": "tower cranes burst",
+   "beat": "CR"
+  },
+  {
+   "clip": "ob-s03-PH2-a.mp4",
+   "beats": 2,
+   "in": 2.4,
+   "why": "Primrose Hill a: blasts across London",
+   "beat": "S2"
+  },
+  {
+   "clip": "ob-04-r3-RK1-e.mp4",
+   "beats": 3,
+   "in": 3.6,
+   "why": "crane leg blasts out of the road",
+   "beat": "RK"
+  },
+  {
+   "clip": "ob-s07-CH2-b.mp4",
+   "beats": 2,
+   "in": 1.0,
+   "why": "combines advance, fireball over the town",
+   "beat": "S3"
+  },
+  {
+   "clip": "ob-s05-WS2-a.mp4",
+   "beats": 2,
+   "in": 2.6,
+   "why": "airliner: blast beyond",
+   "beat": "S2"
+  },
+  {
+   "clip": "ob-s01-MP2-a.mp4",
+   "beats": 2,
+   "in": 3.2,
+   "why": "M4: fireballs rise over the motorway",
+   "beat": "S1"
+  },
+  {
+   "clip": "ob-06-GL1-a.mp4",
+   "beats": 2,
+   "in": 3.0,
+   "why": "Rotterdam water churning",
+   "beat": "GL"
+  },
+  {
+   "clip": "ob-s02-BD2-a.mp4",
+   "beats": 3,
+   "in": 4.6,
+   "why": "depot: the big blast dome",
+   "beat": "S1"
+  }
+ ]
+}

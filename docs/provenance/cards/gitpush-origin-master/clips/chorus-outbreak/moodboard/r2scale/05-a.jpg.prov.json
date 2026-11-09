@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/05-a.jpg",
+ "made": "2026-11-09T20:36:54.228Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Inside an airliner, shot through the rounded window: the wingtip with its red light, and three kilometres below a British city laid out as an orange grid. Two motorways run into it, packed with headlights, with fire racing along their lanes in bright stripes. A fuel depot on the edge churns orange, its smoke column leaning and lit from beneath. Several districts have dropped to black. 35mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "7616a788-cde5-4d82-9346-6d4bd0d20cce"
+}

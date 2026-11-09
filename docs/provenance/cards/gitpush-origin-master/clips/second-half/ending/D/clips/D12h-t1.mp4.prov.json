@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D12h-t1.mp4",
+ "made": "2026-11-09T20:07:17+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/D12-r1-b.jpg",
+ "why": "D round 15: Kai at1342 'the cut where they just both hold hands rather than Sandra reaching out' — re-roll from the D12 plate with both reaching at once",
+ "source_id": "10bd4084-14b5-4931-8810-cb23037e6313",
+ "prompt": "One continuous shot, the camera does not move. Both of them lift their hands off the armrests at the same moment and reach into the gap together; their hands meet in the middle within a second and the fingers lace into a firm, calm grip, which they hold, very still, to the end. No cuts.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/D12-r1-b.jpg"
+ },
+ "settings": {
+  "durationSeconds": "6",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "f9103300-972b-4a54-830b-05faddf7c185"
+ }
+}

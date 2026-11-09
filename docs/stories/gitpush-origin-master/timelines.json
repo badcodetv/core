@@ -3,7 +3,7 @@
  "title": "GitPush Origin Master",
  "url": "https://claude.ai/artifact/AXJqmgAWTRhxK7fzMkKukp",
  "updated": "2026-11-09",
- "open_now": "a-killbots",
+ "open_now": "mv-chorus-2",
  "intro": "The whole film, start to end, and the timeline page for each part. Open the lit one first. Older pages for the same part sit under \"Earlier pages\" so nothing gets lost.",
  "sections": [
   {
@@ -51,7 +51,7 @@
      "id": "mv-chorus-2",
      "name": "Chorus: Outbreak Night (the machines wake; replaces the robots in chorus 2)",
      "at": "1:47",
-     "state": "mood board round 1 (9 Nov): https://claude.ai/artifact/9cbB2BCapQJx89CfXJAHVR · cars turn on an evacuation motorway, port cranes walk",
+     "state": "cut r2 picked (9 Nov): https://claude.ai/artifact/GhgLphPdKSMs8PXNdsAjvH · sequence E (London), 12 shots on the beat; Kai: 'we've got our cut now. Much better.' Premiere build waits until Premiere is free",
      "tone": "wip",
      "scene": "scenes/chorus-outbreak",
      "history": [
@@ -65,6 +65,24 @@
        "name": "The sky, then the silence (mood board r1, paused 9 Nov)",
        "url": "https://claude.ai/artifact/RRb4Xr1ckXnXdFV3AMkNoF",
        "kind": "moodboard",
+       "date": "2026-11-09"
+      },
+      {
+       "url": "https://claude.ai/artifact/9cbB2BCapQJx89CfXJAHVR",
+       "name": "Outbreak Night mood board r1",
+       "kind": "moodboard",
+       "date": "2026-11-09"
+      },
+      {
+       "url": "https://claude.ai/artifact/SsqThCJiHXre1V6eYPzMXp",
+       "name": "Outbreak Night clip picks r1",
+       "kind": "picks",
+       "date": "2026-11-09"
+      },
+      {
+       "url": "https://claude.ai/artifact/FysUZ1XJxJhDobBStkGC9p",
+       "name": "Chorus: six sequences of all 17 clips (Kai picked E, 9 Nov)",
+       "kind": "picks",
        "date": "2026-11-09"
       }
      ]
@@ -119,13 +137,13 @@
    "id": "a-killbots",
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "A · Kill bots",
-   "length": "2:34",
-   "state": "round 21 on the page (page ahead: Premiere r18 not built yet, the bridge was busy in another session); Premiere still 03 GPOM story A kill bots r17 (round 19)",
+   "length": "3:20",
+   "state": "round 22 on the page (page ahead: Premiere waits for Kai's 'build it' while the Goodbye session holds the bridge); Premiere still 03 GPOM story A kill bots r17 (round 19)",
    "tone": "wip",
    "scene": "scenes/second-half-a-killbots",
    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
    "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r17 (same-named bin, radio music left out; Kai's r11 music tail on A1 carried over, its fade still to add by hand); r15 stale; r11-r16 kept; 00 RENDER story still nests r11",
-   "what": "Maddie on the high street; her presentation, dialogue 1D (toast, Schrödinger's joke, 'you are writing it, a storyverse', the regret and the time machine) on a re-rendered hologram; the argument re-edited around Sandra (her later lines over Derek); the motorway, her call to the boss on her, the wide approach, the turn-away, \"That was close.\" Round 21 is on the page: note it there.",
+   "what": "Maddie on the high street; her new Storyverse presentation, dialogue 1F (locked 9 Nov): 'we didn't realise how important you were', Derek picks toast and Sandra says sorry first (Kai's stills in the beads), qualia, the multiverse laughed off ('it just isn't decided yet'), a storyverse you write one decision at a time, the value of genuinely unique training data, 'if we could go back and fix it'; the argument re-edited around Sandra; the kill bots, the call to the boss, the stand-down, \"That was close.\" Round 22 is on the page: note it there.",
    "history": [
     {
      "name": "Dialogue options (the hologram, 1D)",
@@ -237,7 +255,7 @@
     {
      "id": "d-crossing",
      "name": "D · The clean room and the crossing",
-     "state": "ROUND 14 on the page (9 Nov: Sandra 'it feels like dying', Maddie 'only if you're sure', they sit in silence, hands quick to white; 1:26; stand-ins until new shots) · Premiere 06 GPOM story D crossing r10, in sync, in 00 RENDER story (9:45)",
+     "state": "SIGNED OFF (round 19, Kai 9 Nov: \"Claude it's perfect! well done, we have a cut\") · Premiere 06 GPOM story D crossing r15, in sync, in 00 RENDER story",
      "tone": "premiere",
      "scene": "scenes/second-half-d-crossing",
      "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"

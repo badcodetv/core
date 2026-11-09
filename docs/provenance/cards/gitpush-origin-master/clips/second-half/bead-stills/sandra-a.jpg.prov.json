@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-a.jpg",
+ "made": "2026-11-09T20:38:35.746Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. A small front room, a standard lamp on. The woman stands centred, the anger draining out of her face, eyes gentle, one hand reaching forward toward the soft out-of-focus shoulder of a man at the near edge of frame. Plain patterned wallpaper behind her.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": "Cream Jumper Woman"
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "0a83e055-bafc-429d-b172-be6590324833"
+}

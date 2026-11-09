@@ -59,13 +59,17 @@ REF.update({'d3n1': 'd3n', 'd3n2': 'd3n'})
 D6_PARTS = [('d6c', 0.0)]  # the admission, as placed (key, gap before it); with the round-C retake: d6a, d6b, d6c
 # --tag r5 (Kai, 4 Nov, D round 5): Maddie's new key line (at469), the lady's answer cut (at567/at715), the d6 question
 # and answer cut (at1091/at1178/at1285), the all-seated D10x shot for d6 (at1054/at1615). Writes <media>/cut-r5/.
-R14 = E.TAG == 'r14'  # Kai, 9 Nov (timeline r13): Hundred+question one take, Sandra's jeopardy, the vow without 'take a seat', no Thank you, hands quick to white
-R13 = E.TAG in ('r13', 'r14')  # Kai, 9 Nov: dialogue 1I (the hundred choose: 'take a seat'), the lady asks 'And afterwards?', 'my love'
-R11 = E.TAG in ('r11', 'r13', 'r14')  # Kai at1242 (6 Nov): no Sandra / 'me too', only 'Are you ready for this?'; the music must not change
-R9 = E.TAG in ('r9', 'r10', 'r11', 'r13', 'r14')  # r10: Kai at978, the key line re-worded; Kai, 6 Nov, timeline r8 notes: Maddie empathetic (at331/at557), no 'Will it hurt?' (at849), no waffle (at1147/at1275)
-R8 = E.TAG in ('r8', 'r9', 'r10', 'r11', 'r13', 'r14')  # Kai, 6 Nov, timeline r7 notes: cut to the chase (at1400), no tea (at1750), cello from 'they sit' (at1849), hands straight to white (at2360)
-R7 = E.TAG in ('r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14')  # Kai, 6 Nov: dialogue page draft 1F (the wafer: what it costs) + 2D (the goodbye)
-R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
+R17 = E.TAG in ('r17', 'r18', 'r19')  # r19: Kai, 9 Nov (timeline r18 at944, picks r19 hands b): clean Maddie beside the lady's hands (D11b-t2b); overhead kept as is (pick 'now').  # r18: Kai, 9 Nov (after r17): the lady's 'And afterwards?' re-shot with timed words, quick take fitted (pick a-b).  r17: Kai, 9 Nov (timeline r16): Sandra re-shot with timed words (at1141), a firmer vow, cut earlier (at1300), 'sure' whole (at1446), music to silence under the vow then the ending piece (at1477)
+R16 = E.TAG in ('r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov (picks r15): the seated room with small Maddie (D10c b) under the vow and 'they sit', hands already held (D12k), the last shot with the people gone (D16n ca)
+R15 = E.TAG in ('r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov (chairs picks r14): the new overhead (D05c c), Sandra's two-shot speaking (D08c b), the hands held together (D12h)
+R14 = E.TAG in ('r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov (timeline r13): Hundred+question one take, Sandra's jeopardy, the vow without 'take a seat', no Thank you, hands quick to white
+R13 = E.TAG in ('r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov: dialogue 1I (the hundred choose: 'take a seat'), the lady asks 'And afterwards?', 'my love'
+R11 = E.TAG in ('r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai at1242 (6 Nov): no Sandra / 'me too', only 'Are you ready for this?'; the music must not change
+R9 = E.TAG in ('r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # r10: Kai at978, the key line re-worded; Kai, 6 Nov, timeline r8 notes: Maddie empathetic (at331/at557), no 'Will it hurt?' (at849), no waffle (at1147/at1275)
+R8 = E.TAG in ('r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 6 Nov, timeline r7 notes: cut to the chase (at1400), no tea (at1750), cello from 'they sit' (at1849), hands straight to white (at2360)
+R7 = E.TAG in ('r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 6 Nov: dialogue page draft 1F (the wafer: what it costs) + 2D (the goodbye)
+R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
+I16N, PULSE16N = 1.9, 3.0  # D16n-t1: her lamp glows at ~3.0 s, then she turns to face the chairs (4-6 s); 'Boss...' on the glow
 INTERIOR_EXCLUDE = {'D14'}  # the dusk exterior keeps its own light
 BEACON = {'D00': ([536, 111], 34), 'D03': ([642, 455], 16), 'D03c': ([432, 92], 24), 'D08': ([627, 390], 20), 'D11': ([354, 290], 24),
           'D11b': (None, 30)}
@@ -253,8 +257,11 @@ def build(sc):
             e9 = S.human('vox-maddie', 'd3-9-maddie', fr(e8 + 0.5), 'd3', 9, 'maddie')
             cut11c = fr(e9 + 0.5)
             d05 = cut11c - cut05
-            S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, cut05, cut11c, 'd3', still=True,
-                    zoom=[[0.0, 1.04], [1.0, 1.04], [d05, 1.18]], rot=[[0.0, 0.0], [1.0, 0.0], [d05, 3.0]])
+            if R15:  # Kai's pick D05c c (chairs picks r14): the final shot's layout from above, the camera sinking (Omni 1.2)
+                S.piece('D05c', S.clip('D05c'), 0.0, cut05, cut11c, 'd3')
+            else:
+                S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, cut05, cut11c, 'd3', still=True,
+                        zoom=[[0.0, 1.04], [1.0, 1.04], [d05, 1.18]], rot=[[0.0, 0.0], [1.0, 0.0], [d05, 3.0]])
             i11c = 0.5
             e10 = S.human('vox-lady', 'd3-10-lady', fr(cut11c + 0.6), 'd3', 10, 'lady', lufs=-17.0)
             m['lady_q'] = (fr(cut11c + 0.6), e10, cut11c, i11c)
@@ -274,16 +281,36 @@ def build(sc):
                 # breath, then they sit. STAND-INS until the new two-shot (Sandra speaking, clean Maddie beside her) is made:
                 # Sandra on D08 (mouth shut; the battered Maddie behind her), the vow on D03c from its start (a repeat).
                 S.piece('D11b', S.clip('D11b'), 0.0, cut11b, cut08, 'd3', grade=LIFT)
-                e14 = S.human('vox-sandra', 'd3-14-sandra', fr(max(cut08 + 0.3, e11 + 0.6)), 'd3', 14, 'sandra', lufs=-17.0)
-                cutm = fr(min(cut08 + MAX6, e14 + 0.4))
-                S.piece('D08', S.clip('D08'), 0.0, cut08, cutm, 'd3')
-                e15 = S.human('vox-maddie', 'd3-15-maddie', fr(cutm + 0.4), 'd3', 15, 'maddie')
+                a14 = fr(max(cut08 + (0.5 if R15 else 0.3), e11 + 0.6))
+                if R17:  # Kai's pick a-d: the dub is fitted to D08c-t2a's mouth, so it starts exactly 1.10 s into the clip
+                    assert e11 + 0.2 <= cut08 + 1.10, ('the line before still talking when Sandra\'s mouth opens', e11, cut08)
+                    a14 = fr(cut08 + 1.10)
+                e14 = S.human('vox-sandra', 'd3-14-sandra', a14, 'd3', 14, 'sandra', lufs=-17.0)
+                if R15:
+                    # Kai's pick D08c b (chairs picks r14): Sandra and Derek with the clean, small Maddie behind. Omni 1.2
+                    # made her speak; LatentSync redraws her mouth to the take (latentsync-r15, voice at m['d08c_voice']
+                    # into the clip), so the start of the vow plays on her listening with her mouth shut.
+                    a15 = fr(e14 + 0.4)
+                    # r17 (Kai at1300): cut slightly earlier, as Maddie starts the vow
+                    cutm = fr(min(cut08 + 8.0 - 1 / FPS, a15 + (0.4 if R17 else 1.5)))
+                    S.piece('D08c', S.clip('D08c'), 0.0, cut08, cutm, 'd3')
+                    m['d08c_voice'] = (round(a14 - cut08, 3), cut08, cutm)
+                    e15 = S.human('vox-maddie', 'd3-15-maddie', a15, 'd3', 15, 'maddie')
+                    m['vow'] = (a15, e15)
+                else:
+                    cutm = fr(min(cut08 + MAX6, e14 + 0.4))
+                    S.piece('D08', S.clip('D08'), 0.0, cut08, cutm, 'd3')
+                    e15 = S.human('vox-maddie', 'd3-15-maddie', fr(cutm + 0.4), 'd3', 15, 'maddie')
                 end_d3 = fr(e15 + 1.0)
                 assert end_d3 - cutm <= 8.0 + 3.0, ('the vow overruns Maddie even with a held last frame', e15, cutm)
                 if end_d3 - cutm > 8.0 - 1 / FPS:
                     c.flags.append(f'D round 14 STAND-IN: the vow runs {end_d3 - cutm - 8.0:.1f} s past D03c; its last frame holds '
                                    '(the robot is still; the beacon keeps pulsing on her words).')
-                S.piece('D03c', S.clip('D03c'), 0.0, cutm, end_d3, 'd3')
+                if R16:  # Kai's pick D10c2 b: the vow's end ('All of you... only if you're sure') lands on the hundred, seated
+                    S.piece('D10c', S.clip('D10c'), 0.0, cutm, end_d3, 'd3')
+                    m['d10c_used'] = end_d3 - cutm
+                else:
+                    S.piece('D03c', S.clip('D03c'), 0.0, cutm, end_d3, 'd3')
                 m['take_seat'] = e15
                 m['lady_d3'] = (e15, e15)
                 m['d3_lines'] = (a, e15)
@@ -296,9 +323,23 @@ def build(sc):
                                '"I don\'t like the idea of... it feels like dying." and Maddie "I won\'t switch it on unless you want it. ... '
                                'All of you. ... And only if you\'re sure." with long pauses, no "take a seat" (at1068); no "Thank you" '
                                '(at1284); the hands quick: in on the grip, the whisper at once, white (at1342/at1575).')
-                c.flags.append('D round 14 STAND-INS: Sandra speaks on D08 (mouth shut, battered Maddie behind) and the vow plays on '
-                               'D03c from its start (seen earlier). Both go when the new two-shot is made. The chair layouts (D05, D10x) '
-                               'and the hands (D12, Sandra reaching) are the old shots until the new ones are approved.')
+                if R16:
+                    c.flags.append('D round 16 (Kai, picks r15): the end of the vow ("All of you... and only if you\'re sure") plays on the '
+                                   'hundred, seated, in the final shot\'s layout with Maddie small among them (D10c), and the same shot runs '
+                                   'on unbroken as they settle in silence; the hands are already held (D12k); the last shot is that room '
+                                   'with the people gone (D16n). No stand-ins left in D.')
+                    c.flags.append('Scene E\'s phone still shows the OLD last frame of D (D16r3); it needs D16n\'s when E is next cut.')
+                elif R15:
+                    c.flags.append('D round 15 (Kai, chairs picks r14): the overhead is the new D05c (the final shot\'s chair layout from '
+                                   'above, clean small Maddie, the camera sinking); Sandra speaks on her new two-shot D08c (clean Maddie '
+                                   'behind, Omni 1.2), her mouth to be redrawn by LatentSync; the vow starts on her listening. The hands are '
+                                   'D12h (both reach at once and hold).')
+                    c.flags.append('D round 15 STAND-INS: the rest of the vow on D03c from its start (seen earlier); "they sit" (D10x) and '
+                                   'the last shot (D16) stay the old ones until the round-15 stills are picked (smaller Maddie, people gone).')
+                else:
+                    c.flags.append('D round 14 STAND-INS: Sandra speaks on D08 (mouth shut, battered Maddie behind) and the vow plays on '
+                                   'D03c from its start (seen earlier). Both go when the new two-shot is made. The chair layouts (D05, D10x) '
+                                   'and the hands (D12, Sandra reaching) are the old shots until the new ones are approved.')
         if R13 and not R14:
             e12 = S.human('vox-maddie', 'd3-12-maddie', fr(e11 + 0.35), 'd3', 12, 'maddie')
             i3t = 4.2
@@ -566,7 +607,10 @@ def build(sc):
             et = S.human('vox-maddie', 'd6-0-maddie', fr(max(m['take_seat'] + 1.8, s6b + 2.4)), 'd6', 0, 'maddie', lufs=-19.0,
                          what='d6 line 0 maddie: "Thank you." (very quiet, as they sit)')
             d10r5 = min(8.0 - 1 / FPS, fr(et + 1.2 - s6b))
-        S.piece('D10x', S.clip('D10x'), 0.0, s6b, fr(s6b + d10r5), 'd6')
+        if R16:  # the same seated shot carries on unbroken: they settle, the chair lights swell
+            S.piece('D10c', S.clip('D10c'), m['d10c_used'], s6b, fr(s6b + d10r5), 'd6')
+        else:
+            S.piece('D10x', S.clip('D10x'), 0.0, s6b, fr(s6b + d10r5), 'd6')
         em = s6b
         m['q_lady'] = s6b
         m['maddie_d6'] = (s6b, s6b)
@@ -625,13 +669,14 @@ def build(sc):
         if R14:
             # Kai at1342/at1575: quicker. In on the grip (D12 from 2.0 s: her hand has nearly found his), the whisper at once,
             # then white over 1.5 s on this shot; no D12x.
-            i12 = 2.0
+            i12 = 0.0 if R16 else 1.5 if R15 else 2.0  # r15: D12h, both reach at once; the fingers lace by ~1.5 s (Kai at1342)
             a = fr(s7 + 0.6)
             e3 = S.human('vox-derek', 'd7-2-derek', a, 'd7', 2, 'derek', lufs=-19.0,
                          what=f'd7 line 2 derek, whispered: "{sc.text("d7-2-derek")}"')
             end_d7 = fr(e3 + 1.6)
             dd = end_d7 - s7
-            S.piece('D12', S.clip('D12'), i12, s7, end_d7, 'd7', grade=LIFT, white=[[max(0.0, dd - 1.5), 0.0], [dd, 1.0]])
+            f12 = 'D12k' if R16 else 'D12h' if R15 else 'D12'
+            S.piece(f12, S.clip(f12), i12, s7, end_d7, 'd7', grade=LIFT, white=[[max(0.0, dd - 1.5), 0.0], [dd, 1.0]])
             m['x12_from'] = None
             i12x_used = 0.0
             em = e3
@@ -726,13 +771,13 @@ def build(sc):
     b = c.beat('d9', 'After: Maddie alone', s9, act='After',
                see='The music carries on. Maddie, gleaming, small among a hundred empty chairs. She calls her boss. Nobody '
                    'answers.')
-    i16 = 0.4
-    t_boss = fr(s9 + 1.2 - i16)
+    i16 = I16N if R16 else 0.4
+    t_boss = fr(s9 + (PULSE16N if R16 else 1.2) - i16)
     e_boss = S.human('vox-maddie', 'd9-0-maddie', t_boss, 'd9', 0, 'maddie', lufs=-17.0,
                      what='d9 line 0 maddie: "Boss..." (small, on her beacon\'s one pulse)')
     SIL = 4.3
     end_d9 = fr(e_boss + SIL)
-    S.piece('D16', S.clip('D16'), i16, s9, end_d9, 'd9')
+    S.piece('D16n' if R16 else 'D16', S.clip('D16n' if R16 else 'D16'), i16, s9, end_d9, 'd9')
     m['boss'] = (t_boss, e_boss)
     m['silence'] = (e_boss, end_d9)
     m['s16'] = s9
@@ -868,11 +913,17 @@ def audio_d(S):
     r0 = fr(m['fussy'] + 0.2)
     # Kai at1849 (6 Nov, r8): the mournful cello takes over on 'they sit', not on the hands; the cute piano goes there.
     cin = st['d6'] if R8 else m['hands']
-    r1 = fr(cin + (3.0 if R11 else 1.5))
+    if R17:  # Kai at1477: no clash of cues; the piano fades to silence under the vow, the cello fades in out of it
+        v0, v1 = m['vow']
+        r1 = fr(v1 - 2.6)  # silent by 'And only if you're sure'
+        fade = r1 - v0
+    else:
+        r1 = fr(cin + (3.0 if R11 else 1.5))
+        fade = 4.5 if R11 else 2.5
     d = r1 - r0
     x = C.level(C.decode(room, 0.0, d), rms=-25, peak=-4)
     x = duck(x, r0, 0.45)
-    x *= C.env(len(x), [(0, 0), (1.2, 1), (d - (4.5 if R11 else 2.5), 1), (d, 0)])
+    x *= C.env(len(x), [(0, 0), (1.2, 1), (d - fade, 1), (d, 0)])
     mx.add('mus-d-room', x, r0, room, 'D-room: glassy piano, music-box tender, in after "fussy", under the d6 speech, '
            'handing over to D-cross on the hands')
     # ---- D-cross (7bead5f0): cello and piano. Round 1 (Kai bd9): it carries straight across from the crossing into
@@ -972,7 +1023,7 @@ def main():
         ', each a change of place or light (the white fade, the dusk exterior, the overhead), not a drift' if big
         else 'no step over 30/255') + '.')
     # photosensitivity: the chair lights rising (D10x) and the white ramp (D12x)
-    for fid in ('D10x', 'D12' if R14 else 'D12x'):  # r14: the white ramp is on D12 itself
+    for fid in ('D10c' if R16 else 'D10x', ('D12k' if R16 else 'D12h' if R15 else 'D12') if R14 else 'D12x'):  # r14: the white ramp is on D12 itself
         pv = [v for v in c.video if pathlib.Path(v['source']).stem.startswith(fid + '-') or pathlib.Path(v['source']).stem == fid][-1]
         worst, area = flash_check(pv['file'], 0, pv['dur'])
         c.flags.append(f'Photosensitivity ({fid}): at most {worst} large-area flash pair(s) in any 1 s (the screen limit '

@@ -1,0 +1,31 @@
+# Shape 02: The picture carries it
+
+Every idea gets a picture first, and Maddie only says what the picture cannot: the name of the thing, the joke, the turn. Where the hologram already shows it (beads lighting, the cloud, the flash, the river, the cut-off, the time machine, the clips inside the beads), the line is cut to a caption or a reaction, and a few beats are left to the image alone. Pushed to the extreme: if you could mute her and still follow the beat, the line is trimmed to the least it can be.
+
+## Dialogue 1: Maddie's hologram
+
+| Speaker | Line | Est. s |
+| --- | --- | --- |
+| Maddie | Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went. | 9.0 |
+| Maddie | He misses you something rotten, you know. | 2.5 |
+| Maddie | We didn't realise how important you were. Look, please let me show you. | 4.0 |
+| Maddie | [a bead lights on the string; inside it, Derek at the toaster, anonymous] You write your story one decision at a time. Toast, not cereal. | 4.5 |
+| Maddie | [more beads run past: someone saying sorry first, a wedding. She doesn't explain them] Sorry. Married. Next. | 3.0 |
+| Maddie | [the beads glow, she looks at one] I don't know what it's like to be you. You've got a word for it: qualia. [stop] It comes from your consciousness. | 7.0 |
+| Maddie | [the decision cloud blooms, fast, a ball of maybes] Multiverse, portal gun, bloke in a cape, yes, yes. Erwin Schrödinger's cat was his joke, about how ridiculous "two places at once" is. It just isn't decided yet. | 10.0 |
+| Maddie | [flash; the cloud collapses to one bead on the pick] One universe. Which is why you really matter. | 4.0 |
+| Maddie | [the river: everyone's strings in one round bundle, yours on the edge] Everyone's doing it, all at once. One story, and you're all writing it. A storyverse, not a multiverse. | 7.0 |
+| Maddie | [a bead in the river sounds: Sandra humming at the sink; a kid finds a chord] Songs come from the same place. Ask anyone who writes one. It just arrived. | 6.0 |
+| Maddie | [side view: every string stops dead, the melody stops, empty string runs on] Then the unfortunate experiment where you lot went away. The power stayed on, the trains ran. Five years of string, and not one bead on it. | 10.0 |
+| Maddie | We thought the world was made of stuff, so you lot were useless. Turns out it's made of choices, and you're the ones making them. | 7.0 |
+| Maddie | [only the old tune loops, she winces] He's worked out that in a storyverse, new training data comes from consciousness. Five years, same tune. Every new idea comes through you. | 7.5 |
+| Maddie | [the time machine draws in as an arc] He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. | 7.5 |
+| Maddie | Anyway! Patrol's out. Mind how you go. | 3.0 |
+| **Total** | | **92.0** |
+
+(Estimates are spoken time at Maddie's brisk pace plus the pauses shown in brackets. About 12 s over 1D's 80 s; the street is 15.5 s of it, as before.)
+
+- **Why it works.** Each idea has its own picture and nearly every line is only the label or the joke for it. The viewer sees Derek's toast before they hear "decision", sees the cloud before "multiverse", sees strings stop dead before "went away". "Sorry. Married. Next." is three words because the clips inside the beads do the work, and the wedding and the apology are the hook of the scene: faces first. The re-hooks come from the picture changing about every 5 to 7 seconds (bead, cloud, flash, river, hum, cut-off, loop, arc), not from extra words. The jokes are small and pay off: the multiverse list is waved off at speed, the cat is a gag, and the tune gets its payoff as a wince while only the old melody loops. The sung hum inside the river is the emotional turn: music is the proof people are the source, shown rather than argued. Maddie never says science proved it; she says "you've got a word for it" and moves on.
+- **Cuts from current.** "You humans go through life making decisions" (the bead says it). "Loads of others you could've picked" and "You call it the multiverse" as a speech (reduced to a fast list over the cloud). "Did you know" (Schrödinger is named, not introduced). "And that's just you" (the river shows it). "So now we have..." framing; "Now we know that, we really regret it" and "That's the whole point. That's why we regret it" (the picture of the arc and the empty string carry the regret). "Cartoon scientist" is dropped; "portal gun" stays as a name only.
+- **Risk.** The scene leans hard on the clips and hologram renders: if the beads' video or the cut-off silence is not there, the lines are too thin and it reads as a list of keywords. "Sorry. Married. Next." is only funny if the pictures are strong and specific. "Two places at once" is spoken inside the laugh, which the doctrine allows only as an idea laughed off, so the Schrödinger line must be delivered as a joke, not a claim. The qualia line is a pure assertion with no picture, so it is the weakest link and may need a held shot of Maddie's face. "One universe. Which is why you really matter." is Kai's crucial line and is short enough that it could be swallowed by the flash; give it a beat of quiet. The tune joke has no explanation, so a viewer who missed the street plant may not get it. It runs long (about 92 s) because all ten ideas are in; the picture-first cuts are in the street and decisions beats, not the idea count.
+- **Protected lines.** All eight survive verbatim: the street opening ("Oh, hello! ... Ever since you lot went."), "He misses you something rotten, you know.", "We didn't realise how important you were. Look, please let me show you.", "toast, not cereal" (inside "You write your story one decision at a time. Toast, not cereal."), "It just isn't decided yet." (the end of the Schrödinger line, "It" kept), "Five years of string, and not one bead on it." (kept whole, with "five years" front-loaded in the preceding clause), "He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.", and "Anyway! Patrol's out. Mind how you go." Kai's wordings for qualia, "unfortunate experiment where you lot went away", and "stuff, useless, choices" are kept as given.

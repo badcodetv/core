@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/12-b.jpg",
+ "made": "2026-11-09T20:36:54.347Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "200mm telephoto from a farm lane across the flat Selby fields: Drax power station's cooling towers venting steam, its chimney lit red. From it a line of steel lattice pylons runs to the horizon, where Leeds glows under the cloud. In the foreground, a terrace of village houses with lit windows, and two small figures at a field gate, backs to us. Blue-white arcs flash at the nearest pylons. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "40df009c-614e-40c9-9df1-d93fcdefa7f0"
+}

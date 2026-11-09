@@ -1,0 +1,47 @@
+{
+ "title": "Crossing Chairs Picks",
+ "eyebrow": "GPOM scene D · round 15 · stills",
+ "heading": "Smaller Maddie, a new last shot, hands held",
+ "intro": "Your round-14 picks are in: overhead c and Sandra b are being animated now. These three rows came out of your notes. Pick one per row; I animate the picks next. Stills only: no video credits spent on these.",
+ "sections": [
+  {
+   "h": "From your notes",
+   "lede": "Same chair layout as before; Maddie made much smaller.",
+   "groups": [
+    {
+     "slot": "D10c2",
+     "title": "They sit, with Maddie much smaller (your note: she's far too big)",
+     "line": "Your pick a, with Maddie shrunk to about knee height beside the chairs.",
+     "kind": "image",
+     "opts": [
+      {"id": "b", "src": "r15/D10c-r15s-b.jpg", "label": "b: small, mid-room (my pick)", "warn": ""},
+      {"id": "c", "src": "r15/D10c-r15s-c.jpg", "label": "c: small, nearer the camera", "warn": ""},
+      {"id": "m", "src": "r15/D10c-r15-b.jpg", "label": "m: only a little smaller", "warn": "probably still too big"}
+     ]
+    },
+    {
+     "slot": "D16n",
+     "title": "The last shot: the room above with the people gone (your ref note)",
+     "line": "Clean, small Maddie; no suit or gloves on the floor; blankets, mugs and empty suits left on the chairs.",
+     "kind": "image",
+     "opts": [
+      {"id": "ca", "src": "r15/D16c-r15-a.jpg", "label": "ca: made from the seated shot, people removed (my pick)", "warn": ""},
+      {"id": "cb", "src": "r15/D16c-r15-b.jpg", "label": "cb: same, more empty suits on the chairs", "warn": ""},
+      {"id": "fa", "src": "r15/D16f-r15-a.jpg", "label": "fa: the old last shot cleaned up", "warn": ""},
+      {"id": "fb", "src": "r15/D16f-r15-b.jpg", "label": "fb: old last shot cleaned up", "warn": "Maddie still big"}
+     ]
+    },
+    {
+     "slot": "D12h",
+     "title": "Hands already held (your note: both hold hands, nobody reaching)",
+     "line": "I'm also animating the old plate with both of them reaching together, so you'll have both on the timeline to compare.",
+     "kind": "image",
+     "opts": [
+      {"id": "a", "src": "r15/D12h-r15-a.jpg", "label": "a: fingers laced (my pick)", "warn": ""},
+      {"id": "b", "src": "r15/D12h-r15-b.jpg", "label": "b: hands clasped, tighter framing", "warn": ""}
+     ]
+    }
+   ]
+  }
+ ]
+}

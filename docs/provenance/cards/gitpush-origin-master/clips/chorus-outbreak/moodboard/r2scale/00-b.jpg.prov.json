@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/00-b.jpg",
+ "made": "2026-11-09T20:36:54.152Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Drone five metres above one stopped hatchback on the M4, hazards mid-blink. Beyond it the jam fills both carriageways to the horizon, two rivers of red and white lights. Small adults carrying bags walk away along the hard shoulder, backs to us. On the skyline a city burns in three separate glows, smoke lit orange from below, a tower crane black against the fire. 24mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "24c7e06c-6bc6-4fde-8175-ee0e3bcb9aa4"
+}

@@ -158,7 +158,15 @@ def profile(speaker, scene, how, text, beat=None):
     p, n = re.subn(r'(## THE SCENE\n).*?(\n\n###)', lambda m: m.group(1) + (WHERE_BEAT.get((scene, beat)) or WHERE[scene]) + m.group(2), base,
                    count=1, flags=re.S)
     assert n == 1, speaker
-    if (scene, beat, speaker) in STYLE_BEAT:
+    # VO_STYLE='{"scene":"D","beat":"d3","speaker":"maddie","style":"Style: ...","pace":"Pace: ..."}' overrides one beat's
+    # Style/Pace for a run (D round 17, Kai at1300: a choice screen of emotions for one line).
+    ov = json.loads(os.environ['VO_STYLE']) if os.environ.get('VO_STYLE') else None
+    if ov and (ov['scene'], ov['beat'], ov['speaker']) == (scene, beat, speaker):
+        style, pace = ov['style'], ov['pace']
+        p, ns = re.subn(r'^Style: .*$', lambda m: style, p, count=1, flags=re.M)
+        p, np_ = re.subn(r'^Pace: .*$', lambda m: pace, p, count=1, flags=re.M)
+        assert ns == np_ == 1, (speaker, beat)
+    elif (scene, beat, speaker) in STYLE_BEAT:
         style, pace = STYLE_BEAT[(scene, beat, speaker)]
         p, ns = re.subn(r'^Style: .*$', lambda m: style, p, count=1, flags=re.M)
         p, np_ = re.subn(r'^Pace: .*$', lambda m: pace, p, count=1, flags=re.M)

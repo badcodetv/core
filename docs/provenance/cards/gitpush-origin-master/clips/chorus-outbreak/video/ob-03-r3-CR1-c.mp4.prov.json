@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/video/ob-03-r3-CR1-c.mp4",
+ "made": "2026-11-09T20:05:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "Slow push in. Across the skyline every tower crane rips itself up out of its half-built tower at once, rising several storeys into the night, their long jibs swinging round, steel lattice rigid and solid, red lamps at the tips, chunks of concrete tumbling from the towers. The rivers of headlights below keep streaming. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/CR1-c.jpg",
+ "why": "Kai 9 Nov: iterate until clean. Second take on 03: all the cranes rise together.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/CR1-c.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-outbreak",
+  "key": "03-r3",
+  "frame": 3,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T19:52:36.457Z"
+ }
+}

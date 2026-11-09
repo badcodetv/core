@@ -1,0 +1,12 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05c-t1-slow.mp4",
+ "made": "2026-11-09T20:12:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05c-t1.mp4",
+ "why": "D round 15: the overhead sits under 'Hundred... What will it feel like?' and Maddie's answer (13.1 s)",
+ "prompt": "setpts=1.33*PTS,fps=24 (slow the camera sink to cover 13.1 s of lines without a frozen tail)"
+}

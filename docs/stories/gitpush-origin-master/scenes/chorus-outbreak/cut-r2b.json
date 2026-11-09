@@ -1,0 +1,67 @@
+{
+ "song": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+ "song_in": 113.917,
+ "bpm": 174,
+ "fps": 24,
+ "sequence": "gpom-chorus-outbreak-r2b",
+ "round": 2,
+ "note": "Round 2 option B: Only the big ones. All 17 clips (Kai 9 Nov: \"cut videos of all of these\"); in-points at each clip's peak.",
+ "shots": [
+  {
+   "clip": "ob-01-CA1-b.mp4",
+   "beats": 4,
+   "in": 3.5,
+   "why": "cup ripples, red light rising",
+   "beat": "CA"
+  },
+  {
+   "clip": "ob-s02-BD2-a.mp4",
+   "beats": 4,
+   "in": 4.6,
+   "why": "depot: the big blast dome",
+   "beat": "S1"
+  },
+  {
+   "clip": "ob-s06-VD2-b.mp4",
+   "beats": 3,
+   "in": 3.3,
+   "why": "viaduct arch: blast blooms in the arch",
+   "beat": "S2"
+  },
+  {
+   "clip": "ob-04-r3-RK1-e.mp4",
+   "beats": 4,
+   "in": 3.6,
+   "why": "crane leg blasts out of the road",
+   "beat": "RK"
+  },
+  {
+   "clip": "ob-s05-WS2-a.mp4",
+   "beats": 3,
+   "in": 2.6,
+   "why": "airliner: blast beyond",
+   "beat": "S2"
+  },
+  {
+   "clip": "ob-s10-DV2-a.mp4",
+   "beats": 3,
+   "in": 4.3,
+   "why": "Dover: flash over the Channel",
+   "beat": "S3"
+  },
+  {
+   "clip": "ob-s08-DX2-b.mp4",
+   "beats": 4,
+   "in": 4.4,
+   "why": "Drax: the cooling towers go up",
+   "beat": "S3"
+  },
+  {
+   "clip": "ob-s09-RW2-a.mp4",
+   "beats": 7,
+   "in": 2.5,
+   "why": "Rotterdam from Fenland: the chain of blasts",
+   "beat": "S3"
+  }
+ ]
+}

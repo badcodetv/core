@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/13-b.jpg",
+ "made": "2026-11-09T20:36:54.358Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "300mm from a low rise over flat Fenland: a village of a dozen lit cottages and a church in the middle distance. On the far horizon, edge to edge, stands an unbroken rank of machine silhouettes: port cranes, pylons and wind turbines, all leaning forward like a wall of giants, lit from below by a band of field fire. Substations along their line burst white-blue, and the nearer turbines spin out of control. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "b849d0e7-2a90-42f8-b6dc-4b6f06ea287b"
+}

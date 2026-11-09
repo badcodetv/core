@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-c.jpg",
+ "made": "2026-11-09T20:45:33.728Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Use only her face and hair from the provided photo; the scene is new. Seen from a hallway through an open kitchen doorway: she has crossed the lino and laid her hand on the forearm of a man in a dark green jumper who stands with his back to camera, arms folded. She is in the middle of the doorway, head tilted, face open and apologetic. Two unwashed mugs on the side, a plain wall. Quiet and observed from a distance, naturalistic daylight, muted colour, film grain. Nothing written anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "d629095e-6c3f-425d-ab4a-5c76d1cff64c"
+}

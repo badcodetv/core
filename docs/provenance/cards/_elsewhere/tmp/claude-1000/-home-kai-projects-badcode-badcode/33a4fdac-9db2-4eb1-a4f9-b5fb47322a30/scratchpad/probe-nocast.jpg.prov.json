@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/probe-nocast.jpg",
+ "made": "2026-11-09T20:37:58.544Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. A small terraced-house kitchen on a grey morning. A man in a dark green ribbed jumper stands in the middle at the worktop, one hand hovering between a chrome toaster and a plain cereal box, frowning as he decides. Plain magnolia wall behind him, flat window light from the left.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "a3c95ac9-10da-4da7-9939-3308ef7ca9a8"
+}

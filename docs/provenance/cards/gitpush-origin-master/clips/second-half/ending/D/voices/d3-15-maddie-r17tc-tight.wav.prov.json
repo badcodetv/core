@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17tc-tight.wav",
+ "made": "2026-11-09T20:59:32+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "tighten (tighten.py logic, ceiling 1.2 s, lead/tail trimmed)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17tc.wav",
+ "why": "D round 17 vow options (Kai at1300): pauses held to 1.2 s, words untouched"
+}

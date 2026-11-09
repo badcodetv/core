@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D12h-r15-a.jpg",
+ "made": "2026-11-09T20:02:48.593Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The two people's hands are already joined across the gap between their chairs: her fingers laced through his, both arms resting relaxed on the armrests, a gentle steady grip, nobody reaching. Their sleeves, cuffs, knitwear, the chairs, the lit floor between them, the framing and the cold light are exactly as in the picture.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D12-r1-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D12-r1-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "a503f392-c51e-44f8-a3b6-9fb2c7aabe0d"
+}

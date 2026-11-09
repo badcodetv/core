@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/dub-r17/D11c-t2b-b.mp4",
+ "made": "2026-11-09T21:37:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r18qb.wav",
+ "why": "r18 (Kai: the old lady's 'afterwards' lip sync is off): quick take r18qb fitted onto D11c-t2b's mouth, clip muted"
+}

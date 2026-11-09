@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1.mp4",
+ "made": "2026-11-09T20:25:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D10c-r15s-b.jpg",
+ "why": "D round 16: Kai picked D10c2 b (picks r15): they sit, the final shot's layout, Maddie small; for 'All of you... only if you're sure' and 'they sit'",
+ "source_id": "c87940d5-31f6-45b7-8cc0-91b42cfd2be1",
+ "prompt": "One unbroken shot, the camera locked off. The hundred people in their reclining chairs settle back, quietly, in their own time: a man pulls his blanket up, a woman reaches across and takes her neighbour's hand, heads rest back and eyes stay open. The small robot in the gap stays put, its orange lamp turning slowly. Toward the end the light rings under every chair swell a little brighter together. No cuts, no one stands.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D10c-r15s-b.jpg"
+ },
+ "settings": {
+  "durationSeconds": "10",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "f9731461-1392-487e-b1a0-e3ab9fbdf130"
+ }
+}

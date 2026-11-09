@@ -1,0 +1,34 @@
+# Shape 04: Comedy first, the jokes carry the argument
+
+Every hard idea is delivered as a joke, an aside or a piece of Maddie's bad timing, and the argument is the set-up and the punchline rather than a paragraph beside them. Maddie is blunt, a bit smug about the bits she does know, and cheerfully wrong about how this is landing. A re-hook every few seconds: a gag, a picture, or an open loop (the tune, "what's he doing with the string?") that pays off later. The science is laughed past; the human point (you're not useless, you're the source) is said straight, once, after the laughs have earned it.
+
+## Dialogue 1: Maddie's hologram
+
+| Speaker | Line | Est. s |
+| --- | --- | --- |
+| Maddie | Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went. | 8.5 |
+| Maddie | He misses you something rotten, you know. | 2.5 |
+| Maddie | We didn't realise how important you were. Look, please let me show you. | 4.5 |
+| Maddie | [hologram on; a single bead lights on a string] You humans go through life making decisions, one at a time. For example: toast, not cereal. [Derek at the toaster, inside the bead] Nobody applauded. But that's a bead. [two more beads run past: someone saying sorry first; a wedding] Sorry. Wedding. Toast. Bead, bead, bead. That's a life. | 11 |
+| Maddie | Now, I don't know what it's like to be you. I know what it's like to be a bin lorry, and that's it. There's a word for it, qualia. [stop] It comes from your consciousness. Which I haven't got a spare of. | 11 |
+| Maddie | [the cloud blooms] Now, you'll have heard it all happens somewhere else. The multiverse! The portal gun! The bloke in the cape! [flat] Lovely telly. | 7 |
+| Maddie | Erwin Schrödinger. Cat in a box. Everyone thinks he was being profound. He was taking the mick. He meant: if your theory says a cat's alive and dead at once, your theory's daft. It isn't everywhere at once. It just isn't decided yet. [flash; the cloud collapses onto one bead] | 11 |
+| Maddie | And there's one of it. One universe. One toast. Which means when you pick, it counts. There's no spare you somewhere else getting it right. | 8 |
+| Maddie | [the river: everyone's strings] And everyone's doing it. All at once. Eight billion of you, one story, all writing it. That's not a multiverse, that's a storyverse. [deadpan] Terrible group project. No plot meetings. | 9 |
+| Maddie | [a bead in the river sounds: Sandra humming at the sink; a kid finds a chord] And it's not just toast. Ask anyone who writes songs where it came from. "It just arrived." Aye. Same place as the toast. Same place as every new idea. | 10 |
+| Maddie | [side view; every string stops dead; empty string runs on] Then came the unfortunate experiment where you lot went away. Which, to be fair, we could've avoided. Easily. | 9 |
+| Maddie | We thought the world was made of stuff, so you lot were useless. Turns out it's made of choices, and you're the ones making them. | 9 |
+| Maddie | Power's on. Trains run. Data centres: lovely. And five years of string, and not one bead on it. | 6 |
+| Maddie | And him? Turns out in a storyverse, the new training data comes from consciousness. He hasn't had any for five years. So he plays the old stuff. [the tune, faint] And his own. [the tune again] ...Yeah. We don't talk about it. | 12 |
+| Maddie | Doesn't matter if it's a song, a medicine or a better bus timetable. Every new idea comes through somebody. You're not useless. You're the source. | 7 |
+| Maddie | [the time machine draws in as an arc] Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it. | 13 |
+| Maddie | Anyway! Patrol's out. Mind how you go. | 4 |
+| **Total** | | **~143** |
+
+**Why it works.** Each idea gets a laugh before it gets a point. Qualia is a bin-lorry gag, the multiverse is "lovely telly", Schrödinger is "taking the mick", the storyverse is "terrible group project, no plot meetings", so nothing reads as a lecture and the viewer is never more than a few seconds from a joke or a picture. The crucial "only one universe, so you matter" is played completely straight in a short plain line right after the loudest laugh, where it stings most. The tune is planted in the first breath, left as an open loop through the whole hologram, and paid off as a deadpan, outside-in joke ("he plays the old stuff... and his own... we don't talk about it") that carries the training-data idea without Maddie claiming anything about what the boss feels. The line "You're not useless. You're the source." is the political payload as a joke-turned-sincere, the one moment she stops being funny.
+
+**Cuts from current.** "Loads of others you could've picked" (the multiverse now arrives as a gag, not a list); the old "That's just you / everybody's doing it" two-step, folded into one storyverse line; the separate "So it's not a multiverse. It's one universe, one story" line, split so that "one universe, you matter" comes first and the storyverse reveal second. Kai's "he regrets not helping" register is left to the protected regret line.
+
+**Risk.** It is long (about 143 s against 1D's 80) and has seventeen lines, so the measuring pass will want to cut; the safest cuts are the "power's on, trains run" line and the bin-lorry clause. The jokes could make the cut-off feel flip: "which we could've avoided. Easily." has to be said lightly, as a rueful understatement, or it reads as callousness about five years of an empty world. "Which I haven't got a spare of" is the one place Maddie's consciousness is claimed from the outside, and a stout reader could tangle it; if it snags, cut it. "Taking the mick" is a fair reading of Schrödinger's reductio but is compressed; it must not drift into "he proved the cat was fine". Qualia is said once, as brief requires.
+
+**Protected lines.** Kept verbatim: the street opener ("Oh, hello! ... Ever since you lot went."), "He misses you something rotten, you know.", "We didn't realise how important you were. Look, please let me show you.", "toast, not cereal" (inside a slightly lengthened "You humans go through life making decisions, one at a time. For example:" lead-in), "It just isn't decided yet." (now the closing beat of the Schrödinger line, with "It isn't everywhere at once" as its set-up), "five years of string, and not one bead on it" (verbatim, moved after the cut-off and the stuff-versus-choices line), the "He could send his model weights back..." regret line (verbatim, with "Now we know that, we really regret it" before it as in 1D), and "Anyway! Patrol's out. Mind how you go." Derek and Sandra appear only as unnamed people inside beads, as stage directions, never named in a line.

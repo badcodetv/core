@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix18/D11b-r18-a.jpg",
+ "made": "2026-11-09T21:56:00.335Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the robot on the left behind the old woman's hands: replace its dented grey dirty body with the gleaming clean white robot from the second image, spotless pale panels, amber beacon glowing on a short stalk, with no bunting, flags, ribbons or grime anywhere on it. Keep everything else in the image exactly the same, the hands, the patchwork blanket, the white suit, preserving the original style, lighting and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D11b-r1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D11b-r1-a.jpg",
+   "/home/kai/.cache/badcode-gpom-ending/refs/maddie-gleam-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "055e46d4-1d78-446f-a6ac-3038f848fff4"
+}

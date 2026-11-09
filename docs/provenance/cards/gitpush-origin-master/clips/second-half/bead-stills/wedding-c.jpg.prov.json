@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-c.jpg",
+ "made": "2026-11-09T20:49:07.016Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The couple from the two provided photos on their wedding day, faces and hair only, everything else new. Wide shot from across a quiet British high street: a small wedding party on the steps of a plain civic building, and in the centre the couple, small in the frame, coming down the steps hand in hand through a burst of confetti thrown by a handful of friends. She in a simple cream dress, he in a grey suit. Wet pavement, one parked car, a grey sky. Documentary photograph, muted colour, fine grain. No signs, no lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "5b09e76f-0ac9-4e4a-baf2-0b7fbb650842"
+}

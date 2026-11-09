@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-b.jpg",
+ "made": "2026-11-09T20:40:58.579Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Take only his face, hair and build from the provided photo and build a brand-new picture. Close shot at worktop height: centred in the square, his open hand hangs undecided between a slice of white bread poised over a toaster slot and a blank cereal box, his stubbled face just above them looking down, lips pursed, deciding. Shallow focus, everything behind him a soft cream blur. Soft natural morning light, real skin texture, 35mm still photograph grain. No text on any packet.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "79930522-7802-4dfa-82d1-7941bcb98542"
+}

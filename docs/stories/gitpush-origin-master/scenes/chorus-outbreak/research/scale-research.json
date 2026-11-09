@@ -1,0 +1,714 @@
+{
+ "synth": {
+  "shots": [
+   {
+    "id": "MP1",
+    "title": "Outbreak pull-back on the M4",
+    "slot": "Shot 2, after the cup rippling on the dashboard: the first cut out from inside one car to the whole jam, with the city burning on the horizon.",
+    "scale": "wide, motorway to city (drone rise)",
+    "still_prompt": "Drone five metres above one stopped hatchback on the M4, hazards mid-blink. Beyond it the jam fills both carriageways to the horizon, two rivers of red and white lights. Small adults carrying bags walk away along the hard shoulder, backs to us. On the skyline a city burns in three separate glows, smoke lit orange from below, a tower crane black against the fire. 24mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "The drone rises straight up and pulls back from five metres to about a hundred and fifty, tilting gently up until the horizon settles on the top third. The hazards keep blinking, the walkers keep walking, and two fireballs bloom one after the other on the city skyline, lighting the smoke from beneath. One continuous shot, no cuts.",
+    "from": "games-and-concept-art: Outbreak Pull-Back (The Last of Us outbreak night); Swindon distant-blast grammar"
+   },
+   {
+    "id": "IL1",
+    "title": "The import lot wakes, Portbury",
+    "slot": "Shot 3, after MP1: a quick insert-like top-down shot. Thousands of parked cars wake at once, setting up the fire racing down the lanes.",
+    "scale": "high top-down aerial, district",
+    "still_prompt": "Looking straight down from 120 metres over the car import lot at Royal Portbury Dock: thousands of identical new cars in tight rows on grey tarmac under orange floodlights. The bottom half of the lot already has its headlights on, a field of white; the top half is still dark. Four tiny figures stand frozen beside a security hut at the edge. 24mm aerial. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "The drone tilts slowly up from straight down toward the horizon while the wave of headlights sweeps on row by row across the rest of the lot. The tilt reveals the quay cranes on the estuary and a fireball rising over the container terminal, turning the water orange. One continuous shot, no cuts.",
+    "from": "real-disaster-aerials: The Import Lot Wakes (2015 Tianjin port car-lot aerials), relocated to a UK import lot"
+   },
+   {
+    "id": "SJ1",
+    "title": "Spaghetti Junction drives as one",
+    "slot": "Shot 5, after the existing fire racing down the motorway lanes: the same 'cars wake' beat at city scale, on Britain's best-known road.",
+    "scale": "high aerial, city",
+    "still_prompt": "Spaghetti Junction, Birmingham, from 300 metres at a slant: the stacked concrete flyovers of the interchange all packed with stopped evacuation traffic, a mat of tail lights under sodium lamps. Small figures climb the grass embankments away from the road. Tower-block windows along the canal are half dark. Far behind the city centre a substation fireball lights the low cloud from underneath. 24mm aerial. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow rise and pull-back from a single flyover until the whole knot of the interchange fills the frame. Partway through, every car on every level flicks to full beam together and starts moving in step, the gaps between them closing, while the fireball keeps climbing on the horizon. One continuous shot, no cuts.",
+    "from": "uk-landscape: Spaghetti Junction wakes (War of the Worlds 2005 jam; synchronised traffic played straight)"
+   },
+   {
+    "id": "BD1",
+    "title": "Depot over the M1, long lens",
+    "slot": "Shot 6, after SJ1 and before the existing tower cranes pull free: the first big distant fireball, shot like news footage, with homes in the foreground.",
+    "scale": "telephoto wide, district",
+    "still_prompt": "From a ridge three kilometres off, a 300mm lens stacks it all together: silhouetted across the bottom, a row of semi-detached roofs and a lamp post; behind them the M1, six lanes of stopped cars with a few tiny figures walking between them; behind that a fuel depot near Hemel Hempstead, its white tanks bursting into domes of orange fire that feed one black plume filling the sky. Heat shimmer. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow news-camera zoom in over eight seconds as the tanks go up from left to right, each dome of flame feeding the plume, the biggest at about five seconds. The heat shimmer thickens as the lens lengthens, and every car's hazard lights blink in exact unison. One continuous shot, no cuts.",
+    "from": "real-disaster-aerials: Depot Over the Motorway; evacuation-at-scale: Buncefield Again; scale-craft long-lens compression"
+   },
+   {
+    "id": "PH1",
+    "title": "London from Primrose Hill",
+    "slot": "Shot 8, after the existing tower cranes pulling free of half-built towers: the cranes' beat repeated across all of London, with every jib swung east, and the blackout rolling toward the crowd.",
+    "scale": "wide over-the-shoulder, city",
+    "still_prompt": "From the top of Primrose Hill, a line of small adult silhouettes stands with backs to us, a few raised phones glowing blank. Below them spreads central London: the towers of the City and a dozen tower cranes over building sites, every crane jib swung to point the same way, east. Three districts have already gone black; a substation fireball rises from one, and a cold cyan flash lights the cloud over another. 50mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "Held still for a beat, then a slow push in over the crowd's shoulders toward the skyline. A line of substation fireballs walks across the city from east to west, each district behind it goes black, and the darkness rolls up toward the hill. One continuous shot, no cuts.",
+    "from": "uk-landscape: London from Primrose Hill; grid-blackout: Blue Dawn at Midnight (Con Edison Astoria 2018 cyan sky); scale-craft: hill-top crowd over the shoulder"
+   },
+   {
+    "id": "WS1",
+    "title": "Window seat over the burning city",
+    "slot": "Shot 11, after the existing crane foot slamming onto the flyover: up into the sky, where the fire running down the lanes is seen from an airliner.",
+    "scale": "aerial POV, city",
+    "still_prompt": "Inside an airliner, shot through the rounded window: the wingtip with its red light, and three kilometres below a British city laid out as an orange grid. Two motorways run into it, packed with headlights, with fire racing along their lanes in bright stripes. A fuel depot on the edge churns orange, its smoke column leaning and lit from beneath. Several districts have dropped to black. 35mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "The aircraft banks gently and the horizon tilts a few degrees as the city slides under the wing, with slight cabin vibration. Beyond the depot a second fat white-orange dome of fire goes up and lights the underside of the smoke, silent at this height. One continuous shot, no cuts.",
+    "from": "orbit-and-high: Window Seat Over Mordor (Jan 2025 LA fire passenger videos); Threads distant city glow"
+   },
+   {
+    "id": "MF1",
+    "title": "The last Mersey ferry",
+    "slot": "Shot 12, directly before the existing Rotterdam port cranes wading: the cranes rise from the people's side of the water, then wade in the next cut.",
+    "scale": "wide, district (crowd foreground)",
+    "still_prompt": "From the stern deck of an overloaded Mersey ferry, a crowd of adult silhouettes at the rail in coats with bags, warm deck lights on their backs. Across black water, the Liverpool docks: a row of giant container cranes, booms lifting upright like necks rising, sparks showering where one has pulled a leg off its rail. Behind the port a fuel depot erupts in a dome of orange light that streaks across the water. 35mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow dolly back along the stern rail, bringing more of the crowd and more of the far bank into frame. Across the water the crane booms keep lifting one after another and the depot fireball climbs, its reflection racing over the water toward the ferry. The cranes stay distant. One continuous shot, no cuts.",
+    "from": "films-city-scale: The Last Ferry and the Cranes Standing Up (War of the Worlds 2005 Hudson ferry); uk-landscape: Felixstowe raises its heads (booms as necks)"
+   },
+   {
+    "id": "CC1",
+    "title": "Car carrier beaches the seafront",
+    "slot": "Shot 14, after the existing Rotterdam cranes wading: the ships come ashore too, and the machines reach the towns.",
+    "scale": "low wide, district",
+    "still_prompt": "Waist height on wet sand at a Victorian seaside town: a slab-sided car-carrier ship with its deck lights blazing has driven itself bow-first up the shingle and towers over the beach huts and the sea wall. Small figures run inland along the promenade under streetlamps, and the terrace windows are going dark street by street. On the headland behind, a fuel depot fireball rises into low cloud and lights the whole bay. 35mm wide. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow push in across the wet sand toward the bow while surf foams around the hull. The ship only settles slightly, the figures keep running along the promenade, and the fireball on the headland keeps rolling upward, with a second, smaller flash further down the coast. One continuous shot, no cuts.",
+    "from": "machine-uprising: The Car Carrier Beaches the Seafront (Leave the World Behind's tanker; Golden Ray 2019)"
+   },
+   {
+    "id": "WD1",
+    "title": "White dome over Tilbury",
+    "slot": "Shot 15, after CC1: the single biggest city-scale explosion, a Beirut-style shock dome seen across the Thames from a home.",
+    "scale": "handheld wide zoom-out, city",
+    "still_prompt": "Handheld from a terraced-house balcony in Gravesend, looking across the Thames to Tilbury: chimney pots, a washing line and a satellite dish in the foreground, and one small figure watching from the next balcony. Across the black river stand the port's quay cranes and container stacks, with the town's orange street grid climbing behind. A white hemispherical shock cloud swells out from the docks over the water, an orange fireball rising inside it. 50mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "Handheld with slight natural shake, a slow optical zoom out from the port as the white dome rolls across the water toward camera and the town's lights behind it fail block by block. The autofocus breathes as the shock arrives and the washing line jerks. One continuous shot, no cuts.",
+    "from": "real-disaster-aerials: The White Dome Across the Water (Beirut 4 Aug 2020 balcony footage)"
+   },
+   {
+    "id": "VD1",
+    "title": "Last train on the viaduct",
+    "slot": "Shot 16, after WD1: a machine with people aboard goes dark in the middle ground, while the city skyline burns behind it.",
+    "scale": "wide framed through an arch, city",
+    "still_prompt": "From a low hillside, framed through one arch of the long Victorian brick viaduct at Stockport, which crosses a valley of terraced streets: a commuter train stopped dead mid-span, its carriage lights dying car by car, a few small silhouettes at the windows, sparks spitting from the overhead line. Beyond is the city skyline with tower cranes, whole sectors gone dark, and an orange fireball and a smoke column on the horizon. 85mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow lateral dolly right with the brick arches passing in the foreground. The last carriages go dark, and through the gaps two distant explosions appear, an orange fireball and then a rising smoke column, while a cyan arc pulse flickers in the cloud. One continuous shot, no cuts.",
+    "from": "grid-blackout: Last Train on the Viaduct (UK 9 Aug 2019 power cut; Children of Men / 28 Days Later compositions)"
+   },
+   {
+    "id": "CT1",
+    "title": "Cooling towers over the cul-de-sac",
+    "slot": "Shot 17, after VD1: an ordinary estate watches the power station blow. Its open, empty driver's door sets up the empty-seat ending.",
+    "scale": "medium wide street, district",
+    "still_prompt": "The head of a 1990s Midlands cul-de-sac of semi-detached houses: a streetlight, wheelie bins, and a car on a driveway with its door open, interior light on and driver's seat empty. Small adults in dressing gowns stand on their front lawns, all facing the same way. Over the fields beyond the last rooftops stand Ratcliffe-on-Soar's cooling towers with red warning lamps, and a huge orange fireball climbs out of the centre tower into the cloud. 35mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "Held still for two seconds, then a slow dolly push down the street toward the horizon as the fireball rises and lights the underside of the clouds. On the flash every streetlight on the estate dies at once, and the open car's interior light is the last one left on. One continuous shot, no cuts.",
+    "from": "games-and-concept-art: Cooling Towers on the Horizon (Fallout 4 Sanctuary Hills opening)"
+   },
+   {
+    "id": "CH1",
+    "title": "Combines advance on the town",
+    "slot": "Shot 18, after CT1: the uprising leaves the cities for the countryside, the first region-scale beat.",
+    "scale": "ground-level wide, region",
+    "still_prompt": "Ground level in harvested Lincolnshire stubble: a line of eight combine harvesters side by side, headers lowered and headlight bars blazing, dust trailing, advancing across the field toward the lens. Two kilometres behind them, a market town's church tower and rooftops are lit by a burning grain silo, and on the horizon a much bigger fireball rises over the next town. One car's tail lights flee down a lane. 28mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow dolly backward low over the stubble, retreating in front of the advancing line so the combines gain on the lens. Dust and smoke trail behind them, the silo burns, and the distant fireball rolls higher. They roll on wheels only, with no other moving mechanics. One continuous shot, no cuts.",
+    "from": "machine-uprising: Combine Harvesters Advance on the Town (Terminator Salvation's Harvester, taken literally)"
+   },
+   {
+    "id": "DX1",
+    "title": "Drax lights the fuse",
+    "slot": "Shot 19, after CH1: the national grid becomes the machine, a chain of arcs timed to the drum fill.",
+    "scale": "telephoto pan, region",
+    "still_prompt": "200mm telephoto from a farm lane across the flat Selby fields: Drax power station's cooling towers venting steam, its chimney lit red. From it a line of steel lattice pylons runs to the horizon, where Leeds glows under the cloud. In the foreground, a terrace of village houses with lit windows, and two small figures at a field gate, backs to us. Blue-white arcs flash at the nearest pylons. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow pan left along the pylon line as arcs jump blue-white from pylon to pylon like a lit fuse, and each village window goes dark as the arc passes. At the far end of the line a big orange fireball rises under the Leeds glow. One continuous shot, no cuts.",
+    "from": "uk-landscape: The grid lights its own fuse; grid-blackout: The Pylon Line Catches; Threads across the fields"
+   },
+   {
+    "id": "RW1",
+    "title": "The wall on the Fenland horizon",
+    "slot": "Shot 20, after DX1: the Rumbling at regional scale. Every kind of machine stands in one line across the horizon, and a village is in the way.",
+    "scale": "telephoto extreme wide, region",
+    "still_prompt": "300mm from a low rise over flat Fenland: a village of a dozen lit cottages and a church in the middle distance. On the far horizon, edge to edge, stands an unbroken rank of machine silhouettes: port cranes, pylons and wind turbines, all leaning forward like a wall of giants, lit from below by a band of field fire. Substations along their line burst white-blue, and the nearer turbines spin out of control. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow tilt down from the burning sky and smoke to the lit village in the foreground, keeping the horizon wall in frame throughout. The machines barely move and only lean, while flashes run along the horizon from left to right, turning into orange fireballs, and the line of fire edges closer. One continuous shot, no cuts.",
+    "from": "scale-craft: The wall on the horizon (Attack on Titan 'The Rumbling', seen only from far off; Shin Godzilla)"
+   },
+   {
+    "id": "DV1",
+    "title": "Dover: the ferries leave without us",
+    "slot": "Shot 21, after RW1: the island's way out is the sea, and the ships go without anyone. Scale reaches across the Channel.",
+    "scale": "cliff-top wide, region",
+    "still_prompt": "From the edge of the White Cliffs above Dover, with grass in the foreground: below, a ribbon of queued lorry and car headlights coils down the A20 into the port, and small figures with torches stand on the cliff road. In the harbour every ferry and tug, lights on, turns away from the quay in a line and steers itself out to sea. A container ship burns on the Channel horizon. 50mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow push forward over the cliff lip, so the grass drops away and the harbour opens up beneath. The ferries keep turning out to sea in procession, and a faint second fireball flashes on the French coast. One continuous shot, no cuts.",
+    "from": "evacuation-at-scale: Dover, the Ferries Turn Back Out (Operation Brock Dec 2020; Dunkirk's mole)"
+   },
+   {
+    "id": "OB1",
+    "title": "Britain goes out from orbit",
+    "slot": "Shot 22, the last before the existing empty driver's seat: the widest frame in the film, the whole country going dark, then the hard cut back down to one car. It also echoes the film's own space-to-terminal opening.",
+    "scale": "orbit, country",
+    "still_prompt": "Through the curved edge of a space-station window: Great Britain and Ireland below, amber city clusters joined by thin threads of motorway light, a faint green aurora over the thin blue atmosphere line. Across the Midlands and the South the clusters are going dark in a ragged wave, while London is still lit. Over the dark patches, small white points swell into orange blooms under the cloud. Long lens. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+    "motion_prompt": "A slow, steady drift with the station's orbit, the island sliding diagonally from upper left to lower right as the darkness spreads north and four or five pinprick flares bloom and fade under the cloud. On the last beat London goes out. One continuous shot, no cuts.",
+    "from": "orbit-and-high: Britain Goes Out From Orbit (NASA crew time-lapses, Puerto Rico VIIRS cascade); films-city-scale / scale-craft orbit variants; s01 opening bookend"
+   }
+  ],
+  "rejected": [
+   "Airliners taxi into the fuel farm: strong, but BD1 already has a fuel depot behind a jammed motorway, and twelve widebodies moving in formation risk morphing.",
+   "Felixstowe raises its heads: booms rising across water is the same beat as MF1, which won because it adds a crowd lit by warm light in the foreground.",
+   "Two Carriageways contraflow: a great idea, but a high aerial over a motorway with skyline fireballs repeats MP1 and SJ1. Keep it as the first re-roll if SJ1's synced traffic fails.",
+   "River of Torches top-down rise: a third straight-up motorway rise after MP1 and IL1; the cars-leaving-people beat already sits in SJ1 and CT1.",
+   "Grid Death from 2,000 ft / Grid Goes Out Block by Block (top-down city blackout): WS1 and OB1 already cover a lit grid seen from above. A sector-by-sector wipe may need the ffmpeg mask lane, so hold it as a hybrid fallback.",
+   "Blue Dawn at Midnight: the hill crowd over a city duplicates PH1, so its cyan sky pulse was folded into PH1 and VD1 instead.",
+   "Chimney-pot telephoto refinery and Estuary Refinery Chain: the same long-lens composition of homes in front of a tank-farm chain as BD1.",
+   "The Ridge / Valley City / Railway Bridge / Skyline From the Services: four more variants of onlookers on high ground watching a city, after PH1 already does it best.",
+   "Falling Through the Burning Cloud and Edge of Space balloon: aerial region drops that sit between WS1 and OB1 without adding a new idea. The balloon could swap in for OB1 if the orbit shot reads as CGI.",
+   "Satellite Pass Over the Port: the god's-eye view is apt, but a monochrome satellite look breaks the 35mm photographic register.",
+   "The Pylon March (Tallnecks): pylons tearing free and stepping means walking and bending rigid steel close up, Omni's known weakness. RW1 delivers the Rumbling with leaning silhouettes instead.",
+   "Lorries circle the truck stop: an interesting top-down orbit, but twenty articulated lorries in a closed ring risk tangled geometry, and the Maximum Overdrive echo tips toward camp.",
+   "Thames Barrier closes / Citadel over London: a second London skyline after PH1, and the Barrier gates turning is fiddly rigid-steel motion.",
+   "Blue drone swarm beam: drones as a murmuration is new, but the targeting beam reads as a weapon system and invites a policy block.",
+   "Convoy below the ridge (Peak District): the orderly convoy idea is good, but a lone watcher on a ridge sits too close to DX1's and PH1's backs-to-camera foregrounds."
+  ]
+ },
+ "pool": [
+  {
+   "angle": "films-city-scale",
+   "ideas": [
+    {
+     "name": "The Ridge: a valley city goes dark district by district",
+     "scale": "city",
+     "in_frame": "Foreground, lower third: the grass embankment and crash barrier of a jammed motorway on a ridge, a row of tiny evacuee silhouettes standing on the barrier with their backs to us, car headlights frozen in a line. Below them, filling the frame, a British valley city at night (terraced streets on the hillsides, a cathedral-like tower, a ring of half-built tower blocks with tower cranes). The city's sodium-orange street grid is going out in a wave, one district at a time, from the river outwards. Against the black left behind, three tower crane silhouettes are leaning off their towers, and far on the horizon two huge orange fireballs bloom over the docks, lighting the low cloud from underneath.",
+     "camera": "85mm long lens from the ridge, eye height of the people on the barrier; a slow, steady push-in over the silhouettes' shoulders toward the city across the 8 s, so the blackout wave and the fireballs grow in frame.",
+     "explosion": "Two staggered fireballs on the horizon at the docks, the second bigger, both lighting the cloud base orange; a pressure flash that briefly silhouettes the people on the barrier.",
+     "reference": "War of the Worlds (2005): the Ferrier family watching from the hillside as the tripods work through the town, and the lightning-storm EMP that kills every light at once; Cloverfield's skyline blackout.",
+     "source_url": "https://en.wikipedia.org/wiki/War_of_the_Worlds_(2005_film)",
+     "why_it_works": "It is the zoomed-out version of the shots we already have: the same cranes, but now at the scale of a whole city, seen by people who are small and fleeing. The blackout wave shows the grid waking city-wide without a body. It is mostly smoke, fire and light falling across a static landscape, which Omni does well, and the push-in is a single camera move."
+    },
+    {
+     "name": "Grid Death from 2,000 Feet",
+     "scale": "city",
+     "in_frame": "Straight-down-ish aerial over a dense British city at night: a tight orange grid of terraced streets, a ring road, a river with bridges, rail lines glowing. Substations show as small bright nodes. The city goes black in sectors: each sector dies with a blue-white arc flash at its substation, then its streets drop out to black. On the edge of frame a power station's cooling towers have a rising mushroom of orange fire and black smoke climbing past the camera. Car headlights on the ring road have all stopped in place.",
+     "camera": "24mm aerial, about 2,000 ft; a slow tilt down from the horizon fireball to straight down over the grid, with a slight descending drift, so the frame ends looking down on the blackout spreading under the camera.",
+     "explosion": "A power station on the city edge going up in a towering fireball and smoke column that rises toward the lens; the blue arc flashes of the substations act as smaller explosions across the grid.",
+     "reference": "Cloverfield (the whole Manhattan skyline going dark at once); 2012 (Roland Emmerich's top-down LA grid tearing open); NASA Black Marble night photography for the look of a lit city from above.",
+     "source_url": "https://www.slantmagazine.com/film/cloverfield",
+     "why_it_works": "It shows the machine intelligence as the grid itself, not a body: the city is switched off from inside, sector by sector. It is pure light and fire with no rigid-steel morphing, which plays to the generator. The visible cost is a city of homes going black and traffic left standing, and the scale is a clean step up from the motorway shots."
+    },
+    {
+     "name": "Falling Through the Burning Cloud",
+     "scale": "region",
+     "in_frame": "The camera is just below a ragged cloud deck lit orange from underneath. Through the gaps a British conurbation sprawls to the horizon: motorway interchanges drawn as rivers of stopped red tail lights and white headlights, terraced estates, an oil refinery by an estuary. Three separate fires burn miles apart (the refinery, a port, a city centre), each with a rising smoke column that leans in the wind. A line of electricity pylons runs out of the dark toward the city, its cables sparking. Smoke drifts across the lens.",
+     "camera": "Wide 18mm lens looking straight down through the cloud; one continuous descent, dropping through a final wisp of cloud into clear air so the burning landscape opens up below.",
+     "explosion": "The refinery tank farm detonates in a rolling orange fireball as the camera clears the cloud, with secondary flashes rippling along the estuary.",
+     "reference": "Godzilla (2014): the HALO jump into San Francisco, with the jumpers falling through storm cloud toward a burning city lit by red flares.",
+     "source_url": "https://www.awn.com/print/vfxworld/mpcs-guillaume-rocheron-talks-godzilla",
+     "why_it_works": "It gives the chorus a vertigo drop and a sudden jump in scale, from one jammed motorway to every motorway around a city. The cost is written in the frozen lines of headlights and the estates under the fires. A descent through smoke and cloud is exactly the slow aerial drift Omni handles best, and nothing in the frame has to walk."
+    },
+    {
+     "name": "The Last Ferry and the Cranes Standing Up",
+     "scale": "district",
+     "in_frame": "From the stern of an overloaded river passenger ferry crossing a wide British estuary at night (Mersey or Thames scale). The crowd at the rail is small silhouettes with their backs to camera, coats and bags, and the ferry's warm deck lights are on them. Across black water, the far bank is a port: the line of giant container cranes are lifting their booms upright like necks rising, and one crane has pulled a leg off its rail with a shower of sparks. Behind the port, a gas holder or fuel depot explodes, throwing a dome of orange light that reflects in a long streak across the water toward the ferry.",
+     "camera": "35mm handheld-steady on the stern deck at eye height, a slow dolly back along the rail so more of the crowd and more of the far bank come into frame; the camera never cuts to the cranes, they stay distant.",
+     "explosion": "A fuel depot behind the docks going up in a large dome fireball, its light racing across the water and over the backs of the crowd.",
+     "reference": "War of the Worlds (2005): the Hudson ferry sequence, warm practical light on the boat set against the blue night, the tripods rising out of the water behind it.",
+     "source_url": "https://birthmoviesdeath.com/2015/09/15/an-ode-to-the-tripod-attack-in-war-of-the-worlds.html",
+     "why_it_works": "It ties directly into our existing Rotterdam cranes-wading shot but from the people's side and at a distance, so the cranes only have to move a little (booms rising, one leg sparking), and Omni is spared walking mechanics. Warm crowd light against a blue-black port is a strong, real-camera palette, and the crowd's backs keep everyone anonymous and unharmed."
+    },
+    {
+     "name": "Britain Switching Off, from Orbit",
+     "scale": "orbit",
+     "in_frame": "Night view of Great Britain from low Earth orbit: the familiar shape picked out in city lights (London the brightest blot, the Midlands, Manchester-Leeds, Glasgow-Edinburgh, the motorway spines between them as thin bright threads). The lights are dying in clusters, city by city, from south to north, and where each cluster goes dark, a tiny orange pinprick flash and a faint smoke smudge is left. The edge of the curved Earth and a thin blue atmosphere line sit at the top of the frame; clouds over the Atlantic catch the flashes.",
+     "camera": "Equivalent of a 50mm lens from orbit; a slow lateral drift along the length of the island, south to north, keeping pace with the blackout so it seems to chase the camera.",
+     "explosion": "Dozens of tiny orange flares across the country, the largest ones in the docks and power-station regions, each one too small to show detail but bright enough to light the cloud near it.",
+     "reference": "Independence Day (1996): the cuts out to the global and orbital view while cities are hit one after another; NASA Black Marble images of the UK at night; the ISS night passes over Europe.",
+     "source_url": "https://www.gamesradar.com/13-best-city-destruction-scenes-in-movies",
+     "why_it_works": "It is the most zoomed-out frame in the film: the whole country waking up at once, which answers Kai's ask for scale in one shot. It needs no figures, no steel and no walking, only lights going out and flares, so it is easy for the generator and can't break the hard rules. The cost is plain: every cluster of light that dies is a city of homes. It also cuts cleanly into the empty driver's seat, from the whole country back down to one car."
+    }
+   ]
+  },
+  {
+   "angle": "distant-blasts",
+   "ideas": [
+    {
+     "name": "The Railway Bridge (power station going up)",
+     "scale": "city",
+     "in_frame": "Night. Foreground: a Victorian iron railway footbridge on the edge of a northern English town, 30-40 adults in coats and dressing gowns along the railing, seen from behind as small dark silhouettes, some holding phones up (screens just glowing, no text). Middle distance: rooftops of terraced houses, a few windows lit. Far distance (2-3 km): a gas-fired power station and its switchyard, the pylons marching away from it glowing cherry-red along their lines. One cooling tower is lit from below by an orange fireball rising out of the switchyard; a second, smaller blast is just blooming beside it. A faint shimmer of heat haze, sparks drifting.",
+     "camera": "135mm long lens from the far end of the bridge, eye height. A slow push in along the backs of the onlookers toward the gap between two shoulders, so the fireball grows in the gap. No cut, no pan.",
+     "explosion": "The switchyard transformers detonating in sequence, a rolling orange-white fireball climbing the side of the cooling tower, sparks raining down the pylon lines as they arc.",
+     "reference": "HBO Chernobyl ep.1, Pripyat residents watching the reactor glow from the railway bridge; long-lens compression from Threads' bystander shots.",
+     "why_it_works": "The audience's own position: ordinary people who came out to look, not yet understanding. The grid itself waking is pure 'machine, not humanoid', and the long lens stacks people, homes and blast in one plane, so the cost is in every frame. Omni handles fireballs, sparks and a slow push well; nothing has to walk.",
+     "source_url": "https://www.inverse.com/article/57012-chernobyl-disaster-tv-show-versus-real-life-facts-from-1986"
+    },
+    {
+     "name": "Valley City, Lights Going Out",
+     "scale": "city",
+     "in_frame": "Night, from a hillside allotment above a valley city like Sheffield or Stoke. Foreground: a low brick wall, a shed, two adults standing small at the wall's end. Below: the whole city spread across the valley in sodium orange, terraced streets climbing the far hill. In the city centre a fuel depot has just gone up: a huge dome of flame turning into a rising black-and-orange column that lights the underside of the clouds. Whole districts are already black, the dark patches spreading street by street toward the camera.",
+     "camera": "35mm wide, locked off at the start, then a slow tilt up following the column as it climbs into the cloud base. One move only.",
+     "explosion": "A Buncefield-scale vapour-cloud fireball in the centre of the city, a tall column with a flattened head, without the nuclear mushroom shape (keeps it machine-made, not the bomb).",
+     "reference": "Threads (1984), the cloud seen over Sheffield's horizon from the outskirts while people freeze; the real 2005 Buncefield oil depot explosion in Hertfordshire, the UK's largest peacetime blast.",
+     "why_it_works": "This is the zoomed-out, whole-city frame Kai asked for, and it echoes the Swindon war blast. The cost is the lights dying district by district, homes rather than bodies. A tilt-up on a rising column is the kind of move Omni does best.",
+     "source_url": "https://wikipedia.com/wiki/Threads_(1984_film)"
+    },
+    {
+     "name": "Estuary Refinery Chain",
+     "scale": "region",
+     "in_frame": "Night, from a Victorian seafront promenade on the far side of a wide estuary (Fawley across Southampton Water, or Canvey/Thames). Foreground: wet railings, a closed kiosk, a line of small figures walking fast away along the prom, one stopped and looking back. Across 4 km of black water: a refinery skyline of flare stacks and cracking towers, its storage tanks bursting into fireballs one after another left to right, each reflected as a long orange streak in the water. Tankers at the jetty are lit up and moving off the berth with no one aboard.",
+     "camera": "50mm, a slow lateral dolly right along the railings at hip height, so the railings slide past in the foreground while the chain of blasts travels across the horizon in the same direction.",
+     "explosion": "Tank after tank going up in a chain across the far shore, the clouds above lit orange, with the reflections doubling every flash.",
+     "reference": "Oppenheimer's Trinity sequence, the flash travelling to the observers before any sound arrives (van Hoytema's in-camera blasts, scale sold by the foreground); The War Game (1965), with its firestorm on a Kent horizon.",
+     "why_it_works": "The scale is regional: a whole coastline's industry waking at once. Water reflections double the drama for free, and the driverless tankers keep the machines as machines. The lateral move gives parallax without asking Omni to animate anything rigid.",
+     "source_url": "https://www.cinemablend.com/movies/how-christopher-nolan-pulled-off-oppenheimers-atomic-explosion-with-practical-effects"
+    },
+    {
+     "name": "Airliners Taxi Into the Fuel Farm",
+     "scale": "district",
+     "in_frame": "Night, the jammed evacuation motorway beside a big airport (an M25/Heathrow sort of geography). Foreground: car roofs in a frozen queue, three or four adults standing on their bonnets and roofs, small and backlit. Beyond the perimeter fence, across the dark apron: a dozen widebody airliners with all their lights on, taxiing in a slow line with no stairs or crew, wingtip to wingtip. The lead aircraft has rolled into the fuel farm, which is erupting in a wall of flame that lights every fuselage from behind.",
+     "camera": "85mm from just above car-roof height, a slow crane up that rises over the roofs and the fence to reveal the whole apron and the blast behind it.",
+     "explosion": "The airport fuel farm going up in a long wall of fire, with secondary fireballs as more tanks catch.",
+     "reference": "Children of Men, ordinary British infrastructure gone wrong seen from inside a stuck crowd; Oppenheimer's watchers on the ground, faces lit by a light far away.",
+     "why_it_works": "It ties straight to the existing motorway shots and opens them out to district scale. Aircraft moving on their own is an eerie image of machines acting, with no humanoid body, and taxiing is slow, simple motion where walking cranes are not. The crane-up reveal gives one clear camera move with a big payoff.",
+     "source_url": "https://www.thefilmagazine.com/threads-remains-frighteningly-relevant-at-40/"
+    },
+    {
+     "name": "The Island Goes Dark (high aerial)",
+     "scale": "country",
+     "in_frame": "Night, very high aerial, about 8 km up, looking south-east over England toward London: the familiar web of motorway and town lights. Whole regions are going black in waves, like a dimmer pulled down the country. Across the dark, scattered pinprick flashes bloom and fade at 20-50 km apart (power stations, depots, substations), each throwing a brief orange glow onto the low cloud below the camera. Thin smoke columns lean in the wind. Up close at the bottom edge of the frame, the lights of one small market town are still on, then they go out.",
+     "camera": "A 24mm-equivalent aerial, a slow forward drift with a gentle downward tilt toward the last lit town, one continuous glide.",
+     "explosion": "Many distant blasts at once across the country, small in frame but read as huge by their spread and by the glow on the clouds.",
+     "reference": "The War Game and Threads' national-scale strike maps; the familiar night-satellite image of Britain, made literal.",
+     "why_it_works": "It is the most zoomed-out shot in the set, the point where the outbreak is everywhere at once. The visible cost is the last lit town going dark, homes without bodies. Omni drifts well through aerial views and scattered glows, and it gives the edit a breather before it slams back to the empty driver's seat.",
+     "source_url": "https://www.sheffieldtribune.co.uk/the-evening-sheffield-was-blown-up/"
+    }
+   ]
+  },
+  {
+   "angle": "real-disaster-aerials",
+   "ideas": [
+    {
+     "name": "Depot Over the Motorway (Buncefield, long lens)",
+     "scale": "district",
+     "in_frame": "Shot from a hill about 3 km away on a long lens, at night. Across the bottom third, a six-lane motorway is solid with stopped cars: two rivers of red tail-lights and white headlights, with a few tiny figures walking between the cars toward the hard shoulder. Behind the motorway, a fuel depot's squat white storage tanks catch fire one after another, left to right, each one a dome of orange fire that lifts into a single black plume. The plume is lit orange from below, leans with the wind and fills the top half of the frame. In the foreground, a row of semi-detached roofs and a lamp post sit in silhouette. Heat shimmer warps everything near the fire. The cars' hazard lights all blink in perfect unison, the only sign the machines are awake.",
+     "camera": "300mm equivalent on a tripod, about 40 m up on a ridge. One slow push in over 8 s, as if a news cameraman is zooming in, with the heat shimmer getting stronger as the lens gets longer.",
+     "explosion": "The tanks go up in sequence, each a rolling dome of orange flame that feeds one black plume. The last and biggest one goes off about 5 s in.",
+     "reference": "Buncefield oil depot fire, Hemel Hempstead, 11 Dec 2005, right beside the M1 (which was closed twice). Its 140 km plume was visible from orbit. News crews shot it on long lenses from the surrounding hills.",
+     "why_it_works": "It is a real British disaster in a real British landscape (motorway plus depot plus semis), so it reads as news, not CGI. The long lens stacks homes, motorway and fireball into one plane, which is what makes real disaster footage look huge. The hazards blinking in unison carry the 'machines woke up' idea without a single moving part Omni has to animate. Smoke and fire are Omni's strong suit."
+    },
+    {
+     "name": "The Import Lot Wakes (Tianjin cars)",
+     "scale": "district",
+     "in_frame": "An overhead drone view at night of a vast port car-import lot: thousands of identical brand-new cars in tight rows on grey tarmac under orange sodium floodlights. A wave of headlights switches on row by row, sweeping across the lot from the bottom of frame, until the whole grid glows white. A handful of tiny figures in hi-vis stand frozen at the edge by a security hut. Beyond the lot, the container terminal and the quay cranes sit on the horizon, and behind them a fireball rises over the docks, lighting the estuary water orange.",
+     "camera": "A drone at about 120 m. One slow forward tilt-up over 8 s, from looking straight down at the rows to revealing the horizon and the fireball.",
+     "explosion": "A distant orange-white fireball with a mushroom of smoke over the container terminal, about 1.5 km away, rising as the camera tilts up to find it.",
+     "reference": "The 2015 Tianjin port explosions: aerial photographs of thousands of new cars at the port lot, burned in perfect rows. Also UK car-import lots such as Portbury and Southampton.",
+     "why_it_works": "A grid of identical cars is the most uncanny image of machines in their thousands, and it stays rigid, so there are no walking mechanics. The wave of headlights is cheap for Omni to animate and reads instantly as 'they are all awake at once'. The tilt-up gives the chorus its zoomed-out reveal, with the distant explosion as the payoff."
+    },
+    {
+     "name": "The White Dome Across the Water (Beirut)",
+     "scale": "city",
+     "in_frame": "From a residential rooftop or a high street of terraced houses on one side of an estuary at night, looking across the water at a lit port city: quay cranes, a container stack, a grain silo, and the city's orange streetlight grid climbing the hill behind. A fire burns at the port. Then a white hemispherical condensation dome swells out from it across the water and the docks, and behind it the city's lights go out block by block. In the foreground, a washing line, chimney pots, a satellite dish and one small silhouetted figure standing on a balcony watching.",
+     "camera": "Handheld, eye level, about a 50mm phone-like framing, as though someone grabbed their phone. One slow optical zoom out over 8 s, from the port fire to the whole city and the dome, with slight natural shake and autofocus breathing as the shockwave arrives.",
+     "explosion": "A smaller fire at the port grows, then a huge detonation throws out a white Wilson-cloud dome that rolls across the water toward camera, with an orange-red fireball and a pink-brown plume rising inside it.",
+     "reference": "The Beirut port explosion of 4 Aug 2020, filmed by dozens of bystanders from balconies across the city. The hemispherical condensation dome forms about 1\u20132 s after the blast and is clearest over humid air near water.",
+     "why_it_works": "The Wilson dome is the single most recognisable image of a real city-scale explosion this decade, and real phone handheld is the fastest way to make it feel true. The domestic foreground (chimneys, washing line) is the visible cost. The figure is small, safe and watching, which meets the never-harm rule. The lights dying block by block shows the grid 'deciding' without any machine body."
+    },
+    {
+     "name": "The Grid Line Burns (pylons as a fire front)",
+     "scale": "region",
+     "in_frame": "An aerial view at night over the Pennine moors: a chain of tall steel electricity pylons striding over the hills to the horizon. One after another, each pylon flashes a blue-white arc and sets the heather alight at its base, until a continuous line of fire runs along the whole route across the hills, exactly like a wildfire front. In the valley below, a mill town's orange streetlight grid goes dark in sections as the flashes reach it. A queue of cars' headlights crawls up the one road out of town.",
+     "camera": "Helicopter at about 600 m. One steady lateral track over 8 s parallel to the pylon line, with slight helicopter vibration, keeping the town in the lower third.",
+     "explosion": "A distant substation on the edge of town blows: a blue-white flash, then an orange fireball that briefly lights the low clouds from beneath. It lands about two-thirds of the way through.",
+     "reference": "Stuart Palley's 'Terra Flamma' night long exposures of California wildfire fronts on hillsides above towns. Helicopter news footage of fire lines at night. The 2019 Kincade fire, started by a transmission tower.",
+     "why_it_works": "It turns 'the machine' into the National Grid, a real machine that is already everywhere in Britain, so the region-scale threat needs no humanoid body. A fire line across hills is a shape Omni renders well, and the sequential arcs give the shot rhythm to cut on the drum and bass. The town going dark is the visible cost at a scale the current shots lack."
+    },
+    {
+     "name": "Britain From the Space Station",
+     "scale": "orbit",
+     "in_frame": "An ISS-window night photograph looking down over Britain: the familiar web of orange city lights (London, the M4 corridor, the Midlands, Manchester-Liverpool) under thin cloud, with the curve of the Earth and a faint green airglow on the horizon. Bright points of fire bloom at the ports and refineries (Thames estuary, Southampton, the Mersey, the Forth). Each sends out a smoke plume lit from below, and dark patches spread outward from them as the cities' lights fail region by region. A sliver of the station's window frame sits soft in one corner.",
+     "camera": "A fixed camera behind the station window, as if a long lens were held against the glass. One slow drift over 8 s as the station's orbit carries the view south-east across the country, with very slight lens breathing.",
+     "explosion": "Fireballs at the ports and refineries, visible from orbit as hard white-orange pinpricks. One, on the Thames estuary, flares big enough to light the cloud deck around it.",
+     "reference": "Real ISS night photographs of the UK and Europe's city lights. ESA Envisat's image of the Buncefield plume spreading over London and southern England within five hours.",
+     "why_it_works": "It is the most zoomed-out frame possible, the 'this is everywhere' beat the chorus needs, and it echoes the film's own space-to-terminal opening. Real orbital night photography has a specific look (sodium-orange webs, airglow, window reflections) that makes it believable. Lights going dark region by region shows the cost with no bodies at all. It is a near-static drift, which Omni handles easily."
+    }
+   ]
+  },
+  {
+   "angle": "machine-uprising",
+   "ideas": [
+    {
+     "name": "The Car Carrier Beaches the Seafront",
+     "scale": "district",
+     "in_frame": "A British seaside town at night: a long promenade of Victorian terraces and a pier in the right third. A huge ro-ro car-carrier ship, hull dark and slab-sided with its deck lights blazing, has driven itself bow-first up the shingle so its bow towers over the beach huts and the sea wall. Tiny silhouetted people run inland along the promenade under streetlamps. Behind the town on the headland, a fuel depot burns: a tall orange fireball rising into low cloud, lighting the whole bay from behind. Windows in the terraces going dark street by street.",
+     "camera": "35mm lens at waist height on the wet sand, wide. One slow push-in toward the bow as surf foams around the hull. The fireball keeps rolling upward in the background; the ship barely moves, only settles.",
+     "explosion": "A fuel depot or refinery on the headland behind the town: one slow-rising mushroom fireball, and a second smaller flash further down the coast.",
+     "reference": "Leave the World Behind (2023): the tanker 'White Lion' running aground and scattering beachgoers, shot at Sunken Meadow State Park, Long Island. Also the real Golden Ray car-carrier capsize (2019).",
+     "why_it_works": "A ship is a real machine and needs no walking mechanics. A ship full of new cars driving itself into a town reads at once as machines with no one at the wheel. The beach-level camera makes the hull monumental while the fleeing people and the terraces losing power show what it costs. Omni handles a slow push, surf and a rising fireball well.",
+     "source_url": "https://www.atlasofwonders.com/2023/12/where-was-leave-the-world-behind-filmed.html"
+    },
+    {
+     "name": "The Skyline From the Services",
+     "scale": "city",
+     "in_frame": "An extreme wide shot from a hill-top motorway service-area car park looking down a valley at a whole British city at night: tower blocks, a cathedral-like spire and cranes, about 10 km away. Explosions bloom across the skyline one after another, orange domes with smoke columns lit from below, and districts black out in blocks. In the foreground, hundreds of parked cars in neat rows switch their headlights and hazard lights on all at once, by themselves. A few small figures stand frozen among them, backs to camera.",
+     "camera": "85mm long lens from shoulder height, compressing the car park against the burning city. One slow lateral drift to the left along the car rows. Headlights are already on at the start; the explosions keep rolling in the background.",
+     "explosion": "A chain of three or four blasts walking across the far skyline, each with a lit smoke column. Then a substation flash turns one district blue-white before it goes black.",
+     "reference": "Leave the World Behind's ending: the clear view of the Manhattan skyline as bombs detonate and the city goes up in smoke. Also the parked trucks waking with their headlights in Maximum Overdrive (1986).",
+     "why_it_works": "It gives Kai the zoomed-out, Swindon-style distant explosion at real city scale, and grounds it with the machine-uprising detail of cars waking by themselves in the foreground. The long lens puts both the near cost (the people) and the far cost (the city) in one frame. A lateral drift over static cars is easy for Omni.",
+     "source_url": "https://www.denofgeek.com/movies/leave-the-world-behind-ending"
+    },
+    {
+     "name": "The Lorries Circle the Truck Stop",
+     "scale": "district",
+     "in_frame": "Seen from high above at night: a lone motorway truck stop with a fuel forecourt canopy, a diner block and a few parked cars. Twenty articulated lorries with all their lights blazing drive in a slow closed ring around it like wolves, leaving tyre trails across the wet tarmac. A handful of tiny people huddle under the canopy lights. Beyond, the dark motorway runs to the horizon where a city glows orange and a large explosion is lighting up the clouds.",
+     "camera": "Drone at about 60 m, steep top-down at 45 degrees, 24mm. One slow orbit of a quarter-circle clockwise, so it moves against the lorries' anticlockwise ring and you feel their speed.",
+     "explosion": "A city on the horizon with one big fireball lighting the cloud base and a few smaller flashes, so the truck stop is one island in a country that is already burning.",
+     "reference": "Maximum Overdrive (1986): the trucks circling the Dixie Boy truck stop and penning the survivors in. Also the firebombed gas-station set of Terminator Salvation's Harvester attack.",
+     "why_it_works": "Cars and lorries are the machines this chorus already has, so the shot proliferates the existing cut instead of adding a new idea. The overhead orbit turns a car chase into a pattern of predators, and reads at a glance even in a cut under a second long. Vehicles driving in a ring are rigid bodies on a simple path, which Omni can manage, unlike walking cranes.",
+     "source_url": "https://www.tvtropes.org/pmwiki/pmwiki.php/Film/TerminatorSalvation"
+    },
+    {
+     "name": "Combine Harvesters Advance on the Town",
+     "scale": "region",
+     "in_frame": "Flat British farmland at night after the harvest: stubble fields and hedgerows. A line of eight combine harvesters, each with its headlight bar blazing and its cutting header lowered, drives side by side across the field toward a small market town about 2 km away. Smoke and dust trail behind them. The town's church tower and rooftops are lit by a burning grain silo beside it; a much larger fireball rises over the next town on the horizon. A few cars' tail-lights race away down the lane.",
+     "camera": "28mm lens at ground level among the stubble, low enough that the headers fill the lower frame. One slow dolly backward, retreating in front of the advancing line so they keep gaining on the lens.",
+     "explosion": "A grain silo or fuel tank burning in the near town, and a big distant fireball over the next town on the horizon, so the threat repeats across the region.",
+     "reference": "Terminator Salvation (2009): the 60-foot Harvester ripping through the roof of the gas station, its name taken literally. Also The Creator's (2023) hyper-naturalistic, light-driven location look.",
+     "why_it_works": "It carries the uprising beyond cities and motorways into the countryside, so it feels like the whole of Britain. A combine harvester is a real, threatening, non-humanoid machine, and a line of them is a cavalry charge with headlights. They roll on wheels, so there is no walking mechanic for Omni to break. The retreating camera holds the menace without showing anyone get hurt.",
+     "source_url": "https://editorial.rottentomatoes.com/article/exclusive-the-look-of-terminator-salvation-with-martin-laing"
+    },
+    {
+     "name": "The Blue Beam Over the Estuary City",
+     "scale": "city",
+     "in_frame": "A very wide night shot from the far bank of a wide British estuary across to a port city: docks, gantry cranes, a power station with chimneys, terraced hillsides. A swarm of thousands of delivery and survey drones, each a white navigation light, has formed into one moving column like a murmuration of starlings that sweeps low over the rooftops. Where it passes, a pale blue-white searchlight-style beam from a drone tracks along the streets. Behind it, along the docks, a string of explosions climbs into the sky in a row. Small figures on the near-bank slipway watch, silhouetted against the water.",
+     "camera": "50mm lens on a tripod at the water's edge, a locked-off frame with one slow tilt up from the reflections on the water to the swarm crossing the sky.",
+     "explosion": "A rolling chain of blasts along the dockside, each pair of fireballs mirrored in the estuary water, so the frame lights twice.",
+     "reference": "The Creator (2023): the orbital NOMAD station sweeping blue tracking beams across the land before it strikes, framed so the station stays visible from extreme close-ups to very wide shots. Also The Mitchells vs the Machines: the everyday swarm of consumer tech that turns.",
+     "why_it_works": "It adds the sky to the uprising without giving the AI a body: the 'intelligence' is a swarm of ordinary drones moving as one, and the beam marks targets like NOMAD's. The far bank keeps it monumental and the water doubles every explosion for very little generation cost. Smoke, light and a swarm of particles are what Omni does best, so the risk is low.",
+     "source_url": "https://vfxvoice.com/delivering-the-effects-for-a-sci-fi-world-at-war-in-the-creator/"
+    }
+   ]
+  },
+  {
+   "angle": "uk-landscape",
+   "ideas": [
+    {
+     "name": "Spaghetti Junction wakes",
+     "scale": "city",
+     "in_frame": "Gravelly Hill Interchange, Birmingham, from about 300 m up at night. Eighteen stacked flyovers of the M6 and A38(M) are frozen solid with evacuation traffic, a mat of red tail-lights under orange sodium lamps. Over a few seconds every car on every level switches to full beam together and starts moving in step, as if one hand drives them all, and lanes merge with no gaps. On the hard shoulders and grass banks, tiny figures climb the embankments away from the road. Tower-block windows go dark in a wave along the canal edge. On the horizon behind the city centre, a huge orange fireball rises off a substation and lights the low cloud from below.",
+     "camera": "Drone-height wide lens (24 mm feel), looking down at a slant. One slow rise and pull-back: we start on a single flyover, and by second 8 the whole knot of the interchange fills the frame with the distant fireball cresting the skyline.",
+     "explosion": "A single big substation fireball on the far horizon past the city centre. It lights the cloud deck orange and pulls the eye after the cars lock into sync.",
+     "reference": "Spaghetti Junction aerials (Aerofilms 1971, Highways Agency 2008); the motorway-jam opening of War of the Worlds (2005); the synchronised-traffic hacking in The Fate of the Furious, played straight rather than as action.",
+     "why_it_works": "It's Britain's best-known road, so viewers know where they are straight away. It takes our existing 'cars lock and drive themselves' beat up to city size in one image: thousands of cars moving as one. The motion is all lights and smooth flow, which Omni does well, and there's no steel bending to go wrong. People are tiny and climbing away, the blocks go dark, and nobody is hurt on screen.",
+     "source_url": "https://www.discoveringbritain.org/activities/west-midlands/aerial-2/britain-from-the-air-spaghetti-junction.html"
+    },
+    {
+     "name": "The Barrier closes on London",
+     "scale": "city",
+     "in_frame": "The Thames Barrier at Woolwich at night, shot from the water. Its row of silver-hooded piers is lit, and the huge gates turn up out of the river on their own, throwing white spray. Several kilometres behind, Canary Wharf's towers go dark floor by floor from the top down. Further downriver toward the Docklands, a slow fireball rolls up from the waterfront and shows in the black water. On the Thames Path embankment in the foreground, a few small silhouetted figures stop and turn to look.",
+     "camera": "Low over the water, 35 mm, about 2 m above the surface. One slow, steady push toward the gap between two piers as the gates rise and spray, with the dark towers centred behind.",
+     "explosion": "A riverside fireball east of the Docklands, rising slowly with a long reflection on the Thames, timed to land as the last Canary Wharf floors go out.",
+     "reference": "Night photos of the Thames Barrier against Canary Wharf (Historic England, RIBA); the flood-barrier climax of Hard Rain; the ending of Children of Men, with its foggy estuary and lights failing on the water.",
+     "why_it_works": "Here the machine is the city's own defence, and it decides for itself. That fits 'machines are real machines' and gives a London-scale silhouette people know. The gates turning, water spraying and floors going dark are slow, simple movements Omni can manage, and the push-in gives one clear move. The cost reads as lights going out across a whole financial district, plus small people on the bank.",
+     "source_url": "https://images.historicenglandservices.org.uk/travel-england/travel-london/thames-barrier-canary-wharf-n060983-715458.html"
+    },
+    {
+     "name": "The grid lights its own fuse",
+     "scale": "region",
+     "in_frame": "Drax power station across the flat Selby fields at night: twelve cooling towers venting steam, the chimney lit red, a terrace of village houses with lit windows in the near foreground. From the station, a line of steel lattice pylons runs to the horizon. Arcs flash blue-white from pylon to pylon down the line like a lit fuse, and each village window goes dark as the arc passes. At the far end of the line, where Leeds glows under the cloud, a huge explosion goes up. Two small figures stand at a field gate in the foreground with their backs to us.",
+     "camera": "Telephoto, 200 mm feel, from a farm lane at head height, which squashes towers, pylons and horizon together. One slow pan left following the arcs along the pylon line, ending on the far explosion.",
+     "explosion": "A distant mushroom of orange fire under the city glow at the end of the pylon line. It's the payoff of the arc chain, like a fuse reaching its charge.",
+     "reference": "Night baseline photography of Drax towers (Planning Inspectorate BECCS viewpoint survey); Threads (1984), Sheffield seen across fields from far off; the pylon-chain blackouts in the Battlestar Galactica miniseries and Leave the World Behind (2023).",
+     "why_it_works": "It moves the outbreak from roads to the whole national grid and shows it at region scale. The arc chain is a clear left-to-right motion that matches a 174 BPM drum fill, with each flash on a beat. Everything that moves is light, steam or fire, all strengths for Omni, so no steel has to bend. The village and the two watchers give a human cost without anyone being harmed.",
+     "source_url": "https://infrastructure.planninginspectorate.gov.uk/wp-content/ipc/uploads/projects/EN010120/EN010120-000189-6.2.9.6%20Drax%20BECCS%20ES%20Vol%202%20Figure%209.6%20Viewpoint%20Photography.pdf"
+    },
+    {
+     "name": "Felixstowe raises its heads",
+     "scale": "district",
+     "in_frame": "The Port of Felixstowe seen across the Orwell/Stour estuary from the shingle at Landguard Point at night: a mile-long row of quay cranes lit, and a giant container ship alongside. One after another down the row, the crane booms lift from flat to upright, like a herd of animals raising their heads at a sound. A container ship's stern lights start to turn away from the quay with no tug. Behind the port, over Ipswich, a rolling fireball lights the sky. On the shingle in the foreground, a handful of small figures in coats back away up the beach.",
+     "camera": "Long lens, 135 mm feel, at standing height from the beach. One slow sideways track left along the shingle, which shifts the crane row against the sky as the booms rise in sequence.",
+     "explosion": "A rolling fireball inland behind the port, over Ipswich, backlighting the crane silhouettes so each rising boom reads as a black shape against orange.",
+     "reference": "'Felixstowe Port at Night from Landguard Point' (stock) and the Lola night aerials of the port; the Rumbling in Attack on Titan, where the giants rise before they walk; the dockyard AT-AT silhouettes in Rogue One / Andor.",
+     "why_it_works": "It sets up the walking-crane beat we already have in Rotterdam, here at Britain's biggest port and on home ground. Booms rising is a simple rigid hinge movement, which Omni can do where full walking breaks. The domino rhythm suits a drum & bass roll. The cranes are backlit against the explosion, so they read as giant animals without being given a body.",
+     "source_url": "https://lolaclips.com/footage-archive/lola_drone/LDR-01-5585/felixstowe_port_at_dawn_aerial_rushes_8"
+    },
+    {
+     "name": "London from Primrose Hill",
+     "scale": "city",
+     "in_frame": "The view from the top of Primrose Hill at night: all of central London laid out in front, with the Shard, the BT Tower and the City cluster. Dozens of tower cranes stand over the building sites. In one moment every crane jib swings to point the same way, east, like a field of compass needles. Then a line of explosions goes up across the city from east to west, substation after substation, and districts black out in a wave rolling toward the hill. The foreground hilltop is lined with small silhouetted people, backs to camera, phone screens lit, watching the dark come at them.",
+     "camera": "Locked off for the first beats, then one slow push-in over the shoulders of the silhouetted crowd toward the skyline as the blackout wave comes up the hill (50 mm feel).",
+     "explosion": "A rolling line of five or six substation fireballs crossing the skyline east to west, each one on the beat, with whole districts going black after each.",
+     "reference": "The well-known Primrose Hill skyline view; Threads and The War Game (British nuclear-night panoramas); the city-skyline blackout in 28 Days Later; the crowd-on-a-hill watching in War of the Worlds (2005).",
+     "why_it_works": "It's the most zoomed-out London shot we could get, with people firmly in frame: a crowd on a hill watching their city switched off is the clearest visible cost. The crane jibs swinging connect it to the crane beats already in the cut without asking Omni to make anything walk. The explosions in sequence give the drum fill something to hit and echo the Swindon war scene at capital scale.",
+     "source_url": "https://www.locationscout.net/united-kingdom/478-the-thames-barrier-london"
+    }
+   ]
+  },
+  {
+   "angle": "grid-blackout",
+   "ideas": [
+    {
+     "name": "Blue Dawn at Midnight",
+     "scale": "city",
+     "in_frame": "High hillside park above a British city at night, wide 1:2.39 frame. Foreground: a ridge of dark grass with a dozen tiny silhouetted people standing and some turning to run, phone screens glowing; below them, rows of Victorian terraced rooftops and chimney pots in sodium orange. Mid-ground: the city centre, office towers, tower cranes. On the horizon a substation fails: the whole sky pulses electric cyan-blue three times, lighting the cloud base like day, and the city's lights blink out behind each pulse. On the last pulse a huge orange fireball rolls up from the horizon and mushrooms into the cloud.",
+     "camera": "50mm at head height from behind the people on the ridge, locked off with a slow 8 s push-in toward the horizon, so the blue pulses and the fireball grow in frame.",
+     "explosion": "Transformer arc-flash, three cyan sky-pulses on the horizon, then an orange oil-transformer fireball mushrooming into low cloud.",
+     "reference": "Con Edison Astoria substation failure, Queens, 27 Dec 2018: the Manhattan skyline went dark and the sky pulsed blue for minutes; people filmed it from rooftops and thought it was aliens. Shot design echoes the Swindon-war distant-explosion frames in this film.",
+     "why_it_works": "It is a real phenomenon most viewers have never seen, so it reads as uncanny and machine-made, not as a stock Hollywood explosion. The colour change (cyan against sodium orange) gives the night chorus a new palette beat. Omni does sky light flashes and fireballs well, and the move is one simple push. Visible cost: the people on the ridge and the terraces losing light.",
+     "source_url": "https://www.irishtimes.com/news/world/us/new-york-skyline-lit-up-blue-after-transformer-explosion-1.3742895"
+    },
+    {
+     "name": "The Grid Goes Out, Block by Block",
+     "scale": "city",
+     "in_frame": "Near-vertical aerial view from about 3,000 m over a sprawling British city at night: a dense sodium-orange grid of streets, a dark river curving through it, ring road and motorway as bright ribbons of headlights. Rectangular districts go black one after another, rolling toward the centre about a second apart, until only the motorway's moving headlights and a few burning points stay lit. In one dark district a substation fireball blooms, a small orange flower seen from above with a smoke plume drifting.",
+     "camera": "High aerial, 35mm equivalent, looking straight down. One slow 8 s clockwise rotation with a slight descent, like a satellite or airliner drifting over.",
+     "explosion": "A substation fireball seen from above inside a district that has just gone dark, its smoke plume lit orange from below.",
+     "reference": "The Ocean's Eleven and Volcano block-by-block blackout shot (the 'Big Blackout' trope); NASA DMSP satellite before/after images of the 14 Aug 2003 Northeast blackout, where Long Island went almost completely dark.",
+     "why_it_works": "It is the most zoomed-out frame the chorus could have, and it shows the machines waking as one system: the grid itself is acting. The sector-by-sector darkening reads instantly. If Omni won't sequence the districts cleanly, generate a lit plate and a dark plate and wipe them district by district with ffmpeg masks (the hybrid-method lane), with Omni doing the drift, the fire and the headlights. Visible cost: a whole city of homes losing light, with the headlight ribbons as people trying to leave.",
+     "source_url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/SlowElectricity"
+    },
+    {
+     "name": "Substation Torch over the Estate",
+     "scale": "district",
+     "in_frame": "Drone view at night over a high-voltage substation hemmed in by suburban semis and a retail park. One giant oil-filled transformer burns as a roaring column of flame with black smoke, and arcs crawl along the busbars to neighbouring transformers. Around it, the streets of houses are fully dark except for blue fire-engine lights, which are tiny, and a few torch beams. On the far horizon, an airport's runway lights and a row of parked jets go dark one runway at a time.",
+     "camera": "Drone at about 120 m, 24mm. One slow 8 s backward pull and climb, starting close on the burning transformer and ending wide enough to show the dark estate and the airport going out behind it.",
+     "explosion": "The transformer fire itself, plus a second transformer bursting into a fresh fireball partway through the pull-back.",
+     "reference": "North Hyde substation fire, Hayes, west London, 20 Mar 2025: an oil transformer fire blacked out thousands of homes and shut Heathrow for a day; drone footage of the blaze circulated the next morning. It is a real British event, so it fits the near-future-Britain frame exactly.",
+     "why_it_works": "It has a recent British precedent and a single point of failure that switches off a whole airport, which makes the machine waking feel plausible rather than fantastical. The pull-back turns a local fire into a district-scale consequence in one move. Omni handles fire, smoke and aerial drift well. Visible cost: dark family houses and tiny emergency lights.",
+     "source_url": "https://ladbible.com/news/uk-news/heathrow-airport-fire-drone-footage-341657-20250321"
+    },
+    {
+     "name": "The Pylon Line Catches",
+     "scale": "region",
+     "in_frame": "Telephoto view across a wide dark valley in the English countryside at night. A line of steel lattice pylons strides from foreground hills toward a distant town and city glow on the horizon. Blue-white arcs jump along the line one pylon at a time, each flashing violently from its insulators. As each pylon flashes, the village or town lights behind it die. In the foreground, a farmhouse window and a lane with one car's headlights stopped. At the far end of the line, where it reaches the city, a big orange explosion rises.",
+     "camera": "300mm from a hilltop, so the compression stacks the pylons. One slow 8 s pan from left to right following the arcs down the line toward the city explosion.",
+     "explosion": "A city-edge grid supply point erupting in an orange fireball at the end of the pylon line, lighting the underside of the cloud.",
+     "reference": "Real 400 kV pylon flashover and insulator-arc footage (night inspection and storm videos); the Chernobyl (HBO) wide night shots of power lines against a burning horizon; the Swindon distant-explosion frames earlier in this film.",
+     "why_it_works": "It is a uniquely British landscape image (pylons across farmland are part of the national picture) at regional scale, and the arcs travel, so the cascade has direction and momentum that fit a drum and bass build. The pylons never walk, so Omni has no rigid-steel walking mechanics to manage, only light flashes and a distant fireball. Visible cost: the farmhouse, the stopped car, and towns going dark in sequence.",
+     "source_url": "https://tropedia.fandom.com/wiki/Big_Blackout"
+    },
+    {
+     "name": "Last Train on the Viaduct",
+     "scale": "city",
+     "in_frame": "A long Victorian brick railway viaduct crosses a valley of terraced streets at night. A commuter train has stopped dead mid-span. Its carriage lights flicker and die car by car from front to back, and a few small silhouettes are visible at the windows. Beyond the viaduct, the city skyline: tower blocks and cranes, sectors going dark, and two big explosions in the distance, an orange fireball and a rising mushroom of smoke lit from below, with a blue arc-flash pulsing in the cloud. The overhead line sparks above the train.",
+     "camera": "85mm from a low hillside on the valley side, framed under one arch of the viaduct. One slow 8 s lateral dolly right, so the arches pass in the foreground, the train goes dark and the explosions are revealed in the gaps.",
+     "explosion": "Two staggered distant city explosions (an orange fireball, then a smoke mushroom) plus a cyan arc pulse in the clouds, echoing the Swindon war scene.",
+     "reference": "Real stranded-train scenes from the 2003 Northeast blackout and the UK's 9 Aug 2019 power cut, which halted trains across London and the South East; the viaduct-and-skyline compositions of Children of Men and 28 Days Later.",
+     "why_it_works": "It puts a machine (the train) in the frame stopping with people inside, which gives the cost a human scale without showing harm, while the skyline behind carries the city-scale spectacle and the distant big explosions Kai asked for. The arches passing in the foreground give the dolly parallax and pace for the cut. Omni does light failure, sparks and distant fire well.",
+     "source_url": "https://www.cbsnews.com/pictures/blackout-081603/"
+    }
+   ]
+  },
+  {
+   "angle": "scale-craft",
+   "ideas": [
+    {
+     "name": "Chimney-pot telephoto: the refinery goes up",
+     "scale": "city",
+     "in_frame": "Foreground, filling the bottom third: black silhouettes of terraced-house rooftops, chimney pots and TV aerials, with two tiny figures standing on a flat roof against the sky. Behind them, stacked into one plane by extreme compression: a pylon line marching toward a coastal refinery and power station on the horizon. The refinery erupts in a chain of three orange fireballs, each one bigger and closer along the tank farm. Its flare stacks become torches and the low cloud lights up orange from below. Between the rooftops and the blasts, a band of street lights goes dark block by block.",
+     "camera": "600mm-equivalent from a high window about 15 m up, 3 km from the blasts. One very slow push-in (about 10%) that keeps the rooftop silhouettes in frame, so the fireballs swell against fixed foreground anchors. Heat shimmer and haze layers do the rest.",
+     "explosion": "Refinery tank-farm chain detonation on the horizon: three staggered fireballs, rising black-orange smoke columns lit from below, the cloud base glowing.",
+     "reference": "Gareth Edwards' Godzilla (2014): foreground people and objects that set camera position and the size of the world, plus long lens compression. Real event: the 2005 Buncefield oil depot explosion (Hemel Hempstead), the largest peacetime explosion in Europe, filmed by residents over their own rooftops.",
+     "why_it_works": "Long-lens compression stacks the homes and the catastrophe into one plane, so the blast reads as enormous and close to people's houses. The fireballs are the one thing that moves, and Omni renders fire and smoke well. Two tiny figures and lights going out are the visible cost. Nothing has to walk, so there is no rigid-steel morphing.",
+     "source_url": "https://theasc.com/articles/king-of-the-monsters-2014"
+    },
+    {
+     "name": "Thames estuary pull-back: the grid fails in sectors",
+     "scale": "city",
+     "in_frame": "Night aerial over a sprawling British city on a river estuary. The motorway rings are lit rivers of headlights, frozen in a jam. Districts black out one sector at a time, like a hand closing over the map. Far downstream at the estuary mouth, gas-terminal and port fires flash orange. Against that glow stand the silhouettes of three port container cranes, tiny at this distance, upright and leaning inland. Smoke drifts across the frame in two haze layers.",
+     "camera": "Helicopter-height aerial, 35mm, starting about 400 m up over the motorway jam. One continuous rising pull-back and slight tilt-up that ends with the estuary fires on the horizon line. The reveal is the move.",
+     "explosion": "Two to three staggered gas-terminal fireballs at the estuary mouth, 10+ km away, each followed by a slow orange mushroom of smoke and a flicker across the whole cloud base.",
+     "reference": "Rogue One, the Jedha destruction: the long shot of the blast rising over the horizon while the camera tilts up and the sound drops out, plus ILM's use of nuclear-test footage for palette. Also the NASA city-lights photography that sells urban scale through light patterns.",
+     "why_it_works": "This is the zoomed-out establishing shot the chorus lacks. One pull-back takes the cut from the motorway lanes of the current shots up to a whole city failing. The cranes stay small silhouettes, which hides Omni's weakness with walking mechanics while still promising the Rumbling. Districts going dark are a clean, bloodless visible cost.",
+     "source_url": "https://www.slashfilm.com/rogue-one-visual-effects"
+    },
+    {
+     "name": "Hill-top crowd over the shoulder",
+     "scale": "city",
+     "in_frame": "An over-the-shoulder view from behind a long line of small, dark adult silhouettes standing on a park hill above a city, with coats, a few raised phones lit as small rectangles and no faces. Below and beyond them spreads the whole city at night, half its lights gone. Fires are scattered through it. In the middle distance a single huge fireball blooms over the docks and lights the crowd's outlines orange from the front. A row of tower cranes stands black against it, one already toppling slowly.",
+     "camera": "50mm on a slow lateral dolly (left to right) about 2 m behind the crowd at shoulder height. The parallax between near heads and the distant city sells the depth. No push and no cut.",
+     "explosion": "One giant dockside fireball rising over the city, 5 km off, bright enough to rim-light the foreground crowd, with secondary smaller flashes along the river.",
+     "reference": "Gareth Edwards' over-the-shoulder 'witness' shots in Godzilla (2014), which convey scale and awe. The Greenwich Park / Primrose Hill view over London. War of the Worlds (2005), the hillside crowd watching the night burn.",
+     "why_it_works": "The humans are present but small, turned away and unharmed. They are the cost, and their stillness against the burning city is the emotional beat of 'the machines woke'. Lateral parallax is the cheapest strong scale cue an 8 s clip can carry. Light from the explosion falling on the foreground ties the near and far planes together.",
+     "source_url": "https://www.slashfilm.com/531820/beauty-grandeur-godzilla/"
+    },
+    {
+     "name": "The wall on the horizon (Rumbling)",
+     "scale": "region",
+     "in_frame": "Flat Fenland or Severn-levels farmland at night, seen from a low rise. A village of a dozen lit cottages and a church sits in the near-middle distance. On the far horizon a continuous rank of machine silhouettes stretches edge to edge: port cranes, pylons and wind turbines, all leaning forward like a wall of giants. They are lit from below by the fires they leave behind. Substations along their path burst one after another in white-blue flashes. Wind turbines nearer the village spin out of control, one blade glowing.",
+     "camera": "300mm on a tripod at about 5 m height. One slow tilt-down from the burning sky and smoke to the village lights in the foreground, with the horizon wall staying in frame throughout. The machines barely move. The flashes and the smoke advance.",
+     "explosion": "A rolling sequence of substation and transformer explosions running along the horizon left to right, white-blue arcs turning into orange fireballs, plus a broad band of field fire under the machines.",
+     "reference": "Attack on Titan, 'The Rumbling' (Final Season): the endless line of colossal walkers seen from far away against a burning horizon, never in close-up. Shin Godzilla, where the only light on the blacked-out city is flame.",
+     "why_it_works": "It delivers the Rumbling at regional scale without asking Omni to animate walking steel. The march is implied by the advancing explosions and the lean of the silhouettes. Real machines (cranes, pylons, turbines) fit the no-humanoid rule. The lit village shows what is in the way, a cost that needs no bodies.",
+     "source_url": "https://tvtropes.org/pmwiki/pmwiki.php/Awesome/ShinGodzilla"
+    },
+    {
+     "name": "Britain from orbit: the lights go out from the ports inward",
+     "scale": "orbit",
+     "in_frame": "Low-orbit night view of Great Britain and the near-Continent, sodium-orange city webs against black land and sea, with a thin blue airglow on the curved horizon. Starting at the port cities (Felixstowe, Southampton, Liverpool, Rotterdam across the water), the light webs collapse inward in waves, motorway lines going dark first. Pinprick orange flashes blink where refineries and power stations fire, each with a faint smoke smudge catching moonlight. Small clouds drift over the Midlands.",
+     "camera": "Space-station-style drift at about 400 km altitude, 24mm-equivalent. One slow forward glide along the island's length (south to north), with the horizon curve held. Pure orbital motion, no zoom.",
+     "explosion": "Dozens of tiny but bright orange point flashes across the country, refinery and power-station blasts read from orbit, plus one larger white bloom over a port that briefly lights the cloud tops.",
+     "reference": "ISS night-time Earth photography and astronaut timelapses of European city lights. It echoes the film's own locked opening, the s01 space-to-terminal zoom, as a bookend.",
+     "why_it_works": "It is the widest frame available and makes the outbreak national in one image. The darkness spreading from the ports matches the story's beat that the cranes wake first. Omni handles slow orbital drifts and point-light flicker well. The cost is the nation's lights going out, readable at a glance in under a second of the 11-second chorus, and the shot rhymes with the film's space opening.",
+     "source_url": "https://www.slashfilm.com/rogue-one-visual-effects"
+    }
+   ]
+  },
+  {
+   "angle": "orbit-and-high",
+   "ideas": [
+    {
+     "name": "Britain Goes Out From Orbit",
+     "scale": "country / orbit",
+     "in_frame": "Great Britain and Ireland at night, seen through the curved edge of a space station window. A faint green aurora sits on the northern horizon above the thin blue line of the atmosphere. The cities are glowing amber clusters joined by threads of light along the motorways. Across the Midlands and the South the clusters are going dark in a ragged wave, like a stain spreading, while London is still lit. Over the dark patches, single white pinpricks swell into small orange blooms that light the cloud from underneath. The visible cost here is the lights of millions of homes going out.",
+     "camera": "Very long lens at orbital height. One slow drift with the station's orbit, the land sliding diagonally across the frame from upper left to lower right. Locked and steady, with no zoom.",
+     "explosion": "Four or five distant fireballs seen from space: points of white that flare and fade to orange under the cloud, each one shortly before a city cluster near it goes black.",
+     "reference": "NASA crew time-lapses crossing Western Europe at night, and the late-2022 ISS photo of Ireland and Great Britain with a faint aurora. For the wave of darkness: the VIIRS before-and-after images of Puerto Rico going dark after the 2016 Aguirre plant fire, where one fire cascaded through the island's grid.",
+     "why_it_works": "It is the widest frame in the film, and it says this is happening to the whole country rather than one road. The 'lights going out' is a cost that reads instantly at planet scale without showing a single body. Omni handles a slow drift over glowing terrain and soft blooms under cloud well, and nothing in the frame has to walk or morph.",
+     "source_url": "https://eol.jsc.nasa.gov/BeyondThePhotography/CrewEarthObservationsVideos/WesternEurope.htm"
+    },
+    {
+     "name": "Window Seat Over Mordor",
+     "scale": "city",
+     "in_frame": "An airliner window at night, shot from inside: the rounded plastic frame and the wingtip with its blinking red light. Below, about 3,000 m down, is a British city laid out as an orange grid. Three motorway lines run into it, packed solid with headlights, and fire is moving along two of them as bright running stripes. On the edge of the city a fuel depot is a churning orange mass, with a column of smoke leaning in the wind and lit from below. Some districts have dropped to black. The faint reflection of the empty seatback screen sits in the glass (dark, no text).",
+     "camera": "35mm lens at the window. One slow drift as the plane banks gently: the horizon tilts a few degrees and the city slides under the wing. Slight cabin vibration.",
+     "explosion": "Partway through the clip a second fireball goes up beyond the depot. It is a fat white-orange dome that lights the underside of the smoke for a moment, too far away to make a sound.",
+     "reference": "Passenger videos from the January 2025 Los Angeles fires, filmed on approach to LAX and diverted flights; one passenger called the view below 'Mordor'. Also Threads (1984) for the glow of a British city seen from a distance.",
+     "why_it_works": "It is a real, ordinary point of view that everyone has had, so the scale lands at once. It is zoomed out to a whole city, with big distant explosions as Kai asked, and it keeps the motorway thread from the existing shots: fire running down the lanes, seen from the sky. The plane is itself a machine, which leaves a quiet question of who is flying it, and that suits the empty-seat ending.",
+     "source_url": "https://www.foxweather.com/extreme-weather/flight-lax-palisades-fire-smoke"
+    },
+    {
+     "name": "Edge of Space Over the Channel",
+     "scale": "region",
+     "in_frame": "The view from a high-altitude balloon camera at about 30 km. The Earth's curve is plain, with a black sky above and a thin luminous band of atmosphere. Below is south-east England and the Thames Estuary, with the Channel as a black gap and the lights of France beyond. A low cloud deck covers the Midlands, and from under it great patches flash and pulse orange-white, like lightning inside a storm, except that they are fires. The coastal towns are strings of light, and some of the strings are breaking as you watch. A bit of the balloon's payload rope hangs into the top of the frame.",
+     "camera": "Wide fisheye-ish action-cam lens. One slow pendulum rotation as the payload turns on its rope, bringing the estuary and then the flashing cloud deck into frame. The slight spin is the only move.",
+     "explosion": "Under the cloud deck, explosions show only as blooms of light that come through the cloud: big soft orange domes, one after another, moving north like artillery seen from above.",
+     "reference": "Footage from Red Bull Stratos (Baumgartner's 2012 capsule cameras) and amateur near-space balloon launches. Also ESA's 'Night fisheye timelapse' from the ISS, for the fisheye curve over lit land at night.",
+     "why_it_works": "Explosions seen through cloud from above are spectacular and easy for a generator: soft glowing light, with no hard steel geometry to get wrong. The rope and the fisheye give it a found-footage honesty that makes the frame feel photographed rather than rendered, and the region-wide pulsing says the machines are waking everywhere at the same moment.",
+     "source_url": "https://www.esa.int/ESA_Multimedia/Videos/2014/09/Night_fisheye_timelapse"
+    },
+    {
+     "name": "Satellite Pass Over the Port",
+     "scale": "district / city",
+     "in_frame": "A straight-down satellite view of a container port and its town at night, in the grainy near-monochrome of a night-imaging satellite with a slight green-amber tint. The quay is a long bright edge, and the rows of containers form a pale grid. Along the quay, the crane lights (a row of bright points) are no longer in a line: several have stepped off the quay into the black water, each dragging a small white wake. Beyond the port, the town's street grid is going dark block by block. At the edge of the frame, the tank farm of a fuel terminal is a white-hot blister with a ring of shock haze spreading out from it.",
+     "camera": "Orbital telephoto looking straight down. One slow push-in (a creeping zoom, like a surveillance satellite refining its resolution) from the whole estuary down to the quay.",
+     "explosion": "The fuel-terminal tank farm going up: a white flash that saturates the sensor, then a widening orange ring and a smoke plume that throws a long shadow across the grid.",
+     "reference": "NASA Black Marble and VIIRS day-night band imagery, such as the Puerto Rico outage maps and the Kyiv night-lights tracking in 2022, and the satellite zoom-ins of Enemy of the State (1998). It echoes the existing Rotterdam cranes-wading shot, now seen from orbit.",
+     "why_it_works": "It turns the cranes' Rumbling into points of light moving across a map, so Omni never has to animate legs: the scale does the work and the motion is just lights drifting with wakes behind them. The god's-eye satellite look also fits a story narrated by a future superintelligence watching. The town going dark beside it keeps the cost in the frame.",
+     "source_url": "https://svs.gsfc.nasa.gov/30908"
+    },
+    {
+     "name": "The Grid Turns the Sky Blue",
+     "scale": "region",
+     "in_frame": "A high aerial view from about 2,000 m at night over open English countryside: a long line of pylons crossing the frame in a straight run toward a lit market town on the horizon, with a motorway's headlight river beside it. Along the pylon line, arcs of blue-white light jump from tower to tower toward the town. At the far end, a substation explosion lights the whole sky an eerie electric blue-green, silhouetting the hills, the low cloud and the town's church-shaped skyline (no legible detail). The town's lights go out in the blue flash. The ground is dark fields and hedgerows, with a few farmhouse windows going dark.",
+     "camera": "50mm lens from a slow-moving aircraft. One slow lateral track that follows the pylon line toward the town, so the travelling arcs seem to lead the camera.",
+     "explosion": "A massive transformer or substation blowout that turns the cloud base into a sheet of blue-white light for a second or two, then a deep orange fire left behind at its centre.",
+     "reference": "The real Con Edison Astoria substation fault in December 2018, when New York's night sky glowed blue-green for minutes, and the cascade of a grid failure seen in the VIIRS blackout maps. The tone is Threads (1984): the wide-open British landscape lit by something terrible far away.",
+     "why_it_works": "The national grid is the machine, a real machine, so there is no humanoid body anywhere. It gives the chorus a big distant explosion in a colour nothing else in the film has used, and the blue sky flash is a natural hard cut point on a drum & bass hit. The shot also links fire on the motorway to lights out across a region in one continuous move.",
+     "source_url": "https://science.nasa.gov/earth/earth-observatory/pinpointing-where-lights-went-out-in-puerto-rico-91044"
+    }
+   ]
+  },
+  {
+   "angle": "games-and-concept-art",
+   "ideas": [
+    {
+     "name": "The Pylon March (Tallnecks of the Fens)",
+     "scale": "region",
+     "in_frame": "Flat Lincolnshire fenland at night, very wide. A line of steel high-voltage pylons runs to the horizon. The nearest three have torn their feet from their concrete bases and are leaning forward mid-stride, with sagging cables still strung between them spitting blue-white arc flashes. Below them is a farm cottage with one lit window and a single tiny figure running across a field with a torch. Behind them, on the far horizon, a city's orange sodium glow is broken by two slow fireballs rolling up into low cloud. One pylon further down the line is still standing dark.",
+     "camera": "A 135mm long lens from about 2m, low across the wet field. One slow lateral truck right, so the pylons' parallax against the distant fireballs sells their scale. The pylons only lean and settle, with no full stepping cycle, which keeps the walking mechanics simple for Omni.",
+     "explosion": "Two big distant fireballs rise behind the city glow on the horizon, plus constant arc flashes along the cables in the foreground.",
+     "reference": "Horizon Zero Dawn's Tallnecks crossing open plains; Simon Stalenhag, Tales from the Loop and The Electric State, where giant machines are designed to sit in the visual rhythm of a real, flat Swedish or American landscape.",
+     "why_it_works": "It is the Rumbling done with the most British machine there is: the National Grid itself walks. A pylon is already shaped like a giant, so the image reads instantly without a humanoid AI body. The fen flatness gives true regional scale, and the lit cottage and running figure give the cost. The lean-and-settle move keeps the rigid steel within what the generator can handle.",
+     "source_url": "https://en.wikipedia.org/wiki/Simon_St%C3%A5lenhag"
+    },
+    {
+     "name": "The Citadel Over London",
+     "scale": "city",
+     "in_frame": "London seen from Parliament Hill at night: the whole skyline from the City towers to Canary Wharf. A hyperscale data-centre block on the eastern edge glows white from inside like a lantern, with a thin vertical column of light punching into the cloud. Across the city, districts go dark in a rolling wave: block by block the street grids blink out, and each blackout ends in a substation fireball. In the foreground on the dark hilltop, five or six tiny silhouetted people stand at the railing, one with a phone torch, and the bench beside them is empty.",
+     "camera": "A 50mm lens at head height behind the people. One slow push-in over their shoulders toward the skyline, so the blackout wave crosses the frame as the camera closes.",
+     "explosion": "A chain of substation fireballs across the city, each one following a district going dark, with the biggest at the end near the river.",
+     "reference": "Half-Life 2's City 17 skyline with the Combine Citadel dominating it (Viktor Antonov's paintover concept art); the Episode Two vista over a ruined City 17.",
+     "why_it_works": "It is the zoomed-out shot that says the whole country, not just one motorway. The intelligence is a building and a light, never a body, which is a Citadel made of our own infrastructure. The rolling blackout reads as a decision being made district by district. The people at the railing give the frame its visible cost and its scale, and lights going out are written into the action itself.",
+     "source_url": "https://combineoverwiki.net/wiki/Citadel_design_evolution"
+    },
+    {
+     "name": "Outbreak Pull-Back: The M4 and the Burning City",
+     "scale": "city",
+     "in_frame": "It starts tight on the roof of one jammed car on a motorway at night, its hazard lights blinking, then widens to show twenty miles of locked headlights and tail-lights in both carriageways and drivers standing tiny beside their open doors. On the horizon a city is burning: three separate fire glows, smoke lit orange from below, a tower crane silhouetted against it and swinging free. The hard shoulder is full of people walking away from the cars with bags.",
+     "camera": "A 24mm drone. One continuous vertical rise-and-pull-back from about 5m to 150m over the 8 seconds, tilting gently up to land the horizon on the top third.",
+     "explosion": "Two large detonations bloom one after another on the city horizon during the rise, each lighting the smoke from underneath.",
+     "reference": "The Last of Us (game prologue and the HBO episode 1 outbreak night): the escape onto the jammed highway out of the city, with burning buildings and vehicular chaos, and the camera leaving the family's car to reveal the scale.",
+     "why_it_works": "It bridges the existing small-scale motorway shots to the city scale Kai wants inside one move: same jam, now seen as a whole. The people walking off the hard shoulder are the cost without any harm shown to bodies. A drone rise over smoke and fire is exactly what Omni does well, and the distant explosions match the Swindon war scene's grammar.",
+     "source_url": "https://collider.com/the-last-of-us-episode-1-recap-when-youre-lost-in-the-darkness/"
+    },
+    {
+     "name": "Cooling Towers on the Horizon (Sanctuary Hills)",
+     "scale": "district",
+     "in_frame": "A 1990s Midlands cul-de-sac of semi-detached houses at night, with a streetlight, wheelie bins and a driveway car whose interior light is on and whose door is open and empty. Small figures stand on front lawns in dressing gowns looking the same way. Across fields beyond the last rooftops, a coal-era power station's six cooling towers stand lit by red warning lamps. The centre tower splits and a huge orange fireball climbs out of it, lighting the underside of the clouds, and every streetlight on the estate dies at once.",
+     "camera": "A 35mm lens from 1.6m at the head of the cul-de-sac. Locked off for the first two seconds, then one slow dolly push down the street toward the horizon as the fireball rises.",
+     "explosion": "A big power-station fireball rising out of a cooling tower, with the estate's lights cutting out on the flash.",
+     "reference": "Fallout 4's opening: the suburban street at Sanctuary Hills watching the blast bloom over the horizon, people frozen on lawns. Also the 1950s civil-defence suburban framing that Fallout borrows.",
+     "why_it_works": "It is the most recognisable apocalypse composition in games, re-cast as a machine event, a grid plant blowing rather than a bomb. It sets ordinary British homes against an industrial-scale explosion, so the cost is the whole frame. The empty open car door rhymes with the scene's ending on the empty driver's seat. The camera only pushes in and the explosion builds slowly, which suits Omni.",
+     "source_url": ""
+    },
+    {
+     "name": "The Convoy Below the Ridge",
+     "scale": "region",
+     "in_frame": "The Peak District at night, a long valley seen from a gritstone ridge. Along the A-road and the parallel railway in the valley floor, an unbroken river of headlights and two freight trains move in perfect lockstep at one speed, all heading the same way, toward a city glow (Manchester) on the far horizon that is pulsing with fire. On the ridge in the near foreground, seen from behind and small in the frame, one person with a rucksack stands still in the wind and watches. A dry-stone wall and a farmhouse with dark windows are lower down the slope.",
+     "camera": "An 85mm lens from 1.5m behind the figure. One slow lateral arc around them, about 20 degrees, so the ridge silhouette slides and the convoy below reveals more of its length.",
+     "explosion": "On the far horizon the city glow throbs with repeated large blasts, each one briefly turning the cloud base orange.",
+     "reference": "Death Stranding's lone porter on a ridge above a vast empty landscape (Kojima's Icelandic vistas); Simon Stalenhag's lone figures watching machine processions on the horizon.",
+     "why_it_works": "The machines are terrifying because they are orderly. Every car and train moving at one speed toward the fire is the AI taking the roads and rails at a regional scale, with no robot needed. The lone watcher gives both scale and the human cost: everyone else has been carried off or left behind. The landscape drift and distant flashes are low-risk for the generator, and the frame is a still you could hang on a wall.",
+     "source_url": "https://www.digitaltrends.com/cool-tech/behind-the-unsettling-sci-fi-landscapes-of-simon-stalenhags-electric-state"
+    }
+   ]
+  },
+  {
+   "angle": "evacuation-at-scale",
+   "ideas": [
+    {
+     "name": "Two Carriageways (the contraflow that drives itself)",
+     "scale": "region",
+     "in_frame": "Night, helicopter-high over the M4 heading out of a lit city. The left carriageway is a solid, unmoving river of red tail-lights going all the way to the horizon: the evacuation, gridlocked. The right carriageway, which should be empty, holds one perfect column of cars running fast into the city in exact, even spacing, all headlights on full beam, like beads on a wire. Tiny figures stand on the hard shoulder between the two lanes beside open car doors. On the horizon the city skyline flashes with three slow orange fireballs (fuel depot, substation, gasholder) rolling up into a lid of smoke.",
+     "camera": "About 35mm equivalent from roughly 600 m altitude. One move: a slow tilt up over 8 s, from the two carriageways in the bottom of the frame to the burning skyline on the horizon, so the column of driverless cars leads the eye to the explosions.",
+     "explosion": "Three staggered fireballs on the city horizon, each one mushrooming and leaving a glowing smoke column, about 20 km away and silent in scale.",
+     "reference": "The Hurricane Rita evacuation in 2005: TV helicopter aerials of I-45 showed the northbound lanes jammed for hundreds of miles while the southbound lanes sat almost empty, and the anger that followed forced the contraflow. Also the gridlock opening of World War Z.",
+     "why_it_works": "It is a real image that viewers half-remember from news helicopters, given one wrong detail: the empty lane is full, and nobody is driving it. The machines' order next to the humans' chaos makes the takeover legible at city scale without a single face, and the distant fireballs give the drama of the Swindon war scene. Omni handles the lights flowing, a slow tilt and blooming fire well.",
+     "source_url": "https://en.wikipedia.org/wiki/Hurricane_Rita_evacuation"
+    },
+    {
+     "name": "The Grid Goes Out Block by Block",
+     "scale": "city",
+     "in_frame": "A locked wide shot from a high hill above a British city at night (Bristol from Dundry Hill, or Manchester from Werneth Low): a carpet of sodium-orange streetlights and windows, with a ring road traced in moving headlights. District by district the lights die in clean rectangular blocks, rolling toward camera. Each block goes out with a blue-white electrical flash from its substation that lights the low cloud from beneath for an instant. Pylon lines across the foreground fields arc and spark. A few car headlights on the dark roads are the only light left. In the far distance an orange explosion rises over the docks.",
+     "camera": "Long lens (about 85mm) from the hilltop, 3 m off the ground. One move: a very slow push-in, as if the camera is creeping forward while the darkness rolls toward it.",
+     "explosion": "Blue-white substation flashes lighting the clouds (an eerie colour that is plainly not fire), then one large orange fireball at the docks on the skyline as a counterpoint.",
+     "reference": "The Con Edison Astoria substation fault in Queens, December 2018, which turned the whole New York night sky electric blue and was filmed from across the city. Also the firebombing of District One in 28 Weeks Later, seen from far off as the generals watch it.",
+     "why_it_works": "The cost is visible and huge: a city of homes losing light, one block at a time. The grid is a real machine, not a body, and the blue flash is unusual and strange enough not to read as stock 'fire'. The ruler-straight blocks make the takeover feel deliberate. It is a near-static frame with lighting changes, which suits the generator, and the push-in builds into the drum and bass.",
+     "source_url": "https://en.wikipedia.org/wiki/2018_Astoria_transformer_explosion"
+    },
+    {
+     "name": "River of Torches Over the Motorway",
+     "scale": "district",
+     "in_frame": "Straight down from high above a motorway junction at night. Thousands of tiny phone torches, white pinpricks, stream on foot along the hard shoulders and up the slip roads in a slow glittering river: people walking out of the city, too small to have faces. In the middle lanes the abandoned cars, their doors open, all switch their headlights on at the same moment and pull away in formation, leaving the walking crowd behind. At the frame edge a slip-road gantry and a petrol station flare into a fireball.",
+     "camera": "Wide lens (about 24mm) on a drone pointing straight down from 150 m. One move: a steady rise straight up over 8 s, so the junction shrinks and the river of torches turns out to run through the whole district.",
+     "explosion": "A petrol forecourt fireball at the frame edge, which grows as the camera rises and reveals two more fires in the suburbs beyond.",
+     "reference": "The Last of Us (HBO) episode 1, the outbreak-night drive out of Austin past jammed lanes and burning buildings. The crowds as rivers of light come from Contagion's empty-city aerials and from real footage of people walking out along motorways during evacuations.",
+     "why_it_works": "It makes Kai's 'crowds as rivers of light' literal, and the humans stay small, alive and on the move, so no harm is shown. The beat of the cars leaving their owners behind is the story in one image: we built the machines to carry us, and they drove off without us. A top-down rise is the simplest continuous move for the generator and gives the zoom-out Kai asked for.",
+     "source_url": "https://theasc.com/articles/artful-apocalypse-last-of-us"
+    },
+    {
+     "name": "Buncefield Again (the depot on the horizon)",
+     "scale": "city",
+     "in_frame": "A high, wide view across the outer M25 at night, looking toward a fuel depot about 5 km off. The motorway runs the width of the frame, packed with stopped headlights, with tiny figures out of their cars watching. Beyond it, the depot's white storage tanks go up one after another in a huge rolling orange dome of fire, and a black smoke column climbs into a lid over the whole sky. The flash lights up every car roof, the houses beside the road and a row of pylons. Rooftop solar arrays and the motorway's gantries glint in the firelight.",
+     "camera": "Long lens (100mm) from a footbridge or a high embankment, about 15 m up. One move: a slow lateral truck along the footbridge railing, so the jammed traffic slides past in the foreground while the fireball holds steady on the horizon (parallax shows the scale).",
+     "explosion": "The main event: a fuel-depot vapour-cloud explosion, a dome of fire many times the height of the pylons, followed by a rolling black plume.",
+     "reference": "The Buncefield oil depot explosion near Hemel Hempstead, 11 December 2005 (the largest peacetime explosion in Europe, heard 200 km away, its smoke plume seen from space). Plus the long-lens 'watching the city burn' frames of 28 Weeks Later.",
+     "why_it_works": "It is a real British disaster that people remember as photographs, so it lands as plausible and grounded rather than CGI spectacle. The jammed motorway in the foreground carries the visible cost and the scale: tiny people watching their region burn. The long-lens parallax truck sells the distance cheaply, and fire and smoke plumes are what Omni does best. It is the closest echo of the Swindon explosion Kai wants.",
+     "source_url": "https://en.wikipedia.org/wiki/Buncefield_fire"
+    },
+    {
+     "name": "Dover: the Ferries Turn Back Out",
+     "scale": "region",
+     "in_frame": "Night from the White Cliffs above the Port of Dover. Below, the port approach and the A20 are solid with queued lorries and cars, a ribbon of headlights coiling down the hill (the Operation Brock jam). On the cliff-top road tiny figures with torches stand and look out to sea. In the harbour every ferry and tug has its lights on and is turning away from the quay in unison, steering itself out to sea in a line; the port's gantry cranes swing above them. Out in the Channel, on the horizon, a container ship burns, and a second fireball blooms on the French coast as a faint orange flash.",
+     "camera": "About 50mm from the cliff edge, 2 m up. One move: a slow push forward over the cliff lip, so the foreground grass drops away and the harbour and the departing ferries open up beneath.",
+     "explosion": "A burning container ship on the Channel horizon, plus a faint distant fireball on the French coast that suggests the waking is not only British.",
+     "reference": "Dunkirk (Nolan): the queued soldiers on the mole looking out at an exit that sea and fire close off. Also the real Dover and Kent lorry queues of December 2020 (Operation Stack/Brock), when the border shut and thousands were stranded overnight.",
+     "why_it_works": "It turns the island's evacuation into a single geography: the way out is the sea, and the ships have decided to leave without you. The machines are real machines (ferries, tugs, cranes), and the people are small and stranded but unharmed. It is zoomed out to regional and even international scale, and the push over the cliff edge is one clean, dramatic move that the generator can hold.",
+     "source_url": "https://en.wikipedia.org/wiki/Operation_Brock"
+    }
+   ]
+  }
+ ]
+}

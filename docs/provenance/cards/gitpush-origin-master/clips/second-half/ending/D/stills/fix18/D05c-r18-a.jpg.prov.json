@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix18/D05c-r18-a.jpg",
+ "made": "2026-11-09T21:55:11.243Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the small delivery robot in the gap between the chairs: replace it with the gleaming clean white robot from the second image, spotless pale body, six black wheels, amber beacon on a short stalk, with no bunting, flags or ribbons anywhere on it. Also make the light pools under every chair the same soft steady white glow, evenly lit, none brighter or darker than the others. Keep everything else in the image exactly the same, preserving the original style, lighting, camera angle and composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D05c-r14-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D05c-r14-c.jpg",
+   "/home/kai/.cache/badcode-gpom-ending/refs/maddie-gleam-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "247b4420-cc16-44ec-9603-193a422c3e72"
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-14-sandra-r17-D08c-t2a-dub.wav",
+ "made": "2026-11-09T21:22:24+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/dub-r17/D08c-t2a-d.wav",
+ "why": "Kai's pick a-d (picks r17): take r17qd laid phrase by phrase on D08c-t2a's mouth, cut from clip time 1.10 s so it plays at cut08 + 1.10"
+}

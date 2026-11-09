@@ -1,0 +1,93 @@
+{
+ "segs": {
+  "lead": 11.56,
+  "bead1": 4.12,
+  "bead2": 3.76,
+  "bead3": 20.01,
+  "open": 2.5,
+  "maybes": 15.15,
+  "pick": 1.8,
+  "settle": 0.8,
+  "toRiver": 4.5,
+  "river": 10.99,
+  "flyDown": 8.02,
+  "arcDraw": 2.5,
+  "arcHold": 2.0,
+  "off": 1.2
+ },
+ "clips": {
+  "f01": {
+   "start": 0.35,
+   "text": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+   "needsVoice": false
+  },
+  "f02": {
+   "start": 13.81,
+   "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+   "needsVoice": false
+  },
+  "f03": {
+   "start": 20.95,
+   "text": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+   "needsVoice": false
+  },
+  "f04": {
+   "start": 38.49,
+   "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+   "needsVoice": false
+  },
+  "f05": {
+   "start": 60.5,
+   "text": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+   "needsVoice": false
+  },
+  "f06": {
+   "start": 72.4,
+   "text": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+   "needsVoice": false
+  },
+  "f07a": {
+   "start": 81.44,
+   "text": "Anyway, if we could go back and fix it, we would.",
+   "needsVoice": false
+  }
+ },
+ "exc": [
+  [
+   41.46,
+   45.78
+  ],
+  [
+   46.36,
+   49.96
+  ],
+  [
+   53.28,
+   54.9
+  ]
+ ],
+ "glow": [
+  20.75,
+  39.45
+ ],
+ "draft": "1F",
+ "street": {
+  "b01": "before the hologram, on the street",
+  "b02": "before the hologram, on the street (ends \"Look, let me show you.\")",
+  "f07b": {
+   "after_hologram_ends": 89.41,
+   "note": "back on the street; not on the hologram clock or in voice.wav"
+  }
+ },
+ "marks": {
+  "toast": 11.66,
+  "sorry": 15.78,
+  "married": 19.54,
+  "cloud_blooms": 39.45,
+  "yet_flash": 57.3,
+  "arrive_side_view": 75.19,
+  "arc_draws": 83.21,
+  "screen_off": 87.71,
+  "TD": 88.91
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-a.jpg",
+ "made": "2026-11-09T20:47:19.791Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "The woman and the man in the two provided photos, years younger and happy, on their wedding day; take only their faces and hair, everything else is new. Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. The steps of a plain brick town-hall registry office under a pale overcast sky. Centred, she wears a simple cream knee-length dress and holds a small posy; he wears a cheap grey suit with a carnation; both laughing as paper confetti falls over them. No signs or lettering.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "37e34ace-1489-4286-8256-b989dfa66e45"
+}

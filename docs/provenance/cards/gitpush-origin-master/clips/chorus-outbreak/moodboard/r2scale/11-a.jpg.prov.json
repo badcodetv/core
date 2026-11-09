@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/11-a.jpg",
+ "made": "2026-11-09T20:36:54.328Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Ground level in harvested Lincolnshire stubble: a line of eight combine harvesters side by side, headers lowered and headlight bars blazing, dust trailing, advancing across the field toward the lens. Two kilometres behind them, a market town's church tower and rooftops are lit by a burning grain silo, and on the horizon a much bigger fireball rises over the next town. One car's tail lights flee down a lane. 28mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "b674f5ff-0f4f-4760-a2ea-a28510881163"
+}

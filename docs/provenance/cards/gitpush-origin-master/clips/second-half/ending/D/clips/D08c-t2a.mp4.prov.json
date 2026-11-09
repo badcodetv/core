@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D08c-t2a.mp4",
+ "made": "2026-11-09T20:54:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D08c-r14-b.jpg",
+ "why": "D round 17 (Kai at1141: 'this lip syncing is awful... try using time codes in the video prompt'): Sandra speaks her line on her own, with the words and their timings in the prompt",
+ "source_id": "d5e2777a-0c27-4498-8eaa-e0546c0379a9",
+ "prompt": "One continuous shot, the camera holds still on the two of them. At one second in, the woman in the cream polo neck looks at the man and, quietly and uneasily, she says: I don't like the idea of... Her mouth closes and she hesitates for about a second, glancing down. At three and a half seconds she looks back up at him and says: it feels like dying. Then her mouth stays closed and she just looks at him, frightened, to the end. The man on the left listens, still. The small robot behind them waits. No cuts, no music.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D08c-r14-b.jpg"
+ },
+ "settings": {
+  "durationSeconds": "8",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "88c6f237-42ce-4775-800e-08e7a48ada29"
+ }
+}

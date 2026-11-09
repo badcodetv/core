@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-d.jpg",
+ "made": "2026-11-09T20:46:21.875Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Only her face and hair come from the provided photo; the picture is new and calm. Night. One warm table lamp is the only light; everything else falls into deep shadow. She sits on the edge of a sofa, centred, leaning forward, her open hand held out into the pool of lamplight, offering it, her face half lit and softened, the anger gone. Black surroundings, rich warm tones, strong contrast like an old oil painting. No writing.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/sandra-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "5941d927-2498-4a0a-84cb-fab2ccaf22ab"
+}

@@ -3,8 +3,8 @@
  "scene": "chorus-outbreak",
  "prefix": "ob",
  "title": "GPOM Chorus: Outbreak Night",
- "heading": "GitPush Origin Master <span class=\"tri\">\u25b2</span> the chorus: Outbreak Night + the Rumbling",
- "moodboard_intro": "Round 1. The half-chorus between the banks and the war, 32 beats, about 11 s. The night our machines woke up: the cars on an evacuation motorway lock their doors and drive themselves, then the port cranes stand up and walk through the city. Shots in film order, two or three cinematography options each (lens, height, angle). Tap This, Maybe or No, and leave a note per shot.",
+ "heading": "GitPush Origin Master <span class=\"tri\">▲</span> the chorus: Outbreak Night + the Rumbling",
+ "moodboard_intro": "Round 2 (Kai: three times the clips, city scale, more zoomed out, big explosions in the distance). 16 new shots from a 10-researcher web sweep, two stills each, escalating outward from the motorway to orbit. Tap This, Maybe or No; your round 1 picks are in the strip at the top.",
  "storyboard_intro": "Kai's 7 picks in film order across the 32 beats (11 s). Each frame has three ways to shoot it. The camera work is the point: pick the move per frame, and leave a note if you want a different one.",
  "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak",
  "flow_project": "7c30dbaf-9efd-4f94-84e6-49c3314cad21",
@@ -16,7 +16,7 @@
   ],
   "song_in": 113.917
  },
- "board_round": 1,
+ "board_round": 2,
  "beats": [
   {
    "key": "CA",
@@ -65,16 +65,72 @@
    "at": "beats 29-32",
    "name": "The bookend",
    "blurb": "The opening frame again, with the driver's seat empty. The car drives itself in a convoy toward a town. Then black, into the war."
+  },
+  {
+   "key": "S1",
+   "at": "round 2",
+   "name": "Wider: motorway to district",
+   "blurb": "The jam and the depots from above and far off."
+  },
+  {
+   "key": "S2",
+   "at": "round 2",
+   "name": "The cities",
+   "blurb": "London, Liverpool, the Thames, the seaside, the viaduct: big blasts in the distance, people small in front."
+  },
+  {
+   "key": "S3",
+   "at": "round 2",
+   "name": "The regions and the country",
+   "blurb": "Power stations, farmland, Dover, then Britain going dark from orbit."
   }
  ],
  "boards": {
   "moodboard": "https://claude.ai/artifact/9cbB2BCapQJx89CfXJAHVR",
-  "storyboard": "https://claude.ai/artifact/Q1N135fLAyA9rZadxhqRpD"
+  "storyboard": "https://claude.ai/artifact/Q1N135fLAyA9rZadxhqRpD",
+  "timeline": "https://claude.ai/artifact/GhgLphPdKSMs8PXNdsAjvH"
  },
  "video": {
   "model": "Omni 1.2 Flash",
   "aspect": "16:9",
   "mode": "Frames",
   "duration": 8
- }
+ },
+ "cut": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/cut/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/cut/preview.mp4",
+  "spec": "cut-r2e.json",
+  "round": 2,
+  "picked": "Kai 9 Nov: sequence E (London) of six, on https://claude.ai/artifact/FysUZ1XJxJhDobBStkGC9p; empty-car ending removed"
+ },
+ "picked": [
+  [
+   "CA1-b",
+   "the cup"
+  ],
+  [
+   "FR1-a",
+   "fire down the lanes"
+  ],
+  [
+   "CR1-c",
+   "tower cranes pull free"
+  ],
+  [
+   "RK1-e",
+   "crane over the motorway"
+  ],
+  [
+   "FT1-b",
+   "the foot lands"
+  ],
+  [
+   "GL1-a",
+   "Rotterdam"
+  ],
+  [
+   "EN1-a2-b",
+   "empty driver's seat"
+  ]
+ ]
 }

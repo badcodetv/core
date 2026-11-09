@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/03-a.jpg",
+ "made": "2026-11-09T20:36:54.192Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From a ridge three kilometres off, a 300mm lens stacks it all together: silhouetted across the bottom, a row of semi-detached roofs and a lamp post; behind them the M1, six lanes of stopped cars with a few tiny figures walking between them; behind that a fuel depot near Hemel Hempstead, its white tanks bursting into domes of orange fire that feed one black plume filling the sky. Heat shimmer. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "04cb86bc-6e4e-4b8b-b869-41a5bfe8866f"
+}

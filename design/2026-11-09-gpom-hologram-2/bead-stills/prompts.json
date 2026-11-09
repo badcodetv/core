@@ -1,0 +1,111 @@
+{
+  "purpose": "Stills that play inside the glowing beads of Maddie's hologram (GPOM scene A, Kill bots). Seen small, cropped to a circle: one readable action, subject centred, plain background. The 'before' world: humans alive, warm, everyday.",
+  "model": "Nano Banana Pro",
+  "aspect": "1:1",
+  "project": "sandra-a and derek-a in 0558b1d5; every other still in its own fresh project (Nov 09 20:40-20:49)",
+  "declared_variable": "the look (grade and film stock); camera distance follows each idea",
+  "shots": [
+    {
+      "id": "derek-a",
+      "idea": "16mm BBC: the second half's own look, a weekday kitchen, his whole dithering pose",
+      "planned_prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. A cramped terraced-house kitchen on a grey weekday morning. The man stands centred at the worktop, one hand hovering in mid-air between a chrome two-slot toaster on his left and a plain unlabelled cereal box on his right, brow furrowed in comic indecision. Plain magnolia wall behind him, flat window light from the left. Nothing else on the counter. No words, labels or logos anywhere.",
+      "sent_prompt": "Use the man in the provided image only as the reference for his face, hair and build; make an entirely new picture. Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. A cramped terraced-house kitchen on a grey weekday morning. He stands centred at the worktop in his green jumper, one hand hovering in mid-air between a chrome two-slot toaster and a plain unlabelled cereal box, brow furrowed in comic indecision. Plain magnolia wall behind him, flat window light from the left. No lettering anywhere.",
+      "file": "derek-a.jpg",
+      "reference": "SB07c crop"
+    },
+    {
+      "id": "derek-b",
+      "idea": "Close on the choice: hand, toaster and box fill the bead, his face just above",
+      "planned_prompt": "Close shot at worktop height. In the middle of the square, a man's open hand hangs undecided between a slice of white bread poised over a toaster slot and a blank cereal box, his stubbled face above them looking down, lips pursed, deciding. Shallow focus, everything behind him a soft cream blur. Soft natural morning light, real skin texture, fine grain like a 35mm still. No text on any packet.",
+      "sent_prompt": "Take only his face, hair and build from the provided photo and build a brand-new picture. Close shot at worktop height: centred in the square, his open hand hangs undecided between a slice of white bread poised over a toaster slot and a blank cereal box, his stubbled face just above them looking down, lips pursed, deciding. Shallow focus, everything behind him a soft cream blur. Soft natural morning light, real skin texture, 35mm still photograph grain. No text on any packet.",
+      "file": "derek-b.jpg",
+      "reference": "SB07c crop"
+    },
+    {
+      "id": "derek-c",
+      "idea": "Warm memory: low golden sun through the window, a faded old-photo feel",
+      "planned_prompt": "An old family photograph come to life: early sunlight pours low and golden through a net-curtained kitchen window, catching steam off a mug. The man, in a faded t-shirt and slippers, stands in the centre of the frame, bread in one hand, the other paused above a cereal box, half smiling at his own dithering. Warm amber highlights, soft brown shadows, gentle halation, the colours of a 1990s print left in a drawer. Simple tiled wall behind. No lettering.",
+      "sent_prompt": "Keep just his face and hair from the provided photo; everything else is new. Early sunlight pours low and golden through a net-curtained kitchen window. He wears a faded grey t-shirt and stands in the centre, a slice of bread in one hand, the other paused above a cereal box, half smiling at his own dithering. Warm amber light, soft brown shadows, the faded colours of an old 1990s photo print. Simple tiled wall behind him.",
+      "file": "derek-c.jpg",
+      "reference": "SB07c crop",
+      "fix": {
+        "file": "derek-c-clean.jpg",
+        "why": "Flow painted a real cereal brand on the box; edited off derek-c.jpg to a plain box",
+        "sent_prompt": "Using the provided image, change only the cereal box: make it a plain cream cardboard box with no printing, no words, no logo and no picture on it. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition."
+      }
+    },
+    {
+      "id": "derek-d",
+      "idea": "Breaks the look: high-key, saturated, a breakfast advert frozen mid-ad",
+      "planned_prompt": "Bright high-key studio image like a frozen frame from a cheerful breakfast television advert: a spotless white kitchen, saturated primary colours, pop-up toaster in glossy red, a blank yellow cereal box. The man stands dead centre facing camera, finger raised over the two in an exaggerated eeny-meeny pose, eyebrows up. Even shadowless light, crisp and clean, simple white background. No brand, no text.",
+      "sent_prompt": "Borrow only his face and hair from the provided photo for a new picture. Bright high-key studio image like a frozen frame from a cheerful breakfast television advert: a spotless white kitchen, saturated primary colours, a glossy red pop-up toaster and a blank yellow cereal box with nothing printed on it. He stands dead centre facing camera in a crisp blue shirt, one finger raised over the two in an exaggerated eeny-meeny pose, eyebrows up. Even shadowless light, simple white background, nothing written anywhere.",
+      "file": "derek-d.jpg",
+      "reference": "SB07c crop"
+    },
+    {
+      "id": "sandra-a",
+      "idea": "16mm BBC: a front room mid-row, her arm reaching across to him",
+      "planned_prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. A small front room, a standard lamp on. The woman stands centred, the anger draining out of her face, eyes gentle, one hand reaching forward toward the soft out-of-focus shoulder of a man in the foreground edge of frame. Plain patterned wallpaper behind her. No text anywhere.",
+      "sent_prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. A small front room, a standard lamp on. The woman stands centred, the anger draining out of her face, eyes gentle, one hand reaching forward toward the soft out-of-focus shoulder of a man at the near edge of frame. Plain patterned wallpaper behind her.",
+      "file": "sandra-a.jpg",
+      "reference": "character Cream Jumper Woman"
+    },
+    {
+      "id": "sandra-b",
+      "idea": "Big close-up on her face: the moment she says it",
+      "planned_prompt": "Big close-up of the woman's face filling the centre of the square, eyes wet, mouth just opening on the word sorry, jaw unclenching, a strand of hair loose. Soft overcast window light from the side, the background a plain blurred grey wall. Real skin with lines and freckles, unretouched, fine 35mm grain, muted natural colour.",
+      "sent_prompt": "Take only her face and hair from the provided photo for a new picture, with the opposite feeling: the fury is gone. Big close-up of her face filling the centre of the square, eyes wet, mouth just opening on the word sorry, jaw unclenched, brows lifted and soft, a strand of hair loose. Soft overcast window light from the side, the background a plain blurred grey wall. Real skin with lines and freckles, unretouched, fine 35mm grain, muted natural colour.",
+      "file": "sandra-b.jpg",
+      "reference": "SB07b crop"
+    },
+    {
+      "id": "sandra-c",
+      "idea": "Observed from the doorway: her hand lands on his arm, his back to us",
+      "planned_prompt": "Seen from a hallway through an open kitchen doorway: the woman, centred, has crossed the lino and laid her hand on the forearm of a man who stands with his back to camera, arms folded. Her head is tilted, her face open and apologetic. Two unwashed mugs on the side, a plain wall. Quiet, observational, naturalistic daylight, muted colour, film grain. No text.",
+      "sent_prompt": "Use only her face and hair from the provided photo; the scene is new. Seen from a hallway through an open kitchen doorway: she has crossed the lino and laid her hand on the forearm of a man in a dark green jumper who stands with his back to camera, arms folded. She is in the middle of the doorway, head tilted, face open and apologetic. Two unwashed mugs on the side, a plain wall. Quiet and observed from a distance, naturalistic daylight, muted colour, film grain. Nothing written anywhere.",
+      "file": "sandra-c.jpg",
+      "reference": "SB07b crop"
+    },
+    {
+      "id": "sandra-d",
+      "idea": "Breaks the look: night, one warm lamp, chiaroscuro, a hand held out into the light",
+      "planned_prompt": "Night. One warm table lamp the only light, everything else falling into deep shadow. The woman sits on the edge of a sofa in the middle of the frame, leaning forward, her open hand held out into the pool of lamplight, offering it, her face half lit and softened. Black background, rich warm tones, high contrast like a painting. No text.",
+      "sent_prompt": "Only her face and hair come from the provided photo; the picture is new and calm. Night. One warm table lamp is the only light; everything else falls into deep shadow. She sits on the edge of a sofa, centred, leaning forward, her open hand held out into the pool of lamplight, offering it, her face half lit and softened, the anger gone. Black surroundings, rich warm tones, strong contrast like an old oil painting. No writing.",
+      "file": "sandra-d.jpg",
+      "reference": "SB07b crop"
+    },
+    {
+      "id": "wedding-a",
+      "idea": "16mm BBC: registry office steps, confetti, both laughing",
+      "planned_prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. The steps of a plain brick town-hall registry office. The woman, centred, in a simple cream knee-length dress with a small posy, laughing as paper confetti falls over her; her new husband beside her in a cheap grey suit, turned toward her, mostly hidden by her shoulder. A pale overcast sky. No signs or lettering.",
+      "sent_prompt": "The woman and the man in the two provided photos, years younger and happy, on their wedding day; take only their faces and hair, everything else is new. Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. The steps of a plain brick town-hall registry office under a pale overcast sky. Centred, she wears a simple cream knee-length dress and holds a small posy; he wears a cheap grey suit with a carnation; both laughing as paper confetti falls over them. No signs or lettering.",
+      "file": "wedding-a.jpg",
+      "reference": "SB07b + SB07c crops"
+    },
+    {
+      "id": "wedding-b",
+      "idea": "The groom's face: him looking at her, she has her back to us under the confetti",
+      "planned_prompt": "Medium close shot outside a modest registry office. The man, centred, in an ill-fitting navy suit with a carnation, grins helplessly at his bride, who stands with her back to camera, her hair pinned with a small flower. Coloured paper confetti hangs in the air between them. Soft grey English daylight, plain brick behind, natural colour, 35mm grain, unposed. No text.",
+      "sent_prompt": "A brand-new picture using only the man's face and hair from the provided photo, a few years younger and overjoyed. Medium close shot outside a modest registry office: he is centred in an ill-fitting navy suit with a carnation, grinning helplessly at his bride, who stands nearest the camera with her back to us, brown hair pinned up with a small white flower. Coloured paper confetti drifts between them. Soft grey English daylight, plain brick behind, natural colour, 35mm grain, unposed and caught in the moment. No lettering anywhere.",
+      "file": "wedding-b.jpg",
+      "reference": "SB07c crop"
+    },
+    {
+      "id": "wedding-c",
+      "idea": "Wide, from across the road: two small figures in a burst of confetti, a whole moment",
+      "planned_prompt": "Wide shot from across a quiet British high street: a small wedding party on the steps of a plain civic building, and in the centre the couple, small in the frame, coming down the steps hand in hand through a burst of confetti thrown by a handful of friends. Wet pavement, a parked car, a grey sky. Documentary photograph, muted colour, fine grain. No signs, no lettering.",
+      "sent_prompt": "The couple from the two provided photos on their wedding day, faces and hair only, everything else new. Wide shot from across a quiet British high street: a small wedding party on the steps of a plain civic building, and in the centre the couple, small in the frame, coming down the steps hand in hand through a burst of confetti thrown by a handful of friends. She in a simple cream dress, he in a grey suit. Wet pavement, one parked car, a grey sky. Documentary photograph, muted colour, fine grain. No signs, no lettering.",
+      "file": "wedding-c.jpg",
+      "reference": "SB07b + SB07c crops"
+    },
+    {
+      "id": "wedding-d",
+      "idea": "Breaks the look: disposable-camera flash at the reception in a pub function room",
+      "planned_prompt": "A disposable-camera flash snapshot at a wedding reception in a pub function room: hard on-camera flash, red-tinged shadows, the room behind falling to black. The bride, centred, in a simple cream dress, cheek to cheek with her groom whose face is turned into her hair, both mid-laugh, a half pint and a paper plate of sausage rolls on the table. Slightly overexposed skin, date-stamp-free, no text.",
+      "sent_prompt": "The two people in the provided photos, faces and hair only, at their own wedding reception; a new picture. A cheap disposable-camera snapshot with hard on-camera flash in a pub function room: the room behind falls away to black. Centred, she in a simple cream dress and he in a loosened tie press cheek to cheek, both mid-laugh, eyes creased, a half pint and a paper plate of sausage rolls on the table in front. Slightly blown-out skin, flat flash shadows, warm cheap-print colour. Nothing written anywhere, no date stamp.",
+      "file": "wedding-d.jpg",
+      "reference": "SB07b + SB07c crops"
+    }
+  ],
+  "method": "Planned as character casts in Flow project 0558b1d5 (Oct 15 - 14:42). 'Green Jumper Man' (Derek, portrait only) failed twice as a cast (Flow 'failed to generate' tile, no charge); 'Cream Jumper Woman' (Sandra) cast fine (sandra-a). That project is cluttered and handed back an old Maddie still once. So every other still was made with flow_edit_image in its own fresh project, with a crop of SB07c (Derek) and/or SB07b (Sandra) attached as the face reference. The sent prompts below are read back from the recipe cards (docs/provenance/cards/.../bead-stills/), which are the record."
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/08-a.jpg",
+ "made": "2026-11-09T20:36:54.284Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Handheld from a terraced-house balcony in Gravesend, looking across the Thames to Tilbury: chimney pots, a washing line and a satellite dish in the foreground, and one small figure watching from the next balcony. Across the black river stand the port's quay cranes and container stacks, with the town's orange street grid climbing behind. A white hemispherical shock cloud swells out from the docks over the water, an orange fireball rising inside it. 50mm. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "841186b5-b486-4ca5-90c2-684c93691f21"
+}

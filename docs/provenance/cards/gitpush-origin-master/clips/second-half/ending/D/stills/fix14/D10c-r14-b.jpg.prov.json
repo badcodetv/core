@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D10c-r14-b.jpg",
+ "made": "2026-11-09T19:49:20.618Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, change only these things: put a person lying back in every single chair, a hundred ordinary middle-aged and older British people of all kinds in white clean-room suits, eyes open, calm, some holding the hand of the person in the next chair, their own patchwork blankets, knitted throws and mugs of tea with them where the blankets and mugs are now; make the small delivery robot in the centre gleaming clean and spotless pale grey, with no bunting, no mud, no scratches, its amber beacon glowing; remove the empty white suit and the black gloves lying on the floor. Keep everything else in the image exactly the same: the room, the exact layout and spacing of every chair, the cables on the floor, the central round platform, the camera angle, the lighting and the style.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D16f-r1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D16f-r1-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3fdda6d2-8afa-4eb4-910e-f2a2ce8fda4f"
+}

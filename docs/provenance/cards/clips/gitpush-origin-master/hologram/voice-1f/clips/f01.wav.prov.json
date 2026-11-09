@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/f01.wav",
+ "made": "2026-11-09T20:40:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f01.wav",
+ "why": "hologram 1F line f01 (Kai locked draft 1F, 9 Nov); take picked as whisper-verbatim",
+ "prompt": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+ "inputs": {
+  "heard": "The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example, Derek picks toast, not cereal.",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+ },
+ "settings": {
+  "src_in": "0.05",
+  "src_out": "13.21"
+ }
+}

@@ -1,43 +1,33 @@
 {
  "about": "Kai's notes on the scene A (kill bots) timeline page https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 21,
+ "round": 22,
  "plan": [
   {
-   "h": "Round 21: your round 20 notes",
+   "h": "Round 22: the new Storyverse (dialogue 1F, locked 9 Nov)",
    "items": [
-    "The cat line ends 'It just isn't decided yet.' and stops; the flash and collapse land on 'yet'. Hologram re-rendered (73.6 s).",
-    "Sandra (your pick, 're-edit around her'): back to round 19's clips, no LatentSync. Her face stays only on 'Derek. You've left the seat up again.' (it measured in sync); 'and you still can't put a seat down' and 'Yeah, the world ended. Doesn't mean you get to stop having manners.' play over Derek taking it, his mouth shut (tracked frame by frame).",
-    "Everything else as round 20."
+    "The street is as before up to 'He misses you something rotten, you know.' Then, still on the street: 'We didn't realise how important you were...' and 'Material science is real. It just isn't the whole picture...'.",
+    "Fade to black into the new hologram (88.9 s): Derek picks toast (your still in bead 1), Sandra says sorry first (bead 2), they got married (bead 3); qualia; the multiverse laughed off, flash on 'yet'; the storyverse in the river; the strings stop dead under 'unique training data'; the arc draws on 'go back'.",
+    "Fade up on the street, still driving: 'But the patrol's out. Please, mind how you go.' Then the kill bots as round 21.",
+    "Beat 0 is now 2:37 (was 1:51); the whole scene is 3:20 (was 2:34). Sandra's re-edit from round 21 is kept."
+   ]
+  },
+  {
+   "h": "Worth a look",
+   "items": [
+    "'hollow' comes out as ''ollow' (three takes of four dropped the h: her Bristol accent). Kept.",
+    "The stills sit in discs about 3.6 times a bead's size, so faces read; the bead's time tag moved above each disc. The plain hologram (no stills) is rendered too if you'd rather."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Derek's 'But the world ended, Sandra!' still lands a quarter-second before his mouth by measurement. Leave it, or cut it onto Sandra's back too?",
-    "Still open from round 20: the hologram end pose (matrix at the right edge) and the time machine's pull-back; your old music note (Chopin, not Beethoven's 5th)."
+    "Stills in the beads, or the plain hologram?",
+    "Is it too long? b02 on the street runs 21 s before the hologram starts.",
+    "Still open: Derek's 'But the world ended, Sandra!' a quarter-second early; the hologram end pose; your music note (Chopin). Premiere waits for your 'build it' once the Goodbye session is out of it."
    ]
   }
  ],
- "replies": {
-  "at971": "Done: 'This is your life, see' is cut. The hologram opens straight on the first bead, 07:42 toast, and her first line is 'You humans go through life making decisions. For example: toast, not cereal.', said quickly.",
-  "at614": "Done: after 'He misses you something rotten, you know.' the bridge is now 'We didn't realise how important you were. Look, please let me show you.'",
-  "at839": "Done: the presentation is about 74 s against 1:43 before, and the whole scene is 2:34 (was 3:06). Every section's meaning kept.",
-  "at1167": "Done, via the dialogue page: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided till a consciousness looks.' then 'So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse.' Front-loaded, regret not a joke.",
-  "at1463": "Done: 'Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape.' One coherent bit, both jokes kept.",
-  "at1944": "Done: while the cloud is up the camera dives into it three times, to different points (on the scientist, the bloke and 'alive and dead'), then the collapse.",
-  "at2070": "Done: a quick ping of light from the ball on 'looks' (under half a second), then the cloud collapses, then the widening to the river.",
-  "at2190": "Done: 'And that's just you' re-voiced deadpan. The river is now everyone's golden beads in a round bundle (a cylinder seen side-on), our string on its edge.",
-  "at2407": "Done: in the river the camera starts further back and jumps closer to the front; decisions come faster, and every lane reaches the cut-off exactly as the camera leaves.",
-  "at2511": "Done: leaving the cloud is one smooth move straight to the side view where every lane stops, landing on 'away'. No in-between stops.",
-  "at2692": "Partly: the matrix is higher (2.2 units) and the time machine zooms back out to the wide shot. The end pose is wider than your frame so the matrix fits; it now sits at the right edge, not centred. Your eye needed (You decide).",
-  "at3030": "Done: 'He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.'",
-  "at3154": "Done, merged into one: 'But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it.'",
-  "at3436": "Round 21: LatentSync didn't hold up on Sandra, so it's out. Re-edited around her instead: her face only on her first line, then her other two lines over Derek taking it (his mouth measured shut).",
-  "at3874": "Done: the bot tearing past Maddie (and her wobble) is cut. From the row straight to the tanks on the motorway. We see the pack twice: the motorway, then racing across the field to the bunker. No kill mode or sustain mode screens.",
-  "at4079": "Done: her new line, voiced: 'Boss, can you see those bots? In kill mode. They must have detected an organic signal.'",
-  "at4171": "Done: the motorway now comes before her call, and during the boss's reply we stay on Maddie (the shot ping-pongs past its 8 s; she hardly moves).",
-  "at1403": "Done: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet.' and nothing after it. Re-voiced; the ping and collapse moved onto 'yet'; everything after it 0.6 s earlier."
- },
+ "replies": {},
  "kai_round1": {
   "at3521": {
    "note": "This shot needs a bit of work. I think they need to be arranged outside the door like they were. We could almost just play that clip backwards, but then the dust wouldn't work. But I mean, at the moment, there's AI artifacts on this shot specifically. We need to redo this.",
@@ -542,5 +532,42 @@
  "kai_round20": {
   "at1403": "I think here we say it just isn't decided yet and leave it there.",
   "chat": "the lip-sync's not so great on Sandra... might be better to just try and recut it altogether"
+ },
+ "plan_round21": [
+  {
+   "h": "Round 21: your round 20 notes",
+   "items": [
+    "The cat line ends 'It just isn't decided yet.' and stops; the flash and collapse land on 'yet'. Hologram re-rendered (73.6 s).",
+    "Sandra (your pick, 're-edit around her'): back to round 19's clips, no LatentSync. Her face stays only on 'Derek. You've left the seat up again.' (it measured in sync); 'and you still can't put a seat down' and 'Yeah, the world ended. Doesn't mean you get to stop having manners.' play over Derek taking it, his mouth shut (tracked frame by frame).",
+    "Everything else as round 20."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Derek's 'But the world ended, Sandra!' still lands a quarter-second before his mouth by measurement. Leave it, or cut it onto Sandra's back too?",
+    "Still open from round 20: the hologram end pose (matrix at the right edge) and the time machine's pull-back; your old music note (Chopin, not Beethoven's 5th)."
+   ]
+  }
+ ],
+ "replies_round21": {
+  "at971": "Done: 'This is your life, see' is cut. The hologram opens straight on the first bead, 07:42 toast, and her first line is 'You humans go through life making decisions. For example: toast, not cereal.', said quickly.",
+  "at614": "Done: after 'He misses you something rotten, you know.' the bridge is now 'We didn't realise how important you were. Look, please let me show you.'",
+  "at839": "Done: the presentation is about 74 s against 1:43 before, and the whole scene is 2:34 (was 3:06). Every section's meaning kept.",
+  "at1167": "Done, via the dialogue page: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided till a consciousness looks.' then 'So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse.' Front-loaded, regret not a joke.",
+  "at1463": "Done: 'Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape.' One coherent bit, both jokes kept.",
+  "at1944": "Done: while the cloud is up the camera dives into it three times, to different points (on the scientist, the bloke and 'alive and dead'), then the collapse.",
+  "at2070": "Done: a quick ping of light from the ball on 'looks' (under half a second), then the cloud collapses, then the widening to the river.",
+  "at2190": "Done: 'And that's just you' re-voiced deadpan. The river is now everyone's golden beads in a round bundle (a cylinder seen side-on), our string on its edge.",
+  "at2407": "Done: in the river the camera starts further back and jumps closer to the front; decisions come faster, and every lane reaches the cut-off exactly as the camera leaves.",
+  "at2511": "Done: leaving the cloud is one smooth move straight to the side view where every lane stops, landing on 'away'. No in-between stops.",
+  "at2692": "Partly: the matrix is higher (2.2 units) and the time machine zooms back out to the wide shot. The end pose is wider than your frame so the matrix fits; it now sits at the right edge, not centred. Your eye needed (You decide).",
+  "at3030": "Done: 'He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones.'",
+  "at3154": "Done, merged into one: 'But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it.'",
+  "at3436": "Round 21: LatentSync didn't hold up on Sandra, so it's out. Re-edited around her instead: her face only on her first line, then her other two lines over Derek taking it (his mouth measured shut).",
+  "at3874": "Done: the bot tearing past Maddie (and her wobble) is cut. From the row straight to the tanks on the motorway. We see the pack twice: the motorway, then racing across the field to the bunker. No kill mode or sustain mode screens.",
+  "at4079": "Done: her new line, voiced: 'Boss, can you see those bots? In kill mode. They must have detected an organic signal.'",
+  "at4171": "Done: the motorway now comes before her call, and during the boss's reply we stay on Maddie (the shot ping-pongs past its 8 s; she hardly moves).",
+  "at1403": "Done: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet.' and nothing after it. Re-voiced; the ping and collapse moved onto 'yet'; everything after it 0.6 s earlier."
  }
 }

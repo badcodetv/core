@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D08c-r14-a.jpg",
+ "made": "2026-11-09T19:51:34.390Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "In the first picture, swap the battered little delivery robot behind the woman for the spotless one in the second picture: smooth pale grey panels with no dents, no mud, no torn bunting, a small amber light on top. Nothing else moves: the woman in her white suit and cream jumper, her face and expression, the man's shoulder at the left edge, the rows of black chairs behind, the framing and the soft clean-room light stay as they are in the first picture.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D08-r2-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D08-r2-a.jpg",
+   "/home/kai/.cache/badcode-gpom-ending/refs/D03cr3-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "125cb80e-5a5b-40e6-a6c2-98c634d5147e"
+}

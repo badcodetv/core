@@ -243,5 +243,196 @@
   "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
   "what": "D round 14: Hundred+question one take, Sandra's jeopardy, vow with pauses, no Thank you, hands quick to white; 1:26. Premiere r10 in sync, in 00 RENDER story (9:45.3)",
   "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r14 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T19:52:08+00:00",
+  "stage": "picks",
+  "round": 14,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "chair layout made consistent (Kai at509/at1153/at1231/at1615/at1938): overhead, they-sit and Sandra+clean-Maddie stills edited from the final shot D16f-r1-a",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/d-r14-chairs-picks.json <scratchpad>/d-chairs/index.html"
+ },
+ {
+  "at": "2026-11-09T20:04:00+00:00",
+  "stage": "picks",
+  "round": 14,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "chair-layout stills picks: Kai's picks read",
+  "decided": [
+   "D05c: c",
+   "D08c: b",
+   "D10c: a — Maddy is far too big in this shot, she needs to be much smaller comparatively to the size of the people in the chair",
+   "final shot: we need clean Maddy here and also the suit on the ground... remove... we've almost got this shot above, it's just without the people in the chairs"
+  ],
+  "feedback": "feedback/picks-r14",
+  "feedback_docs": 4
+ },
+ {
+  "at": "2026-11-09T20:04:42+00:00",
+  "stage": "picks",
+  "round": 15,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "round 15 stills: smaller Maddie in the seated room, the new last shot (people gone, clean Maddie, no suit), hands already held",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/d-r15-chairs-picks.json <scratchpad>/d-chairs/index.html"
+ },
+ {
+  "at": "2026-11-09T20:14:49+00:00",
+  "stage": "timeline",
+  "round": 15,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 15: Kai's chair picks in — overhead D05c, Sandra's two-shot D08c, hands D12h held together; stand-ins: the vow tail, D10x, D16",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r15 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T20:16:55+00:00",
+  "stage": "premiere",
+  "round": 15,
+  "what": "Premiere '06 GPOM story D crossing r11' built from page round 15 (in sync) and swapped into 00 RENDER story (Scale 150; E +0.375 s)"
+ },
+ {
+  "at": "2026-11-09T20:23:56+00:00",
+  "stage": "picks",
+  "round": 15,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "round 15 stills picks read",
+  "decided": [
+   "D10c2: b (seated room, Maddie small)",
+   "D16n: ca (the seated room with the people gone)",
+   "D12h: a (hands already held, fingers laced) over the reach clip"
+  ],
+  "feedback": "feedback/picks-r15",
+  "feedback_docs": 7
+ },
+ {
+  "at": "2026-11-09T20:39:16+00:00",
+  "stage": "timeline",
+  "round": 16,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 16: Kai's picks r15 in — Sandra lip-synced, vow end + they sit on the seated room D10c, hands held D12k, last shot D16n; no stand-ins",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r16 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T20:40:53+00:00",
+  "stage": "premiere",
+  "round": 16,
+  "what": "Premiere '06 GPOM story D crossing r12' built from page round 16 (in sync) and swapped into 00 RENDER story (Scale 150; E +0.292 s)"
+ },
+ {
+  "at": "2026-11-09T21:09:50+00:00",
+  "stage": "picks",
+  "round": 17,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "r17 picks: Maddie's vow in 7 readings (steady/protective/plain/tender) and Sandra fitted to re-shot D08c-t2a/b (our quick takes c/d, or Omni's own voice)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/d-r17-picks.json <scratchpad>/d-chairs/index.html"
+ },
+ {
+  "at": "2026-11-09T21:25:49+00:00",
+  "stage": "picks",
+  "round": 17,
+  "what": "r17 picks dumped",
+  "decided": [
+   "Sandra a-d (shot a, quick take d fitted to her mouth)",
+   "vow le (plain reading)"
+  ],
+  "feedback": "feedback/picks-r17",
+  "feedback_docs": 9
+ },
+ {
+  "at": "2026-11-09T21:25:49+00:00",
+  "stage": "timeline",
+  "round": 17,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 17: Sandra re-shot and fitted (a-d), plain vow (le) with 'sure' whole, cut earlier, room music to silence under the vow then the crossing piece",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T21:28:27+00:00",
+  "stage": "premiere",
+  "round": 17,
+  "what": "Premiere 06 GPOM story D crossing r13 built from cut-r17, in sync; swapped into 00 RENDER story at 466.792 (Scale 150), E moved -1.125 s; board updated"
+ },
+ {
+  "at": "2026-11-09T21:37:38+00:00",
+  "stage": "picks",
+  "round": 18,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "r18 picks: the old lady's 'And afterwards?' re-shot twice (D11c-t2a/b, words timed in the prompt) with quick take r18qb fitted, or Omni's own voice",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/d-r18-picks.json <scratchpad>/d-chairs/index.html"
+ },
+ {
+  "at": "2026-11-09T21:44:33+00:00",
+  "stage": "picks",
+  "round": 18,
+  "what": "r18 picks dumped",
+  "decided": [
+   "the old lady a-b (shot a, quick take b fitted to her mouth); Kai: 'Perfect. Yeah, that's really sorted it out. Exactly that.'"
+  ],
+  "feedback": "feedback/picks-r18",
+  "feedback_docs": 10
+ },
+ {
+  "at": "2026-11-09T21:46:12+00:00",
+  "stage": "timeline",
+  "round": 18,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 18: the old lady's 'And afterwards?' re-shot (D11c-t2a) and fitted (a-b); rest as r17",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T21:46:12+00:00",
+  "stage": "premiere",
+  "round": 18,
+  "what": "Premiere 06 GPOM story D crossing r14 built from cut-r18, in sync; swapped into 00 RENDER story at 466.792 (Scale 150), E unchanged; board updated"
+ },
+ {
+  "at": "2026-11-09T22:00:58+00:00",
+  "stage": "timeline",
+  "round": 18,
+  "what": "timeline r18 notes dumped: at502 (overhead flickers, Maddie dirty), at944 (Maddie dirty on the hands shot)",
+  "feedback": "feedback/timeline-r18",
+  "feedback_docs": 65
+ },
+ {
+  "at": "2026-11-09T22:00:58+00:00",
+  "stage": "picks",
+  "round": 19,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "r19 stills: clean Maddie on the overhead (D05c-r18 a/b, even chair light) and on the lady's hands (D11b-r18 b/c)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/d-r19-picks.json <scratchpad>/d-chairs/index.html"
+ },
+ {
+  "at": "2026-11-09T22:09:39+00:00",
+  "stage": "picks",
+  "round": 19,
+  "what": "r19 picks dumped",
+  "decided": [
+   "hands b (clean Maddie beside the lady)",
+   "overhead: now (kept as is)"
+  ],
+  "feedback": "feedback/picks-r19",
+  "feedback_docs": 12
+ },
+ {
+  "at": "2026-11-09T22:11:08+00:00",
+  "stage": "timeline",
+  "round": 19,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 19: clean Maddie beside the lady's hands (D11b-t2b); overhead kept (pick now)",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-09T22:11:08+00:00",
+  "stage": "premiere",
+  "round": 19,
+  "what": "Premiere 06 GPOM story D crossing r15 built from cut-r19, in sync; swapped into 00 RENDER story (Scale 150); board updated"
+ },
+ {
+  "at": "2026-11-09T22:22:52+00:00",
+  "stage": "timeline",
+  "round": 19,
+  "what": "cut signed off",
+  "decided": [
+   "Claude it's perfect! well done, we have a cut"
+  ]
  }
 ]

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/dub-r17/D08c-t2b-d.mp4",
+ "made": "2026-11-09T21:08:35+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/lipsync/place-dub.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-14-sandra-r17qd.wav",
+ "why": "r17 at1141: Sandra's quick take d fitted phrase by phrase onto D08c-t2b's mouth (phrase table D08c-t2b-d.json), clip muted"
+}

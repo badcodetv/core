@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D12k-t1.mp4",
+ "made": "2026-11-09T20:26:30+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D12h-r15-a.jpg",
+ "why": "D round 16: Kai picked D12h a (picks r15): the hands already held, nobody reaching",
+ "source_id": "155d08b8-0791-42c0-814f-f58ceb704211",
+ "prompt": "One continuous shot, nothing in frame moves but the two hands. Their laced fingers tighten once, gently, and his thumb strokes the back of her hand, then they rest, still holding. The light on the floor between the chairs slowly brightens. No cuts.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix15/D12h-r15-a.jpg"
+ },
+ "settings": {
+  "durationSeconds": "6",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "98acd859-8082-4de2-af3a-16f3aa560ac2"
+ }
+}

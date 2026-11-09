@@ -1,0 +1,255 @@
+{
+ "title": "Crossing Picks",
+ "eyebrow": "GPOM scene D · round 18 · the old lady",
+ "heading": "The old lady's line",
+ "intro": "One pick from your round-17 note. Your round-17 picks (the plain promise, Sandra a-d) are in and folded below.",
+ "sections": [
+  {
+   "h": "Round 18: the old lady's line",
+   "lede": "One pick. Everything else in round 17 stays as it is.",
+   "groups": [
+    {
+     "slot": "r18-lady",
+     "round": 4,
+     "kind": "video",
+     "title": "The old lady: \"And afterwards?\" (your note: the lip sync is off)",
+     "line": "Her close-up re-shot twice, the prompt timing her two words, the same way Sandra was fixed. Our voice is a new quicker take (1.15 s instead of 1.4 s), laid 0.03-0.05 s after her mouth opens. \"omni\" is the clip with the video model's own voice.",
+     "opts": [
+      {
+       "id": "a-b",
+       "src": "r18/lady-a-b.mp4",
+       "label": "a-b: shot a, our voice (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "b-b",
+       "src": "r18/lady-b-b.mp4",
+       "label": "b-b: shot b, our voice",
+       "warn": "voice sped up 1.15x"
+      },
+      {
+       "id": "a-omni",
+       "src": "r18/lady-a-omni.mp4",
+       "label": "a-omni: shot a, its own voice",
+       "warn": "not our lady's voice"
+      },
+      {
+       "id": "b-omni",
+       "src": "r18/lady-b-omni.mp4",
+       "label": "b-omni: shot b, its own voice",
+       "warn": "not our lady's voice"
+      },
+      {
+       "id": "now",
+       "src": "r18/lady-now.mp4",
+       "label": "now (r17): for comparison",
+       "warn": "the one you noted"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Round 17: your timeline notes",
+   "lede": "Two choices before I cut round 17. Pick one per row (a note on a row is welcome).",
+   "groups": [
+    {
+     "slot": "r17-vow",
+     "round": 3,
+     "kind": "audio",
+     "title": "Maddie's promise: which feeling? (your note: too timid, and \"sure\" was cut off)",
+     "line": "\"I won't switch it on unless you want it. All of you. And only if you're sure.\" Seven whole takes in four moods, pauses held to 1.2 s. Every one ends on a full \"sure\". Under it, the room music now fades to silence and the crossing music fades in after.",
+     "opts": [
+      {
+       "id": "sc",
+       "src": "r17/vow-sc.mp3",
+       "label": "sc: steady, take c (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "sd",
+       "src": "r17/vow-sd.mp3",
+       "label": "sd: steady, take d",
+       "warn": ""
+      },
+      {
+       "id": "pb",
+       "src": "r17/vow-pb.mp3",
+       "label": "pb: protective",
+       "warn": "firmest"
+      },
+      {
+       "id": "le",
+       "src": "r17/vow-le.mp3",
+       "label": "le: plain",
+       "warn": "no colour, just said"
+      },
+      {
+       "id": "tc",
+       "src": "r17/vow-tc.mp3",
+       "label": "tc: tender, take c",
+       "warn": "shortest, 8.8 s"
+      },
+      {
+       "id": "tf",
+       "src": "r17/vow-tf.mp3",
+       "label": "tf: tender, take f",
+       "warn": ""
+      },
+      {
+       "id": "te",
+       "src": "r17/vow-te.mp3",
+       "label": "te: tender, take e",
+       "warn": ""
+      },
+      {
+       "id": "now",
+       "src": "r17/vow-now.mp3",
+       "label": "now (r16): for comparison",
+       "warn": "\"sure\" is clipped"
+      }
+     ]
+    },
+    {
+     "slot": "r17-sandra",
+     "round": 3,
+     "kind": "video",
+     "title": "Sandra: \"I don't like the idea of… it feels like dying.\" (your note: the lip sync is awful)",
+     "line": "Re-shot twice; the prompt said when each phrase lands. Our voice is a new quicker, nervous read, laid phrase by phrase 0.07 s after her mouth opens (c and d are two takes of it). \"omni\" is the clip with the video model's own voice.",
+     "opts": [
+      {
+       "id": "a-d",
+       "src": "r17/sandra-a-d.mp4",
+       "label": "a-d: shot a, our voice d (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "a-c",
+       "src": "r17/sandra-a-c.mp4",
+       "label": "a-c: shot a, our voice c",
+       "warn": "voice sped up 1.2×"
+      },
+      {
+       "id": "a-omni",
+       "src": "r17/sandra-a-omni.mp4",
+       "label": "a-omni: shot a, its own voice",
+       "warn": "not our Sandra voice"
+      },
+      {
+       "id": "b-d",
+       "src": "r17/sandra-b-d.mp4",
+       "label": "b-d: shot b, our voice d",
+       "warn": ""
+      },
+      {
+       "id": "b-c",
+       "src": "r17/sandra-b-c.mp4",
+       "label": "b-c: shot b, our voice c",
+       "warn": "voice sped up 1.2×"
+      },
+      {
+       "id": "b-omni",
+       "src": "r17/sandra-b-omni.mp4",
+       "label": "b-omni: shot b, its own voice",
+       "warn": "not our Sandra voice"
+      },
+      {
+       "id": "now",
+       "src": "r17/sandra-now.mp4",
+       "label": "now (r16): for comparison",
+       "warn": "the one you called awful"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "h": "From your notes",
+   "lede": "Same chair layout as before; Maddie made much smaller.",
+   "groups": [
+    {
+     "slot": "D10c2",
+     "title": "They sit, with Maddie much smaller (your note: she's far too big)",
+     "line": "Your pick a, with Maddie shrunk to about knee height beside the chairs.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "b",
+       "src": "r15/D10c-r15s-b.jpg",
+       "label": "b: small, mid-room (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "c",
+       "src": "r15/D10c-r15s-c.jpg",
+       "label": "c: small, nearer the camera",
+       "warn": ""
+      },
+      {
+       "id": "m",
+       "src": "r15/D10c-r15-b.jpg",
+       "label": "m: only a little smaller",
+       "warn": "probably still too big"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "D16n",
+     "title": "The last shot: the room above with the people gone (your ref note)",
+     "line": "Clean, small Maddie; no suit or gloves on the floor; blankets, mugs and empty suits left on the chairs.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "ca",
+       "src": "r15/D16c-r15-a.jpg",
+       "label": "ca: made from the seated shot, people removed (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "cb",
+       "src": "r15/D16c-r15-b.jpg",
+       "label": "cb: same, more empty suits on the chairs",
+       "warn": ""
+      },
+      {
+       "id": "fa",
+       "src": "r15/D16f-r15-a.jpg",
+       "label": "fa: the old last shot cleaned up",
+       "warn": ""
+      },
+      {
+       "id": "fb",
+       "src": "r15/D16f-r15-b.jpg",
+       "label": "fb: old last shot cleaned up",
+       "warn": "Maddie still big"
+      }
+     ],
+     "round": 2
+    },
+    {
+     "slot": "D12h",
+     "title": "Hands already held (your note: both hold hands, nobody reaching)",
+     "line": "I'm also animating the old plate with both of them reaching together, so you'll have both on the timeline to compare.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "r15/D12h-r15-a.jpg",
+       "label": "a: fingers laced (my pick)",
+       "warn": ""
+      },
+      {
+       "id": "b",
+       "src": "r15/D12h-r15-b.jpg",
+       "label": "b: hands clasped, tighter framing",
+       "warn": ""
+      }
+     ],
+     "round": 2
+    }
+   ]
+  }
+ ],
+ "round": 4
+}

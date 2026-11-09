@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05c-t1.mp4",
+ "made": "2026-11-09T20:05:01+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D05c-r14-c.jpg",
+ "why": "D round 15: Kai picked D05c c on the chairs picks page (Y8wdqm7DhMdV42VAv8p4be); replaces the old D05 overhead under 'Hundred'",
+ "source_id": "bd84d3e4-925c-45e6-b76f-756663685eb3",
+ "prompt": "One continuous unbroken shot looking straight down on the ring of empty chairs. The camera sinks very slowly toward the floor, a gentle steady descent. The ring lights under each chair breathe softly brighter and dimmer together; the little robot's orange lamp turns slowly. Nobody enters. No cuts, no other movement.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix14/D05c-r14-c.jpg"
+ },
+ "settings": {
+  "durationSeconds": "10",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "3d53a8c9-8d7a-4a37-be72-ea6326e4c85e"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f-24/contact-1f-beads.jpg",
+ "made": "2026-11-09T21:33:54+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-09-gpom-hologram-1f/finish.py (ffmpeg xstack)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f-24/hologram-1f-beads-24fps-picture.mp4",
+ "why": "hologram 1F (Kai locked draft 1F, 9 Nov): toast/sorry/married beads on their words, glow under qualia, bloom on 'multiverse', flash on 'yet', side view on 'realise', arc on 'go back'",
+ "inputs": {
+  "page": "design/2026-11-09-gpom-hologram-1f/index.html",
+  "builder": "design/2026-11-09-gpom-hologram-1f/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f-24/edit.json"
+ }
+}

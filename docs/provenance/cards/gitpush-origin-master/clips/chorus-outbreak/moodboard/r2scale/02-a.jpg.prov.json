@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-outbreak/moodboard/r2scale/02-a.jpg",
+ "made": "2026-11-09T20:36:54.180Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Spaghetti Junction, Birmingham, from 300 metres at a slant: the stacked concrete flyovers of the interchange all packed with stopped evacuation traffic, a mat of tail lights under sodium lamps. Small figures climb the grass embankments away from the road. Tower-block windows along the canal are half dark. Far behind the city centre a substation fireball lights the low cloud from underneath. 24mm aerial. Night in a near-future Britain, photographed like a feature film on 35mm stock: fine grain, inky blacks that stay black, no lens flare, no bloom. 16:9. No writing anywhere in the frame: no number plates, signs, logos or screen text.",
+ "source_id": "0a85f01c-d0bf-4da0-9f9b-c02032974d69"
+}

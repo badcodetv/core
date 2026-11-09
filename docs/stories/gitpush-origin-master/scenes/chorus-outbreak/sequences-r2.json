@@ -1,0 +1,52 @@
+{
+ "title": "Outbreak Sequences",
+ "eyebrow": "GPOM chorus · Outbreak Night · round 2",
+ "heading": "Six ways to cut the clips",
+ "intro": "Kai 9 Nov: the empty-car ending was confusing, so it's gone from every sequence, and there are now six. Each one is the 11 seconds of the chorus (32 beats), cut on the beat with the song under it. Every shot starts at its clip's biggest moment. Pick one to take into Premiere, where you can slide each shot to its best second. Mixes are welcome as a note, e.g. 'A but end like B'.",
+ "sections": [
+  {
+   "h": "Pick a sequence",
+   "lede": "Same clips, same in-points, three different orders and rhythms.",
+   "groups": [
+    {
+     "slot": "seq-r2",
+     "title": "Sequence",
+     "line": "My pick: A or F. A pulls steadily wider and now ends on Dover's flash over the Channel. F starts slow, then fires eight one-beat flashes and lands on the Rotterdam chain of blasts. Watch for the mushroom-shaped fireballs (M4, combines, Drax), which may read as nuclear.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "v/r2a.mp4",
+       "label": "A · Outward: 16 shots, cup → London → country, ends on Dover's flash"
+      },
+      {
+       "id": "b",
+       "src": "v/r2b.mp4",
+       "label": "B · Only the big ones: 8 long shots, ends holding on the Rotterdam chain of blasts"
+      },
+      {
+       "id": "c",
+       "src": "v/r2c.mp4",
+       "label": "C · Close / far: small human details against huge distant blasts, ends on the depot dome"
+      },
+      {
+       "id": "d",
+       "src": "v/r2d.mp4",
+       "label": "D · Inward: starts at the coast, closes in on the car, ends on the crane's foot landing"
+      },
+      {
+       "id": "e",
+       "src": "v/r2e.mp4",
+       "label": "E · London: stays in the city (cranes, Primrose Hill, viaduct, airliner), ends on Drax"
+      },
+      {
+       "id": "f",
+       "src": "v/r2f.mp4",
+       "label": "F · Accelerating: starts slow, eight one-beat flashes, lands on Rotterdam"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

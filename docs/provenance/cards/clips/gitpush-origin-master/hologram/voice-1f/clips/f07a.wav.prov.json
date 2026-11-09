@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/f07a.wav",
+ "made": "2026-11-09T20:40:46+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f07p-1.wav",
+ "why": "hologram 1F line f07a (Kai locked draft 1F, 9 Nov); take picked as whisper-verbatim",
+ "prompt": "Anyway, if we could go back and fix it, we would.",
+ "inputs": {
+  "heard": "Anyway, if we could go back and fix it, we would.",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+ },
+ "settings": {
+  "src_in": "0.05",
+  "src_out": "4.15"
+ }
+}

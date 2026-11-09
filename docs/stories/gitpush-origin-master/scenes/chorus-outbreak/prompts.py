@@ -135,6 +135,15 @@ ROWS += [
   "up into the dark. " + TAIL2),
 ]
 
+# Round 2 (9 Nov, Kai: "about three times the amount of clips... city scale... more zoomed out... big explosions in
+# the distance"). 16 shots picked by a synthesis agent from a 10-researcher web sweep: research/scale-research.json.
+# Files: moodboard/r2scale/NN-a/-b.jpg in this order (flow_generate_batch).
+_R2 = json.loads((pathlib.Path(__file__).with_name('research') / 'scale-research.json').read_text())['synth']['shots']
+GROUP = {'MP1': 'S1', 'IL1': 'S1', 'SJ1': 'S1', 'BD1': 'S1', 'PH1': 'S2', 'WS1': 'S2', 'MF1': 'S2', 'CC1': 'S2', 'WD1': 'S2',
+         'VD1': 'S2', 'CT1': 'S3', 'CH1': 'S3', 'DX1': 'S3', 'RW1': 'S3', 'DV1': 'S3', 'OB1': 'S3'}
+ROWS += [(GROUP[s['id']], s['id'][:2] + '2-' + c, s['title'] + ' (' + s['scale'] + ')', s['still_prompt'])
+         for s in _R2 for c in 'ab']
+
 out = pathlib.Path(__file__).with_name('moodboard.json')
 out.write_text(json.dumps([list(r) for r in ROWS], indent=1))
 print(len(ROWS), 'rows ->', out)

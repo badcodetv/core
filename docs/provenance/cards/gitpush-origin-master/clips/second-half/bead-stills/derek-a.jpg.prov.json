@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-a.jpg",
+ "made": "2026-11-09T20:39:39.331Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Use the man in the provided image only as the reference for his face, hair and build; make an entirely new picture. Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. A cramped terraced-house kitchen on a grey weekday morning. He stands centred at the worktop in his green jumper, one hand hovering in mid-air between a chrome two-slot toaster and a plain unlabelled cereal box, brow furrowed in comic indecision. Plain magnolia wall behind him, flat window light from the left. No lettering anywhere.",
+ "model": "Nano Banana Pro",
+ "parent": "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg",
+ "inputs": {
+  "references": [
+   "/tmp/claude-1000/-home-kai-projects-badcode-badcode/33a4fdac-9db2-4eb1-a4f9-b5fb47322a30/scratchpad/derek-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "307d11fe-8048-4636-8b91-efdaf92ad9d0"
+}

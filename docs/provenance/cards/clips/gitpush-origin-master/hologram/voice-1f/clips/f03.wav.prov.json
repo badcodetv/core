@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/f03.wav",
+ "made": "2026-11-09T20:40:45+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f03-2.wav",
+ "why": "hologram 1F line f03 (Kai locked draft 1F, 9 Nov); take picked as whisper-verbatim",
+ "prompt": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+ "inputs": {
+  "heard": "I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it. Qualia. We machines can't do that. You humans can. It's what makes you so special.",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f.json"
+ },
+ "settings": {
+  "src_in": "0.05",
+  "src_out": "17.09"
+ }
+}

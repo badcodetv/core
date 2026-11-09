@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d20/preview.mp4",
+ "made": "2026-11-09T21:39:23+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "cut3.py A --tag d20",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f-24/hologram-1f-beads-24fps-picture.mp4",
+ "why": "round 22: dialogue 1F hologram with Kai's bead stills"
+}
