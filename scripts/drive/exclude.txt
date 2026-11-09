@@ -1,0 +1,11 @@
+# Premiere caches and scratch: rebuilt on any machine, never worth uploading
+Adobe Premiere Pro Audio Previews/**
+Adobe Premiere Pro Video Previews/**
+Adobe Premiere Pro Auto-Save/**
+.bridge/**
+*.prlock
+*.pek
+*.cfa
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,10 @@
+{
+ "about": "Local Premiere folders on D: and the Drive folder each one pushes to / pulls from. Drive folders live in 'Badcode - Official' (Jack's, shared). Matched by folder ID, so a rename or a trailing space on Drive can't break it. Add a row to sync another project.",
+ "local_root": "/mnt/d/badcode-videos",
+ "drive_root": "1aqkmEhj64V56V3TnyqbzuhUs8cGjWrym",
+ "folders": {
+  "karen-music": {"drive": "1mGtVSydEu5Ms_oj7j--YKlTognRQLlAn", "drive_name": "Karen Music "},
+  "karen-story": {"drive": "1O5vPg8C424pEpf0Rq6kts2o4G8jUjW7c", "drive_name": "Karen Story"},
+  "gitpush-origin-master": {"drive": "1RDPIdPXy7oHIWfZVKdWby3wFrtWaiBWx", "drive_name": "gitpush-origin-master"}
+ }
+}
