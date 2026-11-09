@@ -1,57 +1,75 @@
 {
- "story": "karen",
- "scene": "music-video",
- "prefix": "mv",
- "title": "Karen Music Re-cut",
- "heading": "All Day to Complain: the re-cut",
- "media": "/mnt/d/badcode-videos/karen-music/clips/recut",
- "premiere_project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
- "source_sequence": "Karen music",
- "cut": {
-  "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/edl.json",
-  "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/preview.mp4",
-  "script": "scripts/karen/mv_recut.py r4"
- },
- "boards": {
-  "timeline": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE"
- },
- "premiere": {
-  "current": "r4",
-  "r3": {
-   "sequence": "karen-music-r3",
-   "guid": "51c8cc19-18f7-43b4-ab29-b722232b1abf",
-   "bin": "karen-music-r3",
-   "built": "2026-11-05",
-   "project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r3/edl.json",
-   "what": "round 3: 108 shots from the original clips with source in/out on V1 (scaled to fill 4K), their own sound on muted A2, song.wav on A1; 180 'kick' markers + 13 section markers",
-   "how": "clone of 'Karen music' (4K, 25 fps), emptied; placed via premiere_eval (resolveProjectItem + set in/out + overwrite); Motion scale 200/300 per source size",
-   "known": [
-    "last shot (st-new-12) is 8 s: ends at 248.04, the song at 249.6; slow it to ~84% by hand (the API has no speed setter)"
-   ],
-   "check": {
-    "at": "2026-11-05",
-    "state": "in sync",
-    "why": "every V1 start/end within a frame of the r3 edl, bar the known last shot"
-   }
+  "story": "karen",
+  "scene": "music-video",
+  "prefix": "mv",
+  "title": "Karen Music Re-cut",
+  "heading": "All Day to Complain: the re-cut",
+  "media": "/mnt/d/badcode-videos/karen-music/clips/recut",
+  "premiere_project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
+  "source_sequence": "Karen music",
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r5/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r5/preview.mp4",
+    "script": "scripts/karen/mv_recut.py r5"
   },
-  "r4": {
-   "sequence": "karen-music-r4",
-   "guid": "b0324910-971b-4c38-a517-1dfdfb9c39b3",
-   "bin": "karen-music-r3",
-   "built": "2026-11-06",
-   "project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
-   "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/edl.json",
-   "what": "round 4: karen-music-r3 cloned, then the 44 chorus/break shots (and the 3 shots before them) re-placed one beat later, on the kick; markers carried over",
-   "how": "clone r3 + premiere_eval overwrite of the 47 changed shots; overwrite comes back one frame short, so the 1-frame slivers of the old clips were removed and each new clip's end set with createSetEndAction",
-   "known": [
-    "last shot (st-new-12) is 8 s: ends at 248.04, the song at 249.6; slow it to ~84% by hand (the API has no speed setter)"
-   ],
-   "check": {
-    "at": "2026-11-06",
-    "state": "in sync",
-    "why": "all 108 V1 and A2 starts/ends match the r4 edl, bar the known last shot"
-   }
+  "boards": {
+    "timeline": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE"
+  },
+  "premiere": {
+    "current": "r5",
+    "r3": {
+      "sequence": "karen-music-r3",
+      "guid": "51c8cc19-18f7-43b4-ab29-b722232b1abf",
+      "bin": "karen-music-r3",
+      "built": "2026-11-05",
+      "project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r3/edl.json",
+      "what": "round 3: 108 shots from the original clips with source in/out on V1 (scaled to fill 4K), their own sound on muted A2, song.wav on A1; 180 'kick' markers + 13 section markers",
+      "how": "clone of 'Karen music' (4K, 25 fps), emptied; placed via premiere_eval (resolveProjectItem + set in/out + overwrite); Motion scale 200/300 per source size",
+      "known": [
+        "last shot (st-new-12) is 8 s: ends at 248.04, the song at 249.6; slow it to ~84% by hand (the API has no speed setter)"
+      ],
+      "check": {
+        "at": "2026-11-05",
+        "state": "in sync",
+        "why": "every V1 start/end within a frame of the r3 edl, bar the known last shot"
+      }
+    },
+    "r4": {
+      "sequence": "karen-music-r4",
+      "guid": "b0324910-971b-4c38-a517-1dfdfb9c39b3",
+      "bin": "karen-music-r3",
+      "built": "2026-11-06",
+      "project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r4/edl.json",
+      "what": "round 4: karen-music-r3 cloned, then the 44 chorus/break shots (and the 3 shots before them) re-placed one beat later, on the kick; markers carried over",
+      "how": "clone r3 + premiere_eval overwrite of the 47 changed shots; overwrite comes back one frame short, so the 1-frame slivers of the old clips were removed and each new clip's end set with createSetEndAction",
+      "known": [
+        "last shot (st-new-12) is 8 s: ends at 248.04, the song at 249.6; slow it to ~84% by hand (the API has no speed setter)"
+      ],
+      "check": {
+        "at": "2026-11-06",
+        "state": "in sync",
+        "why": "all 108 V1 and A2 starts/ends match the r4 edl, bar the known last shot"
+      }
+    },
+    "r5": {
+      "sequence": "karen-music-r5",
+      "guid": "b220b4ee-05ab-491b-8c84-60cf0d9a103a",
+      "bin": "karen-music-r3",
+      "built": "2026-11-09",
+      "project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r5/edl.json",
+      "what": "round 5: karen-music-r4 cloned, then 12 lyric shots (verses, bridge, outro) one kick earlier onto their line, the shot before each trimmed; V1 and muted A2 both",
+      "how": "clone r4 + premiere_eval edge trims (createSetEndAction / createSetStartAction for a head trim / createMoveAction + set end for a slide); in-points of shots 73 and 78 set to the edl's, which moves the clip (api-notes), then moved back",
+      "known": [
+        "last shot (st-new-12) is 8 s: ends at 248.04, the song at 249.6; slow it to ~84% by hand"
+      ],
+      "check": {
+        "at": "2026-11-09",
+        "state": "in sync",
+        "why": "all 108 V1 and A2 starts, ends and in-points within a frame of the r5 edl, bar the known last shot"
+      }
+    }
   }
- }
 }
