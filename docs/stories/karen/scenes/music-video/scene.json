@@ -10,7 +10,7 @@
   "cut": {
     "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-final/edl.json",
     "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-final/preview.mp4",
-    "script": "python3 scripts/karen/mv_from_premiere.py /mnt/d/badcode-videos/karen-music/clips/recut/cut-final/premiere-state.json /mnt/d/badcode-videos/karen-music/renders/karen-music-final-2026-11-09-4k.mp4 final --from r5"
+    "script": "python3 scripts/karen/mv_from_premiere.py /mnt/d/badcode-videos/karen-music/clips/recut/cut-final/premiere-state.json /mnt/d/badcode-videos/karen-music/renders/karen-music-final-2026-11-09-4k-youtube.mp4 final --from r5"
   },
   "boards": {
     "timeline": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE"

@@ -51,7 +51,7 @@
   "round": 6,
   "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
   "what": "Final cut: Kai's own Premiere edit (karen-music-r4, re-edited by hand after round 5) brought back onto the page shot for shot; 105 shots, 28 of them hand edits; preview = the Premiere render",
-  "rebuild": "python3 scripts/karen/mv_from_premiere.py /mnt/d/badcode-videos/karen-music/clips/recut/cut-final/premiere-state.json /mnt/d/badcode-videos/karen-music/renders/karen-music-final-2026-11-09-4k.mp4 final --from r5 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline",
+  "rebuild": "python3 scripts/karen/mv_from_premiere.py /mnt/d/badcode-videos/karen-music/clips/recut/cut-final/premiere-state.json /mnt/d/badcode-videos/karen-music/renders/karen-music-final-2026-11-09-4k-youtube.mp4 final --from r5 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline",
   "decided": [
    "I think we've got a final cut. I've changed some things in Premiere, but let's call this done."
   ]
