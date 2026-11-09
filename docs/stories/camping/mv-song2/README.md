@@ -77,7 +77,7 @@ watch and listen to it, then cut it to the beat with complete freedom, since the
 - Not watched as a render (Jack's no-renders rule): checked structurally only. Flags: the downbeat reading is measured, not
   confirmed by ear (rap lines come in on beat 2 under it); the first 0.72 s is now black before the logo.
 
-## Round 9: `camping song 2 beat 5` (2026-11-07 night) — ▶ RESUME HERE: cloned, NOT yet built
+## Round 9: `camping song 2 beat 5` (2026-11-07 night) — BUILT 2026-11-09
 
 Jack: *"do Ghostface Killah for all clips ... make a new sequence, also those 4 bits where it flashes to black to the beat that i asked
 you to keep, get rid of and do your own version but only do it for the start and end where bob is running through the tunnel"*.
@@ -88,3 +88,48 @@ you to keep, get rid of and do your own version but only do it for the start and
   back view 2 beats, running at us 1 beat, face 1/8, shout 1/8 → m12; end = back view 1 beat, running at us 1/8, face 1/8 → 16.mov.
 - `cut/build5.py` → `b5-clear.js` + `b5-place-N.js` (premiere_eval on beat 5, active). Before: import the 1080p copies
   (`../mv-balaclava/cleanroom/r9/to1080.sh`, bin `ghostface rap clips`). Waits on the s01 clip (recut5 needs every shot's pick).
+- **Built 2026-11-09:** s01 clip made (closed-fist rewrite), all 13 Ghostface clips imported to bin `ghostface rap clips`, beat 5 cleared
+  (215 items) and rebuilt from `b5-*.js`: 122 pieces (V1 94 / V2 24 / V3 4), no fails. Every stutter gone; the six one-beat blacks of
+  beat 4 (2.08, 98.92, 120.72, 133.68, 181.44, 217.64) are Jack's own and kept. Tunnel run at 10.96 and 186.24 checked on the state file.
+  Beat 4 untouched (106/24/4). Saved. Next: Jack's notes.
+
+## Round 10: `camping song 2 beat 6` — the stadium opening + the bridge face-off (2026-11-09) — ▶ RESUME HERE: BUILT, awaiting Jack
+
+Jack's words: `cleanroom/r10/jack.md`. Clean room: three web-only researchers (`cleanroom/r10/research-stadium.md`, `-faceoff.md`,
+`-cut.md`), four sealed writers who read one brief each (`brief-st/du/re/ly.md` → `st/du/re/ly.md`, `parse.py` →
+`prompts-r10.json`, `clips-r10.json`), run verbatim (`run_stills.mts`, NB2 + per-shot references kept in
+`~/.cache/badcode-scenes/camping-r10/ref`; clips Omni Flash via `scripts/scene/run-rolling.mts` on scene `../mv-r10`, Flow project
+`72255ea1`). Media: `songs\camping vid\r10\` (moodboard, video, video/premiere 1080p). Still checks and picks: `cleanroom/r10/check.md`,
+`picks.json`. All 31 clips strip-checked at 1 fps.
+- Watched and listened first: beat-5 check render (scratchpad only) + the listening tool on the intro and bridge (logs 2026-11-09-0951*).
+- **Opening 0–10.96:** the dark bowl (st01d) → the DJ in one beam (st04d) → BADCODE snaps on with the first drum hit 2.76 (st02) →
+  a floodlight bank (st03) → DJ lit (st04) → the whole lit stadium on the bass 4.12 (st01, the matched pair of st01d) → crowd at the
+  barrier (st05), another bank, the stands (st06), DJ arms up, crowd → him from behind over the crowd (st07) → the tunnel run, unchanged.
+- **Bridge 142.56–183.52:** masked rappers trading lines (du01–07) cut against the real Bob and Tarquin meeting and arguing in the car
+  park at night (re01–06), speaker matched to the lyric sheet (unverified on song 2). Cutaways on the words: rained on (b23), the sack
+  (t21), drank (ly01), broke my back (ly02), the AI does the fast part (ly03), will it allow / in charge now (ly04, barrier stays down),
+  C-suite (ly05), robots (ly06), government debased (ly07), "when we very first met" = Jack's verse-1 Waitrose clip 4.mp4. Regret holds
+  longer (re04, du06 2 s+). **The clink lands on "same SIDE" (178.96: contact at 3.55 s into du08).** "We'll be gone" is one held two-shot
+  (du09) over the drum stop into the hook. The "woods" clips (last verse 5, 6.1) are gone; V2/V3 inside the bridge cleared.
+- `cut/recut6.py` → `edl-beat6.json` → `cut/build6.py` → `b6-*.js`; bin `r10 stadium + bridge clips`. Beat 5 cloned to beat 6, cleared
+  (191) and rebuilt: V1 123 / V2 19 / V3 0, every piece matched the plan (du09 one frame short, trimmed to 183.52), no slivers. Saved.
+  Beat 5 untouched.
+- **Timeline page (notes): https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM** (page round 1 · camping song 2 beat 6 · in sync).
+- Flags for Jack: Jack's one-beat blacks at 2.08 (opening) and 181.44 (the shout) are now covered by picture; the other four stay.
+  du01 (two 1.4 s pieces): the posh man's triangle sits on his right eye in profile. Tarquin's green jacket reads as dark leather at night.
+  Bob's "I was wrong" starts 0.2 s before his shot.
+
+## Round 11: Jack's timeline notes → `camping song 2 beat 7` (2026-11-09 pm) — ▶ RESUME HERE: BUILT, awaiting Jack
+
+Jack (on beat 6): *"this is almost ready, just need to timestamp a few changes, it is great though"*. 20 notes on the timeline page
+https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM, dumped to `../mv-r10/feedback/timeline-r1/`, answered on the page (`../mv-r10/cut-notes.json`).
+- ⚠ The round-1 page ran ahead of the song (up to 1.4 s by the end): `scripts/camping-mv2/song2-timeline.py` (and the older
+  `balaclava-timeline.py`) cut pieces with `-t`, which lost a frame here and there. Now frame-exact (`-frames:v`), drift 0. Notes were
+  read against what Jack saw (page piece map), not edl times.
+- Jack had edited beat 6 by hand (the ending: logo at 212.2, song ends 214.6): found by diffing the sequence before building, kept.
+- Edits from footage we had: film clips from `Camping Comic/Camping Video NEW!/new clips` (bin `r10 film clips`; 17 is 4K, a 1080p copy
+  `r10/video/premiere/film-17-1080.mp4`), Jack's clip 37.mov = the M3. New (clean room writer fx, `cleanroom/r10/brief-fx.md`): st11d/st11p
+  (the dark stadium + its floodlit twin, cut 3 frames lit on each beat) and du02x du05x du06x du07x (masks closed, triangle showing, no neck).
+- `cut/recut7.py` → `edl-beat7.json` → `cut/build7.py`: beat 6 cloned to beat 7, cleared (192), rebuilt: V1 138 / V2 18, all match,
+  no slivers, du09 trimmed to 183.52. Saved. Page round 2 · camping song 2 beat 7 · in sync.
+- Open for Jack: the wine twice (118.7 V1, 121.4 V2); the wine clip pours rather than drinks.

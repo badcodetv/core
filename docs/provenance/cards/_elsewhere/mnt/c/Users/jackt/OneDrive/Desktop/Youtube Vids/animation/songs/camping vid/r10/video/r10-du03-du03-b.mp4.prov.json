@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du03-du03-b.mp4",
+ "made": "2026-11-09T10:34:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Fixed low camera with a slight handheld sway. Both men rap to the lens in step: their heads bob on the same beat, both jut forward on the same word, and their free hands chop down together, then sweep out to the side together, close to their bodies. Their drinks rise and fall with the movement, beer and champagne slopping. Feet planted in the puddle, shoes splashing a little as they bounce on their knees. Behind them the barrel fire sends sparks up into the rain. Mouths move, no speech: sound is rain, fire, and the slap of feet in water.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du03-b.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du03-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du03",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:32:22.978Z"
+ }
+}

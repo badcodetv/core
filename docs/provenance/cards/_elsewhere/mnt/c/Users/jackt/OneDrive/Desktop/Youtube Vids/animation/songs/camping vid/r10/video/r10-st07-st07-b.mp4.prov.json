@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-st07-st07-b.mp4",
+ "made": "2026-11-09T11:04:19+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Camera close behind his shoulder, slowly pushing forward and arcing round him to the right the whole eight seconds, the crowd sliding across the background. He slowly raises one arm out toward the stadium and holds it, his head nodding hard on the beat. The crowd beyond surges and jumps in waves, arms rising together, the stage beams sweeping over them through the haze. The floodlights stay full. Sound: an enormous stadium crowd roaring, no voices picked out, no music.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st07-b.jpg",
+ "why": "r10 clean room, writer st",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st07-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "st07",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T11:03:13.222Z"
+ }
+}

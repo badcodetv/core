@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-st06-st06-b.mp4",
+ "made": "2026-11-09T11:03:49+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld, camera bouncing with the crowd, as if the operator is jumping with them. The whole group jumps up and down together on every beat, arms locked, the stand shaking under them. Scarves whirl, beer sprays up and rains down, a man is pulled into a hug, a woman throws her head back laughing and screaming. People further up the stand jump in waves behind. Sound: a stand full of people bouncing, stamping and roaring, seats banging, no voices picked out, no music.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st06-b.jpg",
+ "why": "r10 clean room, writer st",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st06-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "st06",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T11:02:45.177Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du06-du06-b.mp4",
+ "made": "2026-11-09T10:39:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Slow handheld push-in toward him across 8 seconds, from medium to medium close-up. He raps quietly, small movements now: his head gives slow, small nods on the beat, his gaze stays down on the tarmac, then lifts once toward the left edge of frame and drops again. His free hand opens and closes at his side. The flute swings slightly from his fingers and one drop of champagne falls into a puddle. His weight shifts from one foot to the other. Rain keeps falling around him, puddles rippling. Mouths move, no speech: sound is rain and a far-off fire crackle.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du06-b.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du06-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du06",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:35:29.018Z"
+ }
+}

@@ -1,0 +1,27 @@
+[
+ {
+  "at": "2026-11-09T11:21:22+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM",
+  "what": "camping song 2 beat 6: stadium opening + bridge face-off, for Jack's timestamped notes",
+  "rebuild": "python3 scripts/camping-mv2/song2-timeline.py '<.bridge/state-camping song 2 beat 6.json>' <media>/cut 'camping song 2 beat 6' && python3 scripts/scene/build-timeline.py docs/stories/camping/mv-r10 <out-dir>"
+ },
+ {
+  "at": "2026-11-09T11:45:33+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM",
+  "what": "Jack's 20 notes dumped and answered on the page",
+  "feedback": "feedback/timeline-r1",
+  "feedback_docs": 20
+ },
+ {
+  "at": "2026-11-09T12:10:38+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM",
+  "what": "camping song 2 beat 7: all 20 round-1 notes done, Jack's beat-6 ending kept, page frame-exact",
+  "rebuild": "python3 scripts/camping-mv2/song2-timeline.py '<.bridge/state-camping song 2 beat 7.json>' <media>/cut 'camping song 2 beat 7' && python3 scripts/scene/build-timeline.py docs/stories/camping/mv-r10 <out-dir>"
+ }
+]

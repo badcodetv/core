@@ -1,0 +1,12 @@
+const P=["C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\camping vid\\action\\video\\premiere\\ca-t23-t23r2-a.mp4", "C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\camping vid\\action\\video\\premiere\\ca-t24-t24r2-b.mp4", "C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\camping vid\\action\\video\\premiere\\ca-t25-t25r2-b.mp4", "C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\camping vid\\action\\video\\premiere\\ca-t3-t3r1-a.mp4", "C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\camping vid\\action\\video\\premiere\\ca-t4-t4r1-a.mp4", "C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\camping vid\\action\\video\\premiere\\ca-t6-t6r1-a.mp4", "C:\\Users\\jackt\\OneDrive\\Desktop\\Youtube Vids\\animation\\songs\\camping vid\\action\\video\\premiere\\ca-u23-u23r2-b.mp4"]; const R0=[[0, 122.76, 1.36, 0.08, 1, 2], [1, 125.52, 1.36, 0.12, 1, 2], [2, 128.24, 1.36, 0.08, 1, 2], [3, 132.32, 1.36, 0.08, 1, 2], [4, 135.04, 1.36, 0.08, 1, 2], [5, 137.76, 1.4, 0.04, 1, 2], [6, 140.52, 1.36, 0.08, 1, 2]]; const R=R0.map(r=>[P[r[0]],...r.slice(1)]); const S="camping song 2 beat 6";
+const project=await helpers.activeProject(); const seq=await helpers.activeSequence(project);
+if(seq.name!==S) return {error:'wrong sequence',name:seq.name};
+const map={}; async function walk(f){ for(const it of await f.getItems()){ const fo=ppro.FolderItem.cast(it); if(fo){await walk(fo);continue;} const c=ppro.ClipProjectItem.cast(it); if(c){ try{ const p=await c.getMediaFilePath(); if(p && !map[p.toLowerCase()]) map[p.toLowerCase()]=it; }catch(e){} } } }
+await walk(await project.getRootItem());
+const ed=ppro.SequenceEditor.getEditor(seq); const tk=s=>helpers.secondsToTick(Math.round(s*25)/25+0.002); let done=0; const fail=[];
+for(const [p,st,d,inp,vt,at] of R){ try{ const item=map[p.toLowerCase()]; if(!item) throw 'not in project';
+  const clip=ppro.ClipProjectItem.cast(item);
+  helpers.withTransaction(project,'BadCode: in/out',ca=>ca.addAction(clip.createSetInOutPointsAction(tk(inp),tk(inp+d))));
+  helpers.withTransaction(project,'BadCode: place',ca=>ca.addAction(ed.createOverwriteItemAction(item,tk(st),vt,at)));
+  helpers.withTransaction(project,'BadCode: clear',ca=>ca.addAction(clip.createClearInOutPointsAction())); done++; }catch(e){ fail.push([p.split('\\').pop(),st,String(e).slice(0,80)]); } }
+return {done,fail};

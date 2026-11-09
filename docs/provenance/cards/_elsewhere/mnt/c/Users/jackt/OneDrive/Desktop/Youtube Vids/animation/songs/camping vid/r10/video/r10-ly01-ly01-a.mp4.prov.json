@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-ly01-ly01-a.mp4",
+ "made": "2026-11-09T10:50:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Start from the still. Only the man on the right of the reference is in shot. He keeps the bottle tipped up and swallows twice, his throat working, then drops it from his mouth, wipes his lips with the back of his wrist and stares off across the car park, breathing hard, shoulders rising and falling. Rain keeps falling the whole time and runs off his hair and the bottle. The fire in the drum behind him flickers and its orange light shifts on the wet tarmac. The camera is handheld and drifts slowly in towards him. Sound: rain on tarmac and on tent fabric, the crackle of the fire, a car passing on a distant road. No speech, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly01-a.jpg",
+ "why": "r10 clean room, writer ly",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly01-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "ly01",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:40:09.794Z"
+ }
+}

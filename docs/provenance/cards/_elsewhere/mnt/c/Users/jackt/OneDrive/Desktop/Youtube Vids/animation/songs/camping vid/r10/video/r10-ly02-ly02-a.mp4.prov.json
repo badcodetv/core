@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-ly02-ly02-a.mp4",
+ "made": "2026-11-09T10:50:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Start from the still. Only the man on the right of the reference is in shot. He stays on the floor and tries to push himself up on one elbow, gets halfway, his face tightening, then sinks back down onto his side and presses his hand harder into his lower back, breathing in short sharp breaths through his teeth. Cement dust drifts slowly through the shaft of daylight and settles. The camera stays low and locked off at floor level. Sound: his ragged breathing, the scrape of his shoe on concrete, a forklift reversing beep somewhere far off in the building, wind at the open roller door. No speech, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly02-a.jpg",
+ "why": "r10 clean room, writer ly",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly02-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "ly02",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:40:43.018Z"
+ }
+}

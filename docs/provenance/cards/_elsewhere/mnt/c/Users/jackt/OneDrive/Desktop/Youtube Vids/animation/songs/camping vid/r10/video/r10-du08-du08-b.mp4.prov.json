@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du08-du08-b.mp4",
+ "made": "2026-11-09T10:39:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off close insert, slow motion. The bottle and the flute move toward each other the last two centimetres and meet: the rim of the champagne flute knocks against the shoulder of the beer bottle in the centre of frame. On contact, the champagne rocks up one side of the flute and a few drops flick off the rim, beer foams up the neck of the bottle, raindrops on the glass shake loose. Both hands keep their grip, fingers unchanged, the glass and the bottle stay separate solid objects. Then both drinks lift together a few inches up and out of the top of frame. Rain falls through the firelight behind. Sound: one clear chink of glass on glass, then rain and fire crackle. No speech.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du08-b.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du08-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du08",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:38:29.254Z"
+ }
+}

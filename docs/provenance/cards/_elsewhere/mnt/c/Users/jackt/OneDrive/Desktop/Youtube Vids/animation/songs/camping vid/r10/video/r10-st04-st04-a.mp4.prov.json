@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-st04-st04-a.mp4",
+ "made": "2026-11-09T11:02:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld from inside the crowd, the camera jostled and bumped the whole time, pushing forward a few steps then knocked sideways. The man on stage pumps both fists up on every beat, leans into the DJ table, throws one arm out over the crowd. The foreground heads bounce up and down, arms punch the air and block part of the frame then drop away, a drink splashes up. The stage beams sweep fast left and right through the haze. Sound: a deafening crowd roar and chanting with no words picked out, no music.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st04-a.jpg",
+ "why": "r10 clean room, writer st",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st04-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "st04",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T11:00:44.421Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-re02-re02-b.mp4",
+ "made": "2026-11-09T10:56:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld camera, tight and moving with them, drifting a little towards whoever leans in. Bob jabs his finger at Tarquin three times in a rhythm, stepping half a pace forward on the last jab; his jaw works as he shouts. Tarquin gives ground, one half-step back, his raised hands opening palms out, then he plants his feet and stops retreating. Rain keeps falling and drips off the end of Bob's pointing hand; firelight flickers across both of them. Sound: rain, the fire, a shoe scuffing wet tarmac, breathing. No spoken words.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re02-b.jpg",
+ "why": "r10 clean room, writer re",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re02-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "re02",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:54:02.886Z"
+ }
+}

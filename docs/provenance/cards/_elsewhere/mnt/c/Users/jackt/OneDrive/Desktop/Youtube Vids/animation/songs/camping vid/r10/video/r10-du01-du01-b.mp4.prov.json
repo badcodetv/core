@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du01-du01-b.mp4",
+ "made": "2026-11-09T10:34:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld camera, close and moving with the men, as if the operator is a third person in the argument. Man A on the left raps hard into Man B's face: his head bobs and juts on every beat, his bottle hand stabs toward Man B's chest three times, short and sharp, close to his own body, the beer slopping in the bottle. His feet stay planted on the tarmac; he leans in further with each jab. Man B rocks back half a step on the second jab, chin tucked, eyes locked on Man A, the flute held low and tilting, a little champagne spilling over the rim. The camera drifts a few inches left to right with Man A's lean. Rain falls through the frame, the barrel fire flickers and spits, drops pock the puddles. Mouths move but there is no speech: sound is rain on tarmac, fire crackle and distant road hum only.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du01-b.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du01-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du01",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:31:30.829Z"
+ }
+}

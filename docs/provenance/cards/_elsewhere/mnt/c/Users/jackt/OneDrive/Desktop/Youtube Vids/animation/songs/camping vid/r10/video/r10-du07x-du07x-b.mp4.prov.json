@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du07x-du07x-b.mp4",
+ "made": "2026-11-09T11:59:58+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Gentle handheld, nearly locked, a slight drift toward him. He raps more slowly now: his head gives three slow nods toward the man off-frame right, as if conceding a point; the hand on his chest presses flat, then lifts an inch and returns; on the last beat he raises the beer bottle a few inches from his hip toward frame right, an offer. His feet stay planted, his shoulders loosen. The scarf stays high under his jaw and the fabric over his mouth stays closed the whole time. Rain falls between him and the camera, the barrel fire flickers behind. No speech: sound is rain and fire crackle only.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du07x-b.jpg",
+ "why": "Jack's round-1 timeline notes, sealed writer fx",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du07x-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du07x",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T11:58:49.133Z"
+ }
+}

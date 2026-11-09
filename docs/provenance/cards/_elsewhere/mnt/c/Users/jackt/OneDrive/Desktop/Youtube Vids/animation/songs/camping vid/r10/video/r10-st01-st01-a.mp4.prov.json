@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-st01-st01-a.mp4",
+ "made": "2026-11-09T10:58:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera on the gantry, the frame holds still the whole time. The whole crowd erupts and keeps going for the full eight seconds: arms pumping, people jumping in waves that ripple across the stands, scarves twirled overhead, drinks thrown up in arcs, people on shoulders bouncing. The stage beams sweep side to side through the haze in fast swings, crossing and uncrossing. The man on the stage keeps his arms up and rocks his body to a heavy beat. The floodlights stay full and steady. Sound: a huge roaring crowd and the hum of the stadium, no voices picked out, no music.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st01-a.jpg",
+ "why": "r10 clean room, writer st",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st01-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "st01",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:57:04.519Z"
+ }
+}

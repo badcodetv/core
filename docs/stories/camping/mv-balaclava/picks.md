@@ -168,7 +168,7 @@ repeated its start pose (finger to the temple, other hand on the lapel), centred
 - Page: https://claude.ai/artifact/QTyxei2Ae3cZuWDuBA24hK (`r8/build_page.py`, picks in db `picks`). Next: dump picks into `feedback/`,
   write the picked style for all 13 shots (new stills + clips), swap into a new sequence cloned from `camping song 2 beat 4`.
 
-## Round 9: Ghostface for every rap clip (2026-11-07 night) — ▶ RESUME HERE
+## Round 9: Ghostface for every rap clip (2026-11-07 night) — DONE 2026-11-09, built into beat 5
 
 Jack picked **Ghostface Killah** on the round-8 page: *"do Ghostface Killah for all clips and redo them all, and make a new sequence"*
 (verbatim: `cleanroom/r9/jack.md`).
@@ -180,5 +180,6 @@ Jack picked **Ghostface Killah** on the round-8 page: *"do Ghostface Killah for 
     gloves; failed takes kept as `s01gr9-*-fingerless*.jpg`. Writer rewrote it with closed fists: **not yet run**.
   - s05 was blocked by Flow twice (silent "Failed"); rewritten without the tents, passed.
 - Clips: jobs `<shot>g` in `video-jobs.json` (11, s01 missing), run started 2026-11-07 20:58 → `r9/run.out`.
-- Next: run s01g still (`ROUND=-r9 REF=<local rough-duct-tape.jpg> PER_PROJECT=1 npx tsx run_stills.mts s01g`), check gloves, add its
+- **2026-11-09:** s01 retry 3 PASS (take a), clip PASS, all 12 strip-checked (`r9/mask-check.md`), 1080p done, built into
+  `camping song 2 beat 5` (`../mv-song2/README.md` Round 9). Was: run s01g still (`ROUND=-r9 REF=<local rough-duct-tape.jpg> PER_PROJECT=1 npx tsx run_stills.mts s01g`), check gloves, add its
   job (`python3 r9/parse.py jobs s01=<take>`), make its clip; strip-check all 12 clips; `r9/to1080.sh`; then beat 5 (`../mv-song2/README.md`).

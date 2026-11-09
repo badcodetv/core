@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-ly05-ly05-a.mp4",
+ "made": "2026-11-09T10:53:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Start from the still. Nobody comes in. The screens carry on by themselves: the wall screen's charts redraw, a window slides open and closes, the call grid flickers between empty tiles. One leather chair, still turning slowly from when it was left, comes to rest. The light outside fades a little darker over the eight seconds and a few more windows light up across the city. The camera pushes slowly along the length of the table towards the far screen. Sound: the hum of the building's air handling, a faint electronic notification tone from the table screen, distant city traffic through the glass. No speech, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly05-a.jpg",
+ "why": "r10 clean room, writer ly",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly05-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "ly05",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:49:25.970Z"
+ }
+}

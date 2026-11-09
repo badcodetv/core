@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du05-du05-a.mp4",
+ "made": "2026-11-09T10:39:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld, close, the camera jolting slightly with his movements. He raps hard at the man at the right edge of frame: his head snaps forward on each stressed word, the pointing hand stabs at him three times, then twists into a flat chopping hand cutting the air between them. The bottle stays clamped to his chest, beer slopping. His shoulders rise and drop with his breath, feet planted. The dark shoulder at the right edge shifts back slightly. Rain streaks across the firelight behind. Mouths move, no speech: sound is rain and fire crackle only.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du05-a.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du05-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du05",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:33:16.590Z"
+ }
+}

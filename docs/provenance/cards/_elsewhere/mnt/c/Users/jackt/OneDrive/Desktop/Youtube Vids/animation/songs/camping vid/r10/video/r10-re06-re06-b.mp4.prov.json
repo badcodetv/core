@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-re06-re06-b.mp4",
+ "made": "2026-11-09T10:58:44+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Camera holds at waist height with a slight handheld drift, then eases in a little. Tarquin closes his fingers round the lower half of the can and takes it; Bob lets go and draws his hand back. Tarquin looks up at Bob and gives one small nod. Bob nods back, then both men turn to face the fire and hold their hands out over it, standing side by side at the same height. Tarquin turns the can over in his hand. Rain falls through the heat above the drum and sparks rise. Sound: rain, the fire crackling, the tick of rain on the can. No speech.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re06-b.jpg",
+ "why": "r10 clean room, writer re",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re06-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "re06",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:56:31.695Z"
+ }
+}

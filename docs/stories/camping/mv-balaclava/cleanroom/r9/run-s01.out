@@ -1,0 +1,14 @@
+{"at":"2026-11-09T09:38:35.792Z","event":"wave","wave":1,"missing":1,"submitting":["s01g"]}
+{"at":"2026-11-09T09:39:14.744Z","event":"submitted","key":"s01g","wave":1,"cast":false,"attempt":1}
+{"at":"2026-11-09T09:39:14.756Z","event":"poll","fresh":1,"done":0,"want":1}
+{"at":"2026-11-09T09:39:28.771Z","event":"poll","fresh":1,"done":0,"want":1}
+{"at":"2026-11-09T09:39:42.293Z","event":"poll","fresh":1,"done":0,"want":1}
+{"at":"2026-11-09T09:39:55.840Z","event":"poll","fresh":1,"done":0,"want":1}
+{"at":"2026-11-09T09:40:09.359Z","event":"poll","fresh":1,"done":1,"want":1}
+{"at":"2026-11-09T09:40:22.206Z","event":"harvested","i":0,"file":"/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/balaclava/video/inbox/raw-000.mp4"}
+raw-000.mp4: s01g (9)
+  -> cb-s01g-s01gr9-a.mp4
+{"have": ["m12", "m12g", "m12p", "m12t1", "m12t2", "m12t3", "m12t4", "m12t5", "m12v", "s01", "s01g", "s01p", "s01t1", "s01t3", "s01v", "s02", "s02em", "s02fc", "s02g", "s02kl", "s02mm", "s02p", "s02t3", "s02v", "s03", "s03g", "s03p", "s03t3", "s03v", "s04", "s04g", "s04p", "s04t3", "s04v", "s05", "s05g", "s05p", "s05t3", "s05v", "s06", "s06g", "s06p", "s06t3", "s06v", "t03", "t03g", "t03p", "t03t3", "t03v", "t04", "t04g", "t04p", "t04t3", "t04v", "t05", "t05g", "t05p", "t05t3", "t05v", "t06", "t06ab", "t06gf", "t06p", "t06rr", "t06rz", "t06t3", "t06v", "t07", "t07g", "t07p", "t07t3", "t07v", "t08", "t08g", "t08p", "t08t3", "t08v"]}
+{"at":"2026-11-09T09:40:32.454Z","event":"wave-done","wave":1,"remaining":0}
+{"at":"2026-11-09T09:40:32.471Z","event":"all-present","wave":2}
+{"at":"2026-11-09T09:40:32.489Z","event":"done","remaining":[],"blocked":[]}

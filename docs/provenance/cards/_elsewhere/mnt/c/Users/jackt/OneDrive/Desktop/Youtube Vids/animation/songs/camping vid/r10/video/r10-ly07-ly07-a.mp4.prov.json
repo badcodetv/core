@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-ly07-ly07-a.mp4",
+ "made": "2026-11-09T10:53:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Start from the still. The rain hammers down the whole time, drops smacking the water and the banknote. The running water in the gutter pushes the note slowly along the kerb until it catches on the bars of the drain grate, folds over on itself and starts to be sucked down between the bars, one corner going under. A car passes in the background and its wheels throw a spray of water across the frame. The camera stays locked off at road level. Sound: heavy rain on tarmac, water gurgling into the drain, the tyre hiss of the passing car. No speech, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly07-a.jpg",
+ "why": "r10 clean room, writer ly",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly07-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "ly07",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:52:21.114Z"
+ }
+}

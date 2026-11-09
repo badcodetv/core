@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-re03-re03-a.mp4",
+ "made": "2026-11-09T10:56:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld over Bob's shoulder, a slow push in towards Tarquin over the 8 seconds. Tarquin swings his arm from the tents across to the supermarket front, the hand opening and closing as he points, then brings it back and slaps it once against his own chest. His head juts forward on each beat of shouting. Bob's shoulder in the foreground shifts as he holds his ground. Rain keeps coming down, flames shake the light on Tarquin's face. Sound: rain, the fire, the slap of a wet hand on a jacket, a distant shop shutter rattling in the wind. No speech.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re03-a.jpg",
+ "why": "r10 clean room, writer re",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re03-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "re03",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:54:23.521Z"
+ }
+}

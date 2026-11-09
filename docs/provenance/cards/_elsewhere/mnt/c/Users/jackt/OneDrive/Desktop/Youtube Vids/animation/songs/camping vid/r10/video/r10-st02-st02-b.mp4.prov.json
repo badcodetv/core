@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-st02-st02-b.mp4",
+ "made": "2026-11-09T11:02:22+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld camera close on the head, with a short hard jolt at the start as if the operator flinched, then it pushes in slowly and keeps drifting the whole eight seconds. The word on the screen holds steady, front-on and unchanged. The head snaps up and jerks to the side, then bobs hard to a heavy beat, the cables swinging with each nod. The haze behind rolls through the green light. The rest of the frame stays black. Sound: the crackling thump of an old television switching on, then a deep electrical hum, a crowd roaring far off in the dark, no voices picked out, no music.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st02-b.jpg",
+ "why": "r10 clean room, writer st",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st02-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "st02",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:57:57.750Z"
+ }
+}

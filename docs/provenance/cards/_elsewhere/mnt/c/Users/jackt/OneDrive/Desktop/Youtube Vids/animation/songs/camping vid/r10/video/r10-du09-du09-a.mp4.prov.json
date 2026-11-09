@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du09-du09-a.mp4",
+ "made": "2026-11-09T10:50:18+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld low camera, a slow push in toward both men over 8 seconds. Locked together by the arms round each other's shoulders, they shout at the lens in unison, heads jutting forward on the same beat, their raised drinks pumping up toward the rain twice together, beer and champagne spilling over their raised hands and falling with the rain. They rock side to side together as one unit, feet planted in the puddle. On the last beat both stop moving at once, drinks held high, staring straight into the lens, rain pouring, the fire behind them crackling. Mouths move, no speech: sound is heavy rain and the fire, then rain alone.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du09-a.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du09-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du09",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:38:55.057Z"
+ }
+}

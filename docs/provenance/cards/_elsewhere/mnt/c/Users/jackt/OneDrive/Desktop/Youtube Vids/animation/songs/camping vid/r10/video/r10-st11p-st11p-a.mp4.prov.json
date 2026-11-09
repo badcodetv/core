@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-st11p-st11p-a.mp4",
+ "made": "2026-11-09T12:01:28+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Locked-off camera, the exact same frame held for eight seconds, the floodlights staying on full, hard and steady the whole time. The man on the stage keeps facing the crowd and the camera: he nods his head slowly and heavily on a slow beat, his shoulders rolling, one hand working the deck, the other rising slowly to point out over the crowd. His screen holds the word BADCODE steady, no flicker, no change of picture. The crowd sways and bobs, arms rising one by one, the haze drifting slowly across the pitch. Sound: a low rumbling crowd, stamping feet on the stands, a deep electrical hum, no voices picked out, no music.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st11p-a.jpg",
+ "why": "Jack's round-1 timeline notes, sealed writer fx",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/st11p-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "st11p",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T12:00:24.339Z"
+ }
+}

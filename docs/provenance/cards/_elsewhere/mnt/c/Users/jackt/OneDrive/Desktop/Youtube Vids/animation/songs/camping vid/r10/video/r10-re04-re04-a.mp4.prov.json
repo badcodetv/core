@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-re04-re04-a.mp4",
+ "made": "2026-11-09T10:56:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera holds close and handheld, almost motionless, a slight breathing sway. Tarquin's chest stops heaving; his jaw unclenches and his lips close. His brow lifts and relaxes, his eyes go off Bob and drop to the wet ground between them, and his head tilts down by degrees. He swallows. His shoulders sink a little. Rain keeps running down his face; the firelight flickers across his cheek. Sound: rain, the fire, his breath going out. No spoken words.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re04-a.jpg",
+ "why": "r10 clean room, writer re",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re04-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "re04",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:54:49.115Z"
+ }
+}

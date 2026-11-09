@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du02-du02-b.mp4",
+ "made": "2026-11-09T10:34:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld over-the-shoulder, slowly pushing in toward Man B through the whole 8 seconds. Man B raps back hard: he hunches, then snaps upright, his head bobbing on the beat; the flute hand stabs toward Man A on the stressed words, twice, the champagne sloshing up the glass; his other hand sweeps across his own chest and out. His feet stay planted. In the foreground Man A's shoulder shifts back a few inches, his head tilting as he takes it. Rain streaks through the lamp light, the barrel fire flickers on Man B's side. Mouths move, no speech: sound is rain, fire crackle and a distant car passing on wet road.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du02-b.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du02-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du02",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:31:55.793Z"
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "story": "camping",
+ "scene": "mv-r10",
+ "prefix": "r10",
+ "title": "Camping MV round 10: stadium opening + bridge face-off",
+ "heading": "Camping music video: the stadium opening and the bridge (round 10)",
+ "media": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10",
+ "video": {
+  "model": "Omni 1.1 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "flow_project": "72255ea1-f3e6-4714-b415-a5cc21ab3bc0",
+ "prompts": "../mv-song2/cleanroom/r10/",
+ "premiere": {
+  "current": "beat7",
+  "beat6": {
+   "sequence": "camping song 2 beat 6",
+   "guid": "a393e8ea-abc0-4087-b246-d56c16951b6b",
+   "bin": "r10 stadium + bridge clips",
+   "built": "2026-11-09",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/camping vid Copy-test_1.prproj",
+   "edl": "docs/stories/camping/mv-song2/cut/edl-beat6.json",
+   "what": "clone of beat 5; opening + bridge re-cut with round-10 clips",
+   "how": "mv-song2/cut/recut6.py -> build6.py -> b6-*.js",
+   "edited_by_jack": "ending cut to the logo at 212.2, song ends 214.6 (carried into beat 7)"
+  },
+  "beat7": {
+   "sequence": "camping song 2 beat 7",
+   "guid": "a410d247-9291-4935-a8cd-868425c390ed",
+   "bins": [
+    "r10 stadium + bridge clips",
+    "r10 film clips"
+   ],
+   "built": "2026-11-09",
+   "project": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/camping vid Copy-test_1.prproj",
+   "edl": "docs/stories/camping/mv-song2/cut/edl-beat7.json",
+   "what": "Jack's 20 round-1 notes + his own beat-6 ending",
+   "how": "mv-song2/cut/recut7.py -> build7.py -> b7-*.js",
+   "check": {
+    "at": "2026-11-09",
+    "state": "in sync",
+    "why": "138/18 pieces match the plan (du09 trimmed to 183.52)"
+   }
+  }
+ },
+ "boards": {
+  "timeline": "https://claude.ai/artifact/WbEmR8LxhyoT4LSjL1nbjM"
+ }
+}

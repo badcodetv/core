@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-re01-re01-a.mp4",
+ "made": "2026-11-09T10:56:07+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "The camera stays put at chest height, a slight handheld drift. Tarquin keeps walking forward from the left at a slow, heavy pace, splashing through a shallow puddle, then slows and stops a few bays short of the barrel. Bob takes his hand away from the fire, turns his whole body to face Tarquin and straightens up. Rain falls steadily and ripples the puddles; the flames in the drum lick and lean in the wind; the flap of one tent shakes. Sound: steady rain on tarmac and tent nylon, the crackle of the fire, a car passing on a distant road, footsteps in water. No speech.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re01-a.jpg",
+ "why": "r10 clean room, writer re",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/re01-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "re01",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:52:47.822Z"
+ }
+}

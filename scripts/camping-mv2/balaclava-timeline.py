@@ -71,10 +71,11 @@ for n, s in enumerate(segs):
     if s['clip']:
         c = s['clip']
         src_t = c['inPoint'] + (s['start'] - c['start']) * c.get('speed', 1)
-        ff('-ss', f'{src_t:.3f}', '-i', c['mediaPath'], '-t', f'{dur:.3f}', '-an', '-vf', vf,
+        nf = round(s['end'] * FPS) - round(s['start'] * FPS)  # frame-exact: '-t' drifted (1.4 s by the end, 2026-11-09)
+        ff('-ss', f'{src_t:.3f}', '-i', c['mediaPath'], '-frames:v', nf, '-an', '-vf', vf + ',tpad=stop_mode=clone:stop_duration=1',
            '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', f)
     else:
-        ff('-f', 'lavfi', '-i', f'color=black:s=1280x720:r={FPS}', '-t', f'{dur:.3f}', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', f)
+        ff('-f', 'lavfi', '-i', f'color=black:s=1280x720:r={FPS}', '-frames:v', round(s['end'] * FPS) - round(s['start'] * FPS), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', f)
     files.append(f)
 
 (seg_dir / 'list.txt').write_text(''.join(f"file '{f.name}'\n" for f in files))

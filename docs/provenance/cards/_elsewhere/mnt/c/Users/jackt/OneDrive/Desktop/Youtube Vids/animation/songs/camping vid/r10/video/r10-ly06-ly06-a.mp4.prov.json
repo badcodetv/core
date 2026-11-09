@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-ly06-ly06-a.mp4",
+ "made": "2026-11-09T10:53:32+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Start from the still. Down the aisle the robots slide across the floor in quick, exact straight lines, turn on the spot and carry their pods away; the picking arm swings, grabs a box and drops it into a tote again and again, faster than a person could. The empty vests on the hooks stay still; a draught from under the fire door stirs the fallen one on the floor slightly. No people appear. The camera holds on the vests, then racks focus to the busy aisle behind them. Sound: the electric whine of the robots, the hiss and click of the arm, boxes thudding into totes, a ventilation fan. No speech, no music. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly06-a.jpg",
+ "why": "r10 clean room, writer ly",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/ly06-a.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "ly06",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:50:55.810Z"
+ }
+}

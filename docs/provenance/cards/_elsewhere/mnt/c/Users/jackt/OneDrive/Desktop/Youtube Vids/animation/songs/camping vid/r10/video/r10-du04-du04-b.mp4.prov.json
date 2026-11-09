@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/video/r10-du04-du04-b.mp4",
+ "made": "2026-11-09T10:34:03+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.1 Flash",
+ "prompt": "Handheld camera circles a quarter turn around him, left to right, keeping him in medium shot. He keeps rapping: head bobbing and jutting, the flute hand sweeping in a slow arc across the tents and the barrel as though showing off a view, then jabbing back toward the left edge of frame on the beat, where the other man stands out of shot. His shoulders shrug in a short sneer. Feet planted, weight rocking heel to toe. Rain runs off the flute's rim. The barrel fire flickers and a tent flap shifts in the wind. Mouths move, no speech: sound is rain on tents, fire crackle, wind.\nThanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du04-b.jpg",
+ "why": "r10 clean room, writer du",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/camping vid/r10/moodboard/du04-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/camping/mv-r10",
+  "key": "du04",
+  "frame": 0,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-09T10:32:49.530Z"
+ }
+}
