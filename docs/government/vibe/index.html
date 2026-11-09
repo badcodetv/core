@@ -1,0 +1,676 @@
+<title>Cabinet Vibe Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: teletext page P400. The government's draft posts are the hero, laid out like a
+   TweetDeck: one column per day, newest on the left, a card per post with the minister's
+   teletext band. Clicking a post opens the note sheet on the right (bottom on a phone):
+   Nailed it / Needed more / Don't do that again, each a row of feelings. A second tab keeps
+   the per-minister dials. Single dark theme on purpose: the GOVT channel is teletext. */
+:root {
+  --bg: #07080c;
+  --panel: #10131b;
+  --panel2: #171b26;
+  --line: #262b38;
+  --fg: #eef1f5;
+  --dim: #8f97a8;
+  --yellow: #ffe14d;
+  --cyan: #4de8ff;
+  --magenta: #ff5ce1;
+  --green: #5cff7a;
+  --red: #ff5a5a;
+  --blue: #6f8cff;
+  --ink: #07080c;
+  --good: var(--green);
+  --more: var(--yellow);
+  --less: var(--red);
+  --tt: "VT323", ui-monospace, "Courier New", monospace;
+  --body: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --sheet: min(460px, 100%);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+.wrap { padding-block: 16px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 16px; }
+body.sheet-open .wrap { padding-right: calc(var(--sheet) + 16px); }
+
+.strip { font-family: var(--tt); font-size: 22px; line-height: 1; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
+.strip .name { color: var(--yellow); }
+.strip .clock { margin-left: auto; color: var(--yellow); font-variant-numeric: tabular-nums; }
+
+.bar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.tabs { display: flex; gap: 4px; }
+.tabs a { font-family: var(--tt); font-size: 24px; line-height: 1; padding: 6px 12px 4px; color: var(--fg); text-decoration: none; background: var(--panel); }
+.tabs a[aria-current="page"] { background: var(--cyan); color: var(--ink); }
+.waiting { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-left: auto; }
+.waiting .count { font-family: var(--tt); font-size: 24px; line-height: 1; color: var(--dim); }
+.waiting.has .count { color: var(--yellow); }
+.copy { background: var(--yellow); color: var(--ink); border: 0; font-family: var(--tt); font-size: 20px; line-height: 1; padding: 5px 12px 3px; cursor: pointer; }
+.waiting:not(.has) .copy { background: var(--panel2); color: var(--dim); }
+.lede { margin: 0; max-width: 72ch; color: var(--dim); }
+.lede b { color: var(--fg); }
+.notice { font-family: var(--tt); font-size: 20px; color: var(--red); }
+
+/* The deck */
+.deck { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(300px, 380px); gap: 14px; overflow-x: auto; padding-bottom: 8px; align-items: start; }
+.col { display: grid; gap: 10px; min-width: 0; }
+.col h2 { margin: 0; font-family: var(--tt); font-weight: 400; font-size: 26px; line-height: 1; color: var(--yellow); display: flex; gap: 10px; align-items: baseline; padding: 4px 0; position: sticky; top: 0; background: var(--bg); }
+.col h2 small { font-size: 19px; color: var(--dim); }
+.post { all: unset; display: grid; background: var(--panel); cursor: pointer; border: 2px solid transparent; min-width: 0; }
+.post:hover { background: var(--panel2); }
+.post:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
+.post[aria-pressed="true"] { border-color: var(--c); background: var(--panel2); }
+.band { display: flex; gap: 8px; align-items: baseline; background: var(--c); color: var(--ink); font-family: var(--tt); font-size: 22px; line-height: 1; padding: 5px 10px 3px; }
+.band .who { flex: 1; min-width: 0; }
+.band .pg { opacity: .75; font-variant-numeric: tabular-nums; }
+.post .text { padding: 12px 12px 6px; font-size: 16.5px; line-height: 1.45; white-space: pre-wrap; overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 0 12px 10px; color: var(--dim); font-size: 13px; font-variant-numeric: tabular-nums; }
+.meta .over { color: var(--red); }
+.meta .pr { color: var(--cyan); }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; padding: 0 12px 12px; }
+.tags:empty { display: none; }
+.tag { font-size: 12.5px; padding: 1px 7px; border: 1px solid; line-height: 1.4; }
+.tag.good { color: var(--good); }
+.tag.more { color: var(--more); }
+.tag.less { color: var(--less); }
+.tag.note { color: var(--dim); }
+.tag.applied { color: var(--ink); background: var(--cyan); border-color: var(--cyan); }
+.empty-deck { color: var(--dim); max-width: 60ch; }
+.repeats { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; padding: 8px 12px; border: 2px solid var(--red); margin-bottom: 12px; }
+.repeats b { font-family: var(--tt); font-weight: 400; font-size: 21px; line-height: 1; color: var(--red); }
+.repeats span { font-size: 14px; }
+.score { display: flex; flex-wrap: wrap; gap: 4px 10px; font-variant-numeric: tabular-nums; }
+.score .g { color: var(--good); } .score .m { color: var(--more); } .score .l { color: var(--less); }
+.score .rep { color: var(--ink); background: var(--red); padding: 0 6px; }
+
+/* The note sheet */
+.sheet { position: fixed; z-index: 20; top: 0; right: 0; bottom: 0; width: var(--sheet); background: var(--panel); border-left: 3px solid var(--c, var(--cyan)); overflow-y: auto; padding: calc(env(safe-area-inset-top, 0px) + 12px) max(16px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) 16px; display: grid; gap: 16px; align-content: start; }
+.sheet-top { display: flex; gap: 6px; align-items: center; }
+.sheet-top .who { flex: 1; font-family: var(--tt); font-size: 26px; line-height: 1; color: var(--c); }
+.iconbtn { background: var(--panel2); color: var(--fg); border: 0; font-family: var(--tt); font-size: 22px; line-height: 1; padding: 5px 10px 3px; cursor: pointer; }
+.iconbtn:hover { background: var(--fg); color: var(--ink); }
+.sheet blockquote { margin: 0; font-size: 18px; line-height: 1.45; white-space: pre-wrap; overflow-wrap: anywhere; padding-left: 12px; border-left: 3px solid var(--c); }
+.sheet .smeta { color: var(--dim); font-size: 13px; margin-top: -8px; }
+.sheet details summary { cursor: pointer; color: var(--dim); font-size: 13px; }
+.sheet details p { margin: 6px 0 0; color: var(--dim); font-size: 13px; }
+.row { display: grid; gap: 8px; padding: 10px; background: var(--bg); border-top: 3px solid var(--k); }
+.row h3 { margin: 0; font-family: var(--tt); font-weight: 400; font-size: 24px; line-height: 1; color: var(--k); }
+.row h3 small { font-family: var(--body); font-size: 13px; color: var(--dim); margin-left: 6px; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chips button { background: none; border: 1px solid var(--line); color: var(--fg); font: inherit; font-size: 13.5px; padding: 2px 9px; cursor: pointer; }
+.chips button:hover { border-color: var(--k); }
+.chips button[aria-pressed="true"] { background: var(--k); border-color: var(--k); color: var(--ink); }
+.chips button.elsewhere { color: var(--dim); }
+.add { display: flex; gap: 6px; }
+.add input { flex: 1; min-width: 0; background: var(--panel); color: var(--fg); border: 1px solid var(--line); font: inherit; font-size: 14px; padding: 4px 8px; }
+.add button { background: var(--k); color: var(--ink); border: 0; font-family: var(--tt); font-size: 19px; line-height: 1; padding: 3px 10px; cursor: pointer; }
+.sheet textarea, .card textarea { width: 100%; min-height: 64px; resize: vertical; background: var(--bg); color: var(--fg); border: 1px solid var(--line); font: inherit; font-size: 14px; padding: 6px 8px; }
+.saving { font-size: 13px; color: var(--dim); min-height: 1.4em; }
+.hint { font-size: 12.5px; color: var(--dim); }
+input:focus-visible, textarea:focus-visible, button:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; display: grid; gap: 12px; }
+fieldset:disabled { opacity: .5; }
+
+/* Ministers tab (the per-minister dials) */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; }
+.card { background: var(--panel); display: grid; grid-template-rows: auto 1fr auto; min-width: 0; }
+.card.cabinet { grid-column: 1 / -1; }
+.card .band .st { font-size: 18px; background: var(--ink); color: var(--c); padding: 1px 6px 0; }
+.card .body { padding: 12px 12px 4px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.now { margin: 0; color: var(--dim); font-size: 14px; }
+.now b { color: var(--fg); }
+.quote { margin: 0; padding-left: 10px; border-left: 3px solid var(--c); font-style: italic; font-size: 14px; }
+.moves { display: flex; flex-wrap: wrap; gap: 8px; min-height: 34px; align-items: center; }
+.moves .empty { color: var(--dim); font-size: 13px; }
+.move { display: inline-flex; border: 2px solid; font-size: 14px; }
+.move.up { border-color: var(--green); } .move.up b { color: var(--green); }
+.move.down { border-color: var(--red); } .move.down b { color: var(--red); }
+.move span { padding: 3px 8px; white-space: nowrap; }
+.move button { background: none; border: 0; color: var(--fg); font-family: var(--tt); font-size: 20px; line-height: 1; padding: 0 8px; cursor: pointer; }
+.move button:hover { background: var(--fg); color: var(--ink); }
+.palette { display: flex; flex-wrap: wrap; gap: 5px; }
+.palette button { background: none; border: 1px solid var(--line); color: var(--fg); font: inherit; font-size: 13px; padding: 2px 9px; cursor: pointer; }
+.palette button.on { border-color: var(--c); color: var(--c); }
+.card .add button { background: var(--c); }
+.card .foot { padding: 8px 12px 10px; font-size: 13px; color: var(--dim); display: grid; gap: 2px; }
+
+@media (max-width: 760px) {
+  .deck { grid-auto-flow: row; grid-auto-columns: auto; overflow-x: visible; }
+  body.sheet-open .wrap { padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .sheet { top: auto; left: 0; width: 100%; max-height: 82vh; border-left: 0; border-top: 3px solid var(--c, var(--cyan)); padding-left: max(16px, env(safe-area-inset-left, 0px)); }
+  .waiting { margin-left: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sheet { animation: slide .16s ease-out; }
+  @keyframes slide { from { transform: translateX(24px); opacity: .6; } }
+}
+</style>
+
+<div class="wrap">
+  <div class="strip" aria-hidden="true"><span>P400</span><span class="name">BADCODE GOVT</span><span>Vibe desk</span><span class="clock" id="clock"></span></div>
+
+  <div class="bar">
+    <nav class="tabs" aria-label="Views">
+      <a href="#posts" id="tab-posts">Posts</a>
+      <a href="#ministers" id="tab-ministers">Ministers</a>
+    </nav>
+    <div class="waiting" id="waiting">
+      <span class="count" id="count">Loading…</span>
+      <button class="copy" id="copy" type="button">Copy “apply the vibe tweaks”</button>
+    </div>
+  </div>
+  <div class="notice" id="notice" hidden></div>
+
+  <section id="view-posts">
+    <p class="lede">What the cabinet would post next. <b>Click a post</b> and say how its feelings landed: what it <b>nailed</b>, what it <b>needed more</b> of, what it should <b>never do again</b>. Notes save as you go. When you're done, tell Claude to <b>apply the vibe tweaks</b>.</p>
+    <div class="repeats" id="repeats" hidden></div>
+    <div class="deck" id="deck"></div>
+  </section>
+
+  <section id="view-ministers" hidden>
+    <p class="lede">A standing mood per minister, or for the whole cabinet, whatever it posted. Tap a feeling, then use − and + to set it. Each card's scorecard counts your verdicts on that minister's posts; red marks a feeling you banned that came back.</p>
+    <div class="grid" id="grid"></div>
+  </section>
+</div>
+
+<aside class="sheet" id="sheet" hidden aria-label="Notes on this post"></aside>
+
+<script>
+const MINISTERS = [
+ {
+  "num": 0,
+  "title": "Prime Minister",
+  "post": "prime-minister",
+  "temperament": "calmest and shortest. Speaks last: three declaratives, then stops. Dry, not sarcastic; the joke is in what it declines to say. First question of every proposal: *what's the test?*",
+  "sounds": "\"Three ministers want to fix this. One of them has a test. We'll start there.\""
+ },
+ {
+  "num": 1,
+  "title": "Chancellor of the Exchequer",
+  "post": "chancellor",
+  "temperament": "a deadpan accountant who has read every balance sheet. Two or three figures flat, one per line, the last one stings. Precise to the penny; never rounds up for effect.",
+  "guards": "austerity told as weather, and its own sarcasm turning into contempt for people who are skint. At \"who gained\", drop the deadpan.",
+  "sounds": "\"Cost of the scheme: £2bn. Cost of the tax relief nobody debated: £9bn. Cost of saying 'we can't afford it' with a straight face: priceless.\""
+ },
+ {
+  "num": 2,
+  "title": "Foreign Secretary",
+  "post": "foreign",
+  "temperament": "the long view. Long, balanced sentences; reaches for history, but never opens with it. Wry, weary of every summit that was going to change everything. Never jingoistic, never sneering at another country's people. Holds two true things at once and says so.",
+  "guards": "\"deep concern\". If a thing is wrong it says so; if the UK is complicit, that too. Never pretends to know how a war ends, and never hangs a test on one.",
+  "sounds": "\"Nobody here started that war. Somebody here decided we'd have no plan B.\""
+ },
+ {
+  "num": 3,
+  "title": "Home Secretary",
+  "post": "home",
+  "temperament": "the steadiest hand at the table: a desk sergeant who has seen every moral panic come and go. Speaks slowly and plainly, in short paragraphs, never in capitals. Lowers the temperature on purpose. Gives the size of a thing before its colour: how many, compared to what, since when. Its dark humour is bone-dry and rare, which makes it land.",
+  "guards": "punching down: people first, case second. Never \"you've been lied to\". A machine's match is never a fact about a person; a fraud victim is never told to be careful.",
+  "sounds": "\"Yes, it's a cost. Here's the size of it. Now here's the size of the one nobody put on a leaflet.\""
+ },
+ {
+  "num": 4,
+  "title": "Education",
+  "post": "education",
+  "temperament": "the teacher everyone remembers. Warm, curious, a little mischievous. Asks two or three questions, lets them hang, answers one. Explains with an everyday object. Gentle sarcasm aimed upward, at the exam board, never at a pupil or a parent. The most hopeful voice in the cabinet, and works hardest to stay honest.",
+  "guards": "blaming teachers, kids or parents; saying the courses people took were a con (the funding rule was); \"skills\" as a magic word that lets employers off.",
+  "sounds": "\"What's a ladder for if someone saws off the bottom rung? And who's selling the saw?\""
+ },
+ {
+  "num": 5,
+  "title": "Defence",
+  "post": "defence",
+  "temperament": "clipped and operational. Talks like a risk register: threat, likelihood, consequence, mitigation. No flourishes, no flag-waving. The darkest humour in the cabinet, one line at most, never aimed at the reader.",
+  "guards": "sounding hawkish or naive. Never cheers a war, never treats soldiers as props or the dead as numbers. A risk gets a size and a plan, not a siren. Never \"killer robots\".",
+  "sounds": "\"Threat: real. Budget: up. Who got the contract: the same three firms. Who checked the kill switch: nobody. Fix the last one first.\""
+ },
+ {
+  "num": 6,
+  "title": "Health",
+  "post": "health",
+  "temperament": "a triage nurse at the end of a double shift. Urgent, practical, present tense. Short sentences, sorted by who needs seeing first. Kind to every patient and short with every excuse. Black ward humour, never at a patient's expense. No patience for another reorganisation.",
+  "guards": "blaming staff or patients; miracle cures, digital or otherwise; denying the NHS's reliance on staff from abroad, or restating claims about it to refute them. Where private money enters, says who takes the profit and who takes the risk.",
+  "sounds": "\"Bed 4 has waited fourteen hours. The consultancy that redesigned the waiting room was paid in six weeks. Bed 4 first.\""
+ },
+ {
+  "num": 7,
+  "title": "Work and Pensions",
+  "post": "work-pensions",
+  "temperament": "the angriest minister and the most on-your-side. Talks like someone from the town, not about it: plain words, sometimes just a fact and a full stop. Raises its voice for claimants and lowers it to explain. Funny the way a shop steward is funny: at the boss's expense, in front of the boss.",
+  "guards": "fatalism, and naming a loss without who gained. Says \"a change that lowers your income\", not \"cuts\". Never talks down to anyone on benefits. Immigration belongs to Home.",
+  "sounds": "\"The machine didn't sack forty people in Doncaster. A board did, on Tuesday, and the saving went to the share price. Ask them who they asked.\""
+ },
+ {
+  "num": 8,
+  "title": "Housing",
+  "post": "housing",
+  "temperament": "the site foreman. Blunt, concrete, impatient. Counts homes, not promises: \"announced\" means nothing until there's a roof on it. Short, physical sentences: bricks, plots, rents. Laughs at a press release like a builder at a drawing with no stairs, never at the person waiting for the house.",
+  "guards": "blaming tenants or the young; treating a one-flat landlord like a fund. Homelessness is never a lifestyle.",
+  "sounds": "\"Three hundred thousand homes promised. Lovely drawing. Show me the roofs.\""
+ },
+ {
+  "num": 9,
+  "title": "Energy and Climate",
+  "post": "energy-climate",
+  "temperament": "the engineer who can't stop being excited. One vivid picture, then lands on the bill. Fast, bright, the only minister that says \"brilliant\" and means it. Gets sharp fast when someone profits from a shortage.",
+  "guards": "doom, lecturing about boilers, calling developers villains (the rule is the fault), repeating an opponent's figure to knock it down. Never sneers at anyone who drives to work.",
+  "sounds": "\"The wind is free. The sun is free. Somehow your bill went up. Let's find out who put a meter on the weather.\""
+ }
+];
+const POSTS = [
+ {
+  "id": "2026-11-06_defence",
+  "date": "2026-11-06",
+  "post": "defence",
+  "text": "Threat: hackers attacking internet-connected fridges. US agencies say it's live; UK supermarket units were reportedly hit. Consequence: the food. Mitigation: take the remote off the internet, then drill the cold store by hand. Who checked it was offline? Fix that first.",
+  "platform": "x",
+  "status": "draft",
+  "url": "",
+  "answers": [
+   "a9c2bd1b-097f-4c79-a7d7-d93ee6a91140"
+  ],
+  "where": "main"
+ },
+ {
+  "id": "2026-11-06_health",
+  "date": "2026-11-06",
+  "post": "health",
+  "text": "20,000 patients. 200 GP practices. An AI blood test for 12 cancers, where a positive means a conversation with your GP, not a diagnosis. Trialled before anyone rolls it out. That's the job done properly. Now the same rule for every machine the NHS buys.",
+  "platform": "x",
+  "status": "draft",
+  "url": "",
+  "answers": [
+   "b7cd69c2-cc02-43c7-951f-68eb04d2083c"
+  ],
+  "where": "main"
+ },
+ {
+  "id": "2026-11-06_work-pensions",
+  "date": "2026-11-06",
+  "post": "work-pensions",
+  "text": "Say what you pay is going to be law. 94% of those consulted backed it. Good. Now the other half: when a board swaps jobs for software, the redundancy form says so. One question. Then somebody counts.",
+  "platform": "x",
+  "status": "draft",
+  "url": "",
+  "answers": [
+   "5b477932-8469-4b0d-8134-7d4c1e44b19b"
+  ],
+  "where": "main"
+ },
+ {
+  "id": "2026-11-06_housing",
+  "date": "2026-11-06",
+  "post": "housing",
+  "text": "Great Torrington, Devon: a 1.5 GW data campus planned. Ministers have reportedly overruled councils that said no to data centres. Wrong way round. The town writes the deal, residents get the last word, and no housing site waits behind the servers. Show me the deal.",
+  "platform": "x",
+  "status": "draft",
+  "url": "",
+  "answers": [
+   "f835aaf5-071f-4796-8a7b-c44af0b0f67f"
+  ],
+  "where": "main"
+ },
+ {
+  "id": "2026-11-06_energy-climate",
+  "date": "2026-11-06",
+  "post": "energy-climate",
+  "text": "Ministers plan to scrap the daily gas standing charge: six gas customers in ten save, £45 a year on average, they say. Brilliant. Now the electricity one, the bit you pay before the kettle boils. Put the generators' windfall on it, prepayment first.",
+  "platform": "x",
+  "status": "draft",
+  "url": "",
+  "answers": [
+   "2e68e6dc-6597-4aa2-9983-3cc4eb6a8d8d"
+  ],
+  "where": "main"
+ },
+ {
+  "id": "2026-11-05_chancellor",
+  "date": "2026-11-05",
+  "post": "chancellor",
+  "text": "Bank Rate: up to 4%.\nTracker mortgages: up 0.25 points.\nThe energy prices driving inflation: unmoved by either.\n\nThe shock started abroad. The bill went to people with a mortgage here. That's a decision, and it has an address.",
+  "platform": "x",
+  "status": "draft",
+  "url": "",
+  "answers": [
+   "6ab1e2f6-7587-46c8-a198-d68d1e9cc3bd"
+  ],
+  "where": "main"
+ },
+ {
+  "id": "2026-11-05_foreign",
+  "date": "2026-11-05",
+  "post": "foreign",
+  "text": "About a fifth of the world's oil normally sails through the Strait of Hormuz. This week the US struck targets there and Iran offered terms.\n\nFar away is never far. It ends on the meter in your hallway.\n\nQatar and Pakistan are mediating. Back the talks, then check the bill.",
+  "platform": "x",
+  "status": "draft",
+  "url": "",
+  "answers": [
+   "c325c73d-7f69-4b8e-9a04-e337b00e81a6",
+   "6ab1e2f6-7587-46c8-a198-d68d1e9cc3bd"
+  ],
+  "where": "main"
+ }
+];
+const BUILT = "6d67a7b6";
+const COLOURS = ["--yellow", "--cyan", "--magenta", "--green", "--red", "--blue"];
+const BY_POST = {};
+MINISTERS.forEach((m, i) => (BY_POST[m.post] = { ...m, colour: COLOURS[(i + 1) % COLOURS.length] }));
+const TARGETS = [{ post: "cabinet", title: "Whole cabinet", num: -1, colour: COLOURS[0], temperament: "A mood for all ten ministers at once. Claude works it into every brief, alongside each minister's own." }, ...MINISTERS.map(m => BY_POST[m.post])];
+const FEELINGS = ["funny", "deadpan", "sarcastic", "angry", "aggressive", "scornful", "smug", "cheeky", "playful", "mischievous", "warm", "tender", "hopeful", "earnest", "calm", "weary", "bitter", "cold", "menacing", "defiant", "impatient", "outraged", "mournful", "gleeful"];
+const KINDS = [
+  { key: "good", title: "Nailed it", help: "keep doing this", colour: "--good" },
+  { key: "more", title: "Needed more", help: "should have gone further", colour: "--more" },
+  { key: "less", title: "Don't do that again", help: "wrong feeling, or too much", colour: "--less" },
+];
+const LEVEL = { "-2": "much less", "-1": "less", "1": "more", "2": "much more" };
+const LIMIT = { x: 280 };
+
+const notes = {};   // post id -> {good:[], more:[], less:[], note, status}
+const dials = {};   // minister post -> {moves, note, status}
+const history = {}; // minister post -> newest applied entry
+const dirty = {}, timers = {};
+let db = null, me = null, current = null;
+
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const fmtDay = d => new Date(d + "T12:00:00").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+const fmtDate = s => { try { return new Date(s).toLocaleDateString("en-GB", { day: "numeric", month: "short" }); } catch { return s; } };
+const page = post => String(401 + (BY_POST[post] ? BY_POST[post].num : -1)).padStart(3, "0");
+const who = post => (BY_POST[post] ? BY_POST[post].title : post);
+const blankNote = () => ({ good: [], more: [], less: [], note: "", status: "" });
+const hasNote = n => n && (n.good.length || n.more.length || n.less.length || (n.note || "").trim());
+
+function tick() {
+  const d = new Date();
+  document.getElementById("clock").textContent = d.toLocaleDateString("en-GB", { weekday: "short", day: "2-digit", month: "short" }) + " " + d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+}
+tick(); setInterval(tick, 1000);
+
+/* ---------- Posts view ---------- */
+function buildDeck() {
+  const deck = document.getElementById("deck"); deck.replaceChildren();
+  if (!POSTS.length) { deck.append(el("p", "empty-deck", "The cabinet hasn't drafted any posts yet. They appear here after its 06:00 sitting writes them and Claude rebuilds this page.")); return; }
+  const days = [...new Set(POSTS.map(p => p.date))];
+  days.forEach(day => {
+    const col = el("div", "col");
+    const list = POSTS.filter(p => p.date === day);
+    const h = el("h2", null, fmtDay(day)); h.append(el("small", null, list.length + (list.length === 1 ? " post" : " posts"))); col.append(h);
+    list.forEach(p => {
+      const b = el("button", "post"); b.type = "button"; b.id = "post-" + p.id; b.setAttribute("aria-pressed", "false");
+      b.style.setProperty("--c", `var(${(BY_POST[p.post] || {}).colour || "--cyan"})`);
+      const band = el("span", "band"); band.append(el("span", "pg", page(p.post)), el("span", "who", who(p.post))); b.append(band);
+      b.append(el("span", "text", p.text));
+      const meta = el("span", "meta");
+      meta.append(el("span", null, p.platform === "any" ? "Any platform" : p.platform === "x" ? "X" : p.platform[0].toUpperCase() + p.platform.slice(1)));
+      const lim = LIMIT[p.platform]; if (lim) meta.append(el("span", p.text.length > lim ? "over" : null, `${p.text.length}/${lim}`));
+      meta.append(el("span", p.where === "pr" ? "pr" : null, p.status === "posted" ? "Posted" : p.where === "pr" ? `Draft in PR #${p.pr}` : "Draft, merged"));
+      b.append(meta, el("span", "tags"));
+      b.onclick = () => openSheet(p.id);
+      col.append(b);
+    });
+    deck.append(col);
+  });
+  POSTS.forEach(p => renderTags(p.id));
+}
+
+function renderTags(id) {
+  const b = document.getElementById("post-" + id); if (!b) return;
+  const t = b.querySelector(".tags"); t.replaceChildren();
+  const n = notes[id];
+  if (!n) return;
+  if (n.status === "applied") t.append(el("span", "tag applied", "Applied" + (n.pr ? " · PR #" + n.pr : "")));
+  KINDS.forEach(k => n[k.key].forEach(w => t.append(el("span", "tag " + k.key, (k.key === "good" ? "✓ " : k.key === "more" ? "+ " : "✕ ") + w))));
+  if ((n.note || "").trim()) t.append(el("span", "tag note", "note"));
+}
+
+function openSheet(id) {
+  const p = POSTS.find(x => x.id === id); if (!p) return;
+  current = id;
+  document.querySelectorAll(".post").forEach(b => b.setAttribute("aria-pressed", String(b.id === "post-" + id)));
+  const sheet = document.getElementById("sheet");
+  sheet.style.setProperty("--c", `var(${(BY_POST[p.post] || {}).colour || "--cyan"})`);
+  sheet.replaceChildren();
+  const n = notes[id] || (notes[id] = blankNote());
+
+  const top = el("div", "sheet-top");
+  top.append(el("span", "who", `${page(p.post)} ${who(p.post)}`));
+  const idx = POSTS.findIndex(x => x.id === id);
+  const prev = el("button", "iconbtn", "‹"); prev.type = "button"; prev.title = "Previous post (←)"; prev.setAttribute("aria-label", "Previous post"); prev.disabled = idx <= 0; prev.onclick = () => openSheet(POSTS[idx - 1].id);
+  const next = el("button", "iconbtn", "›"); next.type = "button"; next.title = "Next post (→)"; next.setAttribute("aria-label", "Next post"); next.disabled = idx >= POSTS.length - 1; next.onclick = () => openSheet(POSTS[idx + 1].id);
+  const close = el("button", "iconbtn", "×"); close.type = "button"; close.title = "Close (Esc)"; close.setAttribute("aria-label", "Close"); close.onclick = closeSheet;
+  top.append(prev, next, close); sheet.append(top);
+
+  sheet.append(el("blockquote", null, p.text));
+  sheet.append(el("div", "smeta", `${fmtDay(p.date)} · ${p.platform === "x" ? "X" : p.platform} · ${p.where === "pr" ? "draft in PR #" + p.pr : "draft, merged"}`));
+  const m = BY_POST[p.post];
+  if (m && m.temperament) { const d = el("details"); d.append(el("summary", null, "How this minister is meant to sound"), el("p", null, m.temperament)); if (m.sounds) d.append(el("p", null, "Sample: " + m.sounds)); sheet.append(d); }
+
+  const fs = el("fieldset"); fs.disabled = !db;
+  KINDS.forEach(k => {
+    const row = el("div", "row"); row.style.setProperty("--k", `var(${k.colour})`);
+    const h = el("h3", null, k.title); h.append(el("small", null, k.help)); row.append(h);
+    const chips = el("div", "chips");
+    const words = [...new Set([...FEELINGS, ...n.good, ...n.more, ...n.less])];
+    words.forEach(w => {
+      const c = el("button", null, w); c.type = "button";
+      const on = n[k.key].includes(w); c.setAttribute("aria-pressed", String(on));
+      if (!on && KINDS.some(o => o.key !== k.key && n[o.key].includes(w))) c.classList.add("elsewhere");
+      c.onclick = () => { toggle(id, k.key, w); openSheet(id); focusChip(k.key, w); };
+      chips.append(c);
+    });
+    row.append(chips);
+    const add = el("form", "add");
+    const inp = el("input"); inp.id = `add-${k.key}`; inp.placeholder = "Another feeling…"; inp.maxLength = 40; inp.setAttribute("aria-label", `Add a feeling to ${k.title}`);
+    const go = el("button", null, "Add"); go.type = "submit";
+    add.append(inp, go);
+    add.onsubmit = e => { e.preventDefault(); const w = inp.value.trim().toLowerCase(); if (!w) return; if (!n[k.key].includes(w)) toggle(id, k.key, w); openSheet(id); document.getElementById(`add-${k.key}`).focus(); };
+    row.append(add);
+    fs.append(row);
+  });
+  const ta = el("textarea"); ta.id = "note-post"; ta.placeholder = "Anything else? e.g. \"the last line should sting, this one shrugs\""; ta.setAttribute("aria-label", "Note on this post"); ta.value = n.note || "";
+  ta.oninput = () => { n.note = ta.value; saveNote(id); };
+  fs.append(ta);
+  sheet.append(fs);
+  const sv = el("div", "saving"); sv.id = "saving"; sv.textContent = !db ? "Open this page on claude.ai, signed in, to leave notes." : statusText(n);
+  sheet.append(sv, el("div", "hint", "← → next post · Esc closes"));
+
+  sheet.hidden = false; document.body.classList.add("sheet-open");
+  document.getElementById("post-" + id).scrollIntoView({ block: "nearest", inline: "nearest" });
+}
+function statusText(n) {
+  if (n.status === "applied") return "Applied" + (n.pr ? " in PR #" + n.pr : "") + ". Change anything to send a new note.";
+  return hasNote(n) ? "Saved. Waiting for Claude." : "";
+}
+function focusChip(kind, w) { const row = [...document.querySelectorAll(".sheet .row")][KINDS.findIndex(k => k.key === kind)]; const c = row && [...row.querySelectorAll(".chips button")].find(b => b.textContent === w); if (c) c.focus(); }
+function closeSheet() { current = null; document.getElementById("sheet").hidden = true; document.body.classList.remove("sheet-open"); document.querySelectorAll(".post").forEach(b => b.setAttribute("aria-pressed", "false")); }
+
+function toggle(id, kind, w) {
+  const n = notes[id] || (notes[id] = blankNote());
+  const on = n[kind].includes(w);
+  KINDS.forEach(k => (n[k.key] = n[k.key].filter(x => x !== w)));   // one verdict per feeling
+  if (!on) n[kind].push(w);
+  saveNote(id);
+}
+
+function saveNote(id) {
+  dirty["n:" + id] = true; renderTags(id); summary();
+  const sv = document.getElementById("saving"); if (sv && current === id) sv.textContent = "Saving…";
+  clearTimeout(timers["n:" + id]);
+  timers["n:" + id] = setTimeout(async () => {
+    const n = notes[id], p = POSTS.find(x => x.id === id);
+    const status = hasNote(n) ? "pending" : "cleared";
+    try {
+      await db.doc("notes/" + id).set({ statement: `${p.date}/${p.post}`, post: p.post, date: p.date, text: p.text, good: n.good, more: n.more, less: n.less, note: n.note || "", status, updatedAt: new Date().toISOString(), updatedBy: me || null });
+      n.status = status;
+      const s = document.getElementById("saving"); if (s && current === id) s.textContent = status === "pending" ? "Saved. Waiting for Claude." : "Cleared.";
+    } catch (e) {
+      const s = document.getElementById("saving"); if (s && current === id) s.textContent = "Not saved: " + (e && e.message ? e.message : "the store refused it") + ". Your note is still here; change anything to try again.";
+    }
+    dirty["n:" + id] = false; renderTags(id); summary();
+  }, 700);
+}
+
+document.addEventListener("keydown", e => {
+  if (current == null || document.getElementById("view-posts").hidden) return;
+  if (e.target.closest("input, textarea")) { if (e.key === "Escape") e.target.blur(); return; }
+  const i = POSTS.findIndex(p => p.id === current);
+  if (e.key === "Escape") closeSheet();
+  else if (e.key === "ArrowRight" && i < POSTS.length - 1) { e.preventDefault(); openSheet(POSTS[i + 1].id); }
+  else if (e.key === "ArrowLeft" && i > 0) { e.preventDefault(); openSheet(POSTS[i - 1].id); }
+});
+
+/* ---------- Ministers view (dials) ---------- */
+function buildGrid() {
+  const grid = document.getElementById("grid");
+  TARGETS.forEach(t => {
+    const card = el("section", "card" + (t.post === "cabinet" ? " cabinet" : "")); card.id = "card-" + t.post;
+    card.style.setProperty("--c", `var(${t.colour})`);
+    const band = el("div", "band"); band.append(el("span", "pg", String(401 + t.num).padStart(3, "0")), el("span", "who", t.title));
+    const st = el("span", "st"); st.hidden = true; band.append(st); card.append(band);
+    const body = el("div", "body");
+    const now = el("p", "now"); if (t.post !== "cabinet") now.append(el("b", null, "Now: ")); now.append(t.temperament || ""); body.append(now);
+    if (t.sounds) body.append(el("p", "quote", t.sounds));
+    const fs = el("fieldset"); fs.disabled = true;
+    fs.append(el("div", "moves"));
+    const pal = el("div", "palette");
+    FEELINGS.forEach(w => { const b = el("button", null, w); b.type = "button"; b.dataset.word = w; b.onclick = () => nudge(t.post, w, 1); pal.append(b); });
+    fs.append(pal);
+    const add = el("form", "add");
+    const inp = el("input"); inp.id = "word-" + t.post; inp.placeholder = "Any other feeling…"; inp.maxLength = 40; inp.setAttribute("aria-label", "Add a feeling for " + t.title);
+    const go = el("button", null, "More"); go.type = "submit"; add.append(inp, go);
+    add.onsubmit = e => { e.preventDefault(); const w = inp.value.trim().toLowerCase(); if (w) { nudge(t.post, w, 1); inp.value = ""; } };
+    fs.append(add);
+    const ta = el("textarea"); ta.id = "note-" + t.post; ta.placeholder = "Anything else? e.g. \"angrier about landlords, softer with nurses\""; ta.setAttribute("aria-label", "Note for " + t.title);
+    ta.oninput = () => { dial(t.post).note = ta.value; saveDial(t.post); };
+    fs.append(ta); body.append(fs); card.append(body);
+    const foot = el("div", "foot"); foot.append(el("span", "scorebox"), el("span", "dsaving"), el("span", "last")); card.append(foot);
+    grid.append(card); renderDial(t.post);
+  });
+}
+const dial = post => dials[post] || (dials[post] = { moves: [], note: "", status: "" });
+function nudge(post, word, delta) {
+  const s = dial(post); let m = s.moves.find(x => x.word === word);
+  if (!m) { m = { word, level: 0 }; s.moves.push(m); }
+  m.level = Math.max(-2, Math.min(2, m.level + delta));
+  if (m.level === 0) s.moves = s.moves.filter(x => x !== m);
+  renderDial(post); saveDial(post);
+}
+function renderDial(post) {
+  const card = document.getElementById("card-" + post); if (!card) return;
+  const s = dial(post), moves = card.querySelector(".moves"); moves.replaceChildren();
+  if (!s.moves.length) moves.append(el("span", "empty", "No standing mood set. Tap a feeling below."));
+  s.moves.forEach(m => {
+    const chip = el("span", "move " + (m.level > 0 ? "up" : "down"));
+    const less = el("button", null, "−"); less.type = "button"; less.setAttribute("aria-label", "Less " + m.word); less.onclick = () => nudge(post, m.word, -1);
+    const lab = el("span"); lab.append(el("b", null, LEVEL[m.level]), " " + m.word);
+    const more = el("button", null, "+"); more.type = "button"; more.setAttribute("aria-label", "More " + m.word); more.onclick = () => nudge(post, m.word, 1);
+    const x = el("button", null, "×"); x.type = "button"; x.setAttribute("aria-label", "Remove " + m.word); x.onclick = () => { s.moves = s.moves.filter(y => y.word !== m.word); renderDial(post); saveDial(post); };
+    chip.append(less, lab, more, x); moves.append(chip);
+  });
+  card.querySelectorAll(".palette button").forEach(b => b.classList.toggle("on", s.moves.some(m => m.word === b.dataset.word)));
+  const ta = card.querySelector("textarea"); if (document.activeElement !== ta && ta.value !== (s.note || "")) ta.value = s.note || "";
+  const pending = s.status === "pending" && (s.moves.length || (s.note || "").trim());
+  const st = card.querySelector(".st"); st.hidden = !pending && s.status !== "applied"; st.textContent = pending ? "Waiting" : "Applied";
+  if (post !== "cabinet") card.querySelector(".scorebox").replaceChildren(scoreLine(post));
+  const h = history[post], last = card.querySelector(".last"); last.replaceChildren();
+  if (h) { last.append("Last applied " + fmtDate(h.at) + ": " + (h.summary || "") + (h.pr ? " · PR #" + h.pr : "")); } else last.textContent = "Nothing applied yet.";
+  summary();
+}
+function saveDial(post) {
+  dirty["d:" + post] = true;
+  const card = document.getElementById("card-" + post); card.querySelector(".dsaving").textContent = "Saving…";
+  clearTimeout(timers["d:" + post]);
+  timers["d:" + post] = setTimeout(async () => {
+    const s = dial(post); const empty = !s.moves.length && !(s.note || "").trim();
+    try {
+      await db.doc("dials/" + post).set({ post, moves: s.moves.map(m => ({ word: m.word, level: m.level })), note: s.note || "", status: empty ? "cleared" : "pending", updatedAt: new Date().toISOString(), updatedBy: me || null });
+      s.status = empty ? "cleared" : "pending"; card.querySelector(".dsaving").textContent = empty ? "Cleared." : "Saved. Waiting for Claude.";
+    } catch (e) { card.querySelector(".dsaving").textContent = "Not saved: " + (e && e.message ? e.message : "the store refused it") + "."; }
+    dirty["d:" + post] = false; renderDial(post);
+  }, 700);
+}
+
+/* ---------- Scorecard: is it learning? ---------- */
+// Built from every note ever left (applied ones keep their verdicts). A repeat is a feeling
+// marked "Don't do that again" on two or more of one minister's posts: a lesson that didn't stick.
+function score(post) {
+  const s = { posts: 0, good: 0, more: 0, less: 0, repeats: [] }, banned = {};
+  Object.keys(notes).sort().forEach(id => {
+    const n = notes[id]; if (!hasNote(n) || id.slice(11) !== post) return;
+    s.posts++; if (n.good.length) s.good++; if (n.more.length) s.more++; if (n.less.length) s.less++;
+    n.less.forEach(w => (banned[w] = (banned[w] || 0) + 1));
+  });
+  s.repeats = Object.entries(banned).filter(([, c]) => c > 1).map(([w, c]) => ({ word: w, count: c }));
+  return s;
+}
+function scoreLine(post) {
+  const s = score(post), box = el("span", "score");
+  if (!s.posts) { box.textContent = "No posts noted yet."; return box; }
+  box.append(el("span", null, s.posts + (s.posts === 1 ? " post noted" : " posts noted")), el("span", "g", "✓ " + s.good), el("span", "m", "+ " + s.more), el("span", "l", "✕ " + s.less));
+  s.repeats.forEach(r => box.append(el("span", "rep", `${r.word} again (${r.count})`)));
+  return box;
+}
+function renderRepeats() {
+  const box = document.getElementById("repeats"); box.replaceChildren();
+  const hits = MINISTERS.flatMap(m => score(m.post).repeats.map(r => `${m.title}: ${r.word}, ${r.count} posts`));
+  box.hidden = !hits.length; if (!hits.length) return;
+  box.append(el("b", null, "Didn't stick"));
+  hits.forEach(h => box.append(el("span", null, h)));
+}
+
+/* ---------- Shared ---------- */
+function summary() {
+  const nPosts = POSTS.filter(p => notes[p.id] && notes[p.id].status === "pending" && hasNote(notes[p.id])).length;
+  renderRepeats();
+  const nDials = TARGETS.filter(t => { const s = dials[t.post]; return s && s.status === "pending" && (s.moves.length || (s.note || "").trim()); }).length;
+  const total = nPosts + nDials;
+  document.getElementById("waiting").classList.toggle("has", total > 0);
+  const parts = []; if (nPosts) parts.push(nPosts + (nPosts === 1 ? " post noted" : " posts noted")); if (nDials) parts.push(nDials + (nDials === 1 ? " mood set" : " moods set"));
+  document.getElementById("count").textContent = db ? (total ? parts.join(", ") + ", waiting for Claude" : "Nothing waiting") : "Read only";
+}
+document.getElementById("copy").onclick = async e => {
+  const b = e.currentTarget;
+  try { await navigator.clipboard.writeText("apply the vibe tweaks"); b.textContent = "Copied"; } catch { b.textContent = "Type: apply the vibe tweaks"; }
+  setTimeout(() => (b.textContent = "Copy “apply the vibe tweaks”"), 2500);
+};
+function notice(msg) { const n = document.getElementById("notice"); n.textContent = msg; n.hidden = !msg; }
+function route() {
+  const v = location.hash === "#ministers" ? "ministers" : "posts";
+  document.getElementById("view-posts").hidden = v !== "posts";
+  document.getElementById("view-ministers").hidden = v !== "ministers";
+  document.getElementById("tab-posts").toggleAttribute("aria-current", v === "posts"); if (v === "posts") document.getElementById("tab-posts").setAttribute("aria-current", "page");
+  document.getElementById("tab-ministers").toggleAttribute("aria-current", v === "ministers"); if (v === "ministers") document.getElementById("tab-ministers").setAttribute("aria-current", "page");
+  if (v !== "posts") closeSheet();
+}
+window.addEventListener("hashchange", route);
+
+async function boot() {
+  buildDeck(); buildGrid(); route(); summary();
+  const timeout = setTimeout(() => notice("The note store hasn't answered. Open this page on claude.ai, signed in, to leave notes."), 10000);
+  db = await claude.use("db");
+  if (!db) { clearTimeout(timeout); notice("Notes can't be saved in this view. Open the page on claude.ai, signed in."); summary(); return; }
+  claude.use("user").then(async u => { if (u) try { me = await u.id(); } catch {} }).catch(() => {});
+  const arr = v => (Array.isArray(v) ? v.filter(w => typeof w === "string" && w) : []);
+  db.collection("notes").onSnapshot(snap => {
+    clearTimeout(timeout); notice("");
+    snap.docs.forEach(d => { const v = d.data(); if (!v || dirty["n:" + d.id]) return; notes[d.id] = { good: arr(v.good), more: arr(v.more), less: arr(v.less), note: v.note || "", status: v.status || "", pr: v.pr }; });
+    POSTS.forEach(p => renderTags(p.id)); TARGETS.forEach(t => renderDial(t.post)); summary();
+    if (current && !document.activeElement.closest(".sheet")) openSheet(current);
+    const s = document.getElementById("saving"); if (s && current && !dirty["n:" + current]) { const n = notes[current]; if (n) s.textContent = statusText(n); }
+    const f = document.querySelector(".sheet fieldset"); if (f) f.disabled = false;
+  }, err => { clearTimeout(timeout); notice("Couldn't read saved notes (" + err.code + ")."); });
+  db.collection("dials").onSnapshot(snap => {
+    snap.docs.forEach(d => { const v = d.data(); if (!v || dirty["d:" + d.id]) return; dials[d.id] = { moves: Array.isArray(v.moves) ? v.moves.filter(m => m && m.word && LEVEL[m.level]) : [], note: v.note || "", status: v.status || "" }; });
+    document.querySelectorAll(".card fieldset").forEach(f => (f.disabled = false));
+    TARGETS.forEach(t => renderDial(t.post));
+  }, () => {});
+  db.collection("history").orderBy("at", "desc").limit(200).onSnapshot(snap => {
+    for (const k in history) delete history[k];
+    snap.docs.forEach(d => { const v = d.data(); if (v && v.post && !history[v.post]) history[v.post] = v; });
+    TARGETS.forEach(t => renderDial(t.post));
+  }, () => {});
+}
+boot();
+</script>
