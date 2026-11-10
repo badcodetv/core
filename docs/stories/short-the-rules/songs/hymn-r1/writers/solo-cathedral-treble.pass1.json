@@ -1,0 +1,13 @@
+{
+  "name": "solo-cathedral-treble",
+  "style": "Anglican cathedral evensong, unaccompanied-sounding solo for one boy treble (an eleven-year-old chorister, a child's unbroken voice) with pipe organ. Straight, vibrato-free, glassy tone, clipped English diction, each word sung with total sincerity. Organ on soft 8' stopped flutes and a quiet 16' pedal, long held chords, a slight swell for the third line only. Vast stone nave, long natural reverb. Grave, slow, 60 bpm, played utterly straight. Final chord resolves under the last word, then the echo decays to silence. Under 25 seconds.",
+  "exclude": "adult soprano, female vocals, woman singer, operatic vibrato, bel canto, pop, choir, backing vocals, vocal harmonies, layered vocals, drums, strings, synth, crowd",
+  "lyrics": "[Organ: two soft held chords]\n\n[Verse - solo boy treble alone, organ sustains beneath]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[organ swells a little]\nThere is room on all those islands,\n[organ softens back]\nBut you will sleep in a bin.\n\n[Organ resolves under the last word]\n[Stone reverb dies away]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 20,
+  "styleInfluence": 80,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": false
+}

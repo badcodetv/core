@@ -1,0 +1,17 @@
+{
+  "style": "Pre-electrical gramophone transfer, circa 1910, one shellac disc cut through a big recording horn. A Sunday-school class of about twenty young children, boys and girls together, all on the melody line with no harmony parts, every consonant crisp, pious and pleased with themselves. Accompaniment is a foot-pumped reed harmonium whose wind rises and sags with the treadles, so the pitch leans slightly flat when the pumping slows. Victorian chapel hymn in common metre, major key, brisk and upright at 92 bpm, delivered like a morning lesson in good behaviour. Thin, nasal, honky tone with nothing below the tenor range, mono, needle hiss, crackle and a faint turntable warble.",
+  "exclude": "drums, percussion, bass guitar, low end, sub bass, stereo, modern mix, hall reverb, synthesizer, pipe organ, piano, strings, adult singers, soloist, crowd noise, autotune, pop",
+  "lyrics": "[Intro: harmonium, three plain chords, needle hiss]\n\n[Hymn verse: the class in unison, steady and proper]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Closing: children draw out \"bin\" into a two-chord Amen, reeds sigh away]\n\n[Run-out groove: no music, needle crackle only]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    40
+  ],
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "The Rules hymn r1-edwardian-sunday-school-78",
+  "mode": "custom",
+  "workspace": null
+}

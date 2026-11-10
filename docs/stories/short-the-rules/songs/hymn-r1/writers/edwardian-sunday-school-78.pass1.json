@@ -1,0 +1,13 @@
+{
+  "name": "edwardian-sunday-school-78",
+  "style": "1910 acoustic-horn gramophone record, shellac 78 rpm, mono. Edwardian Sunday-school children's choir, about twenty boys and girls singing in strict unison, clipped precise Edwardian English diction, bright and dutiful. Pedal harmonium, reedy and breathy, pumped slightly unevenly so the chords swell and sag. Brisk upright Victorian hymn tune, common metre, major key, 92 bpm, sung with cheerful moral certainty like a lesson in good manners. Boxy mid-range only, roughly 250 Hz to 2.5 kHz, no low end, small reflective room, surface crackle and hiss, gentle speed wobble.",
+  "exclude": "drums, percussion, bass, sub bass, modern production, stereo, reverb wash, synth, pipe organ, piano, strings, adult vocals, solo singer, crowd, cheering, autotune, pop",
+  "lyrics": "[Intro: three slow harmonium chords, record crackle]\n\n[Verse: children's choir in unison, brisk and upright]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Amen cadence on the last word, harmonium holds then stops]\n\n[Outro: silence, only the crackle of the run-out groove]\n\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 35,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false
+}

@@ -1,0 +1,17 @@
+{
+  "style": "English Anglican choral, evensong anthem for solo boy treble and pipe organ. The singer is a child: a single eleven-year-old cathedral chorister, unbroken voice, pure head tone, crystalline and clear, sung dead straight with no vibrato, crisp Received Pronunciation consonants, solemn and wholly sincere. Organ underneath plays quiet flute stops in long sustained chords with a soft pedal note, lifting barely on line three. Huge stone cathedral acoustic, several seconds of natural reverberation. Grave tempo, 60 bpm, devotional and played completely straight. Ends on a soft cadence, then only the echo of the stone, then silence. About 20 seconds.",
+  "exclude": "adult soprano, female vocals, woman, operatic vibrato, bel canto, pop, choir, backing vocals, harmonies, stacked vocals, crowd, drums, percussion, strings, synth, guitar",
+  "lyrics": "[Intro: quiet organ chord, held]\n\n[Solo treble, one boy only, organ sustaining]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[organ opens slightly]\nThere is room on all those islands,\n[organ draws back to a whisper]\nBut you will sleep in a bin.\n\n[Organ cadence settles on 'bin', then rings out in the nave]\n[Silence]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    15
+  ],
+  "styleInfluence": 85,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "The Rules hymn r1-solo-cathedral-treble",
+  "mode": "custom",
+  "workspace": null
+}

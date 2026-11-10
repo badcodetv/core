@@ -1,0 +1,17 @@
+{
+  "style": "Lone girl, age seven, voice untrained and small, standing up to sing by herself for the first time; airy, close to the microphone, unsure where each line starts, reaching flat for the top notes but keeping hold of the melody. One clear lead singer, nobody joins her. Behind her a little chamber organ, gedackt flute pipe only, hushed, plain hymn harmony in four parts that waits on her and breathes with her pauses, rubato. Slow hymn in three, classroom service, captured raw and dry like a home video, honest and unproduced.",
+  "exclude": "choir, children choir, group vocals, backing vocals, vocal harmonies, layered vocals, singalong, polished vocals, autotune, heavy reverb, hall reverb, drums, percussion, strings, piano, bass",
+  "lyrics": "[Verse - Solo Lead Vocal Only, small girl, organ hushed beneath her]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[she falters a little, organ holds and waits]\nThere is room on all those islands,\nBut you will sleep in a bin.\n[End - organ releases after her last word, then nothing]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": [
+    30
+  ],
+  "styleInfluence": 80,
+  "vocalGender": "female",
+  "durationSec": 20,
+  "maxMode": false,
+  "title": "The Rules hymn r1-one-small-girl-nervous",
+  "mode": "custom",
+  "workspace": null
+}

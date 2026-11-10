@@ -1,0 +1,54 @@
+[
+  {
+    "name": "whole-school-upright-piano",
+    "style": "A wet Tuesday morning assembly in a 1980s English primary school, everyone cross-legged on a polished wooden hall floor. The whole school sings together from the hymn book on the overhead projector: two hundred children aged five to eleven, all on the same melody, not a choir, untrained, dragging a little behind the piano, slightly flat, a few loud boys at the front shouting it, little ones mumbling the words. One teacher at a battered, out-of-tune upright piano, playing heavy thumping block chords, steady walking pace around 80 bpm, a plain four-line hymn tune in common metre. Heard from the back of the hall: boxy wooden room, PE apparatus on the walls, a chair scrapes, a cough, cassette-recorder warmth. Two bars of piano, one verse, last word held on a single piano chord, then dead silence.",
+    "exclude": "trained choir, harmony parts, adult vocals, soloist, organ, strings, drums, bass, synth, pop production, autotune, cathedral reverb, gospel, fade out, second verse, instrumental outro",
+    "lyrics": "[Intro: two bars of thumping upright piano chords, teacher alone]\n\n[Verse: whole school in unison, ragged, a beat behind the piano]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Final chord: one piano chord held under the last word, then stop dead]\n\n[End]",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 30,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 22,
+    "maxMode": false
+  },
+  {
+    "name": "solo-cathedral-treble",
+    "style": "English Anglican choral, evensong anthem for solo boy treble and pipe organ. The singer is a child: a single eleven-year-old cathedral chorister, unbroken voice, pure head tone, crystalline and clear, sung dead straight with no vibrato, crisp Received Pronunciation consonants, solemn and wholly sincere. Organ underneath plays quiet flute stops in long sustained chords with a soft pedal note, lifting barely on line three. Huge stone cathedral acoustic, several seconds of natural reverberation. Grave tempo, 60 bpm, devotional and played completely straight. Ends on a soft cadence, then only the echo of the stone, then silence. About 20 seconds.",
+    "exclude": "adult soprano, female vocals, woman, operatic vibrato, bel canto, pop, choir, backing vocals, harmonies, stacked vocals, crowd, drums, percussion, strings, synth, guitar",
+    "lyrics": "[Intro: quiet organ chord, held]\n\n[Solo treble, one boy only, organ sustaining]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[organ opens slightly]\nThere is room on all those islands,\n[organ draws back to a whisper]\nBut you will sleep in a bin.\n\n[Organ cadence settles on 'bin', then rings out in the nave]\n[Silence]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 15,
+    "styleInfluence": 85,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "one-small-girl-nervous",
+    "style": "Lone girl, age seven, voice untrained and small, standing up to sing by herself for the first time; airy, close to the microphone, unsure where each line starts, reaching flat for the top notes but keeping hold of the melody. One clear lead singer, nobody joins her. Behind her a little chamber organ, gedackt flute pipe only, hushed, plain hymn harmony in four parts that waits on her and breathes with her pauses, rubato. Slow hymn in three, classroom service, captured raw and dry like a home video, honest and unproduced.",
+    "exclude": "choir, children choir, group vocals, backing vocals, vocal harmonies, layered vocals, singalong, polished vocals, autotune, heavy reverb, hall reverb, drums, percussion, strings, piano, bass",
+    "lyrics": "[Verse - Solo Lead Vocal Only, small girl, organ hushed beneath her]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[she falters a little, organ holds and waits]\nThere is room on all those islands,\nBut you will sleep in a bin.\n[End - organ releases after her last word, then nothing]",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 30,
+    "styleInfluence": 80,
+    "vocalGender": "female",
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "edwardian-sunday-school-78",
+    "style": "Pre-electrical gramophone transfer, circa 1910, one shellac disc cut through a big recording horn. A Sunday-school class of about twenty young children, boys and girls together, all on the melody line with no harmony parts, every consonant crisp, pious and pleased with themselves. Accompaniment is a foot-pumped reed harmonium whose wind rises and sags with the treadles, so the pitch leans slightly flat when the pumping slows. Victorian chapel hymn in common metre, major key, brisk and upright at 92 bpm, delivered like a morning lesson in good behaviour. Thin, nasal, honky tone with nothing below the tenor range, mono, needle hiss, crackle and a faint turntable warble.",
+    "exclude": "drums, percussion, bass guitar, low end, sub bass, stereo, modern mix, hall reverb, synthesizer, pipe organ, piano, strings, adult singers, soloist, crowd noise, autotune, pop",
+    "lyrics": "[Intro: harmonium, three plain chords, needle hiss]\n\n[Hymn verse: the class in unison, steady and proper]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Closing: children draw out \"bin\" into a two-chord Amen, reeds sigh away]\n\n[Run-out groove: no music, needle crackle only]\n\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 40,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  }
+]

@@ -51,6 +51,7 @@ ID: `short-<slug>` (kebab case, e.g. `short-the-rules`). Ask only what you can't
 Invoke the `new-scene` skill on `docs/stories/short-<slug>/scenes/<slug>/`. Its gates stand (Kai approves the brief,
 picks the stills, OKs words and spend). What is different for a short:
 
+- **A short is ONE scene** (Kai, 2026-11-10: *"we shouldn't tinker out scenes, we should call it one big scene, and let's get the look and feel for each of the cuts"*). Never split a short into scenes; its beats are its cuts, and the mood board finds the look and feel of each cut.
 - **Length is the joke.** Brief to three beats or fewer, timed in seconds; cut the fat (Jack: "jokes are funnier when
   you trim the fat").
 - **Look and sound are found per short**, inside stage 1 or 2: `story-style` when the short wants an interview,

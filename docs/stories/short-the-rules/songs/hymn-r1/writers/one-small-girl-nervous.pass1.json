@@ -1,0 +1,13 @@
+{
+  "name": "one-small-girl-nervous",
+  "style": "Solo child vocal: one shy seven-year-old girl singing alone, untrained, breathy, mouth close to the mic, hesitant on each entry, drifting flat on the high notes yet holding the tune bravely. Quiet chamber organ on a single soft stopped-flute stop, plain four-part hymn chords trailing behind her, free rubato, slowing when she slows. Primary school service in a small hall, dry close-miked fly-on-the-wall recording, unpolished. Slow 3/4. Organ lets go after her final word, then silence.",
+  "exclude": "choir, children's choir, backing vocals, vocal harmonies, polished vocals, autotune, reverb, cathedral reverb, drums, percussion, strings, piano, bass",
+  "lyrics": "[Verse: the girl alone, organ barely there, following her]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[she slows, the organ waits for her]\nThere is room on all those islands,\nBut you will sleep in a bin.\n[End: organ chord lifts off after her last word, nothing after]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 30,
+  "styleInfluence": 80,
+  "vocalGender": "female",
+  "durationSec": 20,
+  "maxMode": false
+}

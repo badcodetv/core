@@ -78,3 +78,11 @@ crown triangles removed). The procedure is now in `docs/brand/README.md`, "Putti
 
 Kai voted This on `ST3-a-a` (and `ST1-a`): *"I've, yeah, definitely picked this style."* **The opening still is ST3-a-a**;
 the mask reference (Jack's, `docs/brand/balaclava/mask-reference.jpg`) is accepted. Dump: `feedback/moodboard-r3/`.
+
+## 2026-11-10: round 4, every other cut
+
+Kai: *"because it's a short… we should call it one big scene, and let's get the look and feel for each of the cuts"*
+(now a rule in the `new-short` skill). Made: island (IS4), window (WI4-b, after an edit from ST3 returned the opening
+unchanged), tear (TE4), pen (PE4; the first try had the triangle pointing left at 3 o'clock, fixed with the logo as
+reference → PE4-b-a). Music: Kai, *"a combination of school hymn plus grimy, dystopian… let me hear what we've got
+first before we start to iterate on the sound."*

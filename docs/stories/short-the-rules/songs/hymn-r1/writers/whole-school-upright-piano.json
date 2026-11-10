@@ -1,0 +1,13 @@
+{
+  "name": "whole-school-upright-piano",
+  "style": "A wet Tuesday morning assembly in a 1980s English primary school, everyone cross-legged on a polished wooden hall floor. The whole school sings together from the hymn book on the overhead projector: two hundred children aged five to eleven, all on the same melody, not a choir, untrained, dragging a little behind the piano, slightly flat, a few loud boys at the front shouting it, little ones mumbling the words. One teacher at a battered, out-of-tune upright piano, playing heavy thumping block chords, steady walking pace around 80 bpm, a plain four-line hymn tune in common metre. Heard from the back of the hall: boxy wooden room, PE apparatus on the walls, a chair scrapes, a cough, cassette-recorder warmth. Two bars of piano, one verse, last word held on a single piano chord, then dead silence.",
+  "exclude": "trained choir, harmony parts, adult vocals, soloist, organ, strings, drums, bass, synth, pop production, autotune, cathedral reverb, gospel, fade out, second verse, instrumental outro",
+  "lyrics": "[Intro: two bars of thumping upright piano chords, teacher alone]\n\n[Verse: whole school in unison, ragged, a beat behind the piano]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Final chord: one piano chord held under the last word, then stop dead]\n\n[End]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 30,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 22,
+  "maxMode": false
+}

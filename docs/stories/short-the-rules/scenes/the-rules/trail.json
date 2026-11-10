@@ -25,5 +25,13 @@
   ],
   "feedback": "feedback/moodboard-r3",
   "feedback_docs": 2
+ },
+ {
+  "at": "2026-11-10T19:02:30+00:00",
+  "stage": "moodboard",
+  "round": 4,
+  "url": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
+  "what": "Round 4: island, window, tear, pen in the basement look",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-rules/scenes/the-rules <out.html>"
  }
 ]
