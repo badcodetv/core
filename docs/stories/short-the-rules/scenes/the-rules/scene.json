@@ -38,7 +38,10 @@
     }
   ],
   "video": {
-    "aspect": "9:16"
+    "model": "Omni 1.2 Flash",
+    "aspect": "9:16",
+    "mode": "Frames",
+    "duration": 6
   },
   "looks": [
     "modern: the gang in today's clothes, today's Britain (looks within it found on the mood board)"
@@ -47,7 +50,8 @@
   "moodboard_intro": "Round 4: the look and feel of every other cut, in the basement look Kai picked. The island is a deliberate sunny break. Masks follow Jack's reference; on the pen close-up the first try pointed the triangle left, so it was fixed against the logo (PE4-b-a is the closest). Vote This / Maybe / No per cut and leave notes.",
   "boards": {
     "moodboard": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
-    "timeline": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E"
+    "timeline": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E",
+    "storyboard": "https://claude.ai/artifact/BFVqeT9nqpTH8d6R3cCUuz"
   },
   "board_round": 4,
   "picked": [

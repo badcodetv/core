@@ -1,0 +1,151 @@
+{
+ "sequence_notes": [
+  {
+   "rule": "Lock Omni's camera; Premiere does any push.",
+   "why": "hybrid method",
+   "source": "docs/video-fx/hybrid-method.md"
+  },
+  {
+   "rule": "Masks are the logo: one red triangle inside the ring, upper right, pointing down. Check every clip's masks zoomed.",
+   "why": "Kai, 2026-11-10",
+   "source": "docs/brand/README.md"
+  },
+  {
+   "rule": "No readable text from Omni; THE RULES label is already in the still, overlays are ffmpeg/Premiere.",
+   "why": "Words are ffmpeg",
+   "source": "scene-animation"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "job": "Establish the stack and the gang, still and solemn under the hymn: the calm before.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Fluorescent stutter",
+     "idea": "Everything holds; one strip light flickers, the gang breathe and shift their weight, one tilts his head further up the stack.",
+     "lanes": "Omni: tiny gang motion + the stuttering tube. Premiere: slow push up the stack over 11 s.",
+     "veo_prompt": "The camera does not move. The five masked figures stand still at the foot of the towering paper stack, looking up; they breathe and shift their weight slightly, and one slowly tilts his head further back to look higher. Overhead one fluorescent tube flickers and stutters, the others hold steady. The camera does not move.",
+     "cut": "whole",
+     "seconds": 6,
+     "risk": "low"
+    },
+    {
+     "id": "b",
+     "label": "A sheet drifts down",
+     "idea": "A single loose sheet slides off the stack and leaves frame; the gang's heads follow it.",
+     "lanes": "Omni: one sheet released + heads turning. Premiere: hold.",
+     "veo_prompt": "The camera does not move. At the top of the paper stack a single loose sheet slides off the edge and flutters out of the frame; the five masked figures turn their heads together to follow it. The fluorescent light hums steady. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "whole",
+     "seconds": 6,
+     "risk": "medium: falling paper"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "job": "The joke cut: the profits on holiday. Sunny, lazy, smug.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Hammock sway",
+     "idea": "The hammock rocks gently with the cabinet in it, palm fronds move, the sea laps.",
+     "lanes": "Omni: hammock sway + palm + water. Premiere: none.",
+     "veo_prompt": "The camera does not move. The striped hammock rocks gently back and forth with the grey filing cabinet lying in it, the palm fronds sway in a warm breeze, and small waves lap the white sand. Bright midday sun. The camera does not move.",
+     "cut": "whole",
+     "seconds": 4,
+     "risk": "low"
+    },
+    {
+     "id": "b",
+     "label": "The drawer sighs",
+     "idea": "As the hammock rocks, the top drawer slides open a little further, as if the cabinet is stretching.",
+     "lanes": "Omni: sway + drawer opening. Premiere: none.",
+     "veo_prompt": "The camera does not move. The striped hammock rocks gently, and the filing cabinet's top drawer slowly slides open a little further, contented, as if stretching in the sun; the palm fronds sway, the sea laps the sand. The camera does not move.",
+     "cut": "whole",
+     "seconds": 4,
+     "risk": "low"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "job": "Land 'you will sleep in a bin': still, quiet, dignified; the chord dies.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Almost still",
+     "idea": "Rain drizzles past the window, one sleeper shifts under the cardboard, a bin lid edge trembles in the wind.",
+     "lanes": "Omni: drizzle + one sleeper turning. Premiere: very slow push toward the bin.",
+     "veo_prompt": "The camera does not move. Light drizzle falls past the barred basement window onto the wet pavement; across the street one person asleep among the bins pulls their sleeping bag tighter and settles; everything else is still. Sodium streetlight. The camera does not move.",
+     "cut": "whole",
+     "seconds": 4,
+     "risk": "low"
+    },
+    {
+     "id": "b",
+     "label": "A passer-by's legs",
+     "idea": "A pair of smart shoes and suit trousers walks briskly across the window, past the sleepers, without slowing.",
+     "lanes": "Omni: legs crossing + drizzle. Premiere: none.",
+     "veo_prompt": "The camera does not move. Light drizzle falls; a pair of legs in suit trousers and polished shoes walks briskly across the pavement right past the barred window, passing the people asleep among the bins without slowing, and out of frame. The camera does not move.",
+     "cut": "whole",
+     "seconds": 4,
+     "risk": "medium: legs/feet drift"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "job": "The chaos refrain: the gang go mental tearing up the rules to the Amen drop.",
+   "options": [
+    {
+     "id": "a",
+     "label": "Full riot of paper",
+     "idea": "All five rip sheets apart and fling them; the stack topples into a blizzard of torn paper, one kicks a box.",
+     "lanes": "Omni: tearing + paper snow (paper leaves frame fast). Premiere: hard cuts on the drop, maybe two clips chained.",
+     "veo_prompt": "The camera does not move. The masked gang go wild: they rip handfuls of paper from the towering stack and tear them in half, fling them into the air, one kicks the cardboard box across the floor, another shoves the stack so the top of it slides and collapses; torn paper whirls through the air like a blizzard under the flickering fluorescent lights. Fast, frantic, joyful energy. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "whole",
+     "seconds": 8,
+     "risk": "high: 5 movers, paper physics"
+    },
+    {
+     "id": "b",
+     "label": "Two in close, the rest a blur",
+     "idea": "Closer feel: two gang members in front tear pages furiously at the camera, the others a blur of flying paper behind.",
+     "lanes": "Omni: two foreground tearers + paper behind. Premiere: shake + cuts on the beat.",
+     "veo_prompt": "The camera does not move. Two masked gang members in the foreground tear sheets of paper in half again and again, furious and fast, throwing the pieces toward the camera, while behind them the others are a blur of flying torn paper under flickering fluorescent light. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move.",
+     "cut": "whole",
+     "seconds": 6,
+     "risk": "medium"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "job": "Silence after the chaos: the offer. 'Your turn.'",
+   "options": [
+    {
+     "id": "a",
+     "label": "Hold out, push the pen",
+     "idea": "Torn paper settles; he pushes the blank page and pen a little closer to camera and holds.",
+     "lanes": "Omni: paper settling + small arm move. Premiere: hold, logo after.",
+     "veo_prompt": "The camera does not move. Torn paper drifts slowly down and settles around him; the navy-masked figure steps half a pace forward and pushes the blank page and the pen a little closer toward the camera, then holds perfectly still, offering them. The camera does not move.",
+     "cut": "whole",
+     "seconds": 4,
+     "risk": "low; check the mask"
+    },
+    {
+     "id": "b",
+     "label": "Click of the pen",
+     "idea": "He clicks the biro once, offers it; the only sound is the click.",
+     "lanes": "Omni: thumb clicks pen + offer. Premiere: click SFX.",
+     "veo_prompt": "The camera does not move. The navy-masked figure clicks the biro once with his gloved thumb, then holds the pen and the blank page out toward the camera and stays still, offering them. A few torn scraps drift down behind him. The camera does not move.",
+     "cut": "whole",
+     "seconds": 4,
+     "risk": "low; check the mask"
+    }
+   ]
+  }
+ ]
+}

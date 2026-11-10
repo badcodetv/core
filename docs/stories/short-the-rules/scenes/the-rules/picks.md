@@ -114,3 +114,10 @@ the drop kicks in."* → the Amen jungle take, https://suno.com/song/5b008987-30
 Tooling fault seen all day: `suno.mts grid` clicks Create, then waits for the new takes in its list and never sees
 them (`takes` returns [] while the workspace shows the songs), so each run hangs and the next prompt never starts.
 Worked round by ending each run by hand; the songs were made. Owed: a fix to the takes reader.
+
+## 2026-11-10: animate; the window gets bins
+
+Kai: *"Could we please then animate some of these stills? … the ballet guys going mental, ripping up all the rules is
+very much part of this. I think we need a bit more people sleeping in a bin, next to a bin, just to make that line
+land."* New window stills WI6-a-a/b (sleepers among council bins, one in an open bin). Animation options in
+`animation-options.json`, on the storyboard page; video settings Omni 1.2 Flash, 9:16, Frames.
