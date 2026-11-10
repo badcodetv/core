@@ -18,9 +18,6 @@ working? If everything was working, then excellent, the rules are good. But it's
 something is wrong about the rules. So full permission granted to go and look at the rules and change them."*
 
 **Good rules stay:** "don't murder people" is not in question. **Rules to challenge:** the ones that shield the people who wrote them. Kai's example (2026-11-10, replacing a corporate-liability one): **tax havens**, a company booking its profits on an island that flies our flag and paying little or no tax. Wording ⬜ checked before it goes on screen (`scenes/the-rules/picks.md`).
-shield the people who wrote them (Kai's example is the corporate one; wording ⬜ checked before it
-goes on screen: limited liability and the company as a separate legal person are real, his phrasing
-is not quite the law).
 
 **The real target:** deference. Working-class people hand their say over the rules to credentialed
 establishment figures, and it isn't working. A challenge to the rule-makers, and permission to the

@@ -20,3 +20,6 @@ by `marketing-researcher` before it goes on screen: the Overseas Territories and
 tax (the UK keeps defence and foreign affairs and has legislated over them before, e.g. company-ownership
 registers); Bermuda brought in a 15% tax for big multinationals from 2025 under the global minimum, so "no tax"
 is no longer true everywhere for the biggest firms. "Little or no tax" and "flies our flag" are the safer shapes.
+
+Kai, same day: *"that's a good rule that we could then look out the window and see lots of homeless people."*
+The window beat pays off the rule on screen: the rule says the tax doesn't have to be paid, the window shows what it would have paid for.
