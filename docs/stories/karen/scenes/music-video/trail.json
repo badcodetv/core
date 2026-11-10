@@ -55,5 +55,13 @@
   "decided": [
    "I think we've got a final cut. I've changed some things in Premiere, but let's call this done."
   ]
+ },
+ {
+  "at": "2026-11-10T13:28:57+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Final-cut page rebuilt from the repo: fixes the crash that left the timeline empty (plan stored as a sentence); now shows everyone's notes signed, Jack's cinema player and the full-quality stream",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline"
  }
 ]
