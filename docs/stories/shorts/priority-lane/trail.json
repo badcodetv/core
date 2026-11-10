@@ -17,5 +17,16 @@
   "url": "https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa",
   "what": "clean-room stills round 1: 12 stills, 4 shots",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/shorts/priority-lane design/2026-11-10-shorts-priority-lane-moodboard.html"
+ },
+ {
+  "at": "2026-11-10T15:29:19+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "what": "round 1 votes read",
+  "decided": [
+   "Jack voted This: OUT1-c (outside), AMB1-a (ambulance), REP1-a (reporter), MIN1-b (minister). No notes."
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 4
  }
 ]
