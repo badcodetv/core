@@ -29,6 +29,16 @@ scripts/drive/drive.sh pull   karen-music --go # Drive -> this machine
   Details: `localmap.py`; test: `python3 scripts/drive/test_localmap.py`.
 - ⚠ If two people edit the same `.prproj` between syncs, the newer one wins and the other's changes are lost. Push when you finish a session, pull before you start one.
 - **Fixed 2026-11-10:** `status` used to stop after the push side when that side had nothing to copy, so files waiting on Drive were never listed. It now always shows both sides.
+- **Agreed cut only (Jack, 2026-11-10):** for a story with a list in `agreed/<story>.list`, upload only the agreed
+  cut, not the whole folder: `scripts/drive/push-agreed.sh <story>` (dry run) then `--go`. The list is the files the
+  agreed Premiere sequence plays (from its `.bridge/state-<sequence>.json` snapshot) plus the `.prproj` and the
+  timeline's `edl.json` + `preview.mp4`, relative to the story's folder. Old cuts, old renders and unused clips stay
+  off Drive, so the project's other sequences show offline media on the other machine: that is the agreed trade.
+  `drive.sh status` still counts the whole folder, so for these stories its big "would PUSH" number is expected.
+  Lists so far: bank-robbery-music (`Balaclava Gang 9`), bank-robbery-story (`cut 10` + `short - cut 7g` + the
+  cut 10 render), camping-music (`camping song 2 beat 9`), camping-story (the 9 `new clips` beat 9 borrows).
+  Beat 9 also plays `animation/badcode logo designs/draft 1/4.mp4`, outside every story: it is on Drive in the
+  Camping Music folder under the same path, and Premiere asks for it once on the other machine.
 - **Baton:** Kai and Jack agree out loud who holds each story. Whoever holds it pushes when they hand it over; the next holder pulls before they open the project. The tool has no lock and doesn't need one.
 
 ## Setting it up on a machine (Kai, Jack, Tom)

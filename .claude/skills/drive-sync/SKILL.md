@@ -74,6 +74,16 @@ the row (key = a short story name such as `bank-robbery-music`; ID = the end of 
    and any `_local/` folder, so the other machine remakes a preview from the edl (its scene's `trail.json`
    `rebuild`). A new script that writes a look-only video names it `preview…` or puts it in `_local/`.
 
+## Agreed cut only (Jack, 2026-11-10)
+
+A story with a list in `scripts/drive/agreed/<story>.list` is uploaded as its **agreed cut only**, never the
+whole folder. "Push the agreed cut for <story>", "carry on uploading to Drive", "how are the Drive uploads":
+`scripts/drive/push-agreed.sh <story>` (dry run: N listed, M to push), then `--go`, in the background; it ends
+with copied / errors / left. Do NOT answer "push <story>" for such a story with `drive.sh push`: that sends
+thousands of old-cut files. Ask which they meant if unsure. A new agreed cut means a new list: build it from
+the sequence's `.bridge/state-<sequence>.json` (jq line in the script's header) and commit it. Details and the
+current lists: `scripts/drive/README.md`, "Agreed cut only".
+
 ## The baton
 
 Kai and Jack agree out loud who holds each story. There is no lock in the tool, and none should be built.
