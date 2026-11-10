@@ -132,7 +132,8 @@
     "at": "2026-11-10 19:05",
     "state": "in sync",
     "why": "render cut/check-story-56-122.mp4: audio vs song +21 ms constant across intro end, chorus, banks and after outbreak (decoder delay); frames OK"
-   }
+   },
+   "media": "12 clips repointed (changeMediaFilePath) from video/1080/ (ffmpeg scale-up of Flow's 720p) to video/1080up/ (Flow's own 1080p upscale, scripts/scene/upscale.mts), 10 Nov; render cut/r1-1080up-check.mp4: timing identical, ~3x the fine detail"
   }
  }
 }

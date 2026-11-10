@@ -496,3 +496,9 @@ beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
   saved. A different portrait image of the same character went in first time. Cause unknown (a filter on that image
   is a guess, not shown).
 - Scratch helpers: `sm-fix-chars.mjs`, `sm-baker-portrait.mjs`, `sm-rename.mjs`, `sm-verify.mjs` (tabs per Character id).
+
+## 2026-11-10: the 1080p upscale download is scriptable
+
+- `scripts/scene/upscale.mts <scene-dir>` downloads every video tile in a scene's project as `1080p Upscaled`
+  (More options → Download → the `1080p` item). Free on our plan; each took a few seconds, not minutes. Files land in
+  tile order (newest first), so name them by matching a frame to the 720p clips. Flow trims 2 frames (190 vs 192).

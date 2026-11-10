@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/inbox-1080/raw-002.mp4",
+ "made": "2026-11-10T19:04:06+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/upscale.mts",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p10-FC1-a2.mp4",
+ "why": "Flow 'Download → 1080p Upscaled' of pv-p10-FC1-a2.mp4 (free); matched by frame"
+}

@@ -2130,3 +2130,5 @@ appends, or check for both names).
   end so everything after shifts, then lift the old nest and the spacer and overwrite the nest again at its new length.
 - ⚠️ `await` inside a `withTransaction` callback (`ca => ca.addAction(x(await y))`) is a syntax error ("missing ) after
   argument list"): resolve the value first.
+- ✅ **`ClipProjectItem.changeMediaFilePath(newPath, true)` swaps the media under a clip in place** (returns true): every
+  use on every timeline follows, in/out points and edits untouched. Used to swap ffmpeg scale-ups for Flow's 1080p upscales.
