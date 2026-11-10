@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE4-b-a.jpg",
+ "made": "2026-11-10T19:56:31+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "flow",
+ "tool": "copy",
+ "parent": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE5-a-a.jpg",
+ "why": "Same file as PE5-a-a (renamed onto the round-4 board)"
+}
