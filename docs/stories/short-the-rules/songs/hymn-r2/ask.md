@@ -1,0 +1,2 @@
+Kai, 2026-11-10 (before hearing round 1): "I'm just thinking that it feels like a combination of school hymn plus grimy, dystopian, I think we could find something quite cool, but let me hear what we've got first before we start to iterate on the sound."
+Kai, 2026-11-10 (after hearing the round 1 whole-school take): "So it feels like possibly can we combine this with like a grind beat so it's like the comparison is odd so it's like yeah I quite I think the piano is slightly jarring but I like the school children singing it in a kind of blase hilarious way."

@@ -1,0 +1,13 @@
+{
+  "name": "playground-clapping-drill",
+  "style": "UK drill, 142 bpm, cold and menacing, dark London drill instrumental with sparse broken skippy hi-hats, kick and snare at half the hat rate, gliding sliding 808 sub that bends between notes, an eerie two-note minor bell motif looping over and over, dry low-end-heavy mix. On top, NOT a rapper: a small gang of real ten-year-old British schoolkids, 5 or 6 of them in unison, unpolished and imperfect, chanting a hand-clapping playground rhyme in a sing-song lilt, half-spoken, bored and deadpan with a stifled giggle, flat South London kid accents. Real palm-on-palm hand claps in the clapping-game pattern and a skipping rope slapping tarmac on every beat, recorded outdoors close and dry. The kids sound like they are in a different, sunnier song than the beat. Four lines, then the beat cuts dead.",
+  "exclude": "piano, organ, harmonium, adult vocals, male rapper, choir, church reverb, hall reverb, strings swell, autotune, melodic R&B hook, fade out",
+  "lyrics": "[Intro: drill beat drops in, one bar, rope slapping tarmac]\n\n[Playground clapping rhyme, kids in unison, sing-song, half-chanted]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[Clap clap, a giggle swallowed]\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Beat stops dead]\n[End]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 55,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 15,
+  "maxMode": false
+}

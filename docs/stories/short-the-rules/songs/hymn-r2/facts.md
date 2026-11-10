@@ -1,0 +1,4 @@
+- Round 1 (hymn-r1) ran four ideas: a whole primary school singing with an upright piano; a solo cathedral boy treble with organ; one nervous seven-year-old girl alone with a small organ; an Edwardian Sunday-school class on a 1910 gramophone record with harmonium.
+- Kai heard the whole-school take: he likes the school children singing it "in a kind of blase hilarious way"; the piano is "slightly jarring".
+- Kai's "grind beat" is read as GRIME (UK grime/drill-adjacent beat, matching his earlier "grimy, dystopian"); not confirmed by him.
+- The short is 20 seconds maximum, portrait; the four lines are the whole song; after the last line the picture goes silent for the window and the tear.

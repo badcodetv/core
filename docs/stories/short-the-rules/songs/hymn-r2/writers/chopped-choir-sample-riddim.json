@@ -1,0 +1,13 @@
+{
+  "name": "chopped-choir-sample-riddim",
+  "style": "bedroom grime instrumental 140 bpm built around a sampled children's choir, found sound from a crackly 1950s school assembly record, kids' voices pitched up a semitone and sliced into chops, prim old-fashioned English diction, tinny mono and far away, raw square-wave sub stabs, cheap string-preset stab that stutters, dry eski clicks on the off-beat, clap on two and four, reload rewind spinback and gunshot hit as percussion, beat cuts out leaving only the dusty choir loop, cold sparse dystopian",
+  "exclude": "piano, organ, adult vocals, rap, MC, spoken word, autotune, solo singer, live band, warm pads",
+  "lyrics": "[Intro: vinyl crackle, choir sample alone, chopped]\n\n[Verse: riddim drops in, square bass stabs, string stab stutters, each line end cut short by the chop]\nWe can't afford a bed for you,\nThe purse is far too thin;\n\n[Break: everything drops out except the scratchy choir sample]\nThere is room on all those islands,\n\n[Rewind spinback, gunshot hit, riddim slams back]\nBut you will sleep in a bin.\n\n[End: hard stop, silence]",
+  "model": "v6",
+  "variety": "high",
+  "weirdness": 62,
+  "styleInfluence": 72,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": false
+}

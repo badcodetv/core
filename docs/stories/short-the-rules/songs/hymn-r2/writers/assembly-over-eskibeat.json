@@ -1,0 +1,13 @@
+{
+  "name": "assembly-over-eskibeat",
+  "style": "early-2000s eskibeat grime instrumental, 140 BPM, cold and half-empty; hollow square-wave bass in short clipped stabs, 8-bit ping-pong eski clicks on the off-beats, one dry clap on 2 and 4, a single frosty plinking synth stab looping, long silences between hits; vocals: a whole primary-school assembly, two hundred kids aged 7 to 11 in unison, flat bored London accents, dutiful and blase, plodding in slow hymn metre and ignoring the beat; big echoey school-hall reverb on the children only, beat bone-dry; stops dead on the last word",
+  "exclude": "piano, organ, adult vocals, rap, pads, solo singer, strings",
+  "lyrics": "[Intro: eskibeat alone, one bar]\n\n[Verse: whole school in unison, slow hymn time, bored, off the beat]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[End: beat cuts dead, no tail]",
+  "model": "v6",
+  "variety": "off",
+  "weirdness": 55,
+  "styleInfluence": 70,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": true
+}

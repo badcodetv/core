@@ -1,0 +1,54 @@
+[
+  {
+    "name": "assembly-over-eskibeat",
+    "style": "early-2000s eskibeat grime instrumental, 140 BPM, cold and half-empty; hollow square-wave bass in short clipped stabs, 8-bit ping-pong eski clicks on the off-beats, one dry clap on 2 and 4, a single frosty plinking synth stab looping, long silences between hits; vocals: a whole primary-school assembly, two hundred kids aged 7 to 11 in unison, flat bored London accents, dutiful and blase, plodding in slow hymn metre and ignoring the beat; big echoey school-hall reverb on the children only, beat bone-dry; stops dead on the last word",
+    "exclude": "piano, organ, adult vocals, rap, pads, solo singer, strings",
+    "lyrics": "[Intro: eskibeat alone, one bar]\n\n[Verse: whole school in unison, slow hymn time, bored, off the beat]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[End: beat cuts dead, no tail]",
+    "model": "v6",
+    "variety": "off",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": true
+  },
+  {
+    "name": "playground-clapping-drill",
+    "style": "UK drill, 142 bpm, cold and menacing, dark London drill instrumental with sparse broken skippy hi-hats, kick and snare at half the hat rate, gliding sliding 808 sub that bends between notes, an eerie two-note minor bell motif looping over and over, dry low-end-heavy mix. On top, NOT a rapper: a small gang of real ten-year-old British schoolkids, 5 or 6 of them in unison, unpolished and imperfect, chanting a hand-clapping playground rhyme in a sing-song lilt, half-spoken, bored and deadpan with a stifled giggle, flat South London kid accents. Real palm-on-palm hand claps in the clapping-game pattern and a skipping rope slapping tarmac on every beat, recorded outdoors close and dry. The kids sound like they are in a different, sunnier song than the beat. Four lines, then the beat cuts dead.",
+    "exclude": "piano, organ, harmonium, adult vocals, male rapper, choir, church reverb, hall reverb, strings swell, autotune, melodic R&B hook, fade out",
+    "lyrics": "[Intro: drill beat drops in, one bar, rope slapping tarmac]\n\n[Playground clapping rhyme, kids in unison, sing-song, half-chanted]\nWe can't afford a bed for you,\nThe purse is far too thin;\n[Clap clap, a giggle swallowed]\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Beat stops dead]\n[End]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 55,
+    "styleInfluence": 70,
+    "vocalGender": null,
+    "durationSec": 15,
+    "maxMode": false
+  },
+  {
+    "name": "chopped-choir-sample-riddim",
+    "style": "bedroom grime instrumental 140 bpm built around a sampled children's choir, found sound from a crackly 1950s school assembly record, kids' voices pitched up a semitone and sliced into chops, prim old-fashioned English diction, tinny mono and far away, raw square-wave sub stabs, cheap string-preset stab that stutters, dry eski clicks on the off-beat, clap on two and four, reload rewind spinback and gunshot hit as percussion, beat cuts out leaving only the dusty choir loop, cold sparse dystopian",
+    "exclude": "piano, organ, adult vocals, rap, MC, spoken word, autotune, solo singer, live band, warm pads",
+    "lyrics": "[Intro: vinyl crackle, choir sample alone, chopped]\n\n[Verse: riddim drops in, square bass stabs, string stab stutters, each line end cut short by the chop]\nWe can't afford a bed for you,\nThe purse is far too thin;\n\n[Break: everything drops out except the scratchy choir sample]\nThere is room on all those islands,\n\n[Rewind spinback, gunshot hit, riddim slams back]\nBut you will sleep in a bin.\n\n[End: hard stop, silence]",
+    "model": "v6",
+    "variety": "high",
+    "weirdness": 62,
+    "styleInfluence": 72,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": false
+  },
+  {
+    "name": "one-bored-kid-in-the-dark",
+    "style": "bleak minimal UK grime, half-time 70 bpm, lone eight-year-old London schoolboy sings a hymn tune with no instruments doubling him, deadpan and bored, slightly off-key, mumbled cockney vowels, dry mouth-on-the-mic close vocal, raw detuned square-wave sub bass hitting only on the one, single overdriven kick, one icy metallic ping, faraway police sirens, concrete stairwell echo, huge empty dark space, hard stop",
+    "exclude": "piano, choir, harmonies, backing vocals, adult vocals, female vocals, rap, MC bars, pads, strings, organ, trap hi-hats, drill hi-hats, snare rolls, reverb on vocal",
+    "lyrics": "[Intro: sub bass only, distant sirens]\n\n[Verse: one bored boy, dry, close, half-hearted, a little flat]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Bass cuts out on 'bin']\n[End: silence]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 20,
+    "maxMode": true
+  }
+]

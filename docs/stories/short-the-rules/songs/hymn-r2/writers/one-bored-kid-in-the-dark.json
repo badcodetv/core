@@ -1,0 +1,13 @@
+{
+  "name": "one-bored-kid-in-the-dark",
+  "style": "bleak minimal UK grime, half-time 70 bpm, lone eight-year-old London schoolboy sings a hymn tune with no instruments doubling him, deadpan and bored, slightly off-key, mumbled cockney vowels, dry mouth-on-the-mic close vocal, raw detuned square-wave sub bass hitting only on the one, single overdriven kick, one icy metallic ping, faraway police sirens, concrete stairwell echo, huge empty dark space, hard stop",
+  "exclude": "piano, choir, harmonies, backing vocals, adult vocals, female vocals, rap, MC bars, pads, strings, organ, trap hi-hats, drill hi-hats, snare rolls, reverb on vocal",
+  "lyrics": "[Intro: sub bass only, distant sirens]\n\n[Verse: one bored boy, dry, close, half-hearted, a little flat]\nWe can't afford a bed for you,\nThe purse is far too thin;\nThere is room on all those islands,\nBut you will sleep in a bin.\n\n[Bass cuts out on 'bin']\n[End: silence]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 20,
+  "maxMode": true
+}
