@@ -3,7 +3,15 @@
 > The look for this short only. Read before any still or clip (new-image, scene-images,
 > scene-animation, flow-prompt). Rules: docs/stories/STYLE.md.
 
-**Status:** EXPLORING — **modern** (Kai, 2026-11-10: the balaclava is a generic BadCode brand, not 1920s); the exact look is picked on the mood board.
+**Status:** LOCKED for the opening — **the council basement, worm's-eye** (Kai picked mood board still `ST1-a`, 2026-11-10: "the council basement worm's eye is definitely what's looking good"). Modern; the balaclava is a generic BadCode brand, not 1920s.
+
+## In one paragraph
+
+A windowless council archive basement seen from the floor: ultra-wide, steep converging verticals, steel shelving like canyon walls, bare fluorescent tubes (one stuttering), cold greenish white, documentary realism, fine grain. The gang in muted modern workwear (hoodie, puffer, hi-vis, work coat, bomber). The other beats keep this light and grain; the island beat is a deliberate break (sunlight).
+
+## Anchors
+
+- `ST1-a` (`D:\\badcode-videos\\shorts\\the-rules\\moodboard\\ST1-a.jpg`, Flow media `9852149d-aa85-43bb-91fe-d97c0f9fff7f`): the picked look. Its masks are WRONG (see Cast): small triangles pointing up, on the ring's edge.
 
 ## Preamble (LOCKED for the mask, Kai 2026-11-10)
 
@@ -16,7 +24,8 @@ Every gang member wears a knitted balaclava covering the whole head, with no eye
 
 ## Cast
 
-- **The balaclava gang.** The mask is fixed by `docs/brand/README.md` ("The BadCode balaclava"): white ring
+- **The balaclava gang.** Masks: follow `docs/brand/README.md` "Putting a balaclava in a picture" (reference `docs/brand/balaclava/mask-reference.jpg`, fix pass, zoomed check). The opening's fixed still is `ST3-a-a` (from ST1-a via ST2-a-a).
+- **(earlier note)** The mask is fixed by `docs/brand/README.md` ("The BadCode balaclava"): white ring
   round the face, red triangle over the wearer's left eye, no skin, gloves. Everything else (cloth, colours,
   clothes, era) is this short's to choose. Reference stills of the gang as made for the Bank Robbery music
   video: `docs/stories/bank-robbery/songs/mv-colour-noir/picks.md` (`mask1 b`, `mask3 b`, `mask4 a`), media in

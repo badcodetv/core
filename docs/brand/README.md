@@ -58,6 +58,28 @@ no robot feature, just have gloves on and never show skin."*
   fine. Fixed: the white ring, the triangle's eye, no skin.
 - Applies to the Money For Something host as well as any gang. Prompt wording is the story's business; this is
   the rule, not a phrasing.
+- **The triangle is the logo's triangle** (Kai, 2026-11-10: *"each of these anonymous individuals essentially is Bad
+  Code. So, it's important that the triangle is in the right place"*): ONE solid red triangle with rounded corners,
+  **inside** the white ring at its upper right, **pointing DOWN** (flat edge on top), about the logo's size relative to
+  the ring. Never on the crown or on top of the ring, never pointing up or sideways, never two.
+
+### Putting a balaclava in a picture: the procedure (Kai, 2026-11-10)
+
+Flow does not hold the mask from words: the first look round of *The Rules* came back with small triangles pointing
+up on top of the rings, and earlier Bank Robbery rounds centred it. So, every time:
+
+1. **Reference, not just words.** Give Flow Jack's mask as an image: [`balaclava/mask-reference.jpg`](./balaclava/mask-reference.jpg)
+   (the navy mask from the Bank Robbery music video, clip `gang/video/bg-y03-a-y03r8-a.mp4`, Kai: *"Jack has done a lot
+   of work on getting the [balaclavas] looking good in there"*). New stills: generate, then run the fix pass below with
+   this reference. Stage it under `~/.cache/` first (never upload from `/mnt`).
+2. **Fix pass** (`flow_edit_image`): references = the still + `mask-reference.jpg`, **two at most** (with the logo as a
+   third, Flow returned the logo file instead of an edit). "Using the first image, change only the balaclavas so every
+   one is the same design as the mask in the second image…", keeping each mask's colour and everything else.
+3. **Check by eye, zoomed** (crop the heads, compare with `logo/avatar-1024.png`): one triangle per mask, inside the
+   ring, upper right, pointing down. Leftover triangles from the old version are common: a second edit pass removes
+   them ("delete any extra red triangle on the crown or on top of the ring").
+4. **Clips** start from a still that passed step 3. Check the masks again in the clip's frames.
+
 
 ## The settings (the source of truth)
 

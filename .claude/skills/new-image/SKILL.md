@@ -75,6 +75,8 @@ the character is **attached as a reference**. Naming them in prose is not enough
 - One canonical reference image per character, always the same one: the story's `look.md` §Cast names it.
 - **Hard rule:** never regenerate a face-bearing frame of a recurring character without casting them. Prose plus image references provably don't hold a face (the 2026-07-25 camping recut produced a third Tarquin). If casting fails, stop and fix that first.
 
+- **A BadCode balaclava in the frame** (any story): the mask is the logo, so follow the procedure in `docs/brand/README.md` ("Putting a balaclava in a picture"): Jack's mask as an image reference, a fix pass, a zoomed check of every triangle.
+
 ## The loop (per image)
 
 1. **Ask up front** if not given: what the image is of, what it's for, and where it goes. Default `docs/images/<slug>.jpg`; inside a scene, `<media>/moodboard/<id>.jpg`.

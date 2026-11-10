@@ -56,3 +56,20 @@ The 1920s option is dropped; the look is **modern**, with the variants inside it
 - look-r2: on the first gate, the six writers again all chose one model (Nano Banana 2). Locked `model: Nano Banana 2`
   for this round in `locked-settings.json` (the writers' own convergent pick) and re-ran the gate on the same drafts;
   only real shared wording goes back for rewrite.
+
+## 2026-11-10: mood board round 1 → the look
+
+Kai: *"I like the council basement look… the council basement worm's eye is definitely what's looking good for me."*
+Pick: `ST1-a`. Kai also: the masks must be the BadCode logo (*"each of these anonymous individuals essentially is Bad
+Code. So, it's important that the triangle is in the right place… we might need a couple of reference images whenever
+you put a balaclava person in a thing"*). By eye against `docs/brand/logo/avatar-1024.png`: ST1-a's triangles are small,
+point UP and sit on the ring's top edge; the logo's is large, rounded, points DOWN and sits INSIDE the ring at 2 o'clock.
+The Bank Robbery gang's are inside the ring but point right and sit near the centre.
+
+## 2026-11-10: the masks fixed (Kai's aside)
+
+Kai: *"Please can you use visual references from the Bank Robbery music video as Jack has done a lot of work on getting
+the [balaclavas] looking good in there."* Jack's mask: the navy one in clip `gang/video/bg-y03-a-y03r8-a.mp4` (triangle
+inside the ring, upper right, pointing down: the logo), saved as `docs/brand/balaclava/mask-reference.jpg`. ST1-a →
+ST2-a-a (masks to Jack's design; a 3-reference try returned the logo file, so two references at most) → ST3-a-a (leftover
+crown triangles removed). The procedure is now in `docs/brand/README.md`, "Putting a balaclava in a picture".
