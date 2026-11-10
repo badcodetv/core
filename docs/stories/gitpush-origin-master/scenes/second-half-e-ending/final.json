@@ -3,10 +3,10 @@
  "story": "gitpush-origin-master",
  "scene": "second-half-e-ending",
  "sequence": "gpom-second-half-E-rough3",
- "frozen": "2026-11-10T18:39:27+00:00",
- "note": "Kai, 10 Nov: \"That's the one Claude, nailed it, well done, let's call that a wrap\" (page round 9; Premiere still r4, r5 owed)",
- "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/edl.json",
- "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/preview.mp4",
+ "frozen": "2026-11-10T19:31:31+00:00",
+ "note": "Kai 10 Nov: 'This is really good editing... this is brilliant, well done' (round 10 = round 9 minus 'I can't come back again.', his Premiere edit)",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/preview.mp4",
  "total": 32.958333333333336,
  "boards": {
   "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
@@ -307,7 +307,7 @@
    "dur": 14.291666666666666,
    "beat": "e3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/video/E04r9-chain.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/video/E04r9-chain.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
@@ -450,32 +450,6 @@
    "t": 22.292,
    "dur": 1.52,
    "what": "e3: the AI, his own voice: \"Now let's get to work.\"",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav",
-   "chain": [
-    {
-     "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav",
-     "made": "2026-11-10T17:13:27.233Z",
-     "by": "claude",
-     "kind": "music",
-     "engine": "suno",
-     "tool": "scripts/suno/suno.mts record",
-     "source_id": "b1fecf5a-ae96-49d6-953b-d3d4cf374296",
-     "inputs": {
-      "title": "b1fecf5a-ae96-49d6-953b-d3d4cf374296",
-      "song": "https://suno.com/song/b1fecf5a-ae96-49d6-953b-d3d4cf374296"
-     },
-     "settings": {
-      "durationSec": 20
-     }
-    }
-   ]
-  },
-  {
-   "stem": "vox-ai",
-   "t": 26.208,
-   "dur": 1.77,
-   "what": "e3: the AI, his own voice: \"I can't come back again.\"",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav",
    "chain": [
     {

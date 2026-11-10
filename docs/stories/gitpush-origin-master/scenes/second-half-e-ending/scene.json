@@ -201,9 +201,9 @@
   "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/preview.mp4",
-  "how": "cut_end_e.py --tag r9"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/preview.mp4",
+  "how": "cut-r9 with Kai's Premiere edit ported by hand (round 10): the vox-ai stem silenced from 25 s ('I can't come back again.' gone), mix re-summed from the 7 stems through the same -2 dBFS limiter, no re-levelling; picture unchanged (video/ hard-linked from cut-r9)"
  },
  "round3_media": {
   "date": "2026-10-23",
@@ -278,15 +278,16 @@
    "bin": "07 GPOM story E ending r5",
    "built": "2026-11-10",
    "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
-   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/edl.json",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/edl.json",
    "what": "page round 9, SIGNED OFF: patched phone on E01r9, E03r9 single pull, Parliament E04r9 chain, 'I made it.' at 19.08, music in 6.8",
    "how": "premiere-plan.py --tag r5 (lines under cut-r9/premiere/r5/lines/); place.js pasted into premiere_eval: done 14, fail 0, vc 5, audio [3,1,1,1,1,1,1]",
    "check": {
-    "at": "2026-11-10T19:18",
+    "at": "2026-11-10T19:31",
     "state": "in sync",
     "why": ""
    },
-   "master": "00 RENDER story V1 542.083–575.042 (Motion Scale 150), replacing r4 (lifted, no ripple); the film now ends at 575.042 (r5 is 2.0 s shorter than r4)"
+   "master": "00 RENDER story V1 542.083–575.042 (Motion Scale 150), replacing r4 (lifted, no ripple); the film now ends at 575.042 (r5 is 2.0 s shorter than r4)",
+   "edited_by_kai": "10 Nov: Kai deleted 02-vox-ai.wav ('I can't come back again.', 26.16-28.08 s) from A1 in Premiere; ported back to the page as round 10 (cut-r10). His edit is the base: r5 stays current, nothing rebuilt over it"
   }
  },
  "video": {

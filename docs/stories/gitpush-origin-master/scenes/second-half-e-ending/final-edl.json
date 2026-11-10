@@ -1,7 +1,7 @@
 {
  "sequence": "gpom-second-half-E-rough3",
  "title": "Ending E Timeline",
- "heading": "GPOM second half · the ending · scene E: the bus",
+ "heading": "GPOM second half \u00b7 the ending \u00b7 scene E: the bus",
  "intro": "Scene E of the ending, round 1 (Kai's notes, 23 Oct): a woman on a bus is watching this film; Maddie's \"Mind how you go.\" comes out of her phone; she looks up at her own high street; a red bus drives away. The AI's last line is not recorded yet: its slot is a silent hold. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.",
  "fps": 24,
  "sample_rate": 48000,
@@ -48,8 +48,8 @@
      "who": "ai",
      "name": "The AI (opening to his own voice, for the first time)",
      "t": 19.083,
-     "dur": 8.895,
-     "text": "I made it. Now let's get to work. I can't come back again.",
+     "dur": 4.729,
+     "text": "I made it. Now let's get to work.",
      "by": "kai"
     }
    ]
@@ -66,7 +66,7 @@
  ],
  "video": [
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/video/E01r9-t2-patched-push.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/video/E01r9-t2-patched-push.mp4",
    "in": 0.0,
    "dur": 5.0,
    "start": 0.0,
@@ -75,7 +75,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/video/E02r8-t2-a-bank.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/video/E02r8-t2-a-bank.mp4",
    "in": 0.0,
    "dur": 6.0,
    "start": 5.0,
@@ -84,7 +84,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/video/E03r9-pull-to-7.083.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/video/E03r9-pull-to-7.083.mp4",
    "in": 0.0,
    "dur": 7.083333333333333,
    "start": 11.0,
@@ -93,16 +93,16 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/video/E04r9-t2-push-14.292.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/video/E04r9-t2-push-14.292.mp4",
    "in": 0.0,
    "dur": 14.291666666666666,
    "start": 18.083333333333332,
    "beat": "e3",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/video/E04r9-chain.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/video/E04r9-chain.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/video/black-0.583.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/video/black-0.583.mp4",
    "in": 0.0,
    "dur": 0.5833333333333334,
    "start": 32.375,
@@ -115,54 +115,54 @@
   {
    "track": "A1",
    "name": "vox-ai",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/stems/01-vox-ai.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/stems/01-vox-ai.wav",
    "start": 0.0,
    "peak_db": 1.7
   },
   {
    "track": "A2",
    "name": "vox-maddie-phone",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/stems/02-vox-maddie-phone.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/stems/02-vox-maddie-phone.wav",
    "start": 0.0,
    "peak_db": -0.1
   },
   {
    "track": "A3",
    "name": "mus-e-coda",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/stems/03-mus-e-coda.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/stems/03-mus-e-coda.wav",
    "start": 0.0,
    "peak_db": -2.3
   },
   {
    "track": "A4",
    "name": "sfx-bus",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/stems/04-sfx-bus.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/stems/04-sfx-bus.wav",
    "start": 0.0,
    "peak_db": -14.7
   },
   {
    "track": "A5",
    "name": "sfx-bus-away",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/stems/05-sfx-bus-away.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/stems/05-sfx-bus-away.wav",
    "start": 0.0,
    "peak_db": -23.2
   },
   {
    "track": "A6",
    "name": "sfx-rain",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/stems/06-sfx-rain.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/stems/06-sfx-rain.wav",
    "start": 0.0,
    "peak_db": -4.5
   },
   {
    "track": "A7",
    "name": "sfx-street",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/stems/07-sfx-street.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/stems/07-sfx-street.wav",
    "start": 0.0,
    "peak_db": -9.7
   }
  ],
- "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/mix.wav",
+ "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/mix.wav",
  "events": [
   {
    "stem": "vox-maddie-phone",
@@ -184,13 +184,6 @@
    "dur": 1.52,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav",
    "what": "e3: the AI, his own voice: \"Now let's get to work.\""
-  },
-  {
-   "stem": "vox-ai",
-   "t": 26.208,
-   "dur": 1.77,
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav",
-   "what": "e3: the AI, his own voice: \"I can't come back again.\""
   },
   {
    "stem": "mus-e-coda",
@@ -273,25 +266,10 @@
    "what": "e3: the AI, his own voice: \"Now let's get to work.\"",
    "cut": null,
    "line_file": null
-  },
-  {
-   "stem": "vox-ai",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav",
-   "i": 9.58,
-   "d": 1.7699999999999996,
-   "t": 26.208333333333332,
-   "chain": [
-    "highpass=f=110",
-    "equalizer=f=200:t=q:w=1:g=-4",
-    "equalizer=f=2800:t=q:w=1.2:g=2"
-   ],
-   "lufs": -17.5,
-   "what": "e3: the AI, his own voice: \"I can't come back again.\"",
-   "cut": null,
-   "line_file": null
   }
  ],
  "flags": [
+  "E round 10 (Kai, in Premiere, 10 Nov, by: kai): the AI's last sentence \"I can't come back again.\" deleted from the voice track of 07 GPOM story E ending r5. The film's last words are now \"I made it. ... Now let's get to work.\" Nothing else moved: the music, rain and street run on under Parliament to black. Ported here by silencing it in the vox-ai stem and re-summing the mix with the same limiter (no re-levelling, so the page plays what Premiere plays).",
   "E01 (Kai ld9-1/le1-0): Maddie's \"Mind how you go.\" is said whole through the woman's phone, 0.3 s after the hard cut (it is no longer split across the cut): D ends on the silence after \"Boss...\", and E opens on the rain, the bus and her small voice from the phone.",
   "E01/E02 (E round 3, Kai: the overlaid screen looked \"a bit grainy... quite obviously just overlaid\"): the phone screen is now painted by Flow in-camera (stills E01p-b / E02p-b, made with D's last frame as the reference: glowing, with glare and its light on her hands), animated as E01p-t1 / E02p-t1. Checked at 4 fps: the screen holds its picture in every frame, never white, no ghost. The ffmpeg screen composite (phone_screen.py) is no longer used.",
   "E01: a slow push 100 -> 110% toward the phone after a 1.5 s hold (eased, in post), so the screen reads before the cut.",
@@ -301,14 +279,14 @@
   "E03 (Kai reel at4010, ending round 2): the red bus on an EMPTY road. The plate was edited again (E03r4b-c: every car and headlight removed; the hooded pair on the right went with them), re-animated (E03r4-t1, 10 s) and extended (E03xr4-t1, 8 s) from its last frame with a far oncoming vehicle painted out first (E03r4-last-clean-a), so nothing drives towards the bus. Omni pans the camera slowly right in both clips (asked for locked).",
   "E03 (Kai at353): a RED double-decker. The still was edited (E03r3-b: E03b-r1-b with the bus made plain pillar-box red, no roundel, no route number, no adverts, nothing written on it), re-animated (E03r3-t1, 10 s) and extended from its last frame (E03xr3-t2, 8 s: locked, the bus recedes further, the two walkers turn and walk away). Joined here as before: the tail's first frame dropped, a 0.3 s dissolve over the join (it steps 2.7 against a 0.8 in-clip median, an exposure jump). The closed bank is the same plate, so bank_sign_e03.py letters it as before (DOWNLAND BANK and the closure sheet, tracked). Omni drew small unreadable fascia lettering on the far shops: left.",
   "E round 9 (Kai, 10 Nov): E01 is Kai's pick E01h-a with the robot's lamp off (E01h3-c), animated (E01r9-t2) and the robot patched from D's frame (phone_patch.py), because Omni drew it as a white disc in every take (at28). The bus shot is one clip from a plate where Flow painted DOWNLAND BANK on the board itself (E03s-a, E03r9-t1; at303), 7.08 s. Parliament comes in 1.0 s before \"I made it.\" (at527) and is Kai's grittier pick P1g-b (E04r9-t2 + its continuation E04xr9-t2, joined, light grain), 14.3 s. One more second after the last word; the coda's last note lands after it (at730).",
-  "The line (Kai at554, round 7): \"I made it. Now let's get to work. I can't come back again.\", Suno revision J take b1fecf5a, 2.4 s before each new sentence. \"I made it.\" keeps a 40% trace of Maddie's speaker; the rest is his own voice.",
+  "The line (Kai at554, round 7): \"I made it. Now let's get to work.\" (round 10: Kai cut \"I can't come back again.\" in Premiere), Suno revision J take b1fecf5a, 2.4 s before each new sentence. \"I made it.\" keeps a 40% trace of Maddie's speaker; the rest is his own voice.",
   "E04: 0.6 s of black (scene.json planned 3 s): the coda's last low note sounds just after the picture has gone and is left to decay to about -42 dB, then faded (my call).",
   "Music: e-coda comes in on the cut to E02 (6.8 s), not on her look-up 2 s later, so that with one edit (its opening phrase to 9.05 s, then straight to the phrase at 23.45 s, a 0.1 s crossfade on a low point; the first rise is cut) its held-chord pocket falls under the line and its last low note falls on black. The edit is measured on the level envelope, not heard: Kai to rule by ear.",
   "Sound (review round 1): the synthesised rain, bus and street are replaced by recorded CC0 beds (Freesound HQ previews, E/sfx/CREDITS.md): a bus interior engine and rain on a window with wet traffic outside under E01-E02 (one continuous bed each, so nothing switches at the cut; the engine eases down and duller before E02, pulled in at the stop), then rainy-night traffic and a bus departing from a stop under E03. Each was checked for speech with whisper (VAD): none. Not heard by ear in this run: Kai to rule on the beds.",
   "Sound: the cut lands on sound (rain, the bus, the phone), no music under E01, as music.md plans.",
   "Colour: mean RGB measured on both sides of every cut; the biggest steps are E01r9-t2-patched -> E02r8-t2-a (37/255) (a change of place or light, not a drift inside a shot).",
   "Nobody has listened to this cut: every level, duck and sound placement is measured, not heard.",
-  "delivery-qc on preview.mp4: 5 ok, 4 warn, 1 fail. FAIL TAGGED LIMITED RANGE, CONTENT IS FULL — whites will clip. Fix with: -vf 'scale=in_range=full:out_range=limited' -pix_fmt yuv420p -color | warn blacks reach 0 — shadow detail is already clipped before the platform re-encodes. Lift the floor a little | warn 1 near-black stretch(es) — check the head and tail are intentional | warn 1 frozen stretch(es) — a stuck frame or a still held too long | warn off the -14 LUFS target — platforms normalise, so this mostly costs you dynamics The range FAIL is x264 quantisation ringing on a few grain pixels per frame: the picture is clamped to 16-235 before the encode (cut3.LEGAL) and the encoder overshoots (scene E: luma 0/251 on isolated pixels; the 10th/90th percentiles stay inside 16-235 on every frame, 16/156); cut 3 A's preview fails the same way. Not a range-tag mismatch. -16 LUFS is the house target for these scenes (the brief), not -14."
+  "delivery-qc on preview.mp4: 5 ok, 4 warn, 1 fail. FAIL TAGGED LIMITED RANGE, CONTENT IS FULL \u2014 whites will clip. Fix with: -vf 'scale=in_range=full:out_range=limited' -pix_fmt yuv420p -color | warn blacks reach 0 \u2014 shadow detail is already clipped before the platform re-encodes. Lift the floor a little | warn 1 near-black stretch(es) \u2014 check the head and tail are intentional | warn 1 frozen stretch(es) \u2014 a stuck frame or a still held too long | warn off the -14 LUFS target \u2014 platforms normalise, so this mostly costs you dynamics The range FAIL is x264 quantisation ringing on a few grain pixels per frame: the picture is clamped to 16-235 before the encode (cut3.LEGAL) and the encoder overshoots (scene E: luma 0/251 on isolated pixels; the 10th/90th percentiles stay inside 16-235 on every frame, 16/156); cut 3 A's preview fails the same way. Not a range-tag mismatch. -16 LUFS is the house target for these scenes (the brief), not -14."
  ],
- "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/preview.mp4"
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r10/preview.mp4"
 }

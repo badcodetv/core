@@ -170,5 +170,16 @@
   "decided": [
    "let's go ahead and cut the end"
   ]
+ },
+ {
+  "at": "2026-11-10T19:31:30+00:00",
+  "stage": "timeline",
+  "round": 10,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "Kai's Premiere edit ported back: the AI's last sentence 'I can't come back again.' deleted (in 07 GPOM story E ending r5); film ends on 'Now let's get to work.'",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending <out-dir>",
+  "decided": [
+   "I've deleted the last bit of the boss saying I can't come back again... update the timeline with that update... this is brilliant, well done"
+  ]
  }
 ]

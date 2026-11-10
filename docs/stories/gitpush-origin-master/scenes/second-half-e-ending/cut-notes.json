@@ -1,27 +1,19 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 9,
+ "round": 10,
  "plan": [
   {
-   "h": "Round 9 (10 Nov): all in",
+   "h": "Round 10 (10 Nov): Kai's edit in Premiere, brought back to the page",
    "items": [
-    "Phone: your pick E01h-a, but Omni draws the tiny robot as a glowing white disc in every take (three tries), so the robot on the screen is patched in from D's own frame and tracked with the phone.",
-    "Bus: your pick E03s-a, DOWNLAND BANK painted onto the board by Flow, so it is part of the building. Omni also wrote 'DOWNLA...' on the shop next door as the bus uncovered it; that is wiped.",
-    "Parliament: your grittier pick P1g-b, on screen 1 s before 'I made it.', 14.3 s (the 10 s shot + its continuation from the last frame).",
-    "Timing: bus shot 7.1 s (2 s shorter); one more second after the last word; the music's last note now lands about a second after he finishes. E is 33.0 s."
-   ]
-  },
-  {
-   "h": "Worth knowing",
-   "items": [
-    "Flow mixed up its files twice more this round (clips saved under each other's names); every file was checked by eye and renamed. A few stray clips may sit in the Flow project.",
-    "A faint trace of the wiped lettering shows for about a second at the edge of the bus. Measured and looked at, not listened to."
+    "You deleted the AI's last sentence, \"I can't come back again.\", from the voice track in 07 GPOM story E ending r5. The film now ends on \"I made it. ... Now let's get to work.\" over Parliament, then the music and rain run on to black.",
+    "The page plays exactly that: the same voice track with that sentence silenced, the same mix otherwise (the first two lines measure identical to round 9). Picture unchanged.",
+    "→ in 07 GPOM story E ending r5 (your edit) and so in 00 RENDER story."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Note it, or sign E off. Premiere r5 follows when it's free."
+    "Nothing. Signed off."
    ]
   }
  ],
@@ -146,5 +138,29 @@
   "at303": "And yeah, here we really need to fix the download bank sign. I don't think we've addressed that. Maybe we just need to recut this entire bus scene.",
   "at527": "I think we should transition to this image earlier. I also think we should recut this image to look slightly more grainy at the moment. I think it's the rain, the reflection on the pavement is making it look really rather kind of plasticky and almost cartoony. Whereas the gritty reality of the previous high street doesn't translate. So we need the same visual look and feel. And, yeah, we should be looking at the Big Ben for a second at least before he says he made I made it. Whereas at the moment we he begins to speak. I made it as we cut. So that's cut earlier.",
   "at730": "I think we need a slight, when he says I can't come back again I think maybe we should have the audio earlier so like the bus scene could lose two seconds we could move the entire House of Parliament scene back and I'd expect at least one more second for once he's finished speaking for the music to tail off"
- }
+ },
+ "plan_round9": [
+  {
+   "h": "Round 9 (10 Nov): all in",
+   "items": [
+    "Phone: your pick E01h-a, but Omni draws the tiny robot as a glowing white disc in every take (three tries), so the robot on the screen is patched in from D's own frame and tracked with the phone.",
+    "Bus: your pick E03s-a, DOWNLAND BANK painted onto the board by Flow, so it is part of the building. Omni also wrote 'DOWNLA...' on the shop next door as the bus uncovered it; that is wiped.",
+    "Parliament: your grittier pick P1g-b, on screen 1 s before 'I made it.', 14.3 s (the 10 s shot + its continuation from the last frame).",
+    "Timing: bus shot 7.1 s (2 s shorter); one more second after the last word; the music's last note now lands about a second after he finishes. E is 33.0 s."
+   ]
+  },
+  {
+   "h": "Worth knowing",
+   "items": [
+    "Flow mixed up its files twice more this round (clips saved under each other's names); every file was checked by eye and renamed. A few stray clips may sit in the Flow project.",
+    "A faint trace of the wiped lettering shows for about a second at the edge of the bus. Measured and looked at, not listened to."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Note it, or sign E off. Premiere r5 follows when it's free."
+   ]
+  }
+ ]
 }
