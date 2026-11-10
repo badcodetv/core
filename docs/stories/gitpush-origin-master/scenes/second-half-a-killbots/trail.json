@@ -704,5 +704,23 @@
   "what": "round 25 notes dumped and answered (7 notes on round 24)",
   "feedback": "feedback/timeline-r25",
   "feedback_docs": 98
+ },
+ {
+  "at": "2026-11-10T19:40:52+00:00",
+  "stage": "timeline",
+  "round": 25,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 25: A-d23 (4:03) - Kai's lines re-voiced, hologram 1F4, detect 5 s",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-10T19:49:16+00:00",
+  "stage": "timeline",
+  "round": 25,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 25 signed off",
+  "decided": [
+   "it's a wrap! Brilliant. Well done... please commit it, put it into Premiere"
+  ]
  }
 ]

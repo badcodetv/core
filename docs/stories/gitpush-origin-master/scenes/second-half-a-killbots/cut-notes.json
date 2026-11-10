@@ -3,23 +3,25 @@
   "round": 25,
   "plan": [
     {
-      "h": "Round 25: your 7 notes, mostly audio",
+      "h": "Round 25 is in: your 7 notes done (4:03)",
       "items": [
-        "Voices: f02 re-cut so \"married\" ends (same take); f03, f05, f06 and the time-machine line re-voiced with your words; f06 back in Maddie's accent.",
-        "Hologram: re-timed to the new lines and re-rendered (1F4). Shorter overall: f06 loses about 8 s.",
-        "Detect: turret and HUD 2 s each, 5 s in all."
+        "Voices: \"They got married!\" now ends on its D; \"We don't know...\" wistful, with \"we are, after all, machines\"; the multiverse line re-voiced with a pause either side of \"storyverse\"; your \"driving me barmy\" line in the same voice settings as f01/f02; \"Of course, he's built a time machine...\"",
+        "Hologram: re-timed and re-rendered (1F4) to the new lines.",
+        "Detect: turret and HUD 2 s each (5 s). The HUD now reads CONTACT // LOCK and LOCKED once it locks."
       ]
     },
     {
-      "h": "Timing",
+      "h": "Worth knowing",
       "items": [
-        "The hologram re-render is the long part (about an hour, frame by frame). Both run in parallel and land together as round 25."
+        "The training-data line has fewer words but runs about the same (19 s): she reads it slower, with pauses after \"away\", \"any more\", \"us?\" and \"years\". If you want it brisker, say so and I'll re-voice it faster.",
+        "Accent on that line: the take was picked by measurement against f01/f02 (no listening); your ear decides.",
+        "Still small and open: Derek's \"sorry, love\" about 0.1 s late; Sandra resets to the same pose between shots."
       ]
     },
     {
       "h": "You decide",
       "items": [
-        "Nothing to decide. Note round 25 when it lands."
+        "Note on this round as usual. When it's there, say \"build it\" and it goes into Premiere as the next scene A sequence."
       ]
     }
   ],
@@ -43,13 +45,13 @@
     "at4248": "Got it: chunk 3. Cut back to Derek already gesticulating, so no jump from standing to gesturing.",
     "at4325": "Got it: chunk 3. Back to Sandra saying these words, on her face.",
     "at4401": "Got it: chunk 4 (new shot). A one-to-two-second bridge between the row and the motorway: a kill bot detecting the organic signal (its HUD, the voices as a waveform). Stills first, on a picks page, then animate your pick.",
-    "at2210": "Yes: same take, the clip was trimmed too early and lost the D. Re-cutting it with room for \"married\" to finish. Edit only.",
-    "at2370": "New words in: \"...Or how it feels to be anything, really. We are, after all, machines. You humans have got a word for it: qualia. It's what makes you so special.\" Re-voiced wistful and a little regretful, warm on the last line.",
-    "at3588": "Same words, re-voiced: \"So it's not a multiverse. [pause] It's a storyverse. [pause] And there's only one of them...\" Checked by transcript that \"multiverse\" comes out as multiverse.",
-    "at3872": "Agreed, the accent slipped on this take. Re-voicing with exactly the voice and settings of f01/f02 (the ones that sound like Maddie), three takes, keeping the closest match.",
-    "at3963": "Your shorter version is in, word for word: \"...no new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.\" About 8 s shorter.",
-    "at4326": "In: \"Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.\" Then \"But the patrol's out. Please, mind how you go.\" on the street as now.",
-    "at5176": "Turret up to 2 s and the HUD up to 2 s (the bridge goes from 3 s to 5 s). Also fixing the HUD label that read \"NO CONTACT\" while it locks on."
+    "at2210": "Yes: same take, the clip was trimmed too early and lost the D. Re-cutting it with room for \"married\" to finish. Edit only. → done in round 25.",
+    "at2370": "New words in: \"...Or how it feels to be anything, really. We are, after all, machines. You humans have got a word for it: qualia. It's what makes you so special.\" Re-voiced wistful and a little regretful, warm on the last line. → done in round 25.",
+    "at3588": "Same words, re-voiced: \"So it's not a multiverse. [pause] It's a storyverse. [pause] And there's only one of them...\" Checked by transcript that \"multiverse\" comes out as multiverse. → done in round 25.",
+    "at3872": "Agreed, the accent slipped on this take. Re-voicing with exactly the voice and settings of f01/f02 (the ones that sound like Maddie), three takes, keeping the closest match. → done in round 25.",
+    "at3963": "Your shorter version is in, word for word: \"...no new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.\" About 8 s shorter. → done in round 25.",
+    "at4326": "In: \"Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.\" Then \"But the patrol's out. Please, mind how you go.\" on the street as now. → done in round 25.",
+    "at5176": "Turret up to 2 s and the HUD up to 2 s (the bridge goes from 3 s to 5 s). Also fixing the HUD label that read \"NO CONTACT\" while it locks on. → done in round 25."
   },
   "kai_round1": {
     "at3521": {
