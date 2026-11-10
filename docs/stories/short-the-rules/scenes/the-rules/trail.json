@@ -6,5 +6,13 @@
   "url": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
   "what": "Round 1: six modern looks for the opening shot (look-r2 round, gated)",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-rules/scenes/the-rules <out.html>"
+ },
+ {
+  "at": "2026-11-10T18:51:49+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "url": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
+  "what": "Round 3: the opening with masks fixed (ST3-a-a/b) beside Jack's mask and the logo",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-rules/scenes/the-rules <out.html>"
  }
 ]

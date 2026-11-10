@@ -58,5 +58,17 @@
   "ST3-a-b",
   "Council basement, masks clean",
   "Same edit, second candidate."
+ ],
+ [
+  "stack",
+  "ST3-ref",
+  "Jack's mask (the reference)",
+  "Reference only, not a shot: the navy mask from the Bank Robbery music video (clip bg-y03), docs/brand/balaclava/mask-reference.jpg."
+ ],
+ [
+  "stack",
+  "ST3-logo",
+  "The logo (the check)",
+  "Reference only: docs/brand/logo/avatar-1024.png. Every mask's triangle must match this one: inside the ring, upper right, pointing down."
  ]
 ]
