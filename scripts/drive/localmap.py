@@ -22,7 +22,7 @@ loads such a file passes it through localize(): any path inside one of a story's
 machine's folder for that story, keeping its form (D:\\x stays Windows, /mnt/d/x stays WSL). Paths are
 translated as they are read, never rewritten in the files, so nothing churns in git. A path into a story this
 machine hasn't mapped is left as it is (the tool then reports the missing file, and you `where` the story).
-Other scripts: from localmap import story_dir, StoryNotMapped, localize, localize_path
+Other scripts: from localmap import story_dir, StoryNotMapped, localize, localize_path, story_relpath
 """
 import json, os, pathlib, platform, re, sys
 
@@ -115,6 +115,22 @@ def localize_path(p):
                 return to_stored(mine) + rest.replace('/', '\\')
             return to_shell(mine) + rest
     return p
+
+
+def story_relpath(p):
+    """A path on anyone's machine -> (story, path inside that story's folder, '/'-separated), or (None, None).
+    The same clip gives the same answer on every machine, so use it to recognise a file across machines."""
+    if not isinstance(p, str):
+        return None, None
+    w = _posix(p)
+    for home, story in _homes():
+        if _starts(w, home):
+            return story, w[len(home):].lstrip('/')
+    mine = {_posix(to_shell(v)).rstrip('/'): k for k, v in _load().get('stories', {}).items()}
+    for home in sorted(mine, key=len, reverse=True):
+        if _starts(w, home):
+            return mine[home], w[len(home):].lstrip('/')
+    return None, None
 
 
 def localize(obj):

@@ -16,9 +16,16 @@ import sys
 
 R = sys.argv[1] if len(sys.argv) > 1 else 'r1'
 SCENE = pathlib.Path(__file__).resolve().parents[2] / 'docs/stories/karen/scenes/music-video'
-MEDIA = pathlib.Path('/mnt/d/badcode-videos/karen-music/clips/recut')
-NEW = pathlib.Path('/mnt/d/badcode-videos/karen-music/clips/recut-cartoon')
-SONG = '/mnt/d/badcode-videos/karen-music/song.wav'
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / 'drive'))
+from localmap import story_dir, StoryNotMapped, localize, localize_path, story_relpath  # noqa: E402
+try:  # the karen-music folder on THIS machine (Kai's D: drive, Jack's OneDrive...): scripts/drive/localmap.py
+    ROOT = pathlib.Path(story_dir('karen-music'))
+except StoryNotMapped:
+    raise SystemExit('NOT SET: which folder on this machine holds karen-music? '
+                     'Record it with: scripts/drive/drive.sh where karen-music "<folder>"')
+MEDIA = ROOT / 'clips/recut'
+NEW = ROOT / 'clips/recut-cartoon'
+SONG = str(ROOT / 'song.wav')
 FPS = 25
 
 song = json.loads((SCENE / 'song-map.json').read_text())
@@ -45,7 +52,7 @@ def probe(p):
 
 def source(cid):
     if cid in cat:
-        return pathlib.Path(cat[cid]['path']), cat[cid]['style']
+        return pathlib.Path(localize_path(cat[cid]['path'])), cat[cid]['style']
     p = NEW / f'{cid}.mp4'
     if p.exists():
         return p, 'cartoon'

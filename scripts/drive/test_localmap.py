@@ -49,6 +49,18 @@ def test_what_must_not_change():
     assert out['src'].endswith('Karen music vid/a.mp4')
 
 
+def test_same_clip_same_name_on_both_machines():
+    machine({'karen-music': JACK})
+    want = ('karen-music', 'clips/from-story/st-new-12.mp4')
+    for p in ['/mnt/d/badcode-videos/karen-music/clips/from-story/st-new-12.mp4',
+              r'D:\badcode-videos\karen-music\clips\from-story\st-new-12.mp4',
+              JACK + r'\clips\from-story\st-new-12.mp4',
+              '/mnt/c/Users/jackt/OneDrive/Desktop/YouTube vids/Karen music vid/clips/from-story/st-new-12.mp4']:
+        assert localmap.story_relpath(p) == want, p
+    assert localmap.story_relpath('/mnt/d/badcode-videos/karen-music-old/x.mp4') == (None, None)
+    assert localmap.story_relpath(None) == (None, None)
+
+
 if __name__ == '__main__':
     for name, f in list(globals().items()):
         if name.startswith('test_'):
