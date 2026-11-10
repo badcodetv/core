@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E04xr9-t2.mp4",
+ "made": "2026-11-10T18:30:20.948Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Continue from this exact frame with the camera still locked: rain goes on slanting through the lamp's glow onto the shining bridge, the two distant figures keep walking slowly off, mist lingers. Big Ben and the Palace do not move. No new objects or people appear. One continuous shot.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/frames/E04r9-t2-last.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/frames/E04r9-t2-last.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 6
+ },
+ "source_id": "43a12b23-573a-49ee-ab7a-97b393d69315"
+}

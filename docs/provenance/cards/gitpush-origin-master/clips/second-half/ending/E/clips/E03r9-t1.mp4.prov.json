@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r9-t1.mp4",
+ "made": "2026-11-10T18:22:57.624Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera is fixed on a tripod and does not pan. The red double-decker pulls away from the stop and drives off down the empty wet high street, getting smaller; no other vehicles anywhere. Heavy rain falls through the streetlights, a person with an umbrella walks along the pavement, the shop signs and the bank's lettered board stay perfectly still. One continuous shot.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E03s-a.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E03s-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 8
+ },
+ "source_id": "559c9de0-8dc5-42a5-8c8e-5854b0304713"
+}

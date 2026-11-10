@@ -1,29 +1,32 @@
 {
  "about": "Round 1 notes from Kai (22 Oct 2026) on the timeline page, Claude's replies and the plan. kai_round1 is Kai's notes verbatim (atNNN = a timecoded note). plan_round0 is the autonomous run's list of calls made in Kai's place, kept for the record. Full record: ../second-half-ending-log.md. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 6,
+ "round": 9,
  "plan": [
   {
-   "h": "Round 6 (4 Nov): your take is in",
+   "h": "Round 9 (10 Nov): all in",
    "items": [
-    "Both sentences now come from your pick (Suno revision I, take 0ecce5dc): \"I made it.\" on the cut to Parliament (22.1 s), a 2.4 s pause, then the slow \"Don't make me come back twice.\", a held beat, the fade, the last note on black.",
-    "Whisper hears both sentences word-perfect. E is 32.6 s. \"Now the real work starts.\" is gone."
+    "Phone: your pick E01h-a, but Omni draws the tiny robot as a glowing white disc in every take (three tries), so the robot on the screen is patched in from D's own frame and tracked with the phone.",
+    "Bus: your pick E03s-a, DOWNLAND BANK painted onto the board by Flow, so it is part of the building. Omni also wrote 'DOWNLA...' on the shop next door as the bus uncovered it; that is wiped.",
+    "Parliament: your grittier pick P1g-b, on screen 1 s before 'I made it.', 14.3 s (the 10 s shot + its continuation from the last frame).",
+    "Timing: bus shot 7.1 s (2 s shorter); one more second after the last word; the music's last note now lands about a second after he finishes. E is 33.0 s."
    ]
   },
   {
-   "h": "The Parliament shot is in",
+   "h": "Worth knowing",
    "items": [
-    "Your pick e-b (a with a light drizzle, cleaner), animated: E04r4-t1, Omni Flash 10 s, camera locked, the drizzle, river and clouds moving, the building holds. 30 credits. A slow push 100 -> 106% in post, then the fade."
+    "Flow mixed up its files twice more this round (clips saved under each other's names); every file was checked by eye and renamed. A few stray clips may sit in the Flow project.",
+    "A faint trace of the wiped lettering shows for about a second at the edge of the bus. Measured and looked at, not listened to."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Nothing: E is complete as you asked. Sign it off or note it."
+    "Note it, or sign E off. Premiere r5 follows when it's free."
    ]
   }
  ],
  "replies": {
-  "top": "Round 6: your take and your Parliament shot are both in. In Premiere as 07 GPOM story E ending r3.",
+  "top": "Round 9 is in: phone robot fixed, bank sign painted in, grittier Parliament 1 s before the line, new timing.",
   "le1-0": "Yes: Maddie's 'Mind how you go.' now plays whole through the phone, right on the hard cut. Voiced.",
   "at353": "Agreed. A red double-decker (no London roundel or lettering, so it still reads as any town). Still edit, then the shot and its extension re-made (about 24 credits).",
   "le3-0": "Yes, that's the ending: 'I made it. Now we have some work to do.' It's the boss, so it goes to Suno in his newsreader voice when the browser is free (about 20 Suno credits). 'They didn't' is retired.",
@@ -32,7 +35,15 @@
   "kai-round3-parliament": "Done: 'I made it.' plays over the bus pulling away, then 0.3 s before 'Now the real work starts.' it cuts to the Houses of Parliament at night in the rain (your pick, camera locked, the rain, river and clouds moving, a slow push in post), and fades to black on that building.",
   "kai-round3-phone": "Done: the phone screens are now painted by Flow in the shot itself (your picks), glowing with real glare and light on her hands. Checked frame by frame: the picture holds on the screen the whole time, never white, no ghost. The old overlay is gone.",
   "at529": "Done: the cut to Parliament is now ON \"I made it.\" (22.1 s), not 0.3 s before \"Now…\", so we leave the bus before the sign skews and before it jumps. Edit only. Premiere follows with the new Parliament shot (r3). → in 07 GPOM story E ending r3.",
-  "at699": "Two parts. 1) The line: done. After \"Now the real work starts.\" he pauses 1.4 s, then says \"Don't make me come back twice.\" (calm and firm, from his own 21 Oct take, so no new Suno credits), then a held beat and the fade. 2) The picture: four new stills made to look like real photographs on the picks page (https://claude.ai/artifact/JRhJQxByyZYMKeA5LKWpn1). Pick one and I animate it; the old clip is a stand-in until then. → Round 6: the line is now your slow Suno take, \"Now the real work starts.\" is cut, and the new Parliament (e-b) is in. → in 07 GPOM story E ending r3."
+  "at699": "Two parts. 1) The line: done. After \"Now the real work starts.\" he pauses 1.4 s, then says \"Don't make me come back twice.\" (calm and firm, from his own 21 Oct take, so no new Suno credits), then a held beat and the fade. 2) The picture: four new stills made to look like real photographs on the picks page (https://claude.ai/artifact/JRhJQxByyZYMKeA5LKWpn1). Pick one and I animate it; the old clip is a stand-in until then. → Round 6: the line is now your slow Suno take, \"Now the real work starts.\" is cut, and the new Parliament (e-b) is in. → in 07 GPOM story E ending r3.",
+  "at554": "Done: \"I made it. Now let's get to work. I can't come back again.\" from your pick, Suno revision J take b1fecf5a (word-perfect). 2.4 s before each new sentence. New material (20 Suno credits).",
+  "at126": "Done: E01 is 5 s, and the scene is 2 s shorter overall (the line and music moved up with it).",
+  "at361": "Done: the name is fitted to the fascia's own perspective (it slopes with the board, about 3-5 degrees).",
+  "at786": "Done: the rain and street fall by 12 dB from the last sentence to the fade. And the new Parliament is in: your pick P1-a, from Westminster Bridge in heavy rain, a car's tail lights pulling away.",
+  "at28": "Done: the white disc was Omni drawing the tiny robot (every take, even with its lamp off), so the robot is patched from D's own frame and tracked with the phone; your pick E01h-a otherwise.",
+  "at303": "Done: the bus shot is re-made from your pick E03s-a, the name painted on the board by Flow (no lettering in post); a stray copy Omni wrote next door is wiped.",
+  "at527": "Done: Big Ben is on screen 1 s before 'I made it.', and it's your grittier pick P1g-b, with light grain.",
+  "at730": "Done: bus shot 2 s shorter, Parliament and the line moved up, one more second after the last word; the music's last note lands after it."
  },
  "kai_round1": {
   "at353": {
@@ -116,5 +127,24 @@
  "kai_round6": {
   "chat-2026-11-04": "pick Suno take 0ecce5dc (gpom-sh-end-ai-e3-I-v6-w10): 'This is the one Claude, that one works.'",
   "picks-e04-r4b": "pick e-b"
+ },
+ "kai_round7": {
+  "at554": {
+   "note": "I think we should say now let's get to work I cannot I can't come back again I think that's what we should do",
+   "beat": "e3",
+   "tc": "00:00:23:02"
+  }
+ },
+ "kai_round8": {
+  "at126": "I think this part needs to be maybe a set one second shorter Yeah, one second this section should be like five seconds rather than six and a half nearly seven is now",
+  "at361": "Here the downland bank looks really skewed, even if it just rotated like 10 degrees clockwise so it would go with the perspective of the sign. It's annoying because I love this shot but that downland bank is too much to bear. The downland bank sign because we've just seen it out of the bus window and all of a sudden you're looking at the downland bank and it's like a really bad you know it's looking really bad.",
+  "at786": "I think in this section the sound effects of the rain is too loud. I think we need to tail off the sound effects of the rain. I also think that this shot of Parliament could be more dramatic somehow. It still feels slightly cartoony. Maybe it's the lighting. Maybe we should... Yeah, no, I like the fact it's raining and it's dark, but... Maybe we need a different shot of the Houses of Parliament here.",
+  "chat": "the phone is showing the old shot... please can we fix that... that transition is crucial... it does need to be the same shots"
+ },
+ "kai_round9": {
+  "at28": "Good stuff, Claude, getting there. So again, on this shot here, there's something in the middle of the phone that just really distracts the eye from what otherwise would be an amazing transition. So could we try to recut this?",
+  "at303": "And yeah, here we really need to fix the download bank sign. I don't think we've addressed that. Maybe we just need to recut this entire bus scene.",
+  "at527": "I think we should transition to this image earlier. I also think we should recut this image to look slightly more grainy at the moment. I think it's the rain, the reflection on the pavement is making it look really rather kind of plasticky and almost cartoony. Whereas the gritty reality of the previous high street doesn't translate. So we need the same visual look and feel. And, yeah, we should be looking at the Big Ben for a second at least before he says he made I made it. Whereas at the moment we he begins to speak. I made it as we cut. So that's cut earlier.",
+  "at730": "I think we need a slight, when he says I can't come back again I think maybe we should have the audio earlier so like the bus scene could lose two seconds we could move the entire House of Parliament scene back and I'd expect at least one more second for once he's finished speaking for the music to tail off"
  }
 }

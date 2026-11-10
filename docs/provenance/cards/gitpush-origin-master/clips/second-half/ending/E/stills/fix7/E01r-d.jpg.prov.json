@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01r-d.jpg",
+ "made": "2026-11-10T17:32:21.732Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Repaint just the glowing phone screen in the woman's hands so that it plays the second picture: a wide shot looking down from high up across a huge bright white hall, many rows of empty black reclining chairs fanning out in curves, blankets and orange mugs left behind on a few of them, dark cables snaking over the white floor, and one tiny white delivery robot with a small amber light sitting in the lower middle, very small in the frame. No words or letters on the screen. Her hands, face, coat, the bus seats, the wet window and the night light stay as they are in the first picture; only the screen changes, glowing softly on her fingers.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E01p-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E01p-b.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/D16n-last.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 4
+ },
+ "source_id": "c0b85763-2c87-47e2-bba9-6f2a7f676b9f"
+}

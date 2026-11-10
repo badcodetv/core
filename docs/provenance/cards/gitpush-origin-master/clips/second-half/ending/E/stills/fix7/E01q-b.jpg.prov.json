@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01q-b.jpg",
+ "made": "2026-11-10T17:29:20.525Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the picture on the woman's phone screen: it now shows the second image, the whole wide high view of the bright white room with rows of empty black chairs, blankets and mugs left on them, and the small white delivery robot with its amber light in the middle, framed the same way, filling the screen in landscape. The screen glows softly onto her hands. Keep everything else in the first image exactly the same: the woman, her hands, the bus, the rain on the window, the lighting and the composition.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E01p-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E01p-b.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/D16n-last.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 3
+ },
+ "source_id": "49dca49d-905f-4ed6-85a2-29077b3bea12"
+}

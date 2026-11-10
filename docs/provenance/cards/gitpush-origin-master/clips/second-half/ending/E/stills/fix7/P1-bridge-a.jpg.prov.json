@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P1-bridge-a.jpg",
+ "made": "2026-11-10T17:37:27.446Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "A real night photograph taken from the pavement of Westminster Bridge in heavy rain, looking up at the Elizabeth Tower (Big Ben) rising steeply above, its clock face lit. Rain slants through the white streetlight, the wet pavement and stone balustrade shine black and silver, a tail light smears red at the edge of the frame. Shot handheld on a 35mm lens at night, high-ISO grain, true colours, a dark heavy sky with no orange glow, no HDR. 16:9, full frame, no captions or text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "efb65523-17f7-44fe-b9ff-2b13fc885c4e"
+}

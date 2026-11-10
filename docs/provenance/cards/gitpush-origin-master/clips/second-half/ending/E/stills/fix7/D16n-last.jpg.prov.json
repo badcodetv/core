@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/D16n-last.jpg",
+ "made": "2026-11-10T17:40:05+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg -sseof -0.1",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/15-D16n-i1.90-d6.375.mp4",
+ "why": "D's new last frame, the phone's screen for E01/E02 (Kai round 8)"
+}

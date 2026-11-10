@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P2-river-b.jpg",
+ "made": "2026-11-10T17:37:55.545Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Long-lens documentary photograph across the black River Thames at night: the whole Palace of Westminster stretched along the far bank, mostly dark stone with only a scatter of lit windows and the tower clocks glowing, low ragged storm cloud dragging over the towers, steady rain visible against the dark. Flat compressed perspective, cold muted colour, sodium and LED light mixed, deep shadows, nothing glossy. 16:9, full frame, no captions or text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "3f371de9-f4ba-43c9-9011-5d77da9f9b38"
+}

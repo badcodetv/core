@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/P1g-b.jpg",
+ "made": "2026-11-10T18:08:06.443Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Re-shoot the first picture, Westminster Bridge and the clock tower in a night downpour, as if on the same camera as the second picture, a rainy high street: coarser film grain, softer and dimmer street lamps, muted sodium and grey colour, the wet pavement duller with broken, smeary reflections rather than a glossy mirror, a little haze in the air, the sky heavy and dark. Same bridge, same lamppost, same tower, same framing.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P1-bridge-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P1-bridge-a.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E03-look-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 3
+ },
+ "source_id": "0fd047c5-fa9f-4287-a75f-597af28da9d9"
+}

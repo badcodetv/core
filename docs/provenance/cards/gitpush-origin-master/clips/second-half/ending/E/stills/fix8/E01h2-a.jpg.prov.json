@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E01h2-a.jpg",
+ "made": "2026-11-10T18:19:43.270Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "On the phone screen in this night bus photograph, the robot's light in the middle of the white room is glowing too white and too large. Shrink it to a tiny, dim amber point on top of the small robot, with no halo or bloom around it. Leave all of the rest alone: the screen's picture, her hands, the glare, the bus and the window.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01h-a.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01h-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "da9e667e-ad8b-4ba6-a433-facc98760e85"
+}

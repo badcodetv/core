@@ -39,6 +39,22 @@
      "timeline": "https://claude.ai/artifact/NNE1ttucQhJhmWUPTdFVkk"
     },
     {
+     "id": "mv-chorus-1",
+     "name": "Chorus 1: Skid Row Britain (the poverty twin of Outbreak Night; goes back in between the intro and the banks)",
+     "at": "1:02",
+     "state": "mood board r1 (10 Nov): 72 stills to vote on. Kai: the intro's black straight into the banks is an anticlimax, the drop is missing. 32 beats, INSERT at 62.583 s in '01 GPOM start r2' (the film gets 11.04 s longer)",
+     "tone": "wip",
+     "scene": "scenes/chorus-poverty",
+     "history": [
+      {
+       "url": "https://claude.ai/artifact/Lvams8whJLcpYN2EEJA8GU",
+       "name": "Skid Row Britain mood board r1",
+       "kind": "moodboard",
+       "date": "2026-11-10"
+      }
+     ]
+    },
+    {
      "id": "mv-banks",
      "name": "The banks fall",
      "at": "1:14",
@@ -137,13 +153,13 @@
    "id": "a-killbots",
    "group": "Part 2 · The humans (not in Premiere yet)",
    "name": "A · Kill bots",
-   "length": "3:29",
-   "state": "round 23 on the page (page ahead: Premiere waits for Kai's 'build it' while the Goodbye session holds the bridge); Premiere still 03 GPOM story A kill bots r17 (round 19)",
+   "length": "4:03",
+   "state": "round 24 on the page (page ahead: Premiere waits for Kai's 'build it'); Premiere still 03 GPOM story A kill bots r17 (round 19)",
    "tone": "wip",
    "scene": "scenes/second-half-a-killbots",
    "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
    "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r17 (same-named bin, radio music left out; Kai's r11 music tail on A1 carried over, its fade still to add by hand); r15 stale; r11-r16 kept; 00 RENDER story still nests r11",
-   "what": "Maddie on the high street; 'we didn't realise how important you were... let me show you what we found'; her Storyverse hologram opens on the materialist stack (society to maths, then consciousness), then dialogue 1F: Derek picks toast and Sandra says sorry first (Kai's stills in the beads), qualia, the multiverse laughed off ('it just isn't decided yet'), a storyverse you write one decision at a time, the value of genuinely unique training data, 'if we could go back and fix it'; the argument re-edited around Sandra; the kill bots, the call to the boss, the stand-down, \"That was close.\" Round 23 is on the page: note it there.",
+   "what": "Maddie on the high street; 'we didn't realise how important you were... let me show you what we found'; her Storyverse hologram opens on the materialist stack (society to maths, then consciousness), then dialogue 1F: Derek picks toast and Sandra says sorry first (Kai's stills in the beads), qualia, the multiverse laughed off ('it just isn't decided yet'), a storyverse you write one decision at a time, new data only comes through you ('we need you'), the boss's time machine that needs consciousness to drive; the argument re-edited around Sandra; a kill bot hears them (vent, lenses, HUD), the kill bots, the call to the boss, the stand-down, \"That was close.\" Round 24 is on the page: note it there.",
    "history": [
     {
      "name": "Dialogue options (the hologram, 1D)",
@@ -263,7 +279,7 @@
     {
      "id": "e-ending",
      "name": "E · The bus, the last line",
-     "state": "SIGNED OFF (round 6, Kai 4 Nov: \"Okay, perfect. I'd say let's send that.\") · Premiere 07 GPOM story E ending r3, in sync, in 00 RENDER story",
+     "state": "SIGNED OFF (round 9, Kai 10 Nov: \"nailed it... call that a wrap\"): new last line, D's last shot on the phone, bank sign painted in, grittier Parliament from Westminster Bridge · Premiere still 07 GPOM story E ending r4 in 00 RENDER story: r5 (the round 9 cut) OWED",
      "tone": "premiere",
      "scene": "scenes/second-half-e-ending",
      "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"

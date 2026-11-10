@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01r9-t1.mp4",
+ "made": "2026-11-10T18:21:06.254Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Fixed frame, no camera move. She sits quietly on the night bus watching the phone held level in both hands; her thumbs rest still. The phone's picture never changes: the white room of empty chairs and the small robot whose tiny amber light stays a small dim dot, never brightening or spreading. Rain beads trickle down the window behind her and blurred street lights pass outside. One continuous shot.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E01h2-b.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E01h2-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 6
+ },
+ "source_id": "c52205c5-f004-4b2c-b140-93ddefeb5716"
+}

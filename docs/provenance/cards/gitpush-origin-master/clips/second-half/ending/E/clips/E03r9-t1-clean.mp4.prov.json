@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r9-t1-clean.mp4",
+ "made": "2026-11-10T18:35:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "opencv",
+ "tool": "scripts/gpom/second-half-video/ending/detext_blue.py (lips venv)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E03r9-t1.mp4",
+ "why": "Omni wrote a second 'DOWNLA...' on the blue board next to the bank as the bus uncovered it; wiped",
+ "settings": {
+  "box": "550,325,725,385"
+ }
+}

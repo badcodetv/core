@@ -637,7 +637,9 @@ export async function setWorkspace(page: Page, name: string): Promise<string> {
   // 🔴 2026-09-18: `button` alone also matches the PICKER TRIGGER, whose label is the current
   //    workspace name — so once the form already reads `gpom-story` the click hit the open trigger
   //    and timed out. Rows carry no aria-haspopup; the trigger does.
-  const row = page.locator('button:not([aria-haspopup])', { hasText: new RegExp(`^\\s*${esc}\\s*(\\(\\d[\\d,]*\\s+clips?\\))?\\s*$`, 'i') })
+  // 🔴 2026-11-10: a HIDDEN split button (hxc-btn-split-inner, aria-pressed) also carries the workspace
+  //    name, and .first() hit it and timed out "not visible". Only visible rows count.
+  const row = page.locator('button:not([aria-haspopup]):visible', { hasText: new RegExp(`^\\s*${esc}\\s*(\\(\\d[\\d,]*\\s+clips?\\))?\\s*$`, 'i') })
   // 2026-10-08: no row means the workspace does not exist yet. The + button right of the search box
   // creates it under the typed name (automation.md §8, proven by hand 2026-09-17); the row then appears.
   if (!(await row.count())) {

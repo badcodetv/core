@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E02r-a.jpg",
+ "made": "2026-11-10T17:33:15.650Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "On the top deck, she holds her phone low in her lap while the shut bank sits outside the rainy glass. Put the second picture on that small phone display: seen from high above, a vast white hall of curved rows of empty black chairs, a few blankets and orange mugs left on them, cables across a pale floor, and a minute white robot with an amber lamp near the bottom centre. The display holds only that scene, no writing anywhere on it. Leave her, the bus interior, the window, the street and the bank untouched from the first picture.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E02p-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E02p-b.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/D16n-last.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 4
+ },
+ "source_id": "9063f8df-fd9a-446c-a0fa-bdb65ed7f376"
+}

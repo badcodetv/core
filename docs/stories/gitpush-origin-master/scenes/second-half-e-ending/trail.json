@@ -57,5 +57,109 @@
   "decided": [
    "Kai picked e-b"
   ]
+ },
+ {
+  "at": "2026-11-10T16:40:38+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "what": "notes dumped before round 7 (5, none new); Premiere r3 re-checked: no hand edits (the 26 'effects' were built-in Motion/Opacity/Volume slots at defaults; premiere-check fixed), in sync; phone screens in E01/E02 still show the OLD D16 frame, D now ends on D16n",
+  "feedback": "feedback/timeline-r7",
+  "feedback_docs": 5
+ },
+ {
+  "at": "2026-11-10T16:50:47+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 7 answered on the page: at554 (new last words) + the phone still on D's old frame; nothing generated yet, waiting on Kai's go",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending <out>",
+  "feedback": "feedback/timeline-r7",
+  "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-10T17:10:26+00:00",
+  "stage": "picks",
+  "round": 7,
+  "url": "https://claude.ai/artifact/RLCahBkW1HzeDG92PD6PQN",
+  "what": "last-line picks: Suno revision J, 4 takes + keep-the-old option",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending/e-r7-lastline-picks.json <out>"
+ },
+ {
+  "at": "2026-11-10T17:20:43+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 7 in: Kai's pick J w10 b1fecf5a ('I made it. Now let's get to work. I can't come back again.'), 2.4 s pauses, Parliament tail forward-then-back; Premiere 07 GPOM story E ending r4 built, in sync, swapped into 00 RENDER story (Scale 150)",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_e.py --tag r7 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending <out>",
+  "decided": [
+   "Kai at554: 'now let's get to work... I can't come back again'",
+   "Kai: 'this is the one right here' (b1fecf5a)"
+  ]
+ },
+ {
+  "at": "2026-11-10T17:40:29+00:00",
+  "stage": "picks",
+  "round": 8,
+  "url": "https://claude.ai/artifact/SMbqDv3zmQZAN4MgDbRbho",
+  "what": "round 8 picks: phone stills with D16n composited (E01c-a/E01h-a/E01h-b, E02c-a/E02h-a) + Parliament P1-P4 (8 stills)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending/e-r8-picks.json <out>"
+ },
+ {
+  "at": "2026-11-10T17:40:29+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 8 notes answered (at126, at361, at786 + chat: phone); picks first",
+  "feedback": "feedback/timeline-r8",
+  "feedback_docs": 9
+ },
+ {
+  "at": "2026-11-10T18:00:37+00:00",
+  "stage": "timeline",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 8 in: phone shows D16n (E01r8-t1, E02r8-t2-a), E01 5 s (scene 33.0 s), E03 sign fitted to fascia perspective, rain/street tail -12 dB, Parliament P1-a (E04r8-t2, 81% speed); Premiere waits (chorus thread has it)",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_e.py --tag r8 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending <out>",
+  "decided": [
+   "Kai picks: E01h-a, E02c-a, P1-a",
+   "Kai: phone must show D's new last shot ('that transition is crucial')"
+  ]
+ },
+ {
+  "at": "2026-11-10T18:09:25+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 9 notes (at28 blob, at303 sign, at527 Parliament earlier+grittier, at730 timing) answered; picks first",
+  "feedback": "feedback/timeline-r9",
+  "feedback_docs": 13
+ },
+ {
+  "at": "2026-11-10T18:09:25+00:00",
+  "stage": "picks",
+  "round": 9,
+  "url": "https://claude.ai/artifact/4QPEyEtPMRQqTAtJKgC7to",
+  "what": "round 9 picks: E01c-a vs E01h-a; E03s-a/b/c (sign painted in); P1g-a/b/c (grittier Parliament)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending/e-r9-picks.json <out>"
+ },
+ {
+  "at": "2026-11-10T18:36:26+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "url": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4",
+  "what": "round 9 in: E01 robot patched (E01r9-t2-patched), E03 sign painted (E03r9-t1-clean), Parliament P1g-b 1 s early (E04r9 chain), bus 7.08 s, +1 s hold, music last note after the line; 32.96 s",
+  "rebuild": "python3 scripts/gpom/second-half-video/ending/cut_end_e.py --tag r9 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-e-ending <out>",
+  "decided": [
+   "Kai picks: E01h-a, E03s-a, P1g-b"
+  ]
+ },
+ {
+  "at": "2026-11-10T18:39:27+00:00",
+  "stage": "timeline",
+  "round": 9,
+  "what": "SIGNED OFF (Kai: 'nailed it... call that a wrap'); Premiere r5 not built: Kai released the bridge to the chorus session",
+  "decided": [
+   "Kai: \"That's the one Claude, nailed it, well done, let's call that a wrap\""
+  ]
  }
 ]

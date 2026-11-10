@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E04r8-t2.mp4",
+ "made": "2026-11-10T17:52:21.858Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Tripod shot, the frame never moves. Heavy rain falls slantwise through the white streetlight onto Westminster Bridge; drops bounce and ripple in the shining puddles on the pavement; the red tail lights of a car slide slowly away down the bridge and fade. The clock tower and the Houses of Parliament stand still and dark under a black sky. No people, no cuts.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P1-bridge-a.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P1-bridge-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 10
+ },
+ "source_id": "643d3014-7594-45be-9994-cd279b42df64"
+}

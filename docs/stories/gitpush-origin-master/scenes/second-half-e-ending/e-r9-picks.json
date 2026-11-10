@@ -1,0 +1,25 @@
+{
+ "title": "Ending Round 9 Picks",
+ "eyebrow": "GPOM · E the ending · timeline round 9",
+ "heading": "The phone without the blob, a real bank sign, a grittier Parliament",
+ "intro": "Three picks, then I animate them (Omni 1.2) and cut round 9 with your timing notes: the bus shot 2 s shorter, Parliament on screen 1 s before 'I made it', and at least 1 s more after the last word for the music to tail off.",
+ "sections": [
+  {"h": "E01: the white blob on the phone (at28)", "lede": "The blob is Maddie's beacon, blown out into a white disc by Flow's light pass in E01h-a. E01c-a is the same picture without that pass: D's frame, beacon small.", "groups": [
+   {"slot": "e01-phone-r9", "title": "Pick the plate to re-animate", "line": "My lean: E01c-a.", "kind": "image", "opts": [
+     {"id": "E01c-a", "src": "s/E01c-a.jpg", "label": "E01c-a: D's frame on the screen, no light pass", "warn": ""},
+     {"id": "E01h-a", "src": "s/E01h-a.jpg", "label": "E01h-a: the one in the cut (light pass)", "warn": "the beacon blows out into a white blob"},
+     {"id": "blob", "src": "s/blob.jpg", "label": "the blob, at 1.2 s in the cut (not a pick)", "warn": ""}]}]},
+  {"h": "E03: the bus shot, the bank sign painted in (at303)", "lede": "Instead of lettering laid over the moving shot, Flow paints DOWNLAND BANK onto the board in the still, so it sits in the building's perspective and moves with it. Then the shot is re-animated (and it only needs 7 s now).", "groups": [
+   {"slot": "e03-sign-r9", "title": "Pick the bus plate", "line": "My lean: E03s-a. E03s-c lost the bank's door.", "kind": "image", "opts": [
+     {"id": "E03s-a", "src": "s/E03s-a.jpg", "label": "E03s-a: name and notice painted in", "warn": ""},
+     {"id": "E03s-b", "src": "s/E03s-b.jpg", "label": "E03s-b: the same, notice a little larger", "warn": ""},
+     {"id": "E03s-c", "src": "s/E03s-c.jpg", "label": "E03s-c", "warn": "the door is gone"},
+     {"id": "old", "src": "s/E03r4b-c.jpg", "label": "the plate now (blank board, name added in post)", "warn": ""}]}]},
+  {"h": "Parliament: grittier, to match the high street (at527)", "lede": "Your bridge shot re-shot as if on the bus shot's camera: grain, duller lamps, smeary rather than glossy reflections, haze.", "groups": [
+   {"slot": "e04-parl-r9", "title": "Pick the Parliament plate", "line": "My lean: P1g-c (hazy, grainy, the closest to the high street) or P1g-a.", "kind": "image", "opts": [
+     {"id": "P1g-a", "src": "s/P1g-a.jpg", "label": "P1g-a: grain, flatter light", "warn": ""},
+     {"id": "P1g-b", "src": "s/P1g-b.jpg", "label": "P1g-b: warmer, two walkers added", "warn": "adds people"},
+     {"id": "P1g-c", "src": "s/P1g-c.jpg", "label": "P1g-c: hazy and grainy", "warn": ""},
+     {"id": "P1-a", "src": "s/P1-bridge-a.jpg", "label": "P1-a as in the cut now (glossy)", "warn": ""}]}]}
+ ]
+}

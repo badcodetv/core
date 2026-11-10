@@ -26,6 +26,45 @@ _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 
 from localmap import localize  # noqa: E402
 
 
+# Every clip carries these built-in slots (a dump read with params on lists them). They are not
+# effects anyone added; they count only once a value moves off its default or gets keyframes.
+# (2026-11-10: GPOM E r3 read "26 effects added" = 5 x Opacity+Motion + 8 x Volume+Channel Volume.)
+_ZERO_DB = 0.17782793939113617
+_DEFAULTS = {
+    'AE.ADBE Opacity': {'Opacity': 100},
+    'AE.ADBE Motion': {'Position': [0.5, 0.5], 'Scale': 100, 'Scale Width': 100, 'Rotation': 0,
+                       'Anchor Point': [0.5, 0.5], 'Anti-flicker Filter': 0, 'Crop Left': 0,
+                       'Crop Top': 0, 'Crop Right': 0, 'Crop Bottom': 0},
+    'Internal Volume Stereo': {'Level': _ZERO_DB, 'Mute': False},
+    'Internal Channel Volume Stereo': None,  # every channel at 0 dB
+}
+
+
+def _close(a, b):
+    if isinstance(a, list) and isinstance(b, list):
+        return len(a) == len(b) and all(_close(x, y) for x, y in zip(a, b))
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)) and not isinstance(a, bool):
+        return abs(a - b) < 1e-3
+    return a == b
+
+
+def _added(comp):
+    """True if this component is a real effect, or a built-in slot Kai has changed."""
+    d = _DEFAULTS.get(comp.get('matchName'), 'none')
+    if d == 'none':
+        return True
+    for p in comp.get('params', []):
+        if p.get('keyframes'):
+            return True
+        if d is None:
+            if isinstance(p.get('value'), (int, float)) and not isinstance(p['value'], bool) \
+                    and not _close(p['value'], _ZERO_DB):
+                return True
+        elif p.get('name') in d and not _close(p.get('value'), d[p['name']]):
+            return True
+    return False
+
+
 def check(rec):
     edl_p = pathlib.Path(rec['edl'])
     st_p = pathlib.Path(rec['project']).parent / '.bridge' / f'state-{rec["sequence"]}.json'
@@ -43,7 +82,8 @@ def check(rec):
             diffs.append(f'shot {i + 1} retimed')
     if abs(st['sequence']['end'] - edl['total']) > 0.05:
         diffs.append(f'length {st["sequence"]["end"]:.2f}s, edl {edl["total"]:.2f}s')
-    fx = sum(len(c.get('components', [])) for t in st['videoTracks'] + st['audioTracks'] for c in t['items'])
+    fx = sum(_added(x) for t in st['videoTracks'] + st['audioTracks'] for c in t['items']
+             for x in c.get('components', []))
     if fx:
         diffs.append(f'{fx} effects added')
     if diffs:

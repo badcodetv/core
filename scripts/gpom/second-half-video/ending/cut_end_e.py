@@ -52,17 +52,17 @@ E2_PHRASES = [(0.00, 0.90, 'I made it.'), (4.08, 6.42, 'Now the real work starts
 # jumps at the end of E03, so leave it sooner), and a third sentence after a pause, stern, not angry (at699): "Don't
 # make me come back twice." It is cut from the 21 Oct take of atom -e1 (32047e7e, the same badcode newsreader Voice),
 # which already says it as its own sentence: speech 5.66-7.20 s on its level map, cut 5.60-7.45 (the tail's decay).
-R4 = E.TAG in ('r4', 'r5', 'r6')
+R4 = E.TAG in ('r4', 'r5', 'r6', 'r7', 'r8', 'r9')
 # --tag r5 (Kai, 4 Nov, after round 4): "Now the real work starts." is cut; "I made it." then, slower, "Don't make me
 # come back twice." as the landing punchline of the whole story. Until the slower Suno re-take exists, the 21 Oct
 # read stands in, after a longer pause.
-R5 = E.TAG in ('r5', 'r6')
+R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9')
 if R5:
     E2_PHRASES = E2_PHRASES[:1]
     LINE_TEXT = 'I made it.'
 AI_TAKE_E1 = 'gpom-sh-end-ai-e-a-v6-w10-32047e7e.wav'
 E3_PHRASE = (5.60, 7.45, "Don't make me come back twice.")
-STERN_GAP = 2.4 if E.TAG in ('r5', 'r6') else 1.4    # the pause before it (from the end of "Now the real work starts.")
+STERN_GAP = 2.4 if E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9') else 1.4    # the pause before it (from the end of "Now the real work starts.")
 # --tag r6 (Kai, 4 Nov): his pick of Suno revision I, take 0ecce5dc ("I made it. Don't make me come back twice.", slower,
 # the punchline) for BOTH sentences. Level map (40 dB under peak, 20 ms): "I made it." 0.12-0.75 s, then a 7.7 s
 # silence (not used whole: the cut keeps the 2.4 s pause he approved in round 5), "Don't make me come back twice."
@@ -74,6 +74,34 @@ if E.TAG == 'r6':
     # Kai's Parliament pick e-b (E04r4a-e-b: his pick E04r4-a, edited for a light drizzle and a cleaner picture),
     # animated as E04r4-t1 (Omni Flash, 10 s, camera locked). Played from 0.3 s.
     E04_CLIP, E04_IN = 'E04r4-t1.mp4', 0.3
+# --tag r7 (Kai, 10 Nov, E timeline round 7, at554): the line is now "I made it. Now let's get to work. I can't come
+# back again." (the stakes, not a threat), all three from his pick of Suno revision J, take b1fecf5a (20.00 s). Level
+# map (40 dB under peak, 20 ms): 0.02-0.66 / 4.96-6.22 / 9.66-11.16 s; whisper word-perfect. The take's own pauses
+# (4.3 s, 3.4 s) are not used whole: each new sentence comes 2.4 s after the last, the pause Kai approved in round 5.
+# Parliament is unchanged (E04r4-t1); three sentences outrun its 9.7 s, so its tail plays forward-then-back (looped).
+E3_PHRASES = None
+R8 = E.TAG in ('r8', 'r9')   # r9 builds on r8
+R9 = E.TAG == 'r9'
+# --tag r9 (Kai, 10 Nov, E round 9): E01 from Kai's pick E01h-a (lamp off, E01h3-c, Omni 1.2 E01r9-t2), the robot on the
+# phone patched from the clean composite E01c-a (phone_patch.py: Omni draws it as a white disc in every take, at28);
+# the bus shot re-made with DOWNLAND BANK painted on the board by Flow (Kai's pick E03s-a, E03r9-t1, one 8 s clip, no
+# post lettering, at303); the bus shot 2 s shorter, Parliament 1 s BEFORE 'I made it.', one more second after the last
+# word, the music's last note after it (at527, at730); a grittier Parliament (Kai's pick P1g-b, E04r9-t2 + its
+# continuation E04xr9-t2 from the last frame, at527).
+E01_R9, E03_R9, E04_R9, E04X_R9 = 'E01r9-t2-patched.mp4', 'E03r9-t1-clean.mp4', 'E04r9-t2.mp4', 'E04xr9-t2.mp4'
+PRE_PARL = 1.0 if R9 else 0.0   # seconds of Big Ben before 'I made it.'
+# --tag r8 (Kai, 10 Nov, E round 8): the phone shows D's NEW last shot (D16n; Kai's picks E01h-a / E02c-a, D's frame
+# placed on the screen in the still, then animated on Omni 1.2: E01r8-t1, E02r8-t2-a); E01 5 s (at126); the E03 bank
+# name fitted to the fascia's perspective (at361); the street and rain tail off under the last line (at786); and a new
+# Parliament, from Westminster Bridge (Kai's pick P1-a, E04r8-t2, Omni 1.2, 10 s), slowed to fit instead of looped.
+E01_R8, E02_R8, E04_R8 = 'E01r8-t1.mp4', 'E02r8-t2-a.mp4', 'E04r8-t2.mp4'
+FASCIA_QUAD = '466,333,551,337,551,372,466,366'
+MAX_SLOW = 1.3   # a locked rain shot may play down to 1/1.3 speed before it shows
+if E.TAG in ('r7', 'r8', 'r9'):
+    AI_TAKE_E2 = AI_TAKE_E1 = 'gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav'
+    E2_PHRASES = [(0.0, 0.80, 'I made it.')]
+    E3_PHRASES = [(4.88, 6.40, "Now let's get to work."), (9.58, 11.35, "I can't come back again.")]
+    E04_CLIP, E04_IN = (E04_R9, 0.0) if R9 else (E04_R8, 0.0) if R8 else ('E04r4-t1.mp4', 0.3)
 CODA = 'gpom-sh-e-coda-a-v6-w60-18b34a9d.wav'
 # The coda's one edit (measured on its level envelope, 0.1 s frames): its opening piano phrase decays to a low point
 # at 9.05 s; the take's later phrase onset at 23.45 s follows straight on, skipping the first rise. The held-chord
@@ -98,6 +126,13 @@ TRACE = "asplit=2[d][s];[s]" + E.SPEAKER + "[s2];[d][s2]amix=inputs=2:weights='0
 E03_HOLD, E03_FADE = 1.3, 1.5   # after the last word: TAIL plus a held beat, then the fade to black
 SFXE = E.CLIPS / 'ending' / 'E' / 'sfx'
 MUS_IN = 7.0       # the coda comes in on the cut to E02
+if E.TAG == 'r9':  # bus shot 7.08 s (11.0 -> 18.08), Parliament from 18.08, 'I made it.' 1 s later; the coda's last
+    LINE_AT = 19.1  # low note (MUS_IN + 22.2) lands ~1 s after the last word (Kai at730), and the hold is 1 s longer
+    MUS_IN = 6.8
+    E03_HOLD += 1.0
+if E.TAG == 'r8':  # E01 is 2 s shorter (Kai at126): the line and the music's entry move with it, so the bus shot
+    LINE_AT -= 2.0  # keeps its 9.08 s (and leaves before the bus jumps, at529) and the whole scene is 2 s shorter
+    MUS_IN -= 2.0
 
 
 def ed(t):
@@ -220,15 +255,15 @@ def scene_e(sc):
     b = c.beat('e1', 'The bus', 0.0, act='The ending',
                see='Hard cut on sound: a woman on the top deck at night, watching her phone. On it, gleaming Maddie '
                    'among the empty chairs (the last frame of D, composited). Tinny, through the phone: "Mind how you go."')
-    e01 = sc.clip('E01')
+    e01 = pathlib.Path(sc.clips['media']) / (E01_R9 if R9 else E01_R8) if R8 else sc.clip('E01')
     # E round 3 (Kai: the overlaid screen looked grainy and pasted on): E01p-t1, where Flow painted D's last frame onto
     # the phone in-camera (the still E01p-b, Kai's pick). No ffmpeg screen overlay any more.
     comp01 = e01
-    d01 = 7.0
+    d01 = 5.0 if R8 else 7.0   # r8 (Kai at126): five seconds, not seven
     push01 = V / f'{e01.stem}-push.mp4'
     if not push01.exists():
-        lips('move_keys.py', comp01, push01, '--in', '0', '--dur', f'{d01}',
-             '--keys', '0:1:640:360,1.5:1:640:360,7:1.1:630:455')
+        keys = '0:1:640:360,1.0:1:640:360,5:1.1:630:455' if R8 else '0:1:640:360,1.5:1:640:360,7:1.1:630:455'
+        lips('move_keys.py', comp01, push01, '--in', '0', '--dur', f'{d01}', '--keys', keys)
     c.pic(push01, 0.0, 0.0, d01, 'e1', source=e01)
     ph = sc.voice('e1-0-maddie')
     sp0, sp1 = sc.vox['lines']['e1-0-maddie']['speech']
@@ -253,7 +288,7 @@ def scene_e(sc):
     b = c.beat('e2', 'She looks up', t, act='The ending',
                see='Over her shoulder: the empty chairs on her phone, her own high street through the wet window (the '
                    'chip shop, the pharmacy, the closed bank). She looks up from one to the other.')
-    e02 = sc.clip('E02')
+    e02 = pathlib.Path(sc.clips['media']) / E02_R8 if R8 else sc.clip('E02')
     comp02 = e02  # E round 3: E02p-t1, the screen painted in-camera (Kai's pick E02p-b); no overlay
     sign02 = V / f'{e02.stem}-bank.mp4'
     if not sign02.exists():
@@ -274,11 +309,15 @@ def scene_e(sc):
     b = c.beat('e3', 'The bus drives away', s3, act='The ending',
                see='Tight on the lit red bus (140%), a 1.5 s hold, then an eased pull-back to the whole wet high street as '
                    'the bus pulls away. The AI, unfiltered and close, for the first time (its line owed). Fade to black.')
-    e03 = chain_e03(sc, V / 'E03r4-chain.mp4')
-    banked = V / 'E03r4-bank.mp4'
-    if not banked.exists():
-        lips('bank_sign_e03.py', e03, banked, '--name', 'DOWNLAND BANK')
-    graded, note = regrade(banked, V / 'E03r4-chain-graded.mp4')
+    if R9:  # one clip, the sign painted in by Flow: no chain, no post lettering, no drift regrade
+        graded = pathlib.Path(sc.clips['media']) / E03_R9
+        note = 'E03 (round 9): one 8 s clip (E03r9-t1) from the plate with DOWNLAND BANK painted on the board (E03s-a).'
+    else:
+        e03 = chain_e03(sc, V / 'E03r4-chain.mp4')
+        banked = V / 'E03r4-bank.mp4'
+        if not banked.exists():
+            lips('bank_sign_e03.py', e03, banked, '--name', 'DOWNLAND BANK', *(['--fascia-quad', FASCIA_QUAD] if R8 else []))
+        graded, note = regrade(banked, V / 'E03r4-chain-graded.mp4')
     c.flags.append(note.replace('(sh-29 + E03x)', '(E03r4-t1 + E03xr4-t1)').replace(
         'the warm chip shop drifts out of frame', 'the rain thickens'))
     c.flags.append(f'E03 (Kai reel at4010, ending round 2): the red bus on an EMPTY road. The plate was edited again '
@@ -306,13 +345,23 @@ def scene_e(sc):
         else:
             e = c.say('vox-ai', take, a_, b_, tt, f'e3: the AI, his own voice: "{w}"', chain=EQ, lufs=-17.5, ref=atom)
     line_end = e
-    if R4:
+    if E3_PHRASES:
+        m['after'] = []
+        for a_, b_, w in E3_PHRASES:
+            t3 = fr(line_end + STERN_GAP)
+            line_end = c.say('vox-ai', sc.media / 'suno' / AI_TAKE_E1, a_, b_, t3, f'e3: the AI, his own voice: "{w}"',
+                             chain=EQ, lufs=-17.5, ref=(E3_PHRASES[0][0], E3_PHRASES[-1][1]))
+            m['after'].append((t3, line_end))
+        LINE_TEXT_ = LINE_TEXT + ' ' + ' '.join(w for _, _, w in E3_PHRASES)
+    elif R4:
         a_, b_, w = E3_PHRASE
         t3 = fr(line_end + STERN_GAP)
         line_end = c.say('vox-ai', sc.media / 'suno' / AI_TAKE_E1, a_, b_, t3, f'e3: the AI, stern, his own voice: "{w}"',
                          chain=EQ, lufs=-17.5, ref=(a_, b_))
         m['stern'] = (t3, line_end)
-    c.line(b, 0, 'ai', L, line_end - L, LINE_TEXT + (' ' + E3_PHRASE[2] if R4 else ''), 'kai')
+    if not E3_PHRASES:
+        LINE_TEXT_ = LINE_TEXT + (' ' + E3_PHRASE[2] if R4 else '')
+    c.line(b, 0, 'ai', L, line_end - L, LINE_TEXT_, 'kai')
     b['lines'][-1]['name'] = 'The AI (opening to his own voice, for the first time)'
     # E round 3 (Kai): the last shot is the Houses of Parliament at night in the rain, so "Now the real work starts."
     # lands on that building (and we leave the bus shot before it jumps). "I made it." stays over the bus pulling away;
@@ -322,35 +371,87 @@ def scene_e(sc):
     total_e = fr(MUS_IN + ed(MUS_END) + 0.6)
     if R4:
         total_e = max(total_e, fr(line_end + TAIL + E03_HOLD + E03_FADE + 0.6))
-    cut_p = fr(L) if R4 else fr(L + (E2_PHRASES[1][0] - E2_PHRASES[0][0]) - 0.3)
+    cut_p = fr(L - PRE_PARL) if R4 else fr(L + (E2_PHRASES[1][0] - E2_PHRASES[0][0]) - 0.3)
     d03 = fr(cut_p - s3)
-    pull = V / f'E03r4-pull-to-{d03:.3f}.mp4'
+    pull = V / f'{"E03r9" if R9 else "E03r4"}-pull-to-{d03:.3f}.mp4'
     if not pull.exists():
-        lips('move_keys.py', graded, pull, '--in', '0', '--dur', f'{d03:.4f}',
-             '--keys', '0:1.4:740:410,1.5:1.4:740:410,9.5:1:640:360')
+        keys = '0:1.4:730:410,1.2:1.4:730:410,6.6:1:640:360' if R9 else '0:1.4:740:410,1.5:1.4:740:410,9.5:1:640:360'
+        lips('move_keys.py', graded, pull, '--in', '0', '--dur', f'{d03:.4f}', '--keys', keys)
     c.pic(pull, 0.0, s3, cut_p, 'e3', source=sc.clips['media'] + '/' + E03_HEAD)
     end_p = fr(min(line_end + TAIL + E03_HOLD + E03_FADE, total_e - 0.6))
     dp = fr(end_p - cut_p)
     fade_at, fade_d = dp - E03_FADE, E03_FADE
     e04 = pathlib.Path(sc.clips['media']) / E04_CLIP
+    if R9:  # the 10 s shot and its continuation from its last frame, joined as E03 was; a touch of grain (at527)
+        ch = V / 'E04r9-chain.mp4'
+        if not ch.exists():
+            a_, b_ = e04, pathlib.Path(sc.clips['media']) / E04X_R9
+            off = C3.dur(a_) - 0.3
+            fc = (f'[0:v]fps={FPS},setpts=PTS-STARTPTS[a];[1:v]fps={FPS},trim=start_frame=1,setpts=PTS-STARTPTS[b];'
+                  f'[a][b]xfade=transition=fade:duration=0.3:offset={off:.4f},noise=alls=7:allf=t[v]')
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(a_), '-i', str(b_), '-filter_complex', fc,
+                            '-map', '[v]', *E.ENC, str(ch)], check=True)
+        e04 = ch
     parl = V / f'{pathlib.Path(E04_CLIP).stem}-push-{dp:.3f}.mp4'
-    if E.TAG in ('r4', 'r5') and not parl.exists():
-        # placeholder until the new Parliament shot is picked: the old 6 s clip played forward then back (looped)
-        fb = V / f'E04p-fb.mp4'
+    avail = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0',
+                                  str(e04)], capture_output=True, text=True).stdout or 0) - E04_IN
+    pingpong = E.TAG in ('r4', 'r5') or (E.TAG in ('r7', 'r8') and dp > avail * (MAX_SLOW if R8 else 1) - 0.05)
+    slowed = R8 and not pingpong and dp > avail - 0.05
+    if slowed and not parl.exists():
+        # r8: the new Parliament (10 s) is a little short for the three-sentence line: played slower, not looped
+        k = (dp + 0.1) / avail
+        sl = V / f'{pathlib.Path(E04_CLIP).stem}-slow.mp4'
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{E04_IN}', '-i', str(e04), '-vf',
+                        f'setpts={k:.4f}*PTS,fps=24', '-an', *C.ENC, str(sl)], check=True)
+        e04 = sl
+    elif slowed:
+        e04 = V / f'{pathlib.Path(E04_CLIP).stem}-slow.mp4'
+    if pingpong and not parl.exists():
+        # r4/r5: placeholder until the new Parliament shot is picked: the old 6 s clip played forward then back.
+        # r7: the three-sentence line outruns the clip, so its tail plays back (looped), under the fade.
+        fb = V / ('E04p-fb.mp4' if E.TAG in ('r4', 'r5') else f'{pathlib.Path(E04_CLIP).stem}-fb.mp4')
         if not fb.exists():
             subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{E04_IN}', '-i', str(e04), '-filter_complex',
                             '[0:v]split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]', '-map', '[v]', *C.ENC, str(fb)],
                            check=True)
         e04, E04_IN_ = fb, 0.0
     else:
-        E04_IN_ = E04_IN
+        E04_IN_ = 0.0 if slowed else E04_IN
     if not parl.exists():
         lips('move_keys.py', e04, parl, '--in', f'{E04_IN_}', '--dur', f'{dp:.4f}',
              '--keys', f'0:1:640:360,{dp:.3f}:1.06:640:340', '--fade-out', f'{fade_at:.4f}:{fade_d}')
     pc = c.pic(parl, 0.0, cut_p, end_p, 'e3', source=e04)
-    if E.TAG in ('r4', 'r5'):
+    if pingpong:
         pc['looped'] = True
-    if E.TAG == 'r6':
+    if R9:
+        c.flags.append(f'E round 9 (Kai, 10 Nov): E01 is Kai\'s pick E01h-a with the robot\'s lamp off (E01h3-c), animated '
+                       '(E01r9-t2) and the robot patched from D\'s frame (phone_patch.py), because Omni drew it as a white '
+                       'disc in every take (at28). The bus shot is one clip from a plate where Flow painted DOWNLAND BANK on '
+                       f'the board itself (E03s-a, E03r9-t1; at303), {d03:.2f} s. Parliament comes in {PRE_PARL:.1f} s before '
+                       '"I made it." (at527) and is Kai\'s grittier pick P1g-b (E04r9-t2 + its continuation E04xr9-t2, '
+                       f'joined, light grain), {dp:.1f} s. One more second after the last word; the coda\'s last note lands '
+                       'after it (at730).')
+    elif R8:
+        c.flags.append(f'E round 8 (Kai, 10 Nov): the phone shows D\'s NEW last shot. Flow could not paint D16n\'s wide '
+                       'high framing at phone size, so D\'s actual frame was placed on the screen in the stills (Kai\'s '
+                       'picks E01h-a, Flow-lit, and E02c-a) and Omni 1.2 animated them (E01r8-t1; E02r8-t2-a, the re-roll '
+                       'that keeps the phone sideways: t1 turned it upright and went white). E01 is 5 s (at126). The '
+                       'DOWNLAND BANK name in E03 is fitted to the fascia\'s own perspective (at361). The street and rain '
+                       'tail off under the last line (at786). The last shot is Kai\'s new Parliament, from Westminster '
+                       f'Bridge (P1-a, E04r8-t2, Omni 1.2, 10 s), played at {avail / (dp + 0.1) * 100:.0f}% speed to fit '
+                       f'{dp:.1f} s, not looped; a slow push 100 -> 106% and the fade.')
+    if R8:
+        c.flags.append(f'The line (Kai at554, round 7): "{LINE_TEXT_}", Suno revision J take b1fecf5a, {STERN_GAP} s before '
+                       'each new sentence. "I made it." keeps a 40% trace of Maddie\'s speaker; the rest is his own voice.')
+    elif E.TAG == 'r7':
+        c.flags.append(f'E round 7 (Kai at554, 10 Nov): the line is "{LINE_TEXT_}", all three sentences from his pick of '
+                       f'Suno revision J, take b1fecf5a; whisper word-perfect. Each new sentence comes {STERN_GAP} s after '
+                       'the last (the pause he approved in round 5; the take\'s own pauses were 4.3 s and 3.4 s). '
+                       '"I made it." keeps the 40% trace of Maddie\'s speaker; the other two are his own voice. '
+                       f'Parliament (E04r4-t1) is unchanged but now runs {dp:.1f} s against {avail:.1f} s of clip, so its '
+                       'last stretch plays forward-then-back under the fade (striped). A Flow extension of the shot would '
+                       'remove that. The phone in E01/E02 still shows D\'s OLD last frame (owed).')
+    elif E.TAG == 'r6':
         c.flags.append(f'E round 6 (Kai, 4 Nov): the cut to Parliament is ON "I made it." ({L - s3:.1f} s into the bus '
                        'shot; at529: the bank sign skews and the bus jumps at the end of E03). "Now the real work '
                        f'starts." is cut; after a {STERN_GAP} s pause, "{E3_PHRASE[2]}", slower, the punchline. Both '
@@ -363,16 +464,17 @@ def scene_e(sc):
                        f'"{E3_PHRASE[2]}" {STERN_GAP} s after "{E2_PHRASES[-1][2]}", stern, from the 21 Oct take '
                        '32047e7e (same Voice); then a held beat and the fade. PLACEHOLDER picture: the old Parliament '
                        'clip played forward then back, until the new, real-looking shot is picked.')
-    if E.TAG != 'r6': c.flags.append(f'E04 (E round 3, Kai: "I want it to infer in that building"; pick E04p-a): the last shot is the '
+    if E.TAG not in ('r6', 'r7', 'r8', 'r9'): c.flags.append(f'E04 (E round 3, Kai: "I want it to infer in that building"; pick E04p-a): the last shot is the '
                    f'Houses of Parliament at night in the rain (E04p-t1, 8 s, Omni camera-locked: rain, river and clouds '
                    f'move, the building holds). The cut from the bus comes 0.3 s before "Now the real work starts.", so '
                    f'"I made it." stays over the bus pulling away; {dp:.1f} s of Parliament with a slow push 100 -> 106%, '
                    f'the fade to black starting {cut_p + fade_at - line_end:.1f} s after the last word.')
-    if E.TAG != 'r6': c.flags.append(f'The last line (Kai\'s pick, Suno rev H, take 22571839): "{LINE_TEXT}". "I made it." at '
+    if E.TAG not in ('r6', 'r7', 'r8', 'r9'): c.flags.append(f'The last line (Kai\'s pick, Suno rev H, take 22571839): "{LINE_TEXT}". "I made it." at '
                    f'{L - s3:.1f} s into the shot, on the coda\'s held-chord pocket; the take\'s own 3.2 s pause is KEPT, so '
                    f'"Now the real work starts." lands as the cello\'s last phrase begins; it ends {line_end - s3:.1f} s in. '
                    'Cut on the take\'s silence map, not whisper.')
-    if E.TAG == 'r6': c.flags.append('Voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter; "Don\'t make me come back '
+    if E.TAG in ('r7', 'r8', 'r9'): pass
+    elif E.TAG == 'r6': c.flags.append('Voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter; "Don\'t make me come back '
                    'twice." is his own voice, full range, close. The coda ducks 6 dB under both.')
     else: c.flags.append('E03 voice: "I made it." keeps a 40% trace of Maddie\'s speaker filter so the voice is his before it '
                    'changes; "Now the real work starts." is his own voice, full range, close (boom under 110 Hz off, -4 dB '
@@ -510,8 +612,8 @@ def audio_e(c):
     for a_, b_, _ in E2_PHRASES:
         t0, t1 = L0 + a_ - MUS_IN, L0 + b_ - MUS_IN
         pts += [(t0 - 0.4, 1), (t0, 0.5), (t1, 0.5), (t1 + 0.5, 1)]
-    if 'stern' in m:
-        t0, t1 = m['stern'][0] - MUS_IN, m['stern'][1] - MUS_IN
+    for t0_, t1_ in ([m['stern']] if 'stern' in m else []) + m.get('after', []):
+        t0, t1 = t0_ - MUS_IN, t1_ - MUS_IN
         pts += [(t0 - 0.4, 1), (t0, 0.5), (t1, 0.5), (t1 + 0.5, 1)]
     x *= C.env(len(x), sorted(pts + [(d - 0.6, 1), (d, 0)]))
     mx.add('mus-e-coda', x.astype(np.float32), MUS_IN, src,
@@ -550,7 +652,11 @@ def audio_e(c):
     f0, f1 = m['fade']
     dd = f1 + 0.4 - s3
     xs = C.level(C.decode(SFXE / 'fs723695-city-traffic-rainy-night.mp3', 2.0, dd), rms=-32)
-    xs *= C.env(len(xs), [(0, 1), (f0 - s3, 1), (dd, 0)])
+    if R8:  # Kai at786: the rain is too loud at the end; it tails off from the last sentence to -12 dB by the fade
+        lt = m['after'][-1][0] - s3
+        xs *= C.env(len(xs), [(0, 1), (lt - 0.5, 1), (f0 - s3, 0.25), (dd, 0)])
+    else:
+        xs *= C.env(len(xs), [(0, 1), (f0 - s3, 1), (dd, 0)])
     mx.add('sfx-street', xs, s3, SFXE / 'fs723695-city-traffic-rainy-night.mp3', 'rain and traffic on the high street at night (recorded)')
     xb = C.level(C.decode(SFXE / 'fs715718-bus-departs-stop.mp3'), rms=-30)
     nb = len(xb)

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01r9-t2-patched.mp4",
+ "made": "2026-11-10T18:35:43+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "opencv",
+ "tool": "scripts/gpom/second-half-video/ending/phone_patch.py (lips venv)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01r9-t2.mp4",
+ "why": "Kai at28: Omni draws the phone's robot as a white disc in every take; patched from D's frame, tracked",
+ "inputs": {
+  "still": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01c-a.jpg"
+ },
+ "settings": {
+  "at": "638,458",
+  "r": "36,30",
+  "screen": "540,390,740,520"
+ }
+}

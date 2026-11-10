@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E01h3-b.jpg",
+ "made": "2026-11-10T18:21:54.747Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "In this photograph of a woman on a night bus, the tiny robot on her phone screen has a small orange lamp lit on top. Switch that lamp off: the robot is plain white with no light, no glow, no ring. Everything else on the screen and in the photograph is untouched.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E01h2-b.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E01h2-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "0a813053-ba48-4ed6-b702-b8e3be528fb7"
+}

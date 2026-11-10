@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P4-clock-b.jpg",
+ "made": "2026-11-10T17:38:52.942Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Tight telephoto photograph of the great lit clock face of Big Ben at night in the rain, filling most of the frame, its hands near midnight, Gothic stonework around it wet and dark, raindrops streaking white through the floodlight in front of it. Grainy, real, slightly underexposed, a night press photo rather than a postcard. 16:9, full frame, no captions or text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9270179f-aad9-416b-9a8a-bf5d611fb499"
+}

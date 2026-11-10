@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01c-a.jpg",
+ "made": "2026-11-10T17:40:05+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "opencv",
+ "tool": "scripts/gpom/second-half-video/ending/phone_still.py (lips venv)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix5/E01p-b.jpg",
+ "why": "Kai round 8: phone must show D's NEW last shot; Flow could not paint D16n's framing at phone size (E01q/E01r), so D's frame is warped onto the screen, skin kept in front, a soft glow",
+ "inputs": {
+  "screen": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/D16n-last.jpg"
+ },
+ "settings": {
+  "quad": "[[610,429],[776,445],[769,546],[596,541]]"
+ }
+}

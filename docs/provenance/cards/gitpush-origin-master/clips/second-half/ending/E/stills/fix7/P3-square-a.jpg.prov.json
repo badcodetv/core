@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/P3-square-a.jpg",
+ "made": "2026-11-10T17:38:24.616Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Night in an empty Parliament Square during a downpour, a photojournalist's frame from low near the ground: puddles on the tarmac in the foreground mirror the lit Gothic front of the Houses of Parliament and the clock tower behind. Rain hammers the puddle surface, railings and a dark tree at one side, no people. Real camera noise, natural muted colours, a black sky. 16:9, full frame, no captions or text.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6774712f-4c76-4a55-af08-d3f64df01ae5"
+}

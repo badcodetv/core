@@ -1,0 +1,24 @@
+{
+  "schema": "badcode.prov/1",
+  "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E02r8-t1.mp4",
+  "made": "2026-11-10T17:50:00.962Z",
+  "by": "claude",
+  "engine": "google-flow",
+  "kind": "video",
+  "tool": "flow_generate_video",
+  "prompt": "Locked-off shot, no camera movement. The woman keeps the glowing phone in her hand on her lap the whole time, its picture unchanged, then slowly lifts her head and turns to look out through the wet window at the closed bank across the street. Rain streams down the glass, a little light shifts on the pavement outside. The bus stays still at its stop. No cuts.",
+  "model": "Omni 1.2 Flash",
+  "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E02c-a.jpg",
+  "inputs": {
+    "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E02c-a.jpg",
+    "end": null,
+    "character": null
+  },
+  "settings": {
+    "aspect": "16:9",
+    "count": 1,
+    "durationSeconds": 6
+  },
+  "source_id": "fe8525d5-cad7-4e8e-ad1f-0d2248b5d7ae",
+  "note": "Flow late-tile shift (10 Nov): this file was harvested by the next call (saved as E04r8-t1) and moved here; its own call saved a copy of E01r8-t1. Not used: the phone turns upright and goes white at ~2 s; re-rolled as E02r8-t2."
+}

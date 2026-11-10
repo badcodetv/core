@@ -20,6 +20,10 @@ from PIL import Image, ImageDraw, ImageFont
 a = sys.argv[1:]
 clip, out = a[0], a[1]
 name = a[a.index('--name') + 1] if '--name' in a else 'DOWNLAND BANK'
+# --fascia-quad x0,y0,x1,y1,x2,y2,x3,y3 (TL, TR, BR, BL on frame 0): fit the name to the board's own perspective
+# instead of drawing it level (Kai, E round 8, at361: the sign looked skewed against the receding fascia).
+QUAD = np.float32([float(v) for v in a[a.index('--fascia-quad') + 1].split(',')]).reshape(4, 2) \
+    if '--fascia-quad' in a else None
 SERIF = '/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf'
 SANS = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 K = 8
@@ -56,6 +60,12 @@ def layer(W, H):
     d.text((tx, ty), name, font=f, fill=(28, 38, 70, 235))
     ry = ty + b + int(bh * 0.07)
     d.rectangle([tx + l, ry, tx + r, ry + max(2, K // 2)], fill=(150, 30, 40, 200))
+    if QUAD is not None:  # warp the name layer from the level box onto the board's quad, then draw the notice on top
+        fa = np.asarray(im.resize((W, H), Image.LANCZOS)).astype(np.float32)
+        src = np.float32([[x0, y0], [x1, y0], [x1, y1], [x0, y1]])
+        fa = cv2.warpPerspective(fa, cv2.getPerspectiveTransform(src, QUAD), (W, H), flags=cv2.INTER_LINEAR)
+        im = Image.fromarray(np.clip(fa, 0, 255).astype(np.uint8), 'RGBA').resize((W * K, H * K), Image.LANCZOS)
+        d = ImageDraw.Draw(im)
     nx0, ny0, nx1, ny1 = NOTICE
     d.rectangle([nx0 * K, ny0 * K, nx1 * K, ny1 * K], fill=(220, 218, 210, 255))
     d.rectangle([nx0 * K, ny0 * K, nx1 * K, int((ny0 + 3.5) * K)], fill=(170, 30, 38, 255))

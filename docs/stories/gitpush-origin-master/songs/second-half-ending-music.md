@@ -372,6 +372,36 @@ I made it.
 Don't make me come back twice.
 ```
 
+### `gpom-sh-end-ai-e3` — the last line · **revision J (Kai, 10 Nov)**
+
+Kai, E timeline round 7 (at554, on "I made it."): *"I think we should say now let's get to work I cannot I can't come back
+again"*. So the threat ("Don't make me come back twice.") goes and the stakes come in: he had one trip, he's used it,
+the work is ours together now. "I can't come back again." is the last line of the film (Claude's read of the order; Kai
+said proceed). All three sentences in one read, no bracket cues (round G). Same voice and settings as revision I, the
+read Kai liked; only the words and the shape of the reading change. Through `badcode newsreader`. by: kai.
+
+Settings: v6 · Voice `badcode newsreader` · Style Influence 50 · Audio Influence 65 · Weirdness **pair 25 / 10** · Duration 20 · Variety, Max Mode, Personalize Off · workspace `gpom-story`.
+
+Style:
+
+```
+Spoken word, voice only. One calm British male voice, a newsreader, close to the microphone, speaking slowly and quietly to one person late at night. No music at all: no score, no bed, no instruments, only his voice and long silences. The first sentence is tired and relieved, almost a breath. Then a long pause. The second is warmer, quietly resolved, an invitation to someone beside him to start, not an order. A short pause. The last sentence is the last line of the whole story: much slower, every word given its own space, plain and honest, the grief of someone who used his one chance to get here; tender, never pleading, never angry, never theatrical. Dry, dead booth, no reverb. He speaks only the words written.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, robotic voice, text to speech, laughing, ad-lib, comedic, novelty, angry, shouting, trailer voice, music, instrumental, score, soundtrack, background music, underscore, strings, piano, cello, violin, orchestra, brass, synth, pads, drone, ambient, drums, percussion, beat, reverb, fast
+```
+
+Lyrics:
+
+```lyrics
+I made it.
+Now let's get to work.
+I can't come back again.
+```
+
 ## The music
 
 ### `gpom-sh-c-walk` — scene C, lone violin and piano, open air
@@ -463,6 +493,22 @@ filter. `-e1` stays unfiltered and dry. Nothing is slowed (house rule).
 ## Round log
 
 New rounds at the top.
+
+### Round J (2026-11-10) · `-e3`: "I made it." / "Now let's get to work." / "I can't come back again." · 20 credits
+
+Kai, E timeline round 7 (at554), "proceed". `pair` (`-v6-w25` / `-v6-w10`), same settings and Voice as revision I,
+6,780 → 6,760. The first try stopped in `setWorkspace` before any Create (a hidden split button carries the workspace
+name; `suno.mts` now matches visible rows only); the second created both cells, then hung afterwards and was stopped.
+Picked on https://claude.ai/artifact/RLCahBkW1HzeDG92PD6PQN.
+
+**Pick (Kai, 10 Nov: "this is the one right here"): `gpom-sh-end-ai-e3-J-v6-w10` [b1fecf5a](https://suno.com/song/b1fecf5a-ae96-49d6-953b-d3d4cf374296)**, recorded with `record-checked.py` (20.00 s, try 1), never downloaded: `E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav`. Level map: "I made it." 0.02–0.66 s, "Now let's get to work." 4.96–6.22 s, "I can't come back again." 9.66–11.16 s. Whisper word-perfect. In E from cut-r7.
+
+| Take | Link |
+| --- | --- |
+| gpom-sh-end-ai-e3-J-v6-w25 | https://suno.com/song/1e35118f-0918-48dc-9cc3-62ea4028e23f |
+| gpom-sh-end-ai-e3-J-v6-w25 | https://suno.com/song/93de052b-d398-4f72-b0c8-15ad7803af4d |
+| gpom-sh-end-ai-e3-J-v6-w10 | https://suno.com/song/b1fecf5a-ae96-49d6-953b-d3d4cf374296 |
+| gpom-sh-end-ai-e3-J-v6-w10 | https://suno.com/song/220b6dbc-2ae1-4d7b-a808-d9b69cda3b55 |
 
 ### Round I (2026-11-04) · `-e3`, the punchline: "I made it." / "Don't make me come back twice." · 20 credits
 

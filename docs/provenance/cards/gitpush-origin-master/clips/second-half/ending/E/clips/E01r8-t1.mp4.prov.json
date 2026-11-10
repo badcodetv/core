@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E01r8-t1.mp4",
+ "made": "2026-11-10T17:49:01.661Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The camera does not move. She sits still on the top deck at night watching the lit phone in her hands; her thumbs rest, her breathing barely moves her shoulders. Rain trickles down the window beside her and blurred street lights drift past outside. The picture on the phone stays exactly as it is, glowing, unchanged for the whole shot. No cuts.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01h-a.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E01h-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 6
+ },
+ "source_id": "d58a3863-0ee9-428b-a114-90c7e80d01df"
+}

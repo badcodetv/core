@@ -1,0 +1,33 @@
+{
+ "title": "Ending Round 8 Picks",
+ "eyebrow": "GPOM · E the ending · timeline round 8",
+ "heading": "The phone shows D's last shot, and a new Parliament",
+ "intro": "Two picks. 1) Her phone in E01 and E02 now shows D's real last shot (D16n: the empty seated room, small clean Maddie). Flow couldn't paint that exact framing at phone size, so I placed D's actual frame on the screen in the still (her thumbs stay in front), and once you pick, Flow animates the shot from it, so the glow and glare come from the camera. 2) Parliament: four new shots, more real and more dramatic. Pick one per row; I then animate the three picks (Omni 1.2, a few video credits) and cut round 8 with your other notes (E01 to 5 s, the bank sign, the rain tail).",
+ "round": 1,
+ "sections": [
+  {"h": "The phone", "lede": "Click to enlarge and look at the screen. The first image in the E01 row is D's last frame, for comparison.", "groups": [
+   {"slot": "e01-phone", "title": "E01: her watching on the bus", "line": "My lean: E01h-a (D's frame, with Flow bedding the light in).", "kind": "image", "opts": [
+     {"id": "ref", "src": "s/D16n-last.jpg", "label": "reference: D's last frame (not a pick)", "warn": ""},
+     {"id": "E01c-a", "src": "s/E01c-a.jpg", "label": "E01c-a: D's frame placed on the screen, untouched", "warn": ""},
+     {"id": "E01h-a", "src": "s/E01h-a.jpg", "label": "E01h-a: the same, Flow added glare and screen light", "warn": ""},
+     {"id": "E01h-b", "src": "s/E01h-b.jpg", "label": "E01h-b: stronger glare, colder hands", "warn": ""},
+     {"id": "old", "src": "s/E01p-b.jpg", "label": "the plate now in the cut (old D frame)", "warn": "shows D's old shot"}]},
+   {"slot": "e02-phone", "title": "E02: she looks up at the closed bank", "line": "My lean: E02c-a. Flow's light pass blew the small screen out.", "kind": "image", "opts": [
+     {"id": "E02c-a", "src": "s/E02c-a.jpg", "label": "E02c-a: D's frame placed on the screen", "warn": ""},
+     {"id": "E02h-a", "src": "s/E02h-a.jpg", "label": "E02h-a: Flow light pass", "warn": "screen washed out"},
+     {"id": "old", "src": "s/E02p-b.jpg", "label": "the plate now in the cut (old D frame)", "warn": "shows D's old shot"}]}
+  ]},
+  {"h": "The last shot: Parliament", "lede": "Your note at786: still cartoony, more dramatic, keep the rain and the dark. Four different shots, two takes each. The last option is the one in the cut now.", "groups": [
+   {"slot": "e04-parliament-r8", "title": "Pick the last shot", "line": "My lean: P2-river-b (the whole building under storm cloud, the most real) or P1-bridge-b (the red bus echoes E's bus). P4 is five to midnight: strong, but it says 'doomsday clock' out loud.", "kind": "image", "opts": [
+     {"id": "P1-a", "src": "s/P1-bridge-a.jpg", "label": "P1-a: from Westminster Bridge, a tail light", "warn": ""},
+     {"id": "P1-b", "src": "s/P1-bridge-b.jpg", "label": "P1-b: from the bridge, a red bus streaks past", "warn": ""},
+     {"id": "P2-a", "src": "s/P2-river-a.jpg", "label": "P2-a: across the river, storm cloud", "warn": ""},
+     {"id": "P2-b", "src": "s/P2-river-b.jpg", "label": "P2-b: across the river, cloud dragging over the towers", "warn": ""},
+     {"id": "P3-a", "src": "s/P3-square-a.jpg", "label": "P3-a: Parliament Square, puddle reflection", "warn": ""},
+     {"id": "P3-b", "src": "s/P3-square-b.jpg", "label": "P3-b: the square, the clock tower in the puddle", "warn": ""},
+     {"id": "P4-a", "src": "s/P4-clock-a.jpg", "label": "P4-a: the clock face, five to midnight", "warn": ""},
+     {"id": "P4-b", "src": "s/P4-clock-b.jpg", "label": "P4-b: the clock tower in the rain, five to midnight", "warn": ""},
+     {"id": "keep", "src": "s/E04r4a-e-b.jpg", "label": "keep the current shot (e-b)", "warn": ""}]}
+  ]}
+ ]
+}

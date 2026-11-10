@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E02r8-t2-b.mp4",
+ "made": "2026-11-10T17:54:06.157Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "The frame is locked off. Her hands stay low in her lap, holding the phone sideways, still, exactly where it is, its glowing picture of the white room unchanged from start to end; she never lifts, rotates or tilts it. Only her head moves: she slowly raises her eyes from the phone and turns to gaze out of the rain-streaked window at the shut bank. Rain runs down the glass. The bus does not move. No cuts.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E02c-a.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix7/E02c-a.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 2,
+  "durationSeconds": 6
+ },
+ "source_id": "106cf8c3-5d62-408e-b30b-1a0f4f983b3f"
+}

@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/suno/gpom-sh-end-ai-e3-j-v6-w10-b1fecf5a.wav",
+ "made": "2026-11-10T17:13:27.233Z",
+ "by": "claude",
+ "kind": "music",
+ "engine": "suno",
+ "tool": "scripts/suno/suno.mts record",
+ "source_id": "b1fecf5a-ae96-49d6-953b-d3d4cf374296",
+ "inputs": {
+  "title": "b1fecf5a-ae96-49d6-953b-d3d4cf374296",
+  "song": "https://suno.com/song/b1fecf5a-ae96-49d6-953b-d3d4cf374296"
+ },
+ "settings": {
+  "durationSec": 20
+ }
+}

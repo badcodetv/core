@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E03s-a.jpg",
+ "made": "2026-11-10T18:07:05.203Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "In the first picture, the plain off-white board above the whitewashed shop between the pharmacy and the shut shutter is the closed bank seen in the second picture. Give that board its name, DOWNLAND BANK, in dark navy serif capitals with a thin red line beneath, sitting on the board in the same perspective as the shopfront, and put a small white printed notice with a red top band in its right-hand window. Nothing else in the street changes: the red double-decker, the rain, the wet road, the light and the framing all stay put.",
+ "model": "Nano Banana Pro",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix4/E03r4b-c.jpg",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix4/E03r4b-c.jpg",
+   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/E02-sign-ref.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 3
+ },
+ "source_id": "891a484f-d6da-4010-8511-ab4c284dfc7c"
+}

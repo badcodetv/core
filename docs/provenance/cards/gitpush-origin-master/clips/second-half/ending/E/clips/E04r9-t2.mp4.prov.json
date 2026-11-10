@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/clips/E04r9-t2.mp4",
+ "made": "2026-11-10T18:27:52.414Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "video",
+ "tool": "flow_generate_video",
+ "prompt": "Locked tripod frame on Westminster Bridge in a night downpour. Rain streaks down through the lamplight and spatters on the dull wet paving; the two distant walkers under an umbrella move slowly away towards the clock tower; haze drifts; a car's red tail lights recede at the far right. The tower and the Houses of Parliament hold still under the heavy sky. One continuous shot.",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/P1g-b.jpg",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/stills/fix8/P1g-b.jpg",
+  "end": null,
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "count": 1,
+  "durationSeconds": 10
+ },
+ "source_id": "17e9e75b-b972-44b5-bcec-4a2e9124746d"
+}

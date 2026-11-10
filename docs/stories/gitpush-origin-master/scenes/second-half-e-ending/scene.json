@@ -73,11 +73,11 @@
     {
      "speaker": "ai",
      "voice": "Suno Voice \"badcode newsreader\" (the AI): \"I made it.\" with a 40% trace of Maddie's speaker filter, the rest full range and close (the first time unfiltered)",
-     "text": "I made it. Now we have some work to do.",
+     "text": "I made it. Now let's get to work. I can't come back again.",
      "by": "kai",
      "how": "dry, close, tired on 'I made it.'; then warmer and quietly determined: an invitation to get on with it, not a threat or an order",
      "frame": "E03",
-     "atom": "gpom-sh-end-ai-e2 (NEW, owed: Suno only)",
+     "atom": "gpom-sh-end-ai-e3 revision J, take b1fecf5a (Kai pick, 10 Nov)",
      "was": {
       "text": "I made it. They didn't.",
       "atom": "gpom-sh-end-ai-e1 (first two sentences)",
@@ -88,7 +88,11 @@
        "note": "Review round 2: draft 4 was still heard as a threat and an instruction to the viewer (brief E: no call to action); a warmer Suno re-take could not be recorded, so the imperative is dropped. Both longer versions are in the same take. **Kai to rule** by ear."
       }
      },
-     "note": "Kai round 1 (le3-0): this is the ending. Owed as a Suno newsreader take; not voiced in Gemini."
+     "note": "Kai round 7 (at554): the threat goes, the stakes come in. Voiced in Suno (badcode newsreader).",
+     "was_r6": {
+      "text": "I made it. Now we have some work to do.",
+      "atom": "gpom-sh-end-ai-e3 revision I, take 0ecce5dc"
+     }
     }
    ]
   }
@@ -115,7 +119,9 @@
    "talking": false,
    "continuous": false,
    "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/moodboard/Y2-bus.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-28-Y2-bus.mp4",
-   "round1": "POST: the phone now plays Maddie's whole 'Mind how you go.'; the screen composite must use the NEW D16 last frame."
+   "round1": "POST: the phone now plays Maddie's whole 'Mind how you go.'; the screen composite must use the NEW D16 last frame.",
+   "round8": "E01r8-t1 (Kai pick E01h-a: D16n placed on the phone, Flow-lit, Omni 1.2), 5 s",
+   "round9": "E01r9-t2-patched (Kai pick E01h-a, lamp off E01h3-c, Omni 1.2; robot patched from E01c-a), 5 s"
   },
   {
    "id": "E02",
@@ -140,7 +146,8 @@
    "continuous": false,
    "reuse": null,
    "note": "No words are asked of Flow: the bank is whitewashed with a blank board. If \"TO LET\" is wanted, ffmpeg draws it on the board in post. The phone shows the same D16 empty-chairs frame as E01 (composited), dimmed, never a white screen.",
-   "round1": "POST: the phone composite uses the NEW D16 last frame."
+   "round1": "POST: the phone composite uses the NEW D16 last frame.",
+   "round8": "E02r8-t2-a (Kai pick E02c-a, Omni 1.2 re-roll keeping the phone sideways)"
   },
   {
    "id": "E03",
@@ -164,7 +171,8 @@
    "continuous": false,
    "reuse": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/SB27a.jpg + /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/sh-29-SB27a.mp4",
    "round1": "REMAKE: the bus is a RED double-decker (Kai, at353). Still edit, re-animate, re-chain the extension.",
-   "todo": true
+   "todo": true,
+   "round9": "E03r9-t1-clean (Kai pick E03s-a: DOWNLAND BANK painted by Flow; Omni 1.2 8 s; the neighbour's stray 'DOWNLA' wiped), 7.08 s"
   },
   {
    "id": "E04",
@@ -184,16 +192,18 @@
    },
    "talking": false,
    "continuous": false,
-   "reuse": "black"
+   "reuse": "black",
+   "round8": "E04r8-t2 (Kai pick P1-a: Westminster Bridge, Omni 1.2 10 s, 81% speed)",
+   "round9": "E04r9-t2 + E04xr9-t2 (Kai pick P1g-b, grittier; joined + grain), 14.3 s, in 1 s before the line"
   }
  ],
  "boards": {
   "timeline": "https://claude.ai/artifact/Cos8GdsUgpzhZefdxiwoM4"
  },
  "cut": {
-  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r6/edl.json",
-  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r6/preview.mp4",
-  "how": "cut_end_e.py --tag r6"
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/edl.json",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/preview.mp4",
+  "how": "cut_end_e.py --tag r9"
  },
  "round3_media": {
   "date": "2026-10-23",
@@ -228,7 +238,7 @@
    "was_named": "gpom-6-E-ending-r2",
    "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
   },
-  "current": "r3",
+  "current": "r4",
   "r3": {
    "sequence": "07 GPOM story E ending r3",
    "guid": "c6c83b4a-0117-4afc-8b11-0b360a1327b5",
@@ -239,10 +249,35 @@
    "what": "page round 6: cut to Parliament on 'I made it'; 'Now the real work starts' cut; Kai's Suno take 0ecce5dc ('Don't make me come back twice.'); new real-looking Parliament E04r4-t1 (pick e-b)",
    "how": "premiere-plan.py --tag r3 (lines under cut-r6/premiere/r3/lines/)",
    "check": {
-    "at": "2026-11-10T16:21",
-    "state": "edited in Pr",
-    "why": "26 effects added"
-   }
+    "at": "2026-11-10T16:40",
+    "state": "in sync",
+    "why": ""
+   },
+   "stale": "superseded by r4 (round 7, new last line); its media in cut-r6 is untouched"
+  },
+  "r4": {
+   "sequence": "07 GPOM story E ending r4",
+   "guid": "98e7b16a-1032-4564-835c-03cc3c50f32f",
+   "bin": "07 GPOM story E ending r4",
+   "built": "2026-11-10",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r7/edl.json",
+   "what": "page round 7: Kai's new last line, Suno revision J take b1fecf5a ('I made it. Now let's get to work. I can't come back again.'); Parliament tail forward-then-back",
+   "how": "premiere-plan.py --tag r4 (lines under cut-r7/premiere/r4/lines/)",
+   "check": {
+    "at": "2026-11-10T17:19",
+    "state": "in sync",
+    "why": ""
+   },
+   "master": "swapped into '00 RENDER story' at 531.042-566.000 (Motion Scale 150, like A-D; r3 had sat at 100); master 9:26.0"
+  },
+  "r5_owed": {
+   "sequence": "07 GPOM story E ending r5",
+   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/edl.json",
+   "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/premiere-r5.json",
+   "place_js": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/E/cut-r9/premiere-r5.place.js",
+   "how": "NOT BUILT (Kai released the bridge, 10 Nov). Steps (scene-timeline 'Building a sequence'): premiere_import plan.files into bin '07 GPOM story E ending r5'; premiere_create_sequence fromItems [the E01r9-t2-patched-push.mp4 item]; premiere_eval with premiere-r5.place.js pasted in; check, save; then swap into '00 RENDER story' at 531.042 (Motion Scale 150) replacing r4, and set premiere.current = r5.",
+   "why": "page round 9 (signed off) is ahead of Premiere r4 (round 7 cut)"
   }
  },
  "video": {
