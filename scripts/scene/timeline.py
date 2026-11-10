@@ -64,6 +64,7 @@ def build(data, preview, out):
     page = {'total': data['total'], 'fps': data.get('fps', 24), 'beats': beats, 'clips': clips, 'tracks': tracks,
             'flags': data.get('flags', []), 'sequence': seq,
             'replies': data.get('replies', {}), 'plan': data.get('plan', []), 'round': data.get('round'),
+            'record': data.get('record'), 'people': data.get('people', {}),
             'heading': data.get('heading', seq),
             'intro': data.get('intro', f'The {seq} cut. Play it, click any beat, clip, line or sound, and leave a note '
                                         "in its yellow slip. Notes save as you type. Tell Claude when you're done.")}

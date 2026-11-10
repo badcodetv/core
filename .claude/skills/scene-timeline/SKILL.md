@@ -59,6 +59,13 @@ each round so the URL and the notes stay. After each publish:
 ## Rounds
 
 - **Dump the notes into the repo before reading them** (the page is only the UI; the repo is the record): `ArtifactData list` on `notes` with `out_dir` = `$(python3 scripts/provenance/prov.py feedback-dir <scene-dir> --stage timeline --round N)`, then read the files (keys documented in `timeline.py`). Log it with `prov.py trail … --feedback`, adding `--decided "<Kai's words>"` for each ruling once he gives his go.
+- 🔑 **The repo alone rebuilds the page, notes and all** (Kai, 2026-11-10). Dump **every time** you're told
+  notes are in, **and before any hand-over** of the scene (drive-sync's baton), then commit. `build-timeline.py`
+  bakes the newest dump (`feedback/timeline*/notes/`) into the page: those notes show signed and *on record*
+  under their slips, so a page rebuilt on any machine, at any link, shows what Claude answered. The page also
+  shows everyone's live notes, not only the viewer's own. Names come from `user.profiles`, or
+  `docs/stories/people.json` (user id → name) when signed out. Notes typed since the last dump exist only online
+  until the next dump.
 - Turn them into **one fix list** sorted into words / voices / music / picture / timing, with the cost of each, and get Kai's go before re-assembling. Fixes knock on (a new line changes its length, which moves the picture), so batch them per round.
 - 🔑 **Answer ON the page, then talk** (Kai, 2026-10-20: *"a weird Premiere feedback engine"*). Write the round into `<scene>/cut-notes.json` (`round`, `plan` = your read as a few short groups ending in a *You decide* group, `replies` = one answer per note key, and a `kai_round<N>` snapshot of the notes themselves), pass `round`/`plan`/`replies` into the timeline data, and republish to the same link: each note then shows *Claude's read* under it, and the plan sits at the top. Kai notes further or replies; the next round re-reads and adds. Worked example: GPOM `scenes/second-half-cut2-notes.json`.
 - Worked example page: https://claude.ai/artifact/C3cZffUkuRUSMWQvHtKsXq (built by `scripts/gpom/second-half-video/build-timeline-page.py`, an adapter onto the same tool).

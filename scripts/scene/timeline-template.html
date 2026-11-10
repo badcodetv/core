@@ -100,6 +100,8 @@ textarea { font: 14px/1.4 var(--body); color: var(--fg); background: var(--slip)
 .at button.x { padding: 4px 8px }
 .muted { color: var(--dim); font-style: italic; margin: 0 }
 .reply { font-size: 14px; line-height: 1.45; border-left: 3px solid var(--vox); padding: 4px 0 4px 10px; margin-top: 4px; white-space: pre-wrap }
+.other { font-size: 14px; line-height: 1.45; border-left: 3px solid var(--dim); padding: 4px 0 4px 10px; margin-top: 4px; white-space: pre-wrap }
+.other b { display: block; font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .07em; opacity: .75 }
 .reply b { display: block; font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--vox) }
 .plan { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px 28px }
 .plan h3 { margin: 0 0 6px } .plan ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.45 }
@@ -170,6 +172,8 @@ const tc = s => { const f = Math.round(s * FPS), ff = f % FPS, t = Math.floor(f 
 const vid = $('vid'), scroller = $('scroller'), lanes = $('lanes');
 const beatAt = t => D.beats.find(b => t >= b.t && t < b.t + b.d) || D.beats[D.beats.length - 1];
 const NOTES = {};           // key -> note text (mine)
+const OTHERS = {};          // key -> [{by, note, rec}]: everyone else's notes, and notes on record in the repo
+const NAMES = Object.assign({}, D.people || {});  // user id -> name
 const SLIPS = {};           // key -> [{ta, st}]
 let db = null, me = null, pps = 0, sel = D.beats[0].id, showSfx = true;
 
@@ -183,7 +187,18 @@ const ROWS = () => [
   { id: 'v1', label: '<b>V1</b>picture', h: 46 },
   ...D.tracks.filter(t => showSfx || t.kind !== 'sfx').map(t => ({ id: t.track, label: `<b>${t.track}</b>${t.name}`, h: 24, track: t })),
 ];
-function noted(key) { return !!(NOTES[key] && NOTES[key].trim()) }
+function noted(key) { return !!(NOTES[key] && NOTES[key].trim()) || !!(OTHERS[key] && OTHERS[key].length) }
+// Notes from the repo's last copy of this page (D.record) and other people's live notes: shown signed, read-only.
+function gather(live) {
+  for (const k in OTHERS) delete OTHERS[k];
+  const seen = new Set();
+  for (const v of live || []) { seen.add(v.key + '__' + v.by); if (v.by !== me && (v.note || '').trim()) (OTHERS[v.key] = OTHERS[v.key] || []).push({ by: v.by, note: v.note }) }
+  for (const v of (D.record && D.record.notes) || []) if (!seen.has(v.key + '__' + v.by)) (OTHERS[v.key] = OTHERS[v.key] || []).push({ by: v.by, note: v.note, rec: true });
+}
+const who = by => by === me ? 'You' : (NAMES[by] || 'Someone');
+function others(key, host) {
+  for (const o of OTHERS[key] || []) { const d = el('div', 'other'); d.append(el('b', '', who(o.by) + (o.rec ? ' · on record (' + D.record.from + ')' : '')), o.note); host.append(d) }
+}
 function block(lane, t, d, cls, key, title, onclick) {
   const b = el('div', 'blk ' + cls + (noted(key) ? ' noted' : '') + (key === 'b' + sel ? ' sel' : ''));
   b.style.left = t * pps + 'px'; b.style.width = Math.max(2, d * pps - 1) + 'px'; b.title = title; b.dataset.key = key;
@@ -257,7 +272,7 @@ function slip(key, label, host) {
   const id = 'n-' + key; ta.id = id; l.htmlFor = id; l.append(el('span', '', label), st); ta.rows = 1;
   ta.value = NOTES[key] || ''; ta.disabled = !db; ta.placeholder = db ? '' : 'Sign in to leave notes';
   let timer; ta.oninput = () => { size(ta); st.className = ''; st.textContent = '…'; clearTimeout(timer); timer = setTimeout(() => save(key, ta.value, st), 700) };
-  w.append(l, ta); reply(key, w); (SLIPS[key] = SLIPS[key] || []).push({ ta, st }); requestAnimationFrame(() => size(ta)); return w;
+  w.append(l, ta); others(key, w); reply(key, w); (SLIPS[key] = SLIPS[key] || []).push({ ta, st }); requestAnimationFrame(() => size(ta)); return w;
 }
 // Claude's answer to a note, from the scene's notes file (D.replies), shown under the slip it answers.
 function reply(key, host) { const r = (D.replies || {})[key]; if (!r) return; const d = el('div', 'reply'); d.append(el('b', '', "Claude's read"), r); host.append(d) }
@@ -319,13 +334,13 @@ function select(id, focusKey) {
 
 /* ---------- pinned notes ---------- */
 function renderAt() {
-  const list = $('atlist'), ks = Object.keys(NOTES).filter(k => k.startsWith('at') && NOTES[k].trim()).sort((a, b) => +a.slice(2) - +b.slice(2));
+  const list = $('atlist'), ks = [...new Set([...Object.keys(NOTES).filter(k => NOTES[k].trim()), ...Object.keys(OTHERS)])].filter(k => k.startsWith('at')).sort((a, b) => +a.slice(2) - +b.slice(2));
   list.replaceChildren(); if (!ks.length) { list.append(el('p', 'muted', 'None yet. Pause the video and use the yellow box beside it.')); return }
   for (const k of ks) {
     const t = +k.slice(2) / FPS, row = el('div', 'at'), go = el('button', 'go', tc(t)); go.onclick = () => { seek(t); select(beatAt(t).id) };
     const x = el('button', 'x', 'Delete'); x.onclick = async () => { await save(k, '', null); renderAt(); render() };
-    const body = el('div'); body.append(el('div', 'who', 'Beat ' + beatAt(t).id), el('div', 'said', NOTES[k]));
-    reply(k, body); row.append(go, body, x); list.append(row);
+    const body = el('div'); body.append(el('div', 'who', 'Beat ' + beatAt(t).id)); if (NOTES[k] && NOTES[k].trim()) body.append(el('div', 'said', NOTES[k]));
+    others(k, body); reply(k, body); row.append(go, body); if (NOTES[k] && NOTES[k].trim()) row.append(x); list.append(row);
   }
 }
 $('atSave').onclick = async () => {
@@ -341,6 +356,7 @@ if (D.plan && D.plan.length) {
 }
 for (const f of D.flags) $('flags').append(el('p', 'flag', f));
 
+gather([]); renderAt();
 pps = fit(); render(); select(sel);
 vid.addEventListener('loadedmetadata', tick);
 window.addEventListener('resize', () => { if (pps < fit()) zoom(fit()) });
@@ -349,8 +365,11 @@ window.addEventListener('resize', () => { if (pps < fit()) zoom(fit()) });
   db = await claude.use('db'); const user = await claude.use('user');
   if (!db || !user) { db = null; $('atText').disabled = true; $('atText').placeholder = 'Sign in to leave notes'; $('atSave').disabled = true; return }
   me = await user.id();
-  const snap = await db.collection('notes').where('by', '==', me).get();
-  for (const d of snap.docs) { const v = d.data(); NOTES[v.key] = v.note || '' }
+  const snap = await db.collection('notes').get(), live = snap.docs.map(d => d.data());  // everyone's, not just mine
+  for (const v of live) if (v.by === me) NOTES[v.key] = v.note || '';
+  const ids = [...new Set([...live.map(v => v.by), ...((D.record && D.record.notes) || []).map(v => v.by)])].filter(i => i && i !== me && !NAMES[i]);
+  if (ids.length) try { const ps = await user.profiles(ids); for (const i of ids) if (ps[i] && ps[i].name) NAMES[i] = ps[i].name } catch (e) {}
+  gather(live);
   slip('top', 'Note on the whole cut', $('topSlip'));
   render(); select(sel); renderAt();
 })();
