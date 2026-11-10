@@ -901,3 +901,11 @@ The model button now carries `aria-haspopup="dialog"` (it was `"menu"`), and the
 aborted before spending (correctly). `suno.mts` now accepts either shape in `openModelMenu`, `getModel`, `setModel`
 and `status`; `controls` then read `v6` back and five pairs ran clean.
 
+
+## 2026-11-10: `grid` hangs after Create (open)
+
+On *The Rules* short (channel 4, workspace `short-the-rules`, a Suno cookie banner showing), every `grid` run clicked
+Create, the takes appeared in the workspace, but `takes "<title>"` returned `[]` and `grid` waited for them for ever,
+so `round.py run` never reached the next prompt. `timeout` on `round.py` does not end it (the node grandchild
+survives). Worked round by ending each run by hand. ⬜ Fix the takes reader (the list may have changed, or the
+cookie banner covers it) and give `grid` its own deadline.

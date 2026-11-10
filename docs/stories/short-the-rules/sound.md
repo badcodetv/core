@@ -33,7 +33,18 @@ A wet Tuesday morning assembly in a 1980s English primary school, everyone cross
   (Kai, 2026-11-10): `songs/lyrics.md`, four lines, under 20 s, no crowd turn; the organ stops for the window.
   Style prompt ⬜, a `variations` round inside the direction.
 
-- **The drop (EXPLORING).** A separate instrumental: heavy drum and bass, no vocals, a loop cut in hard after the hymn's last chord under the tear (Kai, 2026-11-10). Its own track in Premiere; the hymn stays as recorded. Round `songs/dnb-r1`.
+- **The drop (PICKED).** Kai, 2026-11-10 (*"I think we've got it. I think it's this one"*): https://suno.com/song/5b008987-305c-4634-8436-9c2aa726c891,
+  round `songs/dnb-r1`, prompt `amen-jungle-pirate-tape` (1994 Amen jungle), title `The Rules drop r1-amen-jungle-pirate-tape-v6-w45`,
+  workspace `short-the-rules`. Recorded: `D:\badcode-videos\shorts\the-rules\music\5b008987-305c-4634-8436-9c2aa726c891-5b008987.wav`
+  (19.96 s; asked for 45 s, Suno gave 20). Instrumental, its own track in Premiere under the tear; **Kai finds the drop
+  point by hand in Premiere.** Settings: variety normal, weirdness 45, style influence 75.
+  Style box, verbatim:
+
+  ```
+1994 UK jungle instrumental, 165 BPM, drums already rolling at bar one with no intro: a frantic chopped and time-stretched Amen breakbeat, ghost snares, stuttering snare rolls, metallic Akai S950 sampler grain on the stretched hits. Rolling mono sine sub bass under the breaks, one stabbing hardcore rave chord punched in on the offbeats. Homemade bedroom-studio mix taped off a London pirate radio broadcast: cassette hiss, saturated and slightly crunchy, wobbly tape, warm distortion on the drums. Raw, rough, working-class, loopable, relentless.
+  ```
+
+  Exclude: `vocals, MC, rapping, ragga vocal samples, vocal chops, singing, choir, spoken word, piano, slow intro, build-up, riser, ambient pads, polished festival EDM, dubstep wobble, neurofunk, clean modern mastering`
 
 ## Notes so far
 

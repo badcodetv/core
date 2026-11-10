@@ -104,3 +104,13 @@ gated and ready if wanted.
 Kai: after the hymn, *"a really heavy drum and bass drop… no lyrics, nothing else… a heavy loop just to drop in after.
 I want to keep the music we just recorded and drop the drum and bass as a separate track in Premiere"*; the last scene
 is the gang ripping up the rules to it, *"the chaos refrain"*; the short may run past 20 s. Round `../../songs/dnb-r1`.
+
+## 2026-11-10: the drop picked
+
+Kai: *"I think we've got it. I think it's this one. If I can just edit by hand in Premiere, I can find exactly where…
+the drop kicks in."* → the Amen jungle take, https://suno.com/song/5b008987-305c-4634-8436-9c2aa726c891, recorded
+(19.96 s). Jump-up and live band were never generated: the queue was stuck (below) and was stopped once Kai picked.
+
+Tooling fault seen all day: `suno.mts grid` clicks Create, then waits for the new takes in its list and never sees
+them (`takes` returns [] while the workspace shows the songs), so each run hangs and the next prompt never starts.
+Worked round by ending each run by hand; the songs were made. Owed: a fix to the takes reader.

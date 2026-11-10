@@ -1,0 +1,17 @@
+{
+  "style": "instrumental, no vocals. Jump-up drum and bass at 174 BPM, cartoon-loud and gleeful. Scene: a rave bursts open in a strip-lit council basement and the party is already flat out on the first downbeat, no lead-in at all. The star is a rubbery, honking midrange hoover bass, filter wobbling under a fast LFO, lurching and stamping around like a toddler mid-tantrum, then barking back at itself in goofy pitch-bent yelps on a simple two-note riff. Under it, stripped-back drums: a punchy kick, a fat dry snare that cracks hard on every 2 and 4, open and closed hats flicking between them. Cheeky slapstick vandalism, the sound of confetti made of paperwork. One 8-bar bass riff repeated end to end so it loops cleanly, loud club master, deep sub",
+  "exclude": "vocals, singing, MC, rap, hype shouts, vocal chops, chants, crowd noise, spoken word, humming, choir, intro, ambient pad, slow build, breakdown, riser, piano, liquid, soft",
+  "lyrics": "[Drop: slam straight in, bass and drums together]\n[Instrumental]\n[Same 8-bar wobble riff, again and again, no breakdown]\n[Hard stop]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": [
+    62
+  ],
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 45,
+  "maxMode": false,
+  "title": "The Rules drop r1-jump-up-cartoon-wobble",
+  "mode": "custom",
+  "workspace": "short-the-rules"
+}
