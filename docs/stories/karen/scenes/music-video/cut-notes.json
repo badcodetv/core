@@ -1,9 +1,14 @@
 {
- "round": 4,
+ "round": 7,
  "kai_round1": "(in chat) no Karen in the phone box; far more abstract, the song can diverge from the story; verse timing not on the beat, choruses brilliant; lose every photograph of actual Karen; bring back more of Aarron and the jazz band.",
- "plan": "Round 4: chorus 1, chorus 2, the break and the final chorus each start one beat later, on the kick; same cuts inside them. Verses unchanged.",
+ "plan": [
+  "Round 7 (after the final cut): one swap in the intro. At 5.52-10.96 s the clouds over the city (st-new-15) become mv-maybe-7: Karen seen from behind on the Staten Island ferry, gulls, the Manhattan skyline, a slow push in. Same length, same cut points, nothing else moves.",
+  "Why that one: it carries on from the god's-eye Manhattan shot before it, so the intro still says 'New York', but now it has Karen in it. It's slow, which suits the intro before the beat kicks in. It isn't the phone box, and with her back to us it isn't the close photograph of her face Kai ruled out in round 1.",
+  "You decide: build it as karen-music-r6 in Premiere (needs the D: media, on Kai's machine or after a drive-sync pull); the in point is unchecked until someone looks at the clip (no media on this machine)."
+ ],
  "replies": {
-  "choruses-on-snare": "You were right: all three choruses and the break started on a snare beat (my section starts were measured from where the chorus music repeats, which lands on beat 2). Each now starts one beat later, on the kick. 41 of the 44 cartoon cuts are on the kick; the other 3 are the deliberate one-beat stabs (two in the break, one in the final chorus) that fall between kicks by design."
+  "choruses-on-snare": "You were right: all three choruses and the break started on a snare beat (my section starts were measured from where the chorus music repeats, which lands on beat 2). Each now starts one beat later, on the kick. 41 of the 44 cartoon cuts are on the kick; the other 3 are the deliberate one-beat stabs (two in the break, one in the final chorus) that fall between kicks by design.",
+  "at183": "Picked mv-maybe-7 (Karen from behind on the ferry deck, Manhattan skyline, slow push) for 5.52-10.96 s, in place of st-new-15. Edit only: one shot swapped, same cut points. Not built yet: the media is on D:, which this machine doesn't have."
  },
  "kai_round2": {
   "at425": "The other problem is, I think some of these shots are just a bit boring. I mean, it might be worth us generating some new footage of just your general phone interchange, phone exchanges, phone scenarios unfolding in Manhattan. That might be useful stock footage for us to use.",
@@ -15,5 +20,8 @@
   "at693": "So this is the big drop, and it feels like visually we've just carried on the same visual from before. So the moment that this part drops here, we should have a completely different visual compared to before. I quite like how the build-up to the drop is the band, because the saxophone switches at exactly the right moment. But we do need to switch at this exact moment to something significantly different, because it's the main drop.",
   "at981": "Again, I think the shots are quite good. Actually. It's just the timing is off Is there any way that is there any obvious reason why the timing for the whole thing is off? Thank you?"
  },
- "kai_round3": "feedback/timeline-r3/kai-chat.md: verses great; choruses still on the snare, half a beat out"
+ "kai_round3": "feedback/timeline-r3/kai-chat.md: verses great; choruses still on the snare, half a beat out",
+ "kai_round6": {
+  "at183": "swap this to a karen clip not just another shot of the city thanks"
+ }
 }

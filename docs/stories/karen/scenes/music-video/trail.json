@@ -63,5 +63,24 @@
   "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
   "what": "Final-cut page rebuilt from the repo: fixes the crash that left the timeline empty (plan stored as a sentence); now shows everyone's notes signed, Jack's cinema player and the full-quality stream",
   "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline"
+ },
+ {
+  "at": "2026-11-10T13:42:06+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Notes dumped after the final cut (feedback/timeline-r6/notes): one new note, at183 intro 00:00:07:08, swap the city-clouds shot for a Karen clip; the other 8 are round 2's, unchanged",
+  "feedback": "feedback/timeline-r6",
+  "feedback_docs": 9
+ },
+ {
+  "at": "2026-11-10T13:43:29+00:00",
+  "stage": "timeline",
+  "round": 7,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Round 7 picked, not built: at183 answered, st-new-15 (5.52-10.96 s) to be swapped for mv-maybe-7 (Karen on the ferry, skyline). Waiting on D: media",
+  "decided": [
+   "Jack: just pick a cinematic karen clip that fits"
+  ]
  }
 ]
