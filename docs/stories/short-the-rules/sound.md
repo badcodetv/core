@@ -18,7 +18,7 @@ and not run once he picked this take.)
 - **The Rules hymn (PICKED).** Round `songs/hymn-r1`, prompt `whole-school-upright-piano`, Suno v6, title
   `The Rules hymn r1-whole-school-upright-piano-v6-w30`, workspace `short-the-rules`, song
   `4f37afd8-16ec-4b66-9885-54030500a37e`. Recorded (no download): `D:\badcode-videos\shorts\the-rules\music\4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.wav`,
-  18.4 s. Settings: variety off, weirdness 30, style influence 70, duration 22 s.
+  16.52 s (re-recorded with the fixed recorder; the first was the same take with 2 s of silence). Settings: variety off, weirdness 30, style influence 70, duration 22 s.
   Style box, verbatim:
 
   ```
@@ -36,7 +36,7 @@ A wet Tuesday morning assembly in a 1980s English primary school, everyone cross
 - **The drop (PICKED).** Kai, 2026-11-10 (*"I think we've got it. I think it's this one"*): https://suno.com/song/5b008987-305c-4634-8436-9c2aa726c891,
   round `songs/dnb-r1`, prompt `amen-jungle-pirate-tape` (1994 Amen jungle), title `The Rules drop r1-amen-jungle-pirate-tape-v6-w45`,
   workspace `short-the-rules`. Recorded: `D:\badcode-videos\shorts\the-rules\music\5b008987-305c-4634-8436-9c2aa726c891-5b008987.wav`
-  (19.96 s; asked for 45 s, Suno gave 20). Instrumental, its own track in Premiere under the tear; **Kai finds the drop
+  (47.04 s; the first recording stopped at 19.96 s, a recorder bug, fixed and re-recorded). Instrumental, its own track in Premiere under the tear; **Kai finds the drop
   point by hand in Premiere.** Settings: variety normal, weirdness 45, style influence 75.
   Style box, verbatim:
 

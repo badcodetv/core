@@ -1,7 +1,7 @@
 {
  "schema": "badcode.prov/1",
  "file": "/mnt/d/badcode-videos/shorts/the-rules/music/4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.preview.mp3",
- "made": "2026-11-10T19:30:59.899Z",
+ "made": "2026-11-10T19:51:13.278Z",
  "by": "claude",
  "kind": "music",
  "engine": "suno",
@@ -12,7 +12,7 @@
   "song": "https://suno.com/song/4f37afd8-16ec-4b66-9885-54030500a37e"
  },
  "settings": {
-  "durationSec": 20
+  "durationSec": 16.52
  },
  "parent": "/mnt/d/badcode-videos/shorts/the-rules/music/4f37afd8-16ec-4b66-9885-54030500a37e-4f37afd8.wav"
 }

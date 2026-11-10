@@ -902,10 +902,17 @@ aborted before spending (correctly). `suno.mts` now accepts either shape in `ope
 and `status`; `controls` then read `v6` back and five pairs ran clean.
 
 
-## 2026-11-10: `grid` hangs after Create (open)
+## 2026-11-10: `grid` hangs after Create (FIXED same day)
 
 On *The Rules* short (channel 4, workspace `short-the-rules`, a Suno cookie banner showing), every `grid` run clicked
 Create, the takes appeared in the workspace, but `takes "<title>"` returned `[]` and `grid` waited for them for ever,
 so `round.py run` never reached the next prompt. `timeout` on `round.py` does not end it (the node grandchild
-survives). Worked round by ending each run by hand. ⬜ Fix the takes reader (the list may have changed, or the
-cookie banner covers it) and give `grid` its own deadline.
+survives). **Cause:** Suno renamed the row checkbox from `Select clip` to `Select <song title>` (`role=checkbox`).
+**Fix:** `SEL_SELECT_CLIP` in `take-row.mts` matches both; `takes` lists every row again (title, length, id).
+
+## 2026-11-10: `record` stopped at the streamed length (FIXED same day)
+
+Suno streams a take into the player, so the `duration` read when playback starts can be only what has buffered: a
+47 s Amen take was recorded as 19.96 s. `recordTake` now starts from the larger of the player's duration and the
+length printed on the take's row, follows the duration as it grows, and trims to the player's final duration.
+Re-recorded: 47.04 s.

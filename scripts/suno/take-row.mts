@@ -202,7 +202,10 @@ export function mediaSlug(title: string, songId: string): string {
 // Selectors only; the browser code that uses them lives in suno.mts.
 
 /** One per take row. The row itself has only a hashed CSS class, so rows are found from this. */
-export const SEL_SELECT_CLIP = '[aria-label="Select clip"]'
+// 🔴 2026-11-10: Suno renamed the row checkbox from "Select clip" to "Select <song title>", which made
+// every take listing empty and `grid` wait for ever after Create. Match both; `role=checkbox` keeps out
+// other "Select …" buttons (e.g. "Select language: …").
+export const SEL_SELECT_CLIP = '[role="checkbox"][aria-label^="Select "], [aria-label="Select clip"]'
 /** The row's song link, `/song/<uuid>` — the take's identity (decision 4). */
 export const SEL_SONG_LINK = 'a[href*="/song/"]'
 /** The row's Play control is its artwork: `aria-label="Play <title>"`. A native click works. */

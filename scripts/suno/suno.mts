@@ -1281,7 +1281,7 @@ export async function create(page: Page, title: string, timeoutMs = 420000): Pro
  * the clip list. Deliberately a click, not a navigation: navigating would wipe the create form.
  */
 export async function ensureClipList(page: Page): Promise<string> {
-  const n = await ev(page, `return document.querySelectorAll('[aria-label="Select clip"]').length;`)
+  const n = await ev(page, `return document.querySelectorAll('[role="checkbox"][aria-label^="Select "], [aria-label="Select clip"]').length;`)
   if ((n as number) > 0) return 'clip-list'
   const name = await ev(
     page,
@@ -1779,7 +1779,11 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
   if (!st || st.songId !== songId || !Number.isFinite(st.duration)) {
     throw new Error(`PLAY_NOT_MAPPED: pressed Play on ${songId} but the player loaded ${st?.songId ?? 'nothing'} (duration ${st?.duration})`)
   }
-  const duration = st.duration
+  // 🔴 2026-11-10: Suno STREAMS the take into the player, so `duration` read here can be only the part
+  // buffered so far (a 47 s Amen take read 19.96 s and was recorded as 20 s). The length shown on the
+  // take's own row is the truth; the loop below also follows the player's duration as it grows.
+  const rowSec = (() => { const m = /^(\d+):(\d\d)$/.exec(String(take.dur ?? '')); return m ? Number(m[1]) * 60 + Number(m[2]) : 0 })()
+  let duration = Math.max(st.duration, rowSec)
 
   // 5. Chrome's stream must be on this channel's sink. A browser launched before flow-chrome.sh
   //    made sinks plays to the default one: move it once, without a relaunch.
@@ -1814,10 +1818,12 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
     const rawTmp = join(tmp, 'raw.wav')
     const rec = await cap.startRecording(sink, rawTmp, { startTimeoutMs: 6000 })
     await page.evaluate(`(() => { window.__badcodeRec.armed = true; document.querySelector(${JSON.stringify(SEL_PLAYER_AUDIO)}).play(); })()`)
-    const deadline = Date.now() + (duration + 30) * 1000
+    const deadline = Date.now() + (Math.max(duration, 600) + 30) * 1000
     for (;;) {
       await page.waitForTimeout(200)
       const now = await player()
+      // The streamed duration grows while it plays (see above): follow it, never stop at the first read.
+      if (now && Number.isFinite(now.duration) && now.duration > duration) duration = now.duration
       // Seen 2026-10-22: the player paused itself 0.4 s short of the end with no `ended` event.
       if (!now || now.flag || now.t >= duration - 0.05 || (now.paused && now.t >= duration - 1)) break
       if (now.songId !== songId) break // something else took the player — stop before recording it
@@ -1827,6 +1833,7 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
         throw new Error(`CAPTURE_TIMEOUT: ${songId} did not finish within ${Math.round(duration + 30)} s`)
       }
     }
+    { const fin = await player(); if (fin && fin.songId === songId && Number.isFinite(fin.duration) && fin.duration > 0) duration = fin.duration }
     await page.evaluate(`document.querySelectorAll('audio').forEach((a) => a.pause())`)
     // The song's last ~0.4 s is still in PulseAudio's pipe when the player says it has ended
     // (measured 2026-09-11: stopping at once gave 64.91 s of a 65.32 s take). The player is paused,
