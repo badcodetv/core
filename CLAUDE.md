@@ -161,6 +161,7 @@ provenance        under all of it: recipe cards, trail.json, final.json  (docs/p
 | **Engines** | `flow-automation` · `flow-prompt` | driving Google Flow · writing or debugging a Flow prompt (a policy block looks exactly like a timeout) |
 | | `suno-automation` · `suno-prompt` | driving Suno from code · writing a Suno prompt or clicking through Suno by hand (all new work is v6) |
 | | `premiere-automation` | anything on a Premiere timeline (every edit acts on the ACTIVE sequence) |
+| | `drive-sync` | pushing or pulling one story's Premiere folder to the shared Drive, passing the baton; each machine names its own local folder per story (never guessed) |
 | **Judgement** | `story-craft` | does the story grip; the adversarial review pass |
 | | `shot-craft` | what a shot should be; why it looks flat or "like AI"; re-cutting |
 | | `video-fx` | which tool or effect for a job, and the delivery QC gate before anything ships |

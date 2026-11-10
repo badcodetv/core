@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 # Push or pull ONE Premiere folder between D:\badcode-videos and its Drive folder, on demand.
-#   scripts/drive/drive.sh list                      folders it knows (folders.json)
+#   scripts/drive/drive.sh list                      every story: its Drive folder and its folder on THIS machine
+#   scripts/drive/drive.sh where  <story> ["<dir>"]  show, or record, which local folder holds <story>
 #   scripts/drive/drive.sh status <folder>           what push and pull WOULD copy (changes nothing)
 #   scripts/drive/drive.sh push   <folder> [--go]    local -> Drive
 #   scripts/drive/drive.sh pull   <folder> [--go]    Drive -> local
 # Without --go it is a dry run. It only ever COPIES: nothing is deleted on either side, and a file is
 # only replaced when the copy being sent is newer (--update). Caches and auto-saves are skipped (exclude.txt).
-# One-time setup: an rclone remote called "badcode" signed in as Kai (see README.md).
+# One-time setup: an rclone remote called "badcode", signed in with your own Google account (see README.md).
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REMOTE="${BADCODE_DRIVE_REMOTE:-badcode}"
@@ -15,10 +16,17 @@ cmd="${1:-list}"; folder="${2:-}"; go="${3:-}"
 # Python under Git Bash can't open a /c/Users/... path). python3, or python where that's the name.
 PY="$(command -v python3 || command -v python)" || { echo "needs python3"; exit 1; }
 cfg() { (cd "$HERE" && "$PY" -c "import json,sys;c=json.load(open('folders.json'));$1") ; }
-if [[ "$cmd" == list ]]; then cfg "[print(f'{k:24} -> Drive: {v[\"drive_name\"]!r} ({v[\"drive\"]})') for k,v in c['folders'].items()]"; exit; fi
+if [[ "$cmd" == list ]]; then exec "$PY" "$HERE/localmap.py" list; fi
+if [[ "$cmd" == where ]]; then
+  [[ -n "$folder" ]] || { echo "which story? (drive.sh list)"; exit 1; }
+  if [[ $# -ge 3 ]]; then shift 2; exec "$PY" "$HERE/localmap.py" set "$folder" "$*"; fi
+  exec "$PY" "$HERE/localmap.py" get "$folder"; fi
 [[ -n "$folder" ]] || { echo "which folder? (drive.sh list)"; exit 1; }
 id="$(cfg "print(c['folders']['$folder']['drive'])" 2>/dev/null)" || { echo "unknown folder '$folder': add it to folders.json"; exit 1; }
-local_dir="${BADCODE_MEDIA_ROOT:-$(cfg "print(c['local_root'])")}/$folder"
+# Which local folder holds this story is THIS machine's own answer (badcode.local.json "stories", see
+# localmap.py). Never guessed: if it isn't recorded, stop and ask (exit 3).
+local_dir="$("$PY" "$HERE/localmap.py" get "$folder")" || exit $?
+[[ -d "$local_dir" ]] || { echo "the folder recorded for '$folder' isn't there: $local_dir (fix it: drive.sh where $folder \"<folder>\")"; exit 1; }
 # Reliability: a connection that goes quiet for 60 s is dropped and the file retried (the default waits
 # 5 min); the whole run retries up to 5 times. A rerun is always safe: files already there are skipped.
 # Every real run is logged to ~/.cache/badcode-drive/ so a slow or failed run can be read afterwards.

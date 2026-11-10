@@ -1,6 +1,5 @@
 {
- "about": "Local Premiere folders on D: and the Drive folder each one pushes to / pulls from. Drive folders live in 'Badcode - Official' (Jack's, shared). Matched by folder ID, so a rename or a trailing space on Drive can't break it. Add a row to sync another project.",
- "local_root": "/mnt/d/badcode-videos",
+ "about": "Local Premiere folders on D: and the Drive folder each one pushes to / pulls from. Drive folders live in 'Badcode - Official' (Jack's, shared). Matched by folder ID, so a rename or a trailing space on Drive can't break it. Add a row to sync another story. WHERE each story sits locally is per machine: badcode.local.json, key stories (localmap.py).",
  "drive_root": "1aqkmEhj64V56V3TnyqbzuhUs8cGjWrym",
  "folders": {
   "karen-music": {"drive": "1mGtVSydEu5Ms_oj7j--YKlTognRQLlAn", "drive_name": "Karen Music "},
