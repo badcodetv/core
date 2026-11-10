@@ -15,8 +15,9 @@ of the window, the tear. A new Suno track for this short only, not the Bank Robb
 ## Tracks
 
 - **The Rules hymn.** Sung lyrics carry the meaning; the **text overlays on screen** carry the point on top
-  (Kai: "a song that sung some meaning to do with these rules, but then a text overlay on top"). Lyrics ⬜,
-  run as a `variations` round inside the direction.
+  (Kai: "a song that sung some meaning to do with these rules, but then a text overlay on top"). Lyrics **PICKED**
+  (Kai, 2026-11-10): `songs/lyrics.md`, four lines, under 20 s, no crowd turn; the organ stops for the window.
+  Style prompt ⬜, a `variations` round inside the direction.
 
 ## History
 

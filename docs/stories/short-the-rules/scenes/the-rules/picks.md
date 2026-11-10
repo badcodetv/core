@@ -30,3 +30,8 @@ Kai on round 1: no good rules in the song at all (don't hit, don't steal… "jus
 followed"); 20 seconds maximum; the song is the contrast "we can't afford to house our homeless, but we can
 continue tax havens"; "song" means a short period of music. Round 2 (three four-line hymns) in `../../songs/lyrics-drafts.md`.
 Length answered: **20 s maximum.**
+
+## 2026-11-10: lyrics picked
+
+Kai picked R2-2 "Room for the Profits" and rewrote the end: *"We can't afford a bed for you. The purse is far
+too thin. There is room on all those islands. But you will sleep in a bin."* No crowd turn. `../../songs/lyrics.md`.
