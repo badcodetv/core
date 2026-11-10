@@ -48,3 +48,11 @@ decided on the mood board** (today's clothes vs the 1920s Bank Robbery gang, lea
 
 Kai, same day: *"In terms of 1920s, I think it's modern balaclava guys… the balaclava is a generic BadCode brand."*
 The 1920s option is dropped; the look is **modern**, with the variants inside it found on the mood board.
+
+## 2026-11-10: mood board look round
+
+- look-r1 STOPPED by the sameness gate (the mask wording, and six sealed writers all picking one model). Kai OK'd one
+  fixed mask line as the look's locked preamble (`../../look.md`). Trap 19 in `docs/suno-gpt/same-song-traps.md`.
+- look-r2: on the first gate, the six writers again all chose one model (Nano Banana 2). Locked `model: Nano Banana 2`
+  for this round in `locked-settings.json` (the writers' own convergent pick) and re-ran the gate on the same drafts;
+  only real shared wording goes back for rewrite.

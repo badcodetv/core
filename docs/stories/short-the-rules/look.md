@@ -5,6 +5,15 @@
 
 **Status:** EXPLORING — **modern** (Kai, 2026-11-10: the balaclava is a generic BadCode brand, not 1920s); the exact look is picked on the mood board.
 
+## Preamble (LOCKED for the mask, Kai 2026-11-10)
+
+The mask, as one fixed opening line for every prompt with the gang in it (from `docs/brand/README.md`). Kai OK'd
+writing it once so look rounds vary the look, not the mask wording:
+
+```
+Every gang member wears a knitted balaclava covering the whole head, with no eye, nose or mouth holes; a large white ring is stitched round the face, and a red triangle sits high over the wearer's left eye (on the right of the picture, at about 2 o'clock); gloves on both hands, collars and cuffs closed, no skin showing anywhere.
+```
+
 ## Cast
 
 - **The balaclava gang.** The mask is fixed by `docs/brand/README.md` ("The BadCode balaclava"): white ring
