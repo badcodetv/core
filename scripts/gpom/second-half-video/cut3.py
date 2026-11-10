@@ -737,7 +737,24 @@ def beat0_d13(c, m):
             if not o.exists():
                 subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{ss:.4f}', '-i', str(graded), '-an', '-t',
                                 f'{H_FADE:.4f}', '-vf', vf, *ENC, str(o)], check=True)
-        c.pic(graded, skip, 0.0, t_sw, '0', source=v6)
+        if D23:  # Kai, 10 Nov (watching 00 RENDER story): the side and overhead angles of round 11 had dropped out since the
+            # hologram rebuild. Back in on b01, at its sentence ends (times from b01's word timings in lines-1f4.json):
+            # side for the apology ("We didn't realise... I know."), overhead for "But we've learned some things in the
+            # meantime.", then front again for "Please, let me show you what we found." into the fade.
+            a_side, a_top, a_back = fr(t_sw - 13.81), fr(t_sw - 5.958), fr(t_sw - 3.158)
+            t = 0.0
+            for name, i0, x0, x1 in (('cut3-IA-side-t2-a.mp4', 0.0, a_side, a_top), ('cut3-IA-top-t4-b.mp4', 0.0, a_top, a_back)):
+                if x0 > t:
+                    c.pic(graded, skip + t, t, x0, '0', source=v6)
+                src = V / name
+                mg = match_grade(src, graded, skip + x0, skip + x1, c.vdir / f'{src.stem}-matched.mp4')
+                c.pic(mg, i0, x0, x1, '0', source=src)
+                t = x1
+            c.pic(graded, skip + t, t, t_sw, '0', source=v6)
+            c.flags.append(f'Beat 0, round 25 (Kai, 10 Nov): the side ({a_side:.1f}-{a_top:.1f} s) and overhead ({a_top:.1f}-{a_back:.1f} s) '
+                           'angles are back on the bridge line b01; the front shot keeps running underneath.')
+        else:
+            c.pic(graded, skip, 0.0, t_sw, '0', source=v6)
         c.pic(fo, 0.0, t_sw, t_h, '0', source=v6)
         c.pic(media['holo'], 0.0, t_h, t_p, '0', source=H_PIC)
         c.pic(fi, 0.0, t_p, fr(t_p + H_FADE), '0', source=v6)

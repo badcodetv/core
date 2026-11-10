@@ -1,12 +1,12 @@
 {
  "schema": "badcode.prov/1",
  "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
- "made": "2026-11-10T19:39:15+00:00",
+ "made": "2026-11-10T20:08:08+00:00",
  "by": "claude",
  "kind": "cut",
  "engine": "ffmpeg",
  "tool": "cut3.py",
- "why": "scene A round 25: Kai's 7 round-24 notes (re-voiced lines, f02 tail, detect 5 s)",
+ "why": "scene A round 25, rebuilt with the side/overhead angles back on b01 (Kai, watching 00 RENDER story)",
  "inputs": {
   "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
   "hologram": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-beads-24fps-picture.mp4",

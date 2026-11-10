@@ -3,8 +3,8 @@
  "story": "gitpush-origin-master",
  "scene": "second-half-a-killbots",
  "sequence": "gpom-second-half-A-rough5",
- "frozen": "2026-11-10T19:49:16+00:00",
- "note": "Kai, 10 Nov (round 25): \"it's a wrap! Brilliant... that was the hardest scene\"",
+ "frozen": "2026-11-10T20:08:11+00:00",
+ "note": "Kai, 10 Nov: it's a wrap; then, watching the story film, the side/overhead angles back on Maddie's apology line",
  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
  "total": 242.91666666666666,
@@ -929,7 +929,188 @@
  "shots": [
   {
    "t": 0.0,
-   "dur": 38.458333333333336,
+   "dur": 24.666666666666668,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+     "made": "2026-11-02T20:26:50+00:00",
+     "by": "claude",
+     "kind": "cut",
+     "engine": "ffmpeg",
+     "tool": "scripts/gpom/second-half-video/beat0_xx_join.py 16",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "why": "Beat 0 travelling shot extended for Kai (2026-11-02): the speech now runs 103.4 s, so the shot plays at real speed instead of slowed. 124.83 s, 24 fps, no audio, x264 CRF 14 (as x.mp4). 0-63.667 s = cut3-beat0-continuous-x.mp4 frame for frame; then chain-09 (to 71.625), chain-10 (79.083), 11 (86.542), 12 (94.0), 13 (101.458), 14 (108.917), 15 (116.875), 16 (124.833). Start frames from chain-10 on re-anchored to chain-03's end level (beat0_anchor.py) to stop the brightening; joins colour-matched with a 6 s ramped grade. cut3.py's regrade_v6 still applies on top.",
+     "inputs": {
+      "chain_09": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-09.mp4",
+      "chain_10": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-10.mp4",
+      "chain_11": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-11.mp4",
+      "chain_12": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-12.mp4",
+      "chain_13": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-13.mp4",
+      "chain_14": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-14.mp4",
+      "chain_15": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-15.mp4",
+      "chain_16": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0/chain-16.mp4"
+     },
+     "settings": {
+      "crf": "14",
+      "fps": "24",
+      "ramp_s": "6",
+      "chain_end_frames": "10-14:179, 9/15/16:191"
+     }
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-x.mp4",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 24.666666666666668,
+   "dur": 7.833333333333333,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+     "made": "2026-11-04T11:08:02+00:00",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "A tracking shot: the camera is mounted on a vehicle driving alongside the little grey robot, matching its speed exactly, so the robot keeps exactly the same size and the same position in the frame for the whole shot and never pulls away or gets smaller. The robot's six wheels turn, the torn bunting flaps, the amber beacon glows. Only the world moves: the dented bin and the broken glass in the foreground sweep out of shot to the left within the first second, and the wrecked shopfronts, doorways and piles of brick behind the robot stream continuously past toward the left at walking pace. Smooth and steady, no cuts, no zoom, no people.",
+     "model": "Veo 3.1 Fast",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 2,
+      "durationSeconds": 8
+     },
+     "source_id": "cbc6db86-e089-4f07-91d1-1859fdb2c453",
+     "why": "GPOM scene A beat 0 round D9: USED (see cut3.py ANGLES)"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-side.png",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 32.5,
+   "dur": 2.7916666666666665,
+   "beat": "0",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+     "made": "2026-11-04T17:38:24.201Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "video",
+     "tool": "flow_generate_video",
+     "prompt": "The little grey robot with the amber light on its roof creeps forward along the narrow clear strip down the rubble-strewn road, very slowly, no faster than a person strolling. The drone camera above drifts forward with it at that same unhurried crawl, so the robot holds its place in the picture and the ruined terraces and the bricks and slates on the tarmac ease down the frame only a little over the whole shot, a few houses at most. Calm, steady, gentle. Crisp clean digital drone footage with smooth even tones. The camera keeps its height and angle, no zoom, no tilt, nothing else moves except the blinking amber light.",
+     "model": "Veo 3.1 Fast",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+      "end": null,
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "count": 2,
+      "durationSeconds": 8
+     },
+     "source_id": "238d571d-ebc5-4764-b6d0-28de12f354b5"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top3.png",
+     "made": "2026-11-04T17:36:22+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-09-a.png",
+     "why": "Kai's pick for the overhead (picks r3, rubble back, 4 Nov)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-09-a.png",
+     "made": "2026-11-04T17:35:01.984Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Keep this overhead view of the ruined terrace exactly as framed, with the robot, roofs, burnt car and grey light untouched, but make the road itself look wrecked like the rest of the street: scatter broken bricks, chunks of fallen slate, dust, small rubble heaps, cracked and potholed tarmac and tufts of weeds across both lanes, with a narrow clear path just wide enough for the robot along the dashed centre line. No parking-bay markings. Clean sharp digital photo, no grain.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "b981bbe0-2d0a-4dff-8f01-6ce4a0930077"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top2.png",
+     "made": "2026-11-04T17:05:31+00:00",
+     "by": "claude",
+     "kind": "image",
+     "engine": "google-flow",
+     "tool": "copy",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-07-a.png",
+     "why": "Kai's pick for the overhead re-do (picks r2, 4 Nov)"
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/work/ia-07-a.png",
+     "made": "2026-11-04T13:55:27.894Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Using the provided image, change only the road markings and the image texture. Remove every parking bay marking: no diagonal or side bays, no white boxes along the kerbs, just plain dark tarmac with a single dashed white centre line and a thin double yellow line along each kerb. Make the picture clean and crisp like a modern digital drone photograph: no film grain, no noise, no scan lines, smooth even tones. Keep everything else in the image exactly the same, preserving the robot, its position, the wrecked roofs, rubble, the burnt-out car, the camera height and angle, the overcast light and the composition.",
+     "model": "Nano Banana Pro",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+     "inputs": {
+      "references": [
+       "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "source_id": "27debe37-d1d4-45a7-ba36-216dcd3acaec"
+    },
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/stills/intro-angles/ia-top.png",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 35.291666666666664,
+   "dur": 3.1666666666666665,
    "beat": "0",
    "looped": false,
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",

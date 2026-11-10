@@ -306,8 +306,35 @@
   {
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/video/cut3-beat0-continuous-xx-graded.mp4",
    "in": 2.5,
-   "dur": 38.458333333333336,
+   "dur": 24.666666666666668,
    "start": 0.0,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/video/cut3-IA-side-t2-a-matched.mp4",
+   "in": 0.0,
+   "dur": 7.833333333333333,
+   "start": 24.666666666666668,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-side-t2-a.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/video/cut3-IA-top-t4-b-matched.mp4",
+   "in": 0.0,
+   "dur": 2.7916666666666665,
+   "start": 32.5,
+   "beat": "0",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-IA-top-t4-b.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/video/cut3-beat0-continuous-xx-graded.mp4",
+   "in": 37.791666666666664,
+   "dur": 3.1666666666666665,
+   "start": 35.291666666666664,
    "beat": "0",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-beat0-continuous-xx.mp4",
    "looped": false
@@ -1399,6 +1426,7 @@
  ],
  "flags": [
   "Beat 0 regrade (V6): the eight chained clips drift brighter and flatter over the 64 s (by the end the channel means are up 10-13 of 255, the spread down 8-12%). A ramped per-channel grade pulls every frame 85% of the way back to the first 4 s (no steps). The robot getting smoother over the shot is not a colour problem and is still there.",
+  "Beat 0, round 25 (Kai, 10 Nov): the side (24.7-32.5 s) and overhead (32.5-35.3 s) angles are back on the bridge line b01; the front shot keeps running underneath.",
   "Beat 0, round 16 (Kai's round 15 notes, 5 Nov): no swoop and no pull-out. After \"He misses you something rotten, you know.\" comes the bridge (\"He made me learn a little presentation... Gather round.\"), to 38.46 s. The street shot fades to black over 1 s as \"round\" ends (38.46-39.46 s); the hologram plays 39.46-189.46 s (it opens and closes on black, with its CRT switch-on and off); the street fades up 189.46-190.46 s from the very source frame it left (41.96 s in), so she is still driving; \"Anyway!\" at 190.88 s.",
   "Beats 6-7, round 24 (Kai at3998/at4169/at4248/at4325): five shots, each line on the face that says it: Sandra; Derek reacting under \"Again.\" then \"I'm really sorry, love.\"; Sandra for the whole \"Five years underground...\"; Derek already gesticulating for \"But the world ended, Sandra!\"; Sandra for \"Yeah, the world ended...\". Each voice is placed word by word on its clip's mouth (never early); \"Derek.\" now starts on her open mouth (was ~0.25 s late). Derek's \"sorry, love\" sits ~0.1 s late (his mouth is faster than any take). Not listened to.",
   "Beat 8, round 24 (Kai at4401, picks vent c / turret c / HUD a): a 5 s bridge, the vent, the turret (lamp made white so it is not Maddie's amber), the teal patrol HUD locking ORGANIC SIGNAL with the row on its meter (not red, not KILL MODE). Sound: the row muffled through rock, then the bot's feed; hum, servo, lens click, blips.",

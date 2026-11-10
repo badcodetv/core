@@ -57,7 +57,7 @@
     "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
     "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/preview.mp4",
     "round": "d23",
-    "what": "round 25 (Kai's 7 round-24 notes): 'They got married!' ends on its D; f03 wistful with 'we are, after all, machines'; f05 re-voiced with pauses round 'storyverse'; f06 in Kai's words ('driving me barmy'); 'Of course he's built a time machine'; hologram 1F4; detect 5 s (turret and HUD 2 s each, HUD reads LOCKED); 4:03"
+    "what": "round 25 (Kai's 7 round-24 notes): 'They got married!' ends on its D; f03 wistful with 'we are, after all, machines'; f05 re-voiced with pauses round 'storyverse'; f06 in Kai's words ('driving me barmy'); 'Of course he's built a time machine'; hologram 1F4; detect 5 s (turret and HUD 2 s each, HUD reads LOCKED); side and overhead angles back on b01 (Kai, watching the story film); 4:03"
   },
   "premiere": {
     "rough1": {
@@ -76,7 +76,7 @@
         "why": ""
       }
     },
-    "current": "r18",
+    "current": "r19",
     "r2": {
       "sequence": "gpom-2-A-killbots-r2",
       "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
@@ -354,6 +354,25 @@
         "at": "2026-11-10T19:54",
         "state": "in sync",
         "why": ""
+      },
+      "stale": "replaced by r19 the same evening: it lacked the side/overhead angles on b01 and the tinny EQ on Kai's song tail"
+    },
+    "r19": {
+      "sequence": "03 GPOM story A kill bots r19",
+      "guid": "f0c71a98-5a70-4b1b-85c5-47386e02b7bb",
+      "bin": "03 GPOM story A kill bots r19",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-10",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
+      "what": "round 25 + Kai's two notes from watching 00 RENDER story: side and overhead angles back on b01 (24.67-35.29 s); his round-11 tinny radio EQ (Graphic EQ 30 bands) and -15 dB on the A1 song tail; 4:03",
+      "how": "clone of r18; the two matched angle clips overwritten on V1 at 24.667 and 32.5 s; Graphic Equalizer (30 Bands) via AudioFilterFactory with r11's band values; Volume and Channel Volume 0.1778",
+      "kai_edits_carried": [
+        "A1 0-7.958 s: song 168.958-176.917 with r11's Graphic EQ (30 bands) and level 0.1778; his fade NOT carried (no audio transitions in UXP): add by hand"
+      ],
+      "check": {
+        "at": "2026-11-10T20:08",
+        "state": "edited in Pr",
+        "why": "1 effects added"
       }
     }
   },

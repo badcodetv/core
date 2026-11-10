@@ -160,11 +160,11 @@
       "group": "Part 2 · The humans (not in Premiere yet)",
       "name": "A · Kill bots",
       "length": "4:03",
-      "state": "SIGNED OFF (round 25, Kai 10 Nov: \"it's a wrap! ... that was the hardest scene\") · Premiere 03 GPOM story A kill bots r18, in sync, swapped into 00 RENDER story at 2:30.92 (story film now 10:37) · owed by hand: the fade on the song tail at the start (UXP can't add audio transitions)",
+      "state": "SIGNED OFF (round 25, Kai 10 Nov: \"it's a wrap! ... that was the hardest scene\") · Premiere 03 GPOM story A kill bots r19, in sync, swapped into 00 RENDER story at 2:30.92 (story film now 10:37) · its song tail has the round-11 tinny EQ; owed by hand: that tail's fade (UXP can't add audio transitions)",
       "tone": "ok",
       "scene": "scenes/second-half-a-killbots",
       "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
-      "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r18 (same-named bin, radio music left out; Kai's song tail on A1 0-7.96 s carried, its fade to add by hand); r11-r17 kept; 00 RENDER story nests r18 (backup: '00 RENDER story (before A r18, 10 Nov)' in zz old sequences)",
+      "premiere": "gpom-story.prproj · sequence 03 GPOM story A kill bots r19 (same-named bin; side/overhead angles back, tinny EQ on the song tail, radio music left out; Kai's song tail on A1 0-7.96 s carried, its fade to add by hand); r11-r17 kept; 00 RENDER story nests r19; r18 stale (backup: '00 RENDER story (before A r18, 10 Nov)' in zz old sequences)",
       "what": "Maddie on the high street; 'we didn't realise how important you were... let me show you what we found'; her Storyverse hologram opens on the materialist stack (society to maths, then consciousness), then dialogue 1F: Derek picks toast and Sandra says sorry first (Kai's stills in the beads), qualia, the multiverse laughed off ('it just isn't decided yet'), a storyverse you write one decision at a time, no conscious decisions means no new training data ('he's driving me barmy'), 'of course he's built a time machine, it just needs consciousness to drive it'; the argument re-edited around Sandra; a kill bot hears them (vent, lenses, HUD), the kill bots, the call to the boss, the stand-down, \"That was close.\" Signed off at round 25.",
       "history": [
         {
@@ -302,7 +302,7 @@
       },
       {
         "sequence": "00 RENDER story",
-        "what": "The story film (10 Nov, 10:37): 01 GPOM start r2 (the opening with chorus 1 = Skid Row Britain and Kai's outbreak chorus r3), then A (r18, signed off), B (r1), C (r4), D (r18), E (r5, the round 9 cut). Nested. Backups in zz old sequences: '(before chorus outbreak, 10 Nov)', '(before poverty chorus, 10 Nov)', '(before A r18, 10 Nov)'"
+        "what": "The story film (10 Nov, 10:37): 01 GPOM start r2 (the opening with chorus 1 = Skid Row Britain and Kai's outbreak chorus r3), then A (r19, signed off), B (r1), C (r4), D (r18), E (r5, the round 9 cut). Nested. Backups in zz old sequences: '(before chorus outbreak, 10 Nov)', '(before poverty chorus, 10 Nov)', '(before A r18, 10 Nov)'"
       },
       {
         "sequence": "01 GPOM start r2",
