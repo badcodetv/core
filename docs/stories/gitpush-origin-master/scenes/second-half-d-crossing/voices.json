@@ -898,45 +898,65 @@
   "d7-2-derek": {
    "speaker": "derek",
    "frame": "D12x",
-   "text": "Are you ready for this, my love?",
+   "text": "Are you ready for this?",
    "voice": "Algieba",
-   "file": "voices/d7-2-derek-r13a.wav",
-   "duration": 2.12,
+   "file": "voices/d7-2-derek-r22a.wav",
+   "duration": 1.84,
    "speech": [
-    0.0,
-    1.62
+    0.21,
+    1.52
    ],
    "lead": 0.0,
-   "heard": "Are you ready for this, my love?",
+   "heard": "Are you ready for this?",
    "verified": true,
-   "why": "[r13] a: b failed (extra/missing word, or no silence to split in) ('Are you ready for this, Milos?', 0.90)",
+   "why": "[r22] Kai at1586: just 'Are you ready for this?'; take a, whispered, heard exactly",
    "takes": [
     {
      "take": "a",
-     "file": "d7-2-derek-r13a.wav",
-     "duration": 2.12,
-     "expected": 2.69,
-     "heard": "Are you ready for this, my love?",
+     "file": "d7-2-derek-r22a.wav",
+     "duration": 1.84,
+     "expected": 1.92,
+     "heard": "Are you ready for this?",
      "match": 1.0,
      "gap": 0.0,
      "status": "ok (attempt 1)"
     },
     {
      "take": "b",
-     "file": "d7-2-derek-r13b.wav",
-     "duration": 2.36,
-     "expected": 2.69,
-     "heard": "Are you ready for this, Milos?",
-     "match": 0.897,
+     "file": "d7-2-derek-r22b.wav",
+     "duration": 2.84,
+     "expected": 1.92,
+     "heard": "Are you ready for this?",
+     "match": 1.0,
+     "gap": 0.3,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "d7-2-derek-r22c.wav",
+     "duration": 3.32,
+     "expected": 1.92,
+     "heard": "Are you ready for this?",
+     "match": 1.0,
+     "gap": 0.0,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "d",
+     "file": "d7-2-derek-r22d.wav",
+     "duration": 2.0,
+     "expected": 1.92,
+     "heard": "Are you ready for this?",
+     "match": 1.0,
      "gap": 0.0,
      "status": "ok (attempt 1)"
     }
    ],
-   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it | r21, Kai at1559: 'my sweetheart' rather than 'my love', since he has just said 'love'. | r22, Kai at1586: just 'Are you ready for this?', no endearment; 'more provocative'..\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
    "previous": {
-    "text": "Are you ready for this?",
-    "file": "voices/d7-2-derek-r8b.wav",
-    "heard": "Are you ready for this?"
+    "text": "Are you ready for this, my sweetheart?",
+    "file": "voices/d7-2-derek-r21a.wav",
+    "heard": "Are you ready for this, my sweetheart?"
    }
   },
   "d3-8-derek": {
@@ -1248,50 +1268,64 @@
    "frame": "D05",
    "text": "Hundred. ... What will it feel like?",
    "voice": "Algieba",
-   "file": "voices/d3-13-derek-r14c.wav",
-   "duration": 5.64,
+   "file": "voices/d3-13-derek-r20cd.wav",
+   "duration": 4.68,
    "speech": [
-    0.0,
-    4.96
+    0.16,
+    4.36
    ],
    "lead": 0.0,
-   "heard": "...hundred. What will it feel like?",
+   "heard": "Hundred. What will it feel like?",
    "verified": true,
-   "why": "[r14] c: a has a 1.68s silence inside the line; b transcript less exact (0.97 vs 1.00: '...hundredth... ...what will it feel like?')",
+   "why": "[r20] Kai's pick d (picks r20, at627): curious Derek, not depressed",
    "takes": [
     {
      "take": "a",
-     "file": "d3-13-derek-r14a.wav",
-     "duration": 5.88,
+     "file": "d3-13-derek-r20ca.wav",
+     "duration": 4.32,
      "expected": 2.69,
-     "heard": "...hundred. What will it feel like?",
+     "heard": "...hundred... ...what will it feel like?",
      "match": 1.0,
      "gap": 1.68,
-     "status": "ok (attempt 1)"
+     "status": "ok (attempt 2)"
     },
     {
      "take": "b",
-     "file": "d3-13-derek-r14b.wav",
-     "duration": 5.72,
+     "file": "d3-13-derek-r20cb.wav",
+     "duration": 4.76,
      "expected": 2.69,
-     "heard": "...hundredth... ...what will it feel like?",
-     "match": 0.968,
-     "gap": 0.8,
-     "status": "ok (attempt 2)"
+     "heard": "100. What will it feel like?",
+     "match": 0.821,
+     "gap": 1.1,
+     "status": "ok (attempt 1)"
     },
     {
      "take": "c",
-     "file": "d3-13-derek-r14c.wav",
-     "duration": 5.64,
+     "file": "d3-13-derek-r20cc.wav",
+     "duration": 5.44,
+     "expected": 2.69,
+     "heard": "...hundred... ...holy feely...",
+     "match": 0.625,
+     "gap": 1.03,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "d",
+     "file": "d3-13-derek-r20cd.wav",
+     "duration": 4.68,
      "expected": 2.69,
      "heard": "...hundred. What will it feel like?",
      "match": 1.0,
-     "gap": 0.15,
-     "status": "ok (attempt 2)"
+     "gap": 1.1,
+     "status": "ok (attempt 1)"
     }
    ],
-   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: 'Hundred.' one word, very quiet, half to himself as he counts them and understands, flat; then a long pause; then 'What will it feel like?' small and vulnerable, a big man suddenly afraid, gentle, almost shy; the same low voice throughout, never higher.\nStyle: no anger left in him at all; a big, blunt man made small and quiet by what he is looking at, gentle and frightened, close to the microphone.\nPace: slow, three soft words with air between them; never loud, never quick.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
-   "previous": null
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: 'Hundred.' one word, very quiet, half to himself as he counts them and understands, flat; then a long pause; then 'What will it feel like?' small and vulnerable, a big man suddenly afraid, gentle, almost shy; the same low voice throughout, never higher.\nStyle: no gloom, no dread: a big plain man genuinely curious, leaning in; Hundred. counted quietly and half impressed, then a real question asked with interest, almost wonder, as if he wants to know.\nPace: natural; a short beat after Hundred, then the question at an easy conversational speed, rising at the end.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "previous": {
+    "text": "Hundred. ... What will it feel like?",
+    "file": "voices/d3-13-derek-r14c.wav",
+    "heard": "...hundred. What will it feel like?"
+   }
   },
   "d3-14-sandra": {
    "speaker": "sandra",
@@ -1360,86 +1394,126 @@
   "d3-15-maddie": {
    "speaker": "maddie",
    "frame": "D03c",
-   "text": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure.",
+   "text": "I understand. ... We don't need to do this unless you're all sure.",
    "voice": "Aoede",
-   "file": "voices/d3-15-maddie-r17le-tight.wav",
-   "duration": 9.86,
+   "file": "voices/d3-15-maddie-r20b.wav",
+   "duration": 7.24,
    "speech": [
     0.0,
-    9.86
+    6.95
    ],
    "lead": 0.0,
-   "heard": "I won't switch it on unless you want it. All of you. And only if you're sure.",
+   "heard": "I understand. We don't need to do this unless you're all sure.",
    "verified": true,
-   "why": "[r17] Kai's pick le (picks r17, at1300/at1446): the plain reading, whole take, pauses held to 1.2 s, 'sure' complete",
+   "why": "[r20] Kai's pick b (picks r20, at1236): his new words, said clearly and simply",
    "takes": [
     {
      "take": "a",
-     "file": "d3-15-maddie-r17ta.wav",
-     "duration": 14.56,
-     "expected": 7.31,
-     "heard": "I won't switch it on, unless you want it. All of you. And only if you're sure.",
+     "file": "d3-15-maddie-r20a.wav",
+     "duration": 8.28,
+     "expected": 5.0,
+     "heard": "I understand. We don't need to do this, unless you're all sure.",
      "match": 1.0,
-     "gap": 4.1,
-     "status": "DEAD AIR after 3 tries (4.1s of dead air (allowed 2.0s))"
+     "gap": 1.03,
+     "status": "ok (attempt 1)"
     },
     {
      "take": "b",
-     "file": "d3-15-maddie-r17tb.wav",
-     "duration": 9.52,
-     "expected": 7.31,
-     "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
+     "file": "d3-15-maddie-r20b.wav",
+     "duration": 7.24,
+     "expected": 5.0,
+     "heard": "I understand, we don't need to do this unless you're all sure.",
      "match": 1.0,
-     "gap": 2.05,
-     "status": "DEAD AIR after 3 tries (3.3s of dead air (allowed 2.0s))"
+     "gap": 2.0,
+     "status": "ok (attempt 1)"
     },
     {
      "take": "c",
-     "file": "d3-15-maddie-r17tc.wav",
-     "duration": 10.64,
-     "expected": 7.31,
-     "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
+     "file": "d3-15-maddie-r20c.wav",
+     "duration": 9.32,
+     "expected": 5.0,
+     "heard": "I understand. We don't need to do this unless you're all sure.",
      "match": 1.0,
-     "gap": 2.23,
-     "status": "DEAD AIR after 3 tries (3.6s of dead air (allowed 2.0s))"
+     "gap": 1.75,
+     "status": "ok (attempt 1)"
     },
     {
      "take": "d",
-     "file": "d3-15-maddie-r17td.wav",
-     "duration": 10.8,
-     "expected": 7.31,
-     "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
+     "file": "d3-15-maddie-r20d.wav",
+     "duration": 5.88,
+     "expected": 5.0,
+     "heard": "I understand. We don't need to do this unless you're all sure.",
      "match": 1.0,
-     "gap": 2.48,
-     "status": "DEAD AIR after 3 tries (2.5s of dead air (allowed 2.0s))"
-    },
-    {
-     "take": "e",
-     "file": "d3-15-maddie-r17te.wav",
-     "duration": 10.96,
-     "expected": 7.31,
-     "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
-     "match": 1.0,
-     "gap": 1.88,
-     "status": "ok (attempt 3)"
-    },
-    {
-     "take": "f",
-     "file": "d3-15-maddie-r17tf.wav",
-     "duration": 10.12,
-     "expected": 7.31,
-     "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
-     "match": 1.0,
-     "gap": 1.5,
-     "status": "ok (attempt 3)"
+     "gap": 1.15,
+     "status": "ok (attempt 1)"
     }
    ],
-   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: incredible tenderness: the most gentle thing she has ever said, voice thick with love; 'I won't switch it on unless you want it.' a vow; a long pause; 'All of you.' softer; a long pause; 'And only if you're sure.' barely there, letting them choose.\nStyle: tender but strong: full warm voice from the chest, not whispered, not breathy; she loves them and is brave for them, so her voice is steady and open; a small smile of reassurance on All of you.\nPace: slow but full-voiced; a pause after the first sentence and after All of you; the final sure warm and fully sounded.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+   "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: Kai at1236 (timeline r19): said very clearly and simply; 'I understand', a real pause, then the promise, calm and certain, no hesitation.\nStyle: plain, clear and kind; no hesitation and no drama: she says it simply so everyone understands.\nPace: steady; I understand, then a full one-second pause, then the second sentence at an even, unhurried pace, every word clear.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
    "previous": {
     "text": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure.",
-    "file": "voices/d3-15-maddie-r17le.wav",
-    "heard": "I won't switch it on unless you want it, all of you, and only if you're sure."
+    "file": "voices/d3-15-maddie-r17le-tight.wav",
+    "heard": "I won't switch it on unless you want it. All of you. And only if you're sure."
    }
+  },
+  "d3-16-derek": {
+   "speaker": "derek",
+   "frame": null,
+   "text": "It's all right, love. I'll be there with you.",
+   "voice": "Algieba",
+   "file": "voices/d3-16-derek-r20b.wav",
+   "duration": 3.96,
+   "speech": [
+    0.18,
+    3.72
+   ],
+   "lead": 0.0,
+   "heard": "It's all right, love. I'll be there with you.",
+   "verified": true,
+   "why": "[r20] Kai's pick b (picks r20, at1236/at1418): new line, warm to Sandra; the room music ends on it",
+   "takes": [
+    {
+     "take": "a",
+     "file": "d3-16-derek-r20a.wav",
+     "duration": 4.12,
+     "expected": 3.46,
+     "heard": "It's all right, love. I'll be there with you.",
+     "match": 1.0,
+     "gap": 0.98,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "b",
+     "file": "d3-16-derek-r20b.wav",
+     "duration": 3.96,
+     "expected": 3.46,
+     "heard": "It's all right, love. I'll be there with you.",
+     "match": 1.0,
+     "gap": 0.95,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "c",
+     "file": "d3-16-derek-r20c.wav",
+     "duration": 4.12,
+     "expected": 3.46,
+     "heard": "It's alright love, I'll be there with you.",
+     "match": 0.976,
+     "gap": 0.7,
+     "status": "ok (attempt 1)"
+    },
+    {
+     "take": "d",
+     "file": "d3-16-derek-r20d.wav",
+     "duration": 4.12,
+     "expected": 3.46,
+     "heard": "It's all right, love. I'll be there with you.",
+     "match": 1.0,
+     "gap": 0.95,
+     "status": "ok (attempt 1)"
+    }
+   ],
+   "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: Kai at1236/at1418 (timeline r19): warm and tender, to Sandra beside him; encouraging, quiet, a hand on hers; the room music fades to nothing on 'I'll be there with you'.\nStyle: warm and tender, a big man gentle with his wife; quiet reassurance to Sandra beside him, a smile in it, no sadness.\nPace: unhurried; a small breath after love, then I will be there with you said softly and surely.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+   "previous": null
   }
  },
  "superseded": {

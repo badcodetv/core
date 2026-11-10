@@ -228,11 +228,19 @@
         {
           "speaker": "maddie",
           "voice": "Gemini TTS Aoede (Bristol, the plan's bot profile)",
-          "text": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure.",
+          "text": "I understand. ... We don't need to do this unless you're all sure.",
           "by": "kai",
-          "how": "incredible tenderness: the most gentle thing she has ever said, voice thick with love; 'I won't switch it on unless you want it.' a vow; a long pause; 'All of you.' softer; a long pause; 'And only if you're sure.' barely there, letting them choose",
+          "how": "Kai at1236 (timeline r19): said very clearly and simply; 'I understand', a real pause, then the promise, calm and certain, no hesitation",
           "frame": "D03c",
-          "round14": "Kai, 9 Nov, timeline r13 at1068: Kai's words, lots of pauses, no 'take a seat'"
+          "round14": "Kai, 9 Nov, timeline r13 at1068: Kai's words, lots of pauses, no 'take a seat'",
+          "text_r17": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure."
+        },
+        {
+          "speaker": "derek",
+          "voice": "Gemini TTS Algieba (cut3-cast.json man)",
+          "text": "It's all right, love. I'll be there with you.",
+          "by": "kai",
+          "how": "Kai at1236/at1418 (timeline r19): warm and tender, to Sandra beside him; encouraging, quiet, a hand on hers; the room music fades to nothing on 'I'll be there with you'"
         }
       ],
       "dropped": [
@@ -707,12 +715,14 @@
         {
           "speaker": "derek",
           "voice": "Gemini TTS Algieba (cut3-cast.json man)",
-          "text": "Are you ready for this, my love?",
+          "text": "Are you ready for this?",
           "by": "kai",
           "frame": "D12x",
           "round8": "Kai at2104: 'needs to be whispered in a tender way'",
-          "how": "whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it",
-          "round13": "Kai, 9 Nov, dialogue page 2-2D: 'Derek should just say, are you ready for this my love? Keep it really simple.'"
+          "how": "whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it | r21, Kai at1559: 'my sweetheart' rather than 'my love', since he has just said 'love'. | r22, Kai at1586: just 'Are you ready for this?', no endearment; 'more provocative'.",
+          "round13": "Kai, 9 Nov, dialogue page 2-2D: 'Derek should just say, are you ready for this my love? Keep it really simple.'",
+          "text_r20": "Are you ready for this, my love?",
+          "text_r21": "Are you ready for this, my sweetheart?"
         }
       ],
       "previous_lines_r6": [
@@ -1399,11 +1409,11 @@
     "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/preview.mp4",
-    "round": "r19",
-    "what": "round 19 (Kai, timeline r18 + picks r19): clean Maddie beside the lady's hands (D11b-t2b); overhead kept (pick 'now'); rest as r18.",
-    "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r19"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/preview.mp4",
+    "round": "r22",
+    "what": "round 22 (Kai at1586): Derek's whisper just 'Are you ready for this?'; rest as r20.",
+    "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r22"
   },
   "round3_media": {
     "date": "2026-10-23",
@@ -1428,7 +1438,7 @@
       "was_named": "gpom-5-D-crossing-r1",
       "renamed": "2026-11-04: renamed for story order (Kai: 'reorder the sequences so it progresses through the story')"
     },
-    "current": "r15",
+    "current": "r18",
     "r2": {
       "sequence": "06 GPOM story D crossing r2",
       "guid": "1ed65d4a-e317-4465-8969-d47edb3a44ba",
@@ -1676,7 +1686,55 @@
         "state": "in sync",
         "why": ""
       },
-      "master": "swapped into '00 RENDER story' at 466.792-552.292 (Motion Scale 150); E unchanged at 552.292-584.875; master 9:44.9"
+      "master_removed": "2026-11-10: replaced by r16 in '00 RENDER story'"
+    },
+    "r16": {
+      "sequence": "06 GPOM story D crossing r16",
+      "guid": "b47bb5ed-e812-4b3d-8a12-6b7add42e765",
+      "bin": "06 GPOM story D crossing r16",
+      "built": "2026-11-10",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r20/edl.json",
+      "what": "round 20: overhead+aisle+chair, curious Derek, promise in Kai's words + Derek's warm line, music to nothing on it, hands longer",
+      "how": "premiere-plan.py --tag r16",
+      "check": {
+        "at": "2026-11-10T15:41",
+        "state": "in sync",
+        "why": ""
+      },
+      "master_removed": "2026-11-10: replaced by r17 in '00 RENDER story'"
+    },
+    "r17": {
+      "sequence": "06 GPOM story D crossing r17",
+      "guid": "a2859ff3-a506-44d6-89a5-116051254f44",
+      "bin": "06 GPOM story D crossing r17",
+      "built": "2026-11-10",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r21/edl.json",
+      "what": "round 21: Derek's whisper 'my sweetheart'; rest as r20",
+      "how": "premiere-plan.py --tag r17",
+      "check": {
+        "at": "2026-11-10T15:58",
+        "state": "in sync",
+        "why": ""
+      },
+      "master_removed": "2026-11-10: replaced by r18 in '00 RENDER story'"
+    },
+    "r18": {
+      "sequence": "06 GPOM story D crossing r18",
+      "guid": "16d8cde0-bcd2-46fe-a185-64acc07087cc",
+      "bin": "06 GPOM story D crossing r18",
+      "built": "2026-11-10",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/edl.json",
+      "what": "round 22: Derek's whisper just 'Are you ready for this?'; rest as r20",
+      "how": "premiere-plan.py --tag r18",
+      "check": {
+        "at": "2026-11-10T16:21",
+        "state": "in sync",
+        "why": ""
+      },
+      "master": "swapped into '00 RENDER story' at 444.708-531.042 (Motion Scale 150); E moved -1.083 s to 531.042-563.625; master 9:23.6"
     }
   },
   "video": {
@@ -1771,6 +1829,27 @@
       "round": "r18",
       "what": "round 18 (Kai, after r17 + picks r18): the old lady's 'And afterwards?' re-shot D11c-t2a with a quick take fitted to her mouth (a-b); everything else as r17.",
       "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r18"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/preview.mp4",
+      "round": "r19",
+      "what": "round 19 (Kai, timeline r18 + picks r19): clean Maddie beside the lady's hands (D11b-t2b); overhead kept (pick 'now'); rest as r18.",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r19"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r20/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r20/preview.mp4",
+      "round": "r20",
+      "what": "round 20 (Kai, timeline r19 + picks r20): overhead then aisle then chair; curious Derek; promise in Kai's words + Derek's warm line; room music to nothing on it; hands 1.5 s longer.",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r20"
+    },
+    {
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r21/edl.json",
+      "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r21/preview.mp4",
+      "round": "r21",
+      "what": "round 21 (Kai at1559): Derek's whisper 'my sweetheart'; rest as r20.",
+      "how": "python3 scripts/gpom/second-half-video/ending/cut_end_d.py --tag r21"
     }
   ],
   "dialogue": {

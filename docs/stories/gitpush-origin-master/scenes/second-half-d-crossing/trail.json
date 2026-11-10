@@ -434,5 +434,99 @@
   "decided": [
    "Claude it's perfect! well done, we have a cut"
   ]
+ },
+ {
+  "at": "2026-11-10T15:22:11+00:00",
+  "stage": "timeline",
+  "round": 19,
+  "what": "timeline r19 notes dumped: at543 (overhead variety, lights drop), at627 (curious Derek), at1236 (new promise + Derek warm line), at1418 (music to nothing on Derek's line), at1587 (hold hands longer)",
+  "feedback": "feedback/timeline-r19",
+  "feedback_docs": 70
+ },
+ {
+  "at": "2026-11-10T15:22:11+00:00",
+  "stage": "picks",
+  "round": 20,
+  "url": "https://claude.ai/artifact/Y8wdqm7DhMdV42VAv8p4be",
+  "what": "r20 picks: curious Derek (a/d), the new promise (a-d), Derek's warm line (a/b/d), two new angles of the empty room (aisle a/b, chair b/c)",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing/d-r20-picks.json <scratchpad>/d-chairs/index.html"
+ },
+ {
+  "at": "2026-11-10T15:39:17+00:00",
+  "stage": "picks",
+  "round": 20,
+  "what": "r20 picks dumped",
+  "decided": [
+   "aisle b, chair b, curious Derek d, promise b, Derek warm b"
+  ],
+  "feedback": "feedback/picks-r20",
+  "feedback_docs": 17
+ },
+ {
+  "at": "2026-11-10T15:41:28+00:00",
+  "stage": "timeline",
+  "round": 20,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 20: overhead+aisle+chair, curious Derek, promise in Kai's words + Derek's warm line, music to nothing on it, hands longer",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-10T15:41:29+00:00",
+  "stage": "premiere",
+  "round": 20,
+  "what": "Premiere 06 GPOM story D crossing r16 built from cut-r20, in sync; swapped into 00 RENDER story at 444.708 (Scale 150), E +1.25 s; board updated"
+ },
+ {
+  "at": "2026-11-10T15:56:37+00:00",
+  "stage": "timeline",
+  "round": 20,
+  "what": "timeline r20 note dumped: at1559 ('my sweetheart' not 'my love')",
+  "feedback": "feedback/timeline-r20",
+  "feedback_docs": 71
+ },
+ {
+  "at": "2026-11-10T15:58:22+00:00",
+  "stage": "timeline",
+  "round": 21,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 21: Derek's whisper 'my sweetheart'",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-10T15:58:22+00:00",
+  "stage": "premiere",
+  "round": 21,
+  "what": "Premiere 06 GPOM story D crossing r17 built from cut-r21, in sync; swapped into 00 RENDER story (Scale 150), E +0.667 s; board updated"
+ },
+ {
+  "at": "2026-11-10T16:19:58+00:00",
+  "stage": "timeline",
+  "round": 21,
+  "what": "timeline r21 note dumped: at1586 (just 'Are you ready for this?')",
+  "feedback": "feedback/timeline-r21",
+  "feedback_docs": 72
+ },
+ {
+  "at": "2026-11-10T16:21:59+00:00",
+  "stage": "timeline",
+  "round": 22,
+  "url": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g",
+  "what": "round 22: Derek's whisper just 'Are you ready for this?'",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-d-crossing <scratchpad>/d-timeline"
+ },
+ {
+  "at": "2026-11-10T16:21:59+00:00",
+  "stage": "premiere",
+  "round": 22,
+  "what": "Premiere 06 GPOM story D crossing r18 built from cut-r22, in sync; swapped into 00 RENDER story (Scale 150), E -1.083 s; board updated"
+ },
+ {
+  "at": "2026-11-10T16:28:29+00:00",
+  "stage": "timeline",
+  "round": 22,
+  "what": "cut signed off",
+  "decided": [
+   "Awesome, Claude, we're there. Well done. Send it."
+  ]
  }
 ]

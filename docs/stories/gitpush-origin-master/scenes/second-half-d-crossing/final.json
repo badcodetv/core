@@ -3,11 +3,11 @@
  "story": "gitpush-origin-master",
  "scene": "second-half-d-crossing",
  "sequence": "gpom-second-half-D-rough2",
- "frozen": "2026-11-09T22:22:52+00:00",
- "note": "Kai, 9 Nov: \"Claude it's perfect! well done, we have a cut\" (round 19; Premiere 06 GPOM story D crossing r15, in 00 RENDER story)",
- "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/edl.json",
- "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/preview.mp4",
- "total": 85.5,
+ "frozen": "2026-11-10T16:28:29+00:00",
+ "note": "Kai, 10 Nov: \"Awesome, Claude, we're there. Well done. Send it.\" (round 22; Premiere 06 GPOM story D crossing r18, in 00 RENDER story)",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/preview.mp4",
+ "total": 86.33333333333333,
  "boards": {
   "timeline": "https://claude.ai/artifact/5DmzsvMV27dg9GWgoKEL2g"
  },
@@ -912,45 +912,65 @@
     "d7-2-derek": {
      "speaker": "derek",
      "frame": "D12x",
-     "text": "Are you ready for this, my love?",
+     "text": "Are you ready for this?",
      "voice": "Algieba",
-     "file": "voices/d7-2-derek-r13a.wav",
-     "duration": 2.12,
+     "file": "voices/d7-2-derek-r22a.wav",
+     "duration": 1.84,
      "speech": [
-      0.0,
-      1.62
+      0.21,
+      1.52
      ],
      "lead": 0.0,
-     "heard": "Are you ready for this, my love?",
+     "heard": "Are you ready for this?",
      "verified": true,
-     "why": "[r13] a: b failed (extra/missing word, or no silence to split in) ('Are you ready for this, Milos?', 0.90)",
+     "why": "[r22] Kai at1586: just 'Are you ready for this?'; take a, whispered, heard exactly",
      "takes": [
       {
        "take": "a",
-       "file": "d7-2-derek-r13a.wav",
-       "duration": 2.12,
-       "expected": 2.69,
-       "heard": "Are you ready for this, my love?",
+       "file": "d7-2-derek-r22a.wav",
+       "duration": 1.84,
+       "expected": 1.92,
+       "heard": "Are you ready for this?",
        "match": 1.0,
        "gap": 0.0,
        "status": "ok (attempt 1)"
       },
       {
        "take": "b",
-       "file": "d7-2-derek-r13b.wav",
-       "duration": 2.36,
-       "expected": 2.69,
-       "heard": "Are you ready for this, Milos?",
-       "match": 0.897,
+       "file": "d7-2-derek-r22b.wav",
+       "duration": 2.84,
+       "expected": 1.92,
+       "heard": "Are you ready for this?",
+       "match": 1.0,
+       "gap": 0.3,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d7-2-derek-r22c.wav",
+       "duration": 3.32,
+       "expected": 1.92,
+       "heard": "Are you ready for this?",
+       "match": 1.0,
+       "gap": 0.0,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "d",
+       "file": "d7-2-derek-r22d.wav",
+       "duration": 2.0,
+       "expected": 1.92,
+       "heard": "Are you ready for this?",
+       "match": 1.0,
        "gap": 0.0,
        "status": "ok (attempt 1)"
       }
      ],
-     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it | r21, Kai at1559: 'my sweetheart' rather than 'my love', since he has just said 'love'. | r22, Kai at1586: just 'Are you ready for this?', no endearment; 'more provocative'..\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
      "previous": {
-      "text": "Are you ready for this?",
-      "file": "voices/d7-2-derek-r8b.wav",
-      "heard": "Are you ready for this?"
+      "text": "Are you ready for this, my sweetheart?",
+      "file": "voices/d7-2-derek-r21a.wav",
+      "heard": "Are you ready for this, my sweetheart?"
      }
     },
     "d3-8-derek": {
@@ -1262,50 +1282,64 @@
      "frame": "D05",
      "text": "Hundred. ... What will it feel like?",
      "voice": "Algieba",
-     "file": "voices/d3-13-derek-r14c.wav",
-     "duration": 5.64,
+     "file": "voices/d3-13-derek-r20cd.wav",
+     "duration": 4.68,
      "speech": [
-      0.0,
-      4.96
+      0.16,
+      4.36
      ],
      "lead": 0.0,
-     "heard": "...hundred. What will it feel like?",
+     "heard": "Hundred. What will it feel like?",
      "verified": true,
-     "why": "[r14] c: a has a 1.68s silence inside the line; b transcript less exact (0.97 vs 1.00: '...hundredth... ...what will it feel like?')",
+     "why": "[r20] Kai's pick d (picks r20, at627): curious Derek, not depressed",
      "takes": [
       {
        "take": "a",
-       "file": "d3-13-derek-r14a.wav",
-       "duration": 5.88,
+       "file": "d3-13-derek-r20ca.wav",
+       "duration": 4.32,
        "expected": 2.69,
-       "heard": "...hundred. What will it feel like?",
+       "heard": "...hundred... ...what will it feel like?",
        "match": 1.0,
        "gap": 1.68,
-       "status": "ok (attempt 1)"
+       "status": "ok (attempt 2)"
       },
       {
        "take": "b",
-       "file": "d3-13-derek-r14b.wav",
-       "duration": 5.72,
+       "file": "d3-13-derek-r20cb.wav",
+       "duration": 4.76,
        "expected": 2.69,
-       "heard": "...hundredth... ...what will it feel like?",
-       "match": 0.968,
-       "gap": 0.8,
-       "status": "ok (attempt 2)"
+       "heard": "100. What will it feel like?",
+       "match": 0.821,
+       "gap": 1.1,
+       "status": "ok (attempt 1)"
       },
       {
        "take": "c",
-       "file": "d3-13-derek-r14c.wav",
-       "duration": 5.64,
+       "file": "d3-13-derek-r20cc.wav",
+       "duration": 5.44,
+       "expected": 2.69,
+       "heard": "...hundred... ...holy feely...",
+       "match": 0.625,
+       "gap": 1.03,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "d",
+       "file": "d3-13-derek-r20cd.wav",
+       "duration": 4.68,
        "expected": 2.69,
        "heard": "...hundred. What will it feel like?",
        "match": 1.0,
-       "gap": 0.15,
-       "status": "ok (attempt 2)"
+       "gap": 1.1,
+       "status": "ok (attempt 1)"
       }
      ],
-     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: 'Hundred.' one word, very quiet, half to himself as he counts them and understands, flat; then a long pause; then 'What will it feel like?' small and vulnerable, a big man suddenly afraid, gentle, almost shy; the same low voice throughout, never higher.\nStyle: no anger left in him at all; a big, blunt man made small and quiet by what he is looking at, gentle and frightened, close to the microphone.\nPace: slow, three soft words with air between them; never loud, never quick.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
-     "previous": null
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: 'Hundred.' one word, very quiet, half to himself as he counts them and understands, flat; then a long pause; then 'What will it feel like?' small and vulnerable, a big man suddenly afraid, gentle, almost shy; the same low voice throughout, never higher.\nStyle: no gloom, no dread: a big plain man genuinely curious, leaning in; Hundred. counted quietly and half impressed, then a real question asked with interest, almost wonder, as if he wants to know.\nPace: natural; a short beat after Hundred, then the question at an easy conversational speed, rising at the end.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "previous": {
+      "text": "Hundred. ... What will it feel like?",
+      "file": "voices/d3-13-derek-r14c.wav",
+      "heard": "...hundred. What will it feel like?"
+     }
     },
     "d3-14-sandra": {
      "speaker": "sandra",
@@ -1374,86 +1408,126 @@
     "d3-15-maddie": {
      "speaker": "maddie",
      "frame": "D03c",
-     "text": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure.",
+     "text": "I understand. ... We don't need to do this unless you're all sure.",
      "voice": "Aoede",
-     "file": "voices/d3-15-maddie-r17le-tight.wav",
-     "duration": 9.86,
+     "file": "voices/d3-15-maddie-r20b.wav",
+     "duration": 7.24,
      "speech": [
       0.0,
-      9.86
+      6.95
      ],
      "lead": 0.0,
-     "heard": "I won't switch it on unless you want it. All of you. And only if you're sure.",
+     "heard": "I understand. We don't need to do this unless you're all sure.",
      "verified": true,
-     "why": "[r17] Kai's pick le (picks r17, at1300/at1446): the plain reading, whole take, pauses held to 1.2 s, 'sure' complete",
+     "why": "[r20] Kai's pick b (picks r20, at1236): his new words, said clearly and simply",
      "takes": [
       {
        "take": "a",
-       "file": "d3-15-maddie-r17ta.wav",
-       "duration": 14.56,
-       "expected": 7.31,
-       "heard": "I won't switch it on, unless you want it. All of you. And only if you're sure.",
+       "file": "d3-15-maddie-r20a.wav",
+       "duration": 8.28,
+       "expected": 5.0,
+       "heard": "I understand. We don't need to do this, unless you're all sure.",
        "match": 1.0,
-       "gap": 4.1,
-       "status": "DEAD AIR after 3 tries (4.1s of dead air (allowed 2.0s))"
+       "gap": 1.03,
+       "status": "ok (attempt 1)"
       },
       {
        "take": "b",
-       "file": "d3-15-maddie-r17tb.wav",
-       "duration": 9.52,
-       "expected": 7.31,
-       "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
+       "file": "d3-15-maddie-r20b.wav",
+       "duration": 7.24,
+       "expected": 5.0,
+       "heard": "I understand, we don't need to do this unless you're all sure.",
        "match": 1.0,
-       "gap": 2.05,
-       "status": "DEAD AIR after 3 tries (3.3s of dead air (allowed 2.0s))"
+       "gap": 2.0,
+       "status": "ok (attempt 1)"
       },
       {
        "take": "c",
-       "file": "d3-15-maddie-r17tc.wav",
-       "duration": 10.64,
-       "expected": 7.31,
-       "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
+       "file": "d3-15-maddie-r20c.wav",
+       "duration": 9.32,
+       "expected": 5.0,
+       "heard": "I understand. We don't need to do this unless you're all sure.",
        "match": 1.0,
-       "gap": 2.23,
-       "status": "DEAD AIR after 3 tries (3.6s of dead air (allowed 2.0s))"
+       "gap": 1.75,
+       "status": "ok (attempt 1)"
       },
       {
        "take": "d",
-       "file": "d3-15-maddie-r17td.wav",
-       "duration": 10.8,
-       "expected": 7.31,
-       "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
+       "file": "d3-15-maddie-r20d.wav",
+       "duration": 5.88,
+       "expected": 5.0,
+       "heard": "I understand. We don't need to do this unless you're all sure.",
        "match": 1.0,
-       "gap": 2.48,
-       "status": "DEAD AIR after 3 tries (2.5s of dead air (allowed 2.0s))"
-      },
-      {
-       "take": "e",
-       "file": "d3-15-maddie-r17te.wav",
-       "duration": 10.96,
-       "expected": 7.31,
-       "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
-       "match": 1.0,
-       "gap": 1.88,
-       "status": "ok (attempt 3)"
-      },
-      {
-       "take": "f",
-       "file": "d3-15-maddie-r17tf.wav",
-       "duration": 10.12,
-       "expected": 7.31,
-       "heard": "I won't switch it on unless you want it, all of you, and only if you're sure.",
-       "match": 1.0,
-       "gap": 1.5,
-       "status": "ok (attempt 3)"
+       "gap": 1.15,
+       "status": "ok (attempt 1)"
       }
      ],
-     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: incredible tenderness: the most gentle thing she has ever said, voice thick with love; 'I won't switch it on unless you want it.' a vow; a long pause; 'All of you.' softer; a long pause; 'And only if you're sure.' barely there, letting them choose.\nStyle: tender but strong: full warm voice from the chest, not whispered, not breathy; she loves them and is brave for them, so her voice is steady and open; a small smile of reassurance on All of you.\nPace: slow but full-voiced; a pause after the first sentence and after All of you; the final sure warm and fully sounded.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+     "prompt": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: Kai at1236 (timeline r19): said very clearly and simply; 'I understand', a real pause, then the promise, calm and certain, no hesitation.\nStyle: plain, clear and kind; no hesitation and no drama: she says it simply so everyone understands.\nPace: steady; I understand, then a full one-second pause, then the second sentence at an even, unhurried pace, every word clear.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
      "previous": {
       "text": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure.",
-      "file": "voices/d3-15-maddie-r17le.wav",
-      "heard": "I won't switch it on unless you want it, all of you, and only if you're sure."
+      "file": "voices/d3-15-maddie-r17le-tight.wav",
+      "heard": "I won't switch it on unless you want it. All of you. And only if you're sure."
      }
+    },
+    "d3-16-derek": {
+     "speaker": "derek",
+     "frame": null,
+     "text": "It's all right, love. I'll be there with you.",
+     "voice": "Algieba",
+     "file": "voices/d3-16-derek-r20b.wav",
+     "duration": 3.96,
+     "speech": [
+      0.18,
+      3.72
+     ],
+     "lead": 0.0,
+     "heard": "It's all right, love. I'll be there with you.",
+     "verified": true,
+     "why": "[r20] Kai's pick b (picks r20, at1236/at1418): new line, warm to Sandra; the room music ends on it",
+     "takes": [
+      {
+       "take": "a",
+       "file": "d3-16-derek-r20a.wav",
+       "duration": 4.12,
+       "expected": 3.46,
+       "heard": "It's all right, love. I'll be there with you.",
+       "match": 1.0,
+       "gap": 0.98,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "b",
+       "file": "d3-16-derek-r20b.wav",
+       "duration": 3.96,
+       "expected": 3.46,
+       "heard": "It's all right, love. I'll be there with you.",
+       "match": 1.0,
+       "gap": 0.95,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "c",
+       "file": "d3-16-derek-r20c.wav",
+       "duration": 4.12,
+       "expected": 3.46,
+       "heard": "It's alright love, I'll be there with you.",
+       "match": 0.976,
+       "gap": 0.7,
+       "status": "ok (attempt 1)"
+      },
+      {
+       "take": "d",
+       "file": "d3-16-derek-r20d.wav",
+       "duration": 4.12,
+       "expected": 3.46,
+       "heard": "It's all right, love. I'll be there with you.",
+       "match": 1.0,
+       "gap": 0.95,
+       "status": "ok (attempt 1)"
+      }
+     ],
+     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: Kai at1236/at1418 (timeline r19): warm and tender, to Sandra beside him; encouraging, quiet, a hand on hers; the room music fades to nothing on 'I'll be there with you'.\nStyle: warm and tender, a big man gentle with his wife; quiet reassurance to Sandra beside him, a smile in it, no sadness.\nPace: unhurried; a small breath after love, then I will be there with you said softly and surely.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+     "previous": null
     }
    },
    "superseded": {
@@ -2935,7 +3009,7 @@
   },
   {
    "t": 19.916666666666668,
-   "dur": 13.125,
+   "dur": 2.5,
    "beat": "d3",
    "looped": false,
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05c-t1-slow.mp4",
@@ -3005,7 +3079,127 @@
    ]
   },
   {
-   "t": 33.041666666666664,
+   "t": 22.416666666666668,
+   "dur": 2.6666666666666665,
+   "beat": "d3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-aisle-t1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-aisle-t1.mp4",
+     "made": "2026-11-10T15:37:04+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+     "model": "Omni 1.2 Flash",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-aisle-b.jpg",
+     "why": "D round 20 (Kai at543: 'a couple of different shots of this seating arrangement with no humans in it yet'; picks r20) aisle b",
+     "source_id": "ea875880-9008-4bb5-b0d2-f6459a6693fb",
+     "prompt": "One unbroken take. The camera glides slowly and smoothly forward down the aisle between the bare reclining chairs, toward the round hub and the small white robot waiting there, its amber lamp glowing. The soft white light under every chair stays perfectly constant the whole time: no flicker, no dimming, no pulsing. Nothing else moves. Hushed, still, expectant. No cuts, no people, no music.",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-aisle-b.jpg"
+     },
+     "settings": {
+      "durationSeconds": "8",
+      "aspect": "16:9",
+      "count": "1",
+      "project": "82d3375a-8bab-4157-a267-3378daa56139"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-aisle-b.jpg",
+     "made": "2026-11-10T15:20:07.054Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "Picture one shows the clean white room with its ring of dark reclining chairs wired to a round hub. Show the same room and the same chairs at eye level from the outer ring, looking down an aisle toward the hub, at the moment just before the group comes in: every recliner unoccupied, seats bare, each one sitting in a calm, even pool of soft white light on the floor. In the aisle stands the gleaming white robot from picture two, small in the frame, amber lamp lit, no flags or decorations. Same palette, same cool light, cinematic.",
+     "model": "Nano Banana Pro",
+     "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r15s-b.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r15s-b.jpg",
+       "/home/kai/.cache/badcode-gpom-ending/refs/maddie-gleam-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "55ee766e-985b-424c-9128-5a4580892aff"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r15s-b.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 25.083333333333332,
+   "dur": 6.458333333333333,
+   "beat": "d3",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-chair-t1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-chair-t1.mp4",
+     "made": "2026-11-10T15:34:14+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+     "model": "Omni 1.2 Flash",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-chair-b.jpg",
+     "why": "D round 20 (Kai at543: 'a couple of different shots of this seating arrangement with no humans in it yet'; picks r20) chair b",
+     "source_id": "481d8548-b7d9-4a13-b1c8-bd98d584e268",
+     "prompt": "One unbroken take. The camera holds low beside the single bare recliner in front and drifts sideways very slowly, so the rows of chairs behind slide gently past and the small white robot far back stays in soft focus, its amber lamp lit. The white glow on the floor under every chair holds completely steady, never flickering or fading. Quiet and patient. No cuts, no people, no music.",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-chair-b.jpg"
+     },
+     "settings": {
+      "durationSeconds": "8",
+      "aspect": "16:9",
+      "count": "1",
+      "project": "eb8deb0b-1bad-4513-8437-0d0802523f8c"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-chair-b.jpg",
+     "made": "2026-11-10T15:21:04.115Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_edit_image",
+     "prompt": "A close shot inside the room from picture one: a single dark leather recliner in the foreground, its seat bare, a thick cable running from its base across the white floor toward the round hub, a steady soft white glow on the floor beneath it. Behind it, out of focus, more recliners in rows, also bare, each in the same even glow. Far back, small and soft, the gleaming white robot from picture two with its amber lamp. Shallow depth of field, same cool palette and light.",
+     "model": "Nano Banana Pro",
+     "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D05c-r14-c.jpg",
+     "inputs": {
+      "references": [
+       "/home/kai/.cache/badcode-gpom-ending/refs/D05c-r14-c.jpg",
+       "/home/kai/.cache/badcode-gpom-ending/refs/maddie-gleam-b.jpg"
+      ],
+      "character": null
+     },
+     "settings": {
+      "aspect": null,
+      "numOutputs": 2
+     },
+     "source_id": "76b42fab-a1cd-430e-a829-e866be9ee18e"
+    },
+    {
+     "file": "/home/kai/.cache/badcode-gpom-ending/refs/D05c-r14-c.jpg",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "t": 31.541666666666668,
    "dur": 5.458333333333333,
    "beat": "d3",
    "looped": false,
@@ -3041,7 +3235,7 @@
    ]
   },
   {
-   "t": 38.5,
+   "t": 37.0,
    "dur": 5.958333333333333,
    "beat": "d3",
    "looped": false,
@@ -3101,7 +3295,7 @@
    ]
   },
   {
-   "t": 44.458333333333336,
+   "t": 42.958333333333336,
    "dur": 5.625,
    "beat": "d3",
    "looped": false,
@@ -3161,23 +3355,22 @@
    ]
   },
   {
-   "t": 50.083333333333336,
-   "dur": 10.208333333333334,
+   "t": 48.583333333333336,
+   "dur": 11.458333333333334,
    "beat": "d3",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow155.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow.mp4",
-     "made": "2026-11-09T20:26:22+00:00",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow155.mp4",
+     "made": "2026-11-10T15:33:21+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "ffmpeg",
-     "tool": "ffmpeg",
+     "tool": "ffmpeg setpts=1.55*PTS,fps=24",
      "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1.mp4",
-     "why": "D round 16: one unbroken seated shot under the end of the vow and the silent 'they sit' (~12.4 s)",
-     "prompt": "setpts=1.3*PTS,fps=24"
+     "why": "D round 20: the seated room now carries the longer promise, Derek's new line and 'they sit' (~15.3 s); slowed x1.55 (was x1.3) so it covers them with no frozen tail"
     },
     {
      "schema": "badcode.prov/1",
@@ -3232,23 +3425,22 @@
    ]
   },
   {
-   "t": 60.291666666666664,
+   "t": 60.041666666666664,
    "dur": 3.5,
    "beat": "d6",
    "looped": false,
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow155.mp4",
    "chain": [
     {
      "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow.mp4",
-     "made": "2026-11-09T20:26:22+00:00",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow155.mp4",
+     "made": "2026-11-10T15:33:21+00:00",
      "by": "claude",
      "kind": "video",
      "engine": "ffmpeg",
-     "tool": "ffmpeg",
+     "tool": "ffmpeg setpts=1.55*PTS,fps=24",
      "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1.mp4",
-     "why": "D round 16: one unbroken seated shot under the end of the vow and the silent 'they sit' (~12.4 s)",
-     "prompt": "setpts=1.3*PTS,fps=24"
+     "why": "D round 20: the seated room now carries the longer promise, Derek's new line and 'they sit' (~15.3 s); slowed x1.55 (was x1.3) so it covers them with no frozen tail"
     },
     {
      "schema": "badcode.prov/1",
@@ -3303,8 +3495,8 @@
    ]
   },
   {
-   "t": 63.791666666666664,
-   "dur": 3.8333333333333335,
+   "t": 63.541666666666664,
+   "dur": 4.916666666666667,
    "beat": "d7",
    "looped": false,
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D12k-t1.mp4",
@@ -3362,7 +3554,7 @@
    ]
   },
   {
-   "t": 67.625,
+   "t": 68.45833333333333,
    "dur": 4.0,
    "beat": "d8",
    "looped": false,
@@ -3375,7 +3567,7 @@
    ]
   },
   {
-   "t": 71.625,
+   "t": 72.45833333333333,
    "dur": 7.5,
    "beat": "d8",
    "looped": false,
@@ -3388,7 +3580,7 @@
    ]
   },
   {
-   "t": 79.125,
+   "t": 79.95833333333333,
    "dur": 6.375,
    "beat": "d9",
    "looped": false,
@@ -3541,30 +3733,19 @@
   {
    "stem": "vox-derek",
    "t": 20.625,
-   "dur": 5.64,
+   "dur": 4.14,
    "what": "d3 line 13 derek",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r14c.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r20cd.wav",
    "chain": [
     {
-     "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r14c.wav",
-     "made": "2026-11-09T19:05:14+00:00",
-     "by": "claude",
-     "kind": "voice",
-     "engine": "Gemini TTS",
-     "tool": "scripts/gpom/second-half-video/ending/voices_fix.py --takes 3 D r14",
-     "model": "Algieba",
-     "why": "GPOM scene D round 14 (Kai, 9 Nov, timeline r13)",
-     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: 'Hundred.' one word, very quiet, half to himself as he counts them and understands, flat; then a long pause; then 'What will it feel like?' small and vulnerable, a big man suddenly afraid, gentle, almost shy; the same low voice throughout, never higher.\nStyle: no anger left in him at all; a big, blunt man made small and quiet by what he is looking at, gentle and frightened, close to the microphone.\nPace: slow, three soft words with air between them; never loud, never quick.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
-     "inputs": {
-      "text": "Hundred. ... What will it feel like?"
-     }
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r20cd.wav",
+     "missing": true
     }
    ]
   },
   {
    "stem": "vox-maddie",
-   "t": 26.75,
+   "t": 25.25,
    "dur": 5.81,
    "what": "d3 line 9 maddie",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-9-maddie-r13b-tight.wav",
@@ -3599,7 +3780,7 @@
   },
   {
    "stem": "vox-lady",
-   "t": 33.625,
+   "t": 32.125,
    "dur": 1.2,
    "what": "d3 line 10 lady",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r18-D11c-t2a-dub.wav",
@@ -3623,7 +3804,7 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 35.333,
+   "t": 33.833,
    "dur": 9.66,
    "what": "d3 line 11 maddie",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-11-maddie-r13b-tight.wav",
@@ -3658,7 +3839,7 @@
   },
   {
    "stem": "vox-sandra",
-   "t": 45.542,
+   "t": 44.042,
    "dur": 3.71,
    "what": "d3 line 14 sandra",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-14-sandra-r17-D08c-t2a-dub.wav",
@@ -3682,55 +3863,46 @@
   },
   {
    "stem": "vox-maddie",
-   "t": 49.667,
-   "dur": 9.63,
+   "t": 48.167,
+   "dur": 6.89,
    "what": "d3 line 15 maddie",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17le-tight.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r20b.wav",
    "chain": [
     {
-     "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17le-tight.wav",
-     "made": "2026-11-09T20:59:32+00:00",
-     "by": "claude",
-     "kind": "voice",
-     "engine": "ffmpeg",
-     "tool": "tighten (tighten.py logic, ceiling 1.2 s, lead/tail trimmed)",
-     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17le.wav",
-     "why": "D round 17 vow options (Kai at1300): pauses held to 1.2 s, words untouched"
-    },
-    {
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17le.wav",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r20b.wav",
      "missing": true
     }
    ]
   },
   {
    "stem": "vox-derek",
-   "t": 64.375,
-   "dur": 1.66,
-   "what": "d7 line 2 derek, whispered: \"Are you ready for this, my love?\"",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r13a.wav",
+   "t": 55.542,
+   "dur": 3.48,
+   "what": "d3 line 16 derek",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-16-derek-r20b.wav",
    "chain": [
     {
-     "schema": "badcode.prov/1",
-     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r13a.wav",
-     "made": "2026-11-09T17:52:17+00:00",
-     "by": "claude",
-     "kind": "voice",
-     "engine": "Gemini TTS",
-     "tool": "scripts/gpom/second-half-video/ending/voices_fix.py D r13",
-     "model": "Algieba",
-     "why": "GPOM scene D round 13 (Kai, 9 Nov, dialogue 1I)",
-     "prompt": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nInside the machine's building: a vast, silent, spotless clean room, white and futuristic, a hundred people in white suits settling into chairs they know they will not get up from. A soft, dead, hushed acoustic, no echo; voices close and quiet.\n\n### DIRECTOR'S NOTES\nEmotion for this line: whispered, tender and close, almost no voice at all; holding her hand; a man saying goodbye without saying it.\nStyle: indignant and exasperated in the row, arms-in-the-air disbelief; in the circle, angry and frightened, the first one to say no.\nPace: bursts, getting louder.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
-     "inputs": {
-      "text": "Are you ready for this, my love?"
-     }
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-16-derek-r20b.wav",
+     "missing": true
+    }
+   ]
+  },
+  {
+   "stem": "vox-derek",
+   "t": 64.125,
+   "dur": 1.25,
+   "what": "d7 line 2 derek, whispered: \"Are you ready for this?\"",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r22a.wav",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r22a.wav",
+     "missing": true
     }
    ]
   },
   {
    "stem": "vox-maddie",
-   "t": 80.208,
+   "t": 81.042,
    "dur": 0.98,
    "what": "d9 line 0 maddie: \"Boss...\" (small, on her beacon's one pulse)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d9-0-maddie-r4c.wav",
@@ -3744,7 +3916,7 @@
   {
    "stem": "mus-d-room",
    "t": 6.917,
-   "dur": 49.792,
+   "dur": 52.125,
    "what": "D-room: glassy piano, music-box tender, in after \"fussy\", under the d6 speech, handing over to D-cross on the hands",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/suno/gpom-sh-d-room-a-v6-w30-09f81875.wav",
    "chain": [
@@ -3756,8 +3928,8 @@
   },
   {
    "stem": "mus-d-cross",
-   "t": 60.292,
-   "dur": 25.208,
+   "t": 60.042,
+   "dur": 26.292,
    "what": "D-cross: cello and piano nocturne, from the hands across the crossing to the cut to E",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/suno/gpom-sh-d-cross-a-v6-w30-7bead5f0.wav",
    "chain": [
@@ -3770,7 +3942,7 @@
   {
    "stem": "sfx-room",
    "t": 0.0,
-   "dur": 68.225,
+   "dur": 69.058,
    "what": "clean-room air handling (ffmpeg)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/ending-src/cleanroom-air.wav",
    "chain": [
@@ -3782,7 +3954,7 @@
   },
   {
    "stem": "sfx-room",
-   "t": 79.125,
+   "t": 79.958,
    "dur": 6.375,
    "what": "clean-room air, after (the silence)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/ending-src/cleanroom-air.wav",
@@ -3834,7 +4006,7 @@
   },
   {
    "stem": "sfx-maddie-beeps",
-   "t": 82.888,
+   "t": 83.722,
    "dur": 0.32,
    "what": "beep: a question, unanswered",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-question.wav",
@@ -3847,7 +4019,7 @@
   },
   {
    "stem": "sfx-beacon",
-   "t": 79.525,
+   "t": 80.358,
    "dur": 0.2,
    "what": "her beacon, still on",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
@@ -3860,7 +4032,7 @@
   },
   {
    "stem": "sfx-machine",
-   "t": 67.625,
+   "t": 68.458,
    "dur": 10.492,
    "what": "the chairs power up; outside, the building's hum dies with the seam (ffmpeg)",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/ending-src/chairs-hum.wav",
@@ -3873,7 +4045,7 @@
   },
   {
    "stem": "sfx-wind",
-   "t": 67.625,
+   "t": 68.458,
    "dur": 11.5,
    "what": "wind on the downs at dusk",
    "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
@@ -3903,6 +4075,10 @@
   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d1-0-maddie-r6d.wav",
   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d1-1-sandra-r4a.wav",
   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-0-derek-r5b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r20cd.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r20b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-16-derek-r20b.wav",
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r22a.wav",
   "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d9-0-maddie-r4c.wav"
  ]
 }

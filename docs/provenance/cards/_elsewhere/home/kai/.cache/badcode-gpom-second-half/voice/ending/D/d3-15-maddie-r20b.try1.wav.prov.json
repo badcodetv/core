@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-15-maddie-r20b.try1.wav",
+ "made": "2026-11-10T15:19:31+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "I understand. ... We don't need to do this unless you're all sure.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. A real person, never robotic.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: Kai at1236 (timeline r19): said very clearly and simply; 'I understand', a real pause, then the promise, calm and certain, no hesitation.\nStyle: plain, clear and kind; no hesitation and no drama: she says it simply so everyone understands.\nPace: steady; I understand, then a full one-second pause, then the second sentence at an even, unhurried pace, every word clear.\nAccent: strong, broad West Country, a Bristol local born and bred, exactly as she sounds everywhere else in the film: the warm rolled West Country burr, round open vowels, the Bristolian lilt. Never American, never Received Pronunciation, never neutral.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the cheerful local in a British comedy who turns out to be the kindest person in it.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-15-maddie-r20b.md"
+ },
+ "settings": {
+  "voice": "Aoede",
+  "temperature": 1,
+  "channels": 2
+ }
+}

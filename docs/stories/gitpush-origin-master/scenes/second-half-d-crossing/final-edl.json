@@ -5,7 +5,7 @@
  "intro": "Scene D of the ending, round 1 (Kai's notes, 22-23 Oct): suits on, the vast white room, the wafer and 'what this will cost you', a hundred chairs and a cup of tea, they sit, the goodbye, the crossing, and Maddie alone. Maddie leads; the boss is silent. Play it, click any beat, clip, line or sound, and leave a note in its yellow slip. Notes save as you type. Tell Claude when you're done.",
  "fps": 24,
  "sample_rate": 48000,
- "total": 85.5,
+ "total": 86.33333333333333,
  "beats": [
   {
    "id": "d1",
@@ -48,7 +48,7 @@
    "id": "d3",
    "title": "The wafer",
    "start": 10.5,
-   "dur": 49.791666666666664,
+   "dur": 49.541666666666664,
    "see": "Derek asks what it is. Maddie: it runs on them, all hundred. \"Hundred.\" A pause. What will it feel like? A bit like dying, mostly like nodding off. The lady: and afterwards? They will be themselves, just before it all went wrong, and he will be with them. Sandra: she doesn't like it, it feels like dying. Maddie: she won't switch it on unless they want it, all of them, and only if they're sure.",
    "act": "The clean room",
    "lines": [
@@ -75,7 +75,7 @@
      "who": "derek",
      "name": "Derek",
      "t": 20.625,
-     "dur": 5.64,
+     "dur": 4.14,
      "text": "Hundred. ... What will it feel like?",
      "by": "kai"
     },
@@ -83,7 +83,7 @@
      "i": 9,
      "who": "maddie",
      "name": "Maddie",
-     "t": 26.75,
+     "t": 25.25,
      "dur": 5.81,
      "text": "It's a bit like dying. Mostly like nodding off in front of the telly.",
      "by": "kai"
@@ -92,7 +92,7 @@
      "i": 10,
      "who": "lady",
      "name": "The old lady",
-     "t": 33.625,
+     "t": 32.125,
      "dur": 1.2,
      "text": "And afterwards?",
      "by": "kai"
@@ -101,7 +101,7 @@
      "i": 11,
      "who": "maddie",
      "name": "Maddie",
-     "t": 35.333,
+     "t": 33.833,
      "dur": 9.66,
      "text": "Two things. You'll be you, just before it all went wrong. And he'll be there with you this time. You'll both have a chance to fix it.",
      "by": "kai"
@@ -110,7 +110,7 @@
      "i": 14,
      "who": "sandra",
      "name": "Sandra",
-     "t": 45.542,
+     "t": 44.042,
      "dur": 3.71,
      "text": "I don't like the idea of... it feels like dying.",
      "by": "kai"
@@ -119,9 +119,18 @@
      "i": 15,
      "who": "maddie",
      "name": "Maddie",
-     "t": 49.667,
-     "dur": 9.63,
-     "text": "I won't switch it on unless you want it. ... All of you. ... And only if you're sure.",
+     "t": 48.167,
+     "dur": 6.89,
+     "text": "I understand. ... We don't need to do this unless you're all sure.",
+     "by": "kai"
+    },
+    {
+     "i": 16,
+     "who": "derek",
+     "name": "Derek",
+     "t": 55.542,
+     "dur": 3.48,
+     "text": "It's all right, love. I'll be there with you.",
      "by": "kai"
     }
    ]
@@ -129,7 +138,7 @@
   {
    "id": "d6",
    "title": "They sit",
-   "start": 60.291666666666664,
+   "start": 60.041666666666664,
    "dur": 3.5,
    "see": "They sit, every one of them; nobody makes them. No words.",
    "act": "The plan",
@@ -138,8 +147,8 @@
   {
    "id": "d7",
    "title": "Before the world ended",
-   "start": 63.791666666666664,
-   "dur": 3.8333333333333335,
+   "start": 63.541666666666664,
+   "dur": 4.916666666666667,
    "see": "Two hands across the gap between two chairs. They find each other and grip. Her last joke, and his answer.",
    "act": "The crossing",
    "lines": [
@@ -147,9 +156,9 @@
      "i": 2,
      "who": "derek",
      "name": "Derek",
-     "t": 64.375,
-     "dur": 1.66,
-     "text": "Are you ready for this, my love?",
+     "t": 64.125,
+     "dur": 1.25,
+     "text": "Are you ready for this?",
      "by": "kai"
     }
    ]
@@ -157,7 +166,7 @@
   {
    "id": "d8",
    "title": "The crossing",
-   "start": 67.625,
+   "start": 68.45833333333333,
    "dur": 11.5,
    "see": "The room of a hundred occupied chairs again; the lights come up. The hands: the light reaches them and still holding on, they go to white. Outside, the prints at the door, then the building at dusk: the amber seam runs bright end to end and goes out.",
    "act": "The crossing",
@@ -166,7 +175,7 @@
   {
    "id": "d9",
    "title": "After: Maddie alone",
-   "start": 79.125,
+   "start": 79.95833333333333,
    "dur": 6.375,
    "see": "The music carries on. Maddie, gleaming, small among a hundred empty chairs. She calls her boss. Nobody answers.",
    "act": "After",
@@ -175,7 +184,7 @@
      "i": 0,
      "who": "maddie",
      "name": "Maddie",
-     "t": 80.208,
+     "t": 81.042,
      "dur": 0.98,
      "text": "Boss...",
      "by": "kai"
@@ -185,7 +194,7 @@
  ],
  "video": [
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/00-D00-i0.00-d3.458.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/00-D00-i0.00-d3.458.mp4",
    "in": 0.0,
    "dur": 3.4583333333333335,
    "start": 0.0,
@@ -194,7 +203,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/01-D01h-i0.60-d2.042.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/01-D01h-i0.60-d2.042.mp4",
    "in": 0.0,
    "dur": 2.0416666666666665,
    "start": 3.4583333333333335,
@@ -203,7 +212,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/02-D02-i0.00-d7.042.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/02-D02-i0.00-d7.042.mp4",
    "in": 0.0,
    "dur": 7.041666666666667,
    "start": 5.5,
@@ -212,7 +221,7 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/03-D03c-i0.00-d7.375.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/03-D03c-i0.00-d7.375.mp4",
    "in": 0.0,
    "dur": 7.375,
    "start": 12.541666666666666,
@@ -221,91 +230,109 @@
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/04-D05c-i0.00-d13.125.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/04-D05c-i0.00-d2.500.mp4",
    "in": 0.0,
-   "dur": 13.125,
+   "dur": 2.5,
    "start": 19.916666666666668,
    "beat": "d3",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05c-t1-slow.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/05-D11c-i0.50-d5.458.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/05-D05va-i0.00-d2.667.mp4",
+   "in": 0.0,
+   "dur": 2.6666666666666665,
+   "start": 22.416666666666668,
+   "beat": "d3",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-aisle-t1.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/06-D05vc-i0.00-d6.458.mp4",
+   "in": 0.0,
+   "dur": 6.458333333333333,
+   "start": 25.083333333333332,
+   "beat": "d3",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-chair-t1.mp4",
+   "looped": false
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/07-D11c-i0.50-d5.458.mp4",
    "in": 0.0,
    "dur": 5.458333333333333,
-   "start": 33.041666666666664,
+   "start": 31.541666666666668,
    "beat": "d3",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D11c-t2a.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/06-D11b-i0.00-d5.958.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/08-D11b-i0.00-d5.958.mp4",
    "in": 0.0,
    "dur": 5.958333333333333,
-   "start": 38.5,
+   "start": 37.0,
    "beat": "d3",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D11b-t2b.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/07-D08c-i0.00-d5.625.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/09-D08c-i0.00-d5.625.mp4",
    "in": 0.0,
    "dur": 5.625,
-   "start": 44.458333333333336,
+   "start": 42.958333333333336,
    "beat": "d3",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D08c-t2a.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/08-D10c-i0.00-d10.208.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/10-D10c-i0.00-d11.458.mp4",
    "in": 0.0,
-   "dur": 10.208333333333334,
-   "start": 50.083333333333336,
+   "dur": 11.458333333333334,
+   "start": 48.583333333333336,
    "beat": "d3",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow155.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/09-D10c-i10.21-d3.500.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/11-D10c-i11.46-d3.500.mp4",
    "in": 0.0,
    "dur": 3.5,
-   "start": 60.291666666666664,
+   "start": 60.041666666666664,
    "beat": "d6",
-   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow155.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/10-D12k-i0.00-d3.833.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/12-D12k-i0.00-d4.917.mp4",
    "in": 0.0,
-   "dur": 3.8333333333333335,
-   "start": 63.791666666666664,
+   "dur": 4.916666666666667,
+   "start": 63.541666666666664,
    "beat": "d7",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D12k-t1.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/11-D14p-i0.30-d4.000.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/13-D14p-i0.30-d4.000.mp4",
    "in": 0.0,
    "dur": 4.0,
-   "start": 67.625,
+   "start": 68.45833333333333,
    "beat": "d8",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D14p-t2.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/12-D14-i0.00-d7.500.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/14-D14-i0.00-d7.500.mp4",
    "in": 0.0,
    "dur": 7.5,
-   "start": 71.625,
+   "start": 72.45833333333333,
    "beat": "d8",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D14f-t1.mp4",
    "looped": false
   },
   {
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/video/13-D16n-i1.90-d6.375.mp4",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/video/15-D16n-i1.90-d6.375.mp4",
    "in": 0.0,
    "dur": 6.375,
-   "start": 79.125,
+   "start": 79.95833333333333,
    "beat": "d9",
    "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D16n-t1.mp4",
    "looped": false
@@ -315,89 +342,89 @@
   {
    "track": "A1",
    "name": "vox-derek",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/01-vox-derek.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/01-vox-derek.wav",
    "start": 0.0,
-   "peak_db": -3.0
+   "peak_db": 0.6
   },
   {
    "track": "A2",
    "name": "vox-lady",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/02-vox-lady.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/02-vox-lady.wav",
    "start": 0.0,
-   "peak_db": -2.0
+   "peak_db": -1.9
   },
   {
    "track": "A3",
    "name": "vox-maddie",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/03-vox-maddie.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/03-vox-maddie.wav",
    "start": 0.0,
-   "peak_db": 1.2
+   "peak_db": 1.3
   },
   {
    "track": "A4",
    "name": "vox-sandra",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/04-vox-sandra.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/04-vox-sandra.wav",
    "start": 0.0,
-   "peak_db": 1.2
+   "peak_db": 1.3
   },
   {
    "track": "A5",
    "name": "mus-d-cross",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/05-mus-d-cross.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/05-mus-d-cross.wav",
    "start": 0.0,
    "peak_db": -6.1
   },
   {
    "track": "A6",
    "name": "mus-d-room",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/06-mus-d-room.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/06-mus-d-room.wav",
    "start": 0.0,
-   "peak_db": -8.2
+   "peak_db": -9.1
   },
   {
    "track": "A7",
    "name": "sfx-beacon",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/07-sfx-beacon.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/07-sfx-beacon.wav",
    "start": 0.0,
-   "peak_db": -33.4
+   "peak_db": -33.3
   },
   {
    "track": "A8",
    "name": "sfx-crowd",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/08-sfx-crowd.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/08-sfx-crowd.wav",
    "start": 0.0,
-   "peak_db": -10.6
+   "peak_db": -10.5
   },
   {
    "track": "A9",
    "name": "sfx-machine",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/09-sfx-machine.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/09-sfx-machine.wav",
    "start": 0.0,
-   "peak_db": -21.3
+   "peak_db": -21.2
   },
   {
    "track": "A10",
    "name": "sfx-maddie-beeps",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/10-sfx-maddie-beeps.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/10-sfx-maddie-beeps.wav",
    "start": 0.0,
-   "peak_db": -29.0
+   "peak_db": -28.9
   },
   {
    "track": "A11",
    "name": "sfx-room",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/11-sfx-room.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/11-sfx-room.wav",
    "start": 0.0,
-   "peak_db": -29.1
+   "peak_db": -29.0
   },
   {
    "track": "A12",
    "name": "sfx-wind",
-   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/stems/12-sfx-wind.wav",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/stems/12-sfx-wind.wav",
    "start": 0.0,
-   "peak_db": -18.4
+   "peak_db": -18.3
   }
  ],
- "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/mix.wav",
+ "mix": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/mix.wav",
  "events": [
   {
    "stem": "vox-maddie",
@@ -437,55 +464,62 @@
   {
    "stem": "vox-derek",
    "t": 20.625,
-   "dur": 5.64,
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r14c.wav",
+   "dur": 4.14,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r20cd.wav",
    "what": "d3 line 13 derek"
   },
   {
    "stem": "vox-maddie",
-   "t": 26.75,
+   "t": 25.25,
    "dur": 5.81,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-9-maddie-r13b-tight.wav",
    "what": "d3 line 9 maddie"
   },
   {
    "stem": "vox-lady",
-   "t": 33.625,
+   "t": 32.125,
    "dur": 1.2,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r18-D11c-t2a-dub.wav",
    "what": "d3 line 10 lady"
   },
   {
    "stem": "vox-maddie",
-   "t": 35.333,
+   "t": 33.833,
    "dur": 9.66,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-11-maddie-r13b-tight.wav",
    "what": "d3 line 11 maddie"
   },
   {
    "stem": "vox-sandra",
-   "t": 45.542,
+   "t": 44.042,
    "dur": 3.71,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-14-sandra-r17-D08c-t2a-dub.wav",
    "what": "d3 line 14 sandra"
   },
   {
    "stem": "vox-maddie",
-   "t": 49.667,
-   "dur": 9.63,
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17le-tight.wav",
+   "t": 48.167,
+   "dur": 6.89,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r20b.wav",
    "what": "d3 line 15 maddie"
   },
   {
    "stem": "vox-derek",
-   "t": 64.375,
-   "dur": 1.66,
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r13a.wav",
-   "what": "d7 line 2 derek, whispered: \"Are you ready for this, my love?\""
+   "t": 55.542,
+   "dur": 3.48,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-16-derek-r20b.wav",
+   "what": "d3 line 16 derek"
+  },
+  {
+   "stem": "vox-derek",
+   "t": 64.125,
+   "dur": 1.25,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r22a.wav",
+   "what": "d7 line 2 derek, whispered: \"Are you ready for this?\""
   },
   {
    "stem": "vox-maddie",
-   "t": 80.208,
+   "t": 81.042,
    "dur": 0.98,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d9-0-maddie-r4c.wav",
    "what": "d9 line 0 maddie: \"Boss...\" (small, on her beacon's one pulse)"
@@ -493,27 +527,27 @@
   {
    "stem": "mus-d-room",
    "t": 6.917,
-   "dur": 49.792,
+   "dur": 52.125,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/suno/gpom-sh-d-room-a-v6-w30-09f81875.wav",
    "what": "D-room: glassy piano, music-box tender, in after \"fussy\", under the d6 speech, handing over to D-cross on the hands"
   },
   {
    "stem": "mus-d-cross",
-   "t": 60.292,
-   "dur": 25.208,
+   "t": 60.042,
+   "dur": 26.292,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/suno/gpom-sh-d-cross-a-v6-w30-7bead5f0.wav",
    "what": "D-cross: cello and piano nocturne, from the hands across the crossing to the cut to E"
   },
   {
    "stem": "sfx-room",
    "t": 0.0,
-   "dur": 68.225,
+   "dur": 69.058,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/ending-src/cleanroom-air.wav",
    "what": "clean-room air handling (ffmpeg)"
   },
   {
    "stem": "sfx-room",
-   "t": 79.125,
+   "t": 79.958,
    "dur": 6.375,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/ending-src/cleanroom-air.wav",
    "what": "clean-room air, after (the silence)"
@@ -541,28 +575,28 @@
   },
   {
    "stem": "sfx-maddie-beeps",
-   "t": 82.888,
+   "t": 83.722,
    "dur": 0.32,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/maddie/synth-maddie-beep-question.wav",
    "what": "beep: a question, unanswered"
   },
   {
    "stem": "sfx-beacon",
-   "t": 79.525,
+   "t": 80.358,
    "dur": 0.2,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/sfx/synth-beacon-blip.wav",
    "what": "her beacon, still on"
   },
   {
    "stem": "sfx-machine",
-   "t": 67.625,
+   "t": 68.458,
    "dur": 10.492,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/ending-src/chairs-hum.wav",
    "what": "the chairs power up; outside, the building's hum dies with the seam (ffmpeg)"
   },
   {
    "stem": "sfx-wind",
-   "t": 67.625,
+   "t": 68.458,
    "dur": 11.5,
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/cut2/src/synth-wind-60s.wav",
    "what": "wind on the downs at dusk"
@@ -631,9 +665,9 @@
   },
   {
    "stem": "vox-derek",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r14c.wav",
-   "i": 0.0,
-   "d": 5.64,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-13-derek-r20cd.wav",
+   "i": 0.15999999999999998,
+   "d": 4.14,
    "t": 20.625,
    "chain": [],
    "lufs": -17.0,
@@ -646,7 +680,7 @@
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-9-maddie-r13b-tight.wav",
    "i": 0.0,
    "d": 5.81,
-   "t": 26.75,
+   "t": 25.25,
    "chain": [],
    "lufs": -16.0,
    "what": "d3 line 9 maddie",
@@ -658,7 +692,7 @@
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-10-lady-r18-D11c-t2a-dub.wav",
    "i": 0.020000000000000004,
    "d": 1.2000000000000002,
-   "t": 33.625,
+   "t": 32.125,
    "chain": [],
    "lufs": -17.0,
    "what": "d3 line 10 lady",
@@ -670,7 +704,7 @@
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-11-maddie-r13b-tight.wav",
    "i": 0.22000000000000003,
    "d": 9.66,
-   "t": 35.333333333333336,
+   "t": 33.833333333333336,
    "chain": [],
    "lufs": -16.0,
    "what": "d3 line 11 maddie",
@@ -682,7 +716,7 @@
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-14-sandra-r17-D08c-t2a-dub.wav",
    "i": 0.0,
    "d": 3.71,
-   "t": 45.541666666666664,
+   "t": 44.041666666666664,
    "chain": [],
    "lufs": -17.0,
    "what": "d3 line 14 sandra",
@@ -691,10 +725,10 @@
   },
   {
    "stem": "vox-maddie",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r17le-tight.wav",
-   "i": 0.05,
-   "d": 9.629999999999999,
-   "t": 49.666666666666664,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-15-maddie-r20b.wav",
+   "i": 0.0,
+   "d": 6.890000000000001,
+   "t": 48.166666666666664,
    "chain": [],
    "lufs": -16.0,
    "what": "d3 line 15 maddie",
@@ -703,13 +737,25 @@
   },
   {
    "stem": "vox-derek",
-   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r13a.wav",
-   "i": 0.23000000000000004,
-   "d": 1.6600000000000001,
-   "t": 64.375,
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d3-16-derek-r20b.wav",
+   "i": 0.18,
+   "d": 3.48,
+   "t": 55.541666666666664,
+   "chain": [],
+   "lufs": -17.0,
+   "what": "d3 line 16 derek",
+   "cut": null,
+   "line_file": null
+  },
+  {
+   "stem": "vox-derek",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d7-2-derek-r22a.wav",
+   "i": 0.21000000000000002,
+   "d": 1.2500000000000002,
+   "t": 64.125,
    "chain": [],
    "lufs": -19.0,
-   "what": "d7 line 2 derek, whispered: \"Are you ready for this, my love?\"",
+   "what": "d7 line 2 derek, whispered: \"Are you ready for this?\"",
    "cut": null,
    "line_file": null
   },
@@ -718,7 +764,7 @@
    "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/voices/d9-0-maddie-r4c.wav",
    "i": 0.23000000000000004,
    "d": 0.9800000000000002,
-   "t": 80.20833333333333,
+   "t": 81.04166666666667,
    "chain": [],
    "lufs": -17.0,
    "what": "d9 line 0 maddie: \"Boss...\" (small, on her beacon's one pulse)",
@@ -730,7 +776,6 @@
   "d1 (Kai ld1-0/ld1-1): Maddie says \"Suits on, please. It's a clean room.\" over D00 (still the battered Maddie with her bunting: this is before the clean room); her beacon blooms with her voice, drawn in post. Sandra, worried, under her breath: \"I hope this bloody plan works.\" on the new D01h-t2.",
   "d1 lip-sync: Omni gave Sandra 1.6 s of mouth for 2.1 s of voice, so the line is not squeezed. \"I hope\" and \"this bloody\" sit on her mouth at x1.0 (the p of \"hope\" on her lips shut at 1.83 s, the b of \"bloody\" on 2.25 s), and the cut to the vast room lands on the p of \"plan\": \"plan works.\" plays over the room at its own speed. Her lip read is from her own face (the tracker first locked on the old lady beside her).",
   "d2 (Kai at296/bd2): D02 re-made (D02r3-t1): the hundred stopped just inside the doors of a vast white room, the wafer far off in the middle, a spotless floor; nobody walks, heads turn, rainbow bands ripple over the wafer. A slow push 100 -> 105% after a 1 s hold (post), so the room draws them in.",
-  "D round 14 STAND-IN: the vow runs 2.2 s past D03c; its last frame holds (the robot is still; the beacon keeps pulsing on her words).",
   "D round 14 (Kai, 9 Nov, timeline r13): \"Hundred. ... What will it feel like?\" one take (at542); Sandra \"I don't like the idea of... it feels like dying.\" and Maddie \"I won't switch it on unless you want it. ... All of you. ... And only if you're sure.\" with long pauses, no \"take a seat\" (at1068); no \"Thank you\" (at1284); the hands quick: in on the grip, the whisper at once, white (at1342/at1575).",
   "D round 16 (Kai, picks r15): the end of the vow (\"All of you... and only if you're sure\") plays on the hundred, seated, in the final shot's layout with Maddie small among them (D10c), and the same shot runs on unbroken as they settle in silence; the hands are already held (D12k); the last shot is that room with the people gone (D16n). No stand-ins left in D.",
   "Scene E's phone still shows the OLD last frame of D (D16r3); it needs D16n's when E is next cut.",
@@ -741,17 +786,16 @@
   "d8 (Kai at2259/at2379): the doorway prints re-made as real video (D14p-t2: clouds move, chalk dust drifts towards the door, the doorway light breathes), played with no post zoom, out of the white. The dusk building (D14) is kept as it was.",
   "d9 (Kai bd9/ld9-1): the tea-cup still (D15) is gone; straight from the dusk wide to Maddie, gleaming with no bunting, small among the empty chairs (D16r3-t1, from the D10n angle), the music carrying across. Her only line, \"Boss...\", on her beacon's one pulse, then 4.3 s of silence and the hard cut to E. \"Mind how you go.\" has moved to E, whole, through the phone.",
   "d9: the 4.3 s silence fits inside D16r3 (it ends at 8.23 s of the clip), so the chained D16xr3-t1 (the chair lights dimming) is not used; it is there if Kai wants the silence longer. Scene E's phone shows the last frame D shows (D16r3 at that time).",
-  "D10c: runs 0.71 s past its clip; the last frame holds (no ping-pong) while its move keeps running.",
   "D16n: runs 0.23 s past its clip; the last frame holds (no ping-pong) while its move keeps running.",
   "Colour: every interior source is white-balanced 60% of the way to the interiors' mean channel balance, brightness kept (gains R 0.97-1.13, B 0.92-1.04); D14, the dusk exterior, is left as shot. sh-25 (D10) and D11 were the bluest, D00/D01 the warmest.",
-  "Music (Kai bd9: carry it across): D-cross enters on the hands at 16.2 s into the take and plays without an edit to the hard cut to E, its held last chord stopping 1.4 s before the cut (40 s in the take, in the silence after \"Boss...\") and its release ringing out on the cut. The take's one breath (~24.5-26.5 s) falls at 68.6-70.6 s of the scene (the white is at 69.6-68.6 s); the dusk wide sits on 28-35 s of the take. The seam no longer goes dark on the chord (it did when the music stopped in d8). D-room plays from 0 s of its take, in after Sandra's line, and now carries on under the d6 speech (Kai at2622) to hand over to D-cross on the hands; both duck ~6 dB under speech. Kai to rule on taste.",
+  "Music (Kai bd9: carry it across): D-cross enters on the hands at 15.1 s into the take and plays without an edit to the hard cut to E, its held last chord stopping 1.4 s before the cut (40 s in the take, in the silence after \"Boss...\") and its release ringing out on the cut. The take's one breath (~24.5-26.5 s) falls at 69.4-71.4 s of the scene (the white is at 70.5-69.5 s); the dusk wide sits on 28-35 s of the take. The seam no longer goes dark on the chord (it did when the music stopped in d8). D-room plays from 0 s of its take, in after Sandra's line, and now carries on under the d6 speech (Kai at2622) to hand over to D-cross on the hands; both duck ~6 dB under speech. Kai to rule on taste.",
   "Sound I made up for scene D: the clean-room air (brown noise + a faint 120 Hz, ffmpeg), the chairs' power-up hum on the spiral (82/165/247 Hz + pink noise) dying exactly as the seam goes dark, the one unanswered question beep in the silence after \"Boss...\". No tea, rustle or suit sounds exist in the library: the changing room is the crowd-shuffle recording.",
-  "Colour joins (mean RGB either side of every cut, after the match): steps over 30/255 only at D11b-t2b -> D08c-t2a (32); D14f-t1 -> D16n-t1 (97), each a change of place or light (the white fade, the dusk exterior, the overhead), not a drift.",
+  "Colour joins (mean RGB either side of every cut, after the match): steps over 30/255 only at D05v-aisle-t1 -> D05v-chair-t1 (31); D05v-chair-t1 -> D11c-t2a (66); D11b-t2b -> D08c-t2a (33); D14f-t1 -> D16n-t1 (97), each a change of place or light (the white fade, the dusk exterior, the overhead), not a drift.",
   "Photosensitivity (D10c): at most 0 large-area flash pair(s) in any 1 s (the screen limit is 3), largest frame-to-frame change over 25/255 on 0% of the frame. A screen, not a certified Harding test.",
   "Photosensitivity (D12k): at most 0 large-area flash pair(s) in any 1 s (the screen limit is 3), largest frame-to-frame change over 25/255 on 2% of the frame. A screen, not a certified Harding test.",
-  "Levels (review round 2): every phrase now takes its gain from its whole atom, and no phrase may go in over -1 dBFS (the 0.37 s \"You don't.\" went in ~45 dB hot in round 1 and pulled all of D 10 dB down). Per-second RMS strip of the mix: the loudest second is +7.7 dB over the median of the scene's active seconds (at 50 s; the check fails over +12 dB).",
-  "delivery-qc: 6 ok, 3 warn, 1 fail. Its FAIL is \"limited range, content full\" from single stray pixels: frames are clamped to 16-235 before encoding and 0.014% of pixels end up outside (worst frame 0.11%), the encoder-rounding-on-grain case in delivery.md (2026-10-19). Warns: -16 LUFS by design, blacks at 0 (same rounding), \"frozen\" stretches = the deliberate holds (D05's 2 s before its move; Maddie still in the silence after \"Boss...\").",
+  "Levels (review round 2): every phrase now takes its gain from its whole atom, and no phrase may go in over -1 dBFS (the 0.37 s \"You don't.\" went in ~45 dB hot in round 1 and pulled all of D 10 dB down). Per-second RMS strip of the mix: the loudest second is +7.3 dB over the median of the scene's active seconds (at 34 s; the check fails over +12 dB).",
+  "delivery-qc: 7 ok, 2 warn, 1 fail. Its FAIL is \"limited range, content full\" from single stray pixels: frames are clamped to 16-235 before encoding and 0.011% of pixels end up outside (worst frame 0.12%), the encoder-rounding-on-grain case in delivery.md (2026-10-19). Warns: -16 LUFS by design, blacks at 0 (same rounding), \"frozen\" stretches = the deliberate holds (D05's 2 s before its move; Maddie still in the silence after \"Boss...\").",
   "Nobody has listened to this cut: every level, duck and sound placement is measured, not heard."
  ],
- "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r19/preview.mp4"
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/cut-r22/preview.mp4"
 }

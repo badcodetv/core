@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1-slow155.mp4",
+ "made": "2026-11-10T15:33:21+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg setpts=1.55*PTS,fps=24",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D10c-t1.mp4",
+ "why": "D round 20: the seated room now carries the longer promise, Derek's new line and 'they sit' (~15.3 s); slowed x1.55 (was x1.3) so it covers them with no frozen tail"
+}

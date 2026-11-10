@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-16-derek-r20d.try1.wav",
+ "made": "2026-11-10T15:19:59+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "It's all right, love. I'll be there with you.",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: Kai at1236/at1418 (timeline r19): warm and tender, to Sandra beside him; encouraging, quiet, a hand on hers; the room music fades to nothing on 'I'll be there with you'.\nStyle: warm and tender, a big man gentle with his wife; quiet reassurance to Sandra beside him, a smile in it, no sadness.\nPace: unhurried; a small breath after love, then I will be there with you said softly and surely.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-16-derek-r20d.md"
+ },
+ "settings": {
+  "voice": "Algieba",
+  "temperature": 1,
+  "channels": 2
+ }
+}

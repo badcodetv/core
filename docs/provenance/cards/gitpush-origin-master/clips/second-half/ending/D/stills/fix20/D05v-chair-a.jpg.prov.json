@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-chair-a.jpg",
+ "made": "2026-11-10T15:21:04.096Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "A close shot inside the room from picture one: a single dark leather recliner in the foreground, its seat bare, a thick cable running from its base across the white floor toward the round hub, a steady soft white glow on the floor beneath it. Behind it, out of focus, more recliners in rows, also bare, each in the same even glow. Far back, small and soft, the gleaming white robot from picture two with its amber lamp. Shallow depth of field, same cool palette and light.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D05c-r14-c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D05c-r14-c.jpg",
+   "/home/kai/.cache/badcode-gpom-ending/refs/maddie-gleam-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "f34c217c-05d4-4b72-899d-48417309f706"
+}

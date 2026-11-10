@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-aisle-a.jpg",
+ "made": "2026-11-10T15:20:07.048Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Picture one shows the clean white room with its ring of dark reclining chairs wired to a round hub. Show the same room and the same chairs at eye level from the outer ring, looking down an aisle toward the hub, at the moment just before the group comes in: every recliner unoccupied, seats bare, each one sitting in a calm, even pool of soft white light on the floor. In the aisle stands the gleaming white robot from picture two, small in the frame, amber lamp lit, no flags or decorations. Same palette, same cool light, cinematic.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r15s-b.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-gpom-ending/refs/D10c-r15s-b.jpg",
+   "/home/kai/.cache/badcode-gpom-ending/refs/maddie-gleam-b.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": null,
+  "numOutputs": 2
+ },
+ "source_id": "2606b9b1-9fbf-4ec7-af62-eeaf45986bb6"
+}

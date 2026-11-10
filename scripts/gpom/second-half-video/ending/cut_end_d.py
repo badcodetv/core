@@ -59,16 +59,17 @@ REF.update({'d3n1': 'd3n', 'd3n2': 'd3n'})
 D6_PARTS = [('d6c', 0.0)]  # the admission, as placed (key, gap before it); with the round-C retake: d6a, d6b, d6c
 # --tag r5 (Kai, 4 Nov, D round 5): Maddie's new key line (at469), the lady's answer cut (at567/at715), the d6 question
 # and answer cut (at1091/at1178/at1285), the all-seated D10x shot for d6 (at1054/at1615). Writes <media>/cut-r5/.
-R17 = E.TAG in ('r17', 'r18', 'r19')  # r19: Kai, 9 Nov (timeline r18 at944, picks r19 hands b): clean Maddie beside the lady's hands (D11b-t2b); overhead kept as is (pick 'now').  # r18: Kai, 9 Nov (after r17): the lady's 'And afterwards?' re-shot with timed words, quick take fitted (pick a-b).  r17: Kai, 9 Nov (timeline r16): Sandra re-shot with timed words (at1141), a firmer vow, cut earlier (at1300), 'sure' whole (at1446), music to silence under the vow then the ending piece (at1477)
-R16 = E.TAG in ('r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov (picks r15): the seated room with small Maddie (D10c b) under the vow and 'they sit', hands already held (D12k), the last shot with the people gone (D16n ca)
-R15 = E.TAG in ('r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov (chairs picks r14): the new overhead (D05c c), Sandra's two-shot speaking (D08c b), the hands held together (D12h)
-R14 = E.TAG in ('r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov (timeline r13): Hundred+question one take, Sandra's jeopardy, the vow without 'take a seat', no Thank you, hands quick to white
-R13 = E.TAG in ('r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 9 Nov: dialogue 1I (the hundred choose: 'take a seat'), the lady asks 'And afterwards?', 'my love'
-R11 = E.TAG in ('r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai at1242 (6 Nov): no Sandra / 'me too', only 'Are you ready for this?'; the music must not change
-R9 = E.TAG in ('r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # r10: Kai at978, the key line re-worded; Kai, 6 Nov, timeline r8 notes: Maddie empathetic (at331/at557), no 'Will it hurt?' (at849), no waffle (at1147/at1275)
-R8 = E.TAG in ('r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 6 Nov, timeline r7 notes: cut to the chase (at1400), no tea (at1750), cello from 'they sit' (at1849), hands straight to white (at2360)
-R7 = E.TAG in ('r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # Kai, 6 Nov: dialogue page draft 1F (the wafer: what it costs) + 2D (the goodbye)
-R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
+R20 = E.TAG in ('r20', 'r21', 'r22')  # r22: Kai at1586, just 'Are you ready for this?'.  # r21: Kai at1559, Derek's whisper 'my sweetheart'.  r20: Kai, 10 Nov (timeline r19 + picks r20): two new angles on the empty room (at543), curious Derek (at627), the promise in his words + Derek's warm line (at1236), the room music ends on it (at1418), the hands held 1.5 s longer (at1587)
+R17 = E.TAG in ('r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # r19: Kai, 9 Nov (timeline r18 at944, picks r19 hands b): clean Maddie beside the lady's hands (D11b-t2b); overhead kept as is (pick 'now').  # r18: Kai, 9 Nov (after r17): the lady's 'And afterwards?' re-shot with timed words, quick take fitted (pick a-b).  r17: Kai, 9 Nov (timeline r16): Sandra re-shot with timed words (at1141), a firmer vow, cut earlier (at1300), 'sure' whole (at1446), music to silence under the vow then the ending piece (at1477)
+R16 = E.TAG in ('r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov (picks r15): the seated room with small Maddie (D10c b) under the vow and 'they sit', hands already held (D12k), the last shot with the people gone (D16n ca)
+R15 = E.TAG in ('r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov (chairs picks r14): the new overhead (D05c c), Sandra's two-shot speaking (D08c b), the hands held together (D12h)
+R14 = E.TAG in ('r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov (timeline r13): Hundred+question one take, Sandra's jeopardy, the vow without 'take a seat', no Thank you, hands quick to white
+R13 = E.TAG in ('r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 9 Nov: dialogue 1I (the hundred choose: 'take a seat'), the lady asks 'And afterwards?', 'my love'
+R11 = E.TAG in ('r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai at1242 (6 Nov): no Sandra / 'me too', only 'Are you ready for this?'; the music must not change
+R9 = E.TAG in ('r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # r10: Kai at978, the key line re-worded; Kai, 6 Nov, timeline r8 notes: Maddie empathetic (at331/at557), no 'Will it hurt?' (at849), no waffle (at1147/at1275)
+R8 = E.TAG in ('r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 6 Nov, timeline r7 notes: cut to the chase (at1400), no tea (at1750), cello from 'they sit' (at1849), hands straight to white (at2360)
+R7 = E.TAG in ('r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # Kai, 6 Nov: dialogue page draft 1F (the wafer: what it costs) + 2D (the goodbye)
+R5 = E.TAG in ('r5', 'r6', 'r7', 'r8', 'r9', 'r10', 'r11', 'r13', 'r14', 'r15', 'r16', 'r17', 'r18', 'r19', 'r20', 'r21', 'r22')  # r6: the same edit, with the re-made suits (D00r7) and tea (D06r7) shots
 I16N, PULSE16N = 1.9, 3.0  # D16n-t1: her lamp glows at ~3.0 s, then she turns to face the chairs (4-6 s); 'Boss...' on the glow
 INTERIOR_EXCLUDE = {'D14'}  # the dusk exterior keeps its own light
 BEACON = {'D00': ([536, 111], 34), 'D03': ([642, 455], 16), 'D03c': ([432, 92], 24), 'D08': ([627, 390], 20), 'D11': ([354, 290], 24),
@@ -258,7 +259,14 @@ def build(sc):
             cut11c = fr(e9 + 0.5)
             d05 = cut11c - cut05
             if R15:  # Kai's pick D05c c (chairs picks r14): the final shot's layout from above, the camera sinking (Omni 1.2)
-                S.piece('D05c', S.clip('D05c'), 0.0, cut05, cut11c, 'd3')
+                if R20:  # Kai at543: the overhead only until its lights drop (~2.7 s in), then the aisle, then one empty chair
+                    c1 = fr(cut05 + 2.5)
+                    c2 = fr(max(c1 + 2.0, e2 + 0.3))
+                    S.piece('D05c', S.clip('D05c'), 0.0, cut05, c1, 'd3')
+                    S.piece('D05va', S.clip('D05va'), 0.0, c1, c2, 'd3')
+                    S.piece('D05vc', S.clip('D05vc'), 0.0, c2, cut11c, 'd3')
+                else:
+                    S.piece('D05c', S.clip('D05c'), 0.0, cut05, cut11c, 'd3')
             else:
                 S.piece('D05', sc.picks['picks']['D05']['file'], 0.0, cut05, cut11c, 'd3', still=True,
                         zoom=[[0.0, 1.04], [1.0, 1.04], [d05, 1.18]], rot=[[0.0, 0.0], [1.0, 0.0], [d05, 3.0]])
@@ -301,9 +309,15 @@ def build(sc):
                     cutm = fr(min(cut08 + MAX6, e14 + 0.4))
                     S.piece('D08', S.clip('D08'), 0.0, cut08, cutm, 'd3')
                     e15 = S.human('vox-maddie', 'd3-15-maddie', fr(cutm + 0.4), 'd3', 15, 'maddie')
-                end_d3 = fr(e15 + 1.0)
-                assert end_d3 - cutm <= 8.0 + 3.0, ('the vow overruns Maddie even with a held last frame', e15, cutm)
-                if end_d3 - cutm > 8.0 - 1 / FPS:
+                if R20:  # Kai at1236: Derek, warm, to Sandra; the room music ends on it (at1418)
+                    a16 = fr(e15 + 0.5)
+                    e16 = S.human('vox-derek', 'd3-16-derek', a16, 'd3', 16, 'derek', lufs=-17.0)
+                    m['derek_warm'] = (a16, e16)
+                    end_d3 = fr(e16 + 1.0)
+                else:
+                    end_d3 = fr(e15 + 1.0)
+                assert R20 or end_d3 - cutm <= 8.0 + 3.0, ('the vow overruns Maddie even with a held last frame', e15, cutm)
+                if not R16 and end_d3 - cutm > 8.0 - 1 / FPS:
                     c.flags.append(f'D round 14 STAND-IN: the vow runs {end_d3 - cutm - 8.0:.1f} s past D03c; its last frame holds '
                                    '(the robot is still; the beacon keeps pulsing on her words).')
                 if R16:  # Kai's pick D10c2 b: the vow's end ('All of you... only if you're sure') lands on the hundred, seated
@@ -673,7 +687,7 @@ def build(sc):
             a = fr(s7 + 0.6)
             e3 = S.human('vox-derek', 'd7-2-derek', a, 'd7', 2, 'derek', lufs=-19.0,
                          what=f'd7 line 2 derek, whispered: "{sc.text("d7-2-derek")}"')
-            end_d7 = fr(e3 + 1.6)
+            end_d7 = fr(e3 + (3.1 if R20 else 1.6))  # r20, Kai at1587: 1.5 s more of the hands before white
             dd = end_d7 - s7
             f12 = 'D12k' if R16 else 'D12h' if R15 else 'D12'
             S.piece(f12, S.clip(f12), i12, s7, end_d7, 'd7', grade=LIFT, white=[[max(0.0, dd - 1.5), 0.0], [dd, 1.0]])
@@ -915,7 +929,7 @@ def audio_d(S):
     cin = st['d6'] if R8 else m['hands']
     if R17:  # Kai at1477: no clash of cues; the piano fades to silence under the vow, the cello fades in out of it
         v0, v1 = m['vow']
-        r1 = fr(v1 - 2.6)  # silent by 'And only if you're sure'
+        r1 = fr(m['derek_warm'][1]) if R20 else fr(v1 - 2.6)  # r20: silent as Derek ends 'I'll be there with you'; r17: by 'only if you're sure'
         fade = r1 - v0
     else:
         r1 = fr(cin + (3.0 if R11 else 1.5))

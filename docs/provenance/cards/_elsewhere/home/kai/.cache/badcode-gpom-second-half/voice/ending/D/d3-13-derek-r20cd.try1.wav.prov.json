@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-13-derek-r20cd.try1.wav",
+ "made": "2026-11-10T15:19:14+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "scripts/aistudio-tts.py",
+ "model": "gemini-3.1-flash-tts-preview",
+ "prompt": "Hundred. ... What will it feel like?",
+ "inputs": {
+  "profile": "# AUDIO PROFILE\nDerek, a working-class man from Liverpool in his fifties, Sandra's husband.\n\n## THE SCENE\nA vast, silent, spotless white room. The hundred survivors in white suits stand close around a giant rainbow-sheened silicon wafer the size of a house, the time machine, and understand for the first time what it will cost them. Utter hush, no echo; voices close, quiet and full of feeling.\n\n### DIRECTOR'S NOTES\nEmotion for this line: 'Hundred.' one word, very quiet, half to himself as he counts them and understands, flat; then a long pause; then 'What will it feel like?' small and vulnerable, a big man suddenly afraid, gentle, almost shy; the same low voice throughout, never higher.\nStyle: no gloom, no dread: a big plain man genuinely curious, leaning in; Hundred. counted quietly and half impressed, then a real question asked with interest, almost wonder, as if he wants to know.\nPace: natural; a short beat after Hundred, then the question at an easy conversational speed, rising at the end.\nAccent: Scouse, as heard in Liverpool. Never American, never Received Pronunciation.\n\n### SAMPLE CONTEXT\nThe voice you'd cast as the bloke in a British sitcom who is losing an argument and knows it.",
+  "profile_file": "/home/kai/.cache/badcode-gpom-second-half/voice/ending/D/d3-13-derek-r20cd.md"
+ },
+ "settings": {
+  "voice": "Algieba",
+  "temperature": 1,
+  "channels": 2
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-chair-t1.mp4",
+ "made": "2026-11-10T15:34:14+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-chair-b.jpg",
+ "why": "D round 20 (Kai at543: 'a couple of different shots of this seating arrangement with no humans in it yet'; picks r20) chair b",
+ "source_id": "481d8548-b7d9-4a13-b1c8-bd98d584e268",
+ "prompt": "One unbroken take. The camera holds low beside the single bare recliner in front and drifts sideways very slowly, so the rows of chairs behind slide gently past and the small white robot far back stays in soft focus, its amber lamp lit. The white glow on the floor under every chair holds completely steady, never flickering or fading. Quiet and patient. No cuts, no people, no music.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-chair-b.jpg"
+ },
+ "settings": {
+  "durationSeconds": "8",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "eb8deb0b-1bad-4513-8437-0d0802523f8c"
+ }
+}

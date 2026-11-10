@@ -239,7 +239,7 @@
    "what": "page round 6: cut to Parliament on 'I made it'; 'Now the real work starts' cut; Kai's Suno take 0ecce5dc ('Don't make me come back twice.'); new real-looking Parliament E04r4-t1 (pick e-b)",
    "how": "premiere-plan.py --tag r3 (lines under cut-r6/premiere/r3/lines/)",
    "check": {
-    "at": "2026-11-09T22:11",
+    "at": "2026-11-10T16:21",
     "state": "edited in Pr",
     "why": "26 effects added"
    }

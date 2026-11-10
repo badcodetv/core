@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/clips/D05v-aisle-t1.mp4",
+ "made": "2026-11-10T15:37:04+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "FlowClient.generateVideo (session script; MCP server predates the Omni 1.2 slider fix)",
+ "model": "Omni 1.2 Flash",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-aisle-b.jpg",
+ "why": "D round 20 (Kai at543: 'a couple of different shots of this seating arrangement with no humans in it yet'; picks r20) aisle b",
+ "source_id": "ea875880-9008-4bb5-b0d2-f6459a6693fb",
+ "prompt": "One unbroken take. The camera glides slowly and smoothly forward down the aisle between the bare reclining chairs, toward the round hub and the small white robot waiting there, its amber lamp glowing. The soft white light under every chair stays perfectly constant the whole time: no flicker, no dimming, no pulsing. Nothing else moves. Hushed, still, expectant. No cuts, no people, no music.",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/ending/D/stills/fix20/D05v-aisle-b.jpg"
+ },
+ "settings": {
+  "durationSeconds": "8",
+  "aspect": "16:9",
+  "count": "1",
+  "project": "82d3375a-8bab-4157-a267-3378daa56139"
+ }
+}

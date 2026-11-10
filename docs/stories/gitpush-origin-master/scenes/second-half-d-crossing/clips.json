@@ -372,7 +372,9 @@
    "plate": "../stills/fix15/D10c-r15s-b.jpg",
    "talking": false,
    "model": "Omni 1.2 Flash",
-   "note": "Round 16 (Kai's pick D10c2 b, picks r15): the hundred seated in the final shot's layout, Maddie small in the gap; they settle, a hand reaches for a neighbour, the chair lights swell. Under the end of the vow and 'they sit', unbroken."
+   "note": "Round 16 (Kai's pick D10c2 b, picks r15): the hundred seated in the final shot's layout, Maddie small in the gap; they settle, a hand reaches for a neighbour, the chair lights swell. Under the end of the vow and 'they sit', unbroken.",
+   "file_round20": "D10c-t1-slow155.mp4",
+   "round20": "Kai, 10 Nov (r20): slowed x1.55 (15.5 s) so the seated room carries the longer promise, Derek's new line and 'they sit'."
   },
   "D12k": {
    "file": "D12k-t1.mp4",
@@ -391,6 +393,24 @@
    "talking": false,
    "model": "Omni 1.2 Flash",
    "note": "Round 16 (Kai's pick D16n ca, picks r15): the seated room with the people gone, clean small Maddie, no suit on the floor; chair lights fade, her lamp glows ~3 s, she turns to face the chairs 4-6 s. First try failed in Flow (likely a policy block on 'nobody is here'); reworded."
+  },
+  "D05va": {
+   "file": "D05v-aisle-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/fix20/D05v-aisle-b.jpg",
+   "talking": false,
+   "model": "Omni 1.2 Flash",
+   "note": "Round 20 (Kai at543, picks r20 aisle b): eye level down an aisle of bare recliners to the hub, clean Maddie; slow push, the chair lights steady."
+  },
+  "D05vc": {
+   "file": "D05v-chair-t1.mp4",
+   "in": 0.0,
+   "out": 8.0,
+   "plate": "../stills/fix20/D05v-chair-b.jpg",
+   "talking": false,
+   "model": "Omni 1.2 Flash",
+   "note": "Round 20 (Kai at543, picks r20 chair b): one bare recliner close, its cable and steady glow, the room and clean Maddie soft behind; slow sideways drift."
   }
  },
  "credits_review1": 94,
