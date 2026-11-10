@@ -1,0 +1,13 @@
+{
+  "name": "amen-jungle-pirate-tape",
+  "style": "1994 UK jungle instrumental, 165 BPM, starts mid-roll on bar one with no intro: a frantic chopped and time-stretched Amen breakbeat, ghost snares, stuttering snare rolls, metallic 12-bit sampler grain on the stretched hits. Rolling mono sine sub bass under the breaks, one stabbing hardcore rave chord punched in on the offbeats. Homemade bedroom-studio mix taped off a London pirate radio broadcast: cassette hiss, saturated and slightly crunchy, wobbly tape, warm distortion on the drums. Raw, rough, working-class, loopable, relentless.",
+  "exclude": "vocals, MC, rapping, ragga vocal samples, vocal chops, singing, choir, spoken word, piano, slow intro, build-up, riser, ambient pads, polished festival EDM, dubstep wobble, neurofunk, clean modern mastering",
+  "lyrics": "[Break: chopped Amen drums from the first beat]\n[Instrumental]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 45,
+  "maxMode": false
+}

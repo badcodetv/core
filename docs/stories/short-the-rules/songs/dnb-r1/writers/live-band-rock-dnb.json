@@ -1,0 +1,13 @@
+{
+  "name": "live-band-rock-dnb",
+  "style": "instrumental, three-piece punk band playing drum and bass by hand at 175 BPM, everyone crashing in together on the first beat, no intro. Session drummer on a battered acoustic kit, sticks flat out, snare like a gunshot, double-time kick-snare shuffle, cymbals smashed open. Bassist digging into a fuzz-blown bass guitar, one ugly looping riff. Guitarist hitting a single power chord on each downbeat, amps howling with feedback between hits. Tracked live in a cramped concrete room, ambient mics, bleed, clipping, sweat, no overdubs",
+  "exclude": "vocals, singing, shouting, crowd chants, MC, rap, vocal chops, spoken word, synth, drum machine, programmed drums, riser, build-up, fade in, quiet intro, breakdown",
+  "lyrics": "[Instrumental]\n[Band crashes in on beat one, full volume]\n[Riff repeats, drummer flat out, power chord on every downbeat]\n[Drum fill, cymbal smash, riff again]\n[Dead stop, feedback ringing]",
+  "model": "v6-wild",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": true
+}

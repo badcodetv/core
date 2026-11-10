@@ -1,0 +1,13 @@
+{
+  "name": "live-band-rock-dnb",
+  "style": "instrumental live-band drum and bass, 175 BPM, a four-piece kicking a door in, no build: all of them hit beat one together. Drummer: real acoustic kit, two-step breakbeat played by hand at full force, snare cracking on two and four, ride and crash cymbals smashed, tom fills into every eighth bar, slightly ahead of the click. Bass: punk player on a fuzz-drenched bass guitar, one gnarly four-bar riff, picked hard, locked to the kick. Guitar: noise guitarist slamming a single open power chord on each downbeat, letting it ring into amp feedback. Recorded live off the floor in one small concrete room, room mics up, spill everywhere, raw and loud, no polish, sweaty basement gig energy, steady loopable groove",
+  "exclude": "vocals, singing, shouting, crowd chants, MC, rap, vocal chops, spoken word, synth pads, drum machine, programmed beats, riser, slow intro, fade in, breakdown",
+  "lyrics": "[Intro: full band crashes in on beat one, no build]\n[Instrumental]\n[Main riff: live drums flat out, fuzz bass, power chord on every downbeat]\n[Tom fill, crash, same riff again]\n[Hard stop on a cymbal choke]",
+  "model": "v6-wild",
+  "variety": "normal",
+  "weirdness": 45,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 60,
+  "maxMode": true
+}

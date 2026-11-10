@@ -1,0 +1,23 @@
+# Research notes: DnB drop, round 1
+
+- Instrumental in Suno is not guaranteed by the Instrumental switch alone. Guides advise Custom mode, "instrumental" early in the style box, an [Instrumental] tag in the lyrics, and excludes like "vocals, singing, humming, choir, voice" to stop stray vocals and chops.
+  - https://howtopromptsuno.com/style-lyrics/how-do-i-make-instrumental
+  - https://hookgenius.app/learn/suno-instrumental-prompts/
+  - https://suno.bi/en/blog/instrumental-music-from-text-prompts-7-tips-sunomv-2026
+- Give a BPM number: DnB sits at 170+ (usually 172-176). An explicit number is said to keep the rhythm steadier.
+  - https://musci.io/blog/suno-prompts
+- No tag reliably skips the intro. Community reports: a bare [Intro] is unreliable. What helps is starting the tag sheet at the main section (e.g. [Drop] / [Chorus]) and saying "no intro, starts immediately" in the style box too. [Drop], [Bass Drop] and [Beat Drop] are recognised cues, but Suno may ignore them. Expect several passes.
+  - https://jackrighteous.com/en-us/pages/suno-ai-meta-tags-guide
+  - https://apipass.dev/blogs/how-to-remove-instrumental-intro-suno
+  - https://dev.to/promptmaster/suno-metatags-the-structure-tricks-most-people-never-find-3cad
+- Keep the number of tags small. Stacking instrumental tags can conflict or do nothing.
+  - https://howtopromptsuno.com/style-lyrics/how-do-i-make-instrumental
+- DnB subgenres give very different "lead performers":
+  - Neurofunk / techstep: dark, processed, "alien" Reese bass and tight two-step drums.
+  - Jump-up: bouncy, cartoonish, aggressive dancefloor bass, the most divisive style.
+  - Darkstep: industrial and distorted.
+  - Jungle: chopped breakbeats (Amen), ragga and rave roots.
+  - Liquid: melodic and smooth. Wrong for this scene.
+  - https://www.redbull.com/ca-en/an-expert-guide-to-drum-n-bass-sub-genres
+  - https://bassgorilla.com/drum-and-bass-genres/
+  - https://samplefocus.com/blog/ultimate-guide-to-dnb-subgenres.md

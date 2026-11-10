@@ -1,0 +1,13 @@
+{
+  "name": "jump-up-cartoon-wobble",
+  "style": "instrumental, no vocals. Jump-up drum and bass, 174 BPM. Picture a rave that detonates inside a strip-lit council basement: the party is already flat out when the tape starts, zero lead-in. A bouncy, rubbery mid-range wobble bass, LFO-filtered, honks, barks and stumbles around like a toddler throwing a tantrum, answering itself in goofy pitch-bent hoover yelps. Two-step breakbeat with a punchy kick and a fat, dry snare slapping on 2 and 4, rattling shuffled hats. Cheeky, cartoonish, gleeful vandalism, the sound of paper hurled at the ceiling. One 8-bar bass hook repeated wall to wall, loop-ready, loud club master, thick sub",
+  "exclude": "vocals, singing, MC, rap, hype shouts, vocal chops, chants, crowd noise, spoken word, humming, choir, intro, ambient pad, slow build, breakdown, riser, piano, liquid, soft",
+  "lyrics": "[Drop: slam straight in, bass and drums together]\n[Instrumental]\n[Same 8-bar wobble hook, again and again, no breakdown]\n[Hard stop]",
+  "model": "v6",
+  "variety": "normal",
+  "weirdness": 62,
+  "styleInfluence": 75,
+  "vocalGender": null,
+  "durationSec": 45,
+  "maxMode": false
+}

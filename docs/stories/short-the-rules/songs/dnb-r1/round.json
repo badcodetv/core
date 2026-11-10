@@ -1,0 +1,54 @@
+[
+  {
+    "name": "neurofunk-reese-machine",
+    "style": "neurofunk, techstep, instrumental, 174 BPM, no intro, starts on the drop, full-weight first downbeat, snarling distorted Reese bass that mutates every bar, phase-beating detuned saws, dry tight two-step breakbeat, crisp snare, mono sub, cold metallic clanks, industrial machinery textures, clinical, relentless, no melody",
+    "exclude": "vocals, vocal chops, MC, rap, spoken word, choir, humming, melody, lead synth, piano, pads, strings, intro, build-up, riser, breakdown, ambient, liquid drum and bass, amen jungle, four-on-the-floor, dubstep wobble, happy",
+    "lyrics": "[Instrumental]\n[Drop: full weight from the first beat, Reese bass and two-step drums]\n[Drop continues: bass mutates every bar, no breakdown]\n[Drop continues: loopable, same energy]\n[End: hard stop]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 35,
+    "styleInfluence": 80,
+    "vocalGender": null,
+    "durationSec": 45,
+    "maxMode": false
+  },
+  {
+    "name": "jump-up-cartoon-wobble",
+    "style": "instrumental, no vocals. Jump-up drum and bass at 174 BPM, cartoon-loud and gleeful. Scene: a rave bursts open in a strip-lit council basement and the party is already flat out on the first downbeat, no lead-in at all. The star is a rubbery, honking midrange hoover bass, filter wobbling under a fast LFO, lurching and stamping around like a toddler mid-tantrum, then barking back at itself in goofy pitch-bent yelps on a simple two-note riff. Under it, stripped-back drums: a punchy kick, a fat dry snare that cracks hard on every 2 and 4, open and closed hats flicking between them. Cheeky slapstick vandalism, the sound of confetti made of paperwork. One 8-bar bass riff repeated end to end so it loops cleanly, loud club master, deep sub",
+    "exclude": "vocals, singing, MC, rap, hype shouts, vocal chops, chants, crowd noise, spoken word, humming, choir, intro, ambient pad, slow build, breakdown, riser, piano, liquid, soft",
+    "lyrics": "[Drop: slam straight in, bass and drums together]\n[Instrumental]\n[Same 8-bar wobble riff, again and again, no breakdown]\n[Hard stop]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 62,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 45,
+    "maxMode": false
+  },
+  {
+    "name": "amen-jungle-pirate-tape",
+    "style": "1994 UK jungle instrumental, 165 BPM, drums already rolling at bar one with no intro: a frantic chopped and time-stretched Amen breakbeat, ghost snares, stuttering snare rolls, metallic Akai S950 sampler grain on the stretched hits. Rolling mono sine sub bass under the breaks, one stabbing hardcore rave chord punched in on the offbeats. Homemade bedroom-studio mix taped off a London pirate radio broadcast: cassette hiss, saturated and slightly crunchy, wobbly tape, warm distortion on the drums. Raw, rough, working-class, loopable, relentless.",
+    "exclude": "vocals, MC, rapping, ragga vocal samples, vocal chops, singing, choir, spoken word, piano, slow intro, build-up, riser, ambient pads, polished festival EDM, dubstep wobble, neurofunk, clean modern mastering",
+    "lyrics": "[Break: Amen roll already running, S950 crunch]\n[Instrumental]",
+    "model": "v6",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 45,
+    "maxMode": false
+  },
+  {
+    "name": "live-band-rock-dnb",
+    "style": "instrumental, three-piece punk band playing drum and bass by hand at 175 BPM, everyone crashing in together on the first beat, no intro. Session drummer on a battered acoustic kit, sticks flat out, snare like a gunshot, double-time kick-snare shuffle, cymbals smashed open. Bassist digging into a fuzz-blown bass guitar, one ugly looping riff. Guitarist hitting a single power chord on each downbeat, amps howling with feedback between hits. Tracked live in a cramped concrete room, ambient mics, bleed, clipping, sweat, no overdubs",
+    "exclude": "vocals, singing, shouting, crowd chants, MC, rap, vocal chops, spoken word, synth, drum machine, programmed drums, riser, build-up, fade in, quiet intro, breakdown",
+    "lyrics": "[Instrumental]\n[Band crashes in on beat one, full volume]\n[Riff repeats, drummer flat out, power chord on every downbeat]\n[Drum fill, cymbal smash, riff again]\n[Dead stop, feedback ringing]",
+    "model": "v6-wild",
+    "variety": "normal",
+    "weirdness": 45,
+    "styleInfluence": 75,
+    "vocalGender": null,
+    "durationSec": 60,
+    "maxMode": true
+  }
+]
