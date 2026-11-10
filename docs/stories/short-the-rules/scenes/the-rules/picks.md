@@ -40,3 +40,8 @@ too thin. There is room on all those islands. But you will sleep in a bin."* No 
 
 - The islands line: **(b) a sunny island, a filing cabinet in a hammock under a palm** (Kai: "let's see how it looks").
 - The tear: **(a) silence, then the rip of paper as the hit.**
+
+## 2026-11-10: the ending and the look
+
+Kai took both recommendations: **ending on the pen** (a blank page and a pen held out to camera), and **the look
+decided on the mood board** (today's clothes vs the 1920s Bank Robbery gang, leaning today's). Brief: `brief.md`.

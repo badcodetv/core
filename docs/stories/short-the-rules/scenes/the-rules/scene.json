@@ -27,11 +27,21 @@
     {
       "key": "tear",
       "name": "The tear",
-      "at": "15-20s",
+      "at": "15-19s",
       "blurb": "Back inside, the gang tears up the rules. Silence, then each rip of paper is a hit."
+    },
+    {
+      "key": "pen",
+      "name": "The pen",
+      "at": "19-20s",
+      "blurb": "One of the gang holds a blank page and a pen out to camera: your turn."
     }
   ],
   "video": {
     "aspect": "9:16"
-  }
+  },
+  "looks": [
+    "today: masks in today's clothes, modern room",
+    "1920s: the Bank Robbery gang as they are"
+  ]
 }
