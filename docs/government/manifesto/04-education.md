@@ -10,7 +10,7 @@ The rule. A big employer whose hiring of under-25s falls well behind firms in it
 
 Who decided? The board that stopped hiring, and a levy that charges big employers the same whether they train young people or replace them. That levy is now the Growth and Skills Levy; its new foundation apprenticeships had 110 starts in six months. We add the gap charge.
 
-Nearly a million young people are not in work, education or training. Machines, interest rates or trade? Nobody counts first jobs by town and trade, so we will, every quarter.
+Nearly a million young people are not in work, education or training. Junior vacancies are down about a quarter since January 2025, Bloomberg reports, and Indeed finds new entry jobs asking for AI skills have replaced only about a third of the others that went. Machines, interest rates or trade? Nobody counts first jobs by town and trade, so we will, every quarter.
 
 The test. Two areas drawn by lot from volunteers, three years, against areas like them. Fails if (provisional): youth hiring falls further there, or under half of funded trainees are in work a year on. Then we publish the write-up of what went wrong and drop it. Passes, and it goes national. It stops on its date unless Parliament votes to keep it.
 
