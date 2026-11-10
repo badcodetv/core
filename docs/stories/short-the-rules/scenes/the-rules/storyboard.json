@@ -1,0 +1,70 @@
+{
+ "acts": [
+  {
+   "id": "short",
+   "title": "The Rules",
+   "beats": [
+    "stack",
+    "islands",
+    "window",
+    "tear",
+    "pen"
+   ]
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "short",
+   "title": "The stack",
+   "look": "basement",
+   "line": "We can't afford a bed for you, / The purse is far too thin;",
+   "stills": [
+    "ST3-a-a"
+   ],
+   "anim": 1
+  },
+  {
+   "n": 2,
+   "act": "short",
+   "title": "The islands",
+   "look": "island break",
+   "line": "There is room on all those islands,",
+   "stills": [
+    "IS4-a-b"
+   ],
+   "anim": 2
+  },
+  {
+   "n": 3,
+   "act": "short",
+   "title": "The window",
+   "look": "basement",
+   "line": "But you will sleep in a bin.",
+   "stills": [
+    "WI4-b-a"
+   ],
+   "anim": 3
+  },
+  {
+   "n": 4,
+   "act": "short",
+   "title": "The tear",
+   "look": "basement",
+   "stills": [
+    "TE4-a-a"
+   ],
+   "anim": 4
+  },
+  {
+   "n": 5,
+   "act": "short",
+   "title": "The pen",
+   "look": "basement",
+   "stills": [
+    "PE4-b-a"
+   ],
+   "anim": 5
+  }
+ ]
+}

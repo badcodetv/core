@@ -33,5 +33,16 @@
   "url": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
   "what": "Round 4: island, window, tear, pen in the basement look",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-rules/scenes/the-rules <out.html>"
+ },
+ {
+  "at": "2026-11-10T19:14:16+00:00",
+  "stage": "moodboard",
+  "round": 4,
+  "what": "Votes read: This on IS4-a-b, WI4-b-a, TE4-a-a, PE4-b-a (+ST3-a-a); no notes",
+  "decided": [
+   "Picks: stack ST3-a-a, islands IS4-a-b, window WI4-b-a, tear TE4-a-a, pen PE4-b-a"
+  ],
+  "feedback": "feedback/moodboard-r4",
+  "feedback_docs": 6
  }
 ]

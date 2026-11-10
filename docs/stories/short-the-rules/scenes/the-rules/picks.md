@@ -86,3 +86,8 @@ Kai: *"because it's a short… we should call it one big scene, and let's get th
 unchanged), tear (TE4), pen (PE4; the first try had the triangle pointing left at 3 o'clock, fixed with the logo as
 reference → PE4-b-a). Music: Kai, *"a combination of school hymn plus grimy, dystopian… let me hear what we've got
 first before we start to iterate on the sound."*
+
+## 2026-11-10: round 4 votes → the storyboard
+
+Kai voted This on every cut, no notes: stack `ST3-a-a`, islands `IS4-a-b`, window `WI4-b-a`, tear `TE4-a-a`, pen
+`PE4-b-a`. Every cut has a still: `storyboard.json` written (one frame per cut).
