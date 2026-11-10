@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/WI6-a-b.jpg",
+ "made": "2026-11-10T20:09:37.304Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the provided image, keep the barred basement window, the wet pavement, the sodium light and the shuttered shops exactly as they are, and change only what is in the doorways: now a row of big wheeled council bins stands along the shopfront, lids up and overflowing with bin bags, and the people sleeping rough are bedded down among them, one curled up on flattened cardboard right against a bin, another asleep in a sleeping bag tucked between two bins, a third lying in the open mouth of a large commercial bin lined with cardboard, hood up. Quiet, still, treated with care, faces turned away. Tall portrait frame.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/WI4-b-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/WI4-b-a.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "361a879b-0eed-45d8-b48e-c2664c5e443f"
+}
