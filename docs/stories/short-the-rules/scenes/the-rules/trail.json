@@ -14,5 +14,16 @@
   "url": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
   "what": "Round 3: the opening with masks fixed (ST3-a-a/b) beside Jack's mask and the logo",
   "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/short-the-rules/scenes/the-rules <out.html>"
+ },
+ {
+  "at": "2026-11-10T18:52:51+00:00",
+  "stage": "moodboard",
+  "round": 3,
+  "what": "Votes read: This on ST3-a-a and ST1-a; no notes",
+  "decided": [
+   "Opening still = ST3-a-a; Jack's mask reference accepted (Kai: 'I've definitely picked this style')"
+  ],
+  "feedback": "feedback/moodboard-r3",
+  "feedback_docs": 2
  }
 ]
