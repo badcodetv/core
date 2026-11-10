@@ -371,7 +371,9 @@ $('atSave').onclick = async () => {
 
 if (D.plan && D.plan.length) {
   $('planBox').hidden = false; if (D.round) $('planHead').textContent = "Claude's read of your notes · round " + D.round;
-  for (const g of D.plan) { const s = el('div'), ul = el('ul'); for (const i of g.items) ul.append(el('li', '', i)); s.append(el('h3', '', g.h), ul); $('plan').append(s) }
+  // plan may be a list of {h, items} groups or a plain sentence; a sentence used to crash the page before the timeline drew
+  const groups = typeof D.plan === 'string' ? [{ h: '', items: [D.plan] }] : D.plan;
+  for (const g of groups) { const s = el('div'), ul = el('ul'); for (const i of [].concat(g.items || g)) ul.append(el('li', '', typeof i === 'string' ? i : JSON.stringify(i))); if (g.h) s.append(el('h3', '', g.h)); s.append(ul); $('plan').append(s) }
 }
 for (const f of D.flags) $('flags').append(el('p', 'flag', f));
 
