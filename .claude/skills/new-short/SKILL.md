@@ -55,7 +55,7 @@ picks the stills, OKs words and spend). What is different for a short:
   you trim the fat").
 - **Look and sound are found per short**, inside stage 1 or 2: `story-style` when the short wants an interview,
   or a quick pick on the mood board for a 6-second gag. Write the pick into the short's `look.md` / `sound.md`.
-- **Vertical by default is NOT assumed.** Ask which aspect (9:16, 16:9, both) and put it in `scene.json` `video`.
+- **Aspect: offer portrait (9:16) as the sensible default, and ask.** Kai, 2026-11-10: "the skill shouldn't assume, but it should have the options of sensible defaults." Offer 9:16 first (phones), with 16:9 and both as the alternatives; put the answer in `scene.json` `video.aspect`.
 - **Music** is a Suno track of its own when the short has music (suno-prompt / suno-automation / variations, reading the short's `sound.md`).
 - **Shipping:** the cut goes to `chief-of-staff` (it writes the caption via `marketing-producer`, checks via
   `marketing-gatekeeper`, and logs the post). Then mark the short DONE on the list.
