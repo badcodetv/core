@@ -76,7 +76,7 @@
         "why": ""
       }
     },
-    "current": "r17",
+    "current": "r18",
     "r2": {
       "sequence": "gpom-2-A-killbots-r2",
       "guid": "aa1a4760-5308-4c2c-a37b-b0de52256eba",
@@ -334,6 +334,24 @@
       ],
       "check": {
         "at": "2026-11-10T19:31",
+        "state": "in sync",
+        "why": ""
+      }
+    },
+    "r18": {
+      "sequence": "03 GPOM story A kill bots r18",
+      "guid": "d2249a74-9b2f-4b9a-8a00-06e68683cb27",
+      "bin": "03 GPOM story A kill bots r18",
+      "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+      "built": "2026-11-10",
+      "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d23/edl.json",
+      "what": "round 25, signed off (Kai: \"it's a wrap\"): hologram 1F4 with his re-voiced lines, detect bridge 5 s; 4:03",
+      "how": "premiere-plan.py <edl> <plan> --tag r18 --seq '03 GPOM story A kill bots r18' --skip mus-M0-radio; import 51, create_sequence from the beat-0 shot, eval place (52 placed, 0 failed), then Kai's A1 song tail",
+      "kai_edits_carried": [
+        "A1 0-7.958 s: Git Push Origin Master.mp3 168.958-176.917 (his r17 trim); his fade on it NOT carried (UXP has no audio transitions): add by hand"
+      ],
+      "check": {
+        "at": "2026-11-10T19:54",
         "state": "in sync",
         "why": ""
       }
