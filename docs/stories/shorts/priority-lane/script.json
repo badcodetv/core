@@ -1,0 +1,66 @@
+{
+ "beats": [
+  {
+   "id": "outside",
+   "title": "The ambulance is held",
+   "see": "OUT1-c",
+   "lines": [],
+   "music": "",
+   "sfx": "rain, idling engines, motorcade engines"
+  },
+  {
+   "id": "ambulance",
+   "title": "Inside the ambulance",
+   "see": "AMB1-a",
+   "lines": [],
+   "music": "",
+   "sfx": "monitor beeps, rain on the roof"
+  },
+  {
+   "id": "reporter",
+   "title": "The BadCode reporter",
+   "see": "REP1-a",
+   "lines": [
+    {
+     "who": "REPORTER",
+     "text": "Traffic is being managed, to keep an important journey moving.",
+     "by": "claude",
+     "how": "straight to camera, flat UK regional news"
+    }
+   ],
+   "music": "",
+   "sfx": "rain"
+  },
+  {
+   "id": "minister",
+   "title": "The minister",
+   "see": "MIN1-b",
+   "lines": [
+    {
+     "who": "MINISTER",
+     "text": "I said raspberry-shaped hors d'oeuvres!",
+     "by": "jack",
+     "how": "on the phone, furious"
+    }
+   ],
+   "music": "",
+   "sfx": ""
+  },
+  {
+   "id": "button",
+   "title": "The button",
+   "see": "REP1-a",
+   "lines": [
+    {
+     "who": "REPORTER",
+     "text": "A politician blocking the path of an ambulance. Poetic, really...",
+     "by": "jack",
+     "how": "flat to camera as the motorcade clears"
+    }
+   ],
+   "music": "",
+   "sfx": ""
+  }
+ ],
+ "voices": []
+}

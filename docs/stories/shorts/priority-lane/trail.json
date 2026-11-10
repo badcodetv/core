@@ -28,5 +28,14 @@
   ],
   "feedback": "feedback/moodboard-r1",
   "feedback_docs": 4
+ },
+ {
+  "at": "2026-11-10T15:29:57+00:00",
+  "stage": "dialogue",
+  "round": 1,
+  "what": "dialogue picked",
+  "decided": [
+   "Jack: \"1d is cool\""
+  ]
  }
 ]
