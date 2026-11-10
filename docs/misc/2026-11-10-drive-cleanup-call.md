@@ -63,3 +63,30 @@ rows 1, 2, 3, 4, 6, 7, 8, 9 **Delete**; row 5 **Keep** (old Karen round picture 
 - ✅ Binned by Kai's account: row 3 (Karen 4K final), row 9 (GPOM gaze preview).
 - 🟡 Refused, owner only: rows 1, 2, 4, 6, 7, 8 were uploaded by Jack, and Drive lets only a file's owner bin it.
   Jack bins them himself (Drive in the browser, or `rclone delete` once his sync tool is set up).
+
+## Jack's sync, afternoon (agreed cut only)
+
+Kai's plan: get Drive in sync first, one story at a time; the timeline test comes after. Jack (2026-11-10): upload
+**only the agreed cut** of each story, not the whole folder. Tool: `scripts/drive/push-agreed.sh` with the lists in
+`scripts/drive/agreed/` (how they are built: `scripts/drive/README.md`, "Agreed cut only"). About 2.5 GB went up
+instead of about 32 GB; every story checked at 0 left after.
+
+- ✅ **Karen Music:** pulled to Jack's machine (481 files, 4.3 GB), in sync both ways. Jack's folder recorded.
+- ✅ **Bank Robbery Music** (`Balaclava Gang 9` in `bank robbery_1.prproj`): 64 files. Drive folder new today
+  (Jack made it; row added to `folders.json`). The cut's records were only on branch `stupidity-optimised-script`:
+  its three Bank Robbery song commits were cherry-picked to main, `premiere.current` corrected cut7 → cut9.
+- ✅ **Bank Robbery Story** (`bank robbery - cut 10` + `bank robbery short - cut 7g`): 205 files, with the cut 10
+  render. Drive folder new today. The other 37 per-cut work folders (~13 GB) and 30 old renders stay local.
+- ✅ **Camping Music** (`camping song 2 beat 9` in `camping vid Copy-test_1.prproj`): 88 files plus timeline
+  `r10/cut/edl.json` + `preview.mp4`; beat 9's 9 borrowed `new clips` went to Camping Story, and its logo clip to
+  Camping Music under `badcode logo designs/draft 1/4.mp4` (outside every story: Premiere asks for it once).
+- 🔴 **Camping Music layout, as warned above:** Jack's folder *is* `camping vid`, so his files went to the top level of
+  the Drive folder, beside Drive's older `camping vid/...` copy. Both layouts are now there. Settle which wins before
+  anyone pulls Camping Music. Drive also holds 129 files newer than Jack's (Kai's), left untouched.
+- 🟡 **Not pushed:** Camping Story (Jack 640 files Drive lacks, Drive 177 Jack lacks) and Karen Story (Jack 63
+  Drive lacks, incl. `Karen vid.prproj` + `Karen vid_1.prproj`). Kai and Jack to decide; GPOM is Kai's to push.
+- 🟡 **Timeline test, when it runs:** Kai records his Bank Robbery Music folder (`drive.sh where`), pulls, then the
+  edit round trip. The gang's own cut scripts (`plan_rN.py`, `assemble_cut.py`, `premiere_place.py`) read paths
+  without `localize()`, so a new cut must be made on Jack's machine or those scripts fixed first; the page and
+  `premiere-to-edl.py` translate fine. Camping song's records (mv-r10, mv-song2, mv-balaclava, mv-action) are still
+  only on `stupidity-optimised-script`.
