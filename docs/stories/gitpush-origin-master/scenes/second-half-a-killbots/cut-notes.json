@@ -1,33 +1,26 @@
 {
  "about": "Kai's notes on the scene A (kill bots) timeline page https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ and Claude's read, round by round. Shown on the page by scripts/scene/build-timeline.py.",
- "round": 22,
+ "round": 23,
  "plan": [
   {
-   "h": "Round 22: the new Storyverse (dialogue 1F, locked 9 Nov)",
+   "h": "Round 23: your bridge note (at1293)",
    "items": [
-    "The street is as before up to 'He misses you something rotten, you know.' Then, still on the street: 'We didn't realise how important you were...' and 'Material science is real. It just isn't the whole picture...'.",
-    "Fade to black into the new hologram (88.9 s): Derek picks toast (your still in bead 1), Sandra says sorry first (bead 2), they got married (bead 3); qualia; the multiverse laughed off, flash on 'yet'; the storyverse in the river; the strings stop dead under 'unique training data'; the arc draws on 'go back'.",
-    "Fade up on the street, still driving: 'But the patrol's out. Please, mind how you go.' Then the kill bots as round 21.",
-    "Beat 0 is now 2:37 (was 1:51); the whole scene is 3:20 (was 2:34). Sandra's re-edit from round 21 is kept."
-   ]
-  },
-  {
-   "h": "Worth a look",
-   "items": [
-    "'hollow' comes out as ''ollow' (three takes of four dropped the h: her Bristol accent). Kept.",
-    "The stills sit in discs about 3.6 times a bead's size, so faces read; the bead's time tag moved above each disc. The plain hologram (no stills) is rendered too if you'd rather."
+    "'Material science is real...' is gone. Straight from 'Please, let me show you what we found.' into the hologram.",
+    "The hologram opens on the materialist stack (society to maths, each layer on her word), then the empty slot, then 'Consciousness' lights it and the light drops into Derek's toast bead. From there it plays as round 22.",
+    "Beat 0 is 2:46 (was 2:37); the scene is 3:29 (was 3:20). The stack adds about 30 s; the cut block saved about 22 s."
    ]
   },
   {
    "h": "You decide",
    "items": [
-    "Stills in the beads, or the plain hologram?",
-    "Is it too long? b02 on the street runs 21 s before the hologram starts.",
-    "Still open: Derek's 'But the world ended, Sandra!' a quarter-second early; the hologram end pose; your music note (Chopin). Premiere waits for your 'build it' once the Goodbye session is out of it."
+    "The stack's three lines are my draft (marked 'draft' on the page): keep them, or say your own.",
+    "Your other notes on round 22: leave them on this page, against round 23, and I'll take them all in one round."
    ]
   }
  ],
- "replies": {},
+ "replies": {
+  "at1293": "Done (round 23). 'Material science is real...' is cut. She ends on 'Please, let me show you what we found.' and we fade straight into the hologram, which now opens on the materialist stack: society, individual, biology, chemistry, physics (the atom, then the standard model on 'quarks and leptons'), mathematics, each landing on her word. Pull back to the whole stack, an empty slot beside it ('something missing'); on 'Consciousness' it lights warm and the light drops into the first bead, Derek's toast. New lines (my draft, change freely): 'Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths.' / 'Every bit of it's real. But we've worked out there's something missing.' / 'Consciousness. Yours. It's as fundamental as quarks and leptons.'"
+ },
  "kai_round1": {
   "at3521": {
    "note": "This shot needs a bit of work. I think they need to be arranged outside the door like they were. We could almost just play that clip backwards, but then the dust wouldn't work. But I mean, at the moment, there's AI artifacts on this shot specifically. We need to redo this.",
@@ -569,5 +562,35 @@
   "at4079": "Done: her new line, voiced: 'Boss, can you see those bots? In kill mode. They must have detected an organic signal.'",
   "at4171": "Done: the motorway now comes before her call, and during the boss's reply we stay on Maddie (the shot ping-pongs past its 8 s; she hardly moves).",
   "at1403": "Done: 'Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet.' and nothing after it. Re-voiced; the ping and collapse moved onto 'yet'; everything after it 0.6 s earlier."
+ },
+ "plan_round22": [
+  {
+   "h": "Round 22: the new Storyverse (dialogue 1F, locked 9 Nov)",
+   "items": [
+    "The street is as before up to 'He misses you something rotten, you know.' Then, still on the street: 'We didn't realise how important you were...' and 'Material science is real. It just isn't the whole picture...'.",
+    "Fade to black into the new hologram (88.9 s): Derek picks toast (your still in bead 1), Sandra says sorry first (bead 2), they got married (bead 3); qualia; the multiverse laughed off, flash on 'yet'; the storyverse in the river; the strings stop dead under 'unique training data'; the arc draws on 'go back'.",
+    "Fade up on the street, still driving: 'But the patrol's out. Please, mind how you go.' Then the kill bots as round 21.",
+    "Beat 0 is now 2:37 (was 1:51); the whole scene is 3:20 (was 2:34). Sandra's re-edit from round 21 is kept."
+   ]
+  },
+  {
+   "h": "Worth a look",
+   "items": [
+    "'hollow' comes out as ''ollow' (three takes of four dropped the h: her Bristol accent). Kept.",
+    "The stills sit in discs about 3.6 times a bead's size, so faces read; the bead's time tag moved above each disc. The plain hologram (no stills) is rendered too if you'd rather."
+   ]
+  },
+  {
+   "h": "You decide",
+   "items": [
+    "Stills in the beads, or the plain hologram?",
+    "Is it too long? b02 on the street runs 21 s before the hologram starts.",
+    "Still open: Derek's 'But the world ended, Sandra!' a quarter-second early; the hologram end pose; your music note (Chopin). Premiere waits for your 'build it' once the Goodbye session is out of it."
+   ]
+  }
+ ],
+ "replies_round22": {},
+ "kai_round22": {
+  "at1293": "It feels like, at this point, we should cut into the presentation. And I think that we might just lose this entire block. Material science is real, it's just not the whole picture, haven't you noticed? I don't think that this sentence, this entire sentence adds very much. I think it was intended as a bridge between, like Maddy apologising for the downfall of humans and then straight into the decisions you make are an integral part of our universe. So, I think maybe this bridge is useful, we just need to make it much shorter. So, Maddy should say, please let me show you what we found. And the moment that finishes, we should cut into the presentation in 3JS. I just think that we should immediately start by looking at something. And what we're going to look at is, I think possibly we could go down the stack, we could go society, like what I'm trying to say, here is a traditional materialist view of the world. And we go down the stack, society, individual, biology, chemistry, physics, mathematics. And that we can actually go down that stack by narrating each stage of the stack. But then we can say, as it turns out, there's something missing from that stack and it doesn't exist in our material world. And then we could say, as it turns out, the decisions you make are an integral part of our universe. So, I think what I'm trying to say is, if we draw, if we kind of animate the material stack from society all the way down to the standard model and then down again to mathematics, we've essentially said, this is the materialist view of the world. But we've worked out that there's something else as well. And this is the crucial things, as well as that, there is this other thing called consciousness. And that's the bridge onto then the decisions and the thing we have right now. I'm almost thinking that before we carry on, we should make this cut and then go around the loop because it's an important bridge."
  }
 }

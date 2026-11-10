@@ -32,3 +32,9 @@
 - Three sequences, then six, on https://claude.ai/artifact/FysUZ1XJxJhDobBStkGC9p (`sequences-r2.json`, specs `cut-r2a…f.json`).
 - Kai: get rid of the sideways empty-car ending ("it's really confusing"); double the options.
 - **Kai picked E (London)**: "we've got our cut now. Much better." → `scene.json` cut.spec = `cut-r2e.json`, timeline page round 2. Premiere build waits until Premiere is free (another session has it).
+
+## Into Premiere (10 Nov)
+
+- Kai: lose chorus 1 entirely (intro's zoom to black cuts straight to the bank downfall); chorus 2 keeps one half, with the new clips; a new sequence for the chorus.
+- Built `01 GPOM chorus outbreak r2` (cut E, picture only) and `01 GPOM start r2` (clone of Kai's `01 GPOM start`, spliced on the song's measured beat grid: two 32-beat cuts of 265 frames). `00 RENDER story` now nests `01 GPOM start r2`; backup kept. The music video master is untouched.
+- Lesson: `createMoveAction` leaves a clip's transitions behind (they rendered black at the old times). Use ripple delete of a spacer clip instead.

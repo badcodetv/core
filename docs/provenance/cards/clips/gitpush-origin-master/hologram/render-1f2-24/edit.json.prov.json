@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f2-24/edit.json",
+ "made": "2026-11-10T12:15:50+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "python",
+ "tool": "design/2026-11-10-gpom-hologram-1f2/make.py (timing from faster-whisper word times) -> finish.py",
+ "parent": "/home/kai/projects/badcode/badcode/design/2026-11-10-gpom-hologram-1f2/edit-1f2.json",
+ "why": "hologram 1F2 timing: segs, every clip start (s01-s03, f01-f07a) and the moment marks on the hologram clock",
+ "inputs": {
+  "builder": "design/2026-11-10-gpom-hologram-1f2/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json"
+ }
+}

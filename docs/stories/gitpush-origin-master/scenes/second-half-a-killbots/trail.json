@@ -612,5 +612,15 @@
   "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
   "what": "round 22: dialogue 1F voiced, hologram 1F with Kai's bead stills (derek-a, sandra-a, wedding-a), b01/b02 and f07b on the street; 3:20",
   "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d20 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-10T12:20:37+00:00",
+  "stage": "timeline",
+  "round": 23,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 23 (Kai at1293): b02 cut, hologram 1F2 opens on the materialist stack then consciousness; 3:29; notes dumped to feedback/timeline-r23",
+  "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d21 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A",
+  "feedback": "feedback/timeline-r23",
+  "feedback_docs": 72
  }
 ]

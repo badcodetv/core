@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d21/preview.mp4",
+ "made": "2026-11-10T12:20:01+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "cut3.py A --tag d21",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f2-24/hologram-1f2-beads-24fps-picture.mp4",
+ "why": "round 23: Kai at1293, the materialist stack opens the hologram"
+}

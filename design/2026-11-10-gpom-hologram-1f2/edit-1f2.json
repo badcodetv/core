@@ -1,0 +1,148 @@
+{
+ "segs": {
+  "stack": 33.84,
+  "lead": 8.96,
+  "bead1": 4.12,
+  "bead2": 3.76,
+  "bead3": 20.01,
+  "open": 2.5,
+  "maybes": 15.15,
+  "pick": 1.8,
+  "settle": 0.8,
+  "toRiver": 4.5,
+  "river": 10.99,
+  "flyDown": 8.02,
+  "arcDraw": 2.5,
+  "arcHold": 2.0,
+  "off": 1.2
+ },
+ "clips": {
+  "s01": {
+   "start": 0.35,
+   "text": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+   "needsVoice": false
+  },
+  "s02": {
+   "start": 17.87,
+   "text": "[pull back: the whole stack; beside it an empty outlined slot] Every bit of it's real. But we've worked out there's something missing.",
+   "needsVoice": false
+  },
+  "s03": {
+   "start": 25.09,
+   "text": "[the slot lights up warm] Consciousness. Yours. It's as fundamental as quarks and leptons.",
+   "needsVoice": false
+  },
+  "f01": {
+   "start": 31.59,
+   "text": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+   "needsVoice": false
+  },
+  "f02": {
+   "start": 45.05,
+   "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+   "needsVoice": false
+  },
+  "f03": {
+   "start": 52.19,
+   "text": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+   "needsVoice": false
+  },
+  "f04": {
+   "start": 69.73,
+   "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+   "needsVoice": false
+  },
+  "f05": {
+   "start": 91.74,
+   "text": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+   "needsVoice": false
+  },
+  "f06": {
+   "start": 103.64,
+   "text": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+   "needsVoice": false
+  },
+  "f07a": {
+   "start": 112.68,
+   "text": "Anyway, if we could go back and fix it, we would.",
+   "needsVoice": false
+  }
+ },
+ "exc": [
+  [
+   72.7,
+   77.02
+  ],
+  [
+   77.6,
+   81.2
+  ],
+  [
+   84.52,
+   86.14
+  ]
+ ],
+ "glow": [
+  51.99,
+  70.69
+ ],
+ "draft": "1F2",
+ "stack": {
+  "labels": [
+   "SOCIETY",
+   "INDIVIDUAL",
+   "BIOLOGY",
+   "CHEMISTRY",
+   "PHYSICS",
+   "MATHEMATICS"
+  ],
+  "lay": [
+   4.53,
+   5.43,
+   7.45,
+   9.29,
+   11.19,
+   16.51
+  ],
+  "quarks": 12.39,
+  "leptons": 13.25,
+  "under": 14.87,
+  "s02": 17.87,
+  "missing": 23.05,
+  "s03": 25.09,
+  "consc": 24.99,
+  "quarks3": 29.33,
+  "depart": 30.84,
+  "fly": 3.0
+ },
+ "street": {
+  "b01": "before the hologram, on the street (ends \"Please, let me show you what we found.\"; the hologram cuts in as it finishes)",
+  "b02": "CUT in 1F2 (Kai, 10 Nov)",
+  "f07b": {
+   "after_hologram_ends": 120.65,
+   "note": "back on the street; not on the hologram clock or in voice.wav"
+  }
+ },
+ "marks": {
+  "layer_society": 4.63,
+  "layer_individual": 5.53,
+  "layer_biology": 7.55,
+  "layer_chemistry": 9.39,
+  "layer_physics": 11.29,
+  "layer_mathematics": 16.61,
+  "quarks_grid": 12.49,
+  "slot_appears": 23.15,
+  "slot_lights": 25.09,
+  "light_leaves": 30.84,
+  "light_lands": 33.84,
+  "toast": 42.9,
+  "sorry": 47.02,
+  "married": 50.78,
+  "cloud_blooms": 70.69,
+  "yet_flash": 88.54,
+  "arrive_side_view": 106.43,
+  "arc_draws": 114.45,
+  "screen_off": 118.95,
+  "TD": 120.15
+ }
+}

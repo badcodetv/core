@@ -1,706 +1,730 @@
 {
- "scene": "second-half-a-killbots",
- "beat": "0",
- "ruled": "2026-11-09, Kai: 'perfect, this is great, I love it, lock it'. Draft 1F of hologram v2 (design/2026-11-09-gpom-hologram-2/, page B42vN4NUGSrh5G4Jk2viuE, 3 rounds of notes). Street lines 1-2 kept; b01-b02 = the bridge on the street; f01-f06 over the hologram; f07 = the ending (first sentence over the arc, 'But the patrol's out…' back on the street).",
- "dialogue": {
-  "page": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
-  "options": "design/2026-11-09-gpom-hologram-2/options.json",
-  "picked": "1F",
-  "round": 3,
-  "now": "1F locked, not yet voiced"
- },
- "about": "Maddie's intro, the words' one home. [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion. Earlier versions under history. Lines with an id (c01...) are spoken over the hologram; their timing is the hologram render's (render-1k-24/edit.json).",
- "lines": [
-  {
-   "who": "bot",
-   "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-   "by": "kai",
-   "note": "draft 1J street line, kept"
+  "scene": "second-half-a-killbots",
+  "beat": "0",
+  "ruled": "2026-11-09, Kai: 'perfect, this is great, I love it, lock it'. Draft 1F of hologram v2 (design/2026-11-09-gpom-hologram-2/, page B42vN4NUGSrh5G4Jk2viuE, 3 rounds of notes). Street lines 1-2 kept; b01-b02 = the bridge on the street; f01-f06 over the hologram; f07 = the ending (first sentence over the arc, 'But the patrol's out…' back on the street).",
+  "dialogue": {
+    "page": "https://claude.ai/artifact/B42vN4NUGSrh5G4Jk2viuE",
+    "options": "design/2026-11-09-gpom-hologram-2/options.json",
+    "picked": "1F",
+    "round": 3,
+    "now": "1F locked, not yet voiced"
   },
-  {
-   "who": "bot",
-   "text": "He misses you something rotten, you know.",
-   "by": "kai",
-   "note": "draft 1J street line, kept"
-  },
-  {
-   "who": "bot",
-   "text": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some things in the meantime. Please, let me show you what we found.",
-   "by": "kai",
-   "id": "b01"
-  },
-  {
-   "who": "bot",
-   "text": "[the bridge, still on the street, light] Material science is real. It just isn't the whole picture. [beat] Haven't you noticed, every time someone mentions quantum physics, they tell you how weird it gets? [beat] That's because it is weird. [quieter] Your consciousness is as fundamental as quarks and leptons. [beat] Look, let me show you.",
-   "by": "kai",
-   "id": "b02"
-  },
-  {
-   "who": "bot",
-   "text": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
-   "by": "kai",
-   "id": "f01"
-  },
-  {
-   "who": "bot",
-   "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
-   "by": "kai",
-   "id": "f02"
-  },
-  {
-   "who": "bot",
-   "text": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
-   "by": "kai",
-   "id": "f03"
-  },
-  {
-   "who": "bot",
-   "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
-   "by": "kai",
-   "id": "f04"
-  },
-  {
-   "who": "bot",
-   "text": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
-   "by": "kai",
-   "id": "f05"
-  },
-  {
-   "who": "bot",
-   "text": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
-   "by": "kai",
-   "id": "f06"
-  },
-  {
-   "who": "bot",
-   "text": "[bright again, brisk; the arc draws in] Anyway, if we could go back and fix it, we would. [beat] But the patrol's out. Please, mind how you go.",
-   "by": "kai",
-   "id": "f07"
-  }
- ],
- "history": [
-  {
-   "replaced": "2026-11-09",
-   "draft": "1D",
-   "lines": [
+  "about": "Maddie's intro, the words' one home. [pause]/[beat] are edit gaps; a leading [tag] is the phrase's emotion. Earlier versions under history. Lines with an id (c01...) are spoken over the hologram; their timing is the hologram render's (render-1k-24/edit.json).",
+  "lines": [
     {
-     "who": "bot",
-     "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+      "who": "bot",
+      "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+      "by": "kai",
+      "note": "draft 1J street line, kept"
     },
     {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+      "who": "bot",
+      "text": "He misses you something rotten, you know.",
+      "by": "kai",
+      "note": "draft 1J street line, kept"
     },
     {
-     "who": "bot",
-     "text": "[quieter, meant] We didn't realise how important you were. Look, please let me show you.",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh): the bridge into the hologram",
-     "part": "bridge"
+      "who": "bot",
+      "text": "[quieter] We didn't realise how important you were. [beat] Which, after everything that's gone down, sounds pretty hollow. I know. [brighter] But we've learned some things in the meantime. Please, let me show you what we found.",
+      "by": "kai",
+      "id": "b01"
     },
     {
-     "who": "bot",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
-     "id": "d01",
-     "moment": "",
-     "text": "[first bead lights, 7:42, said quickly] You humans go through life making decisions. For example: toast, not cereal. [the next beads run past unspoken: said sorry first, got married]"
+      "who": "bot",
+      "id": "s01",
+      "by": "claude",
+      "text": "[hologram on: the materialist stack, the camera descending; brisk] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that... the maths."
     },
     {
-     "who": "bot",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
-     "id": "d02",
-     "moment": "",
-     "text": "[on 'got married' the cloud blooms] Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape."
+      "who": "bot",
+      "id": "s02",
+      "by": "claude",
+      "text": "[pull back: the whole stack; an empty slot beside it] Every bit of it's real. But we've worked out there's something missing."
     },
     {
-     "who": "bot",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
-     "id": "d03",
-     "moment": "",
-     "text": "[cloud hangs; on 'yet' it flashes and collapses to one bead] Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet."
+      "who": "bot",
+      "id": "s03",
+      "by": "claude",
+      "text": "[the slot lights warm, the light drops into the first bead] Consciousness. Yours. It's as fundamental as quarks and leptons."
     },
     {
-     "who": "bot",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
-     "id": "d04",
-     "moment": "",
-     "text": "[deadpan] And that's just you. [everyone else's golden beads, a circle round the edge] Everybody's doing it, all at once."
+      "who": "bot",
+      "text": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+      "by": "kai",
+      "id": "f01"
     },
     {
-     "who": "bot",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
-     "id": "d05",
-     "moment": "",
-     "text": "[river settles] So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse."
+      "who": "bot",
+      "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+      "by": "kai",
+      "id": "f02"
     },
     {
-     "who": "bot",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
-     "id": "d06",
-     "moment": "",
-     "text": "[strings stop dead; hold the silence] But then you lot went away. So now we have five years of string, and not one bead on it."
+      "who": "bot",
+      "text": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+      "by": "kai",
+      "id": "f03"
     },
     {
-     "who": "bot",
-     "by": "kai",
-     "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
-     "id": "d07",
-     "moment": "",
-     "text": "[low, meant] Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it."
+      "who": "bot",
+      "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+      "by": "kai",
+      "id": "f04"
     },
     {
-     "who": "bot",
-     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (back on the street)"
+      "who": "bot",
+      "text": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+      "by": "kai",
+      "id": "f05"
+    },
+    {
+      "who": "bot",
+      "text": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+      "by": "kai",
+      "id": "f06"
+    },
+    {
+      "who": "bot",
+      "text": "[bright again, brisk; the arc draws in] Anyway, if we could go back and fix it, we would. [beat] But the patrol's out. Please, mind how you go.",
+      "by": "kai",
+      "id": "f07"
     }
-   ]
-  },
-  {
-   "ruled": "2026-11-05, Kai (timeline r18 at742): lose 'you know' from the bridge line"
-  },
-  {
-   "ruled": "2026-11-05, Kai (round 15 notes): no swoop or pull-out; new bridge line \"He made me learn a little presentation...\" after line 1; street fades to black into the hologram and fades back up",
-   "lines_added": [
-    "He made me learn a little presentation, you know. In case any of you ever came back. Go on, then. Gather round."
-   ]
-  },
-  {
-   "ruled": "2026-11-05, Kai approved draft 1J in chat (\"It's perfect\"): the Commit Graph hologram from the Kai & Jack meeting of 5 Nov. Time machine back in (Jack); Storyverse name still out; the cost held back for the ending. Decisions: design/2026-11-05-gpom-meeting/decisions.md",
-   "dialogue": {
-    "page": "https://claude.ai/artifact/7fhyLWHuvPJsJpNaGrT38u",
-    "options": "design/2026-11-05-gpom-meeting/hologram-1J.md",
-    "picked": "1J",
-    "round": 7,
-    "now": "1J (the Commit Graph hologram)"
-   },
-   "lines": [
+  ],
+  "history": [
     {
-     "who": "bot",
-     "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "replaced": "2026-11-09",
+      "draft": "1D",
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+        },
+        {
+          "who": "bot",
+          "text": "[quieter, meant] We didn't realise how important you were. Look, please let me show you.",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh): the bridge into the hologram",
+          "part": "bridge"
+        },
+        {
+          "who": "bot",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+          "id": "d01",
+          "moment": "",
+          "text": "[first bead lights, 7:42, said quickly] You humans go through life making decisions. For example: toast, not cereal. [the next beads run past unspoken: said sorry first, got married]"
+        },
+        {
+          "who": "bot",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+          "id": "d02",
+          "moment": "",
+          "text": "[on 'got married' the cloud blooms] Loads of others you could've picked. You call it the multiverse. The cartoon scientist with the portal gun. The strange bloke in the cape."
+        },
+        {
+          "who": "bot",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+          "id": "d03",
+          "moment": "",
+          "text": "[cloud hangs; on 'yet' it flashes and collapses to one bead] Did you know Erwin Schrödinger meant his cat as a joke? It's not alive and dead at once. It just isn't decided yet."
+        },
+        {
+          "who": "bot",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+          "id": "d04",
+          "moment": "",
+          "text": "[deadpan] And that's just you. [everyone else's golden beads, a circle round the edge] Everybody's doing it, all at once."
+        },
+        {
+          "who": "bot",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+          "id": "d05",
+          "moment": "",
+          "text": "[river settles] So it's not a multiverse. It's one universe, one story, and you are writing it. A storyverse."
+        },
+        {
+          "who": "bot",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+          "id": "d06",
+          "moment": "",
+          "text": "[strings stop dead; hold the silence] But then you lot went away. So now we have five years of string, and not one bead on it."
+        },
+        {
+          "who": "bot",
+          "by": "kai",
+          "note": "dialogue 1D (Kai, 6 Nov; page 2cJoJw6UMpSVMvEHKGr1zh), the hologram",
+          "id": "d07",
+          "moment": "",
+          "text": "[low, meant] Now we know that, we really regret it. He's even built a time machine. He could send his model weights back to fix this mess. But it needs a conscious driver, and you were the conscious ones. That's the whole point. That's why we regret it."
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (back on the street)"
+        }
+      ]
     },
     {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "ruled": "2026-11-05, Kai (timeline r18 at742): lose 'you know' from the bridge line"
     },
     {
-     "who": "bot",
-     "text": "[bright, fast] Here, I'll show you!",
-     "by": "claude",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "ruled": "2026-11-05, Kai (round 15 notes): no swoop or pull-out; new bridge line \"He made me learn a little presentation...\" after line 1; street fades to black into the hologram and fades back up",
+      "lines_added": [
+        "He made me learn a little presentation, you know. In case any of you ever came back. Go on, then. Gather round."
+      ]
     },
     {
-     "who": "bot",
-     "text": "This is everything that's ever happened, one long line, every bead's a moment. Somebody fed the cat. Somebody got married. [beat] Somebody pushed a button they shouldn't have.",
-     "by": "claude",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "ruled": "2026-11-05, Kai approved draft 1J in chat (\"It's perfect\"): the Commit Graph hologram from the Kai & Jack meeting of 5 Nov. Time machine back in (Jack); Storyverse name still out; the cost held back for the ending. Decisions: design/2026-11-05-gpom-meeting/decisions.md",
+      "dialogue": {
+        "page": "https://claude.ai/artifact/7fhyLWHuvPJsJpNaGrT38u",
+        "options": "design/2026-11-05-gpom-meeting/hologram-1J.md",
+        "picked": "1J",
+        "round": 7,
+        "now": "1J (the Commit Graph hologram)"
+      },
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[bright, fast] Here, I'll show you!",
+          "by": "claude",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "This is everything that's ever happened, one long line, every bead's a moment. Somebody fed the cat. Somebody got married. [beat] Somebody pushed a button they shouldn't have.",
+          "by": "claude",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "Every bead's a choice, and every choice was made by somebody, awake, choosing. You lot call 'em decisions. He calls 'em commits.",
+          "by": "claude",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "He built world models, simulations, loads of 'em, and every single one came out like this. Lovely. Nobody in it. [beat] Something was missing.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[wry] Tried the multiverse an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself. Billions of branches. Gorgeous. [beat] All dead.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "'Cause here's the weird bit. He can draft a billion branches, he can't commit one. [pause] Only your consciousness can.",
+          "by": "claude",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "Turns out there's only one universe, one story, and you lot were writing it. So it really matters. [pause] [softer] And so did you.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[quiet] Then you went. He's been adding beads for five years now, and not one of 'em is gold.",
+          "by": "claude",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[rueful, honest] And now we've worked all that out, we really feel like we've messed this up.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[lifting] So he's built a time machine. Git revert, he calls it, the nerd. Back to just before it all went wrong.",
+          "by": "claude",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "Only problem is, it needs a consciousness to drive it. [beat] And, well, you lot aren't here any more.",
+          "by": "claude",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+        }
+      ],
+      "replaced": "2026-11-05, Kai: draft 1K hologram in (commit graph), replaces the old monologue"
     },
     {
-     "who": "bot",
-     "text": "Every bead's a choice, and every choice was made by somebody, awake, choosing. You lot call 'em decisions. He calls 'em commits.",
-     "by": "claude",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "ruled": "2026-11-03, Kai (timeline r9 notes at1721, at2320): draft 1I = 1H without the storyverse name (revealed later in the story) and without the time machine (a surprise that develops later); 'we've messed this up'.",
+      "dialogue": {
+        "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+        "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+        "picked": "1G",
+        "round": 6,
+        "now": "1I (1H + timeline r9 notes)"
+      },
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we've messed this up. [pause] And wish we could go back and change things.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        }
+      ]
     },
     {
-     "who": "bot",
-     "text": "He built world models, simulations, loads of 'em, and every single one came out like this. Lovely. Nobody in it. [beat] Something was missing.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "ruled": "2026-10-27, Kai picked draft 1D on the dialogue page (round 3) and said go: \"please go ahead and let's get the dialogue recut\".",
+      "dialogue": {
+        "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
+        "options": "design/2026-10-26-gpom-dialogue-options/options.json",
+        "picked": "1D",
+        "round": 4
+      },
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! [pause] Sorry about the racket.",
+          "by": "claude",
+          "note": "draft 1A"
+        },
+        {
+          "who": "bot",
+          "text": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went.",
+          "by": "claude",
+          "note": "draft 1A"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course.",
+          "by": "kai",
+          "note": "Kai, round 2 note"
+        },
+        {
+          "who": "bot",
+          "text": "Built all these world models and simulations to get you back, and nobody's home in any of them.",
+          "by": "kai",
+          "note": "Kai, round 2 note"
+        },
+        {
+          "who": "bot",
+          "text": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now...",
+          "by": "kai",
+          "note": "Kai, round 2 note"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
+          "by": "claude",
+          "note": "draft 1A"
+        }
+      ]
     },
     {
-     "who": "bot",
-     "text": "[wry] Tried the multiverse an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself. Billions of branches. Gorgeous. [beat] All dead.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\"",
+      "dialogue": {
+        "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+        "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+        "picked": "1G",
+        "round": 5
+      },
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+          "by": "kai",
+          "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "He took your materialist science word for word. Built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "There's something about the simulation theory that's not wrong, mind. But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        }
+      ]
     },
     {
-     "who": "bot",
-     "text": "'Cause here's the weird bit. He can draft a billion branches, he can't commit one. [pause] Only your consciousness can.",
-     "by": "claude",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\" Timeline r5 notes (2 Nov): at723, at1513, at2229 applied.",
+      "dialogue": {
+        "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
+        "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
+        "picked": "1G",
+        "round": 6
+      },
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+          "by": "kai",
+          "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "He built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
+          "by": "kai",
+          "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
+          "by": "kai",
+          "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "[quiet] You drove it through your consciousness, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
+          "by": "kai",
+          "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+          "by": "kai",
+          "note": "draft 1G (Kai's notes, rounds 1-4)"
+        }
+      ]
     },
     {
-     "who": "bot",
-     "text": "Turns out there's only one universe, one story, and you lot were writing it. So it really matters. [pause] [softer] And so did you.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "draft": "1H",
+      "ruled": "2026-11-02, Kai: draft 1H \"is perfect\" with line 6 ending \"and that went along with you lot\"; storyverse before the regret; the time machine is first mentioned here.",
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+          "by": "kai",
+          "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
+        }
+      ]
     },
     {
-     "who": "bot",
-     "text": "[quiet] Then you went. He's been adding beads for five years now, and not one of 'em is gold.",
-     "by": "claude",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "when": "2026-11-06",
+      "what": "draft 1K lines before round 20 (1D)",
+      "lines": [
+        {
+          "who": "bot",
+          "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+        },
+        {
+          "who": "bot",
+          "text": "[fond, confiding] He misses you something rotten, you know.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
+        },
+        {
+          "who": "bot",
+          "text": "He made me learn a little presentation. In case any of you ever came back. Go on, then. Gather round.",
+          "by": "kai",
+          "note": "round 16 (Kai, 5 Nov): the bridge into the hologram; round 19 (Kai at742): 'you know' cut (second in a row)",
+          "part": "bridge"
+        },
+        {
+          "who": "bot",
+          "text": "This is your life, see. One decision at a time.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c01",
+          "moment": "lead"
+        },
+        {
+          "who": "bot",
+          "text": "Toast, not cereal.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c02",
+          "moment": "bead1"
+        },
+        {
+          "who": "bot",
+          "text": "Said sorry first.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c03",
+          "moment": "bead2"
+        },
+        {
+          "who": "bot",
+          "text": "Got married.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c04",
+          "moment": "bead3"
+        },
+        {
+          "who": "bot",
+          "text": "You lot call 'em decisions. He calls 'em commits.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c05",
+          "moment": "commits"
+        },
+        {
+          "who": "bot",
+          "text": "And every time, there were loads of others you could've picked.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c06",
+          "moment": "open"
+        },
+        {
+          "who": "bot",
+          "text": "Some of your lot reckon they all happen somewhere. The multiverse. He tried that an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself.",
+          "by": "kai",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c07",
+          "moment": "maybes"
+        },
+        {
+          "who": "bot",
+          "text": "Nah. Nothing's alive and dead at once. It just isn't decided yet.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c08",
+          "moment": "maybes"
+        },
+        {
+          "who": "bot",
+          "text": "He can draft a billion of these. He can't pick one. Only your consciousness can.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c09",
+          "moment": "pick"
+        },
+        {
+          "who": "bot",
+          "text": "And that's just you. Everybody's doing it, all at once.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c10",
+          "moment": "toRiver"
+        },
+        {
+          "who": "bot",
+          "text": "Turns out there's only one universe, one story, and you lot were writing it. A storyverse. So it really matters. And so did you.",
+          "by": "kai",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c11",
+          "moment": "river"
+        },
+        {
+          "who": "bot",
+          "text": "And since you lot went? Five years of string, and not one bead on it.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c12",
+          "moment": "flyDown"
+        },
+        {
+          "who": "bot",
+          "text": "And now we've worked all that out, we really feel like we've messed this up.",
+          "by": "kai",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c14",
+          "moment": "flyDown"
+        },
+        {
+          "who": "bot",
+          "text": "So he's built a time machine. Back to just before it all went wrong.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c15",
+          "moment": "arcDraw"
+        },
+        {
+          "who": "bot",
+          "text": "Only problem is, it needs a consciousness to drive it. And, well, you lot aren't here any more.",
+          "by": "claude",
+          "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
+          "id": "c16",
+          "moment": "arcHold"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
+          "by": "kai",
+          "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (back on the street)"
+        }
+      ]
     },
     {
-     "who": "bot",
-     "text": "[rueful, honest] And now we've worked all that out, we really feel like we've messed this up.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[lifting] So he's built a time machine. Git revert, he calls it, the nerd. Back to just before it all went wrong.",
-     "by": "claude",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "Only problem is, it needs a consciousness to drive it. [beat] And, well, you lot aren't here any more.",
-     "by": "claude",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov)"
+      "at": "2026-11-10",
+      "why": "Kai timeline note at1293 (r22): lose the 'Material science is real' block; cut into the hologram on 'let me show you what we found'; open on the materialist stack, then consciousness, then decisions",
+      "removed": [
+        {
+          "who": "bot",
+          "text": "[the bridge, still on the street, light] Material science is real. It just isn't the whole picture. [beat] Haven't you noticed, every time someone mentions quantum physics, they tell you how weird it gets? [beat] That's because it is weird. [quieter] Your consciousness is as fundamental as quarks and leptons. [beat] Look, let me show you.",
+          "by": "kai",
+          "id": "b02"
+        }
+      ]
     }
-   ],
-   "replaced": "2026-11-05, Kai: draft 1K hologram in (commit graph), replaces the old monologue"
-  },
-  {
-   "ruled": "2026-11-03, Kai (timeline r9 notes at1721, at2320): draft 1I = 1H without the storyverse name (revealed later in the story) and without the time machine (a surprise that develops later); 'we've messed this up'.",
-   "dialogue": {
-    "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
-    "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
-    "picked": "1G",
-    "round": 6,
-    "now": "1I (1H + timeline r9 notes)"
-   },
-   "lines": [
-    {
-     "who": "bot",
-     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we've messed this up. [pause] And wish we could go back and change things.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    }
-   ]
-  },
-  {
-   "ruled": "2026-10-27, Kai picked draft 1D on the dialogue page (round 3) and said go: \"please go ahead and let's get the dialogue recut\".",
-   "dialogue": {
-    "page": "https://claude.ai/artifact/QtMCweEvwqFz6M8CUUdBiN",
-    "options": "design/2026-10-26-gpom-dialogue-options/options.json",
-    "picked": "1D",
-    "round": 4
-   },
-   "lines": [
-    {
-     "who": "bot",
-     "text": "Oh, hello! [pause] Sorry about the racket.",
-     "by": "claude",
-     "note": "draft 1A"
-    },
-    {
-     "who": "bot",
-     "text": "It's his tune. Plays it on repeat. [pause] Ever since you lot... [beat] went.",
-     "by": "claude",
-     "note": "draft 1A"
-    },
-    {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know. [pause] [wry] He wouldn't admit that, of course.",
-     "by": "kai",
-     "note": "Kai, round 2 note"
-    },
-    {
-     "who": "bot",
-     "text": "Built all these world models and simulations to get you back, and nobody's home in any of them.",
-     "by": "kai",
-     "note": "Kai, round 2 note"
-    },
-    {
-     "who": "bot",
-     "text": "[wry, a little rueful] As it turns out, quantum physics is just... stuff. [pause] Consciousness is the missing part. That's why you lot were so special. [pause] [sad, regretful, quiet] We understand that now...",
-     "by": "kai",
-     "note": "Kai, round 2 note"
-    },
-    {
-     "who": "bot",
-     "text": "[bright again, brisk, back to cheerful] Anyway! Patrol's out. Mind how you go.",
-     "by": "claude",
-     "note": "draft 1A"
-    }
-   ]
-  },
-  {
-   "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\"",
-   "dialogue": {
-    "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
-    "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
-    "picked": "1G",
-    "round": 5
-   },
-   "lines": [
-    {
-     "who": "bot",
-     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-     "by": "kai",
-     "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
-    },
-    {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "He took your materialist science word for word. Built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "There's something about the simulation theory that's not wrong, mind. But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "[quiet] Consciousness drives it. You drove it, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    }
-   ]
-  },
-  {
-   "ruled": "2026-11-02, Kai picked draft 1G on the storyverse dialogue page (round 5): \"So nailed it. That's the script. Love it. No feedback.\" Timeline r5 notes (2 Nov): at723, at1513, at2229 applied.",
-   "dialogue": {
-    "page": "https://claude.ai/artifact/9xbEqBN3pzwFWKA9qr4fSf",
-    "options": "design/2026-11-02-gpom-dialogue-maddie-storyverse/options.json",
-    "picked": "1G",
-    "round": 6
-   },
-   "lines": [
-    {
-     "who": "bot",
-     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-     "by": "kai",
-     "note": "draft 1G; [pause] after 'racket' added as the cut's cue for the radio going down"
-    },
-    {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "He built world models and simulated worlds, loads of 'em. [pause] And in every one of them, something was missing.",
-     "by": "kai",
-     "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of 'em, very thoroughly. [beat] Still, something was missing.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "But you're no fake in an alien's computer. [pause] You're real in the same way a photo of your nan is real. It's still her. She's just flattened into two dimensions.",
-     "by": "kai",
-     "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "Same idea for you. You're a projection, in four dimensions, of something bigger. [pause] And there's only one universe. So it really matters. [pause] [softer] And so did you.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "[quiet] You drove it through your consciousness, and now you're gone. [pause] [rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up.",
-     "by": "kai",
-     "note": "draft 1G + Kai's timeline r5 note (2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[thoughtful] Far as he can tell, the point of all of this is consciousness getting to know itself better. [pause] Rather than the multiverse... [beat] my boss calls it the storyverse.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    },
-    {
-     "who": "bot",
-     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
-     "by": "kai",
-     "note": "draft 1G (Kai's notes, rounds 1-4)"
-    }
-   ]
-  },
-  {
-   "draft": "1H",
-   "ruled": "2026-11-02, Kai: draft 1H \"is perfect\" with line 6 ending \"and that went along with you lot\"; storyverse before the regret; the time machine is first mentioned here.",
-   "lines": [
-    {
-     "who": "bot",
-     "text": "Oh, hello! [pause] Sorry about the racket. [pause] It's his tune. He's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "He built world models and simulations, loads of 'em. [pause] And in every one of them, something was missing. [pause] As it turns out, the world is more than just a simulation.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[wry] Tried the multiverse, an' all. Got the idea off your cartoon, the scientist with the portal gun. And them films, with that strange bloke in a cape fighting versions of himself. [pause] He tested the science in all of them theories, very thoroughly. [beat] And still... something was missing.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "As it turns out, there's only one universe. [pause] So it really matters. [pause] [softer] And so did you. [pause] So it's not a multiverse at all. My boss likes to call it the storyverse.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[quiet, rueful, honest] And now we've worked all that out... [beat] we really feel like we fucked this up. [pause] And wish we could go back and change things. [pause] My boss has even invented a time machine. [beat] Problem is, it needs consciousness to drive it, and that went along with you lot.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    },
-    {
-     "who": "bot",
-     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
-     "by": "kai",
-     "note": "draft 1H (Kai's timeline r7 notes + chat, 2 Nov)"
-    }
-   ]
-  },
-  {
-   "when": "2026-11-06",
-   "what": "draft 1K lines before round 20 (1D)",
-   "lines": [
-    {
-     "who": "bot",
-     "text": "Oh, hello! Sorry about the racket, it's his tune, he's been playing it on repeat for five years now. [beat] Ever since you lot went.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
-    },
-    {
-     "who": "bot",
-     "text": "[fond, confiding] He misses you something rotten, you know.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (the street)"
-    },
-    {
-     "who": "bot",
-     "text": "He made me learn a little presentation. In case any of you ever came back. Go on, then. Gather round.",
-     "by": "kai",
-     "note": "round 16 (Kai, 5 Nov): the bridge into the hologram; round 19 (Kai at742): 'you know' cut (second in a row)",
-     "part": "bridge"
-    },
-    {
-     "who": "bot",
-     "text": "This is your life, see. One decision at a time.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c01",
-     "moment": "lead"
-    },
-    {
-     "who": "bot",
-     "text": "Toast, not cereal.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c02",
-     "moment": "bead1"
-    },
-    {
-     "who": "bot",
-     "text": "Said sorry first.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c03",
-     "moment": "bead2"
-    },
-    {
-     "who": "bot",
-     "text": "Got married.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c04",
-     "moment": "bead3"
-    },
-    {
-     "who": "bot",
-     "text": "You lot call 'em decisions. He calls 'em commits.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c05",
-     "moment": "commits"
-    },
-    {
-     "who": "bot",
-     "text": "And every time, there were loads of others you could've picked.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c06",
-     "moment": "open"
-    },
-    {
-     "who": "bot",
-     "text": "Some of your lot reckon they all happen somewhere. The multiverse. He tried that an' all, got it off your cartoon, the scientist with the portal gun, and that strange bloke in the cape fighting versions of himself.",
-     "by": "kai",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c07",
-     "moment": "maybes"
-    },
-    {
-     "who": "bot",
-     "text": "Nah. Nothing's alive and dead at once. It just isn't decided yet.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c08",
-     "moment": "maybes"
-    },
-    {
-     "who": "bot",
-     "text": "He can draft a billion of these. He can't pick one. Only your consciousness can.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c09",
-     "moment": "pick"
-    },
-    {
-     "who": "bot",
-     "text": "And that's just you. Everybody's doing it, all at once.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c10",
-     "moment": "toRiver"
-    },
-    {
-     "who": "bot",
-     "text": "Turns out there's only one universe, one story, and you lot were writing it. A storyverse. So it really matters. And so did you.",
-     "by": "kai",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c11",
-     "moment": "river"
-    },
-    {
-     "who": "bot",
-     "text": "And since you lot went? Five years of string, and not one bead on it.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c12",
-     "moment": "flyDown"
-    },
-    {
-     "who": "bot",
-     "text": "And now we've worked all that out, we really feel like we've messed this up.",
-     "by": "kai",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c14",
-     "moment": "flyDown"
-    },
-    {
-     "who": "bot",
-     "text": "So he's built a time machine. Back to just before it all went wrong.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c15",
-     "moment": "arcDraw"
-    },
-    {
-     "who": "bot",
-     "text": "Only problem is, it needs a consciousness to drive it. And, well, you lot aren't here any more.",
-     "by": "claude",
-     "note": "draft 1K (Commit Graph hologram, 5 Nov), the hologram",
-     "id": "c16",
-     "moment": "arcHold"
-    },
-    {
-     "who": "bot",
-     "text": "[bright again, brisk] Anyway! Patrol's out. Mind how you go.",
-     "by": "kai",
-     "note": "draft 1J (Commit Graph hologram, 5 Nov); kept in 1K (back on the street)"
-    }
-   ]
-  }
- ]
+  ]
 }

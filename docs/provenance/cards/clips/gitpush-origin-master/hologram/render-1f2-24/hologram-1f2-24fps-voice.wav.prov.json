@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f2-24/hologram-1f2-24fps-voice.wav",
+ "made": "2026-11-10T12:15:39+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-10-gpom-hologram-1f2/finish.py (ffmpeg adelay+amix)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+ "why": "hologram 1F2 (Kai timeline note 10 Nov: b02 cut; opens on the materialist stack, each layer on its word, the empty slot lights warm on 'Consciousness' and its light drops into bead 1), then as 1F: toast/sorry/married beads on their words, glow under qualia, bloom on 'multiverse', flash on 'yet', side view on 'realise', arc on 'go back'",
+ "inputs": {
+  "page": "design/2026-11-10-gpom-hologram-1f2/index.html",
+  "builder": "design/2026-11-10-gpom-hologram-1f2/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json",
+  "stack": "design/2026-11-10-gpom-hologram-1f2/stack.js"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f2-24/edit.json"
+ }
+}

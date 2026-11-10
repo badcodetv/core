@@ -2101,3 +2101,21 @@ appends, or check for both names).
 - ✅ **Scale to fill, per source size:** Motion (`getComponentAtIndex(1)`) param 1 via `param.createSetValueAction(param.createKeyframe(s), true)`:
   1080p → 200, 720p (Flow Omni clips) → 300 in a 4K sequence. Without it every clip sits small in the middle.
 - Frame rounding left one one-frame gap in 108 joins (210.72→210.76); closed with `createSetEndAction` on the clip before.
+
+## 2026-11-10: splicing GPOM's chorus (`01 GPOM start r2`)
+
+- 🔴 **`createMoveAction` does NOT carry a clip's transitions.** Moving 45 clips 11 s earlier left their transitions
+  at the old times; the render showed black and stray frames from other clips wherever an orphaned transition sat.
+  `premiere_get_sequence` still looked perfect (transitions aren't in the dump), so only a render caught it.
+- ✅ **Close a gap with a spacer and a ripple delete instead.** Put a clip of exactly the gap's length into it (a
+  project item with `createSetInOutPointsAction` set first, so the overwrite is exactly that long and clips nothing),
+  then `createRemoveItemsAction(selection, true, …)` on it. Every track, transition and marker moves by exactly that
+  length. Nothing may straddle the gap: trim long music off first and lay it again as pieces afterwards.
+- ⚠️ An overwrite that is longer than the gap silently trims the head of the next clip (and may take its transition).
+- ✅ A nested sequence's project item takes in/out points like a clip. Resolve it with `seq.getProjectItem()`:
+  `resolveProjectItem` by name finds a bin of the same name first ("Invalid parameter").
+- ✅ `project.deleteSequence(seq)` works; `seq.createSetInPointAction/createSetOutPointAction` set the in/out for
+  `premiere_export_sequence` with `inOutOnly`.
+- ✅ `Markers.createMoveMarkerAction(marker, tick)` moves a marker to an absolute time; ripple delete also moves markers.
+- A sequence made `fromItems` of 720p Omni clips comes out 1280x720: set the frame with
+  `settings.setVideoFrameRect` + `seq.createSetSettingsAction(settings)`, then scale the clips to 150.

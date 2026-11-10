@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f2-24/hologram-1f2-beads-24fps-picture.mp4",
+ "made": "2026-11-10T12:15:39+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "three.js",
+ "tool": "design/2026-11-10-gpom-hologram-1f2/record.mjs (headless Chrome, window.hologram.frameAt) + ffmpeg x264, 24 fps",
+ "why": "hologram 1F2 (Kai timeline note 10 Nov: b02 cut; opens on the materialist stack, each layer on its word, the empty slot lights warm on 'Consciousness' and its light drops into bead 1), then as 1F: toast/sorry/married beads on their words, glow under qualia, bloom on 'multiverse', flash on 'yet', side view on 'realise', arc on 'go back'",
+ "inputs": {
+  "page": "design/2026-11-10-gpom-hologram-1f2/index.html",
+  "builder": "design/2026-11-10-gpom-hologram-1f2/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f2.json",
+  "stack": "design/2026-11-10-gpom-hologram-1f2/stack.js",
+  "derek": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/derek-a.jpg",
+  "sandra": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/sandra-a.jpg",
+  "wedding": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/wedding-a.jpg"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f2-24/edit.json",
+  "bead_media": "design/2026-11-10-gpom-hologram-1f2/bead-media-1f2.json"
+ }
+}
