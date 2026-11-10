@@ -9,7 +9,7 @@
  *
  * The Python twin is scripts/provenance/prov.py. Keep the two writing the same shape.
  */
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -32,12 +32,42 @@ export interface Card {
 export const mediaRoot = () => process.env.BADCODE_MEDIA_ROOT ?? '/mnt/d/badcode-videos'
 export const mirrorRoot = () => process.env.BADCODE_PROV_MIRROR ?? join(REPO, 'docs/provenance/cards')
 
+const posix = (p: string) => {
+  const m = /^([A-Za-z]):[\\/](.*)$/.exec(p)
+  return (m ? `/mnt/${m[1].toLowerCase()}/${m[2].replace(/\\/g, '/')}` : p).replace(/\/+$/, '')
+}
+const under = (p: string, home: string) => {
+  const [a, b] = p.startsWith('/mnt/') ? [p.toLowerCase(), home.toLowerCase()] : [p, home]
+  return a === b || a.startsWith(b + '/')
+}
+const readJson = (f: string) => { try { return existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : {} } catch { return {} } }
+
+/** A file in a shared story on ANY machine -> the same file under the media root (Kai's D:), so one clip has
+ * one card whichever machine made it. Twin of _canonical in scripts/provenance/prov.py; homes come from
+ * scripts/drive/folders.json, this machine's folders from badcode.local.json (scripts/drive/localmap.py). */
+function canonical(abs: string): string | null {
+  const folders: Record<string, { homes?: string[] }> = readJson(join(REPO, 'scripts/drive/folders.json')).folders ?? {}
+  const mine: Record<string, string> = readJson(join(REPO, 'badcode.local.json')).stories ?? {}
+  const p = posix(abs)
+  const cands: [string, string][] = []
+  for (const [story, v] of Object.entries(folders)) for (const h of v.homes ?? []) cands.push([posix(h), story])
+  for (const [story, h] of Object.entries(mine)) cands.push([posix(h), story])
+  cands.sort((a, b) => b[0].length - a[0].length)
+  const hit = cands.find(([h]) => under(p, h))
+  if (!hit) return null
+  const rest = p.slice(hit[0].length)
+  const root = posix(mediaRoot())
+  const home = (folders[hit[1]]?.homes ?? []).map(posix).find((h) => under(h, root) && h !== root)
+  return home ? home + rest : null
+}
+
 /** Where a file's card lives in the repo: its path under the media root, else under _elsewhere/. */
 export function mirrorPath(file: string): string {
   const abs = resolve(file)
-  const rel = relative(mediaRoot(), abs)
-  const inside = rel && !rel.startsWith('..') && !rel.startsWith('/')
-  return join(mirrorRoot(), inside ? rel : join('_elsewhere', abs.replace(/^\/+/, ''))) + '.prov.json'
+  const inRoot = (p: string) => { const r = relative(mediaRoot(), p); return r && !r.startsWith('..') && !r.startsWith('/') ? r : null }
+  const c = inRoot(abs) ? null : canonical(abs)
+  const rel = inRoot(abs) ?? (c ? inRoot(c) : null)
+  return join(mirrorRoot(), rel ?? join('_elsewhere', abs.replace(/^\/+/, ''))) + '.prov.json'
 }
 
 /** Write one card beside the file and into the repo mirror. Never throws: a card must not cost a generation. */

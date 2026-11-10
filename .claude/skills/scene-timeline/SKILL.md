@@ -55,6 +55,8 @@ each round so the URL and the notes stay. After each publish:
 
 - What Kai gets: the cut playing, a beat row, V1 with thumbnails, every audio track A1…, a playhead, and underneath the beat under the playhead with every line, shot and sound in it, each with a note slip; plus notes pinned to an exact frame.
 - Before showing a cut: `prov.py check <scene-dir>`, and card anything it lists.
+- 🛑 Paths in scene.json and edl.json are the writer's machine. Before saying any media is missing, run
+  `python3 scripts/drive/localmap.py check <scene-dir>/scene.json <edl>` (never `ls` the raw path); see `drive-sync`.
 
 ## Rounds
 

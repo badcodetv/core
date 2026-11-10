@@ -28,6 +28,14 @@ Not covered: GPOM's one-off cut scripts under `scripts/gpom/` (their paths are i
 stored as text (scene.json `cut.script`). Rerun those on the machine that wrote them, or fix the path by hand.
 Check: `python3 scripts/drive/test_localmap.py`; one path: `python3 scripts/drive/localmap.py path "<path>"`.
 
+🛑 **Never `ls` a path read from a cut file or scene.json.** It names the writer's machine (`/mnt/d/…` is
+Kai's; Jack has no D:). To ask "is the media here?", run
+`python3 scripts/drive/localmap.py check <scene.json> <edl.json> …`: it localizes every path and reports
+found / missing / story not mapped. A missing `renders/` file is expected (never synced). On 2026-11-10 a raw
+`ls /mnt/d` made Claude tell Jack a fully pulled story was missing.
+Provenance follows the same map: `prov.py` (check / freeze / cards) localizes, and a shared story's file gets
+ONE card in `docs/provenance/cards/` whichever machine made it (`flow-mcp` `prov.ts` matches).
+
 ## "Here's where my <story> lives"
 
 When someone tells you in their own words where a story sits on their machine ("my Karen story is in
