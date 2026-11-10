@@ -8,15 +8,15 @@
   "premiere_project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
   "source_sequence": "Karen music",
   "cut": {
-    "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-final/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-final/preview.mp4",
+    "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r6/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r6/preview.mp4",
     "script": "python3 scripts/scene/premiere-to-edl.py <project>/.bridge/state-<sequence>.json /mnt/d/badcode-videos/karen-music/clips/recut/cut-<name>/edl.json --from /mnt/d/badcode-videos/karen-music/clips/recut/cut-final/edl.json --by <who> --render <render.mp4>  (then point cut.edl/cut.preview at cut-<name>)"
   },
   "boards": {
     "timeline": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE"
   },
   "premiere": {
-    "current": "final",
+    "current": "r6",
     "r3": {
       "sequence": "karen-music-r3",
       "guid": "51c8cc19-18f7-43b4-ab29-b722232b1abf",
@@ -83,6 +83,16 @@
         "state": "in sync",
         "why": "edl read straight off the sequence (bridge state dump); page preview is the Premiere render scaled to 1080p"
       }
+    },
+    "r6": {
+      "sequence": "karen-music-r6",
+      "guid": "95b3fc66-c837-4393-8090-0bec6ce5e9f5",
+      "bin": "karen-music-r6",
+      "built": "2026-11-10",
+      "project": "/mnt/d/badcode-videos/karen-music/NEW Karen Music Vid_1.prproj",
+      "edl": "/mnt/d/badcode-videos/karen-music/clips/recut/cut-r6/edl.json",
+      "what": "round 6: Kai's final (karen-music-r4) cloned, then st-new-15 at 5.52-10.96 s overwritten on V1 + muted A2 by new maybes/7.mp4 (Karen on the ferry), in 0, Motion scale 200",
+      "how": "premiere_eval clone r4 + rename; createSetInOutPointsAction(0, 5.44) + createOverwriteItemAction(item, 5.52, 0, 1); built on Jack's machine"
     }
   }
 }

@@ -82,5 +82,16 @@
   "decided": [
    "Jack: just pick a cinematic karen clip that fits"
   ]
+ },
+ {
+  "at": "2026-11-10T14:17:48+00:00",
+  "stage": "timeline",
+  "round": 6,
+  "url": "https://claude.ai/artifact/BxoWfvnpr7AFeo3T4Hm7DE",
+  "what": "Round 6: note at183 done. st-new-15 at 5.52 s swapped for new maybes/7.mp4 (Karen on the ferry) on the page and in Premiere karen-music-r6 (clone of Kai's r4, one overwrite, Scale 200); 105/105 shots in sync. Drive: .prproj + cut-r6/edl.json only; the preview stays local",
+  "rebuild": "python3 scripts/scene/swap-shot.py /mnt/d/badcode-videos/karen-music/clips/recut/cut-final/edl.json /mnt/d/badcode-videos/karen-music/clips/recut/cut-r6 st-new-15 '/mnt/d/badcode-videos/karen-music/clips/new maybes/7.mp4' --at 5.52 --in 0 --id mv-maybe-7 --round r6 && python3 scripts/scene/build-timeline.py docs/stories/karen/scenes/music-video <scratch>/karen-mv-timeline",
+  "decided": [
+   "Jack: just pick a cinematic karen clip that fits"
+  ]
  }
 ]
