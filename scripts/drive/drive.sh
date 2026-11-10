@@ -49,6 +49,8 @@ case "$cmd" in
   push|pull)
     if [[ "$cmd" == push ]]; then src="$local_dir"; dst="$REMOTE:"; else src="$REMOTE:"; dst="$local_dir"; fi
     if [[ ${#dry[@]} -gt 0 ]]; then echo "dry run: would $cmd"; would "$src" "$dst"; echo "(add --go to do it)"; exit; fi
+    # never push a project whose clips the exclude rules would leave behind (scripts/drive/check-excludes.py)
+    if [[ "$cmd" == push ]]; then "$PY" "$HERE/check-excludes.py" "$local_dir" || { echo "push stopped: fix exclude.txt first"; exit 1; }; fi
     echo "$cmd $folder: progress every 10 s; full log $log"
     "${rc[@]}" copy "$src" "$dst" --log-file "$log" --stats-log-level NOTICE & pid=$!
     tail -n0 -F "$log" 2>/dev/null | grep --line-buffered -E "ETA|ERROR|Failed" & tp=$!
@@ -57,6 +59,7 @@ case "$cmd" in
     else echo "FAILED (rclone exit $rcode): $(grep -c ERROR "$log" || true) error(s); rerun the same command to pick up where it stopped, log: $log"; fi
     exit $rcode ;;
   status) echo "== would PUSH (local newer or missing on Drive):"; would "$local_dir" "$REMOTE:"
-          echo "== would PULL (Drive newer or missing locally):"; would "$REMOTE:" "$local_dir" ;;
+          echo "== would PULL (Drive newer or missing locally):"; would "$REMOTE:" "$local_dir"
+          "$PY" "$HERE/check-excludes.py" "$local_dir" || true ;;
   *) echo "push | pull | status | list"; exit 1 ;;
 esac

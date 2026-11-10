@@ -50,7 +50,10 @@ Independent, so they can run side by side; one owner per tool:
 
 `python3 scripts/scene/build-timeline.py <scene-dir> <out-dir>`, then publish `<out-dir>/index.html` with
 every file in `<out-dir>/media/` and `capabilities: {db:{}, user:{}}`. Republish to the **same file path**
-each round so the URL and the notes stay. After each publish:
+each round so the URL and the notes stay. 🛑 **On a republish send only what changed** (Jack, 2026-11-10):
+an update keeps every file left out, so a one-shot swap sends the page, that shot's thumbnail, `media/cut.mp4`
+and the `hq-*` parts whose seconds changed, never all ~120 MB again. `cmp` against the last build to find them.
+After each publish:
 `python3 scripts/provenance/prov.py trail <scene-dir> --stage timeline --round N --url <url> --what "…" --rebuild "python3 scripts/scene/build-timeline.py <scene-dir> <out-dir>"` (records the URL as `boards.timeline`).
 
 - What Kai gets: the cut playing, a beat row, V1 with thumbnails, every audio track A1…, a playhead, and underneath the beat under the playhead with every line, shot and sound in it, each with a note slip; plus notes pinned to an exact frame.

@@ -13,7 +13,8 @@ scripts/drive/drive.sh pull   karen-music --go # Drive -> this machine
 - **Copy only, never delete.** A file is replaced only by a newer copy (`--update`). Without `--go` every command is a dry run.
 - **Skipped (exclude.txt):** Premiere preview caches, Auto-Save, `.bridge/`; anything a script rebuilds
   (a cut's `segs/` and `picture.mp4`); and `renders/` (finished exports: re-export from the project).
-  Sources, projects, edl.json and preview.mp4 go up.
+  **Previews never travel** (`preview*.mp4`, `*-preview.mp4`, any `_local/` folder; Jack 2026-11-10): each
+  machine makes its own from the edl and the clips. Sources, projects and edl.json go up.
 - **Built not to hang:** a connection that goes quiet for 60 s is dropped and retried, the run retries
   5 times, and it ends with `done: N file(s) copied, nothing failed` or `FAILED ... rerun the same command`.
   A rerun is always safe: what's already there is skipped. Every real run is logged to `~/.cache/badcode-drive/`.

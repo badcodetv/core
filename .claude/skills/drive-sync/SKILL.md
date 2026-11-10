@@ -68,6 +68,11 @@ the row (key = a short story name such as `bank-robbery-music`; ID = the end of 
 3. Push or pull with `--go` only when the person asked for that direction. It copies only, never deletes,
    and replaces a file only with a newer copy. A long upload can run in the background; a rerun is always safe.
 4. Ignore the Drive `Misc` folder: it holds what isn't an official story, and is never synced.
+5. 🛑 **Push only what the cut uses** (Jack, 2026-11-10): read the `status` list before `--go`. A round sends
+   its own new files (edl, any clip it brought in) and the saved `.prproj`; trial cuts, discarded takes and test
+   renders nobody chose stay local. **Previews never travel**: `exclude.txt` skips `preview*.mp4`, `*-preview.mp4`
+   and any `_local/` folder, so the other machine remakes a preview from the edl (its scene's `trail.json`
+   `rebuild`). A new script that writes a look-only video names it `preview…` or puts it in `_local/`.
 
 ## The baton
 
