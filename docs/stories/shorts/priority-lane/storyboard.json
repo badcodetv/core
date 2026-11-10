@@ -1,8 +1,71 @@
-{"acts":[{"id":"a1","title":"Priority Lane","beats":["outside","ambulance","reporter","minister"]}],
- "frames":[
-  {"n":1,"act":"a1","title":"The ambulance is held","look":"long lens through the passing motorcade","line":"","stills":["OUT1-c"],"anim":1},
-  {"n":2,"act":"a1","title":"Inside the ambulance","look":"looking forward from the back, the red light through the windscreen","line":"","stills":["AMB1-a"],"anim":2},
-  {"n":3,"act":"a1","title":"The BadCode reporter","look":"piece to camera, chest up","line":"REPORTER: Traffic is being managed, to keep an important journey moving.","stills":["REP1-a"],"anim":3},
-  {"n":4,"act":"a1","title":"The minister","look":"back seat, lemon curd on the armrest","line":"MINISTER: I said raspberry-shaped hors d'oeuvres!","stills":["MIN1-b"],"anim":4},
-  {"n":5,"act":"a1","title":"The button","look":"back to the reporter as the motorcade clears","line":"REPORTER: A politician blocking the path of an ambulance. Poetic, really...","stills":["REP1-a"],"anim":5}
- ]}
+{
+ "acts": [
+  {
+   "id": "a1",
+   "title": "Priority Lane",
+   "beats": "0:00–0:20"
+  }
+ ],
+ "frames": [
+  {
+   "n": 1,
+   "act": "a1",
+   "title": "The ambulance is held",
+   "look": "long lens through the passing motorcade",
+   "line": "",
+   "stills": [
+    "OUT1-c"
+   ],
+   "anim": 1,
+   "beat": "0:00 outside"
+  },
+  {
+   "n": 2,
+   "act": "a1",
+   "title": "Inside the ambulance",
+   "look": "looking forward from the back, the red light through the windscreen",
+   "line": "",
+   "stills": [
+    "AMB1-a"
+   ],
+   "anim": 2,
+   "beat": "0:04 ambulance"
+  },
+  {
+   "n": 3,
+   "act": "a1",
+   "title": "The BadCode reporter",
+   "look": "piece to camera, chest up",
+   "line": "REPORTER: Traffic is being managed, to keep an important journey moving.",
+   "stills": [
+    "REP1-a"
+   ],
+   "anim": 3,
+   "beat": "0:07 reporter"
+  },
+  {
+   "n": 4,
+   "act": "a1",
+   "title": "The minister",
+   "look": "back seat, lemon curd on the armrest",
+   "line": "MINISTER: I said raspberry-shaped hors d'oeuvres!",
+   "stills": [
+    "MIN1-b"
+   ],
+   "anim": 4,
+   "beat": "0:12 minister"
+  },
+  {
+   "n": 5,
+   "act": "a1",
+   "title": "The button",
+   "look": "back to the reporter as the motorcade clears",
+   "line": "REPORTER: A politician blocking the path of an ambulance. Poetic, really...",
+   "stills": [
+    "REP1-a"
+   ],
+   "anim": 5,
+   "beat": "0:15 button"
+  }
+ ]
+}
