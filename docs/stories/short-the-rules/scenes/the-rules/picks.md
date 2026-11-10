@@ -91,3 +91,10 @@ first before we start to iterate on the sound."*
 
 Kai voted This on every cut, no notes: stack `ST3-a-a`, islands `IS4-a-b`, window `WI4-b-a`, tear `TE4-a-a`, pen
 `PE4-b-a`. Every cut has a still: `storyboard.json` written (one frame per cut).
+
+## 2026-11-10: the hymn picked
+
+Kai: *"I think we've got one. Let's try this one."* → https://suno.com/song/4f37afd8-16ec-4b66-9885-54030500a37e,
+round 1 `whole-school-upright-piano` (the take he'd heard; his grime note came after the same take). Recorded,
+18.4 s. The remaining queue (r1 treble / small girl / Edwardian, all of round 2) was stopped unrun: round 2 is
+gated and ready if wanted.
