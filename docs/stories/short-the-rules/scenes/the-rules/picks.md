@@ -73,3 +73,8 @@ the [balaclavas] looking good in there."* Jack's mask: the navy one in clip `gan
 inside the ring, upper right, pointing down: the logo), saved as `docs/brand/balaclava/mask-reference.jpg`. ST1-a →
 ST2-a-a (masks to Jack's design; a 3-reference try returned the logo file, so two references at most) → ST3-a-a (leftover
 crown triangles removed). The procedure is now in `docs/brand/README.md`, "Putting a balaclava in a picture".
+
+## 2026-11-10: mood board round 3 votes
+
+Kai voted This on `ST3-a-a` (and `ST1-a`): *"I've, yeah, definitely picked this style."* **The opening still is ST3-a-a**;
+the mask reference (Jack's, `docs/brand/balaclava/mask-reference.jpg`) is accepted. Dump: `feedback/moodboard-r3/`.
