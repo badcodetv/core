@@ -1,0 +1,719 @@
+{
+ "schema": "badcode.final/1",
+ "story": "gitpush-origin-master",
+ "scene": "chorus-poverty",
+ "sequence": "gpom-chorus-poverty-r1a",
+ "frozen": "2026-11-10T19:09:57+00:00",
+ "note": "Kai 10 Nov: 'I'd say this is a sign off now' (sequence A as cut, Flow 1080p upscales, in 01 GPOM start r2 at 62.583 s)",
+ "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/cut/r1a/edl.json",
+ "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/cut/r1a/chorus.mp4",
+ "total": 11.041666666666666,
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/Lvams8whJLcpYN2EEJA8GU"
+ },
+ "words": {},
+ "shots": [
+  {
+   "t": 0.0,
+   "dur": 0.7083333333333334,
+   "beat": "MW",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p01-MW1-a2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p01-MW1-a2.mp4",
+     "made": "2026-11-10T18:03:27+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The drone climbs and tilts slowly forward from looking down the motorway to looking along it, revealing the camp running on for miles to the horizon. Below, people keep walking between the tents, smoke drifts sideways across the lanes from dozens of fires, and the brazier flames flicker. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/MW1-a2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/MW1-a2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p01",
+      "frame": 101,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T17:49:02.010Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/00-b.jpg",
+     "made": "2026-11-10T17:28:10.509Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "Straight down from a drone high above an eight-lane British motorway that has become a town: no traffic, every lane filled edge to edge with tents, blue tarps, sleeping cars with blankets in the windows and cooking fires, washing strung between the crash barriers, thousands of small figures moving between them, smoke drifting across the lanes. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "f05b5df8-27c7-4737-8054-45f204e03b4b"
+    }
+   ]
+  },
+  {
+   "t": 0.7083333333333334,
+   "dur": 0.6666666666666666,
+   "beat": "MW",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p02-MW1-b1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p02-MW1-b1.mp4",
+     "made": "2026-11-10T18:03:27+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera holds still on the footbridge while the people in the foreground walk steadily toward and past the lens carrying their water, drizzle falling across the frame, cooking smoke rising off the tents, and one slow gust shaking the blue tarps all the way down the carriageway. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/MW1-b1.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/MW1-b1.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p02",
+      "frame": 102,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T17:49:26.717Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/01-a.jpg",
+     "made": "2026-11-10T17:28:10.520Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "A very long telephoto lens looking straight up a British motorway from a footbridge: a shanty town of tarps, pallet huts and tents fills every lane for miles, compressed into one dense wall climbing a hill to the horizon, people in heavy coats walking down the central reservation carrying water containers, a dead gantry overhead. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "5042b20d-e4ed-4d1f-bcbb-998b7e4421a4"
+    }
+   ]
+  },
+  {
+   "t": 1.375,
+   "dur": 0.7083333333333334,
+   "beat": "QU",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p03-QU1-b2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p03-QU1-b2.mp4",
+     "made": "2026-11-10T18:03:27+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow track backwards down the pavement alongside the queue, keeping pace with it, as more and more people appear in line, breath steaming in the cold, stove flames flickering at their feet, the queue running on up the hill behind them without end. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/QU1-b2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/QU1-b2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p03",
+      "frame": 103,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T17:49:52.366Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/04-b.jpg",
+     "made": "2026-11-10T17:28:10.619Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "Long lens at eye level down a straight Victorian terraced street on a hill in a northern English town: a queue of adults on the pavement runs the length of the street, over the brow of the hill and on to the horizon, people holding plastic bags and flasks, some sitting on the kerb, a church hall door lit at the very front. Breath steaming. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "563c0bd0-585e-45c5-97fd-40dcd714836c"
+    }
+   ]
+  },
+  {
+   "t": 2.0833333333333335,
+   "dur": 0.6666666666666666,
+   "beat": "ST",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p06-ST1-a2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p06-ST1-a2.mp4",
+     "made": "2026-11-10T18:18:08+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow crane down from the high gallery toward the concourse floor, the rows of camp beds growing larger, a few sleepers turning over under their blankets, grey daylight moving faintly across the floor as clouds pass over the roof glass. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/ST1-a2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/ST1-a2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p06",
+      "frame": 106,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T18:03:49.917Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/09-b.jpg",
+     "made": "2026-11-10T17:28:10.810Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "From a high gallery in a vast Victorian railway terminus in London: the whole concourse under the iron and glass roof is a dormitory, thousands of sleeping bags and camp beds laid in rows on the floor, no trains at the platforms, the departure boards dark, grey daylight falling through the roof glass. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "05623021-053b-4ed9-89b7-967a5101c943"
+    }
+   ]
+  },
+  {
+   "t": 2.75,
+   "dur": 0.7083333333333334,
+   "beat": "ES",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p07-ES1-b2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p07-ES1-b2.mp4",
+     "made": "2026-11-10T18:18:08+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow tilt up the boarded tower block from the camp at its foot to the single lit window high on its face, the brazier flames flickering below, smoke drifting up the concrete, the lamp in the one window glowing steady. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/ES1-b2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/ES1-b2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p07",
+      "frame": 107,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T18:04:13.708Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/13-b.jpg",
+     "made": "2026-11-10T17:28:10.978Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "Low angle up a 1960s council tower block at dusk: every window on every floor boarded with grey steel sheets except one, where a single lamp still glows, and at its foot on the grass a camp of tents and furniture where the tenants now live. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "121e6db7-65a7-4f14-8ce3-38057649aa51"
+    }
+   ]
+  },
+  {
+   "t": 3.4583333333333335,
+   "dur": 0.6666666666666666,
+   "beat": "HS",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p08-HS1-c1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p08-HS1-c1.mp4",
+     "made": "2026-11-10T18:18:08+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera holds still under the shelter as the people push their loaded shopping trolleys along the wet promenade past the lens, the grey sea heaving behind them, the brazier flames bending in the wind, rain blowing across the frame. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/HS1-c1.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/HS1-c1.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p08",
+      "frame": 108,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T18:04:38.917Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/17-a.jpg",
+     "made": "2026-11-10T17:28:11.103Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "A British seaside promenade at dusk in winter: the Victorian shelters, the bandstand and the beach below are covered in tents and tarps, the pier's lights dead, the sea grey, and people walking the promenade with everything they own in shopping trolleys. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "58296ac6-8b80-4a23-8dea-408802a80281"
+    }
+   ]
+  },
+  {
+   "t": 4.125,
+   "dur": 0.375,
+   "beat": "FC",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p10-FC1-a2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p10-FC1-a2.mp4",
+     "made": "2026-11-10T18:18:08+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow lateral track along the fence, the lit warehouse sliding by on one side with its robot arms working endlessly, the dark crowd pressed to the chain-link on the other, lantern and brazier light flickering on their faces as they watch. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FC1-a2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FC1-a2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p10",
+      "frame": 110,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T18:05:30.422Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/03-b.jpg",
+     "made": "2026-11-10T17:37:16.059Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "At night outside a vast automated distribution warehouse, its whole side open and blazing with white light, robot arms and conveyors working inside with not one person among them: a crowd of hundreds of people in coats stand pressed against the tall chain-link fence in the dark, looking in. Winter night in a near-future Britain, the streetlights dead, lit only by braziers, camping lanterns and the glow of the city's towers; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "5c1ec9b4-6aa1-4756-bbc0-e5c31d38ad3f"
+    }
+   ]
+  },
+  {
+   "t": 4.5,
+   "dur": 0.6666666666666666,
+   "beat": "FC",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p11-FC1-c2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p11-FC1-c2.mp4",
+     "made": "2026-11-10T18:31:21+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow push in toward the data centre's wall, its big fans spinning and pumping steam into the dusk, the people below sitting with their backs to the warm fence beside their small fires, the security lights bright and steady on the white walls. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FC1-c2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FC1-c2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p11",
+      "frame": 111,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T18:18:29.326Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/05-b.jpg",
+     "made": "2026-11-10T17:37:16.132Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "A huge windowless data centre in green English fields at dusk, its cooling fans turning, security lights bright on its white walls: right up against its perimeter fence a camp of tents and parked cars, cooking fires, people sitting with their backs to the fence where it is warm from the exhaust vents. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "624c3753-826e-42bd-8dad-e0c535958681"
+    }
+   ]
+  },
+  {
+   "t": 5.166666666666667,
+   "dur": 0.7083333333333334,
+   "beat": "GL",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p12-GL1-b2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p12-GL1-b2.mp4",
+     "made": "2026-11-10T18:31:20+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow drone drift forward along the river between the dark tenements, the camp of tents and fires lining the bank, the flames reflected and trembling in the black water, the distant cranes standing against the dusk sky. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/GL1-b2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/GL1-b2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p12",
+      "frame": 112,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T18:18:56.595Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/07-b.jpg",
+     "made": "2026-11-10T17:37:16.191Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "Glasgow at dusk: along the river Clyde below sandstone tenements and the shipyard cranes, both banks are lined with tents and tarps for a mile, fires along the water's edge, the tenements' windows dark. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "554a0b14-6e46-4d89-aee7-ebdfcb93ca98"
+    }
+   ]
+  },
+  {
+   "t": 5.875,
+   "dur": 0.6666666666666666,
+   "beat": "PK",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p05-PK1-b1.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p05-PK1-b1.mp4",
+     "made": "2026-11-10T18:03:27+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "The camera rises slowly up from behind the people on the bench and over their heads, revealing the whole city below covered in tents and haze, thin columns of smoke drifting, the people on the bench motionless, hunched in their coats. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/PK1-b1.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/PK1-b1.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p05",
+      "frame": 105,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T17:50:44.957Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/07-a.jpg",
+     "made": "2026-11-10T17:28:10.716Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "From the top of Primrose Hill, behind a row of people in sleeping bags sitting along the benches, looking out over London: every park, square and playing field in sight is grey with tents, and smoke from thousands of small fires lies over the city in a flat haze. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "b0ff5c70-fb26-4e0d-8a21-0b6f1a213666"
+    }
+   ]
+  },
+  {
+   "t": 6.541666666666667,
+   "dur": 1.0416666666666667,
+   "beat": "FI",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p09-FI1-c2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p09-FI1-c2.mp4",
+     "made": "2026-11-10T18:18:08+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow push in across the brazier toward the two faces, the flames leaping and lighting their hands orange, sparks rising, the man and woman staring into the fire, their breath steaming, the tents soft behind them. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FI1-c2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FI1-c2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p09",
+      "frame": 109,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T18:05:04.848Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/02-b.jpg",
+     "made": "2026-11-10T17:37:16.017Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "Close at a brazier made from a cut-down steel drum at dusk: the hands of five adults held out to the flames, a grey-stubbled man in a supermarket uniform fleece, a woman with a hospital lanyard still round her neck, behind them out of focus a field of tents. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "86bd29a7-7714-4f07-8669-1d42a28753ff"
+    }
+   ]
+  },
+  {
+   "t": 7.583333333333333,
+   "dur": 3.4583333333333335,
+   "beat": "PK",
+   "looped": false,
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p04-PK1-a2.mp4",
+   "chain": [
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p04-PK1-a2.mp4",
+     "made": "2026-11-10T18:03:27+00:00",
+     "by": "claude",
+     "kind": "video",
+     "engine": "google-flow",
+     "tool": "scripts/scene/run.mts",
+     "model": "Omni 1.2 Flash",
+     "prompt": "A slow push in over the shanty city toward the lit towers on the skyline, the columns of cooking smoke rising and drifting, small fires flickering among the tarps, the towers' windows staying bright and still while dusk deepens around them. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+     "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/PK1-a2.jpg",
+     "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+     "inputs": {
+      "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/PK1-a2.jpg",
+      "character": null,
+      "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+      "key": "p04",
+      "frame": 104,
+      "option": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "mode": "Frames",
+      "durationSeconds": 8,
+      "count": 1,
+      "resolution": "720p",
+      "at": "2026-11-10T17:50:18.208Z"
+     }
+    },
+    {
+     "schema": "badcode.prov/1",
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/06-b.jpg",
+     "made": "2026-11-10T17:28:10.702Z",
+     "by": "claude",
+     "engine": "google-flow",
+     "kind": "image",
+     "tool": "flow_generate_batch",
+     "model": "Nano Banana Pro",
+     "inputs": {
+      "character": null
+     },
+     "settings": {
+      "aspect": "16:9",
+      "numOutputs": 2
+     },
+     "prompt": "From a high window looking over Hyde Park in London at dusk: the whole park, lawns and avenues of plane trees, has become a shanty city of tarps, tents and pallet shacks to the horizon, hundreds of thin columns of cooking smoke rising, and beyond it the towers of the City lit bright in every window. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+     "source_id": "64d5b99d-6a8e-47d9-bab6-a6a04faf1d8b"
+    }
+   ]
+  }
+ ],
+ "sounds": [
+  {
+   "stem": "mus-song",
+   "t": 0,
+   "dur": 11.041666666666666,
+   "what": "song from 69.583 s",
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+   "chain": [
+    {
+     "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+     "missing": true
+    }
+   ]
+  }
+ ],
+ "no_card": [
+  "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3"
+ ]
+}

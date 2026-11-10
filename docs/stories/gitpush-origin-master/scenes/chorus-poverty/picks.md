@@ -21,3 +21,4 @@
 - Kai: "that's looking good to me" (workbench unchanged, so sequence A as cut). Asked: low-quality clips? Yes: Flow's video is 720p native; the 1080 copies are an ffmpeg scale-up. Flow's free "1080p Upscaled" download is the fix (offered).
 - '01 GPOM chorus poverty r1' inserted into '01 GPOM start r2' at 62.583 s (+11.042 s), song laid continuous, 00 RENDER story re-laid (577.04 s). Render check passed. Backups in zz old sequences. Tabs reopened in film order.
 - Kai: "please upscale... you can tell the quality is low". Flow's free 1080p upscales downloaded (scripts/scene/upscale.mts), matched by frame, silent copies in video/1080up/, Premiere items repointed in place (the cut is untouched). Render check: same timing, ~3x the detail.
+- 10 Nov, Kai: "I'd say this is a sign off now". Frozen (final.json); Premiere handed to gpom-end.

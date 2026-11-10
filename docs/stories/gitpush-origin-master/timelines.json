@@ -42,7 +42,7 @@
      "id": "mv-chorus-1",
      "name": "Chorus 1: Skid Row Britain (the poverty twin of Outbreak Night; goes back in between the intro and the banks)",
      "at": "1:02",
-     "state": "done (10 Nov): Kai kept sequence A as cut ('looking good'); '01 GPOM chorus poverty r1' inserted into '01 GPOM start r2' at 1:02.58 (film +11.04 s), so in 00 RENDER story. Render checked: song continuous, joins clean. Clips are Flow's 720p upscaled by ffmpeg; Flow's free 1080p upscale is the quality fix",
+     "state": "SIGNED OFF (10 Nov, Kai: 'this is a sign off'): sequence A as cut, Flow's 1080p upscales, '01 GPOM chorus poverty r1' in '01 GPOM start r2' at 1:02.58 (film +11.04 s), so in 00 RENDER story; recipe frozen",
      "tone": "done",
      "scene": "scenes/chorus-poverty",
      "history": [

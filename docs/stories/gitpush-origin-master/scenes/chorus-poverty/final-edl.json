@@ -1,0 +1,229 @@
+{
+ "sequence": "gpom-chorus-poverty-r1a",
+ "fps": 24,
+ "total": 11.041666666666666,
+ "beats": [
+  {
+   "id": "MW",
+   "title": "The motorway is a town",
+   "start": 0.0,
+   "dur": 0.7083333333333334,
+   "see": "motorway town from the drone, rising to the horizon",
+   "act": "beats 1-2",
+   "lines": []
+  },
+  {
+   "id": "MW",
+   "title": "The motorway is a town",
+   "start": 0.7083333333333334,
+   "dur": 0.6666666666666666,
+   "see": "motorway camp from the footbridge, walkers with water",
+   "act": "beats 3-4",
+   "lines": []
+  },
+  {
+   "id": "QU",
+   "title": "The queue",
+   "start": 1.375,
+   "dur": 0.7083333333333334,
+   "see": "the queue up the terraced street",
+   "act": "beats 5-6",
+   "lines": []
+  },
+  {
+   "id": "ST",
+   "title": "Indoors",
+   "start": 2.0833333333333335,
+   "dur": 0.6666666666666666,
+   "see": "the station concourse as a dormitory",
+   "act": "beats 7-8",
+   "lines": []
+  },
+  {
+   "id": "ES",
+   "title": "The estates",
+   "start": 2.75,
+   "dur": 0.7083333333333334,
+   "see": "the boarded tower block, one lit window",
+   "act": "beats 9-10",
+   "lines": []
+  },
+  {
+   "id": "HS",
+   "title": "The high street",
+   "start": 3.4583333333333335,
+   "dur": 0.6666666666666666,
+   "see": "the promenade, trolleys in the rain",
+   "act": "beats 11-12",
+   "lines": []
+  },
+  {
+   "id": "FC",
+   "title": "Through the fence",
+   "start": 4.125,
+   "dur": 0.375,
+   "see": "the crowd at the warehouse fence (wide)",
+   "act": "beats 13-13",
+   "lines": []
+  },
+  {
+   "id": "FC",
+   "title": "Through the fence",
+   "start": 4.5,
+   "dur": 0.6666666666666666,
+   "see": "the camp against the data centre, fans pumping",
+   "act": "beats 14-15",
+   "lines": []
+  },
+  {
+   "id": "GL",
+   "title": "Everywhere",
+   "start": 5.166666666666667,
+   "dur": 0.7083333333333334,
+   "see": "Glasgow, the Clyde lined with camps",
+   "act": "beats 16-17",
+   "lines": []
+  },
+  {
+   "id": "PK",
+   "title": "The parks",
+   "start": 5.875,
+   "dur": 0.6666666666666666,
+   "see": "Primrose Hill: the bench, London in tents",
+   "act": "beats 18-19",
+   "lines": []
+  },
+  {
+   "id": "FI",
+   "title": "The fires",
+   "start": 6.541666666666667,
+   "dur": 1.0416666666666667,
+   "see": "two faces at the brazier",
+   "act": "beats 20-22",
+   "lines": []
+  },
+  {
+   "id": "PK",
+   "title": "The parks",
+   "start": 7.583333333333333,
+   "dur": 3.4583333333333335,
+   "see": "Hyde Park shanty city, the lit towers behind",
+   "act": "beats 23-32",
+   "lines": []
+  }
+ ],
+ "video": [
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p01-MW1-a2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p01-MW1-a2.mp4",
+   "start": 0.0,
+   "dur": 0.7083333333333334,
+   "beat": "MW",
+   "in": 3.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p02-MW1-b1.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p02-MW1-b1.mp4",
+   "start": 0.7083333333333334,
+   "dur": 0.6666666666666666,
+   "beat": "MW",
+   "in": 3.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p03-QU1-b2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p03-QU1-b2.mp4",
+   "start": 1.375,
+   "dur": 0.7083333333333334,
+   "beat": "QU",
+   "in": 3.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p06-ST1-a2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p06-ST1-a2.mp4",
+   "start": 2.0833333333333335,
+   "dur": 0.6666666666666666,
+   "beat": "ST",
+   "in": 2.5
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p07-ES1-b2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p07-ES1-b2.mp4",
+   "start": 2.75,
+   "dur": 0.7083333333333334,
+   "beat": "ES",
+   "in": 3.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p08-HS1-c1.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p08-HS1-c1.mp4",
+   "start": 3.4583333333333335,
+   "dur": 0.6666666666666666,
+   "beat": "HS",
+   "in": 2.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p10-FC1-a2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p10-FC1-a2.mp4",
+   "start": 4.125,
+   "dur": 0.375,
+   "beat": "FC",
+   "in": 0.1
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p11-FC1-c2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p11-FC1-c2.mp4",
+   "start": 4.5,
+   "dur": 0.6666666666666666,
+   "beat": "FC",
+   "in": 3.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p12-GL1-b2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p12-GL1-b2.mp4",
+   "start": 5.166666666666667,
+   "dur": 0.7083333333333334,
+   "beat": "GL",
+   "in": 3.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p05-PK1-b1.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p05-PK1-b1.mp4",
+   "start": 5.875,
+   "dur": 0.6666666666666666,
+   "beat": "PK",
+   "in": 0.5
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p09-FI1-c2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p09-FI1-c2.mp4",
+   "start": 6.541666666666667,
+   "dur": 1.0416666666666667,
+   "beat": "FI",
+   "in": 3.0
+  },
+  {
+   "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p04-PK1-a2.mp4",
+   "source": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p04-PK1-a2.mp4",
+   "start": 7.583333333333333,
+   "dur": 3.4583333333333335,
+   "beat": "PK",
+   "in": 4.0
+  }
+ ],
+ "audio": [
+  {
+   "track": "A1",
+   "name": "mus-song"
+  }
+ ],
+ "events": [
+  {
+   "stem": "mus-song",
+   "t": 0,
+   "dur": 11.041666666666666,
+   "what": "song from 69.583 s",
+   "src": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3"
+  }
+ ],
+ "flags": []
+}
