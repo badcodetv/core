@@ -9,20 +9,26 @@
     {
       "key": "stack",
       "name": "The stack",
-      "at": "0s",
-      "blurb": "The gang looks up at a massive stack of paper: THE RULES. Are the rules working?"
+      "at": "0-6s",
+      "blurb": "The gang looks up at a massive stack of paper: THE RULES. Sung: \"We can't afford a bed for you, / The purse is far too thin.\""
+    },
+    {
+      "key": "islands",
+      "name": "The islands",
+      "at": "6-11s",
+      "blurb": "A sunny island: a filing cabinet in a hammock under a palm. The profits have a bed. Sung: \"There is room on all those islands.\" Overlay: the tax line."
     },
     {
       "key": "window",
       "name": "The window",
-      "at": "",
-      "blurb": "\"Let's look out the window.\" Outside: the street the missing tax should have paid for. Kai, 2026-11-10: lots of homeless people, the consequence of the tax-haven rule."
+      "at": "11-15s",
+      "blurb": "Out of the window: people sleeping rough in doorways, with dignity. Sung: \"But you will sleep in a bin.\" The organ stops."
     },
     {
       "key": "tear",
-      "name": "Tear it up",
-      "at": "",
-      "blurb": "Back inside, the gang tears up the rules."
+      "name": "The tear",
+      "at": "15-20s",
+      "blurb": "Back inside, the gang tears up the rules. Silence, then each rip of paper is a hit."
     }
   ],
   "video": {

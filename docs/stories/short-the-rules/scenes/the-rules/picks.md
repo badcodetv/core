@@ -35,3 +35,8 @@ Length answered: **20 s maximum.**
 
 Kai picked R2-2 "Room for the Profits" and rewrote the end: *"We can't afford a bed for you. The purse is far
 too thin. There is room on all those islands. But you will sleep in a bin."* No crowd turn. `../../songs/lyrics.md`.
+
+## 2026-11-10: beats 3 and 4
+
+- The islands line: **(b) a sunny island, a filing cabinet in a hammock under a palm** (Kai: "let's see how it looks").
+- The tear: **(a) silence, then the rip of paper as the hit.**
