@@ -46,7 +46,8 @@
   "flow_project": "3b5e895b-c6cf-4467-a29a-7dbfcbbc0568",
   "moodboard_intro": "Round 4: the look and feel of every other cut, in the basement look Kai picked. The island is a deliberate sunny break. Masks follow Jack's reference; on the pen close-up the first try pointed the triangle left, so it was fixed against the logo (PE4-b-a is the closest). Vote This / Maybe / No per cut and leave notes.",
   "boards": {
-    "moodboard": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7"
+    "moodboard": "https://claude.ai/artifact/384QmvfhiCgZ48v7cp4XH7",
+    "timeline": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E"
   },
   "board_round": 4,
   "picked": [
@@ -70,5 +71,10 @@
       "PE4-b-a",
       "The pen"
     ]
-  ]
+  ],
+  "cut": {
+    "edl": "/mnt/d/badcode-videos/shorts/the-rules/cut/edl.json",
+    "preview": "/mnt/d/badcode-videos/shorts/the-rules/cut/preview.mp4",
+    "script": "python3 scripts/shorts/the_rules_cut.py"
+  }
 }

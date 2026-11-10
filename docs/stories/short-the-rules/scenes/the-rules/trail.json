@@ -44,5 +44,13 @@
   ],
   "feedback": "feedback/moodboard-r4",
   "feedback_docs": 6
+ },
+ {
+  "at": "2026-11-10T19:56:14+00:00",
+  "stage": "timeline",
+  "round": 1,
+  "url": "https://claude.ai/artifact/NxaG6N48KfExaHi6aL1z8E",
+  "what": "Rough cut 1: stills held, hymn A1, Amen drop A2 (from 0 s of the take), 27 s",
+  "rebuild": "python3 scripts/shorts/the_rules_cut.py && python3 scripts/scene/build-timeline.py docs/stories/short-the-rules/scenes/the-rules <out-dir>"
  }
 ]
