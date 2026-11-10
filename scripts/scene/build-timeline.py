@@ -26,6 +26,10 @@ cut = sc.cfg.get('cut', {})
 edl = pathlib.Path(cut.get('edl', sc.media / 'cut' / 'edl.json'))
 preview = pathlib.Path(cut.get('preview', sc.media / 'cut' / 'preview.mp4'))
 data = localize(json.loads(edl.read_text()))
+if not preview.exists():  # previews never travel through Drive (scripts/drive/exclude.txt): each machine makes its own
+    sys.exit(f"no preview on this machine: {preview}\n"
+             f"Previews aren't synced; make it here from the edl and clips with this scene's rebuild command "
+             f"(the newest 'rebuild' in {sc.dir / 'trail.json'}, or scene.json cut.script), then run this again.")
 data.setdefault('title', sc.cfg.get('title', sc.slug) + ' Timeline')
 data.setdefault('heading', sc.cfg.get('title', sc.slug))
 notes = sc.dir / 'cut-notes.json'  # Claude's read of the notes so far (round, plan, replies), shown on the page

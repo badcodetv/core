@@ -1,0 +1,209 @@
+# BadCode Shorts: the idea slate
+
+**Status:** v2, 2026-11-10 (Jack). v2 adds #23 and the **20-second cut** of every idea (below), which is the version to build from. Written from the Kai and Jack meeting transcript and eleven reference images Jack collected.
+Nothing here is ruled. **Jack writes the jokes:** each idea has a premise and the shape of the punch. The punchline itself is a blank for him to fill.
+
+## What a BadCode short is (from the meeting)
+
+- **Name:** *BadCode Shorts*. Separate from BadCode Stories and BadCode Government (Kai).
+- **Length:** 10 to 20 seconds (Kai).
+- **What it is:** "Social commentary, not news reporting." "We are social commentators making points through funny metaphors." It is told through the way Kai and Jack see the world, and it doesn't chase the news cycle (Kai).
+- **No format.** "Actively work against the idea of having a format." Each short can be whatever it wants to be. Some will be news footage with a balaclava in it, some will be a hippo, some will be a meme (Kai).
+- **The things we come back to, used sometimes:** the balaclava (white ring and triangle over the left eye; rules in `docs/brand/README.md`), the logo, and recreated "real footage" that ends on a meme (Jack).
+- **First up:** the ambulance at the traffic lights (both agreed).
+- **Approach:** make a pile, post some, and learn what doesn't work (Jack).
+
+## 🔴 Lines that apply to every short
+
+- **No AI people composited into real footage.** If a short needs to look like "real footage", recreate the whole shot in Flow (Jack's ruling of 2026-10-18).
+- **No AI likeness of a real, named politician.** That is defamation and deepfake risk. Use a stand-in (an invented minister, a balaclava, the Paraguay presenter), or put their **real public-record words** on screen as text. The quote does the damage; the face isn't needed.
+- **The reader rules apply** (`docs/marketing/the-reader.md`): name the person who decided, never the technology; never say "you've been fooled"; on immigration, aim at the spending decision and never at migrants.
+- **Several of these images show old news** (2023 and 2024, under the last government). Following Kai's "no news cycle" rule, each idea below takes the **timeless pattern** from its image, not the headline.
+- The marketing-gatekeeper agent checks every short before it goes out.
+
+---
+
+## ✂️ The 20-second cut (v2: build from this)
+
+Jack, 2026-11-10: "our shorts should be like 20 seconds… jokes are funnier when you trim the fat." Each idea is cut to three beats or fewer (seconds in brackets). The longer write-ups further down are background only.
+
+1. 🚑 **Priority Lane:** an ambulance is held at the lights (4) → inside the motorcade, a minister on the phone: "I said *raspberry*." (6) → it sweeps past the ambulance, and the meme lands (5). **15s.** The paramedic line is cut; the ambulance says it already.
+2. 🪑 **Same Bench:** the 1919 cartoon: "Forget it." (5) → the same bench today, the same fat cat, a nurse: "Forget it." (5) → he hasn't aged a day (4). **14s.** The 2054 era is dropped.
+3. 🏠 **Howard Street:** a sitcom title card and four neighbours bickering (6) → pull back to one landlord counting rent (6) → the laugh track cuts dead (2). **14s.**
+4. 🚪 **Name's Not Down:** "ID?" "I wrote that sign." "Then you know." **10s.**
+5. 🪆 **Unelected:** dolls open, UNELECTED, UNELECTED, UNELECTED (8) → the tiny one says VOTER, unopened (4). **12s.**
+6. 💷 **Sponsor a Chancellor:** "Jeremy only earns £100,000." (6) → "£3 a month buys him a second wine fridge." (5) **11s.**
+7. ✈️ **Party of One:** a safety demo for one man (6) → "The cost has been added to your council tax." (4) **10s.** The pensioner cutaway is cut.
+8. 🚆 **Great Train Robbery:** the gang creeps aboard (5) → the fares board (3) → masks off, a nod of respect, they leave (5). **13s.**
+9. 🧾 **Secretary's Rate:** two tax bills, hers is higher, he hands her his to file. **10s.**
+10. 🌊 **The Radiator:** the radiator is labelled GULF STREAM and someone fiddles with it (5) → the room freezes (4) → "You broke the free heating." (4) **13s.**
+11. 📏 **Rules For Thee:** laws drop out for everyone else, ME is SOLD OUT. **8s.**
+12. 🎱 **Magic 8 Ball:** a question, a shake, the answer. **6s.** Fast enough to do three in one short.
+13. 🎙️ **Balaclava Newsreader:** one real headline read straight, and nobody blinks. **10s.**
+14. 🍞 **Butter Side Down:** toast falls, then "It wasn't gravity." **6s.**
+15. 🐈 **Schrödinger:** the box opens and the cat is holding a complaint form. **6s.** The explainer is cut.
+16. 🦛 **Just a Hippo:** **5s.**
+17. 👋 **Hello, I'm BadCode:** "I'm from the future. It didn't go well." **8s.**
+18. 🕹️ **By the Balls:** the claw grabs the house and goes limp, three times (9) → "It was never broken. It was set." (4) **13s.**
+19. 🛒 **Unexpected Item:** the shopper scans, bags and IDs themselves, and the receipt reads WAGES: £0.00. **10s.**
+20. 🥂 **Trickle Down:** the top glass keeps growing and the rest stay dry. **10s.**
+21. 🏦 **Too Big to Fail:** two piggy banks fall, one gets caught on a pillow, the kid gets the bill. **12s.**
+22. 📦 **Meal Deal Archaeology:** a museum glass case, the price crossed out ten times. **8s.**
+23. 🎖️ **Stiff Upper Lip:** a 1950s film, a dad teaching his boy "Sad: stare at the wall. Love: a handshake." (9) → hard cut to the same boy at 75, doing the same lesson with his grandkid (6) → the button, ⬜ Jack (4). **19s.**
+
+**Top five (not ruled):** 1 Priority Lane · 3 Howard Street · 23 Stiff Upper Lip · 2 Same Bench · 12 Magic 8 Ball.
+
+---
+
+## From the images
+
+### 1. 🚑 Priority Lane *(the ambulance: first short)*
+**Source:** "The police stopping an ambulance for a politician", broken Britain.
+**Hook:** a police outrider holds up his glove and an ambulance stops at the lights.
+**What happens:** we cut between the motorcade and the ambulance. In the car, a minister is on the phone furious about trivia (Kai's example: "I asked for raspberry and they gave me lemon curd"). In the ambulance, a paramedic says "BP's dropping, we've got 30 seconds."
+**The turn:** the motorcade sweeps through. Then the meme caption lands.
+**Point:** whose time counts.
+**Look:** recreated phone-footage realism in Flow, ending on the meme (Jack).
+
+### 2. 🪑 Same Bench *(from Life Magazine, 1919)*
+**Source:** the 1919 cartoon of a top-hatted fat cat telling a one-legged veteran "The war is over my boy. Forget it."
+**Hook:** the cartoon itself, then it starts to move.
+**What happens:** the same park bench in three eras. 1919: the soldier. 2021: a nurse in scrubs ("The pandemic's over, love. Forget it." The clapping stopped and the pay freeze came). 2054: someone from the BadCode future.
+**The turn:** the fat cat is the same man in all three, and he doesn't age.
+**Point:** the people who carry the cost are always thanked, then forgotten.
+**Rights:** Rollin Kirby died in 1952, so the cartoon is probably public domain in the UK (life + 70 ran out in 2022) and in the US (published before 1930). ⬜ Check with `find-footage` before using it.
+
+### 3. 🏠 Howard Street *(the sitcom)*
+**Source:** a terrace where four houses side by side have Conservative, Labour, Green and Lib Dem signs. "Great set up for a sitcom."
+**Hook:** a cheesy 80s sitcom title card, *Howard Street*, with a laugh track.
+**What happens:** four neighbours, four party signs, all bickering over the fence.
+**The turn:** a slow pull back shows that all four houses have the same landlord, standing at the end of the street counting rent. The laugh track stops.
+**Point:** divide and conquer, the Bank Robbery theme in 15 seconds.
+
+### 4. 🚪 Name's Not Down
+**Source:** Boris Johnson, who brought in voter ID, turned away from his own polling station for not having ID (May 2024).
+**Hook:** a nightclub queue with a velvet rope.
+**What happens:** a man in a suit strides past the queue. The bouncer stops him: "ID?" The man points at a sign saying *NO ID, NO ENTRY*. "I wrote that." The bouncer says: "Then you know."
+**The turn:** the bouncer is in a balaclava. ⬜ Jack's line for the button.
+**Point:** the rules are written for other people, until they aren't.
+
+### 5. 🪆 Unelected
+**Source:** "Unelected PM asked unelected King to give unelected Cameron a peerage…"
+**Hook:** a Russian doll on a desk.
+**What happens:** each doll opens to show a smaller one, each stamped UNELECTED. The narrator counts them.
+**The turn:** the last, tiny doll is stamped VOTER. It doesn't open, and nobody asked it anything.
+**Alternative:** a five-a-side match where the ref is also the captain of one team and owns the pitch. That reuses the Paraguay line "the ref can't own the team."
+
+### 6. 💷 Sponsor a Chancellor
+**Source:** "£100k a year doesn't go far."
+**Hook:** a sad-piano charity advert in black and white, in slow motion.
+**What happens:** "This is Jeremy. Jeremy only earns £100,000 a year. For just £3 a month, you could help him afford a second wine fridge."
+**The turn:** a freeze frame and text with the real median UK salary. ⬜ Check the current figure before using it.
+**Point:** who is "struggling."
+**Note:** use an invented chancellor. The quote can go on screen as text.
+
+### 7. ✈️ Party of One
+**Source:** a £165,000 private jet for a one-day trip to sign a deal.
+**Hook:** a budget-airline safety demo, but the cabin holds one passenger.
+**What happens:** a cabin crew member in a balaclava does the whole routine for a single minister in seat 1A. "The total cost of today's flight has been added to your council tax."
+**The turn:** cut to a pensioner on a 3-hour coach for a hospital appointment.
+**Point:** the spending decision. 🔴 Keep migrants out of it completely. The joke is the minister's cheque book (reader rule 4).
+
+### 8. 🚆 The Great Train Robbery
+**Source:** LNER, £786.80 for a Newcastle to London return.
+**Hook:** the balaclava gang from the Bank Robbery creeps up on a train, ready to rob it.
+**What happens:** they get on and see the fares board, £786.80.
+**The turn:** they take off their masks, shake their heads at the professionals, and leave.
+**Point:** the robbery is already happening, and it's legal.
+**Note:** LNER has been publicly run since 2018 (the operator of last resort). ⬜ Check this. It means the joke has to be about **the fare system** (ticket types, peak pricing, splitting tickets to save money), not "privatisation".
+
+### 9. 🧾 The Secretary's Rate
+**Source:** the "make billionaires pay their fair share" Buffett post.
+**Hook:** an office. A billionaire and his secretary each get their tax bill.
+**What happens:** her rate is higher than his. She stares at hers, and he hands her his to file.
+**The turn:** ⬜ Jack.
+**Facts:** Buffett really did say his secretary paid a higher rate than him (NYT op-ed, 2011). 🔴 The Reddit quote in the image ("you would never have to pay taxes again") looks **misattributed**: the video caption doesn't say it. Don't use it.
+
+### 10. 🌊 The Radiator *(climate, from the future)*
+**Source:** the Atlantic circulation (AMOC) nearing a "devastating" tipping point.
+**Hook:** a household radiator labelled GULF STREAM: FREE HEATING FOR BRITAIN SINCE FOREVER.
+**What happens:** someone keeps fiddling with the valve while the room frosts over. The narrator speaks from 2054: "You had free central heating and you broke it to save on the gas bill."
+**The turn:** an energy company bill arrives for the replacement heating.
+**Point:** this one is the BadCode premise exactly, a future that already went wrong. Name the decision-makers (the polluters, not "we").
+
+### 11. 📏 Rules For Thee
+**Source:** the Vance and Collins interview. ("Should vandals be prosecuted?" "Yes." "You raised money for the January 6 rioters.")
+**Recast for a UK audience** as a vending machine for laws: a politician puts in a coin and laws drop out *for other people*. He presses the button marked ME and it reads SOLD OUT.
+**Note:** it's a US story, so take only the pattern from it.
+
+---
+
+## From the meeting
+
+### 12. 🎱 The Magic 8 Ball *(Kai)*
+**What it is:** a black 8 ball is shaken, and the window floats up the **BadCode red triangle**, because the logo already *is* an 8-ball window. Answers come from the future.
+**Examples:** "Will house prices come down?" → ASK YOUR LANDLORD. "Will AI take my job?" → ASK WHO OWNS IT. "Will they fix it?" → OUTLOOK: THEY'RE ON HOLIDAY.
+**Note:** the one idea that could repeat without becoming a "format". Use it now and then.
+
+### 13. 🎙️ Breaking News, With a Balaclava *(Kai and Jack)*
+**What it is:** a perfectly normal news set where one person is in a balaclava and nobody comments. The anchor reads a real, absurd headline straight.
+**Note:** works with any topic. The Paraguay piece is the first test of this.
+
+### 14. 🍞 Butter Side Down *(Kai)*
+**What it is:** toast falls butter side down. The narrator, deadpan: "It wasn't gravity. You woke up in a mood with your wife."
+**Point:** the Storyverse in 10 seconds (your story shapes your world). No politics at all, on purpose.
+
+### 15. 🐈 Schrödinger Was Joking *(Kai)*
+**What it is:** Schrödinger meant his cat as a joke, to show how silly "two places at once" is. A physicist opens the box and the cat is filing a complaint.
+**Note:** it ties into the GPOM consciousness explainer. ⬜ Fact check: the "joke" framing is true in spirit (the 1935 thought experiment was a *reductio*, an argument showing the idea leads to nonsense). Phrase it carefully.
+
+### 16. 🦛 Just a Hippo *(Kai)*
+**What it is:** a hippo, and that's the whole short. Maybe a single caption from the future. Posting nonsense now and then is how we avoid having a format.
+
+### 17. 👋 Hello, I'm BadCode *(Kai)*
+**What it is:** a balaclava'd figure looks into the camera: "Hello. I'm from the future. It didn't go well. Watch this space."
+**Note:** this is the first post for the socials and the profile intro, and it doubles as the channel trailer.
+
+### 23. 🎖️ Stiff Upper Lip *(Jack and Kai)*
+**What it is:** boomers learned their feelings from parents with untreated war PTSD.
+**Hook:** a cheery 1950s public-information film, *"Your Feelings, and How Not To Have Them."*
+**What happens:** a dad back from the war teaches his little boy each emotion. Sad: stare at the wall. Love: a firm handshake at the station.
+**The turn:** a hard cut to now. That boy, at 75, does the same lesson with his grandkid, word for word. ⬜ Jack's button.
+**Point:** nobody helped the men who came back, so the silence got passed down as "character". The joke is on the neglect, not on boomers.
+**Links:** pairs with Same Bench (#2), the same "forget it".
+🔴 **Reader check:** our reader (`docs/marketing/the-reader.md`) often has boomer parents or is one. Aim at the system that left veterans to cope alone, never sneer at old people.
+
+---
+
+## Our own (same spirit, no source image)
+
+### 18. 🕹️ By the Balls *(George Carlin, "The Owners")*
+**What it is:** an arcade claw machine. The prize in the glass is a little house. You put in a coin and the claw grabs it, then goes limp at the top. Again, and again.
+**The turn:** the claw is labelled with the names of the owners (bank, landlord, energy company). Text from the future: "It was never broken. It was set."
+**Facts:** claw machines really do have adjustable grip and payout settings. ⬜ Check the detail. 🔴 Don't use Carlin's audio, which is copyrighted. Rewrite the idea, or put a short quote on screen as text.
+
+### 19. 🛒 Unexpected Item
+**What it is:** a self-checkout tells a shopper "Unexpected item in bagging area." The shopper scans, bags and checks their own ID, and gets a till receipt that reads **WAGES: £0.00**, and below it, **SAVED BY TESCO: £…** (no real company named on screen).
+**Point:** you now do the job for free. Name who pockets it.
+
+### 20. 🥂 Trickle Down
+**What it is:** a champagne tower at a gala. The top glass is poured, overflows, and… the glass grows. It keeps growing. The glasses below stay dry.
+**Note:** no words needed. Ends on the logo.
+
+### 21. 🏦 Too Big to Fail
+**What it is:** a kid's piggy bank falls off a shelf and smashes. It gets no help. A banker's piggy bank wobbles and the government catches it with a pillow.
+**The turn:** the government hands the kid the bill.
+
+### 22. 📦 Meal Deal Archaeology
+**What it is:** a museum in 2054. The exhibit is a meal deal under glass with a price tag that has been crossed out and rewritten many times.
+**Point:** inflation, told as the future's history (the Future History idea in `docs/ideas/badcode-future-history.md`).
+
+---
+
+## Picks to start with (my ranking, not ruled)
+
+1. **Priority Lane** (#1): already agreed, and the story is strong.
+2. **Howard Street** (#3): the strongest twist, and it unites people rather than dividing them.
+3. **Same Bench** (#2): timeless, and the art is free (once the rights check is done).
+4. **The Great Train Robbery** (#8): a free callback to the Bank Robbery gang.
+5. **Magic 8 Ball** (#12): Kai's idea, and it fits the logo exactly.

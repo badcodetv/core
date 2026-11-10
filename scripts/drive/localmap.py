@@ -13,6 +13,8 @@ the running shell needs: C:\\x -> /mnt/c/x in WSL, /c/x in Git Bash, unchanged e
     python3 localmap.py set  <story> <path>   record it (the folder must exist)
     python3 localmap.py list                  every story in folders.json and its folder here
     python3 localmap.py path <path>           a path from a cut file / scene.json, as THIS machine finds it
+    python3 localmap.py check <file.json>...  is every file a cut / scene.json names here? (exit 1 if any missing)
+                                              Use this, never `ls` on a raw path, before saying media is missing.
 
 Sharing cuts and timelines between machines. Cut files (edl.json), scene.json and the like hold FULL paths,
 written on whichever machine made them: /mnt/d/badcode-videos/karen-music/clips/x.mp4 on Kai's,
@@ -142,6 +144,36 @@ def localize(obj):
     return localize_path(obj)
 
 
+def _paths(obj):
+    if isinstance(obj, dict):
+        for v in obj.values():
+            yield from _paths(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from _paths(v)
+    elif isinstance(obj, str) and (obj.startswith('/') or re.match(r'^[A-Za-z]:[\\/]', obj)):
+        yield obj
+
+
+def check_file(path) -> int:
+    """Every absolute path in a JSON file, localized, checked on disk. Prints a summary; returns the missing count."""
+    paths = sorted(set(_paths(json.loads(pathlib.Path(path).read_text()))))
+    missing, unmapped = [], []
+    for p in paths:
+        here = to_shell(localize_path(p))
+        if os.path.exists(here):
+            continue
+        story, _ = story_relpath(p)
+        (unmapped if story and not _load().get('stories', {}).get(story) else missing).append((p, here, story))
+    print(f'{path}: {len(paths)} paths, {len(paths) - len(missing) - len(unmapped)} found here, '
+          f'{len(missing)} missing, {len(unmapped)} in a story this machine has not mapped')
+    for p, here, story in missing:
+        print(f'  missing  {here}' + (f'   (story {story}: not pulled yet, or excluded, e.g. renders/)' if story else '   (in no story: written for one machine only)'))
+    for p, here, story in unmapped:
+        print(f'  NOT SET  {p}   -> drive.sh where {story} "<folder>"')
+    return len(missing) + len(unmapped)
+
+
 def story_dir(story: str) -> str:
     known = stories()
     if story not in known:
@@ -190,6 +222,8 @@ def main(argv):
             print(f"{argv[2]} -> {set_story(argv[2], ' '.join(argv[3:]))}")
         elif cmd == 'path':
             print(localize_path(' '.join(argv[2:])))
+        elif cmd == 'check':
+            return 1 if sum(check_file(f) for f in argv[2:]) else 0
         elif cmd == 'list':
             mine = _load().get('stories', {})
             for k, v in stories().items():

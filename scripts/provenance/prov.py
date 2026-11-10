@@ -36,6 +36,8 @@ import shutil
 import sys
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO / 'scripts' / 'drive'))
+from localmap import localize, story_relpath, stories as _drive_stories  # noqa: E402  paths written on another machine
 SCHEMA = 'badcode.prov/1'
 KINDS = ('image', 'video', 'voice', 'music', 'sfx', 'cut', 'other')
 STAGES = ('brief', 'moodboard', 'storyboard', 'clips', 'picks', 'dialogue', 'timeline', 'premiere', 'other')
@@ -53,13 +55,27 @@ def now():
     return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
 
 
+def _canonical(p):
+    """A file in a shared story, on any machine -> the same file under the media root, so one clip has one card
+    whether Kai's machine (D:\\badcode-videos\\...) or Jack's (his own folder for the story) wrote it."""
+    story, rest = story_relpath(str(p))
+    if not story:
+        return None
+    root = str(media_root()).rstrip('/')
+    for h in _drive_stories().get(story, {}).get('homes', []):
+        if h.rstrip('/').lower().startswith(root.lower() + '/'):
+            return pathlib.Path(h.rstrip('/')) / rest if rest else pathlib.Path(h.rstrip('/'))
+    return None
+
+
 def mirror_path(file):
     """Where a file's card lives in the repo: its path under the media root, else under _elsewhere/."""
     p = pathlib.Path(file).resolve()
     try:
         rel = p.relative_to(media_root().resolve())
     except ValueError:
-        rel = pathlib.Path('_elsewhere') / str(p).lstrip('/')
+        c = _canonical(p)
+        rel = c.relative_to(media_root()) if c else pathlib.Path('_elsewhere') / str(p).lstrip('/')
     return mirror_root() / f'{rel}.prov.json'
 
 
@@ -104,7 +120,7 @@ def _scene(scene_dir):
     d = pathlib.Path(scene_dir).resolve()
     if not (d / 'scene.json').exists():
         sys.exit(f'no scene.json in {d}')
-    return d, json.loads((d / 'scene.json').read_text())
+    return d, localize(json.loads((d / 'scene.json').read_text()))  # paths as THIS machine finds them
 
 
 def _edl(d, cfg):
@@ -113,7 +129,7 @@ def _edl(d, cfg):
     edl = pathlib.Path(cut.get('edl', media / 'cut' / 'edl.json'))
     if not edl.exists():
         sys.exit(f'no edl at {edl} (scene.json "cut.edl")')
-    return edl, pathlib.Path(cut.get('preview', media / 'cut' / 'preview.mp4')), json.loads(edl.read_text())
+    return edl, pathlib.Path(cut.get('preview', media / 'cut' / 'preview.mp4')), localize(json.loads(edl.read_text()))
 
 
 def _uses(data):

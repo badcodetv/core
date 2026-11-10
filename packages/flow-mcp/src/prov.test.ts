@@ -20,6 +20,12 @@ describe('mirrorPath', () => {
   it('puts anything outside the media root under _elsewhere', () => {
     expect(mirrorPath('/home/kai/.cache/p.jpg')).toBe(join(mirror, '_elsewhere/home/kai/.cache/p.jpg.prov.json'))
   })
+  it("gives a shared story's file one card on both machines (homes in scripts/drive/folders.json)", () => {
+    process.env.BADCODE_MEDIA_ROOT = '/mnt/d/badcode-videos'
+    const jack = '/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/songs/Karen/clips/1.mp4'
+    expect(mirrorPath(jack)).toBe(join(mirror, 'karen-music/clips/1.mp4.prov.json'))
+    expect(mirrorPath('/mnt/d/badcode-videos/karen-music/clips/1.mp4')).toBe(mirrorPath(jack))
+  })
 })
 
 describe('madeFiles', () => {

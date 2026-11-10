@@ -11,7 +11,17 @@ desktop.ini
 .DS_Store
 
 # Script outputs a cut script rebuilds in a minute from the clips (Kai 2026-11-09: sync the
-# sources, not the renders). A cut's edl.json and preview.mp4 still go up.
+# sources, not the renders).
+# PREVIEWS NEVER TRAVEL (Jack 2026-11-10, replacing "a cut's preview.mp4 still goes up"): a preview is
+# made from the sources + the edl, so each machine makes its own. One 4-minute preview is ~250 MB.
+# The edl.json, the clips and the .prproj still go up: they are what a preview is made FROM.
+# Anything a script writes only for looking at goes in a folder named _local/ (never synced either).
+preview*.mp4
+*-preview.mp4
+**/preview*.mp4
+**/*-preview.mp4
+_local/**
+**/_local/**
 cut-*/segs/**
 cut-*/picture.mp4
 **/cut-*/segs/**
