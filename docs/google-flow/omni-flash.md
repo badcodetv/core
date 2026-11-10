@@ -2716,3 +2716,13 @@ kaleidoscope, newsprint dots, op-art rings, double exposure, melting). Record: `
 - **A silent block:** a kaleidoscope of hands counting banknotes, snapping rubber bands, a card game, a rat: no candidate
   3×. "The whole pattern turns slowly clockwise; the lamp glows steady" landed first time. Cause not isolated.
 - Rough flash check (whole-frame brightness swings) passed on all 33, including three fires prompted "glow steadily".
+
+### 2026-11-10: a balaclava figure in front of police and an ambulance never animates `[single case, cause unverified]`
+
+Priority Lane short (`docs/stories/shorts/priority-lane/`), Omni 1.2 Flash, Frames, 9:16. The still `REP1-a` (a TV
+reporter in the BadCode balaclava, mic in hand, an ambulance and a police motorcycle outrider soft behind him) gave **no clip
+in five submissions across two prompts**, while the other three stills from the same scene (police outrider + ambulance,
+no mask; ambulance interior; minister in a car) all animated first time. Removing "masked", "police" and "siren" from the
+motion prompt changed nothing, so the trigger is probably **the still**: a face-covered figure with police and an
+emergency vehicle. Bank Robbery's balaclava gang (no police in frame) animated fine. Untested next step: the same reporter
+with no police or emergency vehicle in the still.

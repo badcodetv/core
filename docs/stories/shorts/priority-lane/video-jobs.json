@@ -1,0 +1,33 @@
+{
+ "anim_picks": {
+  "1": "a",
+  "2": "b",
+  "3": "a",
+  "4": "a",
+  "5": "a"
+ },
+ "skip": [
+  3,
+  5
+ ],
+ "extra": [
+  {
+   "key": "03-r2",
+   "n": 3,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "03 failed three times with no clip (silent block suspected: masked figure + police words); rewritten without 'masked', 'police' or 'siren'",
+   "motion": "The camera does not move. The news presenter in the knitted hood holds the microphone below his chin and stays composed, giving small, measured nods as he reports to camera. Behind him, softly out of focus, headlights and red tail lights of a line of dark cars sweep slowly through the junction, and blue lights pulse in the rain. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain pattering on a jacket, tyres hissing on wet tarmac. No dialogue, no music. The camera does not move. Thanks."
+  },
+  {
+   "key": "05-r2",
+   "n": 5,
+   "still": "REP1-a",
+   "duration": 8,
+   "character": null,
+   "why": "05 failed three times with no clip; rewritten without 'masked', 'police' or 'siren'",
+   "motion": "The camera does not move. The news presenter in the knitted hood stands perfectly still with the microphone, facing the lens. Behind him, softly out of focus, the yellow ambulance with its blue lights pulsing finally pulls away through the junction and out of frame. Rain falls steadily. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. Sound: rain, an ambulance engine pulling away. No dialogue, no music. The camera does not move. Thanks."
+  }
+ ]
+}

@@ -5,3 +5,5 @@
 - **2026-11-10, stills round 1 (clean room):** all 12 made (Jack said carry on after a pause); voting page https://claude.ai/artifact/MeDp9CuYEEMhUQt9mtYxNa
 - **2026-11-10, Jack, stills round 1:** This on OUT1-c (long lens through the motorcade), AMB1-a (from the back of the ambulance), REP1-a (reporter piece to camera), MIN1-b (lemon curd on the armrest). Every shot has a pick; storyboard written (5 frames, dialogue 1D placed as a draft).
 - **2026-11-10, Jack:** "1d is cool". Dialogue locked as 1D; written to `script.json`.
+- **2026-11-10, Jack, animation picks:** 1a (motorcade slides through), 2b (only the light changes), 3a (reporter to camera), 4a (minister says the line, muted and lip-synced to the AI Studio voice), 5a (ambulance pulls away behind the reporter).
+- **2026-11-10:** clips 01, 02, 04 made and checked (pass). Reporter clips 03 and 05 (still REP1-a) never generated: 3 submissions with the first prompts, 2 more with reworded ones. Likely a silent block on the still itself (balaclava + police + ambulance). Logged in docs/google-flow/omni-flash.md.
