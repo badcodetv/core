@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7-0-r24-muted.mp4",
+ "made": "2026-11-10T16:26:35+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "ffmpeg -c:v copy -an",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-raw/L07-0-b.mp4",
+ "why": "round 24 (Kai r23 at4169): Sandra on screen for 'Five years underground, and you still can't put a seat down.'; muted twin of the existing Omni take L07-0-b, the clip whose mouth best fits a cast-voice take word by word"
+}

@@ -1,0 +1,8 @@
+{
+  "at": 1794325415415,
+  "beat": "0",
+  "by": "u_Q_BI0S_5SSCr2rsYmwsTJQ",
+  "key": "at3500",
+  "note": "And then here it feels like we don't actually animate to the end position. We should be seeing the cutoff point perfectly in this moment. It feels like we're still angling the camera slightly to the right. And then later on, we end up angling the camera perfectly perpendicular to where all of the beats cut off. So we need to be much more careful about angling the camera. We just need a final resting place and this should be it now. And it feels like this is the penultimate resting place and we need to simplify this.",
+  "tc": "00:02:25:20"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/array-p1-c.jpg",
+ "made": "2026-11-10T16:08:50.472Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the image for the tracked military robot: a close-up of the back of its sensor turret, where a ring of small black microphone pods on short stalks has just unfolded upwards like the petals of a flower, each pod angled towards the right of frame. Fine beads of rain on the olive armour, a thin antenna whip. Behind, out of focus, grey overcast sky and a line of green downs. Muted natural colour, shallow depth of field, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "266a62f5-a423-4b9b-ab41-ede70893b1ae"
+}

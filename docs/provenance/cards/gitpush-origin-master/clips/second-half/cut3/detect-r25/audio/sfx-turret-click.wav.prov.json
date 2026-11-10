@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/audio/sfx-turret-click.wav",
+ "made": "2026-11-10T18:19:26+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py --round 25",
+ "why": "GPOM A r25 detect bridge, 1+2+2 s (Kai at5176): sfx turret-click (sources in detect-spec.json; fs824121 CC0 derjuli)"
+}

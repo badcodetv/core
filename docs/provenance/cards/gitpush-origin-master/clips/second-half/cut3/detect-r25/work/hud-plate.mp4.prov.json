@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/hud-plate.mp4",
+ "made": "2026-11-10T18:19:24+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py --round 25 (zoompan, noise 6)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/hud-p1-a.jpg",
+ "why": "GPOM A r25 detect bridge, 1+2+2 s (Kai at5176): HUD plate 2.6 s"
+}

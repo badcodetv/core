@@ -98,3 +98,9 @@ Kai: *"I think we've got one. Let's try this one."* → https://suno.com/song/4f
 round 1 `whole-school-upright-piano` (the take he'd heard; his grime note came after the same take). Recorded,
 18.4 s. The remaining queue (r1 treble / small girl / Edwardian, all of round 2) was stopped unrun: round 2 is
 gated and ready if wanted.
+
+## 2026-11-10: the tear gets a drum and bass drop
+
+Kai: after the hymn, *"a really heavy drum and bass drop… no lyrics, nothing else… a heavy loop just to drop in after.
+I want to keep the music we just recorded and drop the drum and bass as a separate track in Premiere"*; the last scene
+is the gang ripping up the rules to it, *"the chaos refrain"*; the short may run past 20 s. Round `../../songs/dnb-r1`.

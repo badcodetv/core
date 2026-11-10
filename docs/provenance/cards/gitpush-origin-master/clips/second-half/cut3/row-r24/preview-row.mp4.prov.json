@@ -1,0 +1,13 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/preview-row.mp4",
+ "made": "2026-11-10T16:28:29+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/row-r24/build_row.py",
+ "why": "round 24: stand-alone preview of the row (beats 6-7), picture + voices + room tone",
+ "inputs": {
+  "spec": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/row-spec.json"
+ }
+}

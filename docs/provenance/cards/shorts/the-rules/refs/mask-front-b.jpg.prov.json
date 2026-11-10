@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/refs/mask-front-b.jpg",
+ "made": "2026-11-10T18:43:39.487Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Use the provided logo as the exact design for a knitted balaclava. Front-on head-and-shoulders photograph of one person wearing a charcoal grey ribbed knitted balaclava that covers the whole head, with no eye, nose or mouth holes. On the front of the face, a thick white yarn ring is stitched as a large circle framing the face, exactly like the white ring in the logo. Inside that ring, in the upper right of the picture (the wearer's left eye, at about 2 o'clock), a solid red felt triangle with softly rounded corners is sewn on, pointing DOWN, its flat edge at the top and its point at the bottom, the same size, shape and position relative to the ring as the red triangle in the logo. Black knitted gloves, a dark collar closed up to the chin, no skin showing anywhere. Plain mid-grey studio backdrop, soft even light, sharp focus on the knit, documentary realism. Nothing else in the frame.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/logo.png",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/logo.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 2
+ },
+ "source_id": "d3fec3ce-e83d-406b-861a-33c3276e7d74"
+}

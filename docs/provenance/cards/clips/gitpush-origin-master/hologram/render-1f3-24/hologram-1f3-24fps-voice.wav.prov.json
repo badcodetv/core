@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f3-24/hologram-1f3-24fps-voice.wav",
+ "made": "2026-11-10T17:47:21+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-10-gpom-hologram-1f3/finish.py (ffmpeg adelay+amix)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+ "why": "hologram 1F3 (Kai round 23 timeline notes, 10 Nov): new f01/f03/f05/f07a words, f02 re-voiced, f04b added; brighter stack outlines, a real INDIVIDUAL figure, no blur artefacts in the cloud, two cat nodes visited alive then dead from Did you know, the one string under f04b, into the river sooner, one square-on resting view that rises for the time machine; f06 final",
+ "inputs": {
+  "page": "design/2026-11-10-gpom-hologram-1f3/index.html",
+  "builder": "design/2026-11-10-gpom-hologram-1f3/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f3.json",
+  "stack": "design/2026-11-10-gpom-hologram-1f3/stack.js"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f3-24/edit.json"
+ }
+}

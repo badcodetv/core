@@ -1,0 +1,857 @@
+<meta charset="utf-8">
+<title>Maddie's Hologram 1F4</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a cinema-proportioned viewer as the hero, a scrub bar under it like an edit suite, the controls, then a bench of sliders for the commit itself. Single dark look on purpose. */
+:root{
+  --ground:#17181a;
+  --panel:#202124;
+  --line:#33343a;
+  --ink:#ebe6dc;
+  --muted:#9d988f;
+  --gold:#e8b04a;        /* gold = people, the only warm colour */
+  --f-title:"Young Serif",Georgia,serif;
+  --f-ui:"Schibsted Grotesk",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+html,body{background:var(--ground);color:var(--ink)}
+body{font-family:var(--f-ui);font-size:15px;line-height:1.55}
+.wrap{max-width:1240px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+header{display:flex;flex-direction:column;gap:6px;max-width:72ch}
+h1{font-family:var(--f-title);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.1;margin:0;text-wrap:balance}
+header p{margin:0;color:var(--muted)}
+.stage{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;background:#000;border-radius:4px;overflow:hidden;outline:1px solid var(--line)}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.tags{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.sub{position:absolute;left:50%;bottom:6%;transform:translateX(-50%);width:min(84%,60ch);text-align:center;font-size:clamp(.8rem,1.5vw,1.05rem);color:#f4efe6;text-shadow:0 1px 3px #000,0 0 12px #000}
+.tag{position:absolute;left:0;top:0;transition:opacity .6s;will-change:transform}
+.tag span{position:absolute;left:0;bottom:0;transform:translate(-50%,-46px);white-space:nowrap;font-size:clamp(.68rem,1.25vw,.95rem);color:#f3efe7;letter-spacing:.01em;text-shadow:0 0 6px rgba(0,0,0,.9),0 0 14px rgba(0,0,0,.8)}
+.tag span time{color:var(--muted);margin-right:.45em;font-variant-numeric:tabular-nums}
+.tag.term span{font-family:var(--f-mono);color:#dfe8f0;text-shadow:0 0 8px rgba(160,200,230,.8)}
+.tag.term span::after{content:"▍";animation:blink 1s steps(1) infinite;margin-left:2px}
+@keyframes blink{50%{opacity:0}}
+.scrub{display:flex;gap:12px;align-items:center}
+.scrub input{flex:1;min-width:0;accent-color:var(--gold)}
+.scrub output{font-family:var(--f-mono);font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;min-width:7ch;text-align:right}
+.controls{display:flex;flex-direction:column;gap:10px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.row .lbl{color:var(--muted);font-size:.86rem;min-width:5.5rem}
+button{font:inherit;font-size:.9rem;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:7px 13px;cursor:pointer}
+button:hover{border-color:#55565d}
+button:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+button[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+button.play{border-color:var(--gold);color:var(--gold);min-width:6.5rem}
+button.play[aria-pressed="true"]{background:var(--gold);color:var(--ground)}
+.bench{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:14px}
+.bench h2{font-family:var(--f-title);font-weight:400;font-size:1.2rem;margin:0}
+.bench > p{margin:0;color:var(--muted);font-size:.92rem;max-width:72ch}
+.groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px 28px}
+fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+legend{font-weight:600;font-size:.9rem;margin-bottom:4px;padding:0}
+.sl{display:grid;grid-template-columns:7.5rem minmax(0,1fr) 3.4rem;gap:10px;align-items:center;font-size:.86rem}
+.sl label{color:var(--muted)}
+.sl input[type=range]{width:100%;accent-color:var(--gold)}
+.sl input[type=color]{width:100%;height:26px;border:1px solid var(--line);background:var(--panel);border-radius:3px;padding:1px}
+.sl output{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.actions .msg{color:var(--muted);font-size:.86rem}
+#json{width:100%;min-height:5.5rem;font-family:var(--f-mono);font-size:.78rem;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:8px;resize:vertical}
+.note{max-width:72ch;color:var(--muted);font-size:.9rem;border-left:2px solid var(--gold);padding-left:12px;margin:0}
+.note b{color:var(--ink);font-weight:500}
+.editor{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.edhead{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
+.editor h2,.bench summary h2{font-family:var(--f-title);font-weight:400;font-size:1.2rem;margin:0;display:inline}
+.edhelp{margin:0;color:var(--muted);font-size:.9rem;max-width:80ch}
+.msg{color:var(--muted);font-size:.86rem}
+.tlwrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:#121315}
+.tl{position:relative;min-width:100%;padding:0 0 6px 0;user-select:none}
+.ruler{position:relative;height:22px;margin-left:80px;border-bottom:1px solid var(--line);cursor:pointer}
+.ruler span{position:absolute;top:3px;font-family:var(--f-mono);font-size:.7rem;color:var(--muted);transform:translateX(-50%)}
+.trk{display:flex;align-items:stretch;height:44px;border-bottom:1px solid #26272b}
+.tn{flex:0 0 80px;display:flex;align-items:center;padding-left:10px;font-size:.8rem;color:var(--muted)}
+.lane{position:relative;flex:1}
+.blk{position:absolute;top:6px;bottom:6px;background:#2a2c33;border:1px solid #3d4049;border-radius:3px;overflow:hidden;font-size:.72rem;color:#cfd3dc;padding:0 10px 0 6px;display:flex;align-items:center;white-space:nowrap}
+.blk span{overflow:hidden;text-overflow:ellipsis}
+.hdl{position:absolute;right:0;top:0;bottom:0;width:8px;cursor:ew-resize;background:rgba(232,176,74,.35)}
+.hdl:hover{background:var(--gold)}
+.clip{position:absolute;top:6px;bottom:6px;background:#1d3a66;border:1px solid #3f7bff;border-radius:3px;font-size:.7rem;color:#e5edff;padding:0 6px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;cursor:grab;display:flex;align-items:center}
+.clip.stale{background:#5a3b12;border-color:var(--gold)}
+.clip.sel{outline:2px solid var(--ink)}
+.ph{position:absolute;top:0;bottom:0;left:80px;width:2px;background:var(--gold);pointer-events:none}
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:8px}
+.line{display:grid;grid-template-columns:4.2rem minmax(0,1fr);gap:4px 8px;align-items:start;padding:6px;border:1px solid transparent;border-radius:4px}
+.line.sel{border-color:var(--line);background:var(--panel)}
+.lmeta{font-family:var(--f-mono);font-size:.78rem;padding:5px 6px}
+.line textarea{width:100%;font:inherit;font-size:.88rem;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:6px;resize:vertical}
+.lst{grid-column:2;font-size:.75rem;color:var(--muted)}
+.lst.stale{color:var(--gold)}
+details.bench summary{cursor:pointer;list-style-position:outside}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Maddie's hologram: one decision at a time</h1>
+    <p>The edit, draft 1K. The look is locked; this round is about time. Press Play to hear Maddie with the picture, then drag the blocks and clips below until the pace is right.</p>
+  </header>
+
+  <div class="stage" id="stage">
+    <canvas id="c" aria-label="Live 3D look test of the commit-graph hologram"></canvas>
+    <div class="tags" id="tags"></div>
+    <div class="sub" id="sub"></div>
+  </div>
+
+  <div class="scrub">
+    <button class="play" id="play" aria-pressed="false">Play</button>
+    <input type="range" id="t" min="0" max="40" step="0.01" value="0" aria-label="Time">
+    <output id="tc" for="t">0:00.0</output>
+  </div>
+
+  <section class="editor" aria-labelledby="ed-h">
+    <div class="edhead"><h2 id="ed-h">The edit</h2><span class="msg" id="saved" role="status">Loading the saved edit…</span></div>
+    <p class="edhelp">Drag the right edge of a picture block to give that moment more or less time; everything after it moves along. Drag a voice clip to move it. Click a clip to jump there; edit its words in the list below.</p>
+    <div class="tlwrap"><div class="tl" id="tl">
+      <div class="ruler" id="ruler" title="Click to jump"></div>
+      <div class="trk"><span class="tn">Picture</span><div class="lane" id="pic"></div></div>
+      <div class="trk"><span class="tn">Maddie</span><div class="lane" id="vox"></div></div>
+      <div class="ph" id="ph" aria-hidden="true"></div>
+    </div></div>
+    <div class="lines" id="lines"></div>
+    <div class="actions"><button id="copyEdit">Copy the edit</button><button id="resetEdit">Reset to the first layout</button></div>
+  </section>
+
+  <div class="controls">
+    <div class="row" role="group" aria-label="Jump to">
+      <span class="lbl">Jump to</span>
+      <button data-jump="0">Decisions arrive</button>
+      <button data-jump="1">The choices</button>
+      <button data-jump="2">The river</button>
+      <button data-jump="3">The revert</button>
+    </div>
+    <div class="row"><span class="lbl">Subtitles</span><label style="display:flex;gap:6px;align-items:center;font-size:.88rem"><input type="checkbox" id="subs" checked> Show them while we edit. The film has none: YouTube adds its own captions.</label></div>
+    <div class="row" role="group" aria-label="Choices style">
+      <span class="lbl">Choices as</span>
+      <button data-fs="cloud" aria-pressed="true">A cloud of maybes</button>
+      <button data-fs="dandelion" aria-pressed="false">A dandelion clock</button>
+      <button data-fs="branches" aria-pressed="false">Forking branches</button>
+    </div>
+    <div class="row" role="group" aria-label="Screen filter">
+      <span class="lbl">Filter</span>
+      <button data-f="0" aria-pressed="false">None</button>
+      <button data-f="2" aria-pressed="true">CRT telly</button>
+      <button data-f="5" aria-pressed="false">16mm film</button>
+      <button data-f="4" aria-pressed="false">Hologram scan</button>
+      <button data-f="3" aria-pressed="false">VHS</button>
+      <button data-f="1" aria-pressed="false">Projector</button>
+    </div>
+  </div>
+
+  <details class="bench">
+    <summary><h2 id="bench-h">The commit bench (look locked)</h2></summary>
+    <p>Tune one commit and everything follows. Colour, glass, ember and string change live; spacing, river and choice counts rebuild when you let go. Your settings are kept in this browser. When you like one, press Copy settings and paste it to Claude.</p>
+    <div class="groups" id="groups"></div>
+    <div class="actions">
+      <button id="copy">Copy settings</button>
+      <button id="reset">Reset to Claude's defaults</button>
+      <span class="msg" id="msg" role="status"></span>
+    </div>
+    <textarea id="json" readonly aria-label="Current settings as text" hidden></textarea>
+  </details>
+
+  <p class="note"><b>Round 7:</b> your round-5 settings are the defaults (the look is locked), and the time machine is a clean half-ellipse. <b>Round 6:</b> the river is a smooth, wide ribbon that meanders gently and narrows into the far past. After you lot went there are no grey beads any more: the strings carry on bare (time passes, nobody commits), and past the end his drafts flicker in and out, never landing. The time machine arcs from there back to just before it went wrong. New on the bench: the colour of the people in the river. The subtitles are still a rough draft.</p>
+</div>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {BokehPass} from 'three/addons/postprocessing/BokehPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+import {Line2} from 'three/addons/lines/Line2.js';
+import {LineMaterial} from 'three/addons/lines/LineMaterial.js';
+import {LineGeometry} from 'three/addons/lines/LineGeometry.js';
+
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = id => document.getElementById(id);
+const canvas=$('c'), stage=$('stage'), tagsEl=$('tags'), subEl=$('sub');
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ss=(a,b,x)=>{const t=clamp((x-a)/(b-a));return t*t*(3-2*t)};
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+const backOut=t=>{const c=1.9;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2)};
+const lerp=THREE.MathUtils.lerp;
+
+/* ---------- the bench: every knob for the commit ---------- */
+const DEFAULTS={tint:'#3f7bff',glass:.63,rough:.06,metal:.22,bead:.68,ember:.3,emberBright:7,emberColor:'#27b070',threadPx:1.6,threadColor:'#d1d1d1',
+  spacing:.46,width:13.7,strands:390,fanStyle:'cloud',fanCount:3750,fanSize:.49,fanSpread:1.97,fanOpacity:.4,riverColor:'#ffb347'};  // Kai's round-5 settings (locked look)
+const KNOBS=[
+  ['The glass bead',[['tint','Glass colour','color'],['glass','See-through',0.05,1,.01,'live'],['rough','Frosting',0,.8,.01,'live'],['metal','Metallic',0,1,.01,'live'],['bead','Bead size',.4,2,.01,'live']]],
+  ['The ember (the person)',[['ember','Ember size',.05,.9,.01,'live'],['emberBright','Ember glow',.5,10,.1,'live'],['emberColor','Ember colour','color']]],
+  ['The string',[['threadPx','Thickness (px)',.4,8,.1,'live'],['threadColor','String colour','color'],['spacing','Gap between beads',.2,1.2,.01,'build']]],
+  ['The choices and the river',[['fanCount','How many maybes',100,4000,50,'build'],['fanSize','Maybe size',.05,1,.01,'live'],['fanSpread','Cloud size',.3,2.5,.01,'live'],['fanOpacity','Maybe opacity',.03,.8,.01,'live'],['width','River width',3,14,.1,'build'],['riverColor','People in the river','color'],['strands','River strands',40,500,10,'build']]]
+];
+let P={...DEFAULTS}; try{Object.assign(P,JSON.parse(localStorage.getItem('gpom-holo-r5')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('gpom-holo-r5',JSON.stringify(P))}catch(e){}};
+
+/* ---------- the timeline: picture segments and Maddie's clips, both editable ---------- */
+const NA=3;
+const SEGS=[['stack','The stack'],['lead','Black'],['bead1','Toast'],['bead2','Sorry'],['bead3','Married'],['open','Maybes open'],['maybes','Not decided'],['pick','The pick'],['settle','Joins'],['toRiver','Into the river'],['river','The river'],['flyDown','Bare string'],['arcDraw','Revert draws'],['arcHold','Awaiting'],['off','Screen off']];
+const MIN={stack:1,lead:.2,bead1:1.2,bead2:.4,bead3:.5,open:2.5,maybes:3,pick:1.8,settle:1.2,toRiver:4.5,river:4,flyDown:6,arcDraw:2.5,arcHold:3,off:1.2};
+const SEG_OF={stackBack:'stack',slot:'stack'};
+const EDIT_1D={"segs": {"stack": 33.84, "lead": 9.51, "bead1": 3.95, "bead2": 4.48, "bead3": 19.02, "open": 2.5, "maybes": 15.15, "pick": 1.8, "settle": 7.49, "toRiver": 3.0, "river": 17.98, "flyDown": 24.47, "arcDraw": 2.5, "arcHold": 3.07, "off": 1.2}, "clips": {"s01": {"start": 0.35, "text": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.", "needsVoice": false}, "s02": {"start": 17.87, "text": "[pull back: the whole stack; beside it an empty outlined slot] Every bit of it's real. But we've worked out there's something missing.", "needsVoice": false}, "s03": {"start": 25.09, "text": "[the slot lights up warm] Consciousness. Yours. It's as fundamental as quarks and leptons.", "needsVoice": false}, "f01": {"start": 31.59, "text": "[the light lands on the string; the first bead lights; Derek at the toaster inside it] Your consciousness and the way you feel drives your decisions, which in turn writes the collective story, one decision at a time. For example: Derek picks toast, not cereal.", "needsVoice": false}, "f02": {"start": 45.32, "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!", "needsVoice": false}, "f03": {"start": 53.91, "text": "[the beads glow] [wistful, a little regretful] We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines. You humans have got a word for it: qualia. [warm] It's what makes you so special.", "needsVoice": false}, "f04": {"start": 69.84, "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.", "needsVoice": false}, "f04b": {"start": 89.9, "text": "[back on the one timeline] And as you make your decisions and write your story, all those maybes settle into what really happens.", "needsVoice": false}, "f05": {"start": 97.99, "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. [pause] It's a storyverse. [pause] And there's only one of them, so it's really important.", "needsVoice": false}, "f06": {"start": 119.72, "text": "[side view; every string stops dead at the cut-off] As you can see, when you lot went away, there were no conscious decisions made any more. And guess what that means for us? No new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.", "needsVoice": false}, "f07a": {"start": 139.77, "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.", "needsVoice": false}}, "exc": [[77.38, 81.51], [81.76, 86.23]], "glow": [53.71, 70.8], "draft": "1F4", "stack": {"labels": ["SOCIETY", "INDIVIDUAL", "BIOLOGY", "CHEMISTRY", "PHYSICS", "MATHEMATICS"], "lay": [4.53, 5.43, 7.45, 9.29, 11.19, 16.51], "quarks": 12.39, "leptons": 13.25, "under": 14.87, "s02": 17.87, "missing": 23.05, "s03": 25.09, "consc": 24.99, "quarks3": 29.33, "depart": 30.84, "fly": 3.0}, "cam": {"back": 2.6, "pin0": 100.79, "pind": 2.2, "out0": 116.12, "rise0": 141.05, "rised": 3.2}, "placeholder": {}, "street": {"b01": "before the hologram, on the street (ends \"Please, let me show you what we found.\"; the hologram cuts in as it finishes)", "b02": "CUT in 1F2 (Kai, 10 Nov)", "f07b": {"after_hologram_ends": 150.46, "note": "back on the street; not on the hologram clock or in voice.wav"}}, "marks": {"layer_society": 4.63, "layer_individual": 5.53, "layer_biology": 7.55, "layer_chemistry": 9.39, "layer_physics": 11.29, "layer_mathematics": 16.61, "quarks_grid": 12.49, "slot_appears": 23.15, "slot_lights": 25.09, "light_leaves": 30.84, "light_lands": 33.84, "toast": 43.45, "sorry": 47.4, "married": 51.88, "cloud_blooms": 70.8, "did_you_know": 77.53, "cat_alive": 79.44, "cat_dead": 84.0, "yet_flash": 88.65, "one_timeline_f04b": 89.9, "to_river": 97.74, "inside_river": 102.99, "leave_river": 116.12, "arrive_square_on": 118.72, "rise": 141.05, "arc_draws": 143.19, "screen_off": 148.76, "TD": 149.96}};   // the 1F4 timing (make.py)
+const CLIPS0=[{"id": "s01", "beat": "stack", "text": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.", "dur": 17.07, "file": "voice/s01.wav"}, {"id": "s02", "beat": "stackBack", "text": "[pull back: the whole stack; beside it an empty outlined slot] Every bit of it's real. But we've worked out there's something missing.", "dur": 6.77, "file": "voice/s02.wav"}, {"id": "s03", "beat": "slot", "text": "[the slot lights up warm] Consciousness. Yours. It's as fundamental as quarks and leptons.", "dur": 6.05, "file": "voice/s03.wav"}, {"id": "f01", "beat": "bead1", "text": "[the light lands on the string; the first bead lights; Derek at the toaster inside it] Your consciousness and the way you feel drives your decisions, which in turn writes the collective story, one decision at a time. For example: Derek picks toast, not cereal.", "dur": 13.43, "file": "voice/f01.wav"}, {"id": "f02", "beat": "bead2", "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!", "dur": 8.09, "file": "voice/f02.wav"}, {"id": "f03", "beat": "bead3", "text": "[the beads glow] [wistful, a little regretful] We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines. You humans have got a word for it: qualia. [warm] It's what makes you so special.", "dur": 15.43, "file": "voice/f03.wav"}, {"id": "f04", "beat": "maybes", "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.", "dur": 19.56, "file": "voice/f04.wav"}, {"id": "f04b", "beat": "settle", "text": "[back on the one timeline] And as you make your decisions and write your story, all those maybes settle into what really happens.", "dur": 7.59, "file": "voice/f04b.wav"}, {"id": "f05", "beat": "river", "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. [pause] It's a storyverse. [pause] And there's only one of them, so it's really important.", "dur": 19.53, "file": "voice/f05.wav"}, {"id": "f06", "beat": "flyDown", "text": "[side view; every string stops dead at the cut-off] As you can see, when you lot went away, there were no conscious decisions made any more. And guess what that means for us? No new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.", "dur": 19.35, "file": "voice/f06.wav"}, {"id": "f07a", "beat": "arcDraw", "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.", "dur": 8.39, "file": "voice/f07a.wav"}];   // draft 1F4: round 25 voice (f03, f05, f06, f07a re-voiced; f02 tail fixed); rest as 1F3 (Gemini TTS, Aoede)
+function defaultEdit(){const e={segs:{},clips:{}}; let cur=0;
+  for(const [id] of SEGS){const cs=CLIPS0.filter(c=>(SEG_OF[c.beat]||c.beat)===id); let off=id.startsWith('bead')?.05:.25;
+    for(const c of cs){e.clips[c.id]={start:+(cur+off).toFixed(2),text:c.text,needsVoice:false}; off+=c.dur+.3}
+    const d=Math.max(MIN[id],cs.length?off+.2:0); e.segs[id]=+d.toFixed(2); cur+=d}
+  return e}
+let ED=defaultEdit(); try{const l=JSON.parse(localStorage.getItem('gpom-holo-edit-1f4')||'null'); if(l) mergeEdit(l)}catch(e){}
+const SUPERSEDED0={c15:"So he's built a time machine. Git revert, he calls it, the nerd. Back to just before it all went wrong.",c11:"Turns out there's only one universe, one story, and you lot were writing it. So it really matters. And so did you."};
+function mergeEdit(d){if(!d) return; for(const [id] of SEGS){const v=d.segs&&d.segs[id]; if(typeof v==='number'&&v>0) ED.segs[id]=v}
+  for(const c of CLIPS0){const v=d.clips&&d.clips[c.id]; if(v){if(typeof v.start==='number') ED.clips[c.id].start=v.start; if(typeof v.text==='string'&&v.text!==(typeof SUPERSEDED0!=='undefined'?undefined:undefined)){ED.clips[c.id].text=v.text; ED.clips[c.id].needsVoice=!!v.needsVoice}}}}
+const S={}, D={}; let TD=0, TB0, TA, TB, TC, TRIV, TFLY, TDRAW, tPick0, beadT=[], JUMPS=[];
+function retime(){let cur=0; for(const [id] of SEGS){S[id]=cur; D[id]=ED.segs[id]; cur+=D[id]} TD=cur;
+  TB0=S.bead1; beadT=[S.bead1,S.bead2,S.bead3]; TA=S.open; TB=S.toRiver; TRIV=D.toRiver; TC=S.flyDown; TFLY=D.flyDown; TDRAW=D.arcDraw;
+  tPick0=S.pick+Math.max(0,D.pick-1.6); JUMPS=[0,S.open,S.toRiver,S.flyDown]}
+mergeEdit(EDIT_1D); try{const l=JSON.parse(localStorage.getItem('gpom-holo-edit-1f4')||'null'); if(l) mergeEdit(l)}catch(e){}
+const EXC=EDIT_1D.exc;   // 1F3 (Kai at2746, at2912): from "Did you know", into the live cat and out, into the dead cat and out
+retime();
+
+/* ---------- renderer and post ---------- */
+const renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'high-performance'});
+renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));
+renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=.85;
+const BG=0x06070b, scene=new THREE.Scene(); scene.background=new THREE.Color(BG); scene.fog=new THREE.FogExp2(BG,.004);
+const camera=new THREE.PerspectiveCamera(35,16/9,.01,500);
+scene.environment=new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(),.04).texture;
+const controls=new OrbitControls(camera,canvas); controls.enableDamping=true; controls.enablePan=false;
+const composer=new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene,camera));
+const bokeh=new BokehPass(scene,camera,{focus:1,aperture:.02,maxblur:.012}); composer.addPass(bokeh);
+const lineScene=new THREE.Scene(); const linePass=new RenderPass(lineScene,camera); linePass.clear=false; composer.addPass(linePass); // the string, unblurred
+composer.addPass(new UnrealBloomPass(new THREE.Vector2(256,256),.26,.3,.92));
+const screen=new ShaderPass({
+  uniforms:{tDiffuse:{value:null},time:{value:0},mode:{value:2},power:{value:1},res:{value:new THREE.Vector2(1,1)}},
+  vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`,
+  fragmentShader:`uniform sampler2D tDiffuse;uniform float time;uniform int mode;uniform float power;uniform vec2 res;varying vec2 vUv;
+  float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+  vec3 tex(vec2 uv){return texture2D(tDiffuse,uv).rgb;}
+  void main(){vec2 uv=vUv;vec2 c=uv-.5;float d=length(c*vec2(1.,.62));float f=floor(time*24.);vec3 col;
+    if(mode==1){float e=smoothstep(.22,.62,d);vec2 off=c*e*.014;col=vec3(tex(uv+off).r,tex(uv).g,tex(uv-off).b);col*=1.+(h(vec2(f,7.))-.5)*.35*e;col*=1.-e*.16*(.5+.5*sin(uv.y*res.y*1.3+time*2.));col*=mix(1.,.3,smoothstep(.3,.78,d));}
+    else if(mode==2){vec2 cc=c*(1.+dot(c,c)*.28);vec2 u=cc+.5;
+      if(u.x<0.||u.x>1.||u.y<0.||u.y>1.){gl_FragColor=vec4(0.,0.,0.,1.);return;}
+      col=vec3(tex(u+vec2(.0012,0.)).r,tex(u).g,tex(u-vec2(.0012,0.)).b)*1.25;col*=.72+.28*sin(u.y*res.y*3.14159*.5);
+      float m=mod(gl_FragCoord.x,3.);col*=vec3(m<1.?1.:.75,m>=1.&&m<2.?1.:.75,m>=2.?1.:.75);
+      col*=1.-smoothstep(.35,.75,length(cc*vec2(1.,.8)))*.8;col*=.97+.03*h(vec2(f,3.));}
+    else if(mode==3){float band=smoothstep(.04,0.,abs(fract(uv.y-time*.07)-.5));uv.x+=sin(uv.y*90.+time*7.)*.0009+band*.012*(h(vec2(f,uv.y))-.5);
+      col=vec3(tex(uv+vec2(.004,0.)).r,tex(uv).g,tex(uv-vec2(.003,0.)).b);float l=dot(col,vec3(.3,.59,.11));col=mix(vec3(l),col,.78);col+=band*.08*h(uv*res+f);col+=(h(uv*res*.5+f)-.5)*.07;col*=mix(1.,.55,smoothstep(.4,.8,d));}
+    else if(mode==4){col=tex(uv)+tex(uv+vec2(.006,0.))*.28;float roll=fract(time*.22);col*=1.+.55*smoothstep(.012,0.,abs(uv.y-(1.-roll)));col*=.88+.12*step(.5,fract(uv.y*res.y*.25));col*=.92+.08*h(vec2(f,9.));col*=mix(1.,.4,smoothstep(.35,.8,d));}
+    else if(mode==5){uv+=vec2(h(vec2(f,1.))-.5,h(vec2(f,2.))-.5)*.0018;col=tex(uv);col=pow(col,vec3(1.08))*vec3(1.04,1.,.95);col*=.96+.06*h(vec2(f,5.));col+=(h(uv*res+fract(time*13.))-.5)*.09;float dust=step(.9994,h(floor(uv*res/3.)+f));col=mix(col,vec3(.05),dust);col*=mix(1.,.45,smoothstep(.3,.82,d));}
+    else {col=tex(uv);col*=mix(1.,.55,smoothstep(.4,.85,d));}
+    if(power<1.){ /* the telly switching on or off: a dot, a line, then the picture */
+      float ph=smoothstep(0.,.35,power), pv=smoothstep(.25,1.,power);
+      float inX=step(abs(vUv.x-.5),max(.002,ph*.5)), inY=step(abs(vUv.y-.5),max(.0025,pv*.5));
+      vec3 glow=vec3(1.)*(1.-pv)*1.6; col=(col*pv+glow)*inX*inY;}
+    gl_FragColor=vec4(col,1.);}`
+});
+const txtCanvas=document.createElement('canvas'), tctx=txtCanvas.getContext('2d'), txtTex=new THREE.CanvasTexture(txtCanvas);
+const textPass=new ShaderPass({uniforms:{tDiffuse:{value:null},tText:{value:txtTex}},
+  vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`,
+  fragmentShader:`uniform sampler2D tDiffuse;uniform sampler2D tText;varying vec2 vUv;void main(){vec4 c=texture2D(tDiffuse,vUv);vec4 t=texture2D(tText,vUv);gl_FragColor=vec4(mix(c.rgb,t.rgb,t.a),1.);}`});
+textPass.uniforms.tText.value=txtTex;   // ShaderPass clones its uniforms: point it back at the live texture
+composer.addPass(textPass); composer.addPass(screen); composer.addPass(new OutputPass());
+scene.add(new THREE.AmbientLight(0xffffff,.08));
+const key=new THREE.DirectionalLight(0xfff1dc,2.4); key.position.set(-6,10,8); scene.add(key);
+const rim=new THREE.DirectionalLight(0x8090ff,.6); rim.position.set(8,2,-6); scene.add(rim);
+
+/* ---------- materials (live) ---------- */
+const glassMat=(extra={})=>new THREE.MeshPhysicalMaterial({roughness:.05,clearcoat:1,clearcoatRoughness:.03,ior:1.5,specularIntensity:1,envMapIntensity:1.6,transparent:true,depthWrite:false,...extra});
+const M={hero:glassMat(), dead:glassMat({color:0x8090a8}), chosen:glassMat(), core:new THREE.MeshBasicMaterial(),
+  thread:new LineMaterial({linewidth:1.6,transparent:true,opacity:.9,depthTest:false}), fan:new THREE.MeshStandardMaterial({color:0x9cc0ff,roughness:.2,transparent:true,opacity:0,depthWrite:false}),
+  fanLine:new THREE.LineBasicMaterial({color:0xcfe0ff,transparent:true,opacity:0,depthWrite:false}),
+  tGold:new THREE.MeshPhysicalMaterial({color:0xffb347,emissive:0xff8c1a,emissiveIntensity:.1,roughness:.1,clearcoat:1,transparent:true,opacity:0}),
+  tDead:new THREE.MeshPhysicalMaterial({color:0x7d8aa0,roughness:.4,clearcoat:.4,transparent:true,opacity:0}),
+  tLine:new THREE.LineBasicMaterial({transparent:true,opacity:0}),
+  bare:new THREE.LineBasicMaterial({transparent:true,opacity:0}),
+  draft:new THREE.MeshStandardMaterial({color:0x9cc0ff,roughness:.2,transparent:true,opacity:0,depthWrite:false}),
+  tip:new THREE.MeshStandardMaterial({color:0x9cc0ff,roughness:.2,transparent:true,opacity:0,depthWrite:false}),
+  arc:new THREE.MeshStandardMaterial({color:0xdfe8f0,emissive:0xcfe2f2,emissiveIntensity:1.4,roughness:.3}),
+  slot:new THREE.MeshStandardMaterial({color:0x6b5320,emissive:0xe8b04a,emissiveIntensity:.35,roughness:.4})};
+function liveMaterials(){
+  M.hero.color.set(P.tint); M.chosen.color.set(P.tint);
+  for(const m of [M.hero,M.chosen]){m.roughness=P.rough; m.metalness=P.metal}
+  M.hero.opacity=P.glass; M.dead.opacity=Math.min(1,P.glass*1.8); M.dead.roughness=Math.max(.3,P.rough); M.dead.metalness=P.metal;
+  M.core.color.set(P.emberColor).multiplyScalar(P.emberBright); M.thread.color.set(P.threadColor); M.thread.linewidth=P.threadPx*Math.max(.5,stage.clientHeight/1080); M.tLine.color.set(P.threadColor); M.bare.color.set(P.threadColor); M.tGold.color.set(P.riverColor); M.tGold.emissive.set(P.riverColor);
+  revealKey='';
+}
+
+/* ---------- the world (rebuilt when spacing, width or counts change) ---------- */
+const BR=.07, TWIST=.035, X0=-40, XTIP=40, XGREY=23, HERO_X=-10;
+const tmp=new THREE.Vector3(), m4=new THREE.Matrix4(), q=new THREE.Quaternion(), sv=new THREE.Vector3();
+/* the river: a smooth, wide ribbon that meanders gently and narrows into the far past. u = across (-1..1), v = up (-1..1) */
+const env=x=>.5+.5*((t=>t*t*(3-2*t))(Math.min(1,Math.max(0,(x-X0)/30))));
+const riverPt=(u,v,x,out)=>{const R=W.R,e=env(x);return out.set(x,1.6*Math.sin(x*.045)+v*R*.62*e,3.2*Math.sin(x*.03+1)+u*R*.62*e)};
+const topPt=(x,out=new THREE.Vector3())=>riverPt(0,1.05,x,out);
+const HERO_U=.93, HERO_V=.5;
+let W=null, revealKey='';
+const beadGeo=new THREE.SphereGeometry(BR,40,28), coreGeo=new THREE.SphereGeometry(BR,16,12), tGeo=new THREE.SphereGeometry(BR,10,8), fanGeo=new THREE.SphereGeometry(BR,12,8);
+
+function build(){
+  if(W) for(const o of [W.thread,W.mine]) if(o){lineScene.remove(o); o.geometry.dispose()}
+  if(W){scene.remove(W.group); W.group.traverse(o=>{if(o.geometry&&![beadGeo,coreGeo,tGeo,fanGeo].includes(o.geometry)) o.geometry.dispose()})}
+  const g=new THREE.Group(), R=P.width, SP=P.spacing; W={group:g,R,SP};
+  /* your string */
+  const nHero=Math.floor((XTIP-X0)/SP), basePos=[], pts=[];
+  const hero=new THREE.InstancedMesh(beadGeo,M.hero,nHero), core=new THREE.InstancedMesh(coreGeo,M.core,nHero), dead=new THREE.InstancedMesh(beadGeo,M.dead,nHero);
+  let ng=0,nd=0,iH=0;
+  for(let i=0;i<nHero;i++){const x=X0+i*SP; riverPt(HERO_U,HERO_V,x,tmp); pts.push(tmp.clone());
+    if(x<XGREY){basePos.push(tmp.clone()); if(Math.abs(x-HERO_X)<SP/2) iH=ng; ng++}
+  }
+  hero.count=core.count=ng; dead.count=nd; g.add(hero,core,dead);
+  const TUBE=Math.round(nHero*4), RAD=1, crv=new THREE.CatmullRomCurve3(pts), flat=[];
+  for(let i=0;i<=TUBE;i++){crv.getPoint(i/TUBE,tmp); flat.push(tmp.x,tmp.y,tmp.z)}
+  const lgeo=new LineGeometry(); lgeo.setPositions(flat); const thread=new Line2(lgeo,M.thread); thread.computeLineDistances(); lineScene.add(thread);
+  Object.assign(W,{hero,core,dead,thread,basePos,ng,iH,TUBE,RAD,nHero});
+  W.xToSeg=x=>clamp(Math.round((x-X0)/((nHero-1)*SP)*TUBE),0,TUBE);
+  W.seg0=W.xToSeg(basePos[iH].x-SP*.6);   // your string starts just before your first decision
+  const mgeo=new LineGeometry(); mgeo.setPositions(flat.slice(W.seg0*3)); W.mine=new Line2(mgeo,M.thread); lineScene.add(W.mine);
+
+  /* everybody else */
+  const r=rng(7), per=Math.floor((XTIP-X0)/SP), S=P.strands;
+  const tGold=new THREE.InstancedMesh(tGeo,M.tGold,S*per), tDead=new THREE.InstancedMesh(tGeo,M.tDead,S*per);
+  const col=new THREE.Color(), lineGeo=[]; let a=0,b=0;
+  const bare=[], gx=[], gp=[], rs=[];
+  for(let s=0;s<S;s++){const an=r()*Math.PI*2, rad=Math.sqrt(.02+r()*.98), su=Math.cos(an)*rad, sv2=Math.sin(an)*rad, tipX=XTIP-r()*1.2, ph=r()*SP, sStart=a;
+    for(let i=0;i<per;i++){const x=X0+i*SP+ph; if(x>tipX)break; riverPt(su,sv2,x,tmp);
+      const p=new THREE.Vector3(); if(i>0) riverPt(su,sv2,x-SP,p);
+      if(x<XGREY){m4.compose(tmp,q,sv.setScalar(P.bead)); tGold.setMatrixAt(a,m4); col.setHSL(.09+r()*.03,.5,.75+r()*.25); tGold.setColorAt(a,col); gx.push(x); gp.push(tmp.x,tmp.y,tmp.z); a++;
+        if(i%3===0&&i>0){riverPt(su,sv2,x-3*SP,p); lineGeo.push(p.x,p.y,p.z,tmp.x,tmp.y,tmp.z)}}
+      else if(i>0) bare.push(p.x,p.y,p.z,tmp.x,tmp.y,tmp.z);   // after you went: string, no beads
+    }
+    /* everybody commits on their own clock: each strand starts some way behind the cut-off and catches up in random steps */
+    const cr=rng(1000+s), lag=4+cr()*16, n=Math.ceil(lag/SP), u=[]; for(let k=0;k<n;k++) u.push(cr()); u.sort((x,y)=>x-y);
+    rs.push({start:sStart,count:a-sStart,su,sv:sv2,lag,u,ph:cr()*6.283})}
+  const NT=3, tips=new THREE.InstancedMesh(fanGeo,M.tip,S*NT); g.add(tips);
+  Object.assign(W,{gx:new Float32Array(gx),gp:new Float32Array(gp),rs,tips,NT,riverKey:''});
+  W.daysAnchor=topPt(XGREY-.4); W.draftAnchor=topPt(XTIP+1.5).add(new THREE.Vector3(0,3.4,0));
+  const bg2=new THREE.BufferGeometry(); bg2.setAttribute('position',new THREE.Float32BufferAttribute(bare,3)); const tBare=new THREE.LineSegments(bg2,M.bare); g.add(tBare); W.tBare=tBare;
+  /* his drafts: maybes flickering past the end, never landing */
+  const dr2=rng(19), ND=2600, dpos=[], dph=[];
+  for(let i=0;i<ND;i++){const an=dr2()*Math.PI*2, rad=Math.sqrt(dr2())*1.15, x=XTIP-1.5+Math.pow(dr2(),.8)*7; dpos.push(riverPt(Math.cos(an)*rad,Math.sin(an)*rad,x,new THREE.Vector3()).add(new THREE.Vector3(0,2.2,0))); dph.push([dr2()*6.283,.6+dr2()*2.2])}
+  const drafts=new THREE.InstancedMesh(fanGeo,M.draft,ND); g.add(drafts); Object.assign(W,{drafts,dpos,dph});
+  tGold.count=a; tDead.count=b; const lg=new THREE.BufferGeometry(); lg.setAttribute('position',new THREE.Float32BufferAttribute(lineGeo,3));
+  const tLine=new THREE.LineSegments(lg,M.tLine); g.add(tGold,tDead,tLine); Object.assign(W,{tGold,tDead,tLine});
+
+  /* the choices */
+  buildFan(g);
+
+  /* the revert arc and its empty gold-shaped slot */
+  /* a clean half-ellipse from the empty end back to just before it went wrong */
+  const A=topPt(XTIP-1), B=topPt(XGREY-3), H=7+R*.1, arcPts=[];
+  for(let i=0;i<=64;i++){const u=i/64; arcPts.push(A.clone().lerp(B,u).add(new THREE.Vector3(0,H*Math.sin(Math.PI*u),0)))}
+  const arcCurve=new THREE.CatmullRomCurve3(arcPts);
+  const arc=new THREE.Mesh(new THREE.TubeGeometry(arcCurve,200,.06,8),M.arc), slot=new THREE.Mesh(new THREE.TorusGeometry(.5,.04,10,48),M.slot);
+  slot.position.copy(arcCurve.getPoint(.5)); g.add(arc,slot); Object.assign(W,{arc,slot,arcCurve,arcN:arc.geometry.index.count});
+
+  /* dust in the lamp light, around your first decisions */
+  const dr=rng(3), DN=900, dp=new Float32Array(DN*3), h0=basePos[iH];
+  for(let i=0;i<DN;i++){dp[i*3]=h0.x+(dr()-.2)*6; dp[i*3+1]=h0.y+(dr()-.5)*2.4; dp[i*3+2]=h0.z+(dr()-.5)*2.6}
+  const dg=new THREE.BufferGeometry(); dg.setAttribute('position',new THREE.BufferAttribute(dp,3));
+  W.dust=new THREE.Points(dg,new THREE.PointsMaterial({color:0xfff0d8,size:.007,map:dot(),transparent:true,opacity:.5,depthWrite:false,blending:THREE.AdditiveBlending})); g.add(W.dust);
+
+  /* the shots scale with the river */
+  const rc=riverPt(0,0,6,new THREE.Vector3()); W.RIVER={pos:rc.clone().add(new THREE.Vector3(-52,R*.9+4,R*3)),tgt:rc};
+  const c0=riverPt(0,0,XGREY+4.5,new THREE.Vector3()), DC=R*2.3+7; W.CUT={pos:c0.clone().add(new THREE.Vector3(0,.6,DC)),tgt:c0.clone()};   // 1F3: square-on, perpendicular to the strands
+  const ac=c0.clone().add(new THREE.Vector3(0,H*.78,0)); W.ARC={pos:ac.clone().add(new THREE.Vector3(0,.6,DC*1.22)),tgt:ac};   // risen straight up (and a touch back) so the arc has room
+  /* 1F3: W.CUT is set beside W.ARC (square-on) */   // the clean cut-off, seen from above
+  W.MID=riverPt(0,0,8,new THREE.Vector3()).add(new THREE.Vector3(0,R*.6+2,R*1.7));
+  scene.add(g); revealKey=''; stackBuild();
+}
+let dotTex=null; function dot(){if(dotTex) return dotTex; const c=document.createElement('canvas');c.width=c.height=64;const x=c.getContext('2d');const gr=x.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.4,'rgba(255,255,255,.35)');gr.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=gr;x.fillRect(0,0,64,64);return dotTex=new THREE.CanvasTexture(c)}
+
+function buildFan(g){
+  const n=Math.round(P.fanCount), fr=rng(11), off=[], par=[]; // par: -1 = the last decision, otherwise the index of the parent maybe
+  if(P.fanStyle==='cloud'){
+    for(let i=0;i<n;i++){const th=Math.acos(2*fr()-1), ph=fr()*Math.PI*2, rad=1.75*Math.cbrt(.04+fr()*.96);
+      off.push(new THREE.Vector3(1.95+rad*Math.cos(th),rad*Math.sin(th)*Math.sin(ph),rad*Math.sin(th)*Math.cos(ph))); par.push(fr()<.1?-1:-2)}  // -2 = no thread
+  } else if(P.fanStyle==='dandelion'){
+    const ga=Math.PI*(3-Math.sqrt(5));
+    for(let i=0;i<n;i++){const y=1-(i/(n-1))*1.15, rr=Math.sqrt(Math.max(0,1-y*y)), th=ga*i, R=2.4+(fr()-.5)*.25;
+      off.push(new THREE.Vector3(y*R+.2,Math.sin(th)*rr*R,Math.cos(th)*rr*R)); par.push(-1)}
+  } else {
+    const n1=16, kids=Math.max(1,Math.floor((n-n1)/n1));
+    for(let i=0;i<n1;i++){const a=i/n1*Math.PI*2+fr()*.3, c=.55+fr()*.35; off.push(new THREE.Vector3(1.1,Math.sin(a)*c,Math.cos(a)*c)); par.push(-1)}
+    for(let i=0;i<n1;i++) for(let k=0;k<kids&&off.length<n;k++){const p=off[i], a=fr()*Math.PI*2, c=fr()*1.1;
+      off.push(new THREE.Vector3(p.x+1.2+fr()*1.6,p.y*2.1+Math.sin(a)*c,p.z*2.1+Math.cos(a)*c)); par.push(i)}
+  }
+  let CH=0, best=1e9; const want=new THREE.Vector3(1.4,.55,.45);   // the one that gets picked: up and to the right
+  off.forEach((o,i)=>{const d=o.distanceToSquared(want); if(d<best){best=d;CH=i}});
+  const fan=new THREE.InstancedMesh(fanGeo,M.fan,off.length);
+  const nl=par.filter(p=>p!==-2).length, lgeo=new THREE.BufferGeometry(); lgeo.setAttribute('position',new THREE.BufferAttribute(new Float32Array(Math.max(1,nl)*6),3));
+  const lines=new THREE.LineSegments(lgeo,M.fanLine);
+  const chosen=new THREE.Mesh(beadGeo,M.chosen), chosenCore=new THREE.Mesh(coreGeo,M.core);
+  const near=v=>{let b=1e9,k=0; off.forEach((o,i)=>{const d=o.distanceToSquared(v); if(d<b){b=d;k=i}}); return k};
+  const EXI=[near(new THREE.Vector3(1.35,.75,1.05)),near(new THREE.Vector3(2.35,-.7,1.15))];   // 1F3: the live cat, the dead cat (front of the ball, apart)
+  const flash=new THREE.Sprite(new THREE.SpriteMaterial({map:dot(),color:0xffffff,transparent:true,opacity:0,depthWrite:false,depthTest:false,blending:THREE.AdditiveBlending})); flash.visible=false;
+  g.add(fan,lines,chosen,chosenCore,flash); Object.assign(W,{fan,fanLines:lines,fanOff:off,fanPar:par,CH,chosen,chosenCore,EXI,flash}); fan.frustumCulled=lines.frustumCulled=flash.frustumCulled=false;
+}
+
+let GLOW=1;   // 1F: >1 swells the embers of beads 1-3 (f03, qualia)
+function reveal(lo,hi,pop){ // your string: show decisions lo..hi, the last one popping in
+  const k=lo+'|'+hi+'|'+pop.toFixed(3)+'|'+P.bead+'|'+P.ember+'|'+GLOW.toFixed(3); if(k===revealKey) return; revealKey=k;
+  for(let i=0;i<W.ng;i++){const s=(i<lo||i>hi)?0:(i===hi?pop:1);
+    m4.compose(W.basePos[i],q,sv.setScalar(s*P.bead)); W.hero.setMatrixAt(i,m4);
+    m4.compose(W.basePos[i],q,sv.setScalar(s*P.bead*P.ember*(i>=W.iH&&i<W.iH+NA?GLOW:1))); W.core.setMatrixAt(i,m4)}
+  W.hero.instanceMatrix.needsUpdate=W.core.instanceMatrix.needsUpdate=true;
+}
+
+/* ---------- 1F: media inside beads 1-3 (a still or a clip on a disc in the glass; empty unless BEAD_MEDIA is set) ---------- */
+const BEAD_MEDIA=Object.assign({},window.BEAD_MEDIA_OVERRIDE||{});
+const MEDIA=[]; let featherTex=null;
+function feather(){if(featherTex) return featherTex; const c=document.createElement('canvas'); c.width=c.height=256; const x=c.getContext('2d'), g=x.createRadialGradient(128,128,0,128,128,128); g.addColorStop(0,'#fff'); g.addColorStop(.86,'#fff'); g.addColorStop(1,'#000'); x.fillStyle=g; x.fillRect(0,0,256,256); return featherTex=new THREE.CanvasTexture(c)}
+function fitCover(tex,w,h){const a=w/h; tex.userData.base=[a>1?1/a:1,a>1?1:a]; tex.repeat.set(...tex.userData.base); tex.offset.set((1-tex.repeat.x)/2,(1-tex.repeat.y)/2); tex.needsUpdate=true}
+function pushIn(tex,z){const b=tex.userData.base; if(!b) return; tex.repeat.set(b[0]/z,b[1]/z); tex.offset.set((1-tex.repeat.x)/2,(1-tex.repeat.y)/2)}
+const CATS=[];
+function catInit(){for(const [k,m] of Object.entries(BEAD_MEDIA)){if(!/^c\d$/.test(k)||!m||!m.src) continue; const o={j:+k.slice(1),m}; let tex;
+    o.ready=new Promise(r=>{tex=new THREE.TextureLoader().load(m.src,t=>{fitCover(t,t.image.width,t.image.height); r()},undefined,()=>{console.error('cat media failed',m.src); r()})});
+    tex.colorSpace=THREE.SRGBColorSpace; tex.minFilter=THREE.LinearFilter; tex.generateMipmaps=false; o.tex=tex;
+    o.mat=new THREE.MeshBasicMaterial({map:tex,alphaMap:feather(),transparent:true,opacity:0,depthWrite:false,depthTest:false,toneMapped:false}); o.mesh=new THREE.Mesh(new THREE.CircleGeometry(1,64),o.mat);
+    o.mesh.visible=false; o.mesh.frustumCulled=false; o.mesh.renderOrder=10; scene.add(o.mesh); CATS.push(o)}}
+function catApply(t){for(const o of CATS){const on=t>TA&&t<tPick0+1.2&&W.EXI; o.mesh.visible=!!on; if(!on) continue;
+    const sp=ss(S.open,S.open+D.open,t), wv=VISIT[o.j]||0; o.mesh.position.copy(W.basePos[W.iH+NA]).addScaledVector(W.fanOff[W.EXI[o.j]],P.fanSpread*sp); o.mesh.quaternion.copy(camera.quaternion);
+    o.mesh.scale.setScalar(Math.max(.001,sp*lerp(o.m.scale||.2,o.m.near||.34,wv)));
+    o.mat.opacity=ss(S.open+.6,S.open+D.open,t)*(1-ss(tPick0,tPick0+1.1,t))*lerp(.85,1,wv); pushIn(o.tex,1+(o.m.push??.04)*wv)}}
+function mediaInit(){catInit(); for(const [j,m] of Object.entries(BEAD_MEDIA)){if(!m||!m.src||/^c/.test(j)) continue; let tex, el=null, ready;
+    if(m.type==='video'||/\.(mp4|webm|mov|m4v)$/i.test(m.src)){el=document.createElement('video'); el.muted=true; el.playsInline=true; el.preload='auto'; el.crossOrigin='anonymous';   // fetched whole into a blob: a server without Range support (python http.server) leaves a video unseekable
+      fetch(m.src).then(r=>{if(!r.ok) throw new Error(r.status); return r.blob()}).then(bl=>{el.src=URL.createObjectURL(bl)}).catch(e=>{console.error('bead media failed',m.src,e); el.dispatchEvent(new Event('error'))});
+      tex=new THREE.VideoTexture(el); ready=new Promise(r=>{const go=()=>{fitCover(tex,el.videoWidth,el.videoHeight); r()}; el.readyState>=2?go():el.addEventListener('loadeddata',go,{once:true}); el.addEventListener('error',()=>{console.error('bead media failed',m.src); r()},{once:true})})}
+    else ready=new Promise(r=>{tex=new THREE.TextureLoader().load(m.src,t=>{fitCover(t,t.image.width,t.image.height); r()},undefined,()=>{console.error('bead media failed',m.src); r()})});
+    tex.colorSpace=THREE.SRGBColorSpace; tex.minFilter=THREE.LinearFilter; tex.generateMipmaps=false;
+    const mat=new THREE.MeshBasicMaterial({map:tex,alphaMap:feather(),transparent:true,opacity:0,depthWrite:false,depthTest:false,toneMapped:false}), mesh=new THREE.Mesh(new THREE.CircleGeometry(1,64),mat);
+    mesh.visible=false; mesh.frustumCulled=false; mesh.renderOrder=10; scene.add(mesh); MEDIA.push({j:+j,m,el,tex,mat,mesh,ready})}}
+function mediaApply(t){for(const o of MEDIA){const tb=beadT[o.j], on=t>=tb&&t<TB+.5; o.mesh.visible=on; if(!on) continue;
+    o.mesh.position.copy(W.basePos[W.iH+o.j]); o.mesh.quaternion.copy(camera.quaternion);
+    o.mesh.scale.setScalar(Math.max(.001,backOut(clamp((t-tb)/.45))*BR*P.bead*(o.m.scale||.85)));
+    o.mat.opacity=ss(tb,tb+.3,t)*(1-ss(TB-.5,TB+.5,t)); o.mat.color.setScalar(1+.45*(GLOW-1));
+    pushIn(o.tex,1+(o.m.push??.05)*clamp((t-tb)/Math.max(1,TB+.5-tb)));
+    if(o.el&&!FILM&&o.el.readyState>=1){const want=Math.min(o.el.duration-.001,Math.max(0,(o.m.offset||0)+t-tb)); if(Math.abs(o.el.currentTime-want)>.15) o.el.currentTime=want}}}
+function mediaLift(v,j){const o=MEDIA.find(o=>o.j===j); if(!o) return v; return v.add(new THREE.Vector3(0,1,0).applyQuaternion(camera.quaternion).multiplyScalar(BR*P.bead*(o.m.scale||.85)*.75))}
+async function mediaSeek(t){   // film mode: step each visible clip to the source frame under t, wait for it, then render
+  for(const o of MEDIA){if(!o.el||!o.mesh.visible) continue; await o.ready; const fps=o.m.fps||24;
+    let want=Math.min(o.el.duration-.5/fps,Math.max(0,(o.m.offset||0)+t-beadT[o.j])); want=(Math.floor(want*fps+1e-6)+.5)/fps;
+    if(Math.abs(o.el.currentTime-want)>1e-4) await new Promise(r=>{o.el.addEventListener('seeked',r,{once:true}); o.el.currentTime=want});
+    if(o.el.readyState<2) await new Promise(r=>o.el.addEventListener('canplay',r,{once:true}));
+    o.tex.needsUpdate=true}}
+
+/* ---------- the materialist stack (1F2, Kai's timeline note, 10 Nov; 1F3: brighter outlines at1044, a real figure for INDIVIDUAL at1097) ----------
+   Six cards on a vertical thread (the same white thread as the string of beads), each a simple emblem with a plain label:
+   SOCIETY > INDIVIDUAL > BIOLOGY > CHEMISTRY > PHYSICS (an atom that opens into the standard model) > MATHEMATICS.
+   The camera goes down it, each card landing on its word; pulls back to the whole stack; an empty dashed card lands beside
+   it on "something missing"; it lights warm on "Consciousness"; then that light drops into the first bead of the string.
+   Every number here is on the film clock (EDIT_1D.stack, from make.py), so film mode records it frame-exact. */
+const STK=EDIT_1D.stack, SC={w:3.0,h:2.0,gap:2.45,slotX:3.9,slotK:4};
+const WARM=new THREE.Color('#ffb347'), COOL=0x9cc0ff, PALE=0xdfe8f0;
+const ST={group:null,lgroup:null,lmats:[],layers:[],slot:null};
+const rrect=(w,h,r,n=8)=>{const pts=[], cs=[[w/2-r,h/2-r,0],[-w/2+r,h/2-r,Math.PI/2],[-w/2+r,-h/2+r,Math.PI],[w/2-r,-h/2+r,Math.PI*1.5]];
+  for(const [cx,cy,a0] of cs) for(let i=0;i<=n;i++){const a=a0+i/n*Math.PI/2; pts.push(cx+Math.cos(a)*r,cy+Math.sin(a)*r,0)} pts.push(pts[0],pts[1],pts[2]); return pts};
+function stackLine(pos,color,px,op,extra={}){const g=new LineGeometry(); g.setPositions(pos);
+  const m=new LineMaterial({color,linewidth:px,transparent:true,opacity:op,depthTest:false,...extra}); m.userData={px,op}; ST.lmats.push(m);
+  const l=new Line2(g,m); l.computeLineDistances(); l.frustumCulled=false; return l}
+function canvasTex(w,h,draw){const c=document.createElement('canvas'); c.width=w; c.height=h; const x=c.getContext('2d'); draw(x,w,h);
+  const t=new THREE.CanvasTexture(c); t.colorSpace=THREE.SRGBColorSpace; t.anisotropy=4; return t}
+function stackBuild(){
+  if(ST.group){scene.remove(ST.group); lineScene.remove(ST.lgroup); scene.remove(ST.light)}
+  ST.lmats=[]; ST.layers=[];
+  const B=W.basePos[W.iH], g=new THREE.Group(), lg=new THREE.Group();
+  ST.C=B.clone().add(new THREE.Vector3(-1.4,16.5,-3.5)); g.position.copy(ST.C); lg.position.copy(ST.C); ST.group=g; ST.lgroup=lg;
+  const reg=(k,m,op)=>{m.transparent=true; m.depthWrite=false; m.userData.op=op; ST.layers[k].mats.push(m); return m};
+  const std=(k,color,op=.95,em=.35)=>reg(k,new THREE.MeshStandardMaterial({color,emissive:color,emissiveIntensity:em,roughness:.3,metalness:.1}),op);
+  const bas=(k,color,op)=>reg(k,new THREE.MeshBasicMaterial({color,toneMapped:false}),op);
+  for(let k=0;k<6;k++){
+    const y=-k*SC.gap, card=new THREE.Group(), em=new THREE.Group(); card.position.set(0,y,0); card.add(em); g.add(card);
+    const L={k,card,em,mats:[],label:STK.labels[k],t:STK.lay[k]}; ST.layers.push(L);
+    L.outline=stackLine(rrect(SC.w,SC.h,.16),0xe2e6ec,1.6,.9); L.outline.position.y=y; lg.add(L.outline);
+    if(k<5){L.spine=stackLine([0,y-SC.h/2,0,0,y-SC.gap+SC.h/2,0],0xe2e6ec,1.7,.95); lg.add(L.spine)}
+    const fill=new THREE.Mesh(new THREE.ShapeGeometry((()=>{const s=new THREE.Shape(), p=rrect(SC.w,SC.h,.16); s.moveTo(p[0],p[1]); for(let i=3;i<p.length;i+=3) s.lineTo(p[i],p[i+1]); return s})()),bas(k,0x0d1626,.55));
+    fill.position.z=-.35; card.add(fill);
+    if(k===0){ /* SOCIETY: a crowd as a network */
+      const r=rng(31), pts=[]; for(let i=0;i<54;i++){const a=r()*Math.PI*2, d=Math.sqrt(r()); pts.push(new THREE.Vector3(Math.cos(a)*d*1.18,Math.sin(a)*d*.72,(r()-.5)*.5))}
+      const dots=new THREE.InstancedMesh(new THREE.SphereGeometry(.055,12,8),std(k,COOL,.95,.5),pts.length); pts.forEach((p,i)=>{m4.compose(p,q,sv.setScalar(.8+((i*7)%5)*.12)); dots.setMatrixAt(i,m4)}); em.add(dots);
+      const seg=[]; pts.forEach((p,i)=>{const nb=pts.map((o,j)=>[o.distanceToSquared(p),j]).sort((a,b)=>a[0]-b[0]).slice(1,3); for(const [,j] of nb) seg.push(p.x,p.y,p.z,pts[j].x,pts[j].y,pts[j].z)});
+      const sg=new THREE.BufferGeometry(); sg.setAttribute('position',new THREE.Float32BufferAttribute(seg,3)); em.add(new THREE.LineSegments(sg,reg(k,new THREE.LineBasicMaterial({color:0xcfe0ff}),.45)))}
+    if(k===1){ /* INDIVIDUAL: a standing human silhouette, bevelled glass with a light rim line (1F3, Kai at1097) */
+      const R1=[[.0,.455],[.048,.45],[.056,.405],[.11,.385],[.185,.36],[.222,.31],[.236,.2],[.246,.06],[.26,-.08],[.272,-.2],[.27,-.265],[.245,-.29],[.222,-.255],[.214,-.13],[.2,-.0],[.188,.12],[.168,.22],
+                [.152,.12],[.14,.02],[.146,-.08],[.162,-.17],[.158,-.33],[.14,-.48],[.126,-.62],[.13,-.7],[.146,-.735],[.13,-.755],[.06,-.755],[.05,-.7],[.05,-.56],[.04,-.38],[.022,-.2],[0,-.185]];
+      const pts=[...R1.map(([x,y])=>new THREE.Vector2(x,y)),...R1.slice(1,-1).reverse().map(([x,y])=>new THREE.Vector2(-x,y))];
+      const sh=new THREE.Shape(); sh.moveTo(pts[0].x,pts[0].y); sh.splineThru(pts.slice(1).concat([pts[0]]));
+      const head=new THREE.Shape(); head.absellipse(0,.585,.098,.118,0,Math.PI*2,false,0);
+      const ex={depth:.05,bevelEnabled:true,bevelThickness:.025,bevelSize:.018,bevelSegments:4,curveSegments:24}, mt=std(k,COOL,.95,.42);
+      for(const g of [new THREE.ExtrudeGeometry(sh,ex),new THREE.ExtrudeGeometry(head,ex)]){g.translate(0,0,-.05); em.add(new THREE.Mesh(g,mt))}
+      const rim=[]; for(const s2 of [sh,head]){const q2=s2.getPoints(40); q2.push(q2[0]); rim.push(q2.flatMap(v=>[v.x,v.y,.06]))}
+      L.fig=rim.map(r=>{const l=stackLine(r,0xeef3fa,1.4,.9); l.position.y=y-.02; lg.add(l); return l});
+      em.position.y=-.02; em.scale.setScalar(1.12)}
+    if(k===2){ /* BIOLOGY: a cell */
+      const mem=new THREE.Mesh(new THREE.TorusGeometry(.8,.03,10,96),std(k,COOL,.95,.6)); mem.scale.set(1.32,.92,1); em.add(mem);
+      const cyto=new THREE.Mesh(new THREE.CircleGeometry(.8,64),bas(k,0x6d8fd0,.16)); cyto.scale.copy(mem.scale); em.add(cyto);
+      const nuc=new THREE.Mesh(new THREE.SphereGeometry(.28,32,20),std(k,0x86a8ff,.85,.35)); nuc.position.set(.22,.06,0); em.add(nuc);
+      const nl=new THREE.Mesh(new THREE.SphereGeometry(.1,16,12),std(k,PALE,.95,.6)); nl.position.set(.27,.1,.2); em.add(nl);
+      const r=rng(41), mt=std(k,0xb9d0ff,.9,.45);
+      for(let i=0;i<6;i++){const m=new THREE.Mesh(new THREE.CapsuleGeometry(.045,.13,4,10),mt); const a=i/6*Math.PI*2+r()*.5, d=.5+r()*.25; m.position.set(Math.cos(a)*d*1.25-.05,Math.sin(a)*d*.8,0); m.rotation.z=r()*3; em.add(m)}
+      const dots=new THREE.InstancedMesh(new THREE.SphereGeometry(.022,8,6),mt,22); for(let i=0;i<22;i++){const a=r()*6.283, d=.25+r()*.6; m4.compose(new THREE.Vector3(Math.cos(a)*d*1.2,Math.sin(a)*d*.75,0),q,sv.setScalar(1)); dots.setMatrixAt(i,m4)} em.add(dots)}
+    if(k===3){ /* CHEMISTRY: a ball-and-stick molecule (a benzene ring) */
+      const cM=std(k,COOL,.97,.35), hM=std(k,PALE,.97,.45), bM=std(k,0xcfe0ff,.9,.3), up=new THREE.Vector3(0,1,0);
+      const stick=(a,b,r)=>{const m=new THREE.Mesh(new THREE.CylinderGeometry(r,r,a.distanceTo(b),10),bM); m.position.copy(a).add(b).multiplyScalar(.5); m.quaternion.setFromUnitVectors(up,b.clone().sub(a).normalize()); em.add(m)};
+      const C=[], Hh=[]; for(let i=0;i<6;i++){const a=i/6*Math.PI*2+Math.PI/6; C.push(new THREE.Vector3(Math.cos(a)*.5,Math.sin(a)*.5,0)); Hh.push(new THREE.Vector3(Math.cos(a)*.9,Math.sin(a)*.9,0))}
+      for(let i=0;i<6;i++){const a=new THREE.Mesh(new THREE.SphereGeometry(.13,24,16),cM); a.position.copy(C[i]); const h=new THREE.Mesh(new THREE.SphereGeometry(.08,16,12),hM); h.position.copy(Hh[i]); em.add(a,h);
+        stick(C[i],C[(i+1)%6],i%2?.026:.042); stick(C[i],Hh[i],.022)}
+      em.rotation.x=-.45; L.spin=.35}
+    if(k===4){ /* PHYSICS: an atom, then the standard model */
+      const atom=new THREE.Group(); em.add(atom); L.atom=atom;
+      const r=rng(53), pM=std(k,0xff9b8a,.95,.4), nM=std(k,PALE,.95,.35);
+      for(let i=0;i<9;i++){const m=new THREE.Mesh(new THREE.SphereGeometry(.075,16,12),i%2?pM:nM); m.position.set((r()-.5)*.2,(r()-.5)*.2,(r()-.5)*.2); atom.add(m)}
+      const oM=std(k,0xcfe0ff,.7,.6), eM=bas(k,0xffffff,1); L.el=[];
+      for(let i=0;i<3;i++){const o=new THREE.Group(); o.rotation.set(Math.PI/2+(i-1)*.5,0,i*Math.PI/3); o.scale.set(1.25,.85,1);
+        o.add(new THREE.Mesh(new THREE.TorusGeometry(.75,.012,6,128),oM)); const e=new THREE.Mesh(new THREE.SphereGeometry(.045,12,8),eM); o.add(e); L.el.push([e,i*2.1,1.1+i*.25]); atom.add(o)}
+      /* the standard model: three planes, quarks / leptons / force carriers, each lit on its own word */
+      const SYM=[[['u','','up'],['c','','charm'],['t','','top'],['g','','gluon'],['H','','Higgs']],[['d','','down'],['s','','strange'],['b','','bottom'],['γ','','photon']],
+                 [['e','','electron'],['μ','','muon'],['τ','','tau'],['Z','','Z boson']],[['ν','e','e neutrino'],['ν','μ','μ neutrino'],['ν','τ','τ neutrino'],['W','','W boson']]];
+      const GW=1280, GH=1000, cell=218, gp=22, ox=(GW-(5*cell+4*gp))/2, oy=(GH-(4*cell+3*gp))/2;
+      const grp=(i,j)=>j<3?(i<2?0:1):2, COL=['#8fb4ff','#8fe0b8','#ffb0a0'];
+      const plane=gi=>{const tex=canvasTex(GW,GH,(x)=>{x.textAlign='center'; x.textBaseline='middle';
+          SYM.forEach((row,i)=>row.forEach(([s,sub,name],j)=>{if(grp(i,j)!==gi&&!(gi===2&&j===4)) return; const c=gi===2&&j===4?'#ffd27a':COL[gi], X=ox+j*(cell+gp), Y=oy+i*(cell+gp);
+            x.fillStyle=c+'26'; x.strokeStyle=c; x.lineWidth=5; x.beginPath(); x.roundRect(X,Y,cell,cell,26); x.fill(); x.stroke();
+            x.fillStyle='#f3efe7'; x.font='500 112px "Schibsted Grotesk", system-ui, sans-serif'; const sw=x.measureText(s).width; x.fillText(s,X+cell/2-(sub?18:0),Y+cell*.44);
+            if(sub){x.font='500 58px "Schibsted Grotesk", system-ui, sans-serif'; x.fillText(sub,X+cell/2+sw/2+4,Y+cell*.56)}
+            x.fillStyle=c; x.font='400 30px "Schibsted Grotesk", system-ui, sans-serif'; x.fillText(name,X+cell/2,Y+cell*.83)}))});
+        const m=new THREE.Mesh(new THREE.PlaneGeometry(2.62,2.05),bas(k,0xffffff,1)); m.material.map=tex; m.material.toneMapped=false; m.position.z=.02; em.add(m); return m};
+      L.grid=[plane(0),plane(1),plane(2)]}
+    if(k===5){ /* MATHEMATICS: equations on a grid */
+      const tex=canvasTex(1280,860,(x,Wd,Hd)=>{x.strokeStyle='rgba(159,186,230,.22)'; x.lineWidth=2; for(let i=0;i<=Wd;i+=64){x.beginPath(); x.moveTo(i,0); x.lineTo(i,Hd); x.stroke()} for(let j=0;j<=Hd;j+=64){x.beginPath(); x.moveTo(0,j); x.lineTo(Wd,j); x.stroke()}
+        x.strokeStyle='rgba(207,224,255,.6)'; x.lineWidth=3; x.beginPath(); x.moveTo(0,640); x.lineTo(Wd,640); x.moveTo(128,0); x.lineTo(128,Hd); x.stroke();
+        x.strokeStyle='#8fb4ff'; x.lineWidth=6; x.beginPath(); for(let i=128;i<=Wd;i+=4){const v=640-110*Math.sin((i-128)/70); i===128?x.moveTo(i,v):x.lineTo(i,v)} x.stroke();
+        x.fillStyle='#f3efe7'; x.textBaseline='alphabetic'; const F=(s,px,X,Y,it)=>{x.font=`${it?'italic ':''}400 ${px}px Georgia, "Young Serif", serif`; x.fillText(s,X,Y); return x.measureText(s).width};
+        let X=170; X+=F('e',104,X,190,1); X+=F('iπ',56,X+4,138,1)+10; F(' + 1 = 0',104,X,190);
+        X=170; X+=F('a',84,X,350,1); X+=F('2',46,X+4,312); X+=F(' + ',84,X+6,350)+6; X+=F('b',84,X,350,1); X+=F('2',46,X+4,312); X+=F(' = ',84,X+6,350)+6; X+=F('c',84,X,350,1); F('2',46,X+4,312);
+        F('∫ f(x) dx',70,820,350,1); F('π = 3.14159…',62,820,190)});
+      const m=new THREE.Mesh(new THREE.PlaneGeometry(2.7,1.81),bas(k,0xffffff,1)); m.material.map=tex; em.add(m)}
+  }
+  /* the slot: an empty dashed card beside the stack, not on its thread; lights warm on "Consciousness" */
+  const sl={}; ST.slot=sl; const sy=-SC.slotK*SC.gap;
+  sl.dash=stackLine(rrect(SC.w,SC.h,.16),0xdfe8f0,2.6,1,{dashed:true,dashSize:.14,gapSize:.1}); sl.dash.position.set(SC.slotX,sy,0); lg.add(sl.dash);
+  sl.solid=stackLine(rrect(SC.w,SC.h,.16),WARM.getHex(),2.6,1); sl.solid.position.set(SC.slotX,sy,0); lg.add(sl.solid);
+  sl.fillM=new THREE.MeshBasicMaterial({color:WARM,transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending,toneMapped:false});
+  sl.fill=new THREE.Mesh(new THREE.PlaneGeometry(SC.w-.12,SC.h-.12),sl.fillM); sl.fill.position.set(SC.slotX,sy,-.05); g.add(sl.fill);
+  sl.pos=ST.C.clone().add(new THREE.Vector3(SC.slotX,sy,.1));
+  /* the light: a warm ember, the same warm as the people in the river */
+  const lt=new THREE.Group(); ST.light=lt; scene.add(lt);
+  ST.glow=new THREE.Sprite(new THREE.SpriteMaterial({map:dot(),color:WARM,transparent:true,opacity:0,depthWrite:false,depthTest:false,blending:THREE.AdditiveBlending}));
+  ST.core=new THREE.Mesh(new THREE.SphereGeometry(1,24,16),new THREE.MeshBasicMaterial({color:WARM.clone().multiplyScalar(2.2),transparent:true,opacity:0,depthWrite:false,toneMapped:false}));
+  lt.add(ST.glow,ST.core); ST.glow.frustumCulled=ST.core.frustumCulled=false;
+  scene.add(g); lineScene.add(lg);
+  /* the shots */
+  const cen=k=>ST.C.clone().add(new THREE.Vector3(0,-k*SC.gap,0)), V=new THREE.Vector3(-1.05,1.05,6.1);
+  const pose=(tgt,off)=>({tgt,pos:tgt.clone().add(off)}), lay=k=>pose(cen(k).add(new THREE.Vector3(-.45,0,0)),V), drift=(p,d)=>({tgt:p.tgt.clone().add(d),pos:p.pos.clone().add(d)});
+  const ccol=ST.C.clone().add(new THREE.Vector3(SC.slotX/2-.55,-2.5*SC.gap,0)), wide=pose(ccol,new THREE.Vector3(-2.2,2.4,25.5));
+  const push=pose(ccol.clone().add(new THREE.Vector3(.9,-1.6,0)),new THREE.Vector3(-2.2,1.9,21));
+  const open=pose(cen(0).add(new THREE.Vector3(0,-2.6,0)),new THREE.Vector3(-2.4,6.4,5.4)), T0=STK.lay, K=[];
+  const dn=new THREE.Vector3(0,-.14,0);
+  K.push([0,drift(open,new THREE.Vector3(0,.8,0))],[T0[0]-1.5,open]);
+  for(let k=0;k<6;k++){const arr=T0[k]+(k===5?.2:.18), [lt,lp]=K[K.length-1];
+    if(k===5) K.push([STK.under-.1,drift(lp,dn)]);                                   // "And under all that…": the slow drop to the maths
+    else if(k>0) K.push([Math.max(lt+.05,arr-Math.min(1.05,(arr-lt)*.85)),drift(lp,dn)]);
+    K.push([arr,lay(k)]);
+    if(k===4){const g4=pose(cen(4).add(new THREE.Vector3(-.3,0,0)),V.clone().multiplyScalar(.9)); K.push([STK.quarks-.25,drift(lay(4),dn)],[STK.quarks+.45,g4])}}
+  K.push([STK.s02-.15,drift(lay(5),dn)],[STK.s02+2.4,wide],[STK.consc-.2,drift(wide,new THREE.Vector3(0,0,-.6))],[STK.consc+3.2,push]);
+  K.sort((a,b)=>a[0]-b[0]); ST.K=K;
+}
+function stackShot(t,out){const K=ST.K; let i=0; while(i<K.length-1&&K[i+1][0]<=t) i++;
+  const a=K[i], b=K[Math.min(i+1,K.length-1)], e=b===a||t<=a[0]?(t<a[0]?0:1):ease(clamp((t-a[0])/Math.max(.001,b[0]-a[0])));
+  out.tgt.lerpVectors(a[1].tgt,b[1].tgt,e); out.pos.lerpVectors(a[1].pos,b[1].pos,e);
+  const d=STK.depart; if(t>d){ /* the bridge: follow the light down, closing to the first-bead shot */
+    const u=clamp((t-d)/STK.fly), lp=stackLightPos(t,new THREE.Vector3()); closeShot(S.lead,sA);
+    const off0=out.pos.clone().sub(out.tgt), off1=sA.pos.clone().sub(sA.tgt), e2=ease(u);
+    const len=Math.exp(lerp(Math.log(off0.length()),Math.log(off1.length()),e2)), dir=off0.normalize().lerp(off1.normalize(),e2).normalize();
+    out.tgt.lerp(lp,ss(0,.32,u)).lerp(sA.tgt,ss(.72,1,u)); out.pos.copy(out.tgt).addScaledVector(dir,len)}
+  return out}
+function stackLightPos(t,out){const u=ease(clamp((t-STK.depart)/STK.fly)), A=ST.slot.pos, B=W.basePos[W.iH], c=A.clone().lerp(B,.25).add(new THREE.Vector3(0,-1.5,2.2));
+  return out.copy(A).multiplyScalar((1-u)*(1-u)).addScaledVector(c,2*u*(1-u)).addScaledVector(B,u*u)}
+const bump=(t,a,up=.15,dn=.9)=>ss(a,a+up,t)*(1-ss(a+up,a+up+dn,t));
+function stackApply(t){
+  const live=t<S.lead+.6; ST.group.visible=ST.lgroup.visible=live&&t<STK.depart+STK.fly; ST.light.visible=t>=STK.consc-.05&&t<beadT[0]+.7;
+  for(const m of ST.lmats){m.resolution.copy(M.thread.resolution); m.linewidth=m.userData.px*M.thread.linewidth/P.threadPx}
+  if(ST.group.visible){
+    const fade=1-ss(STK.depart+.25,STK.depart+STK.fly*.8,t), shelf=ss(.3,1.4,t), wide=ss(STK.s02,STK.s02+1.2,t), T0=STK.lay;
+    for(const L of ST.layers){const k=L.k, a=ss(L.t,L.t+.35,t), nx=k<5?T0[k+1]:STK.s02, dim=1-.5*ss(nx,nx+.5,t)*(1-wide);
+      const pop=backOut(clamp((t-L.t)/.45)); L.em.scale.setScalar(Math.max(.001,pop)); L.em.visible=a>.001;
+      for(const m of L.mats) m.opacity=m.userData.op*a*dim*fade;
+      let ol=lerp(.82*shelf,.92,a)*lerp(1,dim,.6); if(k===4) ol+=.45*bump(t,STK.quarks3-.1,.2,1.2)*fade; L.outline.material.opacity=Math.min(1,ol)*fade;
+      if(L.spine){const b=ss(T0[k+1],T0[k+1]+.4,t); L.spine.material.opacity=lerp(.8*shelf,.92,b)*fade}
+      if(L.fig) for(const l of L.fig){l.scale.setScalar(Math.max(.001,pop*1.12)); l.material.opacity=.9*a*dim*fade}
+      if(L.spin) L.em.rotation.y=Math.sin(t*L.spin)*.6;
+      if(L.atom){const g=ss(STK.quarks,STK.quarks+.45,t); L.atom.scale.setScalar(Math.max(.001,1-g)); L.atom.visible=g<.999; L.atom.rotation.y=t*.4;
+        for(const [e,ph,sp] of L.el){const an=t*sp*2.4+ph; e.position.set(Math.cos(an)*.75,Math.sin(an)*.75,0)}
+        const gq=backOut(clamp((t-STK.quarks)/.45)), gl=ss(STK.leptons,STK.leptons+.35,t), gb=ss(STK.leptons+.5,STK.leptons+1.1,t), echo=1+.6*bump(t,STK.quarks3-.1,.2,1.2);
+        L.grid.forEach((m,i)=>{m.visible=t>=STK.quarks; m.scale.setScalar(Math.max(.001,gq)); const lit=i===0?1:i===1?lerp(.25,1,gl):lerp(.25,.75,gb);
+          m.material.opacity=Math.min(1,ss(STK.quarks,STK.quarks+.3,t)*lit*dim*fade); m.material.color.setScalar(i<2?echo:1)})}}
+    const sl=ST.slot, ap=ss(STK.missing,STK.missing+.4,t), on=ss(STK.consc,STK.consc+.5,t);
+    sl.dash.material.opacity=ap*(1-on)*fade; sl.dash.material.dashOffset=-t*.15;
+    sl.solid.material.opacity=on*fade; sl.fillM.opacity=on*(.16+.05*Math.sin((t-STK.consc)*2.4))*(1-ss(STK.depart,STK.depart+1,t))}
+  if(ST.light.visible){ /* the light: swells in the slot, leaves as she finishes, lands where the first bead will be, and waits for "toast" */
+    const on=backOut(clamp((t-STK.consc)/.6)), u=clamp((t-STK.depart)/STK.fly), br=1+.12*Math.sin((t-STK.consc)*2.2), out=1-ss(beadT[0]-.05,beadT[0]+.45,t);
+    stackLightPos(t,ST.light.position); const sz=lerp(1.25,.1,ease(u))*br*Math.max(.001,on);
+    ST.glow.scale.setScalar(sz*1.9); ST.glow.material.opacity=.95*out; ST.core.scale.setScalar(sz*.16); ST.core.material.opacity=out}
+  if(t<S.lead){bokeh.uniforms.aperture.value=lerp(.004,.028,ss(STK.depart+STK.fly*.5,S.lead,t)); bokeh.uniforms.maxblur.value=.012}
+}
+const wideK=t=>ss(STK.s02,STK.s02+1.6,t);
+function stackWords(t,fs){ /* the plain labels, left of each card; CONSCIOUSNESS beside the slot once it lights */
+  if(!ST.group||!ST.group.visible) return; camera.updateMatrixWorld();   // this frame's camera, not the last one's (apply() runs before render)
+  const cw=txtCanvas.width, chh=txtCanvas.height, f=Math.round(chh*(.034-.008*wideK(t)));
+  const fade=1-ss(STK.depart+.1,STK.depart+1.2,t), wide=ss(STK.s02,STK.s02+1.2,t), put=(v,s,col,op,align,dx)=>{if(op<=.01) return; tmp.copy(v).project(camera); if(tmp.z>=1) return;
+    const x=(tmp.x*.5+.5)*cw+dx*f, y=(-tmp.y*.5+.5)*chh+f*.35; tctx.globalAlpha=op; tctx.textAlign=align; tctx.fillStyle=col; tctx.fillText(s,x,y)};
+  tctx.save(); tctx.font=`600 ${f}px "Schibsted Grotesk", system-ui, sans-serif`; tctx.letterSpacing=Math.round(f*.14)+'px'; tctx.shadowColor='rgba(0,0,0,.9)'; tctx.shadowBlur=f*.5; tctx.textBaseline='alphabetic';
+  for(const L of ST.layers){const a=ss(L.t,L.t+.25,t), nx=L.k<5?STK.lay[L.k+1]:STK.s02, dim=1-.45*ss(nx,nx+.5,t)*(1-wide);
+    put(ST.C.clone().add(new THREE.Vector3(-SC.w/2,-L.k*SC.gap,0)),L.label,'#f3efe7',a*dim*fade,'right',-.7)}
+  put(ST.C.clone().add(new THREE.Vector3(SC.slotX+SC.w/2,-SC.slotK*SC.gap,0)),'CONSCIOUSNESS','#ffcf8a',ss(STK.consc+.1,STK.consc+.6,t)*fade,'left',.7);
+  tctx.restore()}
+
+/* ---------- tags: plain words above the decision ---------- */
+const TAGS=[
+  {a:()=>mediaLift(W.basePos[W.iH].clone(),0),time:'07:42',t:'toast, not cereal',win:()=>[beadT[0]+.2,TA+.4]},
+  {a:()=>mediaLift(W.basePos[W.iH+1].clone(),1),time:'11:34',t:'said sorry first',win:()=>[beadT[1]+.2,TA+.4]},
+  {a:()=>mediaLift(W.basePos[W.iH+2].clone(),2),time:'14:10',t:'got married',win:()=>[beadT[2]+.2,TA+.4]},
+  {a:()=>W.arcCurve.getPoint(.2).add(new THREE.Vector3(1.2,.4,0)),t:'git revert',term:true,win:()=>[S.arcDraw+2.5,TD+1]},
+  {a:()=>W.slot.position.clone(),t:'awaiting: 1 human',win:()=>[S.arcHold,TD+1]},
+  {a:()=>W.daysAnchor,t:'days since last commit: 1,826',win:()=>[TC+1.6,S.arcDraw+.5]},
+  {a:()=>W.draftAnchor,t:'drafts: 9,412,733,005   committed: 0',win:()=>[TC+3,S.arcDraw+.5]}
+];
+
+function riverOut(){return EDIT_1D.cam.out0}
+function riverCommits(t){ // from just after the pull-back until the bare string, every strand commits on its own until all reach the cut-off
+  const w0=S.toRiver+1, w1=riverOut(), key=t>=w1?'full':(t<w0?'start':'');
+  if(key&&W.riverKey===key) return; W.riverKey=key;
+  const pv=new THREE.Vector3(), gx=W.gx, gp=W.gp, sc0=P.bead;
+  W.rs.forEach((st,k)=>{let n=0, tl=-1; for(const u of st.u){const tc=w0+u*(w1-w0); if(tc<=t){n++; tl=tc}}
+    const front=Math.min(XGREY,XGREY-st.lag+n*W.SP), pop=tl>0?backOut(clamp((t-tl)/.35)):1, lo=XGREY-st.lag-W.SP;
+    for(let j=0;j<st.count;j++){const i=st.start+j, x=gx[i]; if(x<lo) continue;
+      const sc=x>front+.01?0:(x>front-W.SP+.01?pop:1); pv.set(gp[i*3],gp[i*3+1],gp[i*3+2]); m4.compose(pv,q,sv.setScalar(sc*sc0)); W.tGold.setMatrixAt(i,m4)}
+    for(let m=0;m<W.NT;m++){const live=front<XGREY-.01; riverPt(st.su,st.sv,front+(m+1)*W.SP,pv);   // the maybes just ahead of each strand
+      const tw=.2+.8*Math.pow(Math.max(0,Math.sin(t*(.9+m*.7)+st.ph+m*2.1)),3); m4.compose(pv,q,sv.setScalar(live?tw*P.fanSize*sc0*1.4:0)); W.tips.setMatrixAt(k*W.NT+m,m4)}});
+  W.tGold.instanceMatrix.needsUpdate=true; W.tips.instanceMatrix.needsUpdate=true}
+
+function drawWords(t){ // plain words above a decision, drawn into the frame (deterministic in t, so film mode records them)
+  const cw=txtCanvas.width, chh=txtCanvas.height; if(!cw) return; tctx.clearRect(0,0,cw,chh); const fs=Math.round(chh*.026);
+  for(const d of TAGS){const a=d.a(); if(!a) continue; const [t0,t1]=d.win(); const op=ss(t0,t0+.5,t)*(1-ss(t1-.3,t1,t)); if(op<=.01) continue;
+    tmp.copy(a).project(camera); if(tmp.z>=1||Math.abs(tmp.x)>1.1||Math.abs(tmp.y)>1.1) continue;
+    const x=(tmp.x*.5+.5)*cw, y=(-tmp.y*.5+.5)*chh-fs*2.4;
+    tctx.globalAlpha=op; tctx.textBaseline='alphabetic'; tctx.shadowColor='rgba(0,0,0,.9)'; tctx.shadowBlur=fs*.6;
+    if(d.term){tctx.font=`500 ${fs}px "JetBrains Mono", ui-monospace, monospace`; tctx.textAlign='center'; tctx.fillStyle='#dfe8f0'; tctx.fillText(d.t+(Math.floor(t*2)%2?'\u258D':'  '),x,y)}
+    else {tctx.font=`400 ${fs}px "Schibsted Grotesk", system-ui, sans-serif`; tctx.textAlign='left';
+      const tw=d.time?tctx.measureText(d.time+'  ').width:0, mw=tctx.measureText(d.t).width, x0=x-(tw+mw)/2;
+      if(d.time){tctx.fillStyle='#9d988f'; tctx.fillText(d.time,x0,y)} tctx.fillStyle='#f3efe7'; tctx.fillText(d.t,x0+tw,y)}}
+  tctx.globalAlpha=1; stackWords(t,fs); txtTex.needsUpdate=true}
+
+/* ---------- the shot at time t (deterministic: film mode renders any frame) ---------- */
+const OFF=new THREE.Vector3(-1.25,.55,.95);   // Kai's angle: along the line as it rises away
+const shot={pos:new THREE.Vector3(),tgt:new THREE.Vector3()}, sA={pos:new THREE.Vector3(),tgt:new THREE.Vector3()}, sB={pos:new THREE.Vector3(),tgt:new THREE.Vector3()}, sC={pos:new THREE.Vector3(),tgt:new THREE.Vector3()};
+function arrivals(t){let k=0;for(let j=1;j<NA;j++) k+=ss(beadT[j]-.15,beadT[j]+.9,t);return k}
+function closeShot(t,out){
+  let k=arrivals(Math.min(t,TA)), zoom=1, fwd=0;
+  if(t>TA){const open=ss(S.open,S.open+D.open,t), back=ss(tPick0,Math.min(S.toRiver,tPick0+EDIT_1D.cam.back),t);
+    zoom=1+(2.6*P.fanSpread)*open-(2.3*P.fanSpread)*back; fwd=(1.3*P.fanSpread)*open*(1-back);
+    k+=.5*open+.5*ss(tPick0,tPick0+Math.min(1.6,D.pick),t)}
+  const x=W.basePos[W.iH].x+k*W.SP; riverPt(HERO_U,HERO_V,x,out.tgt); out.tgt.x+=.25+fwd;
+  out.pos.copy(out.tgt).addScaledVector(OFF,zoom);
+  VISIT=[0,0]; if(t>TA&&W.EXI) for(let j=0;j<EXC.length;j++){const [a,b]=EXC[j]; if(t<=a||t>=b) continue; const m=(a+b)/2, wv=t<m?ease(clamp((t-a)/((m-a)*.75))):ease(clamp((b-t)/((b-m)*.75))); VISIT[j]=wv;
+    const pp=W.basePos[W.iH+NA].clone().addScaledVector(W.fanOff[W.EXI[j]],P.fanSpread*ss(S.open,S.open+D.open,t)); out.tgt.lerp(pp,wv); out.pos.lerp(pp.addScaledVector(OFF,1.05),wv)}
+  return out}
+let orbiting=false, showSubs=true, VISIT=[0,0];
+
+function apply(t){
+  let trunk=0, inside=0;
+  if(t<S.lead) stackShot(t,shot);
+  else if(t<TB) closeShot(t,shot);
+  else if(t<TC){closeShot(TB,sA); const e=ease(clamp((t-TB)/TRIV)); shot.pos.lerpVectors(sA.pos,W.RIVER.pos,e); shot.tgt.lerpVectors(sA.tgt,W.RIVER.tgt,e); trunk=clamp(e*1.4);
+    if(t>=S.river){const r0=S.river, r1=S.flyDown, outAt=EDIT_1D.cam.out0, pin=ease(clamp((t-EDIT_1D.cam.pin0)/EDIT_1D.cam.pind)), pout=ease(clamp((t-outAt)/Math.max(.5,r1-outAt-.2)));
+      inside=pin*(1-pout); const k=clamp((t-r0)/Math.max(1,r1-r0));
+      const jmp=ss(r0+.45*(outAt-r0),r0+.45*(outAt-r0)+1.1,t); riverPt(.06,-.08,XGREY-26+3*k+14*jmp,sB.pos); riverPt(0,.06,XGREY-12+2*k+8*jmp,sB.tgt);   // among the strands, drifting forward with the decisions
+      sC.pos.lerpVectors(W.RIVER.pos,sB.pos,pin); sC.tgt.lerpVectors(W.RIVER.tgt,sB.tgt,pin);
+      shot.pos.lerpVectors(sC.pos,W.CUT.pos,pout); shot.tgt.lerpVectors(sC.tgt,W.CUT.tgt,pout)}}
+  else {const e=ease(clamp((t-EDIT_1D.cam.rise0)/EDIT_1D.cam.rised)); shot.pos.lerpVectors(W.CUT.pos,W.ARC.pos,e); shot.tgt.lerpVectors(W.CUT.tgt,W.ARC.tgt,e); trunk=1}
+  if(!orbiting){camera.position.copy(shot.pos); controls.target.copy(shot.tgt); camera.lookAt(shot.tgt)}
+
+  {const [g0,g1]=EDIT_1D.glow; GLOW=1+.85*ss(g0,g0+1.2,t)*(1-ss(g1-.6,g1+.4,t))*(.8+.2*Math.sin((t-g0)*2.4))}
+  /* your string */
+  const iH=W.iH;
+  if(t<TB){let hi=iH-1, pop=0;
+    for(let j=0;j<NA;j++){const tb=beadT[j]; if(t>=tb){hi=iH+j; pop=backOut(clamp((t-tb)/.45))}}
+    if(t>=tPick0+Math.min(1.6,D.pick)){hi=iH+NA; pop=1}
+    reveal(iH,hi,pop); W.dead.visible=false;
+    const s0=W.xToSeg(W.basePos[iH].x-W.SP*.6), s1=hi<iH?s0:W.xToSeg(W.basePos[hi].x);
+    W.thread.visible=false; W.mine.visible=s1>s0; W.mine.geometry.instanceCount=Math.max(0,s1-W.seg0);
+  } else {reveal(0,W.ng-1,1); W.dead.visible=true; W.mine.visible=false; W.thread.visible=true; W.thread.geometry.instanceCount=W.TUBE}
+  M.thread.opacity=lerp(.9,.35,trunk)*(1-inside);   // your thread stays faintly visible inside everybody's
+
+  /* the choices */
+  const tf=t-TA, spread=tf>0?ss(S.open,S.open+D.open,t):0, fade=tf>0?1-ss(tPick0,tPick0+1.1,t):1;
+  const choose=tf>0?ease(clamp((t-tPick0)/Math.min(1.6,D.pick))):0, show=tf>0&&t<TB, pNext=W.basePos[iH+NA], pLead=W.basePos[iH+NA-1];
+  W.fan.visible=W.fanLines.visible=show;
+  if(show){const lp=W.fanLines.geometry.attributes.position.array, sc=spread*P.fanSpread; let li=0;
+    const posOf=(i,out)=>out.copy(pNext).addScaledVector(W.fanOff[i],sc);
+    const pv=new THREE.Vector3();
+    for(let i=0;i<W.fanOff.length;i++){posOf(i,tmp); const tw=.2+.8*Math.pow(Math.max(0,Math.sin(t*(.6+((i*.618)%1)*2.2)+(i*2.399)%6.283)),3); const near=ss(.2,.7,tmp.distanceTo(camera.position)), s=(i===W.CH||(CATS.length&&W.EXI.includes(i)))?0:P.fanSize*P.bead*tw*1.6*near; m4.compose(tmp,q,sv.setScalar(s)); W.fan.setMatrixAt(i,m4);
+      const p=W.fanPar[i]; if(p===-2) continue; if(p===-1) pv.copy(pLead); else posOf(p,pv);
+      lp[li++]=pv.x;lp[li++]=pv.y;lp[li++]=pv.z;lp[li++]=tmp.x;lp[li++]=tmp.y;lp[li++]=tmp.z}
+    W.fan.instanceMatrix.needsUpdate=true; W.fanLines.geometry.attributes.position.needsUpdate=true; W.fanLines.geometry.setDrawRange(0,li/3);
+    M.fan.opacity=P.fanOpacity*spread*fade; M.fanLine.opacity=P.fanOpacity*.35*spread*fade}
+  {const fl=t-tPick0, on=fl>-.02&&fl<.45; W.flash.visible=on; if(on){W.flash.position.copy(pNext).addScaledVector(W.fanOff[W.CH],spread*P.fanSpread); const k=ease(clamp(fl/.14)); W.flash.scale.setScalar(lerp(.2,3.4,k)); W.flash.material.opacity=1-ss(.04,.42,fl)}}
+  const cOn=show&&t<tPick0+Math.min(1.6,D.pick); W.chosen.visible=W.chosenCore.visible=cOn&&spread>0;
+  if(cOn){W.chosen.position.copy(pNext).addScaledVector(W.fanOff[W.CH],spread*P.fanSpread*(1-choose)); W.chosenCore.position.copy(W.chosen.position);
+    const sz=lerp(P.fanSize,1,choose)*P.bead; W.chosen.scale.setScalar(sz); W.chosenCore.scale.setScalar(Math.max(.001,choose*P.ember*P.bead));
+    M.chosen.opacity=lerp(P.fanOpacity*spread,P.glass,choose)}
+
+  /* everybody else */
+  W.tGold.visible=W.tLine.visible=W.tBare.visible=trunk>.01; W.tDead.visible=false; M.tGold.opacity=trunk; M.tLine.opacity=trunk*.12; M.bare.opacity=trunk*.3; M.tGold.transparent=trunk<.999;
+  W.tips.visible=trunk>.01; if(trunk>.01) riverCommits(t); M.tip.opacity=Math.min(1,P.fanOpacity*2.2)*trunk;
+  W.drafts.visible=trunk>.01; if(W.drafts.visible){ // each draft swells and vanishes on its own clock: none of them lands
+    for(let i=0;i<W.dpos.length;i++){const [ph,w]=W.dph[i]; const f=Math.pow(Math.max(0,Math.sin(t*w+ph)),3); m4.compose(W.dpos[i],q,sv.setScalar(f*P.fanSize*P.bead*2)); W.drafts.setMatrixAt(i,m4)}
+    W.drafts.instanceMatrix.needsUpdate=true; M.draft.opacity=Math.min(1,P.fanOpacity*3.5)*trunk}
+
+  /* the revert */
+  const draw=t>=S.arcDraw?ease(clamp((t-S.arcDraw)/Math.min(2.5,D.arcDraw))):0; W.arc.visible=draw>0; W.slot.visible=draw>.85;
+  W.arc.geometry.setDrawRange(0,Math.floor(W.arcN*draw/6)*6);
+
+  /* the telly: on at the start, off at the end */
+  screen.uniforms.power.value=Math.min(ss(0,.35,t),1-ss(S.off,S.off+.7,t));
+
+  /* focus, subtitles, tags */
+  bokeh.uniforms.focus.value=camera.position.distanceTo(controls.target);
+  const vis=Math.max(VISIT[0],VISIT[1]), inCloud=t>TA&&t<TB?ss(S.open,S.open+D.open,t)*(1-ss(tPick0,tPick0+1.1,t)):0;
+  bokeh.uniforms.aperture.value=lerp(lerp(.028,t<TC?.0003:.0008,trunk),.0025,inside)*(1-.6*inCloud)*(1-.98*vis); bokeh.uniforms.maxblur.value=lerp(.016,.009,trunk);
+  let s=''; for(const c of CLIPS0){const e=ED.clips[c.id]; if(t>=e.start&&t<e.start+c.dur+.25) s=e.text} if(!showSubs) s=''; if(subEl.textContent!==s) subEl.textContent=s;
+  stackApply(t); mediaApply(t); catApply(t); drawWords(t);
+}
+
+/* ---------- the edit: picture and voice tracks ---------- */
+const tl=$('tl'), pic=$('pic'), vox=$('vox'), ruler=$('ruler'), ph=$('ph'), linesEl=$('lines'), savedEl=$('saved');
+let PX=24, selected=null;
+const fmtS=t=>`${Math.floor(t/60)}:${(t%60).toFixed(1).padStart(4,'0')}`;
+function layoutPX(){const w=tl.parentElement.clientWidth-90; PX=Math.max(14,w/Math.max(10,TD+2))}
+function renderTL(){layoutPX(); const W2=(TD+2)*PX; tl.style.width=(W2+90)+'px';
+  ruler.innerHTML=''; for(let s2=0;s2<=TD+1;s2+=5){const m=document.createElement('span'); m.style.left=s2*PX+'px'; m.textContent=fmtS(s2).replace(/\.0$/,''); ruler.appendChild(m)}
+  pic.innerHTML=''; for(const [id,label] of SEGS){const b=document.createElement('div'); b.className='blk'; b.style.left=S[id]*PX+'px'; b.style.width=D[id]*PX+'px'; b.title=`${label}: ${D[id].toFixed(1)} s`;
+    b.innerHTML='<span></span><i class="hdl" aria-hidden="true"></i>'; b.firstChild.textContent=label; b.querySelector('.hdl').addEventListener('pointerdown',ev=>dragSeg(ev,id)); pic.appendChild(b)}
+  vox.innerHTML=''; for(const c of CLIPS0){const e=ED.clips[c.id], b=document.createElement('div'); b.className='clip'+(e.needsVoice?' stale':'')+(selected===c.id?' sel':'');
+    b.style.left=e.start*PX+'px'; b.style.width=Math.max(6,c.dur*PX)+'px'; b.textContent=e.text; b.title=e.text; b.addEventListener('pointerdown',ev=>dragClip(ev,c.id)); vox.appendChild(b)}
+  range.max=TD.toFixed(2)}
+function renderLines(){linesEl.innerHTML=''; for(const c of CLIPS0){const e=ED.clips[c.id]; const row=document.createElement('div'); row.className='line'+(selected===c.id?' sel':''); row.id='ln-'+c.id;
+  const meta=document.createElement('button'); meta.className='lmeta'; meta.textContent=fmtS(e.start); meta.title='Play from here'; meta.addEventListener('click',()=>{select(c.id); T=e.start; if(playing) startAudio(); else setPlay(true)});
+  const ta=document.createElement('textarea'); ta.id='tx-'+c.id; ta.rows=2; ta.value=e.text; ta.setAttribute('aria-label','Words for line '+c.id);
+  ta.addEventListener('input',()=>{e.text=ta.value; e.needsVoice=ta.value.trim()!==c.text.trim(); st.textContent=e.needsVoice?'needs re-voicing':'voiced'; st.className='lst'+(e.needsVoice?' stale':''); renderTL(); saveEdit()});
+  const st=document.createElement('span'); st.className='lst'+(e.needsVoice?' stale':''); st.textContent=e.needsVoice?'needs re-voicing':'voiced';
+  row.append(meta,ta,st); linesEl.appendChild(row)}}
+function select(id){selected=id; renderTL(); document.querySelectorAll('.line').forEach(r=>r.classList.toggle('sel',r.id==='ln-'+id))}
+function dragClip(ev,id){ev.preventDefault(); const e=ED.clips[id], x0=ev.clientX, s0=e.start; let moved=false; select(id);
+  const mv=m=>{const dx=m.clientX-x0; if(Math.abs(dx)>2) moved=true; e.start=Math.max(0,+(s0+dx/PX).toFixed(2)); const el=[...vox.children][CLIPS0.findIndex(c=>c.id===id)]; if(el) el.style.left=e.start*PX+'px'};
+  const up=()=>{removeEventListener('pointermove',mv); removeEventListener('pointerup',up); if(moved){renderTL(); renderLines(); saveEdit(); if(playing) startAudio()} else {document.getElementById('ln-'+id)?.scrollIntoView({block:'nearest'}); T=e.start; if(playing) startAudio()}};
+  addEventListener('pointermove',mv); addEventListener('pointerup',up)}
+function dragSeg(ev,id){ev.preventDefault(); ev.stopPropagation(); const x0=ev.clientX, d0=ED.segs[id], end0=S[id]+d0, starts0={}; for(const c of CLIPS0) starts0[c.id]=ED.clips[c.id].start;
+  const mv=m=>{const d=Math.max(.3,+(d0+(m.clientX-x0)/PX).toFixed(2)); ED.segs[id]=d; for(const c of CLIPS0) if(starts0[c.id]>=end0-.01) ED.clips[c.id].start=+(starts0[c.id]+d-d0).toFixed(2); retime(); renderTL()};
+  const up=()=>{removeEventListener('pointermove',mv); removeEventListener('pointerup',up); renderLines(); saveEdit(); if(playing) startAudio()};
+  addEventListener('pointermove',mv); addEventListener('pointerup',up)}
+ruler.addEventListener('pointerdown',ev=>{const r=ruler.getBoundingClientRect(); seekTo((ev.clientX-r.left)/PX,true)});
+new ResizeObserver(()=>renderTL()).observe(tl.parentElement);
+
+/* saving: the page's own database (Claude reads it back), with this browser as a fallback */
+let dbDoc=null, saveTimer=null; const say=m=>{savedEl.textContent=m};
+function saveEdit(){try{localStorage.setItem('gpom-holo-edit-1f4',JSON.stringify(ED))}catch(e){}
+  clearTimeout(saveTimer); saveTimer=setTimeout(async()=>{if(!dbDoc){say('Saved in this browser only.'); return}
+    say('Saving…'); try{await dbDoc.set({segs:ED.segs,clips:ED.clips,draft:'1F4',updated:new Date().toISOString()}); say('Saved. Claude can read this edit.')}catch(e){say('Not saved: '+(e.code||e.message||'error')+'. It is kept in this browser.')}},700)}
+(async()=>{let db=null; try{db=await window.claude?.use?.('db')}catch(e){}
+  if(!db){say('Saving in this browser only.'); return}
+  dbDoc=db.doc('edits/1f4'); const timer=setTimeout(()=>say('The saved edit is slow to load; working from this browser.'),10000);
+  try{const snap=await dbDoc.get(); clearTimeout(timer); if(snap.exists){mergeEdit(snap.data()); retime(); renderTL(); renderLines()} say('Edits save automatically.')}
+  catch(e){clearTimeout(timer); say('Saving is off here ('+(e.code||'error')+'); edits stay in this browser.')}})();
+$('subs').addEventListener('change',e=>{showSubs=e.target.checked});
+$('copyEdit').addEventListener('click',()=>{const txt='Hologram edit, draft 1F4: '+JSON.stringify({segs:ED.segs,clips:ED.clips}); navigator.clipboard.writeText(txt).then(()=>say('Copied. Paste it to Claude.'),()=>say('Copy blocked here; the edit is saved anyway.'))});
+$('resetEdit').addEventListener('click',()=>{ED=defaultEdit(); mergeEdit(EDIT_1D); window.hologram.ED=ED; retime(); renderTL(); renderLines(); saveEdit(); say('Back to the first layout.')});
+
+/* ---------- the bench UI ---------- */
+const groups=$('groups'), inputs={};
+const fmtV=(k,v)=>typeof v==='number'?(Math.abs(v)<.01?v.toFixed(4):Math.abs(v)<10&&!Number.isInteger(v)?v.toFixed(2):String(Math.round(v))):v;
+for(const [title,knobs] of KNOBS){const fs=document.createElement('fieldset'); const lg=document.createElement('legend'); lg.textContent=title; fs.appendChild(lg);
+  for(const [k,label,a,b,step,mode] of knobs){const row=document.createElement('div'); row.className='sl'; const id='k-'+k;
+    const lab=document.createElement('label'); lab.htmlFor=id; lab.textContent=label; const inp=document.createElement('input'); inp.id=id;
+    const out=document.createElement('output'); out.htmlFor=id;
+    if(a==='color'){inp.type='color'; inp.value=P[k]; out.textContent='';
+      inp.addEventListener('input',()=>{P[k]=inp.value; liveMaterials(); save()})}
+    else {inp.type='range'; inp.min=a; inp.max=b; inp.step=step; inp.value=P[k]; out.textContent=fmtV(k,P[k]);
+      inp.addEventListener('input',()=>{P[k]=+inp.value; out.textContent=fmtV(k,P[k]); if(mode==='live'){liveMaterials()} save()});
+      if(mode==='build') inp.addEventListener('change',()=>{build(); liveMaterials()})}
+    inputs[k]={inp,out}; row.append(lab,inp,out); fs.appendChild(row)}
+  groups.appendChild(fs)}
+function syncInputs(){for(const k in inputs){inputs[k].inp.value=P[k]; if(inputs[k].inp.type==='range') inputs[k].out.textContent=fmtV(k,P[k])}
+  document.querySelectorAll('[data-fs]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.fs===P.fanStyle)))}
+document.querySelectorAll('[data-fs]').forEach(b=>b.addEventListener('click',()=>{P.fanStyle=b.dataset.fs; save(); syncInputs(); build(); liveMaterials(); T=TA; orbiting=false; if(playing) startAudio(); else setPlay(true)}));
+const msg=$('msg'), json=$('json');
+$('copy').addEventListener('click',()=>{const txt='Hologram look, round 5: '+JSON.stringify(P); json.value=txt;
+  navigator.clipboard.writeText(txt).then(()=>{msg.textContent='Copied. Paste it to Claude.'; json.hidden=true},()=>{json.hidden=false; json.focus(); json.select(); msg.textContent='Copy blocked here: the text is selected below, press Ctrl+C.'})
+  .catch(()=>{json.hidden=false; json.select()})});
+$('reset').addEventListener('click',()=>{P={...DEFAULTS}; save(); syncInputs(); build(); liveMaterials(); msg.textContent='Back to the defaults.'});
+
+/* ---------- playback ---------- */
+const range=$('t'), tc=$('tc'), playBtn=$('play'); range.max=TD.toFixed(2);
+let T=0, playing=false, last=0;
+controls.addEventListener('start',()=>{orbiting=true; setPlay(false)});
+/* Maddie's voice: Web Audio, scheduled against the scene's clock so the words sit exactly where the clips are */
+let actx=null, SRC=[], playT0=0, ctxT0=0, audioOn=false; const BUF={};
+try{actx=new (window.AudioContext||window.webkitAudioContext)();
+  CLIPS0.forEach(async c=>{try{const r=await fetch(c.file); BUF[c.id]=await actx.decodeAudioData(await r.arrayBuffer())}catch(e){}})}catch(e){actx=null}
+function stopAudio(){SRC.forEach(x=>{try{x.stop()}catch(e){}}); SRC=[]; audioOn=false}
+function startAudio(){stopAudio(); if(!actx||actx.state!=='running') return; const now=actx.currentTime+.05; ctxT0=now; playT0=T; audioOn=true;
+  for(const c of CLIPS0){const b=BUF[c.id]; if(!b) continue; const st=ED.clips[c.id].start; if(st+b.duration<=T) continue;
+    const src=actx.createBufferSource(); src.buffer=b; src.connect(actx.destination); src.start(now+Math.max(0,st-T),Math.max(0,T-st)); SRC.push(src)}}
+function setPlay(on){playing=on; playBtn.setAttribute('aria-pressed',String(on)); playBtn.textContent=on?'Pause':'Play';
+  if(on){orbiting=false; if(T>=TD-.05) T=0; if(actx) actx.resume().then(()=>{if(playing) startAudio()}).catch(()=>{})} else stopAudio()}
+playBtn.addEventListener('click',()=>setPlay(!playing));
+range.addEventListener('input',()=>{T=+range.value; orbiting=false; setPlay(false)});
+function seekTo(t,keepPlaying){T=clamp(t,0,TD); orbiting=false; if(keepPlaying&&playing) startAudio(); else setPlay(false)}
+document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>{T=JUMPS[+b.dataset.jump]; orbiting=false; if(playing) startAudio(); else setPlay(true)}));
+document.querySelectorAll('[data-f]').forEach(b=>b.addEventListener('click',()=>{screen.uniforms.mode.value=+b.dataset.f; document.querySelectorAll('[data-f]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)))}));
+const fmt=t=>`${Math.floor(t/60)}:${(t%60).toFixed(1).padStart(4,'0')}`;
+function resize(){if(FILM) return; const w=stage.clientWidth,h=stage.clientHeight; renderer.setSize(w,h,false); composer.setSize(w,h); M.thread.resolution.set(w,h); M.thread.linewidth=P.threadPx*Math.max(.5,h/1080); camera.aspect=w/h; camera.updateProjectionMatrix(); screen.uniforms.res.value.set(w,h); const pr=renderer.getPixelRatio(); txtCanvas.width=Math.round(w*pr); txtCanvas.height=Math.round(h*pr); txtTex.dispose()}  // a new size needs a fresh texture
+new ResizeObserver(resize).observe(stage);
+
+build(); liveMaterials(); syncInputs(); renderTL(); renderLines();
+let FILM=false; mediaInit();
+window.hologram={
+  film(w,h){FILM=true; renderer.setPixelRatio(1); renderer.setSize(w,h,false); composer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix();
+    screen.uniforms.res.value.set(w,h); M.thread.resolution.set(w,h); M.thread.linewidth=P.threadPx*h/1080; txtCanvas.width=w; txtCanvas.height=h; txtTex.dispose(); showSubs=false},
+  get MEDIA(){return MEDIA}, mediaReady(){return Promise.all([...MEDIA,...CATS].map(o=>o.ready)).then(()=>MEDIA.length+CATS.length)},
+  async frameAt(t,type){T=t; orbiting=false; apply(t); if(MEDIA.length) await mediaSeek(t); screen.uniforms.time.value=t; W.dust.position.y=Math.sin(t*.13)*.05;   // every moving part on the film clock
+    M.slot.emissiveIntensity=.25+.2*(.5+.5*Math.sin(t*1.6)); M.arc.emissiveIntensity=1.3+.15*Math.sin(t*23)*Math.sin(t*3.1);
+    composer.render(); return canvas.toDataURL(type||'image/png')},
+  get TD(){return TD},get JUMPS(){return JUMPS},P,ED,CLIPS0,seek(t){T=t; setPlay(false)},subs(on){showSubs=!!on}};   // film mode hook: the edit is the timing
+function frame(now){
+  requestAnimationFrame(frame); if(FILM) return;
+  const dt=Math.min(.1,(now-(last||now))/1000); last=now;
+  if(playing){T=audioOn&&actx?Math.max(playT0,playT0+(actx.currentTime-ctxT0)):T+dt; if(T>=TD){T=TD; setPlay(false)}}
+  ph.style.transform=`translateX(${T*PX}px)`;
+  range.value=T; tc.value=fmt(T);
+  apply(T); if(orbiting) controls.update();
+  const s=now/1000; screen.uniforms.time.value=reduce?0:s;
+  if(!reduce) W.dust.position.y=Math.sin(s*.13)*.05;
+  M.slot.emissiveIntensity=.25+.2*(.5+.5*Math.sin(s*1.6));
+  M.arc.emissiveIntensity=1.3+(reduce?0:.15*Math.sin(s*23)*Math.sin(s*3.1));
+  composer.render();
+}
+resize(); requestAnimationFrame(frame);
+</script>

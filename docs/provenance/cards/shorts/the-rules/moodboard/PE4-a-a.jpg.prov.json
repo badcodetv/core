@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/PE4-a-a.jpg",
+ "made": "2026-11-10T18:56:55.339Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same council archive basement, cold fluorescent light, fine grain and documentary realism as the first image, now a close-up: one gang member, the navy-masked one, steps towards the camera and holds out a single blank sheet of A4 and a cheap biro pen in a gloved hand, offering them straight to the viewer. Torn paper lies all over the floor and drifts in the air behind. The mask fills the upper half of the frame, front-on and sharp, exactly the design of the mask in the second image: ribbed navy knit, a braided white rope ring round the face, and ONE solid red felt triangle inside the ring at its upper right, pointing down, flat side on top, rounded corners. Black gloves, hi-vis vest over a work jacket, no skin showing. Slightly low camera, wide lens close in, the blank page and pen nearest to us. Tall portrait frame.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/ST3-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/ST3-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/br-mask-y03.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "247eb645-4570-4485-9c10-48a5f1e27b95"
+}

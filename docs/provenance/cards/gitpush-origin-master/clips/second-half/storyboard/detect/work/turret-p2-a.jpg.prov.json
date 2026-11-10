@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/turret-p2-a.jpg",
+ "made": "2026-11-10T16:03:06.852Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the image for the tracked military robot: an extreme close-up of only its boxy sensor turret, filling most of the frame, scratched olive armour plate, a cluster of dark round lenses and a small grille. The turret is caught turning sharply towards the left of frame, and one small amber lamp beside the lenses has just switched on, the only warm colour in the frame. Behind it, out of focus, an empty grey motorway and a pale overcast sky. Shallow depth of field, fine film grain, muted natural colour. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f6810e2d-83ca-47dd-a0b4-d882925aafad"
+}

@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/array-p2-b.jpg",
+ "made": "2026-11-10T16:09:41.233Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the tracked military robot, and the second image only for the grassy chalk downland: very low on the ground, a slim steel listening spike driven deep into the short turf of a chalk down, its cable running back to the tracked military robot standing out of focus behind it. Right beside the spike, a small puddle in a chalky tyre rut is trembling, fine concentric ripples running across its surface. Overcast grey light, muted natural colour, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+   "/home/kai/.cache/detect-refs/SB12c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "2ae24381-80bc-499d-ad5b-d9adad97d25f"
+}

@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/detect-spec.json",
+ "made": "2026-11-10T18:20:40+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "claude",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py --round 25",
+ "why": "GPOM A r25 detect bridge (banner LOCKED at the lock): spec"
+}

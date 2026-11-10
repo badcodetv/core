@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/vent-p1-b.jpg",
+ "made": "2026-11-10T16:10:24.591Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the grassy chalk hillside over the Cold War bunker, and the second image for the abandoned motorway: in the foreground, sticking out of the long grass at the top of the down, a rusty Cold War ventilation shaft with a mushroom-shaped steel cowl, a faint breath of warm air shimmering out of it. Far below in the valley, the abandoned motorway runs across the frame, and on it a small group of tracked military robots have stopped, their sensor turrets all turned up towards the hill. Flat overcast grey daylight, muted greens and greys, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/SB12c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/SB12c.jpg",
+   "/home/kai/.cache/detect-refs/S9-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "6118fcf9-9090-471e-936f-35c8220e0757"
+}

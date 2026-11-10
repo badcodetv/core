@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/cat-dead-a.jpg",
+ "made": "2026-11-10T16:42:13.042Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. Looking down at an open brown cardboard box on worn floorboards in the corner of a bare room, a sash window at the upper left. Curled on its side at the bottom of the box lies a ginger tabby cat, eyes shut, utterly still, gone peacefully as if in its sleep, its tail lying slack. Quiet grey daylight from the window; the far corner falls into shadow. No lettering anywhere.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "a30543ea-bd36-466e-b878-01c6bb7a50b9"
+}

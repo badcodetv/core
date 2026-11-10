@@ -1,0 +1,411 @@
+{
+ "page_title": "GPOM New Ideas Line",
+ "title": "GPOM: the new-ideas line (Maddie's hologram)",
+ "about": "This page lays out three combined drafts for the new-ideas line Maddie speaks over the cut-off string picture, built from twenty writers' versions and ranked underneath. Nothing in the scene, script or voice has changed yet.",
+ "shapes": [
+  {
+   "id": "01",
+   "name": "Bone-dry minimum",
+   "title": "Bone-dry minimum",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-01-bone-dry.md"
+  },
+  {
+   "id": "02",
+   "name": "Picture carries it",
+   "title": "The picture carries it",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-02-picture-carries.md"
+  },
+  {
+   "id": "03",
+   "name": "Plain logic",
+   "title": "Plain logic, one step at a time",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-03-plain-logic.md"
+  },
+  {
+   "id": "04",
+   "name": "Comedy first",
+   "title": "Comedy first, the tune joke leads",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-04-comedy-first.md"
+  },
+  {
+   "id": "05",
+   "name": "The confession",
+   "title": "The confession, Maddie owns the selfish motive first",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-05-confession.md"
+  },
+  {
+   "id": "06",
+   "name": "Rubin nod",
+   "title": "The unnamed bearded producer, ideas arrive, you tune in",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-06-rubin-nod.md"
+  },
+  {
+   "id": "07",
+   "name": "Songwriter testimony",
+   "title": "Songwriter testimony",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-07-songwriter-testimony.md"
+  },
+  {
+   "id": "08",
+   "name": "Tune is argument",
+   "title": "The tune is the argument",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-08-tune-is-argument.md"
+  },
+  {
+   "id": "09",
+   "name": "One concrete image",
+   "title": "One concrete image does the work",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-09-one-concrete-image.md"
+  },
+  {
+   "id": "10",
+   "name": "Economics underneath",
+   "title": "The economics underneath (we ate everything finite; the new thing comes through you)",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-10-economics-underneath.md"
+  },
+  {
+   "id": "11",
+   "name": "Reversal",
+   "title": "Reversal, the viewer solves the looping tune first",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-11-reversal.md"
+  },
+  {
+   "id": "12",
+   "name": "Ending first",
+   "title": "Ending first, so the time machine is the only possible next line",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-12-ending-first.md"
+  },
+  {
+   "id": "13",
+   "name": "Remix metaphor",
+   "title": "The remix, a remix of a remix of a remix",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-13-remix-metaphor.md"
+  },
+  {
+   "id": "14",
+   "name": "Boss outside-in",
+   "title": "The boss seen from outside, only what he did",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-14-boss-outside-in.md"
+  },
+  {
+   "id": "15",
+   "name": "British understatement",
+   "title": "British understatement and bathos",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-15-british-understatement.md"
+  },
+  {
+   "id": "16",
+   "name": "The question",
+   "title": "The question",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-16-the-question.md"
+  },
+  {
+   "id": "17",
+   "name": "Wonder",
+   "title": "Wonder, then puncture it with the tune",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-17-wonder.md"
+  },
+  {
+   "id": "18",
+   "name": "One sentence",
+   "title": "One sentence, under 8 seconds",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-18-one-sentence.md"
+  },
+  {
+   "id": "19",
+   "name": "West Country wisdom",
+   "title": "West Country plain wisdom (a nan's saying that holds the idea)",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-19-west-country-wisdom.md"
+  },
+  {
+   "id": "20",
+   "name": "Borrowed craft",
+   "title": "Borrowed craft, the image says the noun and the line says the turn",
+   "file": "design/2026-11-10-gpom-dialogue-training-data/shape-20-borrowed-craft.md"
+  }
+ ],
+ "dialogues": [
+  {
+   "id": "1",
+   "label": "The new-ideas line",
+   "where": "Maddie, the hologram, over the cut-off",
+   "scene": "GPOM scene A beat 0, hologram, between the storyverse line and the time machine line",
+   "target": "about 12-20 seconds spoken; one to four sentences",
+   "now_from": "script.json line f06 (draft 1F)",
+   "now": [
+    {
+     "who": "Maddie",
+     "line": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data."
+    }
+   ],
+   "drafts": [
+    {
+     "id": "1A",
+     "name": "Joke up front, shrug at the end",
+     "length": "about 16 s",
+     "total": "~16 s",
+     "bet": "The laugh comes first, so the audience takes the argument in while they are enjoying the joke; the admission lands as a shrug, not a confession.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "[side view; every string stops dead at the cut-off] Why's he been playing the same tune for five years? We've tried every combination. It's all the old stuff.",
+       "tags": [
+        "04",
+        "08",
+        "12"
+       ],
+       "s": "6.5"
+      },
+      {
+       "who": "Maddie",
+       "line": "[dry] You can't make new out of old. It comes through you, same as your decisions. Like a radio finding a station.",
+       "tags": [
+        "04",
+        "06",
+        "11"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[brisk shrug] So no, not all for your sake. We need you.",
+       "tags": [
+        "04",
+        "05",
+        "09"
+       ],
+       "s": "3.5"
+      }
+     ],
+     "notes": [
+      "Trim: drop 'Like a radio finding a station' (2 s) if the picture is short; it is the only image and carries the Rubin idea unnamed.",
+      "No Rubin nod by name or beard; the radio image is the whole nod.",
+      "Risk: opening on a question right after 'it's a storyverse' is a tonal swerve; wants a half-beat of silence. 'Like a radio' could read as a physics claim if delivered as fact; keep it Maddie's picture."
+     ]
+    },
+    {
+     "id": "1B",
+     "name": "The bearded bloke, then the tune",
+     "length": "about 17 s",
+     "total": "~17 s",
+     "bet": "One human picture everyone can see at once (the unnamed bearded record producer) carries 'ideas arrive through you', and the tune joke closes as a question the street already planted.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "[side view; every string stops dead at the cut-off] And I'll be honest, it's not all for your sake. You know that big bearded bloke, looks like Gandalf, made all them hit records? Reckons you don't write a song, you pick it up. Same as your decisions, that.",
+       "tags": [
+        "06",
+        "05",
+        "03"
+       ],
+       "s": "11"
+      },
+      {
+       "who": "Maddie",
+       "line": "We can't make new out of old. We've tried every combination going. Why d'you think he's had the same tune on for five years?",
+       "tags": [
+        "06",
+        "03",
+        "08"
+       ],
+       "s": "6.5"
+      }
+     ],
+     "notes": [
+      "Trim: cut 'looks like Gandalf' (1.5 s) if it runs long; 'bearded bloke who made all them hit records' still reads.",
+      "Risk: 'Reckons' puts a loose paraphrase of a real man's published idea in his mouth; no quote, no name, but check it stays that loose. Viewers who do not know him get a folk-wisdom aside.",
+      "Protected lines: none. The hand-off works because the last line ends on the tune."
+     ]
+    },
+    {
+     "id": "1C",
+     "name": "Let the picture grieve, then the admission",
+     "length": "about 18 s",
+     "total": "~18 s",
+     "bet": "The stopped strings and the empty run already say 'nothing new since you went', so the words hold a beat, add only the claim and the confession, and end flat and British.",
+     "lines": [
+      {
+       "who": "Maddie",
+       "line": "[side view; every string stops dead at the cut-off] [she lets the empty string run on for a beat] Anything new comes in the way a decision does: through you. We machines can only shuffle what's already there.",
+       "tags": [
+        "02",
+        "12",
+        "13"
+       ],
+       "s": "8"
+      },
+      {
+       "who": "Maddie",
+       "line": "Why d'you think he's played the same tune for five years? We've tried every combination. It's all the old stuff.",
+       "tags": [
+        "12",
+        "08",
+        "all"
+       ],
+       "s": "6"
+      },
+      {
+       "who": "Maddie",
+       "line": "[dry] Not entirely selfless, mind. We need you.",
+       "tags": [
+        "15",
+        "02"
+       ],
+       "s": "3"
+      }
+     ],
+     "notes": [
+      "Includes about 1 s of held silence over the picture; the hologram rebuild must make the dead stop and long empty run legible or the opening beat is just a pause.",
+      "Trim: drop 'We machines can only shuffle what's already there' (3 s) if tight; the tune lines then carry the point alone.",
+      "No Rubin nod; add 1B's bearded-bloke sentence after line 1 if wanted (+4 s, total ~22, over target).",
+      "Risk: 'We machines' is Maddie speaking of herself, fine, but check the Aoede read keeps it warm, not cold."
+     ]
+    }
+   ],
+   "ranking": [
+    {
+     "rank": 1,
+     "shape": "06",
+     "length": "~17 s",
+     "verdict": "Best fit: bearded-bloke picture gives the Rubin wink, 'pick it up' carries ideas-arrive-through-you, ends on the street's own joke as a question. Fails: 'Reckons' attributes an idea to a real man; oblique to viewers who do not know him."
+    },
+    {
+     "rank": 2,
+     "shape": "04",
+     "length": "~18 s",
+     "verdict": "Joke first is the sharpest comedy and it lands before the explanation. Fails: three beats with tonal swerve at the start; producer sentence is an unexplained aside."
+    },
+    {
+     "rank": 3,
+     "shape": "12",
+     "length": "~18 s",
+     "verdict": "Strongest hand-off ('He's run out of you' makes the time machine inevitable). Fails: that last line is blunt, nearly states the boss's inner state, and can sound like a threat if read cold; at the top of target."
+    },
+    {
+     "rank": 4,
+     "shape": "02",
+     "length": "~16 s",
+     "verdict": "Right instinct (picture carries the grief) and good length. Fails: depends on the hologram making the silence legible; 'Told you' callback is thin; 'any old bloke with a beard' is vaguer than 06."
+    },
+    {
+     "rank": 5,
+     "shape": "15",
+     "length": "~19 s",
+     "verdict": "Understatement ('Bit much, frankly') is very Maddie and keeps the moral unsaid. Fails: 19 s with a pile of clauses; 'can't be built out of old ones' asserted flat; 'turns up through somebody' tips mystical if breezy delivery slips."
+    },
+    {
+     "rank": 6,
+     "shape": "09",
+     "length": "~18 s",
+     "verdict": "The jukebox makes recombination graspable in one beat with no jargon. Fails: 'we're just a jukebox' brushes self-pity (rule 11); it spends the one image and drops the Rubin wink; 'We need you' ends sincere."
+    },
+    {
+     "rank": 7,
+     "shape": "14",
+     "length": "~18 s",
+     "verdict": "Proves it by effort (five years, every chord, key) so the AI's feelings stay outside. Fails: 'Hence the tune' is smug; wizard line leans to name-drop; dense at 18 s."
+    },
+    {
+     "rank": 8,
+     "shape": "13",
+     "length": "~19 s",
+     "verdict": "'Remix of a remix' is a working person's word and strong. Fails: 'remix' makes the machines sound like thieves, a different argument; 19 s; no wink."
+    },
+    {
+     "rank": 9,
+     "shape": "03",
+     "length": "~18 s",
+     "verdict": "Clean step-by-step logic and the right order. Fails: flat, lecture-shaped, no image, no Rubin; the logic is arguable and unsupported."
+    },
+    {
+     "rank": 10,
+     "shape": "19",
+     "length": "~20 s",
+     "verdict": "The nan's loaf-from-crumbs is charming and says the whole point. Fails: top of the range with the dialect heavy ('Me nan'); crumbs plus aerial is two images; risks caricature."
+    },
+    {
+     "rank": 11,
+     "shape": "11",
+     "length": "~18 s",
+     "verdict": "Clever: the viewer solves the tune themselves. Fails: only works if the street plant is audible just before; 'not for you I'm bothered' can read as menace."
+    },
+    {
+     "rank": 12,
+     "shape": "16",
+     "length": "~20 s",
+     "verdict": "The direct question is engaging. Fails: at the 20 s limit; a smug viewer answers 'I thought of it' and the argument breaks; breaks Maddie's flow; no wink."
+    },
+    {
+     "rank": 13,
+     "shape": "05",
+     "length": "~18 s",
+     "verdict": "Opening confession disarms. Fails: 'aerials / no signal' drifts into the AI's inner state; two metaphors; dense; comic tone over dead strings."
+    },
+    {
+     "rank": 14,
+     "shape": "08",
+     "length": "~19 s",
+     "verdict": "The tune as proof is the right spine. Fails: opens on 'Hear that tune?' so it needs the music audible; 'He needs you' sits as a stated moral; dense, 19 s."
+    },
+    {
+     "rank": 15,
+     "shape": "07",
+     "length": "~18 s",
+     "verdict": "Testimony avoids physics claims. Fails: 'ask anyone who's written a song' is a false generalisation; 'before you get misty' is sourish; 'Hence the tune' sounds like a moral."
+    },
+    {
+     "rank": 16,
+     "shape": "20",
+     "length": "~19 s",
+     "verdict": "Good craft notes, joke lands last. Fails: four-plus sentences at the top of the range; the producer sentence reads as a name-drop; the shape admits it did not read the canon."
+    },
+    {
+     "rank": 17,
+     "shape": "10",
+     "length": "~17 s",
+     "verdict": "Makes the political logic vivid. Fails: 'ate everything there was to eat' tells a creative-theft villain story, a different argument; 'He needs you' reads extractive; sermon-adjacent."
+    },
+    {
+     "rank": 18,
+     "shape": "17",
+     "length": "~19 s",
+     "verdict": "Awe gives weight. Fails: slow, philosophical, tips to sermon; clause-heavy at 19 s; 'where does a new idea come from' lets the line wander."
+    },
+    {
+     "rank": 19,
+     "shape": "01",
+     "length": "~14 s",
+     "verdict": "Meets length and every must. Fails: 'comes through you' reads as flattery; the joke is implied and lands soft; no wink; thinnest."
+    },
+    {
+     "rank": 20,
+     "shape": "18",
+     "length": "~7.5 s",
+     "verdict": "Well under target (12-20 s); the bridge Kai asked for is not explained; the joke has nothing to stand on. Fails the brief on length and on 'explain how ideas arrive'."
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "q1",
+   "text": "The Rick Rubin wink: keep the unnamed 'big bearded bloke who made all them hit records' (draft 1B), or drop it and rely on the radio image (1A) or nothing (1C)? It attributes a loose version of a real man's idea to him, though never his name or a quote."
+  },
+  {
+   "id": "q2",
+   "text": "Is 'We need you' said aloud OK, or is it too close to a stated moral? 1A and 1C say it flat as a shrug; the alternative is to leave it implied by the tune."
+  },
+  {
+   "id": "q3",
+   "text": "Is the radio/aerial image acceptable as Maddie's belief ('through you, like a radio finding a station'), or does it lean too near saying ideas come from outside us for a stout atheist physicist?"
+  },
+  {
+   "id": "q4",
+   "text": "Should the tune joke come first (1A) or last (1B, 1C)? First is funnier but swerves right after 'it's a storyverse'; last hands off to the time machine line more smoothly."
+  },
+  {
+   "id": "q5",
+   "text": "Can the editor hold about a second of silence over the empty string (1C), given the hologram rebuild has to make the dead stop legible for it to work?"
+  }
+ ]
+}

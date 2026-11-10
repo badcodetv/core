@@ -33,6 +33,8 @@ A wet Tuesday morning assembly in a 1980s English primary school, everyone cross
   (Kai, 2026-11-10): `songs/lyrics.md`, four lines, under 20 s, no crowd turn; the organ stops for the window.
   Style prompt ⬜, a `variations` round inside the direction.
 
+- **The drop (EXPLORING).** A separate instrumental: heavy drum and bass, no vocals, a loop cut in hard after the hymn's last chord under the tear (Kai, 2026-11-10). Its own track in Premiere; the hymn stays as recorded. Round `songs/dnb-r1`.
+
 ## Notes so far
 
 - 2026-11-10, Kai on round 1: likes the **school children singing it blasé**, the **piano is jarring**; wants it **combined with a grime beat** ("so the comparison is odd"), toward "school hymn plus grimy, dystopian". Round 2: `songs/hymn-r2/`.

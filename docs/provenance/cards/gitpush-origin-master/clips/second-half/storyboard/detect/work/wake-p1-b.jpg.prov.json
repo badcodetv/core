@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/wake-p1-b.jpg",
+ "made": "2026-11-10T16:07:38.714Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the tracked military robot, and the second image for the abandoned motorway: four of these tracked military robots parked close together in a weed-grown motorway lay-by beside the empty carriageway, dormant for months, their hulls dusted grey and littered with dead leaves, bindweed curled over the tracks. The nearest one has just woken: its sensor turret is lifting and turning, one small amber lamp lit, a shower of dust and dead leaves sliding off its hull. The others are still asleep. Flat overcast grey daylight, muted natural colour, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+   "/home/kai/.cache/detect-refs/S9-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "8805c374-9fe2-4ca8-9a68-e228efdaa7d0"
+}

@@ -1,0 +1,199 @@
+{
+ "title": "Detect Signal Picks",
+ "eyebrow": "GPOM second half · A Kill bots · round 24",
+ "heading": "The bridge: a kill bot hears the row",
+ "intro": "Your note (at4401): we jump from two people arguing in a basement to the kill bots racing down the motorway, and the brain does not accept the leap. Here are six different 1–2 s bridges, stills only (no credits spent). None uses the red KILL MODE or green STAND DOWN screens, which stay saved for the bunker TV. Pick in the row of the idea you want (more than one is fine) and note anything. The pick then gets animated.",
+ "round": 1,
+ "sections": [
+  {
+   "h": "Six ideas",
+   "lede": "Each row is one idea; the options are framings of it.",
+   "groups": [
+    {
+     "slot": "detect-turret",
+     "title": "1 · The turret snaps round",
+     "line": "The machine reacts with its body: the sensor head swings to the downs and one lamp lights. No interface, no words. Animates as a hard head-turn in 1 s.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "m/turret-p1-a.jpg",
+       "label": "a: low wide on the hard shoulder, downs behind",
+       "file": "work/turret-p1-a.jpg"
+      },
+      {
+       "id": "b",
+       "src": "m/turret-p2-a.jpg",
+       "label": "b: close on the lenses, lamp lit",
+       "file": "work/turret-p2-a.jpg"
+      },
+      {
+       "id": "c",
+       "src": "m/turret-p2-b.jpg",
+       "label": "c: tighter, lenses facing us",
+       "file": "work/turret-p2-b.jpg"
+      }
+     ]
+    },
+    {
+     "slot": "detect-hud",
+     "title": "2 · Its HUD hears voices",
+     "line": "The bot's own view in the calm teal PATROL state (not red, not KILL MODE): ORGANIC SIGNAL — LOCK, HUMAN x2, and the waveform is the real row from the lavatory. Made with hud.py. The only option that says it in words.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "m/hud-p1-a-hud.jpg",
+       "label": "a: looking down the motorway it is about to race",
+       "file": "work/hud-p1-a-hud.jpg"
+      },
+      {
+       "id": "b",
+       "src": "m/hud-p2-a-hud.jpg",
+       "label": "b: on the downs, thermal-white grass",
+       "file": "work/hud-p2-a-hud.jpg"
+      },
+      {
+       "id": "c",
+       "src": "m/hud-p2-b-hud.jpg",
+       "label": "c: on the downs, plain grey",
+       "file": "work/hud-p2-b-hud.jpg"
+      }
+     ]
+    },
+    {
+     "slot": "detect-hud-motion",
+     "title": "2 · The HUD options moving (3 s, with the row)",
+     "line": "The same three, playing: the meter twitches on every word of the row. Pick here only if the motion changes your mind.",
+     "kind": "video",
+     "opts": [
+      {
+       "id": "a",
+       "src": "m/hud-p1-a-hud.mp4",
+       "label": "a: motorway",
+       "file": "hud-p1-a-hud.mp4"
+      },
+      {
+       "id": "b",
+       "src": "m/hud-p2-a-hud.mp4",
+       "label": "b: downs, thermal",
+       "file": "hud-p2-a-hud.mp4"
+      },
+      {
+       "id": "c",
+       "src": "m/hud-p2-b-hud.mp4",
+       "label": "c: downs, grey",
+       "file": "hud-p2-b-hud.mp4"
+      }
+     ]
+    },
+    {
+     "slot": "detect-section",
+     "title": "3 · Cross-section: the sound comes up through the chalk",
+     "line": "Cause and effect in one frame: the row in the tiled room below, a kill bot on the grass above. A deliberate break in register (a cutaway).",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "m/section-p1-a.jpg",
+       "label": "a: rings of dust rising to the bot",
+       "file": "work/section-p1-a.jpg"
+      },
+      {
+       "id": "b",
+       "src": "m/section-p1-b.jpg",
+       "label": "b: rings round the room, bot further off",
+       "file": "work/section-p1-b.jpg"
+      },
+      {
+       "id": "c",
+       "src": "m/section-p2-b.jpg",
+       "label": "c: split frame, the row big below, bot right above",
+       "file": "work/section-p2-b.jpg"
+      }
+     ]
+    },
+    {
+     "slot": "detect-wake",
+     "title": "4 · The pack wakes up",
+     "line": "They were asleep for months; the voices wake one. Leaves and dust slide off as the turret lifts. Says \"this is new\" without any words.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "m/wake-p1-a.jpg",
+       "label": "a: lay-by, the nearest one shakes off the leaves",
+       "file": "work/wake-p1-a.jpg"
+      },
+      {
+       "id": "b",
+       "src": "m/wake-p1-b.jpg",
+       "label": "b: same, side-on, more dust",
+       "file": "work/wake-p1-b.jpg"
+      },
+      {
+       "id": "c",
+       "src": "m/wake-p2-b.jpg",
+       "label": "c: under a flyover in the rain, one lamp lit",
+       "file": "work/wake-p2-b.jpg"
+      }
+     ]
+    },
+    {
+     "slot": "detect-array",
+     "title": "5 · The ears",
+     "line": "Not its face but its ears: a ring of microphones unfolding, or a listening spike in the turf with a puddle trembling. The sound as a physical thing.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "m/array-p1-b.jpg",
+       "label": "a: microphone petals open on the turret",
+       "file": "work/array-p1-b.jpg"
+      },
+      {
+       "id": "b",
+       "src": "m/array-p1-c.jpg",
+       "label": "b: the same, wider fan",
+       "file": "work/array-p1-c.jpg"
+      },
+      {
+       "id": "c",
+       "src": "m/array-p2-a.jpg",
+       "label": "c: spike in the turf, the puddle ripples",
+       "file": "work/array-p2-a.jpg"
+      }
+     ]
+    },
+    {
+     "slot": "detect-vent",
+     "title": "6 · The vent on the hill",
+     "line": "The geography in one frame: where the voices get out (the bunker's air vent) and who hears them (the pack on the motorway below). c has no bot: a 1 s insert with the row leaking out.",
+     "kind": "image",
+     "opts": [
+      {
+       "id": "a",
+       "src": "m/vent-p1-a.jpg",
+       "label": "a: vent close, the pack and the bunker door below",
+       "file": "work/vent-p1-a.jpg"
+      },
+      {
+       "id": "b",
+       "src": "m/vent-p1-b.jpg",
+       "label": "b: vent on the bunker hill, the pack on the road",
+       "file": "work/vent-p1-b.jpg"
+      },
+      {
+       "id": "c",
+       "src": "m/vent-p2-a.jpg",
+       "label": "c: the grille alone (no bot)",
+       "warn": "16mm look; does not show a bot",
+       "file": "work/vent-p2-a.jpg"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/"
+}

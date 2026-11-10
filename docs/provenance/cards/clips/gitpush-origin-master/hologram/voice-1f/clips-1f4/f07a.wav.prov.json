@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f4/f07a.wav",
+ "made": "2026-11-10T18:31:15+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f4.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f07r-2.wav",
+ "why": "hologram 1F4 line f07a (Kai round 24 notes, 10 Nov); take picked as whisper-verbatim, no dead air",
+ "prompt": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.",
+ "inputs": {
+  "heard": "Of course he's built a time machine, it just needs consciousness to drive it. You can see the problem here.",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json"
+ },
+ "settings": {
+  "src_in": "0.00",
+  "src_out": "8.39"
+ }
+}

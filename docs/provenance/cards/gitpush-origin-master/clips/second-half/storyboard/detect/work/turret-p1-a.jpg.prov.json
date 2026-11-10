@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/turret-p1-a.jpg",
+ "made": "2026-11-10T16:01:44.553Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the tracked military robot and its boxy sensor turret, and the second image for the abandoned motorway: one tracked military robot standing alone and still on the weed-cracked hard shoulder of the abandoned motorway, seen from low down close beside its tracks. Its boxy sensor turret has just swung hard round to face the green chalk downs on the horizon at the right of frame, and one small amber lamp on the turret has just lit, the only warm point in the picture. Dead cars rust on the verge behind it, grass grows through the tarmac. Flat overcast grey daylight, muted natural colour, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+   "/home/kai/.cache/detect-refs/S9-c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "fb3c2702-3755-4bbf-bdc9-54303ca2a134"
+}

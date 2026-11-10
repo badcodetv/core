@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/section-p2-b.jpg",
+ "made": "2026-11-10T16:06:46.593Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the tiled lavatory and its two arguing people, and the second image for the tracked military robot: a split frame cut straight through the ground. The lower half is underground: a cramped Cold War lavatory of cream tiles lit by one fluorescent tube, a woman in a cream jumper and a man in a dark green jumper arguing, small in frame. The upper half is the surface above it: grass, a strip of grey sky, and the tracked military robot from the second image standing on the turf directly over the room, its sensor turret tilted down at the ground. Between the two, a thick band of white chalk and dark earth with roots, and faint fine cracks running up through it. Muted natural colour, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/lav-row.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/lav-row.jpg",
+   "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "527f2093-8ff6-4cc4-be83-67fb2dd335f7"
+}

@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/detect-spec.json",
+ "made": "2026-11-10T16:40:55+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "claude",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py",
+ "why": "GPOM A r24 detect-signal bridge (Kai at4401): spec for the coordinator"
+}

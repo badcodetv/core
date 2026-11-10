@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/audio/sfx-vent-hum.wav",
+ "made": "2026-11-10T16:40:54+00:00",
+ "by": "claude",
+ "kind": "sfx",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py",
+ "why": "GPOM A r24 detect-signal bridge (Kai at4401): sfx vent-hum (sources in detect-spec.json; fs824121 CC0 derjuli)"
+}

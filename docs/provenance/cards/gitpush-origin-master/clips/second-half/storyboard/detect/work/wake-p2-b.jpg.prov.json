@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/wake-p2-b.jpg",
+ "made": "2026-11-10T16:08:21.287Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the image for the tracked military robot: seen from behind and low, through tall wet grass and bramble, a row of these tracked military robots parked under a concrete motorway flyover, grimy and still, rainwater dripping from the underside of the bridge. One in the middle has woken and turned its sensor turret over its shoulder towards the camera, a single small amber lamp lit on it, the only warm point in the grey. Overcast light, muted natural colour, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/P1-patrol-blockbuster.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "f9b435e6-159f-4d56-8850-de9fc5d8004e"
+}

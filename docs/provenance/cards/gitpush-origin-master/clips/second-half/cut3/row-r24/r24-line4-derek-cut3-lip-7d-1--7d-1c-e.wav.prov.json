@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line4-derek-cut3-lip-7d-1--7d-1c-e.wav",
+ "made": "2026-11-10T16:28:25+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg rubberband",
+ "tool": "scripts/gpom/second-half-video/row-r24/fitline.py (wordwarp.py)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/audio/voice3/r19-row/7d-1c-e.wav",
+ "why": "round 24 (Kai r23): Derek's line 'But the world ended, Sandra!' fitted word by word to the clip cut3-lip-7d-1.mp4",
+ "inputs": {
+  "clip": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/cut3-lip-7d-1.mp4",
+  "plan": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/row-r24/r24-line4-derek-cut3-lip-7d-1--7d-1c-e.wav.plan.json"
+ },
+ "settings": {
+  "lag": "0.0",
+  "late": "0.04",
+  "tempo_range": "1.0-1.011",
+  "max_late": "0.0",
+  "pause_added": "0.019",
+  "clip_time_of_t0": "0.0"
+ }
+}

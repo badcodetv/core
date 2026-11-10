@@ -3,7 +3,7 @@
 > Stage 1 (`scene-beats`), 2026-11-10, Kai and Claude. A BadCode Short, its own project (`short-the-rules`).
 > Rulings and Kai's words: `picks.md`. Lyrics: `../../songs/lyrics.md`. Sound: `../../sound.md`. Look: `../../look.md`.
 
-**Format:** portrait 9:16, **20 s maximum.**
+**Format:** portrait 9:16. Was 20 s maximum; Kai 2026-11-10: the drum and bass tear may take it past 20 s ("it doesn't feel like we're rushing the short").
 
 ## The sentence
 

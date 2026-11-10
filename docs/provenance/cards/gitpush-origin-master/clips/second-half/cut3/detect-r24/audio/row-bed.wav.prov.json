@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/audio/row-bed.wav",
+ "made": "2026-11-10T16:40:54+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/work/row-muffled.wav",
+ "why": "GPOM A r24 detect-signal bridge (Kai at4401): row bed, muffled then the bot's feed",
+ "inputs": {
+  "feed": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/work/row-feed.wav"
+ }
+}

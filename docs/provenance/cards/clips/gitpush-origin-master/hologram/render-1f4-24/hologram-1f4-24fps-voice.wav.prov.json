@@ -1,0 +1,22 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/hologram-1f4-24fps-voice.wav",
+ "made": "2026-11-10T19:31:46+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "design/2026-11-10-gpom-hologram-1f4/finish.py (ffmpeg adelay+amix)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips/s01.wav",
+ "why": "hologram 1F4 (Kai round 24 notes, 10 Nov): as 1F3, with f02's final d restored, f03/f05/f06/f07a re-voiced (f06 shorter, picked for the f01/f02 accent by measurement), re-timed; arc draws on It just needs",
+ "inputs": {
+  "page": "design/2026-11-10-gpom-hologram-1f4/index.html",
+  "builder": "design/2026-11-10-gpom-hologram-1f4/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f4.json",
+  "stack": "design/2026-11-10-gpom-hologram-1f4/stack.js"
+ },
+ "settings": {
+  "fps": "24",
+  "size": "1920x1080",
+  "timing": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f4-24/edit.json"
+ }
+}

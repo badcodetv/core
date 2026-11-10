@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f3-24/edit.json",
+ "made": "2026-11-10T17:47:30+00:00",
+ "by": "claude",
+ "kind": "other",
+ "engine": "make.py",
+ "tool": "design/2026-11-10-gpom-hologram-1f3/make.py (timing from whisper word times) + finish.py (copy)",
+ "why": "hologram 1F3 timing: segment lengths, clip starts, cloud visits, camera times, marks (Kai round 23 notes + f06 1C)",
+ "inputs": {
+  "builder": "design/2026-11-10-gpom-hologram-1f3/make.py",
+  "voice": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f3.json"
+ }
+}

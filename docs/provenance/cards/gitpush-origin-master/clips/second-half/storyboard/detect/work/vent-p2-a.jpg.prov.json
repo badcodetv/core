@@ -1,0 +1,23 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/vent-p2-a.jpg",
+ "made": "2026-11-10T16:13:32.772Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the image only for the grassy chalk hillside: a tight low close-up of a rusty steel ventilation grille set into a concrete block half buried in long grass on a down, its slats dark, the grass around it moving in the wind. One thin cobweb across the slats trembles. Beyond it the land falls away to a grey valley under a flat overcast sky. Muted natural colour, fine film grain. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/SB12c.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/SB12c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "d1837a74-c585-4dc0-b79a-2f7a7eb63254"
+}

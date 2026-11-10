@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST1-e.jpg",
+ "made": "2026-11-10T18:36:41.123Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Every gang member wears a knitted balaclava covering the whole head, with no eye, nose or mouth holes; a large white ring is stitched round the face, and a red triangle sits high over the wearer's left eye (on the right of the picture, at about 2 o'clock); gloves on both hands, collars and cuffs closed, no skin showing anywhere. Tall portrait frame, a straight-down bird's-eye view at night from the summit of an enormous tower of stacked paper in an empty warehouse, so the lens hangs over the edge of a sheer white cliff of page edges that drops away and tapers sharply towards a wet concrete floor far beneath. Right against the lens at the bottom of the frame lies the uppermost page, its fibres sharp, printed with THE RULES in heavy black capitals, the only thing perfectly in focus. Down at the base of that drop, tiny and a little blurred by the depth, four figures in everyday present-day British gear (a puffer coat, a hi-vis vest over a hoodie, a black bomber, a waterproof cagoule, worn trainers) tip their heads right back to stare up into the camera; their wool hoods come in four muted night colours, bottle green, navy, oxblood and charcoal. Three hold small torches pointed straight up the paper face, throwing narrow white shafts that rake across the page edges and catch the stitched ring and red triangle on every hood. Apart from those beams there is just a weak amber streetlamp glow leaking through a grimy window high up the wall, reflected in a puddle by their feet. Everything else falls away into deep black; very wide lens with steep converging lines, a huge gulf of depth between the page and the floor, fine film grain, clean dry air. The paper looms and looks down on them, the drop felt from the wrong side.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "5abf3319-f967-49a2-b3e2-4dc00ea6fd6f"
+}

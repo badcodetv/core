@@ -1,0 +1,17 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d22/preview.mp4",
+ "made": "2026-11-10T17:55:23+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "cut3.py",
+ "why": "scene A round 24: Kai's 18 round-23 notes (words, hologram 1F3, row re-sync, detect bridge)",
+ "inputs": {
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d22/edl.json",
+  "hologram": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/render-1f3-24/hologram-1f3-beads-24fps-picture.mp4"
+ },
+ "settings": {
+  "tag": "d22"
+ }
+}

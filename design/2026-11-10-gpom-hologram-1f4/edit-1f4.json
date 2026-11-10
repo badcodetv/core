@@ -1,0 +1,166 @@
+{
+ "segs": {
+  "stack": 33.84,
+  "lead": 9.51,
+  "bead1": 3.95,
+  "bead2": 4.48,
+  "bead3": 19.02,
+  "open": 2.5,
+  "maybes": 15.15,
+  "pick": 1.8,
+  "settle": 7.49,
+  "toRiver": 3.0,
+  "river": 17.98,
+  "flyDown": 24.47,
+  "arcDraw": 2.5,
+  "arcHold": 3.07,
+  "off": 1.2
+ },
+ "clips": {
+  "s01": {
+   "start": 0.35,
+   "text": "[brisk; the stack, the camera descending, each layer landing on its word] Right. This is how you lot saw the world. Society's made of people. People are made of cells. Cells are chemistry. Chemistry's atoms. Atoms are quarks and leptons. And under all that… the maths.",
+   "needsVoice": false
+  },
+  "s02": {
+   "start": 17.87,
+   "text": "[pull back: the whole stack; beside it an empty outlined slot] Every bit of it's real. But we've worked out there's something missing.",
+   "needsVoice": false
+  },
+  "s03": {
+   "start": 25.09,
+   "text": "[the slot lights up warm] Consciousness. Yours. It's as fundamental as quarks and leptons.",
+   "needsVoice": false
+  },
+  "f01": {
+   "start": 31.59,
+   "text": "[the light lands on the string; the first bead lights; Derek at the toaster inside it] Your consciousness and the way you feel drives your decisions, which in turn writes the collective story, one decision at a time. For example: Derek picks toast, not cereal.",
+   "needsVoice": false
+  },
+  "f02": {
+   "start": 45.32,
+   "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!",
+   "needsVoice": false
+  },
+  "f03": {
+   "start": 53.91,
+   "text": "[the beads glow] [wistful, a little regretful] We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines. You humans have got a word for it: qualia. [warm] It's what makes you so special.",
+   "needsVoice": false
+  },
+  "f04": {
+   "start": 69.84,
+   "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+   "needsVoice": false
+  },
+  "f04b": {
+   "start": 89.9,
+   "text": "[back on the one timeline] And as you make your decisions and write your story, all those maybes settle into what really happens.",
+   "needsVoice": false
+  },
+  "f05": {
+   "start": 97.99,
+   "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. [pause] It's a storyverse. [pause] And there's only one of them, so it's really important.",
+   "needsVoice": false
+  },
+  "f06": {
+   "start": 119.72,
+   "text": "[side view; every string stops dead at the cut-off] As you can see, when you lot went away, there were no conscious decisions made any more. And guess what that means for us? No new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.",
+   "needsVoice": false
+  },
+  "f07a": {
+   "start": 139.77,
+   "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here.",
+   "needsVoice": false
+  }
+ },
+ "exc": [
+  [
+   77.38,
+   81.51
+  ],
+  [
+   81.76,
+   86.23
+  ]
+ ],
+ "glow": [
+  53.71,
+  70.8
+ ],
+ "draft": "1F4",
+ "stack": {
+  "labels": [
+   "SOCIETY",
+   "INDIVIDUAL",
+   "BIOLOGY",
+   "CHEMISTRY",
+   "PHYSICS",
+   "MATHEMATICS"
+  ],
+  "lay": [
+   4.53,
+   5.43,
+   7.45,
+   9.29,
+   11.19,
+   16.51
+  ],
+  "quarks": 12.39,
+  "leptons": 13.25,
+  "under": 14.87,
+  "s02": 17.87,
+  "missing": 23.05,
+  "s03": 25.09,
+  "consc": 24.99,
+  "quarks3": 29.33,
+  "depart": 30.84,
+  "fly": 3.0
+ },
+ "cam": {
+  "back": 2.6,
+  "pin0": 100.79,
+  "pind": 2.2,
+  "out0": 116.12,
+  "rise0": 141.05,
+  "rised": 3.2
+ },
+ "placeholder": {},
+ "street": {
+  "b01": "before the hologram, on the street (ends \"Please, let me show you what we found.\"; the hologram cuts in as it finishes)",
+  "b02": "CUT in 1F2 (Kai, 10 Nov)",
+  "f07b": {
+   "after_hologram_ends": 150.46,
+   "note": "back on the street; not on the hologram clock or in voice.wav"
+  }
+ },
+ "marks": {
+  "layer_society": 4.63,
+  "layer_individual": 5.53,
+  "layer_biology": 7.55,
+  "layer_chemistry": 9.39,
+  "layer_physics": 11.29,
+  "layer_mathematics": 16.61,
+  "quarks_grid": 12.49,
+  "slot_appears": 23.15,
+  "slot_lights": 25.09,
+  "light_leaves": 30.84,
+  "light_lands": 33.84,
+  "toast": 43.45,
+  "sorry": 47.4,
+  "married": 51.88,
+  "cloud_blooms": 70.8,
+  "did_you_know": 77.53,
+  "cat_alive": 79.44,
+  "cat_dead": 84.0,
+  "yet_flash": 88.65,
+  "one_timeline_f04b": 89.9,
+  "to_river": 97.74,
+  "inside_river": 102.99,
+  "leave_river": 116.12,
+  "arrive_square_on": 118.72,
+  "rise": 141.05,
+  "arc_draws": 143.19,
+  "screen_off": 148.76,
+  "TD": 149.96
+ }
+}

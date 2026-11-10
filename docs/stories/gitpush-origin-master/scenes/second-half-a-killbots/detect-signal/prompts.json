@@ -1,0 +1,67 @@
+{
+ "about": "Round 24, chunk 4 (Kai at4401): a 1-2 s bridge between the row in the bunker lavatory and the kill bots racing down the motorway (cut3-V8). The shot is 'a kill bot detects the organic signal'. It must NOT spend the red KILL MODE / green STAND DOWN screens (saved for the bunker TV). Stills only, Flow flow_edit_image, Nano Banana Pro, 16:9, 2 candidates per prompt. Refs copied to ~/.cache/detect-refs (law 20). Media: /mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/.",
+ "house": "16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "refs": {
+  "bot": "moodboard/P1-patrol-blockbuster.jpg (the canonical kill bot)",
+  "motorway": "storyboard/cut3/S9-c.jpg (the V8 plate the bridge cuts into)",
+  "pov": "moodboard/K5-pov-red-race.jpg (the POV hull)",
+  "bunker": "storyboard/SB12c.jpg (bunker door in the hillside)",
+  "lav": "frame at 177 s of cut3/A-d21/preview.mp4 (the lavatory row)"
+ },
+ "ideas": [
+  {
+   "id": "turret",
+   "name": "The turret snaps round",
+   "different": "The machine reacts: a physical head-turn and one lamp lighting. No interface at all.",
+   "prompts": [
+    {"p": "p1", "refs": ["bot", "motorway"], "prompt": "Using the first image for the tracked military robot and its boxy sensor turret, and the second image for the abandoned motorway: one tracked military robot standing alone and still on the weed-cracked hard shoulder of the abandoned motorway, seen from low down close beside its tracks. Its boxy sensor turret has just swung hard round to face the green chalk downs on the horizon at the right of frame, and one small amber lamp on the turret has just lit, the only warm point in the picture. Dead cars rust on the verge behind it, grass grows through the tarmac. Flat overcast grey daylight, muted natural colour, fine film grain. {house}"},
+    {"p": "p2", "refs": ["bot"], "prompt": "Using the image for the tracked military robot: an extreme close-up of only its boxy sensor turret, filling most of the frame, scratched olive armour plate, a cluster of dark round lenses and a small grille. The turret is caught turning sharply towards the left of frame, and one small amber lamp beside the lenses has just switched on, the only warm colour in the frame. Behind it, out of focus, an empty grey motorway and a pale overcast sky. Shallow depth of field, fine film grain, muted natural colour. {house}"}
+   ]
+  },
+  {
+   "id": "hud",
+   "name": "Its HUD hears voices",
+   "different": "The bot's own view, natural colour (not red), with a waveform of the actual row and ORGANIC SIGNAL as an ffmpeg layer. The only option that says it in words.",
+   "prompts": [
+    {"p": "p1", "refs": ["pov", "motorway"], "prompt": "Using the first image for the robot's own point of view and its armoured front hull, and the second image for the abandoned motorway: in natural colour, not red, the camera mounted low on the front of a tracked military robot standing still in the middle of the empty abandoned motorway. Its angular armoured nose and the tops of its tracks sit at the bottom of frame. Ahead the empty carriageway runs straight away to the green chalk downs on the horizon, dead cars on the verges, grass in the cracks. Flat overcast grey daylight. A clean picture with no interface, no overlay, no tint. {house}"},
+    {"p": "p2", "refs": ["pov", "bunker"], "prompt": "Using the first image for the robot's own point of view and its armoured front hull, and the second image only for the grassy hillside: in black and white like a thermal camera, the camera mounted low on the front of a tracked military robot standing still on a grassy chalk down, its angular armoured nose and tracks at the bottom of frame, looking across the long grass at a low rounded green hill on the horizon under a flat sky. No door or building is visible, just the hill. A clean picture with no interface, no overlay, no tint. {house}"}
+   ]
+  },
+  {
+   "id": "section",
+   "name": "Cross-section: the sound comes up through the chalk",
+   "different": "The only frame that shows cause and effect at once: the row below, the bot above. A cutaway, so a deliberate break in register.",
+   "prompts": [
+    {"p": "p1", "refs": ["lav", "bunker"], "prompt": "Using the first image for the tiled bunker lavatory and its two arguing people, and the second image for the grassy hillside: a photographic cutaway cross-section through a chalk hill, like a museum diorama sliced open. The top third is the grassy surface under an overcast sky; below it, layers of white chalk and grey flint; deep at the bottom a small lit room of white tiles with two tiny figures in it, a woman in a cream jumper and a man in a dark green jumper, his arms thrown wide. Faint rings of disturbed chalk dust rise from the little room up through the layers towards the surface, where one tracked military robot stands small on the grass at the top. Muted natural colour, soft light, fine film grain. {house}"},
+    {"p": "p2", "refs": ["lav", "bot"], "prompt": "Using the first image for the tiled lavatory and its two arguing people, and the second image for the tracked military robot: a split frame cut straight through the ground. The lower half is underground: a cramped Cold War lavatory of cream tiles lit by one fluorescent tube, a woman in a cream jumper and a man in a dark green jumper arguing, small in frame. The upper half is the surface above it: grass, a strip of grey sky, and the tracked military robot from the second image standing on the turf directly over the room, its sensor turret tilted down at the ground. Between the two, a thick band of white chalk and dark earth with roots, and faint fine cracks running up through it. Muted natural colour, fine film grain. {house}"}
+   ]
+  },
+  {
+   "id": "wake",
+   "name": "The pack wakes up in a lay-by",
+   "different": "Dormant to alive: months of dust and leaves sliding off. Shows they were asleep, so the voices are the cause.",
+   "prompts": [
+    {"p": "p1", "refs": ["bot", "motorway"], "prompt": "Using the first image for the tracked military robot, and the second image for the abandoned motorway: four of these tracked military robots parked close together in a weed-grown motorway lay-by beside the empty carriageway, dormant for months, their hulls dusted grey and littered with dead leaves, bindweed curled over the tracks. The nearest one has just woken: its sensor turret is lifting and turning, one small amber lamp lit, a shower of dust and dead leaves sliding off its hull. The others are still asleep. Flat overcast grey daylight, muted natural colour, fine film grain. {house}"},
+    {"p": "p2", "refs": ["bot"], "prompt": "Using the image for the tracked military robot: seen from behind and low, through tall wet grass and bramble, a row of these tracked military robots parked under a concrete motorway flyover, grimy and still, rainwater dripping from the underside of the bridge. One in the middle has woken and turned its sensor turret over its shoulder towards the camera, a single small amber lamp lit on it, the only warm point in the grey. Overcast light, muted natural colour, fine film grain. {house}"}
+   ]
+  },
+  {
+   "id": "array",
+   "name": "The ears: the listening kit",
+   "different": "Not the bot's face but its ears: a microphone array or a ground spike. Detail shot, the sound as a physical thing.",
+   "prompts": [
+    {"p": "p1", "refs": ["bot"], "prompt": "Using the image for the tracked military robot: a close-up of the back of its sensor turret, where a ring of small black microphone pods on short stalks has just unfolded upwards like the petals of a flower, each pod angled towards the right of frame. Fine beads of rain on the olive armour, a thin antenna whip. Behind, out of focus, grey overcast sky and a line of green downs. Muted natural colour, shallow depth of field, fine film grain. {house}"},
+    {"p": "p2", "refs": ["bot", "bunker"], "prompt": "Using the first image for the tracked military robot, and the second image only for the grassy chalk downland: very low on the ground, a slim steel listening spike driven deep into the short turf of a chalk down, its cable running back to the tracked military robot standing out of focus behind it. Right beside the spike, a small puddle in a chalky tyre rut is trembling, fine concentric ripples running across its surface. Overcast grey light, muted natural colour, fine film grain. {house}"}
+   ]
+  },
+  {
+   "id": "vent",
+   "name": "The vent on the hill, the bots on the road below",
+   "different": "Geography in one frame: where the voices get out (the bunker's air vent) and who hears them (bots on the motorway in the distance).",
+   "prompts": [
+    {"p": "p1", "refs": ["bunker", "motorway"], "prompt": "Using the first image for the grassy chalk hillside over the Cold War bunker, and the second image for the abandoned motorway: in the foreground, sticking out of the long grass at the top of the down, a rusty Cold War ventilation shaft with a mushroom-shaped steel cowl, a faint breath of warm air shimmering out of it. Far below in the valley, the abandoned motorway runs across the frame, and on it a small group of tracked military robots have stopped, their sensor turrets all turned up towards the hill. Flat overcast grey daylight, muted greens and greys, fine film grain. {house}"},
+    {"p": "p2", "refs": ["bunker"], "prompt": "Using the image only for the grassy chalk hillside: a tight low close-up of a rusty steel ventilation grille set into a concrete block half buried in long grass on a down, its slats dark, the grass around it moving in the wind. One thin cobweb across the slats trembles. Beyond it the land falls away to a grey valley under a flat overcast sky. Muted natural colour, fine film grain. Styled as a 1980s British television drama shot on 16mm film: faded colour, soft contrast, heavy grain. {house}"}
+   ]
+  }
+ ]
+}

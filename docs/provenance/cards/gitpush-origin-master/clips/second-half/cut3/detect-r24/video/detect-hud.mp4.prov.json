@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/video/detect-hud.mp4",
+ "made": "2026-11-10T16:40:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/work/hud-full.mp4",
+ "why": "GPOM A r24 detect-signal bridge (Kai at4401): HUD shot",
+ "settings": {
+  "dur": "1.0"
+ }
+}

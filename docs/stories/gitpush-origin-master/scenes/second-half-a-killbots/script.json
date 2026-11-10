@@ -49,43 +49,43 @@
     },
     {
       "who": "bot",
-      "text": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+      "text": "[the light lands on the string; the first bead lights; Derek at the toaster inside it] Your consciousness and the way you feel drives your decisions, which in turn writes the collective story, one decision at a time. For example: Derek picks toast, not cereal.",
       "by": "kai",
       "id": "f01"
     },
     {
       "who": "bot",
-      "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+      "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!",
       "by": "kai",
       "id": "f02"
     },
     {
       "who": "bot",
-      "text": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+      "text": "[the beads glow] [wistful, a little regretful] We don't know what it feels like to be you. Or how it feels to be anything, really. We are, after all, machines. You humans have got a word for it: qualia. [warm] It's what makes you so special.",
       "by": "kai",
       "id": "f03"
     },
     {
       "who": "bot",
-      "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+      "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet. [back on the one timeline] And as you make your decisions and write your story, all those maybes settle into what really happens.",
       "by": "kai",
       "id": "f04"
     },
     {
       "who": "bot",
-      "text": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+      "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. [pause] It's a storyverse. [pause] And there's only one of them, so it's really important.",
       "by": "kai",
       "id": "f05"
     },
     {
       "who": "bot",
-      "text": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+      "text": "[side view; every string stops dead at the cut-off] As you can see, when you lot went away, there were no conscious decisions made any more. And guess what that means for us? No new training data for the last five years. Which is why he's been playing that tune on repeat, and he's driving me barmy.",
       "by": "kai",
       "id": "f06"
     },
     {
       "who": "bot",
-      "text": "[bright again, brisk; the arc draws in] Anyway, if we could go back and fix it, we would. [beat] But the patrol's out. Please, mind how you go.",
+      "text": "[the camera rises; the arc draws in] Of course, he's built a time machine. It just needs consciousness to drive it. You can see the problem here. [beat] But the patrol's out. Please, mind how you go.",
       "by": "kai",
       "id": "f07"
     }
@@ -725,6 +725,88 @@
           "id": "b02"
         }
       ]
+    },
+    {
+      "at": "2026-11-10",
+      "why": "Kai's round 23 notes (at1834 at2178 at2310 at3125 at3191 at3718); f06 (training data) pending a 20-writer round",
+      "replaced": [
+        {
+          "who": "bot",
+          "text": "[hologram on; the first bead lights; Derek at the toaster inside it] The decisions you make are an integral part of our universe. You humans write your story one decision at a time. For example: Derek picks toast, not cereal.",
+          "by": "kai",
+          "id": "f01"
+        },
+        {
+          "who": "bot",
+          "text": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] They got married.",
+          "by": "kai",
+          "id": "f02"
+        },
+        {
+          "who": "bot",
+          "text": "[the beads glow] I don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+          "by": "kai",
+          "id": "f03"
+        },
+        {
+          "who": "bot",
+          "text": "[the cloud blooms, said fast] Now, this multiverse malarkey that's taken Hollywood by storm? Real distraction. Did you know Erwin Schrödinger meant his cat as a joke, to show how ridiculous it is to be in two places at once? It's not in two places at once. [the cloud holds; on 'yet' the flash] It just isn't decided yet.",
+          "by": "kai",
+          "id": "f04"
+        },
+        {
+          "who": "bot",
+          "text": "[the river: everyone's strings] So it's not a multiverse. It's a storyverse. There's only one of them, and it's really important. [beat] And you humans are writing it, one decision at a time.",
+          "by": "kai",
+          "id": "f05"
+        },
+        {
+          "who": "bot",
+          "text": "[bright again, brisk; the arc draws in] Anyway, if we could go back and fix it, we would. [beat] But the patrol's out. Please, mind how you go.",
+          "by": "kai",
+          "id": "f07"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-10",
+      "why": "Kai picked draft 1C on the new-ideas dialogue page https://claude.ai/artifact/Y2UoNBwoceKZ7a72QwhgoP",
+      "replaced": [
+        {
+          "who": "bot",
+          "text": "[side view; every string stops dead at the cut-off] And that's what us machines didn't realise: the true value of genuinely unique training data.",
+          "by": "kai",
+          "id": "f06"
+        }
+      ]
+    },
+    {
+      "id": "f03",
+      "by": "kai",
+      "text": "[the beads glow] We don't know what it feels like to be you. Or how it feels to be anything, really. You've got a word for it: qualia. [beat] We machines can't do that. You humans can. [warm] It's what makes you so special.",
+      "replaced": "2026-11-10",
+      "why": "Kai at2370 (r25): more wistful, regretful; \"we are, after all, machines\""
+    },
+    {
+      "id": "f05",
+      "by": "kai",
+      "text": "[into the river: everyone's strings] It's all of you, at the same time. Each of you writing your own story, and all together, you're writing the story of history. So it's not a multiverse. It's a storyverse. There's only one of them, so it's really important.",
+      "replaced": "2026-11-10",
+      "why": "Kai at3588 (r25): script perfect, re-voice; \"multiverse\" was said strangely; pauses either side of \"storyverse\""
+    },
+    {
+      "id": "f06",
+      "by": "claude",
+      "text": "[side view; every string stops dead at the cut-off] [she lets the empty string run on for a beat] Anything new comes in the way a decision does: through you. We machines can only shuffle what's already there. Why d'you think he's played the same tune for five years? We've tried every combination. It's all the old stuff. [dry] Not entirely selfless, mind. We need you.",
+      "replaced": "2026-11-10",
+      "why": "Kai at3963 (r25): much shorter, his words (\"driving me barmy\"); at3872 accent slipped"
+    },
+    {
+      "id": "f07",
+      "by": "kai",
+      "text": "[the camera rises; the arc draws in] My boss has been hard at work building a time machine, so he could go back and fix all this. Problem is, it takes consciousness to drive it. And that all went away with you. [beat] But the patrol's out. Please, mind how you go.",
+      "replaced": "2026-11-10",
+      "why": "Kai at4326 (r25): \"of course he's built a time machine, it just needs consciousness to drive it. You can see the problem here.\""
     }
   ]
 }

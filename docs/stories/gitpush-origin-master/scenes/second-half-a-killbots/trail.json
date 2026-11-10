@@ -622,5 +622,87 @@
   "rebuild": "python3 scripts/gpom/second-half-video/cut3.py A --tag d21 && python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A",
   "feedback": "feedback/timeline-r23",
   "feedback_docs": 72
+ },
+ {
+  "at": "2026-11-10T15:53:08+00:00",
+  "stage": "timeline",
+  "round": 24,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Kai's 19 notes on round 23 dumped to feedback/timeline-r24 and answered on the page; plan in four chunks",
+  "feedback": "feedback/timeline-r24",
+  "feedback_docs": 91
+ },
+ {
+  "at": "2026-11-10T15:58:04+00:00",
+  "stage": "timeline",
+  "round": 24,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "Kai's rulings on the round 24 plan",
+  "decided": [
+   "Kai: quantum bridge = the softer one ('all those maybes settle into what really happens'); training-data line = 20 writers, Rick Rubin as core inspiration, unnamed; time machine line as drafted; go on chunks 3 and 4"
+  ]
+ },
+ {
+  "at": "2026-11-10T15:58:57+00:00",
+  "stage": "dialogue",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Y2UoNBwoceKZ7a72QwhgoP",
+  "what": "dialogue options: the new-ideas / training-data line (f06), 20 writers, Rick Rubin unnamed (Kai at3509)",
+  "rebuild": "python3 scripts/scene/build-dialogue.py design/2026-11-10-gpom-dialogue-training-data/options.json design/2026-11-10-gpom-dialogue-training-data.html"
+ },
+ {
+  "at": "2026-11-10T16:06:36+00:00",
+  "stage": "dialogue",
+  "round": 8,
+  "url": "https://claude.ai/artifact/Y2UoNBwoceKZ7a72QwhgoP",
+  "what": "Kai's pick on the new-ideas line",
+  "decided": [
+   "Kai: let's go with 1C"
+  ]
+ },
+ {
+  "at": "2026-11-10T16:16:41+00:00",
+  "stage": "picks",
+  "round": 24,
+  "url": "https://claude.ai/artifact/XuQF88reFYQADawcjdJMKk",
+  "what": "detect-signal shot: still options (Kai at4401); 6 ideas, 18 stills + 3 HUD clips; prompts in detect-signal/prompts.json; Flow project 90a0153b ('Nov 10 - 16:00')",
+  "rebuild": "copy each option's 'file' (relative to picks.json 'media') to <pub>/<src>, then python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots/detect-signal/picks.json <pub>/index.html"
+ },
+ {
+  "at": "2026-11-10T16:30:48+00:00",
+  "stage": "picks",
+  "round": 24,
+  "url": "https://claude.ai/artifact/XuQF88reFYQADawcjdJMKk",
+  "what": "Kai's detect-signal picks (dumped to feedback/detect-picks-r24)",
+  "decided": [
+   "Kai: vent c (grille) first, then turret c (lenses), then HUD a (audio overlay), then the tanks race off; quick, not a long clip"
+  ]
+ },
+ {
+  "at": "2026-11-10T16:31:03+00:00",
+  "stage": "picks",
+  "round": 24,
+  "url": "https://claude.ai/artifact/XuQF88reFYQADawcjdJMKk",
+  "what": "detect-signal picks (dump in feedback/detect-picks-r24): vent c (vent-p2-a) -> turret c (turret-p2-b, lamp to white) -> HUD a (hud-p1-a-hud) -> V8; ~1 s each; section/wake/array dropped",
+  "decided": [
+   "Kai: start off with the vent, then cut to the lenses, and then cut to the HUD, and that's it; that's all we need"
+  ]
+ },
+ {
+  "at": "2026-11-10T17:56:43+00:00",
+  "stage": "timeline",
+  "round": 24,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 24: A-d22 (4:03) - new words voiced, hologram 1F3 (stack + cats), row re-synced, detect bridge",
+  "rebuild": "python3 scripts/scene/build-timeline.py docs/stories/gitpush-origin-master/scenes/second-half-a-killbots <scratchpad>/tl-A"
+ },
+ {
+  "at": "2026-11-10T18:17:20+00:00",
+  "stage": "timeline",
+  "round": 25,
+  "url": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ",
+  "what": "round 25 notes dumped and answered (7 notes on round 24)",
+  "feedback": "feedback/timeline-r25",
+  "feedback_docs": 98
  }
 ]

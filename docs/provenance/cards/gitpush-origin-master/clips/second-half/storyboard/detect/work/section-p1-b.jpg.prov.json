@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/section-p1-b.jpg",
+ "made": "2026-11-10T16:05:55.190Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the tiled bunker lavatory and its two arguing people, and the second image for the grassy hillside: a photographic cutaway cross-section through a chalk hill, like a museum diorama sliced open. The top third is the grassy surface under an overcast sky; below it, layers of white chalk and grey flint; deep at the bottom a small lit room of white tiles with two tiny figures in it, a woman in a cream jumper and a man in a dark green jumper, his arms thrown wide. Faint rings of disturbed chalk dust rise from the little room up through the layers towards the surface, where one tracked military robot stands small on the grass at the top. Muted natural colour, soft light, fine film grain. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/lav-row.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/lav-row.jpg",
+   "/home/kai/.cache/detect-refs/SB12c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "e475d138-2f51-4f89-a567-bf9da15a6182"
+}

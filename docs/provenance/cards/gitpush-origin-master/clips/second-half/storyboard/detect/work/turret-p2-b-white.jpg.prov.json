@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/turret-p2-b-white.jpg",
+ "made": "2026-11-10T16:34:44+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "python-pil",
+ "tool": "warmth-masked recolour, region x800-960 y220-345: pixels with r-b>12 blended (k=(r-b-12)/35) to luma x1.1 tinted (0.93,0.98,1.07)",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/turret-p2-b.jpg",
+ "why": "Kai's pick turret c with the lamp white not amber (Maddie's colour); two flow_edit_image tries kept it amber (turret-p2-b-white-a/b)"
+}

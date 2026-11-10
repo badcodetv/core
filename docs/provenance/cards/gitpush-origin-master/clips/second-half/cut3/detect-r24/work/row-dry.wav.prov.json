@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/work/row-dry.wav",
+ "made": "2026-11-10T16:40:54+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d21/stems",
+ "why": "GPOM A r24 detect-signal bridge (Kai at4401): the row under the bridge",
+ "inputs": {
+  "src": "02-vox-derek + 04-vox-sandra 171.5-175.1 s"
+ }
+}

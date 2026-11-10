@@ -54,10 +54,10 @@
     "timeline": "https://claude.ai/artifact/Jjvd8FPvF4KJUnVDQLYzkQ"
   },
   "cut": {
-    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d21/edl.json",
-    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d21/preview.mp4",
-    "round": "d21",
-    "what": "round 23 (Kai at1293): 'Material science is real' cut; straight from 'let me show you what we found' into hologram 1F2, which opens on the materialist stack (society to maths, then consciousness) before the decisions; 3:29"
+    "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d22/edl.json",
+    "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/A-d22/preview.mp4",
+    "round": "d22",
+    "what": "round 24 (Kai's 18 round-23 notes): new words voiced (soft quantum bridge, 1C training-data line, time machine), hologram 1F3 (brighter stack, cats alive/dead in the cloud), the row re-synced word by word with Sandra on screen, new 3 s detect bridge (vent, turret, HUD) before the motorway; 4:03"
   },
   "premiere": {
     "rough1": {
@@ -333,9 +333,9 @@
         "A1 0-10.17 s: Git Push Origin Master.mp3 168.958-179.125 (from r11); its transition NOT carried"
       ],
       "check": {
-        "at": "2026-11-09T22:11",
-        "state": "edited in Pr",
-        "why": "116 effects added"
+        "at": "2026-11-10T19:31",
+        "state": "in sync",
+        "why": ""
       }
     }
   },
@@ -492,5 +492,11 @@
       "name": "The far race",
       "blurb": "From the footbridge: the pack races away down the motorway."
     }
-  ]
+  ],
+  "dialogue_f06": {
+    "page": "https://claude.ai/artifact/Y2UoNBwoceKZ7a72QwhgoP",
+    "options": "design/2026-11-10-gpom-dialogue-training-data/options.json",
+    "picked": "1C",
+    "round": 1
+  }
 }

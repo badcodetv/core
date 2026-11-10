@@ -1,0 +1,14 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/audio/row-bed.wav",
+ "made": "2026-11-10T18:19:25+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py --round 25",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/row-muffled.wav",
+ "why": "GPOM A r25 detect bridge, 1+2+2 s (Kai at5176): row bed 5.6 s, muffled to 3.0 s then the feed",
+ "inputs": {
+  "feed": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/work/row-feed.wav"
+ }
+}

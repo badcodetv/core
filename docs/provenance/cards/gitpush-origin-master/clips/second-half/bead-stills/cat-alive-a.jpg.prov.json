@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/bead-stills/cat-alive-a.jpg",
+ "made": "2026-11-10T16:30:42.702Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Square frame from a 1980s British television drama on 16mm film, faded colour, soft contrast, heavy grain. Seen from above, an open brown cardboard box on bare floorboards. Inside it a ginger tabby cat sits upright, wide awake, ears pricked, amber eyes meeting the lens with mild indignation. Grey daylight from a window on the left; the room's corners sink into shadow. No lettering anywhere.",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "1:1",
+  "numOutputs": 1
+ },
+ "source_id": "80e009cb-3c66-4041-a109-d75022ab8e7a"
+}

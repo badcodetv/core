@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/WI5-a-b.jpg",
+ "made": "2026-11-10T19:00:20.006Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Night, looking out through a small dirty basement window that sits at pavement level, so the camera's eye is right down at the paving stones: the window's dark frame and two iron bars edge the picture. Beyond the glass, across a wet British high-street pavement under orange sodium streetlight, the recessed doorways of two shuttered shops. In each doorway someone is asleep in a sleeping bag on flattened cardboard, hood up, face turned to the wall; a rucksack, a paper coffee cup, a small dog curled against one of them. Still and quiet, treated with care and dignity, nobody posed. Cold greenish fluorescent spill from inside the basement on the near edge of the window frame. Ultra-wide lens, deep focus, documentary realism, fine digital grain. Tall portrait frame.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "6bc15f30-28ca-41c8-ba5f-1f84ee52c222"
+}

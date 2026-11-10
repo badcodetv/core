@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST2-a-b.jpg",
+ "made": "2026-11-10T18:47:34.978Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image, change only the five balaclavas so every one is the same design as the mask in the second image: ribbed knit, a thick braided white rope ring sewn round the face, and a solid red felt triangle sewn inside that ring near its top right, pointing downward with its flat side on top and softly rounded corners. Each mask keeps its own knit colour (sage, rust, navy, charcoal, mustard). Leave the rest of the first image untouched: the archive basement, steel shelving, the paper column and its THE RULES label, every outfit and pose, the floor-level upward camera, the cold fluorescent light and the grain. Tall portrait frame.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/ST1-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/ST1-a.jpg",
+   "/home/kai/.cache/badcode-refs/br-mask-y03.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "d4f9c81a-dca9-4294-8c40-6d000541389e"
+}

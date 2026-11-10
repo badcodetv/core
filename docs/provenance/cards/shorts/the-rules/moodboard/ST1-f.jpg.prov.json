@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST1-f.jpg",
+ "made": "2026-11-10T18:37:24.041Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Every gang member wears a knitted balaclava covering the whole head, with no eye, nose or mouth holes; a large white ring is stitched round the face, and a red triangle sits high over the wearer's left eye (on the right of the picture, at about 2 o'clock); gloves on both hands, collars and cuffs closed, no skin showing anywhere. Inside an infinity cove painted pure white, where floor bends into back wall along a soft invisible curve, the space reads as limitless and almost weightless. Dead centre rises one sheer column of stacked printer paper, perfectly squared like a sculpture on display, climbing high toward the top edge of this tall vertical picture; its sides show faint hairline layers of sheets. Propped at its base is a modest museum-style caption card printed in small tidy black capitals: THE RULES. Four masked figures wait in an orderly line some distance before the column, backs partly towards us, heads tipped right back to gaze up at it, each face turned a little so the mask front is half visible. Each knitted balaclava is a different vivid hue, tangerine, ultramarine, magenta and lime, every one bearing its white ring and red triangle; from the neck down they are dressed in plain current-day streetwear in black and slate grey, a padded jacket, a fleece, a cagoule, joggers, dark trainers, black gloves. Shot from far back with a long lens, camera at standing eye level, dead level and motionless, strict bilateral symmetry, lots of blank white headroom above the column. Light floods evenly from everywhere so nothing casts a shadow except a whisper of grey under feet and paper; whites are bright, near blown out, yet the wool keeps its texture. Colour scheme: white on white with graphite clothing; the masks and their small red triangles are the sole saturated notes in the whole image. Clean, precise, art-catalogue realism, tactile knit and paper grain.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "833b5383-9d3b-4cbc-98d5-9e5738cd06d5"
+}

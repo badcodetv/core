@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/hud-p2-b.jpg",
+ "made": "2026-11-10T16:12:48.866Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Using the first image for the robot's own point of view and its armoured front hull, and the second image only for the grassy hillside: in black and white like a thermal camera, the camera mounted low on the front of a tracked military robot standing still on a grassy chalk down, its angular armoured nose and tracks at the bottom of frame, looking across the long grass at a low rounded green hill on the horizon under a flat sky. No door or building is visible, just the hill. A clean picture with no interface, no overlay, no tint. 16:9 frame from a fictional near-future British film. Full-frame image, no captions, logos, lettering or on-screen text.",
+ "model": "Nano Banana Pro",
+ "parent": "/home/kai/.cache/detect-refs/K5-pov-red-race.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/detect-refs/K5-pov-red-race.jpg",
+   "/home/kai/.cache/detect-refs/SB12c.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "9358acc9-b3b9-4488-bd74-e87be562f3d7"
+}

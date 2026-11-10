@@ -1,0 +1,18 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/hud-p1-a-hud.mp4",
+ "made": "2026-11-10T16:14:54+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/hud.py",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/storyboard/detect/work/hud-p1-a.jpg",
+ "why": "detect-signal bridge option: patrol HUD hears the row (Kai at4401)",
+ "inputs": {
+  "audio": "cut3/A-d21/mix.wav 179.4-182.4 s (the lavatory row)"
+ },
+ "settings": {
+  "state": "patrol",
+  "lock": "0.6"
+ }
+}

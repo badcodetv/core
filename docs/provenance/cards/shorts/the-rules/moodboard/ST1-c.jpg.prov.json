@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST1-c.jpg",
+ "made": "2026-11-10T18:34:58.855Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Every gang member wears a knitted balaclava covering the whole head, with no eye, nose or mouth holes; a large white ring is stitched round the face, and a red triangle sits high over the wearer's left eye (on the right of the picture, at about 2 o'clock); gloves on both hands, collars and cuffs closed, no skin showing anywhere. A hushed, elaborately staged photograph in tall portrait format: a quiet residential road in an English town, two facing rows of brick terraces with bay windows and chimney stacks, just after sunset when the sky has gone a deep inky cobalt but every lamp is already burning. Dead centre on the road, blocking it kerb to kerb, towers a monstrous ream of plain office paper, thousands of sheets squared into one pale column that climbs past the gutters and up level with the chimney pots; along the thick edge of its top sheets, stencilled in bold black letters, the words \"THE RULES\". Down at the foot of the picture, tiny against it, a handful of masked figures in present-day clothes, a padded gilet, a grey hoodie under a bomber, a waterproof cagoule, joggers and white trainers, stand scattered across the road in a ragged line, shoulders back and chins lifted, gazing up the paper cliff; each mask is knitted in its own dull shade, olive, navy, rust, charcoal. The street around them is ordinary and precise: blue and grey recycling bins along the pavement, a dented estate car and a little hatchback nosed against the kerb, a for-sale board, a lamp lit behind thin curtains in nearly every front room. Lighting is plotted like a film set: sodium streetlamps throw orange cones onto damp asphalt, upstairs windows glow honey yellow, a porch light spills across one doorstep, and a single harsh white spotlight, hidden low behind the figures, rakes upward across the face of the paper so its layered edges catch like the strata of a cliff and the lettering stands out crisp. Cool blue above, warm amber below, faint haze hanging over the road. Shot on a large-format camera on a tripod at standing eye height, wide lens looking straight along the road, everything from the bins to the rooftops in deep focus, the paper column tack sharp, utterly still, silent and uncanny.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "538193a7-2efc-44b9-893b-39796aceabce"
+}

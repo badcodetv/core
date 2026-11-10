@@ -14,6 +14,9 @@ shot in beat 12 (kill -> peace at the door).
   --state kill --flip-to peace@4.0   the stand-down at the door (green STAND DOWN)
   --flip-to may repeat: --state patrol --flip-to kill@2 --flip-to peace@6
   --lock@2.0 (or --lock 2.0)  'ORGANIC SIGNAL - LOCK' and the lock brackets appear at 2.0 s
+  --lock-status 'CONTACT  //  LOCK'   opt-in: at the lock the top-left status line switches to this and the
+                                      centre banner reads LOCKED
+                                      (default: unchanged, e.g. patrol keeps 'SWEEP // NO CONTACT')
   --audio-at 0.4            the wav starts 0.4 s into the clip (meter and output audio both)
   --no-audio-out            silent output (the meter still reads the wav)
 
@@ -73,6 +76,9 @@ def parse():
     p.add_argument('--audio', required=True)
     p.add_argument('--audio-at', type=float, default=0.0)
     p.add_argument('--lock', type=float)
+    p.add_argument('--lock-status', default=None,
+                   help="opt-in: from the lock time the top-left status line reads this instead of the state's "
+                        "status (e.g. 'CONTACT  //  LOCK'); omitted = unchanged for every existing caller")
     p.add_argument('--unit', default='KB-07')
     p.add_argument('--zoom', type=float, default=1.0)
     p.add_argument('--no-audio-out', action='store_true')
@@ -150,7 +156,12 @@ def hud(state, a, txt, lock_on):
         f.append(box(x, y, w, h, f'{c}@0.55', t=2))
     # top-left: unit, mode, sector + a live clock
     f.append(txt(f'UNIT {a.unit}  //  {s["mode"]}', TL[0] + 14, TL[1] + 12, 28, c, bold=True))
-    f.append(txt(f'SWN-04  //  {s["status"]}', TL[0] + 14, TL[1] + 54, 24, c, alpha=0.9))
+    T0 = lock_on if (lock_on is not None and state != 'peace') else None
+    if a.lock_status and T0 is not None:  # opt-in: the status line changes when the lock lands
+        f.append(txt(f'SWN-04  //  {s["status"]}', TL[0] + 14, TL[1] + 54, 24, c, alpha=0.9, enable=f'lt(t,{T0})'))
+        f.append(txt(f'SWN-04  //  {a.lock_status}', TL[0] + 14, TL[1] + 54, 24, c, bold=True, enable=f'gte(t,{T0})'))
+    else:
+        f.append(txt(f'SWN-04  //  {s["status"]}', TL[0] + 14, TL[1] + 54, 24, c, alpha=0.9))
     # top-right: audio live, with a blinking dot
     f.append(box(TR[0] + 16, TR[1] + 17, 16, 16, c, enable='lt(mod(t,1),0.6)'))
     f.append(txt('AUDIO  LIVE', TR[0] + 44, TR[1] + 11, 26, c, bold=True))
@@ -185,7 +196,14 @@ def hud(state, a, txt, lock_on):
         f.append(txt(label, '(w-text_w)/2', LOCK_Y, 32, c, bold=True, enable=en))
         f.append(txt('BEARING 214   RANGE %{eif:max(40,1300-(t-' + str(T) + ')*60):d} M   HUMAN x2',
                      '(w-text_w)/2', LOCK_Y + 58, 22, c, alpha=0.9, enable=f'gte(t,{T})', box='black@0.7'))
-    f.append(txt(s['banner'], '(w-text_w)/2', BAN_Y + (4 if len(s['banner']) > 17 else 0), 44 if len(s['banner']) <= 17 else 36, c, bold=True, alpha=0.6 if state == 'patrol' else 1.0))
+    def banner(text, alpha, enable=None):
+        return txt(text, '(w-text_w)/2', BAN_Y + (4 if len(text) > 17 else 0), 44 if len(text) <= 17 else 36, c,
+                   bold=True, alpha=alpha, enable=enable)
+    if a.lock_status and T is not None:  # opt-in (with --lock-status): the banner reads LOCKED from the lock
+        f.append(banner(s['banner'], 0.6 if state == 'patrol' else 1.0, enable=f'lt(t,{T})'))
+        f.append(banner('LOCKED', 1.0, enable=f'gte(t,{T})'))
+    else:
+        f.append(banner(s['banner'], 0.6 if state == 'patrol' else 1.0))
     return f
 
 

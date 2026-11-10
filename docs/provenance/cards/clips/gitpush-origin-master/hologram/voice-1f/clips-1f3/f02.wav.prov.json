@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f3/f02.wav",
+ "made": "2026-11-10T16:15:09+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f3.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f02n-4.wav",
+ "why": "hologram 1F3 line f02 (Kai round 23 timeline notes, 10 Nov); take picked as whisper-verbatim, no dead air",
+ "prompt": "[next bead: Sandra, mid-argument, softening] Sandra decided to say sorry first, even though it wasn't her fault. [next bead: a wedding] [excited] They got married!",
+ "inputs": {
+  "heard": "Sandra decided to say sorry first, even though it wasn't her fault. They got married!",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f3.json"
+ },
+ "settings": {
+  "src_in": "0.00",
+  "src_out": "7.59"
+ }
+}

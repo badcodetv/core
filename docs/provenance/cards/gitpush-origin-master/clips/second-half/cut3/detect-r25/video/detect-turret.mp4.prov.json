@@ -1,0 +1,15 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r25/video/detect-turret.mp4",
+ "made": "2026-11-10T18:19:23+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "ffmpeg",
+ "tool": "scripts/gpom/second-half-video/detect_r24.py --round 25",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/cut3/detect-r24/raw/detect-turret-t1.mp4",
+ "why": "GPOM A r25 detect bridge, 1+2+2 s (Kai at5176): turret, jolt 0.5 s in, then holds",
+ "settings": {
+  "in": "0.10",
+  "dur": "2.0"
+ }
+}

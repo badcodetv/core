@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/IS4-a-b.jpg",
+ "made": "2026-11-10T19:01:16.799Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Bright tropical midday on a tiny private island: white sand, turquoise shallows, a single leaning palm. Strung between the palm and a post, a striped hammock, and lying in it, fast asleep in the sun, a grey four-drawer steel office filing cabinet, the kind from a council archive, its top drawer slightly open with a fat folder labelled PROFITS peeking out. A pair of sunglasses rests on top of the cabinet, a cocktail with a paper umbrella in the sand beside it. Nobody else anywhere. Shot like a glossy travel-brochure photo, warm saturated colour, crisp sunlight, a deliberately sunny break from a cold grey film. Wide lens from low on the sand, the cabinet sharp in the middle of the frame, clear empty blue sky across the top third for on-screen text. Tall portrait frame.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "d5c21445-1f35-4e83-97c5-1107f71f59bf"
+}

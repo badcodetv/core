@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/ST1-d.jpg",
+ "made": "2026-11-10T18:35:36.095Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_image",
+ "prompt": "Every gang member wears a knitted balaclava covering the whole head, with no eye, nose or mouth holes; a large white ring is stitched round the face, and a red triangle sits high over the wearer's left eye (on the right of the picture, at about 2 o'clock); gloves on both hands, collars and cuffs closed, no skin showing anywhere. Here we are inches from one of them: a portrait-format close-up taken from just beside their left shoulder, so the head turns three-quarters toward us with its left cheek nearest, and that red triangle reads clearly, high and off to one side inside the white ring, not centred. Their chin is lifted and the whole head leans back, as though craning to take in something far too tall to see in one look. Charcoal wool in a heavy rib, each loop and loose fibre sharp where the focus falls; the stitched ring sits proud like a thick cord. A dark knitted glove grips the cord collar of an olive waxed-cotton field jacket, ordinary present-day British outdoor wear. Lens: 85mm, aperture open to f/1.8, so only the knit around the triangle is crisp and everything else softens within a hand's width. Low autumn sun pours through an unseen sash window on the left, a slanting band of honey-coloured light raking across the mask so every rib throws a tiny shadow, while the far side of the head sinks into gentle dusk. Above and behind, crowding the upper half, rises a vast blurred cliff of stacked paper reams and loose sheets; on one sheet near its summit, bigger than its neighbours, heavy black print spells THE RULES, out of focus yet legible, the only lettering anywhere. Warm amber and honey on wool and jacket, set against a cool bluish paper white beyond; fine natural grain, matte, unretouched, no bloom.",
+ "model": "Nano Banana 2",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 1
+ },
+ "source_id": "2fb71986-d065-4746-89b5-65c490fd7b0c"
+}

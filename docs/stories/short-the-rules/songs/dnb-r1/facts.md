@@ -1,0 +1,4 @@
+- "bally guys" / "ballets" = the balaclava gang (BadCode's masked figures) in the picture.
+- The track before it (kept, unchanged) is a picked Suno take: a whole 1980s primary school singing a four-line hymn, bored and flat, over a thumping out-of-tune upright piano; it ends at 16.4 s on one held piano chord, then silence. The drum and bass drop is cut in hard after that, as a separate audio track in Premiere, under the gang tearing up a huge stack of paper labelled THE RULES in a cold fluorescent council basement, ending on one of them holding out a blank page and a pen to camera.
+- This track is INSTRUMENTAL: no vocals, no lyrics, no vocal chops, no MC. It must hit hard from the very start (a drop, not a build) and work as a loop the editor can cut.
+- No Suno take has been made for this part yet.

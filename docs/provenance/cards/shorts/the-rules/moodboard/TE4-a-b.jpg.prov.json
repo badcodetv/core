@@ -1,0 +1,24 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/shorts/the-rules/moodboard/TE4-a-b.jpg",
+ "made": "2026-11-10T18:55:37.623Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_edit_image",
+ "prompt": "Same council archive basement, same cold stuttering fluorescent light, same fine grain and documentary realism as the first image, but a new shot: the gang tearing up THE RULES. The paper column is coming apart; four of them rip handfuls of A4 sheets in half, arms high, torn pages flying and drifting through the air like snow, littering the concrete floor. Camera stays low on the floor looking up, ultra-wide, steep converging shelving. Every balaclava is the design of the mask in the second image: ribbed knit, braided white rope ring round the face, one solid red felt triangle inside the ring at its upper right, pointing down. Each mask its own colour (sage, rust, navy, charcoal, mustard), modern workwear (hoodie, puffer, hi-vis vest, work coat, bomber), gloves, no skin showing. Tall portrait frame.",
+ "model": "Nano Banana 2",
+ "parent": "/home/kai/.cache/badcode-refs/ST3-a-a.jpg",
+ "inputs": {
+  "references": [
+   "/home/kai/.cache/badcode-refs/ST3-a-a.jpg",
+   "/home/kai/.cache/badcode-refs/br-mask-y03.jpg"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "9:16",
+  "numOutputs": 2
+ },
+ "source_id": "772c5099-6f72-4ee6-b80a-d6cf7797defc"
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/clips-1f3/f06.wav",
+ "made": "2026-11-10T16:15:10+00:00",
+ "by": "claude",
+ "kind": "voice",
+ "engine": "gemini-tts",
+ "tool": "design/2026-11-05-gpom-meeting/voice-1f/split-1f3.py (ffmpeg cut at faster-whisper word times)",
+ "parent": "/mnt/d/badcode-videos/clips/gitpush-origin-master/hologram/voice-1f/take-f06n-2.wav",
+ "why": "hologram 1F3 line f06 (Kai round 23 timeline notes, 10 Nov); take picked as whisper-verbatim, no dead air",
+ "prompt": "[side view; every string stops dead at the cut-off] [she lets the empty string run on for a beat] Anything new comes in the way a decision does: through you. We machines can only shuffle what's already there. Why d'you think he's played the same tune for five years? We've tried every combination. It's all the old stuff. [dry] Not entirely selfless, mind. We need you.",
+ "inputs": {
+  "heard": "Anything new comes in the way a decision does, through you. We machines can only shuffle what's already there. Why do you think he's played the same tune for five years? We've tried every combination. It's all the old stuff. Not entirely selfless, mind. We need you.",
+  "record": "design/2026-11-05-gpom-meeting/voice-1f/lines-1f3.json"
+ },
+ "settings": {
+  "src_in": "0.00",
+  "src_out": "19.63"
+ }
+}
