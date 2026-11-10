@@ -3,7 +3,7 @@
 > The look for this short only. Read before any still or clip (new-image, scene-images,
 > scene-animation, flow-prompt). Rules: docs/stories/STYLE.md.
 
-**Status:** EMPTY — not yet found (2026-11-10). Run `story-style` (or a quick pick inside `scene-images`).
+**Status:** EXPLORING — **modern** (Kai, 2026-11-10: the balaclava is a generic BadCode brand, not 1920s); the exact look is picked on the mood board.
 
 ## Cast
 
@@ -12,4 +12,5 @@
   clothes, era) is this short's to choose. Reference stills of the gang as made for the Bank Robbery music
   video: `docs/stories/bank-robbery/songs/mv-colour-noir/picks.md` (`mask1 b`, `mask3 b`, `mask4 a`), media in
   the `bank-robbery-music` project (`noir/moodboard/`). They are Prohibition-era; that era is Bank Robbery's,
-  not this short's.
+  not this short's: here the gang is modern, in today's clothes. Use the grabs for the masks only
+  (`D:\badcode-videos\shorts\the-rules\refs\`).

@@ -45,3 +45,6 @@ too thin. There is room on all those islands. But you will sleep in a bin."* No 
 
 Kai took both recommendations: **ending on the pen** (a blank page and a pen held out to camera), and **the look
 decided on the mood board** (today's clothes vs the 1920s Bank Robbery gang, leaning today's). Brief: `brief.md`.
+
+Kai, same day: *"In terms of 1920s, I think it's modern balaclava guys… the balaclava is a generic BadCode brand."*
+The 1920s option is dropped; the look is **modern**, with the variants inside it found on the mood board.

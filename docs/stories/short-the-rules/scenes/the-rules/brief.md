@@ -33,14 +33,15 @@ caption ever says the missing tax causes rough sleeping: the picture sits next t
 
 - **The balaclava gang.** Masks fixed by `docs/brand/README.md`: white ring, red triangle over the left eye, no
   skin, gloves. Reference: the Bank Robbery music video line-up, frame grabs in
-  `D:\badcode-videos\shorts\the-rules\refs\` (`bg-a01m-a-a01r5-a.jpg`, six coloured masks in 1920s suits). No Flow
+  `D:\badcode-videos\shorts\the-rules\refs\` (`bg-a01m-a-a01r5-a.jpg`, six coloured masks; use for the masks only, not the 1920s suits). No Flow
   Character yet.
 
 ## Look
 
-`look.md` is EMPTY. The mood board decides (Kai, 2026-11-10, option c): the same masks in **today's clothes in a
-modern room** (leaning: the window is today's Britain) beside **the Bank Robbery 1920s gang as they are**, and Kai
-picks there. Whatever wins is written into `look.md`.
+**Modern** (Kai, 2026-11-10): *"it's modern balaclava guys… the balaclava is a generic BadCode brand"*, not a
+1920s Prohibition thing; that era was only the Bank Robbery music video's. The gang wear the masks in today's
+clothes, in today's Britain. The 1920s frame grabs are a reference for the **masks only**. Within "modern", the
+mood board offers genuinely different looks (`variations`) and Kai picks; the pick is written into `look.md`.
 
 ## Sound
 
