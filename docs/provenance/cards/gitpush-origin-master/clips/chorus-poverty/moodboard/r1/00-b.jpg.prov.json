@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/00-b.jpg",
+ "made": "2026-11-10T17:28:10.509Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Straight down from a drone high above an eight-lane British motorway that has become a town: no traffic, every lane filled edge to edge with tents, blue tarps, sleeping cars with blankets in the windows and cooking fires, washing strung between the crash barriers, thousands of small figures moving between them, smoke drifting across the lanes. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "f05b5df8-27c7-4737-8054-45f204e03b4b"
+}

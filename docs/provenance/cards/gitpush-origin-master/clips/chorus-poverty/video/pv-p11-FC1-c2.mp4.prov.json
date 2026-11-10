@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p11-FC1-c2.mp4",
+ "made": "2026-11-10T18:31:21+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A slow push in toward the data centre's wall, its big fans spinning and pumping steam into the dusk, the people below sitting with their backs to the warm fence beside their small fires, the security lights bright and steady on the white walls. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FC1-c2.jpg",
+ "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/FC1-c2.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+  "key": "p11",
+  "frame": 111,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-10T18:18:29.326Z"
+ }
+}

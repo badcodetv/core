@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/14-b.jpg",
+ "made": "2026-11-10T17:28:11.020Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Long lens down a terrace of red-brick two-up two-down houses: every front door is open, the houses empty, and the pavement is lined both sides with the contents of the whole street, beds, wardrobes, washing machines, a woman in a dressing gown sitting in an armchair on the pavement looking at her house. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "336ce070-28eb-49c4-aefb-4e487bc8b331"
+}

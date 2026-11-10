@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/02-b.jpg",
+ "made": "2026-11-10T17:28:10.552Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "High aerial at night over a vast stacked British motorway interchange of curving concrete flyovers: every deck is a camp, hundreds of small fires and lanterns tracing the curves of the flyovers like a map of the roads, the town beyond completely dark except for one cluster of brightly lit office towers on the skyline. Winter night in a near-future Britain, the streetlights dead, lit only by braziers, camping lanterns and the glow of the city's towers; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "1578c63a-1d59-4f63-9176-38a096630fa9"
+}

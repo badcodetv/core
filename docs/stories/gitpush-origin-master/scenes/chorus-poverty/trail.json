@@ -1,0 +1,40 @@
+[
+ {
+  "at": "2026-11-10T17:38:01+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Lvams8whJLcpYN2EEJA8GU",
+  "what": "Round 1: 72 stills (36 ideas x 2) over 11 beats, scale first (motorway towns, the queue, parks, stations, estates, high streets, fires, the fence, the regions, hands, the towers); three lights (dusk, grey day, night)",
+  "rebuild": "python3 scripts/scene/build-moodboard.py docs/stories/gitpush-origin-master/scenes/chorus-poverty design/2026-11-10-gpom-chorus-poverty/moodboard.html"
+ },
+ {
+  "at": "2026-11-10T17:44:46+00:00",
+  "stage": "moodboard",
+  "round": 1,
+  "url": "https://claude.ai/artifact/Lvams8whJLcpYN2EEJA8GU",
+  "what": "Kai's votes on round 1",
+  "decided": [
+   "This: MW1-a2, MW1-b1, QU1-b2, PK1-a2, PK1-b1, ST1-a2, ES1-b2, HS1-c1, FI1-c2, FC1-a2, FC1-c2, GL1-b2. No notes. Kai: 'I think there's almost certainly going to be enough for us to work with what I've picked.'"
+  ],
+  "feedback": "feedback/moodboard-r1",
+  "feedback_docs": 12
+ },
+ {
+  "at": "2026-11-10T18:34:08+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/BySdws2Bh6iiuKrAZjzqrp",
+  "what": "Four beat-cut sequences (A-D) of all 12 clips to the song, 4 s black run-in; clips p01-p12 (Omni 1.2, 12 generations), p10 self-cuts at 1.5 s",
+  "rebuild": "python3 scripts/scene/build-picks.py docs/stories/gitpush-origin-master/scenes/chorus-poverty/sequences-r1.json design/2026-11-10-gpom-chorus-poverty/sequences/index.html"
+ },
+ {
+  "at": "2026-11-10T18:39:03+00:00",
+  "stage": "picks",
+  "round": 1,
+  "url": "https://claude.ai/artifact/BySdws2Bh6iiuKrAZjzqrp",
+  "what": "Kai's pick",
+  "decided": [
+   "Kai: 'I've picked A' (two-beat cuts, hold on Hyde Park's towers); wants a hand-cut workbench like 01 GPOM chorus outbreak r3 edit"
+  ]
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/17-b.jpg",
+ "made": "2026-11-10T17:37:16.563Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "High aerial over a big British city at night: no streetlights anywhere, the whole city dark but for thousands of tiny orange fires, and in the middle one district of glass towers and data halls fully lit, bright as day, like an island. Winter night in a near-future Britain, the streetlights dead, lit only by braziers, camping lanterns and the glow of the city's towers; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "3d651512-8762-4592-ad3c-b447acfb6186"
+}

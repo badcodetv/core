@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/05-a.jpg",
+ "made": "2026-11-10T17:37:16.123Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A huge windowless data centre in green English fields at dusk, its cooling fans turning, security lights bright on its white walls: right up against its perimeter fence a camp of tents and parked cars, cooking fires, people sitting with their backs to the fence where it is warm from the exhaust vents. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "02c7acf7-2cdd-4ab6-b16d-a86172fd0399"
+}

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/video/pv-p03-QU1-b2.mp4",
+ "made": "2026-11-10T18:03:27+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "A slow track backwards down the pavement alongside the queue, keeping pace with it, as more and more people appear in line, breath steaming in the cold, stove flames flickering at their feet, the queue running on up the hill behind them without end. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+ "parent": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/QU1-b2.jpg",
+ "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/QU1-b2.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/gitpush-origin-master/scenes/chorus-poverty",
+  "key": "p03",
+  "frame": 103,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-10T17:49:52.366Z"
+ }
+}

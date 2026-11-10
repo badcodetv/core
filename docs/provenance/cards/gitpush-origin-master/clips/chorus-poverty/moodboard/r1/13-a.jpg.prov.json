@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/13-a.jpg",
+ "made": "2026-11-10T17:28:10.959Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Low angle up a 1960s council tower block at dusk: every window on every floor boarded with grey steel sheets except one, where a single lamp still glows, and at its foot on the grass a camp of tents and furniture where the tenants now live. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "5558d867-9e17-4122-b049-29ba5c223e61"
+}

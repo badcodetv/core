@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/07-b.jpg",
+ "made": "2026-11-10T17:28:10.737Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From the top of Primrose Hill, behind a row of people in sleeping bags sitting along the benches, looking out over London: every park, square and playing field in sight is grey with tents, and smoke from thousands of small fires lies over the city in a flat haze. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "5226d46b-797f-418f-9cee-c9974aec2d9e"
+}

@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/03-a.jpg",
+ "made": "2026-11-10T17:28:10.573Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Aerial over the Thames in London: a single queue of people four abreast stretches across the whole length of Westminster Bridge, round Parliament Square and away up the Embankment out of frame, thousands of people in winter coats and hoods waiting, at its head one small white van with its back doors open handing out bread. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "16476b1a-59e0-4d9f-9136-0b30d1369969"
+}

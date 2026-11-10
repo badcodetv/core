@@ -1,0 +1,95 @@
+{
+ "song": "/mnt/d/badcode-videos/gitpush-origin-master/clips/gpom-main-track.mp3",
+ "song_in": 69.583,
+ "bpm": 173.975,
+ "fps": 24,
+ "sequence": "gpom-chorus-poverty-r1a",
+ "round": 1,
+ "note": "Round 1 option A: Two-beat cuts, then hold on who gained (Outbreak Night's grammar). Kai's 12 picks (10 Nov).",
+ "shots": [
+  {
+   "clip": "pv-p01-MW1-a2.mp4",
+   "beats": 2,
+   "in": 3.0,
+   "why": "motorway town from the drone, rising to the horizon",
+   "beat": "MW"
+  },
+  {
+   "clip": "pv-p02-MW1-b1.mp4",
+   "beats": 2,
+   "in": 3.0,
+   "why": "motorway camp from the footbridge, walkers with water",
+   "beat": "MW"
+  },
+  {
+   "clip": "pv-p03-QU1-b2.mp4",
+   "beats": 2,
+   "in": 3.0,
+   "why": "the queue up the terraced street",
+   "beat": "QU"
+  },
+  {
+   "clip": "pv-p06-ST1-a2.mp4",
+   "beats": 2,
+   "in": 2.5,
+   "why": "the station concourse as a dormitory",
+   "beat": "ST"
+  },
+  {
+   "clip": "pv-p07-ES1-b2.mp4",
+   "beats": 2,
+   "in": 3.0,
+   "why": "the boarded tower block, one lit window",
+   "beat": "ES"
+  },
+  {
+   "clip": "pv-p08-HS1-c1.mp4",
+   "beats": 2,
+   "in": 2.0,
+   "why": "the promenade, trolleys in the rain",
+   "beat": "HS"
+  },
+  {
+   "clip": "pv-p10-FC1-a2.mp4",
+   "beats": 1,
+   "in": 0.1,
+   "why": "the crowd at the warehouse fence (wide)",
+   "beat": "FC"
+  },
+  {
+   "clip": "pv-p11-FC1-c2.mp4",
+   "beats": 2,
+   "in": 3.0,
+   "why": "the camp against the data centre, fans pumping",
+   "beat": "FC"
+  },
+  {
+   "clip": "pv-p12-GL1-b2.mp4",
+   "beats": 2,
+   "in": 3.0,
+   "why": "Glasgow, the Clyde lined with camps",
+   "beat": "GL"
+  },
+  {
+   "clip": "pv-p05-PK1-b1.mp4",
+   "beats": 2,
+   "in": 0.5,
+   "why": "Primrose Hill: the bench, London in tents",
+   "beat": "PK"
+  },
+  {
+   "clip": "pv-p09-FI1-c2.mp4",
+   "beats": 3,
+   "in": 3.0,
+   "why": "two faces at the brazier",
+   "beat": "FI"
+  },
+  {
+   "clip": "pv-p04-PK1-a2.mp4",
+   "beats": 10,
+   "in": 4.0,
+   "why": "Hyde Park shanty city, the lit towers behind",
+   "beat": "PK"
+  }
+ ]
+}

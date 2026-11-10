@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/03-a.jpg",
+ "made": "2026-11-10T17:37:16.037Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "At night outside a vast automated distribution warehouse, its whole side open and blazing with white light, robot arms and conveyors working inside with not one person among them: a crowd of hundreds of people in coats stand pressed against the tall chain-link fence in the dark, looking in. Winter night in a near-future Britain, the streetlights dead, lit only by braziers, camping lanterns and the glow of the city's towers; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "612c76d2-cda0-475f-a587-46d253af00ad"
+}

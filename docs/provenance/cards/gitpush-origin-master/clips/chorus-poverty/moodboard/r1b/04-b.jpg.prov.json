@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1b/04-b.jpg",
+ "made": "2026-11-10T17:37:16.101Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "A British car factory's main gate in the rain, the barrier down and chained, a crowd of former workers in work jackets standing outside it, and beyond the fence the long factory sheds lit inside and running, rows of orange robot arms visible through the open bay doors, no people inside. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "1aef9420-968f-4803-932f-8f69086a0544"
+}

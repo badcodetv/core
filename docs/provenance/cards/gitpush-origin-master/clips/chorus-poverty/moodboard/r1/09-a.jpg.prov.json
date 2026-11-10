@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/09-a.jpg",
+ "made": "2026-11-10T17:28:10.790Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From a high gallery in a vast Victorian railway terminus in London: the whole concourse under the iron and glass roof is a dormitory, thousands of sleeping bags and camp beds laid in rows on the floor, no trains at the platforms, the departure boards dark, grey daylight falling through the roof glass. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "8255d2e6-3529-469a-8c63-a3f70c3c7fe1"
+}

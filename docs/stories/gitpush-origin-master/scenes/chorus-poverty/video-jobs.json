@@ -1,0 +1,116 @@
+{
+ "anim_picks": {},
+ "still_picks": {},
+ "skip": [],
+ "cast": {},
+ "extra": [
+  {
+   "key": "p01",
+   "n": 101,
+   "still": "MW1-a2",
+   "duration": 8,
+   "character": null,
+   "motion": "The drone climbs and tilts slowly forward from looking down the motorway to looking along it, revealing the camp running on for miles to the horizon. Below, people keep walking between the tents, smoke drifts sideways across the lanes from dozens of fires, and the brazier flames flicker. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p02",
+   "n": 102,
+   "still": "MW1-b1",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera holds still on the footbridge while the people in the foreground walk steadily toward and past the lens carrying their water, drizzle falling across the frame, cooking smoke rising off the tents, and one slow gust shaking the blue tarps all the way down the carriageway. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p03",
+   "n": 103,
+   "still": "QU1-b2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow track backwards down the pavement alongside the queue, keeping pace with it, as more and more people appear in line, breath steaming in the cold, stove flames flickering at their feet, the queue running on up the hill behind them without end. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p04",
+   "n": 104,
+   "still": "PK1-a2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow push in over the shanty city toward the lit towers on the skyline, the columns of cooking smoke rising and drifting, small fires flickering among the tarps, the towers' windows staying bright and still while dusk deepens around them. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p05",
+   "n": 105,
+   "still": "PK1-b1",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera rises slowly up from behind the people on the bench and over their heads, revealing the whole city below covered in tents and haze, thin columns of smoke drifting, the people on the bench motionless, hunched in their coats. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p06",
+   "n": 106,
+   "still": "ST1-a2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow crane down from the high gallery toward the concourse floor, the rows of camp beds growing larger, a few sleepers turning over under their blankets, grey daylight moving faintly across the floor as clouds pass over the roof glass. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p07",
+   "n": 107,
+   "still": "ES1-b2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow tilt up the boarded tower block from the camp at its foot to the single lit window high on its face, the brazier flames flickering below, smoke drifting up the concrete, the lamp in the one window glowing steady. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p08",
+   "n": 108,
+   "still": "HS1-c1",
+   "duration": 8,
+   "character": null,
+   "motion": "The camera holds still under the shelter as the people push their loaded shopping trolleys along the wet promenade past the lens, the grey sea heaving behind them, the brazier flames bending in the wind, rain blowing across the frame. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p09",
+   "n": 109,
+   "still": "FI1-c2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow push in across the brazier toward the two faces, the flames leaping and lighting their hands orange, sparks rising, the man and woman staring into the fire, their breath steaming, the tents soft behind them. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p10",
+   "n": 110,
+   "still": "FC1-a2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow lateral track along the fence, the lit warehouse sliding by on one side with its robot arms working endlessly, the dark crowd pressed to the chain-link on the other, lantern and brazier light flickering on their faces as they watch. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p11",
+   "n": 111,
+   "still": "FC1-c2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow push in toward the data centre's wall, its big fans spinning and pumping steam into the dusk, the people below sitting with their backs to the warm fence beside their small fires, the security lights bright and steady on the white walls. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  },
+  {
+   "key": "p12",
+   "n": 112,
+   "still": "GL1-b2",
+   "duration": 8,
+   "character": null,
+   "motion": "A slow drone drift forward along the river between the dark tenements, the camp of tents and fires lining the bank, the flames reflected and trembling in the black water, the distant cranes standing against the dusk sky. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. One continuous shot, no cuts.",
+   "why": "Kai 10 Nov mood board r1: This ('almost certainly enough to work with')"
+  }
+ ]
+}

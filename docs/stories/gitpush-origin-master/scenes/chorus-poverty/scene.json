@@ -1,0 +1,138 @@
+{
+ "story": "gitpush-origin-master",
+ "scene": "chorus-poverty",
+ "prefix": "pv",
+ "title": "GPOM Chorus: Skid Row Britain",
+ "heading": "GitPush Origin Master <span class=\"tri\">▲</span> chorus 1: Skid Row Britain (the poverty twin of Outbreak Night)",
+ "moodboard_intro": "Chorus 1 goes back in between the intro's black and the bank downfall: 32 beats, 11 s, the drop the ear is waiting for. Outbreak Night was the end of humanity by violence; this is the end of humanity by poverty, the whole country on skid row. Two stills per idea, three lights to choose from (winter dusk, grey day, night). Tap This, Maybe or No; leave a note per beat.",
+ "media": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty",
+ "flow_project": "62268958-ba2f-4aa5-b0a7-9639b96808e2",
+ "slot": {
+  "film_sequence": "01 GPOM start r2",
+  "insert_at": 62.583,
+  "song_in": 69.583,
+  "song_out": 80.625,
+  "beats": 32,
+  "frames": 265,
+  "bpm": 173.975
+ },
+ "beats": [
+  {
+   "key": "MW",
+   "at": "the kick",
+   "name": "The motorway is a town",
+   "blurb": "The biggest frame, on the kick (Kai put the airliner here in Outbreak Night): every lane of a motorway a camp."
+  },
+  {
+   "key": "QU",
+   "at": "",
+   "name": "The queue",
+   "blurb": "A food queue miles long: over Westminster Bridge, up a terraced street, across a frozen field."
+  },
+  {
+   "key": "PK",
+   "at": "",
+   "name": "The parks",
+   "blurb": "Hyde Park, the view from Primrose Hill, a village green: shanty towns with the skyline behind."
+  },
+  {
+   "key": "ST",
+   "at": "",
+   "name": "Indoors",
+   "blurb": "A station concourse, the national stadium, a cathedral: dormitories."
+  },
+  {
+   "key": "ES",
+   "at": "",
+   "name": "The estates",
+   "blurb": "Whole streets evicted: furniture on every lawn, every window shuttered."
+  },
+  {
+   "key": "HS",
+   "at": "",
+   "name": "The high street",
+   "blurb": "Every shop shut, someone in every doorway; the shopping centre, the seaside."
+  },
+  {
+   "key": "FI",
+   "at": "",
+   "name": "The fires",
+   "blurb": "Braziers and oil drums: the one warm colour, the twin of Outbreak Night's fire."
+  },
+  {
+   "key": "FC",
+   "at": "",
+   "name": "Through the fence",
+   "blurb": "The machines still working, lit, nobody inside; the people outside the fence."
+  },
+  {
+   "key": "GL",
+   "at": "one beat each",
+   "name": "Everywhere",
+   "blurb": "Manchester, Glasgow, the Valleys, Blackpool."
+  },
+  {
+   "key": "HA",
+   "at": "the inserts",
+   "name": "Hands",
+   "blurb": "The twin of the cup: rain filling a paper cup, keys through a letterbox, coins counted short."
+  },
+  {
+   "key": "TW",
+   "at": "the button, into the banks",
+   "name": "Who it was for",
+   "blurb": "The towers lit and busy with nobody at a desk, above a country sleeping outside. Hands straight to the banks emptying."
+  }
+ ],
+ "video": {
+  "model": "Omni 1.2 Flash",
+  "aspect": "16:9",
+  "mode": "Frames",
+  "duration": 8
+ },
+ "boards": {
+  "moodboard": "https://claude.ai/artifact/Lvams8whJLcpYN2EEJA8GU"
+ },
+ "cut": {
+  "spec": "cut-r1a.json",
+  "round": 1,
+  "picked": "Kai 10 Nov: sequence A of four on https://claude.ai/artifact/BySdws2Bh6iiuKrAZjzqrp",
+  "preview": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/cut/r1a/chorus.mp4",
+  "edl": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/cut/r1a/edl.json"
+ },
+ "premiere": {
+  "r1-edit": {
+   "sequence": "01 GPOM chorus poverty r1 edit",
+   "bin": "chorus poverty options",
+   "how": "workbench.py -> workbench-r1.js (import 1080/ clips, create_sequence, eval, save)",
+   "state": "built 10 Nov 18:50; Kai hand-cuts here",
+   "built": "2026-11-10",
+   "guid": "165969a0-5d61-41c7-bae5-004b3122f82b",
+   "project": "/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj",
+   "layout": "seq 0 = song 65.583; 0-4 intro tail (01 GPOM start r2 58.583-62.583, picture); 4-15.042 chorus (sequence A, 12 shots, 1080 silent clips); 15.042-19.042 banks head (start r2 62.583-66.583); A1 song 65.583-84.625 unbroken; 55 beat markers (red CHORUS 4.045, cyan BANKS 15.081)",
+   "check": {
+    "at": "2026-11-10 18:50",
+    "state": "in sync",
+    "why": "built from cut-r1a.json; render cut/r1-edit-check.mp4 19.07 s, audio vs song +21 ms constant (decoder delay)"
+   }
+  },
+  "current": "r1",
+  "r1": {
+   "sequence": "01 GPOM chorus poverty r1",
+   "built": "2026-11-10",
+   "bin": "00 the film (live sequences)",
+   "edl": "cut-r1a.json",
+   "what": "Kai's workbench unchanged = sequence A; clone of the edit with the context and song removed; picture at 4-15.042 s, nested with in/out 96-361 frames",
+   "spliced_into": "01 GPOM start r2 at 62.583 s (createInsertProjectItemAction, limitShift false: all later tracks, transitions and markers moved +11.042 s); song piece 69.583-80.625 laid on A1 into the gap; marker 'chorus: skid row'. 00 RENDER story: spacer inserted at 139.875, start r2 re-laid at 0-150.917; film now 577.04 s",
+   "backups": [
+    "01 GPOM start r2 (before poverty chorus, 10 Nov)",
+    "00 RENDER story (before poverty chorus, 10 Nov)"
+   ],
+   "check": {
+    "at": "2026-11-10 19:05",
+    "state": "in sync",
+    "why": "render cut/check-story-56-122.mp4: audio vs song +21 ms constant across intro end, chorus, banks and after outbreak (decoder delay); frames OK"
+   }
+  }
+ }
+}

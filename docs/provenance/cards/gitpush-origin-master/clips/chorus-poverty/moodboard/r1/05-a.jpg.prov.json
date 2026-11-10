@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/05-a.jpg",
+ "made": "2026-11-10T17:28:10.631Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "Wide shot across frosted farmland in the English Midlands: a queue of thousands of people snakes back and forth across the whole field like a festival crowd with nothing to celebrate, all facing one parked articulated lorry with its side open where volunteers pass out sacks of potatoes. A power station's cooling towers on the horizon. Flat grey overcast winter daylight in a near-future Britain, muted cold colour, drizzle in the air; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "52c1ceeb-6a0a-4424-bbd2-50141b24bd18"
+}

@@ -1,0 +1,42 @@
+{
+ "title": "Skid Row Sequences",
+ "eyebrow": "GPOM chorus 1 · Skid Row Britain · round 1",
+ "heading": "Four ways to cut the drop",
+ "intro": "Each video starts with 4 seconds of black and the song building, which is where the intro's zoom into black leaves us. Then the drop: the 32 beats (11 s) of chorus 1, cut on the beat, with all your 12 clips. Pick the one closest to right; it becomes the starting layout of your hand-cut workbench in Premiere, with every clip in a bin beside it. Mixes are welcome as a note, e.g. 'A but open like B'.",
+ "sections": [
+  {
+   "h": "Pick a sequence",
+   "lede": "Same 12 clips, four rhythms.",
+   "groups": [
+    {
+     "slot": "seq-r1",
+     "title": "Sequence",
+     "kind": "video",
+     "line": "My pick: A. It is Outbreak Night's grammar: two-beat cuts across the whole country on the drop, then it holds on Hyde Park's shanty city with the lit towers behind (who gained), straight into the banks emptying.",
+     "opts": [
+      {
+       "id": "a",
+       "src": "v/r1a.mp4",
+       "label": "A · Two-beat cuts, then hold on the towers: motorway, queue, station, tower block, seaside, the fence, the data centre, Glasgow, Primrose Hill, faces, then Hyde Park held"
+      },
+      {
+       "id": "b",
+       "src": "v/r1b.mp4",
+       "label": "B · Outward: opens on two faces at the brazier, ends rising over the motorway town"
+      },
+      {
+       "id": "c",
+       "src": "v/r1c.mp4",
+       "label": "C · Cost and machine: every other shot is the machines still working (the warehouse, the data centre, the towers)"
+      },
+      {
+       "id": "d",
+       "src": "v/r1d.mp4",
+       "label": "D · Long takes: six shots of five or six beats, each allowed to land"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

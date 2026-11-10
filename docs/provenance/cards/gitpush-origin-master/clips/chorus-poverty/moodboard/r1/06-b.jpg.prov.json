@@ -1,0 +1,19 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/gitpush-origin-master/clips/chorus-poverty/moodboard/r1/06-b.jpg",
+ "made": "2026-11-10T17:28:10.702Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_generate_batch",
+ "model": "Nano Banana Pro",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "prompt": "From a high window looking over Hyde Park in London at dusk: the whole park, lawns and avenues of plane trees, has become a shanty city of tarps, tents and pallet shacks to the horizon, hundreds of thin columns of cooking smoke rising, and beyond it the towers of the City lit bright in every window. Winter dusk in a near-future Britain, cold blue-grey light, the only warm colour the small orange fires of braziers and camping stoves; photographed like a feature film on 35mm stock: fine grain, deep shadows that stay dark, no lens flare, no bloom, no teal-orange grade. 16:9. No writing anywhere in the frame: no signs, banners, logos, number plates or screen text. No children.",
+ "source_id": "64d5b99d-6a8e-47d9-bab6-a6a04faf1d8b"
+}

@@ -1,0 +1,10 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/home/kai/projects/badcode/badcode/design/2026-11-10-gpom-chorus-poverty/sequences/v/r1b.mp4",
+ "made": "2026-11-10T18:37:45+00:00",
+ "by": "claude",
+ "kind": "cut",
+ "engine": "ffmpeg",
+ "tool": "scripts/scene/beatcut.py",
+ "why": "sequence option b: cut-r1b.json + 4 s black run-in with the song"
+}

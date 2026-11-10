@@ -42,14 +42,20 @@
      "id": "mv-chorus-1",
      "name": "Chorus 1: Skid Row Britain (the poverty twin of Outbreak Night; goes back in between the intro and the banks)",
      "at": "1:02",
-     "state": "mood board r1 (10 Nov): 72 stills to vote on. Kai: the intro's black straight into the banks is an anticlimax, the drop is missing. 32 beats, INSERT at 62.583 s in '01 GPOM start r2' (the film gets 11.04 s longer)",
-     "tone": "wip",
+     "state": "done (10 Nov): Kai kept sequence A as cut ('looking good'); '01 GPOM chorus poverty r1' inserted into '01 GPOM start r2' at 1:02.58 (film +11.04 s), so in 00 RENDER story. Render checked: song continuous, joins clean. Clips are Flow's 720p upscaled by ffmpeg; Flow's free 1080p upscale is the quality fix",
+     "tone": "done",
      "scene": "scenes/chorus-poverty",
      "history": [
       {
        "url": "https://claude.ai/artifact/Lvams8whJLcpYN2EEJA8GU",
        "name": "Skid Row Britain mood board r1",
        "kind": "moodboard",
+       "date": "2026-11-10"
+      },
+      {
+       "url": "https://claude.ai/artifact/BySdws2Bh6iiuKrAZjzqrp",
+       "name": "Skid Row Britain: four sequences (Kai picked A, 10 Nov)",
+       "kind": "picks",
        "date": "2026-11-10"
       }
      ]
@@ -296,11 +302,11 @@
    },
    {
     "sequence": "00 RENDER story",
-    "what": "The story film (10 Nov): 01 GPOM start r2 (the opening with chorus 1 removed and Kai's outbreak chorus r3 in place of half of chorus 2), then A (r11), B (r1), C (r4), D (r15), E (r3). Nested. Backup from before the chorus work: '00 RENDER story (before chorus outbreak, 10 Nov)' in zz old sequences"
+    "what": "The story film (10 Nov, 9:37): 01 GPOM start r2 (the opening with chorus 1 = Skid Row Britain and Kai's outbreak chorus r3), then A (r11), B (r1), C (r4), D (r18), E (r4). Nested. Backups in zz old sequences: '(before chorus outbreak, 10 Nov)', '(before poverty chorus, 10 Nov)'"
    },
    {
     "sequence": "01 GPOM start r2",
-    "what": "The story's opening (10 Nov): clone of 01 GPOM start with chorus 1 rippled out and chorus 2 halved, '01 GPOM chorus outbreak r3' nested at 95.75-106.79 s. The music video still uses the untouched 01 GPOM start"
+    "what": "The story's opening (10 Nov, 2:31): clone of 01 GPOM start; chorus 1 is now '01 GPOM chorus poverty r1' (Skid Row Britain) inserted at 62.58-73.63 s, the banks from 73.63, '01 GPOM chorus outbreak r3' at 106.75-117.83 s, the war from 117.83. The music video still uses the untouched 01 GPOM start"
    },
    {
     "sequence": "01 GPOM start",

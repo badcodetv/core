@@ -2119,3 +2119,14 @@ appends, or check for both names).
 - ✅ `Markers.createMoveMarkerAction(marker, tick)` moves a marker to an absolute time; ripple delete also moves markers.
 - A sequence made `fromItems` of 720p Omni clips comes out 1280x720: set the frame with
   `settings.setVideoFrameRect` + `seq.createSetSettingsAction(settings)`, then scale the clips to 150.
+
+## 2026-11-10 (evening): inserting a chorus (`01 GPOM start r2`, chorus 1)
+
+- ✅ **`SequenceEditor.createInsertProjectItemAction(item, tick, vIdx, aIdx, false)` is a true ripple insert.** With
+  `limitShift` false, every track after the point moved by exactly the item's length, and transitions and markers came
+  with it (a render showed no stranded transitions, unlike `createMoveAction`). Set the item's in/out first so it is
+  exactly the length you want; a nested sequence's project item works.
+- ✅ **To lengthen a nested part in a master**, insert a spacer (the same item, in/out = the extra length) at the part's
+  end so everything after shifts, then lift the old nest and the spacer and overwrite the nest again at its new length.
+- ⚠️ `await` inside a `withTransaction` callback (`ca => ca.addAction(x(await y))`) is a syntax error ("missing ) after
+  argument list"): resolve the value first.
