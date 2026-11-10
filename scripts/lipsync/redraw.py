@@ -17,6 +17,9 @@ Install first: scripts/lipsync/latentsync-setup.sh check|install. Card outputs w
 Built 2026-11-06 on GPOM scene A round 19 (Kai at3436).
 """
 import json, pathlib, re, subprocess, sys
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 ID = re.compile(r'lip-([0-9]+[a-z]?-[0-9]+)')
@@ -27,7 +30,7 @@ def sh(*a):
 
 
 def shots(edl):
-    e = json.loads(pathlib.Path(edl).read_text())
+    e = localize(json.loads(pathlib.Path(edl).read_text()))
     stems = {a['name']: a['file'] for a in e['audio']}
     out = []
     for v in e['video']:

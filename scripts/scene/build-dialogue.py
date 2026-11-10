@@ -19,6 +19,9 @@ import json
 import pathlib
 import re
 import sys
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 HERE = pathlib.Path(__file__).resolve().parent
 spec = importlib.util.spec_from_file_location('rp', HERE.parent / 'design' / 'build-reading-page.py')
@@ -42,7 +45,7 @@ def split_shape(path):
 
 def main(argv):
     src, out = pathlib.Path(argv[0]), pathlib.Path(argv[1])
-    d = json.loads(src.read_text())
+    d = localize(json.loads(src.read_text()))
     root = pathlib.Path(__file__).resolve().parents[2]
     files = {}
     for s in d['shapes']:

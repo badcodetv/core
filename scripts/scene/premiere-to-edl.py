@@ -17,6 +17,9 @@ The preview (the playable cut) is the sequence's own render, trimmed; this scrip
 import argparse
 import json
 import pathlib
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 ap = argparse.ArgumentParser()
 ap.add_argument('state')
@@ -25,7 +28,7 @@ ap.add_argument('--end', type=float)
 ap.add_argument('--title')
 a = ap.parse_args()
 
-st = json.loads(pathlib.Path(a.state).read_text())
+st = localize(json.loads(pathlib.Path(a.state).read_text()))
 seq = st['sequence']
 end = a.end or seq['end']
 

@@ -4,8 +4,11 @@ Shot boundaries are rounded to whole frames from the beat grid, so the cut never
   python3 scripts/scene/beatcut.py <scene-dir> <cut.json> <out.mp4>
 Preview only: the deliverable is per-beat clips on a Premiere timeline."""
 import json, pathlib, subprocess, sys
-scene, spec, out = pathlib.Path(sys.argv[1]), json.loads(pathlib.Path(sys.argv[2]).read_text()), sys.argv[3]
-media = pathlib.Path(json.loads((scene / 'scene.json').read_text())['media']) / 'video'
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
+scene, spec, out = pathlib.Path(sys.argv[1]), localize(json.loads(pathlib.Path(sys.argv[2]).read_text())), sys.argv[3]
+media = pathlib.Path(localize(json.loads((scene / 'scene.json').read_text()))['media']) / 'video'
 beat, fps = 60 / spec['bpm'], spec['fps']
 args, parts, b, f0 = ['ffmpeg', '-v', 'error', '-y'], [], 0, 0
 names = {x['key']: x for x in json.loads((scene / 'scene.json').read_text()).get('beats', [])}

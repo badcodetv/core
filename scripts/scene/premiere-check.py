@@ -21,6 +21,9 @@ import os
 import pathlib
 import sys
 from datetime import datetime
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 
 def check(rec):
@@ -28,7 +31,7 @@ def check(rec):
     st_p = pathlib.Path(rec['project']).parent / '.bridge' / f'state-{rec["sequence"]}.json'
     if not st_p.exists():
         return 'no state', ''
-    st, edl = json.loads(st_p.read_text()), json.loads(edl_p.read_text())
+    st, edl = localize(json.loads(st_p.read_text())), localize(json.loads(edl_p.read_text()))
     v1 = st['videoTracks'][0]['items']
     diffs = []
     if len(v1) != len(edl['video']):
@@ -70,7 +73,7 @@ def main(argv):
         cur = pr.get('current')
         if not cur:
             continue
-        rec = dict(pr[cur])
+        rec = localize(dict(pr[cur]))  # translated copy only: cfg is written back untouched
         rec.setdefault('project', next((r['project'] for r in pr.values() if isinstance(r, dict) and r.get('project')), ''))
         state, why = check(rec)
         print(f'{part["id"]:<12} {rec["sequence"]:<20} {state:<13} {why}')

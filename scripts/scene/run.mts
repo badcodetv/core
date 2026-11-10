@@ -33,6 +33,8 @@ const HERE = join(REPO, 'scripts/scene')
 const SCENE = process.argv[2]
 if (!SCENE || !existsSync(join(SCENE, 'scene.json'))) throw new Error('usage: run.mts <scene-dir> [key …]')
 const CFG = JSON.parse(readFileSync(join(SCENE, 'scene.json'), 'utf8'))
+// scene.json's media folder may have been written on another machine: ask scripts/drive/localmap.py where it is here
+CFG.media = execFileSync('python3', [join(HERE, '../drive/localmap.py'), 'path', CFG.media], { encoding: 'utf8' }).trim()
 const PROJECT: string = CFG.flow_project
 if (!PROJECT) throw new Error('scene.json has no flow_project')
 const STAGE = join(process.env.HOME!, '.cache/badcode-scenes', CFG.scene, 'plates')

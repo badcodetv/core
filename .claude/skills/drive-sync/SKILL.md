@@ -15,6 +15,19 @@ README once for the details; this is the procedure.
   that holds it on THIS machine. Kai's and Jack's are different and that is fine: nobody moves or renames
   their folders to suit the tool. `scripts/drive/localmap.py` reads and writes it.
 
+## Sharing timelines between machines
+
+Cut files (`edl.json`) and `scene.json` hold full paths from whichever machine wrote them. Each story in
+`folders.json` lists its `homes`: every folder it has lived in on anyone's machine. The scene and lip-sync
+tools (`scripts/scene/*`, `scripts/lipsync/*`, `run.mts`) pass what they load through
+`scripts/drive/localmap.py` `localize()`, which re-points any path inside a story's home at this machine's
+folder for that story. Files on disk are never rewritten. So: Jack's cut opens on Kai's machine and Kai's on
+Jack's, once both have `where`d the story. **After a `where` that adds a new home, commit and push
+`scripts/drive/folders.json`**, or the other machine can't read cuts written here.
+Not covered: GPOM's one-off cut scripts under `scripts/gpom/` (their paths are in the code), and command lines
+stored as text (scene.json `cut.script`). Rerun those on the machine that wrote them, or fix the path by hand.
+Check: `python3 scripts/drive/test_localmap.py`; one path: `python3 scripts/drive/localmap.py path "<path>"`.
+
 ## 🛑 Never guess a local folder
 
 If the story is not in this machine's map, the tool exits 3 with `NOT SET`. Then **stop and ask the person**:

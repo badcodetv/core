@@ -27,6 +27,9 @@ import json
 import pathlib
 import subprocess
 import sys
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 PAD_IN, PAD_OUT = 0.05, 0.12
 
@@ -66,7 +69,7 @@ def has_audio(f):
 def main(argv):
     edl_path, out_path = pathlib.Path(argv[0]), pathlib.Path(argv[1])
     skip = set(argv[argv.index('--skip') + 1].split(',')) if '--skip' in argv else set()
-    edl = json.loads(edl_path.read_text())
+    edl = localize(json.loads(edl_path.read_text()))
     tag = argv[argv.index('--tag') + 1] if '--tag' in argv else ''
     lines_dir = edl_path.parent / 'premiere' / tag / 'lines'
     lines_dir.mkdir(parents=True, exist_ok=True)

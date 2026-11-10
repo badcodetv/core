@@ -20,13 +20,16 @@ import numpy as np, cv2, librosa
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import lips
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 args = sys.argv[1:]
 edl_path, t0, t1 = args[0], float(args[1]), float(args[2])
 out = args[args.index('--out') + 1] if '--out' in args else tempfile.mkdtemp()
 os.makedirs(out, exist_ok=True)
 maps = [a.split('=', 1) for i, a in enumerate(args) if i and args[i - 1] == '--map']
-edl = json.load(open(edl_path))
+edl = localize(json.load(open(edl_path)))
 stems = {a.get('name') or a.get('id') or os.path.basename(a['file']): a['file'] for a in edl['audio']}
 stems.update({os.path.basename(a['file']).split('-', 1)[-1].rsplit('.', 1)[0]: a['file'] for a in edl['audio']})
 

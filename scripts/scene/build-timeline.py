@@ -11,6 +11,9 @@ Prints the files to publish alongside out-dir/index.html.
 import json
 import pathlib
 import sys
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from scene import Scene  # noqa: E402
@@ -20,7 +23,7 @@ sc = Scene(sys.argv[1])
 cut = sc.cfg.get('cut', {})
 edl = pathlib.Path(cut.get('edl', sc.media / 'cut' / 'edl.json'))
 preview = pathlib.Path(cut.get('preview', sc.media / 'cut' / 'preview.mp4'))
-data = json.loads(edl.read_text())
+data = localize(json.loads(edl.read_text()))
 data.setdefault('title', sc.cfg.get('title', sc.slug) + ' Timeline')
 data.setdefault('heading', sc.cfg.get('title', sc.slug))
 notes = sc.dir / 'cut-notes.json'  # Claude's read of the notes so far (round, plan, replies), shown on the page

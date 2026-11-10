@@ -22,6 +22,10 @@ scripts/drive/drive.sh pull   karen-music --go # Drive -> this machine
   `badcode.local.json` `"stories"` (one per machine, gitignored): story name -> the folder that holds it on THIS machine.
   Kai's and Jack's folders can be named and placed however each likes. A story with no local entry stops with `NOT SET` and
   asks; nothing is guessed. In Claude Code the `drive-sync` skill asks you and records the answer.
+- **Timelines work on both machines.** Each story's `homes` in `folders.json` lists every folder it has lived in on anyone's
+  machine (`where` adds yours: commit `folders.json` after). The scene tools translate paths in cut files and `scene.json`
+  as they read them, so a timeline made on Jack's machine opens on Kai's and back. Nothing on disk is rewritten.
+  Details: `localmap.py`; test: `python3 scripts/drive/test_localmap.py`.
 - ⚠ If two people edit the same `.prproj` between syncs, the newer one wins and the other's changes are lost. Push when you finish a session, pull before you start one.
 - **Fixed 2026-11-10:** `status` used to stop after the push side when that side had nothing to copy, so files waiting on Drive were never listed. It now always shows both sides.
 - **Baton:** Kai and Jack agree out loud who holds each story. Whoever holds it pushes when they hand it over; the next holder pulls before they open the project. The tool has no lock and doesn't need one.

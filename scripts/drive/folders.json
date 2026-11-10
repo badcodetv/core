@@ -1,11 +1,11 @@
 {
- "about": "Local Premiere folders on D: and the Drive folder each one pushes to / pulls from. Drive folders live in 'Badcode - Official' (Jack's, shared). Matched by folder ID, so a rename or a trailing space on Drive can't break it. Add a row to sync another story. WHERE each story sits locally is per machine: badcode.local.json, key stories (localmap.py).",
+ "about": "Each story and the Drive folder it pushes to / pulls from, plus homes: every folder it has lived in on anyone's machine (so cut files written there open here). Drive folders live in 'Badcode - Official' (Jack's, shared). Matched by folder ID, so a rename or a trailing space on Drive can't break it. Add a row to sync another story. WHERE each story sits locally is per machine: badcode.local.json, key stories (localmap.py).",
  "drive_root": "1aqkmEhj64V56V3TnyqbzuhUs8cGjWrym",
  "folders": {
-  "karen-music": {"drive": "1mGtVSydEu5Ms_oj7j--YKlTognRQLlAn", "drive_name": "Karen Music "},
-  "karen-story": {"drive": "1O5vPg8C424pEpf0Rq6kts2o4G8jUjW7c", "drive_name": "Karen Story"},
-  "gitpush-origin-master": {"drive": "1RDPIdPXy7oHIWfZVKdWby3wFrtWaiBWx", "drive_name": "gitpush-origin-master"},
-  "camping-music": {"drive": "1SxZYBDX2-pl7zRATr0cTb8JhuzLNLfUB", "drive_name": "Camping Music"},
-  "camping-story": {"drive": "1MvnE0Z8Sa0pHUfFSo7pQlXfiJSmrMbOP", "drive_name": "Camping Story"}
+  "karen-music": {"drive": "1mGtVSydEu5Ms_oj7j--YKlTognRQLlAn", "drive_name": "Karen Music ", "homes": ["/mnt/d/badcode-videos/karen-music"]},
+  "karen-story": {"drive": "1O5vPg8C424pEpf0Rq6kts2o4G8jUjW7c", "drive_name": "Karen Story", "homes": ["/mnt/d/badcode-videos/karen-story"]},
+  "gitpush-origin-master": {"drive": "1RDPIdPXy7oHIWfZVKdWby3wFrtWaiBWx", "drive_name": "gitpush-origin-master", "homes": ["/mnt/d/badcode-videos/gitpush-origin-master"]},
+  "camping-music": {"drive": "1SxZYBDX2-pl7zRATr0cTb8JhuzLNLfUB", "drive_name": "Camping Music", "homes": ["/mnt/d/badcode-videos/camping-music"]},
+  "camping-story": {"drive": "1MvnE0Z8Sa0pHUfFSo7pQlXfiJSmrMbOP", "drive_name": "Camping Story", "homes": ["/mnt/d/badcode-videos/camping-story"]}
  }
 }

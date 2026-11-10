@@ -18,10 +18,13 @@ reading (docs/provenance, "Artifacts are the UI").
 import json
 import pathlib
 import sys
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 HERE = pathlib.Path(__file__).resolve().parent
 
-spec = json.loads(pathlib.Path(sys.argv[1]).read_text())
+spec = localize(json.loads(pathlib.Path(sys.argv[1]).read_text()))
 html = (HERE / 'picks-template.html').read_text()
 html = html.replace('<title>Picks</title>', f"<title>{spec.get('title', 'Picks')}</title>", 1)
 html = html.replace('/*DATA*/null', json.dumps(spec, ensure_ascii=False))

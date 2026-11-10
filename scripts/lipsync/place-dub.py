@@ -11,9 +11,12 @@ phrases.json: {"duration": 15.958, "phrases": [{"src": "take.wav", "from": 0.27,
 usage: place-dub.py <phrases.json> <out.wav> [--lufs -20.5]
 """
 import json, subprocess, sys
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 import numpy as np
 SR = 48000
-spec = json.load(open(sys.argv[1])); out = sys.argv[2]
+spec = localize(json.load(open(sys.argv[1]))); out = sys.argv[2]
 lufs = float(sys.argv[sys.argv.index('--lufs') + 1]) if '--lufs' in sys.argv else -20.5
 mix = np.zeros((int(spec['duration'] * SR), 2), np.float32)
 for p in spec['phrases']:

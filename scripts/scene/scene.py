@@ -22,6 +22,9 @@ import io
 import json
 import pathlib
 import sys
+import os as _os, sys as _sys  # cut files written on another machine open on this one (scripts/drive/localmap.py)
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'drive'))
+from localmap import localize  # noqa: E402
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
 
@@ -31,7 +34,7 @@ class Scene:
         self.dir = pathlib.Path(path).resolve()
         if not (self.dir / 'scene.json').exists():
             sys.exit(f'no scene.json in {self.dir}')
-        self.cfg = json.loads((self.dir / 'scene.json').read_text())
+        self.cfg = localize(json.loads((self.dir / 'scene.json').read_text()))  # paths as THIS machine finds them
         self.slug = self.cfg.get('scene', self.dir.name)
         self.prefix = self.cfg.get('prefix', self.slug)
         self.media = pathlib.Path(self.cfg['media'])

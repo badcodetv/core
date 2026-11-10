@@ -12,7 +12,17 @@ the running shell needs: C:\\x -> /mnt/c/x in WSL, /c/x in Git Bash, unchanged e
     python3 localmap.py get  <story>          print this machine's folder for <story> (exit 3 if not set)
     python3 localmap.py set  <story> <path>   record it (the folder must exist)
     python3 localmap.py list                  every story in folders.json and its folder here
-Other scripts: from localmap import story_dir, StoryNotMapped
+    python3 localmap.py path <path>           a path from a cut file / scene.json, as THIS machine finds it
+
+Sharing cuts and timelines between machines. Cut files (edl.json), scene.json and the like hold FULL paths,
+written on whichever machine made them: /mnt/d/badcode-videos/karen-music/clips/x.mp4 on Kai's,
+/mnt/c/Users/jackt/.../Karen music vid/clips/x.mp4 on Jack's. Each story in folders.json lists its "homes":
+every folder it has lived in, on anyone's machine (`where` adds yours; commit folders.json after). A tool that
+loads such a file passes it through localize(): any path inside one of a story's homes is re-pointed at this
+machine's folder for that story, keeping its form (D:\\x stays Windows, /mnt/d/x stays WSL). Paths are
+translated as they are read, never rewritten in the files, so nothing churns in git. A path into a story this
+machine hasn't mapped is left as it is (the tool then reports the missing file, and you `where` the story).
+Other scripts: from localmap import story_dir, StoryNotMapped, localize, localize_path
 """
 import json, os, pathlib, platform, re, sys
 
@@ -66,6 +76,56 @@ def stories() -> dict:
     return json.loads(FOLDERS.read_text())['folders']
 
 
+def _posix(p: str) -> str:
+    """Any absolute form -> the /mnt/x/... (or Mac/Linux) form, for comparing paths across machines."""
+    m = re.match(r'^([A-Za-z]):[\\/](.*)$', p)
+    return f'/mnt/{m[1].lower()}/' + m[2].replace('\\', '/') if m else p
+
+
+_HOMES = None
+
+
+def _homes():
+    """[(home, story)], longest first, so a nested folder wins over its parent."""
+    global _HOMES
+    if _HOMES is None:
+        _HOMES = sorted(((_posix(h).rstrip('/'), k) for k, v in stories().items() for h in v.get('homes', [])),
+                        key=lambda x: -len(x[0]))
+    return _HOMES
+
+
+def _starts(path: str, home: str) -> bool:
+    if path.startswith('/mnt/'):  # Windows drives: case doesn't matter ("Youtube Vids" == "YouTube vids")
+        path, home = path.lower(), home.lower()
+    return path == home or path.startswith(home + '/')
+
+
+def localize_path(p):
+    """One path from a shared file -> where this machine keeps it. Anything else comes back unchanged."""
+    if not isinstance(p, str) or not (p.startswith('/') or re.match(r'^[A-Za-z]:[\\/]', p)):
+        return p
+    w = _posix(p)
+    for home, story in _homes():
+        if _starts(w, home):
+            mine = _load().get('stories', {}).get(story)
+            if not mine:
+                return p
+            rest = w[len(home):]
+            if re.match(r'^[A-Za-z]:', p):  # keep the Windows form for Windows tools (Premiere)
+                return to_stored(mine) + rest.replace('/', '\\')
+            return to_shell(mine) + rest
+    return p
+
+
+def localize(obj):
+    """Every path inside a loaded JSON value (dicts, lists, strings), re-pointed for this machine."""
+    if isinstance(obj, dict):
+        return {k: localize(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [localize(v) for v in obj]
+    return localize_path(obj)
+
+
 def story_dir(story: str) -> str:
     known = stories()
     if story not in known:
@@ -85,7 +145,24 @@ def set_story(story: str, path: str) -> str:
     cfg = _load()
     cfg.setdefault('stories', {})[story] = stored
     LOCAL.write_text(json.dumps(cfg, indent=2) + '\n')
+    # and the shared list of the story's homes, so cut files written here open on every other machine
+    home = _posix(to_shell(stored)).rstrip('/')
+    shared = json.loads(FOLDERS.read_text())
+    homes = shared['folders'][story].setdefault('homes', [])
+    if not any(_starts(home, _posix(h).rstrip('/')) and _starts(_posix(h).rstrip('/'), home) for h in homes):
+        homes.append(home)
+        _write_folders(shared)
+        print(f"added this machine's folder to {story}'s homes in scripts/drive/folders.json: commit and push it",
+              file=sys.stderr)
     return stored
+
+
+def _write_folders(c):
+    """folders.json, one story per line (stays readable as it grows)."""
+    rows = ',\n'.join(f'  {json.dumps(k)}: {json.dumps(v, ensure_ascii=False)}' for k, v in c['folders'].items())
+    head = {k: v for k, v in c.items() if k != 'folders'}
+    body = json.dumps(head, indent=1, ensure_ascii=False)[:-2]
+    FOLDERS.write_text(body + ',\n "folders": {\n' + rows + '\n }\n}\n')
 
 
 def main(argv):
@@ -95,6 +172,8 @@ def main(argv):
             print(story_dir(argv[2]))
         elif cmd == 'set':
             print(f"{argv[2]} -> {set_story(argv[2], ' '.join(argv[3:]))}")
+        elif cmd == 'path':
+            print(localize_path(' '.join(argv[2:])))
         elif cmd == 'list':
             mine = _load().get('stories', {})
             for k, v in stories().items():
