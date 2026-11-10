@@ -8,4 +8,4 @@ with each other (docs/stories/STYLE.md).
 
 | Short | Status |
 | --- | --- |
-| [`priority-lane/`](./priority-lane/brief.md) | 🟡 2026-11-10: look picked by Jack, dialogue options being written (scene-dialogue) |
+| [`priority-lane/`](./priority-lane/brief.md) | 🟡 2026-11-10: dialogue 1D locked, 4 stills picked, clips 01/02/04 made; reporter clips blocked by Flow, Jack to choose: new still without police, still with push-in, or both. Resume at `priority-lane/RESUME.md` |

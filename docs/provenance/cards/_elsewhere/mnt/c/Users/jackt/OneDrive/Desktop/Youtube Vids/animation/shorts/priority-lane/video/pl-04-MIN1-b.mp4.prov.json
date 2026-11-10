@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/video/pl-04-MIN1-b.mp4",
+ "made": "2026-11-10T15:49:52+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The minister presses the phone to his ear and snaps into it, furious: I said raspberry-shaped hors d'oeuvres! Then he glares at the roof lining. Blue beacon light pulses through the rain-streaked window behind him. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur. The camera does not move. Thanks.",
+ "parent": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+ "why": "He says the line (lip-synced)",
+ "inputs": {
+  "start": "/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/shorts/priority-lane/moodboard/MIN1-b.jpg",
+  "character": null,
+  "scene": "/home/jackt/projects/badcode/badcode/docs/stories/shorts/priority-lane",
+  "key": "04",
+  "frame": 4,
+  "option": "a"
+ },
+ "settings": {
+  "aspect": "9:16",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "720p",
+  "at": "2026-11-10T15:36:54.970Z"
+ }
+}
