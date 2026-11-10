@@ -57,4 +57,9 @@ project uses it.
 
 ## Decided
 
-*(filled in on the call: row, Keep/Delete, who said it)*
+Marked on the page during the call (Kai + Jack, 2026-11-10; dump: `feedback/drive-handover/marks/`):
+rows 1, 2, 3, 4, 6, 7, 8, 9 **Delete**; row 5 **Keep** (old Karen round picture files).
+
+- ✅ Binned by Kai's account: row 3 (Karen 4K final), row 9 (GPOM gaze preview).
+- 🟡 Refused, owner only: rows 1, 2, 4, 6, 7, 8 were uploaded by Jack, and Drive lets only a file's owner bin it.
+  Jack bins them himself (Drive in the browser, or `rclone delete` once his sync tool is set up).
